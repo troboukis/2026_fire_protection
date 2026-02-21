@@ -48,11 +48,13 @@ ORG_PREFIXES = [
     ("ΠΕΡΙΦΕΡΕΙΑΚΟ ΤΑΜΕΙΟ ΑΝΑΠΤΥΞΗΣ",           "Περιφερειακό Ταμείο Ανάπτυξης"),
     ("ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ",  "Κέντρο Κοινωνικής Πρόνοιας Περιφέρειας"),
     ("ΣΥΝΔΕΣΜΟΣ ΔΗΜΩΝ",                         "Σύνδεσμος Δήμων"),
+    ("ΔΗΜΟΤΙΚΟ ΛΙΜΕΝΙΚΟ ΤΑΜΕΙΟ",                "Δημοτικό Λιμενικό Ταμείο"),
+    ("ΔΗΜΟΤΙΚΟ ΒΡΕΦΟΚΟΜΕΙΟ",                    "Δημοτικό Βρεφοκομείο"),
+    ("ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ",            "Δημοτικό Περιφερειακό Θέατρο"),
     ("ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ",                     "Δημοτική Επιχείρηση"),
     ("ΠΕΡΙΦΕΡΕΙΑ",                              "Περιφέρεια"),
     ("ΥΠΟΥΡΓΕΙΟ",                               "Υπουργείο"),
     ("ΔΗΜΟΣ",                                   "Δήμος"),
-    ("ΔΗΜΟ",                                    "Δήμος"),   # handles typos like "ΔΗΜΟ ΑΡΓΟΥΣ"
 ]
 
 
@@ -237,11 +239,25 @@ def classify_org(org: str) -> tuple[str, str]:
         return (pd.NA, pd.NA)
 
     org_stripped = org.strip()
+    org_upper = org_stripped.upper()
+
+    def matches_prefix_token(text: str, prefix: str) -> bool:
+        """Match prefix only when it is a whole token, not partial word."""
+        if not text.startswith(prefix):
+            return False
+        if len(text) == len(prefix):
+            return True
+        return text[len(prefix)] in {" ", "-", ",", "."}
 
     for prefix, label in ORG_PREFIXES:
-        if org_stripped.upper().startswith(prefix):
+        if matches_prefix_token(org_upper, prefix):
             name_clean = org_stripped[len(prefix):].strip(" -,")
             return (label, name_clean)
+
+    # Handle specific typo pattern like "ΔΗΜΟ ΑΡΓΟΥΣ" without matching "ΔΗΜΟΤΙΚΟ ..."
+    if re.match(r"^ΔΗΜΟ(?:\s|[-,])", org_upper):
+        name_clean = org_stripped[4:].strip(" -,")
+        return ("Δήμος", name_clean)
 
     # No known prefix matched
     return ("Άλλος Φορέας", org_stripped)
@@ -353,13 +369,56 @@ def normalize_upper_no_accents(value):
     return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
 
 
+def normalize_org_name_by_type(org_type, org_name):
+    """Apply type-specific normalization rules to org_name_clean."""
+    if not isinstance(org_type, str) or not isinstance(org_name, str):
+        return org_name
+
+    name = re.sub(r"\s+", " ", org_name).strip(" ,")
+    name = re.sub(r"\s*,\s*", ", ", name)
+
+    if org_type == "ΣΥΝΔΕΣΜΟΣ ΔΗΜΩΝ":
+        # Remove connector boilerplate left after prefix split.
+        name = re.sub(r"^ΚΑΙ ΚΟΙΝΟΤΗΤΩΝ\s+ΓΙΑ ΤΗΝ\s+", "", name)
+        name = re.sub(r"^ΓΙΑ ΤΗΝ\s+", "", name)
+        name = name.strip(" ,")
+        return name
+
+    if org_type == "ΥΠΟΥΡΓΕΙΟ":
+        ministry_aliases = {
+            "ΠΕΡΙΒΑΛΛΟΝΤΟΣ, ΕΝΕΡΓΕΙΑΣ ΚΑΙ ΚΛΙΜΑΤΙΚΗΣ ΑΛΛΑΓΗΣ": "ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
+            "ΥΠΟΔΟΜΩΝ, ΜΕΤΑΦΟΡΩΝ ΚΑΙ ΔΙΚΤΥΩΝ": "ΥΠΟΔΟΜΩΝ ΚΑΙ ΜΕΤΑΦΟΡΩΝ",
+            "ΕΣΩΤΕΡΙΚΩΝ ΚΑΙ ΔΙΟΙΚΗΤΙΚΗΣ ΑΝΑΣΥΓΚΡΟΤΗΣΗΣ": "ΕΣΩΤΕΡΙΚΩΝ",
+            "ΠΑΙΔΕΙΑΣ, ΕΡΕΥΝΑΣ ΚΑΙ ΘΡΗΣΚΕΥΜΑΤΩΝ": "ΠΑΙΔΕΙΑΣ ΚΑΙ ΘΡΗΣΚΕΥΜΑΤΩΝ",
+        }
+        return ministry_aliases.get(name, name)
+
+    return name
+
+
 def normalize_org_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Normalize org classification columns to uppercase without accents."""
     df = df.copy()
     for col in ("org_type", "org_name_clean"):
         if col in df.columns:
             df[col] = df[col].apply(normalize_upper_no_accents)
+    if {"org_type", "org_name_clean"}.issubset(df.columns):
+        df["org_name_clean"] = df.apply(
+            lambda r: normalize_org_name_by_type(r["org_type"], r["org_name_clean"]), axis=1
+        )
     return df
+
+
+def recompute_org_classification(df: pd.DataFrame) -> pd.DataFrame:
+    """Rebuild org_type/org_name_clean from org labels to fix legacy bad rows."""
+    df = df.copy()
+    if "org" not in df.columns:
+        return normalize_org_columns(df)
+
+    classifications = df["org"].apply(classify_org)
+    df["org_type"] = classifications.apply(lambda t: t[0])
+    df["org_name_clean"] = classifications.apply(lambda t: t[1])
+    return normalize_org_columns(df)
 
 
 def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -380,13 +439,10 @@ def enrich_dataframe(df: pd.DataFrame) -> pd.DataFrame:
         raise KeyError("Expected column 'organization' in dataframe")
 
     df["org"] = df["organization"].apply(extract_org_label)
-
-    classifications = df["org"].apply(classify_org)
-    df["org_type"] = classifications.apply(lambda t: normalize_upper_no_accents(t[0]))
-    df["org_name_clean"] = classifications.apply(lambda t: normalize_upper_no_accents(t[1]))
+    df = recompute_org_classification(df)
 
     df = normalize_decision_columns(df)
-    return normalize_org_columns(df)
+    return df
 
 
 # ---------------------------------------------------------------------------
@@ -417,7 +473,7 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     # Keep old rows aligned with current normalization rules.
     combined = normalize_decision_columns(combined)
-    combined = normalize_org_columns(combined)
+    combined = recompute_org_classification(combined)
 
     original_len = len(existing) if CSV_PATH.exists() else 0
 
