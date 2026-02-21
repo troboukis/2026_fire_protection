@@ -49,3 +49,17 @@ Then in GitHub:
 1. Open the repository `Settings` -> `Actions` -> `General`
 2. Ensure actions are allowed and workflow permissions allow read/write
 3. Open the `Actions` tab and run `Daily Diavgeia Fetch` once manually
+
+## Database schema (Supabase/Postgres)
+
+The initial relational schema is in `sql/001_init_schema.sql`.
+It creates:
+- `organization` (one organization to many records)
+- `record` (main records, each linked to one organization)
+- `file` (one-to-one with `record` via `ada`)
+
+To create tables:
+
+1. Open your Supabase project
+2. Go to `SQL Editor`
+3. Paste and run the contents of `sql/001_init_schema.sql`
