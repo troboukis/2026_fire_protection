@@ -10,12 +10,15 @@ Project structure:
 │   └── fetch_diavgeia.py
 ├── state/
 │   └── state.json
+├── logs/
+│   └── fetch_runs.csv
 └── fetch_diavgeia.py
 ```
 
 - `src/fetch_diavgeia.py`: core fetch + enrich + persist logic
 - `data/2026_diavgeia.csv`: dataset output
 - `state/state.json`: incremental fetch checkpoint
+- `logs/fetch_runs.csv`: run history (timestamp, fetched count, CSV update flag, success/error)
 - `fetch_diavgeia.py`: root launcher for backward-compatible execution
 
 Run:

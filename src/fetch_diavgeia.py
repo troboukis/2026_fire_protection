@@ -14,6 +14,7 @@ import ast
 import unicodedata
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -28,10 +29,13 @@ REPO_DIR = SCRIPT_DIR.parent
 
 DATA_DIR = REPO_DIR / "data"
 STATE_DIR = REPO_DIR / "state"
+LOG_DIR = REPO_DIR / "logs"
 CSV_PATH = DATA_DIR / "2026_diavgeia.csv"
 STATE_FILE = STATE_DIR / "state.json"
+RUN_LOG_FILE = LOG_DIR / "fetch_runs.csv"
 LEGACY_CSV_PATH = REPO_DIR / "2026_diavgeia.csv"
 LEGACY_STATE_FILE = REPO_DIR / "state.json"
+ATHENS_TZ = ZoneInfo("Europe/Athens")
 
 SEARCH_URL = "https://diavgeia.gov.gr/luminapi/api/search"
 KEYWORDS = ["πυροπροστ", "αποψιλ", "δασοπροστ", "αντιπυρ"]
@@ -91,6 +95,40 @@ def save_state(state: dict) -> None:
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
     print(f"[state] Saved: {state}")
+
+
+def append_run_log(
+    run_started_at: str,
+    fetched_records: int,
+    rows_added: int,
+    csv_updated: bool,
+    success: bool,
+    error: str = "",
+) -> None:
+    """Append one execution record to logs/fetch_runs.csv."""
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+    # One-time migration for older logs that used a UTC column name.
+    if RUN_LOG_FILE.exists():
+        existing_log = pd.read_csv(RUN_LOG_FILE)
+        if "run_started_at_utc" in existing_log.columns and "run_started_at_athens" not in existing_log.columns:
+            existing_log = existing_log.rename(columns={"run_started_at_utc": "run_started_at_athens"})
+            existing_log.to_csv(RUN_LOG_FILE, index=False)
+
+    row = pd.DataFrame(
+        [
+            {
+                "run_started_at_athens": run_started_at,
+                "fetched_records": fetched_records,
+                "rows_added": rows_added,
+                "csv_updated": csv_updated,
+                "success": success,
+                "error": error,
+            }
+        ]
+    )
+    row.to_csv(RUN_LOG_FILE, mode="a", header=not RUN_LOG_FILE.exists(), index=False)
+    print(f"[log] Appended run record → {RUN_LOG_FILE}")
 
 
 # ---------------------------------------------------------------------------
@@ -321,39 +359,61 @@ def main():
     print("=" * 60)
     print("Diavgeia incremental fetch")
     print("=" * 60)
+    run_started_at = datetime.now(ATHENS_TZ).strftime("%Y-%m-%d %H:%M:%S %z")
+    fetched_records = 0
+    added = 0
+    csv_updated = False
+    success = False
+    error = ""
 
-    state = load_state()
-    last_fetch_str = state.get("last_fetch")
+    try:
+        state = load_state()
+        last_fetch_str = state.get("last_fetch")
 
-    since: datetime | None = None
-    if last_fetch_str:
-        try:
-            since = datetime.strptime(last_fetch_str, "%d/%m/%Y %H:%M:%S")
-        except ValueError:
-            since = datetime.strptime(last_fetch_str, "%d/%m/%Y")
-        print(f"[main] Fetching decisions submitted after: {since}")
-    else:
-        print("[main] No cutoff date — fetching ALL available data.")
-
-    new_records = fetch_new_decisions(since=since)
-
-    added = append_to_csv(new_records)
-
-    if new_records:
-        # Find the most recent submissionTimestamp among fetched records
-        timestamps = []
-        for rec in new_records:
-            ts = rec.get("submissionTimestamp", "")
+        since: datetime | None = None
+        if last_fetch_str:
             try:
-                timestamps.append(datetime.strptime(ts, "%d/%m/%Y %H:%M:%S"))
+                since = datetime.strptime(last_fetch_str, "%d/%m/%Y %H:%M:%S")
             except ValueError:
-                pass
-        if timestamps:
-            new_last = max(timestamps)
-            state["last_fetch"] = new_last.strftime("%d/%m/%Y %H:%M:%S")
-            save_state(state)
+                since = datetime.strptime(last_fetch_str, "%d/%m/%Y")
+            print(f"[main] Fetching decisions submitted after: {since}")
+        else:
+            print("[main] No cutoff date — fetching ALL available data.")
 
-    print(f"\n[done] {added} new rows added to dataset.")
+        new_records = fetch_new_decisions(since=since)
+        fetched_records = len(new_records)
+        added = append_to_csv(new_records)
+        csv_updated = added > 0
+
+        if new_records:
+            # Find the most recent submissionTimestamp among fetched records
+            timestamps = []
+            for rec in new_records:
+                ts = rec.get("submissionTimestamp", "")
+                try:
+                    timestamps.append(datetime.strptime(ts, "%d/%m/%Y %H:%M:%S"))
+                except ValueError:
+                    pass
+            if timestamps:
+                new_last = max(timestamps)
+                state["last_fetch"] = new_last.strftime("%d/%m/%Y %H:%M:%S")
+                save_state(state)
+
+        success = True
+        print(f"\n[done] {added} new rows added to dataset.")
+    except Exception as exc:
+        error = f"{type(exc).__name__}: {exc}"
+        print(f"[error] {error}")
+        raise
+    finally:
+        append_run_log(
+            run_started_at=run_started_at,
+            fetched_records=fetched_records,
+            rows_added=added,
+            csv_updated=csv_updated,
+            success=success,
+            error=error,
+        )
 
 
 if __name__ == "__main__":
