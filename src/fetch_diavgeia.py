@@ -107,13 +107,20 @@ def append_run_log(
 ) -> None:
     """Append one execution record to logs/fetch_runs.csv."""
     LOG_DIR.mkdir(parents=True, exist_ok=True)
+    error_value = error.strip() if isinstance(error, str) else ""
+    has_error = bool(error_value)
 
     # One-time migration for older logs that used a UTC column name.
     if RUN_LOG_FILE.exists():
         existing_log = pd.read_csv(RUN_LOG_FILE)
         if "run_started_at_utc" in existing_log.columns and "run_started_at_athens" not in existing_log.columns:
             existing_log = existing_log.rename(columns={"run_started_at_utc": "run_started_at_athens"})
-            existing_log.to_csv(RUN_LOG_FILE, index=False)
+        if "error_message" not in existing_log.columns:
+            existing_log["error_message"] = "NONE"
+        existing_log["error_message"] = existing_log["error_message"].fillna("").astype(str).str.strip()
+        existing_log.loc[existing_log["error_message"] == "", "error_message"] = "NONE"
+        existing_log["error"] = existing_log["error_message"] != "NONE"
+        existing_log.to_csv(RUN_LOG_FILE, index=False)
 
     row = pd.DataFrame(
         [
@@ -123,7 +130,8 @@ def append_run_log(
                 "rows_added": rows_added,
                 "csv_updated": csv_updated,
                 "success": success,
-                "error": error,
+                "error": has_error,
+                "error_message": error_value if has_error else "NONE",
             }
         ]
     )
