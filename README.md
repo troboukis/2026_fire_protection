@@ -27,6 +27,19 @@ Run:
 python fetch_diavgeia.py
 ```
 
+One-command local fetch + git sync:
+
+```bash
+./scripts/run_fetch_and_sync.sh
+```
+
+Script behavior:
+- auto-commits any existing local changes first
+- pulls latest `origin/main` with rebase
+- runs `fetch_diavgeia.py`
+- commits changed artifacts (`data/`, `state/`, `logs/`)
+- pushes to `origin/main`
+
 ## Daily automated collection (GitHub Actions)
 
 A workflow is included at `.github/workflows/daily-fetch.yml` and runs:
