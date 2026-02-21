@@ -280,6 +280,70 @@ def extract_org_label(value) -> str:
     return pd.NA
 
 
+def parse_structured_value(value):
+    """Parse dict/list values that may arrive as Python/JSON strings."""
+    if isinstance(value, (dict, list)):
+        return value
+
+    if not isinstance(value, str):
+        return value
+
+    text = value.strip()
+    if not text:
+        return value
+
+    if (text.startswith("{") and text.endswith("}")) or (text.startswith("[") and text.endswith("]")):
+        for parser in (ast.literal_eval, json.loads):
+            try:
+                return parser(text)
+            except (ValueError, SyntaxError, json.JSONDecodeError, TypeError):
+                continue
+    return value
+
+
+def extract_label(value):
+    """Extract a 'label' string from a dict/list/stringified payload."""
+    parsed = parse_structured_value(value)
+    if isinstance(parsed, dict):
+        label = parsed.get("label")
+        return label if isinstance(label, str) else pd.NA
+    if isinstance(parsed, list):
+        for item in parsed:
+            if isinstance(item, dict) and isinstance(item.get("label"), str):
+                return item["label"]
+            if isinstance(item, str) and item.strip():
+                return item.strip()
+        return pd.NA
+    if isinstance(parsed, str):
+        return parsed.strip() or pd.NA
+    return pd.NA
+
+
+def extract_labels_list(value):
+    """Extract list of labels from thematicCategories-like payload."""
+    parsed = parse_structured_value(value)
+    labels: list[str] = []
+
+    if isinstance(parsed, dict):
+        label = parsed.get("label")
+        if isinstance(label, str) and label.strip():
+            labels.append(label.strip())
+    elif isinstance(parsed, list):
+        for item in parsed:
+            if isinstance(item, dict):
+                label = item.get("label")
+                if isinstance(label, str) and label.strip():
+                    labels.append(label.strip())
+            elif isinstance(item, str) and item.strip():
+                labels.append(item.strip())
+    elif isinstance(parsed, str) and parsed.strip():
+        labels.append(parsed.strip())
+
+    # Keep order, remove duplicates
+    deduped = list(dict.fromkeys(labels))
+    return deduped if deduped else pd.NA
+
+
 def normalize_upper_no_accents(value):
     """Uppercase and remove diacritics from text values."""
     if not isinstance(value, str):
@@ -298,6 +362,16 @@ def normalize_org_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Normalize decisionType and thematicCategories label columns."""
+    df = df.copy()
+    if "decisionType" in df.columns:
+        df["decisionType"] = df["decisionType"].apply(extract_label)
+    if "thematicCategories" in df.columns:
+        df["thematicCategories"] = df["thematicCategories"].apply(extract_labels_list)
+    return df
+
+
 def enrich_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """Add org, org_type, org_name_clean columns to a raw Diavgeia DataFrame."""
 
@@ -311,6 +385,7 @@ def enrich_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df["org_type"] = classifications.apply(lambda t: normalize_upper_no_accents(t[0]))
     df["org_name_clean"] = classifications.apply(lambda t: normalize_upper_no_accents(t[1]))
 
+    df = normalize_decision_columns(df)
     return normalize_org_columns(df)
 
 
@@ -341,6 +416,7 @@ def append_to_csv(new_records: list[dict]) -> int:
         combined = new_df
 
     # Keep old rows aligned with current normalization rules.
+    combined = normalize_decision_columns(combined)
     combined = normalize_org_columns(combined)
 
     original_len = len(existing) if CSV_PATH.exists() else 0
