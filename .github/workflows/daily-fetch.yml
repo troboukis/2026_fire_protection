@@ -29,16 +29,25 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run daily fetch
+        id: run_fetch
+        continue-on-error: true
         run: python fetch_diavgeia.py
 
       - name: Commit and push changes
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/2026_diavgeia.csv state/state.json
+          git add data/2026_diavgeia.csv state/state.json logs/fetch_runs.csv
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
           git commit -m "chore(data): daily Diavgeia update"
           git push
+
+      - name: Fail job if fetch failed
+        if: steps.run_fetch.outcome == 'failure'
+        run: |
+          echo "Daily fetch failed; see logs/fetch_runs.csv and job output."
+          exit 1
