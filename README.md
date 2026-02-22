@@ -40,6 +40,41 @@ Script behavior:
 - commits changed artifacts (`data/`, `state/`, `logs/`)
 - pushes to `origin/main`
 
+## Local PDF pipeline
+
+PDFs are stored locally in `pdf/` (excluded from git via `.gitignore`).
+Each filename is derived from `documentUrl` as the code after `/doc/`, with `.pdf` suffix.
+Example: `https://diavgeia.gov.gr/doc/9ΚΠΣΩ1Ε-ΕΑ0` -> `pdf/9ΚΠΣΩ1Ε-ΕΑ0.pdf`.
+
+Run full pipeline (download missing + build page dataset):
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py
+```
+
+Download only:
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --download-only
+```
+
+Build page dataset only:
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --build-only
+```
+
+Useful options:
+- `--limit 100` to test on a subset
+- `--source-csv data/2026_diavgeia.csv`
+- `--pdf-dir pdf`
+- `--pages-dataset data/pdf_pages_dataset.csv`
+
+Run logs are appended to `logs/pdf_pipeline_runs.csv` and include:
+- download counters (`downloaded`, `skipped_existing`, `failed_downloads`)
+- parsing counters (`parsed_pdfs`, `parsed_pages`, `parse_errors`)
+- `success` and `error_message`
+
 ## Daily automated collection (GitHub Actions)
 
 A workflow is included at `.github/workflows/daily-fetch.yml` and runs:
