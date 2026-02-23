@@ -140,6 +140,53 @@ ORG_PREFIXES = [
     ("ΔΗΜΟΣ",                                   "Δήμος"),
 ]
 
+# Exclude known non-target organizations from the fire-protection dataset.
+# Matching is done against normalized `org_name_clean` (uppercase, no accents, collapsed spaces).
+EXCLUDED_ORG_NAME_CLEAN_RAW = [
+    "ΕΘΝΙΚΟ ΘΕΑΤΡΟ",
+    "ΕΛΛΗΝΙΚΗ ΡΑΔΙΟΦΩΝΙΑ ΤΗΛΕΟΡΑΣΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ (Ε.Ρ.Τ. Α.Ε.)",
+    "ΗΛΕΚΤΡΟΝΙΚΟΣ ΕΘΝΙΚΟΣ ΦΟΡΕΑΣ ΚΟΙΝΩΝΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
+    "ΕΛΛΗΝΙΚΟΣ ΓΕΩΡΓΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ-ΔΗΜΗΤΡΑ",
+    "ΔΗΜΟΚΡΙΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΡΑΚΗΣ",
+    "ΕΛΛΗΝΙΚΟ ΜΕΣΟΓΕΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ",
+    "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ «Γ. ΠΑΠΑΝΙΚΟΛΑΟΥ»",
+    "ΕΛΛΗΝΙΚΑ ΑΜΥΝΤΙΚΑ ΣΥΣΤΗΜΑΤΑ ΑΒΕΕ",
+    "ΚΕΝΤΡΟ ΘΕΡΑΠΕΙΑΣ ΕΞΑΡΤΗΜΕΝΩΝ ΑΤΟΜΩΝ (ΚΕ.Θ.Ε.Α.)",
+    "ΕΠΙΜΕΛΗΤΗΡΙΟ ΛΑΚΩΝΙΑΣ",
+    "ΕΘΝΙΚΗ ΛΥΡΙΚΗ ΣΚΗΝΗ",
+    "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΠΑΙΔΩΝ 'ΑΓΛΑΙΑ ΚΥΡΙΑΚΟΥ'",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ - Κ.Υ ΙΕΡΑΠΕΤΡΑΣ",
+    "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΒΕΝΙΖΕΛΕΙΟ ΠΑΝΑΝΕΙΟ",
+    "ΙΔΡΥΜΑ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ (ΙΤΕ)",
+    "ΣΥΝΔΕΣΜΟΣ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ ΚΑΙ & ΑΛΛΗΛΕΓΓΥΗΣ ΚΕΡΚΥΡΑΣ",
+    "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ 'ΙΠΠΟΚΡΑΤΕΙO'",
+    "ΕΘΝΙΚΗ ΕΠΙΤΡΟΠΗ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ & ΤΑΧΥΔΡΟΜΕΙΩΝ (ΕΕΤΤ)",
+    "ΠΑΝΕΠΙΣΤΗΜΙΑΚΟ ΓΕΝ. ΝΟΣΟΚ. 'ΑΤΤΙΚΟΝ'",
+    "ΠΕΡΙΦ. ΠΑΝΕΠΙΣΤ. ΓΕΝ. ΝΟΣΟΚ. ΠΑΤΡΩΝ",
+    "ΑΡΙΣΤΟΤΕΛΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣ/ΝΙΚΗΣ",
+    "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΑΤΤΙΚΗΣ (ΚΑΤ)",
+    "ΠΕΡΙΦ. ΠΑΝΕΠΙΣΤ. ΓΕΝ. ΝΟΣΟΚ. ΗΡΑΚΛΕΙΟΥ",
+    "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΠΕΙΡΑΙΩΣ 'ΤΖΑΝΕΙΟ'",
+    "ΣΧΟΛΙΚΕΣ ΕΠΙΤΡΟΠΕΣ ΠΡΩΤΟΒΑΘΜΙΑΣ ΚΑΙ ΔΕΥΤΕΡΟΒΑΘΜΙΑΣ ΕΚΠΑΙΔΕΥΣΗΣ ΔΗΜΟΥ ΧΑΝΙΩΝ",
+    "ΚΡΑΤΙΚΟ ΘΕΑΤΡΟ ΒΟΡΕΙΟΥ ΕΛΛΑΔΟΣ",
+    "ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΙΑΣ",
+    "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΠΑΙΔΩΝ ΠΕΝΤΕΛΗΣ",
+    "ΑΡΕΙΟΣ ΠΑΓΟΣ (ΑΠ)",
+    "ΠΑΝΕΠΙΣΤΗΜΙΑΚΟ ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΕΒΡΟΥ",
+    "ΑΝΩΤΑΤΟ ΣΥΜΒΟΥΛΙΟ ΕΠΙΛΟΓΗΣ ΠΡΟΣΩΠΙΚΟΥ (ΑΣΕΠ)",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΒΟΛΟΥ 'ΑΧΙΛΛΟΠΟΥΛΕIO'",
+    "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΗΛΕΙΑΣ",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΚΑΣΤΟΡΙΑΣ",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ 'Η ΕΛΠΙΣ'",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΠΑΙΔΩΝ ΠΑΤΡΩΝ 'ΚΑΡΑΜΑΝΔΑΝΕΙΟ'",
+    "ΟΡΓΑΝΙΣΜΟΣ ΠΟΛΙΤΙΣΜΟΥ ΑΘΛΗΤΙΣΜΟΥ ΚΑΙ ΝΕΟΛΑΙΑΣ ΔΗΜΟΥ ΑΘΗΝΑΙΩΝ",
+    "ΑΝΑΠΤΥΞΗ ΑΘΛΗΤΙΣΜΟΥ ΗΡΑΚΛΕΙΟΥ - ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΟΤΑ",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΜΦΙΣΣΑΣ",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ - Κ.Υ ΝΕΑΠΟΛΗΣ ΚΡΗΤΗΣ",
+    "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΠΑΤΡΩΝ 'ΑΓΙΟΣ ΑΝΔΡΕΑΣ'",
+    "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΚΑΒΑΛΑΣ",
+]
+
 
 # ---------------------------------------------------------------------------
 # State helpers
@@ -271,6 +318,15 @@ def fetch_new_decisions(since: datetime | None) -> list[dict]:
         if not batch:
             break
 
+        excluded_in_batch = 0
+        filtered_batch = []
+        for rec in batch:
+            if record_has_excluded_org(rec):
+                excluded_in_batch += 1
+                continue
+            filtered_batch.append(rec)
+        batch = filtered_batch
+
         # Client-side cutoff check (guards against APIs that ignore from_date)
         if since is not None:
             new_in_batch = []
@@ -288,13 +344,21 @@ def fetch_new_decisions(since: datetime | None) -> list[dict]:
                     stop = True  # hit old data; no need to go further
 
             results.extend(new_in_batch)
-            print(f"[fetch] page {page + 1}/{pages} — {len(new_in_batch)} new records (total so far: {len(results)})")
+            excl_note = f", excluded orgs: {excluded_in_batch}" if excluded_in_batch else ""
+            print(
+                f"[fetch] page {page + 1}/{pages} — {len(new_in_batch)} new records "
+                f"(total so far: {len(results)}){excl_note}"
+            )
             if stop:
                 print("[fetch] Reached records older than cutoff. Stopping.")
                 break
         else:
             results.extend(batch)
-            print(f"[fetch] page {page + 1}/{pages} — {len(batch)} records (total so far: {len(results)})")
+            excl_note = f", excluded orgs: {excluded_in_batch}" if excluded_in_batch else ""
+            print(
+                f"[fetch] page {page + 1}/{pages} — {len(batch)} records "
+                f"(total so far: {len(results)}){excl_note}"
+            )
 
         page += 1
         if page >= pages:
@@ -341,6 +405,10 @@ def classify_org(org: str) -> tuple[str, str]:
     if re.match(r"^ΔΗΜΟ(?:\s|[-,])", org_upper):
         name_clean = org_stripped[4:].strip(" -,")
         return ("Δήμος", name_clean)
+
+    # Catch development agencies/organizations that do not match explicit prefixes.
+    if "ΑΝΑΠΤΥΞΙΑΚ" in org_upper:
+        return ("Αναπτυξιακός Οργανισμός", org_stripped)
 
     # No known prefix matched
     return ("Άλλος Φορέας", org_stripped)
@@ -452,6 +520,41 @@ def normalize_upper_no_accents(value):
     return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
 
 
+def normalize_org_name_key(value) -> str | None:
+    """Canonical key for org_name_clean comparisons (case/accents/spacing-insensitive)."""
+    text = normalize_upper_no_accents(value)
+    if not isinstance(text, str):
+        return None
+    text = unicodedata.normalize("NFKC", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text or None
+
+
+EXCLUDED_ORG_NAME_CLEAN_KEYS = {
+    key
+    for key in (normalize_org_name_key(v) for v in EXCLUDED_ORG_NAME_CLEAN_RAW)
+    if key
+}
+
+
+def is_excluded_org_name_clean(value) -> bool:
+    """True if normalized org_name_clean belongs to the configured exclusion list."""
+    key = normalize_org_name_key(value)
+    return bool(key and key in EXCLUDED_ORG_NAME_CLEAN_KEYS)
+
+
+def filter_excluded_org_rows(df: pd.DataFrame, *, context: str = "rows") -> pd.DataFrame:
+    """Drop rows whose org_name_clean is in the exclusion list (safety-net for persisted CSVs)."""
+    if "org_name_clean" not in df.columns or df.empty:
+        return df
+
+    mask = df["org_name_clean"].apply(is_excluded_org_name_clean)
+    dropped = int(mask.sum())
+    if dropped:
+        print(f"[org-filter] Dropped {dropped} excluded {context}.", flush=True)
+    return df.loc[~mask].copy()
+
+
 def normalize_org_name_by_type(org_type, org_name):
     """Apply type-specific normalization rules to org_name_clean."""
     if not isinstance(org_type, str) or not isinstance(org_name, str):
@@ -502,6 +605,20 @@ def recompute_org_classification(df: pd.DataFrame) -> pd.DataFrame:
     df["org_type"] = classifications.apply(lambda t: t[0])
     df["org_name_clean"] = classifications.apply(lambda t: t[1])
     return normalize_org_columns(df)
+
+
+def record_has_excluded_org(rec: dict) -> bool:
+    """Check API search record against excluded org_name_clean list."""
+    org_label = extract_org_label(rec.get("organization"))
+    if not isinstance(org_label, str):
+        return False
+    org_type, org_name_clean = classify_org(org_label)
+    if isinstance(org_type, str):
+        org_type = normalize_upper_no_accents(org_type)
+    if isinstance(org_name_clean, str):
+        org_name_clean = normalize_upper_no_accents(org_name_clean)
+        org_name_clean = normalize_org_name_by_type(org_type, org_name_clean)
+    return is_excluded_org_name_clean(org_name_clean)
 
 
 def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -1359,6 +1476,8 @@ def backfill_spending_approval_columns(
     after = ensure_payment_enrichment_columns(after)
     after = normalize_enrichment_singleton_columns(after)
     after = add_subject_flags(after)
+    after = recompute_org_classification(after)
+    after = filter_excluded_org_rows(after, context="rows during backfill")
     after_status = after["spending_enrichment_status"].astype("string").fillna("").str.strip()
     after_commitment_status = after["commitment_enrichment_status"].astype("string").fillna("").str.strip()
     after_direct_status = after["direct_enrichment_status"].astype("string").fillna("").str.strip()
@@ -1434,6 +1553,7 @@ def append_to_csv(new_records: list[dict]) -> int:
     combined = ensure_direct_enrichment_columns(combined)
     combined = ensure_payment_enrichment_columns(combined)
     combined = normalize_enrichment_singleton_columns(combined)
+    combined = filter_excluded_org_rows(combined, context="rows before CSV save")
 
     original_len = len(existing) if CSV_PATH.exists() else 0
 
