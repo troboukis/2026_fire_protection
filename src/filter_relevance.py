@@ -277,7 +277,7 @@ def apply_relevance_filter(
         pdf_available_yes += int(pdf_available)
         relevant_yes += int(is_relevant)
 
-        if processed % progress_every == 0 or processed == total:
+        if tqdm is None and (processed % progress_every == 0 or processed == total):
             print(
                 f"[relevance][progress] {processed}/{total} "
                 f"relevant={relevant_yes} subject_match={subject_yes} "
