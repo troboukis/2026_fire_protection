@@ -25,6 +25,11 @@ import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
 
+try:
+    from tqdm import tqdm
+except Exception:  # pragma: no cover - optional dependency
+    tqdm = None
+
 load_dotenv()
 
 REPO_DIR = Path(__file__).resolve().parent.parent
@@ -52,7 +57,11 @@ def main() -> None:
 
     rows: list[tuple] = []
     skipped_invalid = 0
-    for _, r in df.iterrows():
+    row_iter = df.iterrows()
+    if tqdm is not None:
+        row_iter = tqdm(row_iter, total=len(df), desc="org_coverage", unit="row")
+
+    for _, r in row_iter:
         municipality_id = _clean_text(r.get("municipality_id"))
         if not municipality_id or municipality_id not in valid_ids:
             skipped_invalid += 1

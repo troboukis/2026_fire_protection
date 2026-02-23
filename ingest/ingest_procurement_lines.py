@@ -29,6 +29,11 @@ import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
 
+try:
+    from tqdm import tqdm
+except Exception:  # pragma: no cover - optional dependency
+    tqdm = None
+
 load_dotenv()
 
 REPO_DIR = Path(__file__).resolve().parent.parent
@@ -299,7 +304,11 @@ def main() -> None:
     print(f"Loaded {len(df)} rows from {CSV_PATH.name}")
 
     rows: list[tuple] = []
-    for _, r in df.iterrows():
+    row_iter = df.iterrows()
+    if tqdm is not None:
+        row_iter = tqdm(row_iter, total=len(df), desc="procurement_lines", unit="row")
+
+    for _, r in row_iter:
         rows.extend(build_line_rows(r))
     rows = renumber_line_indices(rows)
 

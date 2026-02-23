@@ -30,6 +30,11 @@ from typing import Any
 
 import pandas as pd
 
+try:
+    from tqdm import tqdm
+except Exception:  # pragma: no cover - optional dependency
+    tqdm = None
+
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_DIR = SCRIPT_DIR.parent
@@ -119,7 +124,9 @@ def collapse_list_for_csv(values: list[str]) -> Any:
         return pd.NA
     if len(values) == 1:
         return values[0]
-    return values
+    # Store multi-match values as a stringified list so pandas string/arrow columns
+    # don't treat them as iterable assignments.
+    return str(values)
 
 
 def build_keyword_specs(keywords: list[str]) -> list[tuple[str, str]]:
@@ -240,7 +247,11 @@ def apply_relevance_filter(
     relevant_yes = 0
     pdf_available_yes = 0
 
-    for processed, idx in enumerate(df.index, start=1):
+    index_iter = df.index
+    if tqdm is not None:
+        index_iter = tqdm(index_iter, total=total, desc="relevance", unit="row")
+
+    for processed, idx in enumerate(index_iter, start=1):
         ada = df.at[idx, "ada"]
         subject = df.at[idx, "subject"]
 
