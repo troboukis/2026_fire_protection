@@ -514,6 +514,29 @@ def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def add_subject_flags(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Add derived boolean flags based on normalized subject text.
+
+    subject_has_anatrop_or_anaklis = True if subject contains:
+    - ανατροπ*
+    - ανακλησ*
+    (accent-insensitive)
+    """
+    df = df.copy()
+    if "subject" not in df.columns:
+        return df
+
+    def _flag_subject(value) -> bool:
+        text = normalize_upper_no_accents(value)
+        if not isinstance(text, str):
+            return False
+        return ("ΑΝΑΤΡΟΠ" in text) or ("ΑΝΑΚΛΗΣ" in text)
+
+    df["subject_has_anatrop_or_anaklis"] = df["subject"].apply(_flag_subject)
+    return df
+
+
 def build_decision_view_url(ada: str) -> str:
     """Build the decision view API URL for a given ADA."""
     return f"{DECISION_VIEW_URL}/{quote(str(ada).strip(), safe='')}"
@@ -1318,6 +1341,7 @@ def backfill_spending_approval_columns(
     after = ensure_direct_enrichment_columns(after)
     after = ensure_payment_enrichment_columns(after)
     after = normalize_enrichment_singleton_columns(after)
+    after = add_subject_flags(after)
     after_status = after["spending_enrichment_status"].astype("string").fillna("").str.strip()
     after_commitment_status = after["commitment_enrichment_status"].astype("string").fillna("").str.strip()
     after_direct_status = after["direct_enrichment_status"].astype("string").fillna("").str.strip()
@@ -1386,6 +1410,7 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     # Keep old rows aligned with current normalization rules.
     combined = normalize_decision_columns(combined)
+    combined = add_subject_flags(combined)
     combined = recompute_org_classification(combined)
     combined = ensure_spending_enrichment_columns(combined)
     combined = ensure_commitment_enrichment_columns(combined)
