@@ -157,6 +157,17 @@ def parse_date(val) -> str | None:
             return None
 
 
+def parse_bool(val) -> bool | None:
+    s = str(val or "").strip().lower()
+    if not s or s == "nan":
+        return None
+    if s in {"true", "1", "yes"}:
+        return True
+    if s in {"false", "0", "no"}:
+        return False
+    return None
+
+
 def main() -> None:
     db_url = os.environ["DATABASE_URL"]
     conn = psycopg2.connect(db_url)
@@ -208,6 +219,8 @@ def main() -> None:
             str(r.get("subject") or "")[:2000] or None,
             str(r.get("documentUrl") or "") or None,
             str(r.get("decisionType") or "") or None,
+            parse_bool(r.get("subject_has_anatrop_or_anaklis")),
+            parse_bool(r.get("subject_has_budget_balance_report_terms")),
             parse_keywords(r.get("matched_keywords_subject"), r.get("matched_keywords_pdf")),
             derive_amount(r),
             parse_contractor(r),
@@ -217,11 +230,12 @@ def main() -> None:
         INSERT INTO public.procurement_decisions (
             ada, org_type, org_name_clean, authority_level, municipality_id,
             region_name, issue_date, subject, document_url, decision_type,
+            subject_has_anatrop_or_anaklis, subject_has_budget_balance_report_terms,
             matched_keywords, amount_eur, contractor_name
         ) VALUES (
             %s, %s, %s, %s, %s,
             %s, %s, %s, %s, %s,
-            %s, %s, %s
+            %s, %s, %s, %s, %s
         )
         ON CONFLICT (ada) DO UPDATE SET
             org_type        = EXCLUDED.org_type,
@@ -233,6 +247,8 @@ def main() -> None:
             subject         = EXCLUDED.subject,
             document_url    = EXCLUDED.document_url,
             decision_type   = EXCLUDED.decision_type,
+            subject_has_anatrop_or_anaklis = EXCLUDED.subject_has_anatrop_or_anaklis,
+            subject_has_budget_balance_report_terms = EXCLUDED.subject_has_budget_balance_report_terms,
             matched_keywords= EXCLUDED.matched_keywords,
             amount_eur      = EXCLUDED.amount_eur,
             contractor_name = EXCLUDED.contractor_name;

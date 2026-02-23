@@ -422,6 +422,10 @@ Main enrichments:
 - `org_type`, `org_name_clean`: derived by organization classification
 - `decisionType`: converted to label-only string
 - `thematicCategories`: converted to list of label-only strings
+- `subject_has_anatrop_or_anaklis` (`True/False`): derived boolean flag from `subject`
+  - `True` when subject contains `ανατροπ*` or `ανακλησ*` (accent-insensitive)
+- `subject_has_budget_balance_report_terms` (`True/False`): derived boolean flag from `subject`
+  - `True` when subject contains `προϋπολογισμ*`, `ισολογισμ*`, or `απολογισμ*` (accent-insensitive)
 
 The script supports both:
 - raw API dict/list values
@@ -566,6 +570,7 @@ Relevant `meta` keys used:
 - `Υπογράφοντες`
 - `Οικονομικό Έτος`
 - `Κατηγορία Προϋπολογισμού`
+- `Συνολικό ποσό` (fallback when `Ποσό και ΚΑΕ/ΑΛΕ` is empty)
 - `Ποσό και ΚΑΕ/ΑΛΕ` (list)
   - each item may include:
     - `ΑΦΜ / Επωνυμία`
@@ -644,5 +649,7 @@ Helper columns:
 - Enrichment runs automatically during `fetch_diavgeia.py` for new rows.
 - Existing CSV rows can be backfilled from a notebook via:
   - `fetch_diavgeia.backfill_spending_approval_columns(...)`
+- Root-level `fetch_diavgeia.py` is a thin wrapper (exports `main` only). For backfill helpers, import from `src/`:
+  - `python -c "import sys; sys.path.append('src'); from fetch_diavgeia import backfill_spending_approval_columns; backfill_spending_approval_columns(...)"`  
 - The backfill currently processes all supported types above (despite the legacy function name).
 - Progress is printed during enrichment (`[spending]`, `[commitment]`, `[direct]`, `[payment]` start/progress/done lines).

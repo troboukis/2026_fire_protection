@@ -112,6 +112,8 @@ CREATE TABLE IF NOT EXISTS public.procurement_decisions (
   subject          TEXT,
   document_url     TEXT,
   decision_type    TEXT,
+  subject_has_anatrop_or_anaklis BOOLEAN,
+  subject_has_budget_balance_report_terms BOOLEAN,
   matched_keywords TEXT[],
   amount_eur       NUMERIC(14, 2),
   contractor_name  TEXT,
@@ -129,6 +131,12 @@ CREATE INDEX IF NOT EXISTS idx_procurement_authority
 
 CREATE INDEX IF NOT EXISTS idx_procurement_org
   ON public.procurement_decisions (org_name_clean);
+
+CREATE INDEX IF NOT EXISTS idx_procurement_subject_anatrop_anaklis
+  ON public.procurement_decisions (subject_has_anatrop_or_anaklis);
+
+CREATE INDEX IF NOT EXISTS idx_procurement_subject_budget_terms
+  ON public.procurement_decisions (subject_has_budget_balance_report_terms);
 
 -- ---------------------------------------------------------------------------
 -- Row Level Security: public read-only (no auth required for reads)
