@@ -522,6 +522,12 @@ def add_subject_flags(df: pd.DataFrame) -> pd.DataFrame:
     - ανατροπ*
     - ανακλησ*
     (accent-insensitive)
+
+    subject_has_budget_balance_report_terms = True if subject contains:
+    - προϋπολογισμ*
+    - ισολογισμ*
+    - απολογισμ*
+    (accent-insensitive)
     """
     df = df.copy()
     if "subject" not in df.columns:
@@ -533,7 +539,18 @@ def add_subject_flags(df: pd.DataFrame) -> pd.DataFrame:
             return False
         return ("ΑΝΑΤΡΟΠ" in text) or ("ΑΝΑΚΛΗΣ" in text)
 
+    def _flag_budget_terms(value) -> bool:
+        text = normalize_upper_no_accents(value)
+        if not isinstance(text, str):
+            return False
+        return (
+            ("ΠΡΟΥΠΟΛΟΓΙΣΜ" in text)
+            or ("ΙΣΟΛΟΓΙΣΜ" in text)
+            or ("ΑΠΟΛΟΓΙΣΜ" in text)
+        )
+
     df["subject_has_anatrop_or_anaklis"] = df["subject"].apply(_flag_subject)
+    df["subject_has_budget_balance_report_terms"] = df["subject"].apply(_flag_budget_terms)
     return df
 
 
