@@ -28,6 +28,11 @@ import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
 
+try:
+    from tqdm import tqdm
+except Exception:  # pragma: no cover - optional dependency
+    tqdm = None
+
 load_dotenv()
 
 REPO_DIR     = Path(__file__).resolve().parent.parent
@@ -195,7 +200,11 @@ def main() -> None:
     print(f"Loaded {len(df)} rows from {DIAVGEIA_CSV.name}")
 
     rows: list[tuple] = []
-    for _, r in df.iterrows():
+    row_iter = df.iterrows()
+    if tqdm is not None:
+        row_iter = tqdm(row_iter, total=len(df), desc="procurement_headers", unit="row")
+
+    for _, r in row_iter:
         org_type      = str(r.get("org_type") or "").strip() or None
         org_name      = str(r.get("org_name_clean") or "").strip() or None
         if not org_type or not org_name:
