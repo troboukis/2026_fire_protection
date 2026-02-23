@@ -1,0 +1,333 @@
+municipality_id,municipality_name,region_id,source,notes,pdf_municipality_name,pdf_geo_code,match_method
+9021,Κομοτηνής,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΟΜΟΤΗΝΗΣ,0101,exact_name
+9019,Αρριανών,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΡΙΑΝΩΝ,0102,exact_name
+9020,Ιάσμου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΙΑΣΜΟΥ,0103,exact_name
+9022,Μαρωνείας - Σαπών,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΡΩΝΕΙΑΣ - ΣΑΠΩΝ,0104,exact_name
+9002,Δράμας,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΔΡΑΜΑΣ,0201,exact_name
+9001,Δοξάτου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΔΟΞΑΤΟΥ,0202,exact_name
+9003,Κάτω Νευροκοπίου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΤΩ ΝΕΥΡΟΚΟΠΙΟΥ,0203,exact_name
+9004,Παρανεστίου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΡΑΝΕΣΤΙΟΥ,0204,exact_name
+9005,Προσοτσάνης,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΡΟΣΟΤΣΑΝΗΣ,0205,exact_name
+9006,Αλεξανδρούπολης,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ,0301,exact_name
+9007,Διδυμοτείχου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΔΙΔΥΜΟΤΕΙΧΟΥ,0302,exact_name
+9008,Ορεστιάδας,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΟΡΕΣΤΙΑΔΑΣ,0303,exact_name
+9009,Σαμοθράκης,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΑΜΟΘΡΑΚΗΣ,0304,exact_name
+9010,Σουφλίου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΟΥΦΛΙΟΥ,0305,exact_name
+9011,Θάσου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΘΑΣΟΥ,0401,exact_name
+9012,Καβάλας,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΒΑΛΑΣ,0501,exact_name
+9013,Νέστου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΣΤΟΥ,0502,exact_name
+9014,Παγγαίου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΓΓΑΙΟΥ,0503,exact_name
+9017,Ξάνθης,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΞΑΝΘΗΣ,0601,exact_name
+9015,Αβδήρων,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΒΔΗΡΩΝ,0602,exact_name
+9016,Μύκης,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΥΚΗΣ,0603,exact_name
+9018,Τοπείρου,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΤΟΠΕΙΡΟΥ,0604,exact_name
+9031,Θεσσαλονίκης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΘΕΣΣΑΛΟΝΙΚΗΣ,0701,exact_name
+9026,Αμπελοκήπων - Μενεμένης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΠΕΛΟΚΗΠΩΝ - ΜΕΝΕΜΕΝΗΣ,0702,exact_name
+9027,Βόλβης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΟΛΒΗΣ,0703,exact_name
+9028,Δέλτα,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΕΛΤΑ,0704,exact_name
+9029,Θερμαϊκού,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΘΕΡΜΑΪΚΟΥ,0705,exact_name
+9030,Θέρμης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΘΕΡΜΗΣ,0706,exact_name
+9032,Καλαμαριάς,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΛΑΜΑΡΙΑΣ,0707,exact_name
+9033,Κορδελιού - Ευόσμου,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΟΡΔΕΛΙΟΥ - ΕΥΟΣΜΟΥ,0708,exact_name
+9034,Λαγκαδά,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΑΓΚΑΔΑ,0709,exact_name
+9035,Νέαπολης - Συκεών,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΠΟΛΗΣ - ΣΥΚΕΩΝ,0710,exact_name
+9036,Παύλου Μελά,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΥΛΟΥ ΜΕΛΑ,0711,exact_name
+9037,Πυλαίας - Χορτιάτη,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΥΛΑΙΑΣ - ΧΟΡΤΙΑΤΗ,0712,exact_name
+9038,Χαλκηδόνος,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΧΑΛΚΗΔΟΝΟΣ,0713,exact_name
+9039,Ωραιοκάστρου,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΩΡΑΙΟΚΑΣΤΡΟΥ,0714,exact_name
+9024,Βέροιας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΕΡΟΙΑΣ,0801,exact_name
+9023,Αλεξάνδρειας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΕΞΑΝΔΡΕΙΑΣ,0802,exact_name
+9025,Νάουσας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΗΡΩΙΚΗΣ ΠΟΛΕΩΣ ΝΑΟΥΣΑΣ,0803,pdf_name_override
+9040,Κιλκίς,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΙΛΚΙΣ,0901,exact_name
+9041,Παιονίας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΙΟΝΙΑΣ,0902,exact_name
+9043,Έδεσσας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΔΕΣΣΑΣ,1001,exact_name
+9042,Αλμωπίας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΜΩΠΙΑΣ,1002,exact_name
+9044,Πέλλας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΛΛΑΣ,1003,exact_name
+9045,Σκύδρας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΚΥΔΡΑΣ,1004,exact_name
+9047,Κατερίνης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΤΕΡΙΝΗΣ,1101,exact_name
+9046,Δίου - Ολύμπου,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΙΟΥ - ΟΛΥΜΠΟΥ,1102,exact_name
+9048,Πύδνας - Κολινδρού,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΥΔΝΑΣ - ΚΟΛΙΝΔΡΟΥ,1103,exact_name
+9054,Σερρών,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΕΡΡΩΝ,1201,exact_name
+9049,Αμφίπολης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΦΙΠΟΛΗΣ,1202,exact_name
+9050,Βισαλτίας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΙΣΑΛΤΙΑΣ,1203,exact_name
+9051,Εμμανουήλ Παππά,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΜΜΑΝΟΥΗΛ ΠΑΠΠΑ,1204,exact_name
+9052,Ηρακλείας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΗΡΑΚΛΕΙΑΣ,1205,exact_name
+9053,Νέας Ζίχνης,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΣ ΖΙΧΝΗΣ,1206,exact_name
+9055,Σιντικής,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΙΝΤΙΚΗΣ,1207,exact_name
+9059,Πολυγύρου,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΟΛΥΓΥΡΟΥ,1301,exact_name
+9056,Αριστοτέλη,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΙΣΤΟΤΕΛΗ,1302,exact_name
+9057,Κασσάνδρας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΣΣΑΝΔΡΑΣ,1303,exact_name
+9058,Νέας Προποντίδας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΣ ΠΡΟΠΟΝΤΙΔΑΣ,1304,exact_name
+9060,Σιθωνίας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΙΘΩΝΙΑΣ,1305,exact_name
+9068,Κοζάνης,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΟΖΑΝΗΣ,1401,exact_name
+9066,Βοϊου,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΟΪΟΥ,1402,exact_name
+9067,Εορδαίας,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΟΡΔΑΙΑΣ,1403,exact_name
+9069,Σερβίων - Βελβεντού,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΕΡΒΙΩΝ,1404,dimos_override
+9069,Σερβίων - Βελβεντού,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΕΛΒΕΝΤΟΥ,1405,dimos_override
+9061,Γρεβενών,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΓΡΕΒΕΝΩΝ,1501,exact_name
+9062,Δεσκάτης,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΕΣΚΑΤΗΣ,1502,exact_name
+9063,Καστοριάς,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΣΤΟΡΙΑΣ,1601,exact_name
+9064,Νεστορίου,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΣΤΟΡΙΟΥ,1602,exact_name
+9065,Ορεστίδος,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ,1603,pdf_name_override
+9072,Φλώρινας,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΦΛΩΡΙΝΑΣ,1701,exact_name
+9070,Αμυνταίου,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΥΝΤΑΙΟΥ,1702,exact_name
+9071,Πρεσπών,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΡΕΣΠΩΝ,1703,exact_name
+9084,Ιωαννιτών,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΙΩΑΝΝΙΤΩΝ,1801,exact_name
+9080,Βορείων Τζουμέρκων,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΒΟΡΕΙΩΝ ΤΖΟΥΜΕΡΚΩΝ,1802,exact_name
+9081,Δωδώνης,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΔΩΔΩΝΗΣ,1803,exact_name
+9082,Ζαγορίου,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΖΑΓΟΡΙΟΥ,1804,exact_name
+9083,Ζίτσας,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΖΙΤΣΑΣ,1805,exact_name
+9085,Κόνιτσας,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΟΝΙΤΣΑΣ,1806,exact_name
+9086,Μετσόβου,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΕΤΣΟΒΟΥ,1807,exact_name
+9087,Πωγωνίου,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΩΓΩΝΙΟΥ,1808,exact_name
+9073,Αρταίων,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΡΤΑΙΩΝ,1901,exact_name
+9074,Γεωργίου Καραϊσκάκη,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΓΕΩΡΓΙΟΥ ΚΑΡΑΪΣΚΑΚΗ,1902,exact_name
+9075,Κεντρικών Τζουμέρκων,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΕΝΤΡΙΚΩΝ ΤΖΟΥΜΕΡΚΩΝ,1903,exact_name
+9076,Νικολάου Σκουφά,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΙΚΟΛΑΟΥ ΣΚΟΥΦΑ,1904,exact_name
+9077,Ηγουμενίτσας,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΗΓΟΥΜΕΝΙΤΣΑΣ,2001,exact_name
+9078,Σουλίου,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΟΥΛΙΟΥ,2002,exact_name
+9079,Φιλιατών,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΦΙΛΙΑΤΩΝ,2003,exact_name
+9090,Πρέβεζας,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΡΕΒΕΖΑΣ,2101,exact_name
+9088,Ζηρού,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΖΗΡΟΥ,2102,exact_name
+9089,Πάργας,ΗΠΕΙΡΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΑΡΓΑΣ,2103,exact_name
+9100,Λαρισαίων,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΑΡΙΣΑΙΩΝ,2201,exact_name
+9097,Αγιάς,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΑΣ,2202,exact_name
+9098,Ελασσόνας,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΛΑΣΣΟΝΑΣ,2203,exact_name
+9099,Κιλελέρ,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΙΛΕΛΕΡ,2204,exact_name
+9101,Τεμπών,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΤΕΜΠΩΝ,2205,exact_name
+9102,Τυρνάβου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΤΥΡΝΑΒΟΥ,2206,exact_name
+9103,Φαρσάλων,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΦΑΡΣΑΛΩΝ,2207,exact_name
+9092,Καρδίτσας,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΡΔΙΤΣΑΣ,2301,exact_name
+9091,Αργιθέας,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΓΙΘΕΑΣ,2302,exact_name
+9093,Λίμνης Πλαστήρα,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΙΜΝΗΣ ΠΛΑΣΤΗΡΑ,2303,exact_name
+9094,Μουζακίου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΜΟΥΖΑΚΙΟΥ,2304,exact_name
+9095,Παλαμά,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΛΑΜΑ,2305,exact_name
+9096,Σοφάδων,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΟΦΑΔΩΝ,2306,exact_name
+9105,Βόλου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΒΟΛΟΥ,2401,exact_name
+9104,Αλμυρού,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΜΥΡΟΥ,2402,exact_name
+9106,Ζαγοράς - Μουρεσίου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΖΑΓΟΡΑΣ - ΜΟΥΡΕΣΙΟΥ,2403,exact_name
+9107,Νοτίου Πηλίου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΟΤΙΟΥ ΠΗΛΙΟΥ,2404,exact_name
+9108,Ρήγα Φερραίου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΡΗΓΑ ΦΕΡΑΙΟΥ,2405,dimos_override
+9110,Σκιάθου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΚΙΑΘΟΥ,2501,exact_name
+9109,Αλοννήσου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΟΝΝΗΣΟΥ,2502,exact_name
+9111,Σκοπέλου,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΚΟΠΕΛΟΥ,2503,exact_name
+9114,Τρικκαίων,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΤΡΙΚΚΑΙΩΝ,2601,exact_name
+9112,Καλαμπάκας,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΜΕΤΕΩΡΩΝ,2602,dimos_override
+9113,Πύλης,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΥΛΗΣ,2603,exact_name
+9115,Φαρκαδόνας,ΘΕΣΣΑΛΙΑΣ,ELSTAT mon_plith_2021.xlsx,,ΦΑΡΚΑΔΟΝΑΣ,2604,exact_name
+9160,Λαμιέων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΑΜΙΕΩΝ,2701,exact_name
+9158,Αμφίκλειας - Ελάτειας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΦΙΚΛΕΙΑΣ - ΕΛΑΤΕΙΑΣ,2702,exact_name
+9159,Δομοκού,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΟΜΟΚΟΥ,2703,exact_name
+9161,Λοκρών,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΟΚΡΩΝ,2704,exact_name
+9162,Μακρακώμης,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΚΡΑΚΩΜΗΣ,2705,exact_name
+9163,Μώλου - Αγ. Κωνσταντίνου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΜΕΝΩΝ ΒΟΥΡΛΩΝ,2706,dimos_override
+9164,Στυλίδας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΤΥΛΙΔΟΣ,2707,pdf_name_override
+9145,Λεβαδέων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΛΕΒΑΔΕΩΝ,2801,exact_name
+9142,Αλιάρτου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΙΑΡΤΟΥ - ΘΕΣΠΙΕΩΝ,2802,pdf_name_override
+9143,Διστόμου-Αράχοβας - Αντίκυρας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΙΣΤΟΜΟΥ - ΑΡΑΧΟΒΑΣ - ΑΝΤΙΚΥΡΑΣ,2803,pdf_name_override
+9144,Θηβαίων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΘΗΒΑΙΩΝ,2804,exact_name
+9146,Ορχομενού,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΟΡΧΟΜΕΝΟΥ,2805,exact_name
+9147,Τανάγρας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΤΑΝΑΓΡΑΣ,2806,exact_name
+9155,Χαλκιδέων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΧΑΛΚΙΔΕΩΝ,2901,exact_name
+9148,Διρφύων - Μεσσαπίων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΙΡΦΥΩΝ - ΜΕΣΣΑΠΙΩΝ,2902,exact_name
+9149,Ερέτριας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΡΕΤΡΙΑΣ,2903,exact_name
+9150,Ιστιαίας - Αιδηψού,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΙΣΤΙΑΙΑΣ - ΑΙΔΗΨΟΥ,2904,exact_name
+9151,Καρύστου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΡΥΣΤΟΥ,2905,exact_name
+9152,Κύμης - Αλιβερίου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΥΜΗΣ - ΑΛΙΒΕΡΙΟΥ,2906,exact_name
+9153,Μαντουδίου - Λίμνης - Αγίας Άννας,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΝΤΟΥΔΙΟΥ - ΛΙΜΝΗΣ - ΑΓΙΑΣ ΑΝΝΑΣ,2907,exact_name
+9154,Σκύρου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΣΚΥΡΟΥ,2908,exact_name
+9157,Καρπενησίου,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΡΠΕΝΗΣΙΟΥ,3001,exact_name
+9156,Αγράφων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΡΑΦΩΝ,3002,exact_name
+9165,Δελφών,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΕΛΦΩΝ,3101,exact_name
+9166,Δωρίδος,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΩΡΙΔΟΣ,3102,exact_name
+9118,Κέρκυρας,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΚΕΝΤΡΙΚΗΣ ΚΕΡΚΥΡΑΣ ΚΑΙ ΔΙΑΠΟΝΤΙΩΝ ΝΗΣΩΝ,3201,dimos_override
+9119,Παξών,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΠΑΞΩΝ,3202,exact_name
+9118,Κέρκυρας,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΒΟΡΕΙΑΣ ΚΕΡΚΥΡΑΣ,3203,dimos_override
+9118,Κέρκυρας,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΝΟΤΙΑΣ ΚΕΡΚΥΡΑΣ,3204,dimos_override
+9116,Ζακύνθου,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΖΑΚΥΝΘΟΥ,3301,exact_name
+9117,Ιθάκης,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΙΘΑΚΗΣ,3401,exact_name
+9120,Κεφαλονιάς,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΑΡΓΟΣΤΟΛΙΟΥ,3501,dimos_override
+9120,Κεφαλονιάς,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΛΗΞΟΥΡΙΟΥ,3502,dimos_override
+9120,Κεφαλονιάς,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΣΑΜΗΣ,3503,dimos_override
+9121,Λευκάδας,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΛΕΥΚΑΔΑΣ,3601,exact_name
+9122,Μεγανησίου,ΙΟΝΙΩΝ ΝΗΣΩΝ,ELSTAT mon_plith_2021.xlsx,,ΜΕΓΑΝΗΣΙΟΥ,3602,exact_name
+9134,Πατρέων,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΤΡΕΩΝ,3701,exact_name
+9130,Αιγιαλείας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΙΓΙΑΛΕΙΑΣ,3702,exact_name
+9131,Δυτικής Αχαΐας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΔΥΤΙΚΗΣ ΑΧΑΪΑΣ,3703,exact_name
+9132,Ερυμάνθου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΕΡΥΜΑΝΘΟΥ,3704,exact_name
+9133,Καλαβρύτων,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΛΑΒΡΥΤΩΝ,3705,exact_name
+9127,Ιεράς Πόλης Μεσολογγίου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΙΕΡΑΣ ΠΟΛΗΣ ΜΕΣΟΛΟΓΓΙΟΥ,3801,exact_name
+9124,Άκτιου - Βόνιτσας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΚΤΙΟΥ - ΒΟΝΙΤΣΑΣ,3802,exact_name
+9123,Αγρινίου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΡΙΝΙΟΥ,3803,exact_name
+9125,Αμφιλοχίας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΦΙΛΟΧΙΑΣ,3804,exact_name
+9126,Θέρμου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΘΕΡΜΟΥ,3805,exact_name
+9128,Ναυπακτίας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΝΑΥΠΑΚΤΙΑΣ,3806,exact_name
+9129,Ξηρομέρου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΞΗΡΟΜΕΡΟΥ,3807,exact_name
+9141,Πύργου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΥΡΓΟΥ,3901,exact_name
+9139,Ήλιδας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΗΛΙΔΑΣ,3902,exact_name
+9135,Ανδραβίδας - Κυλλήνης,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΝΔΡΑΒΙΔΑΣ - ΚΥΛΛΗΝΗΣ,3903,exact_name
+9136,Ανδρίτσαινας - Κρεστένων,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΝΔΡΙΤΣΑΙΝΑΣ - ΚΡΕΣΤΕΝΩΝ,3904,exact_name
+9137,Αρχαίας Ολυμπίας,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ,3905,exact_name
+9138,Ζαχάρως,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΖΑΧΑΡΩΣ,3906,exact_name
+9140,Πηνειού,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ELSTAT mon_plith_2021.xlsx,,ΠΗΝΕΙΟΥ,3907,exact_name
+9241,Τρίπολης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΤΡΙΠΟΛΗΣ,4001,exact_name
+9237,Βόρειας Κυνουρίας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΒΟΡΕΙΑΣ ΚΥΝΟΥΡΙΑΣ,4002,exact_name
+9238,Γορτυνίας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΓΟΡΤΥΝΙΑΣ,4003,exact_name
+9239,Μεγαλόπολης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΕΓΑΛΟΠΟΛΗΣ,4004,exact_name
+9240,Νότιας Κυνουρίας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΟΤΙΑΣ ΚΥΝΟΥΡΙΑΣ,4005,exact_name
+9236,Ναυπλιέων,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΑΥΠΛΙΕΩΝ,4101,exact_name
+9233,Άργους - Μυκηνών,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΡΓΟΥΣ - ΜΥΚΗΝΩΝ,4102,exact_name
+9234,Επιδαύρου,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΕΠΙΔΑΥΡΟΥ,4103,exact_name
+9235,Ερμιονίδας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΕΡΜΙΟΝΙΔΑΣ,4104,exact_name
+9243,Κορινθίων,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΟΡΙΝΘΙΩΝ,4201,exact_name
+9242,Βέλου - Βόχας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΒΕΛΟΥ - ΒΟΧΑΣ,4202,exact_name
+9244,Λουτρακίου - Αγ. Θεοδώρων,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΛΟΥΤΡΑΚΙΟΥ - ΠΕΡΑΧΩΡΑΣ - ΑΓΙΩΝ ΘΕΟΔΩΡΩΝ,4203,dimos_override
+9245,Νεμέας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΕΜΕΑΣ,4204,exact_name
+9246,Ξυλοκάστρου - Ευρωστίνης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΞΥΛΟΚΑΣΤΡΟΥ - ΕΥΡΩΣΤΙΝΗΣ,4205,exact_name
+9247,Σικυωνίων,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΙΚΥΩΝΙΩΝ,4206,exact_name
+9252,Σπάρτης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΠΑΡΤΗΣ,4301,exact_name
+9248,Ανατολικής Μάνης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΝΑΤΟΛΙΚΗΣ ΜΑΝΗΣ,4302,exact_name
+9249,Ελαφονήσου,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΕΛΑΦΟΝΗΣΟΥ,4303,exact_name
+9250,Ευρώτα,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΕΥΡΩΤΑ,4304,exact_name
+9251,Μονεμβασιάς,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΟΝΕΜΒΑΣΙΑΣ,4305,exact_name
+9254,Καλαμάτας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΑΛΑΜΑΤΑΣ,4401,exact_name
+9253,Δυτικής Μάνης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΔΥΤΙΚΗΣ ΜΑΝΗΣ,4402,exact_name
+9255,Μεσσήνης,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΕΣΣΗΝΗΣ,4403,exact_name
+9256,Οιχαλίας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΟΙΧΑΛΙΑΣ,4404,exact_name
+9257,Πύλου - Νέστορος,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΥΛΟΥ - ΝΕΣΤΟΡΟΣ,4405,exact_name
+9258,Τριφυλίας,ΠΕΛΟΠΟΝΝΗΣΟΥ,ELSTAT mon_plith_2021.xlsx,,ΤΡΙΦΥΛΙΑΣ,4406,exact_name
+9186,Αθηναίων,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΘΗΝΑΙΩΝ,4501,exact_name
+9187,Βύρωνος,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΒΥΡΩΝΟΣ,4502,exact_name
+9188,Γαλατσίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΓΑΛΑΤΣΙΟΥ,4503,exact_name
+9189,Δάφνης - Υμηττού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΔΑΦΝΗΣ - ΥΜΗΤΤΟΥ,4504,exact_name
+9190,Ζωγράφου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΖΩΓΡΑΦΟΥ,4505,exact_name
+9191,Ηλιούπολης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΗΛΙΟΥΠΟΛΕΩΣ,4506,pdf_name_override
+9192,Καισαριανής,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΙΣΑΡΙΑΝΗΣ,4507,exact_name
+9193,Φιλαδελφείας - Χαλκηδόνος,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΣ ΦΙΛΑΔΕΛΦΕΙΑΣ - ΝΕΑΣ ΧΑΛΚΗΔΟΝΟΣ,4508,pdf_name_override
+9168,Αμαρουσίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΑΡΟΥΣΙΟΥ,4601,exact_name
+9167,Αγίας Παρασκευής,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΑΣ ΠΑΡΑΣΚΕΥΗΣ,4602,exact_name
+9169,Βριλησσίων,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΒΡΙΛΗΣΣΙΩΝ,4603,exact_name
+9170,Ηρακλείου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΗΡΑΚΛΕΙΟΥ,4604,exact_name
+9171,Κηφισιάς,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΗΦΙΣΙΑΣ,4605,exact_name
+9172,Λυκόβρυσης - Πεύκης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΛΥΚΟΒΡΥΣΗΣ - ΠΕΥΚΗΣ,4606,exact_name
+9173,Μεταμορφώσεως,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΕΤΑΜΟΡΦΩΣΕΩΣ,4607,exact_name
+9174,Νέας Ιωνίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΣ ΙΩΝΙΑΣ,4608,exact_name
+9175,Παπάγου - Χολαργού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΠΑΓΟΥ - ΧΟΛΑΡΓΟΥ,4609,exact_name
+9176,Πεντέλης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΝΤΕΛΗΣ,4610,exact_name
+9177,Φιλοθέης - Ψυχικού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΦΙΛΟΘΕΗΣ - ΨΥΧΙΚΟΥ,4611,exact_name
+9178,Χαλανδρίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΧΑΛΑΝΔΡΙΟΥ,4612,exact_name
+9183,Περιστερίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΡΙΣΤΕΡΙΟΥ,4701,exact_name
+9179,Αγίας Βαρβάρας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΑΣ ΒΑΡΒΑΡΑΣ,4702,exact_name
+9180,Αγίων Αναργύρων - Καματερού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΩΝ ΑΝΑΡΓΥΡΩΝ - ΚΑΜΑΤΕΡΟΥ,4703,exact_name
+9181,Αιγάλεω,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΙΓΑΛΕΩ,4704,exact_name
+9182,Ιλίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΙΛΙΟΥ,4705,exact_name
+9184,Πετρούπολης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΤΡΟΥΠΟΛΕΩΣ,4706,pdf_name_override
+9185,Χαϊδαρίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΧΑΪΔΑΡΙΟΥ,4707,exact_name
+9198,Καλλιθέας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΛΛΙΘΕΑΣ,4801,exact_name
+9194,Αγίου Δημητρίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ,4802,exact_name
+9195,Αλίμου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΛΙΜΟΥ,4803,exact_name
+9196,Γλυφάδας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΓΛΥΦΑΔΑΣ,4804,exact_name
+9197,Ελληνικού - Αργυρούπολης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΕΛΛΗΝΙΚΟΥ - ΑΡΓΥΡΟΥΠΟΛΗΣ,4805,exact_name
+9199,Μοσχάτου - Ταύρου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΟΣΧΑΤΟΥ - ΤΑΥΡΟΥ,4806,exact_name
+9200,Νέας Σμύρνης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΝΕΑΣ ΣΜΥΡΝΗΣ,4807,exact_name
+9201,Παλαιού Φαλήρου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΛΑΙΟΥ ΦΑΛΗΡΟΥ,4808,exact_name
+9215,Αχαρνών,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΧΑΡΝΩΝ,4901,exact_name
+9216,Βάρης - Βούλας - Βουλιαγμένης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΒΑΡΗΣ - ΒΟΥΛΑΣ - ΒΟΥΛΙΑΓΜΕΝΗΣ,4902,exact_name
+9217,Διονύσου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΔΙΟΝΥΣΟΥ,4903,exact_name
+9218,Κρωπίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΡΩΠΙΑΣ,4904,exact_name
+9219,Λαυρεωτικής,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΛΑΥΡΕΩΤΙΚΗΣ,4905,exact_name
+9220,Μαραθώνος,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΡΑΘΩΝΟΣ,4906,exact_name
+9221,Μαρκοπούλου Μεσογαίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΡΚΟΠΟΥΛΟΥ ΜΕΣΟΓΑΙΑΣ,4907,exact_name
+9222,Παιανίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΙΑΝΙΑΣ,4908,exact_name
+9223,Παλλήνης,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΑΛΛΗΝΗΣ,4909,exact_name
+9224,Ραφήνας - Πικερμίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΡΑΦΗΝΑΣ - ΠΙΚΕΡΜΙΟΥ,4910,exact_name
+9225,Σαρωνικού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΑΡΩΝΙΚΟΥ,4911,exact_name
+9226,Σπάτων - Αρτέμιδος,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΠΑΤΩΝ - ΑΡΤΕΜΙΔΟΣ,4912,exact_name
+9227,Ωρωπού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΩΡΩΠΟΥ,4913,exact_name
+9229,Ελευσίνας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΕΛΕΥΣΙΝΑΣ,5001,exact_name
+9228,Ασπροπύργου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΣΠΡΟΠΥΡΓΟΥ,5002,exact_name
+9230,Μάνδρας - Ειδυλλίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΝΔΡΑΣ - ΕΙΔΥΛΛΙΑΣ,5003,exact_name
+9231,Μεγαρέων,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΕΓΑΡΕΩΝ,5004,exact_name
+9232,Φυλής,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΦΥΛΗΣ,5005,exact_name
+9205,Πειραιώς,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΙΡΑΙΩΣ,5101,exact_name
+9202,Κερατσινίου - Δραπετσώνας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΕΡΑΤΣΙΝΙΟΥ - ΔΡΑΠΕΤΣΩΝΑΣ,5102,exact_name
+9203,Κορυδαλλού,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΟΡΥΔΑΛΛΟΥ,5103,exact_name
+9204,Νίκαιας - Αγίου Ι. Ρέντη,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΝΙΚΑΙΑΣ - ΑΓΙΟΥ ΙΩΑΝΝΗ ΡΕΝΤΗ,5104,pdf_name_override
+9206,Περάματος,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΕΡΑΜΑΤΟΣ,5105,exact_name
+9211,Σαλαμίνας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΑΛΑΜΙΝΟΣ,5201,pdf_name_override
+9214,Ύδρας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΥΔΡΑΣ,5202,exact_name
+9207,Αγκιστρίου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΚΙΣΤΡΙΟΥ,5203,exact_name
+9208,Αίγινας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΙΓΙΝΑΣ,5204,exact_name
+9209,Κυθήρων,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΥΘΗΡΩΝ,5205,exact_name
+9210,Πόρου,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΟΡΟΥ,5206,exact_name
+9212,Σπετσών,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΠΕΤΣΩΝ,5207,exact_name
+9213,Τροιζηνίας,ΑΤΤΙΚΗΣ,ELSTAT mon_plith_2021.xlsx,,ΤΡΟΙΖΗΝΙΑΣ - ΜΕΘΑΝΩΝ,5208,dimos_override
+9261,Λέσβου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΥΤΙΛΗΝΗΣ,5301,dimos_override
+9261,Λέσβου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΔΥΤΙΚΗΣ ΛΕΣΒΟΥ,5302,dimos_override
+9259,Ικαρίας,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΙΚΑΡΙΑΣ,5401,exact_name
+9260,Φούρνων Κορσεών,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΦΟΥΡΝΩΝ ΚΟΡΣΕΩΝ,5402,exact_name
+9263,Λήμνου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΛΗΜΝΟΥ,5501,exact_name
+9262,Αγίου Ευστρατίου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΟΥ ΕΥΣΤΡΑΤΙΟΥ,5502,exact_name
+9264,Σάμου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ,5601,dimos_override
+9264,Σάμου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΔΥΤΙΚΗΣ ΣΑΜΟΥ,5602,dimos_override
+9266,Χίου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΧΙΟΥ,5701,exact_name
+9265,Οινουσσών,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΟΙΝΟΥΣΣΩΝ,5702,exact_name
+9267,Ψαρών,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΗΡΩΙΚΗΣ ΝΗΣΟΥ ΨΑΡΩΝ,5703,pdf_name_override
+9300,Σύρου - Ερμούπολης,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΥΡΟΥ - ΕΡΜΟΥΠΟΛΗΣ,5801,exact_name
+9268,Άνδρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΝΔΡΟΥ,5901,exact_name
+9270,Θήρας,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΘΗΡΑΣ,6001,exact_name
+9269,Ανάφης,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΝΑΦΗΣ,6002,exact_name
+9271,Ιητών,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΙΗΤΩΝ,6003,exact_name
+9272,Σικίνου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΙΚΙΝΟΥ,6004,exact_name
+9273,Φολεγάνδρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΦΟΛΕΓΑΝΔΡΟΥ,6005,exact_name
+9276,Καλυμνίων,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΑΛΥΜΝΙΩΝ,6101,exact_name
+9274,Αγαθονησίου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΓΑΘΟΝΗΣΙΟΥ,6102,exact_name
+9275,Αστυπαλαίας,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΣΤΥΠΑΛΑΙΑΣ,6103,exact_name
+9277,Λειψών,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΛΕΙΨΩΝ,6104,exact_name
+9278,Λέρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΛΕΡΟΥ,6105,exact_name
+9279,Πάτμου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΑΤΜΟΥ,6106,exact_name
+9280,Καρπάθου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΑΡΠΑΘΟΥ,6201,exact_name
+9281,Κάσου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΗΡΩΙΚΗΣ ΝΗΣΟΥ ΚΑΣΟΥ,6202,pdf_name_override
+9282,Κέας,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΕΑΣ,6301,exact_name
+9283,Κύθνου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΥΘΝΟΥ,6302,exact_name
+9284,Κω,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΩ,6401,exact_name
+9285,Νισύρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΙΣΥΡΟΥ,6402,exact_name
+9287,Μήλου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΗΛΟΥ,6501,exact_name
+9286,Κιμώλου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΚΙΜΩΛΟΥ,6502,exact_name
+9288,Σερίφου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΕΡΙΦΟΥ,6503,exact_name
+9289,Σίφνου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΙΦΝΟΥ,6504,exact_name
+9290,Μυκόνου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΥΚΟΝΟΥ,6601,exact_name
+9291,Αμοργού,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΜΟΡΓΟΥ,6701,exact_name
+9292,Νάξου & Μικρών Κυκλάδων,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΝΑΞΟΥ ΚΑΙ ΜΙΚΡΩΝ ΚΥΚΛΑΔΩΝ,6702,pdf_name_override
+9294,Πάρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΠΑΡΟΥ,6801,exact_name
+9293,Αντιπάρου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΑΝΤΙΠΑΡΟΥ,6802,exact_name
+9296,Ρόδου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΡΟΔΟΥ,6901,exact_name
+9295,Μεγίστης,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΜΕΓΙΣΤΗΣ,6902,exact_name
+9297,Σύμης,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΣΥΜΗΣ,6903,exact_name
+9298,Τήλου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΤΗΛΟΥ,6904,exact_name
+9299,Χάλκης,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΧΑΛΚΗΣ,6905,exact_name
+9301,Τήνου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ELSTAT mon_plith_2021.xlsx,,ΤΗΝΟΥ,7001,exact_name
+9170,Ηρακλείου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΗΡΑΚΛΕΙΟΥ,7101,exact_name
+9302,Αρχανών - Αστερουσίων,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΡΧΑΝΩΝ - ΑΣΤΕΡΟΥΣΙΩΝ,7102,exact_name
+9303,Βιάννου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΒΙΑΝΝΟΥ,7103,exact_name
+9304,Γόρτυνας,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΓΟΡΤΥΝΑΣ,7104,exact_name
+9306,Μαλεβιζίου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΑΛΕΒΙΖΙΟΥ,7105,exact_name
+9307,Μινώα Πεδιάδας,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΙΝΩΑ ΠΕΔΙΑΔΑΣ,7106,exact_name
+9308,Φαιστού,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΦΑΙΣΤΟΥ,7107,exact_name
+9309,Χερσονήσου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΧΕΡΣΟΝΗΣΟΥ,7108,exact_name
+9310,Αγίου Νικολάου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ,7201,exact_name
+9311,Ιεράπετρας,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΙΕΡΑΠΕΤΡΑΣ,7202,exact_name
+9312,Οροπεδίου Λασιθίου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΟΡΟΠΕΔΙΟΥ ΛΑΣΙΘΙΟΥ,7203,exact_name
+9313,Σητείας,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΗΤΕΙΑΣ,7204,exact_name
+9318,Ρεθύμνης,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΡΕΘΥΜΝΗΣ,7301,exact_name
+9314,Αγίου Βασιλείου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΓΙΟΥ ΒΑΣΙΛΕΙΟΥ,7302,exact_name
+9315,Αμάριου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΜΑΡΙΟΥ,7303,exact_name
+9316,Ανωγείων,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΝΩΓΕΙΩΝ,7304,exact_name
+9317,Μυλοποτάμου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΜΥΛΟΠΟΤΑΜΟΥ,7305,exact_name
+9325,Χανίων,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΧΑΝΙΩΝ,7401,exact_name
+9319,Αποκορώνου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΑΠΟΚΟΡΩΝΟΥ,7402,exact_name
+9320,Γαύδου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΓΑΥΔΟΥ,7403,exact_name
+9321,Καντάνου - Σέλινου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΑΝΤΑΝΟΥ - ΣΕΛΙΝΟΥ,7404,exact_name
+9322,Κισσάμου,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΚΙΣΣΑΜΟΥ,7405,exact_name
+9323,Πλατανιά,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΠΛΑΤΑΝΙΑ,7406,exact_name
+9324,Σφακίων,ΚΡΗΤΗΣ,ELSTAT mon_plith_2021.xlsx,,ΣΦΑΚΙΩΝ,7407,exact_name

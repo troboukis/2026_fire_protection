@@ -50,6 +50,18 @@
 - Υλοποίηση:
 - `src/fetch_diavgeia.py` (`coerce_columns_to_object`)
 
+### 5. Excluded organizations by `org_name_clean` (domain scope cleanup)
+
+- Πρόβλημα:
+- Ορισμένοι φορείς (π.χ. πανεπιστήμια/νοσοκομεία/πολιτιστικοί φορείς) εμφανίζονται από keyword hits αλλά είναι εκτός του επιθυμητού scope της ανάλυσης.
+- Απόφαση:
+- Διατηρούμε explicit exclusion list με βάση `org_name_clean`.
+- Οι γραμμές αυτές αφαιρούνται από τα datasets και στο εξής απορρίπτονται κατά το fetch/save flow.
+- Scope:
+- `raw` / `filtered` CSVs και μελλοντικά fetch batches
+- Υλοποίηση:
+- `src/fetch_diavgeia.py` (`EXCLUDED_ORG_NAME_CLEAN_RAW`, `filter_excluded_org_rows`, `record_has_excluded_org`)
+
 ## Open / Next
 
 - Προσθήκη manual override registry για ποσά (π.χ. `ADA -> corrected amount`) σε separate CSV/YAML.
@@ -64,4 +76,3 @@
 - `Scope` (raw / filtered / ingest / DB / frontend)
 - `Implementation` (file/function)
 - `Date`
-

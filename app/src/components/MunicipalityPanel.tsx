@@ -36,6 +36,18 @@ interface ProcurementDecision {
   document_url: string | null
 }
 
+interface ProcurementDecisionLine {
+  ada: string
+  amount_eur: number | null
+  counterparty_name: string | null
+}
+
+interface ProcurementLineAgg {
+  amountEur: number | null
+  lineCount: number
+  counterpartiesCount: number
+}
+
 async function fetchProcurement(municipalityId: string): Promise<ProcurementDecision[]> {
   const { data, error } = await supabase
     .from('procurement_decisions')
@@ -52,6 +64,67 @@ async function fetchProcurement(municipalityId: string): Promise<ProcurementDeci
     amount_eur:    r.amount_eur != null ? Number(r.amount_eur) : null,
     document_url:  r.document_url ?? null,
   }))
+}
+
+async function fetchProcurementLines(adas: string[]): Promise<ProcurementDecisionLine[]> {
+  if (adas.length === 0) return []
+
+  const uniqAdas = [...new Set(adas.filter(Boolean))]
+  const chunkSize = 150
+  const all: ProcurementDecisionLine[] = []
+
+  for (let i = 0; i < uniqAdas.length; i += chunkSize) {
+    const chunk = uniqAdas.slice(i, i + chunkSize)
+    const { data, error } = await supabase
+      .from('procurement_decision_lines')
+      .select('ada, amount_eur, counterparty_name')
+      .in('ada', chunk)
+    if (error) throw error
+    all.push(
+      ...(data ?? []).map(r => ({
+        ada: String(r.ada),
+        amount_eur: r.amount_eur != null ? Number(r.amount_eur) : null,
+        counterparty_name: r.counterparty_name != null ? String(r.counterparty_name) : null,
+      }))
+    )
+  }
+
+  return all
+}
+
+function aggregateProcurementLines(lines: ProcurementDecisionLine[]): Record<string, ProcurementLineAgg> {
+  const byAda = new Map<string, { total: number; hasAmount: boolean; names: Set<string>; count: number }>()
+
+  for (const line of lines) {
+    if (!byAda.has(line.ada)) {
+      byAda.set(line.ada, { total: 0, hasAmount: false, names: new Set<string>(), count: 0 })
+    }
+    const agg = byAda.get(line.ada)!
+    agg.count += 1
+    if (line.amount_eur != null) {
+      agg.total += line.amount_eur
+      agg.hasAmount = true
+    }
+    const name = (line.counterparty_name ?? '').trim()
+    if (name) agg.names.add(name)
+  }
+
+  const out: Record<string, ProcurementLineAgg> = {}
+  for (const [ada, agg] of byAda) {
+    out[ada] = {
+      amountEur: agg.hasAmount ? agg.total : null,
+      lineCount: agg.count,
+      counterpartiesCount: agg.names.size,
+    }
+  }
+  return out
+}
+
+function decisionDisplayAmount(
+  decision: ProcurementDecision,
+  lineAggByAda: Record<string, ProcurementLineAgg>,
+): number | null {
+  return lineAggByAda[decision.ada]?.amountEur ?? decision.amount_eur
 }
 
 const PROC_TYPES = [
@@ -96,15 +169,16 @@ function typeBadgeClass(dt: string | null): string {
 
 /* ── Expandable procurement type section ─────────────────────── */
 function ProcurementTypeSection({
-  label, decisions, isOpen, onToggle,
+  label, decisions, lineAggByAda, isOpen, onToggle,
 }: {
   label: string
   decisions: ProcurementDecision[]
+  lineAggByAda: Record<string, ProcurementLineAgg>
   isOpen: boolean
   onToggle: () => void
 }) {
   const count = decisions.length
-  const total = decisions.reduce((s, d) => s + (d.amount_eur ?? 0), 0)
+  const total = decisions.reduce((s, d) => s + (decisionDisplayAmount(d, lineAggByAda) ?? 0), 0)
   return (
     <>
       <div className={`cat-row${isOpen ? ' open' : ''}`} onClick={onToggle}>
@@ -139,7 +213,11 @@ function ProcurementTypeSection({
                     <td className="proc-subject">
                       {(d.subject ?? '').slice(0, 100)}{(d.subject?.length ?? 0) > 100 ? '…' : ''}
                     </td>
-                    <td className="proc-amount">{d.amount_eur != null ? fmtEur(d.amount_eur) : '—'}</td>
+                    <td className="proc-amount">
+                      {decisionDisplayAmount(d, lineAggByAda) != null
+                        ? fmtEur(decisionDisplayAmount(d, lineAggByAda))
+                        : '—'}
+                    </td>
                     <td className="proc-link">
                       {d.document_url
                         ? <a href={d.document_url} target="_blank" rel="noreferrer">↗</a>
@@ -223,6 +301,7 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   const [fireHistory, setFireHistory] = useState<MuniFireYear[]>([])
   const [fireLoading, setFireLoading] = useState(true)
   const [procurement, setProcurement] = useState<ProcurementDecision[]>([])
+  const [procLineAggByAda, setProcLineAggByAda] = useState<Record<string, ProcurementLineAgg>>({})
   const [procLoading, setProcLoading] = useState(true)
   const [openType, setOpenType]       = useState<string | null>(null)
 
@@ -264,11 +343,40 @@ export function MunicipalityPanel({ id, onBack }: Props) {
 
   // Fetch procurement decisions
   useEffect(() => {
-    setProcurement([]); setProcLoading(true); setOpenType(null)
+    let cancelled = false
+    setProcurement([]); setProcLineAggByAda({}); setProcLoading(true); setOpenType(null)
+
     fetchProcurement(id)
-      .then(setProcurement)
-      .catch(() => {})
-      .finally(() => setProcLoading(false))
+      .then(async decisions => {
+        if (cancelled) return
+        setProcurement(decisions)
+
+        const adas = decisions.map(d => d.ada)
+        if (adas.length === 0) {
+          setProcLineAggByAda({})
+          return
+        }
+
+        try {
+          const lines = await fetchProcurementLines(adas)
+          if (cancelled) return
+          setProcLineAggByAda(aggregateProcurementLines(lines))
+        } catch {
+          if (cancelled) return
+          setProcLineAggByAda({})
+        }
+      })
+      .catch(() => {
+        if (cancelled) return
+        setProcurement([])
+        setProcLineAggByAda({})
+      })
+      .finally(() => {
+        if (cancelled) return
+        setProcLoading(false)
+      })
+
+    return () => { cancelled = true }
   }, [id])
 
   if (loading) return <div className="panel-scroll"><p className="panel-loading">Φόρτωση…</p></div>
@@ -390,6 +498,7 @@ export function MunicipalityPanel({ id, onBack }: Props) {
                           key={s.label}
                           label={s.label}
                           decisions={s.matches}
+                          lineAggByAda={procLineAggByAda}
                           isOpen={openType === s.label}
                           onToggle={() => setOpenType(prev => prev === s.label ? null : s.label)}
                         />
@@ -420,7 +529,11 @@ export function MunicipalityPanel({ id, onBack }: Props) {
                           <td className="proc-subject">
                             {(d.subject ?? '').slice(0, 80)}{(d.subject?.length ?? 0) > 80 ? '…' : ''}
                           </td>
-                          <td className="proc-amount">{d.amount_eur != null ? fmtEur(d.amount_eur) : '—'}</td>
+                          <td className="proc-amount">
+                            {decisionDisplayAmount(d, procLineAggByAda) != null
+                              ? fmtEur(decisionDisplayAmount(d, procLineAggByAda))
+                              : '—'}
+                          </td>
                           <td className="proc-link">
                             {d.document_url
                               ? <a href={d.document_url} target="_blank" rel="noreferrer">↗</a>

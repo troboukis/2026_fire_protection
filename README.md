@@ -426,6 +426,9 @@ Main enrichments:
   - `True` when subject contains `ανατροπ*` or `ανακλησ*` (accent-insensitive)
 - `subject_has_budget_balance_report_terms` (`True/False`): derived boolean flag from `subject`
   - `True` when subject contains `προϋπολογισμ*`, `ισολογισμ*`, or `απολογισμ*` (accent-insensitive)
+- `org_name_clean` exclusion list (dataset scope cleanup)
+  - rows whose normalized `org_name_clean` matches a configured blacklist are dropped from the dataset
+  - applied both during fetch (API batch filtering) and before CSV save (safety net)
 
 The script supports both:
 - raw API dict/list values
@@ -518,6 +521,7 @@ Each run appends one row to `logs/fetch_runs.csv` with:
   - `data/2026_diavgeia.csv`
   - `state/state.json`
   - `logs/fetch_runs.csv`
+- Fetch logs may report API totals larger than CSV additions because excluded organizations are skipped after retrieval.
 - Schedule is `03:00 UTC` daily.
 - If fetch fails, run log is still persisted and workflow is marked failed.
 
@@ -649,7 +653,107 @@ Helper columns:
 - Enrichment runs automatically during `fetch_diavgeia.py` for new rows.
 - Existing CSV rows can be backfilled from a notebook via:
   - `fetch_diavgeia.backfill_spending_approval_columns(...)`
-- Root-level `fetch_diavgeia.py` is a thin wrapper (exports `main` only). For backfill helpers, import from `src/`:
-  - `python -c "import sys; sys.path.append('src'); from fetch_diavgeia import backfill_spending_approval_columns; backfill_spending_approval_columns(...)"`  
+- Root-level `fetch_diavgeia.py` is a thin wrapper (exports `main` only). For backfill helpers, import from `src/` with `insert(0, ...)` so the root wrapper is not imported first:
+  - `python -c "import sys; sys.path.insert(0, 'src'); from fetch_diavgeia import backfill_spending_approval_columns; backfill_spending_approval_columns(...)"`  
 - The backfill currently processes all supported types above (despite the legacy function name).
 - Progress is printed during enrichment (`[spending]`, `[commitment]`, `[direct]`, `[payment]` start/progress/done lines).
+
+## Procurement DB ingestion (header + line-level)
+
+The web-app procurement layer now uses a two-table model:
+
+- `public.procurement_decisions`: one row per `ADA` (header-level metadata)
+- `public.procurement_decision_lines`: multiple rows per `ADA` (amounts / counterparties / line details)
+
+Why:
+- some Diavgeia decisions contain multiple amounts and/or multiple beneficiaries/contractors
+- keeping only one `amount_eur`/contractor per `ADA` loses detail
+
+### Migrations to run in Supabase
+
+Run these in `SQL Editor` (once per database):
+
+1. `sql/004_procurement_subject_flags.sql`
+   - adds subject-derived boolean flags to `procurement_decisions`
+2. `sql/005_procurement_decision_lines.sql`
+   - creates line-level table `procurement_decision_lines`
+3. `sql/006_org_municipality_coverage.sql`
+   - creates `org_municipality_coverage` (org -> all municipalities covered)
+
+### Procurement ingest commands
+
+From the project root:
+
+```bash
+python ingest/ingest_procurement.py
+python ingest/ingest_procurement_lines.py
+python ingest/ingest_org_municipality_coverage.py
+```
+
+Behavior:
+- `ingest_procurement.py` loads header-level rows from `data/2026_diavgeia_filtered.csv`
+- `ingest_procurement_lines.py` expands line-level detail from:
+  - `spending_contractors_details`
+  - `payment_beneficiaries_details`
+  - `commitment_lines_details` (with fallback from `commitment_*` columns when line details are missing)
+  - `direct_people_details` + `direct_value`
+- `ingest_org_municipality_coverage.py` loads `data/mappings/org_to_municipality_coverage.csv`
+  into `public.org_municipality_coverage` (truncate + reload)
+
+### Org coverage mapping (many-to-many org -> municipality)
+
+The project now keeps a dedicated coverage mapping for organizations that affect
+multiple municipalities (e.g. regions, decentralized administrations, syndicates,
+development organizations, national bodies).
+
+- Source CSV: `data/mappings/org_to_municipality_coverage.csv`
+- DB table: `public.org_municipality_coverage`
+
+This is different from `data/mappings/org_to_municipality.csv`:
+- `org_to_municipality.csv` is a header-level / best single-match mapping
+- `org_to_municipality_coverage.csv` stores full coverage (one org -> many municipalities)
+
+Coverage rows are built from:
+- deterministic hierarchy rules (`ΠΕΡΙΦΕΡΕΙΑ`, `ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ`, etc.)
+- local region reference (`data/mappings/region_to_municipalities.csv`)
+- manual municipality lists for special cases
+- national-level whole-country expansion (`["*"]`)
+- fallback to single `municipality_id` when available in `org_to_municipality.csv`
+
+Important note for direct assignments:
+- if one direct assignment has multiple persons but one total amount, the amount is placed only on the first line row to avoid double-counting in aggregates
+
+### Frontend amount behavior (municipality procurement panel)
+
+The frontend (`MunicipalityPanel`) now aggregates procurement amounts per `ADA` from `procurement_decision_lines` and uses that total in the UI.
+
+- header rows still come from `procurement_decisions`
+- amounts are summed from line rows when available
+- fallback to `procurement_decisions.amount_eur` is used only when no line rows exist
+
+### When you change the filtered dataset scope (example: keep only 2024+)
+
+`ingest_procurement.py` uses UPSERT and does not delete older rows automatically.
+
+If you shrink `data/2026_diavgeia_filtered.csv` (for example to `issueDate >= 2024`), first clear both procurement tables in Supabase, then re-ingest:
+
+```sql
+TRUNCATE TABLE
+  public.procurement_decision_lines,
+  public.procurement_decisions
+RESTART IDENTITY;
+```
+
+Then rerun:
+
+```bash
+python ingest/ingest_procurement.py
+python ingest/ingest_procurement_lines.py
+python ingest/ingest_org_municipality_coverage.py
+```
+
+## Dataset scope note (local files)
+
+- `data/2026_diavgeia.csv` currently stores only records with `issueDate >= 2024`
+- `data/2026_diavgeia_filtered.csv` is also kept at `issueDate >= 2024`
+- a local archival copy of the full raw range was saved as `data/2026_diavgeia_from_2009.csv` (ignored in git)
