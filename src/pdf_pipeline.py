@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -34,6 +35,52 @@ DEFAULT_PAGES_DATASET = REPO_DIR / "data" / "pdf_pages_dataset.csv"
 PDF_LOG_FILE = REPO_DIR / "logs" / "pdf_pipeline_runs.csv"
 
 ATHENS_TZ = ZoneInfo("Europe/Athens")
+
+
+def parse_pdf_file_to_row(pdf_path_str: str) -> tuple[dict[str, Any], int, str | None]:
+    """
+    Parse a single PDF and return one aggregated row (or an error string).
+
+    Kept as a top-level function so it can be used by ProcessPoolExecutor.
+    """
+    pdf_path = Path(pdf_path_str)
+    ada = pdf_path.stem
+    try:
+        pdf = PDF(str(pdf_path))
+        page_texts: list[str] = []
+        page_count = 0
+        for idx, page in enumerate(pdf.pages, start=1):
+            _ = idx  # preserve enumeration in case PDF backend depends on lazy iteration order
+            text = page.extract_text(preserve_line_breaks=True) or ""
+            page_texts.append(text)
+            page_count += 1
+
+        combined_text = "\n\n".join(page_texts)
+        return (
+            {
+                "ada": ada,
+                "file_name": pdf_path.name,
+                "page_count": page_count,
+                "text": combined_text,
+                "text_length": len(combined_text),
+                "parse_error": "",
+            },
+            page_count,
+            None,
+        )
+    except Exception as exc:
+        return (
+            {
+                "ada": ada,
+                "file_name": pdf_path.name,
+                "page_count": "",
+                "text": "",
+                "text_length": 0,
+                "parse_error": "",
+            },
+            0,
+            f"{type(exc).__name__}: {exc}",
+        )
 
 
 def extract_document_code(document_url: str) -> str:
@@ -203,14 +250,15 @@ def build_pdf_pages_dataset(
     pdf_dir: Path,
     output_csv: Path,
     limit: int | None = None,
+    workers: int = 1,
 ) -> dict[str, int]:
     """
-    Build one-row-per-page dataset from local PDFs.
+    Build one-row-per-PDF dataset from local PDFs.
 
     Output columns:
     - ada
     - file_name
-    - page_number
+    - page_count
     - text
     - text_length
     - parse_error
@@ -220,9 +268,10 @@ def build_pdf_pages_dataset(
         pdf_files = pdf_files[:limit]
 
     output_csv.parent.mkdir(parents=True, exist_ok=True)
+    workers = max(1, int(workers))
     print(
         f"[dataset] start pdf_dir={pdf_dir} files={len(pdf_files)} output={output_csv} "
-        f"limit={limit if limit is not None else 'ALL'}",
+        f"limit={limit if limit is not None else 'ALL'} workers={workers}",
         flush=True,
     )
 
@@ -236,7 +285,7 @@ def build_pdf_pages_dataset(
             fieldnames=[
                 "ada",
                 "file_name",
-                "page_number",
+                "page_count",
                 "text",
                 "text_length",
                 "parse_error",
@@ -244,45 +293,47 @@ def build_pdf_pages_dataset(
         )
         writer.writeheader()
 
-        for pdf_path in pdf_files:
-            ada = pdf_path.stem
-            try:
-                pdf = PDF(str(pdf_path))
-                pages = pdf.pages
-                for idx, page in enumerate(pages, start=1):
-                    page_number = getattr(page, "number", idx)
-                    text = page.extract_text(preserve_line_breaks=True) or ""
-                    writer.writerow(
-                        {
-                            "ada": ada,
-                            "file_name": pdf_path.name,
-                            "page_number": page_number,
-                            "text": text,
-                            "text_length": len(text),
-                            "parse_error": "",
-                        }
-                    )
-                    parsed_pages += 1
-                parsed_pdfs += 1
-                if parsed_pdfs % 50 == 0:
-                    print(
-                        f"[dataset][progress] parsed_pdfs={parsed_pdfs} parsed_pages={parsed_pages} "
-                        f"errors={parse_errors}",
-                        flush=True,
-                    )
-            except Exception as exc:
-                parse_errors += 1
-                writer.writerow(
-                    {
-                        "ada": ada,
-                        "file_name": pdf_path.name,
-                        "page_number": "",
-                        "text": "",
-                        "text_length": 0,
-                        "parse_error": f"{type(exc).__name__}: {exc}",
-                    }
-                )
-                print(f"[parse][error] file={pdf_path.name} -> {type(exc).__name__}: {exc}", flush=True)
+        if workers == 1:
+            for pdf_path in pdf_files:
+                row, page_count, err = parse_pdf_file_to_row(str(pdf_path))
+                if err is None:
+                    writer.writerow(row)
+                    parsed_pages += page_count
+                    parsed_pdfs += 1
+                    if parsed_pdfs % 50 == 0:
+                        print(
+                            f"[dataset][progress] parsed_pdfs={parsed_pdfs} parsed_pages={parsed_pages} "
+                            f"errors={parse_errors}",
+                            flush=True,
+                        )
+                else:
+                    parse_errors += 1
+                    row["parse_error"] = err
+                    writer.writerow(row)
+                    print(f"[parse][error] file={row['file_name']} -> {err}", flush=True)
+        else:
+            completed = 0
+            with ProcessPoolExecutor(max_workers=workers) as executor:
+                futures = [executor.submit(parse_pdf_file_to_row, str(pdf_path)) for pdf_path in pdf_files]
+                for future in as_completed(futures):
+                    completed += 1
+                    row, page_count, err = future.result()
+                    if err is None:
+                        writer.writerow(row)
+                        parsed_pages += page_count
+                        parsed_pdfs += 1
+                    else:
+                        parse_errors += 1
+                        row["parse_error"] = err
+                        writer.writerow(row)
+                        print(f"[parse][error] file={row['file_name']} -> {err}", flush=True)
+
+                    if completed % 25 == 0:
+                        print(
+                            f"[dataset][progress] completed={completed}/{len(pdf_files)} "
+                            f"parsed_pdfs={parsed_pdfs} parsed_pages={parsed_pages} errors={parse_errors}",
+                            flush=True,
+                        )
 
     print(
         "[dataset] files_seen=%s parsed_pdfs=%s parsed_pages=%s parse_errors=%s output=%s"
@@ -305,9 +356,15 @@ def main() -> None:
     parser.add_argument(
         "--pages-dataset",
         default=str(DEFAULT_PAGES_DATASET),
-        help="Output CSV path for one-row-per-page dataset",
+        help="Output CSV path for one-row-per-PDF dataset",
     )
     parser.add_argument("--limit", type=int, default=None, help="Optional limit for records/files in this run")
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of worker processes for PDF parsing (build step only)",
+    )
     parser.add_argument("--download-only", action="store_true", help="Run only missing PDF download step")
     parser.add_argument("--build-only", action="store_true", help="Run only page dataset build step")
     parser.add_argument(
@@ -354,7 +411,14 @@ def main() -> None:
             )
 
         if not args.download_only:
-            run_stats.update(build_pdf_pages_dataset(pdf_dir=pdf_dir, output_csv=pages_dataset, limit=args.limit))
+            run_stats.update(
+                build_pdf_pages_dataset(
+                    pdf_dir=pdf_dir,
+                    output_csv=pages_dataset,
+                    limit=args.limit,
+                    workers=args.workers,
+                )
+            )
 
         run_stats["success"] = True
         print("[main] PDF pipeline completed successfully.", flush=True)

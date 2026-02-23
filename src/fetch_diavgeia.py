@@ -12,6 +12,7 @@ import json
 import re
 import ast
 import unicodedata
+from urllib.parse import quote
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -38,8 +39,90 @@ LEGACY_STATE_FILE = REPO_DIR / "state.json"
 ATHENS_TZ = ZoneInfo("Europe/Athens")
 
 SEARCH_URL = "https://diavgeia.gov.gr/luminapi/api/search"
+DECISION_VIEW_URL = "https://diavgeia.gov.gr/luminapi/api/decisions/view"
 KEYWORDS = ["πυροπροστ", "αποψιλ", "δασοπροστ", "αντιπυρ"]
 PAGE_SIZE = 100
+SPENDING_APPROVAL_LABEL = "ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ"
+COMMITMENT_LABEL = "ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ"
+DIRECT_ASSIGNMENT_LABEL = "ΑΝΑΘΕΣΗ ΕΡΓΩΝ / ΠΡΟΜΗΘΕΙΩΝ / ΥΠΗΡΕΣΙΩΝ / ΜΕΛΕΤΩΝ"
+PAYMENT_FINALIZATION_LABEL = "ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ"
+SPENDING_ENRICHMENT_COLUMNS = [
+    "spending_signers",
+    "spending_contractors_afm",
+    "spending_contractors_name",
+    "spending_contractors_value",
+    "spending_contractors_currency",
+    "spending_contractors_count",
+    "spending_contractors_details",
+    "spending_enrichment_status",
+    "spending_enrichment_error",
+]
+COMMITMENT_ENRICHMENT_COLUMNS = [
+    "commitment_signers",
+    "commitment_fiscal_year",
+    "commitment_budget_category",
+    "commitment_counterparty",
+    "commitment_amount_with_vat",
+    "commitment_remaining_available_credit",
+    "commitment_kae_ale_number",
+    "commitment_remaining_kae_ale",
+    "commitment_lines_count",
+    "commitment_lines_details",
+    "commitment_enrichment_status",
+    "commitment_enrichment_error",
+]
+DIRECT_ENRICHMENT_COLUMNS = [
+    "direct_signers",
+    "direct_afm",
+    "direct_name",
+    "direct_value",
+    "direct_related_commitment",
+    "direct_see_also",
+    "direct_people_count",
+    "direct_people_details",
+    "direct_enrichment_status",
+    "direct_enrichment_error",
+]
+PAYMENT_ENRICHMENT_COLUMNS = [
+    "payment_signers",
+    "payment_beneficiary_afm",
+    "payment_beneficiary_name",
+    "payment_value",
+    "payment_related_commitment_or_spending",
+    "payment_see_also",
+    "payment_beneficiaries_count",
+    "payment_beneficiaries_details",
+    "payment_enrichment_status",
+    "payment_enrichment_error",
+]
+ENRICHMENT_SINGLETON_COLLAPSE_COLUMNS = [
+    # spending
+    "spending_signers",
+    "spending_contractors_afm",
+    "spending_contractors_name",
+    "spending_contractors_value",
+    "spending_contractors_currency",
+    # commitment
+    "commitment_signers",
+    "commitment_counterparty",
+    "commitment_amount_with_vat",
+    "commitment_remaining_available_credit",
+    "commitment_kae_ale_number",
+    "commitment_remaining_kae_ale",
+    # direct
+    "direct_signers",
+    "direct_afm",
+    "direct_name",
+    "direct_related_commitment",
+    "direct_see_also",
+    # payment
+    "payment_signers",
+    "payment_beneficiary_afm",
+    "payment_beneficiary_name",
+    "payment_value",
+    "payment_related_commitment_or_spending",
+    "payment_see_also",
+]
 
 # Ordered list: (prefix, clean org_type label).
 # More-specific / longer prefixes MUST come before shorter ones.
@@ -431,6 +514,732 @@ def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def build_decision_view_url(ada: str) -> str:
+    """Build the decision view API URL for a given ADA."""
+    return f"{DECISION_VIEW_URL}/{quote(str(ada).strip(), safe='')}"
+
+
+def fetch_decision_view_by_ada(ada: str, session: requests.Session | None = None, timeout: int = 30) -> dict:
+    """Fetch full decision payload from Diavgeia decisions/view endpoint."""
+    url = build_decision_view_url(ada)
+    client = session or requests
+    response = client.get(url, headers={"Accept": "application/json"}, timeout=timeout)
+    response.raise_for_status()
+    return response.json()
+
+
+def meta_list_to_dict(meta_value) -> dict:
+    """Flatten Diavgeia `meta` list (list of one-key dicts) into a plain dict."""
+    parsed = parse_structured_value(meta_value)
+    if not isinstance(parsed, list):
+        return {}
+
+    meta_map: dict = {}
+    for item in parsed:
+        if isinstance(item, dict):
+            meta_map.update(item)
+    return meta_map
+
+
+def collapse_singleton_list(values):
+    """
+    Normalize list-like extracted values for CSV storage.
+
+    - `[]` -> `pd.NA`
+    - `[x]` -> `x`
+    - `[x, y, ...]` -> unchanged list
+    """
+    if isinstance(values, list):
+        if len(values) == 0:
+            return pd.NA
+        if len(values) == 1:
+            return values[0]
+    return values
+
+
+def normalize_enrichment_singleton_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Collapse singleton lists across all enrichment business columns.
+
+    Handles both in-memory Python lists and CSV stringified lists via parse_structured_value().
+    """
+    df = df.copy()
+    for col in ENRICHMENT_SINGLETON_COLLAPSE_COLUMNS:
+        if col not in df.columns:
+            continue
+        df[col] = df[col].apply(
+            lambda v: collapse_singleton_list(parse_structured_value(v))
+        )
+    return df
+
+
+def coerce_columns_to_object(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    """
+    Force selected columns to object dtype so row-level assignment can store
+    strings/lists/dicts safely even when pandas loaded pyarrow-backed dtypes.
+    """
+    df = df.copy()
+    for col in columns:
+        if col in df.columns:
+            df[col] = df[col].astype("object")
+    return df
+
+
+def extract_spending_approval_fields_from_decision(decision_payload: dict) -> dict:
+    """
+    Extract signers + all contractor fields from a full decisions/view payload.
+
+    Returned values are lists for contractor-related columns (one element per contractor).
+    """
+    meta_map = meta_list_to_dict(decision_payload.get("meta"))
+
+    signers = meta_map.get("Υπογράφοντες", [])
+    if not isinstance(signers, list):
+        signers = [signers] if signers else []
+
+    contractors = meta_map.get("Στοιχεία αναδόχων", []) or []
+    if not isinstance(contractors, list):
+        contractors = []
+
+    contractor_rows: list[dict] = []
+    afms: list[str | None] = []
+    names: list[str | None] = []
+    values: list[str | None] = []
+    currencies: list[str | None] = []
+
+    for contractor in contractors:
+        contractor = contractor or {}
+        if not isinstance(contractor, dict):
+            continue
+
+        afm_info = contractor.get("ΑΦΜ / Επωνυμία", {}) or {}
+        amount_info = contractor.get("Ποσό δαπάνης", {}) or {}
+        if not isinstance(afm_info, dict):
+            afm_info = {}
+        if not isinstance(amount_info, dict):
+            amount_info = {}
+
+        afm = afm_info.get("ΑΦΜ")
+        name = afm_info.get("Επωνυμία")
+        value = amount_info.get("Αξία")
+        currency = amount_info.get("Νόμισμα")
+
+        afms.append(afm)
+        names.append(name)
+        values.append(value)
+        currencies.append(currency)
+        contractor_rows.append(
+            {
+                "ΑΦΜ": afm,
+                "Επωνυμία": name,
+                "Αξία": value,
+                "Νόμισμα": currency,
+            }
+        )
+
+    return {
+        "spending_signers": collapse_singleton_list(signers),
+        "spending_contractors_afm": collapse_singleton_list(afms),
+        "spending_contractors_name": collapse_singleton_list(names),
+        "spending_contractors_value": collapse_singleton_list(values),
+        "spending_contractors_currency": collapse_singleton_list(currencies),
+        "spending_contractors_count": len(contractor_rows),
+        "spending_contractors_details": contractor_rows,
+        "spending_enrichment_status": "ok",
+        "spending_enrichment_error": "",
+    }
+
+
+def ensure_spending_enrichment_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Ensure CSV dataframe has the spending-approval enrichment columns."""
+    df = df.copy()
+    defaults = {
+        "spending_signers": pd.NA,
+        "spending_contractors_afm": pd.NA,
+        "spending_contractors_name": pd.NA,
+        "spending_contractors_value": pd.NA,
+        "spending_contractors_currency": pd.NA,
+        "spending_contractors_count": pd.NA,
+        "spending_contractors_details": pd.NA,
+        "spending_enrichment_status": pd.NA,
+        "spending_enrichment_error": pd.NA,
+    }
+    for col, default in defaults.items():
+        if col not in df.columns:
+            df[col] = default
+    return df
+
+
+def extract_commitment_fields_from_decision(decision_payload: dict) -> dict:
+    """
+    Extract fields from `ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ` decisions/view payload.
+
+    `Ποσό και ΚΑΕ/ΑΛΕ` may contain multiple rows; all row-level values are stored as lists.
+    """
+    meta_map = meta_list_to_dict(decision_payload.get("meta"))
+
+    signers = meta_map.get("Υπογράφοντες", [])
+    if not isinstance(signers, list):
+        signers = [signers] if signers else []
+
+    fiscal_year = meta_map.get("Οικονομικό Έτος")
+    budget_category = meta_map.get("Κατηγορία Προϋπολογισμού")
+
+    lines = meta_map.get("Ποσό και ΚΑΕ/ΑΛΕ", []) or []
+    if not isinstance(lines, list):
+        lines = []
+
+    total_amount = meta_map.get("Συνολικό ποσό", {}) or {}
+    if not isinstance(total_amount, dict):
+        total_amount = {}
+
+    counterparties: list[Any] = []
+    amounts_with_vat: list[Any] = []
+    remaining_available_credit: list[Any] = []
+    kae_ale_numbers: list[Any] = []
+    remaining_kae_ale: list[Any] = []
+    line_details: list[dict[str, Any]] = []
+
+    for line in lines:
+        if not isinstance(line, dict):
+            continue
+
+        counterparty = line.get("ΑΦΜ / Επωνυμία")
+        kae_ale_number = line.get("Αριθμός ΚΑΕ/ΑΛΕ")
+        amount_with_vat = line.get("Ποσό με ΦΠΑ")
+        remaining_credit = line.get("Υπόλοιπο διαθέσιμης πίστωσης")
+        remaining_kae = line.get("Υπόλοιπο ΚΑΕ/ΑΛΕ")
+
+        counterparties.append(counterparty)
+        kae_ale_numbers.append(kae_ale_number)
+        amounts_with_vat.append(amount_with_vat)
+        remaining_available_credit.append(remaining_credit)
+        remaining_kae_ale.append(remaining_kae)
+        line_details.append(
+            {
+                "ΑΦΜ / Επωνυμία": counterparty,
+                "Ποσό με ΦΠΑ": amount_with_vat,
+                "Υπόλοιπο διαθέσιμης πίστωσης": remaining_credit,
+                "Αριθμός ΚΑΕ/ΑΛΕ": kae_ale_number,
+                "Υπόλοιπο ΚΑΕ/ΑΛΕ": remaining_kae,
+            }
+        )
+
+    # Some commitments have no line items but do include "Συνολικό ποσό".
+    # Preserve that amount in commitment_amount_with_vat so downstream amount
+    # derivation can still work.
+    if len(amounts_with_vat) == 0:
+        total_amount_value = total_amount.get("Ποσό")
+        if total_amount_value not in (None, "", []):
+            amounts_with_vat = [total_amount_value]
+
+    return {
+        "commitment_signers": collapse_singleton_list(signers),
+        "commitment_fiscal_year": fiscal_year,
+        "commitment_budget_category": budget_category,
+        "commitment_counterparty": collapse_singleton_list(counterparties),
+        "commitment_amount_with_vat": collapse_singleton_list(amounts_with_vat),
+        "commitment_remaining_available_credit": collapse_singleton_list(remaining_available_credit),
+        "commitment_kae_ale_number": collapse_singleton_list(kae_ale_numbers),
+        "commitment_remaining_kae_ale": collapse_singleton_list(remaining_kae_ale),
+        "commitment_lines_count": len(line_details),
+        "commitment_lines_details": line_details,
+        "commitment_enrichment_status": "ok",
+        "commitment_enrichment_error": "",
+    }
+
+
+def ensure_commitment_enrichment_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Ensure CSV dataframe has the commitment enrichment columns."""
+    df = df.copy()
+    defaults = {
+        "commitment_signers": pd.NA,
+        "commitment_fiscal_year": pd.NA,
+        "commitment_budget_category": pd.NA,
+        "commitment_counterparty": pd.NA,
+        "commitment_amount_with_vat": pd.NA,
+        "commitment_remaining_available_credit": pd.NA,
+        "commitment_kae_ale_number": pd.NA,
+        "commitment_remaining_kae_ale": pd.NA,
+        "commitment_lines_count": pd.NA,
+        "commitment_lines_details": pd.NA,
+        "commitment_enrichment_status": pd.NA,
+        "commitment_enrichment_error": pd.NA,
+    }
+    for col, default in defaults.items():
+        if col not in df.columns:
+            df[col] = default
+    return df
+
+
+def extract_direct_assignment_fields_from_decision(decision_payload: dict) -> dict:
+    """
+    Extract fields from direct assignment decisions/view payload.
+
+    Keeps all persons (AFM/Name) as lists; helper `direct_people_details` preserves structured rows.
+    """
+    meta_map = meta_list_to_dict(decision_payload.get("meta"))
+
+    signers = meta_map.get("Υπογράφοντες", [])
+    if not isinstance(signers, list):
+        signers = [signers] if signers else []
+
+    people = meta_map.get("ΑΦΜ / Επωνυμία προσώπου / προσώπων", []) or []
+    if not isinstance(people, list):
+        people = []
+
+    afms: list[Any] = []
+    names: list[Any] = []
+    people_details: list[dict[str, Any]] = []
+    for person in people:
+        if not isinstance(person, dict):
+            continue
+        afm = person.get("ΑΦΜ")
+        name = person.get("Επωνυμία")
+        afms.append(afm)
+        names.append(name)
+        people_details.append({"ΑΦΜ": afm, "Επωνυμία": name})
+
+    amount = meta_map.get("Ποσό", {}) or {}
+    if not isinstance(amount, dict):
+        amount = {}
+
+    related_commitment = meta_map.get("Σχετ. Ανάληψη υποχρέωσης")
+    see_also = meta_map.get("Δείτε επίσης και ..")
+
+    return {
+        "direct_signers": collapse_singleton_list(signers),
+        "direct_afm": collapse_singleton_list(afms),
+        "direct_name": collapse_singleton_list(names),
+        "direct_value": amount.get("Αξία"),
+        "direct_related_commitment": related_commitment,
+        "direct_see_also": see_also,
+        "direct_people_count": len(people_details),
+        "direct_people_details": people_details,
+        "direct_enrichment_status": "ok",
+        "direct_enrichment_error": "",
+    }
+
+
+def ensure_direct_enrichment_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Ensure CSV dataframe has the direct-assignment enrichment columns."""
+    df = df.copy()
+    defaults = {
+        "direct_signers": pd.NA,
+        "direct_afm": pd.NA,
+        "direct_name": pd.NA,
+        "direct_value": pd.NA,
+        "direct_related_commitment": pd.NA,
+        "direct_see_also": pd.NA,
+        "direct_people_count": pd.NA,
+        "direct_people_details": pd.NA,
+        "direct_enrichment_status": pd.NA,
+        "direct_enrichment_error": pd.NA,
+    }
+    for col, default in defaults.items():
+        if col not in df.columns:
+            df[col] = default
+    return df
+
+
+def extract_payment_finalization_fields_from_decision(decision_payload: dict) -> dict:
+    """
+    Extract fields from `ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ` decisions/view payload.
+
+    Keeps all beneficiaries as lists and also preserves structured details.
+    """
+    meta_map = meta_list_to_dict(decision_payload.get("meta"))
+
+    signers = meta_map.get("Υπογράφοντες", [])
+    if not isinstance(signers, list):
+        signers = [signers] if signers else []
+
+    beneficiaries = meta_map.get("Στοιχεία δικαιούχων", []) or []
+    if not isinstance(beneficiaries, list):
+        beneficiaries = []
+
+    afms: list[Any] = []
+    names: list[Any] = []
+    values: list[Any] = []
+    beneficiary_details: list[dict[str, Any]] = []
+    for beneficiary in beneficiaries:
+        if not isinstance(beneficiary, dict):
+            continue
+
+        afm_info = beneficiary.get("ΑΦΜ / Επωνυμία", {}) or {}
+        amount_info = beneficiary.get("Ποσό δαπάνης", {}) or {}
+        if not isinstance(afm_info, dict):
+            afm_info = {}
+        if not isinstance(amount_info, dict):
+            amount_info = {}
+
+        afm = afm_info.get("ΑΦΜ")
+        name = afm_info.get("Επωνυμία")
+        value = amount_info.get("Αξία")
+
+        afms.append(afm)
+        names.append(name)
+        values.append(value)
+        beneficiary_details.append(
+            {
+                "ΑΦΜ": afm,
+                "Επωνυμία": name,
+                "Αξία": value,
+            }
+        )
+
+    return {
+        "payment_signers": collapse_singleton_list(signers),
+        "payment_beneficiary_afm": collapse_singleton_list(afms),
+        "payment_beneficiary_name": collapse_singleton_list(names),
+        "payment_value": collapse_singleton_list(values),
+        "payment_related_commitment_or_spending": meta_map.get("Σχετ. Ανάληψη Υποχρέωσης/Έγκριση Δαπάνης"),
+        "payment_see_also": meta_map.get("Δείτε επίσης και .."),
+        "payment_beneficiaries_count": len(beneficiary_details),
+        "payment_beneficiaries_details": beneficiary_details,
+        "payment_enrichment_status": "ok",
+        "payment_enrichment_error": "",
+    }
+
+
+def ensure_payment_enrichment_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Ensure CSV dataframe has the payment-finalization enrichment columns."""
+    df = df.copy()
+    defaults = {
+        "payment_signers": pd.NA,
+        "payment_beneficiary_afm": pd.NA,
+        "payment_beneficiary_name": pd.NA,
+        "payment_value": pd.NA,
+        "payment_related_commitment_or_spending": pd.NA,
+        "payment_see_also": pd.NA,
+        "payment_beneficiaries_count": pd.NA,
+        "payment_beneficiaries_details": pd.NA,
+        "payment_enrichment_status": pd.NA,
+        "payment_enrichment_error": pd.NA,
+    }
+    for col, default in defaults.items():
+        if col not in df.columns:
+            df[col] = default
+    return df
+
+
+def enrich_spending_approvals(
+    df: pd.DataFrame,
+    session: requests.Session | None = None,
+    timeout: int = 30,
+    overwrite_existing: bool = False,
+    progress_every: int = 10,
+) -> pd.DataFrame:
+    """
+    For rows with decisionType == ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ, fetch decisions/view and add contractor/signer info.
+
+    Safe for both newly fetched API rows and existing CSV rows.
+    """
+    df = ensure_spending_enrichment_columns(df)
+    df = coerce_columns_to_object(df, SPENDING_ENRICHMENT_COLUMNS)
+    if "decisionType" not in df.columns or "ada" not in df.columns:
+        return df
+
+    # Ensure label normalization first so matching is reliable.
+    df = normalize_decision_columns(df)
+
+    target_mask = df["decisionType"] == SPENDING_APPROVAL_LABEL
+    if not target_mask.any():
+        return df
+
+    if not overwrite_existing and "spending_enrichment_status" in df.columns:
+        existing_status = df["spending_enrichment_status"].astype("string").fillna("")
+        target_mask = target_mask & (existing_status.str.strip() == "")
+        if not target_mask.any():
+            return df
+
+    target_indices = list(df.index[target_mask])
+    total_targets = len(target_indices)
+    print(
+        f"[spending] start targets={total_targets} overwrite_existing={overwrite_existing} timeout={timeout}s",
+        flush=True,
+    )
+
+    client = session or requests.Session()
+    created_session = session is None
+
+    ok_count = 0
+    error_count = 0
+    skipped_count = 0
+    progress_every = max(1, int(progress_every))
+
+    try:
+        for processed, idx in enumerate(target_indices, start=1):
+            ada = df.at[idx, "ada"]
+            if not isinstance(ada, str) or not ada.strip():
+                df.at[idx, "spending_enrichment_status"] = "skip_missing_ada"
+                df.at[idx, "spending_enrichment_error"] = "missing ada"
+                skipped_count += 1
+                continue
+
+            try:
+                payload = fetch_decision_view_by_ada(ada=ada, session=client, timeout=timeout)
+                extracted = extract_spending_approval_fields_from_decision(payload)
+                for col, value in extracted.items():
+                    df.at[idx, col] = value
+                ok_count += 1
+            except Exception as exc:
+                df.at[idx, "spending_enrichment_status"] = "error"
+                df.at[idx, "spending_enrichment_error"] = f"{type(exc).__name__}: {exc}"
+                error_count += 1
+                print(f"[spending][error] ada={ada} -> {type(exc).__name__}: {exc}")
+
+            if processed % progress_every == 0 or processed == total_targets:
+                print(
+                    f"[spending][progress] {processed}/{total_targets} "
+                    f"ok={ok_count} error={error_count} skipped={skipped_count}",
+                    flush=True,
+                )
+    finally:
+        if created_session:
+            client.close()
+
+    print(
+        f"[spending] done processed={total_targets} ok={ok_count} error={error_count} skipped={skipped_count}",
+        flush=True,
+    )
+    return df
+
+
+def enrich_commitment_decisions(
+    df: pd.DataFrame,
+    session: requests.Session | None = None,
+    timeout: int = 30,
+    overwrite_existing: bool = False,
+    progress_every: int = 10,
+) -> pd.DataFrame:
+    """
+    For rows with decisionType == ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ, fetch decisions/view and add commitment fields.
+    """
+    df = ensure_commitment_enrichment_columns(df)
+    df = coerce_columns_to_object(df, COMMITMENT_ENRICHMENT_COLUMNS)
+    if "decisionType" not in df.columns or "ada" not in df.columns:
+        return df
+
+    df = normalize_decision_columns(df)
+    target_mask = df["decisionType"] == COMMITMENT_LABEL
+    if not target_mask.any():
+        return df
+
+    if not overwrite_existing and "commitment_enrichment_status" in df.columns:
+        existing_status = df["commitment_enrichment_status"].astype("string").fillna("")
+        target_mask = target_mask & (existing_status.str.strip() == "")
+        if not target_mask.any():
+            return df
+
+    target_indices = list(df.index[target_mask])
+    total_targets = len(target_indices)
+    print(
+        f"[commitment] start targets={total_targets} overwrite_existing={overwrite_existing} timeout={timeout}s",
+        flush=True,
+    )
+
+    client = session or requests.Session()
+    created_session = session is None
+    ok_count = 0
+    error_count = 0
+    skipped_count = 0
+    progress_every = max(1, int(progress_every))
+
+    try:
+        for processed, idx in enumerate(target_indices, start=1):
+            ada = df.at[idx, "ada"]
+            if not isinstance(ada, str) or not ada.strip():
+                df.at[idx, "commitment_enrichment_status"] = "skip_missing_ada"
+                df.at[idx, "commitment_enrichment_error"] = "missing ada"
+                skipped_count += 1
+                continue
+
+            try:
+                payload = fetch_decision_view_by_ada(ada=ada, session=client, timeout=timeout)
+                extracted = extract_commitment_fields_from_decision(payload)
+                for col, value in extracted.items():
+                    df.at[idx, col] = value
+                ok_count += 1
+            except Exception as exc:
+                df.at[idx, "commitment_enrichment_status"] = "error"
+                df.at[idx, "commitment_enrichment_error"] = f"{type(exc).__name__}: {exc}"
+                error_count += 1
+                print(f"[commitment][error] ada={ada} -> {type(exc).__name__}: {exc}")
+
+            if processed % progress_every == 0 or processed == total_targets:
+                print(
+                    f"[commitment][progress] {processed}/{total_targets} "
+                    f"ok={ok_count} error={error_count} skipped={skipped_count}",
+                    flush=True,
+                )
+    finally:
+        if created_session:
+            client.close()
+
+    print(
+        f"[commitment] done processed={total_targets} ok={ok_count} error={error_count} skipped={skipped_count}",
+        flush=True,
+    )
+    return df
+
+
+def enrich_direct_assignment_decisions(
+    df: pd.DataFrame,
+    session: requests.Session | None = None,
+    timeout: int = 30,
+    overwrite_existing: bool = False,
+    progress_every: int = 10,
+) -> pd.DataFrame:
+    """
+    For rows with decisionType == DIRECT_ASSIGNMENT_LABEL, fetch decisions/view and add direct_* fields.
+    """
+    df = ensure_direct_enrichment_columns(df)
+    df = coerce_columns_to_object(df, DIRECT_ENRICHMENT_COLUMNS)
+    if "decisionType" not in df.columns or "ada" not in df.columns:
+        return df
+
+    df = normalize_decision_columns(df)
+    target_mask = df["decisionType"] == DIRECT_ASSIGNMENT_LABEL
+    if not target_mask.any():
+        return df
+
+    if not overwrite_existing and "direct_enrichment_status" in df.columns:
+        existing_status = df["direct_enrichment_status"].astype("string").fillna("")
+        target_mask = target_mask & (existing_status.str.strip() == "")
+        if not target_mask.any():
+            return df
+
+    target_indices = list(df.index[target_mask])
+    total_targets = len(target_indices)
+    print(
+        f"[direct] start targets={total_targets} overwrite_existing={overwrite_existing} timeout={timeout}s",
+        flush=True,
+    )
+
+    client = session or requests.Session()
+    created_session = session is None
+    ok_count = 0
+    error_count = 0
+    skipped_count = 0
+    progress_every = max(1, int(progress_every))
+
+    try:
+        for processed, idx in enumerate(target_indices, start=1):
+            ada = df.at[idx, "ada"]
+            if not isinstance(ada, str) or not ada.strip():
+                df.at[idx, "direct_enrichment_status"] = "skip_missing_ada"
+                df.at[idx, "direct_enrichment_error"] = "missing ada"
+                skipped_count += 1
+                continue
+
+            try:
+                payload = fetch_decision_view_by_ada(ada=ada, session=client, timeout=timeout)
+                extracted = extract_direct_assignment_fields_from_decision(payload)
+                for col, value in extracted.items():
+                    df.at[idx, col] = value
+                ok_count += 1
+            except Exception as exc:
+                df.at[idx, "direct_enrichment_status"] = "error"
+                df.at[idx, "direct_enrichment_error"] = f"{type(exc).__name__}: {exc}"
+                error_count += 1
+                print(f"[direct][error] ada={ada} -> {type(exc).__name__}: {exc}")
+
+            if processed % progress_every == 0 or processed == total_targets:
+                print(
+                    f"[direct][progress] {processed}/{total_targets} "
+                    f"ok={ok_count} error={error_count} skipped={skipped_count}",
+                    flush=True,
+                )
+    finally:
+        if created_session:
+            client.close()
+
+    print(
+        f"[direct] done processed={total_targets} ok={ok_count} error={error_count} skipped={skipped_count}",
+        flush=True,
+    )
+    return df
+
+
+def enrich_payment_finalization_decisions(
+    df: pd.DataFrame,
+    session: requests.Session | None = None,
+    timeout: int = 30,
+    overwrite_existing: bool = False,
+    progress_every: int = 10,
+) -> pd.DataFrame:
+    """
+    For rows with decisionType == PAYMENT_FINALIZATION_LABEL, fetch decisions/view and add payment_* fields.
+    """
+    df = ensure_payment_enrichment_columns(df)
+    df = coerce_columns_to_object(df, PAYMENT_ENRICHMENT_COLUMNS)
+    if "decisionType" not in df.columns or "ada" not in df.columns:
+        return df
+
+    df = normalize_decision_columns(df)
+    target_mask = df["decisionType"] == PAYMENT_FINALIZATION_LABEL
+    if not target_mask.any():
+        return df
+
+    if not overwrite_existing and "payment_enrichment_status" in df.columns:
+        existing_status = df["payment_enrichment_status"].astype("string").fillna("")
+        target_mask = target_mask & (existing_status.str.strip() == "")
+        if not target_mask.any():
+            return df
+
+    target_indices = list(df.index[target_mask])
+    total_targets = len(target_indices)
+    print(
+        f"[payment] start targets={total_targets} overwrite_existing={overwrite_existing} timeout={timeout}s",
+        flush=True,
+    )
+
+    client = session or requests.Session()
+    created_session = session is None
+    ok_count = 0
+    error_count = 0
+    skipped_count = 0
+    progress_every = max(1, int(progress_every))
+
+    try:
+        for processed, idx in enumerate(target_indices, start=1):
+            ada = df.at[idx, "ada"]
+            if not isinstance(ada, str) or not ada.strip():
+                df.at[idx, "payment_enrichment_status"] = "skip_missing_ada"
+                df.at[idx, "payment_enrichment_error"] = "missing ada"
+                skipped_count += 1
+                continue
+
+            try:
+                payload = fetch_decision_view_by_ada(ada=ada, session=client, timeout=timeout)
+                extracted = extract_payment_finalization_fields_from_decision(payload)
+                for col, value in extracted.items():
+                    df.at[idx, col] = value
+                ok_count += 1
+            except Exception as exc:
+                df.at[idx, "payment_enrichment_status"] = "error"
+                df.at[idx, "payment_enrichment_error"] = f"{type(exc).__name__}: {exc}"
+                error_count += 1
+                print(f"[payment][error] ada={ada} -> {type(exc).__name__}: {exc}")
+
+            if processed % progress_every == 0 or processed == total_targets:
+                print(
+                    f"[payment][progress] {processed}/{total_targets} "
+                    f"ok={ok_count} error={error_count} skipped={skipped_count}",
+                    flush=True,
+                )
+    finally:
+        if created_session:
+            client.close()
+
+    print(
+        f"[payment] done processed={total_targets} ok={ok_count} error={error_count} skipped={skipped_count}",
+        flush=True,
+    )
+    return df
+
+
 def enrich_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """Add org, org_type, org_name_clean columns to a raw Diavgeia DataFrame."""
 
@@ -442,7 +1251,111 @@ def enrich_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df = recompute_org_classification(df)
 
     df = normalize_decision_columns(df)
+    df = enrich_spending_approvals(df)
+    df = enrich_commitment_decisions(df)
+    df = enrich_direct_assignment_decisions(df)
+    df = enrich_payment_finalization_decisions(df)
+    df = normalize_enrichment_singleton_columns(df)
     return df
+
+
+def backfill_spending_approval_columns(
+    csv_path: Path | str = CSV_PATH,
+    *,
+    overwrite_existing: bool = False,
+    timeout: int = 30,
+    progress_every: int = 10,
+    save: bool = True,
+) -> dict[str, int]:
+    """
+    Backfill decision-view enrichment columns for an existing CSV.
+
+    Usable from notebooks:
+        from src.fetch_diavgeia import backfill_spending_approval_columns
+        backfill_spending_approval_columns()
+    """
+    csv_path = Path(csv_path)
+    if not csv_path.exists():
+        raise FileNotFoundError(f"CSV not found: {csv_path}")
+
+    df = pd.read_csv(csv_path)
+    before = ensure_spending_enrichment_columns(df.copy())
+    before = ensure_commitment_enrichment_columns(before)
+    before = ensure_direct_enrichment_columns(before)
+    before = ensure_payment_enrichment_columns(before)
+    before_status = before["spending_enrichment_status"].astype("string").fillna("").str.strip()
+    before_commitment_status = before["commitment_enrichment_status"].astype("string").fillna("").str.strip()
+    before_direct_status = before["direct_enrichment_status"].astype("string").fillna("").str.strip()
+    before_payment_status = before["payment_enrichment_status"].astype("string").fillna("").str.strip()
+
+    enriched = enrich_spending_approvals(
+        df,
+        timeout=timeout,
+        overwrite_existing=overwrite_existing,
+        progress_every=progress_every,
+    )
+    enriched = enrich_commitment_decisions(
+        enriched,
+        timeout=timeout,
+        overwrite_existing=overwrite_existing,
+        progress_every=progress_every,
+    )
+    enriched = enrich_direct_assignment_decisions(
+        enriched,
+        timeout=timeout,
+        overwrite_existing=overwrite_existing,
+        progress_every=progress_every,
+    )
+    enriched = enrich_payment_finalization_decisions(
+        enriched,
+        timeout=timeout,
+        overwrite_existing=overwrite_existing,
+        progress_every=progress_every,
+    )
+
+    after = ensure_spending_enrichment_columns(enriched)
+    after = ensure_commitment_enrichment_columns(after)
+    after = ensure_direct_enrichment_columns(after)
+    after = ensure_payment_enrichment_columns(after)
+    after = normalize_enrichment_singleton_columns(after)
+    after_status = after["spending_enrichment_status"].astype("string").fillna("").str.strip()
+    after_commitment_status = after["commitment_enrichment_status"].astype("string").fillna("").str.strip()
+    after_direct_status = after["direct_enrichment_status"].astype("string").fillna("").str.strip()
+    after_payment_status = after["payment_enrichment_status"].astype("string").fillna("").str.strip()
+
+    if save:
+        after.to_csv(csv_path, index=False)
+        print(f"[spending] Backfilled CSV saved -> {csv_path}")
+
+    return {
+        "rows_total": int(len(after)),
+        "rows_spending_approvals": int((after["decisionType"] == SPENDING_APPROVAL_LABEL).sum())
+        if "decisionType" in after.columns else 0,
+        "rows_commitments": int((after["decisionType"] == COMMITMENT_LABEL).sum())
+        if "decisionType" in after.columns else 0,
+        "rows_direct_assignments": int((after["decisionType"] == DIRECT_ASSIGNMENT_LABEL).sum())
+        if "decisionType" in after.columns else 0,
+        "rows_payment_finalizations": int((after["decisionType"] == PAYMENT_FINALIZATION_LABEL).sum())
+        if "decisionType" in after.columns else 0,
+        "rows_newly_enriched": int(((before_status == "") & (after_status == "ok")).sum()),
+        "rows_commitments_newly_enriched": int(
+            ((before_commitment_status == "") & (after_commitment_status == "ok")).sum()
+        ),
+        "rows_direct_newly_enriched": int(
+            ((before_direct_status == "") & (after_direct_status == "ok")).sum()
+        ),
+        "rows_payment_newly_enriched": int(
+            ((before_payment_status == "") & (after_payment_status == "ok")).sum()
+        ),
+        "rows_ok_total": int((after_status == "ok").sum()),
+        "rows_commitments_ok_total": int((after_commitment_status == "ok").sum()),
+        "rows_direct_ok_total": int((after_direct_status == "ok").sum()),
+        "rows_payment_ok_total": int((after_payment_status == "ok").sum()),
+        "rows_error_total": int((after_status == "error").sum()),
+        "rows_commitments_error_total": int((after_commitment_status == "error").sum()),
+        "rows_direct_error_total": int((after_direct_status == "error").sum()),
+        "rows_payment_error_total": int((after_payment_status == "error").sum()),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -474,6 +1387,11 @@ def append_to_csv(new_records: list[dict]) -> int:
     # Keep old rows aligned with current normalization rules.
     combined = normalize_decision_columns(combined)
     combined = recompute_org_classification(combined)
+    combined = ensure_spending_enrichment_columns(combined)
+    combined = ensure_commitment_enrichment_columns(combined)
+    combined = ensure_direct_enrichment_columns(combined)
+    combined = ensure_payment_enrichment_columns(combined)
+    combined = normalize_enrichment_singleton_columns(combined)
 
     original_len = len(existing) if CSV_PATH.exists() else 0
 

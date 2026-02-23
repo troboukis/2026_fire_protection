@@ -1,0 +1,2 @@
+run_started_at_local,input_csv,pdf_pages_dataset,filtered_output_csv,keywords_count,rows_total,rows_relevant,rows_not_relevant,rows_subject_match,rows_pdf_match,rows_pdf_available,filtered_rows_written,success,error_message
+2026-02-22 14:08:05,/Users/troboukis/Code/fire_protection_2026/data/2026_diavgeia.csv,/Users/troboukis/Code/fire_protection_2026/data/pdf_pages_dataset.csv,/Users/troboukis/Code/fire_protection_2026/data/2026_diavgeia_filtered.csv,36,22970,22886,84,14614,22070,22908,22886,True,NONE

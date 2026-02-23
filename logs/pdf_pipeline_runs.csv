@@ -1,0 +1,9 @@
+run_started_at_athens,records_scanned,downloaded,skipped_existing,skipped_missing_url,failed_downloads,pdf_files_seen,parsed_pdfs,parsed_pages,parse_errors,success,error_message
+2026-02-22 00:15:08 +0200,0,0,0,0,0,0,0,0,0,False,NONE
+2026-02-22 00:16:50 +0200,1,0,1,0,0,0,0,0,0,True,NONE
+2026-02-22 00:18:46 +0200,3,0,3,0,0,0,0,0,0,True,NONE
+2026-02-22 00:17:37 +0200,0,0,0,0,0,0,0,0,0,False,NONE
+2026-02-22 00:20:01 +0200,50,0,50,0,0,0,0,0,0,True,NONE
+2026-02-22 00:21:49 +0200,30,0,30,0,0,0,0,0,0,True,NONE
+2026-02-22 00:22:06 +0200,22970,22759,159,0,52,0,0,0,0,False,NONE
+2026-02-22 08:58:58 +0200,0,0,0,0,0,22908,22908,421576,0,True,NONE
