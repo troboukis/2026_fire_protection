@@ -5,6 +5,7 @@ __pycache__/
 .DS_Store
 pdf/
 data/pdf_pages_dataset.csv
+data/geo/dasikoi-chartes/dasikoi_chartes_unioned/simplified.gpkg
 .env
 node_modules/
 .claude/
