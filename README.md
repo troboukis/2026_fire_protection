@@ -46,34 +46,320 @@ PDFs are stored locally in `pdf/` (excluded from git via `.gitignore`).
 Each filename is derived from `documentUrl` as the code after `/doc/`, with `.pdf` suffix.
 Example: `https://diavgeia.gov.gr/doc/9ΚΠΣΩ1Ε-ΕΑ0` -> `pdf/9ΚΠΣΩ1Ε-ΕΑ0.pdf`.
 
-Run full pipeline (download missing + build page dataset):
+The pipeline does two steps:
+- download missing PDFs from `documentUrl`
+- parse local PDFs and build `data/pdf_pages_dataset.csv`
+
+Current parser output is **one row per PDF** (not one row per page):
+- `ada`
+- `file_name`
+- `page_count`
+- `text` (all pages concatenated)
+- `text_length`
+- `parse_error`
+
+### Command reference (`src/pdf_pipeline.py`)
+
+Base command:
 
 ```bash
 ./.fireprotection/bin/python src/pdf_pipeline.py
 ```
 
-Download only:
+1. Full pipeline (download missing PDFs + build dataset)
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py
+```
+
+What it does:
+- reads source records from `data/2026_diavgeia.csv`
+- downloads only missing PDFs into `pdf/`
+- parses local PDFs
+- writes aggregated text dataset to `data/pdf_pages_dataset.csv`
+- appends run stats to `logs/pdf_pipeline_runs.csv`
+
+2. Download only (no parsing / no dataset rebuild)
 
 ```bash
 ./.fireprotection/bin/python src/pdf_pipeline.py --download-only
 ```
 
-Build page dataset only:
+What it does:
+- reads `documentUrl` values from the source CSV
+- downloads only PDFs that do not already exist in `pdf/`
+- skips dataset generation
+- still logs the run
+
+3. Build only (parse existing local PDFs only)
 
 ```bash
 ./.fireprotection/bin/python src/pdf_pipeline.py --build-only
 ```
 
-Useful options:
-- `--limit 100` to test on a subset
-- `--source-csv data/2026_diavgeia.csv`
-- `--pdf-dir pdf`
-- `--pages-dataset data/pdf_pages_dataset.csv`
+What it does:
+- does not download anything
+- parses PDFs already present in `pdf/`
+- rewrites `data/pdf_pages_dataset.csv`
+- logs parsing counters
 
-Run logs are appended to `logs/pdf_pipeline_runs.csv` and include:
-- download counters (`downloaded`, `skipped_existing`, `failed_downloads`)
-- parsing counters (`parsed_pdfs`, `parsed_pages`, `parse_errors`)
-- `success` and `error_message`
+4. Test on a small subset (`--limit`)
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --limit 100
+```
+
+What it does:
+- limits both download scanning and PDF parsing to the first `100` records/files
+- useful for smoke tests and debugging
+
+5. Faster local parsing with multiple workers (`--workers`)
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --build-only --workers 4
+```
+
+What it does:
+- parses PDFs in parallel (processes)
+- speeds up the build step on multi-core machines
+- only affects the parsing/build step (downloads are still sequential)
+
+6. Increase HTTP timeout for slow downloads (`--timeout`)
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --download-only --timeout 120
+```
+
+What it does:
+- increases PDF download read timeout (seconds)
+- useful for slow network responses / large files
+
+7. Use custom input/output paths
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py \
+  --source-csv data/2026_diavgeia.csv \
+  --pdf-dir pdf \
+  --pages-dataset data/pdf_pages_dataset.csv
+```
+
+What it does:
+- overrides default source CSV / PDF storage directory / output dataset path
+
+8. Common combinations
+
+Download a subset only:
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --download-only --limit 50
+```
+
+Build a subset with parallel parsing:
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --build-only --limit 200 --workers 6
+```
+
+Run full pipeline with custom timeout and parallel build:
+
+```bash
+./.fireprotection/bin/python src/pdf_pipeline.py --timeout 120 --workers 4
+```
+
+### CLI flags and what each does
+
+- `--source-csv <path>`: source CSV containing at least `ada` and `documentUrl`
+- `--pdf-dir <path>`: local folder where PDFs are stored/read
+- `--pages-dataset <path>`: output CSV path for parsed PDF text dataset (one row per PDF)
+- `--limit <N>`: process only the first `N` records/files (useful for testing)
+- `--workers <N>`: number of worker processes for PDF parsing (`--build-only` or full run build step)
+- `--download-only`: run only the download step
+- `--build-only`: run only the parsing/dataset build step
+- `--timeout <seconds>`: HTTP read timeout for PDF downloads (connect timeout is fixed at 10s)
+
+Note:
+- `--download-only` and `--build-only` are mutually exclusive (cannot be used together)
+
+### Run logging
+
+Every run appends one row to `logs/pdf_pipeline_runs.csv`, including:
+- download counters (`records_scanned`, `downloaded`, `skipped_existing`, `skipped_missing_url`, `failed_downloads`)
+- parsing counters (`pdf_files_seen`, `parsed_pdfs`, `parsed_pages`, `parse_errors`)
+- `success`
+- `error_message`
+
+## Local Relevance Filter (Subject + PDF)
+
+This is a **separate local-only post-processing step** that runs **after**:
+
+1. `fetch_diavgeia.py` (raw records + decision-type enrichments)
+2. `pdf_pipeline.py` (download + parse PDFs)
+
+It checks whether each record is relevant to forest-fire prevention/suppression using:
+- the decision `subject`
+- the parsed PDF text (looked up by `ada`)
+
+If at least one keyword is found in either source, the row is marked relevant and included in the filtered dataset.
+
+### Why this is local-only
+
+This step depends on local PDF artifacts and parsed PDF text, which are large and operationally unsuitable for GitHub Actions in this project.
+
+Local-only components:
+- PDF downloading (`src/pdf_pipeline.py`)
+- PDF parsing (`src/pdf_pipeline.py`)
+- Relevance filtering (`src/filter_relevance.py`)
+
+`src/filter_relevance.py` includes a CI guard and will refuse to run in CI/GitHub Actions unless explicitly overridden with `--allow-ci`.
+
+### Strategy (simple boolean rule)
+
+For each row in `data/2026_diavgeia.csv`:
+
+- `subject_match = any(keyword in normalized(subject))`
+- `pdf_match = any(keyword in normalized(pdf_text_for_same_ada))`
+- `is_relevant = subject_match OR pdf_match`
+
+No scoring / ranking is used.
+
+### Important implementation detail (no dataframe join)
+
+To avoid inflating the raw dataset or doing a heavy merge:
+
+- the script reads `data/pdf_pages_dataset.csv` using only columns `ada` and `text`
+- builds an in-memory lookup dictionary: `ada -> text`
+- checks PDF text per row using `ada`
+
+This means:
+- no large text join into `data/2026_diavgeia.csv`
+- no duplication of PDF text inside the raw dataset
+
+### Text normalization used before matching
+
+Both keywords and text (`subject`, PDF text) are normalized before matching:
+- lowercase
+- remove Greek tonos/diacritics
+- normalize final sigma (`ς -> σ`)
+- replace punctuation/symbols with spaces
+- collapse multiple spaces
+
+This allows matching regardless of:
+- accents (e.g. `δασικών` vs `δασικων`)
+- uppercase/lowercase
+- punctuation differences
+
+### Inputs / Outputs (spec)
+
+Inputs:
+- `data/2026_diavgeia.csv` (raw dataset)
+- `data/pdf_pages_dataset.csv` (parsed PDF text dataset, one row per PDF; must include `ada`, `text`)
+
+Outputs:
+- updates `data/2026_diavgeia.csv` by adding/updating relevance columns
+- writes `data/2026_diavgeia_filtered.csv` (only `is_relevant == True`)
+- appends run metrics to `logs/relevance_filter_runs.csv`
+
+Database feed source:
+- `data/2026_diavgeia_filtered.csv`
+
+### Relevance columns added to `data/2026_diavgeia.csv`
+
+- `subject_match` (`True/False`)
+- `pdf_match` (`True/False`)
+- `pdf_available_for_filter` (`True/False`)
+  - `True` if parsed PDF text exists for that `ada`
+  - `False` if no parsed PDF text is available (missing PDF / parse failure / no row)
+- `is_relevant` (`True/False`)
+- `matched_keywords_subject`
+  - matched keyword(s) from `subject`
+  - cleanup rule: `[] -> empty`, `[x] -> x`, `[x,y] -> list`
+- `matched_keywords_pdf`
+  - matched keyword(s) from PDF text
+  - same cleanup rule as above
+
+### Filtered dataset (`data/2026_diavgeia_filtered.csv`)
+
+Contains:
+- all columns from `data/2026_diavgeia.csv`
+- only rows where `is_relevant == True`
+
+Recommended use:
+- use this file as the source for database ingestion
+
+### Command reference (`src/filter_relevance.py`)
+
+Base command (local):
+
+```bash
+./.fireprotection/bin/python src/filter_relevance.py
+```
+
+What it does:
+- loads raw dataset
+- loads parsed PDF text lookup by `ada`
+- computes relevance columns in raw dataset
+- writes filtered dataset
+
+Custom paths:
+
+```bash
+./.fireprotection/bin/python src/filter_relevance.py \
+  --input-csv data/2026_diavgeia.csv \
+  --pdf-pages-dataset data/pdf_pages_dataset.csv \
+  --filtered-output data/2026_diavgeia_filtered.csv \
+  --log-csv logs/relevance_filter_runs.csv
+```
+
+Progress frequency:
+
+```bash
+./.fireprotection/bin/python src/filter_relevance.py --progress-every 100
+```
+
+CI override (not recommended):
+
+```bash
+./.fireprotection/bin/python src/filter_relevance.py --allow-ci
+```
+
+### Relevance filter run log (`logs/relevance_filter_runs.csv`)
+
+Each run appends one row including:
+- `run_started_at_local`
+- `input_csv`
+- `pdf_pages_dataset`
+- `filtered_output_csv`
+- `keywords_count`
+- `rows_total`
+- `rows_relevant`
+- `rows_not_relevant`
+- `rows_subject_match`
+- `rows_pdf_match`
+- `rows_pdf_available`
+- `filtered_rows_written`
+- `success`
+- `error_message`
+
+### Keyword list source
+
+The keyword list is defined in:
+- `src/filter_relevance.py` -> `RELEVANCE_KEYWORDS`
+
+Update that list to refine recall/precision. After any keyword change, re-run the relevance filter locally to regenerate:
+- `data/2026_diavgeia.csv` relevance columns
+- `data/2026_diavgeia_filtered.csv`
+
+### Recommended local pipeline order
+
+1. `./.fireprotection/bin/python fetch_diavgeia.py`
+2. `./.fireprotection/bin/python src/pdf_pipeline.py` (or `--build-only` if PDFs already downloaded)
+3. `./.fireprotection/bin/python src/filter_relevance.py`
+
+### Operational notes / limitations
+
+- If PDF text extraction failed (or the PDF is unavailable), `pdf_match` may be `False` even for a relevant record.
+- This is why the filter checks both `subject` and PDF text.
+- The raw dataset remains the audit source; the filtered dataset is the operational source for DB ingestion.
 
 ## Daily automated collection (GitHub Actions)
 
@@ -230,3 +516,133 @@ Each run appends one row to `logs/fetch_runs.csv` with:
   - `logs/fetch_runs.csv`
 - Schedule is `03:00 UTC` daily.
 - If fetch fails, run log is still persisted and workflow is marked failed.
+
+### 9) Decision-Type `decisions/view` enrichment formats (detailed)
+
+For selected `decisionType` values, `src/fetch_diavgeia.py` performs an extra API call to:
+
+- `https://diavgeia.gov.gr/luminapi/api/decisions/view/{ada}`
+
+The response contains a `meta` field (list of one-key dictionaries). The script flattens that list and extracts type-specific fields into dedicated CSV columns.
+
+Important storage note:
+- In memory, many extracted values are Python lists/dicts.
+- In `data/2026_diavgeia.csv`, they are stored as stringified values (because CSV has no native nested types).
+
+Quick summary table:
+
+| `decisionType` | Column prefix | Main extracted entities |
+|---|---|---|
+| `ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ` | `spending_*` | signers + contractors (AFM, name, amount, currency) |
+| `ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ` | `commitment_*` | signers + fiscal/budget fields + `Ποσό και ΚΑΕ/ΑΛΕ` lines |
+| `ΑΝΑΘΕΣΗ ΕΡΓΩΝ / ΠΡΟΜΗΘΕΙΩΝ / ΥΠΗΡΕΣΙΩΝ / ΜΕΛΕΤΩΝ` | `direct_*` | signers + persons (AFM/name) + amount + references |
+| `ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ` | `payment_*` | signers + beneficiaries (AFM/name/value) + references |
+
+#### A) `ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ` (Spending approval)
+
+Relevant `meta` keys used:
+- `Υπογράφοντες`
+- `Στοιχεία αναδόχων` (list)
+  - each item may include:
+    - `ΑΦΜ / Επωνυμία` -> `{ΑΦΜ, Επωνυμία, ...}`
+    - `Ποσό δαπάνης` -> `{Αξία, Νόμισμα}`
+
+Collected columns:
+- `spending_signers`: list from `Υπογράφοντες`
+- `spending_contractors_afm`: list of contractor AFM values
+- `spending_contractors_name`: list of contractor names (`Επωνυμία`)
+- `spending_contractors_value`: list of expense amounts (`Αξία`)
+- `spending_contractors_currency`: list of currencies (`Νόμισμα`)
+- `spending_contractors_count`: number of contractor rows extracted
+- `spending_contractors_details`: list of dicts with `{ΑΦΜ, Επωνυμία, Αξία, Νόμισμα}`
+
+Status / audit columns:
+- `spending_enrichment_status`: `ok`, `error`, or `skip_missing_ada`
+- `spending_enrichment_error`: error text when status is `error`
+
+#### B) `ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ` (Commitment / obligation assumption)
+
+Relevant `meta` keys used:
+- `Υπογράφοντες`
+- `Οικονομικό Έτος`
+- `Κατηγορία Προϋπολογισμού`
+- `Ποσό και ΚΑΕ/ΑΛΕ` (list)
+  - each item may include:
+    - `ΑΦΜ / Επωνυμία`
+    - `Αριθμός ΚΑΕ/ΑΛΕ`
+    - `Ποσό με ΦΠΑ`
+    - `Υπόλοιπο διαθέσιμης πίστωσης`
+    - `Υπόλοιπο ΚΑΕ/ΑΛΕ`
+
+Collected columns:
+- `commitment_signers`: list from `Υπογράφοντες`
+- `commitment_fiscal_year`: `Οικονομικό Έτος`
+- `commitment_budget_category`: `Κατηγορία Προϋπολογισμού`
+- `commitment_counterparty`: list from `ΑΦΜ / Επωνυμία` (one per line in `Ποσό και ΚΑΕ/ΑΛΕ`)
+- `commitment_amount_with_vat`: list of `Ποσό με ΦΠΑ`
+- `commitment_remaining_available_credit`: list of `Υπόλοιπο διαθέσιμης πίστωσης`
+- `commitment_kae_ale_number`: list of `Αριθμός ΚΑΕ/ΑΛΕ`
+- `commitment_remaining_kae_ale`: list of `Υπόλοιπο ΚΑΕ/ΑΛΕ`
+- `commitment_lines_count`: number of rows in `Ποσό και ΚΑΕ/ΑΛΕ`
+- `commitment_lines_details`: list of dicts preserving all extracted row-level fields
+
+Status / audit columns:
+- `commitment_enrichment_status`: `ok`, `error`, or `skip_missing_ada`
+- `commitment_enrichment_error`: error text when status is `error`
+
+#### C) `ΑΝΑΘΕΣΗ ΕΡΓΩΝ / ΠΡΟΜΗΘΕΙΩΝ / ΥΠΗΡΕΣΙΩΝ / ΜΕΛΕΤΩΝ` (Direct assignment)
+
+Relevant `meta` keys used:
+- `Υπογράφοντες`
+- `ΑΦΜ / Επωνυμία προσώπου / προσώπων` (list)
+  - each item may include `ΑΦΜ`, `Επωνυμία`
+- `Ποσό` -> `{Αξία, Νόμισμα}` (currently only `Αξία` is stored)
+- `Σχετ. Ανάληψη υποχρέωσης`
+- `Δείτε επίσης και ..`
+
+Collected columns (requested `direct_*` naming):
+- `direct_signers`: list from `Υπογράφοντες`
+- `direct_afm`: list of AFM values
+- `direct_name`: list of names (`Επωνυμία`)
+- `direct_value`: amount value from `Ποσό -> Αξία`
+- `direct_related_commitment`: `Σχετ. Ανάληψη υποχρέωσης`
+- `direct_see_also`: `Δείτε επίσης και ..`
+
+Helper columns:
+- `direct_people_count`: number of persons in `ΑΦΜ / Επωνυμία προσώπου / προσώπων`
+- `direct_people_details`: list of dicts with `{ΑΦΜ, Επωνυμία}`
+- `direct_enrichment_status`
+- `direct_enrichment_error`
+
+#### D) `ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ` (Payment finalization)
+
+Relevant `meta` keys used:
+- `Υπογράφοντες`
+- `Στοιχεία δικαιούχων` (list)
+  - each item may include:
+    - `ΑΦΜ / Επωνυμία` -> `{ΑΦΜ, Επωνυμία, ...}`
+    - `Ποσό δαπάνης` -> `{Αξία, Νόμισμα}`
+- `Σχετ. Ανάληψη Υποχρέωσης/Έγκριση Δαπάνης`
+- `Δείτε επίσης και ..`
+
+Collected columns:
+- `payment_signers`: list from `Υπογράφοντες`
+- `payment_beneficiary_afm`: list of beneficiary AFM values
+- `payment_beneficiary_name`: list of beneficiary names (`Επωνυμία`)
+- `payment_value`: list of beneficiary expense amounts (`Αξία`)
+- `payment_related_commitment_or_spending`: `Σχετ. Ανάληψη Υποχρέωσης/Έγκριση Δαπάνης`
+- `payment_see_also`: `Δείτε επίσης και ..`
+
+Helper columns:
+- `payment_beneficiaries_count`: number of beneficiary rows
+- `payment_beneficiaries_details`: list of dicts with `{ΑΦΜ, Επωνυμία, Αξία}`
+- `payment_enrichment_status`
+- `payment_enrichment_error`
+
+#### Enrichment execution behavior
+
+- Enrichment runs automatically during `fetch_diavgeia.py` for new rows.
+- Existing CSV rows can be backfilled from a notebook via:
+  - `fetch_diavgeia.backfill_spending_approval_columns(...)`
+- The backfill currently processes all supported types above (despite the legacy function name).
+- Progress is printed during enrichment (`[spending]`, `[commitment]`, `[direct]`, `[payment]` start/progress/done lines).

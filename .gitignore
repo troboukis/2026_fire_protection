@@ -5,3 +5,28 @@ __pycache__/
 .DS_Store
 pdf/
 data/pdf_pages_dataset.csv
+.env
+node_modules/
+.claude/
+
+# Python local env / caches
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Frontend build artifacts
+app/dist/
+app/.vite/
+
+# Local env files (keep examples)
+app/.env
+app/.env.local
+app/.env.development.local
+app/.env.test.local
+app/.env.production.local
+
+# Local backups / scratch files
+*.bak
+*.tmp
+*.swp
