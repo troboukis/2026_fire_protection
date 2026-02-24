@@ -9,13 +9,21 @@ interface Props {
 }
 
 /* ── Helpers ──────────────────────────────────────────────────── */
+// Converts a raw DB value to a clean string, returning null for empty / "nan" / "none"
+function cleanStr(v: unknown): string | null {
+  if (v == null) return null
+  const s = String(v).trim()
+  if (s === '' || s.toLowerCase() === 'nan' || s.toLowerCase() === 'none') return null
+  return s
+}
+
 function fmtNum(n: number | null, decimals = 0): string {
   if (n == null) return '—'
   return n.toLocaleString('el-GR', { maximumFractionDigits: decimals })
 }
 
 function fmtEur(n: number | null): string {
-  if (n == null) return '—'
+  if (n == null || isNaN(n)) return '—'
   return n.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 }
 
@@ -29,132 +37,167 @@ function fmtDate(d: string | null): string {
 /* ── Procurement types ────────────────────────────────────────── */
 interface ProcurementDecision {
   ada: string
+  org_type: string | null
   issue_date: string | null
   subject: string | null
   decision_type: string | null
   amount_eur: number | null
   document_url: string | null
+  authority_level: string | null
+  org_name_clean: string | null
+  contractor_name: string | null
 }
 
-interface ProcurementDecisionLine {
-  ada: string
-  amount_eur: number | null
+interface ProcurementLine {
+  line_type: string
   counterparty_name: string | null
+  amount_eur: number | null
+  kae_ale_number: string | null
 }
 
-interface ProcurementLineAgg {
-  amountEur: number | null
-  lineCount: number
-  counterpartiesCount: number
+interface CoverageAuthority {
+  org_type: string
+  org_name_clean: string
+  authority_level: string | null
+  coverage_method: string | null
+}
+
+function mapProcurementRow(r: Record<string, unknown>): ProcurementDecision {
+  return {
+    ada:             String(r.ada ?? ''),
+    org_type:        cleanStr(r.org_type),
+    issue_date:      cleanStr(r.issue_date),
+    subject:         cleanStr(r.subject),
+    decision_type:   cleanStr(r.decision_type),
+    amount_eur:      r.amount_eur != null ? (isNaN(Number(r.amount_eur)) ? null : Number(r.amount_eur)) : null,
+    document_url:    cleanStr(r.document_url),
+    authority_level: cleanStr(r.authority_level),
+    org_name_clean:  cleanStr(r.org_name_clean),
+    contractor_name: cleanStr(r.contractor_name),
+  }
 }
 
 async function fetchProcurement(municipalityId: string): Promise<ProcurementDecision[]> {
   const { data, error } = await supabase
     .from('procurement_decisions')
-    .select('ada, issue_date, subject, decision_type, amount_eur, document_url')
+    .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
     .eq('municipality_id', municipalityId)
     .order('issue_date', { ascending: false })
     .limit(500)
   if (error) throw error
-  return (data ?? []).map(r => ({
-    ada:           r.ada,
-    issue_date:    r.issue_date   ?? null,
-    subject:       r.subject      ?? null,
-    decision_type: r.decision_type ?? null,
-    amount_eur:    r.amount_eur != null ? Number(r.amount_eur) : null,
-    document_url:  r.document_url ?? null,
-  }))
+  return (data ?? [])
+    .filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)
+    .map(r => mapProcurementRow(r as Record<string, unknown>))
 }
 
-async function fetchProcurementLines(adas: string[]): Promise<ProcurementDecisionLine[]> {
-  if (adas.length === 0) return []
+async function fetchCoverageAuthorities(municipalityId: string): Promise<CoverageAuthority[]> {
+  const { data, error } = await supabase
+    .from('org_municipality_coverage')
+    .select('org_type, org_name_clean, authority_level, coverage_method')
+    .eq('municipality_id', municipalityId)
+    .in('authority_level', ['region', 'decentralized'])
 
-  const uniqAdas = [...new Set(adas.filter(Boolean))]
-  const chunkSize = 150
-  const all: ProcurementDecisionLine[] = []
+  // Table may not be deployed yet in some environments; fail soft for Sprint 5 prep.
+  if (error) return []
 
-  for (let i = 0; i < uniqAdas.length; i += chunkSize) {
-    const chunk = uniqAdas.slice(i, i + chunkSize)
+  const out = new Map<string, CoverageAuthority>()
+  for (const row of data ?? []) {
+    const orgType = String(row.org_type ?? '').trim()
+    const orgName = String(row.org_name_clean ?? '').trim()
+    if (!orgType || !orgName) continue
+    const key = `${orgType}||${orgName}`
+    if (!out.has(key)) {
+      out.set(key, {
+        org_type: orgType,
+        org_name_clean: orgName,
+        authority_level: row.authority_level != null ? String(row.authority_level) : null,
+        coverage_method: row.coverage_method != null ? String(row.coverage_method) : null,
+      })
+    }
+  }
+  return [...out.values()]
+}
+
+async function fetchCoverageProcurement(authorities: CoverageAuthority[]): Promise<ProcurementDecision[]> {
+  if (authorities.length === 0) return []
+
+  const allowed = new Set(authorities.map(a => `${a.org_type}||${a.org_name_clean}`))
+  const names = [...new Set(authorities.map(a => a.org_name_clean))]
+  const chunkSize = 100
+  const all: ProcurementDecision[] = []
+
+  for (let i = 0; i < names.length; i += chunkSize) {
+    const chunk = names.slice(i, i + chunkSize)
     const { data, error } = await supabase
-      .from('procurement_decision_lines')
-      .select('ada, amount_eur, counterparty_name')
-      .in('ada', chunk)
+      .from('procurement_decisions')
+      .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
+      .in('org_name_clean', chunk)
+      .in('authority_level', ['region', 'decentralized'])
+      .order('issue_date', { ascending: false })
+      .limit(1000)
+
     if (error) throw error
-    all.push(
-      ...(data ?? []).map(r => ({
-        ada: String(r.ada),
-        amount_eur: r.amount_eur != null ? Number(r.amount_eur) : null,
-        counterparty_name: r.counterparty_name != null ? String(r.counterparty_name) : null,
-      }))
-    )
+
+    for (const row of (data ?? []).filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)) {
+      const mapped = mapProcurementRow(row as Record<string, unknown>)
+      const key = `${mapped.org_type ?? ''}||${mapped.org_name_clean ?? ''}`
+      if (allowed.has(key)) all.push(mapped)
+    }
   }
 
   return all
 }
 
-function aggregateProcurementLines(lines: ProcurementDecisionLine[]): Record<string, ProcurementLineAgg> {
-  const byAda = new Map<string, { total: number; hasAmount: boolean; names: Set<string>; count: number }>()
-
-  for (const line of lines) {
-    if (!byAda.has(line.ada)) {
-      byAda.set(line.ada, { total: 0, hasAmount: false, names: new Set<string>(), count: 0 })
+async function fetchDecisionLines(adas: string[]): Promise<Map<string, ProcurementLine[]>> {
+  if (adas.length === 0) return new Map()
+  const CHUNK = 200
+  const map = new Map<string, ProcurementLine[]>()
+  for (let i = 0; i < adas.length; i += CHUNK) {
+    const chunk = adas.slice(i, i + CHUNK)
+    const { data, error } = await supabase
+      .from('procurement_decision_lines')
+      .select('ada, line_type, counterparty_name, amount_eur, kae_ale_number')
+      .in('ada', chunk)
+      .order('line_index', { ascending: true })
+    if (error) continue
+    for (const r of data ?? []) {
+      const ada = String(r.ada ?? '')
+      if (!ada) continue
+      if (!map.has(ada)) map.set(ada, [])
+      map.get(ada)!.push({
+        line_type:         String(r.line_type ?? ''),
+        counterparty_name: cleanStr(r.counterparty_name),
+        amount_eur:        r.amount_eur != null ? (isNaN(Number(r.amount_eur)) ? null : Number(r.amount_eur)) : null,
+        kae_ale_number:    cleanStr(r.kae_ale_number),
+      })
     }
-    const agg = byAda.get(line.ada)!
-    agg.count += 1
-    if (line.amount_eur != null) {
-      agg.total += line.amount_eur
-      agg.hasAmount = true
-    }
-    const name = (line.counterparty_name ?? '').trim()
-    if (name) agg.names.add(name)
   }
-
-  const out: Record<string, ProcurementLineAgg> = {}
-  for (const [ada, agg] of byAda) {
-    out[ada] = {
-      amountEur: agg.hasAmount ? agg.total : null,
-      lineCount: agg.count,
-      counterpartiesCount: agg.names.size,
-    }
-  }
-  return out
+  return map
 }
 
-function decisionDisplayAmount(
-  decision: ProcurementDecision,
-  lineAggByAda: Record<string, ProcurementLineAgg>,
-): number | null {
-  return lineAggByAda[decision.ada]?.amountEur ?? decision.amount_eur
+async function fetchNationalProcurement(): Promise<ProcurementDecision[]> {
+  const { data, error } = await supabase
+    .from('procurement_decisions')
+    .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
+    .eq('authority_level', 'national')
+    .order('issue_date', { ascending: false })
+    .limit(3000)
+  if (error) throw error
+  return (data ?? [])
+    .filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)
+    .map(r => mapProcurementRow(r as Record<string, unknown>))
 }
-
-const PROC_TYPES = [
-  {
-    label: 'Αναθέσεις & Συμβάσεις',
-    match: (up: string) =>
-      up.startsWith('ΑΝΑΘΕΣΗ') ||
-      up.startsWith('ΚΑΤΑΚΥΡΩΣΗ') ||
-      up.startsWith('ΣΥΜΒΑΣΗ') ||
-      up.startsWith('ΠΕΡΙΛΗΨΗ ΔΙΑΚΗΡΥΞΗΣ'),
-  },
-  { label: 'Εγκρίσεις δαπανών',    match: (up: string) => up.startsWith('ΕΓΚΡΙΣΗ') },
-  { label: 'Αναλήψεις υποχρέωσης', match: (up: string) => up.startsWith('ΑΝΑΛΗΨΗ') },
-  {
-    label: 'Πληρωμές',
-    match: (up: string) =>
-      up.startsWith('ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ') ||
-      up.startsWith('ΠΛΗΡΩΜΗ') ||
-      up.startsWith('ΕΠΙΤΡΟΠΙΚΟ ΕΝΤΑΛΜΑ'),
-  },
-]
 
 function typeLabel(dt: string | null): string {
-  if (!dt) return 'Άλλο'
+  if (!dt) return '—'
   const up = dt.toUpperCase()
   if (up.startsWith('ΑΝΑΘΕΣΗ')) return 'Ανάθεση'
   if (up.startsWith('ΕΓΚΡΙΣΗ')) return 'Εγκρ.'
   if (up.startsWith('ΑΝΑΛΗΨΗ')) return 'Ανάληψη'
   if (up.startsWith('ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ') || up.startsWith('ΠΛΗΡΩΜΗ')) return 'Πληρωμή'
-  return 'Άλλο'
+  // For unrecognised types: show first two words of the raw value
+  const words = dt.trim().split(/\s+/)
+  return words.slice(0, 2).join(' ')
 }
 
 function typeBadgeClass(dt: string | null): string {
@@ -167,70 +210,228 @@ function typeBadgeClass(dt: string | null): string {
   return 'proc-badge'
 }
 
-/* ── Expandable procurement type section ─────────────────────── */
-function ProcurementTypeSection({
-  label, decisions, lineAggByAda, isOpen, onToggle,
+function orgTypeDisplay(orgType: string | null): string {
+  return (orgType ?? '').trim() || '—'
+}
+
+function decisionYear(decision: ProcurementDecision): number | null {
+  if (!decision.issue_date) return null
+  const dt = new Date(decision.issue_date)
+  if (isNaN(dt.getTime())) return null
+  return dt.getFullYear()
+}
+
+function countDecisionsForYear(rows: ProcurementDecision[], year: number): number {
+  return rows.filter(r => decisionYear(r) === year).length
+}
+
+function postedDecisionsPhrase(count: number, loading: boolean): string {
+  if (loading) return 'έχει αναρτήσει … αποφάσεις στη Διαύγεια'
+  if (count === 0) return 'δεν έχει αναρτήσει αποφάσεις στη Διαύγεια'
+  if (count === 1) return 'έχει αναρτήσει 1 απόφαση στη Διαύγεια'
+  return `έχει αναρτήσει ${fmtNum(count)} αποφάσεις στη Διαύγεια`
+}
+
+function coveragePostedPhrase(count: number, loading: boolean): string {
+  if (loading) return 'έχουν αναρτηθεί … αποφάσεις.'
+  if (count === 0) return 'δεν έχουν αναρτηθεί αποφάσεις.'
+  if (count === 1) return 'έχει αναρτηθεί 1 απόφαση.'
+  return `έχουν αναρτηθεί ${fmtNum(count)} αποφάσεις.`
+}
+
+type ProcTableFilters = {
+  year: string
+  orgKey: string
+  decisionType: string
+}
+
+function sortDecisionsDesc(rows: ProcurementDecision[]): ProcurementDecision[] {
+  return [...rows].sort((a, b) => (b.issue_date ?? '').localeCompare(a.issue_date ?? ''))
+}
+
+function uniqueYears(rows: ProcurementDecision[]): number[] {
+  return [...new Set(rows.map(decisionYear).filter((yr): yr is number => yr != null))].sort((a, b) => b - a)
+}
+
+function orgKey(row: ProcurementDecision): string {
+  return `${(row.org_type ?? '').trim()}||${(row.org_name_clean ?? '').trim()}`
+}
+
+function uniqueOrgs(rows: ProcurementDecision[]): Array<{ key: string; label: string }> {
+  const out = new Map<string, { key: string; label: string }>()
+  for (const row of rows) {
+    const type = (row.org_type ?? '').trim()
+    const name = (row.org_name_clean ?? '').trim()
+    if (!name) continue
+    const key = orgKey(row)
+    if (!out.has(key)) out.set(key, { key, label: `${type || '—'} · ${name}` })
+  }
+  return [...out.values()].sort((a, b) => a.label.localeCompare(b.label, 'el'))
+}
+
+function uniqueDecisionTypes(rows: ProcurementDecision[]): string[] {
+  return [...new Set(rows.map(r => (r.decision_type ?? '').trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'el'))
+}
+
+function applyProcFilters(rows: ProcurementDecision[], filters: ProcTableFilters): ProcurementDecision[] {
+  return rows.filter(row => {
+    const yr = decisionYear(row)
+    if (filters.year !== 'all' && yr !== Number(filters.year)) return false
+    if (filters.orgKey !== 'all' && orgKey(row) !== filters.orgKey) return false
+    if (filters.decisionType !== 'all' && (row.decision_type ?? '') !== filters.decisionType) return false
+    return true
+  })
+}
+
+function ProcurementDecisionTableSection({
+  title,
+  decisions,
+  loading,
+  filters,
+  onFiltersChange,
+  emptyText,
+  decisionLines,
 }: {
-  label: string
+  title: string
   decisions: ProcurementDecision[]
-  lineAggByAda: Record<string, ProcurementLineAgg>
-  isOpen: boolean
-  onToggle: () => void
+  loading: boolean
+  filters: ProcTableFilters
+  onFiltersChange: (next: ProcTableFilters) => void
+  emptyText: string
+  decisionLines: Map<string, ProcurementLine[]>
 }) {
-  const count = decisions.length
-  const total = decisions.reduce((s, d) => s + (decisionDisplayAmount(d, lineAggByAda) ?? 0), 0)
+  const [expanded, setExpanded] = useState(false)
+  const yearOptions = uniqueYears(decisions)
+  const orgOptions = uniqueOrgs(decisions)
+  const typeOptions = uniqueDecisionTypes(decisions)
+  const rows = applyProcFilters(decisions, filters)
+  const visibleRows = expanded ? rows : rows.slice(0, 5)
+
+  useEffect(() => {
+    setExpanded(false)
+  }, [filters.year, filters.orgKey, filters.decisionType, title])
+
   return (
-    <>
-      <div className={`cat-row${isOpen ? ' open' : ''}`} onClick={onToggle}>
-        <span className="cat-row-label">{label}</span>
-        <span className="cat-row-meta">
-          <span className="cat-row-count">
-            {count > 0
-              ? `${count} αποφ.${total > 0 ? ` · ${fmtEur(total)}` : ''}`
-              : '—'}
-          </span>
-          <span className={`cat-chevron${isOpen ? ' open' : ''}`}>▶</span>
-        </span>
+    <div className="section">
+      <div className="section-header">
+        <p className="section-title">{title}</p>
+        {!loading && rows.length > 0 && (
+          <span className="dec-count">{fmtNum(rows.length)} αποφάσεις</span>
+        )}
       </div>
-      {isOpen && (
-        <div className="cat-decisions">
-          {count === 0 ? (
-            <p className="cat-empty">Δεν υπάρχουν αποφάσεις αυτής της κατηγορίας.</p>
-          ) : (
-            <table className="decisions-table">
-              <thead>
-                <tr>
-                  <th>Ημ/νία</th>
-                  <th>Θέμα</th>
-                  <th style={{ textAlign: 'right' }}>Ποσό</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                {decisions.map(d => (
-                  <tr key={d.ada}>
-                    <td className="proc-date">{fmtDate(d.issue_date)}</td>
-                    <td className="proc-subject">
-                      {(d.subject ?? '').slice(0, 100)}{(d.subject?.length ?? 0) > 100 ? '…' : ''}
-                    </td>
-                    <td className="proc-amount">
-                      {decisionDisplayAmount(d, lineAggByAda) != null
-                        ? fmtEur(decisionDisplayAmount(d, lineAggByAda))
-                        : '—'}
-                    </td>
-                    <td className="proc-link">
-                      {d.document_url
-                        ? <a href={d.document_url} target="_blank" rel="noreferrer">↗</a>
-                        : '—'}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+
+      <div className="proc-filters">
+        <label className="proc-filter">
+          <span>Έτος</span>
+          <select value={filters.year} onChange={e => onFiltersChange({ ...filters, year: e.target.value })}>
+            <option value="all">Όλα</option>
+            {[2026, ...yearOptions.filter(y => y !== 2026)].map(yr => (
+              <option key={yr} value={String(yr)}>{yr}</option>
+            ))}
+          </select>
+        </label>
+
+        <label className="proc-filter">
+          <span>Φορέας</span>
+          <select value={filters.orgKey} onChange={e => onFiltersChange({ ...filters, orgKey: e.target.value })}>
+            <option value="all">Όλοι</option>
+            {orgOptions.map(org => (
+              <option key={org.key} value={org.key}>{org.label}</option>
+            ))}
+          </select>
+        </label>
+
+        <label className="proc-filter">
+          <span>Τύπος</span>
+          <select
+            value={filters.decisionType}
+            onChange={e => onFiltersChange({ ...filters, decisionType: e.target.value })}
+          >
+            <option value="all">Όλοι</option>
+            {typeOptions.map(t => (
+              <option key={t} value={t}>{t}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      {loading ? (
+        <p className="panel-loading" style={{ padding: '14px 0' }}>Φόρτωση αποφάσεων…</p>
+      ) : rows.length === 0 ? (
+        <p className="dec-empty">{emptyText}</p>
+      ) : (
+        <>
+          <div className="dec-feed">
+            {visibleRows.map((d, i) => {
+              const label = typeLabel(d.decision_type)
+              const isMuni = (d.authority_level ?? '').toLowerCase() === 'municipality'
+              const lines = decisionLines.get(d.ada) ?? []
+              const meaningfulLines = lines.filter(l => l.amount_eur != null || l.counterparty_name || l.kae_ale_number)
+              // Only show the financial section if there's actual financial data
+              const isFinancial = d.amount_eur != null || meaningfulLines.length > 0 || d.contractor_name != null
+              return (
+                <div className={`dec-item${isMuni ? ' dec-item--muni' : ''}`} key={`${d.ada}-${i}`}>
+                  <div className="dec-item-top">
+                    {label !== '—' && (
+                      <span className={typeBadgeClass(d.decision_type)}>{label}</span>
+                    )}
+                    <div className="dec-item-right">
+                      {d.document_url ? (
+                        <a href={d.document_url} target="_blank" rel="noreferrer" className="dec-item-ada-link">{d.ada}</a>
+                      ) : (
+                        <span className="dec-item-ada">{d.ada}</span>
+                      )}
+                    </div>
+                  </div>
+                  <p className="dec-item-subject">{d.subject ?? '—'}</p>
+                  {isFinancial && (
+                    <div className="dec-item-amounts">
+                      {meaningfulLines.length > 0
+                        ? meaningfulLines.map((line, li) => (
+                            <div className="dec-item-amount-row" key={li}>
+                              {line.amount_eur != null && (
+                                <span className="dec-item-amount">{fmtEur(line.amount_eur)}</span>
+                              )}
+                              {line.kae_ale_number && (
+                                <span className="dec-item-kae">ΚΑΕ {line.kae_ale_number}</span>
+                              )}
+                              {line.counterparty_name && (
+                                <span className="dec-item-beneficiary">{line.counterparty_name}</span>
+                              )}
+                            </div>
+                          ))
+                        : (
+                          <div className="dec-item-amount-row">
+                            {d.amount_eur != null && (
+                              <span className="dec-item-amount">{fmtEur(d.amount_eur)}</span>
+                            )}
+                            {d.contractor_name && (
+                              <span className="dec-item-beneficiary">{d.contractor_name}</span>
+                            )}
+                          </div>
+                        )
+                      }
+                    </div>
+                  )}
+                  <div className="dec-item-footer">
+                    <span className="dec-item-org">
+                      {orgTypeDisplay(d.org_type)} · {d.org_name_clean ?? '—'}
+                    </span>
+                    <span className="dec-item-date">{fmtDate(d.issue_date)}</span>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {rows.length > 5 && (
+            <button type="button" className="dec-more-btn" onClick={() => setExpanded(prev => !prev)}>
+              {expanded ? 'Λιγότερες αποφάσεις' : `+${fmtNum(rows.length - 5)} ακόμα`}
+            </button>
           )}
-        </div>
+        </>
       )}
-    </>
+    </div>
   )
 }
 
@@ -300,10 +501,14 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   const [error, setError]             = useState<string | null>(null)
   const [fireHistory, setFireHistory] = useState<MuniFireYear[]>([])
   const [fireLoading, setFireLoading] = useState(true)
-  const [procurement, setProcurement] = useState<ProcurementDecision[]>([])
-  const [procLineAggByAda, setProcLineAggByAda] = useState<Record<string, ProcurementLineAgg>>({})
+  const [localProcurement, setLocalProcurement] = useState<ProcurementDecision[]>([])
+  const [nationalProcurement, setNationalProcurement] = useState<ProcurementDecision[]>([])
   const [procLoading, setProcLoading] = useState(true)
-  const [openType, setOpenType]       = useState<string | null>(null)
+  const [localFilters, setLocalFilters] = useState<ProcTableFilters>({ year: '2026', orgKey: 'all', decisionType: 'all' })
+  const [nationalFilters, setNationalFilters] = useState<ProcTableFilters>({ year: '2026', orgKey: 'all', decisionType: 'all' })
+  const [municipalDecisionCount2026, setMunicipalDecisionCount2026] = useState<number>(0)
+  const [coverageDecisionCount2026, setCoverageDecisionCount2026] = useState<number>(0)
+  const [decisionLines, setDecisionLines] = useState<Map<string, ProcurementLine[]>>(new Map())
 
   // Fetch municipality info
   useEffect(() => {
@@ -344,32 +549,57 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   // Fetch procurement decisions
   useEffect(() => {
     let cancelled = false
-    setProcurement([]); setProcLineAggByAda({}); setProcLoading(true); setOpenType(null)
+    setLocalProcurement([])
+    setNationalProcurement([])
+    setDecisionLines(new Map())
+    setMunicipalDecisionCount2026(0)
+    setCoverageDecisionCount2026(0)
+    setProcLoading(true)
+    setLocalFilters({ year: '2026', orgKey: 'all', decisionType: 'all' })
+    setNationalFilters({ year: '2026', orgKey: 'all', decisionType: 'all' })
 
-    fetchProcurement(id)
-      .then(async decisions => {
+    Promise.all([
+      fetchProcurement(id),
+      fetchCoverageAuthorities(id),
+      fetchNationalProcurement(),
+    ])
+      .then(async ([directDecisions, coverage, nationalDecisions]) => {
         if (cancelled) return
-        setProcurement(decisions)
 
-        const adas = decisions.map(d => d.ada)
-        if (adas.length === 0) {
-          setProcLineAggByAda({})
-          return
+        let coverageDecisions: ProcurementDecision[] = []
+        if (coverage.length > 0) {
+          try {
+            coverageDecisions = await fetchCoverageProcurement(coverage)
+          } catch {
+            coverageDecisions = []
+          }
+          if (cancelled) return
         }
 
-        try {
-          const lines = await fetchProcurementLines(adas)
-          if (cancelled) return
-          setProcLineAggByAda(aggregateProcurementLines(lines))
-        } catch {
-          if (cancelled) return
-          setProcLineAggByAda({})
-        }
+        setMunicipalDecisionCount2026(
+          countDecisionsForYear(
+            directDecisions.filter(d => (d.authority_level ?? '').toLowerCase() === 'municipality'),
+            2026,
+          ),
+        )
+        setCoverageDecisionCount2026(countDecisionsForYear(coverageDecisions, 2026))
+
+        const localDecisions = sortDecisionsDesc(
+          [...directDecisions, ...coverageDecisions].filter(d => (d.authority_level ?? '').toLowerCase() !== 'national')
+        )
+        setLocalProcurement(localDecisions)
+        setNationalProcurement(sortDecisionsDesc(nationalDecisions))
+
+        // Fetch line-level amounts + counterparties for local decisions
+        const lines = await fetchDecisionLines(localDecisions.map(d => d.ada))
+        if (!cancelled) setDecisionLines(lines)
       })
       .catch(() => {
         if (cancelled) return
-        setProcurement([])
-        setProcLineAggByAda({})
+        setLocalProcurement([])
+        setNationalProcurement([])
+        setMunicipalDecisionCount2026(0)
+        setCoverageDecisionCount2026(0)
       })
       .finally(() => {
         if (cancelled) return
@@ -401,22 +631,15 @@ export function MunicipalityPanel({ id, onBack }: Props) {
       {/* ── Identity ── */}
       <p className="detail-eyebrow">Δημος</p>
       <h1 className="detail-name">{data.name}</h1>
-      <p className="detail-meta">Κωδικός Καλλικράτη: {data.id}</p>
+      <p className="detail-meta">
+        Ο δήμος {data.name} το 2026 {postedDecisionsPhrase(municipalDecisionCount2026, procLoading)} που σχετίζονται
+        με την πυροπροστασία. Σε επίπεδο περιφέρειας ή άλλων φορέων που αφορούν στην περιοχή,{' '}
+        {coveragePostedPhrase(coverageDecisionCount2026, procLoading)}
+      </p>
       {!fireLoading && <FireHeatmap data={fireHistory} />}
 
-      {/* ── Key stats (2×2 grid) ── */}
+      {/* ── Key stats ── */}
       <div className="stats-grid">
-        <div className="stat-cell">
-          <span className="stat-label">Δασικη εκταση</span>
-          <span className="stat-value">
-            {data.forest_ha != null
-              ? data.forest_ha.toLocaleString('el-GR', { maximumFractionDigits: 0 })
-              : '—'}
-            {data.forest_ha != null && <span className="stat-unit">εκτ.</span>}
-          </span>
-          <div className="stat-footnote">1 εκτάριο = 10 στρέμματα</div>
-        </div>
-
         <div className="stat-cell">
           <span className="stat-label">Πληθος πυρκαγιων 2000–2024</span>
           <span className="stat-value">
@@ -448,131 +671,25 @@ export function MunicipalityPanel({ id, onBack }: Props) {
         </div>
       </div>
 
-      {/* ── Αποφάσεις πυροπροστασίας ── */}
-      <div className="section">
-        <div className="section-header">
-          <p className="section-title">
-            Αποφάσεις πυροπροστασιας
-            <span className="proc-year-label" style={{ display: 'inline', marginLeft: 6 }}>
-              {new Date().getFullYear()}
-            </span>
-          </p>
-          <span className="section-badge">Διαύγεια</span>
-        </div>
+      <ProcurementDecisionTableSection
+        title="Αποφάσεις πυροπροστασίας"
+        decisions={localProcurement}
+        loading={procLoading}
+        filters={localFilters}
+        onFiltersChange={setLocalFilters}
+        emptyText="Δεν βρέθηκαν αποφάσεις για τα επιλεγμένα φίλτρα."
+        decisionLines={decisionLines}
+      />
 
-        {procLoading ? (
-          <p className="panel-loading" style={{ padding: '12px 0', textAlign: 'left' }}>Φόρτωση…</p>
-        ) : procurement.length === 0 ? (
-          <p className="cat-empty" style={{ padding: '0 0 8px' }}>
-            Δεν βρέθηκαν αποφάσεις για αυτόν τον δήμο στη Διαύγεια.
-          </p>
-        ) : (() => {
-          const curYear     = new Date().getFullYear()
-          const curDecisions   = procurement.filter(d => d.issue_date?.startsWith(String(curYear)))
-          const olderDecisions = procurement.filter(d => !d.issue_date?.startsWith(String(curYear)))
-          return (
-            <>
-              {curDecisions.length === 0 ? (
-                <p className="cat-empty" style={{ padding: '0 0 8px' }}>
-                  Δεν υπάρχουν αποφάσεις για το {curYear}.
-                </p>
-              ) : (
-                <div className="cat-table">
-                  {(() => {
-                    const assignedADAs = new Set<string>()
-                    const sections = PROC_TYPES.map(t => {
-                      const matches = curDecisions.filter(
-                        d => t.match((d.decision_type ?? '').toUpperCase())
-                      )
-                      matches.forEach(d => assignedADAs.add(d.ada))
-                      return { label: t.label, matches }
-                    })
-                    const leftover = curDecisions.filter(d => !assignedADAs.has(d.ada))
-                    if (leftover.length > 0) {
-                      sections.push({ label: 'Λοιπές αποφάσεις', matches: leftover })
-                    }
-                    return sections
-                      .filter(s => s.matches.length > 0)
-                      .map(s => (
-                        <ProcurementTypeSection
-                          key={s.label}
-                          label={s.label}
-                          decisions={s.matches}
-                          lineAggByAda={procLineAggByAda}
-                          isOpen={openType === s.label}
-                          onToggle={() => setOpenType(prev => prev === s.label ? null : s.label)}
-                        />
-                      ))
-                  })()}
-                </div>
-              )}
-
-              {/* Older decisions — flat table */}
-              {olderDecisions.length > 0 && (
-                <div style={{ marginTop: 20 }}>
-                  <p className="proc-year-label">Παλαιότερες αποφάσεις</p>
-                  <table className="decisions-table">
-                    <thead>
-                      <tr>
-                        <th>Ημ/νία</th>
-                        <th>Τύπος</th>
-                        <th>Θέμα</th>
-                        <th style={{ textAlign: 'right' }}>Ποσό</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {olderDecisions.slice(0, 100).map(d => (
-                        <tr key={d.ada}>
-                          <td className="proc-date">{fmtDate(d.issue_date)}</td>
-                          <td><span className={typeBadgeClass(d.decision_type)}>{typeLabel(d.decision_type)}</span></td>
-                          <td className="proc-subject">
-                            {(d.subject ?? '').slice(0, 80)}{(d.subject?.length ?? 0) > 80 ? '…' : ''}
-                          </td>
-                          <td className="proc-amount">
-                            {decisionDisplayAmount(d, procLineAggByAda) != null
-                              ? fmtEur(decisionDisplayAmount(d, procLineAggByAda))
-                              : '—'}
-                          </td>
-                          <td className="proc-link">
-                            {d.document_url
-                              ? <a href={d.document_url} target="_blank" rel="noreferrer">↗</a>
-                              : '—'}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )}
-
-              <p className="spending-note" style={{ marginTop: 10 }}>
-                Αφορά αποφάσεις του δήμου που δημοσιεύθηκαν στη Διαύγεια.
-                Ενδέχεται να μην καλύπτονται όλες οι σχετικές δαπάνες.
-              </p>
-            </>
-          )
-        })()}
-      </div>
-
-      {/* ── Χρηματοδότηση ΚΑΠ ── */}
-      <div className="section">
-        <div className="section-header">
-          <p className="section-title">Χρηματοδοτηση ΚΑΠ για πυροπροστασια</p>
-        </div>
-        <div className="funding-rows">
-          <div className="funding-row">
-            <span className="funding-year">2026</span>
-            <span className="funding-na">Δεν έχει ανακοινωθεί</span>
-          </div>
-          {[2025, 2024, 2023].map(yr => (
-            <div className="funding-row" key={yr}>
-              <span className="funding-year">{yr}</span>
-              <span className="funding-stub">— Sprint 4</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      <ProcurementDecisionTableSection
+        title="Αποφάσεις σε εθνικό επίπεδο"
+        decisions={nationalProcurement}
+        loading={procLoading}
+        filters={nationalFilters}
+        onFiltersChange={setNationalFilters}
+        emptyText="Δεν βρέθηκαν εθνικού επιπέδου αποφάσεις για τα επιλεγμένα φίλτρα."
+        decisionLines={decisionLines}
+      />
 
     </div>
   )
