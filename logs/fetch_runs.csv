@@ -13,3 +13,4 @@ run_started_at_athens,fetched_records,rows_added,csv_updated,success,error,error
 2026-02-24 00:56:01 +0200,0,0,False,True,False,NONE
 2026-02-24 06:55:47 +0200,0,0,False,True,False,NONE
 2026-02-24 20:10:11 +0200,9,0,False,False,True,TypeError: unhashable type: 'list'
+2026-02-24 20:12:06 +0200,9,9,True,True,False,NONE
