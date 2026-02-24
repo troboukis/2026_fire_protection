@@ -21,6 +21,11 @@ import pandas as pd
 import requests
 from IPython.display import clear_output  # noqa: F401 (safe to remove if not in Jupyter)
 
+try:
+    from .pdf_pipeline import extract_document_code, parse_pdf_file_to_row
+except ImportError:  # script execution fallback: `python src/fetch_diavgeia.py`
+    from pdf_pipeline import extract_document_code, parse_pdf_file_to_row
+
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
@@ -37,6 +42,18 @@ RUN_LOG_FILE = LOG_DIR / "fetch_runs.csv"
 LEGACY_CSV_PATH = REPO_DIR / "2026_diavgeia.csv"
 LEGACY_STATE_FILE = REPO_DIR / "state.json"
 ATHENS_TZ = ZoneInfo("Europe/Athens")
+PDF_DIR = REPO_DIR / "pdf"
+PDF_DOWNLOAD_TIMEOUT = 60
+PDF_EMBED_COLUMNS = [
+    "pdf_file_name",
+    "pdf_download_status",
+    "pdf_download_error",
+    "pdf_parse_status",
+    "pdf_parse_error",
+    "pdf_page_count",
+    "pdf_text",
+    "pdf_text_length",
+]
 
 SEARCH_URL = "https://diavgeia.gov.gr/luminapi/api/search"
 DECISION_VIEW_URL = "https://diavgeia.gov.gr/luminapi/api/decisions/view"
@@ -1530,6 +1547,7 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     new_df = enrich_dataframe(pd.DataFrame(new_records))
+    new_df = enrich_with_pdf_content(new_df)
 
     # API returns dicts/lists for some columns; CSV stores them as strings.
     # Stringify any remaining dict/list values so both sides are comparable.
@@ -1540,6 +1558,7 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     if CSV_PATH.exists():
         existing = pd.read_csv(CSV_PATH)
+        existing = ensure_pdf_embed_columns(existing)
         combined = pd.concat([existing, new_df], ignore_index=True)
     else:
         combined = new_df
@@ -1579,6 +1598,96 @@ def append_to_csv(new_records: list[dict]) -> int:
     combined.to_csv(CSV_PATH, index=False)
     print(f"[csv] Appended {len(new_df)} new rows → {CSV_PATH}")
     return len(new_df)
+
+
+def ensure_pdf_embed_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Ensure PDF embed columns exist so old CSVs concatenate cleanly."""
+    for col in PDF_EMBED_COLUMNS:
+        if col not in df.columns:
+            df[col] = ""
+    return df
+
+
+def _download_pdf_to_path(document_url: str, pdf_path: Path, timeout: int = PDF_DOWNLOAD_TIMEOUT) -> None:
+    """Download a Diavgeia PDF to local storage atomically."""
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = pdf_path.with_suffix(".pdf.part")
+    try:
+        with requests.get(document_url, stream=True, timeout=(10, timeout)) as r:
+            r.raise_for_status()
+            with open(tmp_path, "wb") as f:
+                for chunk in r.iter_content(chunk_size=1024 * 128):
+                    if chunk:
+                        f.write(chunk)
+        tmp_path.replace(pdf_path)
+    finally:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except Exception:
+                pass
+
+
+def enrich_with_pdf_content(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Download/parse PDFs for new rows and embed parsed text into the dataset.
+
+    This runs only for newly fetched rows before merge into the main CSV.
+    """
+    if df.empty:
+        return ensure_pdf_embed_columns(df)
+
+    df = ensure_pdf_embed_columns(df)
+    PDF_DIR.mkdir(parents=True, exist_ok=True)
+
+    total = len(df)
+    for i, idx in enumerate(df.index, start=1):
+        ada = str(df.at[idx, "ada"] if "ada" in df.columns else "").strip()
+        document_url = str(df.at[idx, "documentUrl"] if "documentUrl" in df.columns else "").strip()
+
+        if i == 1 or i % 25 == 0 or i == total:
+            print(f"[pdf][progress] {i}/{total}", flush=True)
+
+        if not document_url or document_url.lower() == "nan":
+            df.at[idx, "pdf_download_status"] = "missing_document_url"
+            df.at[idx, "pdf_parse_status"] = "skipped"
+            continue
+
+        code = extract_document_code(document_url) or ada
+        if not code:
+            df.at[idx, "pdf_download_status"] = "invalid_document_url"
+            df.at[idx, "pdf_download_error"] = "Could not extract document code"
+            df.at[idx, "pdf_parse_status"] = "skipped"
+            continue
+
+        pdf_path = PDF_DIR / f"{code}.pdf"
+        df.at[idx, "pdf_file_name"] = pdf_path.name
+
+        try:
+            if pdf_path.exists():
+                df.at[idx, "pdf_download_status"] = "exists"
+            else:
+                _download_pdf_to_path(document_url, pdf_path)
+                df.at[idx, "pdf_download_status"] = "downloaded"
+        except Exception as exc:
+            df.at[idx, "pdf_download_status"] = "error"
+            df.at[idx, "pdf_download_error"] = f"{type(exc).__name__}: {exc}"
+            df.at[idx, "pdf_parse_status"] = "skipped"
+            continue
+
+        parsed_row, _page_count, parse_err = parse_pdf_file_to_row(str(pdf_path))
+        if parse_err:
+            df.at[idx, "pdf_parse_status"] = "error"
+            df.at[idx, "pdf_parse_error"] = parse_err
+            continue
+
+        pdf_text = str(parsed_row.get("text") or "")
+        df.at[idx, "pdf_parse_status"] = "ok"
+        df.at[idx, "pdf_page_count"] = parsed_row.get("page_count", "")
+        df.at[idx, "pdf_text"] = pdf_text
+        df.at[idx, "pdf_text_length"] = len(pdf_text)
+
+    return df
 
 
 # ---------------------------------------------------------------------------
