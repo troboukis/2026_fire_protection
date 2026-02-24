@@ -1557,9 +1557,19 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     original_len = len(existing) if CSV_PATH.exists() else 0
 
-    # Drop exact duplicate rows. The same ADA can legitimately appear with
-    # different decisionType values (kept), but fully identical rows are dropped.
-    combined = combined.drop_duplicates()
+    # Drop exact duplicate rows. Some enrichment columns can contain Python lists/dicts
+    # after normalization, which are unhashable and break pandas.drop_duplicates().
+    # Build a hashable comparison view for duplicate detection, but keep original values.
+    dedupe_view = combined.copy()
+    for col in dedupe_view.columns:
+        dedupe_view[col] = dedupe_view[col].apply(
+            lambda x: json.dumps(x, ensure_ascii=False, sort_keys=True, default=str)
+            if isinstance(x, (dict, list))
+            else x
+        )
+
+    duplicate_mask = dedupe_view.duplicated()
+    combined = combined.loc[~duplicate_mask].reset_index(drop=True)
 
     added = len(combined) - original_len
     if added <= 0:
