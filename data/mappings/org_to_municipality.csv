@@ -127,7 +127,7 @@ org_type,org_name_clean,doc_count,authority_level,municipality_id,region_id,cove
 ΔΗΜΟΣ,ΗΡΑΚΛΕΙΑΣ,2,municipality,9052,,,0,exact,
 ΔΗΜΟΣ,ΗΡΑΚΛΕΙΟΥ,4,municipality,9170,,,0,exact,
 ΔΗΜΟΣ,ΗΡΑΚΛΕΙΟΥ (ΚΡΗΤΗΣ),5,municipality,9305,,,0,manual,name variant or Kleisthenis→Kallikratis parent
-ΔΗΜΟΣ,ΘΑΣΟΥ,42,municipality,9011,,,0,exact,
+ΔΗΜΟΣ,ΘΑΣΟΥ,43,municipality,9011,,,0,exact,
 ΔΗΜΟΣ,ΘΕΡΜΑΙΚΟΥ,2,municipality,9029,,,0,exact,
 ΔΗΜΟΣ,ΘΕΡΜΗΣ,20,municipality,9030,,,0,exact,
 ΔΗΜΟΣ,ΘΕΡΜΟΥ,1,municipality,9126,,,0,exact,
@@ -335,7 +335,7 @@ org_type,org_name_clean,doc_count,authority_level,municipality_id,region_id,cove
 ΥΠΟΥΡΓΕΙΟ,ΜΕΤΑΝΑΣΤΕΥΣΗΣ ΚΑΙ ΑΣΥΛΟΥ,12,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΟΙΚΟΝΟΜΙΚΩΝ,12,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",15,national,,,,0,exact,
-ΥΠΟΥΡΓΕΙΟ,ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ,2470,national,,,,0,exact,
+ΥΠΟΥΡΓΕΙΟ,ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ,2471,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΠΟΛΙΤΙΣΜΟΥ,32,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΠΡΟΣΤΑΣΙΑΣ ΤΟΥ ΠΟΛΙΤΗ,16,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΤΟΥΡΙΣΜΟΥ,8,national,,,,0,exact,
