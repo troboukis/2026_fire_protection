@@ -17,3 +17,4 @@ run_started_at_athens,fetched_records,rows_added,csv_updated,success,error,error
 2026-02-24 20:16:23 +0200,0,0,False,True,False,NONE
 2026-02-25 06:56:45 +0200,0,0,False,True,False,NONE
 2026-02-25 09:32:49 +0200,1,0,False,False,True,"TypeError: Invalid value '2' for dtype 'str'. Value should be a string or missing value, got 'int' instead."
+2026-02-25 09:34:30 +0200,1,1,True,True,False,NONE
