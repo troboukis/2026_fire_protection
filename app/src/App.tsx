@@ -305,9 +305,9 @@ export default function App() {
   const [fireLoading, setFireLoading]         = useState(true)
   const [fireError, setFireError]             = useState<string | null>(null)
   useEffect(() => {
-    d3.json<GeoData>('/municipalities.geojson').then(data => {
-      if (data) setGeojson(data)
-    })
+    d3.json<GeoData>('/municipalities.geojson')
+      .then(data => { if (data) setGeojson(data) })
+      .catch(err => console.error('[GeoJSON] failed to load:', err))
   }, [])
 
   // Global fire years from aggregate view (25 rows — avoids the broken 84k fetch)
