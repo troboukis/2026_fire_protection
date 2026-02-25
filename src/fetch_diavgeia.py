@@ -1683,9 +1683,9 @@ def enrich_with_pdf_content(df: pd.DataFrame) -> pd.DataFrame:
 
         pdf_text = str(parsed_row.get("text") or "")
         df.at[idx, "pdf_parse_status"] = "ok"
-        df.at[idx, "pdf_page_count"] = parsed_row.get("page_count", "")
+        df.at[idx, "pdf_page_count"] = str(parsed_row.get("page_count", "") or "")
         df.at[idx, "pdf_text"] = pdf_text
-        df.at[idx, "pdf_text_length"] = len(pdf_text)
+        df.at[idx, "pdf_text_length"] = str(len(pdf_text))
 
     return df
 
