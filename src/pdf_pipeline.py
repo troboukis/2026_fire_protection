@@ -251,6 +251,7 @@ def build_pdf_pages_dataset(
     output_csv: Path,
     limit: int | None = None,
     workers: int = 1,
+    append_missing: bool = False,
 ) -> dict[str, int]:
     """
     Build one-row-per-PDF dataset from local PDFs.
@@ -267,11 +268,31 @@ def build_pdf_pages_dataset(
     if limit is not None:
         pdf_files = pdf_files[:limit]
 
+    existing_adas: set[str] = set()
+    if append_missing and output_csv.exists():
+        # Fail loudly if the existing dataset cannot be read; silent fallback would
+        # cause a full re-parse, which defeats incremental mode.
+        existing = pd.read_csv(output_csv, dtype=str)
+        if "ada" not in existing.columns:
+            raise KeyError(f"Column 'ada' not found in existing pages dataset: {output_csv}")
+        existing_adas = {
+            str(v).strip()
+            for v in existing["ada"].tolist()
+            if str(v).strip() and str(v).strip().lower() != "nan"
+        }
+        before = len(pdf_files)
+        pdf_files = [p for p in pdf_files if p.stem not in existing_adas]
+        print(
+            f"[dataset][append-missing] existing_adas={len(existing_adas)} queued={len(pdf_files)} skipped_existing={before - len(pdf_files)}",
+            flush=True,
+        )
+
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     workers = max(1, int(workers))
     print(
         f"[dataset] start pdf_dir={pdf_dir} files={len(pdf_files)} output={output_csv} "
-        f"limit={limit if limit is not None else 'ALL'} workers={workers}",
+        f"limit={limit if limit is not None else 'ALL'} workers={workers} "
+        f"mode={'append-missing' if append_missing else 'rebuild'}",
         flush=True,
     )
 
@@ -279,7 +300,9 @@ def build_pdf_pages_dataset(
     parsed_pages = 0
     parse_errors = 0
 
-    with open(output_csv, "w", newline="", encoding="utf-8") as f:
+    mode = "a" if append_missing else "w"
+    write_header = (not append_missing) or (not output_csv.exists()) or output_csv.stat().st_size == 0
+    with open(output_csv, mode, newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=[
@@ -291,7 +314,8 @@ def build_pdf_pages_dataset(
                 "parse_error",
             ],
         )
-        writer.writeheader()
+        if write_header:
+            writer.writeheader()
 
         if workers == 1:
             for pdf_path in pdf_files:
@@ -368,6 +392,11 @@ def main() -> None:
     parser.add_argument("--download-only", action="store_true", help="Run only missing PDF download step")
     parser.add_argument("--build-only", action="store_true", help="Run only page dataset build step")
     parser.add_argument(
+        "--append-missing",
+        action="store_true",
+        help="Build step: append only PDFs missing from pages dataset (incremental, no full rebuild)",
+    )
+    parser.add_argument(
         "--timeout",
         type=int,
         default=60,
@@ -417,6 +446,7 @@ def main() -> None:
                     output_csv=pages_dataset,
                     limit=args.limit,
                     workers=args.workers,
+                    append_missing=args.append_missing,
                 )
             )
 
