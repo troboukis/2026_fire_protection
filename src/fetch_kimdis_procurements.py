@@ -26,6 +26,7 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_CSV = REPO_DIR / "data" / "raw_procurements.csv"
 DEFAULT_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup.json"
 DEFAULT_LOG_CSV = REPO_DIR / "logs" / "kimdis_fetch_runs.csv"
+DEFAULT_STATE_FILE = REPO_DIR / "state" / "kimdis_state.json"
 
 
 DEFAULT_CPVS: dict[str, str] = {
@@ -56,6 +57,13 @@ DEFAULT_EXCLUDE_KEYWORDS = [
 ]
 
 
+def normalize_cell_value(value):
+    """Normalize nested values to stable strings for CSV + dedupe."""
+    if isinstance(value, (list, dict)):
+        return json.dumps(value, ensure_ascii=False, sort_keys=True)
+    return value
+
+
 def normalize_string(value: str) -> str:
     if not isinstance(value, str):
         return value
@@ -75,8 +83,11 @@ class CollectorConfig:
     backup_json: Path
     log_csv: Path
     from_backup: bool
+    full_refresh: bool
+    state_file: Path
     request_timeout: int
     retry_sleep_seconds: int
+    request_wait_seconds: float
 
 
 class ProcurementCollector:
@@ -92,6 +103,7 @@ class ProcurementCollector:
         exclude_keywords: list[str] | None = None,
         request_timeout: int = 60,
         retry_sleep_seconds: int = 5,
+        request_wait_seconds: float = 1.0,
     ) -> None:
         self.cpvs = list((cpvs or DEFAULT_CPVS).keys())
         self.start_date = start_date
@@ -100,6 +112,7 @@ class ProcurementCollector:
         self.exclude_keywords = exclude_keywords or DEFAULT_EXCLUDE_KEYWORDS
         self.request_timeout = request_timeout
         self.retry_sleep_seconds = retry_sleep_seconds
+        self.request_wait_seconds = request_wait_seconds
         self.items: list[dict[str, Any]] = []
 
     def iter_windows(self):
@@ -113,22 +126,38 @@ class ProcurementCollector:
         print(f"\nWindow: {date_from} -> {date_to}")
         page = 0
         rows: list[dict[str, Any]] = []
-        max_retries = 3
+        max_retries = 8
         retries = 0
 
         while True:
+            # Be polite with the API and reduce rate-limit pressure.
+            time.sleep(self.request_wait_seconds)
             url = f"{self.BASE}?page={page}"
             payload = {
                 "cpvItems": self.cpvs,
                 "dateFrom": date_from.isoformat(),
                 "dateTo": date_to.isoformat(),
             }
-            response = requests.post(
-                url,
-                json=payload,
-                headers=self.HEADERS,
-                timeout=self.request_timeout,
-            )
+            try:
+                response = requests.post(
+                    url,
+                    json=payload,
+                    headers=self.HEADERS,
+                    timeout=self.request_timeout,
+                )
+            except requests.RequestException as exc:
+                retries += 1
+                if retries >= max_retries:
+                    raise RuntimeError(
+                        f"Request failed after {max_retries} retries on page={page}: {exc}"
+                    ) from exc
+                backoff = min(self.retry_sleep_seconds * (2 ** (retries - 1)), 120)
+                print(
+                    f"Request error ({type(exc).__name__}), waiting {backoff}s "
+                    f"(retry {retries}/{max_retries})"
+                )
+                time.sleep(backoff)
+                continue
 
             if response.status_code == 429:
                 retries += 1
@@ -136,11 +165,29 @@ class ProcurementCollector:
                     raise RuntimeError(
                         f"Max retries ({max_retries}) exceeded while fetching page={page}"
                     )
+                retry_after_raw = response.headers.get("Retry-After", "").strip()
+                retry_after = None
+                if retry_after_raw.isdigit():
+                    retry_after = int(retry_after_raw)
+                backoff = min(self.retry_sleep_seconds * (2 ** (retries - 1)), 120)
+                wait_seconds = retry_after if retry_after is not None else backoff
                 print(
-                    f"429 Too Many Requests, waiting {self.retry_sleep_seconds}s "
+                    f"429 Too Many Requests, waiting {wait_seconds}s "
                     f"(retry {retries}/{max_retries})"
                 )
-                time.sleep(self.retry_sleep_seconds)
+                time.sleep(wait_seconds)
+                continue
+
+            if 500 <= response.status_code < 600:
+                retries += 1
+                if retries >= max_retries:
+                    response.raise_for_status()
+                backoff = min(self.retry_sleep_seconds * (2 ** (retries - 1)), 120)
+                print(
+                    f"{response.status_code} server error, waiting {backoff}s "
+                    f"(retry {retries}/{max_retries})"
+                )
+                time.sleep(backoff)
                 continue
 
             retries = 0
@@ -293,6 +340,7 @@ class ProcurementCollector:
         if not self.items:
             return pd.DataFrame()
         rows = [self.parse_item(item) for item in self.items if not self.is_excluded(item)]
+        rows = [{k: normalize_cell_value(v) for k, v in row.items()} for row in rows]
         df = pd.DataFrame(rows)
         if "submissionDate" in df.columns:
             dt = pd.to_datetime(df["submissionDate"], errors="coerce")
@@ -311,6 +359,8 @@ def append_run_log(
     from_backup: bool,
     success: bool,
     error_message: str,
+    state_file: Path,
+    full_refresh: bool,
 ) -> None:
     log_csv.parent.mkdir(parents=True, exist_ok=True)
     write_header = not log_csv.exists()
@@ -320,6 +370,8 @@ def append_run_log(
         "output_rows",
         "output_csv",
         "from_backup",
+        "full_refresh",
+        "state_file",
         "success",
         "error",
         "error_message",
@@ -330,6 +382,8 @@ def append_run_log(
         "output_rows": output_rows,
         "output_csv": str(output_csv),
         "from_backup": from_backup,
+        "full_refresh": full_refresh,
+        "state_file": str(state_file),
         "success": success,
         "error": not success,
         "error_message": error_message,
@@ -341,6 +395,73 @@ def append_run_log(
         writer.writerow(row)
 
 
+def load_last_fetch_from_state(state_file: Path) -> datetime | None:
+    if not state_file.exists():
+        return None
+    data = json.loads(state_file.read_text(encoding="utf-8"))
+    raw = str(data.get("last_fetch") or "").strip()
+    if not raw:
+        return None
+    try:
+        return datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def derive_last_fetch_from_csv(output_csv: Path) -> datetime | None:
+    if not output_csv.exists():
+        return None
+    try:
+        df = pd.read_csv(output_csv, usecols=["submissionDate"], dtype=str)
+    except Exception:
+        return None
+    dt = pd.to_datetime(df["submissionDate"], errors="coerce", utc=True)
+    if dt.isna().all():
+        return None
+    return dt.max().to_pydatetime()
+
+
+def save_last_fetch_to_state(state_file: Path, last_fetch: datetime) -> None:
+    state_file.parent.mkdir(parents=True, exist_ok=True)
+    state_file.write_text(
+        json.dumps({"last_fetch": last_fetch.isoformat()}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def merge_with_existing_csv(output_csv: Path, new_df: pd.DataFrame) -> pd.DataFrame:
+    if not output_csv.exists():
+        return new_df
+    existing_df = pd.read_csv(output_csv, dtype=str, keep_default_na=False, na_values=[""])
+    merged = pd.concat([existing_df, new_df], ignore_index=True)
+    dedupe_df = merged.copy()
+    for col in dedupe_df.columns:
+        dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
+    merged = merged.loc[~dedupe_df.duplicated()].reset_index(drop=True)
+    if "submissionDate" in merged.columns:
+        dt = pd.to_datetime(merged["submissionDate"], errors="coerce")
+        merged = merged.assign(submissionDate=dt).sort_values("submissionDate").reset_index(drop=True)
+        merged["submissionDate"] = (
+            merged["submissionDate"]
+            .dt.strftime("%Y-%m-%dT%H:%M:%S.%f")
+            .str.rstrip("0")
+            .str.rstrip(".")
+        )
+    return merged
+
+
+def merge_raw_items(existing_items: list[dict[str, Any]], new_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged = []
+    seen: set[str] = set()
+    for item in [*existing_items, *new_items]:
+        key = json.dumps(item, ensure_ascii=False, sort_keys=True)
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+    return merged
+
+
 def parse_args() -> CollectorConfig:
     parser = argparse.ArgumentParser(description="Fetch KIMDIS procurement contracts into raw_procurements.csv")
     parser.add_argument("--start-date", default="2024-01-01", help="Fetch start date (YYYY-MM-DD)")
@@ -349,9 +470,21 @@ def parse_args() -> CollectorConfig:
     parser.add_argument("--output-csv", default=str(DEFAULT_OUTPUT_CSV), help="Output CSV path")
     parser.add_argument("--backup-json", default=str(DEFAULT_BACKUP_JSON), help="Raw API backup JSON path")
     parser.add_argument("--log-csv", default=str(DEFAULT_LOG_CSV), help="Run log CSV path")
+    parser.add_argument("--state-file", default=str(DEFAULT_STATE_FILE), help="Incremental state file path")
     parser.add_argument("--from-backup", action="store_true", help="Skip API and rebuild CSV from backup JSON")
+    parser.add_argument(
+        "--full-refresh",
+        action="store_true",
+        help="Ignore incremental state and fetch from --start-date to --end-date",
+    )
     parser.add_argument("--request-timeout", type=int, default=60, help="HTTP request timeout in seconds")
     parser.add_argument("--retry-sleep-seconds", type=int, default=5, help="Wait before retry after 429")
+    parser.add_argument(
+        "--request-wait-seconds",
+        type=float,
+        default=1.0,
+        help="Wait between API requests (seconds)",
+    )
 
     args = parser.parse_args()
 
@@ -374,22 +507,16 @@ def parse_args() -> CollectorConfig:
         backup_json=Path(args.backup_json).resolve(),
         log_csv=Path(args.log_csv).resolve(),
         from_backup=args.from_backup,
+        full_refresh=args.full_refresh,
+        state_file=Path(args.state_file).resolve(),
         request_timeout=args.request_timeout,
         retry_sleep_seconds=args.retry_sleep_seconds,
+        request_wait_seconds=args.request_wait_seconds,
     )
 
 
 def main() -> None:
     cfg = parse_args()
-    collector = ProcurementCollector(
-        cpvs=DEFAULT_CPVS,
-        start_date=cfg.start_date,
-        end_date=cfg.end_date,
-        max_window_days=cfg.max_window_days,
-        exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
-        request_timeout=cfg.request_timeout,
-        retry_sleep_seconds=cfg.retry_sleep_seconds,
-    )
 
     fetched_records = 0
     output_rows = 0
@@ -397,17 +524,71 @@ def main() -> None:
 
     try:
         if cfg.from_backup:
+            collector = ProcurementCollector(
+                cpvs=DEFAULT_CPVS,
+                start_date=cfg.start_date,
+                end_date=cfg.end_date,
+                max_window_days=cfg.max_window_days,
+                exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
+                request_timeout=cfg.request_timeout,
+                retry_sleep_seconds=cfg.retry_sleep_seconds,
+                request_wait_seconds=cfg.request_wait_seconds,
+            )
             collector.load_from_backup(cfg.backup_json)
         else:
+            existing_backup_items: list[dict[str, Any]] = []
+            if cfg.full_refresh:
+                last_fetch = None
+            else:
+                last_fetch = load_last_fetch_from_state(cfg.state_file)
+                if last_fetch is None:
+                    last_fetch = derive_last_fetch_from_csv(cfg.output_csv)
+                if cfg.backup_json.exists():
+                    try:
+                        existing_backup_items = json.loads(cfg.backup_json.read_text(encoding="utf-8"))
+                    except Exception:
+                        existing_backup_items = []
+
+            effective_start = cfg.start_date
+            if last_fetch is not None and last_fetch.date() > effective_start:
+                effective_start = last_fetch.date()
+
+            collector = ProcurementCollector(
+                cpvs=DEFAULT_CPVS,
+                start_date=effective_start,
+                end_date=cfg.end_date,
+                max_window_days=cfg.max_window_days,
+                exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
+                request_timeout=cfg.request_timeout,
+                retry_sleep_seconds=cfg.retry_sleep_seconds,
+                request_wait_seconds=cfg.request_wait_seconds,
+            )
             collector.fetch_all(cfg.backup_json)
+            if not cfg.full_refresh:
+                collector.items = merge_raw_items(existing_backup_items, collector.items)
+                cfg.backup_json.write_text(
+                    json.dumps(collector.items, ensure_ascii=False),
+                    encoding="utf-8",
+                )
 
         fetched_records = len(collector.items)
-        df = collector.build_dataset()
-        output_rows = len(df)
+        new_df = collector.build_dataset()
+
+        if cfg.from_backup or cfg.full_refresh:
+            output_df = new_df
+        else:
+            output_df = merge_with_existing_csv(cfg.output_csv, new_df)
+
+        output_rows = len(output_df)
 
         cfg.output_csv.parent.mkdir(parents=True, exist_ok=True)
-        df.to_csv(cfg.output_csv, index=False)
+        output_df.to_csv(cfg.output_csv, index=False)
         print(f"Saved {output_rows} rows -> {cfg.output_csv}")
+
+        if not cfg.from_backup and "submissionDate" in output_df.columns and not output_df.empty:
+            dt = pd.to_datetime(output_df["submissionDate"], errors="coerce", utc=True).dropna()
+            if not dt.empty:
+                save_last_fetch_to_state(cfg.state_file, dt.max().to_pydatetime())
 
         append_run_log(
             cfg.log_csv,
@@ -415,6 +596,8 @@ def main() -> None:
             output_rows=output_rows,
             output_csv=cfg.output_csv,
             from_backup=cfg.from_backup,
+            full_refresh=cfg.full_refresh,
+            state_file=cfg.state_file,
             success=True,
             error_message=error_message,
         )
@@ -426,6 +609,8 @@ def main() -> None:
             output_rows=output_rows,
             output_csv=cfg.output_csv,
             from_backup=cfg.from_backup,
+            full_refresh=cfg.full_refresh,
+            state_file=cfg.state_file,
             success=False,
             error_message=error_message,
         )

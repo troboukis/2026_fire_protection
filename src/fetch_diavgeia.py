@@ -9,6 +9,7 @@ Run this script periodically to keep the dataset up to date.
 """
 
 import json
+import os
 import re
 import ast
 import unicodedata
@@ -1547,7 +1548,15 @@ def append_to_csv(new_records: list[dict]) -> int:
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     new_df = enrich_dataframe(pd.DataFrame(new_records))
-    new_df = enrich_with_pdf_content(new_df)
+    if should_download_pdfs():
+        print("[pdf] DOWNLOAD_DIAVGEIA_PDFS=1 -> download + parse enabled")
+        new_df = enrich_with_pdf_content(new_df)
+    else:
+        print("[pdf] DOWNLOAD_DIAVGEIA_PDFS!=1 -> download + parse skipped")
+        new_df = ensure_pdf_embed_columns(new_df)
+        if not new_df.empty:
+            new_df["pdf_download_status"] = "skipped_disabled"
+            new_df["pdf_parse_status"] = "skipped_disabled"
 
     # API returns dicts/lists for some columns; CSV stores them as strings.
     # Stringify any remaining dict/list values so both sides are comparable.
@@ -1688,6 +1697,11 @@ def enrich_with_pdf_content(df: pd.DataFrame) -> pd.DataFrame:
         df.at[idx, "pdf_text_length"] = str(len(pdf_text))
 
     return df
+
+
+def should_download_pdfs() -> bool:
+    raw = str(os.getenv("DOWNLOAD_DIAVGEIA_PDFS", "0")).strip().lower()
+    return raw in {"1", "true", "yes", "y", "on"}
 
 
 # ---------------------------------------------------------------------------

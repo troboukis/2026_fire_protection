@@ -36,9 +36,22 @@ One-command local fetch + git sync:
 Script behavior:
 - auto-commits any existing local changes first
 - pulls latest `origin/main` with rebase
-- runs `fetch_diavgeia.py`
+- runs `fetch_diavgeia.py` (PDF download is disabled by default)
 - commits changed artifacts (`data/`, `state/`, `logs/`)
 - pushes to `origin/main`
+
+Useful flags for `run_fetch_and_sync.sh`:
+- `DOWNLOAD_DIAVGEIA_PDFS=1`: enable Diavgeia PDF download + parse during fetch step
+- `RUN_DB_INGEST=1`: run DB ingestion scripts (including `ingest_raw_procurements.py`)
+
+Examples:
+
+```bash
+./scripts/run_fetch_and_sync.sh
+DOWNLOAD_DIAVGEIA_PDFS=1 ./scripts/run_fetch_and_sync.sh
+RUN_DB_INGEST=1 ./scripts/run_fetch_and_sync.sh
+DOWNLOAD_DIAVGEIA_PDFS=1 RUN_DB_INGEST=1 ./scripts/run_fetch_and_sync.sh
+```
 
 ## Local PDF pipeline
 
@@ -192,7 +205,7 @@ Every run appends one row to `logs/pdf_pipeline_runs.csv`, including:
 
 This is a **separate local-only post-processing step** that runs **after**:
 
-1. `fetch_diavgeia.py` (raw records + decision-type enrichments)
+1. `fetch_diavgeia.py` (raw records + decision-type enrichments, optional PDF embed)
 2. `pdf_pipeline.py` (download + parse PDFs)
 
 It checks whether each record is relevant to forest-fire prevention/suppression using:
@@ -416,6 +429,9 @@ This section documents exactly how `src/fetch_diavgeia.py` handles data from Dia
 ### 2) Data enrichment pipeline
 
 Each fetched batch is converted into a dataframe and enriched before save.
+PDF download/parse during fetch is controlled by `DOWNLOAD_DIAVGEIA_PDFS`:
+- default (`0`): skip PDF download/parse in `fetch_diavgeia.py`
+- set to `1`: download/parse PDFs and embed text/status columns in fetched rows
 
 Main enrichments:
 - `org`: extracted from `organization.label`
@@ -650,7 +666,8 @@ Helper columns:
 
 #### Enrichment execution behavior
 
-- Enrichment runs automatically during `fetch_diavgeia.py` for new rows.
+- Decision-type enrichment runs automatically during `fetch_diavgeia.py` for new rows.
+- PDF enrichment in `fetch_diavgeia.py` runs only when `DOWNLOAD_DIAVGEIA_PDFS=1`.
 - Existing CSV rows can be backfilled from a notebook via:
   - `fetch_diavgeia.backfill_spending_approval_columns(...)`
 - Root-level `fetch_diavgeia.py` is a thin wrapper (exports `main` only). For backfill helpers, import from `src/` with `insert(0, ...)` so the root wrapper is not imported first:
@@ -676,10 +693,43 @@ Run raw collection manually:
 python fetch_kimdis_procurements.py
 ```
 
+Incremental behavior (Diavgeia-style):
+- uses `state/kimdis_state.json` with `last_fetch`
+- if state is missing, derives last fetch from max `submissionDate` in `data/raw_procurements.csv`
+- fetches from the effective start date forward and then merges with existing CSV using dedupe
+- use `--full-refresh` to ignore state and refetch the whole window
+- CSV merge dedupe strategy is full-row dedupe after normalizing list/dict values to stable JSON strings
+
 Rebuild CSV from existing backup only (no API call):
 
 ```bash
 python fetch_kimdis_procurements.py --from-backup
+```
+
+Force a full refetch:
+
+```bash
+python fetch_kimdis_procurements.py --full-refresh --start-date 2024-01-01
+```
+
+KIMDIS fetch flags:
+- `--request-wait-seconds <float>`: wait between API requests (default `1.0`)
+- `--retry-sleep-seconds <int>`: base retry sleep in seconds for backoff (default `5`)
+- `--request-timeout <int>`: HTTP timeout per request in seconds (default `60`)
+- `--max-window-days <int>`: date span per API window (default `180`)
+- `--state-file <path>`: incremental state file path (default `state/kimdis_state.json`)
+- `--backup-json <path>`: raw API backup JSON path
+- `--output-csv <path>`: output CSV path
+- `--log-csv <path>`: run log CSV path
+
+Examples:
+
+```bash
+# Full refresh with default 1s per-request wait
+python fetch_kimdis_procurements.py --full-refresh --start-date 2024-01-01
+
+# Slower request pace + longer timeout
+python fetch_kimdis_procurements.py --full-refresh --start-date 2024-01-01 --request-wait-seconds 2 --request-timeout 120
 ```
 
 Ingest raw CSV into Supabase:
