@@ -15,6 +15,8 @@ if [[ ! -x ".fireprotection/bin/python" ]]; then
   exit 1
 fi
 
+DOWNLOAD_DIAVGEIA_PDFS="${DOWNLOAD_DIAVGEIA_PDFS:-0}"
+
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "[0/10] Working tree has local changes. Auto-committing them first..."
   git add -A
@@ -24,8 +26,12 @@ fi
 echo "[1/10] Pull latest changes (rebase)..."
 git pull --rebase origin main
 
-echo "[2/10] Run Diavgeia fetch script..."
-./.fireprotection/bin/python fetch_diavgeia.py
+if [[ "$DOWNLOAD_DIAVGEIA_PDFS" == "1" ]]; then
+  echo "[2/10] Run Diavgeia fetch script (PDF download enabled)..."
+else
+  echo "[2/10] Run Diavgeia fetch script (PDF download disabled; set DOWNLOAD_DIAVGEIA_PDFS=1 to enable)..."
+fi
+DOWNLOAD_DIAVGEIA_PDFS="$DOWNLOAD_DIAVGEIA_PDFS" ./.fireprotection/bin/python fetch_diavgeia.py
 
 echo "[3/10] Rebuild Diavgeia filtered dataset..."
 ./.fireprotection/bin/python src/filter_relevance.py
