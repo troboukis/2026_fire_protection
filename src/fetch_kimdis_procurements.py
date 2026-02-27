@@ -25,6 +25,7 @@ import requests
 REPO_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_CSV = REPO_DIR / "data" / "raw_procurements.csv"
 DEFAULT_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup.json"
+DEFAULT_SECONDARY_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup_secondary.json"
 DEFAULT_LOG_CSV = REPO_DIR / "logs" / "kimdis_fetch_runs.csv"
 DEFAULT_STATE_FILE = REPO_DIR / "state" / "kimdis_state.json"
 
@@ -43,6 +44,7 @@ DEFAULT_CPVS: dict[str, str] = {
     "34144212-7": "Υδροφόρες πυροσβεστικών οχημάτων",
     "35111000-5": "Πυροσβεστικός εξοπλισμός",
     "35111200-7": "Υλικά πυρόσβεσης",
+    "44480000-8": "Ποικίλος εξοπλισμός πυροπροστασίας"
 }
 
 DEFAULT_EXCLUDE_KEYWORDS = [
@@ -55,6 +57,16 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "Αναγομ",
     "αναγόμ",
 ]
+
+# Broad CPVs that overlap with non-fire-protection domains.
+# Only contracts whose title contains at least one SECONDARY_TITLE_KEYWORDS
+# substring are kept from this secondary API pass.
+SECONDARY_CPVS: dict[str, str] = {
+    "45233141-9": "Συντήρηση οδών",
+    "45240000-1": "Κατασκευαστικές εργασίες για υδατικά έργα",
+    "45232152-2": "Έργα αντιπλημμυρικής / αποχετευτικής υποδομής",
+}
+SECONDARY_TITLE_KEYWORDS = ["πυροπροστασ"]
 
 
 def normalize_cell_value(value):
@@ -101,6 +113,7 @@ class ProcurementCollector:
         end_date: date,
         max_window_days: int,
         exclude_keywords: list[str] | None = None,
+        title_include_keywords: list[str] | None = None,
         request_timeout: int = 60,
         retry_sleep_seconds: int = 5,
         request_wait_seconds: float = 1.0,
@@ -110,6 +123,7 @@ class ProcurementCollector:
         self.end_date = end_date
         self.max_window_days = max_window_days
         self.exclude_keywords = exclude_keywords or DEFAULT_EXCLUDE_KEYWORDS
+        self.title_include_keywords = title_include_keywords
         self.request_timeout = request_timeout
         self.retry_sleep_seconds = retry_sleep_seconds
         self.request_wait_seconds = request_wait_seconds
@@ -233,11 +247,20 @@ class ProcurementCollector:
         )
         normalized_keywords = [normalize_string(k) for k in self.exclude_keywords]
 
-        return (
+        if (
             bool(item.get("cancelled"))
             or any(k in org_value for k in normalized_keywords)
             or any(k in short_descriptions for k in normalized_keywords)
-        )
+        ):
+            return True
+
+        if self.title_include_keywords:
+            normalized_title = normalize_string(item.get("title", "") or "")
+            normalized_include = [normalize_string(k) for k in self.title_include_keywords]
+            if not any(k in normalized_title for k in normalized_include):
+                return True
+
+        return False
 
     def parse_item(self, item: dict[str, Any]) -> dict[str, Any]:
         ada = item.get("contractRelatedADA") or {}
@@ -523,6 +546,8 @@ def main() -> None:
     error_message = "NONE"
 
     try:
+        effective_start = cfg.start_date
+
         if cfg.from_backup:
             collector = ProcurementCollector(
                 cpvs=DEFAULT_CPVS,
@@ -549,7 +574,6 @@ def main() -> None:
                     except Exception:
                         existing_backup_items = []
 
-            effective_start = cfg.start_date
             if last_fetch is not None and last_fetch.date() > effective_start:
                 effective_start = last_fetch.date()
 
@@ -571,8 +595,52 @@ def main() -> None:
                     encoding="utf-8",
                 )
 
-        fetched_records = len(collector.items)
-        new_df = collector.build_dataset()
+        # Secondary pass: broad CPVs filtered by title keyword (e.g. "πυροπροστασ").
+        # This catches municipalities that use generic infrastructure CPVs for fire-protection work.
+        secondary_collector = ProcurementCollector(
+            cpvs=SECONDARY_CPVS,
+            start_date=effective_start,
+            end_date=cfg.end_date,
+            max_window_days=cfg.max_window_days,
+            exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
+            title_include_keywords=SECONDARY_TITLE_KEYWORDS,
+            request_timeout=cfg.request_timeout,
+            retry_sleep_seconds=cfg.retry_sleep_seconds,
+            request_wait_seconds=cfg.request_wait_seconds,
+        )
+        if cfg.from_backup:
+            if DEFAULT_SECONDARY_BACKUP_JSON.exists():
+                secondary_collector.load_from_backup(DEFAULT_SECONDARY_BACKUP_JSON)
+        else:
+            existing_secondary_items: list[dict[str, Any]] = []
+            if not cfg.full_refresh and DEFAULT_SECONDARY_BACKUP_JSON.exists():
+                try:
+                    existing_secondary_items = json.loads(
+                        DEFAULT_SECONDARY_BACKUP_JSON.read_text(encoding="utf-8")
+                    )
+                except Exception:
+                    pass
+            print("\n--- Secondary pass (broad CPVs + title filter) ---")
+            secondary_collector.fetch_all(DEFAULT_SECONDARY_BACKUP_JSON)
+            if not cfg.full_refresh:
+                secondary_collector.items = merge_raw_items(existing_secondary_items, secondary_collector.items)
+                DEFAULT_SECONDARY_BACKUP_JSON.write_text(
+                    json.dumps(secondary_collector.items, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+
+        fetched_records = len(collector.items) + len(secondary_collector.items)
+
+        primary_df = collector.build_dataset()
+        secondary_df = secondary_collector.build_dataset()
+        print(f"Secondary rows after title filter: {len(secondary_df)}")
+
+        new_df = pd.concat([primary_df, secondary_df], ignore_index=True)
+        if not new_df.empty:
+            dedupe_df = new_df.copy()
+            for col in dedupe_df.columns:
+                dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
+            new_df = new_df.loc[~dedupe_df.duplicated()].reset_index(drop=True)
 
         if cfg.from_backup or cfg.full_refresh:
             output_df = new_df

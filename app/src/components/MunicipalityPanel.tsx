@@ -46,24 +46,10 @@ interface ProcurementDecision {
   contractor_name: string | null
 }
 
-interface ProcurementLine {
-  line_type: string
-  counterparty_name: string | null
-  amount_eur: number | null
-  kae_ale_number: string | null
-}
-
-interface CoverageAuthority {
-  org_type: string
-  org_name_clean: string
-  authority_level: string | null
-  coverage_method: string | null
-}
-
 /* ── Mappers ──────────────────────────────────────────────────── */
-function mapProcurementRow(r: Record<string, unknown>): ProcurementDecision {
+function mapMunicipalRawRow(r: Record<string, unknown>): ProcurementDecision {
   return {
-    ada:             String(r.ada ?? ''),
+    ada:             String(r.procurement_id ?? ''),
     org_type:        cleanStr(r.org_type),
     issue_date:      cleanStr(r.issue_date),
     subject:         cleanStr(r.subject),
@@ -71,113 +57,52 @@ function mapProcurementRow(r: Record<string, unknown>): ProcurementDecision {
     amount_eur:      r.amount_eur != null ? (isNaN(Number(r.amount_eur)) ? null : Number(r.amount_eur)) : null,
     document_url:    cleanStr(r.document_url),
     authority_level: cleanStr(r.authority_level),
-    org_name_clean:  cleanStr(r.org_name_clean),
+    org_name_clean:  cleanStr(r.org_name_clean) ?? cleanStr(r.organization_value),
     contractor_name: cleanStr(r.contractor_name),
+  }
+}
+
+function mapNationalRawRow(r: Record<string, unknown>): ProcurementDecision {
+  const diavgeiaAda = cleanStr(r.diavgeia_ada)
+  return {
+    ada:             diavgeiaAda ?? String(r.reference_number ?? r.id ?? ''),
+    org_type:        null,
+    issue_date:      cleanStr(r.submission_at),
+    subject:         cleanStr(r.title),
+    decision_type:   cleanStr(r.procedure_type_value),
+    amount_eur:      r.total_cost_without_vat != null
+      ? (isNaN(Number(r.total_cost_without_vat)) ? null : Number(r.total_cost_without_vat))
+      : r.total_cost_with_vat != null
+        ? (isNaN(Number(r.total_cost_with_vat)) ? null : Number(r.total_cost_with_vat))
+        : null,
+    document_url:    diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+    authority_level: 'national',
+    org_name_clean:  cleanStr(r.organization_value),
+    contractor_name: cleanStr(r.first_member_name),
   }
 }
 
 /* ── Fetchers ─────────────────────────────────────────────────── */
 async function fetchProcurement(municipalityId: string): Promise<ProcurementDecision[]> {
   const { data, error } = await supabase
-    .from('procurement_decisions')
-    .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
+    .from('v_raw_procurements_municipality')
+    .select('procurement_id, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, organization_value, contractor_name')
     .eq('municipality_id', municipalityId)
     .order('issue_date', { ascending: false })
-    .limit(500)
+    .limit(1000)
   if (error) throw error
-  return (data ?? [])
-    .filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)
-    .map(r => mapProcurementRow(r as Record<string, unknown>))
-}
-
-async function fetchCoverageAuthorities(municipalityId: string): Promise<CoverageAuthority[]> {
-  const { data, error } = await supabase
-    .from('org_municipality_coverage')
-    .select('org_type, org_name_clean, authority_level, coverage_method')
-    .eq('municipality_id', municipalityId)
-    .in('authority_level', ['region', 'decentralized'])
-  if (error) return []
-  const out = new Map<string, CoverageAuthority>()
-  for (const row of data ?? []) {
-    const orgType = String(row.org_type ?? '').trim()
-    const orgName = String(row.org_name_clean ?? '').trim()
-    if (!orgType || !orgName) continue
-    const key = `${orgType}||${orgName}`
-    if (!out.has(key)) {
-      out.set(key, {
-        org_type: orgType,
-        org_name_clean: orgName,
-        authority_level: row.authority_level != null ? String(row.authority_level) : null,
-        coverage_method: row.coverage_method != null ? String(row.coverage_method) : null,
-      })
-    }
-  }
-  return [...out.values()]
-}
-
-async function fetchCoverageProcurement(authorities: CoverageAuthority[]): Promise<ProcurementDecision[]> {
-  if (authorities.length === 0) return []
-  const allowed = new Set(authorities.map(a => `${a.org_type}||${a.org_name_clean}`))
-  const names = [...new Set(authorities.map(a => a.org_name_clean))]
-  const chunkSize = 100
-  const all: ProcurementDecision[] = []
-  for (let i = 0; i < names.length; i += chunkSize) {
-    const chunk = names.slice(i, i + chunkSize)
-    const { data, error } = await supabase
-      .from('procurement_decisions')
-      .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
-      .in('org_name_clean', chunk)
-      .in('authority_level', ['region', 'decentralized'])
-      .order('issue_date', { ascending: false })
-      .limit(1000)
-    if (error) throw error
-    for (const row of (data ?? []).filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)) {
-      const mapped = mapProcurementRow(row as Record<string, unknown>)
-      const key = `${mapped.org_type ?? ''}||${mapped.org_name_clean ?? ''}`
-      if (allowed.has(key)) all.push(mapped)
-    }
-  }
-  return all
-}
-
-async function fetchDecisionLines(adas: string[]): Promise<Map<string, ProcurementLine[]>> {
-  if (adas.length === 0) return new Map()
-  const CHUNK = 200
-  const map = new Map<string, ProcurementLine[]>()
-  for (let i = 0; i < adas.length; i += CHUNK) {
-    const chunk = adas.slice(i, i + CHUNK)
-    const { data, error } = await supabase
-      .from('procurement_decision_lines')
-      .select('ada, line_type, counterparty_name, amount_eur, kae_ale_number')
-      .in('ada', chunk)
-      .order('line_index', { ascending: true })
-    if (error) continue
-    for (const r of data ?? []) {
-      const ada = String(r.ada ?? '')
-      if (!ada) continue
-      if (!map.has(ada)) map.set(ada, [])
-      map.get(ada)!.push({
-        line_type:         String(r.line_type ?? ''),
-        counterparty_name: cleanStr(r.counterparty_name),
-        amount_eur:        r.amount_eur != null ? (isNaN(Number(r.amount_eur)) ? null : Number(r.amount_eur)) : null,
-        kae_ale_number:    cleanStr(r.kae_ale_number),
-      })
-    }
-  }
-  return map
+  return (data ?? []).map(r => mapMunicipalRawRow(r as Record<string, unknown>))
 }
 
 async function fetchNationalProcurement(): Promise<ProcurementDecision[]> {
   const { data, error } = await supabase
-    .from('procurement_decisions')
-    .select('ada, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, contractor_name, subject_has_anatrop_or_anaklis')
-    .eq('authority_level', 'national')
-    .order('issue_date', { ascending: false })
-    .limit(3000)
+    .from('raw_procurements')
+    .select('id, reference_number, diavgeia_ada, submission_at, title, procedure_type_value, total_cost_with_vat, total_cost_without_vat, organization_value, first_member_name')
+    .ilike('organization_value', 'ΥΠΟΥΡΓΕΙΟ%')
+    .order('submission_at', { ascending: false })
+    .limit(500)
   if (error) throw error
-  return (data ?? [])
-    .filter(r => (r.subject_has_anatrop_or_anaklis as boolean | null | undefined) !== true)
-    .map(r => mapProcurementRow(r as Record<string, unknown>))
+  return (data ?? []).map(r => mapNationalRawRow(r as Record<string, unknown>))
 }
 
 /* ── Helpers ──────────────────────────────────────────────────── */
@@ -207,7 +132,6 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   const [procLoading, setProcLoading] = useState(true)
   const [municipalDecisionCount2026, setMunicipalDecisionCount2026] = useState(0)
   const [coverageDecisionCount2026, setCoverageDecisionCount2026]   = useState(0)
-  const [decisionLines, setDecisionLines] = useState<Map<string, ProcurementLine[]>>(new Map())
 
   useEffect(() => {
     setLoading(true); setError(null); setData(null)
@@ -247,37 +171,33 @@ export function MunicipalityPanel({ id, onBack }: Props) {
     let cancelled = false
     setLocalProcurement([])
     setNationalProcurement([])
-    setDecisionLines(new Map())
     setMunicipalDecisionCount2026(0)
     setCoverageDecisionCount2026(0)
     setProcLoading(true)
 
     Promise.all([
       fetchProcurement(id),
-      fetchCoverageAuthorities(id),
       fetchNationalProcurement(),
     ])
-      .then(async ([directDecisions, coverage, nationalDecisions]) => {
+      .then(([localDecisions, nationalDecisions]) => {
         if (cancelled) return
-        let coverageDecisions: ProcurementDecision[] = []
-        if (coverage.length > 0) {
-          try { coverageDecisions = await fetchCoverageProcurement(coverage) } catch { coverageDecisions = [] }
-          if (cancelled) return
-        }
         setMunicipalDecisionCount2026(
           countDecisionsForYear(
-            directDecisions.filter(d => (d.authority_level ?? '').toLowerCase() === 'municipality'),
+            localDecisions.filter(d => (d.authority_level ?? '').toLowerCase() === 'municipality'),
             2026,
           )
         )
-        setCoverageDecisionCount2026(countDecisionsForYear(coverageDecisions, 2026))
-        const localDecisions = sortDecisionsDesc(
-          [...directDecisions, ...coverageDecisions].filter(d => (d.authority_level ?? '').toLowerCase() !== 'national')
+        setCoverageDecisionCount2026(
+          countDecisionsForYear(
+            localDecisions.filter(d => {
+              const level = (d.authority_level ?? '').toLowerCase()
+              return level === 'region' || level === 'decentralized'
+            }),
+            2026,
+          )
         )
-        setLocalProcurement(localDecisions)
+        setLocalProcurement(sortDecisionsDesc(localDecisions))
         setNationalProcurement(sortDecisionsDesc(nationalDecisions))
-        const lines = await fetchDecisionLines(localDecisions.map(d => d.ada))
-        if (!cancelled) setDecisionLines(lines)
       })
       .catch(() => {
         if (cancelled) return
@@ -322,15 +242,11 @@ export function MunicipalityPanel({ id, onBack }: Props) {
         <div>
           <h2>Τοπικές αποφάσεις ({localProcurement.length})</h2>
           {localProcurement.slice(0, 10).map((d, i) => {
-            const lines = decisionLines.get(d.ada) ?? []
             return (
               <div key={`${d.ada}-${i}`}>
                 <p>
                   <strong>{d.subject ?? '—'}</strong>
                   {d.amount_eur != null && <> · {fmtEur(d.amount_eur)}</>}
-                  {lines.filter(l => l.amount_eur != null).map((l, li) => (
-                    <span key={li}> · {fmtEur(l.amount_eur)}</span>
-                  ))}
                 </p>
                 <p>
                   {d.org_name_clean ?? '—'} · {fmtDate(d.issue_date)}

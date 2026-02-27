@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import * as d3 from 'd3'
 import { HEATMAP_CELLS, ALL_ORGS, TOP10_ORGS, TOP10_BY_TOTAL, DIMOS_ORGS, OTHER_ORGS } from '../data/heatmapData'
+import { supabase } from '../lib/supabase'
 
 // ── Τύποι ────────────────────────────────────────────────────────────
 type BarItem = {
@@ -277,8 +278,11 @@ function Heatmap({ selectedOrgs, metric }: { selectedOrgs: string[]; metric: Bar
     // Διαστάσεις
     const LABEL_W = Math.min(200, containerW * 0.22)
     const RIGHT_PAD = 16
-    const TOP_PAD = 72    // enough room for rotated month labels going upward
-    const BOTTOM_PAD = 24 // room for legend
+    const TOP_PAD = 72 // enough room for rotated month labels going upward
+    const LEGEND_W = 140
+    const LEGEND_H = 8
+    const LEGEND_TOP_GAP = 10
+    const BOTTOM_PAD = LEGEND_TOP_GAP + LEGEND_H + 16 // keep legend below last row
     const cellW = (containerW - LABEL_W - RIGHT_PAD) / MONTHS_LIST.length
     const cellH = 26
     const H = TOP_PAD + selectedOrgs.length * cellH + BOTTOM_PAD
@@ -397,9 +401,8 @@ function Heatmap({ selectedOrgs, metric }: { selectedOrgs: string[]; metric: Bar
     })
 
     // Color legend (gradient bar)
-    const legendW = 140, legendH = 8
     const legendX = LABEL_W + 4
-    const legendY = H - BOTTOM_PAD - legendH - 2
+    const legendY = TOP_PAD + selectedOrgs.length * cellH + LEGEND_TOP_GAP
 
     const defs = svg.append('defs')
     const grad = defs.append('linearGradient').attr('id', 'hm-legend-grad')
@@ -408,7 +411,7 @@ function Heatmap({ selectedOrgs, metric }: { selectedOrgs: string[]; metric: Bar
 
     g.append('rect')
       .attr('x', legendX).attr('y', legendY)
-      .attr('width', legendW).attr('height', legendH)
+      .attr('width', LEGEND_W).attr('height', LEGEND_H)
       .attr('fill', 'url(#hm-legend-grad)')
       .attr('rx', 2)
 
@@ -417,7 +420,7 @@ function Heatmap({ selectedOrgs, metric }: { selectedOrgs: string[]; metric: Bar
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('font-size', 8).attr('fill', 'rgba(17,17,17,0.45)').text('Χαμηλό')
     g.append('text')
-      .attr('x', legendX + legendW).attr('y', legendY - 3)
+      .attr('x', legendX + LEGEND_W).attr('y', legendY - 3)
       .attr('text-anchor', 'end')
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('font-size', 8).attr('fill', 'rgba(17,17,17,0.45)').text('Υψηλό')
@@ -554,6 +557,19 @@ export default function ContractAnalysis() {
   const [hmMetric,     setHmMetric]     = useState<BarMetric>('count')
   const [selectedOrgs, setSelectedOrgs] = useState<string[]>(TOP10_ORGS)
   const [showOrgFilter, setShowOrgFilter] = useState(false)
+  const [liveContractCount, setLiveContractCount] = useState<number | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    supabase
+      .from('raw_procurements')
+      .select('id', { count: 'exact', head: true })
+      .then(({ count, error }) => {
+        if (cancelled || error) return
+        setLiveContractCount(typeof count === 'number' ? count : null)
+      })
+    return () => { cancelled = true }
+  }, [])
 
   // When metric changes, auto-switch to the appropriate top 10
   const handleHmMetricChange = (metric: BarMetric) => {
@@ -582,7 +598,11 @@ export default function ContractAnalysis() {
       {/* ── KPIs ── */}
       <div className="ca-kpi-grid">
         {[
-          { label: 'Σύνολο Συμβάσεων',     value: '3.875',     note: 'ανεξαρτήτως κατηγορίας' },
+          {
+            label: 'Σύνολο Συμβάσεων',
+            value: liveContractCount != null ? liveContractCount.toLocaleString('el-GR') : '…',
+            note: 'live count από raw_procurements',
+          },
           { label: 'Συνολική Δαπάνη',       value: '€ 760,7M',  note: 'χωρίς ΦΠΑ · 2024–2026' },
           { label: 'Μέσο Ποσό',            value: '€ 196.305',  note: 'διάμεσος: € 13.032 χ.ΦΠΑ' },
           { label: 'Κορύφωση Συμβάσεων',   value: 'Ιούλ 2025',  note: '313 συμβάσεις σε 1 μήνα' },
