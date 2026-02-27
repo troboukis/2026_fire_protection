@@ -658,7 +658,43 @@ Helper columns:
 - The backfill currently processes all supported types above (despite the legacy function name).
 - Progress is printed during enrichment (`[spending]`, `[commitment]`, `[direct]`, `[payment]` start/progress/done lines).
 
-## Procurement DB ingestion (header + line-level)
+## Procurement DB ingestion (raw KIMDIS + Diavgeia layers)
+
+The web-app now uses `data/raw_procurements.csv` (KIMDIS contracts) as the main procurement dataset.
+
+Raw dataset pipeline:
+- collection script: `fetch_kimdis_procurements.py` (wrapper) / `src/fetch_kimdis_procurements.py`
+- source API: `https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract`
+- output files:
+  - `data/raw_items_backup.json` (raw API backup)
+  - `data/raw_procurements.csv` (filtered tabular dataset)
+- DB table: `public.raw_procurements`
+
+Run raw collection manually:
+
+```bash
+python fetch_kimdis_procurements.py
+```
+
+Rebuild CSV from existing backup only (no API call):
+
+```bash
+python fetch_kimdis_procurements.py --from-backup
+```
+
+Ingest raw CSV into Supabase:
+
+```bash
+python ingest/ingest_raw_procurements.py
+```
+
+Dry-run parse check (no DB write):
+
+```bash
+python ingest/ingest_raw_procurements.py --dry-run
+```
+
+Diavgeia procurement tables are still kept for future extensions.
 
 The web-app procurement layer now uses a two-table model:
 
@@ -679,18 +715,22 @@ Run these in `SQL Editor` (once per database):
    - creates line-level table `procurement_decision_lines`
 3. `sql/006_org_municipality_coverage.sql`
    - creates `org_municipality_coverage` (org -> all municipalities covered)
+4. `sql/007_raw_procurements.sql`
+   - creates `raw_procurements` (main KIMDIS raw contracts table)
 
 ### Procurement ingest commands
 
 From the project root:
 
 ```bash
+python ingest/ingest_raw_procurements.py
 python ingest/ingest_procurement.py
 python ingest/ingest_procurement_lines.py
 python ingest/ingest_org_municipality_coverage.py
 ```
 
 Behavior:
+- `ingest_raw_procurements.py` truncates + reloads `public.raw_procurements` from `data/raw_procurements.csv`
 - `ingest_procurement.py` loads header-level rows from `data/2026_diavgeia_filtered.csv`
 - `ingest_procurement_lines.py` expands line-level detail from:
   - `spending_contractors_details`
