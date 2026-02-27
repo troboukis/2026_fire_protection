@@ -767,6 +767,12 @@ Run these in `SQL Editor` (once per database):
    - creates `org_municipality_coverage` (org -> all municipalities covered)
 4. `sql/007_raw_procurements.sql`
    - creates `raw_procurements` (main KIMDIS raw contracts table)
+5. `sql/008_raw_procurements_views.sql`
+   - creates `v_raw_procurements_municipality` (frontend-friendly municipality-linked raw procurements view)
+6. `sql/009_raw_procurements_hero_stats_fn.sql`
+   - creates RPC function `get_raw_procurements_hero_stats(...)` used by homepage Hero KPIs
+7. `sql/010_raw_procurements_cumulative_curve_fn.sql`
+   - creates RPC function `get_raw_procurements_cumulative_curve(...)` for the homepage cumulative line chart
 
 ### Procurement ingest commands
 
