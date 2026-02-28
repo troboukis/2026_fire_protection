@@ -32,3 +32,6 @@ app/.env.production.local
 *.bak
 *.tmp
 *.swp
+
+# Mapping review artifacts (local/manual workflow)
+data/mappings/archived/
