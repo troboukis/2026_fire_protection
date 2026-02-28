@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import { useNavigate, useParams } from 'react-router-dom'
+import ComponentTag from './ComponentTag'
 import type { GeoData, GeoFeature } from '../types'
 
 const FILL_DEFAULT  = '#e6e4de'
-const FILL_SELECTED = '#1a3a5c'   /* navy */
+const FILL_SELECTED = '#1a3a5c'   /* dark navy */
 const STROKE        = 'rgba(153,148,140,0.42)'
 const STROKE_W      = 0.5
 const MAP_SCALE_BOOST       = .98
@@ -18,30 +18,43 @@ function fmtPct(v: number): string {
   return v.toFixed(4) + '%'
 }
 
+function municipalityCode(d: GeoFeature): string {
+  return String((d.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
+}
+
 interface Props {
   geojson: GeoData | null
   choroplethData: Record<string, number>   // municipality_id → pct_of_national
   procMunicipalities: Set<string>
   onDeselect: () => void
+  onMunicipalityClick?: (municipalityId: string) => void
+  selectedMunicipalityIds?: Set<string> | null
 }
 
-export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDeselect }: Props) {
+export function GreeceMap({
+  geojson,
+  choroplethData,
+  procMunicipalities,
+  onDeselect,
+  onMunicipalityClick,
+  selectedMunicipalityIds,
+}: Props) {
   const svgRef                = useRef<SVGSVGElement>(null)
-  const selectedRef           = useRef<string | undefined>(undefined)
+  const selectedRef           = useRef<Set<string>>(new Set())
   const choroplethRef         = useRef<Record<string, number>>({})
   const colorScaleRef         = useRef<((v: number) => number) | null>(null)
   const procMunicipalitiesRef = useRef<Set<string>>(new Set())
   const pathGenRef            = useRef<d3.GeoPath | null>(null)
   const onDeselectRef         = useRef<() => void>(() => {})
-  const navigate         = useNavigate()
-  const { id }           = useParams<{ id: string }>()
+  const onMunicipalityClickRef = useRef<((municipalityId: string) => void) | undefined>(undefined)
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [svgSize, setSvgSize] = useState({ width: 0, height: 0 })
 
-  selectedRef.current           = id
+  selectedRef.current           = selectedMunicipalityIds ?? new Set()
   choroplethRef.current         = choroplethData
   procMunicipalitiesRef.current = procMunicipalities
   onDeselectRef.current         = onDeselect
+  onMunicipalityClickRef.current = onMunicipalityClick
 
   // Watch SVG element for real layout dimensions
   useEffect(() => {
@@ -73,7 +86,7 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
 
   // Helper: compute fill for a given municipality code
   const getFill = (code: string): string => {
-    if (code === selectedRef.current) return FILL_SELECTED
+    if (selectedRef.current.has(code)) return FILL_SELECTED
     const val = choroplethRef.current[code] ?? 0
     if (val <= 0 || !colorScaleRef.current) return FILL_DEFAULT
     return d3.interpolateReds(colorScaleRef.current(val))
@@ -103,7 +116,9 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
       .attr('height', height)
       .attr('fill', 'transparent')
       .attr('cursor', 'default')
-      .on('click', () => onDeselectRef.current())
+      .on('click', () => {
+        onDeselectRef.current()
+      })
 
     svg
       .append('g')
@@ -111,14 +126,14 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
       .data(geojson.features)
       .join('path')
       .attr('d', d => pathGen(d as unknown as d3.GeoPermissibleObjects) ?? '')
-      .attr('fill', d => getFill(d.properties.municipality_code))
+      .attr('fill', d => getFill(municipalityCode(d)))
       .attr('stroke', STROKE)
       .attr('stroke-width', STROKE_W)
       .attr('cursor', 'pointer')
-      .attr('data-id', d => d.properties.municipality_code)
+      .attr('data-id', d => municipalityCode(d))
       .on('mouseenter', function (event: MouseEvent, d: GeoFeature) {
-        const code = d.properties.municipality_code
-        if (code !== selectedRef.current) {
+        const code = municipalityCode(d)
+        if (!selectedRef.current.has(code)) {
           const base = getFill(code)
           const darker = d3.color(base)?.darker(0.3)
           d3.select(this).attr('fill', darker ? darker.toString() : base)
@@ -132,12 +147,17 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
         )
       })
       .on('mouseleave', function (_, d: GeoFeature) {
-        d3.select(this).attr('fill', getFill(d.properties.municipality_code))
+        d3.select(this)
+          .attr('fill', getFill(municipalityCode(d)))
+          .attr('stroke', STROKE)
+          .attr('stroke-width', STROKE_W)
         setTooltip(null)
       })
       .on('click', (event: MouseEvent, d: GeoFeature) => {
         event.stopPropagation()
-        navigate(`/municipality/${d.properties.municipality_code}`)
+        const code = municipalityCode(d)
+        if (!code) return
+        onMunicipalityClickRef.current?.(code)
       })
     // Dots layer — draw immediately and keep in sync via the proc-dots effect
     svg.append('g').attr('class', 'proc-dots')
@@ -153,7 +173,7 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
       .attr('stroke', 'rgba(255,255,255,0.75)')
       .attr('stroke-width', 0.8)
       .attr('pointer-events', 'none')
-  }, [geojson, navigate, svgSize])
+  }, [geojson, svgSize])
 
   // Draw/update procurement dots when data or map changes
   useEffect(() => {
@@ -184,7 +204,9 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
 
     d3.select(svgRef.current)
       .selectAll<SVGPathElement, GeoFeature>('path[data-id]')
-      .attr('fill', d => getFill(d.properties.municipality_code))
+      .attr('fill', d => getFill(municipalityCode(d)))
+      .attr('stroke', STROKE)
+      .attr('stroke-width', STROKE_W)
   }, [choroplethData])
 
   // Update fill when URL selection changes
@@ -192,12 +214,15 @@ export function GreeceMap({ geojson, choroplethData, procMunicipalities, onDesel
     if (!svgRef.current) return
     d3.select(svgRef.current)
       .selectAll<SVGPathElement, GeoFeature>('path[data-id]')
-      .attr('fill', d => getFill(d.properties.municipality_code))
-  }, [id])
+      .attr('fill', d => getFill(municipalityCode(d)))
+      .attr('stroke', STROKE)
+      .attr('stroke-width', STROKE_W)
+  }, [selectedMunicipalityIds])
 
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <ComponentTag name="GreeceMap" className="component-tag--overlay" />
       {!geojson && (
         <div className="map-loading">Φόρτωση χάρτη…</div>
       )}

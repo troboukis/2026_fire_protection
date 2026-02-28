@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import ComponentTag from './ComponentTag'
 import { supabase } from '../lib/supabase'
 import type { Municipality, MuniFireYear } from '../types'
 
@@ -211,8 +212,8 @@ export function MunicipalityPanel({ id, onBack }: Props) {
     return () => { cancelled = true }
   }, [id])
 
-  if (loading) return <div><p>Φόρτωση…</p></div>
-  if (error)   return <div><p>Σφάλμα: {error}</p></div>
+  if (loading) return <div><ComponentTag name="MunicipalityPanel" /><p>Φόρτωση…</p></div>
+  if (error)   return <div><ComponentTag name="MunicipalityPanel" /><p>Σφάλμα: {error}</p></div>
   if (!data)   return null
 
   const totalFires = fireHistory.reduce((s, y) => s + y.incident_count, 0)
@@ -223,6 +224,7 @@ export function MunicipalityPanel({ id, onBack }: Props) {
 
   return (
     <div>
+      <ComponentTag name="MunicipalityPanel" />
       <button onClick={onBack}>← Επιστροφή</button>
 
       <h1>{data.name}</h1>

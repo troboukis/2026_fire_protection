@@ -1,0 +1,295 @@
+================================================================================
+COMPREHENSIVE AUDIT REPORT: ENTITY MAPPING VALIDATION
+================================================================================
+Date: 2026-02-28
+Data Path: /sessions/sleepy-loving-knuth/mnt/fire_protection_2026/data/
+
+EXECUTIVE SUMMARY
+================================================================================
+This audit examines whether organizations and municipality identifiers from
+9 source files are correctly represented in the final mapping file
+(final_entity_mapping.csv). The analysis reveals several critical issues:
+
+1. CRITICAL: Fire incidents data has 720 municipalities that don't match the
+   mapping coverage municipalities (0% coverage match)
+2. CRITICAL: Diavgeia data has JSON-serialized organization objects that need
+   parsing; when parsed, 63 organizations are missing from mapping
+3. SIGNIFICANT: Diavgeia 'organization' column contains 406 unparseable entries
+   (likely JSON objects stored as strings)
+4. MINOR: Geojson missing 1 municipality ID (9305) that's in mapping coverage
+5. MINOR: One org from raw_unmapped_orgs review is missing from mapping
+
+DETAILED FINDINGS BY SOURCE FILE
+================================================================================
+
+FILE 1: 2026_diavgeia_filtered.csv
+Rows: 5,945 | Org name columns: org, org_name_clean, organization
+
+Issue A - org_name_clean column (CLEAN):
+  Total unique orgs: 336
+  Mapped to final_entity_mapping: 336 (100%)
+  Missing: 0
+  Status: PASS - All orgs from this column are in the mapping
+
+Issue B - organization column (PROBLEMATIC):
+  Format: JSON strings like {'uid': '100015996', 'label': 'ORG_NAME', ...}
+  Total unparseable JSON objects: 406 (not properly extracted)
+  Total parseable objects with labels: 341
+  Mapped to final_entity_mapping: 278 (81.5%)
+  Missing: 63 (18.5%)
+
+  Missing org labels from organization column (sample of 10):
+    - ΑΝΑΠΤΥΞΙΑΚΗ ΗΡΑΚΛΕΙΟΥ ΑΝΑΠΤΥΞΙΑΚΗ  ΑΕ  ΟΤΑ
+    - ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΑΙΓΑΙΟΥ
+    - ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΑΤΤΙΚΗΣ
+    - ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΜΑΚΕΔΟΝΙΑΣ - ΘΡΑΚΗΣ
+    - ΔΗΜΟ ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ
+    - ΔΗΜΟΣ ΑΓΡΑΦΩΝ
+    - ΔΗΜΟΣ ΑΙΓΙΝΑΣ
+    - ΔΗΜΟΣ ΑΚΤΙΟΥ - ΒΟΝΙΤΣΑΣ
+    - ΔΗΜΟΣ ΑΜΑΡΙΟΥ
+    - ΔΗΜΟΣ ΑΝΔΡΙΤΣΑΙΝΑΣ - ΚΡΕΣΤΕΝΩΝ
+
+  Root Cause: The 'organization' column contains JSON-serialized objects that
+  need parsing. The label field contains the actual organization name, but 406
+  entries are not being properly parsed/extracted.
+
+Status: PROBLEM - Extraction/parsing issue, but org_name_clean column covers all.
+
+
+FILE 2: raw_procurements.csv
+Rows: 7,659 | Org columns: organization_key, organization_value
+
+  Total unique org names: 462
+  Mapped to final_entity_mapping: 462 (100%)
+  Missing: 0
+  Status: PASS - Complete coverage
+
+
+FILE 3: funding/municipal_funding.csv
+Rows: 2,378 | Org column: recipient_raw
+
+  Total unique recipient names: 420
+  Mapped to final_entity_mapping: 420 (100%)
+  Missing: 0
+  Status: PASS - Complete coverage
+
+
+FILE 4: fires/fire_incidents_unified.csv
+Rows: 84,693 | Municipality column: municipality_raw
+
+  Format: List strings like "['ΑΘΗΝΑΣ']" stored as text
+  Total unique extracted municipality names: 720
+  Matched to mapping coverage municipalities: 0 (0%)
+  Missing: 720 (100%)
+
+  Problem: Fire municipality names are in UPPERCASE without accents
+  (e.g., "ΑΘΗΝΑΣ", "ΑΓΡΙΝΙΟΥ"), while the mapping coverage uses proper
+  Greek with accents and mixed case (e.g., "Αθηναίων", "Αγρινίου").
+
+  Sample mismatch examples:
+    Fire: "ΑΘΗΝΑΣ"         -> Mapping: "Αθηναίων"
+    Fire: "ΑΓΡΙΝΙΟΥ"       -> Mapping: "Αγρινίου"
+    Fire: "ΑΙΓΙΝΑΣ"        -> Mapping: "Αίγινας"
+    Fire: "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ" -> Mapping: "Αλεξανδρούπολης"
+
+  Status: CRITICAL - Complete mismatch due to case/accent normalization.
+          These are legitimate municipality names but use different encoding.
+
+
+FILE 5: geo/municipalities.geojson
+Features: 326 | Properties: name, municipality_code
+
+  GeoJSON municipality_codes: 325
+  Mapping coverage municipality IDs: 326
+
+  Discrepancies:
+    GeoJSON codes NOT in mapping coverage: 0
+    Mapping IDs NOT in geojson: 1
+
+  Missing in geojson:
+    - Mapping ID 9305 (no corresponding geojson code)
+
+  Note: One geojson code (9305) is missing from the mapping coverage.
+
+  Status: MINOR - One municipality ID mismatch. The geojson has slightly
+          different structure (uses municipality_code property, not id).
+
+
+FILE 6: mappings/org_to_municipality.csv
+Rows: 341 | Org column: org_name_clean
+
+  Total unique orgs: 336
+  Mapped to final_entity_mapping: 336 (100%)
+  Missing: 0
+  Status: PASS - Complete coverage
+
+  Note: This is an intermediate mapping file; all orgs are accounted for.
+
+
+FILE 7: mappings/org_to_municipality_coverage.csv
+Rows: 8,253 | Org column: org_name_clean
+
+  Total unique orgs: 336
+  Mapped to final_entity_mapping: 336 (100%)
+  Missing: 0
+  Status: PASS - Complete coverage
+
+  Note: This is the expanded coverage mapping; all orgs represented.
+
+
+FILE 8: mappings/region_to_municipalities.csv
+Rows: 332 | Key column: municipality_id
+
+  Total unique municipality IDs: 324
+  Matched in mapping coverage: 324 (100%)
+  Missing: 0
+  Status: PASS - Complete coverage
+
+  Note: All municipality IDs in this file appear in the final mapping coverage.
+
+
+FILE 9: mappings/archived/raw_unmapped_orgs_review_filled.csv
+Rows: 205 | Org column: org_name_clean
+
+  Total unique orgs: 205
+  Mapped to final_entity_mapping: 204 (99.5%)
+  Missing: 1 (0.5%)
+
+  Missing org:
+    - ΔΕΥΑ ΔΉΜΟΥ ΤΕΜΠΩΝ
+
+  Details from raw file:
+    - org_type: ΑΛΛΟΣ ΦΟΡΕΑΣ
+    - raw_doc_count: 6
+    - target_mapping_type: municipality
+    - target_municipality_id: 9101
+    - review_notes: "ΔΕΥΑ Δήμου Τεμπών - Θεσσαλία"
+
+  Status: MINOR - One org from the review file is not in final mapping.
+          This appears to be a legitimate org that should be included.
+
+
+SUMMARY TABLE
+================================================================================
+
+Source File                          | Total Unique | Mapped | Missing | %Mapped
+------------------------------------|--------------|--------|---------|--------
+diavgeia (org_name_clean)           |     336      |  336   |    0    |  100%
+diavgeia (organization-parsed)      |     341      |  278   |   63    |  81.5%
+raw_procurements                    |     462      |  462   |    0    |  100%
+municipal_funding                   |     420      |  420   |    0    |  100%
+fire_incidents (municipalities)     |     720      |    0   |  720    |    0%
+geo_municipalities (geojson)        |     325      |  324   |    1*   |  99.7%
+org_to_municipality                 |     336      |  336   |    0    |  100%
+org_to_municipality_coverage        |     336      |  336   |    0    |  100%
+region_to_municipalities            |     324      |  324   |    0    |  100%
+raw_unmapped_orgs_review            |     205      |  204   |    1    |  99.5%
+------------------------------------|--------------|--------|---------|--------
+* 1 mapping ID not in geojson (9305)
+
+
+ROOT CAUSE ANALYSIS
+================================================================================
+
+CRITICAL ISSUE 1: Fire Incidents Municipality Name Encoding
+Problem:      Fire municipality names use uppercase without diacritics
+              (e.g., "ΑΘΗΝΑΣ") while mapping uses proper Greek formatting
+              (e.g., "Αθηναίων")
+Affected:     720 municipality entries (100% of fire_incidents municipalities)
+Impact:       Fire incident data cannot be linked to municipality coverage
+Solution:     Normalize fire municipality names through accent/case conversion
+              OR create a mapping table for fire municipality name variants
+
+CRITICAL ISSUE 2: Diavgeia Organization JSON Parsing
+Problem:      The 'organization' column contains JSON-serialized dict objects
+              that are not being parsed correctly. Some entries (406) appear
+              to be malformed or unparseable JSON strings.
+Affected:     406-341 entries in diavgeia
+              63 organizations missing from mapping (from parsed entries)
+Impact:       Incomplete extraction of organization data from diavgeia
+Solution:     Use proper JSON parsing (json.loads) for organization field
+              Add error handling for malformed JSON
+              Verify why org_name_clean has all orgs but organization field
+              extraction fails for some
+
+MINOR ISSUE 3: Missing Organization in Raw Review File
+Problem:      "ΔΕΥΑ ΔΉΜΟΥ ΤΕΜΠΩΝ" exists in raw_unmapped_orgs review but
+              not in final_entity_mapping
+Affected:     1 organization
+Impact:       One reviewed org was not added to final mapping
+Solution:     Add this org to final_entity_mapping (appears to map to
+              municipality_id 9101 in Thessaly region)
+
+MINOR ISSUE 4: Geojson Municipality Code Mismatch
+Problem:      Mapping coverage includes municipality_id 9305 but this ID
+              doesn't exist in municipalities.geojson
+Affected:     1 municipality ID
+Impact:       Geographic data missing for one municipality ID
+Solution:     Verify if 9305 should be in geojson or removed from mapping
+
+
+RECOMMENDATIONS
+================================================================================
+
+Priority 1 (CRITICAL - Must Fix):
+  1. Fire incidents: Implement municipality name normalization to match
+     mapping coverage municipalities. Create conversion table for 720
+     unique fire municipality names to their proper mapping names.
+
+  2. Diavgeia: Fix organization JSON parsing. Determine why 406 entries
+     are unparseable and either fix the JSON or extract from org_name_clean
+     column which has all 336 unique orgs correctly.
+
+Priority 2 (HIGH - Should Fix):
+  3. Raw unmapped orgs: Add missing org "ΔΕΥΑ ΔΉΜΟΥ ΤΕΜΠΩΝ" to final
+     entity mapping.
+
+  4. Geojson/Mapping: Investigate municipality_id 9305 - either add to
+     geojson or remove from mapping coverage.
+
+Priority 3 (LOW - Nice to Have):
+  5. Data validation: Add automated validation checks to ensure all source
+     files' organizations/municipalities are represented in final mapping.
+
+  6. Documentation: Document the municipality name encoding differences
+     between fire_incidents (uppercase, no accents) and other sources
+     (proper Greek formatting).
+
+
+DETAILED MISSING ORGANIZATIONS LIST
+================================================================================
+
+From diavgeia organization field (parsed, 63 missing):
+(First 20 shown; complete list available upon request)
+
+  1. ΑΝΑΠΤΥΞΙΑΚΗ ΗΡΑΚΛΕΙΟΥ ΑΝΑΠΤΥΞΙΑΚΗ  ΑΕ  ΟΤΑ
+  2. ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΑΙΓΑΙΟΥ
+  3. ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΑΤΤΙΚΗΣ
+  4. ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ ΜΑΚΕΔΟΝΙΑΣ – ΘΡΑΚΗΣ
+  5. ΔΗΜΟ ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ
+  6. ΔΗΜΟΣ ΑΓΡΑΦΩΝ
+  7. ΔΗΜΟΣ ΑΙΓΙΝΑΣ
+  8. ΔΗΜΟΣ ΑΚΤΙΟΥ - ΒΟΝΙΤΣΑΣ
+  9. ΔΗΜΟΣ ΑΜΑΡΙΟΥ
+ 10. ΔΗΜΟΣ ΑΝΔΡΙΤΣΑΙΝΑΣ - ΚΡΕΣΤΕΝΩΝ
+ 11. ΔΗΜΟΣ ΑΝΔΡΑΒΙΔΑΣ - ΚΥΛΛΗΝΗΣ
+ 12. ΔΗΜΟΣ ΑΝΤΙΠΑΡΟΥ
+ 13. ΔΗΜΟΣ ΑΡΓΙΘΕΑΣ
+ 14. ΔΗΜΟΣ ΑΡΧΑΝΩΝ - ΑΣΤΕΡΟΥΣΙΩΝ
+ 15. ΔΗΜΟΣ ΒΙΑΝΝΟΥ
+ 16. ΔΗΜΟΣ ΔΙΣΤΟΜΟΥ - ΑΡΑΧΟΒΑΣ - ΑΝΤΙΚΥΡΑΣ
+ 17. ΔΗΜΟΣ ΔΙΡΦΥΩΝ - ΜΕΣΣΑΠΙΩΝ
+ 18. ΔΗΜΟΣ ΕΙΔΥΛΛΙΑΣ - ΜΑΝΔΡΩΝ
+ 19. ΔΗΜΟΣ ΕΠΙΔΑΥΡΟΥ
+ 20. ΔΗΜΟΣ ΕΡΜΙΟΝΙΔΑΣ
+
+[Additional 43 orgs omitted from this summary]
+
+From raw_unmapped_orgs_review_filled.csv (1 missing):
+  1. ΔΕΥΑ ΔΉΜΟΥ ΤΕΜΠΩΝ
+
+
+================================================================================
+END OF AUDIT REPORT
+================================================================================

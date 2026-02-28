@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ContractAnalysis from './components/ContractAnalysis'
+import ComponentTag from './components/ComponentTag'
 import { supabase } from './lib/supabase'
 
 type ProcurementRecord = {
@@ -670,6 +671,7 @@ export default function App() {
 
   return (
     <div className="pyro-app">
+      <ComponentTag name="App" />
       <div className="page-grid" aria-hidden="true" />
 
       <DebugComponentLabel name="SiteHeader" />
@@ -684,7 +686,7 @@ export default function App() {
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
           <a href="#latest">Τελευταία</a>
           <Link to="/contracts">Συμβάσεις</Link>
-          <a href="#mapdesk">Χάρτες</a>
+          <Link to="/maps">Χάρτες</Link>
           <a href="#analysis">Ανάλυση Συμβάσεων</a>
           <a href="#organizations">Φορείς</a>
           <a href="#documents">Διαύγεια</a>

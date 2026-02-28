@@ -1,0 +1,196 @@
+================================================================================
+FIRE MUNICIPALITY MAPPING - COMPLETE DOCUMENTATION
+================================================================================
+Generated: 2026-02-28
+File: fire_municipality_mapping.csv
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Total Fire Incident Municipalities: 720
+  - Mapped to Kallikratis IDs: 504 (70.00%)
+  - Unmapped: 216 (30.00%)
+
+Mapping Coverage by Confidence Level:
+  - Manual mapping (direct historical knowledge): 178 entries (35.32% of mapped)
+  - Exact string matching (after normalization): 26 entries (5.16% of mapped)
+  - Substring/normalized matching: 300 entries (59.52% of mapped)
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+This mapping converts 720 unique fire incident municipality names (from 
+fire_incidents_unified.csv) to their post-2011 Kallikratis municipality IDs 
+and names, using the reference data in admin_codes_reference.csv.
+
+STEP 1: Data Extraction
+  - Source: fires/fire_incidents_unified.csv column "municipality_raw"
+  - Format: List-like strings ["MUNICIPALITY_NAME"] 
+  - Extraction: Remove list brackets and parse raw names
+  - Total unique values: 722 (including '-' and '[]')
+  - Valid entries processed: 720
+
+STEP 2: Reference Data Loading
+  - Source: mappings/archived/admin_codes_reference.csv
+  - Reference IDs: 9001-9325 (324 Kallikratis municipalities)
+  - Missing ID: 9305 (does not exist in reference)
+  - Columns used: municipality_id, municipality_name, region_id
+
+STEP 3: Normalization
+  - Converted fire names to UPPERCASE
+  - Removed Greek diacritical marks (accents) using NFD decomposition
+  - Applied to both fire data and reference municipality names
+  - Enabled fuzzy matching across old/new naming conventions
+
+STEP 4: Matching Strategies (applied in order)
+
+  Strategy 1: Manual Historical Mapping (178 successful)
+    - Used comprehensive mapping of pre-2011 municipality names to Kallikratis
+    - Covered known mergers and administrative consolidations
+    - Examples:
+      • ΑΘΗΝΑΣ (old genitive) → Αθηναίων (9186)
+      • Δ. ΒΕΛΒΕΝΤΟΥ (old municipal designation) → Σερβίων-Βελβεντού (9069)
+      • ΚΑΒΑΛΑΣ (old name) → Καβάλας (9012)
+
+  Strategy 2: Exact String Matching (26 successful)
+    - Normalized fire name matches exactly to Kallikratis name (after
+      removing accents and converting to uppercase)
+    - High confidence matches
+
+  Strategy 3: Substring/Fuzzy Matching (300 successful)
+    - Fire name is substring of Kallikratis name, or vice versa
+    - Applied when exact match fails
+    - Lower confidence but reasonable accuracy
+
+  Strategy 4: Unmapped (216 entries)
+    - No match found through automated methods
+    - Primarily:
+      • Very small villages or hamlets with no current Kallikratis equivalent
+      • Old administrative divisions with "Δ." prefix (pre-2011 municipal
+        designations) that lack precise historical mapping
+      • Community names with "Κ." prefix that weren't matched to parent
+        municipalities
+    - These require manual review or supplementary research
+
+================================================================================
+OUTPUT COLUMNS
+================================================================================
+
+fire_name: The raw municipality name from fire_incidents_unified.csv
+  - Extracted from municipality_raw column
+  - Original format preserved for traceability
+
+normalized: Cleaned version (uppercase, no accents)
+  - Used for matching and lookup
+  - Enables fuzzy matching across naming conventions
+
+municipality_id: Kallikratis municipality ID (9001-9325)
+  - Empty string if no match found
+  - Integer values correspond to official Greek administrative divisions
+  - Post-2011 Kallikratis reform naming
+
+municipality_name: Official Kallikratis municipality name
+  - Greek language
+  - Corresponds to municipality_id
+  - Empty string if no match found
+
+region_id: Greek administrative region identifier
+  - Extracted from admin_codes_reference.csv
+  - Region names (e.g., ΑΤΤΙΚΗΣ, ΘΕΣΣΑΛΙΑΣ)
+  - Empty string if municipality_id not found
+
+confidence: Mapping reliability indicator
+  - "manual": Mapped using historical knowledge of Kallikratis mergers
+  - "exact": Normalized names match exactly
+  - "normalized": Substring or fuzzy match
+  - "unknown": No match found
+
+notes: Additional information or explanation
+  - For multiple matches: count of matches and selection method
+  - For substring matches: type of matching applied
+  - Empty for simple mappings
+
+================================================================================
+KNOWN LIMITATIONS & CHALLENGES
+================================================================================
+
+1. PRE-2011 MUNICIPALITY NAMES (216 unmapped)
+   - Fire data contains old names from administrative divisions prior to 2011
+   - Many were merged during Kallikratis reform
+   - Exact historical mapping requires specialized reference data
+
+2. "Δ." PREFIX ENTRIES
+   - "Δ. " = old municipal designation (pre-2011)
+   - Examples: "Δ. ΒΕΛΒΕΝΤΟΥ", "Δ. ΚΙΜΩΛΟΥ"
+   - Mapped when correspondence is known; many lack precise equivalents
+
+3. "Κ." PREFIX ENTRIES
+   - "Κ. " = community/village designation (not a municipality)
+   - Typically nested within larger municipalities
+   - Difficult to map without supplementary gazetteer data
+
+4. ISLAND MUNICIPALITIES
+   - Smaller islands grouped into single municipalities post-2011
+   - Fire data may list island names separately (e.g., ΙΗΤΩΝ, ΑΝΑΦΗΣ for
+     Θήρας municipality)
+
+5. MISSING REFERENCE ID 9305
+   - Valid municipality ID range: 9001-9325
+   - ID 9305 does not exist in admin_codes_reference.csv
+   - 324 total municipalities (not 325)
+
+================================================================================
+QUALITY METRICS
+================================================================================
+
+Overall Coverage: 70.00% (504 of 720)
+  - Above 50% threshold
+  - Reasonable for historical fire data with varied naming conventions
+
+High-Confidence Mappings: 204 (28.33%)
+  - Manual (35.32%) + Exact (5.16%) = 40.48% of mapped
+  - These represent most reliable matches
+
+Normalized Matches: 300 (41.67%)
+  - Substring/fuzzy matches
+  - Require some interpretation but generally reliable for regional analysis
+
+Unmapped: 216 (30.00%)
+  - Primarily old administrative divisions
+  - Lack direct Kallikratis equivalents
+  - May require manual resolution or supplementary data
+
+================================================================================
+RECOMMENDATIONS FOR FURTHER IMPROVEMENT
+================================================================================
+
+1. Acquire historical municipality merger documentation
+   - Would improve mapping of old names to new Kallikratis divisions
+   - Could increase coverage from 70% to 85%+
+
+2. Create village-to-municipality gazetteer
+   - Map "Κ." prefixed entries to their parent municipalities
+   - Would resolve many of the unmapped entries
+
+3. Manual review of 216 unmapped entries
+   - Subject matter expert review of fire department records
+   - Cross-reference with historical administrative maps
+   - Could identify patterns in remaining unmapped entries
+
+4. Time-period segmentation
+   - Map entries by fire year/era
+   - Use different reference datasets for pre/post-2011 periods
+   - Could improve accuracy for historically-sensitive analyses
+
+================================================================================
+TECHNICAL NOTES
+================================================================================
+
+- Python 3 implementation using pandas, unicodedata
+- Accent removal: unicodedata.normalize('NFD') + category filtering
+- All string comparisons case-insensitive (after uppercase conversion)
+- CSV output with proper encoding for Greek characters (UTF-8)
+
+================================================================================

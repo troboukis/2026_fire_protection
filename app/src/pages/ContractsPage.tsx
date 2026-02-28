@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ComponentTag from '../components/ComponentTag'
 import { supabase } from '../lib/supabase'
 
 type ContractRow = {
@@ -39,14 +40,34 @@ function fmtEur(n: number | null): string {
   return n.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 }
 
+function isoDateDaysAgo(days: number): string {
+  const d = new Date()
+  d.setDate(d.getDate() - days)
+  const tzOffsetMs = d.getTimezoneOffset() * 60_000
+  return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
+}
+
+function isoToday(): string {
+  const d = new Date()
+  const tzOffsetMs = d.getTimezoneOffset() * 60_000
+  return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
+}
+
+function periodLabel(dateFrom: string, dateTo: string): string {
+  if (dateFrom && dateTo) return `${fmtDate(dateFrom)} - ${fmtDate(dateTo)}`
+  if (dateFrom) return `Από ${fmtDate(dateFrom)}`
+  if (dateTo) return `Έως ${fmtDate(dateTo)}`
+  return 'Όλο το διάστημα'
+}
+
 export default function ContractsPage() {
   const [rows, setRows] = useState<ContractRow[]>([])
   const [loading, setLoading] = useState(true)
   const [q, setQ] = useState('')
   const [org, setOrg] = useState('')
   const [procedure, setProcedure] = useState('')
-  const [dateFrom, setDateFrom] = useState('')
-  const [dateTo, setDateTo] = useState('')
+  const [dateFrom, setDateFrom] = useState(() => isoDateDaysAgo(30))
+  const [dateTo, setDateTo] = useState(() => isoToday())
   const [minAmount, setMinAmount] = useState('')
 
   useEffect(() => {
@@ -122,11 +143,16 @@ export default function ContractsPage() {
 
   return (
     <div className="contracts-page">
+      <ComponentTag name="ContractsPage" />
       <header className="contracts-header section-rule">
         <div>
           <div className="eyebrow">Συμβάσεις</div>
           <h1>Όλες οι Συμβάσεις</h1>
-          <p>{loading ? 'Φόρτωση…' : `${filtered.length.toLocaleString('el-GR')} αποτελέσματα`}</p>
+          <p>
+            {loading
+              ? 'Φόρτωση…'
+              : `${filtered.length.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
+          </p>
         </div>
         <Link className="contracts-back" to="/">← Επιστροφή στην αρχική</Link>
       </header>
@@ -180,4 +206,3 @@ export default function ContractsPage() {
     </div>
   )
 }
-

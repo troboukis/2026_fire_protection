@@ -43,6 +43,7 @@ Script behavior:
 Useful flags for `run_fetch_and_sync.sh`:
 - `DOWNLOAD_DIAVGEIA_PDFS=1`: enable Diavgeia PDF download + parse during fetch step
 - `RUN_DB_INGEST=1`: run DB ingestion scripts (including `ingest_raw_procurements.py`)
+- `REBUILD_ORG_MAPPINGS=1`: rebuild `org_to_municipality*.csv` from rules (disabled by default to preserve curated mappings)
 
 Examples:
 
@@ -50,6 +51,7 @@ Examples:
 ./scripts/run_fetch_and_sync.sh
 DOWNLOAD_DIAVGEIA_PDFS=1 ./scripts/run_fetch_and_sync.sh
 RUN_DB_INGEST=1 ./scripts/run_fetch_and_sync.sh
+REBUILD_ORG_MAPPINGS=1 ./scripts/run_fetch_and_sync.sh
 DOWNLOAD_DIAVGEIA_PDFS=1 RUN_DB_INGEST=1 ./scripts/run_fetch_and_sync.sh
 ```
 
