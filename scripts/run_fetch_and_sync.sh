@@ -16,6 +16,7 @@ if [[ ! -x ".fireprotection/bin/python" ]]; then
 fi
 
 DOWNLOAD_DIAVGEIA_PDFS="${DOWNLOAD_DIAVGEIA_PDFS:-0}"
+REBUILD_ORG_MAPPINGS="${REBUILD_ORG_MAPPINGS:-0}"
 
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "[0/10] Working tree has local changes. Auto-committing them first..."
@@ -36,8 +37,12 @@ DOWNLOAD_DIAVGEIA_PDFS="$DOWNLOAD_DIAVGEIA_PDFS" ./.fireprotection/bin/python fe
 echo "[3/10] Rebuild Diavgeia filtered dataset..."
 ./.fireprotection/bin/python src/filter_relevance.py
 
-echo "[4/10] Rebuild org mappings (single-match + coverage)..."
-./.fireprotection/bin/python ingest/build_org_mapping.py
+if [[ "$REBUILD_ORG_MAPPINGS" == "1" ]]; then
+  echo "[4/10] Rebuild org mappings (single-match + coverage)..."
+  ./.fireprotection/bin/python ingest/build_org_mapping.py
+else
+  echo "[4/10] Skipping org mapping rebuild (set REBUILD_ORG_MAPPINGS=1 to enable)."
+fi
 
 echo "[5/10] Fetch KIMDIS raw procurements..."
 ./.fireprotection/bin/python fetch_kimdis_procurements.py

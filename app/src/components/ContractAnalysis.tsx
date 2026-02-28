@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import * as d3 from 'd3'
 import { HEATMAP_CELLS, ALL_ORGS, TOP10_ORGS, TOP10_BY_TOTAL, DIMOS_ORGS, OTHER_ORGS } from '../data/heatmapData'
 import { supabase } from '../lib/supabase'
+import ComponentTag from './ComponentTag'
 
 // ── Τύποι ────────────────────────────────────────────────────────────
 type BarItem = {
@@ -583,6 +584,7 @@ export default function ContractAnalysis() {
 
   return (
     <section id="analysis" className="ca-section section-rule" aria-label="Ανάλυση Συμβάσεων">
+      <ComponentTag name="ContractAnalysis" />
 
       {/* ── Header ── */}
       <div className="ca-header section-head">
