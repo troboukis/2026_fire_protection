@@ -683,8 +683,8 @@ Raw dataset pipeline:
 - collection script: `fetch_kimdis_procurements.py` (wrapper) / `src/fetch_kimdis_procurements.py`
 - source API: `https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract`
 - output files:
-  - `data/raw_items_backup.json` (raw API backup)
-  - `data/raw_procurements.csv` (filtered tabular dataset)
+  - `data/raw_items_backup.json` (single raw backup — primary + secondary items in one flat list)
+  - `data/raw_procurements.csv` (filtered, deduplicated tabular dataset)
 - DB table: `public.raw_procurements`
 
 Run raw collection manually:
@@ -718,9 +718,35 @@ KIMDIS fetch flags:
 - `--request-timeout <int>`: HTTP timeout per request in seconds (default `60`)
 - `--max-window-days <int>`: date span per API window (default `180`)
 - `--state-file <path>`: incremental state file path (default `state/kimdis_state.json`)
-- `--backup-json <path>`: raw API backup JSON path
-- `--output-csv <path>`: output CSV path
+- `--backup-json <path>`: primary raw API backup JSON path (default `data/raw_items_backup.json`)
+- `--output-csv <path>`: output CSV path (default `data/raw_procurements.csv`)
 - `--log-csv <path>`: run log CSV path
+
+### Secondary CPV fetch (title-keyword filter)
+
+Some fire-protection contracts use general-purpose CPV codes (roads, waterworks, drainage)
+rather than dedicated fire-protection codes. A second API pass fetches these contracts and
+keeps only those whose title contains a fire-protection keyword.
+
+Constants in `src/fetch_kimdis_procurements.py`:
+
+```python
+SECONDARY_CPVS = {
+    "45233141-9": "Συντήρηση οδών",
+    "45240000-1": "Κατασκευαστικές εργασίες για υδατικά έργα",
+    "45232152-2": "Έργα αντιπλημμυρικής / αποχετευτικής υποδομής",
+}
+SECONDARY_TITLE_KEYWORDS = ["πυροπροστασ"]
+```
+
+Behavior:
+- the secondary collector uses the same date window / incremental state as the primary
+- title matching is done post-fetch (`is_excluded` checks `normalize_string(title)`)
+- secondary items are tagged `_src="secondary"` in the raw backup so they survive round-trips
+- primary and secondary items are stored in a single flat list in `data/raw_items_backup.json`
+- on `--from-backup`, items are split by the `_src` tag to restore proper per-collector filtering
+- primary and secondary DataFrames are concatenated then deduplicated (full-row dedupe
+  after normalizing list/dict cells to stable JSON) before writing `data/raw_procurements.csv`
 
 Examples:
 
@@ -770,9 +796,15 @@ Run these in `SQL Editor` (once per database):
 5. `sql/008_raw_procurements_views.sql`
    - creates `v_raw_procurements_municipality` (frontend-friendly municipality-linked raw procurements view)
 6. `sql/009_raw_procurements_hero_stats_fn.sql`
-   - creates RPC function `get_raw_procurements_hero_stats(...)` used by homepage Hero KPIs
+   - creates RPC function `get_raw_procurements_hero_stats(p_year_main, p_year_prev1, p_year_prev2, p_as_of_date)`
+   - returns YTD hero KPIs (total spend, top contract type, top CPV) for the homepage
+   - the YTD window uses `LEAST(DAY(as_of_date), last_day_of_month_in_year)` to compare the same
+     calendar period fairly across leap and non-leap years
 7. `sql/010_raw_procurements_cumulative_curve_fn.sql`
-   - creates RPC function `get_raw_procurements_cumulative_curve(...)` for the homepage cumulative line chart
+   - creates RPC function `get_raw_procurements_cumulative_curve(p_as_of_date, p_year_main, p_year_start)`
+   - generates one data point per day per year from `p_year_start` to `p_year_main` using `generate_series`
+   - current year (`p_year_main`) stops at `LEAST(MAX(data_date), p_as_of_date)`; prior years run to 31 Dec
+   - single call from the frontend returns all series; no duplicate year rows (UNION deduplication in CTE)
 
 ### Procurement ingest commands
 
@@ -816,6 +848,10 @@ Coverage rows are built from:
 - national-level whole-country expansion (`["*"]`)
 - fallback to single `municipality_id` when available in `org_to_municipality.csv`
 
+Mapping review workflow note:
+- temporary/manual review CSVs (for example `raw_unmapped_orgs_review*.csv`, `admin_codes_reference.csv`) should be moved to `data/mappings/archived/` after use
+- `data/mappings/archived/` is ignored by git and is intended for local helper artifacts only
+
 Important note for direct assignments:
 - if one direct assignment has multiple persons but one total amount, the amount is placed only on the first line row to avoid double-counting in aggregates
 
@@ -853,3 +889,56 @@ python ingest/ingest_org_municipality_coverage.py
 - `data/2026_diavgeia.csv` currently stores only records with `issueDate >= 2024`
 - `data/2026_diavgeia_filtered.csv` is also kept at `issueDate >= 2024`
 - a local archival copy of the full raw range was saved as `data/2026_diavgeia_from_2009.csv` (ignored in git)
+
+## Web app (`app/`)
+
+A React + Vite + Supabase frontend in `app/`.
+
+### Dynamic year system
+
+Years are never hardcoded in the frontend:
+
+```ts
+const YEAR_START = 2024          // first year in the dataset
+const currentYear = new Date().getFullYear()   // e.g. 2026, 2027, …
+const chartYears = Array.from(                 // [2024, 2025, 2026, …]
+  { length: currentYear - YEAR_START + 1 },
+  (_, i) => YEAR_START + i
+)
+```
+
+The chart automatically gains a new series each January 1st without code changes.
+
+Chart line styles are indexed from newest year (`CHART_YEAR_STYLES[0]` = bold black) to
+oldest year (faded grey). Any number of years share the most-faded style.
+
+### Supabase RPC calls from the homepage
+
+The homepage makes **two** RPC calls:
+
+| Call | Function | Purpose |
+|---|---|---|
+| Hero KPIs | `get_raw_procurements_hero_stats` | Total spend, top type, top CPV for current YTD |
+| Cumulative chart | `get_raw_procurements_cumulative_curve` | Daily cumulative series for all years from `YEAR_START` |
+
+```ts
+// Hero stats — compare current year vs two prior years at same YTD window
+supabase.rpc('get_raw_procurements_hero_stats', {
+  p_year_main:  currentYear,
+  p_year_prev1: currentYear - 1,
+  p_year_prev2: currentYear - 2,
+  p_as_of_date: asOf,
+})
+
+// Cumulative curve — single call, server generates all year series
+supabase.rpc('get_raw_procurements_cumulative_curve', {
+  p_as_of_date: asOf,
+  p_year_main:  currentYear,
+  p_year_start: YEAR_START,
+})
+```
+
+### Pages
+
+- `/` — Homepage: hero KPIs + cumulative spending chart + municipality panel
+- `/contracts` — Contract browser (`app/src/pages/ContractsPage.tsx`)

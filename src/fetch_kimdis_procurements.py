@@ -25,7 +25,6 @@ import requests
 REPO_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_CSV = REPO_DIR / "data" / "raw_procurements.csv"
 DEFAULT_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup.json"
-DEFAULT_SECONDARY_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup_secondary.json"
 DEFAULT_LOG_CSV = REPO_DIR / "logs" / "kimdis_fetch_runs.csv"
 DEFAULT_STATE_FILE = REPO_DIR / "state" / "kimdis_state.json"
 
@@ -218,17 +217,19 @@ class ProcurementCollector:
         print(f"Rows in window: {len(rows)}")
         return rows
 
-    def fetch_all(self, backup_path: Path) -> list[dict[str, Any]]:
+    def fetch_all(self, backup_path: Path | None = None) -> list[dict[str, Any]]:
         self.items = []
-        backup_path.parent.mkdir(parents=True, exist_ok=True)
+        if backup_path is not None:
+            backup_path.parent.mkdir(parents=True, exist_ok=True)
 
         for date_from, date_to in self.iter_windows():
             self.items.extend(self.fetch_window(date_from, date_to))
-            backup_path.write_text(
-                json.dumps(self.items, ensure_ascii=False),
-                encoding="utf-8",
-            )
-            print(f"Backup saved: {len(self.items)} rows -> {backup_path}")
+            if backup_path is not None:
+                backup_path.write_text(
+                    json.dumps(self.items, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+                print(f"Backup saved: {len(self.items)} rows -> {backup_path}")
 
         print(f"\nTotal fetched rows: {len(self.items)}")
         return self.items
@@ -548,55 +549,32 @@ def main() -> None:
     try:
         effective_start = cfg.start_date
 
-        if cfg.from_backup:
-            collector = ProcurementCollector(
-                cpvs=DEFAULT_CPVS,
-                start_date=cfg.start_date,
-                end_date=cfg.end_date,
-                max_window_days=cfg.max_window_days,
-                exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
-                request_timeout=cfg.request_timeout,
-                retry_sleep_seconds=cfg.retry_sleep_seconds,
-                request_wait_seconds=cfg.request_wait_seconds,
-            )
-            collector.load_from_backup(cfg.backup_json)
-        else:
-            existing_backup_items: list[dict[str, Any]] = []
-            if cfg.full_refresh:
-                last_fetch = None
-            else:
-                last_fetch = load_last_fetch_from_state(cfg.state_file)
-                if last_fetch is None:
-                    last_fetch = derive_last_fetch_from_csv(cfg.output_csv)
-                if cfg.backup_json.exists():
-                    try:
-                        existing_backup_items = json.loads(cfg.backup_json.read_text(encoding="utf-8"))
-                    except Exception:
-                        existing_backup_items = []
+        def _load_backup() -> list[dict[str, Any]]:
+            if not cfg.backup_json.exists():
+                return []
+            try:
+                return json.loads(cfg.backup_json.read_text(encoding="utf-8"))
+            except Exception:
+                return []
 
-            if last_fetch is not None and last_fetch.date() > effective_start:
-                effective_start = last_fetch.date()
+        def _save_backup(items: list[dict[str, Any]]) -> None:
+            cfg.backup_json.parent.mkdir(parents=True, exist_ok=True)
+            cfg.backup_json.write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
+            print(f"Backup saved: {len(items)} rows -> {cfg.backup_json}")
 
-            collector = ProcurementCollector(
-                cpvs=DEFAULT_CPVS,
-                start_date=effective_start,
-                end_date=cfg.end_date,
-                max_window_days=cfg.max_window_days,
-                exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
-                request_timeout=cfg.request_timeout,
-                retry_sleep_seconds=cfg.retry_sleep_seconds,
-                request_wait_seconds=cfg.request_wait_seconds,
-            )
-            collector.fetch_all(cfg.backup_json)
-            if not cfg.full_refresh:
-                collector.items = merge_raw_items(existing_backup_items, collector.items)
-                cfg.backup_json.write_text(
-                    json.dumps(collector.items, ensure_ascii=False),
-                    encoding="utf-8",
-                )
-
+        collector = ProcurementCollector(
+            cpvs=DEFAULT_CPVS,
+            start_date=cfg.start_date,
+            end_date=cfg.end_date,
+            max_window_days=cfg.max_window_days,
+            exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
+            request_timeout=cfg.request_timeout,
+            retry_sleep_seconds=cfg.retry_sleep_seconds,
+            request_wait_seconds=cfg.request_wait_seconds,
+        )
         # Secondary pass: broad CPVs filtered by title keyword (e.g. "πυροπροστασ").
         # This catches municipalities that use generic infrastructure CPVs for fire-protection work.
+        # Secondary items are tagged with _src="secondary" so they survive round-trips through backup.
         secondary_collector = ProcurementCollector(
             cpvs=SECONDARY_CPVS,
             start_date=effective_start,
@@ -608,26 +586,42 @@ def main() -> None:
             retry_sleep_seconds=cfg.retry_sleep_seconds,
             request_wait_seconds=cfg.request_wait_seconds,
         )
+
         if cfg.from_backup:
-            if DEFAULT_SECONDARY_BACKUP_JSON.exists():
-                secondary_collector.load_from_backup(DEFAULT_SECONDARY_BACKUP_JSON)
+            all_backup = _load_backup()
+            collector.items = [item for item in all_backup if item.get("_src") != "secondary"]
+            secondary_collector.items = [item for item in all_backup if item.get("_src") == "secondary"]
+            print(f"Loaded {len(collector.items)} primary + {len(secondary_collector.items)} secondary rows from backup")
         else:
-            existing_secondary_items: list[dict[str, Any]] = []
-            if not cfg.full_refresh and DEFAULT_SECONDARY_BACKUP_JSON.exists():
-                try:
-                    existing_secondary_items = json.loads(
-                        DEFAULT_SECONDARY_BACKUP_JSON.read_text(encoding="utf-8")
-                    )
-                except Exception:
-                    pass
-            print("\n--- Secondary pass (broad CPVs + title filter) ---")
-            secondary_collector.fetch_all(DEFAULT_SECONDARY_BACKUP_JSON)
+            existing_items = [] if cfg.full_refresh else _load_backup()
+            existing_primary = [i for i in existing_items if i.get("_src") != "secondary"]
+            existing_secondary = [i for i in existing_items if i.get("_src") == "secondary"]
+
+            last_fetch = None
             if not cfg.full_refresh:
-                secondary_collector.items = merge_raw_items(existing_secondary_items, secondary_collector.items)
-                DEFAULT_SECONDARY_BACKUP_JSON.write_text(
-                    json.dumps(secondary_collector.items, ensure_ascii=False),
-                    encoding="utf-8",
-                )
+                last_fetch = load_last_fetch_from_state(cfg.state_file)
+                if last_fetch is None:
+                    last_fetch = derive_last_fetch_from_csv(cfg.output_csv)
+            if last_fetch is not None and last_fetch.date() > effective_start:
+                effective_start = last_fetch.date()
+
+            collector.start_date = effective_start
+            secondary_collector.start_date = effective_start
+
+            # Primary: incremental saves to backup during fetch (safety net).
+            collector.fetch_all(cfg.backup_json)
+            if not cfg.full_refresh:
+                collector.items = merge_raw_items(existing_primary, collector.items)
+
+            # Secondary: no incremental saves (would overwrite primary); tag items for routing.
+            print("\n--- Secondary pass (broad CPVs + title filter) ---")
+            secondary_collector.fetch_all()
+            for item in secondary_collector.items:
+                item["_src"] = "secondary"
+            if not cfg.full_refresh:
+                secondary_collector.items = merge_raw_items(existing_secondary, secondary_collector.items)
+
+            _save_backup([*collector.items, *secondary_collector.items])
 
         fetched_records = len(collector.items) + len(secondary_collector.items)
 
