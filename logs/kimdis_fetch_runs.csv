@@ -7,3 +7,4 @@ run_started_at_utc,fetched_records,output_rows,output_csv,from_backup,success,er
 2026-02-27 11:56:48,0,0,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,True,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,False,True,Max retries (3) exceeded while fetching page=1
 2026-02-27 12:19:14,4188,3838,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,True,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE
 2026-02-27 21:46:38,4182,7656,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,False,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE
+2026-02-28 13:24:09,4189,7659,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,False,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE
