@@ -2,19 +2,23 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ContractAnalysis from './components/ContractAnalysis'
 import ComponentTag from './components/ComponentTag'
+import ErrorBoundary from './components/ErrorBoundary'
 import ContractModal, { type ContractModalContract } from './components/ContractModal'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import { supabase } from './lib/supabase'
 
-type ProcurementRecord = {
-  id: string
-  authority: string
-  title: string
-  amount: string
-  stage: string
+type BeneficiaryInsightRow = {
+  beneficiary: string
+  organization: string
+  totalAmount: number
+  contractCount: number
   cpv: string
-  date: string
-  supplier: string
+  startDate: string
+  endDate: string
+  duration: string
+  progressPct: number | null
+  contractAmounts: number[]
+  signer: string
 }
 
 type Kpi = {
@@ -22,46 +26,6 @@ type Kpi = {
   value: string
   note: string
 }
-
-const featuredRecords: ProcurementRecord[] = [
-  {
-    id: 'ΠΥΡ-2026-0142',
-    authority: 'ΠΕΡΙΦΕΡΕΙΑ ΑΤΤΙΚΗΣ / ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑ',
-    title: 'Καθαρισμοί δασικών ζωνών και αντιπυρικών λωρίδων, φάση Α',
-    amount: '€ 3.200.000',
-    stage: 'Ανατέθηκε',
-    cpv: 'CPV 77312000-0',
-    date: '18 Φεβ 2026',
-    supplier: 'Κοινοπραξία Δασικών Έργων ΑΕ',
-  },
-  {
-    id: 'ΠΥΡ-2026-0097',
-    authority: 'ΔΗΜΟΣ ΜΑΡΑΘΩΝΑ',
-    title: 'Μίσθωση μηχανημάτων έργου για προληπτική αποψίλωση',
-    amount: '€ 842.500',
-    stage: 'Διαγωνισμός',
-    cpv: 'CPV 45500000-2',
-    date: '03 Φεβ 2026',
-    supplier: 'Ανοικτή διαδικασία',
-  },
-  {
-    id: 'ΠΥΡ-2025-2218',
-    authority: 'ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ',
-    title: 'Προμήθεια δεξαμενών νερού και κινητών μονάδων υποστήριξης',
-    amount: '€ 12.400.000',
-    stage: 'Ολοκληρώθηκε',
-    cpv: 'CPV 44611500-1',
-    date: '12 Νοε 2025',
-    supplier: 'Helios Emergency Systems',
-  },
-]
-
-const kpis: Kpi[] = [
-  { label: 'Καταγεγραμμένες Αποφάσεις', value: '4,821', note: 'ευρετηριασμένες αποφάσεις προμηθειών' },
-  { label: 'Δήμοι', value: '332', note: 'διασταύρωση με δεδομένα έκθεσης σε πυρκαγιές' },
-  { label: 'Εκτιμώμενη Δαπάνη', value: '€ 214.7M', note: 'πρόληψη πυρκαγιών + ετοιμότητα' },
-  { label: 'Τελευταία Ενημέρωση', value: '25 Φεβ 2026', note: 'συγχρονισμένο στιγμιότυπο δημόσιου αρχείου' },
-]
 
 const orgKpis: Kpi[] = [
   { label: 'Συνολική Δαπάνη 2025-2026', value: '€ 24.3M', note: 'περιφερειακές + δημοτικές αποφάσεις' },
@@ -419,6 +383,8 @@ export default function App() {
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
   const [heroStatsLoading, setHeroStatsLoading] = useState(true)
+  const [featuredBeneficiaries, setFeaturedBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
+  const [featuredBeneficiariesLoading, setFeaturedBeneficiariesLoading] = useState(true)
   const [heroCurvePoints, setHeroCurvePoints] = useState<HeroCurvePoint[]>([])
   const [heroStats, setHeroStats] = useState<HeroStats>({
     periodMainStart: '',
@@ -661,6 +627,226 @@ export default function App() {
 
     loadLatestContracts()
 
+    return () => { cancelled = true }
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    setFeaturedBeneficiariesLoading(true)
+
+    const loadFeaturedPanels = async () => {
+      const chunk = <T,>(arr: T[], size: number): T[][] => {
+        const out: T[][] = []
+        for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
+        return out
+      }
+
+      const daysBetweenInclusive = (start: string | null, end: string | null): number | null => {
+        if (!start || !end) return null
+        const s = new Date(start)
+        const e = new Date(end)
+        if (Number.isNaN(s.getTime()) || Number.isNaN(e.getTime())) return null
+        const ms = e.getTime() - s.getTime()
+        if (ms < 0) return null
+        return Math.floor(ms / 86_400_000) + 1
+      }
+
+      const toDate = (v: string | null): Date | null => {
+        if (!v) return null
+        const d = new Date(v)
+        return Number.isNaN(d.getTime()) ? null : d
+      }
+
+      try {
+        const yearStart = '2026-01-01'
+        const yearEnd = '2026-12-31'
+        const pageSize = 1000
+        const procurements: Array<{
+          id: number
+          organization_key: string | null
+          contract_signed_date: string | null
+          start_date: string | null
+          end_date: string | null
+        }> = []
+
+        let from = 0
+        while (true) {
+          const to = from + pageSize - 1
+          const { data, error } = await supabase
+            .from('procurement')
+            .select('id, organization_key, contract_signed_date, start_date, end_date')
+            .gte('contract_signed_date', yearStart)
+            .lte('contract_signed_date', yearEnd)
+            .order('id', { ascending: true })
+            .range(from, to)
+          if (error) break
+          const rows = (data ?? []) as Array<{
+            id: number
+            organization_key: string | null
+            contract_signed_date: string | null
+            start_date: string | null
+            end_date: string | null
+          }>
+          procurements.push(...rows)
+          if (rows.length < pageSize) break
+          from += pageSize
+        }
+
+        const ids = procurements.map((p) => p.id)
+        const orgKeys = Array.from(new Set(procurements.map((p) => cleanText(p.organization_key)).filter(Boolean))) as string[]
+
+        const paymentRows: Array<{
+          procurement_id: number
+          beneficiary_name: string | null
+          amount_without_vat: number | null
+          signers: string | null
+        }> = []
+        for (const c of chunk(ids, 200)) {
+          const { data } = await supabase
+            .from('payment')
+            .select('procurement_id, beneficiary_name, amount_without_vat, signers')
+            .in('procurement_id', c)
+          paymentRows.push(...((data ?? []) as typeof paymentRows))
+        }
+
+        const cpvRows: Array<{ procurement_id: number; cpv_value: string | null }> = []
+        for (const c of chunk(ids, 200)) {
+          const { data } = await supabase
+            .from('cpv')
+            .select('procurement_id, cpv_value')
+            .in('procurement_id', c)
+          cpvRows.push(...((data ?? []) as typeof cpvRows))
+        }
+
+        const orgNameByKey = new Map<string, string>()
+        for (const c of chunk(orgKeys, 200)) {
+          const { data } = await supabase
+            .from('organization')
+            .select('organization_key, organization_normalized_value, organization_value')
+            .in('organization_key', c)
+          for (const row of (data ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null }>) {
+            if (!orgNameByKey.has(row.organization_key)) {
+              orgNameByKey.set(
+                row.organization_key,
+                cleanText(row.organization_normalized_value) ?? cleanText(row.organization_value) ?? row.organization_key,
+              )
+            }
+          }
+        }
+
+        const paymentByProc = new Map<number, Array<{ beneficiary: string; amount: number; signer: string }>>()
+        for (const p of paymentRows) {
+          const beneficiary = toUpperEl(cleanText(p.beneficiary_name))
+          if (!beneficiary) continue
+          const amount = Number(p.amount_without_vat ?? 0)
+          const signer = cleanText(p.signers) ?? '—'
+          if (!paymentByProc.has(p.procurement_id)) paymentByProc.set(p.procurement_id, [])
+          paymentByProc.get(p.procurement_id)!.push({ beneficiary, amount, signer })
+        }
+
+        const cpvByProc = new Map<number, string[]>()
+        for (const c of cpvRows) {
+          const cpv = cleanText(c.cpv_value)
+          if (!cpv) continue
+          if (!cpvByProc.has(c.procurement_id)) cpvByProc.set(c.procurement_id, [])
+          cpvByProc.get(c.procurement_id)!.push(cpv)
+        }
+
+        type BeneficiaryAgg = {
+          beneficiary: string
+          totalAmount: number
+          contractCount: number
+          orgTotals: Map<string, number>
+          cpvCounts: Map<string, number>
+          signerCounts: Map<string, number>
+          startDates: string[]
+          endDates: string[]
+          contractAmounts: number[]
+        }
+
+        const agg = new Map<string, BeneficiaryAgg>()
+
+        for (const pr of procurements) {
+          const entries = paymentByProc.get(pr.id) ?? []
+          if (!entries.length) continue
+          const orgKey = cleanText(pr.organization_key)
+          const org = orgKey ? (orgNameByKey.get(orgKey) ?? orgKey) : '—'
+          const cpvs = cpvByProc.get(pr.id) ?? []
+
+          for (const entry of entries) {
+            const key = entry.beneficiary
+            if (!agg.has(key)) {
+              agg.set(key, {
+                beneficiary: key,
+                totalAmount: 0,
+                contractCount: 0,
+                orgTotals: new Map<string, number>(),
+                cpvCounts: new Map<string, number>(),
+                signerCounts: new Map<string, number>(),
+                startDates: [],
+                endDates: [],
+                contractAmounts: [],
+              })
+            }
+            const a = agg.get(key)!
+            a.totalAmount += entry.amount
+            a.contractCount += 1
+            a.contractAmounts.push(entry.amount)
+            a.orgTotals.set(org, (a.orgTotals.get(org) ?? 0) + entry.amount)
+            if (entry.signer && entry.signer !== '—') a.signerCounts.set(entry.signer, (a.signerCounts.get(entry.signer) ?? 0) + 1)
+            for (const cpv of cpvs) a.cpvCounts.set(cpv, (a.cpvCounts.get(cpv) ?? 0) + 1)
+            const start = cleanText(pr.start_date)
+            const end = cleanText(pr.end_date)
+            if (start) a.startDates.push(start)
+            if (end) a.endDates.push(end)
+          }
+        }
+
+        const rows: BeneficiaryInsightRow[] = [...agg.values()].map((a) => {
+          const organization =
+            [...a.orgTotals.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
+          const cpv =
+            [...a.cpvCounts.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
+          const signer =
+            [...a.signerCounts.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
+          const startIso = [...a.startDates].sort()[0] ?? null
+          const endIso = [...a.endDates].sort().slice(-1)[0] ?? null
+          const durationDays = daysBetweenInclusive(
+            startIso,
+            endIso,
+          )
+          const start = toDate(startIso)
+          const end = toDate(endIso)
+          const now = new Date()
+          let progressPct: number | null = null
+          if (start && end && end.getTime() > start.getTime()) {
+            if (now <= start) progressPct = 0
+            else if (now >= end) progressPct = 100
+            else progressPct = ((now.getTime() - start.getTime()) / (end.getTime() - start.getTime())) * 100
+          }
+          return {
+            beneficiary: a.beneficiary,
+            organization,
+            totalAmount: a.totalAmount,
+            contractCount: a.contractCount,
+            cpv,
+            startDate: startIso ? formatDateEl(startIso) : '—',
+            endDate: endIso ? formatDateEl(endIso) : '—',
+            duration: durationDays != null ? `${durationDays} ημέρες` : '—',
+            progressPct: progressPct != null ? Math.max(0, Math.min(100, progressPct)) : null,
+            contractAmounts: [...a.contractAmounts].sort((x, y) => y - x),
+            signer,
+          }
+        })
+
+        const byTotal = [...rows].sort((a, b) => b.totalAmount - a.totalAmount).slice(0, 50)
+        if (!cancelled) setFeaturedBeneficiaries(byTotal)
+      } finally {
+        if (!cancelled) setFeaturedBeneficiariesLoading(false)
+      }
+    }
+
+    loadFeaturedPanels()
     return () => { cancelled = true }
   }, [])
 
@@ -961,6 +1147,8 @@ export default function App() {
           </div>
         </section>
 
+        {false && (
+          <>
         <DebugComponentLabel name="MapDeskSection" />
         <section id="mapdesk" className="map-desk section-rule">
           <div className="section-head">
@@ -1172,57 +1360,81 @@ export default function App() {
             ))}
           </div>
         </section>
+          </>
+        )}
 
         <DebugComponentLabel name="ContractAnalysis" />
-        <ContractAnalysis />
-
-        <DebugComponentLabel name="KpiRail" />
-        <section className="kpi-rail section-rule" aria-label="Βασικοί δείκτες">
-          {kpis.map((kpi) => (
-            <article className="kpi-tile" key={kpi.label}>
-              <div className="eyebrow">{kpi.label}</div>
-              <div className="kpi-value">{kpi.value}</div>
-              <p>{kpi.note}</p>
-            </article>
-          ))}
-        </section>
+        <ErrorBoundary fallback={<div className="ca-empty-note">Η ενότητα ανάλυσης δεν είναι διαθέσιμη προσωρινά.</div>}>
+          <ContractAnalysis />
+        </ErrorBoundary>
 
         <DebugComponentLabel name="FeaturedRecordsSection" />
         <section id="records" className="records section-rule">
           <div className="section-head">
-            <div className="eyebrow">Επιλεγμένες Εγγραφές Προμηθειών</div>
-            <h2>Φύλλα εγγραφών τύπου αφίσας με ιεράρχηση που ξεκινά από τη δαπάνη</h2>
+            <div className="eyebrow">Top Beneficiaries / 2026</div>
+            <h2>Κάρτες δικαιούχων για το 2026. Οριζόντια πλοήγηση στη λίστα.</h2>
           </div>
 
-          <div className="records-grid">
-            {featuredRecords.map((record, idx) => (
-              <article className="record-card" key={record.id}>
-                <div className="record-card__year" aria-hidden="true">
-                  {idx === 2 ? '2025' : '2026'}
-                </div>
+          <div className="records-grid records-grid--horizontal">
+            {featuredBeneficiariesLoading && (
+              <article className="record-card">
                 <div className="record-card__header">
-                  <div className="record-card__authority">{record.authority}</div>
-                  <div className="record-card__id">{record.id}</div>
+                  <div className="record-card__authority">Top Beneficiaries 2026</div>
+                  <div className="record-card__id">Φόρτωση…</div>
                 </div>
+                <h3>Ανάκτηση στοιχείων από procurement/payment/cpv.</h3>
+              </article>
+            )}
 
-                <h3>{record.title}</h3>
-
-                <div className="record-card__amount">{record.amount}</div>
-
-                <div className="record-card__tags" aria-label="Μεταδεδομένα εγγραφής">
-                  <span>{record.stage}</span>
-                  <span>{record.cpv}</span>
-                  <span>{record.date}</span>
+            {!featuredBeneficiariesLoading && featuredBeneficiaries.map((row, idx) => (
+              <article className="record-card" key={`${row.beneficiary}-${idx}`}>
+                <div className="record-card__year" aria-hidden="true">2026</div>
+                <div className="record-card__header">
+                  <div className="record-card__authority">Top Beneficiary #{idx + 1}</div>
+                  <div className="record-card__id">Συμβάσεις: {row.contractCount.toLocaleString('el-GR')}</div>
                 </div>
-
+                <h3>{row.beneficiary}</h3>
+                <div className="record-card__amount">{formatEur(row.totalAmount)}</div>
+                <div className="record-card__tags" aria-label="Μεταδεδομένα δικαιούχου">
+                  <span>CPV: {row.cpv}</span>
+                  <span>Έναρξη: {row.startDate}</span>
+                </div>
+                <div className="record-duration">
+                  <div className="record-duration__head">
+                    <span>Διάρκεια: {row.duration}</span>
+                    <span>Λήξη: {row.endDate}</span>
+                  </div>
+                  <div className="record-duration__track" aria-label="Πρόοδος διάρκειας έργου">
+                    <div
+                      className="record-duration__fill"
+                      style={{ width: `${row.progressPct == null ? 0 : row.progressPct}%` }}
+                    />
+                    <div
+                      className="record-duration__today"
+                      style={{ left: `${row.progressPct == null ? 0 : row.progressPct}%` }}
+                      title="Σήμερα"
+                    />
+                  </div>
+                </div>
+                {row.contractCount > 1 && (
+                  <div className="record-contract-amounts" aria-label="Ποσά ανά σύμβαση">
+                    <div className="record-contract-amounts__title">Ποσό ανά σύμβαση</div>
+                    <ul>
+                      {row.contractAmounts.slice(0, 8).map((amount, amountIdx) => (
+                        <li key={`${row.beneficiary}-amount-${amountIdx}`}>{formatEur(amount)}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 <div className="record-card__footer">
                   <div>
-                    <span className="label">Προμηθευτής</span>
-                    <strong>{record.supplier}</strong>
+                    <span className="label">Οργανισμός</span>
+                    <strong>{row.organization}</strong>
                   </div>
-                  <a href="/" onClick={(e) => e.preventDefault()}>
-                    Προβολή λεπτομερειών
-                  </a>
+                  <div>
+                    <span className="label">Υπογράφων</span>
+                    <strong>{row.signer}</strong>
+                  </div>
                 </div>
               </article>
             ))}
