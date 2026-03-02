@@ -27,9 +27,10 @@ DEFAULT_OUTPUT_CSV = REPO_DIR / "data" / "raw_procurements.csv"
 DEFAULT_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup.json"
 DEFAULT_LOG_CSV = REPO_DIR / "logs" / "kimdis_fetch_runs.csv"
 DEFAULT_STATE_FILE = REPO_DIR / "state" / "kimdis_state.json"
+EXTENDED_CPV_CSV = REPO_DIR / "data" / "mappings" / "cpv_dictionary_extended.csv"
 
 
-DEFAULT_CPVS: dict[str, str] = {
+_SEED_CPVS: dict[str, str] = {
     "75251100-1": "Υπηρεσίες καταπολέμησης πυρκαγιών",
     "75251110-4": "Υπηρεσίες πρόληψης πυρκαγιών",
     "75251120-7": "Υπηρεσίες καταπολέμησης δασοπυρκαγιών",
@@ -44,6 +45,29 @@ DEFAULT_CPVS: dict[str, str] = {
     "35111000-5": "Πυροσβεστικός εξοπλισμός",
     "35111200-7": "Υλικά πυρόσβεσης",
     "44480000-8": "Ποικίλος εξοπλισμός πυροπροστασίας"
+}
+
+
+def _load_extended_cpvs(path: Path) -> dict[str, str]:
+    """Load extended CPV dictionary from csv (cpv_key, cpv_value)."""
+    out: dict[str, str] = {}
+    if not path.exists():
+        return out
+    with path.open("r", encoding="utf-8", newline="") as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            key = str((row.get("cpv_key") or "")).strip()
+            value = str((row.get("cpv_value") or "")).strip()
+            if key and value:
+                out[key] = value
+    return out
+
+
+# Default CPV dictionary used for value mapping/fallback.
+# It combines fire-protection seed CPVs plus the extended dictionary.
+DEFAULT_CPVS: dict[str, str] = {
+    **_SEED_CPVS,
+    **_load_extended_cpvs(EXTENDED_CPV_CSV),
 }
 
 DEFAULT_EXCLUDE_KEYWORDS = [
@@ -66,6 +90,14 @@ SECONDARY_CPVS: dict[str, str] = {
     "45232152-2": "Έργα αντιπλημμυρικής / αποχετευτικής υποδομής",
 }
 SECONDARY_TITLE_KEYWORDS = ["πυροπροστασ"]
+
+# Single pass: fetch with both primary + secondary CPVs.
+FETCH_CPVS: dict[str, str] = {
+    **_SEED_CPVS,
+    **SECONDARY_CPVS,
+}
+PRIMARY_CPV_KEYS: set[str] = set(_SEED_CPVS.keys())
+SECONDARY_CPV_KEYS: set[str] = set(SECONDARY_CPVS.keys())
 
 
 def normalize_cell_value(value):
@@ -256,9 +288,17 @@ class ProcurementCollector:
             return True
 
         if self.title_include_keywords:
+            cpv_keys = [
+                ((cpv or {}).get("key", "") or "").strip()
+                for obj in (item.get("objectDetailsList") or [])
+                for cpv in ((obj or {}).get("cpvs") or [])
+            ]
+            has_primary = any(k in PRIMARY_CPV_KEYS for k in cpv_keys if k)
+            has_secondary = any(k in SECONDARY_CPV_KEYS for k in cpv_keys if k)
             normalized_title = normalize_string(item.get("title", "") or "")
             normalized_include = [normalize_string(k) for k in self.title_include_keywords]
-            if not any(k in normalized_title for k in normalized_include):
+            # Only secondary-only CPV matches require a title keyword.
+            if has_secondary and not has_primary and not any(k in normalized_title for k in normalized_include):
                 return True
 
         return False
@@ -474,6 +514,28 @@ def merge_with_existing_csv(output_csv: Path, new_df: pd.DataFrame) -> pd.DataFr
     return merged
 
 
+def finalize_output_df(df: pd.DataFrame) -> pd.DataFrame:
+    """Final cleanup before writing csv: dedupe, reindex, sort by contractSignedDate."""
+    if df.empty:
+        return df.reset_index(drop=True)
+
+    dedupe_df = df.copy()
+    for col in dedupe_df.columns:
+        dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
+    out = df.loc[~dedupe_df.duplicated()].reset_index(drop=True)
+
+    if "contractSignedDate" in out.columns:
+        signed_dt = pd.to_datetime(out["contractSignedDate"], errors="coerce")
+        out = (
+            out.assign(_contractSignedDate_sort=signed_dt)
+            .sort_values("_contractSignedDate_sort", kind="stable", na_position="last")
+            .drop(columns=["_contractSignedDate_sort"])
+            .reset_index(drop=True)
+        )
+
+    return out
+
+
 def merge_raw_items(existing_items: list[dict[str, Any]], new_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged = []
     seen: set[str] = set()
@@ -563,21 +625,8 @@ def main() -> None:
             print(f"Backup saved: {len(items)} rows -> {cfg.backup_json}")
 
         collector = ProcurementCollector(
-            cpvs=DEFAULT_CPVS,
+            cpvs=FETCH_CPVS,
             start_date=cfg.start_date,
-            end_date=cfg.end_date,
-            max_window_days=cfg.max_window_days,
-            exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
-            request_timeout=cfg.request_timeout,
-            retry_sleep_seconds=cfg.retry_sleep_seconds,
-            request_wait_seconds=cfg.request_wait_seconds,
-        )
-        # Secondary pass: broad CPVs filtered by title keyword (e.g. "πυροπροστασ").
-        # This catches municipalities that use generic infrastructure CPVs for fire-protection work.
-        # Secondary items are tagged with _src="secondary" so they survive round-trips through backup.
-        secondary_collector = ProcurementCollector(
-            cpvs=SECONDARY_CPVS,
-            start_date=effective_start,
             end_date=cfg.end_date,
             max_window_days=cfg.max_window_days,
             exclude_keywords=DEFAULT_EXCLUDE_KEYWORDS,
@@ -588,14 +637,10 @@ def main() -> None:
         )
 
         if cfg.from_backup:
-            all_backup = _load_backup()
-            collector.items = [item for item in all_backup if item.get("_src") != "secondary"]
-            secondary_collector.items = [item for item in all_backup if item.get("_src") == "secondary"]
-            print(f"Loaded {len(collector.items)} primary + {len(secondary_collector.items)} secondary rows from backup")
+            collector.items = _load_backup()
+            print(f"Loaded {len(collector.items)} rows from backup")
         else:
             existing_items = [] if cfg.full_refresh else _load_backup()
-            existing_primary = [i for i in existing_items if i.get("_src") != "secondary"]
-            existing_secondary = [i for i in existing_items if i.get("_src") == "secondary"]
 
             last_fetch = None
             if not cfg.full_refresh:
@@ -606,30 +651,17 @@ def main() -> None:
                 effective_start = last_fetch.date()
 
             collector.start_date = effective_start
-            secondary_collector.start_date = effective_start
 
             # Primary: incremental saves to backup during fetch (safety net).
             collector.fetch_all(cfg.backup_json)
             if not cfg.full_refresh:
-                collector.items = merge_raw_items(existing_primary, collector.items)
+                collector.items = merge_raw_items(existing_items, collector.items)
 
-            # Secondary: no incremental saves (would overwrite primary); tag items for routing.
-            print("\n--- Secondary pass (broad CPVs + title filter) ---")
-            secondary_collector.fetch_all()
-            for item in secondary_collector.items:
-                item["_src"] = "secondary"
-            if not cfg.full_refresh:
-                secondary_collector.items = merge_raw_items(existing_secondary, secondary_collector.items)
+            _save_backup(collector.items)
 
-            _save_backup([*collector.items, *secondary_collector.items])
+        fetched_records = len(collector.items)
 
-        fetched_records = len(collector.items) + len(secondary_collector.items)
-
-        primary_df = collector.build_dataset()
-        secondary_df = secondary_collector.build_dataset()
-        print(f"Secondary rows after title filter: {len(secondary_df)}")
-
-        new_df = pd.concat([primary_df, secondary_df], ignore_index=True)
+        new_df = collector.build_dataset()
         if not new_df.empty:
             dedupe_df = new_df.copy()
             for col in dedupe_df.columns:
@@ -641,6 +673,7 @@ def main() -> None:
         else:
             output_df = merge_with_existing_csv(cfg.output_csv, new_df)
 
+        output_df = finalize_output_df(output_df)
         output_rows = len(output_df)
 
         cfg.output_csv.parent.mkdir(parents=True, exist_ok=True)

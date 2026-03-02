@@ -563,7 +563,7 @@ export default function ContractAnalysis() {
   useEffect(() => {
     let cancelled = false
     supabase
-      .from('raw_procurements')
+      .from('procurement')
       .select('id', { count: 'exact', head: true })
       .then(({ count, error }) => {
         if (cancelled || error) return
@@ -588,7 +588,7 @@ export default function ContractAnalysis() {
 
       {/* ── Header ── */}
       <div className="ca-header section-head">
-        <div className="eyebrow">Ανάλυση Δεδομένων / raw_procurements.csv · χωρίς ΦΠΑ</div>
+        <div className="eyebrow">Ανάλυση Δεδομένων / procurement · χωρίς ΦΠΑ</div>
         <h2>Ανάλυση Συμβάσεων Πυροπροστασίας 2024–2026</h2>
         <p className="ca-header-note">
           Στατιστική επεξεργασία <strong>3.875 καταχωρημένων συμβάσεων</strong> από τα αρχεία Διαύγεια / ΚΗΜΔΗΣ.
@@ -603,7 +603,7 @@ export default function ContractAnalysis() {
           {
             label: 'Σύνολο Συμβάσεων',
             value: liveContractCount != null ? liveContractCount.toLocaleString('el-GR') : '…',
-            note: 'live count από raw_procurements',
+            note: 'live count από procurement',
           },
           { label: 'Συνολική Δαπάνη',       value: '€ 760,7M',  note: 'χωρίς ΦΠΑ · 2024–2026' },
           { label: 'Μέσο Ποσό',            value: '€ 196.305',  note: 'διάμεσος: € 13.032 χ.ΦΠΑ' },
@@ -807,7 +807,7 @@ export default function ContractAnalysis() {
       <div className="ca-footer-note">
         <span className="eyebrow">Πηγή δεδομένων</span>
         <span>
-          raw_procurements.csv · 3.875 εγγραφές · Ιαν 2024 – Φεβ 2026 · Διαύγεια / ΚΗΜΔΗΣ ·
+          procurement · 3.875 εγγραφές · Ιαν 2024 – Φεβ 2026 · Διαύγεια / ΚΗΜΔΗΣ ·
           Τιμές χωρίς ΦΠΑ · Τελευταία επεξεργασία: Φεβ 2026
         </span>
       </div>

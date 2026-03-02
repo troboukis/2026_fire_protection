@@ -47,22 +47,6 @@ interface ProcurementDecision {
   contractor_name: string | null
 }
 
-/* ── Mappers ──────────────────────────────────────────────────── */
-function mapMunicipalRawRow(r: Record<string, unknown>): ProcurementDecision {
-  return {
-    ada:             String(r.procurement_id ?? ''),
-    org_type:        cleanStr(r.org_type),
-    issue_date:      cleanStr(r.issue_date),
-    subject:         cleanStr(r.subject),
-    decision_type:   cleanStr(r.decision_type),
-    amount_eur:      r.amount_eur != null ? (isNaN(Number(r.amount_eur)) ? null : Number(r.amount_eur)) : null,
-    document_url:    cleanStr(r.document_url),
-    authority_level: cleanStr(r.authority_level),
-    org_name_clean:  cleanStr(r.org_name_clean) ?? cleanStr(r.organization_value),
-    contractor_name: cleanStr(r.contractor_name),
-  }
-}
-
 function mapNationalRawRow(r: Record<string, unknown>): ProcurementDecision {
   const diavgeiaAda = cleanStr(r.diavgeia_ada)
   return {
@@ -85,25 +69,118 @@ function mapNationalRawRow(r: Record<string, unknown>): ProcurementDecision {
 
 /* ── Fetchers ─────────────────────────────────────────────────── */
 async function fetchProcurement(municipalityId: string): Promise<ProcurementDecision[]> {
+  const chunk = <T,>(arr: T[], size: number): T[][] => {
+    const out: T[][] = []
+    for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
+    return out
+  }
+
   const { data, error } = await supabase
-    .from('v_raw_procurements_municipality')
-    .select('procurement_id, org_type, issue_date, subject, decision_type, amount_eur, document_url, authority_level, org_name_clean, organization_value, contractor_name')
-    .eq('municipality_id', municipalityId)
-    .order('issue_date', { ascending: false })
+    .from('procurement')
+    .select('id, submission_at, title, procedure_type_value, contract_budget, budget, diavgeia_ada, organization_key')
+    .eq('municipality_key', municipalityId)
+    .order('submission_at', { ascending: false })
     .limit(1000)
   if (error) throw error
-  return (data ?? []).map(r => mapMunicipalRawRow(r as Record<string, unknown>))
+  const baseRows = (data ?? []) as Array<{
+    id: number
+    submission_at: string | null
+    title: string | null
+    procedure_type_value: string | null
+    contract_budget: number | null
+    budget: number | null
+    diavgeia_ada: string | null
+    organization_key: string | null
+  }>
+
+  const procurementIds = baseRows.map((r) => r.id)
+  const orgKeys = Array.from(new Set(baseRows.map((r) => cleanStr(r.organization_key)).filter(Boolean))) as string[]
+
+  const paymentByProcId = new Map<number, { amount_without_vat: number | null; beneficiary_name: string | null }>()
+  for (const ids of chunk(procurementIds, 500)) {
+    const { data: paymentRows } = await supabase
+      .from('payment')
+      .select('procurement_id, amount_without_vat, beneficiary_name')
+      .in('procurement_id', ids)
+    for (const row of (paymentRows ?? []) as Array<{ procurement_id: number; amount_without_vat: number | null; beneficiary_name: string | null }>) {
+      if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
+    }
+  }
+
+  const orgNameByKey = new Map<string, string>()
+  for (const keys of chunk(orgKeys, 500)) {
+    const { data: orgRows } = await supabase
+      .from('organization')
+      .select('organization_key, organization_normalized_value, organization_value')
+      .in('organization_key', keys)
+    for (const row of (orgRows ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null }>) {
+      if (!orgNameByKey.has(row.organization_key)) {
+        orgNameByKey.set(row.organization_key, cleanStr(row.organization_normalized_value) ?? cleanStr(row.organization_value) ?? row.organization_key)
+      }
+    }
+  }
+
+  return baseRows.map((r) => {
+    const p = paymentByProcId.get(r.id)
+    const orgName = cleanStr(r.organization_key) ? (orgNameByKey.get(cleanStr(r.organization_key) as string) ?? null) : null
+    const authorityLevel = ((): string | null => {
+      const n = (orgName ?? '').toUpperCase()
+      if (!n) return null
+      if (n.startsWith('ΔΗΜΟΣ')) return 'municipality'
+      if (n.startsWith('ΠΕΡΙΦΕΡΕΙΑ')) return 'region'
+      if (n.includes('ΑΠΟΚΕΝΤΡΩΜΕΝΗ')) return 'decentralized'
+      return 'other'
+    })()
+    const ada = cleanStr(r.diavgeia_ada)
+    return {
+      ada: ada ?? String(r.id),
+      org_type: null,
+      issue_date: cleanStr(r.submission_at),
+      subject: cleanStr(r.title),
+      decision_type: cleanStr(r.procedure_type_value),
+      amount_eur: p?.amount_without_vat ?? (r.contract_budget != null ? Number(r.contract_budget) : r.budget != null ? Number(r.budget) : null),
+      document_url: ada ? `https://diavgeia.gov.gr/doc/${ada}` : null,
+      authority_level: authorityLevel,
+      org_name_clean: orgName,
+      contractor_name: cleanStr(p?.beneficiary_name),
+    }
+  })
 }
 
 async function fetchNationalProcurement(): Promise<ProcurementDecision[]> {
+  const { data: orgRows, error: orgError } = await supabase
+    .from('organization')
+    .select('organization_key')
+    .ilike('organization_normalized_value', 'ΥΠΟΥΡΓΕΙΟ%')
+    .limit(2000)
+  if (orgError) throw orgError
+  const orgKeys = Array.from(new Set((orgRows ?? []).map((r) => cleanStr((r as { organization_key?: string | null }).organization_key)).filter(Boolean))) as string[]
+  if (orgKeys.length === 0) return []
+
   const { data, error } = await supabase
-    .from('raw_procurements')
-    .select('id, reference_number, diavgeia_ada, submission_at, title, procedure_type_value, total_cost_with_vat, total_cost_without_vat, organization_value, first_member_name')
-    .ilike('organization_value', 'ΥΠΟΥΡΓΕΙΟ%')
+    .from('procurement')
+    .select('id, diavgeia_ada, submission_at, title, procedure_type_value, contract_budget, budget, organization_key')
+    .in('organization_key', orgKeys)
     .order('submission_at', { ascending: false })
     .limit(500)
   if (error) throw error
-  return (data ?? []).map(r => mapNationalRawRow(r as Record<string, unknown>))
+
+  const orgNameByKey = new Map<string, string>()
+  for (const row of (orgRows ?? []) as Array<{ organization_key: string }>) {
+    if (!orgNameByKey.has(row.organization_key)) orgNameByKey.set(row.organization_key, row.organization_key)
+  }
+  return (data ?? []).map((row) => mapNationalRawRow({
+    id: (row as { id: number }).id,
+    diavgeia_ada: (row as { diavgeia_ada: string | null }).diavgeia_ada,
+    submission_at: (row as { submission_at: string | null }).submission_at,
+    title: (row as { title: string | null }).title,
+    procedure_type_value: (row as { procedure_type_value: string | null }).procedure_type_value,
+    total_cost_without_vat: (row as { contract_budget: number | null }).contract_budget ?? (row as { budget: number | null }).budget,
+    total_cost_with_vat: null,
+    organization_value: orgNameByKey.get(cleanStr((row as { organization_key: string | null }).organization_key) ?? '') ?? cleanStr((row as { organization_key: string | null }).organization_key),
+    first_member_name: null,
+    reference_number: null,
+  } as Record<string, unknown>))
 }
 
 /* ── Helpers ──────────────────────────────────────────────────── */
@@ -137,13 +214,20 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   useEffect(() => {
     setLoading(true); setError(null); setData(null)
     supabase
-      .from('municipalities')
-      .select('id, name, forest_ha')
-      .eq('id', id)
-      .single()
+      .from('municipality')
+      .select('municipality_key, municipality_normalized_value, municipality_value')
+      .eq('municipality_key', id)
+      .limit(1)
       .then(({ data: row, error: err }) => {
         if (err) setError(err.message)
-        else setData(row)
+        else {
+          const first = (row?.[0] ?? null) as { municipality_key?: string | null; municipality_normalized_value?: string | null; municipality_value?: string | null } | null
+          setData(first ? {
+            id: cleanStr(first.municipality_key) ?? id,
+            name: cleanStr(first.municipality_normalized_value) ?? cleanStr(first.municipality_value) ?? id,
+            forest_ha: null,
+          } : { id, name: id, forest_ha: null })
+        }
         setLoading(false)
       })
   }, [id])
@@ -151,18 +235,26 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   useEffect(() => {
     setFireHistory([]); setFireLoading(true)
     supabase
-      .from('v_municipality_fire_summary')
-      .select('year, incident_count, total_burned_ha, max_single_fire_ha')
-      .eq('municipality_id', id)
-      .order('year', { ascending: true })
+      .from('forest_fire')
+      .select('year, burned_total_ha')
+      .eq('municipality_key', id)
       .then(({ data: rows }) => {
+        const agg = new Map<number, { incident_count: number; total_burned_ha: number; max_single_fire_ha: number | null }>()
+        for (const r of (rows ?? []) as Array<{ year: number | string | null; burned_total_ha: number | string | null }>) {
+          const year = Number(r.year)
+          if (!Number.isFinite(year)) continue
+          const ha = Number(r.burned_total_ha ?? 0)
+          const prev = agg.get(year) ?? { incident_count: 0, total_burned_ha: 0, max_single_fire_ha: null }
+          prev.incident_count += 1
+          prev.total_burned_ha += Number.isFinite(ha) ? ha : 0
+          prev.max_single_fire_ha = prev.max_single_fire_ha == null ? ha : Math.max(prev.max_single_fire_ha, ha)
+          agg.set(year, prev)
+        }
+        const yearly = Array.from(agg.entries())
+          .sort((a, b) => a[0] - b[0])
+          .map(([year, v]) => ({ year, ...v }))
         setFireHistory(
-          (rows ?? []).map(r => ({
-            year:               Number(r.year),
-            incident_count:     Number(r.incident_count),
-            total_burned_ha:    Number(r.total_burned_ha ?? 0),
-            max_single_fire_ha: r.max_single_fire_ha != null ? Number(r.max_single_fire_ha) : null,
-          }))
+          yearly
         )
         setFireLoading(false)
       })

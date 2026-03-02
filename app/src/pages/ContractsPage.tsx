@@ -5,14 +5,16 @@ import { supabase } from '../lib/supabase'
 
 type ContractRow = {
   id: number
-  submission_at: string | null
+  contract_signed_date: string | null
   organization_value: string | null
   title: string | null
-  cpv_values: string | null
+  reference_number: string | null
+  cpv_value: string | null
   procedure_type_value: string | null
-  first_member_name: string | null
-  total_cost_without_vat: number | null
+  beneficiary_name: string | null
+  amount_without_vat: number | null
   diavgeia_ada: string | null
+  total_count: number
 }
 
 function clean(v: unknown): string {
@@ -20,12 +22,6 @@ function clean(v: unknown): string {
   const s = String(v).trim()
   if (!s || s.toLowerCase() === 'nan' || s.toLowerCase() === 'none') return ''
   return s
-}
-
-function firstPipePart(v: string | null): string {
-  const s = clean(v)
-  if (!s) return ''
-  return s.split('|').map(x => x.trim()).filter(Boolean)[0] ?? ''
 }
 
 function fmtDate(iso: string | null): string {
@@ -62,84 +58,78 @@ function periodLabel(dateFrom: string, dateTo: string): string {
 
 export default function ContractsPage() {
   const [rows, setRows] = useState<ContractRow[]>([])
+  const [totalCount, setTotalCount] = useState(0)
   const [loading, setLoading] = useState(true)
   const [q, setQ] = useState('')
   const [org, setOrg] = useState('')
   const [procedure, setProcedure] = useState('')
+  const [procedureOptions, setProcedureOptions] = useState<string[]>([])
   const [dateFrom, setDateFrom] = useState(() => isoDateDaysAgo(30))
   const [dateTo, setDateTo] = useState(() => isoToday())
   const [minAmount, setMinAmount] = useState('')
+  const [page, setPage] = useState(1)
+  const pageSize = 50
+
+  useEffect(() => {
+    let cancelled = false
+    const loadProcedures = async () => {
+      const { data, error } = await supabase
+        .from('procurement')
+        .select('procedure_type_value')
+        .not('procedure_type_value', 'is', null)
+        .limit(5000)
+      if (cancelled || error) return
+      const vals = Array.from(new Set(((data ?? []) as Array<{ procedure_type_value: string | null }>)
+        .map((r) => clean(r.procedure_type_value))
+        .filter(Boolean)))
+      setProcedureOptions(vals.sort((a, b) => a.localeCompare(b, 'el')))
+    }
+    loadProcedures()
+    return () => { cancelled = true }
+  }, [])
 
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-
-    const loadAll = async () => {
-      const pageSize = 1000
-      let from = 0
-      let all: ContractRow[] = []
-
-      while (true) {
-        const { data, error } = await supabase
-          .from('raw_procurements')
-          .select(
-            'id, submission_at, organization_value, title, cpv_values, procedure_type_value, first_member_name, total_cost_without_vat, diavgeia_ada',
-          )
-          .not('submission_at', 'is', null)
-          .order('submission_at', { ascending: false })
-          .range(from, from + pageSize - 1)
-
-        if (error) break
-        const batch = (data ?? []) as ContractRow[]
-        all = all.concat(batch)
-        if (batch.length < pageSize) break
-        from += pageSize
-      }
-
-      if (!cancelled) {
-        setRows(all)
+    const loadPage = async () => {
+      const min = minAmount ? Number(minAmount) : null
+      const { data, error } = await supabase.rpc('get_contracts_page', {
+        p_q: q || null,
+        p_org: org || null,
+        p_procedure: procedure || null,
+        p_date_from: dateFrom || null,
+        p_date_to: dateTo || null,
+        p_min_amount: min != null && Number.isFinite(min) ? min : null,
+        p_page: page,
+        p_page_size: pageSize,
+      })
+      if (cancelled) return
+      if (error) {
+        setRows([])
+        setTotalCount(0)
         setLoading(false)
+        return
       }
+      const next = (data ?? []) as ContractRow[]
+      const deduped = Array.from(
+        new Map(
+          next.map((r) => {
+            const k =
+              clean(r.diavgeia_ada) ||
+              `${clean(r.organization_value)}|${clean(r.title)}|${clean(r.contract_signed_date)}|${String(r.amount_without_vat ?? '')}`
+            return [k, r] as const
+          }),
+        ).values(),
+      )
+      setRows(deduped)
+      setTotalCount(next[0]?.total_count ?? 0)
+      setLoading(false)
     }
-
-    loadAll()
+    loadPage()
     return () => { cancelled = true }
-  }, [])
+  }, [q, org, procedure, dateFrom, dateTo, minAmount, page])
 
-  const procedures = useMemo(() => {
-    const vals = new Set<string>()
-    for (const r of rows) {
-      const p = clean(r.procedure_type_value)
-      if (p) vals.add(p)
-    }
-    return [...vals].sort((a, b) => a.localeCompare(b, 'el'))
-  }, [rows])
-
-  const filtered = useMemo(() => {
-    const query = q.trim().toLocaleLowerCase('el-GR')
-    const orgQuery = org.trim().toLocaleLowerCase('el-GR')
-    const min = minAmount ? Number(minAmount) : null
-    const fromTs = dateFrom ? new Date(dateFrom).getTime() : null
-    const toTs = dateTo ? new Date(dateTo).getTime() : null
-
-    return rows.filter((r) => {
-      const title = clean(r.title).toLocaleLowerCase('el-GR')
-      const organization = clean(r.organization_value).toLocaleLowerCase('el-GR')
-      const beneficiary = clean(r.first_member_name).toLocaleLowerCase('el-GR')
-      const cpv = firstPipePart(r.cpv_values).toLocaleLowerCase('el-GR')
-      const proc = clean(r.procedure_type_value)
-      const amount = r.total_cost_without_vat != null ? Number(r.total_cost_without_vat) : null
-      const ts = r.submission_at ? new Date(r.submission_at).getTime() : null
-
-      if (query && !`${title} ${organization} ${beneficiary} ${cpv}`.includes(query)) return false
-      if (orgQuery && !organization.includes(orgQuery)) return false
-      if (procedure && proc !== procedure) return false
-      if (min != null && !Number.isNaN(min) && (amount == null || amount < min)) return false
-      if (fromTs != null && (ts == null || ts < fromTs)) return false
-      if (toTs != null && (ts == null || ts > toTs + 86_399_999)) return false
-      return true
-    })
-  }, [rows, q, org, procedure, minAmount, dateFrom, dateTo])
+  const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
 
   return (
     <div className="contracts-page">
@@ -151,22 +141,22 @@ export default function ContractsPage() {
           <p>
             {loading
               ? 'Φόρτωση…'
-              : `${filtered.length.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
+              : `${totalCount.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
           </p>
         </div>
         <Link className="contracts-back" to="/">← Επιστροφή στην αρχική</Link>
       </header>
 
       <section className="contracts-filters section-rule">
-        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Αναζήτηση (τίτλος/φορέας/δικαιούχος/CPV)" />
-        <input value={org} onChange={(e) => setOrg(e.target.value)} placeholder="Φορέας" />
-        <select value={procedure} onChange={(e) => setProcedure(e.target.value)}>
+        <input value={q} onChange={(e) => { setQ(e.target.value); setPage(1) }} placeholder="Αναζήτηση (τίτλος/φορέας/δικαιούχος/CPV)" />
+        <input value={org} onChange={(e) => { setOrg(e.target.value); setPage(1) }} placeholder="Φορέας" />
+        <select value={procedure} onChange={(e) => { setProcedure(e.target.value); setPage(1) }}>
           <option value="">Όλες οι διαδικασίες</option>
-          {procedures.map((p) => <option key={p} value={p}>{p}</option>)}
+          {procedureOptions.map((p) => <option key={p} value={p}>{p}</option>)}
         </select>
-        <input value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} type="date" />
-        <input value={dateTo} onChange={(e) => setDateTo(e.target.value)} type="date" />
-        <input value={minAmount} onChange={(e) => setMinAmount(e.target.value)} type="number" min="0" placeholder="Ελάχιστο ποσό (χωρίς ΦΠΑ)" />
+        <input value={dateFrom} onChange={(e) => { setDateFrom(e.target.value); setPage(1) }} type="date" />
+        <input value={dateTo} onChange={(e) => { setDateTo(e.target.value); setPage(1) }} type="date" />
+        <input value={minAmount} onChange={(e) => { setMinAmount(e.target.value); setPage(1) }} type="number" min="0" placeholder="Ελάχιστο ποσό (χωρίς ΦΠΑ)" />
       </section>
 
       <section className="contracts-table-wrap section-rule">
@@ -180,28 +170,32 @@ export default function ContractsPage() {
               <th>Δικαιούχος</th>
               <th>Διαδικασία</th>
               <th>Ποσό χωρίς ΦΠΑ</th>
-              <th>Έγγραφο</th>
+              <th>ΑΔΑΜ</th>
             </tr>
           </thead>
           <tbody>
-            {filtered.map((r) => {
-              const ada = clean(r.diavgeia_ada)
-              const docUrl = ada ? `https://diavgeia.gov.gr/doc/${ada}` : null
+            {rows.map((r) => {
+              const refNo = clean(r.reference_number)
               return (
                 <tr key={r.id}>
-                  <td>{fmtDate(r.submission_at)}</td>
+                  <td>{fmtDate(r.contract_signed_date)}</td>
                   <td>{clean(r.organization_value) || '—'}</td>
                   <td>{clean(r.title) || '—'}</td>
-                  <td>{firstPipePart(r.cpv_values) || '—'}</td>
-                  <td>{clean(r.first_member_name).toLocaleUpperCase('el-GR') || '—'}</td>
+                  <td>{clean(r.cpv_value) || '—'}</td>
+                  <td>{clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}</td>
                   <td>{clean(r.procedure_type_value) || '—'}</td>
-                  <td className="contracts-amount">{fmtEur(r.total_cost_without_vat)}</td>
-                  <td>{docUrl ? <a href={docUrl} target="_blank" rel="noreferrer">Άνοιγμα</a> : '—'}</td>
+                  <td className="contracts-amount">{fmtEur(r.amount_without_vat)}</td>
+                  <td>{refNo || '—'}</td>
                 </tr>
               )
             })}
           </tbody>
         </table>
+        <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
+          <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
+          <span>Σελίδα {page} / {totalPages}</span>
+          <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>Επόμενη</button>
+        </div>
       </section>
     </div>
   )
