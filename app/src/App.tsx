@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ContractAnalysis from './components/ContractAnalysis'
 import ComponentTag from './components/ComponentTag'
+import ContractModal, { type ContractModalContract } from './components/ContractModal'
+import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import { supabase } from './lib/supabase'
 
 type ProcurementRecord = {
@@ -116,7 +118,7 @@ function formatCommitDateTimeEl(iso: string): string {
   }).format(dt)
 }
 
-type LatestContractCard = {
+type LatestContractCard = LatestContractCardView & ContractModalContract & {
   id: string
   who: string
   what: string
@@ -169,36 +171,33 @@ type HeroStats = {
   topCpvVsPrev1Pct: number | null
 }
 
-type HeroStatsRpcRow = {
-  period_main_start: string | null
-  period_main_end: string | null
-  total_main: number | string | null
-  total_prev1: number | string | null
-  total_prev2: number | string | null
-  total_main_vs_prev1_pct: number | string | null
-  top_contract_type: string | null
-  top_contract_type_count: number | string | null
-  top_contract_type_prev1_count: number | string | null
-  top_contract_type_vs_prev1_pct: number | string | null
-  top_cpv_text: string | null
-  top_cpv_count: number | string | null
-  top_cpv_prev1_count: number | string | null
-  top_cpv_vs_prev1_pct: number | string | null
-}
-
-type HeroCurveRpcRow = {
-  series_year: number | string
-  point_date: string | null
-  day_of_year: number | string
-  year_days: number | string
-  cumulative_amount: number | string | null
-}
-
 type HeroCurvePoint = {
   year: number
   dayOfYear: number
   yearDays: number
   value: number
+}
+
+type HeroSectionRpcPoint = {
+  series_year: number | string
+  day_of_year: number | string
+  year_days: number | string
+  cumulative_amount: number | string | null
+}
+
+type HeroSectionRpcResponse = {
+  period_main_start: string | null
+  period_main_end: string | null
+  total_main: number | string | null
+  total_prev1: number | string | null
+  total_prev2: number | string | null
+  top_contract_type: string | null
+  top_contract_type_count: number | string | null
+  top_contract_type_prev1_count: number | string | null
+  top_cpv_text: string | null
+  top_cpv_count: number | string | null
+  top_cpv_prev1_count: number | string | null
+  curve_points: HeroSectionRpcPoint[] | null
 }
 
 function cleanText(v: unknown): string | null {
@@ -487,30 +486,26 @@ export default function App() {
 
     const loadLatestContracts = async () => {
       try {
+        const chunk = <T,>(arr: T[], size: number): T[][] => {
+          const out: T[][] = []
+          for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
+          return out
+        }
+
         const { data, error } = await supabase
-          .from('raw_procurements')
+          .from('procurement')
           .select(`
             id,
-            organization_value,
+            organization_key,
             title,
             submission_at,
             contract_signed_date,
-            nuts_city,
-            nuts_code_value,
-            cpv_values,
             short_descriptions,
             procedure_type_value,
-            first_member_name,
-            first_member_vat_number,
             reference_number,
             contract_number,
-            total_cost_without_vat,
-            total_cost_with_vat,
             contract_budget,
             budget,
-            cpv_values,
-            cpv_keys,
-            signers,
             assign_criteria,
             contract_type,
             units_operator,
@@ -519,8 +514,6 @@ export default function App() {
             funding_details_espa,
             funding_details_regular_budget,
             auction_ref_no,
-            payment_ref_no,
-            short_descriptions,
             organization_vat_number,
             start_date,
             end_date,
@@ -528,59 +521,139 @@ export default function App() {
           `)
           .not('submission_at', 'is', null)
           .order('submission_at', { ascending: false })
-          .limit(15)
+          .limit(80)
 
         if (cancelled || error) return
 
+        const ids = ((data ?? []) as Array<{ id: number }>).map((r) => r.id)
+        const orgKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { organization_key?: string | null }).organization_key)).filter(Boolean))) as string[]
+
+        const paymentByProcId = new Map<number, { beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>()
+        for (const c of chunk(ids, 200)) {
+          const { data: pData } = await supabase
+            .from('payment')
+            .select('procurement_id, beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
+            .in('procurement_id', c)
+          for (const p of (pData ?? []) as Array<{ procurement_id: number; beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>) {
+            if (!paymentByProcId.has(p.procurement_id)) paymentByProcId.set(p.procurement_id, p)
+          }
+        }
+
+        const cpvByProcId = new Map<number, { cpv_key: string | null; cpv_value: string | null }>()
+        for (const c of chunk(ids, 200)) {
+          const { data: cpvData } = await supabase
+            .from('cpv')
+            .select('procurement_id, cpv_key, cpv_value')
+            .in('procurement_id', c)
+          for (const cpv of (cpvData ?? []) as Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }>) {
+            if (!cpvByProcId.has(cpv.procurement_id)) cpvByProcId.set(cpv.procurement_id, cpv)
+          }
+        }
+
+        const orgNameByKey = new Map<string, string>()
+        for (const c of chunk(orgKeys, 200)) {
+          const { data: oData } = await supabase
+            .from('organization')
+            .select('organization_key, organization_normalized_value, organization_value')
+            .in('organization_key', c)
+          for (const o of (oData ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null }>) {
+            if (!orgNameByKey.has(o.organization_key)) {
+              orgNameByKey.set(o.organization_key, cleanText(o.organization_normalized_value) ?? cleanText(o.organization_value) ?? o.organization_key)
+            }
+          }
+        }
+
         const cards: LatestContractCard[] = (data ?? []).map((row) => {
-          const amountWithoutVat = row.total_cost_without_vat != null
-            ? Number(row.total_cost_without_vat)
-            : null
+          const r = row as {
+            id: number
+            organization_key: string | null
+            title: string | null
+            submission_at: string | null
+            contract_signed_date: string | null
+            short_descriptions: string | null
+            procedure_type_value: string | null
+            reference_number: string | null
+            contract_number: string | null
+            contract_budget: number | null
+            budget: number | null
+            assign_criteria: string | null
+            contract_type: string | null
+            units_operator: string | null
+            funding_details_cofund: string | null
+            funding_details_self_fund: string | null
+            funding_details_espa: string | null
+            funding_details_regular_budget: string | null
+            auction_ref_no: string | null
+            organization_vat_number: string | null
+            start_date: string | null
+            end_date: string | null
+            diavgeia_ada: string | null
+          }
+          const p = paymentByProcId.get(r.id)
+          const c = cpvByProcId.get(r.id)
+          const amountWithoutVat = p?.amount_without_vat ?? null
 
           const why =
-            firstPipePart(row.cpv_values) ??
-            firstPipePart(row.short_descriptions) ??
+            cleanText(c?.cpv_value) ??
+            firstPipePart(r.short_descriptions) ??
             '—'
-          const diavgeiaAda = cleanText(row.diavgeia_ada)
+          const diavgeiaAda = cleanText(r.diavgeia_ada)
+          const orgKey = cleanText(r.organization_key)
 
           return {
-            id: String(row.id),
-            who: cleanText(row.organization_value) ?? '—',
-            what: cleanText(row.title) ?? '—',
-            when: formatDateEl(cleanText(row.submission_at)),
+            id: String(r.id),
+            who: (orgKey ? orgNameByKey.get(orgKey) : null) ?? '—',
+            what: cleanText(r.title) ?? '—',
+            when: formatDateEl(cleanText(r.submission_at)),
             why: toSentenceCaseEl(why),
-            beneficiary: toUpperEl(cleanText(row.first_member_name)),
-            contractType: cleanText(row.procedure_type_value) ?? '—',
+            beneficiary: toUpperEl(cleanText(p?.beneficiary_name)),
+            contractType: cleanText(r.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
             withoutVatAmount: formatEur(amountWithoutVat),
-            withVatAmount: formatEur(row.total_cost_with_vat != null ? Number(row.total_cost_with_vat) : null),
-            referenceNumber: cleanText(row.reference_number) ?? '—',
-            contractNumber: cleanText(row.contract_number) ?? '—',
-            cpv: firstPipePart(row.cpv_values) ?? '—',
-            cpvCode: firstPipePart(row.cpv_keys) ?? '—',
-            signedAt: formatDateEl(cleanText(row.contract_signed_date)),
-            startDate: formatDateEl(cleanText(row.start_date)),
-            endDate: formatDateEl(cleanText(row.end_date)),
-            organizationVat: cleanText(row.organization_vat_number) ?? '—',
-            beneficiaryVat: cleanText(row.first_member_vat_number) ?? '—',
-            signers: cleanText(row.signers) ?? '—',
-            assignCriteria: cleanText(row.assign_criteria) ?? '—',
-            contractKind: cleanText(row.contract_type) ?? '—',
-            unitsOperator: cleanText(row.units_operator) ?? '—',
-            fundingCofund: cleanText(row.funding_details_cofund) ?? '—',
-            fundingSelf: cleanText(row.funding_details_self_fund) ?? '—',
-            fundingEspa: cleanText(row.funding_details_espa) ?? '—',
-            fundingRegular: cleanText(row.funding_details_regular_budget) ?? '—',
-            auctionRefNo: cleanText(row.auction_ref_no) ?? '—',
-            paymentRefNo: cleanText(row.payment_ref_no) ?? '—',
-            shortDescription: firstPipePart(row.short_descriptions) ?? '—',
-            rawBudget: formatEur(row.budget != null ? Number(row.budget) : null),
-            contractBudget: formatEur(row.contract_budget != null ? Number(row.contract_budget) : null),
+            withVatAmount: formatEur(p?.amount_with_vat ?? null),
+            referenceNumber: cleanText(r.reference_number) ?? '—',
+            contractNumber: cleanText(r.contract_number) ?? '—',
+            cpv: cleanText(c?.cpv_value) ?? '—',
+            cpvCode: cleanText(c?.cpv_key) ?? '—',
+            signedAt: formatDateEl(cleanText(r.contract_signed_date)),
+            startDate: formatDateEl(cleanText(r.start_date)),
+            endDate: formatDateEl(cleanText(r.end_date)),
+            organizationVat: cleanText(r.organization_vat_number) ?? '—',
+            beneficiaryVat: cleanText(p?.beneficiary_vat_number) ?? '—',
+            signers: cleanText(p?.signers) ?? '—',
+            assignCriteria: cleanText(r.assign_criteria) ?? '—',
+            contractKind: cleanText(r.contract_type) ?? '—',
+            unitsOperator: cleanText(r.units_operator) ?? '—',
+            fundingCofund: cleanText(r.funding_details_cofund) ?? '—',
+            fundingSelf: cleanText(r.funding_details_self_fund) ?? '—',
+            fundingEspa: cleanText(r.funding_details_espa) ?? '—',
+            fundingRegular: cleanText(r.funding_details_regular_budget) ?? '—',
+            auctionRefNo: cleanText(r.auction_ref_no) ?? '—',
+            paymentRefNo: cleanText(p?.payment_ref_no) ?? '—',
+            shortDescription: firstPipePart(r.short_descriptions) ?? '—',
+            rawBudget: formatEur(r.budget != null ? Number(r.budget) : null),
+            contractBudget: formatEur(r.contract_budget != null ? Number(r.contract_budget) : null),
             documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
           }
         })
 
-        setLatestContracts(cards)
+        const deduped = Array.from(
+          new Map(
+            cards.map((item) => {
+              const ref = cleanText(item.referenceNumber)
+              const contractNo = cleanText(item.contractNumber)
+              const doc = cleanText(item.documentUrl)
+              const identity =
+                (ref && ref !== '—' ? `ref:${ref}` : null) ??
+                (contractNo && contractNo !== '—' ? `contract:${contractNo}` : null) ??
+                (doc && doc !== '—' ? `doc:${doc}` : null) ??
+                `fallback:${item.who}|${item.what}|${item.signedAt}|${item.withoutVatAmount}`
+              return [identity, item] as const
+            }),
+          ).values(),
+        ).slice(0, 15)
+
+        setLatestContracts(deduped)
       } finally {
         if (!cancelled) setLatestContractsLoading(false)
       }
@@ -597,48 +670,35 @@ export default function App() {
 
     const loadHeroStats = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_raw_procurements_hero_stats', {
-          p_year_main: currentYear,
-          p_year_prev1: currentYear - 1,
-          p_year_prev2: currentYear - 2,
-          p_as_of_date: new Date().toISOString().slice(0, 10),
-        })
-
-        if (cancelled || error) return
-        const row = (data?.[0] as HeroStatsRpcRow | undefined) ?? null
-        if (!row) return
-
-        setHeroStats({
-          periodMainStart: cleanText(row.period_main_start) ?? '',
-          periodMainEnd: cleanText(row.period_main_end) ?? '',
-          totalMain: Number(row.total_main ?? 0),
-          totalPrev1: Number(row.total_prev1 ?? 0),
-          totalPrev2: Number(row.total_prev2 ?? 0),
-          totalVsPrev1Pct: row.total_main_vs_prev1_pct == null ? null : Number(row.total_main_vs_prev1_pct),
-          topContractType: cleanText(row.top_contract_type) ?? '—',
-          topContractTypeCount: Number(row.top_contract_type_count ?? 0),
-          topContractTypePrevCount: Number(row.top_contract_type_prev1_count ?? 0),
-          topContractTypeVsPrev1Pct: row.top_contract_type_vs_prev1_pct == null ? null : Number(row.top_contract_type_vs_prev1_pct),
-          topCpvText: toSentenceCaseEl(cleanText(row.top_cpv_text)),
-          topCpvCount: Number(row.top_cpv_count ?? 0),
-          topCpvPrevCount: Number(row.top_cpv_prev1_count ?? 0),
-          topCpvVsPrev1Pct: row.top_cpv_vs_prev1_pct == null ? null : Number(row.top_cpv_vs_prev1_pct),
-        })
-
-        const asOf = new Date().toISOString().slice(0, 10)
-        const { data: curveData, error: curveError } = await supabase.rpc('get_raw_procurements_cumulative_curve', {
-          p_as_of_date: asOf,
+        const { data, error } = await supabase.rpc('get_hero_section_data', {
           p_year_main: currentYear,
           p_year_start: YEAR_START,
         })
-        if (cancelled || curveError) return
+        if (cancelled || error || !data) return
 
-        const curveRows: HeroCurveRpcRow[] = (curveData ?? []) as HeroCurveRpcRow[]
-        const points: HeroCurvePoint[] = curveRows.map((r) => ({
-          year: Number(r.series_year),
-          dayOfYear: Number(r.day_of_year),
-          yearDays: Number(r.year_days),
-          value: Number(r.cumulative_amount ?? 0),
+        const payload = data as HeroSectionRpcResponse
+        setHeroStats({
+          periodMainStart: cleanText(payload.period_main_start) ?? '',
+          periodMainEnd: cleanText(payload.period_main_end) ?? '',
+          totalMain: Number(payload.total_main ?? 0),
+          totalPrev1: Number(payload.total_prev1 ?? 0),
+          totalPrev2: Number(payload.total_prev2 ?? 0),
+          totalVsPrev1Pct: null,
+          topContractType: cleanText(payload.top_contract_type) ?? '—',
+          topContractTypeCount: Number(payload.top_contract_type_count ?? 0),
+          topContractTypePrevCount: Number(payload.top_contract_type_prev1_count ?? 0),
+          topContractTypeVsPrev1Pct: null,
+          topCpvText: toSentenceCaseEl(cleanText(payload.top_cpv_text)),
+          topCpvCount: Number(payload.top_cpv_count ?? 0),
+          topCpvPrevCount: Number(payload.top_cpv_prev1_count ?? 0),
+          topCpvVsPrev1Pct: null,
+        })
+
+        const points: HeroCurvePoint[] = ((payload.curve_points ?? []) as HeroSectionRpcPoint[]).map((p) => ({
+          year: Number(p.series_year),
+          dayOfYear: Number(p.day_of_year),
+          yearDays: Number(p.year_days),
+          value: Number(p.cumulative_amount ?? 0),
         }))
         setHeroCurvePoints(points)
       } finally {
@@ -712,51 +772,24 @@ export default function App() {
               <article className="wire-item">
                 <span className="wire-item__slug">LIVE</span>
                 <h2>Φόρτωση τελευταίων συμβάσεων…</h2>
-                <p>Σύνδεση με το dataset `raw_procurements`.</p>
+                <p>Σύνδεση με το dataset `procurement`.</p>
               </article>
             )}
             {!latestContractsLoading && latestContracts.map((item) => (
-              <article
-                className="wire-item"
+              <LatestContractCardItem
                 key={item.id}
-                role="button"
-                tabIndex={0}
-                onClick={() => setSelectedContract(item)}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelectedContract(item) }}
-              >
-                <div className="wire-item__head">
-                  <span className="eyebrow wire-item__org">{item.who}</span>
-                  <span className="wire-item__date">{item.when}</span>
-                </div>
-                <h2>{item.what}</h2>
-                <div className="wire-item__rule" aria-hidden="true" />
-                <p className="wire-item__subtitle">{item.why}</p>
-                <div className="wire-item__footer">
-                  <p className="wire-item__amount">
-                    <span>{item.howMuch}</span>
-                    <span className="wire-item__arrow">→</span>
-                    <span className="wire-item__beneficiary">{item.beneficiary}</span>
-                  </p>
-                  <p className="wire-item__type">{toLowerEl(item.contractType)}</p>
-                </div>
-                {item.documentUrl && (
-                  <p className="wire-item__link">
-                    <a
-                      href={item.documentUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Άνοιγμα εγγράφου
-                    </a>
-                  </p>
-                )}
-              </article>
+                item={item}
+                onOpen={(id) => {
+                  const found = latestContracts.find((x) => x.id === id)
+                  if (found) setSelectedContract(found)
+                }}
+                contractTypeTransform={toLowerEl}
+              />
             ))}
             {!latestContractsLoading && latestContracts.length === 0 && (
               <article className="wire-item">
                 <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις.</h2>
-                <p>Ελέγξτε ότι ο πίνακας `raw_procurements` έχει δεδομένα.</p>
+                <p>Ελέγξτε ότι ο πίνακας `procurement` έχει δεδομένα.</p>
               </article>
             )}
           </div>
@@ -1353,70 +1386,14 @@ export default function App() {
       </main>
 
       {selectedContract && (
-        <div className="contract-modal-backdrop" onClick={() => setSelectedContract(null)}>
+        <>
           <DebugComponentLabel name="ContractModal" />
-          <article className="contract-modal" onClick={(e) => e.stopPropagation()}>
-            <header className="contract-modal__header">
-              <div>
-                <span className="eyebrow">{selectedContract.who}</span>
-                <h2>{selectedContract.what}</h2>
-              </div>
-              <button type="button" onClick={() => setSelectedContract(null)} aria-label="Κλείσιμο">
-                ✕
-              </button>
-            </header>
-
-            <p className="contract-modal__subtitle">{selectedContract.why}</p>
-
-            <div className="contract-modal__highlight">
-              <span className="contract-modal__amount">{selectedContract.withoutVatAmount}</span>
-              <span className="contract-modal__arrow">→</span>
-              <span className="contract-modal__beneficiary">{selectedContract.beneficiary}</span>
-            </div>
-
-            <div className="contract-modal__grid">
-              <div><span>Ημερομηνία</span><strong>{selectedContract.when}</strong></div>
-              <div><span>Τύπος Διαδικασίας</span><strong>{selectedContract.contractType}</strong></div>
-              <div><span>Κωδ. Αναφοράς</span><strong>{selectedContract.referenceNumber}</strong></div>
-              <div><span>Κωδ. Σύμβασης</span><strong>{selectedContract.contractNumber}</strong></div>
-              <div><span>CPV</span><strong>{selectedContract.cpv} ({selectedContract.cpvCode})</strong></div>
-              <div><span>Δικαιούχος ΑΦΜ</span><strong>{selectedContract.beneficiaryVat}</strong></div>
-              <div><span>Φορέας ΑΦΜ</span><strong>{selectedContract.organizationVat}</strong></div>
-              <div><span>Κριτήριο Ανάθεσης</span><strong>{selectedContract.assignCriteria}</strong></div>
-              <div><span>Τύπος Σύμβασης</span><strong>{selectedContract.contractKind}</strong></div>
-              <div><span>Υπογράφοντες</span><strong>{selectedContract.signers}</strong></div>
-              <div><span>Υπεύθυνη Μονάδα</span><strong>{selectedContract.unitsOperator}</strong></div>
-              <div><span>Περιγραφή</span><strong>{selectedContract.shortDescription}</strong></div>
-              <div><span>Υπογραφή</span><strong>{selectedContract.signedAt}</strong></div>
-              <div><span>Έναρξη</span><strong>{selectedContract.startDate}</strong></div>
-              <div><span>Λήξη</span><strong>{selectedContract.endDate}</strong></div>
-              <div><span>Ποσό με ΦΠΑ</span><strong>{selectedContract.withVatAmount}</strong></div>
-              <div><span>Προϋπολογισμός</span><strong>{selectedContract.rawBudget}</strong></div>
-              <div><span>Contract Budget</span><strong>{selectedContract.contractBudget}</strong></div>
-              <div><span>Cofund</span><strong>{selectedContract.fundingCofund}</strong></div>
-              <div><span>Self Fund</span><strong>{selectedContract.fundingSelf}</strong></div>
-              <div><span>ESPA</span><strong>{selectedContract.fundingEspa}</strong></div>
-              <div><span>Regular Budget</span><strong>{selectedContract.fundingRegular}</strong></div>
-              <div><span>Auction Ref</span><strong>{selectedContract.auctionRefNo}</strong></div>
-              <div><span>Payment Ref</span><strong>{selectedContract.paymentRefNo}</strong></div>
-            </div>
-
-            <footer className="contract-modal__footer">
-              <button
-                type="button"
-                className="contract-modal__pdf-button"
-                onClick={() => downloadContractPdf(selectedContract)}
-              >
-                Κατέβασε το
-              </button>
-              {selectedContract.documentUrl && (
-                <a href={selectedContract.documentUrl} target="_blank" rel="noreferrer">
-                  Άνοιγμα εγγράφου στη Διαύγεια
-                </a>
-              )}
-            </footer>
-          </article>
-        </div>
+          <ContractModal
+            contract={selectedContract}
+            onClose={() => setSelectedContract(null)}
+            onDownloadPdf={() => downloadContractPdf(selectedContract)}
+          />
+        </>
       )}
     </div>
   )

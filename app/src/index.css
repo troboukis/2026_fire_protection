@@ -1930,6 +1930,33 @@ main {
   display: block;
 }
 
+.maps-selection-panel__latest {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.maps-selection-panel__latest-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.maps-selection-panel__latest-items {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.maps-selection-panel__latest-items .wire-item {
+  min-width: 0;
+  max-width: none;
+  cursor: default;
+}
+
+.maps-selection-panel__latest-items .wire-item[role='button'] {
+  cursor: pointer;
+}
+
 /* ── Contract modal ───────────────────────────────────────────── */
 .contract-modal-backdrop {
   position: fixed;
