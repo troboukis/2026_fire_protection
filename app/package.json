@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --base=/fire_protection/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

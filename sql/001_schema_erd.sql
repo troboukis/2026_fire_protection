@@ -276,7 +276,8 @@ CREATE TABLE IF NOT EXISTS public.procurement (
   municipality_key            TEXT,
   payment_id                  BIGINT,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-  updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  CONSTRAINT uq_procurement_reference_number UNIQUE (reference_number)
 );
 
 CREATE TABLE IF NOT EXISTS public.cpv (
@@ -535,5 +536,18 @@ FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
 CREATE TRIGGER trg_cpv_updated_at
 BEFORE UPDATE ON public.cpv
 FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
+
+-- ---------------------------------------------------------------------------
+-- API access grants (Supabase anon/authenticated roles)
+-- ---------------------------------------------------------------------------
+GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT SELECT ON TABLES TO anon, authenticated, service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
 
 COMMIT;

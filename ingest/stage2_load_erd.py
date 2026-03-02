@@ -632,6 +632,14 @@ def parse_args() -> argparse.Namespace:
             "(default: all)"
         ),
     )
+    p.add_argument(
+        "--reprocess-existing-procurement",
+        action="store_true",
+        help=(
+            "Reprocess existing procurement identities (refresh keys and regenerate CPV/payment rows). "
+            "Default is incremental mode: skip existing and ingest only new procurement rows."
+        ),
+    )
     return p.parse_args()
 
 
@@ -855,6 +863,53 @@ def main() -> None:
               %s, %s, %s, %s,
               %s, %s, %s, %s, %s
             )
+            ON CONFLICT (reference_number) DO UPDATE SET
+              title = EXCLUDED.title,
+              submission_at = EXCLUDED.submission_at,
+              contract_signed_date = EXCLUDED.contract_signed_date,
+              start_date = EXCLUDED.start_date,
+              no_end_date = EXCLUDED.no_end_date,
+              end_date = EXCLUDED.end_date,
+              cancelled = EXCLUDED.cancelled,
+              cancellation_date = EXCLUDED.cancellation_date,
+              cancellation_type = EXCLUDED.cancellation_type,
+              cancellation_reason = EXCLUDED.cancellation_reason,
+              decision_related_ada = EXCLUDED.decision_related_ada,
+              contract_number = EXCLUDED.contract_number,
+              organization_vat_number = EXCLUDED.organization_vat_number,
+              greek_organization_vat_number = EXCLUDED.greek_organization_vat_number,
+              diavgeia_ada = EXCLUDED.diavgeia_ada,
+              budget = EXCLUDED.budget,
+              contract_budget = EXCLUDED.contract_budget,
+              bids_submitted = EXCLUDED.bids_submitted,
+              max_bids_submitted = EXCLUDED.max_bids_submitted,
+              number_of_sections = EXCLUDED.number_of_sections,
+              central_government_authority = EXCLUDED.central_government_authority,
+              procedure_type_key = EXCLUDED.procedure_type_key,
+              procedure_type_value = EXCLUDED.procedure_type_value,
+              award_procedure = EXCLUDED.award_procedure,
+              centralized_markets = EXCLUDED.centralized_markets,
+              contract_type = EXCLUDED.contract_type,
+              assign_criteria = EXCLUDED.assign_criteria,
+              classification_of_public_law_organization = EXCLUDED.classification_of_public_law_organization,
+              type_of_contracting_authority = EXCLUDED.type_of_contracting_authority,
+              contracting_authority_activity = EXCLUDED.contracting_authority_activity,
+              contract_duration = EXCLUDED.contract_duration,
+              contract_duration_unit_of_measure = EXCLUDED.contract_duration_unit_of_measure,
+              contract_related_ada = EXCLUDED.contract_related_ada,
+              funding_details_cofund = EXCLUDED.funding_details_cofund,
+              funding_details_self_fund = EXCLUDED.funding_details_self_fund,
+              funding_details_espa = EXCLUDED.funding_details_espa,
+              funding_details_regular_budget = EXCLUDED.funding_details_regular_budget,
+              units_operator = EXCLUDED.units_operator,
+              short_descriptions = EXCLUDED.short_descriptions,
+              green_contracts = EXCLUDED.green_contracts,
+              auction_ref_no = EXCLUDED.auction_ref_no,
+              ingested_at = EXCLUDED.ingested_at,
+              region_key = EXCLUDED.region_key,
+              organization_key = EXCLUDED.organization_key,
+              municipality_key = EXCLUDED.municipality_key,
+              updated_at = NOW()
             RETURNING id
         """
 
@@ -881,49 +936,56 @@ def main() -> None:
             inserted_proc = 0
             skipped_proc = 0
             updated_existing_proc = 0
+            reprocessed_existing_proc = 0
             for n, ((idx, row), p) in enumerate(zip(bundle.raw.iterrows(), procurement), start=1):
                 uid = procurement_uid_from_proc_row(p)
+                process_row = True
                 if uid in existing_proc_by_uid:
                     procurement_id = existing_proc_by_uid[uid]
-                    # Important for incremental reruns:
-                    # refresh resolved foreign keys for already-known procurement rows.
-                    cur.execute(
-                        """
-                        UPDATE public.procurement
-                        SET region_key = %s,
-                            organization_key = %s,
-                            municipality_key = %s
-                        WHERE id = %s
-                        """,
-                        (p[43], p[44], p[45], procurement_id),
-                    )
-                    updated_existing_proc += cur.rowcount
                     skipped_proc += 1
+                    if args.reprocess_existing_procurement:
+                        # Optional full reprocess for already-known procurement identities.
+                        cur.execute(
+                            """
+                            UPDATE public.procurement
+                            SET region_key = %s,
+                                organization_key = %s,
+                                municipality_key = %s
+                            WHERE id = %s
+                            """,
+                            (p[43], p[44], p[45], procurement_id),
+                        )
+                        updated_existing_proc += cur.rowcount
+                        reprocessed_existing_proc += 1
+                    else:
+                        process_row = False
                 else:
                     cur.execute(procurement_insert_sql, p)
                     procurement_id = cur.fetchone()[0]
                     existing_proc_by_uid[uid] = procurement_id
                     inserted_proc += 1
 
-                keys = [x.strip() for x in str(row.get("cpv_keys") or "").split("|")] if t(row.get("cpv_keys")) else []
-                values = [x.strip() for x in str(row.get("cpv_values") or "").split("|")] if t(row.get("cpv_values")) else []
-                for idx_key, key in enumerate(keys):
-                    key_clean = t(key)
-                    if not key_clean:
-                        continue
-                    value_from_raw = t(values[idx_key]) if idx_key < len(values) else None
-                    value_clean = value_from_raw or DEFAULT_CPVS.get(key_clean)
-                    if value_clean is None:
-                        missing_cpv_keys.add(key_clean)
-                    cpv_rows_to_insert.append((key_clean, value_clean, procurement_id))
+                if process_row:
+                    keys = [x.strip() for x in str(row.get("cpv_keys") or "").split("|")] if t(row.get("cpv_keys")) else []
+                    values = [x.strip() for x in str(row.get("cpv_values") or "").split("|")] if t(row.get("cpv_values")) else []
+                    for idx_key, key in enumerate(keys):
+                        key_clean = t(key)
+                        if not key_clean:
+                            continue
+                        value_from_raw = t(values[idx_key]) if idx_key < len(values) else None
+                        value_clean = value_from_raw or DEFAULT_CPVS.get(key_clean)
+                        if value_clean is None:
+                            missing_cpv_keys.add(key_clean)
+                        cpv_rows_to_insert.append((key_clean, value_clean, procurement_id))
 
-                payment_rows_to_insert.append(payment_row_from_raw(row, procurement_id))
+                    payment_rows_to_insert.append(payment_row_from_raw(row, procurement_id))
                 if n % 500 == 0 or n == total_proc:
                     log(f"Procurement progress: {n}/{total_proc}")
             conn.commit()
             log(
                 "Procurement stage committed "
-                f"(inserted={inserted_proc}, existing_skipped={skipped_proc}, updated_existing={updated_existing_proc})"
+                f"(inserted={inserted_proc}, existing_skipped={skipped_proc}, "
+                f"reprocessed_existing={reprocessed_existing_proc}, updated_existing={updated_existing_proc})"
             )
 
         if "cpv" in selected_tables:

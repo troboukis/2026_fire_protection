@@ -117,6 +117,77 @@ def normalize_string(value: str) -> str:
     return value
 
 
+def _clean_key_part(value: Any) -> str:
+    if value is None:
+        return ""
+    s = str(value).strip()
+    if not s:
+        return ""
+    return normalize_string(s)
+
+
+def business_key_from_api_item(item: dict[str, Any]) -> str:
+    ref = _clean_key_part(item.get("referenceNumber"))
+    if ref:
+        return f"ref:{ref}"
+
+    ada = _clean_key_part(item.get("diavgeiaADA"))
+    if ada:
+        return f"ada:{ada}"
+
+    contract_number = _clean_key_part(item.get("contractNumber"))
+    org_key = _clean_key_part((item.get("organization") or {}).get("key"))
+    if contract_number:
+        return f"cn:{contract_number}|org:{org_key}"
+
+    # Last-resort fallback for malformed rows with no identifiers.
+    title = _clean_key_part(item.get("title"))
+    submission = _clean_key_part(item.get("submissionDate"))
+    return f"fallback:{org_key}|{submission}|{title}"
+
+
+def business_key_from_row(row: pd.Series) -> str:
+    ref = _clean_key_part(row.get("referenceNumber"))
+    if ref:
+        return f"ref:{ref}"
+
+    ada = _clean_key_part(row.get("diavgeiaADA"))
+    if ada:
+        return f"ada:{ada}"
+
+    contract_number = _clean_key_part(row.get("contractNumber"))
+    org_key = _clean_key_part(row.get("organization_key"))
+    if contract_number:
+        return f"cn:{contract_number}|org:{org_key}"
+
+    title = _clean_key_part(row.get("title"))
+    submission = _clean_key_part(row.get("submissionDate"))
+    return f"fallback:{org_key}|{submission}|{title}"
+
+
+def dedupe_df_by_business_key(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df.reset_index(drop=True)
+
+    out = df.copy()
+    out["_business_key"] = out.apply(business_key_from_row, axis=1)
+    out["_submission_sort"] = pd.to_datetime(out.get("submissionDate"), errors="coerce")
+    out["_signed_sort"] = pd.to_datetime(out.get("contractSignedDate"), errors="coerce")
+
+    # Keep latest record per contract identity.
+    out = (
+        out.sort_values(
+            by=["_business_key", "_submission_sort", "_signed_sort"],
+            kind="stable",
+            na_position="last",
+        )
+        .drop_duplicates(subset="_business_key", keep="last")
+        .drop(columns=["_business_key", "_submission_sort", "_signed_sort"])
+        .reset_index(drop=True)
+    )
+    return out
+
+
 @dataclass
 class CollectorConfig:
     start_date: date
@@ -495,13 +566,10 @@ def save_last_fetch_to_state(state_file: Path, last_fetch: datetime) -> None:
 
 def merge_with_existing_csv(output_csv: Path, new_df: pd.DataFrame) -> pd.DataFrame:
     if not output_csv.exists():
-        return new_df
+        return dedupe_df_by_business_key(new_df)
     existing_df = pd.read_csv(output_csv, dtype=str, keep_default_na=False, na_values=[""])
     merged = pd.concat([existing_df, new_df], ignore_index=True)
-    dedupe_df = merged.copy()
-    for col in dedupe_df.columns:
-        dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
-    merged = merged.loc[~dedupe_df.duplicated()].reset_index(drop=True)
+    merged = dedupe_df_by_business_key(merged)
     if "submissionDate" in merged.columns:
         dt = pd.to_datetime(merged["submissionDate"], errors="coerce")
         merged = merged.assign(submissionDate=dt).sort_values("submissionDate").reset_index(drop=True)
@@ -519,10 +587,7 @@ def finalize_output_df(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         return df.reset_index(drop=True)
 
-    dedupe_df = df.copy()
-    for col in dedupe_df.columns:
-        dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
-    out = df.loc[~dedupe_df.duplicated()].reset_index(drop=True)
+    out = dedupe_df_by_business_key(df)
 
     if "contractSignedDate" in out.columns:
         signed_dt = pd.to_datetime(out["contractSignedDate"], errors="coerce")
@@ -537,15 +602,10 @@ def finalize_output_df(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def merge_raw_items(existing_items: list[dict[str, Any]], new_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    merged = []
-    seen: set[str] = set()
+    merged_by_key: dict[str, dict[str, Any]] = {}
     for item in [*existing_items, *new_items]:
-        key = json.dumps(item, ensure_ascii=False, sort_keys=True)
-        if key in seen:
-            continue
-        seen.add(key)
-        merged.append(item)
-    return merged
+        merged_by_key[business_key_from_api_item(item)] = item
+    return list(merged_by_key.values())
 
 
 def parse_args() -> CollectorConfig:
@@ -663,10 +723,7 @@ def main() -> None:
 
         new_df = collector.build_dataset()
         if not new_df.empty:
-            dedupe_df = new_df.copy()
-            for col in dedupe_df.columns:
-                dedupe_df[col] = dedupe_df[col].map(normalize_cell_value)
-            new_df = new_df.loc[~dedupe_df.duplicated()].reset_index(drop=True)
+            new_df = dedupe_df_by_business_key(new_df)
 
         if cfg.from_backup or cfg.full_refresh:
             output_df = new_df

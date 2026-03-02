@@ -1,0 +1,561 @@
+-- =============================================================
+-- Frontend API Setup (single-run bundle)
+-- Purpose:
+--   1) Create/refresh SQL functions used by frontend RPC calls.
+--   2) Grant execute/select privileges for anon/authenticated/service_role.
+--   3) Force PostgREST schema reload.
+--   4) Provide quick verification queries.
+--
+-- Run this whole file in Supabase SQL Editor.
+-- =============================================================
+
+-- -------------------------------------------------------------
+-- A) Procedure normalization function
+-- -------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.normalize_procedure_type(p_value text)
+RETURNS text
+LANGUAGE sql
+IMMUTABLE
+AS $$
+  SELECT CASE
+    WHEN p_value IS NULL OR btrim(p_value) = '' THEN '—'
+    WHEN lower(btrim(p_value)) LIKE 'απευθείας ανάθεση%' THEN 'Απευθείας ανάθεση'
+    ELSE btrim(p_value)
+  END;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.normalize_procedure_type(text) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- B) Hero section RPC
+-- Source: sql/hero_section_rpc.sql
+-- -------------------------------------------------------------
+-- Hero section RPC based on:
+-- - procurement.contract_signed_date (date axis and windows)
+-- - payment.amount_without_vat (amount metric)
+-- No diavgeia payment usage.
+
+CREATE OR REPLACE FUNCTION public.get_hero_section_data(
+  p_year_main integer,
+  p_year_start integer DEFAULT 2024
+)
+RETURNS jsonb
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  v_as_of_date date;
+  v_end_month int;
+  v_end_day int;
+  v_period_main_start date;
+  v_period_main_end date;
+  v_period_prev1_start date;
+  v_period_prev1_end date;
+  v_period_prev2_start date;
+  v_period_prev2_end date;
+  v_total_main numeric := 0;
+  v_total_prev1 numeric := 0;
+  v_total_prev2 numeric := 0;
+  v_top_contract_type text := null;
+  v_top_contract_type_count int := 0;
+  v_top_contract_type_prev1_count int := 0;
+  v_top_cpv_text text := null;
+  v_top_cpv_count int := 0;
+  v_top_cpv_prev1_count int := 0;
+  v_curve jsonb := '[]'::jsonb;
+BEGIN
+  WITH pay_by_proc AS (
+    SELECT py.procurement_id
+    FROM public.payment py
+    WHERE py.amount_without_vat IS NOT NULL
+    GROUP BY py.procurement_id
+  ),
+  proc_ranked AS (
+    SELECT
+      p.id,
+      p.contract_signed_date,
+      ROW_NUMBER() OVER (
+        PARTITION BY COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        )
+        ORDER BY p.id DESC
+      ) AS rn
+    FROM public.procurement p
+    JOIN pay_by_proc pp ON pp.procurement_id = p.id
+    WHERE p.contract_signed_date IS NOT NULL
+  )
+  SELECT MAX(contract_signed_date)
+  INTO v_as_of_date
+  FROM proc_ranked
+  WHERE rn = 1
+    AND EXTRACT(YEAR FROM contract_signed_date) = p_year_main;
+
+  IF v_as_of_date IS NULL THEN
+    RETURN jsonb_build_object(
+      'period_main_start', to_char(make_date(p_year_main, 1, 1), 'YYYY-MM-DD'),
+      'period_main_end', to_char(make_date(p_year_main, 1, 1), 'YYYY-MM-DD'),
+      'total_main', 0,
+      'total_prev1', 0,
+      'total_prev2', 0,
+      'top_contract_type', null,
+      'top_contract_type_count', 0,
+      'top_contract_type_prev1_count', 0,
+      'top_cpv_text', null,
+      'top_cpv_count', 0,
+      'top_cpv_prev1_count', 0,
+      'curve_points', '[]'::jsonb
+    );
+  END IF;
+
+  v_end_month := EXTRACT(MONTH FROM v_as_of_date);
+  v_end_day := EXTRACT(DAY FROM v_as_of_date);
+
+  v_period_main_start := make_date(p_year_main, 1, 1);
+  v_period_main_end := v_as_of_date;
+
+  v_period_prev1_start := make_date(p_year_main - 1, 1, 1);
+  v_period_prev1_end := make_date(
+    p_year_main - 1,
+    v_end_month,
+    LEAST(v_end_day, EXTRACT(DAY FROM (date_trunc('month', make_date(p_year_main - 1, v_end_month, 1)) + interval '1 month - 1 day'))::int)
+  );
+
+  v_period_prev2_start := make_date(p_year_main - 2, 1, 1);
+  v_period_prev2_end := make_date(
+    p_year_main - 2,
+    v_end_month,
+    LEAST(v_end_day, EXTRACT(DAY FROM (date_trunc('month', make_date(p_year_main - 2, v_end_month, 1)) + interval '1 month - 1 day'))::int)
+  );
+
+  WITH pay_by_proc AS (
+    SELECT
+      py.procurement_id,
+      SUM(py.amount_without_vat) AS amount_without_vat
+    FROM public.payment py
+    WHERE py.amount_without_vat IS NOT NULL
+    GROUP BY py.procurement_id
+  ),
+  proc_ranked AS (
+    SELECT
+      p.id,
+      p.contract_signed_date,
+      public.normalize_procedure_type(p.procedure_type_value) AS procedure_type_value,
+      ROW_NUMBER() OVER (
+        PARTITION BY COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        )
+        ORDER BY p.id DESC
+      ) AS rn
+    FROM public.procurement p
+    JOIN pay_by_proc pp ON pp.procurement_id = p.id
+    WHERE p.contract_signed_date IS NOT NULL
+  ),
+  rows_base AS (
+    SELECT
+      pr.id,
+      pr.contract_signed_date AS d,
+      pr.procedure_type_value,
+      pb.amount_without_vat
+    FROM proc_ranked pr
+    JOIN pay_by_proc pb ON pb.procurement_id = pr.id
+    WHERE pr.rn = 1
+  ),
+  main_rows AS (
+    SELECT * FROM rows_base WHERE d BETWEEN v_period_main_start AND v_period_main_end
+  ),
+  prev1_rows AS (
+    SELECT * FROM rows_base WHERE d BETWEEN v_period_prev1_start AND v_period_prev1_end
+  ),
+  prev2_rows AS (
+    SELECT * FROM rows_base WHERE d BETWEEN v_period_prev2_start AND v_period_prev2_end
+  )
+  SELECT
+    COALESCE((SELECT SUM(amount_without_vat) FROM main_rows), 0),
+    COALESCE((SELECT SUM(amount_without_vat) FROM prev1_rows), 0),
+    COALESCE((SELECT SUM(amount_without_vat) FROM prev2_rows), 0)
+  INTO v_total_main, v_total_prev1, v_total_prev2;
+
+  WITH pay_by_proc AS (
+    SELECT
+      py.procurement_id,
+      SUM(py.amount_without_vat) AS amount_without_vat
+    FROM public.payment py
+    WHERE py.amount_without_vat IS NOT NULL
+    GROUP BY py.procurement_id
+  ),
+  proc_ranked AS (
+    SELECT
+      p.id,
+      p.contract_signed_date,
+      public.normalize_procedure_type(p.procedure_type_value) AS procedure_type_value,
+      ROW_NUMBER() OVER (
+        PARTITION BY COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        )
+        ORDER BY p.id DESC
+      ) AS rn
+    FROM public.procurement p
+    JOIN pay_by_proc pp ON pp.procurement_id = p.id
+    WHERE p.contract_signed_date IS NOT NULL
+  ),
+  rows_base AS (
+    SELECT
+      pr.id,
+      pr.contract_signed_date AS d,
+      pr.procedure_type_value
+    FROM proc_ranked pr
+    WHERE pr.rn = 1
+  ),
+  main_rows AS (
+    SELECT * FROM rows_base WHERE d BETWEEN v_period_main_start AND v_period_main_end
+  ),
+  prev1_rows AS (
+    SELECT * FROM rows_base WHERE d BETWEEN v_period_prev1_start AND v_period_prev1_end
+  ),
+  ranked AS (
+    SELECT COALESCE(procedure_type_value, '—') AS procedure_name, COUNT(*)::int AS cnt
+    FROM main_rows
+    GROUP BY COALESCE(procedure_type_value, '—')
+    ORDER BY cnt DESC
+    LIMIT 1
+  )
+  SELECT
+    r.procedure_name,
+    r.cnt,
+    COALESCE((
+      SELECT COUNT(*)::int
+      FROM prev1_rows p1
+      WHERE COALESCE(p1.procedure_type_value, '—') = r.procedure_name
+    ), 0)
+  INTO v_top_contract_type, v_top_contract_type_count, v_top_contract_type_prev1_count
+  FROM ranked r;
+
+  WITH pay_by_proc AS (
+    SELECT py.procurement_id
+    FROM public.payment py
+    WHERE py.amount_without_vat IS NOT NULL
+    GROUP BY py.procurement_id
+  ),
+  proc_ranked AS (
+    SELECT
+      p.id,
+      p.contract_signed_date,
+      ROW_NUMBER() OVER (
+        PARTITION BY COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        )
+        ORDER BY p.id DESC
+      ) AS rn
+    FROM public.procurement p
+    JOIN pay_by_proc pp ON pp.procurement_id = p.id
+    WHERE p.contract_signed_date IS NOT NULL
+  ),
+  rows_base AS (
+    SELECT pr.id, pr.contract_signed_date AS d
+    FROM proc_ranked pr
+    WHERE pr.rn = 1
+  ),
+  main_ids AS (
+    SELECT id FROM rows_base WHERE d BETWEEN v_period_main_start AND v_period_main_end
+  ),
+  prev1_ids AS (
+    SELECT id FROM rows_base WHERE d BETWEEN v_period_prev1_start AND v_period_prev1_end
+  ),
+  top_cpv AS (
+    SELECT c.cpv_value, COUNT(*)::int AS cnt
+    FROM public.cpv c
+    JOIN main_ids m ON m.id = c.procurement_id
+    WHERE c.cpv_value IS NOT NULL
+    GROUP BY c.cpv_value
+    ORDER BY cnt DESC
+    LIMIT 1
+  )
+  SELECT
+    t.cpv_value,
+    t.cnt,
+    COALESCE((
+      SELECT COUNT(*)::int
+      FROM public.cpv c2
+      JOIN prev1_ids p1 ON p1.id = c2.procurement_id
+      WHERE c2.cpv_value = t.cpv_value
+    ), 0)
+  INTO v_top_cpv_text, v_top_cpv_count, v_top_cpv_prev1_count
+  FROM top_cpv t;
+
+  WITH pay_by_proc AS (
+    SELECT
+      py.procurement_id,
+      SUM(py.amount_without_vat) AS amount_without_vat
+    FROM public.payment py
+    WHERE py.amount_without_vat IS NOT NULL
+    GROUP BY py.procurement_id
+  ),
+  proc_ranked AS (
+    SELECT
+      p.id,
+      p.contract_signed_date,
+      ROW_NUMBER() OVER (
+        PARTITION BY COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        )
+        ORDER BY p.id DESC
+      ) AS rn
+    FROM public.procurement p
+    JOIN pay_by_proc pp ON pp.procurement_id = p.id
+    WHERE p.contract_signed_date IS NOT NULL
+  ),
+  rows_base AS (
+    SELECT
+      pr.contract_signed_date AS d,
+      pb.amount_without_vat
+    FROM proc_ranked pr
+    JOIN pay_by_proc pb ON pb.procurement_id = pr.id
+    WHERE pr.rn = 1
+      AND EXTRACT(YEAR FROM pr.contract_signed_date) BETWEEN p_year_start AND p_year_main
+  ),
+  years AS (
+    SELECT generate_series(p_year_start, p_year_main) AS y
+  ),
+  days AS (
+    SELECT generate_series(1, 366) AS day_of_year
+  ),
+  year_days AS (
+    SELECT y, CASE WHEN (make_date(y, 12, 31) - make_date(y, 1, 1) + 1) = 366 THEN 366 ELSE 365 END AS year_days
+    FROM years
+  ),
+  calendar AS (
+    SELECT
+      yd.y,
+      yd.year_days,
+      d.day_of_year,
+      make_date(yd.y, 1, 1) + (d.day_of_year - 1) * interval '1 day' AS point_date
+    FROM year_days yd
+    JOIN days d ON d.day_of_year <= yd.year_days
+  ),
+  daily AS (
+    SELECT d::date AS day_date, SUM(amount_without_vat) AS amount
+    FROM rows_base
+    GROUP BY d::date
+  ),
+  curve AS (
+    SELECT
+      c.y AS series_year,
+      c.year_days,
+      c.day_of_year,
+      c.point_date::date AS point_date,
+      COALESCE(SUM(dy.amount) OVER (
+        PARTITION BY c.y
+        ORDER BY c.day_of_year
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+      ), 0) AS cumulative_amount
+    FROM calendar c
+    LEFT JOIN daily dy ON dy.day_date = c.point_date::date
+  )
+  SELECT COALESCE(jsonb_agg(jsonb_build_object(
+    'series_year', series_year,
+    'year_days', year_days,
+    'day_of_year', day_of_year,
+    'point_date', to_char(point_date, 'YYYY-MM-DD'),
+    'cumulative_amount', cumulative_amount
+  ) ORDER BY series_year, day_of_year), '[]'::jsonb)
+  INTO v_curve
+  FROM curve;
+
+  RETURN jsonb_build_object(
+    'period_main_start', to_char(v_period_main_start, 'YYYY-MM-DD'),
+    'period_main_end', to_char(v_period_main_end, 'YYYY-MM-DD'),
+    'total_main', v_total_main,
+    'total_prev1', v_total_prev1,
+    'total_prev2', v_total_prev2,
+    'top_contract_type', v_top_contract_type,
+    'top_contract_type_count', v_top_contract_type_count,
+    'top_contract_type_prev1_count', v_top_contract_type_prev1_count,
+    'top_cpv_text', v_top_cpv_text,
+    'top_cpv_count', v_top_cpv_count,
+    'top_cpv_prev1_count', v_top_cpv_prev1_count,
+    'curve_points', v_curve
+  );
+END;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_hero_section_data(integer, integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- C) Contracts page RPC
+-- Source: sql/contracts_page_rpc.sql
+-- -------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.get_contracts_page(
+  p_q text DEFAULT NULL,
+  p_org text DEFAULT NULL,
+  p_procedure text DEFAULT NULL,
+  p_date_from date DEFAULT NULL,
+  p_date_to date DEFAULT NULL,
+  p_min_amount numeric DEFAULT NULL,
+  p_page integer DEFAULT 1,
+  p_page_size integer DEFAULT 50
+)
+RETURNS TABLE (
+  id bigint,
+  contract_signed_date date,
+  organization_value text,
+  title text,
+  reference_number text,
+  cpv_value text,
+  procedure_type_value text,
+  beneficiary_name text,
+  amount_without_vat numeric,
+  diavgeia_ada text,
+  total_count bigint
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+WITH payment_agg AS (
+  SELECT
+    py.procurement_id,
+    SUM(py.amount_without_vat) AS amount_without_vat,
+    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_name), ''), ' | ') AS beneficiary_name
+  FROM public.payment py
+  GROUP BY py.procurement_id
+),
+cpv_agg AS (
+  SELECT
+    c.procurement_id,
+    STRING_AGG(
+      DISTINCT NULLIF(TRIM(c.cpv_value), ''),
+      ' | '
+      ORDER BY NULLIF(TRIM(c.cpv_value), '')
+    ) AS cpv_value
+  FROM public.cpv c
+  GROUP BY c.procurement_id
+),
+base AS (
+  SELECT
+    p.id,
+    p.contract_signed_date,
+    p.title,
+    public.normalize_procedure_type(p.procedure_type_value) AS procedure_type_value,
+    p.diavgeia_ada,
+    p.reference_number,
+    p.contract_number,
+    p.organization_key,
+    COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
+    pa.beneficiary_name,
+    org.organization_value,
+    ca.cpv_value,
+    ROW_NUMBER() OVER (
+      PARTITION BY COALESCE(
+        NULLIF(TRIM(p.reference_number), ''),
+        NULLIF(TRIM(p.diavgeia_ada), ''),
+        NULLIF(TRIM(p.contract_number), ''),
+        CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+      )
+      ORDER BY p.id DESC
+    ) AS rn
+  FROM public.procurement p
+  LEFT JOIN payment_agg pa ON pa.procurement_id = p.id
+  LEFT JOIN LATERAL (
+    SELECT o.organization_normalized_value AS organization_value
+    FROM public.organization o
+    WHERE o.organization_key = p.organization_key
+    ORDER BY o.id
+    LIMIT 1
+  ) org ON TRUE
+  LEFT JOIN cpv_agg ca ON ca.procurement_id = p.id
+),
+dedup AS (
+  SELECT *
+  FROM base
+  WHERE rn = 1
+),
+filtered AS (
+  SELECT *
+  FROM dedup d
+  WHERE (p_date_from IS NULL OR d.contract_signed_date >= p_date_from)
+    AND (p_date_to IS NULL OR d.contract_signed_date <= p_date_to)
+    AND (p_min_amount IS NULL OR COALESCE(d.amount_without_vat, 0) >= p_min_amount)
+    AND (p_procedure IS NULL OR p_procedure = '' OR d.procedure_type_value = p_procedure)
+    AND (p_org IS NULL OR p_org = '' OR COALESCE(d.organization_value, '') ILIKE '%' || p_org || '%')
+    AND (
+      p_q IS NULL OR p_q = '' OR
+      CONCAT_WS(
+        ' ',
+        COALESCE(d.title, ''),
+        COALESCE(d.organization_value, ''),
+        COALESCE(d.beneficiary_name, ''),
+        COALESCE(d.cpv_value, '')
+      ) ILIKE '%' || p_q || '%'
+    )
+),
+counted AS (
+  SELECT f.*, COUNT(*) OVER () AS total_count
+  FROM filtered f
+)
+SELECT
+  id,
+  contract_signed_date,
+  organization_value,
+  title,
+  reference_number,
+  cpv_value,
+  procedure_type_value,
+  beneficiary_name,
+  amount_without_vat,
+  diavgeia_ada,
+  total_count
+FROM counted
+ORDER BY contract_signed_date DESC NULLS LAST, id DESC
+OFFSET GREATEST((p_page - 1) * p_page_size, 0)
+LIMIT GREATEST(p_page_size, 1);
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_contracts_page(text, text, text, date, date, numeric, integer, integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- D) Table/function grants for frontend reads
+-- -------------------------------------------------------------
+GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT SELECT ON TABLES TO anon, authenticated, service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- E) Force PostgREST to reload schema cache
+-- -------------------------------------------------------------
+NOTIFY pgrst, 'reload schema';
+
+-- -------------------------------------------------------------
+-- F) Quick verification (run after setup)
+-- -------------------------------------------------------------
+-- 1) Check RPC functions exist
+-- select p.proname, pg_get_function_arguments(p.oid) as args
+-- from pg_proc p
+-- join pg_namespace n on n.oid = p.pronamespace
+-- where n.nspname = 'public'
+--   and p.proname in ('get_hero_section_data', 'get_contracts_page', 'normalize_procedure_type');
+
+-- 2) Quick smoke test RPC calls
+-- select public.get_hero_section_data(2026, 2024);
+-- select * from public.get_contracts_page(NULL,NULL,NULL,NULL,NULL,NULL,1,5);
