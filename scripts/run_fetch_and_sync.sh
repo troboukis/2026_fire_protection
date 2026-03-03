@@ -49,11 +49,8 @@ echo "[5/10] Fetch KIMDIS raw procurements..."
 ./.fireprotection/bin/python fetch_kimdis_procurements.py
 
 if [[ "$RUN_DB_INGEST" == "1" ]]; then
-  echo "[6/10] Sync procurement + coverage tables to database..."
-  ./.fireprotection/bin/python ingest/ingest_raw_procurements.py
-  ./.fireprotection/bin/python ingest/ingest_procurement.py
-  ./.fireprotection/bin/python ingest/ingest_procurement_lines.py
-  ./.fireprotection/bin/python ingest/ingest_org_municipality_coverage.py
+  echo "[6/10] Sync ERD tables to database (stage2_load_erd.py)..."
+  ./.fireprotection/bin/python ingest/stage2_load_erd.py
 else
   echo "[6/10] Skipping DB ingest (set RUN_DB_INGEST=1 to enable; default is enabled)."
 fi
