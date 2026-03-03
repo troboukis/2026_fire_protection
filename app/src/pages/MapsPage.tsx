@@ -177,8 +177,9 @@ export default function MapsPage() {
 
     const load = async () => {
       try {
+        const assetUrl = (assetName: string) => `${import.meta.env.BASE_URL}${assetName}`
         const [geoRes, rows] = await Promise.all([
-          fetch('/municipalities.geojson'),
+          fetch(assetUrl('municipalities.geojson')),
           fetchAllProcurementRows(),
         ])
 
@@ -248,7 +249,7 @@ export default function MapsPage() {
           setMunicipalityCurrentYearCountById(new Map(countByMunicipality.entries()))
         }
 
-        const regionRes = await fetch('/municipality_regions.json')
+        const regionRes = await fetch(`${import.meta.env.BASE_URL}municipality_regions.json`)
         const fullRegionRows = (await regionRes.json()) as MunicipalityRegionRow[]
         const fullRegionByMunicipality = new Map<string, string>()
         for (const row of fullRegionRows) {
