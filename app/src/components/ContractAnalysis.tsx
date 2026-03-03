@@ -160,7 +160,8 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
     const containerW = containerRef.current.clientWidth
     if (containerW === 0) return
 
-    const margin = { top: 18, right: 16, bottom: 58, left: 68 }
+    const isNarrow = containerW <= 640
+    const margin = { top: 18, right: 16, bottom: isNarrow ? 52 : 58, left: 68 }
     const W = containerW
     const H = 240
     const innerW = W - margin.left - margin.right
@@ -173,8 +174,9 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`)
 
     // Scales
+    const monthDomain = monthly.map(d => d.month)
     const x = d3.scaleBand<string>()
-      .domain(monthly.map(d => d.month))
+      .domain(monthDomain)
       .range([0, innerW])
       .padding(0.22)
 
@@ -218,23 +220,44 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
         .attr('dx', '-4')
       )
 
+    const mobileTickStep =
+      containerW <= 360 ? 5 :
+      containerW <= 440 ? 4 :
+      containerW <= 640 ? 3 : 1
+    const xTickValues = isNarrow
+      ? monthDomain.filter((_m, i) => i % mobileTickStep === 0 || i === monthDomain.length - 1)
+      : monthDomain
+    const xTickLabel = (monthKey: string): string => {
+      const point = monthly.find((p) => p.month === monthKey)
+      if (!point) return monthKey
+      if (!isNarrow) return point.label
+      const [yearStr, monthStr] = monthKey.split('-')
+      const monthNum = Number(monthStr)
+      const monthName = MONTH_NAMES_SHORT[monthNum - 1] ?? monthStr
+      if (monthStr === '01' || monthKey === monthDomain[monthDomain.length - 1]) {
+        return `${monthName} '${yearStr.slice(2)}`
+      }
+      return monthName
+    }
+
     // X axis
     g.append('g')
       .attr('transform', `translate(0,${innerH})`)
       .call(
         d3.axisBottom(x)
-          .tickFormat((m) => monthly.find(p => p.month === m)?.label ?? m)
+          .tickValues(xTickValues)
+          .tickFormat((m) => xTickLabel(String(m)))
       )
       .call(sel => sel.select('.domain').attr('stroke', 'rgba(17,17,17,0.18)'))
       .call(sel => sel.selectAll('.tick line').attr('stroke', 'rgba(17,17,17,0.12)'))
       .call(sel => sel.selectAll<SVGTextElement, unknown>('.tick text')
         .attr('font-family', 'IBM Plex Mono, monospace')
-        .attr('font-size', '9.5')
+        .attr('font-size', isNarrow ? '8.5' : '9.5')
         .attr('fill', 'rgba(17,17,17,0.55)')
-        .attr('transform', 'rotate(-40)')
+        .attr('transform', isNarrow ? 'rotate(-30)' : 'rotate(-40)')
         .attr('text-anchor', 'end')
         .attr('dy', '0.35em')
-        .attr('dx', '-0.4em')
+        .attr('dx', isNarrow ? '-0.32em' : '-0.4em')
       )
 
     // Bars
