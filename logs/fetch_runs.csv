@@ -34,3 +34,4 @@ run_started_at_athens,fetched_records,rows_added,csv_updated,success,error,error
 2026-03-03 12:53:21 +0200,6,6,True,True,False,NONE
 2026-03-03 13:02:09 +0200,1,1,True,True,False,NONE
 2026-03-03 13:05:58 +0200,0,0,False,True,False,NONE
+2026-03-04 06:44:06 +0200,0,0,False,False,True,HTTPError: 502 Server Error: Bad Gateway for url: https://diavgeia.gov.gr/luminapi/api/search?q=q%3A%5B%22%CF%80%CF%85%CF%81%CE%BF%CF%80%CF%81%CE%BF%CF%83%CF%84%22%2C+%22%CE%B1%CF%80%CE%BF%CF%88%CE%B9%CE%BB%22%2C+%22%CE%B4%CE%B1%CF%83%CE%BF%CF%80%CF%81%CE%BF%CF%83%CF%84%22%2C+%22%CE%B1%CE%BD%CF%84%CE%B9%CF%80%CF%85%CF%81%22%5D&sort=recent&size=100&page=0&fq=submissionTimestamp%3A%5BDT%282026-03-03T13%3A02%3A03%29+TO+DT%282026-03-04T23%3A59%3A59%29%5D
