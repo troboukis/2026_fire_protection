@@ -1039,7 +1039,7 @@ export default function App() {
         <div className="brand-block">
           <div className="eyebrow">παρατηρητηριο για τις δασικές πυρκαγιές</div>
           <div className="brand-line">
-            <h1>PROJECT ΠΥΡ <span className="beta-badge">BETA</span></h1>
+            <h1>Π <span className="beta-badge">BETA</span></h1>
             <span className="brand-mark">Τελευταία ενημέρωση / {lastCommitLabel}</span>
           </div>
         </div>
