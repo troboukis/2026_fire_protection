@@ -214,19 +214,26 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   useEffect(() => {
     setLoading(true); setError(null); setData(null)
     supabase
-      .from('municipality')
-      .select('municipality_key, municipality_normalized_value, municipality_value')
+      .from('municipality_normalized_name')
+      .select('municipality_key, municipality_normalized_value')
       .eq('municipality_key', id)
       .limit(1)
       .then(({ data: row, error: err }) => {
         if (err) setError(err.message)
         else {
-          const first = (row?.[0] ?? null) as { municipality_key?: string | null; municipality_normalized_value?: string | null; municipality_value?: string | null } | null
-          setData(first ? {
-            id: cleanStr(first.municipality_key) ?? id,
-            name: cleanStr(first.municipality_normalized_value) ?? cleanStr(first.municipality_value) ?? id,
-            forest_ha: null,
-          } : { id, name: id, forest_ha: null })
+          const first = (row?.[0] ?? null) as { municipality_key?: string | null; municipality_normalized_value?: string | null } | null
+          const municipalityId = cleanStr(first?.municipality_key)
+          const municipalityName = cleanStr(first?.municipality_normalized_value)
+          if (!municipalityId || !municipalityName) {
+            setError('Δεν βρέθηκε όνομα δήμου στο municipality_normalized_name')
+            setData(null)
+          } else {
+            setData({
+              id: municipalityId,
+              name: municipalityName,
+              forest_ha: null,
+            })
+          }
         }
         setLoading(false)
       })

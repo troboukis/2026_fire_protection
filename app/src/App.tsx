@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import ContractAnalysis from './components/ContractAnalysis'
-import ComponentTag from './components/ComponentTag'
 import ErrorBoundary from './components/ErrorBoundary'
 import ContractModal, { type ContractModalContract } from './components/ContractModal'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import OrganizationSection, { type OrganizationSectionData } from './components/OrganizationSection'
 import { openContractPdfPrintView } from './lib/contractPdf'
+import { useDevViewEnabled } from './lib/devView'
 import { supabase } from './lib/supabase'
 
 type BeneficiaryInsightRow = {
@@ -23,17 +23,6 @@ type BeneficiaryInsightRow = {
   relevantContracts: LatestContractCard[]
 }
 
-function formatDateTimeEl(iso: string): string {
-  const dt = new Date(iso)
-  if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(dt)
-}
 
 type LatestContractCard = LatestContractCardView & ContractModalContract & {
   id: string
@@ -207,6 +196,9 @@ function dayFraction(dayOfYear: number, yearDays: number): number {
 }
 
 function DebugComponentLabel({ name }: { name: string }) {
+  const [devViewEnabled] = useDevViewEnabled()
+  if (!devViewEnabled) return null
+
   return (
     <div
       style={{
@@ -236,8 +228,8 @@ const CHART_YEAR_STYLES = [
 ]
 
 export default function App() {
-  const buildTimeLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
-  const [lastDbUpdateLabel, setLastDbUpdateLabel] = useState(buildTimeLabel)
+  const location = useLocation()
+  const navigate = useNavigate()
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
@@ -310,33 +302,6 @@ export default function App() {
   }, [heroCurvePoints])
 
   useEffect(() => {
-    let cancelled = false
-
-    const loadLastDbUpdate = async () => {
-      const tables = ['procurement', 'payment', 'diavgeia', 'fund', 'forest_fire']
-      const results = await Promise.all(
-        tables.map(async (table) => {
-          const { data, error } = await supabase
-            .from(table)
-            .select('updated_at')
-            .order('updated_at', { ascending: false })
-            .limit(1)
-          if (error) return null
-          const row = (data?.[0] ?? null) as { updated_at?: string | null } | null
-          return cleanText(row?.updated_at ?? null)
-        }),
-      )
-      const latestIso = results
-        .filter((v): v is string => Boolean(v))
-        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0]
-      if (!cancelled && latestIso) setLastDbUpdateLabel(formatDateTimeEl(latestIso))
-    }
-
-    loadLastDbUpdate()
-    return () => { cancelled = true }
-  }, [])
-
-  useEffect(() => {
     if (!selectedContract) return
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setSelectedContract(null)
@@ -344,6 +309,18 @@ export default function App() {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [selectedContract])
+
+  useEffect(() => {
+    if (location.state?.scrollTo !== 'about') return
+
+    const scrollToAbout = () => {
+      document.getElementById('about')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      navigate(location.pathname, { replace: true, state: null })
+    }
+
+    const frameId = window.requestAnimationFrame(scrollToAbout)
+    return () => window.cancelAnimationFrame(frameId)
+  }, [location.pathname, location.state, navigate])
 
   useEffect(() => {
     let cancelled = false
@@ -1242,33 +1219,8 @@ export default function App() {
     openContractPdfPrintView(contract)
   }
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id)
-    if (!el) return
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
   return (
-    <div className="pyro-app">
-      <ComponentTag name="App" />
-      <div className="page-grid" aria-hidden="true" />
-
-      <DebugComponentLabel name="SiteHeader" />
-      <header className="site-header">
-        <div className="brand-block">
-          <div className="eyebrow">παρατηρητηριο για τις δασικές πυρκαγιές</div>
-          <div className="brand-line">
-            <h1>Π <span className="beta-badge">BETA</span></h1>
-            <span className="brand-mark">Τελευταία ενημέρωση / {lastDbUpdateLabel}</span>
-          </div>
-        </div>
-        <nav className="top-nav" aria-label="Κύρια πλοήγηση">
-          <Link to="/contracts">Συμβάσεις</Link>
-          <Link to="/maps">Χάρτης</Link>
-          <button type="button" onClick={() => scrollToSection('about')}>About</button>
-        </nav>
-      </header>
-
+    <>
       <main>
         <DebugComponentLabel name="LatestContractsSection" />
         <section id="latest" className="news-wire section-rule" aria-label="Τελευταία ρεπορτάζ">
@@ -1613,6 +1565,6 @@ export default function App() {
           />
         </>
       )}
-    </div>
+    </>
   )
 }

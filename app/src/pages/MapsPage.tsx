@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
+import DevViewToggle from '../components/DevViewToggle'
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
@@ -19,7 +19,6 @@ type ProcurementMapRow = {
 type MunicipalityRow = {
   municipality_key: string | null
   municipality_normalized_value: string | null
-  municipality_value: string | null
 }
 
 type SearchKind = 'municipality' | 'region'
@@ -112,24 +111,6 @@ function normalizeMunicipalityId(input: unknown): string {
   return noDecimal
 }
 
-function municipalityLabelScore(label: string, sourceSystem: string): number {
-  const v = label.trim()
-  if (!v) return -1_000_000
-  const isNumericOnly = /^\d+$/.test(v)
-  const hasGreek = /[Α-Ωα-ω]/.test(v)
-  let score = 0
-  if (!isNumericOnly) score += 200
-  if (hasGreek) score += 300
-  if (v.length >= 4) score += 20
-  const source = sourceSystem.toLowerCase()
-  if (source.includes('final_entity_mapping')) score += 100
-  if (source.includes('region_to_municipalities')) score += 80
-  if (source.includes('org_to_municipality')) score += 20
-  if (source.includes('fire') || source.includes('fund')) score -= 20
-  return score
-}
-
-
 const REGIONS = [
   'ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ',
   'ΑΤΤΙΚΗΣ',
@@ -206,21 +187,21 @@ export default function MapsPage() {
       return out
     }
 
-    const fetchAllMunicipalityRows = async (): Promise<Array<MunicipalityRow & { source_system?: string | null }>> => {
-      const out: Array<MunicipalityRow & { source_system?: string | null }> = []
+    const fetchAllMunicipalityRows = async (): Promise<MunicipalityRow[]> => {
+      const out: MunicipalityRow[] = []
       let from = 0
 
       while (true) {
         const to = from + PAGE_SIZE - 1
         const { data, error } = await supabase
-          .from('municipality')
-          .select('municipality_key, municipality_normalized_value, municipality_value, source_system')
+          .from('municipality_normalized_name')
+          .select('municipality_key, municipality_normalized_value')
           .order('id', { ascending: true })
           .range(from, to)
 
         if (error) throw error
 
-        const page = (data ?? []) as Array<MunicipalityRow & { source_system?: string | null }>
+        const page = (data ?? []) as MunicipalityRow[]
         out.push(...page)
         if (page.length < PAGE_SIZE) break
         from += PAGE_SIZE
@@ -335,20 +316,23 @@ export default function MapsPage() {
         const municipalitiesData = await fetchAllMunicipalityRows()
 
         if (!cancelled) {
-          const bestById = new Map<string, { label: string; score: number }>()
+          const bestById = new Map<string, string>()
           for (const row of municipalitiesData) {
             const id = normalizeMunicipalityId(row.municipality_key)
-            const label = String(row.municipality_value ?? row.municipality_normalized_value ?? '').trim()
+            const label = String(row.municipality_normalized_value ?? '').trim()
             if (!id || !label) continue
-            const score = municipalityLabelScore(label, String(row.source_system ?? ''))
-            const current = bestById.get(id)
-            if (!current || score > current.score) {
-              bestById.set(id, { label, score })
-            }
+            if (/^\d+$/.test(label)) continue
+            if (!id) continue
+            if (!bestById.has(id)) bestById.set(id, label)
           }
 
+          const validMunicipalityIds = new Set<string>([
+            ...fullRegionByMunicipality.keys(),
+          ])
+
           const fromDb = Array.from(bestById.entries())
-            .map(([id, v]) => ({ id, label: v.label }))
+            .filter(([id]) => validMunicipalityIds.has(id))
+            .map(([id, label]) => ({ id, label }))
             .sort((a, b) => a.label.localeCompare(b.label, 'el'))
 
           if (fromDb.length > 0) {
@@ -372,6 +356,13 @@ export default function MapsPage() {
   const municipalities = useMemo(() => {
     return municipalityOptions
   }, [municipalityOptions])
+
+  useEffect(() => {
+    if (!selectedMunicipalityDropdown) return
+    if (!municipalityOptions.some((m) => m.id === selectedMunicipalityDropdown)) {
+      setSelectedMunicipalityDropdown('')
+    }
+  }, [municipalityOptions, selectedMunicipalityDropdown])
 
   const municipalityLabelById = useMemo(() => {
     return new Map(municipalities.map((m) => [m.id, m.label]))
@@ -932,7 +923,8 @@ export default function MapsPage() {
     if (region) setSelectedRegion(region)
     setSelectedMunicipalityIdsForMap(new Set([value]))
     setSelectedMunicipalityIdForPanel(value)
-    const label = municipalityLabelById.get(value) ?? value
+    const label = municipalityLabelById.get(value)
+    if (!label) return
     openPanel('dropdown', 'municipality', label)
   }
 
@@ -956,8 +948,8 @@ export default function MapsPage() {
   const handleMapMunicipalityClick = (municipalityId: string) => {
     const normalizedMunicipalityId = normalizeMunicipalityId(municipalityId)
     const feature = municipalityFeatureById.get(normalizedMunicipalityId)
-    const geoFallbackLabel = String((feature?.properties as { name?: string | null } | undefined)?.name ?? '').trim()
-    const label = municipalityLabelById.get(normalizedMunicipalityId) || geoFallbackLabel || normalizedMunicipalityId
+    const label = municipalityLabelById.get(normalizedMunicipalityId)
+    if (!label) return
     const region = municipalityRegionById.get(normalizedMunicipalityId) ?? null
     const pct = choroplethData[normalizedMunicipalityId] ?? 0
     const countCurrentYear = municipalityCurrentYearCountById.get(normalizedMunicipalityId) ?? 0
@@ -999,95 +991,81 @@ export default function MapsPage() {
 
   return (
     <div className="maps-page">
+      <DevViewToggle />
       <ComponentTag name="MapsPage" />
       <div className="maps-page__texture" aria-hidden="true" />
-      <div className="maps-page__sun" aria-hidden="true" />
 
-      <header className="maps-header section-rule">
-        <div>
-          <div className="eyebrow">Χαρτογραφία</div>
-          <h1>Χάρτες</h1>
-          <p>
-            {loading
-              ? 'Φόρτωση χάρτη…'
-              : `Ελλάδα / ${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι με καταγεγραμμένες συμβάσεις το ${mapYear}`}
-          </p>
-        </div>
-        <div className="maps-header__links">
-          <Link className="contracts-back" to="/">← Αρχική</Link>
-          <Link className="contracts-back" to="/contracts">Όλες οι συμβάσεις</Link>
-        </div>
-      </header>
-
-      <section className="maps-controls section-rule">
-        <ComponentTag name="MapsFilters" />
-        <div className="maps-controls__row">
-          <label className="maps-controls__search">
-            <span>ΑΝΑΖΗΤΗΣΗ (ΔΗΜΟΣ / ΠΕΡΙΦΕΡΕΙΑ)</span>
-            <input
-              type="text"
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && searchResults.length > 0) {
-                  applySearchSelection(searchResults[0])
-                }
-              }}
-              placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
-            />
-            {searchText.trim() && (
-              <div className="maps-search-results">
-                {searchResults.length === 0 ? (
-                  <button type="button" className="maps-search-empty" disabled>
-                    Δεν βρέθηκε αποτέλεσμα
-                  </button>
-                ) : (
-                  searchResults.map((opt) => (
-                    <button
-                      key={`${opt.kind}-${opt.value}`}
-                      type="button"
-                      onClick={() => applySearchSelection(opt)}
-                    >
-                      <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
-                      <span>{opt.label}</span>
+      <section className="maps-top">
+        <section className="maps-controls">
+          <ComponentTag name="MapsFilters" />
+          <div className="maps-controls__row">
+            <label className="maps-controls__search">
+              <input
+                aria-label="Αναζήτηση δήμου ή περιφέρειας"
+                type="text"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && searchResults.length > 0) {
+                    applySearchSelection(searchResults[0])
+                  }
+                }}
+                placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
+              />
+              {searchText.trim() && (
+                <div className="maps-search-results">
+                  {searchResults.length === 0 ? (
+                    <button type="button" className="maps-search-empty" disabled>
+                      Δεν βρέθηκε αποτέλεσμα
                     </button>
-                  ))
+                  ) : (
+                    searchResults.map((opt) => (
+                      <button
+                        key={`${opt.kind}-${opt.value}`}
+                        type="button"
+                        onClick={() => applySearchSelection(opt)}
+                      >
+                        <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
+                        <span>{opt.label}</span>
+                      </button>
+                    ))
+                  )}
+                </div>
+              )}
+            </label>
+            <label>
+              <select
+                aria-label="Επέλεξε δήμο"
+                value={selectedMunicipalityDropdown}
+                onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
+              >
+                <option value="">— Δήμοι —</option>
+                {loading && (
+                  <option value="" disabled>Φόρτωση δήμων…</option>
                 )}
-              </div>
-            )}
-          </label>
-          <label>
-            <span>ΕΠΕΛΕΞΕ ΔΗΜΟ</span>
-            <select
-              value={selectedMunicipalityDropdown}
-              onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
-            >
-              <option value="">— Δήμοι —</option>
-              {loading && (
-                <option value="" disabled>Φόρτωση δήμων…</option>
-              )}
-              {!loading && municipalities.length === 0 && (
-                <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
-              )}
-              {municipalities.map((m) => (
-                <option key={m.id} value={m.id}>{m.label}</option>
-              ))}
-            </select>
-          </label>
+                {!loading && municipalities.length === 0 && (
+                  <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
+                )}
+                {municipalities.map((m) => (
+                  <option key={m.id} value={m.id}>{m.label}</option>
+                ))}
+              </select>
+            </label>
 
-          <label>
-            <span>ΕΠΕΛΕΞΕ ΠΕΡΙΦΕΡΕΙΑ</span>
-            <select
-              value={selectedRegion}
-              onChange={(e) => handleRegionDropdownChange(e.target.value)}
-            >
-              <option value="">— Περιφέρειες —</option>
-              {REGIONS.map((region) => (
-                <option key={region} value={region}>{region}</option>
-              ))}
-            </select>
-          </label>
-        </div>
+            <label>
+              <select
+                aria-label="Επέλεξε περιφέρεια"
+                value={selectedRegion}
+                onChange={(e) => handleRegionDropdownChange(e.target.value)}
+              >
+                <option value="">— Περιφέρειες —</option>
+                {REGIONS.map((region) => (
+                  <option key={region} value={region}>{region}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+        </section>
       </section>
 
       <section className="maps-stage section-rule">
@@ -1104,6 +1082,19 @@ export default function MapsPage() {
           />
         </div>
       </section>
+
+      <div className="maps-legend" aria-live="polite">
+        <div className="maps-legend__scale" aria-hidden="true">
+          <span className="maps-legend__scale-label">Λιγότερες</span>
+          <div className="maps-legend__scale-bar" />
+          <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
+        </div>
+        <p className="maps-legend__summary">
+          {loading
+            ? 'Φόρτωση χάρτη…'
+            : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
+        </p>
+      </div>
 
       <MapSelectionPanel
         source={panelSource}

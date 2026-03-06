@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
+import DevViewToggle from '../components/DevViewToggle'
 import { supabase } from '../lib/supabase'
 
 type ContractRow = {
@@ -22,6 +22,16 @@ function clean(v: unknown): string {
   const s = String(v).trim()
   if (!s || s.toLowerCase() === 'nan' || s.toLowerCase() === 'none') return ''
   return s
+}
+
+function normalizeMunicipalityToken(v: string): string {
+  return v
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ς/g, 'σ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toUpperCase()
 }
 
 function fmtDate(iso: string | null): string {
@@ -64,6 +74,7 @@ export default function ContractsPage() {
   const [org, setOrg] = useState('')
   const [procedure, setProcedure] = useState('')
   const [procedureOptions, setProcedureOptions] = useState<string[]>([])
+  const [municipalityNameTokens, setMunicipalityNameTokens] = useState<Set<string>>(new Set())
   const [dateFrom, setDateFrom] = useState(() => isoDateDaysAgo(30))
   const [dateTo, setDateTo] = useState(() => isoToday())
   const [minAmount, setMinAmount] = useState('')
@@ -85,6 +96,27 @@ export default function ContractsPage() {
       setProcedureOptions(vals.sort((a, b) => a.localeCompare(b, 'el')))
     }
     loadProcedures()
+    return () => { cancelled = true }
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    const loadMunicipalityNames = async () => {
+      const { data, error } = await supabase
+        .from('municipality_normalized_name')
+        .select('municipality_normalized_value')
+        .not('municipality_normalized_value', 'is', null)
+        .limit(5000)
+      if (cancelled || error) return
+      const tokens = new Set<string>()
+      for (const row of (data ?? []) as Array<{ municipality_normalized_value: string | null }>) {
+        const v = clean(row.municipality_normalized_value)
+        if (!v) continue
+        tokens.add(normalizeMunicipalityToken(v))
+      }
+      setMunicipalityNameTokens(tokens)
+    }
+    loadMunicipalityNames()
     return () => { cancelled = true }
   }, [])
 
@@ -133,6 +165,7 @@ export default function ContractsPage() {
 
   return (
     <div className="contracts-page">
+      <DevViewToggle />
       <ComponentTag name="ContractsPage" />
       <header className="contracts-header section-rule">
         <div>
@@ -144,7 +177,6 @@ export default function ContractsPage() {
               : `${totalCount.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
           </p>
         </div>
-        <Link className="contracts-back" to="/">← Επιστροφή στην αρχική</Link>
       </header>
 
       <section className="contracts-filters section-rule">
@@ -161,12 +193,22 @@ export default function ContractsPage() {
 
       <section className="contracts-table-wrap section-rule">
         <table className="contracts-table">
+          <colgroup>
+            <col className="contracts-col contracts-col--date" />
+            <col className="contracts-col contracts-col--org" />
+            <col className="contracts-col contracts-col--title" />
+            <col className="contracts-col contracts-col--cpv" />
+            <col className="contracts-col contracts-col--beneficiary" />
+            <col className="contracts-col contracts-col--procedure" />
+            <col className="contracts-col contracts-col--amount" />
+            <col className="contracts-col contracts-col--ref" />
+          </colgroup>
           <thead>
             <tr>
               <th>Ημερομηνία</th>
               <th>Φορέας</th>
               <th>Τίτλος</th>
-              <th>Γιατί (CPV)</th>
+              <th>Περιγραφή Εργασίας</th>
               <th>Δικαιούχος</th>
               <th>Διαδικασία</th>
               <th>Ποσό χωρίς ΦΠΑ</th>
@@ -176,10 +218,15 @@ export default function ContractsPage() {
           <tbody>
             {rows.map((r) => {
               const refNo = clean(r.reference_number)
+              const orgRaw = clean(r.organization_value)
+              const orgToken = normalizeMunicipalityToken(orgRaw)
+              const orgDisplay = municipalityNameTokens.has(orgToken) && !orgToken.startsWith('ΔΗΜΟΣ ')
+                ? `ΔΗΜΟΣ ${orgRaw}`
+                : (orgRaw || '—')
               return (
                 <tr key={r.id}>
                   <td>{fmtDate(r.contract_signed_date)}</td>
-                  <td>{clean(r.organization_value) || '—'}</td>
+                  <td>{orgDisplay}</td>
                   <td>{clean(r.title) || '—'}</td>
                   <td>{clean(r.cpv_value) || '—'}</td>
                   <td>{clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}</td>
