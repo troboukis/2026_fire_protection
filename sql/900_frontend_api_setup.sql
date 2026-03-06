@@ -479,6 +479,7 @@ base AS (
     LIMIT 1
   ) org ON TRUE
   LEFT JOIN cpv_agg ca ON ca.procurement_id = p.id
+  WHERE COALESCE(p.cancelled, FALSE) = FALSE
 ),
 dedup AS (
   SELECT *

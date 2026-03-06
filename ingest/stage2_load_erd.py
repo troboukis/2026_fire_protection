@@ -20,6 +20,7 @@ import ast
 import hashlib
 import os
 import re
+import sys
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
@@ -31,9 +32,14 @@ import psycopg2.extras
 from dotenv import load_dotenv
 import runpy
 
+REPO = Path(__file__).resolve().parent.parent
+if str(REPO) not in sys.path:
+    sys.path.insert(0, str(REPO))
+
+from municipality_normalization import normalizeMunicipality
+
 load_dotenv()
 
-REPO = Path(__file__).resolve().parent.parent
 DEFAULT_CPVS: dict[str, str] = runpy.run_path(str(REPO / "src" / "fetch_kimdis_procurements.py"))["DEFAULT_CPVS"]
 
 RAW_CSV = REPO / "data" / "raw_procurements.csv"
@@ -298,13 +304,15 @@ def seed_municipality_rows(b: CsvBundle) -> list[tuple]:
     seen_pairs: set[tuple[str, str]] = set()
 
     # Main source for municipality variations.
+    # Strict mode: no fallbacks. We only accept explicit municipality_id,
+    # source_value, and normalized_value from final_entity_mapping_expanded.csv.
     muni_rows = b.expanded_map[b.expanded_map["source_entity_type"].isin(["municipality", "municipality_name"])]
     for _, r in muni_rows.iterrows():
         municipality_key = t(r.get("municipality_id"))
-        if not municipality_key:
+        municipality_value = t(r.get("source_value"))
+        municipality_normalized = t(r.get("normalized_value"))
+        if not municipality_key or not municipality_value or not municipality_normalized:
             continue
-        municipality_value = t(r.get("source_value")) or t(r.get("municipality_name")) or municipality_key
-        municipality_normalized = t(r.get("normalized_value")) or t_up(municipality_value) or municipality_value
         k = (municipality_key, municipality_value)
         if k in seen_pairs:
             continue
@@ -316,45 +324,6 @@ def seed_municipality_rows(b: CsvBundle) -> list[tuple]:
             t(r.get("source_system")),
             t(r.get("source_key")),
         ))
-
-    # Add canonical municipality labels from region map.
-    for _, r in b.region_map.iterrows():
-        municipality_key = t(r.get("municipality_id"))
-        if not municipality_key:
-            continue
-        municipality_value = t(r.get("municipality_name")) or municipality_key
-        municipality_normalized = t_up(municipality_value) or municipality_value
-        k = (municipality_key, municipality_value)
-        if k in seen_pairs:
-            continue
-        seen_pairs.add(k)
-        out.append((
-            municipality_key,
-            municipality_value,
-            municipality_normalized,
-            "region_to_municipalities",
-            t(r.get("pdf_geo_code")),
-        ))
-
-    # Ensure keys present even if no name known.
-    for df, col, source in (
-        (b.org_map, "municipality_id", "org_to_municipality"),
-        (b.fire, "municipality_id", "fire_incidents"),
-        (b.fund, "municipality_code", "municipal_funding"),
-    ):
-        if col not in df.columns:
-            continue
-        for v in df[col].tolist():
-            municipality_key = t(v)
-            if not municipality_key:
-                continue
-            municipality_value = municipality_key
-            municipality_normalized = municipality_key
-            k = (municipality_key, municipality_value)
-            if k in seen_pairs:
-                continue
-            seen_pairs.add(k)
-            out.append((municipality_key, municipality_value, municipality_normalized, source, None))
 
     return out
 
@@ -380,12 +349,18 @@ def build_municipality_lookup(muni_seed_rows: list[tuple]) -> dict[str, str]:
         mk = t_up(municipality_key)
         mv = t_up(municipality_value)
         mn = t_up(municipality_norm)
+        mval_norm = normalizeMunicipality(municipality_value)
+        mnorm_norm = normalizeMunicipality(municipality_norm)
         if mk:
             lookup[mk] = municipality_key
         if mv:
             lookup[mv] = municipality_key
         if mn and mn not in lookup:
             lookup[mn] = municipality_key
+        if mval_norm and mval_norm not in lookup:
+            lookup[mval_norm] = municipality_key
+        if mnorm_norm and mnorm_norm not in lookup:
+            lookup[mnorm_norm] = municipality_key
     return lookup
 
 
@@ -796,6 +771,14 @@ def main() -> None:
             log("Region seed committed")
         if "municipality" in selected_tables:
             log(f"Seeding municipality rows ({len(muni_seed)})...")
+            # Remove code-only placeholders from older fallback-based loads.
+            cur.execute(
+                """
+                DELETE FROM public.municipality
+                WHERE municipality_key IS NOT NULL
+                  AND municipality_value = municipality_key
+                """
+            )
             execute_values(
                 cur,
                 """
@@ -808,6 +791,46 @@ def main() -> None:
                   source_key = EXCLUDED.source_key
                 """,
                 muni_seed,
+            )
+
+            # Canonical municipality display names for frontend usage:
+            # one row per municipality_key in municipality_normalized_name.
+            cur.execute(
+                """
+                INSERT INTO public.municipality_normalized_name (
+                  municipality_key, municipality_value, municipality_normalized_value
+                )
+                SELECT DISTINCT ON (m.municipality_key)
+                  m.municipality_key,
+                  m.municipality_value,
+                  m.municipality_normalized_value
+                FROM public.municipality AS m
+                WHERE m.municipality_key IS NOT NULL
+                  AND m.municipality_value IS NOT NULL
+                  AND m.municipality_value <> m.municipality_key
+                ORDER BY
+                  m.municipality_key,
+                  CASE m.source_system
+                    WHEN 'region_to_municipalities' THEN 0
+                    WHEN 'geo' THEN 1
+                    ELSE 2
+                  END,
+                  m.id
+                ON CONFLICT (municipality_key) DO UPDATE SET
+                  municipality_value = EXCLUDED.municipality_value,
+                  municipality_normalized_value = EXCLUDED.municipality_normalized_value,
+                  updated_at = NOW()
+                """
+            )
+            cur.execute("DELETE FROM public.municipality_normalized_name WHERE municipality_key IS NULL")
+            cur.execute(
+                """
+                UPDATE public.municipality AS m
+                SET municipality_normalized_name_id = n.id
+                FROM public.municipality_normalized_name AS n
+                WHERE m.municipality_key = n.municipality_key
+                  AND (m.municipality_normalized_name_id IS DISTINCT FROM n.id)
+                """
             )
             conn.commit()
             log("Municipality seed committed")

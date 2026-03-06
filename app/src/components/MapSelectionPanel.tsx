@@ -211,7 +211,7 @@ export default function MapSelectionPanel({
 
   const subtitle =
     !kind
-      ? 'Επιλέξτε Δήμο ή Περιφέρεια στον χάρτη'
+      ? 'Μπορείτε να επιλέξετε Δήμο στον χάρτη ή Δήμο / Περιφέρεια χρησιμοποιώντας τα αντίστοιχα φίλτρα'
       : kind === 'municipality'
         ? `Το ${currentYear} έχουν δημοσιευθεί ${(municipalityCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που αφορούν στην πρόληψη ή αντιμετώπιση δασικών πυρκαγιών.`
         : `Το ${currentYear} έχουν δημοσιευθεί ${(regionCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που αφορούν στην πρόληψη ή αντιμετώπιση δασικών πυρκαγιών στην επιλεγμένη περιφέρεια.`

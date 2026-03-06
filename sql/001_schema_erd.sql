@@ -24,6 +24,7 @@ $$;
 
 CREATE TABLE IF NOT EXISTS public.municipality_normalized_name (
   id                           BIGSERIAL PRIMARY KEY,
+  municipality_key             TEXT NOT NULL UNIQUE,
   municipality_value           TEXT NOT NULL,
   municipality_normalized_value TEXT NOT NULL,
   created_at                   TIMESTAMPTZ NOT NULL DEFAULT NOW(),
