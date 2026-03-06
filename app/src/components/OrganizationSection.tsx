@@ -1,7 +1,10 @@
+import type { ContractModalContract } from './ContractModal'
+
 type OrganizationTimelineItem = {
   month: string
   year: string
   text: string
+  contract: ContractModalContract | null
 }
 
 export type OrganizationSectionData = {
@@ -22,6 +25,7 @@ type OrganizationSectionProps = {
   loading: boolean
   formatEurCompact: (n: number) => string
   formatDateEl: (iso: string | null) => string
+  onOpenContract?: (contract: ContractModalContract) => void
 }
 
 export default function OrganizationSection({
@@ -29,10 +33,11 @@ export default function OrganizationSection({
   loading,
   formatEurCompact,
   formatDateEl,
+  onOpenContract,
 }: OrganizationSectionProps) {
   const timelineItems = data.timeline.length
     ? data.timeline
-    : [{ month: '—', year: '—', text: loading ? 'Φόρτωση στοιχείων φορέα…' : 'Δεν βρέθηκαν συμβάσεις για τον φορέα.' }]
+    : [{ month: '—', year: '—', text: loading ? 'Φόρτωση στοιχείων φορέα…' : 'Δεν βρέθηκαν συμβάσεις για τον φορέα.', contract: null }]
   const kpis = [
     {
       label: 'Η ΠΙΟ ΣΥΧΝΗ ΕΡΓΑΣΙΑ',
@@ -107,7 +112,17 @@ export default function OrganizationSection({
                   <span>{item.month}</span>
                   <strong>{item.year}</strong>
                 </div>
-                <p>{item.text}</p>
+                {item.contract && onOpenContract ? (
+                  <button
+                    type="button"
+                    className="timeline-contract-link"
+                    onClick={() => onOpenContract(item.contract!)}
+                  >
+                    {item.text}
+                  </button>
+                ) : (
+                  <p>{item.text}</p>
+                )}
               </li>
             ))}
           </ul>

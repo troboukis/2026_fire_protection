@@ -5,6 +5,7 @@ import ContractModal, { type ContractModalContract } from '../components/Contrac
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
+import { openContractPdfPrintView } from '../lib/contractPdf'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
 
@@ -35,6 +36,8 @@ type MunicipalityRegionRow = {
 }
 
 type MunicipalityLatestContract = LatestContractCardView
+type FirePoint = { lat: number; lon: number }
+type CityPoint = { lat: number; lon: number; name: string }
 
 const PAGE_SIZE = 1000
 
@@ -104,8 +107,28 @@ function normalizeSearch(input: string): string {
 function normalizeMunicipalityId(input: unknown): string {
   const s = String(input ?? '').trim()
   if (!s) return ''
-  return s.replace(/\.0+$/, '')
+  const noDecimal = s.replace(/\.0+$/, '')
+  if (/^\d+$/.test(noDecimal)) return String(Number(noDecimal))
+  return noDecimal
 }
+
+function municipalityLabelScore(label: string, sourceSystem: string): number {
+  const v = label.trim()
+  if (!v) return -1_000_000
+  const isNumericOnly = /^\d+$/.test(v)
+  const hasGreek = /[Α-Ωα-ω]/.test(v)
+  let score = 0
+  if (!isNumericOnly) score += 200
+  if (hasGreek) score += 300
+  if (v.length >= 4) score += 20
+  const source = sourceSystem.toLowerCase()
+  if (source.includes('final_entity_mapping')) score += 100
+  if (source.includes('region_to_municipalities')) score += 80
+  if (source.includes('org_to_municipality')) score += 20
+  if (source.includes('fire') || source.includes('fund')) score -= 20
+  return score
+}
+
 
 const REGIONS = [
   'ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ',
@@ -143,8 +166,16 @@ export default function MapsPage() {
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [municipalityLatestContracts, setMunicipalityLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [municipalityLatestLoading, setMunicipalityLatestLoading] = useState(false)
+  const [municipalityFirePoints, setMunicipalityFirePoints] = useState<FirePoint[]>([])
+  const [municipalityFireLoading, setMunicipalityFireLoading] = useState(false)
+  const [municipalityFireYear, setMunicipalityFireYear] = useState<number | null>(null)
+  const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
   const [regionLatestContracts, setRegionLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [regionLatestLoading, setRegionLatestLoading] = useState(false)
+
+  const downloadContractPdf = (contract: ContractModalContract) => {
+    openContractPdfPrintView(contract)
+  }
 
   useEffect(() => {
     let cancelled = false
@@ -175,11 +206,35 @@ export default function MapsPage() {
       return out
     }
 
+    const fetchAllMunicipalityRows = async (): Promise<Array<MunicipalityRow & { source_system?: string | null }>> => {
+      const out: Array<MunicipalityRow & { source_system?: string | null }> = []
+      let from = 0
+
+      while (true) {
+        const to = from + PAGE_SIZE - 1
+        const { data, error } = await supabase
+          .from('municipality')
+          .select('municipality_key, municipality_normalized_value, municipality_value, source_system')
+          .order('id', { ascending: true })
+          .range(from, to)
+
+        if (error) throw error
+
+        const page = (data ?? []) as Array<MunicipalityRow & { source_system?: string | null }>
+        out.push(...page)
+        if (page.length < PAGE_SIZE) break
+        from += PAGE_SIZE
+      }
+
+      return out
+    }
+
     const load = async () => {
       try {
         const assetUrl = (assetName: string) => `${import.meta.env.BASE_URL}${assetName}`
-        const [geoRes, rows] = await Promise.all([
+        const [geoRes, citiesRes, rows] = await Promise.all([
           fetch(assetUrl('municipalities.geojson')),
+          fetch(assetUrl('greek_cities.json')).catch(() => null),
           fetchAllProcurementRows(),
         ])
 
@@ -187,13 +242,27 @@ export default function MapsPage() {
 
         const geoData = (await geoRes.json()) as GeoData
         if (!cancelled) setGeojson(geoData)
-        const geoNameById = new Map<string, string>()
-        for (const f of geoData.features) {
-          const id = normalizeMunicipalityId((f.properties as { municipality_code?: string | null }).municipality_code)
-          const name = String((f.properties as { name?: string | null }).name ?? '').trim()
-          if (id && name && !geoNameById.has(id)) geoNameById.set(id, name)
+        if (!cancelled && citiesRes && citiesRes.ok) {
+          const cityRows = (await citiesRes.json()) as Array<{
+            city_el?: unknown
+            city?: unknown
+            lat?: unknown
+            lng?: unknown
+          }>
+          const points: CityPoint[] = []
+          for (const row of (cityRows ?? [])) {
+            const lat = Number(row.lat)
+            const lon = Number(row.lng)
+            if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue
+            if (Math.abs(lat) > 90 || Math.abs(lon) > 180) continue
+            const name = String(row.city_el ?? row.city ?? '').trim()
+            if (!name) continue
+            points.push({ lat, lon, name })
+          }
+          setCityPoints(points)
+        } else if (!cancelled) {
+          setCityPoints([])
         }
-
         const countByMunicipality = new Map<string, number>()
         let procurementRowsForYear = 0
         const orgKeys = Array.from(new Set(
@@ -263,24 +332,23 @@ export default function MapsPage() {
           setMunicipalityRegionById(fullRegionByMunicipality)
         }
 
-        const { data: municipalitiesData } = await supabase
-          .from('municipality')
-          .select('municipality_key, municipality_normalized_value, municipality_value')
-          .order('municipality_normalized_value', { ascending: true })
+        const municipalitiesData = await fetchAllMunicipalityRows()
 
         if (!cancelled) {
-          const fromDb = ((municipalitiesData ?? []) as MunicipalityRow[])
-            .map((r) => {
-              const id = normalizeMunicipalityId(r.municipality_key)
-              const dbLabel = String(r.municipality_normalized_value ?? r.municipality_value ?? '').trim()
-              const label = geoNameById.get(id) ?? dbLabel
-              return { id, label }
-            })
-            .filter((m) => m.id && m.label)
-            .reduce<Array<{ id: string; label: string }>>((acc, m) => {
-              if (!acc.find((x) => x.id === m.id)) acc.push(m)
-              return acc
-            }, [])
+          const bestById = new Map<string, { label: string; score: number }>()
+          for (const row of municipalitiesData) {
+            const id = normalizeMunicipalityId(row.municipality_key)
+            const label = String(row.municipality_value ?? row.municipality_normalized_value ?? '').trim()
+            if (!id || !label) continue
+            const score = municipalityLabelScore(label, String(row.source_system ?? ''))
+            const current = bestById.get(id)
+            if (!current || score > current.score) {
+              bestById.set(id, { label, score })
+            }
+          }
+
+          const fromDb = Array.from(bestById.entries())
+            .map(([id, v]) => ({ id, label: v.label }))
             .sort((a, b) => a.label.localeCompare(b.label, 'el'))
 
           if (fromDb.length > 0) {
@@ -302,19 +370,8 @@ export default function MapsPage() {
   )
 
   const municipalities = useMemo(() => {
-    if (municipalityOptions.length > 0) return municipalityOptions
-    if (!geojson) return [] as Array<{ id: string; label: string }>
-    const seen = new Set<string>()
-    const out: Array<{ id: string; label: string }> = []
-    for (const f of geojson.features) {
-      const id = String((f.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
-      const label = String((f.properties as { name?: string | null }).name ?? '').trim()
-      if (!id || !label || seen.has(id)) continue
-      seen.add(id)
-      out.push({ id, label })
-    }
-    return out.sort((a, b) => a.label.localeCompare(b.label, 'el'))
-  }, [geojson])
+    return municipalityOptions
+  }, [municipalityOptions])
 
   const municipalityLabelById = useMemo(() => {
     return new Map(municipalities.map((m) => [m.id, m.label]))
@@ -324,7 +381,7 @@ export default function MapsPage() {
     const out = new Map<string, GeoFeature>()
     if (!geojson) return out
     for (const f of geojson.features) {
-      const id = String((f.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
+      const id = normalizeMunicipalityId((f.properties as { municipality_code?: string | null }).municipality_code)
       if (!id) continue
       out.set(id, f)
     }
@@ -481,7 +538,17 @@ export default function MapsPage() {
       amount_without_vat: number | null
       amount_with_vat: number | null
     } | null
-    const c = (cpvRows?.[0] ?? null) as { cpv_key: string | null; cpv_value: string | null } | null
+    const cpvItems = ((cpvRows ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
+      .map((r) => ({
+        code: cleanText(r.cpv_key) ?? '—',
+        label: cleanText(r.cpv_value) ?? '—',
+      }))
+      .filter((r) => r.code !== '—' || r.label !== '—')
+      .reduce<Array<{ code: string; label: string }>>((acc, cur) => {
+        if (!acc.find((x) => x.code === cur.code && x.label === cur.label)) acc.push(cur)
+        return acc
+      }, [])
+    const c = cpvItems[0] ?? null
     const org = (oRows?.[0] ?? null) as {
       organization_key: string
       organization_normalized_value: string | null
@@ -496,7 +563,7 @@ export default function MapsPage() {
       who,
       what: cleanText(proc.title) ?? '—',
       when: formatDateEl(cleanText(proc.submission_at)),
-      why: firstPipePart(proc.short_descriptions) ?? cleanText(c?.cpv_value) ?? '—',
+      why: firstPipePart(proc.short_descriptions) ?? c?.label ?? '—',
       beneficiary: cleanText(p?.beneficiary_name) ?? '—',
       contractType: cleanText(proc.procedure_type_value) ?? '—',
       howMuch: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
@@ -504,8 +571,9 @@ export default function MapsPage() {
       withVatAmount: (p?.amount_with_vat == null ? '—' : Number(p.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       referenceNumber: cleanText(proc.reference_number) ?? '—',
       contractNumber: cleanText(proc.contract_number) ?? '—',
-      cpv: cleanText(c?.cpv_value) ?? '—',
-      cpvCode: cleanText(c?.cpv_key) ?? '—',
+      cpv: c?.label ?? '—',
+      cpvCode: c?.code ?? '—',
+      cpvItems,
       signedAt: formatDateEl(cleanText(proc.contract_signed_date)),
       startDate: formatDateEl(cleanText(proc.start_date)),
       endDate: formatDateEl(cleanText(proc.end_date)),
@@ -529,6 +597,85 @@ export default function MapsPage() {
 
     setSelectedContract(modal)
   }
+
+  useEffect(() => {
+    let cancelled = false
+    const selectedMunicipalityId = selectedMunicipalityIdForPanel
+    if (!selectedMunicipalityId || panelKind !== 'municipality') {
+      setMunicipalityFirePoints([])
+      setMunicipalityFireLoading(false)
+      setMunicipalityFireYear(null)
+      return
+    }
+
+    const loadMunicipalityFires = async () => {
+      setMunicipalityFireLoading(true)
+      try {
+        const { data: latestYearRow, error: latestYearError } = await supabase
+          .from('forest_fire')
+          .select('year')
+          .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
+          .not('year', 'is', null)
+          .order('year', { ascending: false })
+          .limit(1)
+          .maybeSingle()
+
+        if (latestYearError) throw latestYearError
+        const latestYear = latestYearRow?.year != null ? Number(latestYearRow.year) : null
+        if (!latestYear || !Number.isFinite(latestYear)) {
+          if (!cancelled) {
+            setMunicipalityFireYear(null)
+            setMunicipalityFirePoints([])
+          }
+          return
+        }
+
+        const pointsOut: FirePoint[] = []
+        let from = 0
+        while (true) {
+          const to = from + PAGE_SIZE - 1
+          const { data, error } = await supabase
+            .from('forest_fire')
+            .select('lat, lon')
+            .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
+            .eq('year', latestYear)
+            .not('lat', 'is', null)
+            .not('lon', 'is', null)
+            .order('id', { ascending: true })
+            .range(from, to)
+
+          if (error) throw error
+
+          const page = ((data ?? []) as Array<{ lat: number | string | null; lon: number | string | null }>)
+            .map((r) => ({
+              lat: Number(r.lat),
+              lon: Number(r.lon),
+            }))
+            .filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lon))
+          pointsOut.push(...page)
+          if ((data ?? []).length < PAGE_SIZE) break
+          from += PAGE_SIZE
+        }
+
+        if (!cancelled) {
+          setMunicipalityFireYear(latestYear)
+          setMunicipalityFirePoints(pointsOut)
+        }
+      } catch {
+        if (!cancelled) {
+          setMunicipalityFireYear(null)
+          setMunicipalityFirePoints([])
+        }
+      } finally {
+        if (!cancelled) setMunicipalityFireLoading(false)
+      }
+    }
+
+    loadMunicipalityFires()
+    return () => {
+      cancelled = true
+    }
+  }, [selectedMunicipalityIdForPanel, panelKind])
 
   useEffect(() => {
     let cancelled = false
@@ -807,14 +954,17 @@ export default function MapsPage() {
   }
 
   const handleMapMunicipalityClick = (municipalityId: string) => {
-    const feature = municipalityFeatureById.get(municipalityId)
-    const label = municipalityLabelById.get(municipalityId) ?? municipalityId
-    const region = municipalityRegionById.get(municipalityId) ?? null
-    const pct = choroplethData[municipalityId] ?? 0
-    const countCurrentYear = municipalityCurrentYearCountById.get(municipalityId) ?? 0
+    const normalizedMunicipalityId = normalizeMunicipalityId(municipalityId)
+    const feature = municipalityFeatureById.get(normalizedMunicipalityId)
+    const geoFallbackLabel = String((feature?.properties as { name?: string | null } | undefined)?.name ?? '').trim()
+    const label = municipalityLabelById.get(normalizedMunicipalityId) || geoFallbackLabel || normalizedMunicipalityId
+    const region = municipalityRegionById.get(normalizedMunicipalityId) ?? null
+    const pct = choroplethData[normalizedMunicipalityId] ?? 0
+    const countCurrentYear = municipalityCurrentYearCountById.get(normalizedMunicipalityId) ?? 0
     // Debug payload for municipality mapping/coverage validation.
     console.log('[MapsPage] municipality click', {
       municipalityId,
+      normalizedMunicipalityId,
       label,
       region,
       pctOfNational: pct,
@@ -822,9 +972,9 @@ export default function MapsPage() {
       geojsonProperties: feature?.properties ?? null,
     })
 
-    setSelectedMunicipalityIdsForMap(new Set([municipalityId]))
-    setSelectedMunicipalityDropdown(municipalityId)
-    setSelectedMunicipalityIdForPanel(municipalityId)
+    setSelectedMunicipalityIdsForMap(new Set([normalizedMunicipalityId]))
+    setSelectedMunicipalityDropdown(normalizedMunicipalityId)
+    setSelectedMunicipalityIdForPanel(normalizedMunicipalityId)
     if (region) setSelectedRegion(region)
     openPanel('map', 'municipality', label)
   }
@@ -950,6 +1100,7 @@ export default function MapsPage() {
             onDeselect={handleMapDeselect}
             onMunicipalityClick={handleMapMunicipalityClick}
             selectedMunicipalityIds={selectedMunicipalityIdsForMap}
+            municipalityLabelById={municipalityLabelById}
           />
         </div>
       </section>
@@ -968,6 +1119,10 @@ export default function MapsPage() {
             ? (municipalityFeatureById.get(selectedMunicipalityIdForPanel) ?? null)
             : null
         }
+        municipalityFirePoints={municipalityFirePoints}
+        municipalityFireLoading={municipalityFireLoading}
+        municipalityFireYear={municipalityFireYear}
+        cityPoints={cityPoints}
         currentYear={mapYear}
         regionCurrentYearCount={selectedRegionCurrentYearCount}
         municipalityCurrentYearCount={
@@ -981,6 +1136,7 @@ export default function MapsPage() {
         <ContractModal
           contract={selectedContract}
           onClose={() => setSelectedContract(null)}
+          onDownloadPdf={() => downloadContractPdf(selectedContract)}
         />
       )}
     </div>

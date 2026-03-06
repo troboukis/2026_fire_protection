@@ -311,6 +311,7 @@ main {
 .wire-item h2 {
   font-size: 1.08rem;
   line-height: 1.12;
+  letter-spacing: -0.03em;
 }
 
 .wire-item__rule {
@@ -1038,6 +1039,27 @@ main {
   line-height: 1.25;
 }
 
+.record-contract-link {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.25;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.record-contract-link:hover,
+.record-contract-link:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  outline: none;
+}
+
 .record-card__footer {
   margin-top: auto;
   padding-top: 0.8rem;
@@ -1283,6 +1305,24 @@ main {
 .organization__timeline p {
   margin: 0;
   line-height: 1.35;
+}
+
+.timeline-contract-link {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.35;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.timeline-contract-link:hover,
+.timeline-contract-link:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  outline: none;
 }
 
 .about-panel {
@@ -2102,6 +2142,55 @@ main {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.maps-selection-panel__shape-meta {
+  margin-top: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.maps-legend-dot {
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  vertical-align: middle;
+  transform: translateY(-0.03rem);
+}
+
+.maps-legend-dot--fire {
+  background: #ff3b30;
+}
+
+.maps-city-point text {
+  fill: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  paint-order: stroke fill;
+  stroke: #0f2237;
+  stroke-width: 1.1px;
+  pointer-events: none;
+}
+
+.maps-city-point line {
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 0.55px;
+  pointer-events: none;
+}
+
+.maps-city-heart {
+  fill: #ffffff;
+  font-size: 0.66rem;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  paint-order: stroke fill;
+  stroke: #0f2237;
+  stroke-width: 0.9px;
 }
 
 .maps-selection-panel__latest {
