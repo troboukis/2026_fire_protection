@@ -6,6 +6,7 @@ export type LatestContractCardView = {
   what: string
   when: string
   why: string
+  signedAt?: string
   beneficiary: string
   contractType: string
   howMuch: string
@@ -50,6 +51,7 @@ export default function LatestContractCard({ item, onOpen, contractTypeTransform
         </p>
         <p className="wire-item__type">{transformedContractType}</p>
       </div>
+      <p className="wire-item__date">Υπεγράφη: {item.signedAt ?? '—'}</p>
       {item.documentUrl && (
         <p className="wire-item__link">
           <a
@@ -65,4 +67,3 @@ export default function LatestContractCard({ item, onOpen, contractTypeTransform
     </article>
   )
 }
-

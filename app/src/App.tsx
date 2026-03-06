@@ -6,6 +6,7 @@ import ErrorBoundary from './components/ErrorBoundary'
 import ContractModal, { type ContractModalContract } from './components/ContractModal'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import OrganizationSection, { type OrganizationSectionData } from './components/OrganizationSection'
+import { openContractPdfPrintView } from './lib/contractPdf'
 import { supabase } from './lib/supabase'
 
 type BeneficiaryInsightRow = {
@@ -18,11 +19,11 @@ type BeneficiaryInsightRow = {
   endDate: string
   duration: string
   progressPct: number | null
-  contractAmounts: number[]
   signer: string
+  relevantContracts: LatestContractCard[]
 }
 
-function formatCommitDateTimeEl(iso: string): string {
+function formatDateTimeEl(iso: string): string {
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
   return new Intl.DateTimeFormat('el-GR', {
@@ -225,101 +226,6 @@ function DebugComponentLabel({ name }: { name: string }) {
   )
 }
 
-function escapeHtml(v: string): string {
-  return v
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-}
-
-function buildPdfTemplate(contract: LatestContractCard): string {
-  const title = escapeHtml(contract.what)
-  const who = escapeHtml(contract.who)
-  const when = escapeHtml(contract.when)
-  const why = escapeHtml(contract.why)
-  const amount = escapeHtml(contract.withoutVatAmount)
-  const beneficiary = escapeHtml(contract.beneficiary)
-  const contractType = escapeHtml(contract.contractType)
-  const ref = escapeHtml(contract.referenceNumber)
-  const contractNo = escapeHtml(contract.contractNumber)
-  const cpv = escapeHtml(contract.cpv)
-  const cpvCode = escapeHtml(contract.cpvCode)
-  const orgVat = escapeHtml(contract.organizationVat)
-  const benVat = escapeHtml(contract.beneficiaryVat)
-  const signedAt = escapeHtml(contract.signedAt)
-  const startDate = escapeHtml(contract.startDate)
-  const endDate = escapeHtml(contract.endDate)
-  const withVat = escapeHtml(contract.withVatAmount)
-  const description = escapeHtml(contract.shortDescription)
-  return `<!doctype html>
-<html lang="el">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project ΠΥΡ</title>
-  <style>
-    :root{--paper:#f7f5ee;--line:#cfc8bb;--line-strong:#9d9688;--ink:#111;--ink-soft:#4d4d4d;--ink-faint:#89857c;--accent:#d3482d;}
-    *{box-sizing:border-box;}
-    body{margin:0;padding:24px;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;}
-    .sheet{max-width:980px;margin:0 auto;border:1px solid var(--line-strong);background:var(--paper);padding:20px;}
-    .head{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:12px;}
-    .eyebrow{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;color:var(--ink-soft);font-size:11px;letter-spacing:.08em;text-transform:uppercase;}
-    h1{margin:6px 0 0;font-size:34px;line-height:1.08;}
-    .subtitle{margin:14px 0 0;font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;color:var(--ink-soft);font-size:15px;line-height:1.4;}
-    .highlight{margin-top:14px;border:1px solid var(--line);padding:10px 12px;background:linear-gradient(90deg,rgba(211,72,45,.08),transparent 35%);}
-    .amount{color:var(--accent);font-weight:700;font-size:32px;line-height:1.1;}
-    .route{margin-top:6px;font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;color:var(--ink-soft);font-size:16px;letter-spacing:.04em;text-transform:uppercase;}
-    .kind{margin-top:6px;font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;color:var(--ink-faint);font-size:12px;text-transform:uppercase;}
-    .grid{margin-top:14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);}
-    .cell{background:var(--paper);padding:8px 10px;}
-    .label{display:block;font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;color:var(--ink-faint);font-size:10px;letter-spacing:.07em;text-transform:uppercase;}
-    .value{margin-top:4px;display:block;font-size:14px;line-height:1.35;word-break:break-word;}
-    .source{margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-family:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;font-size:11px;color:var(--ink-soft);}
-    @page { size: A4; margin: 12mm; }
-    @media print { body{padding:0;} .sheet{border:1px solid var(--line); box-shadow:none;} }
-  </style>
-</head>
-<body>
-  <article class="sheet">
-    <header class="head">
-      <div>
-        <span class="eyebrow">${who}</span>
-        <h1>${title}</h1>
-      </div>
-      <div class="eyebrow">${when}</div>
-    </header>
-    <p class="subtitle">${why}</p>
-    <section class="highlight">
-      <div class="amount">${amount}</div>
-      <div class="route">→ ${beneficiary}</div>
-      <div class="kind">${contractType}</div>
-    </section>
-    <section class="grid">
-      <div class="cell"><span class="label">Κωδ. Αναφοράς</span><span class="value">${ref}</span></div>
-      <div class="cell"><span class="label">Κωδ. Σύμβασης</span><span class="value">${contractNo}</span></div>
-      <div class="cell"><span class="label">CPV</span><span class="value">${cpv} (${cpvCode})</span></div>
-      <div class="cell"><span class="label">Ποσό με ΦΠΑ</span><span class="value">${withVat}</span></div>
-      <div class="cell"><span class="label">Υπογραφή</span><span class="value">${signedAt}</span></div>
-      <div class="cell"><span class="label">Έναρξη / Λήξη</span><span class="value">${startDate} - ${endDate}</span></div>
-      <div class="cell"><span class="label">Φορέας ΑΦΜ</span><span class="value">${orgVat}</span></div>
-      <div class="cell"><span class="label">Δικαιούχος ΑΦΜ</span><span class="value">${benVat}</span></div>
-      <div class="cell"><span class="label">Περιγραφή</span><span class="value">${description}</span></div>
-    </section>
-    <footer class="source">PROJECT ΠΥΡ, ΠΗΓΗ: https://portal.eprocurement.gov.gr/</footer>
-  </article>
-</body>
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      window.print();
-    }, 120);
-  });
-</script>
-</html>`
-}
-
 const YEAR_START = 2024
 
 const CHART_YEAR_STYLES = [
@@ -330,7 +236,8 @@ const CHART_YEAR_STYLES = [
 ]
 
 export default function App() {
-  const lastCommitLabel = formatCommitDateTimeEl(__LAST_COMMIT_ISO__)
+  const buildTimeLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
+  const [lastDbUpdateLabel, setLastDbUpdateLabel] = useState(buildTimeLabel)
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
@@ -403,6 +310,33 @@ export default function App() {
   }, [heroCurvePoints])
 
   useEffect(() => {
+    let cancelled = false
+
+    const loadLastDbUpdate = async () => {
+      const tables = ['procurement', 'payment', 'diavgeia', 'fund', 'forest_fire']
+      const results = await Promise.all(
+        tables.map(async (table) => {
+          const { data, error } = await supabase
+            .from(table)
+            .select('updated_at')
+            .order('updated_at', { ascending: false })
+            .limit(1)
+          if (error) return null
+          const row = (data?.[0] ?? null) as { updated_at?: string | null } | null
+          return cleanText(row?.updated_at ?? null)
+        }),
+      )
+      const latestIso = results
+        .filter((v): v is string => Boolean(v))
+        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0]
+      if (!cancelled && latestIso) setLastDbUpdateLabel(formatDateTimeEl(latestIso))
+    }
+
+    loadLastDbUpdate()
+    return () => { cancelled = true }
+  }, [])
+
+  useEffect(() => {
     if (!selectedContract) return
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setSelectedContract(null)
@@ -470,14 +404,18 @@ export default function App() {
           }
         }
 
-        const cpvByProcId = new Map<number, { cpv_key: string | null; cpv_value: string | null }>()
+        const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
         for (const c of chunk(ids, 200)) {
           const { data: cpvData } = await supabase
             .from('cpv')
             .select('procurement_id, cpv_key, cpv_value')
             .in('procurement_id', c)
           for (const cpv of (cpvData ?? []) as Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }>) {
-            if (!cpvByProcId.has(cpv.procurement_id)) cpvByProcId.set(cpv.procurement_id, cpv)
+            const code = cleanText(cpv.cpv_key) ?? '—'
+            const label = cleanText(cpv.cpv_value) ?? '—'
+            if (!cpvByProcId.has(cpv.procurement_id)) cpvByProcId.set(cpv.procurement_id, [])
+            const items = cpvByProcId.get(cpv.procurement_id)!
+            if (!items.find((x) => x.code === code && x.label === label)) items.push({ code, label })
           }
         }
 
@@ -521,11 +459,12 @@ export default function App() {
             diavgeia_ada: string | null
           }
           const p = paymentByProcId.get(r.id)
-          const c = cpvByProcId.get(r.id)
+          const cpvItems = cpvByProcId.get(r.id) ?? []
+          const c = cpvItems[0] ?? null
           const amountWithoutVat = p?.amount_without_vat ?? null
 
           const why =
-            cleanText(c?.cpv_value) ??
+            c?.label ??
             firstPipePart(r.short_descriptions) ??
             '—'
           const diavgeiaAda = cleanText(r.diavgeia_ada)
@@ -544,8 +483,9 @@ export default function App() {
             withVatAmount: formatEur(p?.amount_with_vat ?? null),
             referenceNumber: cleanText(r.reference_number) ?? '—',
             contractNumber: cleanText(r.contract_number) ?? '—',
-            cpv: cleanText(c?.cpv_value) ?? '—',
-            cpvCode: cleanText(c?.cpv_key) ?? '—',
+            cpv: c?.label ?? '—',
+            cpvCode: c?.code ?? '—',
+            cpvItems,
             signedAt: formatDateEl(cleanText(r.contract_signed_date)),
             startDate: formatDateEl(cleanText(r.start_date)),
             endDate: formatDateEl(cleanText(r.end_date)),
@@ -629,14 +569,30 @@ export default function App() {
           organization_value: string | null
         }>
 
-        const bestOrg = orgRows.find((r) => {
-          const v = `${cleanText(r.organization_normalized_value) ?? ''} ${cleanText(r.organization_value) ?? ''}`
-          return v.toLocaleUpperCase('el-GR').includes('ΑΔΜΗΕ')
-        }) ?? orgRows[0]
+        const normalizeOrgToken = (v: string | null): string => (v ?? '')
+          .toLocaleUpperCase('el-GR')
+          .replace(/[^0-9A-ZΑ-Ω]/g, '')
+        const targetOrg = normalizeOrgToken('ΑΔΜΗΕ')
+        const scoredOrgRows = [...orgRows]
+          .map((r) => {
+            const normalized = normalizeOrgToken(cleanText(r.organization_normalized_value))
+            const raw = normalizeOrgToken(cleanText(r.organization_value))
+            let score = 0
+            if (normalized === targetOrg || raw === targetOrg) score = 4
+            else if (normalized.startsWith(targetOrg) || raw.startsWith(targetOrg)) score = 3
+            else if (normalized.includes(targetOrg) || raw.includes(targetOrg)) score = 2
+            return { row: r, score }
+          })
+          .sort((a, b) => b.score - a.score)
+
+        const matchedOrgRows = scoredOrgRows.filter((x) => x.score >= 2).map((x) => x.row)
+        const bestOrg = scoredOrgRows[0]?.row ?? orgRows[0]
 
         if (!bestOrg) return
 
-        const organizationKey = bestOrg.organization_key
+        const organizationKeys = Array.from(
+          new Set((matchedOrgRows.length ? matchedOrgRows : [bestOrg]).map((r) => r.organization_key)),
+        )
         const organizationName =
           cleanText(bestOrg.organization_normalized_value) ??
           cleanText(bestOrg.organization_value) ??
@@ -650,7 +606,7 @@ export default function App() {
           const { data } = await supabase
             .from('procurement')
             .select('id, contract_signed_date, title')
-            .eq('organization_key', organizationKey)
+            .in('organization_key', organizationKeys)
             .order('id', { ascending: true })
             .range(from, to)
           const rows = (data ?? []) as Array<{ id: number; contract_signed_date: string | null; title: string | null }>
@@ -660,14 +616,30 @@ export default function App() {
         }
 
         const procurementIds = procurements.map((p) => p.id)
-        const paymentRows: Array<{ procurement_id: number; beneficiary_name: string | null; amount_without_vat: number | null }> = []
+        const paymentRows: Array<{
+          procurement_id: number
+          beneficiary_name: string | null
+          beneficiary_vat_number: string | null
+          signers: string | null
+          payment_ref_no: string | null
+          amount_without_vat: number | null
+          amount_with_vat: number | null
+        }> = []
         const cpvRows: Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }> = []
 
         for (const ids of chunk(procurementIds, 200)) {
           const [{ data: pData }, { data: cData }] = await Promise.all([
             supabase
               .from('payment')
-              .select('procurement_id, beneficiary_name, amount_without_vat')
+              .select(`
+                procurement_id,
+                beneficiary_name,
+                beneficiary_vat_number,
+                signers,
+                payment_ref_no,
+                amount_without_vat,
+                amount_with_vat
+              `)
               .in('procurement_id', ids),
             supabase
               .from('cpv')
@@ -687,12 +659,28 @@ export default function App() {
 
         const cpvCounts = new Map<string, number>()
         const cpvValueCounts = new Map<string, number>()
+        const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
         for (const row of cpvRows) {
           const code = cleanText(row.cpv_key)
           const value = cleanText(row.cpv_value)
           if (!code) continue
           cpvCounts.set(code, (cpvCounts.get(code) ?? 0) + 1)
           if (value) cpvValueCounts.set(value, (cpvValueCounts.get(value) ?? 0) + 1)
+          if (!cpvByProcId.has(row.procurement_id)) cpvByProcId.set(row.procurement_id, [])
+          const items = cpvByProcId.get(row.procurement_id)!
+          const item = { code, label: value ?? '—' }
+          if (!items.find((x) => x.code === item.code && x.label === item.label)) items.push(item)
+        }
+        const paymentByProcId = new Map<number, {
+          beneficiary_name: string | null
+          beneficiary_vat_number: string | null
+          signers: string | null
+          payment_ref_no: string | null
+          amount_without_vat: number | null
+          amount_with_vat: number | null
+        }>()
+        for (const row of paymentRows) {
+          if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
         }
         const topCpvs = [...cpvCounts.entries()]
           .sort((a, b) => b[1] - a[1])
@@ -701,17 +689,109 @@ export default function App() {
         const topCpvValue = [...cpvValueCounts.entries()]
           .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
 
-        const datedProcurements = procurements
-          .filter((p) => cleanText(p.contract_signed_date))
-          .sort((a, b) => String(b.contract_signed_date).localeCompare(String(a.contract_signed_date)))
+        const { data: latestTimelineRows } = await supabase
+          .from('procurement')
+          .select(`
+            id,
+            title,
+            submission_at,
+            contract_signed_date,
+            short_descriptions,
+            procedure_type_value,
+            reference_number,
+            contract_number,
+            contract_budget,
+            budget,
+            assign_criteria,
+            contract_type,
+            units_operator,
+            funding_details_cofund,
+            funding_details_self_fund,
+            funding_details_espa,
+            funding_details_regular_budget,
+            auction_ref_no,
+            organization_vat_number,
+            start_date,
+            end_date,
+            diavgeia_ada
+          `)
+          .in('organization_key', organizationKeys)
+          .not('contract_signed_date', 'is', null)
+          .order('contract_signed_date', { ascending: false })
+          .order('id', { ascending: false })
+          .limit(5)
+        const latestContracts = (latestTimelineRows ?? []) as Array<{
+          id: number
+          title: string | null
+          submission_at: string | null
+          contract_signed_date: string | null
+          short_descriptions: string | null
+          procedure_type_value: string | null
+          reference_number: string | null
+          contract_number: string | null
+          contract_budget: number | null
+          budget: number | null
+          assign_criteria: string | null
+          contract_type: string | null
+          units_operator: string | null
+          funding_details_cofund: string | null
+          funding_details_self_fund: string | null
+          funding_details_espa: string | null
+          funding_details_regular_budget: string | null
+          auction_ref_no: string | null
+          organization_vat_number: string | null
+          start_date: string | null
+          end_date: string | null
+          diavgeia_ada: string | null
+        }>
 
-        const latestSigned = datedProcurements[0]?.contract_signed_date ?? null
-        const timeline = datedProcurements.slice(0, 5).map((p) => {
+        const latestSigned = latestContracts[0]?.contract_signed_date ?? null
+        const timeline = latestContracts.map((p) => {
+          const payment = paymentByProcId.get(p.id)
+          const cpvItems = cpvByProcId.get(p.id) ?? []
+          const cpv = cpvItems[0] ?? null
+          const contract: LatestContractCard = {
+            id: String(p.id),
+            who: organizationName,
+            what: cleanText(p.title) ?? '—',
+            when: formatDateEl(cleanText(p.submission_at)),
+            why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
+            beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
+            contractType: cleanText(p.procedure_type_value) ?? '—',
+            howMuch: formatEur(payment?.amount_without_vat ?? null),
+            withoutVatAmount: formatEur(payment?.amount_without_vat ?? null),
+            withVatAmount: formatEur(payment?.amount_with_vat ?? null),
+            referenceNumber: cleanText(p.reference_number) ?? '—',
+            contractNumber: cleanText(p.contract_number) ?? '—',
+            cpv: cpv?.label ?? '—',
+            cpvCode: cpv?.code ?? '—',
+            cpvItems,
+            signedAt: formatDateEl(cleanText(p.contract_signed_date)),
+            startDate: formatDateEl(cleanText(p.start_date)),
+            endDate: formatDateEl(cleanText(p.end_date)),
+            organizationVat: cleanText(p.organization_vat_number) ?? '—',
+            beneficiaryVat: cleanText(payment?.beneficiary_vat_number) ?? '—',
+            signers: cleanText(payment?.signers) ?? '—',
+            assignCriteria: cleanText(p.assign_criteria) ?? '—',
+            contractKind: cleanText(p.contract_type) ?? '—',
+            unitsOperator: cleanText(p.units_operator) ?? '—',
+            fundingCofund: cleanText(p.funding_details_cofund) ?? '—',
+            fundingSelf: cleanText(p.funding_details_self_fund) ?? '—',
+            fundingEspa: cleanText(p.funding_details_espa) ?? '—',
+            fundingRegular: cleanText(p.funding_details_regular_budget) ?? '—',
+            auctionRefNo: cleanText(p.auction_ref_no) ?? '—',
+            paymentRefNo: cleanText(payment?.payment_ref_no) ?? '—',
+            shortDescription: firstPipePart(p.short_descriptions) ?? '—',
+            rawBudget: formatEur(p.budget != null ? Number(p.budget) : null),
+            contractBudget: formatEur(p.contract_budget != null ? Number(p.contract_budget) : null),
+            documentUrl: cleanText(p.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(p.diavgeia_ada)}` : null,
+          }
           const year = cleanText(p.contract_signed_date)?.slice(0, 4) ?? '—'
           return {
             month: monthShortEl(p.contract_signed_date),
             year,
             text: firstPipePart(p.title) ?? 'Καταχώρηση σύμβασης',
+            contract,
           }
         })
 
@@ -772,9 +852,27 @@ export default function App() {
         const procurements: Array<{
           id: number
           organization_key: string | null
+          title: string | null
+          submission_at: string | null
           contract_signed_date: string | null
+          short_descriptions: string | null
+          procedure_type_value: string | null
+          reference_number: string | null
+          contract_number: string | null
+          contract_budget: number | null
+          budget: number | null
+          assign_criteria: string | null
+          contract_type: string | null
+          units_operator: string | null
+          funding_details_cofund: string | null
+          funding_details_self_fund: string | null
+          funding_details_espa: string | null
+          funding_details_regular_budget: string | null
+          auction_ref_no: string | null
+          organization_vat_number: string | null
           start_date: string | null
           end_date: string | null
+          diavgeia_ada: string | null
         }> = []
 
         let from = 0
@@ -782,7 +880,31 @@ export default function App() {
           const to = from + pageSize - 1
           const { data, error } = await supabase
             .from('procurement')
-            .select('id, organization_key, contract_signed_date, start_date, end_date')
+            .select(`
+              id,
+              organization_key,
+              title,
+              submission_at,
+              contract_signed_date,
+              short_descriptions,
+              procedure_type_value,
+              reference_number,
+              contract_number,
+              contract_budget,
+              budget,
+              assign_criteria,
+              contract_type,
+              units_operator,
+              funding_details_cofund,
+              funding_details_self_fund,
+              funding_details_espa,
+              funding_details_regular_budget,
+              auction_ref_no,
+              organization_vat_number,
+              start_date,
+              end_date,
+              diavgeia_ada
+            `)
             .gte('contract_signed_date', yearStart)
             .lte('contract_signed_date', yearEnd)
             .order('id', { ascending: true })
@@ -791,9 +913,27 @@ export default function App() {
           const rows = (data ?? []) as Array<{
             id: number
             organization_key: string | null
+            title: string | null
+            submission_at: string | null
             contract_signed_date: string | null
+            short_descriptions: string | null
+            procedure_type_value: string | null
+            reference_number: string | null
+            contract_number: string | null
+            contract_budget: number | null
+            budget: number | null
+            assign_criteria: string | null
+            contract_type: string | null
+            units_operator: string | null
+            funding_details_cofund: string | null
+            funding_details_self_fund: string | null
+            funding_details_espa: string | null
+            funding_details_regular_budget: string | null
+            auction_ref_no: string | null
+            organization_vat_number: string | null
             start_date: string | null
             end_date: string | null
+            diavgeia_ada: string | null
           }>
           procurements.push(...rows)
           if (rows.length < pageSize) break
@@ -807,21 +947,32 @@ export default function App() {
           procurement_id: number
           beneficiary_name: string | null
           amount_without_vat: number | null
+          amount_with_vat: number | null
+          beneficiary_vat_number: string | null
           signers: string | null
+          payment_ref_no: string | null
         }> = []
         for (const c of chunk(ids, 200)) {
           const { data } = await supabase
             .from('payment')
-            .select('procurement_id, beneficiary_name, amount_without_vat, signers')
+            .select(`
+              procurement_id,
+              beneficiary_name,
+              amount_without_vat,
+              amount_with_vat,
+              beneficiary_vat_number,
+              signers,
+              payment_ref_no
+            `)
             .in('procurement_id', c)
           paymentRows.push(...((data ?? []) as typeof paymentRows))
         }
 
-        const cpvRows: Array<{ procurement_id: number; cpv_value: string | null }> = []
+        const cpvRows: Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }> = []
         for (const c of chunk(ids, 200)) {
           const { data } = await supabase
             .from('cpv')
-            .select('procurement_id, cpv_value')
+            .select('procurement_id, cpv_key, cpv_value')
             .in('procurement_id', c)
           cpvRows.push(...((data ?? []) as typeof cpvRows))
         }
@@ -842,22 +993,35 @@ export default function App() {
           }
         }
 
-        const paymentByProc = new Map<number, Array<{ beneficiary: string; amount: number; signer: string }>>()
+        const paymentByProc = new Map<number, Array<{
+          beneficiary: string
+          amount: number
+          amountWithVat: number | null
+          beneficiaryVat: string | null
+          signer: string
+          paymentRefNo: string | null
+        }>>()
         for (const p of paymentRows) {
           const beneficiary = toUpperEl(cleanText(p.beneficiary_name))
           if (!beneficiary) continue
           const amount = Number(p.amount_without_vat ?? 0)
+          const amountWithVat = p.amount_with_vat != null ? Number(p.amount_with_vat) : null
+          const beneficiaryVat = cleanText(p.beneficiary_vat_number)
           const signer = cleanText(p.signers) ?? '—'
+          const paymentRefNo = cleanText(p.payment_ref_no)
           if (!paymentByProc.has(p.procurement_id)) paymentByProc.set(p.procurement_id, [])
-          paymentByProc.get(p.procurement_id)!.push({ beneficiary, amount, signer })
+          paymentByProc.get(p.procurement_id)!.push({ beneficiary, amount, amountWithVat, beneficiaryVat, signer, paymentRefNo })
         }
 
-        const cpvByProc = new Map<number, string[]>()
+        const cpvByProc = new Map<number, Array<{ code: string; label: string }>>()
         for (const c of cpvRows) {
           const cpv = cleanText(c.cpv_value)
-          if (!cpv) continue
+          const code = cleanText(c.cpv_key)
+          if (!cpv && !code) continue
           if (!cpvByProc.has(c.procurement_id)) cpvByProc.set(c.procurement_id, [])
-          cpvByProc.get(c.procurement_id)!.push(cpv)
+          const items = cpvByProc.get(c.procurement_id)!
+          const item = { code: code ?? '—', label: cpv ?? '—' }
+          if (!items.find((x) => x.code === item.code && x.label === item.label)) items.push(item)
         }
 
         type BeneficiaryAgg = {
@@ -869,7 +1033,13 @@ export default function App() {
           signerCounts: Map<string, number>
           startDates: string[]
           endDates: string[]
-          contractAmounts: number[]
+          contractsByProc: Map<number, {
+            amount: number
+            amountWithVat: number | null
+            beneficiaryVat: string | null
+            signer: string
+            paymentRefNo: string | null
+          }>
         }
 
         const agg = new Map<string, BeneficiaryAgg>()
@@ -893,22 +1063,40 @@ export default function App() {
                 signerCounts: new Map<string, number>(),
                 startDates: [],
                 endDates: [],
-                contractAmounts: [],
+                contractsByProc: new Map<number, {
+                  amount: number
+                  amountWithVat: number | null
+                  beneficiaryVat: string | null
+                  signer: string
+                  paymentRefNo: string | null
+                }>(),
               })
             }
             const a = agg.get(key)!
             a.totalAmount += entry.amount
             a.contractCount += 1
-            a.contractAmounts.push(entry.amount)
             a.orgTotals.set(org, (a.orgTotals.get(org) ?? 0) + entry.amount)
             if (entry.signer && entry.signer !== '—') a.signerCounts.set(entry.signer, (a.signerCounts.get(entry.signer) ?? 0) + 1)
-            for (const cpv of cpvs) a.cpvCounts.set(cpv, (a.cpvCounts.get(cpv) ?? 0) + 1)
+            for (const cpv of cpvs) a.cpvCounts.set(cpv.label, (a.cpvCounts.get(cpv.label) ?? 0) + 1)
             const start = cleanText(pr.start_date)
             const end = cleanText(pr.end_date)
             if (start) a.startDates.push(start)
             if (end) a.endDates.push(end)
+            const existingContract = a.contractsByProc.get(pr.id)
+            if (!existingContract || entry.amount > existingContract.amount) {
+              a.contractsByProc.set(pr.id, {
+                amount: entry.amount,
+                amountWithVat: entry.amountWithVat,
+                beneficiaryVat: entry.beneficiaryVat,
+                signer: entry.signer,
+                paymentRefNo: entry.paymentRefNo,
+              })
+            }
           }
         }
+
+        const procurementById = new Map<number, (typeof procurements)[number]>()
+        for (const pr of procurements) procurementById.set(pr.id, pr)
 
         const rows: BeneficiaryInsightRow[] = [...agg.values()].map((a) => {
           const organization =
@@ -932,6 +1120,52 @@ export default function App() {
             else if (now >= end) progressPct = 100
             else progressPct = ((now.getTime() - start.getTime()) / (end.getTime() - start.getTime())) * 100
           }
+          const relevantContracts = [...a.contractsByProc.entries()]
+            .sort((x, y) => y[1].amount - x[1].amount)
+            .slice(0, 5)
+            .map<LatestContractCard | null>(([procId, entry]) => {
+              const pr = procurementById.get(procId)
+              if (!pr) return null
+              const cpvs = cpvByProc.get(pr.id) ?? []
+              const topCpv = cpvs[0] ?? null
+              return {
+                id: String(pr.id),
+                who: organization,
+                what: cleanText(pr.title) ?? '—',
+                when: formatDateEl(cleanText(pr.submission_at)),
+                why: toSentenceCaseEl(topCpv?.label ?? firstPipePart(pr.short_descriptions) ?? '—'),
+                beneficiary: a.beneficiary,
+                contractType: cleanText(pr.procedure_type_value) ?? '—',
+                howMuch: formatEur(entry.amount),
+                withoutVatAmount: formatEur(entry.amount),
+                withVatAmount: formatEur(entry.amountWithVat ?? null),
+                referenceNumber: cleanText(pr.reference_number) ?? '—',
+                contractNumber: cleanText(pr.contract_number) ?? '—',
+                cpv: topCpv?.label ?? '—',
+                cpvCode: topCpv?.code ?? '—',
+                cpvItems: cpvs,
+                signedAt: formatDateEl(cleanText(pr.contract_signed_date)),
+                startDate: formatDateEl(cleanText(pr.start_date)),
+                endDate: formatDateEl(cleanText(pr.end_date)),
+                organizationVat: cleanText(pr.organization_vat_number) ?? '—',
+                beneficiaryVat: entry.beneficiaryVat ?? '—',
+                signers: entry.signer ?? '—',
+                assignCriteria: cleanText(pr.assign_criteria) ?? '—',
+                contractKind: cleanText(pr.contract_type) ?? '—',
+                unitsOperator: cleanText(pr.units_operator) ?? '—',
+                fundingCofund: cleanText(pr.funding_details_cofund) ?? '—',
+                fundingSelf: cleanText(pr.funding_details_self_fund) ?? '—',
+                fundingEspa: cleanText(pr.funding_details_espa) ?? '—',
+                fundingRegular: cleanText(pr.funding_details_regular_budget) ?? '—',
+                auctionRefNo: cleanText(pr.auction_ref_no) ?? '—',
+                paymentRefNo: entry.paymentRefNo ?? '—',
+                shortDescription: firstPipePart(pr.short_descriptions) ?? '—',
+                rawBudget: formatEur(pr.budget != null ? Number(pr.budget) : null),
+                contractBudget: formatEur(pr.contract_budget != null ? Number(pr.contract_budget) : null),
+                documentUrl: cleanText(pr.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(pr.diavgeia_ada)}` : null,
+              }
+            })
+            .filter((v): v is LatestContractCard => v !== null)
           return {
             beneficiary: a.beneficiary,
             organization,
@@ -942,8 +1176,8 @@ export default function App() {
             endDate: endIso ? formatDateEl(endIso) : '—',
             duration: durationDays != null ? `${durationDays} ημέρες` : '—',
             progressPct: progressPct != null ? Math.max(0, Math.min(100, progressPct)) : null,
-            contractAmounts: [...a.contractAmounts].sort((x, y) => y - x),
             signer,
+            relevantContracts,
           }
         })
 
@@ -1005,22 +1239,7 @@ export default function App() {
   }, [])
 
   const downloadContractPdf = (contract: LatestContractCard) => {
-    const popup = window.open('', '_blank', 'width=1024,height=900')
-    if (!popup) return
-    try {
-      popup.document.open()
-      popup.document.write(buildPdfTemplate(contract))
-      popup.document.close()
-      popup.document.title = 'Project ΠΥΡ'
-      try {
-        popup.history.replaceState({}, '', `/project-pyr-print/${contract.id}`)
-      } catch {
-        // Ignore if browser blocks history manipulation in this popup context.
-      }
-      popup.focus()
-    } catch {
-      popup.close()
-    }
+    openContractPdfPrintView(contract)
   }
 
   const scrollToSection = (id: string) => {
@@ -1040,7 +1259,7 @@ export default function App() {
           <div className="eyebrow">παρατηρητηριο για τις δασικές πυρκαγιές</div>
           <div className="brand-line">
             <h1>Π <span className="beta-badge">BETA</span></h1>
-            <span className="brand-mark">Τελευταία ενημέρωση / {lastCommitLabel}</span>
+            <span className="brand-mark">Τελευταία ενημέρωση / {lastDbUpdateLabel}</span>
           </div>
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
@@ -1275,7 +1494,10 @@ export default function App() {
             )}
 
             {!featuredBeneficiariesLoading && featuredBeneficiaries.map((row, idx) => (
-              <article className="record-card" key={`${row.beneficiary}-${idx}`}>
+              <article
+                className="record-card"
+                key={`${row.beneficiary}-${idx}`}
+              >
                 <div className="record-card__year" aria-hidden="true">2026</div>
                 <div className="record-card__header">
                   <div className="record-card__authority">Top Beneficiary #{idx + 1}</div>
@@ -1304,12 +1526,20 @@ export default function App() {
                     />
                   </div>
                 </div>
-                {row.contractCount > 1 && (
-                  <div className="record-contract-amounts" aria-label="Ποσά ανά σύμβαση">
-                    <div className="record-contract-amounts__title">Ποσό ανά σύμβαση</div>
+                {row.relevantContracts.length > 0 && (
+                  <div className="record-contract-amounts" aria-label="Σχετικές συμβάσεις">
+                    <div className="record-contract-amounts__title">Σχετικές συμβάσεις</div>
                     <ul>
-                      {row.contractAmounts.slice(0, 8).map((amount, amountIdx) => (
-                        <li key={`${row.beneficiary}-amount-${amountIdx}`}>{formatEur(amount)}</li>
+                      {row.relevantContracts.map((contract) => (
+                        <li key={`${row.beneficiary}-contract-${contract.id}`}>
+                          <button
+                            type="button"
+                            className="record-contract-link"
+                            onClick={() => setSelectedContract(contract)}
+                          >
+                            {contract.what} - {contract.withoutVatAmount}
+                          </button>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -1335,6 +1565,7 @@ export default function App() {
           loading={organizationSectionLoading}
           formatEurCompact={formatEurCompact}
           formatDateEl={formatDateEl}
+          onOpenContract={(contract) => setSelectedContract(contract)}
         />
 
         <DebugComponentLabel name="AboutSection" />

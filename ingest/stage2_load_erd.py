@@ -446,6 +446,7 @@ def procurement_rows(
             municipality_key_raw, region_key_raw = org_map.get((norm_key(org_type) or "", norm_key(org_name) or ""), (None, None))
         if municipality_key_raw is None and region_key_raw is None and org_name:
             municipality_key_raw, region_key_raw = org_map.get(("", norm_key(org_name) or ""), (None, None))
+
         municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
         region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
         org_value_raw = t(r.get("organization_value"))

@@ -19,7 +19,10 @@ function fmtPct(v: number): string {
 }
 
 function municipalityCode(d: GeoFeature): string {
-  return String((d.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
+  const raw = String((d.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
+  const noDecimal = raw.replace(/\.0+$/, '')
+  if (/^\d+$/.test(noDecimal)) return String(Number(noDecimal))
+  return noDecimal
 }
 
 interface Props {
@@ -29,6 +32,7 @@ interface Props {
   onDeselect: () => void
   onMunicipalityClick?: (municipalityId: string) => void
   selectedMunicipalityIds?: Set<string> | null
+  municipalityLabelById?: Map<string, string>
 }
 
 export function GreeceMap({
@@ -38,6 +42,7 @@ export function GreeceMap({
   onDeselect,
   onMunicipalityClick,
   selectedMunicipalityIds,
+  municipalityLabelById,
 }: Props) {
   const svgRef                = useRef<SVGSVGElement>(null)
   const selectedRef           = useRef<Set<string>>(new Set())
@@ -47,6 +52,7 @@ export function GreeceMap({
   const pathGenRef            = useRef<d3.GeoPath | null>(null)
   const onDeselectRef         = useRef<() => void>(() => {})
   const onMunicipalityClickRef = useRef<((municipalityId: string) => void) | undefined>(undefined)
+  const municipalityLabelByIdRef = useRef<Map<string, string>>(new Map())
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [svgSize, setSvgSize] = useState({ width: 0, height: 0 })
 
@@ -55,6 +61,7 @@ export function GreeceMap({
   procMunicipalitiesRef.current = procMunicipalities
   onDeselectRef.current         = onDeselect
   onMunicipalityClickRef.current = onMunicipalityClick
+  municipalityLabelByIdRef.current = municipalityLabelById ?? new Map()
 
   // Watch SVG element for real layout dimensions
   useEffect(() => {
@@ -138,8 +145,10 @@ export function GreeceMap({
           const darker = d3.color(base)?.darker(0.3)
           d3.select(this).attr('fill', darker ? darker.toString() : base)
         }
+        const dbLabel = municipalityLabelByIdRef.current.get(code)
+        const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
         const pct = choroplethRef.current[code] ?? null
-        setTooltip({ x: event.offsetX, y: event.offsetY, name: d.properties.name, pct })
+        setTooltip({ x: event.offsetX, y: event.offsetY, name: dbLabel || fallbackGeoName || code, pct })
       })
       .on('mousemove', (event: MouseEvent) => {
         setTooltip(prev =>

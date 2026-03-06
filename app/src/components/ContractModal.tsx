@@ -13,6 +13,7 @@ type ContractModalContract = {
   contractNumber: string
   cpv: string
   cpvCode: string
+  cpvItems?: Array<{ code: string; label: string }>
   signedAt: string
   startDate: string
   endDate: string
@@ -43,6 +44,8 @@ type Props = {
 export type { ContractModalContract }
 
 export default function ContractModal({ contract, onClose, onDownloadPdf }: Props) {
+  const cpvItems = (contract.cpvItems ?? []).filter((x) => x.code || x.label)
+  const fallbackCpv = `${contract.cpv} (${contract.cpvCode})`
   return (
     <div className="contract-modal-backdrop" onClick={onClose}>
       <article className="contract-modal" onClick={(e) => e.stopPropagation()}>
@@ -69,7 +72,20 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
           <div><span>Τύπος Διαδικασίας</span><strong>{contract.contractType}</strong></div>
           <div><span>Κωδ. Αναφοράς</span><strong>{contract.referenceNumber}</strong></div>
           <div><span>Κωδ. Σύμβασης</span><strong>{contract.contractNumber}</strong></div>
-          <div><span>CPV</span><strong>{contract.cpv} ({contract.cpvCode})</strong></div>
+          <div>
+            <span>CPV</span>
+            <strong>
+              {cpvItems.length > 0 ? (
+                cpvItems.map((item, idx) => (
+                  <span key={`${item.code}-${item.label}-${idx}`} style={{ display: 'block' }}>
+                    {item.label} ({item.code})
+                  </span>
+                ))
+              ) : (
+                fallbackCpv
+              )}
+            </strong>
+          </div>
           <div><span>Δικαιούχος ΑΦΜ</span><strong>{contract.beneficiaryVat}</strong></div>
           <div><span>Φορέας ΑΦΜ</span><strong>{contract.organizationVat}</strong></div>
           <div><span>Κριτήριο Ανάθεσης</span><strong>{contract.assignCriteria}</strong></div>
@@ -111,4 +127,3 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
     </div>
   )
 }
-
