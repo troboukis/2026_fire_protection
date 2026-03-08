@@ -1,13 +1,17 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import ContractModal, { type ContractModalContract } from './components/ContractModal'
-import FireCopernicusSection from './components/FireCopernicusSection'
-import FeaturedRecordsSection, { type BeneficiaryInsightRow } from './components/FeaturedRecordsSection'
+import type { ContractModalContract } from './components/ContractModal'
+import type { BeneficiaryInsightRow } from './components/FeaturedRecordsSection'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
-import OrganizationSection, { type OrganizationSectionData } from './components/OrganizationSection'
+import type { OrganizationSectionData } from './components/OrganizationSection'
 import { downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
 import { supabase } from './lib/supabase'
+
+const ContractModal = lazy(() => import('./components/ContractModal'))
+const FireCopernicusSection = lazy(() => import('./components/FireCopernicusSection'))
+const FeaturedRecordsSection = lazy(() => import('./components/FeaturedRecordsSection'))
+const OrganizationSection = lazy(() => import('./components/OrganizationSection'))
 
 type LatestContractCard = LatestContractCardView & ContractModalContract & {
   id: string
@@ -203,6 +207,14 @@ function DebugComponentLabel({ name }: { name: string }) {
   )
 }
 
+function SectionFallback({ label }: { label: string }) {
+  return (
+    <section className="section-rule page-loading page-loading--section" aria-label={label}>
+      Φόρτωση ενότητας…
+    </section>
+  )
+}
+
 const YEAR_START = 2024
 
 function getChartYearStyle(year: number, currentYear: number) {
@@ -270,6 +282,36 @@ export default function App() {
     topCpvPrevCount: 0,
     topCpvVsPrev1Pct: null,
   })
+
+  useEffect(() => {
+    const prefetch = () => {
+      void Promise.all([
+        import('./components/FireCopernicusSection'),
+        import('./components/FeaturedRecordsSection'),
+        import('./components/OrganizationSection'),
+        import('./components/ContractModal'),
+        import('./pages/AnalysisPage'),
+        import('./pages/ContractsPage'),
+        import('./pages/MapsPage'),
+      ])
+    }
+
+    const idle = (window as Window & {
+      requestIdleCallback?: (callback: () => void) => number
+      cancelIdleCallback?: (id: number) => void
+    }).requestIdleCallback
+
+    if (idle) {
+      const id = idle(prefetch)
+      return () => {
+        const cancelIdle = (window as Window & { cancelIdleCallback?: (id: number) => void }).cancelIdleCallback
+        cancelIdle?.(id)
+      }
+    }
+
+    const timeoutId = window.setTimeout(prefetch, 800)
+    return () => window.clearTimeout(timeoutId)
+  }, [])
   const totalVsPrev1Pct = resolvePct(heroStats.totalVsPrev1Pct, heroStats.totalMain, heroStats.totalPrev1)
   const totalVsPrev2Pct = resolvePct(null, heroStats.totalMain, heroStats.totalPrev2)
   const topTypeVsPrev1Pct = resolvePct(
@@ -292,7 +334,7 @@ export default function App() {
     }
     for (const [, arr] of grouped) arr.sort((a, b) => a.dayOfYear - b.dayOfYear)
     return grouped
-  }, [heroCurvePoints])
+  }, [chartYears, heroCurvePoints])
   const chartTicks = [
     { label: '01 Ιαν', month: 1, day: 1 },
     { label: '01 Μαϊ', month: 5, day: 1 },
@@ -1285,7 +1327,7 @@ export default function App() {
 
     loadHeroStats()
     return () => { cancelled = true }
-  }, [])
+  }, [currentYear])
 
   const downloadContractPdf = async (contract: LatestContractCard) => {
     await downloadContractDocument(contract)
@@ -1494,25 +1536,31 @@ export default function App() {
         </section>
 
         <DebugComponentLabel name="FireCopernicus" />
-        <FireCopernicusSection />
+        <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
+          <FireCopernicusSection />
+        </Suspense>
 
         <DebugComponentLabel name="FeaturedRecordsSection" />
-        <FeaturedRecordsSection
-          year={featuredRecordsYear}
-          rows={featuredBeneficiaries}
-          loading={featuredBeneficiariesLoading}
-          formatEur={formatEur}
-          onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
-        />
+        <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
+          <FeaturedRecordsSection
+            year={featuredRecordsYear}
+            rows={featuredBeneficiaries}
+            loading={featuredBeneficiariesLoading}
+            formatEur={formatEur}
+            onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
+          />
+        </Suspense>
 
         <DebugComponentLabel name="OrganizationSection" />
-        <OrganizationSection
-          data={organizationSection}
-          loading={organizationSectionLoading}
-          formatEurCompact={formatEurCompact}
-          formatDateEl={formatDateEl}
-          onOpenContract={(contract) => setSelectedContract(contract)}
-        />
+        <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
+          <OrganizationSection
+            data={organizationSection}
+            loading={organizationSectionLoading}
+            formatEurCompact={formatEurCompact}
+            formatDateEl={formatDateEl}
+            onOpenContract={(contract) => setSelectedContract(contract)}
+          />
+        </Suspense>
 
         <DebugComponentLabel name="AboutSection" />
         <section id="about" className="about-panel section-rule">
@@ -1551,14 +1599,14 @@ export default function App() {
       </main>
 
       {selectedContract && (
-        <>
+        <Suspense fallback={null}>
           <DebugComponentLabel name="ContractModal" />
           <ContractModal
             contract={selectedContract}
             onClose={() => setSelectedContract(null)}
             onDownloadPdf={() => downloadContractPdf(selectedContract)}
           />
-        </>
+        </Suspense>
       )}
     </>
   )

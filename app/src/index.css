@@ -1743,6 +1743,21 @@ main {
   color: var(--ink-soft);
 }
 
+.page-loading {
+  min-height: 30vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.page-loading--section {
+  min-height: 12rem;
+  border: 1px solid var(--line);
+  background: rgba(247, 245, 238, 0.72);
+}
+
 .about-panel {
   display: grid;
   grid-template-columns: 5fr 7fr;

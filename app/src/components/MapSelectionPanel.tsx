@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import EditorialLead from './EditorialLead'
@@ -17,7 +17,7 @@ function normalizeGreekName(input: string): string {
     .trim()
 }
 
-function useHeartMarker(name: string): boolean {
+function shouldUseHeartMarker(name: string): boolean {
   const n = normalizeGreekName(name)
   return n === 'αντικυρα' || n === 'ασπρα σπιτια'
 }
@@ -200,7 +200,7 @@ export default function MapSelectionPanel({
   const projectedCurrentFirePoints = projectedFirePoints.filter((p) => p.period === 'current')
   const projectedPreviousFirePoints = projectedFirePoints.filter((p) => p.period === 'previous')
 
-  const projectWorkDots = (
+  const projectWorkDots = useCallback((
     points: Array<{ lat: number; lon: number; work: string; pointName: string }>,
     scope: 'municipality' | 'region',
   ) => {
@@ -221,16 +221,16 @@ export default function MapSelectionPanel({
       out.push({ x, y, work: point.work, pointName: point.pointName, scope })
     }
     return out
-  }
+  }, [municipalityFeature, previewGeometry])
 
   const projectedMunicipalityWorkDots = useMemo(
     () => projectWorkDots(municipalityDirectWorkPoints, 'municipality'),
-    [previewGeometry, municipalityDirectWorkPoints, municipalityFeature],
+    [municipalityDirectWorkPoints, projectWorkDots],
   )
 
   const projectedRegionalWorkDots = useMemo(
     () => projectWorkDots(municipalityRegionalWorkPoints, 'region'),
-    [previewGeometry, municipalityRegionalWorkPoints, municipalityFeature],
+    [municipalityRegionalWorkPoints, projectWorkDots],
   )
 
   const uniqueFireLocations = useMemo(() => {
@@ -485,7 +485,7 @@ export default function MapSelectionPanel({
               )}
             {projectedCityPoints.map((p, idx) => (
               <g key={`city-${p.name}-${idx}`} className="maps-city-point">
-                {useHeartMarker(p.name) ? (
+                {shouldUseHeartMarker(p.name) ? (
                   <text className="maps-city-heart" x={p.x} y={p.y + 1.8} textAnchor="middle">♥</text>
                 ) : (
                   <circle cx={p.x} cy={p.y} r={2.6} fill="#ffffff" />

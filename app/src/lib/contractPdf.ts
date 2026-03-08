@@ -23,7 +23,7 @@ export type ContractPdfData = {
   shortDescription: string
 }
 
-function escapeHtml(v: string): string {
+export function escapeHtml(v: string): string {
   return v
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -32,7 +32,7 @@ function escapeHtml(v: string): string {
     .replace(/'/g, '&#39;')
 }
 
-function buildCpvHtml(contract: ContractPdfData): string {
+export function buildCpvHtml(contract: ContractPdfData): string {
   const cpvItems = (contract.cpvItems ?? []).filter((x) => x.code || x.label)
   if (!cpvItems.length) return `${escapeHtml(contract.cpv)} (${escapeHtml(contract.cpvCode)})`
   return cpvItems
@@ -40,7 +40,7 @@ function buildCpvHtml(contract: ContractPdfData): string {
     .join('<br/>')
 }
 
-function buildPdfTemplate(contract: ContractPdfData): string {
+export function buildPdfTemplate(contract: ContractPdfData): string {
   const title = escapeHtml(contract.what)
   const who = escapeHtml(contract.who)
   const when = escapeHtml(contract.when)

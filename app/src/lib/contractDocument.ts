@@ -2,13 +2,13 @@ import type { ContractModalContract } from '../components/ContractModal'
 
 const KIMDIS_ATTACHMENT_BASE_URL = 'https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment'
 
-function cleanValue(value: string | null | undefined): string | null {
+export function cleanValue(value: string | null | undefined): string | null {
   const trimmed = String(value ?? '').trim()
   if (!trimmed || trimmed === '—') return null
   return trimmed
 }
 
-function extractKimdisRefNumber(contract: Pick<ContractModalContract, 'referenceNumber' | 'contractNumber'>): string | null {
+export function extractKimdisRefNumber(contract: Pick<ContractModalContract, 'referenceNumber' | 'contractNumber'>): string | null {
   const candidates = [cleanValue(contract.referenceNumber), cleanValue(contract.contractNumber)]
   for (const candidate of candidates) {
     if (!candidate) continue
@@ -19,7 +19,7 @@ function extractKimdisRefNumber(contract: Pick<ContractModalContract, 'reference
   return null
 }
 
-function buildAttachmentUrl(refNumber: string): string {
+export function buildAttachmentUrl(refNumber: string): string {
   return `${KIMDIS_ATTACHMENT_BASE_URL}/${encodeURIComponent(refNumber)}`
 }
 
