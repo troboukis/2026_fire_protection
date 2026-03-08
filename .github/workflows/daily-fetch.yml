@@ -1,16 +1,25 @@
-name: Daily Diavgeia Fetch
+name: Daily Data Refresh
 
 on:
   schedule:
-    - cron: "0 03 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: daily-data-refresh
+  cancel-in-progress: false
+
 jobs:
-  fetch:
+  refresh:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DOWNLOAD_DIAVGEIA_PDFS: "0"
+      REBUILD_ORG_MAPPINGS: "0"
+      ERD_TABLES: "region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,fund,diavgeia_procurement,beneficiary"
 
     steps:
       - name: Checkout repository
@@ -22,32 +31,49 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run daily fetch
-        id: run_fetch
-        continue-on-error: true
-        run: python fetch_diavgeia.py
+      - name: Validate required secrets
+        run: |
+          if [ -z "${DATABASE_URL}" ]; then
+            echo "DATABASE_URL secret is required for Copernicus + ERD ingest."
+            exit 1
+          fi
+
+      - name: Refresh source datasets
+        run: |
+          python fetch_diavgeia.py
+          python src/filter_relevance.py --allow-ci
+          python fetch_kimdis_procurements.py
+
+      - name: Refresh Copernicus data in database
+        run: python src/fetch_copernicus.py
+
+      - name: Sync refreshed datasets to application database
+        run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
       - name: Commit and push changes
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/2026_diavgeia.csv state/state.json logs/fetch_runs.csv
+          git add \
+            data/2026_diavgeia.csv \
+            data/2026_diavgeia_filtered.csv \
+            data/fires/copernicus_latest.csv \
+            data/raw_items_backup.json \
+            data/raw_procurements.csv \
+            state/state.json \
+            logs/fetch_runs.csv \
+            logs/relevance_filter_runs.csv \
+            logs/kimdis_fetch_runs.csv
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "chore(data): daily Diavgeia update"
+          git commit -m "chore(data): daily refresh"
           git push
-
-      - name: Fail job if fetch failed
-        if: steps.run_fetch.outcome == 'failure'
-        run: |
-          echo "Daily fetch failed; see logs/fetch_runs.csv and job output."
-          exit 1
