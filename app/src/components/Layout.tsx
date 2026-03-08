@@ -70,10 +70,10 @@ export default function Layout() {
 
       <header className="site-header">
         <div className="brand-block">
-          <div className="eyebrow">παρατηρητηριο για τις δασικές πυρκαγιές</div>
+          <div className="eyebrow">παρατηρητηριο για την πυροπροστασία</div>
           <div className="brand-line">
             <NavLink to="/" className="brand-home-link">
-              <h1>Π <span className="beta-badge">BETA</span></h1>
+              <h1>FireWatch <span className="beta-badge">BETA</span></h1>
             </NavLink>
             <span className="brand-mark">Τελευταία ενημέρωση / {lastDbUpdateLabel}</span>
           </div>
