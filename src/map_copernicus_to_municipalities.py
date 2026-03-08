@@ -91,10 +91,20 @@ def load_municipalities(path: Path) -> gpd.GeoDataFrame:
 
 
 def resolve_database_url(db_path: str | None) -> str:
-    if db_path:
-        return db_path
+    def normalize_database_url(raw: str | None) -> str:
+        value = str(raw or "").strip().strip("'\"")
+        if not value:
+            return ""
+        if value.startswith("DATABASE_URL="):
+            value = value.split("=", 1)[1].strip().strip("'\"")
+        return value
 
-    env_value = os.getenv("DATABASE_URL", "").strip()
+    if db_path:
+        normalized = normalize_database_url(db_path)
+        if normalized:
+            return normalized
+
+    env_value = normalize_database_url(os.getenv("DATABASE_URL"))
     if env_value:
         return env_value
 
@@ -106,7 +116,9 @@ def resolve_database_url(db_path: str | None) -> str:
                 continue
             key, value = line.split("=", 1)
             if key.strip() == "DATABASE_URL" and value.strip():
-                return value.strip().strip("'\"")
+                normalized = normalize_database_url(value)
+                if normalized:
+                    return normalized
 
     raise ValueError("Δεν βρέθηκε DATABASE_URL ούτε δόθηκε db_path.")
 

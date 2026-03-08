@@ -37,6 +37,7 @@ if str(REPO) not in sys.path:
     sys.path.insert(0, str(REPO))
 
 from municipality_normalization import normalizeMunicipality
+from src.map_copernicus_to_municipalities import resolve_database_url
 
 load_dotenv()
 
@@ -744,7 +745,7 @@ def main() -> None:
     if ("cpv" in selected_tables or "payment" in selected_tables) and "procurement" not in selected_tables:
         raise ValueError("cpv/payment require procurement in the same run (use --tables including procurement)")
 
-    db_url = os.environ["DATABASE_URL"]
+    db_url = resolve_database_url(os.environ.get("DATABASE_URL"))
     log("Connecting to database...")
     conn = psycopg2.connect(db_url)
     conn.autocommit = False
