@@ -3,10 +3,15 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 import psycopg2
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from locate_work import Document
 from map_copernicus_to_municipalities import ROOT, resolve_database_url
