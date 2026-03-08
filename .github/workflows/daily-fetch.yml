@@ -44,6 +44,12 @@ jobs:
             echo "DATABASE_URL secret is required for Copernicus + ERD ingest."
             exit 1
           fi
+          case "${DATABASE_URL}" in
+            DATABASE_URL=*)
+              echo "DATABASE_URL secret must contain only the raw connection string, not 'DATABASE_URL=...'."
+              exit 1
+              ;;
+          esac
 
       - name: Refresh source datasets
         run: |
