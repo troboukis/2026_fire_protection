@@ -14,7 +14,10 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from locate_work import Document
-from map_copernicus_to_municipalities import ROOT, resolve_database_url
+try:
+    from src.map_copernicus_to_municipalities import ROOT, resolve_database_url
+except ModuleNotFoundError:
+    from map_copernicus_to_municipalities import ROOT, resolve_database_url
 
 DEFAULT_STATE_PATH = ROOT / "state" / "locate_work_state.json"
 DEFAULT_LOG_PATH = ROOT / "logs" / "locate_work_runs.csv"

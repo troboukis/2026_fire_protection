@@ -15,7 +15,10 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.map_copernicus_to_municipalities import resolve_database_url
+try:
+    from src.map_copernicus_to_municipalities import resolve_database_url
+except ModuleNotFoundError:
+    from map_copernicus_to_municipalities import resolve_database_url
 
 
 class Document:
