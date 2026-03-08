@@ -6,6 +6,9 @@ APP_DIR="$REPO_ROOT/app"
 PAGES_REPO_DIR="${PAGES_REPO_DIR:-/Users/troboukis/Code/troboukis.github.io}"
 TARGET_SUBDIR="${TARGET_SUBDIR:-fire_protection}"
 TARGET_DIR="$PAGES_REPO_DIR/$TARGET_SUBDIR"
+SITE_URL="${SITE_URL:-https://troboukis.github.io/$TARGET_SUBDIR/}"
+SOCIAL_IMAGE_URL="${SOCIAL_IMAGE_URL:-${SITE_URL}cover_16_9_social.jpg}"
+BASE_PATH="/$TARGET_SUBDIR/"
 
 if [[ ! -d "$APP_DIR" ]]; then
   echo "[error] app directory not found: $APP_DIR"
@@ -19,7 +22,10 @@ fi
 
 echo "[1/4] Building frontend for GitHub Pages base /$TARGET_SUBDIR/ ..."
 cd "$APP_DIR"
-npm run build -- --base="/$TARGET_SUBDIR/"
+VITE_SITE_URL="$SITE_URL" \
+VITE_SOCIAL_IMAGE_URL="$SOCIAL_IMAGE_URL" \
+VITE_BASE_PATH="$BASE_PATH" \
+npm run build -- --base="$BASE_PATH"
 
 echo "[2/4] Syncing dist to $TARGET_DIR ..."
 rm -rf "$TARGET_DIR"
