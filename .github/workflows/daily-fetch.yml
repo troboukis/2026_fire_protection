@@ -2,7 +2,7 @@ name: Daily Data Refresh
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 5,8,14,18 * * *"
   workflow_dispatch:
 
 permissions:
