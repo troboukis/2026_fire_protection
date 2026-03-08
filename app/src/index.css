@@ -1592,6 +1592,13 @@ main {
   color: #5e544a;
 }
 
+.fire-copernicus__legend--map {
+  align-self: end;
+  justify-self: start;
+  margin: 0.3rem 0 0.42rem;
+  padding: 0 0 0 0.52rem;
+}
+
 .fire-copernicus__legend-dot {
   width: 0.46rem;
   height: 0.46rem;
@@ -1612,34 +1619,37 @@ main {
 .fire-copernicus__map-wrap {
   display: grid;
   align-items: stretch;
+  padding: 0.45rem 0 0;
 }
 
 .fire-copernicus__map {
   position: relative;
-  min-height: 29rem;
+  aspect-ratio: 760 / 520;
+  min-height: 32rem;
+  overflow: hidden;
 }
 
 .fire-copernicus__toggle {
   position: absolute;
-  top: 0.85rem;
-  left: 0.85rem;
+  top: 0.45rem;
+  left: 0.45rem;
   z-index: 2;
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(0, auto));
-  padding: 0.18rem;
+  padding: 0.12rem;
   border: 1px solid rgba(116, 101, 84, 0.28);
   border-radius: 999px;
   background: rgba(251, 248, 242, 0.94);
-  box-shadow: 0 10px 28px rgba(55, 42, 28, 0.08);
+  box-shadow: 0 8px 18px rgba(55, 42, 28, 0.08);
 }
 
 .fire-copernicus__toggle button {
   border: 0;
   background: transparent;
-  padding: 0.45rem 0.8rem;
+  padding: 0.28rem 0.58rem;
   border-radius: 999px;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   color: #6b6156;
   cursor: pointer;
 }
@@ -1650,6 +1660,8 @@ main {
 }
 
 .fire-copernicus__map svg {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: block;
@@ -2024,6 +2036,31 @@ main {
   .top-nav a {
     padding: 0.65rem 0.75rem;
     white-space: nowrap;
+  }
+
+  .fire-copernicus__map {
+    min-height: 0;
+    aspect-ratio: 1 / 1.34;
+  }
+
+  .fire-copernicus__toggle {
+    top: 0.32rem;
+    left: 0.32rem;
+  }
+
+  .fire-copernicus__map svg {
+    transform: none;
+  }
+
+  .fire-copernicus__toggle button {
+    padding: 0.24rem 0.5rem;
+    font-size: 0.58rem;
+  }
+
+  .fire-copernicus__legend--map {
+    margin: 0.5rem 0 0.4rem;
+    padding-left: 0.62rem;
+    font-size: 0.62rem;
   }
 }
 

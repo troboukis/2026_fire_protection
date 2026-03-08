@@ -152,6 +152,13 @@ function diffDays(start: Date, end: Date): number {
 }
 
 const CLUSTER_GRID_SIZE = 8
+const MOBILE_BREAKPOINT = 680
+const DESKTOP_MAP_WIDTH = 760
+const DESKTOP_MAP_HEIGHT = 520
+const MOBILE_MAP_WIDTH = 760
+const MOBILE_MAP_HEIGHT = 860
+const DESKTOP_MAP_SCALE = 1.08
+const MOBILE_MAP_SCALE = 1.22
 
 export default function FireCopernicusSection() {
   const currentYear = useMemo(() => new Date().getFullYear(), [])
@@ -167,6 +174,10 @@ export default function FireCopernicusSection() {
   const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, defaultStart))
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
+  const [isMobileMap, setIsMobileMap] = useState(() => {
+    if (typeof window === 'undefined') return false
+    return window.innerWidth <= MOBILE_BREAKPOINT
+  })
 
   const rangeStartDate = addDays(domainStart, rangeStartDay)
   const rangeEndDate = addDays(domainStart, rangeEndDay)
@@ -247,6 +258,17 @@ export default function FireCopernicusSection() {
     setHoveredFire(null)
   }, [rangeStartDay, rangeEndDay, viewMode])
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const media = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`)
+    const update = () => setIsMobileMap(media.matches)
+
+    update()
+    media.addEventListener('change', update)
+    return () => media.removeEventListener('change', update)
+  }, [])
+
   const fires = useMemo(() => {
     const startMs = rangeStartDate.getTime()
     const endMs = addDays(rangeEndDate, 1).getTime() - 1
@@ -260,15 +282,33 @@ export default function FireCopernicusSection() {
 
   const mapData = useMemo(() => {
     if (!geojson) return null
-    const width = 760
-    const height = 460
+    const width = isMobileMap ? MOBILE_MAP_WIDTH : DESKTOP_MAP_WIDTH
+    const height = isMobileMap ? MOBILE_MAP_HEIGHT : DESKTOP_MAP_HEIGHT
+    const extent: [[number, number], [number, number]] = isMobileMap
+      ? [[28, 88], [width - 26, height - 26]]
+      : [[20, 24], [width - 20, height - 22]]
     const projection = d3.geoMercator().fitExtent(
-      [[24, 18], [width - 24, height - 26]],
+      extent,
       geojson as unknown as d3.ExtendedFeatureCollection,
     )
     const path = d3.geoPath().projection(projection)
+    const bounds = path.bounds(geojson as unknown as d3.GeoPermissibleObjects)
+    const boundsCenterX = (bounds[0][0] + bounds[1][0]) / 2
+    const boundsCenterY = (bounds[0][1] + bounds[1][1]) / 2
+    const transformScale = isMobileMap ? MOBILE_MAP_SCALE : DESKTOP_MAP_SCALE
+    const targetCenterX = width / 2
+    const targetCenterY = isMobileMap ? height * 0.51 : height * 0.5
+    const transformTranslateX = targetCenterX - (boundsCenterX * transformScale)
+    const transformTranslateY = targetCenterY - (boundsCenterY * transformScale)
+    const transformPoint = (x: number, y: number) => ({
+      x: x * transformScale + transformTranslateX,
+      y: y * transformScale + transformTranslateY,
+    })
 
     return {
+      width,
+      height,
+      transform: `translate(${transformTranslateX} ${transformTranslateY}) scale(${transformScale})`,
       paths: geojson.features.map((feature, idx) => ({
         key: `${feature.properties.municipality_code}-${idx}`,
         d: path(feature as unknown as d3.GeoPermissibleObjects) ?? '',
@@ -282,8 +322,9 @@ export default function FireCopernicusSection() {
         }>>((acc, fire) => {
           const projected = projection([fire.lon, fire.lat])
           if (!projected) return acc
-          const [x, y] = projected
-          if (!Number.isFinite(x) || !Number.isFinite(y)) return acc
+          const [baseX, baseY] = projected
+          if (!Number.isFinite(baseX) || !Number.isFinite(baseY)) return acc
+          const { x, y } = transformPoint(baseX, baseY)
           const key = `${Math.round(x / CLUSTER_GRID_SIZE)}:${Math.round(y / CLUSTER_GRID_SIZE)}`
           if (!acc[key]) {
             acc[key] = {
@@ -309,8 +350,9 @@ export default function FireCopernicusSection() {
           const d = path(fire.shape as unknown as d3.GeoPermissibleObjects)
           if (!d) return null
           const centroid = path.centroid(fire.shape as unknown as d3.GeoPermissibleObjects)
-          const [x, y] = centroid
-          if (![x, y].every(Number.isFinite)) return null
+          const [baseX, baseY] = centroid
+          if (![baseX, baseY].every(Number.isFinite)) return null
+          const { x, y } = transformPoint(baseX, baseY)
           return {
             ...fire,
             d,
@@ -320,7 +362,7 @@ export default function FireCopernicusSection() {
         })
         .filter((shape): shape is CopernicusFirePoint & { d: string; x: number; y: number } => shape !== null),
     }
-  }, [geojson, fires])
+  }, [geojson, fires, isMobileMap])
 
   const totalAreaHa = fires.reduce((sum, fire) => sum + fire.areaHa, 0)
   const latestFire = [...fires]
@@ -405,11 +447,6 @@ export default function FireCopernicusSection() {
               </span>
             ))}
           </div>
-          <div className="fire-copernicus__section-divider" aria-hidden="true" />
-        </div>
-        <div className="fire-copernicus__legend" aria-label="Υπόμνημα Copernicus">
-          <span className="fire-copernicus__legend-dot" aria-hidden="true" />
-          <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus' : 'Καμένη έκταση Copernicus'}</span>
         </div>
         <p className="fire-copernicus__note">
           Σημείωση: Οι ημερομηνίες και τα μεγέθη ενδέχεται να αναθεωρηθούν καθώς ενημερώνεται η βάση δεδομένων.
@@ -443,8 +480,12 @@ export default function FireCopernicusSection() {
                 Εκτάσεις
               </button>
             </div>
-            <svg viewBox="0 0 760 460" role="img" aria-label="Χάρτης πυρκαγιών Copernicus στην Ελλάδα">
-              <g className="fire-copernicus__base">
+            <svg
+              viewBox={`0 0 ${mapData.width} ${mapData.height}`}
+              role="img"
+              aria-label="Χάρτης πυρκαγιών Copernicus στην Ελλάδα"
+            >
+              <g className="fire-copernicus__base" transform={mapData.transform}>
                 {mapData.paths.map((feature) => (
                   <path key={feature.key} d={feature.d} />
                 ))}
@@ -507,7 +548,7 @@ export default function FireCopernicusSection() {
               <div
                 className="fire-copernicus__tooltip"
                 style={{
-                  left: `${Math.min(hoveredFire.x + 14, 760 - 220)}px`,
+                  left: `${Math.min(hoveredFire.x + 14, mapData.width - 220)}px`,
                   top: `${Math.max(hoveredFire.y - 18, 12)}px`,
                 }}
               >
@@ -521,6 +562,12 @@ export default function FireCopernicusSection() {
                 ))}
               </div>
             )}
+          </div>
+        )}
+        {!loading && mapData && (
+          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus">
+            <span className="fire-copernicus__legend-dot" aria-hidden="true" />
+            <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus' : 'Καμένη έκταση Copernicus'}</span>
           </div>
         )}
       </div>
