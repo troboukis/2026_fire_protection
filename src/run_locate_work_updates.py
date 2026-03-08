@@ -102,6 +102,13 @@ def fetch_candidate_procurements(db_url: str, already_processed: set[str], limit
           AND BTRIM(p.reference_number) <> ''
           AND w.reference_number IS NULL
           AND (
+            EXTRACT(YEAR FROM p.contract_signed_date) = EXTRACT(YEAR FROM CURRENT_DATE)
+            OR (
+              p.contract_signed_date IS NULL
+              AND EXTRACT(YEAR FROM p.submission_at) = EXTRACT(YEAR FROM CURRENT_DATE)
+            )
+          )
+          AND (
             UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
             OR UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
             OR UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
