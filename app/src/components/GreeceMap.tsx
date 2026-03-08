@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import type { GeoData, GeoFeature } from '../types'
@@ -85,7 +85,7 @@ export function GreeceMap({
     return () => ro.disconnect()
   }, [])
 
-  const buildProjection = (width: number, height: number) => {
+  const buildProjection = useCallback((width: number, height: number) => {
     const focusCollection = (() => {
       if (!geojson) return null
       if (viewMode !== 'attica') {
@@ -111,7 +111,7 @@ export function GreeceMap({
         k * ty - (k - 1) * (height / 2) + height * MAP_TRANSLATE_Y_RATIO,
       ])
     return projection
-  }
+  }, [geojson, viewMode])
 
   // Helper: compute fill for a given municipality code
   const getFill = (code: string): string => {
@@ -204,7 +204,7 @@ export function GreeceMap({
       .attr('stroke', 'rgba(255,255,255,0.75)')
       .attr('stroke-width', 0.8)
       .attr('pointer-events', 'none')
-  }, [geojson, svgSize, viewMode])
+  }, [buildProjection, geojson, svgSize, viewMode])
 
   // Draw/update procurement dots when data or map changes
   useEffect(() => {
@@ -238,7 +238,7 @@ export function GreeceMap({
       .attr('fill', d => getFill(municipalityCode(d)))
       .attr('stroke', STROKE)
       .attr('stroke-width', STROKE_W)
-  }, [choroplethData])
+  }, [choroplethData, geojson])
 
   // Update fill when URL selection changes
   useEffect(() => {
@@ -248,7 +248,7 @@ export function GreeceMap({
       .attr('fill', d => getFill(municipalityCode(d)))
       .attr('stroke', STROKE)
       .attr('stroke-width', STROKE_W)
-  }, [selectedMunicipalityIds])
+  }, [geojson, selectedMunicipalityIds])
 
 
   return (

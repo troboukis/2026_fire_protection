@@ -601,7 +601,7 @@ export default function ContractAnalysis() {
     return () => { cancelled = true }
   }, [])
 
-  const monthly = analysis?.monthly ?? []
+  const monthly = useMemo(() => analysis?.monthly ?? [], [analysis])
 
   const sectionFiltered = useMemo(() => {
     if (!analysis) {
