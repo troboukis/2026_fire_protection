@@ -3,12 +3,17 @@ import io
 import json
 import os
 import re
+import sys
 from pathlib import Path
 
 import psycopg2
 import requests
 from natural_pdf import PDF
 from openai import OpenAI
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from src.map_copernicus_to_municipalities import resolve_database_url
 
