@@ -9,6 +9,15 @@ const STROKE        = 'rgba(153,148,140,0.42)'
 const STROKE_W      = 0.5
 const MAP_SCALE_BOOST       = .98
 const MAP_TRANSLATE_Y_RATIO = 0.000
+const ATTICA_FOCUS_WINDOW: [[number, number], [number, number]] = [
+  [23.32, 37.43],
+  [24.12, 38.43],
+]
+
+function intersectsFocusWindow(feature: GeoFeature, [[west, south], [east, north]]: [[number, number], [number, number]]): boolean {
+  const [[fx0, fy0], [fx1, fy1]] = d3.geoBounds(feature as unknown as d3.GeoPermissibleObjects)
+  return !(fx1 < west || fx0 > east || fy1 < south || fy0 > north)
+}
 
 interface Tooltip { x: number; y: number; name: string; pct: number | null }
 
@@ -29,6 +38,7 @@ interface Props {
   geojson: GeoData | null
   choroplethData: Record<string, number>   // municipality_id → pct_of_national
   procMunicipalities: Set<string>
+  viewMode?: 'greece' | 'attica'
   onDeselect: () => void
   onMunicipalityClick?: (municipalityId: string) => void
   selectedMunicipalityIds?: Set<string> | null
@@ -39,6 +49,7 @@ export function GreeceMap({
   geojson,
   choroplethData,
   procMunicipalities,
+  viewMode = 'greece',
   onDeselect,
   onMunicipalityClick,
   selectedMunicipalityIds,
@@ -75,12 +86,23 @@ export function GreeceMap({
   }, [])
 
   const buildProjection = (width: number, height: number) => {
-    const projection = d3.geoMercator().fitSize(
-      [width, height],
-      geojson as unknown as d3.ExtendedFeatureCollection
+    const focusCollection = (() => {
+      if (!geojson) return null
+      if (viewMode !== 'attica') {
+        return geojson as unknown as d3.ExtendedFeatureCollection
+      }
+      const features = geojson.features.filter((feature) => intersectsFocusWindow(feature, ATTICA_FOCUS_WINDOW))
+      if (features.length === 0) return geojson as unknown as d3.ExtendedFeatureCollection
+      return { ...geojson, features } as unknown as d3.ExtendedFeatureCollection
+    })()
+
+    const framePad = viewMode === 'attica' ? 26 : 18
+    const projection = d3.geoMercator().fitExtent(
+      [[framePad, framePad], [width - framePad, height - framePad]],
+      focusCollection as d3.GeoPermissibleObjects,
     )
     const [tx, ty] = projection.translate()
-    const k = MAP_SCALE_BOOST
+    const k = viewMode === 'attica' ? 1.144 : MAP_SCALE_BOOST
     // Zoom from viewport center so Greece stays centered after the scale boost
     projection
       .scale(projection.scale() * k)
@@ -182,7 +204,7 @@ export function GreeceMap({
       .attr('stroke', 'rgba(255,255,255,0.75)')
       .attr('stroke-width', 0.8)
       .attr('pointer-events', 'none')
-  }, [geojson, svgSize])
+  }, [geojson, svgSize, viewMode])
 
   // Draw/update procurement dots when data or map changes
   useEffect(() => {
@@ -202,7 +224,7 @@ export function GreeceMap({
       .attr('stroke', 'rgba(255,255,255,0.75)')
       .attr('stroke-width', 0.8)
       .attr('pointer-events', 'none')
-  }, [procMunicipalities, geojson, svgSize])
+  }, [procMunicipalities, geojson, svgSize, viewMode])
 
   // Update choropleth fills (without full redraw) when data loads
   useEffect(() => {

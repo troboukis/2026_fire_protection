@@ -1,28 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import ContractAnalysis from './components/ContractAnalysis'
-import ErrorBoundary from './components/ErrorBoundary'
 import ContractModal, { type ContractModalContract } from './components/ContractModal'
+import FireCopernicusSection from './components/FireCopernicusSection'
+import FeaturedRecordsSection, { type BeneficiaryInsightRow } from './components/FeaturedRecordsSection'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import OrganizationSection, { type OrganizationSectionData } from './components/OrganizationSection'
-import { openContractPdfPrintView } from './lib/contractPdf'
+import { downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
 import { supabase } from './lib/supabase'
-
-type BeneficiaryInsightRow = {
-  beneficiary: string
-  organization: string
-  totalAmount: number
-  contractCount: number
-  cpv: string
-  startDate: string
-  endDate: string
-  duration: string
-  progressPct: number | null
-  signer: string
-  relevantContracts: LatestContractCard[]
-}
-
 
 type LatestContractCard = LatestContractCardView & ContractModalContract & {
   id: string
@@ -220,14 +205,29 @@ function DebugComponentLabel({ name }: { name: string }) {
 
 const YEAR_START = 2024
 
-const CHART_YEAR_STYLES = [
-  { stroke: '#111111', opacity: 1,    strokeWidth: 3.8 },
-  { stroke: '#d9a095', opacity: 0.95, strokeWidth: 2.4 },
-  { stroke: '#dadada', opacity: 0.62, strokeWidth: 2.4 },
-  { stroke: '#dadada', opacity: 0.45, strokeWidth: 1.8 },
-]
+function getChartYearStyle(year: number, currentYear: number) {
+  const yearsBehind = Math.max(0, currentYear - year)
+  if (yearsBehind === 0) {
+    return {
+      stroke: '#111111',
+      opacity: 1,
+      strokeWidth: 3.8,
+    }
+  }
+
+  const baseOpacity = 0.95
+  const fadedOpacity = Math.max(0.16, baseOpacity * (0.5 ** (yearsBehind - 1)))
+
+  return {
+    stroke: '#d9a095',
+    opacity: fadedOpacity,
+    strokeWidth: 2.4,
+  }
+}
 
 export default function App() {
+  const currentYear = new Date().getFullYear()
+  const featuredRecordsYear = String(currentYear)
   const location = useLocation()
   const navigate = useNavigate()
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
@@ -249,7 +249,7 @@ export default function App() {
     beneficiaryCount: 0,
     previousYearBeneficiaryCount: 0,
     latestSignedAt: null,
-    activityMunicipalityIds: [],
+    activityWorkPoints: [],
     timeline: [],
   })
   const [organizationSectionLoading, setOrganizationSectionLoading] = useState(true)
@@ -270,7 +270,6 @@ export default function App() {
     topCpvPrevCount: 0,
     topCpvVsPrev1Pct: null,
   })
-  const currentYear = new Date().getFullYear()
   const totalVsPrev1Pct = resolvePct(heroStats.totalVsPrev1Pct, heroStats.totalMain, heroStats.totalPrev1)
   const totalVsPrev2Pct = resolvePct(null, heroStats.totalMain, heroStats.totalPrev2)
   const topTypeVsPrev1Pct = resolvePct(
@@ -580,13 +579,6 @@ export default function App() {
           'ΑΔΜΗΕ'
 
         const pageSize = 1000
-        const normalizeMunicipalityId = (input: unknown): string => {
-          const raw = String(input ?? '').trim()
-          if (!raw) return ''
-          const noDecimal = raw.replace(/\.0+$/, '')
-          if (/^\d+$/.test(noDecimal)) return String(Number(noDecimal))
-          return noDecimal
-        }
 
         const procurements: Array<{ id: number; contract_signed_date: string | null; title: string | null; municipality_key: string | null }> = []
         let from = 0
@@ -708,13 +700,39 @@ export default function App() {
           .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
         const previousYearTopCpvValue = [...(cpvValueCountsByYear.get(previousProcurementYear) ?? new Map<string, number>()).entries()]
           .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
-        const activityMunicipalityIds = Array.from(
-          new Set(
-            procurements
-              .map((row) => normalizeMunicipalityId(row.municipality_key))
-              .filter(Boolean),
-          ),
-        )
+        const activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }> = []
+        const seenWorkPoints = new Set<string>()
+        let worksFrom = 0
+        while (true) {
+          const worksTo = worksFrom + pageSize - 1
+          const { data: worksData } = await supabase
+            .from('works_enriched')
+            .select('lat, lon, work, point_name_canonical')
+            .in('organization_key', organizationKeys)
+            .not('lat', 'is', null)
+            .not('lon', 'is', null)
+            .order('id', { ascending: true })
+            .range(worksFrom, worksTo)
+          const rows = (worksData ?? []) as Array<{
+            lat: number | string | null
+            lon: number | string | null
+            work: string | null
+            point_name_canonical: string | null
+          }>
+          for (const row of rows) {
+            const lat = Number(row.lat)
+            const lon = Number(row.lon)
+            if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue
+            const work = cleanText(row.work) ?? '—'
+            const pointName = cleanText(row.point_name_canonical) ?? '—'
+            const key = `${lat.toFixed(6)}|${lon.toFixed(6)}`
+            if (seenWorkPoints.has(key)) continue
+            seenWorkPoints.add(key)
+            activityWorkPoints.push({ lat, lon, work, pointName })
+          }
+          if (rows.length < pageSize) break
+          worksFrom += pageSize
+        }
 
         const { data: latestTimelineRows } = await supabase
           .from('procurement')
@@ -835,7 +853,7 @@ export default function App() {
           beneficiaryCount,
           previousYearBeneficiaryCount,
           latestSignedAt: latestSigned,
-          activityMunicipalityIds,
+          activityWorkPoints,
           timeline,
         }
 
@@ -877,8 +895,8 @@ export default function App() {
       }
 
       try {
-        const yearStart = '2026-01-01'
-        const yearEnd = '2026-12-31'
+        const yearStart = `${currentYear}-01-01`
+        const yearEnd = `${currentYear}-12-31`
         const pageSize = 1000
         const procurements: Array<{
           id: number
@@ -1221,7 +1239,7 @@ export default function App() {
 
     loadFeaturedPanels()
     return () => { cancelled = true }
-  }, [])
+  }, [currentYear])
 
   useEffect(() => {
     let cancelled = false
@@ -1269,8 +1287,8 @@ export default function App() {
     return () => { cancelled = true }
   }, [])
 
-  const downloadContractPdf = (contract: LatestContractCard) => {
-    openContractPdfPrintView(contract)
+  const downloadContractPdf = async (contract: LatestContractCard) => {
+    await downloadContractDocument(contract)
   }
 
   return (
@@ -1327,8 +1345,7 @@ export default function App() {
                 {chartYears.map((year) => {
                   const points = chartByYear.get(year) ?? []
                   if (points.length === 0) return null
-                  const styleIdx = Math.min(currentYear - year, CHART_YEAR_STYLES.length - 1)
-                  const { stroke, opacity, strokeWidth } = CHART_YEAR_STYLES[styleIdx]
+                  const { stroke, opacity, strokeWidth } = getChartYearStyle(year, currentYear)
                   const d = points.map((p, i) => {
                     const x = 44 + dayFraction(p.dayOfYear, p.yearDays) * (736 - 44)
                     const y = 230 - (p.value / chartMax) * 200
@@ -1383,8 +1400,7 @@ export default function App() {
               </svg>
               <div className="hero-chart__legend">
                 {[...chartYears].reverse().map((year) => {
-                  const styleIdx = Math.min(currentYear - year, CHART_YEAR_STYLES.length - 1)
-                  const { stroke, opacity } = CHART_YEAR_STYLES[styleIdx]
+                  const { stroke, opacity } = getChartYearStyle(year, currentYear)
                   return (
                     <span key={year}>
                       <i style={{ background: stroke, opacity }} />
@@ -1476,94 +1492,18 @@ export default function App() {
             </div>
           </div>
         </section>
-        <DebugComponentLabel name="ContractAnalysis" />
-        <ErrorBoundary fallback={<div className="ca-empty-note">Η ενότητα ανάλυσης δεν είναι διαθέσιμη προσωρινά.</div>}>
-          <ContractAnalysis />
-        </ErrorBoundary>
+
+        <DebugComponentLabel name="FireCopernicus" />
+        <FireCopernicusSection />
 
         <DebugComponentLabel name="FeaturedRecordsSection" />
-        <section id="records" className="records section-rule">
-          <div className="section-head">
-            <div className="eyebrow">Top Beneficiaries / 2026</div>
-            <h2>Κάρτες δικαιούχων για το 2026. Οριζόντια πλοήγηση στη λίστα.</h2>
-          </div>
-
-          <div className="records-grid records-grid--horizontal">
-            {featuredBeneficiariesLoading && (
-              <article className="record-card">
-                <div className="record-card__header">
-                  <div className="record-card__authority">Top Beneficiaries 2026</div>
-                  <div className="record-card__id">Φόρτωση…</div>
-                </div>
-                <h3>Ανάκτηση στοιχείων από procurement/payment/cpv.</h3>
-              </article>
-            )}
-
-            {!featuredBeneficiariesLoading && featuredBeneficiaries.map((row, idx) => (
-              <article
-                className="record-card"
-                key={`${row.beneficiary}-${idx}`}
-              >
-                <div className="record-card__year" aria-hidden="true">2026</div>
-                <div className="record-card__header">
-                  <div className="record-card__authority">Top Beneficiary #{idx + 1}</div>
-                  <div className="record-card__id">Συμβάσεις: {row.contractCount.toLocaleString('el-GR')}</div>
-                </div>
-                <h3>{row.beneficiary}</h3>
-                <div className="record-card__amount">{formatEur(row.totalAmount)}</div>
-                <div className="record-card__tags" aria-label="Μεταδεδομένα δικαιούχου">
-                  <span>CPV: {row.cpv}</span>
-                  <span>Έναρξη: {row.startDate}</span>
-                </div>
-                <div className="record-duration">
-                  <div className="record-duration__head">
-                    <span>Διάρκεια: {row.duration}</span>
-                    <span>Λήξη: {row.endDate}</span>
-                  </div>
-                  <div className="record-duration__track" aria-label="Πρόοδος διάρκειας έργου">
-                    <div
-                      className="record-duration__fill"
-                      style={{ width: `${row.progressPct == null ? 0 : row.progressPct}%` }}
-                    />
-                    <div
-                      className="record-duration__today"
-                      style={{ left: `${row.progressPct == null ? 0 : row.progressPct}%` }}
-                      title="Σήμερα"
-                    />
-                  </div>
-                </div>
-                {row.relevantContracts.length > 0 && (
-                  <div className="record-contract-amounts" aria-label="Σχετικές συμβάσεις">
-                    <div className="record-contract-amounts__title">Σχετικές συμβάσεις</div>
-                    <ul>
-                      {row.relevantContracts.map((contract) => (
-                        <li key={`${row.beneficiary}-contract-${contract.id}`}>
-                          <button
-                            type="button"
-                            className="record-contract-link"
-                            onClick={() => setSelectedContract(contract)}
-                          >
-                            {contract.what} - {contract.withoutVatAmount}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                <div className="record-card__footer">
-                  <div>
-                    <span className="label">Οργανισμός</span>
-                    <strong>{row.organization}</strong>
-                  </div>
-                  <div>
-                    <span className="label">Υπογράφων</span>
-                    <strong>{row.signer}</strong>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <FeaturedRecordsSection
+          year={featuredRecordsYear}
+          rows={featuredBeneficiaries}
+          loading={featuredBeneficiariesLoading}
+          formatEur={formatEur}
+          onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
+        />
 
         <DebugComponentLabel name="OrganizationSection" />
         <OrganizationSection
@@ -1582,11 +1522,11 @@ export default function App() {
             <p>
               Ανεξάρτητη δημοσιογραφική πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
             </p>
-            <p>Η ενημέρωση των δεδομένων γίνεται αυτόματα, επομένως ενδέχεται να υπάρχουν λάθη και παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
+            <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη και παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
           </div>
           <div className="about-panel__right">
             <figure className="about-cover-figure">
-              <img className="about-cover" src="/cover_square.png" alt="FireWatch cover" />
+              <img className="about-cover" src={`${import.meta.env.BASE_URL}cover_square_optimized.webp`} alt="FireWatch cover" />
               <figcaption className="about-cover-caption">Εικόνα από Nano Banana 2</figcaption>
             </figure>
             <div className="about-stats">

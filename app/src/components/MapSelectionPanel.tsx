@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import EditorialLead from './EditorialLead'
@@ -31,9 +31,19 @@ type Props = {
   regionLatestContracts?: LatestContractCardView[]
   regionLatestLoading?: boolean
   municipalityFeature?: GeoFeature | null
-  municipalityFirePoints?: Array<{ lat: number; lon: number }>
+  municipalityFirePoints?: Array<{
+    lat: number
+    lon: number
+    period: 'current' | 'previous'
+    areaHa: number
+    commune: string
+    province: string
+    shape: GeoJSON.Geometry | null
+  }>
+  municipalityDirectWorkPoints?: Array<{ lat: number; lon: number; work: string; pointName: string }>
+  municipalityRegionalWorkPoints?: Array<{ lat: number; lon: number; work: string; pointName: string }>
+  municipalityWorkLoading?: boolean
   municipalityFireLoading?: boolean
-  municipalityFireYear?: number | null
   cityPoints?: Array<{ lat: number; lon: number; name: string }>
   currentYear: number
   regionCurrentYearCount?: number | null
@@ -51,14 +61,32 @@ export default function MapSelectionPanel({
   regionLatestLoading = false,
   municipalityFeature,
   municipalityFirePoints = [],
+  municipalityDirectWorkPoints = [],
+  municipalityRegionalWorkPoints = [],
+  municipalityWorkLoading = false,
   municipalityFireLoading = false,
-  municipalityFireYear = null,
   cityPoints = [],
   currentYear,
   regionCurrentYearCount,
   municipalityCurrentYearCount,
   onContractOpen,
 }: Props) {
+  const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
+  const [hoveredFirePoint, setHoveredFirePoint] = useState<{
+    x: number
+    y: number
+    period: 'current' | 'previous'
+    areaHa: number
+    commune: string
+    province: string
+  } | null>(null)
+  const [hoveredWorkPoint, setHoveredWorkPoint] = useState<{
+    x: number
+    y: number
+    work: string
+    pointName: string
+    scope: 'municipality' | 'region'
+  } | null>(null)
   const previewGeometry = useMemo(() => {
     if (!municipalityFeature) return null
     const width = 520
@@ -75,18 +103,135 @@ export default function MapSelectionPanel({
     }
   }, [municipalityFeature])
 
-  const projectedFireDots = useMemo(() => {
-    if (!previewGeometry) return [] as Array<{ x: number; y: number }>
-    const out: Array<{ x: number; y: number }> = []
+  const projectedFireShapes = useMemo(() => {
+    if (!previewGeometry) return [] as Array<{
+      d: string
+      x: number
+      y: number
+      period: 'current' | 'previous'
+      areaHa: number
+      commune: string
+      province: string
+    }>
+    const path = d3.geoPath().projection(previewGeometry.projection)
+    const out: Array<{
+      d: string
+      x: number
+      y: number
+      period: 'current' | 'previous'
+      areaHa: number
+      commune: string
+      province: string
+    }> = []
+    for (const fire of municipalityFirePoints) {
+      let d = ''
+      let x = 0
+      let y = 0
+      if (fire.shape) {
+        const shapePath = path(fire.shape as unknown as d3.GeoPermissibleObjects)
+        const centroid = path.centroid(fire.shape as unknown as d3.GeoPermissibleObjects)
+        if (
+          shapePath &&
+          Array.isArray(centroid) &&
+          centroid.length === 2 &&
+          Number.isFinite(centroid[0]) &&
+          Number.isFinite(centroid[1])
+        ) {
+          d = shapePath
+          ;[x, y] = centroid
+        }
+      }
+      if (!d) {
+        const projected = previewGeometry.projection([fire.lon, fire.lat])
+        if (!projected) continue
+        ;[x, y] = projected
+        if (!Number.isFinite(x) || !Number.isFinite(y)) continue
+        d = `M ${x} ${y} m -4 0 a 4 4 0 1 0 8 0 a 4 4 0 1 0 -8 0`
+      }
+      out.push({
+        d,
+        x,
+        y,
+        period: fire.period,
+        areaHa: fire.areaHa,
+        commune: fire.commune,
+        province: fire.province,
+      })
+    }
+    return out
+  }, [previewGeometry, municipalityFirePoints])
+
+  const projectedCurrentFireShapes = projectedFireShapes.filter((p) => p.period === 'current')
+  const projectedPreviousFireShapes = projectedFireShapes.filter((p) => p.period === 'previous')
+  const projectedFirePoints = useMemo(() => {
+    if (!previewGeometry) return [] as Array<{
+      x: number
+      y: number
+      period: 'current' | 'previous'
+      areaHa: number
+      commune: string
+      province: string
+    }>
+    const out: Array<{
+      x: number
+      y: number
+      period: 'current' | 'previous'
+      areaHa: number
+      commune: string
+      province: string
+    }> = []
     for (const point of municipalityFirePoints) {
       const projected = previewGeometry.projection([point.lon, point.lat])
       if (!projected) continue
       const [x, y] = projected
       if (!Number.isFinite(x) || !Number.isFinite(y)) continue
-      out.push({ x, y })
+      out.push({
+        x,
+        y,
+        period: point.period,
+        areaHa: point.areaHa,
+        commune: point.commune,
+        province: point.province,
+      })
     }
     return out
   }, [previewGeometry, municipalityFirePoints])
+
+  const projectedCurrentFirePoints = projectedFirePoints.filter((p) => p.period === 'current')
+  const projectedPreviousFirePoints = projectedFirePoints.filter((p) => p.period === 'previous')
+
+  const projectWorkDots = (
+    points: Array<{ lat: number; lon: number; work: string; pointName: string }>,
+    scope: 'municipality' | 'region',
+  ) => {
+    if (!previewGeometry) return [] as Array<{ x: number; y: number; work: string; pointName: string; scope: 'municipality' | 'region' }>
+    const out: Array<{ x: number; y: number; work: string; pointName: string; scope: 'municipality' | 'region' }> = []
+    for (const point of points) {
+      if (municipalityFeature) {
+        const inside = d3.geoContains(
+          municipalityFeature as unknown as d3.GeoPermissibleObjects,
+          [point.lon, point.lat],
+        )
+        if (!inside) continue
+      }
+      const projected = previewGeometry.projection([point.lon, point.lat])
+      if (!projected) continue
+      const [x, y] = projected
+      if (!Number.isFinite(x) || !Number.isFinite(y)) continue
+      out.push({ x, y, work: point.work, pointName: point.pointName, scope })
+    }
+    return out
+  }
+
+  const projectedMunicipalityWorkDots = useMemo(
+    () => projectWorkDots(municipalityDirectWorkPoints, 'municipality'),
+    [previewGeometry, municipalityDirectWorkPoints, municipalityFeature],
+  )
+
+  const projectedRegionalWorkDots = useMemo(
+    () => projectWorkDots(municipalityRegionalWorkPoints, 'region'),
+    [previewGeometry, municipalityRegionalWorkPoints, municipalityFeature],
+  )
 
   const uniqueFireLocations = useMemo(() => {
     const uniq = new Set<string>()
@@ -223,20 +368,121 @@ export default function MapSelectionPanel({
 
       {kind === 'municipality' && previewGeometry && (
         <div className="maps-selection-panel__shape" aria-label="Polygon Δήμου">
+          {municipalityFirePoints.length > 0 && (
+            <div className="maps-selection-panel__fire-toggle" aria-label="Τρόπος προβολής πυρκαγιών">
+              <button
+                type="button"
+                className={fireViewMode === 'points' ? 'is-active' : ''}
+                onClick={() => {
+                  setHoveredFirePoint(null)
+                  setFireViewMode('points')
+                }}
+              >
+                Σημεία
+              </button>
+              <button
+                type="button"
+                className={fireViewMode === 'shapes' ? 'is-active' : ''}
+                onClick={() => {
+                  setHoveredFirePoint(null)
+                  setFireViewMode('shapes')
+                }}
+              >
+                Εκτάσεις
+              </button>
+            </div>
+          )}
           <svg viewBox="0 0 520 320" role="img" aria-label={`Polygon ${label}`}>
             <path d={previewGeometry.path ?? ''} fill="#1a3a5c" fillOpacity="0.92" stroke="#0f2237" strokeWidth="1.3" />
-            {projectedFireDots.map((p, idx) => (
-              <circle
-                key={`fire-dot-${idx}`}
-                cx={p.x}
-                cy={p.y}
-                r={2.2}
-                fill="#ff3b30"
-                fillOpacity={0.5}
-                stroke="#ffd7d2"
-                strokeWidth={0.35}
-              />
-            ))}
+            {fireViewMode === 'shapes'
+              ? (
+                <>
+                  {projectedPreviousFireShapes.map((p, idx) => (
+                    <g
+                      key={`fire-shape-prev-${idx}`}
+                      onMouseEnter={() => setHoveredFirePoint({
+                        x: p.x,
+                        y: p.y,
+                        period: 'previous',
+                        areaHa: p.areaHa,
+                        commune: p.commune,
+                        province: p.province,
+                      })}
+                      onMouseLeave={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
+                      ))}
+                    >
+                      <path
+                        d={p.d}
+                        fill="#dadada"
+                        fillOpacity={0.85}
+                      />
+                    </g>
+                  ))}
+                  {projectedCurrentFireShapes.map((p, idx) => (
+                    <g
+                      key={`fire-shape-current-${idx}`}
+                      onMouseEnter={() => setHoveredFirePoint({
+                        x: p.x,
+                        y: p.y,
+                        period: 'current',
+                        areaHa: p.areaHa,
+                        commune: p.commune,
+                        province: p.province,
+                      })}
+                      onMouseLeave={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
+                      ))}
+                    >
+                      <path
+                        d={p.d}
+                        fill="#ff3b30"
+                        fillOpacity={0.8}
+                      />
+                    </g>
+                  ))}
+                </>
+              )
+              : (
+                <>
+                  {projectedPreviousFirePoints.map((p, idx) => (
+                    <g
+                      key={`fire-point-prev-${idx}`}
+                      onMouseEnter={() => setHoveredFirePoint({
+                        x: p.x,
+                        y: p.y,
+                        period: 'previous',
+                        areaHa: p.areaHa,
+                        commune: p.commune,
+                        province: p.province,
+                      })}
+                      onMouseLeave={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
+                      ))}
+                    >
+                      <circle cx={p.x} cy={p.y} r={4} fill="#dadada" fillOpacity={0.85} />
+                    </g>
+                  ))}
+                  {projectedCurrentFirePoints.map((p, idx) => (
+                    <g
+                      key={`fire-point-current-${idx}`}
+                      onMouseEnter={() => setHoveredFirePoint({
+                        x: p.x,
+                        y: p.y,
+                        period: 'current',
+                        areaHa: p.areaHa,
+                        commune: p.commune,
+                        province: p.province,
+                      })}
+                      onMouseLeave={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
+                      ))}
+                    >
+                      <circle cx={p.x} cy={p.y} r={4.5} fill="#ff3b30" fillOpacity={0.8} />
+                    </g>
+                  ))}
+                </>
+              )}
             {projectedCityPoints.map((p, idx) => (
               <g key={`city-${p.name}-${idx}`} className="maps-city-point">
                 {useHeartMarker(p.name) ? (
@@ -248,18 +494,94 @@ export default function MapSelectionPanel({
                 <text x={p.textX} y={p.textY} textAnchor={p.textAnchor}>{p.name}</text>
               </g>
             ))}
+            {projectedRegionalWorkDots.map((p, idx) => (
+              <g
+                key={`regional-work-dot-${idx}`}
+                className="maps-work-dot maps-work-dot--regional"
+                onMouseEnter={() => setHoveredWorkPoint(p)}
+                onMouseLeave={() => setHoveredWorkPoint((current) => (
+                  current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
+                ))}
+              >
+                <circle cx={p.x} cy={p.y} r={5} fill="#ffffff" fillOpacity={0.94} />
+                <circle cx={p.x} cy={p.y} r={3.25} fill="#9fdb6f" stroke="#26410f" strokeWidth={0.9} />
+              </g>
+            ))}
+            {projectedMunicipalityWorkDots.map((p, idx) => (
+              <g
+                key={`municipality-work-dot-${idx}`}
+                className="maps-work-dot maps-work-dot--municipality"
+                onMouseEnter={() => setHoveredWorkPoint(p)}
+                onMouseLeave={() => setHoveredWorkPoint((current) => (
+                  current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
+                ))}
+              >
+                <circle cx={p.x} cy={p.y} r={4.7} fill="#ffffff" fillOpacity={0.94} />
+                <circle cx={p.x} cy={p.y} r={3} fill="#f4cf42" stroke="#5c4a00" strokeWidth={0.9} />
+              </g>
+            ))}
           </svg>
+          {hoveredFirePoint && (
+            <div
+              className="maps-selection-panel__fire-tooltip"
+              style={{
+                left: `${Math.min(Math.max(hoveredFirePoint.x + 12, 10), 390)}px`,
+                top: `${Math.min(Math.max(hoveredFirePoint.y + 10, 10), 250)}px`,
+              }}
+            >
+              <strong>{hoveredFirePoint.commune}</strong>
+              <span>{hoveredFirePoint.province}</span>
+              <span>{`${(hoveredFirePoint.areaHa * 10).toLocaleString('el-GR', { maximumFractionDigits: 0 })} στρ.`}</span>
+            </div>
+          )}
+          {hoveredWorkPoint && (
+            <div
+              className="maps-selection-panel__work-tooltip"
+              style={{
+                left: `${Math.min(Math.max(hoveredWorkPoint.x + 12, 10), 390)}px`,
+                top: `${Math.min(Math.max(hoveredWorkPoint.y + 10, 10), 250)}px`,
+              }}
+            >
+              <strong>{hoveredWorkPoint.pointName}</strong>
+              <em>{hoveredWorkPoint.scope === 'municipality' ? 'Εργασία δήμου' : 'Εργασία περιφέρειας'}</em>
+              <span>{hoveredWorkPoint.work}</span>
+            </div>
+          )}
           <div className="maps-selection-panel__shape-meta">
             {municipalityFireLoading
-              ? 'Φόρτωση καταγεγραμμένων πυρκαγιών…'
-              : municipalityFireYear != null
+              ? 'Φόρτωση δασικών πυρκαγιών'
+              : projectedFireShapes.length > 0
                 ? (
                   <>
                     <span className="maps-legend-dot maps-legend-dot--fire" aria-hidden="true" />
-                    {` Καταγεγραμμένες πυρκαγιές (${municipalityFireYear}) — ${projectedFireDots.length.toLocaleString('el-GR')} συμβάντα σε ${uniqueFireLocations.toLocaleString('el-GR')} σημεία`}
+                    {` Πυρκαγιές 2026 — ${projectedCurrentFireShapes.length.toLocaleString('el-GR')}`}
+                    {projectedPreviousFireShapes.length > 0 && (
+                      <>
+                        {' · '}
+                        <span className="maps-legend-dot maps-legend-dot--fire-previous" aria-hidden="true" />
+                        {` Πυρκαγιές 2024-2025 — ${projectedPreviousFireShapes.length.toLocaleString('el-GR')}`}
+                      </>
+                    )}
+                    {' · '}
+                    <span className="maps-selection-panel__shape-source">Πηγή: Copernicus</span>
+                    {` · ${uniqueFireLocations.toLocaleString('el-GR')} σημεία`}
                   </>
                 )
-                : 'Δεν βρέθηκαν καταγεγραμμένες πυρκαγιές με συντεταγμένες'}
+                : 'Δεν βρέθηκαν δασικές πυρκαγιές'}
+            {!municipalityWorkLoading && projectedMunicipalityWorkDots.length > 0 && (
+              <>
+                {' · '}
+                <span className="maps-legend-dot maps-legend-dot--work" aria-hidden="true" />
+                {` ΕΡΓΑΣΙΕΣ ΔΗΜΟΥ — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}
+              </>
+            )}
+            {!municipalityWorkLoading && projectedRegionalWorkDots.length > 0 && (
+              <>
+                {' · '}
+                <span className="maps-legend-dot maps-legend-dot--regional-work" aria-hidden="true" />
+                {` ΕΡΓΑΣΙΕΣ ΠΕΡΙΦΕΡΕΙΑΣ — ${projectedRegionalWorkDots.length.toLocaleString('el-GR')}`}
+              </>
+            )}
           </div>
         </div>
       )}
