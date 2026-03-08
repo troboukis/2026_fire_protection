@@ -1,6 +1,7 @@
-import { useDevViewEnabled } from '../lib/devView'
+import { DEV_VIEW_AVAILABLE, useDevViewEnabled } from '../lib/devView'
 
 export default function DevViewToggle() {
+  if (!DEV_VIEW_AVAILABLE) return null
   const [enabled, setEnabled] = useDevViewEnabled()
   return (
     <button

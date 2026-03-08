@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
+import * as d3 from 'd3'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DevViewToggle from '../components/DevViewToggle'
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
-import { openContractPdfPrintView } from '../lib/contractPdf'
+import { downloadContractDocument } from '../lib/contractDocument'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
 
@@ -35,10 +36,38 @@ type MunicipalityRegionRow = {
 }
 
 type MunicipalityLatestContract = LatestContractCardView
-type FirePoint = { lat: number; lon: number }
+type FirePoint = {
+  lat: number
+  lon: number
+  period: 'current' | 'previous'
+  areaHa: number
+  commune: string
+  province: string
+  shape: GeoJSON.Geometry | null
+}
+type WorkPoint = { lat: number; lon: number; work: string; pointName: string }
 type CityPoint = { lat: number; lon: number; name: string }
 
 const PAGE_SIZE = 1000
+
+function reversePolygonRings(rings: number[][][]): number[][][] {
+  return rings.map((ring) => [...ring].reverse())
+}
+
+function normalizePolygonWinding(geometry: GeoJSON.Polygon | GeoJSON.MultiPolygon): GeoJSON.Polygon | GeoJSON.MultiPolygon {
+  const area = d3.geoArea(geometry as d3.GeoPermissibleObjects)
+  if (area <= 2 * Math.PI) return geometry
+  if (geometry.type === 'Polygon') {
+    return {
+      ...geometry,
+      coordinates: reversePolygonRings(geometry.coordinates),
+    }
+  }
+  return {
+    ...geometry,
+    coordinates: geometry.coordinates.map((polygon) => reversePolygonRings(polygon)),
+  }
+}
 
 function isLocalOrRegionalAuthority(orgName: string): boolean {
   const n = orgName.toUpperCase()
@@ -49,6 +78,15 @@ function isLocalOrRegionalAuthority(orgName: string): boolean {
   if (n.includes('ΔΗΜΟΤΙΚΗ')) return true
   if (n.includes('ΠΕΡΙΦΕΡΕΙΑΚ')) return true
   return false
+}
+
+function getAuthorityLevel(orgName: string): 'municipality' | 'region' | 'decentralized' | 'other' {
+  const n = orgName.toUpperCase()
+  if (!n) return 'other'
+  if (n.startsWith('ΔΗΜΟΣ') || n.includes('ΔΗΜΟΤΙΚΗ')) return 'municipality'
+  if (n.startsWith('ΠΕΡΙΦΕΡΕΙΑ') || n.includes('ΠΕΡΙΦΕΡΕΙΑΚ')) return 'region'
+  if (n.includes('ΑΠΟΚΕΝΤΡΩΜΕΝΗ')) return 'decentralized'
+  return 'other'
 }
 
 function extractYear(value: string): number | null {
@@ -128,7 +166,8 @@ const REGIONS = [
 ] as const
 
 export default function MapsPage() {
-  const mapYear = 2026
+  const mapYear = new Date().getFullYear()
+  const [mapView, setMapView] = useState<'greece' | 'attica'>('greece')
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [choroplethData, setChoroplethData] = useState<Record<string, number>>({})
   const [procMunicipalities, setProcMunicipalities] = useState<Set<string>>(new Set())
@@ -149,13 +188,15 @@ export default function MapsPage() {
   const [municipalityLatestLoading, setMunicipalityLatestLoading] = useState(false)
   const [municipalityFirePoints, setMunicipalityFirePoints] = useState<FirePoint[]>([])
   const [municipalityFireLoading, setMunicipalityFireLoading] = useState(false)
-  const [municipalityFireYear, setMunicipalityFireYear] = useState<number | null>(null)
+  const [municipalityDirectWorkPoints, setMunicipalityDirectWorkPoints] = useState<WorkPoint[]>([])
+  const [municipalityRegionalWorkPoints, setMunicipalityRegionalWorkPoints] = useState<WorkPoint[]>([])
+  const [municipalityWorkLoading, setMunicipalityWorkLoading] = useState(false)
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
   const [regionLatestContracts, setRegionLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [regionLatestLoading, setRegionLatestLoading] = useState(false)
 
-  const downloadContractPdf = (contract: ContractModalContract) => {
-    openContractPdfPrintView(contract)
+  const downloadContractPdf = async (contract: ContractModalContract) => {
+    await downloadContractDocument(contract)
   }
 
   useEffect(() => {
@@ -245,6 +286,7 @@ export default function MapsPage() {
           setCityPoints([])
         }
         const countByMunicipality = new Map<string, number>()
+        const directCountByMunicipality = new Map<string, number>()
         let procurementRowsForYear = 0
         const orgKeys = Array.from(new Set(
           rows.map((r) => String(r.organization_key ?? '').trim()).filter(Boolean),
@@ -275,8 +317,12 @@ export default function MapsPage() {
           const orgKey = String(row.organization_key ?? '').trim()
           const orgName = orgNameByKey.get(orgKey) ?? orgKey
           if (!isLocalOrRegionalAuthority(orgName)) continue
+          const authorityLevel = getAuthorityLevel(orgName)
           procurementRowsForYear += 1
           countByMunicipality.set(municipalityId, (countByMunicipality.get(municipalityId) ?? 0) + 1)
+          if (authorityLevel === 'municipality') {
+            directCountByMunicipality.set(municipalityId, (directCountByMunicipality.get(municipalityId) ?? 0) + 1)
+          }
         }
 
         const nationalTotalCount = Array.from(countByMunicipality.values()).reduce((s, n) => s + n, 0)
@@ -595,66 +641,94 @@ export default function MapsPage() {
     if (!selectedMunicipalityId || panelKind !== 'municipality') {
       setMunicipalityFirePoints([])
       setMunicipalityFireLoading(false)
-      setMunicipalityFireYear(null)
       return
+    }
+
+    const parseCentroid = (value: unknown): { lat: number; lon: number } | null => {
+      if (value && typeof value === 'object' && 'coordinates' in (value as Record<string, unknown>)) {
+        const coords = (value as { coordinates?: unknown }).coordinates
+        if (Array.isArray(coords) && coords.length === 2) {
+          const lon = Number(coords[0])
+          const lat = Number(coords[1])
+          if (Number.isFinite(lat) && Number.isFinite(lon)) return { lat, lon }
+        }
+      }
+      return null
+    }
+
+    const parseShape = (value: unknown): GeoJSON.Geometry | null => {
+      if (value && typeof value === 'object' && 'type' in (value as Record<string, unknown>)) {
+        const geometry = value as GeoJSON.Geometry
+        if (geometry.type === 'Polygon' || geometry.type === 'MultiPolygon') {
+          return normalizePolygonWinding(geometry)
+        }
+        return geometry
+      }
+      const raw = String(value ?? '').trim()
+      if (!raw) return null
+      try {
+        const geometry = JSON.parse(raw.replace(/'/g, '"')) as GeoJSON.Geometry
+        if (geometry.type === 'Polygon' || geometry.type === 'MultiPolygon') {
+          return normalizePolygonWinding(geometry)
+        }
+        return geometry
+      } catch {
+        return null
+      }
     }
 
     const loadMunicipalityFires = async () => {
       setMunicipalityFireLoading(true)
       try {
-        const { data: latestYearRow, error: latestYearError } = await supabase
-          .from('forest_fire')
-          .select('year')
-          .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
-          .not('year', 'is', null)
-          .order('year', { ascending: false })
-          .limit(1)
-          .maybeSingle()
-
-        if (latestYearError) throw latestYearError
-        const latestYear = latestYearRow?.year != null ? Number(latestYearRow.year) : null
-        if (!latestYear || !Number.isFinite(latestYear)) {
-          if (!cancelled) {
-            setMunicipalityFireYear(null)
-            setMunicipalityFirePoints([])
-          }
-          return
-        }
-
         const pointsOut: FirePoint[] = []
         let from = 0
         while (true) {
           const to = from + PAGE_SIZE - 1
           const { data, error } = await supabase
-            .from('forest_fire')
-            .select('lat, lon')
+            .from('copernicus')
+            .select('centroid, shape, firedate, area_ha, commune, province')
             .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
-            .eq('year', latestYear)
-            .not('lat', 'is', null)
-            .not('lon', 'is', null)
-            .order('id', { ascending: true })
+            .gte('firedate', '2024-01-01T00:00:00')
+            .lte('firedate', `${mapYear}-12-31T23:59:59`)
+            .order('firedate', { ascending: false })
             .range(from, to)
 
           if (error) throw error
 
-          const page = ((data ?? []) as Array<{ lat: number | string | null; lon: number | string | null }>)
-            .map((r) => ({
-              lat: Number(r.lat),
-              lon: Number(r.lon),
-            }))
-            .filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lon))
+          const page = ((data ?? []) as Array<{
+            centroid: unknown
+            shape: unknown
+            firedate: string | null
+            area_ha: number | string | null
+            commune: string | null
+            province: string | null
+          }>)
+            .map((r) => {
+              const centroid = parseCentroid(r.centroid)
+              if (!centroid) return null
+              const year = extractYear(String(r.firedate ?? ''))
+              if (year == null) return null
+              return {
+                lat: centroid.lat,
+                lon: centroid.lon,
+                period: year === mapYear ? 'current' : 'previous' as const,
+                areaHa: Number(r.area_ha ?? 0) || 0,
+                commune: String(r.commune ?? '').trim() || '—',
+                province: String(r.province ?? '').trim() || '—',
+                shape: parseShape(r.shape),
+              }
+            })
+            .filter((p): p is FirePoint => p !== null)
           pointsOut.push(...page)
           if ((data ?? []).length < PAGE_SIZE) break
           from += PAGE_SIZE
         }
 
         if (!cancelled) {
-          setMunicipalityFireYear(latestYear)
           setMunicipalityFirePoints(pointsOut)
         }
       } catch {
         if (!cancelled) {
-          setMunicipalityFireYear(null)
           setMunicipalityFirePoints([])
         }
       } finally {
@@ -666,7 +740,110 @@ export default function MapsPage() {
     return () => {
       cancelled = true
     }
-  }, [selectedMunicipalityIdForPanel, panelKind])
+  }, [selectedMunicipalityIdForPanel, panelKind, mapYear])
+
+  useEffect(() => {
+    let cancelled = false
+    const selectedMunicipalityId = selectedMunicipalityIdForPanel
+    const selectedRegionId = selectedMunicipalityId ? (municipalityRegionById.get(selectedMunicipalityId) ?? null) : null
+    if (!selectedMunicipalityId || panelKind !== 'municipality') {
+      setMunicipalityDirectWorkPoints([])
+      setMunicipalityRegionalWorkPoints([])
+      setMunicipalityWorkLoading(false)
+      return
+    }
+
+    const loadMunicipalityWorkPoints = async () => {
+      setMunicipalityWorkLoading(true)
+      try {
+        const directPointsOut: WorkPoint[] = []
+        const regionalPointsOut: WorkPoint[] = []
+        const directSeen = new Set<string>()
+        const regionalSeen = new Set<string>()
+
+        const loadQuery = async (
+          buildQuery: (from: number, to: number) => Promise<{ data: unknown[] | null; error: unknown }>,
+          target: WorkPoint[],
+          seen: Set<string>,
+        ) => {
+          let from = 0
+          while (true) {
+            const to = from + PAGE_SIZE - 1
+            const { data, error } = await buildQuery(from, to)
+
+            if (error) throw error
+
+            for (const row of (data ?? []) as Array<{
+              lat: number | string | null
+              lon: number | string | null
+              work: string | null
+              point_name_canonical: string | null
+            }>) {
+              const lat = Number(row.lat)
+              const lon = Number(row.lon)
+              if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue
+              const work = String(row.work ?? '').trim() || '—'
+              const pointName = String(row.point_name_canonical ?? '').trim() || '—'
+              const key = `${lat.toFixed(6)}|${lon.toFixed(6)}|${work}|${pointName}`
+              if (seen.has(key)) continue
+              seen.add(key)
+              target.push({ lat, lon, work, pointName })
+            }
+
+            if ((data ?? []).length < PAGE_SIZE) break
+            from += PAGE_SIZE
+          }
+        }
+
+        await loadQuery(
+          async (from, to) => await supabase
+            .from('works_enriched')
+            .select('id, lat, lon, work, point_name_canonical')
+            .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
+            .not('lat', 'is', null)
+            .not('lon', 'is', null)
+            .order('id', { ascending: true })
+            .range(from, to),
+          directPointsOut,
+          directSeen,
+        )
+
+        if (selectedRegionId) {
+          await loadQuery(
+            async (from, to) => await supabase
+              .from('works_enriched')
+              .select('id, lat, lon, work, point_name_canonical, organization_normalized_value, region_key')
+              .in('authority_scope', ['region', 'decentralized'])
+              .or(`region_key.eq.${selectedRegionId},organization_normalized_value.ilike.%${selectedRegionId}%`)
+              .not('lat', 'is', null)
+              .not('lon', 'is', null)
+              .order('id', { ascending: true })
+              .range(from, to),
+            regionalPointsOut,
+            regionalSeen,
+          )
+        }
+
+        if (!cancelled) {
+          setMunicipalityDirectWorkPoints(directPointsOut)
+          setMunicipalityRegionalWorkPoints(regionalPointsOut)
+        }
+      } catch (e) {
+        if (!cancelled) {
+          console.error('[MapsPage] municipality works failed', e)
+          setMunicipalityDirectWorkPoints([])
+          setMunicipalityRegionalWorkPoints([])
+        }
+      } finally {
+        if (!cancelled) setMunicipalityWorkLoading(false)
+      }
+    }
+
+    loadMunicipalityWorkPoints()
+    return () => {
+      cancelled = true
+    }
+  }, [selectedMunicipalityIdForPanel, panelKind, municipalityRegionById])
 
   useEffect(() => {
     let cancelled = false
@@ -995,105 +1172,124 @@ export default function MapsPage() {
       <ComponentTag name="MapsPage" />
       <div className="maps-page__texture" aria-hidden="true" />
 
-      <section className="maps-top">
-        <section className="maps-controls">
-          <ComponentTag name="MapsFilters" />
-          <div className="maps-controls__row">
-            <label className="maps-controls__search">
-              <input
-                aria-label="Αναζήτηση δήμου ή περιφέρειας"
-                type="text"
-                value={searchText}
-                onChange={(e) => setSearchText(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' && searchResults.length > 0) {
-                    applySearchSelection(searchResults[0])
-                  }
-                }}
-                placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
-              />
-              {searchText.trim() && (
-                <div className="maps-search-results">
-                  {searchResults.length === 0 ? (
-                    <button type="button" className="maps-search-empty" disabled>
-                      Δεν βρέθηκε αποτέλεσμα
-                    </button>
-                  ) : (
-                    searchResults.map((opt) => (
-                      <button
-                        key={`${opt.kind}-${opt.value}`}
-                        type="button"
-                        onClick={() => applySearchSelection(opt)}
-                      >
-                        <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
-                        <span>{opt.label}</span>
+      <div className="maps-main">
+        <section className="maps-top">
+          <section className="maps-controls">
+            <ComponentTag name="MapsFilters" />
+            <div className="maps-controls__row">
+              <label className="maps-controls__search">
+                <input
+                  aria-label="Αναζήτηση δήμου ή περιφέρειας"
+                  type="text"
+                  value={searchText}
+                  onChange={(e) => setSearchText(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && searchResults.length > 0) {
+                      applySearchSelection(searchResults[0])
+                    }
+                  }}
+                  placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
+                />
+                {searchText.trim() && (
+                  <div className="maps-search-results">
+                    {searchResults.length === 0 ? (
+                      <button type="button" className="maps-search-empty" disabled>
+                        Δεν βρέθηκε αποτέλεσμα
                       </button>
-                    ))
+                    ) : (
+                      searchResults.map((opt) => (
+                        <button
+                          key={`${opt.kind}-${opt.value}`}
+                          type="button"
+                          onClick={() => applySearchSelection(opt)}
+                        >
+                          <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
+                          <span>{opt.label}</span>
+                        </button>
+                      ))
+                    )}
+                  </div>
+                )}
+              </label>
+              <label>
+                <select
+                  aria-label="Επέλεξε δήμο"
+                  value={selectedMunicipalityDropdown}
+                  onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
+                >
+                  <option value="">— Δήμοι —</option>
+                  {loading && (
+                    <option value="" disabled>Φόρτωση δήμων…</option>
                   )}
-                </div>
-              )}
-            </label>
-            <label>
-              <select
-                aria-label="Επέλεξε δήμο"
-                value={selectedMunicipalityDropdown}
-                onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
-              >
-                <option value="">— Δήμοι —</option>
-                {loading && (
-                  <option value="" disabled>Φόρτωση δήμων…</option>
-                )}
-                {!loading && municipalities.length === 0 && (
-                  <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
-                )}
-                {municipalities.map((m) => (
-                  <option key={m.id} value={m.id}>{m.label}</option>
-                ))}
-              </select>
-            </label>
+                  {!loading && municipalities.length === 0 && (
+                    <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
+                  )}
+                  {municipalities.map((m) => (
+                    <option key={m.id} value={m.id}>{m.label}</option>
+                  ))}
+                </select>
+              </label>
 
-            <label>
-              <select
-                aria-label="Επέλεξε περιφέρεια"
-                value={selectedRegion}
-                onChange={(e) => handleRegionDropdownChange(e.target.value)}
-              >
-                <option value="">— Περιφέρειες —</option>
-                {REGIONS.map((region) => (
-                  <option key={region} value={region}>{region}</option>
-                ))}
-              </select>
-            </label>
-          </div>
+              <label>
+                <select
+                  aria-label="Επέλεξε περιφέρεια"
+                  value={selectedRegion}
+                  onChange={(e) => handleRegionDropdownChange(e.target.value)}
+                >
+                  <option value="">— Περιφέρειες —</option>
+                  {REGIONS.map((region) => (
+                    <option key={region} value={region}>{region}</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+          </section>
         </section>
-      </section>
 
       <section className="maps-stage section-rule">
         <div className="maps-stage__contours" aria-hidden="true" />
         <div className="maps-stage__frame">
+          <div className="maps-stage__view-toggle" role="group" aria-label="Προβολή χάρτη">
+            <button
+              type="button"
+              className={mapView === 'greece' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+              onClick={() => setMapView('greece')}
+            >
+              Ελλάδα
+            </button>
+            <button
+              type="button"
+              className={mapView === 'attica' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+              onClick={() => setMapView('attica')}
+            >
+              Αττική
+            </button>
+          </div>
           <GreeceMap
             geojson={geojson}
             choroplethData={choroplethData}
             procMunicipalities={hiddenProcDots}
+            viewMode={mapView}
             onDeselect={handleMapDeselect}
             onMunicipalityClick={handleMapMunicipalityClick}
             selectedMunicipalityIds={selectedMunicipalityIdsForMap}
-            municipalityLabelById={municipalityLabelById}
-          />
-        </div>
-      </section>
+              municipalityLabelById={municipalityLabelById}
+            />
+          </div>
+        </section>
 
-      <div className="maps-legend" aria-live="polite">
-        <div className="maps-legend__scale" aria-hidden="true">
-          <span className="maps-legend__scale-label">Λιγότερες</span>
-          <div className="maps-legend__scale-bar" />
-          <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
+        <div className="maps-legend" aria-live="polite">
+          <div className="maps-legend__scale" aria-hidden="true">
+            <span className="maps-legend__scale-label">Λιγότερες</span>
+            <div className="maps-legend__scale-bar" />
+            <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
+          </div>
+          <p className="maps-legend__summary">
+            {loading
+              ? 'Φόρτωση χάρτη…'
+              : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
+          </p>
         </div>
-        <p className="maps-legend__summary">
-          {loading
-            ? 'Φόρτωση χάρτη…'
-            : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
-        </p>
       </div>
 
       <MapSelectionPanel
@@ -1111,8 +1307,10 @@ export default function MapsPage() {
             : null
         }
         municipalityFirePoints={municipalityFirePoints}
+        municipalityDirectWorkPoints={municipalityDirectWorkPoints}
+        municipalityRegionalWorkPoints={municipalityRegionalWorkPoints}
+        municipalityWorkLoading={municipalityWorkLoading}
         municipalityFireLoading={municipalityFireLoading}
-        municipalityFireYear={municipalityFireYear}
         cityPoints={cityPoints}
         currentYear={mapYear}
         regionCurrentYearCount={selectedRegionCurrentYearCount}

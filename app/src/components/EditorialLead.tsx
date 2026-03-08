@@ -12,7 +12,7 @@ export default function EditorialLead({ eyebrow, title, subtitle }: Props) {
       <ComponentTag name="EditorialLead" />
       <div className="editorial-lead__eyebrow">{eyebrow}</div>
       <h3 className="editorial-lead__title">{title}</h3>
-      <p className="editorial-lead__subtitle">{subtitle}</p>
+      <p className="ca-header-note">{subtitle}</p>
     </header>
   )
 }

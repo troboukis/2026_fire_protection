@@ -1,4 +1,4 @@
-// Ανάλυση Συμβάσεων — D3 charts, χωρίς ΦΠΑ, Ιαν 2024 – Φεβ 2026
+// Ανάλυση Συμβάσεων — D3 charts, χωρίς ΦΠΑ, από το 2024 έως την τρέχουσα χρονιά
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import * as d3 from 'd3'
 import { supabase } from '../lib/supabase'
@@ -65,7 +65,8 @@ type AnalysisData = {
 }
 
 const ANALYSIS_START = '2024-01-01'
-const ANALYSIS_END = '2026-12-31'
+const CURRENT_YEAR = new Date().getFullYear()
+const ANALYSIS_END = `${CURRENT_YEAR}-12-31`
 
 const MONTH_NAMES_SHORT = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ']
 
@@ -325,9 +326,13 @@ function normalizeSearch(str: string): string {
 // ── Κύριο component ───────────────────────────────────────────────────
 export default function ContractAnalysis() {
   const [barMetric,    setBarMetric]    = useState<BarMetric>('total')
-  const [analysisPeriod, setAnalysisPeriod] = useState<'all' | '2024' | '2025' | '2026'>('2026')
+  const [analysisPeriod, setAnalysisPeriod] = useState<'all' | string>(String(CURRENT_YEAR))
   const [analysis, setAnalysis] = useState<AnalysisData | null>(null)
   const [analysisError, setAnalysisError] = useState<string | null>(null)
+  const availableAnalysisYears = useMemo(
+    () => Array.from({ length: CURRENT_YEAR - 2024 + 1 }, (_, i) => String(2024 + i)).reverse(),
+    [],
+  )
 
   useEffect(() => {
     let cancelled = false
@@ -762,22 +767,17 @@ export default function ContractAnalysis() {
       <div className="ca-chart-head" style={{ padding: '0.75rem 1rem 0.35rem 1rem' }}>
        
         <div className="ca-metric-toggle">
-          <button
-            className={`ca-toggle-btn${analysisPeriod === '2026' ? ' ca-toggle-btn--active' : ''}`}
-            onClick={() => setAnalysisPeriod('2026')}
-          >2026</button>
-          <button
-            className={`ca-toggle-btn${analysisPeriod === '2025' ? ' ca-toggle-btn--active' : ''}`}
-            onClick={() => setAnalysisPeriod('2025')}
-          >2025</button>
-          <button
-            className={`ca-toggle-btn${analysisPeriod === '2024' ? ' ca-toggle-btn--active' : ''}`}
-            onClick={() => setAnalysisPeriod('2024')}
-          >2024</button>
+          {availableAnalysisYears.map((year) => (
+            <button
+              key={year}
+              className={`ca-toggle-btn${analysisPeriod === year ? ' ca-toggle-btn--active' : ''}`}
+              onClick={() => setAnalysisPeriod(year)}
+            >{year}</button>
+          ))}
           <button
             className={`ca-toggle-btn${analysisPeriod === 'all' ? ' ca-toggle-btn--active' : ''}`}
             onClick={() => setAnalysisPeriod('all')}
-          >2024–2026</button>
+          >{`2024–${CURRENT_YEAR}`}</button>
         </div>
       </div>
       <div className="ca-double-grid">

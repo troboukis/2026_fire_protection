@@ -54,9 +54,32 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
             <span className="eyebrow">{contract.who}</span>
             <h2>{contract.what}</h2>
           </div>
-          <button type="button" onClick={onClose} aria-label="Κλείσιμο">
-            ✕
-          </button>
+          <div className="contract-modal__actions">
+            {onDownloadPdf && (
+              <button
+                type="button"
+                className="contract-modal__icon-button"
+                onClick={onDownloadPdf}
+                aria-label="Κατέβασμα σύμβασης"
+                title="Κατέβασμα σύμβασης"
+              >
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10 2.5v8.2" />
+                  <path d="M6.8 8.9 10 12.1l3.2-3.2" />
+                  <path d="M4 14.5h12" />
+                </svg>
+              </button>
+            )}
+            <button
+              type="button"
+              className="contract-modal__icon-button"
+              onClick={onClose}
+              aria-label="Κλείσιμο"
+              title="Κλείσιμο"
+            >
+              ✕
+            </button>
+          </div>
         </header>
 
         <p className="contract-modal__subtitle">{contract.why}</p>
@@ -108,15 +131,6 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
         </div>
 
         <footer className="contract-modal__footer">
-          {onDownloadPdf && (
-            <button
-              type="button"
-              className="contract-modal__pdf-button"
-              onClick={onDownloadPdf}
-            >
-              Κατέβασε το
-            </button>
-          )}
           {contract.documentUrl && (
             <a href={contract.documentUrl} target="_blank" rel="noreferrer">
               Άνοιγμα εγγράφου στη Διαύγεια

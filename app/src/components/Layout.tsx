@@ -28,7 +28,9 @@ export default function Layout() {
     let cancelled = false
 
     const loadLastDbUpdate = async () => {
-      const tables = ['procurement', 'payment', 'diavgeia', 'fund', 'forest_fire']
+      // Exclude forest_fire here: this endpoint currently returns 500 for updated_at reads,
+      // and the header should degrade gracefully instead of polluting the console on every page load.
+      const tables = ['procurement', 'payment', 'diavgeia', 'fund']
       const results = await Promise.all(
         tables.map(async (table) => {
           const { data, error } = await supabase
@@ -80,6 +82,7 @@ export default function Layout() {
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
           <NavLink to="/">Αρχική</NavLink>
+          <NavLink to="/analysis">Ανάλυση</NavLink>
           <NavLink to="/contracts">Συμβάσεις</NavLink>
           <NavLink to="/maps">Χάρτης</NavLink>
           <button type="button" onClick={handleAbout}>Σχετικά</button>

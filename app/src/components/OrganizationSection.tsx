@@ -23,7 +23,7 @@ export type OrganizationSectionData = {
   beneficiaryCount: number
   previousYearBeneficiaryCount: number
   latestSignedAt: string | null
-  activityMunicipalityIds: string[]
+  activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }>
   timeline: OrganizationTimelineItem[]
 }
 
@@ -43,7 +43,13 @@ function normalizeMunicipalityId(input: unknown): string {
   return noDecimal
 }
 
-function OrganizationActivityMap({ municipalityIds }: { municipalityIds: string[] }) {
+function OrganizationActivityMap({
+  workPoints,
+  yearLabel,
+}: {
+  workPoints: Array<{ lat: number; lon: number; work: string; pointName: string }>
+  yearLabel: string
+}) {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
 
   useEffect(() => {
@@ -74,15 +80,14 @@ function OrganizationActivityMap({ municipalityIds }: { municipalityIds: string[
     const [tx, ty] = projection.translate()
     projection.translate([tx - 22, ty - 20])
     const path = d3.geoPath().projection(projection)
-    const selectedIds = new Set(municipalityIds.map(normalizeMunicipalityId).filter(Boolean))
-    const points: Array<{ x: number; y: number; id: string }> = []
+    const points: Array<{ x: number; y: number; key: string }> = []
 
-    for (const feature of geojson.features) {
-      const id = normalizeMunicipalityId((feature.properties as { municipality_code?: string | null }).municipality_code)
-      if (!selectedIds.has(id)) continue
-      const [x, y] = path.centroid(feature as unknown as d3.GeoPermissibleObjects)
+    for (const point of workPoints) {
+      const projected = projection([point.lon, point.lat])
+      if (!projected) continue
+      const [x, y] = projected
       if (!Number.isFinite(x) || !Number.isFinite(y)) continue
-      points.push({ x, y, id })
+      points.push({ x, y, key: `${point.lat.toFixed(6)}|${point.lon.toFixed(6)}|${point.work}|${point.pointName}` })
     }
 
     return {
@@ -92,7 +97,7 @@ function OrganizationActivityMap({ municipalityIds }: { municipalityIds: string[
       })),
       points,
     }
-  }, [geojson, municipalityIds])
+  }, [geojson, workPoints])
 
   if (!mapData) {
     return <div className="organization-map organization-map--empty">Φόρτωση χάρτη…</div>
@@ -112,10 +117,14 @@ function OrganizationActivityMap({ municipalityIds }: { municipalityIds: string[
         </g>
         <g className="organization-map__points">
           {mapData.points.map((point) => (
-            <circle key={point.id} cx={point.x} cy={point.y} r={2.6} fill="#000000" stroke="#000000" />
+            <circle key={point.key} cx={point.x} cy={point.y} r={2.6} fill="#ff4d3d" stroke="#000000" />
           ))}
         </g>
       </svg>
+      <div className="organization-map__legend">
+        <span className="organization-map__legend-dot" aria-hidden="true" />
+        <span>{`Εργασίες του ΑΔΜΗΕ το ${yearLabel}`}</span>
+      </div>
     </div>
   )
 }
@@ -172,7 +181,7 @@ export default function OrganizationSection({
           </div>
         </div>
         <div className="org-codes">
-          <OrganizationActivityMap municipalityIds={data.activityMunicipalityIds} />
+          <OrganizationActivityMap workPoints={data.activityWorkPoints} yearLabel={data.yearLabel} />
         </div>
       </div>
 

@@ -84,6 +84,7 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "αναγομ",
     "Αναγομ",
     "αναγόμ",
+    "αντλητικ"
 ]
 
 # Broad CPVs that overlap with non-fire-protection domains.

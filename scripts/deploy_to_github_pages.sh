@@ -19,7 +19,7 @@ fi
 
 echo "[1/4] Building frontend for GitHub Pages base /$TARGET_SUBDIR/ ..."
 cd "$APP_DIR"
-npm run build:pages
+npm run build -- --base="/$TARGET_SUBDIR/"
 
 echo "[2/4] Syncing dist to $TARGET_DIR ..."
 rm -rf "$TARGET_DIR"
@@ -39,4 +39,3 @@ echo "[4/4] Pushing ..."
 git push
 
 echo "[done] Deployed to https://troboukis.github.io/$TARGET_SUBDIR/"
-
