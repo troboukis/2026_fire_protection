@@ -239,13 +239,17 @@ export default function App() {
   const [organizationSection, setOrganizationSection] = useState<OrganizationSectionData>({
     name: 'ΑΔΜΗΕ',
     yearLabel: String(new Date().getFullYear()),
+    previousYearLabel: String(new Date().getFullYear() - 1),
     totalSpend: 0,
-    totalSpendNote: 'Συμβάσεις φορέα από το σύνολο των διαθέσιμων εγγραφών.',
     cpvCodes: [],
     topCpvValue: null,
+    previousYearTopCpvValue: null,
     contractCount: 0,
+    previousYearContractCount: 0,
     beneficiaryCount: 0,
+    previousYearBeneficiaryCount: 0,
     latestSignedAt: null,
+    activityMunicipalityIds: [],
     timeline: [],
   })
   const [organizationSectionLoading, setOrganizationSectionLoading] = useState(true)
@@ -576,17 +580,25 @@ export default function App() {
           'ΑΔΜΗΕ'
 
         const pageSize = 1000
-        const procurements: Array<{ id: number; contract_signed_date: string | null; title: string | null }> = []
+        const normalizeMunicipalityId = (input: unknown): string => {
+          const raw = String(input ?? '').trim()
+          if (!raw) return ''
+          const noDecimal = raw.replace(/\.0+$/, '')
+          if (/^\d+$/.test(noDecimal)) return String(Number(noDecimal))
+          return noDecimal
+        }
+
+        const procurements: Array<{ id: number; contract_signed_date: string | null; title: string | null; municipality_key: string | null }> = []
         let from = 0
         while (true) {
           const to = from + pageSize - 1
           const { data } = await supabase
             .from('procurement')
-            .select('id, contract_signed_date, title')
+            .select('id, contract_signed_date, title, municipality_key')
             .in('organization_key', organizationKeys)
             .order('id', { ascending: true })
             .range(from, to)
-          const rows = (data ?? []) as Array<{ id: number; contract_signed_date: string | null; title: string | null }>
+          const rows = (data ?? []) as Array<{ id: number; contract_signed_date: string | null; title: string | null; municipality_key: string | null }>
           procurements.push(...rows)
           if (rows.length < pageSize) break
           from += pageSize
@@ -627,22 +639,49 @@ export default function App() {
           cpvRows.push(...((cData ?? []) as typeof cpvRows))
         }
 
-        const totalSpend = paymentRows.reduce((sum, row) => sum + Number(row.amount_without_vat ?? 0), 0)
+        const procurementYearById = new Map<number, string>()
+        for (const row of procurements) {
+          const year = cleanText(row.contract_signed_date)?.slice(0, 4)
+          if (year) procurementYearById.set(row.id, year)
+        }
+        const latestProcurementYear = [...procurementYearById.values()].sort((a, b) => b.localeCompare(a))[0]
+          ?? String(new Date().getFullYear())
+        const previousProcurementYear = String(Number(latestProcurementYear) - 1)
+        const totalSpend = paymentRows.reduce((sum, row) => {
+          if (procurementYearById.get(row.procurement_id) !== latestProcurementYear) return sum
+          return sum + Number(row.amount_without_vat ?? 0)
+        }, 0)
+        const contractCount = procurements.filter((row) => procurementYearById.get(row.id) === latestProcurementYear).length
+        const previousYearContractCount = procurements.filter((row) => procurementYearById.get(row.id) === previousProcurementYear).length
         const beneficiaryCount = new Set(
           paymentRows
+            .filter((row) => procurementYearById.get(row.procurement_id) === latestProcurementYear)
+            .map((row) => cleanText(row.beneficiary_name))
+            .filter(Boolean),
+        ).size
+        const previousYearBeneficiaryCount = new Set(
+          paymentRows
+            .filter((row) => procurementYearById.get(row.procurement_id) === previousProcurementYear)
             .map((row) => cleanText(row.beneficiary_name))
             .filter(Boolean),
         ).size
 
         const cpvCounts = new Map<string, number>()
         const cpvValueCounts = new Map<string, number>()
+        const cpvValueCountsByYear = new Map<string, Map<string, number>>()
         const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
         for (const row of cpvRows) {
           const code = cleanText(row.cpv_key)
           const value = cleanText(row.cpv_value)
+          const procurementYear = procurementYearById.get(row.procurement_id)
           if (!code) continue
           cpvCounts.set(code, (cpvCounts.get(code) ?? 0) + 1)
           if (value) cpvValueCounts.set(value, (cpvValueCounts.get(value) ?? 0) + 1)
+          if (value && procurementYear) {
+            if (!cpvValueCountsByYear.has(procurementYear)) cpvValueCountsByYear.set(procurementYear, new Map<string, number>())
+            const yearCounts = cpvValueCountsByYear.get(procurementYear)!
+            yearCounts.set(value, (yearCounts.get(value) ?? 0) + 1)
+          }
           if (!cpvByProcId.has(row.procurement_id)) cpvByProcId.set(row.procurement_id, [])
           const items = cpvByProcId.get(row.procurement_id)!
           const item = { code, label: value ?? '—' }
@@ -663,8 +702,19 @@ export default function App() {
           .sort((a, b) => b[1] - a[1])
           .slice(0, 4)
           .map(([code]) => `CPV ${code}`)
-        const topCpvValue = [...cpvValueCounts.entries()]
+        const topCpvValue = [...(cpvValueCountsByYear.get(latestProcurementYear) ?? new Map<string, number>()).entries()]
+          .sort((a, b) => b[1] - a[1])[0]?.[0]
+          ?? [...cpvValueCounts.entries()]
           .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
+        const previousYearTopCpvValue = [...(cpvValueCountsByYear.get(previousProcurementYear) ?? new Map<string, number>()).entries()]
+          .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
+        const activityMunicipalityIds = Array.from(
+          new Set(
+            procurements
+              .map((row) => normalizeMunicipalityId(row.municipality_key))
+              .filter(Boolean),
+          ),
+        )
 
         const { data: latestTimelineRows } = await supabase
           .from('procurement')
@@ -774,14 +824,18 @@ export default function App() {
 
         const nextState: OrganizationSectionData = {
           name: organizationName,
-          yearLabel: cleanText(latestSigned)?.slice(0, 4) ?? String(new Date().getFullYear()),
+          yearLabel: latestProcurementYear,
+          previousYearLabel: previousProcurementYear,
           totalSpend,
-          totalSpendNote: 'Συνολικό ποσό χωρίς ΦΠΑ από τις καταγεγραμμένες πληρωμές του φορέα.',
           cpvCodes: topCpvs,
           topCpvValue,
-          contractCount: procurements.length,
+          previousYearTopCpvValue,
+          contractCount,
+          previousYearContractCount,
           beneficiaryCount,
+          previousYearBeneficiaryCount,
           latestSignedAt: latestSigned,
+          activityMunicipalityIds,
           timeline,
         }
 
@@ -1523,17 +1577,18 @@ export default function App() {
         <DebugComponentLabel name="AboutSection" />
         <section id="about" className="about-panel section-rule">
           <div className="about-panel__left">
-            <div className="eyebrow">Σχετικά με το Project ΠΥΡ</div>
-            <h2>Παρατηρητήριο Ετοιμότητας για Δασικές Πυρκαγιές</h2>
+            <div className="eyebrow">Σχετικά με το FireWatch</div>
+            <h2>Παρατηρητήριο για την πυροπροστασία</h2>
             <p>
-              Ανεξάρτητη δημοσιογραφική πλατφόρμα παρακολούθησης: καταγράφουμε τα μέτρα πρόληψης των αρμόδιων φορέων και ενημερώνουμε σε πραγματικό χρόνο για εξελισσόμενες πυρκαγιές σε όλη την ελληνική επικράτεια.
+              Ανεξάρτητη δημοσιογραφική πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
             </p>
+            <p>Η ενημέρωση των δεδομένων γίνεται αυτόματα, επομένως ενδέχεται να υπάρχουν λάθη και παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
           </div>
           <div className="about-panel__right">
-            <div className="poster-motif" aria-hidden="true">
-              <div className="poster-motif__sun" />
-              <div className="poster-motif__terrain" />
-            </div>
+            <figure className="about-cover-figure">
+              <img className="about-cover" src="/cover_square.png" alt="FireWatch cover" />
+              <figcaption className="about-cover-caption">Εικόνα από Nano Banana 2</figcaption>
+            </figure>
             <div className="about-stats">
               <div>
                 <span className="label">ΠΟΙΟΣ</span>

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import * as d3 from 'd3'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
+import TopAuthoritiesSection from './TopAuthoritiesSection'
 
 // ── Τύποι ────────────────────────────────────────────────────────────
 type BarItem = {
@@ -840,31 +841,7 @@ export default function ContractAnalysis() {
         </div>
       </div>
 
-      {/* ── Top organizations ── */}
-      <div className="ca-table-block">
-        <div className="eyebrow">Κορυφαίοι Φορείς κατά Συνολική Δαπάνη (χ.ΦΠΑ)</div>
-        <div className="ca-table">
-          <div className="ca-table__head">
-            <span>Φορέας</span>
-            <span className="ca-col-right">Συμβάσεις</span>
-            <span className="ca-col-right">Δαπάνη (€M)</span>
-            <span>Κλίμακα</span>
-          </div>
-          {sectionFiltered.topOrgs.map(org => (
-            <div className="ca-table__row" key={org.name}>
-              <span className="ca-org-name">{org.name}</span>
-              <span className="ca-col-right ca-mono">{org.contracts.toLocaleString('el-GR')}</span>
-              <span className="ca-col-right ca-accent ca-mono">{org.total_m.toFixed(1)}</span>
-              <div className="ca-inline-bar">
-                <div className="ca-inline-bar__fill" style={{ width: `${(org.total_m / maxOrgM) * 100}%` }} />
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="ca-sub-note">
-          Δυναμική κατάταξη φορέων με βάση τη συνολική δαπάνη χωρίς ΦΠΑ, όπως προκύπτει δυναμικά από τα δημοσιευμένα στοιχεία.
-        </p>
-      </div>
+      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} maxValue={maxOrgM} />
 
       {/* ── Top CPV ── */}
       <div className="ca-table-block">
