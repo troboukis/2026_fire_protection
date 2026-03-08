@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
       DOWNLOAD_DIAVGEIA_PDFS: "0"
       REBUILD_ORG_MAPPINGS: "0"
       ERD_TABLES: "region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,fund,diavgeia_procurement,beneficiary"
@@ -37,6 +39,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Install OCR system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-ell
 
       - name: Validate required secrets
         run: |
@@ -63,6 +70,9 @@ jobs:
       - name: Sync refreshed datasets to application database
         run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
+      - name: Locate works for new municipality, region, and ADMIE procurements
+        run: python src/run_locate_work_updates.py
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
@@ -73,8 +83,10 @@ jobs:
             data/fires/copernicus_latest.csv \
             data/raw_items_backup.json \
             data/raw_procurements.csv \
+            state/locate_work_state.json \
             state/state.json \
             logs/fetch_runs.csv \
+            logs/locate_work_runs.csv \
             logs/relevance_filter_runs.csv \
             logs/kimdis_fetch_runs.csv
           if git diff --cached --quiet; then

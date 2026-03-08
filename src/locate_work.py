@@ -10,6 +10,8 @@ import requests
 from natural_pdf import PDF
 from openai import OpenAI
 
+from src.map_copernicus_to_municipalities import resolve_database_url
+
 
 class Document:
     BASE_URL = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata"
@@ -118,11 +120,8 @@ class Document:
         ocr_pages = {}
     
         if ocr_needed:
-            images = convert_from_bytes(
-                self.doc,
-                dpi=300,
-                poppler_path="/opt/homebrew/bin"
-            )
+            poppler_path = os.getenv("POPPLER_PATH", "").strip() or None
+            images = convert_from_bytes(self.doc, dpi=300, poppler_path=poppler_path)
     
             for page_num in ocr_needed:
                 img = images[page_num - 1]
@@ -692,21 +691,4 @@ class Document:
         return bool(left_parts & right_parts)
 
     def _resolve_database_url(self) -> str:
-        if self.db_path:
-            return self.db_path
-
-        env_value = os.getenv("DATABASE_URL", "").strip()
-        if env_value:
-            return env_value
-
-        env_path = Path(".env")
-        if env_path.exists():
-            for line in env_path.read_text(encoding="utf-8").splitlines():
-                line = line.strip()
-                if not line or line.startswith("#") or "=" not in line:
-                    continue
-                key, value = line.split("=", 1)
-                if key.strip() == "DATABASE_URL" and value.strip():
-                    return value.strip().strip("'\"")
-
-        raise ValueError("Δεν βρέθηκε DATABASE_URL ούτε δόθηκε db_path.")
+        return resolve_database_url(self.db_path)
