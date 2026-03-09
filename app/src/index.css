@@ -1673,7 +1673,13 @@ main {
   stroke-width: 0.7px;
 }
 
-.fire-copernicus__points circle {
+.fire-copernicus__point-hit-area {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+
+.fire-copernicus__point-marker {
   fill: rgba(241, 79, 57, 0.74);
   stroke: rgba(117, 26, 15, 0.86);
   stroke-width: 0.8px;
@@ -3777,6 +3783,34 @@ main {
 
 .fire-copernicus__tooltip.app-tooltip {
   transform: translateY(calc(-100% - 1px));
+}
+
+@media (hover: none), (pointer: coarse) {
+  .map-tooltip.app-tooltip {
+    transform: translate(-50%, calc(-100% - 2px));
+  }
+
+  .fire-copernicus__tooltip.app-tooltip,
+  .maps-selection-panel__work-tooltip.app-tooltip,
+  .maps-selection-panel__fire-tooltip.app-tooltip,
+  .ca-tooltip.app-tooltip {
+    transform: translateY(calc(-100% - 2px));
+  }
+
+  .fire-copernicus__tooltip.app-tooltip {
+    max-width: min(12.5rem, calc(100vw - 2rem));
+    padding: 0.48rem 0.58rem;
+  }
+
+  .fire-copernicus__tooltip.app-tooltip strong {
+    font-size: 0.72rem;
+    line-height: 1.24;
+  }
+
+  .fire-copernicus__tooltip.app-tooltip span {
+    font-size: 0.6rem;
+    line-height: 1.34;
+  }
 }
 
 .fire-copernicus__tooltip-item + .fire-copernicus__tooltip-item {

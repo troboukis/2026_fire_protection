@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import type { GeoData } from '../types'
@@ -152,18 +152,6 @@ function diffDays(start: Date, end: Date): number {
   return Math.max(0, Math.round((toDayStart(end).getTime() - toDayStart(start).getTime()) / msPerDay))
 }
 
-function pointerOffset(
-  event: ReactMouseEvent<SVGElement | SVGGElement | SVGPathElement>,
-  fallback: { x: number; y: number },
-): { x: number; y: number } {
-  const { offsetX, offsetY } = event.nativeEvent
-  if (Number.isFinite(offsetX) && Number.isFinite(offsetY)) {
-    return { x: offsetX, y: offsetY }
-  }
-  return fallback
-}
-
-const CLUSTER_GRID_SIZE = 8
 const MOBILE_BREAKPOINT = 680
 const DESKTOP_MAP_WIDTH = 760
 const DESKTOP_MAP_HEIGHT = 520
@@ -171,6 +159,8 @@ const MOBILE_MAP_WIDTH = 760
 const MOBILE_MAP_HEIGHT = 860
 const DESKTOP_MAP_SCALE = 1.08
 const MOBILE_MAP_SCALE = 1.22
+const MOBILE_CLUSTER_GRID_SIZE = 8
+const DESKTOP_CLUSTER_GRID_SIZE = 14
 
 export default function FireCopernicusSection() {
   const currentYear = useMemo(() => new Date().getFullYear(), [])
@@ -186,10 +176,24 @@ export default function FireCopernicusSection() {
   const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, defaultStart))
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
+  const mapRef = useRef<HTMLDivElement | null>(null)
   const [isMobileMap, setIsMobileMap] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.innerWidth <= MOBILE_BREAKPOINT
   })
+  const isTouchInput = isMobileMap
+
+  const pointerInMap = (
+    event: ReactMouseEvent<SVGElement | SVGGElement | SVGPathElement>,
+    fallback: { x: number; y: number },
+  ): { x: number; y: number } => {
+    const rect = mapRef.current?.getBoundingClientRect()
+    if (!rect) return fallback
+    const x = event.clientX - rect.left
+    const y = event.clientY - rect.top
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return fallback
+    return { x, y }
+  }
 
   const rangeStartDate = addDays(domainStart, rangeStartDay)
   const rangeEndDate = addDays(domainStart, rangeEndDay)
@@ -312,6 +316,7 @@ export default function FireCopernicusSection() {
     const targetCenterY = isMobileMap ? height * 0.51 : height * 0.5
     const transformTranslateX = targetCenterX - (boundsCenterX * transformScale)
     const transformTranslateY = targetCenterY - (boundsCenterY * transformScale)
+    const clusterGridSize = isMobileMap ? MOBILE_CLUSTER_GRID_SIZE : DESKTOP_CLUSTER_GRID_SIZE
     const transformPoint = (x: number, y: number) => ({
       x: x * transformScale + transformTranslateX,
       y: y * transformScale + transformTranslateY,
@@ -337,7 +342,7 @@ export default function FireCopernicusSection() {
           const [baseX, baseY] = projected
           if (!Number.isFinite(baseX) || !Number.isFinite(baseY)) return acc
           const { x, y } = transformPoint(baseX, baseY)
-          const key = `${Math.round(x / CLUSTER_GRID_SIZE)}:${Math.round(y / CLUSTER_GRID_SIZE)}`
+          const key = `${Math.round(x / clusterGridSize)}:${Math.round(y / clusterGridSize)}`
           if (!acc[key]) {
             acc[key] = {
               x,
@@ -469,7 +474,7 @@ export default function FireCopernicusSection() {
         {loading && <div className="fire-copernicus__empty">Φόρτωση Copernicus δεδομένων…</div>}
         {!loading && !mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
         {!loading && mapData && (
-          <div className="fire-copernicus__map">
+          <div ref={mapRef} className="fire-copernicus__map">
             <div className="fire-copernicus__toggle" aria-label="Τρόπος προβολής Copernicus">
               <button
                 type="button"
@@ -508,7 +513,8 @@ export default function FireCopernicusSection() {
                     <g
                       key={`${fire.x}-${fire.y}`}
                       onMouseEnter={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        if (isTouchInput) return
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire({
                           x: pointer.x,
                           y: pointer.y,
@@ -516,16 +522,20 @@ export default function FireCopernicusSection() {
                         })
                       }}
                       onMouseMove={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        if (isTouchInput) return
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current
                             ? { ...current, x: pointer.x, y: pointer.y }
                             : current
                         ))
                       }}
-                      onMouseLeave={() => setHoveredFire(null)}
+                      onMouseLeave={() => {
+                        if (isTouchInput) return
+                        setHoveredFire(null)
+                      }}
                       onClick={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
                             ? null
@@ -534,12 +544,15 @@ export default function FireCopernicusSection() {
                       }}
                     >
                       <circle
+                        className="fire-copernicus__point-hit-area"
                         cx={fire.x}
                         cy={fire.y}
                         r={12}
-                        fill="rgba(0, 0, 0, 0.001)"
+                        fill="transparent"
+                        pointerEvents="all"
                       />
                       <circle
+                        className="fire-copernicus__point-marker"
                         cx={fire.x}
                         cy={fire.y}
                         r={fire.r}
@@ -565,7 +578,8 @@ export default function FireCopernicusSection() {
                       key={fire.id}
                       d={fire.d}
                       onMouseEnter={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        if (isTouchInput) return
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire({
                           x: pointer.x,
                           y: pointer.y,
@@ -579,16 +593,20 @@ export default function FireCopernicusSection() {
                         })
                       }}
                       onMouseMove={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        if (isTouchInput) return
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current
                             ? { ...current, x: pointer.x, y: pointer.y }
                             : current
                         ))
                       }}
-                      onMouseLeave={() => setHoveredFire(null)}
+                      onMouseLeave={() => {
+                        if (isTouchInput) return
+                        setHoveredFire(null)
+                      }}
                       onClick={(event) => {
-                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current?.items.length === 1 && current.items[0]?.id === fire.id
                             ? null
@@ -614,8 +632,8 @@ export default function FireCopernicusSection() {
               <div
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
-                  left: `${Math.min(hoveredFire.x + 8, mapData.width - 220)}px`,
-                  top: `${Math.max(hoveredFire.y - 8, 12)}px`,
+                  left: `${hoveredFire.x}px`,
+                  top: `${hoveredFire.y}px`,
                 }}
               >
                 {hoveredFire.items.map((item) => (

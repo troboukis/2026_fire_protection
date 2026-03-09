@@ -22,6 +22,9 @@ function shouldUseHeartMarker(name: string): boolean {
   return n === 'αντικυρα' || n === 'ασπρα σπιτια'
 }
 
+const PREVIEW_WIDTH = 520
+const PREVIEW_HEIGHT = 320
+
 type Props = {
   source: SelectionSource | null
   kind: SelectionKind | null
@@ -71,6 +74,10 @@ export default function MapSelectionPanel({
   municipalityCurrentYearCount,
   onContractOpen,
 }: Props) {
+  const isTouchInput = useMemo(() => {
+    if (typeof window === 'undefined') return false
+    return window.matchMedia('(hover: none), (pointer: coarse)').matches
+  }, [])
   const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
   const [hoveredFirePoint, setHoveredFirePoint] = useState<{
     x: number
@@ -89,8 +96,8 @@ export default function MapSelectionPanel({
   } | null>(null)
   const previewGeometry = useMemo(() => {
     if (!municipalityFeature) return null
-    const width = 520
-    const height = 320
+    const width = PREVIEW_WIDTH
+    const height = PREVIEW_HEIGHT
     const pad = 12
     const projection = d3.geoMercator().fitExtent(
       [[pad, pad], [width - pad, height - pad]],
@@ -400,15 +407,21 @@ export default function MapSelectionPanel({
                   {projectedPreviousFireShapes.map((p, idx) => (
                     <g
                       key={`fire-shape-prev-${idx}`}
-                      onMouseEnter={() => setHoveredFirePoint({
-                        x: p.x,
-                        y: p.y,
-                        period: 'previous',
-                        areaHa: p.areaHa,
-                        commune: p.commune,
-                        province: p.province,
-                      })}
+                      onMouseEnter={() => {
+                        if (isTouchInput) return
+                        setHoveredFirePoint({
+                          x: p.x,
+                          y: p.y,
+                          period: 'previous',
+                          areaHa: p.areaHa,
+                          commune: p.commune,
+                          province: p.province,
+                        })
+                      }}
                       onMouseLeave={() => setHoveredFirePoint((current) => (
+                        isTouchInput
+                          ? current
+                          :
                         current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
                       ))}
                       onClick={() => setHoveredFirePoint((current) => (
@@ -427,15 +440,21 @@ export default function MapSelectionPanel({
                   {projectedCurrentFireShapes.map((p, idx) => (
                     <g
                       key={`fire-shape-current-${idx}`}
-                      onMouseEnter={() => setHoveredFirePoint({
-                        x: p.x,
-                        y: p.y,
-                        period: 'current',
-                        areaHa: p.areaHa,
-                        commune: p.commune,
-                        province: p.province,
-                      })}
+                      onMouseEnter={() => {
+                        if (isTouchInput) return
+                        setHoveredFirePoint({
+                          x: p.x,
+                          y: p.y,
+                          period: 'current',
+                          areaHa: p.areaHa,
+                          commune: p.commune,
+                          province: p.province,
+                        })
+                      }}
                       onMouseLeave={() => setHoveredFirePoint((current) => (
+                        isTouchInput
+                          ? current
+                          :
                         current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
                       ))}
                       onClick={() => setHoveredFirePoint((current) => (
@@ -458,15 +477,21 @@ export default function MapSelectionPanel({
                   {projectedPreviousFirePoints.map((p, idx) => (
                     <g
                       key={`fire-point-prev-${idx}`}
-                      onMouseEnter={() => setHoveredFirePoint({
-                        x: p.x,
-                        y: p.y,
-                        period: 'previous',
-                        areaHa: p.areaHa,
-                        commune: p.commune,
-                        province: p.province,
-                      })}
+                      onMouseEnter={() => {
+                        if (isTouchInput) return
+                        setHoveredFirePoint({
+                          x: p.x,
+                          y: p.y,
+                          period: 'previous',
+                          areaHa: p.areaHa,
+                          commune: p.commune,
+                          province: p.province,
+                        })
+                      }}
                       onMouseLeave={() => setHoveredFirePoint((current) => (
+                        isTouchInput
+                          ? current
+                          :
                         current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
                       ))}
                       onClick={() => setHoveredFirePoint((current) => (
@@ -482,15 +507,21 @@ export default function MapSelectionPanel({
                   {projectedCurrentFirePoints.map((p, idx) => (
                     <g
                       key={`fire-point-current-${idx}`}
-                      onMouseEnter={() => setHoveredFirePoint({
-                        x: p.x,
-                        y: p.y,
-                        period: 'current',
-                        areaHa: p.areaHa,
-                        commune: p.commune,
-                        province: p.province,
-                      })}
+                      onMouseEnter={() => {
+                        if (isTouchInput) return
+                        setHoveredFirePoint({
+                          x: p.x,
+                          y: p.y,
+                          period: 'current',
+                          areaHa: p.areaHa,
+                          commune: p.commune,
+                          province: p.province,
+                        })
+                      }}
                       onMouseLeave={() => setHoveredFirePoint((current) => (
+                        isTouchInput
+                          ? current
+                          :
                         current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
                       ))}
                       onClick={() => setHoveredFirePoint((current) => (
@@ -520,8 +551,14 @@ export default function MapSelectionPanel({
               <g
                 key={`regional-work-dot-${idx}`}
                 className="maps-work-dot maps-work-dot--regional"
-                onMouseEnter={() => setHoveredWorkPoint(p)}
+                onMouseEnter={() => {
+                  if (isTouchInput) return
+                  setHoveredWorkPoint(p)
+                }}
                 onMouseLeave={() => setHoveredWorkPoint((current) => (
+                  isTouchInput
+                    ? current
+                    :
                   current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
                 ))}
                 onClick={() => setHoveredWorkPoint((current) => (
@@ -537,8 +574,14 @@ export default function MapSelectionPanel({
               <g
                 key={`municipality-work-dot-${idx}`}
                 className="maps-work-dot maps-work-dot--municipality"
-                onMouseEnter={() => setHoveredWorkPoint(p)}
+                onMouseEnter={() => {
+                  if (isTouchInput) return
+                  setHoveredWorkPoint(p)
+                }}
                 onMouseLeave={() => setHoveredWorkPoint((current) => (
+                  isTouchInput
+                    ? current
+                    :
                   current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
                 ))}
                 onClick={() => setHoveredWorkPoint((current) => (
@@ -555,8 +598,8 @@ export default function MapSelectionPanel({
             <div
               className="maps-selection-panel__fire-tooltip app-tooltip"
               style={{
-                left: `${Math.min(Math.max(hoveredFirePoint.x + 12, 10), 390)}px`,
-                top: `${Math.min(Math.max(hoveredFirePoint.y + 10, 10), 250)}px`,
+                left: `${(hoveredFirePoint.x / PREVIEW_WIDTH) * 100}%`,
+                top: `${(hoveredFirePoint.y / PREVIEW_HEIGHT) * 100}%`,
               }}
             >
               <strong>{hoveredFirePoint.commune}</strong>
@@ -568,8 +611,8 @@ export default function MapSelectionPanel({
             <div
               className="maps-selection-panel__work-tooltip app-tooltip"
               style={{
-                left: `${Math.min(Math.max(hoveredWorkPoint.x + 12, 10), 390)}px`,
-                top: `${Math.min(Math.max(hoveredWorkPoint.y + 10, 10), 250)}px`,
+                left: `${(hoveredWorkPoint.x / PREVIEW_WIDTH) * 100}%`,
+                top: `${(hoveredWorkPoint.y / PREVIEW_HEIGHT) * 100}%`,
               }}
             >
               <strong>{hoveredWorkPoint.pointName}</strong>
