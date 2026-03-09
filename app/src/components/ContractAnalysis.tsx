@@ -293,6 +293,18 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
           .style('left', `${(event.clientX - rect.left + 10)}px`)
           .style('top',  `${(event.clientY - rect.top  - 36)}px`)
       })
+      .on('click', (event: MouseEvent, d) => {
+        event.stopPropagation()
+        const rect = containerRef.current!.getBoundingClientRect()
+        const val = metric === 'count'
+          ? `${d.count} συμβάσεις`
+          : `€ ${(d.total_k / 1000).toFixed(2)}M (χωρίς ΦΠΑ)`
+        tooltip
+          .style('display', 'block')
+          .style('left', `${(event.clientX - rect.left + 10)}px`)
+          .style('top', `${(event.clientY - rect.top - 36)}px`)
+          .html(`<strong>${d.label}</strong><br/>${val}`)
+      })
       .on('mouseout', (event: MouseEvent) => {
         tooltip.style('display', 'none')
         d3.select(event.currentTarget as Element).attr('opacity', 1)
@@ -308,9 +320,9 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
   }, [draw])
 
   return (
-    <div ref={containerRef} className="ca-bar-container">
+    <div ref={containerRef} className="ca-bar-container" onClick={() => d3.select('#ca-bar-tooltip').style('display', 'none')}>
       <svg ref={svgRef} className="ca-d3-bar-svg" />
-      <div id="ca-bar-tooltip" className="ca-tooltip" />
+      <div id="ca-bar-tooltip" className="ca-tooltip app-tooltip" />
     </div>
   )
 }

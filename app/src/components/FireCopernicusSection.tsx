@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import type { GeoData } from '../types'
 import { supabase } from '../lib/supabase'
@@ -149,6 +150,17 @@ function addDays(input: Date, days: number): Date {
 function diffDays(start: Date, end: Date): number {
   const msPerDay = 24 * 60 * 60 * 1000
   return Math.max(0, Math.round((toDayStart(end).getTime() - toDayStart(start).getTime()) / msPerDay))
+}
+
+function pointerOffset(
+  event: ReactMouseEvent<SVGElement | SVGGElement | SVGPathElement>,
+  fallback: { x: number; y: number },
+): { x: number; y: number } {
+  const { offsetX, offsetY } = event.nativeEvent
+  if (Number.isFinite(offsetX) && Number.isFinite(offsetY)) {
+    return { x: offsetX, y: offsetY }
+  }
+  return fallback
 }
 
 const CLUSTER_GRID_SIZE = 8
@@ -495,13 +507,38 @@ export default function FireCopernicusSection() {
                   {mapData.points.map((fire) => (
                     <g
                       key={`${fire.x}-${fire.y}`}
-                      onMouseEnter={() => setHoveredFire({
-                        x: fire.x,
-                        y: fire.y,
-                        items: fire.items,
-                      })}
+                      onMouseEnter={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire({
+                          x: pointer.x,
+                          y: pointer.y,
+                          items: fire.items,
+                        })
+                      }}
+                      onMouseMove={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire((current) => (
+                          current
+                            ? { ...current, x: pointer.x, y: pointer.y }
+                            : current
+                        ))
+                      }}
                       onMouseLeave={() => setHoveredFire(null)}
+                      onClick={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire((current) => (
+                          current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
+                            ? null
+                            : { x: pointer.x, y: pointer.y, items: fire.items }
+                        ))
+                      }}
                     >
+                      <circle
+                        cx={fire.x}
+                        cy={fire.y}
+                        r={12}
+                        fill="rgba(0, 0, 0, 0.001)"
+                      />
                       <circle
                         cx={fire.x}
                         cy={fire.y}
@@ -527,18 +564,47 @@ export default function FireCopernicusSection() {
                     <path
                       key={fire.id}
                       d={fire.d}
-                      onMouseEnter={() => setHoveredFire({
-                        x: fire.x,
-                        y: fire.y,
-                        items: [{
-                          id: fire.id,
-                          areaHa: fire.areaHa,
-                          date: fire.date,
-                          commune: fire.commune,
-                          province: fire.province,
-                        }],
-                      })}
+                      onMouseEnter={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire({
+                          x: pointer.x,
+                          y: pointer.y,
+                          items: [{
+                            id: fire.id,
+                            areaHa: fire.areaHa,
+                            date: fire.date,
+                            commune: fire.commune,
+                            province: fire.province,
+                          }],
+                        })
+                      }}
+                      onMouseMove={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire((current) => (
+                          current
+                            ? { ...current, x: pointer.x, y: pointer.y }
+                            : current
+                        ))
+                      }}
                       onMouseLeave={() => setHoveredFire(null)}
+                      onClick={(event) => {
+                        const pointer = pointerOffset(event, { x: fire.x, y: fire.y })
+                        setHoveredFire((current) => (
+                          current?.items.length === 1 && current.items[0]?.id === fire.id
+                            ? null
+                            : {
+                                x: pointer.x,
+                                y: pointer.y,
+                                items: [{
+                                  id: fire.id,
+                                  areaHa: fire.areaHa,
+                                  date: fire.date,
+                                  commune: fire.commune,
+                                  province: fire.province,
+                                }],
+                              }
+                        ))
+                      }}
                     />
                   ))}
                 </g>
@@ -546,10 +612,10 @@ export default function FireCopernicusSection() {
             </svg>
             {hoveredFire && (
               <div
-                className="fire-copernicus__tooltip"
+                className="fire-copernicus__tooltip app-tooltip"
                 style={{
-                  left: `${Math.min(hoveredFire.x + 14, mapData.width - 220)}px`,
-                  top: `${Math.max(hoveredFire.y - 18, 12)}px`,
+                  left: `${Math.min(hoveredFire.x + 8, mapData.width - 220)}px`,
+                  top: `${Math.max(hoveredFire.y - 8, 12)}px`,
                 }}
               >
                 {hoveredFire.items.map((item) => (

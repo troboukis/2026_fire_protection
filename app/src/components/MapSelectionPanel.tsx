@@ -411,6 +411,11 @@ export default function MapSelectionPanel({
                       onMouseLeave={() => setHoveredFirePoint((current) => (
                         current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
                       ))}
+                      onClick={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'previous'
+                          ? null
+                          : { x: p.x, y: p.y, period: 'previous', areaHa: p.areaHa, commune: p.commune, province: p.province }
+                      ))}
                     >
                       <path
                         d={p.d}
@@ -432,6 +437,11 @@ export default function MapSelectionPanel({
                       })}
                       onMouseLeave={() => setHoveredFirePoint((current) => (
                         current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
+                      ))}
+                      onClick={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'current'
+                          ? null
+                          : { x: p.x, y: p.y, period: 'current', areaHa: p.areaHa, commune: p.commune, province: p.province }
                       ))}
                     >
                       <path
@@ -459,7 +469,13 @@ export default function MapSelectionPanel({
                       onMouseLeave={() => setHoveredFirePoint((current) => (
                         current?.x === p.x && current?.y === p.y && current?.period === 'previous' ? null : current
                       ))}
+                      onClick={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'previous'
+                          ? null
+                          : { x: p.x, y: p.y, period: 'previous', areaHa: p.areaHa, commune: p.commune, province: p.province }
+                      ))}
                     >
+                      <circle cx={p.x} cy={p.y} r={12} fill="rgba(0, 0, 0, 0.001)" />
                       <circle cx={p.x} cy={p.y} r={4} fill="#dadada" fillOpacity={0.85} />
                     </g>
                   ))}
@@ -477,7 +493,13 @@ export default function MapSelectionPanel({
                       onMouseLeave={() => setHoveredFirePoint((current) => (
                         current?.x === p.x && current?.y === p.y && current?.period === 'current' ? null : current
                       ))}
+                      onClick={() => setHoveredFirePoint((current) => (
+                        current?.x === p.x && current?.y === p.y && current?.period === 'current'
+                          ? null
+                          : { x: p.x, y: p.y, period: 'current', areaHa: p.areaHa, commune: p.commune, province: p.province }
+                      ))}
                     >
+                      <circle cx={p.x} cy={p.y} r={12} fill="rgba(0, 0, 0, 0.001)" />
                       <circle cx={p.x} cy={p.y} r={4.5} fill="#ff3b30" fillOpacity={0.8} />
                     </g>
                   ))}
@@ -502,7 +524,11 @@ export default function MapSelectionPanel({
                 onMouseLeave={() => setHoveredWorkPoint((current) => (
                   current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
                 ))}
+                onClick={() => setHoveredWorkPoint((current) => (
+                  current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : p
+                ))}
               >
+                <circle cx={p.x} cy={p.y} r={12} fill="rgba(0, 0, 0, 0.001)" />
                 <circle cx={p.x} cy={p.y} r={5} fill="#ffffff" fillOpacity={0.94} />
                 <circle cx={p.x} cy={p.y} r={3.25} fill="#9fdb6f" stroke="#26410f" strokeWidth={0.9} />
               </g>
@@ -515,7 +541,11 @@ export default function MapSelectionPanel({
                 onMouseLeave={() => setHoveredWorkPoint((current) => (
                   current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : current
                 ))}
+                onClick={() => setHoveredWorkPoint((current) => (
+                  current?.x === p.x && current?.y === p.y && current?.scope === p.scope ? null : p
+                ))}
               >
+                <circle cx={p.x} cy={p.y} r={12} fill="rgba(0, 0, 0, 0.001)" />
                 <circle cx={p.x} cy={p.y} r={4.7} fill="#ffffff" fillOpacity={0.94} />
                 <circle cx={p.x} cy={p.y} r={3} fill="#f4cf42" stroke="#5c4a00" strokeWidth={0.9} />
               </g>
@@ -523,7 +553,7 @@ export default function MapSelectionPanel({
           </svg>
           {hoveredFirePoint && (
             <div
-              className="maps-selection-panel__fire-tooltip"
+              className="maps-selection-panel__fire-tooltip app-tooltip"
               style={{
                 left: `${Math.min(Math.max(hoveredFirePoint.x + 12, 10), 390)}px`,
                 top: `${Math.min(Math.max(hoveredFirePoint.y + 10, 10), 250)}px`,
@@ -536,7 +566,7 @@ export default function MapSelectionPanel({
           )}
           {hoveredWorkPoint && (
             <div
-              className="maps-selection-panel__work-tooltip"
+              className="maps-selection-panel__work-tooltip app-tooltip"
               style={{
                 left: `${Math.min(Math.max(hoveredWorkPoint.x + 12, 10), 390)}px`,
                 top: `${Math.min(Math.max(hoveredWorkPoint.y + 10, 10), 250)}px`,
