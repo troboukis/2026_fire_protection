@@ -188,6 +188,10 @@ export function GreeceMap({
         event.stopPropagation()
         const code = municipalityCode(d)
         if (!code) return
+        const dbLabel = municipalityLabelByIdRef.current.get(code)
+        const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
+        const pct = choroplethRef.current[code] ?? null
+        setTooltip({ x: event.offsetX, y: event.offsetY, name: dbLabel || fallbackGeoName || code, pct })
         onMunicipalityClickRef.current?.(code)
       })
     // Dots layer — draw immediately and keep in sync via the proc-dots effect
@@ -263,7 +267,7 @@ export function GreeceMap({
       />
       {tooltip && (
         <div
-          className="map-tooltip"
+          className="map-tooltip app-tooltip"
           style={{ left: tooltip.x, top: tooltip.y - 10 }}
         >
           <span className="map-tooltip-name">{tooltip.name}</span>

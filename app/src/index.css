@@ -3717,6 +3717,82 @@ main {
   margin-bottom: 0.2rem;
 }
 
+/* ── App tooltips ─────────────────────────────────────────────────── */
+.app-tooltip {
+  position: absolute;
+  z-index: 30;
+  max-width: min(18rem, calc(100vw - 1.5rem));
+  padding: 0.58rem 0.72rem;
+  border: 1px solid rgba(86, 70, 52, 0.24);
+  border-radius: 10px;
+  background: rgba(251, 247, 239, 0.95);
+  box-shadow: 0 16px 40px rgba(47, 35, 24, 0.16);
+  color: #241d18;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  pointer-events: none;
+  white-space: normal;
+}
+
+.fire-copernicus__tooltip.app-tooltip,
+.map-tooltip.app-tooltip,
+.maps-selection-panel__work-tooltip.app-tooltip,
+.maps-selection-panel__fire-tooltip.app-tooltip {
+  display: grid;
+  gap: 0.24rem;
+}
+
+.app-tooltip strong,
+.app-tooltip span,
+.app-tooltip em {
+  display: block;
+}
+
+.app-tooltip strong {
+  font-size: 0.8rem;
+  line-height: 1.28;
+  color: #241d18;
+}
+
+.app-tooltip span,
+.app-tooltip em {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.66rem;
+  line-height: 1.42;
+  color: #61564b;
+}
+
+.map-tooltip.app-tooltip {
+  min-width: 10rem;
+  transform: translate(-50%, calc(-100% - 6px));
+}
+
+.fire-copernicus__tooltip.app-tooltip,
+.maps-selection-panel__work-tooltip.app-tooltip,
+.maps-selection-panel__fire-tooltip.app-tooltip,
+.ca-tooltip.app-tooltip {
+  transform: translateY(calc(-100% - 6px));
+}
+
+.fire-copernicus__tooltip.app-tooltip {
+  transform: translateY(calc(-100% - 1px));
+}
+
+.fire-copernicus__tooltip-item + .fire-copernicus__tooltip-item {
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(86, 70, 52, 0.14);
+}
+
+.map-tooltip-name {
+  font-size: 0.8rem;
+}
+
+.map-tooltip-pct {
+  color: #61564b;
+}
+
 /* ── Org filter panel ───────────────────────────────────────────── */
 .ca-org-filter {
   border: 1px solid var(--line);
