@@ -572,7 +572,7 @@ export default function FireCopernicusSection() {
                   ))}
                 </g>
               ) : (
-                <g className="fire-copernicus__shapes">
+                <g className="fire-copernicus__shapes" transform={mapData.transform}>
                   {mapData.shapes.map((fire) => (
                     <path
                       key={fire.id}
