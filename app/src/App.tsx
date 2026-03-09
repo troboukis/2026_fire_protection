@@ -1,7 +1,7 @@
 import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
-import type { BeneficiaryInsightRow } from './components/FeaturedRecordsSection'
+import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import { downloadContractDocument } from './lib/contractDocument'
@@ -95,6 +95,54 @@ type HeroSectionRpcResponse = {
   curve_points: HeroSectionRpcPoint[] | null
 }
 
+type FeaturedRecordsRpcContract = {
+  id: number | string
+  organization: string | null
+  title: string | null
+  submission_at: string | null
+  short_description: string | null
+  procedure_type_value: string | null
+  amount_without_vat: number | string | null
+  amount_with_vat: number | string | null
+  reference_number: string | null
+  contract_number: string | null
+  cpv_items: Array<{ code?: string | null; label?: string | null }> | null
+  contract_signed_date: string | null
+  start_date: string | null
+  end_date: string | null
+  organization_vat_number: string | null
+  beneficiary_vat_number: string | null
+  beneficiary_name: string | null
+  signers: string | null
+  assign_criteria: string | null
+  contract_type: string | null
+  units_operator: string | null
+  funding_details_cofund: string | null
+  funding_details_self_fund: string | null
+  funding_details_espa: string | null
+  funding_details_regular_budget: string | null
+  auction_ref_no: string | null
+  payment_ref_no: string | null
+  budget: number | string | null
+  contract_budget: number | string | null
+  diavgeia_ada: string | null
+}
+
+type FeaturedRecordsRpcRow = {
+  beneficiary_vat_number: string | null
+  beneficiary_name: string | null
+  organization: string | null
+  total_amount: number | string | null
+  contract_count: number | string | null
+  cpv: string | null
+  start_date: string | null
+  end_date: string | null
+  duration_days: number | string | null
+  progress_pct: number | string | null
+  signer: string | null
+  relevant_contracts: FeaturedRecordsRpcContract[] | null
+}
+
 function cleanText(v: unknown): string | null {
   if (v == null) return null
   const s = String(v).trim()
@@ -151,6 +199,12 @@ function formatEurCompact(n: number): string {
   if (abs >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(n / 1_000).toFixed(1)}K €`
   return formatEur(n)
+}
+
+function toFiniteNumber(v: unknown): number | null {
+  if (v == null || v === '') return null
+  const n = Number(v)
+  return Number.isFinite(n) ? n : null
 }
 
 function formatDateLabel(iso: string | null): string {
@@ -914,366 +968,85 @@ export default function App() {
     setFeaturedBeneficiariesLoading(true)
 
     const loadFeaturedPanels = async () => {
-      const chunk = <T,>(arr: T[], size: number): T[][] => {
-        const out: T[][] = []
-        for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
-        return out
-      }
-
-      const daysBetweenInclusive = (start: string | null, end: string | null): number | null => {
-        if (!start || !end) return null
-        const s = new Date(start)
-        const e = new Date(end)
-        if (Number.isNaN(s.getTime()) || Number.isNaN(e.getTime())) return null
-        const ms = e.getTime() - s.getTime()
-        if (ms < 0) return null
-        return Math.floor(ms / 86_400_000) + 1
-      }
-
-      const toDate = (v: string | null): Date | null => {
-        if (!v) return null
-        const d = new Date(v)
-        return Number.isNaN(d.getTime()) ? null : d
-      }
-
       try {
-        const yearStart = `${currentYear}-01-01`
-        const yearEnd = `${currentYear}-12-31`
-        const pageSize = 1000
-        const procurements: Array<{
-          id: number
-          organization_key: string | null
-          title: string | null
-          submission_at: string | null
-          contract_signed_date: string | null
-          short_descriptions: string | null
-          procedure_type_value: string | null
-          reference_number: string | null
-          contract_number: string | null
-          contract_budget: number | null
-          budget: number | null
-          assign_criteria: string | null
-          contract_type: string | null
-          units_operator: string | null
-          funding_details_cofund: string | null
-          funding_details_self_fund: string | null
-          funding_details_espa: string | null
-          funding_details_regular_budget: string | null
-          auction_ref_no: string | null
-          organization_vat_number: string | null
-          start_date: string | null
-          end_date: string | null
-          diavgeia_ada: string | null
-        }> = []
+        const { data, error } = await supabase.rpc('get_featured_beneficiaries', {
+          p_year_main: currentYear,
+          p_limit: 50,
+        })
+        if (error) throw error
 
-        let from = 0
-        while (true) {
-          const to = from + pageSize - 1
-          const { data, error } = await supabase
-            .from('procurement')
-            .select(`
-              id,
-              organization_key,
-              title,
-              submission_at,
-              contract_signed_date,
-              short_descriptions,
-              procedure_type_value,
-              reference_number,
-              contract_number,
-              contract_budget,
-              budget,
-              assign_criteria,
-              contract_type,
-              units_operator,
-              funding_details_cofund,
-              funding_details_self_fund,
-              funding_details_espa,
-              funding_details_regular_budget,
-              auction_ref_no,
-              organization_vat_number,
-              start_date,
-              end_date,
-              diavgeia_ada
-            `)
-            .gte('contract_signed_date', yearStart)
-            .lte('contract_signed_date', yearEnd)
-            .order('id', { ascending: true })
-            .range(from, to)
-          if (error) break
-          const rows = (data ?? []) as Array<{
-            id: number
-            organization_key: string | null
-            title: string | null
-            submission_at: string | null
-            contract_signed_date: string | null
-            short_descriptions: string | null
-            procedure_type_value: string | null
-            reference_number: string | null
-            contract_number: string | null
-            contract_budget: number | null
-            budget: number | null
-            assign_criteria: string | null
-            contract_type: string | null
-            units_operator: string | null
-            funding_details_cofund: string | null
-            funding_details_self_fund: string | null
-            funding_details_espa: string | null
-            funding_details_regular_budget: string | null
-            auction_ref_no: string | null
-            organization_vat_number: string | null
-            start_date: string | null
-            end_date: string | null
-            diavgeia_ada: string | null
-          }>
-          procurements.push(...rows)
-          if (rows.length < pageSize) break
-          from += pageSize
-        }
-
-        const ids = procurements.map((p) => p.id)
-        const orgKeys = Array.from(new Set(procurements.map((p) => cleanText(p.organization_key)).filter(Boolean))) as string[]
-
-        const paymentRows: Array<{
-          procurement_id: number
-          beneficiary_name: string | null
-          amount_without_vat: number | null
-          amount_with_vat: number | null
-          beneficiary_vat_number: string | null
-          signers: string | null
-          payment_ref_no: string | null
-        }> = []
-        for (const c of chunk(ids, 200)) {
-          const { data } = await supabase
-            .from('payment')
-            .select(`
-              procurement_id,
-              beneficiary_name,
-              amount_without_vat,
-              amount_with_vat,
-              beneficiary_vat_number,
-              signers,
-              payment_ref_no
-            `)
-            .in('procurement_id', c)
-          paymentRows.push(...((data ?? []) as typeof paymentRows))
-        }
-
-        const cpvRows: Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }> = []
-        for (const c of chunk(ids, 200)) {
-          const { data } = await supabase
-            .from('cpv')
-            .select('procurement_id, cpv_key, cpv_value')
-            .in('procurement_id', c)
-          cpvRows.push(...((data ?? []) as typeof cpvRows))
-        }
-
-        const orgNameByKey = new Map<string, string>()
-        for (const c of chunk(orgKeys, 200)) {
-          const { data } = await supabase
-            .from('organization')
-            .select('organization_key, organization_normalized_value, organization_value')
-            .in('organization_key', c)
-          for (const row of (data ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null }>) {
-            if (!orgNameByKey.has(row.organization_key)) {
-              orgNameByKey.set(
-                row.organization_key,
-                cleanText(row.organization_normalized_value) ?? cleanText(row.organization_value) ?? row.organization_key,
-              )
-            }
-          }
-        }
-
-        const paymentByProc = new Map<number, Array<{
-          beneficiary: string
-          amount: number
-          amountWithVat: number | null
-          beneficiaryVat: string | null
-          signer: string
-          paymentRefNo: string | null
-        }>>()
-        for (const p of paymentRows) {
-          const beneficiary = toUpperEl(cleanText(p.beneficiary_name))
-          if (!beneficiary) continue
-          const amount = Number(p.amount_without_vat ?? 0)
-          const amountWithVat = p.amount_with_vat != null ? Number(p.amount_with_vat) : null
-          const beneficiaryVat = cleanText(p.beneficiary_vat_number)
-          const signer = cleanText(p.signers) ?? '—'
-          const paymentRefNo = cleanText(p.payment_ref_no)
-          if (!paymentByProc.has(p.procurement_id)) paymentByProc.set(p.procurement_id, [])
-          paymentByProc.get(p.procurement_id)!.push({ beneficiary, amount, amountWithVat, beneficiaryVat, signer, paymentRefNo })
-        }
-
-        const cpvByProc = new Map<number, Array<{ code: string; label: string }>>()
-        for (const c of cpvRows) {
-          const cpv = cleanText(c.cpv_value)
-          const code = cleanText(c.cpv_key)
-          if (!cpv && !code) continue
-          if (!cpvByProc.has(c.procurement_id)) cpvByProc.set(c.procurement_id, [])
-          const items = cpvByProc.get(c.procurement_id)!
-          const item = { code: code ?? '—', label: cpv ?? '—' }
-          if (!items.find((x) => x.code === item.code && x.label === item.label)) items.push(item)
-        }
-
-        type BeneficiaryAgg = {
-          beneficiary: string
-          totalAmount: number
-          contractCount: number
-          orgTotals: Map<string, number>
-          cpvCounts: Map<string, number>
-          signerCounts: Map<string, number>
-          startDates: string[]
-          endDates: string[]
-          contractsByProc: Map<number, {
-            amount: number
-            amountWithVat: number | null
-            beneficiaryVat: string | null
-            signer: string
-            paymentRefNo: string | null
-          }>
-        }
-
-        const agg = new Map<string, BeneficiaryAgg>()
-
-        for (const pr of procurements) {
-          const entries = paymentByProc.get(pr.id) ?? []
-          if (!entries.length) continue
-          const orgKey = cleanText(pr.organization_key)
-          const org = orgKey ? (orgNameByKey.get(orgKey) ?? orgKey) : '—'
-          const cpvs = cpvByProc.get(pr.id) ?? []
-
-          for (const entry of entries) {
-            const key = entry.beneficiary
-            if (!agg.has(key)) {
-              agg.set(key, {
-                beneficiary: key,
-                totalAmount: 0,
-                contractCount: 0,
-                orgTotals: new Map<string, number>(),
-                cpvCounts: new Map<string, number>(),
-                signerCounts: new Map<string, number>(),
-                startDates: [],
-                endDates: [],
-                contractsByProc: new Map<number, {
-                  amount: number
-                  amountWithVat: number | null
-                  beneficiaryVat: string | null
-                  signer: string
-                  paymentRefNo: string | null
-                }>(),
-              })
-            }
-            const a = agg.get(key)!
-            a.totalAmount += entry.amount
-            a.contractCount += 1
-            a.orgTotals.set(org, (a.orgTotals.get(org) ?? 0) + entry.amount)
-            if (entry.signer && entry.signer !== '—') a.signerCounts.set(entry.signer, (a.signerCounts.get(entry.signer) ?? 0) + 1)
-            for (const cpv of cpvs) a.cpvCounts.set(cpv.label, (a.cpvCounts.get(cpv.label) ?? 0) + 1)
-            const start = cleanText(pr.start_date)
-            const end = cleanText(pr.end_date)
-            if (start) a.startDates.push(start)
-            if (end) a.endDates.push(end)
-            const existingContract = a.contractsByProc.get(pr.id)
-            if (!existingContract || entry.amount > existingContract.amount) {
-              a.contractsByProc.set(pr.id, {
-                amount: entry.amount,
-                amountWithVat: entry.amountWithVat,
-                beneficiaryVat: entry.beneficiaryVat,
-                signer: entry.signer,
-                paymentRefNo: entry.paymentRefNo,
-              })
-            }
-          }
-        }
-
-        const procurementById = new Map<number, (typeof procurements)[number]>()
-        for (const pr of procurements) procurementById.set(pr.id, pr)
-
-        const rows: BeneficiaryInsightRow[] = [...agg.values()].map((a) => {
-          const organization =
-            [...a.orgTotals.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
-          const cpv =
-            [...a.cpvCounts.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
-          const signer =
-            [...a.signerCounts.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? '—'
-          const startIso = [...a.startDates].sort()[0] ?? null
-          const endIso = [...a.endDates].sort().slice(-1)[0] ?? null
-          const durationDays = daysBetweenInclusive(
-            startIso,
-            endIso,
-          )
-          const start = toDate(startIso)
-          const end = toDate(endIso)
-          const now = new Date()
-          let progressPct: number | null = null
-          if (start && end && end.getTime() > start.getTime()) {
-            if (now <= start) progressPct = 0
-            else if (now >= end) progressPct = 100
-            else progressPct = ((now.getTime() - start.getTime()) / (end.getTime() - start.getTime())) * 100
-          }
-          const relevantContracts = [...a.contractsByProc.entries()]
-            .sort((x, y) => y[1].amount - x[1].amount)
-            .slice(0, 5)
-            .map<LatestContractCard | null>(([procId, entry]) => {
-              const pr = procurementById.get(procId)
-              if (!pr) return null
-              const cpvs = cpvByProc.get(pr.id) ?? []
-              const topCpv = cpvs[0] ?? null
+        const rows = ((data ?? []) as FeaturedRecordsRpcRow[]).map<BeneficiaryInsightRow>((row) => {
+          const beneficiaryVat = cleanText(row.beneficiary_vat_number)
+          const durationDays = toFiniteNumber(row.duration_days)
+          const relevantContracts = Array.isArray(row.relevant_contracts)
+            ? row.relevant_contracts.map<FeaturedRecordContract>((contract) => {
+              const cpvItems = Array.isArray(contract.cpv_items)
+                ? contract.cpv_items
+                  .map((item) => ({
+                    code: cleanText(item.code) ?? '—',
+                    label: cleanText(item.label) ?? '—',
+                  }))
+                  .filter((item) => item.code !== '—' || item.label !== '—')
+                : []
+              const topCpv = cpvItems[0] ?? null
+              const amountWithoutVat = toFiniteNumber(contract.amount_without_vat)
+              const amountWithVat = toFiniteNumber(contract.amount_with_vat)
+              const diavgeiaAda = cleanText(contract.diavgeia_ada)
               return {
-                id: String(pr.id),
-                who: organization,
-                what: cleanText(pr.title) ?? '—',
-                when: formatDateEl(cleanText(pr.submission_at)),
-                why: toSentenceCaseEl(topCpv?.label ?? firstPipePart(pr.short_descriptions) ?? '—'),
-                beneficiary: a.beneficiary,
-                contractType: cleanText(pr.procedure_type_value) ?? '—',
-                howMuch: formatEur(entry.amount),
-                withoutVatAmount: formatEur(entry.amount),
-                withVatAmount: formatEur(entry.amountWithVat ?? null),
-                referenceNumber: cleanText(pr.reference_number) ?? '—',
-                contractNumber: cleanText(pr.contract_number) ?? '—',
+                id: String(contract.id),
+                who: cleanText(contract.organization) ?? cleanText(row.organization) ?? '—',
+                what: cleanText(contract.title) ?? '—',
+                when: formatDateEl(cleanText(contract.submission_at)),
+                why: toSentenceCaseEl(topCpv?.label ?? cleanText(contract.short_description) ?? '—'),
+                beneficiary: toUpperEl(cleanText(contract.beneficiary_name) ?? beneficiaryVat),
+                contractType: cleanText(contract.procedure_type_value) ?? '—',
+                howMuch: formatEur(amountWithoutVat),
+                withoutVatAmount: formatEur(amountWithoutVat),
+                withVatAmount: formatEur(amountWithVat),
+                referenceNumber: cleanText(contract.reference_number) ?? '—',
+                contractNumber: cleanText(contract.contract_number) ?? '—',
                 cpv: topCpv?.label ?? '—',
                 cpvCode: topCpv?.code ?? '—',
-                cpvItems: cpvs,
-                signedAt: formatDateEl(cleanText(pr.contract_signed_date)),
-                startDate: formatDateEl(cleanText(pr.start_date)),
-                endDate: formatDateEl(cleanText(pr.end_date)),
-                organizationVat: cleanText(pr.organization_vat_number) ?? '—',
-                beneficiaryVat: entry.beneficiaryVat ?? '—',
-                signers: entry.signer ?? '—',
-                assignCriteria: cleanText(pr.assign_criteria) ?? '—',
-                contractKind: cleanText(pr.contract_type) ?? '—',
-                unitsOperator: cleanText(pr.units_operator) ?? '—',
-                fundingCofund: cleanText(pr.funding_details_cofund) ?? '—',
-                fundingSelf: cleanText(pr.funding_details_self_fund) ?? '—',
-                fundingEspa: cleanText(pr.funding_details_espa) ?? '—',
-                fundingRegular: cleanText(pr.funding_details_regular_budget) ?? '—',
-                auctionRefNo: cleanText(pr.auction_ref_no) ?? '—',
-                paymentRefNo: entry.paymentRefNo ?? '—',
-                shortDescription: firstPipePart(pr.short_descriptions) ?? '—',
-                rawBudget: formatEur(pr.budget != null ? Number(pr.budget) : null),
-                contractBudget: formatEur(pr.contract_budget != null ? Number(pr.contract_budget) : null),
-                documentUrl: cleanText(pr.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(pr.diavgeia_ada)}` : null,
+                cpvItems,
+                signedAt: formatDateEl(cleanText(contract.contract_signed_date)),
+                startDate: formatDateEl(cleanText(contract.start_date)),
+                endDate: formatDateEl(cleanText(contract.end_date)),
+                organizationVat: cleanText(contract.organization_vat_number) ?? '—',
+                beneficiaryVat: cleanText(contract.beneficiary_vat_number) ?? beneficiaryVat ?? '—',
+                signers: cleanText(contract.signers) ?? '—',
+                assignCriteria: cleanText(contract.assign_criteria) ?? '—',
+                contractKind: cleanText(contract.contract_type) ?? '—',
+                unitsOperator: cleanText(contract.units_operator) ?? '—',
+                fundingCofund: cleanText(contract.funding_details_cofund) ?? '—',
+                fundingSelf: cleanText(contract.funding_details_self_fund) ?? '—',
+                fundingEspa: cleanText(contract.funding_details_espa) ?? '—',
+                fundingRegular: cleanText(contract.funding_details_regular_budget) ?? '—',
+                auctionRefNo: cleanText(contract.auction_ref_no) ?? '—',
+                paymentRefNo: cleanText(contract.payment_ref_no) ?? '—',
+                shortDescription: cleanText(contract.short_description) ?? '—',
+                rawBudget: formatEur(toFiniteNumber(contract.budget)),
+                contractBudget: formatEur(toFiniteNumber(contract.contract_budget)),
+                documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
               }
             })
-            .filter((v): v is LatestContractCard => v !== null)
+            : []
+
           return {
-            beneficiary: a.beneficiary,
-            organization,
-            totalAmount: a.totalAmount,
-            contractCount: a.contractCount,
-            cpv,
-            startDate: startIso ? formatDateEl(startIso) : '—',
-            endDate: endIso ? formatDateEl(endIso) : '—',
-            duration: durationDays != null ? `${durationDays} ημέρες` : '—',
-            progressPct: progressPct != null ? Math.max(0, Math.min(100, progressPct)) : null,
-            signer,
+            beneficiary: toUpperEl(cleanText(row.beneficiary_name) ?? beneficiaryVat),
+            organization: cleanText(row.organization) ?? '—',
+            totalAmount: toFiniteNumber(row.total_amount) ?? 0,
+            contractCount: Math.round(toFiniteNumber(row.contract_count) ?? 0),
+            cpv: cleanText(row.cpv) ?? '—',
+            startDate: formatDateEl(cleanText(row.start_date)),
+            endDate: formatDateEl(cleanText(row.end_date)),
+            duration: durationDays != null ? `${Math.round(durationDays)} ημέρες` : '—',
+            progressPct: toFiniteNumber(row.progress_pct),
+            signer: cleanText(row.signer) ?? '—',
             relevantContracts,
           }
         })
 
-        const byTotal = [...rows].sort((a, b) => b.totalAmount - a.totalAmount).slice(0, 50)
-        if (!cancelled) setFeaturedBeneficiaries(byTotal)
+        if (!cancelled) setFeaturedBeneficiaries(rows)
       } finally {
         if (!cancelled) setFeaturedBeneficiariesLoading(false)
       }
