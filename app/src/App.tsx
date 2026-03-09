@@ -1361,6 +1361,19 @@ export default function App() {
               <div>
                 <span className="label">ΠΩΣ</span>
                 <strong>Με Claude, Codex και Python φυσικά.</strong>
+                <span className="about-stats__sub">
+                  <a href="https://github.com/troboukis/2026_fire_protection/blob/main/Methodology.md" target="_blank" rel="noreferrer">
+                    Μεθοδολογία
+                  </a>
+                </span>
+              </div>
+              <div>
+                <span className="label">Open Source</span>
+                <strong>
+                  <a href="https://github.com/troboukis/2026_fire_protection" target="_blank" rel="noreferrer">
+                    Το github repository
+                  </a>
+                </strong>
               </div>
               <div>
                 <span className="label">ΓΙΑΤΙ</span>
