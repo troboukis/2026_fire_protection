@@ -155,6 +155,24 @@ def ts_iso(val) -> str | None:
     return None
 
 
+def parse_any_datetime(val) -> datetime | None:
+    dt_iso = ts_iso(val)
+    if dt_iso is not None:
+        try:
+            return datetime.strptime(dt_iso, "%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            return None
+
+    d_iso = date_iso(val)
+    if d_iso is not None:
+        try:
+            return datetime.strptime(d_iso, "%Y-%m-%d")
+        except ValueError:
+            return None
+
+    return None
+
+
 def first_list_item(val) -> str | None:
     s = t(val)
     if s is None:
@@ -1264,40 +1282,109 @@ def main() -> None:
             conn.commit()
             log("diavgeia_procurement bridge committed")
 
-        # Bridge: diavgeia <-> beneficiary (from payment beneficiary AFM in CSV).
-        bene_rows = []
-        for _, r in bundle.diav.iterrows():
-            ada = t(r.get("ada"))
-            afm = first_list_item(r.get("payment_beneficiary_afm")) or t(r.get("payment_beneficiary_afm"))
-            name = first_list_item(r.get("payment_beneficiary_name")) or t(r.get("payment_beneficiary_name"))
-            if ada and afm:
-                bene_rows.append((ada, afm, name))
-        if "beneficiary" in selected_tables and bene_rows:
-            log(f"Upserting beneficiaries ({len(bene_rows)}) and diavgeia_beneficiary bridge...")
-            psycopg2.extras.execute_batch(
-                cur,
+        # Beneficiaries come from both KIMDIS-derived payment rows and Diavgeia payment beneficiaries.
+        if "beneficiary" in selected_tables:
+            beneficiary_candidates: dict[str, tuple[datetime, int, str | None]] = {}
+
+            def register_beneficiary_candidate(
+                afm: str | None,
+                name: str | None,
+                happened_at: datetime | None,
+                source_priority: int,
+            ) -> None:
+                afm_clean = t(afm)
+                if afm_clean is None:
+                    return
+                name_clean = t(name)
+                candidate_key = (
+                    happened_at if happened_at is not None else datetime.min,
+                    source_priority,
+                    name_clean,
+                )
+                existing = beneficiary_candidates.get(afm_clean)
+                if existing is None or candidate_key > existing:
+                    beneficiary_candidates[afm_clean] = candidate_key
+
+            diav_bene_rows = []
+            for _, r in bundle.diav.iterrows():
+                ada = t(r.get("ada"))
+                afm = first_list_item(r.get("payment_beneficiary_afm")) or t(r.get("payment_beneficiary_afm"))
+                name = first_list_item(r.get("payment_beneficiary_name")) or t(r.get("payment_beneficiary_name"))
+                happened_at = parse_any_datetime(r.get("publishTimestamp")) or parse_any_datetime(r.get("submissionTimestamp"))
+                if ada and afm:
+                    diav_bene_rows.append((ada, afm, name))
+                register_beneficiary_candidate(afm, name, happened_at, 1)
+
+            for _, r in bundle.raw.iterrows():
+                afm = t(r.get("firstMember_vatNumber"))
+                name = t(r.get("firstMember_name"))
+                happened_at = parse_any_datetime(r.get("contractSignedDate")) or parse_any_datetime(r.get("submissionDate"))
+                register_beneficiary_candidate(afm, name, happened_at, 2)
+
+            cur.execute(
                 """
-                INSERT INTO public.beneficiary (beneficiary_vat_number, beneficiary_name)
-                VALUES (%s, %s)
-                ON CONFLICT (beneficiary_vat_number) DO UPDATE
-                SET beneficiary_name = COALESCE(EXCLUDED.beneficiary_name, public.beneficiary.beneficiary_name)
-                """,
-                [(x[1], x[2]) for x in bene_rows],
-                page_size=500,
-            )
-            execute_values(
-                cur,
+                SELECT id, beneficiary_vat_number, beneficiary_name
+                FROM public.payment
+                WHERE NULLIF(TRIM(beneficiary_vat_number), '') IS NOT NULL
                 """
-                INSERT INTO public.diavgeia_beneficiary (diavgeia_id, beneficiary_vat_number)
-                SELECT d.id, v.beneficiary_vat_number
-                FROM (VALUES %s) AS v(ada, beneficiary_vat_number)
-                JOIN public.diavgeia d ON d.ada = v.ada
-                ON CONFLICT DO NOTHING
-                """,
-                [(x[0], x[1]) for x in bene_rows],
             )
+            payment_bene_rows = [
+                (int(payment_id), t(beneficiary_vat_number), t(beneficiary_name))
+                for payment_id, beneficiary_vat_number, beneficiary_name in cur.fetchall()
+                if t(beneficiary_vat_number)
+            ]
+
+            beneficiary_upserts = [
+                (afm, candidate[2])
+                for afm, candidate in beneficiary_candidates.items()
+            ]
+
+            if beneficiary_upserts:
+                log(
+                    f"Upserting beneficiaries ({len(beneficiary_upserts)}) "
+                    f"using most recent available name per AFM..."
+                )
+                psycopg2.extras.execute_batch(
+                    cur,
+                    """
+                    INSERT INTO public.beneficiary (beneficiary_vat_number, beneficiary_name)
+                    VALUES (%s, %s)
+                    ON CONFLICT (beneficiary_vat_number) DO UPDATE
+                    SET beneficiary_name = COALESCE(EXCLUDED.beneficiary_name, public.beneficiary.beneficiary_name)
+                    """,
+                    beneficiary_upserts,
+                    page_size=500,
+                )
+
+            if payment_bene_rows:
+                log(f"Upserting payment_beneficiary bridge rows ({len(payment_bene_rows)})...")
+                psycopg2.extras.execute_batch(
+                    cur,
+                    """
+                    INSERT INTO public.payment_beneficiary (payment_id, beneficiary_vat_number)
+                    VALUES (%s, %s)
+                    ON CONFLICT DO NOTHING
+                    """,
+                    [(payment_id, afm) for payment_id, afm, _ in payment_bene_rows if afm],
+                    page_size=1000,
+                )
+
+            if diav_bene_rows:
+                log(f"Upserting diavgeia_beneficiary bridge rows ({len(diav_bene_rows)})...")
+                execute_values(
+                    cur,
+                    """
+                    INSERT INTO public.diavgeia_beneficiary (diavgeia_id, beneficiary_vat_number)
+                    SELECT d.id, v.beneficiary_vat_number
+                    FROM (VALUES %s) AS v(ada, beneficiary_vat_number)
+                    JOIN public.diavgeia d ON d.ada = v.ada
+                    ON CONFLICT DO NOTHING
+                    """,
+                    [(ada, afm) for ada, afm, _ in diav_bene_rows if afm],
+                )
+
             conn.commit()
-            log("Beneficiary upsert/bridge committed")
+            log("Beneficiary upsert/bridges committed")
 
         log("Selected table stages completed")
 
