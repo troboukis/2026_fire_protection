@@ -1,4 +1,3 @@
-```md
 # Μεθοδολογία Συλλογής και Επεξεργασίας Δεδομένων
 
 ## Σκοπός και εύρος
@@ -182,9 +181,6 @@ Copernicus Emergency Management Service:
 - Centroid αντί για polygon σε μεγάλες πυρκαγιές
 
 Δεν εφαρμόζονται αυτόματες διορθώσεις στο raw dataset.
-```
-Συνεχίζω από εκεί που τελειώσαμε.
-Ίδιο ύφος, πιο ανθρώπινο, χωρίς nested code blocks, σε md.
 
 ## Πιθανά προβλήματα
 
@@ -302,7 +298,9 @@ Copernicus Emergency Management Service:
 Σε incremental ingestion μπορεί να υπάρχουν duplicate rows.  
 Η αποφυγή γίνεται στο SQL με:
 
+```sql
 ROW_NUMBER() OVER (PARTITION BY business_key ORDER BY id DESC)
+```
 
 Τα aggregates υπολογίζονται μόνο σε rows με `rn = 1`.
 
@@ -345,7 +343,7 @@ LEAST(τρέχουσα ημέρα, τελευταία ημέρα μήνα)
 
 ## Pipeline επεξεργασίας
 
-Ο pipeline ακολουθεί διαδοχικά layers:
+Το pipeline ακολουθεί διαδοχικά layers:
 
 1. Raw collection  
    `fetch_kimdis_procurements.py`  
@@ -368,4 +366,3 @@ LEAST(τρέχουσα ημέρα, τελευταία ημέρα μήνα)
    React + Supabase + RPC
 
 Τα ποσά στο frontend υπολογίζονται μετά από server-side deduplication, ώστε να αποφεύγεται double counting.
-```
