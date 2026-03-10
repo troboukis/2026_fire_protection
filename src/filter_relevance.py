@@ -208,6 +208,12 @@ def ensure_relevance_columns(df: pd.DataFrame) -> pd.DataFrame:
     for col, default in defaults.items():
         if col not in df.columns:
             df[col] = default
+
+    # CSV reloads can infer all-empty keyword columns as float64 because they contain only NaN.
+    # Force them back to object so per-row string assignments do not fail during enrichment.
+    for col in ("matched_keywords_subject", "matched_keywords_pdf"):
+        df[col] = df[col].astype("object")
+
     return df
 
 
