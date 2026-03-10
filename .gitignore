@@ -33,6 +33,7 @@ app/.env.production.local
 *.tmp
 *.swp
 fire-protection.vpp*
+data/raw_items_backup.json
 
 # Mapping review artifacts (local/manual workflow)
 data/mappings/archived/
