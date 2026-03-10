@@ -6,6 +6,7 @@ import LatestContractCardItem, { type LatestContractCardView } from './component
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import { downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
+import { buildLatestContractCardView, type AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
 const ContractModal = lazy(() => import('./components/ContractModal'))
@@ -438,6 +439,7 @@ export default function App() {
           .select(`
             id,
             organization_key,
+            municipality_key,
             title,
             submission_at,
             contract_signed_date,
@@ -468,6 +470,7 @@ export default function App() {
 
         const ids = ((data ?? []) as Array<{ id: number }>).map((r) => r.id)
         const orgKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { organization_key?: string | null }).organization_key)).filter(Boolean))) as string[]
+        const municipalityKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { municipality_key?: string | null }).municipality_key)).filter(Boolean))) as string[]
 
         const paymentByProcId = new Map<number, { beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>()
         for (const c of chunk(ids, 200)) {
@@ -495,15 +498,31 @@ export default function App() {
           }
         }
 
-        const orgNameByKey = new Map<string, string>()
+        const municipalityLabelByKey = new Map<string, string>()
+        for (const c of chunk(municipalityKeys, 200)) {
+          const { data: mData } = await supabase
+            .from('municipality_normalized_name')
+            .select('municipality_key, municipality_normalized_value')
+            .in('municipality_key', c)
+          for (const m of (mData ?? []) as Array<{ municipality_key: string; municipality_normalized_value: string | null }>) {
+            if (!municipalityLabelByKey.has(m.municipality_key)) {
+              municipalityLabelByKey.set(m.municipality_key, cleanText(m.municipality_normalized_value) ?? m.municipality_key)
+            }
+          }
+        }
+
+        const orgByKey = new Map<string, { name: string; scope: AuthorityScope }>()
         for (const c of chunk(orgKeys, 200)) {
           const { data: oData } = await supabase
             .from('organization')
-            .select('organization_key, organization_normalized_value, organization_value')
+            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
             .in('organization_key', c)
-          for (const o of (oData ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null }>) {
-            if (!orgNameByKey.has(o.organization_key)) {
-              orgNameByKey.set(o.organization_key, cleanText(o.organization_normalized_value) ?? cleanText(o.organization_value) ?? o.organization_key)
+          for (const o of (oData ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null; authority_scope: AuthorityScope | null }>) {
+            if (!orgByKey.has(o.organization_key)) {
+              orgByKey.set(o.organization_key, {
+                name: cleanText(o.organization_normalized_value) ?? cleanText(o.organization_value) ?? o.organization_key,
+                scope: o.authority_scope ?? 'other',
+              })
             }
           }
         }
@@ -512,6 +531,7 @@ export default function App() {
           const r = row as {
             id: number
             organization_key: string | null
+            municipality_key: string | null
             title: string | null
             submission_at: string | null
             contract_signed_date: string | null
@@ -545,16 +565,25 @@ export default function App() {
             '—'
           const diavgeiaAda = cleanText(r.diavgeia_ada)
           const orgKey = cleanText(r.organization_key)
-
-          return {
+          const municipalityKey = cleanText(r.municipality_key)
+          const latestCardView = buildLatestContractCardView({
             id: String(r.id),
-            who: (orgKey ? orgNameByKey.get(orgKey) : null) ?? '—',
+            organizationName: (orgKey ? orgByKey.get(orgKey)?.name : null) ?? null,
+            authorityScope: (orgKey ? orgByKey.get(orgKey)?.scope : null) ?? 'other',
+            municipalityLabel: municipalityKey ? municipalityLabelByKey.get(municipalityKey) ?? null : null,
             what: cleanText(r.title) ?? '—',
             when: formatDateEl(cleanText(r.submission_at)),
             why: toSentenceCaseEl(why),
             beneficiary: toUpperEl(cleanText(p?.beneficiary_name)),
             contractType: cleanText(r.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
+            signedAt: formatDateEl(cleanText(r.contract_signed_date)),
+            documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+          })
+
+          return {
+            ...latestCardView,
+            documentUrl: latestCardView.documentUrl ?? null,
             withoutVatAmount: formatEur(amountWithoutVat),
             withVatAmount: formatEur(p?.amount_with_vat ?? null),
             referenceNumber: cleanText(r.reference_number) ?? '—',
@@ -580,7 +609,6 @@ export default function App() {
             shortDescription: firstPipePart(r.short_descriptions) ?? '—',
             rawBudget: formatEur(r.budget != null ? Number(r.budget) : null),
             contractBudget: formatEur(r.contract_budget != null ? Number(r.contract_budget) : null),
-            documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
           }
         })
 

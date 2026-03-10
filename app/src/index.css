@@ -2547,7 +2547,15 @@ main {
 .maps-legend__scale-bar {
   height: 0.55rem;
   border: 1px solid rgba(126, 110, 92, 0.22);
-  background: linear-gradient(90deg, #fff5f0 0%, #fcbba1 35%, #fb6a4a 68%, #cb181d 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 245, 240) 0%,
+    rgb(252, 187, 161) 1%,
+    rgb(252, 148, 114) 8%,
+    rgb(251, 106, 74) 22%,
+    rgb(239, 59, 44) 45%,
+    rgb(203, 24, 29) 100%
+  );
 }
 
 .maps-legend__scale-label {
@@ -2621,7 +2629,7 @@ main {
   top: 1rem;
   width: 100%;
   max-width: 100%;
-  height: fit-content;
+  height: min(calc(clamp(420px, 70vh, 800px) + 7.8rem), calc(100vh - 2rem));
   max-height: calc(100vh - 2rem);
   padding: 1.15rem 1.15rem 1rem;
   border: 1px solid rgba(120, 101, 82, 0.26);
