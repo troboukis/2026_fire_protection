@@ -64,7 +64,6 @@ git add \
   data/2026_diavgeia.csv \
   data/2026_diavgeia_filtered.csv \
   data/fires/copernicus_latest.csv \
-  data/raw_items_backup.json \
   data/raw_procurements.csv \
   data/mappings/org_to_municipality.csv \
   data/mappings/org_to_municipality_coverage.csv \
