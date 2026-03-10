@@ -81,7 +81,6 @@ jobs:
             data/2026_diavgeia.csv \
             data/2026_diavgeia_filtered.csv \
             data/fires/copernicus_latest.csv \
-            data/raw_items_backup.json \
             data/raw_procurements.csv \
             state/locate_work_state.json \
             state/state.json \
