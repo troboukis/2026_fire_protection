@@ -387,27 +387,77 @@ def organization_key_from_normalized(normalized_value: str) -> str:
     return f"org_{hashlib.sha1(normalized_value.encode('utf-8')).hexdigest()[:20]}"
 
 
+def authority_scope_from_notes(notes: str | None) -> str | None:
+    note = t(notes) or ""
+    if not note.startswith("org_type="):
+        return None
+    org_type = note.split("=", 1)[1].strip().upper()
+    if org_type == "ΔΗΜΟΣ":
+        return "municipality"
+    if org_type == "ΠΕΡΙΦΕΡΕΙΑ":
+        return "region"
+    if org_type == "ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ":
+        return "decentralized"
+    return None
+
+
+def authority_scope_key_map(org_map: pd.DataFrame) -> dict[str, str]:
+    out: dict[str, str] = {}
+
+    def put_candidate(label: str | None, authority_scope: str) -> None:
+        value = t(label)
+        if not value:
+            return
+        org_key = organization_key_from_normalized(t_up(value) or value)
+        if org_key not in out:
+            out[org_key] = authority_scope
+
+    for _, r in org_map.iterrows():
+        authority_level = t(r.get("authority_level"))
+        if authority_level not in {"municipality", "region", "decentralized"}:
+            continue
+        org_type = t(r.get("org_type")) or ""
+        org_name_clean = t(r.get("org_name_clean")) or ""
+        put_candidate(org_name_clean, authority_level)
+        if org_type and org_name_clean:
+            put_candidate(f"{org_type} {org_name_clean}", authority_level)
+
+    return out
+
+
 def seed_organization_rows(b: CsvBundle) -> list[tuple]:
-    out: list[tuple] = []
-    seen_pairs: set[tuple[str, str]] = set()
+    best_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] = {}
+    scope_by_org_key = authority_scope_key_map(b.org_map)
     org_rows = b.expanded_map[b.expanded_map["source_entity_type"] == "organization"]
     for _, r in org_rows.iterrows():
         org_value = t(r.get("source_value"))
         if not org_value:
             continue
         normalized = t(r.get("normalized_value")) or t_up(org_value) or org_value
+        organization_key = organization_key_from_normalized(t_up(normalized) or normalized)
+        authority_scope = authority_scope_from_notes(t(r.get("notes"))) or scope_by_org_key.get(organization_key)
         dedup_key = (org_value, normalized)
-        if dedup_key in seen_pairs:
+        existing = best_rows.get(dedup_key)
+        if existing is None:
+            best_rows[dedup_key] = (
+                organization_key,
+                org_value,
+                normalized,
+                authority_scope,
+                t(r.get("source_system")),
+                t(r.get("source_key")),
+            )
             continue
-        seen_pairs.add(dedup_key)
-        out.append((
-            organization_key_from_normalized(t_up(normalized) or normalized),
-            org_value,
-            normalized,
-            t(r.get("source_system")),
-            t(r.get("source_key")),
-        ))
-    return out
+        if existing[3] is None and authority_scope is not None:
+            best_rows[dedup_key] = (
+                existing[0],
+                existing[1],
+                existing[2],
+                authority_scope,
+                existing[4],
+                existing[5],
+            )
+    return list(best_rows.values())
 
 
 def build_organization_lookup(org_seed_rows: list[tuple]) -> dict[str, str]:
@@ -859,10 +909,11 @@ def main() -> None:
                 cur,
                 """
                 INSERT INTO public.organization (
-                  organization_key, organization_value, organization_normalized_value, source_system, source_key
+                  organization_key, organization_value, organization_normalized_value, authority_scope, source_system, source_key
                 ) VALUES %s
                 ON CONFLICT (organization_key, organization_value) DO UPDATE SET
                   organization_normalized_value = EXCLUDED.organization_normalized_value,
+                  authority_scope = COALESCE(EXCLUDED.authority_scope, public.organization.authority_scope),
                   source_system = EXCLUDED.source_system,
                   source_key = EXCLUDED.source_key
                 """,

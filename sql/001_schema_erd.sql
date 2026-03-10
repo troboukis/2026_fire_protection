@@ -93,6 +93,7 @@ CREATE TABLE IF NOT EXISTS public.organization (
   organization_key            TEXT NOT NULL,
   organization_value          TEXT NOT NULL,
   organization_normalized_value TEXT NOT NULL,
+  authority_scope            TEXT,
   source_system               TEXT,
   source_key                  TEXT,
   organization_afm            TEXT,

@@ -1,5 +1,8 @@
 BEGIN;
 
+ALTER TABLE public.organization
+  ADD COLUMN IF NOT EXISTS authority_scope TEXT;
+
 DROP VIEW IF EXISTS public.works_enriched;
 
 CREATE VIEW public.works_enriched AS
