@@ -1034,7 +1034,7 @@ export default function MapsPage() {
         }
 
         const mapped: MunicipalityLatestContract[] = rows
-          .filter((r) => (orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'other') !== 'municipality')
+          .filter((r) => (orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'other') === 'region')
           .map((r) => buildLatestContractCardView({
             id: String(r.id),
             organizationName: orgByKey.get(String(r.organization_key ?? '').trim())?.name ?? (String(r.organization_key ?? '—').trim() || '—'),
@@ -1160,7 +1160,7 @@ export default function MapsPage() {
   return (
     <div className="maps-page">
       <DevViewToggle />
-      <ComponentTag name="MapsPage" />
+      <ComponentTag name="MapsPage" className="component-tag--overlay" />
       <div className="maps-page__texture" aria-hidden="true" />
 
       <div className="maps-main">

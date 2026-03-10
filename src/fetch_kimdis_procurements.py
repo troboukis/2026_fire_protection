@@ -118,9 +118,12 @@ SECONDARY_CPVS: dict[str, str] = {
     "44482200-4": "Κρουνοί υδροληψίας για πυρόσβεση",
     "45233120-6": "Έργα οδοποιίας",
     "50800000-3": "Διάφορες υπηρεσίες επισκευής και συντήρησης",
-    "77230000-1": "Υπηρεσίες σχετιζόμενες με τη δασοκομία"
+    "77230000-1": "Υπηρεσίες σχετιζόμενες με τη δασοκομία",
+    "32441100-7": "Τηλεμετρικό σύστημα παρακολούθησης",
+    "32580000-2": "Εξοπλισμός δικτύου δεδομένων",
+    "48420000-8": "Πακέτα λογισμικού διαχείρισης εγκαταστάσεων και πλατφόρμες πακέτων λογισμικού"
 }
-SECONDARY_TITLE_KEYWORDS = ["πυροπροστασ", "Πολιτικής προστασίας", "αντιπυρικ", "δασικών πυρκαγιών"]
+SECONDARY_TITLE_KEYWORDS = ["πυροπροστασ", "Πολιτικής προστασίας", "αντιπυρικ", "δασικών πυρκαγιών", "δασικών δρόμων"]
 
 # Single pass: fetch with both primary + secondary CPVs.
 FETCH_CPVS: dict[str, str] = {
@@ -441,6 +444,11 @@ class ProcurementCollector:
         return {
             "title": item.get("title"),
             "referenceNumber": item.get("referenceNumber"),
+            "prevReferenceNo": item.get("prevReferenceNo"),
+            "noticeReferenceNumber": item.get("noticeReferenceNumber"),
+            "nextRefNo": item.get("nextRefNo"),
+            "nextExtended": item.get("nextExtended"),
+            "nextModified": item.get("nextModified"),
             "submissionDate": item.get("submissionDate"),
             "contractSignedDate": item.get("contractSignedDate"),
             "startDate": item.get("startDate"),
