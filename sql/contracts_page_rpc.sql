@@ -96,13 +96,26 @@ filtered AS (
     AND (p_org IS NULL OR p_org = '' OR COALESCE(d.organization_value, '') ILIKE '%' || p_org || '%')
     AND (
       p_q IS NULL OR p_q = '' OR
-      CONCAT_WS(
-        ' ',
-        COALESCE(d.title, ''),
-        COALESCE(d.organization_value, ''),
-        COALESCE(d.beneficiary_name, ''),
-        COALESCE(d.cpv_value, '')
-      ) ILIKE '%' || p_q || '%'
+      upper(
+        translate(
+          CONCAT_WS(
+            ' ',
+            COALESCE(d.title, ''),
+            COALESCE(d.organization_value, ''),
+            COALESCE(d.beneficiary_name, ''),
+            COALESCE(d.cpv_value, ''),
+            COALESCE(d.reference_number, '')
+          ),
+          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+        )
+      ) LIKE '%' || upper(
+        translate(
+          p_q,
+          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+        )
+      ) || '%'
     )
 ),
 counted AS (

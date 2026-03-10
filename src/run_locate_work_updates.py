@@ -22,9 +22,7 @@ except ModuleNotFoundError:
 DEFAULT_STATE_PATH = ROOT / "state" / "locate_work_state.json"
 DEFAULT_LOG_PATH = ROOT / "logs" / "locate_work_runs.csv"
 
-TARGET_PATTERNS = (
-    "ΔΗΜΟΣ %",
-    "ΠΕΡΙΦΕΡΕΙΑ %",
+ADMIE_PATTERNS = (
     "%ΑΔΜΗΕ%",
     "%ADMIE%",
 )
@@ -109,14 +107,17 @@ def fetch_candidate_procurements(db_url: str, already_processed: set[str], limit
             )
           )
           AND (
-            UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
-            OR UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
+            p.municipality_key IS NOT NULL
+            OR (
+              p.region_key IS NOT NULL
+              AND COALESCE(org.authority_scope, 'other') IN ('region', 'decentralized')
+            )
             OR UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
             OR UPPER(COALESCE(org.organization_normalized_value, org.organization_value, '')) LIKE %s
           )
         ORDER BY p.reference_number, p.created_at DESC, p.id DESC
         """,
-        TARGET_PATTERNS,
+        ADMIE_PATTERNS,
     )
     rows = [
         {

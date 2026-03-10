@@ -10,8 +10,13 @@ import psycopg2
 import requests
 from natural_pdf import PDF
 from openai import OpenAI
+from dotenv import load_dotenv
+
 
 ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(ROOT / ".env")
+load_dotenv(ROOT.parent / ".env")
+
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 

@@ -498,6 +498,11 @@ def procurement_rows(
         out.append((
             t(r.get("title")),
             t(r.get("referenceNumber")),
+            t(r.get("prevReferenceNo")),
+            t(r.get("noticeReferenceNumber")),
+            t(r.get("nextRefNo")),
+            b(r.get("nextExtended")),
+            b(r.get("nextModified")),
             ts_iso(r.get("submissionDate")),
             date_iso(r.get("contractSignedDate")),
             date_iso(r.get("startDate")),
@@ -738,11 +743,11 @@ def procurement_uid_from_proc_row(p: tuple) -> str:
     # tuple indexes from procurement_rows()
     return procurement_source_uid(
         reference_number=p[1],
-        diavgeia_ada=p[15],
-        contract_number=p[12],
+        diavgeia_ada=p[20],
+        contract_number=p[17],
         title=p[0],
-        submission_at=p[2],
-        organization_key=p[44],
+        submission_at=p[7],
+        organization_key=p[49],
     )
 
 
@@ -933,7 +938,9 @@ def main() -> None:
         # Insert procurement rows one by one to capture procurement.id and insert CPV rows per procurement.
         procurement_insert_sql = """
             INSERT INTO public.procurement (
-              title, reference_number, submission_at, contract_signed_date, start_date, no_end_date,
+              title, reference_number, prev_reference_no, notice_reference_number,
+              next_ref_no, next_extended, next_modified,
+              submission_at, contract_signed_date, start_date, no_end_date,
               end_date, cancelled, cancellation_date, cancellation_type, cancellation_reason,
               decision_related_ada, contract_number, organization_vat_number, greek_organization_vat_number,
               diavgeia_ada, budget, contract_budget, bids_submitted, max_bids_submitted, number_of_sections,
@@ -946,7 +953,8 @@ def main() -> None:
               auction_ref_no, ingested_at, region_key, organization_key, municipality_key
             ) VALUES (
               %s, %s, %s, %s, %s, %s,
-              %s, %s, %s, %s, %s,
+              %s, %s, %s, %s, %s, %s,
+              %s, %s, %s, %s,
               %s, %s, %s, %s,
               %s, %s, %s, %s, %s, %s,
               %s, %s, %s, %s,
@@ -959,6 +967,11 @@ def main() -> None:
             )
             ON CONFLICT (reference_number) DO UPDATE SET
               title = EXCLUDED.title,
+              prev_reference_no = EXCLUDED.prev_reference_no,
+              notice_reference_number = EXCLUDED.notice_reference_number,
+              next_ref_no = EXCLUDED.next_ref_no,
+              next_extended = EXCLUDED.next_extended,
+              next_modified = EXCLUDED.next_modified,
               submission_at = EXCLUDED.submission_at,
               contract_signed_date = EXCLUDED.contract_signed_date,
               start_date = EXCLUDED.start_date,
@@ -1047,7 +1060,7 @@ def main() -> None:
                                 municipality_key = %s
                             WHERE id = %s
                             """,
-                            (p[43], p[44], p[45], procurement_id),
+                            (p[48], p[49], p[50], procurement_id),
                         )
                         updated_existing_proc += cur.rowcount
                         reprocessed_existing_proc += 1
