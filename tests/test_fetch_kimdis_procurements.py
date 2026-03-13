@@ -3,6 +3,7 @@ from __future__ import annotations
 import pandas as pd
 
 from src.fetch_kimdis_procurements import (
+    ProcurementCollector,
     business_key_from_api_item,
     dedupe_df_by_business_key,
     normalize_string,
@@ -50,3 +51,21 @@ def test_dedupe_df_keeps_latest_row_per_business_key():
 
     assert len(out) == 1
     assert out.iloc[0]["title"] == "newer"
+
+
+def test_is_excluded_drops_school_contracts_by_title_keyword():
+    collector = ProcurementCollector(
+        cpvs={},
+        start_date=pd.Timestamp("2026-01-01").date(),
+        end_date=pd.Timestamp("2026-01-02").date(),
+        max_window_days=1,
+    )
+
+    item = {
+        "title": "Συντήρηση σχολικών κτιρίων και αύλειων χώρων",
+        "organization": {"value": "ΔΗΜΟΣ Χ"},
+        "objectDetailsList": [],
+        "cancelled": False,
+    }
+
+    assert collector.is_excluded(item) is True

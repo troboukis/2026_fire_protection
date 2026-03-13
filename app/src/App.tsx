@@ -566,11 +566,16 @@ export default function App() {
           const diavgeiaAda = cleanText(r.diavgeia_ada)
           const orgKey = cleanText(r.organization_key)
           const municipalityKey = cleanText(r.municipality_key)
+          const municipalityLabel = municipalityKey ? municipalityLabelByKey.get(municipalityKey) ?? null : null
+          const authorityScope =
+            (orgKey ? orgByKey.get(orgKey)?.scope : null)
+            ?? (municipalityKey ? 'municipality' : null)
+            ?? 'other'
           const latestCardView = buildLatestContractCardView({
             id: String(r.id),
-            organizationName: (orgKey ? orgByKey.get(orgKey)?.name : null) ?? null,
-            authorityScope: (orgKey ? orgByKey.get(orgKey)?.scope : null) ?? 'other',
-            municipalityLabel: municipalityKey ? municipalityLabelByKey.get(municipalityKey) ?? null : null,
+            organizationName: (orgKey ? orgByKey.get(orgKey)?.name : null) ?? municipalityLabel,
+            authorityScope,
+            municipalityLabel,
             what: cleanText(r.title) ?? '—',
             when: formatDateEl(cleanText(r.submission_at)),
             why: toSentenceCaseEl(why),

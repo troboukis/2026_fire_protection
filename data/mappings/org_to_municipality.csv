@@ -340,3 +340,5 @@ org_type,org_name_clean,doc_count,authority_level,municipality_id,region_id,cove
 ΥΠΟΥΡΓΕΙΟ,ΠΡΟΣΤΑΣΙΑΣ ΤΟΥ ΠΟΛΙΤΗ,16,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΤΟΥΡΙΣΜΟΥ,8,national,,,,0,exact,
 ΥΠΟΥΡΓΕΙΟ,ΥΠΟΔΟΜΩΝ ΚΑΙ ΜΕΤΑΦΟΡΩΝ,11,national,,,,0,exact,
+ΝΠΙΔ,ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.,1,region,,ΙΟΝΙΩΝ ΝΗΣΩΝ,ΙΟΝΙΩΝ ΝΗΣΩΝ,1,manual,independent regional coverage organization
+ΝΠΔΔ,ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ,2,municipality,9038,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,kimdis municipality authority label

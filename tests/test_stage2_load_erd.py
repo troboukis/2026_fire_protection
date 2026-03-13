@@ -2,12 +2,20 @@ from __future__ import annotations
 
 import pandas as pd
 
-from ingest.stage2_load_erd import organization_lookup_candidates, procurement_rows
+from ingest.stage2_load_erd import organization_lookup_candidates, procurement_rows, region_lookup_candidates
 
 
 def test_organization_lookup_candidates_normalize_municipal_labels():
     assert organization_lookup_candidates("ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ") == ["ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ", "ΧΑΛΚΗΔΟΝΟΣ"]
     assert organization_lookup_candidates("ΔΗΜΟΥ ΧΑΛΚΗΔΟΝΟΣ") == ["ΔΗΜΟΥ ΧΑΛΚΗΔΟΝΟΣ", "ΧΑΛΚΗΔΟΝΟΣ"]
+
+
+def test_organization_lookup_candidates_extract_region_labels():
+    candidates = region_lookup_candidates(
+        "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+    )
+    assert "ΙΟΝΙΩΝ ΝΗΣΩΝ" in candidates
+    assert "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ" in candidates
 
 
 def test_procurement_rows_falls_back_to_normalized_municipality_name():
@@ -32,3 +40,27 @@ def test_procurement_rows_falls_back_to_normalized_municipality_name():
 
     assert rows[0][49] is None
     assert rows[0][50] == "9038"
+
+
+def test_procurement_rows_falls_back_to_region_lookup_from_org_label():
+    raw = pd.DataFrame(
+        [
+            {
+                "title": "Ευπρεπισμός Οδικού Δικτύου ΠΕ Κέρκυρας",
+                "referenceNumber": "26SYMV018611768",
+                "organization_value": "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+                "typeOfContractingAuthority": "ΝΠΙΔ",
+            }
+        ]
+    )
+
+    rows = procurement_rows(
+        raw=raw,
+        org_map={},
+        organization_lookup={},
+        region_lookup={"ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ", "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ"},
+        municipality_lookup={},
+    )
+
+    assert rows[0][48] == "ΙΟΝΙΩΝ ΝΗΣΩΝ"
+    assert rows[0][49] is None

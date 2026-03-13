@@ -84,7 +84,8 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "αναγομ",
     "Αναγομ",
     "αναγόμ",
-    "αντλητικ"
+    "αντλητικ",
+    "λυκει"
 ]
 
 # Broad CPVs that overlap with non-fire-protection domains.
@@ -380,6 +381,7 @@ class ProcurementCollector:
 
     def is_excluded(self, item: dict[str, Any]) -> bool:
         org_value = normalize_string((item.get("organization") or {}).get("value", ""))
+        title = normalize_string(item.get("title", "") or "")
         short_descriptions = normalize_string(
             " | ".join((obj or {}).get("shortDescription", "") for obj in (item.get("objectDetailsList") or []))
         )
@@ -388,6 +390,7 @@ class ProcurementCollector:
         if (
             bool(item.get("cancelled"))
             or any(k in org_value for k in normalized_keywords)
+            or any(k in title for k in normalized_keywords)
             or any(k in short_descriptions for k in normalized_keywords)
         ):
             return True

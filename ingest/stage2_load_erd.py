@@ -495,6 +495,33 @@ def organization_lookup_candidates(val: str | None) -> list[str]:
     return candidates
 
 
+def region_lookup_candidates(val: str | None) -> list[str]:
+    candidates = organization_lookup_candidates(val)
+    raw = t(val)
+    if raw is None:
+        return candidates
+
+    def add(candidate: str | None) -> None:
+        normalized = t_up(candidate)
+        if normalized and normalized not in candidates:
+            candidates.append(normalized)
+
+    # Extract region labels from organization names such as
+    # "ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ... ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ ..."
+    # but use them only for region attribution, not organization renaming.
+    raw_upper = t_up(raw) or ""
+    raw_upper_no_parens = re.sub(r"\([^)]*\)", " ", raw_upper)
+    raw_upper_no_parens = re.sub(r"\s+", " ", raw_upper_no_parens).strip()
+    region_match = re.search(r"\bΠΕΡΙΦΕΡΕΙΑΣ\s+([A-ZΑ-Ω0-9 .\-]+)", raw_upper_no_parens)
+    if region_match:
+        region_label = re.sub(r"\s+", " ", region_match.group(1)).strip(" .-")
+        region_label = re.sub(r"\b(Α\.?\s*Ε\.?|Μ\.?\s*Α\.?\s*Ε\.?|Ι\.?\s*Κ\.?\s*Ε\.?)\b\s*$", "", region_label).strip(" .-")
+        add(region_label)
+        add(f"ΠΕΡΙΦΕΡΕΙΑ {region_label}")
+
+    return candidates
+
+
 def procurement_rows(
     raw: pd.DataFrame,
     org_map: dict[tuple[str, str], tuple[str | None, str | None]],
@@ -506,6 +533,7 @@ def procurement_rows(
     for _, r in raw.iterrows():
         org_value_raw = t(r.get("organization_value"))
         org_candidates = organization_lookup_candidates(org_value_raw)
+        region_candidates = region_lookup_candidates(org_value_raw)
         org_name = org_candidates[0] if org_candidates else ""
         org_type = t_up(r.get("typeOfContractingAuthority")) or ""
         municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
@@ -536,6 +564,11 @@ def procurement_rows(
             for candidate in org_candidates:
                 municipality_key = municipality_lookup.get(candidate)
                 if municipality_key is not None:
+                    break
+        if region_key is None:
+            for candidate in region_candidates:
+                region_key = region_lookup.get(candidate)
+                if region_key is not None:
                     break
         org_key_resolved = None
         for candidate in org_candidates:
