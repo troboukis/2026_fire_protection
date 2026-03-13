@@ -472,6 +472,29 @@ def build_organization_lookup(org_seed_rows: list[tuple]) -> dict[str, str]:
     return lookup
 
 
+def organization_lookup_candidates(val: str | None) -> list[str]:
+    raw = t(val)
+    if raw is None:
+        return []
+
+    candidates: list[str] = []
+
+    def add(candidate: str | None) -> None:
+        normalized = t_up(candidate)
+        if normalized and normalized not in candidates:
+            candidates.append(normalized)
+
+    add(raw)
+    add(normalizeMunicipality(raw))
+
+    # Handle common municipal prefixes/cases that normalizeMunicipality does not strip.
+    prefix_stripped = re.sub(r"^\s*(ΔΗΜΟΥ|ΔΗΜΟΣ|Δ\.)\s+", "", t_up(raw) or "")
+    add(prefix_stripped)
+    add(normalizeMunicipality(prefix_stripped))
+
+    return candidates
+
+
 def procurement_rows(
     raw: pd.DataFrame,
     org_map: dict[tuple[str, str], tuple[str | None, str | None]],
@@ -481,7 +504,9 @@ def procurement_rows(
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
-        org_name = t_up(r.get("organization_value")) or ""
+        org_value_raw = t(r.get("organization_value"))
+        org_candidates = organization_lookup_candidates(org_value_raw)
+        org_name = org_candidates[0] if org_candidates else ""
         org_type = t_up(r.get("typeOfContractingAuthority")) or ""
         municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
         if municipality_key_raw is None and region_key_raw is None and org_name:
@@ -490,11 +515,33 @@ def procurement_rows(
             municipality_key_raw, region_key_raw = org_map.get((norm_key(org_type) or "", norm_key(org_name) or ""), (None, None))
         if municipality_key_raw is None and region_key_raw is None and org_name:
             municipality_key_raw, region_key_raw = org_map.get(("", norm_key(org_name) or ""), (None, None))
+        if municipality_key_raw is None and region_key_raw is None:
+            for candidate in org_candidates[1:]:
+                municipality_key_raw, region_key_raw = org_map.get((org_type, candidate), (None, None))
+                if municipality_key_raw is None and region_key_raw is None:
+                    municipality_key_raw, region_key_raw = org_map.get(("", candidate), (None, None))
+                if municipality_key_raw is None and region_key_raw is None:
+                    municipality_key_raw, region_key_raw = org_map.get(
+                        (norm_key(org_type) or "", norm_key(candidate) or ""),
+                        (None, None),
+                    )
+                if municipality_key_raw is None and region_key_raw is None:
+                    municipality_key_raw, region_key_raw = org_map.get(("", norm_key(candidate) or ""), (None, None))
+                if municipality_key_raw is not None or region_key_raw is not None:
+                    break
 
         municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
         region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
-        org_value_raw = t(r.get("organization_value"))
-        org_key_resolved = organization_lookup.get(t_up(org_value_raw) or "")
+        if municipality_key is None:
+            for candidate in org_candidates:
+                municipality_key = municipality_lookup.get(candidate)
+                if municipality_key is not None:
+                    break
+        org_key_resolved = None
+        for candidate in org_candidates:
+            org_key_resolved = organization_lookup.get(candidate)
+            if org_key_resolved is not None:
+                break
         out.append((
             t(r.get("title")),
             t(r.get("referenceNumber")),
