@@ -295,7 +295,7 @@ export default function MapsPage() {
           const issueYear = extractYear(issueDate)
           if (issueYear !== mapYear) continue
           const orgKey = String(row.organization_key ?? '').trim()
-          const authorityScope = orgScopeByKey.get(orgKey) ?? 'other'
+          const authorityScope = orgKey ? (orgScopeByKey.get(orgKey) ?? 'other') : 'municipality'
           if (authorityScope === 'municipality') {
             procurementRowsForYear += 1
             countByMunicipality.set(municipalityId, (countByMunicipality.get(municipalityId) ?? 0) + 1)
@@ -908,11 +908,18 @@ export default function MapsPage() {
         }
 
         const mapped: MunicipalityLatestContract[] = rows
-          .filter((r) => (orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'other') === 'municipality')
+          .filter((r) => {
+            const orgKey = String(r.organization_key ?? '').trim()
+            if (!orgKey) return true
+            return (orgByKey.get(orgKey)?.scope ?? 'other') === 'municipality'
+          })
           .map((r) => buildLatestContractCardView({
             id: String(r.id),
-            organizationName: orgByKey.get(String(r.organization_key ?? '').trim())?.name ?? (String(r.organization_key ?? '—').trim() || '—'),
-            authorityScope: orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'other',
+            organizationName:
+              orgByKey.get(String(r.organization_key ?? '').trim())?.name
+              ?? municipalityLabelById.get(selectedMunicipalityId)
+              ?? (String(r.organization_key ?? '—').trim() || '—'),
+            authorityScope: orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'municipality',
             municipalityLabel: municipalityLabelById.get(selectedMunicipalityId) ?? null,
             when: fmtDate(r.contract_signed_date),
             what: String(r.title ?? '').trim() || '—',
