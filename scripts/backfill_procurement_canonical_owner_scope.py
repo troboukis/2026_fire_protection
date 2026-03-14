@@ -12,8 +12,10 @@ if str(ROOT) not in sys.path:
 
 from ingest.stage2_load_erd import (
     build_maps,
+    build_municipality_alias_lookup,
     build_municipality_lookup,
     build_municipality_region_lookup,
+    build_org_municipality_coverage_lookup,
     build_organization_lookup,
     build_region_lookup,
     procurement_rows,
@@ -28,10 +30,13 @@ from src.map_copernicus_to_municipalities import resolve_database_url
 def build_scope_rows() -> list[tuple[str, str | None]]:
     bundle = read_csvs()
     org_map = build_maps(bundle.org_map, bundle.expanded_map)
+    municipality_seed = seed_municipality_rows(bundle)
     organization_lookup = build_organization_lookup(seed_organization_rows(bundle))
     region_lookup = build_region_lookup(seed_region_rows(bundle))
-    municipality_lookup = build_municipality_lookup(seed_municipality_rows(bundle))
-    municipality_region_lookup = build_municipality_region_lookup(seed_municipality_rows(bundle))
+    municipality_lookup = build_municipality_lookup(municipality_seed)
+    municipality_region_lookup = build_municipality_region_lookup(municipality_seed)
+    municipality_alias_lookup = build_municipality_alias_lookup(municipality_seed)
+    org_municipality_coverage_lookup = build_org_municipality_coverage_lookup(bundle.expanded_map)
     procurement_data = procurement_rows(
         raw=bundle.raw,
         org_map=org_map,
@@ -39,6 +44,8 @@ def build_scope_rows() -> list[tuple[str, str | None]]:
         region_lookup=region_lookup,
         municipality_lookup=municipality_lookup,
         municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
     )
     return [
         (str(reference_number).strip(), canonical_owner_scope)

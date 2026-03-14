@@ -12,8 +12,10 @@ if str(ROOT) not in sys.path:
 
 from ingest.stage2_load_erd import (
     build_maps,
+    build_municipality_alias_lookup,
     build_municipality_lookup,
     build_municipality_region_lookup,
+    build_org_municipality_coverage_lookup,
     build_organization_lookup,
     build_region_lookup,
     procurement_rows,
@@ -36,6 +38,8 @@ def build_rows() -> list[tuple[str | None, str | None, str | None, str | None, s
         region_lookup=build_region_lookup(seed_region_rows(bundle)),
         municipality_lookup=build_municipality_lookup(municipality_seed),
         municipality_region_lookup=build_municipality_region_lookup(municipality_seed),
+        municipality_alias_lookup=build_municipality_alias_lookup(municipality_seed),
+        org_municipality_coverage_lookup=build_org_municipality_coverage_lookup(bundle.expanded_map),
     )
     rows: list[tuple[str | None, str | None, str | None, str | None, str]] = []
     for row in procurement_data:
