@@ -51,6 +51,8 @@ type RegionContractRpcRow = {
   diavgeia_ada: string | null
   reference_number: string | null
 }
+
+type MunicipalityContractRpcRow = RegionContractRpcRow
 type FirePoint = {
   lat: number
   lon: number
@@ -190,6 +192,7 @@ export default function MapsPage() {
   const [regionLatestContracts, setRegionLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [regionLatestLoading, setRegionLatestLoading] = useState(false)
   const [regionContractCount, setRegionContractCount] = useState(0)
+  const [municipalityContractCount, setMunicipalityContractCount] = useState(0)
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
     await downloadContractDocument(contract)
@@ -881,84 +884,27 @@ export default function MapsPage() {
     const loadMunicipalityContracts = async () => {
       setMunicipalityLatestLoading(true)
       try {
-        const { data, error } = await supabase
-          .from('procurement')
-          .select('id, contract_signed_date, diavgeia_ada, title, procedure_type_value, contract_budget, budget, organization_key')
-          .or(`municipality_key.eq.${selectedMunicipalityId},municipality_key.eq.${selectedMunicipalityId}.0`)
-          .gte('contract_signed_date', `${mapYear}-01-01`)
-          .lte('contract_signed_date', `${mapYear}-12-31`)
-          .order('contract_signed_date', { ascending: false, nullsFirst: false })
-          .limit(200)
-
+        const { data, error } = await supabase.rpc('get_municipality_contracts', {
+          p_municipality_key: selectedMunicipalityId,
+          p_year: mapYear,
+          p_limit: null,
+          p_offset: 0,
+        })
         if (error) throw error
-        const rows = (data ?? []) as Array<{
-          id: number
-          contract_signed_date: string | null
-          diavgeia_ada: string | null
-          title: string | null
-          procedure_type_value: string | null
-          contract_budget: number | string | null
-          budget: number | string | null
-          organization_key: string | null
-        }>
-
-        const paymentByProcId = new Map<number, { beneficiary: string | null; amountWithoutVat: number | null }>()
-        const procurementIds = rows.map((r) => r.id)
-        if (procurementIds.length > 0) {
-          const { data: paymentRows } = await supabase
-            .from('payment')
-            .select('procurement_id, beneficiary_name, amount_without_vat')
-            .in('procurement_id', procurementIds)
-          for (const row of (paymentRows ?? []) as Array<{ procurement_id: number; beneficiary_name: string | null; amount_without_vat: number | null }>) {
-            if (!paymentByProcId.has(row.procurement_id)) {
-              paymentByProcId.set(row.procurement_id, {
-                beneficiary: String(row.beneficiary_name ?? '').trim() || null,
-                amountWithoutVat: row.amount_without_vat != null ? Number(row.amount_without_vat) : null,
-              })
-            }
-          }
-        }
-
-        const orgKeys = Array.from(new Set(rows.map((r) => String(r.organization_key ?? '').trim()).filter(Boolean)))
-        const orgByKey = new Map<string, { name: string; scope: AuthorityScope }>()
-        if (orgKeys.length > 0) {
-          const { data: orgRows } = await supabase
-            .from('organization')
-            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
-            .in('organization_key', orgKeys)
-          for (const row of (orgRows ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null; authority_scope: AuthorityScope | null }>) {
-            orgByKey.set(
-              row.organization_key,
-              {
-                name: String(row.organization_normalized_value ?? row.organization_value ?? row.organization_key).trim(),
-                scope: row.authority_scope ?? 'other',
-              },
-            )
-          }
-        }
-
-        const mapped: MunicipalityLatestContract[] = rows
-          .filter((r) => {
-            const orgKey = String(r.organization_key ?? '').trim()
-            if (!orgKey) return true
-            return (orgByKey.get(orgKey)?.scope ?? 'other') === 'municipality'
-          })
-          .map((r) => buildLatestContractCardView({
-            id: String(r.id),
-            organizationName:
-              orgByKey.get(String(r.organization_key ?? '').trim())?.name
-              ?? municipalityLabelById.get(selectedMunicipalityId)
-              ?? (String(r.organization_key ?? '—').trim() || '—'),
-            authorityScope: orgByKey.get(String(r.organization_key ?? '').trim())?.scope ?? 'municipality',
+        const mapped: MunicipalityLatestContract[] = ((data ?? []) as MunicipalityContractRpcRow[])
+          .map((row) => buildLatestContractCardView({
+            id: String(row.procurement_id),
+            organizationName: String(row.organization_value ?? row.organization_key ?? '—').trim() || '—',
+            authorityScope: (row.authority_scope ?? 'other') as AuthorityScope,
             municipalityLabel: municipalityLabelById.get(selectedMunicipalityId) ?? null,
-            when: fmtDate(r.contract_signed_date),
-            what: String(r.title ?? '').trim() || '—',
-            why: `Διαδικασία: ${String(r.procedure_type_value ?? '—').trim() || '—'}`,
-            howMuch: fmtEur(paymentByProcId.get(r.id)?.amountWithoutVat ?? null),
-            beneficiary: paymentByProcId.get(r.id)?.beneficiary ?? '—',
-            contractType: String(r.procedure_type_value ?? '—').trim() || '—',
-            signedAt: fmtDate(r.contract_signed_date),
-            documentUrl: String(r.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(r.diavgeia_ada).trim()}` : null,
+            when: fmtDate(row.contract_signed_date),
+            what: String(row.title ?? '').trim() || '—',
+            why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
+            howMuch: fmtEur(row.amount_without_vat),
+            beneficiary: String(row.beneficiary_name ?? '').trim() || '—',
+            contractType: String(row.procedure_type_value ?? '—').trim() || '—',
+            signedAt: fmtDate(row.contract_signed_date),
+            documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
           }))
 
         if (!cancelled) setMunicipalityLatestContracts(mapped)
@@ -973,6 +919,36 @@ export default function MapsPage() {
     }
 
     loadMunicipalityContracts()
+    return () => {
+      cancelled = true
+    }
+  }, [selectedMunicipalityIdForPanel, panelKind, mapYear])
+
+  useEffect(() => {
+    let cancelled = false
+    const selectedMunicipalityId = selectedMunicipalityIdForPanel
+    if (!selectedMunicipalityId || panelKind !== 'municipality') {
+      setMunicipalityContractCount(0)
+      return
+    }
+
+    const loadMunicipalityContractCount = async () => {
+      try {
+        const { data, error } = await supabase.rpc('get_municipality_contract_count', {
+          p_municipality_key: selectedMunicipalityId,
+          p_year: mapYear,
+        })
+        if (error) throw error
+        if (!cancelled) setMunicipalityContractCount(Number(data ?? 0))
+      } catch (e) {
+        if (!cancelled) {
+          console.error('[MapsPage] municipality contract count failed', e)
+          setMunicipalityContractCount(0)
+        }
+      }
+    }
+
+    loadMunicipalityContractCount()
     return () => {
       cancelled = true
     }
@@ -1288,7 +1264,7 @@ export default function MapsPage() {
         regionCurrentYearCount={selectedRegionCurrentYearCount}
         municipalityCurrentYearCount={
           selectedMunicipalityIdForPanel
-            ? (municipalityCurrentYearCountById.get(selectedMunicipalityIdForPanel) ?? 0)
+            ? municipalityContractCount
             : null
         }
       />
