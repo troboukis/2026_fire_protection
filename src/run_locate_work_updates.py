@@ -36,6 +36,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--state-file", type=Path, default=DEFAULT_STATE_PATH, help="JSON state file")
     parser.add_argument("--log-csv", type=Path, default=DEFAULT_LOG_PATH, help="CSV log file")
     parser.add_argument("--limit", type=int, default=None, help="Optional max references to process")
+    parser.add_argument(
+        "--reference-number",
+        action="append",
+        default=[],
+        help="Specific reference number to process. Repeat the flag to process multiple refs; bypasses state filtering.",
+    )
     parser.add_argument("--debug", action="store_true", help="Enable verbose per-document logging")
     return parser.parse_args()
 
@@ -143,12 +149,33 @@ def process_reference(reference_number: str, db_url: str, debug: bool) -> int:
     return doc.ingestData()
 
 
+def normalize_reference_numbers(values: list[str]) -> list[str]:
+    refs: list[str] = []
+    for value in values:
+        for part in str(value).split(","):
+            ref = part.strip().upper()
+            if ref and ref not in refs:
+                refs.append(ref)
+    return refs
+
+
 def main() -> None:
     args = parse_args()
     db_url = resolve_database_url(args.db_path)
     state = load_state(args.state_file)
     processed_refs = set(state["processed_reference_numbers"])
-    candidates = fetch_candidate_procurements(db_url, processed_refs, args.limit)
+    explicit_reference_numbers = normalize_reference_numbers(args.reference_number)
+    if explicit_reference_numbers:
+        candidates = [
+            {
+                "reference_number": reference_number,
+                "organization_value": "",
+                "title": "",
+            }
+            for reference_number in explicit_reference_numbers
+        ]
+    else:
+        candidates = fetch_candidate_procurements(db_url, processed_refs, args.limit)
 
     run_started_at = datetime.now(timezone.utc).isoformat()
     log_rows: list[dict] = []
