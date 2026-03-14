@@ -68,6 +68,7 @@ def test_main_logs_and_updates_state_for_success_and_no_findings(tmp_path: Path,
         state_file=state_file,
         log_csv=log_file,
         limit=None,
+        reference_number=[],
         debug=False,
     ))
     monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")
@@ -100,6 +101,7 @@ def test_main_raises_on_any_processing_error(tmp_path: Path, monkeypatch):
         state_file=state_file,
         log_csv=log_file,
         limit=None,
+        reference_number=[],
         debug=False,
     ))
     monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")
@@ -112,3 +114,32 @@ def test_main_raises_on_any_processing_error(tmp_path: Path, monkeypatch):
         mod.main()
 
     assert "error" in log_file.read_text(encoding="utf-8")
+
+
+def test_main_processes_explicit_reference_numbers_without_candidate_query(tmp_path: Path, monkeypatch):
+    state_file = tmp_path / "state.json"
+    log_file = tmp_path / "log.csv"
+    state_file.write_text(json.dumps({"processed_reference_numbers": ["26SYMV001"]}), encoding="utf-8")
+
+    monkeypatch.setattr(mod, "parse_args", lambda: SimpleNamespace(
+        db_path=None,
+        state_file=state_file,
+        log_csv=log_file,
+        limit=None,
+        reference_number=["26symv001", "26SYMV002, 26SYMV003"],
+        debug=False,
+    ))
+    monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")
+    monkeypatch.setattr(mod, "fetch_candidate_procurements", lambda *args, **kwargs: (_ for _ in ()).throw(AssertionError("should not fetch candidates")))
+
+    processed: list[str] = []
+
+    def fake_process(reference_number: str, db_url: str, debug: bool) -> int:
+        processed.append(reference_number)
+        return 1
+
+    monkeypatch.setattr(mod, "process_reference", fake_process)
+
+    mod.main()
+
+    assert processed == ["26SYMV001", "26SYMV002", "26SYMV003"]

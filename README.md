@@ -37,6 +37,8 @@ Script behavior:
 - auto-commits any existing local changes first
 - pulls latest `origin/main` with rebase
 - runs `fetch_diavgeia.py` (PDF download is disabled by default)
+- runs `fetch_kimdis_procurements.py`, `src/fetch_copernicus.py`, and DB ingest when enabled
+- does not run `locate_work`; that step is separate via `src/run_locate_work_updates.py`
 - commits changed artifacts (`data/`, `state/`, `logs/`)
 - pushes to `origin/main`
 
@@ -770,6 +772,20 @@ Dry-run parse check (no DB write):
 
 ```bash
 python ingest/ingest_raw_procurements.py --dry-run
+```
+
+Run `locate_work` updates for newly ingested eligible procurements:
+
+```bash
+python src/run_locate_work_updates.py
+```
+
+Force rerun specific reference numbers, bypassing the state file and candidate-selection query:
+
+```bash
+python src/run_locate_work_updates.py --reference-number 26SYMV018515731
+python src/run_locate_work_updates.py --reference-number 26SYMV018515731 --reference-number 26SYMV018537881
+python src/run_locate_work_updates.py --reference-number "26SYMV018515731,26SYMV018537881"
 ```
 
 Diavgeia procurement tables are still kept for future extensions.
