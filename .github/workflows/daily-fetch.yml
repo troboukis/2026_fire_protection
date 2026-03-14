@@ -70,6 +70,12 @@ jobs:
       - name: Sync refreshed datasets to application database
         run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
+      - name: Backfill canonical organization authority scopes
+        run: python scripts/backfill_organization_authority_scope.py
+
+      - name: Reload organization municipality coverage
+        run: python scripts/load_org_municipality_coverage.py
+
       - name: Locate works for new municipality, region, and ADMIE procurements
         run: python src/run_locate_work_updates.py
 
