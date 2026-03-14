@@ -13,6 +13,7 @@ if str(ROOT) not in sys.path:
 from ingest.stage2_load_erd import (
     build_maps,
     build_municipality_lookup,
+    build_municipality_region_lookup,
     build_organization_lookup,
     build_region_lookup,
     procurement_rows,
@@ -30,12 +31,14 @@ def build_scope_rows() -> list[tuple[str, str | None]]:
     organization_lookup = build_organization_lookup(seed_organization_rows(bundle))
     region_lookup = build_region_lookup(seed_region_rows(bundle))
     municipality_lookup = build_municipality_lookup(seed_municipality_rows(bundle))
+    municipality_region_lookup = build_municipality_region_lookup(seed_municipality_rows(bundle))
     procurement_data = procurement_rows(
         raw=bundle.raw,
         org_map=org_map,
         organization_lookup=organization_lookup,
         region_lookup=region_lookup,
         municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
     )
     return [
         (str(reference_number).strip(), canonical_owner_scope)

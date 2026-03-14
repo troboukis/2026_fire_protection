@@ -16,6 +16,7 @@ from ingest.stage2_load_erd import t_up
 from src.map_copernicus_to_municipalities import resolve_database_url
 
 CSV_PATH = ROOT / "data" / "mappings" / "org_to_municipality_coverage.csv"
+EXPANDED_CSV_PATH = ROOT / "data" / "mappings" / "final_entity_mapping_expanded.csv"
 UNRESOLVED_CSV_PATH = ROOT / "logs" / "org_municipality_coverage_unresolved.csv"
 
 
@@ -53,13 +54,17 @@ def load_organization_lookup(conn) -> dict[str, dict[str, set[str]]]:
 def resolve_organization_key(
     org_type: str,
     org_name_clean: str,
+    source_key: str,
     lookup: dict[str, dict[str, set[str]]],
 ) -> str | None:
     composite_source_key = _norm(f"{org_type}::{org_name_clean}") if org_type else ""
     full_label = _norm(f"{org_type} {org_name_clean}") if org_type else ""
     raw_name = _norm(org_name_clean)
+    raw_source_key = _norm(source_key)
 
     candidates: list[set[str]] = []
+    if raw_source_key:
+        candidates.append(lookup["by_source_key"].get(raw_source_key, set()))
     if composite_source_key:
         candidates.append(lookup["by_source_key"].get(composite_source_key, set()))
     if full_label:
@@ -73,6 +78,48 @@ def resolve_organization_key(
     return None
 
 
+def register_row(
+    row: dict[str, str],
+    lookup: dict[str, dict[str, set[str]]],
+    deduped: dict[tuple[str, str], tuple[str, str | None, str, str | None, str | None, str | None, str]],
+    unresolved: list[dict[str, str]],
+) -> None:
+    org_name = (row.get("org_name_clean") or "").strip()
+    org_type = (row.get("org_type") or "").strip()
+    source_key = (row.get("source_key") or "").strip()
+    municipality_key = (row.get("municipality_id") or "").strip()
+    if not org_name or not municipality_key:
+        return
+    org_key = resolve_organization_key(org_type, org_name, source_key, lookup)
+    if not org_key:
+        unresolved.append({
+            "org_type": org_type,
+            "org_name_clean": org_name,
+            "region_id": (row.get("region_id") or "").strip(),
+            "municipality_id": municipality_key,
+            "municipality_name": (row.get("municipality_name") or "").strip(),
+            "authority_level": (row.get("authority_level") or "").strip(),
+            "coverage_method": (row.get("coverage_method") or "").strip(),
+        })
+        return
+    region_key = (row.get("region_id") or "").strip() or None
+    authority_scope = (row.get("authority_level") or "").strip() or None
+    coverage_method = (row.get("coverage_method") or "").strip() or None
+    source_org_type = org_type or None
+    deduped.setdefault(
+        (org_key, municipality_key),
+        (
+            org_key,
+            region_key,
+            municipality_key,
+            authority_scope,
+            coverage_method,
+            source_org_type,
+            org_name,
+        ),
+    )
+
+
 def build_rows(conn) -> tuple[list[tuple[str, str | None, str, str | None, str | None, str | None, str]], list[dict[str, str]]]:
     lookup = load_organization_lookup(conn)
     deduped: dict[tuple[str, str], tuple[str, str | None, str, str | None, str | None, str | None, str]] = {}
@@ -80,38 +127,29 @@ def build_rows(conn) -> tuple[list[tuple[str, str | None, str, str | None, str |
     with CSV_PATH.open(encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
         for row in reader:
-            org_name = (row.get("org_name_clean") or "").strip()
-            org_type = (row.get("org_type") or "").strip()
-            municipality_key = (row.get("municipality_id") or "").strip()
-            if not org_name or not municipality_key:
+            register_row(row, lookup, deduped, unresolved)
+    with EXPANDED_CSV_PATH.open(encoding="utf-8", newline="") as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            if (row.get("source_entity_type") or "").strip() != "organization":
                 continue
-            org_key = resolve_organization_key(org_type, org_name, lookup)
-            if not org_key:
-                unresolved.append({
-                    "org_type": org_type,
-                    "org_name_clean": org_name,
+            municipality_key = (row.get("municipality_id") or "").strip()
+            if not municipality_key:
+                continue
+            register_row(
+                {
+                    "org_type": "",
+                    "org_name_clean": (row.get("normalized_value") or row.get("source_value") or "").strip(),
+                    "source_key": (row.get("source_key") or "").strip(),
                     "region_id": (row.get("region_id") or "").strip(),
                     "municipality_id": municipality_key,
                     "municipality_name": (row.get("municipality_name") or "").strip(),
-                    "authority_level": (row.get("authority_level") or "").strip(),
-                    "coverage_method": (row.get("coverage_method") or "").strip(),
-                })
-                continue
-            region_key = (row.get("region_id") or "").strip() or None
-            authority_scope = (row.get("authority_level") or "").strip() or None
-            coverage_method = (row.get("coverage_method") or "").strip() or None
-            source_org_type = org_type or None
-            deduped.setdefault(
-                (org_key, municipality_key),
-                (
-                    org_key,
-                    region_key,
-                    municipality_key,
-                    authority_scope,
-                    coverage_method,
-                    source_org_type,
-                    org_name,
-                ),
+                    "authority_level": "",
+                    "coverage_method": (row.get("match_strategy") or "").strip() or "expanded_org_coverage",
+                },
+                lookup,
+                deduped,
+                unresolved,
             )
     return list(deduped.values()), unresolved
 

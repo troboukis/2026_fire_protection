@@ -319,6 +319,13 @@ def seed_region_rows(b: CsvBundle) -> list[tuple]:
 
 
 def seed_municipality_rows(b: CsvBundle) -> list[tuple]:
+    region_by_municipality: dict[str, str] = {}
+    for _, r in b.region_map.iterrows():
+        municipality_key = t(r.get("municipality_id"))
+        region_key = t(r.get("region_id"))
+        if municipality_key and region_key and municipality_key not in region_by_municipality:
+            region_by_municipality[municipality_key] = region_key
+
     out: list[tuple] = []
     seen_pairs: set[tuple[str, str]] = set()
 
@@ -340,6 +347,7 @@ def seed_municipality_rows(b: CsvBundle) -> list[tuple]:
             municipality_key,
             municipality_value,
             municipality_normalized,
+            region_by_municipality.get(municipality_key),
             t(r.get("source_system")),
             t(r.get("source_key")),
         ))
@@ -383,6 +391,74 @@ def build_municipality_lookup(muni_seed_rows: list[tuple]) -> dict[str, str]:
     return lookup
 
 
+def build_municipality_region_lookup(muni_seed_rows: list[tuple]) -> dict[str, str]:
+    lookup: dict[str, str] = {}
+    for municipality_key, _, _, region_key, *_ in muni_seed_rows:
+        mk = t(municipality_key)
+        rk = t(region_key)
+        if mk and rk and mk not in lookup:
+            lookup[mk] = rk
+    return lookup
+
+
+def build_municipality_alias_lookup(muni_seed_rows: list[tuple]) -> dict[str, set[str]]:
+    lookup: dict[str, set[str]] = {}
+    for municipality_key, municipality_value, municipality_norm, *_ in muni_seed_rows:
+        mk = t(municipality_key)
+        if not mk:
+            continue
+        aliases = lookup.setdefault(mk, set())
+        for candidate in (
+            municipality_value,
+            municipality_norm,
+            normalizeMunicipality(municipality_value),
+            normalizeMunicipality(municipality_norm),
+        ):
+            norm = t_up(candidate)
+            if norm:
+                aliases.add(norm)
+    return lookup
+
+
+def build_org_municipality_coverage_lookup(expanded_map: pd.DataFrame) -> dict[str, list[str]]:
+    lookup: dict[str, list[str]] = {}
+
+    def add(label: str | None, municipality_key: str | None) -> None:
+        norm = t_up(label)
+        mk = t(municipality_key)
+        if not norm or not mk:
+            return
+        values = lookup.setdefault(norm, [])
+        if mk not in values:
+            values.append(mk)
+
+    exp_org = expanded_map[expanded_map["source_entity_type"] == "organization"]
+    for _, r in exp_org.iterrows():
+        municipality_key = t(r.get("municipality_id"))
+        add(r.get("source_value"), municipality_key)
+        add(r.get("normalized_value"), municipality_key)
+    return lookup
+
+
+def resolve_municipality_from_context(
+    context_values: list[str | None],
+    candidate_keys: list[str],
+    municipality_alias_lookup: dict[str, set[str]],
+) -> str | None:
+    haystack = " ".join(t_up(value) or "" for value in context_values if t(value))
+    if not haystack:
+        return None
+    matches: list[str] = []
+    for municipality_key in candidate_keys:
+        aliases = municipality_alias_lookup.get(municipality_key, set())
+        if any(alias and len(alias) >= 4 and alias in haystack for alias in aliases):
+            if municipality_key not in matches:
+                matches.append(municipality_key)
+    if len(matches) == 1:
+        return matches[0]
+    return None
+
+
 def organization_key_from_normalized(normalized_value: str) -> str:
     return f"org_{hashlib.sha1(normalized_value.encode('utf-8')).hexdigest()[:20]}"
 
@@ -398,6 +474,8 @@ def authority_scope_from_notes(notes: str | None) -> str | None:
         return "region"
     if org_type == "ΑΠΟΚΕΝΤΡΩΜΕΝΗ ΔΙΟΙΚΗΣΗ":
         return "decentralized"
+    if org_type == "ΥΠΟΥΡΓΕΙΟ":
+        return "national"
     return None
 
 
@@ -414,7 +492,7 @@ def authority_scope_key_map(org_map: pd.DataFrame) -> dict[str, str]:
 
     for _, r in org_map.iterrows():
         authority_level = t(r.get("authority_level"))
-        if authority_level not in {"municipality", "region", "decentralized"}:
+        if authority_level not in {"municipality", "region", "decentralized", "national"}:
             continue
         org_type = t(r.get("org_type")) or ""
         org_name_clean = t(r.get("org_name_clean")) or ""
@@ -595,12 +673,16 @@ def procurement_rows(
     organization_lookup: dict[str, str],
     region_lookup: dict[str, str],
     municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
         org_value_raw = t(r.get("organization_value"))
         org_candidates = organization_lookup_candidates(org_value_raw)
         region_candidates = region_lookup_candidates(org_value_raw)
+        city_candidates = organization_lookup_candidates(t(r.get("nutsCity")))
         org_name = org_candidates[0] if org_candidates else ""
         org_type = t_up(r.get("typeOfContractingAuthority")) or ""
         municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
@@ -649,6 +731,33 @@ def procurement_rows(
             municipality_lookup=municipality_lookup,
             region_lookup=region_lookup,
         )
+        municipality_key_from_city = None
+        for candidate in city_candidates:
+            municipality_key_from_city = municipality_lookup.get(candidate)
+            if municipality_key_from_city is not None:
+                break
+        organization_candidate_municipalities: list[str] = []
+        for candidate in org_candidates:
+            for municipality_candidate in org_municipality_coverage_lookup.get(candidate, []):
+                if municipality_candidate not in organization_candidate_municipalities:
+                    organization_candidate_municipalities.append(municipality_candidate)
+        municipality_key_from_context = resolve_municipality_from_context(
+            context_values=[t(r.get("nutsCity")), t(r.get("title")), t(r.get("shortDescriptions"))],
+            candidate_keys=organization_candidate_municipalities,
+            municipality_alias_lookup=municipality_alias_lookup,
+        )
+        if canonical_owner_scope == "organization" and municipality_key_from_city:
+            city_region_key = municipality_region_lookup.get(municipality_key_from_city)
+            if region_key is None and city_region_key is not None:
+                region_key = city_region_key
+            if city_region_key is None or region_key is None or city_region_key == region_key:
+                municipality_key = municipality_key_from_city
+        if canonical_owner_scope == "organization" and municipality_key_from_context:
+            context_region_key = municipality_region_lookup.get(municipality_key_from_context)
+            if region_key is None and context_region_key is not None:
+                region_key = context_region_key
+            if context_region_key is None or region_key is None or context_region_key == region_key:
+                municipality_key = municipality_key_from_context
         out.append((
             t(r.get("title")),
             t(r.get("referenceNumber")),
@@ -929,9 +1038,10 @@ def main() -> None:
     org_seed = seed_organization_rows(bundle)
     region_lookup = build_region_lookup(region_seed)
     municipality_lookup = build_municipality_lookup(muni_seed)
+    municipality_region_lookup = build_municipality_region_lookup(muni_seed)
     organization_lookup = build_organization_lookup(org_seed)
 
-    procurement = procurement_rows(bundle.raw, org_map, organization_lookup, region_lookup, municipality_lookup)
+    procurement = procurement_rows(bundle.raw, org_map, organization_lookup, region_lookup, municipality_lookup, municipality_region_lookup)
     diav = diav_rows(bundle.diav, org_map, organization_lookup, region_lookup, municipality_lookup)
     fires = forest_fire_rows(bundle.fire)
     funds = fund_rows(bundle.fund)
@@ -1012,10 +1122,11 @@ def main() -> None:
                 cur,
                 """
                 INSERT INTO public.municipality (
-                  municipality_key, municipality_value, municipality_normalized_value, source_system, source_key
+                  municipality_key, municipality_value, municipality_normalized_value, region_key, source_system, source_key
                 ) VALUES %s
                 ON CONFLICT (municipality_key, municipality_value) DO UPDATE SET
                   municipality_normalized_value = EXCLUDED.municipality_normalized_value,
+                  region_key = EXCLUDED.region_key,
                   source_system = EXCLUDED.source_system,
                   source_key = EXCLUDED.source_key
                 """,
