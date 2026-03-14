@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 import psycopg2
@@ -28,6 +29,8 @@ except ModuleNotFoundError:
 
 class Document:
     BASE_URL = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata"
+    MAX_RETRIES = 8
+    RETRY_SLEEP_SECONDS = 5
 
     def __init__(self, ref_number: str, db_path: str | None = None, debug: bool = True):
         self.ref_number = ref_number.strip().upper()
@@ -56,7 +59,29 @@ class Document:
         if self.debug:
             print(f"[GET DOCUMENT] URL: {url}")
 
-        response = requests.get(url, timeout=60)
+        retries = 0
+        while True:
+            response = requests.get(url, timeout=60)
+
+            if response.status_code == 429:
+                retries += 1
+                if retries >= self.MAX_RETRIES:
+                    raise RuntimeError(
+                        f"Max retries ({self.MAX_RETRIES}) exceeded while fetching attachment for ref_number={self.ref_number}"
+                    )
+                retry_after_raw = response.headers.get("Retry-After", "").strip()
+                retry_after = None
+                if retry_after_raw.isdigit():
+                    retry_after = int(retry_after_raw)
+                backoff = min(self.RETRY_SLEEP_SECONDS * (2 ** (retries - 1)), 120)
+                wait_seconds = retry_after if retry_after is not None else backoff
+                print(
+                    f"429 Too Many Requests, waiting {wait_seconds}s "
+                    f"(retry {retries}/{self.MAX_RETRIES})"
+                )
+                time.sleep(wait_seconds)
+                continue
+            break
 
         if self.debug:
             print(f"[GET DOCUMENT] status_code={response.status_code}")
