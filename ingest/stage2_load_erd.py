@@ -1039,9 +1039,20 @@ def main() -> None:
     region_lookup = build_region_lookup(region_seed)
     municipality_lookup = build_municipality_lookup(muni_seed)
     municipality_region_lookup = build_municipality_region_lookup(muni_seed)
+    municipality_alias_lookup = build_municipality_alias_lookup(muni_seed)
+    org_municipality_coverage_lookup = build_org_municipality_coverage_lookup(bundle.expanded_map)
     organization_lookup = build_organization_lookup(org_seed)
 
-    procurement = procurement_rows(bundle.raw, org_map, organization_lookup, region_lookup, municipality_lookup, municipality_region_lookup)
+    procurement = procurement_rows(
+        bundle.raw,
+        org_map,
+        organization_lookup,
+        region_lookup,
+        municipality_lookup,
+        municipality_region_lookup,
+        municipality_alias_lookup,
+        org_municipality_coverage_lookup,
+    )
     diav = diav_rows(bundle.diav, org_map, organization_lookup, region_lookup, municipality_lookup)
     fires = forest_fire_rows(bundle.fire)
     funds = fund_rows(bundle.fund)
