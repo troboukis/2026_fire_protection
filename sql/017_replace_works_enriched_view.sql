@@ -10,8 +10,14 @@ SELECT
   p.municipality_key,
   p.region_key,
   p.organization_key,
+  p.canonical_owner_scope,
   o.organization_normalized_value,
-  COALESCE(o.authority_scope, 'other') AS authority_scope,
+  CASE
+    WHEN p.canonical_owner_scope = 'municipality' THEN 'municipality'
+    WHEN p.canonical_owner_scope = 'region' THEN 'region'
+    WHEN p.organization_key IS NOT NULL THEN COALESCE(o.authority_scope, 'other')
+    ELSE 'other'
+  END AS authority_scope,
   p.contract_signed_date,
   p.title,
   w.point_name_raw,

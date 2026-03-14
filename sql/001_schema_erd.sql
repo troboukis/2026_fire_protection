@@ -281,6 +281,7 @@ CREATE TABLE IF NOT EXISTS public.procurement (
   region_key                  TEXT,
   organization_key            TEXT,
   municipality_key            TEXT,
+  canonical_owner_scope       TEXT,
   payment_id                  BIGINT,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),

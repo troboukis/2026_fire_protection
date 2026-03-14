@@ -1,6 +1,6 @@
 import type { LatestContractCardView } from '../components/LatestContractCard'
 
-export type AuthorityScope = 'municipality' | 'region' | 'decentralized' | 'other'
+export type AuthorityScope = 'municipality' | 'region' | 'decentralized' | 'national' | 'other'
 
 type BuildLatestContractCardViewArgs = {
   id: string

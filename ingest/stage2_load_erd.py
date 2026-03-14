@@ -425,9 +425,41 @@ def authority_scope_key_map(org_map: pd.DataFrame) -> dict[str, str]:
     return out
 
 
+def canonical_region_aliases(region_seed_rows: list[tuple]) -> set[str]:
+    aliases: set[str] = set()
+    for region_key, region_value, region_norm, *_ in region_seed_rows:
+        for candidate in (region_key, region_value, region_norm):
+            norm = t_up(candidate)
+            if not norm:
+                continue
+            aliases.add(norm)
+            aliases.add(t_up(f"ΠΕΡΙΦΕΡΕΙΑ {norm}") or norm)
+    return aliases
+
+
+def canonical_municipality_aliases(muni_seed_rows: list[tuple]) -> set[str]:
+    aliases: set[str] = set()
+    for municipality_key, municipality_value, municipality_norm, *_ in muni_seed_rows:
+        for candidate in (
+            municipality_key,
+            municipality_value,
+            municipality_norm,
+            normalizeMunicipality(municipality_value),
+            normalizeMunicipality(municipality_norm),
+        ):
+            norm = t_up(candidate)
+            if not norm:
+                continue
+            aliases.add(norm)
+            aliases.add(t_up(f"ΔΗΜΟΣ {norm}") or norm)
+    return aliases
+
+
 def seed_organization_rows(b: CsvBundle) -> list[tuple]:
     best_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] = {}
     scope_by_org_key = authority_scope_key_map(b.org_map)
+    region_aliases = canonical_region_aliases(seed_region_rows(b))
+    municipality_aliases = canonical_municipality_aliases(seed_municipality_rows(b))
     org_rows = b.expanded_map[b.expanded_map["source_entity_type"] == "organization"]
     for _, r in org_rows.iterrows():
         org_value = t(r.get("source_value"))
@@ -436,6 +468,18 @@ def seed_organization_rows(b: CsvBundle) -> list[tuple]:
         normalized = t(r.get("normalized_value")) or t_up(org_value) or org_value
         organization_key = organization_key_from_normalized(t_up(normalized) or normalized)
         authority_scope = authority_scope_from_notes(t(r.get("notes"))) or scope_by_org_key.get(organization_key)
+        source_key = t(r.get("source_key"))
+        value_norms = {t_up(org_value), t_up(normalized)}
+        value_norms.discard(None)
+        source_key_norm = t_up(source_key) or ""
+
+        if authority_scope in {"municipality", "region"}:
+            continue
+        if source_key_norm.startswith("ΔΗΜΟΣ::") or any(v in municipality_aliases for v in value_norms):
+            continue
+        if source_key_norm.startswith("ΠΕΡΙΦΕΡΕΙΑ::") or any(v in region_aliases for v in value_norms):
+            continue
+
         dedup_key = (org_value, normalized)
         existing = best_rows.get(dedup_key)
         if existing is None:
@@ -445,7 +489,7 @@ def seed_organization_rows(b: CsvBundle) -> list[tuple]:
                 normalized,
                 authority_scope,
                 t(r.get("source_system")),
-                t(r.get("source_key")),
+                source_key,
             )
             continue
         if existing[3] is None and authority_scope is not None:
@@ -495,6 +539,25 @@ def organization_lookup_candidates(val: str | None) -> list[str]:
     return candidates
 
 
+def canonical_owner_scope_from_candidates(
+    org_candidates: list[str],
+    region_candidates: list[str],
+    organization_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+) -> str | None:
+    for candidate in org_candidates:
+        if candidate and organization_lookup.get(candidate):
+            return "organization"
+    for candidate in org_candidates:
+        if candidate and municipality_lookup.get(candidate):
+            return "municipality"
+    for candidate in region_candidates:
+        if candidate and region_lookup.get(candidate):
+            return "region"
+    return None
+
+
 def region_lookup_candidates(val: str | None) -> list[str]:
     candidates = organization_lookup_candidates(val)
     raw = t(val)
@@ -505,6 +568,10 @@ def region_lookup_candidates(val: str | None) -> list[str]:
         normalized = t_up(candidate)
         if normalized and normalized not in candidates:
             candidates.append(normalized)
+
+    prefix_stripped = re.sub(r"^\s*ΠΕΡΙΦΕΡΕΙΑ\s+", "", t_up(raw) or "")
+    add(prefix_stripped)
+    add(f"ΠΕΡΙΦΕΡΕΙΑ {prefix_stripped}" if prefix_stripped else None)
 
     # Extract region labels from organization names such as
     # "ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ... ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ ..."
@@ -575,6 +642,13 @@ def procurement_rows(
             org_key_resolved = organization_lookup.get(candidate)
             if org_key_resolved is not None:
                 break
+        canonical_owner_scope = canonical_owner_scope_from_candidates(
+            org_candidates=org_candidates,
+            region_candidates=region_candidates,
+            organization_lookup=organization_lookup,
+            municipality_lookup=municipality_lookup,
+            region_lookup=region_lookup,
+        )
         out.append((
             t(r.get("title")),
             t(r.get("referenceNumber")),
@@ -627,6 +701,7 @@ def procurement_rows(
             region_key,
             org_key_resolved,
             municipality_key,
+            canonical_owner_scope,
         ))
     return out
 
@@ -1030,7 +1105,7 @@ def main() -> None:
               contracting_authority_activity, contract_duration, contract_duration_unit_of_measure,
               contract_related_ada, funding_details_cofund, funding_details_self_fund, funding_details_espa,
               funding_details_regular_budget, units_operator, short_descriptions, green_contracts,
-              auction_ref_no, ingested_at, region_key, organization_key, municipality_key
+              auction_ref_no, ingested_at, region_key, organization_key, municipality_key, canonical_owner_scope
             ) VALUES (
               %s, %s, %s, %s, %s, %s,
               %s, %s, %s, %s, %s, %s,
@@ -1043,7 +1118,7 @@ def main() -> None:
               %s, %s, %s,
               %s, %s, %s, %s,
               %s, %s, %s, %s,
-              %s, %s, %s, %s, %s
+              %s, %s, %s, %s, %s, %s
             )
             ON CONFLICT (reference_number) DO UPDATE SET
               title = EXCLUDED.title,
@@ -1096,6 +1171,7 @@ def main() -> None:
               region_key = EXCLUDED.region_key,
               organization_key = EXCLUDED.organization_key,
               municipality_key = EXCLUDED.municipality_key,
+              canonical_owner_scope = EXCLUDED.canonical_owner_scope,
               updated_at = NOW()
             RETURNING id
         """
