@@ -17,6 +17,7 @@ type ProcurementMapRow = {
   region_key?: string | null
   contract_signed_date?: string | null
   organization_key?: string | null
+  canonical_owner_scope?: 'municipality' | 'region' | 'organization' | null
 }
 
 type MunicipalityRow = {
@@ -210,7 +211,7 @@ export default function MapsPage() {
         const to = from + PAGE_SIZE - 1
         const { data, error } = await supabase
           .from('procurement')
-          .select('id, municipality_key, region_key, contract_signed_date, organization_key')
+          .select('id, municipality_key, region_key, contract_signed_date, organization_key, canonical_owner_scope')
           .order('id', { ascending: true })
           .range(from, to)
 
@@ -307,8 +308,14 @@ export default function MapsPage() {
           const issueDate = String(row.contract_signed_date ?? '').trim()
           const issueYear = extractYear(issueDate)
           if (issueYear !== mapYear) continue
+          const canonicalOwnerScope = String(row.canonical_owner_scope ?? '').trim()
           const orgKey = String(row.organization_key ?? '').trim()
-          const authorityScope = orgKey ? (orgScopeByKey.get(orgKey) ?? 'other') : 'municipality'
+          const authorityScope =
+            canonicalOwnerScope === 'municipality'
+              ? 'municipality'
+              : orgKey
+                ? (orgScopeByKey.get(orgKey) ?? 'other')
+                : 'other'
           if (authorityScope === 'municipality') {
             if (!municipalityId) continue
             procurementRowsForYear += 1
