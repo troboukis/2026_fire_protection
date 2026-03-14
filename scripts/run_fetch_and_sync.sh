@@ -53,13 +53,19 @@ echo "[6/11] Fetch Copernicus fires and upsert public.copernicus..."
 ./.fireprotection/bin/python src/fetch_copernicus.py
 
 if [[ "$RUN_DB_INGEST" == "1" ]]; then
-  echo "[7/11] Sync ERD tables to database (stage2_load_erd.py, excluding forest_fire)..."
+echo "[7/13] Sync ERD tables to database (stage2_load_erd.py, excluding forest_fire)..."
   ./.fireprotection/bin/python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 else
-  echo "[7/11] Skipping DB ingest (set RUN_DB_INGEST=1 to enable; default is enabled)."
+  echo "[7/13] Skipping DB ingest (set RUN_DB_INGEST=1 to enable; default is enabled)."
 fi
 
-echo "[8/11] Stage generated artifacts..."
+echo "[8/13] Backfill canonical organization authority scopes..."
+./.fireprotection/bin/python scripts/backfill_organization_authority_scope.py
+
+echo "[9/13] Reload organization municipality coverage..."
+./.fireprotection/bin/python scripts/load_org_municipality_coverage.py
+
+echo "[10/13] Stage generated artifacts..."
 git add \
   data/2026_diavgeia.csv \
   data/2026_diavgeia_filtered.csv \
@@ -74,17 +80,17 @@ git add \
   logs/kimdis_fetch_runs.csv
 
 if git diff --cached --quiet; then
-  echo "[9/11] No changes to commit."
-  echo "[10/11] Nothing to push."
-  echo "[11/11] Done."
+  echo "[11/13] No changes to commit."
+  echo "[12/13] Nothing to push."
+  echo "[13/13] Done."
   exit 0
 fi
 
-echo "[9/11] Commit changes..."
+echo "[11/13] Commit changes..."
 git commit -m "chore(data): update Diavgeia + KIMDIS + Copernicus datasets"
 
-echo "[10/11] Push to origin/main..."
+echo "[12/13] Push to origin/main..."
 git push origin main
 
-echo "[11/11] Done."
+echo "[13/13] Done."
 echo "[done] Fetch + sync completed successfully."
