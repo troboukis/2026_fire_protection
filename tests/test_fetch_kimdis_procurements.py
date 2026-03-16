@@ -7,6 +7,7 @@ from src.fetch_kimdis_procurements import (
     business_key_from_api_item,
     dedupe_df_by_business_key,
     normalize_string,
+    parse_kimdis_datetime,
 )
 
 
@@ -51,6 +52,17 @@ def test_dedupe_df_keeps_latest_row_per_business_key():
 
     assert len(out) == 1
     assert out.iloc[0]["title"] == "newer"
+
+
+def test_parse_kimdis_datetime_handles_mixed_iso_date_shapes():
+    values = pd.Series(["2026-01-02", "2026-01-03T09:00:00", "", None])
+
+    out = parse_kimdis_datetime(values)
+
+    assert str(out.iloc[0]) == "2026-01-02 00:00:00"
+    assert str(out.iloc[1]) == "2026-01-03 09:00:00"
+    assert pd.isna(out.iloc[2])
+    assert pd.isna(out.iloc[3])
 
 
 def test_is_excluded_drops_school_contracts_by_title_keyword():

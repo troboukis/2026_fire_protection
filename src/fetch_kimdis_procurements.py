@@ -68,6 +68,11 @@ def _load_extended_cpvs(path: Path) -> dict[str, str]:
     return out
 
 
+def parse_kimdis_datetime(values: Any, *, utc: bool = False) -> Any:
+    """Parse KIMDIS ISO date/datetime strings without per-element format inference."""
+    return pd.to_datetime(values, errors="coerce", format="ISO8601", utc=utc)
+
+
 # Default CPV dictionary used for value mapping/fallback.
 # It combines fire-protection seed CPVs plus the extended dictionary.
 DEFAULT_CPVS: dict[str, str] = {
@@ -214,8 +219,8 @@ def dedupe_df_by_business_key(df: pd.DataFrame) -> pd.DataFrame:
 
     out = df.copy()
     out["_business_key"] = out.apply(business_key_from_row, axis=1)
-    out["_submission_sort"] = pd.to_datetime(out.get("submissionDate"), errors="coerce")
-    out["_signed_sort"] = pd.to_datetime(out.get("contractSignedDate"), errors="coerce")
+    out["_submission_sort"] = parse_kimdis_datetime(out.get("submissionDate"))
+    out["_signed_sort"] = parse_kimdis_datetime(out.get("contractSignedDate"))
 
     # Keep latest record per contract identity.
     out = (
@@ -528,7 +533,7 @@ class ProcurementCollector:
         rows = [{k: normalize_cell_value(v) for k, v in row.items()} for row in rows]
         df = pd.DataFrame(rows)
         if "submissionDate" in df.columns:
-            dt = pd.to_datetime(df["submissionDate"], errors="coerce")
+            dt = parse_kimdis_datetime(df["submissionDate"])
             df = df.assign(submissionDate=dt).sort_values("submissionDate").reset_index(drop=True)
             df["submissionDate"] = df["submissionDate"].dt.strftime("%Y-%m-%dT%H:%M:%S.%f").str.rstrip("0").str.rstrip(".")
         print(f"Rows after filtering: {len(df)} / {len(self.items)}")
@@ -600,7 +605,7 @@ def derive_last_fetch_from_csv(output_csv: Path) -> datetime | None:
         df = pd.read_csv(output_csv, usecols=["submissionDate"], dtype=str)
     except Exception:
         return None
-    dt = pd.to_datetime(df["submissionDate"], errors="coerce", utc=True)
+    dt = parse_kimdis_datetime(df["submissionDate"], utc=True)
     if dt.isna().all():
         return None
     return dt.max().to_pydatetime()
@@ -621,7 +626,7 @@ def merge_with_existing_csv(output_csv: Path, new_df: pd.DataFrame) -> pd.DataFr
     merged = pd.concat([existing_df, new_df], ignore_index=True)
     merged = dedupe_df_by_business_key(merged)
     if "submissionDate" in merged.columns:
-        dt = pd.to_datetime(merged["submissionDate"], errors="coerce")
+        dt = parse_kimdis_datetime(merged["submissionDate"])
         merged = merged.assign(submissionDate=dt).sort_values("submissionDate").reset_index(drop=True)
         merged["submissionDate"] = (
             merged["submissionDate"]
@@ -640,7 +645,7 @@ def finalize_output_df(df: pd.DataFrame) -> pd.DataFrame:
     out = dedupe_df_by_business_key(df)
 
     if "contractSignedDate" in out.columns:
-        signed_dt = pd.to_datetime(out["contractSignedDate"], errors="coerce")
+        signed_dt = parse_kimdis_datetime(out["contractSignedDate"])
         out = (
             out.assign(_contractSignedDate_sort=signed_dt)
             .sort_values("_contractSignedDate_sort", kind="stable", na_position="last")
@@ -788,7 +793,7 @@ def main() -> None:
         print(f"Saved {output_rows} rows -> {cfg.output_csv}")
 
         if not cfg.from_backup and "submissionDate" in output_df.columns and not output_df.empty:
-            dt = pd.to_datetime(output_df["submissionDate"], errors="coerce", utc=True).dropna()
+            dt = parse_kimdis_datetime(output_df["submissionDate"], utc=True).dropna()
             if not dt.empty:
                 save_last_fetch_to_state(cfg.state_file, dt.max().to_pydatetime())
 
