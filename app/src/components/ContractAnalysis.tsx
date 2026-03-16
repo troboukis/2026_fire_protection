@@ -123,6 +123,23 @@ function cleanDateString(v: string | null | undefined): string | null {
   return s
 }
 
+function dedupeIdentity(p: {
+  reference_number: string | null
+  diavgeia_ada: string | null
+  contract_number: string | null
+  organization_key: string | null
+  title: string | null
+  contract_signed_date: string | null
+}): string {
+  const referenceNumber = String(p.reference_number ?? '').trim()
+  if (referenceNumber) return `ref:${referenceNumber}`
+  const diavgeiaAda = String(p.diavgeia_ada ?? '').trim()
+  if (diavgeiaAda) return `ada:${diavgeiaAda}`
+  const contractNumber = String(p.contract_number ?? '').trim()
+  if (contractNumber) return `contract:${contractNumber}`
+  return `fallback:${String(p.organization_key ?? '').trim()}|${String(p.title ?? '').trim()}|${String(p.contract_signed_date ?? '').trim()}`
+}
+
 // ── Live aggregates loaded from Supabase ─────────────────────────────
 
 // ── Βοηθητικό HBar ────────────────────────────────────────────────────
@@ -340,6 +357,7 @@ export default function ContractAnalysis() {
   const [barMetric,    setBarMetric]    = useState<BarMetric>('total')
   const [analysisPeriod, setAnalysisPeriod] = useState<'all' | string>(String(CURRENT_YEAR))
   const [analysis, setAnalysis] = useState<AnalysisData | null>(null)
+  const [topAuthorities, setTopAuthorities] = useState<TopOrgItem[]>([])
   const [analysisError, setAnalysisError] = useState<string | null>(null)
   const availableAnalysisYears = useMemo(
     () => Array.from({ length: CURRENT_YEAR - 2024 + 1 }, (_, i) => String(2024 + i)).reverse(),
@@ -385,10 +403,17 @@ export default function ContractAnalysis() {
             start_date: string | null
             end_date: string | null
             no_end_date: boolean | null
+            cancelled: boolean | null
+            next_ref_no: string | null
+            prev_reference_no: string | null
+            title: string | null
+            reference_number: string | null
+            contract_number: string | null
+            diavgeia_ada: string | null
             contract_type: string | null
             procedure_type_value: string | null
             organization_key: string | null
-          }>('procurement', 'id, contract_signed_date, start_date, end_date, no_end_date, contract_type, procedure_type_value, organization_key'),
+          }>('procurement', 'id, contract_signed_date, start_date, end_date, no_end_date, cancelled, next_ref_no, prev_reference_no, title, reference_number, contract_number, diavgeia_ada, contract_type, procedure_type_value, organization_key'),
           fetchAll<{
             procurement_id: number
             amount_without_vat: number | null
@@ -436,7 +461,6 @@ export default function ContractAnalysis() {
         const monthlyMap = new Map<string, { count: number; total_k: number }>()
         const contractTypeMap = new Map<string, { count: number; total: number }>()
         const procedureMap = new Map<string, { count: number; total: number }>()
-        const orgAggMap = new Map<string, { count: number; total: number }>()
         const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
         const sectionRows: SectionRow[] = []
         const amounts: number[] = []
@@ -448,7 +472,24 @@ export default function ContractAnalysis() {
 
         const monthKeys: string[] = []
 
+        const prevRefSet = new Set<string>()
         for (const p of procurements) {
+          const prevRef = String(p.prev_reference_no ?? '').trim()
+          if (prevRef) prevRefSet.add(prevRef)
+        }
+
+        const dedupedProcurements = new Map<string, (typeof procurements)[number]>()
+        for (const p of procurements) {
+          if (p.cancelled) continue
+          if (String(p.next_ref_no ?? '').trim()) continue
+          const referenceNumber = String(p.reference_number ?? '').trim()
+          if (referenceNumber && prevRefSet.has(referenceNumber)) continue
+          const identity = dedupeIdentity(p)
+          const existing = dedupedProcurements.get(identity)
+          if (!existing || p.id > existing.id) dedupedProcurements.set(identity, p)
+        }
+
+        for (const p of dedupedProcurements.values()) {
           const signedDate = cleanDateString(p.contract_signed_date)
           const startDate = cleanDateString(p.start_date) ?? signedDate
           const endDate = cleanDateString(p.end_date)
@@ -512,11 +553,6 @@ export default function ContractAnalysis() {
           pr.total += amount
           procedureMap.set(procedure, pr)
 
-          const oa = orgAggMap.get(orgName) ?? { count: 0, total: 0 }
-          oa.count += 1
-          oa.total += amount
-          orgAggMap.set(orgName, oa)
-
           for (const cpv of cpvsForProc) {
             const ca = cpvAggMap.get(cpv) ?? { count: 0, procedures: new Map<string, number>() }
             ca.count += 1
@@ -558,11 +594,6 @@ export default function ContractAnalysis() {
         const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
         const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
 
-        const topOrgs = [...orgAggMap.entries()]
-          .map(([name, v]) => ({ name, contracts: v.count, total_m: v.total / 1_000_000 }))
-          .sort((a, b) => b.total_m - a.total_m)
-          .slice(0, 8)
-
         const topCpv = [...cpvAggMap.entries()]
           .map(([cpv, v]) => ({
             cpv,
@@ -588,7 +619,7 @@ export default function ContractAnalysis() {
           monthly,
           contractTypeData,
           procedureData,
-          topOrgs,
+          topOrgs: [],
           topCpv,
           sectionRows,
           totalContracts,
@@ -613,6 +644,36 @@ export default function ContractAnalysis() {
     return () => { cancelled = true }
   }, [])
 
+  useEffect(() => {
+    let cancelled = false
+
+    ;(async () => {
+      try {
+        const rpcYear = analysisPeriod === 'all' ? null : Number(analysisPeriod)
+        const { data, error } = await supabase.rpc('get_analysis_top_authorities', {
+          p_year: rpcYear,
+          p_year_start: 2024,
+        })
+        if (error) throw error
+        if (cancelled) return
+        setTopAuthorities(
+          ((data ?? []) as Array<{ authority_name: string | null; contracts: number | null; total_m: number | string | null }>)
+            .map((row) => ({
+              name: String(row.authority_name ?? '—').trim() || '—',
+              contracts: Number(row.contracts ?? 0),
+              total_m: Number(row.total_m ?? 0),
+            })),
+        )
+      } catch (e) {
+        if (cancelled) return
+        setTopAuthorities([])
+        setAnalysisError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης ανάλυσης')
+      }
+    })()
+
+    return () => { cancelled = true }
+  }, [analysisPeriod])
+
   const monthly = useMemo(() => analysis?.monthly ?? [], [analysis])
 
   const sectionFiltered = useMemo(() => {
@@ -636,7 +697,6 @@ export default function ContractAnalysis() {
     const totalContracts = rows.length
     const contractTypeMap = new Map<string, { count: number; total: number }>()
     const procedureMap = new Map<string, { count: number; total: number }>()
-    const orgAggMap = new Map<string, { count: number; total: number }>()
     const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
 
     for (const row of rows) {
@@ -649,11 +709,6 @@ export default function ContractAnalysis() {
       pr.count += 1
       pr.total += row.amount
       procedureMap.set(row.procedure, pr)
-
-      const oa = orgAggMap.get(row.orgName) ?? { count: 0, total: 0 }
-      oa.count += 1
-      oa.total += row.amount
-      orgAggMap.set(row.orgName, oa)
 
       for (const cpv of row.cpvs) {
         const ca = cpvAggMap.get(cpv) ?? { count: 0, procedures: new Map<string, number>() }
@@ -681,10 +736,6 @@ export default function ContractAnalysis() {
 
     const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
     const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
-    const topOrgs = [...orgAggMap.entries()]
-      .map(([name, v]) => ({ name, contracts: v.count, total_m: v.total / 1_000_000 }))
-      .sort((a, b) => b.total_m - a.total_m)
-      .slice(0, 8)
 
     const topCpv = [...cpvAggMap.entries()]
       .map(([cpv, v]) => {
@@ -701,8 +752,8 @@ export default function ContractAnalysis() {
       .sort((a, b) => b.count - a.count)
       .slice(0, 8)
 
-    return { contractTypeData, procedureData, topOrgs, topCpv }
-  }, [analysis, analysisPeriod])
+    return { contractTypeData, procedureData, topOrgs: topAuthorities, topCpv }
+  }, [analysis, analysisPeriod, topAuthorities])
 
   const maxContractTypeM = Math.max(1, ...sectionFiltered.contractTypeData.map(d => d.total_m))
   const maxProcM = Math.max(1, ...sectionFiltered.procedureData.map(d => d.total_m))

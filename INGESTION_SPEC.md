@@ -88,6 +88,11 @@ Ingestion behavior (organization key):
 7. Incremental identity check before insert:
    - identity priority: `reference_number` -> `diavgeia_ada` -> `(contract_number, organization_key)` -> fallback `(organization_key, submission_at, title)`
    - if identity already exists, row is not reinserted; existing `procurement.id` is reused for dependent tables.
+8. Organization seed exclusions:
+   - canonical municipality entities are excluded from `organization`
+   - canonical region entities are excluded from `organization`
+   - regional / decentralized organizations remain in `organization` with their `authority_scope`
+   - example: `ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ... (ΑΟΠΙΝ) Α.Ε.` must remain an organization row with `authority_scope='region'`
 
 Responsible functions:
 - `build_maps()`
@@ -150,10 +155,23 @@ Ingestion behavior:
 4. Upsert rule:
    - unique key: `payment.procurement_id`
    - on conflict: update all mapped payment fields.
-5. After payment upsert, `procurement.payment_id` is backfilled from `payment.id`.
+5. Contract-chain deduplication for amount metrics:
+   - raw `data/raw_procurements.csv` remains unchanged
+   - in the ingest dataframe, `totalCostWithoutVAT` is treated as zero for superseded contracts:
+     - if `referenceNumber` appears in another row's `prevReferenceNo`
+     - if the row itself has non-empty `nextRefNo`
+6. After payment upsert, `procurement.payment_id` is backfilled from `payment.id`.
+7. Incremental cleanup:
+   - after payment upsert, loader zeroes `payment.amount_without_vat` only for affected references in the current batch
+   - affected refs are:
+     - the new rows' `prevReferenceNo`
+     - the new rows' own `referenceNumber` when they have `nextRefNo`
 
 Responsible functions:
 - `payment_row_from_raw()`
+- `apply_procurement_chain_dedup()`
+- `affected_reference_numbers_for_row()`
+- `zero_superseded_payment_amounts()`
 - `main()` (payment upsert + procurement backfill)
 
 ---
@@ -200,7 +218,11 @@ Status:
 - Implemented, pending your table-by-table review.
 
 Link rule:
-- `procurement.diavgeia_ada = diavgeia.ada`
+- primary link: `procurement.diavgeia_ada = diavgeia.ada`
+- current practical note:
+  - some KIMDIS rows do not populate `diavgeia_ada`
+  - observed matches can also exist on `decision_related_ada` / `contract_related_ada`
+  - bridge quality therefore depends on which ADA field is populated in the raw source
 
 Responsible code:
 - SQL block in `main()`

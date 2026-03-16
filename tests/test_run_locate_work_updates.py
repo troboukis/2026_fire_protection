@@ -43,7 +43,7 @@ def test_load_and_save_state_round_trip(tmp_path: Path):
     assert state["processed_reference_numbers"] == ["A", "B"]
 
 
-def test_fetch_candidate_procurements_filters_already_processed(monkeypatch):
+def test_fetch_candidate_procurements_filters_already_processed_by_default(monkeypatch):
     rows = [
         ("26SYMV001", "ΔΗΜΟΣ ΔΟΚΙΜΗΣ", "Τίτλος 1"),
         ("26SYMV002", "ΑΔΜΗΕ", "Τίτλος 2"),
@@ -59,6 +59,34 @@ def test_fetch_candidate_procurements_filters_already_processed(monkeypatch):
     }]
 
 
+def test_fetch_candidate_procurements_can_reprocess_missing_rows(monkeypatch):
+    rows = [
+        ("26SYMV001", "ΔΗΜΟΣ ΔΟΚΙΜΗΣ", "Τίτλος 1"),
+        ("26SYMV002", "ΑΔΜΗΕ", "Τίτλος 2"),
+    ]
+    monkeypatch.setattr(mod.psycopg2, "connect", lambda db_url: FakeConnection(rows))
+
+    out = mod.fetch_candidate_procurements(
+        "postgresql://x",
+        {"26SYMV001"},
+        limit=None,
+        reprocess_missing_works=True,
+    )
+
+    assert out == [
+        {
+            "reference_number": "26SYMV001",
+            "organization_value": "ΔΗΜΟΣ ΔΟΚΙΜΗΣ",
+            "title": "Τίτλος 1",
+        },
+        {
+            "reference_number": "26SYMV002",
+            "organization_value": "ΑΔΜΗΕ",
+            "title": "Τίτλος 2",
+        },
+    ]
+
+
 def test_main_logs_and_updates_state_for_success_and_no_findings(tmp_path: Path, monkeypatch):
     state_file = tmp_path / "state.json"
     log_file = tmp_path / "log.csv"
@@ -69,10 +97,11 @@ def test_main_logs_and_updates_state_for_success_and_no_findings(tmp_path: Path,
         log_csv=log_file,
         limit=None,
         reference_number=[],
+        reprocess_missing_works=False,
         debug=False,
     ))
     monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")
-    monkeypatch.setattr(mod, "fetch_candidate_procurements", lambda db_url, already_processed, limit: [
+    monkeypatch.setattr(mod, "fetch_candidate_procurements", lambda db_url, already_processed, limit, reprocess_missing_works=False: [
         {"reference_number": "26SYMV001", "organization_value": "ΔΗΜΟΣ ΔΟΚΙΜΗΣ", "title": "A"},
         {"reference_number": "26SYMV002", "organization_value": "ΑΔΜΗΕ", "title": "B"},
     ])
@@ -102,10 +131,11 @@ def test_main_raises_on_any_processing_error(tmp_path: Path, monkeypatch):
         log_csv=log_file,
         limit=None,
         reference_number=[],
+        reprocess_missing_works=False,
         debug=False,
     ))
     monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")
-    monkeypatch.setattr(mod, "fetch_candidate_procurements", lambda db_url, already_processed, limit: [
+    monkeypatch.setattr(mod, "fetch_candidate_procurements", lambda db_url, already_processed, limit, reprocess_missing_works=False: [
         {"reference_number": "26SYMV003", "organization_value": "ΠΕΡΙΦΕΡΕΙΑ ΔΟΚΙΜΗΣ", "title": "C"},
     ])
     monkeypatch.setattr(mod, "process_reference", lambda reference_number, db_url, debug: (_ for _ in ()).throw(RuntimeError("boom")))
@@ -127,6 +157,7 @@ def test_main_processes_explicit_reference_numbers_without_candidate_query(tmp_p
         log_csv=log_file,
         limit=None,
         reference_number=["26symv001", "26SYMV002, 26SYMV003"],
+        reprocess_missing_works=False,
         debug=False,
     ))
     monkeypatch.setattr(mod, "resolve_database_url", lambda db_path: "postgresql://x")

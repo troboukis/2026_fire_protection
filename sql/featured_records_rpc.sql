@@ -91,6 +91,12 @@ proc_ranked AS (
   LEFT JOIN public.beneficiary b
     ON b.beneficiary_vat_number = py.beneficiary_vat_number
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date BETWEEN make_date(p_year_main, 1, 1) AND make_date(p_year_main, 12, 31)
     AND NULLIF(TRIM(py.beneficiary_vat_number), '') IS NOT NULL
 ),

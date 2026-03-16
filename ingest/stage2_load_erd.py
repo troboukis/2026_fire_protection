@@ -599,7 +599,7 @@ def seed_organization_rows(b: CsvBundle) -> list[tuple]:
         value_norms.discard(None)
         source_key_norm = t_up(source_key) or ""
 
-        if authority_scope in {"municipality", "region"}:
+        if authority_scope == "municipality":
             continue
         if source_key_norm.startswith("ΔΗΜΟΣ::") or any(v in municipality_aliases for v in value_norms):
             continue

@@ -85,6 +85,12 @@ direct_municipality AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND p.municipality_key = p_municipality_key
@@ -129,6 +135,12 @@ attributed_organization AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND p.municipality_key = p_municipality_key
@@ -175,6 +187,12 @@ coverage_organization AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND COALESCE(org.authority_scope, 'other') <> 'national'
@@ -218,6 +236,12 @@ regional_organization AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND p.organization_key IS NOT NULL

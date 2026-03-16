@@ -42,6 +42,11 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help="Specific reference number to process. Repeat the flag to process multiple refs; bypasses state filtering.",
     )
+    parser.add_argument(
+        "--reprocess-missing-works",
+        action="store_true",
+        help="Ignore state tracking and retry procurements that are missing rows in public.works.",
+    )
     parser.add_argument("--debug", action="store_true", help="Enable verbose per-document logging")
     return parser.parse_args()
 
@@ -88,7 +93,12 @@ def append_log_rows(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def fetch_candidate_procurements(db_url: str, already_processed: set[str], limit: int | None) -> list[dict]:
+def fetch_candidate_procurements(
+    db_url: str,
+    already_processed: set[str],
+    limit: int | None,
+    reprocess_missing_works: bool = False,
+) -> list[dict]:
     conn = psycopg2.connect(db_url)
     cur = conn.cursor()
     cur.execute(
@@ -132,7 +142,11 @@ def fetch_candidate_procurements(db_url: str, already_processed: set[str], limit
             "title": str(title or "").strip(),
         }
         for reference_number, organization_value, title in cur.fetchall()
-        if str(reference_number or "").strip() and str(reference_number).strip() not in already_processed
+        if str(reference_number or "").strip()
+        and (
+            reprocess_missing_works
+            or str(reference_number).strip() not in already_processed
+        )
     ]
     cur.close()
     conn.close()
@@ -175,7 +189,12 @@ def main() -> None:
             for reference_number in explicit_reference_numbers
         ]
     else:
-        candidates = fetch_candidate_procurements(db_url, processed_refs, args.limit)
+        candidates = fetch_candidate_procurements(
+            db_url,
+            processed_refs,
+            args.limit,
+            reprocess_missing_works=args.reprocess_missing_works,
+        )
 
     run_started_at = datetime.now(timezone.utc).isoformat()
     log_rows: list[dict] = []
