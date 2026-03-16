@@ -2,7 +2,25 @@ from __future__ import annotations
 
 import pandas as pd
 
-from ingest.stage2_load_erd import organization_lookup_candidates, procurement_rows, region_lookup_candidates
+from ingest.stage2_load_erd import (
+    affected_reference_numbers_for_row,
+    apply_procurement_chain_dedup,
+    organization_lookup_candidates,
+    procurement_rows,
+    region_lookup_candidates,
+)
+
+
+def empty_procurement_context():
+    return {
+        "org_map": {},
+        "organization_lookup": {},
+        "region_lookup": {},
+        "municipality_lookup": {},
+        "municipality_region_lookup": {},
+        "municipality_alias_lookup": {},
+        "org_municipality_coverage_lookup": {},
+    }
 
 
 def test_organization_lookup_candidates_normalize_municipal_labels():
@@ -32,10 +50,10 @@ def test_procurement_rows_falls_back_to_normalized_municipality_name():
 
     rows = procurement_rows(
         raw=raw,
-        org_map={},
-        organization_lookup={},
-        region_lookup={},
-        municipality_lookup={"ΧΑΛΚΗΔΟΝΟΣ": "9038"},
+        **{
+            **empty_procurement_context(),
+            "municipality_lookup": {"ΧΑΛΚΗΔΟΝΟΣ": "9038"},
+        },
     )
 
     assert rows[0][49] is None
@@ -56,11 +74,44 @@ def test_procurement_rows_falls_back_to_region_lookup_from_org_label():
 
     rows = procurement_rows(
         raw=raw,
-        org_map={},
-        organization_lookup={},
-        region_lookup={"ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ", "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ"},
-        municipality_lookup={},
+        **{
+            **empty_procurement_context(),
+            "region_lookup": {"ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ", "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ"},
+        },
     )
 
     assert rows[0][48] == "ΙΟΝΙΩΝ ΝΗΣΩΝ"
     assert rows[0][49] is None
+
+
+def test_apply_procurement_chain_dedup_zeroes_superseded_and_forward_linked_amounts():
+    raw = pd.DataFrame(
+        [
+            {"referenceNumber": "A", "prevReferenceNo": "", "nextRefNo": "", "totalCostWithoutVAT": "100"},
+            {"referenceNumber": "B", "prevReferenceNo": "A", "nextRefNo": "", "totalCostWithoutVAT": "200"},
+            {"referenceNumber": "C", "prevReferenceNo": "", "nextRefNo": "D", "totalCostWithoutVAT": "300"},
+            {"referenceNumber": "D", "prevReferenceNo": "C", "nextRefNo": "", "totalCostWithoutVAT": "400"},
+            {"referenceNumber": "E", "prevReferenceNo": "", "nextRefNo": "", "totalCostWithoutVAT": "500"},
+        ]
+    )
+
+    deduped = apply_procurement_chain_dedup(raw)
+
+    amounts = dict(zip(deduped["referenceNumber"], deduped["totalCostWithoutVAT"]))
+    assert amounts["A"] == "0"
+    assert amounts["B"] == "200"
+    assert amounts["C"] == "0"
+    assert amounts["D"] == "400"
+    assert amounts["E"] == "500"
+
+
+def test_affected_reference_numbers_for_row_targets_only_superseded_contracts():
+    row = pd.Series(
+        {
+            "referenceNumber": "B",
+            "prevReferenceNo": "A",
+            "nextRefNo": "C",
+        }
+    )
+
+    assert affected_reference_numbers_for_row(row) == {"A", "B"}
