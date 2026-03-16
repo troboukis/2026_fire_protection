@@ -62,6 +62,43 @@
 - Υλοποίηση:
 - `src/fetch_diavgeia.py` (`EXCLUDED_ORG_NAME_CLEAN_RAW`, `filter_excluded_org_rows`, `record_has_excluded_org`)
 
+### 6. KIMDIS contract chains (`prevReferenceNo` / `nextRefNo`) and double counting
+
+- Πρόβλημα:
+- Το KIMDIS raw feed περιέχει αλυσίδες συμβάσεων όπου μια παλιότερη σύμβαση τροποποιείται / επεκτείνεται / αντικαθίσταται από νέα σύμβαση με νέο `referenceNumber`.
+- Αν αθροίζονται όλα τα rows όπως είναι, γίνεται double counting στα ποσά και inflated `contract_count`.
+- Απόφαση:
+- Δεν αλλάζουμε το raw `data/raw_procurements.csv`.
+- Στο ingest layer μηδενίζεται το `amount_without_vat` για superseded συμβάσεις:
+- όταν ένα `referenceNumber` εμφανίζεται ως `prevReferenceNo` σε νεότερο row
+- όταν το ίδιο το row έχει μη κενό `nextRefNo`
+- Στα frontend RPCs, οι superseded συμβάσεις εξαιρούνται και από τα counts/lists:
+- exclude αν `next_ref_no IS NOT NULL`
+- exclude αν υπάρχει άλλο procurement με `prev_reference_no = reference_number`
+- Scope:
+- ingest / DB / frontend
+- Υλοποίηση:
+- `ingest/stage2_load_erd.py`
+- `sql/contracts_page_rpc.sql`
+- `sql/021_region_contracts_rpc.sql`
+- `sql/024_municipality_contracts_rpc.sql`
+- `sql/featured_records_rpc.sql`
+- `sql/hero_section_rpc.sql`
+
+### 7. Regional organizations must remain `organization` entities
+
+- Πρόβλημα:
+- Regional organizations όπως ο `ΑΟΠΙΝ` πρέπει να εμφανίζονται ως organizations με `authority_scope='region'`, όχι να υποβιβάζονται σε canonical region rows.
+- Όταν λείπει το `organization_key`, τα RPCs πέφτουν σε region fallback labels όπως `ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ`.
+- Απόφαση:
+- Στο organization seeding αποκλείονται μόνο canonical δήμοι / canonical περιφέρειες.
+- Δεν αποκλείονται organizations μόνο και μόνο επειδή το `authority_scope` τους είναι `region` ή `decentralized`.
+- Scope:
+- ingest / DB / frontend display
+- Υλοποίηση:
+- `ingest/stage2_load_erd.py` (`seed_organization_rows`)
+- `scripts/backfill_procurement_geography.py`
+
 ## Open / Next
 
 - Προσθήκη manual override registry για ποσά (π.χ. `ADA -> corrected amount`) σε separate CSV/YAML.

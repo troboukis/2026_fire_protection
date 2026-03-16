@@ -3,11 +3,13 @@ from __future__ import annotations
 import pandas as pd
 
 from ingest.stage2_load_erd import (
+    CsvBundle,
     affected_reference_numbers_for_row,
     apply_procurement_chain_dedup,
     organization_lookup_candidates,
     procurement_rows,
     region_lookup_candidates,
+    seed_organization_rows,
 )
 
 
@@ -115,3 +117,53 @@ def test_affected_reference_numbers_for_row_targets_only_superseded_contracts():
     )
 
     assert affected_reference_numbers_for_row(row) == {"A", "B"}
+
+
+def test_seed_organization_rows_keeps_regional_organizations_as_organizations():
+    bundle = CsvBundle(
+        raw=pd.DataFrame(),
+        diav=pd.DataFrame(),
+        fire=pd.DataFrame(),
+        fund=pd.DataFrame(
+            columns=[
+                "region_id",
+                "municipality_id",
+                "source_entity_type",
+                "source_value",
+                "normalized_value",
+                "source_system",
+                "source_key",
+                "notes",
+            ]
+        ),
+        org_map=pd.DataFrame(
+            [
+                {
+                    "org_type": "ΝΠΙΔ",
+                    "org_name_clean": "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+                    "authority_level": "region",
+                }
+            ]
+        ),
+        region_map=pd.DataFrame(
+            [{"region_id": "ΙΟΝΙΩΝ ΝΗΣΩΝ"}]
+        ),
+        expanded_map=pd.DataFrame(
+            [
+                {
+                    "source_entity_type": "organization",
+                    "source_value": "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+                    "normalized_value": "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+                    "source_system": "kimdis",
+                    "source_key": "ΝΠΙΔ::ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.",
+                    "notes": "org_type=ΝΠΙΔ",
+                }
+            ]
+        ),
+    )
+
+    rows = seed_organization_rows(bundle)
+
+    assert len(rows) == 1
+    assert rows[0][1] == "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε."
+    assert rows[0][3] == "region"

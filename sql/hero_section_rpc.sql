@@ -55,6 +55,12 @@ BEGIN
     FROM public.procurement p
     JOIN pay_by_proc pp ON pp.procurement_id = p.id
     WHERE p.contract_signed_date IS NOT NULL
+      AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+      AND NOT EXISTS (
+        SELECT 1
+        FROM public.procurement p2
+        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+      )
   )
   SELECT MAX(contract_signed_date)
   INTO v_as_of_date
@@ -124,6 +130,12 @@ BEGIN
     FROM public.procurement p
     JOIN pay_by_proc pp ON pp.procurement_id = p.id
     WHERE p.contract_signed_date IS NOT NULL
+      AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+      AND NOT EXISTS (
+        SELECT 1
+        FROM public.procurement p2
+        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+      )
   ),
   rows_base AS (
     SELECT
@@ -175,6 +187,12 @@ BEGIN
     FROM public.procurement p
     JOIN pay_by_proc pp ON pp.procurement_id = p.id
     WHERE p.contract_signed_date IS NOT NULL
+      AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+      AND NOT EXISTS (
+        SELECT 1
+        FROM public.procurement p2
+        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+      )
   ),
   rows_base AS (
     SELECT
@@ -230,6 +248,12 @@ BEGIN
     FROM public.procurement p
     JOIN pay_by_proc pp ON pp.procurement_id = p.id
     WHERE p.contract_signed_date IS NOT NULL
+      AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+      AND NOT EXISTS (
+        SELECT 1
+        FROM public.procurement p2
+        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+      )
   ),
   rows_base AS (
     SELECT pr.id, pr.contract_signed_date AS d

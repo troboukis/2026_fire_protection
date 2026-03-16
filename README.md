@@ -703,6 +703,8 @@ Incremental behavior (Diavgeia-style):
 - fetches from the effective start date forward and then merges with existing CSV using dedupe
 - use `--full-refresh` to ignore state and refetch the whole window
 - CSV merge dedupe strategy is full-row dedupe after normalizing list/dict values to stable JSON strings
+- contract-chain dedupe is not written back to the raw CSV
+- instead, it is applied at DB ingest / reporting time using `prevReferenceNo` and `nextRefNo`
 
 Rebuild CSV from existing backup only (no API call):
 
@@ -780,6 +782,13 @@ Run `locate_work` updates for newly ingested eligible procurements:
 python src/run_locate_work_updates.py
 ```
 
+Recovery-only mode for contracts that are missing rows in `public.works` even if they already exist in the state file:
+
+```bash
+python src/run_locate_work_updates.py --reprocess-missing-works
+python src/run_locate_work_updates.py --reprocess-missing-works --limit 20
+```
+
 Force rerun specific reference numbers, bypassing the state file and candidate-selection query:
 
 ```bash
@@ -789,6 +798,23 @@ python src/run_locate_work_updates.py --reference-number "26SYMV018515731,26SYMV
 ```
 
 Diavgeia procurement tables are still kept for future extensions.
+
+### KIMDIS contract-chain handling (`prevReferenceNo`, `nextRefNo`)
+
+The raw KIMDIS CSV may contain contract chains where an older contract is amended, extended, or superseded by a newer contract with a new `referenceNumber`.
+
+Rules used by the ingest / app layer:
+- keep the raw CSV unchanged for auditability
+- zero `payment.amount_without_vat` for superseded contracts
+- exclude superseded contracts from frontend counts / lists
+
+A contract is treated as superseded when:
+- its `referenceNumber` appears as another row's `prevReferenceNo`
+- or the row itself has non-empty `nextRefNo`
+
+Effect:
+- only the terminal contract in the chain keeps monetary weight
+- older links remain visible in raw source data but do not inflate totals or `contract_count`
 
 The web-app procurement layer now uses a two-table model:
 

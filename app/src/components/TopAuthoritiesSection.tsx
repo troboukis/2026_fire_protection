@@ -34,7 +34,6 @@ export default function TopAuthoritiesSection({ rows, maxValue }: Props) {
                   </div>
                   <div className="ca-bar-meta">
                     <span className="ca-mono">{org.contracts.toLocaleString('el-GR')} συμβάσεις</span>
-                    <strong>{org.total_m.toFixed(1)}M €</strong>
                   </div>
                 </div>
               ))}

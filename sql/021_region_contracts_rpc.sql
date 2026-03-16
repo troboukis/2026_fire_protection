@@ -94,6 +94,12 @@ direct_region AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND p.region_key = p_region_key
@@ -141,6 +147,12 @@ coverage_region AS (
     LIMIT 1
   ) org ON TRUE
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date IS NOT NULL
     AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
     AND COALESCE(org.authority_scope, 'other') IN ('region', 'decentralized')

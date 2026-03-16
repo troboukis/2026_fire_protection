@@ -403,3 +403,6 @@ LEAST(τρέχουσα ημέρα, τελευταία ημέρα μήνα)
    React + Supabase + RPC
 
 Τα ποσά στο frontend υπολογίζονται μετά από server-side deduplication, ώστε να αποφεύγεται double counting.
+Για KIMDIS contract chains, το dedupe δεν βασίζεται μόνο σε business-key row ranking αλλά και στα `prevReferenceNo` / `nextRefNo`:
+- superseded συμβάσεις μηδενίζονται στο `payment.amount_without_vat`
+- superseded συμβάσεις εξαιρούνται και από `contract_count` / frontend contract lists
