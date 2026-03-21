@@ -363,10 +363,10 @@ export default function MapSelectionPanel({
 
   const subtitle =
     !kind
-      ? 'Μπορείτε να επιλέξετε Δήμο στον χάρτη ή Δήμο / Περιφέρεια χρησιμοποιώντας τα αντίστοιχα φίλτρα'
+      ? 'Μπορείτε να επιλέξετε δήμο στον χάρτη ή με τα αντίστοιχα φίλτρα.'
       : kind === 'municipality'
-        ? `Το ${currentYear} έχουν δημοσιευθεί ${(municipalityCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που αφορούν στην πρόληψη ή αντιμετώπιση δασικών πυρκαγιών.`
-        : `Το ${currentYear} έχουν δημοσιευθεί ${(regionCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που αφορούν στην πρόληψη ή αντιμετώπιση δασικών πυρκαγιών στην επιλεγμένη περιφέρεια.`
+        ? `Το ${currentYear} έχουν δημοσιευθεί ${(municipalityCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών.`
+        : `Το ${currentYear} έχουν δημοσιευθεί ${(regionCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών στην επιλεγμένη περιφέρεια.`
 
   return (
     <aside className="maps-selection-panel" data-selection-source={source ?? 'none'}>
@@ -374,7 +374,7 @@ export default function MapSelectionPanel({
       <EditorialLead eyebrow="Ανάλυση" title={title} subtitle={subtitle} />
 
       {kind === 'municipality' && previewGeometry && (
-        <div className="maps-selection-panel__shape" aria-label="Polygon Δήμου">
+        <div className="maps-selection-panel__shape" aria-label="Πολύγωνο δήμου">
           {municipalityFirePoints.length > 0 && (
             <div className="maps-selection-panel__fire-toggle" aria-label="Τρόπος προβολής πυρκαγιών">
               <button

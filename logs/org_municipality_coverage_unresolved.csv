@@ -856,7 +856,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ΔΗΜΟΣ,ΗΛΙΟΥΠΟΛΗΣ,ΑΤΤΙΚΗΣ,9191,Ηλιούπολης,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΗΡΑΚΛΕΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9052,Ηρακλείας,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΗΡΑΚΛΕΙΟΥ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,municipality,mapped_municipality_id
-ΔΗΜΟΣ,ΗΡΑΚΛΕΙΟΥ (ΚΡΗΤΗΣ),,9305,,municipality,mapped_municipality_id
+ΔΗΜΟΣ,ΗΡΑΚΛΕΙΟΥ (ΚΡΗΤΗΣ),ΚΡΗΤΗΣ,9305,Ηρακλείου,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΘΑΣΟΥ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9011,Θάσου,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΘΕΡΜΑΙΚΟΥ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9029,Θερμαϊκού,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΘΕΡΜΗΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9030,Θέρμης,municipality,mapped_municipality_id
@@ -1037,7 +1037,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ,ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΧΑΝΙΩΝ,ΚΡΗΤΗΣ,9325,Χανίων,municipality,mapped_municipality_id
 ΔΗΜΟΤΙΚΟ ΒΡΕΦΟΚΟΜΕΙΟ,ΑΘΗΝΩΝ,ΑΤΤΙΚΗΣ,9186,Αθηναίων,municipality,mapped_municipality_id
 ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΚΑΒΑΛΑΣ-ΔΗ.ΠΕ.ΘΕ. ΚΑΒΑΛΑΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9012,Καβάλας,municipality,mapped_municipality_id
-ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9170,Ηρακλείου,region,rule_region_from_name
+ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,region,rule_region_from_name
 ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,region,rule_region_from_name
 ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,region,rule_region_from_name
 ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,region,rule_region_from_name
@@ -1189,7 +1189,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ΠΕΡΙΦΕΡΕΙΑ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9058,Νέας Προποντίδας,region,exact
 ΠΕΡΙΦΕΡΕΙΑ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9059,Πολυγύρου,region,exact
 ΠΕΡΙΦΕΡΕΙΑ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9060,Σιθωνίας,region,exact
-ΠΕΡΙΦΕΡΕΙΑ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9170,Ηρακλείου,region,exact
+ΠΕΡΙΦΕΡΕΙΑ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,region,exact
 ΠΕΡΙΦΕΡΕΙΑ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,region,exact
 ΠΕΡΙΦΕΡΕΙΑ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,region,exact
 ΠΕΡΙΦΕΡΕΙΑ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,region,exact
@@ -1843,7 +1843,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9063,Καστοριάς,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9064,Νεστορίου,,org_coverage_exact_or_variant
-,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9066,Βοϊου,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9067,Εορδαίας,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9068,Κοζάνης,,org_coverage_exact_or_variant
@@ -1963,7 +1963,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΚΑΤΕΡΙΝΗΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9047,Κατερίνης,,org_coverage_exact_or_variant
 ,ΚΑΒΑΛΑΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9012,Καβάλας,,org_coverage_exact_or_variant
 ,ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9006,Αλεξανδρούπολης,,org_coverage_exact_or_variant
-,ΚΡΗΤΗΣ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,,org_coverage_exact_or_variant
+,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
@@ -2146,7 +2146,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΤΥΡΝΑΒΟΥ,ΘΕΣΣΑΛΙΑΣ,9102,Τυρνάβου,,org_coverage_exact_or_variant
 ,ΓΟΡΤΥΝΑΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΣΑΜΟΥ,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,9264,Σάμου,,org_coverage_exact_or_variant
-,ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,ΣΟΥΛΙΟΥ,ΗΠΕΙΡΟΥ,9078,Σουλίου,,org_coverage_exact_or_variant
 ,ΑΓΡΑΦΩΝ,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,9156,Αγράφων,,org_coverage_exact_or_variant
 ,ΣΕΡΡΩΝ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9054,Σερρών,,org_coverage_exact_or_variant
@@ -2168,7 +2168,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΛΕΒΑΔΕΩΝ,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,9145,Λεβαδέων,,org_coverage_exact_or_variant
 ,ΣΠΕΤΣΩΝ,ΑΤΤΙΚΗΣ,9212,Σπετσών,,org_coverage_exact_or_variant
 ,ΚΑΡΠΑΘΟΥ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,9280,Καρπάθου,,org_coverage_exact_or_variant
-,ΚΡΗΤΗΣ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,,org_coverage_exact_or_variant
+,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
@@ -2263,7 +2263,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9063,Καστοριάς,,org_coverage_exact_or_variant
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9064,Νεστορίου,,org_coverage_exact_or_variant
-,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9066,Βοϊου,,org_coverage_exact_or_variant
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9067,Εορδαίας,,org_coverage_exact_or_variant
 ,"ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9068,Κοζάνης,,org_coverage_exact_or_variant
@@ -2532,7 +2532,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΑΜΟΡΓΟΥ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,9291,Αμοργού,,org_coverage_exact_or_variant
 ,ΔΕΣΚΑΤΗΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,ΝΕΜΕΑΣ,ΠΕΛΟΠΟΝΝΗΣΟΥ,9245,Νεμέας,,org_coverage_exact_or_variant
-,ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ,,9305,Ηρακλείου,,org_coverage_exact_or_variant
+,ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΜΥΚΗΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9016,Μύκης,,org_coverage_exact_or_variant
 ,ΝΙΣΥΡΟΥ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,9285,Νισύρου,,org_coverage_exact_or_variant
 ,ΧΑΛΑΝΔΡΙΟΥ,ΑΤΤΙΚΗΣ,9178,Χαλανδρίου,,org_coverage_exact_or_variant
@@ -2623,7 +2623,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΔΙΣΤΟΜΟΥ - ΑΡΑΧΟΒΑΣ - ΑΝΤΙΚΥΡΑΣ,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,9143,Διστόμου-Αράχοβας - Αντίκυρας,,org_coverage_exact_or_variant
 ,ΝΙΚΑΙΑΣ - ΑΓΙΟΥ ΙΩΑΝΝΗ ΡΕΝΤΗ,ΑΤΤΙΚΗΣ,9204,Νίκαιας - Αγίου Ι. Ρέντη,,org_coverage_exact_or_variant
 ,ΒΕΡΟΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9024,Βέροιας,,org_coverage_exact_or_variant
-,ΚΡΗΤΗΣ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,,org_coverage_exact_or_variant
+,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
@@ -2759,7 +2759,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9088,Ζηρού,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9089,Πάργας,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9090,Πρέβεζας,,org_coverage_exact_or_variant
-,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,,org_coverage_exact_or_variant
+,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
@@ -3106,7 +3106,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9063,Καστοριάς,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9064,Νεστορίου,,org_coverage_exact_or_variant
-,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9066,Βοϊου,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9067,Εορδαίας,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9068,Κοζάνης,,org_coverage_exact_or_variant
@@ -3238,7 +3238,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9063,Καστοριάς,,org_coverage_exact_or_variant
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9064,Νεστορίου,,org_coverage_exact_or_variant
-,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9066,Βοϊου,,org_coverage_exact_or_variant
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9067,Εορδαίας,,org_coverage_exact_or_variant
 ,"ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9068,Κοζάνης,,org_coverage_exact_or_variant
@@ -3522,7 +3522,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΛΑΥΡΕΩΤΙΚΗΣ,ΑΤΤΙΚΗΣ,9219,Λαυρεωτικής,,org_coverage_exact_or_variant
 ,ΟΡΓΑΝΙΣΜΟΣ ΛΙΜΕΝΟΣ ΕΛΕΥΣΙΝΟΣ Α.Ε,ΑΤΤΙΚΗΣ,9229,Ελευσίνας,,org_coverage_exact_or_variant
 ,ΔΥΤΙΚΗΣ ΑΧΑΙΑΣ,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,9131,Δυτικής Αχαΐας,,org_coverage_exact_or_variant
-,ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ,,9305,Ηρακλείου,,org_coverage_exact_or_variant
+,ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΣΚΥΔΡΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9045,Σκύδρας,,org_coverage_exact_or_variant
 ,ΝΟΤΙΟΥ ΠΗΛΙΟΥ,ΘΕΣΣΑΛΙΑΣ,9107,Νοτίου Πηλίου,,org_coverage_exact_or_variant
 ,ΜΕΓΑΡΕΩΝ,ΑΤΤΙΚΗΣ,9231,Μεγαρέων,,org_coverage_exact_or_variant
@@ -3591,7 +3591,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9062,Δεσκάτης,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9063,Καστοριάς,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9064,Νεστορίου,,org_coverage_exact_or_variant
-,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Ορεστίδος,,org_coverage_exact_or_variant
+,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9065,Άργους - Ορεστικού,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9066,Βοϊου,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9067,Εορδαίας,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9068,Κοζάνης,,org_coverage_exact_or_variant
@@ -3831,7 +3831,7 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
-,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,,9305,Ηρακλείου,,org_coverage_exact_or_variant
+,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9305,Ηρακλείου,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9306,Μαλεβιζίου,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9307,Μινώα Πεδιάδας,,org_coverage_exact_or_variant
 ,Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.,ΚΡΗΤΗΣ,9308,Φαιστού,,org_coverage_exact_or_variant

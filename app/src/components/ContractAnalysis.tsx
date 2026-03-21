@@ -35,6 +35,12 @@ type TopCpvItem = {
   mainProcedurePct: number
 }
 
+type SunburstDatum = {
+  name: string
+  value?: number
+  children?: SunburstDatum[]
+}
+
 type SectionRow = {
   signedDate: string | null
   effectiveStart: string
@@ -350,6 +356,295 @@ function normalizeSearch(str: string): string {
     .replace(/[\u0300-\u036f]/g, '')
     .toUpperCase()
     .trim()
+}
+
+function buildProcedureCpvSunburstData(rows: SectionRow[]): SunburstDatum | null {
+  const procedureToCpvs = new Map<string, Map<string, number>>()
+
+  for (const row of rows) {
+    const cpvs = row.cpvs.length > 0 ? row.cpvs : ['Χωρίς CPV']
+    if (!procedureToCpvs.has(row.procedure)) procedureToCpvs.set(row.procedure, new Map())
+    const cpvMap = procedureToCpvs.get(row.procedure)!
+
+    for (const cpv of cpvs) {
+      cpvMap.set(cpv, (cpvMap.get(cpv) ?? 0) + 1)
+    }
+  }
+
+  const children = [...procedureToCpvs.entries()]
+    .map(([procedure, cpvMap]) => ({
+      name: procedure,
+      children: [...cpvMap.entries()]
+        .map(([cpv, count]) => ({ name: cpv, value: count }))
+        .sort((a, b) => (b.value ?? 0) - (a.value ?? 0) || a.name.localeCompare(b.name, 'el')),
+    }))
+    .sort((a, b) => {
+      const aTotal = a.children.reduce((sum, item) => sum + (item.value ?? 0), 0)
+      const bTotal = b.children.reduce((sum, item) => sum + (item.value ?? 0), 0)
+      return bTotal - aTotal || a.name.localeCompare(b.name, 'el')
+    })
+
+  if (children.length === 0) return null
+
+  return {
+    name: 'Συμβάσεις',
+    children,
+  }
+}
+
+function truncateLabel(label: string, maxLength: number): string {
+  if (label.length <= maxLength) return label
+  return `${label.slice(0, Math.max(0, maxLength - 1)).trimEnd()}…`
+}
+
+function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const svgRef = useRef<SVGSVGElement>(null)
+
+  const draw = useCallback(() => {
+    if (!svgRef.current || !containerRef.current || !data) return
+
+    type ArcSlice = {
+      x0: number
+      x1: number
+      y0: number
+      y1: number
+    }
+
+    type SunburstNode = d3.HierarchyRectangularNode<SunburstDatum> & {
+      current: ArcSlice
+      target: ArcSlice
+    }
+
+    const containerW = containerRef.current.clientWidth
+    if (containerW === 0) return
+
+    const size = Math.max(320, Math.min(containerW, 720))
+    const radius = size / 6
+
+    const rootHierarchy = d3.hierarchy(data)
+      .sum((d) => d.value ?? 0)
+      .sort((a, b) => (b.value ?? 0) - (a.value ?? 0))
+    const root = d3.partition<SunburstDatum>()
+      .size([2 * Math.PI, rootHierarchy.height + 1])(rootHierarchy) as SunburstNode
+
+    root.each((node) => {
+      node.current = { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
+      node.target = { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
+    })
+
+    const procedureNames = data.children?.map((item) => item.name) ?? []
+    const color = d3.scaleOrdinal<string, string>()
+      .domain(procedureNames)
+      .range(['#d3482d', '#244b67', '#b9852f', '#796f63', '#5f8b55', '#8b3a4a'])
+
+    const svg = d3.select(svgRef.current)
+    svg.selectAll('*').remove()
+    svg
+      .attr('viewBox', `${-size / 2} ${-size / 2} ${size} ${size}`)
+      .attr('width', size)
+      .attr('height', size)
+
+    const tooltip = d3.select(containerRef.current).select<HTMLDivElement>('.ca-sunburst-tooltip')
+
+    const arc = d3.arc<ArcSlice>()
+      .startAngle((d) => d.x0)
+      .endAngle((d) => d.x1)
+      .padAngle((d) => Math.min((d.x1 - d.x0) / 2, 0.005))
+      .padRadius(radius * 1.5)
+      .innerRadius((d) => d.y0 * radius)
+      .outerRadius((d) => Math.max(d.y0 * radius, d.y1 * radius - 1))
+
+    const arcVisible = (d: ArcSlice) => d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0
+    const labelVisible = (d: ArcSlice) => d.y1 <= 3 && d.y0 >= 1 && (d.x1 - d.x0) * (d.y1 - d.y0) > 0.14
+    const labelTransform = (d: ArcSlice) => {
+      const x = ((d.x0 + d.x1) / 2) * 180 / Math.PI
+      const y = ((d.y0 + d.y1) / 2) * radius
+      return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`
+    }
+
+    const g = svg.append('g')
+
+    const updateCenter = (node: SunburstNode) => {
+      const total = Number(node.value ?? 0).toLocaleString('el-GR')
+      const label = node.depth === 0 ? 'Διαδικασία -> CPV' : truncateLabel(node.data.name, 28)
+      centerLabel.text(label)
+      centerValue.text(node.depth === 0 ? `${total} εγγραφές` : `${total} συμβάσεις`)
+      centerHint.text(node.depth === 0 ? 'Κλικ στον εσωτερικό δακτύλιο για zoom' : 'Κλικ στο κέντρο για επιστροφή')
+    }
+
+    const path = g.append('g')
+      .selectAll('path')
+      .data(root.descendants().slice(1))
+      .join('path')
+      .attr('fill', (node) => {
+        let current = node
+        while (current.depth > 1 && current.parent) current = current.parent
+        return color(current.data.name)
+      })
+      .attr('fill-opacity', (node) => {
+        if (!arcVisible(node.current)) return 0
+        return node.depth === 1 ? 0.85 : 0.58
+      })
+      .attr('pointer-events', (node) => arcVisible(node.current) ? 'auto' : 'none')
+      .attr('d', (node) => arc(node.current) ?? '')
+
+    path
+      .filter((node) => Boolean(node.children))
+      .style('cursor', 'pointer')
+
+    const label = g.append('g')
+      .attr('pointer-events', 'none')
+      .attr('text-anchor', 'middle')
+      .style('user-select', 'none')
+      .selectAll('text')
+      .data(root.descendants().slice(1))
+      .join('text')
+      .attr('dy', '0.35em')
+      .attr('fill-opacity', (node) => labelVisible(node.current) ? 1 : 0)
+      .attr('transform', (node) => labelTransform(node.current))
+      .attr('class', (node) => `ca-sunburst-label${node.depth === 1 ? ' ca-sunburst-label--inner' : ''}`)
+      .text((node) => truncateLabel(node.data.name, node.depth === 1 ? 18 : 16))
+
+    let focus = root
+
+    const parent = g.append('circle')
+      .datum(root)
+      .attr('r', radius)
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all')
+      .style('cursor', 'pointer')
+
+    const center = g.append('g').attr('class', 'ca-sunburst-center')
+    const centerLabel = center.append('text')
+      .attr('class', 'ca-sunburst-center__label')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+      .attr('y', -10)
+    const centerValue = center.append('text')
+      .attr('class', 'ca-sunburst-center__value')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+      .attr('y', 12)
+    const centerHint = center.append('text')
+      .attr('class', 'ca-sunburst-center__hint')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+      .attr('y', 32)
+
+    updateCenter(root)
+
+    const showTooltip = (event: MouseEvent, node: SunburstNode) => {
+      const rect = containerRef.current!.getBoundingClientRect()
+      const pathText = node.ancestors()
+        .reverse()
+        .slice(1)
+        .map((item) => item.data.name)
+        .join(' -> ')
+      const nodeType = node.depth === 1 ? 'Διαδικασία ανάθεσης' : 'CPV'
+
+      tooltip
+        .style('display', 'block')
+        .style('left', `${event.clientX - rect.left + 12}px`)
+        .style('top', `${event.clientY - rect.top - 8}px`)
+        .html(`<strong>${pathText}</strong><span>${nodeType}</span><em>${Number(node.value ?? 0).toLocaleString('el-GR')} συμβάσεις</em>`)
+    }
+
+    const moveTooltip = (event: MouseEvent) => {
+      const rect = containerRef.current!.getBoundingClientRect()
+      tooltip
+        .style('left', `${event.clientX - rect.left + 12}px`)
+        .style('top', `${event.clientY - rect.top - 8}px`)
+    }
+
+    const hideTooltip = () => {
+      tooltip.style('display', 'none')
+    }
+
+    const clicked = (event: MouseEvent, clickedNode: SunburstNode) => {
+      focus = clickedNode
+      parent.datum(focus.parent ?? root)
+      updateCenter(clickedNode)
+
+      root.each((node) => {
+        node.target = {
+          x0: Math.max(0, Math.min(1, (node.x0 - clickedNode.x0) / (clickedNode.x1 - clickedNode.x0))) * 2 * Math.PI,
+          x1: Math.max(0, Math.min(1, (node.x1 - clickedNode.x0) / (clickedNode.x1 - clickedNode.x0))) * 2 * Math.PI,
+          y0: Math.max(0, node.y0 - clickedNode.depth),
+          y1: Math.max(0, node.y1 - clickedNode.depth),
+        }
+      })
+
+      const duration = event.altKey ? 1500 : 750
+
+      path.transition()
+        .duration(duration)
+        .tween('data', (node) => {
+          const interpolate = d3.interpolate(node.current, node.target)
+          return (t) => {
+            node.current = interpolate(t)
+          }
+        })
+        .attr('fill-opacity', (node) => {
+          if (!arcVisible(node.target)) return 0
+          return node.depth === 1 ? 0.85 : 0.58
+        })
+        .attr('pointer-events', (node) => arcVisible(node.target) ? 'auto' : 'none')
+        .attrTween('d', (node) => () => arc(node.current) ?? '')
+
+      label.transition()
+        .duration(duration)
+        .attr('fill-opacity', (node) => labelVisible(node.target) ? 1 : 0)
+        .attrTween('transform', (node) => () => labelTransform(node.current))
+
+      hideTooltip()
+    }
+
+    parent.on('click', (event, node) => {
+      if (focus === root) return
+      clicked(event as MouseEvent, node as SunburstNode)
+    })
+
+    path
+      .on('click', (event, node) => {
+        if (!node.children) return
+        clicked(event as MouseEvent, node as SunburstNode)
+      })
+      .on('mouseover', (event, node) => {
+        showTooltip(event as MouseEvent, node as SunburstNode)
+        d3.select(event.currentTarget as SVGPathElement).attr('stroke', 'rgba(255,255,255,0.95)').attr('stroke-width', 1.5)
+      })
+      .on('mousemove', (event) => {
+        moveTooltip(event as MouseEvent)
+      })
+      .on('mouseout', (event) => {
+        hideTooltip()
+        d3.select(event.currentTarget as SVGPathElement).attr('stroke', null).attr('stroke-width', null)
+      })
+  }, [data])
+
+  useEffect(() => {
+    if (!data) return
+    draw()
+    const observer = new ResizeObserver(draw)
+    if (containerRef.current) observer.observe(containerRef.current)
+    return () => observer.disconnect()
+  }, [data, draw])
+
+  if (!data) {
+    return <p className="ca-empty-note">Δεν υπάρχουν διαθέσιμα δεδομένα διαδικασίας και CPV για το επιλεγμένο έτος.</p>
+  }
+
+  return (
+    <div
+      ref={containerRef}
+      className="ca-sunburst-wrap"
+      onClick={() => d3.select(containerRef.current).select('.ca-sunburst-tooltip').style('display', 'none')}
+    >
+      <svg ref={svgRef} className="ca-sunburst-svg" aria-label="Zoomable sunburst διαδικασίας ανάθεσης και CPV" />
+      <div className="ca-sunburst-tooltip ca-tooltip app-tooltip" />
+    </div>
+  )
 }
 
 // ── Κύριο component ───────────────────────────────────────────────────
@@ -683,6 +978,7 @@ export default function ContractAnalysis() {
         procedureData: [] as BarItem[],
         topOrgs: [] as TopOrgItem[],
         topCpv: [] as TopCpvItem[],
+        sunburstData: null as SunburstDatum | null,
       }
     }
 
@@ -752,7 +1048,13 @@ export default function ContractAnalysis() {
       .sort((a, b) => b.count - a.count)
       .slice(0, 8)
 
-    return { contractTypeData, procedureData, topOrgs: topAuthorities, topCpv }
+    return {
+      contractTypeData,
+      procedureData,
+      topOrgs: topAuthorities,
+      topCpv,
+      sunburstData: buildProcedureCpvSunburstData(rows),
+    }
   }, [analysis, analysisPeriod, topAuthorities])
 
   const maxContractTypeM = Math.max(1, ...sectionFiltered.contractTypeData.map(d => d.total_m))
@@ -909,7 +1211,17 @@ export default function ContractAnalysis() {
       {/* ── Top CPV ── */}
       <div className="ca-table-block">
         <ComponentTag name="TopCpvSection" />
-        <div className="eyebrow">Κορυφαίες Κατηγορίες CPV (Common Procurement Vocabulary)</div>
+        <div className="eyebrow">Βασικές κατηγορίες CPV</div>
+        <div className="ca-sunburst-block">
+          <div className="ca-sunburst-copy">
+            <strong>Διαδραστικό sunburst που απεικονίζει τη σχέση διαδικασίας ανάθεσης και κατηγοριών CPV.</strong>
+            <p>
+              Κέντρο: διαδικασία ανάθεσης — Περιφέρεια: CPV.
+              Κλικ σε τμήμα για εστίαση, κλικ στο κέντρο για επαναφορά.
+            </p>
+          </div>
+          <ZoomableSunburst data={sectionFiltered.sunburstData} />
+        </div>
         <div className="ca-cpv-grid">
           {sectionFiltered.topCpv.map((c, i) => (
             <article className="ca-cpv-card" key={c.cpv}>

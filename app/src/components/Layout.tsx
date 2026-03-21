@@ -84,6 +84,7 @@ export default function Layout() {
           <NavLink to="/">Αρχική</NavLink>
           <NavLink to="/analysis">Ανάλυση</NavLink>
           <NavLink to="/contracts">Συμβάσεις</NavLink>
+          <NavLink to="/municipalities">Δήμοι</NavLink>
           <NavLink to="/maps">Χάρτης</NavLink>
           <button type="button" onClick={handleAbout}>Σχετικά</button>
         </nav>

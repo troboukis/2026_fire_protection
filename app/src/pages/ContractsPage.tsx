@@ -101,7 +101,6 @@ export default function ContractsPage() {
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [openingContractId, setOpeningContractId] = useState<number | null>(null)
   const [q, setQ] = useState('')
-  const [org, setOrg] = useState('')
   const [procedure, setProcedure] = useState('')
   const [procedureOptions, setProcedureOptions] = useState<string[]>([])
   const [municipalityNameTokens, setMunicipalityNameTokens] = useState<Set<string>>(new Set())
@@ -157,7 +156,6 @@ export default function ContractsPage() {
       const min = minAmount ? Number(minAmount) : null
       const { data, error } = await supabase.rpc('get_contracts_page', {
         p_q: q || null,
-        p_org: org || null,
         p_procedure: procedure || null,
         p_date_from: dateFrom || null,
         p_date_to: dateTo || null,
@@ -189,7 +187,7 @@ export default function ContractsPage() {
     }
     loadPage()
     return () => { cancelled = true }
-  }, [q, org, procedure, dateFrom, dateTo, minAmount, page])
+  }, [q, procedure, dateFrom, dateTo, minAmount, page])
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
 
@@ -339,7 +337,7 @@ export default function ContractsPage() {
       <ComponentTag name="ContractsPage" />
       <header className="contracts-header section-rule">
         <div>
-          <div className="eyebrow">Συμβάσεις</div>
+          <div className="eyebrow">ΑΝΑΖΗΤΗΣΗ</div>
           <h1>Όλες οι Συμβάσεις</h1>
           <p>
             {loading
@@ -350,15 +348,40 @@ export default function ContractsPage() {
       </header>
 
       <section className="contracts-filters section-rule">
-        <input value={q} onChange={(e) => { setQ(e.target.value); setPage(1) }} placeholder="Αναζήτηση (τίτλος/φορέας/δικαιούχος/CPV)" />
-        <input value={org} onChange={(e) => { setOrg(e.target.value); setPage(1) }} placeholder="Φορέας" />
-        <select value={procedure} onChange={(e) => { setProcedure(e.target.value); setPage(1) }}>
+        <input
+          className="contracts-filter contracts-filter--search"
+          value={q}
+          onChange={(e) => { setQ(e.target.value); setPage(1) }}
+          placeholder="Αναζήτηση (τίτλος/φορέας/δικαιούχος/CPV)"
+        />
+        <select
+          className="contracts-filter contracts-filter--procedure"
+          value={procedure}
+          onChange={(e) => { setProcedure(e.target.value); setPage(1) }}
+        >
           <option value="">Όλες οι διαδικασίες</option>
           {procedureOptions.map((p) => <option key={p} value={p}>{p}</option>)}
         </select>
-        <input value={dateFrom} onChange={(e) => { setDateFrom(e.target.value); setPage(1) }} type="date" />
-        <input value={dateTo} onChange={(e) => { setDateTo(e.target.value); setPage(1) }} type="date" />
-        <input value={minAmount} onChange={(e) => { setMinAmount(e.target.value); setPage(1) }} type="number" min="0" placeholder="Ελάχιστο ποσό (χωρίς ΦΠΑ)" />
+        <input
+          className="contracts-filter contracts-filter--date"
+          value={dateFrom}
+          onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
+          type="date"
+        />
+        <input
+          className="contracts-filter contracts-filter--date"
+          value={dateTo}
+          onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
+          type="date"
+        />
+        <input
+          className="contracts-filter contracts-filter--amount"
+          value={minAmount}
+          onChange={(e) => { setMinAmount(e.target.value); setPage(1) }}
+          type="number"
+          min="0"
+          placeholder="Ελάχιστο ποσό (χωρίς ΦΠΑ)"
+        />
       </section>
 
       <section className="contracts-table-wrap section-rule">

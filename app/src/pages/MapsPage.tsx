@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
@@ -178,6 +178,7 @@ export default function MapsPage() {
   const [selectedMunicipalityIdsForMap, setSelectedMunicipalityIdsForMap] = useState<Set<string>>(new Set())
   const [selectedMunicipalityIdForPanel, setSelectedMunicipalityIdForPanel] = useState<string | null>(null)
   const [searchText, setSearchText] = useState('')
+  const [isSearchResultsOpen, setIsSearchResultsOpen] = useState(false)
   const [panelSource, setPanelSource] = useState<SelectionSource | null>(null)
   const [panelKind, setPanelKind] = useState<SelectionKind | null>(null)
   const [panelLabel, setPanelLabel] = useState('')
@@ -194,6 +195,7 @@ export default function MapsPage() {
   const [regionLatestLoading, setRegionLatestLoading] = useState(false)
   const [regionContractCount, setRegionContractCount] = useState(0)
   const [municipalityContractCount, setMunicipalityContractCount] = useState(0)
+  const searchContainerRef = useRef<HTMLLabelElement | null>(null)
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
     await downloadContractDocument(contract)
@@ -507,6 +509,22 @@ export default function MapsPage() {
 
     return scored.map((x) => x.option)
   }, [searchOptions, searchText])
+
+  useEffect(() => {
+    if (!isSearchResultsOpen) return
+
+    const handlePointerDown = (event: MouseEvent) => {
+      const target = event.target
+      if (!(target instanceof Node)) return
+      if (searchContainerRef.current?.contains(target)) return
+      setIsSearchResultsOpen(false)
+    }
+
+    document.addEventListener('mousedown', handlePointerDown)
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown)
+    }
+  }, [isSearchResultsOpen])
 
   const openPanel = (source: SelectionSource, kind: SelectionKind, label: string) => {
     setPanelSource(source)
@@ -1104,6 +1122,7 @@ export default function MapsPage() {
   }
 
   const applySearchSelection = (opt: SearchOption) => {
+    setIsSearchResultsOpen(false)
     if (opt.kind === 'municipality') {
       setSelectedMunicipalityDropdown(opt.value)
       setSelectedMunicipalityIdsForMap(new Set([opt.value]))
@@ -1132,20 +1151,30 @@ export default function MapsPage() {
           <section className="maps-controls">
             <ComponentTag name="MapsFilters" />
             <div className="maps-controls__row">
-              <label className="maps-controls__search">
+              <label ref={searchContainerRef} className="maps-controls__search">
                 <input
                   aria-label="Αναζήτηση δήμου ή περιφέρειας"
                   type="text"
                   value={searchText}
-                  onChange={(e) => setSearchText(e.target.value)}
+                  onChange={(e) => {
+                    setSearchText(e.target.value)
+                    setIsSearchResultsOpen(Boolean(e.target.value.trim()))
+                  }}
+                  onFocus={() => {
+                    if (searchText.trim()) setIsSearchResultsOpen(true)
+                  }}
                   onKeyDown={(e) => {
+                    if (e.key === 'Escape') {
+                      setIsSearchResultsOpen(false)
+                      return
+                    }
                     if (e.key === 'Enter' && searchResults.length > 0) {
                       applySearchSelection(searchResults[0])
                     }
                   }}
                   placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
                 />
-                {searchText.trim() && (
+                {searchText.trim() && isSearchResultsOpen && (
                   <div className="maps-search-results">
                     {searchResults.length === 0 ? (
                       <button type="button" className="maps-search-empty" disabled>
