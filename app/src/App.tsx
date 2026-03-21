@@ -301,6 +301,7 @@ export default function App() {
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
   const [heroStatsLoading, setHeroStatsLoading] = useState(true)
+  const [heroStatsError, setHeroStatsError] = useState<string | null>(null)
   const [featuredBeneficiaries, setFeaturedBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
   const [featuredBeneficiariesLoading, setFeaturedBeneficiariesLoading] = useState(true)
   const [organizationSection, setOrganizationSection] = useState<OrganizationSectionData>({
@@ -347,6 +348,7 @@ export default function App() {
         import('./components/ContractModal'),
         import('./pages/AnalysisPage'),
         import('./pages/ContractsPage'),
+        import('./pages/MunicipalitiesPage'),
         import('./pages/MapsPage'),
       ])
     }
@@ -1092,40 +1094,63 @@ export default function App() {
   useEffect(() => {
     let cancelled = false
     setHeroStatsLoading(true)
+    setHeroStatsError(null)
 
     const loadHeroStats = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_hero_section_data', {
-          p_year_main: currentYear,
-          p_year_start: YEAR_START,
-        })
-        if (cancelled || error || !data) return
+        let loaded = false
 
-        const payload = data as HeroSectionRpcResponse
-        setHeroStats({
-          periodMainStart: cleanText(payload.period_main_start) ?? '',
-          periodMainEnd: cleanText(payload.period_main_end) ?? '',
-          totalMain: Number(payload.total_main ?? 0),
-          totalPrev1: Number(payload.total_prev1 ?? 0),
-          totalPrev2: Number(payload.total_prev2 ?? 0),
-          totalVsPrev1Pct: null,
-          topContractType: cleanText(payload.top_contract_type) ?? '—',
-          topContractTypeCount: Number(payload.top_contract_type_count ?? 0),
-          topContractTypePrevCount: Number(payload.top_contract_type_prev1_count ?? 0),
-          topContractTypeVsPrev1Pct: null,
-          topCpvText: toSentenceCaseEl(cleanText(payload.top_cpv_text)),
-          topCpvCount: Number(payload.top_cpv_count ?? 0),
-          topCpvPrevCount: Number(payload.top_cpv_prev1_count ?? 0),
-          topCpvVsPrev1Pct: null,
-        })
+        for (let attempt = 0; attempt < 3 && !cancelled; attempt += 1) {
+          try {
+            const { data, error } = await supabase.rpc('get_hero_section_data', {
+              p_year_main: currentYear,
+              p_year_start: YEAR_START,
+            })
 
-        const points: HeroCurvePoint[] = ((payload.curve_points ?? []) as HeroSectionRpcPoint[]).map((p) => ({
-          year: Number(p.series_year),
-          dayOfYear: Number(p.day_of_year),
-          yearDays: Number(p.year_days),
-          value: Number(p.cumulative_amount ?? 0),
-        }))
-        setHeroCurvePoints(points)
+            if (error) throw error
+            if (!data) throw new Error('Hero section RPC returned no data')
+
+            const payload = data as HeroSectionRpcResponse
+            setHeroStats({
+              periodMainStart: cleanText(payload.period_main_start) ?? '',
+              periodMainEnd: cleanText(payload.period_main_end) ?? '',
+              totalMain: Number(payload.total_main ?? 0),
+              totalPrev1: Number(payload.total_prev1 ?? 0),
+              totalPrev2: Number(payload.total_prev2 ?? 0),
+              totalVsPrev1Pct: null,
+              topContractType: cleanText(payload.top_contract_type) ?? '—',
+              topContractTypeCount: Number(payload.top_contract_type_count ?? 0),
+              topContractTypePrevCount: Number(payload.top_contract_type_prev1_count ?? 0),
+              topContractTypeVsPrev1Pct: null,
+              topCpvText: toSentenceCaseEl(cleanText(payload.top_cpv_text)),
+              topCpvCount: Number(payload.top_cpv_count ?? 0),
+              topCpvPrevCount: Number(payload.top_cpv_prev1_count ?? 0),
+              topCpvVsPrev1Pct: null,
+            })
+
+            const points: HeroCurvePoint[] = ((payload.curve_points ?? []) as HeroSectionRpcPoint[]).map((p) => ({
+              year: Number(p.series_year),
+              dayOfYear: Number(p.day_of_year),
+              yearDays: Number(p.year_days),
+              value: Number(p.cumulative_amount ?? 0),
+            }))
+            setHeroCurvePoints(points)
+            loaded = true
+            break
+          } catch (error) {
+            if (attempt === 2 || cancelled) throw error
+            await new Promise((resolve) => window.setTimeout(resolve, 400 * (attempt + 1)))
+          }
+        }
+
+        if (!loaded && !cancelled) {
+          throw new Error('Hero section failed to load after retries')
+        }
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Failed to load hero section data', error)
+          setHeroStatsError('Δεν ήταν δυνατή η φόρτωση των στοιχείων.')
+        }
       } finally {
         if (!cancelled) setHeroStatsLoading(false)
       }
@@ -1268,16 +1293,18 @@ export default function App() {
               <div className="eyebrow">
                 {heroStatsLoading
                   ? 'Δαπάνες'
+                  : heroStatsError
+                    ? heroStatsError
                   : `Δαπάνες από ${formatDateLabel(heroStats.periodMainStart)} έως ${formatDateLabel(heroStats.periodMainEnd)}`}
               </div>
               <div className="hero-amount">
-                {heroStatsLoading ? '…' : formatEurCompact(heroStats.totalMain)}
+                {heroStatsLoading ? '…' : heroStatsError ? '—' : formatEurCompact(heroStats.totalMain)}
               </div>
               <div className="hero-subgrid">
                 <div>
                   <span className="label">Σύγκριση με {currentYear - 1}</span>
                   <strong>
-                    {heroStatsLoading ? '…' : (
+                    {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
                         <span style={{ color: pctColor(totalVsPrev1Pct) }}>
                           {formatPct(totalVsPrev1Pct)}
@@ -1292,7 +1319,7 @@ export default function App() {
                 <div>
                   <span className="label">Σύγκριση με {currentYear - 2}</span>
                   <strong>
-                    {heroStatsLoading ? '…' : (
+                    {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
                         <span style={{ color: pctColor(totalVsPrev2Pct) }}>
                           {formatPct(totalVsPrev2Pct)}
@@ -1307,7 +1334,7 @@ export default function App() {
                 <div>
                   <span className="label">Συχνότερη διαδικασία ανάθεσης</span>
                   <strong>
-                    {heroStatsLoading ? '…' : (
+                    {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
                         {heroStats.topContractTypeCount} συμβάσεις έγιναν με {heroStats.topContractType}
                         {' '} |{' '}
@@ -1323,7 +1350,7 @@ export default function App() {
                 <div>
                   <span className="label">Συχνότερες Εργασίες</span>
                   <strong>
-                    {heroStatsLoading ? '…' : (
+                    {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
                         Σε {heroStats.topCpvCount}* συμβάσεις έχουν ως περιγραφή «{heroStats.topCpvText}»
                         {' '} |{' '}

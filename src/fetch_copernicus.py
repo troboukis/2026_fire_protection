@@ -11,16 +11,28 @@ import psycopg2
 import requests
 from psycopg2.extras import Json
 
-from map_copernicus_to_municipalities import (
-    DEFAULT_GEOJSON,
-    ROOT,
-    assign_municipalities,
-    load_municipalities,
-    load_normalized_name_lookup,
-    parse_centroid,
-    parse_shape,
-    resolve_database_url,
-)
+try:
+    from src.map_copernicus_to_municipalities import (
+        DEFAULT_GEOJSON,
+        ROOT,
+        assign_municipalities,
+        load_municipalities,
+        load_normalized_name_lookup,
+        parse_centroid,
+        parse_shape,
+        resolve_database_url,
+    )
+except ModuleNotFoundError:
+    from map_copernicus_to_municipalities import (
+        DEFAULT_GEOJSON,
+        ROOT,
+        assign_municipalities,
+        load_municipalities,
+        load_normalized_name_lookup,
+        parse_centroid,
+        parse_shape,
+        resolve_database_url,
+    )
 
 API_URL = "https://api.effis.emergency.copernicus.eu/rest/2/burntareas/current/"
 DEFAULT_OUTPUT_CSV = ROOT / "data" / "fires" / "copernicus_latest.csv"

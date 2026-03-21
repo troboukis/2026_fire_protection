@@ -125,20 +125,8 @@ dedup AS (
 filtered AS (
   SELECT *
   FROM dedup d
-  WHERE (
-      p_date_from IS NULL
-      OR COALESCE(
-        CASE
-          WHEN COALESCE(d.no_end_date, FALSE) THEN make_date(EXTRACT(YEAR FROM CURRENT_DATE)::int, 12, 31)
-          ELSE d.end_date
-        END,
-        COALESCE(d.start_date, d.contract_signed_date)
-      ) >= p_date_from
-    )
-    AND (
-      p_date_to IS NULL
-      OR COALESCE(d.start_date, d.contract_signed_date) <= p_date_to
-    )
+  WHERE (p_date_from IS NULL OR d.contract_signed_date >= p_date_from)
+    AND (p_date_to IS NULL OR d.contract_signed_date <= p_date_to)
     AND (p_min_amount IS NULL OR COALESCE(d.amount_without_vat, 0) >= p_min_amount)
     AND (p_procedure IS NULL OR p_procedure = '' OR d.procedure_type_value = p_procedure)
     AND (p_org IS NULL OR p_org = '' OR COALESCE(d.organization_value, '') ILIKE '%' || p_org || '%')
