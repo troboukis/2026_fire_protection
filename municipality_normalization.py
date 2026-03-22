@@ -15,7 +15,7 @@ def normalize_string(s):
 
 
 def normalizeMunicipality(term):
-    _TODELETE = ["ΔΗΜΟΣ", "Δήμος", "Δ.", ":"]
+    _TODELETE = ["ΔΗΜΟΣ", "ΔΗΜΟΥ", "ΔΗΜΟ", "Δήμος", "Δ.", ":"]
     for i in _TODELETE:
         term = normalize_string(term).replace(normalize_string(i), "")
     replacements_raw = {

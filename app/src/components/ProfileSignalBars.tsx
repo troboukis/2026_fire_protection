@@ -13,10 +13,10 @@ type Props = {
 }
 
 export default function ProfileSignalBars({ items, emptyLabel = 'Δεν υπάρχουν αρκετά δεδομένα.' }: Props) {
-  const maxValue = useMemo(
-    () => Math.max(1, ...items.map((item) => item.value).filter((value) => Number.isFinite(value))),
-    [items],
-  )
+  const maxValue = useMemo(() => {
+    const values = items.map((item) => item.value).filter((value) => Number.isFinite(value))
+    return values.length > 0 ? Math.max(1, ...values) : 1
+  }, [items])
 
   if (items.length === 0) {
     return <div className="profile-signal-bars profile-signal-bars--empty">{emptyLabel}</div>

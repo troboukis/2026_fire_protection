@@ -27,6 +27,12 @@ function fmtPct(v: number): string {
   return v.toFixed(4) + '%'
 }
 
+function buildColorScale(data: Record<string, number>): d3.ScalePower<number, number> {
+  const vals = Object.values(data).filter(v => v > 0)
+  const maxVal = vals.length > 0 ? Math.max(...vals) : 1
+  return d3.scalePow().exponent(0.3).domain([0, maxVal]).range([0.05, 1]).clamp(true)
+}
+
 function municipalityCode(d: GeoFeature): string {
   const raw = String((d.properties as { municipality_code?: string | null }).municipality_code ?? '').trim()
   const noDecimal = raw.replace(/\.0+$/, '')
@@ -128,9 +134,7 @@ export function GreeceMap({
     if (width === 0 || height === 0) return
 
     // Build choropleth color scale — power (exponent 0.3) anchored at 0
-    const vals = Object.values(choroplethRef.current).filter(v => v > 0)
-    const maxVal = vals.length > 0 ? Math.max(...vals) : 1
-    colorScaleRef.current = d3.scalePow().exponent(0.3).domain([0, maxVal]).range([0.05, 1]).clamp(true)
+    colorScaleRef.current = buildColorScale(choroplethRef.current)
 
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove()
@@ -233,9 +237,7 @@ export function GreeceMap({
   // Update choropleth fills (without full redraw) when data loads
   useEffect(() => {
     if (!svgRef.current || !geojson) return
-    const vals = Object.values(choroplethData).filter(v => v > 0)
-    const maxVal = vals.length > 0 ? Math.max(...vals) : 1
-    colorScaleRef.current = d3.scalePow().exponent(0.3).domain([0, maxVal]).range([0.05, 1]).clamp(true)
+    colorScaleRef.current = buildColorScale(choroplethData)
 
     d3.select(svgRef.current)
       .selectAll<SVGPathElement, GeoFeature>('path[data-id]')

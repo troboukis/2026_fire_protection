@@ -28,6 +28,7 @@ def empty_procurement_context():
 def test_organization_lookup_candidates_normalize_municipal_labels():
     assert organization_lookup_candidates("ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ") == ["ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ", "ΧΑΛΚΗΔΟΝΟΣ"]
     assert organization_lookup_candidates("ΔΗΜΟΥ ΧΑΛΚΗΔΟΝΟΣ") == ["ΔΗΜΟΥ ΧΑΛΚΗΔΟΝΟΣ", "ΧΑΛΚΗΔΟΝΟΣ"]
+    assert organization_lookup_candidates("ΔΗΜΟ ΧΑΛΚΗΔΟΝΟΣ") == ["ΔΗΜΟ ΧΑΛΚΗΔΟΝΟΣ", "ΧΑΛΚΗΔΟΝΟΣ"]
 
 
 def test_organization_lookup_candidates_extract_region_labels():
@@ -60,6 +61,30 @@ def test_procurement_rows_falls_back_to_normalized_municipality_name():
 
     assert rows[0][49] is None
     assert rows[0][50] == "9038"
+
+
+def test_procurement_rows_maps_accusative_municipal_labels():
+    raw = pd.DataFrame(
+        [
+            {
+                "title": "Σύμβαση",
+                "referenceNumber": "25SYMV017483983",
+                "organization_value": "ΔΗΜΟ ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            }
+        ]
+    )
+
+    rows = procurement_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "municipality_lookup": {"ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ": "9065"},
+        },
+    )
+
+    assert rows[0][49] is None
+    assert rows[0][50] == "9065"
 
 
 def test_procurement_rows_falls_back_to_region_lookup_from_org_label():

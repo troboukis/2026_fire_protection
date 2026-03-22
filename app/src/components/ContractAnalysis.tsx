@@ -46,6 +46,7 @@ type SectionRow = {
   effectiveStart: string
   effectiveEnd: string
   orgName: string
+  authorityLabel: string
   contractType: string
   procedure: string
   amount: number
@@ -73,6 +74,10 @@ type AnalysisData = {
 const ANALYSIS_START = '2024-01-01'
 const CURRENT_YEAR = new Date().getFullYear()
 const ANALYSIS_END = `${CURRENT_YEAR}-12-31`
+
+const BREAKPOINT_XS = 360
+const BREAKPOINT_SM = 440
+const BREAKPOINT_MD = 640
 
 const MONTH_NAMES_SHORT = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ']
 
@@ -185,7 +190,7 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
     const containerW = containerRef.current.clientWidth
     if (containerW === 0) return
 
-    const isNarrow = containerW <= 640
+    const isNarrow = containerW <= BREAKPOINT_MD
     const margin = { top: 18, right: 16, bottom: isNarrow ? 52 : 58, left: 68 }
     const W = containerW
     const H = 240
@@ -246,9 +251,9 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
       )
 
     const mobileTickStep =
-      containerW <= 360 ? 5 :
-      containerW <= 440 ? 4 :
-      containerW <= 640 ? 3 : 1
+      containerW <= BREAKPOINT_XS ? 5 :
+      containerW <= BREAKPOINT_SM ? 4 :
+      containerW <= BREAKPOINT_MD ? 3 : 1
     const xTickValues = isNarrow
       ? monthDomain.filter((_m, i) => i % mobileTickStep === 0 || i === monthDomain.length - 1)
       : monthDomain
@@ -358,24 +363,47 @@ function normalizeSearch(str: string): string {
     .trim()
 }
 
-function buildProcedureCpvSunburstData(rows: SectionRow[]): SunburstDatum | null {
-  const procedureToCpvs = new Map<string, Map<string, number>>()
+function buildAuthorityLabel(args: {
+  canonicalOwnerScope: string | null | undefined
+  organizationScope: string | null | undefined
+  organizationName: string | null | undefined
+  municipalityLabel: string | null | undefined
+  regionLabel: string | null | undefined
+}): string {
+  const {
+    canonicalOwnerScope,
+    organizationScope,
+    organizationName,
+    municipalityLabel,
+    regionLabel,
+  } = args
+  const canonical = String(canonicalOwnerScope ?? '').trim().toLowerCase()
+  const orgScope = String(organizationScope ?? '').trim().toLowerCase()
+  const orgName = String(organizationName ?? '').trim()
+  const municipality = String(municipalityLabel ?? '').trim()
+  const region = String(regionLabel ?? '').trim()
+
+  if (canonical === 'municipality') return municipality || orgName || 'Δήμος —'
+  if (canonical === 'region') return region || municipality || orgName || 'Περιφέρεια —'
+  if (orgScope === 'municipality' && municipality) return municipality
+  if ((orgScope === 'region' || orgScope === 'decentralized') && region) return region
+  return orgName || municipality || region || '—'
+}
+
+function buildProcedureAuthoritySunburstData(rows: SectionRow[]): SunburstDatum | null {
+  const procedureToAuthorities = new Map<string, Map<string, number>>()
 
   for (const row of rows) {
-    const cpvs = row.cpvs.length > 0 ? row.cpvs : ['Χωρίς CPV']
-    if (!procedureToCpvs.has(row.procedure)) procedureToCpvs.set(row.procedure, new Map())
-    const cpvMap = procedureToCpvs.get(row.procedure)!
-
-    for (const cpv of cpvs) {
-      cpvMap.set(cpv, (cpvMap.get(cpv) ?? 0) + 1)
-    }
+    if (!procedureToAuthorities.has(row.procedure)) procedureToAuthorities.set(row.procedure, new Map())
+    const authorityMap = procedureToAuthorities.get(row.procedure)!
+    authorityMap.set(row.authorityLabel, (authorityMap.get(row.authorityLabel) ?? 0) + 1)
   }
 
-  const children = [...procedureToCpvs.entries()]
-    .map(([procedure, cpvMap]) => ({
+  const children = [...procedureToAuthorities.entries()]
+    .map(([procedure, authorityMap]) => ({
       name: procedure,
-      children: [...cpvMap.entries()]
-        .map(([cpv, count]) => ({ name: cpv, value: count }))
+      children: [...authorityMap.entries()]
+        .map(([authority, count]) => ({ name: authority, value: count }))
         .sort((a, b) => (b.value ?? 0) - (a.value ?? 0) || a.name.localeCompare(b.name, 'el')),
     }))
     .sort((a, b) => {
@@ -390,6 +418,26 @@ function buildProcedureCpvSunburstData(rows: SectionRow[]): SunburstDatum | null
     name: 'Συμβάσεις',
     children,
   }
+}
+
+function buildTopCpvList(
+  cpvAggMap: Map<string, { count: number; procedures: Map<string, number> }>,
+  limit = 8,
+): TopCpvItem[] {
+  return [...cpvAggMap.entries()]
+    .map(([cpv, v]) => {
+      const main = [...v.procedures.entries()].sort((a, b) => b[1] - a[1])[0]
+      const mainCount = main?.[1] ?? 0
+      return {
+        cpv,
+        desc: cpv,
+        count: v.count,
+        mainProcedure: main?.[0] ?? '—',
+        mainProcedurePct: Number(((mainCount / Math.max(v.count, 1)) * 100).toFixed(1)),
+      }
+    })
+    .sort((a, b) => b.count - a.count)
+    .slice(0, limit)
 }
 
 function truncateLabel(label: string, maxLength: number): string {
@@ -419,14 +467,22 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
     const containerW = containerRef.current.clientWidth
     if (containerW === 0) return
 
+    const isCompact = containerW <= BREAKPOINT_SM
     const size = Math.max(320, Math.min(containerW, 720))
-    const radius = size / 6
 
     const rootHierarchy = d3.hierarchy(data)
       .sum((d) => d.value ?? 0)
       .sort((a, b) => (b.value ?? 0) - (a.value ?? 0))
     const root = d3.partition<SunburstDatum>()
       .size([2 * Math.PI, rootHierarchy.height + 1])(rootHierarchy) as SunburstNode
+
+    const outerRadius = size / 2 - (isCompact ? 6 : 0)
+    const centerRadius = isCompact ? size * 0.21 : size / 6
+    const ringWidth = (outerRadius - centerRadius) / Math.max(rootHierarchy.height, 1)
+    const radialAt = (depth: number) => {
+      if (depth <= 0) return 0
+      return centerRadius + (depth - 1) * ringWidth
+    }
 
     root.each((node) => {
       node.current = { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
@@ -451,27 +507,93 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       .startAngle((d) => d.x0)
       .endAngle((d) => d.x1)
       .padAngle((d) => Math.min((d.x1 - d.x0) / 2, 0.005))
-      .padRadius(radius * 1.5)
-      .innerRadius((d) => d.y0 * radius)
-      .outerRadius((d) => Math.max(d.y0 * radius, d.y1 * radius - 1))
+      .padRadius(outerRadius * 0.72)
+      .innerRadius((d) => radialAt(d.y0))
+      .outerRadius((d) => Math.max(radialAt(d.y0), radialAt(d.y1) - 1))
 
     const arcVisible = (d: ArcSlice) => d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0
-    const labelVisible = (d: ArcSlice) => d.y1 <= 3 && d.y0 >= 1 && (d.x1 - d.x0) * (d.y1 - d.y0) > 0.14
+    const labelVisible = (d: ArcSlice) => {
+      if (!(d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0)) return false
+      const angle = d.x1 - d.x0
+      if (isCompact) {
+        return d.y0 === 1 ? angle > 0.34 : angle > 0.18
+      }
+      return d.y0 === 1 ? angle > 0.16 : angle > 0.1
+    }
     const labelTransform = (d: ArcSlice) => {
       const x = ((d.x0 + d.x1) / 2) * 180 / Math.PI
-      const y = ((d.y0 + d.y1) / 2) * radius
+      const y = (radialAt(d.y0) + radialAt(d.y1)) / 2
       return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`
+    }
+    const labelFontSize = (node: SunburstNode) => {
+      const d = node.current
+      const ringThickness = Math.max(1, radialAt(d.y1) - radialAt(d.y0))
+      const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
+      const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
+      const charCount = Math.max(1, node.data.name.length)
+      const maxByArc = arcLength / Math.max(charCount * 0.62, 1)
+      const maxByRing = ringThickness * (node.depth === 1 ? 0.34 : 0.26)
+      const maxSize = Math.min(maxByArc, maxByRing, isCompact ? (node.depth === 1 ? 7.2 : 6.1) : (node.depth === 1 ? 10 : 9))
+      const minSize = isCompact ? (node.depth === 1 ? 6.1 : 5.2) : (node.depth === 1 ? 7.2 : 6.2)
+      return Number(Math.max(minSize, maxSize).toFixed(1))
+    }
+    const labelCanFit = (node: SunburstNode) => {
+      const d = node.current
+      const ringThickness = Math.max(1, radialAt(d.y1) - radialAt(d.y0))
+      const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
+      const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
+      const fontSize = labelFontSize(node)
+      const estimatedTextWidth = truncateLabel(
+        node.data.name,
+        isCompact ? (node.depth === 1 ? 14 : 11) : (node.depth === 1 ? 18 : 16),
+      ).length * fontSize * 0.58
+      return estimatedTextWidth <= arcLength * 0.92 && fontSize <= ringThickness * 0.82
     }
 
     const g = svg.append('g')
+    const center = g.append('g')
+      .attr('class', 'ca-sunburst-center')
+      .style('pointer-events', 'none')
+
+    const centerLabelPrimary = center.append('text')
+      .attr('class', 'ca-sunburst-center__label')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+    const centerLabelSecondary = center.append('text')
+      .attr('class', 'ca-sunburst-center__label')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+    const centerValue = center.append('text')
+      .attr('class', 'ca-sunburst-center__value')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
+    const centerHint = center.append('text')
+      .attr('class', 'ca-sunburst-center__hint')
+      .attr('text-anchor', 'middle')
+      .attr('x', 0)
 
     const updateCenter = (node: SunburstNode) => {
       const total = Number(node.value ?? 0).toLocaleString('el-GR')
-      const label = node.depth === 0 ? 'Διαδικασία -> CPV' : truncateLabel(node.data.name, 28)
-      centerLabel.text(label)
-      centerValue.text(node.depth === 0 ? `${total} εγγραφές` : `${total} συμβάσεις`)
-      centerHint.text(node.depth === 0 ? 'Κλικ στον εσωτερικό δακτύλιο για zoom' : 'Κλικ στο κέντρο για επιστροφή')
+      const primaryLabel = node.depth === 0
+        ? (isCompact ? 'Διαδικασία' : 'Διαδικασία -> Φορέας')
+        : truncateLabel(node.data.name, isCompact ? 16 : 28)
+      const secondaryLabel = node.depth === 0 && isCompact ? 'και φορέας' : ''
+      centerLabelPrimary
+        .attr('y', secondaryLabel ? -20 : -10)
+        .text(primaryLabel)
+      centerLabelSecondary
+        .attr('y', -1)
+        .text(secondaryLabel)
+        .attr('opacity', secondaryLabel ? 1 : 0)
+      centerValue
+        .attr('y', secondaryLabel ? 22 : 12)
+        .text(node.depth === 0 ? `${total} εγγραφές` : `${total} συμβάσεις`)
+      centerHint
+        .attr('y', secondaryLabel ? 40 : 32)
+        .text(node.depth === 0 ? 'Κλικ στον εσωτερικό δακτύλιο για zoom' : 'Κλικ στο κέντρο για επιστροφή')
+        .attr('opacity', isCompact ? 0 : 1)
     }
+
 
     const path = g.append('g')
       .selectAll('path')
@@ -501,36 +623,22 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       .data(root.descendants().slice(1))
       .join('text')
       .attr('dy', '0.35em')
-      .attr('fill-opacity', (node) => labelVisible(node.current) ? 1 : 0)
+      .attr('fill-opacity', (node) => (labelVisible(node.current) && labelCanFit(node as SunburstNode)) ? 1 : 0)
       .attr('transform', (node) => labelTransform(node.current))
       .attr('class', (node) => `ca-sunburst-label${node.depth === 1 ? ' ca-sunburst-label--inner' : ''}`)
-      .text((node) => truncateLabel(node.data.name, node.depth === 1 ? 18 : 16))
+      .style('font-size', (node) => `${labelFontSize(node as SunburstNode)}px`)
+      .text((node) => truncateLabel(node.data.name, isCompact ? (node.depth === 1 ? 14 : 11) : (node.depth === 1 ? 18 : 16)))
 
     let focus = root
 
     const parent = g.append('circle')
       .datum(root)
-      .attr('r', radius)
+      .attr('r', centerRadius)
       .attr('fill', 'none')
       .attr('pointer-events', 'all')
       .style('cursor', 'pointer')
 
-    const center = g.append('g').attr('class', 'ca-sunburst-center')
-    const centerLabel = center.append('text')
-      .attr('class', 'ca-sunburst-center__label')
-      .attr('text-anchor', 'middle')
-      .attr('x', 0)
-      .attr('y', -10)
-    const centerValue = center.append('text')
-      .attr('class', 'ca-sunburst-center__value')
-      .attr('text-anchor', 'middle')
-      .attr('x', 0)
-      .attr('y', 12)
-    const centerHint = center.append('text')
-      .attr('class', 'ca-sunburst-center__hint')
-      .attr('text-anchor', 'middle')
-      .attr('x', 0)
-      .attr('y', 32)
+    center.raise()
 
     updateCenter(root)
 
@@ -541,7 +649,7 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
         .slice(1)
         .map((item) => item.data.name)
         .join(' -> ')
-      const nodeType = node.depth === 1 ? 'Διαδικασία ανάθεσης' : 'CPV'
+      const nodeType = node.depth === 1 ? 'Διαδικασία ανάθεσης' : 'Τύπος φορέα'
 
       tooltip
         .style('display', 'block')
@@ -594,7 +702,8 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
 
       label.transition()
         .duration(duration)
-        .attr('fill-opacity', (node) => labelVisible(node.target) ? 1 : 0)
+        .attr('fill-opacity', (node) => (labelVisible(node.target) && labelCanFit(node as SunburstNode)) ? 1 : 0)
+        .style('font-size', (node) => `${labelFontSize(node as SunburstNode)}px`)
         .attrTween('transform', (node) => () => labelTransform(node.current))
 
       hideTooltip()
@@ -632,7 +741,7 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
   }, [data, draw])
 
   if (!data) {
-    return <p className="ca-empty-note">Δεν υπάρχουν διαθέσιμα δεδομένα διαδικασίας και CPV για το επιλεγμένο έτος.</p>
+    return <p className="ca-empty-note">Δεν υπάρχουν διαθέσιμα δεδομένα διαδικασίας και τύπου φορέα για το επιλεγμένο έτος.</p>
   }
 
   return (
@@ -641,7 +750,7 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       className="ca-sunburst-wrap"
       onClick={() => d3.select(containerRef.current).select('.ca-sunburst-tooltip').style('display', 'none')}
     >
-      <svg ref={svgRef} className="ca-sunburst-svg" aria-label="Zoomable sunburst διαδικασίας ανάθεσης και CPV" />
+      <svg ref={svgRef} className="ca-sunburst-svg" aria-label="Zoomable sunburst διαδικασίας ανάθεσης και τύπου φορέα" />
       <div className="ca-sunburst-tooltip ca-tooltip app-tooltip" />
     </div>
   )
@@ -664,7 +773,7 @@ export default function ContractAnalysis() {
     ;(async () => {
       try {
         const fetchAll = async <T,>(
-          table: 'procurement' | 'payment' | 'organization' | 'cpv',
+          table: 'procurement' | 'payment' | 'organization' | 'cpv' | 'municipality' | 'region',
           columns: string,
         ): Promise<T[]> => {
           const pageSize = 1000
@@ -690,6 +799,8 @@ export default function ContractAnalysis() {
           procurements,
           payments,
           organizations,
+          municipalities,
+          regions,
           cpvs,
         ] = await Promise.all([
           fetchAll<{
@@ -708,7 +819,10 @@ export default function ContractAnalysis() {
             contract_type: string | null
             procedure_type_value: string | null
             organization_key: string | null
-          }>('procurement', 'id, contract_signed_date, start_date, end_date, no_end_date, cancelled, next_ref_no, prev_reference_no, title, reference_number, contract_number, diavgeia_ada, contract_type, procedure_type_value, organization_key'),
+            municipality_key: string | null
+            region_key: string | null
+            canonical_owner_scope: string | null
+          }>('procurement', 'id, contract_signed_date, start_date, end_date, no_end_date, cancelled, next_ref_no, prev_reference_no, title, reference_number, contract_number, diavgeia_ada, contract_type, procedure_type_value, organization_key, municipality_key, region_key, canonical_owner_scope'),
           fetchAll<{
             procurement_id: number
             amount_without_vat: number | null
@@ -717,7 +831,18 @@ export default function ContractAnalysis() {
             organization_key: string
             organization_normalized_value: string | null
             organization_value: string | null
-          }>('organization', 'id, organization_key, organization_normalized_value, organization_value'),
+            authority_scope: string | null
+          }>('organization', 'id, organization_key, organization_normalized_value, organization_value, authority_scope'),
+          fetchAll<{
+            municipality_key: string
+            municipality_normalized_value: string | null
+            municipality_value: string | null
+          }>('municipality', 'id, municipality_key, municipality_normalized_value, municipality_value'),
+          fetchAll<{
+            region_key: string
+            region_normalized_value: string | null
+            region_value: string | null
+          }>('region', 'id, region_key, region_normalized_value, region_value'),
           fetchAll<{
             procurement_id: number
             cpv_key: string | null
@@ -732,12 +857,31 @@ export default function ContractAnalysis() {
           }
         }
 
-        const orgNameByKey = new Map<string, string>()
+        const orgMetaByKey = new Map<string, { name: string; authorityScope: string | null }>()
         for (const o of organizations) {
           const key = String(o.organization_key ?? '').trim()
-          if (!key || orgNameByKey.has(key)) continue
+          if (!key || orgMetaByKey.has(key)) continue
           const value = String(o.organization_normalized_value ?? o.organization_value ?? key).trim()
-          orgNameByKey.set(key, value || key)
+          orgMetaByKey.set(key, {
+            name: value || key,
+            authorityScope: o.authority_scope,
+          })
+        }
+
+        const municipalityLabelByKey = new Map<string, string>()
+        for (const municipality of municipalities) {
+          const key = String(municipality.municipality_key ?? '').trim()
+          if (!key || municipalityLabelByKey.has(key)) continue
+          const baseLabel = String(municipality.municipality_normalized_value ?? municipality.municipality_value ?? key).trim()
+          municipalityLabelByKey.set(key, baseLabel ? `ΔΗΜΟΣ ${baseLabel}` : `ΔΗΜΟΣ ${key}`)
+        }
+
+        const regionLabelByKey = new Map<string, string>()
+        for (const region of regions) {
+          const key = String(region.region_key ?? '').trim()
+          if (!key || regionLabelByKey.has(key)) continue
+          const baseLabel = String(region.region_normalized_value ?? region.region_value ?? key).trim()
+          regionLabelByKey.set(key, baseLabel ? `ΠΕΡΙΦΕΡΕΙΑ ${baseLabel}` : `ΠΕΡΙΦΕΡΕΙΑ ${key}`)
         }
 
         const cpvByProcId = new Map<number, Set<string>>()
@@ -808,7 +952,12 @@ export default function ContractAnalysis() {
           monthKeys.push(month)
           const amount = amountByProcId.get(p.id) ?? 0
           const orgKey = String(p.organization_key ?? '').trim()
-          const orgName = (orgNameByKey.get(orgKey) ?? orgKey) || '—'
+          const municipalityKey = String(p.municipality_key ?? '').trim()
+          const regionKey = String(p.region_key ?? '').trim()
+          const orgMeta = orgMetaByKey.get(orgKey)
+          const orgName = (orgMeta?.name ?? orgKey) || '—'
+          const municipalityLabel = municipalityLabelByKey.get(municipalityKey) ?? municipalityKey
+          const regionLabel = regionLabelByKey.get(regionKey) ?? regionKey
           const contractType = normalizeContractTypeLabel(p.contract_type)
           const procedure = normalizeProcedureLabel(p.procedure_type_value)
           const cpvsForProc = [...(cpvByProcId.get(p.id) ?? new Set<string>())]
@@ -819,6 +968,13 @@ export default function ContractAnalysis() {
             effectiveStart,
             effectiveEnd,
             orgName,
+            authorityLabel: buildAuthorityLabel({
+              canonicalOwnerScope: p.canonical_owner_scope,
+              organizationScope: orgMeta?.authorityScope,
+              organizationName: orgName,
+              municipalityLabel,
+              regionLabel,
+            }),
             contractType,
             procedure,
             amount,
@@ -889,16 +1045,7 @@ export default function ContractAnalysis() {
         const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
         const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
 
-        const topCpv = [...cpvAggMap.entries()]
-          .map(([cpv, v]) => ({
-            cpv,
-            desc: cpv,
-            count: v.count,
-            mainProcedure: [...v.procedures.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? '—',
-            mainProcedurePct: Number((((([ ...v.procedures.entries()].sort((a, b) => b[1] - a[1])[0]?.[1] ?? 0) / Math.max(v.count, 1)) * 100)).toFixed(1)),
-          }))
-          .sort((a, b) => b.count - a.count)
-          .slice(0, 8)
+        const topCpv = buildTopCpvList(cpvAggMap)
 
         const sortedAmounts = [...amounts].sort((a, b) => a - b)
         const medianAmount = sortedAmounts.length === 0
@@ -1033,27 +1180,14 @@ export default function ContractAnalysis() {
     const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
     const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
 
-    const topCpv = [...cpvAggMap.entries()]
-      .map(([cpv, v]) => {
-        const main = [...v.procedures.entries()].sort((a, b) => b[1] - a[1])[0]
-        const mainCount = main?.[1] ?? 0
-        return {
-          cpv,
-          desc: cpv,
-          count: v.count,
-          mainProcedure: main?.[0] ?? '—',
-          mainProcedurePct: Number(((mainCount / Math.max(v.count, 1)) * 100).toFixed(1)),
-        }
-      })
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 8)
+    const topCpv = buildTopCpvList(cpvAggMap)
 
     return {
       contractTypeData,
       procedureData,
       topOrgs: topAuthorities,
       topCpv,
-      sunburstData: buildProcedureCpvSunburstData(rows),
+      sunburstData: buildProcedureAuthoritySunburstData(rows),
     }
   }, [analysis, analysisPeriod, topAuthorities])
 
@@ -1211,13 +1345,12 @@ export default function ContractAnalysis() {
       {/* ── Top CPV ── */}
       <div className="ca-table-block">
         <ComponentTag name="TopCpvSection" />
-        <div className="eyebrow">Βασικές κατηγορίες CPV</div>
         <div className="ca-sunburst-block">
           <div className="ca-sunburst-copy">
-            <strong>Διαδραστικό sunburst που απεικονίζει τη σχέση διαδικασίας ανάθεσης και κατηγοριών CPV.</strong>
+            <div className="eyebrow">ΑΝΑΘΕΣΕΙΣ</div>
+            <strong>Διαδραστικό sunburst που απεικονίζει τη σχέση διαδικασίας ανάθεσης και φορέα</strong>
             <p>
-              Κέντρο: διαδικασία ανάθεσης — Περιφέρεια: CPV.
-              Κλικ σε τμήμα για εστίαση, κλικ στο κέντρο για επαναφορά.
+              Κέντρο: διαδικασία ανάθεσης — Εξωτερικός δακτύλιος: συγκεκριμένοι φορείς, όπως δήμοι, περιφέρειες και οργανισμοί. Το μέγεθος των πεδίων αποτυπώνει το πλήθος και όχι το συνολικό ποσό των συμβάσεων. Κλικ σε τμήμα για εστίαση, κλικ στο κέντρο για επαναφορά.
             </p>
           </div>
           <ZoomableSunburst data={sectionFiltered.sunburstData} />
