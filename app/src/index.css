@@ -195,14 +195,12 @@ textarea {
   justify-content: center;
   padding: 0.75rem 0.9rem;
   text-decoration: none;
+  border: 0;
   border-left: 1px solid var(--line);
   font-size: 0.9rem;
   min-height: 44px;
   background: var(--paper);
   color: var(--ink);
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 0;
   cursor: pointer;
 }
 
@@ -264,7 +262,6 @@ main {
 }
 
 .news-wire__items {
-  background: var(--paper);
   display: flex;
   gap: 1px;
   overflow-x: auto;
@@ -293,13 +290,6 @@ main {
   font-size: 0.7rem;
   text-transform: uppercase;
   background: var(--paper-2);
-}
-
-.wire-item h2 {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
 }
 
 .wire-item p {
@@ -336,6 +326,7 @@ main {
 }
 
 .wire-item h2 {
+  margin: 0;
   font-size: 1.08rem;
   line-height: 1.12;
   letter-spacing: -0.03em;
@@ -379,9 +370,6 @@ main {
   gap: 0.45rem;
 }
 
-.wire-item p.wire-item__amount {
-  color: var(--accent);
-}
 
 .wire-item__arrow {
   color: rgba(17, 17, 17, 0.55);
@@ -1261,7 +1249,6 @@ main {
 }
 
 .organization__kpis {
-  background: var(--paper);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
@@ -3905,6 +3892,22 @@ main {
 
   .ca-sunburst-copy {
     padding: 0.85rem;
+  }
+
+  .ca-sunburst-label {
+    font-size: 8px;
+  }
+
+  .ca-sunburst-label--inner {
+    font-size: 8.5px;
+  }
+
+  .ca-sunburst-center__label {
+    font-size: 0.82rem;
+  }
+
+  .ca-sunburst-center__value {
+    font-size: 0.66rem;
   }
 
   .ca-finding-card {

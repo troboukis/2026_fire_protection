@@ -458,7 +458,23 @@ base AS (
     p.organization_key,
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pa.beneficiary_name,
-    org.organization_value,
+    COALESCE(
+      org.organization_value,
+      CASE
+        WHEN p.canonical_owner_scope = 'region' THEN COALESCE(
+          CASE WHEN reg.region_normalized_value IS NOT NULL THEN CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', reg.region_normalized_value) END,
+          CASE WHEN reg.region_value IS NOT NULL THEN CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', reg.region_value) END,
+          CASE WHEN muni.municipality_normalized_value IS NOT NULL THEN CONCAT('ΔΗΜΟΣ ', muni.municipality_normalized_value) END,
+          CASE WHEN muni.municipality_value IS NOT NULL THEN CONCAT('ΔΗΜΟΣ ', muni.municipality_value) END
+        )
+        ELSE COALESCE(
+          CASE WHEN muni.municipality_normalized_value IS NOT NULL THEN CONCAT('ΔΗΜΟΣ ', muni.municipality_normalized_value) END,
+          CASE WHEN reg.region_normalized_value IS NOT NULL THEN CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', reg.region_normalized_value) END,
+          CASE WHEN muni.municipality_value IS NOT NULL THEN CONCAT('ΔΗΜΟΣ ', muni.municipality_value) END,
+          CASE WHEN reg.region_value IS NOT NULL THEN CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', reg.region_value) END
+        )
+      END
+    ) AS organization_value,
     ca.cpv_value,
     ROW_NUMBER() OVER (
       PARTITION BY COALESCE(
@@ -471,6 +487,24 @@ base AS (
     ) AS rn
   FROM public.procurement p
   LEFT JOIN payment_agg pa ON pa.procurement_id = p.id
+  LEFT JOIN LATERAL (
+    SELECT
+      m.municipality_normalized_value,
+      m.municipality_value
+    FROM public.municipality m
+    WHERE m.municipality_key = p.municipality_key
+    ORDER BY m.id
+    LIMIT 1
+  ) muni ON TRUE
+  LEFT JOIN LATERAL (
+    SELECT
+      r.region_normalized_value,
+      r.region_value
+    FROM public.region r
+    WHERE r.region_key = p.region_key
+    ORDER BY r.id
+    LIMIT 1
+  ) reg ON TRUE
   LEFT JOIN LATERAL (
     SELECT o.organization_normalized_value AS organization_value
     FROM public.organization o

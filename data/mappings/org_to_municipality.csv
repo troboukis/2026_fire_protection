@@ -307,7 +307,7 @@ org_type,org_name_clean,doc_count,authority_level,municipality_id,region_id,cove
 ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ,ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΧΑΝΙΩΝ,7,municipality,9325,,,0,manual,subsidiary of municipality 9325
 ΔΗΜΟΤΙΚΟ ΒΡΕΦΟΚΟΜΕΙΟ,ΑΘΗΝΩΝ,11,municipality,9186,,,0,manual,subsidiary of municipality 9186
 ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΚΑΒΑΛΑΣ-ΔΗ.ΠΕ.ΘΕ. ΚΑΒΑΛΑΣ,1,municipality,9012,,,0,manual,subsidiary of municipality 9012
-ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΚΕΡΚΥΡΑΣ ΔΗ.ΠΕ.ΘΕ.Κ.,1,municipality,9118,,,0,manual,subsidiary of municipality 9118
+ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΚΕΡΚΥΡΑΣ ΔΗ.ΠΕ.ΘΕ.Κ.,1,other,9118,,,0,manual,municipal theatre mapped to municipality 9118
 ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,17,region,,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,rule_region_from_name,
 ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ,ΚΡΗΤΗΣ,2,region,,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,1,rule_region_from_name,
 ΠΕΡΙΦΕΡΕΙΑ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ - ΘΡΑΚΗΣ,39,region,,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,1,exact,
@@ -342,3 +342,26 @@ org_type,org_name_clean,doc_count,authority_level,municipality_id,region_id,cove
 ΥΠΟΥΡΓΕΙΟ,ΥΠΟΔΟΜΩΝ ΚΑΙ ΜΕΤΑΦΟΡΩΝ,11,national,,,,0,exact,
 ΝΠΙΔ,ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.,1,region,,ΙΟΝΙΩΝ ΝΗΣΩΝ,ΙΟΝΙΩΝ ΝΗΣΩΝ,1,manual,independent regional coverage organization
 ΝΠΔΔ,ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ,2,municipality,9038,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,kimdis municipality authority label
+ΝΠΙΔ,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ (Δ.Ε.Υ.Α.) ΘΕΡΜΑΙΚΟΥ,1,other,9029,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,municipal enterprise mapped to municipality 9029
+ΝΠΙΔ,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΜΕΤΕΩΡΩΝ,9,other,9112,ΘΕΣΣΑΛΙΑΣ,ΘΕΣΣΑΛΙΑΣ,1,manual,municipal enterprise mapped to municipality 9112
+ΝΠΔΔ,ΔΗΜΟΤΙΚΟ ΛΙΜΕΝΙΚΟ ΤΑΜΕΙΟ ΣΙΘΩΝΙΑΣ,4,other,9060,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,municipal port fund mapped to municipality 9060
+ΝΠΙΔ,Δ.Ε.Υ.Α ΠΡΕΒΕΖΑΣ,2,other,9090,ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,1,manual,municipal enterprise mapped to municipality 9090
+ΝΠΔΔ,ΔΗΜΟΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΠΡΟΝΟΙΑΣ ΔΗΜΟΥ ΡΟΔΟΥ,1,other,9296,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,1,manual,municipal legal entity mapped to municipality 9296
+ΝΠΙΔ,ΚΟΙΝΩΦΕΛΗΣ ΔΗΜ. ΕΠΙΧΕΙΡΗΣΗ ΠΟΛΙΤΙΣΤΙΚΗΣ ΑΝΑΠΤΥΞΗΣ ΔΗΜΟΥ ΠΕΡΙΣΤΕΡΙΟΥ ΔΕΠΑΔΠ,1,other,9183,ΑΤΤΙΚΗΣ,ΑΤΤΙΚΗΣ,1,manual,municipal enterprise mapped to municipality 9183
+ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ ΚΕΡΚΥΡΑΣ ΔΗ.ΠΕ.ΘΕ.Κ.,1,other,9118,ΙΟΝΙΩΝ ΝΗΣΩΝ,ΙΟΝΙΩΝ ΝΗΣΩΝ,1,manual,municipal theatre full-label variant mapped to municipality 9118
+ΝΠΙΔ,ΔΗΜΟΤΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΕΚΜΕΤΑΛΕΥΣΗΣ ΠΕΡΙΟΥΣΙΑΣ ΧΑΛΚΙΔΑΣ Δ.Α.Ε.Π.Ε. ΧΑΛΚΙΔΑ Α.Ε.,1,other,9155,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,1,manual,municipal company mapped to municipality 9155
+ΝΠΔΔ,ΔΗΜΟΤΙΚΟ ΜΟΥΣΕΙΟ ΚΑΛΑΒΡΥΤΙΝΟΥ ΟΛΟΚΑΥΤΩΜΑΤΟΣ,1,other,9133,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,1,manual,municipal legal entity mapped to municipality 9133
+ΝΠΙΔ,ΑΝΑΠΤΥΞΗ ΑΘΛΗΤΙΣΜΟΥ ΗΡΑΚΛΕΙΟΥ - ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΟΤΑ,1,other,9305,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,1,manual,municipal company mapped to municipality 9305
+Ν.Π.Ι.Δ.,ΜΟΝΟΜΕΤΟΧΙΚΗ ΑΝΩΝΥΜΗ ΔΗΜΟΤΙΚΗ ΕΤΑΙΡΕΙΑ ΔΗΜΟΥ ΙΤΑΝΟΥ (Μ.Α.Δ.Ε.Δ.Ι. Α.Ε.),1,other,9313,ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,1,manual,legacy municipal company of former municipality Itanou mapped to successor municipality 9313
+,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧΕΙΡΙΣΗΣ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 2ΗΣ ΔΙΑΧΕΙΡΙΣΤΙΚΗΣ ΕΝΟΤΗΤΑΣ ΔΗΜΟΥ ΣΤΡΑΤΟΥ,1,other,9123,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,1,manual,single-municipality attribution to Agriniou
+ΝΠΔΔ,ΙΕΡΑ ΜΗΤΡΟΠΟΛΙΣ ΙΩΑΝΝΙΝΩΝ,1,other,9084,ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,1,manual,single-municipality attribution to Ioanniton
+,ΙΕΡΑ ΜΟΝΗ ΒΑΤΟΠΕΔΙΟΥ,1,other,9059,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,single-municipality attribution to Polygyrou
+ΝΠΔΔ,ΠΑΝΕΠΙΣΤΗΜΙΟ ΙΩΑΝΝΙΝΩΝ,1,other,9084,ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,1,manual,single-municipality attribution to Ioanniton
+ΝΠΔΔ,ΠΡΩΤΟΔΙΚΕΙΟ ΜΥΤΙΛΗΝΗΣ,1,other,9261,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,1,manual,single-municipality attribution to Lesvou
+,ΕΚΕΦΕ ΔΗΜΟΚΡΙΤΟΣ,1,other,9167,ΑΤΤΙΚΗΣ,ΑΤΤΙΚΗΣ,1,manual,single-municipality attribution to Agias Paraskevis
+,ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ,1,other,9190,ΑΤΤΙΚΗΣ,ΑΤΤΙΚΗΣ,1,manual,single-municipality attribution to Zografou
+ΝΠΔΔ,ΔΙΟΙΚΗΤΙΚΟ ΕΦΕΤΕΙΟ ΚΟΜΟΤΗΝΗΣ,1,other,9021,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,1,manual,single-municipality attribution to Komotinis
+ΝΠΔΔ,5Η ΥΓΕΙΟΝΟΜΙΚΗ ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ & ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,1,other,,ΘΕΣΣΑΛΙΑΣ,ΘΕΣΣΑΛΙΑΣ,1,manual,single-region attribution to Thessalias
+ΝΠΙΔ,ΑΝΑΠΤΥΞΙΑΚΗ ΝΟΜΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ ΑΕ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ,1,other,,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,1,manual,single-region attribution to Kentrikis Makedonias
+Ν.Π.Δ.Δ.,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 3ΗΣ ΔΙΑΧ ΕΝΟΤΗΤΑΣ ΤΟΥ ΝΟΜΟΥ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ ΠΕΡΙΦ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,1,other,,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,1,manual,single-region attribution to Dytikis Elladas
+,ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,1,other,,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,1,manual,single-region attribution to AMTH

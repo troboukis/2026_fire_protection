@@ -1,34 +1,20 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import type { ContractModalContract } from './ContractModal'
+import type { OrganizationSectionData } from './OrganizationSection'
 import type { GeoData } from '../types'
 
-type OrganizationTimelineItem = {
+type RegionTimelineItem = {
   month: string
   year: string
   text: string
   contract: ContractModalContract | null
 }
 
-export type OrganizationSectionData = {
-  name: string
-  yearLabel: string
-  previousYearLabel: string
-  totalSpend: number
-  cpvCodes: string[]
-  topCpvValue: string | null
-  previousYearTopCpvValue: string | null
-  contractCount: number
-  previousYearContractCount: number
-  beneficiaryCount: number
-  previousYearBeneficiaryCount: number
-  latestSignedAt: string | null
-  activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }>
-  timeline: OrganizationTimelineItem[]
-}
+export type RegionSectionData = OrganizationSectionData
 
-type OrganizationSectionProps = {
-  data: OrganizationSectionData
+type RegionSectionProps = {
+  data: RegionSectionData
   loading: boolean
   formatEurCompact: (n: number) => string
   formatDateEl: (iso: string | null) => string
@@ -44,14 +30,14 @@ function normalizeMunicipalityId(input: unknown): string {
   return noDecimal
 }
 
-function OrganizationActivityMap({
+function RegionActivityMap({
   workPoints,
   yearLabel,
-  organizationName,
+  regionName,
 }: {
   workPoints: Array<{ lat: number; lon: number; work: string; pointName: string }>
   yearLabel: string
-  organizationName: string
+  regionName: string
 }) {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
 
@@ -112,7 +98,7 @@ function OrganizationActivityMap({
 
   return (
     <div className="organization-map">
-      <svg viewBox="0 0 360 280" role="img" aria-label="Χάρτης δραστηριότητας φορέα" preserveAspectRatio="xMinYMin meet">
+      <svg viewBox="0 0 360 280" role="img" aria-label="Χάρτης δραστηριότητας περιφέρειας" preserveAspectRatio="xMinYMin meet">
         <g className="organization-map__base">
           {mapData.paths.map((feature) => (
             <path key={feature.key} d={feature.d} fill="none" stroke="#000000" />
@@ -126,20 +112,20 @@ function OrganizationActivityMap({
       </svg>
       <div className="organization-map__legend">
         <span className="organization-map__legend-dot" aria-hidden="true" />
-        <span>{`Εργασίες του ${organizationName} το ${yearLabel}`}</span>
+        <span>{`Εργασίες στην ${regionName} το ${yearLabel}`}</span>
       </div>
     </div>
   )
 }
 
-export default function OrganizationSection({
+export default function RegionSection({
   data,
   loading,
   formatEurCompact,
   formatDateEl,
   onOpenContract,
   anchorId,
-}: OrganizationSectionProps) {
+}: RegionSectionProps) {
   const totalSpendNote = `Συνολικό ποσό χωρίς ΦΠΑ από τις καταγεγραμμένες πληρωμές του ${data.yearLabel}.`
   const topCpvNote = data.previousYearTopCpvValue
     ? `${data.previousYearLabel}: ${data.previousYearTopCpvValue}`
@@ -147,9 +133,9 @@ export default function OrganizationSection({
   const contractCountNote = `Το ${data.previousYearLabel} είχαν υπογραφεί ${data.previousYearContractCount.toLocaleString('el-GR')} συμβάσεις με ${data.previousYearBeneficiaryCount.toLocaleString('el-GR')} προμηθευτές`
   const contractLabel = data.contractCount === 1 ? 'σύμβαση' : 'συμβάσεις'
   const beneficiaryLabel = data.beneficiaryCount === 1 ? 'προμηθευτή' : 'προμηθευτές'
-  const timelineItems = data.timeline.length
+  const timelineItems: RegionTimelineItem[] = data.timeline.length
     ? data.timeline
-    : [{ month: '—', year: '—', text: loading ? 'Φόρτωση στοιχείων φορέα…' : 'Δεν βρέθηκαν συμβάσεις για τον φορέα.', contract: null }]
+    : [{ month: '—', year: '—', text: loading ? 'Φόρτωση στοιχείων περιφέρειας…' : 'Δεν βρέθηκαν συμβάσεις για την περιφέρεια.', contract: null }]
   const kpis = [
     {
       label: `Η ΠΙΟ ΣΥΧΝΗ ΕΡΓΑΣΙΑ ΤΟ ${data.yearLabel}`,
@@ -166,10 +152,10 @@ export default function OrganizationSection({
   return (
     <section id={anchorId} className="organization section-rule">
       <div className="organization__header">
-        <div className="eyebrow">ΟΡΓΑΝΙΣΜΟΣ</div>
+        <div className="eyebrow">ΠΕΡΙΦΕΡΕΙΑ</div>
         <h2>{data.name}</h2>
         <p>
-          Δυναμική ενημέρωση δεδομένων από το Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
+          Δυναμική ενημέρωση δεδομένων από το Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
         </p>
       </div>
 
@@ -185,10 +171,10 @@ export default function OrganizationSection({
           </div>
         </div>
         <div className="org-codes">
-          <OrganizationActivityMap
+          <RegionActivityMap
             workPoints={data.activityWorkPoints}
             yearLabel={data.yearLabel}
-            organizationName={data.name}
+            regionName={data.name}
           />
         </div>
       </div>
@@ -224,8 +210,8 @@ export default function OrganizationSection({
         <div className="organization__timeline">
           <div className="eyebrow">Χρονολόγιο</div>
           <ul>
-            {timelineItems.map((item) => (
-              <li key={`${item.month}-${item.year}-${item.text}`}>
+            {timelineItems.map((item, index) => (
+              <li key={item.contract?.id ?? `${item.month}-${item.year}-${item.text}-${index}`}>
                 <div className="timeline-date">
                   <span>{item.month}</span>
                   <strong>{item.year}</strong>

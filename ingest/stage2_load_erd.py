@@ -658,7 +658,7 @@ def organization_lookup_candidates(val: str | None) -> list[str]:
     add(normalizeMunicipality(raw))
 
     # Handle common municipal prefixes/cases that normalizeMunicipality does not strip.
-    prefix_stripped = re.sub(r"^\s*(ΔΗΜΟΥ|ΔΗΜΟΣ|Δ\.)\s+", "", t_up(raw) or "")
+    prefix_stripped = re.sub(r"^\s*(ΔΗΜΟΥ|ΔΗΜΟΣ|ΔΗΜΟ|Δ\.)\s+", "", t_up(raw) or "")
     add(prefix_stripped)
     add(normalizeMunicipality(prefix_stripped))
 

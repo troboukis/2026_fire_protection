@@ -168,8 +168,10 @@ export default function MapSelectionPanel({
     return out
   }, [previewGeometry, municipalityFirePoints])
 
-  const projectedCurrentFireShapes = projectedFireShapes.filter((p) => p.period === 'current')
-  const projectedPreviousFireShapes = projectedFireShapes.filter((p) => p.period === 'previous')
+  const { projectedCurrentFireShapes, projectedPreviousFireShapes } = useMemo(() => ({
+    projectedCurrentFireShapes: projectedFireShapes.filter((p) => p.period === 'current'),
+    projectedPreviousFireShapes: projectedFireShapes.filter((p) => p.period === 'previous'),
+  }), [projectedFireShapes])
   const projectedFirePoints = useMemo(() => {
     if (!previewGeometry) return [] as Array<{
       x: number
@@ -204,8 +206,10 @@ export default function MapSelectionPanel({
     return out
   }, [previewGeometry, municipalityFirePoints])
 
-  const projectedCurrentFirePoints = projectedFirePoints.filter((p) => p.period === 'current')
-  const projectedPreviousFirePoints = projectedFirePoints.filter((p) => p.period === 'previous')
+  const { projectedCurrentFirePoints, projectedPreviousFirePoints } = useMemo(() => ({
+    projectedCurrentFirePoints: projectedFirePoints.filter((p) => p.period === 'current'),
+    projectedPreviousFirePoints: projectedFirePoints.filter((p) => p.period === 'previous'),
+  }), [projectedFirePoints])
 
   const projectWorkDots = useCallback((
     points: Array<{ lat: number; lon: number; work: string; pointName: string }>,

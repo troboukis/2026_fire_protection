@@ -1,9 +1,10 @@
-import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
+import { Fragment, Suspense, lazy, useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import type { OrganizationSectionData } from './components/OrganizationSection'
+import type { RegionSectionData } from './components/RegionSection'
 import { downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
 import { buildLatestContractCardView, type AuthorityScope } from './lib/latestContractCard'
@@ -13,6 +14,7 @@ const ContractModal = lazy(() => import('./components/ContractModal'))
 const FireCopernicusSection = lazy(() => import('./components/FireCopernicusSection'))
 const FeaturedRecordsSection = lazy(() => import('./components/FeaturedRecordsSection'))
 const OrganizationSection = lazy(() => import('./components/OrganizationSection'))
+const RegionSection = lazy(() => import('./components/RegionSection'))
 
 type LatestContractCard = LatestContractCardView & ContractModalContract & {
   id: string
@@ -144,11 +146,59 @@ type FeaturedRecordsRpcRow = {
   relevant_contracts: FeaturedRecordsRpcContract[] | null
 }
 
+type OrganizationSectionConfig = {
+  fallbackName: string
+  organizationKeys: string[]
+  anchorId?: string
+}
+
+type RegionSectionConfig = {
+  fallbackName: string
+  regionKey: string
+  anchorId?: string
+}
+
+type RegionDirectoryRow = {
+  region_key: string | null
+  region_value: string | null
+  region_normalized_value: string | null
+}
+
 function cleanText(v: unknown): string | null {
   if (v == null) return null
   const s = String(v).trim()
   if (!s || s.toLowerCase() === 'nan' || s.toLowerCase() === 'none') return null
   return s
+}
+
+function buildRegionFallbackName(row: RegionDirectoryRow): string {
+  const baseName = cleanText(row.region_normalized_value) ?? cleanText(row.region_value) ?? cleanText(row.region_key)
+  if (!baseName) return 'Περιφέρεια'
+  return baseName.startsWith('Περιφέρεια ') ? baseName : `Περιφέρεια ${baseName}`
+}
+
+function pickRandomRegionSectionConfig(rows: RegionDirectoryRow[], fallback: RegionSectionConfig): RegionSectionConfig {
+  const configs = rows
+    .map<RegionSectionConfig | null>((row) => {
+      const regionKey = cleanText(row.region_key)
+      if (!regionKey) return null
+      return {
+        fallbackName: buildRegionFallbackName(row),
+        regionKey,
+        anchorId: fallback.anchorId,
+      }
+    })
+    .filter((config): config is RegionSectionConfig => config !== null)
+
+  const availableConfigs = configs.length ? configs : [fallback]
+  const previousRegionKey = window.localStorage.getItem(HOME_REGION_STORAGE_KEY)
+  const candidateConfigs =
+    previousRegionKey && availableConfigs.length > 1
+      ? availableConfigs.filter((config) => config.regionKey !== previousRegionKey)
+      : availableConfigs
+  const selectedConfig = candidateConfigs[Math.floor(Math.random() * candidateConfigs.length)] ?? fallback
+  window.localStorage.setItem(HOME_REGION_STORAGE_KEY, selectedConfig.regionKey)
+  return selectedConfig
 }
 
 function firstPipePart(v: unknown): string | null {
@@ -206,6 +256,12 @@ function toFiniteNumber(v: unknown): number | null {
   if (v == null || v === '') return null
   const n = Number(v)
   return Number.isFinite(n) ? n : null
+}
+
+function chunk<T>(arr: T[], size: number): T[][] {
+  const out: T[][] = []
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
+  return out
 }
 
 function formatDateLabel(iso: string | null): string {
@@ -270,7 +326,42 @@ function SectionFallback({ label }: { label: string }) {
   )
 }
 
+function monthShortEl(iso: string | null): string {
+  if (!iso) return '—'
+  const dt = new Date(iso)
+  if (Number.isNaN(dt.getTime())) return '—'
+  return new Intl.DateTimeFormat('el-GR', { month: 'short' })
+    .format(dt)
+    .replace('.', '')
+    .toLocaleUpperCase('el-GR')
+}
+
 const YEAR_START = 2024
+
+const HOME_ORGANIZATION_SECTIONS: OrganizationSectionConfig[] = [
+  { fallbackName: 'ΑΔΜΗΕ', organizationKeys: ['org_a5ffb236a53cf3e9eeae'], anchorId: 'organizations' },
+]
+
+const HOME_REGION_STORAGE_KEY = 'firewatch.homepage-region.last-key'
+
+const DEFAULT_HOME_REGION_SECTION: RegionSectionConfig = {
+  fallbackName: 'Περιφέρεια Αττικής',
+  regionKey: 'ΑΤΤΙΚΗΣ',
+  anchorId: 'homepage-region',
+}
+
+const INITIAL_HOME_REGION_SECTION: RegionSectionConfig = {
+  fallbackName: 'Περιφέρεια',
+  regionKey: '',
+  anchorId: 'homepage-region',
+}
+
+const CHART_TICKS = [
+  { label: '01 Ιαν', month: 1, day: 1 },
+  { label: '01 Μαϊ', month: 5, day: 1 },
+  { label: '01 Αυγ', month: 8, day: 1 },
+  { label: '31 Δεκ', month: 12, day: 31 },
+]
 
 function getChartYearStyle(year: number, currentYear: number) {
   const yearsBehind = Math.max(0, currentYear - year)
@@ -292,6 +383,25 @@ function getChartYearStyle(year: number, currentYear: number) {
   }
 }
 
+function createEmptyOrganizationSectionData(name: string, currentYear: number): OrganizationSectionData {
+  return {
+    name,
+    yearLabel: String(currentYear),
+    previousYearLabel: String(currentYear - 1),
+    totalSpend: 0,
+    cpvCodes: [],
+    topCpvValue: null,
+    previousYearTopCpvValue: null,
+    contractCount: 0,
+    previousYearContractCount: 0,
+    beneficiaryCount: 0,
+    previousYearBeneficiaryCount: 0,
+    latestSignedAt: null,
+    activityWorkPoints: [],
+    timeline: [],
+  }
+}
+
 export default function App() {
   const currentYear = new Date().getFullYear()
   const featuredRecordsYear = String(currentYear)
@@ -304,23 +414,15 @@ export default function App() {
   const [heroStatsError, setHeroStatsError] = useState<string | null>(null)
   const [featuredBeneficiaries, setFeaturedBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
   const [featuredBeneficiariesLoading, setFeaturedBeneficiariesLoading] = useState(true)
-  const [organizationSection, setOrganizationSection] = useState<OrganizationSectionData>({
-    name: 'ΑΔΜΗΕ',
-    yearLabel: String(new Date().getFullYear()),
-    previousYearLabel: String(new Date().getFullYear() - 1),
-    totalSpend: 0,
-    cpvCodes: [],
-    topCpvValue: null,
-    previousYearTopCpvValue: null,
-    contractCount: 0,
-    previousYearContractCount: 0,
-    beneficiaryCount: 0,
-    previousYearBeneficiaryCount: 0,
-    latestSignedAt: null,
-    activityWorkPoints: [],
-    timeline: [],
-  })
-  const [organizationSectionLoading, setOrganizationSectionLoading] = useState(true)
+  const [organizationSections, setOrganizationSections] = useState<OrganizationSectionData[]>(
+    () => HOME_ORGANIZATION_SECTIONS.map(({ fallbackName }) => createEmptyOrganizationSectionData(fallbackName, currentYear)),
+  )
+  const [organizationSectionsLoading, setOrganizationSectionsLoading] = useState(true)
+  const [homeRegionConfig, setHomeRegionConfig] = useState<RegionSectionConfig>(INITIAL_HOME_REGION_SECTION)
+  const [regionSection, setRegionSection] = useState<RegionSectionData>(
+    () => createEmptyOrganizationSectionData(INITIAL_HOME_REGION_SECTION.fallbackName, currentYear),
+  )
+  const [regionSectionLoading, setRegionSectionLoading] = useState(true)
   const [heroCurvePoints, setHeroCurvePoints] = useState<HeroCurvePoint[]>([])
   const [heroStats, setHeroStats] = useState<HeroStats>({
     periodMainStart: '',
@@ -345,6 +447,7 @@ export default function App() {
         import('./components/FireCopernicusSection'),
         import('./components/FeaturedRecordsSection'),
         import('./components/OrganizationSection'),
+        import('./components/RegionSection'),
         import('./components/ContractModal'),
         import('./pages/AnalysisPage'),
         import('./pages/ContractsPage'),
@@ -381,7 +484,10 @@ export default function App() {
     heroStats.topCpvCount,
     heroStats.topCpvPrevCount,
   )
-  const chartYears = Array.from({ length: currentYear - YEAR_START + 1 }, (_, i) => YEAR_START + i)
+  const chartYears = useMemo(
+    () => Array.from({ length: currentYear - YEAR_START + 1 }, (_, i) => YEAR_START + i),
+    [currentYear],
+  )
   const chartByYear = useMemo(() => {
     const grouped = new Map<number, HeroCurvePoint[]>()
     for (const y of chartYears) grouped.set(y, [])
@@ -392,12 +498,6 @@ export default function App() {
     for (const [, arr] of grouped) arr.sort((a, b) => a.dayOfYear - b.dayOfYear)
     return grouped
   }, [chartYears, heroCurvePoints])
-  const chartTicks = [
-    { label: '01 Ιαν', month: 1, day: 1 },
-    { label: '01 Μαϊ', month: 5, day: 1 },
-    { label: '01 Αυγ', month: 8, day: 1 },
-    { label: '31 Δεκ', month: 12, day: 31 },
-  ]
   const chartMax = useMemo(() => {
     const vals = heroCurvePoints.map(p => p.value).filter(v => Number.isFinite(v))
     return Math.max(1, ...vals)
@@ -430,12 +530,6 @@ export default function App() {
 
     const loadLatestContracts = async () => {
       try {
-        const chunk = <T,>(arr: T[], size: number): T[][] => {
-          const out: T[][] = []
-          for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
-          return out
-        }
-
         const { data, error } = await supabase
           .from('procurement')
           .select(`
@@ -648,66 +742,29 @@ export default function App() {
 
   useEffect(() => {
     let cancelled = false
-    setOrganizationSectionLoading(true)
+    setOrganizationSectionsLoading(true)
 
-    const loadOrganizationSection = async () => {
-      const chunk = <T,>(arr: T[], size: number): T[][] => {
-        const out: T[][] = []
-        for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
-        return out
-      }
-
-      const monthShortEl = (iso: string | null): string => {
-        if (!iso) return '—'
-        const dt = new Date(iso)
-        if (Number.isNaN(dt.getTime())) return '—'
-        return new Intl.DateTimeFormat('el-GR', { month: 'short' })
-          .format(dt)
-          .replace('.', '')
-          .toLocaleUpperCase('el-GR')
-      }
-
+    const loadOrganizationSection = async (config: OrganizationSectionConfig): Promise<OrganizationSectionData> => {
       try {
-        const { data: orgMatches } = await supabase
+        const { data: orgMatchesByKey } = await supabase
           .from('organization')
           .select('organization_key, organization_normalized_value, organization_value')
-          .or('organization_normalized_value.ilike.%ΑΔΜΗΕ%,organization_value.ilike.%ΑΔΜΗΕ%')
-          .limit(25)
+          .in('organization_key', config.organizationKeys)
 
-        const orgRows = (orgMatches ?? []) as Array<{
+        const orgRows = (orgMatchesByKey ?? []) as Array<{
           organization_key: string
           organization_normalized_value: string | null
           organization_value: string | null
         }>
+        const bestOrg = orgRows[0]
 
-        const normalizeOrgToken = (v: string | null): string => (v ?? '')
-          .toLocaleUpperCase('el-GR')
-          .replace(/[^0-9A-ZΑ-Ω]/g, '')
-        const targetOrg = normalizeOrgToken('ΑΔΜΗΕ')
-        const scoredOrgRows = [...orgRows]
-          .map((r) => {
-            const normalized = normalizeOrgToken(cleanText(r.organization_normalized_value))
-            const raw = normalizeOrgToken(cleanText(r.organization_value))
-            let score = 0
-            if (normalized === targetOrg || raw === targetOrg) score = 4
-            else if (normalized.startsWith(targetOrg) || raw.startsWith(targetOrg)) score = 3
-            else if (normalized.includes(targetOrg) || raw.includes(targetOrg)) score = 2
-            return { row: r, score }
-          })
-          .sort((a, b) => b.score - a.score)
+        if (!bestOrg) return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
 
-        const matchedOrgRows = scoredOrgRows.filter((x) => x.score >= 2).map((x) => x.row)
-        const bestOrg = scoredOrgRows[0]?.row ?? orgRows[0]
-
-        if (!bestOrg) return
-
-        const organizationKeys = Array.from(
-          new Set((matchedOrgRows.length ? matchedOrgRows : [bestOrg]).map((r) => r.organization_key)),
-        )
+        const organizationKeys = Array.from(new Set(config.organizationKeys))
         const organizationName =
           cleanText(bestOrg.organization_normalized_value) ??
           cleanText(bestOrg.organization_value) ??
-          'ΑΔΜΗΕ'
+          config.fallbackName
 
         const pageSize = 1000
 
@@ -896,7 +953,7 @@ export default function App() {
           .order('contract_signed_date', { ascending: false })
           .order('id', { ascending: false })
           .limit(5)
-        const latestContracts = (latestTimelineRows ?? []) as Array<{
+        const timelineContracts = (latestTimelineRows ?? []) as Array<{
           id: number
           title: string | null
           submission_at: string | null
@@ -921,8 +978,8 @@ export default function App() {
           diavgeia_ada: string | null
         }>
 
-        const latestSigned = latestContracts[0]?.contract_signed_date ?? null
-        const timeline = latestContracts.map((p) => {
+        const latestSigned = timelineContracts[0]?.contract_signed_date ?? null
+        const timeline = timelineContracts.map((p) => {
           const payment = paymentByProcId.get(p.id)
           const cpvItems = cpvByProcId.get(p.id) ?? []
           const cpv = cpvItems[0] ?? null
@@ -988,15 +1045,420 @@ export default function App() {
           timeline,
         }
 
-        if (!cancelled) setOrganizationSection(nextState)
-      } finally {
-        if (!cancelled) setOrganizationSectionLoading(false)
+        return nextState
+      } catch {
+        return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
       }
     }
 
-    loadOrganizationSection()
+    const loadOrganizationSections = async () => {
+      try {
+        const nextSections = await Promise.all(HOME_ORGANIZATION_SECTIONS.map((config) => loadOrganizationSection(config)))
+        if (!cancelled) setOrganizationSections(nextSections)
+      } finally {
+        if (!cancelled) setOrganizationSectionsLoading(false)
+      }
+    }
+
+    loadOrganizationSections()
     return () => { cancelled = true }
-  }, [])
+  }, [currentYear])
+
+  useEffect(() => {
+    let cancelled = false
+    setRegionSectionLoading(true)
+
+    const loadRegionSection = async (config: RegionSectionConfig): Promise<RegionSectionData> => {
+      try {
+        const { data: regionRows } = await supabase
+          .from('region')
+          .select('region_key, region_value, region_normalized_value')
+          .eq('region_key', config.regionKey)
+          .limit(1)
+
+        const regionRow = (regionRows?.[0] ?? null) as {
+          region_key: string
+          region_value: string | null
+          region_normalized_value: string | null
+        } | null
+        const regionValue = cleanText(regionRow?.region_value)
+        const regionName =
+          (regionValue
+            ? (regionValue.startsWith('Περιφέρεια ') ? regionValue : `Περιφέρεια ${regionValue}`)
+            : null)
+          ?? config.fallbackName
+
+        const pageSize = 1000
+        const baseProcurements: Array<{
+          id: number
+          organization_key: string | null
+          contract_signed_date: string | null
+          title: string | null
+          municipality_key: string | null
+          canonical_owner_scope: 'municipality' | 'region' | 'organization' | null
+        }> = []
+        let from = 0
+        while (true) {
+          const to = from + pageSize - 1
+          const { data } = await supabase
+            .from('procurement')
+            .select('id, organization_key, contract_signed_date, title, municipality_key, canonical_owner_scope')
+            .eq('region_key', config.regionKey)
+            .order('id', { ascending: true })
+            .range(from, to)
+          const rows = (data ?? []) as typeof baseProcurements
+          baseProcurements.push(...rows)
+          if (rows.length < pageSize) break
+          from += pageSize
+        }
+
+        const orgKeys = Array.from(new Set(
+          baseProcurements
+            .map((row) => cleanText(row.organization_key))
+            .filter(Boolean),
+        )) as string[]
+        const orgByKey = new Map<string, { name: string; scope: AuthorityScope }>()
+        for (const keys of chunk(orgKeys, 200)) {
+          const { data: orgRows } = await supabase
+            .from('organization')
+            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
+            .in('organization_key', keys)
+          for (const row of (orgRows ?? []) as Array<{
+            organization_key: string
+            organization_normalized_value: string | null
+            organization_value: string | null
+            authority_scope: AuthorityScope | null
+          }>) {
+            orgByKey.set(row.organization_key, {
+              name: cleanText(row.organization_normalized_value) ?? cleanText(row.organization_value) ?? row.organization_key,
+              scope: row.authority_scope ?? 'other',
+            })
+          }
+        }
+
+        const procurements = baseProcurements.filter((row) => {
+          const canonicalOwnerScope = cleanText(row.canonical_owner_scope)
+          const orgKey = cleanText(row.organization_key)
+          const orgScope = orgKey ? orgByKey.get(orgKey)?.scope : null
+          return canonicalOwnerScope === 'region' || orgScope === 'region' || orgScope === 'decentralized'
+        })
+
+        if (!procurements.length) {
+          return {
+            ...createEmptyOrganizationSectionData(regionName, currentYear),
+            name: regionName,
+          }
+        }
+
+        const procurementIds = procurements.map((p) => p.id)
+        const paymentRows: Array<{
+          procurement_id: number
+          beneficiary_name: string | null
+          beneficiary_vat_number: string | null
+          signers: string | null
+          payment_ref_no: string | null
+          amount_without_vat: number | null
+          amount_with_vat: number | null
+        }> = []
+        const cpvRows: Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }> = []
+
+        for (const ids of chunk(procurementIds, 200)) {
+          const [{ data: pData }, { data: cData }] = await Promise.all([
+            supabase
+              .from('payment')
+              .select(`
+                procurement_id,
+                beneficiary_name,
+                beneficiary_vat_number,
+                signers,
+                payment_ref_no,
+                amount_without_vat,
+                amount_with_vat
+              `)
+              .in('procurement_id', ids),
+            supabase
+              .from('cpv')
+              .select('procurement_id, cpv_key, cpv_value')
+              .in('procurement_id', ids),
+          ])
+          paymentRows.push(...((pData ?? []) as typeof paymentRows))
+          cpvRows.push(...((cData ?? []) as typeof cpvRows))
+        }
+
+        const procurementYearById = new Map<number, string>()
+        for (const row of procurements) {
+          const year = cleanText(row.contract_signed_date)?.slice(0, 4)
+          if (year) procurementYearById.set(row.id, year)
+        }
+        const latestProcurementYear = [...procurementYearById.values()].sort((a, b) => b.localeCompare(a))[0]
+          ?? String(new Date().getFullYear())
+        const previousProcurementYear = String(Number(latestProcurementYear) - 1)
+        const totalSpend = paymentRows.reduce((sum, row) => {
+          if (procurementYearById.get(row.procurement_id) !== latestProcurementYear) return sum
+          return sum + Number(row.amount_without_vat ?? 0)
+        }, 0)
+        const contractCount = procurements.filter((row) => procurementYearById.get(row.id) === latestProcurementYear).length
+        const previousYearContractCount = procurements.filter((row) => procurementYearById.get(row.id) === previousProcurementYear).length
+        const beneficiaryCount = new Set(
+          paymentRows
+            .filter((row) => procurementYearById.get(row.procurement_id) === latestProcurementYear)
+            .map((row) => cleanText(row.beneficiary_name))
+            .filter(Boolean),
+        ).size
+        const previousYearBeneficiaryCount = new Set(
+          paymentRows
+            .filter((row) => procurementYearById.get(row.procurement_id) === previousProcurementYear)
+            .map((row) => cleanText(row.beneficiary_name))
+            .filter(Boolean),
+        ).size
+
+        const cpvCounts = new Map<string, number>()
+        const cpvValueCounts = new Map<string, number>()
+        const cpvValueCountsByYear = new Map<string, Map<string, number>>()
+        const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
+        for (const row of cpvRows) {
+          const code = cleanText(row.cpv_key)
+          const value = cleanText(row.cpv_value)
+          const procurementYear = procurementYearById.get(row.procurement_id)
+          if (!code) continue
+          cpvCounts.set(code, (cpvCounts.get(code) ?? 0) + 1)
+          if (value) cpvValueCounts.set(value, (cpvValueCounts.get(value) ?? 0) + 1)
+          if (value && procurementYear) {
+            if (!cpvValueCountsByYear.has(procurementYear)) cpvValueCountsByYear.set(procurementYear, new Map<string, number>())
+            const yearCounts = cpvValueCountsByYear.get(procurementYear)!
+            yearCounts.set(value, (yearCounts.get(value) ?? 0) + 1)
+          }
+          if (!cpvByProcId.has(row.procurement_id)) cpvByProcId.set(row.procurement_id, [])
+          const items = cpvByProcId.get(row.procurement_id)!
+          const item = { code, label: value ?? '—' }
+          if (!items.find((x) => x.code === item.code && x.label === item.label)) items.push(item)
+        }
+
+        const paymentByProcId = new Map<number, {
+          beneficiary_name: string | null
+          beneficiary_vat_number: string | null
+          signers: string | null
+          payment_ref_no: string | null
+          amount_without_vat: number | null
+          amount_with_vat: number | null
+        }>()
+        for (const row of paymentRows) {
+          if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
+        }
+
+        const topCpvs = [...cpvCounts.entries()]
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 4)
+          .map(([code]) => `CPV ${code}`)
+        const topCpvValue = [...(cpvValueCountsByYear.get(latestProcurementYear) ?? new Map<string, number>()).entries()]
+          .sort((a, b) => b[1] - a[1])[0]?.[0]
+          ?? [...cpvValueCounts.entries()]
+          .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
+        const previousYearTopCpvValue = [...(cpvValueCountsByYear.get(previousProcurementYear) ?? new Map<string, number>()).entries()]
+          .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
+
+        const activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }> = []
+        const seenWorkPoints = new Set<string>()
+        let worksFrom = 0
+        while (true) {
+          const worksTo = worksFrom + pageSize - 1
+          const { data: worksData } = await supabase
+            .from('works_enriched')
+            .select('lat, lon, work, point_name_canonical')
+            .eq('region_key', config.regionKey)
+            .in('authority_scope', ['region', 'decentralized'])
+            .not('lat', 'is', null)
+            .not('lon', 'is', null)
+            .order('id', { ascending: true })
+            .range(worksFrom, worksTo)
+          const rows = (worksData ?? []) as Array<{
+            lat: number | string | null
+            lon: number | string | null
+            work: string | null
+            point_name_canonical: string | null
+          }>
+          for (const row of rows) {
+            const lat = Number(row.lat)
+            const lon = Number(row.lon)
+            if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue
+            const work = cleanText(row.work) ?? '—'
+            const pointName = cleanText(row.point_name_canonical) ?? '—'
+            const key = `${lat.toFixed(6)}|${lon.toFixed(6)}`
+            if (seenWorkPoints.has(key)) continue
+            seenWorkPoints.add(key)
+            activityWorkPoints.push({ lat, lon, work, pointName })
+          }
+          if (rows.length < pageSize) break
+          worksFrom += pageSize
+        }
+
+        const timelineIds = [...procurements]
+          .filter((row) => cleanText(row.contract_signed_date))
+          .sort((a, b) => {
+            const byDate = (cleanText(b.contract_signed_date) ?? '').localeCompare(cleanText(a.contract_signed_date) ?? '')
+            if (byDate !== 0) return byDate
+            return b.id - a.id
+          })
+          .slice(0, 5)
+          .map((row) => row.id)
+
+        let timelineContracts: Array<{
+          id: number
+          organization_key: string | null
+          title: string | null
+          submission_at: string | null
+          contract_signed_date: string | null
+          short_descriptions: string | null
+          procedure_type_value: string | null
+          reference_number: string | null
+          contract_number: string | null
+          contract_budget: number | null
+          budget: number | null
+          assign_criteria: string | null
+          contract_type: string | null
+          units_operator: string | null
+          funding_details_cofund: string | null
+          funding_details_self_fund: string | null
+          funding_details_espa: string | null
+          funding_details_regular_budget: string | null
+          auction_ref_no: string | null
+          organization_vat_number: string | null
+          start_date: string | null
+          end_date: string | null
+          diavgeia_ada: string | null
+        }> = []
+        if (timelineIds.length) {
+          const { data: timelineRows } = await supabase
+            .from('procurement')
+            .select(`
+              id,
+              organization_key,
+              title,
+              submission_at,
+              contract_signed_date,
+              short_descriptions,
+              procedure_type_value,
+              reference_number,
+              contract_number,
+              contract_budget,
+              budget,
+              assign_criteria,
+              contract_type,
+              units_operator,
+              funding_details_cofund,
+              funding_details_self_fund,
+              funding_details_espa,
+              funding_details_regular_budget,
+              auction_ref_no,
+              organization_vat_number,
+              start_date,
+              end_date,
+              diavgeia_ada
+            `)
+            .in('id', timelineIds)
+
+          timelineContracts = ((timelineRows ?? []) as typeof timelineContracts)
+            .sort((a, b) => timelineIds.indexOf(a.id) - timelineIds.indexOf(b.id))
+        }
+
+        const latestSigned = timelineContracts[0]?.contract_signed_date ?? null
+        const timeline = timelineContracts.map((p) => {
+          const payment = paymentByProcId.get(p.id)
+          const cpvItems = cpvByProcId.get(p.id) ?? []
+          const cpv = cpvItems[0] ?? null
+          const organizationName = cleanText(p.organization_key)
+            ? orgByKey.get(cleanText(p.organization_key)!)?.name ?? regionName
+            : regionName
+          const contract: LatestContractCard = {
+            id: String(p.id),
+            who: organizationName,
+            what: cleanText(p.title) ?? '—',
+            when: formatDateEl(cleanText(p.submission_at)),
+            why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
+            beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
+            contractType: cleanText(p.procedure_type_value) ?? '—',
+            howMuch: formatEur(payment?.amount_without_vat ?? null),
+            withoutVatAmount: formatEur(payment?.amount_without_vat ?? null),
+            withVatAmount: formatEur(payment?.amount_with_vat ?? null),
+            referenceNumber: cleanText(p.reference_number) ?? '—',
+            contractNumber: cleanText(p.contract_number) ?? '—',
+            cpv: cpv?.label ?? '—',
+            cpvCode: cpv?.code ?? '—',
+            cpvItems,
+            signedAt: formatDateEl(cleanText(p.contract_signed_date)),
+            startDate: formatDateEl(cleanText(p.start_date)),
+            endDate: formatDateEl(cleanText(p.end_date)),
+            organizationVat: cleanText(p.organization_vat_number) ?? '—',
+            beneficiaryVat: cleanText(payment?.beneficiary_vat_number) ?? '—',
+            signers: cleanText(payment?.signers) ?? '—',
+            assignCriteria: cleanText(p.assign_criteria) ?? '—',
+            contractKind: cleanText(p.contract_type) ?? '—',
+            unitsOperator: cleanText(p.units_operator) ?? '—',
+            fundingCofund: cleanText(p.funding_details_cofund) ?? '—',
+            fundingSelf: cleanText(p.funding_details_self_fund) ?? '—',
+            fundingEspa: cleanText(p.funding_details_espa) ?? '—',
+            fundingRegular: cleanText(p.funding_details_regular_budget) ?? '—',
+            auctionRefNo: cleanText(p.auction_ref_no) ?? '—',
+            paymentRefNo: cleanText(payment?.payment_ref_no) ?? '—',
+            shortDescription: firstPipePart(p.short_descriptions) ?? '—',
+            rawBudget: formatEur(p.budget != null ? Number(p.budget) : null),
+            contractBudget: formatEur(p.contract_budget != null ? Number(p.contract_budget) : null),
+            documentUrl: cleanText(p.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(p.diavgeia_ada)}` : null,
+          }
+          const year = cleanText(p.contract_signed_date)?.slice(0, 4) ?? '—'
+          return {
+            month: monthShortEl(p.contract_signed_date),
+            year,
+            text: firstPipePart(p.title) ?? 'Καταχώρηση σύμβασης',
+            contract,
+          }
+        })
+
+        return {
+          name: regionName,
+          yearLabel: latestProcurementYear,
+          previousYearLabel: previousProcurementYear,
+          totalSpend,
+          cpvCodes: topCpvs,
+          topCpvValue,
+          previousYearTopCpvValue,
+          contractCount,
+          previousYearContractCount,
+          beneficiaryCount,
+          previousYearBeneficiaryCount,
+          latestSignedAt: latestSigned,
+          activityWorkPoints,
+          timeline,
+        }
+      } catch {
+        return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
+      }
+    }
+
+    const loadHomepageRegionSection = async () => {
+      try {
+        let selectedConfig = DEFAULT_HOME_REGION_SECTION
+        const { data: regionRows } = await supabase
+          .from('region')
+          .select('region_key, region_value, region_normalized_value')
+
+        selectedConfig = pickRandomRegionSectionConfig((regionRows ?? []) as RegionDirectoryRow[], DEFAULT_HOME_REGION_SECTION)
+
+        if (!cancelled) {
+          setHomeRegionConfig(selectedConfig)
+          setRegionSection(createEmptyOrganizationSectionData(selectedConfig.fallbackName, currentYear))
+        }
+
+        const nextState = await loadRegionSection(selectedConfig)
+        if (!cancelled) setRegionSection(nextState)
+      } finally {
+        if (!cancelled) setRegionSectionLoading(false)
+      }
+    }
+
+    loadHomepageRegionSection()
+    return () => { cancelled = true }
+  }, [currentYear])
 
   useEffect(() => {
     let cancelled = false
@@ -1160,10 +1622,6 @@ export default function App() {
     return () => { cancelled = true }
   }, [currentYear])
 
-  const downloadContractPdf = async (contract: LatestContractCard) => {
-    await downloadContractDocument(contract)
-  }
-
   return (
     <>
       <main>
@@ -1253,7 +1711,7 @@ export default function App() {
                   )
                 })}
 
-                {chartTicks.map((tick) => {
+                {CHART_TICKS.map((tick) => {
                   const dayInYear = Math.floor((Date.UTC(2025, tick.month - 1, tick.day) - Date.UTC(2025, 0, 1)) / 86_400_000) + 1
                   const x = 44 + dayFraction(dayInYear, 365) * (736 - 44)
                   return (
@@ -1384,11 +1842,28 @@ export default function App() {
           />
         </Suspense>
 
-        <DebugComponentLabel name="OrganizationSection" />
         <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
-          <OrganizationSection
-            data={organizationSection}
-            loading={organizationSectionLoading}
+          {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
+            <Fragment key={config.fallbackName}>
+              <DebugComponentLabel name={`OrganizationSection:${config.fallbackName}`} />
+              <OrganizationSection
+                data={organizationSections[index] ?? createEmptyOrganizationSectionData(config.fallbackName, currentYear)}
+                loading={organizationSectionsLoading}
+                anchorId={config.anchorId}
+                formatEurCompact={formatEurCompact}
+                formatDateEl={formatDateEl}
+                onOpenContract={(contract) => setSelectedContract(contract)}
+              />
+            </Fragment>
+          ))}
+        </Suspense>
+
+        <DebugComponentLabel name={`RegionSection:${homeRegionConfig.fallbackName}`} />
+        <Suspense fallback={<SectionFallback label="Φόρτωση περιφέρειας" />}>
+          <RegionSection
+            data={regionSection}
+            loading={regionSectionLoading}
+            anchorId={homeRegionConfig.anchorId}
             formatEurCompact={formatEurCompact}
             formatDateEl={formatDateEl}
             onOpenContract={(contract) => setSelectedContract(contract)}
@@ -1450,7 +1925,7 @@ export default function App() {
           <ContractModal
             contract={selectedContract}
             onClose={() => setSelectedContract(null)}
-            onDownloadPdf={() => downloadContractPdf(selectedContract)}
+            onDownloadPdf={() => downloadContractDocument(selectedContract)}
           />
         </Suspense>
       )}

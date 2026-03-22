@@ -29512,3 +29512,40 @@ funding,municipality,ΔΗΜΟΣ::ΠΕΤΡΟΥΠΟΛΗΣ,Δ. ΠΕΤΡΟΥΠΟΛΕ
 funding,municipality,6248,Δ. ΠΕΤΡΟΥΠΟΛΕΩΣ,ΠΕΤΡΟΥΠΟΛΗΣ,9184,Πετρούπολης,ΑΤΤΙΚΗΣ,org_coverage_exact_or_variant,organization_value
 kimdis,organization,ΝΠΙΔ::ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.,ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.,ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε.,,,"ΙΟΝΙΩΝ ΝΗΣΩΝ",manual_kimdis_org,org_type=ΝΠΙΔ
 kimdis,organization,ΝΠΔΔ::ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ,ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ,ΔΗΜΟΣ ΧΑΛΚΗΔΟΝΟΣ,9038,Χαλκηδόνος,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,manual_kimdis_org,org_type=ΔΗΜΟΣ
+procurements,organization,50285,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ (Δ.Ε.Υ.Α.) ΘΕΡΜΑΙΚΟΥ,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ Δ.Ε.Υ.Α. ΘΕΡΜΑΙΚΟΥ,9029,Θερμαϊκού,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,100063177,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΜΕΤΕΩΡΩΝ,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΜΕΤΕΩΡΩΝ,9112,Μετεώρων,ΘΕΣΣΑΛΙΑΣ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,100012572,ΔΗΜΟΤΙΚΟ ΛΙΜΕΝΙΚΟ ΤΑΜΕΙΟ ΣΙΘΩΝΙΑΣ,ΔΗΜΟΤΙΚΟ ΛΙΜΕΝΙΚΟ ΤΑΜΕΙΟ ΣΙΘΩΝΙΑΣ,9060,Σιθωνίας,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,manual_municipal_entity,org_type=ΝΠΔΔ
+procurements,organization,52188,Δ.Ε.Υ.Α ΠΡΕΒΕΖΑΣ,Δ.Ε.Υ.Α ΠΡΕΒΕΖΑΣ,9090,Πρέβεζας,ΗΠΕΙΡΟΥ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,50416,ΔΗΜΟΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΠΡΟΝΟΙΑΣ ΔΗΜΟΥ ΡΟΔΟΥ,ΔΗΜΟΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΠΡΟΝΟΙΑΣ ΔΗΜΟΥ ΡΟΔΟΥ,9296,Ρόδου,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,manual_municipal_entity,org_type=ΝΠΔΔ
+procurements,organization,50894,ΚΟΙΝΩΦΕΛΗΣ ΔΗΜ. ΕΠΙΧΕΙΡΗΣΗ ΠΟΛΙΤΙΣΤΙΚΗΣ ΑΝΑΠΤΥΞΗΣ ΔΗΜΟΥ ΠΕΡΙΣΤΕΡΙΟΥ ΔΕΠΑΔΠ,ΚΟΙΝΩΦΕΛΗΣ ΔΗΜ. ΕΠΙΧΕΙΡΗΣΗ ΠΟΛΙΤΙΣΤΙΚΗΣ ΑΝΑΠΤΥΞΗΣ ΔΗΜΟΥ ΠΕΡΙΣΤΕΡΙΟΥ ΔΕΠΑΔΠ,9183,Περιστερίου,ΑΤΤΙΚΗΣ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,54457,ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ ΚΕΡΚΥΡΑΣ ΔΗ.ΠΕ.ΘΕ.Κ.,ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ ΚΕΡΚΥΡΑΣ ΔΗ.ΠΕ.ΘΕ.Κ.,9118,Κεντρικής Κέρκυρας και Διαποντίων Νήσων,ΙΟΝΙΩΝ ΝΗΣΩΝ,manual_municipal_entity,org_type=ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ
+procurements,organization,52850,ΔΗΜΟΤΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΕΚΜΕΤΑΛΕΥΣΗΣ ΠΕΡΙΟΥΣΙΑΣ ΧΑΛΚΙΔΑΣ Δ.Α.Ε.Π.Ε. ΧΑΛΚΙΔΑ Α.Ε.,ΔΗΜΟΤΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΕΚΜΕΤΑΛΕΥΣΗΣ ΠΕΡΙΟΥΣΙΑΣ ΧΑΛΚΙΔΑΣ Δ.Α.Ε.Π.Ε. ΧΑΛΚΙΔΑ Α.Ε.,9155,Χαλκιδέων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,54977,ΔΗΜΟΤΙΚΟ ΜΟΥΣΕΙΟ ΚΑΛΑΒΡΥΤΙΝΟΥ ΟΛΟΚΑΥΤΩΜΑΤΟΣ,ΔΗΜΟΤΙΚΟ ΜΟΥΣΕΙΟ ΚΑΛΑΒΡΥΤΙΝΟΥ ΟΛΟΚΑΥΤΩΜΑΤΟΣ,9133,Καλαβρύτων,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,manual_municipal_entity,org_type=ΝΠΔΔ
+procurements,organization,52379,ΑΝΑΠΤΥΞΗ ΑΘΛΗΤΙΣΜΟΥ ΗΡΑΚΛΕΙΟΥ - ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΟΤΑ,ΑΝΑΠΤΥΞΗ ΑΘΛΗΤΙΣΜΟΥ ΗΡΑΚΛΕΙΟΥ - ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΟΤΑ,9305,Ηρακλείου,ΚΡΗΤΗΣ,manual_municipal_entity,org_type=ΝΠΙΔ
+procurements,organization,50622,ΜΟΝΟΜΕΤΟΧΙΚΗ ΑΝΩΝΥΜΗ ΔΗΜΟΤΙΚΗ ΕΤΑΙΡΕΙΑ ΔΗΜΟΥ ΙΤΑΝΟΥ (Μ.Α.Δ.Ε.Δ.Ι. Α.Ε.),ΜΟΝΟΜΕΤΟΧΙΚΗ ΑΝΩΝΥΜΗ ΔΗΜΟΤΙΚΗ ΕΤΑΙΡΕΙΑ ΔΗΜΟΥ ΙΤΑΝΟΥ (Μ.Α.Δ.Ε.Δ.Ι. Α.Ε.),9313,Σητείας,ΚΡΗΤΗΣ,manual_municipal_entity,org_type=Ν.Π.Ι.Δ.
+procurements,organization,100070463,ΕΘΝΙΚΟ ΑΘΛΗΤΙΚΟ ΠΡΟΠΟΝΗΤΙΚΟ ΚΕΝΤΡΟ ΟΛΥΜΠΙΑΚΟΥ ΧΩΡΙΟΥ,ΕΘΝΙΚΟ ΑΘΛΗΤΙΚΟ ΠΡΟΠΟΝΗΤΙΚΟ ΚΕΝΤΡΟ ΟΛΥΜΠΙΑΚΟΥ ΧΩΡΙΟΥ,,,,manual_org_seed,organization_value
+procurements,organization,50039,ΕΛΛΗΝΙΚΑ ΤΑΧΥΔΡΟΜΕΙΑ Α.Ε,ΕΛΛΗΝΙΚΑ ΤΑΧΥΔΡΟΜΕΙΑ Α.Ε,,,,manual_org_seed,organization_value
+procurements,organization,99221400,ΜΟΥΣΕΙΟ ΑΚΡΟΠΟΛΗΣ (Ν.3711/2008),ΜΟΥΣΕΙΟ ΑΚΡΟΠΟΛΗΣ (Ν.3711/2008),,,,manual_org_seed,organization_value
+procurements,organization,51891,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧΕΙΡΙΣΗΣ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 2ΗΣ ΔΙΑΧΕΙΡΙΣΤΙΚΗΣ ΕΝΟΤΗΤΑΣ ΔΗΜΟΥ ΣΤΡΑΤΟΥ,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧΕΙΡΙΣΗΣ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 2ΗΣ ΔΙΑΧΕΙΡΙΣΤΙΚΗΣ ΕΝΟΤΗΤΑΣ ΔΗΜΟΥ ΣΤΡΑΤΟΥ,9123,Αγρινίου,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,manual_single_municipality,organization_value
+procurements,organization,100014144,ΠΡΟΕΔΡΙΑ ΤΗΣ ΔΗΜΟΚΡΑΤΙΑΣ,ΠΡΟΕΔΡΙΑ ΤΗΣ ΔΗΜΟΚΡΑΤΙΑΣ,,,,manual_org_seed,organization_value
+procurements,organization,55406,ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,,,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,manual_single_region,organization_value
+procurements,organization,54752,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 3ΗΣ ΔΙΑΧ ΕΝΟΤΗΤΑΣ ΤΟΥ ΝΟΜΟΥ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ ΠΕΡΙΦ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,ΑΝΑΓΚΑΣΤΙΚΟΣ ΣΥΝΔΕΣΜΟΣ ΔΙΑΧ ΣΤΕΡΕΩΝ ΑΠΟΒΛΗΤΩΝ 3ΗΣ ΔΙΑΧ ΕΝΟΤΗΤΑΣ ΤΟΥ ΝΟΜΟΥ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ ΠΕΡΙΦ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,,,ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ,manual_single_region,organization_value
+procurements,organization,5,ΥΠΟΥΡΓΕΙΟ ΔΙΚΑΙΟΣΥΝΗΣ,ΥΠΟΥΡΓΕΙΟ ΔΙΚΑΙΟΣΥΝΗΣ,,,,manual_org_seed,organization_value
+procurements,organization,99220979,ΕΚΕΦΕ ΔΗΜΟΚΡΙΤΟΣ,ΕΚΕΦΕ ΔΗΜΟΚΡΙΤΟΣ,9167,Αγίας Παρασκευής,ΑΤΤΙΚΗΣ,manual_single_municipality,organization_value
+procurements,organization,99200054,ΕΛΛΗΝΙΚΟ ΙΝΣΤΙΤΟΥΤΟ ΠΑΣΤΕΡ,ΕΛΛΗΝΙΚΟ ΙΝΣΤΙΤΟΥΤΟ ΠΑΣΤΕΡ,,,,manual_org_seed,organization_value
+procurements,organization,99206224,ΙΔΡΥΜΑ ΙΑΤΡΟΒΙΟΛΟΓΙΚΩΝ ΕΡΕΥΝΩΝ ΤΗΣ ΑΚΑΔΗΜΙΑΣ ΑΘΗΝΩΝ (ΙΙΒΕΑΑ),ΙΔΡΥΜΑ ΙΑΤΡΟΒΙΟΛΟΓΙΚΩΝ ΕΡΕΥΝΩΝ ΤΗΣ ΑΚΑΔΗΜΙΑΣ ΑΘΗΝΩΝ (ΙΙΒΕΑΑ),,,,manual_org_seed,organization_value
+procurements,organization,50184,ΕΘΝΙΚΟ ΚΕΝΤΡΟ ΑΜΕΣΗΣ ΒΟΗΘΕΙΑΣ (ΕΚΑΒ),ΕΘΝΙΚΟ ΚΕΝΤΡΟ ΑΜΕΣΗΣ ΒΟΗΘΕΙΑΣ (ΕΚΑΒ),,,,manual_org_seed,organization_value
+procurements,organization,100046052,ΕΛΛΗΝΙΚΗ ΑΡΧΗ ΓΕΩΛΟΓΙΚΩΝ ΚΑΙ ΜΕΤΑΛΛΕΥΤΙΚΩΝ ΕΡΕΥΝΩΝ,ΕΛΛΗΝΙΚΗ ΑΡΧΗ ΓΕΩΛΟΓΙΚΩΝ ΚΑΙ ΜΕΤΑΛΛΕΥΤΙΚΩΝ ΕΡΕΥΝΩΝ,,,,manual_org_seed,organization_value
+procurements,organization,100068146,ΙΕΡΑ ΜΟΝΗ ΒΑΤΟΠΕΔΙΟΥ,ΙΕΡΑ ΜΟΝΗ ΒΑΤΟΠΕΔΙΟΥ,9059,Πολυγύρου,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,manual_single_municipality,organization_value
+procurements,organization,99203026,ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ,ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΕΙΟ,9190,Ζωγράφου,ΑΤΤΙΚΗΣ,manual_single_municipality,organization_value
+procurements,organization,100066120,ΑΝΑΠΤΥΞΙΑΚΗ ΝΟΜΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ ΑΕ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ,ΑΝΑΠΤΥΞΙΑΚΗ ΝΟΜΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ ΑΕ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ,,,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,manual_single_region,organization_value
+procurements,organization,50098,ΝΟΣΗΛΕΥΤΙΚΟ ΙΔΡΥΜΑ ΜΕΤΟΧΙΚΟΥ ΤΑΜΕΙΟΥ ΣΤΡΑΤΟΥ,ΝΟΣΗΛΕΥΤΙΚΟ ΙΔΡΥΜΑ ΜΕΤΟΧΙΚΟΥ ΤΑΜΕΙΟΥ ΣΤΡΑΤΟΥ,,,,manual_org_seed,organization_value
+procurements,organization,100075220,ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΕΙΑ ΔΙΚΑΙΗΣ ΑΝΑΠΤΥΞΙΑΚΗΣ ΜΕΤΑΒΑΣΗΣ ΑΕ ΕΛΕΔΑΜ,ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΕΙΑ ΔΙΚΑΙΗΣ ΑΝΑΠΤΥΞΙΑΚΗΣ ΜΕΤΑΒΑΣΗΣ ΑΕ ΕΛΕΔΑΜ,,,,manual_org_seed,organization_value
+procurements,organization,100035541,ΔΙΚΤΥΟ ΠΟΛΕΩΝ ΔΕΠΑΝ,ΔΙΚΤΥΟ ΠΟΛΕΩΝ ΔΕΠΑΝ,,,,manual_org_seed,organization_value
+procurements,organization,100012128,ΙΕΡΑ ΜΗΤΡΟΠΟΛΙΣ ΙΩΑΝΝΙΝΩΝ,ΙΕΡΑ ΜΗΤΡΟΠΟΛΙΣ ΙΩΑΝΝΙΝΩΝ,9084,Ιωαννιτών,ΗΠΕΙΡΟΥ,manual_single_municipality,organization_value
+procurements,organization,3405,ΠΡΩΤΟΔΙΚΕΙΟ ΜΥΤΙΛΗΝΗΣ,ΠΡΩΤΟΔΙΚΕΙΟ ΜΥΤΙΛΗΝΗΣ,9261,Λέσβου,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,manual_single_municipality,organization_value
+procurements,organization,50211,ΔΙΟΙΚΗΤΙΚΟ ΕΦΕΤΕΙΟ ΚΟΜΟΤΗΝΗΣ,ΔΙΟΙΚΗΤΙΚΟ ΕΦΕΤΕΙΟ ΚΟΜΟΤΗΝΗΣ,9021,Κομοτηνής,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,manual_single_municipality,organization_value
+procurements,organization,99221970,ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ,ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ,,,,manual_org_seed,organization_value
+procurements,organization,50037,ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΜΟΝΑΔΩΝ ΥΓΕΙΑΣ Α.Ε. (ΑΕΜΥ Α.Ε.),ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΜΟΝΑΔΩΝ ΥΓΕΙΑΣ Α.Ε. (ΑΕΜΥ Α.Ε.),,,,manual_org_seed,organization_value
+procurements,organization,99221503,5Η ΥΓΕΙΟΝΟΜΙΚΗ ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ & ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,5Η ΥΓΕΙΟΝΟΜΙΚΗ ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ & ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,,,ΘΕΣΣΑΛΙΑΣ,manual_single_region,organization_value
+procurements,organization,99206915,ΠΑΝΕΠΙΣΤΗΜΙΟ ΙΩΑΝΝΙΝΩΝ,ΠΑΝΕΠΙΣΤΗΜΙΟ ΙΩΑΝΝΙΝΩΝ,9084,Ιωαννιτών,ΗΠΕΙΡΟΥ,manual_single_municipality,organization_value
