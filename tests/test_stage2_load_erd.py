@@ -9,6 +9,7 @@ from ingest.stage2_load_erd import (
     build_municipality_metadata_rows,
     build_organization_metadata_rows,
     build_region_metadata_rows,
+    dedupe_forest_fire_rows,
     organization_lookup_candidates,
     procurement_rows,
     region_lookup_candidates,
@@ -114,6 +115,100 @@ def test_procurement_rows_falls_back_to_region_lookup_from_org_label():
     assert rows[0][49] is None
 
 
+def test_procurement_rows_resolves_organization_by_afm_before_name():
+    raw = pd.DataFrame(
+        [
+            {
+                "title": "Σύμβαση",
+                "referenceNumber": "26SYMV018900001",
+                "organization_value": "ΜΗ ΓΝΩΣΤΗ ΕΚΔΟΧΗ ΔΥΠΑ",
+                "organizationVatNumber": "090010376",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            }
+        ]
+    )
+
+    rows = procurement_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "organization_afm_lookup": {"090010376": "org_1"},
+        },
+    )
+
+    assert rows[0][49] == "org_1"
+    assert rows[0][51] == "organization"
+
+
+def test_procurement_rows_auto_creates_unknown_organization_from_afm():
+    raw = pd.DataFrame(
+        [
+            {
+                "title": "Σύμβαση",
+                "referenceNumber": "26SYMV018703821",
+                "organization_key": "100044187",
+                "organization_value": "ΜΗΤΡΟΠΟΛΙΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΟΥΣΕΙΩΝ ΕΙΚΑΣΤΙΚΩΝ ΤΕΧΝΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+                "organizationVatNumber": "997223821",
+                "typeOfContractingAuthority": "ΝΠΙΔ",
+            }
+        ]
+    )
+    created_organization_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] = {}
+
+    rows = procurement_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "created_organization_rows": created_organization_rows,
+            "auto_create_organizations": True,
+        },
+    )
+
+    assert rows[0][49] == "org_afm_997223821"
+    assert rows[0][51] == "organization"
+    assert created_organization_rows == {
+        (
+            "org_afm_997223821",
+            "ΜΗΤΡΟΠΟΛΙΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΟΥΣΕΙΩΝ ΕΙΚΑΣΤΙΚΩΝ ΤΕΧΝΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        ): (
+            "org_afm_997223821",
+            "ΜΗΤΡΟΠΟΛΙΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΟΥΣΕΙΩΝ ΕΙΚΑΣΤΙΚΩΝ ΤΕΧΝΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+            "ΜΗΤΡΟΠΟΛΙΤΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΟΥΣΕΙΩΝ ΕΙΚΑΣΤΙΚΩΝ ΤΕΧΝΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+            None,
+            "raw_procurements",
+            "100044187",
+        ),
+    }
+
+
+def test_procurement_rows_normalizes_hyphenated_region_labels():
+    raw = pd.DataFrame(
+        [
+            {
+                "title": "Σύμβαση",
+                "referenceNumber": "26SYMV018999001",
+                "organization_value": "ΠΕΡΙΦΕΡΕΙΑ ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ - ΘΡΑΚΗΣ",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            }
+        ]
+    )
+
+    rows = procurement_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "region_lookup": {
+                "ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ": "ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ",
+                "ΠΕΡΙΦΕΡΕΙΑ ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ": "ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ",
+            },
+        },
+    )
+
+    assert rows[0][48] == "ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ"
+    assert rows[0][49] is None
+    assert rows[0][51] == "region"
+
+
 def test_apply_procurement_chain_dedup_zeroes_superseded_and_forward_linked_amounts():
     raw = pd.DataFrame(
         [
@@ -133,6 +228,52 @@ def test_apply_procurement_chain_dedup_zeroes_superseded_and_forward_linked_amou
     assert amounts["C"] == "0"
     assert amounts["D"] == "400"
     assert amounts["E"] == "500"
+
+
+def test_dedupe_forest_fire_rows_removes_exact_duplicates_and_preserves_order():
+    first = (
+        "9170",
+        None,
+        2024,
+        "2024-08-11",
+        "2024-08-12",
+        "ΑΤΤΙΚΗΣ",
+        "ΠΕΝΤΕΛΗ",
+        38.05,
+        23.86,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        1.0,
+        "fire_incidents_unified.csv",
+    )
+    second = (
+        "9170",
+        None,
+        2024,
+        "2024-08-13",
+        "2024-08-13",
+        "ΑΤΤΙΚΗΣ",
+        "ΝΤΑΟΥ",
+        38.08,
+        23.9,
+        20.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        25.0,
+        2.5,
+        "fire_incidents_unified.csv",
+    )
+
+    deduped, skipped = dedupe_forest_fire_rows([first, first, second, second, first])
+
+    assert deduped == [first, second]
+    assert skipped == 3
 
 
 def test_affected_reference_numbers_for_row_targets_only_superseded_contracts():

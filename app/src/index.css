@@ -409,6 +409,84 @@ main {
   text-decoration-color: var(--accent);
 }
 
+.data-loading-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background:
+    radial-gradient(circle at 85% 18%, rgba(211, 72, 45, 0.08), transparent 9rem),
+    linear-gradient(180deg, rgba(250, 248, 243, 0.96), rgba(242, 239, 231, 0.94));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.data-loading-card--compact {
+  min-height: 0;
+  padding: 0.85rem 0.9rem;
+}
+
+.data-loading-card__graphic {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.22rem;
+  width: 3.2rem;
+  height: 2.6rem;
+}
+
+.data-loading-card__graphic span {
+  flex: 1 1 0;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(180deg, rgba(211, 72, 45, 0.9), rgba(17, 17, 17, 0.42));
+  animation: data-loading-card-pulse 1.15s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.data-loading-card__graphic span:nth-child(1) {
+  height: 38%;
+  animation-delay: 0s;
+}
+
+.data-loading-card__graphic span:nth-child(2) {
+  height: 74%;
+  animation-delay: 0.12s;
+}
+
+.data-loading-card__graphic span:nth-child(3) {
+  height: 54%;
+  animation-delay: 0.24s;
+}
+
+.data-loading-card__copy {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+}
+
+.data-loading-card__copy strong {
+  font-size: 0.95rem;
+  letter-spacing: -0.03em;
+}
+
+.data-loading-card__copy p {
+  margin: 0;
+  font-size: 0.76rem;
+  color: rgba(17, 17, 17, 0.62);
+}
+
+@keyframes data-loading-card-pulse {
+  0%, 100% {
+    opacity: 0.48;
+    transform: scaleY(0.72);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
 .news-wire__all-link {
   display: inline-flex;
   width: fit-content;
@@ -1360,6 +1438,13 @@ main {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--ink-soft);
+}
+
+.organization-map--empty.data-loading-card {
+  place-items: initial;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
 .organization__timeline ul {
@@ -2679,6 +2764,13 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 0.76rem;
+}
+
+.map-loading.data-loading-card {
+  padding: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: inherit;
 }
 
 .map-tooltip {

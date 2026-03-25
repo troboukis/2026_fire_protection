@@ -1,4 +1,5 @@
 import type { ContractModalContract } from './ContractModal'
+import DataLoadingCard from './DataLoadingCard'
 import type { LatestContractCardView } from './LatestContractCard'
 
 export type FeaturedRecordContract = LatestContractCardView & ContractModalContract & {
@@ -46,13 +47,10 @@ export default function FeaturedRecordsSection({
 
       <div className="records-grid records-grid--horizontal">
         {loading && (
-          <article className="record-card">
-            <div className="record-card__header">
-              <div className="record-card__authority">{`Top Beneficiaries ${year}`}</div>
-              <div className="record-card__id">Φόρτωση…</div>
-            </div>
-            <h3>Ανάκτηση στοιχείων από βάση δεδομένων</h3>
-          </article>
+          <DataLoadingCard
+            className="records-grid__loading-card"
+            message={`Ανακτώνται οι δικαιούχοι και οι συμβάσεις τους για το ${year}.`}
+          />
         )}
 
         {!loading && rows.map((row, idx) => (

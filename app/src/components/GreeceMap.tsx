@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
+import DataLoadingCard from './DataLoadingCard'
 import type { GeoData, GeoFeature } from '../types'
 
 const FILL_DEFAULT  = '#e6e4de'
@@ -261,7 +262,7 @@ export function GreeceMap({
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <ComponentTag name="GreeceMap" className="component-tag--overlay" />
       {!geojson && (
-        <div className="map-loading">Φόρτωση χάρτη…</div>
+        <DataLoadingCard className="map-loading" compact message="Προετοιμάζεται ο εθνικός χάρτης συμβάσεων." />
       )}
       <svg
         ref={svgRef}

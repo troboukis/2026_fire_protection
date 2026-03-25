@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
+import DataLoadingCard from './DataLoadingCard'
 import EditorialLead from './EditorialLead'
 import LatestContractCard, { type LatestContractCardView } from './LatestContractCard'
 import type { GeoFeature } from '../types'
@@ -670,9 +671,7 @@ export default function MapSelectionPanel({
           </div>
           <div className="maps-selection-panel__latest-items">
             {municipalityLatestLoading && (
-              <article className="wire-item">
-                <h2>Φόρτωση συμβάσεων…</h2>
-              </article>
+              <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις του δήμου." />
             )}
             {!municipalityLatestLoading && municipalityLatestContracts.map((item) => (
               <LatestContractCard key={item.id} item={item} onOpen={onContractOpen} />
@@ -693,9 +692,7 @@ export default function MapSelectionPanel({
           </div>
           <div className="maps-selection-panel__latest-items">
             {regionLatestLoading && (
-              <article className="wire-item">
-                <h2>Φόρτωση συμβάσεων…</h2>
-              </article>
+              <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις της περιφέρειας." />
             )}
             {!regionLatestLoading && regionLatestContracts.map((item) => (
               <LatestContractCard key={item.id} item={item} onOpen={onContractOpen} />
