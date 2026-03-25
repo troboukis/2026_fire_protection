@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+from collections import Counter
 import hashlib
 import os
 import re
@@ -727,85 +728,16 @@ def procurement_rows(
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
-        org_value_raw = t(r.get("organization_value"))
-        org_candidates = organization_lookup_candidates(org_value_raw)
-        region_candidates = region_lookup_candidates(org_value_raw)
-        city_candidates = organization_lookup_candidates(t(r.get("nutsCity")))
-        org_name = org_candidates[0] if org_candidates else ""
-        org_type = t_up(r.get("typeOfContractingAuthority")) or ""
-        municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
-        if municipality_key_raw is None and region_key_raw is None and org_name:
-            municipality_key_raw, region_key_raw = org_map.get(("", org_name), (None, None))
-        if municipality_key_raw is None and region_key_raw is None and org_name:
-            municipality_key_raw, region_key_raw = org_map.get((norm_key(org_type) or "", norm_key(org_name) or ""), (None, None))
-        if municipality_key_raw is None and region_key_raw is None and org_name:
-            municipality_key_raw, region_key_raw = org_map.get(("", norm_key(org_name) or ""), (None, None))
-        if municipality_key_raw is None and region_key_raw is None:
-            for candidate in org_candidates[1:]:
-                municipality_key_raw, region_key_raw = org_map.get((org_type, candidate), (None, None))
-                if municipality_key_raw is None and region_key_raw is None:
-                    municipality_key_raw, region_key_raw = org_map.get(("", candidate), (None, None))
-                if municipality_key_raw is None and region_key_raw is None:
-                    municipality_key_raw, region_key_raw = org_map.get(
-                        (norm_key(org_type) or "", norm_key(candidate) or ""),
-                        (None, None),
-                    )
-                if municipality_key_raw is None and region_key_raw is None:
-                    municipality_key_raw, region_key_raw = org_map.get(("", norm_key(candidate) or ""), (None, None))
-                if municipality_key_raw is not None or region_key_raw is not None:
-                    break
-
-        municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
-        region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
-        if municipality_key is None:
-            for candidate in org_candidates:
-                municipality_key = municipality_lookup.get(candidate)
-                if municipality_key is not None:
-                    break
-        if region_key is None:
-            for candidate in region_candidates:
-                region_key = region_lookup.get(candidate)
-                if region_key is not None:
-                    break
-        org_key_resolved = None
-        for candidate in org_candidates:
-            org_key_resolved = organization_lookup.get(candidate)
-            if org_key_resolved is not None:
-                break
-        canonical_owner_scope = canonical_owner_scope_from_candidates(
-            org_candidates=org_candidates,
-            region_candidates=region_candidates,
+        region_key, org_key_resolved, municipality_key, canonical_owner_scope = resolve_procurement_context(
+            r=r,
+            org_map=org_map,
             organization_lookup=organization_lookup,
-            municipality_lookup=municipality_lookup,
             region_lookup=region_lookup,
-        )
-        municipality_key_from_city = None
-        for candidate in city_candidates:
-            municipality_key_from_city = municipality_lookup.get(candidate)
-            if municipality_key_from_city is not None:
-                break
-        organization_candidate_municipalities: list[str] = []
-        for candidate in org_candidates:
-            for municipality_candidate in org_municipality_coverage_lookup.get(candidate, []):
-                if municipality_candidate not in organization_candidate_municipalities:
-                    organization_candidate_municipalities.append(municipality_candidate)
-        municipality_key_from_context = resolve_municipality_from_context(
-            context_values=[t(r.get("nutsCity")), t(r.get("title")), t(r.get("shortDescriptions"))],
-            candidate_keys=organization_candidate_municipalities,
+            municipality_lookup=municipality_lookup,
+            municipality_region_lookup=municipality_region_lookup,
             municipality_alias_lookup=municipality_alias_lookup,
+            org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         )
-        if canonical_owner_scope == "organization" and municipality_key_from_city:
-            city_region_key = municipality_region_lookup.get(municipality_key_from_city)
-            if region_key is None and city_region_key is not None:
-                region_key = city_region_key
-            if city_region_key is None or region_key is None or city_region_key == region_key:
-                municipality_key = municipality_key_from_city
-        if canonical_owner_scope == "organization" and municipality_key_from_context:
-            context_region_key = municipality_region_lookup.get(municipality_key_from_context)
-            if region_key is None and context_region_key is not None:
-                region_key = context_region_key
-            if context_region_key is None or region_key is None or context_region_key == region_key:
-                municipality_key = municipality_key_from_context
         out.append((
             t(r.get("title")),
             t(r.get("referenceNumber")),
@@ -859,6 +791,423 @@ def procurement_rows(
             org_key_resolved,
             municipality_key,
             canonical_owner_scope,
+        ))
+    return out
+
+
+def resolve_procurement_context(
+    r: pd.Series,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
+) -> tuple[str | None, str | None, str | None, str | None]:
+    org_value_raw = t(r.get("organization_value"))
+    org_candidates = organization_lookup_candidates(org_value_raw)
+    region_candidates = region_lookup_candidates(org_value_raw)
+    city_candidates = organization_lookup_candidates(t(r.get("nutsCity")))
+    org_name = org_candidates[0] if org_candidates else ""
+    org_type = t_up(r.get("typeOfContractingAuthority")) or ""
+    municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
+    if municipality_key_raw is None and region_key_raw is None and org_name:
+        municipality_key_raw, region_key_raw = org_map.get(("", org_name), (None, None))
+    if municipality_key_raw is None and region_key_raw is None and org_name:
+        municipality_key_raw, region_key_raw = org_map.get((norm_key(org_type) or "", norm_key(org_name) or ""), (None, None))
+    if municipality_key_raw is None and region_key_raw is None and org_name:
+        municipality_key_raw, region_key_raw = org_map.get(("", norm_key(org_name) or ""), (None, None))
+    if municipality_key_raw is None and region_key_raw is None:
+        for candidate in org_candidates[1:]:
+            municipality_key_raw, region_key_raw = org_map.get((org_type, candidate), (None, None))
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(("", candidate), (None, None))
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(
+                    (norm_key(org_type) or "", norm_key(candidate) or ""),
+                    (None, None),
+                )
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(("", norm_key(candidate) or ""), (None, None))
+            if municipality_key_raw is not None or region_key_raw is not None:
+                break
+
+    municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
+    region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
+    if municipality_key is None:
+        for candidate in org_candidates:
+            municipality_key = municipality_lookup.get(candidate)
+            if municipality_key is not None:
+                break
+    if region_key is None:
+        for candidate in region_candidates:
+            region_key = region_lookup.get(candidate)
+            if region_key is not None:
+                break
+    org_key_resolved = None
+    for candidate in org_candidates:
+        org_key_resolved = organization_lookup.get(candidate)
+        if org_key_resolved is not None:
+            break
+    canonical_owner_scope = canonical_owner_scope_from_candidates(
+        org_candidates=org_candidates,
+        region_candidates=region_candidates,
+        organization_lookup=organization_lookup,
+        municipality_lookup=municipality_lookup,
+        region_lookup=region_lookup,
+    )
+    municipality_key_from_city = None
+    for candidate in city_candidates:
+        municipality_key_from_city = municipality_lookup.get(candidate)
+        if municipality_key_from_city is not None:
+            break
+    organization_candidate_municipalities: list[str] = []
+    for candidate in org_candidates:
+        for municipality_candidate in org_municipality_coverage_lookup.get(candidate, []):
+            if municipality_candidate not in organization_candidate_municipalities:
+                organization_candidate_municipalities.append(municipality_candidate)
+    municipality_key_from_context = resolve_municipality_from_context(
+        context_values=[t(r.get("nutsCity")), t(r.get("title")), t(r.get("shortDescriptions"))],
+        candidate_keys=organization_candidate_municipalities,
+        municipality_alias_lookup=municipality_alias_lookup,
+    )
+    if canonical_owner_scope == "organization" and municipality_key_from_city:
+        city_region_key = municipality_region_lookup.get(municipality_key_from_city)
+        if region_key is None and city_region_key is not None:
+            region_key = city_region_key
+        if city_region_key is None or region_key is None or city_region_key == region_key:
+            municipality_key = municipality_key_from_city
+    if canonical_owner_scope == "organization" and municipality_key_from_context:
+        context_region_key = municipality_region_lookup.get(municipality_key_from_context)
+        if region_key is None and context_region_key is not None:
+            region_key = context_region_key
+        if context_region_key is None or region_key is None or context_region_key == region_key:
+            municipality_key = municipality_key_from_context
+
+    return region_key, org_key_resolved, municipality_key, canonical_owner_scope
+
+
+def clean_digits(value: str | None, expected_length: int | None = None) -> str | None:
+    raw = t(value)
+    if raw is None:
+        return None
+    digits = re.sub(r"\D+", "", raw)
+    if not digits:
+        return None
+    if expected_length is not None and len(digits) != expected_length:
+        return None
+    return digits
+
+
+def clean_nuts_code(value: str | None) -> str | None:
+    raw = t_up(value)
+    if raw is None:
+        return None
+    raw = re.sub(r"\s+", "", raw)
+    if "|" in raw:
+        return None
+    if re.fullmatch(r"EL\d{3}", raw):
+        return raw
+    if re.fullmatch(r"EL\d{2}", raw):
+        return raw
+    if re.fullmatch(r"EL\d", raw):
+        return raw
+    return None
+
+
+def clean_nuts_text(value: str | None, uppercase: bool = False) -> str | None:
+    raw = t_up(value) if uppercase else t(value)
+    if raw is None:
+        return None
+    if "|" in raw:
+        return None
+    raw = re.sub(r"\s+", " ", raw).strip()
+    if not raw:
+        return None
+    return raw
+
+
+def nuts_code_specificity(code: str | None) -> int:
+    if code is None:
+        return 0
+    if re.fullmatch(r"EL\d{3}", code):
+        return 3
+    if re.fullmatch(r"EL\d{2}", code):
+        return 2
+    if re.fullmatch(r"EL\d", code):
+        return 1
+    return 0
+
+
+def is_generic_nuts_value(value: str | None) -> bool:
+    normalized = t_up(value) or ""
+    return normalized in {"ΕΛΛΑΔΑ", "ΒΟΡΕΙΑ ΕΛΛΑΔΑ", "ΝΟΤΙΑ ΕΛΛΑΔΑ"}
+
+
+def select_counter_value(counter: Counter[str]) -> str | None:
+    if not counter:
+        return None
+    return max(counter.items(), key=lambda item: (item[1], len(item[0]), item[0]))[0]
+
+
+def select_nuts_pair(counter: Counter[tuple[str, str]]) -> tuple[str | None, str | None]:
+    if not counter:
+        return None, None
+    best_pair, _ = max(
+        counter.items(),
+        key=lambda item: (
+            nuts_code_specificity(item[0][0]),
+            0 if is_generic_nuts_value(item[0][1]) else 1,
+            item[1],
+            len(item[0][1]),
+            item[0][0],
+            item[0][1],
+        ),
+    )
+    return best_pair
+
+
+def select_region_nuts_pair(counter: Counter[tuple[str, str]]) -> tuple[str | None, str | None]:
+    if not counter:
+        return None, None
+    region_level_items = [
+        item
+        for item in counter.items()
+        if nuts_code_specificity(item[0][0]) == 2
+    ]
+    if not region_level_items:
+        return None, None
+    best_pair, _ = max(
+        region_level_items,
+        key=lambda item: (
+            0 if is_generic_nuts_value(item[0][1]) else 1,
+            item[1],
+            len(item[0][1]),
+            item[0][0],
+            item[0][1],
+        ),
+    )
+    return best_pair
+
+
+def _build_metadata_counters(
+    raw: pd.DataFrame,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
+    target_scope: str,
+) -> tuple[
+    dict[str, Counter[str]],
+    dict[str, Counter[str]],
+    dict[str, Counter[str]],
+    dict[str, Counter[str]],
+    dict[str, Counter[tuple[str, str]]],
+]:
+    source_organization_key_counters: dict[str, Counter[str]] = {}
+    afm_counters: dict[str, Counter[str]] = {}
+    postal_code_counters: dict[str, Counter[str]] = {}
+    city_counters: dict[str, Counter[str]] = {}
+    nuts_pair_counters: dict[str, Counter[tuple[str, str]]] = {}
+
+    for _, r in raw.iterrows():
+        region_key, org_key_resolved, municipality_key, canonical_owner_scope = resolve_procurement_context(
+            r=r,
+            org_map=org_map,
+            organization_lookup=organization_lookup,
+            region_lookup=region_lookup,
+            municipality_lookup=municipality_lookup,
+            municipality_region_lookup=municipality_region_lookup,
+            municipality_alias_lookup=municipality_alias_lookup,
+            org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        )
+        if canonical_owner_scope != target_scope:
+            continue
+        target_key = None
+        if target_scope == "municipality":
+            target_key = municipality_key
+        elif target_scope == "region":
+            target_key = region_key
+        elif target_scope == "organization":
+            target_key = org_key_resolved
+        if target_key is None:
+            continue
+
+        source_organization_key = t(r.get("organization_key"))
+        if source_organization_key:
+            source_organization_key_counters.setdefault(target_key, Counter())[source_organization_key] += 1
+
+        municipality_afm = clean_digits(r.get("organizationVatNumber"), expected_length=9)
+        if municipality_afm:
+            afm_counters.setdefault(target_key, Counter())[municipality_afm] += 1
+
+        nuts_postal_code = clean_digits(r.get("nutsPostalCode"), expected_length=5)
+        if nuts_postal_code:
+            postal_code_counters.setdefault(target_key, Counter())[nuts_postal_code] += 1
+
+        nuts_city = clean_nuts_text(r.get("nutsCity"), uppercase=True)
+        if nuts_city:
+            city_counters.setdefault(target_key, Counter())[nuts_city] += 1
+
+        nuts_code_key = clean_nuts_code(r.get("nutsCode_key"))
+        nuts_code_value = clean_nuts_text(r.get("nutsCode_value"))
+        if nuts_code_key and nuts_code_value:
+            nuts_pair_counters.setdefault(target_key, Counter())[(nuts_code_key, nuts_code_value)] += 1
+
+    return (
+        source_organization_key_counters,
+        afm_counters,
+        postal_code_counters,
+        city_counters,
+        nuts_pair_counters,
+    )
+
+
+def build_municipality_metadata_rows(
+    raw: pd.DataFrame,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
+) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]]:
+    (
+        source_organization_key_counters,
+        afm_counters,
+        postal_code_counters,
+        city_counters,
+        nuts_pair_counters,
+    ) = _build_metadata_counters(
+        raw=raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        target_scope="municipality",
+    )
+
+    municipality_keys = set(source_organization_key_counters)
+    municipality_keys.update(afm_counters)
+    municipality_keys.update(postal_code_counters)
+    municipality_keys.update(city_counters)
+    municipality_keys.update(nuts_pair_counters)
+
+    out: list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]] = []
+    for municipality_key in sorted(municipality_keys):
+        nuts_code_key, nuts_code_value = select_nuts_pair(nuts_pair_counters.get(municipality_key, Counter()))
+        out.append((
+            municipality_key,
+            select_counter_value(source_organization_key_counters.get(municipality_key, Counter())),
+            select_counter_value(afm_counters.get(municipality_key, Counter())),
+            select_counter_value(postal_code_counters.get(municipality_key, Counter())),
+            select_counter_value(city_counters.get(municipality_key, Counter())),
+            nuts_code_value,
+            nuts_code_key,
+        ))
+    return out
+
+
+def build_region_metadata_rows(
+    raw: pd.DataFrame,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
+) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]]:
+    (
+        source_organization_key_counters,
+        afm_counters,
+        postal_code_counters,
+        city_counters,
+        nuts_pair_counters,
+    ) = _build_metadata_counters(
+        raw=raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        target_scope="region",
+    )
+
+    region_keys = set(source_organization_key_counters)
+    region_keys.update(afm_counters)
+    region_keys.update(postal_code_counters)
+    region_keys.update(city_counters)
+    region_keys.update(nuts_pair_counters)
+
+    out: list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]] = []
+    for region_key in sorted(region_keys):
+        nuts_code_key, nuts_code_value = select_region_nuts_pair(nuts_pair_counters.get(region_key, Counter()))
+        out.append((
+            region_key,
+            select_counter_value(source_organization_key_counters.get(region_key, Counter())),
+            select_counter_value(afm_counters.get(region_key, Counter())),
+            select_counter_value(postal_code_counters.get(region_key, Counter())),
+            select_counter_value(city_counters.get(region_key, Counter())),
+            nuts_code_value,
+            nuts_code_key,
+        ))
+    return out
+
+
+def build_organization_metadata_rows(
+    raw: pd.DataFrame,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+    municipality_alias_lookup: dict[str, set[str]],
+    org_municipality_coverage_lookup: dict[str, list[str]],
+) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None]]:
+    (
+        _source_organization_key_counters,
+        afm_counters,
+        postal_code_counters,
+        city_counters,
+        nuts_pair_counters,
+    ) = _build_metadata_counters(
+        raw=raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        target_scope="organization",
+    )
+
+    organization_keys = set(afm_counters)
+    organization_keys.update(postal_code_counters)
+    organization_keys.update(city_counters)
+    organization_keys.update(nuts_pair_counters)
+
+    out: list[tuple[str, str | None, str | None, str | None, str | None, str | None]] = []
+    for organization_key in sorted(organization_keys):
+        nuts_code_key, nuts_code_value = select_nuts_pair(nuts_pair_counters.get(organization_key, Counter()))
+        out.append((
+            organization_key,
+            select_counter_value(afm_counters.get(organization_key, Counter())),
+            select_counter_value(postal_code_counters.get(organization_key, Counter())),
+            select_counter_value(city_counters.get(organization_key, Counter())),
+            nuts_code_value,
+            nuts_code_key,
         ))
     return out
 
@@ -1091,6 +1440,36 @@ def main() -> None:
     org_municipality_coverage_lookup = build_org_municipality_coverage_lookup(bundle.expanded_map)
     organization_lookup = build_organization_lookup(org_seed)
     bundle.raw = apply_procurement_chain_dedup(bundle.raw)
+    municipality_metadata_rows = build_municipality_metadata_rows(
+        raw=bundle.raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+    )
+    region_metadata_rows = build_region_metadata_rows(
+        raw=bundle.raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+    )
+    organization_metadata_rows = build_organization_metadata_rows(
+        raw=bundle.raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+    )
 
     procurement = procurement_rows(
         bundle.raw,
@@ -1108,8 +1487,11 @@ def main() -> None:
 
     print("Prepared rows:")
     print(f"  region seed:       {len(region_seed)}")
+    print(f"  region meta:       {len(region_metadata_rows)}")
     print(f"  municipality seed: {len(muni_seed)}")
+    print(f"  municipality meta: {len(municipality_metadata_rows)}")
     print(f"  organization seed: {len(org_seed)}")
+    print(f"  organization meta: {len(organization_metadata_rows)}")
     print(f"  procurement:       {len(procurement)}")
     print(f"  diavgeia:          {len(diav)}")
     print(f"  payment:           derived from raw_procurements rows")
@@ -1165,6 +1547,30 @@ def main() -> None:
                   source_key = EXCLUDED.source_key
                 """,
                 region_seed,
+            )
+            execute_values(
+                cur,
+                """
+                UPDATE public.region AS r
+                SET organization_key = COALESCE(src.organization_key, r.organization_key),
+                    region_afm = COALESCE(src.region_afm, r.region_afm),
+                    nuts_postal_code = COALESCE(src.nuts_postal_code, r.nuts_postal_code),
+                    nuts_postal_city = COALESCE(src.nuts_postal_city, r.nuts_postal_city),
+                    nuts_code_value = COALESCE(src.nuts_code_value, r.nuts_code_value),
+                    nuts_code_key = COALESCE(src.nuts_code_key, r.nuts_code_key),
+                    updated_at = NOW()
+                FROM (VALUES %s) AS src (
+                  region_key,
+                  organization_key,
+                  region_afm,
+                  nuts_postal_code,
+                  nuts_postal_city,
+                  nuts_code_value,
+                  nuts_code_key
+                )
+                WHERE r.region_key = src.region_key
+                """,
+                region_metadata_rows,
             )
             conn.commit()
             log("Region seed committed")
@@ -1232,6 +1638,30 @@ def main() -> None:
                   AND (m.municipality_normalized_name_id IS DISTINCT FROM n.id)
                 """
             )
+            execute_values(
+                cur,
+                """
+                UPDATE public.municipality AS m
+                SET organization_key = COALESCE(src.organization_key, m.organization_key),
+                    municipality_afm = COALESCE(src.municipality_afm, m.municipality_afm),
+                    nuts_postal_code = COALESCE(src.nuts_postal_code, m.nuts_postal_code),
+                    nuts_city = COALESCE(src.nuts_city, m.nuts_city),
+                    nuts_code_value = COALESCE(src.nuts_code_value, m.nuts_code_value),
+                    nuts_code_key = COALESCE(src.nuts_code_key, m.nuts_code_key),
+                    updated_at = NOW()
+                FROM (VALUES %s) AS src (
+                  municipality_key,
+                  organization_key,
+                  municipality_afm,
+                  nuts_postal_code,
+                  nuts_city,
+                  nuts_code_value,
+                  nuts_code_key
+                )
+                WHERE m.municipality_key = src.municipality_key
+                """,
+                municipality_metadata_rows,
+            )
             conn.commit()
             log("Municipality seed committed")
         if "organization" in selected_tables:
@@ -1249,6 +1679,28 @@ def main() -> None:
                   source_key = EXCLUDED.source_key
                 """,
                 org_seed,
+            )
+            execute_values(
+                cur,
+                """
+                UPDATE public.organization AS o
+                SET organization_afm = COALESCE(src.organization_afm, o.organization_afm),
+                    nuts_postal_code = COALESCE(src.nuts_postal_code, o.nuts_postal_code),
+                    nuts_city = COALESCE(src.nuts_city, o.nuts_city),
+                    nuts_code_value = COALESCE(src.nuts_code_value, o.nuts_code_value),
+                    nuts_code_key = COALESCE(src.nuts_code_key, o.nuts_code_key),
+                    updated_at = NOW()
+                FROM (VALUES %s) AS src (
+                  organization_key,
+                  organization_afm,
+                  nuts_postal_code,
+                  nuts_city,
+                  nuts_code_value,
+                  nuts_code_key
+                )
+                WHERE o.organization_key = src.organization_key
+                """,
+                organization_metadata_rows,
             )
             conn.commit()
             log("Organization seed committed")
