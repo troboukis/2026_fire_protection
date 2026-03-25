@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import type { ContractModalContract } from './ContractModal'
+import DataLoadingCard from './DataLoadingCard'
 import type { GeoData } from '../types'
 
 type OrganizationTimelineItem = {
@@ -103,7 +104,7 @@ function OrganizationActivityMap({
   }, [geojson, workPoints])
 
   if (!mapData) {
-    return <div className="organization-map organization-map--empty">Φόρτωση χάρτη…</div>
+    return <DataLoadingCard className="organization-map organization-map--empty" compact message="Προετοιμάζεται ο χάρτης δραστηριότητας του φορέα." />
   }
 
   if (mapData.points.length === 0) {
@@ -140,6 +141,21 @@ export default function OrganizationSection({
   onOpenContract,
   anchorId,
 }: OrganizationSectionProps) {
+  if (loading) {
+    return (
+      <section id={anchorId} className="organization section-rule">
+        <div className="organization__header">
+          <div className="eyebrow">ΟΡΓΑΝΙΣΜΟΣ</div>
+          <h2>{data.name}</h2>
+          <p>
+            Δυναμική ενημέρωση δεδομένων από το Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
+          </p>
+        </div>
+        <DataLoadingCard message={`Ανακτώνται οι συμβάσεις και οι δείκτες για τον φορέα ${data.name}.`} />
+      </section>
+    )
+  }
+
   const totalSpendNote = `Συνολικό ποσό χωρίς ΦΠΑ από τις καταγεγραμμένες πληρωμές του ${data.yearLabel}.`
   const topCpvNote = data.previousYearTopCpvValue
     ? `${data.previousYearLabel}: ${data.previousYearTopCpvValue}`

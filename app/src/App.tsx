@@ -5,6 +5,7 @@ import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
+import DataLoadingCard from './components/DataLoadingCard'
 import { downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
 import { buildLatestContractCardView, type AuthorityScope } from './lib/latestContractCard'
@@ -321,7 +322,7 @@ function DebugComponentLabel({ name }: { name: string }) {
 function SectionFallback({ label }: { label: string }) {
   return (
     <section className="section-rule page-loading page-loading--section" aria-label={label}>
-      Φόρτωση ενότητας…
+      <DataLoadingCard message={label} />
     </section>
   )
 }
@@ -1634,11 +1635,10 @@ export default function App() {
           </div>
           <div className="news-wire__items">
             {latestContractsLoading && (
-              <article className="wire-item">
-                <span className="wire-item__slug">LIVE</span>
-                <h2>Φόρτωση τελευταίων συμβάσεων…</h2>
-                <p>Σύνδεση με το dataset `procurement`.</p>
-              </article>
+              <DataLoadingCard
+                className="news-wire__loading-card"
+                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις από το ΚΗΜΔΗΣ."
+              />
             )}
             {!latestContractsLoading && latestContracts.map((item) => (
               <LatestContractCardItem

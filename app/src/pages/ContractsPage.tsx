@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import ComponentTag from '../components/ComponentTag'
+import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
 import { downloadContractDocument } from '../lib/contractDocument'
 import { supabase } from '../lib/supabase'
@@ -385,66 +386,72 @@ export default function ContractsPage() {
       </section>
 
       <section className="contracts-table-wrap section-rule">
-        <table className="contracts-table">
-          <colgroup>
-            <col className="contracts-col contracts-col--date" />
-            <col className="contracts-col contracts-col--org" />
-            <col className="contracts-col contracts-col--title" />
-            <col className="contracts-col contracts-col--cpv" />
-            <col className="contracts-col contracts-col--beneficiary" />
-            <col className="contracts-col contracts-col--procedure" />
-            <col className="contracts-col contracts-col--amount" />
-            <col className="contracts-col contracts-col--ref" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Ημερομηνία</th>
-              <th>Φορέας</th>
-              <th>Τίτλος</th>
-              <th>Περιγραφή Εργασίας</th>
-              <th>Δικαιούχος</th>
-              <th>Διαδικασία</th>
-              <th>Ποσό χωρίς ΦΠΑ</th>
-              <th>ΑΔΑΜ</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => {
-              const refNo = clean(r.reference_number)
-              const orgRaw = clean(r.organization_value)
-              const orgToken = normalizeMunicipalityToken(orgRaw)
-              const orgDisplay = municipalityNameTokens.has(orgToken) && !orgToken.startsWith('ΔΗΜΟΣ ')
-                ? `ΔΗΜΟΣ ${orgRaw}`
-                : (orgRaw || '—')
-              return (
-                <tr key={r.id}>
-                  <td data-label="Ημερομηνία">{fmtDate(r.contract_signed_date)}</td>
-                  <td data-label="Φορέας">{orgDisplay}</td>
-                  <td data-label="Τίτλος">
-                    <button
-                      type="button"
-                      className="contracts-title-button"
-                      onClick={() => { void openContractModal(r) }}
-                      disabled={openingContractId === r.id}
-                    >
-                      {clean(r.title) || '—'}
-                    </button>
-                  </td>
-                  <td data-label="Περιγραφή Εργασίας">{truncateWords(clean(r.cpv_value), 10)}</td>
-                  <td data-label="Δικαιούχος">{clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}</td>
-                  <td data-label="Διαδικασία">{clean(r.procedure_type_value) || '—'}</td>
-                  <td data-label="Ποσό χωρίς ΦΠΑ" className="contracts-amount">{fmtEur(r.amount_without_vat)}</td>
-                  <td data-label="ΑΔΑΜ">{refNo || '—'}</td>
+        {loading ? (
+          <DataLoadingCard message="Εκτελείται αναζήτηση συμβάσεων και προετοιμάζεται ο πίνακας αποτελεσμάτων." />
+        ) : (
+          <>
+            <table className="contracts-table">
+              <colgroup>
+                <col className="contracts-col contracts-col--date" />
+                <col className="contracts-col contracts-col--org" />
+                <col className="contracts-col contracts-col--title" />
+                <col className="contracts-col contracts-col--cpv" />
+                <col className="contracts-col contracts-col--beneficiary" />
+                <col className="contracts-col contracts-col--procedure" />
+                <col className="contracts-col contracts-col--amount" />
+                <col className="contracts-col contracts-col--ref" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Ημερομηνία</th>
+                  <th>Φορέας</th>
+                  <th>Τίτλος</th>
+                  <th>Περιγραφή Εργασίας</th>
+                  <th>Δικαιούχος</th>
+                  <th>Διαδικασία</th>
+                  <th>Ποσό χωρίς ΦΠΑ</th>
+                  <th>ΑΔΑΜ</th>
                 </tr>
-              )
-            })}
-          </tbody>
-        </table>
-        <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
-          <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
-          <span>Σελίδα {page} / {totalPages}</span>
-          <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>Επόμενη</button>
-        </div>
+              </thead>
+              <tbody>
+                {rows.map((r) => {
+                  const refNo = clean(r.reference_number)
+                  const orgRaw = clean(r.organization_value)
+                  const orgToken = normalizeMunicipalityToken(orgRaw)
+                  const orgDisplay = municipalityNameTokens.has(orgToken) && !orgToken.startsWith('ΔΗΜΟΣ ')
+                    ? `ΔΗΜΟΣ ${orgRaw}`
+                    : (orgRaw || '—')
+                  return (
+                    <tr key={r.id}>
+                      <td data-label="Ημερομηνία">{fmtDate(r.contract_signed_date)}</td>
+                      <td data-label="Φορέας">{orgDisplay}</td>
+                      <td data-label="Τίτλος">
+                        <button
+                          type="button"
+                          className="contracts-title-button"
+                          onClick={() => { void openContractModal(r) }}
+                          disabled={openingContractId === r.id}
+                        >
+                          {clean(r.title) || '—'}
+                        </button>
+                      </td>
+                      <td data-label="Περιγραφή Εργασίας">{truncateWords(clean(r.cpv_value), 10)}</td>
+                      <td data-label="Δικαιούχος">{clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}</td>
+                      <td data-label="Διαδικασία">{clean(r.procedure_type_value) || '—'}</td>
+                      <td data-label="Ποσό χωρίς ΦΠΑ" className="contracts-amount">{fmtEur(r.amount_without_vat)}</td>
+                      <td data-label="ΑΔΑΜ">{refNo || '—'}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
+              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
+              <span>Σελίδα {page} / {totalPages}</span>
+              <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>Επόμενη</button>
+            </div>
+          </>
+        )}
       </section>
 
       {selectedContract && (

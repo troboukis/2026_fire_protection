@@ -3,6 +3,7 @@ import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import type { GeoData } from '../types'
 import { supabase } from '../lib/supabase'
+import DataLoadingCard from './DataLoadingCard'
 
 type CopernicusFirePoint = {
   id: string
@@ -386,6 +387,24 @@ export default function FireCopernicusSection() {
     .filter((fire) => fire.date)
     .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())[0] ?? null
 
+  if (loading) {
+    return (
+      <section id="copernicus" className="fire-copernicus section-rule">
+        <div className="fire-copernicus__intro">
+          <div className="eyebrow">Copernicus</div>
+          <h2>Χάρτης δασικών πυρκαγιών</h2>
+          <p>
+            Τα περιστατικά προέρχονται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a> και βασίζονται σε δορυφορική εκτίμηση καμένων εκτάσεων.<br></br>
+          </p>
+        </div>
+        <DataLoadingCard
+          className="fire-copernicus__loading-card"
+          message="Ανακτώνται οι νεότερες εγγραφές Copernicus και προετοιμάζεται ο χάρτης."
+        />
+      </section>
+    )
+  }
+
   return (
     <section id="copernicus" className="fire-copernicus section-rule">
       <div className="fire-copernicus__intro">
@@ -395,7 +414,7 @@ export default function FireCopernicusSection() {
           Τα περιστατικά προέρχονται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a> και βασίζονται σε δορυφορική εκτίμηση καμένων εκτάσεων.<br></br>
         </p>
         <div className="brand-mark fire-copernicus__brand-mark">
-          Τελευταία ενημέρωση / {loading ? '…' : formatDateTimeEl(lastUpdatedAt)}
+          Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}
         </div>
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
         <div className="fire-copernicus__date-filter-selected">
@@ -405,15 +424,15 @@ export default function FireCopernicusSection() {
         <div className="fire-copernicus__stats">
           <div>
             <span className="label">Συμβάντα</span>
-            <strong>{loading ? '…' : fires.length.toLocaleString('el-GR')}</strong>
+            <strong>{fires.length.toLocaleString('el-GR')}</strong>
           </div>
           <div>
             <span className="label">Καμένη Έκταση</span>
-            <strong>{loading ? '…' : formatStremmata(totalAreaHa)}</strong>
+            <strong>{formatStremmata(totalAreaHa)}</strong>
           </div>
           <div>
             <span className="label">Τελευταία Εγγραφή</span>
-            <strong>{loading ? '…' : formatDateEl(latestFire?.date ?? null)}</strong>
+            <strong>{formatDateEl(latestFire?.date ?? null)}</strong>
           </div>
         </div>
         <div className="fire-copernicus__date-filter" aria-label="Φίλτρο ημερομηνιών Copernicus">
@@ -471,9 +490,8 @@ export default function FireCopernicusSection() {
       </div>
 
       <div className="fire-copernicus__map-wrap">
-        {loading && <div className="fire-copernicus__empty">Φόρτωση Copernicus δεδομένων…</div>}
-        {!loading && !mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
-        {!loading && mapData && (
+        {!mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
+        {mapData && (
           <div ref={mapRef} className="fire-copernicus__map">
             <div className="fire-copernicus__toggle" aria-label="Τρόπος προβολής Copernicus">
               <button
@@ -648,7 +666,7 @@ export default function FireCopernicusSection() {
             )}
           </div>
         )}
-        {!loading && mapData && (
+        {mapData && (
           <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus">
             <span className="fire-copernicus__legend-dot" aria-hidden="true" />
             <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus' : 'Καμένη έκταση Copernicus'}</span>

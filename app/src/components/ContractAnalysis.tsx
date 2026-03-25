@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import * as d3 from 'd3'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
+import DataLoadingCard from './DataLoadingCard'
 import TopAuthoritiesSection from './TopAuthoritiesSection'
 
 // ── Τύποι ────────────────────────────────────────────────────────────
@@ -762,6 +763,7 @@ export default function ContractAnalysis() {
   const [analysisPeriod, setAnalysisPeriod] = useState<'all' | string>(String(CURRENT_YEAR))
   const [analysis, setAnalysis] = useState<AnalysisData | null>(null)
   const [topAuthorities, setTopAuthorities] = useState<TopOrgItem[]>([])
+  const [topAuthoritiesLoading, setTopAuthoritiesLoading] = useState(true)
   const [analysisError, setAnalysisError] = useState<string | null>(null)
   const availableAnalysisYears = useMemo(
     () => Array.from({ length: CURRENT_YEAR - 2024 + 1 }, (_, i) => String(2024 + i)).reverse(),
@@ -1088,6 +1090,7 @@ export default function ContractAnalysis() {
 
   useEffect(() => {
     let cancelled = false
+    setTopAuthoritiesLoading(true)
 
     ;(async () => {
       try {
@@ -1110,6 +1113,8 @@ export default function ContractAnalysis() {
         if (cancelled) return
         setTopAuthorities([])
         setAnalysisError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης ανάλυσης')
+      } finally {
+        if (!cancelled) setTopAuthoritiesLoading(false)
       }
     })()
 
@@ -1221,6 +1226,24 @@ export default function ContractAnalysis() {
 
     return `Οι περισσότερες συμβάσεις υπογράφονται τους μήνες ${top1.label} (${top1.count.toLocaleString('el-GR')}) και ${top2.label} (${top2.count.toLocaleString('el-GR')}), ενώ ο μήνας με τη χαμηλότερη δραστηριότητα είναι ο ${low.label} (${low.count.toLocaleString('el-GR')}).`
   }, [barMetric, monthly])
+
+  const analysisLoading = !analysis && !analysisError
+
+  if (analysisLoading) {
+    return (
+      <section id="analysis" className="ca-section section-rule" aria-label="Ανάλυση Συμβάσεων">
+        <ComponentTag name="ContractAnalysis" />
+        <div className="ca-header section-head">
+          <div className="eyebrow">Ανάλυση Δεδομένων</div>
+          <h2>Δημόσιες Συμβάσεις Πυροπροστασίας</h2>
+          <p className="ca-header-note">
+            Ανακτώνται οι δημοσιευμένες συμβάσεις και οι συγκεντρωτικές μετρήσεις για το διάστημα 2024 έως σήμερα.
+          </p>
+        </div>
+        <DataLoadingCard message="Υπολογίζονται οι δείκτες, τα γραφήματα και οι κατανομές της ανάλυσης." />
+      </section>
+    )
+  }
 
   return (
     <section id="analysis" className="ca-section section-rule" aria-label="Ανάλυση Συμβάσεων">
@@ -1340,7 +1363,7 @@ export default function ContractAnalysis() {
         </div>
       </div>
 
-      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} maxValue={maxOrgM} />
+      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} maxValue={maxOrgM} loading={topAuthoritiesLoading} />
 
       {/* ── Top CPV ── */}
       <div className="ca-table-block">

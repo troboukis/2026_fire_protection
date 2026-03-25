@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import type { ContractModalContract } from './ContractModal'
+import DataLoadingCard from './DataLoadingCard'
 import type { OrganizationSectionData } from './OrganizationSection'
 import type { GeoData } from '../types'
 
@@ -89,7 +90,7 @@ function RegionActivityMap({
   }, [geojson, workPoints])
 
   if (!mapData) {
-    return <div className="organization-map organization-map--empty">Φόρτωση χάρτη…</div>
+    return <DataLoadingCard className="organization-map organization-map--empty" compact message="Προετοιμάζεται ο χάρτης δραστηριότητας της περιφέρειας." />
   }
 
   if (mapData.points.length === 0) {
@@ -126,6 +127,21 @@ export default function RegionSection({
   onOpenContract,
   anchorId,
 }: RegionSectionProps) {
+  if (loading) {
+    return (
+      <section id={anchorId} className="organization section-rule">
+        <div className="organization__header">
+          <div className="eyebrow">ΠΕΡΙΦΕΡΕΙΑ</div>
+          <h2>{data.name}</h2>
+          <p>
+            Δυναμική ενημέρωση δεδομένων από το Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
+          </p>
+        </div>
+        <DataLoadingCard message={`Ανακτώνται οι συμβάσεις και οι δείκτες για την ${data.name}.`} />
+      </section>
+    )
+  }
+
   const totalSpendNote = `Συνολικό ποσό χωρίς ΦΠΑ από τις καταγεγραμμένες πληρωμές του ${data.yearLabel}.`
   const topCpvNote = data.previousYearTopCpvValue
     ? `${data.previousYearLabel}: ${data.previousYearTopCpvValue}`

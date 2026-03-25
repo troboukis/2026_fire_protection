@@ -19,6 +19,7 @@ import argparse
 import ast
 from collections import Counter
 import hashlib
+import json
 import os
 import re
 import sys
@@ -51,6 +52,26 @@ FUND_CSV = REPO / "data" / "funding" / "municipal_funding.csv"
 ORG_MAP_CSV = REPO / "data" / "mappings" / "org_to_municipality.csv"
 REGION_MAP_CSV = REPO / "data" / "mappings" / "region_to_municipalities.csv"
 EXPANDED_MAP_CSV = REPO / "data" / "mappings" / "final_entity_mapping_expanded.csv"
+
+FIRE_KEY_COLUMNS = (
+    "municipality_key",
+    "region_key",
+    "year",
+    "date_start",
+    "date_end",
+    "nomos",
+    "area_name",
+    "lat",
+    "lon",
+    "burned_forest_stremata",
+    "burned_woodland_stremata",
+    "burned_grassland_stremata",
+    "burned_grove_stremata",
+    "burned_other_stremata",
+    "burned_total_stremata",
+    "burned_total_ha",
+    "source",
+)
 
 
 @dataclass
@@ -512,6 +533,14 @@ def organization_key_from_normalized(normalized_value: str) -> str:
     return f"org_{hashlib.sha1(normalized_value.encode('utf-8')).hexdigest()[:20]}"
 
 
+def organization_key_from_afm(afm: str) -> str:
+    return f"org_afm_{afm}"
+
+
+def default_organization_normalized_value(value: str | None) -> str | None:
+    return t_up(value)
+
+
 def authority_scope_from_notes(notes: str | None) -> str | None:
     note = t(notes) or ""
     if not note.startswith("org_type="):
@@ -643,6 +672,17 @@ def build_organization_lookup(org_seed_rows: list[tuple]) -> dict[str, str]:
     return lookup
 
 
+def build_organization_afm_lookup(
+    organization_metadata_rows: list[tuple[str, str | None, str | None, str | None, str | None, str | None]],
+) -> dict[str, str]:
+    lookup: dict[str, str] = {}
+    for organization_key, organization_afm, *_ in organization_metadata_rows:
+        afm = clean_digits(organization_afm, expected_length=9)
+        if afm and afm not in lookup:
+            lookup[afm] = organization_key
+    return lookup
+
+
 def organization_lookup_candidates(val: str | None) -> list[str]:
     raw = t(val)
     if raw is None:
@@ -669,10 +709,13 @@ def organization_lookup_candidates(val: str | None) -> list[str]:
 def canonical_owner_scope_from_candidates(
     org_candidates: list[str],
     region_candidates: list[str],
+    org_key_resolved: str | None,
     organization_lookup: dict[str, str],
     municipality_lookup: dict[str, str],
     region_lookup: dict[str, str],
 ) -> str | None:
+    if org_key_resolved:
+        return "organization"
     for candidate in org_candidates:
         if candidate and organization_lookup.get(candidate):
             return "organization"
@@ -725,6 +768,9 @@ def procurement_rows(
     municipality_region_lookup: dict[str, str],
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
+    organization_afm_lookup: dict[str, str] | None = None,
+    created_organization_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] | None = None,
+    auto_create_organizations: bool = False,
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
@@ -737,6 +783,9 @@ def procurement_rows(
             municipality_region_lookup=municipality_region_lookup,
             municipality_alias_lookup=municipality_alias_lookup,
             org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+            organization_afm_lookup=organization_afm_lookup,
+            created_organization_rows=created_organization_rows,
+            auto_create_organizations=auto_create_organizations,
         )
         out.append((
             t(r.get("title")),
@@ -804,11 +853,15 @@ def resolve_procurement_context(
     municipality_region_lookup: dict[str, str],
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
+    organization_afm_lookup: dict[str, str] | None = None,
+    created_organization_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] | None = None,
+    auto_create_organizations: bool = False,
 ) -> tuple[str | None, str | None, str | None, str | None]:
     org_value_raw = t(r.get("organization_value"))
     org_candidates = organization_lookup_candidates(org_value_raw)
     region_candidates = region_lookup_candidates(org_value_raw)
     city_candidates = organization_lookup_candidates(t(r.get("nutsCity")))
+    organization_afm_lookup = organization_afm_lookup or {}
     org_name = org_candidates[0] if org_candidates else ""
     org_type = t_up(r.get("typeOfContractingAuthority")) or ""
     municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
@@ -846,13 +899,33 @@ def resolve_procurement_context(
             if region_key is not None:
                 break
     org_key_resolved = None
+    organization_afm = clean_digits(r.get("organizationVatNumber"), expected_length=9)
+    if organization_afm:
+        org_key_resolved = organization_afm_lookup.get(organization_afm)
     for candidate in org_candidates:
-        org_key_resolved = organization_lookup.get(candidate)
         if org_key_resolved is not None:
             break
+        org_key_resolved = organization_lookup.get(candidate)
+    if org_key_resolved and org_value_raw:
+        normalized = default_organization_normalized_value(org_value_raw) or org_value_raw
+        if created_organization_rows is not None:
+            created_key = (org_key_resolved, org_value_raw)
+            if created_key not in created_organization_rows and t_up(org_value_raw) not in organization_lookup:
+                created_organization_rows[created_key] = (
+                    org_key_resolved,
+                    org_value_raw,
+                    normalized,
+                    None,
+                    "raw_procurements",
+                    t(r.get("organization_key")) or t(r.get("referenceNumber")),
+                )
+        normalized_value = t_up(normalized)
+        if normalized_value and normalized_value not in organization_lookup:
+            organization_lookup[normalized_value] = org_key_resolved
     canonical_owner_scope = canonical_owner_scope_from_candidates(
         org_candidates=org_candidates,
         region_candidates=region_candidates,
+        org_key_resolved=org_key_resolved,
         organization_lookup=organization_lookup,
         municipality_lookup=municipality_lookup,
         region_lookup=region_lookup,
@@ -884,6 +957,33 @@ def resolve_procurement_context(
             region_key = context_region_key
         if context_region_key is None or region_key is None or context_region_key == region_key:
             municipality_key = municipality_key_from_context
+
+    if (
+        org_key_resolved is None
+        and canonical_owner_scope is None
+        and auto_create_organizations
+        and org_value_raw
+    ):
+        normalized = default_organization_normalized_value(org_value_raw) or org_value_raw
+        org_key_resolved = organization_key_from_afm(organization_afm) if organization_afm else organization_key_from_normalized(normalized)
+        canonical_owner_scope = "organization"
+        if created_organization_rows is not None:
+            created_organization_rows.setdefault(
+                (org_key_resolved, org_value_raw),
+                (
+                    org_key_resolved,
+                    org_value_raw,
+                    normalized,
+                    None,
+                    "raw_procurements",
+                    t(r.get("organization_key")) or t(r.get("referenceNumber")),
+                ),
+            )
+        normalized_value = t_up(normalized)
+        if normalized_value and normalized_value not in organization_lookup:
+            organization_lookup[normalized_value] = org_key_resolved
+        if organization_afm:
+            organization_afm_lookup[organization_afm] = org_key_resolved
 
     return region_key, org_key_resolved, municipality_key, canonical_owner_scope
 
@@ -1001,6 +1101,7 @@ def _build_metadata_counters(
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
     target_scope: str,
+    organization_afm_lookup: dict[str, str] | None = None,
 ) -> tuple[
     dict[str, Counter[str]],
     dict[str, Counter[str]],
@@ -1024,6 +1125,7 @@ def _build_metadata_counters(
             municipality_region_lookup=municipality_region_lookup,
             municipality_alias_lookup=municipality_alias_lookup,
             org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+            organization_afm_lookup=organization_afm_lookup,
         )
         if canonical_owner_scope != target_scope:
             continue
@@ -1076,6 +1178,7 @@ def build_municipality_metadata_rows(
     municipality_region_lookup: dict[str, str],
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
+    organization_afm_lookup: dict[str, str] | None = None,
 ) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]]:
     (
         source_organization_key_counters,
@@ -1093,6 +1196,7 @@ def build_municipality_metadata_rows(
         municipality_alias_lookup=municipality_alias_lookup,
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         target_scope="municipality",
+        organization_afm_lookup=organization_afm_lookup,
     )
 
     municipality_keys = set(source_organization_key_counters)
@@ -1125,6 +1229,7 @@ def build_region_metadata_rows(
     municipality_region_lookup: dict[str, str],
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
+    organization_afm_lookup: dict[str, str] | None = None,
 ) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None, str | None]]:
     (
         source_organization_key_counters,
@@ -1142,6 +1247,7 @@ def build_region_metadata_rows(
         municipality_alias_lookup=municipality_alias_lookup,
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         target_scope="region",
+        organization_afm_lookup=organization_afm_lookup,
     )
 
     region_keys = set(source_organization_key_counters)
@@ -1174,6 +1280,7 @@ def build_organization_metadata_rows(
     municipality_region_lookup: dict[str, str],
     municipality_alias_lookup: dict[str, set[str]],
     org_municipality_coverage_lookup: dict[str, list[str]],
+    organization_afm_lookup: dict[str, str] | None = None,
 ) -> list[tuple[str, str | None, str | None, str | None, str | None, str | None]]:
     (
         _source_organization_key_counters,
@@ -1191,6 +1298,7 @@ def build_organization_metadata_rows(
         municipality_alias_lookup=municipality_alias_lookup,
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         target_scope="organization",
+        organization_afm_lookup=organization_afm_lookup,
     )
 
     organization_keys = set(afm_counters)
@@ -1422,6 +1530,58 @@ def key_norm(v):
     return str(v)
 
 
+def forest_fire_row_digest(row: tuple) -> str:
+    payload = {column: key_norm(value) for column, value in zip(FIRE_KEY_COLUMNS, row, strict=True)}
+    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.md5(encoded.encode("utf-8")).hexdigest()
+
+
+def dedupe_forest_fire_rows(rows: Iterable[tuple]) -> tuple[list[tuple], int]:
+    unique_rows: list[tuple] = []
+    seen_digests: set[str] = set()
+    skipped_duplicates = 0
+
+    for row in rows:
+        digest = forest_fire_row_digest(row)
+        if digest in seen_digests:
+            skipped_duplicates += 1
+            continue
+        seen_digests.add(digest)
+        unique_rows.append(row)
+
+    return unique_rows, skipped_duplicates
+
+
+def load_existing_forest_fire_digests(cur) -> set[str]:
+    cur.execute(
+        """
+        SELECT md5(row_to_json(x)::text) AS fire_digest
+        FROM (
+          SELECT
+            municipality_key,
+            region_key,
+            year::text AS year,
+            date_start::text AS date_start,
+            date_end::text AS date_end,
+            nomos,
+            area_name,
+            lat::text AS lat,
+            lon::text AS lon,
+            burned_forest_stremata::text AS burned_forest_stremata,
+            burned_woodland_stremata::text AS burned_woodland_stremata,
+            burned_grassland_stremata::text AS burned_grassland_stremata,
+            burned_grove_stremata::text AS burned_grove_stremata,
+            burned_other_stremata::text AS burned_other_stremata,
+            burned_total_stremata::text AS burned_total_stremata,
+            burned_total_ha::text AS burned_total_ha,
+            source
+          FROM public.forest_fire
+        ) AS x
+        """
+    )
+    return {row[0] for row in cur.fetchall()}
+
+
 def main() -> None:
     log("Stage 2 ingest started")
     args = parse_args()
@@ -1440,6 +1600,17 @@ def main() -> None:
     org_municipality_coverage_lookup = build_org_municipality_coverage_lookup(bundle.expanded_map)
     organization_lookup = build_organization_lookup(org_seed)
     bundle.raw = apply_procurement_chain_dedup(bundle.raw)
+    preliminary_organization_metadata_rows = build_organization_metadata_rows(
+        raw=bundle.raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+    )
+    organization_afm_lookup = build_organization_afm_lookup(preliminary_organization_metadata_rows)
     municipality_metadata_rows = build_municipality_metadata_rows(
         raw=bundle.raw,
         org_map=org_map,
@@ -1449,6 +1620,7 @@ def main() -> None:
         municipality_region_lookup=municipality_region_lookup,
         municipality_alias_lookup=municipality_alias_lookup,
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        organization_afm_lookup=organization_afm_lookup,
     )
     region_metadata_rows = build_region_metadata_rows(
         raw=bundle.raw,
@@ -1459,18 +1631,10 @@ def main() -> None:
         municipality_region_lookup=municipality_region_lookup,
         municipality_alias_lookup=municipality_alias_lookup,
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
-    )
-    organization_metadata_rows = build_organization_metadata_rows(
-        raw=bundle.raw,
-        org_map=org_map,
-        organization_lookup=organization_lookup,
-        region_lookup=region_lookup,
-        municipality_lookup=municipality_lookup,
-        municipality_region_lookup=municipality_region_lookup,
-        municipality_alias_lookup=municipality_alias_lookup,
-        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        organization_afm_lookup=organization_afm_lookup,
     )
 
+    created_organization_rows: dict[tuple[str, str], tuple[str, str, str, str | None, str | None, str | None]] = {}
     procurement = procurement_rows(
         bundle.raw,
         org_map,
@@ -1480,6 +1644,23 @@ def main() -> None:
         municipality_region_lookup,
         municipality_alias_lookup,
         org_municipality_coverage_lookup,
+        organization_afm_lookup=organization_afm_lookup,
+        created_organization_rows=created_organization_rows,
+        auto_create_organizations=True,
+    )
+    if created_organization_rows:
+        org_seed.extend(created_organization_rows.values())
+        organization_lookup = build_organization_lookup(org_seed)
+    organization_metadata_rows = build_organization_metadata_rows(
+        raw=bundle.raw,
+        org_map=org_map,
+        organization_lookup=organization_lookup,
+        region_lookup=region_lookup,
+        municipality_lookup=municipality_lookup,
+        municipality_region_lookup=municipality_region_lookup,
+        municipality_alias_lookup=municipality_alias_lookup,
+        org_municipality_coverage_lookup=org_municipality_coverage_lookup,
+        organization_afm_lookup=organization_afm_lookup,
     )
     diav = diav_rows(bundle.diav, org_map, organization_lookup, region_lookup, municipality_lookup)
     fires = forest_fire_rows(bundle.fire)
@@ -2044,27 +2225,23 @@ def main() -> None:
             log(f"Payment upsert/backfill committed (zeroed_superseded_payments={zeroed_payments})")
 
         if "forest_fire" in selected_tables:
-            log("Loading existing forest_fire keys...")
-            cur.execute(
-                """
-                SELECT municipality_key, region_key, year, date_start, date_end, nomos,
-                       area_name, lat, lon, burned_forest_stremata, burned_woodland_stremata,
-                       burned_grassland_stremata, burned_grove_stremata, burned_other_stremata,
-                       burned_total_stremata, burned_total_ha, source
-                FROM public.forest_fire
-                """
-            )
-            existing_fire_keys = {tuple(key_norm(x) for x in row) for row in cur.fetchall()}
+            fires_unique, skipped_fire_in_batch = dedupe_forest_fire_rows(fires)
+            log("Loading existing forest_fire key digests...")
+            existing_fire_keys = load_existing_forest_fire_digests(cur)
             fires_to_insert: list[tuple] = []
-            skipped_fire = 0
-            for r in fires:
-                k = tuple(key_norm(x) for x in r)
+            skipped_fire_existing = 0
+            for r in fires_unique:
+                k = forest_fire_row_digest(r)
                 if k in existing_fire_keys:
-                    skipped_fire += 1
+                    skipped_fire_existing += 1
                     continue
                 existing_fire_keys.add(k)
                 fires_to_insert.append(r)
-            log(f"Inserting forest_fire rows ({len(fires_to_insert)})... skipped existing: {skipped_fire}")
+            log(
+                "Inserting forest_fire rows "
+                f"({len(fires_to_insert)})... skipped existing: {skipped_fire_existing}, "
+                f"skipped batch duplicates: {skipped_fire_in_batch}"
+            )
             execute_values(
                 cur,
                 """

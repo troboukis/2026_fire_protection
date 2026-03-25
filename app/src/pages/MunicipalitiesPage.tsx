@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 import { useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
+import DataLoadingCard from '../components/DataLoadingCard'
 import { downloadContractDocument } from '../lib/contractDocument'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import {
@@ -2055,7 +2056,7 @@ export default function MunicipalitiesPage() {
 
           {(hasSelectedMunicipality || selectedMunicipalityKey) && (
             <div className="municipality-profile-hero__body">
-              {hasSelectedMunicipality ? (
+              {hasSelectedMunicipality && !pageLoading ? (
               <>
                 <div className="municipality-profile-hero__facts" aria-label="Γεωγραφικά και διοικητικά στοιχεία">
                   {civicFacts.map((fact) => (
@@ -2496,10 +2497,17 @@ export default function MunicipalitiesPage() {
                     </div>
 	                </div>
               </>
+              ) : pageLoading ? (
+                <DataLoadingCard
+                  className="municipality-profile-hero__loading-card"
+                  message={selectedMunicipalityKey
+                    ? 'Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του.'
+                    : 'Επιλέξτε δήμο για να φορτωθούν τα στοιχεία του.'}
+                />
               ) : (
                 <div className="municipality-profile-hero__empty">
-                  <strong>Φόρτωση δήμου…</strong>
-                  <p>Ανακτώνται τα δεδομένα του δήμου από το URL.</p>
+                  <strong>Δεν βρέθηκε δήμος.</strong>
+                  <p>Επιλέξτε έναν έγκυρο δήμο από τη λίστα για να δείτε το προφίλ του.</p>
                 </div>
               )}
             </div>
@@ -2513,7 +2521,7 @@ export default function MunicipalitiesPage() {
         </section>
       )}
 
-      {hasSelectedMunicipality ? (
+      {hasSelectedMunicipality && !pageLoading ? (
         <>
           <section className="municipality-profile-metrics section-rule" aria-label="Κύριες μετρήσεις">
             <article className="profile-metric-card profile-metric-card--ink municipality-contract-card">
@@ -2682,16 +2690,10 @@ export default function MunicipalitiesPage() {
               )}
             </article>
           </section>
-
-          {pageLoading && (
-            <section className="municipality-page-note section-rule">
-              Φόρτωση profile δήμου για {selectedName}…
-            </section>
-          )}
         </>
-      ) : selectedMunicipalityKey ? (
+      ) : selectedMunicipalityKey && pageLoading ? (
         <section className="municipality-page-note section-rule">
-          Φόρτωση δήμου…
+          <DataLoadingCard message={`Ανακτώνται τα δεδομένα του ${selectedName}.`} />
         </section>
       ) : null}
 
