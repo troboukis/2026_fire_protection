@@ -6,6 +6,9 @@ from ingest.stage2_load_erd import (
     CsvBundle,
     affected_reference_numbers_for_row,
     apply_procurement_chain_dedup,
+    build_municipality_metadata_rows,
+    build_organization_metadata_rows,
+    build_region_metadata_rows,
     organization_lookup_candidates,
     procurement_rows,
     region_lookup_candidates,
@@ -192,3 +195,157 @@ def test_seed_organization_rows_keeps_regional_organizations_as_organizations():
     assert len(rows) == 1
     assert rows[0][1] == "ΙΟΝΙΑ ΑΝΑΠΤΥΞΗ ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΟΤΑ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ (ΑΟΠΙΝ) Α.Ε."
     assert rows[0][3] == "region"
+
+
+def test_build_municipality_metadata_rows_prefers_clean_dominant_values():
+    raw = pd.DataFrame(
+        [
+            {
+                "referenceNumber": "A",
+                "organization_value": "ΔΗΜΟΣ ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ",
+                "organization_key": "1001",
+                "organizationVatNumber": "997712303",
+                "nutsCode_key": "EL511",
+                "nutsCode_value": "Έβρος",
+                "nutsCity": "Αλεξανδρούπολη",
+                "nutsPostalCode": "68100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "B",
+                "organization_value": "ΔΗΜΟΣ ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ",
+                "organization_key": "1001",
+                "organizationVatNumber": "997712303",
+                "nutsCode_key": "EL5",
+                "nutsCode_value": "ΒΟΡΕΙΑ ΕΛΛΑΔΑ",
+                "nutsCity": "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ",
+                "nutsPostalCode": "681 00",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "C",
+                "organization_value": "ΔΗΜΟΣ ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ",
+                "organization_key": "1002",
+                "organizationVatNumber": "9977123603",
+                "nutsCode_key": "EL511",
+                "nutsCode_value": "Έβρος",
+                "nutsCity": "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ",
+                "nutsPostalCode": "68100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "D",
+                "organization_value": "ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ",
+                "organization_key": "2001",
+                "organizationVatNumber": "123456789",
+                "nutsCode_key": "EL511",
+                "nutsCode_value": "Έβρος",
+                "nutsCity": "Αλεξανδρούπολη",
+                "nutsPostalCode": "68100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+        ]
+    )
+
+    rows = build_municipality_metadata_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "municipality_lookup": {"ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ": "9006"},
+        },
+    )
+
+    assert rows == [
+        ("9006", "1001", "997712303", "68100", "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ", "Έβρος", "EL511"),
+    ]
+
+
+def test_build_region_metadata_rows_prefers_region_scope_rows():
+    raw = pd.DataFrame(
+        [
+            {
+                "referenceNumber": "A",
+                "organization_value": "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ",
+                "organization_key": "7001",
+                "organizationVatNumber": "997913715",
+                "nutsCode_key": "EL62",
+                "nutsCode_value": "Ιόνια Νησιά",
+                "nutsCity": "ΚΕΡΚΥΡΑ",
+                "nutsPostalCode": "49100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "B",
+                "organization_value": "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ",
+                "organization_key": "7001",
+                "organizationVatNumber": "997913715",
+                "nutsCode_key": "EL6",
+                "nutsCode_value": "ΝΟΤΙΑ ΕΛΛΑΔΑ",
+                "nutsCity": "Κέρκυρα",
+                "nutsPostalCode": "491 00",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+        ]
+    )
+
+    rows = build_region_metadata_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "region_lookup": {"ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ", "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ"},
+        },
+    )
+
+    assert rows == [
+        ("ΙΟΝΙΩΝ ΝΗΣΩΝ", "7001", "997913715", "49100", "ΚΕΡΚΥΡΑ", "Ιόνια Νησιά", "EL62"),
+    ]
+
+
+def test_build_organization_metadata_rows_prefers_resolved_organization_scope_rows():
+    raw = pd.DataFrame(
+        [
+            {
+                "referenceNumber": "A",
+                "organization_value": "ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ",
+                "organizationVatNumber": "090010376",
+                "nutsCode_key": "EL511",
+                "nutsCode_value": "Έβρος",
+                "nutsCity": "Αλεξανδρούπολη",
+                "nutsPostalCode": "68100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "B",
+                "organization_value": "ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ",
+                "organizationVatNumber": "090010376",
+                "nutsCode_key": "EL5",
+                "nutsCode_value": "ΒΟΡΕΙΑ ΕΛΛΑΔΑ",
+                "nutsCity": "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ",
+                "nutsPostalCode": "681 00",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+            {
+                "referenceNumber": "C",
+                "organization_value": "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ",
+                "organizationVatNumber": "997913715",
+                "nutsCode_key": "EL62",
+                "nutsCode_value": "Ιόνια Νησιά",
+                "nutsCity": "ΚΕΡΚΥΡΑ",
+                "nutsPostalCode": "49100",
+                "typeOfContractingAuthority": "ΝΠΔΔ",
+            },
+        ]
+    )
+
+    rows = build_organization_metadata_rows(
+        raw=raw,
+        **{
+            **empty_procurement_context(),
+            "organization_lookup": {"ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ": "org_1"},
+            "region_lookup": {"ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ", "ΠΕΡΙΦΕΡΕΙΑ ΙΟΝΙΩΝ ΝΗΣΩΝ": "ΙΟΝΙΩΝ ΝΗΣΩΝ"},
+        },
+    )
+
+    assert rows == [
+        ("org_1", "090010376", "68100", "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ", "Έβρος", "EL511"),
+    ]

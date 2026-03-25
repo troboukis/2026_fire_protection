@@ -1141,169 +1141,171 @@ export default function MapsPage() {
   }
 
   return (
-    <div className="maps-page">
-      <DevViewToggle />
-      <ComponentTag name="MapsPage" className="component-tag--overlay" />
-      <div className="maps-page__texture" aria-hidden="true" />
+    <>
+      <div className="maps-page">
+        <DevViewToggle />
+        <ComponentTag name="MapsPage" className="component-tag--overlay" />
+        <div className="maps-page__texture" aria-hidden="true" />
 
-      <div className="maps-main">
-        <section className="maps-top">
-          <section className="maps-controls">
-            <ComponentTag name="MapsFilters" />
-            <div className="maps-controls__row">
-              <label ref={searchContainerRef} className="maps-controls__search">
-                <input
-                  aria-label="Αναζήτηση δήμου ή περιφέρειας"
-                  type="text"
-                  value={searchText}
-                  onChange={(e) => {
-                    setSearchText(e.target.value)
-                    setIsSearchResultsOpen(Boolean(e.target.value.trim()))
-                  }}
-                  onFocus={() => {
-                    if (searchText.trim()) setIsSearchResultsOpen(true)
-                  }}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Escape') {
-                      setIsSearchResultsOpen(false)
-                      return
-                    }
-                    if (e.key === 'Enter' && searchResults.length > 0) {
-                      applySearchSelection(searchResults[0])
-                    }
-                  }}
-                  placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
-                />
-                {searchText.trim() && isSearchResultsOpen && (
-                  <div className="maps-search-results">
-                    {searchResults.length === 0 ? (
-                      <button type="button" className="maps-search-empty" disabled>
-                        Δεν βρέθηκε αποτέλεσμα
-                      </button>
-                    ) : (
-                      searchResults.map((opt) => (
-                        <button
-                          key={`${opt.kind}-${opt.value}`}
-                          type="button"
-                          onClick={() => applySearchSelection(opt)}
-                        >
-                          <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
-                          <span>{opt.label}</span>
+        <div className="maps-main">
+          <section className="maps-top">
+            <section className="maps-controls">
+              <ComponentTag name="MapsFilters" />
+              <div className="maps-controls__row">
+                <label ref={searchContainerRef} className="maps-controls__search">
+                  <input
+                    aria-label="Αναζήτηση δήμου ή περιφέρειας"
+                    type="text"
+                    value={searchText}
+                    onChange={(e) => {
+                      setSearchText(e.target.value)
+                      setIsSearchResultsOpen(Boolean(e.target.value.trim()))
+                    }}
+                    onFocus={() => {
+                      if (searchText.trim()) setIsSearchResultsOpen(true)
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Escape') {
+                        setIsSearchResultsOpen(false)
+                        return
+                      }
+                      if (e.key === 'Enter' && searchResults.length > 0) {
+                        applySearchSelection(searchResults[0])
+                      }
+                    }}
+                    placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
+                  />
+                  {searchText.trim() && isSearchResultsOpen && (
+                    <div className="maps-search-results">
+                      {searchResults.length === 0 ? (
+                        <button type="button" className="maps-search-empty" disabled>
+                          Δεν βρέθηκε αποτέλεσμα
                         </button>
-                      ))
+                      ) : (
+                        searchResults.map((opt) => (
+                          <button
+                            key={`${opt.kind}-${opt.value}`}
+                            type="button"
+                            onClick={() => applySearchSelection(opt)}
+                          >
+                            <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
+                            <span>{opt.label}</span>
+                          </button>
+                        ))
+                      )}
+                    </div>
+                  )}
+                </label>
+                <label>
+                  <select
+                    aria-label="Επέλεξε δήμο"
+                    value={selectedMunicipalityDropdown}
+                    onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
+                  >
+                    <option value="">— Δήμοι —</option>
+                    {loading && (
+                      <option value="" disabled>Φόρτωση δήμων…</option>
                     )}
-                  </div>
-                )}
-              </label>
-              <label>
-                <select
-                  aria-label="Επέλεξε δήμο"
-                  value={selectedMunicipalityDropdown}
-                  onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
-                >
-                  <option value="">— Δήμοι —</option>
-                  {loading && (
-                    <option value="" disabled>Φόρτωση δήμων…</option>
-                  )}
-                  {!loading && municipalities.length === 0 && (
-                    <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
-                  )}
-                  {municipalities.map((m) => (
-                    <option key={m.id} value={m.id}>{m.label}</option>
-                  ))}
-                </select>
-              </label>
+                    {!loading && municipalities.length === 0 && (
+                      <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
+                    )}
+                    {municipalities.map((m) => (
+                      <option key={m.id} value={m.id}>{m.label}</option>
+                    ))}
+                  </select>
+                </label>
 
-              <label>
-                <select
-                  aria-label="Επέλεξε περιφέρεια"
-                  value={selectedRegion}
-                  onChange={(e) => handleRegionDropdownChange(e.target.value)}
+                <label>
+                  <select
+                    aria-label="Επέλεξε περιφέρεια"
+                    value={selectedRegion}
+                    onChange={(e) => handleRegionDropdownChange(e.target.value)}
+                  >
+                    <option value="">— Περιφέρειες —</option>
+                    {REGIONS.map((region) => (
+                      <option key={region} value={region}>{region}</option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+            </section>
+          </section>
+
+          <section className="maps-stage section-rule">
+            <div className="maps-stage__contours" aria-hidden="true" />
+            <div className="maps-stage__frame">
+              <div className="maps-stage__view-toggle" role="group" aria-label="Προβολή χάρτη">
+                <button
+                  type="button"
+                  className={mapView === 'greece' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+                  onClick={() => setMapView('greece')}
                 >
-                  <option value="">— Περιφέρειες —</option>
-                  {REGIONS.map((region) => (
-                    <option key={region} value={region}>{region}</option>
-                  ))}
-                </select>
-              </label>
+                  Ελλάδα
+                </button>
+                <button
+                  type="button"
+                  className={mapView === 'attica' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+                  onClick={() => setMapView('attica')}
+                >
+                  Αττική
+                </button>
+              </div>
+              <GreeceMap
+                geojson={geojson}
+                choroplethData={choroplethData}
+                procMunicipalities={hiddenProcDots}
+                viewMode={mapView}
+                onDeselect={handleMapDeselect}
+                onMunicipalityClick={handleMapMunicipalityClick}
+                selectedMunicipalityIds={selectedMunicipalityIdsForMap}
+                municipalityLabelById={municipalityLabelById}
+              />
             </div>
           </section>
-        </section>
 
-      <section className="maps-stage section-rule">
-        <div className="maps-stage__contours" aria-hidden="true" />
-        <div className="maps-stage__frame">
-          <div className="maps-stage__view-toggle" role="group" aria-label="Προβολή χάρτη">
-            <button
-              type="button"
-              className={mapView === 'greece' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
-              onClick={() => setMapView('greece')}
-            >
-              Ελλάδα
-            </button>
-            <button
-              type="button"
-              className={mapView === 'attica' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
-              onClick={() => setMapView('attica')}
-            >
-              Αττική
-            </button>
+          <div className="maps-legend" aria-live="polite">
+            <div className="maps-legend__scale" aria-hidden="true">
+              <span className="maps-legend__scale-label">Λιγότερες</span>
+              <div className="maps-legend__scale-bar" />
+              <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
+            </div>
+            <p className="maps-legend__summary">
+              {loading
+                ? 'Φόρτωση χάρτη…'
+                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
+            </p>
           </div>
-          <GreeceMap
-            geojson={geojson}
-            choroplethData={choroplethData}
-            procMunicipalities={hiddenProcDots}
-            viewMode={mapView}
-            onDeselect={handleMapDeselect}
-            onMunicipalityClick={handleMapMunicipalityClick}
-            selectedMunicipalityIds={selectedMunicipalityIdsForMap}
-              municipalityLabelById={municipalityLabelById}
-            />
-          </div>
-        </section>
-
-        <div className="maps-legend" aria-live="polite">
-          <div className="maps-legend__scale" aria-hidden="true">
-            <span className="maps-legend__scale-label">Λιγότερες</span>
-            <div className="maps-legend__scale-bar" />
-            <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
-          </div>
-          <p className="maps-legend__summary">
-            {loading
-              ? 'Φόρτωση χάρτη…'
-              : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
-          </p>
         </div>
-      </div>
 
-      <MapSelectionPanel
-        source={panelSource}
-        kind={panelKind}
-        label={panelLabel}
-        onContractOpen={openContractModal}
-        municipalityLatestContracts={municipalityLatestContracts}
-        municipalityLatestLoading={municipalityLatestLoading}
-        regionLatestContracts={regionLatestContracts}
-        regionLatestLoading={regionLatestLoading}
-        municipalityFeature={
-          selectedMunicipalityIdForPanel
-            ? (municipalityFeatureById.get(selectedMunicipalityIdForPanel) ?? null)
-            : null
-        }
-        municipalityFirePoints={municipalityFirePoints}
-        municipalityDirectWorkPoints={municipalityDirectWorkPoints}
-        municipalityRegionalWorkPoints={municipalityRegionalWorkPoints}
-        municipalityWorkLoading={municipalityWorkLoading}
-        municipalityFireLoading={municipalityFireLoading}
-        cityPoints={cityPoints}
-        currentYear={mapYear}
-        regionCurrentYearCount={selectedRegionCurrentYearCount}
-        municipalityCurrentYearCount={
-          selectedMunicipalityIdForPanel
-            ? municipalityContractCount
-            : null
-        }
-      />
+        <MapSelectionPanel
+          source={panelSource}
+          kind={panelKind}
+          label={panelLabel}
+          onContractOpen={openContractModal}
+          municipalityLatestContracts={municipalityLatestContracts}
+          municipalityLatestLoading={municipalityLatestLoading}
+          regionLatestContracts={regionLatestContracts}
+          regionLatestLoading={regionLatestLoading}
+          municipalityFeature={
+            selectedMunicipalityIdForPanel
+              ? (municipalityFeatureById.get(selectedMunicipalityIdForPanel) ?? null)
+              : null
+          }
+          municipalityFirePoints={municipalityFirePoints}
+          municipalityDirectWorkPoints={municipalityDirectWorkPoints}
+          municipalityRegionalWorkPoints={municipalityRegionalWorkPoints}
+          municipalityWorkLoading={municipalityWorkLoading}
+          municipalityFireLoading={municipalityFireLoading}
+          cityPoints={cityPoints}
+          currentYear={mapYear}
+          regionCurrentYearCount={selectedRegionCurrentYearCount}
+          municipalityCurrentYearCount={
+            selectedMunicipalityIdForPanel
+              ? municipalityContractCount
+              : null
+          }
+        />
+      </div>
 
       {selectedContract && (
         <ContractModal
@@ -1312,6 +1314,6 @@ export default function MapsPage() {
           onDownloadPdf={() => downloadContractPdf(selectedContract)}
         />
       )}
-    </div>
+    </>
   )
 }
