@@ -1033,7 +1033,6 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ΔΗΜΟΣ,ΨΑΡΩΝ,ΒΟΡΕΙΟΥ ΑΙΓΑΙΟΥ,9267,Ψαρών,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΩΡΑΙΟΚΑΣΤΡΟΥ,ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ,9039,Ωραιοκάστρου,municipality,mapped_municipality_id
 ΔΗΜΟΣ,ΩΡΩΠΟΥ,ΑΤΤΙΚΗΣ,9227,Ωρωπού,municipality,mapped_municipality_id
-ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ,ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΠΑΓΓΑΙΟΥ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9014,Παγγαίου,municipality,mapped_municipality_id
 ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ,ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΧΑΝΙΩΝ,ΚΡΗΤΗΣ,9325,Χανίων,municipality,mapped_municipality_id
 ΔΗΜΟΤΙΚΟ ΒΡΕΦΟΚΟΜΕΙΟ,ΑΘΗΝΩΝ,ΑΤΤΙΚΗΣ,9186,Αθηναίων,municipality,mapped_municipality_id
 ΔΗΜΟΤΙΚΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΘΕΑΤΡΟ,ΚΑΒΑΛΑΣ-ΔΗ.ΠΕ.ΘΕ. ΚΑΒΑΛΑΣ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9012,Καβάλας,municipality,mapped_municipality_id
@@ -2760,7 +2759,6 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9088,Ζηρού,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9089,Πάργας,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΗΠΕΙΡΟΥ,ΗΠΕΙΡΟΥ,9090,Πρέβεζας,,org_coverage_exact_or_variant
-,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΑΤΤΙΚΗΣ,9170,Ηρακλείου,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9302,Αρχανών - Αστερουσίων,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9303,Βιάννου,,org_coverage_exact_or_variant
 ,ΠΕΡΙΦΕΡΕΙΑ ΚΡΗΤΗΣ,ΚΡΗΤΗΣ,9304,Γόρτυνας,,org_coverage_exact_or_variant
@@ -3919,7 +3917,6 @@ org_type,org_name_clean,region_id,municipality_id,municipality_name,authority_le
 ,ΣΥΡΟΥ - ΕΡΜΟΥΠΟΛΗΣ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,9300,Σύρου - Ερμούπολης,,org_coverage_exact_or_variant
 ,ΔΙΟΝΥΣΟΥ,ΑΤΤΙΚΗΣ,9217,Διονύσου,,org_coverage_exact_or_variant
 ,ΣΥΜΗΣ,ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ,9297,Σύμης,,org_coverage_exact_or_variant
-,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΠΑΓΓΑΙΟΥ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9014,Παγγαίου,,org_coverage_exact_or_variant
 ,ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙO ΑΘΗΝΩΝ 'ΙΠΠΟΚΡΑΤΕΙΟ',ΑΤΤΙΚΗΣ,9186,Αθηναίων,,org_coverage_exact_or_variant
 ,ΚΑΡΠΕΝΗΣΙΟΥ,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,9157,Καρπενησίου,,org_coverage_exact_or_variant
 ,ΣΟΥΦΛΙΟΥ,ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ,9010,Σουφλίου,,org_coverage_exact_or_variant

@@ -3,7 +3,8 @@ import ContractModal, { type ContractModalContract } from '../components/Contrac
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
-import { downloadContractDocument } from '../lib/contractDocument'
+import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
+import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { supabase } from '../lib/supabase'
 
 type ContractRow = {
@@ -212,16 +213,23 @@ export default function ContractsPage() {
           contract_signed_date,
           start_date,
           end_date,
+          municipality_key,
+          region_key,
+          canonical_owner_scope,
           organization_vat_number,
           organization_key,
           assign_criteria,
           contract_type,
+          award_procedure,
           units_operator,
           funding_details_cofund,
           funding_details_self_fund,
           funding_details_espa,
           funding_details_regular_budget,
           auction_ref_no,
+          contract_related_ada,
+          prev_reference_no,
+          next_ref_no,
           budget,
           contract_budget,
           diavgeia_ada
@@ -235,6 +243,8 @@ export default function ContractsPage() {
         paymentsResult,
         cpvResult,
         organizationResult,
+        municipalityResult,
+        regionResult,
       ] = await Promise.all([
         supabase
           .from('payment')
@@ -246,9 +256,23 @@ export default function ContractsPage() {
           .eq('procurement_id', row.id),
         supabase
           .from('organization')
-          .select('organization_normalized_value, organization_value')
+          .select('organization_normalized_value, organization_value, authority_scope')
           .eq('organization_key', procurement.organization_key)
           .limit(1),
+        procurement.municipality_key
+          ? supabase
+            .from('municipality')
+            .select('municipality_normalized_value, municipality_value')
+            .eq('municipality_key', procurement.municipality_key)
+            .limit(1)
+          : Promise.resolve({ data: [] }),
+        procurement.region_key
+          ? supabase
+            .from('region')
+            .select('region_normalized_value, region_value')
+            .eq('region_key', procurement.region_key)
+            .limit(1)
+          : Promise.resolve({ data: [] }),
       ])
 
       const paymentRows = (paymentsResult.data ?? []) as Array<{
@@ -284,14 +308,32 @@ export default function ContractsPage() {
       const organization = ((organizationResult.data ?? []) as Array<{
         organization_normalized_value: string | null
         organization_value: string | null
+        authority_scope: ContractAuthorityScope | null
+      }>)[0] ?? null
+      const municipality = ((municipalityResult.data ?? []) as Array<{
+        municipality_normalized_value: string | null
+        municipality_value: string | null
+      }>)[0] ?? null
+      const region = ((regionResult.data ?? []) as Array<{
+        region_normalized_value: string | null
+        region_value: string | null
       }>)[0] ?? null
       const beneficiary = paymentPrimary?.beneficiary_name ?? row.beneficiary_name
       const whyText = firstPipePart(procurement.short_descriptions) ?? primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
       const cpvLabel = primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
+      const contractRelatedAda = clean(procurement.contract_related_ada)
       const diavgeiaAda = clean(procurement.diavgeia_ada)
+      const organizationName = clean(organization?.organization_normalized_value) || clean(organization?.organization_value) || clean(row.organization_value) || '—'
+      const who = buildContractAuthorityLabel({
+        canonicalOwnerScope: clean(procurement.canonical_owner_scope),
+        organizationScope: clean(organization?.authority_scope),
+        organizationName,
+        municipalityLabel: clean(municipality?.municipality_normalized_value) || clean(municipality?.municipality_value),
+        regionLabel: clean(region?.region_normalized_value) || clean(region?.region_value),
+      })
       const modal: ContractModalContract = {
         id: String(procurement.id),
-        who: clean(organization?.organization_normalized_value) || clean(organization?.organization_value) || clean(row.organization_value) || '—',
+        who,
         what: clean(procurement.title) || clean(row.title) || '—',
         when: fmtDateLabel(cleanText(procurement.submission_at)),
         why: whyText,
@@ -313,6 +355,7 @@ export default function ContractsPage() {
         signers: clean(paymentPrimary?.signers) || '—',
         assignCriteria: clean(procurement.assign_criteria) || '—',
         contractKind: clean(procurement.contract_type) || '—',
+        awardProcedure: clean(procurement.award_procedure) || '—',
         unitsOperator: clean(procurement.units_operator) || '—',
         fundingCofund: clean(procurement.funding_details_cofund) || '—',
         fundingSelf: clean(procurement.funding_details_self_fund) || '—',
@@ -323,7 +366,10 @@ export default function ContractsPage() {
         shortDescription: firstPipePart(procurement.short_descriptions) ?? '—',
         rawBudget: fmtEur(procurement.budget),
         contractBudget: fmtEur(procurement.contract_budget),
-        documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+        contractRelatedAda: contractRelatedAda || '—',
+        previousReferenceNumber: clean(procurement.prev_reference_no) || '—',
+        nextReferenceNumber: clean(procurement.next_ref_no) || '—',
+        documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
       }
 
       setSelectedContract(modal)

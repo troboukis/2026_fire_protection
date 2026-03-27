@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
+import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
 import { supabase } from '../lib/supabase'
 import DataLoadingCard from './DataLoadingCard'
@@ -14,6 +15,7 @@ type CopernicusFirePoint = {
   date: string | null
   commune: string | null
   province: string | null
+  municipalityKey: string | null
 }
 
 type HoveredFireTooltip = {
@@ -25,6 +27,7 @@ type HoveredFireTooltip = {
     date: string | null
     commune: string | null
     province: string | null
+    municipalityKey: string | null
   }>
 }
 
@@ -36,6 +39,16 @@ type CopernicusRow = {
   firedate: string | null
   commune: string | null
   province: string | null
+  municipality_key: string | null
+}
+
+type TerrainTileOverlay = {
+  key: string
+  href: string
+  x: number
+  y: number
+  width: number
+  height: number
 }
 
 function parseCentroid(value: { coordinates?: [number, number] } | string | null | undefined): { lon: number; lat: number } | null {
@@ -162,10 +175,131 @@ const DESKTOP_MAP_SCALE = 1.08
 const MOBILE_MAP_SCALE = 1.22
 const MOBILE_CLUSTER_GRID_SIZE = 8
 const DESKTOP_CLUSTER_GRID_SIZE = 14
+const HILLSHADE_TILESET_ID = 'hillshade'
+const HILLSHADE_TILE_SIZE = 256
+const HILLSHADE_MIN_ZOOM = 4
+const HILLSHADE_MAX_ZOOM = 12
+const HILLSHADE_OVERSAMPLE = 1.3
+
+function cleanText(value: unknown): string | null {
+  if (value == null) return null
+  const text = String(value).trim()
+  return text ? text : null
+}
+
+function clampLatitude(lat: number): number {
+  return Math.max(-85.05112878, Math.min(85.05112878, lat))
+}
+
+function worldPixelX(lon: number, zoom: number): number {
+  return ((lon + 180) / 360) * HILLSHADE_TILE_SIZE * (2 ** zoom)
+}
+
+function worldPixelY(lat: number, zoom: number): number {
+  const clamped = clampLatitude(lat) * Math.PI / 180
+  return (
+    (0.5 - Math.log((1 + Math.sin(clamped)) / (1 - Math.sin(clamped))) / (4 * Math.PI))
+    * HILLSHADE_TILE_SIZE
+    * (2 ** zoom)
+  )
+}
+
+function tileLongitude(tileX: number, zoom: number): number {
+  return (tileX / (2 ** zoom)) * 360 - 180
+}
+
+function tileLatitude(tileY: number, zoom: number): number {
+  const n = Math.PI - (2 * Math.PI * tileY) / (2 ** zoom)
+  return Math.atan(Math.sinh(n)) * 180 / Math.PI
+}
+
+function chooseHillshadeZoom(
+  bounds: [[number, number], [number, number]],
+  targetWidth: number,
+  targetHeight: number,
+): number {
+  const [[west, south], [east, north]] = bounds
+  const safeWidth = Math.max(1, targetWidth)
+  const safeHeight = Math.max(1, targetHeight)
+
+  for (let zoom = HILLSHADE_MIN_ZOOM; zoom <= HILLSHADE_MAX_ZOOM; zoom += 1) {
+    const pixelWidth = Math.abs(worldPixelX(east, zoom) - worldPixelX(west, zoom))
+    const pixelHeight = Math.abs(worldPixelY(south, zoom) - worldPixelY(north, zoom))
+    if (pixelWidth >= safeWidth * HILLSHADE_OVERSAMPLE && pixelHeight >= safeHeight * HILLSHADE_OVERSAMPLE) {
+      return zoom
+    }
+  }
+
+  return HILLSHADE_MAX_ZOOM
+}
+
+function buildHillshadeTileOverlays(
+  feature: d3.GeoPermissibleObjects,
+  projection: d3.GeoProjection,
+  frameWidth: number,
+  frameHeight: number,
+  apiKey: string | null,
+  transformPoint?: (x: number, y: number) => { x: number; y: number },
+): TerrainTileOverlay[] {
+  if (!apiKey) return []
+
+  const bounds = d3.geoBounds(feature)
+  const [[west, south], [east, north]] = bounds as [[number, number], [number, number]]
+  if (![west, south, east, north].every(Number.isFinite)) return []
+
+  const zoom = chooseHillshadeZoom(bounds as [[number, number], [number, number]], frameWidth, frameHeight)
+  const worldMinX = worldPixelX(west, zoom)
+  const worldMaxX = worldPixelX(east, zoom)
+  const worldNorthY = worldPixelY(north, zoom)
+  const worldSouthY = worldPixelY(south, zoom)
+  const xStart = Math.max(0, Math.floor(worldMinX / HILLSHADE_TILE_SIZE))
+  const xEnd = Math.min((2 ** zoom) - 1, Math.ceil(worldMaxX / HILLSHADE_TILE_SIZE) - 1)
+  const yStart = Math.max(0, Math.floor(worldNorthY / HILLSHADE_TILE_SIZE))
+  const yEnd = Math.min((2 ** zoom) - 1, Math.ceil(worldSouthY / HILLSHADE_TILE_SIZE) - 1)
+  const overlays: TerrainTileOverlay[] = []
+
+  for (let tileX = xStart; tileX <= xEnd; tileX += 1) {
+    for (let tileY = yStart; tileY <= yEnd; tileY += 1) {
+      const westLon = tileLongitude(tileX, zoom)
+      const eastLon = tileLongitude(tileX + 1, zoom)
+      const northLat = tileLatitude(tileY, zoom)
+      const southLat = tileLatitude(tileY + 1, zoom)
+      const topLeft = projection([westLon, northLat])
+      const bottomRight = projection([eastLon, southLat])
+
+      if (!topLeft || !bottomRight) continue
+
+      let [x0, y0] = topLeft
+      let [x1, y1] = bottomRight
+      if (transformPoint) {
+        const transformedTopLeft = transformPoint(x0, y0)
+        const transformedBottomRight = transformPoint(x1, y1)
+        x0 = transformedTopLeft.x
+        y0 = transformedTopLeft.y
+        x1 = transformedBottomRight.x
+        y1 = transformedBottomRight.y
+      }
+      if (![x0, y0, x1, y1].every(Number.isFinite)) continue
+
+      overlays.push({
+        key: `${zoom}/${tileX}/${tileY}`,
+        href: `https://api.maptiler.com/tiles/${HILLSHADE_TILESET_ID}/${zoom}/${tileX}/${tileY}?key=${encodeURIComponent(apiKey)}`,
+        x: Math.min(x0, x1),
+        y: Math.min(y0, y1),
+        width: Math.abs(x1 - x0),
+        height: Math.abs(y1 - y0),
+      })
+    }
+  }
+
+  return overlays
+}
 
 export default function FireCopernicusSection() {
+  const navigate = useNavigate()
   const currentYear = useMemo(() => new Date().getFullYear(), [])
   const today = useMemo(() => toDayStart(new Date()), [])
+  const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
   const domainStart = new Date(2024, 0, 1)
   const defaultStart = new Date(currentYear, 0, 1)
   const totalDays = diffDays(domainStart, today)
@@ -178,6 +312,8 @@ export default function FireCopernicusSection() {
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
   const mapRef = useRef<HTMLDivElement | null>(null)
+  const tooltipRef = useRef<HTMLDivElement | null>(null)
+  const mapClipPathId = useId().replace(/:/g, '-')
   const [isMobileMap, setIsMobileMap] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.innerWidth <= MOBILE_BREAKPOINT
@@ -218,7 +354,7 @@ export default function FireCopernicusSection() {
           fetch(`${import.meta.env.BASE_URL}municipalities.geojson`),
           supabase
             .from('copernicus')
-            .select('copernicus_id, centroid, shape, area_ha, firedate, commune, province')
+            .select('copernicus_id, centroid, shape, area_ha, firedate, commune, province, municipality_key')
             .gte('firedate', firedateStart)
             .lte('firedate', firedateEnd)
             .order('firedate', { ascending: false }),
@@ -245,6 +381,7 @@ export default function FireCopernicusSection() {
               date: String(row.firedate ?? '').trim() || null,
               commune: String(row.commune ?? '').trim() || null,
               province: String(row.province ?? '').trim() || null,
+              municipalityKey: cleanText(row.municipality_key),
             } satisfies CopernicusFirePoint
           })
           .filter((row): row is CopernicusFirePoint => row !== null)
@@ -274,6 +411,27 @@ export default function FireCopernicusSection() {
   useEffect(() => {
     setHoveredFire(null)
   }, [rangeStartDay, rangeEndDay, viewMode])
+
+  useLayoutEffect(() => {
+    if (!hoveredFire || !mapRef.current || !tooltipRef.current) return
+
+    const mapRect = mapRef.current.getBoundingClientRect()
+    const tooltipRect = tooltipRef.current.getBoundingClientRect()
+    const margin = 10
+    const gap = 8
+
+    let left = hoveredFire.x
+    left = Math.max(margin, Math.min(left, mapRect.width - tooltipRect.width - margin))
+
+    let top = hoveredFire.y - tooltipRect.height - gap
+    if (top < margin) {
+      top = Math.min(mapRect.height - tooltipRect.height - margin, hoveredFire.y + gap)
+    }
+    top = Math.max(margin, top)
+
+    tooltipRef.current.style.left = `${left}px`
+    tooltipRef.current.style.top = `${top}px`
+  }, [hoveredFire])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -331,6 +489,14 @@ export default function FireCopernicusSection() {
         key: `${feature.properties.municipality_code}-${idx}`,
         d: path(feature as unknown as d3.GeoPermissibleObjects) ?? '',
       })),
+      hillshadeTiles: buildHillshadeTileOverlays(
+        geojson as unknown as d3.GeoPermissibleObjects,
+        projection,
+        width,
+        height,
+        mapTilerApiKey,
+        transformPoint,
+      ),
       points: Object.values(
         fires.reduce<Record<string, {
           x: number
@@ -358,6 +524,7 @@ export default function FireCopernicusSection() {
             date: fire.date,
             commune: fire.commune,
             province: fire.province,
+            municipalityKey: fire.municipalityKey,
           })
           return acc
         }, {}),
@@ -380,12 +547,29 @@ export default function FireCopernicusSection() {
         })
         .filter((shape): shape is CopernicusFirePoint & { d: string; x: number; y: number } => shape !== null),
     }
-  }, [geojson, fires, isMobileMap])
+  }, [geojson, fires, isMobileMap, mapTilerApiKey])
 
   const totalAreaHa = fires.reduce((sum, fire) => sum + fire.areaHa, 0)
   const latestFire = [...fires]
     .filter((fire) => fire.date)
     .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())[0] ?? null
+
+  const openMunicipalityProfile = (municipalityKey: string | null) => {
+    if (!municipalityKey) return false
+    navigate(`/municipalities?municipality=${encodeURIComponent(municipalityKey)}`)
+    return true
+  }
+
+  const getClusterMunicipalityKey = (items: HoveredFireTooltip['items']): string | null => {
+    const municipalityKeys = Array.from(
+      new Set(
+        items
+          .map((item) => cleanText(item.municipalityKey))
+          .filter((key): key is string => Boolean(key)),
+      ),
+    )
+    return municipalityKeys.length === 1 ? municipalityKeys[0] : null
+  }
 
   if (loading) {
     return (
@@ -520,11 +704,38 @@ export default function FireCopernicusSection() {
               role="img"
               aria-label="Χάρτης πυρκαγιών Copernicus στην Ελλάδα"
             >
+              <defs>
+                <clipPath id={mapClipPathId}>
+                  {mapData.paths.map((feature) => (
+                    <path
+                      key={`clip-${feature.key}`}
+                      d={feature.d}
+                      transform={mapData.transform}
+                    />
+                  ))}
+                </clipPath>
+              </defs>
               <g className="fire-copernicus__base" transform={mapData.transform}>
                 {mapData.paths.map((feature) => (
                   <path key={feature.key} d={feature.d} />
                 ))}
               </g>
+              {mapData.hillshadeTiles.length > 0 && (
+                <g className="fire-copernicus__terrain" clipPath={`url(#${mapClipPathId})`} aria-hidden="true">
+                  {mapData.hillshadeTiles.map((tile) => (
+                    <image
+                      key={tile.key}
+                      href={tile.href}
+                      x={tile.x}
+                      y={tile.y}
+                      width={tile.width}
+                      height={tile.height}
+                      preserveAspectRatio="none"
+                      className="fire-copernicus__terrain-tile"
+                    />
+                  ))}
+                </g>
+              )}
               {viewMode === 'points' ? (
                 <g className="fire-copernicus__points">
                   {mapData.points.map((fire) => (
@@ -553,6 +764,8 @@ export default function FireCopernicusSection() {
                         setHoveredFire(null)
                       }}
                       onClick={(event) => {
+                        const municipalityKey = getClusterMunicipalityKey(fire.items)
+                        if (openMunicipalityProfile(municipalityKey)) return
                         const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
@@ -607,6 +820,7 @@ export default function FireCopernicusSection() {
                             date: fire.date,
                             commune: fire.commune,
                             province: fire.province,
+                            municipalityKey: fire.municipalityKey,
                           }],
                         })
                       }}
@@ -624,6 +838,7 @@ export default function FireCopernicusSection() {
                         setHoveredFire(null)
                       }}
                       onClick={(event) => {
+                        if (openMunicipalityProfile(fire.municipalityKey)) return
                         const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
                         setHoveredFire((current) => (
                           current?.items.length === 1 && current.items[0]?.id === fire.id
@@ -633,12 +848,13 @@ export default function FireCopernicusSection() {
                                 y: pointer.y,
                                 items: [{
                                   id: fire.id,
-                                  areaHa: fire.areaHa,
-                                  date: fire.date,
-                                  commune: fire.commune,
-                                  province: fire.province,
-                                }],
-                              }
+                                areaHa: fire.areaHa,
+                                date: fire.date,
+                                commune: fire.commune,
+                                province: fire.province,
+                                municipalityKey: fire.municipalityKey,
+                              }],
+                            }
                         ))
                       }}
                     />
@@ -648,6 +864,7 @@ export default function FireCopernicusSection() {
             </svg>
             {hoveredFire && (
               <div
+                ref={tooltipRef}
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
                   left: `${hoveredFire.x}px`,

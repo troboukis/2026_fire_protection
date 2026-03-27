@@ -1,3 +1,9 @@
+CREATE INDEX IF NOT EXISTS idx_procurement_contract_signed_date
+ON public.procurement (contract_signed_date DESC);
+
+CREATE INDEX IF NOT EXISTS idx_procurement_prev_reference_no
+ON public.procurement (prev_reference_no);
+
 CREATE OR REPLACE FUNCTION public.get_featured_beneficiaries(
   p_year_main integer,
   p_limit integer DEFAULT 50
@@ -430,4 +436,5 @@ LEFT JOIN relevant_agg ra
 ORDER BY tb.total_amount DESC, tb.contract_count DESC, tb.beneficiary_vat_number;
 $$;
 
-GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer) TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer)
+TO anon, authenticated, service_role;

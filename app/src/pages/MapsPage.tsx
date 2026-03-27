@@ -6,19 +6,12 @@ import DevViewToggle from '../components/DevViewToggle'
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
-import { downloadContractDocument } from '../lib/contractDocument'
+import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
+import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
+import { buildMunicipalityMapSummary, type MapAuthorityScope, type ProcurementMapRow } from '../lib/mapProcurementSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
-
-type ProcurementMapRow = {
-  id: number
-  municipality_key: string | null
-  region_key?: string | null
-  contract_signed_date?: string | null
-  organization_key?: string | null
-  canonical_owner_scope?: 'municipality' | 'region' | 'organization' | null
-}
 
 type MunicipalityRow = {
   municipality_key: string | null
@@ -52,7 +45,6 @@ type RegionContractRpcRow = {
   diavgeia_ada: string | null
   reference_number: string | null
 }
-
 type MunicipalityContractRpcRow = RegionContractRpcRow
 type FirePoint = {
   lat: number
@@ -193,8 +185,10 @@ export default function MapsPage() {
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
   const [regionLatestContracts, setRegionLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [regionLatestLoading, setRegionLatestLoading] = useState(false)
-  const [regionContractCount, setRegionContractCount] = useState(0)
-  const [municipalityContractCount, setMunicipalityContractCount] = useState(0)
+  const [regionSignedContractCount, setRegionSignedContractCount] = useState(0)
+  const [regionActivePreviousContractCount, setRegionActivePreviousContractCount] = useState(0)
+  const [municipalitySignedContractCount, setMunicipalitySignedContractCount] = useState(0)
+  const [municipalityActivePreviousContractCount, setMunicipalityActivePreviousContractCount] = useState(0)
   const searchContainerRef = useRef<HTMLLabelElement | null>(null)
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
@@ -206,14 +200,14 @@ export default function MapsPage() {
     setLoading(true)
 
     const fetchAllProcurementRows = async (): Promise<ProcurementMapRow[]> => {
-      const out: ProcurementMapRow[] = []
-      let from = 0
+        const out: ProcurementMapRow[] = []
+        let from = 0
 
       while (true) {
         const to = from + PAGE_SIZE - 1
         const { data, error } = await supabase
           .from('procurement')
-          .select('id, municipality_key, region_key, contract_signed_date, organization_key, canonical_owner_scope')
+          .select('municipality_key, contract_signed_date, start_date, end_date, no_end_date, organization_key, canonical_owner_scope, cancelled, next_ref_no, prev_reference_no, reference_number')
           .order('id', { ascending: true })
           .range(from, to)
 
@@ -286,12 +280,10 @@ export default function MapsPage() {
         } else if (!cancelled) {
           setCityPoints([])
         }
-        const countByMunicipality = new Map<string, number>()
-        let procurementRowsForYear = 0
         const orgKeys = Array.from(new Set(
           rows.map((r) => String(r.organization_key ?? '').trim()).filter(Boolean),
         ))
-        const orgScopeByKey = new Map<string, 'municipality' | 'region' | 'decentralized' | 'national' | 'other'>()
+        const orgScopeByKey = new Map<string, MapAuthorityScope>()
         for (let i = 0; i < orgKeys.length; i += PAGE_SIZE) {
           const chunk = orgKeys.slice(i, i + PAGE_SIZE)
           const { data: orgRows, error: orgError } = await supabase
@@ -299,34 +291,16 @@ export default function MapsPage() {
             .select('organization_key, authority_scope')
             .in('organization_key', chunk)
           if (orgError) throw orgError
-          for (const row of (orgRows ?? []) as Array<{ organization_key: string; authority_scope: 'municipality' | 'region' | 'decentralized' | 'national' | 'other' | null }>) {
+          for (const row of (orgRows ?? []) as Array<{ organization_key: string; authority_scope: MapAuthorityScope | null }>) {
             orgScopeByKey.set(row.organization_key, row.authority_scope ?? 'other')
           }
         }
 
-        for (const row of rows) {
-          const municipalityId = normalizeMunicipalityId(row.municipality_key)
-
-          const issueDate = String(row.contract_signed_date ?? '').trim()
-          const issueYear = extractYear(issueDate)
-          if (issueYear !== mapYear) continue
-          const canonicalOwnerScope = String(row.canonical_owner_scope ?? '').trim()
-          const orgKey = String(row.organization_key ?? '').trim()
-          const authorityScope =
-            canonicalOwnerScope === 'municipality'
-              ? 'municipality'
-              : orgKey
-                ? (orgScopeByKey.get(orgKey) ?? 'other')
-                : 'other'
-          if (authorityScope === 'municipality') {
-            if (!municipalityId) continue
-            procurementRowsForYear += 1
-            countByMunicipality.set(municipalityId, (countByMunicipality.get(municipalityId) ?? 0) + 1)
-            continue
-          }
-        }
-
-        const nationalTotalCount = Array.from(countByMunicipality.values()).reduce((s, n) => s + n, 0)
+        const {
+          countByMunicipality,
+          procurementRowsForYear,
+          nationalTotalCount,
+        } = buildMunicipalityMapSummary(rows, mapYear, orgScopeByKey)
         const nextChoropleth: Record<string, number> = {}
         for (const [municipalityId, count] of countByMunicipality.entries()) {
           nextChoropleth[municipalityId] = nationalTotalCount > 0 ? (count / nationalTotalCount) * 100 : 0
@@ -437,37 +411,6 @@ export default function MapsPage() {
     return out
   }, [municipalityRegionById])
 
-  const selectedRegionCurrentYearCount = selectedRegion ? regionContractCount : 0
-
-  useEffect(() => {
-    let cancelled = false
-    if (!selectedRegion) {
-      setRegionContractCount(0)
-      return
-    }
-
-    const loadRegionContractCount = async () => {
-      try {
-        const { data, error } = await supabase.rpc('get_region_contract_count', {
-          p_region_key: selectedRegion,
-          p_year: mapYear,
-        })
-        if (error) throw error
-        if (!cancelled) setRegionContractCount(Number(data ?? 0))
-      } catch (e) {
-        if (!cancelled) {
-          console.error('[MapsPage] region contract count failed', e)
-          setRegionContractCount(0)
-        }
-      }
-    }
-
-    loadRegionContractCount()
-    return () => {
-      cancelled = true
-    }
-  }, [selectedRegion, mapYear])
-
   const searchOptions = useMemo(() => {
     const municipalityOpts: SearchOption[] = municipalities.map((m) => ({
       kind: 'municipality',
@@ -561,6 +504,9 @@ export default function MapsPage() {
       .select(`
         id,
         organization_key,
+        municipality_key,
+        region_key,
+        canonical_owner_scope,
         title,
         submission_at,
         contract_signed_date,
@@ -572,12 +518,16 @@ export default function MapsPage() {
         budget,
         assign_criteria,
         contract_type,
+        award_procedure,
         units_operator,
         funding_details_cofund,
         funding_details_self_fund,
         funding_details_espa,
         funding_details_regular_budget,
         auction_ref_no,
+        contract_related_ada,
+        prev_reference_no,
+        next_ref_no,
         organization_vat_number,
         start_date,
         end_date,
@@ -588,7 +538,7 @@ export default function MapsPage() {
       .maybeSingle()
     if (!proc) return
 
-    const [{ data: pRows }, { data: cpvRows }, { data: oRows }] = await Promise.all([
+    const [{ data: pRows }, { data: cpvRows }, { data: oRows }, { data: municipalityRows }, { data: regionRows }] = await Promise.all([
       supabase
         .from('payment')
         .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
@@ -600,9 +550,23 @@ export default function MapsPage() {
         .eq('procurement_id', contractId),
       supabase
         .from('organization')
-        .select('organization_key, organization_normalized_value, organization_value')
+        .select('organization_key, organization_normalized_value, organization_value, authority_scope')
         .eq('organization_key', String(proc.organization_key ?? ''))
         .limit(1),
+      proc.municipality_key
+        ? supabase
+          .from('municipality')
+          .select('municipality_normalized_value, municipality_value')
+          .eq('municipality_key', String(proc.municipality_key))
+          .limit(1)
+        : Promise.resolve({ data: [] }),
+      proc.region_key
+        ? supabase
+          .from('region')
+          .select('region_normalized_value, region_value')
+          .eq('region_key', String(proc.region_key))
+          .limit(1)
+        : Promise.resolve({ data: [] }),
     ])
 
     const p = (pRows?.[0] ?? null) as {
@@ -628,11 +592,28 @@ export default function MapsPage() {
       organization_key: string
       organization_normalized_value: string | null
       organization_value: string | null
+      authority_scope: ContractAuthorityScope | null
+    } | null
+    const municipality = (municipalityRows?.[0] ?? null) as {
+      municipality_normalized_value: string | null
+      municipality_value: string | null
+    } | null
+    const region = (regionRows?.[0] ?? null) as {
+      region_normalized_value: string | null
+      region_value: string | null
     } | null
 
     const amountWithoutVat = p?.amount_without_vat ?? null
+    const contractRelatedAda = cleanText(proc.contract_related_ada)
     const diavgeiaAda = cleanText(proc.diavgeia_ada)
-    const who = cleanText(org?.organization_normalized_value) ?? cleanText(org?.organization_value) ?? cleanText(proc.organization_key) ?? '—'
+    const organizationName = cleanText(org?.organization_normalized_value) ?? cleanText(org?.organization_value) ?? cleanText(proc.organization_key) ?? '—'
+    const who = buildContractAuthorityLabel({
+      canonicalOwnerScope: cleanText(proc.canonical_owner_scope),
+      organizationScope: cleanText(org?.authority_scope),
+      organizationName,
+      municipalityLabel: cleanText(municipality?.municipality_normalized_value) ?? cleanText(municipality?.municipality_value),
+      regionLabel: cleanText(region?.region_normalized_value) ?? cleanText(region?.region_value),
+    })
     const modal: ContractModalContract = {
       id: String(proc.id),
       who,
@@ -657,6 +638,7 @@ export default function MapsPage() {
       signers: cleanText(p?.signers) ?? '—',
       assignCriteria: cleanText(proc.assign_criteria) ?? '—',
       contractKind: cleanText(proc.contract_type) ?? '—',
+      awardProcedure: cleanText(proc.award_procedure) ?? '—',
       unitsOperator: cleanText(proc.units_operator) ?? '—',
       fundingCofund: cleanText(proc.funding_details_cofund) ?? '—',
       fundingSelf: cleanText(proc.funding_details_self_fund) ?? '—',
@@ -667,7 +649,10 @@ export default function MapsPage() {
       shortDescription: firstPipePart(proc.short_descriptions) ?? '—',
       rawBudget: (proc.budget == null ? '—' : Number(proc.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       contractBudget: (proc.contract_budget == null ? '—' : Number(proc.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
-      documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+      contractRelatedAda: contractRelatedAda ?? '—',
+      previousReferenceNumber: cleanText(proc.prev_reference_no) ?? '—',
+      nextReferenceNumber: cleanText(proc.next_ref_no) ?? '—',
+      documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
     }
 
     setSelectedContract(modal)
@@ -889,6 +874,8 @@ export default function MapsPage() {
     if (!selectedMunicipalityId || panelKind !== 'municipality') {
       setMunicipalityLatestContracts([])
       setMunicipalityLatestLoading(false)
+      setMunicipalitySignedContractCount(0)
+      setMunicipalityActivePreviousContractCount(0)
       return
     }
 
@@ -909,13 +896,20 @@ export default function MapsPage() {
     const loadMunicipalityContracts = async () => {
       setMunicipalityLatestLoading(true)
       try {
-        const { data, error } = await supabase.rpc('get_municipality_contracts', {
-          p_municipality_key: selectedMunicipalityId,
-          p_year: mapYear,
-          p_limit: null,
-          p_offset: 0,
-        })
+        const [{ data, error }, { data: summaryData, error: summaryError }] = await Promise.all([
+          supabase.rpc('get_municipality_contracts', {
+            p_municipality_key: selectedMunicipalityId,
+            p_year: mapYear,
+            p_limit: 12,
+            p_offset: 0,
+          }),
+          supabase.rpc('get_municipality_contract_summary', {
+            p_municipality_key: selectedMunicipalityId,
+            p_year: mapYear,
+          }),
+        ])
         if (error) throw error
+        if (summaryError) throw summaryError
         const mapped: MunicipalityLatestContract[] = ((data ?? []) as MunicipalityContractRpcRow[])
           .map((row) => buildLatestContractCardView({
             id: String(row.procurement_id),
@@ -931,12 +925,19 @@ export default function MapsPage() {
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
           }))
+        const summaryRow = ((summaryData ?? []) as Array<{ signed_current_count: number | string | null; active_previous_count: number | string | null }>)[0] ?? null
 
-        if (!cancelled) setMunicipalityLatestContracts(mapped)
+        if (!cancelled) {
+          setMunicipalityLatestContracts(mapped)
+          setMunicipalitySignedContractCount(Number(summaryRow?.signed_current_count ?? 0))
+          setMunicipalityActivePreviousContractCount(Number(summaryRow?.active_previous_count ?? 0))
+        }
       } catch (e) {
         if (!cancelled) {
           console.error('[MapsPage] municipality latest contracts failed', e)
           setMunicipalityLatestContracts([])
+          setMunicipalitySignedContractCount(0)
+          setMunicipalityActivePreviousContractCount(0)
         }
       } finally {
         if (!cancelled) setMunicipalityLatestLoading(false)
@@ -947,43 +948,15 @@ export default function MapsPage() {
     return () => {
       cancelled = true
     }
-  }, [selectedMunicipalityIdForPanel, panelKind, mapYear])
-
-  useEffect(() => {
-    let cancelled = false
-    const selectedMunicipalityId = selectedMunicipalityIdForPanel
-    if (!selectedMunicipalityId || panelKind !== 'municipality') {
-      setMunicipalityContractCount(0)
-      return
-    }
-
-    const loadMunicipalityContractCount = async () => {
-      try {
-        const { data, error } = await supabase.rpc('get_municipality_contract_count', {
-          p_municipality_key: selectedMunicipalityId,
-          p_year: mapYear,
-        })
-        if (error) throw error
-        if (!cancelled) setMunicipalityContractCount(Number(data ?? 0))
-      } catch (e) {
-        if (!cancelled) {
-          console.error('[MapsPage] municipality contract count failed', e)
-          setMunicipalityContractCount(0)
-        }
-      }
-    }
-
-    loadMunicipalityContractCount()
-    return () => {
-      cancelled = true
-    }
-  }, [selectedMunicipalityIdForPanel, panelKind, mapYear])
+  }, [mapYear, municipalityLabelById, panelKind, selectedMunicipalityIdForPanel])
 
   useEffect(() => {
     let cancelled = false
     if (panelKind !== 'region' || !selectedRegion) {
       setRegionLatestContracts([])
       setRegionLatestLoading(false)
+      setRegionSignedContractCount(0)
+      setRegionActivePreviousContractCount(0)
       return
     }
 
@@ -1004,19 +977,20 @@ export default function MapsPage() {
     const loadRegionContracts = async () => {
       setRegionLatestLoading(true)
       try {
-        if (!selectedRegion) {
-          if (!cancelled) setRegionLatestContracts([])
-          return
-        }
-        const { data, error } = await supabase.rpc('get_region_contracts', {
-          p_region_key: selectedRegion,
-          p_year: mapYear,
-          p_limit: null,
-          p_offset: 0,
-        })
-
+        const [{ data, error }, { data: summaryData, error: summaryError }] = await Promise.all([
+          supabase.rpc('get_region_contracts', {
+            p_region_key: selectedRegion,
+            p_year: mapYear,
+            p_limit: 12,
+            p_offset: 0,
+          }),
+          supabase.rpc('get_region_contract_summary', {
+            p_region_key: selectedRegion,
+            p_year: mapYear,
+          }),
+        ])
         if (error) throw error
-
+        if (summaryError) throw summaryError
         const mapped: MunicipalityLatestContract[] = ((data ?? []) as RegionContractRpcRow[])
           .map((row) => buildLatestContractCardView({
             id: String(row.procurement_id),
@@ -1031,12 +1005,19 @@ export default function MapsPage() {
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
           }))
+        const summaryRow = ((summaryData ?? []) as Array<{ signed_current_count: number | string | null; active_previous_count: number | string | null }>)[0] ?? null
 
-        if (!cancelled) setRegionLatestContracts(mapped)
+        if (!cancelled) {
+          setRegionLatestContracts(mapped)
+          setRegionSignedContractCount(Number(summaryRow?.signed_current_count ?? 0))
+          setRegionActivePreviousContractCount(Number(summaryRow?.active_previous_count ?? 0))
+        }
       } catch (e) {
         if (!cancelled) {
           console.error('[MapsPage] region latest contracts failed', e)
           setRegionLatestContracts([])
+          setRegionSignedContractCount(0)
+          setRegionActivePreviousContractCount(0)
         }
       } finally {
         if (!cancelled) setRegionLatestLoading(false)
@@ -1047,7 +1028,7 @@ export default function MapsPage() {
     return () => {
       cancelled = true
     }
-  }, [panelKind, selectedRegion, regionToMunicipalityIds, mapYear])
+  }, [mapYear, panelKind, selectedRegion])
 
   const handleMapDeselect = () => {
     setSelectedMunicipalityIdsForMap(new Set())
@@ -1272,7 +1253,7 @@ export default function MapsPage() {
             <p className="maps-legend__summary">
               {loading
                 ? 'Φόρτωση χάρτη…'
-                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν δημοσιεύσει συμβάσεις με ιδιώτες για εργασίες πυροπροστασίας το ${mapYear}`}
+                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν συμβάσεις με ιδιώτες σε ισχύ το ${mapYear} για εργασίες πυροπροστασίας`}
             </p>
           </div>
         </div>
@@ -1281,7 +1262,7 @@ export default function MapsPage() {
           source={panelSource}
           kind={panelKind}
           label={panelLabel}
-          onContractOpen={openContractModal}
+          municipalityKey={panelKind === 'municipality' ? selectedMunicipalityIdForPanel : null}
           municipalityLatestContracts={municipalityLatestContracts}
           municipalityLatestLoading={municipalityLatestLoading}
           regionLatestContracts={regionLatestContracts}
@@ -1298,12 +1279,11 @@ export default function MapsPage() {
           municipalityFireLoading={municipalityFireLoading}
           cityPoints={cityPoints}
           currentYear={mapYear}
-          regionCurrentYearCount={selectedRegionCurrentYearCount}
-          municipalityCurrentYearCount={
-            selectedMunicipalityIdForPanel
-              ? municipalityContractCount
-              : null
-          }
+          regionSignedCurrentCount={selectedRegion ? regionSignedContractCount : null}
+          regionActivePreviousCount={selectedRegion ? regionActivePreviousContractCount : null}
+          municipalitySignedCurrentCount={selectedMunicipalityIdForPanel ? municipalitySignedContractCount : null}
+          municipalityActivePreviousCount={selectedMunicipalityIdForPanel ? municipalityActivePreviousContractCount : null}
+          onContractOpen={openContractModal}
         />
       </div>
 

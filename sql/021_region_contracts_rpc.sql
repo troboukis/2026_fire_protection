@@ -100,8 +100,10 @@ direct_region AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
+    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
+    AND p.end_date IS NOT NULL
+    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
+    AND p.end_date >= make_date(p_year, 1, 1)
     AND p.region_key = p_region_key
     AND (
       p.canonical_owner_scope = 'region'
@@ -153,8 +155,10 @@ coverage_region AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
+    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
+    AND p.end_date IS NOT NULL
+    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
+    AND p.end_date >= make_date(p_year, 1, 1)
     AND COALESCE(org.authority_scope, 'other') IN ('region', 'decentralized')
 ),
 unioned AS (
@@ -218,3 +222,31 @@ AS $$
 $$;
 
 GRANT EXECUTE ON FUNCTION public.get_region_contract_count(text, integer) TO anon, authenticated, service_role;
+
+CREATE OR REPLACE FUNCTION public.get_region_contract_summary(
+  p_region_key text,
+  p_year integer
+)
+RETURNS TABLE (
+  signed_current_count bigint,
+  active_previous_count bigint
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+  WITH base AS (
+    SELECT contract_signed_date
+    FROM public.get_region_contracts(p_region_key, p_year, NULL, 0)
+  )
+  SELECT
+    COUNT(*) FILTER (
+      WHERE contract_signed_date BETWEEN make_date(p_year, 1, 1) AND make_date(p_year, 12, 31)
+    )::bigint AS signed_current_count,
+    COUNT(*) FILTER (
+      WHERE contract_signed_date < make_date(p_year, 1, 1)
+    )::bigint AS active_previous_count
+  FROM base;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_region_contract_summary(text, integer) TO anon, authenticated, service_role;

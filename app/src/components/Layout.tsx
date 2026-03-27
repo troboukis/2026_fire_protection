@@ -28,9 +28,10 @@ export default function Layout() {
     let cancelled = false
 
     const loadLastDbUpdate = async () => {
-      // Exclude forest_fire here: this endpoint currently returns 500 for updated_at reads,
-      // and the header should degrade gracefully instead of polluting the console on every page load.
-      const tables = ['procurement', 'payment', 'diavgeia', 'fund']
+      // Keep this probe restricted to tables that are known to expose stable updated_at reads
+      // through the public REST API. Some large tables currently return 500 here, and the
+      // header should degrade gracefully instead of emitting failing requests on every load.
+      const tables = ['procurement', 'payment']
       const results = await Promise.all(
         tables.map(async (table) => {
           const { data, error } = await supabase

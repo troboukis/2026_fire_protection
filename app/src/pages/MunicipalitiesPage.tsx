@@ -4,7 +4,12 @@ import { useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DataLoadingCard from '../components/DataLoadingCard'
-import { downloadContractDocument } from '../lib/contractDocument'
+import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
+import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
+import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
+import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
+import { isContractActiveOnDate } from '../lib/contractWindow'
+import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import {
   normalizeMunicipalityKey,
@@ -98,6 +103,7 @@ type MunicipalityContractRow = {
   contract_signed_date: string | null
   organization_key: string | null
   organization_value: string | null
+  authority_scope: string | null
   title: string | null
   procedure_type_value: string | null
   beneficiary_name: string | null
@@ -109,23 +115,39 @@ type MunicipalityContractRow = {
 type MunicipalityContractProcurementRow = {
   id: number
   contract_signed_date: string | null
+  start_date?: string | null
+  end_date?: string | null
+  no_end_date?: boolean | null
   organization_key: string | null
+  canonical_owner_scope: string | null
   title: string | null
   procedure_type_value: string | null
   diavgeia_ada: string | null
   reference_number: string | null
+  contract_number: string | null
+  contract_budget: number | null
+  budget: number | null
+  cancelled: boolean | null
+  next_ref_no: string | null
+  prev_reference_no?: string | null
+  contract_related_ada?: string | null
 }
 
 type MunicipalityContractPaymentRow = {
   procurement_id: number
   beneficiary_name: string | null
+  beneficiary_vat_number?: string | null
+  signers?: string | null
+  payment_ref_no?: string | null
   amount_without_vat: number | null
+  amount_with_vat?: number | null
 }
 
 type MunicipalityContractOrganizationRow = {
   organization_key: string
   organization_normalized_value: string | null
   organization_value: string | null
+  authority_scope: string | null
 }
 
 type ContractCurvePoint = {
@@ -156,14 +178,28 @@ type MunicipalityPointTooltip = {
 
 type ProcurementCpvRow = {
   procurement_id: number
+  cpv_key?: string | null
   cpv_value: string | null
 }
 
-type ProcurementStatusRow = {
-  id: number
-  contract_signed_date: string | null
+type MunicipalityFeaturedProcurementRow = MunicipalityContractProcurementRow & {
+  submission_at: string | null
+  short_descriptions: string | null
+  assign_criteria: string | null
+  contract_type: string | null
+  award_procedure: string | null
+  units_operator: string | null
+  funding_details_cofund: string | null
+  funding_details_self_fund: string | null
+  funding_details_espa: string | null
+  funding_details_regular_budget: string | null
+  auction_ref_no: string | null
+  organization_vat_number: string | null
+  start_date: string | null
   end_date: string | null
   no_end_date: boolean | null
+  prev_reference_no?: string | null
+  contract_related_ada?: string | null
 }
 
 type CityPoint = {
@@ -283,6 +319,18 @@ function formatDate(value: string | null): string {
     month: 'short',
     year: 'numeric',
   }).format(date)
+}
+
+function toUpperEl(value: string | null): string {
+  if (!value) return '—'
+  return value.toLocaleUpperCase('el-GR')
+}
+
+function toSentenceCaseEl(value: string | null): string {
+  const text = cleanText(value)
+  if (!text) return '—'
+  const lower = text.toLocaleLowerCase('el-GR')
+  return lower.charAt(0).toLocaleUpperCase('el-GR') + lower.slice(1)
 }
 
 function getWorkTooltipItems(work: WorkMarker): Array<string | null> {
@@ -646,15 +694,20 @@ export default function MunicipalitiesPage() {
   const [topContractCpvByYear, setTopContractCpvByYear] = useState<Record<number, { label: string; count: number } | null>>({})
   const [procedureBreakdown, setProcedureBreakdown] = useState<ProcedureBreakdownItem[]>([])
   const [contractOrganizationById, setContractOrganizationById] = useState<Record<number, string>>({})
-  const [activePreviousContractsCount, setActivePreviousContractsCount] = useState(0)
+  const [latestMunicipalityContractRows, setLatestMunicipalityContractRows] = useState<MunicipalityContractRow[]>([])
+  const [latestMunicipalityContractsLoading, setLatestMunicipalityContractsLoading] = useState(false)
+  const [featuredMunicipalityBeneficiaries, setFeaturedMunicipalityBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
+  const [featuredMunicipalityBeneficiariesLoading, setFeaturedMunicipalityBeneficiariesLoading] = useState(false)
   const [forestFireRows, setForestFireRows] = useState<ForestFireRow[]>([])
   const [copernicusRows, setCopernicusRows] = useState<CopernicusRow[]>([])
   const [workRows, setWorkRows] = useState<WorkRow[]>([])
   const [workRowsLoading, setWorkRowsLoading] = useState(false)
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
+  const [cityPointsLoading, setCityPointsLoading] = useState(true)
   const [selectedFireYear, setSelectedFireYear] = useState<number>(currentYear)
   const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
   const [municipalityGeojson, setMunicipalityGeojson] = useState<GeoData | null>(null)
+  const [municipalityGeojsonLoading, setMunicipalityGeojsonLoading] = useState(true)
   const normalizedSearch = useMemo(() => normalizeMunicipalitySearch(search), [search])
   const fireYearMenuRef = useRef<HTMLDivElement | null>(null)
   const contractChartFrameRef = useRef<HTMLDivElement | null>(null)
@@ -758,6 +811,10 @@ export default function MunicipalitiesPage() {
     setProfile(null)
     setContractYearSummary([])
     setContractOrganizationById({})
+    setLatestMunicipalityContractRows([])
+    setLatestMunicipalityContractsLoading(false)
+    setFeaturedMunicipalityBeneficiaries([])
+    setFeaturedMunicipalityBeneficiariesLoading(false)
     setForestFireRows([])
     setCopernicusRows([])
     setWorkRows([])
@@ -766,6 +823,7 @@ export default function MunicipalitiesPage() {
   useEffect(() => {
     let cancelled = false
     const loadMunicipalityGeojson = async () => {
+      setMunicipalityGeojsonLoading(true)
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}municipalities.geojson`)
         if (!response.ok) throw new Error(`municipalities.geojson failed with ${response.status}`)
@@ -773,6 +831,8 @@ export default function MunicipalitiesPage() {
         if (!cancelled) setMunicipalityGeojson(data)
       } catch {
         if (!cancelled) setMunicipalityGeojson(null)
+      } finally {
+        if (!cancelled) setMunicipalityGeojsonLoading(false)
       }
     }
 
@@ -785,6 +845,7 @@ export default function MunicipalitiesPage() {
   useEffect(() => {
     let cancelled = false
     const loadCityPoints = async () => {
+      setCityPointsLoading(true)
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}greek_cities.json`)
         if (!response.ok) throw new Error(`greek_cities.json failed with ${response.status}`)
@@ -814,6 +875,8 @@ export default function MunicipalitiesPage() {
         if (!cancelled) setCityPoints(points)
       } catch {
         if (!cancelled) setCityPoints([])
+      } finally {
+        if (!cancelled) setCityPointsLoading(false)
       }
     }
 
@@ -878,6 +941,506 @@ export default function MunicipalitiesPage() {
       projection,
     }
   }, [selectedMunicipalityFeature])
+
+  useEffect(() => {
+    let cancelled = false
+
+    if (!selectedMunicipalityKey) {
+      setLatestMunicipalityContractRows([])
+      setLatestMunicipalityContractsLoading(false)
+      return
+    }
+
+    const loadLatestMunicipalityContracts = async () => {
+      setLatestMunicipalityContractsLoading(true)
+
+      try {
+        const municipalityLabel = cleanText(profile?.dhmos)
+          ?? cleanText(selectedMunicipality?.dhmos)
+          ?? cleanText(selectedMunicipality?.municipality_normalized_name)
+          ?? null
+        const todayIso = new Date().toISOString().slice(0, 10)
+        const procurementRows = await fetchAllPaginatedRows<MunicipalityContractProcurementRow>(
+          (from, to) => supabase
+            .from('procurement')
+            .select(`
+              id,
+              contract_signed_date,
+              start_date,
+              end_date,
+              no_end_date,
+              organization_key,
+              canonical_owner_scope,
+              title,
+              procedure_type_value,
+              diavgeia_ada,
+              reference_number,
+              contract_number,
+              contract_budget,
+              budget,
+              cancelled,
+              next_ref_no
+            `)
+            .eq('municipality_key', selectedMunicipalityKey)
+            .eq('canonical_owner_scope', 'municipality')
+            .order('contract_signed_date', { ascending: false })
+            .order('id', { ascending: false })
+            .range(from, to),
+        )
+
+        const procurementIds = procurementRows.map((row) => row.id).filter(Number.isFinite)
+        const organizationKeys = Array.from(
+          new Set(procurementRows.map((row) => cleanText(row.organization_key)).filter(Boolean)),
+        ) as string[]
+
+        const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string> }>()
+        for (const ids of chunk(procurementIds, 200)) {
+          const { data, error } = await supabase
+            .from('payment')
+            .select('procurement_id, beneficiary_name, amount_without_vat')
+            .in('procurement_id', ids)
+          if (error) throw error
+          for (const row of ((data ?? []) as MunicipalityContractPaymentRow[])) {
+            const current = paymentByProcurementId.get(row.procurement_id) ?? { amount: 0, beneficiaries: new Set<string>() }
+            current.amount = (current.amount ?? 0) + (toNumber(row.amount_without_vat) ?? 0)
+            const beneficiaryName = cleanText(row.beneficiary_name)
+            if (beneficiaryName) current.beneficiaries.add(beneficiaryName)
+            paymentByProcurementId.set(row.procurement_id, current)
+          }
+        }
+
+        const organizationByKey = new Map<string, MunicipalityContractOrganizationRow>()
+        for (const keys of chunk(organizationKeys, 200)) {
+          const { data, error } = await supabase
+            .from('organization')
+            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
+            .in('organization_key', keys)
+          if (error) throw error
+          for (const row of ((data ?? []) as MunicipalityContractOrganizationRow[])) {
+            if (!organizationByKey.has(row.organization_key)) organizationByKey.set(row.organization_key, row)
+          }
+        }
+
+        const deduped = new Map<string, MunicipalityContractRow>()
+        for (const row of procurementRows) {
+          if (row.cancelled) continue
+          if (cleanText(row.next_ref_no)) continue
+          if (!isContractActiveOnDate(row, todayIso)) continue
+
+          const organizationKey = cleanText(row.organization_key)
+          const organization = organizationKey ? organizationByKey.get(organizationKey) ?? null : null
+          const payment = paymentByProcurementId.get(row.id)
+          const dedupeKey = cleanText(row.reference_number)
+            ?? cleanText(row.diavgeia_ada)
+            ?? cleanText(row.contract_number)
+            ?? `${organizationKey ?? ''}|${cleanText(row.title) ?? ''}|${cleanText(row.contract_signed_date) ?? ''}`
+
+          deduped.set(dedupeKey, {
+            procurement_id: row.id,
+            contract_signed_date: row.contract_signed_date,
+            organization_key: organizationKey ?? null,
+            organization_value: cleanText(organization?.organization_normalized_value)
+              ?? cleanText(organization?.organization_value)
+              ?? municipalityLabel,
+            authority_scope: 'municipality',
+            title: row.title,
+            procedure_type_value: row.procedure_type_value,
+            beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
+            amount_without_vat: payment?.amount && payment.amount > 0
+              ? payment.amount
+              : (row.contract_budget ?? row.budget ?? null),
+            diavgeia_ada: row.diavgeia_ada,
+            reference_number: row.reference_number,
+          })
+        }
+
+        const rows = Array.from(deduped.values())
+          .sort((a, b) => {
+            const dateA = cleanText(a.contract_signed_date) ?? ''
+            const dateB = cleanText(b.contract_signed_date) ?? ''
+            if (dateA !== dateB) return dateB.localeCompare(dateA)
+            return Number(b.procurement_id) - Number(a.procurement_id)
+          })
+          .slice(0, 12)
+
+        if (!cancelled) {
+          setLatestMunicipalityContractRows(rows)
+        }
+      } catch (error) {
+        if (!cancelled) {
+          console.error('[MunicipalitiesPage] latest municipality contracts failed', error)
+          setLatestMunicipalityContractRows([])
+        }
+      } finally {
+        if (!cancelled) setLatestMunicipalityContractsLoading(false)
+      }
+    }
+
+    loadLatestMunicipalityContracts()
+    return () => {
+      cancelled = true
+    }
+  }, [currentYear, profile, selectedMunicipality, selectedMunicipalityKey])
+
+  useEffect(() => {
+    let cancelled = false
+
+    if (!selectedMunicipalityKey) {
+      setFeaturedMunicipalityBeneficiaries([])
+      setFeaturedMunicipalityBeneficiariesLoading(false)
+      return
+    }
+
+    const loadFeaturedMunicipalityBeneficiaries = async () => {
+      setFeaturedMunicipalityBeneficiariesLoading(true)
+
+      try {
+        const municipalityLabel = cleanText(profile?.dhmos)
+          ?? cleanText(selectedMunicipality?.dhmos)
+          ?? cleanText(selectedMunicipality?.municipality_normalized_name)
+          ?? null
+        const todayIso = new Date().toISOString().slice(0, 10)
+        const procurementRows = await fetchAllPaginatedRows<MunicipalityFeaturedProcurementRow>(
+          (from, to) => supabase
+            .from('procurement')
+            .select(`
+              id,
+              contract_signed_date,
+              submission_at,
+              organization_key,
+              canonical_owner_scope,
+              title,
+              short_descriptions,
+              procedure_type_value,
+              diavgeia_ada,
+              contract_related_ada,
+              reference_number,
+              contract_number,
+              contract_budget,
+              budget,
+              cancelled,
+              next_ref_no,
+              prev_reference_no,
+              assign_criteria,
+              contract_type,
+              award_procedure,
+              units_operator,
+              funding_details_cofund,
+              funding_details_self_fund,
+              funding_details_espa,
+              funding_details_regular_budget,
+              auction_ref_no,
+              organization_vat_number,
+              start_date,
+              end_date,
+              no_end_date
+            `)
+            .eq('municipality_key', selectedMunicipalityKey)
+            .order('contract_signed_date', { ascending: false })
+            .order('id', { ascending: false })
+            .range(from, to),
+        )
+
+        const procurementIds = procurementRows.map((row) => row.id).filter(Number.isFinite)
+        const organizationKeys = Array.from(
+          new Set(procurementRows.map((row) => cleanText(row.organization_key)).filter(Boolean)),
+        ) as string[]
+
+        const paymentRows: MunicipalityContractPaymentRow[] = []
+        for (const ids of chunk(procurementIds, 200)) {
+          const { data, error } = await supabase
+            .from('payment')
+            .select('procurement_id, beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
+            .in('procurement_id', ids)
+          if (error) throw error
+          paymentRows.push(...((data ?? []) as MunicipalityContractPaymentRow[]))
+        }
+
+        const organizationByKey = new Map<string, MunicipalityContractOrganizationRow>()
+        for (const keys of chunk(organizationKeys, 200)) {
+          const { data, error } = await supabase
+            .from('organization')
+            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
+            .in('organization_key', keys)
+          if (error) throw error
+          for (const row of ((data ?? []) as MunicipalityContractOrganizationRow[])) {
+            if (!organizationByKey.has(row.organization_key)) organizationByKey.set(row.organization_key, row)
+          }
+        }
+
+        const cpvRows: ProcurementCpvRow[] = []
+        for (const ids of chunk(procurementIds, 200)) {
+          const { data, error } = await supabase
+            .from('cpv')
+            .select('procurement_id, cpv_key, cpv_value')
+            .in('procurement_id', ids)
+          if (error) throw error
+          cpvRows.push(...((data ?? []) as ProcurementCpvRow[]))
+        }
+
+        const cpvByProcurementId = new Map<number, Array<{ code: string; label: string }>>()
+        for (const row of cpvRows) {
+          const procurementId = Number(row.procurement_id)
+          if (!Number.isFinite(procurementId)) continue
+          const item = {
+            code: cleanText(row.cpv_key) ?? '—',
+            label: cleanText(row.cpv_value) ?? '—',
+          }
+          if (!cpvByProcurementId.has(procurementId)) cpvByProcurementId.set(procurementId, [])
+          const items = cpvByProcurementId.get(procurementId) as Array<{ code: string; label: string }>
+          if (!items.find((existing) => existing.code === item.code && existing.label === item.label)) {
+            items.push(item)
+          }
+        }
+
+        const paymentsByProcurementId = new Map<number, Map<string, MunicipalityContractPaymentRow>>()
+        for (const row of paymentRows) {
+          const procurementId = Number(row.procurement_id)
+          if (!Number.isFinite(procurementId)) continue
+          const beneficiaryName = cleanText(row.beneficiary_name)
+          const beneficiaryVat = cleanText(row.beneficiary_vat_number)
+          const beneficiaryKey = beneficiaryVat ?? beneficiaryName
+          if (!beneficiaryKey) continue
+          if (!paymentsByProcurementId.has(procurementId)) paymentsByProcurementId.set(procurementId, new Map())
+          const beneficiaryMap = paymentsByProcurementId.get(procurementId) as Map<string, MunicipalityContractPaymentRow>
+          const existing = beneficiaryMap.get(beneficiaryKey)
+          if (existing) {
+            existing.amount_without_vat = (existing.amount_without_vat ?? 0) + (row.amount_without_vat ?? 0)
+            existing.amount_with_vat = (existing.amount_with_vat ?? 0) + (row.amount_with_vat ?? 0)
+            existing.signers = existing.signers ?? row.signers ?? null
+            existing.payment_ref_no = existing.payment_ref_no ?? row.payment_ref_no ?? null
+          } else {
+            beneficiaryMap.set(beneficiaryKey, {
+              procurement_id: procurementId,
+              beneficiary_name: beneficiaryName,
+              beneficiary_vat_number: beneficiaryVat,
+              signers: cleanText(row.signers),
+              payment_ref_no: cleanText(row.payment_ref_no),
+              amount_without_vat: row.amount_without_vat ?? 0,
+              amount_with_vat: row.amount_with_vat ?? 0,
+            })
+          }
+        }
+
+        const beneficiaryGroups = new Map<string, {
+          beneficiaryName: string
+          beneficiaryVat: string | null
+          totalAmount: number
+          contractIds: Set<number>
+          startDate: string | null
+          endDate: string | null
+          organizationTotals: Map<string, number>
+          cpvCounts: Map<string, number>
+          signerCounts: Map<string, number>
+          relevantContracts: FeaturedRecordContract[]
+        }>()
+
+        for (const procurement of procurementRows) {
+          if (procurement.cancelled) continue
+          if (cleanText(procurement.next_ref_no)) continue
+          if (!isContractActiveOnDate(procurement, todayIso)) continue
+
+          const organizationKey = cleanText(procurement.organization_key)
+          const organization = organizationKey ? organizationByKey.get(organizationKey) ?? null : null
+          const canonicalOwnerScope = cleanText(procurement.canonical_owner_scope)
+          const authorityScope = canonicalOwnerScope === 'municipality'
+            ? 'municipality'
+            : (cleanText(organization?.authority_scope) ?? 'other')
+          if (authorityScope !== 'municipality') continue
+
+          const organizationName = cleanText(organization?.organization_normalized_value)
+            ?? cleanText(organization?.organization_value)
+            ?? municipalityLabel
+            ?? '—'
+          const procurementId = Number(procurement.id)
+          const paymentEntries = Array.from(paymentsByProcurementId.get(procurementId)?.values() ?? [])
+          if (paymentEntries.length === 0) continue
+
+          for (const payment of paymentEntries) {
+            const beneficiaryName = cleanText(payment.beneficiary_name) ?? cleanText(payment.beneficiary_vat_number) ?? '—'
+            const beneficiaryVat = cleanText(payment.beneficiary_vat_number)
+            const beneficiaryGroupKey = beneficiaryVat ?? `name:${beneficiaryName}`
+            const amountWithoutVat = Math.max(0, toNumber(payment.amount_without_vat) ?? 0)
+            const amountWithVat = Math.max(0, toNumber(payment.amount_with_vat) ?? 0)
+            const cpvItems = cpvByProcurementId.get(procurementId) ?? []
+            const topCpv = cpvItems[0] ?? null
+            const shortDescription = cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? '—'
+            const contractRelatedAda = cleanText(procurement.contract_related_ada)
+            const diavgeiaAda = cleanText(procurement.diavgeia_ada)
+
+            if (!beneficiaryGroups.has(beneficiaryGroupKey)) {
+              beneficiaryGroups.set(beneficiaryGroupKey, {
+                beneficiaryName,
+                beneficiaryVat,
+                totalAmount: 0,
+                contractIds: new Set<number>(),
+                startDate: cleanText(procurement.start_date),
+                endDate: cleanText(procurement.end_date),
+                organizationTotals: new Map<string, number>(),
+                cpvCounts: new Map<string, number>(),
+                signerCounts: new Map<string, number>(),
+                relevantContracts: [],
+              })
+            }
+
+            const group = beneficiaryGroups.get(beneficiaryGroupKey) as {
+              beneficiaryName: string
+              beneficiaryVat: string | null
+              totalAmount: number
+              contractIds: Set<number>
+              startDate: string | null
+              endDate: string | null
+              organizationTotals: Map<string, number>
+              cpvCounts: Map<string, number>
+              signerCounts: Map<string, number>
+              relevantContracts: FeaturedRecordContract[]
+            }
+
+            group.totalAmount += amountWithoutVat
+            group.contractIds.add(procurementId)
+
+            const startDate = cleanText(procurement.start_date)
+            if (startDate && (!group.startDate || startDate < group.startDate)) group.startDate = startDate
+            const endDate = cleanText(procurement.end_date)
+            if (endDate && (!group.endDate || endDate > group.endDate)) group.endDate = endDate
+
+            group.organizationTotals.set(organizationName, (group.organizationTotals.get(organizationName) ?? 0) + amountWithoutVat)
+            for (const cpvItem of cpvItems) {
+              if (cpvItem.label !== '—') {
+                group.cpvCounts.set(cpvItem.label, (group.cpvCounts.get(cpvItem.label) ?? 0) + 1)
+              }
+            }
+            const signer = cleanText(payment.signers)
+            if (signer) {
+              group.signerCounts.set(signer, (group.signerCounts.get(signer) ?? 0) + 1)
+            }
+
+            group.relevantContracts.push({
+              id: String(procurementId),
+              who: organizationName,
+              what: cleanText(procurement.title) ?? '—',
+              when: formatDate(cleanText(procurement.submission_at)),
+              why: toSentenceCaseEl(topCpv?.label ?? shortDescription),
+              beneficiary: toUpperEl(beneficiaryName),
+              contractType: cleanText(procurement.procedure_type_value) ?? '—',
+              howMuch: formatEur(amountWithoutVat),
+              withoutVatAmount: formatEur(amountWithoutVat),
+              withVatAmount: formatEur(amountWithVat),
+              referenceNumber: cleanText(procurement.reference_number) ?? '—',
+              contractNumber: cleanText(procurement.contract_number) ?? '—',
+              cpv: topCpv?.label ?? '—',
+              cpvCode: topCpv?.code ?? '—',
+              cpvItems,
+              signedAt: formatDate(cleanText(procurement.contract_signed_date)),
+              startDate: formatDate(cleanText(procurement.start_date)),
+              endDate: formatDate(cleanText(procurement.end_date)),
+              organizationVat: cleanText(procurement.organization_vat_number) ?? '—',
+              beneficiaryVat: beneficiaryVat ?? '—',
+              signers: cleanText(payment.signers) ?? '—',
+              assignCriteria: cleanText(procurement.assign_criteria) ?? '—',
+              contractKind: cleanText(procurement.contract_type) ?? '—',
+              awardProcedure: cleanText(procurement.award_procedure) ?? '—',
+              unitsOperator: cleanText(procurement.units_operator) ?? '—',
+              fundingCofund: cleanText(procurement.funding_details_cofund) ?? '—',
+              fundingSelf: cleanText(procurement.funding_details_self_fund) ?? '—',
+              fundingEspa: cleanText(procurement.funding_details_espa) ?? '—',
+              fundingRegular: cleanText(procurement.funding_details_regular_budget) ?? '—',
+              auctionRefNo: cleanText(procurement.auction_ref_no) ?? '—',
+              paymentRefNo: cleanText(payment.payment_ref_no) ?? '—',
+              shortDescription,
+              rawBudget: formatEur(toNumber(procurement.budget)),
+              contractBudget: formatEur(toNumber(procurement.contract_budget)),
+              contractRelatedAda: contractRelatedAda ?? '—',
+              previousReferenceNumber: cleanText(procurement.prev_reference_no) ?? '—',
+              nextReferenceNumber: cleanText(procurement.next_ref_no) ?? '—',
+              documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
+            })
+          }
+        }
+
+        const today = new Date()
+        const rows = [...beneficiaryGroups.values()]
+          .map<BeneficiaryInsightRow>((group) => {
+            const organization = [...group.organizationTotals.entries()]
+              .sort((a, b) => {
+                if (b[1] !== a[1]) return b[1] - a[1]
+                return a[0].localeCompare(b[0], 'el')
+              })[0]?.[0] ?? '—'
+            const cpv = [...group.cpvCounts.entries()]
+              .sort((a, b) => {
+                if (b[1] !== a[1]) return b[1] - a[1]
+                return a[0].localeCompare(b[0], 'el')
+              })[0]?.[0] ?? '—'
+            const signer = [...group.signerCounts.entries()]
+              .sort((a, b) => {
+                if (b[1] !== a[1]) return b[1] - a[1]
+                return a[0].localeCompare(b[0], 'el')
+              })[0]?.[0] ?? '—'
+
+            const relevantContracts = group.relevantContracts
+              .sort((a, b) => {
+                const amountDiff = (toNumber(b.withoutVatAmount.replace(/[^\d,-]/g, '').replace(/\./g, '').replace(',', '.')) ?? 0)
+                  - (toNumber(a.withoutVatAmount.replace(/[^\d,-]/g, '').replace(/\./g, '').replace(',', '.')) ?? 0)
+                if (amountDiff !== 0) return amountDiff
+                return String(b.signedAt).localeCompare(String(a.signedAt), 'el')
+              })
+              .slice(0, 5)
+
+            const startDate = group.startDate
+            const endDate = group.endDate
+            let duration = '—'
+            let progressPct: number | null = null
+            if (startDate && endDate) {
+              const start = new Date(startDate)
+              const end = new Date(endDate)
+              if (!Number.isNaN(start.getTime()) && !Number.isNaN(end.getTime()) && end >= start) {
+                const days = Math.round((end.getTime() - start.getTime()) / 86_400_000) + 1
+                duration = `${days} ημέρες`
+                if (end > start) {
+                  if (today <= start) progressPct = 0
+                  else if (today >= end) progressPct = 100
+                  else progressPct = Math.max(0, Math.min(100, ((today.getTime() - start.getTime()) / (end.getTime() - start.getTime())) * 100))
+                }
+              }
+            }
+
+            return {
+              beneficiary: toUpperEl(group.beneficiaryName),
+              organization,
+              totalAmount: group.totalAmount,
+              contractCount: group.contractIds.size,
+              cpv,
+              startDate: formatDate(startDate),
+              endDate: formatDate(endDate),
+              duration,
+              progressPct,
+              signer,
+              relevantContracts,
+            }
+          })
+          .sort((a, b) => {
+            if (b.totalAmount !== a.totalAmount) return b.totalAmount - a.totalAmount
+            if (b.contractCount !== a.contractCount) return b.contractCount - a.contractCount
+            return a.beneficiary.localeCompare(b.beneficiary, 'el')
+          })
+          .slice(0, 12)
+
+        if (!cancelled) setFeaturedMunicipalityBeneficiaries(rows)
+      } catch (error) {
+        if (!cancelled) {
+          console.error('[MunicipalitiesPage] featured municipality beneficiaries failed', error)
+          setFeaturedMunicipalityBeneficiaries([])
+        }
+      } finally {
+        if (!cancelled) setFeaturedMunicipalityBeneficiariesLoading(false)
+      }
+    }
+
+    loadFeaturedMunicipalityBeneficiaries()
+    return () => {
+      cancelled = true
+    }
+  }, [currentYear, profile, selectedMunicipality, selectedMunicipalityKey])
 
   const selectedMunicipalityHillshadeTiles = useMemo(() => {
     if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
@@ -1256,6 +1819,9 @@ export default function MunicipalitiesPage() {
       .select(`
         id,
         organization_key,
+        municipality_key,
+        region_key,
+        canonical_owner_scope,
         title,
         submission_at,
         contract_signed_date,
@@ -1267,12 +1833,16 @@ export default function MunicipalitiesPage() {
         budget,
         assign_criteria,
         contract_type,
+        award_procedure,
         units_operator,
         funding_details_cofund,
         funding_details_self_fund,
         funding_details_espa,
         funding_details_regular_budget,
         auction_ref_no,
+        contract_related_ada,
+        prev_reference_no,
+        next_ref_no,
         organization_vat_number,
         start_date,
         end_date,
@@ -1284,7 +1854,7 @@ export default function MunicipalitiesPage() {
 
     if (!procurement) return
 
-    const [{ data: paymentRows }, { data: cpvRows }, { data: organizationRows }] = await Promise.all([
+    const [{ data: paymentRows }, { data: cpvRows }, { data: organizationRows }, { data: regionRows }] = await Promise.all([
       supabase
         .from('payment')
         .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
@@ -1296,9 +1866,16 @@ export default function MunicipalitiesPage() {
         .eq('procurement_id', procurementId),
       supabase
         .from('organization')
-        .select('organization_key, organization_normalized_value, organization_value')
+        .select('organization_key, organization_normalized_value, organization_value, authority_scope')
         .eq('organization_key', String(procurement.organization_key ?? ''))
         .limit(1),
+      procurement.region_key
+        ? supabase
+          .from('region')
+          .select('region_normalized_value, region_value')
+          .eq('region_key', String(procurement.region_key))
+          .limit(1)
+        : Promise.resolve({ data: [] }),
     ])
 
     const payment = (paymentRows?.[0] ?? null) as {
@@ -1326,17 +1903,31 @@ export default function MunicipalitiesPage() {
       organization_key: string
       organization_normalized_value: string | null
       organization_value: string | null
+      authority_scope: ContractAuthorityScope | null
+    } | null
+    const region = (regionRows?.[0] ?? null) as {
+      region_normalized_value: string | null
+      region_value: string | null
     } | null
     const amountWithoutVat = payment?.amount_without_vat ?? null
+    const contractRelatedAda = cleanText(procurement.contract_related_ada)
     const diavgeiaAda = cleanText(procurement.diavgeia_ada)
+    const organizationName = cachedCanonicalOrganizationName
+      ?? cleanText(organization?.organization_normalized_value)
+      ?? cleanText(organization?.organization_value)
+      ?? cleanText(fallbackOrganizationName)
+      ?? '—'
+    const who = buildContractAuthorityLabel({
+      canonicalOwnerScope: cleanText(procurement.canonical_owner_scope),
+      organizationScope: cleanText(organization?.authority_scope),
+      organizationName,
+      municipalityLabel: selectedMunicipalityLabel,
+      regionLabel: cleanText(region?.region_normalized_value) ?? cleanText(region?.region_value),
+    })
 
     setSelectedContract({
       id: String(procurement.id),
-      who: cachedCanonicalOrganizationName
-        ?? cleanText(organization?.organization_normalized_value)
-        ?? cleanText(organization?.organization_value)
-        ?? cleanText(fallbackOrganizationName)
-        ?? '—',
+      who,
       what: cleanText(procurement.title) ?? '—',
       when: formatDate(cleanText(procurement.submission_at)),
       why: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? primaryCpv?.label ?? '—',
@@ -1358,6 +1949,7 @@ export default function MunicipalitiesPage() {
       signers: cleanText(payment?.signers) ?? '—',
       assignCriteria: cleanText(procurement.assign_criteria) ?? '—',
       contractKind: cleanText(procurement.contract_type) ?? '—',
+      awardProcedure: cleanText(procurement.award_procedure) ?? '—',
       unitsOperator: cleanText(procurement.units_operator) ?? '—',
       fundingCofund: cleanText(procurement.funding_details_cofund) ?? '—',
       fundingSelf: cleanText(procurement.funding_details_self_fund) ?? '—',
@@ -1368,7 +1960,10 @@ export default function MunicipalitiesPage() {
       shortDescription: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? '—',
       rawBudget: procurement.budget == null ? '—' : Number(procurement.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       contractBudget: procurement.contract_budget == null ? '—' : Number(procurement.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
-      documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+      contractRelatedAda: contractRelatedAda ?? '—',
+      previousReferenceNumber: cleanText(procurement.prev_reference_no) ?? '—',
+      nextReferenceNumber: cleanText(procurement.next_ref_no) ?? '—',
+      documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
     })
   }
 
@@ -1398,12 +1993,16 @@ export default function MunicipalitiesPage() {
       setTopContractCpvByYear({})
       setProcedureBreakdown([])
       setContractOrganizationById({})
-      setActivePreviousContractsCount(0)
 
       try {
+        const municipalityOrganizationName = cleanText(selectedMunicipality?.dhmos)
+          ?? cleanText(selectedMunicipality?.municipality_normalized_name)
+          ?? null
+        const todayIso = new Date().toISOString().slice(0, 10)
+
         const contractRequests = years.map(async (year) => {
           const yearStart = `${year}-01-01`
-          const yearEnd = `${year}-12-31`
+          const yearEnd = year === currentYear ? todayIso : `${year}-12-31`
           const procurementRows = await fetchAllPaginatedRows<MunicipalityContractProcurementRow>(
             (from, to) => supabase
               .from('procurement')
@@ -1411,10 +2010,16 @@ export default function MunicipalitiesPage() {
                 id,
                 contract_signed_date,
                 organization_key,
+                canonical_owner_scope,
                 title,
                 procedure_type_value,
                 diavgeia_ada,
-                reference_number
+                reference_number,
+                contract_number,
+                contract_budget,
+                budget,
+                cancelled,
+                next_ref_no
               `)
               .eq('municipality_key', selectedMunicipalityKey)
               .gte('contract_signed_date', yearStart)
@@ -1424,7 +2029,6 @@ export default function MunicipalitiesPage() {
               .range(from, to),
           )
 
-          const procurementIds = procurementRows.map((row) => row.id).filter(Number.isFinite)
           const organizationKeys = Array.from(
             new Set(
               procurementRows
@@ -1433,7 +2037,8 @@ export default function MunicipalitiesPage() {
             ),
           ) as string[]
 
-          const paymentByProcurementId = new Map<number, MunicipalityContractPaymentRow>()
+          const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string> }>()
+          const procurementIds = procurementRows.map((row) => row.id).filter(Number.isFinite)
           for (const ids of chunk(procurementIds, 200)) {
             const { data, error } = await supabase
               .from('payment')
@@ -1441,46 +2046,67 @@ export default function MunicipalitiesPage() {
               .in('procurement_id', ids)
             if (error) throw error
             for (const row of ((data ?? []) as MunicipalityContractPaymentRow[])) {
-              if (!paymentByProcurementId.has(row.procurement_id)) paymentByProcurementId.set(row.procurement_id, row)
+              const current = paymentByProcurementId.get(row.procurement_id) ?? { amount: 0, beneficiaries: new Set<string>() }
+              current.amount = (current.amount ?? 0) + (toNumber(row.amount_without_vat) ?? 0)
+              const beneficiaryName = cleanText(row.beneficiary_name)
+              if (beneficiaryName) current.beneficiaries.add(beneficiaryName)
+              paymentByProcurementId.set(row.procurement_id, current)
             }
           }
 
-          const organizationNameByKey = new Map<string, string>()
+          const organizationByKey = new Map<string, MunicipalityContractOrganizationRow>()
           for (const keys of chunk(organizationKeys, 200)) {
             const { data, error } = await supabase
               .from('organization')
-              .select('organization_key, organization_normalized_value, organization_value')
+              .select('organization_key, organization_normalized_value, organization_value, authority_scope')
               .in('organization_key', keys)
             if (error) throw error
             for (const row of ((data ?? []) as MunicipalityContractOrganizationRow[])) {
-              const canonicalName = cleanText(row.organization_normalized_value) ?? cleanText(row.organization_value)
-              if (!canonicalName || organizationNameByKey.has(row.organization_key)) continue
-              organizationNameByKey.set(row.organization_key, canonicalName)
+              if (!organizationByKey.has(row.organization_key)) organizationByKey.set(row.organization_key, row)
             }
           }
 
-          const municipalityOrganizationName = cleanText(selectedMunicipality?.dhmos)
-            ?? cleanText(selectedMunicipality?.municipality_normalized_name)
-            ?? null
+          const deduped = new Map<string, MunicipalityContractRow>()
+          for (const row of procurementRows) {
+            if (row.cancelled) continue
+            if (cleanText(row.next_ref_no)) continue
+
+            const organizationKey = cleanText(row.organization_key)
+            const organization = organizationKey ? organizationByKey.get(organizationKey) ?? null : null
+            const canonicalOwnerScope = cleanText(row.canonical_owner_scope)
+            const authorityScope = canonicalOwnerScope === 'municipality'
+              ? 'municipality'
+              : (cleanText(organization?.authority_scope) ?? 'other')
+            if (authorityScope !== 'municipality') continue
+
+            const payment = paymentByProcurementId.get(row.id)
+            const dedupeKey = cleanText(row.reference_number)
+              ?? cleanText(row.diavgeia_ada)
+              ?? cleanText(row.contract_number)
+              ?? `${organizationKey ?? ''}|${cleanText(row.title) ?? ''}|${cleanText(row.contract_signed_date) ?? ''}`
+
+            deduped.set(dedupeKey, {
+              procurement_id: row.id,
+              contract_signed_date: row.contract_signed_date,
+              organization_key: organizationKey ?? null,
+              organization_value: cleanText(organization?.organization_normalized_value)
+                ?? cleanText(organization?.organization_value)
+                ?? municipalityOrganizationName,
+              authority_scope: authorityScope,
+              title: row.title,
+              procedure_type_value: row.procedure_type_value,
+              beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
+              amount_without_vat: payment?.amount && payment.amount > 0
+                ? payment.amount
+                : (row.contract_budget ?? row.budget ?? null),
+              diavgeia_ada: row.diavgeia_ada,
+              reference_number: row.reference_number,
+            })
+          }
 
           return {
             year,
-            rows: procurementRows.map((row) => {
-              const payment = paymentByProcurementId.get(row.id)
-              const organizationKey = cleanText(row.organization_key)
-              return {
-                procurement_id: row.id,
-                contract_signed_date: row.contract_signed_date,
-                organization_key: organizationKey ?? null,
-                organization_value: (organizationKey ? organizationNameByKey.get(organizationKey) : null) ?? municipalityOrganizationName,
-                title: row.title,
-                procedure_type_value: row.procedure_type_value,
-                beneficiary_name: payment?.beneficiary_name ?? null,
-                amount_without_vat: payment?.amount_without_vat ?? null,
-                diavgeia_ada: row.diavgeia_ada,
-                reference_number: row.reference_number,
-              } satisfies MunicipalityContractRow
-            }),
+            rows: Array.from(deduped.values()),
           }
         })
 
@@ -1559,15 +2185,6 @@ export default function MunicipalitiesPage() {
         }
 
         const contractIds = yearRows.flatMap((entry) => entry.rows.map((row) => Number(row.procurement_id))).filter(Number.isFinite)
-        const procurementStatusRows: ProcurementStatusRow[] = []
-        for (const ids of chunk(contractIds, 200)) {
-          const { data, error } = await supabase
-            .from('procurement')
-            .select('id, contract_signed_date, end_date, no_end_date')
-            .in('id', ids)
-          if (error) throw error
-          procurementStatusRows.push(...((data ?? []) as ProcurementStatusRow[]))
-        }
         const cpvRows: ProcurementCpvRow[] = []
         for (const ids of chunk(contractIds, 200)) {
           const { data, error } = await supabase
@@ -1612,6 +2229,8 @@ export default function MunicipalitiesPage() {
 
           let cumulativeAmount = 0
           for (const row of sortedRows) {
+            const signedYear = extractYear(row.contract_signed_date)
+            if (signedYear !== entry.year) continue
             const amount = Math.max(0, toNumber(row.amount_without_vat) ?? 0)
             const procedureLabel = cleanText(row.procedure_type_value) ?? '—'
             const dayOfYear = getDayOfYear(row.contract_signed_date)
@@ -1664,14 +2283,6 @@ export default function MunicipalitiesPage() {
           })
           .slice(0, 5)
 
-        const todayIso = new Date().toISOString().slice(0, 10)
-        const nextActivePreviousContractsCount = procurementStatusRows.filter((row) => {
-          const signedYear = extractYear(row.contract_signed_date)
-          if (signedYear == null || signedYear >= currentYear) return false
-          const endDate = cleanText(row.end_date)
-          return Boolean(row.no_end_date) || (endDate != null && endDate >= todayIso)
-        }).length
-
         if (!cancelled) {
           setProfile(nextProfile)
           setForestFireRows(nextForestRows)
@@ -1681,7 +2292,6 @@ export default function MunicipalitiesPage() {
           setTopContractCpvByYear(nextTopContractCpvByYear)
           setProcedureBreakdown(nextProcedureBreakdown)
           setContractOrganizationById(nextContractOrganizationById)
-          setActivePreviousContractsCount(nextActivePreviousContractsCount)
           setPageLoading(false)
         }
       } catch (error) {
@@ -1699,7 +2309,7 @@ export default function MunicipalitiesPage() {
     return () => {
       cancelled = true
     }
-  }, [currentYear, selectedMunicipalityKey, years])
+  }, [currentYear, selectedMunicipality, selectedMunicipalityKey, years])
 
   useEffect(() => {
     if (!selectedMunicipalityFeature) {
@@ -1755,15 +2365,22 @@ export default function MunicipalitiesPage() {
 
   const hasSelectedMunicipality = Boolean(selectedMunicipality)
   const isEmptySelection = !selectedMunicipalityKey
+  const selectedMunicipalityLabel =
+    cleanText(profile?.dhmos)
+    ?? cleanText(selectedMunicipality?.dhmos)
+    ?? cleanText(selectedMunicipality?.municipality_normalized_name)
+    ?? null
   const selectedName = hasSelectedMunicipality
-    ? cleanText(profile?.dhmos) ?? cleanText(selectedMunicipality?.dhmos) ?? cleanText(selectedMunicipality?.municipality_normalized_name) ?? 'Δήμος'
+    ? selectedMunicipalityLabel ?? 'Δήμος'
     : selectedMunicipalityKey
       ? 'Φόρτωση δήμου…'
-      : 'Επίλεξε Δήμο'
+      : 'Αναζήτησε Δήμο'
   const populationValue = toNumber(profile?.plithismos_synolikos)
   const areaValue = toNumber(profile?.ektasi_km2)
   const densityValue = toNumber(profile?.puknotita)
   const directContractSummary = contractYearSummary.find((entry) => entry.year === currentYear) ?? null
+  const previousYearContractSummary = contractYearSummary.find((entry) => entry.year === currentYear - 1) ?? null
+  const secondPreviousYearContractSummary = contractYearSummary.find((entry) => entry.year === currentYear - 2) ?? null
   const civicFacts = [
     {
       label: 'Πληθυσμός',
@@ -1887,6 +2504,23 @@ export default function MunicipalitiesPage() {
   }, [contractChartByYear, contractChartHover, contractChartYears])
   const contractProcedureMax = Math.max(1, ...procedureBreakdown.map((item) => item.count))
   const contractProcedureTotal = procedureBreakdown.reduce((sum, item) => sum + item.count, 0)
+  const latestMunicipalityContracts = useMemo<LatestContractCardView[]>(
+    () => latestMunicipalityContractRows.map((row) => buildLatestContractCardView({
+      id: String(row.procurement_id),
+      organizationName: cleanText(row.organization_value) ?? cleanText(row.organization_key) ?? '—',
+      authorityScope: (cleanText(row.authority_scope) ?? 'other') as AuthorityScope,
+      municipalityLabel: selectedMunicipalityLabel,
+      when: formatDate(row.contract_signed_date),
+      what: cleanText(row.title) ?? '—',
+      why: `Διαδικασία: ${cleanText(row.procedure_type_value) ?? '—'}`,
+      beneficiary: cleanText(row.beneficiary_name) ?? '—',
+      contractType: cleanText(row.procedure_type_value) ?? '—',
+      howMuch: formatEur(toNumber(row.amount_without_vat)),
+      signedAt: formatDate(row.contract_signed_date),
+      documentUrl: cleanText(row.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(row.diavgeia_ada)}` : null,
+    })),
+    [latestMunicipalityContractRows, selectedMunicipalityLabel],
+  )
   const currentYearTopContractCpv = topContractCpvByYear[currentYear] ?? null
   const previousYearTopContractCpv = topContractCpvByYear[currentYear - 1] ?? null
   const secondPreviousYearTopContractCpv = topContractCpvByYear[currentYear - 2] ?? null
@@ -1908,6 +2542,42 @@ export default function MunicipalitiesPage() {
     ]
     return sentences.join(' ')
   }, [copernicusNarrativeByYear, currentYear, hasSelectedMunicipality, isEmptySelection])
+  const isMunicipalityProfileLoading =
+    Boolean(selectedMunicipalityKey) &&
+    (
+      municipalitiesLoading ||
+      pageLoading ||
+      municipalityGeojsonLoading ||
+      cityPointsLoading ||
+      workRowsLoading
+    )
+
+  const openLatestMunicipalityContract = (contractId: string) => {
+    const procurementId = Number(contractId)
+    if (!Number.isFinite(procurementId)) return
+    const fallbackOrganizationName = latestMunicipalityContracts.find((item) => item.id === contractId)?.who ?? selectedName
+    void openContractModal(procurementId, fallbackOrganizationName)
+  }
+
+  const openFeaturedMunicipalityContract = (contract: FeaturedRecordContract) => {
+    const procurementId = Number(contract.id)
+    if (!Number.isFinite(procurementId)) return
+    void openContractModal(procurementId, contract.who)
+  }
+
+  if (isMunicipalityProfileLoading) {
+    return (
+      <main className="municipalities-page">
+        <ComponentTag name="MunicipalitiesPage" />
+        <section className="municipality-page-note section-rule">
+          <DataLoadingCard
+            title="Φόρτωση profile δήμου"
+            message="Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του."
+          />
+        </section>
+      </main>
+    )
+  }
 
   return (
     <main className="municipalities-page">
@@ -2529,7 +3199,7 @@ export default function MunicipalitiesPage() {
               <div className="profile-metric-card__value">{formatEur(directContractSummary?.amount ?? null)}</div>
               <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων</div>
               <p className="profile-metric-card__note">
-                {formatNumber(activePreviousContractsCount)} συμβάσεις που υπογράφηκαν πριν το {currentYear} παραμένουν σε ισχύ σήμερα
+                {`${currentYear - 1}: ${formatEur(previousYearContractSummary?.amount ?? null)} · ${currentYear - 2}: ${formatEur(secondPreviousYearContractSummary?.amount ?? null)}`}
               </p>
             </article>
 
@@ -2666,7 +3336,7 @@ export default function MunicipalitiesPage() {
             </article>
 
             <article className="profile-metric-card municipality-contract-card municipality-contract-card--bars">
-              <div className="profile-metric-card__eyebrow eyebrow">Είδος ανάθεσης</div>
+              <div className="profile-metric-card__eyebrow eyebrow">Είδος ανάθεσης 2024 - {currentYear}</div>
               <div className="profile-metric-card__label">Κατανομή συμβάσεων ανά διαδικασία</div>
               {procedureBreakdown.length > 0 ? (
                 <div className="municipality-contract-card__bars" aria-label="Κατανομή διαδικασιών ανάθεσης">
@@ -2690,11 +3360,44 @@ export default function MunicipalitiesPage() {
               )}
             </article>
           </section>
+
+          <section className="municipality-contract-latest section-rule" aria-label="Τελευταίες συμβάσεις δήμου">
+            <div className="municipality-contract-latest__head">
+              <span className="eyebrow">τελευταίες συμβάσεις</span>
+              <p>Οι πιο πρόσφατες συμβάσεις του {selectedName} για το {currentYear}.</p>
+            </div>
+            <div className="municipality-contract-strip">
+              {latestMunicipalityContractsLoading && (
+                <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις του δήμου." />
+              )}
+              {!latestMunicipalityContractsLoading && latestMunicipalityContracts.map((item) => (
+                <LatestContractCard
+                  key={item.id}
+                  item={item}
+                  onOpen={openLatestMunicipalityContract}
+                />
+              ))}
+              {!latestMunicipalityContractsLoading && latestMunicipalityContracts.length === 0 && (
+                <article className="wire-item">
+                  <h2>Δεν βρέθηκαν συμβάσεις για τον επιλεγμένο δήμο.</h2>
+                </article>
+              )}
+            </div>
+          </section>
+
+          <FeaturedRecordsSection
+            sectionId="municipality-beneficiaries"
+            year={String(currentYear)}
+            rows={featuredMunicipalityBeneficiaries}
+            loading={featuredMunicipalityBeneficiariesLoading}
+            formatEur={formatEur}
+            onOpenContract={openFeaturedMunicipalityContract}
+            eyebrowText={`Δικαιούχοι / ενεργές συμβάσεις / ${selectedName}`}
+            title={`Κορυφαίοι ανάδοχοι ενεργών συμβάσεων του ${selectedName}`}
+            note="Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών συμβάσεων που έχουν σήμερα με τον επιλεγμένο δήμο."
+            emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για τον επιλεγμένο δήμο."
+          />
         </>
-      ) : selectedMunicipalityKey && pageLoading ? (
-        <section className="municipality-page-note section-rule">
-          <DataLoadingCard message={`Ανακτώνται τα δεδομένα του ${selectedName}.`} />
-        </section>
       ) : null}
 
       {selectedContract && (

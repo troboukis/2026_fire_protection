@@ -28,6 +28,11 @@ type Props = {
   loading: boolean
   formatEur: (n: number | null) => string
   onOpenContract: (contract: FeaturedRecordContract) => void
+  eyebrowText?: string
+  title?: string
+  note?: string
+  emptyMessage?: string
+  sectionId?: string
 }
 
 export default function FeaturedRecordsSection({
@@ -36,13 +41,18 @@ export default function FeaturedRecordsSection({
   loading,
   formatEur,
   onOpenContract,
+  eyebrowText = `Δικαιούχοι / ${year}`,
+  title = 'Εταιρείες με συμβάσεις έργων πυροπροστασίας',
+  note = 'Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των συμβάσεων που έχουν λάβει από δήμους, περιφέρειες και άλλους δημόσιους φορείς.',
+  emptyMessage = `Δεν βρέθηκαν δικαιούχοι για το ${year}.`,
+  sectionId = 'records',
 }: Props) {
   return (
-    <section id="records" className="records section-rule">
+    <section id={sectionId} className="records section-rule">
       <div className="section-head">
-        <div className="eyebrow">{`Δικαιούχοι / ${year}`}</div>
-        <h2>Εταιρείες με συμβάσεις έργων πυροπροστασίας</h2>
-        <section className='ca-header-note'>Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των συμβάσεων που έχουν λάβει από δήμους, περιφέρειες και άλλους δημόσιους φορείς.</section>
+        <div className="eyebrow">{eyebrowText}</div>
+        <h2>{title}</h2>
+        <section className='ca-header-note'>{note}</section>
       </div>
 
       <div className="records-grid records-grid--horizontal">
@@ -51,6 +61,12 @@ export default function FeaturedRecordsSection({
             className="records-grid__loading-card"
             message={`Ανακτώνται οι δικαιούχοι και οι συμβάσεις τους για το ${year}.`}
           />
+        )}
+
+        {!loading && rows.length === 0 && (
+          <article className="record-card">
+            <h3>{emptyMessage}</h3>
+          </article>
         )}
 
         {!loading && rows.map((row, idx) => (
