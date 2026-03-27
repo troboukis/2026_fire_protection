@@ -91,8 +91,10 @@ direct_municipality AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
+    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
+    AND p.end_date IS NOT NULL
+    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
+    AND p.end_date >= make_date(p_year, 1, 1)
     AND p.municipality_key = p_municipality_key
     AND (
       p.canonical_owner_scope = 'municipality'
@@ -141,12 +143,14 @@ attributed_organization AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
+    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
+    AND p.end_date IS NOT NULL
+    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
+    AND p.end_date >= make_date(p_year, 1, 1)
     AND p.municipality_key = p_municipality_key
     AND p.organization_key IS NOT NULL
     AND COALESCE(p.canonical_owner_scope, '') = 'organization'
-    AND COALESCE(org.authority_scope, 'other') <> 'national'
+    AND COALESCE(org.authority_scope, 'other') = 'municipality'
 ),
 coverage_organization AS (
   SELECT
@@ -193,59 +197,11 @@ coverage_organization AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
-    AND COALESCE(org.authority_scope, 'other') <> 'national'
-),
-regional_organization AS (
-  SELECT
-    p.id AS procurement_id,
-    p.contract_signed_date,
-    p.organization_key,
-    COALESCE(org.organization_normalized_value, org.organization_value, p.organization_key) AS organization_value,
-    COALESCE(org.authority_scope, 'other') AS authority_scope,
-    p.title,
-    public.normalize_procedure_type(p.procedure_type_value) AS procedure_type_value,
-    pa.beneficiary_name,
-    COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
-    p.diavgeia_ada,
-    p.reference_number,
-    ROW_NUMBER() OVER (
-      PARTITION BY COALESCE(
-        NULLIF(TRIM(p.reference_number), ''),
-        NULLIF(TRIM(p.diavgeia_ada), ''),
-        NULLIF(TRIM(p.contract_number), ''),
-        CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
-      )
-      ORDER BY p.id DESC
-    ) AS rn
-  FROM public.procurement p
-  JOIN public.municipality msel
-    ON msel.municipality_key = p_municipality_key
-   AND msel.region_key = p.region_key
-  LEFT JOIN payment_agg pa
-    ON pa.procurement_id = p.id
-  LEFT JOIN LATERAL (
-    SELECT
-      o.organization_normalized_value,
-      o.organization_value,
-      o.authority_scope
-    FROM public.organization o
-    WHERE o.organization_key = p.organization_key
-    ORDER BY o.id
-    LIMIT 1
-  ) org ON TRUE
-  WHERE COALESCE(p.cancelled, FALSE) = FALSE
-    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
-    AND NOT EXISTS (
-      SELECT 1
-      FROM public.procurement p2
-      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
-    )
-    AND p.contract_signed_date IS NOT NULL
-    AND EXTRACT(YEAR FROM p.contract_signed_date) = p_year
-    AND p.organization_key IS NOT NULL
-    AND COALESCE(org.authority_scope, 'other') IN ('region', 'decentralized')
+    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
+    AND p.end_date IS NOT NULL
+    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
+    AND p.end_date >= make_date(p_year, 1, 1)
+    AND COALESCE(org.authority_scope, 'other') = 'municipality'
 ),
 unioned AS (
   SELECT *, 0 AS source_priority FROM direct_municipality WHERE rn = 1
@@ -253,8 +209,6 @@ unioned AS (
   SELECT *, 1 AS source_priority FROM coverage_organization WHERE rn = 1
   UNION ALL
   SELECT *, 2 AS source_priority FROM attributed_organization WHERE rn = 1
-  UNION ALL
-  SELECT *, 3 AS source_priority FROM regional_organization WHERE rn = 1
 ),
 base AS (
   SELECT *
@@ -310,3 +264,31 @@ AS $$
 $$;
 
 GRANT EXECUTE ON FUNCTION public.get_municipality_contract_count(text, integer) TO anon, authenticated, service_role;
+
+CREATE OR REPLACE FUNCTION public.get_municipality_contract_summary(
+  p_municipality_key text,
+  p_year integer
+)
+RETURNS TABLE (
+  signed_current_count bigint,
+  active_previous_count bigint
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+  WITH base AS (
+    SELECT contract_signed_date
+    FROM public.get_municipality_contracts(p_municipality_key, p_year, NULL, 0)
+  )
+  SELECT
+    COUNT(*) FILTER (
+      WHERE contract_signed_date BETWEEN make_date(p_year, 1, 1) AND make_date(p_year, 12, 31)
+    )::bigint AS signed_current_count,
+    COUNT(*) FILTER (
+      WHERE contract_signed_date < make_date(p_year, 1, 1)
+    )::bigint AS active_previous_count
+  FROM base;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_municipality_contract_summary(text, integer) TO anon, authenticated, service_role;

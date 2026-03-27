@@ -1,3 +1,5 @@
+import { useDevViewEnabled } from '../lib/devView'
+
 type ContractModalContract = {
   id: string
   who: string
@@ -22,6 +24,7 @@ type ContractModalContract = {
   signers: string
   assignCriteria: string
   contractKind: string
+  awardProcedure: string
   unitsOperator: string
   fundingCofund: string
   fundingSelf: string
@@ -32,6 +35,9 @@ type ContractModalContract = {
   shortDescription: string
   rawBudget: string
   contractBudget: string
+  contractRelatedAda: string
+  previousReferenceNumber: string
+  nextReferenceNumber: string
   documentUrl: string | null
 }
 
@@ -44,8 +50,41 @@ type Props = {
 export type { ContractModalContract }
 
 export default function ContractModal({ contract, onClose, onDownloadPdf }: Props) {
+  const [devViewEnabled] = useDevViewEnabled()
   const cpvItems = (contract.cpvItems ?? []).filter((x) => x.code || x.label)
   const fallbackCpv = `${contract.cpv} (${contract.cpvCode})`
+  const gridItems = [
+    { label: 'Υπεβλήθη', value: contract.when },
+    { label: 'Μοναδικός Κωδικός - ΑΔΑΜ', value: contract.referenceNumber },
+    { label: 'Τύπος σύμβασης', value: contract.contractKind },
+    { label: 'Υπεγράφη', value: contract.signedAt },
+    { label: 'Έναρξη', value: contract.startDate },
+    { label: 'Λήξη', value: contract.endDate },
+    { label: 'Διαδικασία ανάθεσης', value: contract.awardProcedure },
+    { label: 'Υπογραφή', value: contract.signers },
+    { label: 'Τύπος διαδικασίας', value: contract.contractType },
+    { label: 'Δικαιούχος', value: contract.beneficiary },
+    { label: 'ΑΦΜ Δικαιούχου', value: contract.beneficiaryVat },
+    { label: 'Ποσό με ΦΠΑ', value: contract.withVatAmount },
+    { label: 'Τμήμα', value: contract.unitsOperator },
+    {
+      label: 'CPV',
+      value: cpvItems.length > 0 ? (
+        cpvItems.map((item, idx) => (
+          <span key={`${item.code}-${item.label}-${idx}`} style={{ display: 'block' }}>
+            {item.label} ({item.code})
+          </span>
+        ))
+      ) : (
+        fallbackCpv
+      ),
+    },
+    { label: 'ΑΔΑ Εγγράφου στη Διαύγεια', value: contract.contractRelatedAda },
+    { label: 'Κωδικός δημοπρασίας', value: contract.auctionRefNo },
+    { label: 'Τροποποιεί τη σύμβαση', value: contract.previousReferenceNumber },
+    { label: 'Τροποποιείται από τη σύμβαση', value: contract.nextReferenceNumber },
+  ]
+
   return (
     <div className="contract-modal-backdrop" onClick={onClose}>
       <article className="contract-modal" onClick={(e) => e.stopPropagation()}>
@@ -91,52 +130,13 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
         </div>
 
         <div className="contract-modal__grid">
-          <div><span>Ημερομηνία</span><strong>{contract.when}</strong></div>
-          <div><span>Τύπος Διαδικασίας</span><strong>{contract.contractType}</strong></div>
-          <div><span>Κωδ. Αναφοράς</span><strong>{contract.referenceNumber}</strong></div>
-          <div><span>Κωδ. Σύμβασης</span><strong>{contract.contractNumber}</strong></div>
-          <div>
-            <span>CPV</span>
-            <strong>
-              {cpvItems.length > 0 ? (
-                cpvItems.map((item, idx) => (
-                  <span key={`${item.code}-${item.label}-${idx}`} style={{ display: 'block' }}>
-                    {item.label} ({item.code})
-                  </span>
-                ))
-              ) : (
-                fallbackCpv
-              )}
-            </strong>
-          </div>
-          <div><span>Δικαιούχος ΑΦΜ</span><strong>{contract.beneficiaryVat}</strong></div>
-          <div><span>Φορέας ΑΦΜ</span><strong>{contract.organizationVat}</strong></div>
-          <div><span>Κριτήριο Ανάθεσης</span><strong>{contract.assignCriteria}</strong></div>
-          <div><span>Τύπος Σύμβασης</span><strong>{contract.contractKind}</strong></div>
-          <div><span>Υπογράφοντες</span><strong>{contract.signers}</strong></div>
-          <div><span>Υπεύθυνη Μονάδα</span><strong>{contract.unitsOperator}</strong></div>
-          <div><span>Περιγραφή</span><strong>{contract.shortDescription}</strong></div>
-          <div><span>Υπογραφή</span><strong>{contract.signedAt}</strong></div>
-          <div><span>Έναρξη</span><strong>{contract.startDate}</strong></div>
-          <div><span>Λήξη</span><strong>{contract.endDate}</strong></div>
-          <div><span>Ποσό με ΦΠΑ</span><strong>{contract.withVatAmount}</strong></div>
-          <div><span>Προϋπολογισμός</span><strong>{contract.rawBudget}</strong></div>
-          <div><span>Contract Budget</span><strong>{contract.contractBudget}</strong></div>
-          <div><span>Cofund</span><strong>{contract.fundingCofund}</strong></div>
-          <div><span>Self Fund</span><strong>{contract.fundingSelf}</strong></div>
-          <div><span>ESPA</span><strong>{contract.fundingEspa}</strong></div>
-          <div><span>Regular Budget</span><strong>{contract.fundingRegular}</strong></div>
-          <div><span>Auction Ref</span><strong>{contract.auctionRefNo}</strong></div>
-          <div><span>Payment Ref</span><strong>{contract.paymentRefNo}</strong></div>
+          {gridItems.map((item, index) => (
+            <div key={item.label}>
+              <span>{devViewEnabled ? `${index + 1}. ${item.label}` : item.label}</span>
+              <strong>{item.value}</strong>
+            </div>
+          ))}
         </div>
-
-        <footer className="contract-modal__footer">
-          {contract.documentUrl && (
-            <a href={contract.documentUrl} target="_blank" rel="noreferrer">
-              Άνοιγμα εγγράφου στη Διαύγεια
-            </a>
-          )}
-        </footer>
       </article>
     </div>
   )

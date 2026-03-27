@@ -30,6 +30,7 @@ type Props = {
   source: SelectionSource | null
   kind: SelectionKind | null
   label: string
+  municipalityKey?: string | null
   municipalityLatestContracts?: LatestContractCardView[]
   municipalityLatestLoading?: boolean
   regionLatestContracts?: LatestContractCardView[]
@@ -50,15 +51,38 @@ type Props = {
   municipalityFireLoading?: boolean
   cityPoints?: Array<{ lat: number; lon: number; name: string }>
   currentYear: number
-  regionCurrentYearCount?: number | null
-  municipalityCurrentYearCount?: number | null
+  regionSignedCurrentCount?: number | null
+  regionActivePreviousCount?: number | null
+  municipalitySignedCurrentCount?: number | null
+  municipalityActivePreviousCount?: number | null
   onContractOpen?: (id: string) => void
+}
+
+function buildSignedContractsSentence(currentYear: number, count: number, suffix = ''): string {
+  if (count === 0) {
+    return `Το ${currentYear} δεν υπεγράφη καμία σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+  }
+  if (count === 1) {
+    return `Το ${currentYear} υπεγράφη 1 σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+  }
+  return `Το ${currentYear} υπεγράφησαν ${count.toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+}
+
+function buildActivePreviousSentence(count: number, suffix = ''): string {
+  if (count === 0) {
+    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να είναι σε ισχύ το 2026${suffix}.`
+  }
+  if (count === 1) {
+    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που είναι σε ισχύ το 2026${suffix}.`
+  }
+  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που είναι σε ισχύ το 2026${suffix}.`
 }
 
 export default function MapSelectionPanel({
   source,
   kind,
   label,
+  municipalityKey = null,
   municipalityLatestContracts = [],
   municipalityLatestLoading = false,
   regionLatestContracts = [],
@@ -71,8 +95,10 @@ export default function MapSelectionPanel({
   municipalityFireLoading = false,
   cityPoints = [],
   currentYear,
-  regionCurrentYearCount,
-  municipalityCurrentYearCount,
+  regionSignedCurrentCount,
+  regionActivePreviousCount,
+  municipalitySignedCurrentCount,
+  municipalityActivePreviousCount,
   onContractOpen,
 }: Props) {
   const isTouchInput = useMemo(() => {
@@ -370,13 +396,25 @@ export default function MapSelectionPanel({
     !kind
       ? 'Μπορείτε να επιλέξετε δήμο στον χάρτη ή με τα αντίστοιχα φίλτρα.'
       : kind === 'municipality'
-        ? `Το ${currentYear} έχουν δημοσιευθεί ${(municipalityCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών.`
-        : `Το ${currentYear} έχουν δημοσιευθεί ${(regionCurrentYearCount ?? 0).toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών στην επιλεγμένη περιφέρεια.`
+        ? [
+            buildSignedContractsSentence(currentYear, municipalitySignedCurrentCount ?? 0),
+            buildActivePreviousSentence(municipalityActivePreviousCount ?? 0),
+          ].join(' ')
+        : [
+            buildSignedContractsSentence(currentYear, regionSignedCurrentCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
+            buildActivePreviousSentence(regionActivePreviousCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
+          ].join(' ')
 
   return (
     <aside className="maps-selection-panel" data-selection-source={source ?? 'none'}>
       <ComponentTag name="MapSelectionPanel" />
-      <EditorialLead eyebrow="Ανάλυση" title={title} subtitle={subtitle} />
+      <EditorialLead
+        eyebrow="Ανάλυση"
+        title={title}
+        subtitle={subtitle}
+        ctaLabel={kind === 'municipality' && municipalityKey ? 'Δες το προφίλ του δήμου' : undefined}
+        ctaTo={kind === 'municipality' && municipalityKey ? `/municipalities?municipality=${encodeURIComponent(municipalityKey)}` : undefined}
+      />
 
       {kind === 'municipality' && previewGeometry && (
         <div className="maps-selection-panel__shape" aria-label="Πολύγωνο δήμου">

@@ -465,11 +465,13 @@ CREATE INDEX IF NOT EXISTS idx_payment_procurement_id ON public.payment (procure
 CREATE INDEX IF NOT EXISTS idx_payment_beneficiary_vat ON public.payment (beneficiary_vat_number);
 
 CREATE INDEX IF NOT EXISTS idx_procurement_submission_at ON public.procurement (submission_at DESC);
+CREATE INDEX IF NOT EXISTS idx_procurement_contract_signed_date ON public.procurement (contract_signed_date DESC);
 CREATE INDEX IF NOT EXISTS idx_procurement_region_key ON public.procurement (region_key);
 CREATE INDEX IF NOT EXISTS idx_procurement_org_key ON public.procurement (organization_key);
 CREATE INDEX IF NOT EXISTS idx_procurement_municipality_key ON public.procurement (municipality_key);
 CREATE INDEX IF NOT EXISTS idx_procurement_payment_id ON public.procurement (payment_id);
 CREATE INDEX IF NOT EXISTS idx_procurement_diavgeia_ada ON public.procurement (diavgeia_ada);
+CREATE INDEX IF NOT EXISTS idx_procurement_prev_reference_no ON public.procurement (prev_reference_no);
 
 CREATE INDEX IF NOT EXISTS idx_cpv_procurement_id ON public.cpv (procurement_id);
 CREATE INDEX IF NOT EXISTS idx_cpv_key ON public.cpv (cpv_key);

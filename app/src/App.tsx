@@ -6,7 +6,7 @@ import LatestContractCardItem, { type LatestContractCardView } from './component
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
-import { downloadContractDocument } from './lib/contractDocument'
+import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
 import { buildLatestContractCardView, type AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
@@ -40,6 +40,7 @@ type LatestContractCard = LatestContractCardView & ContractModalContract & {
   signers: string
   assignCriteria: string
   contractKind: string
+  awardProcedure: string
   unitsOperator: string
   fundingCofund: string
   fundingSelf: string
@@ -50,6 +51,9 @@ type LatestContractCard = LatestContractCardView & ContractModalContract & {
   shortDescription: string
   rawBudget: string
   contractBudget: string
+  contractRelatedAda: string
+  previousReferenceNumber: string
+  nextReferenceNumber: string
   documentUrl: string | null
 }
 
@@ -120,6 +124,7 @@ type FeaturedRecordsRpcContract = {
   signers: string | null
   assign_criteria: string | null
   contract_type: string | null
+  award_procedure?: string | null
   units_operator: string | null
   funding_details_cofund: string | null
   funding_details_self_fund: string | null
@@ -129,6 +134,9 @@ type FeaturedRecordsRpcContract = {
   payment_ref_no: string | null
   budget: number | string | null
   contract_budget: number | string | null
+  contract_related_ada?: string | null
+  prev_reference_no?: string | null
+  next_ref_no?: string | null
   diavgeia_ada: string | null
 }
 
@@ -289,6 +297,10 @@ function pctColor(value: number | null): string {
   if (value > 0) return '#1f8f4d'
   if (value < 0) return 'var(--accent)'
   return 'var(--ink-faint)'
+}
+
+function logLoadError(context: string, error: unknown) {
+  console.error(`Failed to load ${context}`, error)
 }
 
 function dayFraction(dayOfYear: number, yearDays: number): number {
@@ -548,12 +560,16 @@ export default function App() {
             budget,
             assign_criteria,
             contract_type,
+            award_procedure,
             units_operator,
             funding_details_cofund,
             funding_details_self_fund,
             funding_details_espa,
             funding_details_regular_budget,
             auction_ref_no,
+            contract_related_ada,
+            prev_reference_no,
+            next_ref_no,
             organization_vat_number,
             start_date,
             end_date,
@@ -640,12 +656,16 @@ export default function App() {
             budget: number | null
             assign_criteria: string | null
             contract_type: string | null
+            award_procedure: string | null
             units_operator: string | null
             funding_details_cofund: string | null
             funding_details_self_fund: string | null
             funding_details_espa: string | null
             funding_details_regular_budget: string | null
             auction_ref_no: string | null
+            contract_related_ada: string | null
+            prev_reference_no: string | null
+            next_ref_no: string | null
             organization_vat_number: string | null
             start_date: string | null
             end_date: string | null
@@ -660,6 +680,7 @@ export default function App() {
             c?.label ??
             firstPipePart(r.short_descriptions) ??
             '—'
+          const contractRelatedAda = cleanText(r.contract_related_ada)
           const diavgeiaAda = cleanText(r.diavgeia_ada)
           const orgKey = cleanText(r.organization_key)
           const municipalityKey = cleanText(r.municipality_key)
@@ -680,7 +701,7 @@ export default function App() {
             contractType: cleanText(r.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
             signedAt: formatDateEl(cleanText(r.contract_signed_date)),
-            documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+            documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
           })
 
           return {
@@ -701,6 +722,7 @@ export default function App() {
             signers: cleanText(p?.signers) ?? '—',
             assignCriteria: cleanText(r.assign_criteria) ?? '—',
             contractKind: cleanText(r.contract_type) ?? '—',
+            awardProcedure: cleanText(r.award_procedure) ?? '—',
             unitsOperator: cleanText(r.units_operator) ?? '—',
             fundingCofund: cleanText(r.funding_details_cofund) ?? '—',
             fundingSelf: cleanText(r.funding_details_self_fund) ?? '—',
@@ -711,6 +733,9 @@ export default function App() {
             shortDescription: firstPipePart(r.short_descriptions) ?? '—',
             rawBudget: formatEur(r.budget != null ? Number(r.budget) : null),
             contractBudget: formatEur(r.contract_budget != null ? Number(r.contract_budget) : null),
+            contractRelatedAda: contractRelatedAda ?? '—',
+            previousReferenceNumber: cleanText(r.prev_reference_no) ?? '—',
+            nextReferenceNumber: cleanText(r.next_ref_no) ?? '—',
           }
         })
 
@@ -731,6 +756,11 @@ export default function App() {
         ).slice(0, 15)
 
         setLatestContracts(deduped)
+      } catch (error) {
+        if (!cancelled) {
+          logLoadError('latest contracts', error)
+          setLatestContracts([])
+        }
       } finally {
         if (!cancelled) setLatestContractsLoading(false)
       }
@@ -938,12 +968,16 @@ export default function App() {
             budget,
             assign_criteria,
             contract_type,
+            award_procedure,
             units_operator,
             funding_details_cofund,
             funding_details_self_fund,
             funding_details_espa,
             funding_details_regular_budget,
             auction_ref_no,
+            contract_related_ada,
+            prev_reference_no,
+            next_ref_no,
             organization_vat_number,
             start_date,
             end_date,
@@ -967,12 +1001,16 @@ export default function App() {
           budget: number | null
           assign_criteria: string | null
           contract_type: string | null
+          award_procedure: string | null
           units_operator: string | null
           funding_details_cofund: string | null
           funding_details_self_fund: string | null
           funding_details_espa: string | null
           funding_details_regular_budget: string | null
           auction_ref_no: string | null
+          contract_related_ada: string | null
+          prev_reference_no: string | null
+          next_ref_no: string | null
           organization_vat_number: string | null
           start_date: string | null
           end_date: string | null
@@ -984,6 +1022,7 @@ export default function App() {
           const payment = paymentByProcId.get(p.id)
           const cpvItems = cpvByProcId.get(p.id) ?? []
           const cpv = cpvItems[0] ?? null
+          const contractRelatedAda = cleanText(p.contract_related_ada)
           const contract: LatestContractCard = {
             id: String(p.id),
             who: organizationName,
@@ -1008,6 +1047,7 @@ export default function App() {
             signers: cleanText(payment?.signers) ?? '—',
             assignCriteria: cleanText(p.assign_criteria) ?? '—',
             contractKind: cleanText(p.contract_type) ?? '—',
+            awardProcedure: cleanText(p.award_procedure) ?? '—',
             unitsOperator: cleanText(p.units_operator) ?? '—',
             fundingCofund: cleanText(p.funding_details_cofund) ?? '—',
             fundingSelf: cleanText(p.funding_details_self_fund) ?? '—',
@@ -1018,7 +1058,10 @@ export default function App() {
             shortDescription: firstPipePart(p.short_descriptions) ?? '—',
             rawBudget: formatEur(p.budget != null ? Number(p.budget) : null),
             contractBudget: formatEur(p.contract_budget != null ? Number(p.contract_budget) : null),
-            documentUrl: cleanText(p.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(p.diavgeia_ada)}` : null,
+            contractRelatedAda: contractRelatedAda ?? '—',
+            previousReferenceNumber: cleanText(p.prev_reference_no) ?? '—',
+            nextReferenceNumber: cleanText(p.next_ref_no) ?? '—',
+            documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, cleanText(p.diavgeia_ada)),
           }
           const year = cleanText(p.contract_signed_date)?.slice(0, 4) ?? '—'
           return {
@@ -1073,7 +1116,7 @@ export default function App() {
       try {
         const { data: regionRows } = await supabase
           .from('region')
-          .select('region_key, region_value, region_normalized_value')
+          .select('region_key, region_value, region_normalized_value, region_afm')
           .eq('region_key', config.regionKey)
           .limit(1)
 
@@ -1081,8 +1124,10 @@ export default function App() {
           region_key: string
           region_value: string | null
           region_normalized_value: string | null
+          region_afm: string | null
         } | null
         const regionValue = cleanText(regionRow?.region_value)
+        const regionAfm = cleanText(regionRow?.region_afm)
         const regionName =
           (regionValue
             ? (regionValue.startsWith('Περιφέρεια ') ? regionValue : `Περιφέρεια ${regionValue}`)
@@ -1093,6 +1138,7 @@ export default function App() {
         const baseProcurements: Array<{
           id: number
           organization_key: string | null
+          organization_vat_number: string | null
           contract_signed_date: string | null
           title: string | null
           municipality_key: string | null
@@ -1101,12 +1147,15 @@ export default function App() {
         let from = 0
         while (true) {
           const to = from + pageSize - 1
-          const { data } = await supabase
+          let query = supabase
             .from('procurement')
-            .select('id, organization_key, contract_signed_date, title, municipality_key, canonical_owner_scope')
-            .eq('region_key', config.regionKey)
+            .select('id, organization_key, organization_vat_number, contract_signed_date, title, municipality_key, canonical_owner_scope')
             .order('id', { ascending: true })
             .range(from, to)
+          query = regionAfm
+            ? query.eq('organization_vat_number', regionAfm)
+            : query.eq('region_key', config.regionKey)
+          const { data } = await query
           const rows = (data ?? []) as typeof baseProcurements
           baseProcurements.push(...rows)
           if (rows.length < pageSize) break
@@ -1137,12 +1186,14 @@ export default function App() {
           }
         }
 
-        const procurements = baseProcurements.filter((row) => {
-          const canonicalOwnerScope = cleanText(row.canonical_owner_scope)
-          const orgKey = cleanText(row.organization_key)
-          const orgScope = orgKey ? orgByKey.get(orgKey)?.scope : null
-          return canonicalOwnerScope === 'region' || orgScope === 'region' || orgScope === 'decentralized'
-        })
+        const procurements = regionAfm
+          ? baseProcurements.filter((row) => cleanText(row.organization_vat_number) === regionAfm)
+          : baseProcurements.filter((row) => {
+            const canonicalOwnerScope = cleanText(row.canonical_owner_scope)
+            const orgKey = cleanText(row.organization_key)
+            const orgScope = orgKey ? orgByKey.get(orgKey)?.scope : null
+            return canonicalOwnerScope === 'region' || orgScope === 'region' || orgScope === 'decentralized'
+          })
 
         if (!procurements.length) {
           return {
@@ -1260,18 +1311,15 @@ export default function App() {
 
         const activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }> = []
         const seenWorkPoints = new Set<string>()
-        let worksFrom = 0
-        while (true) {
-          const worksTo = worksFrom + pageSize - 1
+        for (const ids of chunk(procurementIds, 200)) {
           const { data: worksData } = await supabase
             .from('works_enriched')
             .select('lat, lon, work, point_name_canonical')
-            .eq('region_key', config.regionKey)
-            .in('authority_scope', ['region', 'decentralized'])
+            .in('procurement_id', ids)
             .not('lat', 'is', null)
             .not('lon', 'is', null)
             .order('id', { ascending: true })
-            .range(worksFrom, worksTo)
+
           const rows = (worksData ?? []) as Array<{
             lat: number | string | null
             lon: number | string | null
@@ -1289,8 +1337,6 @@ export default function App() {
             seenWorkPoints.add(key)
             activityWorkPoints.push({ lat, lon, work, pointName })
           }
-          if (rows.length < pageSize) break
-          worksFrom += pageSize
         }
 
         const timelineIds = [...procurements]
@@ -1317,12 +1363,16 @@ export default function App() {
           budget: number | null
           assign_criteria: string | null
           contract_type: string | null
+          award_procedure: string | null
           units_operator: string | null
           funding_details_cofund: string | null
           funding_details_self_fund: string | null
           funding_details_espa: string | null
           funding_details_regular_budget: string | null
           auction_ref_no: string | null
+          contract_related_ada: string | null
+          prev_reference_no: string | null
+          next_ref_no: string | null
           organization_vat_number: string | null
           start_date: string | null
           end_date: string | null
@@ -1345,12 +1395,16 @@ export default function App() {
               budget,
               assign_criteria,
               contract_type,
+              award_procedure,
               units_operator,
               funding_details_cofund,
               funding_details_self_fund,
               funding_details_espa,
               funding_details_regular_budget,
               auction_ref_no,
+              contract_related_ada,
+              prev_reference_no,
+              next_ref_no,
               organization_vat_number,
               start_date,
               end_date,
@@ -1370,6 +1424,7 @@ export default function App() {
           const organizationName = cleanText(p.organization_key)
             ? orgByKey.get(cleanText(p.organization_key)!)?.name ?? regionName
             : regionName
+          const contractRelatedAda = cleanText(p.contract_related_ada)
           const contract: LatestContractCard = {
             id: String(p.id),
             who: organizationName,
@@ -1394,6 +1449,7 @@ export default function App() {
             signers: cleanText(payment?.signers) ?? '—',
             assignCriteria: cleanText(p.assign_criteria) ?? '—',
             contractKind: cleanText(p.contract_type) ?? '—',
+            awardProcedure: cleanText(p.award_procedure) ?? '—',
             unitsOperator: cleanText(p.units_operator) ?? '—',
             fundingCofund: cleanText(p.funding_details_cofund) ?? '—',
             fundingSelf: cleanText(p.funding_details_self_fund) ?? '—',
@@ -1404,7 +1460,10 @@ export default function App() {
             shortDescription: firstPipePart(p.short_descriptions) ?? '—',
             rawBudget: formatEur(p.budget != null ? Number(p.budget) : null),
             contractBudget: formatEur(p.contract_budget != null ? Number(p.contract_budget) : null),
-            documentUrl: cleanText(p.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(p.diavgeia_ada)}` : null,
+            contractRelatedAda: contractRelatedAda ?? '—',
+            previousReferenceNumber: cleanText(p.prev_reference_no) ?? '—',
+            nextReferenceNumber: cleanText(p.next_ref_no) ?? '—',
+            documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, cleanText(p.diavgeia_ada)),
           }
           const year = cleanText(p.contract_signed_date)?.slice(0, 4) ?? '—'
           return {
@@ -1452,6 +1511,12 @@ export default function App() {
 
         const nextState = await loadRegionSection(selectedConfig)
         if (!cancelled) setRegionSection(nextState)
+      } catch (error) {
+        if (!cancelled) {
+          logLoadError('homepage region section', error)
+          setHomeRegionConfig(DEFAULT_HOME_REGION_SECTION)
+          setRegionSection(createEmptyOrganizationSectionData(DEFAULT_HOME_REGION_SECTION.fallbackName, currentYear))
+        }
       } finally {
         if (!cancelled) setRegionSectionLoading(false)
       }
@@ -1469,7 +1534,7 @@ export default function App() {
       try {
         const { data, error } = await supabase.rpc('get_featured_beneficiaries', {
           p_year_main: currentYear,
-          p_limit: 50,
+          p_limit: 12,
         })
         if (error) throw error
 
@@ -1489,6 +1554,7 @@ export default function App() {
               const topCpv = cpvItems[0] ?? null
               const amountWithoutVat = toFiniteNumber(contract.amount_without_vat)
               const amountWithVat = toFiniteNumber(contract.amount_with_vat)
+              const contractRelatedAda = cleanText(contract.contract_related_ada)
               const diavgeiaAda = cleanText(contract.diavgeia_ada)
               return {
                 id: String(contract.id),
@@ -1514,6 +1580,7 @@ export default function App() {
                 signers: cleanText(contract.signers) ?? '—',
                 assignCriteria: cleanText(contract.assign_criteria) ?? '—',
                 contractKind: cleanText(contract.contract_type) ?? '—',
+                awardProcedure: cleanText(contract.award_procedure) ?? '—',
                 unitsOperator: cleanText(contract.units_operator) ?? '—',
                 fundingCofund: cleanText(contract.funding_details_cofund) ?? '—',
                 fundingSelf: cleanText(contract.funding_details_self_fund) ?? '—',
@@ -1524,7 +1591,10 @@ export default function App() {
                 shortDescription: cleanText(contract.short_description) ?? '—',
                 rawBudget: formatEur(toFiniteNumber(contract.budget)),
                 contractBudget: formatEur(toFiniteNumber(contract.contract_budget)),
-                documentUrl: diavgeiaAda ? `https://diavgeia.gov.gr/doc/${diavgeiaAda}` : null,
+                contractRelatedAda: contractRelatedAda ?? '—',
+                previousReferenceNumber: cleanText(contract.prev_reference_no) ?? '—',
+                nextReferenceNumber: cleanText(contract.next_ref_no) ?? '—',
+                documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
               }
             })
             : []
@@ -1545,6 +1615,11 @@ export default function App() {
         })
 
         if (!cancelled) setFeaturedBeneficiaries(rows)
+      } catch (error) {
+        if (!cancelled) {
+          logLoadError('featured beneficiaries', error)
+          setFeaturedBeneficiaries([])
+        }
       } finally {
         if (!cancelled) setFeaturedBeneficiariesLoading(false)
       }

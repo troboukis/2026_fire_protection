@@ -602,29 +602,7 @@ LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
 AS $$
-WITH cpv_dedup AS (
-  SELECT DISTINCT
-    c.procurement_id,
-    NULLIF(TRIM(c.cpv_key), '') AS cpv_key,
-    NULLIF(TRIM(c.cpv_value), '') AS cpv_value
-  FROM public.cpv c
-  WHERE NULLIF(TRIM(c.cpv_key), '') IS NOT NULL
-     OR NULLIF(TRIM(c.cpv_value), '') IS NOT NULL
-),
-cpv_agg AS (
-  SELECT
-    cd.procurement_id,
-    jsonb_agg(
-      jsonb_build_object(
-        'code', COALESCE(cd.cpv_key, '—'),
-        'label', COALESCE(cd.cpv_value, '—')
-      )
-      ORDER BY COALESCE(cd.cpv_value, ''), COALESCE(cd.cpv_key, '')
-    ) AS cpv_items
-  FROM cpv_dedup cd
-  GROUP BY cd.procurement_id
-),
-proc_ranked AS (
+WITH proc_ranked AS (
   SELECT
     p.id AS procurement_id,
     p.organization_key,
@@ -639,17 +617,21 @@ proc_ranked AS (
     p.budget,
     p.assign_criteria,
     p.contract_type,
+    p.award_procedure,
     p.units_operator,
     p.funding_details_cofund,
     p.funding_details_self_fund,
     p.funding_details_espa,
     p.funding_details_regular_budget,
     p.auction_ref_no,
+    p.prev_reference_no,
+    p.next_ref_no,
+    p.contract_related_ada,
     p.organization_vat_number,
     p.start_date,
     p.end_date,
     p.diavgeia_ada,
-    py.amount_without_vat,
+    COALESCE(py.amount_without_vat, 0) AS amount_without_vat,
     py.amount_with_vat,
     py.beneficiary_vat_number,
     COALESCE(
@@ -673,14 +655,19 @@ proc_ranked AS (
   LEFT JOIN public.beneficiary b
     ON b.beneficiary_vat_number = py.beneficiary_vat_number
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+    )
     AND p.contract_signed_date BETWEEN make_date(p_year_main, 1, 1) AND make_date(p_year_main, 12, 31)
     AND NULLIF(TRIM(py.beneficiary_vat_number), '') IS NOT NULL
 ),
-base AS (
+dedup_base AS (
   SELECT
     pr.procurement_id,
     pr.organization_key,
-    COALESCE(org.organization_normalized_value, org.organization_value, pr.organization_key, '—') AS organization_value,
     pr.title,
     pr.submission_at,
     pr.contract_signed_date,
@@ -692,34 +679,171 @@ base AS (
     pr.budget,
     pr.assign_criteria,
     pr.contract_type,
+    pr.award_procedure,
     pr.units_operator,
     pr.funding_details_cofund,
     pr.funding_details_self_fund,
     pr.funding_details_espa,
     pr.funding_details_regular_budget,
     pr.auction_ref_no,
+    pr.prev_reference_no,
+    pr.next_ref_no,
+    pr.contract_related_ada,
     pr.organization_vat_number,
     pr.start_date,
     pr.end_date,
     pr.diavgeia_ada,
-    COALESCE(pr.amount_without_vat, 0) AS amount_without_vat,
+    pr.amount_without_vat,
     pr.amount_with_vat,
     pr.beneficiary_vat_number,
     COALESCE(pr.beneficiary_name, pr.beneficiary_vat_number) AS beneficiary_name,
     COALESCE(NULLIF(TRIM(pr.signers), ''), '—') AS signers,
-    pr.payment_ref_no,
-    COALESCE(ca.cpv_items, '[]'::jsonb) AS cpv_items
+    pr.payment_ref_no
   FROM proc_ranked pr
-  LEFT JOIN LATERAL (
-    SELECT o.organization_normalized_value, o.organization_value
-    FROM public.organization o
-    WHERE o.organization_key = pr.organization_key
-    ORDER BY o.id
-    LIMIT 1
-  ) org ON TRUE
-  LEFT JOIN cpv_agg ca
-    ON ca.procurement_id = pr.procurement_id
   WHERE pr.rn = 1
+),
+beneficiary_totals AS (
+  SELECT
+    b.beneficiary_vat_number,
+    SUM(b.amount_without_vat) AS total_amount,
+    COUNT(*)::integer AS contract_count,
+    MIN(b.start_date) AS start_date,
+    MAX(b.end_date) AS end_date
+  FROM dedup_base b
+  GROUP BY b.beneficiary_vat_number
+),
+top_beneficiaries AS (
+  SELECT
+    bt.beneficiary_vat_number,
+    bt.total_amount,
+    bt.contract_count,
+    bt.start_date,
+    bt.end_date
+  FROM beneficiary_totals bt
+  ORDER BY bt.total_amount DESC, bt.contract_count DESC, bt.beneficiary_vat_number
+  LIMIT GREATEST(COALESCE(p_limit, 50), 1)
+),
+base AS (
+  SELECT
+    db.procurement_id,
+    db.organization_key,
+    db.title,
+    db.submission_at,
+    db.contract_signed_date,
+    db.short_descriptions,
+    db.procedure_type_value,
+    db.reference_number,
+    db.contract_number,
+    db.contract_budget,
+    db.budget,
+    db.assign_criteria,
+    db.contract_type,
+    db.award_procedure,
+    db.units_operator,
+    db.funding_details_cofund,
+    db.funding_details_self_fund,
+    db.funding_details_espa,
+    db.funding_details_regular_budget,
+    db.auction_ref_no,
+    db.prev_reference_no,
+    db.next_ref_no,
+    db.contract_related_ada,
+    db.organization_vat_number,
+    db.start_date,
+    db.end_date,
+    db.diavgeia_ada,
+    db.amount_without_vat,
+    db.amount_with_vat,
+    db.beneficiary_vat_number,
+    db.beneficiary_name,
+    db.signers,
+    db.payment_ref_no
+  FROM dedup_base db
+  JOIN top_beneficiaries tb
+    ON tb.beneficiary_vat_number = db.beneficiary_vat_number
+),
+org_lookup AS (
+  SELECT DISTINCT ON (o.organization_key)
+    o.organization_key,
+    COALESCE(o.organization_normalized_value, o.organization_value, o.organization_key, '—') AS organization_value
+  FROM public.organization o
+  JOIN (
+    SELECT DISTINCT b.organization_key
+    FROM base b
+    WHERE NULLIF(TRIM(b.organization_key), '') IS NOT NULL
+  ) bo
+    ON bo.organization_key = o.organization_key
+  ORDER BY o.organization_key, o.id
+),
+cpv_dedup AS (
+  SELECT DISTINCT
+    c.procurement_id,
+    NULLIF(TRIM(c.cpv_key), '') AS cpv_key,
+    NULLIF(TRIM(c.cpv_value), '') AS cpv_value
+  FROM public.cpv c
+  JOIN (
+    SELECT DISTINCT b.procurement_id
+    FROM base b
+  ) bp
+    ON bp.procurement_id = c.procurement_id
+  WHERE NULLIF(TRIM(c.cpv_key), '') IS NOT NULL
+     OR NULLIF(TRIM(c.cpv_value), '') IS NOT NULL
+),
+cpv_agg AS (
+  SELECT
+    cd.procurement_id,
+    jsonb_agg(
+      jsonb_build_object(
+        'code', COALESCE(cd.cpv_key, '—'),
+        'label', COALESCE(cd.cpv_value, '—')
+      )
+      ORDER BY COALESCE(cd.cpv_value, ''), COALESCE(cd.cpv_key, '')
+    ) AS cpv_items
+  FROM cpv_dedup cd
+  GROUP BY cd.procurement_id
+),
+base_enriched AS (
+  SELECT
+    b.procurement_id,
+    b.organization_key,
+    COALESCE(ol.organization_value, b.organization_key, '—') AS organization_value,
+    b.title,
+    b.submission_at,
+    b.contract_signed_date,
+    b.short_descriptions,
+    b.procedure_type_value,
+    b.reference_number,
+    b.contract_number,
+    b.contract_budget,
+    b.budget,
+    b.assign_criteria,
+    b.contract_type,
+    b.award_procedure,
+    b.units_operator,
+    b.funding_details_cofund,
+    b.funding_details_self_fund,
+    b.funding_details_espa,
+    b.funding_details_regular_budget,
+    b.auction_ref_no,
+    b.prev_reference_no,
+    b.next_ref_no,
+    b.contract_related_ada,
+    b.organization_vat_number,
+    b.start_date,
+    b.end_date,
+    b.diavgeia_ada,
+    b.amount_without_vat,
+    b.amount_with_vat,
+    b.beneficiary_vat_number,
+    b.beneficiary_name,
+    b.signers,
+    b.payment_ref_no,
+    COALESCE(ca.cpv_items, '[]'::jsonb) AS cpv_items
+  FROM base b
+  LEFT JOIN org_lookup ol
+    ON ol.organization_key = b.organization_key
+  LEFT JOIN cpv_agg ca
+    ON ca.procurement_id = b.procurement_id
 ),
 beneficiary_name_latest AS (
   SELECT
@@ -729,7 +853,7 @@ beneficiary_name_latest AS (
       PARTITION BY b.beneficiary_vat_number
       ORDER BY b.contract_signed_date DESC NULLS LAST, b.procurement_id DESC, b.beneficiary_name
     ) AS rn
-  FROM base b
+  FROM base_enriched b
 ),
 beneficiary_name_ranked AS (
   SELECT
@@ -743,7 +867,7 @@ beneficiary_org_totals AS (
     b.beneficiary_vat_number,
     b.organization_value,
     SUM(b.amount_without_vat) AS total_amount
-  FROM base b
+  FROM base_enriched b
   GROUP BY b.beneficiary_vat_number, b.organization_value
 ),
 beneficiary_org_ranked AS (
@@ -761,7 +885,7 @@ beneficiary_signer_counts AS (
     b.beneficiary_vat_number,
     b.signers,
     COUNT(*) AS signer_count
-  FROM base b
+  FROM base_enriched b
   WHERE NULLIF(TRIM(b.signers), '') IS NOT NULL
   GROUP BY b.beneficiary_vat_number, b.signers
 ),
@@ -780,7 +904,7 @@ beneficiary_cpv_counts AS (
     b.beneficiary_vat_number,
     cpv_item ->> 'label' AS cpv_label,
     COUNT(*) AS cpv_count
-  FROM base b
+  FROM base_enriched b
   CROSS JOIN LATERAL jsonb_array_elements(b.cpv_items) cpv_item
   WHERE NULLIF(TRIM(cpv_item ->> 'label'), '') IS NOT NULL
   GROUP BY b.beneficiary_vat_number, cpv_item ->> 'label'
@@ -794,16 +918,6 @@ beneficiary_cpv_ranked AS (
       ORDER BY bcc.cpv_count DESC, bcc.cpv_label
     ) AS rn
   FROM beneficiary_cpv_counts bcc
-),
-beneficiary_totals AS (
-  SELECT
-    b.beneficiary_vat_number,
-    SUM(b.amount_without_vat) AS total_amount,
-    COUNT(*)::integer AS contract_count,
-    MIN(b.start_date) AS start_date,
-    MAX(b.end_date) AS end_date
-  FROM base b
-  GROUP BY b.beneficiary_vat_number
 ),
 relevant_ranked AS (
   SELECT
@@ -830,12 +944,16 @@ relevant_ranked AS (
       'signers', b.signers,
       'assign_criteria', b.assign_criteria,
       'contract_type', b.contract_type,
+      'award_procedure', b.award_procedure,
       'units_operator', b.units_operator,
       'funding_details_cofund', b.funding_details_cofund,
       'funding_details_self_fund', b.funding_details_self_fund,
       'funding_details_espa', b.funding_details_espa,
       'funding_details_regular_budget', b.funding_details_regular_budget,
       'auction_ref_no', b.auction_ref_no,
+      'prev_reference_no', b.prev_reference_no,
+      'next_ref_no', b.next_ref_no,
+      'contract_related_ada', b.contract_related_ada,
       'payment_ref_no', b.payment_ref_no,
       'budget', b.budget,
       'contract_budget', b.contract_budget,
@@ -845,7 +963,7 @@ relevant_ranked AS (
       PARTITION BY b.beneficiary_vat_number
       ORDER BY b.amount_without_vat DESC, b.contract_signed_date DESC NULLS LAST, b.procurement_id DESC
     ) AS rn
-  FROM base b
+  FROM base_enriched b
 ),
 relevant_agg AS (
   SELECT
@@ -856,43 +974,42 @@ relevant_agg AS (
   GROUP BY rr.beneficiary_vat_number
 )
 SELECT
-  bt.beneficiary_vat_number,
-  COALESCE(bnr.beneficiary_name, bt.beneficiary_vat_number) AS beneficiary_name,
+  tb.beneficiary_vat_number,
+  COALESCE(bnr.beneficiary_name, tb.beneficiary_vat_number) AS beneficiary_name,
   COALESCE(bor.organization_value, '—') AS organization,
-  bt.total_amount,
-  bt.contract_count,
+  tb.total_amount,
+  tb.contract_count,
   COALESCE(bcr.cpv_label, '—') AS cpv,
-  bt.start_date,
-  bt.end_date,
+  tb.start_date,
+  tb.end_date,
   CASE
-    WHEN bt.start_date IS NULL OR bt.end_date IS NULL OR bt.end_date < bt.start_date THEN NULL
-    ELSE (bt.end_date - bt.start_date + 1)
+    WHEN tb.start_date IS NULL OR tb.end_date IS NULL OR tb.end_date < tb.start_date THEN NULL
+    ELSE (tb.end_date - tb.start_date + 1)
   END::integer AS duration_days,
   CASE
-    WHEN bt.start_date IS NULL OR bt.end_date IS NULL OR bt.end_date <= bt.start_date THEN NULL
-    WHEN CURRENT_DATE <= bt.start_date THEN 0
-    WHEN CURRENT_DATE >= bt.end_date THEN 100
-    ELSE ROUND((((CURRENT_DATE - bt.start_date)::numeric / NULLIF((bt.end_date - bt.start_date)::numeric, 0)) * 100)::numeric, 2)
+    WHEN tb.start_date IS NULL OR tb.end_date IS NULL OR tb.end_date <= tb.start_date THEN NULL
+    WHEN CURRENT_DATE <= tb.start_date THEN 0
+    WHEN CURRENT_DATE >= tb.end_date THEN 100
+    ELSE ROUND((((CURRENT_DATE - tb.start_date)::numeric / NULLIF((tb.end_date - tb.start_date)::numeric, 0)) * 100)::numeric, 2)
   END AS progress_pct,
   COALESCE(bsr.signers, '—') AS signer,
   COALESCE(ra.relevant_contracts, '[]'::jsonb) AS relevant_contracts
-FROM beneficiary_totals bt
+FROM top_beneficiaries tb
 LEFT JOIN beneficiary_name_ranked bnr
-  ON bnr.beneficiary_vat_number = bt.beneficiary_vat_number
+  ON bnr.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bnr.rn = 1
 LEFT JOIN beneficiary_org_ranked bor
-  ON bor.beneficiary_vat_number = bt.beneficiary_vat_number
+  ON bor.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bor.rn = 1
 LEFT JOIN beneficiary_signer_ranked bsr
-  ON bsr.beneficiary_vat_number = bt.beneficiary_vat_number
+  ON bsr.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bsr.rn = 1
 LEFT JOIN beneficiary_cpv_ranked bcr
-  ON bcr.beneficiary_vat_number = bt.beneficiary_vat_number
+  ON bcr.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bcr.rn = 1
 LEFT JOIN relevant_agg ra
-  ON ra.beneficiary_vat_number = bt.beneficiary_vat_number
-ORDER BY bt.total_amount DESC, bt.contract_count DESC, bt.beneficiary_vat_number
-LIMIT GREATEST(COALESCE(p_limit, 50), 1);
+  ON ra.beneficiary_vat_number = tb.beneficiary_vat_number
+ORDER BY tb.total_amount DESC, tb.contract_count DESC, tb.beneficiary_vat_number;
 $$;
 
 GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer) TO anon, authenticated, service_role;
