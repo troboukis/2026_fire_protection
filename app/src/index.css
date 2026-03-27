@@ -2947,6 +2947,18 @@ main {
   width: 100%;
   height: auto;
   display: block;
+  isolation: isolate;
+}
+
+.maps-selection-panel__terrain {
+  opacity: 0.9;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+}
+
+.maps-selection-panel__terrain-tile {
+  image-rendering: auto;
+  filter: saturate(0) contrast(1.18) brightness(0.9);
 }
 
 .maps-selection-panel__shape-meta {

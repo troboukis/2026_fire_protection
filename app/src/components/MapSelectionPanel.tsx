@@ -1,9 +1,10 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useId, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import EditorialLead from './EditorialLead'
 import LatestContractCard, { type LatestContractCardView } from './LatestContractCard'
+import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
 import type { GeoFeature } from '../types'
 
 export type SelectionSource = 'dropdown' | 'map' | 'search'
@@ -25,6 +26,12 @@ function shouldUseHeartMarker(name: string): boolean {
 
 const PREVIEW_WIDTH = 520
 const PREVIEW_HEIGHT = 320
+
+function cleanText(value: unknown): string | null {
+  if (value == null) return null
+  const text = String(value).trim()
+  return text ? text : null
+}
 
 type Props = {
   source: SelectionSource | null
@@ -101,6 +108,8 @@ export default function MapSelectionPanel({
   municipalityActivePreviousCount,
   onContractOpen,
 }: Props) {
+  const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
+  const mapClipPathId = useId().replace(/:/g, '-')
   const isTouchInput = useMemo(() => {
     if (typeof window === 'undefined') return false
     return window.matchMedia('(hover: none), (pointer: coarse)').matches
@@ -194,6 +203,17 @@ export default function MapSelectionPanel({
     }
     return out
   }, [previewGeometry, municipalityFirePoints])
+
+  const previewHillshadeTiles = useMemo(() => {
+    if (!previewGeometry || !municipalityFeature) return []
+    return buildHillshadeTileOverlays(
+      municipalityFeature as unknown as d3.GeoPermissibleObjects,
+      previewGeometry.projection,
+      PREVIEW_WIDTH,
+      PREVIEW_HEIGHT,
+      mapTilerApiKey,
+    )
+  }, [mapTilerApiKey, municipalityFeature, previewGeometry])
 
   const { projectedCurrentFireShapes, projectedPreviousFireShapes } = useMemo(() => ({
     projectedCurrentFireShapes: projectedFireShapes.filter((p) => p.period === 'current'),
@@ -443,7 +463,41 @@ export default function MapSelectionPanel({
             </div>
           )}
           <svg viewBox="0 0 520 320" role="img" aria-label={`Polygon ${label}`}>
-            <path d={previewGeometry.path ?? ''} fill="#1a3a5c" fillOpacity="0.92" stroke="#0f2237" strokeWidth="1.3" />
+            <defs>
+              <clipPath id={mapClipPathId}>
+                <path d={previewGeometry.path ?? ''} />
+              </clipPath>
+            </defs>
+            <path
+              d={previewGeometry.path ?? ''}
+              fill="#1a3a5c"
+              fillOpacity="0.92"
+              stroke="#0f2237"
+              strokeWidth="1.3"
+            />
+            {previewHillshadeTiles.length > 0 && (
+              <g clipPath={`url(#${mapClipPathId})`} className="maps-selection-panel__terrain">
+                {previewHillshadeTiles.map((tile) => (
+                  <image
+                    key={tile.key}
+                    href={tile.href}
+                    x={tile.x}
+                    y={tile.y}
+                    width={tile.width}
+                    height={tile.height}
+                    preserveAspectRatio="none"
+                    className="maps-selection-panel__terrain-tile"
+                  />
+                ))}
+              </g>
+            )}
+            <path
+              d={previewGeometry.path ?? ''}
+              fill="none"
+              stroke="#0f2237"
+              strokeWidth="1.3"
+              vectorEffect="non-scaling-stroke"
+            />
             {fireViewMode === 'shapes'
               ? (
                 <>
@@ -680,10 +734,26 @@ export default function MapSelectionPanel({
                     )}
                     {' · '}
                     <span className="maps-selection-panel__shape-source">Πηγή: Copernicus</span>
+                    {previewHillshadeTiles.length > 0 && (
+                      <>
+                        {' · '}
+                        <span className="maps-selection-panel__shape-source">Ανάγλυφο εδάφους: MapTiler hillshade</span>
+                      </>
+                    )}
                     {` · ${uniqueFireLocations.toLocaleString('el-GR')} σημεία`}
                   </>
                 )
-                : 'Δεν βρέθηκαν δασικές πυρκαγιές'}
+                : (
+                  <>
+                    Δεν βρέθηκαν δασικές πυρκαγιές
+                    {previewHillshadeTiles.length > 0 && (
+                      <>
+                        {' · '}
+                        <span className="maps-selection-panel__shape-source">Ανάγλυφο εδάφους: MapTiler hillshade</span>
+                      </>
+                    )}
+                  </>
+                )}
             {!municipalityWorkLoading && projectedMunicipalityWorkDots.length > 0 && (
               <>
                 {' · '}
