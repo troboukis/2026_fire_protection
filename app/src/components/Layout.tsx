@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
-import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DevViewToggle from './DevViewToggle'
 
@@ -19,43 +17,9 @@ function formatDateTimeEl(iso: string): string {
 }
 
 export default function Layout() {
-  const buildTimeLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
-  const [lastDbUpdateLabel, setLastDbUpdateLabel] = useState(buildTimeLabel)
+  const lastUpdateLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
   const location = useLocation()
   const navigate = useNavigate()
-
-  useEffect(() => {
-    let cancelled = false
-
-    const loadLastDbUpdate = async () => {
-      // Keep this probe restricted to tables that are known to expose stable updated_at reads
-      // through the public REST API. Some large tables currently return 500 here, and the
-      // header should degrade gracefully instead of emitting failing requests on every load.
-      const tables = ['procurement', 'payment']
-      const results = await Promise.all(
-        tables.map(async (table) => {
-          const { data, error } = await supabase
-            .from(table)
-            .select('updated_at')
-            .order('updated_at', { ascending: false })
-            .limit(1)
-          if (error) return null
-          const row = (data?.[0] ?? null) as { updated_at?: string | null } | null
-          const v = row?.updated_at ?? null
-          if (!v) return null
-          const s = String(v).trim()
-          return s && s.toLowerCase() !== 'nan' && s.toLowerCase() !== 'none' ? s : null
-        }),
-      )
-      const latestIso = results
-        .filter((v): v is string => Boolean(v))
-        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0]
-      if (!cancelled && latestIso) setLastDbUpdateLabel(formatDateTimeEl(latestIso))
-    }
-
-    loadLastDbUpdate()
-    return () => { cancelled = true }
-  }, [])
 
   const handleAbout = () => {
     if (location.pathname === '/') {
@@ -78,7 +42,7 @@ export default function Layout() {
             <NavLink to="/" className="brand-home-link">
               <h1>FireWatch <span className="beta-badge">BETA</span></h1>
             </NavLink>
-            <span className="brand-mark">Τελευταία ενημέρωση / {lastDbUpdateLabel}</span>
+            <span className="brand-mark">Τελευταία ενημέρωση / {lastUpdateLabel}</span>
           </div>
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
