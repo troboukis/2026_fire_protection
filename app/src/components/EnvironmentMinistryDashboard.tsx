@@ -574,32 +574,41 @@ function EnvironmentWorksMap({
         )}
         <g className="environment-map__points">
           {mapData.points.map((point) => (
-            <circle
-              key={point.id}
-              cx={point.x}
-              cy={point.y}
-              r={isCompactViewport ? 4.4 : 3.2}
-              onMouseEnter={(event) => {
-                if (isCoarsePointer) return
-                updatePointTooltip(event, point)
-              }}
-              onMouseMove={(event) => {
-                if (isCoarsePointer) return
-                updatePointTooltip(event, point)
-              }}
-              onMouseLeave={() => {
-                if (isCoarsePointer) return
-                setTooltip(null)
-              }}
-              onClick={(event) => {
-                event.stopPropagation()
-                if (isCoarsePointer) {
-                  togglePointTooltip(event, point)
-                  return
-                }
-                onOpenContract(point.procurementId)
-              }}
-            />
+            <g key={point.id}>
+              <circle
+                className="environment-map__point-hitbox"
+                cx={point.x}
+                cy={point.y}
+                r={isCoarsePointer ? 13 : 8}
+                fill="transparent"
+                onMouseEnter={(event) => {
+                  if (isCoarsePointer) return
+                  updatePointTooltip(event, point)
+                }}
+                onMouseMove={(event) => {
+                  if (isCoarsePointer) return
+                  updatePointTooltip(event, point)
+                }}
+                onMouseLeave={() => {
+                  if (isCoarsePointer) return
+                  setTooltip(null)
+                }}
+                onClick={(event) => {
+                  event.stopPropagation()
+                  if (isCoarsePointer) {
+                    togglePointTooltip(event, point)
+                    return
+                  }
+                  onOpenContract(point.procurementId)
+                }}
+              />
+              <circle
+                className="environment-map__point-dot"
+                cx={point.x}
+                cy={point.y}
+                r={isCompactViewport ? 4.4 : 3.2}
+              />
+            </g>
           ))}
         </g>
       </svg>

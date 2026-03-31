@@ -5361,6 +5361,14 @@ main {
   filter: saturate(0) contrast(1.08) brightness(0.92);
 }
 
+.municipality-profile-hero__point-hitbox {
+  cursor: pointer;
+}
+
+.municipality-profile-hero__point-dot {
+  pointer-events: none;
+}
+
 .municipality-profile-hero__point-tooltip {
   position: absolute;
   z-index: 3;
@@ -6162,10 +6170,22 @@ main {
   filter: sepia(0.42) hue-rotate(34deg) saturate(1.35) brightness(0.96) contrast(1.02);
 }
 
-.environment-map__points circle {
+.environment-map__point-dot {
   fill: rgba(232, 196, 62, 0.92);
   stroke: rgba(122, 94, 10, 0.94);
   stroke-width: 0.8px;
+  pointer-events: none;
+}
+
+.environment-map__point-hitbox {
+  cursor: pointer;
+}
+
+.environment-map__point-hitbox:focus-visible {
+  outline: none;
+}
+
+.environment-map__points circle {
   cursor: pointer;
 }
 
@@ -6434,6 +6454,22 @@ main {
   .environment-flow__meta {
     justify-items: start;
     text-align: left;
+  }
+
+  .environment-active-contracts-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .environment-active-contracts {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .environment-active-contracts .wire-item {
+    min-width: min(88vw, 28rem);
+    max-width: min(88vw, 28rem);
+    width: auto;
   }
 
   .environment-contracts .wire-item {
