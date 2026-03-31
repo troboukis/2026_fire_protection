@@ -1931,7 +1931,7 @@ main {
 .about-stats {
   display: grid;
   gap: 1px;
-  background: var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, var(--line) 10%);
   border: 1px solid var(--line);
   align-content: start;
 }

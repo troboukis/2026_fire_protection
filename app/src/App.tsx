@@ -1975,9 +1975,9 @@ export default function App() {
             <div className="eyebrow">Σχετικά με το FireWatch</div>
             <h2>Παρατηρητήριο για την πυροπροστασία</h2>
             <p>
-              Ανεξάρτητη δημοσιογραφική πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
+              Ανεξάρτητη πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη και αντιμετώπιση δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
             </p>
-            <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη και παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
+            <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη ή παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
           </div>
           <div className="about-panel__right">
             <figure className="about-cover-figure">
@@ -1994,20 +1994,17 @@ export default function App() {
               </div>
               <div>
                 <span className="label">ΠΩΣ</span>
-                <strong>Με Claude, Codex και Python φυσικά.</strong>
+                <strong>Διαβάστε το σκεπτικό συλλογής και επεξεργασίας των δεδομένων καθώς και τον κώδικα ανάπτυξής της εφαρμογής</strong>
                 <span className="about-stats__sub">
                   <a href="https://github.com/troboukis/2026_fire_protection/blob/main/Methodology.md" target="_blank" rel="noreferrer">
                     Μεθοδολογία
                   </a>
                 </span>
-              </div>
-              <div>
-                <span className="label">Open Source</span>
-                <strong>
+                <span className="about-stats__sub">
                   <a href="https://github.com/troboukis/2026_fire_protection" target="_blank" rel="noreferrer">
-                    Το github repository
+                    Github repository
                   </a>
-                </strong>
+                </span>
               </div>
               <div>
                 <span className="label">ΓΙΑΤΙ</span>
