@@ -2874,6 +2874,10 @@ export default function MunicipalitiesPage() {
                   <div
                     ref={municipalityMapFrameRef}
                     className="municipality-profile-hero__map-frame"
+                    onClick={() => {
+                      if (!isMobileMunicipalityMap) return
+                      setPointTooltip(null)
+                    }}
                   >
                     {selectedMunicipalityMap ? (
                       <svg
@@ -2924,6 +2928,51 @@ export default function MunicipalitiesPage() {
 	                          {selectedMunicipalityCityPoints.map((city) => (
 	                            <g key={city.key}>
                               <circle
+                                className="municipality-profile-hero__point-hitbox"
+                                cx={city.x}
+                                cy={city.y}
+                                r={isMobileMunicipalityMap ? 12 : 7}
+                                fill="transparent"
+                                onMouseEnter={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, city.name, [
+                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
+                                    city.capital ? `Τύπος: ${city.capital}` : null,
+                                  ], {
+                                    id: city.key,
+                                    fallback: { x: city.x, y: city.y },
+                                  })
+                                }}
+                                onMouseMove={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, city.name, [
+                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
+                                    city.capital ? `Τύπος: ${city.capital}` : null,
+                                  ], {
+                                    id: city.key,
+                                    fallback: { x: city.x, y: city.y },
+                                  })
+                                }}
+                                onMouseLeave={() => {
+                                  if (isMobileMunicipalityMap) return
+                                  clearPointTooltip()
+                                }}
+                                onClick={(event) => {
+                                  event.stopPropagation()
+                                  togglePointTooltip(
+                                    event,
+                                    city.name,
+                                    [
+                                      city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
+                                      city.capital ? `Τύπος: ${city.capital}` : null,
+                                    ],
+                                    city.key,
+                                    { x: city.x, y: city.y },
+                                  )
+                                }}
+                              />
+                              <circle
+                                className="municipality-profile-hero__point-dot"
                                 cx={city.x}
                                 cy={city.y}
                                 r="2.8"
@@ -2931,19 +2980,7 @@ export default function MunicipalitiesPage() {
                                 stroke="rgba(255, 252, 248, 0.82)"
                                 strokeWidth="0.55"
                                 vectorEffect="non-scaling-stroke"
-                                onMouseEnter={(event) => {
-                                  updatePointTooltip(event, city.name, [
-                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    city.capital ? `Τύπος: ${city.capital}` : null,
-                                  ])
-                                }}
-                                onMouseMove={(event) => {
-                                  updatePointTooltip(event, city.name, [
-                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    city.capital ? `Τύπος: ${city.capital}` : null,
-                                  ])
-                                }}
-                                onMouseLeave={clearPointTooltip}
+                                pointerEvents="none"
                               >
                                 <title>
                                   {[
@@ -2960,9 +2997,10 @@ export default function MunicipalitiesPage() {
                           {municipalityWorkMarkers.map((work) => (
                             <g key={work.key}>
                               <circle
+                                className="municipality-profile-hero__point-hitbox"
                                 cx={work.x}
                                 cy={work.y}
-                                r="10"
+                                r={isMobileMunicipalityMap ? 13 : 10}
                                 fill="rgba(0, 0, 0, 0.001)"
                                 onMouseEnter={(event) => {
                                   if (isMobileMunicipalityMap) return
@@ -2993,6 +3031,7 @@ export default function MunicipalitiesPage() {
                                 }}
                               />
                               <circle
+                                className="municipality-profile-hero__point-dot"
                                 cx={work.x}
                                 cy={work.y}
                                 r="4.1"
@@ -3020,6 +3059,57 @@ export default function MunicipalitiesPage() {
                           {forestFireMarkers.map((fire) => (
                             <g key={fire.key}>
                               <circle
+                                className="municipality-profile-hero__point-hitbox"
+                                cx={fire.x}
+                                cy={fire.y}
+                                r={Math.max(fire.radius + (isMobileMunicipalityMap ? 7 : 5), isMobileMunicipalityMap ? 13 : 9)}
+                                fill="transparent"
+                                onMouseEnter={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
+                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
+                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
+                                    fire.year != null ? `Έτος: ${fire.year}` : null,
+                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                  ], {
+                                    id: fire.key,
+                                    fallback: { x: fire.x, y: fire.y },
+                                  })
+                                }}
+                                onMouseMove={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
+                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
+                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
+                                    fire.year != null ? `Έτος: ${fire.year}` : null,
+                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                  ], {
+                                    id: fire.key,
+                                    fallback: { x: fire.x, y: fire.y },
+                                  })
+                                }}
+                                onMouseLeave={() => {
+                                  if (isMobileMunicipalityMap) return
+                                  clearPointTooltip()
+                                }}
+                                onClick={(event) => {
+                                  event.stopPropagation()
+                                  togglePointTooltip(
+                                    event,
+                                    'Δασική πυρκαγιά',
+                                    [
+                                      fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
+                                      fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
+                                      fire.year != null ? `Έτος: ${fire.year}` : null,
+                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                    ],
+                                    fire.key,
+                                    { x: fire.x, y: fire.y },
+                                  )
+                                }}
+                              />
+                              <circle
+                                className="municipality-profile-hero__point-dot"
                                 cx={fire.x}
                                 cy={fire.y}
                                 r={fire.radius}
@@ -3028,23 +3118,7 @@ export default function MunicipalitiesPage() {
                                 strokeWidth="0.75"
                                 vectorEffect="non-scaling-stroke"
                                 style={{ filter: 'drop-shadow(0 1px 0 rgba(17, 17, 17, 0.18))' }}
-                                onMouseEnter={(event) => {
-                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
-                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
-                                  ])
-                                }}
-                                onMouseMove={(event) => {
-                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
-                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
-                                  ])
-                                }}
-                                onMouseLeave={clearPointTooltip}
+                                pointerEvents="none"
                               >
                                 <title>
                                   {[
@@ -3093,6 +3167,7 @@ export default function MunicipalitiesPage() {
                                     clearPointTooltip()
                                   }}
                                   onClick={(event) => {
+                                    event.stopPropagation()
                                     togglePointTooltip(
                                       event,
                                       'Copernicus / EFFIS',
@@ -3111,6 +3186,54 @@ export default function MunicipalitiesPage() {
                             : copernicusMarkers.map((fire) => (
                               <g key={fire.key}>
                                 <circle
+                                  className="municipality-profile-hero__point-hitbox"
+                                  cx={fire.x}
+                                  cy={fire.y}
+                                  r={Math.max(fire.radius + (isMobileMunicipalityMap ? 7 : 5), isMobileMunicipalityMap ? 13 : 9)}
+                                  fill="transparent"
+                                  onMouseEnter={(event) => {
+                                    if (isMobileMunicipalityMap) return
+                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
+                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+                                      fire.year != null ? `Έτος: ${fire.year}` : null,
+                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                    ], {
+                                      id: fire.key,
+                                      fallback: { x: fire.x, y: fire.y },
+                                    })
+                                  }}
+                                  onMouseMove={(event) => {
+                                    if (isMobileMunicipalityMap) return
+                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
+                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+                                      fire.year != null ? `Έτος: ${fire.year}` : null,
+                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                    ], {
+                                      id: fire.key,
+                                      fallback: { x: fire.x, y: fire.y },
+                                    })
+                                  }}
+                                  onMouseLeave={() => {
+                                    if (isMobileMunicipalityMap) return
+                                    clearPointTooltip()
+                                  }}
+                                  onClick={(event) => {
+                                    event.stopPropagation()
+                                    togglePointTooltip(
+                                      event,
+                                      'Copernicus / EFFIS',
+                                      [
+                                        fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+                                        fire.year != null ? `Έτος: ${fire.year}` : null,
+                                        `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      ],
+                                      fire.key,
+                                      { x: fire.x, y: fire.y },
+                                    )
+                                  }}
+                                />
+                                <circle
+                                  className="municipality-profile-hero__point-dot"
                                   cx={fire.x}
                                   cy={fire.y}
                                   r={fire.radius}
@@ -3119,21 +3242,7 @@ export default function MunicipalitiesPage() {
                                   strokeWidth="0.75"
                                   vectorEffect="non-scaling-stroke"
                                   style={{ filter: 'drop-shadow(0 1px 0 rgba(17, 17, 17, 0.18))' }}
-                                  onMouseEnter={(event) => {
-                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
-                                    ])
-                                  }}
-                                  onMouseMove={(event) => {
-                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
-                                    ])
-                                  }}
-                                  onMouseLeave={clearPointTooltip}
+                                  pointerEvents="none"
                                 >
                                   <title>
                                     {[
