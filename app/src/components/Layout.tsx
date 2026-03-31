@@ -57,13 +57,13 @@ export default function Layout() {
           </div>
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
-          <NavLink to="/" onClick={handleHomeReload}>Αρχική</NavLink>
-          <NavLink to="/maps">Χάρτης</NavLink>
-          <NavLink to="/municipalities">Δήμοι</NavLink>
-          <NavLink to="/environment-ministry">Υπουργείο Περιβάλλοντος</NavLink>
-          <NavLink to="/contracts">Συμβάσεις</NavLink>
-          <NavLink to="/analysis">Ανάλυση</NavLink>
-          <button type="button" onClick={handleAbout}>Σχετικά</button>
+          <NavLink to="/" onClick={handleHomeReload} data-nav-item="home">Αρχική</NavLink>
+          <NavLink to="/maps" data-nav-item="maps">Χάρτης</NavLink>
+          <NavLink to="/municipalities" data-nav-item="municipalities">Δήμοι</NavLink>
+          <NavLink to="/environment-ministry" data-nav-item="environment">Υπ. Περιβάλλοντος</NavLink>
+          <NavLink to="/contracts" data-nav-item="contracts">Συμβάσεις</NavLink>
+          <NavLink to="/analysis" data-nav-item="analysis">Ανάλυση</NavLink>
+          <button type="button" onClick={handleAbout} data-nav-item="about">Σχετικά</button>
         </nav>
       </header>
 
