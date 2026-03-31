@@ -216,6 +216,11 @@ type ContractYearSummary = {
   amount: number
 }
 
+type MunicipalityMapSpendRpcRow = {
+  municipality_key: string | null
+  amount_per_100k: number | string | null
+}
+
 type TerrainTileOverlay = {
   key: string
   href: string
@@ -290,6 +295,21 @@ function formatEurCompact(value: number): string {
   if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(value / 1_000).toFixed(1)}K €`
   return formatEur(value)
+}
+
+function formatPer100kLowerBound(value: number | null): string {
+  if (value == null || Number.isNaN(value)) return '—'
+  if (value <= 0) return '0 €'
+
+  const step = value >= 100000 ? 100000 : value >= 10000 ? 10000 : 1000
+  const bucket = Math.floor(value / step) * step
+  const safeBucket = bucket > 0 ? bucket : step
+
+  if (safeBucket >= 1000) {
+    return `${(safeBucket / 1000).toLocaleString('el-GR', { maximumFractionDigits: 0 })}K €`
+  }
+
+  return `${safeBucket.toLocaleString('el-GR')} €`
 }
 
 function formatPct(value: number | null, maximumFractionDigits = 1): string {
@@ -689,6 +709,7 @@ export default function MunicipalitiesPage() {
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(0)
   const [isFireYearMenuOpen, setIsFireYearMenuOpen] = useState(false)
   const [profile, setProfile] = useState<MunicipalityProfileRow | null>(null)
+  const [municipalitySpendPer100k, setMunicipalitySpendPer100k] = useState<number | null>(null)
   const [contractYearSummary, setContractYearSummary] = useState<ContractYearSummary[]>([])
   const [contractCurvePoints, setContractCurvePoints] = useState<ContractCurvePoint[]>([])
   const [topContractCpvByYear, setTopContractCpvByYear] = useState<Record<number, { label: string; count: number } | null>>({})
@@ -1993,6 +2014,7 @@ export default function MunicipalitiesPage() {
       setTopContractCpvByYear({})
       setProcedureBreakdown([])
       setContractOrganizationById({})
+      setMunicipalitySpendPer100k(null)
 
       try {
         const municipalityOrganizationName = cleanText(selectedMunicipality?.dhmos)
@@ -2112,6 +2134,7 @@ export default function MunicipalitiesPage() {
 
         const [
           profileResult,
+          municipalityMapSpendResult,
           nextForestRows,
           nextCopernicusRows,
           ...contractResults
@@ -2149,6 +2172,9 @@ export default function MunicipalitiesPage() {
             `)
             .eq('municipality_key', selectedMunicipalityKey)
             .single(),
+          supabase.rpc('get_municipality_map_spend_per_100k', {
+            p_year: currentYear,
+          }),
           fetchAllPaginatedRows<ForestFireRow>(
             (from, to) => supabase
               .from('forest_fire')
@@ -2170,8 +2196,11 @@ export default function MunicipalitiesPage() {
         ])
 
         if (profileResult.error) throw profileResult.error
+        if (municipalityMapSpendResult.error) throw municipalityMapSpendResult.error
 
         const nextProfile = profileResult.data as MunicipalityProfileRow
+        const municipalityMapSpendRows = (municipalityMapSpendResult.data ?? []) as MunicipalityMapSpendRpcRow[]
+        const mapSpendRow = municipalityMapSpendRows.find((row) => normalizeMunicipalityKey(row.municipality_key) === selectedMunicipalityKeyNormalized) ?? null
         const yearRows = (contractResults as Array<{ year: number; rows: MunicipalityContractRow[] }>)
         const nextContractOrganizationById: Record<number, string> = {}
 
@@ -2285,6 +2314,7 @@ export default function MunicipalitiesPage() {
 
         if (!cancelled) {
           setProfile(nextProfile)
+          setMunicipalitySpendPer100k(toNumber(mapSpendRow?.amount_per_100k) ?? null)
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
           setContractYearSummary(nextContractYearSummary)
@@ -2297,6 +2327,7 @@ export default function MunicipalitiesPage() {
       } catch (error) {
         if (!cancelled) {
           setPageError(error instanceof Error ? error.message : 'Η σελίδα δεν μπόρεσε να φορτώσει τα δεδομένα του δήμου.')
+          setMunicipalitySpendPer100k(null)
           setContractOrganizationById({})
           setForestFireRows([])
           setCopernicusRows([])
@@ -2379,8 +2410,6 @@ export default function MunicipalitiesPage() {
   const areaValue = toNumber(profile?.ektasi_km2)
   const densityValue = toNumber(profile?.puknotita)
   const directContractSummary = contractYearSummary.find((entry) => entry.year === currentYear) ?? null
-  const previousYearContractSummary = contractYearSummary.find((entry) => entry.year === currentYear - 1) ?? null
-  const secondPreviousYearContractSummary = contractYearSummary.find((entry) => entry.year === currentYear - 2) ?? null
   const civicFacts = [
     {
       label: 'Πληθυσμός',
@@ -3199,7 +3228,7 @@ export default function MunicipalitiesPage() {
               <div className="profile-metric-card__value">{formatEur(directContractSummary?.amount ?? null)}</div>
               <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων</div>
               <p className="profile-metric-card__note">
-                {`${currentYear - 1}: ${formatEur(previousYearContractSummary?.amount ?? null)} · ${currentYear - 2}: ${formatEur(secondPreviousYearContractSummary?.amount ?? null)}`}
+                {`Εκτιμάται πως ο δήμος ξόδεψε πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας.`}
               </p>
             </article>
 

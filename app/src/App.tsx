@@ -6,9 +6,10 @@ import LatestContractCardItem, { type LatestContractCardView } from './component
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
+import { buildContractAuthorityLabel } from './lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { useDevViewEnabled } from './lib/devView'
-import { buildLatestContractCardView, type AuthorityScope } from './lib/latestContractCard'
+import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
 const ContractModal = lazy(() => import('./components/ContractModal'))
@@ -549,6 +550,7 @@ export default function App() {
             id,
             organization_key,
             municipality_key,
+            region_key,
             title,
             submission_at,
             contract_signed_date,
@@ -573,7 +575,8 @@ export default function App() {
             organization_vat_number,
             start_date,
             end_date,
-            diavgeia_ada
+            diavgeia_ada,
+            canonical_owner_scope
           `)
           .not('submission_at', 'is', null)
           .order('submission_at', { ascending: false })
@@ -584,6 +587,7 @@ export default function App() {
         const ids = ((data ?? []) as Array<{ id: number }>).map((r) => r.id)
         const orgKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { organization_key?: string | null }).organization_key)).filter(Boolean))) as string[]
         const municipalityKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { municipality_key?: string | null }).municipality_key)).filter(Boolean))) as string[]
+        const regionKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { region_key?: string | null }).region_key)).filter(Boolean))) as string[]
 
         const paymentByProcId = new Map<number, { beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>()
         for (const c of chunk(ids, 200)) {
@@ -640,11 +644,25 @@ export default function App() {
           }
         }
 
+        const regionLabelByKey = new Map<string, string>()
+        for (const c of chunk(regionKeys, 200)) {
+          const { data: rData } = await supabase
+            .from('region')
+            .select('region_key, region_normalized_value, region_value')
+            .in('region_key', c)
+          for (const r of (rData ?? []) as Array<{ region_key: string; region_normalized_value: string | null; region_value: string | null }>) {
+            if (!regionLabelByKey.has(r.region_key)) {
+              regionLabelByKey.set(r.region_key, cleanText(r.region_normalized_value) ?? cleanText(r.region_value) ?? r.region_key)
+            }
+          }
+        }
+
         const cards: LatestContractCard[] = (data ?? []).map((row) => {
           const r = row as {
             id: number
             organization_key: string | null
             municipality_key: string | null
+            region_key: string | null
             title: string | null
             submission_at: string | null
             contract_signed_date: string | null
@@ -670,6 +688,7 @@ export default function App() {
             start_date: string | null
             end_date: string | null
             diavgeia_ada: string | null
+            canonical_owner_scope: 'municipality' | 'region' | 'organization' | null
           }
           const p = paymentByProcId.get(r.id)
           const cpvItems = cpvByProcId.get(r.id) ?? []
@@ -684,16 +703,21 @@ export default function App() {
           const diavgeiaAda = cleanText(r.diavgeia_ada)
           const orgKey = cleanText(r.organization_key)
           const municipalityKey = cleanText(r.municipality_key)
+          const regionKey = cleanText(r.region_key)
           const municipalityLabel = municipalityKey ? municipalityLabelByKey.get(municipalityKey) ?? null : null
-          const authorityScope =
-            (orgKey ? orgByKey.get(orgKey)?.scope : null)
-            ?? (municipalityKey ? 'municipality' : null)
-            ?? 'other'
-          const latestCardView = buildLatestContractCardView({
-            id: String(r.id),
-            organizationName: (orgKey ? orgByKey.get(orgKey)?.name : null) ?? municipalityLabel,
-            authorityScope,
+          const organizationScope = orgKey ? orgByKey.get(orgKey)?.scope ?? null : null
+          const regionLabel = regionKey ? regionLabelByKey.get(regionKey) ?? null : null
+          const who = buildContractAuthorityLabel({
+            canonicalOwnerScope: cleanText(r.canonical_owner_scope),
+            organizationScope,
+            organizationName: orgKey ? orgByKey.get(orgKey)?.name ?? null : null,
             municipalityLabel,
+            regionLabel,
+          })
+
+          const latestCardView: LatestContractCardView = {
+            id: String(r.id),
+            who,
             what: cleanText(r.title) ?? '—',
             when: formatDateEl(cleanText(r.submission_at)),
             why: toSentenceCaseEl(why),
@@ -702,7 +726,7 @@ export default function App() {
             howMuch: formatEur(amountWithoutVat),
             signedAt: formatDateEl(cleanText(r.contract_signed_date)),
             documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
-          })
+          }
 
           return {
             ...latestCardView,

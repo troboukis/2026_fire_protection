@@ -93,10 +93,6 @@ function RegionActivityMap({
     return <DataLoadingCard className="organization-map organization-map--empty" compact message="Προετοιμάζεται ο χάρτης δραστηριότητας της περιφέρειας." />
   }
 
-  if (mapData.points.length === 0) {
-    return <div className="organization-map organization-map--empty">Δεν βρέθηκαν σημεία δραστηριότητας.</div>
-  }
-
   return (
     <div className="organization-map">
       <svg viewBox="0 0 360 280" role="img" aria-label="Χάρτης δραστηριότητας περιφέρειας" preserveAspectRatio="xMinYMin meet">
@@ -111,10 +107,12 @@ function RegionActivityMap({
           ))}
         </g>
       </svg>
-      <div className="organization-map__legend">
-        <span className="organization-map__legend-dot" aria-hidden="true" />
-        <span>{`Εργασίες στην ${regionName} το ${yearLabel}`}</span>
-      </div>
+      {mapData.points.length > 0 ? (
+        <div className="organization-map__legend">
+          <span className="organization-map__legend-dot" aria-hidden="true" />
+          <span>{`Εργασίες στην ${regionName} το ${yearLabel}`}</span>
+        </div>
+      ) : null}
     </div>
   )
 }
