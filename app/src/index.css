@@ -2194,6 +2194,52 @@ main {
   }
 }
 
+@media (max-width: 760px) {
+  .top-nav {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .top-nav a,
+  .top-nav button {
+    min-width: 0;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    white-space: normal;
+    text-align: center;
+    line-height: 1.15;
+    text-wrap: balance;
+    padding: 0.68rem 0.5rem;
+  }
+
+  .top-nav [data-nav-item="home"],
+  .top-nav [data-nav-item="maps"],
+  .top-nav [data-nav-item="municipalities"] {
+    grid-column: span 1;
+    border-top: 0;
+  }
+
+  .top-nav [data-nav-item="environment"] {
+    grid-column: span 3;
+    border-top: 0;
+  }
+
+  .top-nav [data-nav-item="contracts"],
+  .top-nav [data-nav-item="analysis"],
+  .top-nav [data-nav-item="about"] {
+    grid-column: span 2;
+  }
+
+  .top-nav [data-nav-item="home"],
+  .top-nav [data-nav-item="contracts"] {
+    border-left: 0;
+  }
+
+  .top-nav [data-nav-item="environment"] {
+    font-size: 0.72rem;
+  }
+}
+
 @media (max-width: 420px) {
   .site-header {
     width: 100%;
@@ -2223,7 +2269,7 @@ main {
     min-height: 40px;
     padding: 0.48rem 0.24rem;
     letter-spacing: -0.02em;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .news-wire__label strong {

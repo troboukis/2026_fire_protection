@@ -159,6 +159,7 @@ type WorkPoint = {
 }
 
 type WorkPointTooltip = {
+  id?: string
   x: number
   y: number
   title: string
@@ -354,6 +355,12 @@ function EnvironmentWorksMap({
 }) {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [tooltip, setTooltip] = useState<WorkPointTooltip | null>(null)
+  const [isCompactViewport, setIsCompactViewport] = useState(() => (
+    typeof window === 'undefined' ? false : window.matchMedia('(max-width: 760px)').matches
+  ))
+  const [isCoarsePointer, setIsCoarsePointer] = useState(() => (
+    typeof window === 'undefined' ? false : window.matchMedia('(hover: none), (pointer: coarse)').matches
+  ))
   const mapClipPathId = useId().replace(/:/g, '-')
   const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
   const mapRef = useRef<HTMLDivElement | null>(null)
@@ -378,6 +385,38 @@ function EnvironmentWorksMap({
     setTooltip(null)
   }, [workPoints])
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined
+
+    const mediaQuery = window.matchMedia('(max-width: 760px)')
+    const updateMatch = () => setIsCompactViewport(mediaQuery.matches)
+    updateMatch()
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', updateMatch)
+      return () => mediaQuery.removeEventListener('change', updateMatch)
+    }
+
+    mediaQuery.addListener(updateMatch)
+    return () => mediaQuery.removeListener(updateMatch)
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined
+
+    const mediaQuery = window.matchMedia('(hover: none), (pointer: coarse)')
+    const updateMatch = () => setIsCoarsePointer(mediaQuery.matches)
+    updateMatch()
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', updateMatch)
+      return () => mediaQuery.removeEventListener('change', updateMatch)
+    }
+
+    mediaQuery.addListener(updateMatch)
+    return () => mediaQuery.removeListener(updateMatch)
+  }, [])
+
   const pointerInMap = (
     event: ReactMouseEvent<SVGCircleElement>,
     fallback: { x: number; y: number },
@@ -396,22 +435,54 @@ function EnvironmentWorksMap({
     `Ανάθεση: ${point.assignmentType}`,
   ]
 
+  const updatePointTooltip = (
+    event: ReactMouseEvent<SVGCircleElement>,
+    point: WorkPoint & { x: number; y: number },
+  ) => {
+    const pointer = pointerInMap(event, { x: point.x, y: point.y })
+    setTooltip({
+      id: point.id,
+      x: pointer.x,
+      y: pointer.y,
+      title: point.contractTitle,
+      items: getTooltipItems(point),
+    })
+  }
+
+  const togglePointTooltip = (
+    event: ReactMouseEvent<SVGCircleElement>,
+    point: WorkPoint & { x: number; y: number },
+  ) => {
+    const pointer = pointerInMap(event, { x: point.x, y: point.y })
+    setTooltip((current) => (
+      current?.id === point.id
+        ? null
+        : {
+            id: point.id,
+            x: pointer.x,
+            y: pointer.y,
+            title: point.contractTitle,
+            items: getTooltipItems(point),
+          }
+    ))
+  }
+
   const mapData = useMemo(() => {
     if (!geojson) return null
 
-    const width = 760
-    const height = 460
+    const width = isCompactViewport ? 560 : 760
+    const height = isCompactViewport ? 760 : 460
     const projection = d3.geoMercator().fitExtent(
-      [[16, 14], [width - 14, height - 22]],
+      isCompactViewport ? [[10, 12], [width - 10, height - 18]] : [[16, 14], [width - 14, height - 22]],
       geojson as unknown as d3.ExtendedFeatureCollection,
     )
     const path = d3.geoPath().projection(projection)
     const bounds = path.bounds(geojson as unknown as d3.GeoPermissibleObjects)
     const boundsCenterX = (bounds[0][0] + bounds[1][0]) / 2
     const boundsCenterY = (bounds[0][1] + bounds[1][1]) / 2
-    const transformScale = 1.06
-    const targetCenterX = width / 2 - 8
-    const targetCenterY = height * 0.515
+    const transformScale = isCompactViewport ? 1.14 : 1.06
+    const targetCenterX = isCompactViewport ? width / 2 - 4 : width / 2 - 8
+    const targetCenterY = isCompactViewport ? height * 0.505 : height * 0.515
     const transformTranslateX = targetCenterX - (boundsCenterX * transformScale)
     const transformTranslateY = targetCenterY - (boundsCenterY * transformScale)
     const transformPoint = (x: number, y: number) => ({
@@ -448,7 +519,7 @@ function EnvironmentWorksMap({
       ),
       points,
     }
-  }, [geojson, mapTilerApiKey, workPoints])
+  }, [geojson, isCompactViewport, mapTilerApiKey, workPoints])
 
   if (!mapData) {
     return <DataLoadingCard className="environment-map environment-map--loading" compact message="Προετοιμάζεται ο χάρτης εργασιών του ΥΠΕΝ." />
@@ -459,7 +530,14 @@ function EnvironmentWorksMap({
   }
 
   return (
-    <div ref={mapRef} className="environment-map">
+    <div
+      ref={mapRef}
+      className="environment-map"
+      onClick={() => {
+        if (!isCoarsePointer) return
+        setTooltip(null)
+      }}
+    >
       <svg
         viewBox={`0 0 ${mapData.width} ${mapData.height}`}
         role="img"
@@ -500,35 +578,27 @@ function EnvironmentWorksMap({
               key={point.id}
               cx={point.x}
               cy={point.y}
-              r={3.2}
+              r={isCompactViewport ? 4.4 : 3.2}
               onMouseEnter={(event) => {
-                const pointer = pointerInMap(event, { x: point.x, y: point.y })
-                setTooltip({
-                  x: pointer.x,
-                  y: pointer.y,
-                  title: point.contractTitle,
-                  items: getTooltipItems(point),
-                })
+                if (isCoarsePointer) return
+                updatePointTooltip(event, point)
               }}
               onMouseMove={(event) => {
-                const pointer = pointerInMap(event, { x: point.x, y: point.y })
-                setTooltip((current) => (
-                  current
-                    ? {
-                        ...current,
-                        x: pointer.x,
-                        y: pointer.y,
-                      }
-                    : {
-                        x: pointer.x,
-                        y: pointer.y,
-                        title: point.contractTitle,
-                        items: getTooltipItems(point),
-                      }
-                ))
+                if (isCoarsePointer) return
+                updatePointTooltip(event, point)
               }}
-              onMouseLeave={() => setTooltip(null)}
-              onClick={() => onOpenContract(point.procurementId)}
+              onMouseLeave={() => {
+                if (isCoarsePointer) return
+                setTooltip(null)
+              }}
+              onClick={(event) => {
+                event.stopPropagation()
+                if (isCoarsePointer) {
+                  togglePointTooltip(event, point)
+                  return
+                }
+                onOpenContract(point.procurementId)
+              }}
             />
           ))}
         </g>
