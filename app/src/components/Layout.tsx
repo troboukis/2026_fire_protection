@@ -1,3 +1,4 @@
+import type { MouseEvent } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import DevViewToggle from './DevViewToggle'
@@ -20,6 +21,7 @@ export default function Layout() {
   const lastUpdateLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
   const location = useLocation()
   const navigate = useNavigate()
+  const homeDocumentHref = import.meta.env.BASE_URL
 
   const handleAbout = () => {
     if (location.pathname === '/') {
@@ -27,6 +29,15 @@ export default function Layout() {
     } else {
       navigate('/', { state: { scrollTo: 'about' } })
     }
+  }
+
+  const handleHomeReload = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    if (location.pathname === '/') {
+      window.location.reload()
+      return
+    }
+    window.location.assign(homeDocumentHref)
   }
 
   return (
@@ -39,18 +50,19 @@ export default function Layout() {
         <div className="brand-block">
           <div className="eyebrow">παρατηρητηριο για την πυροπροστασία</div>
           <div className="brand-line">
-            <NavLink to="/" className="brand-home-link">
+            <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
               <h1>FireWatch <span className="beta-badge">BETA</span></h1>
             </NavLink>
             <span className="brand-mark">Τελευταία ενημέρωση / {lastUpdateLabel}</span>
           </div>
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
-          <NavLink to="/">Αρχική</NavLink>
-          <NavLink to="/analysis">Ανάλυση</NavLink>
-          <NavLink to="/contracts">Συμβάσεις</NavLink>
-          <NavLink to="/municipalities">Δήμοι</NavLink>
+          <NavLink to="/" onClick={handleHomeReload}>Αρχική</NavLink>
           <NavLink to="/maps">Χάρτης</NavLink>
+          <NavLink to="/municipalities">Δήμοι</NavLink>
+          <NavLink to="/environment-ministry">Υπουργείο Περιβάλλοντος</NavLink>
+          <NavLink to="/contracts">Συμβάσεις</NavLink>
+          <NavLink to="/analysis">Ανάλυση</NavLink>
           <button type="button" onClick={handleAbout}>Σχετικά</button>
         </nav>
       </header>
