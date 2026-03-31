@@ -219,6 +219,7 @@ type ContractYearSummary = {
 type MunicipalityMapSpendRpcRow = {
   municipality_key: string | null
   amount_per_100k: number | string | null
+  active_previous_count: number | string | null
 }
 
 type TerrainTileOverlay = {
@@ -310,6 +311,16 @@ function formatPer100kLowerBound(value: number | null): string {
   }
 
   return `${safeBucket.toLocaleString('el-GR')} €`
+}
+
+function formatActivePreviousContractsSentence(currentYear: number, count: number | null): string {
+  if (count == null || Number.isNaN(count)) {
+    return `Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}.`
+  }
+  if (count === 1) {
+    return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή το ${currentYear}.`
+  }
+  return `Εντοπίζουμε ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}.`
 }
 
 function formatPct(value: number | null, maximumFractionDigits = 1): string {
@@ -710,6 +721,7 @@ export default function MunicipalitiesPage() {
   const [isFireYearMenuOpen, setIsFireYearMenuOpen] = useState(false)
   const [profile, setProfile] = useState<MunicipalityProfileRow | null>(null)
   const [municipalitySpendPer100k, setMunicipalitySpendPer100k] = useState<number | null>(null)
+  const [municipalityActivePreviousCount, setMunicipalityActivePreviousCount] = useState<number | null>(null)
   const [contractYearSummary, setContractYearSummary] = useState<ContractYearSummary[]>([])
   const [contractCurvePoints, setContractCurvePoints] = useState<ContractCurvePoint[]>([])
   const [topContractCpvByYear, setTopContractCpvByYear] = useState<Record<number, { label: string; count: number } | null>>({})
@@ -2015,6 +2027,7 @@ export default function MunicipalitiesPage() {
       setProcedureBreakdown([])
       setContractOrganizationById({})
       setMunicipalitySpendPer100k(null)
+      setMunicipalityActivePreviousCount(null)
 
       try {
         const municipalityOrganizationName = cleanText(selectedMunicipality?.dhmos)
@@ -2315,6 +2328,7 @@ export default function MunicipalitiesPage() {
         if (!cancelled) {
           setProfile(nextProfile)
           setMunicipalitySpendPer100k(toNumber(mapSpendRow?.amount_per_100k) ?? null)
+          setMunicipalityActivePreviousCount(toNumber(mapSpendRow?.active_previous_count) ?? null)
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
           setContractYearSummary(nextContractYearSummary)
@@ -2328,6 +2342,7 @@ export default function MunicipalitiesPage() {
         if (!cancelled) {
           setPageError(error instanceof Error ? error.message : 'Η σελίδα δεν μπόρεσε να φορτώσει τα δεδομένα του δήμου.')
           setMunicipalitySpendPer100k(null)
+          setMunicipalityActivePreviousCount(null)
           setContractOrganizationById({})
           setForestFireRows([])
           setCopernicusRows([])
@@ -3226,9 +3241,9 @@ export default function MunicipalitiesPage() {
             <article className="profile-metric-card profile-metric-card--ink municipality-contract-card">
               <div className="profile-metric-card__eyebrow eyebrow">Συμβάσεις {currentYear}</div>
               <div className="profile-metric-card__value">{formatEur(directContractSummary?.amount ?? null)}</div>
-              <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων</div>
+              <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
               <p className="profile-metric-card__note">
-                {`Εκτιμάται πως ο δήμος ξόδεψε πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας.`}
+                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} Εκτιμάται πως ο δήμος ξόδεψε πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας.`}
               </p>
             </article>
 
