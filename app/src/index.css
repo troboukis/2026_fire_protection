@@ -978,20 +978,24 @@ main {
 
 .records-grid--horizontal {
   display: flex;
-  gap: 1px;
+  gap: 0;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
   width: 100%;
   padding-bottom: 0.25rem;
   scroll-snap-type: x proximity;
-  background: color-mix(in srgb, var(--paper) 92%, var(--line));
+  background: var(--paper);
 }
 
 .records-grid--horizontal .record-card {
   min-width: min(30rem, 86vw);
   flex: 0 0 min(30rem, 86vw);
   scroll-snap-align: start;
+}
+
+.records-grid--horizontal .record-card + .record-card {
+  border-left: 1px solid rgba(157, 150, 136, 0.75);
 }
 
 .records {
