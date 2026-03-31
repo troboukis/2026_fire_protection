@@ -67,6 +67,7 @@ export function buildHillshadeTileOverlays(
   frameWidth: number,
   frameHeight: number,
   apiKey: string | null,
+  transformPoint?: (x: number, y: number) => { x: number; y: number },
 ): TerrainTileOverlay[] {
   if (!apiKey) return []
 
@@ -96,8 +97,16 @@ export function buildHillshadeTileOverlays(
 
       if (!topLeft || !bottomRight) continue
 
-      const [x0, y0] = topLeft
-      const [x1, y1] = bottomRight
+      let [x0, y0] = topLeft
+      let [x1, y1] = bottomRight
+      if (transformPoint) {
+        const transformedTopLeft = transformPoint(x0, y0)
+        const transformedBottomRight = transformPoint(x1, y1)
+        x0 = transformedTopLeft.x
+        y0 = transformedTopLeft.y
+        x1 = transformedBottomRight.x
+        y1 = transformedBottomRight.y
+      }
       if (![x0, y0, x1, y1].every(Number.isFinite)) continue
 
       overlays.push({

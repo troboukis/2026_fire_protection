@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 
 type Props = {
   eyebrow: string
@@ -6,6 +6,7 @@ type Props = {
   subtitle?: string
   children: ReactNode
   className?: string
+  style?: CSSProperties
 }
 
 export default function ProfileSectionCard({
@@ -14,9 +15,10 @@ export default function ProfileSectionCard({
   subtitle,
   children,
   className,
+  style,
 }: Props) {
   return (
-    <section className={`profile-section-card${className ? ` ${className}` : ''}`}>
+    <section className={`profile-section-card${className ? ` ${className}` : ''}`} style={style}>
       <header className="profile-section-card__head">
         <div className="eyebrow">{eyebrow}</div>
         <h2>{title}</h2>
