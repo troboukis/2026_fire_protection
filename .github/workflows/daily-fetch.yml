@@ -94,10 +94,12 @@ jobs:
             data/2026_diavgeia_filtered.csv \
             data/fires/copernicus_latest.csv \
             data/raw_procurements.csv \
+            state/kimdis_state.json \
             state/locate_work_state.json \
             state/state.json \
             logs/fetch_runs.csv \
             logs/locate_work_runs.csv \
+            logs/org_municipality_coverage_unresolved.csv \
             logs/relevance_filter_runs.csv \
             logs/kimdis_fetch_runs.csv
           if git diff --cached --quiet; then
