@@ -9,7 +9,6 @@ import type { LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
-import { buildMunicipalityMapSummary, type MapAuthorityScope, type ProcurementMapRow } from '../lib/mapProcurementSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
 
@@ -46,6 +45,15 @@ type RegionContractRpcRow = {
   reference_number: string | null
 }
 type MunicipalityContractRpcRow = RegionContractRpcRow
+type MunicipalityMapSpendRpcRow = {
+  municipality_key: string | null
+  municipality_name: string | null
+  population_total: number | string | null
+  total_amount_without_vat: number | string | null
+  amount_per_100k: number | string | null
+  signed_current_count: number | string | null
+  active_previous_count: number | string | null
+}
 type FirePoint = {
   lat: number
   lon: number
@@ -139,6 +147,11 @@ function normalizeMunicipalityId(input: unknown): string {
   return noDecimal
 }
 
+function numericValue(value: number | string | null | undefined): number {
+  const parsed = Number(value ?? 0)
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
 const REGIONS = [
   'ΑΝΑΤΟΛΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΚΑΙ ΘΡΑΚΗΣ',
   'ΑΤΤΙΚΗΣ',
@@ -160,9 +173,10 @@ export default function MapsPage() {
   const [mapView, setMapView] = useState<'greece' | 'attica'>('greece')
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [choroplethData, setChoroplethData] = useState<Record<string, number>>({})
-  const [procMunicipalities, setProcMunicipalities] = useState<Set<string>>(new Set())
+  const [municipalityTotalSpendById, setMunicipalityTotalSpendById] = useState<Map<string, number>>(new Map())
+  const [municipalitySignedCurrentCountById, setMunicipalitySignedCurrentCountById] = useState<Map<string, number>>(new Map())
+  const [municipalityActivePreviousCountById, setMunicipalityActivePreviousCountById] = useState<Map<string, number>>(new Map())
   const [municipalityRegionById, setMunicipalityRegionById] = useState<Map<string, string>>(new Map())
-  const [municipalityCurrentYearCountById, setMunicipalityCurrentYearCountById] = useState<Map<string, number>>(new Map())
   const [municipalityOptions, setMunicipalityOptions] = useState<Array<{ id: string; label: string }>>([])
   const [loading, setLoading] = useState(true)
   const [selectedRegion, setSelectedRegion] = useState('')
@@ -199,30 +213,6 @@ export default function MapsPage() {
     let cancelled = false
     setLoading(true)
 
-    const fetchAllProcurementRows = async (): Promise<ProcurementMapRow[]> => {
-        const out: ProcurementMapRow[] = []
-        let from = 0
-
-      while (true) {
-        const to = from + PAGE_SIZE - 1
-        const { data, error } = await supabase
-          .from('procurement')
-          .select('municipality_key, contract_signed_date, start_date, end_date, no_end_date, organization_key, canonical_owner_scope, cancelled, next_ref_no, prev_reference_no, reference_number')
-          .order('id', { ascending: true })
-          .range(from, to)
-
-        if (error) throw error
-
-        const page = (data ?? []) as ProcurementMapRow[]
-        out.push(...page)
-
-        if (page.length < PAGE_SIZE) break
-        from += PAGE_SIZE
-      }
-
-      return out
-    }
-
     const fetchAllMunicipalityRows = async (): Promise<MunicipalityRow[]> => {
       const out: MunicipalityRow[] = []
       let from = 0
@@ -249,11 +239,14 @@ export default function MapsPage() {
     const load = async () => {
       try {
         const assetUrl = (assetName: string) => `${import.meta.env.BASE_URL}${assetName}`
-        const [geoRes, citiesRes, rows] = await Promise.all([
+        const [geoRes, citiesRes, spendRes] = await Promise.all([
           fetch(assetUrl('municipalities.geojson')),
           fetch(assetUrl('greek_cities.json')).catch(() => null),
-          fetchAllProcurementRows(),
+          supabase.rpc('get_municipality_map_spend_per_100k', {
+            p_year: mapYear,
+          }),
         ])
+        if (spendRes.error) throw spendRes.error
 
         if (cancelled) return
 
@@ -280,44 +273,31 @@ export default function MapsPage() {
         } else if (!cancelled) {
           setCityPoints([])
         }
-        const orgKeys = Array.from(new Set(
-          rows.map((r) => String(r.organization_key ?? '').trim()).filter(Boolean),
-        ))
-        const orgScopeByKey = new Map<string, MapAuthorityScope>()
-        for (let i = 0; i < orgKeys.length; i += PAGE_SIZE) {
-          const chunk = orgKeys.slice(i, i + PAGE_SIZE)
-          const { data: orgRows, error: orgError } = await supabase
-            .from('organization')
-            .select('organization_key, authority_scope')
-            .in('organization_key', chunk)
-          if (orgError) throw orgError
-          for (const row of (orgRows ?? []) as Array<{ organization_key: string; authority_scope: MapAuthorityScope | null }>) {
-            orgScopeByKey.set(row.organization_key, row.authority_scope ?? 'other')
-          }
-        }
-
-        const {
-          countByMunicipality,
-          procurementRowsForYear,
-          nationalTotalCount,
-        } = buildMunicipalityMapSummary(rows, mapYear, orgScopeByKey)
+        const spendRows = (spendRes.data ?? []) as MunicipalityMapSpendRpcRow[]
         const nextChoropleth: Record<string, number> = {}
-        for (const [municipalityId, count] of countByMunicipality.entries()) {
-          nextChoropleth[municipalityId] = nationalTotalCount > 0 ? (count / nationalTotalCount) * 100 : 0
+        const nextTotalSpendById = new Map<string, number>()
+        const nextSignedCurrentCountById = new Map<string, number>()
+        const nextActivePreviousCountById = new Map<string, number>()
+        for (const row of spendRows) {
+          const municipalityId = normalizeMunicipalityId(row.municipality_key)
+          if (!municipalityId) continue
+          nextChoropleth[municipalityId] = numericValue(row.amount_per_100k)
+          nextTotalSpendById.set(municipalityId, numericValue(row.total_amount_without_vat))
+          nextSignedCurrentCountById.set(municipalityId, numericValue(row.signed_current_count))
+          nextActivePreviousCountById.set(municipalityId, numericValue(row.active_previous_count))
         }
 
         if (!cancelled) {
           setChoroplethData(nextChoropleth)
-          setProcMunicipalities(new Set(countByMunicipality.keys()))
+          setMunicipalityTotalSpendById(nextTotalSpendById)
+          setMunicipalitySignedCurrentCountById(nextSignedCurrentCountById)
+          setMunicipalityActivePreviousCountById(nextActivePreviousCountById)
           console.log('[MapsPage] choropleth summary', {
-            procurementRows: rows.length,
-            procurementRowsForYear,
             mapYear,
-            municipalitiesWithProcurements: countByMunicipality.size,
-            nationalTotalProcurements: nationalTotalCount,
+            rpcRows: spendRows.length,
+            municipalitiesWithSpend: Array.from(nextTotalSpendById.values()).filter((value) => value > 0).length,
+            maxAmountPer100k: Math.max(0, ...Object.values(nextChoropleth)),
           })
-
-          setMunicipalityCurrentYearCountById(new Map(countByMunicipality.entries()))
         }
 
         const regionRes = await fetch(`${import.meta.env.BASE_URL}municipality_regions.json`)
@@ -370,8 +350,8 @@ export default function MapsPage() {
   }, [mapYear])
 
   const activeMunicipalityCount = useMemo(
-    () => procMunicipalities.size,
-    [procMunicipalities],
+    () => Array.from(municipalityTotalSpendById.values()).filter((value) => value > 0).length,
+    [municipalityTotalSpendById],
   )
 
   const municipalities = useMemo(() => {
@@ -1082,16 +1062,19 @@ export default function MapsPage() {
     const label = municipalityLabelById.get(normalizedMunicipalityId)
     if (!label) return
     const region = municipalityRegionById.get(normalizedMunicipalityId) ?? null
-    const pct = choroplethData[normalizedMunicipalityId] ?? 0
-    const countCurrentYear = municipalityCurrentYearCountById.get(normalizedMunicipalityId) ?? 0
-    // Debug payload for municipality mapping/coverage validation.
+    const amountPer100k = choroplethData[normalizedMunicipalityId] ?? 0
+    const totalAmountWithoutVat = municipalityTotalSpendById.get(normalizedMunicipalityId) ?? 0
+    const signedCurrentCount = municipalitySignedCurrentCountById.get(normalizedMunicipalityId) ?? 0
+    const activePreviousCount = municipalityActivePreviousCountById.get(normalizedMunicipalityId) ?? 0
     console.log('[MapsPage] municipality click', {
       municipalityId,
       normalizedMunicipalityId,
       label,
       region,
-      pctOfNational: pct,
-      currentYearContracts: countCurrentYear,
+      amountPer100k,
+      totalAmountWithoutVat,
+      signedCurrentCount,
+      activePreviousCount,
       geojsonProperties: feature?.properties ?? null,
     })
 
@@ -1235,6 +1218,9 @@ export default function MapsPage() {
                 geojson={geojson}
                 choroplethData={choroplethData}
                 procMunicipalities={hiddenProcDots}
+                signedCurrentCountByMunicipality={municipalitySignedCurrentCountById}
+                activePreviousCountByMunicipality={municipalityActivePreviousCountById}
+                currentYear={mapYear}
                 viewMode={mapView}
                 onDeselect={handleMapDeselect}
                 onMunicipalityClick={handleMapMunicipalityClick}
@@ -1248,12 +1234,12 @@ export default function MapsPage() {
             <div className="maps-legend__scale" aria-hidden="true">
               <span className="maps-legend__scale-label">Λιγότερες</span>
               <div className="maps-legend__scale-bar" />
-              <span className="maps-legend__scale-label">Περισσότερες συμβάσεις</span>
+              <span className="maps-legend__scale-label">Περισσότερα € / 100.000 κατοίκους</span>
             </div>
             <p className="maps-legend__summary">
               {loading
                 ? 'Φόρτωση χάρτη…'
-                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι έχουν συμβάσεις με ιδιώτες σε ισχύ το ${mapYear} για εργασίες πυροπροστασίας`}
+                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι εμφανίζουν καταγεγραμμένη δαπάνη το ${mapYear}. Η κλίμακα δείχνει ευρώ ανά 100.000 κατοίκους.`}
             </p>
           </div>
         </div>

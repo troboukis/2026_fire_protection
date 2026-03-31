@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
@@ -20,12 +20,27 @@ function intersectsFocusWindow(feature: GeoFeature, [[west, south], [east, north
   return !(fx1 < west || fx0 > east || fy1 < south || fy0 > north)
 }
 
-interface Tooltip { x: number; y: number; name: string; pct: number | null }
+interface Tooltip {
+  x: number
+  y: number
+  name: string
+  spendPer100k: number | null
+  signedCurrentCount: number
+  activePreviousCount: number
+}
+interface TooltipPosition { left: number; top: number }
 
-function fmtPct(v: number): string {
-  if (v >= 1)   return v.toFixed(2) + '%'
-  if (v >= 0.1) return v.toFixed(3) + '%'
-  return v.toFixed(4) + '%'
+function fmtPer100kEur(v: number): string {
+  if (v <= 0) return '0'
+
+  const step = v >= 100000 ? 100000 : v >= 10000 ? 10000 : 1000
+  const bucket = Math.ceil(v / step) * step
+
+  if (bucket >= 1000) {
+    return `<${(bucket / 1000).toLocaleString('el-GR', { maximumFractionDigits: 0 })}K`
+  }
+
+  return `<${bucket.toLocaleString('el-GR')}`
 }
 
 function buildColorScale(data: Record<string, number>): d3.ScalePower<number, number> {
@@ -43,8 +58,11 @@ function municipalityCode(d: GeoFeature): string {
 
 interface Props {
   geojson: GeoData | null
-  choroplethData: Record<string, number>   // municipality_id → pct_of_national
+  choroplethData: Record<string, number>   // municipality_id → spend_per_100k
   procMunicipalities: Set<string>
+  signedCurrentCountByMunicipality?: Map<string, number>
+  activePreviousCountByMunicipality?: Map<string, number>
+  currentYear: number
   viewMode?: 'greece' | 'attica'
   onDeselect: () => void
   onMunicipalityClick?: (municipalityId: string) => void
@@ -56,30 +74,60 @@ export function GreeceMap({
   geojson,
   choroplethData,
   procMunicipalities,
+  signedCurrentCountByMunicipality,
+  activePreviousCountByMunicipality,
+  currentYear,
   viewMode = 'greece',
   onDeselect,
   onMunicipalityClick,
   selectedMunicipalityIds,
   municipalityLabelById,
 }: Props) {
+  const containerRef          = useRef<HTMLDivElement>(null)
   const svgRef                = useRef<SVGSVGElement>(null)
+  const tooltipRef            = useRef<HTMLDivElement>(null)
   const selectedRef           = useRef<Set<string>>(new Set())
   const choroplethRef         = useRef<Record<string, number>>({})
   const colorScaleRef         = useRef<((v: number) => number) | null>(null)
   const procMunicipalitiesRef = useRef<Set<string>>(new Set())
+  const signedCurrentCountByMunicipalityRef = useRef<Map<string, number>>(new Map())
+  const activePreviousCountByMunicipalityRef = useRef<Map<string, number>>(new Map())
   const pathGenRef            = useRef<d3.GeoPath | null>(null)
   const onDeselectRef         = useRef<() => void>(() => {})
   const onMunicipalityClickRef = useRef<((municipalityId: string) => void) | undefined>(undefined)
   const municipalityLabelByIdRef = useRef<Map<string, string>>(new Map())
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
+  const [tooltipPosition, setTooltipPosition] = useState<TooltipPosition>({ left: 0, top: 0 })
   const [svgSize, setSvgSize] = useState({ width: 0, height: 0 })
 
   selectedRef.current           = selectedMunicipalityIds ?? new Set()
   choroplethRef.current         = choroplethData
   procMunicipalitiesRef.current = procMunicipalities
+  signedCurrentCountByMunicipalityRef.current = signedCurrentCountByMunicipality ?? new Map()
+  activePreviousCountByMunicipalityRef.current = activePreviousCountByMunicipality ?? new Map()
   onDeselectRef.current         = onDeselect
   onMunicipalityClickRef.current = onMunicipalityClick
   municipalityLabelByIdRef.current = municipalityLabelById ?? new Map()
+
+  useLayoutEffect(() => {
+    if (!tooltip || !containerRef.current || !tooltipRef.current) return
+
+    const containerRect = containerRef.current.getBoundingClientRect()
+    const tooltipRect = tooltipRef.current.getBoundingClientRect()
+    const edgePad = 12
+    const gap = 14
+
+    const maxLeft = Math.max(edgePad, containerRect.width - tooltipRect.width - edgePad)
+    const desiredLeft = tooltip.x - (tooltipRect.width / 2)
+    const left = Math.min(Math.max(edgePad, desiredLeft), maxLeft)
+
+    const topAbove = tooltip.y - tooltipRect.height - gap
+    const maxTop = Math.max(edgePad, containerRect.height - tooltipRect.height - edgePad)
+    const topBelow = Math.min(maxTop, tooltip.y + gap)
+    const top = topAbove >= edgePad ? topAbove : topBelow
+
+    setTooltipPosition({ left, top })
+  }, [tooltip, svgSize])
 
   // Watch SVG element for real layout dimensions
   useEffect(() => {
@@ -174,8 +222,17 @@ export function GreeceMap({
         }
         const dbLabel = municipalityLabelByIdRef.current.get(code)
         const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
-        const pct = choroplethRef.current[code] ?? null
-        setTooltip({ x: event.offsetX, y: event.offsetY, name: dbLabel || fallbackGeoName || code, pct })
+        const spendPer100k = choroplethRef.current[code] ?? null
+        const signedCurrentCount = signedCurrentCountByMunicipalityRef.current.get(code) ?? 0
+        const activePreviousCount = activePreviousCountByMunicipalityRef.current.get(code) ?? 0
+        setTooltip({
+          x: event.offsetX,
+          y: event.offsetY,
+          name: dbLabel || fallbackGeoName || code,
+          spendPer100k,
+          signedCurrentCount,
+          activePreviousCount,
+        })
       })
       .on('mousemove', (event: MouseEvent) => {
         setTooltip(prev =>
@@ -195,8 +252,17 @@ export function GreeceMap({
         if (!code) return
         const dbLabel = municipalityLabelByIdRef.current.get(code)
         const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
-        const pct = choroplethRef.current[code] ?? null
-        setTooltip({ x: event.offsetX, y: event.offsetY, name: dbLabel || fallbackGeoName || code, pct })
+        const spendPer100k = choroplethRef.current[code] ?? null
+        const signedCurrentCount = signedCurrentCountByMunicipalityRef.current.get(code) ?? 0
+        const activePreviousCount = activePreviousCountByMunicipalityRef.current.get(code) ?? 0
+        setTooltip({
+          x: event.offsetX,
+          y: event.offsetY,
+          name: dbLabel || fallbackGeoName || code,
+          spendPer100k,
+          signedCurrentCount,
+          activePreviousCount,
+        })
         onMunicipalityClickRef.current?.(code)
       })
     // Dots layer — draw immediately and keep in sync via the proc-dots effect
@@ -259,7 +325,7 @@ export function GreeceMap({
 
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+    <div ref={containerRef} style={{ position: 'relative', width: '100%', height: '100%' }}>
       <ComponentTag name="GreeceMap" className="component-tag--overlay" />
       {!geojson && (
         <DataLoadingCard className="map-loading" compact message="Προετοιμάζεται ο εθνικός χάρτης συμβάσεων." />
@@ -270,13 +336,16 @@ export function GreeceMap({
       />
       {tooltip && (
         <div
+          ref={tooltipRef}
           className="map-tooltip app-tooltip"
-          style={{ left: tooltip.x, top: tooltip.y - 10 }}
+          style={{ left: tooltipPosition.left, top: tooltipPosition.top, transform: 'none' }}
         >
           <span className="map-tooltip-name">{tooltip.name}</span>
-          {tooltip.pct != null && (
-            <span className="map-tooltip-pct">{fmtPct(tooltip.pct)} εθν. συνόλου</span>
+          {tooltip.spendPer100k != null && (
+            <span className="map-tooltip-pct">{fmtPer100kEur(tooltip.spendPer100k)} ανά 100.000 κατοίκους</span>
           )}
+          <span className="map-tooltip-pct">{tooltip.signedCurrentCount.toLocaleString('el-GR')} συμβάσεις το {currentYear}</span>
+          <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString('el-GR')} συμβάσεις πριν το {currentYear}, που ήταν ενεργές το {currentYear}</span>
         </div>
       )}
     </div>

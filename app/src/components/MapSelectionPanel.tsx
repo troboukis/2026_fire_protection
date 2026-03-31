@@ -75,14 +75,14 @@ function buildSignedContractsSentence(currentYear: number, count: number, suffix
   return `Το ${currentYear} υπεγράφησαν ${count.toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
 }
 
-function buildActivePreviousSentence(count: number, suffix = ''): string {
+function buildActivePreviousSentence(currentYear: number, count: number, suffix = ''): string {
   if (count === 0) {
-    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να είναι σε ισχύ το 2026${suffix}.`
+    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να ήταν ενεργές το ${currentYear}${suffix}.`
   }
   if (count === 1) {
-    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που είναι σε ισχύ το 2026${suffix}.`
+    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που ήταν ενεργή το ${currentYear}${suffix}.`
   }
-  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που είναι σε ισχύ το 2026${suffix}.`
+  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}${suffix}.`
 }
 
 export default function MapSelectionPanel({
@@ -418,11 +418,11 @@ export default function MapSelectionPanel({
       : kind === 'municipality'
         ? [
             buildSignedContractsSentence(currentYear, municipalitySignedCurrentCount ?? 0),
-            buildActivePreviousSentence(municipalityActivePreviousCount ?? 0),
+            buildActivePreviousSentence(currentYear, municipalityActivePreviousCount ?? 0),
           ].join(' ')
         : [
             buildSignedContractsSentence(currentYear, regionSignedCurrentCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
-            buildActivePreviousSentence(regionActivePreviousCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
+            buildActivePreviousSentence(currentYear, regionActivePreviousCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
           ].join(' ')
 
   return (
