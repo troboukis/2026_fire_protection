@@ -74,8 +74,10 @@ git add \
   data/mappings/org_to_municipality.csv \
   data/mappings/org_to_municipality_coverage.csv \
   data/mappings/region_to_municipalities.csv \
+  state/kimdis_state.json \
   state/state.json \
   logs/fetch_runs.csv \
+  logs/org_municipality_coverage_unresolved.csv \
   logs/relevance_filter_runs.csv \
   logs/kimdis_fetch_runs.csv
 
