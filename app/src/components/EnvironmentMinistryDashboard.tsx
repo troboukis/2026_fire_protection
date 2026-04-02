@@ -13,8 +13,8 @@ import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
 import { supabase } from '../lib/supabase'
 import type { GeoData } from '../types'
 
-const DASHBOARD_YEAR = 2026
-const APP_YEAR_START = 2024
+const CURRENT_YEAR = new Date().getFullYear()
+const FIRST_YEAR = CURRENT_YEAR - 2
 
 type DashboardRpcContract = {
   id: number | string
@@ -659,7 +659,7 @@ function EnvironmentWorksMap({
       ) : null}
       <div className="environment-map__legend">
         <span className="environment-map__legend-dot" aria-hidden="true" />
-        <span>{`${mapData.points.length.toLocaleString('el-GR')} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το ${DASHBOARD_YEAR}`}</span>
+        <span>{`${mapData.points.length.toLocaleString('el-GR')} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το ${CURRENT_YEAR}`}</span>
       </div>
     </div>
   )
@@ -695,7 +695,7 @@ export default function EnvironmentMinistryDashboard() {
     const loadDashboard = async () => {
       try {
         const { data: payload, error: rpcError } = await supabase.rpc('get_environment_ministry_dashboard', {
-          p_year: DASHBOARD_YEAR,
+          p_year: CURRENT_YEAR,
         })
 
         if (rpcError) throw rpcError
@@ -833,14 +833,14 @@ export default function EnvironmentMinistryDashboard() {
 
   const heroCards = useMemo(() => [
     {
-      eyebrow: `${APP_YEAR_START} - ${DASHBOARD_YEAR}`,
+      eyebrow: `${FIRST_YEAR} - ${CURRENT_YEAR}`,
       label: 'Συνολική δαπάνη πυροπροστασίας',
       value: formatEurCompact(data.totalSpend),
       note: directAwardBreakdownNote,
       tone: 'ink' as const,
     },
     {
-      eyebrow: `${DASHBOARD_YEAR}`,
+      eyebrow: `${CURRENT_YEAR}`,
       label: `Νέες συμβάσεις`,
       value: data.signed2026Count.toLocaleString('el-GR'),
       note: `${topCpvLabelCurrentYear} η πιο συχνή κατηγορία εργασιών.`,
@@ -848,14 +848,14 @@ export default function EnvironmentMinistryDashboard() {
     },
     {
       eyebrow: 'Active',
-      label: `Παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}`,
+      label: `Παλιότερες συμβάσεις που είναι ενεργές* το ${CURRENT_YEAR}`,
       value: data.activeCarryoverCount.toLocaleString('el-GR'),
       note: `${topCpvLabelActiveContract} η πιο συχνή κατηγορία στις παλιότερες ενεργές συμβάσεις.`,
       tone: 'default' as const,
     },
     {
       eyebrow: 'Δικαιούχοι',
-      label: `Εταιρείες ανέλαβαν ${data.signed2026Count.toLocaleString('el-GR')} έργα το ${DASHBOARD_YEAR}`,
+      label: `Εταιρείες ανέλαβαν ${data.signed2026Count.toLocaleString('el-GR')} έργα το ${CURRENT_YEAR}`,
       value: data.currentYearBeneficiaryCount.toLocaleString('el-GR'),
       note: 'Αφορά μόνο νέες συμβάσεις που υπεγράφησαν μέσα στο έτος.',
       tone: 'accent' as const,
@@ -1054,12 +1054,12 @@ export default function EnvironmentMinistryDashboard() {
         <header className="environment-dashboard__hero">
           <div className="environment-dashboard__hero-copy">
             <div className="eyebrow">Υπουργείο Περιβάλλοντος</div>
-            <h1>{`Το ${DASHBOARD_YEAR} δαπάνησε ${formatEur(data.signedCurrentAmount)} σε εργασίες πυροπροστασίας`}</h1>
+            <h1>{`Το ${CURRENT_YEAR} δαπάνησε ${formatEur(data.signedCurrentAmount)} σε εργασίες πυροπροστασίας`}</h1>
             <p>
-              {`${currentYearDirectAwardBreakdownNote} Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}.`}
+              {`${currentYearDirectAwardBreakdownNote} Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${CURRENT_YEAR}.`}
             </p>
           </div>
-          <div className="environment-dashboard__hero-year" aria-hidden="true">{DASHBOARD_YEAR}</div>
+          <div className="environment-dashboard__hero-year" aria-hidden="true">{CURRENT_YEAR}</div>
         </header>
 
         {loading && (
@@ -1090,7 +1090,7 @@ export default function EnvironmentMinistryDashboard() {
                 <ProfileSectionCard
                   eyebrow="Χάρτης εργασιών"
                   title="Πού εκτελούνται οι παρεμβάσεις"
-                  subtitle={`Ο χάρτης αποτυπώνει ${data.workPoints.length.toLocaleString('el-GR')} σημεία εργασιών που καταφέραμε να γεωεντοπίσουμε με αυτοματοποιημένο τρόπο από τις ${data.signed2026Count.toLocaleString('el-GR')} νέες συμβάσεις που υπογράφηκαν το ${DASHBOARD_YEAR}.`}
+                  subtitle={`Ο χάρτης αποτυπώνει ${data.workPoints.length.toLocaleString('el-GR')} σημεία εργασιών που καταφέραμε να γεωεντοπίσουμε με αυτοματοποιημένο τρόπο από τις ${data.signed2026Count.toLocaleString('el-GR')} νέες συμβάσεις που υπογράφηκαν το ${CURRENT_YEAR}.`}
                   className="environment-section environment-section--map"
                 >
                   <EnvironmentWorksMap
@@ -1255,7 +1255,7 @@ export default function EnvironmentMinistryDashboard() {
 
       <FeaturedRecordsSection
         sectionId="environment-ministry-beneficiaries"
-        year={String(DASHBOARD_YEAR)}
+        year={String(CURRENT_YEAR)}
         rows={featuredBeneficiaryRows}
         loading={loading}
         formatEur={formatEur}
@@ -1263,7 +1263,7 @@ export default function EnvironmentMinistryDashboard() {
         eyebrowText={`Αναθέσεις`}
         title="Οι εταιρείες που ανέλαβαν έργα πυροπροστασίας"
         note={`Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων του ${data.ministryName}.`}
-        footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {DASHBOARD_YEAR}, είτε υπεγράφησαν πριν το {DASHBOARD_YEAR} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {DASHBOARD_YEAR}.</>}
+        footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {CURRENT_YEAR}, είτε υπεγράφησαν πριν το {CURRENT_YEAR} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {CURRENT_YEAR}.</>}
         emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για το Υπουργείο Περιβάλλοντος."
       />
 
