@@ -315,12 +315,12 @@ function formatPer100kLowerBound(value: number | null): string {
 
 function formatActivePreviousContractsSentence(currentYear: number, count: number | null): string {
   if (count == null || Number.isNaN(count)) {
-    return `Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}.`
+    return `Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
   }
   if (count === 1) {
-    return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή το ${currentYear}.`
+    return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}.`
   }
-  return `Εντοπίζουμε ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}.`
+  return `Εντοπίζουμε ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
 }
 
 function formatPct(value: number | null, maximumFractionDigits = 1): string {
@@ -3545,9 +3545,10 @@ export default function MunicipalitiesPage() {
             loading={featuredMunicipalityBeneficiariesLoading}
             formatEur={formatEur}
             onOpenContract={openFeaturedMunicipalityContract}
-            eyebrowText={`Δικαιούχοι / ενεργές συμβάσεις / ${selectedName}`}
-            title={`Κορυφαίοι ανάδοχοι ενεργών συμβάσεων του ${selectedName}`}
-            note="Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών συμβάσεων που έχουν σήμερα με τον επιλεγμένο δήμο."
+            eyebrowText={`Δικαιούχοι / ενεργές* συμβάσεις / ${selectedName}`}
+            title={`Κορυφαίοι ανάδοχοι ενεργών* συμβάσεων του ${selectedName}`}
+            note="Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων που έχουν σήμερα με τον επιλεγμένο δήμο."
+            footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {currentYear}, είτε υπεγράφησαν πριν το {currentYear} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {currentYear}.</>}
             emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για τον επιλεγμένο δήμο."
           />
         </>

@@ -1241,6 +1241,9 @@ export default function MapsPage() {
                 ? 'Φόρτωση χάρτη…'
                 : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι εμφανίζουν καταγεγραμμένη δαπάνη το ${mapYear}. Η κλίμακα δείχνει ευρώ ανά 100.000 κατοίκους.`}
             </p>
+            <p className="maps-legend__note">
+              * Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {mapYear}, είτε υπεγράφησαν πριν το {mapYear} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {mapYear}.
+            </p>
           </div>
         </div>
 

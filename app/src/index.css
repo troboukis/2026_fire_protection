@@ -1002,6 +1002,14 @@ main {
   overflow: hidden;
 }
 
+.records__footnote {
+  padding: 0.9rem 1rem 0;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  max-width: 78ch;
+}
+
 .record-card {
   position: relative;
   background: var(--paper);
@@ -2809,6 +2817,15 @@ main {
   font-size: 0.78rem;
   line-height: 1.45;
   color: #5c5548;
+}
+
+.maps-legend__note {
+  margin: 0;
+  padding: 0 0.1rem;
+  color: #6a6156;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  max-width: 78ch;
 }
 
 .maps-stage__frame svg {
@@ -6219,8 +6236,8 @@ main {
 
 .environment-active-contracts {
   display: grid;
-  gap: 1px;
-  background: var(--line);
+  gap: 0.6rem;
+  background: transparent;
 }
 
 .environment-active-contracts-wrap {
@@ -6235,6 +6252,9 @@ main {
   min-width: 0;
   max-width: none;
   width: 100%;
+  padding: 0.9rem;
+  border: 1px solid rgba(157, 150, 136, 0.35);
+  background: rgba(252, 249, 244, 0.78);
 }
 
 .environment-cpv-card {
@@ -6468,6 +6488,7 @@ main {
   .environment-active-contracts {
     display: flex;
     align-items: stretch;
+    gap: 0.6rem;
   }
 
   .environment-active-contracts .wire-item {

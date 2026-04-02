@@ -345,7 +345,7 @@ export function GreeceMap({
             <span className="map-tooltip-pct">{fmtPer100kEur(tooltip.spendPer100k)} ανά 100.000 κατοίκους</span>
           )}
           <span className="map-tooltip-pct">{tooltip.signedCurrentCount.toLocaleString('el-GR')} συμβάσεις το {currentYear}</span>
-          <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString('el-GR')} συμβάσεις πριν το {currentYear}, που ήταν ενεργές το {currentYear}</span>
+          <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString('el-GR')} συμβάσεις πριν το {currentYear}, που ήταν ενεργές* το {currentYear}</span>
         </div>
       )}
     </div>
