@@ -56,6 +56,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.2;
+  pointer-events: none;
 }
 
 .component-tag--overlay {
@@ -63,7 +64,48 @@ a {
   left: 0.45rem;
   top: 0.45rem;
   margin: 0;
-  z-index: 4;
+  z-index: 20;
+  display: inline-flex !important;
+  width: fit-content !important;
+  max-width: min(42vw, 26rem);
+  min-width: 0 !important;
+  padding: 0.12rem 0.38rem !important;
+  background: rgba(255, 232, 123, 0.94) !important;
+  border: 1px dashed rgba(48, 33, 22, 0.72) !important;
+  box-shadow: 0 1px 0 rgba(17, 17, 17, 0.08);
+  font-size: 0.56rem;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-self: start !important;
+  justify-self: start !important;
+}
+
+.dev-tag-anchor {
+  position: relative;
+}
+
+.dev-tag-stack {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  z-index: 24;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.22rem;
+  pointer-events: none;
+}
+
+.dev-tag-stack--right {
+  left: auto;
+  right: 0.45rem;
+  align-items: flex-end;
+}
+
+.dev-tag-stack .component-tag {
+  margin: 0;
 }
 
 button,

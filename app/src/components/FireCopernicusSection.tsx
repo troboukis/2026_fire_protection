@@ -4,6 +4,7 @@ import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
 import { supabase } from '../lib/supabase'
+import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 
 type CopernicusFirePoint = {
@@ -573,8 +574,13 @@ export default function FireCopernicusSection() {
 
   if (loading) {
     return (
-      <section id="copernicus" className="fire-copernicus section-rule">
-        <div className="fire-copernicus__intro">
+      <section id="copernicus" className="fire-copernicus section-rule dev-tag-anchor">
+        <div className="dev-tag-stack dev-tag-stack--right">
+          <ComponentTag name="FireCopernicusSection" />
+          <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
+        </div>
+        <div className="fire-copernicus__intro dev-tag-anchor">
+          <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
           <div className="eyebrow">Copernicus</div>
           <h2>Χάρτης δασικών πυρκαγιών</h2>
           <p>
@@ -590,8 +596,13 @@ export default function FireCopernicusSection() {
   }
 
   return (
-    <section id="copernicus" className="fire-copernicus section-rule">
-      <div className="fire-copernicus__intro">
+    <section id="copernicus" className="fire-copernicus section-rule dev-tag-anchor">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="FireCopernicusSection" />
+        <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
+      </div>
+      <div className="fire-copernicus__intro dev-tag-anchor">
+        <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
         <div className="eyebrow">Copernicus</div>
         <h2>Χάρτης δασικών πυρκαγιών</h2>
         <p>
@@ -673,11 +684,29 @@ export default function FireCopernicusSection() {
         </p>
       </div>
 
-      <div className="fire-copernicus__map-wrap">
+      <div className="fire-copernicus__map-wrap dev-tag-anchor">
+        <ComponentTag
+          name="fire-copernicus__map-wrap"
+          kind="CLASS"
+          className="component-tag--overlay"
+          style={{ left: 'auto', right: '0.45rem' }}
+        />
         {!mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
         {mapData && (
-          <div ref={mapRef} className="fire-copernicus__map">
-            <div className="fire-copernicus__toggle" aria-label="Τρόπος προβολής Copernicus">
+          <div ref={mapRef} className="fire-copernicus__map dev-tag-anchor">
+            <ComponentTag
+              name="fire-copernicus__map"
+              kind="CLASS"
+              className="component-tag--overlay"
+              style={{ left: 'auto', right: '0.45rem' }}
+            />
+            <div className="fire-copernicus__toggle dev-tag-anchor" aria-label="Τρόπος προβολής Copernicus">
+              <ComponentTag
+                name="fire-copernicus__toggle"
+                kind="CLASS"
+                className="component-tag--overlay"
+                style={{ top: '2.9rem' }}
+              />
               <button
                 type="button"
                 className={viewMode === 'points' ? 'is-active' : ''}

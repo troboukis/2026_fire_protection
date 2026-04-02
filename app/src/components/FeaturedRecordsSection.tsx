@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
 import type { LatestContractCardView } from './LatestContractCard'
@@ -51,14 +52,25 @@ export default function FeaturedRecordsSection({
   sectionId = 'records',
 }: Props) {
   return (
-    <section id={sectionId} className="records section-rule">
-      <div className="section-head">
+    <section id={sectionId} className="records section-rule dev-tag-anchor">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="FeaturedRecordsSection" />
+        <ComponentTag name="records section-rule" kind="CLASS" />
+      </div>
+      <div className="section-head dev-tag-anchor">
+        <ComponentTag name="section-head" kind="CLASS" className="component-tag--overlay" />
         <div className="eyebrow">{eyebrowText}</div>
         <h2>{title}</h2>
         <section className='ca-header-note'>{note}</section>
       </div>
 
-      <div className="records-grid records-grid--horizontal">
+      <div className="records-grid records-grid--horizontal dev-tag-anchor">
+        <ComponentTag
+          name="records-grid records-grid--horizontal"
+          kind="CLASS"
+          className="component-tag--overlay"
+          style={{ left: 'auto', right: '0.45rem' }}
+        />
         {loading && (
           <DataLoadingCard
             className="records-grid__loading-card"

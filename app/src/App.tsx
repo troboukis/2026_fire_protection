@@ -1,14 +1,14 @@
-import { Fragment, Suspense, lazy, useEffect, useMemo, useState } from 'react'
+import { Fragment, Suspense, lazy, useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
+import ComponentTag from './components/ComponentTag'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
 import { buildContractAuthorityLabel } from './lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
-import { useDevViewEnabled } from './lib/devView'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
@@ -309,27 +309,8 @@ function dayFraction(dayOfYear: number, yearDays: number): number {
   return Math.min(1, Math.max(0, (dayOfYear - 1) / denom))
 }
 
-function DebugComponentLabel({ name }: { name: string }) {
-  const [devViewEnabled] = useDevViewEnabled()
-  if (!devViewEnabled) return null
-
-  return (
-    <div
-      style={{
-        background: '#ffeb3b',
-        color: '#000',
-        fontFamily: 'monospace',
-        fontSize: '12px',
-        padding: '2px 6px',
-        border: '1px dashed #000',
-        margin: '6px 0',
-        display: 'inline-block',
-        zIndex: 1000,
-      }}
-    >
-      COMPONENT: {name}
-    </div>
-  )
+function DebugClassLabel({ name, style }: { name: string, style?: CSSProperties }) {
+  return <ComponentTag name={name} kind="CLASS" className="component-tag--overlay" style={style} />
 }
 
 function SectionFallback({ label }: { label: string }) {
@@ -1725,14 +1706,19 @@ export default function App() {
   return (
     <>
       <main>
-        <DebugComponentLabel name="LatestContractsSection" />
-        <section id="latest" className="news-wire section-rule" aria-label="Τελευταία ρεπορτάζ">
-          <div className="news-wire__label">
+        <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
+          <div className="dev-tag-stack dev-tag-stack--right">
+            <ComponentTag name="LatestContractsSection" />
+            <ComponentTag name="news-wire section-rule" kind="CLASS" />
+          </div>
+          <div className="news-wire__label dev-tag-anchor">
+            <DebugClassLabel name="news-wire__label" />
             <span className="eyebrow">τελευταία</span>
             <strong>Οι πιο πρόσφατες συμβάσεις που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
             <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
           </div>
-          <div className="news-wire__items">
+          <div className="news-wire__items dev-tag-anchor">
+            <DebugClassLabel name="news-wire__items" style={{ left: 'auto', right: '0.45rem' }} />
             {latestContractsLoading && (
               <DataLoadingCard
                 className="news-wire__loading-card"
@@ -1759,10 +1745,15 @@ export default function App() {
           </div>
         </section>
 
-        <DebugComponentLabel name="HeroSection" />
-        <section className="hero section-rule">
-          <div className="hero-left">
-            <div className="hero-chart">
+        <section className="hero section-rule dev-tag-anchor">
+          <div className="dev-tag-stack dev-tag-stack--right">
+            <ComponentTag name="HeroSection" />
+            <ComponentTag name="hero section-rule" kind="CLASS" />
+          </div>
+          <div className="hero-left dev-tag-anchor">
+            <DebugClassLabel name="hero-left" />
+            <div className="hero-chart dev-tag-anchor">
+              <DebugClassLabel name="hero-chart" />
               <div className="hero-chart__head">
                 <span className="eyebrow">Εξέλιξη δαπανών</span>
               </div>
@@ -1842,11 +1833,13 @@ export default function App() {
             </div>
           </div>
 
-          <div className="hero-right">
+          <div className="hero-right dev-tag-anchor">
+            <DebugClassLabel name="hero-right" style={{ left: 'auto', right: '0.45rem' }} />
             <div className="hero-background-year" aria-hidden="true">
               {currentYear}
             </div>
-            <div className="hero-amount-card">
+            <div className="hero-amount-card dev-tag-anchor">
+              <DebugClassLabel name="hero-amount-card" />
               <div className="eyebrow">
                 {heroStatsLoading
                   ? 'Δαπάνες'
@@ -1925,12 +1918,10 @@ export default function App() {
           </div>
         </section>
 
-        <DebugComponentLabel name="FireCopernicus" />
         <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
           <FireCopernicusSection />
         </Suspense>
 
-        <DebugComponentLabel name="FeaturedRecordsSection" />
         <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
           <FeaturedRecordsSection
             year={featuredRecordsYear}
@@ -1944,7 +1935,6 @@ export default function App() {
         <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
           {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
             <Fragment key={config.fallbackName}>
-              <DebugComponentLabel name={`OrganizationSection:${config.fallbackName}`} />
               <OrganizationSection
                 data={organizationSections[index] ?? createEmptyOrganizationSectionData(config.fallbackName, currentYear)}
                 loading={organizationSectionsLoading}
@@ -1957,7 +1947,6 @@ export default function App() {
           ))}
         </Suspense>
 
-        <DebugComponentLabel name={`RegionSection:${homeRegionConfig.fallbackName}`} />
         <Suspense fallback={<SectionFallback label="Φόρτωση περιφέρειας" />}>
           <RegionSection
             data={regionSection}
@@ -1969,9 +1958,13 @@ export default function App() {
           />
         </Suspense>
 
-        <DebugComponentLabel name="AboutSection" />
-        <section id="about" className="about-panel section-rule">
-          <div className="about-panel__left">
+        <section id="about" className="about-panel section-rule dev-tag-anchor">
+          <div className="dev-tag-stack dev-tag-stack--right">
+            <ComponentTag name="AboutSection" />
+            <ComponentTag name="about-panel section-rule" kind="CLASS" />
+          </div>
+          <div className="about-panel__left dev-tag-anchor">
+            <DebugClassLabel name="about-panel__left" />
             <div className="eyebrow">Σχετικά με το FireWatch</div>
             <h2>Παρατηρητήριο για την πυροπροστασία</h2>
             <p>
@@ -1979,7 +1972,8 @@ export default function App() {
             </p>
             <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη ή παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
           </div>
-          <div className="about-panel__right">
+          <div className="about-panel__right dev-tag-anchor">
+            <DebugClassLabel name="about-panel__right" style={{ left: 'auto', right: '0.45rem' }} />
             <figure className="about-cover-figure">
               <img className="about-cover" src={`${import.meta.env.BASE_URL}cover_square_optimized.webp`} alt="FireWatch cover" />
               <figcaption className="about-cover-caption">Εικόνα από Nano Banana 2</figcaption>
@@ -2017,7 +2011,6 @@ export default function App() {
 
       {selectedContract && (
         <Suspense fallback={null}>
-          <DebugComponentLabel name="ContractModal" />
           <ContractModal
             contract={selectedContract}
             onClose={() => setSelectedContract(null)}
