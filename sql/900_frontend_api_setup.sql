@@ -1635,10 +1635,34 @@ SELECT jsonb_build_object(
     FROM proc_app_window
     WHERE procedure_type_value = 'Απευθείας ανάθεση'
   ), 0),
+  'direct_award_with_auction_amount', COALESCE((
+    SELECT SUM(COALESCE(amount_without_vat, COALESCE(contract_budget, budget, 0)))
+    FROM proc_app_window
+    WHERE procedure_type_value = 'Απευθείας ανάθεση'
+      AND NULLIF(BTRIM(auction_ref_no), '') IS NOT NULL
+  ), 0),
+  'direct_award_without_auction_amount', COALESCE((
+    SELECT SUM(COALESCE(amount_without_vat, COALESCE(contract_budget, budget, 0)))
+    FROM proc_app_window
+    WHERE procedure_type_value = 'Απευθείας ανάθεση'
+      AND NULLIF(BTRIM(auction_ref_no), '') IS NULL
+  ), 0),
   'current_year_direct_award_amount', COALESCE((
     SELECT SUM(COALESCE(amount_without_vat, COALESCE(contract_budget, budget, 0)))
     FROM signed_current_contracts
     WHERE procedure_type_value = 'Απευθείας ανάθεση'
+  ), 0),
+  'current_year_direct_award_with_auction_amount', COALESCE((
+    SELECT SUM(COALESCE(amount_without_vat, COALESCE(contract_budget, budget, 0)))
+    FROM signed_current_contracts
+    WHERE procedure_type_value = 'Απευθείας ανάθεση'
+      AND NULLIF(BTRIM(auction_ref_no), '') IS NOT NULL
+  ), 0),
+  'current_year_direct_award_without_auction_amount', COALESCE((
+    SELECT SUM(COALESCE(amount_without_vat, COALESCE(contract_budget, budget, 0)))
+    FROM signed_current_contracts
+    WHERE procedure_type_value = 'Απευθείας ανάθεση'
+      AND NULLIF(BTRIM(auction_ref_no), '') IS NULL
   ), 0),
   'current_year_beneficiary_count', COALESCE((
     SELECT COUNT(*)::int

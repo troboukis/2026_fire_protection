@@ -100,7 +100,11 @@ type DashboardRpcResponse = {
   active_carryover_count?: number | string | null
   payment_flow_total?: number | string | null
   direct_award_amount?: number | string | null
+  direct_award_with_auction_amount?: number | string | null
+  direct_award_without_auction_amount?: number | string | null
   current_year_direct_award_amount?: number | string | null
+  current_year_direct_award_with_auction_amount?: number | string | null
+  current_year_direct_award_without_auction_amount?: number | string | null
   current_year_beneficiary_count?: number | string | null
   top_cpvs?: DashboardRpcTopCpv[] | null
   current_year_top_cpvs?: DashboardRpcTopCpv[] | null
@@ -178,7 +182,11 @@ type DashboardData = {
   activeCarryoverCount: number
   paymentFlow2026Total: number
   directAwardAmount: number
+  directAwardWithAuctionAmount: number
+  directAwardWithoutAuctionAmount: number
   currentYearDirectAwardAmount: number
+  currentYearDirectAwardWithAuctionAmount: number
+  currentYearDirectAwardWithoutAuctionAmount: number
   currentYearBeneficiaryCount: number
   workPoints: WorkPoint[]
   topCpvs: TopCpvRow[]
@@ -241,6 +249,22 @@ function formatEurCompact(value: number): string {
   if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(value / 1_000).toFixed(0)}K €`
   return `${Math.round(value).toLocaleString('el-GR')} €`
+}
+
+function formatDirectAwardBreakdownNote(total: number, shareLabel: string, withAuction: number, withoutAuction: number): string {
+  if (total <= 0) {
+    return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση.`
+  }
+
+  if (withAuction > 0 && withoutAuction <= 0) {
+    return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση, όλα μετά από πρόσκληση υποβολής προτάσεων.`
+  }
+
+  if (withAuction <= 0 && withoutAuction > 0) {
+    return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση, όλα χωρίς πρόσκληση υποβολής προτάσεων.`
+  }
+
+  return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση: ${formatEur(withAuction)} μετά από πρόσκληση υποβολής προτάσεων και ${formatEur(withoutAuction)} χωρίς πρόσκληση υποβολής προτάσεων.`
 }
 
 function toUpperEl(value: string | null): string {
@@ -337,7 +361,11 @@ function createEmptyDashboardData(): DashboardData {
     activeCarryoverCount: 0,
     paymentFlow2026Total: 0,
     directAwardAmount: 0,
+    directAwardWithAuctionAmount: 0,
+    directAwardWithoutAuctionAmount: 0,
     currentYearDirectAwardAmount: 0,
+    currentYearDirectAwardWithAuctionAmount: 0,
+    currentYearDirectAwardWithoutAuctionAmount: 0,
     currentYearBeneficiaryCount: 0,
     workPoints: [],
     topCpvs: [],
@@ -734,7 +762,11 @@ export default function EnvironmentMinistryDashboard() {
             activeCarryoverCount: toFiniteNumber(response.active_carryover_count) ?? 0,
             paymentFlow2026Total: toFiniteNumber(response.payment_flow_total) ?? 0,
             directAwardAmount: toFiniteNumber(response.direct_award_amount) ?? 0,
+            directAwardWithAuctionAmount: toFiniteNumber(response.direct_award_with_auction_amount) ?? 0,
+            directAwardWithoutAuctionAmount: toFiniteNumber(response.direct_award_without_auction_amount) ?? 0,
             currentYearDirectAwardAmount: toFiniteNumber(response.current_year_direct_award_amount) ?? 0,
+            currentYearDirectAwardWithAuctionAmount: toFiniteNumber(response.current_year_direct_award_with_auction_amount) ?? 0,
+            currentYearDirectAwardWithoutAuctionAmount: toFiniteNumber(response.current_year_direct_award_without_auction_amount) ?? 0,
             currentYearBeneficiaryCount: toFiniteNumber(response.current_year_beneficiary_count) ?? 0,
             workPoints,
             topCpvs,
@@ -772,6 +804,30 @@ export default function EnvironmentMinistryDashboard() {
     return `${Math.round(share)}%`
   }, [data.currentYearDirectAwardAmount, data.signedCurrentAmount])
 
+  const directAwardBreakdownNote = useMemo(() => formatDirectAwardBreakdownNote(
+    data.directAwardAmount,
+    directAwardShareLabel,
+    data.directAwardWithAuctionAmount,
+    data.directAwardWithoutAuctionAmount,
+  ), [
+    data.directAwardAmount,
+    data.directAwardWithAuctionAmount,
+    data.directAwardWithoutAuctionAmount,
+    directAwardShareLabel,
+  ])
+
+  const currentYearDirectAwardBreakdownNote = useMemo(() => formatDirectAwardBreakdownNote(
+    data.currentYearDirectAwardAmount,
+    currentYearDirectAwardShareLabel,
+    data.currentYearDirectAwardWithAuctionAmount,
+    data.currentYearDirectAwardWithoutAuctionAmount,
+  ), [
+    data.currentYearDirectAwardAmount,
+    data.currentYearDirectAwardWithAuctionAmount,
+    data.currentYearDirectAwardWithoutAuctionAmount,
+    currentYearDirectAwardShareLabel,
+  ])
+
   const topCpvLabelCurrentYear = data.currentYearTopCpvs[0]?.label ?? 'Χωρίς διαθέσιμη κατηγορία εργασιών'
   const topCpvLabelActiveContract = data.activeContractTopCpvs[0]?.label ?? 'Χωρίς διαθέσιμη κατηγορία εργασιών'
 
@@ -780,7 +836,7 @@ export default function EnvironmentMinistryDashboard() {
       eyebrow: `${APP_YEAR_START} - ${DASHBOARD_YEAR}`,
       label: 'Συνολική δαπάνη πυροπροστασίας',
       value: formatEurCompact(data.totalSpend),
-      note: `Εξ αυτών τα ${formatEur(data.directAwardAmount)} (${directAwardShareLabel}) δόθηκαν με απευθείας ανάθεση.`,
+      note: directAwardBreakdownNote,
       tone: 'ink' as const,
     },
     {
@@ -804,7 +860,7 @@ export default function EnvironmentMinistryDashboard() {
       note: 'Αφορά μόνο νέες συμβάσεις που υπεγράφησαν μέσα στο έτος.',
       tone: 'accent' as const,
     },
-  ], [data.activeCarryoverCount, data.currentYearBeneficiaryCount, data.directAwardAmount, data.signed2026Count, data.totalSpend, directAwardShareLabel, topCpvLabelActiveContract, topCpvLabelCurrentYear])
+  ], [data.activeCarryoverCount, data.currentYearBeneficiaryCount, data.signed2026Count, data.totalSpend, directAwardBreakdownNote, topCpvLabelActiveContract, topCpvLabelCurrentYear])
 
   const featuredBeneficiaryRows = useMemo<BeneficiaryInsightRow[]>(() => {
     type BeneficiaryGroup = {
@@ -1000,7 +1056,7 @@ export default function EnvironmentMinistryDashboard() {
             <div className="eyebrow">Υπουργείο Περιβάλλοντος</div>
             <h1>{`Το ${DASHBOARD_YEAR} δαπάνησε ${formatEur(data.signedCurrentAmount)} σε εργασίες πυροπροστασίας`}</h1>
             <p>
-              {`Εξ αυτών τα ${formatEur(data.currentYearDirectAwardAmount)} (${currentYearDirectAwardShareLabel}) δόθηκαν με απευθείας ανάθεση. Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}.`}
+              {`${currentYearDirectAwardBreakdownNote} Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}.`}
             </p>
           </div>
           <div className="environment-dashboard__hero-year" aria-hidden="true">{DASHBOARD_YEAR}</div>
