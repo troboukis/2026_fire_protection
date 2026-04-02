@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
+import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
 import type { GeoData } from '../types'
@@ -143,8 +144,13 @@ export default function OrganizationSection({
 }: OrganizationSectionProps) {
   if (loading) {
     return (
-      <section id={anchorId} className="organization section-rule">
-        <div className="organization__header">
+      <section id={anchorId} className="organization section-rule dev-tag-anchor">
+        <div className="dev-tag-stack dev-tag-stack--right">
+          <ComponentTag name={`OrganizationSection: ${data.name}`} />
+          <ComponentTag name="organization section-rule" kind="CLASS" />
+        </div>
+        <div className="organization__header dev-tag-anchor">
+          <ComponentTag name="organization__header" kind="CLASS" className="component-tag--overlay" />
           <div className="eyebrow">ΟΡΓΑΝΙΣΜΟΣ</div>
           <h2>{data.name}</h2>
           <p>
@@ -180,8 +186,13 @@ export default function OrganizationSection({
   ]
 
   return (
-    <section id={anchorId} className="organization section-rule">
-      <div className="organization__header">
+    <section id={anchorId} className="organization section-rule dev-tag-anchor">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name={`OrganizationSection: ${data.name}`} />
+        <ComponentTag name="organization section-rule" kind="CLASS" />
+      </div>
+      <div className="organization__header dev-tag-anchor">
+        <ComponentTag name="organization__header" kind="CLASS" className="component-tag--overlay" />
         <div className="eyebrow">ΟΡΓΑΝΙΣΜΟΣ</div>
         <h2>{data.name}</h2>
         <p>
@@ -189,18 +200,26 @@ export default function OrganizationSection({
         </p>
       </div>
 
-      <div className="organization__hero">
+      <div className="organization__hero dev-tag-anchor">
+        <ComponentTag name="organization__hero" kind="CLASS" className="component-tag--overlay" />
         <div className="org-year" aria-hidden="true">
           {data.yearLabel}
         </div>
-        <div className="org-total">
+        <div className="org-total dev-tag-anchor">
+          <ComponentTag name="org-total" kind="CLASS" className="component-tag--overlay" />
           <span className="eyebrow">Συνολική Δαπάνη </span>
           <div className="org-total__value">{formatEurCompact(data.totalSpend)}</div>
           <div className="org-total__note">
             {totalSpendNote}
           </div>
         </div>
-        <div className="org-codes">
+        <div className="org-codes dev-tag-anchor">
+          <ComponentTag
+            name="org-codes"
+            kind="CLASS"
+            className="component-tag--overlay"
+            style={{ left: 'auto', right: '0.45rem' }}
+          />
           <OrganizationActivityMap
             workPoints={data.activityWorkPoints}
             yearLabel={data.yearLabel}
@@ -209,8 +228,10 @@ export default function OrganizationSection({
         </div>
       </div>
 
-      <div className="organization__grid">
-        <div className="organization__kpis">
+      <div className="organization__grid dev-tag-anchor">
+        <ComponentTag name="organization__grid" kind="CLASS" className="component-tag--overlay" />
+        <div className="organization__kpis dev-tag-anchor">
+          <ComponentTag name="organization__kpis" kind="CLASS" className="component-tag--overlay" />
           {kpis.map((kpi) => (
             <article className="org-kpi" key={kpi.label}>
               <div className="eyebrow">{kpi.label}</div>
@@ -237,7 +258,13 @@ export default function OrganizationSection({
           </article>
         </div>
 
-        <div className="organization__timeline">
+        <div className="organization__timeline dev-tag-anchor">
+          <ComponentTag
+            name="organization__timeline"
+            kind="CLASS"
+            className="component-tag--overlay"
+            style={{ left: 'auto', right: '0.45rem' }}
+          />
           <div className="eyebrow">Χρονολόγιο</div>
           <ul>
             {timelineItems.map((item) => (
