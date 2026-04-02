@@ -56,6 +56,7 @@ type DashboardRpcContract = {
   payment_fiscal_year: number | string | null
   primary_signer: string | null
   primary_beneficiary: string | null
+  primary_beneficiary_vat_number: string | null
 }
 
 type DashboardRpcFlowRow = {
@@ -127,6 +128,7 @@ type DashboardContract = ContractModalContract & {
   noEndDate: boolean
   primarySigner: string
   primaryBeneficiary: string
+  primaryBeneficiaryVat: string
 }
 
 type FlowRow = {
@@ -320,6 +322,7 @@ function mapRpcContract(contract: DashboardRpcContract, ministryName: string): D
     noEndDate,
     primarySigner: cleanText(contract.primary_signer) ?? 'Χωρίς υπογράφοντα',
     primaryBeneficiary: toUpperEl(cleanText(contract.primary_beneficiary)),
+    primaryBeneficiaryVat: cleanText(contract.primary_beneficiary_vat_number) ?? '—',
   }
 }
 
@@ -789,7 +792,7 @@ export default function EnvironmentMinistryDashboard() {
     },
     {
       eyebrow: 'Active',
-      label: `Παλιότερες συμβάσεις που είναι ενεργές το ${DASHBOARD_YEAR}`,
+      label: `Παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}`,
       value: data.activeCarryoverCount.toLocaleString('el-GR'),
       note: `${topCpvLabelActiveContract} η πιο συχνή κατηγορία στις παλιότερες ενεργές συμβάσεις.`,
       tone: 'default' as const,
@@ -805,6 +808,7 @@ export default function EnvironmentMinistryDashboard() {
 
   const featuredBeneficiaryRows = useMemo<BeneficiaryInsightRow[]>(() => {
     type BeneficiaryGroup = {
+      beneficiaryVat: string
       beneficiaryName: string
       totalAmount: number
       contractIds: Set<string>
@@ -819,10 +823,13 @@ export default function EnvironmentMinistryDashboard() {
     const groups = new Map<string, BeneficiaryGroup>()
 
     for (const contract of data.recentActiveContracts) {
-      const beneficiaryName = cleanText(contract.primaryBeneficiary) ?? cleanText(contract.beneficiary)
-      if (!beneficiaryName || beneficiaryName === '—') continue
+      const beneficiaryVat = cleanText(contract.primaryBeneficiaryVat)
+      if (!beneficiaryVat || beneficiaryVat === '—') continue
 
-      const group = groups.get(beneficiaryName) ?? {
+      const beneficiaryName = cleanText(contract.primaryBeneficiary) ?? cleanText(contract.beneficiary) ?? beneficiaryVat
+
+      const group = groups.get(beneficiaryVat) ?? {
+        beneficiaryVat,
         beneficiaryName,
         totalAmount: 0,
         contractIds: new Set<string>(),
@@ -860,7 +867,7 @@ export default function EnvironmentMinistryDashboard() {
       }
 
       group.relevantContracts.push(contract)
-      groups.set(beneficiaryName, group)
+      groups.set(beneficiaryVat, group)
     }
 
     const today = new Date()
@@ -890,7 +897,6 @@ export default function EnvironmentMinistryDashboard() {
             if (b.rawAmount !== a.rawAmount) return b.rawAmount - a.rawAmount
             return (b.signedAtIso ?? '').localeCompare(a.signedAtIso ?? '', 'el')
           })
-          .slice(0, 5)
 
         let duration = '—'
         let progressPct: number | null = null
@@ -994,7 +1000,7 @@ export default function EnvironmentMinistryDashboard() {
             <div className="eyebrow">Υπουργείο Περιβάλλοντος</div>
             <h1>{`Το ${DASHBOARD_YEAR} δαπάνησε ${formatEur(data.signedCurrentAmount)} σε εργασίες πυροπροστασίας`}</h1>
             <p>
-              {`Εξ αυτών τα ${formatEur(data.currentYearDirectAwardAmount)} (${currentYearDirectAwardShareLabel}) δόθηκαν με απευθείας ανάθεση. Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές το ${DASHBOARD_YEAR}.`}
+              {`Εξ αυτών τα ${formatEur(data.currentYearDirectAwardAmount)} (${currentYearDirectAwardShareLabel}) δόθηκαν με απευθείας ανάθεση. Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${DASHBOARD_YEAR}.`}
             </p>
           </div>
           <div className="environment-dashboard__hero-year" aria-hidden="true">{DASHBOARD_YEAR}</div>
@@ -1150,6 +1156,7 @@ export default function EnvironmentMinistryDashboard() {
                         payment_fiscal_year: null,
                         primary_signer: firstPipePart(payment?.signers) ?? 'Χωρίς υπογράφοντα',
                         primary_beneficiary: firstPipePart(payment?.beneficiary_name) ?? 'Χωρίς δικαιούχο',
+                        primary_beneficiary_vat_number: firstPipePart(payment?.beneficiary_vat_number) ?? '—',
                       }, data.ministryName)
 
                       setSelectedContract(nextContract)
@@ -1199,7 +1206,8 @@ export default function EnvironmentMinistryDashboard() {
         onOpenContract={(contract) => setSelectedContract(contract as DashboardContract)}
         eyebrowText={`Αναθέσεις`}
         title="Οι εταιρείες που ανέλαβαν έργα πυροπροστασίας"
-        note={`Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών συμβάσεων του ${data.ministryName}.`}
+        note={`Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων του ${data.ministryName}.`}
+        footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {DASHBOARD_YEAR}, είτε υπεγράφησαν πριν το {DASHBOARD_YEAR} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {DASHBOARD_YEAR}.</>}
         emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για το Υπουργείο Περιβάλλοντος."
       />
 

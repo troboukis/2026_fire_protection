@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 
 type Props = {
   eyebrow: string
   title: string
-  subtitle: string
+  subtitle: ReactNode
   ctaLabel?: string
   ctaTo?: string
 }

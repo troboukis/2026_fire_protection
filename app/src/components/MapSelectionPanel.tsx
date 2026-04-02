@@ -77,12 +77,12 @@ function buildSignedContractsSentence(currentYear: number, count: number, suffix
 
 function buildActivePreviousSentence(currentYear: number, count: number, suffix = ''): string {
   if (count === 0) {
-    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να ήταν ενεργές το ${currentYear}${suffix}.`
+    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να ήταν ενεργές* το ${currentYear}${suffix}.`
   }
   if (count === 1) {
-    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που ήταν ενεργή το ${currentYear}${suffix}.`
+    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}${suffix}.`
   }
-  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές το ${currentYear}${suffix}.`
+  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}${suffix}.`
 }
 
 export default function MapSelectionPanel({

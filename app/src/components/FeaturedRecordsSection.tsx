@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
 import type { LatestContractCardView } from './LatestContractCard'
@@ -30,7 +31,8 @@ type Props = {
   onOpenContract: (contract: FeaturedRecordContract) => void
   eyebrowText?: string
   title?: string
-  note?: string
+  note?: ReactNode
+  footerNote?: ReactNode
   emptyMessage?: string
   sectionId?: string
 }
@@ -44,6 +46,7 @@ export default function FeaturedRecordsSection({
   eyebrowText = `Δικαιούχοι / ${year}`,
   title = 'Εταιρείες με συμβάσεις έργων πυροπροστασίας',
   note = 'Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των συμβάσεων που έχουν λάβει από δήμους, περιφέρειες και άλλους δημόσιους φορείς.',
+  footerNote,
   emptyMessage = `Δεν βρέθηκαν δικαιούχοι για το ${year}.`,
   sectionId = 'records',
 }: Props) {
@@ -141,6 +144,10 @@ export default function FeaturedRecordsSection({
           })()
         ))}
       </div>
+
+      {footerNote && (
+        <div className="records__footnote">{footerNote}</div>
+      )}
     </section>
   )
 }

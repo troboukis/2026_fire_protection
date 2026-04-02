@@ -388,7 +388,6 @@ relevant_agg AS (
     rr.beneficiary_vat_number,
     jsonb_agg(rr.contract_json ORDER BY rr.rn) AS relevant_contracts
   FROM relevant_ranked rr
-  WHERE rr.rn <= 5
   GROUP BY rr.beneficiary_vat_number
 )
 SELECT

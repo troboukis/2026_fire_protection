@@ -970,7 +970,6 @@ relevant_agg AS (
     rr.beneficiary_vat_number,
     jsonb_agg(rr.contract_json ORDER BY rr.rn) AS relevant_contracts
   FROM relevant_ranked rr
-  WHERE rr.rn <= 5
   GROUP BY rr.beneficiary_vat_number
 )
 SELECT
@@ -1365,21 +1364,11 @@ signed_current_contracts AS (
 ),
 current_year_beneficiaries AS (
   SELECT DISTINCT
-    COALESCE(
-      NULLIF(BTRIM(py.beneficiary_vat_number), ''),
-      CASE
-        WHEN NULLIF(BTRIM(py.beneficiary_name), '') IS NOT NULL
-          THEN CONCAT('name:', UPPER(BTRIM(py.beneficiary_name)))
-        ELSE NULL
-      END
-    ) AS beneficiary_key
+    NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_key
   FROM signed_current_contracts sc
   JOIN public.payment py
     ON py.procurement_id = sc.id
-  WHERE COALESCE(
-    NULLIF(BTRIM(py.beneficiary_vat_number), ''),
-    NULLIF(BTRIM(py.beneficiary_name), '')
-  ) IS NOT NULL
+  WHERE NULLIF(BTRIM(py.beneficiary_vat_number), '') IS NOT NULL
 ),
 relevant_contracts AS (
   SELECT
@@ -1546,7 +1535,8 @@ featured_contracts AS (
       'diavgeia_ada', COALESCE(NULLIF(BTRIM(rc.diavgeia_ada), ''), '—'),
       'payment_fiscal_year', rc.fiscal_year,
       'primary_signer', COALESCE(NULLIF(BTRIM(split_part(COALESCE(rc.signers, ''), '|', 1)), ''), 'Χωρίς υπογράφοντα'),
-      'primary_beneficiary', COALESCE(NULLIF(BTRIM(split_part(COALESCE(rc.beneficiary_name, ''), '|', 1)), ''), 'Χωρίς δικαιούχο')
+      'primary_beneficiary', COALESCE(NULLIF(BTRIM(split_part(COALESCE(rc.beneficiary_name, ''), '|', 1)), ''), 'Χωρίς δικαιούχο'),
+      'primary_beneficiary_vat_number', COALESCE(NULLIF(BTRIM(split_part(COALESCE(rc.beneficiary_vat_number, ''), '|', 1)), ''), '—')
     ) AS payload,
     COALESCE(rc.amount_without_vat, COALESCE(rc.contract_budget, rc.budget, 0)) AS sort_amount,
     rc.contract_signed_date
@@ -1596,7 +1586,8 @@ recent_active_contracts AS (
       'diavgeia_ada', COALESCE(NULLIF(BTRIM(ac.diavgeia_ada), ''), '—'),
       'payment_fiscal_year', ac.fiscal_year,
       'primary_signer', COALESCE(NULLIF(BTRIM(split_part(COALESCE(ac.signers, ''), '|', 1)), ''), 'Χωρίς υπογράφοντα'),
-      'primary_beneficiary', COALESCE(NULLIF(BTRIM(split_part(COALESCE(ac.beneficiary_name, ''), '|', 1)), ''), 'Χωρίς δικαιούχο')
+      'primary_beneficiary', COALESCE(NULLIF(BTRIM(split_part(COALESCE(ac.beneficiary_name, ''), '|', 1)), ''), 'Χωρίς δικαιούχο'),
+      'primary_beneficiary_vat_number', COALESCE(NULLIF(BTRIM(split_part(COALESCE(ac.beneficiary_vat_number, ''), '|', 1)), ''), '—')
     ) AS payload,
     ac.contract_signed_date
   FROM active_contracts ac
