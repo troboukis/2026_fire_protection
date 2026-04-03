@@ -21,7 +21,7 @@ jobs:
       GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
       DOWNLOAD_DIAVGEIA_PDFS: "0"
       REBUILD_ORG_MAPPINGS: "0"
-      ERD_TABLES: "region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,fund,diavgeia_procurement,beneficiary"
+      ERD_TABLES: "region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,diavgeia_procurement,beneficiary"
 
     steps:
       - name: Checkout repository
