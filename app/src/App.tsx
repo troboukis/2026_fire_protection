@@ -9,6 +9,7 @@ import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
 import { buildContractAuthorityLabel } from './lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
+import { buildContractsPageHref } from './lib/contractsPageHref'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
@@ -379,7 +380,7 @@ function getChartYearStyle(year: number, currentYear: number) {
   }
 }
 
-function createEmptyOrganizationSectionData(name: string, currentYear: number): OrganizationSectionData {
+function createEmptyOrganizationSectionData(name: string, currentYear: number, contractsPageHref: string | null = null): OrganizationSectionData {
   return {
     name,
     yearLabel: String(currentYear),
@@ -395,6 +396,7 @@ function createEmptyOrganizationSectionData(name: string, currentYear: number): 
     latestSignedAt: null,
     activityWorkPoints: [],
     timeline: [],
+    contractsPageHref,
   }
 }
 
@@ -411,7 +413,13 @@ export default function App() {
   const [featuredBeneficiaries, setFeaturedBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
   const [featuredBeneficiariesLoading, setFeaturedBeneficiariesLoading] = useState(true)
   const [organizationSections, setOrganizationSections] = useState<OrganizationSectionData[]>(
-    () => HOME_ORGANIZATION_SECTIONS.map(({ fallbackName }) => createEmptyOrganizationSectionData(fallbackName, currentYear)),
+    () => HOME_ORGANIZATION_SECTIONS.map(({ fallbackName, organizationKeys }) => (
+      createEmptyOrganizationSectionData(
+        fallbackName,
+        currentYear,
+        buildContractsPageHref({ organizationKeys }),
+      )
+    )),
   )
   const [organizationSectionsLoading, setOrganizationSectionsLoading] = useState(true)
   const [homeRegionConfig, setHomeRegionConfig] = useState<RegionSectionConfig>(INITIAL_HOME_REGION_SECTION)
@@ -796,7 +804,13 @@ export default function App() {
         }>
         const bestOrg = orgRows[0]
 
-        if (!bestOrg) return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
+        if (!bestOrg) {
+          return createEmptyOrganizationSectionData(
+            config.fallbackName,
+            currentYear,
+            buildContractsPageHref({ organizationKeys: config.organizationKeys }),
+          )
+        }
 
         const organizationKeys = Array.from(new Set(config.organizationKeys))
         const organizationName =
@@ -1094,11 +1108,16 @@ export default function App() {
           latestSignedAt: latestSigned,
           activityWorkPoints,
           timeline,
+          contractsPageHref: buildContractsPageHref({ organizationKeys }),
         }
 
         return nextState
       } catch {
-        return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
+        return createEmptyOrganizationSectionData(
+          config.fallbackName,
+          currentYear,
+          buildContractsPageHref({ organizationKeys: config.organizationKeys }),
+        )
       }
     }
 
@@ -1204,7 +1223,11 @@ export default function App() {
 
         if (!procurements.length) {
           return {
-            ...createEmptyOrganizationSectionData(regionName, currentYear),
+            ...createEmptyOrganizationSectionData(
+              regionName,
+              currentYear,
+              buildContractsPageHref({ regionKey: config.regionKey }),
+            ),
             name: regionName,
           }
         }
@@ -1496,9 +1519,14 @@ export default function App() {
           latestSignedAt: latestSigned,
           activityWorkPoints,
           timeline,
+          contractsPageHref: buildContractsPageHref({ regionKey: config.regionKey }),
         }
       } catch {
-        return createEmptyOrganizationSectionData(config.fallbackName, currentYear)
+        return createEmptyOrganizationSectionData(
+          config.fallbackName,
+          currentYear,
+          buildContractsPageHref({ regionKey: config.regionKey }),
+        )
       }
     }
 
@@ -1513,7 +1541,13 @@ export default function App() {
 
         if (!cancelled) {
           setHomeRegionConfig(selectedConfig)
-          setRegionSection(createEmptyOrganizationSectionData(selectedConfig.fallbackName, currentYear))
+          setRegionSection(
+            createEmptyOrganizationSectionData(
+              selectedConfig.fallbackName,
+              currentYear,
+              buildContractsPageHref({ regionKey: selectedConfig.regionKey }),
+            ),
+          )
         }
 
         const nextState = await loadRegionSection(selectedConfig)
@@ -1522,7 +1556,15 @@ export default function App() {
         if (!cancelled) {
           logLoadError('homepage region section', error)
           setHomeRegionConfig(DEFAULT_HOME_REGION_SECTION)
-          setRegionSection(createEmptyOrganizationSectionData(DEFAULT_HOME_REGION_SECTION.fallbackName, currentYear))
+          setRegionSection(
+            createEmptyOrganizationSectionData(
+              DEFAULT_HOME_REGION_SECTION.fallbackName,
+              currentYear,
+              buildContractsPageHref({
+                regionKey: DEFAULT_HOME_REGION_SECTION.regionKey,
+              }),
+            ),
+          )
         }
       } finally {
         if (!cancelled) setRegionSectionLoading(false)
@@ -1759,68 +1801,57 @@ export default function App() {
               <div className="hero-chart__head">
                 <span className="eyebrow">Εξέλιξη δαπανών</span>
               </div>
-              <svg viewBox="0 0 760 300" role="img" aria-label="Σωρευτική πορεία δαπανών ανά έτος">
-                {[1 / 3, 2 / 3].map((t, i) => {
-                  const y = 230 - t * 200
-                  return <line key={`hy-${i}`} x1="44" y1={y} x2="736" y2={y} stroke="rgba(17,17,17,0.12)" />
-                })}
+              <div className="hero-chart__plot">
+                <svg viewBox="0 0 760 300" role="img" aria-label="Σωρευτική πορεία δαπανών ανά έτος">
+                  {[1 / 3, 2 / 3].map((t, i) => {
+                    const y = 230 - t * 200
+                    return <line key={`hy-${i}`} x1="44" y1={y} x2="736" y2={y} stroke="rgba(17,17,17,0.12)" />
+                  })}
 
-                {chartYears.map((year) => {
-                  const points = chartByYear.get(year) ?? []
-                  if (points.length === 0) return null
-                  const { stroke, opacity, strokeWidth } = getChartYearStyle(year, currentYear)
-                  const d = points.map((p, i) => {
-                    const x = 44 + dayFraction(p.dayOfYear, p.yearDays) * (736 - 44)
-                    const y = 230 - (p.value / chartMax) * 200
-                    return `${i === 0 ? 'M' : 'L'} ${x} ${y}`
-                  }).join(' ')
-                  return (
-                    <path
-                      key={`line-${year}`}
-                      d={d}
-                      fill="none"
-                      stroke={stroke}
-                      strokeOpacity={opacity}
-                      strokeWidth={strokeWidth}
-                    />
-                  )
-                })}
-
-                {[0, 0.5, 1].map((t) => {
-                  const y = 230 - t * 200
-                  const v = chartMax * t
-                  return (
-                    <text
-                      key={`yt-${t}`}
-                      x="8"
-                      y={y + 4}
-                      fontFamily="var(--font-mono)"
-                      fontSize="10"
-                      fill="var(--ink-faint)"
-                    >
-                      {formatEurCompact(v)}
-                    </text>
-                  )
-                })}
-
-                {CHART_TICKS.map((tick) => {
-                  const dayInYear = Math.floor((Date.UTC(2025, tick.month - 1, tick.day) - Date.UTC(2025, 0, 1)) / 86_400_000) + 1
-                  const x = 44 + dayFraction(dayInYear, 365) * (736 - 44)
-                  return (
-                    <text
-                      key={`xt-${tick.label}`}
-                      x={x}
-                      y="252"
-                      textAnchor="middle"
-                      fontFamily="var(--font-mono)"
-                      fontSize="10"
-                      fill="var(--ink-faint)"
-                    >
-                      {tick.label}
-                    </text>
-                  )
-                })}
-              </svg>
+                  {chartYears.map((year) => {
+                    const points = chartByYear.get(year) ?? []
+                    if (points.length === 0) return null
+                    const { stroke, opacity, strokeWidth } = getChartYearStyle(year, currentYear)
+                    const d = points.map((p, i) => {
+                      const x = 44 + dayFraction(p.dayOfYear, p.yearDays) * (736 - 44)
+                      const y = 230 - (p.value / chartMax) * 200
+                      return `${i === 0 ? 'M' : 'L'} ${x} ${y}`
+                    }).join(' ')
+                    return (
+                      <path
+                        key={`line-${year}`}
+                        d={d}
+                        fill="none"
+                        stroke={stroke}
+                        strokeOpacity={opacity}
+                        strokeWidth={strokeWidth}
+                      />
+                    )
+                  })}
+                </svg>
+                <div className="hero-chart__y-axis" aria-hidden="true">
+                  {[0, 0.5, 1].map((t) => {
+                    const y = ((230 - t * 200) / 300) * 100
+                    const v = chartMax * t
+                    return (
+                      <span key={`hero-chart-y-${t}`} style={{ top: `${y}%` }}>
+                        {formatEurCompact(v)}
+                      </span>
+                    )
+                  })}
+                </div>
+                <div className="hero-chart__x-axis" aria-hidden="true">
+                  {CHART_TICKS.map((tick) => {
+                    const dayInYear = Math.floor((Date.UTC(2025, tick.month - 1, tick.day) - Date.UTC(2025, 0, 1)) / 86_400_000) + 1
+                    const x = ((44 + dayFraction(dayInYear, 365) * (736 - 44)) / 760) * 100
+                    return (
+                      <span key={`hero-chart-x-${tick.label}`} style={{ left: `${x}%` }}>
+                        {tick.label}
+                      </span>
+                    )
+                  })}
+                </div>
+              </div>
               <div className="hero-chart__legend">
                 {[...chartYears].reverse().map((year) => {
                   const { stroke, opacity } = getChartYearStyle(year, currentYear)
@@ -1942,7 +1973,14 @@ export default function App() {
           {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
             <Fragment key={config.fallbackName}>
               <OrganizationSection
-                data={organizationSections[index] ?? createEmptyOrganizationSectionData(config.fallbackName, currentYear)}
+                data={
+                  organizationSections[index] ??
+                  createEmptyOrganizationSectionData(
+                    config.fallbackName,
+                    currentYear,
+                    buildContractsPageHref({ organizationKeys: config.organizationKeys }),
+                  )
+                }
                 loading={organizationSectionsLoading}
                 anchorId={config.anchorId}
                 formatEurCompact={formatEurCompact}

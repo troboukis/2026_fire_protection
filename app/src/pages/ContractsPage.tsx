@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
@@ -96,21 +97,464 @@ function firstPipePart(v: unknown): string | null {
   return s.split('|').map((x) => x.trim()).filter(Boolean)[0] ?? null
 }
 
+type ContractsPageInitialFilters = {
+  q: string
+  procedure: string
+  dateFrom: string
+  dateTo: string
+  minAmount: string
+  organizationKeys: string[]
+  regionKey: string
+  municipalityKey: string
+}
+
+function parseIsoDateParam(value: string | null, fallback: string): string {
+  const next = clean(value)
+  return /^\d{4}-\d{2}-\d{2}$/.test(next) ? next : fallback
+}
+
+function parseContractsPageFilters(searchParams: URLSearchParams): ContractsPageInitialFilters {
+  const organizationKeys = Array.from(
+    new Set(
+      searchParams
+        .getAll('organizationKey')
+        .flatMap((value) => value.split(','))
+        .map((value) => clean(value))
+        .filter(Boolean),
+    ),
+  )
+
+  return {
+    q: clean(searchParams.get('q')),
+    procedure: clean(searchParams.get('procedure')),
+    dateFrom: parseIsoDateParam(searchParams.get('dateFrom'), isoDateDaysAgo(30)),
+    dateTo: parseIsoDateParam(searchParams.get('dateTo'), isoToday()),
+    minAmount: clean(searchParams.get('minAmount')),
+    organizationKeys,
+    regionKey: clean(searchParams.get('regionKey')),
+    municipalityKey: clean(searchParams.get('municipalityKey')),
+  }
+}
+
+function chunk<T>(items: T[], size: number): T[][] {
+  const out: T[][] = []
+  for (let index = 0; index < items.length; index += size) out.push(items.slice(index, index + size))
+  return out
+}
+
+function normalizeSearchText(value: unknown): string {
+  return clean(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ς/g, 'σ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toUpperCase()
+}
+
+function matchesScopedQuery(row: ContractRow, q: string): boolean {
+  const query = normalizeSearchText(q)
+  if (!query) return true
+
+  const haystack = normalizeSearchText([
+    row.title,
+    row.organization_value,
+    row.beneficiary_name,
+    row.cpv_value,
+    row.reference_number,
+  ].join(' '))
+
+  return haystack.includes(query)
+}
+
+function dedupeContractRows(rows: ContractRow[]): ContractRow[] {
+  return Array.from(
+    new Map(
+      rows.map((row) => {
+        const key =
+          clean(row.diavgeia_ada) ||
+          `${clean(row.organization_value)}|${clean(row.title)}|${clean(row.contract_signed_date)}|${String(row.amount_without_vat ?? '')}`
+        return [key, row] as const
+      }),
+    ).values(),
+  )
+}
+
+async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: string, dateTo: string): Promise<ContractRow[]> {
+  if (!organizationKeys.length) return []
+
+  const pageSize = 1000
+  const procurements: Array<{
+    id: number
+    organization_key: string | null
+    contract_signed_date: string | null
+    title: string | null
+    reference_number: string | null
+    procedure_type_value: string | null
+    contract_budget: number | null
+    budget: number | null
+    diavgeia_ada: string | null
+  }> = []
+
+  let from = 0
+  while (true) {
+    const to = from + pageSize - 1
+    const { data, error } = await supabase
+      .from('procurement')
+      .select('id, organization_key, contract_signed_date, title, reference_number, procedure_type_value, contract_budget, budget, diavgeia_ada')
+      .in('organization_key', organizationKeys)
+      .not('contract_signed_date', 'is', null)
+      .gte('contract_signed_date', dateFrom)
+      .lte('contract_signed_date', dateTo)
+      .order('contract_signed_date', { ascending: false })
+      .order('id', { ascending: false })
+      .range(from, to)
+
+    if (error) throw error
+
+    const rows = (data ?? []) as typeof procurements
+    procurements.push(...rows)
+    if (rows.length < pageSize) break
+    from += pageSize
+  }
+
+  const organizationByKey = new Map<string, string>()
+  const { data: orgRows } = await supabase
+    .from('organization')
+    .select('organization_key, organization_normalized_value, organization_value')
+    .in('organization_key', organizationKeys)
+
+  for (const row of ((orgRows ?? []) as Array<{
+    organization_key: string
+    organization_normalized_value: string | null
+    organization_value: string | null
+  }>)) {
+    organizationByKey.set(row.organization_key, clean(row.organization_normalized_value) || clean(row.organization_value) || row.organization_key)
+  }
+
+  const procurementIds = procurements.map((row) => row.id)
+  const paymentsByProcurementId = new Map<number, { amount_without_vat: number | null; beneficiary_name: string | null }>()
+  const cpvByProcurementId = new Map<number, string>()
+
+  for (const ids of chunk(procurementIds, 200)) {
+    const [{ data: paymentRows }, { data: cpvRows }] = await Promise.all([
+      supabase
+        .from('payment')
+        .select('procurement_id, beneficiary_name, amount_without_vat')
+        .in('procurement_id', ids),
+      supabase
+        .from('cpv')
+        .select('procurement_id, cpv_value')
+        .in('procurement_id', ids),
+    ])
+
+    const paymentMap = new Map<number, Array<{ beneficiary_name: string | null; amount_without_vat: number | null }>>()
+    for (const row of ((paymentRows ?? []) as Array<{
+      procurement_id: number
+      beneficiary_name: string | null
+      amount_without_vat: number | null
+    }>)) {
+      if (!paymentMap.has(row.procurement_id)) paymentMap.set(row.procurement_id, [])
+      paymentMap.get(row.procurement_id)!.push(row)
+    }
+
+    for (const [procurementId, rows] of paymentMap.entries()) {
+      const amountWithoutVat = rows.reduce<number | null>((sum, row) => {
+        if (row.amount_without_vat == null || Number.isNaN(Number(row.amount_without_vat))) return sum
+        return (sum ?? 0) + Number(row.amount_without_vat)
+      }, null)
+      const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
+      paymentsByProcurementId.set(procurementId, {
+        amount_without_vat: amountWithoutVat,
+        beneficiary_name: beneficiaryNames.join(' | ') || null,
+      })
+    }
+
+    const cpvMap = new Map<number, string[]>()
+    for (const row of ((cpvRows ?? []) as Array<{ procurement_id: number; cpv_value: string | null }>)) {
+      const cpvValue = clean(row.cpv_value)
+      if (!cpvValue) continue
+      if (!cpvMap.has(row.procurement_id)) cpvMap.set(row.procurement_id, [])
+      const values = cpvMap.get(row.procurement_id)!
+      if (!values.includes(cpvValue)) values.push(cpvValue)
+    }
+    for (const [procurementId, values] of cpvMap.entries()) {
+      cpvByProcurementId.set(procurementId, values.join(' | '))
+    }
+  }
+
+  return dedupeContractRows(procurements.map((row) => {
+    const payment = paymentsByProcurementId.get(row.id)
+    return {
+      id: row.id,
+      contract_signed_date: row.contract_signed_date,
+      organization_value: clean(row.organization_key) ? organizationByKey.get(clean(row.organization_key)!) ?? clean(row.organization_key) : null,
+      title: row.title,
+      reference_number: row.reference_number,
+      cpv_value: cpvByProcurementId.get(row.id) ?? null,
+      procedure_type_value: row.procedure_type_value,
+      beneficiary_name: payment?.beneficiary_name ?? null,
+      amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
+      diavgeia_ada: row.diavgeia_ada,
+      total_count: 0,
+    }
+  }))
+}
+
+async function loadRegionScopedRows(regionKey: string, dateFrom: string, dateTo: string): Promise<ContractRow[]> {
+  if (!regionKey) return []
+
+  const currentYear = new Date().getFullYear()
+  const startYear = Number(dateFrom.slice(0, 4))
+  const endYear = Math.min(currentYear, Number(dateTo.slice(0, 4)))
+  const years = Array.from({ length: Math.max(endYear - startYear + 1, 0) }, (_, index) => startYear + index)
+
+  const results = await Promise.all(years.map(async (year) => {
+    const { data, error } = await supabase.rpc('get_region_contracts', {
+      p_region_key: regionKey,
+      p_year: year,
+      p_limit: null,
+      p_offset: 0,
+    })
+    if (error) throw error
+    return (data ?? []) as Array<{
+      procurement_id: number
+      contract_signed_date: string | null
+      organization_value: string | null
+      title: string | null
+      procedure_type_value: string | null
+      beneficiary_name: string | null
+      amount_without_vat: number | null
+      diavgeia_ada: string | null
+      reference_number: string | null
+    }>
+  }))
+
+  const allRows = results.flat()
+    .filter((row) => {
+      const signedAt = clean(row.contract_signed_date)
+      return signedAt >= dateFrom && signedAt <= dateTo
+    })
+
+  const procurementIds = allRows.map((row) => row.procurement_id)
+  const cpvByProcurementId = new Map<number, string>()
+
+  for (const ids of chunk(procurementIds, 200)) {
+    const { data: cpvRows } = await supabase
+      .from('cpv')
+      .select('procurement_id, cpv_value')
+      .in('procurement_id', ids)
+
+    const cpvMap = new Map<number, string[]>()
+    for (const row of ((cpvRows ?? []) as Array<{ procurement_id: number; cpv_value: string | null }>)) {
+      const cpvValue = clean(row.cpv_value)
+      if (!cpvValue) continue
+      if (!cpvMap.has(row.procurement_id)) cpvMap.set(row.procurement_id, [])
+      const values = cpvMap.get(row.procurement_id)!
+      if (!values.includes(cpvValue)) values.push(cpvValue)
+    }
+    for (const [procurementId, values] of cpvMap.entries()) {
+      cpvByProcurementId.set(procurementId, values.join(' | '))
+    }
+  }
+
+  return dedupeContractRows(allRows.map((row) => ({
+    id: row.procurement_id,
+    contract_signed_date: row.contract_signed_date,
+    organization_value: row.organization_value,
+    title: row.title,
+    reference_number: row.reference_number,
+    cpv_value: cpvByProcurementId.get(row.procurement_id) ?? null,
+    procedure_type_value: row.procedure_type_value,
+    beneficiary_name: row.beneficiary_name,
+    amount_without_vat: row.amount_without_vat,
+    diavgeia_ada: row.diavgeia_ada,
+    total_count: 0,
+  })))
+}
+
+async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: string, dateTo: string): Promise<ContractRow[]> {
+  if (!municipalityKey) return []
+
+  const pageSize = 1000
+  const procurements: Array<{
+    id: number
+    organization_key: string | null
+    contract_signed_date: string | null
+    title: string | null
+    reference_number: string | null
+    procedure_type_value: string | null
+    contract_budget: number | null
+    budget: number | null
+    diavgeia_ada: string | null
+  }> = []
+
+  let from = 0
+  while (true) {
+    const to = from + pageSize - 1
+    const { data, error } = await supabase
+      .from('procurement')
+      .select('id, organization_key, contract_signed_date, title, reference_number, procedure_type_value, contract_budget, budget, diavgeia_ada')
+      .eq('municipality_key', municipalityKey)
+      .not('contract_signed_date', 'is', null)
+      .gte('contract_signed_date', dateFrom)
+      .lte('contract_signed_date', dateTo)
+      .order('contract_signed_date', { ascending: false })
+      .order('id', { ascending: false })
+      .range(from, to)
+
+    if (error) throw error
+
+    const rows = (data ?? []) as typeof procurements
+    procurements.push(...rows)
+    if (rows.length < pageSize) break
+    from += pageSize
+  }
+
+  const { data: municipalityRows } = await supabase
+    .from('municipality')
+    .select('municipality_normalized_value, municipality_value')
+    .eq('municipality_key', municipalityKey)
+    .limit(1)
+
+  const municipalityLabel = ((municipalityRows ?? []) as Array<{
+    municipality_normalized_value: string | null
+    municipality_value: string | null
+  }>).map((row) => clean(row.municipality_normalized_value) || clean(row.municipality_value))
+    .find(Boolean) ?? null
+
+  const organizationKeys = Array.from(new Set(
+    procurements
+      .map((row) => cleanText(row.organization_key))
+      .filter(Boolean),
+  )) as string[]
+
+  const organizationByKey = new Map<string, string>()
+  for (const keys of chunk(organizationKeys, 200)) {
+    const { data: orgRows } = await supabase
+      .from('organization')
+      .select('organization_key, organization_normalized_value, organization_value')
+      .in('organization_key', keys)
+
+    for (const row of ((orgRows ?? []) as Array<{
+      organization_key: string
+      organization_normalized_value: string | null
+      organization_value: string | null
+    }>)) {
+      organizationByKey.set(row.organization_key, clean(row.organization_normalized_value) || clean(row.organization_value) || row.organization_key)
+    }
+  }
+
+  const procurementIds = procurements.map((row) => row.id)
+  const paymentsByProcurementId = new Map<number, { amount_without_vat: number | null; beneficiary_name: string | null }>()
+  const cpvByProcurementId = new Map<number, string>()
+
+  for (const ids of chunk(procurementIds, 200)) {
+    const [{ data: paymentRows }, { data: cpvRows }] = await Promise.all([
+      supabase
+        .from('payment')
+        .select('procurement_id, beneficiary_name, amount_without_vat')
+        .in('procurement_id', ids),
+      supabase
+        .from('cpv')
+        .select('procurement_id, cpv_value')
+        .in('procurement_id', ids),
+    ])
+
+    const paymentMap = new Map<number, Array<{ beneficiary_name: string | null; amount_without_vat: number | null }>>()
+    for (const row of ((paymentRows ?? []) as Array<{
+      procurement_id: number
+      beneficiary_name: string | null
+      amount_without_vat: number | null
+    }>)) {
+      if (!paymentMap.has(row.procurement_id)) paymentMap.set(row.procurement_id, [])
+      paymentMap.get(row.procurement_id)!.push(row)
+    }
+
+    for (const [procurementId, rows] of paymentMap.entries()) {
+      const amountWithoutVat = rows.reduce<number | null>((sum, row) => {
+        if (row.amount_without_vat == null || Number.isNaN(Number(row.amount_without_vat))) return sum
+        return (sum ?? 0) + Number(row.amount_without_vat)
+      }, null)
+      const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
+      paymentsByProcurementId.set(procurementId, {
+        amount_without_vat: amountWithoutVat,
+        beneficiary_name: beneficiaryNames.join(' | ') || null,
+      })
+    }
+
+    const cpvMap = new Map<number, string[]>()
+    for (const row of ((cpvRows ?? []) as Array<{ procurement_id: number; cpv_value: string | null }>)) {
+      const cpvValue = clean(row.cpv_value)
+      if (!cpvValue) continue
+      if (!cpvMap.has(row.procurement_id)) cpvMap.set(row.procurement_id, [])
+      const values = cpvMap.get(row.procurement_id)!
+      if (!values.includes(cpvValue)) values.push(cpvValue)
+    }
+    for (const [procurementId, values] of cpvMap.entries()) {
+      cpvByProcurementId.set(procurementId, values.join(' | '))
+    }
+  }
+
+  return dedupeContractRows(procurements.map((row) => {
+    const payment = paymentsByProcurementId.get(row.id)
+    return {
+      id: row.id,
+      contract_signed_date: row.contract_signed_date,
+      organization_value: clean(row.organization_key)
+        ? organizationByKey.get(clean(row.organization_key)!) ?? clean(row.organization_key)
+        : municipalityLabel,
+      title: row.title,
+      reference_number: row.reference_number,
+      cpv_value: cpvByProcurementId.get(row.id) ?? null,
+      procedure_type_value: row.procedure_type_value,
+      beneficiary_name: payment?.beneficiary_name ?? null,
+      amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
+      diavgeia_ada: row.diavgeia_ada,
+      total_count: 0,
+    }
+  }))
+}
+
 export default function ContractsPage() {
+  const [searchParams] = useSearchParams()
+  const searchParamsKey = searchParams.toString()
+  const initialFilters = useMemo(() => parseContractsPageFilters(searchParams), [searchParamsKey])
+  const hasScopedSource =
+    initialFilters.organizationKeys.length > 0 ||
+    Boolean(initialFilters.regionKey) ||
+    Boolean(initialFilters.municipalityKey)
   const [rows, setRows] = useState<ContractRow[]>([])
   const [totalCount, setTotalCount] = useState(0)
   const [loading, setLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [openingContractId, setOpeningContractId] = useState<number | null>(null)
-  const [q, setQ] = useState('')
-  const [procedure, setProcedure] = useState('')
+  const [q, setQ] = useState(initialFilters.q)
+  const [procedure, setProcedure] = useState(initialFilters.procedure)
   const [procedureOptions, setProcedureOptions] = useState<string[]>([])
   const [municipalityNameTokens, setMunicipalityNameTokens] = useState<Set<string>>(new Set())
-  const [dateFrom, setDateFrom] = useState(() => isoDateDaysAgo(30))
-  const [dateTo, setDateTo] = useState(() => isoToday())
-  const [minAmount, setMinAmount] = useState('')
+  const [dateFrom, setDateFrom] = useState(initialFilters.dateFrom)
+  const [dateTo, setDateTo] = useState(initialFilters.dateTo)
+  const [minAmount, setMinAmount] = useState(initialFilters.minAmount)
+  const [organizationKeys, setOrganizationKeys] = useState<string[]>(initialFilters.organizationKeys)
+  const [regionKey, setRegionKey] = useState(initialFilters.regionKey)
+  const [municipalityKey, setMunicipalityKey] = useState(initialFilters.municipalityKey)
   const [page, setPage] = useState(1)
   const pageSize = 50
+
+  useEffect(() => {
+    setQ(initialFilters.q)
+    setProcedure(initialFilters.procedure)
+    setDateFrom(initialFilters.dateFrom)
+    setDateTo(initialFilters.dateTo)
+    setMinAmount(initialFilters.minAmount)
+    setOrganizationKeys(initialFilters.organizationKeys)
+    setRegionKey(initialFilters.regionKey)
+    setMunicipalityKey(initialFilters.municipalityKey)
+    setPage(1)
+    setSelectedContract(null)
+    setOpeningContractId(null)
+  }, [initialFilters])
 
   useEffect(() => {
     let cancelled = false
@@ -155,41 +599,73 @@ export default function ContractsPage() {
     let cancelled = false
     setLoading(true)
     const loadPage = async () => {
-      const min = minAmount ? Number(minAmount) : null
-      const { data, error } = await supabase.rpc('get_contracts_page', {
-        p_q: q || null,
-        p_procedure: procedure || null,
-        p_date_from: dateFrom || null,
-        p_date_to: dateTo || null,
-        p_min_amount: min != null && Number.isFinite(min) ? min : null,
-        p_page: page,
-        p_page_size: pageSize,
-      })
-      if (cancelled) return
-      if (error) {
+      try {
+        if (hasScopedSource) {
+          const scopedBaseRows = organizationKeys.length
+            ? await loadOrganizationScopedRows(organizationKeys, dateFrom, dateTo)
+            : regionKey
+              ? await loadRegionScopedRows(regionKey, dateFrom, dateTo)
+              : await loadMunicipalityScopedRows(municipalityKey, dateFrom, dateTo)
+
+          if (cancelled) return
+
+          const min = minAmount ? Number(minAmount) : null
+          const filteredRows = scopedBaseRows
+            .filter((row) => matchesScopedQuery(row, q))
+            .filter((row) => !procedure || clean(row.procedure_type_value) === procedure)
+            .filter((row) => {
+              if (min == null || !Number.isFinite(min)) return true
+              return Number(row.amount_without_vat ?? 0) >= min
+            })
+            .sort((a, b) => {
+              const byDate = clean(b.contract_signed_date).localeCompare(clean(a.contract_signed_date))
+              if (byDate !== 0) return byDate
+              return b.id - a.id
+            })
+
+          const total = filteredRows.length
+          const pageStart = Math.max((page - 1) * pageSize, 0)
+          const pageRows = filteredRows.slice(pageStart, pageStart + pageSize)
+          setRows(pageRows)
+          setTotalCount(total)
+          setLoading(false)
+          return
+        }
+
+        const min = minAmount ? Number(minAmount) : null
+        const { data, error } = await supabase.rpc('get_contracts_page', {
+          p_q: q || null,
+          p_procedure: procedure || null,
+          p_date_from: dateFrom || null,
+          p_date_to: dateTo || null,
+          p_min_amount: min != null && Number.isFinite(min) ? min : null,
+          p_page: page,
+          p_page_size: pageSize,
+        })
+
+        if (cancelled) return
+        if (error) {
+          setRows([])
+          setTotalCount(0)
+          setLoading(false)
+          return
+        }
+
+        const next = (data ?? []) as ContractRow[]
+        const deduped = dedupeContractRows(next)
+        setRows(deduped)
+        setTotalCount(next[0]?.total_count ?? 0)
+        setLoading(false)
+      } catch {
+        if (cancelled) return
         setRows([])
         setTotalCount(0)
         setLoading(false)
-        return
       }
-      const next = (data ?? []) as ContractRow[]
-      const deduped = Array.from(
-        new Map(
-          next.map((r) => {
-            const k =
-              clean(r.diavgeia_ada) ||
-              `${clean(r.organization_value)}|${clean(r.title)}|${clean(r.contract_signed_date)}|${String(r.amount_without_vat ?? '')}`
-            return [k, r] as const
-          }),
-        ).values(),
-      )
-      setRows(deduped)
-      setTotalCount(next[0]?.total_count ?? 0)
-      setLoading(false)
     }
     loadPage()
     return () => { cancelled = true }
-  }, [q, procedure, dateFrom, dateTo, minAmount, page])
+  }, [q, procedure, dateFrom, dateTo, minAmount, page, organizationKeys, regionKey, municipalityKey, hasScopedSource])
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
 

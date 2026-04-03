@@ -1,6 +1,6 @@
 import { startTransition, useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DataLoadingCard from '../components/DataLoadingCard'
@@ -8,6 +8,7 @@ import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecord
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
+import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { isContractActiveInYear, isContractActiveOnDate } from '../lib/contractWindow'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
@@ -2670,6 +2671,10 @@ export default function MunicipalitiesPage() {
     })),
     [latestMunicipalityContractRows, selectedMunicipalityLabel],
   )
+  const municipalityContractsHref = useMemo(
+    () => buildContractsPageHref({ municipalityKey: selectedMunicipalityKey }),
+    [selectedMunicipalityKey],
+  )
   const heroNarrative = useMemo(() => {
     if (isEmptySelection) {
       return 'Πληκτρολόγησε όνομα δήμου και επίλεξε από τα αποτελέσματα για φόρτωση των δεδομένων του συγκεκριμένου δήμου.'
@@ -3781,6 +3786,9 @@ export default function MunicipalitiesPage() {
                 </article>
               )}
             </div>
+            <Link className="news-wire__all-link" to={municipalityContractsHref}>
+              Όλες οι συμβάσεις
+            </Link>
           </section>
 
           <FeaturedRecordsSection

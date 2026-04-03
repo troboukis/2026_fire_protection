@@ -56,7 +56,10 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.2;
-  pointer-events: none;
+  pointer-events: auto;
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
 }
 
 .component-tag--overlay {
@@ -821,10 +824,43 @@ main {
   gap: 0.55rem;
 }
 
+.hero-chart__plot {
+  position: relative;
+}
+
 .hero-chart svg {
+  display: block;
   width: 100%;
   height: auto;
   background: transparent;
+}
+
+.hero-chart__y-axis,
+.hero-chart__x-axis {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-chart__y-axis span {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  line-height: 1;
+  color: rgba(17, 17, 17, 0.72);
+}
+
+.hero-chart__x-axis span {
+  position: absolute;
+  top: 84%;
+  transform: translateX(-50%);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  line-height: 1;
+  color: rgba(17, 17, 17, 0.72);
+  white-space: nowrap;
 }
 
 .hero-chart__legend {
@@ -1748,6 +1784,24 @@ main {
 .timeline-contract-link:focus-visible {
   color: var(--accent);
   text-decoration: underline;
+  outline: none;
+}
+
+.organization__timeline-all-link {
+  display: inline-flex;
+  margin-top: 0.95rem;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink);
+}
+
+.organization__timeline-all-link:hover,
+.organization__timeline-all-link:focus-visible {
+  color: var(--accent);
+  border-color: currentColor;
   outline: none;
 }
 

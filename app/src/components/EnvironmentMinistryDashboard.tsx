@@ -1,6 +1,7 @@
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
+import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import ContractModal, { type ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
@@ -9,6 +10,7 @@ import LatestContractCard from './LatestContractCard'
 import ProfileMetricCard from './ProfileMetricCard'
 import ProfileSectionCard from './ProfileSectionCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
+import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
 import { supabase } from '../lib/supabase'
 import type { GeoData } from '../types'
@@ -682,6 +684,10 @@ export default function EnvironmentMinistryDashboard() {
   const [error, setError] = useState<string | null>(null)
   const [selectedContract, setSelectedContract] = useState<DashboardContract | null>(null)
   const [mapCardHeight, setMapCardHeight] = useState<number | null>(null)
+  const allContractsHref = useMemo(
+    () => buildContractsPageHref({ organizationKeys: data.identificationKeys }),
+    [data.identificationKeys],
+  )
   const [isDesktopGrid, setIsDesktopGrid] = useState(() => (
     typeof window === 'undefined' ? true : window.matchMedia('(min-width: 1101px)').matches
   ))
@@ -1245,6 +1251,9 @@ export default function EnvironmentMinistryDashboard() {
                       />
                     ))}
                   </div>
+                  <Link className="news-wire__all-link" to={allContractsHref}>
+                    Όλες οι συμβάσεις
+                  </Link>
                 </div>
               </ProfileSectionCard>
             </div>
