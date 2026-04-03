@@ -23,7 +23,7 @@ export default function BeneficiaryLink({
   const handleClick = async (event: MouseEvent<HTMLButtonElement>) => {
     if (stopPropagation) event.stopPropagation()
     if (!normalizedAfm) return
-    await openGemiCompanyPageByAfm(normalizedAfm)
+    await openGemiCompanyPageByAfm(normalizedAfm, name)
   }
 
   if (!normalizedAfm) {
