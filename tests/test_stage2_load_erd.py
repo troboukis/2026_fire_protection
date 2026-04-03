@@ -12,7 +12,9 @@ from ingest.stage2_load_erd import (
     dedupe_forest_fire_rows,
     fund_rows,
     organization_lookup_candidates,
+    payment_row_from_raw,
     procurement_rows,
+    raw_contracting_members,
     region_lookup_candidates,
     seed_organization_rows,
 )
@@ -562,3 +564,49 @@ def test_build_organization_metadata_rows_prefers_resolved_organization_scope_ro
     assert rows == [
         ("org_1", "090010376", "68100", "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ", "Έβρος", "EL511"),
     ]
+
+
+def test_raw_contracting_members_prefers_full_serialized_member_list():
+    row = pd.Series(
+        {
+            "contractingMembers_details": '[{"vatNumber":"046212303","name":"ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ"},{"vatNumber":"045497240","name":"ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ"}]',
+            "firstMember_vatNumber": "046212303",
+            "firstMember_name": "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ",
+        }
+    )
+
+    assert raw_contracting_members(row) == [
+        ("046212303", "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ"),
+        ("045497240", "ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ"),
+    ]
+
+
+def test_payment_row_from_raw_aggregates_all_contracting_members():
+    row = pd.Series(
+        {
+            "submissionDate": "2026-03-17T18:53:20.436",
+            "signers": "ΕΥΣΤΑΘΙΟΣ ΣΤΑΘΟΠΟΥΛΟΣ - Γενικός Γραμματέας",
+            "totalCostWithVAT": "5150716.05",
+            "totalCostWithoutVAT": "4153803.27",
+            "fundingDetails_regularBudget": None,
+            "paymentRefNo": "[]",
+            "contractingMembers_details": '[{"vatNumber":"046212303","name":"ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ"},{"vatNumber":"045497240","name":"ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ"}]',
+        }
+    )
+
+    assert payment_row_from_raw(row, 5252) == (
+        5252,
+        None,
+        None,
+        2,
+        "ΕΥΣΤΑΘΙΟΣ ΣΤΑΘΟΠΟΥΛΟΣ - Γενικός Γραμματέας",
+        "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ | ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
+        "046212303 | 045497240",
+        5150716.05,
+        4153803.27,
+        None,
+        2026,
+        None,
+        "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ | ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
+        "[]",
+    )

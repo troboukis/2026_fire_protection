@@ -12,6 +12,7 @@ import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { isContractActiveInYear, isContractActiveOnDate } from '../lib/contractWindow'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
+import { summarizePaymentRows } from '../lib/paymentSummary'
 import {
   normalizeMunicipalityKey,
   normalizeMunicipalitySearch,
@@ -1910,8 +1911,7 @@ export default function MunicipalitiesPage() {
       supabase
         .from('payment')
         .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
-        .eq('procurement_id', procurementId)
-        .limit(1),
+        .eq('procurement_id', procurementId),
       supabase
         .from('cpv')
         .select('cpv_key, cpv_value')
@@ -1930,14 +1930,14 @@ export default function MunicipalitiesPage() {
         : Promise.resolve({ data: [] }),
     ])
 
-    const payment = (paymentRows?.[0] ?? null) as {
+    const payment = summarizePaymentRows((paymentRows ?? []) as Array<{
       beneficiary_name: string | null
       beneficiary_vat_number: string | null
       signers: string | null
       payment_ref_no: string | null
       amount_without_vat: number | null
       amount_with_vat: number | null
-    } | null
+    }>)
 
     const cpvItems = ((cpvRows ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
       .map((row) => ({
@@ -1961,7 +1961,7 @@ export default function MunicipalitiesPage() {
       region_normalized_value: string | null
       region_value: string | null
     } | null
-    const amountWithoutVat = payment?.amount_without_vat ?? null
+    const amountWithoutVat = payment.amount_without_vat ?? null
     const contractRelatedAda = cleanText(procurement.contract_related_ada)
     const diavgeiaAda = cleanText(procurement.diavgeia_ada)
     const organizationName = cachedCanonicalOrganizationName
@@ -1983,11 +1983,11 @@ export default function MunicipalitiesPage() {
       what: cleanText(procurement.title) ?? '—',
       when: formatDate(cleanText(procurement.submission_at)),
       why: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? primaryCpv?.label ?? '—',
-      beneficiary: cleanText(payment?.beneficiary_name) ?? '—',
+      beneficiary: cleanText(payment.beneficiary_name) ?? '—',
       contractType: cleanText(procurement.procedure_type_value) ?? '—',
       howMuch: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       withoutVatAmount: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
-      withVatAmount: payment?.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      withVatAmount: payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       referenceNumber: cleanText(procurement.reference_number) ?? '—',
       contractNumber: cleanText(procurement.contract_number) ?? '—',
       cpv: primaryCpv?.label ?? '—',
@@ -1997,8 +1997,8 @@ export default function MunicipalitiesPage() {
       startDate: formatDate(cleanText(procurement.start_date)),
       endDate: formatDate(cleanText(procurement.end_date)),
       organizationVat: cleanText(procurement.organization_vat_number) ?? '—',
-      beneficiaryVat: cleanText(payment?.beneficiary_vat_number) ?? '—',
-      signers: cleanText(payment?.signers) ?? '—',
+      beneficiaryVat: cleanText(payment.beneficiary_vat_number) ?? '—',
+      signers: cleanText(payment.signers) ?? '—',
       assignCriteria: cleanText(procurement.assign_criteria) ?? '—',
       contractKind: cleanText(procurement.contract_type) ?? '—',
       awardProcedure: cleanText(procurement.award_procedure) ?? '—',
@@ -2008,7 +2008,7 @@ export default function MunicipalitiesPage() {
       fundingEspa: cleanText(procurement.funding_details_espa) ?? '—',
       fundingRegular: cleanText(procurement.funding_details_regular_budget) ?? '—',
       auctionRefNo: cleanText(procurement.auction_ref_no) ?? '—',
-      paymentRefNo: cleanText(payment?.payment_ref_no) ?? '—',
+      paymentRefNo: cleanText(payment.payment_ref_no) ?? '—',
       shortDescription: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? '—',
       rawBudget: procurement.budget == null ? '—' : Number(procurement.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       contractBudget: procurement.contract_budget == null ? '—' : Number(procurement.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),

@@ -7,6 +7,7 @@ import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
+import { summarizePaymentRows } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 
 type ContractRow = {
@@ -786,15 +787,9 @@ export default function ContractsPage() {
         amount_without_vat: number | null
         amount_with_vat: number | null
       }>
-      const paymentPrimary = paymentRows[0] ?? null
-      const amountWithoutVat = paymentRows.reduce<number | null>((sum, current) => {
-        if (current.amount_without_vat == null || Number.isNaN(Number(current.amount_without_vat))) return sum
-        return (sum ?? 0) + Number(current.amount_without_vat)
-      }, null) ?? procurement.contract_budget ?? procurement.budget ?? null
-      const amountWithVat = paymentRows.reduce<number | null>((sum, current) => {
-        if (current.amount_with_vat == null || Number.isNaN(Number(current.amount_with_vat))) return sum
-        return (sum ?? 0) + Number(current.amount_with_vat)
-      }, null)
+      const paymentSummary = summarizePaymentRows(paymentRows)
+      const amountWithoutVat = paymentSummary.amount_without_vat ?? procurement.contract_budget ?? procurement.budget ?? null
+      const amountWithVat = paymentSummary.amount_with_vat
 
       const cpvItems = ((cpvResult.data ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
         .map((item) => ({
@@ -821,7 +816,7 @@ export default function ContractsPage() {
         region_normalized_value: string | null
         region_value: string | null
       }>)[0] ?? null
-      const beneficiary = paymentPrimary?.beneficiary_name ?? row.beneficiary_name
+      const beneficiary = paymentSummary.beneficiary_name ?? row.beneficiary_name
       const whyText = firstPipePart(procurement.short_descriptions) ?? primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
       const cpvLabel = primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
       const contractRelatedAda = clean(procurement.contract_related_ada)
@@ -854,8 +849,8 @@ export default function ContractsPage() {
         startDate: fmtDateLabel(cleanText(procurement.start_date)),
         endDate: fmtDateLabel(cleanText(procurement.end_date)),
         organizationVat: clean(procurement.organization_vat_number) || '—',
-        beneficiaryVat: clean(paymentPrimary?.beneficiary_vat_number) || '—',
-        signers: clean(paymentPrimary?.signers) || '—',
+        beneficiaryVat: clean(paymentSummary.beneficiary_vat_number) || '—',
+        signers: clean(paymentSummary.signers) || '—',
         assignCriteria: clean(procurement.assign_criteria) || '—',
         contractKind: clean(procurement.contract_type) || '—',
         awardProcedure: clean(procurement.award_procedure) || '—',
@@ -865,7 +860,7 @@ export default function ContractsPage() {
         fundingEspa: clean(procurement.funding_details_espa) || '—',
         fundingRegular: clean(procurement.funding_details_regular_budget) || '—',
         auctionRefNo: clean(procurement.auction_ref_no) || '—',
-        paymentRefNo: clean(paymentPrimary?.payment_ref_no) || '—',
+        paymentRefNo: clean(paymentSummary.payment_ref_no) || '—',
         shortDescription: firstPipePart(procurement.short_descriptions) ?? '—',
         rawBudget: fmtEur(procurement.budget),
         contractBudget: fmtEur(procurement.contract_budget),

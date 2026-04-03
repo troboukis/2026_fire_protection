@@ -81,3 +81,56 @@ def test_is_excluded_drops_school_contracts_by_title_keyword():
     }
 
     assert collector.is_excluded(item) is True
+
+
+def test_parse_item_preserves_all_contracting_members():
+    collector = ProcurementCollector(
+        cpvs={},
+        start_date=pd.Timestamp("2026-01-01").date(),
+        end_date=pd.Timestamp("2026-01-02").date(),
+        max_window_days=1,
+    )
+
+    row = collector.parse_item(
+        {
+            "referenceNumber": "26SYMV018661963",
+            "contractingDataDetails": {
+                "contractingMembersDataList": [
+                    {
+                        "vatNumber": "046212303",
+                        "name": "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ",
+                        "country": {"key": "GR", "value": "Ελλάδα"},
+                    },
+                    {
+                        "vatNumber": "045497240",
+                        "name": "ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
+                        "country": {"key": "GR", "value": "Ελλάδα"},
+                    },
+                ]
+            },
+            "objectDetailsList": [],
+        }
+    )
+
+    assert row["contractingMembers_count"] == 2
+    assert row["contractingMembers_vatNumbers"] == ["046212303", "045497240"]
+    assert row["contractingMembers_names"] == [
+        "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ",
+        "ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
+    ]
+    assert row["contractingMembers_details"] == [
+        {
+            "vatNumber": "046212303",
+            "name": "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ",
+            "countryKey": "GR",
+            "countryValue": "Ελλάδα",
+        },
+        {
+            "vatNumber": "045497240",
+            "name": "ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
+            "countryKey": "GR",
+            "countryValue": "Ελλάδα",
+        },
+    ]
+    assert row["firstMember_vatNumber"] == "046212303"
+    assert row["firstMember_name"] == "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ"
