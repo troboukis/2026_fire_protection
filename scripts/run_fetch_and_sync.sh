@@ -18,7 +18,7 @@ fi
 DOWNLOAD_DIAVGEIA_PDFS="${DOWNLOAD_DIAVGEIA_PDFS:-0}"
 REBUILD_ORG_MAPPINGS="${REBUILD_ORG_MAPPINGS:-0}"
 RUN_DB_INGEST="${RUN_DB_INGEST:-1}"
-ERD_TABLES="${ERD_TABLES:-region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,fund,diavgeia_procurement,beneficiary}"
+ERD_TABLES="${ERD_TABLES:-region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,diavgeia_procurement,beneficiary}"
 
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "[0/11] Working tree has local changes. Auto-committing them first..."
@@ -53,7 +53,7 @@ echo "[6/11] Fetch Copernicus fires and upsert public.copernicus..."
 ./.fireprotection/bin/python src/fetch_copernicus.py
 
 if [[ "$RUN_DB_INGEST" == "1" ]]; then
-echo "[7/13] Sync ERD tables to database (stage2_load_erd.py, excluding forest_fire)..."
+echo "[7/13] Sync ERD tables to database (stage2_load_erd.py, excluding static fund and forest_fire)..."
   ./.fireprotection/bin/python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 else
   echo "[7/13] Skipping DB ingest (set RUN_DB_INGEST=1 to enable; default is enabled)."

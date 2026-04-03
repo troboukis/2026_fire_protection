@@ -3,8 +3,11 @@
 Reset procurement-related fact/dimension tables before a full reingest.
 
 This script truncates:
+  - works
+  - diavgeia_beneficiary
   - payment_beneficiary
   - payment
+  - beneficiary
   - cpv
   - procurement
   - municipality
@@ -55,8 +58,11 @@ def main() -> int:
             cur.execute(
                 """
                 TRUNCATE TABLE
+                  public.works,
+                  public.diavgeia_beneficiary,
                   public.payment_beneficiary,
                   public.payment,
+                  public.beneficiary,
                   public.cpv,
                   public.procurement,
                   public.municipality,
