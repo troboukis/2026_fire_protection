@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
+import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
@@ -27,6 +28,7 @@ export type OrganizationSectionData = {
   latestSignedAt: string | null
   activityWorkPoints: Array<{ lat: number; lon: number; work: string; pointName: string }>
   timeline: OrganizationTimelineItem[]
+  contractsPageHref: string | null
 }
 
 type OrganizationSectionProps = {
@@ -287,6 +289,11 @@ export default function OrganizationSection({
               </li>
             ))}
           </ul>
+          {data.contractsPageHref ? (
+            <Link className="organization__timeline-all-link" to={data.contractsPageHref}>
+              Όλες οι συμβάσεις
+            </Link>
+          ) : null}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as d3 from 'd3'
+import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
@@ -271,6 +272,11 @@ export default function RegionSection({
               </li>
             ))}
           </ul>
+          {data.contractsPageHref ? (
+            <Link className="organization__timeline-all-link" to={data.contractsPageHref}>
+              Όλες οι συμβάσεις
+            </Link>
+          ) : null}
         </div>
       </div>
     </section>
