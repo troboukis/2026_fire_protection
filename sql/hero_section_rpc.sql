@@ -33,56 +33,9 @@ DECLARE
   v_top_cpv_prev1_count int := 0;
   v_curve jsonb := '[]'::jsonb;
 BEGIN
-  WITH pay_by_proc AS (
-    SELECT py.procurement_id
-    FROM public.payment py
-    WHERE py.amount_without_vat IS NOT NULL
-    GROUP BY py.procurement_id
-  ),
-  proc_ranked AS (
-    SELECT
-      p.id,
-      p.contract_signed_date,
-      ROW_NUMBER() OVER (
-        PARTITION BY COALESCE(
-          NULLIF(TRIM(p.reference_number), ''),
-          NULLIF(TRIM(p.diavgeia_ada), ''),
-          NULLIF(TRIM(p.contract_number), ''),
-          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
-        )
-        ORDER BY p.id DESC
-      ) AS rn
-    FROM public.procurement p
-    JOIN pay_by_proc pp ON pp.procurement_id = p.id
-    WHERE p.contract_signed_date IS NOT NULL
-      AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
-      AND NOT EXISTS (
-        SELECT 1
-        FROM public.procurement p2
-        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
-      )
-  )
-  SELECT MAX(contract_signed_date)
-  INTO v_as_of_date
-  FROM proc_ranked
-  WHERE rn = 1
-    AND EXTRACT(YEAR FROM contract_signed_date) = p_year_main;
-
-  IF v_as_of_date IS NULL THEN
-    RETURN jsonb_build_object(
-      'period_main_start', to_char(make_date(p_year_main, 1, 1), 'YYYY-MM-DD'),
-      'period_main_end', to_char(make_date(p_year_main, 1, 1), 'YYYY-MM-DD'),
-      'total_main', 0,
-      'total_prev1', 0,
-      'total_prev2', 0,
-      'top_contract_type', null,
-      'top_contract_type_count', 0,
-      'top_contract_type_prev1_count', 0,
-      'top_cpv_text', null,
-      'top_cpv_count', 0,
-      'top_cpv_prev1_count', 0,
-      'curve_points', '[]'::jsonb
-    );
+  v_as_of_date := LEAST(CURRENT_DATE, make_date(p_year_main, 12, 31));
+  IF v_as_of_date < make_date(p_year_main, 1, 1) THEN
+    v_as_of_date := make_date(p_year_main, 1, 1);
   END IF;
 
   v_end_month := EXTRACT(MONTH FROM v_as_of_date);

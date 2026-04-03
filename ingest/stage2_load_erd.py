@@ -1444,12 +1444,17 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--tables",
         type=str,
-        default="all",
+        default="region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,forest_fire,diavgeia_procurement,beneficiary",
         help=(
             "comma-separated stages: region,municipality,organization,diavgeia_document_type,"
             "procurement,cpv,diavgeia,payment,forest_fire,fund,diavgeia_procurement,beneficiary "
-            "(default: all)"
+            "(default excludes static fund table)"
         ),
+    )
+    p.add_argument(
+        "--allow-static-fund-reload",
+        action="store_true",
+        help="Allow writes to public.fund. Disabled by default because fund is treated as static.",
     )
     p.add_argument(
         "--reprocess-existing-procurement",
@@ -1703,6 +1708,11 @@ def main() -> None:
     unknown = selected_tables - all_tables
     if unknown:
         raise ValueError(f"Unknown tables in --tables: {', '.join(sorted(unknown))}")
+    if "fund" in selected_tables and not args.allow_static_fund_reload:
+        raise ValueError(
+            "fund reload is disabled by default. "
+            "Use --tables ... without fund, or pass --allow-static-fund-reload for an intentional one-off reload."
+        )
     if ("cpv" in selected_tables or "payment" in selected_tables) and "procurement" not in selected_tables:
         raise ValueError("cpv/payment require procurement in the same run (use --tables including procurement)")
 
