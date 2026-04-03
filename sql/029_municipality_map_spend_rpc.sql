@@ -60,10 +60,16 @@ direct_municipality AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
-    AND p.end_date IS NOT NULL
-    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
-    AND p.end_date >= make_date(p_year, 1, 1)
+    AND p.contract_signed_date IS NOT NULL
+    AND p.contract_signed_date <= make_date(p_year, 12, 31)
+    AND (
+      p.contract_signed_date >= make_date(p_year, 1, 1)
+      OR (
+        p.contract_signed_date < make_date(p_year, 1, 1)
+        AND p.end_date IS NOT NULL
+        AND p.end_date >= make_date(p_year, 1, 1)
+      )
+    )
     AND p.municipality_key IS NOT NULL
     AND (
       p.canonical_owner_scope = 'municipality'
@@ -106,10 +112,16 @@ attributed_organization AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
-    AND p.end_date IS NOT NULL
-    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
-    AND p.end_date >= make_date(p_year, 1, 1)
+    AND p.contract_signed_date IS NOT NULL
+    AND p.contract_signed_date <= make_date(p_year, 12, 31)
+    AND (
+      p.contract_signed_date >= make_date(p_year, 1, 1)
+      OR (
+        p.contract_signed_date < make_date(p_year, 1, 1)
+        AND p.end_date IS NOT NULL
+        AND p.end_date >= make_date(p_year, 1, 1)
+      )
+    )
     AND p.municipality_key IS NOT NULL
     AND p.organization_key IS NOT NULL
     AND COALESCE(p.canonical_owner_scope, '') = 'organization'
@@ -155,10 +167,16 @@ coverage_organization AS (
       FROM public.procurement p2
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
-    AND COALESCE(p.start_date, p.contract_signed_date) IS NOT NULL
-    AND p.end_date IS NOT NULL
-    AND COALESCE(p.start_date, p.contract_signed_date) <= make_date(p_year, 12, 31)
-    AND p.end_date >= make_date(p_year, 1, 1)
+    AND p.contract_signed_date IS NOT NULL
+    AND p.contract_signed_date <= make_date(p_year, 12, 31)
+    AND (
+      p.contract_signed_date >= make_date(p_year, 1, 1)
+      OR (
+        p.contract_signed_date < make_date(p_year, 1, 1)
+        AND p.end_date IS NOT NULL
+        AND p.end_date >= make_date(p_year, 1, 1)
+      )
+    )
     AND COALESCE(org.authority_scope, 'other') = 'municipality'
 ),
 unioned AS (

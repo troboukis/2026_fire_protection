@@ -8,7 +8,7 @@ import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecord
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
-import { isContractActiveOnDate } from '../lib/contractWindow'
+import { isContractActiveInYear, isContractActiveOnDate } from '../lib/contractWindow'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import {
@@ -1013,7 +1013,6 @@ export default function MunicipalitiesPage() {
           ?? cleanText(selectedMunicipality?.dhmos)
           ?? cleanText(selectedMunicipality?.municipality_normalized_name)
           ?? null
-        const todayIso = new Date().toISOString().slice(0, 10)
         const procurementRows = await fetchAllPaginatedRows<MunicipalityContractProcurementRow>(
           (from, to) => supabase
             .from('procurement')
@@ -1079,7 +1078,7 @@ export default function MunicipalitiesPage() {
         for (const row of procurementRows) {
           if (row.cancelled) continue
           if (cleanText(row.next_ref_no)) continue
-          if (!isContractActiveOnDate(row, todayIso)) continue
+          if (!isContractActiveInYear(row, currentYear)) continue
 
           const organizationKey = cleanText(row.organization_key)
           const organization = organizationKey ? organizationByKey.get(organizationKey) ?? null : null
@@ -1100,9 +1099,7 @@ export default function MunicipalitiesPage() {
             title: row.title,
             procedure_type_value: row.procedure_type_value,
             beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
-            amount_without_vat: payment?.amount && payment.amount > 0
-              ? payment.amount
-              : (row.contract_budget ?? row.budget ?? null),
+            amount_without_vat: payment?.amount ?? null,
             diavgeia_ada: row.diavgeia_ada,
             reference_number: row.reference_number,
           })
@@ -2155,9 +2152,7 @@ export default function MunicipalitiesPage() {
               title: row.title,
               procedure_type_value: row.procedure_type_value,
               beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
-              amount_without_vat: payment?.amount && payment.amount > 0
-                ? payment.amount
-                : (row.contract_budget ?? row.budget ?? null),
+              amount_without_vat: payment?.amount ?? null,
               diavgeia_ada: row.diavgeia_ada,
               reference_number: row.reference_number,
             })

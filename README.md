@@ -38,6 +38,7 @@ Script behavior:
 - pulls latest `origin/main` with rebase
 - runs `fetch_diavgeia.py` (PDF download is disabled by default)
 - runs `fetch_kimdis_procurements.py`, `src/fetch_copernicus.py`, and DB ingest when enabled
+- automatic DB ingest excludes the static `fund` table; reload it only intentionally
 - does not run `locate_work`; that step is separate via `src/run_locate_work_updates.py`
 - commits changed artifacts (`data/`, `state/`, `logs/`)
 - pushes to `origin/main`
