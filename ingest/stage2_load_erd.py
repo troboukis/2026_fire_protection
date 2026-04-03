@@ -1422,9 +1422,9 @@ def fund_rows(fund: pd.DataFrame) -> list[tuple]:
     out = []
     for _, r in fund.iterrows():
         out.append((
-            t(r.get("region_id")),
-            None,
-            t(r.get("municipality_code")),
+            t(r.get("region_key")) or t(r.get("region_id")),
+            t(r.get("organization_key")),
+            t(r.get("municipality_key")) or t(r.get("municipality_code")) or t(r.get("municipality_id")),
             i(r.get("year")),
             t(r.get("allocation_type")),
             t(r.get("recipient_type")),

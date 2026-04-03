@@ -41,3 +41,14 @@ Options (choose one and document it in the methodology page):
 - If per-municipality breakdown is unavailable, regional-level totals are a fallback
 - Multiple rows per municipality per year are fine (one row per program/source)
 - The ingestion script will aggregate to municipality-year level for the accountability metric
+
+## Maintenance note
+
+Whenever a new PDF is added to [data/funding](/Users/troboukis/Code/fire_protection_2026/data/funding):
+
+- Add it to `DOC_SPECS` in [build_fund_csv.py](/Users/troboukis/Code/fire_protection_2026/scripts/build_fund_csv.py)
+- Set the correct parser and expected row count / total amount from the source document
+- Rebuild [municipal_funding.csv](/Users/troboukis/Code/fire_protection_2026/data/funding/municipal_funding.csv)
+- Check that municipality rows resolve to DB `municipality_key` values from [municipality.csv](/Users/troboukis/Code/fire_protection_2026/backupDB/municipality.csv)
+- Check that syndesmos rows resolve to DB `organization_key` values from [organization.csv](/Users/troboukis/Code/fire_protection_2026/backupDB/organization.csv)
+- If a new PDF introduces name variants or truncated names, extend the override maps in [build_fund_csv.py](/Users/troboukis/Code/fire_protection_2026/scripts/build_fund_csv.py) before ingesting to Supabase

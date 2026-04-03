@@ -24,7 +24,7 @@ interface Tooltip {
   x: number
   y: number
   name: string
-  spendPer100k: number | null
+  amountPer100k: number | null
   signedCurrentCount: number
   activePreviousCount: number
 }
@@ -58,11 +58,12 @@ function municipalityCode(d: GeoFeature): string {
 
 interface Props {
   geojson: GeoData | null
-  choroplethData: Record<string, number>   // municipality_id → spend_per_100k
+  choroplethData: Record<string, number>
   procMunicipalities: Set<string>
   signedCurrentCountByMunicipality?: Map<string, number>
   activePreviousCountByMunicipality?: Map<string, number>
   currentYear: number
+  metricLabel: string
   viewMode?: 'greece' | 'attica'
   onDeselect: () => void
   onMunicipalityClick?: (municipalityId: string) => void
@@ -77,6 +78,7 @@ export function GreeceMap({
   signedCurrentCountByMunicipality,
   activePreviousCountByMunicipality,
   currentYear,
+  metricLabel,
   viewMode = 'greece',
   onDeselect,
   onMunicipalityClick,
@@ -222,14 +224,14 @@ export function GreeceMap({
         }
         const dbLabel = municipalityLabelByIdRef.current.get(code)
         const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
-        const spendPer100k = choroplethRef.current[code] ?? null
+        const amountPer100k = choroplethRef.current[code] ?? null
         const signedCurrentCount = signedCurrentCountByMunicipalityRef.current.get(code) ?? 0
         const activePreviousCount = activePreviousCountByMunicipalityRef.current.get(code) ?? 0
         setTooltip({
           x: event.offsetX,
           y: event.offsetY,
           name: dbLabel || fallbackGeoName || code,
-          spendPer100k,
+          amountPer100k,
           signedCurrentCount,
           activePreviousCount,
         })
@@ -252,14 +254,14 @@ export function GreeceMap({
         if (!code) return
         const dbLabel = municipalityLabelByIdRef.current.get(code)
         const fallbackGeoName = String((d.properties as { name?: string | null }).name ?? '').trim()
-        const spendPer100k = choroplethRef.current[code] ?? null
+        const amountPer100k = choroplethRef.current[code] ?? null
         const signedCurrentCount = signedCurrentCountByMunicipalityRef.current.get(code) ?? 0
         const activePreviousCount = activePreviousCountByMunicipalityRef.current.get(code) ?? 0
         setTooltip({
           x: event.offsetX,
           y: event.offsetY,
           name: dbLabel || fallbackGeoName || code,
-          spendPer100k,
+          amountPer100k,
           signedCurrentCount,
           activePreviousCount,
         })
@@ -341,8 +343,8 @@ export function GreeceMap({
           style={{ left: tooltipPosition.left, top: tooltipPosition.top, transform: 'none' }}
         >
           <span className="map-tooltip-name">{tooltip.name}</span>
-          {tooltip.spendPer100k != null && (
-            <span className="map-tooltip-pct">{fmtPer100kEur(tooltip.spendPer100k)} ανά 100.000 κατοίκους</span>
+          {tooltip.amountPer100k != null && (
+            <span className="map-tooltip-pct">{metricLabel}: {fmtPer100kEur(tooltip.amountPer100k)} ανά 100.000 κατοίκους</span>
           )}
           <span className="map-tooltip-pct">{tooltip.signedCurrentCount.toLocaleString('el-GR')} συμβάσεις το {currentYear}</span>
           <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString('el-GR')} συμβάσεις πριν το {currentYear}, που ήταν ενεργές* το {currentYear}</span>

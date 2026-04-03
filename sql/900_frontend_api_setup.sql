@@ -1243,7 +1243,140 @@ $$;
 GRANT EXECUTE ON FUNCTION public.get_municipality_map_spend_per_100k(integer) TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
--- F) Environment Ministry dashboard RPC
+-- F) Municipality funding map RPC
+-- Source: sql/031_municipality_map_funding_rpc.sql
+-- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_municipality_map_funding_per_100k(integer);
+
+CREATE OR REPLACE FUNCTION public.get_municipality_map_funding_per_100k(
+  p_year integer
+)
+RETURNS TABLE (
+  municipality_key text,
+  municipality_name text,
+  population_total numeric,
+  total_amount_eur numeric,
+  amount_per_100k numeric
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+WITH municipality_funding AS (
+  SELECT
+    f.municipality_key,
+    SUM(COALESCE(f.amount_eur, 0)) AS total_amount_eur
+  FROM public.fund f
+  WHERE f.year = p_year
+    AND NULLIF(TRIM(f.municipality_key), '') IS NOT NULL
+  GROUP BY f.municipality_key
+)
+SELECT
+  mfpd.municipality_key,
+  mfpd.dhmos AS municipality_name,
+  mfpd.plithismos_synolikos AS population_total,
+  COALESCE(mf.total_amount_eur, 0) AS total_amount_eur,
+  ROUND(
+    (
+      COALESCE(mf.total_amount_eur, 0) * 100000.0
+    ) / NULLIF(mfpd.plithismos_synolikos, 0),
+    2
+  ) AS amount_per_100k
+FROM public.municipality_fire_protection_data mfpd
+LEFT JOIN municipality_funding mf
+  ON mf.municipality_key = mfpd.municipality_key
+WHERE mfpd.plithismos_synolikos IS NOT NULL
+  AND mfpd.plithismos_synolikos > 0
+ORDER BY amount_per_100k DESC NULLS LAST, total_amount_eur DESC, mfpd.dhmos;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_municipality_map_funding_per_100k(integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- G) Homepage funding RPC
+-- Source: sql/032_homepage_funding_rpc.sql
+-- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_homepage_funding(integer, integer);
+
+CREATE OR REPLACE FUNCTION public.get_homepage_funding(
+  p_year_main integer,
+  p_year_start integer DEFAULT 2016
+)
+RETURNS jsonb
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+WITH filtered_funding AS (
+  SELECT
+    f.year::int AS year,
+    COALESCE(f.amount_eur, 0) AS amount_eur,
+    LOWER(BTRIM(COALESCE(f.allocation_type, ''))) AS allocation_type_norm,
+    LOWER(BTRIM(COALESCE(f.recipient_type, ''))) AS recipient_type_norm
+  FROM public.fund f
+  WHERE f.year IS NOT NULL
+    AND f.year BETWEEN p_year_start AND p_year_main
+    AND LOWER(BTRIM(COALESCE(f.recipient_type, ''))) IN ('δήμος', 'σύνδεσμος', 'σύνδεσμος δήμων')
+),
+latest_year AS (
+  SELECT COALESCE(MAX(ff.year), p_year_main) AS year_main
+  FROM filtered_funding ff
+),
+aggregated_funding AS (
+  SELECT
+    ff.year,
+    ROUND(SUM(CASE WHEN ff.allocation_type_norm = 'τακτική' THEN ff.amount_eur ELSE 0 END), 2) AS regular_amount,
+    ROUND(SUM(CASE WHEN ff.allocation_type_norm = 'τακτική' THEN 0 ELSE ff.amount_eur END), 2) AS emergency_amount,
+    ROUND(SUM(CASE WHEN ff.recipient_type_norm = 'δήμος' THEN ff.amount_eur ELSE 0 END), 2) AS municipality_amount,
+    ROUND(SUM(CASE WHEN ff.recipient_type_norm IN ('σύνδεσμος', 'σύνδεσμος δήμων') THEN ff.amount_eur ELSE 0 END), 2) AS syndesmos_amount,
+    ROUND(SUM(ff.amount_eur), 2) AS total_amount
+  FROM filtered_funding ff
+  GROUP BY ff.year
+),
+history AS (
+  SELECT
+    years.year,
+    COALESCE(af.regular_amount, 0) AS regular_amount,
+    COALESCE(af.emergency_amount, 0) AS emergency_amount,
+    COALESCE(af.municipality_amount, 0) AS municipality_amount,
+    COALESCE(af.syndesmos_amount, 0) AS syndesmos_amount,
+    COALESCE(af.total_amount, 0) AS total_amount
+  FROM generate_series(p_year_start, p_year_main) AS years(year)
+  LEFT JOIN aggregated_funding af
+    ON af.year = years.year
+  ORDER BY years.year
+)
+SELECT jsonb_build_object(
+  'year_main', (SELECT ly.year_main FROM latest_year ly),
+  'year_previous', (SELECT ly.year_main - 1 FROM latest_year ly),
+  'history_start_year', p_year_start,
+  'current_total', COALESCE((SELECT h.total_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main), 0),
+  'previous_total', COALESCE((SELECT h.total_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main - 1), 0),
+  'current_regular_amount', COALESCE((SELECT h.regular_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main), 0),
+  'current_emergency_amount', COALESCE((SELECT h.emergency_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main), 0),
+  'current_municipality_amount', COALESCE((SELECT h.municipality_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main), 0),
+  'current_syndesmos_amount', COALESCE((SELECT h.syndesmos_amount FROM history h JOIN latest_year ly ON h.year = ly.year_main), 0),
+  'history', COALESCE((
+    SELECT jsonb_agg(
+      jsonb_build_object(
+        'year', h.year,
+        'regular_amount', h.regular_amount,
+        'emergency_amount', h.emergency_amount,
+        'municipality_amount', h.municipality_amount,
+        'syndesmos_amount', h.syndesmos_amount,
+        'total_amount', h.total_amount
+      )
+      ORDER BY h.year
+    )
+    FROM history h
+  ), '[]'::jsonb)
+);
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_homepage_funding(integer, integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- H) Environment Ministry dashboard RPC
 -- Source: sql/030_environment_ministry_dashboard_rpc.sql
 -- -------------------------------------------------------------
 CREATE OR REPLACE FUNCTION public.get_environment_ministry_dashboard(
@@ -1764,7 +1897,128 @@ $$;
 GRANT EXECUTE ON FUNCTION public.get_environment_ministry_dashboard(integer) TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
--- G) Table/function grants for frontend reads
+-- I) Latest funding-year municipality + syndesmos spend RPC
+-- Source: sql/033_latest_funding_year_spend_rpc.sql
+-- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_latest_funding_year_municipality_spend();
+
+CREATE OR REPLACE FUNCTION public.get_latest_funding_year_municipality_spend()
+RETURNS jsonb
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+WITH latest_funding_year AS (
+  SELECT MAX(f.year)::int AS year_main
+  FROM public.fund f
+  WHERE f.year IS NOT NULL
+),
+payment_agg AS (
+  SELECT
+    py.procurement_id,
+    SUM(COALESCE(py.amount_without_vat, 0)) AS amount_without_vat
+  FROM public.payment py
+  JOIN latest_funding_year ly
+    ON ly.year_main IS NOT NULL
+   AND py.fiscal_year = ly.year_main
+  WHERE py.procurement_id IS NOT NULL
+    AND py.amount_without_vat IS NOT NULL
+  GROUP BY py.procurement_id
+),
+proc_ranked AS (
+  SELECT
+    p.id AS procurement_id,
+    pa.amount_without_vat,
+    COALESCE(p.canonical_owner_scope, '') AS canonical_owner_scope,
+    COALESCE(org.authority_scope, 'other') AS authority_scope,
+    COALESCE(org.organization_normalized_value, org.organization_value, '') AS organization_name,
+    ROW_NUMBER() OVER (
+      PARTITION BY COALESCE(
+        NULLIF(BTRIM(p.reference_number), ''),
+        NULLIF(BTRIM(p.diavgeia_ada), ''),
+        NULLIF(BTRIM(p.contract_number), ''),
+        CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+      )
+      ORDER BY p.id DESC
+    ) AS rn
+  FROM public.procurement p
+  JOIN payment_agg pa
+    ON pa.procurement_id = p.id
+  LEFT JOIN LATERAL (
+    SELECT
+      o.organization_normalized_value,
+      o.organization_value,
+      o.authority_scope
+    FROM public.organization o
+    WHERE o.organization_key = p.organization_key
+    ORDER BY o.id
+    LIMIT 1
+  ) org ON TRUE
+  WHERE COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(BTRIM(p.next_ref_no), '') IS NULL
+    AND NOT EXISTS (
+      SELECT 1
+      FROM public.procurement p2
+      WHERE NULLIF(BTRIM(p2.prev_reference_no), '') = p.reference_number
+    )
+),
+classified AS (
+  SELECT
+    pr.procurement_id,
+    pr.amount_without_vat,
+    (
+      pr.canonical_owner_scope = 'municipality'
+      OR pr.authority_scope = 'municipality'
+    ) AS is_municipality,
+    (
+      NULLIF(BTRIM(pr.organization_name), '') IS NOT NULL
+      AND (
+        pr.organization_name ILIKE '%συνδεσμ%'
+        OR pr.organization_name ILIKE '%σύνδεσμ%'
+      )
+    ) AS is_syndesmos
+  FROM proc_ranked pr
+  WHERE pr.rn = 1
+)
+SELECT jsonb_build_object(
+  'latest_funding_year', (SELECT ly.year_main FROM latest_funding_year ly),
+  'municipality_amount', COALESCE((
+    SELECT ROUND(SUM(c.amount_without_vat), 2)
+    FROM classified c
+    WHERE c.is_municipality
+  ), 0),
+  'syndesmos_amount', COALESCE((
+    SELECT ROUND(SUM(c.amount_without_vat), 2)
+    FROM classified c
+    WHERE c.is_syndesmos
+  ), 0),
+  'total_amount', COALESCE((
+    SELECT ROUND(SUM(c.amount_without_vat), 2)
+    FROM classified c
+    WHERE c.is_municipality OR c.is_syndesmos
+  ), 0),
+  'municipality_procurement_count', COALESCE((
+    SELECT COUNT(*)
+    FROM classified c
+    WHERE c.is_municipality
+  ), 0),
+  'syndesmos_procurement_count', COALESCE((
+    SELECT COUNT(*)
+    FROM classified c
+    WHERE c.is_syndesmos
+  ), 0),
+  'total_procurement_count', COALESCE((
+    SELECT COUNT(*)
+    FROM classified c
+    WHERE c.is_municipality OR c.is_syndesmos
+  ), 0)
+);
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_latest_funding_year_municipality_spend() TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- J) Table/function grants for frontend reads
 -- -------------------------------------------------------------
 GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
@@ -1777,22 +2031,24 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public
 GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
--- H) Force PostgREST to reload schema cache
+-- K) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
 NOTIFY pgrst, 'reload schema';
 
 -- -------------------------------------------------------------
--- I) Quick verification (run after setup)
+-- L) Quick verification (run after setup)
 -- -------------------------------------------------------------
 -- 1) Check RPC functions exist
 -- select p.proname, pg_get_function_arguments(p.oid) as args
 -- from pg_proc p
 -- join pg_namespace n on n.oid = p.pronamespace
 -- where n.nspname = 'public'
---   and p.proname in ('get_hero_section_data', 'get_contracts_page', 'get_featured_beneficiaries', 'get_municipality_map_spend_per_100k', 'normalize_procedure_type');
+--   and p.proname in ('get_hero_section_data', 'get_homepage_funding', 'get_contracts_page', 'get_featured_beneficiaries', 'get_municipality_map_spend_per_100k', 'get_latest_funding_year_municipality_spend', 'normalize_procedure_type');
 
 -- 2) Quick smoke test RPC calls
 -- select public.get_hero_section_data(2026, 2024);
+-- select public.get_homepage_funding(2026, 2016);
 -- select * from public.get_contracts_page(NULL,NULL,NULL,NULL,NULL,NULL,1,5);
 -- select * from public.get_featured_beneficiaries(2026, 5);
 -- select * from public.get_municipality_map_spend_per_100k(2026) limit 20;
+-- select public.get_latest_funding_year_municipality_spend();

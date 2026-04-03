@@ -168,6 +168,11 @@ type ContractChartHoverState = {
   svgX: number
 }
 
+type FundingChartHoverState = {
+  year: number
+  leftPct: number
+}
+
 type MunicipalityPointTooltip = {
   id?: string
   x: number
@@ -220,6 +225,22 @@ type MunicipalityMapSpendRpcRow = {
   municipality_key: string | null
   amount_per_100k: number | string | null
   active_previous_count: number | string | null
+}
+
+type MunicipalityFundRow = {
+  municipality_key: string | null
+  year?: number | string | null
+  amount_eur: number | string | null
+  allocation_type: string | null
+  recipient_type: string | null
+  source_ada: string | null
+}
+
+type MunicipalityFundingHistoryEntry = {
+  year: number
+  regularAmount: number
+  emergencyAmount: number
+  totalAmount: number
 }
 
 type TerrainTileOverlay = {
@@ -321,11 +342,6 @@ function formatActivePreviousContractsSentence(currentYear: number, count: numbe
     return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}.`
   }
   return `Εντοπίζουμε ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
-}
-
-function formatPct(value: number | null, maximumFractionDigits = 1): string {
-  if (value == null || Number.isNaN(value)) return '—'
-  return `${(value * 100).toLocaleString('el-GR', { maximumFractionDigits })}%`
 }
 
 function formatStremmataFromHa(value: number | null, maximumFractionDigits = 1): string {
@@ -722,10 +738,13 @@ export default function MunicipalitiesPage() {
   const [profile, setProfile] = useState<MunicipalityProfileRow | null>(null)
   const [municipalitySpendPer100k, setMunicipalitySpendPer100k] = useState<number | null>(null)
   const [municipalityActivePreviousCount, setMunicipalityActivePreviousCount] = useState<number | null>(null)
+  const [municipalityKapFundingAmount, setMunicipalityKapFundingAmount] = useState<number | null>(null)
+  const [nationalKapFundingAmount, setNationalKapFundingAmount] = useState<number | null>(null)
+  const [municipalityKapFundingSourceAda, setMunicipalityKapFundingSourceAda] = useState<string | null>(null)
+  const [municipalityKapFundingAllocationTypes, setMunicipalityKapFundingAllocationTypes] = useState<string[]>([])
+  const [municipalityFundingHistory, setMunicipalityFundingHistory] = useState<MunicipalityFundingHistoryEntry[]>([])
   const [contractYearSummary, setContractYearSummary] = useState<ContractYearSummary[]>([])
   const [contractCurvePoints, setContractCurvePoints] = useState<ContractCurvePoint[]>([])
-  const [topContractCpvByYear, setTopContractCpvByYear] = useState<Record<number, { label: string; count: number } | null>>({})
-  const [procedureBreakdown, setProcedureBreakdown] = useState<ProcedureBreakdownItem[]>([])
   const [contractOrganizationById, setContractOrganizationById] = useState<Record<number, string>>({})
   const [latestMunicipalityContractRows, setLatestMunicipalityContractRows] = useState<MunicipalityContractRow[]>([])
   const [latestMunicipalityContractsLoading, setLatestMunicipalityContractsLoading] = useState(false)
@@ -744,8 +763,10 @@ export default function MunicipalitiesPage() {
   const normalizedSearch = useMemo(() => normalizeMunicipalitySearch(search), [search])
   const fireYearMenuRef = useRef<HTMLDivElement | null>(null)
   const contractChartFrameRef = useRef<HTMLDivElement | null>(null)
+  const fundingChartFrameRef = useRef<HTMLDivElement | null>(null)
   const municipalityMapFrameRef = useRef<HTMLDivElement | null>(null)
   const [contractChartHover, setContractChartHover] = useState<ContractChartHoverState | null>(null)
+  const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
   const [pointTooltip, setPointTooltip] = useState<MunicipalityPointTooltip | null>(null)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [isMobileMunicipalityMap, setIsMobileMunicipalityMap] = useState(() => {
@@ -2023,11 +2044,14 @@ export default function MunicipalitiesPage() {
       setForestFireRows([])
       setCopernicusRows([])
       setContractCurvePoints([])
-      setTopContractCpvByYear({})
-      setProcedureBreakdown([])
       setContractOrganizationById({})
       setMunicipalitySpendPer100k(null)
       setMunicipalityActivePreviousCount(null)
+      setMunicipalityKapFundingAmount(null)
+      setNationalKapFundingAmount(null)
+      setMunicipalityKapFundingSourceAda(null)
+      setMunicipalityKapFundingAllocationTypes([])
+      setMunicipalityFundingHistory([])
 
       try {
         const municipalityOrganizationName = cleanText(selectedMunicipality?.dhmos)
@@ -2148,6 +2172,8 @@ export default function MunicipalitiesPage() {
         const [
           profileResult,
           municipalityMapSpendResult,
+          municipalityFundingResult,
+          municipalityFundingHistoryResult,
           nextForestRows,
           nextCopernicusRows,
           ...contractResults
@@ -2188,6 +2214,17 @@ export default function MunicipalitiesPage() {
           supabase.rpc('get_municipality_map_spend_per_100k', {
             p_year: currentYear,
           }),
+          supabase
+            .from('fund')
+            .select('municipality_key, amount_eur, allocation_type, recipient_type, source_ada')
+            .eq('year', currentYear)
+            .eq('recipient_type', 'δήμος'),
+          supabase
+            .from('fund')
+            .select('year, amount_eur, municipality_key, recipient_type, allocation_type')
+            .eq('municipality_key', selectedMunicipalityKey)
+            .eq('recipient_type', 'δήμος')
+            .order('year', { ascending: true }),
           fetchAllPaginatedRows<ForestFireRow>(
             (from, to) => supabase
               .from('forest_fire')
@@ -2214,6 +2251,52 @@ export default function MunicipalitiesPage() {
         const nextProfile = profileResult.data as MunicipalityProfileRow
         const municipalityMapSpendRows = (municipalityMapSpendResult.data ?? []) as MunicipalityMapSpendRpcRow[]
         const mapSpendRow = municipalityMapSpendRows.find((row) => normalizeMunicipalityKey(row.municipality_key) === selectedMunicipalityKeyNormalized) ?? null
+        const municipalityFundingRows = municipalityFundingResult.error
+          ? []
+          : ((municipalityFundingResult.data ?? []) as MunicipalityFundRow[])
+        const selectedMunicipalityFundingRows = municipalityFundingRows.filter(
+          (row) => normalizeMunicipalityKey(row.municipality_key) === selectedMunicipalityKeyNormalized,
+        )
+        const nextMunicipalityKapFundingAmount = selectedMunicipalityFundingRows.reduce(
+          (sum, row) => sum + (toNumber(row.amount_eur) ?? 0),
+          0,
+        )
+        const nextNationalKapFundingAmount = municipalityFundingRows.reduce(
+          (sum, row) => sum + (toNumber(row.amount_eur) ?? 0),
+          0,
+        )
+        const nextMunicipalityKapFundingSourceAda = selectedMunicipalityFundingRows
+          .map((row) => cleanText(row.source_ada))
+          .find(Boolean) ?? null
+        const nextMunicipalityKapFundingAllocationTypes = Array.from(
+          new Set(
+            selectedMunicipalityFundingRows
+              .map((row) => cleanText(row.allocation_type))
+              .filter(Boolean),
+          ),
+        ) as string[]
+        const municipalityFundingHistoryRows = municipalityFundingHistoryResult.error
+          ? []
+          : ((municipalityFundingHistoryResult.data ?? []) as MunicipalityFundRow[])
+        const historyByYear = new Map<number, { regularAmount: number; emergencyAmount: number }>()
+        for (const row of municipalityFundingHistoryRows) {
+          const year = toNumber(row.year)
+          if (year == null) continue
+          const amount = toNumber(row.amount_eur) ?? 0
+          const allocationType = cleanText(row.allocation_type)?.toLocaleLowerCase('el-GR') ?? null
+          const current = historyByYear.get(year) ?? { regularAmount: 0, emergencyAmount: 0 }
+          if (allocationType === 'τακτική') current.regularAmount += amount
+          else current.emergencyAmount += amount
+          historyByYear.set(year, current)
+        }
+        const nextMunicipalityFundingHistory = [...historyByYear.entries()]
+          .map(([year, amounts]) => ({
+            year,
+            regularAmount: amounts.regularAmount,
+            emergencyAmount: amounts.emergencyAmount,
+            totalAmount: amounts.regularAmount + amounts.emergencyAmount,
+          }))
+          .sort((a, b) => a.year - b.year)
         const yearRows = (contractResults as Array<{ year: number; rows: MunicipalityContractRow[] }>)
         const nextContractOrganizationById: Record<number, string> = {}
 
@@ -2305,36 +2388,19 @@ export default function MunicipalitiesPage() {
           }
         }
 
-        const nextTopContractCpvByYear = Object.fromEntries(
-          years.map((year) => {
-            const topCpv = [...(cpvAggByYear.get(year)?.values() ?? [])]
-              .sort((a, b) => {
-                if (b.count !== a.count) return b.count - a.count
-                if (b.amount !== a.amount) return b.amount - a.amount
-                return a.label.localeCompare(b.label, 'el')
-              })[0] ?? null
-            return [year, topCpv ? { label: topCpv.label, count: topCpv.count } : null]
-          }),
-        ) as Record<number, { label: string; count: number } | null>
-
-        const nextProcedureBreakdown = [...procedureAgg.values()]
-          .sort((a, b) => {
-            if (b.count !== a.count) return b.count - a.count
-            if (b.amount !== a.amount) return b.amount - a.amount
-            return a.label.localeCompare(b.label, 'el')
-          })
-          .slice(0, 5)
-
         if (!cancelled) {
           setProfile(nextProfile)
           setMunicipalitySpendPer100k(toNumber(mapSpendRow?.amount_per_100k) ?? null)
           setMunicipalityActivePreviousCount(toNumber(mapSpendRow?.active_previous_count) ?? null)
+          setMunicipalityKapFundingAmount(nextMunicipalityKapFundingAmount > 0 ? nextMunicipalityKapFundingAmount : null)
+          setNationalKapFundingAmount(nextNationalKapFundingAmount > 0 ? nextNationalKapFundingAmount : null)
+          setMunicipalityKapFundingSourceAda(nextMunicipalityKapFundingSourceAda)
+          setMunicipalityKapFundingAllocationTypes(nextMunicipalityKapFundingAllocationTypes)
+          setMunicipalityFundingHistory(nextMunicipalityFundingHistory)
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
           setContractYearSummary(nextContractYearSummary)
           setContractCurvePoints(nextContractCurvePoints)
-          setTopContractCpvByYear(nextTopContractCpvByYear)
-          setProcedureBreakdown(nextProcedureBreakdown)
           setContractOrganizationById(nextContractOrganizationById)
           setPageLoading(false)
         }
@@ -2343,6 +2409,11 @@ export default function MunicipalitiesPage() {
           setPageError(error instanceof Error ? error.message : 'Η σελίδα δεν μπόρεσε να φορτώσει τα δεδομένα του δήμου.')
           setMunicipalitySpendPer100k(null)
           setMunicipalityActivePreviousCount(null)
+          setMunicipalityKapFundingAmount(null)
+          setNationalKapFundingAmount(null)
+          setMunicipalityKapFundingSourceAda(null)
+          setMunicipalityKapFundingAllocationTypes([])
+          setMunicipalityFundingHistory([])
           setContractOrganizationById({})
           setForestFireRows([])
           setCopernicusRows([])
@@ -2425,6 +2496,38 @@ export default function MunicipalitiesPage() {
   const areaValue = toNumber(profile?.ektasi_km2)
   const densityValue = toNumber(profile?.puknotita)
   const directContractSummary = contractYearSummary.find((entry) => entry.year === currentYear) ?? null
+  const municipalityKapFundingNote = useMemo(() => {
+    const noteParts: string[] = []
+
+    if (nationalKapFundingAmount != null) {
+      noteParts.push(`Συνολική κατανομή προς τους δήμους της χώρας: ${formatEur(nationalKapFundingAmount)}.`)
+    } else {
+      noteParts.push(`Δεν υπάρχει ακόμη διαθέσιμη κατανομή ΚΑΠ ${currentYear} για τους δήμους της χώρας.`)
+    }
+
+    return noteParts.join(' ')
+  }, [currentYear, municipalityKapFundingAllocationTypes, municipalityKapFundingSourceAda, nationalKapFundingAmount])
+  const municipalityFundingChartMax = useMemo(() => {
+    const values = municipalityFundingHistory.map((entry) => entry.totalAmount).filter((value) => Number.isFinite(value))
+    return values.length > 0 ? Math.max(1, ...values) : 1
+  }, [municipalityFundingHistory])
+  const municipalityFundingChartTicks = [1, 0.5, 0]
+  const municipalityFundingDelta = useMemo(() => {
+    const currentEntry = municipalityFundingHistory.find((entry) => entry.year === currentYear) ?? null
+    const previousEntry = municipalityFundingHistory.find((entry) => entry.year === currentYear - 1) ?? null
+
+    if (!currentEntry || !previousEntry) return null
+    if (!Number.isFinite(previousEntry.totalAmount) || previousEntry.totalAmount <= 0) return null
+
+    const pct = ((currentEntry.totalAmount - previousEntry.totalAmount) / previousEntry.totalAmount) * 100
+    if (!Number.isFinite(pct) || pct === 0) return null
+
+    return {
+      pct,
+      tone: pct > 0 ? 'positive' : 'negative',
+      label: `${pct > 0 ? '+' : ''}${formatNumber(pct, 0)}%`,
+    } as const
+  }, [currentYear, municipalityFundingHistory])
   const civicFacts = [
     {
       label: 'Πληθυσμός',
@@ -2446,17 +2549,12 @@ export default function MunicipalitiesPage() {
     {
       label: 'Βλάστηση',
       value: formatStremmata(toNumber(profile?.ektasi_vlastisis_pros_katharismo_ha), 1),
-      note: 'Έκταση περιοχών με βλάστηση που πρέπει να καθαρίζονται κάθε χρόνο',
+      note: 'Έκταση περιοχών με βλάστηση που πρέπει να καθαρίζεται κάθε χρόνο',
     },
     {
-      label: 'Υδροφόρες',
-      value: formatNumber(toNumber(profile?.oxhmata_udrofora)),
-      note: 'Διαθέσιμες υδροφόρες μονάδες',
-    },
-    {
-      label: 'Πυροσβεστικά οχήματα',
-      value: formatNumber(toNumber(profile?.oxhmata_purosvestika)),
-      note: 'Διαθέσιμος στόλος πυρόσβεσης',
+      label: 'Οχήματα πυροπροστασίας',
+      value: `${formatNumber(toNumber(profile?.oxhmata_udrofora))} υδροφόρες · ${formatNumber(toNumber(profile?.oxhmata_purosvestika))} πυροσβεστικά`,
+      note: 'Διαθέσιμος στόλος πυρόσβεσης και υποστήριξης',
     },
   ]
   const plotCleaningNarrative = buildPlotCleaningNarrative(profile)
@@ -2546,8 +2644,19 @@ export default function MunicipalitiesPage() {
       values,
     }
   }, [contractChartByYear, contractChartHover, contractChartYears])
-  const contractProcedureMax = Math.max(1, ...procedureBreakdown.map((item) => item.count))
-  const contractProcedureTotal = procedureBreakdown.reduce((sum, item) => sum + item.count, 0)
+  const fundingChartTooltip = useMemo(() => {
+    if (!fundingChartHover) return null
+    const entry = municipalityFundingHistory.find((item) => item.year === fundingChartHover.year) ?? null
+    if (!entry) return null
+
+    return {
+      year: entry.year,
+      regularAmount: entry.regularAmount,
+      emergencyAmount: entry.emergencyAmount,
+      totalAmount: entry.totalAmount,
+      leftPct: fundingChartHover.leftPct,
+    }
+  }, [fundingChartHover, municipalityFundingHistory])
   const latestMunicipalityContracts = useMemo<LatestContractCardView[]>(
     () => latestMunicipalityContractRows.map((row) => buildLatestContractCardView({
       id: String(row.procurement_id),
@@ -2565,10 +2674,6 @@ export default function MunicipalitiesPage() {
     })),
     [latestMunicipalityContractRows, selectedMunicipalityLabel],
   )
-  const currentYearTopContractCpv = topContractCpvByYear[currentYear] ?? null
-  const previousYearTopContractCpv = topContractCpvByYear[currentYear - 1] ?? null
-  const secondPreviousYearTopContractCpv = topContractCpvByYear[currentYear - 2] ?? null
-
   const heroNarrative = useMemo(() => {
     if (isEmptySelection) {
       return 'Πληκτρολόγησε όνομα δήμου και επίλεξε από τα αποτελέσματα για φόρτωση των δεδομένων του συγκεκριμένου δήμου.'
@@ -2611,9 +2716,13 @@ export default function MunicipalitiesPage() {
 
   if (isMunicipalityProfileLoading) {
     return (
-      <main className="municipalities-page">
-        <ComponentTag name="MunicipalitiesPage" />
-        <section className="municipality-page-note section-rule">
+      <main className="municipalities-page dev-tag-anchor">
+        <div className="dev-tag-stack dev-tag-stack--right">
+          <ComponentTag name="MunicipalitiesPage" />
+          <ComponentTag name="municipalities-page" kind="CLASS" />
+        </div>
+        <section className="municipality-page-note section-rule dev-tag-anchor">
+          <ComponentTag name="municipality-page-note section-rule" kind="CLASS" className="component-tag--overlay" />
           <DataLoadingCard
             title="Φόρτωση profile δήμου"
             message="Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του."
@@ -2624,11 +2733,23 @@ export default function MunicipalitiesPage() {
   }
 
   return (
-    <main className="municipalities-page">
-      <ComponentTag name="MunicipalitiesPage" />
+    <main className="municipalities-page dev-tag-anchor">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="MunicipalitiesPage" />
+        <ComponentTag name="municipalities-page" kind="CLASS" />
+      </div>
 
-      <section className="maps-controls section-rule" aria-busy={municipalitiesLoading}>
-        <div className="maps-controls__row">
+      <section className="maps-controls section-rule dev-tag-anchor" aria-busy={municipalitiesLoading}>
+        <div className="dev-tag-stack">
+          <ComponentTag name="maps-controls section-rule" kind="CLASS" />
+        </div>
+        <div className="maps-controls__row dev-tag-anchor">
+          <ComponentTag
+            name="maps-controls__row"
+            kind="CLASS"
+            className="component-tag--overlay"
+            style={{ left: 'auto', right: '0.45rem' }}
+          />
           <label className="maps-controls__search" htmlFor="municipality-search">
             <span>Αναζήτηση δήμου</span>
             <input
@@ -2750,10 +2871,16 @@ export default function MunicipalitiesPage() {
         </div>
       </section>
 
-      <section className="municipality-profile-hero section-rule">
-        <div className="municipality-profile-hero__frame">
-          <div className="municipality-profile-hero__heading">
-            <div className="municipality-profile-hero__heading-copy">
+      <section className="municipality-profile-hero section-rule dev-tag-anchor">
+        <div className="dev-tag-stack dev-tag-stack--right">
+          <ComponentTag name="municipality-profile-hero section-rule" kind="CLASS" />
+        </div>
+        <div className="municipality-profile-hero__frame dev-tag-anchor">
+          <ComponentTag name="municipality-profile-hero__frame" kind="CLASS" className="component-tag--overlay" />
+          <div className="municipality-profile-hero__heading dev-tag-anchor">
+            <ComponentTag name="municipality-profile-hero__heading" kind="CLASS" className="component-tag--overlay" />
+            <div className="municipality-profile-hero__heading-copy dev-tag-anchor">
+              <ComponentTag name="municipality-profile-hero__heading-copy" kind="CLASS" className="component-tag--overlay" />
               <div className="municipality-profile-hero__eyebrow eyebrow">
                 {isEmptySelection ? 'ΠΡΟΦΙΛ ΔΗΜΟΥ' : 'Προφίλ δήμου'}
               </div>
@@ -2769,10 +2896,12 @@ export default function MunicipalitiesPage() {
           </div>
 
           {(hasSelectedMunicipality || selectedMunicipalityKey) && (
-            <div className="municipality-profile-hero__body">
+            <div className="municipality-profile-hero__body dev-tag-anchor">
+              <ComponentTag name="municipality-profile-hero__body" kind="CLASS" className="component-tag--overlay" />
               {hasSelectedMunicipality && !pageLoading ? (
               <>
-                <div className="municipality-profile-hero__facts" aria-label="Γεωγραφικά και διοικητικά στοιχεία">
+                <div className="municipality-profile-hero__facts dev-tag-anchor" aria-label="Γεωγραφικά και διοικητικά στοιχεία">
+                  <ComponentTag name="municipality-profile-hero__facts" kind="CLASS" className="component-tag--overlay" />
                   {civicFacts.map((fact) => (
                     <div key={fact.label} className="municipality-profile-hero__fact">
                       <span>{fact.label}</span>
@@ -2794,7 +2923,13 @@ export default function MunicipalitiesPage() {
                   </div>
                 </div>
 
-                <div className="municipality-profile-hero__map-area">
+                <div className="municipality-profile-hero__map-area dev-tag-anchor">
+                  <ComponentTag
+                    name="municipality-profile-hero__map-area"
+                    kind="CLASS"
+                    className="component-tag--overlay"
+                    style={{ left: 'auto', right: '0.45rem' }}
+                  />
                   <div className="municipality-profile-hero__map-controls">
                     <div
                       ref={fireYearMenuRef}
@@ -2873,12 +3008,18 @@ export default function MunicipalitiesPage() {
                   </div>
                   <div
                     ref={municipalityMapFrameRef}
-                    className="municipality-profile-hero__map-frame"
+                    className="municipality-profile-hero__map-frame dev-tag-anchor"
                     onClick={() => {
                       if (!isMobileMunicipalityMap) return
                       setPointTooltip(null)
                     }}
                   >
+                    <ComponentTag
+                      name="municipality-profile-hero__map-frame"
+                      kind="CLASS"
+                      className="component-tag--overlay"
+                      style={{ left: 'auto', right: '0.45rem' }}
+                    />
                     {selectedMunicipalityMap ? (
                       <svg
                         width={selectedMunicipalityMap.frameWidth}
@@ -3339,22 +3480,28 @@ export default function MunicipalitiesPage() {
       </section>
 
       {pageError && (
-        <section className="municipality-page-note section-rule">
+        <section className="municipality-page-note section-rule dev-tag-anchor">
+          <ComponentTag name="municipality-page-note section-rule" kind="CLASS" className="component-tag--overlay" />
           Σφάλμα φόρτωσης: {pageError}
         </section>
       )}
 
       {hasSelectedMunicipality && !pageLoading ? (
         <>
-          <section className="municipality-profile-metrics section-rule" aria-label="Κύριες μετρήσεις">
+          <section className="municipality-profile-metrics section-rule dev-tag-anchor" aria-label="Κύριες μετρήσεις">
+            <div className="dev-tag-stack dev-tag-stack--right">
+              <ComponentTag name="municipality-profile-metrics section-rule" kind="CLASS" />
+            </div>
             <article className="profile-metric-card profile-metric-card--ink municipality-contract-card">
               <div className="profile-metric-card__eyebrow eyebrow">Συμβάσεις {currentYear}</div>
               <div className="profile-metric-card__value">{formatEur(directContractSummary?.amount ?? null)}</div>
               <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
               <p className="profile-metric-card__note">
-                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} Εκτιμάται πως ο δήμος ξόδεψε πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας.`}
+                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το ${currentYear}.`}
               </p>
             </article>
+
+            
 
             <article className="profile-metric-card profile-metric-card--accent municipality-contract-card municipality-contract-card--chart">
               <div className="profile-metric-card__eyebrow eyebrow">Εξέλιξη δαπανών</div>
@@ -3479,47 +3626,143 @@ export default function MunicipalitiesPage() {
               )}
             </article>
 
-            <article className="profile-metric-card municipality-contract-card municipality-contract-card--cpv">
-              <div className="profile-metric-card__eyebrow eyebrow">Πιο συχνή εργασία {currentYear}</div>
-              <div className="profile-metric-card__value">{currentYearTopContractCpv?.label ?? '—'}</div>
-              <div className="profile-metric-card__label">CPV στις συμβάσεις</div>
-              <p className="profile-metric-card__note">
-                {`${currentYear - 1}: ${previousYearTopContractCpv?.label ?? '—'} · ${currentYear - 2}: ${secondPreviousYearTopContractCpv?.label ?? '—'}`}
-              </p>
+            <article className="profile-metric-card municipality-contract-card">
+              <div className="profile-metric-card__eyebrow eyebrow">Χρηματοδότηση</div>
+              <div className="profile-metric-card__value-row">
+                <div className="profile-metric-card__value">{formatEur(municipalityKapFundingAmount)}</div>
+                {municipalityFundingDelta ? (
+                  <span className={`profile-metric-card__delta profile-metric-card__delta--${municipalityFundingDelta.tone}`}>
+                    {municipalityFundingDelta.label}
+                  </span>
+                ) : null}
+              </div>
+              <div className="profile-metric-card__label">
+                {`από τους Κεντρικούς Αυτοτελείς Πόρους έτους ${currentYear}, για την κάλυψη δράσεων πυροπροστασίας `}
+              </div>
+              <p className="profile-metric-card__note">{municipalityKapFundingNote}</p>
             </article>
 
-            <article className="profile-metric-card municipality-contract-card municipality-contract-card--bars">
-              <div className="profile-metric-card__eyebrow eyebrow">Είδος ανάθεσης 2024 - {currentYear}</div>
-              <div className="profile-metric-card__label">Κατανομή συμβάσεων ανά διαδικασία</div>
-              {procedureBreakdown.length > 0 ? (
-                <div className="municipality-contract-card__bars" aria-label="Κατανομή διαδικασιών ανάθεσης">
-                  {procedureBreakdown.map((item) => (
-                    <div key={item.label} className="municipality-contract-card__bar-row">
-                      <div className="municipality-contract-card__bar-meta">
-                        <span>{item.label}</span>
-                        <strong>{formatNumber(item.count)} · {formatPct(contractProcedureTotal > 0 ? item.count / contractProcedureTotal : 0, 0)}</strong>
-                      </div>
-                      <div className="municipality-contract-card__bar-track" aria-hidden="true">
-                        <div
-                          className="municipality-contract-card__bar-fill"
-                          style={{ width: `${(item.count / contractProcedureMax) * 100}%` }}
-                        />
-                      </div>
+            <article className="profile-metric-card municipality-contract-card municipality-contract-card--fund-chart">
+              <div className="profile-metric-card__eyebrow eyebrow">Χρηματοδότηση ανά έτος</div>
+              {municipalityFundingHistory.length > 0 ? (
+                <>
+                  <div className="municipality-funding-chart-wrap">
+                    <div className="municipality-funding-chart__y-axis" aria-hidden="true">
+                      {municipalityFundingChartTicks.map((tick) => (
+                        <span
+                          key={`municipality-funding-tick-${tick}`}
+                          style={{ top: `${((1 - tick) * 7.6) + 0.15}rem` }}
+                        >
+                          {tick === 0 ? '0 €' : formatEurCompact(municipalityFundingChartMax * tick)}
+                        </span>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                    <div
+                      ref={fundingChartFrameRef}
+                      className="municipality-funding-chart"
+                      aria-label="Ετήσια χρηματοδότηση ΚΑΠ του δήμου"
+                      onMouseLeave={() => setFundingChartHover(null)}
+                    >
+                      {municipalityFundingHistory.map((entry) => {
+                        const isCurrentYear = entry.year === currentYear
+                        const regularHeight = (entry.regularAmount / municipalityFundingChartMax) * 100
+                        const emergencyHeight = (entry.emergencyAmount / municipalityFundingChartMax) * 100
+                        return (
+                          <div
+                            key={entry.year}
+                            className="municipality-funding-chart__bar-group"
+                            onMouseEnter={(event) => {
+                              const frame = fundingChartFrameRef.current
+                              if (!frame) return
+                              const frameRect = frame.getBoundingClientRect()
+                              const barRect = event.currentTarget.getBoundingClientRect()
+                              if (frameRect.width <= 0) return
+                              const leftPct = ((barRect.left + barRect.width / 2 - frameRect.left) / frameRect.width) * 100
+                              setFundingChartHover({ year: entry.year, leftPct })
+                            }}
+                            onMouseMove={(event) => {
+                              const frame = fundingChartFrameRef.current
+                              if (!frame) return
+                              const frameRect = frame.getBoundingClientRect()
+                              const barRect = event.currentTarget.getBoundingClientRect()
+                              if (frameRect.width <= 0) return
+                              const leftPct = ((barRect.left + barRect.width / 2 - frameRect.left) / frameRect.width) * 100
+                              setFundingChartHover({ year: entry.year, leftPct })
+                            }}
+                          >
+                            <div className="municipality-funding-chart__track" aria-hidden="true">
+                              <div
+                                className={`municipality-funding-chart__fill municipality-funding-chart__fill--regular${isCurrentYear ? ' is-current' : ''}`}
+                                style={{ height: `${Math.max(entry.regularAmount > 0 ? 4 : 0, regularHeight)}%` }}
+                              />
+                              <div
+                                className={`municipality-funding-chart__fill municipality-funding-chart__fill--emergency${isCurrentYear ? ' is-current' : ''}`}
+                                style={{
+                                  height: `${Math.max(entry.emergencyAmount > 0 ? 4 : 0, emergencyHeight)}%`,
+                                  bottom: `${Math.max(0, regularHeight)}%`,
+                                }}
+                              />
+                            </div>
+                            <span className="municipality-funding-chart__year">{String(entry.year).slice(-2)}</span>
+                          </div>
+                        )
+                      })}
+                      {fundingChartTooltip ? (
+                        <>
+                          <div
+                            className="municipality-funding-chart__hover-line"
+                            aria-hidden="true"
+                            style={{ left: `${fundingChartTooltip.leftPct}%` }}
+                          />
+                          <div
+                            className="municipality-contract-card__tooltip municipality-funding-chart__tooltip"
+                            style={{ left: `${Math.min(92, Math.max(8, fundingChartTooltip.leftPct))}%` }}
+                          >
+                            <strong>{fundingChartTooltip.year}</strong>
+                            <span>Τακτική: {formatEur(fundingChartTooltip.regularAmount)}</span>
+                            <span>Έκτακτη: {formatEur(fundingChartTooltip.emergencyAmount)}</span>
+                            <span>Σύνολο: {formatEur(fundingChartTooltip.totalAmount)}</span>
+                          </div>
+                        </>
+                      ) : null}
+                    </div>
+                  </div>
+                  <div className="municipality-funding-chart__legend" aria-hidden="true">
+                    <span>
+                      <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--regular" />
+                      Τακτική
+                    </span>
+                    <span>
+                      <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--emergency" />
+                      Έκτακτη
+                    </span>
+                  </div>
+                  <p className="profile-metric-card__note">
+                    {`Από ${municipalityFundingHistory[0]?.year} έως ${municipalityFundingHistory[municipalityFundingHistory.length - 1]?.year}. Μέγιστη τιμή: ${formatEurCompact(municipalityFundingChartMax)}.`}
+                  </p>
+                </>
               ) : (
-                <p className="profile-metric-card__note">Δεν υπάρχουν διαθέσιμα είδη ανάθεσης για τη συγκεκριμένη περίοδο.</p>
+                <p className="profile-metric-card__note">Δεν υπάρχουν διαθέσιμα ιστορικά στοιχεία χρηματοδότησης για τον επιλεγμένο δήμο.</p>
               )}
             </article>
           </section>
 
-          <section className="municipality-contract-latest section-rule" aria-label="Τελευταίες συμβάσεις δήμου">
-            <div className="municipality-contract-latest__head">
+          <section className="municipality-contract-latest section-rule dev-tag-anchor" aria-label="Τελευταίες συμβάσεις δήμου">
+            <div className="dev-tag-stack dev-tag-stack--right">
+              <ComponentTag name="municipality-contract-latest section-rule" kind="CLASS" />
+            </div>
+            <div className="municipality-contract-latest__head dev-tag-anchor">
+              <ComponentTag name="municipality-contract-latest__head" kind="CLASS" className="component-tag--overlay" />
               <span className="eyebrow">τελευταίες συμβάσεις</span>
               <p>Οι πιο πρόσφατες συμβάσεις του {selectedName} για το {currentYear}.</p>
             </div>
-            <div className="municipality-contract-strip">
+            <div className="municipality-contract-strip dev-tag-anchor">
+              <ComponentTag
+                name="municipality-contract-strip"
+                kind="CLASS"
+                className="component-tag--overlay"
+                style={{ left: 'auto', right: '0.45rem' }}
+              />
               {latestMunicipalityContractsLoading && (
                 <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις του δήμου." />
               )}

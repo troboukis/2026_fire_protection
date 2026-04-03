@@ -10,6 +10,7 @@ from ingest.stage2_load_erd import (
     build_organization_metadata_rows,
     build_region_metadata_rows,
     dedupe_forest_fire_rows,
+    fund_rows,
     organization_lookup_candidates,
     procurement_rows,
     region_lookup_candidates,
@@ -228,6 +229,77 @@ def test_apply_procurement_chain_dedup_zeroes_superseded_and_forward_linked_amou
     assert amounts["C"] == "0"
     assert amounts["D"] == "400"
     assert amounts["E"] == "500"
+
+
+def test_fund_rows_reads_current_municipal_funding_schema():
+    fund = pd.DataFrame(
+        [
+            {
+                "region_key": "ΚΡΗΤΗΣ",
+                "organization_key": "org_123",
+                "municipality_key": "9311",
+                "year": "2026",
+                "allocation_type": "τακτική",
+                "recipient_type": "δήμος",
+                "recipient_raw": "ΔΗΜΟΣ ΙΕΡΑΠΕΤΡΑΣ",
+                "nomos": "ΛΑΣΙΘΙΟΥ",
+                "amount_eur": "475000.00",
+                "source_file": "apof14727-20260317.pdf",
+                "source_ada": "ABC-123",
+            }
+        ]
+    )
+
+    assert fund_rows(fund) == [
+        (
+            "ΚΡΗΤΗΣ",
+            "org_123",
+            "9311",
+            2026,
+            "τακτική",
+            "δήμος",
+            "ΔΗΜΟΣ ΙΕΡΑΠΕΤΡΑΣ",
+            "ΛΑΣΙΘΙΟΥ",
+            475000.0,
+            "apof14727-20260317.pdf",
+            "ABC-123",
+        )
+    ]
+
+
+def test_fund_rows_keeps_backward_compatible_aliases():
+    fund = pd.DataFrame(
+        [
+            {
+                "region_id": "ΙΟΝΙΩΝ ΝΗΣΩΝ",
+                "municipality_code": "9101",
+                "year": "2019",
+                "allocation_type": "τακτική",
+                "recipient_type": "δήμος",
+                "recipient_raw": "ΔΗΜΟΣ ΚΕΡΚΥΡΑΣ",
+                "nomos": "ΚΕΡΚΥΡΑΣ",
+                "amount_eur": "1000.00",
+                "source_file": "legacy.pdf",
+                "source_ada": "LEG-001",
+            }
+        ]
+    )
+
+    assert fund_rows(fund) == [
+        (
+            "ΙΟΝΙΩΝ ΝΗΣΩΝ",
+            None,
+            "9101",
+            2019,
+            "τακτική",
+            "δήμος",
+            "ΔΗΜΟΣ ΚΕΡΚΥΡΑΣ",
+            "ΚΕΡΚΥΡΑΣ",
+            1000.0,
+            "legacy.pdf",
+            "LEG-001",
+        )
+    ]
 
 
 def test_dedupe_forest_fire_rows_removes_exact_duplicates_and_preserves_order():
