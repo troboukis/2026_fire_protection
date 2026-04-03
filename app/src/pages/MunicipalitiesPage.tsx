@@ -2496,6 +2496,7 @@ export default function MunicipalitiesPage() {
   const areaValue = toNumber(profile?.ektasi_km2)
   const densityValue = toNumber(profile?.puknotita)
   const directContractSummary = contractYearSummary.find((entry) => entry.year === currentYear) ?? null
+  const hasDirectContractsCurrentYear = (directContractSummary?.count ?? 0) > 0
   const municipalityKapFundingNote = useMemo(() => {
     const noteParts: string[] = []
 
@@ -3494,8 +3495,14 @@ export default function MunicipalitiesPage() {
             </div>
             <article className="profile-metric-card profile-metric-card--ink municipality-contract-card">
               <div className="profile-metric-card__eyebrow eyebrow">Συμβάσεις {currentYear}</div>
-              <div className="profile-metric-card__value">{formatEur(directContractSummary?.amount ?? null)}</div>
-              <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
+              <div className={`profile-metric-card__value${hasDirectContractsCurrentYear ? '' : ' municipality-contract-card__empty-value'}`}>
+                {hasDirectContractsCurrentYear
+                  ? formatEur(directContractSummary?.amount ?? null)
+                  : 'Δεν έχουν εντοπιστεί συμβάσεις'}
+              </div>
+              {hasDirectContractsCurrentYear ? (
+                <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
+              ) : null}
               <p className="profile-metric-card__note">
                 {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το ${currentYear}.`}
               </p>

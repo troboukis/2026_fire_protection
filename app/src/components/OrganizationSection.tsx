@@ -166,9 +166,9 @@ export default function OrganizationSection({
   const topCpvNote = data.previousYearTopCpvValue
     ? `${data.previousYearLabel}: ${data.previousYearTopCpvValue}`
     : `Δεν υπάρχουν στοιχεία για το ${data.previousYearLabel}.`
-  const contractCountNote = `Το ${data.previousYearLabel} είχαν υπογραφεί ${data.previousYearContractCount.toLocaleString('el-GR')} συμβάσεις με ${data.previousYearBeneficiaryCount.toLocaleString('el-GR')} προμηθευτές`
+  const contractCountNote = `Το ${data.previousYearLabel} είχαν υπογραφεί ${data.previousYearContractCount.toLocaleString('el-GR')} συμβάσεις με ${data.previousYearBeneficiaryCount.toLocaleString('el-GR')} εταιρείες`
   const contractLabel = data.contractCount === 1 ? 'σύμβαση' : 'συμβάσεις'
-  const beneficiaryLabel = data.beneficiaryCount === 1 ? 'προμηθευτή' : 'προμηθευτές'
+  const beneficiaryLabel = data.beneficiaryCount === 1 ? 'εταιρεία' : 'εταιρείες'
   const timelineItems = data.timeline.length
     ? data.timeline
     : [{ month: '—', year: '—', text: loading ? 'Φόρτωση στοιχείων φορέα…' : 'Δεν βρέθηκαν συμβάσεις για τον φορέα.', contract: null }]
