@@ -967,6 +967,197 @@ main {
   line-height: 1.25;
 }
 
+.funding-hero {
+  grid-template-columns: 6fr 6fr;
+}
+
+.funding-hero__left {
+  position: relative;
+  overflow: hidden;
+}
+
+.funding-hero__right {
+  display: grid;
+  align-content: start;
+}
+
+.funding-hero__background-year {
+  position: absolute;
+  inset: 0.25rem auto auto 0.5rem;
+  font-size: clamp(5rem, 17vw, 14rem);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: rgba(17, 17, 17, 0.07);
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.funding-hero__amount-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.funding-hero__lede,
+.funding-hero__error {
+  margin: 0;
+  max-width: 36ch;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.funding-hero__progress {
+  display: grid;
+  gap: 0.42rem;
+  max-width: 28rem;
+}
+
+.funding-hero__progress-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(17, 17, 17, 0.12);
+  margin: 0.15rem 0 0.35rem;
+}
+
+.funding-hero__progress-value {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.funding-hero__progress-track {
+  position: relative;
+  height: 0.5rem;
+  overflow: hidden;
+  background: rgba(17, 17, 17, 0.1);
+  border-radius: 999px;
+}
+
+.funding-hero__progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: rgba(211, 72, 45, 0.92);
+  animation: funding-hero-progress-fill 900ms ease-out;
+  transform-origin: left center;
+}
+
+.funding-hero__progress-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.2;
+  color: var(--ink-faint);
+}
+
+.funding-hero__headline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.funding-hero__delta {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+@keyframes funding-hero-progress-fill {
+  from {
+    width: 0;
+  }
+}
+
+.funding-hero__chart-card {
+  --funding-hero-plot-height: 15rem;
+  --funding-hero-year-row: 1.15rem;
+  position: relative;
+  background: transparent;
+  padding: 0.78rem 0.8rem 0.7rem;
+  box-shadow: none;
+  height: auto;
+  min-height: auto;
+}
+
+.funding-hero__chart {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: auto;
+  min-height: auto;
+  gap: 0.38rem;
+}
+
+.funding-hero__chart-body {
+  display: grid;
+  align-content: start;
+  gap: 0.38rem;
+  min-height: 100%;
+  padding-top: 1.35rem;
+}
+
+.funding-hero__chart-note {
+  margin: 0.05rem 0 0;
+}
+
+.funding-hero__chart-wrap {
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: 0.08rem;
+  height: auto;
+  min-height: calc(var(--funding-hero-plot-height) + var(--funding-hero-year-row));
+  align-items: stretch;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__y-axis {
+  height: calc(var(--funding-hero-plot-height) + var(--funding-hero-year-row));
+  min-height: 0;
+}
+
+.funding-hero__y-axis-scale {
+  position: absolute;
+  inset: 0 0 var(--funding-hero-year-row) 0;
+}
+
+.funding-hero__chart-card .municipality-funding-chart {
+  gap: 0.22rem;
+  min-height: 0;
+  height: calc(var(--funding-hero-plot-height) + var(--funding-hero-year-row));
+  margin-top: 0.05rem;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__bar-group {
+  grid-template-rows: var(--funding-hero-plot-height) var(--funding-hero-year-row);
+  gap: 0;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__track {
+  height: var(--funding-hero-plot-height);
+  min-height: 0;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__year {
+  display: grid;
+  align-items: end;
+  padding-top: 0.18rem;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__hover-line {
+  bottom: 1rem;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__tooltip {
+  top: 0;
+}
+
+.funding-hero__chart-card .municipality-funding-chart__legend {
+  gap: 0.35rem 0.65rem;
+  margin-top: 0.05rem;
+}
+
 .kpi-rail {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2359,6 +2550,12 @@ main {
     font-size: 0.84rem;
   }
 
+  .funding-hero__chart-card {
+    --funding-hero-plot-height: 10rem;
+    --funding-hero-year-row: 1rem;
+    padding: 0.72rem;
+  }
+
   .kpi-tile {
     min-height: 6.8rem;
     padding: 0.72rem;
@@ -2771,19 +2968,28 @@ main {
   background: linear-gradient(180deg, rgba(253, 251, 246, 0.84), rgba(248, 241, 232, 0.7));
 }
 
-.maps-stage__view-toggle {
+.maps-stage__view-toggle,
+.maps-stage__metric-toggle {
   position: absolute;
-  top: 0.85rem;
-  left: 0.85rem;
   z-index: 4;
   display: inline-flex;
   align-items: stretch;
-  gap: 0.16rem;
-  padding: 0.16rem;
+  gap: 0.12rem;
+  padding: 0.12rem;
   border: 1px solid rgba(101, 84, 66, 0.28);
   border-radius: 999px;
   background: rgba(249, 245, 237, 0.94);
   box-shadow: 0 8px 18px rgba(44, 31, 22, 0.08);
+}
+
+.maps-stage__view-toggle {
+  top: 0.85rem;
+  left: 0.85rem;
+}
+
+.maps-stage__metric-toggle {
+  top: 0.85rem;
+  right: 0.85rem;
 }
 
 .maps-stage__view-btn {
@@ -2791,9 +2997,9 @@ main {
   background: transparent;
   color: #5d5348;
   border-radius: 999px;
-  padding: 0.44rem 0.78rem;
+  padding: 0.34rem 0.62rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -3581,9 +3787,26 @@ main {
   .maps-stage__frame {
     height: 420px;
   }
+
+  .maps-stage__metric-toggle {
+    top: 3.65rem;
+    right: auto;
+    left: 0.85rem;
+  }
 }
 
 @media (max-width: 420px) {
+  .maps-stage__view-toggle,
+  .maps-stage__metric-toggle {
+    gap: 0.12rem;
+    padding: 0.12rem;
+  }
+
+  .maps-stage__view-btn {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.61rem;
+  }
+
   .maps-top {
     gap: 0;
   }
@@ -5587,6 +5810,29 @@ main {
   letter-spacing: -0.06em;
 }
 
+.profile-metric-card__value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.profile-metric-card__delta {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.profile-metric-card__delta--positive {
+  color: #1f8f55;
+}
+
+.profile-metric-card__delta--negative {
+  color: #c63b32;
+}
+
 .profile-metric-card__label {
   font-size: 0.95rem;
   line-height: 1.35;
@@ -5721,6 +5967,131 @@ main {
 
 .municipality-contract-card--bars {
   gap: 0.7rem;
+}
+
+.municipality-contract-card--fund-chart {
+  align-content: stretch;
+}
+
+.municipality-funding-chart-wrap {
+  display: grid;
+  grid-template-columns: 2.45rem minmax(0, 1fr);
+  gap: 0.14rem;
+  align-items: start;
+}
+
+.municipality-funding-chart__y-axis {
+  position: relative;
+  height: 8.95rem;
+}
+
+.municipality-funding-chart__y-axis span {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  line-height: 1;
+  color: rgba(17, 17, 17, 0.72);
+  white-space: nowrap;
+}
+
+.municipality-funding-chart {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  align-items: end;
+  gap: 0.28rem;
+  min-height: 8.75rem;
+  margin-top: 0.2rem;
+}
+
+.municipality-funding-chart__bar-group {
+  display: grid;
+  gap: 0.35rem;
+  align-items: end;
+}
+
+.municipality-funding-chart__track {
+  position: relative;
+  height: 7.6rem;
+  background: rgba(17, 17, 17, 0.06);
+  overflow: hidden;
+}
+
+.municipality-funding-chart__fill {
+  position: absolute;
+  inset: auto 0 0;
+}
+
+.municipality-funding-chart__fill--regular {
+  background: rgba(211, 72, 45, 0.38);
+}
+
+.municipality-funding-chart__fill--emergency {
+  background: rgba(243, 180, 76, 0.88);
+}
+
+.municipality-funding-chart__fill--regular.is-current {
+  background: rgba(17, 17, 17, 0.92);
+}
+
+.municipality-funding-chart__fill--emergency.is-current {
+  background: rgba(228, 156, 38, 0.96);
+}
+
+.municipality-funding-chart__year {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--ink-faint);
+}
+
+.municipality-funding-chart__hover-line {
+  position: absolute;
+  top: 0;
+  bottom: 1.35rem;
+  width: 1px;
+  transform: translateX(-50%);
+  background: rgba(17, 17, 17, 0.22);
+  border-left: 1px dashed rgba(17, 17, 17, 0.22);
+  pointer-events: none;
+}
+
+.municipality-funding-chart__tooltip {
+  top: 0.1rem;
+}
+
+.municipality-funding-chart__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+  margin-top: 0.18rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  line-height: 1.2;
+  color: var(--ink-faint);
+}
+
+.municipality-funding-chart__legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+}
+
+.municipality-funding-chart__legend-swatch {
+  width: 0.72rem;
+  height: 0.42rem;
+  display: inline-block;
+}
+
+.municipality-funding-chart__legend-swatch--regular {
+  background: rgba(211, 72, 45, 0.38);
+}
+
+.municipality-funding-chart__legend-swatch--emergency {
+  background: rgba(243, 180, 76, 0.88);
 }
 
 .municipality-contract-card__bars {

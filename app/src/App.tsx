@@ -15,6 +15,7 @@ import { supabase } from './lib/supabase'
 const ContractModal = lazy(() => import('./components/ContractModal'))
 const FireCopernicusSection = lazy(() => import('./components/FireCopernicusSection'))
 const FeaturedRecordsSection = lazy(() => import('./components/FeaturedRecordsSection'))
+const Funding = lazy(() => import('./components/Funding'))
 const OrganizationSection = lazy(() => import('./components/OrganizationSection'))
 const RegionSection = lazy(() => import('./components/RegionSection'))
 
@@ -441,6 +442,7 @@ export default function App() {
       void Promise.all([
         import('./components/FireCopernicusSection'),
         import('./components/FeaturedRecordsSection'),
+        import('./components/Funding'),
         import('./components/OrganizationSection'),
         import('./components/RegionSection'),
         import('./components/ContractModal'),
@@ -1917,6 +1919,10 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <Suspense fallback={<SectionFallback label="Φόρτωση χρηματοδότησης" />}>
+          <Funding currentYear={currentYear} />
+        </Suspense>
 
         <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
           <FireCopernicusSection />

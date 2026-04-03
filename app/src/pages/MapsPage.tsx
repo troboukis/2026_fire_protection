@@ -18,6 +18,7 @@ type MunicipalityRow = {
 }
 
 type SearchKind = 'municipality' | 'region'
+type MapMetric = 'spending' | 'funding'
 type SearchOption = {
   kind: SearchKind
   value: string
@@ -53,6 +54,13 @@ type MunicipalityMapSpendRpcRow = {
   amount_per_100k: number | string | null
   signed_current_count: number | string | null
   active_previous_count: number | string | null
+}
+type MunicipalityMapFundingRpcRow = {
+  municipality_key: string | null
+  municipality_name: string | null
+  population_total: number | string | null
+  total_amount_eur: number | string | null
+  amount_per_100k: number | string | null
 }
 type FirePoint = {
   lat: number
@@ -171,9 +179,12 @@ const REGIONS = [
 export default function MapsPage() {
   const mapYear = new Date().getFullYear()
   const [mapView, setMapView] = useState<'greece' | 'attica'>('greece')
+  const [mapMetric, setMapMetric] = useState<MapMetric>('spending')
   const [geojson, setGeojson] = useState<GeoData | null>(null)
-  const [choroplethData, setChoroplethData] = useState<Record<string, number>>({})
+  const [municipalitySpendPer100kById, setMunicipalitySpendPer100kById] = useState<Record<string, number>>({})
+  const [municipalityFundingPer100kById, setMunicipalityFundingPer100kById] = useState<Record<string, number>>({})
   const [municipalityTotalSpendById, setMunicipalityTotalSpendById] = useState<Map<string, number>>(new Map())
+  const [municipalityTotalFundingById, setMunicipalityTotalFundingById] = useState<Map<string, number>>(new Map())
   const [municipalitySignedCurrentCountById, setMunicipalitySignedCurrentCountById] = useState<Map<string, number>>(new Map())
   const [municipalityActivePreviousCountById, setMunicipalityActivePreviousCountById] = useState<Map<string, number>>(new Map())
   const [municipalityRegionById, setMunicipalityRegionById] = useState<Map<string, string>>(new Map())
@@ -239,14 +250,18 @@ export default function MapsPage() {
     const load = async () => {
       try {
         const assetUrl = (assetName: string) => `${import.meta.env.BASE_URL}${assetName}`
-        const [geoRes, citiesRes, spendRes] = await Promise.all([
+        const [geoRes, citiesRes, spendRes, fundingRes] = await Promise.all([
           fetch(assetUrl('municipalities.geojson')),
           fetch(assetUrl('greek_cities.json')).catch(() => null),
           supabase.rpc('get_municipality_map_spend_per_100k', {
             p_year: mapYear,
           }),
+          supabase.rpc('get_municipality_map_funding_per_100k', {
+            p_year: mapYear,
+          }),
         ])
         if (spendRes.error) throw spendRes.error
+        if (fundingRes.error) throw fundingRes.error
 
         if (cancelled) return
 
@@ -274,29 +289,43 @@ export default function MapsPage() {
           setCityPoints([])
         }
         const spendRows = (spendRes.data ?? []) as MunicipalityMapSpendRpcRow[]
-        const nextChoropleth: Record<string, number> = {}
+        const fundingRows = (fundingRes.data ?? []) as MunicipalityMapFundingRpcRow[]
+        const nextSpendPer100k: Record<string, number> = {}
+        const nextFundingPer100k: Record<string, number> = {}
         const nextTotalSpendById = new Map<string, number>()
+        const nextTotalFundingById = new Map<string, number>()
         const nextSignedCurrentCountById = new Map<string, number>()
         const nextActivePreviousCountById = new Map<string, number>()
         for (const row of spendRows) {
           const municipalityId = normalizeMunicipalityId(row.municipality_key)
           if (!municipalityId) continue
-          nextChoropleth[municipalityId] = numericValue(row.amount_per_100k)
+          nextSpendPer100k[municipalityId] = numericValue(row.amount_per_100k)
           nextTotalSpendById.set(municipalityId, numericValue(row.total_amount_without_vat))
           nextSignedCurrentCountById.set(municipalityId, numericValue(row.signed_current_count))
           nextActivePreviousCountById.set(municipalityId, numericValue(row.active_previous_count))
         }
+        for (const row of fundingRows) {
+          const municipalityId = normalizeMunicipalityId(row.municipality_key)
+          if (!municipalityId) continue
+          nextFundingPer100k[municipalityId] = numericValue(row.amount_per_100k)
+          nextTotalFundingById.set(municipalityId, numericValue(row.total_amount_eur))
+        }
 
         if (!cancelled) {
-          setChoroplethData(nextChoropleth)
+          setMunicipalitySpendPer100kById(nextSpendPer100k)
+          setMunicipalityFundingPer100kById(nextFundingPer100k)
           setMunicipalityTotalSpendById(nextTotalSpendById)
+          setMunicipalityTotalFundingById(nextTotalFundingById)
           setMunicipalitySignedCurrentCountById(nextSignedCurrentCountById)
           setMunicipalityActivePreviousCountById(nextActivePreviousCountById)
           console.log('[MapsPage] choropleth summary', {
             mapYear,
-            rpcRows: spendRows.length,
+            spendRpcRows: spendRows.length,
+            fundingRpcRows: fundingRows.length,
             municipalitiesWithSpend: Array.from(nextTotalSpendById.values()).filter((value) => value > 0).length,
-            maxAmountPer100k: Math.max(0, ...Object.values(nextChoropleth)),
+            municipalitiesWithFunding: Array.from(nextTotalFundingById.values()).filter((value) => value > 0).length,
+            maxSpendPer100k: Math.max(0, ...Object.values(nextSpendPer100k)),
+            maxFundingPer100k: Math.max(0, ...Object.values(nextFundingPer100k)),
           })
         }
 
@@ -349,10 +378,20 @@ export default function MapsPage() {
     return () => { cancelled = true }
   }, [mapYear])
 
-  const activeMunicipalityCount = useMemo(
-    () => Array.from(municipalityTotalSpendById.values()).filter((value) => value > 0).length,
-    [municipalityTotalSpendById],
+  const choroplethData = useMemo(
+    () => (mapMetric === 'spending' ? municipalitySpendPer100kById : municipalityFundingPer100kById),
+    [mapMetric, municipalityFundingPer100kById, municipalitySpendPer100kById],
   )
+
+  const activeMunicipalityCount = useMemo(
+    () => Array.from((mapMetric === 'spending' ? municipalityTotalSpendById : municipalityTotalFundingById).values())
+      .filter((value) => value > 0).length,
+    [mapMetric, municipalityTotalFundingById, municipalityTotalSpendById],
+  )
+
+  const activeMetricLabel = mapMetric === 'spending' ? 'δαπάνη' : 'χρηματοδότηση'
+  const activeMetricLabelGenitive = mapMetric === 'spending' ? 'δαπάνης' : 'χρηματοδότησης'
+  const activeMetricLabelCapitalized = mapMetric === 'spending' ? 'Δαπάνη' : 'Χρηματοδότηση'
 
   const municipalities = useMemo(() => {
     return municipalityOptions
@@ -1063,7 +1102,9 @@ export default function MapsPage() {
     if (!label) return
     const region = municipalityRegionById.get(normalizedMunicipalityId) ?? null
     const amountPer100k = choroplethData[normalizedMunicipalityId] ?? 0
-    const totalAmountWithoutVat = municipalityTotalSpendById.get(normalizedMunicipalityId) ?? 0
+    const totalAmount = mapMetric === 'spending'
+      ? (municipalityTotalSpendById.get(normalizedMunicipalityId) ?? 0)
+      : (municipalityTotalFundingById.get(normalizedMunicipalityId) ?? 0)
     const signedCurrentCount = municipalitySignedCurrentCountById.get(normalizedMunicipalityId) ?? 0
     const activePreviousCount = municipalityActivePreviousCountById.get(normalizedMunicipalityId) ?? 0
     console.log('[MapsPage] municipality click', {
@@ -1071,8 +1112,9 @@ export default function MapsPage() {
       normalizedMunicipalityId,
       label,
       region,
+      mapMetric,
       amountPer100k,
-      totalAmountWithoutVat,
+      totalAmount,
       signedCurrentCount,
       activePreviousCount,
       geojsonProperties: feature?.properties ?? null,
@@ -1106,16 +1148,29 @@ export default function MapsPage() {
 
   return (
     <>
-      <div className="maps-page">
+      <div className="maps-page dev-tag-anchor">
         <DevViewToggle />
-        <ComponentTag name="MapsPage" className="component-tag--overlay" />
+        <div className="dev-tag-stack dev-tag-stack--right">
+          <ComponentTag name="MapsPage" />
+          <ComponentTag name="maps-page" kind="CLASS" />
+        </div>
         <div className="maps-page__texture" aria-hidden="true" />
 
         <div className="maps-main">
-          <section className="maps-top">
-            <section className="maps-controls">
-              <ComponentTag name="MapsFilters" />
-              <div className="maps-controls__row">
+          <section className="maps-top dev-tag-anchor">
+            <ComponentTag name="maps-top" kind="CLASS" className="component-tag--overlay" />
+            <section className="maps-controls dev-tag-anchor">
+              <div className="dev-tag-stack">
+                <ComponentTag name="MapsFilters" />
+                <ComponentTag name="maps-controls" kind="CLASS" />
+              </div>
+              <div className="maps-controls__row dev-tag-anchor">
+                <ComponentTag
+                  name="maps-controls__row"
+                  kind="CLASS"
+                  className="component-tag--overlay"
+                  style={{ left: 'auto', right: '0.45rem' }}
+                />
                 <label ref={searchContainerRef} className="maps-controls__search">
                   <input
                     aria-label="Αναζήτηση δήμου ή περιφέρειας"
@@ -1195,9 +1250,18 @@ export default function MapsPage() {
             </section>
           </section>
 
-          <section className="maps-stage section-rule">
+          <section className="maps-stage section-rule dev-tag-anchor">
+            <div className="dev-tag-stack dev-tag-stack--right">
+              <ComponentTag name="maps-stage section-rule" kind="CLASS" />
+            </div>
             <div className="maps-stage__contours" aria-hidden="true" />
-            <div className="maps-stage__frame">
+            <div className="maps-stage__frame dev-tag-anchor">
+              <ComponentTag
+                name="maps-stage__frame"
+                kind="CLASS"
+                className="component-tag--overlay"
+                style={{ left: 'auto', right: '0.45rem' }}
+              />
               <div className="maps-stage__view-toggle" role="group" aria-label="Προβολή χάρτη">
                 <button
                   type="button"
@@ -1214,6 +1278,22 @@ export default function MapsPage() {
                   Αττική
                 </button>
               </div>
+              <div className="maps-stage__metric-toggle" role="group" aria-label="Μετρική χάρτη">
+                <button
+                  type="button"
+                  className={mapMetric === 'spending' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+                  onClick={() => setMapMetric('spending')}
+                >
+                  Δαπάνη
+                </button>
+                <button
+                  type="button"
+                  className={mapMetric === 'funding' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
+                  onClick={() => setMapMetric('funding')}
+                >
+                  Χρηματοδότηση
+                </button>
+              </div>
               <GreeceMap
                 geojson={geojson}
                 choroplethData={choroplethData}
@@ -1221,6 +1301,7 @@ export default function MapsPage() {
                 signedCurrentCountByMunicipality={municipalitySignedCurrentCountById}
                 activePreviousCountByMunicipality={municipalityActivePreviousCountById}
                 currentYear={mapYear}
+                metricLabel={activeMetricLabelCapitalized}
                 viewMode={mapView}
                 onDeselect={handleMapDeselect}
                 onMunicipalityClick={handleMapMunicipalityClick}
@@ -1230,16 +1311,22 @@ export default function MapsPage() {
             </div>
           </section>
 
-          <div className="maps-legend" aria-live="polite">
+          <div className="maps-legend dev-tag-anchor" aria-live="polite">
+            <ComponentTag
+              name="maps-legend"
+              kind="CLASS"
+              className="component-tag--overlay"
+              style={{ left: 'auto', right: '0.45rem' }}
+            />
             <div className="maps-legend__scale" aria-hidden="true">
-              <span className="maps-legend__scale-label">Λιγότερες</span>
+              <span className="maps-legend__scale-label">Λιγότερα</span>
               <div className="maps-legend__scale-bar" />
-              <span className="maps-legend__scale-label">Περισσότερα € / 100.000 κατοίκους</span>
+              <span className="maps-legend__scale-label">Περισσότερα € {activeMetricLabelGenitive} / 100.000 κατοίκους</span>
             </div>
             <p className="maps-legend__summary">
               {loading
                 ? 'Φόρτωση χάρτη…'
-                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι εμφανίζουν καταγεγραμμένη δαπάνη το ${mapYear}. Η κλίμακα δείχνει ευρώ ανά 100.000 κατοίκους.`}
+                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι εμφανίζουν καταγεγραμμένη ${activeMetricLabel} το ${mapYear}. Η κλίμακα δείχνει ευρώ ${activeMetricLabelGenitive} ανά 100.000 κατοίκους.`}
             </p>
             <p className="maps-legend__note">
               * Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {mapYear}, είτε υπεγράφησαν πριν το {mapYear} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {mapYear}.

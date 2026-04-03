@@ -426,8 +426,11 @@ export default function MapSelectionPanel({
           ].join(' ')
 
   return (
-    <aside className="maps-selection-panel" data-selection-source={source ?? 'none'}>
-      <ComponentTag name="MapSelectionPanel" />
+    <aside className="maps-selection-panel dev-tag-anchor" data-selection-source={source ?? 'none'}>
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="MapSelectionPanel" />
+        <ComponentTag name="maps-selection-panel" kind="CLASS" />
+      </div>
       <EditorialLead
         eyebrow="Ανάλυση"
         title={title}
