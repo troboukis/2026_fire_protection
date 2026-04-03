@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-Reset only procurement-related fact tables before reingest.
+Reset only procurement-related procurement/beneficiary tables before reingest.
 
 Truncates:
+  - works
+  - diavgeia_beneficiary
   - payment_beneficiary
   - payment
+  - beneficiary
   - cpv
   - procurement
   - diavgeia_procurement
@@ -50,8 +53,11 @@ def main() -> int:
       cur.execute(
         """
         TRUNCATE TABLE
+          public.works,
+          public.diavgeia_beneficiary,
           public.payment_beneficiary,
           public.payment,
+          public.beneficiary,
           public.cpv,
           public.diavgeia_procurement,
           public.procurement
