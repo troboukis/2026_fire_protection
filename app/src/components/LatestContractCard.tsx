@@ -1,4 +1,5 @@
 import type { KeyboardEvent } from 'react'
+import BeneficiaryLink from './BeneficiaryLink'
 
 export type LatestContractCardView = {
   id: string
@@ -8,6 +9,7 @@ export type LatestContractCardView = {
   why: string
   signedAt?: string
   beneficiary: string
+  beneficiaryVat?: string | null
   contractType: string
   howMuch: string
   documentUrl?: string | null
@@ -47,7 +49,12 @@ export default function LatestContractCard({ item, onOpen, contractTypeTransform
         <p className="wire-item__amount">
           <span>{item.howMuch}</span>
           <span className="wire-item__arrow">→</span>
-          <span className="wire-item__beneficiary">{item.beneficiary}</span>
+          <BeneficiaryLink
+            name={item.beneficiary}
+            afm={item.beneficiaryVat}
+            className="wire-item__beneficiary beneficiary-link"
+            stopPropagation
+          />
         </p>
         <p className="wire-item__type">{transformedContractType}</p>
       </div>

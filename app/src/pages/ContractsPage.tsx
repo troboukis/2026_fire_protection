@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import BeneficiaryLink from '../components/BeneficiaryLink'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
@@ -17,6 +18,7 @@ type ContractRow = {
   cpv_value: string | null
   procedure_type_value: string | null
   beneficiary_name: string | null
+  beneficiary_vat_number: string | null
   amount_without_vat: number | null
   diavgeia_ada: string | null
   total_count: number
@@ -233,14 +235,18 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
   }
 
   const procurementIds = procurements.map((row) => row.id)
-  const paymentsByProcurementId = new Map<number, { amount_without_vat: number | null; beneficiary_name: string | null }>()
+  const paymentsByProcurementId = new Map<number, {
+    amount_without_vat: number | null
+    beneficiary_name: string | null
+    beneficiary_vat_number: string | null
+  }>()
   const cpvByProcurementId = new Map<number, string>()
 
   for (const ids of chunk(procurementIds, 200)) {
     const [{ data: paymentRows }, { data: cpvRows }] = await Promise.all([
       supabase
         .from('payment')
-        .select('procurement_id, beneficiary_name, amount_without_vat')
+        .select('procurement_id, beneficiary_name, beneficiary_vat_number, amount_without_vat')
         .in('procurement_id', ids),
       supabase
         .from('cpv')
@@ -248,10 +254,15 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
         .in('procurement_id', ids),
     ])
 
-    const paymentMap = new Map<number, Array<{ beneficiary_name: string | null; amount_without_vat: number | null }>>()
+    const paymentMap = new Map<number, Array<{
+      beneficiary_name: string | null
+      beneficiary_vat_number: string | null
+      amount_without_vat: number | null
+    }>>()
     for (const row of ((paymentRows ?? []) as Array<{
       procurement_id: number
       beneficiary_name: string | null
+      beneficiary_vat_number: string | null
       amount_without_vat: number | null
     }>)) {
       if (!paymentMap.has(row.procurement_id)) paymentMap.set(row.procurement_id, [])
@@ -264,9 +275,11 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
         return (sum ?? 0) + Number(row.amount_without_vat)
       }, null)
       const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
+      const beneficiaryVatNumbers = Array.from(new Set(rows.map((row) => clean(row.beneficiary_vat_number)).filter(Boolean)))
       paymentsByProcurementId.set(procurementId, {
         amount_without_vat: amountWithoutVat,
         beneficiary_name: beneficiaryNames.join(' | ') || null,
+        beneficiary_vat_number: beneficiaryVatNumbers.join(' | ') || null,
       })
     }
 
@@ -294,6 +307,7 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
       cpv_value: cpvByProcurementId.get(row.id) ?? null,
       procedure_type_value: row.procedure_type_value,
       beneficiary_name: payment?.beneficiary_name ?? null,
+      beneficiary_vat_number: payment?.beneficiary_vat_number ?? null,
       amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
       diavgeia_ada: row.diavgeia_ada,
       total_count: 0,
@@ -367,6 +381,7 @@ async function loadRegionScopedRows(regionKey: string, dateFrom: string, dateTo:
     cpv_value: cpvByProcurementId.get(row.procurement_id) ?? null,
     procedure_type_value: row.procedure_type_value,
     beneficiary_name: row.beneficiary_name,
+    beneficiary_vat_number: null,
     amount_without_vat: row.amount_without_vat,
     diavgeia_ada: row.diavgeia_ada,
     total_count: 0,
@@ -446,14 +461,18 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
   }
 
   const procurementIds = procurements.map((row) => row.id)
-  const paymentsByProcurementId = new Map<number, { amount_without_vat: number | null; beneficiary_name: string | null }>()
+  const paymentsByProcurementId = new Map<number, {
+    amount_without_vat: number | null
+    beneficiary_name: string | null
+    beneficiary_vat_number: string | null
+  }>()
   const cpvByProcurementId = new Map<number, string>()
 
   for (const ids of chunk(procurementIds, 200)) {
     const [{ data: paymentRows }, { data: cpvRows }] = await Promise.all([
       supabase
         .from('payment')
-        .select('procurement_id, beneficiary_name, amount_without_vat')
+        .select('procurement_id, beneficiary_name, beneficiary_vat_number, amount_without_vat')
         .in('procurement_id', ids),
       supabase
         .from('cpv')
@@ -461,10 +480,15 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
         .in('procurement_id', ids),
     ])
 
-    const paymentMap = new Map<number, Array<{ beneficiary_name: string | null; amount_without_vat: number | null }>>()
+    const paymentMap = new Map<number, Array<{
+      beneficiary_name: string | null
+      beneficiary_vat_number: string | null
+      amount_without_vat: number | null
+    }>>()
     for (const row of ((paymentRows ?? []) as Array<{
       procurement_id: number
       beneficiary_name: string | null
+      beneficiary_vat_number: string | null
       amount_without_vat: number | null
     }>)) {
       if (!paymentMap.has(row.procurement_id)) paymentMap.set(row.procurement_id, [])
@@ -477,9 +501,11 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
         return (sum ?? 0) + Number(row.amount_without_vat)
       }, null)
       const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
+      const beneficiaryVatNumbers = Array.from(new Set(rows.map((row) => clean(row.beneficiary_vat_number)).filter(Boolean)))
       paymentsByProcurementId.set(procurementId, {
         amount_without_vat: amountWithoutVat,
         beneficiary_name: beneficiaryNames.join(' | ') || null,
+        beneficiary_vat_number: beneficiaryVatNumbers.join(' | ') || null,
       })
     }
 
@@ -509,6 +535,7 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
       cpv_value: cpvByProcurementId.get(row.id) ?? null,
       procedure_type_value: row.procedure_type_value,
       beneficiary_name: payment?.beneficiary_name ?? null,
+      beneficiary_vat_number: payment?.beneficiary_vat_number ?? null,
       amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
       diavgeia_ada: row.diavgeia_ada,
       total_count: 0,
@@ -958,7 +985,13 @@ export default function ContractsPage() {
                         </button>
                       </td>
                       <td data-label="Περιγραφή Εργασίας">{truncateWords(clean(r.cpv_value), 10)}</td>
-                      <td data-label="Δικαιούχος">{clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}</td>
+                      <td data-label="Δικαιούχος">
+                        <BeneficiaryLink
+                          name={clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}
+                          afm={r.beneficiary_vat_number}
+                          className="beneficiary-link"
+                        />
+                      </td>
                       <td data-label="Διαδικασία">{clean(r.procedure_type_value) || '—'}</td>
                       <td data-label="Ποσό χωρίς ΦΠΑ" className="contracts-amount">{fmtEur(r.amount_without_vat)}</td>
                       <td data-label="ΑΔΑΜ">{refNo || '—'}</td>

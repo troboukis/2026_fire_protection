@@ -19,6 +19,7 @@ RETURNS TABLE (
   cpv_value text,
   procedure_type_value text,
   beneficiary_name text,
+  beneficiary_vat_number text,
   amount_without_vat numeric,
   diavgeia_ada text,
   total_count bigint
@@ -31,7 +32,8 @@ WITH payment_agg AS (
   SELECT
     py.procurement_id,
     SUM(py.amount_without_vat) AS amount_without_vat,
-    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_name), ''), ' | ') AS beneficiary_name
+    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_name), ''), ' | ') AS beneficiary_name,
+    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_vat_number), ''), ' | ') AS beneficiary_vat_number
   FROM public.payment py
   GROUP BY py.procurement_id
 ),
@@ -61,6 +63,7 @@ base AS (
     p.organization_key,
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pa.beneficiary_name,
+    pa.beneficiary_vat_number,
     COALESCE(
       org.organization_value,
       CASE
@@ -174,6 +177,7 @@ SELECT
   cpv_value,
   procedure_type_value,
   beneficiary_name,
+  beneficiary_vat_number,
   amount_without_vat,
   diavgeia_ada,
   total_count

@@ -1,3 +1,4 @@
+import BeneficiaryLink from './BeneficiaryLink'
 import { useDevViewEnabled } from '../lib/devView'
 
 type ContractModalContract = {
@@ -63,7 +64,16 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
     { label: 'Διαδικασία ανάθεσης', value: contract.awardProcedure },
     { label: 'Υπογραφή', value: contract.signers },
     { label: 'Τύπος διαδικασίας', value: contract.contractType },
-    { label: 'Δικαιούχος', value: contract.beneficiary },
+    {
+      label: 'Δικαιούχος',
+      value: (
+        <BeneficiaryLink
+          name={contract.beneficiary}
+          afm={contract.beneficiaryVat}
+          className="beneficiary-link"
+        />
+      ),
+    },
     { label: 'ΑΦΜ Δικαιούχου', value: contract.beneficiaryVat },
     { label: 'Ποσό με ΦΠΑ', value: contract.withVatAmount },
     { label: 'Τμήμα', value: contract.unitsOperator },
@@ -126,7 +136,11 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
         <div className="contract-modal__highlight">
           <span className="contract-modal__amount">{contract.withoutVatAmount}</span>
           <span className="contract-modal__arrow">→</span>
-          <span className="contract-modal__beneficiary">{contract.beneficiary}</span>
+          <BeneficiaryLink
+            name={contract.beneficiary}
+            afm={contract.beneficiaryVat}
+            className="contract-modal__beneficiary beneficiary-link"
+          />
         </div>
 
         <div className="contract-modal__grid">
