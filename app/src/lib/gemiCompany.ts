@@ -52,17 +52,40 @@ export function getGemiNumberByAfm(afm: string): Promise<string> {
   return GEMI_COMPANY_URL_CACHE.get(normalizedAfm) as Promise<string>
 }
 
-export async function openGemiCompanyPageByAfm(afm: string): Promise<void> {
+export async function openGemiCompanyPageByAfm(afm: string, companyName?: string): Promise<void> {
   const normalizedAfm = normalizeAfm(afm)
   if (!normalizedAfm) return
+
+  const popup = typeof window !== 'undefined' ? window.open('', '_blank') : null
+
+  if (popup) {
+    popup.document.title = 'Αναζήτηση ΓΕΜΗ'
+    popup.document.body.innerHTML = `
+      <main style="font-family: system-ui, sans-serif; padding: 24px; line-height: 1.5;">
+        <h1 style="margin: 0 0 12px; font-size: 20px;">Αναζήτηση στο ΓΕΜΗ…</h1>
+        <p style="margin: 0;">${companyName ? `Αναζητείται η εταιρεία ${companyName}.` : 'Αναζητείται η εταιρεία με βάση το ΑΦΜ.'}</p>
+      </main>
+    `
+  }
 
   try {
     const gemiNumber = await getGemiNumberByAfm(normalizedAfm)
     const companyUrl = `https://publicity.businessportal.gr/company/${gemiNumber}`
     console.log(companyUrl)
-    window.open(companyUrl, '_blank', 'noopener,noreferrer')
+    if (popup && !popup.closed) popup.location.replace(companyUrl)
+    else window.open(companyUrl, '_blank', 'noopener,noreferrer')
   } catch (error) {
     console.error('[gemi] lookup failed', error)
+    if (popup && !popup.closed) {
+      popup.document.title = 'Αδυναμία φόρτωσης ΓΕΜΗ'
+      popup.document.body.innerHTML = `
+        <main style="font-family: system-ui, sans-serif; padding: 24px; line-height: 1.5;">
+          <h1 style="margin: 0 0 12px; font-size: 20px;">Δεν βρέθηκε εταιρεία στο ΓΕΜΗ</h1>
+          <p style="margin: 0;">Δεν κατέστη δυνατή η εύρεση εταιρείας${companyName ? ` για ${companyName}` : ''} με ΑΦΜ ${normalizedAfm}.</p>
+        </main>
+      `
+      return
+    }
     throw error
   }
 }
