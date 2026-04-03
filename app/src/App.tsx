@@ -713,6 +713,7 @@ export default function App() {
             when: formatDateEl(cleanText(r.submission_at)),
             why: toSentenceCaseEl(why),
             beneficiary: toUpperEl(cleanText(p?.beneficiary_name)),
+            beneficiaryVat: cleanText(p?.beneficiary_vat_number) ?? null,
             contractType: cleanText(r.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
             signedAt: formatDateEl(cleanText(r.contract_signed_date)),
@@ -1650,6 +1651,7 @@ export default function App() {
 
           return {
             beneficiary: toUpperEl(cleanText(row.beneficiary_name) ?? beneficiaryVat),
+            beneficiaryVat: beneficiaryVat ?? null,
             organization: cleanText(row.organization) ?? '—',
             totalAmount: toFiniteNumber(row.total_amount) ?? 0,
             contractCount: Math.round(toFiniteNumber(row.contract_count) ?? 0),

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import BeneficiaryLink from './BeneficiaryLink'
 import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
@@ -12,6 +13,7 @@ export type FeaturedRecordContract = LatestContractCardView & ContractModalContr
 
 export type BeneficiaryInsightRow = {
   beneficiary: string
+  beneficiaryVat?: string | null
   organization: string
   totalAmount: number
   contractCount: number
@@ -98,7 +100,13 @@ export default function FeaturedRecordsSection({
                   <div className="record-card__authority">#{idx + 1}</div>
                   <div className="record-card__id">Συμβάσεις: {row.contractCount.toLocaleString('el-GR')}</div>
                 </div>
-                <h3>{row.beneficiary}</h3>
+                <h3>
+                  <BeneficiaryLink
+                    name={row.beneficiary}
+                    afm={row.beneficiaryVat}
+                    className="beneficiary-link beneficiary-link--heading"
+                  />
+                </h3>
                 <div className="record-card__amount">{formatEur(row.totalAmount)}</div>
                 <div className="record-card__tags" aria-label="Μεταδεδομένα δικαιούχου">
                   <span>CPV: {row.cpv}</span>

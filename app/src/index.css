@@ -428,6 +428,38 @@ main {
   letter-spacing: 0.04em;
 }
 
+.beneficiary-link {
+  appearance: none;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.beneficiary-link:hover,
+.beneficiary-link:focus-visible {
+  color: #0f6a51;
+}
+
+.beneficiary-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.beneficiary-link--heading {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
 .wire-item__type {
   margin: 0;
   color: var(--ink-soft);

@@ -980,6 +980,7 @@ export default function EnvironmentMinistryDashboard() {
 
         return {
           beneficiary: toUpperEl(group.beneficiaryName),
+          beneficiaryVat: group.beneficiaryVat,
           organization,
           totalAmount: group.totalAmount,
           contractCount: group.contractIds.size,

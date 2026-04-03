@@ -11,6 +11,7 @@ type BuildLatestContractCardViewArgs = {
   when: string
   why: string
   beneficiary: string
+  beneficiaryVat?: string | null
   contractType: string
   howMuch: string
   signedAt?: string
@@ -41,6 +42,7 @@ export function buildLatestContractCardView(args: BuildLatestContractCardViewArg
     when: args.when,
     why: args.why,
     beneficiary: args.beneficiary,
+    beneficiaryVat: args.beneficiaryVat ?? null,
     contractType: args.contractType,
     howMuch: args.howMuch,
     signedAt: args.signedAt,
