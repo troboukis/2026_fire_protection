@@ -5850,6 +5850,12 @@ main {
   align-content: start;
 }
 
+.municipality-contract-card__empty-value {
+  font-size: clamp(1.05rem, 1.8vw, 1.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
 .municipality-contract-card--chart {
   align-content: stretch;
   grid-template-rows: auto minmax(0, 1fr) auto;
