@@ -211,6 +211,68 @@ def first_list_item(val) -> str | None:
     return None
 
 
+def parse_serialized_list(val) -> list:
+    s = t(val)
+    if s is None:
+        return []
+    if not s.startswith("["):
+        return [s]
+    for loader in (json.loads, ast.literal_eval):
+        try:
+            parsed = loader(s)
+        except Exception:
+            continue
+        if isinstance(parsed, list):
+            return parsed
+    return []
+
+
+def unique_nonempty_strings(values: Iterable[str | None]) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        cleaned = t(value)
+        if cleaned is None or cleaned in seen:
+            continue
+        seen.add(cleaned)
+        out.append(cleaned)
+    return out
+
+
+def raw_contracting_members(raw_row: pd.Series) -> list[tuple[str | None, str | None]]:
+    members: list[tuple[str | None, str | None]] = []
+
+    for item in parse_serialized_list(raw_row.get("contractingMembers_details")):
+        if not isinstance(item, dict):
+            continue
+        member = (t(item.get("vatNumber")), t(item.get("name")))
+        if member[0] is not None or member[1] is not None:
+            members.append(member)
+
+    if not members:
+        afms = [t(value) for value in parse_serialized_list(raw_row.get("contractingMembers_vatNumbers"))]
+        names = [t(value) for value in parse_serialized_list(raw_row.get("contractingMembers_names"))]
+        for index in range(max(len(afms), len(names))):
+            afm = afms[index] if index < len(afms) else None
+            name = names[index] if index < len(names) else None
+            if afm is not None or name is not None:
+                members.append((afm, name))
+
+    if not members:
+        legacy_member = (t(raw_row.get("firstMember_vatNumber")), t(raw_row.get("firstMember_name")))
+        if legacy_member[0] is not None or legacy_member[1] is not None:
+            members.append(legacy_member)
+
+    out: list[tuple[str | None, str | None]] = []
+    seen: set[tuple[str | None, str | None]] = set()
+    for member in members:
+        if member in seen:
+            continue
+        seen.add(member)
+        out.append(member)
+    return out
+
+
 def read_csvs(limit: int | None = None) -> CsvBundle:
     def read(path: Path) -> pd.DataFrame:
         df = pd.read_csv(path, dtype=str, keep_default_na=False)
@@ -1372,23 +1434,27 @@ def diav_rows(
 
 
 def payment_row_from_raw(raw_row: pd.Series, procurement_id: int) -> tuple:
-    beneficiary_name = t(raw_row.get("firstMember_name"))
+    members = raw_contracting_members(raw_row)
+    beneficiary_names = unique_nonempty_strings(name for _, name in members)
+    beneficiary_vat_numbers = unique_nonempty_strings(afm for afm, _ in members)
+    beneficiary_name = " | ".join(beneficiary_names) if beneficiary_names else None
+    beneficiary_vat_number = " | ".join(beneficiary_vat_numbers) if beneficiary_vat_numbers else None
     submission_ts = ts_iso(raw_row.get("submissionDate"))
     fiscal_year = int(submission_ts[:4]) if submission_ts else None
     return (
         procurement_id,                              # procurement_id
         None,                                        # diavgeia_document_type_decision_uid
         None,                                        # diavgeia_id
-        1 if beneficiary_name else None,             # beneficiaries_count
+        len(members) if members else None,           # beneficiaries_count
         t(raw_row.get("signers")),                   # signers
         beneficiary_name,                            # beneficiary_name
-        t(raw_row.get("firstMember_vatNumber")),     # beneficiary_vat_number
+        beneficiary_vat_number,                      # beneficiary_vat_number
         dec(raw_row.get("totalCostWithVAT")),        # amount_with_vat
         dec(raw_row.get("totalCostWithoutVAT")),     # amount_without_vat
         None,                                        # kae_ale (not provided in raw CSV)
         fiscal_year,                                 # fiscal_year
         t(raw_row.get("fundingDetails_regularBudget")),  # budget_category
-        beneficiary_name,                            # counter_party
+        beneficiary_name or beneficiary_vat_number,  # counter_party
         t(raw_row.get("paymentRefNo")),              # payment_ref_no
     )
 
@@ -2017,7 +2083,6 @@ def main() -> None:
             reprocessed_existing_proc = 0
             for n, ((idx, row), p) in enumerate(zip(bundle.raw.iterrows(), procurement), start=1):
                 uid = procurement_uid_from_proc_row(p)
-                process_row = True
                 if uid in existing_proc_by_uid:
                     procurement_id = existing_proc_by_uid[uid]
                     skipped_proc += 1
@@ -2035,29 +2100,26 @@ def main() -> None:
                         )
                         updated_existing_proc += cur.rowcount
                         reprocessed_existing_proc += 1
-                    else:
-                        process_row = False
                 else:
                     cur.execute(procurement_insert_sql, p)
                     procurement_id = cur.fetchone()[0]
                     existing_proc_by_uid[uid] = procurement_id
                     inserted_proc += 1
 
-                if process_row:
-                    affected_superseded_references.update(affected_reference_numbers_for_row(row))
-                    keys = [x.strip() for x in str(row.get("cpv_keys") or "").split("|")] if t(row.get("cpv_keys")) else []
-                    values = [x.strip() for x in str(row.get("cpv_values") or "").split("|")] if t(row.get("cpv_values")) else []
-                    for idx_key, key in enumerate(keys):
-                        key_clean = t(key)
-                        if not key_clean:
-                            continue
-                        value_from_raw = t(values[idx_key]) if idx_key < len(values) else None
-                        value_clean = value_from_raw or DEFAULT_CPVS.get(key_clean)
-                        if value_clean is None:
-                            missing_cpv_keys.add(key_clean)
-                        cpv_rows_to_insert.append((key_clean, value_clean, procurement_id))
+                affected_superseded_references.update(affected_reference_numbers_for_row(row))
+                keys = [x.strip() for x in str(row.get("cpv_keys") or "").split("|")] if t(row.get("cpv_keys")) else []
+                values = [x.strip() for x in str(row.get("cpv_values") or "").split("|")] if t(row.get("cpv_values")) else []
+                for idx_key, key in enumerate(keys):
+                    key_clean = t(key)
+                    if not key_clean:
+                        continue
+                    value_from_raw = t(values[idx_key]) if idx_key < len(values) else None
+                    value_clean = value_from_raw or DEFAULT_CPVS.get(key_clean)
+                    if value_clean is None:
+                        missing_cpv_keys.add(key_clean)
+                    cpv_rows_to_insert.append((key_clean, value_clean, procurement_id))
 
-                    payment_rows_to_insert.append(payment_row_from_raw(row, procurement_id))
+                payment_rows_to_insert.append(payment_row_from_raw(row, procurement_id))
                 if n % 500 == 0 or n == total_proc:
                     log(f"Procurement progress: {n}/{total_proc}")
             conn.commit()
@@ -2341,31 +2403,58 @@ def main() -> None:
             diav_bene_rows = []
             for _, r in bundle.diav.iterrows():
                 ada = t(r.get("ada"))
-                afm = first_list_item(r.get("payment_beneficiary_afm")) or t(r.get("payment_beneficiary_afm"))
-                name = first_list_item(r.get("payment_beneficiary_name")) or t(r.get("payment_beneficiary_name"))
                 happened_at = parse_any_datetime(r.get("publishTimestamp")) or parse_any_datetime(r.get("submissionTimestamp"))
-                if ada and afm:
-                    diav_bene_rows.append((ada, afm, name))
-                register_beneficiary_candidate(afm, name, happened_at, 1)
+                afms = [t(value) for value in parse_serialized_list(r.get("payment_beneficiary_afm"))]
+                names = [t(value) for value in parse_serialized_list(r.get("payment_beneficiary_name"))]
+                for index in range(max(len(afms), len(names))):
+                    afm = afms[index] if index < len(afms) else None
+                    name = names[index] if index < len(names) else None
+                    if ada and afm:
+                        diav_bene_rows.append((ada, afm, name))
+                    register_beneficiary_candidate(afm, name, happened_at, 1)
 
             for _, r in bundle.raw.iterrows():
-                afm = t(r.get("firstMember_vatNumber"))
-                name = t(r.get("firstMember_name"))
                 happened_at = parse_any_datetime(r.get("contractSignedDate")) or parse_any_datetime(r.get("submissionDate"))
-                register_beneficiary_candidate(afm, name, happened_at, 2)
+                for afm, name in raw_contracting_members(r):
+                    register_beneficiary_candidate(afm, name, happened_at, 2)
 
             cur.execute(
                 """
-                SELECT id, beneficiary_vat_number, beneficiary_name
-                FROM public.payment
-                WHERE NULLIF(TRIM(beneficiary_vat_number), '') IS NOT NULL
+                SELECT
+                  py.id,
+                  p.reference_number,
+                  p.diavgeia_ada,
+                  p.contract_number,
+                  p.title,
+                  p.submission_at,
+                  p.organization_key
+                FROM public.payment py
+                JOIN public.procurement p
+                  ON p.id = py.procurement_id
                 """
             )
-            payment_bene_rows = [
-                (int(payment_id), t(beneficiary_vat_number), t(beneficiary_name))
-                for payment_id, beneficiary_vat_number, beneficiary_name in cur.fetchall()
-                if t(beneficiary_vat_number)
-            ]
+            payment_id_by_uid = {
+                procurement_source_uid(reference_number, diavgeia_ada, contract_number, title, submission_at, organization_key): int(payment_id)
+                for payment_id, reference_number, diavgeia_ada, contract_number, title, submission_at, organization_key in cur.fetchall()
+            }
+            payment_bene_rows: list[tuple[int, str]] = []
+            for _, r in bundle.raw.iterrows():
+                payment_id = payment_id_by_uid.get(
+                    procurement_source_uid(
+                        r.get("referenceNumber"),
+                        r.get("diavgeiaADA"),
+                        r.get("contractNumber"),
+                        r.get("title"),
+                        ts_iso(r.get("submissionDate")),
+                        r.get("organization_key"),
+                    )
+                )
+                if payment_id is None:
+                    continue
+                for afm, _ in raw_contracting_members(r):
+                    afm_clean = t(afm)
+                    if afm_clean is not None:
+                        payment_bene_rows.append((payment_id, afm_clean))
 
             beneficiary_upserts = [
                 (afm, candidate[2])
@@ -2391,6 +2480,14 @@ def main() -> None:
 
             if payment_bene_rows:
                 log(f"Upserting payment_beneficiary bridge rows ({len(payment_bene_rows)})...")
+                payment_ids = sorted({payment_id for payment_id, _ in payment_bene_rows})
+                cur.execute(
+                    """
+                    DELETE FROM public.payment_beneficiary
+                    WHERE payment_id = ANY(%s::bigint[])
+                    """,
+                    (payment_ids,),
+                )
                 psycopg2.extras.execute_batch(
                     cur,
                     """
@@ -2398,7 +2495,7 @@ def main() -> None:
                     VALUES (%s, %s)
                     ON CONFLICT DO NOTHING
                     """,
-                    [(payment_id, afm) for payment_id, afm, _ in payment_bene_rows if afm],
+                    payment_bene_rows,
                     page_size=1000,
                 )
 

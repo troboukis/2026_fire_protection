@@ -9,6 +9,7 @@ import type { LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
+import { summarizePaymentRows } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
 
@@ -561,8 +562,7 @@ export default function MapsPage() {
       supabase
         .from('payment')
         .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
-        .eq('procurement_id', contractId)
-        .limit(1),
+        .eq('procurement_id', contractId),
       supabase
         .from('cpv')
         .select('cpv_key, cpv_value')
@@ -587,15 +587,6 @@ export default function MapsPage() {
           .limit(1)
         : Promise.resolve({ data: [] }),
     ])
-
-    const p = (pRows?.[0] ?? null) as {
-      beneficiary_name: string | null
-      beneficiary_vat_number: string | null
-      signers: string | null
-      payment_ref_no: string | null
-      amount_without_vat: number | null
-      amount_with_vat: number | null
-    } | null
     const cpvItems = ((cpvRows ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
       .map((r) => ({
         code: cleanText(r.cpv_key) ?? '—',
@@ -622,7 +613,15 @@ export default function MapsPage() {
       region_value: string | null
     } | null
 
-    const amountWithoutVat = p?.amount_without_vat ?? null
+    const payment = summarizePaymentRows((pRows ?? []) as Array<{
+      beneficiary_name: string | null
+      beneficiary_vat_number: string | null
+      signers: string | null
+      payment_ref_no: string | null
+      amount_without_vat: number | null
+      amount_with_vat: number | null
+    }>)
+    const amountWithoutVat = payment.amount_without_vat ?? null
     const contractRelatedAda = cleanText(proc.contract_related_ada)
     const diavgeiaAda = cleanText(proc.diavgeia_ada)
     const organizationName = cleanText(org?.organization_normalized_value) ?? cleanText(org?.organization_value) ?? cleanText(proc.organization_key) ?? '—'
@@ -639,11 +638,11 @@ export default function MapsPage() {
       what: cleanText(proc.title) ?? '—',
       when: formatDateEl(cleanText(proc.submission_at)),
       why: firstPipePart(proc.short_descriptions) ?? c?.label ?? '—',
-      beneficiary: cleanText(p?.beneficiary_name) ?? '—',
+      beneficiary: cleanText(payment.beneficiary_name) ?? '—',
       contractType: cleanText(proc.procedure_type_value) ?? '—',
       howMuch: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       withoutVatAmount: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
-      withVatAmount: (p?.amount_with_vat == null ? '—' : Number(p.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      withVatAmount: (payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       referenceNumber: cleanText(proc.reference_number) ?? '—',
       contractNumber: cleanText(proc.contract_number) ?? '—',
       cpv: c?.label ?? '—',
@@ -653,8 +652,8 @@ export default function MapsPage() {
       startDate: formatDateEl(cleanText(proc.start_date)),
       endDate: formatDateEl(cleanText(proc.end_date)),
       organizationVat: cleanText(proc.organization_vat_number) ?? '—',
-      beneficiaryVat: cleanText(p?.beneficiary_vat_number) ?? '—',
-      signers: cleanText(p?.signers) ?? '—',
+      beneficiaryVat: cleanText(payment.beneficiary_vat_number) ?? '—',
+      signers: cleanText(payment.signers) ?? '—',
       assignCriteria: cleanText(proc.assign_criteria) ?? '—',
       contractKind: cleanText(proc.contract_type) ?? '—',
       awardProcedure: cleanText(proc.award_procedure) ?? '—',
@@ -664,7 +663,7 @@ export default function MapsPage() {
       fundingEspa: cleanText(proc.funding_details_espa) ?? '—',
       fundingRegular: cleanText(proc.funding_details_regular_budget) ?? '—',
       auctionRefNo: cleanText(proc.auction_ref_no) ?? '—',
-      paymentRefNo: cleanText(p?.payment_ref_no) ?? '—',
+      paymentRefNo: cleanText(payment.payment_ref_no) ?? '—',
       shortDescription: firstPipePart(proc.short_descriptions) ?? '—',
       rawBudget: (proc.budget == null ? '—' : Number(proc.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       contractBudget: (proc.contract_budget == null ? '—' : Number(proc.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),

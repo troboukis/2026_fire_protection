@@ -147,3 +147,4 @@ run_started_at_utc,fetched_records,output_rows,output_csv,from_backup,success,er
 2026-04-03 17:31:11,32412,5384,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,True,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE
 >>>>>>> 492bd5a (WIP: preserve local correct state)
 2026-04-03 19:12:54,32285,5647,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,False,False,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE
+2026-04-03 23:11:49,32285,5564,/Users/troboukis/Code/fire_protection_2026/data/raw_procurements.csv,True,False,/Users/troboukis/Code/fire_protection_2026/state/kimdis_state.json,True,False,NONE

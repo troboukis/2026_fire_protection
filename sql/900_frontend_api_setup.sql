@@ -635,27 +635,31 @@ WITH proc_ranked AS (
     p.diavgeia_ada,
     COALESCE(py.amount_without_vat, 0) AS amount_without_vat,
     py.amount_with_vat,
-    py.beneficiary_vat_number,
+    pb.beneficiary_vat_number,
     COALESCE(
-      NULLIF(TRIM(py.beneficiary_name), ''),
-      NULLIF(TRIM(b.beneficiary_name), '')
+      NULLIF(TRIM(b.beneficiary_name), ''),
+      NULLIF(TRIM(pb.beneficiary_vat_number), '')
     ) AS beneficiary_name,
     py.signers,
     py.payment_ref_no,
     ROW_NUMBER() OVER (
-      PARTITION BY COALESCE(
-        NULLIF(TRIM(p.reference_number), ''),
-        NULLIF(TRIM(p.diavgeia_ada), ''),
-        NULLIF(TRIM(p.contract_number), ''),
-        CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
-      )
+      PARTITION BY
+        COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        ),
+        pb.beneficiary_vat_number
       ORDER BY p.id DESC
     ) AS rn
   FROM public.procurement p
   JOIN public.payment py
     ON py.procurement_id = p.id
+  JOIN public.payment_beneficiary pb
+    ON pb.payment_id = py.id
   LEFT JOIN public.beneficiary b
-    ON b.beneficiary_vat_number = py.beneficiary_vat_number
+    ON b.beneficiary_vat_number = pb.beneficiary_vat_number
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
     AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
     AND NOT EXISTS (
@@ -664,7 +668,7 @@ WITH proc_ranked AS (
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
     AND p.contract_signed_date BETWEEN make_date(p_year_main, 1, 1) AND make_date(p_year_main, 12, 31)
-    AND NULLIF(TRIM(py.beneficiary_vat_number), '') IS NOT NULL
+    AND NULLIF(TRIM(pb.beneficiary_vat_number), '') IS NOT NULL
 ),
 dedup_base AS (
   SELECT
@@ -1430,14 +1434,28 @@ ministry_name AS (
 payment_agg AS (
   SELECT
     py.procurement_id,
-    SUM(COALESCE(py.amount_without_vat, 0)) AS amount_without_vat,
-    SUM(COALESCE(py.amount_with_vat, 0)) AS amount_with_vat,
-    STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_name), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_name), '')) AS beneficiary_name,
-    STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_vat_number), '')) AS beneficiary_vat_number,
+    MAX(COALESCE(py.amount_without_vat, 0)) AS amount_without_vat,
+    MAX(COALESCE(py.amount_with_vat, 0)) AS amount_with_vat,
+    COALESCE(
+      STRING_AGG(
+        DISTINCT COALESCE(NULLIF(BTRIM(b.beneficiary_name), ''), NULLIF(BTRIM(pb.beneficiary_vat_number), '')),
+        ' | '
+        ORDER BY COALESCE(NULLIF(BTRIM(b.beneficiary_name), ''), NULLIF(BTRIM(pb.beneficiary_vat_number), ''))
+      ),
+      STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_name), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_name), ''))
+    ) AS beneficiary_name,
+    COALESCE(
+      STRING_AGG(DISTINCT NULLIF(BTRIM(pb.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(pb.beneficiary_vat_number), '')),
+      STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_vat_number), ''))
+    ) AS beneficiary_vat_number,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.signers), ''), ' | ' ORDER BY NULLIF(BTRIM(py.signers), '')) AS signers,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.payment_ref_no), ''), ' | ' ORDER BY NULLIF(BTRIM(py.payment_ref_no), '')) AS payment_ref_no,
     MAX(py.fiscal_year) AS fiscal_year
   FROM public.payment py
+  LEFT JOIN public.payment_beneficiary pb
+    ON pb.payment_id = py.id
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = pb.beneficiary_vat_number
   GROUP BY py.procurement_id
 ),
 proc_ranked AS (
@@ -1517,11 +1535,13 @@ signed_current_contracts AS (
 ),
 current_year_beneficiaries AS (
   SELECT DISTINCT
-    NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_key
+    NULLIF(BTRIM(pb.beneficiary_vat_number), '') AS beneficiary_key
   FROM signed_current_contracts sc
   JOIN public.payment py
     ON py.procurement_id = sc.id
-  WHERE NULLIF(BTRIM(py.beneficiary_vat_number), '') IS NOT NULL
+  JOIN public.payment_beneficiary pb
+    ON pb.payment_id = py.id
+  WHERE NULLIF(BTRIM(pb.beneficiary_vat_number), '') IS NOT NULL
 ),
 relevant_contracts AS (
   SELECT

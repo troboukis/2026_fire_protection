@@ -51,27 +51,31 @@ WITH proc_ranked AS (
     p.diavgeia_ada,
     COALESCE(py.amount_without_vat, 0) AS amount_without_vat,
     py.amount_with_vat,
-    py.beneficiary_vat_number,
+    pb.beneficiary_vat_number,
     COALESCE(
-      NULLIF(TRIM(py.beneficiary_name), ''),
-      NULLIF(TRIM(b.beneficiary_name), '')
+      NULLIF(TRIM(b.beneficiary_name), ''),
+      NULLIF(TRIM(pb.beneficiary_vat_number), '')
     ) AS beneficiary_name,
     py.signers,
     py.payment_ref_no,
     ROW_NUMBER() OVER (
-      PARTITION BY COALESCE(
-        NULLIF(TRIM(p.reference_number), ''),
-        NULLIF(TRIM(p.diavgeia_ada), ''),
-        NULLIF(TRIM(p.contract_number), ''),
-        CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
-      )
+      PARTITION BY
+        COALESCE(
+          NULLIF(TRIM(p.reference_number), ''),
+          NULLIF(TRIM(p.diavgeia_ada), ''),
+          NULLIF(TRIM(p.contract_number), ''),
+          CONCAT_WS('|', COALESCE(p.organization_key, ''), COALESCE(p.title, ''), COALESCE(p.contract_signed_date::text, ''))
+        ),
+        pb.beneficiary_vat_number
       ORDER BY p.id DESC
     ) AS rn
   FROM public.procurement p
   JOIN public.payment py
     ON py.procurement_id = p.id
+  JOIN public.payment_beneficiary pb
+    ON pb.payment_id = py.id
   LEFT JOIN public.beneficiary b
-    ON b.beneficiary_vat_number = py.beneficiary_vat_number
+    ON b.beneficiary_vat_number = pb.beneficiary_vat_number
   WHERE COALESCE(p.cancelled, FALSE) = FALSE
     AND NULLIF(TRIM(p.next_ref_no), '') IS NULL
     AND NOT EXISTS (
@@ -80,7 +84,7 @@ WITH proc_ranked AS (
       WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
     )
     AND p.contract_signed_date BETWEEN make_date(p_year_main, 1, 1) AND make_date(p_year_main, 12, 31)
-    AND NULLIF(TRIM(py.beneficiary_vat_number), '') IS NOT NULL
+    AND NULLIF(TRIM(pb.beneficiary_vat_number), '') IS NOT NULL
 ),
 dedup_base AS (
   SELECT

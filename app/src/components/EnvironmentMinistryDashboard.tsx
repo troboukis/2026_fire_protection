@@ -12,6 +12,7 @@ import ProfileSectionCard from './ProfileSectionCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
+import { summarizePaymentRows } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData } from '../types'
 
@@ -1158,22 +1159,21 @@ export default function EnvironmentMinistryDashboard() {
                         supabase
                           .from('payment')
                           .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
-                          .eq('procurement_id', contractId)
-                          .limit(1),
+                          .eq('procurement_id', contractId),
                         supabase
                           .from('cpv')
                           .select('cpv_key, cpv_value')
                           .eq('procurement_id', contractId),
                       ])
 
-                      const payment = (paymentRows?.[0] ?? null) as {
+                      const payment = summarizePaymentRows((paymentRows ?? []) as Array<{
                         beneficiary_name: string | null
                         beneficiary_vat_number: string | null
                         signers: string | null
                         payment_ref_no: string | null
                         amount_without_vat: number | null
                         amount_with_vat: number | null
-                      } | null
+                      }>)
 
                       const nextContract = mapRpcContract({
                         id: procurement.id,
@@ -1181,10 +1181,10 @@ export default function EnvironmentMinistryDashboard() {
                         what: cleanText(procurement.title) ?? '—',
                         when: cleanText(procurement.submission_at),
                         why: firstPipePart(procurement.short_descriptions) ?? '—',
-                        beneficiary: firstPipePart(payment?.beneficiary_name) ?? '—',
+                        beneficiary: cleanText(payment.beneficiary_name) ?? '—',
                         contract_type: cleanText(procurement.procedure_type_value) ?? '—',
-                        amount_without_vat: payment?.amount_without_vat ?? procurement.contract_budget ?? procurement.budget,
-                        amount_with_vat: payment?.amount_with_vat ?? null,
+                        amount_without_vat: payment.amount_without_vat ?? procurement.contract_budget ?? procurement.budget,
+                        amount_with_vat: payment.amount_with_vat ?? null,
                         reference_number: cleanText(procurement.reference_number) ?? '—',
                         contract_number: cleanText(procurement.contract_number) ?? '—',
                         cpv_items: ((cpvRows ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
@@ -1197,8 +1197,8 @@ export default function EnvironmentMinistryDashboard() {
                         end_date: cleanText(procurement.end_date),
                         no_end_date: procurement.no_end_date ?? false,
                         organization_vat_number: cleanText(procurement.organization_vat_number) ?? '—',
-                        beneficiary_vat_number: cleanText(payment?.beneficiary_vat_number) ?? '—',
-                        signers: cleanText(payment?.signers) ?? '—',
+                        beneficiary_vat_number: cleanText(payment.beneficiary_vat_number) ?? '—',
+                        signers: cleanText(payment.signers) ?? '—',
                         assign_criteria: cleanText(procurement.assign_criteria) ?? '—',
                         contract_kind: cleanText(procurement.contract_type) ?? '—',
                         award_procedure: cleanText(procurement.award_procedure) ?? '—',
@@ -1208,7 +1208,7 @@ export default function EnvironmentMinistryDashboard() {
                         funding_espa: cleanText(procurement.funding_details_espa) ?? '—',
                         funding_regular: cleanText(procurement.funding_details_regular_budget) ?? '—',
                         auction_ref_no: cleanText(procurement.auction_ref_no) ?? '—',
-                        payment_ref_no: cleanText(payment?.payment_ref_no) ?? '—',
+                        payment_ref_no: cleanText(payment.payment_ref_no) ?? '—',
                         short_description: firstPipePart(procurement.short_descriptions) ?? '—',
                         raw_budget: procurement.budget,
                         contract_budget: procurement.contract_budget,
@@ -1217,9 +1217,9 @@ export default function EnvironmentMinistryDashboard() {
                         next_reference_number: cleanText(procurement.next_ref_no) ?? '—',
                         diavgeia_ada: cleanText(procurement.diavgeia_ada) ?? '—',
                         payment_fiscal_year: null,
-                        primary_signer: firstPipePart(payment?.signers) ?? 'Χωρίς υπογράφοντα',
-                        primary_beneficiary: firstPipePart(payment?.beneficiary_name) ?? 'Χωρίς δικαιούχο',
-                        primary_beneficiary_vat_number: firstPipePart(payment?.beneficiary_vat_number) ?? '—',
+                        primary_signer: firstPipePart(payment.signers) ?? 'Χωρίς υπογράφοντα',
+                        primary_beneficiary: firstPipePart(payment.beneficiary_name) ?? 'Χωρίς δικαιούχο',
+                        primary_beneficiary_vat_number: firstPipePart(payment.beneficiary_vat_number) ?? '—',
                       }, data.ministryName)
 
                       setSelectedContract(nextContract)

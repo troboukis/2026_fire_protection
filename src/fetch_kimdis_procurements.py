@@ -460,6 +460,16 @@ class ProcurementCollector:
         units_operator = (contracting.get("unitsOperator") or {}).get("value", "")
         signers = (contracting.get("signers") or {}).get("value", "")
         members = contracting.get("contractingMembersDataList") or []
+        member_details = [
+            {
+                "vatNumber": (member or {}).get("vatNumber"),
+                "name": (member or {}).get("name"),
+                "countryKey": ((member or {}).get("country") or {}).get("key"),
+                "countryValue": ((member or {}).get("country") or {}).get("value"),
+            }
+            for member in members
+            if isinstance(member, dict)
+        ]
         first_member = members[0] if members else {}
 
         return {
@@ -519,6 +529,10 @@ class ProcurementCollector:
             "fundingDetails_regularBudget": funding.get("regularBudgetFundedProgramRef"),
             "unitsOperator": units_operator,
             "signers": signers,
+            "contractingMembers_count": len(member_details),
+            "contractingMembers_vatNumbers": [member.get("vatNumber") for member in member_details if member.get("vatNumber")],
+            "contractingMembers_names": [member.get("name") for member in member_details if member.get("name")],
+            "contractingMembers_details": member_details,
             "firstMember_vatNumber": first_member.get("vatNumber"),
             "firstMember_name": first_member.get("name"),
             "totalCostWithVAT": item.get("totalCostWithVAT"),
