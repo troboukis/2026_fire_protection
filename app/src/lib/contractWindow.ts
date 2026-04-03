@@ -45,27 +45,51 @@ export function getContractEffectiveWindow(contract: ContractWindowFields): {
   }
 }
 
+function yearBounds(year: number): { yearStart: string; yearEnd: string } {
+  return {
+    yearStart: `${year}-01-01`,
+    yearEnd: `${year}-12-31`,
+  }
+}
+
+function getContractYearDefinitionFields(contract: ContractWindowFields): {
+  signedDate: string | null
+  endDate: string | null
+  hasExplicitEndDate: boolean
+} {
+  const signedDate = cleanDateString(contract.contract_signed_date)
+  const endDate = cleanDateString(contract.end_date)
+  const hasExplicitEndDate = !contract.no_end_date && Boolean(endDate)
+  return {
+    signedDate,
+    endDate,
+    hasExplicitEndDate,
+  }
+}
+
 export function isContractActiveInYear(contract: ContractWindowFields, year: number): boolean {
-  const yearStart = `${year}-01-01`
-  const yearEnd = `${year}-12-31`
-  const { effectiveStart, endDate } = getContractEffectiveWindow(contract)
-  if (!effectiveStart || !endDate) return false
-  return effectiveStart <= yearEnd && endDate >= yearStart
+  const { yearStart, yearEnd } = yearBounds(year)
+  const { signedDate, endDate, hasExplicitEndDate } = getContractYearDefinitionFields(contract)
+  if (!signedDate) return false
+  if (signedDate >= yearStart && signedDate <= yearEnd) return true
+  return signedDate < yearStart && hasExplicitEndDate && Boolean(endDate) && (endDate as string) >= yearStart
 }
 
 export function getContractYearAnchorDate(contract: ContractWindowFields, year: number): string | null {
-  const yearStart = `${year}-01-01`
-  const yearEnd = `${year}-12-31`
-  const { signedDate, effectiveStart, effectiveEnd } = getContractEffectiveWindow(contract)
-  if (!effectiveStart || !effectiveEnd) return null
-  if (effectiveStart > yearEnd || effectiveEnd < yearStart) return null
-  if (signedDate && signedDate >= yearStart && signedDate <= yearEnd) return signedDate
-  return effectiveStart < yearStart ? yearStart : effectiveStart
+  const { yearStart, yearEnd } = yearBounds(year)
+  const { signedDate, endDate, hasExplicitEndDate } = getContractYearDefinitionFields(contract)
+  if (!signedDate) return null
+  if (signedDate >= yearStart && signedDate <= yearEnd) return signedDate
+  if (signedDate < yearStart && hasExplicitEndDate && Boolean(endDate) && (endDate as string) >= yearStart) {
+    return yearStart
+  }
+  return null
 }
 
 export function isContractActiveOnDate(contract: ContractWindowFields, date: string): boolean {
   const cleanDate = cleanDateString(date)
-  const { effectiveStart, endDate } = getContractEffectiveWindow(contract)
-  if (!cleanDate || !effectiveStart || !endDate) return false
-  return effectiveStart <= cleanDate && endDate >= cleanDate
+  if (!cleanDate) return false
+  const year = Number(cleanDate.slice(0, 4))
+  if (!Number.isFinite(year)) return false
+  return isContractActiveInYear(contract, year)
 }
