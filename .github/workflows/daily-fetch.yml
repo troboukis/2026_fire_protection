@@ -64,25 +64,36 @@ jobs:
               ;;
           esac
 
-      - name: Refresh source datasets
-        run: |
-          python fetch_diavgeia.py
-          python src/filter_relevance.py --allow-ci
-          python fetch_kimdis_procurements.py
+      - name: Refresh Diavgeia source dataset
+        continue-on-error: true
+        run: python fetch_diavgeia.py
+
+      - name: Refresh Diavgeia relevance dataset
+        continue-on-error: true
+        run: python src/filter_relevance.py --allow-ci
+
+      - name: Refresh KIMDIS source dataset
+        continue-on-error: true
+        run: python fetch_kimdis_procurements.py
 
       - name: Refresh Copernicus data in database
+        continue-on-error: true
         run: python src/fetch_copernicus.py
 
       - name: Sync refreshed datasets to application database
+        continue-on-error: true
         run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
       - name: Backfill canonical organization authority scopes
+        continue-on-error: true
         run: python scripts/backfill_organization_authority_scope.py
 
       - name: Reload organization municipality coverage
+        continue-on-error: true
         run: python scripts/load_org_municipality_coverage.py
 
       - name: Locate works for new municipality, region, and ADMIE procurements
+        continue-on-error: true
         run: python src/run_locate_work_updates.py
 
       - name: Commit and push changes
