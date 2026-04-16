@@ -94,7 +94,9 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "σχολει",
     "ΕΠΑΛ",
     "ΒΡΕΦΟ",
-    "ΠΑΙΔΙΚ"
+    "ΠΑΙΔΙΚ",
+    "αναδάσωσ",
+    "ΣΥΝΤΗΡΗΣΗ ΧΩΡΩΝ ΠΡΑΣΙΝΟΥ"
 ]
 
 # Broad CPVs that overlap with non-fire-protection domains.

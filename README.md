@@ -58,6 +58,46 @@ REBUILD_ORG_MAPPINGS=1 ./scripts/run_fetch_and_sync.sh
 DOWNLOAD_DIAVGEIA_PDFS=1 RUN_DB_INGEST=1 ./scripts/run_fetch_and_sync.sh
 ```
 
+## Delete procurements by keywords
+
+Use `scripts/delete_procurements_by_keywords.py` to remove contracts from `public.procurement` when selected text fields contain specific keywords.
+
+Default behavior is dry-run only. The script prints a JSON preview with:
+- matched procurement count
+- affected dependent rows (`payment`, `payment_beneficiary`, `cpv`, `diavgeia_procurement`, `works`)
+- a sample preview of matching contracts
+
+Add `--apply` only after verifying the preview.
+
+Examples:
+
+```bash
+./.fireprotection/bin/python scripts/delete_procurements_by_keywords.py \
+  --keyword καθαρισμός \
+  --keyword αποψίλωση
+
+./.fireprotection/bin/python scripts/delete_procurements_by_keywords.py \
+  --keywords-file data/keywords/to_remove.txt \
+  --match-mode all \
+  --apply
+```
+
+Supported options:
+- `--keyword <value>`: repeat for multiple keywords or phrases
+- `--keywords-file <path>`: load one keyword/phrase per line, `#` comments ignored
+- `--column <name>`: search specific columns; default is `title` and `short_descriptions`
+- `--match-mode any|all`: match any keyword or require all keywords
+- `--preview-limit <N>`: limit preview rows in JSON output
+- `--apply`: execute the delete instead of previewing it
+
+Text matching is normalized before comparison:
+- not case-sensitive
+- ignores Greek tonos/diacritics
+- normalizes final sigma (`ς -> σ`)
+- ignores spaces and special characters such as `-`, `/`, `_`, punctuation
+
+This means values like `καθαρισμός`, `Καθαρισμος`, and `κα-θα/ρι_σμός` are treated as equivalent during matching.
+
 ## Local PDF pipeline
 
 PDFs are stored locally in `pdf/` (excluded from git via `.gitignore`).
