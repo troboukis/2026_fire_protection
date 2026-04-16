@@ -2058,7 +2058,630 @@ $$;
 GRANT EXECUTE ON FUNCTION public.get_latest_funding_year_municipality_spend() TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
--- J) Table/function grants for frontend reads
+-- J) Homepage latest contracts RPC
+-- -------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.get_latest_contract_cards(
+  p_limit integer DEFAULT 15
+)
+RETURNS TABLE (
+  procurement_id bigint,
+  who text,
+  title text,
+  submission_at timestamptz,
+  contract_signed_date date,
+  short_description text,
+  procedure_type_value text,
+  beneficiary_name text,
+  beneficiary_vat_number text,
+  amount_without_vat numeric,
+  amount_with_vat numeric,
+  reference_number text,
+  contract_number text,
+  cpv_items jsonb,
+  organization_vat_number text,
+  signers text,
+  assign_criteria text,
+  contract_type text,
+  award_procedure text,
+  units_operator text,
+  funding_details_cofund text,
+  funding_details_self_fund text,
+  funding_details_espa text,
+  funding_details_regular_budget text,
+  auction_ref_no text,
+  payment_ref_no text,
+  budget numeric,
+  contract_budget numeric,
+  contract_related_ada text,
+  prev_reference_no text,
+  next_ref_no text,
+  diavgeia_ada text,
+  start_date date,
+  end_date date
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $frontend_latest_contracts$
+WITH payment_first AS (
+  SELECT DISTINCT ON (py.procurement_id)
+    py.procurement_id,
+    NULLIF(BTRIM(py.beneficiary_name), '') AS beneficiary_name,
+    NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    NULLIF(BTRIM(py.signers), '') AS signers,
+    NULLIF(BTRIM(py.payment_ref_no), '') AS payment_ref_no,
+    py.amount_without_vat,
+    py.amount_with_vat
+  FROM public.payment py
+  ORDER BY py.procurement_id, py.id
+),
+cpv_dedup AS (
+  SELECT DISTINCT
+    c.procurement_id,
+    COALESCE(NULLIF(BTRIM(c.cpv_key), ''), '—') AS cpv_key,
+    COALESCE(NULLIF(BTRIM(c.cpv_value), ''), '—') AS cpv_value
+  FROM public.cpv c
+),
+cpv_agg AS (
+  SELECT
+    cd.procurement_id,
+    jsonb_agg(
+      jsonb_build_object(
+        'code', cd.cpv_key,
+        'label', cd.cpv_value
+      )
+      ORDER BY cd.cpv_value, cd.cpv_key
+    ) AS cpv_items
+  FROM cpv_dedup cd
+  GROUP BY cd.procurement_id
+),
+base AS (
+  SELECT
+    p.id AS procurement_id,
+    p.title,
+    p.submission_at,
+    p.contract_signed_date,
+    NULLIF(BTRIM(split_part(COALESCE(p.short_descriptions, ''), '|', 1)), '') AS short_description,
+    p.procedure_type_value,
+    pf.beneficiary_name,
+    pf.beneficiary_vat_number,
+    COALESCE(pf.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
+    pf.amount_with_vat,
+    p.reference_number,
+    p.contract_number,
+    COALESCE(ca.cpv_items, '[]'::jsonb) AS cpv_items,
+    p.organization_vat_number,
+    pf.signers,
+    p.assign_criteria,
+    p.contract_type,
+    p.award_procedure,
+    p.units_operator,
+    p.funding_details_cofund,
+    p.funding_details_self_fund,
+    p.funding_details_espa,
+    p.funding_details_regular_budget,
+    p.auction_ref_no,
+    pf.payment_ref_no,
+    p.budget,
+    p.contract_budget,
+    p.contract_related_ada,
+    p.prev_reference_no,
+    p.next_ref_no,
+    p.diavgeia_ada,
+    p.start_date,
+    p.end_date,
+    p.canonical_owner_scope,
+    COALESCE(org.organization_normalized_value, org.organization_value, p.organization_key) AS organization_name,
+    COALESCE(org.authority_scope, 'other') AS organization_scope,
+    NULLIF(BTRIM(mun.municipality_normalized_value), '') AS municipality_label,
+    COALESCE(
+      NULLIF(BTRIM(reg.region_normalized_value), ''),
+      NULLIF(BTRIM(reg.region_value), '')
+    ) AS region_label
+  FROM public.procurement p
+  LEFT JOIN payment_first pf
+    ON pf.procurement_id = p.id
+  LEFT JOIN cpv_agg ca
+    ON ca.procurement_id = p.id
+  LEFT JOIN LATERAL (
+    SELECT
+      o.organization_normalized_value,
+      o.organization_value,
+      o.authority_scope
+    FROM public.organization o
+    WHERE o.organization_key = p.organization_key
+    ORDER BY o.id
+    LIMIT 1
+  ) org ON TRUE
+  LEFT JOIN LATERAL (
+    SELECT
+      m.municipality_normalized_value
+    FROM public.municipality_normalized_name m
+    WHERE m.municipality_key = p.municipality_key
+    ORDER BY m.id
+    LIMIT 1
+  ) mun ON TRUE
+  LEFT JOIN LATERAL (
+    SELECT
+      r.region_normalized_value,
+      r.region_value
+    FROM public.region r
+    WHERE r.region_key = p.region_key
+    ORDER BY r.id
+    LIMIT 1
+  ) reg ON TRUE
+  WHERE p.submission_at IS NOT NULL
+),
+enriched AS (
+  SELECT
+    b.*,
+    CASE
+      WHEN lower(COALESCE(b.canonical_owner_scope, '')) = 'municipality' THEN COALESCE(
+        CASE
+          WHEN b.municipality_label IS NULL THEN NULL
+          WHEN b.municipality_label LIKE 'ΔΗΜΟΣ %' THEN b.municipality_label
+          ELSE CONCAT('ΔΗΜΟΣ ', b.municipality_label)
+        END,
+        b.organization_name,
+        'Δήμος —'
+      )
+      WHEN lower(COALESCE(b.canonical_owner_scope, '')) = 'region' THEN COALESCE(
+        CASE
+          WHEN b.region_label IS NULL THEN NULL
+          WHEN b.region_label LIKE 'ΠΕΡΙΦΕΡΕΙΑ %' THEN b.region_label
+          ELSE CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', b.region_label)
+        END,
+        CASE
+          WHEN b.municipality_label IS NULL THEN NULL
+          WHEN b.municipality_label LIKE 'ΔΗΜΟΣ %' THEN b.municipality_label
+          ELSE CONCAT('ΔΗΜΟΣ ', b.municipality_label)
+        END,
+        b.organization_name,
+        'Περιφέρεια —'
+      )
+      WHEN lower(COALESCE(b.organization_scope, '')) = 'municipality' THEN COALESCE(
+        CASE
+          WHEN b.municipality_label IS NULL THEN NULL
+          WHEN b.municipality_label LIKE 'ΔΗΜΟΣ %' THEN b.municipality_label
+          ELSE CONCAT('ΔΗΜΟΣ ', b.municipality_label)
+        END,
+        b.organization_name,
+        'Δήμος —'
+      )
+      WHEN lower(COALESCE(b.organization_scope, '')) IN ('region', 'decentralized') THEN COALESCE(
+        CASE
+          WHEN b.region_label IS NULL THEN NULL
+          WHEN b.region_label LIKE 'ΠΕΡΙΦΕΡΕΙΑ %' THEN b.region_label
+          ELSE CONCAT('ΠΕΡΙΦΕΡΕΙΑ ', b.region_label)
+        END,
+        CASE
+          WHEN b.municipality_label IS NULL THEN NULL
+          WHEN b.municipality_label LIKE 'ΔΗΜΟΣ %' THEN b.municipality_label
+          ELSE CONCAT('ΔΗΜΟΣ ', b.municipality_label)
+        END,
+        b.organization_name,
+        'Περιφέρεια —'
+      )
+      ELSE COALESCE(b.organization_name, b.municipality_label, b.region_label, '—')
+    END AS who
+  FROM base b
+),
+ranked AS (
+  SELECT
+    e.*,
+    ROW_NUMBER() OVER (
+      PARTITION BY COALESCE(
+        NULLIF(BTRIM(e.reference_number), ''),
+        NULLIF(BTRIM(e.contract_number), ''),
+        NULLIF(BTRIM(COALESCE(e.contract_related_ada, e.diavgeia_ada)), ''),
+        CONCAT_WS(
+          '|',
+          COALESCE(e.who, ''),
+          COALESCE(e.title, ''),
+          COALESCE(e.contract_signed_date::text, ''),
+          COALESCE(e.amount_without_vat::text, '')
+        )
+      )
+      ORDER BY e.submission_at DESC NULLS LAST, e.procurement_id DESC
+    ) AS rn
+  FROM enriched e
+)
+SELECT
+  r.procurement_id,
+  r.who,
+  r.title,
+  r.submission_at,
+  r.contract_signed_date,
+  r.short_description,
+  r.procedure_type_value,
+  r.beneficiary_name,
+  r.beneficiary_vat_number,
+  r.amount_without_vat,
+  r.amount_with_vat,
+  r.reference_number,
+  r.contract_number,
+  r.cpv_items,
+  r.organization_vat_number,
+  r.signers,
+  r.assign_criteria,
+  r.contract_type,
+  r.award_procedure,
+  r.units_operator,
+  r.funding_details_cofund,
+  r.funding_details_self_fund,
+  r.funding_details_espa,
+  r.funding_details_regular_budget,
+  r.auction_ref_no,
+  r.payment_ref_no,
+  r.budget,
+  r.contract_budget,
+  r.contract_related_ada,
+  r.prev_reference_no,
+  r.next_ref_no,
+  r.diavgeia_ada,
+  r.start_date,
+  r.end_date
+FROM ranked r
+WHERE r.rn = 1
+ORDER BY r.submission_at DESC NULLS LAST, r.procurement_id DESC
+LIMIT GREATEST(COALESCE(p_limit, 15), 1);
+$frontend_latest_contracts$;
+
+GRANT EXECUTE ON FUNCTION public.get_latest_contract_cards(integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- K) Municipality featured beneficiaries RPC
+-- -------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.get_municipality_featured_beneficiaries(
+  p_municipality_key text,
+  p_year integer,
+  p_limit integer DEFAULT 12
+)
+RETURNS TABLE (
+  beneficiary_name text,
+  beneficiary_vat_number text,
+  organization text,
+  total_amount numeric,
+  contract_count integer,
+  cpv text,
+  start_date date,
+  end_date date,
+  duration_days integer,
+  progress_pct numeric,
+  signer text,
+  relevant_contracts jsonb
+)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $frontend_municipality_featured$
+WITH municipality_lookup AS (
+  SELECT COALESCE(
+    NULLIF(BTRIM(m.municipality_normalized_value), ''),
+    NULLIF(BTRIM(m.municipality_value), ''),
+    p_municipality_key
+  ) AS municipality_label
+  FROM public.municipality m
+  WHERE m.municipality_key = p_municipality_key
+  ORDER BY m.id
+  LIMIT 1
+),
+payment_agg AS (
+  SELECT
+    py.procurement_id,
+    COALESCE(
+      NULLIF(BTRIM(py.beneficiary_vat_number), ''),
+      CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
+    ) AS beneficiary_key,
+    NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    COALESCE(
+      NULLIF(BTRIM(py.beneficiary_name), ''),
+      NULLIF(BTRIM(py.beneficiary_vat_number), ''),
+      '—'
+    ) AS beneficiary_name,
+    SUM(COALESCE(py.amount_without_vat, 0)) AS amount_without_vat,
+    SUM(COALESCE(py.amount_with_vat, 0)) AS amount_with_vat,
+    (array_agg(NULLIF(BTRIM(py.signers), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.signers), '') IS NOT NULL))[1] AS signers,
+    (array_agg(NULLIF(BTRIM(py.payment_ref_no), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.payment_ref_no), '') IS NOT NULL))[1] AS payment_ref_no
+  FROM public.payment py
+  GROUP BY
+    py.procurement_id,
+    COALESCE(
+      NULLIF(BTRIM(py.beneficiary_vat_number), ''),
+      CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
+    ),
+    NULLIF(BTRIM(py.beneficiary_vat_number), ''),
+    COALESCE(
+      NULLIF(BTRIM(py.beneficiary_name), ''),
+      NULLIF(BTRIM(py.beneficiary_vat_number), ''),
+      '—'
+    )
+),
+cpv_dedup AS (
+  SELECT DISTINCT
+    c.procurement_id,
+    COALESCE(NULLIF(BTRIM(c.cpv_key), ''), '—') AS cpv_key,
+    COALESCE(NULLIF(BTRIM(c.cpv_value), ''), '—') AS cpv_value
+  FROM public.cpv c
+),
+cpv_agg AS (
+  SELECT
+    cd.procurement_id,
+    jsonb_agg(
+      jsonb_build_object(
+        'code', cd.cpv_key,
+        'label', cd.cpv_value
+      )
+      ORDER BY cd.cpv_value, cd.cpv_key
+    ) AS cpv_items
+  FROM cpv_dedup cd
+  GROUP BY cd.procurement_id
+),
+base AS (
+  SELECT
+    p.id AS procurement_id,
+    p.title,
+    p.submission_at,
+    p.contract_signed_date,
+    NULLIF(BTRIM(split_part(COALESCE(p.short_descriptions, ''), '|', 1)), '') AS short_description,
+    p.procedure_type_value,
+    p.reference_number,
+    p.contract_number,
+    p.contract_budget,
+    p.budget,
+    p.assign_criteria,
+    p.contract_type,
+    p.award_procedure,
+    p.units_operator,
+    p.funding_details_cofund,
+    p.funding_details_self_fund,
+    p.funding_details_espa,
+    p.funding_details_regular_budget,
+    p.auction_ref_no,
+    p.prev_reference_no,
+    p.next_ref_no,
+    p.contract_related_ada,
+    p.organization_vat_number,
+    p.start_date,
+    p.end_date,
+    p.no_end_date,
+    p.diavgeia_ada,
+    COALESCE(org.organization_normalized_value, org.organization_value, ml.municipality_label, '—') AS organization_value,
+    CASE
+      WHEN COALESCE(p.canonical_owner_scope, '') = 'municipality' THEN 'municipality'
+      ELSE COALESCE(org.authority_scope, 'other')
+    END AS authority_scope,
+    pa.beneficiary_key,
+    pa.beneficiary_vat_number,
+    pa.beneficiary_name,
+    pa.amount_without_vat,
+    pa.amount_with_vat,
+    pa.signers,
+    pa.payment_ref_no,
+    COALESCE(ca.cpv_items, '[]'::jsonb) AS cpv_items
+  FROM public.procurement p
+  JOIN payment_agg pa
+    ON pa.procurement_id = p.id
+  CROSS JOIN municipality_lookup ml
+  LEFT JOIN LATERAL (
+    SELECT
+      o.organization_normalized_value,
+      o.organization_value,
+      o.authority_scope
+    FROM public.organization o
+    WHERE o.organization_key = p.organization_key
+    ORDER BY o.id
+    LIMIT 1
+  ) org ON TRUE
+  LEFT JOIN cpv_agg ca
+    ON ca.procurement_id = p.id
+  WHERE p.municipality_key = p_municipality_key
+    AND COALESCE(p.cancelled, FALSE) = FALSE
+    AND NULLIF(BTRIM(p.next_ref_no), '') IS NULL
+    AND p.contract_signed_date IS NOT NULL
+    AND (
+      p.contract_signed_date BETWEEN make_date(p_year, 1, 1) AND make_date(p_year, 12, 31)
+      OR (
+        p.contract_signed_date < make_date(p_year, 1, 1)
+        AND COALESCE(p.no_end_date, FALSE) = FALSE
+        AND p.end_date IS NOT NULL
+        AND p.end_date >= make_date(p_year, 1, 1)
+      )
+    )
+),
+filtered AS (
+  SELECT *
+  FROM base
+  WHERE authority_scope = 'municipality'
+),
+beneficiary_totals AS (
+  SELECT
+    f.beneficiary_key,
+    SUM(f.amount_without_vat) AS total_amount,
+    COUNT(DISTINCT f.procurement_id)::integer AS contract_count,
+    MIN(f.start_date) AS start_date,
+    MAX(f.end_date) AS end_date
+  FROM filtered f
+  GROUP BY f.beneficiary_key
+),
+top_beneficiaries AS (
+  SELECT
+    bt.beneficiary_key,
+    bt.total_amount,
+    bt.contract_count,
+    bt.start_date,
+    bt.end_date
+  FROM beneficiary_totals bt
+  ORDER BY bt.total_amount DESC, bt.contract_count DESC, bt.beneficiary_key
+  LIMIT GREATEST(COALESCE(p_limit, 12), 1)
+),
+name_ranked AS (
+  SELECT
+    f.beneficiary_key,
+    f.beneficiary_name,
+    f.beneficiary_vat_number,
+    ROW_NUMBER() OVER (
+      PARTITION BY f.beneficiary_key
+      ORDER BY f.contract_signed_date DESC NULLS LAST, f.procurement_id DESC
+    ) AS rn
+  FROM filtered f
+),
+org_totals AS (
+  SELECT
+    f.beneficiary_key,
+    f.organization_value,
+    SUM(f.amount_without_vat) AS total_amount
+  FROM filtered f
+  GROUP BY f.beneficiary_key, f.organization_value
+),
+org_ranked AS (
+  SELECT
+    ot.beneficiary_key,
+    ot.organization_value,
+    ROW_NUMBER() OVER (
+      PARTITION BY ot.beneficiary_key
+      ORDER BY ot.total_amount DESC, ot.organization_value
+    ) AS rn
+  FROM org_totals ot
+),
+signer_counts AS (
+  SELECT
+    f.beneficiary_key,
+    f.signers,
+    COUNT(*) AS signer_count
+  FROM filtered f
+  WHERE NULLIF(BTRIM(f.signers), '') IS NOT NULL
+  GROUP BY f.beneficiary_key, f.signers
+),
+signer_ranked AS (
+  SELECT
+    sc.beneficiary_key,
+    sc.signers,
+    ROW_NUMBER() OVER (
+      PARTITION BY sc.beneficiary_key
+      ORDER BY sc.signer_count DESC, sc.signers
+    ) AS rn
+  FROM signer_counts sc
+),
+cpv_counts AS (
+  SELECT
+    f.beneficiary_key,
+    cpv_item ->> 'label' AS cpv_label,
+    COUNT(*) AS cpv_count
+  FROM filtered f
+  CROSS JOIN LATERAL jsonb_array_elements(f.cpv_items) cpv_item
+  WHERE NULLIF(BTRIM(cpv_item ->> 'label'), '') IS NOT NULL
+    AND cpv_item ->> 'label' <> '—'
+  GROUP BY f.beneficiary_key, cpv_item ->> 'label'
+),
+cpv_ranked AS (
+  SELECT
+    cc.beneficiary_key,
+    cc.cpv_label,
+    ROW_NUMBER() OVER (
+      PARTITION BY cc.beneficiary_key
+      ORDER BY cc.cpv_count DESC, cc.cpv_label
+    ) AS rn
+  FROM cpv_counts cc
+),
+relevant_ranked AS (
+  SELECT
+    f.beneficiary_key,
+    jsonb_build_object(
+      'id', f.procurement_id,
+      'organization', f.organization_value,
+      'title', f.title,
+      'submission_at', f.submission_at,
+      'short_description', f.short_description,
+      'procedure_type_value', f.procedure_type_value,
+      'amount_without_vat', f.amount_without_vat,
+      'amount_with_vat', f.amount_with_vat,
+      'reference_number', f.reference_number,
+      'contract_number', f.contract_number,
+      'cpv_items', f.cpv_items,
+      'contract_signed_date', f.contract_signed_date,
+      'start_date', f.start_date,
+      'end_date', f.end_date,
+      'organization_vat_number', f.organization_vat_number,
+      'beneficiary_vat_number', f.beneficiary_vat_number,
+      'beneficiary_name', f.beneficiary_name,
+      'signers', f.signers,
+      'assign_criteria', f.assign_criteria,
+      'contract_type', f.contract_type,
+      'award_procedure', f.award_procedure,
+      'units_operator', f.units_operator,
+      'funding_details_cofund', f.funding_details_cofund,
+      'funding_details_self_fund', f.funding_details_self_fund,
+      'funding_details_espa', f.funding_details_espa,
+      'funding_details_regular_budget', f.funding_details_regular_budget,
+      'auction_ref_no', f.auction_ref_no,
+      'payment_ref_no', f.payment_ref_no,
+      'budget', f.budget,
+      'contract_budget', f.contract_budget,
+      'contract_related_ada', f.contract_related_ada,
+      'prev_reference_no', f.prev_reference_no,
+      'next_ref_no', f.next_ref_no,
+      'diavgeia_ada', f.diavgeia_ada
+    ) AS contract_json,
+    ROW_NUMBER() OVER (
+      PARTITION BY f.beneficiary_key
+      ORDER BY f.amount_without_vat DESC, f.contract_signed_date DESC NULLS LAST, f.procurement_id DESC
+    ) AS rn
+  FROM filtered f
+  JOIN top_beneficiaries tb
+    ON tb.beneficiary_key = f.beneficiary_key
+),
+relevant_agg AS (
+  SELECT
+    rr.beneficiary_key,
+    jsonb_agg(rr.contract_json ORDER BY rr.rn) AS relevant_contracts
+  FROM relevant_ranked rr
+  WHERE rr.rn <= 5
+  GROUP BY rr.beneficiary_key
+)
+SELECT
+  COALESCE(nr.beneficiary_name, '—') AS beneficiary_name,
+  nr.beneficiary_vat_number,
+  COALESCE(orx.organization_value, '—') AS organization,
+  tb.total_amount,
+  tb.contract_count,
+  COALESCE(cr.cpv_label, '—') AS cpv,
+  tb.start_date,
+  tb.end_date,
+  CASE
+    WHEN tb.start_date IS NULL OR tb.end_date IS NULL OR tb.end_date < tb.start_date THEN NULL
+    ELSE (tb.end_date - tb.start_date + 1)
+  END::integer AS duration_days,
+  CASE
+    WHEN tb.start_date IS NULL OR tb.end_date IS NULL OR tb.end_date <= tb.start_date THEN NULL
+    WHEN CURRENT_DATE <= tb.start_date THEN 0
+    WHEN CURRENT_DATE >= tb.end_date THEN 100
+    ELSE ROUND((((CURRENT_DATE - tb.start_date)::numeric / NULLIF((tb.end_date - tb.start_date)::numeric, 0)) * 100)::numeric, 2)
+  END AS progress_pct,
+  COALESCE(sr.signers, '—') AS signer,
+  COALESCE(ra.relevant_contracts, '[]'::jsonb) AS relevant_contracts
+FROM top_beneficiaries tb
+LEFT JOIN name_ranked nr
+  ON nr.beneficiary_key = tb.beneficiary_key
+ AND nr.rn = 1
+LEFT JOIN org_ranked orx
+  ON orx.beneficiary_key = tb.beneficiary_key
+ AND orx.rn = 1
+LEFT JOIN signer_ranked sr
+  ON sr.beneficiary_key = tb.beneficiary_key
+ AND sr.rn = 1
+LEFT JOIN cpv_ranked cr
+  ON cr.beneficiary_key = tb.beneficiary_key
+ AND cr.rn = 1
+LEFT JOIN relevant_agg ra
+  ON ra.beneficiary_key = tb.beneficiary_key
+ORDER BY tb.total_amount DESC, tb.contract_count DESC, COALESCE(nr.beneficiary_name, tb.beneficiary_key);
+$frontend_municipality_featured$;
+
+GRANT EXECUTE ON FUNCTION public.get_municipality_featured_beneficiaries(text, integer, integer) TO anon, authenticated, service_role;
+
+-- -------------------------------------------------------------
+-- L) Table/function grants for frontend reads
 -- -------------------------------------------------------------
 GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
@@ -2071,24 +2694,127 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public
 GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
--- K) Force PostgREST to reload schema cache
+-- M) Enable RLS and keep public frontend reads working
+-- -------------------------------------------------------------
+DO $frontend_enable_rls$
+DECLARE
+  table_name text;
+BEGIN
+  FOR table_name IN
+    SELECT tablename
+    FROM pg_tables
+    WHERE schemaname = 'public'
+  LOOP
+    EXECUTE format('ALTER TABLE public.%I ENABLE ROW LEVEL SECURITY', table_name);
+  END LOOP;
+END
+$frontend_enable_rls$;
+
+DROP POLICY IF EXISTS public_read_procurement ON public.procurement;
+CREATE POLICY public_read_procurement
+ON public.procurement
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_payment ON public.payment;
+CREATE POLICY public_read_payment
+ON public.payment
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_cpv ON public.cpv;
+CREATE POLICY public_read_cpv
+ON public.cpv
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_organization ON public.organization;
+CREATE POLICY public_read_organization
+ON public.organization
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_region ON public.region;
+CREATE POLICY public_read_region
+ON public.region
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_municipality ON public.municipality;
+CREATE POLICY public_read_municipality
+ON public.municipality
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_municipality_normalized_name ON public.municipality_normalized_name;
+CREATE POLICY public_read_municipality_normalized_name
+ON public.municipality_normalized_name
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_municipality_fire_protection_data ON public.municipality_fire_protection_data;
+CREATE POLICY public_read_municipality_fire_protection_data
+ON public.municipality_fire_protection_data
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_forest_fire ON public.forest_fire;
+CREATE POLICY public_read_forest_fire
+ON public.forest_fire
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_fund ON public.fund;
+CREATE POLICY public_read_fund
+ON public.fund
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_copernicus ON public.copernicus;
+CREATE POLICY public_read_copernicus
+ON public.copernicus
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+DROP POLICY IF EXISTS public_read_works ON public.works;
+CREATE POLICY public_read_works
+ON public.works
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
+-- -------------------------------------------------------------
+-- N) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
 NOTIFY pgrst, 'reload schema';
 
 -- -------------------------------------------------------------
--- L) Quick verification (run after setup)
+-- O) Quick verification (run after setup)
 -- -------------------------------------------------------------
 -- 1) Check RPC functions exist
 -- select p.proname, pg_get_function_arguments(p.oid) as args
 -- from pg_proc p
 -- join pg_namespace n on n.oid = p.pronamespace
 -- where n.nspname = 'public'
---   and p.proname in ('get_hero_section_data', 'get_homepage_funding', 'get_contracts_page', 'get_featured_beneficiaries', 'get_municipality_map_spend_per_100k', 'get_latest_funding_year_municipality_spend', 'normalize_procedure_type');
+--   and p.proname in ('get_hero_section_data', 'get_homepage_funding', 'get_contracts_page', 'get_featured_beneficiaries', 'get_municipality_featured_beneficiaries', 'get_latest_contract_cards', 'get_municipality_map_spend_per_100k', 'get_latest_funding_year_municipality_spend', 'normalize_procedure_type');
 
 -- 2) Quick smoke test RPC calls
 -- select public.get_hero_section_data(2026, 2024);
 -- select public.get_homepage_funding(2026, 2016);
 -- select * from public.get_contracts_page(NULL,NULL,NULL,NULL,NULL,NULL,1,5);
 -- select * from public.get_featured_beneficiaries(2026, 5);
+-- select * from public.get_municipality_featured_beneficiaries('9061', 2026, 5);
+-- select * from public.get_latest_contract_cards(5);
 -- select * from public.get_municipality_map_spend_per_100k(2026) limit 20;
 -- select public.get_latest_funding_year_municipality_spend();
