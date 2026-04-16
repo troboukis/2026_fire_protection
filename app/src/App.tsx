@@ -7,7 +7,6 @@ import LatestContractCardItem, { type LatestContractCardView } from './component
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
-import { buildContractAuthorityLabel } from './lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { buildContractsPageHref } from './lib/contractsPageHref'
 import type { AuthorityScope } from './lib/latestContractCard'
@@ -58,6 +57,43 @@ type LatestContractCard = LatestContractCardView & ContractModalContract & {
   previousReferenceNumber: string
   nextReferenceNumber: string
   documentUrl: string | null
+}
+
+type LatestContractRpcRow = {
+  procurement_id: number | string
+  who: string | null
+  title: string | null
+  submission_at: string | null
+  contract_signed_date: string | null
+  short_description: string | null
+  procedure_type_value: string | null
+  beneficiary_name: string | null
+  beneficiary_vat_number: string | null
+  amount_without_vat: number | string | null
+  amount_with_vat: number | string | null
+  reference_number: string | null
+  contract_number: string | null
+  cpv_items: Array<{ code?: string | null; label?: string | null }> | null
+  organization_vat_number: string | null
+  signers: string | null
+  assign_criteria: string | null
+  contract_type: string | null
+  award_procedure: string | null
+  units_operator: string | null
+  funding_details_cofund: string | null
+  funding_details_self_fund: string | null
+  funding_details_espa: string | null
+  funding_details_regular_budget: string | null
+  auction_ref_no: string | null
+  payment_ref_no: string | null
+  budget: number | string | null
+  contract_budget: number | string | null
+  contract_related_ada: string | null
+  prev_reference_no: string | null
+  next_ref_no: string | null
+  diavgeia_ada: string | null
+  start_date: string | null
+  end_date: string | null
 }
 
 type HeroStats = {
@@ -535,243 +571,75 @@ export default function App() {
 
     const loadLatestContracts = async () => {
       try {
-        const { data, error } = await supabase
-          .from('procurement')
-          .select(`
-            id,
-            organization_key,
-            municipality_key,
-            region_key,
-            title,
-            submission_at,
-            contract_signed_date,
-            short_descriptions,
-            procedure_type_value,
-            reference_number,
-            contract_number,
-            contract_budget,
-            budget,
-            assign_criteria,
-            contract_type,
-            award_procedure,
-            units_operator,
-            funding_details_cofund,
-            funding_details_self_fund,
-            funding_details_espa,
-            funding_details_regular_budget,
-            auction_ref_no,
-            contract_related_ada,
-            prev_reference_no,
-            next_ref_no,
-            organization_vat_number,
-            start_date,
-            end_date,
-            diavgeia_ada,
-            canonical_owner_scope
-          `)
-          .not('submission_at', 'is', null)
-          .order('submission_at', { ascending: false })
-          .limit(80)
-
+        const { data, error } = await supabase.rpc('get_latest_contract_cards', {
+          p_limit: 15,
+        })
         if (cancelled || error) return
 
-        const ids = ((data ?? []) as Array<{ id: number }>).map((r) => r.id)
-        const orgKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { organization_key?: string | null }).organization_key)).filter(Boolean))) as string[]
-        const municipalityKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { municipality_key?: string | null }).municipality_key)).filter(Boolean))) as string[]
-        const regionKeys = Array.from(new Set((data ?? []).map((r) => cleanText((r as { region_key?: string | null }).region_key)).filter(Boolean))) as string[]
-
-        const paymentByProcId = new Map<number, { beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>()
-        for (const c of chunk(ids, 200)) {
-          const { data: pData } = await supabase
-            .from('payment')
-            .select('procurement_id, beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
-            .in('procurement_id', c)
-          for (const p of (pData ?? []) as Array<{ procurement_id: number; beneficiary_name: string | null; beneficiary_vat_number: string | null; signers: string | null; payment_ref_no: string | null; amount_without_vat: number | null; amount_with_vat: number | null }>) {
-            if (!paymentByProcId.has(p.procurement_id)) paymentByProcId.set(p.procurement_id, p)
-          }
-        }
-
-        const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
-        for (const c of chunk(ids, 200)) {
-          const { data: cpvData } = await supabase
-            .from('cpv')
-            .select('procurement_id, cpv_key, cpv_value')
-            .in('procurement_id', c)
-          for (const cpv of (cpvData ?? []) as Array<{ procurement_id: number; cpv_key: string | null; cpv_value: string | null }>) {
-            const code = cleanText(cpv.cpv_key) ?? '—'
-            const label = cleanText(cpv.cpv_value) ?? '—'
-            if (!cpvByProcId.has(cpv.procurement_id)) cpvByProcId.set(cpv.procurement_id, [])
-            const items = cpvByProcId.get(cpv.procurement_id)!
-            if (!items.find((x) => x.code === code && x.label === label)) items.push({ code, label })
-          }
-        }
-
-        const municipalityLabelByKey = new Map<string, string>()
-        for (const c of chunk(municipalityKeys, 200)) {
-          const { data: mData } = await supabase
-            .from('municipality_normalized_name')
-            .select('municipality_key, municipality_normalized_value')
-            .in('municipality_key', c)
-          for (const m of (mData ?? []) as Array<{ municipality_key: string; municipality_normalized_value: string | null }>) {
-            if (!municipalityLabelByKey.has(m.municipality_key)) {
-              municipalityLabelByKey.set(m.municipality_key, cleanText(m.municipality_normalized_value) ?? m.municipality_key)
-            }
-          }
-        }
-
-        const orgByKey = new Map<string, { name: string; scope: AuthorityScope }>()
-        for (const c of chunk(orgKeys, 200)) {
-          const { data: oData } = await supabase
-            .from('organization')
-            .select('organization_key, organization_normalized_value, organization_value, authority_scope')
-            .in('organization_key', c)
-          for (const o of (oData ?? []) as Array<{ organization_key: string; organization_normalized_value: string | null; organization_value: string | null; authority_scope: AuthorityScope | null }>) {
-            if (!orgByKey.has(o.organization_key)) {
-              orgByKey.set(o.organization_key, {
-                name: cleanText(o.organization_normalized_value) ?? cleanText(o.organization_value) ?? o.organization_key,
-                scope: o.authority_scope ?? 'other',
-              })
-            }
-          }
-        }
-
-        const regionLabelByKey = new Map<string, string>()
-        for (const c of chunk(regionKeys, 200)) {
-          const { data: rData } = await supabase
-            .from('region')
-            .select('region_key, region_normalized_value, region_value')
-            .in('region_key', c)
-          for (const r of (rData ?? []) as Array<{ region_key: string; region_normalized_value: string | null; region_value: string | null }>) {
-            if (!regionLabelByKey.has(r.region_key)) {
-              regionLabelByKey.set(r.region_key, cleanText(r.region_normalized_value) ?? cleanText(r.region_value) ?? r.region_key)
-            }
-          }
-        }
-
-        const cards: LatestContractCard[] = (data ?? []).map((row) => {
-          const r = row as {
-            id: number
-            organization_key: string | null
-            municipality_key: string | null
-            region_key: string | null
-            title: string | null
-            submission_at: string | null
-            contract_signed_date: string | null
-            short_descriptions: string | null
-            procedure_type_value: string | null
-            reference_number: string | null
-            contract_number: string | null
-            contract_budget: number | null
-            budget: number | null
-            assign_criteria: string | null
-            contract_type: string | null
-            award_procedure: string | null
-            units_operator: string | null
-            funding_details_cofund: string | null
-            funding_details_self_fund: string | null
-            funding_details_espa: string | null
-            funding_details_regular_budget: string | null
-            auction_ref_no: string | null
-            contract_related_ada: string | null
-            prev_reference_no: string | null
-            next_ref_no: string | null
-            organization_vat_number: string | null
-            start_date: string | null
-            end_date: string | null
-            diavgeia_ada: string | null
-            canonical_owner_scope: 'municipality' | 'region' | 'organization' | null
-          }
-          const p = paymentByProcId.get(r.id)
-          const cpvItems = cpvByProcId.get(r.id) ?? []
-          const c = cpvItems[0] ?? null
-          const amountWithoutVat = p?.amount_without_vat ?? null
-
-          const why =
-            c?.label ??
-            firstPipePart(r.short_descriptions) ??
-            '—'
-          const contractRelatedAda = cleanText(r.contract_related_ada)
-          const diavgeiaAda = cleanText(r.diavgeia_ada)
-          const orgKey = cleanText(r.organization_key)
-          const municipalityKey = cleanText(r.municipality_key)
-          const regionKey = cleanText(r.region_key)
-          const municipalityLabel = municipalityKey ? municipalityLabelByKey.get(municipalityKey) ?? null : null
-          const organizationScope = orgKey ? orgByKey.get(orgKey)?.scope ?? null : null
-          const regionLabel = regionKey ? regionLabelByKey.get(regionKey) ?? null : null
-          const who = buildContractAuthorityLabel({
-            canonicalOwnerScope: cleanText(r.canonical_owner_scope),
-            organizationScope,
-            organizationName: orgKey ? orgByKey.get(orgKey)?.name ?? null : null,
-            municipalityLabel,
-            regionLabel,
-          })
-
+        const cards = ((data ?? []) as LatestContractRpcRow[]).map<LatestContractCard>((row) => {
+          const cpvItems = Array.isArray(row.cpv_items)
+            ? row.cpv_items
+              .map((item) => ({
+                code: cleanText(item.code) ?? '—',
+                label: cleanText(item.label) ?? '—',
+              }))
+              .filter((item) => item.code !== '—' || item.label !== '—')
+            : []
+          const topCpv = cpvItems[0] ?? null
+          const amountWithoutVat = toFiniteNumber(row.amount_without_vat)
+          const amountWithVat = toFiniteNumber(row.amount_with_vat)
+          const contractRelatedAda = cleanText(row.contract_related_ada)
+          const diavgeiaAda = cleanText(row.diavgeia_ada)
           const latestCardView: LatestContractCardView = {
-            id: String(r.id),
-            who,
-            what: cleanText(r.title) ?? '—',
-            when: formatDateEl(cleanText(r.submission_at)),
-            why: toSentenceCaseEl(why),
-            beneficiary: toUpperEl(cleanText(p?.beneficiary_name)),
-            beneficiaryVat: cleanText(p?.beneficiary_vat_number) ?? null,
-            contractType: cleanText(r.procedure_type_value) ?? '—',
+            id: String(row.procurement_id),
+            who: cleanText(row.who) ?? '—',
+            what: cleanText(row.title) ?? '—',
+            when: formatDateEl(cleanText(row.submission_at)),
+            why: toSentenceCaseEl(topCpv?.label ?? cleanText(row.short_description) ?? '—'),
+            beneficiary: toUpperEl(cleanText(row.beneficiary_name)),
+            beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? null,
+            contractType: cleanText(row.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
-            signedAt: formatDateEl(cleanText(r.contract_signed_date)),
+            signedAt: formatDateEl(cleanText(row.contract_signed_date)),
             documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
           }
 
           return {
             ...latestCardView,
-            documentUrl: latestCardView.documentUrl ?? null,
             withoutVatAmount: formatEur(amountWithoutVat),
-            withVatAmount: formatEur(p?.amount_with_vat ?? null),
-            referenceNumber: cleanText(r.reference_number) ?? '—',
-            contractNumber: cleanText(r.contract_number) ?? '—',
-            cpv: c?.label ?? '—',
-            cpvCode: c?.code ?? '—',
+            withVatAmount: formatEur(amountWithVat),
+            referenceNumber: cleanText(row.reference_number) ?? '—',
+            contractNumber: cleanText(row.contract_number) ?? '—',
+            cpv: topCpv?.label ?? '—',
+            cpvCode: topCpv?.code ?? '—',
             cpvItems,
-            signedAt: formatDateEl(cleanText(r.contract_signed_date)),
-            startDate: formatDateEl(cleanText(r.start_date)),
-            endDate: formatDateEl(cleanText(r.end_date)),
-            organizationVat: cleanText(r.organization_vat_number) ?? '—',
-            beneficiaryVat: cleanText(p?.beneficiary_vat_number) ?? '—',
-            signers: cleanText(p?.signers) ?? '—',
-            assignCriteria: cleanText(r.assign_criteria) ?? '—',
-            contractKind: cleanText(r.contract_type) ?? '—',
-            awardProcedure: cleanText(r.award_procedure) ?? '—',
-            unitsOperator: cleanText(r.units_operator) ?? '—',
-            fundingCofund: cleanText(r.funding_details_cofund) ?? '—',
-            fundingSelf: cleanText(r.funding_details_self_fund) ?? '—',
-            fundingEspa: cleanText(r.funding_details_espa) ?? '—',
-            fundingRegular: cleanText(r.funding_details_regular_budget) ?? '—',
-            auctionRefNo: cleanText(r.auction_ref_no) ?? '—',
-            paymentRefNo: cleanText(p?.payment_ref_no) ?? '—',
-            shortDescription: firstPipePart(r.short_descriptions) ?? '—',
-            rawBudget: formatEur(r.budget != null ? Number(r.budget) : null),
-            contractBudget: formatEur(r.contract_budget != null ? Number(r.contract_budget) : null),
+            signedAt: formatDateEl(cleanText(row.contract_signed_date)),
+            startDate: formatDateEl(cleanText(row.start_date)),
+            endDate: formatDateEl(cleanText(row.end_date)),
+            organizationVat: cleanText(row.organization_vat_number) ?? '—',
+            beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? '—',
+            signers: cleanText(row.signers) ?? '—',
+            assignCriteria: cleanText(row.assign_criteria) ?? '—',
+            contractKind: cleanText(row.contract_type) ?? '—',
+            awardProcedure: cleanText(row.award_procedure) ?? '—',
+            unitsOperator: cleanText(row.units_operator) ?? '—',
+            fundingCofund: cleanText(row.funding_details_cofund) ?? '—',
+            fundingSelf: cleanText(row.funding_details_self_fund) ?? '—',
+            fundingEspa: cleanText(row.funding_details_espa) ?? '—',
+            fundingRegular: cleanText(row.funding_details_regular_budget) ?? '—',
+            auctionRefNo: cleanText(row.auction_ref_no) ?? '—',
+            paymentRefNo: cleanText(row.payment_ref_no) ?? '—',
+            shortDescription: cleanText(row.short_description) ?? '—',
+            rawBudget: formatEur(toFiniteNumber(row.budget)),
+            contractBudget: formatEur(toFiniteNumber(row.contract_budget)),
             contractRelatedAda: contractRelatedAda ?? '—',
-            previousReferenceNumber: cleanText(r.prev_reference_no) ?? '—',
-            nextReferenceNumber: cleanText(r.next_ref_no) ?? '—',
+            previousReferenceNumber: cleanText(row.prev_reference_no) ?? '—',
+            nextReferenceNumber: cleanText(row.next_ref_no) ?? '—',
+            documentUrl: latestCardView.documentUrl ?? null,
           }
         })
 
-        const deduped = Array.from(
-          new Map(
-            cards.map((item) => {
-              const ref = cleanText(item.referenceNumber)
-              const contractNo = cleanText(item.contractNumber)
-              const doc = cleanText(item.documentUrl)
-              const identity =
-                (ref && ref !== '—' ? `ref:${ref}` : null) ??
-                (contractNo && contractNo !== '—' ? `contract:${contractNo}` : null) ??
-                (doc && doc !== '—' ? `doc:${doc}` : null) ??
-                `fallback:${item.who}|${item.what}|${item.signedAt}|${item.withoutVatAmount}`
-              return [identity, item] as const
-            }),
-          ).values(),
-        ).slice(0, 15)
-
-        setLatestContracts(deduped)
+        setLatestContracts(cards)
       } catch (error) {
         if (!cancelled) {
           logLoadError('latest contracts', error)
