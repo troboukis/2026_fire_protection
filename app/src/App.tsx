@@ -95,6 +95,7 @@ type LatestContractRpcRow = {
   diavgeia_ada: string | null
   start_date: string | null
   end_date: string | null
+  municipality_key: string | null
 }
 
 type HeroStats = {
@@ -603,6 +604,7 @@ export default function App() {
             howMuch: formatEur(amountWithoutVat),
             signedAt: formatDateEl(cleanText(row.contract_signed_date)),
             documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
+            municipalityKey: cleanText(row.who)?.startsWith('ΔΗΜΟΣ ') ? (cleanText(row.municipality_key) ?? null) : null,
           }
 
           return {
@@ -1656,6 +1658,7 @@ export default function App() {
                   const found = latestContracts.find((x) => x.id === id)
                   if (found) setSelectedContract(found)
                 }}
+                onMunicipalityClick={(key) => navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)}
                 contractTypeTransform={toLowerEl}
               />
             ))}

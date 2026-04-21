@@ -13,17 +13,20 @@ export type LatestContractCardView = {
   contractType: string
   howMuch: string
   documentUrl?: string | null
+  municipalityKey?: string | null
 }
 
 type Props = {
   item: LatestContractCardView
   onOpen?: (id: string) => void
+  onMunicipalityClick?: (key: string) => void
   contractTypeTransform?: (value: string) => string
 }
 
-export default function LatestContractCard({ item, onOpen, contractTypeTransform }: Props) {
+export default function LatestContractCard({ item, onOpen, onMunicipalityClick, contractTypeTransform }: Props) {
   const clickable = typeof onOpen === 'function'
   const transformedContractType = contractTypeTransform ? contractTypeTransform(item.contractType) : item.contractType
+  const municipalityClickable = typeof onMunicipalityClick === 'function' && !!item.municipalityKey
 
   const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (!clickable) return
@@ -39,7 +42,10 @@ export default function LatestContractCard({ item, onOpen, contractTypeTransform
       onKeyDown={handleKeyDown}
     >
       <div className="wire-item__head">
-        <span className="eyebrow wire-item__org">{item.who}</span>
+        <span
+          className={`eyebrow wire-item__org${municipalityClickable ? ' wire-item__org--clickable' : ''}`}
+          onClick={municipalityClickable ? (e) => { e.stopPropagation(); onMunicipalityClick(item.municipalityKey!) } : undefined}
+        >{item.who}</span>
         <span className="wire-item__date">{item.when}</span>
       </div>
       <h2>{item.what}</h2>

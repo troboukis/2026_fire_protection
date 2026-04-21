@@ -67,6 +67,11 @@ type ForestFireRow = {
   date_end: string | null
 }
 
+type CurrentFireRow = {
+  incident_key: string
+  first_seen_at: string | null
+}
+
 type CopernicusRow = {
   firedate: string | null
   area_ha: number | string | null
@@ -368,9 +373,20 @@ function formatPer100kLowerBound(value: number | null): string {
   return `${safeBucket.toLocaleString('el-GR')} €`
 }
 
+function formatMunicipalitySpendPer100kSentence(currentYear: number, value: number | null): string {
+  if (value == null || Number.isNaN(value) || value <= 0) {
+    return 'Δεν μπορεί να υπολογιστεί πόσα χρήματα έχει ξοδέψει ο δήμος ανά 100 χιλιάδες κατοίκους.'
+  }
+
+  return `Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από ${formatPer100kLowerBound(value)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το ${currentYear}.`
+}
+
 function formatActivePreviousContractsSentence(currentYear: number, count: number | null): string {
   if (count == null || Number.isNaN(count)) {
     return `Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
+  }
+  if (count === 0) {
+    return `Δεν εντοπίζουμε παλιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
   }
   if (count === 1) {
     return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}.`
@@ -728,31 +744,24 @@ function getFireSourceDisplayLabel(source: string | null): string {
   return '—'
 }
 
-function formatCopernicusSummarySentence(
-  year: number,
-  count: number,
-  areaHa: number,
-  tense: 'current' | 'previous',
-): string {
-  const areaText = formatStremmataFromHa(areaHa, 1)
-
-  if (tense === 'current') {
-    if (count === 0) {
-      return `Από την αρχή του ${year} μέχρι και σήμερα δεν έχει ξεσπάσει καμία δασική πυρκαγιά.`
-    }
-    if (count === 1) {
-      return `Από την αρχή του ${year} μέχρι και σήμερα έχει ξεσπάσει 1 δασική πυρκαγιά, η οποία έχει κάψει ${areaText}.`
-    }
-    return `Από την αρχή του ${year} μέχρι και σήμερα έχουν ξεσπάσει ${formatNumber(count)} δασικές πυρκαγιές, οι οποίες έχουν κάψει ${areaText}.`
-  }
-
+function formatCurrentFiresNarrativeSentence(year: number, count: number): string {
   if (count === 0) {
-    return 'Πέρυσι, δεν είχε ξεσπάσει καμία δασική πυρκαγιά.'
+    return `Το ${year} δεν έχουμε εντοπίσει συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
   }
   if (count === 1) {
-    return `Πέρυσι, είχε ξεσπάσει 1 δασική πυρκαγιά που είχε κάψει ${areaText}.`
+    return `Το ${year} εντοπίσαμε 1 συμβάν δασικής πυρκαγιάς από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
   }
-  return `Πέρυσι, είχαν ξεσπάσει ${formatNumber(count)} δασικές πυρκαγιές που είχαν κάψει ${areaText}.`
+  return `Το ${year} εντοπίσαμε ${formatNumber(count)} συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
+}
+
+function formatCopernicusNarrativeSentence(year: number, count: number): string {
+  if (count === 0) {
+    return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) δεν έχει γεωεντοπίσει πυρκαγιές στον δήμο για το ${year}.`
+  }
+  if (count === 1) {
+    return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει 1 πυρκαγιά στον δήμο για το ${year}.`
+  }
+  return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει ${formatNumber(count)} πυρκαγιές στον δήμο για το ${year}.`
 }
 
 export default function MunicipalitiesPage() {
@@ -784,6 +793,7 @@ export default function MunicipalitiesPage() {
   const [latestMunicipalityContractsLoading, setLatestMunicipalityContractsLoading] = useState(false)
   const [featuredMunicipalityBeneficiaries, setFeaturedMunicipalityBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
   const [featuredMunicipalityBeneficiariesLoading, setFeaturedMunicipalityBeneficiariesLoading] = useState(false)
+  const [currentFireRows, setCurrentFireRows] = useState<CurrentFireRow[]>([])
   const [forestFireRows, setForestFireRows] = useState<ForestFireRow[]>([])
   const [copernicusRows, setCopernicusRows] = useState<CopernicusRow[]>([])
   const [workRows, setWorkRows] = useState<WorkRow[]>([])
@@ -903,6 +913,7 @@ export default function MunicipalitiesPage() {
     setLatestMunicipalityContractsLoading(false)
     setFeaturedMunicipalityBeneficiaries([])
     setFeaturedMunicipalityBeneficiariesLoading(false)
+    setCurrentFireRows([])
     setForestFireRows([])
     setCopernicusRows([])
     setWorkRows([])
@@ -1826,6 +1837,7 @@ export default function MunicipalitiesPage() {
     const loadProfilePage = async () => {
       setPageLoading(true)
       setPageError(null)
+      setCurrentFireRows([])
       setForestFireRows([])
       setCopernicusRows([])
       setContractCurvePoints([])
@@ -1957,6 +1969,7 @@ export default function MunicipalitiesPage() {
           municipalityMapSpendResult,
           municipalityFundingResult,
           municipalityFundingHistoryResult,
+          nextCurrentFireRows,
           nextForestRows,
           nextCopernicusRows,
           ...contractResults
@@ -2008,6 +2021,14 @@ export default function MunicipalitiesPage() {
             .eq('municipality_key', selectedMunicipalityKey)
             .eq('recipient_type', 'δήμος')
             .order('year', { ascending: true }),
+          fetchAllPaginatedRows<CurrentFireRow>(
+            (from, to) => supabase
+              .from('current_fires')
+              .select('incident_key, first_seen_at')
+              .eq('municipality_key', selectedMunicipalityKey)
+              .order('first_seen_at', { ascending: true })
+              .range(from, to),
+          ),
           fetchAllPaginatedRows<ForestFireRow>(
             (from, to) => supabase
               .from('forest_fire')
@@ -2180,6 +2201,7 @@ export default function MunicipalitiesPage() {
           setMunicipalityKapFundingSourceAda(nextMunicipalityKapFundingSourceAda)
           setMunicipalityKapFundingAllocationTypes(nextMunicipalityKapFundingAllocationTypes)
           setMunicipalityFundingHistory(nextMunicipalityFundingHistory)
+          setCurrentFireRows(nextCurrentFireRows)
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
           setContractYearSummary(nextContractYearSummary)
@@ -2198,6 +2220,7 @@ export default function MunicipalitiesPage() {
           setMunicipalityKapFundingAllocationTypes([])
           setMunicipalityFundingHistory([])
           setContractOrganizationById({})
+          setCurrentFireRows([])
           setForestFireRows([])
           setCopernicusRows([])
           setPageLoading(false)
@@ -2332,26 +2355,43 @@ export default function MunicipalitiesPage() {
     },
     {
       label: 'Βλάστηση',
-      value: formatStremmata(toNumber(profile?.ektasi_vlastisis_pros_katharismo_ha), 1),
+      value: (() => {
+        const vegetationArea = toNumber(profile?.ektasi_vlastisis_pros_katharismo_ha)
+        if (vegetationArea === 0) return 'Δεν έχουν δηλωθεί στρέμματα προς καθαρισμό'
+        return formatStremmata(vegetationArea, 1)
+      })(),
       note: 'Έκταση περιοχών με βλάστηση που πρέπει να καθαρίζεται κάθε χρόνο',
     },
     {
       label: 'Οχήματα πυροπροστασίας',
-      value: `${formatNumber(toNumber(profile?.oxhmata_udrofora))} υδροφόρες · ${formatNumber(toNumber(profile?.oxhmata_purosvestika))} πυροσβεστικά`,
+      value: (() => {
+        const waterTrucks = toNumber(profile?.oxhmata_udrofora)
+        const fireTrucks = toNumber(profile?.oxhmata_purosvestika)
+        if (waterTrucks == null && fireTrucks == null) return 'Δεν έχουν δηλωθεί οχήματα πυροπροστασίας'
+        return `${formatNumber(waterTrucks)} υδροφόρες · ${formatNumber(fireTrucks)} πυροσβεστικά`
+      })(),
       note: 'Διαθέσιμος στόλος πυρόσβεσης και υποστήριξης',
     },
   ]
   const plotCleaningNarrative = buildPlotCleaningNarrative(profile)
-  const copernicusNarrativeByYear = useMemo(() => {
-    const summary = new Map<number, { count: number; areaHa: number }>()
+  const currentFireCountByYear = useMemo(() => {
+    const summary = new Map<number, number>()
+
+    for (const row of currentFireRows) {
+      const year = extractYear(row.first_seen_at)
+      if (year == null) continue
+      summary.set(year, (summary.get(year) ?? 0) + 1)
+    }
+
+    return summary
+  }, [currentFireRows])
+  const copernicusCountByYear = useMemo(() => {
+    const summary = new Map<number, number>()
 
     for (const row of copernicusRows) {
       const year = extractYear(row.firedate)
       if (year == null) continue
-      const current = summary.get(year) ?? { count: 0, areaHa: 0 }
-      current.count += 1
-      current.areaHa += Math.max(0, toNumber(row.area_ha) ?? 0)
-      summary.set(year, current)
+      summary.set(year, (summary.get(year) ?? 0) + 1)
     }
 
     return summary
@@ -2470,15 +2510,12 @@ export default function MunicipalitiesPage() {
       return 'Φόρτωση profile δήμου…'
     }
 
-    const currentYearCopernicus = copernicusNarrativeByYear.get(currentYear) ?? { count: 0, areaHa: 0 }
-    const previousYearCopernicus = copernicusNarrativeByYear.get(currentYear - 1) ?? { count: 0, areaHa: 0 }
     const sentences = [
-      formatCopernicusSummarySentence(currentYear, currentYearCopernicus.count, currentYearCopernicus.areaHa, 'current'),
-      formatCopernicusSummarySentence(currentYear - 1, previousYearCopernicus.count, previousYearCopernicus.areaHa, 'previous'),
-      'Τα δεδομένα προέρχονται από το ευρωπαϊκό σύστημα Copernicus (EFFIS) και βασίζονται σε δορυφορική εκτίμηση καμένων εκτάσεων.',
+      formatCurrentFiresNarrativeSentence(currentYear, currentFireCountByYear.get(currentYear) ?? 0),
+      formatCopernicusNarrativeSentence(currentYear, copernicusCountByYear.get(currentYear) ?? 0),
     ]
     return sentences.join(' ')
-  }, [copernicusNarrativeByYear, currentYear, hasSelectedMunicipality, isEmptySelection])
+  }, [copernicusCountByYear, currentFireCountByYear, currentYear, hasSelectedMunicipality, isEmptySelection])
   const isMunicipalityProfileLoading =
     Boolean(selectedMunicipalityKey) &&
     (
@@ -3291,7 +3328,7 @@ export default function MunicipalitiesPage() {
                 <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
               ) : null}
               <p className="profile-metric-card__note">
-                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από ${formatPer100kLowerBound(municipalitySpendPer100k)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το ${currentYear}.`}
+                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} ${formatMunicipalitySpendPer100kSentence(currentYear, municipalitySpendPer100k)}`}
               </p>
             </article>
 

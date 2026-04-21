@@ -231,6 +231,21 @@ def _matching_alias_rows(alias: str, region: str) -> list[dict[str, str]]:
     return list(deduped.values())
 
 
+def _select_municipality_match(alias: str, matches: list[dict[str, str]]) -> dict[str, str] | None:
+    if len(matches) == 1:
+        return matches[0]
+
+    exact_canonical_matches = [
+        row
+        for row in matches
+        if normalize_municipality_value(row.get("municipality_normalized_value")) == alias
+    ]
+    if len(exact_canonical_matches) == 1:
+        return exact_canonical_matches[0]
+
+    return None
+
+
 def resolve_municipality(municipality_raw: str | None, region: str | None) -> dict[str, str]:
     region_norm = normalize_region_value(region)
     municipality_norm = normalize_municipality_value(municipality_raw)
@@ -245,18 +260,20 @@ def resolve_municipality(municipality_raw: str | None, region: str | None) -> di
     for size in range(len(parts), 0, -1):
         alias = " - ".join(parts[:size])
         matches = _matching_alias_rows(alias, region_norm)
-        if len(matches) == 1:
+        match = _select_municipality_match(alias, matches)
+        if match:
             return {
-                "municipality_key": matches[0]["municipality_key"],
-                "municipality_normalized_value": matches[0]["municipality_normalized_value"],
+                "municipality_key": match["municipality_key"],
+                "municipality_normalized_value": match["municipality_normalized_value"],
                 "municipality_raw": clean(municipality_raw),
             }
 
     matches = _matching_alias_rows(municipality_norm, region_norm)
-    if len(matches) == 1:
+    match = _select_municipality_match(municipality_norm, matches)
+    if match:
         return {
-            "municipality_key": matches[0]["municipality_key"],
-            "municipality_normalized_value": matches[0]["municipality_normalized_value"],
+            "municipality_key": match["municipality_key"],
+            "municipality_normalized_value": match["municipality_normalized_value"],
             "municipality_raw": clean(municipality_raw),
         }
 
