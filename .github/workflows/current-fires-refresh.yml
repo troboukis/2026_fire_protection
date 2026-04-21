@@ -10,11 +10,12 @@ permissions:
 
 concurrency:
   group: current-fires-refresh
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   refresh-current-fires:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
@@ -60,6 +61,12 @@ jobs:
           else
             echo "should_run=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Log trigger context
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "athens_time=${{ steps.athens_window.outputs.athens_time }}"
+          echo "should_run=${{ steps.athens_window.outputs.should_run }}"
 
       - name: Skip outside local window
         if: steps.athens_window.outputs.should_run != 'true'
