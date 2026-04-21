@@ -70,6 +70,10 @@ type ForestFireRow = {
 type CurrentFireRow = {
   incident_key: string
   first_seen_at: string | null
+  is_current: boolean | null
+  fuel_type: string | null
+  status: string | null
+  status_updated_at: string | null
 }
 
 type CopernicusRow = {
@@ -2024,9 +2028,10 @@ export default function MunicipalitiesPage() {
           fetchAllPaginatedRows<CurrentFireRow>(
             (from, to) => supabase
               .from('current_fires')
-              .select('incident_key, first_seen_at')
+              .select('incident_key, first_seen_at, is_current, fuel_type, status, status_updated_at')
               .eq('municipality_key', selectedMunicipalityKey)
-              .order('first_seen_at', { ascending: true })
+              .order('status_updated_at', { ascending: false, nullsFirst: false })
+              .order('first_seen_at', { ascending: false, nullsFirst: false })
               .range(from, to),
           ),
           fetchAllPaginatedRows<ForestFireRow>(
@@ -2385,6 +2390,14 @@ export default function MunicipalitiesPage() {
 
     return summary
   }, [currentFireRows])
+  const activeCurrentFireAlert = useMemo(() => {
+    const activeRow = currentFireRows.find((row) => row.is_current && cleanText(row.status) !== 'ΛΗΞΗ') ?? null
+    if (!activeRow) return null
+
+    const fuelType = cleanText(activeRow.fuel_type) ?? 'άγνωστο τύπο καύσιμης ύλης'
+    const status = cleanText(activeRow.status) ?? 'άγνωστη κατάσταση'
+    return `ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ ${fuelType} - ${status}`
+  }, [currentFireRows])
   const copernicusCountByYear = useMemo(() => {
     const summary = new Map<number, number>()
 
@@ -2711,6 +2724,14 @@ export default function MunicipalitiesPage() {
               </div>
               <h1>{selectedName}</h1>
               <p>{heroNarrative || 'Επίλεξε έναν δήμο για να δεις το συγκεντρωτικό αποτύπωμα πυροπροστασίας.'}</p>
+              {activeCurrentFireAlert && (
+                <div className="municipality-profile-hero__status-strip municipality-profile-hero__status-strip--alert" role="status" aria-live="polite">
+                  <span>
+                    <span className="municipality-profile-hero__alert-dot" aria-hidden="true" />
+                    {activeCurrentFireAlert}
+                  </span>
+                </div>
+              )}
             </div>
 
             {!isEmptySelection && (
