@@ -2794,6 +2794,8 @@ FOR SELECT
 TO anon, authenticated
 USING (true);
 
+DROP POLICY IF EXISTS public_read_current_fires ON public.current_fires;
+
 -- -------------------------------------------------------------
 -- N) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
