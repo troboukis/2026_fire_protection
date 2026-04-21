@@ -63,7 +63,8 @@ jobs:
 
       - name: Skip outside local window
         if: steps.athens_window.outputs.should_run != 'true'
-        run: echo "Skipping current_fires refresh outside 06:23-00:23 Europe/Athens. Local time: ${{ steps.athens_window.outputs.athens_time }}"
+        run: |
+          echo "Skipping current_fires refresh outside 06:23-00:23 Europe/Athens. Local time: ${{ steps.athens_window.outputs.athens_time }}"
 
       - name: Refresh current fires
         if: steps.athens_window.outputs.should_run == 'true'

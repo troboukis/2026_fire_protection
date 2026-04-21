@@ -383,7 +383,7 @@ def parse_iso_datetime(value: str | None) -> datetime:
 
 def materialize_event_row(event: dict, scraped_at: datetime) -> dict[str, str]:
     row = dict(event)
-    row["scraped_at"] = scraped_at.isoformat(timespec="seconds")
+    row["last_seen_at"] = scraped_at.isoformat(timespec="seconds")
     row["days_burning"] = compute_days_burning(row.get("start"), scraped_at.date())
     row["status_updated_at"] = compute_status_updated_at(row.get("raw"), scraped_at)
     return row
@@ -406,12 +406,9 @@ def normalize_existing_incident_row(row: dict) -> dict[str, str]:
         base,
         normalized_row.get("start"),
     )
-    normalized_row["first_seen_at"] = clean(normalized_row.get("first_seen_at")) or clean(
-        normalized_row.get("scraped_at"),
-    )
-    normalized_row["last_seen_at"] = clean(normalized_row.get("last_seen_at")) or clean(
-        normalized_row.get("scraped_at"),
-    )
+    observed_at = clean(normalized_row.get("last_seen_at")) or clean(normalized_row.get("first_seen_at"))
+    normalized_row["first_seen_at"] = clean(normalized_row.get("first_seen_at")) or observed_at
+    normalized_row["last_seen_at"] = clean(normalized_row.get("last_seen_at")) or observed_at
     normalized_row["is_current"] = clean(normalized_row.get("is_current")).lower() or "false"
     return normalized_row
 
@@ -424,7 +421,7 @@ def choose_existing_incident_key(base: str, candidates: list[dict[str, str]]) ->
         key=lambda row: (
             parse_iso_datetime(row.get("last_seen_at")),
             parse_iso_datetime(row.get("status_updated_at")),
-            parse_iso_datetime(row.get("scraped_at")),
+            parse_iso_datetime(row.get("first_seen_at")),
         ),
         reverse=True,
     )
@@ -464,17 +461,19 @@ def merge_with_existing(
         existing = merged_by_key.get(incident_key, {})
         merged = dict(existing)
         merged.update(row)
+        observed_at = clean(row.get("last_seen_at")) or scrape_time.isoformat(timespec="seconds")
         merged["incident_key"] = incident_key
-        merged["first_seen_at"] = clean(existing.get("first_seen_at")) or clean(existing.get("scraped_at")) or row["scraped_at"]
-        merged["last_seen_at"] = row["scraped_at"]
+        merged["first_seen_at"] = clean(existing.get("first_seen_at")) or clean(existing.get("last_seen_at")) or observed_at
+        merged["last_seen_at"] = observed_at
         merged["is_current"] = "true"
         merged_by_key[incident_key] = merged
 
     for incident_key, row in list(merged_by_key.items()):
         if incident_key not in current_keys:
             row["is_current"] = "false"
-            row["first_seen_at"] = clean(row.get("first_seen_at")) or clean(row.get("scraped_at"))
-            row["last_seen_at"] = clean(row.get("last_seen_at")) or clean(row.get("scraped_at"))
+            observed_at = clean(row.get("last_seen_at")) or clean(row.get("first_seen_at"))
+            row["first_seen_at"] = clean(row.get("first_seen_at")) or observed_at
+            row["last_seen_at"] = clean(row.get("last_seen_at")) or observed_at
             merged_by_key[incident_key] = row
 
     return sorted(
@@ -753,7 +752,6 @@ def ensure_current_fires_table(conn) -> None:
           first_seen_at TIMESTAMPTZ NOT NULL,
           last_seen_at TIMESTAMPTZ NOT NULL,
           is_current BOOLEAN NOT NULL DEFAULT TRUE,
-          scraped_at TIMESTAMPTZ NOT NULL,
           category TEXT NOT NULL,
           region TEXT,
           regional_unit TEXT,
@@ -765,10 +763,16 @@ def ensure_current_fires_table(conn) -> None:
           days_burning INTEGER,
           status_updated_at TIMESTAMPTZ,
           status TEXT,
-          raw TEXT,
-          created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-          updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+          raw TEXT
         )
+        """
+    )
+    cur.execute(
+        f"""
+        ALTER TABLE {CURRENT_FIRES_TABLE}
+          DROP COLUMN IF EXISTS scraped_at,
+          DROP COLUMN IF EXISTS created_at,
+          DROP COLUMN IF EXISTS updated_at
         """
     )
     cur.execute(f"ALTER TABLE {CURRENT_FIRES_TABLE} ENABLE ROW LEVEL SECURITY")
@@ -788,7 +792,6 @@ def load_existing_incidents_db(conn) -> list[dict[str, str]]:
           first_seen_at,
           last_seen_at,
           is_current,
-          scraped_at,
           category,
           region,
           regional_unit,
@@ -846,7 +849,6 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
             parse_iso_datetime_or_none(row.get("first_seen_at")),
             parse_iso_datetime_or_none(row.get("last_seen_at")),
             clean(row.get("is_current")).lower() == "true",
-            parse_iso_datetime_or_none(row.get("scraped_at")),
             clean(row.get("category")),
             clean(row.get("region")) or None,
             clean(row.get("regional_unit")) or None,
@@ -872,7 +874,6 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           first_seen_at,
           last_seen_at,
           is_current,
-          scraped_at,
           category,
           region,
           regional_unit,
@@ -890,7 +891,6 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           first_seen_at = EXCLUDED.first_seen_at,
           last_seen_at = EXCLUDED.last_seen_at,
           is_current = EXCLUDED.is_current,
-          scraped_at = EXCLUDED.scraped_at,
           category = EXCLUDED.category,
           region = EXCLUDED.region,
           regional_unit = EXCLUDED.regional_unit,
@@ -902,8 +902,7 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           days_burning = EXCLUDED.days_burning,
           status_updated_at = EXCLUDED.status_updated_at,
           status = EXCLUDED.status,
-          raw = EXCLUDED.raw,
-          updated_at = NOW()
+          raw = EXCLUDED.raw
         """,
         payload,
     )

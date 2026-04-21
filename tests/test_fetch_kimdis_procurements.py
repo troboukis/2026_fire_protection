@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import json
+
 import pandas as pd
 
+import src.fetch_kimdis_procurements as fetch_kimdis_procurements
 from src.fetch_kimdis_procurements import (
+    CollectorConfig,
     ProcurementCollector,
     business_key_from_api_item,
     dedupe_df_by_business_key,
@@ -134,3 +138,83 @@ def test_parse_item_preserves_all_contracting_members():
     ]
     assert row["firstMember_vatNumber"] == "046212303"
     assert row["firstMember_name"] == "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ"
+
+
+def test_main_incremental_rebuild_drops_rows_now_matching_exclude_keywords(tmp_path, monkeypatch):
+    output_csv = tmp_path / "raw_procurements.csv"
+    backup_json = tmp_path / "raw_items_backup.json"
+    log_csv = tmp_path / "kimdis_fetch_runs.csv"
+    state_file = tmp_path / "kimdis_state.json"
+
+    excluded_item = {
+        "title": "Συντήρηση σχολικών κτιρίων",
+        "referenceNumber": "A1",
+        "submissionDate": "2026-01-01T09:00:00",
+        "contractSignedDate": "2026-01-02",
+        "cancelled": False,
+        "organization": {"key": "ORG-1", "value": "ΔΗΜΟΣ Χ"},
+        "objectDetailsList": [],
+    }
+    kept_item = {
+        "title": "Εργασίες πυροπροστασίας",
+        "referenceNumber": "A2",
+        "submissionDate": "2026-01-03T09:00:00",
+        "contractSignedDate": "2026-01-04",
+        "cancelled": False,
+        "organization": {"key": "ORG-1", "value": "ΔΗΜΟΣ Χ"},
+        "objectDetailsList": [],
+    }
+
+    backup_json.write_text(json.dumps([excluded_item, kept_item], ensure_ascii=False), encoding="utf-8")
+    pd.DataFrame(
+        [
+            {
+                "title": excluded_item["title"],
+                "referenceNumber": excluded_item["referenceNumber"],
+                "diavgeiaADA": "",
+                "contractNumber": "",
+                "organization_key": "ORG-1",
+                "submissionDate": excluded_item["submissionDate"],
+                "contractSignedDate": excluded_item["contractSignedDate"],
+            },
+            {
+                "title": kept_item["title"],
+                "referenceNumber": kept_item["referenceNumber"],
+                "diavgeiaADA": "",
+                "contractNumber": "",
+                "organization_key": "ORG-1",
+                "submissionDate": kept_item["submissionDate"],
+                "contractSignedDate": kept_item["contractSignedDate"],
+            },
+        ]
+    ).to_csv(output_csv, index=False)
+
+    monkeypatch.setattr(
+        fetch_kimdis_procurements,
+        "parse_args",
+        lambda: CollectorConfig(
+            start_date=pd.Timestamp("2026-01-01").date(),
+            end_date=pd.Timestamp("2026-01-05").date(),
+            max_window_days=180,
+            output_csv=output_csv,
+            backup_json=backup_json,
+            log_csv=log_csv,
+            from_backup=False,
+            full_refresh=False,
+            state_file=state_file,
+            request_timeout=60,
+            retry_sleep_seconds=1,
+            request_wait_seconds=0.0,
+        ),
+    )
+    monkeypatch.setattr(
+        fetch_kimdis_procurements.ProcurementCollector,
+        "fetch_all",
+        lambda self, backup_path=None: [],
+    )
+
+    fetch_kimdis_procurements.main()
+
+    out = pd.read_csv(output_csv, dtype=str, keep_default_na=False)
+
+    assert out["referenceNumber"].tolist() == ["A2"]

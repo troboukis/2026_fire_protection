@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import ComponentTag from './components/ComponentTag'
+import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
@@ -1620,6 +1621,14 @@ export default function App() {
   return (
     <>
       <main>
+        <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label="Πυρκαγιές Τώρα">
+          <div className="dev-tag-stack dev-tag-stack--right">
+            <ComponentTag name="FireNowTicker" />
+            <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
+          </div>
+          <FireNowTicker />
+        </section>
+
         <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
           <div className="dev-tag-stack dev-tag-stack--right">
             <ComponentTag name="LatestContractsSection" />
