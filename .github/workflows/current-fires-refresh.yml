@@ -2,7 +2,8 @@ name: Current Fires Refresh
 
 on:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "23 0,6-23 * * *"
+      timezone: "Europe/Athens"
   workflow_dispatch:
  
 permissions:
@@ -10,12 +11,11 @@ permissions:
 
 concurrency:
   group: current-fires-refresh
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   refresh-current-fires:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
@@ -47,32 +47,5 @@ jobs:
               ;;
           esac
 
-      - name: Check Athens schedule window
-        id: athens_window
-        run: |
-          athens_hour="$(TZ=Europe/Athens date +%H)"
-          athens_time="$(TZ=Europe/Athens date '+%Y-%m-%d %H:%M:%S %Z')"
-          echo "athens_time=${athens_time}" >> "$GITHUB_OUTPUT"
-
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-          elif [ "${athens_hour}" = "00" ] || { [ "${athens_hour}" -ge 6 ] && [ "${athens_hour}" -le 23 ]; }; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Log trigger context
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "athens_time=${{ steps.athens_window.outputs.athens_time }}"
-          echo "should_run=${{ steps.athens_window.outputs.should_run }}"
-
-      - name: Skip outside local window
-        if: steps.athens_window.outputs.should_run != 'true'
-        run: |
-          echo "Skipping current_fires refresh outside 06:23-00:23 Europe/Athens. Local time: ${{ steps.athens_window.outputs.athens_time }}"
-
       - name: Refresh current fires
-        if: steps.athens_window.outputs.should_run == 'true'
         run: python src/scrape_forest_fires.py
