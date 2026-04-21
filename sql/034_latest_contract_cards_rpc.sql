@@ -1,3 +1,5 @@
+DROP FUNCTION IF EXISTS public.get_latest_contract_cards(integer);
+
 CREATE OR REPLACE FUNCTION public.get_latest_contract_cards(
   p_limit integer DEFAULT 15
 )
@@ -35,7 +37,8 @@ RETURNS TABLE (
   next_ref_no text,
   diavgeia_ada text,
   start_date date,
-  end_date date
+  end_date date,
+  municipality_key text
 )
 LANGUAGE sql
 SECURITY DEFINER
@@ -111,6 +114,7 @@ base AS (
     p.canonical_owner_scope,
     COALESCE(org.organization_normalized_value, org.organization_value, p.organization_key) AS organization_name,
     COALESCE(org.authority_scope, 'other') AS organization_scope,
+    p.municipality_key,
     NULLIF(BTRIM(mun.municipality_normalized_value), '') AS municipality_label,
     COALESCE(
       NULLIF(BTRIM(reg.region_normalized_value), ''),
@@ -258,7 +262,8 @@ SELECT
   r.next_ref_no,
   r.diavgeia_ada,
   r.start_date,
-  r.end_date
+  r.end_date,
+  r.municipality_key
 FROM ranked r
 WHERE r.rn = 1
 ORDER BY r.submission_at DESC NULLS LAST, r.procurement_id DESC

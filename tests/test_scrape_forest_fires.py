@@ -26,6 +26,13 @@ def test_resolve_municipality_with_hyphenated_municipality_name():
     assert resolved["municipality_raw"] == "ΠΑΠΑΓΟΥ - ΧΟΛΑΡΓΟΥ - ΠΑΠΑΓΟΥ"
 
 
+def test_resolve_municipality_prefers_exact_canonical_match_when_alias_is_ambiguous():
+    resolved = MODULE.resolve_municipality("ΔΕΛΦΩΝ", "ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ")
+    assert resolved["municipality_key"] == "9165"
+    assert resolved["municipality_normalized_value"] == "ΔΕΛΦΩΝ"
+    assert resolved["municipality_raw"] == "ΔΕΛΦΩΝ"
+
+
 def test_compute_days_burning_is_calendar_inclusive():
     assert MODULE.compute_days_burning("21/04/2026", date(2026, 4, 21)) == "1"
     assert MODULE.compute_days_burning("20/04/2026", date(2026, 4, 21)) == "2"
