@@ -33,6 +33,23 @@ def test_resolve_municipality_prefers_exact_canonical_match_when_alias_is_ambigu
     assert resolved["municipality_raw"] == "ΔΕΛΦΩΝ"
 
 
+def test_refresh_existing_municipality_fields_backfills_unmapped_rows():
+    refreshed = MODULE.refresh_existing_municipality_fields(
+        [{
+            "incident_key": "inc_3",
+            "region": "ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ",
+            "municipality_key": "",
+            "municipality_normalized_value": "ΔΕΛΦΩΝ - ΙΤΕΑΣ",
+            "municipality_raw": "ΔΕΛΦΩΝ - ΙΤΕΑΣ",
+        }],
+        {"9165": "ΔΕΛΦΩΝ"},
+    )
+
+    assert refreshed[0]["municipality_key"] == "9165"
+    assert refreshed[0]["municipality_normalized_value"] == "ΔΕΛΦΩΝ"
+    assert refreshed[0]["municipality_raw"] == "ΔΕΛΦΩΝ - ΙΤΕΑΣ"
+
+
 def test_compute_days_burning_is_calendar_inclusive():
     assert MODULE.compute_days_burning("21/04/2026", date(2026, 4, 21)) == "1"
     assert MODULE.compute_days_burning("20/04/2026", date(2026, 4, 21)) == "2"
@@ -80,6 +97,8 @@ def test_merge_updates_existing_incident_when_closure_row_has_no_start():
     assert len(merged) == 1
     assert merged[0]["incident_key"] == "inc_1"
     assert merged[0]["first_seen_at"] == "2026-04-20T09:00:00"
+    assert merged[0]["start"] == "20/04/2026"
+    assert merged[0]["days_burning"] == "2"
     assert merged[0]["status"] == "ΛΗΞΗ"
     assert merged[0]["is_current"] == "true"
 
