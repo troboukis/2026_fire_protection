@@ -96,7 +96,8 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "ΒΡΕΦΟ",
     "ΠΑΙΔΙΚ",
     "αναδάσωσ",
-    "ΣΥΝΤΗΡΗΣΗ ΧΩΡΩΝ ΠΡΑΣΙΝΟΥ"
+    "ΣΥΝΤΗΡΗΣΗ ΧΩΡΩΝ ΠΡΑΣΙΝΟΥ",
+    "SPORTS4ALL"
 ]
 
 # Broad CPVs that overlap with non-fire-protection domains.
