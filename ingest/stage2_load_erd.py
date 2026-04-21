@@ -2195,8 +2195,6 @@ def main() -> None:
                 f"(inserted={inserted_proc}, existing_skipped={skipped_proc}, "
                 f"reprocessed_existing={reprocessed_existing_proc}, updated_existing={updated_existing_proc})"
             )
-            prune_excluded_procurements(cur, conn, DEFAULT_EXCLUDE_KEYWORDS, dry_run=args.dry_run)
-
         if "cpv" in selected_tables:
             log(f"Upserting CPV rows ({len(cpv_rows_to_insert)})...")
             psycopg2.extras.execute_batch(
@@ -2363,6 +2361,7 @@ def main() -> None:
             zeroed_payments = zero_superseded_payment_amounts(cur, affected_superseded_references)
             conn.commit()
             log(f"Payment upsert/backfill committed (zeroed_superseded_payments={zeroed_payments})")
+            prune_excluded_procurements(cur, conn, DEFAULT_EXCLUDE_KEYWORDS, dry_run=args.dry_run)
 
         if "forest_fire" in selected_tables:
             fires_unique, skipped_fire_in_batch = dedupe_forest_fire_rows(fires)
