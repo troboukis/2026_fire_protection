@@ -43,7 +43,9 @@ from src.map_copernicus_to_municipalities import resolve_database_url
 
 load_dotenv()
 
-DEFAULT_CPVS: dict[str, str] = runpy.run_path(str(REPO / "src" / "fetch_kimdis_procurements.py"))["DEFAULT_CPVS"]
+_kimdis_module = runpy.run_path(str(REPO / "src" / "fetch_kimdis_procurements.py"))
+DEFAULT_CPVS: dict[str, str] = _kimdis_module["DEFAULT_CPVS"]
+DEFAULT_EXCLUDE_KEYWORDS: list[str] = _kimdis_module["DEFAULT_EXCLUDE_KEYWORDS"]
 
 RAW_CSV = REPO / "data" / "raw_procurements.csv"
 DIAV_CSV = REPO / "data" / "2026_diavgeia.csv"
@@ -1544,6 +1546,71 @@ def log(msg: str) -> None:
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
+def _normalize_keyword_for_sql(keyword: str) -> str:
+    """Strip accents and non-alphanumeric chars to match delete_procurements_by_keywords logic."""
+    import unicodedata as _ud
+    decomposed = _ud.normalize("NFD", keyword)
+    without_marks = "".join(ch for ch in decomposed if _ud.category(ch) != "Mn")
+    folded = without_marks.casefold().replace("ς", "σ")
+    return "".join(ch for ch in folded if ch.isalnum())
+
+
+def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -> int:
+    """Delete procurement rows whose title or short_descriptions match any exclude keyword."""
+    prepared = [_normalize_keyword_for_sql(k) for k in keywords if k.strip()]
+    prepared = list(dict.fromkeys(kw for kw in prepared if kw))  # dedupe, preserve order
+    if not prepared:
+        return 0
+
+    cur.execute("SELECT EXISTS (SELECT 1 FROM pg_extension WHERE extname = 'unaccent')")
+    use_unaccent = bool(cur.fetchone()[0])
+
+    GREEK_ACCENTED_SOURCE = "άέήίϊΐόύϋΰώς"
+    GREEK_ACCENTED_TARGET = "αεηιιιουυυωσ"
+
+    def _col_expr(col: str) -> str:
+        base = f"LOWER(COALESCE(p.{col}, ''))"
+        if use_unaccent:
+            base = f"UNACCENT({base})"
+        else:
+            base = f"TRANSLATE({base}, '{GREEK_ACCENTED_SOURCE}', '{GREEK_ACCENTED_TARGET}')"
+        return f"REGEXP_REPLACE({base}, '[^[:alnum:]]+', '', 'g')"
+
+    columns = ("title", "short_descriptions")
+    groups = []
+    params: list[str] = []
+    for kw in prepared:
+        checks = []
+        for col in columns:
+            checks.append(f"{_col_expr(col)} LIKE %s")
+            params.append(f"%{kw}%")
+        groups.append("(" + " OR ".join(checks) + ")")
+
+    where_sql = " OR ".join(groups)
+
+    cur.execute(f"SELECT COUNT(*) FROM public.procurement AS p WHERE {where_sql}", params)
+    count = int(cur.fetchone()[0])
+    if count == 0:
+        return 0
+
+    if dry_run:
+        log(f"[dry-run] prune_excluded_procurements: would delete {count} rows matching exclude keywords")
+        return count
+
+    cur.execute("SET CONSTRAINTS ALL DEFERRED")
+    cur.execute(
+        f"""
+        WITH matched AS (SELECT p.id FROM public.procurement AS p WHERE {where_sql})
+        DELETE FROM public.procurement AS p USING matched WHERE p.id = matched.id
+        """,
+        params,
+    )
+    deleted = cur.rowcount
+    conn.commit()
+    log(f"Pruned {deleted} excluded procurement rows from DB")
+    return deleted
+
+
 def norm_uid_part(v) -> str:
     if v is None:
         return ""
@@ -2128,6 +2195,7 @@ def main() -> None:
                 f"(inserted={inserted_proc}, existing_skipped={skipped_proc}, "
                 f"reprocessed_existing={reprocessed_existing_proc}, updated_existing={updated_existing_proc})"
             )
+            prune_excluded_procurements(cur, conn, DEFAULT_EXCLUDE_KEYWORDS, dry_run=args.dry_run)
 
         if "cpv" in selected_tables:
             log(f"Upserting CPV rows ({len(cpv_rows_to_insert)})...")
