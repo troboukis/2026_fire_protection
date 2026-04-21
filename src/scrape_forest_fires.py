@@ -321,6 +321,26 @@ def enrich_events_with_municipalities(
     return enriched
 
 
+def refresh_existing_municipality_fields(
+    rows: Iterable[dict],
+    db_normalized_lookup: dict[str, str] | None = None,
+) -> list[dict]:
+    refreshed: list[dict] = []
+    for existing in rows:
+        row = dict(existing)
+        municipality_source = clean(row.get("municipality_raw")) or clean(row.get("municipality_normalized_value"))
+        municipality_info = resolve_municipality(municipality_source, row.get("region", ""))
+        if municipality_info["municipality_key"]:
+            row["municipality_key"] = municipality_info["municipality_key"]
+            row["municipality_raw"] = clean(row.get("municipality_raw")) or municipality_info["municipality_raw"]
+            row["municipality_normalized_value"] = (
+                (db_normalized_lookup or {}).get(municipality_info["municipality_key"])
+                or municipality_info["municipality_normalized_value"]
+            )
+        refreshed.append(row)
+    return refreshed
+
+
 def compute_days_burning(start: str | None, scraped_on: date | None = None) -> str:
     text = clean(start)
     if not text:
@@ -478,6 +498,9 @@ def merge_with_existing(
         existing = merged_by_key.get(incident_key, {})
         merged = dict(existing)
         merged.update(row)
+        if not clean(row.get("start")) and clean(existing.get("start")):
+            merged["start"] = clean(existing.get("start"))
+            merged["days_burning"] = compute_days_burning(merged["start"], scrape_time.date())
         observed_at = clean(row.get("last_seen_at")) or scrape_time.isoformat(timespec="seconds")
         merged["incident_key"] = incident_key
         merged["first_seen_at"] = clean(existing.get("first_seen_at")) or clean(existing.get("last_seen_at")) or observed_at
@@ -952,7 +975,10 @@ def main(argv: list[str] | None = None) -> int:
         normalized_name_lookup = load_db_municipality_normalized_lookup(conn)
         all_events = enrich_events_with_municipalities(parse_events(html), normalized_name_lookup)
         current_events = all_events if args.all else filter_forest(all_events)
-        existing_rows = load_existing_incidents_db(conn)
+        existing_rows = refresh_existing_municipality_fields(
+            load_existing_incidents_db(conn),
+            normalized_name_lookup,
+        )
         events = merge_with_existing(current_events, existing_rows)
         upsert_current_fires(conn, events)
     finally:
