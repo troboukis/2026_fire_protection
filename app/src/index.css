@@ -5716,15 +5716,19 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  border-color: rgba(185, 28, 28, 0.22);
-  background: linear-gradient(135deg, rgba(255, 232, 224, 0.96), rgba(255, 244, 238, 0.92));
   color: #991b1b;
-  box-shadow: 0 16px 30px -26px rgba(185, 28, 28, 0.85);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .municipality-profile-hero__alert-dot {
-  width: 0.62rem;
-  height: 0.62rem;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  min-width: 0.7rem;
+  min-height: 0.7rem;
   border-radius: 999px;
   flex: 0 0 auto;
   background: #dc2626;
