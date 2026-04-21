@@ -83,6 +83,7 @@ DEFAULT_CPVS: dict[str, str] = {
 DEFAULT_EXCLUDE_KEYWORDS = [
     "ΝΟΣΟΚΟΜΕΙΟ",
     "ΣΧΟΛΙΚ",
+    "σχολ",
     "ΠΑΝΤΕΙΟ",
     "ΕΠΙΘΕΩΡΗΣΗ ΕΡΓΑΣΙΑΣ",
     "Αναγόμ",
@@ -641,24 +642,6 @@ def save_last_fetch_to_state(state_file: Path, last_fetch: datetime) -> None:
     )
 
 
-def merge_with_existing_csv(output_csv: Path, new_df: pd.DataFrame) -> pd.DataFrame:
-    if not output_csv.exists():
-        return dedupe_df_by_business_key(new_df)
-    existing_df = pd.read_csv(output_csv, dtype=str, keep_default_na=False, na_values=[""])
-    merged = pd.concat([existing_df, new_df], ignore_index=True)
-    merged = dedupe_df_by_business_key(merged)
-    if "submissionDate" in merged.columns:
-        dt = parse_kimdis_datetime(merged["submissionDate"])
-        merged = merged.assign(submissionDate=dt).sort_values("submissionDate").reset_index(drop=True)
-        merged["submissionDate"] = (
-            merged["submissionDate"]
-            .dt.strftime("%Y-%m-%dT%H:%M:%S.%f")
-            .str.rstrip("0")
-            .str.rstrip(".")
-        )
-    return merged
-
-
 def finalize_output_df(df: pd.DataFrame) -> pd.DataFrame:
     """Final cleanup before writing csv: dedupe, reindex, sort by contractSignedDate."""
     if df.empty:
@@ -802,10 +785,9 @@ def main() -> None:
         if not new_df.empty:
             new_df = dedupe_df_by_business_key(new_df)
 
-        if cfg.from_backup or cfg.full_refresh:
-            output_df = new_df
-        else:
-            output_df = merge_with_existing_csv(cfg.output_csv, new_df)
+        # Always rebuild the CSV from the merged raw item backup so changed
+        # exclude keywords remove previously kept contracts on the next run.
+        output_df = new_df
 
         output_df = finalize_output_df(output_df)
         output_rows = len(output_df)
