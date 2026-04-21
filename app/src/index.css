@@ -5712,6 +5712,44 @@ main {
   color: var(--ink-soft);
 }
 
+.municipality-profile-hero__status-strip--alert span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-color: rgba(185, 28, 28, 0.22);
+  background: linear-gradient(135deg, rgba(255, 232, 224, 0.96), rgba(255, 244, 238, 0.92));
+  color: #991b1b;
+  box-shadow: 0 16px 30px -26px rgba(185, 28, 28, 0.85);
+}
+
+.municipality-profile-hero__alert-dot {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+  background: #dc2626;
+  box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.55);
+  animation: municipality-fire-alert-pulse 1.2s ease-out infinite;
+}
+
+@keyframes municipality-fire-alert-pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.55);
+  }
+  70% {
+    opacity: 0.95;
+    transform: scale(1);
+    box-shadow: 0 0 0 0.42rem rgba(220, 38, 38, 0);
+  }
+  100% {
+    opacity: 0.72;
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+}
+
 .municipality-profile-hero__body {
   display: grid;
   grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr);
