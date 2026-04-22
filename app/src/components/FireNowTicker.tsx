@@ -1,9 +1,11 @@
+import type { CSSProperties } from 'react'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 
 type CurrentFireRow = {
   incident_key: string
+  is_current: boolean
   municipality_key: string | null
   municipality_raw: string | null
   fuel_type: string | null
@@ -21,6 +23,12 @@ type FireTickerItem = {
   startDate: string
   status: string
   statusColor?: string
+}
+
+type FireStatusCount = {
+  status: string
+  count: number
+  color?: string
 }
 
 function cleanText(value: unknown): string | null {
@@ -52,8 +60,43 @@ const STATUS_COLORS: Record<string, string> = {
   'ΥΠΟ ΠΛΗΡΗ ΕΛΕΓΧΟ': '#166534',
 }
 
+const STATUS_ORDER: Record<string, number> = {
+  'ΣΕ ΕΞΕΛΙΞΗ': 0,
+  'ΥΠΟ ΜΕΡΙΚΟ ΕΛΕΓΧΟ': 1,
+  'ΥΠΟ ΠΛΗΡΗ ΕΛΕΓΧΟ': 2,
+}
+
+function normalizeStatus(value: string | null): string | null {
+  const cleaned = cleanText(value)
+  if (!cleaned || cleaned === 'ΛΗΞΗ') return null
+  return STATUS_LABELS[cleaned] ?? cleaned
+}
+
+function buildStatusCounts(rows: CurrentFireRow[]): FireStatusCount[] {
+  const counts = new Map<string, number>()
+
+  for (const row of rows) {
+    const status = normalizeStatus(row.status)
+    if (!status) continue
+    counts.set(status, (counts.get(status) ?? 0) + 1)
+  }
+
+  return Array.from(counts.entries())
+    .map(([status, count]) => ({
+      status,
+      count,
+      color: STATUS_COLORS[status],
+    }))
+    .sort((a, b) => {
+      const orderA = STATUS_ORDER[a.status] ?? Number.MAX_SAFE_INTEGER
+      const orderB = STATUS_ORDER[b.status] ?? Number.MAX_SAFE_INTEGER
+      if (orderA !== orderB) return orderA - orderB
+      return a.status.localeCompare(b.status, 'el')
+    })
+}
+
 function buildTickerItem(row: CurrentFireRow): FireTickerItem {
-  const status = STATUS_LABELS[cleanText(row.status) ?? ''] ?? cleanText(row.status) ?? '—'
+  const status = normalizeStatus(row.status) ?? '—'
   return {
     id: row.incident_key,
     municipalityKey: cleanText(row.municipality_key),
@@ -88,16 +131,18 @@ function renderTickerEntries(items: FireTickerItem[], keyPrefix = '', onClickMun
 async function fetchCurrentFires() {
   return supabase
     .from('current_fires')
-    .select('incident_key, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status')
+    .select('incident_key, is_current, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status')
+    .eq('is_current', true)
     .or('status.is.null,status.neq.ΛΗΞΗ')
     .order('status_updated_at', { ascending: false, nullsFirst: false })
     .order('last_seen_at', { ascending: false, nullsFirst: false })
-    .limit(12)
 }
 
 export default function FireNowTicker() {
   const navigate = useNavigate()
   const [items, setItems] = useState<FireTickerItem[]>([])
+  const [activeCount, setActiveCount] = useState<number | null>(null)
+  const [statusCounts, setStatusCounts] = useState<FireStatusCount[]>([])
   const [loadFailed, setLoadFailed] = useState(false)
   const [loading, setLoading] = useState(true)
   const [groupCount, setGroupCount] = useState(2)
@@ -117,13 +162,18 @@ export default function FireNowTicker() {
       if (error) {
         console.error('Failed to load current fires for ticker', error)
         setItems([])
+        setActiveCount(null)
+        setStatusCounts([])
         setLoadFailed(true)
         setLoading(false)
         return
       }
 
+      const rows = (data ?? []) as CurrentFireRow[]
       setLoadFailed(false)
-      setItems(((data ?? []) as CurrentFireRow[]).map(buildTickerItem))
+      setActiveCount(rows.length)
+      setStatusCounts(buildStatusCounts(rows))
+      setItems(rows.slice(0, 12).map(buildTickerItem))
       setLoading(false)
     }
 
@@ -161,6 +211,8 @@ export default function FireNowTicker() {
 
   if (loading) return null
 
+  const titleCount = activeCount == null ? '—' : String(activeCount)
+
   const handleMunicipalityClick = (key: string) => {
     navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)
   }
@@ -189,16 +241,31 @@ export default function FireNowTicker() {
     <div className="fire-ticker" aria-label="Πυρκαγιές Τώρα">
       <div className="fire-ticker__title">
         <span className="eyebrow">live</span>
-        <strong>Ενεργές πυρκαγιές</strong>
-        <div className="fire-ticker__source record-beneficiary-row__meta">
-          <span>ΠΗΓΗ: Πυροσβεστικό Σώμα Ελλάδας</span>
+        <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
+        <div className="fire-ticker__status-list" aria-label="Κατανομή ενεργών πυρκαγιών ανά κατάσταση">
+          {statusCounts.flatMap((entry, index) => {
+            const nodes = []
+            if (index > 0) {
+              nodes.push(<span key={`${entry.status}-separator`} className="fire-ticker__status-separator" aria-hidden="true" />)
+            }
+            nodes.push(
+              <span
+                key={entry.status}
+                className="fire-ticker__status-pill"
+                style={entry.color ? { color: entry.color } : undefined}
+              >
+                {entry.count} {entry.status}
+              </span>,
+            )
+            return nodes
+          })}
         </div>
       </div>
       <div className="fire-ticker__viewport" ref={viewportRef}>
         <div className="fire-ticker__marquee">
           <div
             className="fire-ticker__track"
-            style={{ '--fire-ticker-group-count': groupCount, '--fire-ticker-duration': `${animDuration}s` } as React.CSSProperties}
+            style={{ '--fire-ticker-group-count': groupCount, '--fire-ticker-duration': `${animDuration}s` } as CSSProperties}
           >
             {Array.from({ length: groupCount }, (_, i) => (
               <div
