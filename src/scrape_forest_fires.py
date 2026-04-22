@@ -468,9 +468,9 @@ def choose_existing_incident_key(base: str, candidates: list[dict[str, str]]) ->
 def merge_with_existing(
     current_events: list[dict],
     existing_rows: list[dict],
-    scraped_at: datetime | None = None,
+    scraped_at: datetime,
 ) -> list[dict[str, str]]:
-    scrape_time = scraped_at or datetime.now()
+    scrape_time = scraped_at
     normalized_existing_rows = [normalize_existing_incident_row(row) for row in existing_rows]
     existing_by_key = {
         row["incident_key"]: dict(row)
@@ -511,6 +511,7 @@ def merge_with_existing(
     for incident_key, row in list(merged_by_key.items()):
         if incident_key not in current_keys:
             row["is_current"] = "false"
+            row["status"] = "ΛΗΞΗ"
             observed_at = clean(row.get("last_seen_at")) or clean(row.get("first_seen_at"))
             row["first_seen_at"] = clean(row.get("first_seen_at")) or observed_at
             row["last_seen_at"] = clean(row.get("last_seen_at")) or observed_at
@@ -959,6 +960,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         html, _ = fetch(args.url)
+        scraped_at = datetime.now()
     except requests.RequestException as exc:
         print(f"ERROR: failed to fetch {args.url}: {exc}", file=sys.stderr)
         return 2
@@ -979,7 +981,7 @@ def main(argv: list[str] | None = None) -> int:
             load_existing_incidents_db(conn),
             normalized_name_lookup,
         )
-        events = merge_with_existing(current_events, existing_rows)
+        events = merge_with_existing(current_events, existing_rows, scraped_at)
         upsert_current_fires(conn, events)
     finally:
         conn.close()
