@@ -1892,7 +1892,7 @@ export default function App() {
           <div className="about-panel__left dev-tag-anchor">
             <DebugClassLabel name="about-panel__left" />
             <div className="eyebrow">Σχετικά με το FireWatch</div>
-            <h2>Παρατηρητήριο για την πυροπροστασία</h2>
+            <h2>Παρατηρητήριο για τις δασικές πυρκαγιές</h2>
             <p>
               Ανεξάρτητη πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη και αντιμετώπιση δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
             </p>
@@ -1929,6 +1929,9 @@ export default function App() {
               <div>
                 <span className="label">ΓΙΑΤΙ</span>
                 <strong>Διότι η λογοδοσία είναι θεμέλιο της δημοκρατίας</strong>
+              </div>
+              <div>
+                <strong>Η παρούσα εφαρμογή είναι προϊόν συνεργασίας ανθρώπινης και τεχνητής νοημοσύνης</strong>
               </div>
             </div>
           </div>

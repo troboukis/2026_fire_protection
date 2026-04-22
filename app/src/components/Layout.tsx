@@ -48,7 +48,7 @@ export default function Layout() {
 
       <header className="site-header">
         <div className="brand-block">
-          <div className="eyebrow">παρατηρητηριο για την πυροπροστασία</div>
+          <div className="eyebrow">παρατηρητήριο για τις δασικές πυρκαγιές</div>
           <div className="brand-line">
             <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
               <h1>FireWatch <span className="beta-badge">BETA</span></h1>

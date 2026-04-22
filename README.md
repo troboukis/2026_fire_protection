@@ -27,6 +27,14 @@ Run:
 python fetch_diavgeia.py
 ```
 
+## Current fires data source
+
+The live `public.current_fires` dataset and the homepage fire ticker are sourced from the Hellenic Fire Service live incidents page:
+
+- URL: `https://www.fireservice.gr/el/energa-symvanta/`
+- Scraper: `src/scrape_forest_fires.py`
+- Scope used in the frontend: active fires only, excluding rows with status `ΛΗΞΗ`
+
 One-command local fetch + git sync:
 
 ```bash
