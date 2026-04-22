@@ -3246,21 +3246,25 @@ export default function MunicipalitiesPage() {
                         </g>
                         {selectedMunicipalityCityPoints.map((city) => {
                           if (!city.labelled) return null
-                          const labelPadding = 6
+                          const labelPadding = isMobileMunicipalityMap ? 8 : 6
                           const nearRightEdge = city.x > selectedMunicipalityMap.frameWidth - 96
                           const nearTopEdge = city.y < 18
                           return (
                             <text
                               key={`${city.key}-label`}
                               x={nearRightEdge ? city.x - labelPadding : city.x + labelPadding}
-                              y={nearTopEdge ? city.y + 14 : city.y - 6}
+                              y={nearTopEdge ? city.y + (isMobileMunicipalityMap ? 16 : 14) : city.y - (isMobileMunicipalityMap ? 8 : 6)}
                               textAnchor={nearRightEdge ? 'end' : 'start'}
                               fill="rgba(17, 17, 17, 0.82)"
-                              fontSize="10"
+                              fontSize={isMobileMunicipalityMap ? '15' : '10'}
                               fontWeight="600"
                               letterSpacing="0.01em"
                               pointerEvents="none"
-                              style={{ paintOrder: 'stroke', stroke: 'rgba(255, 252, 248, 0.86)', strokeWidth: '2.4px' }}
+                              style={{
+                                paintOrder: 'stroke',
+                                stroke: 'rgba(255, 252, 248, 0.86)',
+                                strokeWidth: isMobileMunicipalityMap ? '3px' : '2.4px',
+                              }}
                             >
                               {city.name}
                             </text>
