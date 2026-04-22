@@ -92,7 +92,7 @@ def test_merge_updates_existing_incident_when_closure_row_has_no_start():
         "start": "",
         "status": "ΛΗΞΗ",
         "raw": "ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ Τελευταία Ενημέρωση πριν από 3 λεπτά",
-    }], existing)
+    }], existing, datetime(2026, 4, 21, 10, 5, 23))
 
     assert len(merged) == 1
     assert merged[0]["incident_key"] == "inc_1"
@@ -122,9 +122,10 @@ def test_merge_preserves_old_incident_when_not_in_latest_scrape():
         "status": "ΣΕ ΕΞΕΛΙΞΗ",
         "raw": "old raw",
     }]
-    merged = MODULE.merge_with_existing([], existing)
+    merged = MODULE.merge_with_existing([], existing, datetime(2026, 4, 21, 10, 5, 23))
 
     assert len(merged) == 1
     assert merged[0]["incident_key"] == "inc_2"
     assert merged[0]["is_current"] == "false"
+    assert merged[0]["status"] == "ΛΗΞΗ"
     assert merged[0]["last_seen_at"] == "2026-04-20T09:00:00"
