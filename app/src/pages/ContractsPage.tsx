@@ -546,8 +546,7 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
 
 export default function ContractsPage() {
   const [searchParams] = useSearchParams()
-  const searchParamsKey = searchParams.toString()
-  const initialFilters = useMemo(() => parseContractsPageFilters(searchParams), [searchParamsKey])
+  const initialFilters = useMemo(() => parseContractsPageFilters(searchParams), [searchParams])
   const hasScopedSource =
     initialFilters.organizationKeys.length > 0 ||
     Boolean(initialFilters.regionKey) ||
