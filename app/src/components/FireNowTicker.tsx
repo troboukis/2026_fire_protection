@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import ComponentTag from './ComponentTag'
 import { supabase } from '../lib/supabase'
 
 type CurrentFireRow = {
@@ -210,6 +211,7 @@ export default function FireNowTicker() {
   }, [items])
 
   if (loading) return null
+  if (!loadFailed && activeCount === 0) return null
 
   const titleCount = activeCount == null ? '—' : String(activeCount)
 
@@ -238,48 +240,54 @@ export default function FireNowTicker() {
       }]
 
   return (
-    <div className="fire-ticker" aria-label="Πυρκαγιές Τώρα">
-      <div className="fire-ticker__title">
-        <span className="eyebrow">live</span>
-        <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
-        <div className="fire-ticker__status-list" aria-label="Κατανομή ενεργών πυρκαγιών ανά κατάσταση">
-          {statusCounts.flatMap((entry, index) => {
-            const nodes = []
-            if (index > 0) {
-              nodes.push(<span key={`${entry.status}-separator`} className="fire-ticker__status-separator" aria-hidden="true" />)
-            }
-            nodes.push(
-              <span
-                key={entry.status}
-                className="fire-ticker__status-pill"
-                style={entry.color ? { color: entry.color } : undefined}
-              >
-                {entry.count} {entry.status}
-              </span>,
-            )
-            return nodes
-          })}
-        </div>
+    <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label="Πυρκαγιές Τώρα">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="FireNowTicker" />
+        <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
       </div>
-      <div className="fire-ticker__viewport" ref={viewportRef}>
-        <div className="fire-ticker__marquee">
-          <div
-            className="fire-ticker__track"
-            style={{ '--fire-ticker-group-count': groupCount, '--fire-ticker-duration': `${animDuration}s` } as CSSProperties}
-          >
-            {Array.from({ length: groupCount }, (_, i) => (
-              <div
-                key={i}
-                className="fire-ticker__group"
-                ref={i === 0 ? groupRef : undefined}
-                aria-hidden={i > 0 ? 'true' : undefined}
-              >
-                {renderTickerEntries(renderedItems, i === 0 ? '' : `g${i}-`, handleMunicipalityClick)}
-              </div>
-            ))}
+      <div className="fire-ticker">
+        <div className="fire-ticker__title">
+          <span className="eyebrow">live</span>
+          <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
+          <div className="fire-ticker__status-list" aria-label="Κατανομή ενεργών πυρκαγιών ανά κατάσταση">
+            {statusCounts.flatMap((entry, index) => {
+              const nodes = []
+              if (index > 0) {
+                nodes.push(<span key={`${entry.status}-separator`} className="fire-ticker__status-separator" aria-hidden="true" />)
+              }
+              nodes.push(
+                <span
+                  key={entry.status}
+                  className="fire-ticker__status-pill"
+                  style={entry.color ? { color: entry.color } : undefined}
+                >
+                  {entry.count} {entry.status}
+                </span>,
+              )
+              return nodes
+            })}
+          </div>
+        </div>
+        <div className="fire-ticker__viewport" ref={viewportRef}>
+          <div className="fire-ticker__marquee">
+            <div
+              className="fire-ticker__track"
+              style={{ '--fire-ticker-group-count': groupCount, '--fire-ticker-duration': `${animDuration}s` } as CSSProperties}
+            >
+              {Array.from({ length: groupCount }, (_, i) => (
+                <div
+                  key={i}
+                  className="fire-ticker__group"
+                  ref={i === 0 ? groupRef : undefined}
+                  aria-hidden={i > 0 ? 'true' : undefined}
+                >
+                  {renderTickerEntries(renderedItems, i === 0 ? '' : `g${i}-`, handleMunicipalityClick)}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
