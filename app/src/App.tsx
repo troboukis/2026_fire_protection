@@ -10,6 +10,7 @@ import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { buildContractsPageHref } from './lib/contractsPageHref'
+import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from './lib/homepageRpcCache'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
@@ -445,6 +446,7 @@ export default function App() {
   const navigate = useNavigate()
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
+  const [latestContractsError, setLatestContractsError] = useState<string | null>(null)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
   const [heroStatsLoading, setHeroStatsLoading] = useState(true)
   const [heroStatsError, setHeroStatsError] = useState<string | null>(null)
@@ -570,15 +572,23 @@ export default function App() {
   useEffect(() => {
     let cancelled = false
     setLatestContractsLoading(true)
+    setLatestContractsError(null)
 
     const loadLatestContracts = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_latest_contract_cards', {
-          p_limit: 15,
-        })
-        if (cancelled || error) return
+        const rows = await loadCachedHomepageRpc(
+          createHomepageRpcCacheKey('get_latest_contract_cards', { p_limit: 15 }),
+          () => retryHomepageRpc(async () => {
+            const { data, error } = await supabase.rpc('get_latest_contract_cards', {
+              p_limit: 15,
+            })
+            if (error) throw error
+            return (data ?? []) as LatestContractRpcRow[]
+          }),
+        )
+        if (cancelled) return
 
-        const cards = ((data ?? []) as LatestContractRpcRow[]).map<LatestContractCard>((row) => {
+        const cards = rows.map<LatestContractCard>((row) => {
           const cpvItems = Array.isArray(row.cpv_items)
             ? row.cpv_items
               .map((item) => ({
@@ -647,6 +657,7 @@ export default function App() {
         if (!cancelled) {
           logLoadError('latest contracts', error)
           setLatestContracts([])
+          setLatestContractsError('Δεν ήταν δυνατή η φόρτωση των πιο πρόσφατων συμβάσεων.')
         }
       } finally {
         if (!cancelled) setLatestContractsLoading(false)
@@ -1558,54 +1569,47 @@ export default function App() {
 
     const loadHeroStats = async () => {
       try {
-        let loaded = false
-
-        for (let attempt = 0; attempt < 3 && !cancelled; attempt += 1) {
-          try {
+        const payload = await loadCachedHomepageRpc(
+          createHomepageRpcCacheKey('get_hero_section_data', {
+            p_year_main: currentYear,
+            p_year_start: YEAR_START,
+          }),
+          () => retryHomepageRpc(async () => {
             const { data, error } = await supabase.rpc('get_hero_section_data', {
               p_year_main: currentYear,
               p_year_start: YEAR_START,
             })
-
             if (error) throw error
             if (!data) throw new Error('Hero section RPC returned no data')
+            return data as HeroSectionRpcResponse
+          }),
+        )
+        if (cancelled) return
 
-            const payload = data as HeroSectionRpcResponse
-            setHeroStats({
-              periodMainStart: cleanText(payload.period_main_start) ?? '',
-              periodMainEnd: cleanText(payload.period_main_end) ?? '',
-              totalMain: Number(payload.total_main ?? 0),
-              totalPrev1: Number(payload.total_prev1 ?? 0),
-              totalPrev2: Number(payload.total_prev2 ?? 0),
-              totalVsPrev1Pct: null,
-              topContractType: cleanText(payload.top_contract_type) ?? '—',
-              topContractTypeCount: Number(payload.top_contract_type_count ?? 0),
-              topContractTypePrevCount: Number(payload.top_contract_type_prev1_count ?? 0),
-              topContractTypeVsPrev1Pct: null,
-              topCpvText: toSentenceCaseEl(cleanText(payload.top_cpv_text)),
-              topCpvCount: Number(payload.top_cpv_count ?? 0),
-              topCpvPrevCount: Number(payload.top_cpv_prev1_count ?? 0),
-              topCpvVsPrev1Pct: null,
-            })
+        setHeroStats({
+          periodMainStart: cleanText(payload.period_main_start) ?? '',
+          periodMainEnd: cleanText(payload.period_main_end) ?? '',
+          totalMain: Number(payload.total_main ?? 0),
+          totalPrev1: Number(payload.total_prev1 ?? 0),
+          totalPrev2: Number(payload.total_prev2 ?? 0),
+          totalVsPrev1Pct: null,
+          topContractType: cleanText(payload.top_contract_type) ?? '—',
+          topContractTypeCount: Number(payload.top_contract_type_count ?? 0),
+          topContractTypePrevCount: Number(payload.top_contract_type_prev1_count ?? 0),
+          topContractTypeVsPrev1Pct: null,
+          topCpvText: toSentenceCaseEl(cleanText(payload.top_cpv_text)),
+          topCpvCount: Number(payload.top_cpv_count ?? 0),
+          topCpvPrevCount: Number(payload.top_cpv_prev1_count ?? 0),
+          topCpvVsPrev1Pct: null,
+        })
 
-            const points: HeroCurvePoint[] = ((payload.curve_points ?? []) as HeroSectionRpcPoint[]).map((p) => ({
-              year: Number(p.series_year),
-              dayOfYear: Number(p.day_of_year),
-              yearDays: Number(p.year_days),
-              value: Number(p.cumulative_amount ?? 0),
-            }))
-            setHeroCurvePoints(points)
-            loaded = true
-            break
-          } catch (error) {
-            if (attempt === 2 || cancelled) throw error
-            await new Promise((resolve) => window.setTimeout(resolve, 400 * (attempt + 1)))
-          }
-        }
-
-        if (!loaded && !cancelled) {
-          throw new Error('Hero section failed to load after retries')
-        }
+        const points: HeroCurvePoint[] = ((payload.curve_points ?? []) as HeroSectionRpcPoint[]).map((p) => ({
+          year: Number(p.series_year),
+          dayOfYear: Number(p.day_of_year),
+          yearDays: Number(p.year_days),
+          value: Number(p.cumulative_amount ?? 0),
+        }))
+        setHeroCurvePoints(points)
       } catch (error) {
         if (!cancelled) {
           console.error('Failed to load hero section data', error)
@@ -1623,13 +1627,7 @@ export default function App() {
   return (
     <>
       <main>
-        <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label="Πυρκαγιές Τώρα">
-          <div className="dev-tag-stack dev-tag-stack--right">
-            <ComponentTag name="FireNowTicker" />
-            <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
-          </div>
-          <FireNowTicker />
-        </section>
+        <FireNowTicker />
 
         <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
           <div className="dev-tag-stack dev-tag-stack--right">
@@ -1662,7 +1660,13 @@ export default function App() {
                 contractTypeTransform={toLowerEl}
               />
             ))}
-            {!latestContractsLoading && latestContracts.length === 0 && (
+            {!latestContractsLoading && latestContractsError && (
+              <article className="wire-item">
+                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις.</h2>
+                <p>{latestContractsError}</p>
+              </article>
+            )}
+            {!latestContractsLoading && !latestContractsError && latestContracts.length === 0 && (
               <article className="wire-item">
                 <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις.</h2>
                 <p>Ελέγξτε ότι ο πίνακας `procurement` έχει δεδομένα.</p>
