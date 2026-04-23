@@ -1052,7 +1052,7 @@ export default function EnvironmentMinistryDashboard() {
       observer.disconnect()
       window.cancelAnimationFrame(frameId)
     }
-  })
+  }, [isDesktopGrid])
 
   return (
     <>

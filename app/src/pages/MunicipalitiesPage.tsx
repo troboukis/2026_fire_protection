@@ -787,8 +787,8 @@ export default function MunicipalitiesPage() {
   const [municipalityActivePreviousCount, setMunicipalityActivePreviousCount] = useState<number | null>(null)
   const [municipalityKapFundingAmount, setMunicipalityKapFundingAmount] = useState<number | null>(null)
   const [nationalKapFundingAmount, setNationalKapFundingAmount] = useState<number | null>(null)
-  const [municipalityKapFundingSourceAda, setMunicipalityKapFundingSourceAda] = useState<string | null>(null)
-  const [municipalityKapFundingAllocationTypes, setMunicipalityKapFundingAllocationTypes] = useState<string[]>([])
+  const [, setMunicipalityKapFundingSourceAda] = useState<string | null>(null)
+  const [, setMunicipalityKapFundingAllocationTypes] = useState<string[]>([])
   const [municipalityFundingHistory, setMunicipalityFundingHistory] = useState<MunicipalityFundingHistoryEntry[]>([])
   const [contractYearSummary, setContractYearSummary] = useState<ContractYearSummary[]>([])
   const [contractCurvePoints, setContractCurvePoints] = useState<ContractCurvePoint[]>([])
@@ -2237,7 +2237,7 @@ export default function MunicipalitiesPage() {
     return () => {
       cancelled = true
     }
-  }, [currentYear, selectedMunicipality, selectedMunicipalityKey, years])
+  }, [currentYear, selectedMunicipality, selectedMunicipalityKey, selectedMunicipalityKeyNormalized, years])
 
   useEffect(() => {
     if (!selectedMunicipalityFeature) {
@@ -2318,7 +2318,7 @@ export default function MunicipalitiesPage() {
     }
 
     return noteParts.join(' ')
-  }, [currentYear, municipalityKapFundingAllocationTypes, municipalityKapFundingSourceAda, nationalKapFundingAmount])
+  }, [currentYear, nationalKapFundingAmount])
   const municipalityFundingChartMax = useMemo(() => {
     const values = municipalityFundingHistory.map((entry) => entry.totalAmount).filter((value) => Number.isFinite(value))
     return values.length > 0 ? Math.max(1, ...values) : 1

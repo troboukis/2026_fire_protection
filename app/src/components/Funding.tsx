@@ -216,7 +216,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
     }
   }, [currentYear])
 
-  const fundingHistory = fundingData?.history ?? []
+  const fundingHistory = useMemo(() => fundingData?.history ?? [], [fundingData])
   const fundingChartMax = useMemo(() => {
     const values = fundingHistory.map((entry) => entry.totalAmount).filter((value) => Number.isFinite(value))
     return values.length > 0 ? Math.max(1, ...values) : 1
