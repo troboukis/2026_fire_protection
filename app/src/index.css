@@ -6951,8 +6951,9 @@ main {
 }
 
 .environment-section--recent-contracts {
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   min-height: 0;
+  overflow: hidden;
 }
 
 .environment-section .profile-section-card__head {
@@ -7046,6 +7047,10 @@ main {
   overflow-y: auto;
   scrollbar-gutter: stable;
   -webkit-overflow-scrolling: touch;
+}
+
+.environment-active-contracts__all-link {
+  margin-top: 0;
 }
 
 .environment-active-contracts .wire-item {
@@ -7242,8 +7247,8 @@ main {
   }
 
   .environment-active-contracts-wrap {
-    max-height: none !important;
-    overflow-y: visible;
+    max-height: min(36rem, 68vh);
+    overflow-y: auto;
   }
 }
 
@@ -7281,6 +7286,7 @@ main {
   }
 
   .environment-active-contracts-wrap {
+    max-height: none;
     overflow-x: auto;
     overflow-y: hidden;
   }
