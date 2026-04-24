@@ -1023,7 +1023,7 @@ export default function EnvironmentMinistryDashboard() {
   }, [])
 
   useLayoutEffect(() => {
-    if (!isDesktopGrid || !mapCardRef.current) {
+    if (!isDesktopGrid || loading || error || !mapCardRef.current) {
       setMapCardHeight((current) => (current == null ? current : null))
       return
     }
@@ -1052,7 +1052,7 @@ export default function EnvironmentMinistryDashboard() {
       observer.disconnect()
       window.cancelAnimationFrame(frameId)
     }
-  }, [isDesktopGrid])
+  }, [data.workPoints.length, error, isDesktopGrid, loading])
 
   return (
     <>
@@ -1252,10 +1252,10 @@ export default function EnvironmentMinistryDashboard() {
                       />
                     ))}
                   </div>
-                  <Link className="news-wire__all-link" to={allContractsHref}>
-                    Όλες οι συμβάσεις
-                  </Link>
                 </div>
+                <Link className="news-wire__all-link environment-active-contracts__all-link" to={allContractsHref}>
+                  Όλες οι συμβάσεις
+                </Link>
               </ProfileSectionCard>
             </div>
 
