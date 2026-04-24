@@ -129,3 +129,68 @@ def test_merge_preserves_old_incident_when_not_in_latest_scrape():
     assert merged[0]["is_current"] == "false"
     assert merged[0]["status"] == "ΛΗΞΗ"
     assert merged[0]["last_seen_at"] == "2026-04-20T09:00:00"
+
+
+def test_merge_keeps_newer_active_duplicate_over_stale_closed_row():
+    existing = [{
+        "incident_key": MODULE.build_incident_key(
+            "||".join([
+                MODULE.normalize_identity_value("ΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ"),
+                MODULE.normalize_region_value("ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ"),
+                "9141",
+                MODULE.normalize_municipality_value("ΠΥΡΓΟΥ"),
+                MODULE.normalize_municipality_value("ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ"),
+                MODULE.normalize_identity_value("ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ"),
+            ]),
+            "24/04/2026",
+        ),
+        "first_seen_at": "2026-04-24T09:45:00",
+        "last_seen_at": "2026-04-24T10:00:00",
+        "is_current": "true",
+        "category": "ΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ",
+        "region": "ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ",
+        "regional_unit": "",
+        "municipality_key": "9141",
+        "municipality_normalized_value": "ΠΥΡΓΟΥ",
+        "municipality_raw": "ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ",
+        "fuel_type": "ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ",
+        "start": "24/04/2026",
+        "days_burning": "1",
+        "status_updated_at": "2026-04-24T09:58:00",
+        "status": "ΛΗΞΗ",
+        "raw": "old raw",
+    }]
+    current_events = [
+        {
+            "category": "ΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ",
+            "region": "ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ",
+            "regional_unit": "",
+            "municipality_key": "9141",
+            "municipality_normalized_value": "ΠΥΡΓΟΥ",
+            "municipality_raw": "ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ",
+            "fuel_type": "ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ",
+            "start": "24/04/2026",
+            "status": "ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ",
+            "raw": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ Δ. ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ ΕΝΑΡΞΗ 24/04/2026 ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ 24/04/2026 Τελευταία Ενημέρωση πριν από 8 λεπτά",
+        },
+        {
+            "category": "ΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ",
+            "region": "ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ",
+            "regional_unit": "",
+            "municipality_key": "9141",
+            "municipality_normalized_value": "ΠΥΡΓΟΥ",
+            "municipality_raw": "ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ",
+            "fuel_type": "ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ",
+            "start": "",
+            "status": "ΛΗΞΗ",
+            "raw": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ Δ. ΠΥΡΓΟΥ - ΒΩΛΑΚΟΣ ΚΑΛΑΜΙΑ - ΒΑΛΤΟΙ Τελευταία Ενημέρωση πριν από 1 ώρα",
+        },
+    ]
+
+    merged = MODULE.merge_with_existing(current_events, existing, datetime(2026, 4, 24, 11, 1, 0))
+
+    assert len(merged) == 1
+    assert merged[0]["incident_key"] == existing[0]["incident_key"]
+    assert merged[0]["is_current"] == "true"
+    assert merged[0]["status"] == "ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ"
+    assert merged[0]["status_updated_at"] == "2026-04-24T10:53:00"

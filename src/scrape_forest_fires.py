@@ -30,7 +30,7 @@ import os
 import re
 import sys
 import unicodedata
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from pathlib import Path
 from typing import Iterable
@@ -418,6 +418,21 @@ def parse_iso_datetime(value: str | None) -> datetime:
         return datetime.min
 
 
+def current_duplicate_rank(row: dict[str, str]) -> tuple[datetime, bool, bool, datetime]:
+    return (
+        parse_iso_datetime(row.get("status_updated_at")),
+        normalize_identity_value(row.get("status")) != "ΛΗΞΗ",
+        bool(clean(row.get("start"))),
+        parse_iso_datetime(row.get("last_seen_at")),
+    )
+
+
+def choose_current_duplicate(existing: dict[str, str], candidate: dict[str, str]) -> dict[str, str]:
+    if current_duplicate_rank(candidate) > current_duplicate_rank(existing):
+        return candidate
+    return existing
+
+
 def materialize_event_row(event: dict, scraped_at: datetime) -> dict[str, str]:
     row = dict(event)
     row["last_seen_at"] = scraped_at.isoformat(timespec="seconds")
@@ -493,6 +508,7 @@ def merge_with_existing(
             if start
             else choose_existing_incident_key(base, existing_by_base.get(base, []))
         )
+        duplicate_current_key = incident_key in current_keys
         current_keys.add(incident_key)
 
         existing = merged_by_key.get(incident_key, {})
@@ -506,7 +522,10 @@ def merge_with_existing(
         merged["first_seen_at"] = clean(existing.get("first_seen_at")) or clean(existing.get("last_seen_at")) or observed_at
         merged["last_seen_at"] = observed_at
         merged["is_current"] = "true"
-        merged_by_key[incident_key] = merged
+        if duplicate_current_key:
+            merged_by_key[incident_key] = choose_current_duplicate(merged_by_key[incident_key], merged)
+        else:
+            merged_by_key[incident_key] = merged
 
     for incident_key, row in list(merged_by_key.items()):
         if incident_key not in current_keys:
@@ -960,7 +979,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         html, _ = fetch(args.url)
-        scraped_at = datetime.now()
+        scraped_at = datetime.now(timezone.utc)
     except requests.RequestException as exc:
         print(f"ERROR: failed to fetch {args.url}: {exc}", file=sys.stderr)
         return 2
