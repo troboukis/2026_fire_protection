@@ -291,7 +291,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
             </div>
           </div>
           <p className="funding-hero__lede">
-            Ετήσια κατανομή για δράσεις πυροπροστασίας προς δήμους και συνδέσμους δήμων από Κεντρικούς Αυτοτελείς Πόρους.
+            Ετήσια κρατική χρηματοδότηση για δράσεις πυροπροστασίας προς δήμους και συνδέσμους δήμων.
           </p>
           {!loadError && !spendLoadError ? (
             <div
