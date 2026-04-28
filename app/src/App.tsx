@@ -1637,7 +1637,7 @@ export default function App() {
           <div className="news-wire__label dev-tag-anchor">
             <DebugClassLabel name="news-wire__label" />
             <span className="eyebrow">τελευταία</span>
-            <strong>Οι πιο πρόσφατες συμβάσεις που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
+            <strong>Οι πιο πρόσφατες συμβάσεις Δήμων, Υπουργείων και άλλων φορέων που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
             <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
           </div>
           <div className="news-wire__items dev-tag-anchor">
@@ -1685,7 +1685,7 @@ export default function App() {
             <div className="hero-chart dev-tag-anchor">
               <DebugClassLabel name="hero-chart" />
               <div className="hero-chart__head">
-                <span className="eyebrow">Εξέλιξη δαπανών</span>
+                <span className="eyebrow">Εκτίμηση δαπανών δημοσιων συμβασεων <br /> για προληψη και αντιμετωπιση δασικων πυρκαγιων</span>
               </div>
               <div className="hero-chart__plot">
                 <svg viewBox="0 0 760 300" role="img" aria-label="Σωρευτική πορεία δαπανών ανά έτος">
