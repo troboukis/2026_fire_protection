@@ -1,9 +1,20 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App'
 import Layout from './components/Layout'
+import { initGA, trackPageView } from './analytics'
 import './index.css'
+
+initGA()
+
+function RouteTracker() {
+  const location = useLocation()
+  useEffect(() => {
+    trackPageView(location.pathname)
+  }, [location.pathname])
+  return null
+}
 
 const AnalysisPage = lazy(() => import('./pages/AnalysisPage'))
 const ContractsPage = lazy(() => import('./pages/ContractsPage'))
@@ -14,6 +25,7 @@ const MunicipalitiesPage = lazy(() => import('./pages/MunicipalitiesPage'))
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HashRouter>
+      <RouteTracker />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<App />} />
