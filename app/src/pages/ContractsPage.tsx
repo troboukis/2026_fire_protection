@@ -25,6 +25,8 @@ type ContractRow = {
   total_count: number
 }
 
+type ContractSort = 'date_desc' | 'date_asc' | 'amount_desc' | 'amount_asc'
+
 function clean(v: unknown): string {
   if (v == null) return ''
   const s = String(v).trim()
@@ -181,6 +183,63 @@ function dedupeContractRows(rows: ContractRow[]): ContractRow[] {
       }),
     ).values(),
   )
+}
+
+function sortContractRows(rows: ContractRow[], sort: ContractSort): ContractRow[] {
+  return [...rows].sort((a, b) => {
+    if (sort === 'amount_desc' || sort === 'amount_asc') {
+      if (a.amount_without_vat == null && b.amount_without_vat != null) return 1
+      if (a.amount_without_vat != null && b.amount_without_vat == null) return -1
+      const aAmount = Number(a.amount_without_vat ?? 0)
+      const bAmount = Number(b.amount_without_vat ?? 0)
+      const byAmount = sort === 'amount_desc' ? bAmount - aAmount : aAmount - bAmount
+      if (byAmount !== 0) return byAmount
+    }
+
+    const byDate = sort === 'date_asc'
+      ? clean(a.contract_signed_date).localeCompare(clean(b.contract_signed_date))
+      : clean(b.contract_signed_date).localeCompare(clean(a.contract_signed_date))
+    if (byDate !== 0) return byDate
+
+    return sort === 'date_asc' ? a.id - b.id : b.id - a.id
+  })
+}
+
+async function loadContractsPageRows(args: {
+  q: string
+  procedure: string
+  dateFrom: string
+  dateTo: string
+  minAmount: number | null
+}): Promise<ContractRow[]> {
+  const rpcPageSize = 1000
+  const allRows: ContractRow[] = []
+  let rpcPage = 1
+  let expectedTotal: number | null = null
+
+  while (expectedTotal == null || allRows.length < expectedTotal) {
+    const { data, error } = await supabase.rpc('get_contracts_page', {
+      p_q: args.q || null,
+      p_procedure: args.procedure || null,
+      p_date_from: args.dateFrom || null,
+      p_date_to: args.dateTo || null,
+      p_min_amount: args.minAmount != null && Number.isFinite(args.minAmount) ? args.minAmount : null,
+      p_page: rpcPage,
+      p_page_size: rpcPageSize,
+    })
+
+    if (error) throw error
+
+    const pageRows = (data ?? []) as ContractRow[]
+    if (expectedTotal == null) expectedTotal = pageRows[0]?.total_count ?? 0
+    if (pageRows.length === 0) break
+
+    allRows.push(...pageRows)
+    if (pageRows.length < rpcPageSize) break
+    rpcPage += 1
+  }
+
+  return dedupeContractRows(allRows)
 }
 
 async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: string, dateTo: string): Promise<ContractRow[]> {
@@ -563,6 +622,7 @@ export default function ContractsPage() {
   const [dateFrom, setDateFrom] = useState(initialFilters.dateFrom)
   const [dateTo, setDateTo] = useState(initialFilters.dateTo)
   const [minAmount, setMinAmount] = useState(initialFilters.minAmount)
+  const [sort, setSort] = useState<ContractSort>('date_desc')
   const [organizationKeys, setOrganizationKeys] = useState<string[]>(initialFilters.organizationKeys)
   const [regionKey, setRegionKey] = useState(initialFilters.regionKey)
   const [municipalityKey, setMunicipalityKey] = useState(initialFilters.municipalityKey)
@@ -644,15 +704,11 @@ export default function ContractsPage() {
               if (min == null || !Number.isFinite(min)) return true
               return Number(row.amount_without_vat ?? 0) >= min
             })
-            .sort((a, b) => {
-              const byDate = clean(b.contract_signed_date).localeCompare(clean(a.contract_signed_date))
-              if (byDate !== 0) return byDate
-              return b.id - a.id
-            })
+          const sortedRows = sortContractRows(filteredRows, sort)
 
-          const total = filteredRows.length
+          const total = sortedRows.length
           const pageStart = Math.max((page - 1) * pageSize, 0)
-          const pageRows = filteredRows.slice(pageStart, pageStart + pageSize)
+          const pageRows = sortedRows.slice(pageStart, pageStart + pageSize)
           setRows(pageRows)
           setTotalCount(total)
           setLoading(false)
@@ -660,28 +716,20 @@ export default function ContractsPage() {
         }
 
         const min = minAmount ? Number(minAmount) : null
-        const { data, error } = await supabase.rpc('get_contracts_page', {
-          p_q: q || null,
-          p_procedure: procedure || null,
-          p_date_from: dateFrom || null,
-          p_date_to: dateTo || null,
-          p_min_amount: min != null && Number.isFinite(min) ? min : null,
-          p_page: page,
-          p_page_size: pageSize,
+        const filteredRows = await loadContractsPageRows({
+          q,
+          procedure,
+          dateFrom,
+          dateTo,
+          minAmount: min,
         })
 
         if (cancelled) return
-        if (error) {
-          setRows([])
-          setTotalCount(0)
-          setLoading(false)
-          return
-        }
 
-        const next = (data ?? []) as ContractRow[]
-        const deduped = dedupeContractRows(next)
-        setRows(deduped)
-        setTotalCount(next[0]?.total_count ?? 0)
+        const sortedRows = sortContractRows(filteredRows, sort)
+        const pageStart = Math.max((page - 1) * pageSize, 0)
+        setRows(sortedRows.slice(pageStart, pageStart + pageSize))
+        setTotalCount(sortedRows.length)
         setLoading(false)
       } catch {
         if (cancelled) return
@@ -692,7 +740,7 @@ export default function ContractsPage() {
     }
     loadPage()
     return () => { cancelled = true }
-  }, [q, procedure, dateFrom, dateTo, minAmount, page, organizationKeys, regionKey, municipalityKey, hasScopedSource])
+  }, [q, procedure, dateFrom, dateTo, minAmount, sort, page, organizationKeys, regionKey, municipalityKey, hasScopedSource])
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
 
@@ -946,13 +994,43 @@ export default function ContractsPage() {
               </colgroup>
               <thead>
                 <tr>
-                  <th>Ημερομηνία</th>
+                  <th>
+                    <button
+                      type="button"
+                      className={`contracts-sort-header${sort.startsWith('date_') ? ' contracts-sort-header--active' : ''}`}
+                      onClick={() => {
+                        setSort((current) => current === 'date_desc' ? 'date_asc' : 'date_desc')
+                        setPage(1)
+                      }}
+                      aria-label="Ταξινόμηση κατά ημερομηνία"
+                    >
+                      <span>Ημερομηνία</span>
+                      <span className="contracts-sort-header__icon">
+                        {sort.startsWith('date_') ? (sort === 'date_asc' ? '↑' : '↓') : '↕'}
+                      </span>
+                    </button>
+                  </th>
                   <th>Φορέας</th>
                   <th>Τίτλος</th>
                   <th>Περιγραφή Εργασίας</th>
                   <th>Δικαιούχος</th>
                   <th>Διαδικασία</th>
-                  <th>Ποσό χωρίς ΦΠΑ</th>
+                  <th>
+                    <button
+                      type="button"
+                      className={`contracts-sort-header${sort.startsWith('amount_') ? ' contracts-sort-header--active' : ''}`}
+                      onClick={() => {
+                        setSort((current) => current === 'amount_desc' ? 'amount_asc' : 'amount_desc')
+                        setPage(1)
+                      }}
+                      aria-label="Ταξινόμηση κατά ποσό χωρίς ΦΠΑ"
+                    >
+                      <span>Ποσό χωρίς ΦΠΑ</span>
+                      <span className="contracts-sort-header__icon">
+                        {sort.startsWith('amount_') ? (sort === 'amount_asc' ? '↑' : '↓') : '↕'}
+                      </span>
+                    </button>
+                  </th>
                   <th>ΑΔΑΜ</th>
                 </tr>
               </thead>

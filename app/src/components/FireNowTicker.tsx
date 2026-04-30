@@ -151,6 +151,7 @@ export default function FireNowTicker() {
 
   const viewportRef = useRef<HTMLDivElement>(null)
   const groupRef = useRef<HTMLDivElement>(null)
+  const shouldScroll = !loadFailed && (activeCount ?? 0) > 4
 
   useEffect(() => {
     let cancelled = false
@@ -196,6 +197,12 @@ export default function FireNowTicker() {
   // After items render, measure widths and calculate how many groups are needed
   // so the track always fills the viewport with no gap at the loop point.
   useLayoutEffect(() => {
+    if (!shouldScroll) {
+      setGroupCount(1)
+      setAnimDuration(42)
+      return
+    }
+
     const viewport = viewportRef.current
     const group = groupRef.current
     if (!viewport || !group) return
@@ -208,7 +215,7 @@ export default function FireNowTicker() {
     const needed = Math.ceil((viewportWidth * 2) / groupWidth) + 1
     setGroupCount(Math.max(2, needed))
     setAnimDuration(Math.round(groupWidth / 35))
-  }, [items])
+  }, [items, shouldScroll])
 
   if (loading) return null
   if (!loadFailed && activeCount === 0) return null
@@ -238,6 +245,7 @@ export default function FireNowTicker() {
         startDate: '—',
         status: '—',
       }]
+  const renderedGroupCount = shouldScroll ? groupCount : 1
 
   return (
     <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label="Πυρκαγιές Τώρα">
@@ -245,7 +253,7 @@ export default function FireNowTicker() {
         <ComponentTag name="FireNowTicker" />
         <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
       </div>
-      <div className="fire-ticker">
+      <div className={`fire-ticker${shouldScroll ? '' : ' fire-ticker--static'}`}>
         <div className="fire-ticker__title">
           <span className="eyebrow">live</span>
           <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
@@ -272,9 +280,9 @@ export default function FireNowTicker() {
           <div className="fire-ticker__marquee">
             <div
               className="fire-ticker__track"
-              style={{ '--fire-ticker-group-count': groupCount, '--fire-ticker-duration': `${animDuration}s` } as CSSProperties}
+              style={{ '--fire-ticker-group-count': renderedGroupCount, '--fire-ticker-duration': `${animDuration}s` } as CSSProperties}
             >
-              {Array.from({ length: groupCount }, (_, i) => (
+              {Array.from({ length: renderedGroupCount }, (_, i) => (
                 <div
                   key={i}
                   className="fire-ticker__group"

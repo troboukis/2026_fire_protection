@@ -426,6 +426,7 @@ function createEmptyOrganizationSectionData(name: string, currentYear: number, c
     previousYearLabel: String(currentYear - 1),
     totalSpend: 0,
     cpvCodes: [],
+    cpvCodeItems: [],
     topCpvValue: null,
     previousYearTopCpvValue: null,
     contractCount: 0,
@@ -784,6 +785,7 @@ export default function App() {
         const cpvCounts = new Map<string, number>()
         const cpvValueCounts = new Map<string, number>()
         const cpvValueCountsByYear = new Map<string, Map<string, number>>()
+        const cpvLabelCountsByCode = new Map<string, Map<string, number>>()
         const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
         for (const row of cpvRows) {
           const code = cleanText(row.cpv_key)
@@ -791,6 +793,11 @@ export default function App() {
           const procurementYear = procurementYearById.get(row.procurement_id)
           if (!code) continue
           cpvCounts.set(code, (cpvCounts.get(code) ?? 0) + 1)
+          if (value) {
+            if (!cpvLabelCountsByCode.has(code)) cpvLabelCountsByCode.set(code, new Map<string, number>())
+            const labelCounts = cpvLabelCountsByCode.get(code)!
+            labelCounts.set(value, (labelCounts.get(value) ?? 0) + 1)
+          }
           if (value) cpvValueCounts.set(value, (cpvValueCounts.get(value) ?? 0) + 1)
           if (value && procurementYear) {
             if (!cpvValueCountsByYear.has(procurementYear)) cpvValueCountsByYear.set(procurementYear, new Map<string, number>())
@@ -813,10 +820,15 @@ export default function App() {
         for (const row of paymentRows) {
           if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
         }
-        const topCpvs = [...cpvCounts.entries()]
+        const topCpvEntries = [...cpvCounts.entries()]
           .sort((a, b) => b[1] - a[1])
           .slice(0, 4)
-          .map(([code]) => `CPV ${code}`)
+        const topCpvs = topCpvEntries.map(([code]) => `CPV ${code}`)
+        const topCpvItems = topCpvEntries.map(([code]) => ({
+          code: `CPV ${code}`,
+          label: [...(cpvLabelCountsByCode.get(code) ?? new Map<string, number>()).entries()]
+            .sort((a, b) => b[1] - a[1])[0]?.[0] ?? `CPV ${code}`,
+        }))
         const topCpvValue = [...(cpvValueCountsByYear.get(latestProcurementYear) ?? new Map<string, number>()).entries()]
           .sort((a, b) => b[1] - a[1])[0]?.[0]
           ?? [...cpvValueCounts.entries()]
@@ -982,6 +994,7 @@ export default function App() {
           previousYearLabel: previousProcurementYear,
           totalSpend,
           cpvCodes: topCpvs,
+          cpvCodeItems: topCpvItems,
           topCpvValue,
           previousYearTopCpvValue,
           contractCount,
@@ -1180,6 +1193,7 @@ export default function App() {
         const cpvCounts = new Map<string, number>()
         const cpvValueCounts = new Map<string, number>()
         const cpvValueCountsByYear = new Map<string, Map<string, number>>()
+        const cpvLabelCountsByCode = new Map<string, Map<string, number>>()
         const cpvByProcId = new Map<number, Array<{ code: string; label: string }>>()
         for (const row of cpvRows) {
           const code = cleanText(row.cpv_key)
@@ -1187,6 +1201,11 @@ export default function App() {
           const procurementYear = procurementYearById.get(row.procurement_id)
           if (!code) continue
           cpvCounts.set(code, (cpvCounts.get(code) ?? 0) + 1)
+          if (value) {
+            if (!cpvLabelCountsByCode.has(code)) cpvLabelCountsByCode.set(code, new Map<string, number>())
+            const labelCounts = cpvLabelCountsByCode.get(code)!
+            labelCounts.set(value, (labelCounts.get(value) ?? 0) + 1)
+          }
           if (value) cpvValueCounts.set(value, (cpvValueCounts.get(value) ?? 0) + 1)
           if (value && procurementYear) {
             if (!cpvValueCountsByYear.has(procurementYear)) cpvValueCountsByYear.set(procurementYear, new Map<string, number>())
@@ -1211,10 +1230,15 @@ export default function App() {
           if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
         }
 
-        const topCpvs = [...cpvCounts.entries()]
+        const topCpvEntries = [...cpvCounts.entries()]
           .sort((a, b) => b[1] - a[1])
           .slice(0, 4)
-          .map(([code]) => `CPV ${code}`)
+        const topCpvs = topCpvEntries.map(([code]) => `CPV ${code}`)
+        const topCpvItems = topCpvEntries.map(([code]) => ({
+          code: `CPV ${code}`,
+          label: [...(cpvLabelCountsByCode.get(code) ?? new Map<string, number>()).entries()]
+            .sort((a, b) => b[1] - a[1])[0]?.[0] ?? `CPV ${code}`,
+        }))
         const topCpvValue = [...(cpvValueCountsByYear.get(latestProcurementYear) ?? new Map<string, number>()).entries()]
           .sort((a, b) => b[1] - a[1])[0]?.[0]
           ?? [...cpvValueCounts.entries()]
@@ -1393,6 +1417,7 @@ export default function App() {
           previousYearLabel: previousProcurementYear,
           totalSpend,
           cpvCodes: topCpvs,
+          cpvCodeItems: topCpvItems,
           topCpvValue,
           previousYearTopCpvValue,
           contractCount,

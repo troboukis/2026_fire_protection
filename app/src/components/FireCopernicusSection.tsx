@@ -584,7 +584,7 @@ export default function FireCopernicusSection() {
           <div className="eyebrow">Copernicus</div>
           <h2>Χάρτης δασικών πυρκαγιών</h2>
           <p>
-            Τα περιστατικά προέρχονται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a> και βασίζονται σε δορυφορική εκτίμηση καμένων εκτάσεων.<br></br>
+            Κάθε πυρκαγιά εντοπίζεται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a>. Η εκτίμηση των καμένων εκτάσεων βασίζεται σε δορυφορικά δεδομένα.<br></br>
           </p>
         </div>
         <DataLoadingCard
@@ -606,7 +606,7 @@ export default function FireCopernicusSection() {
         <div className="eyebrow">Copernicus</div>
         <h2>Χάρτης δασικών πυρκαγιών</h2>
         <p>
-          Τα περιστατικά προέρχονται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a> και βασίζονται σε δορυφορική εκτίμηση καμένων εκτάσεων.<br></br>
+          Κάθε πυρκαγιά εντοπίζεται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a>. Η εκτίμηση των καμένων εκτάσεων βασίζεται σε δορυφορικά δεδομένα.<br></br>
         </p>
         <div className="brand-mark fire-copernicus__brand-mark">
           Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}

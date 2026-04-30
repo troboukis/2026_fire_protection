@@ -141,6 +141,9 @@ export default function RegionSection({
           <p>
             Δυναμική ενημέρωση δεδομένων από το Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
           </p>
+          <p className="note-text organization__header-note">
+            Η περιφέρεια επιλέγεται τυχαία σε κάθε ανανέωση της σελίδας.
+          </p>
         </div>
         <DataLoadingCard message={`Ανακτώνται οι συμβάσεις και οι δείκτες για την ${data.name}.`} />
       </section>
@@ -169,6 +172,9 @@ export default function RegionSection({
       note: 'υπεγράφη η πιο πρόσφατης σύμβαση',
     },
   ]
+  const cpvWallItems = data.cpvCodeItems.length
+    ? data.cpvCodeItems
+    : data.cpvCodes.map((code) => ({ code, label: code }))
 
   return (
     <section id={anchorId} className="organization section-rule dev-tag-anchor">
@@ -182,6 +188,9 @@ export default function RegionSection({
         <h2>{data.name}</h2>
         <p>
           Δυναμική ενημέρωση δεδομένων από το Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων.
+        </p>
+        <p className="note-text organization__header-note">
+          Η περιφέρεια επιλέγεται τυχαία σε κάθε ανανέωση της σελίδας.
         </p>
       </div>
 
@@ -236,8 +245,17 @@ export default function RegionSection({
           <article className="org-kpi org-kpi--cpv" key="cpv-wall">
             <div className="eyebrow">Οι πιο συχνές κατηγορίες εργασιών</div>
             <div className="cpv-wall">
-              {(data.cpvCodes.length ? data.cpvCodes : ['—']).map((code) => (
-                <span key={code}>{code}</span>
+              {(cpvWallItems.length ? cpvWallItems : [{ code: '—', label: '—' }]).map((item) => (
+                <span
+                  key={item.code}
+                  className="cpv-wall__item"
+                  tabIndex={0}
+                  title={item.label}
+                  aria-label={`${item.code}: ${item.label}`}
+                  data-tooltip={item.label}
+                >
+                  {item.code}
+                </span>
               ))}
             </div>
           </article>

@@ -299,7 +299,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
               aria-label={`Δαπάνες ${formatEur(fundingData?.currentSpendAmount ?? 0)} σε σχέση με χρηματοδότηση ${formatEur(fundingData?.currentTotal ?? 0)} για το ${fundingData?.currentSpendYear ?? fundingData?.yearMain ?? currentYear}`}
             >
               <div className="funding-hero__progress-divider" aria-hidden="true" />
-              <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών μέχρι σήμερα: ${formatEurCompactMillions(fundingData?.currentSpendAmount ?? 0)}`}</p>
+              <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών Δήμων μέχρι σήμερα: ${formatEurCompactMillions(fundingData?.currentSpendAmount ?? 0)}`}</p>
               <div className="funding-hero__progress-track" aria-hidden="true">
                 <div
                   className="funding-hero__progress-fill"

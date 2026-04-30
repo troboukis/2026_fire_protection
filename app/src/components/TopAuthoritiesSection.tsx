@@ -9,13 +9,19 @@ type TopAuthorityItem = {
 
 type Props = {
   rows: TopAuthorityItem[]
-  maxValue: number
+  totalSpendM: number
   loading?: boolean
 }
 
-export default function TopAuthoritiesSection({ rows, maxValue, loading = false }: Props) {
-  const midpoint = Math.ceil(rows.length / 2)
-  const columns = [rows.slice(0, midpoint), rows.slice(midpoint)]
+export default function TopAuthoritiesSection({ rows, totalSpendM, loading = false }: Props) {
+  const sortedRows = [...rows]
+    .map((row) => ({
+      ...row,
+      pct: totalSpendM > 0 ? (row.total_m / totalSpendM) * 100 : 0,
+    }))
+    .sort((a, b) => b.pct - a.pct || b.total_m - a.total_m || a.name.localeCompare(b.name, 'el'))
+  const midpoint = Math.ceil(sortedRows.length / 2)
+  const columns = [sortedRows.slice(0, midpoint), sortedRows.slice(midpoint)]
 
   return (
     <div className="ca-table-block">
@@ -32,14 +38,18 @@ export default function TopAuthoritiesSection({ rows, maxValue, loading = false 
                   {column.map((org, idx) => (
                     <div className="ca-bar-row" key={`${org.name}-${columnIdx}-${idx}`}>
                       <div className="ca-bar-label">
-                        <span className="ca-top-org-label">{org.name}</span>
-                        <span className="ca-top-org-value ca-accent ca-mono">{org.total_m.toFixed(1)}M €</span>
+                        <span className="ca-bar-title ca-top-org-label">
+                          <span>{org.name}</span>
+                          <span className="ca-bar-title__dot" aria-hidden="true" />
+                          <span className="ca-bar-title__meta">
+                            <strong>€ {org.total_m.toFixed(1)}M</strong>
+                            <span> ({org.contracts.toLocaleString('el-GR')} συμβ.)</span>
+                          </span>
+                        </span>
+                        <span className="ca-bar-pct">{org.pct.toFixed(1)}%</span>
                       </div>
                       <div className="ca-bar-track">
-                        <div className="ca-bar-fill" style={{ width: `${maxValue > 0 ? (org.total_m / maxValue) * 100 : 0}%`, background: 'rgba(211,72,45,0.65)' }} />
-                      </div>
-                      <div className="ca-bar-meta">
-                        <span className="ca-mono">{org.contracts.toLocaleString('el-GR')} συμβάσεις</span>
+                        <div className="ca-bar-fill" style={{ width: `${org.pct}%`, background: 'rgba(211,72,45,0.65)' }} />
                       </div>
                     </div>
                   ))}

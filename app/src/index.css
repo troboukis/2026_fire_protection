@@ -408,6 +408,18 @@ main {
   will-change: transform;
 }
 
+.fire-ticker--static .fire-ticker__viewport::before,
+.fire-ticker--static .fire-ticker__viewport::after {
+  display: none;
+}
+
+.fire-ticker--static .fire-ticker__track {
+  width: 100%;
+  animation: none;
+  transform: none;
+  will-change: auto;
+}
+
 .fire-ticker__group {
   display: flex;
   align-items: center;
@@ -415,6 +427,13 @@ main {
   flex-shrink: 0;
   min-width: max-content;
   padding: 1rem 0.4rem;
+}
+
+.fire-ticker--static .fire-ticker__group {
+  flex-wrap: wrap;
+  row-gap: 0.6rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .fire-ticker:hover .fire-ticker__track,
@@ -1791,6 +1810,11 @@ main {
   line-height: 1.35;
 }
 
+.organization__header .organization__header-note {
+  max-width: 62ch;
+  color: var(--ink-faint);
+}
+
 .organization__hero {
   position: relative;
   display: grid;
@@ -1847,11 +1871,46 @@ main {
 }
 
 .cpv-wall span {
+  position: relative;
   font-size: clamp(1.15rem, 3vw, 2rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
   font-weight: 600;
   color: rgba(17, 17, 17, 0.28);
+}
+
+.cpv-wall__item {
+  cursor: help;
+  width: fit-content;
+  outline-offset: 0.18rem;
+}
+
+.cpv-wall__item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 0.45rem);
+  z-index: 5;
+  width: min(22rem, 72vw);
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line-strong);
+  background: #111;
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.25rem);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.cpv-wall__item:hover::after,
+.cpv-wall__item:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .organization__grid {
@@ -3060,6 +3119,39 @@ main {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   text-transform: uppercase;
+}
+
+.contracts-sort-header {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-transform: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contracts-sort-header:hover,
+.contracts-sort-header:focus-visible,
+.contracts-sort-header--active {
+  color: var(--accent);
+}
+
+.contracts-sort-header:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 0.14rem;
+}
+
+.contracts-sort-header__icon {
+  font-size: 1.75em;
+  font-weight: 900;
+  line-height: 1;
+  min-width: 1em;
+  text-align: center;
 }
 
 .contracts-table td {
@@ -4299,14 +4391,50 @@ main {
 .ca-bar-label {
   display: flex;
   justify-content: space-between;
+  gap: 0.75rem;
   font-size: 0.88rem;
   line-height: 1;
+}
+
+.ca-bar-title {
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-width: 0;
+}
+
+.ca-bar-title > span:first-child {
+  min-width: 0;
+}
+
+.ca-bar-title__meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.ca-bar-title__meta strong {
+  font-weight: 700;
+}
+
+.ca-bar-title__meta span {
+  font-weight: 400;
+}
+
+.ca-bar-title__dot {
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: var(--ink-faint);
+  flex: 0 0 auto;
 }
 
 .ca-bar-pct {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--ink-faint);
+  flex: 0 0 auto;
 }
 
 .ca-bar-track {
@@ -4323,7 +4451,6 @@ main {
 
 .ca-bar-meta {
   display: flex;
-  justify-content: space-between;
   font-family: var(--font-mono);
   font-size: 0.74rem;
   color: var(--ink-soft);
