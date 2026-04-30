@@ -155,7 +155,7 @@ function dedupeIdentity(p: {
 // ── Live aggregates loaded from Supabase ─────────────────────────────
 
 // ── Βοηθητικό HBar ────────────────────────────────────────────────────
-function HBar({ item, max }: { item: BarItem; max: number }) {
+function HBar({ item }: { item: BarItem }) {
   const toneMap = {
     high:  'rgba(211,72,45,0.9)',
     mid:   'rgba(211,72,45,0.55)',
@@ -165,15 +165,18 @@ function HBar({ item, max }: { item: BarItem; max: number }) {
   return (
     <div className="ca-bar-row">
       <div className="ca-bar-label">
-        <span>{item.label}</span>
+        <span className="ca-bar-title">
+          <span>{item.label}</span>
+          <span className="ca-bar-title__dot" aria-hidden="true" />
+          <span className="ca-bar-title__meta">
+            <strong>€ {item.total_m.toFixed(1)}M</strong>
+            <span> ({item.value.toLocaleString('el-GR')} συμβ.)</span>
+          </span>
+        </span>
         <span className="ca-bar-pct">{item.pct}%</span>
       </div>
       <div className="ca-bar-track">
-        <div className="ca-bar-fill" style={{ width: `${(item.total_m / max) * 100}%`, background: toneMap[item.tone] }} />
-      </div>
-      <div className="ca-bar-meta">
-        <strong>€ {item.total_m.toFixed(1)}M</strong>
-        <span>{item.value.toLocaleString('el-GR')} συμβ.</span>
+        <div className="ca-bar-fill" style={{ width: `${item.pct}%`, background: toneMap[item.tone] }} />
       </div>
     </div>
   )
@@ -1033,7 +1036,7 @@ export default function ContractAnalysis() {
           return labels.map((label) => {
             const v = map.get(label) ?? { count: 0, total: 0 }
             const total_m = v.total / 1_000_000
-            const pct = totalContracts > 0 ? (v.count / totalContracts) * 100 : 0
+            const pct = totalAmount > 0 ? (v.total / totalAmount) * 100 : 0
             return {
               label,
               value: v.count,
@@ -1041,7 +1044,7 @@ export default function ContractAnalysis() {
               pct: Number(pct.toFixed(1)),
               tone: toneForPct(pct),
             }
-          })
+          }).sort((a, b) => b.pct - a.pct || b.total_m - a.total_m || a.label.localeCompare(b.label, 'el'))
         }
 
         const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
@@ -1129,6 +1132,7 @@ export default function ContractAnalysis() {
         contractTypeData: [] as BarItem[],
         procedureData: [] as BarItem[],
         topOrgs: [] as TopOrgItem[],
+        totalSpendM: 0,
         topCpv: [] as TopCpvItem[],
         sunburstData: null as SunburstDatum | null,
       }
@@ -1142,7 +1146,7 @@ export default function ContractAnalysis() {
       return row.signedDate >= periodStart && row.signedDate <= periodEnd
     })
 
-    const totalContracts = rows.length
+    const totalAmount = rows.reduce((sum, row) => sum + row.amount, 0)
     const contractTypeMap = new Map<string, { count: number; total: number }>()
     const procedureMap = new Map<string, { count: number; total: number }>()
     const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
@@ -1172,7 +1176,7 @@ export default function ContractAnalysis() {
     ): BarItem[] =>
       labels.map((label) => {
         const v = map.get(label) ?? { count: 0, total: 0 }
-        const pct = totalContracts > 0 ? (v.count / totalContracts) * 100 : 0
+        const pct = totalAmount > 0 ? (v.total / totalAmount) * 100 : 0
         return {
           label,
           value: v.count,
@@ -1180,7 +1184,7 @@ export default function ContractAnalysis() {
           pct: Number(pct.toFixed(1)),
           tone: toneForPct(pct),
         }
-      })
+      }).sort((a, b) => b.pct - a.pct || b.total_m - a.total_m || a.label.localeCompare(b.label, 'el'))
 
     const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
     const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
@@ -1191,14 +1195,12 @@ export default function ContractAnalysis() {
       contractTypeData,
       procedureData,
       topOrgs: topAuthorities,
+      totalSpendM: totalAmount / 1_000_000,
       topCpv,
       sunburstData: buildProcedureAuthoritySunburstData(rows),
     }
   }, [analysis, analysisPeriod, topAuthorities])
 
-  const maxContractTypeM = Math.max(1, ...sectionFiltered.contractTypeData.map(d => d.total_m))
-  const maxProcM = Math.max(1, ...sectionFiltered.procedureData.map(d => d.total_m))
-  const maxOrgM = Math.max(1, ...sectionFiltered.topOrgs.map(d => d.total_m))
   const chartNote = useMemo(() => {
     if (monthly.length === 0) return 'Δεν υπάρχουν διαθέσιμα μηνιαία δεδομένα.'
 
@@ -1306,13 +1308,13 @@ export default function ContractAnalysis() {
         <div className="ca-breakdown-block">
           <div className="eyebrow">Τύποι συμβάσεων</div>
           <div className="ca-bars">
-            {sectionFiltered.contractTypeData.map(item => <HBar key={item.label} item={item} max={maxContractTypeM} />)}
+            {sectionFiltered.contractTypeData.map(item => <HBar key={item.label} item={item} />)}
           </div>
         </div>
         <div className="ca-breakdown-block">
           <div className="eyebrow">Διαδικασία ανάθεσης</div>
           <div className="ca-bars">
-            {sectionFiltered.procedureData.map(item => <HBar key={item.label} item={item} max={maxProcM} />)}
+            {sectionFiltered.procedureData.map(item => <HBar key={item.label} item={item} />)}
           </div>
         </div>
       </div>
@@ -1363,7 +1365,7 @@ export default function ContractAnalysis() {
         </div>
       </div>
 
-      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} maxValue={maxOrgM} loading={topAuthoritiesLoading} />
+      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} totalSpendM={sectionFiltered.totalSpendM} loading={topAuthoritiesLoading} />
 
       {/* ── Top CPV ── */}
       <div className="ca-table-block">

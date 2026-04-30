@@ -40,6 +40,12 @@ export default function Layout() {
     window.location.assign(homeDocumentHref)
   }
 
+  const reloadWhenAlreadyOn = (path: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname !== path) return
+    event.preventDefault()
+    window.location.reload()
+  }
+
   return (
     <div className="pyro-app">
       <DevViewToggle />
@@ -58,11 +64,11 @@ export default function Layout() {
         </div>
         <nav className="top-nav" aria-label="Κύρια πλοήγηση">
           <NavLink to="/" onClick={handleHomeReload} data-nav-item="home">Αρχική</NavLink>
-          <NavLink to="/maps" data-nav-item="maps">Χάρτης</NavLink>
-          <NavLink to="/municipalities" data-nav-item="municipalities">Δήμοι</NavLink>
-          <NavLink to="/environment-ministry" data-nav-item="environment">Υπ. Περιβάλλοντος</NavLink>
-          <NavLink to="/contracts" data-nav-item="contracts">Συμβάσεις</NavLink>
-          <NavLink to="/analysis" data-nav-item="analysis">Ανάλυση</NavLink>
+          <NavLink to="/maps" onClick={reloadWhenAlreadyOn('/maps')} data-nav-item="maps">Χάρτης</NavLink>
+          <NavLink to="/municipalities" onClick={reloadWhenAlreadyOn('/municipalities')} data-nav-item="municipalities">Δήμοι</NavLink>
+          <NavLink to="/environment-ministry" onClick={reloadWhenAlreadyOn('/environment-ministry')} data-nav-item="environment">Υπ. Περιβάλλοντος</NavLink>
+          <NavLink to="/contracts" onClick={reloadWhenAlreadyOn('/contracts')} data-nav-item="contracts">Συμβάσεις</NavLink>
+          <NavLink to="/analysis" onClick={reloadWhenAlreadyOn('/analysis')} data-nav-item="analysis">Ανάλυση</NavLink>
           <button type="button" onClick={handleAbout} data-nav-item="about">Σχετικά</button>
         </nav>
       </header>

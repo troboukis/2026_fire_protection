@@ -19,6 +19,7 @@ export type OrganizationSectionData = {
   previousYearLabel: string
   totalSpend: number
   cpvCodes: string[]
+  cpvCodeItems: Array<{ code: string; label: string }>
   topCpvValue: string | null
   previousYearTopCpvValue: string | null
   contractCount: number
@@ -186,6 +187,9 @@ export default function OrganizationSection({
       note: 'υπεγράφη η πιο πρόσφατης σύμβαση',
     },
   ]
+  const cpvWallItems = data.cpvCodeItems.length
+    ? data.cpvCodeItems
+    : data.cpvCodes.map((code) => ({ code, label: code }))
 
   return (
     <section id={anchorId} className="organization section-rule dev-tag-anchor">
@@ -253,8 +257,17 @@ export default function OrganizationSection({
           <article className="org-kpi org-kpi--cpv" key="cpv-wall">
             <div className="eyebrow">Οι πιο συχνές κατηγορίες εργασιών</div>
             <div className="cpv-wall">
-              {(data.cpvCodes.length ? data.cpvCodes : ['—']).map((code) => (
-                <span key={code}>{code}</span>
+              {(cpvWallItems.length ? cpvWallItems : [{ code: '—', label: '—' }]).map((item) => (
+                <span
+                  key={item.code}
+                  className="cpv-wall__item"
+                  tabIndex={0}
+                  title={item.label}
+                  aria-label={`${item.code}: ${item.label}`}
+                  data-tooltip={item.label}
+                >
+                  {item.code}
+                </span>
               ))}
             </div>
           </article>
