@@ -1,0 +1,6 @@
+BEGIN;
+
+ALTER TABLE public.beneficiary
+  ADD COLUMN IF NOT EXISTS gemi TEXT;
+
+COMMIT;

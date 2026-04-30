@@ -61,6 +61,7 @@ CREATE TABLE IF NOT EXISTS public.diavgeia_document_type (
 CREATE TABLE IF NOT EXISTS public.beneficiary (
   beneficiary_vat_number      TEXT PRIMARY KEY,
   beneficiary_name            TEXT,
+  gemi                        TEXT,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
