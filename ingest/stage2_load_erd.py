@@ -23,6 +23,7 @@ import json
 import os
 import re
 import sys
+import time
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
@@ -39,6 +40,7 @@ if str(REPO) not in sys.path:
     sys.path.insert(0, str(REPO))
 
 from municipality_normalization import normalizeMunicipality
+from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
 
 load_dotenv()
@@ -1532,6 +1534,17 @@ def parse_args() -> argparse.Namespace:
             "Default is incremental mode: skip existing and ingest only new procurement rows."
         ),
     )
+    p.add_argument(
+        "--skip-beneficiary-gemi",
+        action="store_true",
+        help="Skip automatic GEMI lookup for newly inserted beneficiaries.",
+    )
+    p.add_argument(
+        "--beneficiary-gemi-delay",
+        type=float,
+        default=1.0,
+        help="Seconds to sleep between automatic GEMI lookup requests for new beneficiaries.",
+    )
     return p.parse_args()
 
 
@@ -2524,11 +2537,55 @@ def main() -> None:
                         payment_bene_rows.append((payment_id, afm_clean))
 
             beneficiary_upserts = [
-                (afm, candidate[2])
+                (afm, candidate[2], None)
                 for afm, candidate in beneficiary_candidates.items()
             ]
 
             if beneficiary_upserts:
+                if args.skip_beneficiary_gemi:
+                    log("Skipping automatic GEMI lookup for beneficiaries (--skip-beneficiary-gemi).")
+                else:
+                    cur.execute(
+                        """
+                        SELECT beneficiary_vat_number, gemi
+                        FROM public.beneficiary
+                        WHERE beneficiary_vat_number = ANY(%s::text[])
+                        """,
+                        ([afm for afm, _, _ in beneficiary_upserts],),
+                    )
+                    existing_beneficiary_gemi = {
+                        str(afm): t(gemi)
+                        for afm, gemi in cur.fetchall()
+                    }
+                    gemi_enriched_upserts = []
+                    new_beneficiaries = [
+                        (afm, name, gemi)
+                        for afm, name, gemi in beneficiary_upserts
+                        if afm not in existing_beneficiary_gemi
+                    ]
+                    log(f"Looking up GEMI for new beneficiaries ({len(new_beneficiaries)})...")
+                    for index, (afm, name, _) in enumerate(new_beneficiaries, start=1):
+                        lookup_afm = normalize_afm(afm)
+                        try:
+                            gemi = get_gemi_number_by_afm(lookup_afm)
+                        except LookupError as exc:
+                            gemi = "-1"
+                            log(f"GEMI not found [{index}/{len(new_beneficiaries)}] afm={lookup_afm}: {exc}")
+                        except Exception as exc:
+                            gemi = None
+                            log(f"GEMI lookup error [{index}/{len(new_beneficiaries)}] afm={lookup_afm}: {exc}")
+                        else:
+                            log(f"GEMI found [{index}/{len(new_beneficiaries)}] afm={lookup_afm} gemi={gemi}")
+                        gemi_enriched_upserts.append((afm, name, gemi))
+                        if args.beneficiary_gemi_delay > 0 and index < len(new_beneficiaries):
+                            time.sleep(args.beneficiary_gemi_delay)
+
+                    gemi_by_afm = {afm: gemi for afm, _, gemi in gemi_enriched_upserts}
+                    beneficiary_upserts = [
+                        (afm, name, gemi_by_afm.get(afm))
+                        for afm, name, _ in beneficiary_upserts
+                    ]
+
                 log(
                     f"Upserting beneficiaries ({len(beneficiary_upserts)}) "
                     f"using most recent available name per AFM..."
@@ -2536,10 +2593,11 @@ def main() -> None:
                 psycopg2.extras.execute_batch(
                     cur,
                     """
-                    INSERT INTO public.beneficiary (beneficiary_vat_number, beneficiary_name)
-                    VALUES (%s, %s)
+                    INSERT INTO public.beneficiary (beneficiary_vat_number, beneficiary_name, gemi)
+                    VALUES (%s, %s, %s)
                     ON CONFLICT (beneficiary_vat_number) DO UPDATE
-                    SET beneficiary_name = COALESCE(EXCLUDED.beneficiary_name, public.beneficiary.beneficiary_name)
+                    SET beneficiary_name = COALESCE(EXCLUDED.beneficiary_name, public.beneficiary.beneficiary_name),
+                        gemi = COALESCE(public.beneficiary.gemi, EXCLUDED.gemi)
                     """,
                     beneficiary_upserts,
                     page_size=500,

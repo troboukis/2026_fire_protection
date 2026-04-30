@@ -345,6 +345,10 @@ function logLoadError(context: string, error: unknown) {
   console.error(`Failed to load ${context}`, error)
 }
 
+function isAbortError(error: unknown): boolean {
+  return error instanceof DOMException && error.name === 'AbortError'
+}
+
 function dayFraction(dayOfYear: number, yearDays: number): number {
   const denom = Math.max(1, yearDays - 1)
   return Math.min(1, Math.max(0, (dayOfYear - 1) / denom))
@@ -575,6 +579,7 @@ export default function App() {
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setLatestContractsLoading(true)
     setLatestContractsError(null)
 
@@ -585,7 +590,7 @@ export default function App() {
           () => retryHomepageRpc(async () => {
             const { data, error } = await supabase.rpc('get_latest_contract_cards', {
               p_limit: 15,
-            })
+            }).abortSignal(controller.signal)
             if (error) throw error
             return (data ?? []) as LatestContractRpcRow[]
           }),
@@ -658,6 +663,7 @@ export default function App() {
 
         setLatestContracts(cards)
       } catch (error) {
+        if (isAbortError(error)) return
         if (!cancelled) {
           logLoadError('latest contracts', error)
           setLatestContracts([])
@@ -670,11 +676,15 @@ export default function App() {
 
     loadLatestContracts()
 
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [])
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setOrganizationSectionsLoading(true)
 
     const loadOrganizationSection = async (config: OrganizationSectionConfig): Promise<OrganizationSectionData> => {
@@ -683,6 +693,7 @@ export default function App() {
           .from('organization')
           .select('organization_key, organization_normalized_value, organization_value')
           .in('organization_key', config.organizationKeys)
+          .abortSignal(controller.signal)
 
         const orgRows = (orgMatchesByKey ?? []) as Array<{
           organization_key: string
@@ -717,6 +728,7 @@ export default function App() {
             .in('organization_key', organizationKeys)
             .order('id', { ascending: true })
             .range(from, to)
+            .abortSignal(controller.signal)
           const rows = (data ?? []) as Array<{ id: number; contract_signed_date: string | null; title: string | null; municipality_key: string | null }>
           procurements.push(...rows)
           if (rows.length < pageSize) break
@@ -748,11 +760,13 @@ export default function App() {
                 amount_without_vat,
                 amount_with_vat
               `)
-              .in('procurement_id', ids),
+              .in('procurement_id', ids)
+              .abortSignal(controller.signal),
             supabase
               .from('cpv')
               .select('procurement_id, cpv_key, cpv_value')
-              .in('procurement_id', ids),
+              .in('procurement_id', ids)
+              .abortSignal(controller.signal),
           ])
           paymentRows.push(...((pData ?? []) as typeof paymentRows))
           cpvRows.push(...((cData ?? []) as typeof cpvRows))
@@ -851,6 +865,7 @@ export default function App() {
             .not('lon', 'is', null)
             .order('id', { ascending: true })
             .range(worksFrom, worksTo)
+            .abortSignal(controller.signal)
           const rows = (worksData ?? []) as Array<{
             lat: number | string | null
             lon: number | string | null
@@ -907,6 +922,7 @@ export default function App() {
           .order('contract_signed_date', { ascending: false })
           .order('id', { ascending: false })
           .limit(5)
+          .abortSignal(controller.signal)
         const timelineContracts = (latestTimelineRows ?? []) as Array<{
           id: number
           title: string | null
@@ -1011,7 +1027,8 @@ export default function App() {
         }
 
         return nextState
-      } catch {
+      } catch (error) {
+        if (isAbortError(error)) throw error
         return createEmptyOrganizationSectionData(
           config.fallbackName,
           currentYear,
@@ -1024,17 +1041,23 @@ export default function App() {
       try {
         const nextSections = await Promise.all(HOME_ORGANIZATION_SECTIONS.map((config) => loadOrganizationSection(config)))
         if (!cancelled) setOrganizationSections(nextSections)
+      } catch (error) {
+        if (!isAbortError(error) && !cancelled) logLoadError('homepage organization sections', error)
       } finally {
         if (!cancelled) setOrganizationSectionsLoading(false)
       }
     }
 
     loadOrganizationSections()
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [currentYear])
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setRegionSectionLoading(true)
 
     const loadRegionSection = async (config: RegionSectionConfig): Promise<RegionSectionData> => {
@@ -1044,6 +1067,7 @@ export default function App() {
           .select('region_key, region_value, region_normalized_value, region_afm')
           .eq('region_key', config.regionKey)
           .limit(1)
+          .abortSignal(controller.signal)
 
         const regionRow = (regionRows?.[0] ?? null) as {
           region_key: string
@@ -1081,6 +1105,7 @@ export default function App() {
             ? query.eq('organization_vat_number', regionAfm)
             : query.eq('region_key', config.regionKey)
           const { data } = await query
+            .abortSignal(controller.signal)
           const rows = (data ?? []) as typeof baseProcurements
           baseProcurements.push(...rows)
           if (rows.length < pageSize) break
@@ -1098,6 +1123,7 @@ export default function App() {
             .from('organization')
             .select('organization_key, organization_normalized_value, organization_value, authority_scope')
             .in('organization_key', keys)
+            .abortSignal(controller.signal)
           for (const row of (orgRows ?? []) as Array<{
             organization_key: string
             organization_normalized_value: string | null
@@ -1156,11 +1182,13 @@ export default function App() {
                 amount_without_vat,
                 amount_with_vat
               `)
-              .in('procurement_id', ids),
+              .in('procurement_id', ids)
+              .abortSignal(controller.signal),
             supabase
               .from('cpv')
               .select('procurement_id, cpv_key, cpv_value')
-              .in('procurement_id', ids),
+              .in('procurement_id', ids)
+              .abortSignal(controller.signal),
           ])
           paymentRows.push(...((pData ?? []) as typeof paymentRows))
           cpvRows.push(...((cData ?? []) as typeof cpvRows))
@@ -1259,6 +1287,7 @@ export default function App() {
             .not('lat', 'is', null)
             .not('lon', 'is', null)
             .order('id', { ascending: true })
+            .abortSignal(controller.signal)
 
           const rows = (worksData ?? []) as Array<{
             lat: number | string | null
@@ -1351,6 +1380,7 @@ export default function App() {
               diavgeia_ada
             `)
             .in('id', timelineIds)
+            .abortSignal(controller.signal)
 
           timelineContracts = ((timelineRows ?? []) as typeof timelineContracts)
             .sort((a, b) => timelineIds.indexOf(a.id) - timelineIds.indexOf(b.id))
@@ -1432,7 +1462,8 @@ export default function App() {
           timeline,
           contractsPageHref: buildContractsPageHref({ regionKey: config.regionKey }),
         }
-      } catch {
+      } catch (error) {
+        if (isAbortError(error)) throw error
         return createEmptyOrganizationSectionData(
           config.fallbackName,
           currentYear,
@@ -1447,6 +1478,7 @@ export default function App() {
         const { data: regionRows } = await supabase
           .from('region')
           .select('region_key, region_value, region_normalized_value')
+          .abortSignal(controller.signal)
 
         selectedConfig = pickRandomRegionSectionConfig((regionRows ?? []) as RegionDirectoryRow[], DEFAULT_HOME_REGION_SECTION)
 
@@ -1464,6 +1496,7 @@ export default function App() {
         const nextState = await loadRegionSection(selectedConfig)
         if (!cancelled) setRegionSection(nextState)
       } catch (error) {
+        if (isAbortError(error)) return
         if (!cancelled) {
           logLoadError('homepage region section', error)
           setHomeRegionConfig(DEFAULT_HOME_REGION_SECTION)
@@ -1483,11 +1516,15 @@ export default function App() {
     }
 
     loadHomepageRegionSection()
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [currentYear])
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setFeaturedBeneficiariesLoading(true)
 
     const loadFeaturedPanels = async () => {
@@ -1495,7 +1532,7 @@ export default function App() {
         const { data, error } = await supabase.rpc('get_featured_beneficiaries', {
           p_year_main: currentYear,
           p_limit: 12,
-        })
+        }).abortSignal(controller.signal)
         if (error) throw error
 
         const rows = ((data ?? []) as FeaturedRecordsRpcRow[]).map<BeneficiaryInsightRow>((row) => {
@@ -1577,6 +1614,7 @@ export default function App() {
 
         if (!cancelled) setFeaturedBeneficiaries(rows)
       } catch (error) {
+        if (isAbortError(error)) return
         if (!cancelled) {
           logLoadError('featured beneficiaries', error)
           setFeaturedBeneficiaries([])
@@ -1587,11 +1625,15 @@ export default function App() {
     }
 
     loadFeaturedPanels()
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [currentYear])
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setHeroStatsLoading(true)
     setHeroStatsError(null)
 
@@ -1606,7 +1648,7 @@ export default function App() {
             const { data, error } = await supabase.rpc('get_hero_section_data', {
               p_year_main: currentYear,
               p_year_start: YEAR_START,
-            })
+            }).abortSignal(controller.signal)
             if (error) throw error
             if (!data) throw new Error('Hero section RPC returned no data')
             return data as HeroSectionRpcResponse
@@ -1639,6 +1681,7 @@ export default function App() {
         }))
         setHeroCurvePoints(points)
       } catch (error) {
+        if (isAbortError(error)) return
         if (!cancelled) {
           console.error('Failed to load hero section data', error)
           setHeroStatsError('Δεν ήταν δυνατή η φόρτωση των στοιχείων.')
@@ -1649,7 +1692,10 @@ export default function App() {
     }
 
     loadHeroStats()
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [currentYear])
 
   useEffect(() => {

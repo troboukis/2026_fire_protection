@@ -72,6 +72,10 @@ type AnalysisData = {
   directAwardPct: number
 }
 
+type ContractAnalysisRpcPayload = {
+  sectionRows?: unknown
+}
+
 const ANALYSIS_START = '2024-01-01'
 const CURRENT_YEAR = new Date().getFullYear()
 const ANALYSIS_END = `${CURRENT_YEAR}-12-31`
@@ -96,24 +100,6 @@ function toneForPct(pct: number): BarItem['tone'] {
   return 'faint'
 }
 
-function normalizeProcedureLabel(raw: string | null | undefined): string {
-  const v = String(raw ?? '').trim().toLowerCase()
-  if (!v) return 'Άλλη'
-  if (v.includes('απευθείας ανάθεση')) return 'Απευθείας Ανάθεση'
-  if (v.includes('ανοιχτή')) return 'Ανοιχτή Διαδικασία'
-  if (v.includes('διαπραγ')) return 'Διαπραγμάτευση'
-  return 'Άλλη'
-}
-
-function normalizeContractTypeLabel(raw: string | null | undefined): string {
-  const v = normalizeSearch(String(raw ?? ''))
-  if (!v) return 'Λοιπές'
-  if (v.includes('ΥΠΗΡΕΣ')) return 'Υπηρεσίες'
-  if (v.includes('ΠΡΟΜΗΘΕΙ')) return 'Προμήθειες'
-  if (v.includes('ΕΡΓ')) return 'Έργα'
-  return 'Λοιπές'
-}
-
 function buildRangeMonths(startYm: string, endYm: string): string[] {
   const out: string[] = []
   let [y, m] = startYm.split('-').map(Number)
@@ -133,23 +119,6 @@ function cleanDateString(v: string | null | undefined): string | null {
   const s = String(v ?? '').trim()
   if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return null
   return s
-}
-
-function dedupeIdentity(p: {
-  reference_number: string | null
-  diavgeia_ada: string | null
-  contract_number: string | null
-  organization_key: string | null
-  title: string | null
-  contract_signed_date: string | null
-}): string {
-  const referenceNumber = String(p.reference_number ?? '').trim()
-  if (referenceNumber) return `ref:${referenceNumber}`
-  const diavgeiaAda = String(p.diavgeia_ada ?? '').trim()
-  if (diavgeiaAda) return `ada:${diavgeiaAda}`
-  const contractNumber = String(p.contract_number ?? '').trim()
-  if (contractNumber) return `contract:${contractNumber}`
-  return `fallback:${String(p.organization_key ?? '').trim()}|${String(p.title ?? '').trim()}|${String(p.contract_signed_date ?? '').trim()}`
 }
 
 // ── Live aggregates loaded from Supabase ─────────────────────────────
@@ -195,9 +164,15 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
     if (containerW === 0) return
 
     const isNarrow = containerW <= BREAKPOINT_MD
-    const margin = { top: 18, right: 16, bottom: isNarrow ? 52 : 58, left: 68 }
+    const isMobile = containerW <= BREAKPOINT_SM
+    const margin = {
+      top: isMobile ? 10 : 18,
+      right: isMobile ? 8 : 16,
+      bottom: isMobile ? 38 : (isNarrow ? 52 : 58),
+      left: isMobile ? 48 : 68,
+    }
     const W = containerW
-    const H = 240
+    const H = isMobile ? 184 : 240
     const innerW = W - margin.left - margin.right
     const innerH = H - margin.top - margin.bottom
 
@@ -359,41 +334,6 @@ function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoin
   )
 }
 
-function normalizeSearch(str: string): string {
-  return str
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toUpperCase()
-    .trim()
-}
-
-function buildAuthorityLabel(args: {
-  canonicalOwnerScope: string | null | undefined
-  organizationScope: string | null | undefined
-  organizationName: string | null | undefined
-  municipalityLabel: string | null | undefined
-  regionLabel: string | null | undefined
-}): string {
-  const {
-    canonicalOwnerScope,
-    organizationScope,
-    organizationName,
-    municipalityLabel,
-    regionLabel,
-  } = args
-  const canonical = String(canonicalOwnerScope ?? '').trim().toLowerCase()
-  const orgScope = String(organizationScope ?? '').trim().toLowerCase()
-  const orgName = String(organizationName ?? '').trim()
-  const municipality = String(municipalityLabel ?? '').trim()
-  const region = String(regionLabel ?? '').trim()
-
-  if (canonical === 'municipality') return municipality || orgName || 'Δήμος —'
-  if (canonical === 'region') return region || municipality || orgName || 'Περιφέρεια —'
-  if (orgScope === 'municipality' && municipality) return municipality
-  if ((orgScope === 'region' || orgScope === 'decentralized') && region) return region
-  return orgName || municipality || region || '—'
-}
-
 function buildProcedureAuthoritySunburstData(rows: SectionRow[]): SunburstDatum | null {
   const procedureToAuthorities = new Map<string, Map<string, number>>()
 
@@ -442,6 +382,144 @@ function buildTopCpvList(
     })
     .sort((a, b) => b.count - a.count)
     .slice(0, limit)
+}
+
+function toSectionRow(value: unknown): SectionRow | null {
+  if (!value || typeof value !== 'object') return null
+  const row = value as Record<string, unknown>
+  const signedDate = cleanDateString(String(row.signedDate ?? '')) ?? null
+  const effectiveStart = cleanDateString(String(row.effectiveStart ?? '')) ?? signedDate
+  const effectiveEnd = cleanDateString(String(row.effectiveEnd ?? '')) ?? effectiveStart
+  if (!effectiveStart || !effectiveEnd) return null
+
+  const cpvs = Array.isArray(row.cpvs)
+    ? row.cpvs.map((item) => String(item ?? '').trim()).filter(Boolean)
+    : []
+
+  return {
+    signedDate,
+    effectiveStart,
+    effectiveEnd,
+    orgName: String(row.orgName ?? '—').trim() || '—',
+    authorityLabel: String(row.authorityLabel ?? '—').trim() || '—',
+    contractType: String(row.contractType ?? 'Λοιπές').trim() || 'Λοιπές',
+    procedure: String(row.procedure ?? 'Άλλη').trim() || 'Άλλη',
+    amount: Number(row.amount ?? 0) || 0,
+    cpvs,
+  }
+}
+
+function buildAnalysisDataFromRows(sectionRows: SectionRow[]): AnalysisData {
+  const periodStart = ANALYSIS_START
+  const periodEnd = ANALYSIS_END
+
+  const monthlyMap = new Map<string, { count: number; total_k: number }>()
+  const contractTypeMap = new Map<string, { count: number; total: number }>()
+  const procedureMap = new Map<string, { count: number; total: number }>()
+  const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
+  const amounts: number[] = []
+  const monthKeys: string[] = []
+
+  let totalContracts = 0
+  let totalAmount = 0
+  let signedWindowContracts = 0
+  let signedWindowDirectAwards = 0
+
+  for (const row of sectionRows) {
+    const baseDateForMonth = row.signedDate ?? row.effectiveStart
+    const monthAnchorDate = baseDateForMonth < periodStart ? periodStart : baseDateForMonth
+    const month = monthAnchorDate.slice(0, 7)
+    if (!/^\d{4}-\d{2}$/.test(month)) continue
+    if (month < periodStart.slice(0, 7) || month > periodEnd.slice(0, 7)) continue
+
+    monthKeys.push(month)
+    totalContracts += 1
+    totalAmount += row.amount
+    if (row.amount > 0) amounts.push(row.amount)
+
+    if (row.signedDate && row.signedDate >= periodStart && row.signedDate <= periodEnd) {
+      signedWindowContracts += 1
+      if (row.procedure === 'Απευθείας Ανάθεση') signedWindowDirectAwards += 1
+    }
+
+    const monthly = monthlyMap.get(month) ?? { count: 0, total_k: 0 }
+    monthly.count += 1
+    monthly.total_k += row.amount / 1000
+    monthlyMap.set(month, monthly)
+
+    const ct = contractTypeMap.get(row.contractType) ?? { count: 0, total: 0 }
+    ct.count += 1
+    ct.total += row.amount
+    contractTypeMap.set(row.contractType, ct)
+
+    const pr = procedureMap.get(row.procedure) ?? { count: 0, total: 0 }
+    pr.count += 1
+    pr.total += row.amount
+    procedureMap.set(row.procedure, pr)
+
+    for (const cpv of row.cpvs) {
+      const ca = cpvAggMap.get(cpv) ?? { count: 0, procedures: new Map<string, number>() }
+      ca.count += 1
+      ca.procedures.set(row.procedure, (ca.procedures.get(row.procedure) ?? 0) + 1)
+      cpvAggMap.set(cpv, ca)
+    }
+  }
+
+  const fallbackStartMonth = periodStart.slice(0, 7)
+  const fallbackEndMonth = periodEnd.slice(0, 7)
+  const sortedMonthKeys = [...monthKeys].sort()
+  const minMonth = sortedMonthKeys[0] ?? fallbackStartMonth
+  const maxMonth = sortedMonthKeys[sortedMonthKeys.length - 1] ?? fallbackEndMonth
+  const monthly: MonthlyPoint[] = buildRangeMonths(minMonth, maxMonth).map((month) => {
+    const data = monthlyMap.get(month) ?? { count: 0, total_k: 0 }
+    return {
+      month,
+      label: monthLabelFromMonthKey(month),
+      count: data.count,
+      total_k: Number(data.total_k.toFixed(1)),
+    }
+  })
+
+  const toBarData = (map: Map<string, { count: number; total: number }>, labels: string[]): BarItem[] =>
+    labels.map((label) => {
+      const v = map.get(label) ?? { count: 0, total: 0 }
+      const pct = totalAmount > 0 ? (v.total / totalAmount) * 100 : 0
+      return {
+        label,
+        value: v.count,
+        total_m: v.total / 1_000_000,
+        pct: Number(pct.toFixed(1)),
+        tone: toneForPct(pct),
+      }
+    }).sort((a, b) => b.pct - a.pct || b.total_m - a.total_m || a.label.localeCompare(b.label, 'el'))
+
+  const sortedAmounts = [...amounts].sort((a, b) => a - b)
+  const medianAmount = sortedAmounts.length === 0
+    ? 0
+    : sortedAmounts.length % 2 === 1
+      ? sortedAmounts[(sortedAmounts.length - 1) / 2]
+      : (sortedAmounts[sortedAmounts.length / 2 - 1] + sortedAmounts[sortedAmounts.length / 2]) / 2
+
+  const peakCountMonth = monthly.reduce((acc, cur) => (cur.count > acc.count ? cur : acc), monthly[0] ?? { month: '2024-01', label: "Ιαν '24", count: 0, total_k: 0 })
+  const peakSpendMonth = monthly.reduce((acc, cur) => (cur.total_k > acc.total_k ? cur : acc), monthly[0] ?? { month: '2024-01', label: "Ιαν '24", count: 0, total_k: 0 })
+
+  return {
+    monthly,
+    contractTypeData: toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές']),
+    procedureData: toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη']),
+    topOrgs: [],
+    topCpv: buildTopCpvList(cpvAggMap),
+    sectionRows,
+    totalContracts,
+    totalAmount,
+    avgAmount: totalContracts > 0 ? totalAmount / totalContracts : 0,
+    medianAmount,
+    peakContractsMonthLabel: peakCountMonth.label,
+    peakContractsMonthCount: peakCountMonth.count,
+    peakSpendMonthLabel: peakSpendMonth.label,
+    peakSpendMonthAmount: peakSpendMonth.total_k * 1000,
+    directAwardPct: signedWindowContracts > 0 ? (signedWindowDirectAwards / signedWindowContracts) * 100 : 0,
+  }
 }
 
 function truncateLabel(label: string, maxLength: number): string {
@@ -765,8 +843,6 @@ export default function ContractAnalysis() {
   const [barMetric,    setBarMetric]    = useState<BarMetric>('total')
   const [analysisPeriod, setAnalysisPeriod] = useState<'all' | string>(String(CURRENT_YEAR))
   const [analysis, setAnalysis] = useState<AnalysisData | null>(null)
-  const [topAuthorities, setTopAuthorities] = useState<TopOrgItem[]>([])
-  const [topAuthoritiesLoading, setTopAuthoritiesLoading] = useState(true)
   const [analysisError, setAnalysisError] = useState<string | null>(null)
   const availableAnalysisYears = useMemo(
     () => Array.from({ length: CURRENT_YEAR - 2024 + 1 }, (_, i) => String(2024 + i)).reverse(),
@@ -775,354 +851,35 @@ export default function ContractAnalysis() {
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     ;(async () => {
       try {
-        const fetchAll = async <T,>(
-          table: 'procurement' | 'payment' | 'organization' | 'cpv' | 'municipality' | 'region',
-          columns: string,
-        ): Promise<T[]> => {
-          const pageSize = 1000
-          let from = 0
-          const out: T[] = []
-          while (true) {
-            const to = from + pageSize - 1
-            const { data, error } = await supabase
-              .from(table)
-              .select(columns)
-              .order('id', { ascending: true })
-              .range(from, to)
-            if (error) throw error
-            const rows = (data ?? []) as T[]
-            out.push(...rows)
-            if (rows.length < pageSize) break
-            from += pageSize
-          }
-          return out
-        }
+        const { data, error } = await supabase
+          .rpc('get_contract_analysis', { p_year_start: 2024 })
+          .abortSignal(controller.signal)
+        if (error) throw error
 
-        const [
-          procurements,
-          payments,
-          organizations,
-          municipalities,
-          regions,
-          cpvs,
-        ] = await Promise.all([
-          fetchAll<{
-            id: number
-            contract_signed_date: string | null
-            start_date: string | null
-            end_date: string | null
-            no_end_date: boolean | null
-            cancelled: boolean | null
-            next_ref_no: string | null
-            prev_reference_no: string | null
-            title: string | null
-            reference_number: string | null
-            contract_number: string | null
-            diavgeia_ada: string | null
-            contract_type: string | null
-            procedure_type_value: string | null
-            organization_key: string | null
-            municipality_key: string | null
-            region_key: string | null
-            canonical_owner_scope: string | null
-          }>('procurement', 'id, contract_signed_date, start_date, end_date, no_end_date, cancelled, next_ref_no, prev_reference_no, title, reference_number, contract_number, diavgeia_ada, contract_type, procedure_type_value, organization_key, municipality_key, region_key, canonical_owner_scope'),
-          fetchAll<{
-            procurement_id: number
-            amount_without_vat: number | null
-          }>('payment', 'id, procurement_id, amount_without_vat'),
-          fetchAll<{
-            organization_key: string
-            organization_normalized_value: string | null
-            organization_value: string | null
-            authority_scope: string | null
-          }>('organization', 'id, organization_key, organization_normalized_value, organization_value, authority_scope'),
-          fetchAll<{
-            municipality_key: string
-            municipality_normalized_value: string | null
-            municipality_value: string | null
-          }>('municipality', 'id, municipality_key, municipality_normalized_value, municipality_value'),
-          fetchAll<{
-            region_key: string
-            region_normalized_value: string | null
-            region_value: string | null
-          }>('region', 'id, region_key, region_normalized_value, region_value'),
-          fetchAll<{
-            procurement_id: number
-            cpv_key: string | null
-            cpv_value: string | null
-          }>('cpv', 'id, procurement_id, cpv_key, cpv_value'),
-        ])
-
-        const amountByProcId = new Map<number, number>()
-        for (const p of payments) {
-          if (!amountByProcId.has(p.procurement_id)) {
-            amountByProcId.set(p.procurement_id, p.amount_without_vat != null ? Number(p.amount_without_vat) : 0)
-          }
-        }
-
-        const orgMetaByKey = new Map<string, { name: string; authorityScope: string | null }>()
-        for (const o of organizations) {
-          const key = String(o.organization_key ?? '').trim()
-          if (!key || orgMetaByKey.has(key)) continue
-          const value = String(o.organization_normalized_value ?? o.organization_value ?? key).trim()
-          orgMetaByKey.set(key, {
-            name: value || key,
-            authorityScope: o.authority_scope,
-          })
-        }
-
-        const municipalityLabelByKey = new Map<string, string>()
-        for (const municipality of municipalities) {
-          const key = String(municipality.municipality_key ?? '').trim()
-          if (!key || municipalityLabelByKey.has(key)) continue
-          const baseLabel = String(municipality.municipality_normalized_value ?? municipality.municipality_value ?? key).trim()
-          municipalityLabelByKey.set(key, baseLabel ? `ΔΗΜΟΣ ${baseLabel}` : `ΔΗΜΟΣ ${key}`)
-        }
-
-        const regionLabelByKey = new Map<string, string>()
-        for (const region of regions) {
-          const key = String(region.region_key ?? '').trim()
-          if (!key || regionLabelByKey.has(key)) continue
-          const baseLabel = String(region.region_normalized_value ?? region.region_value ?? key).trim()
-          regionLabelByKey.set(key, baseLabel ? `ΠΕΡΙΦΕΡΕΙΑ ${baseLabel}` : `ΠΕΡΙΦΕΡΕΙΑ ${key}`)
-        }
-
-        const cpvByProcId = new Map<number, Set<string>>()
-        for (const c of cpvs) {
-          const id = Number(c.procurement_id)
-          if (!id) continue
-          const label = String(c.cpv_value ?? c.cpv_key ?? '').trim()
-          if (!label) continue
-          if (!cpvByProcId.has(id)) cpvByProcId.set(id, new Set())
-          cpvByProcId.get(id)!.add(label)
-        }
-
-        const periodStart = ANALYSIS_START
-        const periodEnd = ANALYSIS_END
-
-        const monthlyMap = new Map<string, { count: number; total_k: number }>()
-        const contractTypeMap = new Map<string, { count: number; total: number }>()
-        const procedureMap = new Map<string, { count: number; total: number }>()
-        const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
-        const sectionRows: SectionRow[] = []
-        const amounts: number[] = []
-
-        let totalContracts = 0
-        let totalAmount = 0
-        let signedWindowContracts = 0
-        let signedWindowDirectAwards = 0
-
-        const monthKeys: string[] = []
-
-        const prevRefSet = new Set<string>()
-        for (const p of procurements) {
-          const prevRef = String(p.prev_reference_no ?? '').trim()
-          if (prevRef) prevRefSet.add(prevRef)
-        }
-
-        const dedupedProcurements = new Map<string, (typeof procurements)[number]>()
-        for (const p of procurements) {
-          if (p.cancelled) continue
-          if (String(p.next_ref_no ?? '').trim()) continue
-          const referenceNumber = String(p.reference_number ?? '').trim()
-          if (referenceNumber && prevRefSet.has(referenceNumber)) continue
-          const identity = dedupeIdentity(p)
-          const existing = dedupedProcurements.get(identity)
-          if (!existing || p.id > existing.id) dedupedProcurements.set(identity, p)
-        }
-
-        for (const p of dedupedProcurements.values()) {
-          const signedDate = cleanDateString(p.contract_signed_date)
-          const startDate = cleanDateString(p.start_date) ?? signedDate
-          const endDate = cleanDateString(p.end_date)
-          const openEnded = Boolean(p.no_end_date)
-
-          if (!startDate && !signedDate) continue
-
-          const effectiveStart = startDate ?? signedDate!
-          const effectiveEnd = openEnded ? ANALYSIS_END : (endDate ?? effectiveStart)
-          const overlapsAnalysisWindow = effectiveStart <= periodEnd && effectiveEnd >= periodStart
-          if (!overlapsAnalysisWindow) continue
-
-          // Keep chart and month-based stats anchored to contract signature when available.
-          // If signature is outside the window, use start_date (or clip to ANALYSIS_START).
-          const baseDateForMonth = signedDate ?? startDate ?? periodStart
-          const monthAnchorDate = baseDateForMonth < periodStart ? periodStart : baseDateForMonth
-          const month = monthAnchorDate.slice(0, 7)
-          if (!/^\d{4}-\d{2}$/.test(month)) continue
-          if (month < periodStart.slice(0, 7) || month > periodEnd.slice(0, 7)) continue
-
-          monthKeys.push(month)
-          const amount = amountByProcId.get(p.id) ?? 0
-          const orgKey = String(p.organization_key ?? '').trim()
-          const municipalityKey = String(p.municipality_key ?? '').trim()
-          const regionKey = String(p.region_key ?? '').trim()
-          const orgMeta = orgMetaByKey.get(orgKey)
-          const orgName = (orgMeta?.name ?? orgKey) || '—'
-          const municipalityLabel = municipalityLabelByKey.get(municipalityKey) ?? municipalityKey
-          const regionLabel = regionLabelByKey.get(regionKey) ?? regionKey
-          const contractType = normalizeContractTypeLabel(p.contract_type)
-          const procedure = normalizeProcedureLabel(p.procedure_type_value)
-          const cpvsForProc = [...(cpvByProcId.get(p.id) ?? new Set<string>())]
-          const signedInWindow = Boolean(signedDate) && (signedDate as string) >= periodStart && (signedDate as string) <= periodEnd
-
-          sectionRows.push({
-            signedDate,
-            effectiveStart,
-            effectiveEnd,
-            orgName,
-            authorityLabel: buildAuthorityLabel({
-              canonicalOwnerScope: p.canonical_owner_scope,
-              organizationScope: orgMeta?.authorityScope,
-              organizationName: orgName,
-              municipalityLabel,
-              regionLabel,
-            }),
-            contractType,
-            procedure,
-            amount,
-            cpvs: cpvsForProc,
-          })
-
-          totalContracts += 1
-          totalAmount += amount
-          if (amount > 0) amounts.push(amount)
-          if (signedInWindow) {
-            signedWindowContracts += 1
-            if (procedure === 'Απευθείας Ανάθεση') signedWindowDirectAwards += 1
-          }
-
-          const m = monthlyMap.get(month) ?? { count: 0, total_k: 0 }
-          m.count += 1
-          m.total_k += amount / 1000
-          monthlyMap.set(month, m)
-
-          const ct = contractTypeMap.get(contractType) ?? { count: 0, total: 0 }
-          ct.count += 1
-          ct.total += amount
-          contractTypeMap.set(contractType, ct)
-
-          const pr = procedureMap.get(procedure) ?? { count: 0, total: 0 }
-          pr.count += 1
-          pr.total += amount
-          procedureMap.set(procedure, pr)
-
-          for (const cpv of cpvsForProc) {
-            const ca = cpvAggMap.get(cpv) ?? { count: 0, procedures: new Map<string, number>() }
-            ca.count += 1
-            ca.procedures.set(procedure, (ca.procedures.get(procedure) ?? 0) + 1)
-            cpvAggMap.set(cpv, ca)
-          }
-        }
-
-        const fallbackStartMonth = periodStart.slice(0, 7)
-        const fallbackEndMonth = periodEnd.slice(0, 7)
-        const minMonth = monthKeys.length ? monthKeys.sort()[0] : fallbackStartMonth
-        const maxMonth = monthKeys.length ? monthKeys.sort().slice(-1)[0] : fallbackEndMonth
-        const rangeMonths = buildRangeMonths(minMonth, maxMonth)
-        const monthly: MonthlyPoint[] = rangeMonths.map((month) => {
-          const data = monthlyMap.get(month) ?? { count: 0, total_k: 0 }
-          return {
-            month,
-            label: monthLabelFromMonthKey(month),
-            count: data.count,
-            total_k: Number(data.total_k.toFixed(1)),
-          }
-        })
-
-        const toBarData = (map: Map<string, { count: number; total: number }>, labels: string[]): BarItem[] => {
-          return labels.map((label) => {
-            const v = map.get(label) ?? { count: 0, total: 0 }
-            const total_m = v.total / 1_000_000
-            const pct = totalAmount > 0 ? (v.total / totalAmount) * 100 : 0
-            return {
-              label,
-              value: v.count,
-              total_m,
-              pct: Number(pct.toFixed(1)),
-              tone: toneForPct(pct),
-            }
-          }).sort((a, b) => b.pct - a.pct || b.total_m - a.total_m || a.label.localeCompare(b.label, 'el'))
-        }
-
-        const contractTypeData = toBarData(contractTypeMap, ['Υπηρεσίες', 'Προμήθειες', 'Έργα', 'Λοιπές'])
-        const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
-
-        const topCpv = buildTopCpvList(cpvAggMap)
-
-        const sortedAmounts = [...amounts].sort((a, b) => a - b)
-        const medianAmount = sortedAmounts.length === 0
-          ? 0
-          : sortedAmounts.length % 2 === 1
-            ? sortedAmounts[(sortedAmounts.length - 1) / 2]
-            : (sortedAmounts[sortedAmounts.length / 2 - 1] + sortedAmounts[sortedAmounts.length / 2]) / 2
-
-        const peakCountMonth = monthly.reduce((acc, cur) => (cur.count > acc.count ? cur : acc), monthly[0] ?? { month: '2024-01', label: "Ιαν '24", count: 0, total_k: 0 })
-        const peakSpendMonth = monthly.reduce((acc, cur) => (cur.total_k > acc.total_k ? cur : acc), monthly[0] ?? { month: '2024-01', label: "Ιαν '24", count: 0, total_k: 0 })
-
-        const next: AnalysisData = {
-          monthly,
-          contractTypeData,
-          procedureData,
-          topOrgs: [],
-          topCpv,
-          sectionRows,
-          totalContracts,
-          totalAmount,
-          avgAmount: totalContracts > 0 ? totalAmount / totalContracts : 0,
-          medianAmount,
-          peakContractsMonthLabel: peakCountMonth.label,
-          peakContractsMonthCount: peakCountMonth.count,
-          peakSpendMonthLabel: peakSpendMonth.label,
-          peakSpendMonthAmount: peakSpendMonth.total_k * 1000,
-          directAwardPct: signedWindowContracts > 0 ? (signedWindowDirectAwards / signedWindowContracts) * 100 : 0,
-        }
+        const payload = (data ?? {}) as ContractAnalysisRpcPayload
+        const sectionRows = Array.isArray(payload.sectionRows)
+          ? payload.sectionRows.map(toSectionRow).filter((row): row is SectionRow => row !== null)
+          : []
 
         if (cancelled) return
-        setAnalysis(next)
+        setAnalysis(buildAnalysisDataFromRows(sectionRows))
         setAnalysisError(null)
       } catch (e) {
+        if (e instanceof DOMException && e.name === 'AbortError') return
         if (cancelled) return
         setAnalysisError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης ανάλυσης')
       }
     })()
-    return () => { cancelled = true }
+
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
+
   }, [])
-
-  useEffect(() => {
-    let cancelled = false
-    setTopAuthoritiesLoading(true)
-
-    ;(async () => {
-      try {
-        const rpcYear = analysisPeriod === 'all' ? null : Number(analysisPeriod)
-        const { data, error } = await supabase.rpc('get_analysis_top_authorities', {
-          p_year: rpcYear,
-          p_year_start: 2024,
-        })
-        if (error) throw error
-        if (cancelled) return
-        setTopAuthorities(
-          ((data ?? []) as Array<{ authority_name: string | null; contracts: number | null; total_m: number | string | null }>)
-            .map((row) => ({
-              name: String(row.authority_name ?? '—').trim() || '—',
-              contracts: Number(row.contracts ?? 0),
-              total_m: Number(row.total_m ?? 0),
-            })),
-        )
-      } catch (e) {
-        if (cancelled) return
-        setTopAuthorities([])
-        setAnalysisError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης ανάλυσης')
-      } finally {
-        if (!cancelled) setTopAuthoritiesLoading(false)
-      }
-    })()
-
-    return () => { cancelled = true }
-  }, [analysisPeriod])
 
   const monthly = useMemo(() => analysis?.monthly ?? [], [analysis])
 
@@ -1150,6 +907,7 @@ export default function ContractAnalysis() {
     const contractTypeMap = new Map<string, { count: number; total: number }>()
     const procedureMap = new Map<string, { count: number; total: number }>()
     const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
+    const topOrgMap = new Map<string, { contracts: number; total: number }>()
 
     for (const row of rows) {
       const ct = contractTypeMap.get(row.contractType) ?? { count: 0, total: 0 }
@@ -1161,6 +919,11 @@ export default function ContractAnalysis() {
       pr.count += 1
       pr.total += row.amount
       procedureMap.set(row.procedure, pr)
+
+      const org = topOrgMap.get(row.authorityLabel) ?? { contracts: 0, total: 0 }
+      org.contracts += 1
+      org.total += row.amount
+      topOrgMap.set(row.authorityLabel, org)
 
       for (const cpv of row.cpvs) {
         const ca = cpvAggMap.get(cpv) ?? { count: 0, procedures: new Map<string, number>() }
@@ -1190,16 +953,24 @@ export default function ContractAnalysis() {
     const procedureData = toBarData(procedureMap, ['Απευθείας Ανάθεση', 'Ανοιχτή Διαδικασία', 'Διαπραγμάτευση', 'Άλλη'])
 
     const topCpv = buildTopCpvList(cpvAggMap)
+    const topOrgs = [...topOrgMap.entries()]
+      .map(([name, item]) => ({
+        name,
+        contracts: item.contracts,
+        total_m: item.total / 1_000_000,
+      }))
+      .sort((a, b) => b.total_m - a.total_m || b.contracts - a.contracts || a.name.localeCompare(b.name, 'el'))
+      .slice(0, 8)
 
     return {
       contractTypeData,
       procedureData,
-      topOrgs: topAuthorities,
+      topOrgs,
       totalSpendM: totalAmount / 1_000_000,
       topCpv,
       sunburstData: buildProcedureAuthoritySunburstData(rows),
     }
-  }, [analysis, analysisPeriod, topAuthorities])
+  }, [analysis, analysisPeriod])
 
   const chartNote = useMemo(() => {
     if (monthly.length === 0) return 'Δεν υπάρχουν διαθέσιμα μηνιαία δεδομένα.'
@@ -1365,7 +1136,7 @@ export default function ContractAnalysis() {
         </div>
       </div>
 
-      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} totalSpendM={sectionFiltered.totalSpendM} loading={topAuthoritiesLoading} />
+      <TopAuthoritiesSection rows={sectionFiltered.topOrgs} totalSpendM={sectionFiltered.totalSpendM} loading={false} />
 
       {/* ── Top CPV ── */}
       <div className="ca-table-block">
