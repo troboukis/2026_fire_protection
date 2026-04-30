@@ -346,24 +346,27 @@ export default function FireCopernicusSection() {
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
 
     const load = async () => {
       try {
         const firedateStart = `2024-01-01T00:00:00`
         const firedateEnd = `${today.toISOString().slice(0, 10)}T23:59:59`
         const [geoRes, copernicusRes, latestUpdateRes] = await Promise.all([
-          fetch(`${import.meta.env.BASE_URL}municipalities.geojson`),
+          fetch(`${import.meta.env.BASE_URL}municipalities.geojson`, { signal: controller.signal }),
           supabase
             .from('copernicus')
             .select('copernicus_id, centroid, shape, area_ha, firedate, commune, province, municipality_key')
             .gte('firedate', firedateStart)
             .lte('firedate', firedateEnd)
-            .order('firedate', { ascending: false }),
+            .order('firedate', { ascending: false })
+            .abortSignal(controller.signal),
           supabase
             .from('copernicus')
             .select('updated_at')
             .order('updated_at', { ascending: false })
             .limit(1)
+            .abortSignal(controller.signal)
             .maybeSingle(),
         ])
         if (copernicusRes.error) throw copernicusRes.error
@@ -392,7 +395,8 @@ export default function FireCopernicusSection() {
           setAllFires(nextFires)
           setLastUpdatedAt(String(latestUpdateRes.data?.updated_at ?? '').trim() || null)
         }
-      } catch {
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
         if (!cancelled) {
           setGeojson(null)
           setAllFires([])
@@ -406,6 +410,7 @@ export default function FireCopernicusSection() {
     load()
     return () => {
       cancelled = true
+      controller.abort()
     }
   }, [currentYear, today])
 

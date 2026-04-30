@@ -32,6 +32,13 @@ FOR SELECT
 TO anon, authenticated
 USING (true);
 
+DROP POLICY IF EXISTS public_read_beneficiary ON public.beneficiary;
+CREATE POLICY public_read_beneficiary
+ON public.beneficiary
+FOR SELECT
+TO anon, authenticated
+USING (true);
+
 DROP POLICY IF EXISTS public_read_cpv ON public.cpv;
 CREATE POLICY public_read_cpv
 ON public.cpv

@@ -122,6 +122,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setLoading(true)
     setLoadError(null)
     setSpendLoadError(null)
@@ -138,7 +139,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
               const { data, error } = await supabase.rpc('get_homepage_funding', {
                 p_year_main: currentYear,
                 p_year_start: 2016,
-              })
+              }).abortSignal(controller.signal)
               if (error) throw error
               if (!data) throw new Error('Homepage funding RPC returned no data')
               return data as FundingRpcPayload
@@ -148,7 +149,9 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_latest_funding_year_municipality_spend'),
             () => retryHomepageRpc(async () => {
-              const { data, error } = await supabase.rpc('get_latest_funding_year_municipality_spend')
+              const { data, error } = await supabase
+                .rpc('get_latest_funding_year_municipality_spend')
+                .abortSignal(controller.signal)
               if (error) throw error
               if (!data) throw new Error('Latest funding-year spend RPC returned no data')
               return data as FundingSpendRpcPayload
@@ -200,6 +203,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
 
         if (!cancelled) setFundingData(nextFundingData)
       } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
         console.error('[Funding] failed to load homepage funding data', error)
         if (!cancelled) {
           setFundingData(null)
@@ -213,6 +217,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
     loadFunding()
     return () => {
       cancelled = true
+      controller.abort()
     }
   }, [currentYear])
 

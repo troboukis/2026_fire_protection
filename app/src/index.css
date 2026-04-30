@@ -4226,12 +4226,23 @@ main {
   .contracts-col--ref { width: 6%; }
 
   .contracts-table thead th {
+    vertical-align: top;
     padding: 0.3rem 0.22rem;
     font-size: 0.53rem;
     line-height: 1.15;
     letter-spacing: 0.01em;
     white-space: normal;
     word-break: break-word;
+  }
+
+  .contracts-sort-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.08rem;
+  }
+
+  .contracts-sort-header__icon {
+    text-align: left;
   }
 
   .contracts-table td {
@@ -4972,6 +4983,25 @@ main {
   .ca-table__head > :last-child,
   .ca-table__row > :last-child {
     display: none;
+  }
+
+  .ca-bar-label {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 3.8rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .ca-top-org-label {
+    padding-right: 0;
+  }
+
+  .ca-bar-title > span:first-child {
+    overflow-wrap: anywhere;
+  }
+
+  .ca-bar-pct {
+    text-align: right;
   }
 }
 

@@ -1,4 +1,5 @@
 import argparse
+import re
 import time
 from typing import Any
 
@@ -20,6 +21,10 @@ DEFAULT_HEADERS = {
         "Chrome/131.0.0.0 Safari/537.36"
     ),
 }
+
+
+def normalize_afm(afm: str) -> str:
+    return "".join(re.findall(r"\d", str(afm or "")))
 
 
 def build_search_payload(company_name: str, language: str = "el") -> dict[str, Any]:
@@ -90,17 +95,21 @@ def get_company_details_by_gemi(
 def get_company_details_by_afm(
     afm: str, language: str = "el", delay_seconds: float = 2
 ) -> dict[str, Any]:
-    hits = get_company_hits(afm, language=language)
+    normalized_afm = normalize_afm(afm)
+    hits = get_company_hits(normalized_afm, language=language)
     if not hits:
-        raise LookupError(f"No company found for AFM {afm}")
+        raise LookupError(f"No company found for AFM {normalized_afm}")
 
-    exact_hit = next((hit for hit in hits if hit.get("afm") == afm), None)
+    exact_hit = next(
+        (hit for hit in hits if normalize_afm(hit.get("afm")) == normalized_afm),
+        None,
+    )
     if exact_hit is None:
-        raise LookupError(f"No exact AFM match found for {afm}")
+        raise LookupError(f"No exact AFM match found for {normalized_afm}")
 
     gemi_number = exact_hit.get("gemiNumber")
     if not gemi_number:
-        raise LookupError(f"Search hit for AFM {afm} does not include gemiNumber")
+        raise LookupError(f"Search hit for AFM {normalized_afm} does not include gemiNumber")
 
     time.sleep(delay_seconds)
 
@@ -111,16 +120,25 @@ def get_company_details_by_afm(
 
 
 def get_company_url_by_afm(afm: str, language: str = "el") -> str:
-    hits = get_company_hits(afm, language=language)
-    exact_hit = next((hit for hit in hits if hit.get("afm") == afm), None)
+    gemi_number = get_gemi_number_by_afm(afm, language=language)
+    return f"https://publicity.businessportal.gr/company/{gemi_number}"
+
+
+def get_gemi_number_by_afm(afm: str, language: str = "el") -> str:
+    normalized_afm = normalize_afm(afm)
+    hits = get_company_hits(normalized_afm, language=language)
+    exact_hit = next(
+        (hit for hit in hits if normalize_afm(hit.get("afm")) == normalized_afm),
+        None,
+    )
     if exact_hit is None:
-        raise LookupError(f"No exact AFM match found for {afm}")
+        raise LookupError(f"No exact AFM match found for {normalized_afm}")
 
     gemi_number = exact_hit.get("gemiNumber")
     if not gemi_number:
-        raise LookupError(f"Search hit for AFM {afm} does not include gemiNumber")
+        raise LookupError(f"Search hit for AFM {normalized_afm} does not include gemiNumber")
 
-    return f"https://publicity.businessportal.gr/company/{gemi_number}"
+    return str(gemi_number).strip()
 
 
 def extract_company_profile(result: dict[str, Any]) -> dict[str, Any]:
