@@ -2,7 +2,8 @@ BEGIN;
 
 DROP VIEW IF EXISTS public.works_enriched;
 
-CREATE VIEW public.works_enriched AS
+CREATE VIEW public.works_enriched
+WITH (security_invoker = true) AS
 SELECT
   w.id,
   w.reference_number,

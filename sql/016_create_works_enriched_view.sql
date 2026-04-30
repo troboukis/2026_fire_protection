@@ -1,6 +1,7 @@
 BEGIN;
 
-CREATE OR REPLACE VIEW public.works_enriched AS
+CREATE OR REPLACE VIEW public.works_enriched
+WITH (security_invoker = true) AS
 SELECT
   w.id,
   w.reference_number,
