@@ -808,6 +808,41 @@ main {
   outline: none;
 }
 
+.news-wire__pager {
+  display: inline-flex;
+  width: fit-content;
+  gap: 1px;
+  margin-top: 0.15rem;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.news-wire__pager-button {
+  width: 2.15rem;
+  height: 2.15rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.news-wire__pager-button:hover,
+.news-wire__pager-button:focus-visible {
+  background: var(--paper-2);
+  color: var(--accent);
+  outline: none;
+}
+
+.news-wire__pager-button:disabled {
+  color: #b8b2a8;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .map-desk {
   display: grid;
 }
@@ -1496,6 +1531,48 @@ main {
   max-width: 46ch;
 }
 
+.section-head__subtitle-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 1rem;
+}
+
+.records-pager {
+  display: inline-flex;
+  width: fit-content;
+  gap: 1px;
+  margin-top: 0.4rem;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.records-pager__button {
+  width: 2.15rem;
+  height: 2.15rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.records-pager__button:hover,
+.records-pager__button:focus-visible {
+  background: var(--paper-2);
+  color: var(--accent);
+  outline: none;
+}
+
+.records-pager__button:disabled {
+  color: #b8b2a8;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .records-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1512,6 +1589,7 @@ main {
   width: 100%;
   padding-bottom: 0.25rem;
   scroll-snap-type: x proximity;
+  overflow-anchor: none;
   background: var(--paper);
 }
 
@@ -2659,6 +2737,18 @@ main {
 
   .news-wire__items {
     overflow-x: auto;
+  }
+
+  .news-wire__pager {
+    display: none;
+  }
+
+  .section-head__subtitle-row {
+    grid-template-columns: 1fr;
+  }
+
+  .records-pager {
+    display: none;
   }
 
   .map-desk__layout {
@@ -6667,6 +6757,47 @@ main {
   color: var(--ink-soft);
 }
 
+.municipality-contract-latest__subtitle-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 1rem;
+}
+
+.municipality-contract-latest__pager {
+  display: inline-flex;
+  width: fit-content;
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.municipality-contract-latest__pager-button {
+  width: 2.15rem;
+  height: 2.15rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.municipality-contract-latest__pager-button:hover,
+.municipality-contract-latest__pager-button:focus-visible {
+  background: var(--paper-2);
+  color: var(--accent);
+  outline: none;
+}
+
+.municipality-contract-latest__pager-button:disabled {
+  color: #b8b2a8;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .municipality-profile-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -6829,6 +6960,7 @@ main {
   padding-bottom: 0.35rem;
   scroll-snap-type: x proximity;
   overscroll-behavior-x: contain;
+  overflow-anchor: none;
   scrollbar-width: thin;
 }
 
@@ -6898,6 +7030,14 @@ main {
   .municipality-contract-strip,
   .municipality-leaders {
     grid-template-columns: 1fr;
+  }
+
+  .municipality-contract-latest__subtitle-row {
+    grid-template-columns: 1fr;
+  }
+
+  .municipality-contract-latest__pager {
+    display: none;
   }
 
   .municipality-profile-grid {
