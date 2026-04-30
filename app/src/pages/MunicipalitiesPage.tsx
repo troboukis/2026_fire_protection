@@ -1,4 +1,4 @@
-import { startTransition, useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
+import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import { Link, useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
@@ -795,6 +795,8 @@ export default function MunicipalitiesPage() {
   const [contractOrganizationById, setContractOrganizationById] = useState<Record<number, string>>({})
   const [latestMunicipalityContractRows, setLatestMunicipalityContractRows] = useState<MunicipalityContractRow[]>([])
   const [latestMunicipalityContractsLoading, setLatestMunicipalityContractsLoading] = useState(false)
+  const [latestMunicipalityCanScrollPrev, setLatestMunicipalityCanScrollPrev] = useState(false)
+  const [latestMunicipalityCanScrollNext, setLatestMunicipalityCanScrollNext] = useState(false)
   const [featuredMunicipalityBeneficiaries, setFeaturedMunicipalityBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
   const [featuredMunicipalityBeneficiariesLoading, setFeaturedMunicipalityBeneficiariesLoading] = useState(false)
   const [currentFireRows, setCurrentFireRows] = useState<CurrentFireRow[]>([])
@@ -813,6 +815,7 @@ export default function MunicipalitiesPage() {
   const contractChartFrameRef = useRef<HTMLDivElement | null>(null)
   const fundingChartFrameRef = useRef<HTMLDivElement | null>(null)
   const municipalityMapFrameRef = useRef<HTMLDivElement | null>(null)
+  const latestMunicipalityContractStripRef = useRef<HTMLDivElement | null>(null)
   const [contractChartHover, setContractChartHover] = useState<ContractChartHoverState | null>(null)
   const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
   const [pointTooltip, setPointTooltip] = useState<MunicipalityPointTooltip | null>(null)
@@ -2515,6 +2518,51 @@ export default function MunicipalitiesPage() {
     () => buildContractsPageHref({ municipalityKey: selectedMunicipalityKey }),
     [selectedMunicipalityKey],
   )
+
+  useLayoutEffect(() => {
+    const container = latestMunicipalityContractStripRef.current
+    if (!container) return
+
+    const updatePager = () => {
+      const scrollMax = container.scrollWidth - container.clientWidth
+      setLatestMunicipalityCanScrollPrev(container.scrollLeft > 24)
+      setLatestMunicipalityCanScrollNext(container.scrollLeft < scrollMax - 1)
+    }
+
+    container.scrollLeft = 0
+    updatePager()
+    const resetFrame = window.requestAnimationFrame(() => {
+      container.scrollLeft = 0
+      updatePager()
+    })
+    const resetTimeout = window.setTimeout(() => {
+      container.scrollLeft = 0
+      updatePager()
+    }, 120)
+    container.addEventListener('scroll', updatePager, { passive: true })
+    window.addEventListener('resize', updatePager)
+
+    return () => {
+      window.cancelAnimationFrame(resetFrame)
+      window.clearTimeout(resetTimeout)
+      container.removeEventListener('scroll', updatePager)
+      window.removeEventListener('resize', updatePager)
+    }
+  }, [latestMunicipalityContracts, latestMunicipalityContractsLoading])
+
+  const scrollLatestMunicipalityContracts = (direction: -1 | 1) => {
+    const container = latestMunicipalityContractStripRef.current
+    if (!container) return
+
+    const firstCard = container.querySelector<HTMLElement>('.wire-item, .data-loading-card')
+    const secondCard = firstCard?.nextElementSibling instanceof HTMLElement ? firstCard.nextElementSibling : null
+    const step = firstCard && secondCard
+      ? secondCard.offsetLeft - firstCard.offsetLeft
+      : (firstCard?.getBoundingClientRect().width ?? container.clientWidth)
+
+    container.scrollBy({ left: direction * step, behavior: 'smooth' })
+  }
+
   const heroNarrative = useMemo(() => {
     if (isEmptySelection) {
       return 'Πληκτρολόγησε όνομα δήμου και επίλεξε από τα αποτελέσματα για φόρτωση των δεδομένων του συγκεκριμένου δήμου.'
@@ -3610,9 +3658,31 @@ export default function MunicipalitiesPage() {
             <div className="municipality-contract-latest__head dev-tag-anchor">
               <ComponentTag name="municipality-contract-latest__head" kind="CLASS" className="component-tag--overlay" />
               <span className="eyebrow">τελευταίες συμβάσεις</span>
-              <p>Οι πιο πρόσφατες συμβάσεις του {selectedName} για το {currentYear}.</p>
+              <div className="municipality-contract-latest__subtitle-row">
+                <p>Οι πιο πρόσφατες συμβάσεις του Δήμου {selectedName} για το {currentYear}.</p>
+                <div className="municipality-contract-latest__pager" aria-label="Πλοήγηση τελευταίων συμβάσεων δήμου">
+                  <button
+                    type="button"
+                    className="municipality-contract-latest__pager-button"
+                    aria-label="Προηγούμενη σύμβαση δήμου"
+                    onClick={() => scrollLatestMunicipalityContracts(-1)}
+                    disabled={latestMunicipalityContractsLoading || !latestMunicipalityCanScrollPrev}
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    className="municipality-contract-latest__pager-button"
+                    aria-label="Επόμενη σύμβαση δήμου"
+                    onClick={() => scrollLatestMunicipalityContracts(1)}
+                    disabled={latestMunicipalityContractsLoading || !latestMunicipalityCanScrollNext}
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
             </div>
-            <div className="municipality-contract-strip dev-tag-anchor">
+            <div className="municipality-contract-strip dev-tag-anchor" ref={latestMunicipalityContractStripRef}>
               <ComponentTag
                 name="municipality-contract-strip"
                 kind="CLASS"

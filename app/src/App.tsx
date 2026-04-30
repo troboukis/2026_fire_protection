@@ -1,4 +1,4 @@
-import { Fragment, Suspense, lazy, useEffect, useMemo, useState, type CSSProperties } from 'react'
+import { Fragment, Suspense, lazy, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
@@ -445,9 +445,12 @@ export default function App() {
   const featuredRecordsYear = String(currentYear)
   const location = useLocation()
   const navigate = useNavigate()
+  const latestContractsItemsRef = useRef<HTMLDivElement | null>(null)
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [latestContractsError, setLatestContractsError] = useState<string | null>(null)
+  const [latestContractsCanScrollPrev, setLatestContractsCanScrollPrev] = useState(false)
+  const [latestContractsCanScrollNext, setLatestContractsCanScrollNext] = useState(false)
   const [selectedContract, setSelectedContract] = useState<LatestContractCard | null>(null)
   const [heroStatsLoading, setHeroStatsLoading] = useState(true)
   const [heroStatsError, setHeroStatsError] = useState<string | null>(null)
@@ -1649,6 +1652,35 @@ export default function App() {
     return () => { cancelled = true }
   }, [currentYear])
 
+  useEffect(() => {
+    const container = latestContractsItemsRef.current
+    if (!container) return
+
+    const updateLatestContractsPager = () => {
+      const scrollMax = container.scrollWidth - container.clientWidth
+      setLatestContractsCanScrollPrev(container.scrollLeft > 1)
+      setLatestContractsCanScrollNext(container.scrollLeft < scrollMax - 1)
+    }
+
+    updateLatestContractsPager()
+    container.addEventListener('scroll', updateLatestContractsPager, { passive: true })
+    window.addEventListener('resize', updateLatestContractsPager)
+
+    return () => {
+      container.removeEventListener('scroll', updateLatestContractsPager)
+      window.removeEventListener('resize', updateLatestContractsPager)
+    }
+  }, [latestContracts, latestContractsLoading])
+
+  const scrollLatestContracts = (direction: -1 | 1) => {
+    const container = latestContractsItemsRef.current
+    if (!container) return
+
+    const firstCard = container.querySelector<HTMLElement>('.wire-item, .news-wire__loading-card')
+    const step = firstCard?.getBoundingClientRect().width ?? container.clientWidth
+    container.scrollBy({ left: direction * (step + 1), behavior: 'smooth' })
+  }
+
   return (
     <>
       <main>
@@ -1664,8 +1696,28 @@ export default function App() {
             <span className="eyebrow">τελευταία</span>
             <strong>Οι πιο πρόσφατες συμβάσεις Δήμων, Υπουργείων και άλλων φορέων που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
             <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
+            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων">
+              <button
+                type="button"
+                className="news-wire__pager-button"
+                aria-label="Προηγούμενη σύμβαση"
+                onClick={() => scrollLatestContracts(-1)}
+                disabled={latestContractsLoading || !latestContractsCanScrollPrev}
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                className="news-wire__pager-button"
+                aria-label="Επόμενη σύμβαση"
+                onClick={() => scrollLatestContracts(1)}
+                disabled={latestContractsLoading || !latestContractsCanScrollNext}
+              >
+                ›
+              </button>
+            </div>
           </div>
-          <div className="news-wire__items dev-tag-anchor">
+          <div className="news-wire__items dev-tag-anchor" ref={latestContractsItemsRef}>
             <DebugClassLabel name="news-wire__items" style={{ left: 'auto', right: '0.45rem' }} />
             {latestContractsLoading && (
               <DataLoadingCard
