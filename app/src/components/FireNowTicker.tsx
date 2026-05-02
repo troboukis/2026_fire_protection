@@ -148,10 +148,19 @@ export default function FireNowTicker() {
   const [loading, setLoading] = useState(true)
   const [groupCount, setGroupCount] = useState(2)
   const [animDuration, setAnimDuration] = useState(42)
+  const [isMobileTicker, setIsMobileTicker] = useState(() => window.matchMedia('(max-width: 680px)').matches)
 
   const viewportRef = useRef<HTMLDivElement>(null)
   const groupRef = useRef<HTMLDivElement>(null)
-  const shouldScroll = !loadFailed && (activeCount ?? 0) > 4
+  const shouldScroll = !loadFailed && (activeCount ?? 0) > (isMobileTicker ? 1 : 4)
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 680px)')
+    const handleChange = () => setIsMobileTicker(media.matches)
+    handleChange()
+    media.addEventListener('change', handleChange)
+    return () => media.removeEventListener('change', handleChange)
+  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -175,7 +184,7 @@ export default function FireNowTicker() {
       setLoadFailed(false)
       setActiveCount(rows.length)
       setStatusCounts(buildStatusCounts(rows))
-      setItems(rows.slice(0, 12).map(buildTickerItem))
+      setItems(rows.map(buildTickerItem))
       setLoading(false)
     }
 
