@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import time
 import unicodedata
 from dataclasses import dataclass
@@ -172,6 +173,30 @@ def normalize_string(value: str) -> str:
     value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
     value = " ".join(value.split())
     return value
+
+
+def normalize_keyword_tokens(value: str) -> list[str]:
+    normalized = normalize_string(value)
+    if not isinstance(normalized, str):
+        return []
+    return [token for token in re.split(r"\W+", normalized, flags=re.UNICODE) if token]
+
+
+def text_matches_keyword_prefix(text: str, keyword: str) -> bool:
+    """Match keyword tokens only at token starts, not as arbitrary substrings."""
+    text_tokens = normalize_keyword_tokens(text)
+    keyword_tokens = normalize_keyword_tokens(keyword)
+    if not text_tokens or not keyword_tokens or len(keyword_tokens) > len(text_tokens):
+        return False
+
+    last_start = len(text_tokens) - len(keyword_tokens)
+    for start in range(last_start + 1):
+        if all(
+            text_tokens[start + offset].startswith(keyword_token)
+            for offset, keyword_token in enumerate(keyword_tokens)
+        ):
+            return True
+    return False
 
 
 def _clean_key_part(value: Any) -> str:
@@ -402,18 +427,17 @@ class ProcurementCollector:
         return self.items
 
     def is_excluded(self, item: dict[str, Any]) -> bool:
-        org_value = normalize_string((item.get("organization") or {}).get("value", ""))
-        title = normalize_string(item.get("title", "") or "")
-        short_descriptions = normalize_string(
+        org_value = (item.get("organization") or {}).get("value", "")
+        title = item.get("title", "") or ""
+        short_descriptions = (
             " | ".join((obj or {}).get("shortDescription", "") for obj in (item.get("objectDetailsList") or []))
         )
-        normalized_keywords = [normalize_string(k) for k in self.exclude_keywords]
 
         if (
             bool(item.get("cancelled"))
-            or any(k in org_value for k in normalized_keywords)
-            or any(k in title for k in normalized_keywords)
-            or any(k in short_descriptions for k in normalized_keywords)
+            or any(text_matches_keyword_prefix(org_value, k) for k in self.exclude_keywords)
+            or any(text_matches_keyword_prefix(title, k) for k in self.exclude_keywords)
+            or any(text_matches_keyword_prefix(short_descriptions, k) for k in self.exclude_keywords)
         ):
             return True
 

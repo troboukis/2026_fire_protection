@@ -1,11 +1,11 @@
 // Ανάλυση Συμβάσεων — D3 charts, χωρίς ΦΠΑ, από το 2024 έως την τρέχουσα χρονιά
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import * as d3 from 'd3'
+import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import TopAuthoritiesSection from './TopAuthoritiesSection'
-
 // ── Τύποι ────────────────────────────────────────────────────────────
 type BarItem = {
   label: string
@@ -868,7 +868,7 @@ export default function ContractAnalysis() {
         setAnalysis(buildAnalysisDataFromRows(sectionRows))
         setAnalysisError(null)
       } catch (e) {
-        if (e instanceof DOMException && e.name === 'AbortError') return
+        if (isAbortError(e)) return
         if (cancelled) return
         setAnalysisError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης ανάλυσης')
       }
@@ -1173,8 +1173,6 @@ export default function ContractAnalysis() {
           Για κάθε CPV εμφανίζεται το πλήθος συμβάσεων και η επικρατέστερη διαδικασία ανάθεσης.
         </p>
       </div>
-
-      
 
       <div className="ca-footer-note">
         <span className="eyebrow">Πηγή δεδομένων</span>

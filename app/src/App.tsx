@@ -11,6 +11,7 @@ import DataLoadingCard from './components/DataLoadingCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { buildContractsPageHref } from './lib/contractsPageHref'
 import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from './lib/homepageRpcCache'
+import { isAbortError } from './lib/isAbortError'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
@@ -343,10 +344,6 @@ function pctColor(value: number | null): string {
 
 function logLoadError(context: string, error: unknown) {
   console.error(`Failed to load ${context}`, error)
-}
-
-function isAbortError(error: unknown): boolean {
-  return error instanceof DOMException && error.name === 'AbortError'
 }
 
 function dayFraction(dayOfYear: number, yearDays: number): number {

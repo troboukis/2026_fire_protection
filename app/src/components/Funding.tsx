@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from '../lib/homepageRpcCache'
+import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
 
 type FundingHistoryEntry = {
@@ -203,7 +204,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
 
         if (!cancelled) setFundingData(nextFundingData)
       } catch (error) {
-        if (error instanceof DOMException && error.name === 'AbortError') return
+        if (isAbortError(error)) return
         console.error('[Funding] failed to load homepage funding data', error)
         if (!cancelled) {
           setFundingData(null)

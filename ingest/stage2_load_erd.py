@@ -1540,6 +1540,11 @@ def parse_args() -> argparse.Namespace:
         help="Skip automatic GEMI lookup for newly inserted beneficiaries.",
     )
     p.add_argument(
+        "--skip-prune-excluded-procurements",
+        action="store_true",
+        help="Do not delete procurement rows that match excluded keywords after payment upsert.",
+    )
+    p.add_argument(
         "--beneficiary-gemi-delay",
         type=float,
         default=1.0,
@@ -1560,7 +1565,7 @@ def log(msg: str) -> None:
 
 
 def _normalize_keyword_for_sql(keyword: str) -> str:
-    """Strip accents and non-alphanumeric chars to match delete_procurements_by_keywords logic."""
+    """Strip accents and non-alphanumeric chars for legacy comparisons."""
     import unicodedata as _ud
     decomposed = _ud.normalize("NFD", keyword)
     without_marks = "".join(ch for ch in decomposed if _ud.category(ch) != "Mn")
@@ -1568,10 +1573,23 @@ def _normalize_keyword_for_sql(keyword: str) -> str:
     return "".join(ch for ch in folded if ch.isalnum())
 
 
+def _normalize_keyword_tokens_for_sql(keyword: str) -> list[str]:
+    """Normalize keyword to tokens that must match at the start of text tokens."""
+    import unicodedata as _ud
+    decomposed = _ud.normalize("NFD", keyword)
+    without_marks = "".join(ch for ch in decomposed if _ud.category(ch) != "Mn")
+    folded = without_marks.casefold().replace("ς", "σ")
+    return [token for token in re.split(r"\W+", folded, flags=re.UNICODE) if token]
+
+
 def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -> int:
-    """Delete procurement rows whose title or short_descriptions match any exclude keyword."""
-    prepared = [_normalize_keyword_for_sql(k) for k in keywords if k.strip()]
-    prepared = list(dict.fromkeys(kw for kw in prepared if kw))  # dedupe, preserve order
+    """Delete procurement rows whose title or short_descriptions match any exclude keyword.
+
+    Keywords match only at token starts. For example, "ΕΠΑΛ" matches "ΕΠΑΛ"
+    and "ΕΠΑΛείου", but not "Δ.Ε. ΠΑΛΑΙΡΟΥ".
+    """
+    prepared = [_normalize_keyword_tokens_for_sql(k) for k in keywords if k.strip()]
+    prepared = list(dict.fromkeys(tuple(tokens) for tokens in prepared if tokens))  # dedupe, preserve order
     if not prepared:
         return 0
 
@@ -1587,16 +1605,20 @@ def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -
             base = f"UNACCENT({base})"
         else:
             base = f"TRANSLATE({base}, '{GREEK_ACCENTED_SOURCE}', '{GREEK_ACCENTED_TARGET}')"
-        return f"REGEXP_REPLACE({base}, '[^[:alnum:]]+', '', 'g')"
+        return f"REGEXP_REPLACE({base}, '[^[:alnum:]]+', ' ', 'g')"
+
+    def _keyword_regex(tokens: tuple[str, ...]) -> str:
+        return r"(^|[[:space:]])" + r"[[:alnum:]]*[[:space:]]+".join(tokens) + r"[[:alnum:]]*"
 
     columns = ("title", "short_descriptions")
     groups = []
     params: list[str] = []
-    for kw in prepared:
+    for tokens in prepared:
+        pattern = _keyword_regex(tokens)
         checks = []
         for col in columns:
-            checks.append(f"{_col_expr(col)} LIKE %s")
-            params.append(f"%{kw}%")
+            checks.append(f"{_col_expr(col)} ~ %s")
+            params.append(pattern)
         groups.append("(" + " OR ".join(checks) + ")")
 
     where_sql = " OR ".join(groups)
@@ -2374,7 +2396,10 @@ def main() -> None:
             zeroed_payments = zero_superseded_payment_amounts(cur, affected_superseded_references)
             conn.commit()
             log(f"Payment upsert/backfill committed (zeroed_superseded_payments={zeroed_payments})")
-            prune_excluded_procurements(cur, conn, DEFAULT_EXCLUDE_KEYWORDS, dry_run=args.dry_run)
+            if args.skip_prune_excluded_procurements:
+                log("Skipping excluded procurement prune")
+            else:
+                prune_excluded_procurements(cur, conn, DEFAULT_EXCLUDE_KEYWORDS, dry_run=args.dry_run)
 
         if "forest_fire" in selected_tables:
             fires_unique, skipped_fire_in_batch = dedupe_forest_fire_rows(fires)

@@ -47,6 +47,11 @@ Script behavior:
 - runs `fetch_diavgeia.py` (PDF download is disabled by default)
 - runs `fetch_kimdis_procurements.py`, `src/fetch_copernicus.py`, and DB ingest when enabled
 - automatic DB ingest excludes the static `fund` table; reload it only intentionally
+- the ERD DB ingest is incremental for `public.procurement`; it does not make the DB an exact mirror
+  of `data/raw_procurements.csv` unless the procurement stack is reset first
+- the default ERD DB ingest also runs an excluded-keyword prune after payment upsert; use the
+  manual `--skip-prune-excluded-procurements` mode below for restore/recovery loads where rows
+  must be inserted without any destructive keyword deletion
 - does not run `locate_work`; that step is separate via `src/run_locate_work_updates.py`
 - commits changed artifacts (`data/`, `state/`, `logs/`)
 - pushes to `origin/main`
@@ -856,6 +861,8 @@ Rules used by the ingest / app layer:
 - keep the raw CSV unchanged for auditability
 - zero `payment.amount_without_vat` for superseded contracts
 - exclude superseded contracts from frontend counts / lists
+- excluded-keyword matching is token-prefix based: a keyword must match the start of a word/token
+  (for example `ΕΠΑΛ` matches `ΕΠΑΛ`, but not `Δ.Ε. ΠΑΛΑΙΡΟΥ` or `σε παλιά`)
 
 A contract is treated as superseded when:
 - its `referenceNumber` appears as another row's `prevReferenceNo`
@@ -910,8 +917,28 @@ python ingest/ingest_procurement_lines.py
 python ingest/ingest_org_municipality_coverage.py
 ```
 
+ERD procurement ingest used by the web app:
+
+```bash
+python ingest/stage2_load_erd.py --tables region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,diavgeia_procurement,beneficiary
+```
+
+Restore/recovery mode for KIMDIS procurement rows that should be loaded from the current
+`data/raw_procurements.csv` without running the destructive excluded-keyword prune:
+
+```bash
+python ingest/stage2_load_erd.py \
+  --tables procurement,cpv,payment,diavgeia_procurement,beneficiary \
+  --skip-beneficiary-gemi \
+  --skip-prune-excluded-procurements
+```
+
 Behavior:
 - `ingest_raw_procurements.py` truncates + reloads `public.raw_procurements` from `data/raw_procurements.csv`
+- `stage2_load_erd.py` loads `data/raw_procurements.csv` into `public.procurement` incrementally;
+  existing identities are skipped by default and rows missing from the CSV are not deleted
+- by default, `stage2_load_erd.py` prunes `public.procurement` rows that match excluded keywords
+  after payment upsert; `--skip-prune-excluded-procurements` disables only that final delete step
 - `ingest_procurement.py` loads header-level rows from `data/2026_diavgeia_filtered.csv`
 - `ingest_procurement_lines.py` expands line-level detail from:
   - `spending_contractors_details`

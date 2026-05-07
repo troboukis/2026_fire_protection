@@ -3,6 +3,7 @@ import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
+import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
@@ -396,7 +397,7 @@ export default function FireCopernicusSection() {
           setLastUpdatedAt(String(latestUpdateRes.data?.updated_at ?? '').trim() || null)
         }
       } catch (error) {
-        if (error instanceof DOMException && error.name === 'AbortError') return
+        if (isAbortError(error)) return
         if (!cancelled) {
           setGeojson(null)
           setAllFires([])
