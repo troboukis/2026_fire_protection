@@ -5016,6 +5016,14 @@ main {
   overflow: visible;
 }
 
+.da-hist-container {
+  border: 0;
+}
+
+.da-hist-chart-block {
+  border-bottom: 0;
+}
+
 .ca-d3-bar-svg {
   display: block;
   width: 100%;

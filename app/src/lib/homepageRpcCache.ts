@@ -14,7 +14,9 @@ type RetryOptions = {
   retryDelayMs?: number
 }
 
-const STORAGE_PREFIX = 'homepage-rpc-cache:'
+const STORAGE_VERSION = 'v2'
+const STORAGE_ENV = import.meta.env.VITE_SUPABASE_URL ?? 'unknown'
+const STORAGE_PREFIX = `homepage-rpc-cache:${STORAGE_VERSION}:${STORAGE_ENV}:`
 const DEFAULT_TTL_MS = 60_000
 const DEFAULT_STALE_TTL_MS = 6 * 60 * 60 * 1000
 const memoryCache = new Map<string, CacheEntry<unknown>>()
