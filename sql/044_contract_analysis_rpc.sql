@@ -78,9 +78,9 @@ base AS (
       ELSE COALESCE(o.organization_normalized_value, o.organization_value, 'ΔΗΜΟΣ ' || NULLIF(BTRIM(COALESCE(m.municipality_normalized_value, m.municipality_value)), ''), 'ΠΕΡΙΦΕΡΕΙΑ ' || NULLIF(BTRIM(COALESCE(r.region_normalized_value, r.region_value)), ''), '—')
     END AS authority_label,
     CASE
-      WHEN UPPER(COALESCE(pr.contract_type, '')) LIKE '%ΥΠΗΡΕΣ%' THEN 'Υπηρεσίες'
-      WHEN UPPER(COALESCE(pr.contract_type, '')) LIKE '%ΠΡΟΜΗΘΕΙ%' THEN 'Προμήθειες'
-      WHEN UPPER(COALESCE(pr.contract_type, '')) LIKE '%ΕΡΓ%' THEN 'Έργα'
+      WHEN translate(UPPER(COALESCE(pr.contract_type, '')), 'ΆΈΉΊΪΌΎΫΏ', 'ΑΕΗΙΙΟΥΥΩ') LIKE '%ΥΠΗΡΕΣ%' THEN 'Υπηρεσίες'
+      WHEN translate(UPPER(COALESCE(pr.contract_type, '')), 'ΆΈΉΊΪΌΎΫΏ', 'ΑΕΗΙΙΟΥΥΩ') LIKE '%ΠΡΟΜΗΘΕΙ%' THEN 'Προμήθειες'
+      WHEN translate(UPPER(COALESCE(pr.contract_type, '')), 'ΆΈΉΊΪΌΎΫΏ', 'ΑΕΗΙΙΟΥΥΩ') LIKE '%ΕΡΓ%' THEN 'Έργα'
       ELSE 'Λοιπές'
     END AS contract_type,
     CASE
