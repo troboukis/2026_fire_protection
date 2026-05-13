@@ -591,6 +591,7 @@ export default function App() {
             if (error) throw error
             return (data ?? []) as LatestContractRpcRow[]
           }),
+          { useStaleOnError: false, dedupeInFlight: false },
         )
         if (cancelled) return
 
@@ -1650,6 +1651,7 @@ export default function App() {
             if (!data) throw new Error('Hero section RPC returned no data')
             return data as HeroSectionRpcResponse
           }),
+          { useStaleOnError: false, dedupeInFlight: false },
         )
         if (cancelled) return
 

@@ -313,6 +313,7 @@ export default function FireCopernicusSection() {
   const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, defaultStart))
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
+  const [terrainFailed, setTerrainFailed] = useState(false)
   const mapRef = useRef<HTMLDivElement | null>(null)
   const tooltipRef = useRef<HTMLDivElement | null>(null)
   const mapClipPathId = useId().replace(/:/g, '-')
@@ -450,6 +451,10 @@ export default function FireCopernicusSection() {
     media.addEventListener('change', update)
     return () => media.removeEventListener('change', update)
   }, [])
+
+  useEffect(() => {
+    setTerrainFailed(false)
+  }, [mapTilerApiKey, isMobileMap])
 
   const fires = useMemo(() => {
     const startMs = rangeStartDate.getTime()
@@ -755,7 +760,7 @@ export default function FireCopernicusSection() {
                   <path key={feature.key} d={feature.d} />
                 ))}
               </g>
-              {mapData.hillshadeTiles.length > 0 && (
+              {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
                 <g className="fire-copernicus__terrain" clipPath={`url(#${mapClipPathId})`} aria-hidden="true">
                   {mapData.hillshadeTiles.map((tile) => (
                     <image
@@ -767,6 +772,7 @@ export default function FireCopernicusSection() {
                       height={tile.height}
                       preserveAspectRatio="none"
                       className="fire-copernicus__terrain-tile"
+                      onError={() => setTerrainFailed(true)}
                     />
                   ))}
                 </g>

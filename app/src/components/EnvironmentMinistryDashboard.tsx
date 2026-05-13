@@ -389,6 +389,7 @@ function EnvironmentWorksMap({
 }) {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [tooltip, setTooltip] = useState<WorkPointTooltip | null>(null)
+  const [terrainFailed, setTerrainFailed] = useState(false)
   const [isCompactViewport, setIsCompactViewport] = useState(() => (
     typeof window === 'undefined' ? false : window.matchMedia('(max-width: 760px)').matches
   ))
@@ -418,6 +419,10 @@ function EnvironmentWorksMap({
   useEffect(() => {
     setTooltip(null)
   }, [workPoints])
+
+  useEffect(() => {
+    setTerrainFailed(false)
+  }, [isCompactViewport, mapTilerApiKey])
 
   useEffect(() => {
     if (typeof window === 'undefined') return undefined
@@ -590,7 +595,7 @@ function EnvironmentWorksMap({
             <path key={feature.key} d={feature.d} />
           ))}
         </g>
-        {mapData.hillshadeTiles.length > 0 && (
+        {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
           <g className="environment-map__terrain" clipPath={`url(#${mapClipPathId})`} aria-hidden="true">
             {mapData.hillshadeTiles.map((tile) => (
               <image
@@ -602,6 +607,7 @@ function EnvironmentWorksMap({
                 height={tile.height}
                 preserveAspectRatio="none"
                 className="environment-map__terrain-tile"
+                onError={() => setTerrainFailed(true)}
               />
             ))}
           </g>

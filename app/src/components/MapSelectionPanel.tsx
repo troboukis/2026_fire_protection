@@ -1,4 +1,4 @@
-import { useCallback, useId, useMemo, useState } from 'react'
+import { useCallback, useEffect, useId, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
@@ -115,6 +115,7 @@ export default function MapSelectionPanel({
     return window.matchMedia('(hover: none), (pointer: coarse)').matches
   }, [])
   const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
+  const [previewTerrainFailed, setPreviewTerrainFailed] = useState(false)
   const [hoveredFirePoint, setHoveredFirePoint] = useState<{
     x: number
     y: number
@@ -214,6 +215,11 @@ export default function MapSelectionPanel({
       mapTilerApiKey,
     )
   }, [mapTilerApiKey, municipalityFeature, previewGeometry])
+  const showPreviewTerrain = previewHillshadeTiles.length > 0 && !previewTerrainFailed
+
+  useEffect(() => {
+    setPreviewTerrainFailed(false)
+  }, [mapTilerApiKey, municipalityKey])
 
   const { projectedCurrentFireShapes, projectedPreviousFireShapes } = useMemo(() => ({
     projectedCurrentFireShapes: projectedFireShapes.filter((p) => p.period === 'current'),
@@ -478,7 +484,7 @@ export default function MapSelectionPanel({
               stroke="#0f2237"
               strokeWidth="1.3"
             />
-            {previewHillshadeTiles.length > 0 && (
+            {showPreviewTerrain && (
               <g clipPath={`url(#${mapClipPathId})`} className="maps-selection-panel__terrain">
                 {previewHillshadeTiles.map((tile) => (
                   <image
@@ -490,6 +496,7 @@ export default function MapSelectionPanel({
                     height={tile.height}
                     preserveAspectRatio="none"
                     className="maps-selection-panel__terrain-tile"
+                    onError={() => setPreviewTerrainFailed(true)}
                   />
                 ))}
               </g>

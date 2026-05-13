@@ -7,6 +7,8 @@ type CacheEntry<T> = {
 type CacheOptions = {
   ttlMs?: number
   staleTtlMs?: number
+  useStaleOnError?: boolean
+  dedupeInFlight?: boolean
 }
 
 type RetryOptions = {
@@ -14,7 +16,7 @@ type RetryOptions = {
   retryDelayMs?: number
 }
 
-const STORAGE_VERSION = 'v2'
+const STORAGE_VERSION = 'v4'
 const STORAGE_ENV = import.meta.env.VITE_SUPABASE_URL ?? 'unknown'
 const STORAGE_PREFIX = `homepage-rpc-cache:${STORAGE_VERSION}:${STORAGE_ENV}:`
 const DEFAULT_TTL_MS = 60_000
@@ -73,6 +75,8 @@ export async function loadCachedHomepageRpc<T>(
 ): Promise<T> {
   const ttlMs = options.ttlMs ?? DEFAULT_TTL_MS
   const staleTtlMs = options.staleTtlMs ?? DEFAULT_STALE_TTL_MS
+  const useStaleOnError = options.useStaleOnError ?? false
+  const dedupeInFlight = options.dedupeInFlight ?? false
   const now = Date.now()
   const memoryEntry = memoryCache.get(cacheKey) as CacheEntry<T> | undefined
 
@@ -85,7 +89,7 @@ export async function loadCachedHomepageRpc<T>(
   }
 
   const inFlight = inFlightCache.get(cacheKey) as Promise<T> | undefined
-  if (inFlight) return inFlight
+  if (dedupeInFlight && inFlight) return inFlight
 
   const request = (async () => {
     try {
@@ -99,6 +103,7 @@ export async function loadCachedHomepageRpc<T>(
       writeStoredCache(cacheKey, entry)
       return data
     } catch (error) {
+      if (!useStaleOnError) throw error
       const staleEntry = storedEntry ?? readStoredCache<T>(cacheKey, staleTtlMs)
       if (staleEntry) {
         memoryCache.set(cacheKey, staleEntry)
@@ -110,7 +115,7 @@ export async function loadCachedHomepageRpc<T>(
     }
   })()
 
-  inFlightCache.set(cacheKey, request)
+  if (dedupeInFlight) inFlightCache.set(cacheKey, request)
   return request
 }
 
