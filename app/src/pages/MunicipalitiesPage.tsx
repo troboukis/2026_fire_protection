@@ -820,6 +820,7 @@ export default function MunicipalitiesPage() {
   const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
   const [pointTooltip, setPointTooltip] = useState<MunicipalityPointTooltip | null>(null)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
+  const [municipalityTerrainFailed, setMunicipalityTerrainFailed] = useState(false)
   const [isMobileMunicipalityMap, setIsMobileMunicipalityMap] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.innerWidth <= MOBILE_BREAKPOINT
@@ -1310,6 +1311,11 @@ export default function MunicipalitiesPage() {
       mapTilerApiKey,
     )
   }, [mapTilerApiKey, selectedMunicipalityFeature, selectedMunicipalityMap])
+  const showSelectedMunicipalityTerrain = selectedMunicipalityHillshadeTiles.length > 0 && !municipalityTerrainFailed
+
+  useEffect(() => {
+    setMunicipalityTerrainFailed(false)
+  }, [mapTilerApiKey, selectedMunicipalityKeyNormalized])
 
   const selectedMunicipalityCityPoints = useMemo(() => {
     if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
@@ -1372,7 +1378,7 @@ export default function MunicipalitiesPage() {
 
   const selectedFireSource = getMunicipalityFireYearSource(selectedFireYear, currentYear)
   const selectedFireSourceLabel = getFireSourceDisplayLabel(selectedFireSource)
-  const selectedTerrainSourceLabel = selectedMunicipalityHillshadeTiles.length > 0 ? 'Ανάγλυφο εδάφους: MapTiler hillshade' : null
+  const selectedTerrainSourceLabel = showSelectedMunicipalityTerrain ? 'Ανάγλυφο εδάφους: MapTiler hillshade' : null
 
   const selectedForestFireRows = useMemo(
     () => (selectedFireYear >= 2000 && selectedFireYear <= 2024
@@ -2944,7 +2950,7 @@ export default function MunicipalitiesPage() {
                           vectorEffect="non-scaling-stroke"
                         />
 	                        <g clipPath={`url(#municipality-fire-clip-${selectedMunicipalityKeyNormalized || 'selected'})`}>
-                          {selectedMunicipalityHillshadeTiles.length > 0 && (
+                          {showSelectedMunicipalityTerrain && (
                             <g opacity="0.12">
                               {selectedMunicipalityHillshadeTiles.map((tile) => (
                                 <image
@@ -2956,6 +2962,7 @@ export default function MunicipalitiesPage() {
                                   height={tile.height}
                                   preserveAspectRatio="none"
                                   className="municipality-profile-hero__terrain-tile"
+                                  onError={() => setMunicipalityTerrainFailed(true)}
                                 />
                               ))}
                             </g>
