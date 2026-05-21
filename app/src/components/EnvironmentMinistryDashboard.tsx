@@ -7,6 +7,7 @@ import ContractModal, { type ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from './FeaturedRecordsSection'
 import LatestContractCard from './LatestContractCard'
+import MapTilerLogo from './MapTilerLogo'
 import ProfileMetricCard from './ProfileMetricCard'
 import ProfileSectionCard from './ProfileSectionCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
@@ -577,12 +578,13 @@ function EnvironmentWorksMap({
         setTooltip(null)
       }}
     >
-      <svg
-        viewBox={`0 0 ${mapData.width} ${mapData.height}`}
-        role="img"
-        aria-label="Χάρτης εργασιών συμβάσεων Υπουργείου Περιβάλλοντος"
-        preserveAspectRatio="xMidYMid meet"
-      >
+      <div className="environment-map__canvas">
+        <svg
+          viewBox={`0 0 ${mapData.width} ${mapData.height}`}
+          role="img"
+          aria-label="Χάρτης εργασιών συμβάσεων Υπουργείου Περιβάλλοντος"
+          preserveAspectRatio="xMidYMid meet"
+        >
         <defs>
           <clipPath id={mapClipPathId}>
             {mapData.paths.map((feature) => (
@@ -651,7 +653,11 @@ function EnvironmentWorksMap({
             </g>
           ))}
         </g>
-      </svg>
+        </svg>
+        {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
+          <MapTilerLogo className="environment-map__maptiler-logo" />
+        )}
+      </div>
       {tooltip ? (
         <div
           className="environment-map__tooltip app-tooltip"

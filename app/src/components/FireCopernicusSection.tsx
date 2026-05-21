@@ -7,6 +7,7 @@ import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
+import MapTilerLogo from './MapTilerLogo'
 
 type CopernicusFirePoint = {
   id: string
@@ -903,6 +904,9 @@ export default function FireCopernicusSection() {
                 </g>
               )}
             </svg>
+            {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
+              <MapTilerLogo className="fire-copernicus__maptiler-logo" />
+            )}
             {hoveredFire && (
               <div
                 ref={tooltipRef}
