@@ -4,6 +4,7 @@ import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import EditorialLead from './EditorialLead'
 import LatestContractCard, { type LatestContractCardView } from './LatestContractCard'
+import MapTilerLogo from './MapTilerLogo'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
 import type { GeoFeature } from '../types'
 
@@ -471,43 +472,44 @@ export default function MapSelectionPanel({
               </button>
             </div>
           )}
-          <svg viewBox="0 0 520 320" role="img" aria-label={`Polygon ${label}`}>
-            <defs>
-              <clipPath id={mapClipPathId}>
-                <path d={previewGeometry.path ?? ''} />
-              </clipPath>
-            </defs>
-            <path
-              d={previewGeometry.path ?? ''}
-              fill="#1a3a5c"
-              fillOpacity="0.92"
-              stroke="#0f2237"
-              strokeWidth="1.3"
-            />
-            {showPreviewTerrain && (
-              <g clipPath={`url(#${mapClipPathId})`} className="maps-selection-panel__terrain">
-                {previewHillshadeTiles.map((tile) => (
-                  <image
-                    key={tile.key}
-                    href={tile.href}
-                    x={tile.x}
-                    y={tile.y}
-                    width={tile.width}
-                    height={tile.height}
-                    preserveAspectRatio="none"
-                    className="maps-selection-panel__terrain-tile"
-                    onError={() => setPreviewTerrainFailed(true)}
-                  />
-                ))}
-              </g>
-            )}
-            <path
-              d={previewGeometry.path ?? ''}
-              fill="none"
-              stroke="#0f2237"
-              strokeWidth="1.3"
-              vectorEffect="non-scaling-stroke"
-            />
+          <div className="maps-selection-panel__map-canvas">
+            <svg viewBox="0 0 520 320" role="img" aria-label={`Polygon ${label}`}>
+              <defs>
+                <clipPath id={mapClipPathId}>
+                  <path d={previewGeometry.path ?? ''} />
+                </clipPath>
+              </defs>
+              <path
+                d={previewGeometry.path ?? ''}
+                fill="#1a3a5c"
+                fillOpacity="0.92"
+                stroke="#0f2237"
+                strokeWidth="1.3"
+              />
+              {showPreviewTerrain && (
+                <g clipPath={`url(#${mapClipPathId})`} className="maps-selection-panel__terrain">
+                  {previewHillshadeTiles.map((tile) => (
+                    <image
+                      key={tile.key}
+                      href={tile.href}
+                      x={tile.x}
+                      y={tile.y}
+                      width={tile.width}
+                      height={tile.height}
+                      preserveAspectRatio="none"
+                      className="maps-selection-panel__terrain-tile"
+                      onError={() => setPreviewTerrainFailed(true)}
+                    />
+                  ))}
+                </g>
+              )}
+              <path
+                d={previewGeometry.path ?? ''}
+                fill="none"
+                stroke="#0f2237"
+                strokeWidth="1.3"
+                vectorEffect="non-scaling-stroke"
+              />
             {fireViewMode === 'shapes'
               ? (
                 <>
@@ -700,7 +702,11 @@ export default function MapSelectionPanel({
                 <circle cx={p.x} cy={p.y} r={3} fill="#f4cf42" stroke="#5c4a00" strokeWidth={0.9} />
               </g>
             ))}
-          </svg>
+            </svg>
+            {showPreviewTerrain && (
+              <MapTilerLogo className="maps-selection-panel__maptiler-logo" />
+            )}
+          </div>
           {hoveredFirePoint && (
             <div
               className="maps-selection-panel__fire-tooltip app-tooltip"

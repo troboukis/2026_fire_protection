@@ -6,6 +6,7 @@ import ContractModal, { type ContractModalContract } from '../components/Contrac
 import DataLoadingCard from '../components/DataLoadingCard'
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
+import MapTilerLogo from '../components/MapTilerLogo'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
@@ -2921,13 +2922,14 @@ export default function MunicipalitiesPage() {
                       style={{ left: 'auto', right: '0.45rem' }}
                     />
                     {selectedMunicipalityMap ? (
-                      <svg
-                        width={selectedMunicipalityMap.frameWidth}
-                        height={selectedMunicipalityMap.frameHeight}
-                        viewBox={selectedMunicipalityMap.viewBox}
-                        role="img"
-                        aria-label={`Περίγραμμα δήμου ${selectedName}`}
-                      >
+                      <>
+                        <svg
+                          width={selectedMunicipalityMap.frameWidth}
+                          height={selectedMunicipalityMap.frameHeight}
+                          viewBox={selectedMunicipalityMap.viewBox}
+                          role="img"
+                          aria-label={`Περίγραμμα δήμου ${selectedName}`}
+                        >
                         <defs>
                           <clipPath id={`municipality-fire-clip-${selectedMunicipalityKeyNormalized || 'selected'}`}>
                             <path d={selectedMunicipalityMap.d} />
@@ -3325,7 +3327,11 @@ export default function MunicipalitiesPage() {
                             </text>
                           )
                         })}
-                      </svg>
+                        </svg>
+                        {showSelectedMunicipalityTerrain && (
+                          <MapTilerLogo className="municipality-profile-hero__maptiler-logo" />
+                        )}
+                      </>
                     ) : (
                       <div className="municipality-profile-hero__map-fallback">
                         <span>Δεν υπάρχει διαθέσιμη γεωμετρία δήμου.</span>
