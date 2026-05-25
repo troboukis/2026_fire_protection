@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react'
+import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import * as d3 from 'd3'
 import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
@@ -6,6 +6,40 @@ import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 
 type HistoBin = { bin_lo: number; bin_hi: number; cnt: number | string; total_count?: number | string | null }
+
+type DirectAwardHistogramProps = {
+  amounts?: number[]
+  totalCount?: number
+  periodLabel?: string
+  embedded?: boolean
+}
+
+function buildHistogramBins(amounts: number[], totalCount: number): HistoBin[] {
+  const valuedAmounts = amounts.filter((amount) => Number.isFinite(amount) && amount >= 100)
+  if (valuedAmounts.length === 0) return []
+
+  const counts = new Map<number, number>()
+  for (const amount of valuedAmounts) {
+    const binIdx = Math.floor(Math.log10(amount) * 10)
+    counts.set(binIdx, (counts.get(binIdx) ?? 0) + 1)
+  }
+
+  const binIndexes = [...counts.keys()].sort((a, b) => a - b)
+  const lo = binIndexes[0]
+  const hi = binIndexes[binIndexes.length - 1]
+  const bins: HistoBin[] = []
+
+  for (let binIdx = lo; binIdx <= hi; binIdx += 1) {
+    bins.push({
+      bin_lo: Number(Math.pow(10, binIdx / 10).toFixed(2)),
+      bin_hi: Number(Math.pow(10, (binIdx + 1) / 10).toFixed(2)),
+      cnt: counts.get(binIdx) ?? 0,
+      total_count: totalCount,
+    })
+  }
+
+  return bins
+}
 
 function HistogramChart({ bins }: { bins: HistoBin[] }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -139,7 +173,7 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
           .style('left', `${event.clientX - rect.left + 12}px`)
           .style('top',  `${event.clientY - rect.top  - 42}px`)
       })
-      .on('mouseout', (_event: MouseEvent) => {
+      .on('mouseout', () => {
         tooltip.style('display', 'none')
         g.selectAll<SVGRectElement, HistoBin>('.da-bar').attr('fill', 'rgba(17,17,17,0.28)')
       })
@@ -182,13 +216,31 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
   )
 }
 
-export default function DirectAwardHistogram() {
+export default function DirectAwardHistogram({
+  amounts,
+  totalCount,
+  periodLabel = `2024–σήμερα`,
+  embedded = false,
+}: DirectAwardHistogramProps) {
   const [bins,    setBins]    = useState<HistoBin[]>([])
   const [total,   setTotal]   = useState(0)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(amounts === undefined)
   const [error,   setError]   = useState<string | null>(null)
+  const sectionClassName = embedded ? 'ca-section da-hist-embedded' : 'ca-section section-rule'
+  const localBins = useMemo(
+    () => amounts === undefined ? null : buildHistogramBins(amounts, totalCount ?? amounts.length),
+    [amounts, totalCount],
+  )
 
   useEffect(() => {
+    if (localBins !== null) {
+      setBins(localBins)
+      setTotal(totalCount ?? amounts?.length ?? 0)
+      setError(null)
+      setLoading(false)
+      return
+    }
+
     const controller = new AbortController()
     let cancelled = false
 
@@ -214,25 +266,25 @@ export default function DirectAwardHistogram() {
     })()
 
     return () => { cancelled = true; controller.abort() }
-  }, [])
+  }, [amounts?.length, localBins, totalCount])
 
   if (loading) {
     return (
-      <section className="ca-section section-rule" aria-label="Κατανομή Απευθείας Αναθέσεων">
+      <section className={sectionClassName} aria-label="Κατανομή Απευθείας Αναθέσεων">
         <DataLoadingCard message="Φόρτωση κατανομής αξιών απευθείας αναθέσεων…" />
       </section>
     )
   }
 
   return (
-    <section className="ca-section section-rule" aria-label="Κατανομή Απευθείας Αναθέσεων">
+    <section className={sectionClassName} aria-label="Κατανομή Απευθείας Αναθέσεων">
       <ComponentTag name="DirectAwardHistogram" />
 
       <div className="ca-header section-head">
         <div className="eyebrow">Κατανομή</div>
         <h2>Απευθείας Αναθέσεις</h2>
         <p className="ca-header-note">
-          Ανάλυση <strong>{total.toLocaleString('el-GR')} απευθείας αναθέσεων</strong> (2024–σήμερα). Το ιστόγραμμα απεικονίζει όσες έχουν γνωστή αξία άνω των €100, ανά αξία σύμβασης (χωρίς ΦΠΑ).
+          Ανάλυση <strong>{total.toLocaleString('el-GR')} απευθείας αναθέσεων</strong> ({periodLabel}). Το ιστόγραμμα απεικονίζει όσες έχουν γνωστή αξία άνω των €100, ανά αξία σύμβασης (χωρίς ΦΠΑ).
           Ο οριζόντιος άξονας είναι λογαριθμικός.
         </p>
         {error && <p className="ca-empty-note">Σφάλμα: {error}</p>}
