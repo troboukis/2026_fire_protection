@@ -5,6 +5,7 @@ import { isAbortError } from '../lib/isAbortError'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
+import DirectAwardHistogram from './DirectAwardHistogram'
 import TopAuthoritiesSection from './TopAuthoritiesSection'
 // ── Τύποι ────────────────────────────────────────────────────────────
 type BarItem = {
@@ -892,6 +893,8 @@ export default function ContractAnalysis() {
         totalSpendM: 0,
         topCpv: [] as TopCpvItem[],
         sunburstData: null as SunburstDatum | null,
+        directAwardAmounts: [] as number[],
+        directAwardTotal: 0,
       }
     }
 
@@ -908,6 +911,7 @@ export default function ContractAnalysis() {
     const procedureMap = new Map<string, { count: number; total: number }>()
     const cpvAggMap = new Map<string, { count: number; procedures: Map<string, number> }>()
     const topOrgMap = new Map<string, { contracts: number; total: number }>()
+    const directAwardAmounts: number[] = []
 
     for (const row of rows) {
       const ct = contractTypeMap.get(row.contractType) ?? { count: 0, total: 0 }
@@ -930,6 +934,10 @@ export default function ContractAnalysis() {
         ca.count += 1
         ca.procedures.set(row.procedure, (ca.procedures.get(row.procedure) ?? 0) + 1)
         cpvAggMap.set(cpv, ca)
+      }
+
+      if (row.procedure === 'Απευθείας Ανάθεση') {
+        directAwardAmounts.push(row.amount)
       }
     }
 
@@ -969,8 +977,12 @@ export default function ContractAnalysis() {
       totalSpendM: totalAmount / 1_000_000,
       topCpv,
       sunburstData: buildProcedureAuthoritySunburstData(rows),
+      directAwardAmounts,
+      directAwardTotal: directAwardAmounts.length,
     }
   }, [analysis, analysisPeriod])
+
+  const analysisPeriodLabel = analysisPeriod === 'all' ? `2024–${CURRENT_YEAR}` : analysisPeriod
 
   const chartNote = useMemo(() => {
     if (monthly.length === 0) return 'Δεν υπάρχουν διαθέσιμα μηνιαία δεδομένα.'
@@ -1089,6 +1101,13 @@ export default function ContractAnalysis() {
           </div>
         </div>
       </div>
+
+      <DirectAwardHistogram
+        amounts={sectionFiltered.directAwardAmounts}
+        totalCount={sectionFiltered.directAwardTotal}
+        periodLabel={analysisPeriodLabel}
+        embedded
+      />
 
       <div className="ca-findings" style={{ borderTop: '1px solid var(--line)' }}>
         <div className="eyebrow">GOOD TO KNOW</div>

@@ -5,6 +5,7 @@ import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components
 import ComponentTag from './components/ComponentTag'
 import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
+import MapTilerLogo from './components/MapTilerLogo'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
@@ -2023,6 +2024,15 @@ export default function App() {
               Ανεξάρτητη πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη και αντιμετώπιση δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
             </p>
             <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη ή παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
+            <div className="about-thanks">
+              <div className="about-thanks__header">
+                <h3>Ευχαριστίες</h3>
+                <MapTilerLogo className="about-thanks__maptiler-logo" />
+              </div>
+              <p>
+                Η <a href="https://www.maptiler.com/" target="_blank" rel="noreferrer">MapTiler</a> υποστηρίζει ευγενικά το FireWatch, επιτρέποντάς μας να χρησιμοποιούμε στους χάρτες την υπηρεσία hillshade χωρίς κόστος. Η υποστήριξη αυτή είναι ιδιαίτερα πολύτιμη για πρωτοβουλίες που προωθούν τη διαφάνεια, τη λογοδοσία και τη δημοσιογραφία προς όφελος του δημοσίου συμφέροντος.
+              </p>
+            </div>
           </div>
           <div className="about-panel__right dev-tag-anchor">
             <DebugClassLabel name="about-panel__right" style={{ left: 'auto', right: '0.45rem' }} />

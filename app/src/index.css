@@ -2600,6 +2600,44 @@ main {
   max-width: 44ch;
 }
 
+.about-thanks {
+  margin-top: 0.15rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  max-width: 44ch;
+}
+
+.about-thanks__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.about-thanks h3 {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.about-thanks__maptiler-logo {
+  position: static;
+  z-index: auto;
+  flex: 0 0 auto;
+}
+
+.about-thanks__maptiler-logo img {
+  height: 18px;
+}
+
+.about-panel__left .about-thanks p {
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
 .about-panel__right {
   display: grid;
   grid-template-columns: minmax(200px, 0.95fr) 1.05fr;
