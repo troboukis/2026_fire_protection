@@ -929,9 +929,9 @@ export default function FireCopernicusSection() {
           </div>
         )}
         {mapData && (
-          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus">
+          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus EFFIS">
             <span className="fire-copernicus__legend-dot" aria-hidden="true" />
-            <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus' : 'Καμένη έκταση Copernicus'}</span>
+            <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus EFFIS' : 'Καμένη έκταση Copernicus EFFIS'}</span>
           </div>
         )}
       </div>

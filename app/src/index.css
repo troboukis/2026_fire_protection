@@ -1223,17 +1223,6 @@ main {
   overflow: hidden;
 }
 
-.hero-background-year {
-  position: absolute;
-  inset: 0.25rem auto auto 0.5rem;
-  font-size: clamp(5rem, 17vw, 14rem);
-  line-height: 0.8;
-  letter-spacing: -0.06em;
-  color: rgba(17, 17, 17, 0.07);
-  font-weight: 700;
-  pointer-events: none;
-}
-
 .hero-amount-card {
   position: relative;
   border: 1px solid var(--line-strong);
@@ -3594,6 +3583,12 @@ main {
   box-shadow: 0 2px 6px rgba(23, 20, 17, 0.18);
 }
 
+.maps-stage__view-btn--active:hover,
+.maps-stage__view-btn--active:focus-visible {
+  background: #171411;
+  color: #f6efe4;
+}
+
 .maps-legend {
   display: grid;
   gap: 0.35rem;
@@ -4383,10 +4378,15 @@ main {
     height: 420px;
   }
 
+  .maps-stage__view-toggle,
   .maps-stage__metric-toggle {
-    top: 3.65rem;
-    right: auto;
-    left: 0.85rem;
+    max-width: calc(100% - 1.7rem);
+  }
+
+  .maps-stage__metric-toggle {
+    top: 0.85rem;
+    right: 0.85rem;
+    left: auto;
   }
 }
 
@@ -5085,6 +5085,7 @@ main {
 
 .da-hist-chart-block {
   border-bottom: 0;
+  padding-inline: 0.35rem;
 }
 
 .ca-d3-bar-svg {
@@ -6385,6 +6386,7 @@ main {
 .municipality-profile-hero__map-note {
   display: flex;
   justify-content: flex-end;
+  min-height: 0.87rem;
   font-family: var(--font-mono);
   font-size: 0.6rem;
   line-height: 1.45;

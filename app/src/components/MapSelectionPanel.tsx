@@ -298,14 +298,6 @@ export default function MapSelectionPanel({
     [municipalityRegionalWorkPoints, projectWorkDots],
   )
 
-  const uniqueFireLocations = useMemo(() => {
-    const uniq = new Set<string>()
-    for (const p of municipalityFirePoints) {
-      uniq.add(`${p.lat.toFixed(6)}|${p.lon.toFixed(6)}`)
-    }
-    return uniq.size
-  }, [municipalityFirePoints])
-
   const projectedCityPoints = useMemo(() => {
     if (!previewGeometry || !municipalityFeature || cityPoints.length === 0) {
       return [] as Array<{ x: number; y: number; name: string; textX: number; textY: number; textAnchor: 'start' | 'end' }>
@@ -749,32 +741,19 @@ export default function MapSelectionPanel({
                       </>
                     )}
                     {' · '}
-                    <span className="maps-selection-panel__shape-source">Πηγή: Copernicus</span>
-                    {previewHillshadeTiles.length > 0 && (
-                      <>
-                        {' · '}
-                        <span className="maps-selection-panel__shape-source">Ανάγλυφο εδάφους: MapTiler hillshade</span>
-                      </>
-                    )}
-                    {` · ${uniqueFireLocations.toLocaleString('el-GR')} σημεία`}
+                    <span className="maps-selection-panel__shape-source">Πηγή: Copernicus EFFIS</span>
                   </>
                 )
                 : (
                   <>
                     Δεν βρέθηκαν δασικές πυρκαγιές
-                    {previewHillshadeTiles.length > 0 && (
-                      <>
-                        {' · '}
-                        <span className="maps-selection-panel__shape-source">Ανάγλυφο εδάφους: MapTiler hillshade</span>
-                      </>
-                    )}
                   </>
                 )}
             {!municipalityWorkLoading && projectedMunicipalityWorkDots.length > 0 && (
               <>
                 {' · '}
                 <span className="maps-legend-dot maps-legend-dot--work" aria-hidden="true" />
-                {` ΕΡΓΑΣΙΕΣ ΔΗΜΟΥ — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}
+                {` Αντιπυρικές εργασίες — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}
               </>
             )}
             {!municipalityWorkLoading && projectedRegionalWorkDots.length > 0 && (
