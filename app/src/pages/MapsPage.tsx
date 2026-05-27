@@ -9,7 +9,7 @@ import type { LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
-import { summarizePaymentRows } from '../lib/paymentSummary'
+import { summarizePaymentRows, type PaymentSummaryRow } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
 
@@ -515,6 +515,37 @@ export default function MapsPage() {
     return s.split('|').map(x => x.trim()).filter(Boolean)[0] ?? null
   }
 
+  const loadPaymentSummaryByProcurementIds = async (ids: string[]): Promise<Map<string, ReturnType<typeof summarizePaymentRows>>> => {
+    const numericIds = Array.from(new Set(
+      ids
+        .map((id) => Number(id))
+        .filter((id) => Number.isFinite(id)),
+    ))
+    const out = new Map<string, ReturnType<typeof summarizePaymentRows>>()
+    if (numericIds.length === 0) return out
+
+    const { data, error } = await supabase
+      .from('payment')
+      .select('procurement_id, beneficiary_name, beneficiary_vat_number, amount_without_vat')
+      .in('procurement_id', numericIds)
+
+    if (error) throw error
+
+    const rowsByProcurementId = new Map<string, PaymentSummaryRow[]>()
+    for (const row of (data ?? []) as Array<PaymentSummaryRow & { procurement_id: number | string | null }>) {
+      const procurementId = cleanText(row.procurement_id)
+      if (!procurementId) continue
+      const rows = rowsByProcurementId.get(procurementId) ?? []
+      rows.push(row)
+      rowsByProcurementId.set(procurementId, rows)
+    }
+
+    for (const [procurementId, rows] of rowsByProcurementId.entries()) {
+      out.set(procurementId, summarizePaymentRows(rows))
+    }
+    return out
+  }
+
   const openContractModal = async (id: string) => {
     const contractId = Number(id)
     if (!Number.isFinite(contractId)) return
@@ -928,7 +959,11 @@ export default function MapsPage() {
         ])
         if (error) throw error
         if (summaryError) throw summaryError
-        const mapped: MunicipalityLatestContract[] = ((data ?? []) as MunicipalityContractRpcRow[])
+        const rows = (data ?? []) as MunicipalityContractRpcRow[]
+        const paymentSummaryByProcurementId = await loadPaymentSummaryByProcurementIds(
+          rows.map((row) => String(row.procurement_id)),
+        )
+        const mapped: MunicipalityLatestContract[] = rows
           .map((row) => buildLatestContractCardView({
             id: String(row.procurement_id),
             organizationName: String(row.organization_value ?? row.organization_key ?? '—').trim() || '—',
@@ -937,8 +972,9 @@ export default function MapsPage() {
             when: fmtDate(row.contract_signed_date),
             what: String(row.title ?? '').trim() || '—',
             why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
-            howMuch: fmtEur(row.amount_without_vat),
-            beneficiary: String(row.beneficiary_name ?? '').trim() || '—',
+            howMuch: fmtEur(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat),
+            beneficiary: String(paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_name ?? row.beneficiary_name ?? '').trim() || '—',
+            beneficiaryVat: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_vat_number ?? null,
             contractType: String(row.procedure_type_value ?? '—').trim() || '—',
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
@@ -1009,7 +1045,11 @@ export default function MapsPage() {
         ])
         if (error) throw error
         if (summaryError) throw summaryError
-        const mapped: MunicipalityLatestContract[] = ((data ?? []) as RegionContractRpcRow[])
+        const rows = (data ?? []) as RegionContractRpcRow[]
+        const paymentSummaryByProcurementId = await loadPaymentSummaryByProcurementIds(
+          rows.map((row) => String(row.procurement_id)),
+        )
+        const mapped: MunicipalityLatestContract[] = rows
           .map((row) => buildLatestContractCardView({
             id: String(row.procurement_id),
             organizationName: String(row.organization_value ?? row.organization_key ?? '—').trim() || '—',
@@ -1017,8 +1057,9 @@ export default function MapsPage() {
             when: fmtDate(row.contract_signed_date),
             what: String(row.title ?? '').trim() || '—',
             why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
-            howMuch: fmtEur(row.amount_without_vat),
-            beneficiary: String(row.beneficiary_name ?? '').trim() || '—',
+            howMuch: fmtEur(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat),
+            beneficiary: String(paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_name ?? row.beneficiary_name ?? '').trim() || '—',
+            beneficiaryVat: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_vat_number ?? null,
             contractType: String(row.procedure_type_value ?? '—').trim() || '—',
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,

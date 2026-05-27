@@ -61,14 +61,21 @@ export default function FeaturedRecordsSection({
     const container = recordsGridRef.current
     if (!container) return
 
+    let frameId: number | null = null
+
     const updatePager = () => {
       const scrollMax = container.scrollWidth - container.clientWidth
       setCanScrollPrev(container.scrollLeft > 24)
       setCanScrollNext(container.scrollLeft < scrollMax - 1)
     }
 
+    const scheduleUpdatePager = () => {
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+      frameId = window.requestAnimationFrame(updatePager)
+    }
+
     container.scrollLeft = 0
-    updatePager()
+    scheduleUpdatePager()
     const resetFrame = window.requestAnimationFrame(() => {
       container.scrollLeft = 0
       updatePager()
@@ -77,14 +84,20 @@ export default function FeaturedRecordsSection({
       container.scrollLeft = 0
       updatePager()
     }, 120)
+    const observer = new ResizeObserver(scheduleUpdatePager)
+    observer.observe(container)
     container.addEventListener('scroll', updatePager, { passive: true })
-    window.addEventListener('resize', updatePager)
+    window.addEventListener('resize', scheduleUpdatePager)
+    window.addEventListener('orientationchange', scheduleUpdatePager)
 
     return () => {
+      observer.disconnect()
       window.cancelAnimationFrame(resetFrame)
       window.clearTimeout(resetTimeout)
+      if (frameId != null) window.cancelAnimationFrame(frameId)
       container.removeEventListener('scroll', updatePager)
-      window.removeEventListener('resize', updatePager)
+      window.removeEventListener('resize', scheduleUpdatePager)
+      window.removeEventListener('orientationchange', scheduleUpdatePager)
     }
   }, [rows, loading])
 
