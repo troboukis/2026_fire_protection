@@ -1702,19 +1702,32 @@ export default function App() {
     const container = latestContractsItemsRef.current
     if (!container) return
 
+    let frameId: number | null = null
+
     const updateLatestContractsPager = () => {
       const scrollMax = container.scrollWidth - container.clientWidth
       setLatestContractsCanScrollPrev(container.scrollLeft > 1)
       setLatestContractsCanScrollNext(container.scrollLeft < scrollMax - 1)
     }
 
-    updateLatestContractsPager()
+    const scheduleUpdateLatestContractsPager = () => {
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+      frameId = window.requestAnimationFrame(updateLatestContractsPager)
+    }
+
+    scheduleUpdateLatestContractsPager()
+    const observer = new ResizeObserver(scheduleUpdateLatestContractsPager)
+    observer.observe(container)
     container.addEventListener('scroll', updateLatestContractsPager, { passive: true })
-    window.addEventListener('resize', updateLatestContractsPager)
+    window.addEventListener('resize', scheduleUpdateLatestContractsPager)
+    window.addEventListener('orientationchange', scheduleUpdateLatestContractsPager)
 
     return () => {
+      observer.disconnect()
       container.removeEventListener('scroll', updateLatestContractsPager)
-      window.removeEventListener('resize', updateLatestContractsPager)
+      window.removeEventListener('resize', scheduleUpdateLatestContractsPager)
+      window.removeEventListener('orientationchange', scheduleUpdateLatestContractsPager)
+      if (frameId != null) window.cancelAnimationFrame(frameId)
     }
   }, [latestContracts, latestContractsLoading])
 

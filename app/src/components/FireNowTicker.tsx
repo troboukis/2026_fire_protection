@@ -203,8 +203,6 @@ export default function FireNowTicker() {
     }
   }, [])
 
-  // After items render, measure widths and calculate how many groups are needed
-  // so the track always fills the viewport with no gap at the loop point.
   useLayoutEffect(() => {
     if (!shouldScroll) {
       setGroupCount(1)
@@ -212,18 +210,43 @@ export default function FireNowTicker() {
       return
     }
 
+    let frameId: number | null = null
+
+    const measure = () => {
+      const viewport = viewportRef.current
+      const group = groupRef.current
+      if (!viewport || !group) return
+
+      const groupWidth = group.offsetWidth
+      if (groupWidth === 0) return
+
+      const viewportWidth = viewport.offsetWidth
+      const needed = Math.ceil((viewportWidth * 2) / groupWidth) + 1
+      setGroupCount(Math.max(2, needed))
+      setAnimDuration(Math.round(groupWidth / 35))
+    }
+
+    const scheduleMeasure = () => {
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+      frameId = window.requestAnimationFrame(measure)
+    }
+
+    scheduleMeasure()
+
     const viewport = viewportRef.current
     const group = groupRef.current
     if (!viewport || !group) return
 
-    const groupWidth = group.offsetWidth
-    if (groupWidth === 0) return
+    const observer = new ResizeObserver(scheduleMeasure)
+    observer.observe(viewport)
+    observer.observe(group)
+    window.addEventListener('orientationchange', scheduleMeasure)
 
-    const viewportWidth = viewport.offsetWidth
-    // Need at least 2× viewport width worth of groups so no gap is ever visible.
-    const needed = Math.ceil((viewportWidth * 2) / groupWidth) + 1
-    setGroupCount(Math.max(2, needed))
-    setAnimDuration(Math.round(groupWidth / 35))
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('orientationchange', scheduleMeasure)
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+    }
   }, [items, shouldScroll])
 
   if (loading) return null
