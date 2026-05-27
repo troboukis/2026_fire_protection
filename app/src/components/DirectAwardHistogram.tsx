@@ -55,7 +55,7 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
     if (activeBins.length === 0) return
 
     const isMobile = containerW <= 440
-    const margin = { top: 10, right: isMobile ? 2 : 4, bottom: isMobile ? 44 : 36, left: isMobile ? 44 : 56 }
+    const margin = { top: 10, right: isMobile ? 2 : 6, bottom: isMobile ? 44 : 36, left: isMobile ? 34 : 40 }
     const W = containerW
     const H = isMobile ? 210 : 280
     const innerW = W - margin.left - margin.right
@@ -298,6 +298,9 @@ export default function DirectAwardHistogram({
           ? <HistogramChart bins={bins} />
           : <p className="ca-empty-note">Δεν βρέθηκαν απευθείας αναθέσεις.</p>
         }
+        <p className="ca-sub-note da-hist-legal-note">
+          Με τον ν. 4782/2021 το ανώτατο όριο της εκτιμώμενης δαπάνης μέχρι του οποίου μπορεί να συναφθεί σύμβαση με απευθείας ανάθεση αυξήθηκε (από 1.6.2021) από 20.000 ευρώ σε 30.000 ευρώ για τις συμβάσεις προμηθειών και γενικών υπηρεσιών και σε 60.000 ευρώ για τις δημόσιες συμβάσεις έργων ή κοινωνικών και άλλων ειδικών υπηρεσιών καθώς και έργων Τεχνολογίας Πληροφορικής και Επικοινωνιών με αντικείμενο την εξασφάλιση της διαλειτουργικότητας των ψηφιακών υπηρεσιών ή τον εκσυγχρονισμό των ψηφιακών εργαλείων της Κεντρικής Διοίκησης.
+        </p>
       </div>
     </section>
   )

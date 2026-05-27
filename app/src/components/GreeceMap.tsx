@@ -8,8 +8,9 @@ const FILL_DEFAULT  = '#e6e4de'
 const FILL_SELECTED = '#1a3a5c'   /* dark navy */
 const STROKE        = 'rgba(153,148,140,0.42)'
 const STROKE_W      = 0.5
-const MAP_SCALE_BOOST       = .98
-const MAP_TRANSLATE_Y_RATIO = 0.000
+const MAP_SCALE_BOOST       = 1.035
+const MAP_TRANSLATE_X_RATIO = 0
+const MAP_TRANSLATE_Y_RATIO = 0.045
 const ATTICA_FOCUS_WINDOW: [[number, number], [number, number]] = [
   [23.32, 37.43],
   [24.12, 38.43],
@@ -153,7 +154,7 @@ export function GreeceMap({
       return { ...geojson, features } as unknown as d3.ExtendedFeatureCollection
     })()
 
-    const framePad = viewMode === 'attica' ? 26 : 18
+    const framePad = viewMode === 'attica' ? 14 : 6
     const projection = d3.geoMercator().fitExtent(
       [[framePad, framePad], [width - framePad, height - framePad]],
       focusCollection as d3.GeoPermissibleObjects,
@@ -164,7 +165,7 @@ export function GreeceMap({
     projection
       .scale(projection.scale() * k)
       .translate([
-        k * tx - (k - 1) * (width / 2),
+        k * tx - (k - 1) * (width / 2) + width * MAP_TRANSLATE_X_RATIO,
         k * ty - (k - 1) * (height / 2) + height * MAP_TRANSLATE_Y_RATIO,
       ])
     return projection

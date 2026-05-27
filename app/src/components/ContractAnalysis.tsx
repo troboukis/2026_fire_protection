@@ -528,6 +528,30 @@ function truncateLabel(label: string, maxLength: number): string {
   return `${label.slice(0, Math.max(0, maxLength - 1)).trimEnd()}…`
 }
 
+function sunburstDisplayLabelLines(label: string, depth: number, isCompact: boolean): string[] {
+  if (!isCompact) return [truncateLabel(label, depth === 1 ? 18 : 16)]
+
+  const compactProcedureLabels: Record<string, string[]> = {
+    'Απευθείας Ανάθεση': ['Απευθείας', 'Ανάθεση'],
+    'Ανοιχτή Διαδικασία': ['Ανοιχτή', 'Διαδικασία'],
+    'Διαπραγμάτευση': ['Διαπραγμ.'],
+  }
+
+  const mappedLines = depth === 1 ? compactProcedureLabels[label] : undefined
+  if (mappedLines) return mappedLines
+
+  const words = label.split(/\s+/).filter(Boolean)
+  if (words.length <= 1) return [truncateLabel(label, depth === 1 ? 11 : 8)]
+
+  const lineLimit = depth === 1 ? 2 : 1
+  const maxLineLength = depth === 1 ? 11 : 8
+  const lines = words.slice(0, lineLimit).map((word) => truncateLabel(word, maxLineLength))
+  if (words.length > lineLimit && lines.length > 0) {
+    lines[lines.length - 1] = truncateLabel(`${lines[lines.length - 1]}…`, maxLineLength)
+  }
+  return lines
+}
+
 function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -551,7 +575,9 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
     if (containerW === 0) return
 
     const isCompact = containerW <= BREAKPOINT_SM
-    const size = Math.max(320, Math.min(containerW, 720))
+    const size = isCompact
+      ? Math.max(260, Math.min(containerW, 360))
+      : Math.max(320, Math.min(containerW, 720))
 
     const rootHierarchy = d3.hierarchy(data)
       .sum((d) => d.value ?? 0)
@@ -613,11 +639,12 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       const ringThickness = Math.max(1, radialAt(d.y1) - radialAt(d.y0))
       const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
       const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
-      const charCount = Math.max(1, node.data.name.length)
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const charCount = Math.max(1, ...lines.map((line) => line.length))
       const maxByArc = arcLength / Math.max(charCount * 0.62, 1)
-      const maxByRing = ringThickness * (node.depth === 1 ? 0.34 : 0.26)
-      const maxSize = Math.min(maxByArc, maxByRing, isCompact ? (node.depth === 1 ? 7.2 : 6.1) : (node.depth === 1 ? 10 : 9))
-      const minSize = isCompact ? (node.depth === 1 ? 6.1 : 5.2) : (node.depth === 1 ? 7.2 : 6.2)
+      const maxByRing = ringThickness / (lines.length * 1.15)
+      const maxSize = Math.min(maxByArc, maxByRing, isCompact ? (node.depth === 1 ? 6.4 : 5.4) : (node.depth === 1 ? 10 : 9))
+      const minSize = isCompact ? (node.depth === 1 ? 5.2 : 4.7) : (node.depth === 1 ? 7.2 : 6.2)
       return Number(Math.max(minSize, maxSize).toFixed(1))
     }
     const labelCanFit = (node: SunburstNode) => {
@@ -626,11 +653,10 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
       const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
       const fontSize = labelFontSize(node)
-      const estimatedTextWidth = truncateLabel(
-        node.data.name,
-        isCompact ? (node.depth === 1 ? 14 : 11) : (node.depth === 1 ? 18 : 16),
-      ).length * fontSize * 0.58
-      return estimatedTextWidth <= arcLength * 0.92 && fontSize <= ringThickness * 0.82
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const estimatedTextWidth = Math.max(...lines.map((line) => line.length)) * fontSize * 0.6
+      const estimatedTextHeight = lines.length * fontSize * 1.15
+      return estimatedTextWidth <= arcLength * (isCompact ? 0.78 : 0.92) && estimatedTextHeight <= ringThickness * 0.78
     }
 
     const g = svg.append('g')
@@ -710,7 +736,18 @@ function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       .attr('transform', (node) => labelTransform(node.current))
       .attr('class', (node) => `ca-sunburst-label${node.depth === 1 ? ' ca-sunburst-label--inner' : ''}`)
       .style('font-size', (node) => `${labelFontSize(node as SunburstNode)}px`)
-      .text((node) => truncateLabel(node.data.name, isCompact ? (node.depth === 1 ? 14 : 11) : (node.depth === 1 ? 18 : 16)))
+
+    label.each(function (node) {
+      const text = d3.select(this)
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const firstDy = lines.length > 1 ? `${-0.3 * (lines.length - 1)}em` : '0.35em'
+      lines.forEach((line, index) => {
+        text.append('tspan')
+          .attr('x', 0)
+          .attr('dy', index === 0 ? firstDy : '1.05em')
+          .text(line)
+      })
+    })
 
     let focus = root
 

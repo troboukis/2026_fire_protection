@@ -1,14 +1,14 @@
 export type MunicipalityFireYearSource = 'forest_fire' | 'copernicus' | null
 
 export function getMunicipalityFireYearSource(year: number, latestAvailableYear: number): MunicipalityFireYearSource {
-  if (year >= 2000 && year <= 2024) return 'forest_fire'
-  if (year >= 2025 && year <= Math.min(latestAvailableYear, 2026)) return 'copernicus'
+  if (year >= 2000 && year < 2024) return 'forest_fire'
+  if (year >= 2024 && year <= Math.min(latestAvailableYear, 2026)) return 'copernicus'
   return null
 }
 
 export function getMunicipalityFireYearSourceLabel(source: MunicipalityFireYearSource): string {
   if (source === 'forest_fire') return 'Πυροσβεστική Υπηρεσία'
-  if (source === 'copernicus') return 'Copernicus'
+  if (source === 'copernicus') return 'Copernicus EFFIS'
   return 'χωρίς πηγή'
 }
 
@@ -20,5 +20,5 @@ export function getMunicipalityFireYearOptionLabel(year: number, latestAvailable
 export function getMunicipalityFireYearEmptyState(year: number, source: MunicipalityFireYearSource, latestAvailableYear = 2026): string {
   if (source === 'forest_fire') return `Δεν βρέθηκαν δεδομένα της Πυροσβεστικής Υπηρεσίας για το ${year}.`
   if (source === 'copernicus') return `Δεν βρέθηκαν Copernicus δεδομένα για το ${year}.`
-  return `Δεν υπάρχει διαθέσιμη πηγή για το ${year}. Διαθέσιμες πηγές: 2000-2024 Πυροσβεστική Υπηρεσία και 2025-${Math.min(latestAvailableYear, 2026)} Copernicus.`
+  return `Δεν υπάρχει διαθέσιμη πηγή για το ${year}. Διαθέσιμες πηγές: 2000-2023 Πυροσβεστική Υπηρεσία και 2024-${Math.min(latestAvailableYear, 2026)} Copernicus EFFIS.`
 }

@@ -744,8 +744,8 @@ function buildContractStepPath(points: ContractCurvePoint[], maxValue: number): 
 }
 
 function getFireSourceDisplayLabel(source: string | null): string {
-  if (source === 'forest_fire') return 'Πυροσβεστική Υπηρεσία'
-  if (source === 'copernicus') return 'Copernicus'
+  if (source === 'forest_fire') return 'ΠΗΓΗ: ΠΥΡΟΣΒΕΣΤΙΚΗ ΥΠΗΡΕΣΙΑ'
+  if (source === 'copernicus') return 'ΠΗΓΗ: COPERNICUS EFFIS'
   return '—'
 }
 
@@ -1379,17 +1379,16 @@ export default function MunicipalitiesPage() {
 
   const selectedFireSource = getMunicipalityFireYearSource(selectedFireYear, currentYear)
   const selectedFireSourceLabel = getFireSourceDisplayLabel(selectedFireSource)
-  const selectedTerrainSourceLabel = showSelectedMunicipalityTerrain ? 'Ανάγλυφο εδάφους: MapTiler hillshade' : null
 
   const selectedForestFireRows = useMemo(
-    () => (selectedFireYear >= 2000 && selectedFireYear <= 2024
+    () => (selectedFireYear >= 2000 && selectedFireYear < 2024
       ? forestFireRows.filter((row) => toNumber(row.year) === selectedFireYear)
       : []),
     [forestFireRows, selectedFireYear],
   )
 
   const selectedCopernicusRows = useMemo(
-    () => (selectedFireYear >= 2025 && selectedFireYear <= currentYear
+    () => (selectedFireYear >= 2024 && selectedFireYear <= currentYear
       ? copernicusRows.filter((row) => extractYear(row.firedate) === selectedFireYear)
       : []),
     [copernicusRows, currentYear, selectedFireYear],
@@ -1516,6 +1515,8 @@ export default function MunicipalitiesPage() {
     const seen = new Set<string>()
 
     return workRows.flatMap((row) => {
+      if (extractYear(row.contract_signed_date) !== selectedFireYear) return []
+
       const lat = toNumber(row.lat)
       const lon = toNumber(row.lon)
       if (lat == null || lon == null) return []
@@ -1554,15 +1555,10 @@ export default function MunicipalitiesPage() {
         referenceNumber: cleanText(row.reference_number),
       }]
     })
-  }, [selectedMunicipalityFeature, selectedMunicipalityMap, workRows])
-
-  const selectedWorksLabel = workRowsLoading
-    ? 'Εργασίες: φόρτωση'
-    : municipalityWorkMarkers.length > 0
-      ? `Εργασίες: ${formatNumber(municipalityWorkMarkers.length)}`
-      : null
+  }, [selectedFireYear, selectedMunicipalityFeature, selectedMunicipalityMap, workRows])
 
   const hasCopernicusShapes = copernicusShapes.length > 0
+  const hasSelectedFireLegend = forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes
   const municipalityMapLegendItems = useMemo(() => {
     const items: Array<{ key: string; tone: 'city' | 'work' | 'fire'; label: string }> = []
 
@@ -1582,11 +1578,11 @@ export default function MunicipalitiesPage() {
       })
     }
 
-    if (forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes) {
+    if (hasSelectedFireLegend) {
       items.push({
         key: 'fire',
         tone: 'fire',
-        label: 'Δασική πυρκαγιά',
+        label: 'Πυρκαγιά',
       })
     }
 
@@ -1595,6 +1591,7 @@ export default function MunicipalitiesPage() {
     copernicusMarkers.length,
     forestFireMarkers.length,
     hasCopernicusShapes,
+    hasSelectedFireLegend,
     municipalityWorkMarkers.length,
     selectedMunicipalityCityPoints.length,
     workRowsLoading,
@@ -3367,7 +3364,7 @@ export default function MunicipalitiesPage() {
                         </div>
                       )}
 	                    <div className="municipality-profile-hero__map-note">
-	                      <span>{[selectedFireSourceLabel, selectedTerrainSourceLabel, selectedWorksLabel].filter(Boolean).join(' • ')}</span>
+		                      <span>{hasSelectedFireLegend ? selectedFireSourceLabel : null}</span>
 	                    </div>
                     </div>
 	                </div>

@@ -7,12 +7,13 @@ import {
 } from './municipalityFireYearSource'
 
 describe('municipalityFireYearSource helpers', () => {
-  it('maps 2000-2024 to forest_fire', () => {
+  it('maps 2000-2023 to forest_fire', () => {
     expect(getMunicipalityFireYearSource(2000, 2026)).toBe('forest_fire')
-    expect(getMunicipalityFireYearSource(2024, 2026)).toBe('forest_fire')
+    expect(getMunicipalityFireYearSource(2023, 2026)).toBe('forest_fire')
   })
 
-  it('maps 2025 through latest available year to copernicus', () => {
+  it('maps 2024 through latest available year to copernicus', () => {
+    expect(getMunicipalityFireYearSource(2024, 2026)).toBe('copernicus')
     expect(getMunicipalityFireYearSource(2025, 2026)).toBe('copernicus')
     expect(getMunicipalityFireYearSource(2026, 2026)).toBe('copernicus')
   })

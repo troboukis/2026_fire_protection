@@ -1890,9 +1890,6 @@ export default function App() {
 
           <div className="hero-right dev-tag-anchor">
             <DebugClassLabel name="hero-right" style={{ left: 'auto', right: '0.45rem' }} />
-            <div className="hero-background-year" aria-hidden="true">
-              {currentYear}
-            </div>
             <div className="hero-amount-card dev-tag-anchor">
               <DebugClassLabel name="hero-amount-card" />
               <div className="eyebrow">
