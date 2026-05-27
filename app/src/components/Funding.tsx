@@ -284,9 +284,6 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
 
       <div className="hero-left funding-hero__left dev-tag-anchor">
         <ComponentTag name="funding-hero__left" kind="CLASS" className="component-tag--overlay" />
-        <div className="funding-hero__background-year" aria-hidden="true">
-          {fundingData?.yearMain ?? currentYear}
-        </div>
         <div className="hero-amount-card funding-hero__amount-card dev-tag-anchor">
           <ComponentTag name="funding-hero__amount-card" kind="CLASS" className="component-tag--overlay" />
           <div className="eyebrow">{`ΧΡΗΜΑΤΟΔΟΤΗΣΗ - ${fundingData?.yearMain ?? currentYear}`}</div>

@@ -1299,17 +1299,6 @@ main {
   align-content: start;
 }
 
-.funding-hero__background-year {
-  position: absolute;
-  inset: 0.25rem auto auto 0.5rem;
-  font-size: clamp(5rem, 17vw, 14rem);
-  line-height: 0.8;
-  letter-spacing: -0.06em;
-  color: rgba(17, 17, 17, 0.07);
-  font-weight: 700;
-  pointer-events: none;
-}
-
 .funding-hero__amount-card {
   display: grid;
   gap: 0.7rem;
