@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
+import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import type { GeoData } from '../types'
 
 type OrganizationTimelineItem = {
@@ -64,8 +65,7 @@ function OrganizationActivityMap({
     let cancelled = false
 
     const loadGeojson = async () => {
-      const res = await fetch(`${import.meta.env.BASE_URL}municipalities.geojson`)
-      const data = await res.json() as GeoData
+      const data = await loadMunicipalitiesGeojson()
       if (!cancelled) setGeojson(data)
     }
 

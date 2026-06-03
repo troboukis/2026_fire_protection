@@ -9,6 +9,7 @@ import type { LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
+import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows, type PaymentSummaryRow } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData, GeoFeature } from '../types'
@@ -252,7 +253,7 @@ export default function MapsPage() {
       try {
         const assetUrl = (assetName: string) => `${import.meta.env.BASE_URL}${assetName}`
         const [geoRes, citiesRes, spendRes, fundingRes] = await Promise.all([
-          fetch(assetUrl('municipalities.geojson')),
+          loadMunicipalitiesGeojson(),
           fetch(assetUrl('greek_cities.json')).catch(() => null),
           supabase.rpc('get_municipality_map_spend_per_100k', {
             p_year: mapYear,
@@ -266,8 +267,7 @@ export default function MapsPage() {
 
         if (cancelled) return
 
-        const geoData = (await geoRes.json()) as GeoData
-        if (!cancelled) setGeojson(geoData)
+        if (!cancelled) setGeojson(geoRes)
         if (!cancelled && citiesRes && citiesRes.ok) {
           const cityRows = (await citiesRes.json()) as Array<{
             city_el?: unknown

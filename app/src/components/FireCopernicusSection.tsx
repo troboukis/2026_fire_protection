@@ -4,6 +4,7 @@ import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
 import { isAbortError } from '../lib/isAbortError'
+import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
@@ -315,6 +316,7 @@ export default function FireCopernicusSection() {
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
   const [terrainFailed, setTerrainFailed] = useState(false)
+  const [mapSize, setMapSize] = useState<{ width: number; height: number } | null>(null)
   const mapRef = useRef<HTMLDivElement | null>(null)
   const tooltipRef = useRef<HTMLDivElement | null>(null)
   const mapClipPathId = useId().replace(/:/g, '-')
@@ -356,7 +358,7 @@ export default function FireCopernicusSection() {
         const firedateStart = `2024-01-01T00:00:00`
         const firedateEnd = `${today.toISOString().slice(0, 10)}T23:59:59`
         const [geoFetchResult, copernicusResult, latestUpdateResult] = await Promise.allSettled([
-          fetch(`${import.meta.env.BASE_URL}municipalities.geojson`, { signal: controller.signal }),
+          loadMunicipalitiesGeojson(),
           supabase
             .from('copernicus')
             .select('copernicus_id, centroid, shape, area_ha, firedate, commune, province, municipality_key')
@@ -374,9 +376,7 @@ export default function FireCopernicusSection() {
         ])
 
         if (geoFetchResult.status === 'rejected') throw geoFetchResult.reason
-        const geoRes = geoFetchResult.value
-        if (!geoRes.ok) throw new Error(`Failed to load municipalities.geojson (${geoRes.status})`)
-        const geoData = (await geoRes.json()) as GeoData
+        const geoData = geoFetchResult.value
 
         const copernicusRes = copernicusResult.status === 'fulfilled' ? copernicusResult.value : null
         const latestUpdateRes = latestUpdateResult.status === 'fulfilled' ? latestUpdateResult.value : null
@@ -463,6 +463,34 @@ export default function FireCopernicusSection() {
     setTerrainFailed(false)
   }, [mapTilerApiKey, isMobileMap])
 
+  useLayoutEffect(() => {
+    if (!geojson || !mapRef.current || typeof ResizeObserver === 'undefined') return
+
+    const updateMapSize = () => {
+      const rect = mapRef.current?.getBoundingClientRect()
+      if (!rect) return
+      const width = Math.round(rect.width)
+      const height = Math.round(rect.height)
+      if (width <= 0 || height <= 0) return
+
+      setMapSize((current) => (
+        current?.width === width && current.height === height
+          ? current
+          : { width, height }
+      ))
+    }
+
+    updateMapSize()
+    const observer = new ResizeObserver(updateMapSize)
+    observer.observe(mapRef.current)
+    window.addEventListener('orientationchange', updateMapSize)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('orientationchange', updateMapSize)
+    }
+  }, [geojson])
+
   const fires = useMemo(() => {
     const startMs = rangeStartDate.getTime()
     const endMs = addDays(rangeEndDate, 1).getTime() - 1
@@ -476,8 +504,10 @@ export default function FireCopernicusSection() {
 
   const mapData = useMemo(() => {
     if (!geojson) return null
-    const width = isMobileMap ? MOBILE_MAP_WIDTH : DESKTOP_MAP_WIDTH
-    const height = isMobileMap ? MOBILE_MAP_HEIGHT : DESKTOP_MAP_HEIGHT
+    const fallbackWidth = isMobileMap ? MOBILE_MAP_WIDTH : DESKTOP_MAP_WIDTH
+    const fallbackHeight = isMobileMap ? MOBILE_MAP_HEIGHT : DESKTOP_MAP_HEIGHT
+    const width = mapSize?.width ?? fallbackWidth
+    const height = mapSize?.height ?? fallbackHeight
     const extent: [[number, number], [number, number]] = isMobileMap
       ? [[28, 88], [width - 26, height - 26]]
       : [[20, 24], [width - 20, height - 22]]
@@ -566,7 +596,7 @@ export default function FireCopernicusSection() {
         })
         .filter((shape): shape is CopernicusFirePoint & { d: string; x: number; y: number } => shape !== null),
     }
-  }, [geojson, fires, isMobileMap, mapTilerApiKey])
+  }, [geojson, fires, isMobileMap, mapSize, mapTilerApiKey])
 
   const totalAreaHa = fires.reduce((sum, fire) => sum + fire.areaHa, 0)
   const latestFire = [...fires]

@@ -13,6 +13,7 @@ import ProfileSectionCard from './ProfileSectionCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
+import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
 import type { GeoData } from '../types'
@@ -405,8 +406,7 @@ function EnvironmentWorksMap({
     let cancelled = false
 
     const loadGeojson = async () => {
-      const response = await fetch(`${import.meta.env.BASE_URL}municipalities.geojson`)
-      const data = await response.json() as GeoData
+      const data = await loadMunicipalitiesGeojson()
       if (!cancelled) setGeojson(data)
     }
 
