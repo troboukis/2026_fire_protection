@@ -617,7 +617,7 @@ export default function FireCopernicusSection() {
       setHoveredFire(null)
     }
 
-    const handlePointClick = (event: MouseEvent, fire: (typeof mapData.points)[number]) => {
+    const handlePointClick = (event: MouseEvent | PointerEvent, fire: (typeof mapData.points)[number]) => {
       event.preventDefault()
       event.stopPropagation()
       const municipalityKey = getClusterMunicipalityKey(fire.items)
@@ -719,6 +719,9 @@ export default function FireCopernicusSection() {
         })
         .on('mouseleave', () => {
           clearPointTooltip()
+        })
+        .on('pointerdown', (event: PointerEvent, fire) => {
+          handlePointClick(event, fire)
         })
         .on('click', (event: MouseEvent, fire) => {
           handlePointClick(event, fire)
