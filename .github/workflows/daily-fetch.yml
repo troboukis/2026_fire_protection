@@ -1,8 +1,8 @@
 name: Daily Data Refresh
 
 on:
-  schedule:
-    - cron: "0 3,6,9,13 * * *"
+  # schedule:
+  #   - cron: "0 3,6,9,13 * * *"
   workflow_dispatch:
 
 permissions:
@@ -80,15 +80,62 @@ jobs:
         continue-on-error: true
         run: python src/fetch_copernicus.py
 
+      - name: Capture organization count before ingest
+        id: before_org_count
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg2
+
+          conn = psycopg2.connect(os.environ["DATABASE_URL"])
+          cur = conn.cursor()
+          cur.execute("SELECT COUNT(*) FROM public.organization")
+          count = int(cur.fetchone()[0])
+          cur.close()
+          conn.close()
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"count={count}\n")
+          print(f"organization_count_before={count}")
+          PY
+
       - name: Sync refreshed datasets to application database
         continue-on-error: true
         run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
+      - name: Check whether new organizations were inserted
+        id: organization_delta
+        env:
+          BEFORE_ORG_COUNT: ${{ steps.before_org_count.outputs.count }}
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg2
+
+          before = int(os.environ.get("BEFORE_ORG_COUNT") or "0")
+          conn = psycopg2.connect(os.environ["DATABASE_URL"])
+          cur = conn.cursor()
+          cur.execute("SELECT COUNT(*) FROM public.organization")
+          after = int(cur.fetchone()[0])
+          cur.close()
+          conn.close()
+
+          has_new_orgs = after > before
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"count={after}\n")
+              fh.write(f"has_new_orgs={str(has_new_orgs).lower()}\n")
+          print(f"organization_count_before={before}")
+          print(f"organization_count_after={after}")
+          print(f"has_new_orgs={has_new_orgs}")
+          PY
+
       - name: Backfill canonical organization authority scopes
+        if: steps.organization_delta.outputs.has_new_orgs == 'true'
         continue-on-error: true
         run: python scripts/backfill_organization_authority_scope.py
 
       - name: Reload organization municipality coverage
+        if: steps.organization_delta.outputs.has_new_orgs == 'true'
         continue-on-error: true
         run: python scripts/load_org_municipality_coverage.py
 
