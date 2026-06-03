@@ -355,7 +355,7 @@ export default function FireCopernicusSection() {
       try {
         const firedateStart = `2024-01-01T00:00:00`
         const firedateEnd = `${today.toISOString().slice(0, 10)}T23:59:59`
-        const [geoRes, copernicusRes, latestUpdateRes] = await Promise.all([
+        const [geoFetchResult, copernicusResult, latestUpdateResult] = await Promise.allSettled([
           fetch(`${import.meta.env.BASE_URL}municipalities.geojson`, { signal: controller.signal }),
           supabase
             .from('copernicus')
@@ -372,10 +372,16 @@ export default function FireCopernicusSection() {
             .abortSignal(controller.signal)
             .maybeSingle(),
         ])
-        if (copernicusRes.error) throw copernicusRes.error
-        if (latestUpdateRes.error) throw latestUpdateRes.error
+
+        if (geoFetchResult.status === 'rejected') throw geoFetchResult.reason
+        const geoRes = geoFetchResult.value
+        if (!geoRes.ok) throw new Error(`Failed to load municipalities.geojson (${geoRes.status})`)
         const geoData = (await geoRes.json()) as GeoData
-        const nextFires = ((copernicusRes.data ?? []) as CopernicusRow[])
+
+        const copernicusRes = copernicusResult.status === 'fulfilled' ? copernicusResult.value : null
+        const latestUpdateRes = latestUpdateResult.status === 'fulfilled' ? latestUpdateResult.value : null
+        const copernicusRows = !copernicusRes?.error ? ((copernicusRes?.data ?? []) as CopernicusRow[]) : []
+        const nextFires = copernicusRows
           .map((row) => {
             const centroid = parseCentroid(row.centroid)
             if (!centroid) return null
@@ -396,7 +402,7 @@ export default function FireCopernicusSection() {
         if (!cancelled) {
           setGeojson(geoData)
           setAllFires(nextFires)
-          setLastUpdatedAt(String(latestUpdateRes.data?.updated_at ?? '').trim() || null)
+          setLastUpdatedAt(!latestUpdateRes?.error ? String(latestUpdateRes?.data?.updated_at ?? '').trim() || null : null)
         }
       } catch (error) {
         if (isAbortError(error)) return
