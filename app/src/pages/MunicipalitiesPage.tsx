@@ -13,6 +13,7 @@ import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { isContractActiveInYear } from '../lib/contractWindow'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
+import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows } from '../lib/paymentSummary'
 import {
   normalizeMunicipalityKey,
@@ -933,9 +934,7 @@ export default function MunicipalitiesPage() {
     const loadMunicipalityGeojson = async () => {
       setMunicipalityGeojsonLoading(true)
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}municipalities.geojson`)
-        if (!response.ok) throw new Error(`municipalities.geojson failed with ${response.status}`)
-        const data = (await response.json()) as GeoData
+        const data = await loadMunicipalitiesGeojson()
         if (!cancelled) setMunicipalityGeojson(data)
       } catch {
         if (!cancelled) setMunicipalityGeojson(null)
