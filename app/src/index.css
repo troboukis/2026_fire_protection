@@ -2917,8 +2917,9 @@ main {
   }
 
   .fire-copernicus__map {
-    min-height: 0;
-    aspect-ratio: 1 / 1.34;
+    min-height: 420px;
+    height: clamp(420px, 118vw, 560px);
+    aspect-ratio: auto;
   }
 
   .fire-copernicus__toggle {
