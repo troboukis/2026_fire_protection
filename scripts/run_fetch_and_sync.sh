@@ -18,6 +18,7 @@ fi
 DOWNLOAD_DIAVGEIA_PDFS="${DOWNLOAD_DIAVGEIA_PDFS:-0}"
 REBUILD_ORG_MAPPINGS="${REBUILD_ORG_MAPPINGS:-0}"
 RUN_DB_INGEST="${RUN_DB_INGEST:-1}"
+RUN_FIRMS_FETCH="${RUN_FIRMS_FETCH:-0}"
 ERD_TABLES="${ERD_TABLES:-region,municipality,organization,diavgeia_document_type,procurement,cpv,diavgeia,payment,diavgeia_procurement,beneficiary}"
 
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -52,6 +53,13 @@ echo "[5/11] Fetch KIMDIS raw procurements..."
 echo "[6/11] Fetch Copernicus fires and upsert public.copernicus..."
 ./.fireprotection/bin/python src/fetch_copernicus.py
 
+if [[ "$RUN_FIRMS_FETCH" == "1" ]]; then
+  echo "[6b/13] Fetch NASA FIRMS active fire detections and upsert public.firms_active_fire_detections..."
+  ./.fireprotection/bin/python src/fetch_firms_active_fires.py
+else
+  echo "[6b/13] Skipping NASA FIRMS fetch (set RUN_FIRMS_FETCH=1 to enable)."
+fi
+
 if [[ "$RUN_DB_INGEST" == "1" ]]; then
 echo "[7/13] Sync ERD tables to database (stage2_load_erd.py, excluding static fund and forest_fire)..."
   ./.fireprotection/bin/python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
@@ -70,6 +78,7 @@ git add \
   data/2026_diavgeia.csv \
   data/2026_diavgeia_filtered.csv \
   data/fires/copernicus_latest.csv \
+  data/fires/firms_active_fire_latest.csv \
   data/raw_procurements.csv \
   data/mappings/org_to_municipality.csv \
   data/mappings/org_to_municipality_coverage.csv \
