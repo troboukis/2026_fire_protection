@@ -24,6 +24,7 @@ type CopernicusFirePoint = {
 type HoveredFireTooltip = {
   x: number
   y: number
+  placement: 'above' | 'below'
   items: Array<{
     id: string
     areaHa: number
@@ -191,14 +192,11 @@ function cleanText(value: unknown): string | null {
 }
 
 function getClusterMunicipalityKey(items: HoveredFireTooltip['items']): string | null {
-  const municipalityKeys = Array.from(
-    new Set(
-      items
-        .map((item) => cleanText(item.municipalityKey))
-        .filter((key): key is string => Boolean(key)),
-    ),
-  )
-  return municipalityKeys.length === 1 ? municipalityKeys[0] : null
+  for (const item of items) {
+    const municipalityKey = cleanText(item.municipalityKey)
+    if (municipalityKey) return municipalityKey
+  }
+  return null
 }
 
 function clampLatitude(lat: number): number {
@@ -329,7 +327,6 @@ export default function FireCopernicusSection() {
   const [mapSize, setMapSize] = useState<{ width: number; height: number } | null>(null)
   const mapRef = useRef<HTMLDivElement | null>(null)
   const svgRef = useRef<SVGSVGElement | null>(null)
-  const tooltipRef = useRef<HTMLDivElement | null>(null)
   const mapClipPathId = useId().replace(/:/g, '-')
   const [isMobileMap, setIsMobileMap] = useState(() => {
     if (typeof window === 'undefined') return false
@@ -437,27 +434,6 @@ export default function FireCopernicusSection() {
   useEffect(() => {
     setHoveredFire(null)
   }, [rangeStartDay, rangeEndDay, viewMode])
-
-  useLayoutEffect(() => {
-    if (!hoveredFire || !mapRef.current || !tooltipRef.current) return
-
-    const mapRect = mapRef.current.getBoundingClientRect()
-    const tooltipRect = tooltipRef.current.getBoundingClientRect()
-    const margin = 10
-    const gap = 8
-
-    let left = hoveredFire.x
-    left = Math.max(margin, Math.min(left, mapRect.width - tooltipRect.width - margin))
-
-    let top = hoveredFire.y - tooltipRect.height - gap
-    if (top < margin) {
-      top = Math.min(mapRect.height - tooltipRect.height - margin, hoveredFire.y + gap)
-    }
-    top = Math.max(margin, top)
-
-    tooltipRef.current.style.left = `${left}px`
-    tooltipRef.current.style.top = `${top}px`
-  }, [hoveredFire])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -627,6 +603,28 @@ export default function FireCopernicusSection() {
     svg.selectAll('*').remove()
     svg.attr('viewBox', `0 0 ${mapData.width} ${mapData.height}`)
 
+    const updatePointTooltip = (event: MouseEvent, fire: (typeof mapData.points)[number]) => {
+      const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+      setHoveredFire({
+        x: pointer.x,
+        y: pointer.y,
+        placement: pointer.y < 96 ? 'below' : 'above',
+        items: fire.items,
+      })
+    }
+
+    const clearPointTooltip = () => {
+      setHoveredFire(null)
+    }
+
+    const handlePointClick = (event: MouseEvent, fire: (typeof mapData.points)[number]) => {
+      event.preventDefault()
+      event.stopPropagation()
+      const municipalityKey = getClusterMunicipalityKey(fire.items)
+      if (openMunicipalityProfile(municipalityKey)) return
+      updatePointTooltip(event, fire)
+    }
+
     const defs = svg.append('defs')
     const clipPath = defs.append('clipPath').attr('id', mapClipPathId)
     clipPath
@@ -665,47 +663,23 @@ export default function FireCopernicusSection() {
     }
 
     if (viewMode === 'points') {
+      svg
+        .on('mousemove', (event: MouseEvent) => {
+          if (isTouchInput) return
+          if (!(event.target instanceof Element) || !event.target.classList.contains('fire-copernicus__point-hit-area')) {
+            clearPointTooltip()
+          }
+        })
+        .on('mouseleave', () => {
+          clearPointTooltip()
+        })
+
       const pointGroups = svg
         .append('g')
         .attr('class', 'fire-copernicus__points')
         .selectAll<SVGGElement, (typeof mapData.points)[number]>('g')
         .data(mapData.points)
         .join('g')
-        .on('mouseenter', (event: MouseEvent, fire) => {
-          if (isTouchInput) return
-          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-          setHoveredFire({ x: pointer.x, y: pointer.y, items: fire.items })
-        })
-        .on('mousemove', (event: MouseEvent, fire) => {
-          if (isTouchInput) return
-          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-          setHoveredFire((current) => (
-            current ? { ...current, x: pointer.x, y: pointer.y } : current
-          ))
-        })
-        .on('mouseleave', () => {
-          if (isTouchInput) return
-          setHoveredFire(null)
-        })
-        .on('click', (event: MouseEvent, fire) => {
-          const municipalityKey = getClusterMunicipalityKey(fire.items)
-          if (openMunicipalityProfile(municipalityKey)) return
-          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-          setHoveredFire((current) => (
-            current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
-              ? null
-              : { x: pointer.x, y: pointer.y, items: fire.items }
-          ))
-        })
-
-      pointGroups
-        .append('circle')
-        .attr('class', 'fire-copernicus__point-hit-area')
-        .attr('cx', (fire) => fire.x)
-        .attr('cy', (fire) => fire.y)
-        .attr('r', 12)
-        .attr('fill', 'transparent')
-        .attr('pointer-events', 'all')
 
       pointGroups
         .append('circle')
@@ -713,6 +687,7 @@ export default function FireCopernicusSection() {
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
         .attr('r', (fire) => fire.r)
+        .attr('pointer-events', 'none')
 
       pointGroups
         .filter((fire) => fire.items.length > 1)
@@ -722,7 +697,32 @@ export default function FireCopernicusSection() {
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'central')
         .attr('class', 'fire-copernicus__cluster-count')
+        .attr('pointer-events', 'none')
         .text((fire) => String(fire.items.length))
+
+      pointGroups
+        .append('circle')
+        .attr('class', 'fire-copernicus__point-hit-area')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', 14)
+        .attr('fill', 'rgba(0, 0, 0, 0.001)')
+        .attr('pointer-events', 'all')
+        .style('cursor', 'pointer')
+        .on('mouseover', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          updatePointTooltip(event, fire)
+        })
+        .on('mousemove', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          updatePointTooltip(event, fire)
+        })
+        .on('mouseleave', () => {
+          clearPointTooltip()
+        })
+        .on('click', (event: MouseEvent, fire) => {
+          handlePointClick(event, fire)
+        })
     } else {
       svg
         .append('g')
@@ -738,6 +738,7 @@ export default function FireCopernicusSection() {
           setHoveredFire({
             x: pointer.x,
             y: pointer.y,
+            placement: pointer.y < 96 ? 'below' : 'above',
             items: [{
               id: fire.id,
               areaHa: fire.areaHa,
@@ -752,7 +753,7 @@ export default function FireCopernicusSection() {
           if (isTouchInput) return
           const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
           setHoveredFire((current) => (
-            current ? { ...current, x: pointer.x, y: pointer.y } : current
+            current ? { ...current, x: pointer.x, y: pointer.y, placement: pointer.y < 96 ? 'below' : 'above' } : current
           ))
         })
         .on('mouseleave', () => {
@@ -768,6 +769,7 @@ export default function FireCopernicusSection() {
               : {
                   x: pointer.x,
                   y: pointer.y,
+                  placement: pointer.y < 96 ? 'below' : 'above',
                   items: [{
                     id: fire.id,
                     areaHa: fire.areaHa,
@@ -903,7 +905,7 @@ export default function FireCopernicusSection() {
         />
         {!mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
         {mapData && (
-          <div ref={mapRef} className="fire-copernicus__map dev-tag-anchor">
+          <div ref={mapRef} className="fire-copernicus__map dev-tag-anchor" onMouseLeave={() => setHoveredFire(null)}>
             <ComponentTag
               name="fire-copernicus__map"
               kind="CLASS"
@@ -949,11 +951,12 @@ export default function FireCopernicusSection() {
             )}
             {hoveredFire && (
               <div
-                ref={tooltipRef}
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
-                  left: `${hoveredFire.x}px`,
-                  top: `${hoveredFire.y}px`,
+                  left: `${Math.max(12, hoveredFire.x + 14)}px`,
+                  top: `${hoveredFire.placement === 'below' ? hoveredFire.y + 14 : Math.max(12, hoveredFire.y - 14)}px`,
+                  transform: hoveredFire.placement === 'below' ? 'none' : undefined,
+                  pointerEvents: 'none',
                 }}
               >
                 {hoveredFire.items.map((item) => (

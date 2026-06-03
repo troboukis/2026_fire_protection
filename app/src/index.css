@@ -5231,10 +5231,6 @@ main {
   transform: translateY(calc(-100% - 6px));
 }
 
-.fire-copernicus__tooltip.app-tooltip {
-  transform: none;
-}
-
 @media (hover: none), (pointer: coarse) {
   .map-tooltip.app-tooltip {
     transform: translate(-50%, calc(-100% - 2px));
