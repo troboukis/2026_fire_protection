@@ -10,6 +10,7 @@ data/geo/dasikoi-chartes/dasikoi_chartes_unioned/simplified.gpkg
 .env
 node_modules/
 .claude/
+!.claude/skills/
 
 # Python local env / caches
 .venv/
