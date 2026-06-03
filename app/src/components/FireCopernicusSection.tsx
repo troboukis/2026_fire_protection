@@ -1,5 +1,4 @@
-import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import type { MouseEvent as ReactMouseEvent } from 'react'
+import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
@@ -191,6 +190,17 @@ function cleanText(value: unknown): string | null {
   return text ? text : null
 }
 
+function getClusterMunicipalityKey(items: HoveredFireTooltip['items']): string | null {
+  const municipalityKeys = Array.from(
+    new Set(
+      items
+        .map((item) => cleanText(item.municipalityKey))
+        .filter((key): key is string => Boolean(key)),
+    ),
+  )
+  return municipalityKeys.length === 1 ? municipalityKeys[0] : null
+}
+
 function clampLatitude(lat: number): number {
   return Math.max(-85.05112878, Math.min(85.05112878, lat))
 }
@@ -318,6 +328,7 @@ export default function FireCopernicusSection() {
   const [terrainFailed, setTerrainFailed] = useState(false)
   const [mapSize, setMapSize] = useState<{ width: number; height: number } | null>(null)
   const mapRef = useRef<HTMLDivElement | null>(null)
+  const svgRef = useRef<SVGSVGElement | null>(null)
   const tooltipRef = useRef<HTMLDivElement | null>(null)
   const mapClipPathId = useId().replace(/:/g, '-')
   const [isMobileMap, setIsMobileMap] = useState(() => {
@@ -326,8 +337,8 @@ export default function FireCopernicusSection() {
   })
   const isTouchInput = isMobileMap
 
-  const pointerInMap = (
-    event: ReactMouseEvent<SVGElement | SVGGElement | SVGPathElement>,
+  const pointerInMap = useCallback((
+    event: { clientX: number; clientY: number },
     fallback: { x: number; y: number },
   ): { x: number; y: number } => {
     const rect = mapRef.current?.getBoundingClientRect()
@@ -336,7 +347,7 @@ export default function FireCopernicusSection() {
     const y = event.clientY - rect.top
     if (!Number.isFinite(x) || !Number.isFinite(y)) return fallback
     return { x, y }
-  }
+  }, [])
 
   const rangeStartDate = addDays(domainStart, rangeStartDay)
   const rangeEndDate = addDays(domainStart, rangeEndDay)
@@ -603,22 +614,173 @@ export default function FireCopernicusSection() {
     .filter((fire) => fire.date)
     .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())[0] ?? null
 
-  const openMunicipalityProfile = (municipalityKey: string | null) => {
+  const openMunicipalityProfile = useCallback((municipalityKey: string | null) => {
     if (!municipalityKey) return false
     navigate(`/municipalities?municipality=${encodeURIComponent(municipalityKey)}`)
     return true
-  }
+  }, [navigate])
 
-  const getClusterMunicipalityKey = (items: HoveredFireTooltip['items']): string | null => {
-    const municipalityKeys = Array.from(
-      new Set(
-        items
-          .map((item) => cleanText(item.municipalityKey))
-          .filter((key): key is string => Boolean(key)),
-      ),
-    )
-    return municipalityKeys.length === 1 ? municipalityKeys[0] : null
-  }
+  useEffect(() => {
+    if (!mapData || !svgRef.current) return
+
+    const svg = d3.select(svgRef.current)
+    svg.selectAll('*').remove()
+    svg.attr('viewBox', `0 0 ${mapData.width} ${mapData.height}`)
+
+    const defs = svg.append('defs')
+    const clipPath = defs.append('clipPath').attr('id', mapClipPathId)
+    clipPath
+      .selectAll<SVGPathElement, (typeof mapData.paths)[number]>('path')
+      .data(mapData.paths)
+      .join('path')
+      .attr('d', (feature) => feature.d)
+      .attr('transform', mapData.transform)
+
+    svg
+      .append('g')
+      .attr('class', 'fire-copernicus__base')
+      .attr('transform', mapData.transform)
+      .selectAll<SVGPathElement, (typeof mapData.paths)[number]>('path')
+      .data(mapData.paths)
+      .join('path')
+      .attr('d', (feature) => feature.d)
+
+    if (mapData.hillshadeTiles.length > 0 && !terrainFailed) {
+      svg
+        .append('g')
+        .attr('class', 'fire-copernicus__terrain')
+        .attr('clip-path', `url(#${mapClipPathId})`)
+        .attr('aria-hidden', 'true')
+        .selectAll<SVGImageElement, (typeof mapData.hillshadeTiles)[number]>('image')
+        .data(mapData.hillshadeTiles)
+        .join('image')
+        .attr('href', (tile) => tile.href)
+        .attr('x', (tile) => tile.x)
+        .attr('y', (tile) => tile.y)
+        .attr('width', (tile) => tile.width)
+        .attr('height', (tile) => tile.height)
+        .attr('preserveAspectRatio', 'none')
+        .attr('class', 'fire-copernicus__terrain-tile')
+        .on('error', () => setTerrainFailed(true))
+    }
+
+    if (viewMode === 'points') {
+      const pointGroups = svg
+        .append('g')
+        .attr('class', 'fire-copernicus__points')
+        .selectAll<SVGGElement, (typeof mapData.points)[number]>('g')
+        .data(mapData.points)
+        .join('g')
+        .on('mouseenter', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire({ x: pointer.x, y: pointer.y, items: fire.items })
+        })
+        .on('mousemove', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire((current) => (
+            current ? { ...current, x: pointer.x, y: pointer.y } : current
+          ))
+        })
+        .on('mouseleave', () => {
+          if (isTouchInput) return
+          setHoveredFire(null)
+        })
+        .on('click', (event: MouseEvent, fire) => {
+          const municipalityKey = getClusterMunicipalityKey(fire.items)
+          if (openMunicipalityProfile(municipalityKey)) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire((current) => (
+            current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
+              ? null
+              : { x: pointer.x, y: pointer.y, items: fire.items }
+          ))
+        })
+
+      pointGroups
+        .append('circle')
+        .attr('class', 'fire-copernicus__point-hit-area')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', 12)
+        .attr('fill', 'transparent')
+        .attr('pointer-events', 'all')
+
+      pointGroups
+        .append('circle')
+        .attr('class', 'fire-copernicus__point-marker')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', (fire) => fire.r)
+
+      pointGroups
+        .filter((fire) => fire.items.length > 1)
+        .append('text')
+        .attr('x', (fire) => fire.x)
+        .attr('y', (fire) => fire.y)
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'central')
+        .attr('class', 'fire-copernicus__cluster-count')
+        .text((fire) => String(fire.items.length))
+    } else {
+      svg
+        .append('g')
+        .attr('class', 'fire-copernicus__shapes')
+        .attr('transform', mapData.transform)
+        .selectAll<SVGPathElement, (typeof mapData.shapes)[number]>('path')
+        .data(mapData.shapes)
+        .join('path')
+        .attr('d', (fire) => fire.d)
+        .on('mouseenter', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire({
+            x: pointer.x,
+            y: pointer.y,
+            items: [{
+              id: fire.id,
+              areaHa: fire.areaHa,
+              date: fire.date,
+              commune: fire.commune,
+              province: fire.province,
+              municipalityKey: fire.municipalityKey,
+            }],
+          })
+        })
+        .on('mousemove', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire((current) => (
+            current ? { ...current, x: pointer.x, y: pointer.y } : current
+          ))
+        })
+        .on('mouseleave', () => {
+          if (isTouchInput) return
+          setHoveredFire(null)
+        })
+        .on('click', (event: MouseEvent, fire) => {
+          if (openMunicipalityProfile(fire.municipalityKey)) return
+          const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          setHoveredFire((current) => (
+            current?.items.length === 1 && current.items[0]?.id === fire.id
+              ? null
+              : {
+                  x: pointer.x,
+                  y: pointer.y,
+                  items: [{
+                    id: fire.id,
+                    areaHa: fire.areaHa,
+                    date: fire.date,
+                    commune: fire.commune,
+                    province: fire.province,
+                    municipalityKey: fire.municipalityKey,
+                  }],
+                }
+          ))
+        })
+    }
+  }, [isTouchInput, mapClipPathId, mapData, openMunicipalityProfile, pointerInMap, terrainFailed, viewMode])
 
   if (loading) {
     return (
@@ -777,169 +939,11 @@ export default function FireCopernicusSection() {
               </button>
             </div>
             <svg
+              ref={svgRef}
               viewBox={`0 0 ${mapData.width} ${mapData.height}`}
               role="img"
               aria-label="Χάρτης πυρκαγιών Copernicus στην Ελλάδα"
-            >
-              <defs>
-                <clipPath id={mapClipPathId}>
-                  {mapData.paths.map((feature) => (
-                    <path
-                      key={`clip-${feature.key}`}
-                      d={feature.d}
-                      transform={mapData.transform}
-                    />
-                  ))}
-                </clipPath>
-              </defs>
-              <g className="fire-copernicus__base" transform={mapData.transform}>
-                {mapData.paths.map((feature) => (
-                  <path key={feature.key} d={feature.d} />
-                ))}
-              </g>
-              {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
-                <g className="fire-copernicus__terrain" clipPath={`url(#${mapClipPathId})`} aria-hidden="true">
-                  {mapData.hillshadeTiles.map((tile) => (
-                    <image
-                      key={tile.key}
-                      href={tile.href}
-                      x={tile.x}
-                      y={tile.y}
-                      width={tile.width}
-                      height={tile.height}
-                      preserveAspectRatio="none"
-                      className="fire-copernicus__terrain-tile"
-                      onError={() => setTerrainFailed(true)}
-                    />
-                  ))}
-                </g>
-              )}
-              {viewMode === 'points' ? (
-                <g className="fire-copernicus__points">
-                  {mapData.points.map((fire) => (
-                    <g
-                      key={`${fire.x}-${fire.y}`}
-                      onMouseEnter={(event) => {
-                        if (isTouchInput) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire({
-                          x: pointer.x,
-                          y: pointer.y,
-                          items: fire.items,
-                        })
-                      }}
-                      onMouseMove={(event) => {
-                        if (isTouchInput) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire((current) => (
-                          current
-                            ? { ...current, x: pointer.x, y: pointer.y }
-                            : current
-                        ))
-                      }}
-                      onMouseLeave={() => {
-                        if (isTouchInput) return
-                        setHoveredFire(null)
-                      }}
-                      onClick={(event) => {
-                        const municipalityKey = getClusterMunicipalityKey(fire.items)
-                        if (openMunicipalityProfile(municipalityKey)) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire((current) => (
-                          current?.items.length === fire.items.length && current.items[0]?.id === fire.items[0]?.id
-                            ? null
-                            : { x: pointer.x, y: pointer.y, items: fire.items }
-                        ))
-                      }}
-                    >
-                      <circle
-                        className="fire-copernicus__point-hit-area"
-                        cx={fire.x}
-                        cy={fire.y}
-                        r={12}
-                        fill="transparent"
-                        pointerEvents="all"
-                      />
-                      <circle
-                        className="fire-copernicus__point-marker"
-                        cx={fire.x}
-                        cy={fire.y}
-                        r={fire.r}
-                      />
-                      {fire.items.length > 1 && (
-                        <text
-                          x={fire.x}
-                          y={fire.y}
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          className="fire-copernicus__cluster-count"
-                        >
-                          {fire.items.length}
-                        </text>
-                      )}
-                    </g>
-                  ))}
-                </g>
-              ) : (
-                <g className="fire-copernicus__shapes" transform={mapData.transform}>
-                  {mapData.shapes.map((fire) => (
-                    <path
-                      key={fire.id}
-                      d={fire.d}
-                      onMouseEnter={(event) => {
-                        if (isTouchInput) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire({
-                          x: pointer.x,
-                          y: pointer.y,
-                          items: [{
-                            id: fire.id,
-                            areaHa: fire.areaHa,
-                            date: fire.date,
-                            commune: fire.commune,
-                            province: fire.province,
-                            municipalityKey: fire.municipalityKey,
-                          }],
-                        })
-                      }}
-                      onMouseMove={(event) => {
-                        if (isTouchInput) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire((current) => (
-                          current
-                            ? { ...current, x: pointer.x, y: pointer.y }
-                            : current
-                        ))
-                      }}
-                      onMouseLeave={() => {
-                        if (isTouchInput) return
-                        setHoveredFire(null)
-                      }}
-                      onClick={(event) => {
-                        if (openMunicipalityProfile(fire.municipalityKey)) return
-                        const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
-                        setHoveredFire((current) => (
-                          current?.items.length === 1 && current.items[0]?.id === fire.id
-                            ? null
-                            : {
-                                x: pointer.x,
-                                y: pointer.y,
-                                items: [{
-                                  id: fire.id,
-                                areaHa: fire.areaHa,
-                                date: fire.date,
-                                commune: fire.commune,
-                                province: fire.province,
-                                municipalityKey: fire.municipalityKey,
-                              }],
-                            }
-                        ))
-                      }}
-                    />
-                  ))}
-                </g>
-              )}
-            </svg>
+            />
             {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
               <MapTilerLogo className="fire-copernicus__maptiler-logo" />
             )}

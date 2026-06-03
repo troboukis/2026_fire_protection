@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
+import { Analytics } from '@vercel/analytics/react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App'
 import Layout from './components/Layout'
@@ -37,5 +38,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </Route>
       </Routes>
     </HashRouter>
+    <Analytics />
   </React.StrictMode>,
 )
