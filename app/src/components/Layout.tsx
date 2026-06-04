@@ -1,9 +1,11 @@
-import type { MouseEvent } from 'react'
+import { useEffect, useState, type MouseEvent } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import DevViewToggle from './DevViewToggle'
 
 declare const __LAST_COMMIT_ISO__: string
+
+const GITHUB_REPOSITORY_API_URL = 'https://api.github.com/repos/troboukis/2026_fire_protection'
 
 function formatDateTimeEl(iso: string): string {
   const dt = new Date(iso)
@@ -18,10 +20,37 @@ function formatDateTimeEl(iso: string): string {
 }
 
 export default function Layout() {
-  const lastUpdateLabel = formatDateTimeEl(__LAST_COMMIT_ISO__)
+  const [lastUpdateIso, setLastUpdateIso] = useState(__LAST_COMMIT_ISO__)
+  const lastUpdateLabel = formatDateTimeEl(lastUpdateIso)
   const location = useLocation()
   const navigate = useNavigate()
   const homeDocumentHref = import.meta.env.BASE_URL
+
+  useEffect(() => {
+    let isCancelled = false
+
+    const loadGithubPushTime = async () => {
+      try {
+        const response = await fetch(GITHUB_REPOSITORY_API_URL, {
+          headers: { Accept: 'application/vnd.github+json' },
+          cache: 'no-store',
+        })
+        if (!response.ok) return
+
+        const payload = await response.json() as { pushed_at?: unknown }
+        if (isCancelled || typeof payload.pushed_at !== 'string') return
+        setLastUpdateIso(payload.pushed_at)
+      } catch {
+        // Keep the build-time git commit timestamp when GitHub metadata is unavailable.
+      }
+    }
+
+    void loadGithubPushTime()
+
+    return () => {
+      isCancelled = true
+    }
+  }, [])
 
   const handleAbout = () => {
     if (location.pathname === '/') {
