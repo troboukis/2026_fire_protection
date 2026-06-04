@@ -2,10 +2,26 @@ import { useEffect, useState, type MouseEvent } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import DevViewToggle from './DevViewToggle'
+import { supabase } from '../lib/supabase'
 
 declare const __LAST_COMMIT_ISO__: string
 
 const GITHUB_REPOSITORY_API_URL = 'https://api.github.com/repos/troboukis/2026_fire_protection'
+
+function latestIso(...values: Array<string | null | undefined>): string | null {
+  let latestValue: string | null = null
+  let latestTime = Number.NEGATIVE_INFINITY
+
+  for (const value of values) {
+    if (!value) continue
+    const time = new Date(value).getTime()
+    if (Number.isNaN(time) || time <= latestTime) continue
+    latestValue = value
+    latestTime = time
+  }
+
+  return latestValue
+}
 
 function formatDateTimeEl(iso: string): string {
   const dt = new Date(iso)
@@ -16,6 +32,7 @@ function formatDateTimeEl(iso: string): string {
     year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
+    timeZone: 'Europe/Athens',
   }).format(dt)
 }
 
@@ -29,26 +46,52 @@ export default function Layout() {
   useEffect(() => {
     let isCancelled = false
 
-    const loadGithubPushTime = async () => {
+    const loadLastUpdateTime = async () => {
+      let githubPushIso: string | null = null
+      let currentFiresIso: string | null = null
+
       try {
         const response = await fetch(GITHUB_REPOSITORY_API_URL, {
           headers: { Accept: 'application/vnd.github+json' },
           cache: 'no-store',
         })
-        if (!response.ok) return
-
-        const payload = await response.json() as { pushed_at?: unknown }
-        if (isCancelled || typeof payload.pushed_at !== 'string') return
-        setLastUpdateIso(payload.pushed_at)
+        if (response.ok) {
+          const payload = await response.json() as { pushed_at?: unknown }
+          githubPushIso = typeof payload.pushed_at === 'string' ? payload.pushed_at : null
+        }
       } catch {
-        // Keep the build-time git commit timestamp when GitHub metadata is unavailable.
+        // Keep the fallback timestamp when GitHub metadata is unavailable.
       }
+
+      try {
+        const { data } = await supabase
+          .from('current_fires')
+          .select('last_seen_at')
+          .order('last_seen_at', { ascending: false, nullsFirst: false })
+          .limit(1)
+          .maybeSingle()
+
+        currentFiresIso = typeof data?.last_seen_at === 'string' ? data.last_seen_at : null
+      } catch {
+        // Keep the fallback timestamp when current fire freshness is unavailable.
+      }
+
+      if (isCancelled) return
+      setLastUpdateIso(latestIso(githubPushIso, currentFiresIso, __LAST_COMMIT_ISO__) ?? __LAST_COMMIT_ISO__)
     }
 
-    void loadGithubPushTime()
+    void loadLastUpdateTime()
+
+    const channel = supabase
+      .channel('layout_last_update_current_fires')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
+        if (!isCancelled) void loadLastUpdateTime()
+      })
+      .subscribe()
 
     return () => {
       isCancelled = true
+      supabase.removeChannel(channel)
     }
   }, [])
 
