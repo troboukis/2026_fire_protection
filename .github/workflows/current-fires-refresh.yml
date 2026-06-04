@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      NASA_FIRMS_MAP_KEY: ${{ secrets.NASA_FIRMS_MAP_KEY }}
 
     steps:
       - name: Checkout repository
@@ -39,6 +40,10 @@ jobs:
             echo "DATABASE_URL secret is required for current_fires refresh."
             exit 1
           fi
+          if [ -z "${NASA_FIRMS_MAP_KEY}" ]; then
+            echo "NASA_FIRMS_MAP_KEY secret is required for FIRMS active fire refresh."
+            exit 1
+          fi
           case "${DATABASE_URL}" in
             DATABASE_URL=*)
               echo "DATABASE_URL secret must contain only the raw connection string, not 'DATABASE_URL=...'."
@@ -48,3 +53,6 @@ jobs:
 
       - name: Refresh current fires
         run: python src/scrape_forest_fires.py
+
+      - name: Refresh NASA FIRMS active fires
+        run: python src/fetch_firms_active_fires.py
