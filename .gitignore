@@ -38,6 +38,7 @@ data/raw_items_backup.json
 backupDB/
 
 # Mapping review artifacts (local/manual workflow)
+AGENTS.md
 data/mappings/archived/
 LOCAL_REBASE_NOTES.md
 WEBAPP_ROADMAP.md
