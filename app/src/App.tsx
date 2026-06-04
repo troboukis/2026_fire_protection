@@ -1745,71 +1745,9 @@ export default function App() {
       <main>
         <FireNowTicker />
 
-        <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
-          <div className="dev-tag-stack dev-tag-stack--right">
-            <ComponentTag name="LatestContractsSection" />
-            <ComponentTag name="news-wire section-rule" kind="CLASS" />
-          </div>
-          <div className="news-wire__label dev-tag-anchor">
-            <DebugClassLabel name="news-wire__label" />
-            <span className="eyebrow">τελευταία</span>
-            <strong>Οι πιο πρόσφατες συμβάσεις Δήμων, Υπουργείων και άλλων φορέων που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
-            <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
-            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων">
-              <button
-                type="button"
-                className="news-wire__pager-button"
-                aria-label="Προηγούμενη σύμβαση"
-                onClick={() => scrollLatestContracts(-1)}
-                disabled={latestContractsLoading || !latestContractsCanScrollPrev}
-              >
-                ‹
-              </button>
-              <button
-                type="button"
-                className="news-wire__pager-button"
-                aria-label="Επόμενη σύμβαση"
-                onClick={() => scrollLatestContracts(1)}
-                disabled={latestContractsLoading || !latestContractsCanScrollNext}
-              >
-                ›
-              </button>
-            </div>
-          </div>
-          <div className="news-wire__items dev-tag-anchor" ref={latestContractsItemsRef}>
-            <DebugClassLabel name="news-wire__items" style={{ left: 'auto', right: '0.45rem' }} />
-            {latestContractsLoading && (
-              <DataLoadingCard
-                className="news-wire__loading-card"
-                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις από το ΚΗΜΔΗΣ."
-              />
-            )}
-            {!latestContractsLoading && latestContracts.map((item) => (
-              <LatestContractCardItem
-                key={item.id}
-                item={item}
-                onOpen={(id) => {
-                  const found = latestContracts.find((x) => x.id === id)
-                  if (found) setSelectedContract(found)
-                }}
-                onMunicipalityClick={(key) => navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)}
-                contractTypeTransform={toLowerEl}
-              />
-            ))}
-            {!latestContractsLoading && latestContractsError && (
-              <article className="wire-item">
-                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις.</h2>
-                <p>{latestContractsError}</p>
-              </article>
-            )}
-            {!latestContractsLoading && !latestContractsError && latestContracts.length === 0 && (
-              <article className="wire-item">
-                <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις.</h2>
-                <p>Ελέγξτε ότι ο πίνακας `procurement` έχει δεδομένα.</p>
-              </article>
-            )}
-          </div>
-        </section>
+        <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
+          <FireCopernicusSection />
+        </Suspense>
 
         <section className="hero section-rule dev-tag-anchor">
           <div className="dev-tag-stack dev-tag-stack--right">
@@ -1970,12 +1908,74 @@ export default function App() {
           </div>
         </section>
 
+        <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
+          <div className="dev-tag-stack dev-tag-stack--right">
+            <ComponentTag name="LatestContractsSection" />
+            <ComponentTag name="news-wire section-rule" kind="CLASS" />
+          </div>
+          <div className="news-wire__label dev-tag-anchor">
+            <DebugClassLabel name="news-wire__label" />
+            <span className="eyebrow">τελευταία</span>
+            <strong>Οι πιο πρόσφατες συμβάσεις Δήμων, Υπουργείων και άλλων φορέων που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
+            <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
+            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων">
+              <button
+                type="button"
+                className="news-wire__pager-button"
+                aria-label="Προηγούμενη σύμβαση"
+                onClick={() => scrollLatestContracts(-1)}
+                disabled={latestContractsLoading || !latestContractsCanScrollPrev}
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                className="news-wire__pager-button"
+                aria-label="Επόμενη σύμβαση"
+                onClick={() => scrollLatestContracts(1)}
+                disabled={latestContractsLoading || !latestContractsCanScrollNext}
+              >
+                ›
+              </button>
+            </div>
+          </div>
+          <div className="news-wire__items dev-tag-anchor" ref={latestContractsItemsRef}>
+            <DebugClassLabel name="news-wire__items" style={{ left: 'auto', right: '0.45rem' }} />
+            {latestContractsLoading && (
+              <DataLoadingCard
+                className="news-wire__loading-card"
+                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις από το ΚΗΜΔΗΣ."
+              />
+            )}
+            {!latestContractsLoading && latestContracts.map((item) => (
+              <LatestContractCardItem
+                key={item.id}
+                item={item}
+                onOpen={(id) => {
+                  const found = latestContracts.find((x) => x.id === id)
+                  if (found) setSelectedContract(found)
+                }}
+                onMunicipalityClick={(key) => navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)}
+                contractTypeTransform={toLowerEl}
+              />
+            ))}
+            {!latestContractsLoading && latestContractsError && (
+              <article className="wire-item">
+                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις.</h2>
+                <p>{latestContractsError}</p>
+              </article>
+            )}
+            {!latestContractsLoading && !latestContractsError && latestContracts.length === 0 && (
+              <article className="wire-item">
+                <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις.</h2>
+                <p>Ελέγξτε ότι ο πίνακας `procurement` έχει δεδομένα.</p>
+              </article>
+            )}
+          </div>
+        </section>
+
         <Suspense fallback={<SectionFallback label="Φόρτωση χρηματοδότησης" />}>
           <Funding currentYear={currentYear} />
-        </Suspense>
-
-        <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
-          <FireCopernicusSection />
         </Suspense>
 
         <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
