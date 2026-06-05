@@ -4,6 +4,8 @@ import argparse
 import csv
 import json
 import os
+import sys
+import time as time_module
 from datetime import date, datetime, time, timezone
 from pathlib import Path
 from typing import Any
@@ -38,8 +40,9 @@ DEFAULT_SOURCE_PRODUCTS = (
     "VIIRS_NOAA21_NRT",
     "VIIRS_NOAA20_NRT",
     "VIIRS_SNPP_NRT",
+    "MODIS_NRT",
 )
-DEFAULT_AREA = "world"
+DEFAULT_AREA = "19,34,30,42"
 DEFAULT_DAY_RANGE = 1
 DEFAULT_OUTPUT_CSV = ROOT / "data" / "fires" / "firms_active_fire_latest.csv"
 GREECE_BBOX = (19.0, 34.0, 30.0, 42.0)
@@ -61,16 +64,41 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help=(
             "FIRMS source product. Can be repeated. "
-            "Defaults to VIIRS_NOAA21_NRT, VIIRS_NOAA20_NRT, VIIRS_SNPP_NRT."
+            "Defaults to VIIRS_NOAA21_NRT, VIIRS_NOAA20_NRT, VIIRS_SNPP_NRT, MODIS_NRT."
         ),
     )
-    parser.add_argument("--area", default=DEFAULT_AREA, help="FIRMS area path segment, default: world")
+    parser.add_argument(
+        "--area",
+        default=DEFAULT_AREA,
+        help="FIRMS area path segment, default: Greece bbox 19,34,30,42.",
+    )
     parser.add_argument("--day-range", type=int, default=DEFAULT_DAY_RANGE, help="FIRMS day range, default: 1")
     parser.add_argument("--map-key", default=None, help="FIRMS map key. Defaults to NASA_FIRMS_MAP_KEY from env/.env")
     parser.add_argument("--geojson", type=Path, default=DEFAULT_GEOJSON, help="Municipalities GeoJSON")
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_OUTPUT_CSV, help="Local snapshot CSV output")
     parser.add_argument("--db-path", type=str, default=None, help="Optional DATABASE_URL override")
-    parser.add_argument("--exclude-low-confidence", action="store_true", help="Drop confidence=l detections")
+    parser.add_argument(
+        "--fetch-retries",
+        type=int,
+        default=3,
+        help="Number of FIRMS HTTP attempts per source product, default: 3",
+    )
+    parser.add_argument(
+        "--fetch-retry-delay",
+        type=float,
+        default=10.0,
+        help="Seconds to wait between FIRMS HTTP retry attempts, default: 10",
+    )
+    parser.add_argument(
+        "--skip-on-fetch-error",
+        action="store_true",
+        help="Exit successfully without touching snapshot/DB if FIRMS cannot be fetched.",
+    )
+    parser.add_argument(
+        "--exclude-low-confidence",
+        action="store_true",
+        help="Drop low-confidence detections: confidence=l for VIIRS or numeric confidence <= 30 for MODIS.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Fetch and process, but do not upsert into Postgres")
     parser.add_argument("--quiet", action="store_true", help="Reduce debug output")
     return parser.parse_args()
@@ -112,8 +140,26 @@ def resolve_map_key(raw_map_key: str | None) -> str:
     raise ValueError("Missing NASA FIRMS map key. Set NASA_FIRMS_MAP_KEY in .env or pass --map-key.")
 
 
-def build_firms_url(map_key: str, source_product: str, area: str, day_range: int, detection_date: str) -> str:
+def build_firms_url(
+    map_key: str,
+    source_product: str,
+    area: str,
+    day_range: int,
+    detection_date: str,
+) -> str:
     return f"{FIRMS_AREA_CSV_URL}/{map_key}/{source_product}/{area}/{day_range}/{detection_date}"
+
+
+def mask_firms_url(url: str, map_key: str) -> str:
+    return url.replace(f"/{map_key}/", "/***/")
+
+
+def mask_firms_error(error: Exception, map_key: str) -> str:
+    return str(error).replace(map_key, "***")
+
+
+class FirmsFetchError(RuntimeError):
+    pass
 
 
 def parse_decimal(raw: Any) -> float | None:
@@ -131,6 +177,21 @@ def parse_required_decimal(raw: Any, field_name: str) -> float:
     if value is None:
         raise ValueError(f"Invalid decimal value for {field_name}: {raw!r}")
     return value
+
+
+def first_decimal(row: dict[str, str], field_names: tuple[str, ...]) -> float | None:
+    for field_name in field_names:
+        value = parse_decimal(row.get(field_name))
+        if value is not None:
+            return value
+    return None
+
+
+def is_low_confidence(confidence: str) -> bool:
+    if confidence == "l":
+        return True
+    numeric_confidence = parse_decimal(confidence)
+    return numeric_confidence is not None and numeric_confidence <= 30
 
 
 def parse_acquisition_time(raw: Any) -> int:
@@ -166,11 +227,44 @@ def fetch_firms_rows(
     day_range: int,
     detection_date: str,
     verbose: bool = True,
+    retries: int = 3,
+    retry_delay: float = 10.0,
 ) -> list[dict[str, str]]:
-    url = build_firms_url(map_key, source_product, area, day_range, detection_date)
+    url = build_firms_url(
+        map_key=map_key,
+        source_product=source_product,
+        area=area,
+        day_range=day_range,
+        detection_date=detection_date,
+    )
     log(verbose, f"[FIRMS] fetching source_product={source_product} area={area} day_range={day_range} date={detection_date}")
-    response = requests.get(url, timeout=60)
-    response.raise_for_status()
+    attempts = max(1, retries)
+    last_error: Exception | None = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            response = requests.get(url, timeout=60)
+            response.raise_for_status()
+            break
+        except requests.RequestException as exc:
+            last_error = exc
+            masked_url = mask_firms_url(url, map_key)
+            masked_error = mask_firms_error(exc, map_key)
+            if attempt >= attempts:
+                raise FirmsFetchError(
+                    f"FIRMS fetch failed after {attempts} attempt(s) for "
+                    f"source_product={source_product} url={masked_url}: {masked_error}"
+                ) from exc
+            log(
+                verbose,
+                f"[FIRMS] fetch_retry source_product={source_product} attempt={attempt}/{attempts} "
+                f"sleep_seconds={retry_delay} error={masked_error}",
+            )
+            if retry_delay > 0:
+                time_module.sleep(retry_delay)
+    else:
+        masked_error = mask_firms_error(last_error, map_key) if last_error else "unknown error"
+        raise FirmsFetchError(f"FIRMS fetch failed for source_product={source_product}: {masked_error}")
 
     text = response.text.strip()
     if not text:
@@ -222,14 +316,14 @@ def normalize_firms_row(
         "acquired_at_el": build_acquired_at_el(detection_date, acquisition_time),
         "latitude": latitude,
         "longitude": longitude,
-        "bright_ti4": parse_decimal(row.get("bright_ti4")),
+        "bright_ti4": first_decimal(row, ("bright_ti4", "brightness")),
         "scan": parse_decimal(row.get("scan")),
         "track": parse_decimal(row.get("track")),
         "satellite": str(row.get("satellite") or "").strip(),
         "instrument": str(row.get("instrument") or "").strip(),
         "confidence": str(row.get("confidence") or "").strip(),
         "version": str(row.get("version") or "").strip() or None,
-        "bright_ti5": parse_decimal(row.get("bright_ti5")),
+        "bright_ti5": first_decimal(row, ("bright_ti5", "bright_t31")),
         "frp": parse_decimal(row.get("frp")),
         "daynight": str(row.get("daynight") or "").strip(),
         "municipality_key": municipality_key,
@@ -273,7 +367,7 @@ def process_rows(
         stats["bbox_rows"] += 1
 
         confidence = str(row.get("confidence") or "").strip()
-        if confidence == "l" and exclude_low_confidence:
+        if exclude_low_confidence and is_low_confidence(confidence):
             stats["low_confidence_dropped_rows"] += 1
             continue
 
@@ -528,26 +622,69 @@ def main() -> None:
     )
     map_key = resolve_map_key(args.map_key)
 
-    municipalities = load_municipalities(args.geojson)
-    normalized_name_lookup = load_municipality_lookup(args.db_path, args.dry_run)
-    source_products = args.source_product or list(DEFAULT_SOURCE_PRODUCTS)
-    processed_rows: list[dict[str, Any]] = []
-    stats_items: list[dict[str, int]] = []
+    requested_source_products = args.source_product or list(DEFAULT_SOURCE_PRODUCTS)
+    successful_source_products: list[str] = []
+    raw_rows_by_product: dict[str, list[dict[str, str]]] = {}
     fetched_rows_by_product: dict[str, int] = {}
-    processed_rows_by_product: dict[str, int] = {}
+    fetch_errors: dict[str, str] = {}
 
-    for source_product in source_products:
-        rows = fetch_firms_rows(
-            map_key=map_key,
-            source_product=source_product,
-            area=args.area,
-            day_range=args.day_range,
-            detection_date=detection_date,
-            verbose=verbose,
-        )
+    for source_product in requested_source_products:
+        try:
+            rows = fetch_firms_rows(
+                map_key=map_key,
+                source_product=source_product,
+                area=args.area,
+                day_range=args.day_range,
+                detection_date=detection_date,
+                verbose=verbose,
+                retries=args.fetch_retries,
+                retry_delay=args.fetch_retry_delay,
+            )
+        except FirmsFetchError as exc:
+            fetch_errors[source_product] = str(exc)
+            if not args.skip_on_fetch_error:
+                raise
+            log(verbose, f"[FIRMS] fetch_skipped source_product={source_product} error={exc}")
+            continue
+
+        successful_source_products.append(source_product)
+        raw_rows_by_product[source_product] = rows
         fetched_rows_by_product[source_product] = len(rows)
         log(verbose, f"[FIRMS] fetched_rows source_product={source_product} rows={len(rows)}")
 
+    if fetch_errors and not successful_source_products and args.skip_on_fetch_error:
+        print(
+            json.dumps(
+                {
+                    "date": detection_date,
+                    "source_products": requested_source_products,
+                    "successful_source_products": successful_source_products,
+                    "area": args.area,
+                    "day_range": args.day_range,
+                    "fetched_rows_by_product": fetched_rows_by_product,
+                    "processed_rows_by_product": {},
+                    "stats": {},
+                    "summary": {},
+                    "upserted_rows": 0,
+                    "dry_run": args.dry_run,
+                    "snapshot_csv": str(args.output_csv),
+                    "fetch_errors": fetch_errors,
+                    "skipped_due_to_fetch_error": True,
+                    "finished_at": datetime.now().isoformat(timespec="seconds"),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    municipalities = load_municipalities(args.geojson)
+    normalized_name_lookup = load_municipality_lookup(args.db_path, args.dry_run)
+    processed_rows: list[dict[str, Any]] = []
+    stats_items: list[dict[str, int]] = []
+    processed_rows_by_product: dict[str, int] = {}
+
+    for source_product, rows in raw_rows_by_product.items():
         product_rows, product_stats = process_rows(
             rows=rows,
             source_product=source_product,
@@ -567,12 +704,13 @@ def main() -> None:
 
     upserted = 0
     if not args.dry_run:
-        upserted = upsert_firms_detections(processed_rows, source_products, args.db_path)
+        upserted = upsert_firms_detections(processed_rows, successful_source_products, args.db_path)
         log(verbose, f"[FIRMS] upserted_rows={upserted}")
 
     print(json.dumps({
         "date": detection_date,
-        "source_products": source_products,
+        "source_products": requested_source_products,
+        "successful_source_products": successful_source_products,
         "area": args.area,
         "day_range": args.day_range,
         "fetched_rows_by_product": fetched_rows_by_product,
@@ -582,9 +720,15 @@ def main() -> None:
         "upserted_rows": upserted,
         "dry_run": args.dry_run,
         "snapshot_csv": str(args.output_csv),
+        "fetch_errors": fetch_errors,
+        "skipped_due_to_fetch_error": False,
         "finished_at": datetime.now().isoformat(timespec="seconds"),
     }, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except FirmsFetchError as exc:
+        print(f"[FIRMS] error={exc}", file=sys.stderr)
+        raise SystemExit(1) from exc

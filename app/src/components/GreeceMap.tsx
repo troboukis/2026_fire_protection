@@ -10,7 +10,7 @@ const STROKE        = 'rgba(153,148,140,0.42)'
 const STROKE_W      = 0.5
 const MAP_SCALE_BOOST       = 1.035
 const MAP_TRANSLATE_X_RATIO = 0
-const MAP_TRANSLATE_Y_RATIO = 0.045
+const MAP_TRANSLATE_Y_RATIO = 0
 const ATTICA_FOCUS_WINDOW: [[number, number], [number, number]] = [
   [23.32, 37.43],
   [24.12, 38.43],
@@ -154,7 +154,7 @@ export function GreeceMap({
       return { ...geojson, features } as unknown as d3.ExtendedFeatureCollection
     })()
 
-    const framePad = viewMode === 'attica' ? 14 : 6
+    const framePad = viewMode === 'attica' ? 14 : 22
     const projection = d3.geoMercator().fitExtent(
       [[framePad, framePad], [width - framePad, height - framePad]],
       focusCollection as d3.GeoPermissibleObjects,

@@ -85,6 +85,20 @@ type CopernicusRow = {
   shape: GeoJSON.Geometry | string | null
 }
 
+type FirmsActiveFireDetectionRow = {
+  id: number | string
+  acquired_at: string | null
+  acquired_at_el: string | null
+  latitude: number | string | null
+  longitude: number | string | null
+  scan: number | string | null
+  track: number | string | null
+  satellite: string | null
+  instrument: string | null
+  confidence: string | null
+  frp: number | string | null
+}
+
 type WorkRow = {
   id: number | string
   procurement_id: number | string | null
@@ -422,6 +436,25 @@ function formatDate(value: string | null): string {
     month: 'short',
     year: 'numeric',
   }).format(date)
+}
+
+function formatDateTime(value: string | null): string {
+  const text = cleanText(value)
+  if (!text) return '—'
+  const date = new Date(text)
+  if (Number.isNaN(date.getTime())) return '—'
+  return new Intl.DateTimeFormat('el-GR', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(date)
+}
+
+function formatMegawatts(value: number | null): string {
+  if (value == null || Number.isNaN(value)) return '—'
+  return `${value.toLocaleString('el-GR', { maximumFractionDigits: 1 })} MW`
 }
 
 function toUpperEl(value: string | null): string {
@@ -804,6 +837,7 @@ export default function MunicipalitiesPage() {
   const [currentFireRows, setCurrentFireRows] = useState<CurrentFireRow[]>([])
   const [forestFireRows, setForestFireRows] = useState<ForestFireRow[]>([])
   const [copernicusRows, setCopernicusRows] = useState<CopernicusRow[]>([])
+  const [firmsDetectionRows, setFirmsDetectionRows] = useState<FirmsActiveFireDetectionRow[]>([])
   const [workRows, setWorkRows] = useState<WorkRow[]>([])
   const [workRowsLoading, setWorkRowsLoading] = useState(false)
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
@@ -926,6 +960,7 @@ export default function MunicipalitiesPage() {
     setCurrentFireRows([])
     setForestFireRows([])
     setCopernicusRows([])
+    setFirmsDetectionRows([])
     setWorkRows([])
   }, [selectedMunicipalityKey])
 
@@ -1508,6 +1543,50 @@ export default function MunicipalitiesPage() {
     })
   }, [selectedCopernicusRows, selectedMunicipalityKey, selectedMunicipalityMap])
 
+  const firmsDetectionMarkers = useMemo(() => {
+    if (!selectedMunicipalityMap) return []
+
+    return firmsDetectionRows.flatMap((row, index) => {
+      const lat = toNumber(row.latitude)
+      const lon = toNumber(row.longitude)
+      if (lat == null || lon == null) return []
+
+      const projected = selectedMunicipalityMap.projection([lon, lat])
+      if (!projected) return []
+      const [x, y] = projected
+      if (!Number.isFinite(x) || !Number.isFinite(y)) return []
+
+      const latKm = 111.32
+      const lonKm = Math.max(1, latKm * Math.cos((lat * Math.PI) / 180))
+      const scanKm = Math.max(0.1, toNumber(row.scan) ?? 0.38)
+      const trackKm = Math.max(0.1, toNumber(row.track) ?? 0.38)
+      const east = selectedMunicipalityMap.projection([lon + (scanKm / lonKm) / 2, lat])
+      const west = selectedMunicipalityMap.projection([lon - (scanKm / lonKm) / 2, lat])
+      const north = selectedMunicipalityMap.projection([lon, lat + (trackKm / latKm) / 2])
+      const south = selectedMunicipalityMap.projection([lon, lat - (trackKm / latKm) / 2])
+      if (!east || !west || !north || !south) return []
+
+      const rawWidth = Math.abs(east[0] - west[0])
+      const rawHeight = Math.abs(north[1] - south[1])
+
+      return [{
+        key: `${selectedMunicipalityKey ?? 'municipality'}-firms-${row.id}-${index}`,
+        x,
+        y,
+        width: Math.min(24, Math.max(4.5, rawWidth)),
+        height: Math.min(24, Math.max(4.5, rawHeight)),
+        scanKm,
+        trackKm,
+        acquiredAt: cleanText(row.acquired_at),
+        acquiredAtEl: cleanText(row.acquired_at_el) ?? cleanText(row.acquired_at),
+        satellite: cleanText(row.satellite) ?? 'Άγνωστος',
+        instrument: cleanText(row.instrument) ?? '—',
+        confidence: cleanText(row.confidence),
+        frp: toNumber(row.frp),
+      }]
+    })
+  }, [firmsDetectionRows, selectedMunicipalityKey, selectedMunicipalityMap])
+
   const municipalityWorkMarkers = useMemo(() => {
     if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
 
@@ -1559,7 +1638,7 @@ export default function MunicipalitiesPage() {
   const hasCopernicusShapes = copernicusShapes.length > 0
   const hasSelectedFireLegend = forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes
   const municipalityMapLegendItems = useMemo(() => {
-    const items: Array<{ key: string; tone: 'city' | 'work' | 'fire'; label: string }> = []
+    const items: Array<{ key: string; tone: 'city' | 'work' | 'fire' | 'firms'; label: string }> = []
 
     if (selectedMunicipalityCityPoints.length > 0) {
       items.push({
@@ -1585,9 +1664,18 @@ export default function MunicipalitiesPage() {
       })
     }
 
+    if (firmsDetectionMarkers.length > 0) {
+      items.push({
+        key: 'firms',
+        tone: 'firms',
+        label: 'Θερμική ανωμαλία NASA FIRMS',
+      })
+    }
+
     return items
   }, [
     copernicusMarkers.length,
+    firmsDetectionMarkers.length,
     forestFireMarkers.length,
     hasCopernicusShapes,
     hasSelectedFireLegend,
@@ -1850,6 +1938,7 @@ export default function MunicipalitiesPage() {
       setCurrentFireRows([])
       setForestFireRows([])
       setCopernicusRows([])
+      setFirmsDetectionRows([])
       setContractCurvePoints([])
       setContractOrganizationById({})
       setMunicipalitySpendPer100k(null)
@@ -1974,6 +2063,8 @@ export default function MunicipalitiesPage() {
           }
         })
 
+        const firmsSince = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
+
         const [
           profileResult,
           municipalityMapSpendResult,
@@ -1982,6 +2073,7 @@ export default function MunicipalitiesPage() {
           nextCurrentFireRows,
           nextForestRows,
           nextCopernicusRows,
+          nextFirmsDetectionRows,
           ...contractResults
         ] = await Promise.all([
           supabase
@@ -2055,6 +2147,16 @@ export default function MunicipalitiesPage() {
               .select('firedate, area_ha, centroid, shape')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('firedate', { ascending: true })
+              .range(from, to),
+          ),
+          fetchAllPaginatedRows<FirmsActiveFireDetectionRow>(
+            (from, to) => supabase
+              .from('firms_active_fire_detections')
+              .select('id, acquired_at, acquired_at_el, latitude, longitude, scan, track, satellite, instrument, confidence, frp')
+              .eq('municipality_key', selectedMunicipalityKey)
+              .gte('acquired_at', firmsSince)
+              .eq('is_in_greece', true)
+              .order('acquired_at', { ascending: false })
               .range(from, to),
           ),
           ...contractRequests,
@@ -2215,6 +2317,7 @@ export default function MunicipalitiesPage() {
           setCurrentFireRows(nextCurrentFireRows)
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
+          setFirmsDetectionRows(nextFirmsDetectionRows)
           setContractYearSummary(nextContractYearSummary)
           setContractCurvePoints(nextContractCurvePoints)
           setContractOrganizationById(nextContractOrganizationById)
@@ -2234,6 +2337,7 @@ export default function MunicipalitiesPage() {
           setCurrentFireRows([])
           setForestFireRows([])
           setCopernicusRows([])
+          setFirmsDetectionRows([])
           setPageLoading(false)
         }
       }
@@ -2404,6 +2508,12 @@ export default function MunicipalitiesPage() {
     const status = cleanText(activeRow.status) ?? 'άγνωστη κατάσταση'
     return `ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ ${fuelType} - ${status}`
   }, [currentFireRows])
+  const activeFirmsDetectionAlert = useMemo(() => {
+    const count = firmsDetectionRows.length
+    if (count <= 0) return null
+    if (count === 1) return 'ΕΝΕΡΓΗ ΘΕΡΜΙΚΗ ΑΝΩΜΑΛΙΑ (NASA FIRMS)'
+    return `${formatNumber(count)} ΕΝΕΡΓΕΣ ΘΕΡΜΙΚΕΣ ΑΝΩΜΑΛΙΕΣ (NASA FIRMS)`
+  }, [firmsDetectionRows.length])
   const copernicusCountByYear = useMemo(() => {
     const summary = new Map<number, number>()
 
@@ -2780,6 +2890,14 @@ export default function MunicipalitiesPage() {
                   <span>
                     <span className="municipality-profile-hero__alert-dot" aria-hidden="true" />
                     {activeCurrentFireAlert}
+                  </span>
+                </div>
+              )}
+              {activeFirmsDetectionAlert && (
+                <div className="municipality-profile-hero__status-strip municipality-profile-hero__status-strip--alert" role="status" aria-live="polite">
+                  <span>
+                    <span className="municipality-profile-hero__alert-dot" aria-hidden="true" />
+                    {activeFirmsDetectionAlert}
                   </span>
                 </div>
               )}
@@ -3296,6 +3414,62 @@ export default function MunicipalitiesPage() {
                                 </circle>
                               </g>
                             ))}
+                        </g>
+                        <g className="fire-firms__footprints">
+                          {firmsDetectionMarkers.map((detection) => (
+                            <rect
+                              key={detection.key}
+                              className="fire-firms__footprint"
+                              x={detection.x - detection.width / 2}
+                              y={detection.y - detection.height / 2}
+                              width={detection.width}
+                              height={detection.height}
+                              vectorEffect="non-scaling-stroke"
+                              onMouseEnter={(event) => {
+                                if (isMobileMunicipalityMap) return
+                                updatePointTooltip(event, 'NASA FIRMS', [
+                                  `Περιοχή: ${selectedName}`,
+                                  `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
+                                  formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
+                                  `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+                                ], {
+                                  id: detection.key,
+                                  fallback: { x: detection.x, y: detection.y },
+                                })
+                              }}
+                              onMouseMove={(event) => {
+                                if (isMobileMunicipalityMap) return
+                                updatePointTooltip(event, 'NASA FIRMS', [
+                                  `Περιοχή: ${selectedName}`,
+                                  `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
+                                  formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
+                                  `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+                                ], {
+                                  id: detection.key,
+                                  fallback: { x: detection.x, y: detection.y },
+                                })
+                              }}
+                              onMouseLeave={() => {
+                                if (isMobileMunicipalityMap) return
+                                clearPointTooltip()
+                              }}
+                              onClick={(event) => {
+                                event.stopPropagation()
+                                togglePointTooltip(
+                                  event,
+                                  'NASA FIRMS',
+                                  [
+                                    `Περιοχή: ${selectedName}`,
+                                    `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
+                                    formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
+                                    `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+                                  ],
+                                  detection.key,
+                                  { x: detection.x, y: detection.y },
+                                )
+                              }}
+                            />
+                          ))}
                         </g>
                         {selectedMunicipalityCityPoints.map((city) => {
                           if (!city.labelled) return null

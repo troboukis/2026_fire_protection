@@ -54,7 +54,16 @@ CREATE TABLE IF NOT EXISTS public.firms_active_fire_detections (
       AND acquisition_time_utc % 100 < 60
     ),
   CONSTRAINT chk_firms_active_fire_detections_confidence
-    CHECK (confidence IN ('l', 'n', 'h')),
+    CHECK (
+      confidence IN ('l', 'n', 'h')
+      OR (
+        CASE
+          WHEN confidence ~ '^[0-9]+(\.[0-9]+)?$'
+          THEN confidence::NUMERIC >= 0 AND confidence::NUMERIC <= 100
+          ELSE FALSE
+        END
+      )
+    ),
   CONSTRAINT chk_firms_active_fire_detections_daynight
     CHECK (daynight IN ('D', 'N')),
   CONSTRAINT chk_firms_active_fire_detections_frp
