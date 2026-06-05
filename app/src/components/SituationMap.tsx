@@ -219,6 +219,11 @@ function formatMegawatts(value: number | null): string {
   return `${value.toLocaleString('el-GR', { maximumFractionDigits: 1 })} MW`
 }
 
+function formatObservationCount(count: number): string {
+  const formattedCount = count.toLocaleString('el-GR')
+  return `${formattedCount} ${count === 1 ? 'παρατήρηση' : 'παρατηρήσεις'}`
+}
+
 function toDayStart(input: Date): Date {
   return new Date(input.getFullYear(), input.getMonth(), input.getDate())
 }
@@ -420,7 +425,7 @@ function buildHillshadeTileOverlays(
   return overlays
 }
 
-export default function FireCopernicusSection() {
+export default function SituationMap() {
   const navigate = useNavigate()
   const currentYear = useMemo(() => new Date().getFullYear(), [])
   const today = useMemo(() => toDayStart(new Date()), [])
@@ -630,7 +635,10 @@ export default function FireCopernicusSection() {
   useLayoutEffect(() => {
     if (!geojson || !mapRef.current || typeof ResizeObserver === 'undefined') return
 
+    let frameId: number | null = null
+
     const updateMapSize = () => {
+      frameId = null
       const rect = mapRef.current?.getBoundingClientRect()
       if (!rect) return
       const width = Math.round(rect.width)
@@ -644,14 +652,22 @@ export default function FireCopernicusSection() {
       ))
     }
 
-    updateMapSize()
-    const observer = new ResizeObserver(updateMapSize)
+    const scheduleMapSizeUpdate = () => {
+      if (frameId != null) return
+      frameId = window.requestAnimationFrame(updateMapSize)
+    }
+
+    scheduleMapSizeUpdate()
+    const observer = new ResizeObserver(scheduleMapSizeUpdate)
     observer.observe(mapRef.current)
-    window.addEventListener('orientationchange', updateMapSize)
+    window.addEventListener('resize', scheduleMapSizeUpdate)
+    window.addEventListener('orientationchange', scheduleMapSizeUpdate)
 
     return () => {
+      if (frameId != null) window.cancelAnimationFrame(frameId)
       observer.disconnect()
-      window.removeEventListener('orientationchange', updateMapSize)
+      window.removeEventListener('resize', scheduleMapSizeUpdate)
+      window.removeEventListener('orientationchange', scheduleMapSizeUpdate)
     }
   }, [geojson])
 
@@ -773,6 +789,24 @@ export default function FireCopernicusSection() {
   const latestFire = [...fires]
     .filter((fire) => fire.date)
     .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())[0] ?? null
+  const satellites = useMemo(() => {
+    const bySatellite = new Map<string, { detection: FirmsDetection; count: number }>()
+    firmsDetections.forEach((detection) => {
+      const key = `${detection.satellite}/${detection.instrument}`
+      const current = bySatellite.get(key)
+      if (!current) {
+        bySatellite.set(key, { detection, count: 1 })
+        return
+      }
+      current.count += 1
+      if (new Date(detection.acquiredAt ?? 0).getTime() > new Date(current.detection.acquiredAt ?? 0).getTime()) {
+        current.detection = detection
+      }
+    })
+    return [...bySatellite.values()]
+      .filter(({ count }) => count > 0)
+      .sort((a, b) => new Date(b.detection.acquiredAt ?? 0).getTime() - new Date(a.detection.acquiredAt ?? 0).getTime())
+  }, [firmsDetections])
 
   const openMunicipalityProfile = useCallback((municipalityKey: string | null) => {
     if (!municipalityKey) return false
@@ -780,12 +814,13 @@ export default function FireCopernicusSection() {
     return true
   }, [navigate])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!mapData || !svgRef.current) return
 
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove()
-    svg.attr('viewBox', `0 0 ${mapData.width} ${mapData.height}`)
+    svg
+      .attr('viewBox', `0 0 ${mapData.width} ${mapData.height}`)
 
     const updatePointTooltip = (event: MouseEvent, fire: (typeof mapData.points)[number]) => {
       const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
@@ -1026,17 +1061,17 @@ export default function FireCopernicusSection() {
 
   if (loading) {
     return (
-      <section id="copernicus" className="fire-copernicus section-rule dev-tag-anchor">
+      <section id="situationmap" className="fire-copernicus section-rule dev-tag-anchor">
         <div className="dev-tag-stack dev-tag-stack--right">
-          <ComponentTag name="FireCopernicusSection" />
+          <ComponentTag name="SituationMap" />
           <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
         </div>
         <div className="fire-copernicus__intro dev-tag-anchor">
           <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
-          <div className="eyebrow">Copernicus</div>
-          <h2>Χάρτης δασικών πυρκαγιών</h2>
+          <div className="eyebrow">Situation Map</div>
+          <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
           <p>
-            Κάθε πυρκαγιά εντοπίζεται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a>. Η εκτίμηση των καμένων εκτάσεων βασίζεται σε δορυφορικά δεδομένα.<br></br>
+            Ο χάρτης αποτυπώνει δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
           </p>
         </div>
         <DataLoadingCard
@@ -1048,24 +1083,38 @@ export default function FireCopernicusSection() {
   }
 
   return (
-    <section id="copernicus" className="fire-copernicus section-rule dev-tag-anchor">
+    <section id="situationmap" className="fire-copernicus section-rule dev-tag-anchor">
       <div className="dev-tag-stack dev-tag-stack--right">
-        <ComponentTag name="FireCopernicusSection" />
+        <ComponentTag name="SituationMap" />
         <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
       </div>
       <div className="fire-copernicus__intro dev-tag-anchor">
         <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
-        <div className="eyebrow">Copernicus</div>
-        <h2>Χάρτης δασικών πυρκαγιών</h2>
-        <p>
-          Κάθε πυρκαγιά εντοπίζεται από το ευρωπαϊκό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus (EFFIS)</a>. Η εκτίμηση των καμένων εκτάσεων βασίζεται σε δορυφορικά δεδομένα.<br></br>
-        </p>
+        <div className="eyebrow">Situation Map</div>
+        <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
         <div className="brand-mark fire-copernicus__brand-mark">
           Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}
         </div>
+        <p>
+          Ο χάρτης απεικονίζει δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
+        </p>
+        <div className="fire-firms__satellites" aria-label="Τελευταίες διελεύσεις δορυφόρων NASA FIRMS">
+          {satellites.length > 0 ? satellites.map(({ detection, count }) => (
+            <div key={`${detection.satellite}-${detection.instrument}`}>
+              <strong>{detection.satellite} / {detection.instrument} · {formatObservationCount(count)}</strong>
+              <span>{formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt)}</span>
+            </div>
+          )) : (
+            <div>
+              <strong>Δεν υπάρχουν διαθέσιμες διελεύσεις</strong>
+              <span>—</span>
+            </div>
+          )}
+        </div>
+        
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
         <div className="fire-copernicus__date-filter-selected">
-          <span className="label">Βλέπετε δεδομένα για το διάστημα</span>
+          <span className="label">Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα</span>
           <strong>{formatDateOnlyEl(rangeStartDate)} - {formatDateOnlyEl(rangeEndDate)}</strong>
         </div>
         <div className="fire-copernicus__stats">
@@ -1147,14 +1196,14 @@ export default function FireCopernicusSection() {
         {mapData && (
           <div
             ref={mapRef}
-            className="fire-copernicus__map dev-tag-anchor"
+            className="fire-copernicus__map fire-firms__map dev-tag-anchor"
             onMouseLeave={() => {
               setHoveredFire(null)
               setHoveredFirmsDetection(null)
             }}
           >
             <ComponentTag
-              name="fire-copernicus__map"
+              name="fire-copernicus__map fire-firms__map"
               kind="CLASS"
               className="component-tag--overlay"
               style={{ left: 'auto', right: '0.45rem' }}
@@ -1238,10 +1287,14 @@ export default function FireCopernicusSection() {
         )}
         {mapData && (
           <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus EFFIS">
-            <span className="fire-copernicus__legend-dot" aria-hidden="true" />
-            <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus EFFIS' : 'Καμένη έκταση Copernicus EFFIS'}</span>
-            <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
-            <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            <span className="fire-copernicus__legend-row">
+              <span className="fire-copernicus__legend-dot" aria-hidden="true" />
+              <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus EFFIS' : 'Καμένη έκταση Copernicus EFFIS'}</span>
+            </span>
+            <span className="fire-copernicus__legend-row">
+              <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
+              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            </span>
           </div>
         )}
       </div>

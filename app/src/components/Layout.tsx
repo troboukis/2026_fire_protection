@@ -6,8 +6,6 @@ import { supabase } from '../lib/supabase'
 
 declare const __LAST_COMMIT_ISO__: string
 
-const GITHUB_REPOSITORY_API_URL = 'https://api.github.com/repos/troboukis/2026_fire_protection'
-
 function latestIso(...values: Array<string | null | undefined>): string | null {
   let latestValue: string | null = null
   let latestTime = Number.NEGATIVE_INFINITY
@@ -47,21 +45,7 @@ export default function Layout() {
     let isCancelled = false
 
     const loadLastUpdateTime = async () => {
-      let githubPushIso: string | null = null
       let currentFiresIso: string | null = null
-
-      try {
-        const response = await fetch(GITHUB_REPOSITORY_API_URL, {
-          headers: { Accept: 'application/vnd.github+json' },
-          cache: 'no-store',
-        })
-        if (response.ok) {
-          const payload = await response.json() as { pushed_at?: unknown }
-          githubPushIso = typeof payload.pushed_at === 'string' ? payload.pushed_at : null
-        }
-      } catch {
-        // Keep the fallback timestamp when GitHub metadata is unavailable.
-      }
 
       try {
         const { data } = await supabase
@@ -77,7 +61,7 @@ export default function Layout() {
       }
 
       if (isCancelled) return
-      setLastUpdateIso(latestIso(githubPushIso, currentFiresIso, __LAST_COMMIT_ISO__) ?? __LAST_COMMIT_ISO__)
+      setLastUpdateIso(latestIso(currentFiresIso, __LAST_COMMIT_ISO__) ?? __LAST_COMMIT_ISO__)
     }
 
     void loadLastUpdateTime()

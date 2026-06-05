@@ -17,7 +17,7 @@ import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
 const ContractModal = lazy(() => import('./components/ContractModal'))
-const FireCopernicusSection = lazy(() => import('./components/FireCopernicusSection'))
+const SituationMap = lazy(() => import('./components/SituationMap'))
 const FeaturedRecordsSection = lazy(() => import('./components/FeaturedRecordsSection'))
 const Funding = lazy(() => import('./components/Funding'))
 const OrganizationSection = lazy(() => import('./components/OrganizationSection'))
@@ -494,7 +494,7 @@ export default function App() {
   useEffect(() => {
     const prefetch = () => {
       void Promise.all([
-        import('./components/FireCopernicusSection'),
+        import('./components/SituationMap'),
         import('./components/FeaturedRecordsSection'),
         import('./components/Funding'),
         import('./components/OrganizationSection'),
@@ -1745,8 +1745,8 @@ export default function App() {
       <main>
         <FireNowTicker />
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση Copernicus" />}>
-          <FireCopernicusSection />
+        <Suspense fallback={<SectionFallback label="Φόρτωση Situation Map" />}>
+          <SituationMap />
         </Suspense>
 
         <section className="hero section-rule dev-tag-anchor">

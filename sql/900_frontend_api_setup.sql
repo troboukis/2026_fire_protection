@@ -3063,12 +3063,51 @@ TO anon, authenticated, service_role;
 
 
 -- -------------------------------------------------------------
--- P) Force PostgREST to reload schema cache
+-- P) NASA FIRMS active fire detections frontend access
+-- -------------------------------------------------------------
+DO $$
+BEGIN
+  IF to_regclass('public.firms_active_fire_detections') IS NOT NULL THEN
+    ALTER TABLE public.firms_active_fire_detections
+      DROP CONSTRAINT IF EXISTS chk_firms_active_fire_detections_confidence;
+
+    ALTER TABLE public.firms_active_fire_detections
+      ADD CONSTRAINT chk_firms_active_fire_detections_confidence
+      CHECK (
+        confidence IN ('l', 'n', 'h')
+        OR (
+          CASE
+            WHEN confidence ~ '^[0-9]+(\.[0-9]+)?$'
+            THEN confidence::NUMERIC >= 0 AND confidence::NUMERIC <= 100
+            ELSE FALSE
+          END
+        )
+      );
+
+    ALTER TABLE public.firms_active_fire_detections ENABLE ROW LEVEL SECURITY;
+
+    DROP POLICY IF EXISTS public_read_firms_active_fire_detections
+      ON public.firms_active_fire_detections;
+
+    CREATE POLICY public_read_firms_active_fire_detections
+    ON public.firms_active_fire_detections
+    FOR SELECT
+    TO anon, authenticated
+    USING (true);
+
+    GRANT SELECT ON public.firms_active_fire_detections
+    TO anon, authenticated, service_role;
+  END IF;
+END $$;
+
+
+-- -------------------------------------------------------------
+-- Q) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
 NOTIFY pgrst, 'reload schema';
 
 -- -------------------------------------------------------------
--- Q) Quick verification (run after setup)
+-- R) Quick verification (run after setup)
 -- -------------------------------------------------------------
 -- 1) Check RPC functions exist
 -- select p.proname, pg_get_function_arguments(p.oid) as args

@@ -55,4 +55,4 @@ jobs:
         run: python src/scrape_forest_fires.py
 
       - name: Refresh NASA FIRMS active fires
-        run: python src/fetch_firms_active_fires.py
+        run: python src/fetch_firms_active_fires.py --skip-on-fetch-error

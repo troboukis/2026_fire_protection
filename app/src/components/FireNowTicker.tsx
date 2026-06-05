@@ -149,10 +149,12 @@ export default function FireNowTicker() {
   const [groupCount, setGroupCount] = useState(2)
   const [animDuration, setAnimDuration] = useState(42)
   const [isMobileTicker, setIsMobileTicker] = useState(() => window.matchMedia('(max-width: 680px)').matches)
+  const [scrollForFit, setScrollForFit] = useState(false)
 
   const viewportRef = useRef<HTMLDivElement>(null)
   const groupRef = useRef<HTMLDivElement>(null)
-  const shouldScroll = !loadFailed && (activeCount ?? 0) > (isMobileTicker ? 1 : 4)
+  const exceedsCountThreshold = (activeCount ?? 0) > (isMobileTicker ? 1 : 4)
+  const shouldScroll = !loadFailed && (exceedsCountThreshold || scrollForFit)
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 680px)')
@@ -202,6 +204,62 @@ export default function FireNowTicker() {
       supabase.removeChannel(channel)
     }
   }, [])
+
+  useLayoutEffect(() => {
+    if (loadFailed || !items.length || exceedsCountThreshold) {
+      setScrollForFit(false)
+      return
+    }
+
+    let frameId: number | null = null
+
+    const measureFit = () => {
+      const viewport = viewportRef.current
+      const group = groupRef.current
+      if (!viewport || !group) return
+
+      const groupStyle = window.getComputedStyle(group)
+      const inlinePadding =
+        Number.parseFloat(groupStyle.paddingLeft || '0') +
+        Number.parseFloat(groupStyle.paddingRight || '0')
+      const contentWidth = Array.from(group.children).reduce((total, child) => {
+        return total + child.getBoundingClientRect().width
+      }, inlinePadding)
+      const firstChildTop = group.children[0]?.getBoundingClientRect().top
+      const wrapsToMultipleLines = Array.from(group.children).some((child) => {
+        if (firstChildTop == null) return false
+        return Math.abs(child.getBoundingClientRect().top - firstChildTop) > 1
+      })
+      const viewportWidth = viewport.getBoundingClientRect().width
+
+      setScrollForFit((current) => {
+        const next = wrapsToMultipleLines || contentWidth > viewportWidth + 1
+        return current === next ? current : next
+      })
+    }
+
+    const scheduleMeasure = () => {
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+      frameId = window.requestAnimationFrame(measureFit)
+    }
+
+    scheduleMeasure()
+
+    const viewport = viewportRef.current
+    const group = groupRef.current
+    if (!viewport || !group) return
+
+    const observer = new ResizeObserver(scheduleMeasure)
+    observer.observe(viewport)
+    observer.observe(group)
+    window.addEventListener('orientationchange', scheduleMeasure)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('orientationchange', scheduleMeasure)
+      if (frameId != null) window.cancelAnimationFrame(frameId)
+    }
+  }, [exceedsCountThreshold, items, loadFailed])
 
   useLayoutEffect(() => {
     if (!shouldScroll) {
