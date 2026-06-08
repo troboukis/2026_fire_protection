@@ -325,7 +325,8 @@ fire_name,normalized,municipality_id,municipality_name,region_id,confidence,note
 Δ. ΖΑΡΑΚΑ,Δ. ΖΑΡΑΚΑ,,,,unknown,
 Δ. ΜΟΝΕΜΒΑΣΙΑΣ,Δ. ΜΟΝΕΜΒΑΣΙΑΣ,9251.0,Μονεμβασιάς,ΠΕΛΟΠΟΝΝΗΣΟΥ,normalized,Substring match
 Δ. ΒΟΪΩΝ,Δ. ΒΟΙΩΝ,,,,unknown,
-Δ. ΛΟΥΤΡΑΚΙΟΥ-ΠΕΡΑΧΩΡΑΣ,Δ. ΛΟΥΤΡΑΚΙΟΥ-ΠΕΡΑΧΩΡΑΣ,,,,unknown,
+Δ. ΛΟΥΤΡΑΚΙΟΥ-ΠΕΡΑΧΩΡΑΣ,Δ. ΛΟΥΤΡΑΚΙΟΥ-ΠΕΡΑΧΩΡΑΣ,9244.0,Λουτρακίου - Αγ. Θεοδώρων,ΠΕΛΟΠΟΝΝΗΣΟΥ,manual,Current fire service alias
+ΛΟΥΤΡΑΚΙΟΥ - ΑΓΙΩΝ ΘΕΟΔΩΡΩΝ,ΛΟΥΤΡΑΚΙΟΥ - ΑΓΙΩΝ ΘΕΟΔΩΡΩΝ,9244.0,Λουτρακίου - Αγ. Θεοδώρων,ΠΕΛΟΠΟΝΝΗΣΟΥ,manual,Current fire service alias
 Δ. ΒΟΧΑΣ,Δ. ΒΟΧΑΣ,,,,unknown,
 Δ. ΤΕΝΕΑΣ,Δ. ΤΕΝΕΑΣ,,,,unknown,
 Δ. ΝΕΜΕΑΣ,Δ. ΝΕΜΕΑΣ,9245.0,Νεμέας,ΠΕΛΟΠΟΝΝΗΣΟΥ,normalized,Substring match
@@ -579,7 +580,7 @@ fire_name,normalized,municipality_id,municipality_name,region_id,confidence,note
 Δ. ΤΡΟΙΖΗΝΙΑΣ,Δ. ΤΡΟΙΖΗΝΙΑΣ,9213.0,Τροιζηνίας,ΑΤΤΙΚΗΣ,normalized,Substring match
 Δ. ΑΡΓΟΥΣ - ΜΥΚΗΝΩΝ,Δ. ΑΡΓΟΥΣ - ΜΥΚΗΝΩΝ,9233.0,Άργους - Μυκηνών,ΠΕΛΟΠΟΝΝΗΣΟΥ,normalized,Substring match
 Δ. ΒΕΛΟΥ-ΒΟΧΑΣ,Δ. ΒΕΛΟΥ-ΒΟΧΑΣ,,,,unknown,
-Δ. ΛΟΥΤΡΑΚΙΟΥ-ΑΓΙΩΝ ΘΕΟΔΩΡΩ,Δ. ΛΟΥΤΡΑΚΙΟΥ-ΑΓΙΩΝ ΘΕΟΔΩΡΩ,,,,unknown,
+Δ. ΛΟΥΤΡΑΚΙΟΥ-ΑΓΙΩΝ ΘΕΟΔΩΡΩ,Δ. ΛΟΥΤΡΑΚΙΟΥ-ΑΓΙΩΝ ΘΕΟΔΩΡΩ,9244.0,Λουτρακίου - Αγ. Θεοδώρων,ΠΕΛΟΠΟΝΝΗΣΟΥ,manual,Current fire service alias
 Δ. ΣΙΚΥΩΝΙΩΝ,Δ. ΣΙΚΥΩΝΙΩΝ,9247.0,Σικυωνίων,ΠΕΛΟΠΟΝΝΗΣΟΥ,normalized,Substring match
 Δ. ΞΥΛΟΚΑΣΤΡΟΥ-ΕΥΡΩΣΤΙΝΗΣ,Δ. ΞΥΛΟΚΑΣΤΡΟΥ-ΕΥΡΩΣΤΙΝΗΣ,,,,unknown,
 Δ. ΛΑΜΙΕΩΝ,Δ. ΛΑΜΙΕΩΝ,9160.0,Λαμιέων,ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ,normalized,Substring match
