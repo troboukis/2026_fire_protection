@@ -4666,6 +4666,13 @@ main {
     min-width: 0;
     max-width: 100%;
     justify-self: stretch;
+    padding-inline: 0.5rem 0.7rem;
+    text-align: left;
+  }
+
+  .contracts-filters input[type="date"]::-webkit-date-and-time-value {
+    width: 100%;
+    margin: 0;
     text-align: left;
   }
 
@@ -4786,7 +4793,7 @@ main {
   }
 
   .contracts-filters input[type="date"] {
-    padding-right: 0.3rem;
+    padding-inline: 0.42rem 0.7rem;
   }
 
   .contracts-table {
