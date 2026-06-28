@@ -3307,9 +3307,22 @@ main {
   }
 
   .top-nav [data-nav-item="contracts"],
+  .top-nav [data-nav-item="diavgeia"] {
+    grid-column: span 2;
+  }
+
   .top-nav [data-nav-item="analysis"],
   .top-nav [data-nav-item="about"] {
-    grid-column: span 2;
+    grid-column: span 1;
+  }
+
+  .top-nav [data-nav-item="diavgeia"] {
+    flex-wrap: wrap;
+    row-gap: 0.18rem;
+  }
+
+  .top-nav [data-nav-item="diavgeia"] .nav-new-badge {
+    font-size: 0.48rem;
   }
 
   .top-nav [data-nav-item="home"],
