@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
+import { dispatchCurrentFireHover } from '../lib/currentFireHover'
 import { supabase } from '../lib/supabase'
 
 type CurrentFireRow = {
@@ -14,6 +15,8 @@ type CurrentFireRow = {
   status_updated_at: string | null
   last_seen_at: string | null
   status: string | null
+  lat: number | string | null
+  lon: number | string | null
 }
 
 type FireTickerItem = {
@@ -24,6 +27,7 @@ type FireTickerItem = {
   startDate: string
   status: string
   statusColor?: string
+  hasLocation: boolean
 }
 
 type FireStatusCount = {
@@ -73,6 +77,12 @@ function normalizeStatus(value: string | null): string | null {
   return STATUS_LABELS[cleaned] ?? cleaned
 }
 
+function hasValidCoordinatePair(lat: unknown, lon: unknown): boolean {
+  const parsedLat = Number(lat)
+  const parsedLon = Number(lon)
+  return Number.isFinite(parsedLat) && Number.isFinite(parsedLon)
+}
+
 function buildStatusCounts(rows: CurrentFireRow[]): FireStatusCount[] {
   const counts = new Map<string, number>()
 
@@ -106,10 +116,37 @@ function buildTickerItem(row: CurrentFireRow): FireTickerItem {
     startDate: formatDateEl(cleanText(row.start_date)),
     status,
     statusColor: STATUS_COLORS[status],
+    hasLocation: hasValidCoordinatePair(row.lat, row.lon),
   }
 }
 
-function renderTickerEntries(items: FireTickerItem[], keyPrefix = '', onClickMunicipality?: (key: string) => void) {
+function LocationIcon() {
+  return (
+    <svg
+      className="fire-ticker__location-icon"
+      viewBox="0 0 24 24"
+      aria-label="Έχει γεωγραφική θέση"
+      role="img"
+    >
+      <path
+        d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+      <circle cx="12" cy="10" r="2" fill="currentColor" />
+    </svg>
+  )
+}
+
+function renderTickerEntries(
+  items: FireTickerItem[],
+  keyPrefix = '',
+  onClickMunicipality?: (key: string) => void,
+  onHoverFire?: (incidentKey: string | null) => void,
+) {
   return items.flatMap((item) => [
     <span key={`${keyPrefix}${item.id}-separator`} className="fire-ticker__separator" aria-hidden="true">
       <span className="fire-ticker__dot" />
@@ -118,9 +155,16 @@ function renderTickerEntries(items: FireTickerItem[], keyPrefix = '', onClickMun
       key={`${keyPrefix}${item.id}`}
       className={`fire-ticker__entry${item.municipalityKey ? ' fire-ticker__entry--clickable' : ''}`}
       onClick={item.municipalityKey && onClickMunicipality ? () => onClickMunicipality(item.municipalityKey!) : undefined}
+      onMouseEnter={item.hasLocation && onHoverFire ? () => onHoverFire(item.id) : undefined}
+      onMouseLeave={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
+      onFocus={item.hasLocation && onHoverFire ? () => onHoverFire(item.id) : undefined}
+      onBlur={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
     >
       <div className="fire-ticker__entry-copy">
-        <span className="fire-ticker__entry-eyebrow">{item.municipalityLabel}</span>
+        <span className="fire-ticker__entry-eyebrow">
+          {item.hasLocation ? <LocationIcon /> : null}
+          <span>{item.municipalityLabel}</span>
+        </span>
         <strong className="fire-ticker__entry-title">{item.fuelType}</strong>
         <span className="fire-ticker__entry-meta">Ξέσπασε: {item.startDate}</span>
         <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.status}</span>
@@ -132,7 +176,7 @@ function renderTickerEntries(items: FireTickerItem[], keyPrefix = '', onClickMun
 async function fetchCurrentFires() {
   return supabase
     .from('current_fires')
-    .select('incident_key, is_current, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status')
+    .select('incident_key, is_current, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status, lat, lon')
     .eq('is_current', true)
     .or('status.is.null,status.neq.ΛΗΞΗ')
     .order('status_updated_at', { ascending: false, nullsFirst: false })
@@ -316,6 +360,10 @@ export default function FireNowTicker() {
     navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)
   }
 
+  const handleFireHover = (incidentKey: string | null) => {
+    dispatchCurrentFireHover(incidentKey)
+  }
+
   const renderedItems = items.length
     ? items
     : [loadFailed
@@ -326,6 +374,7 @@ export default function FireNowTicker() {
           fuelType: 'Δεν ήταν δυνατή η φόρτωση δεδομένων',
           startDate: '—',
           status: '—',
+          hasLocation: false,
         }
       : {
         id: 'fallback',
@@ -334,6 +383,7 @@ export default function FireNowTicker() {
         fuelType: 'Δεν υπάρχουν ενεργές πυρκαγιές',
         startDate: '—',
         status: '—',
+        hasLocation: false,
       }]
   const renderedGroupCount = shouldScroll ? groupCount : 1
 
@@ -379,7 +429,7 @@ export default function FireNowTicker() {
                   ref={i === 0 ? groupRef : undefined}
                   aria-hidden={i > 0 ? 'true' : undefined}
                 >
-                  {renderTickerEntries(renderedItems, i === 0 ? '' : `g${i}-`, handleMunicipalityClick)}
+                  {renderTickerEntries(renderedItems, i === 0 ? '' : `g${i}-`, handleMunicipalityClick, handleFireHover)}
                 </div>
               ))}
             </div>

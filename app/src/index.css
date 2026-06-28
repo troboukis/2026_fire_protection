@@ -499,7 +499,17 @@ main {
 }
 
 .fire-ticker__entry-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
   letter-spacing: 0.03em;
+}
+
+.fire-ticker__location-icon {
+  width: 0.74rem;
+  height: 0.74rem;
+  flex: 0 0 auto;
+  color: var(--favicon-accent);
 }
 
 .fire-ticker__entry-title {
@@ -2399,7 +2409,7 @@ main {
   min-width: 0;
   aspect-ratio: 760 / 520;
   min-height: 32rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .fire-copernicus__toggle {
@@ -2489,6 +2499,62 @@ main {
   cursor: pointer;
 }
 
+.fire-current__point-halo {
+  fill: rgba(183, 28, 28, 0.12);
+  stroke: rgba(183, 28, 28, 0.22);
+  stroke-width: 1px;
+}
+
+.fire-current__points g.is-highlighted .fire-current__point-halo {
+  fill: rgba(183, 28, 28, 0.2);
+  stroke: #fff9f2;
+  stroke-width: 1.4px;
+}
+
+.fire-current__points g.is-dimmed {
+  opacity: 0.28;
+}
+
+.fire-current__point-marker {
+  fill: none;
+  stroke: #b91c1c;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 3px 5px rgba(73, 23, 14, 0.28));
+}
+
+.fire-current__point-core {
+  fill: #b91c1c;
+}
+
+.fire-current__point-hit-area {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+
+.fire-current__legend-icon {
+  display: inline-block;
+  vertical-align: -0.12em;
+  width: 0.74rem;
+  height: 0.74rem;
+  flex: 0 0 auto;
+  color: #b91c1c;
+}
+
+.fire-current__legend-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.fire-current__legend-icon circle {
+  fill: currentColor;
+}
+
 .fire-copernicus__cluster-count {
   font-family: var(--font-mono);
   font-size: 0.42rem;
@@ -2541,6 +2607,12 @@ main {
   font-size: 0.67rem;
   line-height: 1.35;
   color: #645a4f;
+}
+
+.fire-copernicus__tooltip--stacked .tooltip-type-separator {
+  margin-top: 0.34rem;
+  padding-top: 0.34rem;
+  border-top: 1px solid rgba(111, 94, 77, 0.16);
 }
 
 .fire-copernicus__empty {
@@ -6469,6 +6541,12 @@ main {
   pointer-events: none;
 }
 
+.municipality-profile-hero__point-tooltip--stacked .tooltip-type-separator {
+  margin-top: 0.34rem;
+  padding-top: 0.34rem;
+  border-top: 1px solid rgba(111, 94, 77, 0.16);
+}
+
 .municipality-profile-hero__map-fallback {
   display: grid;
   place-items: center;
@@ -6547,6 +6625,46 @@ main {
 .municipality-profile-hero__map-legend-swatch--fire {
   background: rgba(211, 72, 45, 0.86);
   box-shadow: 0 0 0 1px rgba(255, 252, 248, 0.92) inset;
+}
+
+.municipality-profile-hero__current-fire-halo {
+  fill: rgba(183, 28, 28, 0.12);
+  stroke: rgba(183, 28, 28, 0.22);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+
+.municipality-profile-hero__current-fire-pin {
+  fill: none;
+  stroke: #b91c1c;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 3px 5px rgba(73, 23, 14, 0.28));
+}
+
+.municipality-profile-hero__current-fire-core {
+  fill: #b91c1c;
+}
+
+.municipality-profile-hero__map-legend-current-fire {
+  display: inline-block;
+  width: 0.74rem;
+  height: 0.74rem;
+  flex: 0 0 auto;
+  color: #b91c1c;
+}
+
+.municipality-profile-hero__map-legend-current-fire path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.municipality-profile-hero__map-legend-current-fire circle {
+  fill: currentColor;
 }
 
 .municipality-profile-hero__map-legend-swatch--firms {

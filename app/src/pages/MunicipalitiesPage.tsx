@@ -76,6 +76,9 @@ type CurrentFireRow = {
   fuel_type: string | null
   status: string | null
   status_updated_at: string | null
+  start_date: string | null
+  lat: number | string | null
+  lon: number | string | null
 }
 
 type CopernicusRow = {
@@ -206,6 +209,20 @@ type MunicipalityPointTooltip = {
   y: number
   title: string
   items: string[]
+  isStacked?: boolean
+  stackedRows?: Array<{
+    label: string
+    type: string
+  }>
+}
+
+type MunicipalityMapTooltipPoint = {
+  id: string
+  x: number
+  y: number
+  type: string
+  title: string
+  items: Array<string | null>
 }
 
 type ProcurementCpvRow = {
@@ -467,6 +484,19 @@ function toSentenceCaseEl(value: string | null): string {
   if (!text) return '—'
   const lower = text.toLocaleLowerCase('el-GR')
   return lower.charAt(0).toLocaleUpperCase('el-GR') + lower.slice(1)
+}
+
+function formatCityType(value: string | null): string | null {
+  const text = cleanText(value)?.toLowerCase()
+  if (!text) return null
+  if (text === 'primary' || text === 'admin') return 'Έδρα δήμου'
+  if (text === 'minor') return 'Οικισμός'
+  return null
+}
+
+function formatTooltipPointSummary(point: MunicipalityMapTooltipPoint): string {
+  const items = point.items.filter((item): item is string => Boolean(item))
+  return items.length > 0 ? `${point.title}: ${items.join(' · ')}` : point.title
 }
 
 function getWorkTooltipItems(work: WorkMarker): Array<string | null> {
@@ -1543,6 +1573,32 @@ export default function MunicipalitiesPage() {
     })
   }, [selectedCopernicusRows, selectedMunicipalityKey, selectedMunicipalityMap])
 
+  const activeCurrentFireMarkers = useMemo(() => {
+    if (!selectedMunicipalityMap) return []
+
+    return currentFireRows.flatMap((row, index) => {
+      if (!row.is_current || cleanText(row.status) === 'ΛΗΞΗ') return []
+      const lat = toNumber(row.lat)
+      const lon = toNumber(row.lon)
+      if (lat == null || lon == null) return []
+
+      const projected = selectedMunicipalityMap.projection([lon, lat])
+      if (!projected) return []
+
+      const [x, y] = projected
+      if (!Number.isFinite(x) || !Number.isFinite(y)) return []
+
+      return [{
+        key: `${selectedMunicipalityKey ?? 'municipality'}-current-fire-${row.incident_key}-${index}`,
+        x,
+        y,
+        fuelType: cleanText(row.fuel_type),
+        status: cleanText(row.status),
+        startDate: cleanText(row.start_date) ?? cleanText(row.first_seen_at),
+      }]
+    })
+  }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap])
+
   const firmsDetectionMarkers = useMemo(() => {
     if (!selectedMunicipalityMap) return []
 
@@ -1638,7 +1694,7 @@ export default function MunicipalitiesPage() {
   const hasCopernicusShapes = copernicusShapes.length > 0
   const hasSelectedFireLegend = forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes
   const municipalityMapLegendItems = useMemo(() => {
-    const items: Array<{ key: string; tone: 'city' | 'work' | 'fire' | 'firms'; label: string }> = []
+    const items: Array<{ key: string; tone: 'city' | 'work' | 'fire' | 'current-fire' | 'firms'; label: string }> = []
 
     if (selectedMunicipalityCityPoints.length > 0) {
       items.push({
@@ -1664,6 +1720,14 @@ export default function MunicipalitiesPage() {
       })
     }
 
+    if (activeCurrentFireMarkers.length > 0) {
+      items.push({
+        key: 'current-fire',
+        tone: 'current-fire',
+        label: 'Ενεργή πυρκαγιά (θέση κατά προσέγγιση)',
+      })
+    }
+
     if (firmsDetectionMarkers.length > 0) {
       items.push({
         key: 'firms',
@@ -1674,6 +1738,7 @@ export default function MunicipalitiesPage() {
 
     return items
   }, [
+    activeCurrentFireMarkers.length,
     copernicusMarkers.length,
     firmsDetectionMarkers.length,
     forestFireMarkers.length,
@@ -1682,6 +1747,117 @@ export default function MunicipalitiesPage() {
     municipalityWorkMarkers.length,
     selectedMunicipalityCityPoints.length,
     workRowsLoading,
+  ])
+
+  const visibleMunicipalityTooltipPoints = useMemo<MunicipalityMapTooltipPoint[]>(() => {
+    const points: MunicipalityMapTooltipPoint[] = []
+    const municipalityTooltipName =
+      cleanText(profile?.dhmos)
+      ?? cleanText(profile?.municipality_normalized_name)
+      ?? cleanText(selectedMunicipalityKey)
+      ?? '—'
+
+    for (const city of selectedMunicipalityCityPoints) {
+      points.push({
+        id: city.key,
+        x: city.x,
+        y: city.y,
+        type: 'city',
+        title: city.name,
+        items: [
+          city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
+          formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+        ],
+      })
+    }
+
+    for (const work of municipalityWorkMarkers) {
+      points.push({
+        id: work.key,
+        x: work.x,
+        y: work.y,
+        type: 'work',
+        title: work.pointName ?? work.work ?? 'Εργασία',
+        items: getWorkTooltipItems(work),
+      })
+    }
+
+    for (const fire of forestFireMarkers) {
+      points.push({
+        id: fire.key,
+        x: fire.x,
+        y: fire.y,
+        type: 'fire',
+        title: 'Δασική πυρκαγιά',
+        items: [
+          fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
+          fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
+          fire.year != null ? `Έτος: ${fire.year}` : null,
+          `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+        ],
+      })
+    }
+
+    const visibleCopernicusFires = fireViewMode === 'shapes' ? copernicusShapes : copernicusMarkers
+    for (const fire of visibleCopernicusFires) {
+      points.push({
+        id: fire.key,
+        x: fire.x,
+        y: fire.y,
+        type: 'copernicus',
+        title: 'Copernicus / EFFIS',
+        items: [
+          fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+          fire.year != null ? `Έτος: ${fire.year}` : null,
+          `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+        ],
+      })
+    }
+
+    for (const fire of activeCurrentFireMarkers) {
+      points.push({
+        id: fire.key,
+        x: fire.x,
+        y: fire.y,
+        type: 'current-fire',
+        title: 'Ενεργή πυρκαγιά',
+        items: [
+          fire.fuelType,
+          fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
+          fire.status,
+          'Θέση κατά προσέγγιση',
+        ],
+      })
+    }
+
+    for (const detection of firmsDetectionMarkers) {
+      points.push({
+        id: detection.key,
+        x: detection.x,
+        y: detection.y,
+        type: 'firms',
+        title: 'NASA FIRMS',
+        items: [
+          `Περιοχή: ${municipalityTooltipName}`,
+          `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
+          formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
+          `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+        ],
+      })
+    }
+
+    return points
+  }, [
+    activeCurrentFireMarkers,
+    copernicusMarkers,
+    copernicusShapes,
+    fireViewMode,
+    firmsDetectionMarkers,
+    forestFireMarkers,
+    municipalityWorkMarkers,
+    profile,
+    selectedMunicipalityCityPoints,
+    selectedMunicipalityKey,
   ])
 
   const openMunicipality = (municipalityKey: string, replace = true) => {
@@ -1709,6 +1885,44 @@ export default function MunicipalitiesPage() {
     return { x, y }
   }
 
+  const getStackedPointTooltip = (
+    title: string,
+    items: Array<string | null>,
+    id: string | undefined,
+    fallback: { x: number; y: number },
+  ): { title: string; items: string[]; isStacked: boolean; stackedRows?: Array<{ label: string; type: string }> } => {
+    const overlapRadius = isMobileMunicipalityMap ? 16 : 10
+    const overlapping = visibleMunicipalityTooltipPoints.filter((point) => {
+      const dx = point.x - fallback.x
+      const dy = point.y - fallback.y
+      return Math.hypot(dx, dy) <= overlapRadius
+    })
+
+    if (overlapping.length < 2) {
+      return {
+        title,
+        items: items.filter((item): item is string => Boolean(item)),
+        isStacked: false,
+      }
+    }
+
+    const ordered = overlapping.slice().sort((a, b) => {
+      if (a.id === id) return -1
+      if (b.id === id) return 1
+      return a.title.localeCompare(b.title, 'el')
+    })
+
+    return {
+      title: `${ordered.length} σημεία στο ίδιο σημείο`,
+      items: [],
+      isStacked: true,
+      stackedRows: ordered.map((point) => ({
+        label: formatTooltipPointSummary(point),
+        type: point.type,
+      })),
+    }
+  }
+
   const updatePointTooltip = (
     event: ReactMouseEvent<SVGElement>,
     title: string,
@@ -1720,12 +1934,15 @@ export default function MunicipalitiesPage() {
   ) => {
     const fallback = options?.fallback ?? { x: 0, y: 0 }
     const pointer = pointerInMunicipalityMap(event, fallback)
+    const tooltip = getStackedPointTooltip(title, items, options?.id, fallback)
     setPointTooltip({
       id: options?.id,
       x: pointer.x,
       y: pointer.y,
-      title,
-      items: items.filter((item): item is string => Boolean(item)),
+      title: tooltip.title,
+      items: tooltip.items,
+      isStacked: tooltip.isStacked,
+      stackedRows: tooltip.stackedRows,
     })
   }
 
@@ -1737,7 +1954,7 @@ export default function MunicipalitiesPage() {
     fallback: { x: number; y: number },
   ) => {
     const pointer = pointerInMunicipalityMap(event, fallback)
-    const nextItems = items.filter((item): item is string => Boolean(item))
+    const tooltip = getStackedPointTooltip(title, items, id, fallback)
     setPointTooltip((current) => (
       current?.id === id
         ? null
@@ -1745,8 +1962,10 @@ export default function MunicipalitiesPage() {
             id,
             x: pointer.x,
             y: pointer.y,
-            title,
-            items: nextItems,
+            title: tooltip.title,
+            items: tooltip.items,
+            isStacked: tooltip.isStacked,
+            stackedRows: tooltip.stackedRows,
           }
     ))
   }
@@ -2126,7 +2345,7 @@ export default function MunicipalitiesPage() {
           fetchAllPaginatedRows<CurrentFireRow>(
             (from, to) => supabase
               .from('current_fires')
-              .select('incident_key, first_seen_at, is_current, fuel_type, status, status_updated_at')
+              .select('incident_key, first_seen_at, is_current, fuel_type, status, status_updated_at, start_date, lat, lon')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('status_updated_at', { ascending: false, nullsFirst: false })
               .order('first_seen_at', { ascending: false, nullsFirst: false })
@@ -3095,7 +3314,7 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, city.name, [
                                     city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    city.capital ? `Τύπος: ${city.capital}` : null,
+                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
                                   ], {
                                     id: city.key,
                                     fallback: { x: city.x, y: city.y },
@@ -3105,7 +3324,7 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, city.name, [
                                     city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    city.capital ? `Τύπος: ${city.capital}` : null,
+                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
                                   ], {
                                     id: city.key,
                                     fallback: { x: city.x, y: city.y },
@@ -3122,7 +3341,7 @@ export default function MunicipalitiesPage() {
                                     city.name,
                                     [
                                       city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                      city.capital ? `Τύπος: ${city.capital}` : null,
+                                      formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
                                     ],
                                     city.key,
                                     { x: city.x, y: city.y },
@@ -3144,7 +3363,7 @@ export default function MunicipalitiesPage() {
                                   {[
                                     city.name,
                                     city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    city.capital ? `Τύπος: ${city.capital}` : null,
+                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
                                   ]
                                     .filter(Boolean)
                                     .join(' • ')}
@@ -3414,6 +3633,80 @@ export default function MunicipalitiesPage() {
                                 </circle>
                               </g>
                             ))}
+                          {activeCurrentFireMarkers.map((fire) => (
+                            <g key={fire.key}>
+                              <circle
+                                className="municipality-profile-hero__point-hitbox"
+                                cx={fire.x}
+                                cy={fire.y}
+                                r={isMobileMunicipalityMap ? 14 : 10}
+                                fill="transparent"
+                                onMouseEnter={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
+                                    fire.fuelType,
+                                    fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
+                                    fire.status,
+                                    'Θέση κατά προσέγγιση',
+                                  ], {
+                                    id: fire.key,
+                                    fallback: { x: fire.x, y: fire.y },
+                                  })
+                                }}
+                                onMouseMove={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
+                                    fire.fuelType,
+                                    fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
+                                    fire.status,
+                                    'Θέση κατά προσέγγιση',
+                                  ], {
+                                    id: fire.key,
+                                    fallback: { x: fire.x, y: fire.y },
+                                  })
+                                }}
+                                onMouseLeave={() => {
+                                  if (isMobileMunicipalityMap) return
+                                  clearPointTooltip()
+                                }}
+                                onClick={(event) => {
+                                  event.stopPropagation()
+                                  togglePointTooltip(
+                                    event,
+                                    'Ενεργή πυρκαγιά',
+                                    [
+                                      fire.fuelType,
+                                      fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
+                                      fire.status,
+                                      'Θέση κατά προσέγγιση',
+                                    ],
+                                    fire.key,
+                                    { x: fire.x, y: fire.y },
+                                  )
+                                }}
+                              />
+                              <circle
+                                className="municipality-profile-hero__current-fire-halo"
+                                cx={fire.x}
+                                cy={fire.y}
+                                r="8"
+                                pointerEvents="none"
+                              />
+                              <path
+                                className="municipality-profile-hero__current-fire-pin"
+                                d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z"
+                                transform={`translate(${fire.x - 9.6} ${fire.y - 16.8}) scale(0.8)`}
+                                pointerEvents="none"
+                              />
+                              <circle
+                                className="municipality-profile-hero__current-fire-core"
+                                cx={fire.x}
+                                cy={fire.y - 8.8}
+                                r="1.6"
+                                pointerEvents="none"
+                              />
+                            </g>
+                          ))}
                         </g>
                         <g className="fire-firms__footprints">
                           {firmsDetectionMarkers.map((detection) => (
@@ -3509,16 +3802,25 @@ export default function MunicipalitiesPage() {
                     )}
                     {pointTooltip ? (
                       <div
-                        className="municipality-profile-hero__point-tooltip app-tooltip"
+                        className={`municipality-profile-hero__point-tooltip app-tooltip${pointTooltip.isStacked ? ' municipality-profile-hero__point-tooltip--stacked' : ''}`}
                         style={{
                           left: `${Math.max(12, pointTooltip.x + 14)}px`,
                           top: `${Math.max(12, pointTooltip.y - 14)}px`,
                         }}
                       >
                         <strong>{pointTooltip.title}</strong>
-                        {pointTooltip.items.map((item) => (
-                          <span key={item}>{item}</span>
-                        ))}
+                        {pointTooltip.isStacked
+                          ? pointTooltip.stackedRows?.map((row, index, rows) => (
+                            <span
+                              key={`${index}-${row.label}`}
+                              className={index > 0 && rows[index - 1]?.type !== row.type ? 'tooltip-type-separator' : undefined}
+                            >
+                              {row.label}
+                            </span>
+                          ))
+                          : pointTooltip.items.map((item, index) => (
+                            <span key={`${index}-${item}`}>{item}</span>
+                          ))}
                       </div>
                     ) : null}
 	                  </div>
@@ -3527,10 +3829,17 @@ export default function MunicipalitiesPage() {
                         <div className="municipality-profile-hero__map-legend" aria-label="Υπόμνημα σημείων χάρτη">
                           {municipalityMapLegendItems.map((item) => (
                             <div key={item.key} className="municipality-profile-hero__map-legend-item">
-                              <span
-                                className={`municipality-profile-hero__map-legend-swatch municipality-profile-hero__map-legend-swatch--${item.tone}`}
-                                aria-hidden="true"
-                              />
+                              {item.tone === 'current-fire' ? (
+                                <svg className="municipality-profile-hero__map-legend-current-fire" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" />
+                                  <circle cx="12" cy="10" r="2" />
+                                </svg>
+                              ) : (
+                                <span
+                                  className={`municipality-profile-hero__map-legend-swatch municipality-profile-hero__map-legend-swatch--${item.tone}`}
+                                  aria-hidden="true"
+                                />
+                              )}
                               <strong>{item.label}</strong>
                             </div>
                           ))}
