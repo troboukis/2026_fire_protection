@@ -4666,7 +4666,6 @@ main {
     min-width: 0;
     max-width: 100%;
     justify-self: stretch;
-    padding-inline: 0.5rem 0.7rem;
     text-align: left;
   }
 
@@ -4790,10 +4789,6 @@ main {
   .contracts-filters select {
     padding: 0.38rem 0.42rem;
     font-size: 0.66rem;
-  }
-
-  .contracts-filters input[type="date"] {
-    padding-inline: 0.42rem 0.7rem;
   }
 
   .contracts-table {
