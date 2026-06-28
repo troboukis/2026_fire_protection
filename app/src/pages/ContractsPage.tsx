@@ -955,13 +955,13 @@ export default function ContractsPage() {
           {procedureOptions.map((p) => <option key={p} value={p}>{p}</option>)}
         </select>
         <input
-          className="contracts-filter contracts-filter--date"
+          className="contracts-filter contracts-filter--date contracts-filter--date-from"
           value={dateFrom}
           onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
           type="date"
         />
         <input
-          className="contracts-filter contracts-filter--date"
+          className="contracts-filter contracts-filter--date contracts-filter--date-to"
           value={dateTo}
           onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
           type="date"
