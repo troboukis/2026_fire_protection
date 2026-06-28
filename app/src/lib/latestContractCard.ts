@@ -16,6 +16,7 @@ type BuildLatestContractCardViewArgs = {
   howMuch: string
   signedAt?: string
   documentUrl?: string | null
+  sortDate?: string | null
 }
 
 export function resolveLatestContractWho({
@@ -47,5 +48,6 @@ export function buildLatestContractCardView(args: BuildLatestContractCardViewArg
     howMuch: args.howMuch,
     signedAt: args.signedAt,
     documentUrl: args.documentUrl ?? null,
+    sortDate: args.sortDate ?? null,
   }
 }

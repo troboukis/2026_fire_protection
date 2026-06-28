@@ -14,6 +14,7 @@ export type LatestContractCardView = {
   howMuch: string
   documentUrl?: string | null
   municipalityKey?: string | null
+  sortDate?: string | null
 }
 
 type Props = {

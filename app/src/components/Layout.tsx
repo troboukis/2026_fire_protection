@@ -37,6 +37,7 @@ function formatDateTimeEl(iso: string): string {
 export default function Layout() {
   const [lastUpdateIso, setLastUpdateIso] = useState(__LAST_COMMIT_ISO__)
   const lastUpdateLabel = formatDateTimeEl(lastUpdateIso)
+  const latestYear = new Date(lastUpdateIso).getFullYear() || new Date().getFullYear()
   const location = useLocation()
   const navigate = useNavigate()
   const homeDocumentHref = import.meta.env.BASE_URL
@@ -122,7 +123,7 @@ export default function Layout() {
           <div className="eyebrow">παρατηρητήριο για τις δασικές πυρκαγιές</div>
           <div className="brand-line">
             <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
-              <h1>FireWatch <span className="beta-badge">BETA</span></h1>
+              <h1>FireWatch</h1>
             </NavLink>
             <span className="brand-mark">Τελευταία ενημέρωση / {lastUpdateLabel}</span>
           </div>
@@ -133,12 +134,20 @@ export default function Layout() {
           <NavLink to="/municipalities" onClick={reloadWhenAlreadyOn('/municipalities')} data-nav-item="municipalities">Δήμοι</NavLink>
           <NavLink to="/environment-ministry" onClick={reloadWhenAlreadyOn('/environment-ministry')} data-nav-item="environment">Υπ. Περιβάλλοντος</NavLink>
           <NavLink to="/contracts" onClick={reloadWhenAlreadyOn('/contracts')} data-nav-item="contracts">Συμβάσεις</NavLink>
+          <NavLink to="/diavgeia" onClick={reloadWhenAlreadyOn('/diavgeia')} data-nav-item="diavgeia">
+            <span>Διαύγεια</span>
+            <span className="nav-new-badge">New</span>
+          </NavLink>
           <NavLink to="/analysis" onClick={reloadWhenAlreadyOn('/analysis')} data-nav-item="analysis">Ανάλυση</NavLink>
           <button type="button" onClick={handleAbout} data-nav-item="about">Σχετικά</button>
         </nav>
       </header>
 
       <Outlet />
+
+      <footer className="site-footer">
+        © {latestYear} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a>
+      </footer>
     </div>
   )
 }
