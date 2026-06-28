@@ -7942,8 +7942,32 @@ main {
   max-width: none;
   width: 100%;
   padding: 0.9rem;
-  border: 1px solid rgba(157, 150, 136, 0.35);
-  background: rgba(252, 249, 244, 0.78);
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 86%, white);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.72) inset,
+    0 10px 24px rgba(17, 17, 17, 0.08),
+    0 2px 5px rgba(17, 17, 17, 0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.environment-active-contracts .wire-item:hover,
+.environment-active-contracts .wire-item:focus-visible {
+  border-color: color-mix(in srgb, var(--line-strong) 72%, var(--accent));
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.78) inset,
+    0 16px 34px rgba(17, 17, 17, 0.12),
+    0 4px 9px rgba(17, 17, 17, 0.08);
+  transform: translateY(-2px);
+}
+
+.environment-active-contracts .wire-item.diavgeia-decision-card {
+  background: #b5c7b5;
+  cursor: default;
+}
+
+.environment-active-contracts .diavgeia-decision-card .wire-item__rule {
+  background: #fff;
 }
 
 .environment-cpv-card {

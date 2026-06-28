@@ -93,15 +93,18 @@ export default function DiavgeiaPage() {
   const defaultDateFrom = useMemo(() => isoDateDaysAgo(30), [])
   const defaultDateTo = useMemo(() => isoToday(), [])
   const initialMunicipalityKey = useMemo(() => clean(searchParams.get('municipalityKey')), [searchParams])
+  const initialQ = useMemo(() => clean(searchParams.get('q')), [searchParams])
   const initialAllDates = useMemo(() => clean(searchParams.get('allDates')) === '1', [searchParams])
-  const initialDateFrom = useMemo(() => initialAllDates ? '' : defaultDateFrom, [defaultDateFrom, initialAllDates])
-  const initialDateTo = useMemo(() => initialAllDates ? '' : defaultDateTo, [defaultDateTo, initialAllDates])
+  const initialDateFromParam = useMemo(() => clean(searchParams.get('dateFrom')), [searchParams])
+  const initialDateToParam = useMemo(() => clean(searchParams.get('dateTo')), [searchParams])
+  const initialDateFrom = useMemo(() => initialAllDates ? '' : (initialDateFromParam || defaultDateFrom), [defaultDateFrom, initialAllDates, initialDateFromParam])
+  const initialDateTo = useMemo(() => initialAllDates ? '' : (initialDateToParam || defaultDateTo), [defaultDateTo, initialAllDates, initialDateToParam])
   const [rows, setRows] = useState<DiavgeiaPageRow[]>([])
   const [totalCount, setTotalCount] = useState(0)
   const [minDecisionDate, setMinDecisionDate] = useState<string | null>(null)
   const [maxDecisionDate, setMaxDecisionDate] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
-  const [q, setQ] = useState('')
+  const [q, setQ] = useState(initialQ)
   const [dateFrom, setDateFrom] = useState(initialDateFrom)
   const [dateTo, setDateTo] = useState(initialDateTo)
   const [municipalityKey, setMunicipalityKey] = useState(initialMunicipalityKey)
@@ -110,11 +113,12 @@ export default function DiavgeiaPage() {
   const pageSize = 50
 
   useEffect(() => {
+    setQ(initialQ)
     setMunicipalityKey(initialMunicipalityKey)
     setDateFrom(initialDateFrom)
     setDateTo(initialDateTo)
     setPage(1)
-  }, [initialDateFrom, initialDateTo, initialMunicipalityKey])
+  }, [initialDateFrom, initialDateTo, initialMunicipalityKey, initialQ])
 
   useEffect(() => {
     let cancelled = false
