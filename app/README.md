@@ -11,6 +11,10 @@ See `WEBAPP_ROADMAP.md` in the project root for the full sprint plan.
 - Supabase JS client
 - Deployed to Vercel
 
+## Deployment
+
+Vercel is configured to build the `app/` project from pushes to `main`.
+
 ## Directory structure (to be created in Sprint 1)
 
 ```
