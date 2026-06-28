@@ -261,6 +261,7 @@ const HILLSHADE_TILE_SIZE = 256
 const HILLSHADE_MIN_ZOOM = 4
 const HILLSHADE_MAX_ZOOM = 12
 const HILLSHADE_OVERSAMPLE = 1.3
+const DEFAULT_COPERNICUS_WINDOW_DAYS = 7
 
 function cleanText(value: unknown): string | null {
   if (value == null) return null
@@ -431,7 +432,7 @@ export default function SituationMap() {
   const today = useMemo(() => toDayStart(new Date()), [])
   const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
   const domainStart = useMemo(() => new Date(currentYear - 2, 0, 1), [currentYear])
-  const defaultStart = useMemo(() => new Date(currentYear, 0, 1), [currentYear])
+  const defaultStart = useMemo(() => addDays(today, -(DEFAULT_COPERNICUS_WINDOW_DAYS - 1)), [today])
   const totalDays = diffDays(domainStart, today)
   const initialFetchStartDay = diffDays(domainStart, defaultStart)
   const [geojson, setGeojson] = useState<GeoData | null>(null)
