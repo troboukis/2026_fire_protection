@@ -238,14 +238,6 @@ function formatDateEl(iso: string | null): string {
   }).format(dt)
 }
 
-function formatDateOnlyEl(date: Date): string {
-  return new Intl.DateTimeFormat('el-GR', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  }).format(date)
-}
-
 function formatDateTimeEl(iso: string | null): string {
   if (!iso) return '—'
   const dt = new Date(iso)
@@ -289,6 +281,31 @@ function formatFiredateBoundary(date: Date, boundary: 'start' | 'end'): string {
   const day = String(date.getDate()).padStart(2, '0')
   const time = boundary === 'start' ? '00:00:00' : '23:59:59'
   return `${year}-${month}-${day}T${time}`
+}
+
+function formatDateInputValue(date: Date): string {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
+function parseDateInputValue(value: string): Date | null {
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})$/)
+  if (!match) return null
+  const year = Number(match[1])
+  const month = Number(match[2])
+  const day = Number(match[3])
+  const date = new Date(year, month - 1, day)
+  if (
+    !Number.isFinite(date.getTime())
+    || date.getFullYear() !== year
+    || date.getMonth() !== month - 1
+    || date.getDate() !== day
+  ) {
+    return null
+  }
+  return toDayStart(date)
 }
 
 function diffDays(start: Date, end: Date): number {
@@ -544,16 +561,10 @@ export default function SituationMap() {
 
   const rangeStartDate = addDays(domainStart, rangeStartDay)
   const rangeEndDate = addDays(domainStart, rangeEndDay)
-  const rangeStartPercent = totalDays > 0 ? (rangeStartDay / totalDays) * 100 : 0
-  const rangeEndPercent = totalDays > 0 ? (rangeEndDay / totalDays) * 100 : 100
-  const yearMarkers = Array.from(
-    { length: today.getFullYear() - domainStart.getFullYear() + 1 },
-    (_, index) => domainStart.getFullYear() + index,
-  )
-    .map((year) => ({
-      year,
-      left: totalDays > 0 ? (diffDays(domainStart, new Date(year, 0, 1)) / totalDays) * 100 : 0,
-    }))
+  const domainStartValue = formatDateInputValue(domainStart)
+  const todayValue = formatDateInputValue(today)
+  const rangeStartValue = formatDateInputValue(rangeStartDate)
+  const rangeEndValue = formatDateInputValue(rangeEndDate)
 
   useEffect(() => {
     let cancelled = false
@@ -1444,7 +1455,38 @@ export default function SituationMap() {
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
         <div className="fire-copernicus__date-filter-selected">
           <span className="label">Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα</span>
-          <strong>{formatDateOnlyEl(rangeStartDate)} - {formatDateOnlyEl(rangeEndDate)}</strong>
+          <div className="fire-copernicus__date-filter fire-copernicus__date-filter--pickers" aria-label="Φίλτρο ημερομηνιών Copernicus">
+            <label className="fire-copernicus__date-picker">
+              <span className="label">Από</span>
+              <input
+                type="date"
+                min={domainStartValue}
+                max={rangeEndValue}
+                value={rangeStartValue}
+                aria-label="Έναρξη φίλτρου ημερομηνίας"
+                onChange={(event) => {
+                  const nextDate = parseDateInputValue(event.target.value)
+                  if (!nextDate) return
+                  setRangeStartDay(Math.min(diffDays(domainStart, nextDate), rangeEndDay))
+                }}
+              />
+            </label>
+            <label className="fire-copernicus__date-picker">
+              <span className="label">Έως</span>
+              <input
+                type="date"
+                min={rangeStartValue}
+                max={todayValue}
+                value={rangeEndValue}
+                aria-label="Λήξη φίλτρου ημερομηνίας"
+                onChange={(event) => {
+                  const nextDate = parseDateInputValue(event.target.value)
+                  if (!nextDate) return
+                  setRangeEndDay(Math.max(diffDays(domainStart, nextDate), rangeStartDay))
+                }}
+              />
+            </label>
+          </div>
         </div>
         <div className="fire-copernicus__stats">
           <div>
@@ -1458,55 +1500,6 @@ export default function SituationMap() {
           <div>
             <span className="label">Τελευταία Εγγραφή</span>
             <strong>{formatDateEl(latestFire?.date ?? null)}</strong>
-          </div>
-        </div>
-        <div className="fire-copernicus__date-filter" aria-label="Φίλτρο ημερομηνιών Copernicus">
-          <div className="fire-copernicus__date-filter-track">
-            <div
-              className="fire-copernicus__date-filter-range"
-              style={{
-                left: `${rangeStartPercent}%`,
-                width: `${Math.max(rangeEndPercent - rangeStartPercent, 0)}%`,
-              }}
-            />
-          </div>
-          <input
-            type="range"
-            min={0}
-            max={totalDays}
-            step={1}
-            value={rangeStartDay}
-            className="fire-copernicus__date-filter-input"
-            aria-label="Έναρξη φίλτρου ημερομηνίας"
-            onChange={(event) => {
-              const next = Number(event.target.value)
-              setRangeStartDay(Math.min(next, rangeEndDay))
-            }}
-          />
-          <input
-            type="range"
-            min={0}
-            max={totalDays}
-            step={1}
-            value={rangeEndDay}
-            className="fire-copernicus__date-filter-input"
-            aria-label="Λήξη φίλτρου ημερομηνίας"
-            onChange={(event) => {
-              const next = Number(event.target.value)
-              setRangeEndDay(Math.max(next, rangeStartDay))
-            }}
-          />
-          <div className="fire-copernicus__date-filter-years" aria-hidden="true">
-            {yearMarkers.map((marker) => (
-              <span
-                key={marker.year}
-                className="fire-copernicus__date-filter-year"
-                style={{ left: `${marker.left}%` }}
-              >
-                <i />
-                <em>{marker.year}</em>
-              </span>
-            ))}
           </div>
         </div>
         <p className="fire-copernicus__note">

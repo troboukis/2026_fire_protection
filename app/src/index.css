@@ -2247,6 +2247,45 @@ main {
   padding: 0.35rem 0 0.1rem;
 }
 
+.fire-copernicus__date-filter--pickers {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding-top: 0.18rem;
+}
+
+.fire-copernicus__date-picker {
+  display: grid;
+  gap: 0.22rem;
+  min-width: 0;
+}
+
+.fire-copernicus__date-picker input {
+  width: 100%;
+  min-width: 0;
+  height: 2.22rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper-2);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  line-height: 1;
+  padding: 0 0.5rem;
+  color-scheme: light;
+}
+
+.fire-copernicus__date-picker input:hover {
+  border-color: var(--line-strong);
+  background: #ede8dc;
+}
+
+.fire-copernicus__date-picker input:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(211, 72, 45, 0.14);
+  outline: none;
+}
+
 .fire-copernicus__date-filter-selected {
   display: grid;
   gap: 0.18rem;
