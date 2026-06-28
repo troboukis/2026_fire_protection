@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
       NASA_FIRMS_MAP_KEY: ${{ secrets.NASA_FIRMS_MAP_KEY }}
 
     steps:
@@ -42,6 +43,10 @@ jobs:
           fi
           if [ -z "${NASA_FIRMS_MAP_KEY}" ]; then
             echo "NASA_FIRMS_MAP_KEY secret is required for FIRMS active fire refresh."
+            exit 1
+          fi
+          if [ -z "${GOOGLE_GEOCODING_API_KEY}" ]; then
+            echo "GOOGLE_GEOCODING_API_KEY secret is required for current_fires geocoding."
             exit 1
           fi
           case "${DATABASE_URL}" in

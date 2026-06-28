@@ -136,14 +136,6 @@ def _csv_rows(path: Path) -> list[dict[str, str]]:
 
 
 def resolve_database_url(db_path: str | None) -> str:
-    def normalize_database_url(raw: str | None) -> str:
-        value = str(raw or "").strip().strip("'\"")
-        if not value:
-            return ""
-        if value.startswith("DATABASE_URL="):
-            value = value.split("=", 1)[1].strip().strip("'\"")
-        return value
-
     if db_path:
         normalized = normalize_database_url(db_path)
         if normalized:
@@ -166,6 +158,34 @@ def resolve_database_url(db_path: str | None) -> str:
                     return normalized
 
     raise ValueError("Δεν βρέθηκε DATABASE_URL ούτε δόθηκε db_path.")
+
+
+def normalize_database_url(raw: str | None) -> str:
+    value = str(raw or "").strip().strip("'\"")
+    if not value:
+        return ""
+    if value.startswith("DATABASE_URL="):
+        value = value.split("=", 1)[1].strip().strip("'\"")
+    return value
+
+
+def read_env_value(name: str) -> str | None:
+    value = os.getenv(name)
+    if value and value.strip():
+        return value.strip().strip("'\"")
+
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return None
+
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, raw_value = line.split("=", 1)
+        if key.strip() == name and raw_value.strip():
+            return raw_value.strip().strip("'\"")
+    return None
 
 
 @lru_cache(maxsize=1)
@@ -386,6 +406,106 @@ def compute_status_updated_at(raw: str | None, scraped_at: datetime) -> str:
     return (scraped_at - delta).isoformat(timespec="seconds")
 
 
+def parse_decimal_or_none(value: object | None) -> float | None:
+    text = clean(value)
+    if not text:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def build_geocode_query(row: dict) -> str:
+    municipality_raw = clean(row.get("municipality_raw") or row.get("municipality"))
+    region = clean(row.get("region"))
+    parts = [part for part in re.split(r"\s+-\s+", municipality_raw) if part]
+    location_parts = list(reversed(parts)) if len(parts) > 1 else parts
+    query_parts = location_parts + ([region] if region else []) + ["Ελλάδα"]
+    deduped_parts: list[str] = []
+    for part in query_parts:
+        normalized = normalize_identity_value(part)
+        if not normalized or any(normalize_identity_value(existing) == normalized for existing in deduped_parts):
+            continue
+        deduped_parts.append(part)
+    return ", ".join(deduped_parts)
+
+
+def resolve_google_geocoding_api_key(raw_api_key: str | None = None) -> str:
+    value = clean(raw_api_key).strip("'\"")
+    if value:
+        return value
+    env_value = read_env_value("GOOGLE_GEOCODING_API_KEY")
+    if env_value:
+        return env_value
+    raise ValueError("Missing GOOGLE_GEOCODING_API_KEY")
+
+
+def geolocate_point(query: str, api_key: str, timeout: int = 30) -> dict[str, object] | None:
+    if not clean(query):
+        return None
+
+    response = requests.get(
+        "https://maps.googleapis.com/maps/api/geocode/json",
+        params={
+            "address": query,
+            "key": api_key,
+            "region": "gr",
+        },
+        timeout=timeout,
+    )
+    response.raise_for_status()
+    data = response.json()
+    if data.get("status") != "OK":
+        return None
+
+    results = data.get("results") or []
+    if not results:
+        return None
+    result = results[0]
+    location = ((result.get("geometry") or {}).get("location") or {})
+    lat = parse_decimal_or_none(location.get("lat"))
+    lon = parse_decimal_or_none(location.get("lng"))
+    if lat is None or lon is None:
+        return None
+
+    return {
+        "lat": lat,
+        "lon": lon,
+        "formatted_address": clean(result.get("formatted_address")),
+        "place_id": clean(result.get("place_id")),
+    }
+
+
+def geolocate_events(events: Iterable[dict], api_key: str, scraped_at: datetime) -> list[dict]:
+    geocode_cache: dict[str, dict[str, object] | None] = {}
+    enriched: list[dict] = []
+
+    for event in events:
+        row = dict(event)
+        query = build_geocode_query(row)
+        row["geocode_query"] = query
+        is_active = normalize_identity_value(row.get("status")) != "ΛΗΞΗ"
+        if is_active and query and query not in geocode_cache:
+            geocode_cache[query] = geolocate_point(query, api_key)
+        geo = geocode_cache.get(query) if is_active else None
+        if geo:
+            row["lat"] = geo["lat"]
+            row["lon"] = geo["lon"]
+            row["formatted_address"] = geo["formatted_address"]
+            row["place_id"] = geo["place_id"]
+            row["geocoded_at"] = scraped_at.isoformat(timespec="seconds")
+        else:
+            row["lat"] = None
+            row["lon"] = None
+            row["formatted_address"] = ""
+            row["place_id"] = ""
+            row["geocoded_at"] = ""
+        enriched.append(row)
+
+    return enriched
+
+
 def normalize_identity_value(value: str | None) -> str:
     return clean(strip_accents(value or ""))
 
@@ -517,6 +637,16 @@ def merge_with_existing(
         if not clean(row.get("start")) and clean(existing.get("start")):
             merged["start"] = clean(existing.get("start"))
             merged["days_burning"] = compute_days_burning(merged["start"], scrape_time.date())
+        for geocode_field in (
+            "lat",
+            "lon",
+            "formatted_address",
+            "place_id",
+            "geocode_query",
+            "geocoded_at",
+        ):
+            if not clean(merged.get(geocode_field)) and clean(existing.get(geocode_field)):
+                merged[geocode_field] = clean(existing.get(geocode_field))
         observed_at = clean(row.get("last_seen_at")) or scrape_time.isoformat(timespec="seconds")
         merged["incident_key"] = incident_key
         merged["first_seen_at"] = clean(existing.get("first_seen_at")) or clean(existing.get("last_seen_at")) or observed_at
@@ -549,7 +679,7 @@ def merge_with_existing(
     )
 
 
-def fetch(url: str = URL, timeout: int = 30) -> str:
+def fetch(url: str = URL, timeout: int = 30) -> tuple[str, str]:
     session = requests.Session()
     session.headers.update(HEADERS)
     current_url = url
@@ -822,6 +952,12 @@ def ensure_current_fires_table(conn) -> None:
           start_date DATE,
           days_burning INTEGER,
           status_updated_at TIMESTAMPTZ,
+          lat NUMERIC(9, 6),
+          lon NUMERIC(9, 6),
+          formatted_address TEXT,
+          place_id TEXT,
+          geocode_query TEXT,
+          geocoded_at TIMESTAMPTZ,
           status TEXT,
           raw TEXT
         )
@@ -836,9 +972,21 @@ def ensure_current_fires_table(conn) -> None:
         """
     )
     cur.execute(f"ALTER TABLE {CURRENT_FIRES_TABLE} ENABLE ROW LEVEL SECURITY")
+    cur.execute(
+        f"""
+        ALTER TABLE {CURRENT_FIRES_TABLE}
+          ADD COLUMN IF NOT EXISTS lat NUMERIC(9, 6),
+          ADD COLUMN IF NOT EXISTS lon NUMERIC(9, 6),
+          ADD COLUMN IF NOT EXISTS formatted_address TEXT,
+          ADD COLUMN IF NOT EXISTS place_id TEXT,
+          ADD COLUMN IF NOT EXISTS geocode_query TEXT,
+          ADD COLUMN IF NOT EXISTS geocoded_at TIMESTAMPTZ
+        """
+    )
     cur.execute(f"CREATE INDEX IF NOT EXISTS idx_current_fires_is_current ON {CURRENT_FIRES_TABLE} (is_current)")
     cur.execute(f"CREATE INDEX IF NOT EXISTS idx_current_fires_municipality_key ON {CURRENT_FIRES_TABLE} (municipality_key)")
     cur.execute(f"CREATE INDEX IF NOT EXISTS idx_current_fires_status ON {CURRENT_FIRES_TABLE} (status)")
+    cur.execute(f"CREATE INDEX IF NOT EXISTS idx_current_fires_lat_lon ON {CURRENT_FIRES_TABLE} (lat, lon)")
     conn.commit()
     cur.close()
 
@@ -862,6 +1010,12 @@ def load_existing_incidents_db(conn) -> list[dict[str, str]]:
           start_date AS start,
           days_burning,
           status_updated_at,
+          lat,
+          lon,
+          formatted_address,
+          place_id,
+          geocode_query,
+          geocoded_at,
           status,
           raw
         FROM {CURRENT_FIRES_TABLE}
@@ -902,6 +1056,10 @@ def parse_int_or_none(value: str | None) -> int | None:
         return None
 
 
+def parse_float_or_none(value: object | None) -> float | None:
+    return parse_decimal_or_none(value)
+
+
 def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
     payload = [
         (
@@ -919,6 +1077,12 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
             parse_start_date_or_none(row.get("start")),
             parse_int_or_none(row.get("days_burning")),
             parse_iso_datetime_or_none(row.get("status_updated_at")),
+            parse_float_or_none(row.get("lat")),
+            parse_float_or_none(row.get("lon")),
+            clean(row.get("formatted_address")) or None,
+            clean(row.get("place_id")) or None,
+            clean(row.get("geocode_query")) or None,
+            parse_iso_datetime_or_none(row.get("geocoded_at")),
             clean(row.get("status")) or None,
             clean(row.get("raw")) or None,
         )
@@ -944,6 +1108,12 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           start_date,
           days_burning,
           status_updated_at,
+          lat,
+          lon,
+          formatted_address,
+          place_id,
+          geocode_query,
+          geocoded_at,
           status,
           raw
         ) VALUES %s
@@ -961,6 +1131,12 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           start_date = EXCLUDED.start_date,
           days_burning = EXCLUDED.days_burning,
           status_updated_at = EXCLUDED.status_updated_at,
+          lat = EXCLUDED.lat,
+          lon = EXCLUDED.lon,
+          formatted_address = EXCLUDED.formatted_address,
+          place_id = EXCLUDED.place_id,
+          geocode_query = EXCLUDED.geocode_query,
+          geocoded_at = EXCLUDED.geocoded_at,
           status = EXCLUDED.status,
           raw = EXCLUDED.raw
         """,
@@ -975,6 +1151,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--all", action="store_true", help="Keep every category, not only forest fires")
     p.add_argument("--url", default=URL, help="Source URL (override for testing)")
     p.add_argument("--db-path", type=str, default=None, help="Optional DATABASE_URL override")
+    p.add_argument("--google-geocoding-api-key", default=None, help="Google Geocoding API key override")
+    p.add_argument("--skip-geocoding", action="store_true", help="Skip Google geocoding for active fire rows")
     args = p.parse_args(argv)
 
     try:
@@ -996,6 +1174,9 @@ def main(argv: list[str] | None = None) -> int:
         normalized_name_lookup = load_db_municipality_normalized_lookup(conn)
         all_events = enrich_events_with_municipalities(parse_events(html), normalized_name_lookup)
         current_events = all_events if args.all else filter_forest(all_events)
+        if not args.skip_geocoding:
+            geocoding_api_key = resolve_google_geocoding_api_key(args.google_geocoding_api_key)
+            current_events = geolocate_events(current_events, geocoding_api_key, scraped_at)
         existing_rows = refresh_existing_municipality_fields(
             load_existing_incidents_db(conn),
             normalized_name_lookup,
