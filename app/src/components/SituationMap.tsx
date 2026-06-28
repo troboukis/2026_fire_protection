@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
 import { isAbortError } from '../lib/isAbortError'
+import { CURRENT_FIRE_HOVER_EVENT, type CurrentFireHoverDetail } from '../lib/currentFireHover'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
@@ -78,11 +79,59 @@ type FirmsRow = {
   municipality_normalized_value: string | null
 }
 
+type ActiveFirePoint = {
+  id: string
+  lat: number
+  lon: number
+  municipalityKey: string | null
+  municipalityName: string | null
+  fuelType: string | null
+  startDate: string | null
+  status: string | null
+}
+
+type CurrentFireRow = {
+  incident_key: string
+  lat: number | string | null
+  lon: number | string | null
+  municipality_key: string | null
+  municipality_raw: string | null
+  fuel_type: string | null
+  start_date: string | null
+  status: string | null
+}
+
 type HoveredFirmsTooltip = {
   x: number
   y: number
   placement: 'above' | 'below'
   item: FirmsDetection
+}
+
+type HoveredActiveFireTooltip = {
+  x: number
+  y: number
+  placement: 'above' | 'below'
+  item: ActiveFirePoint
+}
+
+type HoveredStackedTooltip = {
+  x: number
+  y: number
+  placement: 'above' | 'below'
+  items: Array<{
+    label: string
+    type: string
+  }>
+}
+
+type SituationTooltipPoint = {
+  id: string
+  x: number
+  y: number
+  type: string
+  label: string
+  priority: number
 }
 
 type TerrainTileOverlay = {
@@ -274,6 +323,26 @@ function toNumber(value: unknown): number | null {
   return Number.isFinite(number) ? number : null
 }
 
+function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
+  return rows
+    .map((row) => {
+      const lat = toNumber(row.lat)
+      const lon = toNumber(row.lon)
+      if (lat == null || lon == null) return null
+      return {
+        id: String(row.incident_key),
+        lat,
+        lon,
+        municipalityKey: cleanText(row.municipality_key),
+        municipalityName: cleanText(row.municipality_raw),
+        fuelType: cleanText(row.fuel_type),
+        startDate: cleanText(row.start_date),
+        status: cleanText(row.status),
+      } satisfies ActiveFirePoint
+    })
+    .filter((row): row is ActiveFirePoint => row !== null)
+}
+
 function buildFirmsFootprint(
   projection: d3.GeoProjection,
   detection: FirmsDetection,
@@ -438,6 +507,7 @@ export default function SituationMap() {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [allFires, setAllFires] = useState<CopernicusFirePoint[]>([])
   const [firmsDetections, setFirmsDetections] = useState<FirmsDetection[]>([])
+  const [activeFires, setActiveFires] = useState<ActiveFirePoint[]>([])
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null)
   const [hasLoadedHistoricalFires, setHasLoadedHistoricalFires] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -446,6 +516,9 @@ export default function SituationMap() {
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
   const [hoveredFirmsDetection, setHoveredFirmsDetection] = useState<HoveredFirmsTooltip | null>(null)
+  const [hoveredActiveFire, setHoveredActiveFire] = useState<HoveredActiveFireTooltip | null>(null)
+  const [hoveredStackedTooltip, setHoveredStackedTooltip] = useState<HoveredStackedTooltip | null>(null)
+  const [highlightedActiveFireId, setHighlightedActiveFireId] = useState<string | null>(null)
   const [terrainFailed, setTerrainFailed] = useState(false)
   const [mapSize, setMapSize] = useState<{ width: number; height: number } | null>(null)
   const mapRef = useRef<HTMLDivElement | null>(null)
@@ -491,7 +564,7 @@ export default function SituationMap() {
         const firedateStart = formatFiredateBoundary(defaultStart, 'start')
         const firedateEnd = formatFiredateBoundary(today, 'end')
         const firmsSince = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
-        const [geoFetchResult, copernicusResult, latestUpdateResult, firmsResult] = await Promise.allSettled([
+        const [geoFetchResult, copernicusResult, latestUpdateResult, firmsResult, currentFiresResult] = await Promise.allSettled([
           loadMunicipalitiesGeojson(),
           supabase
             .from('copernicus')
@@ -515,6 +588,15 @@ export default function SituationMap() {
             .order('acquired_at', { ascending: false })
             .limit(600)
             .abortSignal(controller.signal),
+          supabase
+            .from('current_fires')
+            .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status')
+            .eq('is_current', true)
+            .not('lat', 'is', null)
+            .not('lon', 'is', null)
+            .or('status.is.null,status.neq.ΛΗΞΗ')
+            .order('status_updated_at', { ascending: false, nullsFirst: false })
+            .abortSignal(controller.signal),
         ])
 
         if (geoFetchResult.status === 'rejected') throw geoFetchResult.reason
@@ -523,9 +605,12 @@ export default function SituationMap() {
         const copernicusRes = copernicusResult.status === 'fulfilled' ? copernicusResult.value : null
         const latestUpdateRes = latestUpdateResult.status === 'fulfilled' ? latestUpdateResult.value : null
         const firmsRes = firmsResult.status === 'fulfilled' ? firmsResult.value : null
+        const currentFiresRes = currentFiresResult.status === 'fulfilled' ? currentFiresResult.value : null
         const copernicusRows = !copernicusRes?.error ? ((copernicusRes?.data ?? []) as CopernicusRow[]) : []
         const firmsRows = !firmsRes?.error ? ((firmsRes?.data ?? []) as FirmsRow[]) : []
+        const currentFireRows = !currentFiresRes?.error ? ((currentFiresRes?.data ?? []) as CurrentFireRow[]) : []
         const nextFires = mapCopernicusRows(copernicusRows)
+        const nextActiveFires = mapCurrentFireRows(currentFireRows)
         const nextFirmsDetections = firmsRows
           .map((row) => {
             const lat = toNumber(row.latitude)
@@ -553,6 +638,7 @@ export default function SituationMap() {
           setGeojson(geoData)
           setAllFires(nextFires)
           setFirmsDetections(nextFirmsDetections)
+          setActiveFires(nextActiveFires)
           setLastUpdatedAt(!latestUpdateRes?.error ? String(latestUpdateRes?.data?.updated_at ?? '').trim() || null : null)
         }
       } catch (error) {
@@ -561,6 +647,7 @@ export default function SituationMap() {
           setGeojson(null)
           setAllFires([])
           setFirmsDetections([])
+          setActiveFires([])
           setLastUpdatedAt(null)
         }
       } finally {
@@ -616,7 +703,26 @@ export default function SituationMap() {
 
   useEffect(() => {
     setHoveredFire(null)
+    setHoveredFirmsDetection(null)
+    setHoveredActiveFire(null)
+    setHoveredStackedTooltip(null)
   }, [rangeStartDay, rangeEndDay, viewMode])
+
+  useEffect(() => {
+    const handleCurrentFireHover = (event: Event) => {
+      const detail = (event as CustomEvent<CurrentFireHoverDetail>).detail
+      setHighlightedActiveFireId(cleanText(detail?.incidentKey))
+    }
+
+    window.addEventListener(CURRENT_FIRE_HOVER_EVENT, handleCurrentFireHover)
+    return () => window.removeEventListener(CURRENT_FIRE_HOVER_EVENT, handleCurrentFireHover)
+  }, [])
+
+  useEffect(() => {
+    if (!highlightedActiveFireId) return
+    if (activeFires.some((fire) => fire.id === highlightedActiveFireId)) return
+    setHighlightedActiveFireId(null)
+  }, [activeFires, highlightedActiveFireId])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -734,6 +840,16 @@ export default function SituationMap() {
           return { ...detection, ...rect }
         })
         .filter((detection): detection is FirmsDetection & { x: number; y: number; width: number; height: number } => detection !== null),
+      activeFirePoints: activeFires
+        .map((fire) => {
+          const projected = projection([fire.lon, fire.lat])
+          if (!projected) return null
+          const [baseX, baseY] = projected
+          if (![baseX, baseY].every(Number.isFinite)) return null
+          const { x, y } = transformPoint(baseX, baseY)
+          return { ...fire, x, y }
+        })
+        .filter((fire): fire is ActiveFirePoint & { x: number; y: number } => fire !== null),
       points: Object.values(
         fires.reduce<Record<string, {
           x: number
@@ -784,7 +900,7 @@ export default function SituationMap() {
         })
         .filter((shape): shape is CopernicusFirePoint & { d: string; x: number; y: number } => shape !== null),
     }
-  }, [firmsDetections, geojson, fires, isMobileMap, mapSize, mapTilerApiKey])
+  }, [activeFires, firmsDetections, geojson, fires, isMobileMap, mapSize, mapTilerApiKey])
 
   const totalAreaHa = fires.reduce((sum, fire) => sum + fire.areaHa, 0)
   const latestFire = [...fires]
@@ -809,6 +925,68 @@ export default function SituationMap() {
       .sort((a, b) => new Date(b.detection.acquiredAt ?? 0).getTime() - new Date(a.detection.acquiredAt ?? 0).getTime())
   }, [firmsDetections])
 
+  const visibleSituationTooltipPoints = useMemo<SituationTooltipPoint[]>(() => {
+    if (!mapData) return []
+
+    const points: SituationTooltipPoint[] = []
+
+    for (const fire of activeFires) {
+      const marker = mapData.activeFirePoints.find((point) => point.id === fire.id)
+      if (!marker) continue
+      points.push({
+        id: `current-${fire.id}`,
+        x: marker.x,
+        y: marker.y,
+        type: 'current-fire',
+        priority: 0,
+        label: [
+          fire.municipalityName ? `Ενεργή πυρκαγιά - ΔΗΜΟΣ ${fire.municipalityName}` : 'Ενεργή πυρκαγιά',
+          fire.fuelType,
+          fire.startDate ? `Ξέσπασε: ${formatDateEl(fire.startDate)}` : null,
+          fire.status ?? 'Ενεργή πυρκαγιά',
+        ].filter(Boolean).join(' · '),
+      })
+    }
+
+    const copernicusPoints = viewMode === 'points'
+      ? mapData.points.flatMap((point) => point.items.map((item) => ({ ...item, x: point.x, y: point.y })))
+      : mapData.shapes
+
+    for (const fire of copernicusPoints) {
+      points.push({
+        id: `copernicus-${fire.id}`,
+        x: fire.x,
+        y: fire.y,
+        type: 'copernicus',
+        priority: 1,
+        label: [
+          fire.commune ?? 'Copernicus / EFFIS',
+          fire.province,
+          formatDateEl(fire.date),
+          formatStremmata(fire.areaHa),
+        ].filter(Boolean).join(' · '),
+      })
+    }
+
+    for (const detection of mapData.firmsFootprints) {
+      points.push({
+        id: `firms-${detection.id}`,
+        x: detection.x,
+        y: detection.y,
+        type: 'firms',
+        priority: 2,
+        label: [
+          detection.municipalityName ?? 'NASA FIRMS',
+          `${detection.satellite} / ${detection.instrument}`,
+          formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt),
+          `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+        ].filter(Boolean).join(' · '),
+      })
+    }
+
+    return points
+  }, [activeFires, mapData, viewMode])
+
   const openMunicipalityProfile = useCallback((municipalityKey: string | null) => {
     if (!municipalityKey) return false
     navigate(`/municipalities?municipality=${encodeURIComponent(municipalityKey)}`)
@@ -823,8 +1001,49 @@ export default function SituationMap() {
     svg
       .attr('viewBox', `0 0 ${mapData.width} ${mapData.height}`)
 
+    const showStackedTooltip = (
+      event: MouseEvent | PointerEvent,
+      activeId: string,
+      fallback: { x: number; y: number },
+    ): boolean => {
+      const overlapRadius = isTouchInput ? 18 : 12
+      const overlapping = visibleSituationTooltipPoints.filter((point) => {
+        const dx = point.x - fallback.x
+        const dy = point.y - fallback.y
+        return Math.hypot(dx, dy) <= overlapRadius
+      })
+
+      if (overlapping.length < 2) return false
+
+      const pointer = pointerInMap(event, fallback)
+      const ordered = overlapping.slice().sort((a, b) => {
+        if (a.id === activeId) return -1
+        if (b.id === activeId) return 1
+        if (a.priority !== b.priority) return a.priority - b.priority
+        return a.label.localeCompare(b.label, 'el')
+      })
+
+      setHoveredFire(null)
+      setHoveredFirmsDetection(null)
+      setHoveredActiveFire(null)
+      setHoveredStackedTooltip({
+        x: pointer.x,
+        y: pointer.y,
+        placement: pointer.y < 96 ? 'below' : 'above',
+        items: ordered.map((point) => ({
+          label: point.label,
+          type: point.type,
+        })),
+      })
+      return true
+    }
+
     const updatePointTooltip = (event: MouseEvent, fire: (typeof mapData.points)[number]) => {
       const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+      if (showStackedTooltip(event, `copernicus-${fire.items[0]?.id ?? ''}`, { x: fire.x, y: fire.y })) return
+      setHoveredStackedTooltip(null)
+      setHoveredFirmsDetection(null)
+      setHoveredActiveFire(null)
       setHoveredFire({
         x: pointer.x,
         y: pointer.y,
@@ -835,16 +1054,34 @@ export default function SituationMap() {
 
     const clearPointTooltip = () => {
       setHoveredFire(null)
+      setHoveredStackedTooltip(null)
     }
 
     const updateFirmsTooltip = (event: MouseEvent | PointerEvent, footprint: (typeof mapData.firmsFootprints)[number]) => {
       const pointer = pointerInMap(event, { x: footprint.x, y: footprint.y })
+      if (showStackedTooltip(event, `firms-${footprint.id}`, { x: footprint.x, y: footprint.y })) return
       setHoveredFire(null)
+      setHoveredActiveFire(null)
+      setHoveredStackedTooltip(null)
       setHoveredFirmsDetection({
         x: pointer.x,
         y: pointer.y,
         placement: pointer.y < 96 ? 'below' : 'above',
         item: footprint,
+      })
+    }
+
+    const updateActiveFireTooltip = (event: MouseEvent | PointerEvent, fire: (typeof mapData.activeFirePoints)[number]) => {
+      const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+      if (showStackedTooltip(event, `current-${fire.id}`, { x: fire.x, y: fire.y })) return
+      setHoveredFire(null)
+      setHoveredFirmsDetection(null)
+      setHoveredStackedTooltip(null)
+      setHoveredActiveFire({
+        x: pointer.x,
+        y: pointer.y,
+        placement: pointer.y < 96 ? 'below' : 'above',
+        item: fire,
       })
     }
 
@@ -861,6 +1098,80 @@ export default function SituationMap() {
       event.stopPropagation()
       if (openMunicipalityProfile(footprint.municipalityKey)) return
       updateFirmsTooltip(event, footprint)
+    }
+
+    const handleActiveFireClick = (event: MouseEvent | PointerEvent, fire: (typeof mapData.activeFirePoints)[number]) => {
+      event.preventDefault()
+      event.stopPropagation()
+      if (openMunicipalityProfile(fire.municipalityKey)) return
+      updateActiveFireTooltip(event, fire)
+    }
+
+    const drawActiveFires = () => {
+      const activeFireGroups = svg
+        .append('g')
+        .attr('class', 'fire-current__points')
+        .selectAll<SVGGElement, (typeof mapData.activeFirePoints)[number]>('g')
+        .data(mapData.activeFirePoints)
+        .join('g')
+        .classed('is-highlighted', (fire) => fire.id === highlightedActiveFireId)
+        .classed('is-dimmed', (fire) => highlightedActiveFireId != null && fire.id !== highlightedActiveFireId)
+
+      activeFireGroups
+        .append('circle')
+        .attr('class', 'fire-current__point-halo')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 8 : 5.5)
+        .attr('pointer-events', 'none')
+
+      activeFireGroups
+        .append('path')
+        .attr('class', 'fire-current__point-marker')
+        .attr('d', 'M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z')
+        .attr('transform', (fire) => (
+          fire.id === highlightedActiveFireId
+            ? `translate(${fire.x - 9.6} ${fire.y - 16.8}) scale(0.8)`
+            : `translate(${fire.x - 6} ${fire.y - 10.5}) scale(0.5)`
+        ))
+        .attr('pointer-events', 'none')
+
+      activeFireGroups
+        .append('circle')
+        .attr('class', 'fire-current__point-core')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.id === highlightedActiveFireId ? fire.y - 8.8 : fire.y - 5.5)
+        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 1.6 : 1)
+        .attr('pointer-events', 'none')
+
+      activeFireGroups
+        .append('circle')
+        .attr('class', 'fire-current__point-hit-area')
+        .attr('cx', (fire) => fire.x)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', 17)
+        .attr('fill', 'rgba(0, 0, 0, 0.001)')
+        .attr('pointer-events', 'all')
+        .style('cursor', 'pointer')
+        .on('mouseover', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          updateActiveFireTooltip(event, fire)
+        })
+        .on('mousemove', (event: MouseEvent, fire) => {
+          if (isTouchInput) return
+          updateActiveFireTooltip(event, fire)
+        })
+        .on('mouseleave', () => {
+          if (isTouchInput) return
+          setHoveredActiveFire(null)
+          setHoveredStackedTooltip(null)
+        })
+        .on('pointerdown', (event: PointerEvent, fire) => {
+          handleActiveFireClick(event, fire)
+        })
+        .on('click', (event: MouseEvent, fire) => {
+          handleActiveFireClick(event, fire)
+        })
     }
 
     const defs = svg.append('defs')
@@ -923,6 +1234,7 @@ export default function SituationMap() {
       .on('mouseleave', () => {
         if (isTouchInput) return
         setHoveredFirmsDetection(null)
+        setHoveredStackedTooltip(null)
       })
       .on('pointerdown', (event: PointerEvent, footprint) => {
         handleFirmsClick(event, footprint)
@@ -935,16 +1247,23 @@ export default function SituationMap() {
       svg
         .on('mousemove', (event: MouseEvent) => {
           if (isTouchInput) return
-          if (!(event.target instanceof Element) || !event.target.classList.contains('fire-copernicus__point-hit-area')) {
+          const target = event.target instanceof Element ? event.target : null
+          const isOverCopernicusPoint = target?.classList.contains('fire-copernicus__point-hit-area') ?? false
+          const isOverFirmsFootprint = target?.classList.contains('fire-firms__footprint') ?? false
+          const isOverCurrentFirePoint = target?.classList.contains('fire-current__point-hit-area') ?? false
+
+          if (!isOverCopernicusPoint && !isOverFirmsFootprint && !isOverCurrentFirePoint) {
             clearPointTooltip()
-            if (!(event.target instanceof Element) || !event.target.classList.contains('fire-firms__footprint')) {
-              setHoveredFirmsDetection(null)
-            }
+            setHoveredFirmsDetection(null)
+            setHoveredActiveFire(null)
+            setHoveredStackedTooltip(null)
           }
         })
         .on('mouseleave', () => {
           clearPointTooltip()
           setHoveredFirmsDetection(null)
+          setHoveredActiveFire(null)
+          setHoveredStackedTooltip(null)
         })
 
       const pointGroups = svg
@@ -1011,6 +1330,10 @@ export default function SituationMap() {
         .on('mouseenter', (event: MouseEvent, fire) => {
           if (isTouchInput) return
           const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          if (showStackedTooltip(event, `copernicus-${fire.id}`, { x: fire.x, y: fire.y })) return
+          setHoveredStackedTooltip(null)
+          setHoveredFirmsDetection(null)
+          setHoveredActiveFire(null)
           setHoveredFire({
             x: pointer.x,
             y: pointer.y,
@@ -1028,6 +1351,7 @@ export default function SituationMap() {
         .on('mousemove', (event: MouseEvent, fire) => {
           if (isTouchInput) return
           const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          if (showStackedTooltip(event, `copernicus-${fire.id}`, { x: fire.x, y: fire.y })) return
           setHoveredFire((current) => (
             current ? { ...current, x: pointer.x, y: pointer.y, placement: pointer.y < 96 ? 'below' : 'above' } : current
           ))
@@ -1035,10 +1359,12 @@ export default function SituationMap() {
         .on('mouseleave', () => {
           if (isTouchInput) return
           setHoveredFire(null)
+          setHoveredStackedTooltip(null)
         })
         .on('click', (event: MouseEvent, fire) => {
           if (openMunicipalityProfile(fire.municipalityKey)) return
           const pointer = pointerInMap(event, { x: fire.x, y: fire.y })
+          if (showStackedTooltip(event, `copernicus-${fire.id}`, { x: fire.x, y: fire.y })) return
           setHoveredFire((current) => (
             current?.items.length === 1 && current.items[0]?.id === fire.id
               ? null
@@ -1058,7 +1384,9 @@ export default function SituationMap() {
           ))
         })
     }
-  }, [isTouchInput, mapClipPathId, mapData, openMunicipalityProfile, pointerInMap, terrainFailed, viewMode])
+
+    drawActiveFires()
+  }, [highlightedActiveFireId, isTouchInput, mapClipPathId, mapData, openMunicipalityProfile, pointerInMap, terrainFailed, viewMode, visibleSituationTooltipPoints])
 
   if (loading) {
     return (
@@ -1072,7 +1400,7 @@ export default function SituationMap() {
           <div className="eyebrow">Situation Map</div>
           <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
           <p>
-            Ο χάρτης αποτυπώνει δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
+            Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg>, δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
           </p>
         </div>
         <DataLoadingCard
@@ -1097,7 +1425,7 @@ export default function SituationMap() {
           Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}
         </div>
         <p>
-          Ο χάρτης απεικονίζει δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
+          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg>, δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
         </p>
         <div className="fire-firms__satellites" aria-label="Τελευταίες διελεύσεις δορυφόρων NASA FIRMS">
           {satellites.length > 0 ? satellites.map(({ detection, count }) => (
@@ -1201,6 +1529,8 @@ export default function SituationMap() {
             onMouseLeave={() => {
               setHoveredFire(null)
               setHoveredFirmsDetection(null)
+              setHoveredActiveFire(null)
+              setHoveredStackedTooltip(null)
             }}
           >
             <ComponentTag
@@ -1221,6 +1551,9 @@ export default function SituationMap() {
                 className={viewMode === 'points' ? 'is-active' : ''}
                 onClick={() => {
                   setHoveredFire(null)
+                  setHoveredFirmsDetection(null)
+                  setHoveredActiveFire(null)
+                  setHoveredStackedTooltip(null)
                   setViewMode('points')
                 }}
               >
@@ -1231,6 +1564,9 @@ export default function SituationMap() {
                 className={viewMode === 'shapes' ? 'is-active' : ''}
                 onClick={() => {
                   setHoveredFire(null)
+                  setHoveredFirmsDetection(null)
+                  setHoveredActiveFire(null)
+                  setHoveredStackedTooltip(null)
                   setViewMode('shapes')
                 }}
               >
@@ -1245,6 +1581,29 @@ export default function SituationMap() {
             />
             {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
               <MapTilerLogo className="fire-copernicus__maptiler-logo" />
+            )}
+            {hoveredStackedTooltip && (
+              <div
+                className="fire-copernicus__tooltip fire-copernicus__tooltip--stacked app-tooltip"
+                style={{
+                  left: `${Math.max(12, hoveredStackedTooltip.x + 14)}px`,
+                  top: `${hoveredStackedTooltip.placement === 'below' ? hoveredStackedTooltip.y + 14 : Math.max(12, hoveredStackedTooltip.y - 14)}px`,
+                  transform: hoveredStackedTooltip.placement === 'below' ? 'none' : undefined,
+                  pointerEvents: 'none',
+                }}
+              >
+                <div className="fire-copernicus__tooltip-item">
+                  <strong>{hoveredStackedTooltip.items.length} σημεία στο ίδιο σημείο</strong>
+                  {hoveredStackedTooltip.items.map((item, index, items) => (
+                    <span
+                      key={`${index}-${item.label}`}
+                      className={index > 0 && items[index - 1]?.type !== item.type ? 'tooltip-type-separator' : undefined}
+                    >
+                      {item.label}
+                    </span>
+                  ))}
+                </div>
+              </div>
             )}
             {hoveredFire && (
               <div
@@ -1284,6 +1643,24 @@ export default function SituationMap() {
                 </div>
               </div>
             )}
+            {hoveredActiveFire && (
+              <div
+                className="fire-copernicus__tooltip app-tooltip"
+                style={{
+                  left: `${Math.max(12, hoveredActiveFire.x + 14)}px`,
+                  top: `${hoveredActiveFire.placement === 'below' ? hoveredActiveFire.y + 14 : Math.max(12, hoveredActiveFire.y - 14)}px`,
+                  transform: hoveredActiveFire.placement === 'below' ? 'none' : undefined,
+                  pointerEvents: 'none',
+                }}
+              >
+                <div className="fire-copernicus__tooltip-item">
+                  <strong>{hoveredActiveFire.item.municipalityName ? `ΔΗΜΟΣ ${hoveredActiveFire.item.municipalityName}` : 'Άγνωστη περιοχή'}</strong>
+                  <span>{hoveredActiveFire.item.fuelType ?? '—'}</span>
+                  <span>Ξέσπασε: {formatDateEl(hoveredActiveFire.item.startDate)}</span>
+                  <span>{hoveredActiveFire.item.status ?? 'Ενεργή πυρκαγιά'}</span>
+                </div>
+              </div>
+            )}
           </div>
         )}
         {mapData && (
@@ -1295,6 +1672,13 @@ export default function SituationMap() {
             <span className="fire-copernicus__legend-row">
               <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
               <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            </span>
+            <span className="fire-copernicus__legend-row">
+              <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" />
+                <circle cx="12" cy="10" r="2" />
+              </svg>
+              <span>Ενεργή πυρκαγιά (θέση κατά προσέγγιση)</span>
             </span>
           </div>
         )}
