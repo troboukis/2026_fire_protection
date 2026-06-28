@@ -43,6 +43,7 @@ export default function Layout() {
 
   useEffect(() => {
     let isCancelled = false
+    let reloadTimer: number | null = null
 
     const loadLastUpdateTime = async () => {
       let currentFiresIso: string | null = null
@@ -66,15 +67,23 @@ export default function Layout() {
 
     void loadLastUpdateTime()
 
+    const scheduleReload = () => {
+      if (isCancelled || reloadTimer != null) return
+      reloadTimer = window.setTimeout(() => {
+        window.location.reload()
+      }, 3000)
+    }
+
     const channel = supabase
       .channel('layout_last_update_current_fires')
       .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
-        if (!isCancelled) void loadLastUpdateTime()
+        scheduleReload()
       })
       .subscribe()
 
     return () => {
       isCancelled = true
+      if (reloadTimer != null) window.clearTimeout(reloadTimer)
       supabase.removeChannel(channel)
     }
   }, [])
