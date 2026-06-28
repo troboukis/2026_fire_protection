@@ -13,6 +13,12 @@ CREATE TABLE IF NOT EXISTS public.current_fires (
   start_date DATE,
   days_burning INTEGER,
   status_updated_at TIMESTAMPTZ,
+  lat NUMERIC(9, 6),
+  lon NUMERIC(9, 6),
+  formatted_address TEXT,
+  place_id TEXT,
+  geocode_query TEXT,
+  geocoded_at TIMESTAMPTZ,
   status TEXT,
   raw TEXT
 );
@@ -27,3 +33,6 @@ CREATE INDEX IF NOT EXISTS idx_current_fires_municipality_key
 
 CREATE INDEX IF NOT EXISTS idx_current_fires_status
   ON public.current_fires (status);
+
+CREATE INDEX IF NOT EXISTS idx_current_fires_lat_lon
+  ON public.current_fires (lat, lon);
