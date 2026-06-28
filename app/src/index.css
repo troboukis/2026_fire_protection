@@ -2251,17 +2251,23 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
   padding-top: 0.18rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .fire-copernicus__date-picker {
   display: grid;
   gap: 0.22rem;
   min-width: 0;
+  max-width: 100%;
+  overflow: clip;
 }
 
 .fire-copernicus__date-picker input {
   width: 100%;
+  max-width: 100%;
   min-width: 0;
+  min-inline-size: 0;
   height: 2.22rem;
   border: 1px solid var(--line);
   border-radius: 4px;
@@ -3135,6 +3141,10 @@ main {
     min-height: 420px;
     height: clamp(420px, 118vw, 560px);
     aspect-ratio: auto;
+  }
+
+  .fire-copernicus__date-filter--pickers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .fire-copernicus__toggle {
