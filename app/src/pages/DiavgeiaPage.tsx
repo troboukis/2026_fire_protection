@@ -225,23 +225,23 @@ export default function DiavgeiaPage() {
           placeholder="Αναζήτηση (τίτλος/φορέας/ΑΔΑ/τύπος)"
         />
         <input
-          className="contracts-filter contracts-filter--date"
+          className="contracts-filter contracts-filter--date contracts-filter--date-from"
           value={visibleDateFrom}
           onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
           type="date"
           aria-label="Ημερομηνία από"
         />
         <input
-          className="contracts-filter contracts-filter--date"
+          className="contracts-filter contracts-filter--date contracts-filter--date-to"
           value={visibleDateTo}
           onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
           type="date"
           aria-label="Ημερομηνία έως"
         />
-        <button type="button" className="contracts-filter-button" onClick={resetToLast30Days}>
+        <button type="button" className="contracts-filter-button contracts-filter-button--recent" onClick={resetToLast30Days}>
           Τελευταίες 30 ημέρες
         </button>
-        <button type="button" className="contracts-filter-button" onClick={showAllDates}>
+        <button type="button" className="contracts-filter-button contracts-filter-button--all" onClick={showAllDates}>
           Όλο το διάστημα
         </button>
       </section>

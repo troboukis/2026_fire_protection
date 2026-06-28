@@ -4676,11 +4676,11 @@ main {
     box-sizing: border-box;
   }
 
-  .contracts-page .contracts-filter--date:nth-of-type(2) {
+  .contracts-page .contracts-filter--date-from {
     grid-column: 1;
   }
 
-  .contracts-page .contracts-filter--date:nth-of-type(3) {
+  .contracts-page .contracts-filter--date-to {
     grid-column: 2;
   }
 
@@ -4689,19 +4689,28 @@ main {
     justify-items: stretch;
   }
 
+  .diavgeia-page .contracts-filters > * {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .diavgeia-page .contracts-filter-button {
     inline-size: 100%;
     min-inline-size: 0;
     max-inline-size: 100%;
     box-sizing: border-box;
     justify-self: stretch;
+    white-space: normal;
+    text-align: center;
+    text-wrap: balance;
   }
 
-  .diavgeia-page .contracts-filter-button:nth-of-type(1) {
+  .diavgeia-page .contracts-filter-button--recent {
     grid-column: 1;
   }
 
-  .diavgeia-page .contracts-filter-button:nth-of-type(2) {
+  .diavgeia-page .contracts-filter-button--all {
     grid-column: 2;
   }
 
