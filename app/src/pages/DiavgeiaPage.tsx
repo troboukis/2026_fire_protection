@@ -65,6 +65,14 @@ function isoToday(): string {
   return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
 }
 
+function isoDateInputValue(value: string | null): string {
+  if (!value) return ''
+  const dt = new Date(value)
+  if (Number.isNaN(dt.getTime())) return ''
+  const tzOffsetMs = dt.getTimezoneOffset() * 60_000
+  return new Date(dt.getTime() - tzOffsetMs).toISOString().slice(0, 10)
+}
+
 function periodLabel(dateFrom: string, dateTo: string): string {
   if (dateFrom && dateTo) return `${fmtDate(dateFrom)} - ${fmtDate(dateTo)}`
   if (dateFrom) return `Από ${fmtDate(dateFrom)}`
@@ -178,6 +186,8 @@ export default function DiavgeiaPage() {
     if (minDecisionDate && maxDecisionDate) return `${fmtDate(minDecisionDate)} - ${fmtDate(maxDecisionDate)}`
     return '—'
   }, [dateFrom, dateTo, maxDecisionDate, minDecisionDate])
+  const visibleDateFrom = dateFrom || isoDateInputValue(minDecisionDate)
+  const visibleDateTo = dateTo || isoDateInputValue(maxDecisionDate)
 
   const resetToLast30Days = () => {
     setDateFrom(defaultDateFrom)
@@ -216,14 +226,14 @@ export default function DiavgeiaPage() {
         />
         <input
           className="contracts-filter contracts-filter--date"
-          value={dateFrom}
+          value={visibleDateFrom}
           onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
           type="date"
           aria-label="Ημερομηνία από"
         />
         <input
           className="contracts-filter contracts-filter--date"
-          value={dateTo}
+          value={visibleDateTo}
           onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
           type="date"
           aria-label="Ημερομηνία έως"
