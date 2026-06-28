@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import ContractModal, { type ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
+import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './DiavgeiaDecisionCard'
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from './FeaturedRecordsSection'
 import LatestContractCard from './LatestContractCard'
 import MapTilerLogo from './MapTilerLogo'
@@ -64,6 +65,18 @@ type DashboardRpcContract = {
   primary_beneficiary_vat_number: string | null
 }
 
+type DashboardRpcDiavgeiaDecision = {
+  id: number | string
+  org_type: string | null
+  org_name_clean: string | null
+  subject: string | null
+  decision_date: string | null
+  ada: string | null
+  diavgeia_document_type_decision_uid: string | null
+  document_url: string | null
+  spending_contractors_value: string | null
+}
+
 type DashboardRpcFlowRow = {
   signer: string | null
   beneficiary: string | null
@@ -118,6 +131,7 @@ type DashboardRpcResponse = {
   flow_rows?: DashboardRpcFlowRow[] | null
   featured_contracts?: DashboardRpcContract[] | null
   recent_active_contracts?: DashboardRpcContract[] | null
+  recent_diavgeia_decisions?: DashboardRpcDiavgeiaDecision[] | null
 }
 
 type DashboardContract = ContractModalContract & {
@@ -177,6 +191,8 @@ type WorkPointTooltip = {
   items: string[]
 }
 
+type DashboardDiavgeiaDecision = DiavgeiaDecisionCardView
+
 type DashboardData = {
   ministryName: string
   identificationKeys: string[]
@@ -200,6 +216,7 @@ type DashboardData = {
   flowRows: FlowRow[]
   featuredContracts: DashboardContract[]
   recentActiveContracts: DashboardContract[]
+  recentDiavgeiaDecisions: DashboardDiavgeiaDecision[]
 }
 
 function cleanText(value: unknown): string | null {
@@ -256,6 +273,23 @@ function formatEurCompact(value: number): string {
   return `${Math.round(value).toLocaleString('el-GR')} €`
 }
 
+function parseGreekAmount(value: unknown): number | null {
+  const text = cleanText(value)
+  if (!text) return null
+  const match = text.match(/\d[\d.,]*/)
+  if (!match) return null
+  const normalized = match[0].includes(',')
+    ? match[0].replace(/\./g, '').replace(',', '.')
+    : match[0]
+  const amount = Number(normalized)
+  return Number.isFinite(amount) && amount > 0 ? amount : null
+}
+
+function formatEurFromGreekText(value: unknown): string | null {
+  const amount = parseGreekAmount(value)
+  return amount == null ? null : formatEur(amount)
+}
+
 function formatDirectAwardBreakdownNote(total: number, shareLabel: string, withAuction: number, withoutAuction: number): string {
   if (total <= 0) {
     return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση.`
@@ -285,6 +319,19 @@ function firstPipePart(value: unknown): string | null {
   const text = cleanText(value)
   if (!text) return null
   return text.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? null
+}
+
+function isoDateDaysAgoLocal(days: number): string {
+  const d = new Date()
+  d.setDate(d.getDate() - days)
+  const tzOffsetMs = d.getTimezoneOffset() * 60_000
+  return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
+}
+
+function isoTodayLocal(): string {
+  const d = new Date()
+  const tzOffsetMs = d.getTimezoneOffset() * 60_000
+  return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
 }
 
 function mapRpcContract(contract: DashboardRpcContract, ministryName: string): DashboardContract {
@@ -355,6 +402,23 @@ function mapRpcContract(contract: DashboardRpcContract, ministryName: string): D
   }
 }
 
+function mapRpcDiavgeiaDecision(row: DashboardRpcDiavgeiaDecision, ministryName: string): DashboardDiavgeiaDecision {
+  const decisionDateIso = normalizeDate(row.decision_date)
+  const ada = cleanText(row.ada) ?? '—'
+  return {
+    id: String(row.id),
+    orgType: cleanText(row.org_type) ?? 'ΥΠΟΥΡΓΕΙΟ',
+    orgNameClean: cleanText(row.org_name_clean) ?? ministryName,
+    subject: cleanText(row.subject) ?? '—',
+    when: formatDateEl(decisionDateIso),
+    ada,
+    decisionTypeUid: cleanText(row.diavgeia_document_type_decision_uid) ?? '—',
+    amount: formatEurFromGreekText(row.spending_contractors_value),
+    documentUrl: cleanText(row.document_url) ?? (ada !== '—' ? `https://diavgeia.gov.gr/doc/${ada}` : null),
+    sortDate: decisionDateIso,
+  }
+}
+
 function createEmptyDashboardData(): DashboardData {
   return {
     ministryName: 'Υπουργείο Περιβάλλοντος και Ενέργειας',
@@ -379,6 +443,7 @@ function createEmptyDashboardData(): DashboardData {
     flowRows: [],
     featuredContracts: [],
     recentActiveContracts: [],
+    recentDiavgeiaDecisions: [],
   }
 }
 
@@ -697,9 +762,15 @@ export default function EnvironmentMinistryDashboard() {
   const [error, setError] = useState<string | null>(null)
   const [selectedContract, setSelectedContract] = useState<DashboardContract | null>(null)
   const [mapCardHeight, setMapCardHeight] = useState<number | null>(null)
+  const recentDateFrom = useMemo(() => isoDateDaysAgoLocal(30), [])
+  const recentDateTo = useMemo(() => isoTodayLocal(), [])
   const allContractsHref = useMemo(
     () => buildContractsPageHref({ organizationKeys: data.identificationKeys }),
     [data.identificationKeys],
+  )
+  const allDiavgeiaHref = useMemo(
+    () => `/diavgeia?q=${encodeURIComponent(data.ministryName)}&allDates=1`,
+    [data.ministryName],
   )
   const [isDesktopGrid, setIsDesktopGrid] = useState(() => (
     typeof window === 'undefined' ? true : window.matchMedia('(min-width: 1101px)').matches
@@ -726,6 +797,9 @@ export default function EnvironmentMinistryDashboard() {
           : []
         const recentActiveContracts = Array.isArray(response.recent_active_contracts)
           ? response.recent_active_contracts.map((contract) => mapRpcContract(contract, ministryName))
+          : []
+        const recentDiavgeiaDecisions = Array.isArray(response.recent_diavgeia_decisions)
+          ? response.recent_diavgeia_decisions.map((decision) => mapRpcDiavgeiaDecision(decision, ministryName))
           : []
 
         const flowRows = Array.isArray(response.flow_rows)
@@ -794,6 +868,7 @@ export default function EnvironmentMinistryDashboard() {
             flowRows,
             featuredContracts,
             recentActiveContracts,
+            recentDiavgeiaDecisions,
           })
           setLoading(false)
         }
@@ -1012,6 +1087,33 @@ export default function EnvironmentMinistryDashboard() {
         return a.beneficiary.localeCompare(b.beneficiary, 'el')
       })
   }, [data.ministryName, data.recentActiveContracts])
+
+  const recentActivityItems = useMemo(() => {
+    const activityItems: Array<
+      | { kind: 'contract'; key: string; sortDate: string | null; contract: DashboardContract }
+      | { kind: 'diavgeia'; key: string; sortDate: string | null; decision: DashboardDiavgeiaDecision }
+    > = [
+      ...data.recentActiveContracts.map((contract) => ({
+        kind: 'contract' as const,
+        key: `contract-${contract.id}`,
+        sortDate: contract.signedAtIso,
+        contract,
+      })),
+      ...data.recentDiavgeiaDecisions.map((decision) => ({
+        kind: 'diavgeia' as const,
+        key: `diavgeia-${decision.id}`,
+        sortDate: decision.sortDate ?? null,
+        decision,
+      })),
+    ]
+
+    return activityItems.filter((item) => item.sortDate != null && item.sortDate >= recentDateFrom && item.sortDate <= recentDateTo).sort((a, b) => {
+      const aTime = a.sortDate ? Date.parse(a.sortDate) : 0
+      const bTime = b.sortDate ? Date.parse(b.sortDate) : 0
+      if (bTime !== aTime) return bTime - aTime
+      return b.key.localeCompare(a.key, 'el')
+    })
+  }, [data.recentActiveContracts, data.recentDiavgeiaDecisions, recentDateFrom, recentDateTo])
 
   const downloadSelectedContract = async () => {
     if (!selectedContract) return
@@ -1243,8 +1345,8 @@ export default function EnvironmentMinistryDashboard() {
 
               <ProfileSectionCard
                 eyebrow="Τελευταίες"
-                title={`${data.recentActiveContracts.length.toLocaleString('el-GR')} συμβάσεις`}
-                subtitle={`Από την πιο πρόσφατη στην παλαιότερη.`}
+                title={`${recentActivityItems.length.toLocaleString('el-GR')} εγγραφές`}
+                subtitle="Συμβάσεις ΚΗΜΔΗΣ και αποφάσεις Διαύγειας των τελευταίων 30 ημερών, από την πιο πρόσφατη στην παλαιότερη."
                 className="environment-section environment-section--recent-contracts"
                 style={isDesktopGrid && mapCardHeight ? { height: `${mapCardHeight}px` } : undefined}
               >
@@ -1252,21 +1354,33 @@ export default function EnvironmentMinistryDashboard() {
                   className="environment-active-contracts-wrap"
                 >
                   <div className="environment-active-contracts">
-                    {data.recentActiveContracts.length === 0 && (
-                      <div className="environment-contracts__empty">Δεν βρέθηκαν ενεργές συμβάσεις για προβολή.</div>
+                    {recentActivityItems.length === 0 && (
+                      <div className="environment-contracts__empty">Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας τις τελευταίες 30 ημέρες.</div>
                     )}
 
-                    {data.recentActiveContracts.map((contract) => (
-                      <LatestContractCard
-                        key={contract.id}
-                        item={contract}
-                        onOpen={() => setSelectedContract(contract)}
-                      />
+                    {recentActivityItems.map((item) => (
+                      item.kind === 'contract'
+                        ? (
+                            <LatestContractCard
+                              key={item.key}
+                              item={item.contract}
+                              onOpen={() => setSelectedContract(item.contract)}
+                            />
+                          )
+                        : (
+                            <DiavgeiaDecisionCard
+                              key={item.key}
+                              item={item.decision}
+                            />
+                          )
                     ))}
                   </div>
                 </div>
                 <Link className="news-wire__all-link environment-active-contracts__all-link" to={allContractsHref}>
-                  Όλες οι συμβάσεις
+                  Όλες οι συμβάσεις ΚΗΜΔΗΣ
+                </Link>
+                <Link className="news-wire__all-link environment-active-contracts__all-link" to={allDiavgeiaHref}>
+                  Όλες οι αποφάσεις Διαύγειας
                 </Link>
               </ProfileSectionCard>
             </div>

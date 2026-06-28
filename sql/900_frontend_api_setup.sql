@@ -1767,6 +1767,40 @@ recent_active_contracts AS (
   LEFT JOIN cpv_items ci
     ON ci.procurement_id = ac.id
 ),
+recent_diavgeia_decisions AS (
+  SELECT
+    d.id,
+    jsonb_build_object(
+      'id', d.id,
+      'org_type', COALESCE(NULLIF(BTRIM(d.org_type), ''), 'ΥΠΟΥΡΓΕΙΟ'),
+      'org_name_clean', COALESCE(NULLIF(BTRIM(d.org_name_clean), ''), (SELECT value FROM ministry_name)),
+      'subject', COALESCE(NULLIF(BTRIM(d.subject), ''), '—'),
+      'decision_date', d.decision_date,
+      'ada', COALESCE(NULLIF(BTRIM(d.ada), ''), '—'),
+      'diavgeia_document_type_decision_uid', COALESCE(NULLIF(BTRIM(d.diavgeia_document_type_decision_uid), ''), '—'),
+      'document_url', NULLIF(BTRIM(d.document_url), ''),
+      'spending_contractors_value', NULLIF(BTRIM(d.spending_contractors_value), '')
+    ) AS payload,
+    d.decision_date
+  FROM (
+    SELECT
+      dv.*,
+      COALESCE(dv.publish_timestamp, dv.submission_timestamp) AS decision_date
+    FROM public.diavgeia dv
+    WHERE (
+        dv.organization_key IN (SELECT organization_key FROM ministry_org_keys)
+        OR UPPER(BTRIM(COALESCE(dv.org, ''))) = 'ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ'
+        OR UPPER(BTRIM(COALESCE(dv.org_name_clean, ''))) = 'ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ'
+        OR COALESCE(dv.organization, '') LIKE '%100015996%'
+        OR UPPER(COALESCE(dv.organization, '')) LIKE '%ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ%'
+      )
+      AND COALESCE(dv.publish_timestamp, dv.submission_timestamp)::date
+        BETWEEN GREATEST(make_date(p_year, 1, 1), (CURRENT_DATE - INTERVAL '30 days')::date)
+        AND LEAST(CURRENT_DATE, make_date(p_year, 12, 31))
+    ORDER BY COALESCE(dv.publish_timestamp, dv.submission_timestamp) DESC NULLS LAST, dv.id DESC
+    LIMIT 40
+  ) d
+),
 featured_contracts_limited AS (
   SELECT *
   FROM featured_contracts
@@ -1930,6 +1964,10 @@ SELECT jsonb_build_object(
   'recent_active_contracts', COALESCE((
     SELECT jsonb_agg(payload ORDER BY contract_signed_date DESC NULLS LAST, id DESC)
     FROM recent_active_contracts
+  ), '[]'::jsonb),
+  'recent_diavgeia_decisions', COALESCE((
+    SELECT jsonb_agg(payload ORDER BY decision_date DESC NULLS LAST, id DESC)
+    FROM recent_diavgeia_decisions
   ), '[]'::jsonb)
 );
 $$;
