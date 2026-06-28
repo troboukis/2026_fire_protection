@@ -4643,10 +4643,28 @@ main {
 
   .contracts-filters {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .contracts-filter--search {
     grid-column: auto;
+    min-width: 0;
+  }
+
+  .contracts-filters input,
+  .contracts-filters select {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contracts-filters input[type="date"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    justify-self: stretch;
+    text-align: left;
   }
 
   .contracts-table-wrap {
