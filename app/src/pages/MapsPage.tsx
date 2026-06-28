@@ -3,11 +3,13 @@ import * as d3 from 'd3'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DevViewToggle from '../components/DevViewToggle'
+import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
+import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows, type PaymentSummaryRow } from '../lib/paymentSummary'
@@ -204,6 +206,8 @@ export default function MapsPage() {
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [municipalityLatestContracts, setMunicipalityLatestContracts] = useState<MunicipalityLatestContract[]>([])
   const [municipalityLatestLoading, setMunicipalityLatestLoading] = useState(false)
+  const [municipalityDiavgeiaDecisions, setMunicipalityDiavgeiaDecisions] = useState<DiavgeiaDecisionCardView[]>([])
+  const [municipalityDiavgeiaLoading, setMunicipalityDiavgeiaLoading] = useState(false)
   const [municipalityFirePoints, setMunicipalityFirePoints] = useState<FirePoint[]>([])
   const [municipalityFireLoading, setMunicipalityFireLoading] = useState(false)
   const [municipalityDirectWorkPoints, setMunicipalityDirectWorkPoints] = useState<WorkPoint[]>([])
@@ -978,6 +982,7 @@ export default function MapsPage() {
             contractType: String(row.procedure_type_value ?? '—').trim() || '—',
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
+            sortDate: row.contract_signed_date,
           }))
         const summaryRow = ((summaryData ?? []) as Array<{ signed_current_count: number | string | null; active_previous_count: number | string | null }>)[0] ?? null
 
@@ -1003,6 +1008,41 @@ export default function MapsPage() {
       cancelled = true
     }
   }, [mapYear, municipalityLabelById, panelKind, selectedMunicipalityIdForPanel])
+
+  useEffect(() => {
+    let cancelled = false
+    const selectedMunicipalityId = selectedMunicipalityIdForPanel
+    if (!selectedMunicipalityId || panelKind !== 'municipality') {
+      setMunicipalityDiavgeiaDecisions([])
+      setMunicipalityDiavgeiaLoading(false)
+      return
+    }
+
+    const loadMunicipalityDiavgeiaDecisions = async () => {
+      setMunicipalityDiavgeiaLoading(true)
+      try {
+        const { data, error } = await supabase.rpc('get_municipality_diavgeia_decisions', {
+          p_municipality_key: selectedMunicipalityId,
+          p_year: mapYear,
+        })
+        if (error) throw error
+        const mapped = ((data ?? []) as MunicipalityDiavgeiaDecisionRpcRow[]).map(buildDiavgeiaDecisionCardView)
+        if (!cancelled) setMunicipalityDiavgeiaDecisions(mapped)
+      } catch (e) {
+        if (!cancelled) {
+          console.error('[MapsPage] municipality diavgeia decisions failed', e)
+          setMunicipalityDiavgeiaDecisions([])
+        }
+      } finally {
+        if (!cancelled) setMunicipalityDiavgeiaLoading(false)
+      }
+    }
+
+    loadMunicipalityDiavgeiaDecisions()
+    return () => {
+      cancelled = true
+    }
+  }, [mapYear, panelKind, selectedMunicipalityIdForPanel])
 
   useEffect(() => {
     let cancelled = false
@@ -1381,6 +1421,8 @@ export default function MapsPage() {
           municipalityKey={panelKind === 'municipality' ? selectedMunicipalityIdForPanel : null}
           municipalityLatestContracts={municipalityLatestContracts}
           municipalityLatestLoading={municipalityLatestLoading}
+          municipalityDiavgeiaDecisions={municipalityDiavgeiaDecisions}
+          municipalityDiavgeiaLoading={municipalityDiavgeiaLoading}
           regionLatestContracts={regionLatestContracts}
           regionLatestLoading={regionLatestLoading}
           municipalityFeature={

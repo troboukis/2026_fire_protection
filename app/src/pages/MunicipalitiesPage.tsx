@@ -4,6 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DataLoadingCard from '../components/DataLoadingCard'
+import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
 import MapTilerLogo from '../components/MapTilerLogo'
@@ -11,6 +12,7 @@ import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { isContractActiveInYear } from '../lib/contractWindow'
+import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
@@ -860,6 +862,8 @@ export default function MunicipalitiesPage() {
   const [contractOrganizationById, setContractOrganizationById] = useState<Record<number, string>>({})
   const [latestMunicipalityContractRows, setLatestMunicipalityContractRows] = useState<MunicipalityContractRow[]>([])
   const [latestMunicipalityContractsLoading, setLatestMunicipalityContractsLoading] = useState(false)
+  const [municipalityDiavgeiaDecisions, setMunicipalityDiavgeiaDecisions] = useState<DiavgeiaDecisionCardView[]>([])
+  const [municipalityDiavgeiaDecisionsLoading, setMunicipalityDiavgeiaDecisionsLoading] = useState(false)
   const [latestMunicipalityCanScrollPrev, setLatestMunicipalityCanScrollPrev] = useState(false)
   const [latestMunicipalityCanScrollNext, setLatestMunicipalityCanScrollNext] = useState(false)
   const [featuredMunicipalityBeneficiaries, setFeaturedMunicipalityBeneficiaries] = useState<BeneficiaryInsightRow[]>([])
@@ -985,6 +989,8 @@ export default function MunicipalitiesPage() {
     setContractOrganizationById({})
     setLatestMunicipalityContractRows([])
     setLatestMunicipalityContractsLoading(false)
+    setMunicipalityDiavgeiaDecisions([])
+    setMunicipalityDiavgeiaDecisionsLoading(false)
     setFeaturedMunicipalityBeneficiaries([])
     setFeaturedMunicipalityBeneficiariesLoading(false)
     setCurrentFireRows([])
@@ -1250,6 +1256,42 @@ export default function MunicipalitiesPage() {
       cancelled = true
     }
   }, [currentYear, profile, selectedMunicipality, selectedMunicipalityKey])
+
+  useEffect(() => {
+    let cancelled = false
+
+    if (!selectedMunicipalityKey) {
+      setMunicipalityDiavgeiaDecisions([])
+      setMunicipalityDiavgeiaDecisionsLoading(false)
+      return
+    }
+
+    const loadMunicipalityDiavgeiaDecisions = async () => {
+      setMunicipalityDiavgeiaDecisionsLoading(true)
+
+      try {
+        const { data, error } = await supabase.rpc('get_municipality_diavgeia_decisions', {
+          p_municipality_key: selectedMunicipalityKey,
+          p_year: currentYear,
+        })
+        if (error) throw error
+        const mapped = ((data ?? []) as MunicipalityDiavgeiaDecisionRpcRow[]).map(buildDiavgeiaDecisionCardView)
+        if (!cancelled) setMunicipalityDiavgeiaDecisions(mapped)
+      } catch (error) {
+        if (!cancelled) {
+          console.error('[MunicipalitiesPage] municipality diavgeia decisions failed', error)
+          setMunicipalityDiavgeiaDecisions([])
+        }
+      } finally {
+        if (!cancelled) setMunicipalityDiavgeiaDecisionsLoading(false)
+      }
+    }
+
+    loadMunicipalityDiavgeiaDecisions()
+    return () => {
+      cancelled = true
+    }
+  }, [currentYear, selectedMunicipalityKey])
 
   useEffect(() => {
     let cancelled = false
@@ -2843,11 +2885,27 @@ export default function MunicipalitiesPage() {
       howMuch: formatEur(toNumber(row.amount_without_vat)),
       signedAt: formatDate(row.contract_signed_date),
       documentUrl: cleanText(row.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(row.diavgeia_ada)}` : null,
+      sortDate: cleanText(row.contract_signed_date),
     })),
     [latestMunicipalityContractRows, selectedMunicipalityLabel],
   )
+  const municipalityTimelineItems = useMemo(() => {
+    const contractItems = latestMunicipalityContracts.map((item) => ({ kind: 'contract' as const, id: item.id, sortDate: item.sortDate, item }))
+    const diavgeiaItems = municipalityDiavgeiaDecisions.map((item) => ({ kind: 'diavgeia' as const, id: item.id, sortDate: item.sortDate, item }))
+    return [...contractItems, ...diavgeiaItems].sort((a, b) => {
+      const dateA = cleanText(a.sortDate) ?? ''
+      const dateB = cleanText(b.sortDate) ?? ''
+      if (dateA !== dateB) return dateB.localeCompare(dateA)
+      return b.id.localeCompare(a.id)
+    })
+  }, [latestMunicipalityContracts, municipalityDiavgeiaDecisions])
+  const municipalityTimelineLoading = latestMunicipalityContractsLoading || municipalityDiavgeiaDecisionsLoading
   const municipalityContractsHref = useMemo(
     () => buildContractsPageHref({ municipalityKey: selectedMunicipalityKey }),
+    [selectedMunicipalityKey],
+  )
+  const municipalityDiavgeiaHref = useMemo(
+    () => `/diavgeia?municipalityKey=${encodeURIComponent(selectedMunicipalityKey ?? '')}&allDates=1`,
     [selectedMunicipalityKey],
   )
 
@@ -2880,7 +2938,7 @@ export default function MunicipalitiesPage() {
       container.removeEventListener('scroll', updatePager)
       window.removeEventListener('resize', updatePager)
     }
-  }, [latestMunicipalityContracts, latestMunicipalityContractsLoading])
+  }, [municipalityTimelineItems, municipalityTimelineLoading])
 
   const scrollLatestMunicipalityContracts = (direction: -1 | 1) => {
     const container = latestMunicipalityContractStripRef.current
@@ -4143,22 +4201,22 @@ export default function MunicipalitiesPage() {
             </article>
           </section>
 
-          <section className="municipality-contract-latest section-rule dev-tag-anchor" aria-label="Τελευταίες συμβάσεις δήμου">
+          <section className="municipality-contract-latest section-rule dev-tag-anchor" aria-label="Συμβάσεις και αποφάσεις Διαύγειας δήμου">
             <div className="dev-tag-stack dev-tag-stack--right">
               <ComponentTag name="municipality-contract-latest section-rule" kind="CLASS" />
             </div>
             <div className="municipality-contract-latest__head dev-tag-anchor">
               <ComponentTag name="municipality-contract-latest__head" kind="CLASS" className="component-tag--overlay" />
-              <span className="eyebrow">τελευταίες συμβάσεις</span>
+              <span className="eyebrow">συμβάσεις & διαύγεια</span>
               <div className="municipality-contract-latest__subtitle-row">
-                <p>Οι πιο πρόσφατες συμβάσεις του Δήμου {selectedName} για το {currentYear}.</p>
-                <div className="municipality-contract-latest__pager" aria-label="Πλοήγηση τελευταίων συμβάσεων δήμου">
+                <p>Οι πιο πρόσφατες συμβάσεις και αποφάσεις Διαύγειας του Δήμου {selectedName} σε χρονολογική σειρά.</p>
+                <div className="municipality-contract-latest__pager" aria-label="Πλοήγηση συμβάσεων και αποφάσεων Διαύγειας δήμου">
                   <button
                     type="button"
                     className="municipality-contract-latest__pager-button"
                     aria-label="Προηγούμενη σύμβαση δήμου"
                     onClick={() => scrollLatestMunicipalityContracts(-1)}
-                    disabled={latestMunicipalityContractsLoading || !latestMunicipalityCanScrollPrev}
+                    disabled={municipalityTimelineLoading || !latestMunicipalityCanScrollPrev}
                   >
                     ‹
                   </button>
@@ -4167,7 +4225,7 @@ export default function MunicipalitiesPage() {
                     className="municipality-contract-latest__pager-button"
                     aria-label="Επόμενη σύμβαση δήμου"
                     onClick={() => scrollLatestMunicipalityContracts(1)}
-                    disabled={latestMunicipalityContractsLoading || !latestMunicipalityCanScrollNext}
+                    disabled={municipalityTimelineLoading || !latestMunicipalityCanScrollNext}
                   >
                     ›
                   </button>
@@ -4181,25 +4239,34 @@ export default function MunicipalitiesPage() {
                 className="component-tag--overlay"
                 style={{ left: 'auto', right: '0.45rem' }}
               />
-              {latestMunicipalityContractsLoading && (
-                <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις του δήμου." />
+              {municipalityTimelineLoading && (
+                <DataLoadingCard compact message="Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου." />
               )}
-              {!latestMunicipalityContractsLoading && latestMunicipalityContracts.map((item) => (
-                <LatestContractCard
-                  key={item.id}
-                  item={item}
-                  onOpen={openLatestMunicipalityContract}
-                />
+              {!municipalityTimelineLoading && municipalityTimelineItems.map((entry) => (
+                entry.kind === 'contract'
+                  ? (
+                    <LatestContractCard
+                      key={entry.id}
+                      item={entry.item}
+                      onOpen={openLatestMunicipalityContract}
+                    />
+                  )
+                  : <DiavgeiaDecisionCard key={entry.id} item={entry.item} />
               ))}
-              {!latestMunicipalityContractsLoading && latestMunicipalityContracts.length === 0 && (
+              {!municipalityTimelineLoading && municipalityTimelineItems.length === 0 && (
                 <article className="wire-item">
-                  <h2>Δεν βρέθηκαν συμβάσεις για τον επιλεγμένο δήμο.</h2>
+                  <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο.</h2>
                 </article>
               )}
             </div>
-            <Link className="news-wire__all-link" to={municipalityContractsHref}>
-              Όλες οι συμβάσεις
-            </Link>
+            <div className="municipality-contract-latest__links">
+              <Link className="news-wire__all-link" to={municipalityContractsHref}>
+                Όλες οι συμβάσεις
+              </Link>
+              <Link className="news-wire__all-link" to={municipalityDiavgeiaHref}>
+                Όλες οι αποφάσεις
+              </Link>
+            </div>
           </section>
 
           <FeaturedRecordsSection

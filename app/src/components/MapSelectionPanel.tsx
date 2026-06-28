@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
+import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './DiavgeiaDecisionCard'
 import EditorialLead from './EditorialLead'
 import LatestContractCard, { type LatestContractCardView } from './LatestContractCard'
 import MapTilerLogo from './MapTilerLogo'
@@ -41,6 +42,8 @@ type Props = {
   municipalityKey?: string | null
   municipalityLatestContracts?: LatestContractCardView[]
   municipalityLatestLoading?: boolean
+  municipalityDiavgeiaDecisions?: DiavgeiaDecisionCardView[]
+  municipalityDiavgeiaLoading?: boolean
   regionLatestContracts?: LatestContractCardView[]
   regionLatestLoading?: boolean
   municipalityFeature?: GeoFeature | null
@@ -93,6 +96,8 @@ export default function MapSelectionPanel({
   municipalityKey = null,
   municipalityLatestContracts = [],
   municipalityLatestLoading = false,
+  municipalityDiavgeiaDecisions = [],
+  municipalityDiavgeiaLoading = false,
   regionLatestContracts = [],
   regionLatestLoading = false,
   municipalityFeature,
@@ -217,6 +222,17 @@ export default function MapSelectionPanel({
     )
   }, [mapTilerApiKey, municipalityFeature, previewGeometry])
   const showPreviewTerrain = previewHillshadeTiles.length > 0 && !previewTerrainFailed
+  const municipalityTimelineItems = useMemo(() => {
+    const contractItems = municipalityLatestContracts.map((item) => ({ kind: 'contract' as const, id: item.id, sortDate: item.sortDate, item }))
+    const diavgeiaItems = municipalityDiavgeiaDecisions.map((item) => ({ kind: 'diavgeia' as const, id: item.id, sortDate: item.sortDate, item }))
+    return [...contractItems, ...diavgeiaItems].sort((a, b) => {
+      const dateA = cleanText(a.sortDate) ?? ''
+      const dateB = cleanText(b.sortDate) ?? ''
+      if (dateA !== dateB) return dateB.localeCompare(dateA)
+      return b.id.localeCompare(a.id)
+    })
+  }, [municipalityDiavgeiaDecisions, municipalityLatestContracts])
+  const municipalityTimelineLoading = municipalityLatestLoading || municipalityDiavgeiaLoading
 
   useEffect(() => {
     setPreviewTerrainFailed(false)
@@ -768,20 +784,22 @@ export default function MapSelectionPanel({
       )}
 
       {kind === 'municipality' && (
-        <section className="maps-selection-panel__latest" aria-label="Τελευταίες συμβάσεις δήμου">
+        <section className="maps-selection-panel__latest" aria-label="Συμβάσεις και αποφάσεις Διαύγειας δήμου">
           <div className="maps-selection-panel__latest-label">
-            <span className="eyebrow">τελευταίες συμβάσεις</span>
+            <span className="eyebrow">συμβάσεις & διαύγεια</span>
           </div>
           <div className="maps-selection-panel__latest-items">
-            {municipalityLatestLoading && (
-              <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις του δήμου." />
+            {municipalityTimelineLoading && (
+              <DataLoadingCard compact message="Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου." />
             )}
-            {!municipalityLatestLoading && municipalityLatestContracts.map((item) => (
-              <LatestContractCard key={item.id} item={item} onOpen={onContractOpen} />
+            {!municipalityTimelineLoading && municipalityTimelineItems.map((entry) => (
+              entry.kind === 'contract'
+                ? <LatestContractCard key={entry.id} item={entry.item} onOpen={onContractOpen} />
+                : <DiavgeiaDecisionCard key={entry.id} item={entry.item} />
             ))}
-            {!municipalityLatestLoading && municipalityLatestContracts.length === 0 && (
+            {!municipalityTimelineLoading && municipalityTimelineItems.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν συμβάσεις για τον επιλεγμένο δήμο.</h2>
+                <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο.</h2>
               </article>
             )}
           </div>

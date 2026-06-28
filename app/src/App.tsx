@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import ComponentTag from './components/ComponentTag'
+import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './components/DiavgeiaDecisionCard'
 import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import MapTilerLogo from './components/MapTilerLogo'
@@ -11,6 +12,7 @@ import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { buildContractsPageHref } from './lib/contractsPageHref'
+import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from './lib/diavgeiaDecision'
 import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from './lib/homepageRpcCache'
 import { isAbortError } from './lib/isAbortError'
 import type { AuthorityScope } from './lib/latestContractCard'
@@ -63,6 +65,10 @@ type LatestContractCard = LatestContractCardView & ContractModalContract & {
   documentUrl: string | null
 }
 
+type LatestTimelineEntry =
+  | { kind: 'contract'; id: string; sortDate: string | null; item: LatestContractCard }
+  | { kind: 'diavgeia'; id: string; sortDate: string | null; item: DiavgeiaDecisionCardView }
+
 type LatestContractRpcRow = {
   procurement_id: number | string
   who: string | null
@@ -99,6 +105,18 @@ type LatestContractRpcRow = {
   start_date: string | null
   end_date: string | null
   municipality_key: string | null
+}
+
+type DiavgeiaPageRpcRow = {
+  id: number | string
+  org_type: string | null
+  org_name_clean: string | null
+  subject: string | null
+  decision_date: string | null
+  ada: string | null
+  diavgeia_document_type_decision_uid: string | null
+  document_url: string | null
+  spending_contractors_value: string | null
 }
 
 type HeroStats = {
@@ -449,6 +467,7 @@ export default function App() {
   const navigate = useNavigate()
   const latestContractsItemsRef = useRef<HTMLDivElement | null>(null)
   const [latestContracts, setLatestContracts] = useState<LatestContractCard[]>([])
+  const [latestDiavgeiaDecisions, setLatestDiavgeiaDecisions] = useState<DiavgeiaDecisionCardView[]>([])
   const [latestContractsLoading, setLatestContractsLoading] = useState(true)
   const [latestContractsError, setLatestContractsError] = useState<string | null>(null)
   const [latestContractsCanScrollPrev, setLatestContractsCanScrollPrev] = useState(false)
@@ -490,6 +509,32 @@ export default function App() {
     topCpvPrevCount: 0,
     topCpvVsPrev1Pct: null,
   })
+  const latestTimeline = useMemo<LatestTimelineEntry[]>(() => {
+    const entries: LatestTimelineEntry[] = [
+      ...latestContracts.map((item) => ({
+        kind: 'contract' as const,
+        id: item.id,
+        sortDate: item.sortDate ?? null,
+        item,
+      })),
+      ...latestDiavgeiaDecisions.map((item) => ({
+        kind: 'diavgeia' as const,
+        id: item.id,
+        sortDate: item.sortDate ?? null,
+        item,
+      })),
+    ]
+
+    return entries
+      .sort((a, b) => {
+        const aTime = a.sortDate ? new Date(a.sortDate).getTime() : Number.NEGATIVE_INFINITY
+        const bTime = b.sortDate ? new Date(b.sortDate).getTime() : Number.NEGATIVE_INFINITY
+        const safeATime = Number.isNaN(aTime) ? Number.NEGATIVE_INFINITY : aTime
+        const safeBTime = Number.isNaN(bTime) ? Number.NEGATIVE_INFINITY : bTime
+        return safeBTime - safeATime
+      })
+      .slice(0, 15)
+  }, [latestContracts, latestDiavgeiaDecisions])
 
   useEffect(() => {
     const prefetch = () => {
@@ -583,17 +628,42 @@ export default function App() {
 
     const loadLatestContracts = async () => {
       try {
-        const rows = await loadCachedHomepageRpc(
-          createHomepageRpcCacheKey('get_latest_contract_cards', { p_limit: 15 }),
-          () => retryHomepageRpc(async () => {
-            const { data, error } = await supabase.rpc('get_latest_contract_cards', {
-              p_limit: 15,
-            }).abortSignal(controller.signal)
-            if (error) throw error
-            return (data ?? []) as LatestContractRpcRow[]
-          }),
-          { useStaleOnError: false, dedupeInFlight: false },
-        )
+        const [rows, diavgeiaRows] = await Promise.all([
+          loadCachedHomepageRpc(
+            createHomepageRpcCacheKey('get_latest_contract_cards', { p_limit: 15 }),
+            () => retryHomepageRpc(async () => {
+              const { data, error } = await supabase.rpc('get_latest_contract_cards', {
+                p_limit: 15,
+              }).abortSignal(controller.signal)
+              if (error) throw error
+              return (data ?? []) as LatestContractRpcRow[]
+            }),
+            { useStaleOnError: false, dedupeInFlight: false },
+          ),
+          loadCachedHomepageRpc(
+            createHomepageRpcCacheKey('get_diavgeia_page', {
+              p_q: null,
+              p_date_from: null,
+              p_date_to: null,
+              p_municipality_key: null,
+              p_page: 1,
+              p_page_size: 15,
+            }),
+            () => retryHomepageRpc(async () => {
+              const { data, error } = await supabase.rpc('get_diavgeia_page', {
+                p_q: null,
+                p_date_from: null,
+                p_date_to: null,
+                p_municipality_key: null,
+                p_page: 1,
+                p_page_size: 15,
+              }).abortSignal(controller.signal)
+              if (error) throw error
+              return (data ?? []) as DiavgeiaPageRpcRow[]
+            }),
+            { useStaleOnError: false, dedupeInFlight: false },
+          ),
+        ])
         if (cancelled) return
 
         const cards = rows.map<LatestContractCard>((row) => {
@@ -623,6 +693,7 @@ export default function App() {
             signedAt: formatDateEl(cleanText(row.contract_signed_date)),
             documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
             municipalityKey: cleanText(row.who)?.startsWith('ΔΗΜΟΣ ') ? (cleanText(row.municipality_key) ?? null) : null,
+            sortDate: cleanText(row.submission_at) ?? cleanText(row.contract_signed_date),
           }
 
           return {
@@ -659,14 +730,27 @@ export default function App() {
             documentUrl: latestCardView.documentUrl ?? null,
           }
         })
+        const decisions = diavgeiaRows.map((row) => buildDiavgeiaDecisionCardView({
+          diavgeia_id: row.id,
+          org_type: row.org_type,
+          org_name_clean: row.org_name_clean,
+          subject: row.subject,
+          decision_date: row.decision_date,
+          ada: row.ada,
+          diavgeia_document_type_decision_uid: row.diavgeia_document_type_decision_uid,
+          spending_contractors_value: row.spending_contractors_value,
+          document_url: row.document_url,
+        } satisfies MunicipalityDiavgeiaDecisionRpcRow))
 
         setLatestContracts(cards)
+        setLatestDiavgeiaDecisions(decisions)
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
           logLoadError('latest contracts', error)
           setLatestContracts([])
-          setLatestContractsError('Δεν ήταν δυνατή η φόρτωση των πιο πρόσφατων συμβάσεων.')
+          setLatestDiavgeiaDecisions([])
+          setLatestContractsError('Δεν ήταν δυνατή η φόρτωση των πιο πρόσφατων συμβάσεων και αποφάσεων Διαύγειας.')
         }
       } finally {
         if (!cancelled) setLatestContractsLoading(false)
@@ -1729,7 +1813,7 @@ export default function App() {
       window.removeEventListener('orientationchange', scheduleUpdateLatestContractsPager)
       if (frameId != null) window.cancelAnimationFrame(frameId)
     }
-  }, [latestContracts, latestContractsLoading])
+  }, [latestTimeline, latestContractsLoading])
 
   const scrollLatestContracts = (direction: -1 | 1) => {
     const container = latestContractsItemsRef.current
@@ -1916,13 +2000,24 @@ export default function App() {
           <div className="news-wire__label dev-tag-anchor">
             <DebugClassLabel name="news-wire__label" />
             <span className="eyebrow">τελευταία</span>
-            <strong>Οι πιο πρόσφατες συμβάσεις Δήμων, Υπουργείων και άλλων φορέων που έχουν δημοσιευτεί στο <a href = "https://eprocurement.gov.gr/">Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων</a> και αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.</strong>
+            <strong>
+              Οι πιο πρόσφατες συμβάσεις (
+              <a href="https://portal.eprocurement.gov.gr/webcenter/portal/TestPortal" target="_blank" rel="noreferrer">
+                Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων
+              </a>
+              ) και αποφάσεις (
+              <a href="https://diavgeia.gov.gr/" target="_blank" rel="noreferrer">
+                Διαύγεια
+              </a>
+              ) Δήμων, Υπουργείων και άλλων φορέων που αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.
+            </strong>
             <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
-            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων">
+            <Link className="news-wire__all-link" to="/diavgeia">Δες όλες τις αποφάσεις</Link>
+            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων και αποφάσεων Διαύγειας">
               <button
                 type="button"
                 className="news-wire__pager-button"
-                aria-label="Προηγούμενη σύμβαση"
+                aria-label="Προηγούμενη σύμβαση ή απόφαση Διαύγειας"
                 onClick={() => scrollLatestContracts(-1)}
                 disabled={latestContractsLoading || !latestContractsCanScrollPrev}
               >
@@ -1931,7 +2026,7 @@ export default function App() {
               <button
                 type="button"
                 className="news-wire__pager-button"
-                aria-label="Επόμενη σύμβαση"
+                aria-label="Επόμενη σύμβαση ή απόφαση Διαύγειας"
                 onClick={() => scrollLatestContracts(1)}
                 disabled={latestContractsLoading || !latestContractsCanScrollNext}
               >
@@ -1944,31 +2039,32 @@ export default function App() {
             {latestContractsLoading && (
               <DataLoadingCard
                 className="news-wire__loading-card"
-                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις από το ΚΗΜΔΗΣ."
+                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις και αποφάσεις Διαύγειας."
               />
             )}
-            {!latestContractsLoading && latestContracts.map((item) => (
-              <LatestContractCardItem
-                key={item.id}
-                item={item}
-                onOpen={(id) => {
-                  const found = latestContracts.find((x) => x.id === id)
-                  if (found) setSelectedContract(found)
-                }}
-                onMunicipalityClick={(key) => navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)}
-                contractTypeTransform={toLowerEl}
-              />
+            {!latestContractsLoading && latestTimeline.map((entry) => (
+              entry.kind === 'contract'
+                ? (
+                  <LatestContractCardItem
+                    key={`contract-${entry.id}`}
+                    item={entry.item}
+                    onOpen={() => setSelectedContract(entry.item)}
+                    onMunicipalityClick={(key) => navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)}
+                    contractTypeTransform={toLowerEl}
+                  />
+                )
+                : <DiavgeiaDecisionCard key={`diavgeia-${entry.id}`} item={entry.item} />
             ))}
             {!latestContractsLoading && latestContractsError && (
               <article className="wire-item">
-                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις.</h2>
+                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις και αποφάσεις.</h2>
                 <p>{latestContractsError}</p>
               </article>
             )}
-            {!latestContractsLoading && !latestContractsError && latestContracts.length === 0 && (
+            {!latestContractsLoading && !latestContractsError && latestTimeline.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις.</h2>
-                <p>Ελέγξτε ότι ο πίνακας `procurement` έχει δεδομένα.</p>
+                <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις ή αποφάσεις Διαύγειας.</h2>
+                <p>Ελέγξτε ότι οι πίνακες `procurement` και `diavgeia` έχουν δεδομένα.</p>
               </article>
             )}
           </div>
