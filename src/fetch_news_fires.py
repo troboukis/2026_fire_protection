@@ -698,16 +698,22 @@ def run(args: argparse.Namespace) -> int:
     completed_rows: list[NewsFireRow] = []
     completed_articles_by_source: dict[str, list[ListingArticle]] = {}
     successful_articles_by_source: dict[str, list[ListingArticle]] = {}
+    source_errors: list[dict[str, str]] = []
 
     try:
         for source in SOURCES:
-            new_articles = collect_new_listing_articles(
-                source,
-                state,
-                max_pages=args.max_pages,
-                limit=args.limit,
-                debug=args.debug,
-            )
+            try:
+                new_articles = collect_new_listing_articles(
+                    source,
+                    state,
+                    max_pages=args.max_pages,
+                    limit=args.limit,
+                    debug=args.debug,
+                )
+            except requests.RequestException as exc:
+                source_errors.append({"source": source.key, "error": str(exc)})
+                log(args.debug, f"[news_fires] source_listing_error source={source.key} error={exc}")
+                continue
             log(args.debug, f"[news_fires] source={source.key} new_listing_articles={len(new_articles)}")
             if new_articles:
                 successful_articles_by_source[source.key] = new_articles
@@ -745,10 +751,11 @@ def run(args: argparse.Namespace) -> int:
         print(
             json.dumps(
                 {
-                    "status": "success",
+                    "status": "partial_success" if source_errors else "success",
                     "rows": inserted,
                     "state_file": str(args.state_file),
                     "dry_run": args.dry_run,
+                    "source_errors": source_errors,
                 },
                 ensure_ascii=False,
             ),
