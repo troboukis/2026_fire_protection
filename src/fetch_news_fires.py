@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-import argparse
 import json
 import os
 import re
-import sys
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -48,6 +46,8 @@ ATHENS_TZ = ZoneInfo("Europe/Athens")
 DEFAULT_STATE_PATH = ROOT / "logs" / "news_fires_state.json"
 GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 REQUEST_TIMEOUT = 30
+MAX_LISTING_PAGES = 20
+MAX_AREA_CHARS = 120
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -78,6 +78,7 @@ class SourceConfig:
     display_name: str
     first_url: str
     generated_page_url: str | None = None
+    generated_page_offset: int = 1
     pagination_referer: str = "previous"
 
 
@@ -114,39 +115,40 @@ class NewsFireRow:
     lon: float | None
 
 
+@dataclass
+class ListingCollection:
+    articles: list[ListingArticle]
+    state_articles: list[ListingArticle]
+
+
 SOURCES = (
     SourceConfig(
         key="kathimerini",
         display_name="Καθημερινή",
-        first_url="https://www.kathimerini.gr/epikairothta/page/0/",
+        first_url="https://www.kathimerini.gr/epikairothta/",
         generated_page_url="https://www.kathimerini.gr/epikairothta/page/{page}/",
+        generated_page_offset=2,
     ),
     SourceConfig(
         key="news247",
         display_name="News247",
-        first_url="https://www.news247.gr/roi-eidiseon/",
+        first_url="https://www.news247.gr/roi-eidiseon/page/1/",
+        generated_page_url="https://www.news247.gr/roi-eidiseon/page/{page}/",
+        generated_page_offset=2,
         pagination_referer="origin",
     ),
 )
 
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Scrape Greek news listings for fire articles, geocode one fire area, and upsert into public.news_fires.",
-    )
-    parser.add_argument("--db-path", default=None, help="Optional DATABASE_URL override")
-    parser.add_argument("--state-file", type=Path, default=DEFAULT_STATE_PATH, help="Gitignored state JSON path")
-    parser.add_argument("--geojson", type=Path, default=DEFAULT_GEOJSON, help="Municipalities GeoJSON")
-    parser.add_argument("--max-pages", type=int, default=5, help="Maximum listing pages per source")
-    parser.add_argument("--limit", type=int, default=None, help="Optional maximum new listing articles per source")
-    parser.add_argument("--dry-run", action="store_true", help="Scrape/process without DB or state writes")
-    parser.add_argument("--debug", action="store_true", help="Verbose logging")
-    return parser.parse_args()
+def progress(message: str) -> None:
+    print(f"[news_fires] {message}", flush=True)
 
 
-def log(enabled: bool, message: str) -> None:
-    if enabled:
-        print(message, flush=True)
+def short_text(value: Any, max_chars: int = 120) -> str:
+    text = clean_text(value)
+    if len(text) <= max_chars:
+        return text
+    return text[: max_chars - 1].rstrip() + "…"
 
 
 def make_soup(html: str) -> BeautifulSoup:
@@ -182,9 +184,6 @@ def contains_secondary_body_term(body: str) -> bool:
         term in compact
         for term in (
             "ΔΑΣΙΚ",
-            "ΥΠΟ ΕΛΕΓΧΟ",
-            "ΠΥΡΟΣΒΕΣΤ",
-            "ΚΙΝΔΥΝ",
             "ΑΓΡΟΤΟΔΑΣΙΚ",
             "ΔΑΣΟΣ",
             "ΔΑΣΟΥΣ",
@@ -239,6 +238,28 @@ def state_seen_urls(boundary: dict[str, Any] | None) -> set[str]:
     if not isinstance(raw_urls, list):
         return set()
     return {clean_text(url) for url in raw_urls if clean_text(url)}
+
+
+def scan_boundary(boundary: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not boundary:
+        return None
+    raw_urls = boundary.get("seen_urls")
+    if isinstance(raw_urls, list):
+        first_seen_url = next((clean_text(url) for url in raw_urls if clean_text(url)), "")
+        if first_seen_url:
+            return {
+                **boundary,
+                "url": first_seen_url,
+            }
+    return boundary
+
+
+def append_unique_article(articles: list[ListingArticle], seen_urls: set[str], article: ListingArticle) -> bool:
+    if article.url in seen_urls:
+        return False
+    articles.append(article)
+    seen_urls.add(article.url)
+    return True
 
 
 def origin_referer(url: str) -> str:
@@ -341,11 +362,37 @@ def extract_meta_datetime(soup: BeautifulSoup) -> datetime | None:
 
 
 def article_candidate_blocks(soup: BeautifulSoup) -> list[Any]:
-    blocks = list(soup.find_all("article"))
+    blocks = []
+    seen_ids = set()
+    for selector in ("article", "div.nx-article"):
+        for block in soup.select(selector):
+            marker = id(block)
+            if marker not in seen_ids:
+                blocks.append(block)
+                seen_ids.add(marker)
     if blocks:
         return blocks
     headings = soup.find_all(["h2", "h3"], limit=80)
     return [heading.parent for heading in headings if heading and heading.find("a", href=True)]
+
+
+def extract_listing_link(block: Any):
+    for selector in ("a.mainlink[href]", "a[href]"):
+        for candidate in block.select(selector):
+            if clean_text(candidate.get_text(" ", strip=True)):
+                return candidate
+    for heading in block.find_all(["h1", "h2", "h3", "h4"]):
+        candidate = heading.find("a", href=True)
+        if candidate and clean_text(candidate.get_text(" ", strip=True)):
+            return candidate
+    return None
+
+
+def extract_listing_title(link: Any) -> str:
+    title_node = link.select_one(".card-title")
+    if title_node:
+        return clean_text(title_node.get_text(" ", strip=True))
+    return clean_text(link.get_text(" ", strip=True))
 
 
 def parse_listing_articles(
@@ -359,18 +406,11 @@ def parse_listing_articles(
     now = datetime.now(ATHENS_TZ)
 
     for block in article_candidate_blocks(soup):
-        link = None
-        for heading in block.find_all(["h1", "h2", "h3", "h4"]):
-            candidate = heading.find("a", href=True)
-            if candidate and clean_text(candidate.get_text(" ", strip=True)):
-                link = candidate
-                break
-        if link is None:
-            link = block.find("a", href=True)
+        link = extract_listing_link(block)
         if link is None:
             continue
 
-        title = clean_text(link.get_text(" ", strip=True))
+        title = extract_listing_title(link)
         url = urljoin(base_url, link.get("href"))
         if not title or not url.startswith("http") or url in seen_urls:
             continue
@@ -400,17 +440,9 @@ def parse_listing_articles(
 
 
 def find_next_listing_url(source: SourceConfig, soup: BeautifulSoup, current_url: str, page_index: int) -> str | None:
-    rel_next = soup.find("link", rel=lambda value: value and "next" in value)
-    if rel_next and rel_next.get("href"):
-        return urljoin(current_url, rel_next["href"])
-
-    for link in soup.find_all("a", href=True):
-        label = normalize_greek(link.get_text(" ", strip=True))
-        if any(token in label for token in ("ΕΠΟΜΕΝ", "ΠΕΡΙΣΣΟΤΕΡ")):
-            return urljoin(current_url, link["href"])
-
+    _ = soup, current_url
     if source.generated_page_url:
-        return source.generated_page_url.format(page=page_index + 1)
+        return source.generated_page_url.format(page=page_index + source.generated_page_offset)
     return None
 
 
@@ -419,43 +451,48 @@ def collect_new_listing_articles(
     state: dict[str, Any],
     *,
     max_pages: int,
-    limit: int | None,
-    debug: bool,
-) -> list[ListingArticle]:
+) -> ListingCollection:
     session = requests.Session()
     session.headers.update(HEADERS)
     boundary = state.get("sources", {}).get(source.key)
+    boundary_for_scan = scan_boundary(boundary)
     seen_urls = state_seen_urls(boundary)
     new_articles: list[ListingArticle] = []
+    state_articles: list[ListingArticle] = []
     url: str | None = source.first_url
     referer: str | None = None
 
     for page_index in range(max_pages):
         if not url:
             break
+        progress(
+            "fetch_listing "
+            f"source={source.key} page_index={page_index} url={url} referer={referer or origin_referer(url)}"
+        )
         html, final_url = fetch_html(session, url, referer=referer)
         soup = make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
-        log(debug, f"[news_fires] source={source.key} page={page_index} articles={len(page_articles)}")
+        progress(f"parsed_listing source={source.key} page_index={page_index} articles={len(page_articles)} final_url={final_url}")
+        if page_index == 0:
+            state_articles = page_articles
 
         found_boundary = False
         for article in page_articles:
-            if is_boundary(article, boundary):
+            if is_boundary(article, boundary_for_scan):
                 found_boundary = True
+                progress(f"boundary_reached source={source.key} title={short_text(article.title)}")
                 break
-            if article.url in seen_urls:
-                continue
-            new_articles.append(article)
-            if limit is not None and len(new_articles) >= limit:
-                found_boundary = True
-                break
+            if not append_unique_article(new_articles, seen_urls, article):
+                progress(f"duplicate_listing_skip source={source.key} url={article.url}")
 
         if found_boundary:
             break
         referer = origin_referer(source.first_url) if source.pagination_referer == "origin" else final_url
         url = find_next_listing_url(source, soup, final_url, page_index)
+        if url:
+            progress(f"next_listing source={source.key} next_url={url}")
 
-    return new_articles
+    return ListingCollection(articles=new_articles, state_articles=state_articles)
 
 
 def extract_json_ld_article_body(soup: BeautifulSoup) -> str:
@@ -527,6 +564,7 @@ def extract_fire_area(client: OpenAI, article: ListingArticle, body: str) -> str
             "area": {
                 "type": ["string", "null"],
                 "description": "One detailed Greek geographic area string for geocoding, or null if none exists.",
+                "maxLength": MAX_AREA_CHARS,
             }
         },
         "required": ["area"],
@@ -544,7 +582,9 @@ def extract_fire_area(client: OpenAI, article: ListingArticle, body: str) -> str
 4. Επέστρεψε null αν δεν υπάρχει σαφής γεωγραφική περιοχή.
 5. Αν υπάρχουν πολλές περιοχές που αφορούν την ίδια πυρκαγιά, ένωσέ τες σε μία εμπλουτισμένη περιοχή.
 6. Αν υπάρχουν πολλές περιοχές που αφορούν διαφορετικές πυρκαγιές, επέστρεψε την πρώτη περιοχή που εμφανίζεται στο άρθρο.
-7. Προτίμησε μορφή κατάλληλη για Google Geocoding, π.χ. "Ηλεία, Βάρδα".
+7. Επέστρεψε ΜΟΝΟ ένα σύντομο γεωγραφικό string κατάλληλο για Google Geocoding, π.χ. "Ηλεία, Βάρδα".
+8. Μην επιστρέφεις λίστα, παρενθέσεις, άνω τελεία, bullets ή επεξηγήσεις.
+9. Μέγιστο μήκος: {MAX_AREA_CHARS} χαρακτήρες.
 
 Τίτλος:
 {article.title}
@@ -565,7 +605,20 @@ def extract_fire_area(client: OpenAI, article: ListingArticle, body: str) -> str
         },
     )
     parsed = json.loads(response.output_text)
-    area = clean_text(parsed.get("area"))
+    return normalize_extracted_area(parsed.get("area"))
+
+
+def normalize_extracted_area(value: Any) -> str | None:
+    area = clean_text(value)
+    if not area:
+        return None
+    area = re.split(r"[;\n•]", area, maxsplit=1)[0].strip()
+    area = re.sub(r"\s*\([^)]*\)", "", area).strip()
+    area = clean_text(area)
+    if not area:
+        return None
+    if len(area) > MAX_AREA_CHARS:
+        area = area[:MAX_AREA_CHARS].rsplit(",", 1)[0].strip() or area[:MAX_AREA_CHARS].strip()
     return area or None
 
 
@@ -613,7 +666,9 @@ def build_news_fire_row(
     google_api_key: str,
     matcher: MunicipalityMatcher,
 ) -> NewsFireRow:
+    progress(f"llm_extract_start source={article.source_key} title={short_text(article.title)}")
     area = extract_fire_area(openai_client, article, content.body)
+    progress(f"llm_extract_done source={article.source_key} area={area or ''}")
     geocode_query = f"{area}, Ελλάδα" if area else None
     lat = None
     lon = None
@@ -621,12 +676,20 @@ def build_news_fire_row(
     municipality_name = None
 
     if geocode_query:
+        progress(f"geocode_start source={article.source_key} query={geocode_query}")
         lat, lon = geocode_area(google_api_key, geocode_query)
+        progress(f"geocode_done source={article.source_key} lat={lat} lon={lon}")
         if lat is not None and lon is not None:
+            progress(f"municipality_match_start source={article.source_key} lat={lat} lon={lon}")
             municipality = matcher.match(lat, lon)
             if municipality:
                 municipality_key, municipality_name = municipality
+                progress(
+                    "municipality_match_done "
+                    f"source={article.source_key} municipality_key={municipality_key} municipality_name={municipality_name}"
+                )
             else:
+                progress(f"municipality_match_miss source={article.source_key} lat={lat} lon={lon}")
                 lat = None
                 lon = None
 
@@ -649,6 +712,7 @@ def build_news_fire_row(
 def upsert_news_fires(db_url: str, rows: list[NewsFireRow]) -> int:
     if not rows:
         return 0
+    rows = dedupe_news_fire_rows(rows)
     values = [
         (
             row.article_title,
@@ -704,10 +768,31 @@ def upsert_news_fires(db_url: str, rows: list[NewsFireRow]) -> int:
     return len(rows)
 
 
-def update_source_boundary(state: dict[str, Any], source_key: str, articles: list[ListingArticle]) -> None:
+def dedupe_news_fire_rows(rows: list[NewsFireRow]) -> list[NewsFireRow]:
+    deduped: dict[str, NewsFireRow] = {}
+    for row in rows:
+        deduped[row.article_url] = row
+    duplicate_count = len(rows) - len(deduped)
+    if duplicate_count:
+        progress(f"dedupe_rows skipped_duplicates={duplicate_count} unique_rows={len(deduped)}")
+    return list(deduped.values())
+
+
+def update_source_boundary(
+    state: dict[str, Any],
+    source_key: str,
+    articles: list[ListingArticle],
+    *,
+    boundary_position: str,
+) -> None:
     if not articles:
         return
-    article = articles[-1]
+    if boundary_position == "first":
+        article = articles[0]
+    elif boundary_position == "last":
+        article = articles[-1]
+    else:
+        raise ValueError(f"Unsupported boundary_position: {boundary_position}")
     sources = state.setdefault("sources", {})
     sources[source_key] = {
         **article_identity(article),
@@ -716,49 +801,74 @@ def update_source_boundary(state: dict[str, Any], source_key: str, articles: lis
     }
 
 
-def run(args: argparse.Namespace) -> int:
-    state = load_state(args.state_file)
+def run() -> int:
+    state = load_state(DEFAULT_STATE_PATH)
     scraped_at = datetime.now(timezone.utc)
-    session = requests.Session()
-    session.headers.update(HEADERS)
-    db_url = None if args.dry_run else resolve_database_url(args.db_path)
-    openai_client = OpenAI(api_key=resolve_openai_api_key())
-    google_api_key = resolve_google_api_key()
-    matcher = MunicipalityMatcher(args.geojson)
-    completed_rows: list[NewsFireRow] = []
+    progress(f"start state_file={DEFAULT_STATE_PATH} max_pages={MAX_LISTING_PAGES}")
+    progress("resolve_database_url start")
+    db_url = resolve_database_url(None)
+    progress("resolve_database_url done")
+    openai_client: OpenAI | None = None
+    google_api_key: str | None = None
+    matcher: MunicipalityMatcher | None = None
     completed_articles_by_source: dict[str, list[ListingArticle]] = {}
     successful_articles_by_source: dict[str, list[ListingArticle]] = {}
     source_errors: list[dict[str, str]] = []
+    inserted = 0
 
     try:
         for source in SOURCES:
+            progress(f"source_start source={source.key} first_url={source.first_url}")
             try:
-                new_articles = collect_new_listing_articles(
+                listing = collect_new_listing_articles(
                     source,
                     state,
-                    max_pages=args.max_pages,
-                    limit=args.limit,
-                    debug=args.debug,
+                    max_pages=MAX_LISTING_PAGES,
                 )
             except requests.RequestException as exc:
                 source_errors.append({"source": source.key, "error": str(exc)})
-                log(args.debug, f"[news_fires] source_listing_error source={source.key} error={exc}")
+                progress(f"source_listing_error source={source.key} error={exc}")
                 continue
-            log(args.debug, f"[news_fires] source={source.key} new_listing_articles={len(new_articles)}")
-            if new_articles:
-                successful_articles_by_source[source.key] = new_articles
+            new_articles = listing.articles
+            progress(f"source_listing_done source={source.key} new_listing_articles={len(new_articles)}")
+            if listing.state_articles:
+                successful_articles_by_source[source.key] = listing.state_articles
 
             possible_articles = [article for article in new_articles if contains_primary_title_term(article.title)]
-            log(args.debug, f"[news_fires] source={source.key} possible_articles={len(possible_articles)}")
+            article_session = requests.Session()
+            article_session.headers.update(HEADERS)
+            progress(
+                "title_filter_done "
+                f"source={source.key} checked={len(new_articles)} possible_articles={len(possible_articles)}"
+            )
 
-            for article in possible_articles:
+            for index, article in enumerate(possible_articles, start=1):
+                progress(
+                    "fetch_article_start "
+                    f"source={source.key} index={index}/{len(possible_articles)} title={short_text(article.title)} url={article.url}"
+                )
                 try:
-                    content = scrape_article_content(session, article)
+                    content = scrape_article_content(article_session, article)
                 except requests.RequestException as exc:
-                    log(args.debug, f"[news_fires] article_fetch_error url={article.url} error={exc}")
+                    progress(f"article_fetch_error source={source.key} url={article.url} error={exc}")
                     continue
+                progress(f"fetch_article_done source={source.key} body_chars={len(content.body)}")
                 if not contains_secondary_body_term(content.body):
+                    progress(f"body_filter_skip source={source.key} title={short_text(article.title)}")
                     continue
+                progress(f"body_filter_keep source={source.key} title={short_text(article.title)}")
+                if openai_client is None:
+                    progress("init_openai_client start")
+                    openai_client = OpenAI(api_key=resolve_openai_api_key())
+                    progress("init_openai_client done")
+                if google_api_key is None:
+                    progress("resolve_google_api_key start")
+                    google_api_key = resolve_google_api_key()
+                    progress("resolve_google_api_key done")
+                if matcher is None:
+                    progress(f"load_municipality_polygons start geojson={DEFAULT_GEOJSON}")
+                    matcher = MunicipalityMatcher(DEFAULT_GEOJSON)
+                    progress("load_municipality_polygons done")
                 row = build_news_fire_row(
                     article,
                     content,
@@ -767,24 +877,23 @@ def run(args: argparse.Namespace) -> int:
                     google_api_key=google_api_key,
                     matcher=matcher,
                 )
-                completed_rows.append(row)
+                progress(f"db_upsert_article_start source={source.key} url={article.url}")
+                inserted += upsert_news_fires(db_url, [row])
+                progress(f"db_upsert_article_done source={source.key} total_rows={inserted}")
                 completed_articles_by_source.setdefault(source.key, []).append(article)
 
-        if not args.dry_run and db_url:
-            inserted = upsert_news_fires(db_url, completed_rows)
-            for source_key, articles in successful_articles_by_source.items():
-                update_source_boundary(state, source_key, articles)
-            save_state(args.state_file, state)
-        else:
-            inserted = len(completed_rows)
+        for source_key, articles in successful_articles_by_source.items():
+            update_source_boundary(state, source_key, articles, boundary_position="first")
+        progress(f"state_save_start path={DEFAULT_STATE_PATH}")
+        save_state(DEFAULT_STATE_PATH, state)
+        progress("state_save_done")
 
         print(
             json.dumps(
                 {
                     "status": "partial_success" if source_errors else "success",
                     "rows": inserted,
-                    "state_file": str(args.state_file),
-                    "dry_run": args.dry_run,
+                    "state_file": str(DEFAULT_STATE_PATH),
                     "source_errors": source_errors,
                 },
                 ensure_ascii=False,
@@ -792,29 +901,35 @@ def run(args: argparse.Namespace) -> int:
             flush=True,
         )
         return 0
-    except Exception:
-        if not args.dry_run and db_url:
-            inserted = upsert_news_fires(db_url, completed_rows)
+    except KeyboardInterrupt:
+        progress("interrupted no_db_write no_state_update")
+        return 130
+    except Exception as exc:
+        progress(f"partial_error error={exc}")
+        if completed_articles_by_source:
             for source_key, articles in completed_articles_by_source.items():
-                update_source_boundary(state, source_key, articles)
-            save_state(args.state_file, state)
+                update_source_boundary(state, source_key, articles, boundary_position="last")
+            progress(f"partial_state_save_start path={DEFAULT_STATE_PATH}")
+            save_state(DEFAULT_STATE_PATH, state)
+            progress("partial_state_save_done")
             print(
                 json.dumps(
                     {
                         "status": "partial_error",
                         "rows": inserted,
-                        "state_file": str(args.state_file),
+                        "state_file": str(DEFAULT_STATE_PATH),
+                        "error": str(exc),
                     },
                     ensure_ascii=False,
                 ),
                 flush=True,
             )
+            return 1
         raise
 
 
 def main() -> None:
-    args = parse_args()
-    raise SystemExit(run(args))
+    raise SystemExit(run())
 
 
 if __name__ == "__main__":
