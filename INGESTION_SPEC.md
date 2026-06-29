@@ -111,20 +111,20 @@ Status:
 Source:
 - `data/2026_diavgeia.csv`
 - Mapping assist: `data/mappings/org_to_municipality.csv`
+- Municipality aliases: `data/mappings/final_entity_mapping_expanded.csv`
 - Organization dictionary: `data/mappings/final_entity_mapping_expanded.csv`
 
-Ingestion behavior (organization key):
-1. Loader tries organization candidates in order:
-   - `org_name_clean`
-   - `organization`
-   - `org`
-2. First candidate found in the organization lookup is used.
-3. Resolved `organization_key` is stored in `diavgeia.organization_key`.
-4. Incremental behavior:
+Ingestion behavior:
+1. Loader resolves `region_key`, `organization_key`, and `municipality_key` with `resolve_diavgeia_context()`.
+2. Exact organization mapping from `org_to_municipality.csv` has priority.
+3. For direct municipality authorities (`org_type = 'ΔΗΜΟΣ'`), unresolved names fall back to the canonical municipality lookup built from `final_entity_mapping_expanded.csv`.
+4. Resolved `organization_key` is stored in `diavgeia.organization_key`.
+5. Incremental behavior:
    - rows with non-null `ada`: upsert on `ada`
    - rows with null `ada`: insert with `NOT EXISTS` guard to avoid rerun duplicates.
 
 Responsible functions:
+- `resolve_diavgeia_context()`
 - `diav_rows()`
 - `main()` (`INSERT ... ON CONFLICT (ada) DO UPDATE`)
 
@@ -280,7 +280,8 @@ Tables:
   - `region_lookup`: value/normalized/key -> `region_key`
   - `municipality_lookup`: value/normalized/key -> `municipality_key`
 - Then:
-  - `procurement_rows()` and `diav_rows()` first get mapped ids from `org_to_municipality`
+  - `procurement_rows()` first gets mapped ids from `org_to_municipality`
+  - `diav_rows()` first gets mapped ids from `org_to_municipality`; for `org_type = 'ΔΗΜΟΣ'`, it then falls back to direct municipality-name lookup
   - those raw ids are resolved through lookups
   - stored keys are stable (`region_key`, `municipality_key`)
 

@@ -1054,6 +1054,71 @@ def resolve_procurement_context(
     return region_key, org_key_resolved, municipality_key, canonical_owner_scope
 
 
+def resolve_diavgeia_context(
+    org_type: str,
+    org_name: str,
+    org_map: dict[tuple[str, str], tuple[str | None, str | None]],
+    organization_lookup: dict[str, str],
+    region_lookup: dict[str, str],
+    municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
+) -> tuple[str | None, str | None, str | None]:
+    org_candidates = organization_lookup_candidates(org_name)
+    region_candidates = region_lookup_candidates(org_name)
+    primary_org_name = org_candidates[0] if org_candidates else org_name
+
+    municipality_key_raw, region_key_raw = org_map.get((org_type, primary_org_name), (None, None))
+    if municipality_key_raw is None and region_key_raw is None and primary_org_name:
+        municipality_key_raw, region_key_raw = org_map.get(("", primary_org_name), (None, None))
+    if municipality_key_raw is None and region_key_raw is None and primary_org_name:
+        municipality_key_raw, region_key_raw = org_map.get(
+            (norm_key(org_type) or "", norm_key(primary_org_name) or ""),
+            (None, None),
+        )
+    if municipality_key_raw is None and region_key_raw is None and primary_org_name:
+        municipality_key_raw, region_key_raw = org_map.get(("", norm_key(primary_org_name) or ""), (None, None))
+    if municipality_key_raw is None and region_key_raw is None:
+        for candidate in org_candidates[1:]:
+            municipality_key_raw, region_key_raw = org_map.get((org_type, candidate), (None, None))
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(("", candidate), (None, None))
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(
+                    (norm_key(org_type) or "", norm_key(candidate) or ""),
+                    (None, None),
+                )
+            if municipality_key_raw is None and region_key_raw is None:
+                municipality_key_raw, region_key_raw = org_map.get(("", norm_key(candidate) or ""), (None, None))
+            if municipality_key_raw is not None or region_key_raw is not None:
+                break
+
+    municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
+    region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
+
+    if municipality_key is None and org_type == "ΔΗΜΟΣ":
+        for candidate in org_candidates:
+            municipality_key = municipality_lookup.get(candidate)
+            if municipality_key is not None:
+                break
+
+    if region_key is None:
+        if municipality_key is not None:
+            region_key = municipality_region_lookup.get(municipality_key)
+        if region_key is None:
+            for candidate in region_candidates:
+                region_key = region_lookup.get(candidate)
+                if region_key is not None:
+                    break
+
+    org_key_resolved = None
+    for candidate in org_candidates:
+        org_key_resolved = organization_lookup.get(candidate)
+        if org_key_resolved is not None:
+            break
+
+    return region_key, org_key_resolved, municipality_key
+
+
 def clean_digits(value: str | None, expected_length: int | None = None) -> str | None:
     raw = t(value)
     if raw is None:
@@ -1392,21 +1457,21 @@ def diav_rows(
     organization_lookup: dict[str, str],
     region_lookup: dict[str, str],
     municipality_lookup: dict[str, str],
+    municipality_region_lookup: dict[str, str],
 ) -> list[tuple]:
     out = []
     for _, r in diav.iterrows():
         org_type = t_up(r.get("org_type")) or ""
         org_name = t_up(r.get("org_name_clean")) or ""
-        municipality_key_raw, region_key_raw = org_map.get((org_type, org_name), (None, None))
-        municipality_key = municipality_lookup.get(t_up(municipality_key_raw) or "", municipality_key_raw)
-        region_key = region_lookup.get(t_up(region_key_raw) or "", region_key_raw)
-        org_candidates = [t(r.get("org_name_clean")), t(r.get("organization")), t(r.get("org"))]
-        org_key_resolved = None
-        for c in org_candidates:
-            cu = t_up(c)
-            if cu and cu in organization_lookup:
-                org_key_resolved = organization_lookup[cu]
-                break
+        region_key, org_key_resolved, municipality_key = resolve_diavgeia_context(
+            org_type=org_type,
+            org_name=org_name,
+            org_map=org_map,
+            organization_lookup=organization_lookup,
+            region_lookup=region_lookup,
+            municipality_lookup=municipality_lookup,
+            municipality_region_lookup=municipality_region_lookup,
+        )
         out.append((
             region_key,
             org_key_resolved,
@@ -1835,7 +1900,14 @@ def main() -> None:
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         organization_afm_lookup=organization_afm_lookup,
     )
-    diav = diav_rows(bundle.diav, org_map, organization_lookup, region_lookup, municipality_lookup)
+    diav = diav_rows(
+        bundle.diav,
+        org_map,
+        organization_lookup,
+        region_lookup,
+        municipality_lookup,
+        municipality_region_lookup,
+    )
     fires = forest_fire_rows(bundle.fire)
     funds = fund_rows(bundle.fund)
 
