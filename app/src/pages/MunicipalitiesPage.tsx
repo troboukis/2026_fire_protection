@@ -3744,23 +3744,17 @@ export default function MunicipalitiesPage() {
                                 }}
                               />
                               <circle
-                                className="municipality-profile-hero__current-fire-halo"
+                                className="fire-current__point-pulse"
                                 cx={fire.x}
                                 cy={fire.y}
-                                r="8"
-                                pointerEvents="none"
-                              />
-                              <path
-                                className="municipality-profile-hero__current-fire-pin"
-                                d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z"
-                                transform={`translate(${fire.x - 9.6} ${fire.y - 16.8}) scale(0.8)`}
+                                r="4.2"
                                 pointerEvents="none"
                               />
                               <circle
-                                className="municipality-profile-hero__current-fire-core"
+                                className="fire-current__point-marker"
                                 cx={fire.x}
-                                cy={fire.y - 8.8}
-                                r="1.6"
+                                cy={fire.y}
+                                r="4.2"
                                 pointerEvents="none"
                               />
                             </g>
@@ -3888,10 +3882,7 @@ export default function MunicipalitiesPage() {
                           {municipalityMapLegendItems.map((item) => (
                             <div key={item.key} className="municipality-profile-hero__map-legend-item">
                               {item.tone === 'current-fire' ? (
-                                <svg className="municipality-profile-hero__map-legend-current-fire" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" />
-                                  <circle cx="12" cy="10" r="2" />
-                                </svg>
+                                <span className="fire-current__legend-icon" aria-hidden="true" />
                               ) : (
                                 <span
                                   className={`municipality-profile-hero__map-legend-swatch municipality-profile-hero__map-legend-swatch--${item.tone}`}
