@@ -1130,29 +1130,18 @@ export default function SituationMap() {
 
       activeFireGroups
         .append('circle')
-        .attr('class', 'fire-current__point-halo')
+        .attr('class', 'fire-current__point-pulse')
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
-        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 8 : 5.5)
-        .attr('pointer-events', 'none')
-
-      activeFireGroups
-        .append('path')
-        .attr('class', 'fire-current__point-marker')
-        .attr('d', 'M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z')
-        .attr('transform', (fire) => (
-          fire.id === highlightedActiveFireId
-            ? `translate(${fire.x - 9.6} ${fire.y - 16.8}) scale(0.8)`
-            : `translate(${fire.x - 6} ${fire.y - 10.5}) scale(0.5)`
-        ))
+        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
         .attr('pointer-events', 'none')
 
       activeFireGroups
         .append('circle')
-        .attr('class', 'fire-current__point-core')
+        .attr('class', 'fire-current__point-marker')
         .attr('cx', (fire) => fire.x)
-        .attr('cy', (fire) => fire.id === highlightedActiveFireId ? fire.y - 8.8 : fire.y - 5.5)
-        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 1.6 : 1)
+        .attr('cy', (fire) => fire.y)
+        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
         .attr('pointer-events', 'none')
 
       activeFireGroups
@@ -1411,7 +1400,7 @@ export default function SituationMap() {
           <div className="eyebrow">Situation Map</div>
           <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
           <p>
-            Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg>, δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
+            Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <span className="fire-current__legend-icon" aria-hidden="true" />, δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
           </p>
         </div>
         <DataLoadingCard
@@ -1436,7 +1425,7 @@ export default function SituationMap() {
           Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}
         </div>
         <p>
-          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg>, δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
+          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <span className="fire-current__legend-icon" aria-hidden="true" />, δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
         </p>
         <div className="fire-firms__satellites" aria-label="Τελευταίες διελεύσεις δορυφόρων NASA FIRMS">
           {satellites.length > 0 ? satellites.map(({ detection, count }) => (
@@ -1667,10 +1656,7 @@ export default function SituationMap() {
               <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
             </span>
             <span className="fire-copernicus__legend-row">
-              <svg className="fire-current__legend-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 21s6-5.32 6-11a6 6 0 1 0-12 0c0 5.68 6 11 6 11Z" />
-                <circle cx="12" cy="10" r="2" />
-              </svg>
+              <span className="fire-current__legend-icon" aria-hidden="true" />
               <span>Ενεργή πυρκαγιά (θέση κατά προσέγγιση)</span>
             </span>
           </div>
