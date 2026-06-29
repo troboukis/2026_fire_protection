@@ -68,7 +68,7 @@ jobs:
       - name: Refresh news fires
         run: |
           mkdir -p logs
-          python src/fetch_news_fires.py --state-file logs/news_fires_state.json
+          python src/fetch_news_fires.py
 
       - name: Save news_fires state
         if: always() && hashFiles('logs/news_fires_state.json') != ''
