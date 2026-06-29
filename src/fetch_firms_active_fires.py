@@ -471,12 +471,19 @@ def update_latest_pass_flags(cur, source_products: list[str]) -> None:
         )
 
 
+def sync_current_fire_coordinates_from_firms(cur) -> int:
+    cur.execute("SELECT public.sync_current_fire_coordinates_from_firms()")
+    result = cur.fetchone()
+    return int(result[0] or 0) if result else 0
+
+
 def upsert_firms_detections(rows: list[dict[str, Any]], source_products: list[str], db_path: str | None) -> int:
     if not rows:
         db_url = resolve_database_url(db_path)
         conn = psycopg2.connect(db_url)
         cur = conn.cursor()
         update_latest_pass_flags(cur, source_products)
+        sync_current_fire_coordinates_from_firms(cur)
         conn.commit()
         cur.close()
         conn.close()
@@ -578,9 +585,11 @@ def upsert_firms_detections(rows: list[dict[str, Any]], source_products: list[st
         upserted += 1
 
     update_latest_pass_flags(cur, source_products)
+    synced_current_fires = sync_current_fire_coordinates_from_firms(cur)
     conn.commit()
     cur.close()
     conn.close()
+    print(f"[FIRMS] synced_current_fire_coordinates rows={synced_current_fires}")
     return upserted
 
 

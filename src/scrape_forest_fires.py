@@ -1146,6 +1146,15 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
     cur.close()
 
 
+def sync_current_fire_coordinates_from_firms(conn) -> int:
+    cur = conn.cursor()
+    cur.execute("SELECT public.sync_current_fire_coordinates_from_firms()")
+    result = cur.fetchone()
+    conn.commit()
+    cur.close()
+    return int(result[0] or 0) if result else 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Scrape active forest fires from fireservice.gr")
     p.add_argument("--all", action="store_true", help="Keep every category, not only forest fires")
@@ -1183,11 +1192,13 @@ def main(argv: list[str] | None = None) -> int:
         )
         events = merge_with_existing(current_events, existing_rows, scraped_at)
         upsert_current_fires(conn, events)
+        synced_current_fire_coordinates = sync_current_fire_coordinates_from_firms(conn)
     finally:
         conn.close()
 
     print(f"Fetched {len(all_events)} total event(s); kept {len(current_events)} after filtering.")
     print(f"Stored {len(events)} cumulative incident(s).")
+    print(f"Synced {synced_current_fire_coordinates} current fire coordinate row(s) from NASA FIRMS.")
     print(f"Upserted into: {CURRENT_FIRES_TABLE}")
 
     if not all_events:
