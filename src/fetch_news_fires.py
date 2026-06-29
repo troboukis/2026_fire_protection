@@ -51,9 +51,24 @@ REQUEST_TIMEOUT = 30
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
     ),
-    "Accept-Language": "el-GR,el;q=0.9,en;q=0.7",
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+        "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    ),
+    "Accept-Language": "en-US,en;q=0.9,el;q=0.8",
+    "Cache-Control": "max-age=0",
+    "Connection": "keep-alive",
+    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": '"macOS"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "Priority": "u=0, i",
 }
 
 
@@ -63,6 +78,7 @@ class SourceConfig:
     display_name: str
     first_url: str
     generated_page_url: str | None = None
+    pagination_referer: str = "previous"
 
 
 @dataclass
@@ -109,6 +125,7 @@ SOURCES = (
         key="news247",
         display_name="News247",
         first_url="https://www.news247.gr/roi-eidiseon/",
+        pagination_referer="origin",
     ),
 )
 
@@ -224,8 +241,19 @@ def state_seen_urls(boundary: dict[str, Any] | None) -> set[str]:
     return {clean_text(url) for url in raw_urls if clean_text(url)}
 
 
-def fetch_html(session: requests.Session, url: str) -> tuple[str, str]:
-    response = session.get(url, timeout=REQUEST_TIMEOUT)
+def origin_referer(url: str) -> str:
+    parsed = urlparse(url)
+    if not parsed.scheme or not parsed.netloc:
+        return ""
+    return f"{parsed.scheme}://{parsed.netloc}/"
+
+
+def fetch_html(session: requests.Session, url: str, referer: str | None = None) -> tuple[str, str]:
+    headers = {}
+    effective_referer = referer or origin_referer(url)
+    if effective_referer:
+        headers["Referer"] = effective_referer
+    response = session.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
     response.encoding = response.encoding or response.apparent_encoding or "utf-8"
     return response.text, response.url
@@ -400,11 +428,12 @@ def collect_new_listing_articles(
     seen_urls = state_seen_urls(boundary)
     new_articles: list[ListingArticle] = []
     url: str | None = source.first_url
+    referer: str | None = None
 
     for page_index in range(max_pages):
         if not url:
             break
-        html, final_url = fetch_html(session, url)
+        html, final_url = fetch_html(session, url, referer=referer)
         soup = make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
         log(debug, f"[news_fires] source={source.key} page={page_index} articles={len(page_articles)}")
@@ -423,6 +452,7 @@ def collect_new_listing_articles(
 
         if found_boundary:
             break
+        referer = origin_referer(source.first_url) if source.pagination_referer == "origin" else final_url
         url = find_next_listing_url(source, soup, final_url, page_index)
 
     return new_articles
@@ -452,7 +482,7 @@ def extract_json_ld_article_body(soup: BeautifulSoup) -> str:
 
 
 def scrape_article_content(session: requests.Session, article: ListingArticle) -> ArticleContent:
-    html, final_url = fetch_html(session, article.url)
+    html, final_url = fetch_html(session, article.url, referer=origin_referer(article.url))
     soup = make_soup(html)
 
     for tag in soup.find_all(["script", "style", "noscript", "nav", "footer", "header", "aside"]):
