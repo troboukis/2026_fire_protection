@@ -36,6 +36,7 @@ app/.env.production.local
 fire-protection.vpp*
 data/raw_items_backup.json
 backupDB/
+logs/news_fires_state.json
 
 # Mapping review artifacts (local/manual workflow)
 AGENTS.md
