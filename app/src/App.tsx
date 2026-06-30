@@ -638,7 +638,7 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as LatestContractRpcRow[]
             }),
-            { useStaleOnError: false, dedupeInFlight: false },
+            { useStaleOnError: true, dedupeInFlight: false },
           ),
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_diavgeia_page', {
@@ -661,7 +661,7 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as DiavgeiaPageRpcRow[]
             }),
-            { useStaleOnError: false, dedupeInFlight: false },
+            { useStaleOnError: true, dedupeInFlight: false },
           ),
         ])
         if (cancelled) return
@@ -1612,11 +1612,21 @@ export default function App() {
 
     const loadFeaturedPanels = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_featured_beneficiaries', {
-          p_year_main: currentYear,
-          p_limit: 12,
-        }).abortSignal(controller.signal)
-        if (error) throw error
+        const data = await loadCachedHomepageRpc(
+          createHomepageRpcCacheKey('get_featured_beneficiaries', {
+            p_year_main: currentYear,
+            p_limit: 12,
+          }),
+          () => retryHomepageRpc(async () => {
+            const { data, error } = await supabase.rpc('get_featured_beneficiaries', {
+              p_year_main: currentYear,
+              p_limit: 12,
+            }).abortSignal(controller.signal)
+            if (error) throw error
+            return data ?? []
+          }),
+          { useStaleOnError: true, dedupeInFlight: false },
+        )
 
         const rows = ((data ?? []) as FeaturedRecordsRpcRow[]).map<BeneficiaryInsightRow>((row) => {
           const beneficiaryVat = cleanText(row.beneficiary_vat_number)
@@ -1736,7 +1746,7 @@ export default function App() {
             if (!data) throw new Error('Hero section RPC returned no data')
             return data as HeroSectionRpcResponse
           }),
-          { useStaleOnError: false, dedupeInFlight: false },
+          { useStaleOnError: true, dedupeInFlight: false },
         )
         if (cancelled) return
 

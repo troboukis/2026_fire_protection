@@ -360,6 +360,17 @@ function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
     .filter((row): row is ActiveFirePoint => row !== null)
 }
 
+function currentFiresQuery() {
+  return supabase
+    .from('current_fires')
+    .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status')
+    .eq('is_current', true)
+    .not('lat', 'is', null)
+    .not('lon', 'is', null)
+    .or('status.is.null,status.neq.ΛΗΞΗ')
+    .order('status_updated_at', { ascending: false, nullsFirst: false })
+}
+
 function buildFirmsFootprint(
   projection: d3.GeoProjection,
   detection: FirmsDetection,
@@ -599,15 +610,7 @@ export default function SituationMap() {
             .order('acquired_at', { ascending: false })
             .limit(600)
             .abortSignal(controller.signal),
-          supabase
-            .from('current_fires')
-            .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status')
-            .eq('is_current', true)
-            .not('lat', 'is', null)
-            .not('lon', 'is', null)
-            .or('status.is.null,status.neq.ΛΗΞΗ')
-            .order('status_updated_at', { ascending: false, nullsFirst: false })
-            .abortSignal(controller.signal),
+          currentFiresQuery().abortSignal(controller.signal),
         ])
 
         if (geoFetchResult.status === 'rejected') throw geoFetchResult.reason
@@ -672,6 +675,51 @@ export default function SituationMap() {
       controller.abort()
     }
   }, [defaultStart, today])
+
+  useEffect(() => {
+    let cancelled = false
+    let refreshTimer: number | null = null
+
+    const refreshCurrentFires = async () => {
+      const { data, error } = await currentFiresQuery()
+      if (cancelled) return
+      if (error) {
+        console.error('Failed to refresh current fires for situation map', error)
+        return
+      }
+      const nextActiveFires = mapCurrentFireRows((data ?? []) as CurrentFireRow[])
+      setActiveFires(nextActiveFires)
+      setHoveredActiveFire((current) => {
+        if (!current) return current
+        return nextActiveFires.some((fire) => fire.id === current.item.id) ? current : null
+      })
+      setHighlightedActiveFireId((current) => {
+        if (!current) return current
+        return nextActiveFires.some((fire) => fire.id === current) ? current : null
+      })
+    }
+
+    const scheduleRefresh = () => {
+      if (cancelled || refreshTimer != null) return
+      refreshTimer = window.setTimeout(() => {
+        refreshTimer = null
+        void refreshCurrentFires()
+      }, 1000)
+    }
+
+    const channel = supabase
+      .channel('situation_map_current_fires')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
+        scheduleRefresh()
+      })
+      .subscribe()
+
+    return () => {
+      cancelled = true
+      if (refreshTimer != null) window.clearTimeout(refreshTimer)
+      supabase.removeChannel(channel)
+    }
+  }, [])
 
   useEffect(() => {
     if (hasLoadedHistoricalFires || rangeStartDay >= initialFetchStartDay) return
