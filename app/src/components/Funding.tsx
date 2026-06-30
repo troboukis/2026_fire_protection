@@ -145,7 +145,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
               if (!data) throw new Error('Homepage funding RPC returned no data')
               return data as FundingRpcPayload
             }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: false, dedupeInFlight: false },
+            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
           ),
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_latest_funding_year_municipality_spend'),
@@ -157,7 +157,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
               if (!data) throw new Error('Latest funding-year spend RPC returned no data')
               return data as FundingSpendRpcPayload
             }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: false, dedupeInFlight: false },
+            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
           ),
         ])
 

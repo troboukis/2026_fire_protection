@@ -638,7 +638,7 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as LatestContractRpcRow[]
             }),
-            { useStaleOnError: true, dedupeInFlight: false },
+            { useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
           ),
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_diavgeia_page', {
@@ -661,7 +661,7 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as DiavgeiaPageRpcRow[]
             }),
-            { useStaleOnError: true, dedupeInFlight: false },
+            { useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
           ),
         ])
         if (cancelled) return
@@ -1625,7 +1625,7 @@ export default function App() {
             if (error) throw error
             return data ?? []
           }),
-          { useStaleOnError: true, dedupeInFlight: false },
+          { useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
         )
 
         const rows = ((data ?? []) as FeaturedRecordsRpcRow[]).map<BeneficiaryInsightRow>((row) => {
@@ -1746,7 +1746,7 @@ export default function App() {
             if (!data) throw new Error('Hero section RPC returned no data')
             return data as HeroSectionRpcResponse
           }),
-          { useStaleOnError: true, dedupeInFlight: false },
+          { useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: false },
         )
         if (cancelled) return
 
