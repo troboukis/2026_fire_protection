@@ -6260,7 +6260,7 @@ main {
 
 .municipality-profile-hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border: 0.5px solid rgba(17, 17, 17, 0.14);
   background:
     radial-gradient(circle at 100% 0%, rgba(211, 72, 45, 0.08), transparent 18rem),
@@ -6659,7 +6659,7 @@ main {
   background: linear-gradient(180deg, rgba(250, 248, 243, 0.96), rgba(243, 239, 231, 0.9));
   box-shadow: var(--shadow-paper);
   justify-self: stretch;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .municipality-profile-hero__map-controls {

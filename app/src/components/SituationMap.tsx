@@ -1185,23 +1185,28 @@ export default function SituationMap() {
         .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
         .attr('pointer-events', 'none')
 
-      activeFireGroups
+      const activeFireMarkers = activeFireGroups
         .append('circle')
         .attr('class', 'fire-current__point-marker')
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
         .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
-        .attr('pointer-events', 'none')
+        .attr('pointer-events', isTouchInput ? 'none' : 'all')
+        .style('cursor', isTouchInput ? 'default' : 'pointer')
 
-      activeFireGroups
-        .append('circle')
-        .attr('class', 'fire-current__point-hit-area')
-        .attr('cx', (fire) => fire.x)
-        .attr('cy', (fire) => fire.y)
-        .attr('r', 17)
-        .attr('fill', 'rgba(0, 0, 0, 0.001)')
-        .attr('pointer-events', 'all')
-        .style('cursor', 'pointer')
+      const activeFireInteractionTargets = isTouchInput
+        ? activeFireGroups
+            .append('circle')
+            .attr('class', 'fire-current__point-hit-area')
+            .attr('cx', (fire) => fire.x)
+            .attr('cy', (fire) => fire.y)
+            .attr('r', 17)
+            .attr('fill', 'rgba(0, 0, 0, 0.001)')
+            .attr('pointer-events', 'all')
+            .style('cursor', 'pointer')
+        : activeFireMarkers
+
+      activeFireInteractionTargets
         .on('mouseover', (event: MouseEvent, fire) => {
           if (isTouchInput) return
           updateActiveFireTooltip(event, fire)
@@ -1299,7 +1304,10 @@ export default function SituationMap() {
           const target = event.target instanceof Element ? event.target : null
           const isOverCopernicusPoint = target?.classList.contains('fire-copernicus__point-hit-area') ?? false
           const isOverFirmsFootprint = target?.classList.contains('fire-firms__footprint') ?? false
-          const isOverCurrentFirePoint = target?.classList.contains('fire-current__point-hit-area') ?? false
+          const isOverCurrentFirePoint = (
+            target?.classList.contains('fire-current__point-hit-area')
+            || target?.classList.contains('fire-current__point-marker')
+          ) ?? false
 
           if (!isOverCopernicusPoint && !isOverFirmsFootprint && !isOverCurrentFirePoint) {
             clearPointTooltip()
