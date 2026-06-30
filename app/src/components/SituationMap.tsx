@@ -606,6 +606,7 @@ export default function SituationMap() {
             .from('firms_active_fire_detections')
             .select('id, acquired_at, acquired_at_el, latitude, longitude, scan, track, satellite, instrument, confidence, frp, municipality_key, municipality_normalized_value')
             .gte('acquired_at', firmsSince)
+            .gt('frp', 2)
             .eq('is_in_greece', true)
             .order('acquired_at', { ascending: false })
             .limit(600)
