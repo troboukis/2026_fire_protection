@@ -477,17 +477,65 @@ def geolocate_point(query: str, api_key: str, timeout: int = 30) -> dict[str, ob
     }
 
 
-def geolocate_events(events: Iterable[dict], api_key: str, scraped_at: datetime) -> list[dict]:
+def existing_geocoding_for_event(event: dict, existing_rows: list[dict] | None) -> dict[str, str] | None:
+    if not existing_rows:
+        return None
+
+    normalized_existing_rows = [normalize_existing_incident_row(row) for row in existing_rows]
+    existing_by_key = {
+        row["incident_key"]: dict(row)
+        for row in normalized_existing_rows
+        if clean(row.get("incident_key"))
+    }
+    existing_by_base: dict[str, list[dict[str, str]]] = {}
+    for row in normalized_existing_rows:
+        existing_by_base.setdefault(build_incident_base(row), []).append(row)
+
+    base = build_incident_base(event)
+    start = clean(event.get("start"))
+    incident_key = (
+        build_incident_key(base, start)
+        if start
+        else choose_existing_incident_key(base, existing_by_base.get(base, []))
+    )
+    existing = existing_by_key.get(incident_key)
+    if not existing or not clean(existing.get("lat")) or not clean(existing.get("lon")):
+        return None
+
+    return {
+        "lat": existing["lat"],
+        "lon": existing["lon"],
+        "formatted_address": clean(existing.get("formatted_address")),
+        "place_id": clean(existing.get("place_id")),
+        "geocode_query": clean(existing.get("geocode_query")),
+        "geocoded_at": clean(existing.get("geocoded_at")),
+    }
+
+
+def geolocate_events(
+    events: Iterable[dict],
+    api_key: str | None,
+    scraped_at: datetime,
+    existing_rows: list[dict] | None = None,
+) -> list[dict]:
     geocode_cache: dict[str, dict[str, object] | None] = {}
     enriched: list[dict] = []
+    resolved_api_key: str | None = None
 
     for event in events:
         row = dict(event)
         query = build_geocode_query(row)
         row["geocode_query"] = query
         is_active = normalize_identity_value(row.get("status")) != "ΛΗΞΗ"
+        existing_geocoding = existing_geocoding_for_event(row, existing_rows) if is_active else None
+        if existing_geocoding:
+            row.update(existing_geocoding)
+            enriched.append(row)
+            continue
         if is_active and query and query not in geocode_cache:
-            geocode_cache[query] = geolocate_point(query, api_key)
+            if resolved_api_key is None:
+                resolved_api_key = resolve_google_geocoding_api_key(api_key)
+            geocode_cache[query] = geolocate_point(query, resolved_api_key)
         geo = geocode_cache.get(query) if is_active else None
         if geo:
             row["lat"] = geo["lat"]
@@ -1183,13 +1231,12 @@ def main(argv: list[str] | None = None) -> int:
         normalized_name_lookup = load_db_municipality_normalized_lookup(conn)
         all_events = enrich_events_with_municipalities(parse_events(html), normalized_name_lookup)
         current_events = all_events if args.all else filter_forest(all_events)
-        if not args.skip_geocoding:
-            geocoding_api_key = resolve_google_geocoding_api_key(args.google_geocoding_api_key)
-            current_events = geolocate_events(current_events, geocoding_api_key, scraped_at)
         existing_rows = refresh_existing_municipality_fields(
             load_existing_incidents_db(conn),
             normalized_name_lookup,
         )
+        if not args.skip_geocoding:
+            current_events = geolocate_events(current_events, args.google_geocoding_api_key, scraped_at, existing_rows)
         events = merge_with_existing(current_events, existing_rows, scraped_at)
         upsert_current_fires(conn, events)
         synced_current_fire_coordinates = sync_current_fire_coordinates_from_firms(conn)
