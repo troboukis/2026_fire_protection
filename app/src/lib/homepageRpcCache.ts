@@ -9,6 +9,7 @@ type CacheOptions = {
   staleTtlMs?: number
   useStaleOnError?: boolean
   dedupeInFlight?: boolean
+  useStaleWhileRevalidating?: boolean
 }
 
 type RetryOptions = {
@@ -77,6 +78,7 @@ export async function loadCachedHomepageRpc<T>(
   const staleTtlMs = options.staleTtlMs ?? DEFAULT_STALE_TTL_MS
   const useStaleOnError = options.useStaleOnError ?? false
   const dedupeInFlight = options.dedupeInFlight ?? false
+  const useStaleWhileRevalidating = options.useStaleWhileRevalidating ?? false
   const now = Date.now()
   const memoryEntry = memoryCache.get(cacheKey) as CacheEntry<T> | undefined
 
@@ -84,6 +86,11 @@ export async function loadCachedHomepageRpc<T>(
 
   const storedEntry = readStoredCache<T>(cacheKey, staleTtlMs)
   if (storedEntry && storedEntry.expiresAt > now) {
+    memoryCache.set(cacheKey, storedEntry)
+    return storedEntry.data
+  }
+
+  if (useStaleWhileRevalidating && storedEntry) {
     memoryCache.set(cacheKey, storedEntry)
     return storedEntry.data
   }
