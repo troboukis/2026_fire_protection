@@ -1,0 +1,82 @@
+name: 112 Notice Refresh
+
+on:
+  schedule:
+    - cron: "*/15 4-21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: 112-notice-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-112-notices:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${DATABASE_URL}" ]; then
+            echo "DATABASE_URL secret is required for 112_notice refresh."
+            exit 1
+          fi
+          if [ -z "${X_BEARER_TOKEN}" ]; then
+            echo "X_BEARER_TOKEN secret is required for reading @112Greece."
+            exit 1
+          fi
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "OPENAI_API_KEY secret is required for 112 notice extraction."
+            exit 1
+          fi
+          if [ -z "${GOOGLE_GEOCODING_API_KEY}" ]; then
+            echo "GOOGLE_GEOCODING_API_KEY secret is required for 112 notice geocoding."
+            exit 1
+          fi
+          case "${DATABASE_URL}" in
+            DATABASE_URL=*)
+              echo "DATABASE_URL secret must contain only the raw connection string, not 'DATABASE_URL=...'."
+              exit 1
+              ;;
+          esac
+
+      - name: Restore 112 notice state
+        uses: actions/cache/restore@v4
+        with:
+          path: logs/x_112_greece_state.json
+          key: x-112-greece-state-${{ github.run_id }}
+          restore-keys: |
+            x-112-greece-state-
+
+      - name: Refresh 112 notices
+        run: |
+          mkdir -p logs
+          python src/fetch_112_greece.py --max-results 10
+
+      - name: Save 112 notice state
+        if: always() && hashFiles('logs/x_112_greece_state.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: logs/x_112_greece_state.json
+          key: x-112-greece-state-${{ github.run_id }}

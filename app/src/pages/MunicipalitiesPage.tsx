@@ -75,6 +75,9 @@ type CurrentFireRow = {
   incident_key: string
   first_seen_at: string | null
   is_current: boolean | null
+  region: string | null
+  regional_unit: string | null
+  municipality_raw: string | null
   fuel_type: string | null
   status: string | null
   status_updated_at: string | null
@@ -215,6 +218,7 @@ type MunicipalityPointTooltip = {
   stackedRows?: Array<{
     label: string
     type: string
+    isNote?: boolean
   }>
 }
 
@@ -225,6 +229,7 @@ type MunicipalityMapTooltipPoint = {
   type: string
   title: string
   items: Array<string | null>
+  frp?: number | null
 }
 
 type ProcurementCpvRow = {
@@ -1637,6 +1642,7 @@ export default function MunicipalitiesPage() {
         fuelType: cleanText(row.fuel_type),
         status: cleanText(row.status),
         startDate: cleanText(row.start_date) ?? cleanText(row.first_seen_at),
+        area: cleanText(row.municipality_raw) ?? cleanText(row.regional_unit) ?? cleanText(row.region),
       }]
     })
   }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap])
@@ -1864,6 +1870,7 @@ export default function MunicipalitiesPage() {
         type: 'current-fire',
         title: 'Ενεργή πυρκαγιά',
         items: [
+          fire.area ? `Περιοχή: ${fire.area}` : null,
           fire.fuelType,
           fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
           fire.status,
@@ -1885,6 +1892,7 @@ export default function MunicipalitiesPage() {
           formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
           `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
         ],
+        frp: detection.frp,
       })
     }
 
@@ -1927,12 +1935,31 @@ export default function MunicipalitiesPage() {
     return { x, y }
   }
 
+  const getNearbyFirmsDetections = (fallback: { x: number; y: number }) => {
+    const overlapRadius = isMobileMunicipalityMap ? 16 : 10
+    return firmsDetectionMarkers
+      .filter((detection) => {
+        const dx = detection.x - fallback.x
+        const dy = detection.y - fallback.y
+        return Math.hypot(dx, dy) <= overlapRadius
+      })
+      .sort((a, b) => (b.frp ?? -Infinity) - (a.frp ?? -Infinity))
+  }
+
+  const getNearbyFirmsDetectionTooltipItems = (fallback: { x: number; y: number }) => {
+    return getNearbyFirmsDetections(fallback)
+      .slice(0, 5)
+      .map((detection, index) => (
+        `${index + 1}. ${formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt)} · ${detection.satellite} / ${detection.instrument} · ${formatMegawatts(detection.frp)}`
+      ))
+  }
+
   const getStackedPointTooltip = (
     title: string,
     items: Array<string | null>,
     id: string | undefined,
     fallback: { x: number; y: number },
-  ): { title: string; items: string[]; isStacked: boolean; stackedRows?: Array<{ label: string; type: string }> } => {
+  ): { title: string; items: string[]; isStacked: boolean; stackedRows?: Array<{ label: string; type: string; isNote?: boolean }> } => {
     const overlapRadius = isMobileMunicipalityMap ? 16 : 10
     const overlapping = visibleMunicipalityTooltipPoints.filter((point) => {
       const dx = point.x - fallback.x
@@ -1948,20 +1975,42 @@ export default function MunicipalitiesPage() {
       }
     }
 
-    const ordered = overlapping.slice().sort((a, b) => {
+    const orderedNonFirms = overlapping
+      .filter((point) => point.type !== 'firms')
+      .sort((a, b) => {
+        if (a.id === id) return -1
+        if (b.id === id) return 1
+        return a.title.localeCompare(b.title, 'el')
+      })
+    const overlappingFirms = overlapping.filter((point) => point.type === 'firms')
+    const orderedFirms = overlappingFirms
+      .sort((a, b) => (b.frp ?? -Infinity) - (a.frp ?? -Infinity))
+      .slice(0, 5)
+    const ordered = [...orderedNonFirms, ...orderedFirms]
+
+    ordered.sort((a, b) => {
       if (a.id === id) return -1
       if (b.id === id) return 1
-      return a.title.localeCompare(b.title, 'el')
+      return 0
     })
 
     return {
-      title: `${ordered.length} σημεία στο ίδιο σημείο`,
+      title: `${overlapping.length} σημεία στο ίδιο σημείο`,
       items: [],
       isStacked: true,
-      stackedRows: ordered.map((point) => ({
-        label: formatTooltipPointSummary(point),
-        type: point.type,
-      })),
+      stackedRows: [
+        ...ordered.map((point) => ({
+          label: formatTooltipPointSummary(point),
+          type: point.type,
+        })),
+        ...(overlappingFirms.length > 5
+          ? [{
+              label: '↳ (δείχνουμε τα 5 σημεία με τη μεγαλύτερη ένταση)',
+              type: 'firms-note',
+              isNote: true,
+            }]
+          : []),
+      ],
     }
   }
 
@@ -2014,6 +2063,48 @@ export default function MunicipalitiesPage() {
 
   const clearPointTooltip = () => {
     setPointTooltip(null)
+  }
+
+  const updateFirmsTooltip = (
+    event: ReactMouseEvent<SVGElement>,
+    fallback: { x: number; y: number },
+    id?: string,
+  ) => {
+    const pointer = pointerInMunicipalityMap(event, fallback)
+    const count = getNearbyFirmsDetections(fallback).length
+    setPointTooltip({
+      id,
+      x: pointer.x,
+      y: pointer.y,
+      title: count === 1
+        ? 'NASA FIRMS: 1 θερμική ανωμαλία'
+        : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+      items: getNearbyFirmsDetectionTooltipItems(fallback),
+      isStacked: false,
+    })
+  }
+
+  const toggleFirmsTooltip = (
+    event: ReactMouseEvent<SVGElement>,
+    id: string,
+    fallback: { x: number; y: number },
+  ) => {
+    const pointer = pointerInMunicipalityMap(event, fallback)
+    const count = getNearbyFirmsDetections(fallback).length
+    setPointTooltip((current) => (
+      current?.id === id
+        ? null
+        : {
+            id,
+            x: pointer.x,
+            y: pointer.y,
+            title: count === 1
+              ? 'NASA FIRMS: 1 θερμική ανωμαλία'
+              : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+            items: getNearbyFirmsDetectionTooltipItems(fallback),
+            isStacked: false,
+          }
+    ))
   }
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
@@ -2387,7 +2478,7 @@ export default function MunicipalitiesPage() {
           fetchAllPaginatedRows<CurrentFireRow>(
             (from, to) => supabase
               .from('current_fires')
-              .select('incident_key, first_seen_at, is_current, fuel_type, status, status_updated_at, start_date, lat, lon')
+              .select('incident_key, first_seen_at, is_current, region, regional_unit, municipality_raw, fuel_type, status, status_updated_at, start_date, lat, lon')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('status_updated_at', { ascending: false, nullsFirst: false })
               .order('first_seen_at', { ascending: false, nullsFirst: false })
@@ -2762,12 +2853,15 @@ export default function MunicipalitiesPage() {
     return summary
   }, [currentFireRows])
   const activeCurrentFireAlert = useMemo(() => {
-    const activeRow = currentFireRows.find((row) => row.is_current && cleanText(row.status) !== 'ΛΗΞΗ') ?? null
-    if (!activeRow) return null
+    const activeRows = currentFireRows.filter((row) => row.is_current && cleanText(row.status) !== 'ΛΗΞΗ')
+    const count = activeRows.length
+    if (count <= 0) return null
+    if (count > 1) return `${formatNumber(count)} ΕΝΕΡΓΕΣ ΠΥΡΚΑΓΙΕΣ`
 
+    const activeRow = activeRows[0]
     const fuelType = cleanText(activeRow.fuel_type) ?? 'άγνωστο τύπο καύσιμης ύλης'
     const status = cleanText(activeRow.status) ?? 'άγνωστη κατάσταση'
-    return `ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ ${fuelType} - ${status}`
+    return `1 ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ ${fuelType} - ${status}`
   }, [currentFireRows])
   const activeFirmsDetectionAlert = useMemo(() => {
     const count = firmsDetectionRows.length
@@ -3691,6 +3785,35 @@ export default function MunicipalitiesPage() {
                                 </circle>
                               </g>
                             ))}
+                          <g className="fire-firms__footprints">
+                            {firmsDetectionMarkers.map((detection) => (
+                              <rect
+                                key={detection.key}
+                                className="fire-firms__footprint"
+                                x={detection.x - detection.width / 2}
+                                y={detection.y - detection.height / 2}
+                                width={detection.width}
+                                height={detection.height}
+                                vectorEffect="non-scaling-stroke"
+                                onMouseEnter={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updateFirmsTooltip(event, { x: detection.x, y: detection.y }, detection.key)
+                                }}
+                                onMouseMove={(event) => {
+                                  if (isMobileMunicipalityMap) return
+                                  updateFirmsTooltip(event, { x: detection.x, y: detection.y }, detection.key)
+                                }}
+                                onMouseLeave={() => {
+                                  if (isMobileMunicipalityMap) return
+                                  clearPointTooltip()
+                                }}
+                                onClick={(event) => {
+                                  event.stopPropagation()
+                                  toggleFirmsTooltip(event, detection.key, { x: detection.x, y: detection.y })
+                                }}
+                              />
+                            ))}
+                          </g>
                           {activeCurrentFireMarkers.map((fire) => (
                             <g key={fire.key}>
                               <circle
@@ -3702,6 +3825,7 @@ export default function MunicipalitiesPage() {
                                 onMouseEnter={(event) => {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
+                                    fire.area ? `Περιοχή: ${fire.area}` : null,
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
@@ -3714,6 +3838,7 @@ export default function MunicipalitiesPage() {
                                 onMouseMove={(event) => {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
+                                    fire.area ? `Περιοχή: ${fire.area}` : null,
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
@@ -3733,6 +3858,7 @@ export default function MunicipalitiesPage() {
                                     event,
                                     'Ενεργή πυρκαγιά',
                                     [
+                                      fire.area ? `Περιοχή: ${fire.area}` : null,
                                       fire.fuelType,
                                       fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                       fire.status,
@@ -3758,62 +3884,6 @@ export default function MunicipalitiesPage() {
                                 pointerEvents="none"
                               />
                             </g>
-                          ))}
-                        </g>
-                        <g className="fire-firms__footprints">
-                          {firmsDetectionMarkers.map((detection) => (
-                            <rect
-                              key={detection.key}
-                              className="fire-firms__footprint"
-                              x={detection.x - detection.width / 2}
-                              y={detection.y - detection.height / 2}
-                              width={detection.width}
-                              height={detection.height}
-                              vectorEffect="non-scaling-stroke"
-                              onMouseEnter={(event) => {
-                                if (isMobileMunicipalityMap) return
-                                updatePointTooltip(event, 'NASA FIRMS', [
-                                  `Περιοχή: ${selectedName}`,
-                                  `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
-                                  formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
-                                  `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
-                                ], {
-                                  id: detection.key,
-                                  fallback: { x: detection.x, y: detection.y },
-                                })
-                              }}
-                              onMouseMove={(event) => {
-                                if (isMobileMunicipalityMap) return
-                                updatePointTooltip(event, 'NASA FIRMS', [
-                                  `Περιοχή: ${selectedName}`,
-                                  `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
-                                  formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
-                                  `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
-                                ], {
-                                  id: detection.key,
-                                  fallback: { x: detection.x, y: detection.y },
-                                })
-                              }}
-                              onMouseLeave={() => {
-                                if (isMobileMunicipalityMap) return
-                                clearPointTooltip()
-                              }}
-                              onClick={(event) => {
-                                event.stopPropagation()
-                                togglePointTooltip(
-                                  event,
-                                  'NASA FIRMS',
-                                  [
-                                    `Περιοχή: ${selectedName}`,
-                                    `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
-                                    formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
-                                    `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
-                                  ],
-                                  detection.key,
-                                  { x: detection.x, y: detection.y },
-                                )
-                              }}
-                            />
                           ))}
                         </g>
                         {selectedMunicipalityCityPoints.map((city) => {
@@ -3857,7 +3927,7 @@ export default function MunicipalitiesPage() {
                         className={`municipality-profile-hero__point-tooltip app-tooltip${pointTooltip.isStacked ? ' municipality-profile-hero__point-tooltip--stacked' : ''}`}
                         style={{
                           left: `${Math.max(12, pointTooltip.x + 14)}px`,
-                          top: `${Math.max(12, pointTooltip.y - 14)}px`,
+                          top: `${Math.max(12, pointTooltip.y)}px`,
                         }}
                       >
                         <strong>{pointTooltip.title}</strong>
@@ -3865,7 +3935,10 @@ export default function MunicipalitiesPage() {
                           ? pointTooltip.stackedRows?.map((row, index, rows) => (
                             <span
                               key={`${index}-${row.label}`}
-                              className={index > 0 && rows[index - 1]?.type !== row.type ? 'tooltip-type-separator' : undefined}
+                              className={[
+                                index > 0 && rows[index - 1]?.type !== row.type ? 'tooltip-type-separator' : null,
+                                row.isNote ? 'tooltip-note' : null,
+                              ].filter(Boolean).join(' ') || undefined}
                             >
                               {row.label}
                             </span>

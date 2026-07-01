@@ -2656,14 +2656,13 @@ main {
 .fire-current__point-marker {
   fill: none;
   stroke: rgba(209, 31, 31, 0.547);
-  stroke-width: 2.2px;
+  stroke-width: 1.5px;
   transform-box: fill-box;
   transform-origin: center;
 }
 
 .fire-current__point-pulse {
   opacity: 0.9;
-  animation: fire-current-ring-pulse 1.2s ease-out infinite;
 }
 
 .fire-current__point-marker {
@@ -2673,7 +2672,7 @@ main {
 .fire-current__points g.is-highlighted .fire-current__point-marker {
   opacity: 1;
   stroke: rgba(220, 38, 38, 1);
-  stroke-width: 2.4px;
+  stroke-width: 3px;
 }
 
 .fire-current__points g.is-highlighted .fire-current__point-pulse {
@@ -2773,6 +2772,13 @@ main {
   margin-top: 0.34rem;
   padding-top: 0.34rem;
   border-top: 1px solid rgba(111, 94, 77, 0.16);
+}
+
+.fire-copernicus__tooltip--stacked .tooltip-note {
+  margin-top: 0.34rem;
+  padding-top: 0.34rem;
+  border-top: 1px solid rgba(111, 94, 77, 0.16);
+  color: rgba(100, 90, 79, 0.78);
 }
 
 .fire-copernicus__empty {
@@ -6820,17 +6826,28 @@ main {
 .municipality-profile-hero__point-tooltip {
   position: absolute;
   z-index: 3;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   display: grid;
   gap: 0.18rem;
   max-width: min(15rem, calc(100% - 1.5rem));
   pointer-events: none;
 }
 
+.municipality-profile-hero__point-tooltip.app-tooltip {
+  transform: translateY(-50%);
+}
+
 .municipality-profile-hero__point-tooltip--stacked .tooltip-type-separator {
   margin-top: 0.34rem;
   padding-top: 0.34rem;
   border-top: 1px solid rgba(111, 94, 77, 0.16);
+}
+
+.municipality-profile-hero__point-tooltip--stacked .tooltip-note {
+  margin-top: 0.34rem;
+  padding-top: 0.34rem;
+  border-top: 1px solid rgba(111, 94, 77, 0.16);
+  color: rgba(97, 86, 75, 0.78);
 }
 
 .municipality-profile-hero__map-fallback {
