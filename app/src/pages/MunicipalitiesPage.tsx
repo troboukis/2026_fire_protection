@@ -11,6 +11,7 @@ import MapTilerLogo from '../components/MapTilerLogo'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
+import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/currentFireStatus'
 import { isContractActiveInYear } from '../lib/contractWindow'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
@@ -1640,7 +1641,8 @@ export default function MunicipalitiesPage() {
         x,
         y,
         fuelType: cleanText(row.fuel_type),
-        status: cleanText(row.status),
+        status: normalizeCurrentFireStatus(row.status) ?? 'ΣΕ ΕΞΕΛΙΞΗ',
+        statusColor: getCurrentFireStatusColor(row.status),
         startDate: cleanText(row.start_date) ?? cleanText(row.first_seen_at),
         area: cleanText(row.municipality_raw) ?? cleanText(row.regional_unit) ?? cleanText(row.region),
       }]
@@ -3874,13 +3876,30 @@ export default function MunicipalitiesPage() {
                                 cx={fire.x}
                                 cy={fire.y}
                                 r="4.2"
+                                style={{ stroke: fire.statusColor }}
                                 pointerEvents="none"
-                              />
+                              >
+                                <animate
+                                  attributeName="r"
+                                  values="3.864;7.35;3.864"
+                                  keyTimes="0;0.7;1"
+                                  dur="1.2s"
+                                  repeatCount="indefinite"
+                                />
+                                <animate
+                                  attributeName="stroke-opacity"
+                                  values="1;0.28;0"
+                                  keyTimes="0;0.7;1"
+                                  dur="1.2s"
+                                  repeatCount="indefinite"
+                                />
+                              </circle>
                               <circle
                                 className="fire-current__point-marker"
                                 cx={fire.x}
                                 cy={fire.y}
                                 r="4.2"
+                                style={{ stroke: fire.statusColor }}
                                 pointerEvents="none"
                               />
                             </g>
