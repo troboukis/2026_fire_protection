@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useSta
 import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
+import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/currentFireStatus'
 import { isAbortError } from '../lib/isAbortError'
 import { CURRENT_FIRE_HOVER_EVENT, type CurrentFireHoverDetail } from '../lib/currentFireHover'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
@@ -112,16 +113,21 @@ type HoveredActiveFireTooltip = {
   x: number
   y: number
   placement: 'above' | 'below'
-  item: ActiveFirePoint
+  item: ActiveFirePoint & {
+    normalizedStatus: string
+    statusColor: string
+  }
 }
 
 type HoveredStackedTooltip = {
   x: number
   y: number
   placement: 'above' | 'below'
+  totalCount: number
   items: Array<{
     label: string
     type: string
+    isNote?: boolean
   }>
 }
 
@@ -132,6 +138,7 @@ type SituationTooltipPoint = {
   type: string
   label: string
   priority: number
+  frp?: number | null
 }
 
 type TerrainTileOverlay = {
@@ -322,6 +329,10 @@ const DESKTOP_MAP_SCALE = 1.08
 const MOBILE_MAP_SCALE = 1.22
 const MOBILE_CLUSTER_GRID_SIZE = 8
 const DESKTOP_CLUSTER_GRID_SIZE = 14
+const DESKTOP_CURRENT_FIRE_MARKER_RADIUS = 3.4
+const DESKTOP_CURRENT_FIRE_HIGHLIGHT_RADIUS = 4.3
+const MOBILE_CURRENT_FIRE_MARKER_RADIUS = 2
+const MOBILE_CURRENT_FIRE_HIGHLIGHT_RADIUS = 4.1
 const HILLSHADE_TILESET_ID = 'hillshade'
 const HILLSHADE_TILE_SIZE = 256
 const HILLSHADE_MIN_ZOOM = 4
@@ -369,6 +380,13 @@ function currentFiresQuery() {
     .not('lon', 'is', null)
     .or('status.is.null,status.neq.ΛΗΞΗ')
     .order('status_updated_at', { ascending: false, nullsFirst: false })
+}
+
+function getCurrentFireMarkerRadius(isMobile: boolean, isHighlighted: boolean): number {
+  if (isMobile) {
+    return isHighlighted ? MOBILE_CURRENT_FIRE_HIGHLIGHT_RADIUS : MOBILE_CURRENT_FIRE_MARKER_RADIUS
+  }
+  return isHighlighted ? DESKTOP_CURRENT_FIRE_HIGHLIGHT_RADIUS : DESKTOP_CURRENT_FIRE_MARKER_RADIUS
 }
 
 function buildFirmsFootprint(
@@ -907,9 +925,15 @@ export default function SituationMap() {
           const [baseX, baseY] = projected
           if (![baseX, baseY].every(Number.isFinite)) return null
           const { x, y } = transformPoint(baseX, baseY)
-          return { ...fire, x, y }
+          return {
+            ...fire,
+            x,
+            y,
+            normalizedStatus: normalizeCurrentFireStatus(fire.status) ?? 'ΣΕ ΕΞΕΛΙΞΗ',
+            statusColor: getCurrentFireStatusColor(fire.status),
+          }
         })
-        .filter((fire): fire is ActiveFirePoint & { x: number; y: number } => fire !== null),
+        .filter((fire): fire is ActiveFirePoint & { x: number; y: number; normalizedStatus: string; statusColor: string } => fire !== null),
       points: Object.values(
         fires.reduce<Record<string, {
           x: number
@@ -1003,7 +1027,7 @@ export default function SituationMap() {
           fire.municipalityName ? `Ενεργή πυρκαγιά - ΔΗΜΟΣ ${fire.municipalityName}` : 'Ενεργή πυρκαγιά',
           fire.fuelType,
           fire.startDate ? `Ξέσπασε: ${formatDateEl(fire.startDate)}` : null,
-          fire.status ?? 'Ενεργή πυρκαγιά',
+          normalizeCurrentFireStatus(fire.status) ?? 'Ενεργή πυρκαγιά',
         ].filter(Boolean).join(' · '),
       })
     }
@@ -1041,6 +1065,7 @@ export default function SituationMap() {
           formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt),
           `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
         ].filter(Boolean).join(' · '),
+        frp: detection.frp,
       })
     }
 
@@ -1076,11 +1101,24 @@ export default function SituationMap() {
       if (overlapping.length < 2) return false
 
       const pointer = pointerInMap(event, fallback)
-      const ordered = overlapping.slice().sort((a, b) => {
+      const overlappingFirms = overlapping.filter((point) => point.type === 'firms')
+      const orderedNonFirms = overlapping
+        .filter((point) => point.type !== 'firms')
+        .sort((a, b) => {
+          if (a.id === activeId) return -1
+          if (b.id === activeId) return 1
+          if (a.priority !== b.priority) return a.priority - b.priority
+          return a.label.localeCompare(b.label, 'el')
+        })
+      const orderedFirms = overlappingFirms
+        .sort((a, b) => (b.frp ?? -Infinity) - (a.frp ?? -Infinity))
+        .slice(0, 5)
+      const ordered = [...orderedNonFirms, ...orderedFirms]
+
+      ordered.sort((a, b) => {
         if (a.id === activeId) return -1
         if (b.id === activeId) return 1
-        if (a.priority !== b.priority) return a.priority - b.priority
-        return a.label.localeCompare(b.label, 'el')
+        return 0
       })
 
       setHoveredFire(null)
@@ -1090,10 +1128,20 @@ export default function SituationMap() {
         x: pointer.x,
         y: pointer.y,
         placement: pointer.y < 96 ? 'below' : 'above',
-        items: ordered.map((point) => ({
-          label: point.label,
-          type: point.type,
-        })),
+        totalCount: overlapping.length,
+        items: [
+          ...ordered.map((point) => ({
+            label: point.label,
+            type: point.type,
+          })),
+          ...(overlappingFirms.length > 5
+            ? [{
+                label: '↳ (δείχνουμε τα 5 σημεία με τη μεγαλύτερη ένταση)',
+                type: 'firms-note',
+                isNote: true,
+              }]
+            : []),
+        ],
       })
       return true
     }
@@ -1177,21 +1225,42 @@ export default function SituationMap() {
         .classed('is-highlighted', (fire) => fire.id === highlightedActiveFireId)
         .classed('is-dimmed', (fire) => highlightedActiveFireId != null && fire.id !== highlightedActiveFireId)
 
-      activeFireGroups
+      const activeFirePulses = activeFireGroups
         .append('circle')
         .attr('class', 'fire-current__point-pulse')
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
-        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
+        .attr('r', (fire) => getCurrentFireMarkerRadius(isTouchInput, fire.id === highlightedActiveFireId))
         .attr('pointer-events', 'none')
+        .style('stroke', (fire) => fire.statusColor)
+
+      activeFirePulses
+        .append('animate')
+        .attr('attributeName', 'r')
+        .attr('values', (fire) => {
+          const radius = getCurrentFireMarkerRadius(isTouchInput, fire.id === highlightedActiveFireId)
+          return `${radius * 0.92};${radius * 1.75};${radius * 0.92}`
+        })
+        .attr('keyTimes', '0;0.7;1')
+        .attr('dur', '1.2s')
+        .attr('repeatCount', 'indefinite')
+
+      activeFirePulses
+        .append('animate')
+        .attr('attributeName', 'stroke-opacity')
+        .attr('values', '1;0.28;0')
+        .attr('keyTimes', '0;0.7;1')
+        .attr('dur', '1.2s')
+        .attr('repeatCount', 'indefinite')
 
       const activeFireMarkers = activeFireGroups
         .append('circle')
         .attr('class', 'fire-current__point-marker')
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
-        .attr('r', (fire) => fire.id === highlightedActiveFireId ? 5.2 : 4.2)
+        .attr('r', (fire) => getCurrentFireMarkerRadius(isTouchInput, fire.id === highlightedActiveFireId))
         .attr('pointer-events', isTouchInput ? 'none' : 'all')
+        .style('stroke', (fire) => fire.statusColor)
         .style('cursor', isTouchInput ? 'default' : 'pointer')
 
       const activeFireInteractionTargets = isTouchInput
@@ -1200,7 +1269,7 @@ export default function SituationMap() {
             .attr('class', 'fire-current__point-hit-area')
             .attr('cx', (fire) => fire.x)
             .attr('cy', (fire) => fire.y)
-            .attr('r', 17)
+            .attr('r', 8)
             .attr('fill', 'rgba(0, 0, 0, 0.001)')
             .attr('pointer-events', 'all')
             .style('cursor', 'pointer')
@@ -1302,7 +1371,10 @@ export default function SituationMap() {
         .on('mousemove', (event: MouseEvent) => {
           if (isTouchInput) return
           const target = event.target instanceof Element ? event.target : null
-          const isOverCopernicusPoint = target?.classList.contains('fire-copernicus__point-hit-area') ?? false
+          const isOverCopernicusPoint = (
+            target?.classList.contains('fire-copernicus__point-hit-area')
+            || target?.classList.contains('fire-copernicus__point-marker')
+          ) ?? false
           const isOverFirmsFootprint = target?.classList.contains('fire-firms__footprint') ?? false
           const isOverCurrentFirePoint = (
             target?.classList.contains('fire-current__point-hit-area')
@@ -1330,13 +1402,14 @@ export default function SituationMap() {
         .data(mapData.points)
         .join('g')
 
-      pointGroups
+      const pointMarkers = pointGroups
         .append('circle')
         .attr('class', 'fire-copernicus__point-marker')
         .attr('cx', (fire) => fire.x)
         .attr('cy', (fire) => fire.y)
         .attr('r', (fire) => fire.r)
-        .attr('pointer-events', 'none')
+        .attr('pointer-events', isTouchInput ? 'none' : 'all')
+        .style('cursor', isTouchInput ? 'default' : 'pointer')
 
       pointGroups
         .filter((fire) => fire.items.length > 1)
@@ -1349,15 +1422,19 @@ export default function SituationMap() {
         .attr('pointer-events', 'none')
         .text((fire) => String(fire.items.length))
 
-      pointGroups
-        .append('circle')
-        .attr('class', 'fire-copernicus__point-hit-area')
-        .attr('cx', (fire) => fire.x)
-        .attr('cy', (fire) => fire.y)
-        .attr('r', 14)
-        .attr('fill', 'rgba(0, 0, 0, 0.001)')
-        .attr('pointer-events', 'all')
-        .style('cursor', 'pointer')
+      const pointInteractionTargets = isTouchInput
+        ? pointGroups
+            .append('circle')
+            .attr('class', 'fire-copernicus__point-hit-area')
+            .attr('cx', (fire) => fire.x)
+            .attr('cy', (fire) => fire.y)
+            .attr('r', 7)
+            .attr('fill', 'rgba(0, 0, 0, 0.001)')
+            .attr('pointer-events', 'all')
+            .style('cursor', 'pointer')
+        : pointMarkers
+
+      pointInteractionTargets
         .on('mouseover', (event: MouseEvent, fire) => {
           if (isTouchInput) return
           updatePointTooltip(event, fire)
@@ -1626,17 +1703,20 @@ export default function SituationMap() {
                 className="fire-copernicus__tooltip fire-copernicus__tooltip--stacked app-tooltip"
                 style={{
                   left: `${Math.max(12, hoveredStackedTooltip.x + 14)}px`,
-                  top: `${hoveredStackedTooltip.placement === 'below' ? hoveredStackedTooltip.y + 14 : Math.max(12, hoveredStackedTooltip.y - 14)}px`,
-                  transform: hoveredStackedTooltip.placement === 'below' ? 'none' : undefined,
+                  top: `${Math.max(12, hoveredStackedTooltip.y)}px`,
+                  transform: 'translateY(-50%)',
                   pointerEvents: 'none',
                 }}
               >
                 <div className="fire-copernicus__tooltip-item">
-                  <strong>{hoveredStackedTooltip.items.length} σημεία στο ίδιο σημείο</strong>
+                  <strong>{hoveredStackedTooltip.totalCount} σημεία στο ίδιο σημείο</strong>
                   {hoveredStackedTooltip.items.map((item, index, items) => (
                     <span
                       key={`${index}-${item.label}`}
-                      className={index > 0 && items[index - 1]?.type !== item.type ? 'tooltip-type-separator' : undefined}
+                      className={[
+                        index > 0 && items[index - 1]?.type !== item.type ? 'tooltip-type-separator' : null,
+                        item.isNote ? 'tooltip-note' : null,
+                      ].filter(Boolean).join(' ') || undefined}
                     >
                       {item.label}
                     </span>
@@ -1649,8 +1729,8 @@ export default function SituationMap() {
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
                   left: `${Math.max(12, hoveredFire.x + 14)}px`,
-                  top: `${hoveredFire.placement === 'below' ? hoveredFire.y + 14 : Math.max(12, hoveredFire.y - 14)}px`,
-                  transform: hoveredFire.placement === 'below' ? 'none' : undefined,
+                  top: `${Math.max(12, hoveredFire.y)}px`,
+                  transform: 'translateY(-50%)',
                   pointerEvents: 'none',
                 }}
               >
@@ -1669,8 +1749,8 @@ export default function SituationMap() {
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
                   left: `${Math.max(12, hoveredFirmsDetection.x + 14)}px`,
-                  top: `${hoveredFirmsDetection.placement === 'below' ? hoveredFirmsDetection.y + 14 : Math.max(12, hoveredFirmsDetection.y - 14)}px`,
-                  transform: hoveredFirmsDetection.placement === 'below' ? 'none' : undefined,
+                  top: `${Math.max(12, hoveredFirmsDetection.y)}px`,
+                  transform: 'translateY(-50%)',
                   pointerEvents: 'none',
                 }}
               >
@@ -1687,8 +1767,8 @@ export default function SituationMap() {
                 className="fire-copernicus__tooltip app-tooltip"
                 style={{
                   left: `${Math.max(12, hoveredActiveFire.x + 14)}px`,
-                  top: `${hoveredActiveFire.placement === 'below' ? hoveredActiveFire.y + 14 : Math.max(12, hoveredActiveFire.y - 14)}px`,
-                  transform: hoveredActiveFire.placement === 'below' ? 'none' : undefined,
+                  top: `${Math.max(12, hoveredActiveFire.y)}px`,
+                  transform: 'translateY(-50%)',
                   pointerEvents: 'none',
                 }}
               >
@@ -1696,7 +1776,7 @@ export default function SituationMap() {
                   <strong>{hoveredActiveFire.item.municipalityName ? `ΔΗΜΟΣ ${hoveredActiveFire.item.municipalityName}` : 'Άγνωστη περιοχή'}</strong>
                   <span>{hoveredActiveFire.item.fuelType ?? '—'}</span>
                   <span>Ξέσπασε: {formatDateEl(hoveredActiveFire.item.startDate)}</span>
-                  <span>{hoveredActiveFire.item.status ?? 'Ενεργή πυρκαγιά'}</span>
+                  <span>{hoveredActiveFire.item.normalizedStatus}</span>
                 </div>
               </div>
             )}

@@ -3,6 +3,11 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
+import {
+  CURRENT_FIRE_STATUS_COLORS,
+  CURRENT_FIRE_STATUS_ORDER,
+  normalizeCurrentFireStatus,
+} from '../lib/currentFireStatus'
 import { supabase } from '../lib/supabase'
 
 type CurrentFireRow = {
@@ -54,27 +59,8 @@ function formatDateEl(value: string | null): string {
   }).format(date)
 }
 
-const STATUS_LABELS: Record<string, string> = {
-  'ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ': 'ΥΠΟ ΜΕΡΙΚΟ ΕΛΕΓΧΟ',
-  'ΠΛΗΡΗΣ ΕΛΕΓΧΟΣ': 'ΥΠΟ ΠΛΗΡΗ ΕΛΕΓΧΟ',
-}
-
-const STATUS_COLORS: Record<string, string> = {
-  'ΣΕ ΕΞΕΛΙΞΗ': '#b91c1c',
-  'ΥΠΟ ΜΕΡΙΚΟ ΕΛΕΓΧΟ': '#c2680a',
-  'ΥΠΟ ΠΛΗΡΗ ΕΛΕΓΧΟ': '#166534',
-}
-
-const STATUS_ORDER: Record<string, number> = {
-  'ΣΕ ΕΞΕΛΙΞΗ': 0,
-  'ΥΠΟ ΜΕΡΙΚΟ ΕΛΕΓΧΟ': 1,
-  'ΥΠΟ ΠΛΗΡΗ ΕΛΕΓΧΟ': 2,
-}
-
 function normalizeStatus(value: string | null): string | null {
-  const cleaned = cleanText(value)
-  if (!cleaned || cleaned === 'ΛΗΞΗ') return null
-  return STATUS_LABELS[cleaned] ?? cleaned
+  return normalizeCurrentFireStatus(cleanText(value))
 }
 
 function hasValidCoordinatePair(lat: unknown, lon: unknown): boolean {
@@ -96,11 +82,11 @@ function buildStatusCounts(rows: CurrentFireRow[]): FireStatusCount[] {
     .map(([status, count]) => ({
       status,
       count,
-      color: STATUS_COLORS[status],
+      color: CURRENT_FIRE_STATUS_COLORS[status],
     }))
     .sort((a, b) => {
-      const orderA = STATUS_ORDER[a.status] ?? Number.MAX_SAFE_INTEGER
-      const orderB = STATUS_ORDER[b.status] ?? Number.MAX_SAFE_INTEGER
+      const orderA = CURRENT_FIRE_STATUS_ORDER[a.status] ?? Number.MAX_SAFE_INTEGER
+      const orderB = CURRENT_FIRE_STATUS_ORDER[b.status] ?? Number.MAX_SAFE_INTEGER
       if (orderA !== orderB) return orderA - orderB
       return a.status.localeCompare(b.status, 'el')
     })
@@ -115,7 +101,7 @@ function buildTickerItem(row: CurrentFireRow): FireTickerItem {
     fuelType: cleanText(row.fuel_type) ?? '—',
     startDate: formatDateEl(cleanText(row.start_date)),
     status,
-    statusColor: STATUS_COLORS[status],
+    statusColor: CURRENT_FIRE_STATUS_COLORS[status],
     hasLocation: hasValidCoordinatePair(row.lat, row.lon),
   }
 }
