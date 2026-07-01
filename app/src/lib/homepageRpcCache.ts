@@ -17,7 +17,7 @@ type RetryOptions = {
   retryDelayMs?: number
 }
 
-const STORAGE_VERSION = 'v4'
+const STORAGE_VERSION = 'v5'
 const STORAGE_ENV = import.meta.env.VITE_SUPABASE_URL ?? 'unknown'
 const STORAGE_PREFIX = `homepage-rpc-cache:${STORAGE_VERSION}:${STORAGE_ENV}:`
 const DEFAULT_TTL_MS = 60_000
@@ -78,7 +78,6 @@ export async function loadCachedHomepageRpc<T>(
   const staleTtlMs = options.staleTtlMs ?? DEFAULT_STALE_TTL_MS
   const useStaleOnError = options.useStaleOnError ?? false
   const dedupeInFlight = options.dedupeInFlight ?? false
-  const useStaleWhileRevalidating = options.useStaleWhileRevalidating ?? false
   const now = Date.now()
   const memoryEntry = memoryCache.get(cacheKey) as CacheEntry<T> | undefined
 
@@ -86,11 +85,6 @@ export async function loadCachedHomepageRpc<T>(
 
   const storedEntry = readStoredCache<T>(cacheKey, staleTtlMs)
   if (storedEntry && storedEntry.expiresAt > now) {
-    memoryCache.set(cacheKey, storedEntry)
-    return storedEntry.data
-  }
-
-  if (useStaleWhileRevalidating && storedEntry) {
     memoryCache.set(cacheKey, storedEntry)
     return storedEntry.data
   }
