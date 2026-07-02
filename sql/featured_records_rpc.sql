@@ -19,6 +19,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH proc_ranked AS (
   SELECT

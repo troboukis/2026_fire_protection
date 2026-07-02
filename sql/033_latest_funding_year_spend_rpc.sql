@@ -5,6 +5,7 @@ RETURNS jsonb
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH latest_funding_year AS (
   SELECT MAX(f.year)::int AS year_main

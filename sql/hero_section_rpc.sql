@@ -11,6 +11,7 @@ RETURNS jsonb
 LANGUAGE plpgsql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 DECLARE
   v_as_of_date date;

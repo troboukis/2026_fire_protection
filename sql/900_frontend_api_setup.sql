@@ -43,6 +43,7 @@ RETURNS jsonb
 LANGUAGE plpgsql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 DECLARE
   v_as_of_date date;
@@ -603,6 +604,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH proc_ranked AS (
   SELECT
@@ -1985,6 +1987,7 @@ RETURNS jsonb
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH latest_funding_year AS (
   SELECT MAX(f.year)::int AS year_main
@@ -2143,6 +2146,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $frontend_latest_contracts$
 WITH payment_first AS (
   SELECT DISTINCT ON (py.procurement_id)
@@ -3420,6 +3424,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH base AS (
   SELECT
