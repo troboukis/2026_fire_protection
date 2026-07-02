@@ -556,6 +556,7 @@ export default function SituationMap() {
   const [activeFires, setActiveFires] = useState<ActiveFirePoint[]>([])
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null)
   const [hasLoadedHistoricalFires, setHasLoadedHistoricalFires] = useState(false)
+  const [historicalFiresLoading, setHistoricalFiresLoading] = useState(false)
   const [loading, setLoading] = useState(true)
   const [viewMode, setViewMode] = useState<'points' | 'shapes'>('points')
   const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, defaultStart))
@@ -594,6 +595,7 @@ export default function SituationMap() {
   const todayValue = formatDateInputValue(today)
   const rangeStartValue = formatDateInputValue(rangeStartDate)
   const rangeEndValue = formatDateInputValue(rangeEndDate)
+  const isDateFilterLoading = historicalFiresLoading && !hasLoadedHistoricalFires && rangeStartDay < initialFetchStartDay
 
   useEffect(() => {
     let cancelled = false
@@ -741,12 +743,16 @@ export default function SituationMap() {
   }, [])
 
   useEffect(() => {
-    if (hasLoadedHistoricalFires || rangeStartDay >= initialFetchStartDay) return
+    if (hasLoadedHistoricalFires || rangeStartDay >= initialFetchStartDay) {
+      setHistoricalFiresLoading(false)
+      return
+    }
 
     let cancelled = false
     const controller = new AbortController()
 
     const loadHistoricalFires = async () => {
+      setHistoricalFiresLoading(true)
       try {
         const { data, error } = await supabase
           .from('copernicus')
@@ -769,6 +775,8 @@ export default function SituationMap() {
         }
       } catch (error) {
         if (isAbortError(error)) return
+      } finally {
+        if (!cancelled) setHistoricalFiresLoading(false)
       }
     }
 
@@ -1598,7 +1606,7 @@ export default function SituationMap() {
         </div>
         
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
-        <div className="fire-copernicus__date-filter-selected">
+        <div className="fire-copernicus__date-filter-selected" aria-busy={isDateFilterLoading}>
           <span className="label">Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα</span>
           <div className="fire-copernicus__date-filter fire-copernicus__date-filter--pickers" aria-label="Φίλτρο ημερομηνιών Copernicus">
             <label className="fire-copernicus__date-picker">
@@ -1632,6 +1640,11 @@ export default function SituationMap() {
               />
             </label>
           </div>
+          {isDateFilterLoading && (
+            <div className="fire-copernicus__date-loading" role="status" aria-live="polite">
+              Φόρτωση δεδομένων από Supabase
+            </div>
+          )}
         </div>
         <div className="fire-copernicus__stats">
           <div>
@@ -1663,7 +1676,8 @@ export default function SituationMap() {
         {mapData && (
           <div
             ref={mapRef}
-            className="fire-copernicus__map fire-firms__map dev-tag-anchor"
+            className={`fire-copernicus__map fire-firms__map dev-tag-anchor${isDateFilterLoading ? ' is-loading-date-filter' : ''}`}
+            aria-busy={isDateFilterLoading}
             onMouseLeave={() => {
               setHoveredFire(null)
               setHoveredFirmsDetection(null)
@@ -1677,6 +1691,14 @@ export default function SituationMap() {
               className="component-tag--overlay"
               style={{ left: 'auto', right: '0.45rem' }}
             />
+            {isDateFilterLoading && (
+              <DataLoadingCard
+                compact
+                className="fire-copernicus__date-loading-overlay"
+                title="Φόρτωση χάρτη"
+                message="Ανακτώνται τα δεδομένα Copernicus για το επιλεγμένο διάστημα."
+              />
+            )}
             <div className="fire-copernicus__toggle dev-tag-anchor" aria-label="Τρόπος προβολής Copernicus">
               <ComponentTag
                 name="fire-copernicus__toggle"

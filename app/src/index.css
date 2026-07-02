@@ -2413,6 +2413,13 @@ main {
   color: var(--ink);
 }
 
+.fire-copernicus__date-loading {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: #6b6156;
+}
+
 .fire-copernicus__date-filter-track {
   position: relative;
   height: 4px;
@@ -2573,6 +2580,26 @@ main {
   justify-content: center;
   align-content: center;
   overflow: hidden;
+}
+
+.fire-copernicus__map.is-loading-date-filter svg {
+  opacity: 0.42;
+}
+
+.fire-copernicus__date-loading-overlay.data-loading-card {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: auto minmax(0, 18rem);
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0;
+  background: rgba(251, 248, 242, 0.74);
+  box-shadow: none;
+  pointer-events: auto;
 }
 
 .fire-copernicus__toggle {
