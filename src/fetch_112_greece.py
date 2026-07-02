@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import re
 import sys
@@ -35,6 +36,7 @@ GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 REQUEST_TIMEOUT = 30
 CURRENT_FIRES_TABLE = "public.current_fires"
 NOTICE_TABLE = 'public."112_notice"'
+SPATIAL_FIRE_MATCH_RADIUS_KM = 10.0
 
 
 @dataclass(frozen=True)
@@ -320,6 +322,13 @@ def extracted_places(enriched: dict[str, Any]) -> list[dict[str, Any]]:
     return places
 
 
+def fire_relevant_places(enriched: dict[str, Any]) -> list[dict[str, Any]]:
+    places: list[dict[str, Any]] = list(enriched.get("affected_places", []))
+    for instruction in enriched.get("instructions", []):
+        places.extend(instruction.get("from_places", []))
+    return places
+
+
 def notice_municipality_keys(enriched: dict[str, Any]) -> list[str]:
     keys: list[str] = []
     seen: set[str] = set()
@@ -331,32 +340,114 @@ def notice_municipality_keys(enriched: dict[str, Any]) -> list[str]:
     return keys
 
 
+def notice_fire_coordinates(enriched: dict[str, Any]) -> list[tuple[float, float]]:
+    coordinates: list[tuple[float, float]] = []
+    seen: set[tuple[float, float]] = set()
+    for place in fire_relevant_places(enriched):
+        lat_lon = place_lat_lon(place)
+        if lat_lon is None:
+            continue
+        rounded = (round(lat_lon[0], 6), round(lat_lon[1], 6))
+        if rounded in seen:
+            continue
+        seen.add(rounded)
+        coordinates.append(lat_lon)
+    return coordinates
+
+
+def distance_km(a: tuple[float, float], b: tuple[float, float]) -> float:
+    lat1, lon1 = a
+    lat2, lon2 = b
+    radius_km = 6371.0088
+    phi1 = math.radians(lat1)
+    phi2 = math.radians(lat2)
+    delta_phi = math.radians(lat2 - lat1)
+    delta_lambda = math.radians(lon2 - lon1)
+    haversine = (
+        math.sin(delta_phi / 2) ** 2
+        + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2) ** 2
+    )
+    return 2 * radius_km * math.atan2(math.sqrt(haversine), math.sqrt(1 - haversine))
+
+
 def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
     municipality_keys = notice_municipality_keys(enriched)
-    if not municipality_keys:
-        return None
-
     cur = conn.cursor(cursor_factory=RealDictCursor)
-    cur.execute(
-        f"""
-        SELECT
-          incident_key,
-          municipality_key
-        FROM {CURRENT_FIRES_TABLE}
-        WHERE is_current IS TRUE
-          AND status = 'ΣΕ ΕΞΕΛΙΞΗ'
-          AND municipality_key = ANY(%(municipality_keys)s)
-        """,
-        {"municipality_keys": municipality_keys},
-    )
-    candidates = [dict(row) for row in cur.fetchall()]
-    cur.close()
+    try:
+        if municipality_keys:
+            cur.execute(
+                f"""
+                SELECT
+                  incident_key,
+                  municipality_key
+                FROM {CURRENT_FIRES_TABLE}
+                WHERE is_current IS TRUE
+                  AND status = ANY(%(active_statuses)s)
+                  AND municipality_key = ANY(%(municipality_keys)s)
+                """,
+                {
+                    "active_statuses": ["ΣΕ ΕΞΕΛΙΞΗ", "ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ"],
+                    "municipality_keys": municipality_keys,
+                },
+            )
+            candidates = [dict(row) for row in cur.fetchall()]
+            if len(candidates) == 1:
+                candidate = candidates[0]
+                return FireMatch(
+                    incident_key=str(candidate["incident_key"]),
+                    municipality_key=str(candidate["municipality_key"]),
+                )
+            if len(candidates) > 1:
+                log(f"skip_ambiguous_municipality_match matches={candidates}")
+                return None
 
-    if len(candidates) != 1:
-        if len(candidates) > 1:
-            log(f"skip_ambiguous_municipality_match matches={candidates}")
+        notice_coordinates = notice_fire_coordinates(enriched)
+        if not notice_coordinates:
+            return None
+
+        cur.execute(
+            f"""
+            SELECT
+              incident_key,
+              municipality_key,
+              lat,
+              lon
+            FROM {CURRENT_FIRES_TABLE}
+            WHERE is_current IS TRUE
+              AND status = ANY(%(active_statuses)s)
+              AND lat IS NOT NULL
+              AND lon IS NOT NULL
+            """,
+            {"active_statuses": ["ΣΕ ΕΞΕΛΙΞΗ", "ΜΕΡΙΚΟΣ ΕΛΕΓΧΟΣ"]},
+        )
+        spatial_candidates = []
+        for row in cur.fetchall():
+            candidate = dict(row)
+            fire_coordinates = (float(candidate["lat"]), float(candidate["lon"]))
+            nearest_km = min(distance_km(point, fire_coordinates) for point in notice_coordinates)
+            if nearest_km <= SPATIAL_FIRE_MATCH_RADIUS_KM:
+                spatial_candidates.append((nearest_km, candidate))
+    finally:
+        cur.close()
+
+    if len(spatial_candidates) != 1:
+        if len(spatial_candidates) > 1:
+            matches = [
+                {
+                    "incident_key": candidate["incident_key"],
+                    "municipality_key": candidate["municipality_key"],
+                    "distance_km": round(nearest_km, 2),
+                }
+                for nearest_km, candidate in sorted(spatial_candidates, key=lambda item: item[0])
+            ]
+            log(f"skip_ambiguous_spatial_match matches={matches}")
         return None
-    candidate = candidates[0]
+    nearest_km, candidate = spatial_candidates[0]
+    log(
+        "spatial_fire_match "
+        f"incident_key={candidate['incident_key']} municipality_key={candidate['municipality_key']} "
+        f"distance_km={nearest_km:.2f}"
+    )
     return FireMatch(
         incident_key=str(candidate["incident_key"]),
         municipality_key=str(candidate["municipality_key"]),
