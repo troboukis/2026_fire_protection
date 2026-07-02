@@ -43,6 +43,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY DEFINER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
 WITH payment_first AS (
   SELECT DISTINCT ON (py.procurement_id)
