@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useSta
 import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
+import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { isAbortError } from '../lib/isAbortError'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
@@ -300,7 +301,7 @@ export default function FireFirmsSection() {
         if (geoFetchResult.status === 'rejected') throw geoFetchResult.reason
         const geoData = geoFetchResult.value
         const firmsRes = firmsResult.status === 'fulfilled' ? firmsResult.value : null
-        const rows = !firmsRes?.error ? ((firmsRes?.data ?? []) as FirmsRow[]) : []
+        const rows = !firmsRes?.error ? excludeFirmsMapHotspots((firmsRes?.data ?? []) as FirmsRow[]) : []
         const nextDetections = rows
           .map((row) => {
             const lat = toNumber(row.latitude)
