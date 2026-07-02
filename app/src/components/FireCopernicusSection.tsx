@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useSta
 import * as d3 from 'd3'
 import { useNavigate } from 'react-router-dom'
 import type { GeoData } from '../types'
+import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { isAbortError } from '../lib/isAbortError'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
@@ -518,7 +519,7 @@ export default function FireCopernicusSection() {
         const latestUpdateRes = latestUpdateResult.status === 'fulfilled' ? latestUpdateResult.value : null
         const firmsRes = firmsResult.status === 'fulfilled' ? firmsResult.value : null
         const copernicusRows = !copernicusRes?.error ? ((copernicusRes?.data ?? []) as CopernicusRow[]) : []
-        const firmsRows = !firmsRes?.error ? ((firmsRes?.data ?? []) as FirmsRow[]) : []
+        const firmsRows = !firmsRes?.error ? excludeFirmsMapHotspots((firmsRes?.data ?? []) as FirmsRow[]) : []
         const nextFires = mapCopernicusRows(copernicusRows)
         const nextFirmsDetections = firmsRows
           .map((row) => {

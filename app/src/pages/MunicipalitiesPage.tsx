@@ -14,6 +14,7 @@ import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/currentFireStatus'
 import { isContractActiveInYear } from '../lib/contractWindow'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
+import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
@@ -2427,7 +2428,7 @@ export default function MunicipalitiesPage() {
           nextCurrentFireRows,
           nextForestRows,
           nextCopernicusRows,
-          nextFirmsDetectionRows,
+          rawFirmsDetectionRows,
           ...contractResults
         ] = await Promise.all([
           supabase
@@ -2658,6 +2659,8 @@ export default function MunicipalitiesPage() {
             })
           }
         }
+
+        const nextFirmsDetectionRows = excludeFirmsMapHotspots(rawFirmsDetectionRows)
 
         if (!cancelled) {
           setProfile(nextProfile)

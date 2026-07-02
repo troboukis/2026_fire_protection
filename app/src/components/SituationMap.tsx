@@ -5,6 +5,7 @@ import type { GeoData } from '../types'
 import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/currentFireStatus'
 import { isAbortError } from '../lib/isAbortError'
 import { CURRENT_FIRE_HOVER_EVENT, type CurrentFireHoverDetail } from '../lib/currentFireHover'
+import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
@@ -642,7 +643,7 @@ export default function SituationMap() {
         const firmsRes = firmsResult.status === 'fulfilled' ? firmsResult.value : null
         const currentFiresRes = currentFiresResult.status === 'fulfilled' ? currentFiresResult.value : null
         const copernicusRows = !copernicusRes?.error ? ((copernicusRes?.data ?? []) as CopernicusRow[]) : []
-        const firmsRows = !firmsRes?.error ? ((firmsRes?.data ?? []) as FirmsRow[]) : []
+        const firmsRows = !firmsRes?.error ? excludeFirmsMapHotspots((firmsRes?.data ?? []) as FirmsRow[]) : []
         const currentFireRows = !currentFiresRes?.error ? ((currentFiresRes?.data ?? []) as CurrentFireRow[]) : []
         const nextFires = mapCopernicusRows(copernicusRows)
         const nextActiveFires = mapCurrentFireRows(currentFireRows)
