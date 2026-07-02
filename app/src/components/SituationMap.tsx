@@ -1537,10 +1537,32 @@ export default function SituationMap() {
             Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <span className="fire-current__legend-icon" aria-hidden="true" />, δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
           </p>
         </div>
-        <DataLoadingCard
-          className="fire-copernicus__loading-card"
-          message="Ανακτώνται οι νεότερες εγγραφές Copernicus και προετοιμάζεται ο χάρτης."
-        />
+        <div className="fire-copernicus__map-wrap dev-tag-anchor">
+          <ComponentTag
+            name="fire-copernicus__map-wrap"
+            kind="CLASS"
+            className="component-tag--overlay"
+            style={{ left: 'auto', right: '0.45rem' }}
+          />
+          <DataLoadingCard
+            className="fire-copernicus__map fire-copernicus__map--loading"
+            message="Ανακτώνται οι νεότερες εγγραφές Copernicus και προετοιμάζεται ο χάρτης."
+          />
+          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-hidden="true">
+            <span className="fire-copernicus__legend-row">
+              <span className="fire-copernicus__legend-dot" />
+              <span>Καταγεγραμμένη πυρκαγιά Copernicus EFFIS</span>
+            </span>
+            <span className="fire-copernicus__legend-row">
+              <span className="fire-copernicus__legend-dot fire-firms__legend-square" />
+              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            </span>
+            <span className="fire-copernicus__legend-row">
+              <span className="fire-current__legend-icon" />
+              <span>Ενεργή πυρκαγιά</span>
+            </span>
+          </div>
+        </div>
       </section>
     )
   }

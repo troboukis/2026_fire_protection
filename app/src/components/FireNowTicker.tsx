@@ -337,10 +337,7 @@ export default function FireNowTicker() {
     }
   }, [items, shouldScroll])
 
-  if (loading) return null
-  if (!loadFailed && activeCount === 0) return null
-
-  const titleCount = activeCount == null ? '—' : String(activeCount)
+  const titleCount = loading || activeCount == null ? '—' : String(activeCount)
 
   const handleMunicipalityClick = (key: string) => {
     navigate(`/municipalities?municipality=${encodeURIComponent(key)}`)
@@ -350,7 +347,21 @@ export default function FireNowTicker() {
     dispatchCurrentFireHover(incidentKey)
   }
 
-  const renderedItems = items.length
+  const visibleStatusCounts = loading
+    ? [{ status: 'Ανάκτηση δεδομένων', count: 0 }]
+    : statusCounts
+
+  const renderedItems = loading
+    ? [{
+        id: 'loading',
+        municipalityKey: null,
+        municipalityLabel: 'Δήμος —',
+        fuelType: 'Ανάκτηση ενεργών πυρκαγιών',
+        startDate: '—',
+        status: '—',
+        hasLocation: false,
+      }]
+    : items.length
     ? items
     : [loadFailed
       ? {
@@ -384,9 +395,9 @@ export default function FireNowTicker() {
           <span className="eyebrow">live</span>
           <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
           <div className="fire-ticker__status-list" aria-label="Κατανομή ενεργών πυρκαγιών ανά κατάσταση">
-            {statusCounts.flatMap((entry, index) => {
+            {visibleStatusCounts.map((entry, index) => {
               const nodes = []
-              if (index > 0) {
+              if (!loading && index > 0) {
                 nodes.push(<span key={`${entry.status}-separator`} className="fire-ticker__status-separator" aria-hidden="true" />)
               }
               nodes.push(
@@ -395,7 +406,7 @@ export default function FireNowTicker() {
                   className="fire-ticker__status-pill"
                   style={entry.color ? { color: entry.color } : undefined}
                 >
-                  {entry.count} {entry.status}
+                  {loading ? entry.status : `${entry.count} ${entry.status}`}
                 </span>,
               )
               return nodes

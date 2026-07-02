@@ -382,6 +382,45 @@ function SectionFallback({ label }: { label: string }) {
   )
 }
 
+function SituationMapFallback() {
+  return (
+    <section id="situationmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label="Φόρτωση Situation Map">
+      <div className="dev-tag-stack dev-tag-stack--right">
+        <ComponentTag name="SituationMap" />
+        <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
+      </div>
+      <div className="fire-copernicus__intro dev-tag-anchor">
+        <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
+        <div className="eyebrow">Situation Map</div>
+        <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
+        <p>
+          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές, δασικές πυρκαγιές και καμένες εκτάσεις από Copernicus EFFIS, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών από NASA FIRMS.
+        </p>
+      </div>
+      <div className="fire-copernicus__map-wrap dev-tag-anchor">
+        <DataLoadingCard
+          className="fire-copernicus__map fire-copernicus__map--loading"
+          message="Ανακτώνται οι νεότερες εγγραφές και προετοιμάζεται ο χάρτης."
+        />
+        <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-hidden="true">
+          <span className="fire-copernicus__legend-row">
+            <span className="fire-copernicus__legend-dot" />
+            <span>Καταγεγραμμένη πυρκαγιά Copernicus EFFIS</span>
+          </span>
+          <span className="fire-copernicus__legend-row">
+            <span className="fire-copernicus__legend-dot fire-firms__legend-square" />
+            <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+          </span>
+          <span className="fire-copernicus__legend-row">
+            <span className="fire-current__legend-icon" />
+            <span>Ενεργή πυρκαγιά</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function monthShortEl(iso: string | null): string {
   if (!iso) return '—'
   const dt = new Date(iso)
@@ -1839,7 +1878,7 @@ export default function App() {
       <main>
         <FireNowTicker />
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση Situation Map" />}>
+        <Suspense fallback={<SituationMapFallback />}>
           <SituationMap />
         </Suspense>
 
