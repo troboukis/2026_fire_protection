@@ -57,7 +57,9 @@ jobs:
           esac
 
       - name: Refresh current fires
+        continue-on-error: true
         run: python src/scrape_forest_fires.py
 
       - name: Refresh NASA FIRMS active fires
+        continue-on-error: true
         run: python src/fetch_firms_active_fires.py --skip-on-fetch-error
