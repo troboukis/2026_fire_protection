@@ -17,7 +17,7 @@ RETURNS TABLE (
   document_url text
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 SELECT

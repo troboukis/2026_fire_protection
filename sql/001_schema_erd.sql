@@ -553,12 +553,12 @@ FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
 -- ---------------------------------------------------------------------------
 GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
-GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO service_role;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
 GRANT SELECT ON TABLES TO anon, authenticated, service_role;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
-GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTIONS TO service_role;
 
 COMMIT;

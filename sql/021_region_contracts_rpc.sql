@@ -27,7 +27,7 @@ RETURNS TABLE (
   reference_number text
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH payment_agg AS (
@@ -226,7 +226,7 @@ CREATE OR REPLACE FUNCTION public.get_region_contract_count(
 )
 RETURNS bigint
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
   SELECT COUNT(*)::bigint
@@ -244,7 +244,7 @@ RETURNS TABLE (
   active_previous_count bigint
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
   WITH base AS (

@@ -11,7 +11,7 @@ RETURNS TABLE (
   amount_per_100k numeric
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH municipality_funding AS (

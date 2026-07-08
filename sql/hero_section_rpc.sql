@@ -9,7 +9,7 @@ CREATE OR REPLACE FUNCTION public.get_hero_section_data(
 )
 RETURNS jsonb
 LANGUAGE plpgsql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$

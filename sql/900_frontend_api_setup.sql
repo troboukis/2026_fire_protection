@@ -41,7 +41,7 @@ CREATE OR REPLACE FUNCTION public.get_hero_section_data(
 )
 RETURNS jsonb
 LANGUAGE plpgsql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$
@@ -424,7 +424,7 @@ RETURNS TABLE (
   total_count bigint
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH payment_agg AS (
@@ -602,7 +602,7 @@ RETURNS TABLE (
   relevant_contracts jsonb
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$
@@ -1040,7 +1040,7 @@ RETURNS TABLE (
   active_previous_count bigint
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH payment_agg AS (
@@ -1285,7 +1285,7 @@ RETURNS TABLE (
   amount_per_100k numeric
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH municipality_funding AS (
@@ -1330,7 +1330,7 @@ CREATE OR REPLACE FUNCTION public.get_homepage_funding(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH filtered_funding AS (
@@ -1410,7 +1410,7 @@ CREATE OR REPLACE FUNCTION public.get_environment_ministry_dashboard(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH ministry_org_keys AS (
@@ -1985,7 +1985,7 @@ DROP FUNCTION IF EXISTS public.get_latest_funding_year_municipality_spend();
 CREATE OR REPLACE FUNCTION public.get_latest_funding_year_municipality_spend()
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$
@@ -2144,7 +2144,7 @@ RETURNS TABLE (
   municipality_key text
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $frontend_latest_contracts$
@@ -2399,7 +2399,7 @@ RETURNS TABLE (
   relevant_contracts jsonb
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $frontend_municipality_featured$
 WITH municipality_lookup AS (
@@ -2772,18 +2772,85 @@ CREATE INDEX IF NOT EXISTS idx_news_fires_municipality_key
 CREATE INDEX IF NOT EXISTS idx_news_fires_lat_lon
   ON public.news_fires (lat, lon);
 
+-- Homepage RPC performance indexes.
+CREATE INDEX IF NOT EXISTS idx_payment_procurement_id_id_cover
+  ON public.payment (procurement_id, id)
+  INCLUDE (
+    amount_without_vat,
+    amount_with_vat,
+    beneficiary_name,
+    beneficiary_vat_number,
+    signers,
+    payment_ref_no,
+    fiscal_year
+  );
+
+CREATE INDEX IF NOT EXISTS idx_payment_fiscal_year_procurement_amount
+  ON public.payment (fiscal_year, procurement_id)
+  INCLUDE (amount_without_vat)
+  WHERE amount_without_vat IS NOT NULL
+    AND procurement_id IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_payment_beneficiary_payment_vat
+  ON public.payment_beneficiary (payment_id, beneficiary_vat_number);
+
+CREATE INDEX IF NOT EXISTS idx_payment_beneficiary_vat_payment
+  ON public.payment_beneficiary (beneficiary_vat_number, payment_id);
+
+CREATE INDEX IF NOT EXISTS idx_cpv_procurement_value_key
+  ON public.cpv (procurement_id, cpv_value, cpv_key);
+
+CREATE INDEX IF NOT EXISTS idx_procurement_submission_id_not_null
+  ON public.procurement (submission_at DESC NULLS LAST, id DESC)
+  WHERE submission_at IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_procurement_contract_signed_id_active
+  ON public.procurement (contract_signed_date DESC NULLS LAST, id DESC)
+  WHERE contract_signed_date IS NOT NULL
+    AND COALESCE(cancelled, FALSE) = FALSE;
+
+CREATE INDEX IF NOT EXISTS idx_procurement_prev_reference_no_trim
+  ON public.procurement ((NULLIF(BTRIM(prev_reference_no), '')))
+  WHERE NULLIF(BTRIM(prev_reference_no), '') IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_procurement_next_ref_no_trim
+  ON public.procurement ((NULLIF(BTRIM(next_ref_no), '')))
+  WHERE NULLIF(BTRIM(next_ref_no), '') IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_procurement_reference_contract_dedup
+  ON public.procurement (
+    reference_number,
+    diavgeia_ada,
+    contract_number,
+    organization_key,
+    contract_signed_date,
+    id DESC
+  );
+
+CREATE INDEX IF NOT EXISTS idx_organization_key_id_cover
+  ON public.organization (organization_key, id)
+  INCLUDE (organization_normalized_value, organization_value, authority_scope);
+
+CREATE INDEX IF NOT EXISTS idx_municipality_normalized_key_id_cover
+  ON public.municipality_normalized_name (municipality_key, id)
+  INCLUDE (municipality_normalized_value);
+
+CREATE INDEX IF NOT EXISTS idx_region_key_id_cover
+  ON public.region (region_key, id)
+  INCLUDE (region_normalized_value, region_value);
+
 -- -------------------------------------------------------------
 -- L) Table/function grants for frontend reads
 -- -------------------------------------------------------------
 GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO anon, authenticated, service_role;
-GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO service_role;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
 GRANT SELECT ON TABLES TO anon, authenticated, service_role;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
-GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTIONS TO service_role;
 
 -- -------------------------------------------------------------
 -- M) Enable RLS and keep public frontend reads working
@@ -2803,6 +2870,7 @@ END
 $frontend_enable_rls$;
 
 DROP POLICY IF EXISTS public_read_procurement ON public.procurement;
+DROP POLICY IF EXISTS anon_select_procurement ON public.procurement;
 CREATE POLICY public_read_procurement
 ON public.procurement
 FOR SELECT
@@ -3070,7 +3138,7 @@ CREATE OR REPLACE FUNCTION public.get_contract_analysis(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH first_payment AS (
@@ -3227,7 +3295,7 @@ DROP FUNCTION IF EXISTS public.get_direct_award_distribution();
 CREATE OR REPLACE FUNCTION public.get_direct_award_distribution()
 RETURNS TABLE(bin_lo numeric, bin_hi numeric, cnt bigint, total_count bigint)
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH first_payment AS (
@@ -3371,7 +3439,7 @@ RETURNS TABLE (
   document_url text
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 SELECT
@@ -3425,7 +3493,7 @@ RETURNS TABLE (
   total_count bigint
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$
@@ -3508,12 +3576,71 @@ GRANT EXECUTE ON FUNCTION public.get_diavgeia_page(text, date, date, text, integ
 
 
 -- -------------------------------------------------------------
--- S) Force PostgREST to reload schema cache
+-- S) Tighten function execution grants
+-- -------------------------------------------------------------
+REVOKE EXECUTE ON ALL FUNCTIONS IN SCHEMA public FROM PUBLIC, anon, authenticated;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+REVOKE EXECUTE ON FUNCTIONS FROM PUBLIC, anon, authenticated;
+
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT EXECUTE ON FUNCTIONS TO service_role;
+
+DO $frontend_public_rpc_grants$
+DECLARE
+  function_signature text;
+BEGIN
+  FOREACH function_signature IN ARRAY ARRAY[
+    'public.get_analysis_top_authorities(integer, integer, integer)',
+    'public.get_contract_analysis(integer)',
+    'public.get_contracts_page(text, text, text, date, date, numeric, integer, integer)',
+    'public.get_diavgeia_page(text, date, date, text, integer, integer)',
+    'public.get_direct_award_distribution()',
+    'public.get_environment_ministry_dashboard(integer)',
+    'public.get_featured_beneficiaries(integer, integer)',
+    'public.get_hero_section_data(integer, integer)',
+    'public.get_homepage_funding(integer, integer)',
+    'public.get_latest_contract_cards(integer)',
+    'public.get_latest_funding_year_municipality_spend()',
+    'public.get_municipality_contract_count(text, integer)',
+    'public.get_municipality_contract_summary(text, integer)',
+    'public.get_municipality_contracts(text, integer, integer, integer)',
+    'public.get_municipality_diavgeia_decisions(text, integer)',
+    'public.get_municipality_featured_beneficiaries(text, integer, integer)',
+    'public.get_municipality_map_funding_per_100k(integer)',
+    'public.get_municipality_map_spend_per_100k(integer)',
+    'public.get_region_contract_count(text, integer)',
+    'public.get_region_contract_summary(text, integer)',
+    'public.get_region_contracts(text, integer, integer, integer)',
+    'public.normalize_procedure_type(text)'
+  ]
+  LOOP
+    IF to_regprocedure(function_signature) IS NOT NULL THEN
+      EXECUTE format('ALTER FUNCTION %s SECURITY INVOKER', function_signature);
+      EXECUTE format(
+        'GRANT EXECUTE ON FUNCTION %s TO anon, authenticated, service_role',
+        function_signature
+      );
+    END IF;
+  END LOOP;
+END
+$frontend_public_rpc_grants$;
+
+REVOKE ALL ON FUNCTION public.sync_current_fire_coordinates_from_firms()
+FROM PUBLIC, anon, authenticated;
+
+GRANT EXECUTE ON FUNCTION public.sync_current_fire_coordinates_from_firms()
+TO service_role;
+
+-- -------------------------------------------------------------
+-- T) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
 NOTIFY pgrst, 'reload schema';
 
 -- -------------------------------------------------------------
--- T) Quick verification (run after setup)
+-- U) Quick verification (run after setup)
 -- -------------------------------------------------------------
 -- 1) Check RPC functions exist
 -- select p.proname, pg_get_function_arguments(p.oid) as args

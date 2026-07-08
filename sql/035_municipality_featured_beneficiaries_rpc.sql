@@ -18,7 +18,7 @@ RETURNS TABLE (
   relevant_contracts jsonb
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH municipality_lookup AS (

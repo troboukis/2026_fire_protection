@@ -11,7 +11,7 @@ RETURNS TABLE (
   total_m numeric
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH pay_by_proc AS (

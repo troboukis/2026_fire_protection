@@ -25,7 +25,7 @@ RETURNS TABLE (
   total_count bigint
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH payment_agg AS (
