@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION public.get_contract_analysis(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH first_payment AS (

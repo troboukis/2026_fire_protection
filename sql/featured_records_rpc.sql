@@ -17,7 +17,7 @@ RETURNS TABLE (
   relevant_contracts jsonb
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$

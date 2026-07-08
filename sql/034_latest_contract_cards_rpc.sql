@@ -41,7 +41,7 @@ RETURNS TABLE (
   municipality_key text
 )
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$

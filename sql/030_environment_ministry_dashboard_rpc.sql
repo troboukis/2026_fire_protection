@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION public.get_environment_ministry_dashboard(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH ministry_org_keys AS (

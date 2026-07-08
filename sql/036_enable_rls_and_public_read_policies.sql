@@ -19,6 +19,7 @@ END $$;
 -- These tables are already used via supabase.from(...) in the app.
 
 DROP POLICY IF EXISTS public_read_procurement ON public.procurement;
+DROP POLICY IF EXISTS anon_select_procurement ON public.procurement;
 CREATE POLICY public_read_procurement
 ON public.procurement
 FOR SELECT

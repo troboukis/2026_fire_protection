@@ -3,7 +3,7 @@ DROP FUNCTION IF EXISTS public.get_latest_funding_year_municipality_spend();
 CREATE OR REPLACE FUNCTION public.get_latest_funding_year_municipality_spend()
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$

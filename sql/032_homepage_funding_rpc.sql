@@ -6,7 +6,7 @@ CREATE OR REPLACE FUNCTION public.get_homepage_funding(
 )
 RETURNS jsonb
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH filtered_funding AS (

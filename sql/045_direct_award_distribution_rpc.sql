@@ -5,7 +5,7 @@ DROP FUNCTION IF EXISTS public.get_direct_award_distribution();
 CREATE OR REPLACE FUNCTION public.get_direct_award_distribution()
 RETURNS TABLE(bin_lo numeric, bin_hi numeric, cnt bigint, total_count bigint)
 LANGUAGE sql
-SECURITY DEFINER
+SECURITY INVOKER
 SET search_path = public
 AS $$
 WITH first_payment AS (
