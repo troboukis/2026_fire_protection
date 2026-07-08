@@ -323,32 +323,6 @@ main {
   display: grid;
 }
 
-.current-fires-notice {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: center;
-  gap: 0.9rem;
-  min-height: 4.75rem;
-  padding: 1rem 1.15rem;
-  background: var(--paper);
-  animation: fire-ticker-fadein 0.5s ease-out both;
-}
-
-.current-fires-notice__icon {
-  width: 2.45rem;
-  height: 2.45rem;
-  color: var(--accent);
-  flex: 0 0 auto;
-}
-
-.current-fires-notice p {
-  margin: 0;
-  color: var(--ink);
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
 .news-wire {
   display: grid;
   grid-template-columns: 320px 1fr;
