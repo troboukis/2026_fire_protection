@@ -8,6 +8,7 @@ import {
   CURRENT_FIRE_STATUS_ORDER,
   normalizeCurrentFireStatus,
 } from '../lib/currentFireStatus'
+import { logError } from '../lib/logger'
 import { supabase } from '../lib/supabase'
 
 type CurrentFireRow = {
@@ -203,7 +204,7 @@ export default function FireNowTicker() {
       if (cancelled) return
 
       if (error) {
-        console.error('Failed to load current fires for ticker', error)
+        if (import.meta.env.DEV) logError('Failed to load current fires for ticker', error)
         setItems([])
         setActiveCount(null)
         setStatusCounts([])

@@ -1,4 +1,5 @@
 import { supabase } from './supabase'
+import { logError } from './logger'
 
 const GEMI_COMPANY_URL_CACHE = new Map<string, Promise<string>>()
 const BENEFICIARY_GEMI_CACHE = new Map<string, Promise<string | null>>()
@@ -82,7 +83,7 @@ async function resolveStoredGemiNumberByAfm(afm: string): Promise<string | null>
     .maybeSingle()
 
   if (error) {
-    console.error('[gemi] stored GEMI lookup failed', error)
+    if (import.meta.env.DEV) logError('[gemi] stored GEMI lookup failed', error)
     return GEMI_PENDING
   }
 
@@ -137,7 +138,7 @@ export async function openGemiCompanyPageByAfm(afm: string, companyName?: string
     if (popup && !popup.closed) popup.location.replace(companyUrl)
     else window.open(companyUrl, '_blank', 'noopener,noreferrer')
   } catch (error) {
-    console.error('[gemi] lookup failed', error)
+    if (import.meta.env.DEV) logError('[gemi] lookup failed', error)
     if (popup && !popup.closed) {
       popup.document.title = 'Αδυναμία φόρτωσης ΓΕΜΗ'
       const message = error instanceof Error && error.message.startsWith('Δεν έχει εντοπιστεί')

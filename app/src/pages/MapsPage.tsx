@@ -11,6 +11,7 @@ import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
+import { logDebug, logError } from '../lib/logger'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows, type PaymentSummaryRow } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
@@ -323,7 +324,7 @@ export default function MapsPage() {
           setMunicipalityTotalFundingById(nextTotalFundingById)
           setMunicipalitySignedCurrentCountById(nextSignedCurrentCountById)
           setMunicipalityActivePreviousCountById(nextActivePreviousCountById)
-          console.log('[MapsPage] choropleth summary', {
+          if (import.meta.env.DEV) logDebug('[MapsPage] choropleth summary', {
             mapYear,
             spendRpcRows: spendRows.length,
             fundingRpcRows: fundingRows.length,
@@ -906,7 +907,7 @@ export default function MapsPage() {
         }
       } catch (e) {
         if (!cancelled) {
-          console.error('[MapsPage] municipality works failed', e)
+          if (import.meta.env.DEV) logError('[MapsPage] municipality works failed', e)
           setMunicipalityDirectWorkPoints([])
           setMunicipalityRegionalWorkPoints([])
         }
@@ -993,7 +994,7 @@ export default function MapsPage() {
         }
       } catch (e) {
         if (!cancelled) {
-          console.error('[MapsPage] municipality latest contracts failed', e)
+          if (import.meta.env.DEV) logError('[MapsPage] municipality latest contracts failed', e)
           setMunicipalityLatestContracts([])
           setMunicipalitySignedContractCount(0)
           setMunicipalityActivePreviousContractCount(0)
@@ -1030,7 +1031,7 @@ export default function MapsPage() {
         if (!cancelled) setMunicipalityDiavgeiaDecisions(mapped)
       } catch (e) {
         if (!cancelled) {
-          console.error('[MapsPage] municipality diavgeia decisions failed', e)
+          if (import.meta.env.DEV) logError('[MapsPage] municipality diavgeia decisions failed', e)
           setMunicipalityDiavgeiaDecisions([])
         }
       } finally {
@@ -1113,7 +1114,7 @@ export default function MapsPage() {
         }
       } catch (e) {
         if (!cancelled) {
-          console.error('[MapsPage] region latest contracts failed', e)
+          if (import.meta.env.DEV) logError('[MapsPage] region latest contracts failed', e)
           setRegionLatestContracts([])
           setRegionSignedContractCount(0)
           setRegionActivePreviousContractCount(0)
@@ -1187,7 +1188,7 @@ export default function MapsPage() {
       : (municipalityTotalFundingById.get(normalizedMunicipalityId) ?? 0)
     const signedCurrentCount = municipalitySignedCurrentCountById.get(normalizedMunicipalityId) ?? 0
     const activePreviousCount = municipalityActivePreviousCountById.get(normalizedMunicipalityId) ?? 0
-    console.log('[MapsPage] municipality click', {
+    if (import.meta.env.DEV) logDebug('[MapsPage] municipality click', {
       municipalityId,
       normalizedMunicipalityId,
       label,
