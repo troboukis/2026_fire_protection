@@ -330,6 +330,16 @@ function toFiniteNumber(v: unknown): number | null {
   return Number.isFinite(n) ? n : null
 }
 
+function isNonEmptyArray(value: unknown): boolean {
+  return Array.isArray(value) && value.length > 0
+}
+
+function hasHeroSectionData(value: unknown): boolean {
+  if (!value || typeof value !== 'object') return false
+  const payload = value as Partial<HeroSectionRpcResponse>
+  return isNonEmptyArray(payload.curve_points) && toFiniteNumber(payload.total_main) != null
+}
+
 function chunk<T>(arr: T[], size: number): T[][] {
   const out: T[][] = []
   for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
@@ -679,7 +689,13 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as LatestContractRpcRow[]
             }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
+            {
+              ttlMs: 5 * 60 * 1000,
+              useStaleOnError: true,
+              useStaleWhileRevalidating: true,
+              dedupeInFlight: true,
+              validateData: isNonEmptyArray,
+            },
           ),
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_diavgeia_page', {
@@ -702,7 +718,13 @@ export default function App() {
               if (error) throw error
               return (data ?? []) as DiavgeiaPageRpcRow[]
             }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
+            {
+              ttlMs: 5 * 60 * 1000,
+              useStaleOnError: true,
+              useStaleWhileRevalidating: true,
+              dedupeInFlight: true,
+              validateData: isNonEmptyArray,
+            },
           ),
         ])
         if (cancelled) return
@@ -1666,7 +1688,13 @@ export default function App() {
             if (error) throw error
             return data ?? []
           }),
-          { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
+          {
+            ttlMs: 5 * 60 * 1000,
+            useStaleOnError: true,
+            useStaleWhileRevalidating: true,
+            dedupeInFlight: true,
+            validateData: isNonEmptyArray,
+          },
         )
 
         const rows = ((data ?? []) as FeaturedRecordsRpcRow[]).map<BeneficiaryInsightRow>((row) => {
@@ -1787,7 +1815,13 @@ export default function App() {
             if (!data) throw new Error('Hero section RPC returned no data')
             return data as HeroSectionRpcResponse
           }),
-          { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
+          {
+            ttlMs: 5 * 60 * 1000,
+            useStaleOnError: true,
+            useStaleWhileRevalidating: true,
+            dedupeInFlight: true,
+            validateData: hasHeroSectionData,
+          },
         )
         if (cancelled) return
 

@@ -10,6 +10,7 @@ type CacheOptions = {
   useStaleOnError?: boolean
   dedupeInFlight?: boolean
   useStaleWhileRevalidating?: boolean
+  validateData?: (data: unknown) => boolean
 }
 
 type RetryOptions = {
@@ -17,7 +18,7 @@ type RetryOptions = {
   retryDelayMs?: number
 }
 
-const STORAGE_VERSION = 'v5'
+const STORAGE_VERSION = 'v6'
 const STORAGE_ENV = import.meta.env.VITE_SUPABASE_URL ?? 'unknown'
 const STORAGE_PREFIX = `homepage-rpc-cache:${STORAGE_VERSION}:${STORAGE_ENV}:`
 const DEFAULT_TTL_MS = 60_000
@@ -78,15 +79,21 @@ export async function loadCachedHomepageRpc<T>(
   const staleTtlMs = options.staleTtlMs ?? DEFAULT_STALE_TTL_MS
   const useStaleOnError = options.useStaleOnError ?? false
   const dedupeInFlight = options.dedupeInFlight ?? false
+  const validateData = options.validateData
   const now = Date.now()
   const memoryEntry = memoryCache.get(cacheKey) as CacheEntry<T> | undefined
 
-  if (memoryEntry && memoryEntry.expiresAt > now) return memoryEntry.data
+  if (memoryEntry && memoryEntry.expiresAt > now) {
+    if (!validateData || validateData(memoryEntry.data)) return memoryEntry.data
+    memoryCache.delete(cacheKey)
+  }
 
   const storedEntry = readStoredCache<T>(cacheKey, staleTtlMs)
   if (storedEntry && storedEntry.expiresAt > now) {
-    memoryCache.set(cacheKey, storedEntry)
-    return storedEntry.data
+    if (!validateData || validateData(storedEntry.data)) {
+      memoryCache.set(cacheKey, storedEntry)
+      return storedEntry.data
+    }
   }
 
   const inFlight = inFlightCache.get(cacheKey) as Promise<T> | undefined
@@ -100,13 +107,15 @@ export async function loadCachedHomepageRpc<T>(
         savedAt: Date.now(),
         expiresAt: Date.now() + ttlMs,
       }
-      memoryCache.set(cacheKey, entry)
-      writeStoredCache(cacheKey, entry)
+      if (!validateData || validateData(data)) {
+        memoryCache.set(cacheKey, entry)
+        writeStoredCache(cacheKey, entry)
+      }
       return data
     } catch (error) {
       if (!useStaleOnError) throw error
       const staleEntry = storedEntry ?? readStoredCache<T>(cacheKey, staleTtlMs)
-      if (staleEntry) {
+      if (staleEntry && (!validateData || validateData(staleEntry.data))) {
         memoryCache.set(cacheKey, staleEntry)
         return staleEntry.data
       }
