@@ -4,7 +4,6 @@ import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import ComponentTag from './components/ComponentTag'
 import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './components/DiavgeiaDecisionCard'
-import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import MapTilerLogo from './components/MapTilerLogo'
 import type { OrganizationSectionData } from './components/OrganizationSection'
@@ -378,6 +377,27 @@ function SectionFallback({ label }: { label: string }) {
   return (
     <section className="section-rule page-loading page-loading--section" aria-label={label}>
       <DataLoadingCard message={label} />
+    </section>
+  )
+}
+
+function CurrentFiresUnavailableNotice() {
+  return (
+    <section className="current-fires-notice section-rule" role="status" aria-live="polite">
+      <svg className="current-fires-notice__icon" viewBox="0 0 24 24" aria-label="Προσοχή" role="img">
+        <path
+          d="M10.3 3.9 1.8 18.7A2.2 2.2 0 0 0 3.7 22h16.6a2.2 2.2 0 0 0 1.9-3.3L13.7 3.9a2 2 0 0 0-3.4 0Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinejoin="round"
+          strokeWidth="1.9"
+        />
+        <path d="M12 8v5.2" stroke="currentColor" strokeLinecap="round" strokeWidth="2.2" />
+        <circle cx="12" cy="17" r="1.15" fill="currentColor" />
+      </svg>
+      <p>
+        Λόγω προβλήματος της σελίδας Ενεργών Συμβάντων της Πυροσβεστικής, προς το παρόν δεν καταγράφονται ενεργές πυρκαγιές.
+      </p>
     </section>
   )
 }
@@ -1876,7 +1896,7 @@ export default function App() {
   return (
     <>
       <main>
-        <FireNowTicker />
+        <CurrentFiresUnavailableNotice />
 
         <Suspense fallback={<SituationMapFallback />}>
           <SituationMap />
