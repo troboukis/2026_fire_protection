@@ -50,13 +50,13 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
                 href={documentUrl}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Άνοιγμα απόφασης στη Διαύγεια"
-                title="Άνοιγμα απόφασης στη Διαύγεια"
+                aria-label="Κατέβασμα απόφασης"
+                title="Κατέβασμα απόφασης"
               >
                 <svg viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M7.5 5H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.5" />
-                  <path d="M11 3h6v6" />
-                  <path d="M10 10 17 3" />
+                  <path d="M10 2.5v8.2" />
+                  <path d="M6.8 8.9 10 12.1l3.2-3.2" />
+                  <path d="M4 14.5h12" />
                 </svg>
               </a>
             )}
@@ -86,14 +86,6 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
             </div>
           ))}
         </div>
-
-        {documentUrl && (
-          <footer className="contract-modal__footer">
-            <a href={documentUrl} target="_blank" rel="noreferrer">
-              Κατέβασε το έγγραφο
-            </a>
-          </footer>
-        )}
       </article>
     </div>
   )
