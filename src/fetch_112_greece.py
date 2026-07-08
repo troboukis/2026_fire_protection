@@ -148,15 +148,44 @@ def fetch_recent_posts(
     user_id: str,
     *,
     since_id: str | None,
-    max_results: int,
 ) -> list[XPost]:
+    page_size = 100
+    pagination_token: str | None = None
+    posts: list[XPost] = []
+
+    while True:
+        page = fetch_recent_posts_page(
+            bearer_token,
+            user_id,
+            since_id=since_id,
+            pagination_token=pagination_token,
+            page_size=page_size,
+        )
+        posts.extend(page["posts"])
+        pagination_token = page["next_token"]
+        if not pagination_token:
+            break
+
+    return sorted(posts, key=lambda item: int(item.post_id))
+
+
+def fetch_recent_posts_page(
+    bearer_token: str,
+    user_id: str,
+    *,
+    since_id: str | None,
+    pagination_token: str | None,
+    page_size: int,
+) -> dict[str, Any]:
     params: dict[str, Any] = {
-        "max_results": max(5, min(max_results, 100)),
+        "max_results": page_size,
         "tweet.fields": "created_at,entities,referenced_tweets",
         "exclude": "retweets,replies",
     }
     if since_id:
         params["since_id"] = since_id
+    if pagination_token:
+        params["pagination_token"] = pagination_token
 
     payload = x_get(f"/users/{user_id}/tweets", bearer_token, params)
     posts = [
@@ -168,7 +197,10 @@ def fetch_recent_posts(
         for item in payload.get("data", [])
         if item.get("id") and clean_text(item.get("text"))
     ]
-    return sorted(posts, key=lambda item: int(item.post_id))
+    return {
+        "posts": posts,
+        "next_token": payload.get("meta", {}).get("next_token"),
+    }
 
 
 def extraction_schema() -> dict[str, Any]:
@@ -653,7 +685,6 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description='Poll @112Greece X posts, extract/geocode instructions, and store notices in public."112_notice".',
     )
     parser.add_argument("--username", default=X_USERNAME, help="X username to poll. Default: 112Greece")
-    parser.add_argument("--max-results", type=int, default=20, help="Recent posts to fetch, 5-100. Default: 20")
     parser.add_argument("--state-path", type=Path, default=STATE_PATH, help="JSON state path for since_id")
     parser.add_argument("--db-path", default=None, help="Optional DATABASE_URL override")
     parser.add_argument("--sample-text", default=None, help="Process this text instead of calling X")
@@ -687,7 +718,6 @@ def main(argv: list[str] | None = None) -> int:
                 bearer_token,
                 user_id,
                 since_id=None if args.no_state else state.get("last_seen_id"),
-                max_results=args.max_results,
             )
 
         processed = 0

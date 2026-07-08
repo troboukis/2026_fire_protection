@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: 112-notice-refresh
@@ -22,6 +22,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Sync branch to latest main
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -59,22 +67,30 @@ jobs:
               ;;
           esac
 
-      - name: Restore 112 notice state
-        uses: actions/cache/restore@v4
-        with:
-          path: logs/x_112_greece_state.json
-          key: x-112-greece-state-${{ github.run_id }}
-          restore-keys: |
-            x-112-greece-state-
-
       - name: Refresh 112 notices
         run: |
           mkdir -p logs
-          python src/fetch_112_greece.py --max-results 10
+          python src/fetch_112_greece.py
 
-      - name: Save 112 notice state
+      - name: Commit and push 112 notice state
         if: always() && hashFiles('logs/x_112_greece_state.json') != ''
-        uses: actions/cache/save@v4
-        with:
-          path: logs/x_112_greece_state.json
-          key: x-112-greece-state-${{ github.run_id }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logs/x_112_greece_state.json
+          if git diff --cached --quiet; then
+            echo "No 112 notice state changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(data): update 112 notice state"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Push failed after ${attempt} attempts"
+              exit 1
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
