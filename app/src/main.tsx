@@ -8,7 +8,9 @@ import Layout from './components/Layout'
 import { initGA, trackPageView } from './analytics'
 import './index.css'
 
-initGA()
+const analyticsEnabled = import.meta.env.PROD
+
+if (analyticsEnabled) initGA()
 
 function RouteTracker() {
   const location = useLocation()
@@ -41,7 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </Route>
       </Routes>
     </BrowserRouter>
-    <Analytics />
-    <SpeedInsights />
+    {analyticsEnabled ? <Analytics /> : null}
+    {analyticsEnabled ? <SpeedInsights /> : null}
   </React.StrictMode>,
 )

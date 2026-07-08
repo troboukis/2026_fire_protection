@@ -8,6 +8,7 @@ declare global {
 const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined
 
 export function initGA() {
+  if (!import.meta.env.PROD) return
   if (!GA_ID) return
 
   window.dataLayer = window.dataLayer || []
@@ -26,6 +27,7 @@ export function initGA() {
 }
 
 export function trackPageView(path: string) {
+  if (!import.meta.env.PROD) return
   if (!GA_ID || typeof window.gtag !== 'function') return
   window.gtag('event', 'page_view', { page_path: path })
 }
