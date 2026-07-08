@@ -1,76 +1,15 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import ComponentTag from './ComponentTag'
-import DataLoadingCard from './DataLoadingCard'
-import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from '../lib/homepageRpcCache'
-import { isAbortError } from '../lib/isAbortError'
-import { logError, logWarn } from '../lib/logger'
-import { supabase } from '../lib/supabase'
-
-type FundingHistoryEntry = {
-  year: number
-  regularAmount: number
-  emergencyAmount: number
-  municipalityAmount: number
-  syndesmosAmount: number
-  totalAmount: number
-}
+import { fundingSummary, type FundingSummary } from '../data/fundingSummary'
 
 type FundingChartHoverState = {
   year: number
   leftPct: number
 }
 
-type FundingRpcHistoryRow = {
-  year: number | string | null
-  regular_amount: number | string | null
-  emergency_amount: number | string | null
-  municipality_amount: number | string | null
-  syndesmos_amount: number | string | null
-  total_amount: number | string | null
-}
-
-type FundingRpcPayload = {
-  year_main: number | string | null
-  year_previous: number | string | null
-  history_start_year: number | string | null
-  current_total: number | string | null
-  previous_total: number | string | null
-  current_regular_amount: number | string | null
-  current_emergency_amount: number | string | null
-  current_municipality_amount: number | string | null
-  current_syndesmos_amount: number | string | null
-  history: FundingRpcHistoryRow[] | null
-}
-
-type FundingSpendRpcPayload = {
-  latest_funding_year: number | string | null
-  total_amount: number | string | null
-}
-
-type FundingData = {
-  yearMain: number
-  yearPrevious: number
-  historyStartYear: number
-  currentTotal: number
-  currentSpendAmount: number
-  currentSpendYear: number
-  previousTotal: number
-  currentRegularAmount: number
-  currentEmergencyAmount: number
-  currentMunicipalityAmount: number
-  currentSyndesmosAmount: number
-  history: FundingHistoryEntry[]
-}
-
 type FundingProps = {
   currentYear: number
   anchorId?: string
-}
-
-function toNumber(value: unknown): number | null {
-  if (value == null) return null
-  const num = Number(value)
-  return Number.isFinite(num) ? num : null
 }
 
 function formatNumber(value: number, maximumFractionDigits = 0): string {
@@ -115,128 +54,22 @@ function pctColor(value: number | null): string {
 }
 
 export default function Funding({ currentYear, anchorId = 'funding' }: FundingProps) {
-  const [loading, setLoading] = useState(true)
-  const [loadError, setLoadError] = useState<string | null>(null)
-  const [spendLoadError, setSpendLoadError] = useState<string | null>(null)
-  const [fundingData, setFundingData] = useState<FundingData | null>(null)
+  const fundingData: FundingSummary = fundingSummary
+  const renderedYear = fundingData.yearMain || currentYear
   const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
   const fundingChartFrameRef = useRef<HTMLDivElement | null>(null)
 
-  useEffect(() => {
-    let cancelled = false
-    const controller = new AbortController()
-    setLoading(true)
-    setLoadError(null)
-    setSpendLoadError(null)
-
-    const loadFunding = async () => {
-      try {
-        const [fundingResult, spendResult] = await Promise.allSettled([
-          loadCachedHomepageRpc(
-            createHomepageRpcCacheKey('get_homepage_funding', {
-              p_year_main: currentYear,
-              p_year_start: 2016,
-            }),
-            () => retryHomepageRpc(async () => {
-              const { data, error } = await supabase.rpc('get_homepage_funding', {
-                p_year_main: currentYear,
-                p_year_start: 2016,
-              }).abortSignal(controller.signal)
-              if (error) throw error
-              if (!data) throw new Error('Homepage funding RPC returned no data')
-              return data as FundingRpcPayload
-            }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
-          ),
-          loadCachedHomepageRpc(
-            createHomepageRpcCacheKey('get_latest_funding_year_municipality_spend'),
-            () => retryHomepageRpc(async () => {
-              const { data, error } = await supabase
-                .rpc('get_latest_funding_year_municipality_spend')
-                .abortSignal(controller.signal)
-              if (error) throw error
-              if (!data) throw new Error('Latest funding-year spend RPC returned no data')
-              return data as FundingSpendRpcPayload
-            }),
-            { ttlMs: 5 * 60 * 1000, useStaleOnError: true, useStaleWhileRevalidating: true, dedupeInFlight: true },
-          ),
-        ])
-
-        if (fundingResult.status === 'rejected') throw fundingResult.reason
-
-        const payload = fundingResult.value
-        const spendPayload = spendResult.status === 'fulfilled' ? spendResult.value : null
-        if (spendResult.status === 'rejected') {
-          if (import.meta.env.DEV) logWarn('[Funding] latest funding-year spend unavailable', spendResult.reason)
-          if (!cancelled) {
-            setSpendLoadError('Δεν ήταν δυνατή η φόρτωση της εκτίμησης δαπανών μέχρι σήμερα.')
-          }
-        }
-        const history = (Array.isArray(payload.history) ? payload.history : [])
-          .map<FundingHistoryEntry | null>((row) => {
-            const year = toNumber(row.year)
-            if (year == null) return null
-
-            return {
-              year,
-              regularAmount: toNumber(row.regular_amount) ?? 0,
-              emergencyAmount: toNumber(row.emergency_amount) ?? 0,
-              municipalityAmount: toNumber(row.municipality_amount) ?? 0,
-              syndesmosAmount: toNumber(row.syndesmos_amount) ?? 0,
-              totalAmount: toNumber(row.total_amount) ?? 0,
-            }
-          })
-          .filter((entry): entry is FundingHistoryEntry => entry !== null)
-
-        const nextFundingData: FundingData = {
-          yearMain: toNumber(payload.year_main) ?? currentYear,
-          yearPrevious: toNumber(payload.year_previous) ?? currentYear - 1,
-          historyStartYear: toNumber(payload.history_start_year) ?? (history[0]?.year ?? 2016),
-          currentTotal: toNumber(payload.current_total) ?? 0,
-          currentSpendAmount: toNumber(spendPayload?.total_amount) ?? 0,
-          currentSpendYear: toNumber(spendPayload?.latest_funding_year) ?? (toNumber(payload.year_main) ?? currentYear),
-          previousTotal: toNumber(payload.previous_total) ?? 0,
-          currentRegularAmount: toNumber(payload.current_regular_amount) ?? 0,
-          currentEmergencyAmount: toNumber(payload.current_emergency_amount) ?? 0,
-          currentMunicipalityAmount: toNumber(payload.current_municipality_amount) ?? 0,
-          currentSyndesmosAmount: toNumber(payload.current_syndesmos_amount) ?? 0,
-          history,
-        }
-
-        if (!cancelled) setFundingData(nextFundingData)
-      } catch (error) {
-        if (isAbortError(error)) return
-        if (import.meta.env.DEV) logError('[Funding] failed to load homepage funding data', error)
-        if (!cancelled) {
-          setFundingData(null)
-          setLoadError('Δεν ήταν δυνατή η φόρτωση της κρατικής χρηματοδότησης προς δήμους και συνδέσμους δήμων.')
-        }
-      } finally {
-        if (!cancelled) setLoading(false)
-      }
-    }
-
-    loadFunding()
-    return () => {
-      cancelled = true
-      controller.abort()
-    }
-  }, [currentYear])
-
-  const fundingHistory = useMemo(() => fundingData?.history ?? [], [fundingData])
+  const fundingHistory = useMemo(() => fundingData.history, [fundingData.history])
   const fundingChartMax = useMemo(() => {
     const values = fundingHistory.map((entry) => entry.totalAmount).filter((value) => Number.isFinite(value))
     return values.length > 0 ? Math.max(1, ...values) : 1
   }, [fundingHistory])
   const fundingProgressPct = useMemo(() => {
-    if (!fundingData) return 0
-    if (spendLoadError) return 0
     if (!Number.isFinite(fundingData.currentTotal) || fundingData.currentTotal <= 0) return 0
     return Math.max(0, Math.min(100, (fundingData.currentSpendAmount / fundingData.currentTotal) * 100))
-  }, [fundingData, spendLoadError])
+  }, [fundingData])
   const fundingChartTicks = [1, 0.5, 0]
   const fundingDeltaPct = useMemo(() => {
-    if (!fundingData) return null
     if (!Number.isFinite(fundingData.previousTotal) || fundingData.previousTotal <= 0) return null
 
     const pct = ((fundingData.currentTotal - fundingData.previousTotal) / fundingData.previousTotal) * 100
@@ -258,24 +91,6 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
     }
   }, [fundingChartHover, fundingHistory])
 
-  if (loading) {
-    return (
-      <section id={anchorId} className="funding-hero hero section-rule dev-tag-anchor">
-        <div className="dev-tag-stack dev-tag-stack--right">
-          <ComponentTag name="Funding" />
-          <ComponentTag name="funding-hero hero section-rule" kind="CLASS" />
-        </div>
-        <div className="hero-left funding-hero__left dev-tag-anchor">
-          <ComponentTag name="funding-hero__left" kind="CLASS" className="component-tag--overlay" />
-          <DataLoadingCard message="Ανακτάται η χρηματοδότηση προς δήμους και συνδέσμους δήμων." />
-        </div>
-        <div className="hero-right funding-hero__right dev-tag-anchor">
-          <ComponentTag name="funding-hero__right" kind="CLASS" className="component-tag--overlay" />
-        </div>
-      </section>
-    )
-  }
-
   return (
     <section id={anchorId} className="funding-hero hero section-rule dev-tag-anchor">
       <div className="dev-tag-stack dev-tag-stack--right">
@@ -287,9 +102,9 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
         <ComponentTag name="funding-hero__left" kind="CLASS" className="component-tag--overlay" />
         <div className="hero-amount-card funding-hero__amount-card dev-tag-anchor">
           <ComponentTag name="funding-hero__amount-card" kind="CLASS" className="component-tag--overlay" />
-          <div className="eyebrow">{`ΧΡΗΜΑΤΟΔΟΤΗΣΗ - ${fundingData?.yearMain ?? currentYear}`}</div>
+          <div className="eyebrow">{`ΧΡΗΜΑΤΟΔΟΤΗΣΗ - ${renderedYear}`}</div>
           <div className="funding-hero__headline">
-            <div className="hero-amount">{formatEurCompact(fundingData?.currentTotal ?? 0)}</div>
+            <div className="hero-amount">{formatEurCompact(fundingData.currentTotal)}</div>
             <div className="funding-hero__delta" style={{ color: pctColor(fundingDeltaPct) }}>
               {fundingDeltaPct == null ? '—' : formatPct(fundingDeltaPct)}
             </div>
@@ -297,46 +112,34 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
           <p className="funding-hero__lede">
             Ετήσια κρατική χρηματοδότηση για δράσεις πυροπροστασίας προς δήμους και συνδέσμους δήμων.
           </p>
-          {!loadError && !spendLoadError ? (
-            <div
-              className="funding-hero__progress"
-              aria-label={`Δαπάνες ${formatEur(fundingData?.currentSpendAmount ?? 0)} σε σχέση με χρηματοδότηση ${formatEur(fundingData?.currentTotal ?? 0)} για το ${fundingData?.currentSpendYear ?? fundingData?.yearMain ?? currentYear}`}
-            >
-              <div className="funding-hero__progress-divider" aria-hidden="true" />
-              <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών Δήμων μέχρι σήμερα: ${formatEurCompactMillions(fundingData?.currentSpendAmount ?? 0)}`}</p>
-              <div className="funding-hero__progress-track" aria-hidden="true">
-                <div
-                  className="funding-hero__progress-fill"
-                  style={{ width: `${fundingProgressPct}%` }}
-                />
-              </div>
-              <div className="funding-hero__progress-labels" aria-hidden="true">
-                <span>0 €</span>
-                <span>{formatEurCompactMillions(fundingData?.currentTotal ?? 0)}</span>
-              </div>
+          <div
+            className="funding-hero__progress"
+            aria-label={`Δαπάνες ${formatEur(fundingData.currentSpendAmount)} σε σχέση με χρηματοδότηση ${formatEur(fundingData.currentTotal)} για το ${fundingData.currentSpendYear}`}
+          >
+            <div className="funding-hero__progress-divider" aria-hidden="true" />
+            <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών Δήμων μέχρι σήμερα: ${formatEurCompactMillions(fundingData.currentSpendAmount)}`}</p>
+            <div className="funding-hero__progress-track" aria-hidden="true">
+              <div
+                className="funding-hero__progress-fill"
+                style={{ width: `${fundingProgressPct}%` }}
+              />
             </div>
-          ) : null}
+            <div className="funding-hero__progress-labels" aria-hidden="true">
+              <span>0 €</span>
+              <span>{formatEurCompactMillions(fundingData.currentTotal)}</span>
+            </div>
+          </div>
 
-          {!loadError && spendLoadError ? (
-            <p className="funding-hero__error">{spendLoadError}</p>
-          ) : null}
-
-          {loadError ? (
-            <p className="funding-hero__error">{loadError}</p>
-          ) : (
-            <>
-              <div className="hero-subgrid funding-hero__subgrid">
-                <div>
-                  <span className="label">Δήμοι</span>
-                  <strong>{formatEur(fundingData?.currentMunicipalityAmount ?? 0)}</strong>
-                </div>
-                <div>
-                  <span className="label">Σύνδεσμοι δήμων</span>
-                  <strong>{formatEur(fundingData?.currentSyndesmosAmount ?? 0)}</strong>
-                </div>
-              </div>
-            </>
-          )}
+          <div className="hero-subgrid funding-hero__subgrid">
+            <div>
+              <span className="label">Δήμοι</span>
+              <strong>{formatEur(fundingData.currentMunicipalityAmount)}</strong>
+            </div>
+            <div>
+              <span className="label">Σύνδεσμοι δήμων</span>
+              <strong>{formatEur(fundingData.currentSyndesmosAmount)}</strong>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -371,7 +174,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                     onMouseLeave={() => setFundingChartHover(null)}
                   >
                     {fundingHistory.map((entry) => {
-                      const isCurrentYear = entry.year === (fundingData?.yearMain ?? currentYear)
+                      const isCurrentYear = entry.year === renderedYear
                       const regularHeight = (entry.regularAmount / fundingChartMax) * 100
                       const emergencyHeight = (entry.emergencyAmount / fundingChartMax) * 100
 
@@ -450,7 +253,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                 </div>
 
                 <p className="note-text funding-hero__chart-note">
-                  {`Από ${fundingData?.historyStartYear ?? fundingHistory[0]?.year ?? 2016} έως ${fundingData?.yearMain ?? currentYear}.`}
+                  {`Από ${fundingData.historyStartYear} έως ${renderedYear}.`}
                 </p>
                 </>
               ) : (
