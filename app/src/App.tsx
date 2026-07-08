@@ -15,6 +15,7 @@ import { buildContractsPageHref } from './lib/contractsPageHref'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from './lib/diavgeiaDecision'
 import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from './lib/homepageRpcCache'
 import { isAbortError } from './lib/isAbortError'
+import { logError } from './lib/logger'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
 
@@ -362,7 +363,8 @@ function pctColor(value: number | null): string {
 }
 
 function logLoadError(context: string, error: unknown) {
-  console.error(`Failed to load ${context}`, error)
+  if (!import.meta.env.DEV) return
+  logError(`Failed to load ${context}`, error)
 }
 
 function dayFraction(dayOfYear: number, yearDays: number): number {
@@ -786,7 +788,7 @@ export default function App() {
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
-          logLoadError('latest contracts', error)
+          if (import.meta.env.DEV) logLoadError('latest contracts', error)
           setLatestContracts([])
           setLatestDiavgeiaDecisions([])
           setLatestContractsError('Δεν ήταν δυνατή η φόρτωση των πιο πρόσφατων συμβάσεων και αποφάσεων Διαύγειας.')
@@ -1164,7 +1166,7 @@ export default function App() {
         const nextSections = await Promise.all(HOME_ORGANIZATION_SECTIONS.map((config) => loadOrganizationSection(config)))
         if (!cancelled) setOrganizationSections(nextSections)
       } catch (error) {
-        if (!isAbortError(error) && !cancelled) logLoadError('homepage organization sections', error)
+        if (import.meta.env.DEV && !isAbortError(error) && !cancelled) logLoadError('homepage organization sections', error)
       } finally {
         if (!cancelled) setOrganizationSectionsLoading(false)
       }
@@ -1620,7 +1622,7 @@ export default function App() {
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
-          logLoadError('homepage region section', error)
+          if (import.meta.env.DEV) logLoadError('homepage region section', error)
           setHomeRegionConfig(DEFAULT_HOME_REGION_SECTION)
           setRegionSection(
             createEmptyOrganizationSectionData(
@@ -1748,7 +1750,7 @@ export default function App() {
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
-          logLoadError('featured beneficiaries', error)
+          if (import.meta.env.DEV) logLoadError('featured beneficiaries', error)
           setFeaturedBeneficiaries([])
         }
       } finally {
@@ -1816,7 +1818,7 @@ export default function App() {
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
-          console.error('Failed to load hero section data', error)
+          if (import.meta.env.DEV) logError('Failed to load hero section data', error)
           setHeroStatsError('Δεν ήταν δυνατή η φόρτωση των στοιχείων.')
         }
       } finally {

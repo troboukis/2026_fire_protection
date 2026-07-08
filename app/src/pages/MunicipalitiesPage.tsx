@@ -16,6 +16,7 @@ import { isContractActiveInYear } from '../lib/contractWindow'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
 import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
+import { logError } from '../lib/logger'
 import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows } from '../lib/paymentSummary'
@@ -1250,7 +1251,7 @@ export default function MunicipalitiesPage() {
         }
       } catch (error) {
         if (!cancelled) {
-          console.error('[MunicipalitiesPage] latest municipality contracts failed', error)
+          if (import.meta.env.DEV) logError('[MunicipalitiesPage] latest municipality contracts failed', error)
           setLatestMunicipalityContractRows([])
         }
       } finally {
@@ -1286,7 +1287,7 @@ export default function MunicipalitiesPage() {
         if (!cancelled) setMunicipalityDiavgeiaDecisions(mapped)
       } catch (error) {
         if (!cancelled) {
-          console.error('[MunicipalitiesPage] municipality diavgeia decisions failed', error)
+          if (import.meta.env.DEV) logError('[MunicipalitiesPage] municipality diavgeia decisions failed', error)
           setMunicipalityDiavgeiaDecisions([])
         }
       } finally {
@@ -1401,7 +1402,7 @@ export default function MunicipalitiesPage() {
         if (!cancelled) setFeaturedMunicipalityBeneficiaries(rows)
       } catch (error) {
         if (!cancelled) {
-          console.error('[MunicipalitiesPage] featured municipality beneficiaries failed', error)
+          if (import.meta.env.DEV) logError('[MunicipalitiesPage] featured municipality beneficiaries failed', error)
           setFeaturedMunicipalityBeneficiaries([])
         }
       } finally {
@@ -2744,7 +2745,7 @@ export default function MunicipalitiesPage() {
         if (!cancelled) setWorkRows(rows)
       } catch (error) {
         if (!cancelled) {
-          console.error('[MunicipalitiesPage] municipality works failed', error)
+          if (import.meta.env.DEV) logError('[MunicipalitiesPage] municipality works failed', error)
           setWorkRows([])
         }
       } finally {

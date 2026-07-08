@@ -14,6 +14,7 @@ import ProfileSectionCard from './ProfileSectionCard'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
+import { logError } from '../lib/logger'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows } from '../lib/paymentSummary'
 import { supabase } from '../lib/supabase'
@@ -873,7 +874,7 @@ export default function EnvironmentMinistryDashboard() {
           setLoading(false)
         }
       } catch (loadError) {
-        console.error('[EnvironmentMinistryDashboard] failed', loadError)
+        if (import.meta.env.DEV) logError('[EnvironmentMinistryDashboard] failed', loadError)
         if (!cancelled) {
           setData(createEmptyDashboardData())
           setError('Δεν ήταν δυνατή η φόρτωση του dashboard του Υπουργείου Περιβάλλοντος.')

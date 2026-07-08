@@ -6,6 +6,7 @@ import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/cu
 import { isAbortError } from '../lib/isAbortError'
 import { CURRENT_FIRE_HOVER_EVENT, type CurrentFireHoverDetail } from '../lib/currentFireHover'
 import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
+import { logError } from '../lib/logger'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
@@ -706,7 +707,7 @@ export default function SituationMap() {
       const { data, error } = await currentFiresQuery()
       if (cancelled) return
       if (error) {
-        console.error('Failed to refresh current fires for situation map', error)
+        if (import.meta.env.DEV) logError('Failed to refresh current fires for situation map', error)
         return
       }
       const nextActiveFires = mapCurrentFireRows((data ?? []) as CurrentFireRow[])

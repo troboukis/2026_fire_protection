@@ -12,7 +12,7 @@ function getLastCommitIso(): string {
 }
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [
     react(),
     {
@@ -57,6 +57,12 @@ export default defineConfig({
   define: {
     __LAST_COMMIT_ISO__: JSON.stringify(getLastCommitIso()),
   },
+  esbuild: command === 'build'
+    ? {
+        drop: ['console', 'debugger'],
+        pure: ['logDebug', 'logWarn', 'logError'],
+      }
+    : undefined,
   build: {
     rollupOptions: {
       output: {
@@ -69,4 +75,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))

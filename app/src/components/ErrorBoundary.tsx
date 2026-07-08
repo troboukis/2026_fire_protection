@@ -1,4 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react'
+import { logError } from '../lib/logger'
 
 type Props = {
   fallback?: ReactNode
@@ -17,8 +18,8 @@ export default class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo): void {
-    // Keep a console trail for fast debugging in browser devtools.
-    console.error('[ErrorBoundary] component crash', error, info)
+    if (!import.meta.env.DEV) return
+    logError('[ErrorBoundary] component crash', error, info)
   }
 
   render(): ReactNode {
@@ -28,4 +29,3 @@ export default class ErrorBoundary extends Component<Props, State> {
     return this.props.children
   }
 }
-

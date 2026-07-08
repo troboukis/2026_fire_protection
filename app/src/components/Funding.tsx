@@ -3,6 +3,7 @@ import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import { createHomepageRpcCacheKey, loadCachedHomepageRpc, retryHomepageRpc } from '../lib/homepageRpcCache'
 import { isAbortError } from '../lib/isAbortError'
+import { logError, logWarn } from '../lib/logger'
 import { supabase } from '../lib/supabase'
 
 type FundingHistoryEntry = {
@@ -166,7 +167,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
         const payload = fundingResult.value
         const spendPayload = spendResult.status === 'fulfilled' ? spendResult.value : null
         if (spendResult.status === 'rejected') {
-          console.warn('[Funding] latest funding-year spend unavailable', spendResult.reason)
+          if (import.meta.env.DEV) logWarn('[Funding] latest funding-year spend unavailable', spendResult.reason)
           if (!cancelled) {
             setSpendLoadError('Δεν ήταν δυνατή η φόρτωση της εκτίμησης δαπανών μέχρι σήμερα.')
           }
@@ -205,7 +206,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
         if (!cancelled) setFundingData(nextFundingData)
       } catch (error) {
         if (isAbortError(error)) return
-        console.error('[Funding] failed to load homepage funding data', error)
+        if (import.meta.env.DEV) logError('[Funding] failed to load homepage funding data', error)
         if (!cancelled) {
           setFundingData(null)
           setLoadError('Δεν ήταν δυνατή η φόρτωση της κρατικής χρηματοδότησης προς δήμους και συνδέσμους δήμων.')
