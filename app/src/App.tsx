@@ -118,6 +118,12 @@ type DiavgeiaPageRpcRow = {
   diavgeia_document_type_decision_uid: string | null
   document_url: string | null
   spending_contractors_value: string | null
+  municipality_key: string | null
+  protocol_number: string | null
+  thematic_categories: string | null
+  spending_signers: string | null
+  spending_contractors_name: string | null
+  spending_contractors_afm: string | null
 }
 
 type HeroStats = {
@@ -699,6 +705,7 @@ export default function App() {
           ),
           loadCachedHomepageRpc(
             createHomepageRpcCacheKey('get_diavgeia_page', {
+              schema_version: 3,
               p_q: null,
               p_date_from: null,
               p_date_to: null,
@@ -803,6 +810,12 @@ export default function App() {
           diavgeia_document_type_decision_uid: row.diavgeia_document_type_decision_uid,
           spending_contractors_value: row.spending_contractors_value,
           document_url: row.document_url,
+          municipality_key: row.municipality_key,
+          protocol_number: row.protocol_number,
+          thematic_categories: row.thematic_categories,
+          spending_signers: row.spending_signers,
+          spending_contractors_name: row.spending_contractors_name,
+          spending_contractors_afm: row.spending_contractors_afm,
         } satisfies MunicipalityDiavgeiaDecisionRpcRow))
 
         setLatestContracts(cards)

@@ -14,7 +14,13 @@ RETURNS TABLE (
   ada text,
   diavgeia_document_type_decision_uid text,
   spending_contractors_value text,
-  document_url text
+  document_url text,
+  municipality_key text,
+  protocol_number text,
+  thematic_categories text,
+  spending_signers text,
+  spending_contractors_name text,
+  spending_contractors_afm text
 )
 LANGUAGE sql
 SECURITY INVOKER
@@ -29,7 +35,13 @@ SELECT
   d.ada,
   d.diavgeia_document_type_decision_uid,
   d.spending_contractors_value,
-  d.document_url
+  d.document_url,
+  d.municipality_key,
+  d.protocol_number,
+  d.thematic_categories,
+  d.spending_signers,
+  d.spending_contractors_name,
+  d.spending_contractors_afm
 FROM public.diavgeia d
 WHERE d.municipality_key = p_municipality_key
   AND COALESCE(d.publish_timestamp, d.submission_timestamp) >= make_timestamptz(p_year, 1, 1, 0, 0, 0)

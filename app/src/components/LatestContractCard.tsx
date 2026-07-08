@@ -24,10 +24,19 @@ type Props = {
   contractTypeTransform?: (value: string) => string
 }
 
+function truncateWords(value: string, maxWords: number): string {
+  const text = value.trim()
+  if (!text) return '—'
+  const words = text.split(/\s+/).filter(Boolean)
+  if (words.length <= maxWords) return text
+  return `${words.slice(0, maxWords).join(' ')} ...`
+}
+
 export default function LatestContractCard({ item, onOpen, onMunicipalityClick, contractTypeTransform }: Props) {
   const clickable = typeof onOpen === 'function'
   const transformedContractType = contractTypeTransform ? contractTypeTransform(item.contractType) : item.contractType
   const municipalityClickable = typeof onMunicipalityClick === 'function' && !!item.municipalityKey
+  const visibleTitle = truncateWords(item.what, 15)
 
   const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (!clickable) return
@@ -49,7 +58,7 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
         >{item.who}</span>
         <span className="wire-item__date">{item.when}</span>
       </div>
-      <h2>{item.what}</h2>
+      <h2 title={item.what}>{visibleTitle}</h2>
       <div className="wire-item__rule" aria-hidden="true" />
       <p className="wire-item__subtitle">{item.why}</p>
       <div className="wire-item__footer">
