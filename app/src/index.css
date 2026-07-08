@@ -4519,9 +4519,14 @@ main {
 .contract-modal__header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 1rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.6rem;
+}
+
+.contract-modal__header > div:first-child {
+  min-width: 0;
 }
 
 .contract-modal__header h2 {
@@ -4614,7 +4619,9 @@ main {
 
 .contract-modal__actions {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  align-self: flex-start;
+  flex-shrink: 0;
   gap: 0.45rem;
 }
 

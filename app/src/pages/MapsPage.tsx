@@ -1027,7 +1027,10 @@ export default function MapsPage() {
           p_year: mapYear,
         })
         if (error) throw error
-        const mapped = ((data ?? []) as MunicipalityDiavgeiaDecisionRpcRow[]).map(buildDiavgeiaDecisionCardView)
+        const mapped = ((data ?? []) as MunicipalityDiavgeiaDecisionRpcRow[]).map((row) => buildDiavgeiaDecisionCardView({
+          ...row,
+          municipality_key: row.municipality_key ?? selectedMunicipalityId,
+        }))
         if (!cancelled) setMunicipalityDiavgeiaDecisions(mapped)
       } catch (e) {
         if (!cancelled) {
