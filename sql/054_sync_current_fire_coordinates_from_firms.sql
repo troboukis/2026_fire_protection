@@ -74,8 +74,11 @@ BEGIN
 END;
 $$;
 
+REVOKE ALL ON FUNCTION public.sync_current_fire_coordinates_from_firms()
+FROM PUBLIC, anon, authenticated;
+
 GRANT EXECUTE ON FUNCTION public.sync_current_fire_coordinates_from_firms()
-TO anon, authenticated, service_role;
+TO service_role;
 
 DO $$
 BEGIN
