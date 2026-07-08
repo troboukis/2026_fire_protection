@@ -1781,7 +1781,13 @@ recent_diavgeia_decisions AS (
       'ada', COALESCE(NULLIF(BTRIM(d.ada), ''), '—'),
       'diavgeia_document_type_decision_uid', COALESCE(NULLIF(BTRIM(d.diavgeia_document_type_decision_uid), ''), '—'),
       'document_url', NULLIF(BTRIM(d.document_url), ''),
-      'spending_contractors_value', NULLIF(BTRIM(d.spending_contractors_value), '')
+      'spending_contractors_value', NULLIF(BTRIM(d.spending_contractors_value), ''),
+      'municipality_key', NULLIF(BTRIM(d.municipality_key), ''),
+      'protocol_number', NULLIF(BTRIM(d.protocol_number), ''),
+      'thematic_categories', NULLIF(BTRIM(d.thematic_categories), ''),
+      'spending_signers', NULLIF(BTRIM(d.spending_signers), ''),
+      'spending_contractors_name', NULLIF(BTRIM(d.spending_contractors_name), ''),
+      'spending_contractors_afm', NULLIF(BTRIM(d.spending_contractors_afm), '')
     ) AS payload,
     d.decision_date
   FROM (
@@ -3436,7 +3442,13 @@ RETURNS TABLE (
   ada text,
   diavgeia_document_type_decision_uid text,
   spending_contractors_value text,
-  document_url text
+  document_url text,
+  municipality_key text,
+  protocol_number text,
+  thematic_categories text,
+  spending_signers text,
+  spending_contractors_name text,
+  spending_contractors_afm text
 )
 LANGUAGE sql
 SECURITY INVOKER
@@ -3451,7 +3463,13 @@ SELECT
   d.ada,
   d.diavgeia_document_type_decision_uid,
   d.spending_contractors_value,
-  d.document_url
+  d.document_url,
+  d.municipality_key,
+  d.protocol_number,
+  d.thematic_categories,
+  d.spending_signers,
+  d.spending_contractors_name,
+  d.spending_contractors_afm
 FROM public.diavgeia d
 WHERE d.municipality_key = p_municipality_key
   AND COALESCE(d.publish_timestamp, d.submission_timestamp) >= make_timestamptz(p_year, 1, 1, 0, 0, 0)
@@ -3488,6 +3506,12 @@ RETURNS TABLE (
   diavgeia_document_type_decision_uid text,
   document_url text,
   spending_contractors_value text,
+  municipality_key text,
+  protocol_number text,
+  thematic_categories text,
+  spending_signers text,
+  spending_contractors_name text,
+  spending_contractors_afm text,
   min_decision_date timestamptz,
   max_decision_date timestamptz,
   total_count bigint
@@ -3507,7 +3531,13 @@ WITH base AS (
     d.ada,
     d.diavgeia_document_type_decision_uid,
     d.document_url,
-    d.spending_contractors_value
+    d.spending_contractors_value,
+    d.municipality_key,
+    d.protocol_number,
+    d.thematic_categories,
+    d.spending_signers,
+    d.spending_contractors_name,
+    d.spending_contractors_afm
   FROM public.diavgeia d
 ),
 filtered AS (
@@ -3563,6 +3593,12 @@ SELECT
   diavgeia_document_type_decision_uid,
   document_url,
   spending_contractors_value,
+  municipality_key,
+  protocol_number,
+  thematic_categories,
+  spending_signers,
+  spending_contractors_name,
+  spending_contractors_afm,
   min_decision_date,
   max_decision_date,
   total_count

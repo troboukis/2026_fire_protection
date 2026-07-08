@@ -795,11 +795,43 @@ main {
   text-decoration-color: var(--accent);
 }
 
+.wire-item__text-link,
+.contract-modal__text-link {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.wire-item__text-link:hover,
+.wire-item__text-link:focus-visible,
+.contract-modal__text-link:hover,
+.contract-modal__text-link:focus-visible {
+  color: #315f3d;
+  outline: none;
+}
+
 .wire-item.diavgeia-decision-card,
 .municipality-contract-strip .wire-item.diavgeia-decision-card,
 .maps-selection-panel__latest-items .wire-item.diavgeia-decision-card {
   background: #b5c7b5;
-  cursor: default;
+  cursor: pointer;
+}
+
+.news-wire__items .wire-item.diavgeia-decision-card:hover,
+.news-wire__items .wire-item.diavgeia-decision-card:focus-visible,
+.municipality-contract-strip .wire-item.diavgeia-decision-card:hover,
+.municipality-contract-strip .wire-item.diavgeia-decision-card:focus-visible,
+.maps-selection-panel__latest-items .wire-item.diavgeia-decision-card:hover,
+.maps-selection-panel__latest-items .wire-item.diavgeia-decision-card:focus-visible {
+  border-color: #5f835f;
 }
 
 .diavgeia-decision-card .wire-item__rule {
@@ -4612,6 +4644,36 @@ main {
 .contract-modal__icon-button:focus-visible {
   color: var(--accent);
   border-color: var(--accent);
+  outline: none;
+}
+
+.contract-modal--diavgeia {
+  border-color: #5f835f;
+  background:
+    linear-gradient(180deg, rgba(181, 199, 181, 0.18), transparent 10rem),
+    var(--paper);
+}
+
+.contract-modal--diavgeia .contract-modal__header {
+  border-bottom-color: #8daa8d;
+}
+
+.contract-modal--diavgeia .eyebrow,
+.contract-modal--diavgeia .contract-modal__amount {
+  color: #315f3d;
+}
+
+.contract-modal--diavgeia .contract-modal__highlight {
+  border-color: #8daa8d;
+  background: linear-gradient(90deg, rgba(95, 131, 95, 0.16), transparent 42%);
+}
+
+.contract-modal--diavgeia .contract-modal__icon-button:hover,
+.contract-modal--diavgeia .contract-modal__icon-button:focus-visible,
+.contract-modal--diavgeia .contract-modal__grid a:hover,
+.contract-modal--diavgeia .contract-modal__grid a:focus-visible {
+  color: #315f3d;
+  border-color: #315f3d;
   outline: none;
 }
 

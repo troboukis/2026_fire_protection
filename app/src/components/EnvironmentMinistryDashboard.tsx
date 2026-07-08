@@ -76,6 +76,12 @@ type DashboardRpcDiavgeiaDecision = {
   diavgeia_document_type_decision_uid: string | null
   document_url: string | null
   spending_contractors_value: string | null
+  municipality_key?: string | null
+  protocol_number?: string | null
+  thematic_categories?: string | null
+  spending_signers?: string | null
+  spending_contractors_name?: string | null
+  spending_contractors_afm?: string | null
 }
 
 type DashboardRpcFlowRow = {
@@ -417,6 +423,12 @@ function mapRpcDiavgeiaDecision(row: DashboardRpcDiavgeiaDecision, ministryName:
     amount: formatEurFromGreekText(row.spending_contractors_value),
     documentUrl: cleanText(row.document_url) ?? (ada !== '—' ? `https://diavgeia.gov.gr/doc/${ada}` : null),
     sortDate: decisionDateIso,
+    municipalityKey: cleanText(row.municipality_key),
+    protocolNumber: cleanText(row.protocol_number),
+    thematicCategories: cleanText(row.thematic_categories),
+    spendingSigners: cleanText(row.spending_signers),
+    spendingContractorsName: cleanText(row.spending_contractors_name),
+    spendingContractorsAfm: cleanText(row.spending_contractors_afm),
   }
 }
 
