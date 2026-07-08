@@ -2,7 +2,7 @@ import React, { Suspense, lazy, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App'
 import Layout from './components/Layout'
 import { initGA, trackPageView } from './analytics'
@@ -27,7 +27,7 @@ const MunicipalitiesPage = lazy(() => import('./pages/MunicipalitiesPage'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <RouteTracker />
       <Routes>
         <Route element={<Layout />}>
@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/maps" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MapsPage /></Suspense>} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
     <Analytics />
     <SpeedInsights />
   </React.StrictMode>,
