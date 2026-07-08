@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
  
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: current-fires-refresh
@@ -19,10 +19,20 @@ jobs:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
       NASA_FIRMS_MAP_KEY: ${{ secrets.NASA_FIRMS_MAP_KEY }}
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Sync branch to latest main
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -49,6 +59,14 @@ jobs:
             echo "GOOGLE_GEOCODING_API_KEY secret is required for current_fires geocoding."
             exit 1
           fi
+          if [ -z "${X_BEARER_TOKEN}" ]; then
+            echo "X_BEARER_TOKEN secret is required for reading @112Greece."
+            exit 1
+          fi
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "OPENAI_API_KEY secret is required for 112 notice extraction."
+            exit 1
+          fi
           case "${DATABASE_URL}" in
             DATABASE_URL=*)
               echo "DATABASE_URL secret must contain only the raw connection string, not 'DATABASE_URL=...'."
@@ -63,3 +81,31 @@ jobs:
       - name: Refresh NASA FIRMS active fires
         continue-on-error: true
         run: python src/fetch_firms_active_fires.py --skip-on-fetch-error
+
+      - name: Refresh 112 notices
+        run: |
+          mkdir -p logs
+          python src/fetch_112_greece.py
+
+      - name: Commit and push 112 notice state
+        if: always() && hashFiles('logs/x_112_greece_state.json') != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logs/x_112_greece_state.json
+          if git diff --cached --quiet; then
+            echo "No 112 notice state changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(data): update 112 notice state"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Push failed after ${attempt} attempts"
+              exit 1
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
