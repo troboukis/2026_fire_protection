@@ -8,6 +8,7 @@ type ContractModalContract = {
   when: string
   why: string
   beneficiary: string
+  beneficiaryGemi?: string | null
   contractType: string
   howMuch: string
   withoutVatAmount: string
@@ -69,7 +70,7 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
       value: (
         <BeneficiaryLink
           name={contract.beneficiary}
-          afm={contract.beneficiaryVat}
+          gemi={contract.beneficiaryGemi}
           className="beneficiary-link"
         />
       ),
@@ -138,7 +139,7 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
           <span className="contract-modal__arrow">→</span>
           <BeneficiaryLink
             name={contract.beneficiary}
-            afm={contract.beneficiaryVat}
+            gemi={contract.beneficiaryGemi}
             className="contract-modal__beneficiary beneficiary-link"
           />
         </div>

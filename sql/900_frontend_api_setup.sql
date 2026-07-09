@@ -399,6 +399,8 @@ GRANT EXECUTE ON FUNCTION public.get_hero_section_data(integer, integer) TO anon
 -- C) Contracts page RPC
 -- Source: sql/contracts_page_rpc.sql
 -- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_contracts_page(text, text, text, date, date, numeric, integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_contracts_page(
   p_q text DEFAULT NULL,
   p_org text DEFAULT NULL,
@@ -419,6 +421,7 @@ RETURNS TABLE (
   procedure_type_value text,
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   amount_without_vat numeric,
   diavgeia_ada text,
   total_count bigint
@@ -432,8 +435,11 @@ WITH payment_agg AS (
     py.procurement_id,
     SUM(py.amount_without_vat) AS amount_without_vat,
     STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_name), ''), ' | ') AS beneficiary_name,
-    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_vat_number), ''), ' | ') AS beneficiary_vat_number
+    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_vat_number), ''), ' | ') AS beneficiary_vat_number,
+    STRING_AGG(DISTINCT NULLIF(TRIM(b.gemi), ''), ' | ') AS beneficiary_gemi
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY py.procurement_id
 ),
 cpv_agg AS (
@@ -460,6 +466,7 @@ base AS (
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pa.beneficiary_name,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     COALESCE(
       org.organization_value,
       CASE
@@ -568,6 +575,7 @@ SELECT
   procedure_type_value,
   beneficiary_name,
   beneficiary_vat_number,
+  beneficiary_gemi,
   amount_without_vat,
   diavgeia_ada,
   total_count
@@ -583,12 +591,15 @@ GRANT EXECUTE ON FUNCTION public.get_contracts_page(text, text, text, date, date
 -- D) Featured records RPC
 -- Source: sql/featured_records_rpc.sql
 -- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_featured_beneficiaries(integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_featured_beneficiaries(
   p_year_main integer,
   p_limit integer DEFAULT 50
 )
 RETURNS TABLE (
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   beneficiary_name text,
   organization text,
   total_amount numeric,
@@ -638,6 +649,7 @@ WITH proc_ranked AS (
     COALESCE(py.amount_without_vat, 0) AS amount_without_vat,
     py.amount_with_vat,
     pb.beneficiary_vat_number,
+    NULLIF(TRIM(b.gemi), '') AS beneficiary_gemi,
     COALESCE(
       NULLIF(TRIM(b.beneficiary_name), ''),
       NULLIF(TRIM(pb.beneficiary_vat_number), '')
@@ -704,6 +716,7 @@ dedup_base AS (
     pr.amount_without_vat,
     pr.amount_with_vat,
     pr.beneficiary_vat_number,
+    pr.beneficiary_gemi,
     COALESCE(pr.beneficiary_name, pr.beneficiary_vat_number) AS beneficiary_name,
     COALESCE(NULLIF(TRIM(pr.signers), ''), '—') AS signers,
     pr.payment_ref_no
@@ -763,6 +776,7 @@ base AS (
     db.amount_without_vat,
     db.amount_with_vat,
     db.beneficiary_vat_number,
+    db.beneficiary_gemi,
     db.beneficiary_name,
     db.signers,
     db.payment_ref_no
@@ -843,6 +857,7 @@ base_enriched AS (
     b.amount_without_vat,
     b.amount_with_vat,
     b.beneficiary_vat_number,
+    b.beneficiary_gemi,
     b.beneficiary_name,
     b.signers,
     b.payment_ref_no,
@@ -930,6 +945,7 @@ beneficiary_cpv_ranked AS (
 relevant_ranked AS (
   SELECT
     b.beneficiary_vat_number,
+    b.beneficiary_gemi,
     b.procurement_id,
     jsonb_build_object(
       'id', b.procurement_id,
@@ -948,6 +964,7 @@ relevant_ranked AS (
       'end_date', b.end_date,
       'organization_vat_number', b.organization_vat_number,
       'beneficiary_vat_number', b.beneficiary_vat_number,
+      'beneficiary_gemi', b.beneficiary_gemi,
       'beneficiary_name', b.beneficiary_name,
       'signers', b.signers,
       'assign_criteria', b.assign_criteria,
@@ -978,10 +995,12 @@ relevant_agg AS (
     rr.beneficiary_vat_number,
     jsonb_agg(rr.contract_json ORDER BY rr.rn) AS relevant_contracts
   FROM relevant_ranked rr
+  WHERE rr.rn <= 5
   GROUP BY rr.beneficiary_vat_number
 )
 SELECT
   tb.beneficiary_vat_number,
+  NULLIF(TRIM(bg.gemi), '') AS beneficiary_gemi,
   COALESCE(bnr.beneficiary_name, tb.beneficiary_vat_number) AS beneficiary_name,
   COALESCE(bor.organization_value, '—') AS organization,
   tb.total_amount,
@@ -1005,6 +1024,8 @@ FROM top_beneficiaries tb
 LEFT JOIN beneficiary_name_ranked bnr
   ON bnr.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bnr.rn = 1
+LEFT JOIN public.beneficiary bg
+  ON bg.beneficiary_vat_number = tb.beneficiary_vat_number
 LEFT JOIN beneficiary_org_ranked bor
   ON bor.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bor.rn = 1
@@ -1019,7 +1040,8 @@ LEFT JOIN relevant_agg ra
 ORDER BY tb.total_amount DESC, tb.contract_count DESC, tb.beneficiary_vat_number;
 $$;
 
-GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer) TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer)
+TO anon, authenticated, service_role;
 
 -- -------------------------------------------------------------
 -- E) Municipality map spend RPC
@@ -1450,6 +1472,11 @@ payment_agg AS (
       STRING_AGG(DISTINCT NULLIF(BTRIM(pb.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(pb.beneficiary_vat_number), '')),
       STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_vat_number), ''))
     ) AS beneficiary_vat_number,
+    STRING_AGG(
+      DISTINCT NULLIF(BTRIM(COALESCE(b.gemi, b_py.gemi)), ''),
+      ' | '
+      ORDER BY NULLIF(BTRIM(COALESCE(b.gemi, b_py.gemi)), '')
+    ) AS beneficiary_gemi,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.signers), ''), ' | ' ORDER BY NULLIF(BTRIM(py.signers), '')) AS signers,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.payment_ref_no), ''), ' | ' ORDER BY NULLIF(BTRIM(py.payment_ref_no), '')) AS payment_ref_no,
     MAX(py.fiscal_year) AS fiscal_year
@@ -1458,6 +1485,8 @@ payment_agg AS (
     ON pb.payment_id = py.id
   LEFT JOIN public.beneficiary b
     ON b.beneficiary_vat_number = pb.beneficiary_vat_number
+  LEFT JOIN public.beneficiary b_py
+    ON b_py.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY py.procurement_id
 ),
 proc_ranked AS (
@@ -1494,6 +1523,7 @@ proc_ranked AS (
     pa.amount_with_vat,
     pa.beneficiary_name,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     pa.signers,
     pa.payment_ref_no,
     pa.fiscal_year,
@@ -1690,6 +1720,7 @@ featured_contracts AS (
       'no_end_date', COALESCE(rc.no_end_date, FALSE),
       'organization_vat_number', COALESCE(NULLIF(BTRIM(rc.organization_vat_number), ''), '—'),
       'beneficiary_vat_number', COALESCE(NULLIF(BTRIM(rc.beneficiary_vat_number), ''), '—'),
+      'beneficiary_gemi', NULLIF(BTRIM(rc.beneficiary_gemi), ''),
       'signers', COALESCE(NULLIF(BTRIM(rc.signers), ''), '—'),
       'assign_criteria', COALESCE(NULLIF(BTRIM(rc.assign_criteria), ''), '—'),
       'contract_kind', COALESCE(NULLIF(BTRIM(rc.contract_type), ''), '—'),
@@ -1741,6 +1772,7 @@ recent_active_contracts AS (
       'no_end_date', COALESCE(ac.no_end_date, FALSE),
       'organization_vat_number', COALESCE(NULLIF(BTRIM(ac.organization_vat_number), ''), '—'),
       'beneficiary_vat_number', COALESCE(NULLIF(BTRIM(ac.beneficiary_vat_number), ''), '—'),
+      'beneficiary_gemi', NULLIF(BTRIM(ac.beneficiary_gemi), ''),
       'signers', COALESCE(NULLIF(BTRIM(ac.signers), ''), '—'),
       'assign_criteria', COALESCE(NULLIF(BTRIM(ac.assign_criteria), ''), '—'),
       'contract_kind', COALESCE(NULLIF(BTRIM(ac.contract_type), ''), '—'),
@@ -2122,6 +2154,7 @@ RETURNS TABLE (
   procedure_type_value text,
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   amount_without_vat numeric,
   amount_with_vat numeric,
   reference_number text,
@@ -2159,11 +2192,14 @@ WITH payment_first AS (
     py.procurement_id,
     NULLIF(BTRIM(py.beneficiary_name), '') AS beneficiary_name,
     NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    NULLIF(BTRIM(b.gemi), '') AS beneficiary_gemi,
     NULLIF(BTRIM(py.signers), '') AS signers,
     NULLIF(BTRIM(py.payment_ref_no), '') AS payment_ref_no,
     py.amount_without_vat,
     py.amount_with_vat
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   ORDER BY py.procurement_id, py.id
 ),
 cpv_dedup AS (
@@ -2196,6 +2232,7 @@ base AS (
     p.procedure_type_value,
     pf.beneficiary_name,
     pf.beneficiary_vat_number,
+    pf.beneficiary_gemi,
     COALESCE(pf.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pf.amount_with_vat,
     p.reference_number,
@@ -2348,6 +2385,7 @@ SELECT
   r.procedure_type_value,
   r.beneficiary_name,
   r.beneficiary_vat_number,
+  r.beneficiary_gemi,
   r.amount_without_vat,
   r.amount_with_vat,
   r.reference_number,
@@ -2385,6 +2423,8 @@ GRANT EXECUTE ON FUNCTION public.get_latest_contract_cards(integer) TO anon, aut
 -- -------------------------------------------------------------
 -- K) Municipality featured beneficiaries RPC
 -- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_municipality_featured_beneficiaries(text, integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_municipality_featured_beneficiaries(
   p_municipality_key text,
   p_year integer,
@@ -2393,6 +2433,7 @@ CREATE OR REPLACE FUNCTION public.get_municipality_featured_beneficiaries(
 RETURNS TABLE (
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   organization text,
   total_amount numeric,
   contract_count integer,
@@ -2407,7 +2448,7 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY INVOKER
 SET search_path = public
-AS $frontend_municipality_featured$
+AS $$
 WITH municipality_lookup AS (
   SELECT COALESCE(
     NULLIF(BTRIM(m.municipality_normalized_value), ''),
@@ -2427,6 +2468,7 @@ payment_agg AS (
       CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
     ) AS beneficiary_key,
     NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    NULLIF(BTRIM(b.gemi), '') AS beneficiary_gemi,
     COALESCE(
       NULLIF(BTRIM(py.beneficiary_name), ''),
       NULLIF(BTRIM(py.beneficiary_vat_number), ''),
@@ -2437,8 +2479,11 @@ payment_agg AS (
     (array_agg(NULLIF(BTRIM(py.signers), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.signers), '') IS NOT NULL))[1] AS signers,
     (array_agg(NULLIF(BTRIM(py.payment_ref_no), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.payment_ref_no), '') IS NOT NULL))[1] AS payment_ref_no
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY
     py.procurement_id,
+    NULLIF(BTRIM(b.gemi), ''),
     COALESCE(
       NULLIF(BTRIM(py.beneficiary_vat_number), ''),
       CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
@@ -2506,6 +2551,7 @@ base AS (
     END AS authority_scope,
     pa.beneficiary_key,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     pa.beneficiary_name,
     pa.amount_without_vat,
     pa.amount_with_vat,
@@ -2657,6 +2703,7 @@ relevant_ranked AS (
       'end_date', f.end_date,
       'organization_vat_number', f.organization_vat_number,
       'beneficiary_vat_number', f.beneficiary_vat_number,
+      'beneficiary_gemi', f.beneficiary_gemi,
       'beneficiary_name', f.beneficiary_name,
       'signers', f.signers,
       'assign_criteria', f.assign_criteria,
@@ -2695,6 +2742,7 @@ relevant_agg AS (
 SELECT
   COALESCE(nr.beneficiary_name, '—') AS beneficiary_name,
   nr.beneficiary_vat_number,
+  NULLIF(BTRIM(bg.gemi), '') AS beneficiary_gemi,
   COALESCE(orx.organization_value, '—') AS organization,
   tb.total_amount,
   tb.contract_count,
@@ -2717,6 +2765,8 @@ FROM top_beneficiaries tb
 LEFT JOIN name_ranked nr
   ON nr.beneficiary_key = tb.beneficiary_key
  AND nr.rn = 1
+LEFT JOIN public.beneficiary bg
+  ON bg.beneficiary_vat_number = nr.beneficiary_vat_number
 LEFT JOIN org_ranked orx
   ON orx.beneficiary_key = tb.beneficiary_key
  AND orx.rn = 1
@@ -2729,7 +2779,7 @@ LEFT JOIN cpv_ranked cr
 LEFT JOIN relevant_agg ra
   ON ra.beneficiary_key = tb.beneficiary_key
 ORDER BY tb.total_amount DESC, tb.contract_count DESC, COALESCE(nr.beneficiary_name, tb.beneficiary_key);
-$frontend_municipality_featured$;
+$$;
 
 GRANT EXECUTE ON FUNCTION public.get_municipality_featured_beneficiaries(text, integer, integer) TO anon, authenticated, service_role;
 

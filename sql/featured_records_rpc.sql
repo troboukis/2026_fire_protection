@@ -1,9 +1,12 @@
+DROP FUNCTION IF EXISTS public.get_featured_beneficiaries(integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_featured_beneficiaries(
   p_year_main integer,
   p_limit integer DEFAULT 50
 )
 RETURNS TABLE (
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   beneficiary_name text,
   organization text,
   total_amount numeric,
@@ -53,6 +56,7 @@ WITH proc_ranked AS (
     COALESCE(py.amount_without_vat, 0) AS amount_without_vat,
     py.amount_with_vat,
     pb.beneficiary_vat_number,
+    NULLIF(TRIM(b.gemi), '') AS beneficiary_gemi,
     COALESCE(
       NULLIF(TRIM(b.beneficiary_name), ''),
       NULLIF(TRIM(pb.beneficiary_vat_number), '')
@@ -119,6 +123,7 @@ dedup_base AS (
     pr.amount_without_vat,
     pr.amount_with_vat,
     pr.beneficiary_vat_number,
+    pr.beneficiary_gemi,
     COALESCE(pr.beneficiary_name, pr.beneficiary_vat_number) AS beneficiary_name,
     COALESCE(NULLIF(TRIM(pr.signers), ''), '—') AS signers,
     pr.payment_ref_no
@@ -178,6 +183,7 @@ base AS (
     db.amount_without_vat,
     db.amount_with_vat,
     db.beneficiary_vat_number,
+    db.beneficiary_gemi,
     db.beneficiary_name,
     db.signers,
     db.payment_ref_no
@@ -258,6 +264,7 @@ base_enriched AS (
     b.amount_without_vat,
     b.amount_with_vat,
     b.beneficiary_vat_number,
+    b.beneficiary_gemi,
     b.beneficiary_name,
     b.signers,
     b.payment_ref_no,
@@ -345,6 +352,7 @@ beneficiary_cpv_ranked AS (
 relevant_ranked AS (
   SELECT
     b.beneficiary_vat_number,
+    b.beneficiary_gemi,
     b.procurement_id,
     jsonb_build_object(
       'id', b.procurement_id,
@@ -363,6 +371,7 @@ relevant_ranked AS (
       'end_date', b.end_date,
       'organization_vat_number', b.organization_vat_number,
       'beneficiary_vat_number', b.beneficiary_vat_number,
+      'beneficiary_gemi', b.beneficiary_gemi,
       'beneficiary_name', b.beneficiary_name,
       'signers', b.signers,
       'assign_criteria', b.assign_criteria,
@@ -393,10 +402,12 @@ relevant_agg AS (
     rr.beneficiary_vat_number,
     jsonb_agg(rr.contract_json ORDER BY rr.rn) AS relevant_contracts
   FROM relevant_ranked rr
+  WHERE rr.rn <= 5
   GROUP BY rr.beneficiary_vat_number
 )
 SELECT
   tb.beneficiary_vat_number,
+  NULLIF(TRIM(bg.gemi), '') AS beneficiary_gemi,
   COALESCE(bnr.beneficiary_name, tb.beneficiary_vat_number) AS beneficiary_name,
   COALESCE(bor.organization_value, '—') AS organization,
   tb.total_amount,
@@ -420,6 +431,8 @@ FROM top_beneficiaries tb
 LEFT JOIN beneficiary_name_ranked bnr
   ON bnr.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bnr.rn = 1
+LEFT JOIN public.beneficiary bg
+  ON bg.beneficiary_vat_number = tb.beneficiary_vat_number
 LEFT JOIN beneficiary_org_ranked bor
   ON bor.beneficiary_vat_number = tb.beneficiary_vat_number
  AND bor.rn = 1
@@ -434,4 +447,5 @@ LEFT JOIN relevant_agg ra
 ORDER BY tb.total_amount DESC, tb.contract_count DESC, tb.beneficiary_vat_number;
 $$;
 
-GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer) TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.get_featured_beneficiaries(integer, integer)
+TO anon, authenticated, service_role;

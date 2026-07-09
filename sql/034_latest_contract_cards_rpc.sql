@@ -13,6 +13,7 @@ RETURNS TABLE (
   procedure_type_value text,
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   amount_without_vat numeric,
   amount_with_vat numeric,
   reference_number text,
@@ -50,11 +51,14 @@ WITH payment_first AS (
     py.procurement_id,
     NULLIF(BTRIM(py.beneficiary_name), '') AS beneficiary_name,
     NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    NULLIF(BTRIM(b.gemi), '') AS beneficiary_gemi,
     NULLIF(BTRIM(py.signers), '') AS signers,
     NULLIF(BTRIM(py.payment_ref_no), '') AS payment_ref_no,
     py.amount_without_vat,
     py.amount_with_vat
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   ORDER BY py.procurement_id, py.id
 ),
 cpv_dedup AS (
@@ -87,6 +91,7 @@ base AS (
     p.procedure_type_value,
     pf.beneficiary_name,
     pf.beneficiary_vat_number,
+    pf.beneficiary_gemi,
     COALESCE(pf.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pf.amount_with_vat,
     p.reference_number,
@@ -239,6 +244,7 @@ SELECT
   r.procedure_type_value,
   r.beneficiary_name,
   r.beneficiary_vat_number,
+  r.beneficiary_gemi,
   r.amount_without_vat,
   r.amount_with_vat,
   r.reference_number,

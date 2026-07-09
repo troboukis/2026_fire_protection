@@ -14,6 +14,7 @@ export type FeaturedRecordContract = LatestContractCardView & ContractModalContr
 export type BeneficiaryInsightRow = {
   beneficiary: string
   beneficiaryVat?: string | null
+  beneficiaryGemi?: string | null
   organization: string
   totalAmount: number
   contractCount: number
@@ -182,7 +183,7 @@ export default function FeaturedRecordsSection({
                 <h3>
                   <BeneficiaryLink
                     name={row.beneficiary}
-                    afm={row.beneficiaryVat}
+                    gemi={row.beneficiaryGemi}
                     className="beneficiary-link beneficiary-link--heading"
                   />
                 </h3>

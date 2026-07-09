@@ -11,6 +11,7 @@ import LatestContractCard from './LatestContractCard'
 import MapTilerLogo from './MapTilerLogo'
 import ProfileMetricCard from './ProfileMetricCard'
 import ProfileSectionCard from './ProfileSectionCard'
+import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
@@ -42,6 +43,7 @@ type DashboardRpcContract = {
   no_end_date: boolean | null
   organization_vat_number: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi?: string | null
   signers: string | null
   assign_criteria: string | null
   contract_kind: string | null
@@ -380,6 +382,7 @@ function mapRpcContract(contract: DashboardRpcContract, ministryName: string): D
     endDate: noEndDate ? 'Χωρίς λήξη' : formatDateEl(endDateIso),
     organizationVat: cleanText(contract.organization_vat_number) ?? '—',
     beneficiaryVat: cleanText(contract.beneficiary_vat_number) ?? '—',
+    beneficiaryGemi: cleanText(contract.beneficiary_gemi) ?? null,
     signers: cleanText(contract.signers) ?? '—',
     assignCriteria: cleanText(contract.assign_criteria) ?? '—',
     contractKind: cleanText(contract.contract_kind) ?? '—',
@@ -972,6 +975,7 @@ export default function EnvironmentMinistryDashboard() {
   const featuredBeneficiaryRows = useMemo<BeneficiaryInsightRow[]>(() => {
     type BeneficiaryGroup = {
       beneficiaryVat: string
+      beneficiaryGemi: string | null
       beneficiaryName: string
       totalAmount: number
       contractIds: Set<string>
@@ -993,6 +997,7 @@ export default function EnvironmentMinistryDashboard() {
 
       const group = groups.get(beneficiaryVat) ?? {
         beneficiaryVat,
+        beneficiaryGemi: cleanText(contract.beneficiaryGemi),
         beneficiaryName,
         totalAmount: 0,
         contractIds: new Set<string>(),
@@ -1005,6 +1010,7 @@ export default function EnvironmentMinistryDashboard() {
       }
 
       group.totalAmount += contract.rawAmount
+      group.beneficiaryGemi = group.beneficiaryGemi ?? cleanText(contract.beneficiaryGemi)
       group.contractIds.add(contract.id)
 
       if (contract.startDateIso && (!group.startDateIso || contract.startDateIso < group.startDateIso)) {
@@ -1082,6 +1088,7 @@ export default function EnvironmentMinistryDashboard() {
         return {
           beneficiary: toUpperEl(group.beneficiaryName),
           beneficiaryVat: group.beneficiaryVat,
+          beneficiaryGemi: group.beneficiaryGemi,
           organization,
           totalAmount: group.totalAmount,
           contractCount: group.contractIds.size,
@@ -1293,7 +1300,7 @@ export default function EnvironmentMinistryDashboard() {
                           .eq('procurement_id', contractId),
                       ])
 
-                      const payment = summarizePaymentRows((paymentRows ?? []) as Array<{
+                      const enrichedPaymentRows = await attachBeneficiaryGemi((paymentRows ?? []) as Array<{
                         beneficiary_name: string | null
                         beneficiary_vat_number: string | null
                         signers: string | null
@@ -1301,6 +1308,7 @@ export default function EnvironmentMinistryDashboard() {
                         amount_without_vat: number | null
                         amount_with_vat: number | null
                       }>)
+                      const payment = summarizePaymentRows(enrichedPaymentRows)
 
                       const nextContract = mapRpcContract({
                         id: procurement.id,
@@ -1325,6 +1333,7 @@ export default function EnvironmentMinistryDashboard() {
                         no_end_date: procurement.no_end_date ?? false,
                         organization_vat_number: cleanText(procurement.organization_vat_number) ?? '—',
                         beneficiary_vat_number: cleanText(payment.beneficiary_vat_number) ?? '—',
+                        beneficiary_gemi: cleanText(payment.beneficiary_gemi) ?? null,
                         signers: cleanText(payment.signers) ?? '—',
                         assign_criteria: cleanText(procurement.assign_criteria) ?? '—',
                         contract_kind: cleanText(procurement.contract_type) ?? '—',

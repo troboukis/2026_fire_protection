@@ -5,6 +5,7 @@ import ContractModal, { type ContractModalContract } from '../components/Contrac
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
+import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { summarizePaymentRows } from '../lib/paymentSummary'
@@ -20,6 +21,7 @@ type ContractRow = {
   procedure_type_value: string | null
   beneficiary_name: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi: string | null
   amount_without_vat: number | null
   diavgeia_ada: string | null
   total_count: number
@@ -299,6 +301,7 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
     amount_without_vat: number | null
     beneficiary_name: string | null
     beneficiary_vat_number: string | null
+    beneficiary_gemi: string | null
   }>()
   const cpvByProcurementId = new Map<number, string>()
 
@@ -329,6 +332,14 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
       paymentMap.get(row.procurement_id)!.push(row)
     }
 
+    const enrichedPaymentRows = await attachBeneficiaryGemi((paymentRows ?? []) as Array<{
+      procurement_id: number
+      beneficiary_name: string | null
+      beneficiary_vat_number: string | null
+      beneficiary_gemi?: string | null
+      amount_without_vat: number | null
+    }>)
+
     for (const [procurementId, rows] of paymentMap.entries()) {
       const amountWithoutVat = rows.reduce<number | null>((sum, row) => {
         if (row.amount_without_vat == null || Number.isNaN(Number(row.amount_without_vat))) return sum
@@ -336,10 +347,17 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
       }, null)
       const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
       const beneficiaryVatNumbers = Array.from(new Set(rows.map((row) => clean(row.beneficiary_vat_number)).filter(Boolean)))
+      const beneficiaryGemis = Array.from(new Set(
+        enrichedPaymentRows
+          .filter((row) => row.procurement_id === procurementId)
+          .map((row) => clean(row.beneficiary_gemi))
+          .filter(Boolean),
+      ))
       paymentsByProcurementId.set(procurementId, {
         amount_without_vat: amountWithoutVat,
         beneficiary_name: beneficiaryNames.join(' | ') || null,
         beneficiary_vat_number: beneficiaryVatNumbers.join(' | ') || null,
+        beneficiary_gemi: beneficiaryGemis.join(' | ') || null,
       })
     }
 
@@ -368,6 +386,7 @@ async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: 
       procedure_type_value: row.procedure_type_value,
       beneficiary_name: payment?.beneficiary_name ?? null,
       beneficiary_vat_number: payment?.beneficiary_vat_number ?? null,
+      beneficiary_gemi: payment?.beneficiary_gemi ?? null,
       amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
       diavgeia_ada: row.diavgeia_ada,
       total_count: 0,
@@ -442,6 +461,7 @@ async function loadRegionScopedRows(regionKey: string, dateFrom: string, dateTo:
     procedure_type_value: row.procedure_type_value,
     beneficiary_name: row.beneficiary_name,
     beneficiary_vat_number: null,
+    beneficiary_gemi: null,
     amount_without_vat: row.amount_without_vat,
     diavgeia_ada: row.diavgeia_ada,
     total_count: 0,
@@ -525,6 +545,7 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
     amount_without_vat: number | null
     beneficiary_name: string | null
     beneficiary_vat_number: string | null
+    beneficiary_gemi: string | null
   }>()
   const cpvByProcurementId = new Map<number, string>()
 
@@ -555,6 +576,14 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
       paymentMap.get(row.procurement_id)!.push(row)
     }
 
+    const enrichedPaymentRows = await attachBeneficiaryGemi((paymentRows ?? []) as Array<{
+      procurement_id: number
+      beneficiary_name: string | null
+      beneficiary_vat_number: string | null
+      beneficiary_gemi?: string | null
+      amount_without_vat: number | null
+    }>)
+
     for (const [procurementId, rows] of paymentMap.entries()) {
       const amountWithoutVat = rows.reduce<number | null>((sum, row) => {
         if (row.amount_without_vat == null || Number.isNaN(Number(row.amount_without_vat))) return sum
@@ -562,10 +591,17 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
       }, null)
       const beneficiaryNames = Array.from(new Set(rows.map((row) => clean(row.beneficiary_name)).filter(Boolean)))
       const beneficiaryVatNumbers = Array.from(new Set(rows.map((row) => clean(row.beneficiary_vat_number)).filter(Boolean)))
+      const beneficiaryGemis = Array.from(new Set(
+        enrichedPaymentRows
+          .filter((row) => row.procurement_id === procurementId)
+          .map((row) => clean(row.beneficiary_gemi))
+          .filter(Boolean),
+      ))
       paymentsByProcurementId.set(procurementId, {
         amount_without_vat: amountWithoutVat,
         beneficiary_name: beneficiaryNames.join(' | ') || null,
         beneficiary_vat_number: beneficiaryVatNumbers.join(' | ') || null,
+        beneficiary_gemi: beneficiaryGemis.join(' | ') || null,
       })
     }
 
@@ -596,6 +632,7 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
       procedure_type_value: row.procedure_type_value,
       beneficiary_name: payment?.beneficiary_name ?? null,
       beneficiary_vat_number: payment?.beneficiary_vat_number ?? null,
+      beneficiary_gemi: payment?.beneficiary_gemi ?? null,
       amount_without_vat: payment?.amount_without_vat ?? row.contract_budget ?? row.budget ?? null,
       diavgeia_ada: row.diavgeia_ada,
       total_count: 0,
@@ -897,6 +934,7 @@ export default function ContractsPage() {
         endDate: fmtDateLabel(cleanText(procurement.end_date)),
         organizationVat: clean(procurement.organization_vat_number) || '—',
         beneficiaryVat: clean(paymentSummary.beneficiary_vat_number) || '—',
+        beneficiaryGemi: clean(row.beneficiary_gemi) || null,
         signers: clean(paymentSummary.signers) || '—',
         assignCriteria: clean(procurement.assign_criteria) || '—',
         contractKind: clean(procurement.contract_type) || '—',
@@ -1060,7 +1098,7 @@ export default function ContractsPage() {
                       <td data-label="Δικαιούχος">
                         <BeneficiaryLink
                           name={clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}
-                          afm={r.beneficiary_vat_number}
+                          gemi={r.beneficiary_gemi}
                           className="beneficiary-link"
                         />
                       </td>

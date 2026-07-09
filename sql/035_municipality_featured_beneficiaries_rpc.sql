@@ -1,3 +1,5 @@
+DROP FUNCTION IF EXISTS public.get_municipality_featured_beneficiaries(text, integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_municipality_featured_beneficiaries(
   p_municipality_key text,
   p_year integer,
@@ -6,6 +8,7 @@ CREATE OR REPLACE FUNCTION public.get_municipality_featured_beneficiaries(
 RETURNS TABLE (
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   organization text,
   total_amount numeric,
   contract_count integer,
@@ -40,6 +43,7 @@ payment_agg AS (
       CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
     ) AS beneficiary_key,
     NULLIF(BTRIM(py.beneficiary_vat_number), '') AS beneficiary_vat_number,
+    NULLIF(BTRIM(b.gemi), '') AS beneficiary_gemi,
     COALESCE(
       NULLIF(BTRIM(py.beneficiary_name), ''),
       NULLIF(BTRIM(py.beneficiary_vat_number), ''),
@@ -50,8 +54,11 @@ payment_agg AS (
     (array_agg(NULLIF(BTRIM(py.signers), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.signers), '') IS NOT NULL))[1] AS signers,
     (array_agg(NULLIF(BTRIM(py.payment_ref_no), '') ORDER BY py.id) FILTER (WHERE NULLIF(BTRIM(py.payment_ref_no), '') IS NOT NULL))[1] AS payment_ref_no
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY
     py.procurement_id,
+    NULLIF(BTRIM(b.gemi), ''),
     COALESCE(
       NULLIF(BTRIM(py.beneficiary_vat_number), ''),
       CONCAT('name:', COALESCE(NULLIF(BTRIM(py.beneficiary_name), ''), '—'))
@@ -119,6 +126,7 @@ base AS (
     END AS authority_scope,
     pa.beneficiary_key,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     pa.beneficiary_name,
     pa.amount_without_vat,
     pa.amount_with_vat,
@@ -270,6 +278,7 @@ relevant_ranked AS (
       'end_date', f.end_date,
       'organization_vat_number', f.organization_vat_number,
       'beneficiary_vat_number', f.beneficiary_vat_number,
+      'beneficiary_gemi', f.beneficiary_gemi,
       'beneficiary_name', f.beneficiary_name,
       'signers', f.signers,
       'assign_criteria', f.assign_criteria,
@@ -308,6 +317,7 @@ relevant_agg AS (
 SELECT
   COALESCE(nr.beneficiary_name, '—') AS beneficiary_name,
   nr.beneficiary_vat_number,
+  NULLIF(BTRIM(bg.gemi), '') AS beneficiary_gemi,
   COALESCE(orx.organization_value, '—') AS organization,
   tb.total_amount,
   tb.contract_count,
@@ -330,6 +340,8 @@ FROM top_beneficiaries tb
 LEFT JOIN name_ranked nr
   ON nr.beneficiary_key = tb.beneficiary_key
  AND nr.rn = 1
+LEFT JOIN public.beneficiary bg
+  ON bg.beneficiary_vat_number = nr.beneficiary_vat_number
 LEFT JOIN org_ranked orx
   ON orx.beneficiary_key = tb.beneficiary_key
  AND orx.rn = 1

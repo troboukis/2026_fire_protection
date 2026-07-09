@@ -1,6 +1,7 @@
 export type PaymentSummaryRow = {
   beneficiary_name?: string | null
   beneficiary_vat_number?: string | null
+  beneficiary_gemi?: string | null
   signers?: string | null
   payment_ref_no?: string | null
   amount_without_vat?: number | string | null
@@ -56,6 +57,7 @@ export function summarizePaymentRows(rows: PaymentSummaryRow[]) {
   return {
     beneficiary_name: joinDistinctValues(rows, (row) => row.beneficiary_name),
     beneficiary_vat_number: joinDistinctValues(rows, (row) => row.beneficiary_vat_number),
+    beneficiary_gemi: joinDistinctValues(rows, (row) => row.beneficiary_gemi),
     signers: joinDistinctValues(rows, (row) => row.signers),
     payment_ref_no: joinDistinctValues(rows, (row) => row.payment_ref_no),
     amount_without_vat: sumValues(rows, (row) => row.amount_without_vat),

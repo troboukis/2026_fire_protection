@@ -658,6 +658,20 @@ main {
   gap: 0.6rem;
 }
 
+.wire-item__head--clickable {
+  cursor: pointer;
+}
+
+.wire-item__head--clickable:hover .wire-item__org,
+.wire-item__head--clickable:focus-visible .wire-item__org {
+  color: var(--accent);
+}
+
+.wire-item__head--clickable:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .wire-item__org {
   margin: 0;
 }
@@ -756,6 +770,11 @@ main {
 .beneficiary-link:hover,
 .beneficiary-link:focus-visible {
   color: #0f6a51;
+}
+
+.wire-item .wire-item__beneficiary.beneficiary-link:hover,
+.wire-item .wire-item__beneficiary.beneficiary-link:focus-visible {
+  color: var(--accent);
 }
 
 .beneficiary-link:focus-visible {

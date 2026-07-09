@@ -1,5 +1,7 @@
 -- Fast, deduplicated contracts page source for frontend.
 
+DROP FUNCTION IF EXISTS public.get_contracts_page(text, text, text, date, date, numeric, integer, integer);
+
 CREATE OR REPLACE FUNCTION public.get_contracts_page(
   p_q text DEFAULT NULL,
   p_org text DEFAULT NULL,
@@ -20,6 +22,7 @@ RETURNS TABLE (
   procedure_type_value text,
   beneficiary_name text,
   beneficiary_vat_number text,
+  beneficiary_gemi text,
   amount_without_vat numeric,
   diavgeia_ada text,
   total_count bigint
@@ -33,8 +36,11 @@ WITH payment_agg AS (
     py.procurement_id,
     SUM(py.amount_without_vat) AS amount_without_vat,
     STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_name), ''), ' | ') AS beneficiary_name,
-    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_vat_number), ''), ' | ') AS beneficiary_vat_number
+    STRING_AGG(DISTINCT NULLIF(TRIM(py.beneficiary_vat_number), ''), ' | ') AS beneficiary_vat_number,
+    STRING_AGG(DISTINCT NULLIF(TRIM(b.gemi), ''), ' | ') AS beneficiary_gemi
   FROM public.payment py
+  LEFT JOIN public.beneficiary b
+    ON b.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY py.procurement_id
 ),
 cpv_agg AS (
@@ -64,6 +70,7 @@ base AS (
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
     pa.beneficiary_name,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     COALESCE(
       org.organization_value,
       CASE
@@ -178,6 +185,7 @@ SELECT
   procedure_type_value,
   beneficiary_name,
   beneficiary_vat_number,
+  beneficiary_gemi,
   amount_without_vat,
   diavgeia_ada,
   total_count
