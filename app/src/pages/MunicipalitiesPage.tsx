@@ -4337,7 +4337,7 @@ export default function MunicipalitiesPage() {
               <ComponentTag name="municipality-contract-latest__head" kind="CLASS" className="component-tag--overlay" />
               <span className="eyebrow">συμβάσεις & διαύγεια</span>
               <div className="municipality-contract-latest__subtitle-row">
-                <p>Οι πιο πρόσφατες συμβάσεις και αποφάσεις Διαύγειας του Δήμου {selectedName} σε χρονολογική σειρά.</p>
+                <p>Οι συμβάσεις και αποφάσεις Διαύγειας του Δήμου {selectedName} για το {currentYear}, σε χρονολογική σειρά.</p>
                 <div className="municipality-contract-latest__pager" aria-label="Πλοήγηση συμβάσεων και αποφάσεων Διαύγειας δήμου">
                   <button
                     type="button"
@@ -4383,7 +4383,7 @@ export default function MunicipalitiesPage() {
               ))}
               {!municipalityTimelineLoading && municipalityTimelineItems.length === 0 && (
                 <article className="wire-item">
-                  <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο.</h2>
+                  <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο το {currentYear}.</h2>
                 </article>
               )}
             </div>
