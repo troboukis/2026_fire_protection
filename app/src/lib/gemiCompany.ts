@@ -22,15 +22,17 @@ export function normalizeAfm(value: unknown): string | null {
   return digits.length >= 8 ? digits : null
 }
 
-function normalizeGemi(value: unknown): string | null {
+export function normalizeGemiNumber(value: unknown): string | null {
   if (value == null) return null
-  const gemi = String(value).trim()
-  if (!gemi) return null
-  if (gemi === '-1') return GEMI_NOT_FOUND
-  return gemi
+  for (const part of String(value).split(/[|,;]/)) {
+    const gemi = part.trim()
+    if (!gemi || gemi === '-1') continue
+    return gemi
+  }
+  return null
 }
 
-function buildGemiCompanyUrl(gemiNumber: string): string {
+export function buildGemiCompanyUrl(gemiNumber: string): string {
   return `https://publicity.businessportal.gr/company/${encodeURIComponent(gemiNumber)}`
 }
 
@@ -87,7 +89,9 @@ async function resolveStoredGemiNumberByAfm(afm: string): Promise<string | null>
     return GEMI_PENDING
   }
 
-  return data ? normalizeGemi(data.gemi) ?? GEMI_PENDING : GEMI_PENDING
+  if (!data) return GEMI_PENDING
+  if (String(data.gemi).trim() === '-1') return GEMI_NOT_FOUND
+  return normalizeGemiNumber(data.gemi) ?? GEMI_PENDING
 }
 
 export function getStoredGemiNumberByAfm(afm: string): Promise<string | null> {

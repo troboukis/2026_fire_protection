@@ -1,4 +1,5 @@
 import type { KeyboardEvent } from 'react'
+import { useNavigate } from 'react-router-dom'
 import BeneficiaryLink from './BeneficiaryLink'
 
 export type LatestContractCardView = {
@@ -10,10 +11,12 @@ export type LatestContractCardView = {
   signedAt?: string
   beneficiary: string
   beneficiaryVat?: string | null
+  beneficiaryGemi?: string | null
   contractType: string
   howMuch: string
   documentUrl?: string | null
   municipalityKey?: string | null
+  orgIsMunicipality?: boolean
   sortDate?: string | null
 }
 
@@ -32,15 +35,38 @@ function truncateWords(value: string, maxWords: number): string {
   return `${words.slice(0, maxWords).join(' ')} ...`
 }
 
+function isMunicipalityOrgLabel(value: string): boolean {
+  return value.trim().toLocaleUpperCase('el-GR').startsWith('ΔΗΜΟΣ ')
+}
+
 export default function LatestContractCard({ item, onOpen, onMunicipalityClick, contractTypeTransform }: Props) {
+  const navigate = useNavigate()
   const clickable = typeof onOpen === 'function'
   const transformedContractType = contractTypeTransform ? contractTypeTransform(item.contractType) : item.contractType
-  const municipalityClickable = typeof onMunicipalityClick === 'function' && !!item.municipalityKey
+  const municipalityClickable = (item.orgIsMunicipality === true || isMunicipalityOrgLabel(item.who)) && !!item.municipalityKey
   const visibleTitle = truncateWords(item.what, 15)
+
+  const openMunicipality = () => {
+    if (!item.municipalityKey) return
+    if (onMunicipalityClick) {
+      onMunicipalityClick(item.municipalityKey)
+      return
+    }
+    navigate(`/municipalities?municipality=${encodeURIComponent(item.municipalityKey)}`)
+  }
 
   const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (!clickable) return
     if (e.key === 'Enter' || e.key === ' ') onOpen(item.id)
+  }
+
+  const handleHeaderKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (!municipalityClickable) return
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      e.stopPropagation()
+      openMunicipality()
+    }
   }
 
   return (
@@ -51,11 +77,18 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
       onClick={clickable ? () => onOpen(item.id) : undefined}
       onKeyDown={handleKeyDown}
     >
-      <div className="wire-item__head">
-        <span
-          className={`eyebrow wire-item__org${municipalityClickable ? ' wire-item__org--clickable' : ''}`}
-          onClick={municipalityClickable ? (e) => { e.stopPropagation(); onMunicipalityClick(item.municipalityKey!) } : undefined}
-        >{item.who}</span>
+      <div
+        className={`wire-item__head${municipalityClickable ? ' wire-item__head--clickable' : ''}`}
+        role={municipalityClickable ? 'link' : undefined}
+        tabIndex={municipalityClickable ? 0 : undefined}
+        onClick={municipalityClickable ? (e) => { e.stopPropagation(); openMunicipality() } : undefined}
+        onKeyDown={handleHeaderKeyDown}
+      >
+        {municipalityClickable ? (
+          <span className="eyebrow wire-item__org">{item.who}</span>
+        ) : (
+          <span className="eyebrow wire-item__org">{item.who}</span>
+        )}
         <span className="wire-item__date">{item.when}</span>
       </div>
       <h2 title={item.what}>{visibleTitle}</h2>
@@ -67,7 +100,7 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
           <span className="wire-item__arrow">→</span>
           <BeneficiaryLink
             name={item.beneficiary}
-            afm={item.beneficiaryVat}
+            gemi={item.beneficiaryGemi}
             className="wire-item__beneficiary beneficiary-link"
             stopPropagation
           />

@@ -1,44 +1,39 @@
-import type { MouseEvent } from 'react'
-import { normalizeAfm, openGemiCompanyPageByAfm } from '../lib/gemiCompany'
+import { buildGemiCompanyUrl, normalizeGemiNumber } from '../lib/gemiCompany'
 
 type Props = {
   name: string
-  afm?: string | null
+  gemi?: string | null
   className?: string
   stopPropagation?: boolean
 }
 
 export default function BeneficiaryLink({
   name,
-  afm,
+  gemi,
   className,
   stopPropagation = false,
 }: Props) {
-  const normalizedAfm = normalizeAfm(afm)
+  const normalizedGemi = normalizeGemiNumber(gemi)
   const inactiveClassName = className
     ?.replace(/\bbeneficiary-link\b/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 
-  const handleClick = async (event: MouseEvent<HTMLButtonElement>) => {
-    if (stopPropagation) event.stopPropagation()
-    if (!normalizedAfm) return
-    await openGemiCompanyPageByAfm(normalizedAfm, name)
-  }
-
-  if (!normalizedAfm) {
+  if (!normalizedGemi) {
     return <span className={inactiveClassName}>{name}</span>
   }
 
   return (
-    <button
-      type="button"
+    <a
+      href={buildGemiCompanyUrl(normalizedGemi)}
       className={className}
-      onClick={(event) => { void handleClick(event) }}
+      target="_blank"
+      rel="noreferrer"
+      onClick={stopPropagation ? (event) => event.stopPropagation() : undefined}
       title={`Άνοιγμα ΓΕΜΗ για ${name}`}
       aria-label={`Άνοιγμα ΓΕΜΗ για ${name}`}
     >
       {name}
-    </button>
+    </a>
   )
 }

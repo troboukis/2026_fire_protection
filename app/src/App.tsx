@@ -10,6 +10,7 @@ import MapTilerLogo from './components/MapTilerLogo'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
+import { attachBeneficiaryGemi } from './lib/beneficiaryGemi'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from './lib/contractDocument'
 import { buildContractsPageHref } from './lib/contractsPageHref'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from './lib/diavgeiaDecision'
@@ -33,6 +34,7 @@ type LatestContractCard = LatestContractCardView & ContractModalContract & {
   when: string
   why: string
   beneficiary: string
+  beneficiaryGemi?: string | null
   contractType: string
   howMuch: string
   withoutVatAmount: string
@@ -80,6 +82,7 @@ type LatestContractRpcRow = {
   procedure_type_value: string | null
   beneficiary_name: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi: string | null
   amount_without_vat: number | string | null
   amount_with_vat: number | string | null
   reference_number: string | null
@@ -189,6 +192,7 @@ type FeaturedRecordsRpcContract = {
   end_date: string | null
   organization_vat_number: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi?: string | null
   beneficiary_name: string | null
   signers: string | null
   assign_criteria: string | null
@@ -211,6 +215,7 @@ type FeaturedRecordsRpcContract = {
 
 type FeaturedRecordsRpcRow = {
   beneficiary_vat_number: string | null
+  beneficiary_gemi?: string | null
   beneficiary_name: string | null
   organization: string | null
   total_amount: number | string | null
@@ -699,7 +704,6 @@ export default function App() {
               ttlMs: 5 * 60 * 1000,
               useStaleOnError: true,
               useStaleWhileRevalidating: true,
-              dedupeInFlight: true,
               validateData: isNonEmptyArray,
             },
           ),
@@ -729,7 +733,6 @@ export default function App() {
               ttlMs: 5 * 60 * 1000,
               useStaleOnError: true,
               useStaleWhileRevalidating: true,
-              dedupeInFlight: true,
               validateData: isNonEmptyArray,
             },
           ),
@@ -758,6 +761,7 @@ export default function App() {
             why: toSentenceCaseEl(topCpv?.label ?? cleanText(row.short_description) ?? '—'),
             beneficiary: toUpperEl(cleanText(row.beneficiary_name)),
             beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? null,
+            beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
             contractType: cleanText(row.procedure_type_value) ?? '—',
             howMuch: formatEur(amountWithoutVat),
             signedAt: formatDateEl(cleanText(row.contract_signed_date)),
@@ -780,6 +784,7 @@ export default function App() {
             endDate: formatDateEl(cleanText(row.end_date)),
             organizationVat: cleanText(row.organization_vat_number) ?? '—',
             beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? '—',
+            beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
             signers: cleanText(row.signers) ?? '—',
             assignCriteria: cleanText(row.assign_criteria) ?? '—',
             contractKind: cleanText(row.contract_type) ?? '—',
@@ -899,6 +904,7 @@ export default function App() {
           procurement_id: number
           beneficiary_name: string | null
           beneficiary_vat_number: string | null
+          beneficiary_gemi?: string | null
           signers: string | null
           payment_ref_no: string | null
           amount_without_vat: number | null
@@ -931,6 +937,8 @@ export default function App() {
           cpvRows.push(...((cData ?? []) as typeof cpvRows))
         }
 
+        const enrichedPaymentRows = await attachBeneficiaryGemi(paymentRows, controller.signal)
+
         const procurementYearById = new Map<number, string>()
         for (const row of procurements) {
           const year = cleanText(row.contract_signed_date)?.slice(0, 4)
@@ -946,13 +954,13 @@ export default function App() {
         const contractCount = procurements.filter((row) => procurementYearById.get(row.id) === latestProcurementYear).length
         const previousYearContractCount = procurements.filter((row) => procurementYearById.get(row.id) === previousProcurementYear).length
         const beneficiaryCount = new Set(
-          paymentRows
+          enrichedPaymentRows
             .filter((row) => procurementYearById.get(row.procurement_id) === latestProcurementYear)
             .map((row) => cleanText(row.beneficiary_name))
             .filter(Boolean),
         ).size
         const previousYearBeneficiaryCount = new Set(
-          paymentRows
+          enrichedPaymentRows
             .filter((row) => procurementYearById.get(row.procurement_id) === previousProcurementYear)
             .map((row) => cleanText(row.beneficiary_name))
             .filter(Boolean),
@@ -988,12 +996,13 @@ export default function App() {
         const paymentByProcId = new Map<number, {
           beneficiary_name: string | null
           beneficiary_vat_number: string | null
+          beneficiary_gemi?: string | null
           signers: string | null
           payment_ref_no: string | null
           amount_without_vat: number | null
           amount_with_vat: number | null
         }>()
-        for (const row of paymentRows) {
+        for (const row of enrichedPaymentRows) {
           if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
         }
         const topCpvEntries = [...cpvCounts.entries()]
@@ -1124,6 +1133,7 @@ export default function App() {
             when: formatDateEl(cleanText(p.submission_at)),
             why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
             beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
+            beneficiaryGemi: cleanText(payment?.beneficiary_gemi) ?? null,
             contractType: cleanText(p.procedure_type_value) ?? '—',
             howMuch: formatEur(payment?.amount_without_vat ?? null),
             withoutVatAmount: formatEur(payment?.amount_without_vat ?? null),
@@ -1321,6 +1331,7 @@ export default function App() {
           procurement_id: number
           beneficiary_name: string | null
           beneficiary_vat_number: string | null
+          beneficiary_gemi?: string | null
           signers: string | null
           payment_ref_no: string | null
           amount_without_vat: number | null
@@ -1353,6 +1364,8 @@ export default function App() {
           cpvRows.push(...((cData ?? []) as typeof cpvRows))
         }
 
+        const enrichedPaymentRows = await attachBeneficiaryGemi(paymentRows, controller.signal)
+
         const procurementYearById = new Map<number, string>()
         for (const row of procurements) {
           const year = cleanText(row.contract_signed_date)?.slice(0, 4)
@@ -1361,20 +1374,20 @@ export default function App() {
         const latestProcurementYear = [...procurementYearById.values()].sort((a, b) => b.localeCompare(a))[0]
           ?? String(new Date().getFullYear())
         const previousProcurementYear = String(Number(latestProcurementYear) - 1)
-        const totalSpend = paymentRows.reduce((sum, row) => {
+        const totalSpend = enrichedPaymentRows.reduce((sum, row) => {
           if (procurementYearById.get(row.procurement_id) !== latestProcurementYear) return sum
           return sum + Number(row.amount_without_vat ?? 0)
         }, 0)
         const contractCount = procurements.filter((row) => procurementYearById.get(row.id) === latestProcurementYear).length
         const previousYearContractCount = procurements.filter((row) => procurementYearById.get(row.id) === previousProcurementYear).length
         const beneficiaryCount = new Set(
-          paymentRows
+          enrichedPaymentRows
             .filter((row) => procurementYearById.get(row.procurement_id) === latestProcurementYear)
             .map((row) => cleanText(row.beneficiary_name))
             .filter(Boolean),
         ).size
         const previousYearBeneficiaryCount = new Set(
-          paymentRows
+          enrichedPaymentRows
             .filter((row) => procurementYearById.get(row.procurement_id) === previousProcurementYear)
             .map((row) => cleanText(row.beneficiary_name))
             .filter(Boolean),
@@ -1411,12 +1424,13 @@ export default function App() {
         const paymentByProcId = new Map<number, {
           beneficiary_name: string | null
           beneficiary_vat_number: string | null
+          beneficiary_gemi?: string | null
           signers: string | null
           payment_ref_no: string | null
           amount_without_vat: number | null
           amount_with_vat: number | null
         }>()
-        for (const row of paymentRows) {
+        for (const row of enrichedPaymentRows) {
           if (!paymentByProcId.has(row.procurement_id)) paymentByProcId.set(row.procurement_id, row)
         }
 
@@ -1561,6 +1575,7 @@ export default function App() {
             when: formatDateEl(cleanText(p.submission_at)),
             why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
             beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
+            beneficiaryGemi: cleanText(payment?.beneficiary_gemi) ?? null,
             contractType: cleanText(p.procedure_type_value) ?? '—',
             howMuch: formatEur(payment?.amount_without_vat ?? null),
             withoutVatAmount: formatEur(payment?.amount_without_vat ?? null),
@@ -1705,7 +1720,6 @@ export default function App() {
             ttlMs: 5 * 60 * 1000,
             useStaleOnError: true,
             useStaleWhileRevalidating: true,
-            dedupeInFlight: true,
             validateData: isNonEmptyArray,
           },
         )
@@ -1735,6 +1749,7 @@ export default function App() {
                 when: formatDateEl(cleanText(contract.submission_at)),
                 why: toSentenceCaseEl(topCpv?.label ?? cleanText(contract.short_description) ?? '—'),
                 beneficiary: toUpperEl(cleanText(contract.beneficiary_name) ?? beneficiaryVat),
+                beneficiaryGemi: cleanText(contract.beneficiary_gemi) ?? cleanText(row.beneficiary_gemi) ?? null,
                 contractType: cleanText(contract.procedure_type_value) ?? '—',
                 howMuch: formatEur(amountWithoutVat),
                 withoutVatAmount: formatEur(amountWithoutVat),
@@ -1774,6 +1789,7 @@ export default function App() {
           return {
             beneficiary: toUpperEl(cleanText(row.beneficiary_name) ?? beneficiaryVat),
             beneficiaryVat: beneficiaryVat ?? null,
+            beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
             organization: cleanText(row.organization) ?? '—',
             totalAmount: toFiniteNumber(row.total_amount) ?? 0,
             contractCount: Math.round(toFiniteNumber(row.contract_count) ?? 0),
@@ -1832,7 +1848,6 @@ export default function App() {
             ttlMs: 5 * 60 * 1000,
             useStaleOnError: true,
             useStaleWhileRevalidating: true,
-            dedupeInFlight: true,
             validateData: hasHeroSectionData,
           },
         )

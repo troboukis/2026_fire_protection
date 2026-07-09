@@ -43,6 +43,11 @@ payment_agg AS (
       STRING_AGG(DISTINCT NULLIF(BTRIM(pb.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(pb.beneficiary_vat_number), '')),
       STRING_AGG(DISTINCT NULLIF(BTRIM(py.beneficiary_vat_number), ''), ' | ' ORDER BY NULLIF(BTRIM(py.beneficiary_vat_number), ''))
     ) AS beneficiary_vat_number,
+    STRING_AGG(
+      DISTINCT NULLIF(BTRIM(COALESCE(b.gemi, b_py.gemi)), ''),
+      ' | '
+      ORDER BY NULLIF(BTRIM(COALESCE(b.gemi, b_py.gemi)), '')
+    ) AS beneficiary_gemi,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.signers), ''), ' | ' ORDER BY NULLIF(BTRIM(py.signers), '')) AS signers,
     STRING_AGG(DISTINCT NULLIF(BTRIM(py.payment_ref_no), ''), ' | ' ORDER BY NULLIF(BTRIM(py.payment_ref_no), '')) AS payment_ref_no,
     MAX(py.fiscal_year) AS fiscal_year
@@ -51,6 +56,8 @@ payment_agg AS (
     ON pb.payment_id = py.id
   LEFT JOIN public.beneficiary b
     ON b.beneficiary_vat_number = pb.beneficiary_vat_number
+  LEFT JOIN public.beneficiary b_py
+    ON b_py.beneficiary_vat_number = py.beneficiary_vat_number
   GROUP BY py.procurement_id
 ),
 proc_ranked AS (
@@ -87,6 +94,7 @@ proc_ranked AS (
     pa.amount_with_vat,
     pa.beneficiary_name,
     pa.beneficiary_vat_number,
+    pa.beneficiary_gemi,
     pa.signers,
     pa.payment_ref_no,
     pa.fiscal_year,
@@ -283,6 +291,7 @@ featured_contracts AS (
       'no_end_date', COALESCE(rc.no_end_date, FALSE),
       'organization_vat_number', COALESCE(NULLIF(BTRIM(rc.organization_vat_number), ''), '—'),
       'beneficiary_vat_number', COALESCE(NULLIF(BTRIM(rc.beneficiary_vat_number), ''), '—'),
+      'beneficiary_gemi', NULLIF(BTRIM(rc.beneficiary_gemi), ''),
       'signers', COALESCE(NULLIF(BTRIM(rc.signers), ''), '—'),
       'assign_criteria', COALESCE(NULLIF(BTRIM(rc.assign_criteria), ''), '—'),
       'contract_kind', COALESCE(NULLIF(BTRIM(rc.contract_type), ''), '—'),
@@ -334,6 +343,7 @@ recent_active_contracts AS (
       'no_end_date', COALESCE(ac.no_end_date, FALSE),
       'organization_vat_number', COALESCE(NULLIF(BTRIM(ac.organization_vat_number), ''), '—'),
       'beneficiary_vat_number', COALESCE(NULLIF(BTRIM(ac.beneficiary_vat_number), ''), '—'),
+      'beneficiary_gemi', NULLIF(BTRIM(ac.beneficiary_gemi), ''),
       'signers', COALESCE(NULLIF(BTRIM(ac.signers), ''), '—'),
       'assign_criteria', COALESCE(NULLIF(BTRIM(ac.assign_criteria), ''), '—'),
       'contract_kind', COALESCE(NULLIF(BTRIM(ac.contract_type), ''), '—'),

@@ -25,6 +25,10 @@ type Props = {
   item: DiavgeiaDecisionCardView
 }
 
+function isMunicipalityOrgType(value: string): boolean {
+  return value.trim().toLocaleUpperCase('el-GR') === 'ΔΗΜΟΣ'
+}
+
 function truncateWords(value: string, maxWords: number): string {
   const text = value.trim()
   if (!text) return '—'
@@ -38,7 +42,7 @@ export default function DiavgeiaDecisionCard({ item }: Props) {
   const organization = [item.orgType, item.orgNameClean].filter((part) => part && part !== '—').join(' · ') || '—'
   const documentUrl = item.documentUrl ?? (item.ada && item.ada !== '—' ? `https://diavgeia.gov.gr/doc/${item.ada}` : null)
   const visibleSubject = truncateWords(item.subject, 15)
-  const isMunicipality = !!item.municipalityKey
+  const isMunicipality = isMunicipalityOrgType(item.orgType) && !!item.municipalityKey
 
   const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {

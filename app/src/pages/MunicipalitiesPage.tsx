@@ -8,6 +8,7 @@ import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from '../componen
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
 import MapTilerLogo from '../components/MapTilerLogo'
+import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildContractsPageHref } from '../lib/contractsPageHref'
@@ -145,6 +146,8 @@ type MunicipalityContractRow = {
   title: string | null
   procedure_type_value: string | null
   beneficiary_name: string | null
+  beneficiary_vat_number?: string | null
+  beneficiary_gemi?: string | null
   amount_without_vat: number | string | null
   diavgeia_ada: string | null
   reference_number: string | null
@@ -175,6 +178,7 @@ type MunicipalityContractPaymentRow = {
   procurement_id: number
   beneficiary_name: string | null
   beneficiary_vat_number?: string | null
+  beneficiary_gemi?: string | null
   signers?: string | null
   payment_ref_no?: string | null
   amount_without_vat: number | null
@@ -258,6 +262,7 @@ type MunicipalityFeaturedRpcContract = {
   end_date: string | null
   organization_vat_number: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi?: string | null
   beneficiary_name: string | null
   signers: string | null
   assign_criteria: string | null
@@ -281,6 +286,7 @@ type MunicipalityFeaturedRpcContract = {
 type MunicipalityFeaturedBeneficiaryRpcRow = {
   beneficiary_name: string | null
   beneficiary_vat_number: string | null
+  beneficiary_gemi?: string | null
   organization: string | null
   total_amount: number | string | null
   contract_count: number | string | null
@@ -1178,18 +1184,28 @@ export default function MunicipalitiesPage() {
           new Set(procurementRows.map((row) => cleanText(row.organization_key)).filter(Boolean)),
         ) as string[]
 
-        const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string> }>()
+        const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string>; beneficiaryVats: Set<string>; beneficiaryGemis: Set<string> }>()
         for (const ids of chunk(procurementIds, 200)) {
           const { data, error } = await supabase
             .from('payment')
-            .select('procurement_id, beneficiary_name, amount_without_vat')
+            .select('procurement_id, beneficiary_name, beneficiary_vat_number, amount_without_vat')
             .in('procurement_id', ids)
           if (error) throw error
-          for (const row of ((data ?? []) as MunicipalityContractPaymentRow[])) {
-            const current = paymentByProcurementId.get(row.procurement_id) ?? { amount: 0, beneficiaries: new Set<string>() }
+          const rows = await attachBeneficiaryGemi((data ?? []) as MunicipalityContractPaymentRow[])
+          for (const row of rows) {
+            const current = paymentByProcurementId.get(row.procurement_id) ?? {
+              amount: 0,
+              beneficiaries: new Set<string>(),
+              beneficiaryVats: new Set<string>(),
+              beneficiaryGemis: new Set<string>(),
+            }
             current.amount = (current.amount ?? 0) + (toNumber(row.amount_without_vat) ?? 0)
             const beneficiaryName = cleanText(row.beneficiary_name)
             if (beneficiaryName) current.beneficiaries.add(beneficiaryName)
+            const beneficiaryVat = cleanText(row.beneficiary_vat_number)
+            if (beneficiaryVat) current.beneficiaryVats.add(beneficiaryVat)
+            const beneficiaryGemi = cleanText(row.beneficiary_gemi)
+            if (beneficiaryGemi) current.beneficiaryGemis.add(beneficiaryGemi)
             paymentByProcurementId.set(row.procurement_id, current)
           }
         }
@@ -1231,6 +1247,8 @@ export default function MunicipalitiesPage() {
             title: row.title,
             procedure_type_value: row.procedure_type_value,
             beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
+            beneficiary_vat_number: payment ? Array.from(payment.beneficiaryVats).join(' | ') || null : null,
+            beneficiary_gemi: payment ? Array.from(payment.beneficiaryGemis).join(' | ') || null : null,
             amount_without_vat: payment?.amount ?? null,
             diavgeia_ada: row.diavgeia_ada,
             reference_number: row.reference_number,
@@ -1350,6 +1368,7 @@ export default function MunicipalitiesPage() {
                 when: formatDate(cleanText(contract.submission_at)),
                 why: toSentenceCaseEl(topCpv?.label ?? cleanText(contract.short_description) ?? '—'),
                 beneficiary: toUpperEl(cleanText(contract.beneficiary_name) ?? beneficiaryVat),
+                beneficiaryGemi: cleanText(contract.beneficiary_gemi) ?? cleanText(row.beneficiary_gemi) ?? null,
                 contractType: cleanText(contract.procedure_type_value) ?? '—',
                 howMuch: formatEur(amountWithoutVat),
                 withoutVatAmount: formatEur(amountWithoutVat),
@@ -1389,6 +1408,7 @@ export default function MunicipalitiesPage() {
           return {
             beneficiary: toUpperEl(cleanText(row.beneficiary_name) ?? beneficiaryVat),
             beneficiaryVat: beneficiaryVat ?? null,
+            beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
             organization: cleanText(row.organization) ?? '—',
             totalAmount: toNumber(row.total_amount) ?? 0,
             contractCount: Math.round(toNumber(row.contract_count) ?? 0),
@@ -2185,7 +2205,7 @@ export default function MunicipalitiesPage() {
         : Promise.resolve({ data: [] }),
     ])
 
-    const payment = summarizePaymentRows((paymentRows ?? []) as Array<{
+    const enrichedPaymentRows = await attachBeneficiaryGemi((paymentRows ?? []) as Array<{
       beneficiary_name: string | null
       beneficiary_vat_number: string | null
       signers: string | null
@@ -2193,6 +2213,7 @@ export default function MunicipalitiesPage() {
       amount_without_vat: number | null
       amount_with_vat: number | null
     }>)
+    const payment = summarizePaymentRows(enrichedPaymentRows)
 
     const cpvItems = ((cpvRows ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
       .map((row) => ({
@@ -2253,6 +2274,7 @@ export default function MunicipalitiesPage() {
       endDate: formatDate(cleanText(procurement.end_date)),
       organizationVat: cleanText(procurement.organization_vat_number) ?? '—',
       beneficiaryVat: cleanText(payment.beneficiary_vat_number) ?? '—',
+      beneficiaryGemi: cleanText(payment.beneficiary_gemi) ?? null,
       signers: cleanText(payment.signers) ?? '—',
       assignCriteria: cleanText(procurement.assign_criteria) ?? '—',
       contractKind: cleanText(procurement.contract_type) ?? '—',
@@ -2351,19 +2373,29 @@ export default function MunicipalitiesPage() {
             ),
           ) as string[]
 
-          const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string> }>()
+          const paymentByProcurementId = new Map<number, { amount: number | null; beneficiaries: Set<string>; beneficiaryVats: Set<string>; beneficiaryGemis: Set<string> }>()
           const procurementIds = procurementRows.map((row) => row.id).filter(Number.isFinite)
           for (const ids of chunk(procurementIds, 200)) {
             const { data, error } = await supabase
               .from('payment')
-              .select('procurement_id, beneficiary_name, amount_without_vat')
+              .select('procurement_id, beneficiary_name, beneficiary_vat_number, amount_without_vat')
               .in('procurement_id', ids)
             if (error) throw error
-            for (const row of ((data ?? []) as MunicipalityContractPaymentRow[])) {
-              const current = paymentByProcurementId.get(row.procurement_id) ?? { amount: 0, beneficiaries: new Set<string>() }
+            const rows = await attachBeneficiaryGemi((data ?? []) as MunicipalityContractPaymentRow[])
+            for (const row of rows) {
+              const current = paymentByProcurementId.get(row.procurement_id) ?? {
+                amount: 0,
+                beneficiaries: new Set<string>(),
+                beneficiaryVats: new Set<string>(),
+                beneficiaryGemis: new Set<string>(),
+              }
               current.amount = (current.amount ?? 0) + (toNumber(row.amount_without_vat) ?? 0)
               const beneficiaryName = cleanText(row.beneficiary_name)
               if (beneficiaryName) current.beneficiaries.add(beneficiaryName)
+              const beneficiaryVat = cleanText(row.beneficiary_vat_number)
+              if (beneficiaryVat) current.beneficiaryVats.add(beneficiaryVat)
+              const beneficiaryGemi = cleanText(row.beneficiary_gemi)
+              if (beneficiaryGemi) current.beneficiaryGemis.add(beneficiaryGemi)
               paymentByProcurementId.set(row.procurement_id, current)
             }
           }
@@ -2410,6 +2442,8 @@ export default function MunicipalitiesPage() {
               title: row.title,
               procedure_type_value: row.procedure_type_value,
               beneficiary_name: payment ? Array.from(payment.beneficiaries).join(' | ') || null : null,
+              beneficiary_vat_number: payment ? Array.from(payment.beneficiaryVats).join(' | ') || null : null,
+              beneficiary_gemi: payment ? Array.from(payment.beneficiaryGemis).join(' | ') || null : null,
               amount_without_vat: payment?.amount ?? null,
               diavgeia_ada: row.diavgeia_ada,
               reference_number: row.reference_number,
@@ -2980,10 +3014,14 @@ export default function MunicipalitiesPage() {
       organizationName: cleanText(row.organization_value) ?? cleanText(row.organization_key) ?? '—',
       authorityScope: (cleanText(row.authority_scope) ?? 'other') as AuthorityScope,
       municipalityLabel: selectedMunicipalityLabel,
+      municipalityKey: selectedMunicipalityKey,
+      orgIsMunicipality: true,
       when: formatDate(row.contract_signed_date),
       what: cleanText(row.title) ?? '—',
       why: `Διαδικασία: ${cleanText(row.procedure_type_value) ?? '—'}`,
       beneficiary: cleanText(row.beneficiary_name) ?? '—',
+      beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? null,
+      beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
       contractType: cleanText(row.procedure_type_value) ?? '—',
       howMuch: formatEur(toNumber(row.amount_without_vat)),
       signedAt: formatDate(row.contract_signed_date),

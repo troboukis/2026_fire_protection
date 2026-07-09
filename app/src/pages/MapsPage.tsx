@@ -7,6 +7,7 @@ import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCar
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
 import type { LatestContractCardView } from '../components/LatestContractCard'
+import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow } from '../lib/diavgeiaDecision'
@@ -535,9 +536,10 @@ export default function MapsPage() {
       .in('procurement_id', numericIds)
 
     if (error) throw error
+    const enrichedRows = await attachBeneficiaryGemi((data ?? []) as Array<PaymentSummaryRow & { procurement_id: number | string | null }>)
 
     const rowsByProcurementId = new Map<string, PaymentSummaryRow[]>()
-    for (const row of (data ?? []) as Array<PaymentSummaryRow & { procurement_id: number | string | null }>) {
+    for (const row of enrichedRows) {
       const procurementId = cleanText(row.procurement_id)
       if (!procurementId) continue
       const rows = rowsByProcurementId.get(procurementId) ?? []
@@ -649,7 +651,7 @@ export default function MapsPage() {
       region_value: string | null
     } | null
 
-    const payment = summarizePaymentRows((pRows ?? []) as Array<{
+    const enrichedPaymentRows = await attachBeneficiaryGemi((pRows ?? []) as Array<{
       beneficiary_name: string | null
       beneficiary_vat_number: string | null
       signers: string | null
@@ -657,6 +659,7 @@ export default function MapsPage() {
       amount_without_vat: number | null
       amount_with_vat: number | null
     }>)
+    const payment = summarizePaymentRows(enrichedPaymentRows)
     const amountWithoutVat = payment.amount_without_vat ?? null
     const contractRelatedAda = cleanText(proc.contract_related_ada)
     const diavgeiaAda = cleanText(proc.diavgeia_ada)
@@ -689,6 +692,7 @@ export default function MapsPage() {
       endDate: formatDateEl(cleanText(proc.end_date)),
       organizationVat: cleanText(proc.organization_vat_number) ?? '—',
       beneficiaryVat: cleanText(payment.beneficiary_vat_number) ?? '—',
+      beneficiaryGemi: cleanText(payment.beneficiary_gemi) ?? null,
       signers: cleanText(payment.signers) ?? '—',
       assignCriteria: cleanText(proc.assign_criteria) ?? '—',
       contractKind: cleanText(proc.contract_type) ?? '—',
@@ -974,12 +978,15 @@ export default function MapsPage() {
             organizationName: String(row.organization_value ?? row.organization_key ?? '—').trim() || '—',
             authorityScope: (row.authority_scope ?? 'other') as AuthorityScope,
             municipalityLabel: municipalityLabelById.get(selectedMunicipalityId) ?? null,
+            municipalityKey: selectedMunicipalityId,
+            orgIsMunicipality: true,
             when: fmtDate(row.contract_signed_date),
             what: String(row.title ?? '').trim() || '—',
             why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
             howMuch: fmtEur(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat),
             beneficiary: String(paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_name ?? row.beneficiary_name ?? '').trim() || '—',
             beneficiaryVat: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_vat_number ?? null,
+            beneficiaryGemi: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_gemi ?? null,
             contractType: String(row.procedure_type_value ?? '—').trim() || '—',
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,
@@ -1104,6 +1111,7 @@ export default function MapsPage() {
             howMuch: fmtEur(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat),
             beneficiary: String(paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_name ?? row.beneficiary_name ?? '').trim() || '—',
             beneficiaryVat: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_vat_number ?? null,
+            beneficiaryGemi: paymentSummaryByProcurementId.get(String(row.procurement_id))?.beneficiary_gemi ?? null,
             contractType: String(row.procedure_type_value ?? '—').trim() || '—',
             signedAt: fmtDate(row.contract_signed_date),
             documentUrl: String(row.diavgeia_ada ?? '').trim() ? `https://diavgeia.gov.gr/doc/${String(row.diavgeia_ada).trim()}` : null,

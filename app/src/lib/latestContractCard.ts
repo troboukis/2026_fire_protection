@@ -12,10 +12,13 @@ type BuildLatestContractCardViewArgs = {
   why: string
   beneficiary: string
   beneficiaryVat?: string | null
+  beneficiaryGemi?: string | null
   contractType: string
   howMuch: string
   signedAt?: string
   documentUrl?: string | null
+  municipalityKey?: string | null
+  orgIsMunicipality?: boolean
   sortDate?: string | null
 }
 
@@ -44,10 +47,13 @@ export function buildLatestContractCardView(args: BuildLatestContractCardViewArg
     why: args.why,
     beneficiary: args.beneficiary,
     beneficiaryVat: args.beneficiaryVat ?? null,
+    beneficiaryGemi: args.beneficiaryGemi ?? null,
     contractType: args.contractType,
     howMuch: args.howMuch,
     signedAt: args.signedAt,
     documentUrl: args.documentUrl ?? null,
+    municipalityKey: args.municipalityKey ?? null,
+    orgIsMunicipality: args.orgIsMunicipality ?? args.authorityScope === 'municipality',
     sortDate: args.sortDate ?? null,
   }
 }

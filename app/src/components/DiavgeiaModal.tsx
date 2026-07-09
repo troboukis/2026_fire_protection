@@ -8,6 +8,10 @@ type Props = {
   onClose: () => void
 }
 
+function isMunicipalityOrgType(value: string): boolean {
+  return value.trim().toLocaleUpperCase('el-GR') === 'ΔΗΜΟΣ'
+}
+
 export default function DiavgeiaModal({ decision, onClose }: Props) {
   const organization = [decision.orgType, decision.orgNameClean]
     .filter((part) => part && part !== '—')
@@ -15,7 +19,7 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
   const documentUrl = decision.documentUrl ?? (decision.ada && decision.ada !== '—'
     ? `https://diavgeia.gov.gr/doc/${decision.ada}`
     : null)
-  const isMunicipality = !!decision.municipalityKey
+  const isMunicipality = isMunicipalityOrgType(decision.orgType) && !!decision.municipalityKey
   const organizationValue = isMunicipality ? (
     <Link
       className="contract-modal__text-link"
