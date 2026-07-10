@@ -7,6 +7,7 @@ import time
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from importlib.util import find_spec
 from pathlib import Path
 from typing import Any
@@ -97,6 +98,18 @@ NEWS247_HEADERS = {
     "Sec-CH-UA-Platform": '"macOS"',
 }
 
+PROTOTHEMA_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/149.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/rss+xml,application/xml,text/xml,*/*;q=0.8",
+    "Accept-Language": "el-GR,el;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Referer": "https://www.protothema.gr/",
+}
+
 BROTLI_AVAILABLE = find_spec("brotli") is not None or find_spec("brotlicffi") is not None
 
 
@@ -115,6 +128,7 @@ class SourceConfig:
     headers: dict[str, str]
     generated_page_url: str | None = None
     generated_page_offset: int = 1
+    listing_format: str = "html"
 
 
 @dataclass
@@ -174,6 +188,13 @@ SOURCES = (
         generated_page_url="https://www.news247.gr/roi-eidiseon/page/{page}/",
         generated_page_offset=2,
     ),
+    SourceConfig(
+        key="protothema",
+        display_name="Πρώτο Θέμα",
+        first_url="https://www.protothema.gr/greece/rss/",
+        headers=PROTOTHEMA_HEADERS,
+        listing_format="rss",
+    ),
 )
 
 
@@ -195,6 +216,15 @@ def make_soup(html: str) -> BeautifulSoup:
         except FeatureNotFound:
             continue
     return BeautifulSoup(html, "html.parser")
+
+
+def make_xml_soup(xml: str) -> BeautifulSoup:
+    for parser in ("xml", "lxml-xml"):
+        try:
+            return BeautifulSoup(xml, parser)
+        except FeatureNotFound:
+            continue
+    return make_soup(xml)
 
 
 def clean_text(value: Any) -> str:
@@ -221,6 +251,9 @@ def contains_secondary_body_term(body: str) -> bool:
         term in compact
         for term in (
             "ΔΑΣΙΚ",
+            "ΥΠΟ ΕΛΕΓΧ",
+            "ΠΥΡΟΣΒΕΣΤ",
+            "ΚΙΝΔΥΝ",
             "ΑΓΡΟΤΟΔΑΣΙΚ",
             "ΔΑΣΟΣ",
             "ΔΑΣΟΥΣ",
@@ -322,6 +355,12 @@ def parse_datetime_value(value: str | None, *, base_date: datetime | None = None
         dt = datetime.fromisoformat(normalized)
         return dt if dt.tzinfo else dt.replace(tzinfo=ATHENS_TZ)
     except ValueError:
+        pass
+
+    try:
+        dt = parsedate_to_datetime(text)
+        return dt if dt.tzinfo else dt.replace(tzinfo=ATHENS_TZ)
+    except (TypeError, ValueError, IndexError):
         pass
 
     patterns = (
@@ -432,6 +471,9 @@ def parse_listing_articles(
     html: str,
     base_url: str,
 ) -> list[ListingArticle]:
+    if source.listing_format == "rss":
+        return parse_rss_listing_articles(source, html, base_url)
+
     soup = make_soup(html)
     articles: list[ListingArticle] = []
     seen_urls: set[str] = set()
@@ -471,8 +513,90 @@ def parse_listing_articles(
     return articles
 
 
+def local_name(node: Any) -> str:
+    value = getattr(node, "name", None) or getattr(node, "tag", "")
+    return str(value).rsplit("}", 1)[-1].lower()
+
+
+def child_text(node: Any, names: tuple[str, ...]) -> str | None:
+    wanted = {name.lower() for name in names}
+    for child in getattr(node, "children", []):
+        if local_name(child) in wanted:
+            text = clean_text(
+                child.get_text(" ", strip=True) if hasattr(child, "get_text") else getattr(child, "text", "")
+            )
+            if text:
+                return text
+    return None
+
+
+def child_attr(node: Any, names: tuple[str, ...], attr: str) -> str | None:
+    wanted = {name.lower() for name in names}
+    for child in getattr(node, "children", []):
+        if local_name(child) in wanted:
+            value = clean_text(child.get(attr) if hasattr(child, "get") else getattr(child, "attrib", {}).get(attr))
+            if value:
+                return value
+    return None
+
+
+def extract_rss_image_url(item: Any, base_url: str) -> str | None:
+    raw = child_attr(item, ("content", "thumbnail"), "url")
+    if not raw:
+        for child in getattr(item, "children", []):
+            if local_name(child) != "enclosure":
+                continue
+            enclosure_type = clean_text(
+                child.get("type") if hasattr(child, "get") else getattr(child, "attrib", {}).get("type")
+            ).lower()
+            if enclosure_type.startswith("image/") or not enclosure_type:
+                raw = clean_text(child.get("url") if hasattr(child, "get") else getattr(child, "attrib", {}).get("url"))
+                if raw:
+                    break
+    if not raw:
+        description = child_text(item, ("description", "encoded"))
+        if description:
+            raw = extract_image_url(make_soup(description), base_url)
+    return urljoin(base_url, raw) if raw else None
+
+
+def parse_rss_listing_articles(
+    source: SourceConfig,
+    xml: str,
+    base_url: str,
+) -> list[ListingArticle]:
+    soup = make_xml_soup(xml)
+    articles: list[ListingArticle] = []
+    seen_urls: set[str] = set()
+
+    for item in soup.find_all("item"):
+        title = child_text(item, ("title",))
+        raw_url = child_text(item, ("link",)) or child_text(item, ("guid",))
+        url = urljoin(base_url, raw_url) if raw_url else ""
+        if not title or not url.startswith("http") or url in seen_urls:
+            continue
+        if urlparse(url).netloc and urlparse(source.first_url).netloc not in urlparse(url).netloc:
+            continue
+
+        articles.append(
+            ListingArticle(
+                source_key=source.key,
+                source=source.display_name,
+                title=title,
+                url=url,
+                image_url=extract_rss_image_url(item, base_url),
+                published_at=parse_datetime_value(child_text(item, ("pubdate", "published", "updated"))),
+            )
+        )
+        seen_urls.add(url)
+
+    return articles
+
+
 def find_next_listing_url(source: SourceConfig, soup: BeautifulSoup, current_url: str, page_index: int) -> str | None:
     _ = soup, current_url
+    if source.listing_format == "rss":
+        return None
     if source.generated_page_url:
         return source.generated_page_url.format(page=page_index + source.generated_page_offset)
     return None
@@ -512,7 +636,7 @@ def collect_new_listing_articles(
                 )
                 return ListingCollection(articles=new_articles, state_articles=state_articles, error=str(exc))
             raise
-        soup = make_soup(html)
+        soup = make_xml_soup(html) if source.listing_format == "rss" else make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
         progress(f"parsed_listing source={source.key} page_index={page_index} articles={len(page_articles)} final_url={final_url}")
         if not page_articles:
@@ -561,6 +685,23 @@ def extract_json_ld_article_body(soup: BeautifulSoup) -> str:
     return "\n".join(bodies)
 
 
+def extract_body_text(container: Any) -> str:
+    for selector in (
+        ".bannerWrp",
+        ".banner-container",
+        ".shareButtons",
+        ".articleInfo",
+        ".snippetTwitter",
+        "script",
+        "style",
+        "noscript",
+        "iframe",
+    ):
+        for tag in container.select(selector):
+            tag.decompose()
+    return clean_text(container.get_text(" ", strip=True))
+
+
 def scrape_article_content(session: requests.Session, article: ListingArticle) -> ArticleContent:
     html, final_url = fetch_html(session, article.url)
     soup = make_soup(html)
@@ -568,13 +709,21 @@ def scrape_article_content(session: requests.Session, article: ListingArticle) -
     for tag in soup.find_all(["script", "style", "noscript", "nav", "footer", "header", "aside"]):
         tag.decompose()
 
-    body_container = soup.find("article") or soup.find("main") or soup.body or soup
-    paragraphs = [
-        clean_text(p.get_text(" ", strip=True))
-        for p in body_container.find_all(["p", "li"])
-        if len(clean_text(p.get_text(" ", strip=True))) > 30
-    ]
-    body = "\n".join(dict.fromkeys(paragraphs))
+    body = ""
+    for selector in (".articleContainer__main .cnt", ".articleContainer__main"):
+        container = soup.select_one(selector)
+        if container:
+            body = extract_body_text(container)
+            if body:
+                break
+    if not body:
+        body_container = soup.find("article") or soup.find("main") or soup.body or soup
+        paragraphs = [
+            clean_text(p.get_text(" ", strip=True))
+            for p in body_container.find_all(["p", "li"])
+            if len(clean_text(p.get_text(" ", strip=True))) > 30
+        ]
+        body = "\n".join(dict.fromkeys(paragraphs))
     if not body:
         body = extract_json_ld_article_body(soup)
 
