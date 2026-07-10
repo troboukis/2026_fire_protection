@@ -6,6 +6,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from importlib.util import find_spec
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin, urlparse
@@ -48,28 +49,60 @@ GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 REQUEST_TIMEOUT = 30
 MAX_LISTING_PAGES = 20
 MAX_AREA_CHARS = 120
-HEADERS = {
+KATHIMERINI_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/149.0.0.0 Safari/537.36"
     ),
     "Accept": (
-        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
-        "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8"
     ),
     "Accept-Language": "en-US,en;q=0.9,el;q=0.8",
-    "Cache-Control": "max-age=0",
-    "Connection": "keep-alive",
-    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
-    "Sec-CH-UA-Mobile": "?0",
-    "Sec-CH-UA-Platform": '"macOS"',
+    "Accept-Encoding": "gzip, deflate, br",
+    "Referer": "https://www.kathimerini.gr/",
+    "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
     "Sec-Fetch-Site": "same-origin",
     "Sec-Fetch-User": "?1",
-    "Upgrade-Insecure-Requests": "1",
-    "Priority": "u=0, i",
+    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": '"macOS"',
 }
+
+NEWS247_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/149.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9,el;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Referer": "https://www.news247.gr/",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": '"macOS"',
+}
+
+BROTLI_AVAILABLE = find_spec("brotli") is not None or find_spec("brotlicffi") is not None
+
+
+def request_headers(source: "SourceConfig") -> dict[str, str]:
+    headers = dict(source.headers)
+    if not BROTLI_AVAILABLE and "br" in headers.get("Accept-Encoding", ""):
+        headers["Accept-Encoding"] = "gzip, deflate"
+    return headers
 
 
 @dataclass(frozen=True)
@@ -77,9 +110,9 @@ class SourceConfig:
     key: str
     display_name: str
     first_url: str
+    headers: dict[str, str]
     generated_page_url: str | None = None
     generated_page_offset: int = 1
-    pagination_referer: str = "previous"
 
 
 @dataclass
@@ -126,6 +159,7 @@ SOURCES = (
         key="kathimerini",
         display_name="Καθημερινή",
         first_url="https://www.kathimerini.gr/epikairothta/",
+        headers=KATHIMERINI_HEADERS,
         generated_page_url="https://www.kathimerini.gr/epikairothta/page/{page}/",
         generated_page_offset=2,
     ),
@@ -133,9 +167,9 @@ SOURCES = (
         key="news247",
         display_name="News247",
         first_url="https://www.news247.gr/roi-eidiseon/page/1/",
+        headers=NEWS247_HEADERS,
         generated_page_url="https://www.news247.gr/roi-eidiseon/page/{page}/",
         generated_page_offset=2,
-        pagination_referer="origin",
     ),
 )
 
@@ -240,20 +274,6 @@ def state_seen_urls(boundary: dict[str, Any] | None) -> set[str]:
     return {clean_text(url) for url in raw_urls if clean_text(url)}
 
 
-def scan_boundary(boundary: dict[str, Any] | None) -> dict[str, Any] | None:
-    if not boundary:
-        return None
-    raw_urls = boundary.get("seen_urls")
-    if isinstance(raw_urls, list):
-        first_seen_url = next((clean_text(url) for url in raw_urls if clean_text(url)), "")
-        if first_seen_url:
-            return {
-                **boundary,
-                "url": first_seen_url,
-            }
-    return boundary
-
-
 def append_unique_article(articles: list[ListingArticle], seen_urls: set[str], article: ListingArticle) -> bool:
     if article.url in seen_urls:
         return False
@@ -262,18 +282,10 @@ def append_unique_article(articles: list[ListingArticle], seen_urls: set[str], a
     return True
 
 
-def origin_referer(url: str) -> str:
-    parsed = urlparse(url)
-    if not parsed.scheme or not parsed.netloc:
-        return ""
-    return f"{parsed.scheme}://{parsed.netloc}/"
-
-
 def fetch_html(session: requests.Session, url: str, referer: str | None = None) -> tuple[str, str]:
     headers = {}
-    effective_referer = referer or origin_referer(url)
-    if effective_referer:
-        headers["Referer"] = effective_referer
+    if referer:
+        headers["Referer"] = referer
     response = session.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
     response.encoding = response.encoding or response.apparent_encoding or "utf-8"
@@ -453,41 +465,40 @@ def collect_new_listing_articles(
     max_pages: int,
 ) -> ListingCollection:
     session = requests.Session()
-    session.headers.update(HEADERS)
+    session.headers.update(request_headers(source))
     boundary = state.get("sources", {}).get(source.key)
-    boundary_for_scan = scan_boundary(boundary)
     seen_urls = state_seen_urls(boundary)
     new_articles: list[ListingArticle] = []
     state_articles: list[ListingArticle] = []
     url: str | None = source.first_url
-    referer: str | None = None
 
     for page_index in range(max_pages):
         if not url:
             break
         progress(
             "fetch_listing "
-            f"source={source.key} page_index={page_index} url={url} referer={referer or origin_referer(url)}"
+            f"source={source.key} page_index={page_index} url={url} referer={source.headers.get('Referer', '')}"
         )
-        html, final_url = fetch_html(session, url, referer=referer)
+        html, final_url = fetch_html(session, url)
         soup = make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
         progress(f"parsed_listing source={source.key} page_index={page_index} articles={len(page_articles)} final_url={final_url}")
-        if page_index == 0:
-            state_articles = page_articles
+        if not page_articles:
+            progress(f"empty_listing_stop source={source.key} page_index={page_index} url={url}")
+            break
 
         found_boundary = False
         for article in page_articles:
-            if is_boundary(article, boundary_for_scan):
+            if is_boundary(article, boundary):
                 found_boundary = True
                 progress(f"boundary_reached source={source.key} title={short_text(article.title)}")
                 break
+            state_articles.append(article)
             if not append_unique_article(new_articles, seen_urls, article):
                 progress(f"duplicate_listing_skip source={source.key} url={article.url}")
 
         if found_boundary:
             break
-        referer = origin_referer(source.first_url) if source.pagination_referer == "origin" else final_url
         url = find_next_listing_url(source, soup, final_url, page_index)
         if url:
             progress(f"next_listing source={source.key} next_url={url}")
@@ -519,7 +530,7 @@ def extract_json_ld_article_body(soup: BeautifulSoup) -> str:
 
 
 def scrape_article_content(session: requests.Session, article: ListingArticle) -> ArticleContent:
-    html, final_url = fetch_html(session, article.url, referer=origin_referer(article.url))
+    html, final_url = fetch_html(session, article.url)
     soup = make_soup(html)
 
     for tag in soup.find_all(["script", "style", "noscript", "nav", "footer", "header", "aside"]):
@@ -836,7 +847,7 @@ def run() -> int:
 
             possible_articles = [article for article in new_articles if contains_primary_title_term(article.title)]
             article_session = requests.Session()
-            article_session.headers.update(HEADERS)
+            article_session.headers.update(request_headers(source))
             progress(
                 "title_filter_done "
                 f"source={source.key} checked={len(new_articles)} possible_articles={len(possible_articles)}"
