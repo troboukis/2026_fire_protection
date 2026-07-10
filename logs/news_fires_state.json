@@ -1,31 +1,32 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564336832/giati-oi-epistimones-lene-na-trome-giaoyrti-kathe-mera/",
-      "title": "Γιατί οι επιστήμονες λένε να τρώμε γιαούρτι κάθε μέρα",
-      "normalized_title": "ΓΙΑΤΙ ΟΙ ΕΠΙΣΤΗΜΟΝΕΣ ΛΕΝΕ ΝΑ ΤΡΩΜΕ ΓΙΑΟΥΡΤΙ ΚΑΘΕ ΜΕΡΑ",
+      "url": "https://www.kathimerini.gr/opinion/readers/564335284/i-ellada-poy-pligonoyme/",
+      "title": "Η Ελλάδα που πληγώνουμε",
+      "normalized_title": "Η ΕΛΛΑΔΑ ΠΟΥ ΠΛΗΓΩΝΟΥΜΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564336832/giati-oi-epistimones-lene-na-trome-giaoyrti-kathe-mera/",
-        "https://www.kathimerini.gr/world/564337093/ipa-katigories-gia-tromokratia-stoys-8-poy-schediazan-epithesi-me-drone-ston-leyko-oiko/"
+        "https://www.kathimerini.gr/opinion/readers/564335284/i-ellada-poy-pligonoyme/",
+        "https://www.kathimerini.gr/society/564337108/ellines-pyrosvestes-sta-pyrina-metopa-tis-notias-gallias/",
+        "https://www.kathimerini.gr/politics/564336955/al-tsipras-ethniki-itta-ta-f-35-stin-toyrkia/"
       ],
-      "seen_at_utc": "2026-07-10T18:02:37.693480+00:00"
+      "seen_at_utc": "2026-07-10T18:32:56.424022+00:00"
     },
     "news247": {
-      "url": "https://www.news247.gr/kosmos/vretania-sinelifthi-26xronos-gia-ti-dolofonia-tis-proin-ipourgou-ann-widdecombe/",
-      "title": "Βρετανία: Συνελήφθη 26χρονος για τη δολοφονία της πρώην υπουργού, Ann Widdecombe",
-      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΣΥΝΕΛΗΦΘΗ 26ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΠΡΩΗΝ ΥΠΟΥΡΓΟΥ, ANN WIDDECOMBE",
+      "url": "https://www.news247.gr/kosmos/ipa-poiniki-dioxi-se-8-atoma-gia-sxedio-dolofonias-tou-trab/",
+      "title": "ΗΠΑ: Ποινική δίωξη σε 8 άτομα για σχέδιο δολοφονίας του Τραμπ",
+      "normalized_title": "ΗΠΑ: ΠΟΙΝΙΚΗ ΔΙΩΞΗ ΣΕ 8 ΑΤΟΜΑ ΓΙΑ ΣΧΕΔΙΟ ΔΟΛΟΦΟΝΙΑΣ ΤΟΥ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.news247.gr/kosmos/vretania-sinelifthi-26xronos-gia-ti-dolofonia-tis-proin-ipourgou-ann-widdecombe/",
-        "https://www.news247.gr/kosmos/gallia-katheirxi-27-eton-se-53xrono-pou-skotose-kai-diamelise-to-ptoma-tis-sizigou-tou/",
-        "https://www.news247.gr/athlitika/afto-einai-to-kleisto-dietes-simvolaio-tou-papanikolaou-ston-olimpiako/"
+        "https://www.news247.gr/kosmos/ipa-poiniki-dioxi-se-8-atoma-gia-sxedio-dolofonias-tou-trab/"
       ],
-      "seen_at_utc": "2026-07-10T18:21:49.928915+00:00"
+      "seen_at_utc": "2026-07-10T18:32:56.424177+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849023/suginei-minuma-tou-sholeiou-gia-tin-15hroni-anna-maria-pou-skotothike-se-trohaio-as-einai-i-mnimi-tis-foteini-kai-aionia/?utm_source=rss",
-      "title": "Συγκινεί το μήνυμα του σχολείου για την 15χρονη Άννα Μαρία που σκοτώθηκε σε τροχαίο: Ας είναι η μνήμη της φωτεινή και αιώνια",
-      "normalized_title": "ΣΥΓΚΙΝΕΙ ΤΟ ΜΗΝΥΜΑ ΤΟΥ ΣΧΟΛΕΙΟΥ ΓΙΑ ΤΗΝ 15ΧΡΟΝΗ ΑΝΝΑ ΜΑΡΙΑ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ: ΑΣ ΕΙΝΑΙ Η ΜΝΗΜΗ ΤΗΣ ΦΩΤΕΙΝΗ ΚΑΙ ΑΙΩΝΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1849031/klirosi-eurojackpot-1072026-ta-apotelesmata-kai-oi-arithmoi-pou-kerdizoun/?utm_source=rss",
+      "title": "Κλήρωση Eurojackpot 10/7/2026: Τα αποτελέσματα και οι αριθμοί που κερδίζουν",
+      "normalized_title": "ΚΛΗΡΩΣΗ EUROJACKPOT 10/7/2026: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΚΑΙ ΟΙ ΑΡΙΘΜΟΙ ΠΟΥ ΚΕΡΔΙΖΟΥΝ",
       "seen_urls": [
+        "https://www.protothema.gr/greece/article/1849031/klirosi-eurojackpot-1072026-ta-apotelesmata-kai-oi-arithmoi-pou-kerdizoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849028/xilothike-futeia-kannavis-pano-apo-4000-dendrullia-stin-lamia-treis-sullipseis/?utm_source=rss",
         "https://www.protothema.gr/greece/article/1849023/suginei-minuma-tou-sholeiou-gia-tin-15hroni-anna-maria-pou-skotothike-se-trohaio-as-einai-i-mnimi-tis-foteini-kai-aionia/?utm_source=rss",
         "https://www.protothema.gr/greece/article/1849002/edopistike-thalassia-narki-sta-hania/?utm_source=rss",
         "https://www.protothema.gr/greece/article/1849001/to-upex-kuprou-katadikazei-to-paranomo-mnimonio-katanoisis-metaxu-tourkias-kai-katehomenon-gia-tin-kataskeui-/?utm_source=rss",
@@ -123,12 +124,10 @@
         "https://www.protothema.gr/greece/article/1848432/agria-subloki-peripou-15-anilikon-sto-kedro-tis-lamias-epesan-bounies-klotsies-eskisan-blouzes-oi-eblekomenoi/?utm_source=rss",
         "https://www.protothema.gr/greece/article/1848431/treis-sullipseis-gia-diakinisi-narkotikon-stin-attiki-eihan-prosdokomeno-kerdos-toulahiston-125000-euro/?utm_source=rss",
         "https://www.protothema.gr/greece/article/1848415/70hronos-sunelifthi-gia-ti-fotia-sto-kalohori-ekane-hrisi-gumnis-flogas-se-harti-gia-na-apomakrunei-sfigges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1848392/megali-epiheirisi-tou-limenikou-sti-thessaloniki-apokalupse-mini-oplostasio-kai-narkotika-se-psilikatzidiko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1848389/giorgos-sourlas-pragmatopoiithike-i-proti-tautopoiisi-iroa-tou-epous-1940-41/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1848375/deite-video-odigos-ston-voak-prospernaei-paranoma-ohimata-kai-paraligo-na-trakarei-me-fortigo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1848392/megali-epiheirisi-tou-limenikou-sti-thessaloniki-apokalupse-mini-oplostasio-kai-narkotika-se-psilikatzidiko/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-10T18:21:49.928956+00:00"
+      "seen_at_utc": "2026-07-10T18:32:56.424347+00:00"
     }
   },
-  "updated_at_utc": "2026-07-10T18:21:49.929013+00:00"
+  "updated_at_utc": "2026-07-10T18:32:56.424713+00:00"
 }
