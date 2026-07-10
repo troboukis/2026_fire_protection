@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -47,6 +48,7 @@ ATHENS_TZ = ZoneInfo("Europe/Athens")
 DEFAULT_STATE_PATH = ROOT / "logs" / "news_fires_state.json"
 GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 REQUEST_TIMEOUT = 30
+LISTING_PAGE_DELAY_SECONDS = 3
 MAX_LISTING_PAGES = 20
 MAX_AREA_CHARS = 120
 KATHIMERINI_HEADERS = {
@@ -152,6 +154,7 @@ class NewsFireRow:
 class ListingCollection:
     articles: list[ListingArticle]
     state_articles: list[ListingArticle]
+    error: str | None = None
 
 
 SOURCES = (
@@ -245,6 +248,23 @@ def save_state(path: Path, state: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     state["updated_at_utc"] = datetime.now(timezone.utc).isoformat()
     path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def log_state_summary(path: Path, state: dict[str, Any]) -> None:
+    sources = state.get("sources") if isinstance(state.get("sources"), dict) else {}
+    progress(f"state_loaded path={path} exists={path.exists()} sources={len(sources)}")
+    for source in SOURCES:
+        boundary = sources.get(source.key) if isinstance(sources, dict) else None
+        if isinstance(boundary, dict):
+            seen_urls = boundary.get("seen_urls")
+            seen_count = len(seen_urls) if isinstance(seen_urls, list) else 0
+            progress(
+                "state_boundary "
+                f"source={source.key} url={clean_text(boundary.get('url')) or '(none)'} "
+                f"title={short_text(boundary.get('title')) or '(none)'} seen_urls={seen_count}"
+            )
+        else:
+            progress(f"state_boundary source={source.key} url=(none) title=(none) seen_urls=0")
 
 
 def article_identity(article: ListingArticle) -> dict[str, str]:
@@ -475,11 +495,23 @@ def collect_new_listing_articles(
     for page_index in range(max_pages):
         if not url:
             break
+        if page_index > 0:
+            progress(f"listing_page_sleep source={source.key} seconds={LISTING_PAGE_DELAY_SECONDS}")
+            time.sleep(LISTING_PAGE_DELAY_SECONDS)
         progress(
             "fetch_listing "
             f"source={source.key} page_index={page_index} url={url} referer={source.headers.get('Referer', '')}"
         )
-        html, final_url = fetch_html(session, url)
+        try:
+            html, final_url = fetch_html(session, url)
+        except requests.RequestException as exc:
+            if state_articles:
+                progress(
+                    "listing_fetch_error_partial "
+                    f"source={source.key} page_index={page_index} url={url} error={exc}"
+                )
+                return ListingCollection(articles=new_articles, state_articles=state_articles, error=str(exc))
+            raise
         soup = make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
         progress(f"parsed_listing source={source.key} page_index={page_index} articles={len(page_articles)} final_url={final_url}")
@@ -816,6 +848,7 @@ def run() -> int:
     state = load_state(DEFAULT_STATE_PATH)
     scraped_at = datetime.now(timezone.utc)
     progress(f"start state_file={DEFAULT_STATE_PATH} max_pages={MAX_LISTING_PAGES}")
+    log_state_summary(DEFAULT_STATE_PATH, state)
     progress("resolve_database_url start")
     db_url = resolve_database_url(None)
     progress("resolve_database_url done")
@@ -842,6 +875,9 @@ def run() -> int:
                 continue
             new_articles = listing.articles
             progress(f"source_listing_done source={source.key} new_listing_articles={len(new_articles)}")
+            if listing.error:
+                source_errors.append({"source": source.key, "error": listing.error})
+                progress(f"source_listing_partial_error source={source.key} error={listing.error}")
             if listing.state_articles:
                 successful_articles_by_source[source.key] = listing.state_articles
 
