@@ -65,30 +65,6 @@ jobs:
             echo "news_fires_state.json not found"
           fi
 
-      - name: Refresh news fires
+      - name: Refresh news fires and push state
         run: |
-          mkdir -p logs
-          python src/fetch_news_fires.py
-
-      - name: Commit and push news_fires state
-        if: always() && hashFiles('logs/news_fires_state.json') != ''
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add logs/news_fires_state.json
-          if git diff --cached --quiet; then
-            echo "No news_fires state changes to commit"
-            exit 0
-          fi
-          git commit -m "chore(data): update news fires state"
-          for attempt in 1 2 3; do
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            if [ "$attempt" -eq 3 ]; then
-              echo "Push failed after ${attempt} attempts"
-              exit 1
-            fi
-            git fetch origin main
-            git rebase origin/main
-          done
+          scripts/run_news_fires_and_push_state.sh
