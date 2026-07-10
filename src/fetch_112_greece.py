@@ -31,7 +31,6 @@ load_dotenv(ROOT.parent / ".env")
 
 X_API_BASE = "https://api.x.com/2"
 X_USERNAME = "112Greece"
-STATE_PATH = ROOT / "logs" / "x_112_greece_state.json"
 GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 REQUEST_TIMEOUT = 30
 CURRENT_FIRES_TABLE = "public.current_fires"
@@ -97,22 +96,6 @@ def normalize_112_activation_prefix(value: str) -> str:
 
 def starts_with_greek_112_activation(text: str) -> bool:
     return normalize_112_activation_prefix(text).startswith("ΕΝΕΡΓΟΠΟΙΗΣΗ 112")
-
-
-def load_state(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {}
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
-        return {}
-    return data if isinstance(data, dict) else {}
-
-
-def save_state(path: Path, state: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    state["updated_at_utc"] = datetime.now(timezone.utc).isoformat()
-    path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def resolve_env(name: str, *, required: bool = True) -> str | None:
@@ -492,6 +475,25 @@ def parse_posted_at(value: str | None) -> datetime | None:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
+def latest_stored_post_id(conn, account: str) -> str | None:
+    cur = conn.cursor()
+    cur.execute(
+        f"""
+        SELECT post_id
+        FROM {NOTICE_TABLE}
+        WHERE source = 'x'
+          AND account = %s
+          AND post_id ~ '^[0-9]+$'
+        ORDER BY post_id::numeric DESC
+        LIMIT 1
+        """,
+        (account,),
+    )
+    row = cur.fetchone()
+    cur.close()
+    return str(row[0]) if row and row[0] else None
+
+
 def upsert_112_notice(conn, post: XPost, enriched: dict[str, Any], match: FireMatch | None) -> None:
     now = datetime.now(timezone.utc)
     post_url = f"https://x.com/{X_USERNAME}/status/{post.post_id}"
@@ -621,12 +623,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description='Poll @112Greece X posts, extract/geocode instructions, and store notices in public."112_notice".',
     )
     parser.add_argument("--username", default=X_USERNAME, help="X username to poll. Default: 112Greece")
-    parser.add_argument("--state-path", type=Path, default=STATE_PATH, help="JSON state path for since_id")
     parser.add_argument("--db-path", default=None, help="Optional DATABASE_URL override")
     parser.add_argument("--sample-text", default=None, help="Process this text instead of calling X")
     parser.add_argument("--geojson", type=Path, default=DEFAULT_GEOJSON, help="Municipalities GeoJSON")
     parser.add_argument("--dry-run", action="store_true", help="Print extracted/geocoded JSON and skip DB writes")
-    parser.add_argument("--no-state", action="store_true", help="Do not read or update since_id state")
     return parser.parse_args(argv)
 
 
@@ -641,17 +641,20 @@ def main(argv: list[str] | None = None) -> int:
         municipality_matcher = MunicipalityMatcher(args.geojson)
         conn = None if args.dry_run else psycopg2.connect(resolve_database_url(args.db_path))
 
-        state = {} if args.no_state else load_state(args.state_path)
         if args.sample_text:
             posts = [XPost(post_id="sample", text=args.sample_text, created_at=datetime.now(timezone.utc).isoformat())]
         else:
             bearer_token = resolve_env("X_BEARER_TOKEN")
-            user_id = str(state.get("user_id") or resolve_x_user_id(bearer_token, args.username))
-            state["user_id"] = user_id
+            user_id = resolve_x_user_id(bearer_token, args.username)
+            since_id = None if args.dry_run else latest_stored_post_id(conn, args.username)
+            if since_id:
+                log(f"db_boundary_since_id={since_id}")
+            else:
+                log("db_boundary_since_id=None")
             posts = fetch_recent_posts(
                 bearer_token,
                 user_id,
-                since_id=None if args.no_state else state.get("last_seen_id"),
+                since_id=since_id,
             )
 
         processed = 0
@@ -669,10 +672,6 @@ def main(argv: list[str] | None = None) -> int:
         finally:
             if conn:
                 conn.close()
-
-        if posts and not args.dry_run and not args.no_state and not args.sample_text:
-            state["last_seen_id"] = max([str(state.get("last_seen_id") or "0")] + [post.post_id for post in posts], key=int)
-            save_state(args.state_path, state)
 
         log(f"fetched={len(posts)} processed={processed}")
         return 0
