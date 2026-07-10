@@ -7,7 +7,7 @@ on:
       - news-fires-refresh
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: news-fires-refresh
@@ -57,22 +57,38 @@ jobs:
               ;;
           esac
 
-      - name: Restore news_fires state
-        uses: actions/cache/restore@v4
-        with:
-          path: logs/news_fires_state.json
-          key: news-fires-state-${{ github.run_id }}
-          restore-keys: |
-            news-fires-state-
+      - name: Show news_fires state status
+        run: |
+          if [ -f logs/news_fires_state.json ]; then
+            echo "news_fires_state.json found in checkout"
+          else
+            echo "news_fires_state.json not found"
+          fi
 
       - name: Refresh news fires
         run: |
           mkdir -p logs
           python src/fetch_news_fires.py
 
-      - name: Save news_fires state
+      - name: Commit and push news_fires state
         if: always() && hashFiles('logs/news_fires_state.json') != ''
-        uses: actions/cache/save@v4
-        with:
-          path: logs/news_fires_state.json
-          key: news-fires-state-${{ github.run_id }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logs/news_fires_state.json
+          if git diff --cached --quiet; then
+            echo "No news_fires state changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(data): update news fires state"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Push failed after ${attempt} attempts"
+              exit 1
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
