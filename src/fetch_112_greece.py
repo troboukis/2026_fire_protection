@@ -492,70 +492,6 @@ def parse_posted_at(value: str | None) -> datetime | None:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
-def ensure_112_notice_table(conn) -> None:
-    cur = conn.cursor()
-    cur.execute(
-        f"""
-        ALTER TABLE {CURRENT_FIRES_TABLE}
-          DROP COLUMN IF EXISTS is_112_notice,
-          DROP COLUMN IF EXISTS citizen_instructions_112,
-          DROP COLUMN IF EXISTS citizen_instructions_112_geocoded
-        """
-    )
-    cur.execute(
-        f"""
-        CREATE TABLE IF NOT EXISTS {NOTICE_TABLE} (
-          notice_id TEXT PRIMARY KEY,
-          current_fire_incident_key TEXT REFERENCES {CURRENT_FIRES_TABLE} (incident_key)
-            ON UPDATE CASCADE
-            ON DELETE SET NULL,
-          source TEXT NOT NULL DEFAULT 'x',
-          account TEXT NOT NULL DEFAULT '112Greece',
-          post_id TEXT NOT NULL UNIQUE,
-          post_url TEXT NOT NULL,
-          posted_at TIMESTAMPTZ,
-          fetched_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-          notice_type TEXT,
-          notice_text TEXT NOT NULL,
-          instructions_geocoded JSONB NOT NULL,
-          municipality_keys TEXT[],
-          matched_municipality_key TEXT,
-          raw JSONB NOT NULL
-        )
-        """
-    )
-    cur.execute(
-        f"""
-        ALTER TABLE {NOTICE_TABLE}
-          ADD COLUMN IF NOT EXISTS municipality_keys TEXT[],
-          ADD COLUMN IF NOT EXISTS matched_municipality_key TEXT,
-          DROP COLUMN IF EXISTS match_score,
-          DROP COLUMN IF EXISTS match_reasons,
-          DROP COLUMN IF EXISTS match_distance_km
-        """
-    )
-    cur.execute(f"ALTER TABLE {NOTICE_TABLE} ENABLE ROW LEVEL SECURITY")
-    cur.execute(
-        f"CREATE INDEX IF NOT EXISTS idx_112_notice_current_fire_incident_key ON {NOTICE_TABLE} (current_fire_incident_key)"
-    )
-    cur.execute(f"CREATE INDEX IF NOT EXISTS idx_112_notice_posted_at ON {NOTICE_TABLE} (posted_at DESC)")
-    cur.execute(
-        f"CREATE INDEX IF NOT EXISTS idx_112_notice_instructions_geocoded_gin ON {NOTICE_TABLE} USING GIN (instructions_geocoded)"
-    )
-    cur.execute(f"DROP POLICY IF EXISTS public_read_112_notice ON {NOTICE_TABLE}")
-    cur.execute(
-        f"""
-        CREATE POLICY public_read_112_notice
-        ON {NOTICE_TABLE}
-        FOR SELECT
-        TO anon, authenticated
-        USING (true)
-        """
-    )
-    conn.commit()
-    cur.close()
-
-
 def upsert_112_notice(conn, post: XPost, enriched: dict[str, Any], match: FireMatch | None) -> None:
     now = datetime.now(timezone.utc)
     post_url = f"https://x.com/{X_USERNAME}/status/{post.post_id}"
@@ -704,8 +640,6 @@ def main(argv: list[str] | None = None) -> int:
         google_api_key = resolve_env("GOOGLE_GEOCODING_API_KEY")
         municipality_matcher = MunicipalityMatcher(args.geojson)
         conn = None if args.dry_run else psycopg2.connect(resolve_database_url(args.db_path))
-        if conn:
-            ensure_112_notice_table(conn)
 
         state = {} if args.no_state else load_state(args.state_path)
         if args.sample_text:
