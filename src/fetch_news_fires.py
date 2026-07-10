@@ -5,6 +5,7 @@ import os
 import re
 import time
 import unicodedata
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -518,6 +519,10 @@ def local_name(node: Any) -> str:
     return str(value).rsplit("}", 1)[-1].lower()
 
 
+def xml_local_name(value: str) -> str:
+    return value.rsplit("}", 1)[-1].lower()
+
+
 def child_text(node: Any, names: tuple[str, ...]) -> str | None:
     wanted = {name.lower() for name in names}
     for child in getattr(node, "children", []):
@@ -560,18 +565,54 @@ def extract_rss_image_url(item: Any, base_url: str) -> str | None:
     return urljoin(base_url, raw) if raw else None
 
 
+def xml_child_text(node: ET.Element, names: tuple[str, ...]) -> str | None:
+    wanted = {name.lower() for name in names}
+    for child in list(node):
+        if xml_local_name(child.tag) in wanted:
+            text = clean_text("".join(child.itertext()))
+            if text:
+                return text
+    return None
+
+
+def extract_rss_image_url_from_xml(item: ET.Element, base_url: str) -> str | None:
+    for child in list(item):
+        name = xml_local_name(child.tag)
+        if name in {"content", "thumbnail"}:
+            raw = clean_text(child.attrib.get("url"))
+            if raw:
+                return urljoin(base_url, raw)
+        if name == "enclosure":
+            enclosure_type = clean_text(child.attrib.get("type")).lower()
+            raw = clean_text(child.attrib.get("url"))
+            if raw and (enclosure_type.startswith("image/") or not enclosure_type):
+                return urljoin(base_url, raw)
+
+    description = xml_child_text(item, ("description", "encoded"))
+    if description:
+        raw = extract_image_url(make_soup(description), base_url)
+        if raw:
+            return raw
+    return None
+
+
 def parse_rss_listing_articles(
     source: SourceConfig,
     xml: str,
     base_url: str,
 ) -> list[ListingArticle]:
-    soup = make_xml_soup(xml)
     articles: list[ListingArticle] = []
     seen_urls: set[str] = set()
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        return articles
 
-    for item in soup.find_all("item"):
-        title = child_text(item, ("title",))
-        raw_url = child_text(item, ("link",)) or child_text(item, ("guid",))
+    for item in root.iter():
+        if xml_local_name(item.tag) != "item":
+            continue
+        title = xml_child_text(item, ("title",))
+        raw_url = xml_child_text(item, ("link",)) or xml_child_text(item, ("guid",))
         url = urljoin(base_url, raw_url) if raw_url else ""
         if not title or not url.startswith("http") or url in seen_urls:
             continue
@@ -584,8 +625,8 @@ def parse_rss_listing_articles(
                 source=source.display_name,
                 title=title,
                 url=url,
-                image_url=extract_rss_image_url(item, base_url),
-                published_at=parse_datetime_value(child_text(item, ("pubdate", "published", "updated"))),
+                image_url=extract_rss_image_url_from_xml(item, base_url),
+                published_at=parse_datetime_value(xml_child_text(item, ("pubdate", "published", "updated"))),
             )
         )
         seen_urls.add(url)
@@ -636,7 +677,7 @@ def collect_new_listing_articles(
                 )
                 return ListingCollection(articles=new_articles, state_articles=state_articles, error=str(exc))
             raise
-        soup = make_xml_soup(html) if source.listing_format == "rss" else make_soup(html)
+        soup = None if source.listing_format == "rss" else make_soup(html)
         page_articles = parse_listing_articles(source, html, final_url)
         progress(f"parsed_listing source={source.key} page_index={page_index} articles={len(page_articles)} final_url={final_url}")
         if not page_articles:
