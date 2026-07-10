@@ -99,6 +99,39 @@ NEWS247_HEADERS = {
     "Sec-CH-UA-Platform": '"macOS"',
 }
 
+EFSYN_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/149.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8,"
+        "application/signed-exchange;v=b3;q=0.7"
+    ),
+    "Accept-Language": "en-US,en;q=0.9,el;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": '"macOS"',
+    "Sec-CH-UA-Arch": '"arm"',
+    "Sec-CH-UA-Bitness": '"64"',
+    "Sec-CH-UA-Full-Version": '"149.0.7827.201"',
+    "Sec-CH-UA-Full-Version-List": (
+        '"Google Chrome";v="149.0.7827.201", '
+        '"Chromium";v="149.0.7827.201", '
+        '"Not)A;Brand";v="24.0.0.0"'
+    ),
+    "Sec-CH-UA-Model": '""',
+    "Sec-CH-UA-Platform-Version": '"26.5.2"',
+}
+
 PROTOTHEMA_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -188,6 +221,14 @@ SOURCES = (
         headers=NEWS247_HEADERS,
         generated_page_url="https://www.news247.gr/roi-eidiseon/page/{page}/",
         generated_page_offset=2,
+    ),
+    SourceConfig(
+        key="efsyn",
+        display_name="ΕφΣυν",
+        first_url="https://www.efsyn.gr/newsroom/page/0/",
+        headers=EFSYN_HEADERS,
+        generated_page_url="https://www.efsyn.gr/newsroom/page/{page}/",
+        generated_page_offset=1,
     ),
     SourceConfig(
         key="protothema",
