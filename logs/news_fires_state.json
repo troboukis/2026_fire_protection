@@ -1,17 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/people/564336367/pos-dimioyrgisa-to-proto-elliniko-paichnidi-gia-to-play-station/",
-      "title": "Πώς δημιούργησα το πρώτο ελληνικό παιχνίδι για το Play Station",
-      "normalized_title": "ΠΩΣ ΔΗΜΙΟΥΡΓΗΣΑ ΤΟ ΠΡΩΤΟ ΕΛΛΗΝΙΚΟ ΠΑΙΧΝΙΔΙ ΓΙΑ ΤΟ PLAY STATION",
+      "url": "https://www.kathimerini.gr/opinion/564337378/i-katantia-toy-syriza-kai-o-alexis-tsipras/",
+      "title": "Η κατάντια του ΣΥΡΙΖΑ και ο Αλέξης Τσίπρας",
+      "normalized_title": "Η ΚΑΤΑΝΤΙΑ ΤΟΥ ΣΥΡΙΖΑ ΚΑΙ Ο ΑΛΕΞΗΣ ΤΣΙΠΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/people/564336367/pos-dimioyrgisa-to-proto-elliniko-paichnidi-gia-to-play-station/",
-        "https://www.kathimerini.gr/culture/tv/564331882/o-mpomp-sfoyggarakis-se-nea-thalassini-peripeteia/",
-        "https://www.kathimerini.gr/society/564339343/dyo-esties-fotias-stin-paramythia-minyma-112-gia-ekkenosi-toy-galata/",
-        "https://www.kathimerini.gr/world/564339322/h-kypros-katadikazei-ta-schedia-agogoy-fysikoy-aerioy-metaxy-toyrkias-kai-katechomenon/",
-        "https://www.kathimerini.gr/politics/564339319/polakis-tha-eimai-ypopsifios-proedros-toy-syriza/"
+        "https://www.kathimerini.gr/opinion/564337378/i-katantia-toy-syriza-kai-o-alexis-tsipras/",
+        "https://www.kathimerini.gr/opinion/564337555/i-eythyni-tis-mnimis/",
+        "https://www.kathimerini.gr/opinion/sketches/564339082/skitso-toy-andrea-petroylaki-11-07-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564339076/skitso-toy-ilia-makri-11-07-26/",
+        "https://www.kathimerini.gr/society/564339373/kykloma-anavolikon-o-astynomikos-bodybuilder-kai-i-prostasia-sti-mykono/",
+        "https://www.kathimerini.gr/economy/local/564337741/nea-daneia-12-dis-eyro-fetos-apo-tis-trapezes/",
+        "https://www.kathimerini.gr/society/564339364/argos-den-ypirxe-dolos-ischyrizontai-oi-astynomikoi-poy-pyrovolisan-ton-20chrono/"
       ],
-      "seen_at_utc": "2026-07-11T16:04:23.149386+00:00"
+      "seen_at_utc": "2026-07-11T17:04:27.777579+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -25,34 +27,32 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849415/exarthrothike-i-speira-pou-rimaze-stathmeumena-fortiga-stin-dutiki-attiki-exihniastikan-47-klopes-me-leia-85000-euro/?utm_source=rss",
-      "title": "Εξαρθρώθηκε η σπείρα που «ρήμαζε» σταθμευμένα φορτηγά στην Δυτική Αττική, εξιχνιάστηκαν 47 κλοπές με λεία 85.000 ευρώ",
-      "normalized_title": "ΕΞΑΡΘΡΩΘΗΚΕ Η ΣΠΕΙΡΑ ΠΟΥ «ΡΗΜΑΖΕ» ΣΤΑΘΜΕΥΜΕΝΑ ΦΟΡΤΗΓΑ ΣΤΗΝ ΔΥΤΙΚΗ ΑΤΤΙΚΗ, ΕΞΙΧΝΙΑΣΤΗΚΑΝ 47 ΚΛΟΠΕΣ ΜΕ ΛΕΙΑ 85.000 ΕΥΡΩ",
+      "url": "https://www.protothema.gr/greece/article/1849418/edonos-provlimatismos-stin-politiki-prostasia-gia-to-baraz-37-purkagion-mesa-se-liges-ores/?utm_source=rss",
+      "title": "Έντονος προβληματισμός στην Πολιτική Προστασία για το «μπαράζ» 37 πυρκαγιών μέσα σε λίγες ώρες, στο μικροσκόπιο η Κεντρική Μακεδονία",
+      "normalized_title": "ΕΝΤΟΝΟΣ ΠΡΟΒΛΗΜΑΤΙΣΜΟΣ ΣΤΗΝ ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑ ΓΙΑ ΤΟ «ΜΠΑΡΑΖ» 37 ΠΥΡΚΑΓΙΩΝ ΜΕΣΑ ΣΕ ΛΙΓΕΣ ΩΡΕΣ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ Η ΚΕΝΤΡΙΚΗ ΜΑΚΕΔΟΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849415/exarthrothike-i-speira-pou-rimaze-stathmeumena-fortiga-stin-dutiki-attiki-exihniastikan-47-klopes-me-leia-85000-euro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849401/trohaio-ston-peiraia-megales-kathusteriseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849398/fotia-tora-ston-aspropurgo-attikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849418/edonos-provlimatismos-stin-politiki-prostasia-gia-to-baraz-37-purkagion-mesa-se-liges-ores/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T16:04:23.149497+00:00"
+      "seen_at_utc": "2026-07-11T17:04:27.777725+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/gallery/hroystsof-enantion-monternismoy/",
-      "title": "Χρουστσόφ εναντίον μοντερνισμού",
-      "normalized_title": "ΧΡΟΥΣΤΣΟΦ ΕΝΑΝΤΙΟΝ ΜΟΝΤΕΡΝΙΣΜΟΥ",
+      "url": "https://www.efsyn.gr/gallery/to-lexiko-tis-krisis-5/",
+      "title": "Το λεξικό της κρίσης",
+      "normalized_title": "ΤΟ ΛΕΞΙΚΟ ΤΗΣ ΚΡΙΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/gallery/hroystsof-enantion-monternismoy/",
-        "https://www.efsyn.gr/stiles/1425498/olokliromeno-shedio-stirixis-gia-ti-mikromesaia-epiheirimatikotita-grafei-o-kostas-tsoykalas/",
-        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-t-astra-3/",
-        "https://www.efsyn.gr/stiles/1425480/nea-katastasi-nea-dedomena/",
-        "https://www.efsyn.gr/gallery/ennea-pente-2/",
-        "https://www.efsyn.gr/politiki/1425468/o-akritas-kaidatzis-stin-ef-syn-nai-sto-syntagma-ton-pollon/",
-        "https://www.efsyn.gr/gallery/o-mikros-koylis-3/",
-        "https://www.efsyn.gr/ellada/1425728/argos-i-stigmi-poy-astynomikoi-pyrovoloyn-ton-20hrono-vinteo-ntokoymento/",
-        "https://www.efsyn.gr/athlitismos/1425460/moyntial-2026-agglia-norvigia-i-mahi-ton-senter-for/",
-        "https://www.efsyn.gr/politiki/1425451/pasok-programmatiki-kataigida-me-to-vlemma-sto-fthinoporo/"
+        "https://www.efsyn.gr/gallery/to-lexiko-tis-krisis-5/",
+        "https://www.efsyn.gr/kosmos/1425507/i-anavathmismeni-toyrkia-kai-i-amihani-eyropi/",
+        "https://www.efsyn.gr/ellada/1425743/argos-den-eihame-prothesi-na-skotosoyme-ton-20hrono-ti-eipan-oi-astynomikoi-stis-apologies-toys/",
+        "https://www.efsyn.gr/gallery/h-eis-ton-ps-4/",
+        "https://www.efsyn.gr/gallery/syrianes-kart-postal/",
+        "https://www.efsyn.gr/ellada/1425741/synagermos-gia-megali-fotia-stin-paramythia-thesprotias-minyma-112-stoys-katoikoys/",
+        "https://www.efsyn.gr/gallery/mia-eikona-345-lexeis/",
+        "https://www.efsyn.gr/politiki/1425404/dimoskopisi-alco-gia-tin-ef-syn-pros-neo-dipolismo-nd-kai-elas-megalytera-ta-provlimata-simera-apo-to-2019/",
+        "https://www.efsyn.gr/gallery/enas-ntetektiv-stin-korea/",
+        "https://www.efsyn.gr/politiki/1425734/epainoi-atheridi-se-hrysohoidi-gia-ti-marfin-geloysa-me-to-elliniko-fbi-simera-ta-pairno-ola-piso/"
       ],
-      "seen_at_utc": "2026-07-11T16:04:23.149442+00:00"
+      "seen_at_utc": "2026-07-11T17:04:27.777646+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T16:04:23.149586+00:00"
+  "updated_at_utc": "2026-07-11T17:04:27.777834+00:00"
 }
