@@ -1,15 +1,27 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564337357/foniki-pyrkagia-se-dasos-stin-andaloysia/",
-      "title": "Φονική πυρκαγιά σε δάσος στην Ανδαλουσία",
-      "normalized_title": "ΦΟΝΙΚΗ ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΟΣ ΣΤΗΝ ΑΝΔΑΛΟΥΣΙΑ",
+      "url": "https://www.kathimerini.gr/politics/564337216/dolofonia-vagias-nestora-den-ypologisan-tis-kameres/",
+      "title": "Δολοφονία Βάγιας Νέστορα: Δεν υπολόγισαν τις κάμερες",
+      "normalized_title": "ΔΟΛΟΦΟΝΙΑ ΒΑΓΙΑΣ ΝΕΣΤΟΡΑ: ΔΕΝ ΥΠΟΛΟΓΙΣΑΝ ΤΙΣ ΚΑΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564337357/foniki-pyrkagia-se-dasos-stin-andaloysia/",
-        "https://www.kathimerini.gr/world/564337327/kataskopeytiko-thriler-apo-to-monako-eos-to-kievo/",
-        "https://www.kathimerini.gr/world/564337342/sto-fos-schedio-dolofonias-toy-tramp/"
+        "https://www.kathimerini.gr/politics/564337216/dolofonia-vagias-nestora-den-ypologisan-tis-kameres/",
+        "https://www.kathimerini.gr/visual/photography/564337072/san-thilykos-chaalant/",
+        "https://www.kathimerini.gr/world/564338827/tramp-pros-iran-1-000-pyrayloi-einai-etoimoi-an-apopeiratheite-na-me-dolofonisete/",
+        "https://www.kathimerini.gr/politics/564337186/theoreio-o-stochos-ton-1-000-eyro/",
+        "https://www.kathimerini.gr/society/564338815/trochaio-ston-kifiso-ich-anetrapi-meta-apo-sygkroysi-me-fortigo-dyo-traymaties/",
+        "https://www.kathimerini.gr/politics/564337234/entos-kai-ektos-tenekedes-kai-politiki/",
+        "https://www.kathimerini.gr/economy/international/564337663/aytonoma-ochimata-choris-timoni-exetazoyn-oi-ipa/",
+        "https://www.kathimerini.gr/economy/business/564337645/symmachia-motor-oil-aktor-se-energeia-kai-ypodomes/",
+        "https://www.kathimerini.gr/istoria/564334975/san-simera-11-ioylioy-1897-xekina-i-atychis-poliki-apostoli-toy-salomon-aoygkoyst-antree/",
+        "https://www.kathimerini.gr/politics/564337231/vertigko-diarkeias-gia-syriza/",
+        "https://www.kathimerini.gr/society/564338794/omorfochori-larisas-olonychtia-machi-me-tis-floges-anisychia-gia-nees-ekrixeis/",
+        "https://www.kathimerini.gr/economy/international/564337666/meionetai-i-pagkosmia-zitisi-petrelaioy-logo-toy-polemoy-sto-iran/",
+        "https://www.kathimerini.gr/world/564338788/germania-peristatiko-omireias-se-soyper-market-sto-verolino/",
+        "https://www.kathimerini.gr/society/astynomiko/564337195/marfin-oi-fotografies-ton-diakopon-kai-i-taytopoiisi-me-ai/",
+        "https://www.kathimerini.gr/society/564337198/marfin-einai-anthropoi-mesa-eipan-kapste-toys-fonaxan-apo-ton-ochlo/"
       ],
-      "seen_at_utc": "2026-07-11T04:04:05.027398+00:00"
+      "seen_at_utc": "2026-07-11T05:04:04.907881+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -23,26 +35,23 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849099/diasosi-30-metanaston-sti-gaudo/?utm_source=rss",
-      "title": "Διάσωση 30 μεταναστών στη Γαύδο",
-      "normalized_title": "ΔΙΑΣΩΣΗ 30 ΜΕΤΑΝΑΣΤΩΝ ΣΤΗ ΓΑΥΔΟ",
+      "url": "https://www.protothema.gr/greece/article/1849115/kairos-anevainei-i-thermokrasia-os-36-simera-kai-38-tin-kuriaki/?utm_source=rss",
+      "title": "Καιρός: Ανεβαίνει η θερμοκρασία, ως 36 σήμερα και 38 την Κυριακή",
+      "normalized_title": "ΚΑΙΡΟΣ: ΑΝΕΒΑΙΝΕΙ Η ΘΕΡΜΟΚΡΑΣΙΑ, ΩΣ 36 ΣΗΜΕΡΑ ΚΑΙ 38 ΤΗΝ ΚΥΡΙΑΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849099/diasosi-30-metanaston-sti-gaudo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849115/kairos-anevainei-i-thermokrasia-os-36-simera-kai-38-tin-kuriaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T04:04:05.027436+00:00"
+      "seen_at_utc": "2026-07-11T05:04:04.907952+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1425371/o-paok-pairnei-ton-osman-apo-ton-panathinaiko-se-metagrafi-11-ekat-eyro/",
-      "title": "Ο ΠΑΟΚ παίρνει τον Οσμάν από τον Παναθηναϊκό σε μεταγραφή 11 εκατ. ευρώ",
-      "normalized_title": "Ο ΠΑΟΚ ΠΑΙΡΝΕΙ ΤΟΝ ΟΣΜΑΝ ΑΠΟ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΣΕ ΜΕΤΑΓΡΑΦΗ 11 ΕΚΑΤ. ΕΥΡΩ",
+      "url": "https://www.efsyn.gr/ellada/1425394/eortologio-poioi-giortazoyn-simera-11-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 11 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 11 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1425371/o-paok-pairnei-ton-osman-apo-ton-panathinaiko-se-metagrafi-11-ekat-eyro/",
-        "https://www.efsyn.gr/athlitismos/1425366/o-tentogloy-petaxe-sta-861-metra-koryfaia-epidosi-ston-kosmo-gia-to-2026-vinteo/",
-        "https://www.efsyn.gr/ellada/1425348/oi-agries-mnimes-tis-epizisasas-tis-marfin-toys-fonaza-eimaste-anthropoi-mesa-min-rixete-vinteo/",
-        "https://www.efsyn.gr/ellada/1425350/megali-fotia-se-ergostasio-anakyklosis-sto-kileler-larisas-ihise-to-112-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1425394/eortologio-poioi-giortazoyn-simera-11-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-10T21:04:23.109386+00:00"
+      "seen_at_utc": "2026-07-11T05:04:04.907917+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T04:04:05.027518+00:00"
+  "updated_at_utc": "2026-07-11T05:04:04.908048+00:00"
 }
