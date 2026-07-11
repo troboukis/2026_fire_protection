@@ -522,6 +522,11 @@ main {
   background: var(--favicon-accent);
 }
 
+.fire-ticker__entry--notice + .fire-ticker__separator .fire-ticker__dot,
+.fire-ticker__separator:has(+ .fire-ticker__entry--notice) .fire-ticker__dot {
+  background: #b45309;
+}
+
 .fire-ticker__entry-copy {
   display: grid;
   gap: 0.18rem;
@@ -548,6 +553,24 @@ main {
   height: 0.74rem;
   flex: 0 0 auto;
   color: var(--favicon-accent);
+}
+
+.fire-ticker__notice-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.08rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  color: #b45309;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.fire-ticker__entry--notice .fire-ticker__entry-title {
+  max-width: min(34rem, 48vw);
 }
 
 .fire-ticker__entry-title {

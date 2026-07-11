@@ -25,15 +25,44 @@ type CurrentFireRow = {
   lon: number | string | null
 }
 
+type NoticePlace = {
+  name?: unknown
+  municipality_name?: unknown
+}
+
+type NoticeInstruction = {
+  instruction_text?: unknown
+  from_places?: NoticePlace[]
+  to_places?: NoticePlace[]
+}
+
+type NoticeInstructions = {
+  affected_places?: NoticePlace[]
+  instructions?: NoticeInstruction[]
+}
+
+type NoticeRow = {
+  notice_id: string
+  current_fire_incident_key: string | null
+  posted_at: string | null
+  notice_type: string | null
+  instructions_geocoded: NoticeInstructions | null
+  municipality_keys: string[] | null
+  matched_municipality_key: string | null
+}
+
 type FireTickerItem = {
+  kind: 'fire' | 'notice' | 'state'
   id: string
   municipalityKey: string | null
   municipalityLabel: string
-  fuelType: string
-  startDate: string
-  status: string
+  title: string
+  primaryMeta: string
+  secondaryMeta: string
   statusColor?: string
   hasLocation: boolean
+  hoverIncidentKey: string | null
+  sortTime: number
 }
 
 type FireStatusCount = {
@@ -58,6 +87,42 @@ function formatDateEl(value: string | null): string {
     month: 'short',
     year: 'numeric',
   }).format(date)
+}
+
+function formatNoticeTime(value: string | null): string {
+  if (!value) return '—'
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return '—'
+
+  const diffMs = Date.now() - date.getTime()
+  const minuteMs = 60 * 1000
+  const hourMs = 60 * minuteMs
+
+  if (diffMs >= 0 && diffMs < hourMs) {
+    const minutes = Math.max(1, Math.round(diffMs / minuteMs))
+    return `πριν ${minutes} λεπ.`
+  }
+
+  if (diffMs >= 0 && diffMs < 24 * hourMs) {
+    const hours = Math.max(1, Math.round(diffMs / hourMs))
+    return `πριν ${hours} ώρ.`
+  }
+
+  return new Intl.DateTimeFormat('el-GR', {
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(date)
+}
+
+function parseTime(value: string | null): number {
+  if (!value) return 0
+  const time = new Date(value).getTime()
+  return Number.isFinite(time) ? time : 0
+}
+
+function truncateText(value: string, maxLength = 110): string {
+  if (value.length <= maxLength) return value
+  return `${value.slice(0, maxLength - 1).trim()}…`
 }
 
 function normalizeStatus(value: string | null): string | null {
@@ -96,14 +161,87 @@ function buildStatusCounts(rows: CurrentFireRow[]): FireStatusCount[] {
 function buildTickerItem(row: CurrentFireRow): FireTickerItem {
   const status = normalizeStatus(row.status) ?? '—'
   return {
+    kind: 'fire',
     id: row.incident_key,
     municipalityKey: cleanText(row.municipality_key),
     municipalityLabel: `ΔΗΜΟΣ ${cleanText(row.municipality_raw) ?? '—'}`,
-    fuelType: cleanText(row.fuel_type) ?? '—',
-    startDate: formatDateEl(cleanText(row.start_date)),
-    status,
+    title: cleanText(row.fuel_type) ?? '—',
+    primaryMeta: `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
+    secondaryMeta: status,
     statusColor: CURRENT_FIRE_STATUS_COLORS[status],
     hasLocation: hasValidCoordinatePair(row.lat, row.lon),
+    hoverIncidentKey: row.incident_key,
+    sortTime: parseTime(cleanText(row.status_updated_at)) || parseTime(cleanText(row.last_seen_at)) || parseTime(cleanText(row.start_date)),
+  }
+}
+
+function isNoticeInstructions(value: unknown): value is NoticeInstructions {
+  return typeof value === 'object' && value !== null
+}
+
+function placeLabel(place: NoticePlace): string | null {
+  return cleanText(place.name) ?? cleanText(place.municipality_name)
+}
+
+function joinPlaceLabels(places: NoticePlace[] | undefined, limit = 3): string | null {
+  const labels = (places ?? [])
+    .map(placeLabel)
+    .filter((label): label is string => Boolean(label))
+  const uniqueLabels = Array.from(new Set(labels))
+  if (!uniqueLabels.length) return null
+  const visible = uniqueLabels.slice(0, limit).join(', ')
+  const extraCount = uniqueLabels.length - limit
+  return extraCount > 0 ? `${visible} +${extraCount}` : visible
+}
+
+function noticeLocationLabel(instructions: NoticeInstructions | null, row: NoticeRow): string {
+  const affected = joinPlaceLabels(instructions?.affected_places)
+  if (affected) return `ΠΕΡΙΟΧΗ ${affected}`
+
+  const firstInstruction = instructions?.instructions?.[0]
+  const from = joinPlaceLabels(firstInstruction?.from_places)
+  if (from) return `ΠΕΡΙΟΧΗ ${from}`
+
+  return row.matched_municipality_key || row.municipality_keys?.[0]
+    ? 'ΠΕΡΙΟΧΗ 112'
+    : 'ΕΙΔΟΠΟΙΗΣΗ 112'
+}
+
+function noticeTitle(row: NoticeRow, instructions: NoticeInstructions | null): string {
+  const firstInstruction = instructions?.instructions?.find((instruction) => {
+    return cleanText(instruction.instruction_text) || instruction.from_places?.length || instruction.to_places?.length
+  })
+
+  const from = joinPlaceLabels(firstInstruction?.from_places)
+  const to = joinPlaceLabels(firstInstruction?.to_places)
+  if (from && to) return `Απομάκρυνση από ${from} προς ${to}`
+  if (from) return `Οδηγία απομάκρυνσης από ${from}`
+
+  const instructionText = cleanText(firstInstruction?.instruction_text)
+  if (instructionText) return truncateText(instructionText.replace(/^Ενεργοποίηση\s+112\s*[-–—:]?\s*/i, ''))
+
+  const noticeType = cleanText(row.notice_type)
+  if (noticeType) return noticeType
+
+  const affected = joinPlaceLabels(instructions?.affected_places)
+  return affected ? 'Προειδοποίηση για δασική πυρκαγιά' : 'Ειδοποίηση 112'
+}
+
+function buildNoticeItem(row: NoticeRow): FireTickerItem {
+  const instructions = isNoticeInstructions(row.instructions_geocoded) ? row.instructions_geocoded : null
+  const municipalityKey = cleanText(row.matched_municipality_key) ?? cleanText(row.municipality_keys?.[0])
+  return {
+    kind: 'notice',
+    id: row.notice_id,
+    municipalityKey,
+    municipalityLabel: noticeLocationLabel(instructions, row),
+    title: noticeTitle(row, instructions),
+    primaryMeta: formatNoticeTime(cleanText(row.posted_at)),
+    secondaryMeta: '',
+    statusColor: '#b45309',
+    hasLocation: Boolean(row.current_fire_incident_key),
+    hoverIncidentKey: cleanText(row.current_fire_incident_key),
+    sortTime: parseTime(cleanText(row.posted_at)),
   }
 }
 
@@ -140,21 +278,21 @@ function renderTickerEntries(
     </span>,
     <article
       key={`${keyPrefix}${item.id}`}
-      className={`fire-ticker__entry${item.municipalityKey ? ' fire-ticker__entry--clickable' : ''}`}
+      className={`fire-ticker__entry fire-ticker__entry--${item.kind}${item.municipalityKey ? ' fire-ticker__entry--clickable' : ''}`}
       onClick={item.municipalityKey && onClickMunicipality ? () => onClickMunicipality(item.municipalityKey!) : undefined}
-      onMouseEnter={item.hasLocation && onHoverFire ? () => onHoverFire(item.id) : undefined}
+      onMouseEnter={item.hasLocation && item.hoverIncidentKey && onHoverFire ? () => onHoverFire(item.hoverIncidentKey) : undefined}
       onMouseLeave={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
-      onFocus={item.hasLocation && onHoverFire ? () => onHoverFire(item.id) : undefined}
+      onFocus={item.hasLocation && item.hoverIncidentKey && onHoverFire ? () => onHoverFire(item.hoverIncidentKey) : undefined}
       onBlur={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
     >
       <div className="fire-ticker__entry-copy">
         <span className="fire-ticker__entry-eyebrow">
-          {item.hasLocation ? <LocationIcon /> : null}
+          {item.kind === 'notice' ? <span className="fire-ticker__notice-badge">112</span> : item.hasLocation ? <LocationIcon /> : null}
           <span>{item.municipalityLabel}</span>
         </span>
-        <strong className="fire-ticker__entry-title">{item.fuelType}</strong>
-        <span className="fire-ticker__entry-meta">Ξέσπασε: {item.startDate}</span>
-        <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.status}</span>
+        <strong className="fire-ticker__entry-title">{item.title}</strong>
+        <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>
+        <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
       </div>
     </article>,
   ])
@@ -168,6 +306,14 @@ async function fetchCurrentFires() {
     .or('status.is.null,status.neq.ΛΗΞΗ')
     .order('status_updated_at', { ascending: false, nullsFirst: false })
     .order('last_seen_at', { ascending: false, nullsFirst: false })
+}
+
+async function fetchRecent112Notices() {
+  return supabase
+    .from('112_notice')
+    .select('notice_id, current_fire_incident_key, posted_at, notice_type, instructions_geocoded, municipality_keys, matched_municipality_key')
+    .order('posted_at', { ascending: false, nullsFirst: false })
+    .limit(20)
 }
 
 export default function FireNowTicker() {
@@ -199,12 +345,17 @@ export default function FireNowTicker() {
     let cancelled = false
 
     const load = async () => {
-      const { data, error } = await fetchCurrentFires()
+      const [firesResult, noticesResult] = await Promise.all([
+        fetchCurrentFires(),
+        fetchRecent112Notices(),
+      ])
 
       if (cancelled) return
 
-      if (error) {
-        if (import.meta.env.DEV) logError('Failed to load current fires for ticker', error)
+      if (firesResult.error) {
+        if (import.meta.env.DEV) {
+          if (firesResult.error) logError('Failed to load current fires for ticker', firesResult.error)
+        }
         setItems([])
         setActiveCount(null)
         setStatusCounts([])
@@ -213,11 +364,23 @@ export default function FireNowTicker() {
         return
       }
 
-      const rows = (data ?? []) as CurrentFireRow[]
+      if (noticesResult.error && import.meta.env.DEV) {
+        logError('Failed to load 112 notices for ticker', noticesResult.error)
+      }
+
+      const rows = (firesResult.data ?? []) as CurrentFireRow[]
+      const activeIncidentKeys = new Set(rows.map((row) => row.incident_key))
+      const recentCutoff = Date.now() - 24 * 60 * 60 * 1000
+      const noticeRows = (noticesResult.error ? [] : (noticesResult.data ?? []) as NoticeRow[]).filter((row) => {
+        const postedTime = parseTime(cleanText(row.posted_at))
+        return postedTime >= recentCutoff || Boolean(row.current_fire_incident_key && activeIncidentKeys.has(row.current_fire_incident_key))
+      })
+      const fireItems = rows.map(buildTickerItem)
+      const noticeItems = noticeRows.map(buildNoticeItem)
       setLoadFailed(false)
       setActiveCount(rows.length)
       setStatusCounts(buildStatusCounts(rows))
-      setItems(rows.map(buildTickerItem))
+      setItems([...fireItems, ...noticeItems].sort((a, b) => b.sortTime - a.sortTime))
       setLoading(false)
     }
 
@@ -226,6 +389,9 @@ export default function FireNowTicker() {
     const channel = supabase
       .channel('current_fires_ticker')
       .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
+        if (!cancelled) load()
+      })
+      .on('postgres_changes', { event: '*', schema: 'public', table: '112_notice' }, () => {
         if (!cancelled) load()
       })
       .subscribe()
@@ -354,34 +520,43 @@ export default function FireNowTicker() {
 
   const renderedItems = loading
     ? [{
+        kind: 'state' as const,
         id: 'loading',
         municipalityKey: null,
         municipalityLabel: 'Δήμος —',
-        fuelType: 'Ανάκτηση ενεργών πυρκαγιών',
-        startDate: '—',
-        status: '—',
+        title: 'Ανάκτηση ενεργών πυρκαγιών',
+        primaryMeta: '—',
+        secondaryMeta: '—',
         hasLocation: false,
+        hoverIncidentKey: null,
+        sortTime: 0,
       }]
     : items.length
     ? items
     : [loadFailed
       ? {
+          kind: 'state' as const,
           id: 'error',
           municipalityKey: null,
           municipalityLabel: 'Δήμος —',
-          fuelType: 'Δεν ήταν δυνατή η φόρτωση δεδομένων',
-          startDate: '—',
-          status: '—',
+          title: 'Δεν ήταν δυνατή η φόρτωση δεδομένων',
+          primaryMeta: '—',
+          secondaryMeta: '—',
           hasLocation: false,
+          hoverIncidentKey: null,
+          sortTime: 0,
         }
       : {
+        kind: 'state' as const,
         id: 'fallback',
         municipalityKey: null,
         municipalityLabel: 'Δήμος —',
-        fuelType: 'Δεν υπάρχουν ενεργές πυρκαγιές',
-        startDate: '—',
-        status: '—',
+        title: 'Δεν υπάρχουν ενεργές πυρκαγιές',
+        primaryMeta: '—',
+        secondaryMeta: '—',
         hasLocation: false,
+        hoverIncidentKey: null,
+        sortTime: 0,
       }]
   const renderedGroupCount = shouldScroll ? groupCount : 1
 
