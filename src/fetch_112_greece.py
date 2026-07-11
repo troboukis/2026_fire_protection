@@ -36,6 +36,7 @@ REQUEST_TIMEOUT = 30
 CURRENT_FIRES_TABLE = "public.current_fires"
 NOTICE_TABLE = 'public."112_notice"'
 SPATIAL_FIRE_MATCH_RADIUS_KM = 10.0
+SAME_FIRE_COORDINATE_EPSILON_KM = 0.05
 
 
 @dataclass(frozen=True)
@@ -92,6 +93,31 @@ def normalize_112_activation_prefix(value: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     text = re.sub(r"^[^A-Za-zΑ-Ωα-ωΆ-ώ]+", "", text).strip()
     return normalize_greek(text)
+
+
+def format_place_geocode_query(place: dict[str, Any]) -> None:
+    name = clean_text(place.get("name"))
+    regional_unit = clean_text(place.get("regional_unit"))
+    if not name or not regional_unit:
+        return
+
+    existing_query = clean_text(place.get("geocode_query"))
+    normalized_existing_query = normalize_greek(existing_query)
+    normalized_regional_unit = normalize_greek(regional_unit)
+    normalized_regional_unit = re.sub(r"^ΠΕΡΙΦΕΡΕΙΑΚΗ ΕΝΟΤΗΤΑ\s+", "", normalized_regional_unit)
+    normalized_regional_unit = re.sub(r"^Π\.?Ε\.?\s+", "", normalized_regional_unit)
+    if (
+        normalized_regional_unit in normalized_existing_query
+        and "ΕΛΛΑΔΑ" in normalized_existing_query
+    ):
+        return
+
+    regional_unit_label = regional_unit
+    if not normalize_greek(regional_unit_label).startswith("ΠΕΡΙΦΕΡΕΙΑΚΗ ΕΝΟΤΗΤΑ"):
+        regional_unit_label = f"Περιφερειακή Ενότητα {regional_unit_label}"
+
+    parts = [name, regional_unit_label, "Ελλάδα"]
+    place["geocode_query"] = ", ".join(parts)
 
 
 def starts_with_greek_112_activation(text: str) -> bool:
@@ -232,11 +258,20 @@ def extract_112_instructions(client: OpenAI, text: str) -> dict[str, Any]:
 4. Το from_places περιέχει όλες τις περιοχές εκκίνησης/κινδύνου για οδηγίες μετακίνησης.
 5. Το to_places περιέχει όλες τις περιοχές προορισμού/κατεύθυνσης.
 6. Αν αναφέρεται περιφερειακή ενότητα ή νομός, βάλε την ως regional_unit σε κάθε σχετικό μέρος.
-7. Το geocode_query πρέπει να είναι σύντομο και κατάλληλο για Google Geocoding στην Ελλάδα.
-8. Μην επινοείς περιοχές που δεν υπάρχουν στο κείμενο.
-9. Αν υπάρχει κείμενο όπως "Δασική πυρκαγιά στην περιοχή Δερβένι της Περιφερειακής Ενότητας Θεσσαλονίκης", βάλε το Δερβένι, Θεσσαλονίκη στο affected_places, ακόμη κι αν το instructions είναι [].
-10. Για παράδειγμα, "Φιλοθέη και Θυμαριώνα της Π.Ε. Κορίνθου προς Ξυλοκέριζα" δίνει:
-   from Φιλοθέη, Κόρινθος και Θυμαριώνα, Κόρινθος, to Ξυλοκέριζα, Κόρινθος.
+7. Το geocode_query πρέπει να είναι πλήρες και κατάλληλο για Google Geocoding στην Ελλάδα:
+   "Οικισμός/περιοχή, Περιφερειακή Ενότητα X, Περιφέρεια Y, Ελλάδα".
+   Αν ξέρεις αξιόπιστα την Περιφέρεια από την Περιφερειακή Ενότητα, πρόσθεσέ τη. Μην προσθέτεις Δήμο ή Δημοτική Ενότητα αν δεν αναφέρεται στο κείμενο.
+8. Στο geocode_query χρησιμοποίησε την ονομαστική μορφή του τοπωνυμίου, όχι την πτώση του tweet:
+   "#Γαλατά" ως όνομα οικισμού γίνεται "Γαλατάς".
+9. Αν γνωρίζεις με βεβαιότητα τον δήμο ή κοντινό τοπικό qualifier που χρειάζεται για να αρθεί αμφισημία, μπορείς να το βάλεις μόνο στο geocode_query.
+   Μην το βάζεις ως extracted place αν δεν αναφέρεται στο κείμενο.
+   Σε αυτή την περίπτωση προτίμησε συμπαγές query χωρίς κόμματα, π.χ. "Οικισμός ΤοπικόςQualifier ΠεριφερειακήΕνότητα Ελλάδα".
+10. Μην επινοείς περιοχές που δεν υπάρχουν στο κείμενο.
+11. Αν υπάρχει κείμενο όπως "Δασική πυρκαγιά στην περιοχή Δερβένι της Περιφερειακής Ενότητας Θεσσαλονίκης", βάλε το Δερβένι στο affected_places, ακόμη κι αν το instructions είναι [].
+12. Για παράδειγμα, "Φιλοθέη και Θυμαριώνα της Π.Ε. Κορίνθου προς Ξυλοκέριζα" δίνει:
+   from Φιλοθέη, Περιφερειακή Ενότητα Κορίνθου, Περιφέρεια Πελοποννήσου, Ελλάδα
+   και Θυμαριώνα, Περιφερειακή Ενότητα Κορίνθου, Περιφέρεια Πελοποννήσου, Ελλάδα,
+   to Ξυλοκέριζα, Περιφερειακή Ενότητα Κορίνθου, Περιφέρεια Πελοποννήσου, Ελλάδα.
 
 Κείμενο:
 {text}
@@ -287,7 +322,30 @@ def geocode_extracted_instructions(
     geocode_cache: dict[str, dict[str, Any]] = {}
     enriched = json.loads(json.dumps(extracted, ensure_ascii=False))
 
+    def apply_regional_unit_context(instruction: dict[str, Any]) -> None:
+        instruction_places = list(instruction.get("from_places", [])) + list(instruction.get("to_places", []))
+        regional_units = {
+            regional_unit
+            for place in list(enriched.get("affected_places", [])) + instruction_places
+            if (regional_unit := clean_text(place.get("regional_unit")))
+        }
+        if len(regional_units) != 1:
+            return
+
+        regional_unit = next(iter(regional_units))
+        for place in instruction_places:
+            if not clean_text(place.get("regional_unit")):
+                place["regional_unit"] = regional_unit
+
+            query = clean_text(place.get("geocode_query"))
+            name = clean_text(place.get("name"))
+            if query and regional_unit.lower() in query.lower():
+                continue
+            if name:
+                place["geocode_query"] = f"{name}, {regional_unit}, Ελλάδα"
+
     def enrich_place(place: dict[str, Any]) -> None:
+        format_place_geocode_query(place)
         query = clean_text(place.get("geocode_query"))
         if not query:
             return
@@ -307,6 +365,7 @@ def geocode_extracted_instructions(
         enrich_place(place)
 
     for instruction in enriched.get("instructions", []):
+        apply_regional_unit_context(instruction)
         instruction["path"] = {
             "from": [place.get("geocode_query") for place in instruction.get("from_places", [])],
             "to": [place.get("geocode_query") for place in instruction.get("to_places", [])],
@@ -347,7 +406,7 @@ def fire_relevant_places(enriched: dict[str, Any]) -> list[dict[str, Any]]:
 def notice_municipality_keys(enriched: dict[str, Any]) -> list[str]:
     keys: list[str] = []
     seen: set[str] = set()
-    for place in extracted_places(enriched):
+    for place in fire_relevant_places(enriched):
         key = clean_text(place.get("municipality_key"))
         if key and key not in seen:
             seen.add(key)
@@ -385,6 +444,36 @@ def distance_km(a: tuple[float, float], b: tuple[float, float]) -> float:
     return 2 * radius_km * math.atan2(math.sqrt(haversine), math.sqrt(1 - haversine))
 
 
+def candidate_fire_coordinates(candidate: dict[str, Any]) -> tuple[float, float] | None:
+    lat = candidate.get("lat")
+    lon = candidate.get("lon")
+    if lat is None or lon is None:
+        return None
+    try:
+        return float(lat), float(lon)
+    except (TypeError, ValueError):
+        return None
+
+
+def same_coordinate_cluster(candidates: list[dict[str, Any]]) -> bool:
+    coordinates = [coord for candidate in candidates if (coord := candidate_fire_coordinates(candidate)) is not None]
+    if len(coordinates) != len(candidates) or len(coordinates) <= 1:
+        return False
+    first = coordinates[0]
+    return all(distance_km(first, coord) <= SAME_FIRE_COORDINATE_EPSILON_KM for coord in coordinates[1:])
+
+
+def candidate_sort_key(candidate: dict[str, Any]) -> tuple[str, str, str]:
+    updated_at = clean_text(candidate.get("status_updated_at"))
+    last_seen_at = clean_text(candidate.get("last_seen_at"))
+    incident_key = clean_text(candidate.get("incident_key"))
+    return updated_at, last_seen_at, incident_key
+
+
+def select_same_coordinate_candidate(candidates: list[dict[str, Any]]) -> dict[str, Any]:
+    return sorted(candidates, key=candidate_sort_key, reverse=True)[0]
+
+
 def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
     municipality_keys = notice_municipality_keys(enriched)
     cur = conn.cursor(cursor_factory=RealDictCursor)
@@ -394,7 +483,11 @@ def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
                 f"""
                 SELECT
                   incident_key,
-                  municipality_key
+                  municipality_key,
+                  lat,
+                  lon,
+                  status_updated_at,
+                  last_seen_at
                 FROM {CURRENT_FIRES_TABLE}
                 WHERE is_current IS TRUE
                   AND status = ANY(%(active_statuses)s)
@@ -413,6 +506,17 @@ def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
                     municipality_key=str(candidate["municipality_key"]),
                 )
             if len(candidates) > 1:
+                if same_coordinate_cluster(candidates):
+                    candidate = select_same_coordinate_candidate(candidates)
+                    log(
+                        "same_coordinate_municipality_match "
+                        f"incident_key={candidate['incident_key']} municipality_key={candidate['municipality_key']} "
+                        f"candidate_count={len(candidates)}"
+                    )
+                    return FireMatch(
+                        incident_key=str(candidate["incident_key"]),
+                        municipality_key=str(candidate["municipality_key"]),
+                    )
                 log(f"skip_ambiguous_municipality_match matches={candidates}")
                 return None
 
@@ -426,7 +530,9 @@ def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
               incident_key,
               municipality_key,
               lat,
-              lon
+              lon,
+              status_updated_at,
+              last_seen_at
             FROM {CURRENT_FIRES_TABLE}
             WHERE is_current IS TRUE
               AND status = ANY(%(active_statuses)s)
@@ -447,6 +553,23 @@ def find_current_fire_match(conn, enriched: dict[str, Any]) -> FireMatch | None:
 
     if len(spatial_candidates) != 1:
         if len(spatial_candidates) > 1:
+            candidate_rows = [candidate for _, candidate in spatial_candidates]
+            if same_coordinate_cluster(candidate_rows):
+                candidate = select_same_coordinate_candidate(candidate_rows)
+                nearest_km = min(
+                    nearest_km
+                    for nearest_km, spatial_candidate in spatial_candidates
+                    if spatial_candidate["incident_key"] == candidate["incident_key"]
+                )
+                log(
+                    "same_coordinate_spatial_match "
+                    f"incident_key={candidate['incident_key']} municipality_key={candidate['municipality_key']} "
+                    f"distance_km={nearest_km:.2f} candidate_count={len(candidate_rows)}"
+                )
+                return FireMatch(
+                    incident_key=str(candidate["incident_key"]),
+                    municipality_key=str(candidate["municipality_key"]),
+                )
             matches = [
                 {
                     "incident_key": candidate["incident_key"],
