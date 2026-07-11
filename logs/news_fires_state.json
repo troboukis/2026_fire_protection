@@ -1,20 +1,22 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564338995/dolofonia-vagias-nestora-sta-dikastiria-oi-katigoroymenoi-gia-tin-epithesi/",
-      "title": "Δολοφονία Βάγιας Νέστορα: Στα δικαστήρια οι κατηγορούμενοι για την επίθεση",
-      "normalized_title": "ΔΟΛΟΦΟΝΙΑ ΒΑΓΙΑΣ ΝΕΣΤΟΡΑ: ΣΤΑ ΔΙΚΑΣΤΗΡΙΑ ΟΙ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ",
+      "url": "https://www.kathimerini.gr/world/564339094/to-iran-kleinei-tin-porta-ton-diapragmateyseon-stis-ipa/",
+      "title": "Το Ιράν κλείνει την πόρτα των διαπραγματεύσεων στις ΗΠΑ",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΚΛΕΙΝΕΙ ΤΗΝ ΠΟΡΤΑ ΤΩΝ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΩΝ ΣΤΙΣ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564338995/dolofonia-vagias-nestora-sta-dikastiria-oi-katigoroymenoi-gia-tin-epithesi/",
-        "https://www.kathimerini.gr/k/k-magazine/564334450/i-anexartisia-toy-lari-nteivint/",
-        "https://www.kathimerini.gr/society/564338980/sovaro-trochaio-stis-serres-se-krisimi-katastasi-35chronos-motosikletistis/",
-        "https://www.kathimerini.gr/economy/business/564337618/ptosi-poliseon-asfalistikon-programmaton-ygeias-13-4-logo-akriveias/",
-        "https://www.kathimerini.gr/world/564338986/germania-aisio-telos-gia-tin-omiria-se-soyper-market-sto-verolino/",
-        "https://www.kathimerini.gr/economy/business/564337630/xekinoyn-ti-deytera-oi-therines-ekptoseis/",
-        "https://www.kathimerini.gr/society/564338983/thessaloniki-dikografia-se-varos-44chronoy-gia-anexelegkti-aporripsi-iatrikon-apovliton-sto-filyro/",
-        "https://www.kathimerini.gr/culture/theater/564337429/i-lysistrati-stin-italia/"
+        "https://www.kathimerini.gr/world/564339094/to-iran-kleinei-tin-porta-ton-diapragmateyseon-stis-ipa/",
+        "https://www.kathimerini.gr/society/564339103/marfin-i-anakoinosi-tis-el-as-gia-ti-syllipsi-ton-dyo-42chronon/",
+        "https://www.kathimerini.gr/society/564339088/dolofonia-vagias-nestora-i-omprela-ypografi-apo-to-2022-kai-i-gkafa-poy-prodose-toys-drastes/",
+        "https://www.kathimerini.gr/society/564338974/thessaloniki-synelifthi-22chronos-odigos-motosikletas-agnoise-sima-astynomikon-kai-paraviase-kokkino-simatodoti/",
+        "https://www.kathimerini.gr/world/564339085/oykrania-dyo-nekroi-kai-19-traymaties-apo-rosikes-epitheseis-me-pyrayloys-kai-drones/",
+        "https://www.kathimerini.gr/politics/564339061/syriza-synedriazei-telika-i-kentriki-epitropi-protasi-gia-anavoli-mias-evdomadas/",
+        "https://www.kathimerini.gr/society/564339058/fthiotida-entopistike-megali-fyteia-kannavis-me-pano-apo-4-600-dendryllia-treis-syllipseis/",
+        "https://www.kathimerini.gr/culture/music/564339046/to-xechoristo-rekor-toy-peppino-di-capri/",
+        "https://www.kathimerini.gr/economy/international/564337588/o-gallos-proskeklimenos-toy-eurogroup/",
+        "https://www.kathimerini.gr/society/564338929/patra-traymatismos-naytikoy-sto-limani-metaferthike-sto-nosokomeio/"
       ],
-      "seen_at_utc": "2026-07-11T10:04:21.041004+00:00"
+      "seen_at_utc": "2026-07-11T11:04:15.948145+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -28,35 +30,29 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849293/mahi-gia-tin-zoi-tous-dinoun-oi-treis-poluegaumaties-apo-ti-fotia-ston-aspropurgo-video-prin-tin-stigmi-tis-ekrixis/?utm_source=rss",
-      "title": "Μάχη για την ζωή τους δίνουν οι τρεις πολυεγκαυματίες από τη φωτιά στον Ασπρόπυργο, βίντεο πριν την στιγμή της έκρηξης στο μικροσκόπιο των Αρχών",
-      "normalized_title": "ΜΑΧΗ ΓΙΑ ΤΗΝ ΖΩΗ ΤΟΥΣ ΔΙΝΟΥΝ ΟΙ ΤΡΕΙΣ ΠΟΛΥΕΓΚΑΥΜΑΤΙΕΣ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΟΝ ΑΣΠΡΟΠΥΡΓΟ, ΒΙΝΤΕΟ ΠΡΙΝ ΤΗΝ ΣΤΙΓΜΗ ΤΗΣ ΕΚΡΗΞΗΣ ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΩΝ ΑΡΧΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1849313/zakunthos-treis-sullipseis-gia-diakinisi-narkotikon-katashethikan-kokaini-metrita-kai-ohimata/?utm_source=rss",
+      "title": "Ζάκυνθος: Τρεις συλλήψεις για διακίνηση ναρκωτικών, κατασχέθηκαν κοκαΐνη, μετρητά και όχηματα",
+      "normalized_title": "ΖΑΚΥΝΘΟΣ: ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΚΟΚΑΙΝΗ, ΜΕΤΡΗΤΑ ΚΑΙ ΟΧΗΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849293/mahi-gia-tin-zoi-tous-dinoun-oi-treis-poluegaumaties-apo-ti-fotia-ston-aspropurgo-video-prin-tin-stigmi-tis-ekrixis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849289/fotia-se-agrotodasiki-ektasi-sta-lavara-evrou-epiheirei-kai-elikoptero/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849282/parasursi-pezis-sto-kedro-tis-athinas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849279/sta-dikastiria-oi-sullifthedes-gia-ti-dolofoniki-epithesi-sto-spiti-tis-nestora-to-lathos-pou-odigise-stin-sullipsi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849269/ston-anakriti-gia-na-apologithoun-oi-duo-astunomikoi-pou-purovolisan-sto-kefali-ton-20hrono-sto-argos-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849266/agria-katadioxi-sti-thessaloniki-me-protagonisti-22hrono-motosikletisti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849264/edopistike-hasisofuteia-me-4000-dendrullia-se-horio-tis-lamias-treis-sullipseis-meta-tin-efodo-tis-elas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849259/sunelifthi-andras-gia-ebrismo-stin-igoumenitsa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849255/eihame-hasei-tis-elpides-mas-eimaste-kahupoptoi-kai-epifulaktikoi-mehri-na-doume-ti-dikografia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849313/zakunthos-treis-sullipseis-gia-diakinisi-narkotikon-katashethikan-kokaini-metrita-kai-ohimata/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849309/i-diadromi-pou-akolouthise-i-elas-gia-na-ftasei-stous-treis-tis-marfin-ta-eurimata-pou-axiopoiithikan-kai-o-algorithmos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849308/tesseris-sullipseis-stin-sadorini-gia-sovares-elleipseis-ugieinis-pou-ethetan-se-kinduno-paidia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849300/edopistike-futeia-kannavis-me-perissotera-apo-4600-dendrullia-sti-fthiotida/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T10:04:21.041088+00:00"
+      "seen_at_utc": "2026-07-11T11:04:15.948240+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1425571/to-teleytaio-antio-stin-paola-revenioti-sto-a-nekrotafeio-athinon-eikones/",
-      "title": "Το τελευταίο «αντίο» στην Πάολα Ρεβενιώτη στο Α’ Νεκροταφείο Αθηνών [εικόνες]",
-      "normalized_title": "ΤΟ ΤΕΛΕΥΤΑΙΟ «ΑΝΤΙΟ» ΣΤΗΝ ΠΑΟΛΑ ΡΕΒΕΝΙΩΤΗ ΣΤΟ Α’ ΝΕΚΡΟΤΑΦΕΙΟ ΑΘΗΝΩΝ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/ellada/1425621/fotia-sta-lavara-evroy-kaiei-se-ktinotrofiki-monada-apomakrynthikan-200-zoa/",
+      "title": "Φωτιά στα Λάβαρα Έβρου: Καίει σε κτηνοτροφική μονάδα – Απομακρύνθηκαν 200 ζώα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΑ ΛΑΒΑΡΑ ΕΒΡΟΥ: ΚΑΙΕΙ ΣΕ ΚΤΗΝΟΤΡΟΦΙΚΗ ΜΟΝΑΔΑ – ΑΠΟΜΑΚΡΥΝΘΗΚΑΝ 200 ΖΩΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1425571/to-teleytaio-antio-stin-paola-revenioti-sto-a-nekrotafeio-athinon-eikones/",
-        "https://www.efsyn.gr/stiles/1425435/oi-ithikoi-panikoi-os-ergaleio-ton-kampotinon/",
-        "https://www.efsyn.gr/stiles/1425426/o-thaymastos-kainoyrgios-kosmos-kai-i-paremvasi-toy-alexi-tsipra/",
-        "https://www.efsyn.gr/politiki/1425539/rena-doyroy-anoikto-an-tha-einai-ypopsifia-gia-tin-igesia-toy-syriza/",
-        "https://www.efsyn.gr/tehnes/1425519/to-tragoydi-tis-imeras-street-of-dreams/"
+        "https://www.efsyn.gr/ellada/1425621/fotia-sta-lavara-evroy-kaiei-se-ktinotrofiki-monada-apomakrynthikan-200-zoa/",
+        "https://www.efsyn.gr/ellada/1425551/h-prognosi-kolyda-gia-ton-kairo-toy-epomenoy-10imeroy-se-exi-poleis-erhetai-omorfo-elliniko-kalokairi/",
+        "https://www.efsyn.gr/politiki/1425603/nikos-pappas-o-syriza-einai-edo-tha-einai-paron-stis-ekloges/",
+        "https://www.efsyn.gr/ellada/1425599/emprismoi-sti-thessaloniki-ypo-drakonteia-metra-sta-dikastiria-oi-syllifthentes-gia-to-thanato-tis-vagias-nestora/"
       ],
-      "seen_at_utc": "2026-07-11T10:04:21.041050+00:00"
+      "seen_at_utc": "2026-07-11T11:04:15.948213+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T10:04:21.041177+00:00"
+  "updated_at_utc": "2026-07-11T11:04:15.948316+00:00"
 }
