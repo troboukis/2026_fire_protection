@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564337801/moyntial-2026-i-ispania-perase-sta-imitelika/",
-      "title": "Μουντιάλ 2026: Η Ισπανία πέρασε στα ημιτελικά",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: Η ΙΣΠΑΝΙΑ ΠΕΡΑΣΕ ΣΤΑ ΗΜΙΤΕΛΙΚΑ",
+      "url": "https://www.kathimerini.gr/world/564337357/foniki-pyrkagia-se-dasos-stin-andaloysia/",
+      "title": "Φονική πυρκαγιά σε δάσος στην Ανδαλουσία",
+      "normalized_title": "ΦΟΝΙΚΗ ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΟΣ ΣΤΗΝ ΑΝΔΑΛΟΥΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564337801/moyntial-2026-i-ispania-perase-sta-imitelika/"
+        "https://www.kathimerini.gr/world/564337357/foniki-pyrkagia-se-dasos-stin-andaloysia/",
+        "https://www.kathimerini.gr/world/564337327/kataskopeytiko-thriler-apo-to-monako-eos-to-kievo/",
+        "https://www.kathimerini.gr/world/564337342/sto-fos-schedio-dolofonias-toy-tramp/"
       ],
-      "seen_at_utc": "2026-07-10T22:04:06.841954+00:00"
+      "seen_at_utc": "2026-07-11T04:04:05.027398+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -21,14 +23,13 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849092/ti-zoi-tou-ehase-79hronos-louomenos-stin-paralia-tis-potidaias-sti-thessaloniki/?utm_source=rss",
-      "title": "Νεκρός 79χρονος λουόμενος στην παραλία Ποτίδαιας στη Χαλκιδική",
-      "normalized_title": "ΝΕΚΡΟΣ 79ΧΡΟΝΟΣ ΛΟΥΟΜΕΝΟΣ ΣΤΗΝ ΠΑΡΑΛΙΑ ΠΟΤΙΔΑΙΑΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1849099/diasosi-30-metanaston-sti-gaudo/?utm_source=rss",
+      "title": "Διάσωση 30 μεταναστών στη Γαύδο",
+      "normalized_title": "ΔΙΑΣΩΣΗ 30 ΜΕΤΑΝΑΣΤΩΝ ΣΤΗ ΓΑΥΔΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849092/ti-zoi-tou-ehase-79hronos-louomenos-stin-paralia-tis-potidaias-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849081/ekdilothikan-26-agrotodasikes-purkagies-to-teleutaio-24oro-sti-hora/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849099/diasosi-30-metanaston-sti-gaudo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-10T21:04:23.109419+00:00"
+      "seen_at_utc": "2026-07-11T04:04:05.027436+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/athlitismos/1425371/o-paok-pairnei-ton-osman-apo-ton-panathinaiko-se-metagrafi-11-ekat-eyro/",
@@ -43,5 +44,5 @@
       "seen_at_utc": "2026-07-10T21:04:23.109386+00:00"
     }
   },
-  "updated_at_utc": "2026-07-10T22:04:06.842034+00:00"
+  "updated_at_utc": "2026-07-11T04:04:05.027518+00:00"
 }
