@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564334573/scholi-xenon-glosson-gia-skyloys/",
-      "title": "Μήπως περιμένουμε περισσότερα από όσα πρέπει από τους σκύλους μας",
-      "normalized_title": "ΜΗΠΩΣ ΠΕΡΙΜΕΝΟΥΜΕ ΠΕΡΙΣΣΟΤΕΡΑ ΑΠΟ ΟΣΑ ΠΡΕΠΕΙ ΑΠΟ ΤΟΥΣ ΣΚΥΛΟΥΣ ΜΑΣ",
+      "url": "https://www.kathimerini.gr/opinion/readers/564337294/kallitechniki-alitheia-kai-pseydi-ritoron/",
+      "title": "«Καλλιτεχνική αλήθεια» και ψεύδη ρητόρων",
+      "normalized_title": "«ΚΑΛΛΙΤΕΧΝΙΚΗ ΑΛΗΘΕΙΑ» ΚΑΙ ΨΕΥΔΗ ΡΗΤΟΡΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564334573/scholi-xenon-glosson-gia-skyloys/",
-        "https://www.kathimerini.gr/athletics/basketball/564339238/olympiakos-ekatommyria-gia-ton-goyokap-apo-tin-ntoympai-bc/"
+        "https://www.kathimerini.gr/opinion/readers/564337294/kallitechniki-alitheia-kai-pseydi-ritoron/",
+        "https://www.kathimerini.gr/society/564339469/profylakisteoi-oi-astynomikoi-poy-pyrovolisan-ton-20chrono-ti-ischyristikan/",
+        "https://www.kathimerini.gr/opinion/readers/564337279/ta-statistika-tis-ygeias-mas/",
+        "https://www.kathimerini.gr/k/gastronomos/564339205/taverna-stamatia-koryfaia-astakomakaronada-stin-astakomana-skyro/",
+        "https://www.kathimerini.gr/world/564339034/paidia-kai-smartphones-vazontas-oria-sto-scrolling-to-kalokairi/"
       ],
-      "seen_at_utc": "2026-07-11T18:04:00.540174+00:00"
+      "seen_at_utc": "2026-07-11T19:03:56.269542+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/exi-nekroi-stin-oukrania-kai-12-travmaties-sto-kievo-apo-rosika-pligmata/",
@@ -299,29 +302,31 @@
       "seen_at_utc": "2026-07-11T17:58:48.904005+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849453/fotia-sto-palio-teloneio-tis-patras-deite-video/?utm_source=rss",
-      "title": "Φωτιά στο παλιό τελωνείο της Πάτρας, δείτε βίντεο",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΠΑΛΙΟ ΤΕΛΩΝΕΙΟ ΤΗΣ ΠΑΤΡΑΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1849474/tin-lipsi-metron-gia-tin-prostasia-tou-koinou-apofasise-i-politiki-prostasia-meta-tin-katolisthisi-ston-murto/?utm_source=rss",
+      "title": "Την λήψη μέτρων για την προστασία του κοινού αποφάσισε η Πολιτική Προστασία μετά την κατολίσθηση στον Μύρτο",
+      "normalized_title": "ΤΗΝ ΛΗΨΗ ΜΕΤΡΩΝ ΓΙΑ ΤΗΝ ΠΡΟΣΤΑΣΙΑ ΤΟΥ ΚΟΙΝΟΥ ΑΠΟΦΑΣΙΣΕ Η ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑ ΜΕΤΑ ΤΗΝ ΚΑΤΟΛΙΣΘΗΣΗ ΣΤΟΝ ΜΥΡΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849453/fotia-sto-palio-teloneio-tis-patras-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849452/alert-profulakistikan-oi-astunomikoi-gia-tin-aimatiri-katadioxi-sto-argos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849474/tin-lipsi-metron-gia-tin-prostasia-tou-koinou-apofasise-i-politiki-prostasia-meta-tin-katolisthisi-ston-murto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849466/tromokratiki-organosi-vlepei-o-eisaggeleas-piso-apo-ta-gazakia-pou-skotosan-ti-vagia-nestora-pos-edrasan-oi-sullifthedes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849465/eduposiako-video-apo-tin-euvoia-me-kopadi-delfinion-dipla-se-louomenous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849463/to-limeniko-edopise-kai-diesose-35-allodapous-pou-epevainan-se-lemvo-anoihta-tis-gaudou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T18:04:00.540210+00:00"
+      "seen_at_utc": "2026-07-11T19:03:56.269609+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/media/1425518/newsroom-koryfaies-seires-athlitikes-metadoseis-kai-kore-ydro/",
-      "title": "Newsroom: Κορυφαίες σειρές, αθλητικές μεταδόσεις και… Κόρε. Ύδρο.",
-      "normalized_title": "NEWSROOM: ΚΟΡΥΦΑΙΕΣ ΣΕΙΡΕΣ, ΑΘΛΗΤΙΚΕΣ ΜΕΤΑΔΟΣΕΙΣ ΚΑΙ… ΚΟΡΕ. ΥΔΡΟ.",
+      "url": "https://www.efsyn.gr/kosmos/1425776/sto-stohastro-toy-tramp-dimosiografoi-ton-nyt-logo-dimosieymatos-gia-to-neo-air-force-one/",
+      "title": "Στο στόχαστρο του Τραμπ δημοσιογράφοι των NYT λόγω δημοσιεύματος για το νέο Air Force One",
+      "normalized_title": "ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΤΟΥ ΤΡΑΜΠ ΔΗΜΟΣΙΟΓΡΑΦΟΙ ΤΩΝ NYT ΛΟΓΩ ΔΗΜΟΣΙΕΥΜΑΤΟΣ ΓΙΑ ΤΟ ΝΕΟ AIR FORCE ONE",
       "seen_urls": [
-        "https://www.efsyn.gr/media/1425518/newsroom-koryfaies-seires-athlitikes-metadoseis-kai-kore-ydro/",
-        "https://www.efsyn.gr/kosmos/1425754/fonikoi-seismoi-sti-venezoyela-xeperasan-toys-4-300-oi-nekroi-svinoyn-oi-elpides-gia-epizontes/",
-        "https://www.efsyn.gr/kosmos/1425752/vretania-thriler-me-ti-dolofonia-tis-proin-ypoyrgoy-eleytheros-o-26hronos-ypoptos/",
-        "https://www.efsyn.gr/stiles/1425511/poso-kontofthalmi-einai-i-igesia-ton-kyprion/",
-        "https://www.efsyn.gr/kosmos/1425750/iran-anapofeykti-i-ekdikisi-gia-ton-ali-hamenei/",
-        "https://www.efsyn.gr/gallery/pos-einai-apo-mesa-4/"
+        "https://www.efsyn.gr/kosmos/1425776/sto-stohastro-toy-tramp-dimosiografoi-ton-nyt-logo-dimosieymatos-gia-to-neo-air-force-one/",
+        "https://www.efsyn.gr/gallery/afises-ton-moyntial/",
+        "https://www.efsyn.gr/ellada/1425771/argos-stis-fylakes-korydalloy-odigoyntai-oi-astynomikoi-poy-pyrovolisan-ton-20hrono/",
+        "https://www.efsyn.gr/ellada/1425764/aspropyrgos-apo-diarroi-propanioy-i-asetilinis-fainetai-na-proklithike-i-ekrixi/",
+        "https://www.efsyn.gr/kosmos/1425762/ntonalnt-tramp-molis-teleiosa-ena-teleio-tsek-ap-aristeysa-se-ola/",
+        "https://www.efsyn.gr/athlitismos/1425527/moyntial-2026-troti-argentini-epimelis-elvetia/"
       ],
-      "seen_at_utc": "2026-07-11T17:58:48.904026+00:00"
+      "seen_at_utc": "2026-07-11T19:03:56.269581+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T18:04:00.540303+00:00"
+  "updated_at_utc": "2026-07-11T19:03:56.269684+00:00"
 }
