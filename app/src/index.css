@@ -3294,6 +3294,12 @@ main {
 
   .fire-ticker {
     grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .fire-ticker__title,
+  .fire-ticker__viewport {
+    min-height: 0;
   }
 
   .fire-ticker__title {
@@ -3590,12 +3596,20 @@ main {
     max-width: 17rem;
   }
 
+  .fire-ticker__entry--notice {
+    max-width: min(82vw, 24rem);
+  }
+
   .fire-ticker__separator {
     padding-inline: 0.7rem;
   }
 
   .fire-ticker__entry-title {
     font-size: 0.9rem;
+  }
+
+  .fire-ticker__entry--notice .fire-ticker__entry-title {
+    max-width: min(82vw, 24rem);
   }
 
   .wire-item {
