@@ -3024,6 +3024,22 @@ FOR SELECT
 TO anon, authenticated
 USING (true);
 
+GRANT SELECT ON public.news_fires TO anon, authenticated, service_role;
+
+DO $$
+BEGIN
+  IF EXISTS (SELECT 1 FROM pg_publication WHERE pubname = 'supabase_realtime')
+     AND NOT EXISTS (
+       SELECT 1
+       FROM pg_publication_tables
+       WHERE pubname = 'supabase_realtime'
+         AND schemaname = 'public'
+         AND tablename = 'news_fires'
+     ) THEN
+    ALTER PUBLICATION supabase_realtime ADD TABLE public.news_fires;
+  END IF;
+END $$;
+
 ALTER TABLE public.current_fires
   ADD COLUMN IF NOT EXISTS lat NUMERIC(9, 6),
   ADD COLUMN IF NOT EXISTS lon NUMERIC(9, 6),
@@ -3046,6 +3062,108 @@ ON public.current_fires
 FOR SELECT
 TO anon, authenticated
 USING (true);
+
+-- -------------------------------------------------------------
+-- M1) News ticker RPC
+-- Source: sql/059_news_ticker_articles_rpc.sql
+-- -------------------------------------------------------------
+DROP FUNCTION IF EXISTS public.get_news_ticker_articles();
+
+CREATE OR REPLACE FUNCTION public.get_news_ticker_articles()
+RETURNS TABLE (
+  id bigint,
+  article_title text,
+  source text,
+  article_url text,
+  image_url text,
+  published_at timestamptz,
+  municipality_name text,
+  area text,
+  active_fire_incident_key text
+)
+LANGUAGE sql
+SECURITY INVOKER
+SET search_path = public
+SET statement_timeout = '10s'
+AS $news_ticker_articles$
+WITH today_rows AS (
+  SELECT
+    nf.id,
+    nf.article_title,
+    nf.source,
+    nf.article_url,
+    nf.image_url,
+    nf.published_at,
+    nf.scraped_at,
+    nf.municipality_key,
+    nf.municipality_name,
+    nf.area
+  FROM public.news_fires nf
+  WHERE nf.published_at IS NOT NULL
+    AND (nf.published_at AT TIME ZONE 'Europe/Athens')::date = (NOW() AT TIME ZONE 'Europe/Athens')::date
+),
+today_count AS (
+  SELECT COUNT(*) AS article_count
+  FROM today_rows
+),
+latest_rows AS (
+  SELECT
+    nf.id,
+    nf.article_title,
+    nf.source,
+    nf.article_url,
+    nf.image_url,
+    nf.published_at,
+    nf.scraped_at,
+    nf.municipality_key,
+    nf.municipality_name,
+    nf.area
+  FROM public.news_fires nf
+  ORDER BY nf.published_at DESC NULLS LAST, nf.scraped_at DESC, nf.id DESC
+  LIMIT 10
+),
+selected_rows AS (
+  SELECT tr.*
+  FROM today_rows tr
+  WHERE (SELECT article_count FROM today_count) >= 5
+
+  UNION ALL
+
+  SELECT lr.*
+  FROM latest_rows lr
+  WHERE (SELECT article_count FROM today_count) < 5
+),
+active_fire_by_municipality AS (
+  SELECT DISTINCT ON (cf.municipality_key)
+    cf.municipality_key,
+    cf.incident_key
+  FROM public.current_fires cf
+  WHERE cf.is_current IS TRUE
+    AND cf.municipality_key IS NOT NULL
+    AND (cf.status IS NULL OR cf.status <> 'ΛΗΞΗ')
+  ORDER BY
+    cf.municipality_key,
+    cf.status_updated_at DESC NULLS LAST,
+    cf.last_seen_at DESC NULLS LAST,
+    cf.incident_key
+)
+SELECT
+  sr.id,
+  sr.article_title,
+  sr.source,
+  sr.article_url,
+  sr.image_url,
+  sr.published_at,
+  sr.municipality_name,
+  sr.area,
+  af.incident_key AS active_fire_incident_key
+FROM selected_rows sr
+LEFT JOIN active_fire_by_municipality af
+  ON af.municipality_key = sr.municipality_key
+ORDER BY sr.published_at DESC NULLS LAST, sr.scraped_at DESC, sr.id DESC;
+$news_ticker_articles$;
+
+GRANT EXECUTE ON FUNCTION public.get_news_ticker_articles() TO anon, authenticated, service_role;
 
 CREATE TABLE IF NOT EXISTS public."112_notice" (
   notice_id TEXT PRIMARY KEY,
@@ -3690,6 +3808,7 @@ BEGIN
     'public.get_homepage_funding(integer, integer)',
     'public.get_latest_contract_cards(integer)',
     'public.get_latest_funding_year_municipality_spend()',
+    'public.get_news_ticker_articles()',
     'public.get_municipality_contract_count(text, integer)',
     'public.get_municipality_contract_summary(text, integer)',
     'public.get_municipality_contracts(text, integer, integer, integer)',

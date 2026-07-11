@@ -212,6 +212,68 @@ Responsible functions:
 
 ---
 
+## Table: `news_fires`
+
+Status:
+- Implemented.
+
+Source:
+- News listing pages from Καθημερινή and News247.
+- Responsible script: `src/fetch_news_fires.py`.
+- Runner/workflow:
+  - `scripts/run_news_fires_and_push_state.sh`
+  - `.github/workflows/news-fires-refresh.yml`
+
+State:
+- `logs/news_fires_state.json`
+- The state tracks the newest listing article boundary per source and the successful run's `seen_urls`.
+- The state file is tracked so GitHub Actions can restore the incremental boundary from checkout.
+
+Ingestion behavior:
+1. Start from the first listing page for each source.
+2. Paginate only until the saved boundary article is found; `MAX_LISTING_PAGES` is a safety cap.
+3. Apply title filtering before article-body scraping.
+4. Fetch article body only for title matches.
+5. Apply secondary body filtering to keep only fire-related articles.
+6. Extract one geographic fire area with an LLM.
+7. Geocode the area with Google Geocoding.
+8. Map coordinates to a municipality by point-in-polygon.
+9. Upsert one row per article into `public.news_fires`.
+
+Stored fields:
+- `id`
+- `article_title`
+- `source`
+- `article_url`
+- `image_url`
+- `published_at`
+- `scraped_at`
+- `municipality_key`
+- `municipality_name`
+- `area`
+- `geocode_query`
+- `lat`
+- `lon`
+
+Uniqueness / rerun behavior:
+- Unique key: `article_url`.
+- Reruns must not create duplicates.
+- `source` is stored as Greek display text (`Καθημερινή`, `News247`).
+- If geocoding or municipality matching fails, keep the article row without coordinates/municipality fields when the article itself is valid.
+
+Frontend API:
+- `get_news_ticker_articles()` returns frontend-ready ticker rows.
+- The RPC returns all today's articles when today has at least five articles; otherwise it returns the latest ten articles overall.
+- The RPC joins active `public.current_fires` rows by municipality and returns `active_fire_incident_key` when an article refers to a municipality with an active fire.
+
+Responsible code:
+- `src/fetch_news_fires.py`
+- `sql/055_create_news_fires.sql`
+- `sql/059_news_ticker_articles_rpc.sql`
+- `sql/900_frontend_api_setup.sql`
+
+---
+
 ## Table: `diavgeia_procurement` (bridge)
 
 Status:

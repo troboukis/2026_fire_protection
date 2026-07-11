@@ -26,6 +26,7 @@ ALTER FUNCTION public.get_hero_section_data(integer, integer) SECURITY INVOKER;
 ALTER FUNCTION public.get_homepage_funding(integer, integer) SECURITY INVOKER;
 ALTER FUNCTION public.get_latest_contract_cards(integer) SECURITY INVOKER;
 ALTER FUNCTION public.get_latest_funding_year_municipality_spend() SECURITY INVOKER;
+ALTER FUNCTION public.get_news_ticker_articles() SECURITY INVOKER;
 ALTER FUNCTION public.get_municipality_contract_count(text, integer) SECURITY INVOKER;
 ALTER FUNCTION public.get_municipality_contract_summary(text, integer) SECURITY INVOKER;
 ALTER FUNCTION public.get_municipality_contracts(text, integer, integer, integer) SECURITY INVOKER;
@@ -49,6 +50,7 @@ GRANT EXECUTE ON FUNCTION public.get_hero_section_data(integer, integer) TO anon
 GRANT EXECUTE ON FUNCTION public.get_homepage_funding(integer, integer) TO anon, authenticated, service_role;
 GRANT EXECUTE ON FUNCTION public.get_latest_contract_cards(integer) TO anon, authenticated, service_role;
 GRANT EXECUTE ON FUNCTION public.get_latest_funding_year_municipality_spend() TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.get_news_ticker_articles() TO anon, authenticated, service_role;
 GRANT EXECUTE ON FUNCTION public.get_municipality_contract_count(text, integer) TO anon, authenticated, service_role;
 GRANT EXECUTE ON FUNCTION public.get_municipality_contract_summary(text, integer) TO anon, authenticated, service_role;
 GRANT EXECUTE ON FUNCTION public.get_municipality_contracts(text, integer, integer, integer) TO anon, authenticated, service_role;

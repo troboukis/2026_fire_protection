@@ -7,6 +7,7 @@ import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './component
 import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import MapTilerLogo from './components/MapTilerLogo'
+import NewsTicker from './components/NewsTicker'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
@@ -1942,6 +1943,8 @@ export default function App() {
       <main>
         <FireNowTicker />
 
+        <NewsTicker />
+
         <Suspense fallback={<SituationMapFallback />}>
           <SituationMap />
         </Suspense>
@@ -2177,7 +2180,6 @@ export default function App() {
             {!latestContractsLoading && !latestContractsError && latestTimeline.length === 0 && (
               <article className="wire-item">
                 <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις ή αποφάσεις Διαύγειας.</h2>
-                <p>Ελέγξτε ότι οι πίνακες `procurement` και `diavgeia` έχουν δεδομένα.</p>
               </article>
             )}
           </div>
