@@ -1,21 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564338941/ypothesi-marfin-epistrefei-stin-ellada-apo-ti-megali-vretania-i-46chroni-dilonei-athoa/",
-      "title": "Υπόθεση Marfin: Επιστρέφει στην Ελλάδα από τη Μεγάλη Βρετανία η 46χρονη – Δηλώνει αθώα",
-      "normalized_title": "ΥΠΟΘΕΣΗ MARFIN: ΕΠΙΣΤΡΕΦΕΙ ΣΤΗΝ ΕΛΛΑΔΑ ΑΠΟ ΤΗ ΜΕΓΑΛΗ ΒΡΕΤΑΝΙΑ Η 46ΧΡΟΝΗ – ΔΗΛΩΝΕΙ ΑΘΩΑ",
+      "url": "https://www.kathimerini.gr/society/564338971/igoymenitsa-synelifthi-andras-gia-emprismo-apo-ameleia/",
+      "title": "Ηγουμενίτσα: Συνελήφθη άνδρας για εμπρησμό από αμέλεια",
+      "normalized_title": "ΗΓΟΥΜΕΝΙΤΣΑ: ΣΥΝΕΛΗΦΘΗ ΑΝΔΡΑΣ ΓΙΑ ΕΜΠΡΗΣΜΟ ΑΠΟ ΑΜΕΛΕΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564338941/ypothesi-marfin-epistrefei-stin-ellada-apo-ti-megali-vretania-i-46chroni-dilonei-athoa/",
-        "https://www.kathimerini.gr/k/gastronomos/564338857/sardeles-pastes-tis-lesvoy/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564337264/agkyra-kai-moscha-syzitoyn-gia-toys-s-400/",
-        "https://www.kathimerini.gr/society/564337246/dimos-athinaion-titloi-teloys-gia-xenona-astegon-christon/",
-        "https://www.kathimerini.gr/world/564337351/apeiloyntai-ta-fyta-poy-chrisimopoioyn-oi-gigeneis-ston-amazonio/",
-        "https://www.kathimerini.gr/society/564338911/larisa-pykno-nefos-kapnoy-apo-ti-fotia-sto-ergostasio-anakyklosis-sto-omorfochori/",
-        "https://www.kathimerini.gr/athletics/564338902/loyis-nte-la-foyente-i-techni-tis-gennaiodorias/",
-        "https://www.kathimerini.gr/society/564337252/atychima-se-ptisi-tis-ryanair-sto-mikroskopio-o-kinitiras/",
-        "https://www.kathimerini.gr/economy/business/564337642/enischyseis-ependytikon-schedion-stin-perifereia-ionion-nison/"
+        "https://www.kathimerini.gr/society/564338971/igoymenitsa-synelifthi-andras-gia-emprismo-apo-ameleia/",
+        "https://www.kathimerini.gr/politics/564338956/syriza-ora-miden-gia-ti-sygklisi-tis-kentrikis-epitropis-fotografies/",
+        "https://www.kathimerini.gr/culture/tv/564337432/to-deltio-ton-media-platforma-apo-tin-tanweer/",
+        "https://www.kathimerini.gr/politics/amyna/564337261/f-35-empodia-gia-ta-exi-machitika/",
+        "https://www.kathimerini.gr/society/564338932/katakolo-nekros-anasyrthike-83chronos-apo-thalassia-periochi/",
+        "https://www.kathimerini.gr/economy/international/564337669/epicheirimatika-schedia-me-tis-plates-tramp-sti-groilandia/",
+        "https://www.kathimerini.gr/society/564337249/diplo-minyma-apo-tin-komision-gia-tis-epidotiseis/",
+        "https://www.kathimerini.gr/society/564338947/trochaio-sti-mesara-ich-xefyge-apo-tin-poreia-toy-kai-epese-pano-se-stylo/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564337258/f-35-anisychi-i-athina-gia-tis-exelixeis/"
       ],
-      "seen_at_utc": "2026-07-11T08:04:11.851065+00:00"
+      "seen_at_utc": "2026-07-11T09:04:06.834729+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -29,32 +29,28 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849230/oikonomiko-panepistimio-athinon-penida-upotrofies-gia-foitites-apo-tin-perifereia/?utm_source=rss",
-      "title": "Οικονομικό Πανεπιστήμιο Αθηνών: Πενήντα υποτροφίες για φοιτητές από την περιφέρεια",
-      "normalized_title": "ΟΙΚΟΝΟΜΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ: ΠΕΝΗΝΤΑ ΥΠΟΤΡΟΦΙΕΣ ΓΙΑ ΦΟΙΤΗΤΕΣ ΑΠΟ ΤΗΝ ΠΕΡΙΦΕΡΕΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1849254/thessaloniki-dikografia-se-varos-44hronou-gia-paranomi-aporripsi-iatrikon-apovliton-sto-filuro-fotografia/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Δικογραφία σε βάρος 44χρονου για παράνομη απόρριψη ιατρικών αποβλήτων στο Φίλυρο - Φωτογραφία",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΙΚΟΓΡΑΦΙΑ ΣΕ ΒΑΡΟΣ 44ΧΡΟΝΟΥ ΓΙΑ ΠΑΡΑΝΟΜΗ ΑΠΟΡΡΙΨΗ ΙΑΤΡΙΚΩΝ ΑΠΟΒΛΗΤΩΝ ΣΤΟ ΦΙΛΥΡΟ - ΦΩΤΟΓΡΑΦΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849230/oikonomiko-panepistimio-athinon-penida-upotrofies-gia-foitites-apo-tin-perifereia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849225/nea-afixi-43-metanaston-stous-kalous-limenes-irakleiou-tis-kritis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849223/i-46hroni-pou-katigoreitai-gia-ti-marfin-dilonei-athoa-kai-epistrefei-stin-ellada-tin-triti-oi-apologies-ton-duo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849218/o-ellinikos-stratos-ekpaideuei-ti-nea-genia-heiriston-drones-pos-allazei-to-pedio-ton-epiheiriseon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849213/apopeira-apodrasis-kratoumenou-apo-to-panepistimiako-nosokomeio-patron/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849209/kolumvisi-sta-sholeia-to-mathima-epekteinetai-kai-sti-d-dimotikou-apo-ti-nea-sholiki-hronia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849254/thessaloniki-dikografia-se-varos-44hronou-gia-paranomi-aporripsi-iatrikon-apovliton-sto-filuro-fotografia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T08:04:11.851148+00:00"
+      "seen_at_utc": "2026-07-11T09:04:06.834815+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1425495/epiheirisi-lagokefalos-22-erotiseis-apantiseis-gia-to-neo-programma-poioi-tha-paroyn-to-mponoys-ton-533-e/",
-      "title": "«Επιχείρηση λαγοκέφαλος»: 22 ερωτήσεις – απαντήσεις για το νέο πρόγραμμα, ποιοι θα πάρουν το μπόνους των 5,33 €",
-      "normalized_title": "«ΕΠΙΧΕΙΡΗΣΗ ΛΑΓΟΚΕΦΑΛΟΣ»: 22 ΕΡΩΤΗΣΕΙΣ – ΑΠΑΝΤΗΣΕΙΣ ΓΙΑ ΤΟ ΝΕΟ ΠΡΟΓΡΑΜΜΑ, ΠΟΙΟΙ ΘΑ ΠΑΡΟΥΝ ΤΟ ΜΠΟΝΟΥΣ ΤΩΝ 5,33 €",
+      "url": "https://www.efsyn.gr/stiles/1425421/i-fantasia-stin-exoysia/",
+      "title": "Η φαντασία στην εξουσία",
+      "normalized_title": "Η ΦΑΝΤΑΣΙΑ ΣΤΗΝ ΕΞΟΥΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1425495/epiheirisi-lagokefalos-22-erotiseis-apantiseis-gia-to-neo-programma-poioi-tha-paroyn-to-mponoys-ton-533-e/",
-        "https://www.efsyn.gr/nisides/1424196/i-politistiki-atzenta-tis-evdomadas-12-07-18-07-26/",
-        "https://www.efsyn.gr/ellada/1425488/thessaloniki-ston-eisaggelea-oi-treis-syllifthentes-gia-ton-thanato-tis-vagias-nestora/",
-        "https://www.efsyn.gr/ellada/1425479/larisa-oriothetithike-i-fotia-se-ergostasio-anakyklosis-synehizetai-i-mahi-me-tis-esties/",
-        "https://www.efsyn.gr/tehnes/1425464/aristeidis-tsamtsis-enas-neos-me-aytismo-poy-zografizei-dimioyrgei-paizei-theatro-kai-kanei-oneira-eikones/"
+        "https://www.efsyn.gr/stiles/1425421/i-fantasia-stin-exoysia/",
+        "https://www.efsyn.gr/stiles/1425415/proeklogiki-egrigorsi/",
+        "https://www.efsyn.gr/politiki/1425520/syriza-en-anamoni-apofaseon-apo-tin-antipoliteysi-ston-aera-i-synedriasi-tis-ke-den-yparhei-apartia/",
+        "https://www.efsyn.gr/ellada/1425516/marfin-epistrefei-stin-ellada-i-46hroni-dilonei-athoa-kai-thelei-na-katathesei/",
+        "https://www.efsyn.gr/ellada/1425508/gerasimos-papadopoylos-gia-katolisthisi-stin-paralia-myrto-stin-kefalonia-kindynos-thanatos/",
+        "https://www.efsyn.gr/politiki/1425500/o-alexis-tsipras-me-to-vivlio-toy-stamati-kraoynaki-i-fotografia-milaei-moni-tis/"
       ],
-      "seen_at_utc": "2026-07-11T08:04:11.851123+00:00"
+      "seen_at_utc": "2026-07-11T09:04:06.834760+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T08:04:11.851229+00:00"
+  "updated_at_utc": "2026-07-11T09:04:06.834906+00:00"
 }
