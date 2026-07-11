@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
+import DataLoadingCard from './DataLoadingCard'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
 import {
   CURRENT_FIRE_STATUS_COLORS,
@@ -28,6 +29,7 @@ type CurrentFireRow = {
 type NoticePlace = {
   name?: unknown
   municipality_name?: unknown
+  municipality_key?: unknown
 }
 
 type NoticeInstruction = {
@@ -194,6 +196,17 @@ function joinPlaceLabels(places: NoticePlace[] | undefined, limit = 3): string |
   return extraCount > 0 ? `${visible} +${extraCount}` : visible
 }
 
+function noticePrimaryMunicipalityKey(instructions: NoticeInstructions | null, row: NoticeRow): string | null {
+  const keys = [
+    ...(instructions?.affected_places ?? []),
+    ...((instructions?.instructions ?? []).flatMap((instruction) => instruction.from_places ?? [])),
+  ]
+    .map((place) => cleanText(place.municipality_key))
+    .filter((key): key is string => Boolean(key))
+
+  return keys[0] ?? cleanText(row.matched_municipality_key) ?? cleanText(row.municipality_keys?.[0])
+}
+
 function noticeLocationLabel(instructions: NoticeInstructions | null, row: NoticeRow): string {
   const affected = joinPlaceLabels(instructions?.affected_places)
   if (affected) return `ΠΕΡΙΟΧΗ ${affected}`
@@ -229,7 +242,7 @@ function noticeTitle(row: NoticeRow, instructions: NoticeInstructions | null): s
 
 function buildNoticeItem(row: NoticeRow): FireTickerItem {
   const instructions = isNoticeInstructions(row.instructions_geocoded) ? row.instructions_geocoded : null
-  const municipalityKey = cleanText(row.matched_municipality_key) ?? cleanText(row.municipality_keys?.[0])
+  const municipalityKey = noticePrimaryMunicipalityKey(instructions, row)
   return {
     kind: 'notice',
     id: row.notice_id,
@@ -278,22 +291,30 @@ function renderTickerEntries(
     </span>,
     <article
       key={`${keyPrefix}${item.id}`}
-      className={`fire-ticker__entry fire-ticker__entry--${item.kind}${item.municipalityKey ? ' fire-ticker__entry--clickable' : ''}`}
+      className={`fire-ticker__entry fire-ticker__entry--${item.kind}${item.id === 'loading' ? ' fire-ticker__entry--loading' : ''}${item.municipalityKey ? ' fire-ticker__entry--clickable' : ''}`}
       onClick={item.municipalityKey && onClickMunicipality ? () => onClickMunicipality(item.municipalityKey!) : undefined}
       onMouseEnter={item.hasLocation && item.hoverIncidentKey && onHoverFire ? () => onHoverFire(item.hoverIncidentKey) : undefined}
       onMouseLeave={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
       onFocus={item.hasLocation && item.hoverIncidentKey && onHoverFire ? () => onHoverFire(item.hoverIncidentKey) : undefined}
       onBlur={item.hasLocation && onHoverFire ? () => onHoverFire(null) : undefined}
     >
-      <div className="fire-ticker__entry-copy">
-        <span className="fire-ticker__entry-eyebrow">
-          {item.kind === 'notice' ? <span className="fire-ticker__notice-badge">112</span> : item.hasLocation ? <LocationIcon /> : null}
-          <span>{item.municipalityLabel}</span>
-        </span>
-        <strong className="fire-ticker__entry-title">{item.title}</strong>
-        <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>
-        <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
-      </div>
+      {item.id === 'loading' ? (
+        <DataLoadingCard
+          compact
+          className="fire-ticker__loading-card"
+          message="Ανακτώνται οι ενεργές πυρκαγιές."
+        />
+      ) : (
+        <div className="fire-ticker__entry-copy">
+          <span className="fire-ticker__entry-eyebrow">
+            {item.kind === 'notice' ? <span className="fire-ticker__notice-badge">112</span> : item.hasLocation ? <LocationIcon /> : null}
+            <span>{item.municipalityLabel}</span>
+          </span>
+          <strong className="fire-ticker__entry-title">{item.title}</strong>
+          <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>
+          <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
+        </div>
+      )}
     </article>,
   ])
 }
@@ -566,7 +587,7 @@ export default function FireNowTicker() {
         <ComponentTag name="FireNowTicker" />
         <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
       </div>
-      <div className={`fire-ticker${shouldScroll ? '' : ' fire-ticker--static'}`}>
+      <div className={`fire-ticker${shouldScroll ? '' : ' fire-ticker--static'}${loading ? ' fire-ticker--loading' : ''}`} aria-busy={loading}>
         <div className="fire-ticker__title">
           <span className="eyebrow">live</span>
           <strong>Ενεργές πυρκαγιές: {titleCount}</strong>

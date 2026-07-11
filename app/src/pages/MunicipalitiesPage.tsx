@@ -111,6 +111,16 @@ type FirmsActiveFireDetectionRow = {
   frp: number | string | null
 }
 
+type Notice112Row = {
+  notice_id: string
+  current_fire_incident_key: string | null
+  posted_at: string | null
+  notice_type: string | null
+  notice_text: string | null
+  municipality_keys: string[] | null
+  matched_municipality_key: string | null
+}
+
 type WorkRow = {
   id: number | string
   procurement_id: number | string | null
@@ -886,6 +896,7 @@ export default function MunicipalitiesPage() {
   const [forestFireRows, setForestFireRows] = useState<ForestFireRow[]>([])
   const [copernicusRows, setCopernicusRows] = useState<CopernicusRow[]>([])
   const [firmsDetectionRows, setFirmsDetectionRows] = useState<FirmsActiveFireDetectionRow[]>([])
+  const [recent112NoticeRows, setRecent112NoticeRows] = useState<Notice112Row[]>([])
   const [workRows, setWorkRows] = useState<WorkRow[]>([])
   const [workRowsLoading, setWorkRowsLoading] = useState(false)
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
@@ -1011,6 +1022,7 @@ export default function MunicipalitiesPage() {
     setForestFireRows([])
     setCopernicusRows([])
     setFirmsDetectionRows([])
+    setRecent112NoticeRows([])
     setWorkRows([])
   }, [selectedMunicipalityKey])
 
@@ -2320,6 +2332,7 @@ export default function MunicipalitiesPage() {
       setForestFireRows([])
       setCopernicusRows([])
       setFirmsDetectionRows([])
+      setRecent112NoticeRows([])
       setContractCurvePoints([])
       setContractOrganizationById({})
       setMunicipalitySpendPer100k(null)
@@ -2457,6 +2470,7 @@ export default function MunicipalitiesPage() {
         })
 
         const firmsSince = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
+        const noticeSince = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
 
         const [
           profileResult,
@@ -2467,6 +2481,7 @@ export default function MunicipalitiesPage() {
           nextForestRows,
           nextCopernicusRows,
           rawFirmsDetectionRows,
+          recent112NoticesResult,
           ...contractResults
         ] = await Promise.all([
           supabase
@@ -2550,6 +2565,14 @@ export default function MunicipalitiesPage() {
               .gte('acquired_at', firmsSince)
               .eq('is_in_greece', true)
               .order('acquired_at', { ascending: false })
+              .range(from, to),
+          ),
+          fetchAllPaginatedRows<Notice112Row>(
+            (from, to) => supabase
+              .from('112_notice')
+              .select('notice_id, current_fire_incident_key, posted_at, notice_type, notice_text, municipality_keys, matched_municipality_key')
+              .gte('posted_at', noticeSince)
+              .order('posted_at', { ascending: false, nullsFirst: false })
               .range(from, to),
           ),
           ...contractRequests,
@@ -2699,6 +2722,25 @@ export default function MunicipalitiesPage() {
         }
 
         const nextFirmsDetectionRows = excludeFirmsMapHotspots(rawFirmsDetectionRows)
+        const activeIncidentKeys = new Set(
+          nextCurrentFireRows
+            .map((row) => cleanText(row.incident_key))
+            .filter((incidentKey): incidentKey is string => Boolean(incidentKey)),
+        )
+        const nextRecent112NoticeRows = recent112NoticesResult.filter((row) => {
+          const matchedMunicipalityKey = normalizeMunicipalityKey(cleanText(row.matched_municipality_key))
+          const belongsToSelectedMunicipality = matchedMunicipalityKey === selectedMunicipalityKeyNormalized
+            || (row.municipality_keys ?? []).some((municipalityKey) => {
+              return normalizeMunicipalityKey(cleanText(municipalityKey)) === selectedMunicipalityKeyNormalized
+            })
+          if (!belongsToSelectedMunicipality) return false
+
+          const postedDate = row.posted_at ? new Date(row.posted_at) : null
+          const postedTime = postedDate && !Number.isNaN(postedDate.getTime()) ? postedDate.getTime() : 0
+          const isRecent = postedTime >= Date.now() - 24 * 60 * 60 * 1000
+          const linkedActiveIncidentKey = cleanText(row.current_fire_incident_key)
+          return isRecent || Boolean(linkedActiveIncidentKey && activeIncidentKeys.has(linkedActiveIncidentKey))
+        })
 
         if (!cancelled) {
           setProfile(nextProfile)
@@ -2713,6 +2755,7 @@ export default function MunicipalitiesPage() {
           setForestFireRows(nextForestRows)
           setCopernicusRows(nextCopernicusRows)
           setFirmsDetectionRows(nextFirmsDetectionRows)
+          setRecent112NoticeRows(nextRecent112NoticeRows)
           setContractYearSummary(nextContractYearSummary)
           setContractCurvePoints(nextContractCurvePoints)
           setContractOrganizationById(nextContractOrganizationById)
@@ -2733,6 +2776,7 @@ export default function MunicipalitiesPage() {
           setForestFireRows([])
           setCopernicusRows([])
           setFirmsDetectionRows([])
+          setRecent112NoticeRows([])
           setPageLoading(false)
         }
       }
@@ -2912,6 +2956,19 @@ export default function MunicipalitiesPage() {
     if (count === 1) return 'ΕΝΕΡΓΗ ΘΕΡΜΙΚΗ ΑΝΩΜΑΛΙΑ (NASA FIRMS)'
     return `${formatNumber(count)} ΕΝΕΡΓΕΣ ΘΕΡΜΙΚΕΣ ΑΝΩΜΑΛΙΕΣ (NASA FIRMS)`
   }, [firmsDetectionRows.length])
+  const recent112NoticeAlert = useMemo(() => {
+    const count = recent112NoticeRows.length
+    if (count <= 0) return null
+    const latestNoticeText = cleanText(recent112NoticeRows[0]?.notice_text)
+    const latestNoticeSuffix = latestNoticeText ? ` - ${latestNoticeText}` : ''
+    if (count === 1) {
+      const noticeType = cleanText(recent112NoticeRows[0]?.notice_type)
+      return noticeType
+        ? `1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112 - ${noticeType}${latestNoticeSuffix}`
+        : `1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112${latestNoticeSuffix}`
+    }
+    return `${formatNumber(count)} ΕΝΕΡΓΕΣ Ή ΠΡΟΣΦΑΤΕΣ ΕΙΔΟΠΟΙΗΣΕΙΣ 112${latestNoticeSuffix}`
+  }, [recent112NoticeRows])
   const copernicusCountByYear = useMemo(() => {
     const summary = new Map<number, number>()
 
@@ -3316,6 +3373,14 @@ export default function MunicipalitiesPage() {
                   <span>
                     <span className="municipality-profile-hero__alert-dot" aria-hidden="true" />
                     {activeFirmsDetectionAlert}
+                  </span>
+                </div>
+              )}
+              {recent112NoticeAlert && (
+                <div className="municipality-profile-hero__status-strip municipality-profile-hero__status-strip--alert" role="status" aria-live="polite">
+                  <span>
+                    <span className="municipality-profile-hero__alert-dot" aria-hidden="true" />
+                    {recent112NoticeAlert}
                   </span>
                 </div>
               )}

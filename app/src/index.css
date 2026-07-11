@@ -411,7 +411,9 @@ main {
 }
 
 .fire-ticker__marquee {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 .fire-ticker__marquee::-webkit-scrollbar {
@@ -503,6 +505,16 @@ main {
 
 .fire-ticker__entry--clickable:hover .fire-ticker__entry-eyebrow {
   text-decoration: underline;
+}
+
+.fire-ticker__entry--loading {
+  min-width: min(26rem, 72vw);
+}
+
+.fire-ticker__loading-card.data-loading-card {
+  width: min(26rem, 72vw);
+  padding: 0.75rem 0.85rem;
+  border-color: rgba(17, 17, 17, 0.08);
 }
 
 .fire-ticker__separator {
