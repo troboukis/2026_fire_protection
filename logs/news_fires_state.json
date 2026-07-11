@@ -1,21 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564338971/igoymenitsa-synelifthi-andras-gia-emprismo-apo-ameleia/",
-      "title": "Ηγουμενίτσα: Συνελήφθη άνδρας για εμπρησμό από αμέλεια",
-      "normalized_title": "ΗΓΟΥΜΕΝΙΤΣΑ: ΣΥΝΕΛΗΦΘΗ ΑΝΔΡΑΣ ΓΙΑ ΕΜΠΡΗΣΜΟ ΑΠΟ ΑΜΕΛΕΙΑ",
+      "url": "https://www.kathimerini.gr/society/564338995/dolofonia-vagias-nestora-sta-dikastiria-oi-katigoroymenoi-gia-tin-epithesi/",
+      "title": "Δολοφονία Βάγιας Νέστορα: Στα δικαστήρια οι κατηγορούμενοι για την επίθεση",
+      "normalized_title": "ΔΟΛΟΦΟΝΙΑ ΒΑΓΙΑΣ ΝΕΣΤΟΡΑ: ΣΤΑ ΔΙΚΑΣΤΗΡΙΑ ΟΙ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564338971/igoymenitsa-synelifthi-andras-gia-emprismo-apo-ameleia/",
-        "https://www.kathimerini.gr/politics/564338956/syriza-ora-miden-gia-ti-sygklisi-tis-kentrikis-epitropis-fotografies/",
-        "https://www.kathimerini.gr/culture/tv/564337432/to-deltio-ton-media-platforma-apo-tin-tanweer/",
-        "https://www.kathimerini.gr/politics/amyna/564337261/f-35-empodia-gia-ta-exi-machitika/",
-        "https://www.kathimerini.gr/society/564338932/katakolo-nekros-anasyrthike-83chronos-apo-thalassia-periochi/",
-        "https://www.kathimerini.gr/economy/international/564337669/epicheirimatika-schedia-me-tis-plates-tramp-sti-groilandia/",
-        "https://www.kathimerini.gr/society/564337249/diplo-minyma-apo-tin-komision-gia-tis-epidotiseis/",
-        "https://www.kathimerini.gr/society/564338947/trochaio-sti-mesara-ich-xefyge-apo-tin-poreia-toy-kai-epese-pano-se-stylo/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564337258/f-35-anisychi-i-athina-gia-tis-exelixeis/"
+        "https://www.kathimerini.gr/society/564338995/dolofonia-vagias-nestora-sta-dikastiria-oi-katigoroymenoi-gia-tin-epithesi/",
+        "https://www.kathimerini.gr/k/k-magazine/564334450/i-anexartisia-toy-lari-nteivint/",
+        "https://www.kathimerini.gr/society/564338980/sovaro-trochaio-stis-serres-se-krisimi-katastasi-35chronos-motosikletistis/",
+        "https://www.kathimerini.gr/economy/business/564337618/ptosi-poliseon-asfalistikon-programmaton-ygeias-13-4-logo-akriveias/",
+        "https://www.kathimerini.gr/world/564338986/germania-aisio-telos-gia-tin-omiria-se-soyper-market-sto-verolino/",
+        "https://www.kathimerini.gr/economy/business/564337630/xekinoyn-ti-deytera-oi-therines-ekptoseis/",
+        "https://www.kathimerini.gr/society/564338983/thessaloniki-dikografia-se-varos-44chronoy-gia-anexelegkti-aporripsi-iatrikon-apovliton-sto-filyro/",
+        "https://www.kathimerini.gr/culture/theater/564337429/i-lysistrati-stin-italia/"
       ],
-      "seen_at_utc": "2026-07-11T09:04:06.834729+00:00"
+      "seen_at_utc": "2026-07-11T10:04:21.041004+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -29,28 +28,35 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849254/thessaloniki-dikografia-se-varos-44hronou-gia-paranomi-aporripsi-iatrikon-apovliton-sto-filuro-fotografia/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Δικογραφία σε βάρος 44χρονου για παράνομη απόρριψη ιατρικών αποβλήτων στο Φίλυρο - Φωτογραφία",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΙΚΟΓΡΑΦΙΑ ΣΕ ΒΑΡΟΣ 44ΧΡΟΝΟΥ ΓΙΑ ΠΑΡΑΝΟΜΗ ΑΠΟΡΡΙΨΗ ΙΑΤΡΙΚΩΝ ΑΠΟΒΛΗΤΩΝ ΣΤΟ ΦΙΛΥΡΟ - ΦΩΤΟΓΡΑΦΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1849293/mahi-gia-tin-zoi-tous-dinoun-oi-treis-poluegaumaties-apo-ti-fotia-ston-aspropurgo-video-prin-tin-stigmi-tis-ekrixis/?utm_source=rss",
+      "title": "Μάχη για την ζωή τους δίνουν οι τρεις πολυεγκαυματίες από τη φωτιά στον Ασπρόπυργο, βίντεο πριν την στιγμή της έκρηξης στο μικροσκόπιο των Αρχών",
+      "normalized_title": "ΜΑΧΗ ΓΙΑ ΤΗΝ ΖΩΗ ΤΟΥΣ ΔΙΝΟΥΝ ΟΙ ΤΡΕΙΣ ΠΟΛΥΕΓΚΑΥΜΑΤΙΕΣ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΟΝ ΑΣΠΡΟΠΥΡΓΟ, ΒΙΝΤΕΟ ΠΡΙΝ ΤΗΝ ΣΤΙΓΜΗ ΤΗΣ ΕΚΡΗΞΗΣ ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΩΝ ΑΡΧΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849254/thessaloniki-dikografia-se-varos-44hronou-gia-paranomi-aporripsi-iatrikon-apovliton-sto-filuro-fotografia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849293/mahi-gia-tin-zoi-tous-dinoun-oi-treis-poluegaumaties-apo-ti-fotia-ston-aspropurgo-video-prin-tin-stigmi-tis-ekrixis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849289/fotia-se-agrotodasiki-ektasi-sta-lavara-evrou-epiheirei-kai-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849282/parasursi-pezis-sto-kedro-tis-athinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849279/sta-dikastiria-oi-sullifthedes-gia-ti-dolofoniki-epithesi-sto-spiti-tis-nestora-to-lathos-pou-odigise-stin-sullipsi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849269/ston-anakriti-gia-na-apologithoun-oi-duo-astunomikoi-pou-purovolisan-sto-kefali-ton-20hrono-sto-argos-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849266/agria-katadioxi-sti-thessaloniki-me-protagonisti-22hrono-motosikletisti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849264/edopistike-hasisofuteia-me-4000-dendrullia-se-horio-tis-lamias-treis-sullipseis-meta-tin-efodo-tis-elas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849259/sunelifthi-andras-gia-ebrismo-stin-igoumenitsa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849255/eihame-hasei-tis-elpides-mas-eimaste-kahupoptoi-kai-epifulaktikoi-mehri-na-doume-ti-dikografia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T09:04:06.834815+00:00"
+      "seen_at_utc": "2026-07-11T10:04:21.041088+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1425421/i-fantasia-stin-exoysia/",
-      "title": "Η φαντασία στην εξουσία",
-      "normalized_title": "Η ΦΑΝΤΑΣΙΑ ΣΤΗΝ ΕΞΟΥΣΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1425571/to-teleytaio-antio-stin-paola-revenioti-sto-a-nekrotafeio-athinon-eikones/",
+      "title": "Το τελευταίο «αντίο» στην Πάολα Ρεβενιώτη στο Α’ Νεκροταφείο Αθηνών [εικόνες]",
+      "normalized_title": "ΤΟ ΤΕΛΕΥΤΑΙΟ «ΑΝΤΙΟ» ΣΤΗΝ ΠΑΟΛΑ ΡΕΒΕΝΙΩΤΗ ΣΤΟ Α’ ΝΕΚΡΟΤΑΦΕΙΟ ΑΘΗΝΩΝ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1425421/i-fantasia-stin-exoysia/",
-        "https://www.efsyn.gr/stiles/1425415/proeklogiki-egrigorsi/",
-        "https://www.efsyn.gr/politiki/1425520/syriza-en-anamoni-apofaseon-apo-tin-antipoliteysi-ston-aera-i-synedriasi-tis-ke-den-yparhei-apartia/",
-        "https://www.efsyn.gr/ellada/1425516/marfin-epistrefei-stin-ellada-i-46hroni-dilonei-athoa-kai-thelei-na-katathesei/",
-        "https://www.efsyn.gr/ellada/1425508/gerasimos-papadopoylos-gia-katolisthisi-stin-paralia-myrto-stin-kefalonia-kindynos-thanatos/",
-        "https://www.efsyn.gr/politiki/1425500/o-alexis-tsipras-me-to-vivlio-toy-stamati-kraoynaki-i-fotografia-milaei-moni-tis/"
+        "https://www.efsyn.gr/ellada/1425571/to-teleytaio-antio-stin-paola-revenioti-sto-a-nekrotafeio-athinon-eikones/",
+        "https://www.efsyn.gr/stiles/1425435/oi-ithikoi-panikoi-os-ergaleio-ton-kampotinon/",
+        "https://www.efsyn.gr/stiles/1425426/o-thaymastos-kainoyrgios-kosmos-kai-i-paremvasi-toy-alexi-tsipra/",
+        "https://www.efsyn.gr/politiki/1425539/rena-doyroy-anoikto-an-tha-einai-ypopsifia-gia-tin-igesia-toy-syriza/",
+        "https://www.efsyn.gr/tehnes/1425519/to-tragoydi-tis-imeras-street-of-dreams/"
       ],
-      "seen_at_utc": "2026-07-11T09:04:06.834760+00:00"
+      "seen_at_utc": "2026-07-11T10:04:21.041050+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T09:04:06.834906+00:00"
+  "updated_at_utc": "2026-07-11T10:04:21.041177+00:00"
 }
