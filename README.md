@@ -35,6 +35,29 @@ The live `public.current_fires` dataset and the homepage fire ticker are sourced
 - Scraper: `src/scrape_forest_fires.py`
 - Scope used in the frontend: active fires only, excluding rows with status `ΛΗΞΗ`
 
+The homepage `NewsTicker` also uses `public.current_fires` to mark news articles that refer to an active fire. Hovering an article with an active-fire marker dispatches the same map highlight event used by the fire ticker.
+
+## News fires data source
+
+The `public.news_fires` dataset stores recent fire-related news articles from Greek news listings:
+
+- Sources: Καθημερινή and News247
+- Scraper: `src/fetch_news_fires.py`
+- State file: `logs/news_fires_state.json`
+- Runner: `scripts/run_news_fires_and_push_state.sh`
+- GitHub workflow: `.github/workflows/news-fires-refresh.yml`
+- Uniqueness: one row per article URL
+
+The scraper incrementally scans listing pages, filters likely fire articles, extracts one geographic area with an LLM, geocodes it, maps coordinates to a municipality polygon, and upserts rows into `public.news_fires`.
+
+The homepage `NewsTicker` reads from `get_news_ticker_articles()` instead of raw table reads. That RPC returns all articles published today when there are at least five; otherwise it returns the latest ten articles overall. It also decorates rows with `active_fire_incident_key` when the article municipality has an active fire. The component listens to realtime changes on `news_fires` and `current_fires`.
+
+Run the news-fire refresh locally:
+
+```bash
+./scripts/run_news_fires_and_push_state.sh
+```
+
 One-command local fetch + git sync:
 
 ```bash
@@ -1034,31 +1057,19 @@ oldest year (faded grey). Any number of years share the most-faded style.
 
 ### Supabase RPC calls from the homepage
 
-The homepage makes **two** RPC calls:
+The homepage uses server-side RPCs for frontend-ready datasets instead of shipping raw tables to the browser. Key homepage calls include:
 
-| Call | Function | Purpose |
-|---|---|---|
-| Hero KPIs | `get_raw_procurements_hero_stats` | Total spend, top type, top CPV for current YTD |
-| Cumulative chart | `get_raw_procurements_cumulative_curve` | Daily cumulative series for all years from `YEAR_START` |
+| Function | Purpose |
+|---|---|
+| `get_hero_section_data` | Hero KPIs and cumulative spending chart inputs |
+| `get_homepage_funding` | Fire-protection funding summary |
+| `get_latest_contract_cards` | Recent KIMDIS contract cards |
+| `get_diavgeia_page` | Recent Diavgeia decisions and Diavgeia page results |
+| `get_news_ticker_articles` | NewsTicker article selection and active-fire matching |
 
-```ts
-// Hero stats — compare current year vs two prior years at same YTD window
-supabase.rpc('get_raw_procurements_hero_stats', {
-  p_year_main:  currentYear,
-  p_year_prev1: currentYear - 1,
-  p_year_prev2: currentYear - 2,
-  p_as_of_date: asOf,
-})
-
-// Cumulative curve — single call, server generates all year series
-supabase.rpc('get_raw_procurements_cumulative_curve', {
-  p_as_of_date: asOf,
-  p_year_main:  currentYear,
-  p_year_start: YEAR_START,
-})
-```
+Homepage RPC results use the shared `app/src/lib/homepageRpcCache.ts` cache/retry/stale fallback helper where appropriate. Realtime events are used for live surfaces such as current fires and news ticker updates.
 
 ### Pages
 
-- `/` — Homepage: hero KPIs + cumulative spending chart + municipality panel
+- `/` — Homepage: fire ticker + news ticker + hero KPIs + cumulative spending chart + municipality panel
 - `/contracts` — Contract browser (`app/src/pages/ContractsPage.tsx`)

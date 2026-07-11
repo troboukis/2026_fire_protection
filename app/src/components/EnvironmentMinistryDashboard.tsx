@@ -1205,7 +1205,7 @@ export default function EnvironmentMinistryDashboard() {
         </header>
 
         {loading && (
-          <DataLoadingCard className="environment-dashboard__loading" message={`Ανακτώνται τα συγκεντρωτικά στοιχεία του ${data.ministryName} από RPC.`} />
+          <DataLoadingCard className="environment-dashboard__loading" message={`Ανακτώνται τα συγκεντρωτικά στοιχεία του ${data.ministryName}.`} />
         )}
 
         {!loading && error && (

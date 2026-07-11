@@ -1644,7 +1644,7 @@ export default function SituationMap() {
           </div>
           {isDateFilterLoading && (
             <div className="fire-copernicus__date-loading" role="status" aria-live="polite">
-              Φόρτωση δεδομένων από Supabase
+              Φόρτωση δεδομένων
             </div>
           )}
         </div>
