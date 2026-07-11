@@ -1,27 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564337216/dolofonia-vagias-nestora-den-ypologisan-tis-kameres/",
-      "title": "Δολοφονία Βάγιας Νέστορα: Δεν υπολόγισαν τις κάμερες",
-      "normalized_title": "ΔΟΛΟΦΟΝΙΑ ΒΑΓΙΑΣ ΝΕΣΤΟΡΑ: ΔΕΝ ΥΠΟΛΟΓΙΣΑΝ ΤΙΣ ΚΑΜΕΡΕΣ",
+      "url": "https://www.kathimerini.gr/culture/564336031/matsi-chatzilazaroy-gynaika-athanati-kai-matsi-ton-oneiron/",
+      "title": "Μάτση Χατζηλαζάρου: «Γυναίκα αθάνατη και Μάτση των Ονείρων»",
+      "normalized_title": "ΜΑΤΣΗ ΧΑΤΖΗΛΑΖΑΡΟΥ: «ΓΥΝΑΙΚΑ ΑΘΑΝΑΤΗ ΚΑΙ ΜΑΤΣΗ ΤΩΝ ΟΝΕΙΡΩΝ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564337216/dolofonia-vagias-nestora-den-ypologisan-tis-kameres/",
-        "https://www.kathimerini.gr/visual/photography/564337072/san-thilykos-chaalant/",
-        "https://www.kathimerini.gr/world/564338827/tramp-pros-iran-1-000-pyrayloi-einai-etoimoi-an-apopeiratheite-na-me-dolofonisete/",
-        "https://www.kathimerini.gr/politics/564337186/theoreio-o-stochos-ton-1-000-eyro/",
-        "https://www.kathimerini.gr/society/564338815/trochaio-ston-kifiso-ich-anetrapi-meta-apo-sygkroysi-me-fortigo-dyo-traymaties/",
-        "https://www.kathimerini.gr/politics/564337234/entos-kai-ektos-tenekedes-kai-politiki/",
-        "https://www.kathimerini.gr/economy/international/564337663/aytonoma-ochimata-choris-timoni-exetazoyn-oi-ipa/",
-        "https://www.kathimerini.gr/economy/business/564337645/symmachia-motor-oil-aktor-se-energeia-kai-ypodomes/",
-        "https://www.kathimerini.gr/istoria/564334975/san-simera-11-ioylioy-1897-xekina-i-atychis-poliki-apostoli-toy-salomon-aoygkoyst-antree/",
-        "https://www.kathimerini.gr/politics/564337231/vertigko-diarkeias-gia-syriza/",
-        "https://www.kathimerini.gr/society/564338794/omorfochori-larisas-olonychtia-machi-me-tis-floges-anisychia-gia-nees-ekrixeis/",
-        "https://www.kathimerini.gr/economy/international/564337666/meionetai-i-pagkosmia-zitisi-petrelaioy-logo-toy-polemoy-sto-iran/",
-        "https://www.kathimerini.gr/world/564338788/germania-peristatiko-omireias-se-soyper-market-sto-verolino/",
-        "https://www.kathimerini.gr/society/astynomiko/564337195/marfin-oi-fotografies-ton-diakopon-kai-i-taytopoiisi-me-ai/",
-        "https://www.kathimerini.gr/society/564337198/marfin-einai-anthropoi-mesa-eipan-kapste-toys-fonaxan-apo-ton-ochlo/"
+        "https://www.kathimerini.gr/culture/564336031/matsi-chatzilazaroy-gynaika-athanati-kai-matsi-ton-oneiron/",
+        "https://www.kathimerini.gr/columns/564336763/taxidi-stis-kyklades/",
+        "https://www.kathimerini.gr/economy/international/564337684/allagi-genias-stin-igesia-toy-omiloy-inditex/",
+        "https://www.kathimerini.gr/k/gastronomos/564338845/overnight-bowl-me-amaranto-giaoyrti-froyta-kai-gala-karydas/",
+        "https://www.kathimerini.gr/economy/international/564337687/anatropi-sti-machi-gia-exagora-tis-aeroporikis-easyjet/",
+        "https://www.kathimerini.gr/culture/agenda/564337414/poy-vgainoyme-simera-savvato-protaseis-gia-theatro-synaylies-ektheseis-ekdiloseis-134/",
+        "https://www.kathimerini.gr/world/564338803/koyva-tetarto-geniko-mplak-aoyt-mesa-se-ena-examino/",
+        "https://www.kathimerini.gr/athletics/football/564337510/moyntial-2026-polla-provlimata-gia-tin-agglia/",
+        "https://www.kathimerini.gr/world/564338836/oykrania-toylachiston-exi-traymaties-exaitias-rosikon-pligmaton-sto-kievo/",
+        "https://www.kathimerini.gr/economy/diktis/564337735/to-deal-omiloy-ion-me-lamda-sto-elliniko/",
+        "https://www.kathimerini.gr/economy/international/564337738/kai-pali-sto-simeio-miden-i-ekt-sti-machi-kata-toy-plithorismoy/"
       ],
-      "seen_at_utc": "2026-07-11T05:04:04.907881+00:00"
+      "seen_at_utc": "2026-07-11T06:04:09.023347+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/o-vasilias-karolos-sinantithike-me-ton-prigkipa-xari-ti-sizigo-tou-kai-ta-paidia-tous-meta-apo-4-xronia/",
@@ -35,23 +31,36 @@
       "seen_at_utc": "2026-07-10T19:08:39.751965+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849115/kairos-anevainei-i-thermokrasia-os-36-simera-kai-38-tin-kuriaki/?utm_source=rss",
-      "title": "Καιρός: Ανεβαίνει η θερμοκρασία, ως 36 σήμερα και 38 την Κυριακή",
-      "normalized_title": "ΚΑΙΡΟΣ: ΑΝΕΒΑΙΝΕΙ Η ΘΕΡΜΟΚΡΑΣΙΑ, ΩΣ 36 ΣΗΜΕΡΑ ΚΑΙ 38 ΤΗΝ ΚΥΡΙΑΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1849153/rodos-an-den-eisai-mazi-mou-tha-se-skotoso-kataggelia-38hronis-gia-apeiles-kai-ekviasmo-me-gumnes-fotografies/?utm_source=rss",
+      "title": "«Αν δεν είσαι μαζί μου, θα σε σκοτώσω»: 38χρονη στη Ρόδο κατήγγειλε 25χρονο ότι την εκβίαζε με γυμνές φωτογραφίες",
+      "normalized_title": "«ΑΝ ΔΕΝ ΕΙΣΑΙ ΜΑΖΙ ΜΟΥ, ΘΑ ΣΕ ΣΚΟΤΩΣΩ»: 38ΧΡΟΝΗ ΣΤΗ ΡΟΔΟ ΚΑΤΗΓΓΕΙΛΕ 25ΧΡΟΝΟ ΟΤΙ ΤΗΝ ΕΚΒΙΑΖΕ ΜΕ ΓΥΜΝΕΣ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849115/kairos-anevainei-i-thermokrasia-os-36-simera-kai-38-tin-kuriaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849153/rodos-an-den-eisai-mazi-mou-tha-se-skotoso-kataggelia-38hronis-gia-apeiles-kai-ekviasmo-me-gumnes-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849152/kleidi-i-tehnologia-gia-na-vroun-tous-treis-gia-ton-ebrismo-sti-marfin-arhi-tou-nimatos-oi-fotografies-apo-diakopes-to/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849148/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849141/to-neo-plaisio-gia-tin-tehniti-noimosuni-ti-allazei-gia-polites-epiheiriseis-kai-dimosio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849137/larisa-veltiomeni-i-eikona-apo-ti-megali-fotia-se-monada-anakuklosis-sunehizetai-i-mahi-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849126/epiheirisi-lagokefalos-oi-22-erotiseis-kai-apadiseis-gia-to-neo-programma-poioi-tha-plirothoun-533-euro-to-kilo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-11T05:04:04.907952+00:00"
+      "seen_at_utc": "2026-07-11T06:04:09.023487+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1425394/eortologio-poioi-giortazoyn-simera-11-ioylioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 11 Ιουλίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 11 ΙΟΥΛΙΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1425393/gallia-trito-synehomeno-moyntial-sta-imitelika-oneiro-o-titlos/",
+      "title": "Γαλλία: Τρίτο συνεχόμενο Μουντιάλ στα ημιτελικά – Όνειρο ο τίτλος",
+      "normalized_title": "ΓΑΛΛΙΑ: ΤΡΙΤΟ ΣΥΝΕΧΟΜΕΝΟ ΜΟΥΝΤΙΑΛ ΣΤΑ ΗΜΙΤΕΛΙΚΑ – ΟΝΕΙΡΟ Ο ΤΙΤΛΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1425394/eortologio-poioi-giortazoyn-simera-11-ioylioy/"
+        "https://www.efsyn.gr/athlitismos/1425393/gallia-trito-synehomeno-moyntial-sta-imitelika-oneiro-o-titlos/",
+        "https://www.efsyn.gr/oikonomia/1425391/forologikes-diloseis-paratasi-eos-tis-24-ioylioy-meta-tis-pieseis-ta-provlimata-poy-odigisan-stin-apofasi/",
+        "https://www.efsyn.gr/ellada/1425388/emprismoi-sti-thessaloniki-to-diamerisma-kleidi-kai-oi-treis-syllipseis-me-egkefalo-palio-gnorimo-ton-arhon/",
+        "https://www.efsyn.gr/ellada/1425422/kairos-me-36aria-simera-kai-anodo-tis-thermokrasias-se-poies-periohes-tha-vrexei/",
+        "https://www.efsyn.gr/ellada/1425385/marfin-16-hronia-meta-pros-exihniasi-me-ena-e-mail/",
+        "https://www.efsyn.gr/protoselida/pros-neo-dipolismo/",
+        "https://www.efsyn.gr/politiki/1425382/mitsotakis-nikise-tin-akriveia-me-10-lepta-sti-venzini/",
+        "https://www.efsyn.gr/politiki/1425379/syriza-emfylios-meta-tin-paraitisi-famelloy-i-mahi-gia-tin-kentriki-epitropi/",
+        "https://www.efsyn.gr/ellada/1425399/larisa-olonyhtia-mahi-sto-omorfohori-meta-apo-fotia-se-epiheirisi-anakyklosis-lene-gia-emprismo-oi-idioktites/"
       ],
-      "seen_at_utc": "2026-07-11T05:04:04.907917+00:00"
+      "seen_at_utc": "2026-07-11T06:04:09.023411+00:00"
     }
   },
-  "updated_at_utc": "2026-07-11T05:04:04.908048+00:00"
+  "updated_at_utc": "2026-07-11T06:04:09.023591+00:00"
 }
