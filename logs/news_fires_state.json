@@ -1,19 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564339616/thessaloniki-synelifthi-22chronos-gia-paranomi-metafora-metanaston/",
-      "title": "Θεσσαλονίκη: Συνελήφθη 22χρονος για παράνομη μεταφορά μεταναστών",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 22ΧΡΟΝΟΣ ΓΙΑ ΠΑΡΑΝΟΜΗ ΜΕΤΑΦΟΡΑ ΜΕΤΑΝΑΣΤΩΝ",
+      "url": "https://www.kathimerini.gr/politics/564339640/pasok-apotropiasmos-gia-tin-epithesi-se-varos-tis-sevis-voloydaki/",
+      "title": "ΠΑΣΟΚ: Αποτροπιασμός για την επίθεση σε βάρος της Σέβης Βολουδάκη",
+      "normalized_title": "ΠΑΣΟΚ: ΑΠΟΤΡΟΠΙΑΣΜΟΣ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ ΣΕ ΒΑΡΟΣ ΤΗΣ ΣΕΒΗΣ ΒΟΛΟΥΔΑΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564339616/thessaloniki-synelifthi-22chronos-gia-paranomi-metafora-metanaston/",
-        "https://www.kathimerini.gr/politics/564339622/giannoylis-aristera-entasi-kai-via-den-pane-mazi/",
-        "https://www.kathimerini.gr/society/564339592/thessaloniki-tesseris-syllipseis-gia-trochaia-kai-paraviaseis-toy-kok/",
-        "https://www.kathimerini.gr/society/564339595/thessaloniki-exichniastike-emprismos-ochimatos-ston-eyosmo-dikografia-se-varos-35chronoy/",
-        "https://www.kathimerini.gr/opinion/interviews/564338044/giorgos-mylonakis-stin-k-nikisa-giati-eicha-vrachoys-dipla-moy/",
-        "https://www.kathimerini.gr/k/gastronomos/564339565/karpoyzopita-i-karpoyzenia-mia-pita-kart-postal-apo-tis-kyklades/",
-        "https://www.kathimerini.gr/society/564339610/aspropyrgos-katelixe-enas-apo-toys-sovara-egkaymaties-tis-pyrkagias/"
+        "https://www.kathimerini.gr/politics/564339640/pasok-apotropiasmos-gia-tin-epithesi-se-varos-tis-sevis-voloydaki/",
+        "https://www.kathimerini.gr/society/564339643/fotia-tora-ston-apropyrgo/",
+        "https://www.kathimerini.gr/columns/564339637/o-tzenti-osman-kai-i-nea-voreia-pragmatikotita/",
+        "https://www.kathimerini.gr/society/564339613/chalkidiki-synelifthi-27chronos-gia-paravasi-tis-nomothesias-peri-oplon/",
+        "https://www.kathimerini.gr/politics/564339628/syriza-katadikazei-ta-synthimata-exo-apo-to-spiti-tis-sevis-voloydaki/"
       ],
-      "seen_at_utc": "2026-07-12T10:04:02.540500+00:00"
+      "seen_at_utc": "2026-07-12T11:03:56.740055+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/exi-nekroi-stin-oukrania-kai-12-travmaties-sto-kievo-apo-rosika-pligmata/",
@@ -304,28 +302,31 @@
       "seen_at_utc": "2026-07-11T17:58:48.904005+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849656/oures-piston-sti-souroti-gia-ta-32-hronia-meta-tin-koimisi-tou-agiou-paisiou/?utm_source=rss",
-      "title": "Ουρές πιστών στη Σουρωτή για τα 32 χρόνια μετά την κοίμηση του Αγίου Παΐσίου",
-      "normalized_title": "ΟΥΡΕΣ ΠΙΣΤΩΝ ΣΤΗ ΣΟΥΡΩΤΗ ΓΙΑ ΤΑ 32 ΧΡΟΝΙΑ ΜΕΤΑ ΤΗΝ ΚΟΙΜΗΣΗ ΤΟΥ ΑΓΙΟΥ ΠΑΙΣΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1849682/allos-odigouse-allos-edose-aima-leei-o-pateras-tis-15hronis-pou-skotothike-se-trohaio-sti-thessaloniki/?utm_source=rss",
+      "title": "«Άλλος οδηγούσε, άλλος έδωσε αίμα» λέει ο πατέρας της 15χρονης που σκοτώθηκε σε τροχαίο στη Θεσσαλονίκη για τον οδηγό του απορριμματοφόρου",
+      "normalized_title": "«ΑΛΛΟΣ ΟΔΗΓΟΥΣΕ, ΑΛΛΟΣ ΕΔΩΣΕ ΑΙΜΑ» ΛΕΕΙ Ο ΠΑΤΕΡΑΣ ΤΗΣ 15ΧΡΟΝΗΣ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΓΙΑ ΤΟΝ ΟΔΗΓΟ ΤΟΥ ΑΠΟΡΡΙΜΜΑΤΟΦΟΡΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849656/oures-piston-sti-souroti-gia-ta-32-hronia-meta-tin-koimisi-tou-agiou-paisiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849649/halkidiki-sunelifthi-27hronos-gia-paravasi-tis-nomothesias-peri-oplon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849647/trohaio-gia-ton-niko-nikolopoulo-stin-patra-nosileuetai-stin-a-orthopaidiki-kliniki-tou-panepistimiou-patron/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849638/akoma-duo-sullipseis-opadon-gia-epitheseis-se-astunomikous-kai-filathlous-meta-ton-teliko-tis-euroleague/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849682/allos-odigouse-allos-edose-aima-leei-o-pateras-tis-15hronis-pou-skotothike-se-trohaio-sti-thessaloniki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849677/sullipsi-24hronou-stin-varkiza-gia-kodra-me-mihanes-ta-ximeromata/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849672/fotia-tora-ston-aspropurgo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849669/i-stigmi-pou-to-autokinito-petaei-ston-aera-kai-peftei-pano-se-dedro-kai-stathmeumena-autokinita-stin-kriti-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849667/sunelifthi-anilikos-sto-kedro-tis-athinas-gia-diakinisi-narkotikon-vrethike-kokaini-kannavi-kai-pistoli-sto-spiti-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849662/kinitopoiisi-elas-kai-purosvestikis-gia-upopto-adikeimeno-sto-monastiraki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-12T10:04:02.540581+00:00"
+      "seen_at_utc": "2026-07-12T11:03:56.740173+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1425887/moyntial-2026-i-asist-apo-to-kalodio-poy-egine-thema-sti-norvigia-gia-to-gkol-tis-agglias-i-apantisi-tis-fifa/",
-      "title": "Μουντιάλ 2026: Η «ασίστ» από το καλώδιο που έγινε θέμα στη Νορβηγία για το γκολ της Αγγλίας – Η απάντηση της FIFA",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: Η «ΑΣΙΣΤ» ΑΠΟ ΤΟ ΚΑΛΩΔΙΟ ΠΟΥ ΕΓΙΝΕ ΘΕΜΑ ΣΤΗ ΝΟΡΒΗΓΙΑ ΓΙΑ ΤΟ ΓΚΟΛ ΤΗΣ ΑΓΓΛΙΑΣ – Η ΑΠΑΝΤΗΣΗ ΤΗΣ FIFA",
+      "url": "https://www.efsyn.gr/stiles/1425905/o-orgoyel-stin-ekpaideysi-gia-tin-adiki-poini-ston-ekpaideytiko-th-papadopoylo/",
+      "title": "O Όργουελ στην εκπαίδευση: Για την άδικη ποινή στον εκπαιδευτικό Θ. Παπαδόπουλο",
+      "normalized_title": "O ΟΡΓΟΥΕΛ ΣΤΗΝ ΕΚΠΑΙΔΕΥΣΗ: ΓΙΑ ΤΗΝ ΑΔΙΚΗ ΠΟΙΝΗ ΣΤΟΝ ΕΚΠΑΙΔΕΥΤΙΚΟ Θ. ΠΑΠΑΔΟΠΟΥΛΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1425887/moyntial-2026-i-asist-apo-to-kalodio-poy-egine-thema-sti-norvigia-gia-to-gkol-tis-agglias-i-apantisi-tis-fifa/",
-        "https://www.efsyn.gr/politiki/1425884/tsoykalas-se-mitsotaki-i-exoteriki-politiki-einai-poly-sovari-ypothesi-gia-na-tin-ehete-ston-aytomato-piloto/",
-        "https://www.efsyn.gr/kosmos/1425624/erntogan-o-aparaititos-symmahos-poy-paizei-se-polla-tamplo/"
+        "https://www.efsyn.gr/stiles/1425905/o-orgoyel-stin-ekpaideysi-gia-tin-adiki-poini-ston-ekpaideytiko-th-papadopoylo/",
+        "https://www.efsyn.gr/ellada/1425902/irakleio-i-stigmi-poy-to-aytokinito-apogeionetai-kai-peftei-pano-se-dendro-kai-stathmeymena-ih-vinteo/",
+        "https://www.efsyn.gr/tehnes/1425893/o-karagkiozis-poy-antisteketai-ston-hrono-gemizei-akoma-tis-plateies-i-parakatathiki-toy-eygenioy-spathari/",
+        "https://www.efsyn.gr/ellada/1425894/emprismoi-sti-thessaloniki-to-kinito-poy-petaxe-apo-to-parathyro-o-29hronos-sto-mikroskopio-tis-antitromokratikis/"
       ],
-      "seen_at_utc": "2026-07-12T10:04:02.540557+00:00"
+      "seen_at_utc": "2026-07-12T11:03:56.740115+00:00"
     }
   },
-  "updated_at_utc": "2026-07-12T10:04:02.540668+00:00"
+  "updated_at_utc": "2026-07-12T11:03:56.740251+00:00"
 }
