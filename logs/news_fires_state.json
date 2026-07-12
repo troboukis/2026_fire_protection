@@ -1,21 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564334021/70-chronia-meta-exetaseis-dna-gia-anthrakorychoys-choris-onoma/",
-      "title": "70 χρόνια μετά, εξετάσεις DNA για ανθρακωρύχους χωρίς όνομα",
-      "normalized_title": "70 ΧΡΟΝΙΑ ΜΕΤΑ, ΕΞΕΤΑΣΕΙΣ DNA ΓΙΑ ΑΝΘΡΑΚΩΡΥΧΟΥΣ ΧΩΡΙΣ ΟΝΟΜΑ",
+      "url": "https://www.kathimerini.gr/world/564339589/iranika-pligmata-stin-iordania/",
+      "title": "Ιρανικά πλήγματα στην Ιορδανία",
+      "normalized_title": "ΙΡΑΝΙΚΑ ΠΛΗΓΜΑΤΑ ΣΤΗΝ ΙΟΡΔΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564334021/70-chronia-meta-exetaseis-dna-gia-anthrakorychoys-choris-onoma/",
-        "https://www.kathimerini.gr/istoria/564339415/90-chronia-prin-12-7-1936/",
-        "https://www.kathimerini.gr/world/564339577/stena-toy-ormoyz-diasothike-to-pliroma-toy-ploioy-poy-dechtike-pyra/",
-        "https://www.kathimerini.gr/world/564339574/gkalimpaf-pros-ipa-sas-to-eipame-tiriste-tis-desmeyseis-i-pliroste-to-timima/",
-        "https://www.kathimerini.gr/world/564339544/alpeis-germanida-skotothike-se-atychima-me-alexiptoto-plagias/",
-        "https://www.kathimerini.gr/world/564339571/pethane-o-proin-emiris-toy-katar-se-chis-chamant-mpin-chalifa-al-thani/",
-        "https://www.kathimerini.gr/society/564339559/hellenic-train-diakopi-kykloforias-metaxy-thessalonikis-kai-litochoroy-logo-pyrkagias-allages-sta-dromologia/",
-        "https://www.kathimerini.gr/society/564339547/lamia-trochaio-me-michanaki-traymatistikan-oi-dyo-nearoi-anavates/",
-        "https://www.kathimerini.gr/society/564339538/thessaloniki-choris-energo-metopo-i-fotia-sto-perivolaki-paramenoyn-sto-simeio-pyrosvestikes-dynameis/"
+        "https://www.kathimerini.gr/world/564339589/iranika-pligmata-stin-iordania/",
+        "https://www.kathimerini.gr/society/564339550/kriti-aytokinito-anapodogyrise-meta-apo-proskroysi-se-dentro/",
+        "https://www.kathimerini.gr/world/564339586/indos-ypikoos-agnoeitai-ystera-apo-epithesi-se-ploio-anoichta-toy-oman/",
+        "https://www.kathimerini.gr/k/gastronomos/564339520/oloklires-xefloydismenes-ntomates-konserva/",
+        "https://www.kathimerini.gr/politics/564339553/mitsotakis-dikaiosyni-gia-ta-thymata-tis-marfin-i-synergasia-me-tin-toyrkia-den-synadei-me-to-casus-belli/",
+        "https://www.kathimerini.gr/society/564339556/olympos-oloklirothike-epicheirisi-metaforas-64chronoy-oreivati-eiche-entopistei-choris-tis-aisthiseis-toy/"
       ],
-      "seen_at_utc": "2026-07-12T07:04:07.607999+00:00"
+      "seen_at_utc": "2026-07-12T08:04:01.360507+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/exi-nekroi-stin-oukrania-kai-12-travmaties-sto-kievo-apo-rosika-pligmata/",
@@ -306,29 +303,32 @@
       "seen_at_utc": "2026-07-11T17:58:48.904005+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849578/thessalonikioriothetimeni-i-purkagia-sto-perivolaki-lagada-sunehizetai-i-epiheirisi-plirous-katasvesis/?utm_source=rss",
-      "title": "Θεσσαλονίκη:Οριοθετημένη η πυρκαγιά στο Περιβολάκι Λαγκαδά, συνεχίζεται η επιχείρηση πλήρους κατάσβεσης",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ:ΟΡΙΟΘΕΤΗΜΕΝΗ Η ΠΥΡΚΑΓΙΑ ΣΤΟ ΠΕΡΙΒΟΛΑΚΙ ΛΑΓΚΑΔΑ, ΣΥΝΕΧΙΖΕΤΑΙ Η ΕΠΙΧΕΙΡΗΣΗ ΠΛΗΡΟΥΣ ΚΑΤΑΣΒΕΣΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1849606/to-kinito-pou-petaxe-apo-to-parathuro-29hronos-sto-mikroskopio-tis-aditromokratikis-gia-dolofoniki-epithesi-sto-nestora/?utm_source=rss",
+      "title": "Το κινητό που πέταξε από το παράθυρο ο 29χρονος στο μικροσκόπιο της Αντιτρομοκρατικής για τη δολοφονική επίθεση στο σπίτι της Νέστορα",
+      "normalized_title": "ΤΟ ΚΙΝΗΤΟ ΠΟΥ ΠΕΤΑΞΕ ΑΠΟ ΤΟ ΠΑΡΑΘΥΡΟ Ο 29ΧΡΟΝΟΣ ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΗΣ ΑΝΤΙΤΡΟΜΟΚΡΑΤΙΚΗΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΚΗ ΕΠΙΘΕΣΗ ΣΤΟ ΣΠΙΤΙ ΤΗΣ ΝΕΣΤΟΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849578/thessalonikioriothetimeni-i-purkagia-sto-perivolaki-lagada-sunehizetai-i-epiheirisi-plirous-katasvesis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849565/treli-poreia-autokinitou-sto-irakleio-kritis-dieluse-stathmeumena-ih-kai-toubare-sti-mesi-tou-dromou-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849560/hellenic-train-diakopi-tis-sidirodromikis-kukloforias-kai-tis-ilektrodotisis-sto-tmima-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849606/to-kinito-pou-petaxe-apo-to-parathuro-29hronos-sto-mikroskopio-tis-aditromokratikis-gia-dolofoniki-epithesi-sto-nestora/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849589/seismos-tora-34-rihter-sto-prokopi-euvoias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-12T07:04:07.608077+00:00"
+      "seen_at_utc": "2026-07-12T08:04:01.360596+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1425570/o-kostas-gavrogloy-stin-ef-syn-to-programma-mas-gia-tin-paideia-einai-programma-kyvernisis/",
-      "title": "Ο Κώστας Γαβρόγλου στην «Εφ.Συν.»: «Το πρόγραμμά μας για την Παιδεία είναι πρόγραμμα κυβέρνησης»",
-      "normalized_title": "Ο ΚΩΣΤΑΣ ΓΑΒΡΟΓΛΟΥ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «ΤΟ ΠΡΟΓΡΑΜΜΑ ΜΑΣ ΓΙΑ ΤΗΝ ΠΑΙΔΕΙΑ ΕΙΝΑΙ ΠΡΟΓΡΑΜΜΑ ΚΥΒΕΡΝΗΣΗΣ»",
+      "url": "https://www.efsyn.gr/ellada/1425863/irakleio-treli-poreia-aytokinitoy-dielyse-stathmeymena-ih-kai-anapodogyrise-sti-mesi-toy-dromoy/",
+      "title": "Ηράκλειο: Τρελή πορεία αυτοκινήτου – Διέλυσε σταθμευμένα ΙΧ και αναποδογύρισε στη μέση του δρόμου",
+      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΤΡΕΛΗ ΠΟΡΕΙΑ ΑΥΤΟΚΙΝΗΤΟΥ – ΔΙΕΛΥΣΕ ΣΤΑΘΜΕΥΜΕΝΑ ΙΧ ΚΑΙ ΑΝΑΠΟΔΟΓΥΡΙΣΕ ΣΤΗ ΜΕΣΗ ΤΟΥ ΔΡΟΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1425570/o-kostas-gavrogloy-stin-ef-syn-to-programma-mas-gia-tin-paideia-einai-programma-kyvernisis/",
-        "https://www.efsyn.gr/ellada/1425846/panelladikes-exetaseis-2026-mehri-tis-16-ioylioy-i-ypovoli-mihanografikoy-ta-101-vimata-gia-ti-symplirosi-toy/",
-        "https://www.efsyn.gr/athlitismos/1425843/aek-pethane-o-manoy-proin-podosfairistis-tis-enosis-se-ilikia-43-eton/",
-        "https://www.efsyn.gr/athlitismos/1425840/moyntial-2026-me-anatropi-kai-mpeligham-i-agglia-me-2-1-ti-norvigia-tha-synantisei-tin-argentini-stoys-4/",
-        "https://www.efsyn.gr/kosmos/1425838/nea-entasi-ston-ormoyz-ploio-ypo-kypriaki-simaia-htypithike-apo-to-iran-agnoeitai-melos-toy-pliromatos/"
+        "https://www.efsyn.gr/ellada/1425863/irakleio-treli-poreia-aytokinitoy-dielyse-stathmeymena-ih-kai-anapodogyrise-sti-mesi-toy-dromoy/",
+        "https://www.efsyn.gr/stiles/1425601/poiisi-to-xevrakoma-tis-psyhis/",
+        "https://www.efsyn.gr/stiles/1425592/kyklops-kai-satyroi/",
+        "https://www.efsyn.gr/nisides/1424324/enalion-i-mathitiki-start-up-poy-dinei-geysi-sto-fagito-mas/",
+        "https://www.efsyn.gr/politiki/1425859/elas-gia-thanato-20hronoy-sto-argos-na-min-meinei-oyte-mia-skia-stin-ereyna/",
+        "https://www.efsyn.gr/podcast/anagoges-koyventes-posa-lefta-pire-o-tsipras-kai-ti-ta-ekane/",
+        "https://www.efsyn.gr/kosmos/1425856/pethane-o-proin-emiris-toy-katar-hamant-mpin-halifa-al-thani-se-ilikia-74-eton/",
+        "https://www.efsyn.gr/kosmos/1425853/ipa-pethane-o-geroysiastis-lintsei-gkraham-sta-71-toy/",
+        "https://www.efsyn.gr/oikonomia/1425851/rythmisi-72-doseon-gia-hrei-sto-dimosio-pote-anoigei-i-platforma-gia-aitiseis-poioi-kerdizoyn/"
       ],
-      "seen_at_utc": "2026-07-12T07:04:07.608049+00:00"
+      "seen_at_utc": "2026-07-12T08:04:01.360559+00:00"
     }
   },
-  "updated_at_utc": "2026-07-12T07:04:07.608179+00:00"
+  "updated_at_utc": "2026-07-12T08:04:01.360670+00:00"
 }
