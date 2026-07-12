@@ -1,18 +1,32 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564334510/fotia-kai-kapnos/",
-      "title": "Στο Ρουφ, για φιλέτα προβατίνας και ηπειρώτικες πίτες",
-      "normalized_title": "ΣΤΟ ΡΟΥΦ, ΓΙΑ ΦΙΛΕΤΑ ΠΡΟΒΑΤΙΝΑΣ ΚΑΙ ΗΠΕΙΡΩΤΙΚΕΣ ΠΙΤΕΣ",
+      "url": "https://www.kathimerini.gr/opinion/564338146/ta-ofeli-ton-monopation/",
+      "title": "Τα οφέλη των μονοπατιών",
+      "normalized_title": "ΤΑ ΟΦΕΛΗ ΤΩΝ ΜΟΝΟΠΑΤΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564334510/fotia-kai-kapnos/",
-        "https://www.kathimerini.gr/k/k-magazine/564330478/13-tromaktikes-istories/",
-        "https://www.kathimerini.gr/culture/564338746/oi-perses-ston-vytho-tis-salaminas/",
-        "https://www.kathimerini.gr/society/564339916/thessaloniki-fotia-se-chamili-vlastisi-kai-aporrimmata-ston-agio-athanasio-chalkidonos/",
-        "https://www.kathimerini.gr/world/564339892/gaza-exi-nekroi-anamesa-toys-9chrono-paidi-apo-israilines-epitheseis/",
-        "https://www.kathimerini.gr/politics/564339880/kyr-mitsotakis-syllypitiria-ston-lao-toy-katar-gia-ton-thanato-toy-se-chi-chamant-mpin-chalifa-al-thani/"
+        "https://www.kathimerini.gr/opinion/564338146/ta-ofeli-ton-monopation/",
+        "https://www.kathimerini.gr/opinion/564338170/anazitontas-ton-amerikanismo/",
+        "https://www.kathimerini.gr/opinion/564338167/mprosta-stin-teleia-kataigida/",
+        "https://www.kathimerini.gr/opinion/sketches/564339778/skitso-toy-dimitri-chantzopoyloy-12-07-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564339787/skitso-toy-ilia-makri-12-07-26/",
+        "https://www.kathimerini.gr/opinion/564338182/monologoi-oi-dialogoi-kai-ta-logia-liga/",
+        "https://www.kathimerini.gr/society/564339985/fotia-ston-avanta-alexandroypolis-sikothikan-enaeria-mesa/",
+        "https://www.kathimerini.gr/opinion/sketches/564339775/skitso-toy-andrea-petroylaki-12-07-26/",
+        "https://www.kathimerini.gr/opinion/564338179/apo-to-mantsester-stin-ntaoyningk-strit/",
+        "https://www.kathimerini.gr/opinion/564338188/i-magnifica-humanitas-tis-anagnorisis-orion/",
+        "https://www.kathimerini.gr/opinion/564338194/to-kalokairi-ton-camps/",
+        "https://www.kathimerini.gr/opinion/564337903/apeili-gia-to-elliniko-pleonektima/",
+        "https://www.kathimerini.gr/opinion/564337945/to-programma-os-proschima/",
+        "https://www.kathimerini.gr/world/564339976/israil-voyleytikes-ekloges-stis-27-oktovrioy/",
+        "https://www.kathimerini.gr/opinion/564337984/i-politiki-via-sti-meta-krisi-epochi/",
+        "https://www.kathimerini.gr/world/564339961/ennea-nekroi-stin-oykrania-kai-ti-rosia-apo-ekaterothen-pligmata/",
+        "https://www.kathimerini.gr/society/564339913/sti-rodo-oi-34-kyprioi-motosikletistes-gia-tis-ekdiloseis-mnimis-isaak-kai-solomoy/",
+        "https://www.kathimerini.gr/economy/564338452/sti-cheiroteri-tha-echoyme-mathei-polla/",
+        "https://www.kathimerini.gr/world/564339928/tramp-enantion-iran-eichame-symfonia-alla-ekanan-piso-kai-epitethikan-se-ploio/",
+        "https://www.kathimerini.gr/world/564339925/chili-exi-nekroi-apo-ochima-poy-epese-pano-se-plithos-sti-vinia-ntel-mar/"
       ],
-      "seen_at_utc": "2026-07-12T16:04:02.213754+00:00"
+      "seen_at_utc": "2026-07-12T17:04:05.955082+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/exi-nekroi-stin-oukrania-kai-12-travmaties-sto-kievo-apo-rosika-pligmata/",
@@ -303,31 +317,27 @@
       "seen_at_utc": "2026-07-11T17:58:48.904005+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1849793/methusmenos-o-odigos-tou-iptamenou-autokinitou-stin-kriti-sunelifthi-o-touristas/?utm_source=rss",
-      "title": "Μεθυσμένος ο οδηγός του «ιπτάμενου» αυτοκινήτου στην Κρήτη, συνελήφθη ο τουρίστας",
-      "normalized_title": "ΜΕΘΥΣΜΕΝΟΣ Ο ΟΔΗΓΟΣ ΤΟΥ «ΙΠΤΑΜΕΝΟΥ» ΑΥΤΟΚΙΝΗΤΟΥ ΣΤΗΝ ΚΡΗΤΗ, ΣΥΝΕΛΗΦΘΗ Ο ΤΟΥΡΙΣΤΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1849805/tragodia-se-xenodoheio-nekro-trihrono-paidi-pou-epese-apo-balkoni/?utm_source=rss",
+      "title": "Τραγωδία στην Κύπρο: Νεκρό τρίχρονο παιδί που έπεσε από μπαλκόνι ξενοδοχείου",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΚΥΠΡΟ: ΝΕΚΡΟ ΤΡΙΧΡΟΝΟ ΠΑΙΔΙ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΜΠΑΛΚΟΝΙ ΞΕΝΟΔΟΧΕΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1849793/methusmenos-o-odigos-tou-iptamenou-autokinitou-stin-kriti-sunelifthi-o-touristas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849785/se-exelixi-fotia-sta-kartsanaiika-patreon-epiheiroun-tria-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849780/eftasan-sti-rodo-oi-kuprioi-motosikletistes-tis-protovoulias-mnimis-isaak-solomou-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1849776/fotia-ston-agio-athanasio-thessalonikis-minuma-tou-112-gia-etoimotita/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1849805/tragodia-se-xenodoheio-nekro-trihrono-paidi-pou-epese-apo-balkoni/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1849803/fotia-tora-ston-avada-alexandroupolis-4-enaeria-stin-mahi-me-tis-floges/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-12T16:04:02.213837+00:00"
+      "seen_at_utc": "2026-07-12T17:04:05.955169+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/aytokinito/1424261/mini-john-cooper-works-dynami-poy-fainetai/",
-      "title": "Mini John Cooper Works: Δύναμη που φαίνεται",
-      "normalized_title": "MINI JOHN COOPER WORKS: ΔΥΝΑΜΗ ΠΟΥ ΦΑΙΝΕΤΑΙ",
+      "url": "https://www.efsyn.gr/nisides/1424293/tehniti-noimosyni-i-periptosi-ferrera-ti-adynatei-na-dei-i-politiki-epistimi/",
+      "title": "Τεχνητή Νοημοσύνη – Η περίπτωση Ferrera: Τι αδυνατεί να δει η πολιτική επιστήμη;",
+      "normalized_title": "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ – Η ΠΕΡΙΠΤΩΣΗ FERRERA: ΤΙ ΑΔΥΝΑΤΕΙ ΝΑ ΔΕΙ Η ΠΟΛΙΤΙΚΗ ΕΠΙΣΤΗΜΗ;",
       "seen_urls": [
-        "https://www.efsyn.gr/aytokinito/1424261/mini-john-cooper-works-dynami-poy-fainetai/",
-        "https://www.efsyn.gr/ellada/1425970/kriti-27hronos-allaxe-mehri-kai-hora-gia-na-kakopoiisei-tin-proin-syntrofo-toy/",
-        "https://www.efsyn.gr/tehnes/1425968/eurovision-2027-to-israil-tha-symmetehei-xana-para-to-kyma-antidraseon/",
-        "https://www.efsyn.gr/stiles/1425650/otan-o-tarnteli-mpike-sta-spitia-mas/",
-        "https://www.efsyn.gr/stiles/1425646/meta-tin-oykrania/",
-        "https://www.efsyn.gr/stiles/1425642/i-oikonomia-den-antehei-agores-oplikon-systimaton-apo-to-rafi/"
+        "https://www.efsyn.gr/nisides/1424293/tehniti-noimosyni-i-periptosi-ferrera-ti-adynatei-na-dei-i-politiki-epistimi/",
+        "https://www.efsyn.gr/ellada/1425979/argos-anavathmizetai-to-katigoritirio-gia-toys-dyo-astynomikoys-poy-skotosan-ton-20hrono/",
+        "https://www.efsyn.gr/ellada/1425977/fotia-ston-agio-athanasio-thessalonikis-kaigontai-xerohorta-kai-skoypidia/",
+        "https://www.efsyn.gr/stiles/1425975/i-anodos-tis-akrodexias-apeili-gia-ti-dimokratia/"
       ],
-      "seen_at_utc": "2026-07-12T16:04:02.213800+00:00"
+      "seen_at_utc": "2026-07-12T17:04:05.955142+00:00"
     }
   },
-  "updated_at_utc": "2026-07-12T16:04:02.213935+00:00"
+  "updated_at_utc": "2026-07-12T17:04:05.955275+00:00"
 }
