@@ -146,7 +146,7 @@ export default function Layout() {
       <Outlet />
 
       <footer className="site-footer">
-        © {latestYear} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a>
+        © {latestYear} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <NavLink to="/terms">Όροι χρήσης</NavLink>
       </footer>
     </div>
   )
