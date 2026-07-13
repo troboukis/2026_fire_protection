@@ -2,6 +2,7 @@ import { useEffect, useState, type MouseEvent } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import DevViewToggle from './DevViewToggle'
+import { showCookiePreferences } from '../cookieConsent'
 import { supabase } from '../lib/supabase'
 
 declare const __LAST_COMMIT_ISO__: string
@@ -146,7 +147,7 @@ export default function Layout() {
       <Outlet />
 
       <footer className="site-footer">
-        © {latestYear} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <NavLink to="/terms">Όροι χρήσης</NavLink>
+        © {latestYear} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <NavLink to="/terms">Όροι χρήσης</NavLink> · <NavLink to="/privacy">Απόρρητο &amp; cookies</NavLink> · <button type="button" onClick={showCookiePreferences}>Ρυθμίσεις cookies</button>
       </footer>
     </div>
   )

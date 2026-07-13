@@ -302,10 +302,74 @@ textarea {
   text-underline-offset: 0.18em;
 }
 
+.site-footer button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
 .site-footer a:hover,
-.site-footer a:focus-visible {
+.site-footer a:focus-visible,
+.site-footer button:hover,
+.site-footer button:focus-visible {
   color: var(--accent);
   outline: none;
+}
+
+#cc-main {
+  --cc-font-family: var(--font-sans);
+  --cc-bg: var(--paper);
+  --cc-primary-color: var(--ink);
+  --cc-secondary-color: var(--ink-soft);
+  --cc-btn-primary-bg: var(--ink);
+  --cc-btn-primary-color: var(--paper);
+  --cc-btn-primary-hover-bg: var(--accent);
+  --cc-btn-primary-hover-color: #fff;
+  --cc-btn-secondary-bg: #e7e2d5;
+  --cc-btn-secondary-color: var(--ink);
+  --cc-btn-secondary-hover-bg: #d9d1c1;
+  --cc-btn-secondary-hover-color: var(--ink);
+  --cc-separator-border-color: var(--line-strong);
+  --cc-cookie-category-block-bg: rgba(26, 26, 24, 0.05);
+  --cc-cookie-category-block-border: var(--line);
+  --cc-cookie-category-block-hover-bg: rgba(26, 26, 24, 0.08);
+  --cc-cookie-category-block-hover-border: var(--line-strong);
+  --cc-cookie-category-expanded-block-bg: rgba(26, 26, 24, 0.04);
+  --cc-cookie-category-expanded-block-hover-bg: rgba(26, 26, 24, 0.06);
+  --cc-toggle-on-bg: var(--accent);
+  --cc-toggle-off-bg: #817d73;
+  --cc-toggle-readonly-bg: #aaa499;
+  --cc-footer-bg: #eee9dc;
+  --cc-footer-border-color: var(--line-strong);
+  --cc-modal-border-radius: 0;
+  --cc-btn-border-radius: 0;
+  --cc-pm-toggle-border-radius: 0;
+}
+
+#cc-main .cm,
+#cc-main .pm {
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 18px 60px rgba(26, 26, 24, 0.2);
+}
+
+#cc-main .cm__title,
+#cc-main .pm__title {
+  letter-spacing: -0.025em;
+}
+
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .terms-page {

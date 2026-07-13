@@ -5,12 +5,13 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App'
 import Layout from './components/Layout'
-import { initGA, trackPageView } from './analytics'
+import { trackPageView } from './analytics'
+import { initCookieConsent } from './cookieConsent'
 import './index.css'
 
 const analyticsEnabled = import.meta.env.PROD
 
-if (analyticsEnabled) initGA()
+void initCookieConsent()
 
 function RouteTracker() {
   const location = useLocation()
@@ -26,6 +27,7 @@ const DiavgeiaPage = lazy(() => import('./pages/DiavgeiaPage'))
 const EnvironmentMinistryPage = lazy(() => import('./pages/EnvironmentMinistryPage'))
 const MapsPage = lazy(() => import('./pages/MapsPage'))
 const MunicipalitiesPage = lazy(() => import('./pages/MunicipalitiesPage'))
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -41,6 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/environment-ministry" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><EnvironmentMinistryPage /></Suspense>} />
           <Route path="/municipalities" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MunicipalitiesPage /></Suspense>} />
           <Route path="/maps" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MapsPage /></Suspense>} />
+          <Route path="/privacy" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><PrivacyPage /></Suspense>} />
           <Route path="/terms" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><TermsPage /></Suspense>} />
         </Route>
       </Routes>
