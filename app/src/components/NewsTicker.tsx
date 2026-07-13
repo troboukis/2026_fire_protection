@@ -107,7 +107,6 @@ export default function NewsTicker() {
             {
               ttlMs: 5 * 60 * 1000,
               useStaleOnError: true,
-              dedupeInFlight: true,
               validateData: (data) => Array.isArray(data) && data.length > 0,
             },
           )

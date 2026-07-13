@@ -26,6 +26,7 @@ const DiavgeiaPage = lazy(() => import('./pages/DiavgeiaPage'))
 const EnvironmentMinistryPage = lazy(() => import('./pages/EnvironmentMinistryPage'))
 const MapsPage = lazy(() => import('./pages/MapsPage'))
 const MunicipalitiesPage = lazy(() => import('./pages/MunicipalitiesPage'))
+const TermsPage = lazy(() => import('./pages/TermsPage'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -40,6 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/environment-ministry" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><EnvironmentMinistryPage /></Suspense>} />
           <Route path="/municipalities" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MunicipalitiesPage /></Suspense>} />
           <Route path="/maps" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MapsPage /></Suspense>} />
+          <Route path="/terms" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><TermsPage /></Suspense>} />
         </Route>
       </Routes>
     </BrowserRouter>

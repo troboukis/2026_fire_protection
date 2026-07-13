@@ -8,7 +8,6 @@ type CacheOptions = {
   ttlMs?: number
   staleTtlMs?: number
   useStaleOnError?: boolean
-  dedupeInFlight?: boolean
   useStaleWhileRevalidating?: boolean
   validateData?: (data: unknown) => boolean
 }
@@ -24,7 +23,6 @@ const STORAGE_PREFIX = `homepage-rpc-cache:${STORAGE_VERSION}:${STORAGE_ENV}:`
 const DEFAULT_TTL_MS = 60_000
 const DEFAULT_STALE_TTL_MS = 6 * 60 * 60 * 1000
 const memoryCache = new Map<string, CacheEntry<unknown>>()
-const inFlightCache = new Map<string, Promise<unknown>>()
 
 function serializeStable(value: unknown): string {
   if (value == null) return 'null'
@@ -78,7 +76,6 @@ export async function loadCachedHomepageRpc<T>(
   const ttlMs = options.ttlMs ?? DEFAULT_TTL_MS
   const staleTtlMs = options.staleTtlMs ?? DEFAULT_STALE_TTL_MS
   const useStaleOnError = options.useStaleOnError ?? false
-  const dedupeInFlight = options.dedupeInFlight ?? false
   const validateData = options.validateData
   const now = Date.now()
   const memoryEntry = memoryCache.get(cacheKey) as CacheEntry<T> | undefined
@@ -95,9 +92,6 @@ export async function loadCachedHomepageRpc<T>(
       return storedEntry.data
     }
   }
-
-  const inFlight = inFlightCache.get(cacheKey) as Promise<T> | undefined
-  if (dedupeInFlight && inFlight) return inFlight
 
   const request = (async () => {
     try {
@@ -120,12 +114,9 @@ export async function loadCachedHomepageRpc<T>(
         return staleEntry.data
       }
       throw error
-    } finally {
-      inFlightCache.delete(cacheKey)
     }
   })()
 
-  if (dedupeInFlight) inFlightCache.set(cacheKey, request)
   return request
 }
 
