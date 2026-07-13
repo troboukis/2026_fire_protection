@@ -1,21 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564341476/meteorologoi-stin-k-chanetai-o-mpoysoylas-toy-kairoy/",
-      "title": "Μετεωρολόγοι στην «Κ»: Χάνεται ο μπούσουλας του καιρού",
-      "normalized_title": "ΜΕΤΕΩΡΟΛΟΓΟΙ ΣΤΗΝ «Κ»: ΧΑΝΕΤΑΙ Ο ΜΠΟΥΣΟΥΛΑΣ ΤΟΥ ΚΑΙΡΟΥ",
+      "url": "https://www.kathimerini.gr/society/564341536/vrilissia-aytokinito-eisevale-se-katastima-gynaikeion-roychon-vinteo/",
+      "title": "Βριλήσσια: Αυτοκίνητο «εισέβαλε» σε κατάστημα γυναικείων ρούχων (βίντεο)",
+      "normalized_title": "ΒΡΙΛΗΣΣΙΑ: ΑΥΤΟΚΙΝΗΤΟ «ΕΙΣΕΒΑΛΕ» ΣΕ ΚΑΤΑΣΤΗΜΑ ΓΥΝΑΙΚΕΙΩΝ ΡΟΥΧΩΝ (ΒΙΝΤΕΟ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564341476/meteorologoi-stin-k-chanetai-o-mpoysoylas-toy-kairoy/",
-        "https://www.kathimerini.gr/k/k-magazine/564340765/mantona-ti-synevi-sto-prosopo-soy/",
-        "https://www.kathimerini.gr/life/auto/564341440/se-poses-chores-stelnei-i-toyrkia-ta-aytokinita-tis-i-thesi-tis-elladas-sti-lista/",
-        "https://www.kathimerini.gr/society/564341500/kairos-pio-thermos-apo-ta-kanonika-epipeda-anamenetai-o-fetinos-aygoystos/",
-        "https://www.kathimerini.gr/world/564341512/oykrania-paraitithike-i-prothypoyrgos-gioylia-svirintenko/",
-        "https://www.kathimerini.gr/society/astynomiko/564341503/marfin-to-kokkino-emvlima-kai-to-fermoyar-pos-i-el-as-taytopoiise-toys-ypoptoys/",
-        "https://www.kathimerini.gr/world/564341437/lintsei-gkracham-o-tramp-proteinei-tin-adelfi-toy-gia-ti-geroysia/",
-        "https://www.kathimerini.gr/society/564341452/marfin-den-yparchei-taytopoiisi-ypostirizei-i-yperaspisi-ton-katigoroymenon/",
-        "https://www.kathimerini.gr/world/564341467/erntogan-i-synodos-toy-nato-stin-agkyra-anedeixe-ton-kentriko-rolo-tis-toyrkias/"
+        "https://www.kathimerini.gr/society/564341536/vrilissia-aytokinito-eisevale-se-katastima-gynaikeion-roychon-vinteo/",
+        "https://www.kathimerini.gr/economy/564338401/arthro-toy-antoni-kontoleon-stin-k-oi-chamenes-metarrythmiseis-poy-akrivainoyn-to-reyma/",
+        "https://www.kathimerini.gr/world/564341359/to-makry-cheri-toy-poytin-sto-tokio/",
+        "https://www.kathimerini.gr/culture/564338761/to-theatro-tis-pragmatikotitas/",
+        "https://www.kathimerini.gr/world/564341545/ipa-to-vrady-tis-tritis-xekina-o-apokleismos-toy-iran/",
+        "https://www.kathimerini.gr/society/564341515/spetses-sovaros-traymatismos-gynaikas-apo-propela-skafoys/"
       ],
-      "seen_at_utc": "2026-07-13T18:04:15.533870+00:00"
+      "seen_at_utc": "2026-07-13T19:04:11.641635+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,49 +1264,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1850361/gunaika-traumatistike-sovara-sta-podia-apo-propela-skafous-stis-spetses/?utm_source=rss",
-      "title": "Γυναίκα τραυματίστηκε σοβαρά στα πόδια από προπέλα σκάφους στις Σπέτσες",
-      "normalized_title": "ΓΥΝΑΙΚΑ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΟΒΑΡΑ ΣΤΑ ΠΟΔΙΑ ΑΠΟ ΠΡΟΠΕΛΑ ΣΚΑΦΟΥΣ ΣΤΙΣ ΣΠΕΤΣΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1850398/tragodia-stin-patra-pethane-vrefos-20-imeron/?utm_source=rss",
+      "title": "Τραγωδία στην Πάτρα: Πέθανε βρέφος 20 ημερών στο νοσοκομείο «Άγιος Ανδρέας»",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΠΑΤΡΑ: ΠΕΘΑΝΕ ΒΡΕΦΟΣ 20 ΗΜΕΡΩΝ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ «ΑΓΙΟΣ ΑΝΔΡΕΑΣ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1850361/gunaika-traumatistike-sovara-sta-podia-apo-propela-skafous-stis-spetses/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850359/pano-apo-30-atoma-me-salmonela-sto-nosokomeio-tis-lamias-oi-12-pio-varia-nosileuo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1850398/tragodia-stin-patra-pethane-vrefos-20-imeron/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850389/autes-einai-oi-fotografies-pou-odigisan-stin-tautopoiisi-ton-upopton-16-hronia-meta-tin-polunekri-epithesi-sti-marfin/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-13T18:04:15.533984+00:00"
+      "seen_at_utc": "2026-07-13T19:04:11.641737+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1426853/ormoyz-o-imo-aporrriptei-tin-epivoli-telon-apo-ipa-kai-tramp-sto-nadir-o-arithmos-ton-ploion-poy-pernoyn-ta-stena/",
-      "title": "Ορμούζ: Ο ΙΜΟ απορρρίπτει την επιβολή τελών από ΗΠΑ και Τραμπ – Στο ναδίρ ο αριθμός των πλοίων που περνούν τα Στενά",
-      "normalized_title": "ΟΡΜΟΥΖ: Ο ΙΜΟ ΑΠΟΡΡΡΙΠΤΕΙ ΤΗΝ ΕΠΙΒΟΛΗ ΤΕΛΩΝ ΑΠΟ ΗΠΑ ΚΑΙ ΤΡΑΜΠ – ΣΤΟ ΝΑΔΙΡ Ο ΑΡΙΘΜΟΣ ΤΩΝ ΠΛΟΙΩΝ ΠΟΥ ΠΕΡΝΟΥΝ ΤΑ ΣΤΕΝΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1426884/santamaria-mehri-to-2027-ston-paok/",
+      "title": "Σανταμαρία μέχρι το 2027 στον ΠΑΟΚ",
+      "normalized_title": "ΣΑΝΤΑΜΑΡΙΑ ΜΕΧΡΙ ΤΟ 2027 ΣΤΟΝ ΠΑΟΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1426853/ormoyz-o-imo-aporrriptei-tin-epivoli-telon-apo-ipa-kai-tramp-sto-nadir-o-arithmos-ton-ploion-poy-pernoyn-ta-stena/",
-        "https://www.efsyn.gr/politiki/1426854/elas-pros-marinaki-gia-ta-f-35-pseydeste-asystola-i-toyrkiki-symmetohi-pagose-ton-septemvrio-2017/",
-        "https://www.efsyn.gr/ellada/1426843/falaina-fysitiras-sta-kamena-voyrla-ekove-voltes-liges-ekatontades-metra-apo-tin-akti-vinteo/",
-        "https://www.efsyn.gr/ellada/1426846/perigrafi-tromos-apo-ti-syzygo-toy-epivati-tis-rynair-ton-travoysan-mesa-lipothymise-3-fores-vinteo/",
-        "https://www.efsyn.gr/kosmos/1426829/oi-ipa-xekinoyn-ekstrateia-kata-toy-dikastirioy-tis-hagis-diexagei-polemo-enantion-mas/",
-        "https://www.efsyn.gr/kosmos/1426828/gallia-mainetai-i-anexelegkti-fotia-sta-notia-toy-parisioy-stahti-10-000-stremmata-dasoys-eikones-vinteo/",
-        "https://www.efsyn.gr/politiki/1426833/tora-milame-apo-ti-mytilini-live-i-syzitisi-toy-alexi-tsipra-me-toys-polites/",
-        "https://www.efsyn.gr/politiki/1426830/anartisi-androylaki-epta-theseis-ena-shedio-oi-protaseis-toy-pasok-gia-tis-mikromesaies-epiheiriseis/"
+        "https://www.efsyn.gr/athlitismos/1426884/santamaria-mehri-to-2027-ston-paok/",
+        "https://www.efsyn.gr/ellada/1426878/halkidiki-nekri-66hroni-loyomeni-sti-gerakini/",
+        "https://www.efsyn.gr/athlitismos/1426871/me-to-dexi-i-sakkari-sto-athens-open/",
+        "https://www.efsyn.gr/ellada/1426858/i-salmonela-therizei-ti-lamia-ayxanontai-synehos-ta-kroysmata-sto-nosokomeio-anaziteitai-o-promitheytis/",
+        "https://www.efsyn.gr/kosmos/1426860/nees-kyroseis-apo-ipa-stin-koyva-sto-stohastro-etaireies-poy-eisagoyn-kaysima/",
+        "https://www.efsyn.gr/kosmos/1426862/new-york-times-pos-to-israil-estise-shedio-anatropis-stin-teherani-gia-na-epanaferei-ton-ahmantinetzant/"
       ],
-      "seen_at_utc": "2026-07-13T18:04:15.533964+00:00"
+      "seen_at_utc": "2026-07-13T19:04:11.641704+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/13/sports/football/i-mantsester-giounaitent-anakoinose-ton-antrei-santos-mexri-pote-ypegrapse/",
-      "title": "Η Μάντσεστερ Γιουνάιτεντ ανακοίνωσε τον Αντρέι Σάντος – Μέχρι πότε υπέγραψε",
-      "normalized_title": "Η ΜΑΝΤΣΕΣΤΕΡ ΓΙΟΥΝΑΙΤΕΝΤ ΑΝΑΚΟΙΝΩΣΕ ΤΟΝ ΑΝΤΡΕΙ ΣΑΝΤΟΣ – ΜΕΧΡΙ ΠΟΤΕ ΥΠΕΓΡΑΨΕ",
+      "url": "https://www.in.gr/2026/07/13/sports/mountial-2026/koumparsi-den-mas-fovizei-o-empape/",
+      "title": "Κουμπαρσί: «Δεν μας φοβίζει ο Εμπαπέ»",
+      "normalized_title": "ΚΟΥΜΠΑΡΣΙ: «ΔΕΝ ΜΑΣ ΦΟΒΙΖΕΙ Ο ΕΜΠΑΠΕ»",
       "seen_urls": [
-        "https://www.in.gr/2026/07/13/sports/football/i-mantsester-giounaitent-anakoinose-ton-antrei-santos-mexri-pote-ypegrapse/",
-        "https://www.in.gr/2026/07/13/greece/sovaros-traymatismos-gynaikas-stis-spetses-apo-propela-skafous-metaferetai-espeysmena-sto-argos/",
-        "https://www.in.gr/2026/07/13/politics/politiki-grammateia/tora-milame-sti-lesvo-o-aleksis-tsipras-synomilei-me-tous-katoikous-tou-nisiou/",
-        "https://www.in.gr/2026/07/13/greece/vrilissia-aytokinito-eisvalei-se-emporiko-katastima-parasyrontas-ti-vitrina-vinteo-ntokoumento/",
-        "https://www.in.gr/2026/07/13/life/culture-live/exasa-ena-kommati-tou-eaytou-mou-o-timote-salame-gia-to-telos-tou-dune/",
-        "https://www.in.gr/2026/07/13/world/i-symmaxia-ton-prothymon-gia-tin-oukrania-anakoinose-synaspismo-aeramynas-gia-koino-antivallistiko-systima/",
-        "https://www.in.gr/2026/07/13/greece/marfin-tin-triti-parousiazetai-i-46xroni-enopion-vretanikou-dikastiriou-gia-to-aitima-ekdosis-stin-ellada/",
-        "https://www.in.gr/2026/07/13/sports/basketball/ksekatharizei-i-katastasi-gia-xezonia/",
-        "https://www.in.gr/2026/07/13/sports/football/o-panathinaikos-anakoinose-episima-ton-kristiansen-vid/",
-        "https://www.in.gr/2026/07/13/world/to-dpd-dieksagei-polemo-se-varos-tis-ouasigkton-leei-o-roumpio-proanaggellei-nees-kyroseis/"
+        "https://www.in.gr/2026/07/13/sports/mountial-2026/koumparsi-den-mas-fovizei-o-empape/",
+        "https://www.in.gr/2026/07/13/sports/mountial-2026/mountial-se-60-deyterolepta-tyri-ryzi-kafe-gala-kai-fifa-ranking-vid/",
+        "https://www.in.gr/2026/07/13/world/centcom-oi-ipa-epanekkinoun-ton-thalassio-apokleismo-tou-ormouz-apo-tin-triti/",
+        "https://www.in.gr/2026/07/13/go-fun/soma-vikingk-prosopo-pixar-i-psyxologia-piso-apo-to-fainomeno-erlingk-xaalant-pou-espase-to-mountial-2026/",
+        "https://www.in.gr/2026/07/13/sports/basketball/o-serxio-gioul-irthe-se-symfonia-me-ti-real-madritis-gia-akoma-mia-sezon/",
+        "https://www.in.gr/2026/07/13/greece/thessaloniki-elegxetai-kai-o-pateras-tis-15xronis-gia-to-thanatiforo-troxaio/",
+        "https://www.in.gr/2026/07/13/politics/epikairotita/elas-oute-leksi-apo-ton-prothypourgo-gia-tis-21-sfaires-ston-20xrono-thodori/",
+        "https://www.in.gr/2026/07/13/greece/eixe-vgei-eos-to-stithos-ekso-den-mas-voithise-to-pliroma-martyria-sok-apo-ti-syzygo-tou-traymatia-epivati-tis-ryanair/",
+        "https://www.in.gr/2026/07/13/sports/basketball/i-monako-eyxaristise-ton-ntialo-pic/"
       ],
-      "seen_at_utc": "2026-07-13T18:04:15.533931+00:00"
+      "seen_at_utc": "2026-07-13T19:04:11.641673+00:00"
     }
   },
-  "updated_at_utc": "2026-07-13T18:04:15.534060+00:00"
+  "updated_at_utc": "2026-07-13T19:04:11.641805+00:00"
 }
