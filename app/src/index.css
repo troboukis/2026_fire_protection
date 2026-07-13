@@ -1021,6 +1021,15 @@ main {
   cursor: pointer;
 }
 
+.wire-item__title--four-lines {
+  display: -webkit-box;
+  min-height: calc(4 * 1em * 1.12);
+  max-height: calc(4 * 1em * 1.12);
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 .news-article-card {
   min-height: 20.5rem;
 }

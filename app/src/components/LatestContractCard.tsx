@@ -27,14 +27,6 @@ type Props = {
   contractTypeTransform?: (value: string) => string
 }
 
-function truncateWords(value: string, maxWords: number): string {
-  const text = value.trim()
-  if (!text) return '—'
-  const words = text.split(/\s+/).filter(Boolean)
-  if (words.length <= maxWords) return text
-  return `${words.slice(0, maxWords).join(' ')} ...`
-}
-
 function isMunicipalityOrgLabel(value: string): boolean {
   return value.trim().toLocaleUpperCase('el-GR').startsWith('ΔΗΜΟΣ ')
 }
@@ -44,7 +36,7 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
   const clickable = typeof onOpen === 'function'
   const transformedContractType = contractTypeTransform ? contractTypeTransform(item.contractType) : item.contractType
   const municipalityClickable = (item.orgIsMunicipality === true || isMunicipalityOrgLabel(item.who)) && !!item.municipalityKey
-  const visibleTitle = truncateWords(item.what, 15)
+  const visibleTitle = item.what.trim() || '—'
 
   const openMunicipality = () => {
     if (!item.municipalityKey) return
@@ -91,7 +83,7 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
         )}
         <span className="wire-item__date">{item.when}</span>
       </div>
-      <h2 title={item.what}>{visibleTitle}</h2>
+      <h2 className="wire-item__title--four-lines" title={item.what}>{visibleTitle}</h2>
       <div className="wire-item__rule" aria-hidden="true" />
       <p className="wire-item__subtitle">{item.why}</p>
       <div className="wire-item__footer">
