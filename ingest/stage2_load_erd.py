@@ -40,6 +40,7 @@ if str(REPO) not in sys.path:
     sys.path.insert(0, str(REPO))
 
 from municipality_normalization import normalizeMunicipality
+from src.diavgeia_amounts import resolve_diavgeia_amount_text
 from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
 
@@ -1496,7 +1497,7 @@ def diav_rows(
             t(r.get("spending_signers")),
             t(r.get("spending_contractors_afm")),
             t(r.get("spending_contractors_name")),
-            t(r.get("spending_contractors_value")),
+            resolve_diavgeia_amount_text(r),
             t(r.get("decisionType")),
         ))
     return out

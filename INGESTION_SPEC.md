@@ -122,6 +122,12 @@ Ingestion behavior:
 5. Incremental behavior:
    - rows with non-null `ada`: upsert on `ada`
    - rows with null `ada`: insert with `NOT EXISTS` guard to avoid rerun duplicates.
+6. `diavgeia.spending_contractors_value` is the single DB-facing raw amount field for every supported decision type. The loader copies, without numeric normalization, the one non-empty amount from these raw source columns:
+   - `spending_contractors_value` (`ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ`)
+   - `commitment_amount_with_vat` (`ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ`)
+   - `direct_value` (`ΑΝΑΘΕΣΗ ΕΡΓΩΝ / ΠΡΟΜΗΘΕΙΩΝ / ΥΠΗΡΕΣΙΩΝ / ΜΕΛΕΤΩΝ`)
+   - `payment_value` (`ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ`)
+   The raw dataset currently has exactly one populated amount source per row. The decision type remains in `diavgeia_document_type_decision_uid`, which defines the amount's business meaning.
 
 Responsible functions:
 - `resolve_diavgeia_context()`
