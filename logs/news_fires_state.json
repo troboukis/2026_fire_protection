@@ -1,25 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564340612/o-gianik-siner-fernei-to-athlitiko-chamogelo-stin-italia/",
-      "title": "Ο Γιανίκ Σίνερ φέρνει το (αθλητικό) χαμόγελο στην Ιταλία",
-      "normalized_title": "Ο ΓΙΑΝΙΚ ΣΙΝΕΡ ΦΕΡΝΕΙ ΤΟ (ΑΘΛΗΤΙΚΟ) ΧΑΜΟΓΕΛΟ ΣΤΗΝ ΙΤΑΛΙΑ",
+      "url": "https://www.kathimerini.gr/society/564340693/rodos-nekros-72chronos-loyomenos/",
+      "title": "Ρόδος: Νεκρός 72χρονος λουόμενος",
+      "normalized_title": "ΡΟΔΟΣ: ΝΕΚΡΟΣ 72ΧΡΟΝΟΣ ΛΟΥΟΜΕΝΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564340612/o-gianik-siner-fernei-to-athlitiko-chamogelo-stin-italia/",
-        "https://www.kathimerini.gr/k/k-magazine/564334519/o-roditis-ton-voynon/",
-        "https://www.kathimerini.gr/world/564340609/oi-marokines-arches-synelavan-ton-antikathestotiko-dimosiografo-ali-lmrampet/",
-        "https://www.kathimerini.gr/society/564340600/kastoria-diasolinomeno-4chrono-paidi-meta-apo-ptosi-se-pisina/",
-        "https://www.kathimerini.gr/world/564340531/i-e-e-tha-proteinei-periorismoys-stin-prosvasi-ton-paidion-sta-mesa-koinonikis-diktyosis/",
-        "https://www.kathimerini.gr/world/564340588/seismos-6-5-richter-stin-papoya-nea-goyinea-2/",
-        "https://www.kathimerini.gr/world/564340579/oyggaria-syntagmatiki-tropologia-gia-tin-apomakrynsi-toy-proedroy-tamas-soyliok/",
-        "https://www.kathimerini.gr/opinion/564337936/egcheirima-mias-chrisis/",
-        "https://www.kathimerini.gr/world/564340537/i-eyropi-kategrapse-10-000-ypervallontes-thanatoys-ston-kaysona-toy-ioynioy/",
-        "https://www.kathimerini.gr/society/564338110/giati-i-athina-pnigetai-sti-dysosmia/",
-        "https://www.kathimerini.gr/society/dikastiko/564340555/diki-gia-ta-tempi-aitima-stelechoys-tis-ergose-gia-akyrosi-toy-klitirioy-thespismatos/",
-        "https://www.kathimerini.gr/opinion/564337912/oi-prokliseis-gia-tin-eyropaiki-amyna-kai-i-thesi-tis-elladas/",
-        "https://www.kathimerini.gr/society/564340552/attiki-odos-nychterines-rythmiseis-ston-komvo-metamorfosis-pote-tha-kleisoyn-oi-exodoi-pros-lamia/"
+        "https://www.kathimerini.gr/society/564340693/rodos-nekros-72chronos-loyomenos/",
+        "https://www.kathimerini.gr/society/564340681/poly-ypsilos-kindynos-pyrkagias-gia-ayrio-oi-portokali-perioches/",
+        "https://www.kathimerini.gr/economy/564338374/i-klimatiki-krisi-allaxe-tin-katanalosi/",
+        "https://www.kathimerini.gr/world/564340678/voitheia-tis-e-e-pros-ti-gaza-ypsoys-883-6-ekat-eyro/",
+        "https://www.kathimerini.gr/world/564337978/pos-forologeis-enan-kroiso/",
+        "https://www.kathimerini.gr/society/564340660/eysima-dendia-ston-cheiristi-toy-f16-poy-ekane-anagkastiki-prosgeiosi-sti-zakyntho/",
+        "https://www.kathimerini.gr/world/564340591/pos-oi-kaysones-apeiloyn-tin-parmezana-ena-italiko-thrylo-800-eton/"
       ],
-      "seen_at_utc": "2026-07-13T10:04:05.677257+00:00"
+      "seen_at_utc": "2026-07-13T11:04:04.827662+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/kosmos/exi-nekroi-stin-oukrania-kai-12-travmaties-sto-kievo-apo-rosika-pligmata/",
@@ -310,31 +304,38 @@
       "seen_at_utc": "2026-07-11T17:58:48.904005+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1850108/seismos-tora-stin-kriti-37-rihter-sta-anoikta-tis-zakrou/?utm_source=rss",
-      "title": "Σεισμός τώρα στην Κρήτη, 3,7 Ρίχτερ στα ανατολικά της Ζάκρου το επίκεντρο",
-      "normalized_title": "ΣΕΙΣΜΟΣ ΤΩΡΑ ΣΤΗΝ ΚΡΗΤΗ, 3,7 ΡΙΧΤΕΡ ΣΤΑ ΑΝΑΤΟΛΙΚΑ ΤΗΣ ΖΑΚΡΟΥ ΤΟ ΕΠΙΚΕΝΤΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1850145/sto-aerodromio-gatgouik-sunelifthi-i-46hroni-pou-katigoreitai-gia-summetohi-ston-ebrismo-tis-marfin/?utm_source=rss",
+      "title": "Στο αεροδρόμιο Γκάτγουικ συνελήφθη η 46χρονη που κατηγορείται για συμμετοχή στον εμπρησμό της Marfin",
+      "normalized_title": "ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΓΚΑΤΓΟΥΙΚ ΣΥΝΕΛΗΦΘΗ Η 46ΧΡΟΝΗ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΣΥΜΜΕΤΟΧΗ ΣΤΟΝ ΕΜΠΡΗΣΜΟ ΤΗΣ MARFIN",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1850108/seismos-tora-stin-kriti-37-rihter-sta-anoikta-tis-zakrou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850097/lamia-dekades-astheneis-me-salmonela-sto-nosokomeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1850145/sto-aerodromio-gatgouik-sunelifthi-i-46hroni-pou-katigoreitai-gia-summetohi-ston-ebrismo-tis-marfin/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850144/sto-nosokomeio-13hronos-stin-patra-me-katagmata-kai-egaumata-apo-ilektriko-patini/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850136/bike-me-ti-motosikleta-sto-aditheto-reuma-kai-sugroustike-me-van-pos-egine-to-trohaio-me-ton-nekro-29hrono-stin-kriti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850114/sti-meth-tou-ippokrateiou-4hronos-pou-epese-se-pisina-ton-anesure-o-pappous-tou-horis-tis-aisthiseis-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-13T10:04:05.677347+00:00"
+      "seen_at_utc": "2026-07-13T11:04:04.827775+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1426408/paralirima-pleyri-hestes-kotes-alites-katharmata-anarhikoi-tha-toys-xeskisoyme/",
-      "title": "Παραλήρημα Πλεύρη: «Χέστες, κότες, αλήτες, καθάρματα αναρχικοί… θα τους ξεσκίσουμε»",
-      "normalized_title": "ΠΑΡΑΛΗΡΗΜΑ ΠΛΕΥΡΗ: «ΧΕΣΤΕΣ, ΚΟΤΕΣ, ΑΛΗΤΕΣ, ΚΑΘΑΡΜΑΤΑ ΑΝΑΡΧΙΚΟΙ… ΘΑ ΤΟΥΣ ΞΕΣΚΙΣΟΥΜΕ»",
+      "url": "https://www.efsyn.gr/kosmos/1426523/o-rafaele-fito-neos-eidikos-antiprosopos-tis-komision-gia-tin-kypro/",
+      "title": "Ο Ραφαέλε Φίτο νέος ειδικός αντιπρόσωπος της Κομισιόν για την Κύπρο",
+      "normalized_title": "Ο ΡΑΦΑΕΛΕ ΦΙΤΟ ΝΕΟΣ ΕΙΔΙΚΟΣ ΑΝΤΙΠΡΟΣΩΠΟΣ ΤΗΣ ΚΟΜΙΣΙΟΝ ΓΙΑ ΤΗΝ ΚΥΠΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1426408/paralirima-pleyri-hestes-kotes-alites-katharmata-anarhikoi-tha-toys-xeskisoyme/",
-        "https://www.efsyn.gr/ellada/1426259/ipeiros-olonyhtia-epiheirisi-gia-ton-entopismo-89hronis-vrethike-soa-kai-kala-stin-ygeia-tis/",
-        "https://www.efsyn.gr/stiles/1426426/kathestos-asydosias-kai-atimorisias/",
-        "https://www.efsyn.gr/oikonomia/1426298/stirixi-gia-na-epiviosei-i-etaireia-laikis-vasis-epistrefei-sta-dromologia-to-nisos-kalymnos/",
-        "https://www.efsyn.gr/ellada/1426418/attiki-odos-kleistes-oi-exodoi-pros-athinon-lamias-sti-metamorfosi-logo-ergasion/",
-        "https://www.efsyn.gr/kosmos/1426399/komision-horis-othones-eos-ta-2-eti-kai-periorismena-social-media-mehri-ta-13-oi-systaseis-ton-eidikon/",
-        "https://www.efsyn.gr/ellada/1426134/apokalypsi-ef-syn-gia-ti-marfin-ti-leei-to-anonymo-email-gia-toys-treis/",
-        "https://www.efsyn.gr/ellada/1426398/lamia-toylahiston-16-kroysmata-salmonelas-sto-nosokomeio-anisyhia-gia-molysmeni-partida-kotopoyloy/"
+        "https://www.efsyn.gr/kosmos/1426523/o-rafaele-fito-neos-eidikos-antiprosopos-tis-komision-gia-tin-kypro/",
+        "https://www.efsyn.gr/athlitismos/1426469/moyntial-2026-giati-i-argentini-zita-apo-ti-fifa-na-foresei-ti-mple-fanela-enantion-tis-agglias-o-idiaitero-logos/",
+        "https://www.efsyn.gr/kosmos/1426495/o-kaysonas-prokalese-pano-apo-10-000-epipleon-thanatoys-stin-eyropi/",
+        "https://www.efsyn.gr/politiki/1426518/elas-shedon-diplasio-to-forologiko-varos-stin-ergasia-apo-oso-sto-kefalaio/",
+        "https://www.efsyn.gr/ellada/1426507/irakleio-profylakistike-i-42hroni-gia-ton-agrio-vasanismo-55hronis/",
+        "https://www.efsyn.gr/athlitismos/1426406/kat-arhin-symfonia-me-klop-i-ethniki-germanias/",
+        "https://www.efsyn.gr/ellada/1426485/megaleio-psyhis-apo-tin-koinotita-ton-prosfygikon-prosferei-filoxenia-stoys-pligentes-ton-petralonon/",
+        "https://www.efsyn.gr/politiki/1426442/independent-amfilegomeno-shedio-toy-oie-gia-tin-epilysi-toy-kypriakoy-ti-provlepei/",
+        "https://www.efsyn.gr/ellada/1426493/kastoria-se-krisimi-katastasi-4hrono-meta-apo-ptosi-se-pisina-nosileyetai-se-krisimi-katastasi-sti-meth/",
+        "https://www.efsyn.gr/politiki/1426425/georgiadis-tha-synergazomastan-me-to-komma-samara-an-den-evaze-veto-na-min-einai-prothypoyrgos-o-mitsotakis/",
+        "https://www.efsyn.gr/politiki/1426464/o-spirtzis-arnithike-tin-edra-toy-syriza-i-epistoli-toy-ston-proedro-tis-voylis/",
+        "https://www.efsyn.gr/kosmos/1426275/italia-epiheirimatias-melos-akrodexioy-kommatos-xylokopise-metanasti-kai-anirtise-to-vinteo/",
+        "https://www.efsyn.gr/politiki/1426428/thermi-ypodohi-se-tsipra-apo-perifereiarhi-moytzoyri-foititi-moy-eihe-parei-9-sto-mathima-toy/"
       ],
-      "seen_at_utc": "2026-07-13T10:04:05.677311+00:00"
+      "seen_at_utc": "2026-07-13T11:04:04.827726+00:00"
     }
   },
-  "updated_at_utc": "2026-07-13T10:04:05.677427+00:00"
+  "updated_at_utc": "2026-07-13T11:04:04.827880+00:00"
 }
