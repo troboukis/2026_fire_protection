@@ -73,6 +73,8 @@ type FireStatusCount = {
   color?: string
 }
 
+const NOTICE_112_MAX_AGE_MS = 24 * 60 * 60 * 1000
+
 function cleanText(value: unknown): string | null {
   if (value == null) return null
   const text = String(value).trim()
@@ -330,9 +332,12 @@ async function fetchCurrentFires() {
 }
 
 async function fetchRecent112Notices() {
+  const recentCutoff = new Date(Date.now() - NOTICE_112_MAX_AGE_MS).toISOString()
+
   return supabase
     .from('112_notice')
     .select('notice_id, current_fire_incident_key, posted_at, notice_type, instructions_geocoded, municipality_keys, matched_municipality_key')
+    .gte('posted_at', recentCutoff)
     .order('posted_at', { ascending: false, nullsFirst: false })
     .limit(20)
 }
@@ -390,11 +395,10 @@ export default function FireNowTicker() {
       }
 
       const rows = (firesResult.data ?? []) as CurrentFireRow[]
-      const activeIncidentKeys = new Set(rows.map((row) => row.incident_key))
-      const recentCutoff = Date.now() - 24 * 60 * 60 * 1000
+      const recentCutoff = Date.now() - NOTICE_112_MAX_AGE_MS
       const noticeRows = (noticesResult.error ? [] : (noticesResult.data ?? []) as NoticeRow[]).filter((row) => {
         const postedTime = parseTime(cleanText(row.posted_at))
-        return postedTime >= recentCutoff || Boolean(row.current_fire_incident_key && activeIncidentKeys.has(row.current_fire_incident_key))
+        return postedTime >= recentCutoff
       })
       const fireItems = rows.map(buildTickerItem)
       const noticeItems = noticeRows.map(buildNoticeItem)
