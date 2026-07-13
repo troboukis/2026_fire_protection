@@ -29,19 +29,11 @@ function isMunicipalityOrgType(value: string): boolean {
   return value.trim().toLocaleUpperCase('el-GR') === 'ΔΗΜΟΣ'
 }
 
-function truncateWords(value: string, maxWords: number): string {
-  const text = value.trim()
-  if (!text) return '—'
-  const words = text.split(/\s+/).filter(Boolean)
-  if (words.length <= maxWords) return text
-  return `${words.slice(0, maxWords).join(' ')} ...`
-}
-
 export default function DiavgeiaDecisionCard({ item }: Props) {
   const [modalOpen, setModalOpen] = useState(false)
   const organization = [item.orgType, item.orgNameClean].filter((part) => part && part !== '—').join(' · ') || '—'
   const documentUrl = item.documentUrl ?? (item.ada && item.ada !== '—' ? `https://diavgeia.gov.gr/doc/${item.ada}` : null)
-  const visibleSubject = truncateWords(item.subject, 15)
+  const visibleSubject = item.subject.trim() || '—'
   const isMunicipality = isMunicipalityOrgType(item.orgType) && !!item.municipalityKey
 
   const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
@@ -64,7 +56,7 @@ export default function DiavgeiaDecisionCard({ item }: Props) {
           <span className="eyebrow wire-item__org">Διαύγεια</span>
           <span className="wire-item__date">{item.when}</span>
         </div>
-        <h2 title={item.subject}>{visibleSubject}</h2>
+        <h2 className="wire-item__title--four-lines" title={item.subject}>{visibleSubject}</h2>
         <div className="wire-item__rule" aria-hidden="true" />
         <p className="wire-item__subtitle">
           {isMunicipality ? (
