@@ -41,7 +41,7 @@ The homepage `NewsTicker` also uses `public.current_fires` to mark news articles
 
 The `public.news_fires` dataset stores recent fire-related news articles from Greek news listings:
 
-- Sources: Καθημερινή and News247
+- Sources: Καθημερινή, News247, in.gr, ΕφΣυν, and Πρώτο Θέμα
 - Scraper: `src/fetch_news_fires.py`
 - State file: `logs/news_fires_state.json`
 - Runner: `scripts/run_news_fires_and_push_state.sh`

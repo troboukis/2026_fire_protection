@@ -99,6 +99,31 @@ NEWS247_HEADERS = {
     "Sec-CH-UA-Platform": '"macOS"',
 }
 
+IN_GR_HEADERS = {
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8,"
+        "application/signed-exchange;v=b3;q=0.7"
+    ),
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9,el;q=0.8",
+    "Cache-Control": "max-age=0",
+    "Priority": "u=0, i",
+    "Sec-CH-UA": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": '"macOS"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/149.0.0.0 Safari/537.36"
+    ),
+}
+
 EFSYN_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -220,6 +245,14 @@ SOURCES = (
         first_url="https://www.news247.gr/roi-eidiseon/page/1/",
         headers=NEWS247_HEADERS,
         generated_page_url="https://www.news247.gr/roi-eidiseon/page/{page}/",
+        generated_page_offset=2,
+    ),
+    SourceConfig(
+        key="in_gr",
+        display_name="in.gr",
+        first_url="https://www.in.gr/latestnews/page/0/",
+        headers=IN_GR_HEADERS,
+        generated_page_url="https://www.in.gr/latestnews/page/{page}/",
         generated_page_offset=2,
     ),
     SourceConfig(
