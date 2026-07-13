@@ -218,7 +218,7 @@ Status:
 - Implemented.
 
 Source:
-- News listing pages from Καθημερινή and News247.
+- News listing pages from Καθημερινή, News247, in.gr, ΕφΣυν, and Πρώτο Θέμα.
 - Responsible script: `src/fetch_news_fires.py`.
 - Runner/workflow:
   - `scripts/run_news_fires_and_push_state.sh`
@@ -258,7 +258,7 @@ Stored fields:
 Uniqueness / rerun behavior:
 - Unique key: `article_url`.
 - Reruns must not create duplicates.
-- `source` is stored as Greek display text (`Καθημερινή`, `News247`).
+- `source` is stored as its configured display text (`Καθημερινή`, `News247`, `in.gr`, `ΕφΣυν`, `Πρώτο Θέμα`).
 - If geocoding or municipality matching fails, keep the article row without coordinates/municipality fields when the article itself is valid.
 
 Frontend API:
