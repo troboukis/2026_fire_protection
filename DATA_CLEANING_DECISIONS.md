@@ -99,6 +99,26 @@
 - `ingest/stage2_load_erd.py` (`seed_organization_rows`)
 - `scripts/backfill_procurement_geography.py`
 
+### 8. One raw amount column for every Diavgeia decision type
+
+- Πρόβλημα:
+- Το `public.diavgeia.spending_contractors_value` τροφοδοτούνταν μόνο από τις `ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ`, ενώ το raw CSV περιέχει ποσά και για αναλήψεις υποχρέωσης, αναθέσεις και οριστικοποιήσεις πληρωμής.
+- Απόφαση:
+- Η βάση διατηρεί μία μόνο στήλη ποσού, την υπάρχουσα `spending_contractors_value TEXT`.
+- Η επιχειρησιακή σημασία του ποσού προκύπτει από το `diavgeia_document_type_decision_uid`.
+- Το raw ποσό διατηρείται ως string χωρίς μετατροπή, άθροιση ή αλλαγή των διαχωριστικών. Οι λίστες πολλαπλών ποσών διατηρούνται ως raw string.
+- Ο loader αντιγράφει τη μοναδική μη κενή τιμή από τις εξής raw πηγές:
+- `spending_contractors_value`
+- `commitment_amount_with_vat`
+- `direct_value`
+- `payment_value`
+- Scope:
+- raw enrichment / ingest / DB backfill
+- Υλοποίηση:
+- `src/diavgeia_amounts.py`
+- `ingest/stage2_load_erd.py` (`diav_rows`)
+- `scripts/backfill_diavgeia_amounts.py`
+
 ## Open / Next
 
 - Προσθήκη manual override registry για ποσά (π.χ. `ADA -> corrected amount`) σε separate CSV/YAML.
