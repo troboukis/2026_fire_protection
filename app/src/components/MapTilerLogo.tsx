@@ -11,7 +11,12 @@ export default function MapTilerLogo({ className }: MapTilerLogoProps) {
       rel="noreferrer"
       aria-label="MapTiler"
     >
-      <img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo" />
+      <img
+        src="https://api.maptiler.com/resources/logo.svg"
+        width="67"
+        height="20"
+        alt="MapTiler logo"
+      />
     </a>
   )
 }
