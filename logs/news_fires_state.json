@@ -1,20 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564343540/aoratoi-to-vraveymeno-ntokimanter-tis-mariannas-kakaoynaki-ston-skai/",
-      "title": "«Αόρατοι»: Το βραβευμένο ντοκιμαντέρ της Μαριάννας Κακαουνάκη στον ΣΚΑΪ",
-      "normalized_title": "«ΑΟΡΑΤΟΙ»: ΤΟ ΒΡΑΒΕΥΜΕΝΟ ΝΤΟΚΙΜΑΝΤΕΡ ΤΗΣ ΜΑΡΙΑΝΝΑΣ ΚΑΚΑΟΥΝΑΚΗ ΣΤΟΝ ΣΚΑΙ",
+      "url": "https://www.kathimerini.gr/columns/564343606/i-deyteri-apofasi-toy-lempron-to-adexio-podcast-kai-o-mpalogkan/",
+      "title": "Η δεύτερη «Απόφαση» του Λεμπρόν, το «αδέξιο» podcast και ο Μπαλογκάν",
+      "normalized_title": "Η ΔΕΥΤΕΡΗ «ΑΠΟΦΑΣΗ» ΤΟΥ ΛΕΜΠΡΟΝ, ΤΟ «ΑΔΕΞΙΟ» PODCAST ΚΑΙ Ο ΜΠΑΛΟΓΚΑΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564343540/aoratoi-to-vraveymeno-ntokimanter-tis-mariannas-kakaoynaki-ston-skai/",
-        "https://www.kathimerini.gr/politics/amyna/564343423/to-2028-ta-prota-f-35-stin-ellada-pote-xekinoyn-ta-erga-stin-andravida/",
-        "https://www.kathimerini.gr/life/environment/564343498/oi-karcharies-akoyne-tzaz-xeroyn-mathimatika-kai-taxideyoyn-me-toys-kollitoys-toys/",
-        "https://www.kathimerini.gr/athletics/564343150/metagrafes-ti-leipei-akoma-apo-toys-tesseris-megaloys/",
-        "https://www.kathimerini.gr/culture/tv/564342895/sygkroysi-oloklirothikan-ta-gyrismata-tis-neas-seiras/",
-        "https://www.kathimerini.gr/world/564343495/poy-gia-empola-to-megethos-tis-epidimias-sto-kongko-isos-xeperna-kata-poly-tis-episimes-ektimiseis/",
-        "https://www.kathimerini.gr/society/564343492/profylakisteos-o-74chronos-gia-ti-fotia-sto-sismanogleio/",
-        "https://www.kathimerini.gr/world/564343462/o-plithysmos-tis-ee-plisiazei-stin-koryfi-prin-tin-katifora/"
+        "https://www.kathimerini.gr/columns/564343606/i-deyteri-apofasi-toy-lempron-to-adexio-podcast-kai-o-mpalogkan/",
+        "https://www.kathimerini.gr/world/564343672/argentini-ekklisi-veteranon-na-meinei-i-diamachi-gia-ta-foklant-exo-apo-ton-imiteliko-me-tin-agglia/",
+        "https://www.kathimerini.gr/politics/564343651/syriza-anexartitopoiithike-kai-o-giorgos-gavrilos-to-komma-ekleise-ton-istoriko-toy-kyklo/",
+        "https://www.kathimerini.gr/world/564343573/vryxelles-toylachiston-dyo-nekroi-apo-ti-fotia-se-polykatoikia-pos-xekinise/",
+        "https://www.kathimerini.gr/society/564343609/marfin-i-46chroni-edose-ti-sygkatathesi-tis-na-ekdothei-stin-ellada/",
+        "https://www.kathimerini.gr/k/k-magazine/564336919/ta-mystika-mias-kalis-zois/",
+        "https://www.kathimerini.gr/athletics/564343477/giamal-lete-oti-den-eimai-stin-kalyteri-forma-opote-min-perimenete-kati-idiaitero-apopse/",
+        "https://www.kathimerini.gr/society/astynomiko/564343564/kykloma-tilefonikon-apaton-to-tilefonima-poy-odigise-stis-syllipseis-dyo-eispraktoron/",
+        "https://www.kathimerini.gr/life/auto/564343390/i-pseydaisthisi-tis-diaforetikotitas/"
       ],
-      "seen_at_utc": "2026-07-14T14:04:04.207376+00:00"
+      "seen_at_utc": "2026-07-14T15:04:10.897593+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,51 +1267,60 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1850832/epithesi-se-sunergeio-tou-deddie-sta-zoniana-espasan-to-ohima-kai-arpaxan-exoplismo-mas-perikuklosan-me-katsounes/?utm_source=rss",
-      "title": "Επίθεση σε συνεργείο του ΔΕΔΔΗΕ στα Ζωνιανά: Έσπασαν το όχημα και άρπαξαν εξοπλισμό, «μας περικύκλωσαν με κατσούνες»",
-      "normalized_title": "ΕΠΙΘΕΣΗ ΣΕ ΣΥΝΕΡΓΕΙΟ ΤΟΥ ΔΕΔΔΗΕ ΣΤΑ ΖΩΝΙΑΝΑ: ΕΣΠΑΣΑΝ ΤΟ ΟΧΗΜΑ ΚΑΙ ΑΡΠΑΞΑΝ ΕΞΟΠΛΙΣΜΟ, «ΜΑΣ ΠΕΡΙΚΥΚΛΩΣΑΝ ΜΕ ΚΑΤΣΟΥΝΕΣ»",
+      "url": "https://www.protothema.gr/greece/article/1850877/ekdidetai-stin-ellada-i-46hroni-pou-katigoreitai-gia-ti-marfin-arnithike-na-askisei-endika-mesa-sti-vretania/?utm_source=rss",
+      "title": "Εκδίδεται στην Ελλάδα η 46χρονη που κατηγορείται για τη Μαρφίν, αρνήθηκε να ασκήσει ένδικα μέσα στη Βρετανία",
+      "normalized_title": "ΕΚΔΙΔΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ Η 46ΧΡΟΝΗ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΗ ΜΑΡΦΙΝ, ΑΡΝΗΘΗΚΕ ΝΑ ΑΣΚΗΣΕΙ ΕΝΔΙΚΑ ΜΕΣΑ ΣΤΗ ΒΡΕΤΑΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1850832/epithesi-se-sunergeio-tou-deddie-sta-zoniana-espasan-to-ohima-kai-arpaxan-exoplismo-mas-perikuklosan-me-katsounes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850817/paramenei-to-asulo-ston-tzaved-aslam-egine-dekti-i-prosfugi-tou-kata-tis-apofasis-anaklisis-apo-to-up-metanasteusis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850813/profulakistike-o-74hronos-pou-evale-fotia-sto-sismanogleio-nosokomeio-me-to-tsigaro-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850812/exarthrothikan-treis-eglimatikes-organoseis-pou-exapatousan-ilikiomenous-os/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1850801/duo-sullipseis-sti-florina-gia-klopi-ano-ton-23000-euro-apo-epiheirisi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1850877/ekdidetai-stin-ellada-i-46hroni-pou-katigoreitai-gia-ti-marfin-arnithike-na-askisei-endika-mesa-sti-vretania/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850860/diethnes-vraveio-kainotomias-se-ellina-politiko-mihaniko-apo-tin-prigipissa-anna/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850859/sullipseis-kai-prostima-apo-tin-purosvestiki-se-attiki-euvoia-lesvo-voiotia-kerkura-kai-thessaloniki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850847/tragodia-sto-agrinio-nekros-72hronos-pou-epese-apo-tin-skepi-tou-spitiou-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850837/auti-tin-kuriaki-me-to-thema-to-suglonistiko-psuhologiko-muthistorima-thriler-tis-sonias-saoulidou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1850836/telos-stin-omospondia-pugmahias-anaklithike-i-eidiki-athlitiki-anagnorisi-meta-to-porisma-fotia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-14T14:04:04.207528+00:00"
+      "seen_at_utc": "2026-07-14T15:04:10.897767+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1427628/nekro-zeygari-ston-peiraia-to-endehomeno-tis-asfyxias-apo-monoxeidio-toy-anthraka-exetazoyn-oi-arhes/",
-      "title": "Νεκρό ζευγάρι στον Πειραιά: Εξετάζεται η ασφυξία από μονοξείδιο του άνθρακα – Σε λειτουργία το όχημα στο γκαράζ",
-      "normalized_title": "ΝΕΚΡΟ ΖΕΥΓΑΡΙ ΣΤΟΝ ΠΕΙΡΑΙΑ: ΕΞΕΤΑΖΕΤΑΙ Η ΑΣΦΥΞΙΑ ΑΠΟ ΜΟΝΟΞΕΙΔΙΟ ΤΟΥ ΑΝΘΡΑΚΑ – ΣΕ ΛΕΙΤΟΥΡΓΙΑ ΤΟ ΟΧΗΜΑ ΣΤΟ ΓΚΑΡΑΖ",
+      "url": "https://www.efsyn.gr/ellada/1427666/apologia-katigoroymenon-gia-ti-marfin-arnoyntai-kathe-emploki-stin-ypothesi-poia-i-tyhi-tis-46hronis-sti-vretania/",
+      "title": "Marfin: Αρνούνται κάθε εμπλοκή οι δύο κατηγορούμενοι – Έδωσε συγκατάθεση και εκδίδεται στην Ελλάδα η 46χρονη",
+      "normalized_title": "MARFIN: ΑΡΝΟΥΝΤΑΙ ΚΑΘΕ ΕΜΠΛΟΚΗ ΟΙ ΔΥΟ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ – ΕΔΩΣΕ ΣΥΓΚΑΤΑΘΕΣΗ ΚΑΙ ΕΚΔΙΔΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ Η 46ΧΡΟΝΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1427628/nekro-zeygari-ston-peiraia-to-endehomeno-tis-asfyxias-apo-monoxeidio-toy-anthraka-exetazoyn-oi-arhes/",
-        "https://www.efsyn.gr/oikonomia/1427621/neo-alma-stin-timi-toy-petrelaioy-logo-tis-ekriktikis-katastasis-sti-mesi-anatoli/",
-        "https://www.efsyn.gr/kosmos/1427568/sta-ypsi-i-entasi-sti-mesi-anatoli-amerikanika-pligmata-sto-iran-ekrixi-se-dexamenoploio-sta-anoikta-toy-oman/",
-        "https://www.efsyn.gr/athlitismos/1427613/super-league-isopalia-gia-marinaki-kai-alafoyzo-neo-d-s-tin-tetarti-gia-tin-anadeixi-toy-proedroy/",
-        "https://www.efsyn.gr/ellada/1427597/knosos-fotia-konta-ston-arhaiologiko-horo-tethike-grigora-ypo-elegho/",
-        "https://www.efsyn.gr/ellada/1427604/keerfa-niki-gia-ton-tzavent-aslam-dekti-i-prosfygi-toy-kata-tis-anaklisis-asyloy-apo-ton-thano-pleyri/",
-        "https://www.efsyn.gr/kosmos/1427596/oykrania-sta-ypsi-o-arithmos-ton-nekron-amahon-ton-fetino-ioynio-rekor-epitheseon-me-drones/",
-        "https://www.efsyn.gr/kosmos/1427595/fotia-se-ergotaxio-stis-vryxelles-anafores-se-arketoys-nekroys-vinteo/"
+        "https://www.efsyn.gr/ellada/1427666/apologia-katigoroymenon-gia-ti-marfin-arnoyntai-kathe-emploki-stin-ypothesi-poia-i-tyhi-tis-46hronis-sti-vretania/",
+        "https://www.efsyn.gr/politiki/1427669/anexartitopoiithike-kai-o-giorgos-gavrilos-apo-tin-ko-toy-syriza/",
+        "https://www.efsyn.gr/athlitismos/1427661/super-league-meta-tin-isopalia-o-marinakis-katiggeile-politikes-pieseis-kai-stimeni-protasi-tis-epo/",
+        "https://www.efsyn.gr/tehnes/1427317/to-festival-poy-egine-etisia-prosdokia/",
+        "https://www.efsyn.gr/tehnes/1427346/gia-ta-90-hronia-toy-minimalisti-filip-gklas/",
+        "https://www.efsyn.gr/stiles/1427435/paideia-toy-ftohokomeioy/",
+        "https://www.efsyn.gr/kosmos/1427644/vretania-70hronos-podopatithike-mehri-thanatoy-apo-kopadi-vooeidon/",
+        "https://www.efsyn.gr/stiles/1427154/me-ti-margarita-sto-heri/",
+        "https://www.efsyn.gr/stiles/1427162/vrethikan-oi-drastes-tis-marfin-makari-alla/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-v-papavasileioy-14-07-2026/",
+        "https://www.efsyn.gr/ellada/1427645/fotia-sto-sismanogleio-profylakisteos-o-76hronos-leei-xana-oti-afise-tsigaro-sto-stroma/",
+        "https://www.efsyn.gr/politiki/1427647/androylakis-na-min-ependysoyn-oi-polites-se-prosopa-kai-systimata-exoysias-poy-toys-prodosan-epaneilimmena/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-14-07-2026/"
       ],
-      "seen_at_utc": "2026-07-14T14:04:04.207476+00:00"
+      "seen_at_utc": "2026-07-14T15:04:10.897721+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/14/stories/14i-iouliou-oi-agones-tis-mariannas/",
-      "title": "14η Ιουλίου: Γαλλικής Δημοκρατίας εγκώμιον",
-      "normalized_title": "14Η ΙΟΥΛΙΟΥ: ΓΑΛΛΙΚΗΣ ΔΗΜΟΚΡΑΤΙΑΣ ΕΓΚΩΜΙΟΝ",
+      "url": "https://www.in.gr/2026/07/14/greece/emprismos-marfin-edose-ti-sygkatathesi-tis-gia-na-ekdothei-stin-ellada-i-46xroni-ypostirizei-oti-einai-athoa/",
+      "title": "Εμπρησμός Marfin: Έδωσε τη συγκατάθεσή της για να εκδοθεί στην Ελλάδα η 46χρονη – Υποστηρίζει ότι είναι αθώα",
+      "normalized_title": "ΕΜΠΡΗΣΜΟΣ MARFIN: ΕΔΩΣΕ ΤΗ ΣΥΓΚΑΤΑΘΕΣΗ ΤΗΣ ΓΙΑ ΝΑ ΕΚΔΟΘΕΙ ΣΤΗΝ ΕΛΛΑΔΑ Η 46ΧΡΟΝΗ – ΥΠΟΣΤΗΡΙΖΕΙ ΟΤΙ ΕΙΝΑΙ ΑΘΩΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/14/stories/14i-iouliou-oi-agones-tis-mariannas/",
-        "https://www.in.gr/2026/07/14/greece/afisa-to-tsigaro-sto-sentoni-sti-fylaki-o-74xronos-gia-ti-fotia-sto-sismanogleio/",
-        "https://www.in.gr/2026/07/14/sports/othersports/tenis-sto-mpalkoni-to-balcony-challenge-tou-tsitsipa-me-ton-rount-vid/",
-        "https://www.in.gr/2026/07/14/life/diakopes/tourismos-poies-makrines-xores-psifizoun-ellada/",
-        "https://www.in.gr/2026/07/14/world/kineziko-ainigma-ti-den-mporei-na-apokalypsei-kanenas-ypersygxronos-doryforos/",
-        "https://www.in.gr/2026/07/14/life/mantona-spaei-kathe-rekor-se-tiktok-kai-charts-me-to-confessions-ii-isofarizei-tous-beatles/",
-        "https://www.in.gr/2026/07/14/sports/football/super-league-to-mploko-sti-stimeni-protasi-gkagkatsi-oi-atakes-fotia-kai-i-eisigisi-gia-tin-koksenoglou/",
-        "https://www.in.gr/2026/07/14/greece/apergiaki-kinitopoiisi-ston-aspropyrgo-na-min-thrinisoume-kai-allous-synadelfous-mas/",
-        "https://www.in.gr/2026/07/14/sports/football/arsenal-dinei-ton-trosar-sti-mpesiktas-kai-proxoraei-gia-tzoli-ti-anaferoun-ta-agglika-mme/"
+        "https://www.in.gr/2026/07/14/greece/emprismos-marfin-edose-ti-sygkatathesi-tis-gia-na-ekdothei-stin-ellada-i-46xroni-ypostirizei-oti-einai-athoa/",
+        "https://www.in.gr/2026/07/14/sports/mountial-2026/ta-agglika-mme-piezoun-ton-touxel-na-paiksei-to-xarti-saka/",
+        "https://www.in.gr/2026/07/14/greece/dekades-xiliades-kyvika-ammou-sxedio-diasosis-gia-to-nayagio-sti-zakyntho-prokalei-antidraseis/",
+        "https://www.in.gr/2026/07/14/politics/politiki-grammateia/tsoukalas-desmeyomaste-gia-tin-epanafora-tis-13is-syntaksis-neo-ekas-kai-tin-ayksisi-sta-pososta-anaplirosis/",
+        "https://www.in.gr/2026/07/14/greece/eksarthrothikan-alles-treis-symmories-pou-paristanan-ypallilous-tou-deddie-kai-eksapatousan-ilikiomenous/",
+        "https://www.in.gr/2026/07/14/sports/mountial-2026/makelele-fainomeno-o-vrazilianos-ronalnto-fainomeno-kai-o-empape/",
+        "https://www.in.gr/2026/07/14/politics/epikairotita/nea-apoxorisi-apo-ton-syriza-aneksartitopoiithike-o-giorgos-gavrilos/",
+        "https://www.in.gr/2026/07/14/greece/poia-einai-i-elliniki-poli-protathlitria-stin-atmosfairiki-rypansi/",
+        "https://www.in.gr/2026/07/14/in-science/perivallon-b-science/amerikanoi-epistimones-lene-oti-mporoun-na-stamatisoun-to-el-ninio-me-geomixaniki/",
+        "https://www.in.gr/2026/07/14/go-fun/fizz/prodosia-i-erotas-i-mia-agglida-pou-to-vrady-tis-tetartis-tha-stiriksei-tin-argentini-kai-ton-mesi/",
+        "https://www.in.gr/2026/07/14/sports/mountial-2026/agglia-sti-diathesi-tou-touxel-gia-ton-imiteliko-me-tin-argentini-rais-kai-oraili/",
+        "https://www.in.gr/2026/07/14/greece/epithesi-se-synergeio-tou-deddie-sta-zoniana-o-enas-kratouse-mia-katsouna-mas-piran-to-tablet/"
       ],
-      "seen_at_utc": "2026-07-14T14:04:04.207419+00:00"
+      "seen_at_utc": "2026-07-14T15:04:10.897666+00:00"
     }
   },
-  "updated_at_utc": "2026-07-14T14:04:04.207611+00:00"
+  "updated_at_utc": "2026-07-14T15:04:10.897854+00:00"
 }
