@@ -31,6 +31,7 @@ class Document:
     BASE_URL = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata"
     MAX_RETRIES = 8
     RETRY_SLEEP_SECONDS = 5
+    MAX_PAGES = 10
 
     def __init__(self, ref_number: str, db_path: str | None = None, debug: bool = True):
         self.ref_number = ref_number.strip().upper()
@@ -139,10 +140,11 @@ class Document:
             self.getDocument()
     
         pdf = PDF(io.BytesIO(self.doc))
+        page_limit = min(len(pdf.pages), self.MAX_PAGES)
         native_pages = {}
         ocr_needed = []
     
-        for i, page in enumerate(pdf.pages, start=1):
+        for i, page in enumerate(pdf.pages[:page_limit], start=1):
             try:
                 text = page.extract_text()
             except Exception:
@@ -159,7 +161,13 @@ class Document:
     
         if ocr_needed:
             poppler_path = os.getenv("POPPLER_PATH", "").strip() or None
-            images = convert_from_bytes(self.doc, dpi=300, poppler_path=poppler_path)
+            images = convert_from_bytes(
+                self.doc,
+                dpi=300,
+                poppler_path=poppler_path,
+                first_page=1,
+                last_page=page_limit,
+            )
     
             for page_num in ocr_needed:
                 img = images[page_num - 1]
@@ -169,8 +177,7 @@ class Document:
     
         all_pages = []
     
-        total_pages = len(pdf.pages)
-        for i in range(1, total_pages + 1):
+        for i in range(1, page_limit + 1):
             text = native_pages.get(i) or ocr_pages.get(i) or ""
             if text:
                 all_pages.append(f"\n--- PAGE {i} ---\n{text}")
@@ -185,28 +192,18 @@ class Document:
             self.readDocument()
 
         client = OpenAI(api_key=self.openai_api_key)
-        chunks = self._build_page_aware_chunks(self.file, max_chars=18000)
+        findings = self._locate_work_in_text(client, self.file, source_type="contract")
 
-        if self.debug:
-            print(f"[LOCATE WORK] total_chunks={len(chunks)}")
-
-        findings = []
-
-        for idx, chunk in enumerate(chunks, start=1):
-            if self.debug:
-                print(f"[LOCATE WORK] processing chunk={idx}, pages={chunk['pages']}, chars={len(chunk['text'])}")
-
-            chunk_results = self._extract_fireprotection_points(
-                client=client,
-                chunk_text=chunk["text"],
-                chunk_pages=chunk["pages"],
-            )
-
-            if self.debug:
-                print(f"[LOCATE WORK] chunk={idx}, findings={len(chunk_results)}")
-
-            if chunk_results:
-                findings.extend(chunk_results)
+        if not findings:
+            procurement_summary = self.readProcurementSummary()
+            if procurement_summary:
+                if self.debug:
+                    print("[LOCATE WORK] no contract findings; trying KIMDIS title and description")
+                findings = self._locate_work_in_text(
+                    client,
+                    procurement_summary,
+                    source_type="procurement_summary",
+                )
 
         self.data = self._deduplicate_findings_pre_geocode(findings)
 
@@ -214,6 +211,74 @@ class Document:
             print(f"[LOCATE WORK] unique_findings={len(self.data)}")
 
         return self.data
+
+    def readProcurementSummary(self) -> str:
+        db_url = self._resolve_database_url()
+        conn = psycopg2.connect(db_url)
+        cur = conn.cursor()
+        try:
+            cur.execute(
+                """
+                SELECT
+                  COALESCE(title, ''),
+                  COALESCE(short_descriptions, '')
+                FROM public.procurement
+                WHERE reference_number = %s
+                ORDER BY created_at DESC, id DESC
+                LIMIT 1
+                """,
+                (self.ref_number,),
+            )
+            row = cur.fetchone()
+        finally:
+            cur.close()
+            conn.close()
+
+        if not row:
+            return ""
+
+        title = self._normalize_str(row[0])
+        description = self._normalize_str(row[1])
+        parts = []
+        if title:
+            parts.append(f"ΤΙΤΛΟΣ:\n{title}")
+        if description:
+            parts.append(f"ΠΕΡΙΓΡΑΦΗ:\n{description}")
+        return "\n\n".join(parts)
+
+    def _locate_work_in_text(self, client, text: str, source_type: str) -> list[dict]:
+        if not text.strip():
+            return []
+
+        chunks = self._build_page_aware_chunks(text, max_chars=18000)
+
+        if self.debug:
+            print(f"[LOCATE WORK] source={source_type} total_chunks={len(chunks)}")
+
+        findings = []
+        for idx, chunk in enumerate(chunks, start=1):
+            if self.debug:
+                print(
+                    f"[LOCATE WORK] source={source_type} processing chunk={idx}, "
+                    f"pages={chunk['pages']}, chars={len(chunk['text'])}"
+                )
+
+            chunk_results = self._extract_fireprotection_points(
+                client=client,
+                chunk_text=chunk["text"],
+                chunk_pages=chunk["pages"],
+                source_type=source_type,
+            )
+
+            if self.debug:
+                print(
+                    f"[LOCATE WORK] source={source_type} chunk={idx}, "
+                    f"findings={len(chunk_results)}"
+                )
+
+            findings.extend(chunk_results)
+
+        return findings
 
     def ingestData(self) -> int:
         if self.data is None:
@@ -339,7 +404,34 @@ class Document:
         client,
         chunk_text: str,
         chunk_pages: list[int],
+        source_type: str = "contract",
     ) -> list[dict]:
+
+        is_procurement_summary = source_type == "procurement_summary"
+        page_schema = ["integer", "null"] if is_procurement_summary else "integer"
+        page_instructions = (
+            "Το κείμενο προέρχεται από τον τίτλο και τη σύντομη περιγραφή του ΚΗΜΔΗΣ. "
+            "Για το πεδίο page επέστρεψε πάντα null."
+            if is_procurement_summary
+            else (
+                "Ο αριθμός σελίδας από τα markers --- PAGE X --- όπου εντοπίζεται "
+                "το point_name_raw."
+            )
+        )
+        source_intro = (
+            "Διάβασε τον παρακάτω τίτλο και τη σύντομη περιγραφή μιας σύμβασης "
+            "από το ΚΗΜΔΗΣ."
+            if is_procurement_summary
+            else (
+                "Διάβασε το παρακάτω απόσπασμα από σύμβαση που αφορά εργασίες "
+                "σχετικές με προστασία από πυρκαγιές."
+            )
+        )
+        source_context = (
+            "Πηγή κειμένου: τίτλος και σύντομη περιγραφή ΚΗΜΔΗΣ."
+            if is_procurement_summary
+            else f"Οι σελίδες αυτού του chunk είναι: {chunk_pages}"
+        )
     
         schema = {
             "type": "object",
@@ -356,7 +448,7 @@ class Document:
                             "work": {"type": "string"},
                             "lat": {"type": ["number", "null"]},
                             "lon": {"type": ["number", "null"]},
-                            "page": {"type": "integer"},
+                            "page": {"type": page_schema},
                             "excerpt": {"type": "string"},
                         },
                         "required": [
@@ -375,7 +467,7 @@ class Document:
         }
     
         prompt = f"""
-    Διάβασε το παρακάτω απόσπασμα από σύμβαση που αφορά εργασίες σχετικές με προστασία από πυρκαγιές.
+    {source_intro}
     
     Στόχος:
     Εντόπισε ΜΟΝΟ αποσπάσματα όπου αναφέρονται συγκεκριμένες εργασίες, παρεμβάσεις ή δράσεις
@@ -436,7 +528,7 @@ class Document:
        Μην κάνεις geocoding και μην επινοείς συντεταγμένες.
     
     8. page:
-       Ο αριθμός σελίδας από τα markers --- PAGE X --- όπου εντοπίζεται το point_name_raw.
+       {page_instructions}
     
     9. excerpt:
        Σύντομο αυτούσιο απόσπασμα από το κείμενο που να τεκμηριώνει καθαρά
@@ -463,7 +555,7 @@ class Document:
     14. Μην επιστρέφεις διαφορετικές εγγραφές μόνο και μόνο επειδή αλλάζει ελαφρά η διατύπωση του ίδιου σημείου ή της ίδιας εργασίας.
     15. Αν το ίδιο σημείο και η ίδια εργασία επαναλαμβάνονται, επέστρεψε μία μόνο εγγραφή ανά chunk.
     
-    Οι σελίδες αυτού του chunk είναι: {chunk_pages}
+    {source_context}
     
     ΚΕΙΜΕΝΟ:
     {chunk_text}
@@ -495,8 +587,10 @@ class Document:
     
         for item in items:
             page = item.get("page")
-    
-            if page not in chunk_pages:
+
+            if is_procurement_summary:
+                page = None
+            elif page not in chunk_pages:
                 continue
     
             point_name_raw = self._normalize_str(item.get("point_name_raw"))
