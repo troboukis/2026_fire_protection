@@ -1,5 +1,6 @@
 import type { KeyboardEvent } from 'react'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
+import { buildNewsImageSources } from '../lib/newsImage'
 
 export type NewsArticleCardView = {
   id: string
@@ -20,6 +21,7 @@ export type NewsArticleActiveFire = {
 
 type Props = {
   item: NewsArticleCardView
+  priority?: boolean
 }
 
 function truncateWords(value: string, maxWords: number): string {
@@ -30,9 +32,10 @@ function truncateWords(value: string, maxWords: number): string {
   return `${words.slice(0, maxWords).join(' ')} ...`
 }
 
-export default function NewsArticleCard({ item }: Props) {
+export default function NewsArticleCard({ item, priority = false }: Props) {
   const visibleTitle = truncateWords(item.title, 18)
   const locationLabel = item.area ?? item.municipalityName ?? '—'
+  const imageSources = item.imageUrl ? buildNewsImageSources(item.imageUrl) : null
 
   const openArticle = () => {
     window.open(item.articleUrl, '_blank', 'noopener,noreferrer')
@@ -62,9 +65,19 @@ export default function NewsArticleCard({ item }: Props) {
       onFocus={item.activeFire ? () => handleFireHover(true) : undefined}
       onBlur={item.activeFire ? () => handleFireHover(false) : undefined}
     >
-      {item.imageUrl ? (
+      {imageSources ? (
         <div className="news-article-card__media">
-          <img src={item.imageUrl} alt="" loading="lazy" />
+          <img
+            src={imageSources.src}
+            srcSet={imageSources.srcSet}
+            sizes="320px"
+            width="320"
+            height="180"
+            alt=""
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : 'auto'}
+            decoding="async"
+          />
         </div>
       ) : null}
       <div className="wire-item__head">

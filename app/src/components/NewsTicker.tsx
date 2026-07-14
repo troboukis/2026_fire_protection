@@ -228,10 +228,11 @@ export default function NewsTicker() {
             message="Ανακτώνται τα τελευταία ρεπορτάζ πυρκαγιών."
           />
         )}
-        {!loading && items.map((item) => (
+        {!loading && items.map((item, index) => (
           <NewsArticleCard
             key={item.id}
             item={item}
+            priority={index === 0}
           />
         ))}
         {!loading && loadFailed && (

@@ -1,4 +1,4 @@
-import { Fragment, Suspense, lazy, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { Fragment, Suspense, lazy, useEffect, useMemo, useRef, useState, type CSSProperties, type Ref } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
@@ -406,7 +406,7 @@ function SectionFallback({ label }: { label: string }) {
   )
 }
 
-function SituationMapFallback() {
+function SituationMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivElement> }) {
   return (
     <section id="situationmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label="Φόρτωση Situation Map">
       <div className="dev-tag-stack dev-tag-stack--right">
@@ -421,7 +421,7 @@ function SituationMapFallback() {
           Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές, δασικές πυρκαγιές και καμένες εκτάσεις από Copernicus EFFIS, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών από NASA FIRMS.
         </p>
       </div>
-      <div className="fire-copernicus__map-wrap dev-tag-anchor">
+      <div className="fire-copernicus__map-wrap dev-tag-anchor" ref={activationRef}>
         <DataLoadingCard
           className="fire-copernicus__map fire-copernicus__map--loading"
           message="Ανακτώνται οι νεότερες εγγραφές και προετοιμάζεται ο χάρτης."
@@ -442,6 +442,39 @@ function SituationMapFallback() {
         </div>
       </div>
     </section>
+  )
+}
+
+function DeferredSituationMap() {
+  const [shouldLoad, setShouldLoad] = useState(false)
+  const activationRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (shouldLoad) return
+    const target = activationRef.current
+    if (!target || typeof IntersectionObserver === 'undefined') {
+      setShouldLoad(true)
+      return
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return
+      setShouldLoad(true)
+      observer.disconnect()
+    }, {
+      rootMargin: '0px 0px -40% 0px',
+    })
+
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [shouldLoad])
+
+  if (!shouldLoad) return <SituationMapFallback activationRef={activationRef} />
+
+  return (
+    <Suspense fallback={<SituationMapFallback />}>
+      <SituationMap />
+    </Suspense>
   )
 }
 
@@ -599,38 +632,6 @@ export default function App() {
       .slice(0, 15)
   }, [latestContracts, latestDiavgeiaDecisions])
 
-  useEffect(() => {
-    const prefetch = () => {
-      void Promise.all([
-        import('./components/SituationMap'),
-        import('./components/FeaturedRecordsSection'),
-        import('./components/Funding'),
-        import('./components/OrganizationSection'),
-        import('./components/RegionSection'),
-        import('./components/ContractModal'),
-        import('./pages/AnalysisPage'),
-        import('./pages/ContractsPage'),
-        import('./pages/MunicipalitiesPage'),
-        import('./pages/MapsPage'),
-      ])
-    }
-
-    const idle = (window as Window & {
-      requestIdleCallback?: (callback: () => void) => number
-      cancelIdleCallback?: (id: number) => void
-    }).requestIdleCallback
-
-    if (idle) {
-      const id = idle(prefetch)
-      return () => {
-        const cancelIdle = (window as Window & { cancelIdleCallback?: (id: number) => void }).cancelIdleCallback
-        cancelIdle?.(id)
-      }
-    }
-
-    const timeoutId = window.setTimeout(prefetch, 800)
-    return () => window.clearTimeout(timeoutId)
-  }, [])
   const totalVsPrev1Pct = resolvePct(heroStats.totalVsPrev1Pct, heroStats.totalMain, heroStats.totalPrev1)
   const totalVsPrev2Pct = resolvePct(null, heroStats.totalMain, heroStats.totalPrev2)
   const topTypeVsPrev1Pct = resolvePct(
@@ -1945,9 +1946,7 @@ export default function App() {
 
         <NewsTicker />
 
-        <Suspense fallback={<SituationMapFallback />}>
-          <SituationMap />
-        </Suspense>
+        <DeferredSituationMap />
 
         <section className="hero section-rule dev-tag-anchor">
           <div className="dev-tag-stack dev-tag-stack--right">
@@ -2258,7 +2257,15 @@ export default function App() {
           <div className="about-panel__right dev-tag-anchor">
             <DebugClassLabel name="about-panel__right" style={{ left: 'auto', right: '0.45rem' }} />
             <figure className="about-cover-figure">
-              <img className="about-cover" src={`${import.meta.env.BASE_URL}cover_square_optimized.webp`} alt="FireWatch cover" />
+              <img
+                className="about-cover"
+                src={`${import.meta.env.BASE_URL}cover_square_optimized.webp`}
+                width="1400"
+                height="1328"
+                alt="FireWatch cover"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption className="about-cover-caption">Εικόνα από Nano Banana 2</figcaption>
             </figure>
             <div className="about-stats">
