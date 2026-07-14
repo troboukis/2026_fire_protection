@@ -398,12 +398,37 @@ function DebugClassLabel({ name, style }: { name: string, style?: CSSProperties 
   return <ComponentTag name={name} kind="CLASS" className="component-tag--overlay" style={style} />
 }
 
-function SectionFallback({ label }: { label: string }) {
+function SectionFallback({ label, activationRef }: { label: string, activationRef?: Ref<HTMLElement> }) {
   return (
-    <section className="section-rule page-loading page-loading--section" aria-label={label}>
+    <section ref={activationRef} className="section-rule page-loading page-loading--section" aria-label={label}>
       <DataLoadingCard message={label} />
     </section>
   )
+}
+
+function useNearViewport(rootMargin = '400px 0px') {
+  const [shouldLoad, setShouldLoad] = useState(false)
+  const activationRef = useRef<HTMLElement | null>(null)
+
+  useEffect(() => {
+    if (shouldLoad) return
+    const target = activationRef.current
+    if (!target || typeof IntersectionObserver === 'undefined') {
+      setShouldLoad(true)
+      return
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return
+      setShouldLoad(true)
+      observer.disconnect()
+    }, { rootMargin })
+
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [rootMargin, shouldLoad])
+
+  return { activationRef, shouldLoad }
 }
 
 function SituationMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivElement> }) {
@@ -588,6 +613,10 @@ export default function App() {
     () => createEmptyOrganizationSectionData(INITIAL_HOME_REGION_SECTION.fallbackName, currentYear),
   )
   const [regionSectionLoading, setRegionSectionLoading] = useState(true)
+  const fundingGate = useNearViewport()
+  const featuredRecordsGate = useNearViewport()
+  const organizationSectionsGate = useNearViewport()
+  const regionSectionGate = useNearViewport()
   const [heroCurvePoints, setHeroCurvePoints] = useState<HeroCurvePoint[]>([])
   const [heroStats, setHeroStats] = useState<HeroStats>({
     periodMainStart: '',
@@ -849,6 +878,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
+    if (!organizationSectionsGate.shouldLoad) return
     let cancelled = false
     const controller = new AbortController()
     setOrganizationSectionsLoading(true)
@@ -1224,9 +1254,10 @@ export default function App() {
       cancelled = true
       controller.abort()
     }
-  }, [currentYear])
+  }, [currentYear, organizationSectionsGate.shouldLoad])
 
   useEffect(() => {
+    if (!regionSectionGate.shouldLoad) return
     let cancelled = false
     const controller = new AbortController()
     setRegionSectionLoading(true)
@@ -1696,9 +1727,10 @@ export default function App() {
       cancelled = true
       controller.abort()
     }
-  }, [currentYear])
+  }, [currentYear, regionSectionGate.shouldLoad])
 
   useEffect(() => {
+    if (!featuredRecordsGate.shouldLoad) return
     let cancelled = false
     const controller = new AbortController()
     setFeaturedBeneficiariesLoading(true)
@@ -1822,7 +1854,7 @@ export default function App() {
       cancelled = true
       controller.abort()
     }
-  }, [currentYear])
+  }, [currentYear, featuredRecordsGate.shouldLoad])
 
   useEffect(() => {
     let cancelled = false
@@ -2184,52 +2216,68 @@ export default function App() {
           </div>
         </section>
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση χρηματοδότησης" />}>
-          <Funding currentYear={currentYear} />
-        </Suspense>
+        {fundingGate.shouldLoad ? (
+          <Suspense fallback={<SectionFallback label="Φόρτωση χρηματοδότησης" />}>
+            <Funding currentYear={currentYear} />
+          </Suspense>
+        ) : (
+          <SectionFallback label="Φόρτωση χρηματοδότησης" activationRef={fundingGate.activationRef} />
+        )}
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
-          <FeaturedRecordsSection
-            year={featuredRecordsYear}
-            rows={featuredBeneficiaries}
-            loading={featuredBeneficiariesLoading}
-            formatEur={formatEur}
-            onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
-          />
-        </Suspense>
+        {featuredRecordsGate.shouldLoad ? (
+          <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
+            <FeaturedRecordsSection
+              year={featuredRecordsYear}
+              rows={featuredBeneficiaries}
+              loading={featuredBeneficiariesLoading}
+              formatEur={formatEur}
+              onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
+            />
+          </Suspense>
+        ) : (
+          <SectionFallback label="Φόρτωση featured records" activationRef={featuredRecordsGate.activationRef} />
+        )}
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
-          {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
-            <Fragment key={config.fallbackName}>
-              <OrganizationSection
-                data={
-                  organizationSections[index] ??
-                  createEmptyOrganizationSectionData(
-                    config.fallbackName,
-                    currentYear,
-                    buildContractsPageHref({ organizationKeys: config.organizationKeys }),
-                  )
-                }
-                loading={organizationSectionsLoading}
-                anchorId={config.anchorId}
-                formatEurCompact={formatEurCompact}
-                formatDateEl={formatDateEl}
-                onOpenContract={(contract) => setSelectedContract(contract)}
-              />
-            </Fragment>
-          ))}
-        </Suspense>
+        {organizationSectionsGate.shouldLoad ? (
+          <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
+            {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
+              <Fragment key={config.fallbackName}>
+                <OrganizationSection
+                  data={
+                    organizationSections[index] ??
+                    createEmptyOrganizationSectionData(
+                      config.fallbackName,
+                      currentYear,
+                      buildContractsPageHref({ organizationKeys: config.organizationKeys }),
+                    )
+                  }
+                  loading={organizationSectionsLoading}
+                  anchorId={config.anchorId}
+                  formatEurCompact={formatEurCompact}
+                  formatDateEl={formatDateEl}
+                  onOpenContract={(contract) => setSelectedContract(contract)}
+                />
+              </Fragment>
+            ))}
+          </Suspense>
+        ) : (
+          <SectionFallback label="Φόρτωση οργανισμών" activationRef={organizationSectionsGate.activationRef} />
+        )}
 
-        <Suspense fallback={<SectionFallback label="Φόρτωση περιφέρειας" />}>
-          <RegionSection
-            data={regionSection}
-            loading={regionSectionLoading}
-            anchorId={homeRegionConfig.anchorId}
-            formatEurCompact={formatEurCompact}
-            formatDateEl={formatDateEl}
-            onOpenContract={(contract) => setSelectedContract(contract)}
-          />
-        </Suspense>
+        {regionSectionGate.shouldLoad ? (
+          <Suspense fallback={<SectionFallback label="Φόρτωση περιφέρειας" />}>
+            <RegionSection
+              data={regionSection}
+              loading={regionSectionLoading}
+              anchorId={homeRegionConfig.anchorId}
+              formatEurCompact={formatEurCompact}
+              formatDateEl={formatDateEl}
+              onOpenContract={(contract) => setSelectedContract(contract)}
+            />
+          </Suspense>
+        ) : (
+          <SectionFallback label="Φόρτωση περιφέρειας" activationRef={regionSectionGate.activationRef} />
+        )}
 
         <section id="about" className="about-panel section-rule dev-tag-anchor">
           <div className="dev-tag-stack dev-tag-stack--right">
