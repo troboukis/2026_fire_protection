@@ -1,18 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564348304/kairos-erchetai-to-pio-dyskolo-diimero-toy-kalokairioy-me-40aria-oi-perioches-poy-tha-epireastoyn/",
-      "title": "Καιρός: Ερχεται το πιο δύσκολο διήμερο του καλοκαιριού με 40αρια – Οι περιοχές που θα επηρεαστούν",
-      "normalized_title": "ΚΑΙΡΟΣ: ΕΡΧΕΤΑΙ ΤΟ ΠΙΟ ΔΥΣΚΟΛΟ ΔΙΗΜΕΡΟ ΤΟΥ ΚΑΛΟΚΑΙΡΙΟΥ ΜΕ 40ΑΡΙΑ – ΟΙ ΠΕΡΙΟΧΕΣ ΠΟΥ ΘΑ ΕΠΗΡΕΑΣΤΟΥΝ",
+      "url": "https://www.kathimerini.gr/society/564348490/sygkroysi-tram-me-trikyklo-sto-palaio-faliro-ayximeni-kinisi-sti-l-poseidonos/",
+      "title": "Σύγκρουση τραμ με τρίκυκλο στο Παλαιό Φάληρο – Αυξημένη κίνηση στη Λ. Ποσειδώνος",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΤΡΑΜ ΜΕ ΤΡΙΚΥΚΛΟ ΣΤΟ ΠΑΛΑΙΟ ΦΑΛΗΡΟ – ΑΥΞΗΜΕΝΗ ΚΙΝΗΣΗ ΣΤΗ Λ. ΠΟΣΕΙΔΩΝΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564348304/kairos-erchetai-to-pio-dyskolo-diimero-toy-kalokairioy-me-40aria-oi-perioches-poy-tha-epireastoyn/",
-        "https://www.kathimerini.gr/world/564348292/mystikes-ypiresies-ipa-pano-apo-100-dis-dolaria-o-logariasmos-toy-polemoy-me-to-iran/",
-        "https://www.kathimerini.gr/k/gastronomos/564346453/oi-syntages-ton-giagiadon-mas-einai-ygieines-ek-fyseos-13-kalokairina-fagakia-2/",
-        "https://www.kathimerini.gr/world/564348289/italia-nomos-dinei-sta-paidia-ton-mafiozon-tin-eykairia-gia-mia-nea-zoi/",
-        "https://www.kathimerini.gr/society/564348283/efet-anakaleitai-plastiki-koytala-soypas/",
-        "https://www.kathimerini.gr/culture/564348274/poy-vgainoyme-simera-pempti-protaseis-gia-theatro-synaylies-ektheseis-ekdiloseis-135/"
+        "https://www.kathimerini.gr/society/564348490/sygkroysi-tram-me-trikyklo-sto-palaio-faliro-ayximeni-kinisi-sti-l-poseidonos/",
+        "https://www.kathimerini.gr/columns/564348367/to-gamay-megalose-kai-metakomise-sto-monastiraki/",
+        "https://www.kathimerini.gr/politics/564348466/k-papakosta-katarreysi-toy-afigimatos-peri-kakoyrgimatikon-eythynon/",
+        "https://www.kathimerini.gr/world/564348331/florinta-aeroskafos-ton-blue-angels-tromokratise-loyomenoys-vinteo/",
+        "https://www.kathimerini.gr/athletics/564348451/stin-arsenal-o-christos-tzolis-sta-40-ekatommyria-eyro-i-metagrafi/",
+        "https://www.kathimerini.gr/visual/infographics/564346825/arista-sto-gov-gr-kato-apo-ti-vasi-stoys-dimoys/",
+        "https://www.kathimerini.gr/world/564348328/italia-oi-poines-gia-tin-katarreysi-tis-gefyras-moranti-poy-eiche-prokalesei-ton-thanato-43-anthropon/",
+        "https://www.kathimerini.gr/visual/podcasts/564348373/paylos-geroylanos-kleiste-to-ypertameio/",
+        "https://www.kathimerini.gr/world/564348295/akefales-oi-perissoteres-apo-tis-mises-presveies-ton-ipa/"
       ],
-      "seen_at_utc": "2026-07-16T14:29:04.116910+00:00"
+      "seen_at_utc": "2026-07-16T15:28:17.448133+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,57 +1267,48 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852061/sovaro-trohaio-ston-voak-autokinito-anetrapi-stis-kaluves-sooi-oi-treis-epivates/?utm_source=rss",
-      "title": "Σοβαρό τροχαίο στον ΒΟΑΚ, αυτοκίνητο ανέτραπη στις Καλύβες, σώοι οι τρεις επιβάτες",
-      "normalized_title": "ΣΟΒΑΡΟ ΤΡΟΧΑΙΟ ΣΤΟΝ ΒΟΑΚ, ΑΥΤΟΚΙΝΗΤΟ ΑΝΕΤΡΑΠΗ ΣΤΙΣ ΚΑΛΥΒΕΣ, ΣΩΟΙ ΟΙ ΤΡΕΙΣ ΕΠΙΒΑΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1852106/fotia-tora-sto-kilkis-kinitopoiithikan-epigeies-dunameis/?utm_source=rss",
+      "title": "Φωτιά τώρα στο Κιλκίς, κινητοποιήθηκαν επίγειες δυνάμεις",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΚΙΛΚΙΣ, ΚΙΝΗΤΟΠΟΙΗΘΗΚΑΝ ΕΠΙΓΕΙΕΣ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852061/sovaro-trohaio-ston-voak-autokinito-anetrapi-stis-kaluves-sooi-oi-treis-epivates/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852057/fotia-se-dasiki-ektasi-sto-vlahopoulo-messinias-ihise-to-112/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852056/se-leitourgia-apo-aurio-i-hiliometriki-hreosi-ston-komvo-vardas-stin-patron-purgou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852053/polu-upsilos-kindunos-purkagias-aurio-se-attiki-kriti-kai-periohes-tis-stereas-elladas-peloponnisou-kai-voreiou-aigaiou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852106/fotia-tora-sto-kilkis-kinitopoiithikan-epigeies-dunameis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852092/i-stigmi-tis-dolofonikis-epithesis-me-molotof-sti-marfin-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-16T14:29:04.117082+00:00"
+      "seen_at_utc": "2026-07-16T15:28:17.448314+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-16-07-2026/",
-      "title": "Σκίτσο της Εφ.Συν. [Κ.Γρηγοριάδης 16.07.2026]",
-      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Κ.ΓΡΗΓΟΡΙΑΔΗΣ 16.07.2026]",
+      "url": "https://www.efsyn.gr/politiki/1429501/papakosta-gia-opekepe-avasimi-i-dioxi-eis-varos-moy-tha-eimai-ek-neoy-ypopsifia/",
+      "title": "Παπακώστα για ΟΠΕΚΕΠΕ: Αβάσιμη η δίωξη εις βάρος μου – Θα είμαι εκ νέου υποψήφια",
+      "normalized_title": "ΠΑΠΑΚΩΣΤΑ ΓΙΑ ΟΠΕΚΕΠΕ: ΑΒΑΣΙΜΗ Η ΔΙΩΞΗ ΕΙΣ ΒΑΡΟΣ ΜΟΥ – ΘΑ ΕΙΜΑΙ ΕΚ ΝΕΟΥ ΥΠΟΨΗΦΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-16-07-2026/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-john-antono-16-07-2026/",
-        "https://www.efsyn.gr/kosmos/1429436/hegkseth-se-exetaseis-testosteronis-tha-ypovallontai-stis-ipa-oi-stratiotikoi-apo-30-eton-kai-pano/",
-        "https://www.efsyn.gr/ellada/1429439/fotia-sto-vlahopoylo-messinias-ihise-to-112/",
-        "https://www.efsyn.gr/politiki/1429435/o-neos-hartis-ton-ko-sti-voyli-axiomatiki-antipoliteysi-oi-anexartitoi-voyleytes/",
-        "https://www.efsyn.gr/oikonomia/1429428/ypen-nea-paratasi-se-programmata-exoikonomo-kai-anakainizo-gia-sygkekrimenoys-dikaioyhoys/",
-        "https://www.efsyn.gr/kosmos/1429407/orgi-iran-kata-ipa-varvari-epithesi-konta-se-paidiatriko-ogkologiko-nosokomeio-metaferthikan-211-karkinopatheis/",
-        "https://www.efsyn.gr/oikonomia/1429157/mikromesaies-epiheiriseis-ena-akoma-enoikio-stoihizei-to-psifiako-haratsi/",
-        "https://www.efsyn.gr/kosmos/1429422/italia-varies-katadikes-stoys-ypeythynoys-tis-tragodias-sti-gefyra-moranti-me-43-nekroys/",
-        "https://www.efsyn.gr/oikonomia/1429142/kindyneyoyn-ergazomenoi-mesa-se-magazi-giapi-epi-tis-l-mesogeion/",
-        "https://www.efsyn.gr/life/1429391/kalo-paradeiso-kyria-kokovikoy-to-sygkinitiko-minyma-thaymasti-tis-maros-kontoy-stin-ayloporta-toy-spitioy-tis-plakas/",
-        "https://www.efsyn.gr/kosmos/1429383/oykrania-protognores-diadiloseis-en-meso-polemoy-meta-tin-apomakrynsi-toy-ypoyrgoy-amynas-fentorof/"
+        "https://www.efsyn.gr/politiki/1429501/papakosta-gia-opekepe-avasimi-i-dioxi-eis-varos-moy-tha-eimai-ek-neoy-ypopsifia/",
+        "https://www.efsyn.gr/kosmos/1429503/ispania-se-diki-gia-diafthora-parapempetai-i-syzygos-toy-prothypoyrgoy-santseth/",
+        "https://www.efsyn.gr/ellada/1429507/parasyrsi-pezoy-apo-to-tram-sto-faliro/",
+        "https://www.efsyn.gr/ellada/1429481/ergazomenoi-toy-eopae-gia-ton-xenona-my-athens-den-egkataleipsame-kanenan/",
+        "https://www.efsyn.gr/oikonomia/1429477/vrefonipiakoi-stathmoi-horis-eisodimatiko-kritirio-ta-paidia-ton-polyteknon-ti-provlepei-i-shetiki-kya/",
+        "https://www.efsyn.gr/athlitismos/1429437/moyntial-2026-i-apisteyti-shesi-ton-mesi-kai-giamal-apo-tin-mpaniera-ston-megalo-teliko/",
+        "https://www.efsyn.gr/athlitismos/1429454/kanonieris-o-hristos-tzolis-arsenal-kai-mpriz-dinoyn-ta-heria-gia-40-ekat-eyro/"
       ],
-      "seen_at_utc": "2026-07-16T14:29:04.117029+00:00"
+      "seen_at_utc": "2026-07-16T15:28:17.448281+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/16/sports/basketball/o-valantsiounas-gia-tous-logous-pou-epelekse-na-agonistei-sti-zalgkiris-kaounas/",
-      "title": "Ο Βαλαντσιούνας για τους λόγους που επέλεξε να αγωνιστεί στη Ζάλγκιρις Κάουνας",
-      "normalized_title": "Ο ΒΑΛΑΝΤΣΙΟΥΝΑΣ ΓΙΑ ΤΟΥΣ ΛΟΓΟΥΣ ΠΟΥ ΕΠΕΛΕΞΕ ΝΑ ΑΓΩΝΙΣΤΕΙ ΣΤΗ ΖΑΛΓΚΙΡΙΣ ΚΑΟΥΝΑΣ",
+      "url": "https://www.in.gr/2026/07/16/world/mpangklantes-synelifthi-stratiotikos-katazitoumenos-epi-45-xronia-gia-ti-dolofonia-tou-proin-proedrou-ziaour-raxman/",
+      "title": "Μπανγκλαντές: Συνελήφθη στρατιωτικός, καταζητούμενος επί 45 χρόνια για τη δολοφονία του πρώην προέδρου Ζιαούρ Ραχμάν",
+      "normalized_title": "ΜΠΑΝΓΚΛΑΝΤΕΣ: ΣΥΝΕΛΗΦΘΗ ΣΤΡΑΤΙΩΤΙΚΟΣ, ΚΑΤΑΖΗΤΟΥΜΕΝΟΣ ΕΠΙ 45 ΧΡΟΝΙΑ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΠΡΩΗΝ ΠΡΟΕΔΡΟΥ ΖΙΑΟΥΡ ΡΑΧΜΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/16/sports/basketball/o-valantsiounas-gia-tous-logous-pou-epelekse-na-agonistei-sti-zalgkiris-kaounas/",
-        "https://www.in.gr/2026/07/16/plus/medianews/vimagazino-ayti-tin-kyriaki-mazi-me-to-vima/",
-        "https://www.in.gr/2026/07/16/world/pagkosmia-synantisi-stis-ipa-me-thema-tin-akroaristeri-tromokratia/",
-        "https://www.in.gr/2026/07/16/stories/arsakeio-titlos-timis-kai-spoudaion-efodion/",
-        "https://www.in.gr/2026/07/16/sports/basketball/tin-kyriaki-19-7-sti-thessaloniki-o-osman/",
-        "https://www.in.gr/2026/07/16/greece/poly-ypsilos-kindynos-pyrkagias-tin-paraskeyi-se-attiki-kriti-kai-alles-treis-perifereies/",
-        "https://www.in.gr/2026/07/16/world/ispania-staxti-eginan-45-000-stremmata-sti-saragosa-tha-xreiastei-meres-gia-na-tethei-ypo-elegxo-i-fotia/",
-        "https://www.in.gr/2026/07/16/go-fun/style/i-zentagia-epilegei-tis-ghost-vlefarides-i-aitheria-tasi/",
-        "https://www.in.gr/2026/07/16/plus/medianews/harpers-bazaar-greece-to-teyxos-aygoustou-kykloforei-apokleistika-me-to-vima-tis-kyriakis/",
-        "https://www.in.gr/2026/07/16/greece/ypo-meriko-elegxo-i-fotia-sta-vilia-attikis-pou-isxyoun-kykloforiakes-rythmiseis/",
-        "https://www.in.gr/2026/07/16/sports/football/o-olympiakos-sto-argentini-agglia-to-domatio-eksedra-o-napolitanos-mafeo-kai-to-pote-tou-mentilimpar/",
-        "https://www.in.gr/2026/07/16/greece/kikilias-gia-rafina-pano-ap-ola-i-asfaleia-meta-to-kalokairi-diavouleysi-gia-to-mellon-tou-limaniou/"
+        "https://www.in.gr/2026/07/16/world/mpangklantes-synelifthi-stratiotikos-katazitoumenos-epi-45-xronia-gia-ti-dolofonia-tou-proin-proedrou-ziaour-raxman/",
+        "https://www.in.gr/2026/07/16/sports/football/arsenal-kai-mpriz-symfonisan-kai-o-tzolis-ginetai-oristika-kanonieris-pic/",
+        "https://www.in.gr/2026/07/16/greece/stin-epoxi-tou-ai-xoris-eytaksia-disko-den-kratas-viral-i-aggelia-gia-servitoro/",
+        "https://www.in.gr/2026/07/16/politics/politiki-grammateia/to-karfi-mitsotaki-ston-samara/",
+        "https://www.in.gr/2026/07/16/politics/diplomatia/xaris-tzimitras-sto-in-i-tourkia-synexizei-tis-paravatikes-energeies-kai-epivraveyetai-apo-tous-symmaxous/",
+        "https://www.in.gr/2026/07/16/politics/epikairotita/dikomaneis-logo-panikou-stelexi-tis-nd-prokaloun-ton-dimitriadi-na-kanei-minysi-ston-glavina-pou-askei-kritiki/",
+        "https://www.in.gr/2026/07/16/sports/basketball/sti-rodo-to-super-cup-aytes-oi-omades-tha-symmetasxoun/",
+        "https://www.in.gr/2026/07/16/life/culture-live/o-tzon-gouoters-apexthanetai-to-kalo-gousto-ton-rompert-kenenti-tzounior-kai-pleon-ta-narkotika/",
+        "https://www.in.gr/2026/07/16/world/genova-varies-kampanes-stous-katigoroumenous-gia-tin-katarreysi-gefyras-me-43-nekrous/",
+        "https://www.in.gr/2026/07/16/greece/fotia-sto-vlaxopoulo-messinias-minyma-apo-to-112/"
       ],
-      "seen_at_utc": "2026-07-16T14:29:04.116988+00:00"
+      "seen_at_utc": "2026-07-16T15:28:17.448233+00:00"
     }
   },
-  "updated_at_utc": "2026-07-16T14:29:04.117180+00:00"
+  "updated_at_utc": "2026-07-16T15:28:17.448412+00:00"
 }
