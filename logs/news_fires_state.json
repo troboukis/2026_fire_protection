@@ -1,17 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564346660/moyntial-2026-ston-teliko-me-epiki-anatropi-i-argentini-2-1-tin-agglia/",
-      "title": "Μουντιάλ 2026: Στον τελικό με επική ανατροπή η Αργεντινή, 2-1 την Αγγλία",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: ΣΤΟΝ ΤΕΛΙΚΟ ΜΕ ΕΠΙΚΗ ΑΝΑΤΡΟΠΗ Η ΑΡΓΕΝΤΙΝΗ, 2-1 ΤΗΝ ΑΓΓΛΙΑ",
+      "url": "https://www.kathimerini.gr/world/564347341/tramp-apeleytherosi-amerikanidas-poy-eiche-fylakistei-sto-iran-to-2024/",
+      "title": "Τραμπ: Απελευθέρωση Αμερικανίδας που είχε φυλακιστεί στο Ιράν το 2024",
+      "normalized_title": "ΤΡΑΜΠ: ΑΠΕΛΕΥΘΕΡΩΣΗ ΑΜΕΡΙΚΑΝΙΔΑΣ ΠΟΥ ΕΙΧΕ ΦΥΛΑΚΙΣΤΕΙ ΣΤΟ ΙΡΑΝ ΤΟ 2024",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564346660/moyntial-2026-ston-teliko-me-epiki-anatropi-i-argentini-2-1-tin-agglia/",
-        "https://www.kathimerini.gr/eortologio/564319267/eortologio-poioi-giortazoyn-simera-16-ioylioy/",
-        "https://www.kathimerini.gr/economy/564346642/i-klimatiki-krisi-apeilei-kai-tin-parmezana/",
-        "https://www.kathimerini.gr/world/564346564/mask-teleytaia-elpida-tis-gallias-i-lepen/",
-        "https://www.kathimerini.gr/culture/564344554/proistorika-kosmimata-apo-ton-oyrano-se-mykines-kai-kriti/"
+        "https://www.kathimerini.gr/world/564347341/tramp-apeleytherosi-amerikanidas-poy-eiche-fylakistei-sto-iran-to-2024/",
+        "https://www.kathimerini.gr/world/564347356/moyntial-2026-oi-podosfairistes-tis-argentinis-panigyrisan-me-pano-gia-ta-foklant/",
+        "https://www.kathimerini.gr/world/564347320/kyma-klimakosis-ti-nychta-sto-iran-kalytera-na-symmorfothoyn-proeidopoiei-o-tramp/",
+        "https://www.kathimerini.gr/economy/local/564347173/anoigei-i-platforma-gia-fast-track-proslipseis-orismenoy-chronoy/",
+        "https://www.kathimerini.gr/politics/parties/564346780/se-thesi-machis-ston-syriza-doyroy-polakis/",
+        "https://www.kathimerini.gr/world/564347317/oykrania-nea-nychta-epitheseon-sto-kievo-me-toylachiston-dyo-nekroys/",
+        "https://www.kathimerini.gr/world/564346852/oykraniko-pos-i-krimaia-metatrapike-se-adynamo-simeio-gia-ti-rosia/",
+        "https://www.kathimerini.gr/society/564347308/fotia-se-epicheirisi-sto-menidi-kleisto-tmima-tis-l-dimokratias/",
+        "https://www.kathimerini.gr/politics/government/564346783/mitsotakis-ekloges-tin-anoixi-toy-2027/",
+        "https://www.kathimerini.gr/society/564347299/panelladikes-2026-ligei-apopse-i-prothesmia-ypovolis-michanografikon/",
+        "https://www.kathimerini.gr/economy/international/564347284/ta-energeiaka-sok-tha-synechisoyn-na-einai-entona-proeidopoiei-to-dnt/"
       ],
-      "seen_at_utc": "2026-07-15T21:28:46.429370+00:00"
+      "seen_at_utc": "2026-07-16T04:28:08.730087+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,37 +1269,68 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1851652/mia-sullipsi-gia-ti-fotia-sto-melidohori-irakleiou/?utm_source=rss",
-      "title": "Μία σύλληψη για τη φωτιά στο Μελιδοχώρι Ηρακλείου",
-      "normalized_title": "ΜΙΑ ΣΥΛΛΗΨΗ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΟ ΜΕΛΙΔΟΧΩΡΙ ΗΡΑΚΛΕΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1851683/apomakrunodai-ta-baza-apo-tin-polukatoikia-pou-katerreuse-sta-petralona-xekina-i-autopsia/?utm_source=rss",
+      "title": "Απομακρύνονται τα μπάζα από την πολυκατοικία που κατέρρευσε στα Πετράλωνα, ξεκινά η αυτοψία",
+      "normalized_title": "ΑΠΟΜΑΚΡΥΝΟΝΤΑΙ ΤΑ ΜΠΑΖΑ ΑΠΟ ΤΗΝ ΠΟΛΥΚΑΤΟΙΚΙΑ ΠΟΥ ΚΑΤΕΡΡΕΥΣΕ ΣΤΑ ΠΕΤΡΑΛΩΝΑ, ΞΕΚΙΝΑ Η ΑΥΤΟΨΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1851652/mia-sullipsi-gia-ti-fotia-sto-melidohori-irakleiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1851649/polu-upsilos-kindunos-purkagias-se-oli-tin-kriti-tin-pebti-kleisto-to-faraggi-tis-samarias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1851683/apomakrunodai-ta-baza-apo-tin-polukatoikia-pou-katerreuse-sta-petralona-xekina-i-autopsia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1851674/fotia-se-epiheirisi-sto-menidi-kleisto-tmima-tis-leoforou-dimokratias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1851665/duo-thanatoi-apo-pnigmous-tin-tetarti-se-hania-kai-keratea/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-15T21:28:46.429616+00:00"
+      "seen_at_utc": "2026-07-16T04:28:08.730187+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1428797/moyntial-2026-i-argentini-ekane-ti-megali-anatropi-kata-tis-agglias-kai-diekdikei-to-stemma/",
-      "title": "Μουντιάλ 2026: Η Αργεντινή έκανε τη μεγάλη ανατροπή κατά της Αγγλίας και διεκδικεί το «στέμμα»",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: Η ΑΡΓΕΝΤΙΝΗ ΕΚΑΝΕ ΤΗ ΜΕΓΑΛΗ ΑΝΑΤΡΟΠΗ ΚΑΤΑ ΤΗΣ ΑΓΓΛΙΑΣ ΚΑΙ ΔΙΕΚΔΙΚΕΙ ΤΟ «ΣΤΕΜΜΑ»",
+      "url": "https://www.efsyn.gr/politiki/1428855/des-tin-politiki-allios-diadiktyaki-synantisi-toy-tsipra-simera-me-ta-meli-tis-elas/",
+      "title": "«Δες την πολιτική αλλιώς»: Διαδικτυακή «συνάντηση» του Τσίπρα σήμερα με τα μέλη της ΕΛΑΣ",
+      "normalized_title": "«ΔΕΣ ΤΗΝ ΠΟΛΙΤΙΚΗ ΑΛΛΙΩΣ»: ΔΙΑΔΙΚΤΥΑΚΗ «ΣΥΝΑΝΤΗΣΗ» ΤΟΥ ΤΣΙΠΡΑ ΣΗΜΕΡΑ ΜΕ ΤΑ ΜΕΛΗ ΤΗΣ ΕΛΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1428797/moyntial-2026-i-argentini-ekane-ti-megali-anatropi-kata-tis-agglias-kai-diekdikei-to-stemma/",
-        "https://www.efsyn.gr/ellada/1428800/santorini-emploki-se-agkyra-fortigoy-ploioy-paremeine-sto-limani/",
-        "https://www.efsyn.gr/kosmos/1428796/o-efialtis-tis-venezoyelas-synehizetai-toylahiston-4-829-oi-nekroi-apo-toys-seismoys/"
+        "https://www.efsyn.gr/politiki/1428855/des-tin-politiki-allios-diadiktyaki-synantisi-toy-tsipra-simera-me-ta-meli-tis-elas/",
+        "https://www.efsyn.gr/ellada/1428835/kraygi-agonias-gia-tis-rogmes-stin-kypseli-synantisi-doyka-elliniko-metro-me-ti-symmetohi-katoikon/",
+        "https://www.efsyn.gr/kosmos/1428848/nea-amerikanika-pligmata-sto-iran-me-epitheseis-se-hores-toy-kolpoy-apanta-i-teherani/",
+        "https://www.efsyn.gr/ellada/1428838/halkidiki-pos-egine-to-trohaio-me-tin-4meli-oikogeneia-nekroi-oi-goneis-kai-to-vrefos-se-sovari-katastasi-to-deytero-paidi/",
+        "https://www.efsyn.gr/tehnes/1428813/maro-kontoy-1934-2026-i-protagonistria-poy-ekopse-ton-aera-stoys-antonakides/",
+        "https://www.efsyn.gr/ellada/1428831/fotia-se-epiheirisi-sto-menidi-ishyres-dynameis-sto-simeio-kleisto-tmima-tis-leoforoy-dimokratias/",
+        "https://www.efsyn.gr/ellada/1428826/panelladikes-2026-oloklironetai-apopse-i-diadikasia-ypovolis-mihanografikon/",
+        "https://www.efsyn.gr/protoselida/oi-exaggelies-voyliazoyn-sta-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/nisides/1426695/agapi-pera-apo-ton-thanato/",
+        "https://www.efsyn.gr/nisides/1426614/o-nai-ta-dentra-einai-zontana-onta/",
+        "https://www.efsyn.gr/ellada/1428814/eortologio-poia-giorti-einai-simera-16-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-15T21:28:46.429543+00:00"
+      "seen_at_utc": "2026-07-16T04:28:08.730165+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/16/sports/mountial-2026/ispania-argentini-se-enan-istoriko-teliko-pagkosmiou-kypellou-vids/",
-      "title": "Ισπανία – Αργεντινή σε έναν ιστορικό τελικό Παγκοσμίου Κυπέλλου (vids)",
-      "normalized_title": "ΙΣΠΑΝΙΑ – ΑΡΓΕΝΤΙΝΗ ΣΕ ΕΝΑΝ ΙΣΤΟΡΙΚΟ ΤΕΛΙΚΟ ΠΑΓΚΟΣΜΙΟΥ ΚΥΠΕΛΛΟΥ (VIDS)",
+      "url": "https://www.in.gr/2026/07/16/life/geysi/dyo-akoma-syntages-gia-spitiko-pagoto/",
+      "title": "Δύο ακόμα συνταγές για σπιτικό παγωτό",
+      "normalized_title": "ΔΥΟ ΑΚΟΜΑ ΣΥΝΤΑΓΕΣ ΓΙΑ ΣΠΙΤΙΚΟ ΠΑΓΩΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/16/sports/mountial-2026/ispania-argentini-se-enan-istoriko-teliko-pagkosmiou-kypellou-vids/",
-        "https://www.in.gr/2026/07/16/world/i-oukrania-pragmatopoiise-dokimi-vallistikou-pyraylou-symfona-me-ton-paraitithenta-ypourgo-amynas/",
-        "https://www.in.gr/2026/07/16/plus/medianews/sta-nea-tis-pemptis-i-athina-apantaei/"
+        "https://www.in.gr/2026/07/16/life/geysi/dyo-akoma-syntages-gia-spitiko-pagoto/",
+        "https://www.in.gr/2026/07/16/health/pou-nees-odigies-prolipsis-kai-kathysterisis-tis-anoias/",
+        "https://www.in.gr/2026/07/16/sports/on-field/lionel-mesi-o-paiktis-tou-aiona-ola-ta-rekor-pics-vids/",
+        "https://www.in.gr/2026/07/16/greece/panelladikes-eksetaseis-2026-oloklironetai-simera-i-ypovoli-ton-mixanografikon-deltion/",
+        "https://www.in.gr/2026/07/16/greece/fotia-se-epixeirisi-sto-menidi-diakopi-kykloforias-se-tmima-tis-leoforou-dimokratias/",
+        "https://www.in.gr/2026/07/16/plus/vita/eksi-idees-gia-ena-proino-gemato-energeia/",
+        "https://www.in.gr/2026/07/16/greece/kairos-ypsiles-thermokrasies-me-38aria-kai-voriades-sto-aigaio-pou-tha-exei-vroxes-kai-kataigides/",
+        "https://www.in.gr/2026/07/16/life/culture-live/elen-mperstin-xrysos-leontas-gia-to-synolo-tis-karieras-tis-sto-festival-kinimatografou-venetias/",
+        "https://www.in.gr/2026/07/16/plus/vita/pos-epireazei-o-ioulios-tin-erotiki-mas-zoi/",
+        "https://www.in.gr/2026/07/16/life/culture-live/o-ron-xaouarnt-etreme-mesa-stin-ntoulapa-giati-to-zontano-koino-ton-agxone/",
+        "https://www.in.gr/2026/07/16/economy/oikonomikes-eidiseis/epidoma-adeias-ti-provlepetai-gia-tin-katavoli-tou/",
+        "https://www.in.gr/2026/07/16/economy/oikonomikes-eidiseis/syntaksiodotisi-ayksisi-sta-oria-ilikias-apo-to-2030/",
+        "https://www.in.gr/2026/07/16/greece/aerodromia-kindynos-afanismou-tis-genikis-aeroporias/",
+        "https://www.in.gr/2026/07/16/economy/diethnis-oikonomia/kykliki-oikonomia-gia-tous-anthropous-oxi-mono-gia-tis-agores-to-megalo-stoixima-tis-ee/",
+        "https://www.in.gr/2026/07/16/politics/politiki-grammateia/dimoskopiseis-dyo-poloi-katakermatismos-kai-to-mystiko-tou-septemvri/",
+        "https://www.in.gr/2026/07/16/world/giati-to-tokio-einai-agapimenos-proorismos-roson-kataskopon/",
+        "https://www.in.gr/2026/07/16/world/oukrania-giati-o-polemos-tha-teleiosei-me-ti-xrisi-pyrinikon-oplon/",
+        "https://www.in.gr/2026/07/16/world/diethnis-amnistia-sxedon-500-anthropoi-exoun-pethanei-stis-fylakes-tou-el-salvador/",
+        "https://www.in.gr/2026/07/16/world/oukrania-nees-rosikes-epitheseis-me-pyraylous-kai-drones-sto-kievo-kai-to-xarkovo/",
+        "https://www.in.gr/2026/07/16/world/to-iran-apeleytherose-amerikanida-pou-eixe-fylakistei-to-2024-anakoinose-o-tramp/",
+        "https://www.in.gr/2026/07/16/world/kourdistan-arketa-drones-katarrifthikan-konta-sto-prokseneio-ton-ipa-stin-armpil/",
+        "https://www.in.gr/2026/07/16/world/to-kouveit-kai-to-mpaxrein-se-synagermo-i-manama-kai-i-poli-tou-kouveit-dexontai-epitheseis/",
+        "https://www.in.gr/2026/07/16/world/oukrania-toulaxiston-13-oi-nekroi-apo-ta-rosika-pligmata/",
+        "https://www.in.gr/2026/07/16/world/to-iran-epithymei-diakaos-symfonia-leei-o-tramp/",
+        "https://www.in.gr/2026/07/16/world/oi-ipa-xtypoun-politikes-kai-stratiotikes-ypodomes-stin-axvaz-ekkenothike-paidoogkologiko-nosokomeio/"
       ],
-      "seen_at_utc": "2026-07-15T22:28:05.756262+00:00"
+      "seen_at_utc": "2026-07-16T04:28:08.730138+00:00"
     }
   },
-  "updated_at_utc": "2026-07-15T22:28:05.756394+00:00"
+  "updated_at_utc": "2026-07-16T04:28:08.730274+00:00"
 }
