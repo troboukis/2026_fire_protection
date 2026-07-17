@@ -1,20 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564351793/italia-kosmimatopolis-poy-katadikastike-gia-ton-thanato-liston-zita-chari/",
-      "title": "Ιταλία: Κοσμηματοπώλης που καταδικάστηκε για τον θάνατο ληστών, ζητά χάρη",
-      "normalized_title": "ΙΤΑΛΙΑ: ΚΟΣΜΗΜΑΤΟΠΩΛΗΣ ΠΟΥ ΚΑΤΑΔΙΚΑΣΤΗΚΕ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΛΗΣΤΩΝ, ΖΗΤΑ ΧΑΡΗ",
+      "url": "https://www.kathimerini.gr/eortologio/564319285/eortologio-poioi-giortazoyn-simera-18-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 18 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 18 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564351793/italia-kosmimatopolis-poy-katadikastike-gia-ton-thanato-liston-zita-chari/",
-        "https://www.kathimerini.gr/life/auto/564350683/erchetai-to-telos-toy-cheirokinitoy-kivotioy/",
-        "https://www.kathimerini.gr/culture/564349291/argyris-mpakirtzis-ston-dromo-gia-ti-thaso-xana/",
-        "https://www.kathimerini.gr/society/564351790/marfin-se-keli-ypsistis-asfaleias-o-feromenos-os-syntonistis/",
-        "https://www.kathimerini.gr/athletics/564351052/tris-christakis-poia-einai-i-dimosiografos-poy-milise-ellinika-ston-antetokoynmpo/",
-        "https://www.kathimerini.gr/culture/564351766/odysseus-sta-skaria-nea-seira-me-gyrismata-stin-ellada/",
-        "https://www.kathimerini.gr/culture/564351751/ta-krymmena-mystika-tis-archaias-apollonias-xana-sto-fos/",
-        "https://www.kathimerini.gr/athletics/analysis/564351736/ispania-argentini-gia-ti-doxa-kai-tin-aioniotita/"
+        "https://www.kathimerini.gr/eortologio/564319285/eortologio-poioi-giortazoyn-simera-18-ioylioy/",
+        "https://www.kathimerini.gr/culture/tv/564351817/dyo-mayra-poykamisa-nees-backstage-fotografies-apo-ta-gyrismata/",
+        "https://www.kathimerini.gr/world/564349063/o-tramp-mprosta-stin-pagida-enos-polemoy-dichos-telos/",
+        "https://www.kathimerini.gr/culture/tv/564351064/gia-sena-to-neo-teaser-apokalyptei-to-protagonistiko-zeygari-tis-dramatikis-seiras-toy-alpha/",
+        "https://www.kathimerini.gr/economy/564350707/ekptoseis-eos-tis-31-aygoystoy-poia-kyriaki-tha-einai-anoichta-ta-katastimata/"
       ],
-      "seen_at_utc": "2026-07-17T20:28:01.425997+00:00"
+      "seen_at_utc": "2026-07-17T21:27:58.267411+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1276,33 +1273,31 @@
       "seen_at_utc": "2026-07-17T20:28:01.426126+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1430573/samothraki-diasothike-o-pezoporos-poy-traymatistike-meta-tin-ptosi-toy-se-dysvati-periohi/",
-      "title": "Σαμοθράκη: Διασώθηκε ο πεζοπόρος που τραυματίστηκε μετά την πτώση του σε δύσβατη περιοχή",
-      "normalized_title": "ΣΑΜΟΘΡΑΚΗ: ΔΙΑΣΩΘΗΚΕ Ο ΠΕΖΟΠΟΡΟΣ ΠΟΥ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΜΕΤΑ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΣΕ ΔΥΣΒΑΤΗ ΠΕΡΙΟΧΗ",
+      "url": "https://www.efsyn.gr/kosmos/1430579/italia-zita-hari-apo-ton-ptd-o-kosmimatopolis-poy-katadikasthike-gia-ti-dolofonia-dyo-liston/",
+      "title": "Ιταλία: Ζητά χάρη από τον ΠτΔ ο κοσμηματοπώλης που καταδικάσθηκε για τη δολοφονία δύο ληστών",
+      "normalized_title": "ΙΤΑΛΙΑ: ΖΗΤΑ ΧΑΡΗ ΑΠΟ ΤΟΝ ΠΤΔ Ο ΚΟΣΜΗΜΑΤΟΠΩΛΗΣ ΠΟΥ ΚΑΤΑΔΙΚΑΣΘΗΚΕ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΔΥΟ ΛΗΣΤΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1430573/samothraki-diasothike-o-pezoporos-poy-traymatistike-meta-tin-ptosi-toy-se-dysvati-periohi/",
-        "https://www.efsyn.gr/kosmos/1430567/norvigia-pano-apo-100-spitia-kaikan-apo-pyrkagia-ekatontades-katoikoi-efygan-apo-ta-spitia-toys-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1430561/i-mpesiktas-pyrodotei-ti-vomva-me-salah/",
-        "https://www.efsyn.gr/politiki/1430557/doyroy-apodehetai-i-kyvernisi-tis-diloseis-roympio-peri-akroaristeris-tromokratias-stin-ellada/"
+        "https://www.efsyn.gr/kosmos/1430579/italia-zita-hari-apo-ton-ptd-o-kosmimatopolis-poy-katadikasthike-gia-ti-dolofonia-dyo-liston/",
+        "https://www.efsyn.gr/athlitismos/1430575/moyntial-2026-o-ntesan-den-thelei-na-pei-antio-stin-ethniki-gallias-me-itta-ston-mikro-teliko/"
       ],
-      "seen_at_utc": "2026-07-17T20:28:01.426090+00:00"
+      "seen_at_utc": "2026-07-17T21:27:58.267504+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/17/sports/basketball/o-giampousele-sto-t-center-diaforetika-xromata-idia-nootropia-pic/",
-      "title": "Ο Γιαμπουσέλε στο «T-Center»: «Διαφορετικά χρώματα, ίδια νοοτροπία» (pic)",
-      "normalized_title": "Ο ΓΙΑΜΠΟΥΣΕΛΕ ΣΤΟ «T-CENTER»: «ΔΙΑΦΟΡΕΤΙΚΑ ΧΡΩΜΑΤΑ, ΙΔΙΑ ΝΟΟΤΡΟΠΙΑ» (PIC)",
+      "url": "https://www.in.gr/2026/07/18/world/stoxeymeno-xtypima-tou-iran-sto-mpaxrein-oi-ipa-vomvardizoun-poleis-kata-mikos-tou-ormouz/",
+      "title": "Στοχευμένο χτύπημα του Ιράν στο Μπαχρέιν – Οι ΗΠΑ βομβαρδίζουν πόλεις κατά μήκος του Ορμούζ",
+      "normalized_title": "ΣΤΟΧΕΥΜΕΝΟ ΧΤΥΠΗΜΑ ΤΟΥ ΙΡΑΝ ΣΤΟ ΜΠΑΧΡΕΙΝ – ΟΙ ΗΠΑ ΒΟΜΒΑΡΔΙΖΟΥΝ ΠΟΛΕΙΣ ΚΑΤΑ ΜΗΚΟΣ ΤΟΥ ΟΡΜΟΥΖ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/17/sports/basketball/o-giampousele-sto-t-center-diaforetika-xromata-idia-nootropia-pic/",
-        "https://www.in.gr/2026/07/17/in-science/episthmes/entyposiaka-arxaiologika-eyrimata-sti-livyi-rixnoun-fos-stin-arxaia-apollonia/",
-        "https://www.in.gr/2026/07/17/greece/marfin-nea-ntokoumenta-apo-ti-stigmi-tis-fonikis-empristikis-epithesis-me-tous-treis-nekrous/",
-        "https://www.in.gr/2026/07/17/sports/football/proforiki-symfonia-tis-mpesiktas-me-ton-salax/",
-        "https://www.in.gr/2026/07/17/world/ekriksi-se-apothiki-oplismou-sto-kourdistan-oi-katoikoi-egkataleipoun-ta-spitia-tous-vinteo/",
-        "https://www.in.gr/2026/07/17/world/stin-koryfi-i-odysseia-tou-kristofer-nolan-se-troxia-rekor-oi-eisprakseis/",
-        "https://www.in.gr/2026/07/17/world/neo-sokaristiko-vinteo-apo-tin-apopeira-dolofonias-tou-oukranou-oligarxi-kai-tis-oikogeneias-tou-sto-monako/",
-        "https://www.in.gr/2026/07/17/world/skylos-stis-ipa-evale-fotia-sto-spiti-anoigontas-tin-fryganiera-tria-katoikidia-nekra-vinteo/"
+        "https://www.in.gr/2026/07/18/world/stoxeymeno-xtypima-tou-iran-sto-mpaxrein-oi-ipa-vomvardizoun-poleis-kata-mikos-tou-ormouz/",
+        "https://www.in.gr/2026/07/18/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-savvato-18-07-2026/",
+        "https://www.in.gr/2026/07/18/greece/giorti-simera-18-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/17/sports/football/o-paok-anakoinose-ton-xatzidiako-vid/",
+        "https://www.in.gr/2026/07/17/greece/zakynthos-troxaio-me-gourouna-eixan-dyo-touristries-epesan-se-gkremo-20-metron/",
+        "https://www.in.gr/2026/07/17/sports/football/vengker-parakoloutho-ton-tzoli-edo-kai-kairo-einai-atromitos-kai-den-kryvetai-pote-sto-paixnidi/",
+        "https://www.in.gr/2026/07/17/greece/vinteo-ntokoumento-apo-ti-stigmi-tis-sygkrousis-tou-leoforeiou-me-to-trolei-stin-panepistimiou/",
+        "https://www.in.gr/2026/07/17/world/se-xrysoryxeio-metatrepei-tis-anartiseis-tis-i-trump-media/"
       ],
-      "seen_at_utc": "2026-07-17T20:28:01.426052+00:00"
+      "seen_at_utc": "2026-07-17T21:27:58.267463+00:00"
     }
   },
-  "updated_at_utc": "2026-07-17T20:28:01.426223+00:00"
+  "updated_at_utc": "2026-07-17T21:27:58.267576+00:00"
 }
