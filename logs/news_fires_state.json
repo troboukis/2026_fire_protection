@@ -1,26 +1,29 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564349045/tetartoi-delfikoi-dialogoi-mia-epistimoniki-synaxi-pagkosmioy-velinekoys/",
-      "title": "Τέταρτοι Δελφικοί Διάλογοι. Μια επιστημονική σύναξη παγκόσμιου βεληνεκούς",
-      "normalized_title": "ΤΕΤΑΡΤΟΙ ΔΕΛΦΙΚΟΙ ΔΙΑΛΟΓΟΙ. ΜΙΑ ΕΠΙΣΤΗΜΟΝΙΚΗ ΣΥΝΑΞΗ ΠΑΓΚΟΣΜΙΟΥ ΒΕΛΗΝΕΚΟΥΣ",
+      "url": "https://www.kathimerini.gr/culture/564349309/aischyleia-me-moysiki-theatro-kinimatografo-kai-eikastika/",
+      "title": "Αισχύλεια με μουσική, θέατρο, κινηματογράφο και εικαστικά",
+      "normalized_title": "ΑΙΣΧΥΛΕΙΑ ΜΕ ΜΟΥΣΙΚΗ, ΘΕΑΤΡΟ, ΚΙΝΗΜΑΤΟΓΡΑΦΟ ΚΑΙ ΕΙΚΑΣΤΙΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/athinaika-plus/564349045/tetartoi-delfikoi-dialogoi-mia-epistimoniki-synaxi-pagkosmioy-velinekoys/",
-        "https://www.kathimerini.gr/world/564350161/vretania-o-anti-mpernam-analamvanei-tin-igesia-ton-ergatikon-ena-vima-apo-tin-prothypoyrgia/",
-        "https://www.kathimerini.gr/society/564350128/israil-se-efarmogi-i-praxi-dialysis-tis-voylis-anoigei-o-dromos-gia-tis-ekloges-oktovrioy/",
-        "https://www.kathimerini.gr/society/564350080/chania-evoske-ta-zoa-toy-se-xeno-chorafi-kai-epitethike-me-psalidi-ston-idioktiti/",
-        "https://www.kathimerini.gr/politics/564350116/syriza-paraiteitai-kai-o-vasilis-kokkalis-paradidei-tin-edra/",
-        "https://www.kathimerini.gr/economy/international/564349609/o-polemos-sto-iran-simainei-ypsiloteres-times/",
-        "https://www.kathimerini.gr/politics/564350095/pasok-kata-georgiadi-gia-to-xenodoyloi-paei-poly-na-koyna-to-daktylo-i-nd-poy-dimioyrgise-to-skandalo-toy-opekepe/",
-        "https://www.kathimerini.gr/politics/amyna/564349111/pyrayloys-gia-patriot-zitaei-i-oykrania-apo-tin-ellada/",
-        "https://www.kathimerini.gr/society/564350074/to-teleytaio-antio-sti-maro-kontoy/",
-        "https://www.kathimerini.gr/economy/business/564349522/sta-ependytika-plana-ton-mikromesaion-epicheiriseon-i-ai/",
-        "https://www.kathimerini.gr/athletics/564350047/moyntial-2026-me-galliki-finetsa-taxideyei-to-varytimo-tropaio-stis-ipa/",
-        "https://www.kathimerini.gr/world/564350011/kina-katolisthisi-stin-tsongktsingk-echei-pagideysei-agnosto-arithmo-anthropon-eikones/",
-        "https://www.kathimerini.gr/society/564350029/ptolema-da-okto-syllipseis-gia-reymatoklopi/",
-        "https://www.kathimerini.gr/culture/564349312/i-k-stin-premiera-tis-odysseias-apo-ti-siopi-sto-thermo-cheirokrotima/"
+        "https://www.kathimerini.gr/culture/564349309/aischyleia-me-moysiki-theatro-kinimatografo-kai-eikastika/",
+        "https://www.kathimerini.gr/world/564350260/netflix-me-ti-chrisi-ai-peripoy-300-paragoges-to-2026/",
+        "https://www.kathimerini.gr/society/564350254/trochaio-sti-chalkidiki-sti-meth-paramenei-i-7chroni-polytraymatias-apo-ti-moldavia/",
+        "https://www.kathimerini.gr/politics/amyna/564350215/ti-fernei-stis-enoples-dynameis-i-promitheia-amerikanikon-drone-kamikazi/",
+        "https://www.kathimerini.gr/world/564350245/to-emvlimatiko-fili-toy-klimt-tora-se-lego/",
+        "https://www.kathimerini.gr/opinion/564348994/oratos-kindynos-2/",
+        "https://www.kathimerini.gr/k/gastronomos/564348775/makaronosalata-me-myrodika-kai-kapnisti-pestrofa/",
+        "https://www.kathimerini.gr/opinion/564349441/o-ios-toy-paralogismoy/",
+        "https://www.kathimerini.gr/opinion/564348991/otan-kai-oi-metanastes-feygoyn/",
+        "https://www.kathimerini.gr/opinion/564349249/ti-yparchei-se-ena-onoma/",
+        "https://www.kathimerini.gr/opinion/564349273/o-ios-tis-tsapatsoylias/",
+        "https://www.kathimerini.gr/columns/564350191/o-christos-tzolis-den-einai-o-ellinas-podosfairistis-poy-echeis-synithisei/",
+        "https://www.kathimerini.gr/society/564349168/pleonektima-ton-gynaikon-sti-diagnosi-karkinoy/",
+        "https://www.kathimerini.gr/society/564350197/chalkidiki-treis-syllipseis-gia-diakinisi-narkotikon-i-kavatza-kai-oi-roloi/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564349135/aei-anodos-vaseon-se-polytechnikes-kai-iatrikes-scholes/",
+        "https://www.kathimerini.gr/society/564350176/chania-syllipseis-gia-opla-somatikes-vlaves-kai-klopi-se-agio-vasileio-kai-ierapetra/",
+        "https://www.kathimerini.gr/world/564350188/apo-ton-kaysona-stin-kakokairia-dyo-nekroi-sti-gallia-epeita-apo-sfodres-kataigides/"
       ],
-      "seen_at_utc": "2026-07-17T09:28:00.275044+00:00"
+      "seen_at_utc": "2026-07-17T10:28:02.229442+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,50 +1275,56 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852411/kathisuhastikos-o-lekkas-gia-tis-rogmes-stin-kupseli-den-tithetai-zitima-statikis-eparkeias-ton-ktirion/?utm_source=rss",
-      "title": "Καθησυχαστικός ο Λέκκας για τις ρωγμές στην Κυψέλη: Δεν τίθεται ζήτημα στατικής επάρκειας των κτιρίων",
-      "normalized_title": "ΚΑΘΗΣΥΧΑΣΤΙΚΟΣ Ο ΛΕΚΚΑΣ ΓΙΑ ΤΙΣ ΡΩΓΜΕΣ ΣΤΗΝ ΚΥΨΕΛΗ: ΔΕΝ ΤΙΘΕΤΑΙ ΖΗΤΗΜΑ ΣΤΑΤΙΚΗΣ ΕΠΑΡΚΕΙΑΣ ΤΩΝ ΚΤΙΡΙΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1852443/sullipseis-gia-opla-somatikes-vlaves-kai-klopi-se-agio-vasileio-kai-ierapetra/?utm_source=rss",
+      "title": "Συλλήψεις για όπλα, σωματικές βλάβες και κλοπή σε Άγιο Βασίλειο και Ιεράπετρα",
+      "normalized_title": "ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΟΠΛΑ, ΣΩΜΑΤΙΚΕΣ ΒΛΑΒΕΣ ΚΑΙ ΚΛΟΠΗ ΣΕ ΑΓΙΟ ΒΑΣΙΛΕΙΟ ΚΑΙ ΙΕΡΑΠΕΤΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852411/kathisuhastikos-o-lekkas-gia-tis-rogmes-stin-kupseli-den-tithetai-zitima-statikis-eparkeias-ton-ktirion/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852396/agonas-gia-na-epistrepsoun-sti-moldavia-oi-soroi-tis-oikogeneias-pou-skotothike-sti-halkidiki-sti-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852443/sullipseis-gia-opla-somatikes-vlaves-kai-klopi-se-agio-vasileio-kai-ierapetra/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852432/atomo-horis-tis-aisthiseis-tou-se-atuhima-se-garaz-sto-kedro-tis-athinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852421/eidame-enan-andra-pesmeno-na-prospathei-na-sosei-ton-skulo-tou-autoptis-marturas-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-17T09:28:00.275217+00:00"
+      "seen_at_utc": "2026-07-17T10:28:02.229539+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1429994/epeisodia-se-orkomosia-sto-apth-syggeneis-emeinan-ektos-epeidi-den-eihan-prosklisi-den-ehete-psyhi/",
-      "title": "Επεισόδια σε ορκωμοσία στο ΑΠΘ: Συγγενείς έμειναν εκτός επειδή δεν είχαν πρόσκληση – «Δεν έχετε ψυχή;»",
-      "normalized_title": "ΕΠΕΙΣΟΔΙΑ ΣΕ ΟΡΚΩΜΟΣΙΑ ΣΤΟ ΑΠΘ: ΣΥΓΓΕΝΕΙΣ ΕΜΕΙΝΑΝ ΕΚΤΟΣ ΕΠΕΙΔΗ ΔΕΝ ΕΙΧΑΝ ΠΡΟΣΚΛΗΣΗ – «ΔΕΝ ΕΧΕΤΕ ΨΥΧΗ;»",
+      "url": "https://www.efsyn.gr/politiki/1430106/paysanias-papageorgioy-mises-alitheies-kai-oloklira-psemata-tis-kyvernisis-gia-ta-f-35/",
+      "title": "Παυσανίας Παπαγεωργίου: Μισές αλήθειες και ολόκληρα ψέματα της κυβέρνησης για τα F-35",
+      "normalized_title": "ΠΑΥΣΑΝΙΑΣ ΠΑΠΑΓΕΩΡΓΙΟΥ: ΜΙΣΕΣ ΑΛΗΘΕΙΕΣ ΚΑΙ ΟΛΟΚΛΗΡΑ ΨΕΜΑΤΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ ΓΙΑ ΤΑ F-35",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1429994/epeisodia-se-orkomosia-sto-apth-syggeneis-emeinan-ektos-epeidi-den-eihan-prosklisi-den-ehete-psyhi/",
-        "https://www.efsyn.gr/politiki/1430000/paraiteitai-apo-ton-syriza-o-vasilis-kokkalis-paradidei-tin-edra-toy/",
-        "https://www.efsyn.gr/politiki/1429961/korovesi-antiproedros-dimokraton-den-moy-itan-eyharisti-i-eikona-toy-kasselaki-na-paizei-tenis-me-ton-georgiadi/",
-        "https://www.efsyn.gr/ellada/1429981/lekkas-gia-tis-rogmes-stin-kypseli-apaiteitai-synehis-parakoloythisi-poies-einai-aities-toy-fainomenoy/",
-        "https://www.efsyn.gr/politiki/1429947/kontra-kampagianni-adoni-gia-opekepe-o-fellos-ypoyrgos-o-anarhoaristeros-tis-symforas-kai-to-dimosio-stoihima/",
-        "https://www.efsyn.gr/politiki/1429960/pasok-i-nd-epitithetai-lyssalea-stin-antipoliteysi-gia-na-krypsei-ti-dysodia-ton-skandalon/",
-        "https://www.efsyn.gr/ellada/1429978/poly-ypsilos-kindynos-pyrkagias-stin-attiki-epi-podos-o-dimos-athinaion-me-drones-me-thermikes-kameres/"
+        "https://www.efsyn.gr/politiki/1430106/paysanias-papageorgioy-mises-alitheies-kai-oloklira-psemata-tis-kyvernisis-gia-ta-f-35/",
+        "https://www.efsyn.gr/tehnes/1429880/tyfonas-stin-anotati-sholi-kalon-tehnon-gia-tin-prytaniki-dioikisi/",
+        "https://www.efsyn.gr/politiki/1430088/temponeras-kathe-ergazomenos-na-gyrizei-piso-me-asfaleia-sta-paidia-toy-desmeyseis-tis-elas-gia-tin-ergasia/",
+        "https://www.efsyn.gr/ellada/1430074/kolonaki-horis-tis-aisthiseis-toy-atomo-meta-apo-atyhima-se-gkaraz/",
+        "https://www.efsyn.gr/politiki/1430083/i-thenia-haralampidoy-paraiteitai-apo-p-g-k-e-kai-apohorei-apo-ton-syriza/",
+        "https://www.efsyn.gr/ellada/1430065/oikogeneiaki-tragodia-sti-halkidiki-thrinos-sti-moldavia-sti-meth-paramenei-i-7hroni-kori-toy-zeygarioy/",
+        "https://www.efsyn.gr/stiles/1430077/to-flogovolo-tis-dexias/",
+        "https://www.efsyn.gr/politiki/1430064/latinopoyloy-o-mitsotakis-einai-o-pio-woke-prothypoyrgos-olon-ton-epohon/",
+        "https://www.efsyn.gr/ellada/1430057/sparaktikos-o-epikideios-kaklamani-gia-ti-maro-kontoy-taxidiara-psyhi-kai-aionia-efivi-antio/",
+        "https://www.efsyn.gr/politiki/1430030/paylos-geroylanos-ti-eipe-gia-tis-spoydes-toy-gia-ton-papandreoy-kai-gia-ta-peiragmata-me-ton-samara/",
+        "https://www.efsyn.gr/ellada/1430039/pethane-i-paroysiastria-tis-ert-naky-agathoy/"
       ],
-      "seen_at_utc": "2026-07-17T09:28:00.275180+00:00"
+      "seen_at_utc": "2026-07-17T10:28:02.229518+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/17/politics/politiki-grammateia/tsoukalas-se-georgiadi-eiste-i-moni-kyvernisi-pou-panigyrizei-giati-parapempoun-stelexi-tis-sti-dikaiosyni/",
-      "title": "Τσουκαλάς σε Γεωργιάδη: Είστε η μόνη κυβέρνηση που πανηγυρίζει γιατί παραπέμπουν στελέχη της στη Δικαιοσύνη",
-      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΣΕ ΓΕΩΡΓΙΑΔΗ: ΕΙΣΤΕ Η ΜΟΝΗ ΚΥΒΕΡΝΗΣΗ ΠΟΥ ΠΑΝΗΓΥΡΙΖΕΙ ΓΙΑΤΙ ΠΑΡΑΠΕΜΠΟΥΝ ΣΤΕΛΕΧΗ ΤΗΣ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ",
+      "url": "https://www.in.gr/2026/07/17/politics/epikairotita/pasok-kata-georgiadi-gia-to-ksenodouloi-paei-poly-na-kouna-to-daktylo-i-nd-pou-dimiourgise-to-skandalo-tou-opekepe/",
+      "title": "ΠΑΣΟΚ κατά Γεωργιάδη για το «ξενόδουλοι»: Πάει πολύ να κουνά το δάκτυλο η ΝΔ που δημιούργησε το σκάνδαλο του ΟΠΕΚΕΠΕ",
+      "normalized_title": "ΠΑΣΟΚ ΚΑΤΑ ΓΕΩΡΓΙΑΔΗ ΓΙΑ ΤΟ «ΞΕΝΟΔΟΥΛΟΙ»: ΠΑΕΙ ΠΟΛΥ ΝΑ ΚΟΥΝΑ ΤΟ ΔΑΚΤΥΛΟ Η ΝΔ ΠΟΥ ΔΗΜΙΟΥΡΓΗΣΕ ΤΟ ΣΚΑΝΔΑΛΟ ΤΟΥ ΟΠΕΚΕΠΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/17/politics/politiki-grammateia/tsoukalas-se-georgiadi-eiste-i-moni-kyvernisi-pou-panigyrizei-giati-parapempoun-stelexi-tis-sti-dikaiosyni/",
-        "https://www.in.gr/2026/07/17/life/music/mpomp-ntilan-anakoinose-periodeia-sto-inomeno-vasileio/",
-        "https://www.in.gr/2026/07/17/politics/aftodioikisi/nea-prosklisi-gia-ta-sxedia-astikis-anthektikotitas-stous-dimous/",
-        "https://www.in.gr/2026/07/17/politics/politiki-grammateia/vasilis-kokkalis-paraiteitai-apo-vouleytis/",
-        "https://www.in.gr/2026/07/17/sports/mountial-2026/o-gkouardiola-ypostirizei-elvetia-ston-teliko-tou-mountial/",
-        "https://www.in.gr/2026/07/17/greece/paros-orgi-me-vinteo-pou-deixnei-servitoro-na-gemizei-potiria-pelaton-mesa-sti-thalassa/",
-        "https://www.in.gr/2026/07/17/go-fun/fizz/pethane-i-naky-agathou-mia-apo-tis-protes-parousiastries-tis-ert/",
-        "https://www.in.gr/2026/07/17/economy/oikonomikes-eidiseis/etoimos-o-kormos-ton-metron-tis-deth-ti-etoimazetai/",
-        "https://www.in.gr/2026/07/17/stories/nikos-karouzos-ki-etsi-den-egina-dimosiografos/",
-        "https://www.in.gr/2026/07/17/politics/politiki-grammateia/giorgos-papandreou-gia-ti-dilosi-servas-ypourgou-gia-to-kosovo-i-ethnokatharsi-den-einai-politiki-epilogi/",
-        "https://www.in.gr/2026/07/17/sports/mountial-2026/pistos-sta-gouria-o-proedros-tis-argentinis-tha-do-ton-teliko-tou-mountial-apo-tin-tileorasi/",
-        "https://www.in.gr/2026/07/17/go-fun/perierga/ta-pantelonia-thanatos-tis-zara-oi-influencer-ta-theoroun-ta-pio-epikindyna-pantelonia-ston-kosmo/"
+        "https://www.in.gr/2026/07/17/politics/epikairotita/pasok-kata-georgiadi-gia-to-ksenodouloi-paei-poly-na-kouna-to-daktylo-i-nd-pou-dimiourgise-to-skandalo-tou-opekepe/",
+        "https://www.in.gr/2026/07/17/greece/athina-xoris-tis-aisthiseis-tou-atomo-meta-apo-atyxima-se-gkaraz/",
+        "https://www.in.gr/2026/07/17/world/apth-entasi-prin-apo-orkomosia-antidraseis-gia-tous-periorismous-pou-exoun-epivlithei-ti-leei-i-dioikisi/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/synergasia-tis-apokentromenis-dioikisis-peloponnisou-me-to-ekdda/",
+        "https://www.in.gr/2026/07/17/greece/thessaloniki-prothesmia-gia-na-apologithei-pire-o-25xronos-gia-tin-empristiki-epithesi-stin-oikia-nestora/",
+        "https://www.in.gr/2026/07/17/life/texni/kryfes-stigmes-sta-paraskinia-tis-modas-ton-90s-tote-pou-ola-emoiazan-pithana-ki-apithana/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/pragmatopoiithike-me-epityxia-i-askisi-epi-xartou-araxova-deykalion-2026/",
+        "https://www.in.gr/2026/07/17/sports/basketball/o-giannis-ta-eipe-sta-ellinika-me-ellinoamerikanida-dimosiografo-kai-ekane-plaka-stous-ypoloipous-vid/",
+        "https://www.in.gr/2026/07/17/world/vretania-39xronos-katigoreitai-oti-voithise-tis-ypiresies-pliroforion-tou-iran/",
+        "https://www.in.gr/2026/07/17/world/kina-katolisthisi-me-agnosto-arithmos-anthropon-pou-thaftikan-zontanoi-kato-apo-ta-ereipia/",
+        "https://www.in.gr/2026/07/17/economy/diethnis-oikonomia/eyrozoni-kato-apo-ta-epipeda-tou-2021-oi-pragmatikoi-misthoi-meiosi-sxedon-2-pou-vrisketai-i-ellada/",
+        "https://www.in.gr/2026/07/17/sports/football/aek-kai-monterei-ta-vrikan-gia-ton-pineda-epistrefei-sto-meksiko/",
+        "https://www.in.gr/2026/07/17/politics/politiki-grammateia/kikilias-apo-xalkida-ypsilou-epipedou-naypigeia-to-neo-limani-allazei-tin-perioxi/"
       ],
-      "seen_at_utc": "2026-07-17T09:28:00.275113+00:00"
+      "seen_at_utc": "2026-07-17T10:28:02.229487+00:00"
     }
   },
-  "updated_at_utc": "2026-07-17T09:28:00.275297+00:00"
+  "updated_at_utc": "2026-07-17T10:28:02.229615+00:00"
 }
