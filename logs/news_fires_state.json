@@ -1,20 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/visual/video/564348667/aytopsia-tis-k-sta-ragismena-ktiria-tis-kypselis/",
-      "title": "Αυτοψία της «Κ» στα ραγισμένα κτίρια της Κυψέλης",
-      "normalized_title": "ΑΥΤΟΨΙΑ ΤΗΣ «Κ» ΣΤΑ ΡΑΓΙΣΜΕΝΑ ΚΤΙΡΙΑ ΤΗΣ ΚΥΨΕΛΗΣ",
+      "url": "https://www.kathimerini.gr/world/564350584/lavrof-eyropi-kai-oykrania-prospathoyn-na-apomakrynoyn-ton-tramp-apo-ti-symfonia-tis-alaskas/",
+      "title": "Λαβρόφ: Ευρώπη και Ουκρανία προσπαθούν να απομακρύνουν τον Τραμπ από τη συμφωνία της Αλάσκας",
+      "normalized_title": "ΛΑΒΡΟΦ: ΕΥΡΩΠΗ ΚΑΙ ΟΥΚΡΑΝΙΑ ΠΡΟΣΠΑΘΟΥΝ ΝΑ ΑΠΟΜΑΚΡΥΝΟΥΝ ΤΟΝ ΤΡΑΜΠ ΑΠΟ ΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΑΛΑΣΚΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/visual/video/564348667/aytopsia-tis-k-sta-ragismena-ktiria-tis-kypselis/",
-        "https://www.kathimerini.gr/politics/564350509/polakis-apesyre-tin-ypopsifiotita-toy-gia-tin-proedreia-tis-k-o-toy-syriza/",
-        "https://www.kathimerini.gr/world/564350467/komision-diatirei-tis-tesseris-systaseis-pros-tin-ellada-gia-to-kratos-dikaioy/",
-        "https://www.kathimerini.gr/society/564350392/i-diki-poy-enonei-ta-symvolaia-thanatoy-tis-greek-mafia/",
-        "https://www.kathimerini.gr/k/k-magazine/564348484/typopoiimeno-rok/",
-        "https://www.kathimerini.gr/politics/564350386/i-neolaia-syriza-paraiteitai-apo-ton-syriza/",
-        "https://www.kathimerini.gr/world/564350374/eimai-etoimos-o-anti-mpernam-anelave-tin-igesia-ton-ergatikon-sti-vretania/",
-        "https://www.kathimerini.gr/politics/564350416/syriza-ainigmatiki-mantinada-polaki-me-fonto-tin-eklogi-proedroy-tis-k-o/"
+        "https://www.kathimerini.gr/world/564350584/lavrof-eyropi-kai-oykrania-prospathoyn-na-apomakrynoyn-ton-tramp-apo-ti-symfonia-tis-alaskas/",
+        "https://www.kathimerini.gr/opinion/interviews/564349174/manolis-dermitzakis-i-iatriki-akriveias-einai-gia-oloys/",
+        "https://www.kathimerini.gr/society/564350569/sygkroysi-leoforeioy-me-tram-stin-panepistimioy-tesseris-elafra-traymaties/",
+        "https://www.kathimerini.gr/opinion/readers/564349240/i-gefyra-kallirrois-se-mayra-chalia/",
+        "https://www.kathimerini.gr/opinion/readers/564349243/kyrie-samara-mas-min-to-kanete/",
+        "https://www.kathimerini.gr/politics/564350563/tilefoniki-epikoinonia-toy-kyr-mitsotaki-me-ton-emiri-toy-katar/",
+        "https://www.kathimerini.gr/opinion/readers/564349234/i-pseydaisthisi-toy-eykoloy-kerdoys/",
+        "https://www.kathimerini.gr/opinion/readers/564349237/to-skiniko-meta-ton-v-p-p/",
+        "https://www.kathimerini.gr/k/k-magazine/564348652/pos-epireazei-o-kaysonas-to-kinito-mas/",
+        "https://www.kathimerini.gr/society/564350557/chalkidiki-aniliki-listepse-mini-market-me-faltseta/",
+        "https://www.kathimerini.gr/society/564350545/veroia-metetrepse-to-mnima-syggenikoy-toy-prosopoy-se-krypti-narkotikon/"
       ],
-      "seen_at_utc": "2026-07-17T12:28:31.077331+00:00"
+      "seen_at_utc": "2026-07-17T13:28:20.047885+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,57 +1269,65 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852522/aniliki-stin-halkidiki-listepse-mini-market-me-faltseta-kai-heirourgiki-maska/?utm_source=rss",
-      "title": "Ανήλικη στη Χαλκιδική λήστεψε μίνι μάρκετ με φαλτσέτα και χειρουργική μάσκα",
-      "normalized_title": "ΑΝΗΛΙΚΗ ΣΤΗ ΧΑΛΚΙΔΙΚΗ ΛΗΣΤΕΨΕ ΜΙΝΙ ΜΑΡΚΕΤ ΜΕ ΦΑΛΤΣΕΤΑ ΚΑΙ ΧΕΙΡΟΥΡΓΙΚΗ ΜΑΣΚΑ",
+      "url": "https://www.protothema.gr/greece/article/1852545/video-eihe-kanei-ton-tafo-krupsona-gia-narkotika-mia-sullipsi-stin-imathia/?utm_source=rss",
+      "title": "Βίντεο: Είχε κάνει τον τάφο κρυψώνα για ναρκωτικά, μια σύλληψη στην Ημαθία",
+      "normalized_title": "ΒΙΝΤΕΟ: ΕΙΧΕ ΚΑΝΕΙ ΤΟΝ ΤΑΦΟ ΚΡΥΨΩΝΑ ΓΙΑ ΝΑΡΚΩΤΙΚΑ, ΜΙΑ ΣΥΛΛΗΨΗ ΣΤΗΝ ΗΜΑΘΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852522/aniliki-stin-halkidiki-listepse-mini-market-me-faltseta-kai-heirourgiki-maska/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852519/apisteuti-apati-sti-dutiki-ellada-tis-ekane-videoklisi-gia-ta-kosmimata-kai-efuge-me-hruses-lires-kai-timalfi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852515/i-nea-vitrina-ton-diakiniton-paristanoun-tous-deliverades-gia-na-metaferoun-anenohlitoi-ta-narkotika/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852514/peta-psila-labro-mas-asteri-leuka-balonia-ston-ourano-tis-samou-apo-tous-filous-tis-gia-tin-15hroni/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852505/eho-polla-traumata-sto-soma-mou-ponaei-i-psuhi-mou-gia-to-skulaki-mas-leei-o-66hronos-pou-dehthike-epithesi-lukoskulo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852504/duo-sullipseis-gia-diakinisi-kokainis-sto-rethumno-katashethikan-metrita-kai-zugaria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852495/sunelifthi-47hronos-me-pano-apo-26-kila-kannavis-ston-peiraia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852545/video-eihe-kanei-ton-tafo-krupsona-gia-narkotika-mia-sullipsi-stin-imathia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852537/polu-upsilos-kindunos-purkagias-aurio-se-periohes-tis-kritis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852535/nearos-stin-ileia-klotsise-sto-kefali-65hrono-meta-apo-logomahia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852533/leoforeio-sugroustike-me-trolei-stin-panepistimiou-4-elafra-traumaties/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-17T12:28:31.077453+00:00"
+      "seen_at_utc": "2026-07-17T13:28:20.048081+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1430248/halkidiki-aniliki-listepse-mini-market-me-faltseta-kai-heiroyrgiki-maska/",
-      "title": "Χαλκιδική: Ανήλικη λήστεψε μίνι μάρκετ με φαλτσέτα και χειρουργική μάσκα",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΝΗΛΙΚΗ ΛΗΣΤΕΨΕ ΜΙΝΙ ΜΑΡΚΕΤ ΜΕ ΦΑΛΤΣΕΤΑ ΚΑΙ ΧΕΙΡΟΥΡΓΙΚΗ ΜΑΣΚΑ",
+      "url": "https://www.efsyn.gr/tehnes/1430001/antonis-kyriakakis-stin-ef-syn-i-koinonia-mas-ekpaideyei-na-mi-diekdikoyme-tipota/",
+      "title": "Αντώνης Κυριακάκης στην «Εφ.Συν.»: «Η κοινωνία μάς εκπαιδεύει να μη διεκδικούμε τίποτα»",
+      "normalized_title": "ΑΝΤΩΝΗΣ ΚΥΡΙΑΚΑΚΗΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «Η ΚΟΙΝΩΝΙΑ ΜΑΣ ΕΚΠΑΙΔΕΥΕΙ ΝΑ ΜΗ ΔΙΕΚΔΙΚΟΥΜΕ ΤΙΠΟΤΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1430248/halkidiki-aniliki-listepse-mini-market-me-faltseta-kai-heiroyrgiki-maska/",
-        "https://www.efsyn.gr/kosmos/1430231/sfodres-kataigides-me-dyo-nekroys-sti-gallia-53-000-noikokyria-horis-reyma/",
-        "https://www.efsyn.gr/athlitismos/1430209/to-paraskinio-ton-eklogon-sti-super-league-epese-sto-trapezi-to-onoma-toy-m-iliopoyloy/",
-        "https://www.efsyn.gr/politiki/1430214/syllypitiria-mitsotaki-gia-ton-thanato-toy-proin-emiri-toy-katar-hamant-mpin-halifa-al-thani/",
-        "https://www.efsyn.gr/stiles/1429964/deka-hronia-meta-2/",
-        "https://www.efsyn.gr/stiles/1429976/kai-xehno-kai-ola-pleon-ta-syzito/",
-        "https://www.efsyn.gr/politiki/1430196/aposyretai-o-paylos-polakis-apo-tin-koyrsa-tis-igesias-tis-k-o-toy-syriza/",
-        "https://www.efsyn.gr/ellada/1430159/apelathentes-syndikalistes-paremvasi-sto-ypex-na-diasfalistoyn-oi-oroi-gia-neo-taxidi-stin-palaistini/",
-        "https://www.efsyn.gr/kosmos/1430172/systaseis-komision-kritiki-hadi-gia-to-kratos-dikaioy-stin-ellada/",
-        "https://www.efsyn.gr/politiki/1430169/pros-aposyrsi-apo-tin-igesia-toy-syriza-o-paylos-polakis-minyma-me-mantinada-apo-ta-sfakia/"
+        "https://www.efsyn.gr/tehnes/1430001/antonis-kyriakakis-stin-ef-syn-i-koinonia-mas-ekpaideyei-na-mi-diekdikoyme-tipota/",
+        "https://www.efsyn.gr/podcast/afylakti-diavasi-treis-gynaikes-dimosiografoi-miloyn-gia-tin-eleytheria-toy-typoy-stin-ellada/",
+        "https://www.efsyn.gr/?p=1430310",
+        "https://www.efsyn.gr/ellada/1430315/argos-paremvasi-amea-sto-dimarheio-meta-tis-diloseis-maltezoy-gia-ti-dolofonia-toy-20hronoy-thodori-eikones/",
+        "https://www.efsyn.gr/politiki/1430304/marinakis-gia-tin-ekthesi-tis-komision-gia-to-kratos-dikaioy-epivevaionontai-ta-stathera-mas-vimata/",
+        "https://www.efsyn.gr/ellada/1430264/o-syllogos-syggenon-thymaton-tempon-kataggellei-prospatheia-anavolis-tis-dikis-ep-aoriston/",
+        "https://www.efsyn.gr/stiles/1429949/otan-o-agnostos-synanta-ton-algorithmo/",
+        "https://www.efsyn.gr/politiki/1430166/paraitithikan-meli-toy-proedreioy-tis-neolaias-syriza-aihmes-gia-epitheseis-kata-tsipra/",
+        "https://www.efsyn.gr/ellada/1430273/sygkroysi-leoforeioy-me-trolei-stin-panepistimioy-ayximeni-kinisi-sto-kentro-tis-athinas/",
+        "https://www.efsyn.gr/oikonomia/1429984/leipsydria-oyte-drahmi-den-eftase-sto-notio-aigaio/",
+        "https://www.efsyn.gr/kosmos/1430259/apolyti-stirixi-tis-komision-stin-eyropaiki-eisaggelia-einai-anexartiti-ta-krati-prepei-na-synergazontai/",
+        "https://www.efsyn.gr/kosmos/1430251/vretania-proedros-ton-ergatikon-ki-episimos-o-mpernam-mia-nea-epohi-gia-ti-vretania/"
       ],
-      "seen_at_utc": "2026-07-17T12:28:31.077425+00:00"
+      "seen_at_utc": "2026-07-17T13:28:20.048032+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/17/go-fun/style/stin-pagomeni-edem-tis-celia-kritharioti-i-athootita-ki-o-peirasmos-synyparxoun/",
-      "title": "Στην παγωμένη Εδέμ της Celia Kritharioti η αθωότητα κι ο πειρασμός συνυπάρχουν",
-      "normalized_title": "ΣΤΗΝ ΠΑΓΩΜΕΝΗ ΕΔΕΜ ΤΗΣ CELIA KRITHARIOTI Η ΑΘΩΟΤΗΤΑ ΚΙ Ο ΠΕΙΡΑΣΜΟΣ ΣΥΝΥΠΑΡΧΟΥΝ",
+      "url": "https://www.in.gr/2026/07/17/sports/basketball/euroleague/anakoinothike-apo-ti-fenermpaxtse-o-klaimpern-pic/",
+      "title": "Ανακοινώθηκε από τη Φενέρμπαχτσε ο Κλάιμπερν (pic)",
+      "normalized_title": "ΑΝΑΚΟΙΝΩΘΗΚΕ ΑΠΟ ΤΗ ΦΕΝΕΡΜΠΑΧΤΣΕ Ο ΚΛΑΙΜΠΕΡΝ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/07/17/go-fun/style/stin-pagomeni-edem-tis-celia-kritharioti-i-athootita-ki-o-peirasmos-synyparxoun/",
-        "https://www.in.gr/2026/07/17/world/anti-mpernam-kai-episimos-igetis-ton-ergatikon-eimai-etoimos/",
-        "https://www.in.gr/2026/07/17/sports/football/i-sygkinitiki-anartisi-tou-nti-maria-gia-tin-argentini-mia-genia-pou-katalave-ti-simainei-na-foras-ayti-ti-fanela/",
-        "https://www.in.gr/2026/07/17/politics/epikairotita/ektos-diekdikisis-tis-igesias-tou-syriza-o-paylos-polakis-i-ainigmatiki-mantinada-apo-ta-sfakia/",
-        "https://www.in.gr/2026/07/17/life/diakopes/kalokairines-peripeteies-stin-eyropi-ayta-einai-ta-kalytera-meri-gia-thalassia-spor-ta-ellinika-ekstrim-nisia/",
-        "https://www.in.gr/2026/07/17/politics/epikairotita/syriza-thrasos-tou-mitsotaki-na-zitaei-kai-ta-resta-gia-ton-opekepe/",
-        "https://www.in.gr/2026/07/17/life/texni/to-fili-tou-klimt-ginetai-lego-ton-4-000-kommation/",
-        "https://www.in.gr/2026/07/17/world/saragosa-triplasiastikan-ta-kamena-edafi-apo-ti-fotia-o-kindynos-eksaplosis-paramenei-poly-ypsilos/",
-        "https://www.in.gr/2026/07/17/greece/lekkas-gia-kypseli-apaiteitai-synexis-parakolouthisi-den-tithetai-zitima-statikis-eparkeias-ton-ktirion/",
-        "https://www.in.gr/2026/07/17/greece/leros-megali-fotia-stin-perioxi-tsiggouna-epixeirei-isxyri-dynami-tis-pyrosvestikis/",
-        "https://www.in.gr/2026/07/17/sports/mountial-2026/nea-amerikania-tis-fifa-dinei-daxtylidi-stou-nikites-tou-mountial-ala-nba-pics/"
+        "https://www.in.gr/2026/07/17/sports/basketball/euroleague/anakoinothike-apo-ti-fenermpaxtse-o-klaimpern-pic/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/dimos-tinou-pliris-epanaleitourgia-tou-kep-panormou-me-monimo-ypallilo/",
+        "https://www.in.gr/2026/07/17/politics/epikairotita/syriza-monadiki-ypopsifia-proedros-tis-k-o-i-rena-dourou-to-savvato-i-psifoforia/",
+        "https://www.in.gr/2026/07/17/economy/diethnis-oikonomia/meta-tin-traymatiki-elliniki-krisi-eksakolouthoun-oi-oikoi-aksiologisis-na-epireazoun-tis-agores/",
+        "https://www.in.gr/2026/07/17/world/pou-mporeite-na-skotosete-ton-tramp-vinteo-tou-iranikou-fars-deixnei-eyalota-simeia-tis-aytokinitopompis-tou/",
+        "https://www.in.gr/2026/07/17/world/den-mou-exoun-ksanaferthei-etsi-prokeitai-gia-apartxaint-ti-anaferei-o-ro-kana-pou-egklovistike-apo-israilinous-epoikous/",
+        "https://www.in.gr/2026/07/17/go-fun/fizz/thelei-na-gnorisei-ton-kosmo-i-antzelina-tzoli-einai-etoimi-gia-to-epomeno-kefalaio-tis-zois-tis/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/mati-staseis-leoforeion-ston-ilio-sti-vroxi-sti-lithi/",
+        "https://www.in.gr/2026/07/17/in-science/ai/gen-z-enantion-ai-giati-oi-neoi-den-peithontai-apo-tin-epanastasi-tis-texnitis-noimosynis/",
+        "https://www.in.gr/2026/07/17/istoriko-arxeio/ioannis-gryparis-oi-foteinoi-stathmoi-sti-zoi-tou/",
+        "https://www.in.gr/2026/07/17/politics/politiki-grammateia/to-predator-kai-oi-ypoklopes-protagonistoun-stin-ekthesi-tis-komision-gia-to-kratos-dikaiou/",
+        "https://www.in.gr/2026/07/17/world/polonia-o-proedros-askise-veto-se-nomosxedia-pou-tha-veltionan-ta-dikaiomata-ton-omofylon-zeygarion/",
+        "https://www.in.gr/2026/07/17/sports/football/o-vlaxodimos-ananeose-me-ti-sevilli-kai-anakoinothike-apo-ton-kristofer-nolan-pic/",
+        "https://www.in.gr/2026/07/17/politics/epikairotita/neo-spot-tou-pasok-gia-to-tameio-anakampsis-i-megali-xameni-eykairia-gia-apothikeysi-energeias-fthino-reyma/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/o-dimos-ierapetras-enisxyei-tin-prosvasimotita-stis-paralies/",
+        "https://www.in.gr/2026/07/17/greece/troxaio-stin-panepistimiou-sygkroustike-leoforeio-me-trolei/",
+        "https://www.in.gr/2026/07/17/politics/aftodioikisi/dimos-keratsiniou-drapetsonas-anavathmisi-kleistou-gymnastiriou/",
+        "https://www.in.gr/2026/07/17/economy/oikonomikes-eidiseis/kampanaki-tte-gia-tin-elliniki-oikonomia/",
+        "https://www.in.gr/2026/07/17/world/15i-synantisi-ypsilou-epipedou-metaksy-marokou-kai-gallias/",
+        "https://www.in.gr/2026/07/17/sports/basketball/kamia-kouventa-me-panathinaiko-i-real-gia-ton-kampatso-menei-sti-madriti/"
       ],
-      "seen_at_utc": "2026-07-17T12:28:31.077390+00:00"
+      "seen_at_utc": "2026-07-17T13:28:20.047971+00:00"
     }
   },
-  "updated_at_utc": "2026-07-17T12:28:31.077558+00:00"
+  "updated_at_utc": "2026-07-17T13:28:20.048191+00:00"
 }
