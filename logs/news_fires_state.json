@@ -1,23 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564351415/tainia-kai-mini-seira-apo-ton-skinotheti-neritan-zintziria/",
-      "title": "Ταινία και μίνι σειρά από τον σκηνοθέτη Νεριτάν Ζιντζιρία",
-      "normalized_title": "ΤΑΙΝΙΑ ΚΑΙ ΜΙΝΙ ΣΕΙΡΑ ΑΠΟ ΤΟΝ ΣΚΗΝΟΘΕΤΗ ΝΕΡΙΤΑΝ ΖΙΝΤΖΙΡΙΑ",
+      "url": "https://www.kathimerini.gr/politics/564353227/epithesi-polaki-kata-famelloy-kai-tsipra-antimetopizoyme-schedio-dialysis-toy-syriza/",
+      "title": "Επίθεση Πολάκη κατά Φάμελλου και Τσίπρα: Αντιμετωπίζουμε σχέδιο διάλυσης του ΣΥΡΙΖΑ",
+      "normalized_title": "ΕΠΙΘΕΣΗ ΠΟΛΑΚΗ ΚΑΤΑ ΦΑΜΕΛΛΟΥ ΚΑΙ ΤΣΙΠΡΑ: ΑΝΤΙΜΕΤΩΠΙΖΟΥΜΕ ΣΧΕΔΙΟ ΔΙΑΛΥΣΗΣ ΤΟΥ ΣΥΡΙΖΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564351415/tainia-kai-mini-seira-apo-ton-skinotheti-neritan-zintziria/",
-        "https://www.kathimerini.gr/opinion/564351142/aples-kai-exypnes-kiniseis/",
-        "https://www.kathimerini.gr/k/k-magazine/564348457/monterna-sapoynopera/",
-        "https://www.kathimerini.gr/opinion/564351559/skepseis-gia-tin-odysseia/",
-        "https://www.kathimerini.gr/opinion/564351382/ta-kinitra-tis-emplokis/",
-        "https://www.kathimerini.gr/opinion/564351136/o-nomos-tis-katsoynas/",
-        "https://www.kathimerini.gr/opinion/564351217/marfin-i-orimansi-toy-egklimatos/",
-        "https://www.kathimerini.gr/economy/564351592/einai-foyska-i-den-einai/",
-        "https://www.kathimerini.gr/society/564353116/seismos-4-4-vathmon-ston-thalassio-choro-ton-sison-rethymnoy/",
-        "https://www.kathimerini.gr/politics/564353101/nikos-pappas-stin-kentriki-epitropi-o-syriza-einai-edo-orthios/",
-        "https://www.kathimerini.gr/world/564353044/i-tripli-anafora-roympio-stin-ellada-kai-i-nea-stratigiki-tramp-kata-tis-akroaristeris-tromokratias/"
+        "https://www.kathimerini.gr/politics/564353227/epithesi-polaki-kata-famelloy-kai-tsipra-antimetopizoyme-schedio-dialysis-toy-syriza/",
+        "https://www.kathimerini.gr/k/sunday-edition/564353215/diavaste-stin-kathimerini-tis-kyriakis-448/",
+        "https://www.kathimerini.gr/k/gastronomos/564353188/moni-tis-ormylias-mia-mera-parea-me-tis-monaches-stoys-kipoys-sta-mantria-kai-sta-ergastiria/",
+        "https://www.kathimerini.gr/opinion/sketches/564353134/skitso-toy-ilia-makri-18-07-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564353128/skitso-toy-andrea-petroylaki-18-07-26/",
+        "https://www.kathimerini.gr/society/564353149/messinia-synelifthisan-pyrosvestis-proedros-koinotitas-kai-o-adelfos-toy-gia-emprismoys/",
+        "https://www.kathimerini.gr/culture/tv/564351433/to-deltio-ton-media-antidraseis-gia-to-schedio-nomoy/",
+        "https://www.kathimerini.gr/society/564353161/megali-fotia-stin-kissamo-estali-112/",
+        "https://www.kathimerini.gr/world/564353143/thriler-me-kykloma-emporias-koka-nis-stin-ispania-eiche-plokamia-mechri-ti-wall-street/"
       ],
-      "seen_at_utc": "2026-07-18T10:28:31.133074+00:00"
+      "seen_at_utc": "2026-07-18T11:28:41.102172+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,46 +1267,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852893/fotia-stin-kisssamo-metaxu-ton-horion-aerinou-kai-kefali-estali-minuma-tou-112/?utm_source=rss",
-      "title": "Φωτιά στην Κίσσσαμο μεταξύ των χωριών Αερινού και Κεφάλι, εστάλη μήνυμα από το 112",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΙΣΣΣΑΜΟ ΜΕΤΑΞΥ ΤΩΝ ΧΩΡΙΩΝ ΑΕΡΙΝΟΥ ΚΑΙ ΚΕΦΑΛΙ, ΕΣΤΑΛΗ ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112",
+      "url": "https://www.protothema.gr/greece/article/1852905/video-apo-to-tromaktiko-trohaio-sti-thessaloniki-i-stigmi-tis-sfodris-sugrousis-me-thuma-23hrono-odigo-motosikletas/?utm_source=rss",
+      "title": "Βίντεο από το τρομακτικό τροχαίο στη Θεσσαλονίκη: Η στιγμή της σφοδρής σύγκρουσης με θύμα 23χρονο οδηγό μοτοσικλέτας",
+      "normalized_title": "ΒΙΝΤΕΟ ΑΠΟ ΤΟ ΤΡΟΜΑΚΤΙΚΟ ΤΡΟΧΑΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: Η ΣΤΙΓΜΗ ΤΗΣ ΣΦΟΔΡΗΣ ΣΥΓΚΡΟΥΣΗΣ ΜΕ ΘΥΜΑ 23ΧΡΟΝΟ ΟΔΗΓΟ ΜΟΤΟΣΙΚΛΕΤΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852893/fotia-stin-kisssamo-metaxu-ton-horion-aerinou-kai-kefali-estali-minuma-tou-112/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852890/sunelifthisan-proedros-koinotitas-kai-purosvestis-gia-tous-ebrismous-stous-gargalianous-eblekodai-se-soreia-adikimaton/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852878/fortigo-metakomisis-sto-ilion-epese-se-kolona-kai-tin-ekopse-sti-mesi-kleisti-i-odos-despotatou-mustra/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852876/nea-tragodia-stin-asfalto-tis-halkidikis-nekros-19hronos-se-sfodri-sugrousi-duo-autokiniton/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852905/video-apo-to-tromaktiko-trohaio-sti-thessaloniki-i-stigmi-tis-sfodris-sugrousis-me-thuma-23hrono-odigo-motosikletas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852903/megali-fotia-stin-euvoia-estali-112-gia-ekkenosi-tou-horiou-tis-episkopis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-18T10:28:31.133235+00:00"
+      "seen_at_utc": "2026-07-18T11:28:41.102305+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1430799/pyrkagia-se-spiti-sta-ioannina-sto-nosokomeio-70hroni/",
-      "title": "Πυρκαγιά σε σπίτι στα Ιωάννινα: Στο νοσοκομείο 70χρονη",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΣΠΙΤΙ ΣΤΑ ΙΩΑΝΝΙΝΑ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ 70ΧΡΟΝΗ",
+      "url": "https://www.efsyn.gr/ellada/1430827/thessaloniki-vinteo-ntokoymento-apo-to-trohaio-me-nekro-23hrono-odigo-mihanis-synelifthi-enas-25hronos/",
+      "title": "Θεσσαλονίκη: Βίντεο ντοκουμέντο από το τροχαίο με νεκρό 23χρονο οδηγό μηχανής – Συνελήφθη ένας 25χρονος",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΟ ΤΡΟΧΑΙΟ ΜΕ ΝΕΚΡΟ 23ΧΡΟΝΟ ΟΔΗΓΟ ΜΗΧΑΝΗΣ – ΣΥΝΕΛΗΦΘΗ ΕΝΑΣ 25ΧΡΟΝΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1430799/pyrkagia-se-spiti-sta-ioannina-sto-nosokomeio-70hroni/",
-        "https://www.efsyn.gr/politiki/1430793/tsoykalas-i-kyvernisi-epivevaionei-oti-otan-to-pseydos-apokalyptetai-den-yparhei-allo-katafygio-apo-to-thrasos/",
-        "https://www.efsyn.gr/ellada/1430747/pro-ton-pylon-o-protos-kaysonas-erhetai-to-thermo-aggigma-toy-ioylioy-poy-tha-htypisoyn-42aria/"
+        "https://www.efsyn.gr/ellada/1430827/thessaloniki-vinteo-ntokoymento-apo-to-trohaio-me-nekro-23hrono-odigo-mihanis-synelifthi-enas-25hronos/",
+        "https://www.efsyn.gr/ellada/1430814/messinia-treis-syllipseis-gia-emprismoys-stoys-gargalianoys-anamesa-toys-enas-pyrosvestis/",
+        "https://www.efsyn.gr/ellada/1430810/synagermos-gia-megali-fotia-stin-kissamo-ihise-to-112/",
+        "https://www.efsyn.gr/politiki/1430801/synedriasi-tis-ke-toy-syriza-ofeiloyme-na-anataxoyme-to-komma-mas-leei-i-rena-doyroy/"
       ],
-      "seen_at_utc": "2026-07-18T10:28:31.133192+00:00"
+      "seen_at_utc": "2026-07-18T11:28:41.102275+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/18/go-fun/thelima-theou-profiteia-mesi-kai-louis-nte-la-fouente-gia-to-viral-klik-me-ton-giamal-moiraia-mazi/",
-      "title": "«Θέλημα Θεού; Προφητεία;» – Μέσι και Λουίς ντε λα Φουέντε για το viral κλικ με τον Γιαμάλ – «Μοιραία μαζί»",
-      "normalized_title": "«ΘΕΛΗΜΑ ΘΕΟΥ; ΠΡΟΦΗΤΕΙΑ;» – ΜΕΣΙ ΚΑΙ ΛΟΥΙΣ ΝΤΕ ΛΑ ΦΟΥΕΝΤΕ ΓΙΑ ΤΟ VIRAL ΚΛΙΚ ΜΕ ΤΟΝ ΓΙΑΜΑΛ – «ΜΟΙΡΑΙΑ ΜΑΖΙ»",
+      "url": "https://www.in.gr/2026/07/18/politics/liakouli-o-mitsotakis-prospoieitai-oti-zei-se-ena-parallilo-sympan-na-epistrepsei-sti-xora-pou-edo-kai-7-xronia-kyverna/",
+      "title": "Λιακούλη: Ο Μητσοτάκης προσποιείται ότι ζει σε ένα παράλληλο σύμπαν – Να επιστρέψει στη χώρα που εδώ και 7 χρόνια κυβερνά",
+      "normalized_title": "ΛΙΑΚΟΥΛΗ: Ο ΜΗΤΣΟΤΑΚΗΣ ΠΡΟΣΠΟΙΕΙΤΑΙ ΟΤΙ ΖΕΙ ΣΕ ΕΝΑ ΠΑΡΑΛΛΗΛΟ ΣΥΜΠΑΝ – ΝΑ ΕΠΙΣΤΡΕΨΕΙ ΣΤΗ ΧΩΡΑ ΠΟΥ ΕΔΩ ΚΑΙ 7 ΧΡΟΝΙΑ ΚΥΒΕΡΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/18/go-fun/thelima-theou-profiteia-mesi-kai-louis-nte-la-fouente-gia-to-viral-klik-me-ton-giamal-moiraia-mazi/",
-        "https://www.in.gr/2026/07/18/english-edition/macron-merz-push-to-revive-franco-german-defense-ties/",
-        "https://www.in.gr/2026/07/18/sports/football/olympiakos-mia-evdomada-ektos-o-sipioni/",
-        "https://www.in.gr/2026/07/18/greece/synagermos-gia-fotia-sta-xania-ixise-to-112/",
-        "https://www.in.gr/2026/07/18/economy/oikonomikes-eidiseis/anoikse-i-platforma-gia-tis-72-doseis-poies-ofeiles-ypagontai-pos-ypovallontai-oi-aitiseis/",
-        "https://www.in.gr/2026/07/18/english-edition/greece-extends-deadlines-for-home-energy-upgrade-schemes/",
-        "https://www.in.gr/2026/07/18/greece/seismos-44-rixter-anoixta-tis-kritis/",
-        "https://www.in.gr/2026/07/18/sports/othersports/tsitsipas-den-yparxei-eykolos-dromos-prepei-na-doso-ton-kalytero-eayto-mou/",
-        "https://www.in.gr/2026/07/18/go-fun/fizz/mykonos-giot-ton-220-ekatommyrion-eyro-agkyrovolise-stin-psarrou-poios-einai-o-idioktitis/",
+        "https://www.in.gr/2026/07/18/politics/liakouli-o-mitsotakis-prospoieitai-oti-zei-se-ena-parallilo-sympan-na-epistrepsei-sti-xora-pou-edo-kai-7-xronia-kyverna/",
+        "https://www.in.gr/2026/07/18/go-fun/fizz/giorgos-livanis-poio-provlima-ygeias-ton-anagkase-na-akyrosei-tis-emfaniseis-tou/",
+        "https://www.in.gr/2026/07/18/greece/messinia-synelifthisan-treis-andres-gia-emprismous-apo-prothesi-pyrosvestis-anamesa-tous/",
+        "https://www.in.gr/2026/07/18/in-science/ai/i-kritiki-skepsi-den-arkei-stin-epoxi-tis-ai-giati-den-einai-mono-thema-mathisis-alla-kai-dimokratias/",
+        "https://www.in.gr/2026/07/18/politics/politiki-grammateia/mitsotakis-stinei-afigima-dikaiosis-meta-tin-ekthesi-tis-ee-gia-to-kratos-dikaiou-pyra-stin-antipoliteysi/",
+        "https://www.in.gr/2026/07/18/world/mayros-kapnos-skepazei-ti-mosxa-sygklonistikes-eikones-meta-tis-epitheseis-tis-oukranias-sti-rosia-8-nekroi/",
+        "https://www.in.gr/2026/07/18/sports/basketball/euroleague/gallika-mme-o-panathinaikos-parakolouthei-tin-periptosi-fransisko/",
         "https://www.in.gr/2026/07/18/politics/politiki-grammateia/tsoukalas-i-kyvernisi-epivevaionei-oti-otan-to-pseydos-apokalyptetai-den-yparxei-allo-katafygio-apo-to-thrasos/"
       ],
-      "seen_at_utc": "2026-07-18T10:28:31.133126+00:00"
+      "seen_at_utc": "2026-07-18T11:28:41.102242+00:00"
     }
   },
-  "updated_at_utc": "2026-07-18T10:28:31.133331+00:00"
+  "updated_at_utc": "2026-07-18T11:28:41.102388+00:00"
 }
