@@ -1,17 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564353536/odysseia-giati-i-skini-toy-doyreioy-ippoy-toy-nolan-theoreitai-monadiki/",
-      "title": "«Οδύσσεια»: Γιατί η σκηνή του Δούρειου Iππου του Νόλαν θεωρείται μοναδική",
-      "normalized_title": "«ΟΔΥΣΣΕΙΑ»: ΓΙΑΤΙ Η ΣΚΗΝΗ ΤΟΥ ΔΟΥΡΕΙΟΥ IΠΠΟΥ ΤΟΥ ΝΟΛΑΝ ΘΕΩΡΕΙΤΑΙ ΜΟΝΑΔΙΚΗ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564353245/kriti-glenti-ston-ampelona-me-spania-krasia-apo-tis-melampes-kai-syntages-toy-topoy/",
+      "title": "Κρήτη: Γλέντι στον αμπελώνα με σπάνια κρασιά από τις Μέλαμπες και συνταγές του τόπου",
+      "normalized_title": "ΚΡΗΤΗ: ΓΛΕΝΤΙ ΣΤΟΝ ΑΜΠΕΛΩΝΑ ΜΕ ΣΠΑΝΙΑ ΚΡΑΣΙΑ ΑΠΟ ΤΙΣ ΜΕΛΑΜΠΕΣ ΚΑΙ ΣΥΝΤΑΓΕΣ ΤΟΥ ΤΟΠΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564353536/odysseia-giati-i-skini-toy-doyreioy-ippoy-toy-nolan-theoreitai-monadiki/",
-        "https://www.kathimerini.gr/society/astynomiko/564353563/anoixi-i-stigmi-poy-o-50chronos-vazei-ti-fotia/",
-        "https://www.kathimerini.gr/athletics/564353542/feygo-me-tin-iremia-oti-edosa-panta-ta-panta-to-antio-toy-mexikanoy-stin-aek/",
-        "https://www.kathimerini.gr/athletics/564353497/proti-itta-sta-filika-gia-ton-olympiako-1-0-apo-ton-agiax/",
-        "https://www.kathimerini.gr/world/564353509/ekkenosi-synoikias-sti-chagi-entopistike-ergastirio-synthetikon-narkotikon/"
+        "https://www.kathimerini.gr/k/gastronomos/564353245/kriti-glenti-ston-ampelona-me-spania-krasia-apo-tis-melampes-kai-syntages-toy-topoy/",
+        "https://www.kathimerini.gr/economy/local/564351628/perizitita-ta-pentastera-exochika/",
+        "https://www.kathimerini.gr/k/k-magazine/564348619/giati-chreiazetai-megali-prosochi-gia-ta-skylia-mas-to-kalokairi/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564353611/moni-sina-synantisi-toy-archiepiskopoy-symeon-me-ton-masant-mpoylos-gia-ti-diatirisi-toy-status-quo/",
+        "https://www.kathimerini.gr/world/564353593/motztampa-chamene-tha-dosoyme-axechasta-mathimata-stis-ipa/"
       ],
-      "seen_at_utc": "2026-07-18T17:28:32.758538+00:00"
+      "seen_at_utc": "2026-07-18T18:28:09.758440+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,29 +1273,36 @@
       "seen_at_utc": "2026-07-18T17:28:32.758673+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1430684/thesmikos-logos-kai-dikastikes-apofaseis/",
-      "title": "Θεσμικός λόγος και δικαστικές αποφάσεις",
-      "normalized_title": "ΘΕΣΜΙΚΟΣ ΛΟΓΟΣ ΚΑΙ ΔΙΚΑΣΤΙΚΕΣ ΑΠΟΦΑΣΕΙΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1430991/i-maria-sakkari-ekleise-thesi-ston-teliko-toy-athens-open-pame-na-to-sikosoyme-vinteo/",
+      "title": "Η Μαρία Σάκκαρη έκλεισε θέση στον τελικό του Athens Open – «Πάμε να το σηκώσουμε» [βίντεο]",
+      "normalized_title": "Η ΜΑΡΙΑ ΣΑΚΚΑΡΗ ΕΚΛΕΙΣΕ ΘΕΣΗ ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ATHENS OPEN – «ΠΑΜΕ ΝΑ ΤΟ ΣΗΚΩΣΟΥΜΕ» [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1430684/thesmikos-logos-kai-dikastikes-apofaseis/",
-        "https://www.efsyn.gr/athlitismos/1430973/protathlitria-eyropis-i-eleni-iakovaki-poy-synetripse-dyo-panellinia-rekor/",
-        "https://www.efsyn.gr/kosmos/1430940/oi-ipa-anoixan-ton-asko-toy-aioloy-orgi-kai-antipoina-apo-iran-gia-egklimata-polemoy-miloyn-krati-toy-kolpoy/",
-        "https://www.efsyn.gr/kosmos/1430721/komision-kaki-i-rosia-kalo-to-israil/",
-        "https://www.efsyn.gr/athlitismos/1430959/telos-epohis-gia-ton-pineda-stin-aek-to-sygkinitiko-antio-toy-mexikanoy/"
+        "https://www.efsyn.gr/athlitismos/1430991/i-maria-sakkari-ekleise-thesi-ston-teliko-toy-athens-open-pame-na-to-sikosoyme-vinteo/",
+        "https://www.efsyn.gr/kosmos/1430988/iran-protes-anthropines-apoleies-gia-tis-ipa-meta-tin-epanenarxi-ton-sygkroyseon/",
+        "https://www.efsyn.gr/politiki/1430728/pano-apo-miso-dis-eyro-gia-tin-oykrania/",
+        "https://www.efsyn.gr/politiki/1430901/syriza-allazei-selida-me-doyroy-stoheyontas-stin-anasygkrotisi-o-n-pappas-neos-grammateas-tis-k-e/"
       ],
-      "seen_at_utc": "2026-07-18T17:28:32.758622+00:00"
+      "seen_at_utc": "2026-07-18T18:28:09.758540+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/18/greece/i-stigmi-pou-50xronos-vazei-fotia-stin-anoiksi-attikis-synelifthi-gia-emprismo-apo-prothesi-vinteo-ntokoumento/",
-      "title": "Η στιγμή που 50χρονος βάζει φωτιά στην Άνοιξη Αττικής – Συνελήφθη για εμπρησμό από πρόθεση – Βίντεο ντοκουμέντο",
-      "normalized_title": "Η ΣΤΙΓΜΗ ΠΟΥ 50ΧΡΟΝΟΣ ΒΑΖΕΙ ΦΩΤΙΑ ΣΤΗΝ ΑΝΟΙΞΗ ΑΤΤΙΚΗΣ – ΣΥΝΕΛΗΦΘΗ ΓΙΑ ΕΜΠΡΗΣΜΟ ΑΠΟ ΠΡΟΘΕΣΗ – ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ",
+      "url": "https://www.in.gr/2026/07/18/greece/patra-thlipsi-gia-74xroni-pou-epese-sto-keno-apo-ton-6o-orofo-afise-simeioma-kai-xrimata-gia-tin-kideia-tis/",
+      "title": "Πάτρα: Θλίψη για 74χρονη που έπεσε στο κενό από τον 6ο όροφο – Άφησε σημείωμα και χρήματα για την κηδεία της",
+      "normalized_title": "ΠΑΤΡΑ: ΘΛΙΨΗ ΓΙΑ 74ΧΡΟΝΗ ΠΟΥ ΕΠΕΣΕ ΣΤΟ ΚΕΝΟ ΑΠΟ ΤΟΝ 6Ο ΟΡΟΦΟ – ΑΦΗΣΕ ΣΗΜΕΙΩΜΑ ΚΑΙ ΧΡΗΜΑΤΑ ΓΙΑ ΤΗΝ ΚΗΔΕΙΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/18/greece/i-stigmi-pou-50xronos-vazei-fotia-stin-anoiksi-attikis-synelifthi-gia-emprismo-apo-prothesi-vinteo-ntokoumento/",
-        "https://www.in.gr/2026/07/18/world/sokaristiki-apofasi-israil-oi-krokodeiloi-tou-neilou-tha-ektrefontai-gia-na-xrisimopoiithoun-se-fylakes/",
-        "https://www.in.gr/2026/07/18/sports/football/aris-erxetai-tin-kyriaki-19-7-ki-oloklironei-ti-metagrafi-tou-o-ntele-mpasirou/"
+        "https://www.in.gr/2026/07/18/greece/patra-thlipsi-gia-74xroni-pou-epese-sto-keno-apo-ton-6o-orofo-afise-simeioma-kai-xrimata-gia-tin-kideia-tis/",
+        "https://www.in.gr/2026/07/18/sports/othersports/eyropaiko-k18-xrysi-i-eleni-iakovaki-sta-400m-me-panellinio-rekor/",
+        "https://www.in.gr/2026/07/18/world/to-riant-strimogmeno-metaksy-xouthi-kai-iran-epanerxetai-o-fovos-enos-dimetopou-polemou/",
+        "https://www.in.gr/2026/07/18/economy/oikonomikes-eidiseis/o-xartis-ton-pliromon-apo-e-efka-kai-dypa-eos-tis-24-iouliou-2/",
+        "https://www.in.gr/2026/07/18/life/tzo-esterxaz-to-neo-vasiko-enstikto-tha-ferei-egkefalika-o-provokatoras-tou-xoligount-epistrefei/",
+        "https://www.in.gr/2026/07/18/sports/mountial-2026/slavko-vintsits-o-efialtis-tou-diaititi-tou-telikou-tou-mountial-sti-vila-ton-orgion-kai-i-poreia-pros-tin-kataksiosi/",
+        "https://www.in.gr/2026/07/18/economy/pos-o-tourismos-threfei-tin-akriveia-oi-taksidiotikes-ypiresies-os-domikos-paragontas-tou-plithorismou/",
+        "https://www.in.gr/2026/07/18/world/iordania-dyo-amerikanoi-stratiotes-nekroi-apo-pligma-tou-iran-se-vasi-enas-agnoeitai/",
+        "https://www.in.gr/2026/07/18/sports/mountial-2026/pos-i-fifa-kleidonei-tin-emporiki-xrisi-tou-mountial/",
+        "https://www.in.gr/2026/07/18/greece/isxyros-kaysonas-pro-ton-pylon-me-thermokrasies-eos-42c-pote-tha-drosisei/",
+        "https://www.in.gr/2026/07/18/greece/konitsa-epixeirisi-diasosis-53xronis-apo-to-monopati-aoou/"
       ],
-      "seen_at_utc": "2026-07-18T17:28:32.758597+00:00"
+      "seen_at_utc": "2026-07-18T18:28:09.758501+00:00"
     }
   },
-  "updated_at_utc": "2026-07-18T17:28:32.758751+00:00"
+  "updated_at_utc": "2026-07-18T18:28:09.758613+00:00"
 }
