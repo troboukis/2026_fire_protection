@@ -1,24 +1,22 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564351385/to-psychiko-trayma-toy-odyssea/",
-      "title": "Το ψυχικό τραύμα του Οδυσσέα",
-      "normalized_title": "ΤΟ ΨΥΧΙΚΟ ΤΡΑΥΜΑ ΤΟΥ ΟΔΥΣΣΕΑ",
+      "url": "https://www.kathimerini.gr/economy/international/564351673/giati-i-vretania-epelexe-na-ethnikopoiisei-tin-british-steel/",
+      "title": "Γιατί η Βρετανία επέλεξε να εθνικοποιήσει την British Steel",
+      "normalized_title": "ΓΙΑΤΙ Η ΒΡΕΤΑΝΙΑ ΕΠΕΛΕΞΕ ΝΑ ΕΘΝΙΚΟΠΟΙΗΣΕΙ ΤΗΝ BRITISH STEEL",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564351385/to-psychiko-trayma-toy-odyssea/",
-        "https://www.kathimerini.gr/opinion/564351556/zitima-dimokratias-3/",
-        "https://www.kathimerini.gr/economy/local/564351610/simantiki-ysterisi-tis-elladas-enanti-tis-e-e-stin-paragogikotita/",
-        "https://www.kathimerini.gr/economy/diktis/564351718/to-oikonomiko-ofelos-tis-psifiopoiisis/",
-        "https://www.kathimerini.gr/world/564352819/i-stigmi-tis-ekrixis-exo-apo-tin-katoikia-toy-oykranoy-megistana-sto-monako-vinteo/",
-        "https://www.kathimerini.gr/visual/photography/564351091/choris-pleysi-stin-ollandia/",
-        "https://www.kathimerini.gr/politics/564351190/sto-maximoy-o-elpidoforos/",
-        "https://www.kathimerini.gr/politics/564351232/entos-kai-ektos-o-tsipras-kai-oi-mesaies-dynameis/",
-        "https://www.kathimerini.gr/economy/local/564351649/sta-34-ekat-i-epivatiki-kinisi-sta-aerodromia-to-a-6mino/",
-        "https://www.kathimerini.gr/world/564352789/tramp-kata-kanada-gia-tis-pyrkagies-mas-gemizoyn-me-vromiko-aera/",
-        "https://www.kathimerini.gr/economy/international/564351721/h-apple-xana-stin-koryfi/",
-        "https://www.kathimerini.gr/istoria/564351757/san-simera-18-ioylioy-1918-gennithike-o-nelson-mantela/"
+        "https://www.kathimerini.gr/economy/international/564351673/giati-i-vretania-epelexe-na-ethnikopoiisei-tin-british-steel/",
+        "https://www.kathimerini.gr/society/564352828/me-kaisariki-gennioyntai-epta-sta-deka-paidia-stin-ellada/",
+        "https://www.kathimerini.gr/economy/international/564351682/anisychies-gia-ton-plithorismo-se-etoimotita-i-fed/",
+        "https://www.kathimerini.gr/columns/564349921/ladero-me-tiganites-patates-apla-mathimata-synarpastikis-mageirikis/",
+        "https://www.kathimerini.gr/world/564352840/toyrkia-seismos-5-vathmon-simeiothike-sto-notioanatoliko-tmima-tis-choras/",
+        "https://www.kathimerini.gr/society/564352834/pyrkagia-ston-xerokampo-siteias-estali-112-gia-etoimotita-ton-katoikon/",
+        "https://www.kathimerini.gr/culture/agenda/564351418/poy-vgainoyme-simera-savvato-protaseis-gia-theatro-synaylies-ektheseis-ekdiloseis-135/",
+        "https://www.kathimerini.gr/economy/business/564351643/i-golden-age-capital-schediazei-exi-ependyseis-mesa-sto-2026/",
+        "https://www.kathimerini.gr/opinion/564351388/marfin-gnorizan-kai-siopoysan/",
+        "https://www.kathimerini.gr/opinion/564351397/kai-ta-250-polla-itan/"
       ],
-      "seen_at_utc": "2026-07-18T05:28:34.455105+00:00"
+      "seen_at_utc": "2026-07-18T06:28:37.806064+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,53 +1268,53 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852778/megali-fotia-sti-siteia-minuma-stous-katoikous-tou-xerokabou-apo-to-112/?utm_source=rss",
-      "title": "Μεγάλη φωτιά στη Σητεία: Μήνυμα στους κατοίκους του Ξερόκαμπου από το 112",
-      "normalized_title": "ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΣΗΤΕΙΑ: ΜΗΝΥΜΑ ΣΤΟΥΣ ΚΑΤΟΙΚΟΥΣ ΤΟΥ ΞΕΡΟΚΑΜΠΟΥ ΑΠΟ ΤΟ 112",
+      "url": "https://www.protothema.gr/greece/article/1852802/sovaro-trohaio-sti-lamia-duo-mihanakia-sugroustikan-metaxu-tous-diasolinothike-enas-nearos/?utm_source=rss",
+      "title": "Σοβαρό τροχαίο στη Λαμία, δύο μηχανάκια συγκρούστηκαν μεταξύ τους, διασωληνώθηκε ένας νεαρός",
+      "normalized_title": "ΣΟΒΑΡΟ ΤΡΟΧΑΙΟ ΣΤΗ ΛΑΜΙΑ, ΔΥΟ ΜΗΧΑΝΑΚΙΑ ΣΥΓΚΡΟΥΣΤΗΚΑΝ ΜΕΤΑΞΥ ΤΟΥΣ, ΔΙΑΣΩΛΗΝΩΘΗΚΕ ΕΝΑΣ ΝΕΑΡΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852778/megali-fotia-sti-siteia-minuma-stous-katoikous-tou-xerokabou-apo-to-112/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852777/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852776/epta-sta-deka-paidia-stin-ellada-gennioudai-me-kaisariki-pososta-eos-kai-84-se-nosokomeia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852771/kupros-1974-ta-aporrita-tilegrafimata-pou-apokaluptoun-ton-kunismo-tou-kisinger/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852768/anoihta-ta-katastimata-tin-kuriaki-19-iouliou-ti-ishuei-gia-ta-souper-market/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852765/kairos-zesti-diarkeias-me-39aria-simera-erhetai-neo-kuma-eos-41c-apo-ti-deutera/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852802/sovaro-trohaio-sti-lamia-duo-mihanakia-sugroustikan-metaxu-tous-diasolinothike-enas-nearos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852788/1100000-monadikoi-hristes-enimerothikan-hthes-paraskeui-17-iouliou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852786/o-italos-eisvoleas-tou-pineiou-to-ble-kavouri-pou-skizei-ta-dihtua-kai-ginetai-eklektos-mezes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-18T05:28:34.455250+00:00"
+      "seen_at_utc": "2026-07-18T06:28:37.806165+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1430587/komision-stirixi-stin-kovesi-kritiki-hadi-stin-kyvernisi-gia-to-kratos-dikaioy/",
-      "title": "Κομισιόν: Στήριξη στην Κοβέσι, κριτική-χάδι στην κυβέρνηση για το κράτος δικαίου",
-      "normalized_title": "ΚΟΜΙΣΙΟΝ: ΣΤΗΡΙΞΗ ΣΤΗΝ ΚΟΒΕΣΙ, ΚΡΙΤΙΚΗ-ΧΑΔΙ ΣΤΗΝ ΚΥΒΕΡΝΗΣΗ ΓΙΑ ΤΟ ΚΡΑΤΟΣ ΔΙΚΑΙΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1430649/anoihta-tin-kyriaki-ta-katastimata-to-orario-leitoyrgias-ti-ishyei-me-ta-soyper-market/",
+      "title": "Ανοιχτά την Κυριακή τα καταστήματα: Το ωράριο λειτουργίας, τι ισχύει με τα σούπερ μάρκετ",
+      "normalized_title": "ΑΝΟΙΧΤΑ ΤΗΝ ΚΥΡΙΑΚΗ ΤΑ ΚΑΤΑΣΤΗΜΑΤΑ: ΤΟ ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ, ΤΙ ΙΣΧΥΕΙ ΜΕ ΤΑ ΣΟΥΠΕΡ ΜΑΡΚΕΤ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1430587/komision-stirixi-stin-kovesi-kritiki-hadi-stin-kyvernisi-gia-to-kratos-dikaioy/",
-        "https://www.efsyn.gr/ellada/1430614/kairos-zesti-diarkeias-me-poly-ypsiles-thermokrasies-neo-kyma-kaysona-me-40aria-apo-ayrio/",
-        "https://www.efsyn.gr/politiki/1430584/syriza-simera-i-eklogi-proedroy-me-moni-ypopsifia-ti-rena-doyroy-to-paraskinio-tis-aposyrsis-polaki/",
-        "https://www.efsyn.gr/kosmos/1430609/nyhta-tromoy-sti-mesi-anatoli-nekroi-kai-traymaties-sto-iran-i-teherani-apanta-me-epitheseis-se-vaseis-ton-ipa/",
-        "https://www.efsyn.gr/protoselida/haratsi-40-se-asfalismenoys-yperkerdi-gia-ta-funds/",
-        "https://www.efsyn.gr/nisides/1429404/i-politistiki-atzenta-tis-evdomadas-19-07-25-07-26/",
-        "https://www.efsyn.gr/ellada/1430601/eortologio-poioi-giortazoyn-simera-18-ioylioy/"
+        "https://www.efsyn.gr/ellada/1430649/anoihta-tin-kyriaki-ta-katastimata-to-orario-leitoyrgias-ti-ishyei-me-ta-soyper-market/",
+        "https://www.efsyn.gr/ellada/1430656/rogmes-se-spitia-stin-kypseli-den-xeroyme-an-yparhei-statiki-eparkeia-i-ohi-o-anadohos-tha-kalypsei-tis-zimies/",
+        "https://www.efsyn.gr/nisides/1429482/ti-simainei-farsa/",
+        "https://www.efsyn.gr/ellada/1430642/shedon-7-sta-10-paidia-gennioyntai-me-kaisariki-stin-ellada-apo-ta-ypsilotera-pososta-pagkosmios/",
+        "https://www.efsyn.gr/ellada/1430640/thessaloniki-nekros-odigos-mihanis-meta-apo-sygkroysi-me-i-h/",
+        "https://www.efsyn.gr/oikonomia/1430634/feta-kai-elaiolado-oi-dyo-ellinikoi-presveytes-xeperase-ta-21-dis-eyro-i-synoliki-axia-ton-exagogon-to-2025/",
+        "https://www.efsyn.gr/politiki/1430635/mipos-aplos-kanei-ti-doyleia-tis/",
+        "https://www.efsyn.gr/tehnes/1429427/diskokritiki-the-rolling-stones-polymnia-panos-vlahos-dismiss/",
+        "https://www.efsyn.gr/ellada/1430630/pyrkagia-ston-xerokampo-siteia-minyma-toy-112-gia-etoimotita-ton-katoikon/",
+        "https://www.efsyn.gr/kosmos/1430625/seismos-5-rihter-sti-notioanatoliki-toyrkia/",
+        "https://www.efsyn.gr/ellada/1430591/se-apolyti-apodromi-to-esy-horis-giatroys-ta-nisia-en-meso-toy-kalokairioy/"
       ],
-      "seen_at_utc": "2026-07-18T05:28:34.455227+00:00"
+      "seen_at_utc": "2026-07-18T06:28:37.806141+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/18/politics/syriza-i-teleytaia-eykairia-tou-polaki-gia-proedros-sygkrousi-mexri-telikis-ptosis-stin-kentriki-epitropi/",
-      "title": "ΣΥΡΙΖΑ: Η τελευταία ευκαιρία του Πολάκη για πρόεδρος – Σύγκρουση μέχρι τελικής πτώσης στην Κεντρική Επιτροπή",
-      "normalized_title": "ΣΥΡΙΖΑ: Η ΤΕΛΕΥΤΑΙΑ ΕΥΚΑΙΡΙΑ ΤΟΥ ΠΟΛΑΚΗ ΓΙΑ ΠΡΟΕΔΡΟΣ – ΣΥΓΚΡΟΥΣΗ ΜΕΧΡΙ ΤΕΛΙΚΗΣ ΠΤΩΣΗΣ ΣΤΗΝ ΚΕΝΤΡΙΚΗ ΕΠΙΤΡΟΠΗ",
+      "url": "https://www.in.gr/2026/07/18/sports/football/oi-athlitikes-metadoseis-tis-imeras-18-7-drasi-me-agiaks-olympiakos-kai-gallia-agglia/",
+      "title": "Οι αθλητικές μεταδόσεις της ημέρας (18/7): «Δράση» με Άγιαξ – Ολυμπιακός και Γαλλία – Αγγλία",
+      "normalized_title": "ΟΙ ΑΘΛΗΤΙΚΕΣ ΜΕΤΑΔΟΣΕΙΣ ΤΗΣ ΗΜΕΡΑΣ (18/7): «ΔΡΑΣΗ» ΜΕ ΑΓΙΑΞ – ΟΛΥΜΠΙΑΚΟΣ ΚΑΙ ΓΑΛΛΙΑ – ΑΓΓΛΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/18/politics/syriza-i-teleytaia-eykairia-tou-polaki-gia-proedros-sygkrousi-mexri-telikis-ptosis-stin-kentriki-epitropi/",
-        "https://www.in.gr/2026/07/18/economy/anoikta-ayrio-ta-katastimata-gia-tin-proti-kyriaki-ton-therinon-ekptoseon-to-orario/",
-        "https://www.in.gr/2026/07/18/sports/football/apofasi-stathmos-oi-athlitikes-poines-mporoun-na-anatrapoun-apo-aneksartito-dikasti/",
-        "https://www.in.gr/2026/07/18/life/culture-live/the-dreamers-erotas-drama-politiki-ena-nostalgiko-taksidi-sti-nouvelle-vague/",
-        "https://www.in.gr/2026/07/18/world/tourkia-seismos-megethous-5-rixter-sto-notioanatoliko-tmima-tis-xoras/",
-        "https://www.in.gr/2026/07/18/life/geysi/syntagi-kotopoulo-me-glykoksini-saltsa/",
-        "https://www.in.gr/2026/07/18/politics/statherotita-i-akyvernisia-i-istoria-diapseydei-to-dilimma-pou-thetei-o-kyriakos-mitsotakis/",
-        "https://www.in.gr/2026/07/18/greece/megali-fotia-se-ekseliksi-sti-siteia-ixise-to-112/",
-        "https://www.in.gr/2026/07/18/economy/oikonomikes-eidiseis/erxontai-ta-nea-timologia-reymatos-se-statheri-anodo-ta-mple/",
-        "https://www.in.gr/2026/07/18/plus/vita/pes-mou-ti-theleis-na-sou-po-poia-askisi-sou-tairiazei/",
-        "https://www.in.gr/2026/07/18/greece/kairos-anodos-tis-thermokrasias-me-39aria-pou-tha-vreksei/"
+        "https://www.in.gr/2026/07/18/sports/football/oi-athlitikes-metadoseis-tis-imeras-18-7-drasi-me-agiaks-olympiakos-kai-gallia-agglia/",
+        "https://www.in.gr/2026/07/18/greece/thessaloniki-nekros-23xronos-motosikletistis-epeita-apo-sfodri-sygkrousi-me-aytokinito/",
+        "https://www.in.gr/2026/07/18/sports/basketball/nea-eksairetiki-emfanisi-ekane-o-poulakidas-vid/",
+        "https://www.in.gr/2026/07/18/health/kaisariki-to-67-ton-paidion-stin-ellada-genniountai-me-tin-sygkekrimeni-methodo/",
+        "https://www.in.gr/2026/07/18/world/epta-nekroi-kai-24-traymaties-sti-rosia-meta-apo-epithesi-oukranikon-drones/",
+        "https://www.in.gr/2026/07/18/editorial/rekviem-gia-ena-komma-pou-exei-kleisei-ton-kyklo-tou-aygi-gia-mia-nea-elpida-gia-tin-koinonia/",
+        "https://www.in.gr/2026/07/18/sports/mountial-2026/rodri-o-mesi-einai-o-koryfaios-olon-ton-epoxon/",
+        "https://www.in.gr/2026/07/18/go-fun/social/arkas-se-kalokairini-diathesi/",
+        "https://www.in.gr/2026/07/18/plus/vita/to-na-min-kanoume-tipota-den-einai-kako/",
+        "https://www.in.gr/2026/07/18/greece/poly-ypsilos-kindynos-pyrkagias-to-savvato-se-portokali-synagermo-i-kriti/"
       ],
-      "seen_at_utc": "2026-07-18T05:28:34.455197+00:00"
+      "seen_at_utc": "2026-07-18T06:28:37.806114+00:00"
     }
   },
-  "updated_at_utc": "2026-07-18T05:28:34.455389+00:00"
+  "updated_at_utc": "2026-07-18T06:28:37.806254+00:00"
 }
