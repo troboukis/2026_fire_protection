@@ -1,21 +1,24 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564351361/techniti-noimosyni-ta-megalepivola-schedia-tis-kinas/",
-      "title": "Τεχνητή νοημοσύνη: Τα μεγαλεπήβολα σχέδια της Κίνας",
-      "normalized_title": "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ: ΤΑ ΜΕΓΑΛΕΠΗΒΟΛΑ ΣΧΕΔΙΑ ΤΗΣ ΚΙΝΑΣ",
+      "url": "https://www.kathimerini.gr/opinion/564351385/to-psychiko-trayma-toy-odyssea/",
+      "title": "Το ψυχικό τραύμα του Οδυσσέα",
+      "normalized_title": "ΤΟ ΨΥΧΙΚΟ ΤΡΑΥΜΑ ΤΟΥ ΟΔΥΣΣΕΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564351361/techniti-noimosyni-ta-megalepivola-schedia-tis-kinas/",
-        "https://www.kathimerini.gr/world/564352771/antallagi-pligmaton-ipa-iran-gia-evdomi-synechomeni-nychta/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564351244/dorea-trapezon-gia-anakainisi-ton-aei/",
-        "https://www.kathimerini.gr/economy/local/564351622/ilektronika-i-arsi-ton-katascheseon/",
-        "https://www.kathimerini.gr/politics/564351211/antiparathesi-se-ypsiloys-tonoys-gia-ton-opekepe/",
-        "https://www.kathimerini.gr/politics/government/564351214/kratos-dikaioy-katagrafi-proodoy-kai-systaseis-apo-e-e/",
-        "https://www.kathimerini.gr/world/564351349/vretania-oi-prokliseis-tis-epochis-mpernam-stin-ntaoyningk-strit/",
-        "https://www.kathimerini.gr/world/564351334/iran-pligmata-se-stratigikoys-stochoys-apo-tis-ipa/",
-        "https://www.kathimerini.gr/politics/parties/564351235/syriza-aposyrsi-polaki-apo-tin-koyrsa/"
+        "https://www.kathimerini.gr/opinion/564351385/to-psychiko-trayma-toy-odyssea/",
+        "https://www.kathimerini.gr/opinion/564351556/zitima-dimokratias-3/",
+        "https://www.kathimerini.gr/economy/local/564351610/simantiki-ysterisi-tis-elladas-enanti-tis-e-e-stin-paragogikotita/",
+        "https://www.kathimerini.gr/economy/diktis/564351718/to-oikonomiko-ofelos-tis-psifiopoiisis/",
+        "https://www.kathimerini.gr/world/564352819/i-stigmi-tis-ekrixis-exo-apo-tin-katoikia-toy-oykranoy-megistana-sto-monako-vinteo/",
+        "https://www.kathimerini.gr/visual/photography/564351091/choris-pleysi-stin-ollandia/",
+        "https://www.kathimerini.gr/politics/564351190/sto-maximoy-o-elpidoforos/",
+        "https://www.kathimerini.gr/politics/564351232/entos-kai-ektos-o-tsipras-kai-oi-mesaies-dynameis/",
+        "https://www.kathimerini.gr/economy/local/564351649/sta-34-ekat-i-epivatiki-kinisi-sta-aerodromia-to-a-6mino/",
+        "https://www.kathimerini.gr/world/564352789/tramp-kata-kanada-gia-tis-pyrkagies-mas-gemizoyn-me-vromiko-aera/",
+        "https://www.kathimerini.gr/economy/international/564351721/h-apple-xana-stin-koryfi/",
+        "https://www.kathimerini.gr/istoria/564351757/san-simera-18-ioylioy-1918-gennithike-o-nelson-mantela/"
       ],
-      "seen_at_utc": "2026-07-18T04:28:28.613100+00:00"
+      "seen_at_utc": "2026-07-18T05:28:34.455105+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,58 +1270,53 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1852761/kukloforiakes-ruthmiseis-sti-grammi-3-tou-metro-apo-tin-kuriaki-19-iouliou-poioi-stathmoi-kleinoun-noritera/?utm_source=rss",
-      "title": "Κυκλοφοριακές ρυθμίσεις στη Γραμμή 3 του Μετρό από την Κυριακή 19 Ιουλίου, ποιοι σταθμοί κλείνουν νωρίτερα",
-      "normalized_title": "ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗ ΓΡΑΜΜΗ 3 ΤΟΥ ΜΕΤΡΟ ΑΠΟ ΤΗΝ ΚΥΡΙΑΚΗ 19 ΙΟΥΛΙΟΥ, ΠΟΙΟΙ ΣΤΑΘΜΟΙ ΚΛΕΙΝΟΥΝ ΝΩΡΙΤΕΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1852778/megali-fotia-sti-siteia-minuma-stous-katoikous-tou-xerokabou-apo-to-112/?utm_source=rss",
+      "title": "Μεγάλη φωτιά στη Σητεία: Μήνυμα στους κατοίκους του Ξερόκαμπου από το 112",
+      "normalized_title": "ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΣΗΤΕΙΑ: ΜΗΝΥΜΑ ΣΤΟΥΣ ΚΑΤΟΙΚΟΥΣ ΤΟΥ ΞΕΡΟΚΑΜΠΟΥ ΑΠΟ ΤΟ 112",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1852761/kukloforiakes-ruthmiseis-sti-grammi-3-tou-metro-apo-tin-kuriaki-19-iouliou-poioi-stathmoi-kleinoun-noritera/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852758/se-sunagermo-i-kriti-gia-ton-kinduno-purkagias-sto-kitrino-i-attiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1852753/enas-nekros-se-dustuhima-me-mihani-sti-thessaloniki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1852778/megali-fotia-sti-siteia-minuma-stous-katoikous-tou-xerokabou-apo-to-112/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852777/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852776/epta-sta-deka-paidia-stin-ellada-gennioudai-me-kaisariki-pososta-eos-kai-84-se-nosokomeia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852771/kupros-1974-ta-aporrita-tilegrafimata-pou-apokaluptoun-ton-kunismo-tou-kisinger/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852768/anoihta-ta-katastimata-tin-kuriaki-19-iouliou-ti-ishuei-gia-ta-souper-market/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1852765/kairos-zesti-diarkeias-me-39aria-simera-erhetai-neo-kuma-eos-41c-apo-ti-deutera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-18T04:28:28.613232+00:00"
+      "seen_at_utc": "2026-07-18T05:28:34.455250+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1430579/italia-zita-hari-apo-ton-ptd-o-kosmimatopolis-poy-katadikasthike-gia-ti-dolofonia-dyo-liston/",
-      "title": "Ιταλία: Ζητά χάρη από τον ΠτΔ ο κοσμηματοπώλης που καταδικάσθηκε για τη δολοφονία δύο ληστών",
-      "normalized_title": "ΙΤΑΛΙΑ: ΖΗΤΑ ΧΑΡΗ ΑΠΟ ΤΟΝ ΠΤΔ Ο ΚΟΣΜΗΜΑΤΟΠΩΛΗΣ ΠΟΥ ΚΑΤΑΔΙΚΑΣΘΗΚΕ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΔΥΟ ΛΗΣΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1430587/komision-stirixi-stin-kovesi-kritiki-hadi-stin-kyvernisi-gia-to-kratos-dikaioy/",
+      "title": "Κομισιόν: Στήριξη στην Κοβέσι, κριτική-χάδι στην κυβέρνηση για το κράτος δικαίου",
+      "normalized_title": "ΚΟΜΙΣΙΟΝ: ΣΤΗΡΙΞΗ ΣΤΗΝ ΚΟΒΕΣΙ, ΚΡΙΤΙΚΗ-ΧΑΔΙ ΣΤΗΝ ΚΥΒΕΡΝΗΣΗ ΓΙΑ ΤΟ ΚΡΑΤΟΣ ΔΙΚΑΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1430579/italia-zita-hari-apo-ton-ptd-o-kosmimatopolis-poy-katadikasthike-gia-ti-dolofonia-dyo-liston/",
-        "https://www.efsyn.gr/athlitismos/1430575/moyntial-2026-o-ntesan-den-thelei-na-pei-antio-stin-ethniki-gallias-me-itta-ston-mikro-teliko/"
+        "https://www.efsyn.gr/politiki/1430587/komision-stirixi-stin-kovesi-kritiki-hadi-stin-kyvernisi-gia-to-kratos-dikaioy/",
+        "https://www.efsyn.gr/ellada/1430614/kairos-zesti-diarkeias-me-poly-ypsiles-thermokrasies-neo-kyma-kaysona-me-40aria-apo-ayrio/",
+        "https://www.efsyn.gr/politiki/1430584/syriza-simera-i-eklogi-proedroy-me-moni-ypopsifia-ti-rena-doyroy-to-paraskinio-tis-aposyrsis-polaki/",
+        "https://www.efsyn.gr/kosmos/1430609/nyhta-tromoy-sti-mesi-anatoli-nekroi-kai-traymaties-sto-iran-i-teherani-apanta-me-epitheseis-se-vaseis-ton-ipa/",
+        "https://www.efsyn.gr/protoselida/haratsi-40-se-asfalismenoys-yperkerdi-gia-ta-funds/",
+        "https://www.efsyn.gr/nisides/1429404/i-politistiki-atzenta-tis-evdomadas-19-07-25-07-26/",
+        "https://www.efsyn.gr/ellada/1430601/eortologio-poioi-giortazoyn-simera-18-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-17T21:27:58.267504+00:00"
+      "seen_at_utc": "2026-07-18T05:28:34.455227+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/18/sports/mountial-2026/to-simerino-programma-tou-mountial-to-rantevou-ton-megalon-xamenon-gallia-agglia/",
-      "title": "Το σημερινό πρόγραμμα του Μουντιάλ: Το ραντεβού των μεγάλων χαμένων (Γαλλία-Αγγλία)",
-      "normalized_title": "ΤΟ ΣΗΜΕΡΙΝΟ ΠΡΟΓΡΑΜΜΑ ΤΟΥ ΜΟΥΝΤΙΑΛ: ΤΟ ΡΑΝΤΕΒΟΥ ΤΩΝ ΜΕΓΑΛΩΝ ΧΑΜΕΝΩΝ (ΓΑΛΛΙΑ-ΑΓΓΛΙΑ)",
+      "url": "https://www.in.gr/2026/07/18/politics/syriza-i-teleytaia-eykairia-tou-polaki-gia-proedros-sygkrousi-mexri-telikis-ptosis-stin-kentriki-epitropi/",
+      "title": "ΣΥΡΙΖΑ: Η τελευταία ευκαιρία του Πολάκη για πρόεδρος – Σύγκρουση μέχρι τελικής πτώσης στην Κεντρική Επιτροπή",
+      "normalized_title": "ΣΥΡΙΖΑ: Η ΤΕΛΕΥΤΑΙΑ ΕΥΚΑΙΡΙΑ ΤΟΥ ΠΟΛΑΚΗ ΓΙΑ ΠΡΟΕΔΡΟΣ – ΣΥΓΚΡΟΥΣΗ ΜΕΧΡΙ ΤΕΛΙΚΗΣ ΠΤΩΣΗΣ ΣΤΗΝ ΚΕΝΤΡΙΚΗ ΕΠΙΤΡΟΠΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/18/sports/mountial-2026/to-simerino-programma-tou-mountial-to-rantevou-ton-megalon-xamenon-gallia-agglia/",
-        "https://www.in.gr/2026/07/18/life/culture-live/theatro-stoa-ti-tha-doume-ti-xeimerini-sezon-stin-56i-xronia-leitourgias/",
-        "https://www.in.gr/2026/07/18/greece/apozimiosi-gia-yperkoposi/",
-        "https://www.in.gr/2026/07/18/world/o-xartis-tou-anorthologismou-stin-eyropi/",
-        "https://www.in.gr/2026/07/18/plus/vita/i-psyxologia-kserei-giati-denesai-me-to-katoikidio-sou-alla-oxi-me-anthropous/",
-        "https://www.in.gr/2026/07/18/in-science/technology/kaysones-i-klimatiki-allagi-anatrofodotei-ton-eayto-tis-kai-ftaiei-oti-i-gi-aporrofa-perissotero-ilio/",
-        "https://www.in.gr/2026/07/18/politics/politiki-grammateia/opekepe-xoris-orio-oi-eytheies-paremvaseis-tis-kyvernisis-sti-dikaiosyni-me-georgiadi-mprostino/",
-        "https://www.in.gr/2026/07/18/in-science/technology/to-pekino-thelei-na-dosei-telos-sta-eidyllia-me-chatbots-gia-logous-psyxikis-ygeias-kai-ypogennitikotitas/",
-        "https://www.in.gr/2026/07/18/economy/diethnis-oikonomia/ygieini-diatrofi-to-kostos-akrivyne-25-mesa-se-pente-xronia/",
-        "https://www.in.gr/2026/07/18/greece/na-fytepsei-diki-tou-dioikisi-ston-panellinio-iatriko-syllogo-epixeirei-o-a-georgiadis/",
-        "https://www.in.gr/2026/07/18/world/i-odysseia-sti-dytiki-saxara-sinema-se-katexomena-edafi/",
-        "https://www.in.gr/2026/07/18/life/culture-live/la-la-land-sarose-ta-panta-to-2016-mia-dekaetia-meta-epistrefei-stis-skoteines-aithouses/",
-        "https://www.in.gr/2026/07/18/economy/oikonomikes-eidiseis/elegktiko-synedrio-pilotiki-diki-gia-tin-eisfora-allileggyis/",
-        "https://www.in.gr/2026/07/18/world/iran-ipa-7i-synapti-nyxta-antallagis-pligmaton-i-logiki-tis-klimakosis-ksefeygei-oloena-perissotero/",
-        "https://www.in.gr/2026/07/18/politics/diplomatia/kypriako-o-erxiourman-xairetizei-tin-episkepsi-gkouteres-kai-kanei-logo-gia-ousiastikes-syzitiseis/",
-        "https://www.in.gr/2026/07/18/world/o-tramp-apeilei-me-epipleon-dasmous-ton-kanada-gia-tin-molynsi-tou-aera-logo-ton-pyrkagion/",
-        "https://www.in.gr/2026/07/18/apopsi/symparastasi-se-tromokrates/",
-        "https://www.in.gr/2026/07/18/world/kanadas-pano-apo-200-pyrkagies-paramenoun-ektos-elegxou/",
-        "https://www.in.gr/2026/07/18/world/ipa-to-marouli-mias-alysidas-fast-fount-ypeythyno-gia-tin-epidimia-diarroias/",
-        "https://www.in.gr/2026/07/18/world/dyo-petrelaiofora-ferontai-na-xtypisan-se-narkes-sti-notia-diadromi-tou-ormouz-diapseydei-i-centcom/",
-        "https://www.in.gr/2026/07/18/world/kolpos-tou-anten-somaloi-peirates-ferontai-na-exoun-katalavei-deksamenoploio/",
-        "https://www.in.gr/2026/07/18/world/italia-sti-fylaki-o-kosmimatopolis-pou-dolofonise-tous-listes-tou-zita-na-tou-aponemithei-xari/",
-        "https://www.in.gr/2026/07/18/world/oukrania-rosia-toulaxiston-10-nekroi-kai-polloi-traymaties-se-epitheseis/",
-        "https://www.in.gr/2026/07/18/plus/medianews/sta-nea-savvatokyriako-demeni-i-ypothesi/"
+        "https://www.in.gr/2026/07/18/politics/syriza-i-teleytaia-eykairia-tou-polaki-gia-proedros-sygkrousi-mexri-telikis-ptosis-stin-kentriki-epitropi/",
+        "https://www.in.gr/2026/07/18/economy/anoikta-ayrio-ta-katastimata-gia-tin-proti-kyriaki-ton-therinon-ekptoseon-to-orario/",
+        "https://www.in.gr/2026/07/18/sports/football/apofasi-stathmos-oi-athlitikes-poines-mporoun-na-anatrapoun-apo-aneksartito-dikasti/",
+        "https://www.in.gr/2026/07/18/life/culture-live/the-dreamers-erotas-drama-politiki-ena-nostalgiko-taksidi-sti-nouvelle-vague/",
+        "https://www.in.gr/2026/07/18/world/tourkia-seismos-megethous-5-rixter-sto-notioanatoliko-tmima-tis-xoras/",
+        "https://www.in.gr/2026/07/18/life/geysi/syntagi-kotopoulo-me-glykoksini-saltsa/",
+        "https://www.in.gr/2026/07/18/politics/statherotita-i-akyvernisia-i-istoria-diapseydei-to-dilimma-pou-thetei-o-kyriakos-mitsotakis/",
+        "https://www.in.gr/2026/07/18/greece/megali-fotia-se-ekseliksi-sti-siteia-ixise-to-112/",
+        "https://www.in.gr/2026/07/18/economy/oikonomikes-eidiseis/erxontai-ta-nea-timologia-reymatos-se-statheri-anodo-ta-mple/",
+        "https://www.in.gr/2026/07/18/plus/vita/pes-mou-ti-theleis-na-sou-po-poia-askisi-sou-tairiazei/",
+        "https://www.in.gr/2026/07/18/greece/kairos-anodos-tis-thermokrasias-me-39aria-pou-tha-vreksei/"
       ],
-      "seen_at_utc": "2026-07-18T04:28:28.613182+00:00"
+      "seen_at_utc": "2026-07-18T05:28:34.455197+00:00"
     }
   },
-  "updated_at_utc": "2026-07-18T04:28:28.613332+00:00"
+  "updated_at_utc": "2026-07-18T05:28:34.455389+00:00"
 }
