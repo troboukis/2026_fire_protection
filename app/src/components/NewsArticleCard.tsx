@@ -1,4 +1,3 @@
-import type { KeyboardEvent } from 'react'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
 import { buildNewsImageSources } from '../lib/newsImage'
 
@@ -37,29 +36,17 @@ export default function NewsArticleCard({ item, priority = false }: Props) {
   const locationLabel = item.area ?? item.municipalityName ?? '—'
   const imageSources = item.imageUrl ? buildNewsImageSources(item.imageUrl) : null
 
-  const openArticle = () => {
-    window.open(item.articleUrl, '_blank', 'noopener,noreferrer')
-  }
-
-  const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      openArticle()
-    }
-  }
-
   const handleFireHover = (hovered: boolean) => {
     if (!item.activeFire) return
     dispatchCurrentFireHover(hovered ? item.activeFire.incidentKey : null)
   }
 
   return (
-    <article
+    <a
       className="wire-item news-article-card"
-      role="button"
-      tabIndex={0}
-      onClick={openArticle}
-      onKeyDown={handleKeyDown}
+      href={item.articleUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       onMouseEnter={item.activeFire ? () => handleFireHover(true) : undefined}
       onMouseLeave={item.activeFire ? () => handleFireHover(false) : undefined}
       onFocus={item.activeFire ? () => handleFireHover(true) : undefined}
@@ -93,6 +80,6 @@ export default function NewsArticleCard({ item, priority = false }: Props) {
           <span className="news-article-card__active-fire-label">ενεργή πυρκαγιά</span>
         </div>
       ) : null}
-    </article>
+    </a>
   )
 }
