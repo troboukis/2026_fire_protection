@@ -1,13 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564353731/moyntial-2026-i-agglia-nikise-me-6-4-ti-gallia-se-enan-apisteyto-mikro-teliko/",
-      "title": "Μουντιάλ 2026: Η Αγγλία νίκησε με 6-4 τη Γαλλία σε έναν απίστευτο μικρό τελικό",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: Η ΑΓΓΛΙΑ ΝΙΚΗΣΕ ΜΕ 6-4 ΤΗ ΓΑΛΛΙΑ ΣΕ ΕΝΑΝ ΑΠΙΣΤΕΥΤΟ ΜΙΚΡΟ ΤΕΛΙΚΟ",
+      "url": "https://www.kathimerini.gr/society/564353761/therines-ekptoseis-anoichta-simera-kyriaki-ta-katastimata-to-orario-leitoyrgias/",
+      "title": "Θερινές εκπτώσεις: Ανοιχτά σήμερα Κυριακή τα καταστήματα – Το ωράριο λειτουργίας",
+      "normalized_title": "ΘΕΡΙΝΕΣ ΕΚΠΤΩΣΕΙΣ: ΑΝΟΙΧΤΑ ΣΗΜΕΡΑ ΚΥΡΙΑΚΗ ΤΑ ΚΑΤΑΣΤΗΜΑΤΑ – ΤΟ ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564353731/moyntial-2026-i-agglia-nikise-me-6-4-ti-gallia-se-enan-apisteyto-mikro-teliko/"
+        "https://www.kathimerini.gr/society/564353761/therines-ekptoseis-anoichta-simera-kyriaki-ta-katastimata-to-orario-leitoyrgias/",
+        "https://www.kathimerini.gr/world/564353755/seismoi-sti-venezoyela-stoys-5-119-oi-nekroi-agnostos-o-arithmos-ton-agnooymenon/",
+        "https://www.kathimerini.gr/economy/564352354/forologiko-mponoys-gia-apotamieysi/",
+        "https://www.kathimerini.gr/athletics/564352246/arthro-toy-ilia-ntina-stin-k-i-teleytaia-aytonomia-tis-mpalas/",
+        "https://www.kathimerini.gr/life/science/564350014/to-parko-ton-psychon-stin-parnitha/",
+        "https://www.kathimerini.gr/world/564353752/ipa-synelifthisan-xana-o-antrioy-teit-kai-o-aderfos-toy/",
+        "https://www.kathimerini.gr/world/564353740/mesi-anatoli-8i-mera-pligmaton-sto-iran-antipoina-gia-ton-thanato-amerikanon-stratiotikon-stin-iordania/",
+        "https://www.kathimerini.gr/istoria/564351763/san-simera-19-ioylioy-1916-h-machi-toy-fromel/"
       ],
-      "seen_at_utc": "2026-07-19T04:27:55.414916+00:00"
+      "seen_at_utc": "2026-07-19T05:28:03.721401+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,51 +1266,54 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853067/upsilos-kindunos-purkagias-simera-stin-attiki-kai-se-polles-periohes-tis-horas/?utm_source=rss",
-      "title": "Υψηλός κίνδυνος πυρκαγιάς σήμερα στην Αττική και σε πολλές περιοχές της χώρας",
-      "normalized_title": "ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΤΗΝ ΑΤΤΙΚΗ ΚΑΙ ΣΕ ΠΟΛΛΕΣ ΠΕΡΙΟΧΕΣ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1853078/to-hroniko-tou-thriler-stin-kupseli-to-simeio-pou-vrethike-i-soros-mesa-sti-valitsa/?utm_source=rss",
+      "title": "Το χρονικό του θρίλερ στην Κυψέλη: Το σημείο που βρέθηκε η σορός μέσα στη βαλίτσα",
+      "normalized_title": "ΤΟ ΧΡΟΝΙΚΟ ΤΟΥ ΘΡΙΛΕΡ ΣΤΗΝ ΚΥΨΕΛΗ: ΤΟ ΣΗΜΕΙΟ ΠΟΥ ΒΡΕΘΗΚΕ Η ΣΟΡΟΣ ΜΕΣΑ ΣΤΗ ΒΑΛΙΤΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853067/upsilos-kindunos-purkagias-simera-stin-attiki-kai-se-polles-periohes-tis-horas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1853059/sunelifthi-29hronos-gia-diakinisi-narkotikon-stin-karpatho/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1853050/duo-pnigmoi-louomenon-to-savvato-se-messinia-kai-hania/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853078/to-hroniko-tou-thriler-stin-kupseli-to-simeio-pou-vrethike-i-soros-mesa-sti-valitsa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853075/tetraimeros-kausonas-apo-simera-eos-kai-43c-o-udrarguros-pote-tha-drosisei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853072/lemvos-me-47-metanastes-edopistike-anoihta-tis-kritis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853069/therines-ekptoseis-anoihta-simera-ta-katastimata-to-orario-ti-ishuei-gia-ta-souper-market-kai-i-apergia-sto-lianeborio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-19T04:27:55.414966+00:00"
+      "seen_at_utc": "2026-07-19T05:28:03.721559+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1431028/arvanitis-i-kyvernisi-tis-sygkalypsis-panigyrizei-gia-to-kratos-dikaioy-miloyn-ta-idia-ta-gegonota/",
-      "title": "Αρβανίτης: Η κυβέρνηση της συγκάλυψης πανηγυρίζει για το Κράτος Δικαίου – «Μιλούν τα ίδια τα γεγονότα»",
-      "normalized_title": "ΑΡΒΑΝΙΤΗΣ: Η ΚΥΒΕΡΝΗΣΗ ΤΗΣ ΣΥΓΚΑΛΥΨΗΣ ΠΑΝΗΓΥΡΙΖΕΙ ΓΙΑ ΤΟ ΚΡΑΤΟΣ ΔΙΚΑΙΟΥ – «ΜΙΛΟΥΝ ΤΑ ΙΔΙΑ ΤΑ ΓΕΓΟΝΟΤΑ»",
+      "url": "https://www.efsyn.gr/oikonomia/1430967/poia-soyper-market-tha-einai-anoihta-tin-kyriaki/",
+      "title": "Ποια σούπερ μάρκετ θα είναι ανοιχτά την Κυριακή",
+      "normalized_title": "ΠΟΙΑ ΣΟΥΠΕΡ ΜΑΡΚΕΤ ΘΑ ΕΙΝΑΙ ΑΝΟΙΧΤΑ ΤΗΝ ΚΥΡΙΑΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1431028/arvanitis-i-kyvernisi-tis-sygkalypsis-panigyrizei-gia-to-kratos-dikaioy-miloyn-ta-idia-ta-gegonota/",
-        "https://www.efsyn.gr/athlitismos/1431025/infantino-o-tramp-ton-karfose-alla-o-proedros-tis-fifa-tha-ti-glitosei-gia-to-skandalo-mpalogkan/"
+        "https://www.efsyn.gr/oikonomia/1430967/poia-soyper-market-tha-einai-anoihta-tin-kyriaki/",
+        "https://www.efsyn.gr/kosmos/1431035/flegetai-i-mesi-anatoli-amerikanika-pligmata-sto-iran-gia-toys-nekroys-stratiotikoys-nees-apeiles-apo-tin-teherani/",
+        "https://www.efsyn.gr/athlitismos/1431030/moyntial-2026-triti-thesi-gia-tin-agglia-me-to-entyposiako-6-4-epi-tis-gallias-egrapse-istoria-o-mpape/",
+        "https://www.efsyn.gr/ellada/1431031/eortologio-poioi-giortazoyn-simera-kyriaki-19-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-18T21:28:07.139517+00:00"
+      "seen_at_utc": "2026-07-19T05:28:03.721541+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/19/sports/mountial-2026/to-simerino-programma-tou-mountial-i-ora-tis-stepsis-ispania-argentini/",
-      "title": "Το σημερινό πρόγραμμα του Μουντιάλ: Η ώρα της στέψης (Ισπανία-Αργεντινή)",
-      "normalized_title": "ΤΟ ΣΗΜΕΡΙΝΟ ΠΡΟΓΡΑΜΜΑ ΤΟΥ ΜΟΥΝΤΙΑΛ: Η ΩΡΑ ΤΗΣ ΣΤΕΨΗΣ (ΙΣΠΑΝΙΑ-ΑΡΓΕΝΤΙΝΗ)",
+      "url": "https://www.in.gr/2026/07/19/world/ipa-epitethikan-gia-ogdoi-synexomeni-nyxta-sto-iran-tha-paroun-aksexasta-mathimata-dilonei-o-xamenei/",
+      "title": "Για όγδοη συνεχόμενη νύχτα επιτέθηκαν στο Ιράν οι ΗΠΑ - «Θα πάρουν αξέχαστα μαθήματα», δηλώνει ο Χαμενεΐ",
+      "normalized_title": "ΓΙΑ ΟΓΔΟΗ ΣΥΝΕΧΟΜΕΝΗ ΝΥΧΤΑ ΕΠΙΤΕΘΗΚΑΝ ΣΤΟ ΙΡΑΝ ΟΙ ΗΠΑ - «ΘΑ ΠΑΡΟΥΝ ΑΞΕΧΑΣΤΑ ΜΑΘΗΜΑΤΑ», ΔΗΛΩΝΕΙ Ο ΧΑΜΕΝΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/to-simerino-programma-tou-mountial-i-ora-tis-stepsis-ispania-argentini/",
-        "https://www.in.gr/2026/07/19/politics/kommata/ta-aderfia-teit-synelifthisan-sto-maiami-diokseis-sti-megali-vretania-gia-viasmous-kai-kakopoiisi-vinteo/",
-        "https://www.in.gr/2026/07/19/world/i-ntelsi-rontrigkez-apanta-sto-an-synergastike-me-tis-ipa-gia-tin-syllipsi-tou-madouro-o-rolos-tou-roumpio/",
-        "https://www.in.gr/2026/07/19/economy/diethnis-oikonomia/ti-kryvetai-piso-apo-tin-ptosi-se-xryso-bitcoin-kai-big-tech/",
-        "https://www.in.gr/2026/07/19/in-science/technology/o-zakermpergk-klevei-stelexos-tis-amazon/",
-        "https://www.in.gr/2026/07/19/world/i-texerani-kataggellei-epithesi-se-monada-afalatosis-afise-10-000-iranous-xoris-nero/",
-        "https://www.in.gr/2026/07/19/world/ekrikseis-sto-kievo-apo-megali-rosiki-epithesi/",
-        "https://www.in.gr/2026/07/19/world/deka-ptomata-vrethikan-sti-sakatekas-tou-meksiko-pente-ek-ton-opoion-kremontan-apo-gefyra-me-ena-minyma/",
-        "https://www.in.gr/2026/07/19/world/titloi-telous-apo-ton-anti-mpernam-stin-psifiaki-taytotita-pou-proothouse-o-kir-starmer/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/deite-tin-aponomi-ton-xalkinon-metallion-stin-agglia-vid/",
-        "https://www.in.gr/2026/07/19/world/to-israil-skotose-pentameli-oikogeneia-sti-gaza-ena-paidi-eleipe-tin-ora-tis-epithesis-deka-nekroi-synolika/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/apodokimasies-epeidi-o-mpeligxam-edose-to-penalti-ston-saka-gia-na-kanei-xat-trik-vid/",
-        "https://www.in.gr/2026/07/19/economy/diethnis-oikonomia/pos-oi-ipa-enisxysan-tin-ipia-isxy-tous-me-to-mountial/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/tromeros-empape-egine-protos-skorer-stin-istoria-ton-mountial-vid/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/gallia-agglia-4-6-apisteyto-mats-oi-aggloi-proigithikan-4-0-kai-paraligo-na-xasoun-tin-triti-thesi-vids/",
-        "https://www.in.gr/2026/07/19/world/o-tramp-zita-apo-tin-centcom-na-anoiksoun-oi-pyles-tis-kolaseos-kata-tou-iran/",
-        "https://www.in.gr/2026/07/19/world/kyvernoepithesi-ston-istotopo-tis-kenyatikis-proedrias-oi-xaker-zitousan-os-lytra-5-bitcoin/"
+        "https://www.in.gr/2026/07/19/world/ipa-epitethikan-gia-ogdoi-synexomeni-nyxta-sto-iran-tha-paroun-aksexasta-mathimata-dilonei-o-xamenei/",
+        "https://www.in.gr/2026/07/19/plus/vita/fistikia-aiginis-mikra-sto-mati-megala-se-diatrofiki-aksia/",
+        "https://www.in.gr/2026/07/19/sports/mountial-2026/to-mountial-ton-rekor-50-ekatommyria-dolaria-gia-ton-pagkosmio-protathliti/",
+        "https://www.in.gr/2026/07/19/greece/kairos-mini-kaysonas-apo-simera-stous-40c-i-thermokrasia-voriades-sto-aigaio/",
+        "https://www.in.gr/2026/07/19/go-fun/fizz/metaniono-pou-den-synantisa-ton-elvis-o-mik-tzagker-gia-tin-anoiti-symvouli-tou-tzon-lenon/",
+        "https://www.in.gr/2026/07/19/world/to-sxedio-tou-israil-ginetai-olo-kai-pio-safes-i-epomeni-mera-sti-gaza-den-tha-erthei-pote/",
+        "https://www.in.gr/2026/07/19/plus/vita/ena-vivlio-tin-imera-to-diavasma-kanei-kalo-stin-psyxiki-mas-ygeia/",
+        "https://www.in.gr/2026/07/19/greece/to-bbc-stin-ellada-to-nisi-tou-diavolou-pou-egine-o-faros-elpidas-gia-tin-agria-zoi/",
+        "https://www.in.gr/2026/07/19/in-analysis/casus-belli-mythoi-kai-pragmatikotita/",
+        "https://www.in.gr/2026/07/19/world/ntarlin-gkraxam-klironomiko-tzakpot-sto-pio-epifanes-girokomeio-ton-ipa/",
+        "https://www.in.gr/2026/07/19/world/anti-mpernam-epistrepste-ta-glypta-stin-ellada/",
+        "https://www.in.gr/2026/07/19/world/ftaiei-o-maikl-korleone-pou-exoume-ton-ntonalnt-tramp/",
+        "https://www.in.gr/2026/07/19/greece/skandalo-opekepe-koina-motiva-diafthoras-sti-diaxeirisi-ton-enisxyseon/",
+        "https://www.in.gr/2026/07/19/economy/plithorismos-giati-plironoume-akrivotera-ta-trofima-apo-tin-eyrozoni-i-ermineia-ton-oikonomologon/",
+        "https://www.in.gr/2026/07/19/in-analysis/ellinotourkikes-sxeseis-irema-nera-i-casus-belli/",
+        "https://www.in.gr/2026/07/19/life/culture-live/i-metamorfosi-tou-antoni-ipolito-se-silvester-stalone/",
+        "https://www.in.gr/2026/07/19/life/geysi/syntagi-strawberry-velvet-yogurt/"
       ],
-      "seen_at_utc": "2026-07-19T04:27:55.414951+00:00"
+      "seen_at_utc": "2026-07-19T05:28:03.721447+00:00"
     }
   },
-  "updated_at_utc": "2026-07-19T04:27:55.415022+00:00"
+  "updated_at_utc": "2026-07-19T05:28:03.721631+00:00"
 }
