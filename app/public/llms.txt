@@ -1,0 +1,34 @@
+# FireWatch
+
+> Το FireWatch είναι μια ελληνική δημοσιογραφική εφαρμογή δεδομένων για την παρακολούθηση δασικών πυρκαγιών, συμβάντων και ειδοποιήσεων 112, καθώς και δημόσιων συμβάσεων, αποφάσεων και χρηματοδοτήσεων πυροπροστασίας.
+
+Το περιεχόμενο είναι ενημερωτικό, δημοσιογραφικό και ερευνητικό. Το FireWatch δεν αποτελεί επίσημη υπηρεσία έκτακτης ανάγκης και δεν υποκαθιστά τις οδηγίες του 112, του Πυροσβεστικού Σώματος ή της Πολιτικής Προστασίας.
+
+## Δημιουργός
+
+- [Θανάσης Τρομπούκης](https://troboukis.gr): Δημοσιογράφος και δημιουργός του FireWatch.
+
+## Κύριες σελίδες
+
+- [Αρχική σελίδα](https://www.fire-watch-app.gr/): Σύνοψη ενεργών συμβάντων, πρόσφατων ειδήσεων και βασικών δεδομένων πυροπροστασίας.
+- [Χάρτες](https://www.fire-watch-app.gr/maps): Χαρτογραφική εξερεύνηση πυρκαγιών, συμβάσεων και σχετικών γεωγραφικών δεδομένων.
+- [Δήμοι](https://www.fire-watch-app.gr/municipalities): Δεδομένα πυροπροστασίας, συμβάσεων, χρηματοδοτήσεων και συμβάντων ανά δήμο.
+- [Συμβάσεις](https://www.fire-watch-app.gr/contracts): Αναζήτηση και εξερεύνηση δημόσιων συμβάσεων πυροπροστασίας.
+- [Διαύγεια](https://www.fire-watch-app.gr/diavgeia): Αποφάσεις σχετικές με δαπάνες και δράσεις πυροπροστασίας.
+- [Υπουργείο Περιβάλλοντος](https://www.fire-watch-app.gr/environment-ministry): Στοιχεία συμβάσεων και δαπανών σχετικών με το Υπουργείο Περιβάλλοντος.
+- [Ανάλυση](https://www.fire-watch-app.gr/analysis): Αναλύσεις και ευρήματα που προκύπτουν από τα δεδομένα.
+
+## Μεθοδολογία και κώδικας
+
+- [Μεθοδολογία](https://github.com/troboukis/2026_fire_protection/blob/main/Methodology.md): Πηγές, συλλογή, καθαρισμός, αντιστοίχιση και περιορισμοί των δεδομένων.
+- [Αποθετήριο κώδικα](https://github.com/troboukis/2026_fire_protection): Πηγαίος κώδικας της εφαρμογής και των pipelines δεδομένων.
+- [Όροι χρήσης](https://www.fire-watch-app.gr/terms): Όροι, αποποίηση ευθύνης και πληροφορίες για τις πηγές δεδομένων.
+- [Πολιτική απορρήτου](https://www.fire-watch-app.gr/privacy): Πληροφορίες για την επεξεργασία δεδομένων και τα cookies.
+
+## Ανοιχτά δεδομένα
+
+- [Κατάλογος ανοιχτών δεδομένων](https://github.com/troboukis/2026_fire_protection/tree/main/data/open_data): Περιγραφές των διαθέσιμων CSV, τα οποία ενημερώνονται καθημερινά από τη βάση δεδομένων του FireWatch.
+- [Δημόσιες συμβάσεις CSV](https://raw.githubusercontent.com/troboukis/2026_fire_protection/main/data/open_data/procurements.csv): Συμβάσεις με πληρωμές, δικαιούχους, κωδικούς CPV και καταγεγραμμένες εργασίες.
+- [Αποφάσεις Διαύγειας CSV](https://raw.githubusercontent.com/troboukis/2026_fire_protection/main/data/open_data/diavgeia.csv): Αποφάσεις της Διαύγειας και συσχετισμένα στοιχεία.
+- [Τρέχουσες πυρκαγιές και ειδοποιήσεις 112 CSV](https://raw.githubusercontent.com/troboukis/2026_fire_protection/main/data/open_data/current_fires.csv): Ενεργά και παλαιότερα συμβάντα μαζί με συνδεδεμένες ειδοποιήσεις 112.
+- [Πυρκαγιές Copernicus CSV](https://raw.githubusercontent.com/troboukis/2026_fire_protection/main/data/open_data/copernicus_fires.csv): Συμβάντα Copernicus και γεωγραφική αντιστοίχιση.

@@ -2320,7 +2320,7 @@ export default function App() {
               <div>
                 <span className="label">ΠΟΙΟΣ</span>
                 <strong>
-                  <a href="https://troboukis.github.io">Θανάσης Τρομπούκης</a>
+                  <a href="https://troboukis.gr">Θανάσης Τρομπούκης</a>
                 </strong>
                 <span className="about-stats__sub">Δημοσιογράφος</span>
               </div>
@@ -2349,6 +2349,13 @@ export default function App() {
               </div>
               <div>
                 <strong>Η παρούσα εφαρμογή είναι προϊόν συνεργασίας ανθρώπινης και τεχνητής νοημοσύνης</strong>
+              </div>
+              <div className="about-media-link">
+                <span className="label">ΔΗΜΟΣΙΕΥΜΑΤΑ</span>
+                <strong>Το FireWatch στα μέσα ενημέρωσης</strong>
+                <span className="about-stats__sub">
+                  <Link to="/media">Άρθρα, συνεντεύξεις και εμφανίσεις →</Link>
+                </span>
               </div>
             </div>
           </div>
