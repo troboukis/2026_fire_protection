@@ -2337,6 +2337,11 @@ export default function App() {
                     Github repository
                   </a>
                 </span>
+                <span className="about-stats__sub">
+                  <a href="https://github.com/troboukis/2026_fire_protection/tree/main/data/open_data" target="_blank" rel="noreferrer">
+                    Ανοιχτά δεδομένα (CSV)
+                  </a>
+                </span>
               </div>
               <div>
                 <span className="label">ΓΙΑΤΙ</span>
