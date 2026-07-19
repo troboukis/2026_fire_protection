@@ -403,6 +403,44 @@ def build_maps(
     return out
 
 
+def build_diavgeia_maps(
+    org_map: pd.DataFrame,
+    expanded_map: pd.DataFrame,
+) -> dict[tuple[str, str], tuple[str | None, str | None]]:
+    """Build geography mappings without reducing multi-area authorities to one municipality."""
+    out = build_maps(org_map, expanded_map.iloc[0:0])
+    geography_by_alias: dict[str, dict[str, set[str]]] = {}
+
+    exp_org = expanded_map[expanded_map["source_entity_type"] == "organization"]
+    for _, row in exp_org.iterrows():
+        municipality_id = t(row.get("municipality_id"))
+        region_id = t(row.get("region_id"))
+        for raw_alias in (row.get("source_value"), row.get("normalized_value")):
+            alias = t_up(raw_alias)
+            if alias is None:
+                continue
+            geography = geography_by_alias.setdefault(alias, {"municipalities": set(), "regions": set()})
+            if municipality_id is not None:
+                geography["municipalities"].add(municipality_id)
+            if region_id is not None:
+                geography["regions"].add(region_id)
+
+    for alias, geography in geography_by_alias.items():
+        municipalities = geography["municipalities"]
+        regions = geography["regions"]
+        municipality_id = next(iter(municipalities)) if len(municipalities) == 1 else None
+        region_id = next(iter(regions)) if len(regions) == 1 else None
+        if municipality_id is None and region_id is None:
+            continue
+        value = (municipality_id, region_id)
+        out.setdefault(("", alias), value)
+        normalized_alias = norm_key(alias)
+        if normalized_alias is not None:
+            out.setdefault(("", normalized_alias), value)
+
+    return out
+
+
 def seed_region_rows(b: CsvBundle) -> list[tuple]:
     out: list[tuple] = []
     seen_pairs: set[tuple[str, str]] = set()
@@ -1828,6 +1866,7 @@ def main() -> None:
     bundle = read_csvs(limit=args.limit)
     log("Building lookup maps...")
     org_map = build_maps(bundle.org_map, bundle.expanded_map)
+    diavgeia_org_map = build_diavgeia_maps(bundle.org_map, bundle.expanded_map)
 
     region_seed = seed_region_rows(bundle)
     muni_seed = seed_municipality_rows(bundle)
@@ -1903,7 +1942,7 @@ def main() -> None:
     )
     diav = diav_rows(
         bundle.diav,
-        org_map,
+        diavgeia_org_map,
         organization_lookup,
         region_lookup,
         municipality_lookup,
