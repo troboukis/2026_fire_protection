@@ -1,16 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564352372/sta-2-dis-i-desmi-metron-tis-deth/",
-      "title": "Στα 2 δισ. η δέσμη μέτρων της ΔΕΘ",
-      "normalized_title": "ΣΤΑ 2 ΔΙΣ. Η ΔΕΣΜΗ ΜΕΤΡΩΝ ΤΗΣ ΔΕΘ",
+      "url": "https://www.kathimerini.gr/society/564351934/to-chroniko-tis-exichniasis-16-chronia-meta/",
+      "title": "Το χρονικό της εξιχνίασης 16 χρόνια μετά",
+      "normalized_title": "ΤΟ ΧΡΟΝΙΚΟ ΤΗΣ ΕΞΙΧΝΙΑΣΗΣ 16 ΧΡΟΝΙΑ ΜΕΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564352372/sta-2-dis-i-desmi-metron-tis-deth/",
-        "https://www.kathimerini.gr/society/564353809/messinia-sta-dikastiria-oi-treis-gia-toys-emprismoys-pos-ekviazan-agrotes/",
-        "https://www.kathimerini.gr/life/technology/564353821/facebook-provlimata-sti-syndesi-dekades-anafores-apo-christes/",
-        "https://www.kathimerini.gr/politics/564353806/mitsotakis-ta-erga-einai-ekeina-poy-telika-metroyn-perissotero-apo-ta-logia/"
+        "https://www.kathimerini.gr/society/564351934/to-chroniko-tis-exichniasis-16-chronia-meta/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564352021/xafniki-kinitikotita-sto-kypriako/",
+        "https://www.kathimerini.gr/society/564353851/chalkidiki-ich-sygkroystike-me-ochima-tis-pyrosvestikis-traymatistike-20chronos/",
+        "https://www.kathimerini.gr/society/564353845/pyrgos-ileias-toympare-i-ch-prin-ti-gefyra-alfeioy-soa-i-odigos/",
+        "https://www.kathimerini.gr/society/564353839/thessaloniki-66chronos-synelifthi-gia-ton-viasmo-tis-syntrofoy-toy/",
+        "https://www.kathimerini.gr/society/564353833/thessaloniki-36chronos-traymatise-41chrono-me-exartima-psarematos/",
+        "https://www.kathimerini.gr/life/564349348/vgazo-1-500-eyro-ton-chrono-poylontas-second-hand-roycha/"
       ],
-      "seen_at_utc": "2026-07-19T08:28:22.237640+00:00"
+      "seen_at_utc": "2026-07-19T09:28:07.758970+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,42 +1265,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853150/horis-delivery-o-telikos-tou-moudial-stasi-ergasias-apo-tis-1900-eos-ta-mesanuhta/?utm_source=rss",
-      "title": "Χωρίς delivery ο τελικός του Μουντιάλ: Στάση εργασίας από τις 19:00 έως τα μεσάνυχτα",
-      "normalized_title": "ΧΩΡΙΣ DELIVERY Ο ΤΕΛΙΚΟΣ ΤΟΥ ΜΟΥΝΤΙΑΛ: ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ ΑΠΟ ΤΙΣ 19:00 ΕΩΣ ΤΑ ΜΕΣΑΝΥΧΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1853169/sovaro-atuhima-sti-halkidiki-ih-sugroustike-me-ohima-tis-purosvestikis-traumatistike-20hronos/?utm_source=rss",
+      "title": "Σοβαρό ατύχημα στη Χαλκιδική: ΙΧ συγκρούστηκε με όχημα της Πυροσβεστικής, τραυματίστηκε 20χρονος",
+      "normalized_title": "ΣΟΒΑΡΟ ΑΤΥΧΗΜΑ ΣΤΗ ΧΑΛΚΙΔΙΚΗ: ΙΧ ΣΥΓΚΡΟΥΣΤΗΚΕ ΜΕ ΟΧΗΜΑ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ, ΤΡΑΥΜΑΤΙΣΤΗΚΕ 20ΧΡΟΝΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853150/horis-delivery-o-telikos-tou-moudial-stasi-ergasias-apo-tis-1900-eos-ta-mesanuhta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853169/sovaro-atuhima-sti-halkidiki-ih-sugroustike-me-ohima-tis-purosvestikis-traumatistike-20hronos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853168/sunelifthi-27hronos-gia-diakinisi-narkotikon-sti-halkidiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853160/thessaloniki-sunelifthi-36hronos-pou-traumatise-andra-me-aihmiro-exartima-psarematos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-19T08:28:22.237730+00:00"
+      "seen_at_utc": "2026-07-19T09:28:07.759110+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1431092/provlimata-sto-facebook-anafores-hriston-gia-ektetameni-diakopi/",
-      "title": "Προβλήματα στο facebook: Αναφορές χρηστών για εκτεταμένη διακοπή",
-      "normalized_title": "ΠΡΟΒΛΗΜΑΤΑ ΣΤΟ FACEBOOK: ΑΝΑΦΟΡΕΣ ΧΡΗΣΤΩΝ ΓΙΑ ΕΚΤΕΤΑΜΕΝΗ ΔΙΑΚΟΠΗ",
+      "url": "https://www.efsyn.gr/athlitismos/1430798/telikos-moyntial-2026-o-mesi-kai-10-ispanoi-diethneis-ehoyn-didahthei-to-podosfairo-stin-mpartselona/",
+      "title": "Τελικός Μουντιάλ 2026: Ο Μέσι και 10 Ισπανοί διεθνείς έχουν διδαχθεί το ποδόσφαιρο στην Μπαρτσελόνα",
+      "normalized_title": "ΤΕΛΙΚΟΣ ΜΟΥΝΤΙΑΛ 2026: Ο ΜΕΣΙ ΚΑΙ 10 ΙΣΠΑΝΟΙ ΔΙΕΘΝΕΙΣ ΕΧΟΥΝ ΔΙΔΑΧΘΕΙ ΤΟ ΠΟΔΟΣΦΑΙΡΟ ΣΤΗΝ ΜΠΑΡΤΣΕΛΟΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1431092/provlimata-sto-facebook-anafores-hriston-gia-ektetameni-diakopi/",
-        "https://www.efsyn.gr/athlitismos/1431089/moyntial-2026-o-polemos-gia-tin-aioniotita-i-ora-toy-megaloy-telikoy-anamesa-se-argentini-ispania/",
-        "https://www.efsyn.gr/politiki/1431087/tsoykalas-o-mitsotakis-etaxe-ta-panta-stoys-pantes-to-pasok-ehei-shedio-gia-toys-polites/",
-        "https://www.efsyn.gr/ellada/1431085/thessaloniki-66hronos-viase-ti-syntrofo-toy-mesa-sto-diamerisma-tis-katiggeile-monos-toy-ton-eayto-toy/",
-        "https://www.efsyn.gr/oikonomia/1428289/i-voylgaria-stratikopoieitai-me-eyropaika-kondylia-poy-proorizontan-gia-ti-meiosi-ton-anisotiton/"
+        "https://www.efsyn.gr/athlitismos/1430798/telikos-moyntial-2026-o-mesi-kai-10-ispanoi-diethneis-ehoyn-didahthei-to-podosfairo-stin-mpartselona/",
+        "https://www.efsyn.gr/ellada/1431098/moyntial-horis-delivery-apergoyn-oi-dianomeis-gia-ton-thanato-synadelfoy-toys/",
+        "https://www.efsyn.gr/ellada/1431096/kypseli-anoigoyn-fakeloi-exafanismenon-gynaikon-peripoy-30-eton-to-thyma-ta-senaria-poy-exetazontai/",
+        "https://www.efsyn.gr/politiki/1431095/to-moyntial-poy-emeine-axehasto-ston-niko-androylaki-poion-vlepei-megalo-nikiti-vinteo/"
       ],
-      "seen_at_utc": "2026-07-19T08:28:22.237707+00:00"
+      "seen_at_utc": "2026-07-19T09:28:07.759076+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/19/go-fun/social/provlimata-syndesis-sto-facebook-ekatontades-anafores-apo-xristes-gia-mi-diathesimi-selida/",
-      "title": "Προβλήματα σύνδεσης στο Facebook - Εκατοντάδες αναφορές από χρήστες για «μη διαθέσιμη» σελίδα",
-      "normalized_title": "ΠΡΟΒΛΗΜΑΤΑ ΣΥΝΔΕΣΗΣ ΣΤΟ FACEBOOK - ΕΚΑΤΟΝΤΑΔΕΣ ΑΝΑΦΟΡΕΣ ΑΠΟ ΧΡΗΣΤΕΣ ΓΙΑ «ΜΗ ΔΙΑΘΕΣΙΜΗ» ΣΕΛΙΔΑ",
+      "url": "https://www.in.gr/2026/07/19/greece/fotia-sta-selinia-salaminas-minyma-apo-to-112-stous-katoikous-parameinete-se-etoimotita/",
+      "title": "Φωτιά στα Σελίνια Σαλαμίνας – Μήνυμα από το 112 στους κατοίκους, «παραμείνετε σε ετοιμότητα»",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΑ ΣΕΛΙΝΙΑ ΣΑΛΑΜΙΝΑΣ – ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112 ΣΤΟΥΣ ΚΑΤΟΙΚΟΥΣ, «ΠΑΡΑΜΕΙΝΕΤΕ ΣΕ ΕΤΟΙΜΟΤΗΤΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/07/19/go-fun/social/provlimata-syndesis-sto-facebook-ekatontades-anafores-apo-xristes-gia-mi-diathesimi-selida/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/touxel-i-agglia-extise-perissotera-se-olo-to-mountial-apo-osa-exase-se-30-lepta/",
-        "https://www.in.gr/2026/07/19/life/culture-live/oi-protoi-influencers-ston-kosmo-itan-galloi-emfanistikan-meta-tin-epanastasi-kai-mperdepsan-tis-takseis/",
-        "https://www.in.gr/2026/07/19/greece/messinia-ston-eisaggelea-oi-treis-syllifthentes-gia-kat-eksakolouthisi-emprismous/",
-        "https://www.in.gr/2026/07/19/greece/sok-sti-thessaloniki-66xronos-viase-ti-syntrofo-tou-mesa-sto-diamerisma-tis/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/mountial-2026-omorfes-eikones-filathloi-tis-argentinis-kai-tis-ispanias-tragoudoun-mazi-vid/",
-        "https://www.in.gr/2026/07/19/life/woman/synelifthisan-oi-epaggelmaties-misogynides-antriou-kai-tristan-teit-gia-ti-katigorountai/"
+        "https://www.in.gr/2026/07/19/greece/fotia-sta-selinia-salaminas-minyma-apo-to-112-stous-katoikous-parameinete-se-etoimotita/",
+        "https://www.in.gr/2026/07/19/politics/paraskinio/poia-itan-i-proti-anamnisi-tou-nikou-androulaki-apo-agona-mountial/",
+        "https://www.in.gr/2026/07/19/politics/politiki-grammateia/syriza-o-mitsotakis-emfanistike-os-kommatarxis-palaiou-typou-grafei-ektheseis-ideon/",
+        "https://www.in.gr/2026/07/19/politics/politiki-grammateia/tsoukalas-o-mitsotakis-leitourgei-os-o-megalos-ekmaylistis-pou-ekpaideyei-ti-xora-stin-anoxi-sti-diafthora/",
+        "https://www.in.gr/2026/07/19/sports/mountial-2026/to-spoudaio-minyma-tou-mesi-oti-ki-an-symvei-ston-teliko-i-omada-ayti-exei-grapsei-istoria/",
+        "https://www.in.gr/2026/07/19/life/culture-live/ftaiei-to-taxi-driver-pou-exoume-simera-na-kanoume-me-kati-typous-san-ton-antriou-teit/",
+        "https://www.in.gr/2026/07/19/greece/to-asthenoforo-ekane-toumpes-pos-synevi-to-dystyxima-me-enan-nekro-kai-treis-traymaties-sta-xania/",
+        "https://www.in.gr/2026/07/19/greece/thessaloniki-synelifthi-36xronos-gia-epithesi-enantion-41xronou-me-eksartima-psarematos/",
+        "https://www.in.gr/2026/07/19/sports/mountial-2026/sygkinithike-sto-antio-tou-o-ntesan-dyo-tria-minymata-me-ekanan-na-klapso-tha-mou-leipsei-i-ethniki-vid/",
+        "https://www.in.gr/2026/07/19/world/oukrania-mainetai-i-politiki-krisi-giati-vrisketai-sto-stoxastro-ton-diadiloton-o-arxistratigos-sirski/"
       ],
-      "seen_at_utc": "2026-07-19T08:28:22.237686+00:00"
+      "seen_at_utc": "2026-07-19T09:28:07.759036+00:00"
     }
   },
-  "updated_at_utc": "2026-07-19T08:28:22.237796+00:00"
+  "updated_at_utc": "2026-07-19T09:28:07.759185+00:00"
 }
