@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564352465/ntana-sintezoyntean-na-enischythoyn-oi-paroches-se-eidos/",
-      "title": "Ντάνα Σιντεζουντέαν: Να ενισχυθούν οι παροχές σε είδος",
-      "normalized_title": "ΝΤΑΝΑ ΣΙΝΤΕΖΟΥΝΤΕΑΝ: ΝΑ ΕΝΙΣΧΥΘΟΥΝ ΟΙ ΠΑΡΟΧΕΣ ΣΕ ΕΙΔΟΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564319312/eortologio-poioi-giortazoyn-simera-20-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 20 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 20 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564352465/ntana-sintezoyntean-na-enischythoyn-oi-paroches-se-eidos/",
-        "https://www.kathimerini.gr/society/astynomiko/564354058/peristeri-ypallilos-synelifthi-gia-odigies-klopis-11-000-eyro-apo-etairiko-aytokinito/",
-        "https://www.kathimerini.gr/economy/564352435/arthro-toy-manoy-manoysaki-stin-k-ethniko-kai-eyropaiko-symferon-o-exilektrismos-tis-oikonomias/",
-        "https://www.kathimerini.gr/world/564354214/o-kanadas-apagoreyei-tin-eisodo-se-allodapoys-poy-taxidepsan-sto-kongko-logo-empola/",
-        "https://www.kathimerini.gr/economy/564352501/i-anaptyxi-allazei-charaktira/",
-        "https://www.kathimerini.gr/society/564354205/thessaloniki-enas-78chronos-imedapos-anasyrthike-choris-tis-aisthiseis-toy-apo-paralia/"
+        "https://www.kathimerini.gr/eortologio/564319312/eortologio-poioi-giortazoyn-simera-20-ioylioy/",
+        "https://www.kathimerini.gr/culture/564352723/plektanes-kai-astikoi-mythoi/",
+        "https://www.kathimerini.gr/economy/564352426/arthro-toy-andrea-athanasopoyloy-stin-k-i-athoryvi-epanastasi-poy-den-perimenei-ta-megala-erga/",
+        "https://www.kathimerini.gr/society/564354223/egnatia-odos-atomo-anasyrthike-nekro-apo-kameno-aytokinito-ston-paradromo/"
       ],
-      "seen_at_utc": "2026-07-19T20:28:05.119713+00:00"
+      "seen_at_utc": "2026-07-19T21:28:07.159124+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,44 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853338/tragodia-sti-fokida-duo-nekroi-kai-enas-sovara-traumatias-se-trohaio/?utm_source=rss",
-      "title": "Δύο νεκροί και ένας σοβαρά τραυματίας σε τροχαίο στη Φωκίδα",
-      "normalized_title": "ΔΥΟ ΝΕΚΡΟΙ ΚΑΙ ΕΝΑΣ ΣΟΒΑΡΑ ΤΡΑΥΜΑΤΙΑΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗ ΦΩΚΙΔΑ",
+      "url": "https://www.protothema.gr/greece/article/1853345/se-auximeni-epifulaki-o-dimos-athinaion-gia-ton-kausona-anoigoun-epta-klimatizomenoi-horoi/?utm_source=rss",
+      "title": "Σε αυξημένη επιφυλακή ο Δήμος Αθηναίων για τον καύσωνα: Ανοίγουν επτά κλιματιζόμενοι χώροι",
+      "normalized_title": "ΣΕ ΑΥΞΗΜΕΝΗ ΕΠΙΦΥΛΑΚΗ Ο ΔΗΜΟΣ ΑΘΗΝΑΙΩΝ ΓΙΑ ΤΟΝ ΚΑΥΣΩΝΑ: ΑΝΟΙΓΟΥΝ ΕΠΤΑ ΚΛΙΜΑΤΙΖΟΜΕΝΟΙ ΧΩΡΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853338/tragodia-sti-fokida-duo-nekroi-kai-enas-sovara-traumatias-se-trohaio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853345/se-auximeni-epifulaki-o-dimos-athinaion-gia-ton-kausona-anoigoun-epta-klimatizomenoi-horoi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-19T20:28:05.119843+00:00"
+      "seen_at_utc": "2026-07-19T21:28:07.159281+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1431216/moyntial-2026-sakira-mantona-mpimper-kai-bts-elampsan-sto-sooy-toy-imihronoy-toy-megaloy-telikoy-eikones-vinteo/",
-      "title": "Μουντιάλ 2026: Σακίρα, Μαντόνα, Μπίμπερ και BTS έλαμψαν στο σόου του ημιχρόνου [εικόνες-βίντεο]",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: ΣΑΚΙΡΑ, ΜΑΝΤΟΝΑ, ΜΠΙΜΠΕΡ ΚΑΙ BTS ΕΛΑΜΨΑΝ ΣΤΟ ΣΟΟΥ ΤΟΥ ΗΜΙΧΡΟΝΟΥ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1431269/dimos-athinaion-metra-gia-ton-kaysona-anoigoyn-klimatizomenoi-horoi-frontida-gia-tis-eyalotes-omades/",
+      "title": "Δήμος Αθηναίων: Μέτρα για τον καύσωνα – Ανοίγουν κλιματιζόμενοι χώροι, φροντίδα για τις ευάλωτες ομάδες",
+      "normalized_title": "ΔΗΜΟΣ ΑΘΗΝΑΙΩΝ: ΜΕΤΡΑ ΓΙΑ ΤΟΝ ΚΑΥΣΩΝΑ – ΑΝΟΙΓΟΥΝ ΚΛΙΜΑΤΙΖΟΜΕΝΟΙ ΧΩΡΟΙ, ΦΡΟΝΤΙΔΑ ΓΙΑ ΤΙΣ ΕΥΑΛΩΤΕΣ ΟΜΑΔΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1431216/moyntial-2026-sakira-mantona-mpimper-kai-bts-elampsan-sto-sooy-toy-imihronoy-toy-megaloy-telikoy-eikones-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1431247/sakkari-ehase-stis-leptomereies-apo-tin-kreitsikova-ston-teliko-toy-athens-open-vinteo/",
-        "https://www.efsyn.gr/ellada/1431243/tragodia-sto-oraiokastro-apanthrakomeno-ptoma-vrethike-dipla-se-flegomeno-aytokinito/",
-        "https://www.efsyn.gr/tehnes/1430882/o-kale-nio-stin-ef-syn-me-tin-pseydaisthisi-dimioyrgo-oti-moiazei-adynato/",
-        "https://www.efsyn.gr/ellada/1431232/motoporeia-dianomeon-gia-to-neo-ergatiko-dystyhima-apekleisan-prosorina-tin-plateia-syntagmatos-vinteo/"
+        "https://www.efsyn.gr/ellada/1431269/dimos-athinaion-metra-gia-ton-kaysona-anoigoyn-klimatizomenoi-horoi-frontida-gia-tis-eyalotes-omades/",
+        "https://www.efsyn.gr/kosmos/1431266/goyiana-terastio-kyma-anetrepse-ferimpot-ston-atlantiko-agnooyntai-66-anthropoi/",
+        "https://www.efsyn.gr/athlitismos/1431262/i-afierosi-tis-marias-sakkari-ston-konstantino-mitsotaki-agapi-moy-konstantine-moy-se-eyharisto-vinteo/"
       ],
-      "seen_at_utc": "2026-07-19T20:28:05.119813+00:00"
+      "seen_at_utc": "2026-07-19T21:28:07.159242+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/19/sports/mountial-2026/i-argentini-egine-i-deyteri-omada-stin-istoria-xoris-teliki-sto-proto-imixrono-se-teliko/",
-      "title": "Η Αργεντινή έγινε η δεύτερη ομάδα στην Ιστορία χωρίς τελική στο πρώτο ημίχρονο σε τελικό",
-      "normalized_title": "Η ΑΡΓΕΝΤΙΝΗ ΕΓΙΝΕ Η ΔΕΥΤΕΡΗ ΟΜΑΔΑ ΣΤΗΝ ΙΣΤΟΡΙΑ ΧΩΡΙΣ ΤΕΛΙΚΗ ΣΤΟ ΠΡΩΤΟ ΗΜΙΧΡΟΝΟ ΣΕ ΤΕΛΙΚΟ",
+      "url": "https://www.in.gr/2026/07/20/greece/evros-eikones-xaous-kai-symplokes-metaksy-tourkon-odigon-stis-kastanies-apisteyti-talaiporia-ston-synoriako-stathmo/",
+      "title": "Έβρος: Εικόνες χάους και συμπλοκές μεταξύ Τούρκων οδηγών στις Καστανιές – Απίστευτη ταλαιπωρία στον συνοριακό σταθμό",
+      "normalized_title": "ΕΒΡΟΣ: ΕΙΚΟΝΕΣ ΧΑΟΥΣ ΚΑΙ ΣΥΜΠΛΟΚΕΣ ΜΕΤΑΞΥ ΤΟΥΡΚΩΝ ΟΔΗΓΩΝ ΣΤΙΣ ΚΑΣΤΑΝΙΕΣ – ΑΠΙΣΤΕΥΤΗ ΤΑΛΑΙΠΩΡΙΑ ΣΤΟΝ ΣΥΝΟΡΙΑΚΟ ΣΤΑΘΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/i-argentini-egine-i-deyteri-omada-stin-istoria-xoris-teliki-sto-proto-imixrono-se-teliko/",
-        "https://www.in.gr/2026/07/19/world/i-gen-z-telika-pinei-aplos-argise-na-ftasei-sto-mpar/",
-        "https://www.in.gr/2026/07/19/economy/diethnis-oikonomia/oi-katartismenoi-ergazomenoi-egkataleipoun-ti-germania-anazitoun-kalytero-eisodima-kai-poiotita-zois/",
-        "https://www.in.gr/2026/07/19/life/music/i-lorde-ektokseyei-pyra-pros-to-spotify-gia-neo-ai-ergaleio-den-to-theloume-ayto/",
-        "https://www.in.gr/2026/07/19/greece/dianomeis-i-kokkini-karta-meta-to-neo-ergatiko-dystyxima-megali-motoporeia-me-kapnogona-kai-synthimata/",
-        "https://www.in.gr/2026/07/19/sports/football/o-xoselou-protathike-ston-paok-pic/",
-        "https://www.in.gr/2026/07/19/greece/tragodia-sti-fokida-dyo-nekroi-kai-enas-traymatias-se-troxaio-ston-koniako-doridas/",
-        "https://www.in.gr/2026/07/19/sports/mountial-2026/o-giannis-antetokounmpo-ston-teliko-tou-mountial-synantithike-me-ton-ishowspeed-vid/",
-        "https://www.in.gr/2026/07/19/economy/odigos-epiviosis-gia-eksodikastiko-pos-na-rythmisete-xrei-apo-e5-000/"
+        "https://www.in.gr/2026/07/20/greece/evros-eikones-xaous-kai-symplokes-metaksy-tourkon-odigon-stis-kastanies-apisteyti-talaiporia-ston-synoriako-stathmo/",
+        "https://www.in.gr/2026/07/20/world/gouiana-ena-terastio-kyma-anetrepse-ferimpot-pou-vythistike-ston-atlantiko-agnoountai-66-anthropoi/",
+        "https://www.in.gr/2026/07/20/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-deytera-20-07-2026/",
+        "https://www.in.gr/2026/07/20/greece/giorti-simera-20-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/19/in-science/technology/ti-allazei-me-tis-epafes-sto-kinito-mas-to-google-contacts-apokta-nea-enotita/",
+        "https://www.in.gr/2026/07/19/sports/mountial-2026/sakira-kai-tzastin-mpimper-ksesikosan-to-koino-sto-imixrono-tou-telikou-vids/",
+        "https://www.in.gr/2026/07/19/sports/mountial-2026/fournie-gia-to-halftime-show-tou-telikou-tou-mountial-itan-pragmatika-enoxlitiko/",
+        "https://www.in.gr/2026/07/19/economy/tholo-to-geopolitiko-skiniko-ton-agoron-kai-ton-oikonomion/",
+        "https://www.in.gr/2026/07/19/world/akomi-enas-nekros-amerikanos-stratiotis-sti-mesi-anatoli-skotothike-sto-irak/"
       ],
-      "seen_at_utc": "2026-07-19T20:28:05.119764+00:00"
+      "seen_at_utc": "2026-07-19T21:28:07.159184+00:00"
     }
   },
-  "updated_at_utc": "2026-07-19T20:28:05.119912+00:00"
+  "updated_at_utc": "2026-07-19T21:28:07.159351+00:00"
 }
