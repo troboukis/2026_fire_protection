@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564354232/moyntial-2026-i-ispania-stin-koryfi-toy-kosmoy/",
-      "title": "Μουντιάλ 2026: Η Ισπανία στην κορυφή του κόσμου",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: Η ΙΣΠΑΝΙΑ ΣΤΗΝ ΚΟΡΥΦΗ ΤΟΥ ΚΟΣΜΟΥ",
+      "url": "https://www.kathimerini.gr/society/564354271/chartis-provlepsis-pyrkagion-kitrinos-synagermos-se-22-perioches/",
+      "title": "Χάρτης πρόβλεψης πυρκαγιών: «Κίτρινος» συναγερμός σε 22 περιοχές",
+      "normalized_title": "ΧΑΡΤΗΣ ΠΡΟΒΛΕΨΗΣ ΠΥΡΚΑΓΙΩΝ: «ΚΙΤΡΙΝΟΣ» ΣΥΝΑΓΕΡΜΟΣ ΣΕ 22 ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564354232/moyntial-2026-i-ispania-stin-koryfi-toy-kosmoy/"
+        "https://www.kathimerini.gr/society/564354271/chartis-provlepsis-pyrkagion-kitrinos-synagermos-se-22-perioches/",
+        "https://www.kathimerini.gr/society/564354244/kairos-se-kloio-kaysona-i-chora-tis-epomenes-imeres-eos-toys-41-vathmoys-o-ydrargyros/",
+        "https://www.kathimerini.gr/politics/564354250/el-a-s-ayta-einai-ta-75-meli-tis-politikis-epitropis/",
+        "https://www.kathimerini.gr/society/dikastiko/564354241/diki-gia-ta-tempi-oloklironontai-oi-topothetiseis-ton-synigoron-yperaspisis/",
+        "https://www.kathimerini.gr/world/564354235/stena-toy-ormoyz-ploio-stis-floges-eno-to-iran-anakoptei-tin-poreia-se-dyo-tanker/"
       ],
-      "seen_at_utc": "2026-07-19T22:28:02.701360+00:00"
+      "seen_at_utc": "2026-07-20T04:28:12.157013+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,45 +1263,84 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853357/tesseris-thanatoi-louomenon-tin-kuriaki-se-oli-ti-hora/?utm_source=rss",
-      "title": "Τέσσερις θάνατοι λουομένων την Κυριακή σε όλη τη χώρα",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΘΑΝΑΤΟΙ ΛΟΥΟΜΕΝΩΝ ΤΗΝ ΚΥΡΙΑΚΗ ΣΕ ΟΛΗ ΤΗ ΧΩΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1853379/se-kloio-kausona-i-hora-eos-41-vathmous-i-thermokrasia-simera-pote-halaei/?utm_source=rss",
+      "title": "Σε κλοιό καύσωνα η χώρα, έως 41 βαθμούς η θερμοκρασία σήμερα",
+      "normalized_title": "ΣΕ ΚΛΟΙΟ ΚΑΥΣΩΝΑ Η ΧΩΡΑ, ΕΩΣ 41 ΒΑΘΜΟΥΣ Η ΘΕΡΜΟΚΡΑΣΙΑ ΣΗΜΕΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853357/tesseris-thanatoi-louomenon-tin-kuriaki-se-oli-ti-hora/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853379/se-kloio-kausona-i-hora-eos-41-vathmous-i-thermokrasia-simera-pote-halaei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853377/diki-gia-ta-tebi-oloklironetai-to-stadio-ton-enstaseon-simera-i-eisaggeliki-protasi-epi-ton-aitimaton-gia-anavoli/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-19T22:28:02.701473+00:00"
+      "seen_at_utc": "2026-07-20T04:28:12.157157+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1431274/moyntial-2026-protathlitria-kosmoy-i-ispania-itan-poly-anoteri-apo-tin-argentini-ti-lytrose-o-tores-eikones-vinteo/",
-      "title": "Μουντιάλ 2026: Πρωταθλήτρια κόσμου η Ισπανία που «εξαφάνισε» την Αργεντινή – Το χρυσό γκολ ο Τόρες [εικόνες-βίντεο]",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: ΠΡΩΤΑΘΛΗΤΡΙΑ ΚΟΣΜΟΥ Η ΙΣΠΑΝΙΑ ΠΟΥ «ΕΞΑΦΑΝΙΣΕ» ΤΗΝ ΑΡΓΕΝΤΙΝΗ – ΤΟ ΧΡΥΣΟ ΓΚΟΛ Ο ΤΟΡΕΣ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/athlitismos/1431345/moyntial-2026-entasi-me-ton-paredes-meta-ton-teliko-epiase-apo-ton-laimo-ton-gkarthia-vinteo/",
+      "title": "Μουντιάλ 2026: Ενταση με τον Παρέδες μετά τον τελικό – Έπιασε από τον λαιμό τον Γκαρθία [βίντεο]",
+      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: ΕΝΤΑΣΗ ΜΕ ΤΟΝ ΠΑΡΕΔΕΣ ΜΕΤΑ ΤΟΝ ΤΕΛΙΚΟ – ΕΠΙΑΣΕ ΑΠΟ ΤΟΝ ΛΑΙΜΟ ΤΟΝ ΓΚΑΡΘΙΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1431274/moyntial-2026-protathlitria-kosmoy-i-ispania-itan-poly-anoteri-apo-tin-argentini-ti-lytrose-o-tores-eikones-vinteo/"
+        "https://www.efsyn.gr/athlitismos/1431345/moyntial-2026-entasi-me-ton-paredes-meta-ton-teliko-epiase-apo-ton-laimo-ton-gkarthia-vinteo/",
+        "https://www.efsyn.gr/ellada/1431343/mystirio-stin-kypseli-ntymeni-i-soros-poy-vrethike-se-valitsa-horis-emfaneis-kakoseis-kai-ekdores/",
+        "https://www.efsyn.gr/athlitismos/1431335/lionel-mesi-xespase-se-dakrya-meta-tin-itta-tis-argentinis-ston-teliko-toy-moyntial-2026-vinteo/",
+        "https://www.efsyn.gr/kosmos/1431339/fovoi-gia-genikeymeni-sygkroysi-sti-mesi-anatoli-antallagi-sfodron-pligmaton-metaxy-ipa-iran/",
+        "https://www.efsyn.gr/athlitismos/1431328/moyntial-2026-stin-koryfi-toy-kosmoy-i-ispania-lygise-stin-paratasi-me-1-0-tin-apokroystiki-argentini/",
+        "https://www.efsyn.gr/ellada/1431325/triimeros-kaysonas-saronei-ti-hora-stoys-42-vathmoys-o-ydrargyros-oi-periohes-me-tis-ypsiloteres-thermokrasies/",
+        "https://www.efsyn.gr/politiki/1431323/neo-komma-nea-prosopa-ayta-einai-ta-75-meli-tis-politikis-epitropis-tis-elas/",
+        "https://www.efsyn.gr/kosmos/1431317/ipa-iran-enati-synehomeni-nyhta-epitheseon-htypisame-poly-sklira-apopse-eipe-o-tramp/",
+        "https://www.efsyn.gr/nisides/1430295/i-litotita-os-ergaleio-kyriarhias/",
+        "https://www.efsyn.gr/nisides/1430281/grammata-ston-marx/",
+        "https://www.efsyn.gr/protoselida/egklima-kai-timoria/",
+        "https://www.efsyn.gr/ellada/1431314/eortologio-megali-giorti-simera-20-ioylioy-se-poioys-leme-hronia-polla/",
+        "https://www.efsyn.gr/athlitismos/1431304/moyntial-2026-meta-ton-teliko-o-giamal-pige-ston-mesi-kai-ton-agkaliase-vinteo/"
       ],
-      "seen_at_utc": "2026-07-19T22:28:02.701455+00:00"
+      "seen_at_utc": "2026-07-20T04:28:12.157128+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/20/sports/mountial-2026/xrysafi-apo-ti-fifa-stin-ispania-posa-xrimata-tha-parei-i-fouria-roxa-me-tin-kataktisi-tou-mountial/",
-      "title": "«Χρυσάφι» από τη FIFA στην Ισπανία – Πόσα χρήματα θα πάρει η «φούρια ρόχα» με την κατάκτηση του Μουντιάλ",
-      "normalized_title": "«ΧΡΥΣΑΦΙ» ΑΠΟ ΤΗ FIFA ΣΤΗΝ ΙΣΠΑΝΙΑ – ΠΟΣΑ ΧΡΗΜΑΤΑ ΘΑ ΠΑΡΕΙ Η «ΦΟΥΡΙΑ ΡΟΧΑ» ΜΕ ΤΗΝ ΚΑΤΑΚΤΗΣΗ ΤΟΥ ΜΟΥΝΤΙΑΛ",
+      "url": "https://www.in.gr/2026/07/20/economy/eksoxikes-katoikies-ayksanontai-oi-times-gia-agora-oi-akrivoteres-perioxes/",
+      "title": "Εξοχικές κατοικίες: Αυξάνονται οι τιμές για αγορά – Οι ακριβότερες περιοχές",
+      "normalized_title": "ΕΞΟΧΙΚΕΣ ΚΑΤΟΙΚΙΕΣ: ΑΥΞΑΝΟΝΤΑΙ ΟΙ ΤΙΜΕΣ ΓΙΑ ΑΓΟΡΑ – ΟΙ ΑΚΡΙΒΟΤΕΡΕΣ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/xrysafi-apo-ti-fifa-stin-ispania-posa-xrimata-tha-parei-i-fouria-roxa-me-tin-kataktisi-tou-mountial/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/ayta-mono-i-ispania-back-to-back-protathlitria-eyropis-kai-kosmou-gia-deyteri-fora-stin-istoria-tis/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/to-deytero-pagkosmio-tis-ispanias-i-xrysi-vivlos-ton-nikiton-tou-mountial/",
-        "https://www.in.gr/2026/07/20/world/mountial-2026-ksefreno-panigyri-stin-ispania-gia-tin-kataktisi-tou-pagkosmiou-kypellou/",
-        "https://www.in.gr/2026/07/20/world/ouggaria-o-prothypourgos-magiar-proteinei-ti-skakistria-polgkar-gia-proedro-tis-xoras/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/thrylos-ton-mountial-o-empape-protos-skorer-olon-ton-epoxon-kai-monadikos-me-dyo-xrysa-papoutsia/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/ispania-argentini-1-0-stin-koryfi-tou-kosmou-i-koryfaia-sygxroni-ethniki-omada/",
-        "https://www.in.gr/2026/07/20/economy/diethnis-oikonomia/antonov-o-rosikos-gigantas-stin-ypiresia-ton-airbus-kai-boeing/",
-        "https://www.in.gr/2026/07/20/world/mountial-2026-tramp-kai-santseth-afisan-gia-ligo-stin-akri-tis-diafores-tous-i-antallagi-xeirapsias-stin-kerkida-enydreio/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/o-feran-tores-lytrose-tin-ispania-ki-anoikse-to-skor-stin-paratasi-vid/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/skorare-o-gouiliams-gia-tin-ispania-akyrothike-gia-faoul-tou-merino-vid/",
-        "https://www.in.gr/2026/07/20/sports/on-field/italia-athlitikografos-dolofonithike-sto-empoli/",
-        "https://www.in.gr/2026/07/20/economy/elastika-to-telos-ton-oikonomikon-kinezikon-elastikon-stin-eyropi-apo-ti-ragdaia-anodo-sto-avevaio-mellon/",
-        "https://www.in.gr/2026/07/20/sports/mountial-2026/synexizei-me-deka-i-argentini-apovlithike-me-deyteri-kitrini-karta-o-entso-fernantes-vid/"
+        "https://www.in.gr/2026/07/20/economy/eksoxikes-katoikies-ayksanontai-oi-times-gia-agora-oi-akrivoteres-perioxes/",
+        "https://www.in.gr/2026/07/20/world/ipa-epliksan-gia-enati-synexomeni-nyxta-to-iran-i-texerani-leei-oti-stoxopoiise-amerikanika-aeroskafi/",
+        "https://www.in.gr/2026/07/20/politics/pasok-meta-to-mountial-proetoimasies-gia-tin-deth-kai-tin-3i-tou-septemvri-sti-thessaloniki-simera-o-androulakis/",
+        "https://www.in.gr/2026/07/20/life/geysi/syntagi-kotopoulo-pikata-sto-fourno/",
+        "https://www.in.gr/2026/07/20/world/to-israil-klimakonei-tin-prospatheia-elegxou-sti-dytiki-oxthi-thelei-na-katasxesei-arxaies-sternes-sti-vithleem/",
+        "https://www.in.gr/2026/07/20/greece/tempi-teleytaia-topothetisi-apo-synigoro-yperaspisis-i-eisaggeleas-proteinei-epi-ton-aitimaton-gia-anavoli/",
+        "https://www.in.gr/2026/07/20/politics/i-elas-oloklironei-tin-organotiki-tis-domi-me-tin-politiki-epitropi-ola-ta-onomata/",
+        "https://www.in.gr/2026/07/20/plus/vita/mipos-i-xara-einai-pio-simantiki-sti-zoi-mas-ap-oso-pisteyoume/",
+        "https://www.in.gr/2026/07/20/greece/kairos-tha-liosoume-ksekina-o-triimeros-kaysonas-mexri-kai-43-vathmous-tha-deiksei-to-thermometro/",
+        "https://www.in.gr/2026/07/20/greece/olo-to-paraskinio-ton-ereynon-gia-ti-marfin/",
+        "https://www.in.gr/2026/07/20/life/culture-live/koukles-i-tablet-me-ti-synistatai-na-paizoun-ta-paidia/",
+        "https://www.in.gr/2026/07/20/politics/politiki-grammateia/oi-neoi-psifizoun-apoxi/",
+        "https://www.in.gr/2026/07/20/plus/vita/eyfyia-den-paizei-rolo-mono-to-iq/",
+        "https://www.in.gr/2026/07/20/world/to-agnosto-ravasaki-tis-texeranis-ston-vans-pos-kousner-kai-gouitkof-ferontai-na-yponomeysan-ti-symfonia-ipa-iran/",
+        "https://www.in.gr/2026/07/20/in-science/perivallon-b-science/to-telos-tis-athootitas-gia-tin-klimatiki-krisi-i-epistimi-deixnei-tous-enoxous-gia-ton-akraio-kairo/",
+        "https://www.in.gr/2026/07/20/life/culture-live/samantha-morton-i-symmetoxi-stin-odysseia-moiazei-me-anagennisi/",
+        "https://www.in.gr/2026/07/20/politics/politiki-grammateia/vouli-oi-anakatatakseis-ston-xarti-tou-koinovouliou-oi-anatropes-kai-i-nea-politiki-dynami/",
+        "https://www.in.gr/2026/07/20/world/tessera-zofera-senaria-gia-to-mellon-tis-rosias/",
+        "https://www.in.gr/2026/07/20/world/iran-to-stratigiko-oplo-tis-kinas-pou-allazei-ta-dedomena-ston-polemo-me-tis-ipa/",
+        "https://www.in.gr/2026/07/20/world/iran-epipleon-maxitika-aeroskafi-anaptyssoun-oi-ipa-sti-mesi-anatoli-alla-den-exoume-arketa-pyromaxika/",
+        "https://www.in.gr/2026/07/20/world/venezouela-toulaxiston-5-208-nekroi-apo-ton-diplo-seismo-symfona-me-neotero-apologismo/",
+        "https://www.in.gr/2026/07/20/world/stena-tou-ormouz-ploio-exei-tylixtei-stis-floges/",
+        "https://www.in.gr/2026/07/20/economy/diethnis-oikonomia/iran-alma-stin-timi-tou-petrelaiou-meta-tin-enarksi-tou-9ou-kymatos-ton-epitheseon-apo-tis-ipa/",
+        "https://www.in.gr/2026/07/20/world/mesi-anatoli-oi-ipa-epitithentai-gia-9i-synapti-nyxta-sto-iran-pou-apanta-me-pligmata-se-xores-tis-perioxis/",
+        "https://www.in.gr/2026/07/20/economy/diethnis-oikonomia/to-deal-ipa-ee-enan-xrono-meta-poso-den-tirithike/",
+        "https://www.in.gr/2026/07/20/plus/medianews/sta-nea-tis-deyteras-mporo-na-xtiso-kaneis-den-kserei/",
+        "https://www.in.gr/2026/07/20/economy/diethnis-oikonomia/petrelaio-oi-ipa-ayksanoun-tis-geotriseis-kai-tin-paragogi-petrelaiou/",
+        "https://www.in.gr/2026/07/20/world/nigiras-16-stratiotikoi-skotothikan-se-tromokratiki-epithesi/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/h-aponomi-stin-ispania-den-efeyge-apo-to-plano-o-tramp-mexri-na-sikosei-o-rodri-tin-koupa-vids/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/mia-eikona-xilies-lekseis-ta-dakrya-tou-mesi-meta-ton-xameno-teliko-tis-argentinis/",
+        "https://www.in.gr/2026/07/20/world/odysseia-eisprakseis-1245-ekat-dolarion-to-savvatokyriako-se-ipa-kai-kanada/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/i-paradosi-tou-stemmatos-agkalia-mesi-giamal-meta-ton-teliko-vid-pics/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/sarose-i-ispania-mvp-o-rodri-kalyteros-termatofylakas-o-simon-koryfaios-neos-o-koumparsi-vids/",
+        "https://www.in.gr/2026/07/20/world/iran-seirines-synagermou-energopoiithikan-sto-mpaxrein/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/ta-entyposiaka-rekor-tis-ispanias-kai-tou-nte-la-fouente/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/oi-xeiropedes-tou-nte-la-fouente/",
+        "https://www.in.gr/2026/07/20/politics/sygxaritiria-stin-ethniki-omada-tis-ispanias-apo-ton-niko-androulaki/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/madriti-mpouenos-aires-to-kontrast-synaisthimaton-sta-prosopa-ton-opadon-ti-stigmi-tou-gkol-vinteo/",
+        "https://www.in.gr/2026/07/20/sports/mountial-2026/trelathike-o-paredes-sto-telos-epiase-apo-ton-laimo-ton-gkarsia-kai-erikse-agkonia-ston-gkavi-vid/",
+        "https://www.in.gr/2026/07/20/world/poia-einai-i-sampana-maxmount-i-pithani-ypourgos-oikonomikon-tou-mpernam/"
       ],
-      "seen_at_utc": "2026-07-19T22:28:02.701418+00:00"
+      "seen_at_utc": "2026-07-20T04:28:12.157082+00:00"
     }
   },
-  "updated_at_utc": "2026-07-19T22:28:02.701545+00:00"
+  "updated_at_utc": "2026-07-20T04:28:12.157245+00:00"
 }
