@@ -1,23 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/auto/564355585/ta-prota-se-poliseis-aytokinita-stin-ellada-to-proto-miso-toy-2026/",
-      "title": "Τα πρώτα σε πωλήσεις αυτοκίνητα στην Ελλάδα το πρώτο μισό του 2026",
-      "normalized_title": "ΤΑ ΠΡΩΤΑ ΣΕ ΠΩΛΗΣΕΙΣ ΑΥΤΟΚΙΝΗΤΑ ΣΤΗΝ ΕΛΛΑΔΑ ΤΟ ΠΡΩΤΟ ΜΙΣΟ ΤΟΥ 2026",
+      "url": "https://www.kathimerini.gr/society/564355693/thessaloniki-nekri-71chroni-poy-parasyrthike-apo-toyristiko-leoforeio-2/",
+      "title": "Θεσσαλονίκη: Νεκρή 71χρονη που παρασύρθηκε από τουριστικό λεωφορείο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΝΕΚΡΗ 71ΧΡΟΝΗ ΠΟΥ ΠΑΡΑΣΥΡΘΗΚΕ ΑΠΟ ΤΟΥΡΙΣΤΙΚΟ ΛΕΩΦΟΡΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/auto/564355585/ta-prota-se-poliseis-aytokinita-stin-ellada-to-proto-miso-toy-2026/",
-        "https://www.kathimerini.gr/culture/tv/564355600/oi-kores-tis-aretis-i-nea-dramatiki-seira-erchetai-ston-alpha/",
-        "https://www.kathimerini.gr/society/564352084/kathilomenoi-stin-afetiria/",
-        "https://www.kathimerini.gr/politics/564355570/kyr-mitsotakis-kathreftis-tis-alitheias-i-deth-stirixi-sti-mesaia-taxi/",
-        "https://www.kathimerini.gr/society/564352180/na-vlepoyme-ta-nisia-me-ta-matia-toy-cheimona/",
-        "https://www.kathimerini.gr/society/564355567/thessaloniki-nekri-71chroni-poy-parasyrthike-apo-toyristiko-leoforeio/",
-        "https://www.kathimerini.gr/athletics/564355558/kevin-kigkan-o-gios-anthrakorychoy-poy-egine-o-vasilias-toy-nioykastl/",
-        "https://www.kathimerini.gr/k/k-magazine/564354652/astypalaia-apo-to-tsoula-festival-den-efyge-kaneis/",
-        "https://www.kathimerini.gr/world/564355552/oyggaria-i-skakistria-tzoyntit-polgkar-pithanos-nea-proedros-tis-choras/",
-        "https://www.kathimerini.gr/athletics/564355537/pethane-o-kevin-kigkan-se-ilikia-75-eton/",
-        "https://www.kathimerini.gr/athletics/564355324/moyntial-2026-to-total-football-tis-ispanias-i-mantona-kai-to-faoyl-toy-mesi/"
+        "https://www.kathimerini.gr/society/564355693/thessaloniki-nekri-71chroni-poy-parasyrthike-apo-toyristiko-leoforeio-2/",
+        "https://www.kathimerini.gr/athletics/564355663/moyntial-kare-kare-to-chroniko-tis-entasis-sto-finale-toy-telikoy-eikones-amp-vinteo/",
+        "https://www.kathimerini.gr/world/564355669/gallia-polyori-kratisi-kai-ekfovismos-ypallilon-tis-presveias-sto-iran/",
+        "https://www.kathimerini.gr/life/health/564350725/ti-astheneies-koyvaloyn-ta-koynoypia-kai-poso-epikindynes-einai/",
+        "https://www.kathimerini.gr/culture/cinema/564355633/i-odysseia-exantlise-ton-nolan-toylachiston-tria-chronia-mechri-na-gyristei-nea-tainia/",
+        "https://www.kathimerini.gr/society/astynomiko/564355630/kypseli-choris-emfani-traymata-anoikto-to-endechomeno-tis-asfyxias/",
+        "https://www.kathimerini.gr/politics/564355606/apo-ta-mploka-sta-psifodeltia/",
+        "https://www.kathimerini.gr/world/564355615/ipa-isovia-katheirxi-ston-el-magio-toy-kartel-tis-sinaloa/"
       ],
-      "seen_at_utc": "2026-07-20T15:28:00.647138+00:00"
+      "seen_at_utc": "2026-07-20T16:28:11.390489+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,53 +1266,55 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853752/kairos-xeperase-tous-41c-o-udrarguros-oi-8-periohes-me-tis-upsiloteres-thermokrasies/?utm_source=rss",
-      "title": "Καιρός: Ξεπέρασε τους 41°C ο υδράργυρος, οι 8 περιοχές με τις υψηλότερες θερμοκρασίες",
-      "normalized_title": "ΚΑΙΡΟΣ: ΞΕΠΕΡΑΣΕ ΤΟΥΣ 41°C Ο ΥΔΡΑΡΓΥΡΟΣ, ΟΙ 8 ΠΕΡΙΟΧΕΣ ΜΕ ΤΙΣ ΥΨΗΛΟΤΕΡΕΣ ΘΕΡΜΟΚΡΑΣΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1853769/sto-nosokomeio-16hroni-stin-alexandroupoli-epeita-apo-upervoliki-katanalosi-alkool/?utm_source=rss",
+      "title": "Στο νοσοκομείο 16χρονη στην Αλεξανδρούπολη έπειτα από υπερβολική κατανάλωση αλκοόλ, συνελήφθη η μητέρα της",
+      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ 16ΧΡΟΝΗ ΣΤΗΝ ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ ΕΠΕΙΤΑ ΑΠΟ ΥΠΕΡΒΟΛΙΚΗ ΚΑΤΑΝΑΛΩΣΗ ΑΛΚΟΟΛ, ΣΥΝΕΛΗΦΘΗ Η ΜΗΤΕΡΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853752/kairos-xeperase-tous-41c-o-udrarguros-oi-8-periohes-me-tis-upsiloteres-thermokrasies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1853751/o-mitropolitis-n-ionias-k-gavriil-sto-pleuro-tou-dokimazomenou-oukranikou-laou-sto-kievo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1853739/touristiko-leoforeio-paresure-kai-skotose-71hroni-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1853728/skliro-video-i-stigmi-tou-agriou-xulodarmou-tis-15hronis-apo-anilikes-sto-irakleio-tis-kritis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853769/sto-nosokomeio-16hroni-stin-alexandroupoli-epeita-apo-upervoliki-katanalosi-alkool/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853767/fotia-tora-se-diamerisma-ston-peiraia-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853764/i-eguklios-tou-upourgeiou-ergasias-gia-ton-kausona-akomi-kai-pausi-ergasion-opou-apaiteitai/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853755/fotia-tora-ston-dimo-delta-thessalonikis-sikothikan-duo-elikoptera/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853753/fotia-se-hamili-vlastisi-stin-petra-larisas-epiheiroun-2-elikoptera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-20T15:28:00.647273+00:00"
+      "seen_at_utc": "2026-07-20T16:28:11.390578+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1431980/ero-seagull-deka-vimata-poy-mporoyn-na-feroyn-tin-epanastasi-sti-syghroni-epohi/",
-      "title": "Ero Seagull: Δέκα βήματα που μπορούν να φέρουν την Επανάσταση στη σύγχρονη εποχή",
-      "normalized_title": "ERO SEAGULL: ΔΕΚΑ ΒΗΜΑΤΑ ΠΟΥ ΜΠΟΡΟΥΝ ΝΑ ΦΕΡΟΥΝ ΤΗΝ ΕΠΑΝΑΣΤΑΣΗ ΣΤΗ ΣΥΓΧΡΟΝΗ ΕΠΟΧΗ",
+      "url": "https://www.efsyn.gr/ellada/1432035/pyrkagia-se-diamerisma-ston-peiraia-epi-topoy-eidiko-vrahionoforo-ohima-tis-pyrosvestikis/",
+      "title": "Πυρκαγιά σε διαμέρισμα στον Πειραιά – Μεγάλη κινητοποίηση της Πυροσβεστικής [βίντεο]",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΟΝ ΠΕΙΡΑΙΑ – ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1431980/ero-seagull-deka-vimata-poy-mporoyn-na-feroyn-tin-epanastasi-sti-syghroni-epohi/",
-        "https://www.efsyn.gr/tehnes/1431977/diakopes-sti-gaydo-mia-xekardistiki-odi-sto-eleythero-kampingk-mesa-apo-ena-vivlio-thriler/",
-        "https://www.efsyn.gr/ellada/1431961/kypseli-to-thriler-me-ti-soro-agnostis-gynaikas-synehizetai-pithanologeitai-o-asfyktikos-tis-thanatos/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-20-07-2026/",
-        "https://www.efsyn.gr/politiki/1431951/androylakis-apo-thessaloniki-mitsotakis-kai-tsipras-pigan-ti-hora-piso-kalo-toys-polites-na-epilexoyn-allagi-selidas/",
-        "https://www.efsyn.gr/athlitismos/1431971/thrinos-sto-pagkosmio-podosfairo-pethane-o-thrylikos-kevin-kigkan/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-20-07-2026/",
-        "https://www.efsyn.gr/tehnes/1431687/arhaio-theatro-epidayroy-i-alkisti-tis-anatropis/",
-        "https://www.efsyn.gr/oikonomia/1431681/mnimonio-gia-ti-viosimi-anaptyxi-toy-limanioy-ston-peiraia/"
+        "https://www.efsyn.gr/ellada/1432035/pyrkagia-se-diamerisma-ston-peiraia-epi-topoy-eidiko-vrahionoforo-ohima-tis-pyrosvestikis/",
+        "https://www.efsyn.gr/ellada/1432024/tragodia-sti-thessaloniki-nekri-mia-gynaika-poy-parasyrthike-apo-toyristiko-leoforeio/",
+        "https://www.efsyn.gr/stiles/1431609/tameio-anakampsis-spatalontas-to-mellon/",
+        "https://www.efsyn.gr/stiles/1431603/me-aformi-to-drama-toy-syriza/",
+        "https://www.efsyn.gr/stiles/1431598/mesistio-paron-mellon/",
+        "https://www.efsyn.gr/ellada/1432013/kaysonas-poies-periohes-psithikan-simera-kamini-i-ipeirotiki-hora/",
+        "https://www.efsyn.gr/ellada/1431715/ioannina-anadeixi-mnimeion-poy-anoigoyn-nees-prooptikes/",
+        "https://www.efsyn.gr/ellada/1432011/tragodia-stin-alexandroypoli-nekri-16hroni-meta-apo-katanalosi-alkool/",
+        "https://www.efsyn.gr/ellada/1432009/pyrina-metopa-sti-thessaloniki-kai-to-kileler-enaeria-mesa-stin-epiheirisi-katasvesis/",
+        "https://www.efsyn.gr/kosmos/1431992/neos-igetis-tis-hamas-o-halil-al-hagia-poios-einai-o-antikatastatis-toy-sinoyar/",
+        "https://www.efsyn.gr/politiki/1431984/mitsotakis-koptontai-gia-to-tekmirio-tis-athootitas-mono-otan-afora-mpahalakides-kai-ohi-voyleytes-tis-nd/"
       ],
-      "seen_at_utc": "2026-07-20T15:28:00.647236+00:00"
+      "seen_at_utc": "2026-07-20T16:28:11.390552+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/20/greece/fotia-se-xamili-vlastisi-sto-kileler-sikothikan-dyo-elikoptera/",
-      "title": "Φωτιά σε χαμηλή βλάστηση στο Κιλελέρ – Σηκώθηκαν δύο ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΟ ΚΙΛΕΛΕΡ – ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.in.gr/2026/07/20/sports/basketball/apotheosi-gia-ton-osman-stin-pylaia-na-prospathisoume-na-kataktisoume-to-eurocup-kai-to-protathlima-pics/",
+      "title": "Αποθέωση για Όσμαν στην Πυλαία: «Να προσπαθήσουμε να κατακτήσουμε το EuroCup και το πρωτάθλημα» (pics)",
+      "normalized_title": "ΑΠΟΘΕΩΣΗ ΓΙΑ ΟΣΜΑΝ ΣΤΗΝ ΠΥΛΑΙΑ: «ΝΑ ΠΡΟΣΠΑΘΗΣΟΥΜΕ ΝΑ ΚΑΤΑΚΤΗΣΟΥΜΕ ΤΟ EUROCUP ΚΑΙ ΤΟ ΠΡΩΤΑΘΛΗΜΑ» (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/07/20/greece/fotia-se-xamili-vlastisi-sto-kileler-sikothikan-dyo-elikoptera/",
-        "https://www.in.gr/2026/07/20/greece/thessaloniki-troxaio-me-nekri-71xroni-pou-parasyrthike-apo-touristiko-leoforeio/",
-        "https://www.in.gr/2026/07/20/in-science/space/kineziki-dokimi-planitikis-amynas-tha-xtypisei-asteroeidi-me-taxytita-mach-26/",
-        "https://www.in.gr/2026/07/20/sports/football/mentilimpar-dyskoli-omada-i-naimegken-ta-filika-mas-voithoun-na-synithisoume-ton-tropo-paixnidiou-tous/",
-        "https://www.in.gr/2026/07/20/world/i-xamas-ekselekse-neo-igeti-einai-o-65xronos-xalil-al-xagia-pou-diadexetai-ton-dolofonithenta-giaxia-sinouar/",
-        "https://www.in.gr/2026/07/20/greece/gios-gnostou-kallitexni-o-traymatias-stin-agria-symploki-anilikon-ston-platamona-ton-maxairosan-aproklita/",
-        "https://www.in.gr/2026/07/20/politics/syriza-paraitithike-apo-vouleyti-o-symeon-kedikoglou/",
-        "https://www.in.gr/2026/07/20/life/anarchy-in-the-uk-otan-paixtike-proti-fora/",
-        "https://www.in.gr/2026/07/20/sports/basketball/episima-osman-ston-paok-to-proto-minyma-tou-tourkou-forgouornt/",
-        "https://www.in.gr/2026/07/20/economy/oikonomikes-eidiseis/aade-diaxeiristria-dilonei-astegi-alla-diamenei-se-vila-me-pisina-lavrakia-evgalan-oi-elegxoi/",
-        "https://www.in.gr/2026/07/20/world/gallia-enas-21xronos-aytoktonise-i-oikogeneia-tou-zita-aneksartiti-ereyna-legontas-oti-itan-thyma-ratsismou/"
+        "https://www.in.gr/2026/07/20/sports/basketball/apotheosi-gia-ton-osman-stin-pylaia-na-prospathisoume-na-kataktisoume-to-eurocup-kai-to-protathlima-pics/",
+        "https://www.in.gr/2026/07/20/greece/kairos-espase-to-fragma-ton-40-c-i-megisti-thermokrasia-kamini-i-xora-gia-akoma-48-ores/",
+        "https://www.in.gr/2026/07/20/greece/fotia-se-diamerisma-ston-peiraia-4/",
+        "https://www.in.gr/2026/07/20/sports/othersports/o-olympiakos-ananeose-to-symvolaio-tou-alafragki-gia-tria-akomi-xronia/",
+        "https://www.in.gr/2026/07/20/greece/aleksandroupoli-mia-16xroni-sto-nosokomeio-apo-katanalosi-alkool-synelifthi-i-mitera-tis/",
+        "https://www.in.gr/2026/07/20/politics/epikairotita/doudonis-me-akraia-toksiko-logo-o-mitsotakis-gipedopoiei-ti-syzitisi-gia-to-syntagma/",
+        "https://www.in.gr/2026/07/20/greece/fotia-se-xamili-vlastisi-ston-exedoro-thessalonikis-sikothikan-elikoptera/",
+        "https://www.in.gr/2026/07/20/sports/football/efyge-apo-ti-zoi-o-thrylikos-kevin-kigkan-pic/",
+        "https://www.in.gr/2026/07/20/life/diakopes/mesa-sto-mystiko-diamerisma-tou-gkaounti-stin-casa-batllo-anoigei-tis-portes-tou-proti-fora-gia-to-koino/",
+        "https://www.in.gr/2026/07/20/economy/oikonomikes-eidiseis/efapaks-anatropes-ston-ypologismo-tou-tous-apo-to-2027/"
       ],
-      "seen_at_utc": "2026-07-20T15:28:00.647197+00:00"
+      "seen_at_utc": "2026-07-20T16:28:11.390523+00:00"
     }
   },
-  "updated_at_utc": "2026-07-20T15:28:00.647349+00:00"
+  "updated_at_utc": "2026-07-20T16:28:11.390656+00:00"
 }
