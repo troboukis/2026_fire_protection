@@ -1,33 +1,30 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564356137/o-odysseas-einai-o-tsak-noris/",
-      "title": "Ο Οδυσσέας είναι ο Τσακ Νόρις",
-      "normalized_title": "Ο ΟΔΥΣΣΕΑΣ ΕΙΝΑΙ Ο ΤΣΑΚ ΝΟΡΙΣ",
+      "url": "https://www.kathimerini.gr/world/564356707/ti-tha-epidioxei-o-proedros-toy-livanoy-sti-synantisi-me-ton-tramp/",
+      "title": "Τι θα επιδιώξει ο πρόεδρος του Λιβάνου στη συνάντηση με τον Τραμπ",
+      "normalized_title": "ΤΙ ΘΑ ΕΠΙΔΙΩΞΕΙ Ο ΠΡΟΕΔΡΟΣ ΤΟΥ ΛΙΒΑΝΟΥ ΣΤΗ ΣΥΝΑΝΤΗΣΗ ΜΕ ΤΟΝ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564356137/o-odysseas-einai-o-tsak-noris/",
-        "https://www.kathimerini.gr/society/564356602/thessaloniki-84chronos-eftiaxe-aythaireto-tsimentenio-fragma-mesa-ston-axio-potamo/",
-        "https://www.kathimerini.gr/opinion/564356149/to-neo-synoro-vrisketai-ektos-gis/",
-        "https://www.kathimerini.gr/opinion/564355966/leipoyn-mono-oi-mpoykles/",
-        "https://www.kathimerini.gr/economy/diktis/564356458/to-triptycho-poy-thorakizei-ta-omologa/",
-        "https://www.kathimerini.gr/world/564356593/israilines-ypiresies-pliroforion-to-iran-echei-metaferei-pyrinikoys-fygokentrites-sto-oros-pickaxe/",
-        "https://www.kathimerini.gr/life/health/564246724/na-min-dimosieytei-pos-epireazei-tin-psychiki-ygeia-i-therapeia-toy-karkinoy-toy-prostati/",
-        "https://www.kathimerini.gr/k/travel/564354613/ta-chania-se-7-eikones/",
-        "https://www.kathimerini.gr/visual/photography/564355798/isorropia-2/",
-        "https://www.kathimerini.gr/istoria/564355303/ton-pyrovoloysan-kai-fonazan-gkol-i-dolofonia-toy-kolomvianoy-podosfairisti-antres-eskompar-gia-ena-aytogkol/",
-        "https://www.kathimerini.gr/culture/564354838/isos-den-gnorizeis-ton-stefano-georgioy-xereis-omos-ta-tragoydia-toy/",
-        "https://www.kathimerini.gr/athletics/564356554/xefrenoi-panigyrismoi-sti-madriti-apotheosi-gia-toys-neoys-pagkosmioys-protathlites-vinteo/",
-        "https://www.kathimerini.gr/politics/564355963/theoreio-den-tha-einai-xana-ypopsifios/",
-        "https://www.kathimerini.gr/visual/infographics/564355978/i-ellada-fetos-moiazei-na-antisteketai-stin-akraia-zesti/",
-        "https://www.kathimerini.gr/world/564356545/vietnam-toylachiston-epta-nekroi-apo-pyrkagia-se-leoforeio-vinteo/",
-        "https://www.kathimerini.gr/culture/cinema/564356536/odysseia-oionoi-kai-provlepseis-me-orizonta-ta-oskar/",
-        "https://www.kathimerini.gr/politics/564356011/entos-kai-ektos-chatzidakis-exoterikoy/",
-        "https://www.kathimerini.gr/society/564356497/koryfonetai-o-kaysonas-poy-tha-ftasei-toys-42-vathmoys-o-ydrargyros-ypsilos-kindynos-gia-foties/",
-        "https://www.kathimerini.gr/economy/international/564356413/yskola-tha-eiothei-i-ti-i-ton-kaysi-on/",
-        "https://www.kathimerini.gr/istoria/564355882/san-simera-21-ioylioy-1853-i-nea-yorki-apokta-to-sentral-park/",
-        "https://www.kathimerini.gr/economy/business/564356392/rekor-exagogon-enischysi-ependyseon-gia-ti-viomichania-trofimon-kai-poton/"
+        "https://www.kathimerini.gr/world/564356707/ti-tha-epidioxei-o-proedros-toy-livanoy-sti-synantisi-me-ton-tramp/",
+        "https://www.kathimerini.gr/world/564356686/notia-siniki-thalassa-enas-traymatias-se-thermo-epeisodio-metaxy-skafon-kinas-filippinon/",
+        "https://www.kathimerini.gr/economy/business/564356389/prostheta-kefalaia-anazitoyn-7-stis-10-scaleups/",
+        "https://www.kathimerini.gr/world/564356671/iran-kai-nees-epitheseis-kata-amerikanikon-stochon-se-mpachrein-kai-iordania/",
+        "https://www.kathimerini.gr/society/564356035/katigorei-gia-thesmiki-ektropi-to-yp-ygeias/",
+        "https://www.kathimerini.gr/society/564356674/thessaloniki-60chronos-chtypise-me-variopoyla-42chrono-ypallilo-sekioyriti-se-amaxostasio-toy-oasth/",
+        "https://www.kathimerini.gr/world/564356650/mikroylis-fygas-skylos-poy-chathike-tin-4i-ioylioy-vrethike-anoichta-toy-san-fransisko-dyo-evdomades-meta/",
+        "https://www.kathimerini.gr/economy/564356347/to-dimosio-chrostaei-3-dis-se-promitheytes/",
+        "https://www.kathimerini.gr/society/564356656/thessaloniki-47chronos-apeilise-me-pistoli-kai-chtypise-64chrono-epeita-apo-diapliktismo/",
+        "https://www.kathimerini.gr/world/564356605/petrelaio-pos-o-naytikos-apokleismos-tis-saoydikis-aravias-apo-toys-choythi-apeilei-tin-pagkosmia-agora/",
+        "https://www.kathimerini.gr/society/564356632/kaysonas-evrase-i-asfaltos-pano-apo-75-c-se-taratses-kai-aytokinita/",
+        "https://www.kathimerini.gr/world/564356653/o-epikefalis-toy-fbi-kas-patel-schediazei-episkepsi-sti-rosia/",
+        "https://www.kathimerini.gr/world/564356596/chili-stoys-10-pleon-oi-nekroi-apo-tin-polyimeri-kataigida-prin-kan-koryfothei/",
+        "https://www.kathimerini.gr/society/564356626/thessaloniki-trochaio-ston-perifereiako-sto-nosokomeio-diakomistike-enas-traymatias/",
+        "https://www.kathimerini.gr/society/564356620/synagermos-stin-akropoli-andras-me-machairi-traymatise-dyo-amerikanoys-toyristes/",
+        "https://www.kathimerini.gr/columns/564355804/to-symvolaio-ton-132-ekat-sto-katar-oi-neoi-kanones-sti-diafimisi-kai-i-anadiarthrosi-me-amoivi-250-000-sterlinon-ton-mina/",
+        "https://www.kathimerini.gr/opinion/564356152/o-omiroskai-o-kathenas/",
+        "https://www.kathimerini.gr/opinion/564356140/pos-apaxionetai-i-politiki/"
       ],
-      "seen_at_utc": "2026-07-21T05:28:13.938792+00:00"
+      "seen_at_utc": "2026-07-21T06:28:07.252912+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1279,47 +1276,62 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1853894/to-epimelitirio-korinthias-vraveuse-ton-stauro-dima-deite-fotografies/?utm_source=rss",
-      "title": "Το Επιμελητήριο Κορινθίας βράβευσε τον Σταύρο Δήμα, δείτε φωτογραφίες",
-      "normalized_title": "ΤΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΚΟΡΙΝΘΙΑΣ ΒΡΑΒΕΥΣΕ ΤΟΝ ΣΤΑΥΡΟ ΔΗΜΑ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1853928/thessaloniki-apeilise-me-pistoli-64hrono-epeita-apo-kavga-sunelifthi-47hronos/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Απείλησε με πιστόλι 64χρονο έπειτα από καβγά, συνελήφθη 47χρονος",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΑΠΕΙΛΗΣΕ ΜΕ ΠΙΣΤΟΛΙ 64ΧΡΟΝΟ ΕΠΕΙΤΑ ΑΠΟ ΚΑΒΓΑ, ΣΥΝΕΛΗΦΘΗ 47ΧΡΟΝΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1853894/to-epimelitirio-korinthias-vraveuse-ton-stauro-dima-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1853928/thessaloniki-apeilise-me-pistoli-64hrono-epeita-apo-kavga-sunelifthi-47hronos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853926/traumatistike-fulakas-apo-htupima-me-variopoula-se-epeisodio-se-amaxostasio-tou-oasth-duo-sullipseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853922/neo-plaisio-gia-ta-ilektrika-patinia-psifizetai-simera-apagoreusi-gia-anilikous-kato-ton-17-eton/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853914/ptoseis-dedron-kai-plimmurismenoi-dromoi-apo-tin-ishuri-kakokairia-sti-drama-41-kliseis-dehthike-i-purosvestiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853912/parousiazetai-simera-to-traffic-commander-kameres-me-ai-stous-dromous-tis-attikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853906/paidikoi-kai-vrefonipiakoi-stathmoi-espa-2026-2027-poioi-afm-upovaloun-simera-aitisi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853902/akropoli-andras-me-mahairi-traumatise-duo-amerikanous-touristes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1853901/live-i-kinisi-stous-dromous-kathusteriseis-se-kifiso-suggrou-kai-peiraia-pou-allou-uparhoun-provlimata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-21T05:28:13.938918+00:00"
+      "seen_at_utc": "2026-07-21T06:28:07.253026+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1432201/press-point-oso-kostizei-ena-triari-diamerisma-retire/",
-      "title": "Press Point: Όσο κοστίζει ένα τριάρι διαμέρισμα, ρετιρέ",
-      "normalized_title": "PRESS POINT: ΟΣΟ ΚΟΣΤΙΖΕΙ ΕΝΑ ΤΡΙΑΡΙ ΔΙΑΜΕΡΙΣΜΑ, ΡΕΤΙΡΕ",
+      "url": "https://www.efsyn.gr/politiki/1432261/mploko-tis-athinas-stis-kyroseis-kata-tis-moshas-gia-mia-elliniki-etaireia/",
+      "title": "Μπλόκο της Αθήνας στις κυρώσεις κατά της Μόσχας για μια ελληνική εταιρεία",
+      "normalized_title": "ΜΠΛΟΚΟ ΤΗΣ ΑΘΗΝΑΣ ΣΤΙΣ ΚΥΡΩΣΕΙΣ ΚΑΤΑ ΤΗΣ ΜΟΣΧΑΣ ΓΙΑ ΜΙΑ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1432201/press-point-oso-kostizei-ena-triari-diamerisma-retire/",
-        "https://www.efsyn.gr/ellada/1432200/kalampaka-ilikiomeni-vrethike-nekri-mesa-se-kleisto-tmima-toy-neoy-aytokinitodromoy-e65/",
-        "https://www.efsyn.gr/ellada/1432196/thessaloniki-loyketo-ston-monadiko-paidiko-stathmo-sti-nea-mihaniona-ston-aera-43-paidia/",
-        "https://www.efsyn.gr/athlitismos/1432189/o-thriamvos-tis-ispanias-protathlitria-kosmoy-meta-apo-16-hronia-den-ti-stamatise-oyte-o-tramp/",
-        "https://www.efsyn.gr/ellada/1432192/kaysonas-kai-mpoyrinia-mazi-i-exigisi-toy-saki-arnaoytogloy-gia-ta-entona-fainomena-sti-voreia-ellada/",
-        "https://www.efsyn.gr/nisides/1431869/i-asydosia-toy-kapitalismoy-kai-to-aytarhiko-kratos/",
-        "https://www.efsyn.gr/athlitismos/1432187/moyntial-2026-epiki-farsa-ispanoy-pilotoy-se-argentinoys-epivates-meta-ton-teliko-sas-syghairoyme/",
-        "https://www.efsyn.gr/ellada/1432186/eisaggeliko-ohi-sti-syghoneysi-tis-dikis-gia-ta-tempi-me-tin-717/"
+        "https://www.efsyn.gr/politiki/1432261/mploko-tis-athinas-stis-kyroseis-kata-tis-moshas-gia-mia-elliniki-etaireia/",
+        "https://www.efsyn.gr/politiki/1432254/kke-ohi-stin-arsi-tis-monimotitas-sto-dimosio/",
+        "https://www.efsyn.gr/politiki/1432248/syriza-apo-tin-ptosi-sti-statheropoiisi-epiheirisi-anasygkrotisis-meta-tis-apohoriseis/",
+        "https://www.efsyn.gr/ellada/1432260/thessaloniki-60hronos-htypise-me-variopoyla-42hrono-sekioyriti-sto-amaxostasio-toy-oasth/",
+        "https://www.efsyn.gr/life/1432220/star-wars-i-exofreniki-timi-poy-poylithike-to-thryliko-fotospatho-toy-loyk-skaigoyoker/",
+        "https://www.efsyn.gr/politiki/1432253/to-kalimera-ilie-to-paneri-kai-i-13i-syntaxi/",
+        "https://www.efsyn.gr/politiki/1432240/o-selesao-tis-aytodioikisis-me-8-nikes-seri/",
+        "https://www.efsyn.gr/politiki/1432218/androylakis-to-politiko-didymo-mitsotaki-tsipra-gia-mia-dekaetia-pige-ti-hora-piso/",
+        "https://www.efsyn.gr/politiki/1432234/pos-tin-patisan-oi-dyo-galazioi-voyleytes/",
+        "https://www.efsyn.gr/ellada/1432208/elas-gia-ta-idiotika-panepistimia-den-tha-ta-eihame-idrysei-alla-den-tha-ta-katargisoyme/",
+        "https://www.efsyn.gr/ellada/1432227/epithesi-me-mahairi-stin-akropoli-traymatistikan-dyo-amerikanoi-toyristes/",
+        "https://www.efsyn.gr/politiki/1432224/o-syriza-ehei-enan-parapano-voyleyti-apo-ton-velopoylo/",
+        "https://www.efsyn.gr/kosmos/1432213/to-iran-apanta-stis-ipa-me-nees-epitheseis-ston-kolpo-na-etoimazontai-gia-kyma-drones-kai-pyraylon/"
       ],
-      "seen_at_utc": "2026-07-21T05:28:13.938885+00:00"
+      "seen_at_utc": "2026-07-21T06:28:07.253005+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/21/world/kinima-tis-katsaridas-synexizontai-oi-diamartyries-sto-delxi-meta-ta-epeisodia-pou-afisan-180-traymaties/",
-      "title": "«Κίνημα της κατσαρίδας»: Συνεχίζονται οι διαμαρτυρίες στο Δελχί μετά τα επεισόδια που άφησαν 180 τραυματίες",
-      "normalized_title": "«ΚΙΝΗΜΑ ΤΗΣ ΚΑΤΣΑΡΙΔΑΣ»: ΣΥΝΕΧΙΖΟΝΤΑΙ ΟΙ ΔΙΑΜΑΡΤΥΡΙΕΣ ΣΤΟ ΔΕΛΧΙ ΜΕΤΑ ΤΑ ΕΠΕΙΣΟΔΙΑ ΠΟΥ ΑΦΗΣΑΝ 180 ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.in.gr/2026/07/21/politics/pasok-oi-metagrafes-o-tsipras-kai-oi-aneksartitopoiiseis/",
+      "title": "ΠΑΣΟΚ: Οι «μεταγραφές», ο Τσίπρας και οι ανεξαρτητοποιήσεις",
+      "normalized_title": "ΠΑΣΟΚ: ΟΙ «ΜΕΤΑΓΡΑΦΕΣ», Ο ΤΣΙΠΡΑΣ ΚΑΙ ΟΙ ΑΝΕΞΑΡΤΗΤΟΠΟΙΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/21/world/kinima-tis-katsaridas-synexizontai-oi-diamartyries-sto-delxi-meta-ta-epeisodia-pou-afisan-180-traymaties/",
-        "https://www.in.gr/2026/07/21/sports/basketball/o-eli-okompo-milise-gia-tis-dyskoles-katastaseis-pou-viose-sti-monako-persi/",
-        "https://www.in.gr/2026/07/21/world/louvro-epanaleitourgei-i-aithousa-pou-egine-stoxos-listeias-88-ekat-eyro-filoksenei-ekthesi-xoris-polytima-antikeimena/",
-        "https://www.in.gr/2026/07/21/life/music/i-noga-erez-ftiaxnei-to-mellon-tis-mousikis/",
-        "https://www.in.gr/2026/07/21/world/nea-anazopyrosi-sti-mesi-anatoli-xtypithikan-kentra-stratiotikis-dioikisis-sto-iran-stoxopoiithikan-tanker-sta-stena-tou-ormouz/",
-        "https://www.in.gr/2026/07/21/world/leoforeio-tylixtike-stis-floges-sto-vietnam-toulaxiston-7-nekroi/",
-        "https://www.in.gr/2026/07/21/world/india-24xronos-epese-apo-ypsos-12-metron-otan-espase-o-mixanismos-asfaleias-se-zipline/",
-        "https://www.in.gr/2026/07/21/plus/vita/askisi-ta-mystika-gia-sfigmenous-gofous/",
-        "https://www.in.gr/2026/07/21/world/pente-anthropoi-nekroi-apo-maziko-pnigmo-ston-potamo-tou-oxaio/"
+        "https://www.in.gr/2026/07/21/politics/pasok-oi-metagrafes-o-tsipras-kai-oi-aneksartitopoiiseis/",
+        "https://www.in.gr/2026/07/21/greece/drama-ptoseis-dentron-apo-tous-isxyrous-anemous-41-kliseis-stin-pyrosvestiki/",
+        "https://www.in.gr/2026/07/21/world/spania-panomoiotypa-tetradyma-gennithikan-stin-aystralia-i-ekpliksi-tis-giatrou/",
+        "https://www.in.gr/2026/07/21/english-edition/greece-faces-first-major-heatwave-of-the-year-as-temperatures-approach-43c/",
+        "https://www.in.gr/2026/07/21/sports/mountial-2026/mountial-2026-ispanos-pilotos-glentise-argentinous-epivates-meta-tin-itta-ston-teliko-vid/",
+        "https://www.in.gr/2026/07/21/economy/ipa-i-dipsa-gia-data-centers-syrriknonei-limnes-oi-entyposiakes-symptoseis/",
+        "https://www.in.gr/2026/07/21/life/culture-live/o-mprous-li-pethane-ksafnika-sto-apogeio-tis-karieras-tou-oi-teleytaies-imeres-tis-zois-tou/",
+        "https://www.in.gr/2026/07/21/editorial/apenanti-stous-emporous-ptyxion-xreiazontai-politikes-oxi-synthimata/",
+        "https://www.in.gr/2026/07/21/sports/mountial-2026/nte-la-fouente-o-pio-fthinos-protathlitis/",
+        "https://www.in.gr/2026/07/21/greece/akropoli-andras-traymatise-dyo-amerikanous-touristes-me-maxairi/",
+        "https://www.in.gr/2026/07/21/sports/basketball/rontman-gia-lempron-o-eykoloteros-paiktis-pou-tha-mporousa-na-markaro/",
+        "https://www.in.gr/2026/07/21/stories/kserate-oti-o-odysseas-latreyotan-gia-peripou-1-000-xronia-san-na-itan-theotita/"
       ],
-      "seen_at_utc": "2026-07-21T05:28:13.938853+00:00"
+      "seen_at_utc": "2026-07-21T06:28:07.252967+00:00"
     }
   },
-  "updated_at_utc": "2026-07-21T05:28:13.938989+00:00"
+  "updated_at_utc": "2026-07-21T06:28:07.253100+00:00"
 }
