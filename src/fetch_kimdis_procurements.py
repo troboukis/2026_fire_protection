@@ -102,6 +102,8 @@ DEFAULT_EXCLUDE_KEYWORDS = [
     "SPORTS4ALL",
     "κινηματογραφο",
     "AQUA MONTIS",
+    "ΑΝΑΔΕΙΞΗ ΥΦΙΣΤΑΜΕΝΩΝ ΔΙΑΔΡΟΜΩΝ",
+    "ΑΝΑΔΕΙΞΗ ΥΦΟΣΤΑΜΕΝΩΝ ΔΙΑΔΡΟΜΩΝ",
 ]
 
 # Broad CPVs that overlap with non-fire-protection domains.
