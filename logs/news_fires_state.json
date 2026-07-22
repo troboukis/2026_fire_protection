@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564358147/to-enzymo-poy-ergazetai-gia-ti-makrozoia-mas/",
-      "title": "Το ένζυμο που «εργάζεται» για τη μακροζωία μας",
-      "normalized_title": "ΤΟ ΕΝΖΥΜΟ ΠΟΥ «ΕΡΓΑΖΕΤΑΙ» ΓΙΑ ΤΗ ΜΑΚΡΟΖΩΙΑ ΜΑΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564319369/eortologio-poioi-giortazoyn-simera-23-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 23 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 23 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564358147/to-enzymo-poy-ergazetai-gia-ti-makrozoia-mas/",
-        "https://www.kathimerini.gr/world/564360067/pyriniki-symfonia-ipa-saoydikis-aravias-ti-kerdizoyn-oi-dyo-pleyres-giati-anisychoyn-oi-empeirognomones/",
-        "https://www.kathimerini.gr/world/564360166/gkalimpaf-kaneis-den-tha-poylisei-petrelaio-stin-periochi-an-to-iran-den-mporei/",
-        "https://www.kathimerini.gr/world/564360187/o-epikefalis-tis-mosant-taxidepse-stin-oyasingkton-gia-diavoyleyseis-schetika-me-ton-polemo-sto-iran/"
+        "https://www.kathimerini.gr/eortologio/564319369/eortologio-poioi-giortazoyn-simera-23-ioylioy/",
+        "https://www.kathimerini.gr/world/564360190/ntoympai-eos-700-eyro-se-opoion-ferei-toyristes/",
+        "https://www.kathimerini.gr/world/564360208/iranos-ypex-to-amyntiko-mas-dogma-einai-ofthalmos-anti-ofthalmoy/",
+        "https://www.kathimerini.gr/culture/tv/564359914/gia-sena-o-erotas-synanta-ta-mystika-ston-alpha/",
+        "https://www.kathimerini.gr/world/564359881/oi-oykranoi-elpizoyn-oti-o-neos-archigos-toy-stratoy-tha-termatisei-ti-sovietiki-koyltoyra/"
       ],
-      "seen_at_utc": "2026-07-22T20:28:35.861517+00:00"
+      "seen_at_utc": "2026-07-22T21:28:31.241606+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,42 +1263,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1854817/thessaloniki-sto-nosokomeio-germanos-pou-traumatistike-se-thalassio-parko-anapsuhis-sti-halkidiki/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Στο νοσοκομείο Γερμανός που τραυματίστηκε σε θαλάσσιο πάρκο αναψυχής στη Χαλκιδική",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΓΕΡΜΑΝΟΣ ΠΟΥ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΕ ΘΑΛΑΣΣΙΟ ΠΑΡΚΟ ΑΝΑΨΥΧΗΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1854829/katastrofes-apo-to-halazi-kai-tous-ishurous-anemous-se-hiliades-stremmata-kalliergeion-ston-evro/?utm_source=rss",
+      "title": "Καταστροφές από το χαλάζι και τους ισχυρούς ανέμους σε χιλιάδες στρέμματα καλλιεργειών στον Έβρο",
+      "normalized_title": "ΚΑΤΑΣΤΡΟΦΕΣ ΑΠΟ ΤΟ ΧΑΛΑΖΙ ΚΑΙ ΤΟΥΣ ΙΣΧΥΡΟΥΣ ΑΝΕΜΟΥΣ ΣΕ ΧΙΛΙΑΔΕΣ ΣΤΡΕΜΜΑΤΑ ΚΑΛΛΙΕΡΓΕΙΩΝ ΣΤΟΝ ΕΒΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1854817/thessaloniki-sto-nosokomeio-germanos-pou-traumatistike-se-thalassio-parko-anapsuhis-sti-halkidiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1854829/katastrofes-apo-to-halazi-kai-tous-ishurous-anemous-se-hiliades-stremmata-kalliergeion-ston-evro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-22T20:28:35.861634+00:00"
+      "seen_at_utc": "2026-07-22T21:28:31.241696+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1433664/panathinaikos-aisiodoxos-o-nistroyp-gia-prokrisi-kontra-stin-paksi-theloyme-na-kerdisoyme-kai-ta-dyo-mats/",
-      "title": "Παναθηναϊκός: Αισιόδοξος ο Νίστρουπ για πρόκριση κόντρα στην Πάκσι – «Θέλουμε να κερδίσουμε και τα δύο ματς»",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΑΙΣΙΟΔΟΞΟΣ Ο ΝΙΣΤΡΟΥΠ ΓΙΑ ΠΡΟΚΡΙΣΗ ΚΟΝΤΡΑ ΣΤΗΝ ΠΑΚΣΙ – «ΘΕΛΟΥΜΕ ΝΑ ΚΕΡΔΙΣΟΥΜΕ ΚΑΙ ΤΑ ΔΥΟ ΜΑΤΣ»",
+      "url": "https://www.efsyn.gr/kosmos/1433684/ispania-anazopyrothike-i-megali-pyrkagia-ekkenothikan-koinotites-konta-sti-madriti/",
+      "title": "Ισπανία: Αναζωπυρώθηκε η μεγάλη πυρκαγιά – Εκκενώθηκαν κοινότητες κοντά στη Μαδρίτη",
+      "normalized_title": "ΙΣΠΑΝΙΑ: ΑΝΑΖΩΠΥΡΩΘΗΚΕ Η ΜΕΓΑΛΗ ΠΥΡΚΑΓΙΑ – ΕΚΚΕΝΩΘΗΚΑΝ ΚΟΙΝΟΤΗΤΕΣ ΚΟΝΤΑ ΣΤΗ ΜΑΔΡΙΤΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1433664/panathinaikos-aisiodoxos-o-nistroyp-gia-prokrisi-kontra-stin-paksi-theloyme-na-kerdisoyme-kai-ta-dyo-mats/",
-        "https://www.efsyn.gr/politiki/1433666/sholio-elas-gia-triantopoylo-i-alitheia-den-mpazonetai-oyte-oi-politikes-eythynes-toy-k-mitsotaki/",
-        "https://www.efsyn.gr/ellada/1433644/kairos-ypohorei-o-kaysonas-meta-ta-43aria-topika-ishyroi-anemoi-tin-pempti-ypsilos-o-kindynos-pyrkagion/"
+        "https://www.efsyn.gr/kosmos/1433684/ispania-anazopyrothike-i-megali-pyrkagia-ekkenothikan-koinotites-konta-sti-madriti/",
+        "https://www.efsyn.gr/ellada/1433682/halkidiki-57hronos-toyristas-traymatistike-sto-kefali-epeita-apo-voytia-se-thalassio-parko-anapsyhis/",
+        "https://www.efsyn.gr/kosmos/1433677/iran-me-apeiles-apanta-o-aragtsi-stis-apeiles-tramp-ofthalmos-anti-ofthalmoy/"
       ],
-      "seen_at_utc": "2026-07-22T20:28:35.861610+00:00"
+      "seen_at_utc": "2026-07-22T21:28:31.241674+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/22/sports/basketball/paraitithike-apo-ds-tis-eok-o-giannis-mpourousis/",
-      "title": "Παραιτήθηκε από το ΔΣ της ΕΟΚ ο Γιάννης Μπουρούσης",
-      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ ΑΠΟ ΤΟ ΔΣ ΤΗΣ ΕΟΚ Ο ΓΙΑΝΝΗΣ ΜΠΟΥΡΟΥΣΗΣ",
+      "url": "https://www.in.gr/2026/07/23/world/ispania-megales-pyrkagies-mainontai-sti-xora-ekkenothikan-koinotites-konta-sti-madriti/",
+      "title": "Ισπανία: Μεγάλες πυρκαγιές μαίνονται στη χώρα – Εκκενώθηκαν κοινότητες κοντά στη Μαδρίτη",
+      "normalized_title": "ΙΣΠΑΝΙΑ: ΜΕΓΑΛΕΣ ΠΥΡΚΑΓΙΕΣ ΜΑΙΝΟΝΤΑΙ ΣΤΗ ΧΩΡΑ – ΕΚΚΕΝΩΘΗΚΑΝ ΚΟΙΝΟΤΗΤΕΣ ΚΟΝΤΑ ΣΤΗ ΜΑΔΡΙΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/22/sports/basketball/paraitithike-apo-ds-tis-eok-o-giannis-mpourousis/",
-        "https://www.in.gr/2026/07/22/go-fun/fizz/o-mat-nteimon-gia-tin-adelfiki-filia-tou-me-ton-mpen-aflek/",
-        "https://www.in.gr/2026/07/22/world/texerani-kata-tramp-o-polemos-i-tha-teleiosei-i-tha-kapsei-oli-tin-perioxi-tha-ton-pagkosmiopoiisoume/",
-        "https://www.in.gr/2026/07/22/greece/tempi-i-syskepsi-tis-3is-martiou-kai-i-apofasi-gia-to-mpazoma-stoixeia-pou-eksetase-o-eisaggeleas-gia-tin-parapompi-triantopoulou/",
-        "https://www.in.gr/2026/07/22/plus/medianews/vima-kykloforei-ayti-tin-kyriaki-me-to-neo-vita/",
-        "https://www.in.gr/2026/07/22/politics/politiki-grammateia/syriza-vgikan-ta-maxairia-apo-ta-thikaria-meta-tin-aneksartitopoiisi-famellou/",
-        "https://www.in.gr/2026/07/22/sports/basketball/nayagio-me-tin-real-o-xezonia-pou-thelei-na-paiksei-stin-ntoumpai-bc/",
-        "https://www.in.gr/2026/07/22/politics/epikairotita/elas-i-alitheia-den-mpazonetai-oute-oi-politikes-eythynes-tou-k-mitsotaki/",
-        "https://www.in.gr/2026/07/22/sports/football/to-ksylo-stin-proponisi-oi-4-for-tou-olympiakou-o-filis-kai-i-thesi-tou-deksiou-mpak/"
+        "https://www.in.gr/2026/07/23/world/ispania-megales-pyrkagies-mainontai-sti-xora-ekkenothikan-koinotites-konta-sti-madriti/",
+        "https://www.in.gr/2026/07/23/greece/giorti-simera-23-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/23/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-pempti-23-07-2026/",
+        "https://www.in.gr/2026/07/23/sports/basketball/oi-xit-apelysan-ton-ypeythyno-tou-kanaliou-meta-tin-gkafa-me-ton-lempron/",
+        "https://www.in.gr/2026/07/22/world/epitheseis-sto-iran-apo-tis-ipa-akougontai-ekrikseis-se-simeia-pou-xtypithikan-kai-xthes/",
+        "https://www.in.gr/2026/07/22/sports/basketball/stin-athina-gia-ton-olympiako-o-miler-makintair-to-na-eimai-meros-aytis-tis-oikogeneias-einai-spoudaio/",
+        "https://www.in.gr/2026/07/22/world/ipa-ypopsies-rosikis-emplokis-se-iranikes-epitheseis-enantion-egkatastaseon-tis-cia-sti-mesi-anatoli/",
+        "https://www.in.gr/2026/07/22/sports/football/telos-apo-ton-irakli-mpasinas-ki-amanatidis-analamvanei-neos-athlitikos-dieythyntis/",
+        "https://www.in.gr/2026/07/22/greece/fotia-se-dasiki-ektasi-stin-kalymno/",
+        "https://www.in.gr/2026/07/22/economy/diethnis-oikonomia/pos-oi-fininfluencers-epireazoun-tous-ependytes/"
       ],
-      "seen_at_utc": "2026-07-22T20:28:35.861577+00:00"
+      "seen_at_utc": "2026-07-22T21:28:31.241653+00:00"
     }
   },
-  "updated_at_utc": "2026-07-22T20:28:35.861719+00:00"
+  "updated_at_utc": "2026-07-22T21:28:31.241768+00:00"
 }
