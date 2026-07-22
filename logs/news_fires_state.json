@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564360193/synelifthi-28chronos-gia-ti-dolofonia-toy-stayroy-georgioy/",
-      "title": "Συνελήφθη 28χρονος για τη δολοφονία του Σταύρου Γεωργίου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 28ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΣΤΑΥΡΟΥ ΓΕΩΡΓΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564358147/to-enzymo-poy-ergazetai-gia-ti-makrozoia-mas/",
+      "title": "Το ένζυμο που «εργάζεται» για τη μακροζωία μας",
+      "normalized_title": "ΤΟ ΕΝΖΥΜΟ ΠΟΥ «ΕΡΓΑΖΕΤΑΙ» ΓΙΑ ΤΗ ΜΑΚΡΟΖΩΙΑ ΜΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564360193/synelifthi-28chronos-gia-ti-dolofonia-toy-stayroy-georgioy/",
-        "https://www.kathimerini.gr/society/564360163/chaos-se-ptisi-tis-easyjet-kavgas-metaxy-epivaton-anagkase-to-aeroskafos-na-epistrepsei-stin-tenerifi/",
-        "https://www.kathimerini.gr/athletics/analysis/564360181/olympiakos-pente-paiktarades-poy-eferan-ta-kalokairia/",
-        "https://www.kathimerini.gr/world/564358207/oi-choreytikes-figoyres-oxynoyn-ton-noy/",
-        "https://www.kathimerini.gr/society/564360178/stayros-georgioy-i-el-as-exetazei-vinteo-poy-feretai-na-ton-deichnei-exo-apo-to-grafeio-toy/",
-        "https://www.kathimerini.gr/society/reportaz/564358093/toyrismos-otan-vroyme-kalo-meros-aplos-den-to-leme/",
-        "https://www.kathimerini.gr/world/564359686/montelo-tis-openai-xefyge-apo-ton-elegcho-kai-chakare-antagonistria-etaireia/",
-        "https://www.kathimerini.gr/world/564358096/toyrismos-thee-moy-to-vrikan-ki-ayto-tha-mpei-stoys-taxidiotikoys-odigoys/"
+        "https://www.kathimerini.gr/society/564358147/to-enzymo-poy-ergazetai-gia-ti-makrozoia-mas/",
+        "https://www.kathimerini.gr/world/564360067/pyriniki-symfonia-ipa-saoydikis-aravias-ti-kerdizoyn-oi-dyo-pleyres-giati-anisychoyn-oi-empeirognomones/",
+        "https://www.kathimerini.gr/world/564360166/gkalimpaf-kaneis-den-tha-poylisei-petrelaio-stin-periochi-an-to-iran-den-mporei/",
+        "https://www.kathimerini.gr/world/564360187/o-epikefalis-tis-mosant-taxidepse-stin-oyasingkton-gia-diavoyleyseis-schetika-me-ton-polemo-sto-iran/"
       ],
-      "seen_at_utc": "2026-07-22T19:28:30.758235+00:00"
+      "seen_at_utc": "2026-07-22T20:28:35.861517+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,50 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1854813/sunelifthi-aiguptios-gia-tin-dolofonia-tou-staurou-georgiou/?utm_source=rss",
-      "title": "Συνελήφθη 28χρονος Αιγύπτιος για την δολοφονία του Σταύρου Γεωργίου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 28ΧΡΟΝΟΣ ΑΙΓΥΠΤΙΟΣ ΓΙΑ ΤΗΝ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΣΤΑΥΡΟΥ ΓΕΩΡΓΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1854817/thessaloniki-sto-nosokomeio-germanos-pou-traumatistike-se-thalassio-parko-anapsuhis-sti-halkidiki/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Στο νοσοκομείο Γερμανός που τραυματίστηκε σε θαλάσσιο πάρκο αναψυχής στη Χαλκιδική",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΓΕΡΜΑΝΟΣ ΠΟΥ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΕ ΘΑΛΑΣΣΙΟ ΠΑΡΚΟ ΑΝΑΨΥΧΗΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1854813/sunelifthi-aiguptios-gia-tin-dolofonia-tou-staurou-georgiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1854805/stenoi-filoi-tou-staurou-georgiou-katathetoun-stis-arhes-video-deihnei-ton-poinikologo-me-agnosto-atomo-mia-mera/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1854802/agrupnia-apopse-sti-mnimi-ton-thumaton-sto-mati-aurio-oi-ekdiloseis-gia-tin-8i-epeteio-tis-tragodias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1854801/to-sorts-pou-borei-na-apokalupsei-tin-tautotita-tis-nekris-gunaikas-sto-thriler-me-ti-valitsa-stin-euelpidon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1854817/thessaloniki-sto-nosokomeio-germanos-pou-traumatistike-se-thalassio-parko-anapsuhis-sti-halkidiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-22T19:28:30.758361+00:00"
+      "seen_at_utc": "2026-07-22T20:28:35.861634+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1433656/synelifthi-28hronos-gia-ti-dolofonia-toy-poinikologoy-stayroy-georgioy/",
-      "title": "Συνελήφθη 28χρονος για τη δολοφονία του ποινικολόγου Σταύρου Γεωργίου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 28ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΠΟΙΝΙΚΟΛΟΓΟΥ ΣΤΑΥΡΟΥ ΓΕΩΡΓΙΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1433664/panathinaikos-aisiodoxos-o-nistroyp-gia-prokrisi-kontra-stin-paksi-theloyme-na-kerdisoyme-kai-ta-dyo-mats/",
+      "title": "Παναθηναϊκός: Αισιόδοξος ο Νίστρουπ για πρόκριση κόντρα στην Πάκσι – «Θέλουμε να κερδίσουμε και τα δύο ματς»",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΑΙΣΙΟΔΟΞΟΣ Ο ΝΙΣΤΡΟΥΠ ΓΙΑ ΠΡΟΚΡΙΣΗ ΚΟΝΤΡΑ ΣΤΗΝ ΠΑΚΣΙ – «ΘΕΛΟΥΜΕ ΝΑ ΚΕΡΔΙΣΟΥΜΕ ΚΑΙ ΤΑ ΔΥΟ ΜΑΤΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1433656/synelifthi-28hronos-gia-ti-dolofonia-toy-poinikologoy-stayroy-georgioy/",
-        "https://www.efsyn.gr/politiki/1433648/oyte-i-pleysi-eleytherias-paei-sti-giorti-toy-proedrikoy-o-k-tasoylas-tha-eprepe-na-eleghetai/",
-        "https://www.efsyn.gr/politiki/1433646/steit-ntipartment-i-toyrkia-den-pliroi-akomi-tis-proypotheseis-toy-nomoy-gia-endehomeni-paralavi-ton-f-35/",
-        "https://www.efsyn.gr/politiki/1433639/tsiaras-gia-opekepe-aisthanomai-san-iroas-arhaioy-ellinikoy-dramatos-san-ton-oidipoda/",
-        "https://www.efsyn.gr/kosmos/1433636/gata-ntiler-piastike-na-metaferei-narkotika-se-rosikes-fylakes-vinteo/",
-        "https://www.efsyn.gr/politiki/1433631/tempi-pyra-antipoliteysis-meta-tin-protasi-parapompis-triantopoyloy-katarreei-i-kyvernitiki-propaganda/"
+        "https://www.efsyn.gr/athlitismos/1433664/panathinaikos-aisiodoxos-o-nistroyp-gia-prokrisi-kontra-stin-paksi-theloyme-na-kerdisoyme-kai-ta-dyo-mats/",
+        "https://www.efsyn.gr/politiki/1433666/sholio-elas-gia-triantopoylo-i-alitheia-den-mpazonetai-oyte-oi-politikes-eythynes-toy-k-mitsotaki/",
+        "https://www.efsyn.gr/ellada/1433644/kairos-ypohorei-o-kaysonas-meta-ta-43aria-topika-ishyroi-anemoi-tin-pempti-ypsilos-o-kindynos-pyrkagion/"
       ],
-      "seen_at_utc": "2026-07-22T19:28:30.758337+00:00"
+      "seen_at_utc": "2026-07-22T20:28:35.861610+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/22/greece/synelifthi-28xronos-gia-ti-dolofonia-tou-stayrou-georgiou/",
-      "title": "Συνελήφθη 28χρονος για τη δολοφονία του Σταύρου Γεωργίου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 28ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΣΤΑΥΡΟΥ ΓΕΩΡΓΙΟΥ",
+      "url": "https://www.in.gr/2026/07/22/sports/basketball/paraitithike-apo-ds-tis-eok-o-giannis-mpourousis/",
+      "title": "Παραιτήθηκε από το ΔΣ της ΕΟΚ ο Γιάννης Μπουρούσης",
+      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ ΑΠΟ ΤΟ ΔΣ ΤΗΣ ΕΟΚ Ο ΓΙΑΝΝΗΣ ΜΠΟΥΡΟΥΣΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/22/greece/synelifthi-28xronos-gia-ti-dolofonia-tou-stayrou-georgiou/",
-        "https://www.in.gr/2026/07/22/sports/football/o-fotografos-apokalypse-to-paraskinio-gia-ti-fotografia-ton-mesi-giamal/",
-        "https://www.in.gr/2026/07/22/greece/vinteo-ntokoumento-apo-ti-diarroi-aeriou-se-pratirio-kaysimon-ston-peiraia/",
-        "https://www.in.gr/2026/07/22/stories/otan-i-mairi-linta-ksesikose-ton-leyko-oiko-me-ton-manoli-xioti/",
-        "https://www.in.gr/2026/07/22/in-science/perivallon-b-science/epistimones-anakalypsan-ton-proto-metadotiko-karkino-se-psaria/",
-        "https://www.in.gr/2026/07/22/world/synomilies-tou-epikefalis-tis-mosant-me-ton-omologo-tou-tis-cia-stis-ipa/",
-        "https://www.in.gr/2026/07/22/sports/mountial-2026/mountial-2026-o-gkavi-pire-thesi-yper-tou-paredes-sto-endexomeno-timorias-tou-apo-ti-fifa/",
-        "https://www.in.gr/2026/07/22/greece/politiki-prostasia-11-kliseis-gia-thermes-ergasies-dexthike-i-pyrosvestiki-antimetopistikan-50-foties-to-teleytaio-24oro/",
-        "https://www.in.gr/2026/07/22/politics/epikairotita/o-syriza-gia-protasi-parapompis-ton-triantopoulou-kai-agorastou-katarreei-oristika-i-kyvernitiki-propaganda/",
-        "https://www.in.gr/2026/07/22/life/culture-live/o-aleksis-stamatis-stin-teleytaia-tou-sygklonistiki-anartisi/",
-        "https://www.in.gr/2026/07/22/world/oi-ipa-vazoun-pago-sta-sxedia-tis-tourkias-gia-ta-f35-den-pliroi-tis-proypotheseis-tou-nomou/"
+        "https://www.in.gr/2026/07/22/sports/basketball/paraitithike-apo-ds-tis-eok-o-giannis-mpourousis/",
+        "https://www.in.gr/2026/07/22/go-fun/fizz/o-mat-nteimon-gia-tin-adelfiki-filia-tou-me-ton-mpen-aflek/",
+        "https://www.in.gr/2026/07/22/world/texerani-kata-tramp-o-polemos-i-tha-teleiosei-i-tha-kapsei-oli-tin-perioxi-tha-ton-pagkosmiopoiisoume/",
+        "https://www.in.gr/2026/07/22/greece/tempi-i-syskepsi-tis-3is-martiou-kai-i-apofasi-gia-to-mpazoma-stoixeia-pou-eksetase-o-eisaggeleas-gia-tin-parapompi-triantopoulou/",
+        "https://www.in.gr/2026/07/22/plus/medianews/vima-kykloforei-ayti-tin-kyriaki-me-to-neo-vita/",
+        "https://www.in.gr/2026/07/22/politics/politiki-grammateia/syriza-vgikan-ta-maxairia-apo-ta-thikaria-meta-tin-aneksartitopoiisi-famellou/",
+        "https://www.in.gr/2026/07/22/sports/basketball/nayagio-me-tin-real-o-xezonia-pou-thelei-na-paiksei-stin-ntoumpai-bc/",
+        "https://www.in.gr/2026/07/22/politics/epikairotita/elas-i-alitheia-den-mpazonetai-oute-oi-politikes-eythynes-tou-k-mitsotaki/",
+        "https://www.in.gr/2026/07/22/sports/football/to-ksylo-stin-proponisi-oi-4-for-tou-olympiakou-o-filis-kai-i-thesi-tou-deksiou-mpak/"
       ],
-      "seen_at_utc": "2026-07-22T19:28:30.758308+00:00"
+      "seen_at_utc": "2026-07-22T20:28:35.861577+00:00"
     }
   },
-  "updated_at_utc": "2026-07-22T19:28:30.758496+00:00"
+  "updated_at_utc": "2026-07-22T20:28:35.861719+00:00"
 }
