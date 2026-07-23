@@ -964,7 +964,10 @@ class MunicipalityMatcher:
         if containing.empty:
             return None
         row = containing.iloc[0]
-        return str(row["municipality_code"]).strip(), str(row["name"]).strip()
+        municipality_key = str(row["municipality_code"]).strip()
+        if municipality_key.lower() in {"", "nan", "none", "<na>"}:
+            return None
+        return municipality_key, str(row["name"]).strip()
 
 
 def build_news_fire_row(
