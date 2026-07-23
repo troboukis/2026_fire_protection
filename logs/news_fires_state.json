@@ -1,22 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564362161/moyntial-2026-ta-agglika-mponoys-ta-rekor-kai-ta-anoichta-erotimata/",
-      "title": "Μουντιάλ 2026: Τα (αγγλικά) μπόνους, τα ρεκόρ και τα ανοιχτά ερωτήματα",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ 2026: ΤΑ (ΑΓΓΛΙΚΑ) ΜΠΟΝΟΥΣ, ΤΑ ΡΕΚΟΡ ΚΑΙ ΤΑ ΑΝΟΙΧΤΑ ΕΡΩΤΗΜΑΤΑ",
+      "url": "https://www.kathimerini.gr/world/564360322/otan-i-ai-vgainei-ektos-elegchoy-i-antarsia-enos-exypnoy-programmatos/",
+      "title": "Οταν η ΑΙ βγαίνει εκτός ελέγχου: Η «ανταρσία» ενός έξυπνου προγράμματος",
+      "normalized_title": "ΟΤΑΝ Η ΑΙ ΒΓΑΙΝΕΙ ΕΚΤΟΣ ΕΛΕΓΧΟΥ: Η «ΑΝΤΑΡΣΙΑ» ΕΝΟΣ ΕΞΥΠΝΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564362161/moyntial-2026-ta-agglika-mponoys-ta-rekor-kai-ta-anoichta-erotimata/",
-        "https://www.kathimerini.gr/world/564362125/tha-antikatastisei-i-ai-tin-anthropini-ergasia/",
-        "https://www.kathimerini.gr/world/564362152/synagermos-sti-germania-epithesi-me-machairi-se-trapeza-enas-nekros-kai-krymmenos-o-drastis/",
-        "https://www.kathimerini.gr/columns/564359644/to-telos-toy-teloys-tis-athootitas/",
-        "https://www.kathimerini.gr/world/564362335/den-echoyn-ypostei-akomi-arketo-pono-o-tramp-exetazei-maziko-pligma-kata-toy-iran/",
-        "https://www.kathimerini.gr/society/564362296/se-epifylaki-to-nosokomeio-kastorias-meta-ton-entopismo-kroysmaton-salmonelas/",
-        "https://www.kathimerini.gr/society/564362302/syros-nekri-gynaika-apo-machairi-stin-asfaleia-emplekomeno-zeygari/",
-        "https://www.kathimerini.gr/society/dikastiko/564362266/dolofonia-georgioy-dioxi-gia-anthropoktonia-apo-prothesi-se-varos-toy-28chronoy/",
-        "https://www.kathimerini.gr/k/sunday-edition/564362260/oi-soyper-star-kai-oi-stigmes-poy-ekanan-ayto-to-moyntial-monadiko-sto-periodiko-k-tin-kyriaki-26-7-me-tin-kathimerini/",
-        "https://www.kathimerini.gr/columns/564362221/focu-sauvage-oi-nomade-et-sauvage-anavoyn-foties-sto-royf/"
+        "https://www.kathimerini.gr/world/564360322/otan-i-ai-vgainei-ektos-elegchoy-i-antarsia-enos-exypnoy-programmatos/",
+        "https://www.kathimerini.gr/economy/564362482/magnificent-7-i-techniti-noimosyni-echase-767-dis-se-mia-mera/",
+        "https://www.kathimerini.gr/k/gastronomos/564360097/melitzanes-me-anthotyro-apo-tin-eyi-voytsina/",
+        "https://www.kathimerini.gr/politics/564362461/kyr-mitsotakis-o-e65-einai-i-apantisi-stin-erotisi-poy-pigainoyn-ta-lefta-toy-tameioy-anakampsis/",
+        "https://www.kathimerini.gr/society/reportaz/564343555/sto-telos-oloi-xespoyn-ston-diacheiristi/"
       ],
-      "seen_at_utc": "2026-07-23T17:28:21.693253+00:00"
+      "seen_at_utc": "2026-07-23T18:28:22.316776+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,45 +1263,52 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855261/polu-upsilos-kindunos-purkagias-aurio-sti-rodo-stis-51-oi-purkagies-pou-ekdilothikan-to-teleutaio-eikositetraoro/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο στη Ρόδο, στις 51 οι πυρκαγιές που εκδηλώθηκαν το τελευταίο εικοσιτετράωρο",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ ΣΤΗ ΡΟΔΟ, ΣΤΙΣ 51 ΟΙ ΠΥΡΚΑΓΙΕΣ ΠΟΥ ΕΚΔΗΛΩΘΗΚΑΝ ΤΟ ΤΕΛΕΥΤΑΙΟ ΕΙΚΟΣΙΤΕΤΡΑΩΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1855289/stin-athina-to-savvato-o-hristodoulidis-sunadisi-me-mitsotaki-me-thema-to-kupriako-enopsei-tis-episkepsis-gouteres-/?utm_source=rss",
+      "title": "Στην Αθήνα το Σάββατο ο Χριστοδουλίδης, συνάντηση με Μητσοτάκη για το Κυπριακό ενόψει της επίσκεψης Γκουτέρες στη Λευκωσία",
+      "normalized_title": "ΣΤΗΝ ΑΘΗΝΑ ΤΟ ΣΑΒΒΑΤΟ Ο ΧΡΙΣΤΟΔΟΥΛΙΔΗΣ, ΣΥΝΑΝΤΗΣΗ ΜΕ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΟ ΚΥΠΡΙΑΚΟ ΕΝΟΨΕΙ ΤΗΣ ΕΠΙΣΚΕΨΗΣ ΓΚΟΥΤΕΡΕΣ ΣΤΗ ΛΕΥΚΩΣΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855261/polu-upsilos-kindunos-purkagias-aurio-sti-rodo-stis-51-oi-purkagies-pou-ekdilothikan-to-teleutaio-eikositetraoro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855252/se-exelixi-oi-ekdiloseis-mnimis-gia-ta-okto-hronia-apo-tin-tragodia-sto-mati-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855249/sunelifthi-sto-aerodromio-irakleiou-22hroni-me-pano-apo-19-kila-kannavis-stin-valitsa-tis-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855248/diasolinomenos-sti-meth-o-70hronos-pou-traumatistike-apo-tin-ekrixi-sta-hania/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855237/video-dokoumedo-o-aiguptios-vgainei-apo-to-grafeio-tou-georgiou-meta-ti-dolofonia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855289/stin-athina-to-savvato-o-hristodoulidis-sunadisi-me-mitsotaki-me-thema-to-kupriako-enopsei-tis-episkepsis-gouteres-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855283/sunelifthi-22hronos-eispraktoras-kuklomatos-tilefonikon-apaton-stin-kastoria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855268/epitimos-didaktoras-tis-iatrikis-sholis-tou-ekpa-o-kathigitis-heirourgikis-dieter-c-broering/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855267/nees-ereunes-stis-fulakes-agiou-stefanou-stin-patra-vrethikan-kai-katashethikan-tria-kinita-tilefona/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-23T17:28:21.693515+00:00"
+      "seen_at_utc": "2026-07-23T18:28:22.316901+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1434398/okto-hronia-apo-tin-tragodia-sto-mati-xekinisan-oi-ekdiloseis-mnimis-ston-dromo-tis-fotias-eikones-vinteo/",
-      "title": "Οκτώ χρόνια από την τραγωδία στο Μάτι: Ξεκίνησαν οι εκδηλώσεις μνήμης στον «δρόμο της φωτιάς» [εικόνες – βίντεο]",
-      "normalized_title": "ΟΚΤΩ ΧΡΟΝΙΑ ΑΠΟ ΤΗΝ ΤΡΑΓΩΔΙΑ ΣΤΟ ΜΑΤΙ: ΞΕΚΙΝΗΣΑΝ ΟΙ ΕΚΔΗΛΩΣΕΙΣ ΜΝΗΜΗΣ ΣΤΟΝ «ΔΡΟΜΟ ΤΗΣ ΦΩΤΙΑΣ» [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1434421/flegetai-i-gallia-apo-tis-megales-dasikes-pyrkagies-20-000-anthropoi-egkateleipsan-ta-spitia-toys-eikones-vinteo/",
+      "title": "Φλέγεται η Γαλλία από τις μεγάλες δασικές πυρκαγιές – 20.000 άνθρωποι εγκατέλειψαν τα σπίτια τους [εικόνες-βίντεο]",
+      "normalized_title": "ΦΛΕΓΕΤΑΙ Η ΓΑΛΛΙΑ ΑΠΟ ΤΙΣ ΜΕΓΑΛΕΣ ΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ – 20.000 ΑΝΘΡΩΠΟΙ ΕΓΚΑΤΕΛΕΙΨΑΝ ΤΑ ΣΠΙΤΙΑ ΤΟΥΣ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1434398/okto-hronia-apo-tin-tragodia-sto-mati-xekinisan-oi-ekdiloseis-mnimis-ston-dromo-tis-fotias-eikones-vinteo/",
-        "https://www.efsyn.gr/politiki/1434394/syriza-protovoylia-gia-ti-diereynisi-toy-skandaloy-novartis-na-anasyrthoyn-oi-dikografies-kata-georgiadi-avramopoyloy/",
-        "https://www.efsyn.gr/life/1434385/sto-nosokomeio-i-katerina-vrana-tha-sas-elega-na-rtheite-alla-apo-do-den-me-afinoyn-vinteo/",
-        "https://www.efsyn.gr/politiki/1434381/to-yp-ex-katadikazei-aperifrasta-tis-apeiles-ton-hoythi-themeliodis-proteraiotita-i-prostasia-tis-naysiploias/",
-        "https://www.efsyn.gr/ellada/1434122/prostateyomeno-topio-to-oros-vernon-vitsi/"
+        "https://www.efsyn.gr/kosmos/1434421/flegetai-i-gallia-apo-tis-megales-dasikes-pyrkagies-20-000-anthropoi-egkateleipsan-ta-spitia-toys-eikones-vinteo/",
+        "https://www.efsyn.gr/life/1434395/i-kideia-tis-mponi-tailer-tha-ginei-stis-17-aygoystoy-stin-oyalia-tha-metadothei-zontana-apo-tin-istoselida-tis/",
+        "https://www.efsyn.gr/politiki/1434419/minysi-ypovallei-o-salmas-kata-toy-georgiadi-melos-tis-kyvernisis-paroysiazei-plasta-kai-emfanos-notheymena-eggrafa/",
+        "https://www.efsyn.gr/politiki/1434424/syriza-se-eklogiki-etoimotita-meta-apo-mia-ekriktiki-periodo-ti-apofasise-i-politiki-grammateia/",
+        "https://www.efsyn.gr/politiki/1434396/mitsotakis-gia-ton-aytokinitodromo-e65-pragmatopoiithike-ena-akomi-prosopiko-moy-stoihima/",
+        "https://www.efsyn.gr/athlitismos/1434413/o-40hronos-montrits-ypegrapse-neo-symvolaio-me-ti-milan/"
       ],
-      "seen_at_utc": "2026-07-23T17:28:21.693442+00:00"
+      "seen_at_utc": "2026-07-23T18:28:22.316873+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/23/life/culture-live/aliki-vougiouklaki-to-vinteo-tis-finos-film-gia-ta-30-xronia-apo-ton-thanato-tis/",
-      "title": "Αλίκη Βουγιουκλάκη: To βίντεο της Φίνος Φιλμ για τα 30 χρόνια από τον θάνατό της",
-      "normalized_title": "ΑΛΙΚΗ ΒΟΥΓΙΟΥΚΛΑΚΗ: TO ΒΙΝΤΕΟ ΤΗΣ ΦΙΝΟΣ ΦΙΛΜ ΓΙΑ ΤΑ 30 ΧΡΟΝΙΑ ΑΠΟ ΤΟΝ ΘΑΝΑΤΟ ΤΗΣ",
+      "url": "https://www.in.gr/2026/07/23/greece/syggeneis-thymaton-ton-tempon-sxoliazoun-sto-in-tin-protasi-tou-antieisaggelea-gia-parapompi-triantopoulou-kai-agorastou-se-diki/",
+      "title": "Συγγενείς θυμάτων των Τεμπών σχολιάζουν στο in, την πρόταση του αντιεισαγγελέα για παραπομπή Τριαντόπουλου και Αγοραστού σε δίκη",
+      "normalized_title": "ΣΥΓΓΕΝΕΙΣ ΘΥΜΑΤΩΝ ΤΩΝ ΤΕΜΠΩΝ ΣΧΟΛΙΑΖΟΥΝ ΣΤΟ IN, ΤΗΝ ΠΡΟΤΑΣΗ ΤΟΥ ΑΝΤΙΕΙΣΑΓΓΕΛΕΑ ΓΙΑ ΠΑΡΑΠΟΜΠΗ ΤΡΙΑΝΤΟΠΟΥΛΟΥ ΚΑΙ ΑΓΟΡΑΣΤΟΥ ΣΕ ΔΙΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/23/life/culture-live/aliki-vougiouklaki-to-vinteo-tis-finos-film-gia-ta-30-xronia-apo-ton-thanato-tis/",
-        "https://www.in.gr/2026/07/23/sports/football/panathinaikos-i-11ada-tou-gia-to-paixnidi-me-tin-paksi-pic/",
-        "https://www.in.gr/2026/07/23/world/meta-ti-symfonia-me-ti-saoudiki-aravia-o-tramp-allakse-tous-orous-tis-zita-na-anagnorisei-to-israil/",
-        "https://www.in.gr/2026/07/23/world/i-epanastasi-ton-flamingko-pos-o-kousner-enose-tous-alvanous-enantion-tou-rama/",
-        "https://www.in.gr/2026/07/23/politics/diplomatia/ypourgeio-eksoterikon-katadiki-ton-apeilon-ton-xouthi-kata-tis-naysiploias-apo-kai-pros-ti-saoudiki-aravia/",
-        "https://www.in.gr/2026/07/23/greece/poiniki-dioksi-gia-anthropoktonia-apo-prothesi-ston-28xrono-gia-ti-dolofonia-tou-stayrou-georgiou/"
+        "https://www.in.gr/2026/07/23/greece/syggeneis-thymaton-ton-tempon-sxoliazoun-sto-in-tin-protasi-tou-antieisaggelea-gia-parapompi-triantopoulou-kai-agorastou-se-diki/",
+        "https://www.in.gr/2026/07/23/life/culture-live/o-raian-reinolnts-sxediazei-mia-nea-tainia-gia-ton-deadpool/",
+        "https://www.in.gr/2026/07/23/world/poso-isxyro-einai-to-elliniko-diavatirio-arketa-kathos-vrisketai-stin-triti-katigoria-tis-pagkosmias-listas/",
+        "https://www.in.gr/2026/07/23/greece/zaxarias-kesses-krouei-ton-kodona-gia-diorthoseis-sto-nomosxedio-gia-tis-agoges-slapp-oi-pagides/",
+        "https://www.in.gr/2026/07/23/sports/football/ntinamo-kievou-paok-anatropi-gia-ton-dikefalo-o-zafeiris-kanei-to-2-1-vid/",
+        "https://www.in.gr/2026/07/23/greece/stayros-georgiou-vinteo-ntokoumento-kategrapse-ton-28xrono-na-vgainei-apo-to-grafeio-tou-dikigorou-meta-ti-dolofonia/",
+        "https://www.in.gr/2026/07/23/world/ipa-perase-psifisma-apo-tin-vouli-pou-periorizei-tis-polemikes-eksousies-tramp-xoris-egkrisi-tou-kogkresou/",
+        "https://www.in.gr/2026/07/23/politics/politiki-grammateia/o-kikilias-vraveyse-ti-nayagosostria-sofia-kaspiri-to-ypsilo-aisthima-eythynes-pou-epedeikse-sti-thalassa/",
+        "https://www.in.gr/matchcenter/5789175/",
+        "https://www.in.gr/2026/07/23/economy/esoterikos-tourismos-se-syggeneis-filous-i-sto-xorio-oi-7-stis-10-dianyktereyseis/",
+        "https://www.in.gr/2026/07/23/economy/oikonomikes-eidiseis/peristeris-pos-kratisame-zontano-to-ergo-tou-e65/",
+        "https://www.in.gr/2026/07/23/politics/politiki-grammateia/syriza-apo-ti-tholoura-stin-eklogiki-etoimotita-oi-apofaseis-pou-parthikan-stin-politiki-grammateia/",
+        "https://www.in.gr/2026/07/23/sports/football/ntinamo-kievou-paok-proigithikan-oi-oukranoi-isofarise-o-konstantelias-gia-ton-dikefalo-vids/"
       ],
-      "seen_at_utc": "2026-07-23T17:28:21.693328+00:00"
+      "seen_at_utc": "2026-07-23T18:28:22.316840+00:00"
     }
   },
-  "updated_at_utc": "2026-07-23T17:28:21.693610+00:00"
+  "updated_at_utc": "2026-07-23T18:28:22.317004+00:00"
 }
