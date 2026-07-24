@@ -1,30 +1,27 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564363142/fast-track-proslipseis-ergazomenon-eos-dyo-imeron-mesa-apo-to-kinito/",
-      "title": "Fast track προσλήψεις εργαζομένων έως δύο ημερών μέσα από το κινητό",
-      "normalized_title": "FAST TRACK ΠΡΟΣΛΗΨΕΙΣ ΕΡΓΑΖΟΜΕΝΩΝ ΕΩΣ ΔΥΟ ΗΜΕΡΩΝ ΜΕΣΑ ΑΠΟ ΤΟ ΚΙΝΗΤΟ",
+      "url": "https://www.kathimerini.gr/world/564363583/oykrania-episkepsi-zelenski-ston-tramp-tin-epomeni-evdomada-poio-to-simeio-kampis-sti-schesi-toys/",
+      "title": "Ουκρανία: Επίσκεψη Ζελένσκι στον Τραμπ την επόμενη εβδομάδα – Ποιο το σημείο καμπής στη σχέση τους",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: ΕΠΙΣΚΕΨΗ ΖΕΛΕΝΣΚΙ ΣΤΟΝ ΤΡΑΜΠ ΤΗΝ ΕΠΟΜΕΝΗ ΕΒΔΟΜΑΔΑ – ΠΟΙΟ ΤΟ ΣΗΜΕΙΟ ΚΑΜΠΗΣ ΣΤΗ ΣΧΕΣΗ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564363142/fast-track-proslipseis-ergazomenon-eos-dyo-imeron-mesa-apo-to-kinito/",
-        "https://www.kathimerini.gr/economy/business/564363181/oi-eyropaikes-startups-antlisan-42-dis-dol-to-proto-examino/",
-        "https://www.kathimerini.gr/society/564363505/syros-ta-stoicheia-poy-exetazei-i-el-as-gia-ton-thanato-tis-41chronis-anazitoyn-yliko-apo-kameres/",
-        "https://www.kathimerini.gr/world/564363499/komision-chamiloi-tonoi-gia-toys-neoys-dasmoys-tramp-entos-toy-orioy-poy-eiche-symfonithei/",
-        "https://www.kathimerini.gr/economy/international/564363202/i-samsung-anoixe-ton-asko-toy-aioloy-sti-n-korea/",
-        "https://www.kathimerini.gr/politics/564363484/mitsotakis-oi-ekloges-den-tha-ginoyn-to-fthinoporo/",
-        "https://www.kathimerini.gr/world/564363496/o-indos-aktivistis-sonam-goyangktsoyk-termatise-tin-apergia-peinas-oi-katsarides-paramenoyn-stoys-dromoys/",
-        "https://www.kathimerini.gr/world/564363430/stena-toy-ormoyz-dieleysi-molis-enos-tanker-se-24-ores/",
-        "https://www.kathimerini.gr/economy/international/564363226/i-unicredit-thelei-pliri-elegcho-tis-commerzbank-to-d-trimino/",
-        "https://www.kathimerini.gr/world/564363466/to-iran-feretai-na-aperripse-protasi-ton-ipa-gia-ekecheiria/",
-        "https://www.kathimerini.gr/world/564363472/oyranios-dromos-oi-oneirikoi-antikatoptrismoi-se-limni-tis-kinas/",
-        "https://www.kathimerini.gr/culture/agenda/564363469/exodos-stin-athina-kai-ektos-tin-paraskeyi-24-7/",
-        "https://www.kathimerini.gr/society/564363460/apisteyti-ypothesi-apatis-stin-kastoria-epeisan-ilikiomeno-na-odigisei-mechri-tin-athina-kai-na-paradosei-37-000-eyro/",
-        "https://www.kathimerini.gr/society/564363454/kriti-entopismos-42-metanaston-notia-ton-kalon-limenon/",
-        "https://www.kathimerini.gr/columns/564362560/to-big-deal-tis-nestle-oi-proslipseis-expres-kai-o-gamos-tis-thessalonikis/",
-        "https://www.kathimerini.gr/opinion/564362905/patinia-kannavi-kai-oikogeneia/",
-        "https://www.kathimerini.gr/opinion/564362911/me-tis-zestes-ola-sygchoroyntai/",
-        "https://www.kathimerini.gr/opinion/564362923/akoresti-anthropofagia/"
+        "https://www.kathimerini.gr/world/564363583/oykrania-episkepsi-zelenski-ston-tramp-tin-epomeni-evdomada-poio-to-simeio-kampis-sti-schesi-toys/",
+        "https://www.kathimerini.gr/economy/international/564363205/symmachia-ford-me-tin-kineziki-geely-stin-ispania-gia-ilektrika-ochimata/",
+        "https://www.kathimerini.gr/society/564363598/syros-synelifthi-o-andras-gia-ti-dolofonia-tis-41chronis-ischyristike-oti-vriskotan-se-amyna/",
+        "https://www.kathimerini.gr/politics/564363595/syriza-orkistikan-sti-voyli-oi-theodora-akriotoy-kai-ioannis-karipidis/",
+        "https://www.kathimerini.gr/society/564363574/to-teleytaio-antio-sti-mairi-linta/",
+        "https://www.kathimerini.gr/world/564363547/india-synantisi-ton-katsaridon-me-tin-kyvernisi-synechizontai-oi-diadiloseis/",
+        "https://www.kathimerini.gr/economy/international/564363223/deal-3-dis-eyro-gia-ti-nestle-ston-tomea-emfialomenoy-neroy/",
+        "https://www.kathimerini.gr/world/564363535/pyrkagies-stin-eyropi-ekkenosi-toy-gallikoy-theretroy-kap-fere-ston-atlantiko/",
+        "https://www.kathimerini.gr/world/564363385/pos-o-tramp-anetrepse-tin-pyriniki-symfonia-me-ti-saoydiki-aravia-mesa-se-24-ores/",
+        "https://www.kathimerini.gr/k/gastronomos/564362230/prozymenio-psomi-vromis-me-kefir/",
+        "https://www.kathimerini.gr/istoria/564362914/90-chronia-prin-24-7-1936/",
+        "https://www.kathimerini.gr/politics/564362743/pasok-elas-se-theseis-machis-me-to-vlemma-stis-metriseis/",
+        "https://www.kathimerini.gr/nytimes/564363514/new-york-times-xafnika-meiothike-o-episimos-apologismos-ton-nekron-amerikanon-ston-polemo/",
+        "https://www.kathimerini.gr/society/564363520/panikos-sti-thessaloniki-nearos-me-oplo-typoy-replika-tromokratoyse-dierchomenoys-polites/",
+        "https://www.kathimerini.gr/world/564362833/giati-sigisan-ta-opla-metaxy-israil-kai-iran/"
       ],
-      "seen_at_utc": "2026-07-24T06:28:02.823474+00:00"
+      "seen_at_utc": "2026-07-24T07:28:12.221938+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1291,41 +1288,43 @@
       "seen_at_utc": "2026-07-24T06:28:02.823554+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1434615/ston-aera-ta-amartola-spitakia-anakyklosis-i-etaireia-payei-ti-leitoyrgia-toys/",
-      "title": "Στον αέρα τα αμαρτωλά «Σπιτάκια Ανακύκλωσης» – Η εταιρεία παύει τη λειτουργία τους",
-      "normalized_title": "ΣΤΟΝ ΑΕΡΑ ΤΑ ΑΜΑΡΤΩΛΑ «ΣΠΙΤΑΚΙΑ ΑΝΑΚΥΚΛΩΣΗΣ» – Η ΕΤΑΙΡΕΙΑ ΠΑΥΕΙ ΤΗ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1434693/forologikes-diloseis-ligei-simera-i-prothesmia-horis-paratasi-ta-prostima-oi-doseis-kai-i-ekptosi-2/",
+      "title": "Φορολογικές δηλώσεις: Λήγει σήμερα η προθεσμία υποβολής – Τα πρόστιμα, οι δόσεις και η έκπτωση 2%",
+      "normalized_title": "ΦΟΡΟΛΟΓΙΚΕΣ ΔΗΛΩΣΕΙΣ: ΛΗΓΕΙ ΣΗΜΕΡΑ Η ΠΡΟΘΕΣΜΙΑ ΥΠΟΒΟΛΗΣ – ΤΑ ΠΡΟΣΤΙΜΑ, ΟΙ ΔΟΣΕΙΣ ΚΑΙ Η ΕΚΠΤΩΣΗ 2%",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1434615/ston-aera-ta-amartola-spitakia-anakyklosis-i-etaireia-payei-ti-leitoyrgia-toys/",
-        "https://www.efsyn.gr/politiki/1434640/i-doyroy-o-kotzias-kai-oi-palies-agapes-toy-syriza/",
-        "https://www.efsyn.gr/ellada/1434610/prostasia-apo-agoges-slapp-parathyra-gia-parakampsi-tis-eyropaikis-odigias/",
-        "https://www.efsyn.gr/politiki/1434618/mitsotakis-oi-ekloges-den-tha-ginoyn-to-fthinoporo-live/",
-        "https://www.efsyn.gr/politiki/1434595/proti-fora-mesa-sto-proedriko-i-dexiosi-gia-tin-apokatastasi-tis-dimokratias-oi-ihires-apoysies/",
-        "https://www.efsyn.gr/ellada/1434574/thriler-stin-ano-syro-nekri-41hroni-me-traymata-stin-plati-meta-apo-kavga-aytoamyna-epikaleitai-to-zeygari/",
-        "https://www.efsyn.gr/politiki/1434591/novartis-kalypsi-maximoy-se-adoni-meta-tis-kataggelies-salma-profanos-paramenei-sti-thesi-toy/",
-        "https://www.efsyn.gr/politiki/1434594/to-limanisio-karfi-tis-ninas-kasimati/"
+        "https://www.efsyn.gr/oikonomia/1434693/forologikes-diloseis-ligei-simera-i-prothesmia-horis-paratasi-ta-prostima-oi-doseis-kai-i-ekptosi-2/",
+        "https://www.efsyn.gr/ellada/1434666/dolofonia-georgioy-oi-arhes-skanaroyn-to-laptop-toy-poinikologoy-ti-deytera-i-apologia-toy-28hronoy/",
+        "https://www.efsyn.gr/ellada/1434682/mairi-linta-filoi-kai-syggeneis-apohairetoyn-ti-megali-kyria-toy-ellinikoy-tragoydioy-eikones/",
+        "https://www.efsyn.gr/politiki/1434665/georgiadis-xana-kata-salma-as-afisei-o-sykofantis-toys-leontarismoys-se-mena/",
+        "https://www.efsyn.gr/stiles/1434667/to-stratigiko-lathos-toy-pasok/",
+        "https://www.efsyn.gr/stiles/1434673/tehno-arhia-o-thaymastos-neos-kosmos/",
+        "https://www.efsyn.gr/stiles/1434676/kakogoysto-anekdoto-oti-o-tsipras-ithele-na-dialysei-ton-syriza/",
+        "https://www.efsyn.gr/stiles/1434661/odysseia-kai-alla/",
+        "https://www.efsyn.gr/stiles/1434639/poia-dikaiosi/",
+        "https://www.efsyn.gr/ellada/1434619/prognosi-arnaoytogloy-sto-epikentro-tis-kakokairias-kai-i-attiki-ti-ora-tha-simeiothoyn-vrohes-kai-kataigides/",
+        "https://www.efsyn.gr/politiki/1434656/syriza-orkistikan-sti-voyli-oi-theodora-akriotoy-kai-ioannis-karipidis/",
+        "https://www.efsyn.gr/ellada/1434635/thessaloniki-okto-syllipseis-gia-diakinisi-narkotikon-ston-dendropotamo/",
+        "https://www.efsyn.gr/oikonomia/1434629/anafi-provlimata-me-ta-dromologia-ton-ploion-aktoploiko-xepesmo-kataggeloyn-oi-epiheirimaties/",
+        "https://www.efsyn.gr/politiki/1434646/o-empeiros-aytodioikitikos-poy-rihnetai-sti-mahi-toy-prasinoy-stayroy/"
       ],
-      "seen_at_utc": "2026-07-24T06:28:02.823533+00:00"
+      "seen_at_utc": "2026-07-24T07:28:12.222026+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/24/sports/football/nok-aout-apo-tin-revans-me-ti-ntinamo-kievou-o-ali/",
-      "title": "Νοκ άουτ από την ρεβάνς με τη Ντιναμό Κιέβου ο Άλι",
-      "normalized_title": "ΝΟΚ ΑΟΥΤ ΑΠΟ ΤΗΝ ΡΕΒΑΝΣ ΜΕ ΤΗ ΝΤΙΝΑΜΟ ΚΙΕΒΟΥ Ο ΑΛΙ",
+      "url": "https://www.in.gr/2026/07/24/inbox/o-montero-ta-eipe-ola-gia-olympiako-mpartzoka-kai-fournie-vid/",
+      "title": "Ο Μοντέρο τα είπε όλα για Ολυμπιακό, Μπαρτζώκα και Φουρνιέ (vid)",
+      "normalized_title": "Ο ΜΟΝΤΕΡΟ ΤΑ ΕΙΠΕ ΟΛΑ ΓΙΑ ΟΛΥΜΠΙΑΚΟ, ΜΠΑΡΤΖΩΚΑ ΚΑΙ ΦΟΥΡΝΙΕ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/07/24/sports/football/nok-aout-apo-tin-revans-me-ti-ntinamo-kievou-o-ali/",
-        "https://www.in.gr/2026/07/24/greece/nea-stoixeia-gia-ti-dolofonia-tou-poinikologou-stayrou-georgiou-en-anamoni-tis-apologias-tou-28xronou/",
-        "https://www.in.gr/2026/07/24/politics/den-tha-ginoun-ekloges-to-fthinoporo-epimenei-o-mitsotakis-genikologes-yposxeseis-gia-paroxes/",
-        "https://www.in.gr/2026/07/24/politics/politiki-grammateia/syntagmatiki-anatheorisi-deite-live-ti-syzitisi-sti-vouli/",
-        "https://www.in.gr/2026/07/24/economy/ektakto-epidoma-paidiou-150-eyro-poioi-plironontai-eos-teli-aygoustou/",
-        "https://www.in.gr/2026/07/24/sports/football/pelistri-den-eksetasa-protasi-gia-na-fygo-apo-ton-panathinaiko/",
-        "https://www.in.gr/2026/07/24/apopsi/dimioi-kai-desmofylakes/",
-        "https://www.in.gr/2026/07/24/life/culture-live/h-idonistiki-kai-politiki-doksa-ton-vradinon-eksodon-apo-tous-kipous-anapsyxis-tou-18ou-aiona-sto-dance-floor/",
-        "https://www.in.gr/2026/07/24/world/ekriktiko-proigoumeno-i-apantisi-aragtsi-meta-tis-diloseis-tramp-gia-ta-iranika-pagomena-stoixeia/",
-        "https://www.in.gr/2026/07/24/economy/oikonomikes-eidiseis/diakopes-pou-ksodepsan-368-dis-oi-ellines-touristes-i-mesi-imerisia-dapani-grafimata/",
-        "https://www.in.gr/2026/07/24/sports/football/olympiakos-pempto-filiko-mats-antipalos-i-antverp/",
-        "https://www.in.gr/2026/07/24/life/culture-live/o-verner-xertzogk-edose-tin-proti-geysi-tis-eperxomenis-tainias-tou-i-symmetoxi-sto-festival-venetias/"
+        "https://www.in.gr/2026/07/24/inbox/o-montero-ta-eipe-ola-gia-olympiako-mpartzoka-kai-fournie-vid/",
+        "https://www.in.gr/2026/07/24/greece/se-klima-sygkinisis-to-teleytaio-antio-sti-mairi-linta/",
+        "https://www.in.gr/2026/07/24/sports/football/o-palasios-sti-thessaloniki-gia-na-ypograpsei-ston-ari/",
+        "https://www.in.gr/2026/07/24/life/culture-live/enas-18xronos-ereynise-ta-arxeia-epstain-gia-mia-sxoliki-ergasia-kai-vrethike-antimetopos-me-apeili-agogis/",
+        "https://www.in.gr/2026/07/24/pet-stories/kalokairines-diakopes-pos-tha-eksasfalisoume-asfaleis-kai-iremes-stigmes-me-ton-skylo-mas/",
+        "https://www.in.gr/2026/07/24/greece/kriti-oi-okto-periptoseis-diafthoras-pou-odigisan-sti-syllipsi-tou-iatrodikasti-kai-tou-toksikologou/",
+        "https://www.in.gr/2026/07/24/sports/football/o-empampe-enimerose-ton-pereth-oti-o-olise-einai-thetikos-gia-tin-real-madritis/",
+        "https://www.in.gr/2026/07/24/greece/xartis-provlepsis-kindynou-pyrkagias-se-ypsisti-epifylaki-i-rodos/"
       ],
-      "seen_at_utc": "2026-07-24T06:28:02.823507+00:00"
+      "seen_at_utc": "2026-07-24T07:28:12.221985+00:00"
     }
   },
-  "updated_at_utc": "2026-07-24T06:28:02.823612+00:00"
+  "updated_at_utc": "2026-07-24T07:28:12.222100+00:00"
 }
