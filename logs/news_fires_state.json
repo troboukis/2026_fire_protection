@@ -1,19 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564364555/kataigides-kai-chalazoptoseis-se-polles-perioches-i-prognosi-gia-tis-epomenes-ores/",
-      "title": "Καταιγίδες και χαλαζοπτώσεις σε πολλές περιοχές – Η πρόγνωση για τις επόμενες ώρες",
-      "normalized_title": "ΚΑΤΑΙΓΙΔΕΣ ΚΑΙ ΧΑΛΑΖΟΠΤΩΣΕΙΣ ΣΕ ΠΟΛΛΕΣ ΠΕΡΙΟΧΕΣ – Η ΠΡΟΓΝΩΣΗ ΓΙΑ ΤΙΣ ΕΠΟΜΕΝΕΣ ΩΡΕΣ",
+      "url": "https://www.kathimerini.gr/world/564364714/choythi-den-echei-apokleistei-i-erythra-thalassa-ypochorei-to-petrelaio/",
+      "title": "Χούθι: «Δεν έχει αποκλειστεί η Ερυθρά Θάλασσα» – Υποχωρεί το πετρέλαιο",
+      "normalized_title": "ΧΟΥΘΙ: «ΔΕΝ ΕΧΕΙ ΑΠΟΚΛΕΙΣΤΕΙ Η ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ» – ΥΠΟΧΩΡΕΙ ΤΟ ΠΕΤΡΕΛΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564364555/kataigides-kai-chalazoptoseis-se-polles-perioches-i-prognosi-gia-tis-epomenes-ores/",
-        "https://www.kathimerini.gr/society/564364558/pyrosvestiki-prostima-gia-dyo-foties-apo-petamena-tsigara-se-serres-kai-thesprotia/",
-        "https://www.kathimerini.gr/society/564364549/efodos-toy-limenikoy-se-istioforo-sti-leykada-okto-syllipseis-gia-narkotika/",
-        "https://www.kathimerini.gr/world/564364537/kypriako-se-lysi-dyo-kraton-epimenei-o-chakan-fintan/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564363799/vaseis-2026-i-megali-anodos-ton-michanikon-kai-oi-anatropes-tis-chronias/",
-        "https://www.kathimerini.gr/politics/564364498/r-doyroy-o-syriza-den-tha-parastei-sti-dexiosi-sto-proedriko-megaro/",
-        "https://www.kathimerini.gr/politics/parliament/564364504/voyli-entasi-kai-aichmes-metaxy-mitsotaki-konstantopoyloy/"
+        "https://www.kathimerini.gr/world/564364714/choythi-den-echei-apokleistei-i-erythra-thalassa-ypochorei-to-petrelaio/",
+        "https://www.kathimerini.gr/society/564364708/hellenic-train-apokatastathike-i-sidirodromiki-kykloforia-sto-tmima-larisa-rapsani/",
+        "https://www.kathimerini.gr/athletics/564364660/i-vomva-eskase-o-lempron-ypegrapse-stoys-76ers/",
+        "https://www.kathimerini.gr/society/564364636/kakokairia-kataigida-me-keraynoys-stin-athina-chalazi-se-thessalia-kai-makedonia/",
+        "https://www.kathimerini.gr/k/gastronomos/564362470/melitzanes-gemistes-apo-tin-eyi-voytsina/",
+        "https://www.kathimerini.gr/society/reportaz/564362818/ikaria-ena-ploio-poy-efere-foyrtoynes/",
+        "https://www.kathimerini.gr/athletics/football/564364606/o-kingks-kangkoya-forese-ta-prasina-i-chapoel-mper-seva-anakoinose-ti-metagrafi/",
+        "https://www.kathimerini.gr/world/564364579/tramp-den-pisteyo-oti-rosia-kai-kina-symmetechoyn-ston-polemo-me-to-iran/"
       ],
-      "seen_at_utc": "2026-07-24T15:28:14.334773+00:00"
+      "seen_at_utc": "2026-07-24T16:28:12.471775+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,57 +1266,51 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855721/efodos-tou-limenikou-se-katamaran-sti-leukada-vrikan-kokaini-hapia-ecstasy-metrita-kai-prohorisan-se-8-sullipseis/?utm_source=rss",
-      "title": "Έφοδος του Λιμενικού σε καταμαράν στη Λευκάδα: Βρήκαν κοκαΐνη, χάπια ecstasy, μετρητά και προχώρησαν σε 8 συλλήψεις",
-      "normalized_title": "ΕΦΟΔΟΣ ΤΟΥ ΛΙΜΕΝΙΚΟΥ ΣΕ ΚΑΤΑΜΑΡΑΝ ΣΤΗ ΛΕΥΚΑΔΑ: ΒΡΗΚΑΝ ΚΟΚΑΙΝΗ, ΧΑΠΙΑ ECSTASY, ΜΕΤΡΗΤΑ ΚΑΙ ΠΡΟΧΩΡΗΣΑΝ ΣΕ 8 ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1855748/anaparastasi-kai-autopsia-sto-spiti-opou-mahairothike-i-diasostria-sti-suro-den-askithikan-akomi-dioxeis-sto-zeugari/?utm_source=rss",
+      "title": "Αναπαράσταση και αυτοψία στο σπίτι όπου μαχαιρώθηκε η διασώστρια στη Σύρο, δεν ασκήθηκαν ακόμη διώξεις στο ζευγάρι",
+      "normalized_title": "ΑΝΑΠΑΡΑΣΤΑΣΗ ΚΑΙ ΑΥΤΟΨΙΑ ΣΤΟ ΣΠΙΤΙ ΟΠΟΥ ΜΑΧΑΙΡΩΘΗΚΕ Η ΔΙΑΣΩΣΤΡΙΑ ΣΤΗ ΣΥΡΟ, ΔΕΝ ΑΣΚΗΘΗΚΑΝ ΑΚΟΜΗ ΔΙΩΞΕΙΣ ΣΤΟ ΖΕΥΓΑΡΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855721/efodos-tou-limenikou-se-katamaran-sti-leukada-vrikan-kokaini-hapia-ecstasy-metrita-kai-prohorisan-se-8-sullipseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855712/sunelifthi-45hronos-pou-thopeuse-aniliki-stin-paralia-tis-neas-aghialou-ishuristike-oti-ekanan-parea/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855711/pethane-i-dimosiografos-euthumia-barsaki-se-ilikia-76-eton/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855701/fotia-tora-stin-episkopi-kerkuras-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855676/stegi-petaxe-dromoi-plimmurisan-epesan-dedra-kai-anemostroviloi-sikosan-ta-pada/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855675/sunelifthi-27hronos-pou-prokalese-fotia-sto-koropi-apo-reumatoklopi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855748/anaparastasi-kai-autopsia-sto-spiti-opou-mahairothike-i-diasostria-sti-suro-den-askithikan-akomi-dioxeis-sto-zeugari/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855734/trohaio-me-pede-traumaties-metaxu-ton-opoion-tria-paidia-sti-halkidiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855730/exafanistike-27hroni-sto-menidi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855728/sullipsi-30hronou-gia-purkagia-apo-ameleia-sti-thessaloniki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-24T15:28:14.334919+00:00"
+      "seen_at_utc": "2026-07-24T16:28:12.471896+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1435057/pyrkagia-sti-rapsani-diakopi-tis-sidirodromikis-kykloforias-kai-tis-ilektrodotisis/",
-      "title": "Πυρκαγιά στη Ραψάνη: Διακοπή της σιδηροδρομικής κυκλοφορίας και της ηλεκτροδότησης",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΡΑΨΑΝΗ: ΔΙΑΚΟΠΗ ΤΗΣ ΣΙΔΗΡΟΔΡΟΜΙΚΗΣ ΚΥΚΛΟΦΟΡΙΑΣ ΚΑΙ ΤΗΣ ΗΛΕΚΤΡΟΔΟΤΗΣΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1435080/xafniko-mpoyrini-stin-attiki-anoixan-oi-oyranoi-me-ishyri-vrohi-kai-haos-stoys-dromoys-vinteo/",
+      "title": "Ξαφνικό μπουρίνι στην Αττική: Άνοιξαν οι ουρανοί με ισχυρή βροχή και χάος στους δρόμους [βίντεο]",
+      "normalized_title": "ΞΑΦΝΙΚΟ ΜΠΟΥΡΙΝΙ ΣΤΗΝ ΑΤΤΙΚΗ: ΑΝΟΙΞΑΝ ΟΙ ΟΥΡΑΝΟΙ ΜΕ ΙΣΧΥΡΗ ΒΡΟΧΗ ΚΑΙ ΧΑΟΣ ΣΤΟΥΣ ΔΡΟΜΟΥΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1435057/pyrkagia-sti-rapsani-diakopi-tis-sidirodromikis-kykloforias-kai-tis-ilektrodotisis/",
-        "https://www.efsyn.gr/life/1435052/olo-pio-pano-to-neo-tragoydi-tis-annas-vissi-kykloforise-kai-entyposiazei-vinteo/",
-        "https://www.efsyn.gr/media/1435051/dyo-vivlia-toy-dionysi-haritopoyloy-mazi-me-tin-efimerida-ton-syntakton-savvatokyriakoy/",
-        "https://www.efsyn.gr/politiki/1435021/foititis-xana-sta-70-toy-o-proin-voyleytis-toy-syriza-dimitris-gakis-to-minyma-toy-gia-tin-anapiria/",
-        "https://www.efsyn.gr/ellada/1435046/koryfonetai-i-exodos-ton-adeioyhon-sto-kokkino-o-kifisos-kai-oi-vasikes-artiries-tis-attikis-vinteo/",
-        "https://www.efsyn.gr/ellada/1434761/xafnika-loyketa-se-domes-asynodeyton-anilikon/",
-        "https://www.efsyn.gr/podcast/afylakti-diavasi-savvato-20-ioylioy-1974-ora-530-to-proi/",
-        "https://www.efsyn.gr/kosmos/1435042/germania-mparaz-antidraseon-gia-ton-mini-anashimatismo-toy-merts/",
-        "https://www.efsyn.gr/ellada/1435031/sokaristiki-kataggelia-stin-kallithea-xylokopise-tin-egkyo-proin-syntrofo-toy-pethane-to-pente-minon-emvryo/",
-        "https://www.efsyn.gr/ellada/1435034/skafos-me-10-atoma-empase-nera-anoihta-ton-hanion-diasothikan-apo-to-limeniko-pliroma-kai-epivates/",
-        "https://www.efsyn.gr/ellada/1435028/mpahalo-i-metrisi-proypiresias-ton-idiotikon-ekpaideytikon-to-ypaith-zitise-apo-ellinida-pistopoiitiko-ellinomatheias/",
-        "https://www.efsyn.gr/ellada/1435026/sarotiko-perasma-tis-kakokairias-epesan-dentra-kai-kolones-tis-dei-provlimata-se-odiko-diktyo-kai-ypodomes/"
+        "https://www.efsyn.gr/ellada/1435080/xafniko-mpoyrini-stin-attiki-anoixan-oi-oyranoi-me-ishyri-vrohi-kai-haos-stoys-dromoys-vinteo/",
+        "https://www.efsyn.gr/kosmos/1435078/tramp-otan-si-kai-poytin-moy-lene-oti-den-dinoyn-opla-sto-iran-toys-pisteyo/",
+        "https://www.efsyn.gr/ellada/1434823/anazitontas-asylo-istories-metakiniseon-praxeis-apodohis/",
+        "https://www.efsyn.gr/athlitismos/1435068/nba-o-vasilias-apofasise-o-lempron-tzeims-tha-synehisei-tin-kariera-toy-stoys-filadelfeia-76ers/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-24-07-2026/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-24-07-2026/",
+        "https://www.efsyn.gr/ellada/1435061/apo-ton-kaysona-tis-kataigides-pano-apo-100-000-keraynoi-mesa-se-liges-ores/",
+        "https://www.efsyn.gr/ellada/1435062/telos-gia-fetos-o-daktylios-sto-kentro-tis-athinas-to-metro-tha-epanelthei-to-fthinoporo/"
       ],
-      "seen_at_utc": "2026-07-24T15:28:14.334872+00:00"
+      "seen_at_utc": "2026-07-24T16:28:12.471867+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/24/sports/football/kopa-afrika-to-cas-tha-apofasisei-an-o-titlos-tha-kataliksei-sti-senegali-i-sto-maroko/",
-      "title": "Κόπα Άφρικα: Το CAS θα αποφασίσει αν ο τίτλος θα καταλήξει στη Σενεγάλη ή στο Μαρόκο",
-      "normalized_title": "ΚΟΠΑ ΑΦΡΙΚΑ: ΤΟ CAS ΘΑ ΑΠΟΦΑΣΙΣΕΙ ΑΝ Ο ΤΙΤΛΟΣ ΘΑ ΚΑΤΑΛΗΞΕΙ ΣΤΗ ΣΕΝΕΓΑΛΗ Η ΣΤΟ ΜΑΡΟΚΟ",
+      "url": "https://www.in.gr/2026/07/24/world/xouthi-to-steno-mpamp-al-mantemp-einai-anoixto-o-naytikos-apokleismos-afora-mono-ti-saoudiki-aravia/",
+      "title": "Χούθι: Το στενό Μπαμπ αλ-Μαντέμπ είναι ανοιχτό – Ο ναυτικός αποκλεισμός αφορά μόνο τη Σαουδική Αραβία",
+      "normalized_title": "ΧΟΥΘΙ: ΤΟ ΣΤΕΝΟ ΜΠΑΜΠ ΑΛ-ΜΑΝΤΕΜΠ ΕΙΝΑΙ ΑΝΟΙΧΤΟ – Ο ΝΑΥΤΙΚΟΣ ΑΠΟΚΛΕΙΣΜΟΣ ΑΦΟΡΑ ΜΟΝΟ ΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/24/sports/football/kopa-afrika-to-cas-tha-apofasisei-an-o-titlos-tha-kataliksei-sti-senegali-i-sto-maroko/",
-        "https://www.in.gr/2026/07/24/politics/politiki-grammateia/mitsotakis-epithesi-stin-antipoliteysi-gia-na-krypsei-tin-politiki-tou-apomonosi/",
-        "https://www.in.gr/2026/07/24/greece/koryfonetai-i-eksodos-ton-adeiouxon-sto-kokkino-o-kifisos-kai-oi-vasikes-artiries-tis-attikis/",
-        "https://www.in.gr/2026/07/24/politics/epikairotita/androulakis-stis-dimokraties-den-yparxoun-afentika-kai-oroi-mafias-eiste-protathlitis-tou-thrasous/",
-        "https://www.in.gr/2026/07/24/world/epikindyni-klimakosi-sti-dytiki-oxthi-tesseris-palaistinioi-kai-dyo-israilinoi-stratiotes-nekroi-se-xorio/",
-        "https://www.in.gr/2026/07/24/sports/football/olympiakos-otan-vlepeis-ton-saliaka-na-vourkonei-vid/",
-        "https://www.in.gr/2026/07/24/istoriko-arxeio/pesontes-kyprou-thysia-sto-vomo-megalon-lathon-kai-megalon-pathon/",
-        "https://www.in.gr/2026/07/24/economy/oikonomikes-eidiseis/pote-plironontai-syntakseis-kai-epidomata-aygoustou/",
-        "https://www.in.gr/2026/07/24/greece/se-ekseliksi-i-kakokairia-pou-ekdilonontai-mpourinia-se-epifylaki-i-politiki-prostasia/",
-        "https://www.in.gr/2026/07/24/life/music/to-ntouo-pou-den-kserame-oti-theloume-i-charli-xcx-skinothetei-ton-vincent-cassel/"
+        "https://www.in.gr/2026/07/24/world/xouthi-to-steno-mpamp-al-mantemp-einai-anoixto-o-naytikos-apokleismos-afora-mono-ti-saoudiki-aravia/",
+        "https://www.in.gr/2026/07/24/sports/football/paredes-o-mesi-epaikse-to-teleytaio-tou-paixnidi-me-tin-argentini-vid/",
+        "https://www.in.gr/2026/07/24/greece/dynato-mpourini-xtypa-tin-attiki-anoiksan-oi-ouranoi-potamia-oi-dromoi/",
+        "https://www.in.gr/2026/07/24/sports/basketball/stous-siksers-tha-synexisei-o-lempron-tzeims-ypegrapse-gia-dyo-xronia-pic/",
+        "https://www.in.gr/2026/07/24/world/tragodia-stin-portogalia-nekro-koritsaki-18-minon-emeine-gia-okto-ores-ksexasmeno-se-sxoliko/",
+        "https://www.in.gr/2026/07/24/economy/diethnis-oikonomia/o-tramp-paizei-sto-iran-me-adeio-rezervouar/",
+        "https://www.in.gr/2026/07/24/world/o-netaniaxou-epivevaiose-synantisi-me-tramp-eno-to-iran-plittei-amerikanikes-vaseis-ston-persiko-kolpo/",
+        "https://www.in.gr/2026/07/24/greece/oudemia-sxesi-exoume-o-xristos-thivaios-kai-i-ekdilosi-tis-marias-karystianou-sti-larisa/",
+        "https://www.in.gr/2026/07/24/greece/irakleio-22xroni-entopistike-sto-aerodromio-na-metaferei-19-kila-kannavis/",
+        "https://www.in.gr/2026/07/24/go-fun/fizz/vasalos-vartholomatou-i-epanasyndesi-kai-oi-agkalies-sti-mykono/"
       ],
-      "seen_at_utc": "2026-07-24T15:28:14.334833+00:00"
+      "seen_at_utc": "2026-07-24T16:28:12.471837+00:00"
     }
   },
-  "updated_at_utc": "2026-07-24T15:28:14.335013+00:00"
+  "updated_at_utc": "2026-07-24T16:28:12.471971+00:00"
 }
