@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564364714/choythi-den-echei-apokleistei-i-erythra-thalassa-ypochorei-to-petrelaio/",
-      "title": "Χούθι: «Δεν έχει αποκλειστεί η Ερυθρά Θάλασσα» – Υποχωρεί το πετρέλαιο",
-      "normalized_title": "ΧΟΥΘΙ: «ΔΕΝ ΕΧΕΙ ΑΠΟΚΛΕΙΣΤΕΙ Η ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ» – ΥΠΟΧΩΡΕΙ ΤΟ ΠΕΤΡΕΛΑΙΟ",
+      "url": "https://www.kathimerini.gr/society/564364777/mia-gynaika-i-nea-dramatiki-seira-toy-alpha/",
+      "title": "«Μια γυναίκα»: Η νέα δραματική σειρά του Alpha",
+      "normalized_title": "«ΜΙΑ ΓΥΝΑΙΚΑ»: Η ΝΕΑ ΔΡΑΜΑΤΙΚΗ ΣΕΙΡΑ ΤΟΥ ALPHA",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564364714/choythi-den-echei-apokleistei-i-erythra-thalassa-ypochorei-to-petrelaio/",
-        "https://www.kathimerini.gr/society/564364708/hellenic-train-apokatastathike-i-sidirodromiki-kykloforia-sto-tmima-larisa-rapsani/",
-        "https://www.kathimerini.gr/athletics/564364660/i-vomva-eskase-o-lempron-ypegrapse-stoys-76ers/",
-        "https://www.kathimerini.gr/society/564364636/kakokairia-kataigida-me-keraynoys-stin-athina-chalazi-se-thessalia-kai-makedonia/",
-        "https://www.kathimerini.gr/k/gastronomos/564362470/melitzanes-gemistes-apo-tin-eyi-voytsina/",
-        "https://www.kathimerini.gr/society/reportaz/564362818/ikaria-ena-ploio-poy-efere-foyrtoynes/",
-        "https://www.kathimerini.gr/athletics/football/564364606/o-kingks-kangkoya-forese-ta-prasina-i-chapoel-mper-seva-anakoinose-ti-metagrafi/",
-        "https://www.kathimerini.gr/world/564364579/tramp-den-pisteyo-oti-rosia-kai-kina-symmetechoyn-ston-polemo-me-to-iran/"
+        "https://www.kathimerini.gr/society/564364777/mia-gynaika-i-nea-dramatiki-seira-toy-alpha/",
+        "https://www.kathimerini.gr/politics/564364759/k-tasoylas-i-dimokratia-den-einai-katholoy-eykoli-ypothesi/",
+        "https://www.kathimerini.gr/world/564364741/londino-skafos-tis-astynomias-prosekroyse-se-gefyra-pente-traymaties/",
+        "https://www.kathimerini.gr/society/564364732/thessaloniki-trochaio-stin-ethniki-odo-treis-anilikoi-metaxy-ton-pente-traymation/"
       ],
-      "seen_at_utc": "2026-07-24T16:28:12.471775+00:00"
+      "seen_at_utc": "2026-07-24T17:28:04.383095+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,51 +1262,53 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855748/anaparastasi-kai-autopsia-sto-spiti-opou-mahairothike-i-diasostria-sti-suro-den-askithikan-akomi-dioxeis-sto-zeugari/?utm_source=rss",
-      "title": "Αναπαράσταση και αυτοψία στο σπίτι όπου μαχαιρώθηκε η διασώστρια στη Σύρο, δεν ασκήθηκαν ακόμη διώξεις στο ζευγάρι",
-      "normalized_title": "ΑΝΑΠΑΡΑΣΤΑΣΗ ΚΑΙ ΑΥΤΟΨΙΑ ΣΤΟ ΣΠΙΤΙ ΟΠΟΥ ΜΑΧΑΙΡΩΘΗΚΕ Η ΔΙΑΣΩΣΤΡΙΑ ΣΤΗ ΣΥΡΟ, ΔΕΝ ΑΣΚΗΘΗΚΑΝ ΑΚΟΜΗ ΔΙΩΞΕΙΣ ΣΤΟ ΖΕΥΓΑΡΙ",
+      "url": "https://www.protothema.gr/greece/article/1855800/diakoptodai-ola-ta-dromologia-tou-proastiakou-logo-tis-kakokairias-mehri-neoteras/?utm_source=rss",
+      "title": "Διακόπτονται όλα τα δρομολόγια του Προαστιακού μέχρι νεωτέρας, προβλήματα στην ηλεκτροδότηση από την κακοκαιρία",
+      "normalized_title": "ΔΙΑΚΟΠΤΟΝΤΑΙ ΟΛΑ ΤΑ ΔΡΟΜΟΛΟΓΙΑ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΜΕΧΡΙ ΝΕΩΤΕΡΑΣ, ΠΡΟΒΛΗΜΑΤΑ ΣΤΗΝ ΗΛΕΚΤΡΟΔΟΤΗΣΗ ΑΠΟ ΤΗΝ ΚΑΚΟΚΑΙΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855748/anaparastasi-kai-autopsia-sto-spiti-opou-mahairothike-i-diasostria-sti-suro-den-askithikan-akomi-dioxeis-sto-zeugari/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855734/trohaio-me-pede-traumaties-metaxu-ton-opoion-tria-paidia-sti-halkidiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855730/exafanistike-27hroni-sto-menidi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855728/sullipsi-30hronou-gia-purkagia-apo-ameleia-sti-thessaloniki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855800/diakoptodai-ola-ta-dromologia-tou-proastiakou-logo-tis-kakokairias-mehri-neoteras/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855794/me-pieze-kano-amvlosi-katethese-37hroni-eguos-xulokopithike-stin-kallithea-apo-ton-proin-sudrofo-tis-nekro-to-neogno/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855791/216-kliseis-stin-purosvestiki-gia-kopes-dedron-adliseis-udaton-kai-afaireseis-adikeimenon-logo-tis-kakokairias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855788/zaharaki-gia-tin-anatheorisi-tou-arthrou-16-i-ellada-den-borei-na-sunehisei-na-exagei-foitites-kathigites-kai-gnosi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855774/katerreuse-skalosia-polukatoikias-apo-tin-kakokairia-ston-peiraia-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855770/touristiko-skafos-prosekrouse-se-vraho-exo-apo-ti-moni-xenofodos-sto-agio-oros/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-24T16:28:12.471896+00:00"
+      "seen_at_utc": "2026-07-24T17:28:04.383230+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1435080/xafniko-mpoyrini-stin-attiki-anoixan-oi-oyranoi-me-ishyri-vrohi-kai-haos-stoys-dromoys-vinteo/",
-      "title": "Ξαφνικό μπουρίνι στην Αττική: Άνοιξαν οι ουρανοί με ισχυρή βροχή και χάος στους δρόμους [βίντεο]",
-      "normalized_title": "ΞΑΦΝΙΚΟ ΜΠΟΥΡΙΝΙ ΣΤΗΝ ΑΤΤΙΚΗ: ΑΝΟΙΞΑΝ ΟΙ ΟΥΡΑΝΟΙ ΜΕ ΙΣΧΥΡΗ ΒΡΟΧΗ ΚΑΙ ΧΑΟΣ ΣΤΟΥΣ ΔΡΟΜΟΥΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/stiles/1435130/dimokratia-eggytitas-gia-na-xanahtistei-i-empistosyni/",
+      "title": "Δημοκρατία εγγύτητας για να ξαναχτιστεί η εμπιστοσύνη",
+      "normalized_title": "ΔΗΜΟΚΡΑΤΙΑ ΕΓΓΥΤΗΤΑΣ ΓΙΑ ΝΑ ΞΑΝΑΧΤΙΣΤΕΙ Η ΕΜΠΙΣΤΟΣΥΝΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1435080/xafniko-mpoyrini-stin-attiki-anoixan-oi-oyranoi-me-ishyri-vrohi-kai-haos-stoys-dromoys-vinteo/",
-        "https://www.efsyn.gr/kosmos/1435078/tramp-otan-si-kai-poytin-moy-lene-oti-den-dinoyn-opla-sto-iran-toys-pisteyo/",
-        "https://www.efsyn.gr/ellada/1434823/anazitontas-asylo-istories-metakiniseon-praxeis-apodohis/",
-        "https://www.efsyn.gr/athlitismos/1435068/nba-o-vasilias-apofasise-o-lempron-tzeims-tha-synehisei-tin-kariera-toy-stoys-filadelfeia-76ers/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-24-07-2026/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-24-07-2026/",
-        "https://www.efsyn.gr/ellada/1435061/apo-ton-kaysona-tis-kataigides-pano-apo-100-000-keraynoi-mesa-se-liges-ores/",
-        "https://www.efsyn.gr/ellada/1435062/telos-gia-fetos-o-daktylios-sto-kentro-tis-athinas-to-metro-tha-epanelthei-to-fthinoporo/"
+        "https://www.efsyn.gr/stiles/1435130/dimokratia-eggytitas-gia-na-xanahtistei-i-empistosyni/",
+        "https://www.efsyn.gr/stiles/1435125/gkeorgk-loykats-symvoli-sti-filosofiki-exelixi-toy-nearoy-marx-1840-44/",
+        "https://www.efsyn.gr/athlitismos/1435111/olympiakos-stin-athina-o-tzolakis-gia-na-teleiosei-ti-metagrafi-toy-sti-hal/",
+        "https://www.efsyn.gr/oikonomia/1435040/polemos-sto-iran-giati-i-agora-petrelaioy-antimetopizei-pleon-ti-megalyteri-tis-apeili/",
+        "https://www.efsyn.gr/ellada/1435118/kataigida-stin-attiki-dyo-ptoseis-dentron-se-alexandras-kai-petroy-ralli-apo-tin-ishyri-vinteo/",
+        "https://www.efsyn.gr/ellada/1435107/katerreyse-skalosia-ston-peiraia-en-meso-sfodris-kakokairias/",
+        "https://www.efsyn.gr/politiki/1435083/voles-kata-panton-apo-kairidi-sti-voyli-egkalese-ta-alla-kommata-gia-ti-stasi-toys-sti-syntagmatiki-anatheorisi/",
+        "https://www.efsyn.gr/kosmos/1435102/oi-hoythi-den-kleinoyn-tin-eisodo-tis-erythras-thalassas-mikri-ypohorisi-stin-timi-toy-petrelaioy/",
+        "https://www.efsyn.gr/oikonomia/1434849/fast-track-proslipseis-horis-eggyiseis-ti-allazei-me-tin-energopoiisi-ton-symvaseon-dyo-imeron-meso-kinitoy/",
+        "https://www.efsyn.gr/ellada/1435088/anatropi-sti-syro-den-askithikan-dioxeis-gia-ton-thanato-tis-41hronis-anaparastasi-zitise-o-eisaggeleas/",
+        "https://www.efsyn.gr/kosmos/1435064/nees-rosikes-epitheseis-stin-oykrania-me-15-nekroys-kai-pano-apo-100-traymaties-sfodri-antidrasi-apo-kievo-kai-ee/"
       ],
-      "seen_at_utc": "2026-07-24T16:28:12.471867+00:00"
+      "seen_at_utc": "2026-07-24T17:28:04.383191+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/24/world/xouthi-to-steno-mpamp-al-mantemp-einai-anoixto-o-naytikos-apokleismos-afora-mono-ti-saoudiki-aravia/",
-      "title": "Χούθι: Το στενό Μπαμπ αλ-Μαντέμπ είναι ανοιχτό – Ο ναυτικός αποκλεισμός αφορά μόνο τη Σαουδική Αραβία",
-      "normalized_title": "ΧΟΥΘΙ: ΤΟ ΣΤΕΝΟ ΜΠΑΜΠ ΑΛ-ΜΑΝΤΕΜΠ ΕΙΝΑΙ ΑΝΟΙΧΤΟ – Ο ΝΑΥΤΙΚΟΣ ΑΠΟΚΛΕΙΣΜΟΣ ΑΦΟΡΑ ΜΟΝΟ ΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ",
+      "url": "https://www.in.gr/2026/07/24/world/syros-den-askithikan-diokseis-gia-ti-dolofonia-tis-42xronis-eisaggeliki-entoli-gia-anaparastasi-ton-gegonoton/",
+      "title": "Σύρος: Δεν ασκήθηκαν διώξεις για τη δολοφονία της 42χρονης – Εισαγγελική εντολή για αναπαράσταση των γεγονότων",
+      "normalized_title": "ΣΥΡΟΣ: ΔΕΝ ΑΣΚΗΘΗΚΑΝ ΔΙΩΞΕΙΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ 42ΧΡΟΝΗΣ – ΕΙΣΑΓΓΕΛΙΚΗ ΕΝΤΟΛΗ ΓΙΑ ΑΝΑΠΑΡΑΣΤΑΣΗ ΤΩΝ ΓΕΓΟΝΟΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/24/world/xouthi-to-steno-mpamp-al-mantemp-einai-anoixto-o-naytikos-apokleismos-afora-mono-ti-saoudiki-aravia/",
-        "https://www.in.gr/2026/07/24/sports/football/paredes-o-mesi-epaikse-to-teleytaio-tou-paixnidi-me-tin-argentini-vid/",
-        "https://www.in.gr/2026/07/24/greece/dynato-mpourini-xtypa-tin-attiki-anoiksan-oi-ouranoi-potamia-oi-dromoi/",
-        "https://www.in.gr/2026/07/24/sports/basketball/stous-siksers-tha-synexisei-o-lempron-tzeims-ypegrapse-gia-dyo-xronia-pic/",
-        "https://www.in.gr/2026/07/24/world/tragodia-stin-portogalia-nekro-koritsaki-18-minon-emeine-gia-okto-ores-ksexasmeno-se-sxoliko/",
-        "https://www.in.gr/2026/07/24/economy/diethnis-oikonomia/o-tramp-paizei-sto-iran-me-adeio-rezervouar/",
-        "https://www.in.gr/2026/07/24/world/o-netaniaxou-epivevaiose-synantisi-me-tramp-eno-to-iran-plittei-amerikanikes-vaseis-ston-persiko-kolpo/",
-        "https://www.in.gr/2026/07/24/greece/oudemia-sxesi-exoume-o-xristos-thivaios-kai-i-ekdilosi-tis-marias-karystianou-sti-larisa/",
-        "https://www.in.gr/2026/07/24/greece/irakleio-22xroni-entopistike-sto-aerodromio-na-metaferei-19-kila-kannavis/",
-        "https://www.in.gr/2026/07/24/go-fun/fizz/vasalos-vartholomatou-i-epanasyndesi-kai-oi-agkalies-sti-mykono/"
+        "https://www.in.gr/2026/07/24/world/syros-den-askithikan-diokseis-gia-ti-dolofonia-tis-42xronis-eisaggeliki-entoli-gia-anaparastasi-ton-gegonoton/",
+        "https://www.in.gr/2026/07/24/sports/basketball/episima-ston-ari-o-vasilis-toliopoulos-ypegrapse-symvolaio-mexri-to-2030/",
+        "https://www.in.gr/2026/07/24/greece/diakopi-tis-kykloforias-tou-proastiakou-logo-kakokairias/",
+        "https://www.in.gr/2026/07/24/greece/kataigida-kai-keraynoi-sto-aerodromio-eleytherios-venizelos/",
+        "https://www.in.gr/2026/07/24/sports/football/live-antverp-olympiakos-2/",
+        "https://www.in.gr/2026/07/24/sports/football/olympiakos-i-11ada-gia-ti-filiki-anametrisi-me-tin-antverp/",
+        "https://www.in.gr/2026/07/24/life/culture-live/oi-idioktites-tou-ploiou-pou-eidame-stin-odysseia-dilosan-oti-den-tous-plirosan-tis-zimies/"
       ],
-      "seen_at_utc": "2026-07-24T16:28:12.471837+00:00"
+      "seen_at_utc": "2026-07-24T17:28:04.383158+00:00"
     }
   },
-  "updated_at_utc": "2026-07-24T16:28:12.471971+00:00"
+  "updated_at_utc": "2026-07-24T17:28:04.383299+00:00"
 }
