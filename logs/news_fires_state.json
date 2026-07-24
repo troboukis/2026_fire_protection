@@ -1,25 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564365467/pyrkagia-se-epicheirisi-sto-markopoylo-epicheiroyn-32-pyrosvestes/",
-      "title": "Φωτιά σε επιχείρηση στο Μαρκόπουλο – Επιχειρούν 32 πυροσβέστες",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΠΙΧΕΙΡΗΣΗ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ – ΕΠΙΧΕΙΡΟΥΝ 32 ΠΥΡΟΣΒΕΣΤΕΣ",
+      "url": "https://www.kathimerini.gr/world/564366127/toyrkia-o-ozgkioyr-ozel-idryse-to-neo-komma-kai-exelegi-proedros/",
+      "title": "Τουρκία: Ο Οζγκιούρ Οζέλ ίδρυσε το «Νέο Κόμμα» και εξελέγη πρόεδρος",
+      "normalized_title": "ΤΟΥΡΚΙΑ: Ο ΟΖΓΚΙΟΥΡ ΟΖΕΛ ΙΔΡΥΣΕ ΤΟ «ΝΕΟ ΚΟΜΜΑ» ΚΑΙ ΕΞΕΛΕΓΗ ΠΡΟΕΔΡΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564365467/pyrkagia-se-epicheirisi-sto-markopoylo-epicheiroyn-32-pyrosvestes/",
-        "https://www.kathimerini.gr/world/564365455/to-iran-apeilei-oti-tha-skotonei-enan-amerikano-stratioti-gia-kathe-irano-nekro/",
-        "https://www.kathimerini.gr/culture/arts/564362953/otan-to-marmaro-thymatai/",
-        "https://www.kathimerini.gr/world/564362731/to-vary-psychiko-timima-gia-toys-ygeionomikoys-stin-eyropi/",
-        "https://www.kathimerini.gr/athletics/564364651/to-proto-peistiko-deigma-toy-lisi-ston-paok/",
-        "https://www.kathimerini.gr/society/reportaz/564364462/to-kynigi-tis-salmonelas-sti-lamia/",
-        "https://www.kathimerini.gr/columns/564364633/i-ekptosi-toy-lempron-stoys-sixers-kai-ta-200-ekat-stoichimaton/",
-        "https://www.kathimerini.gr/world/564364858/tha-plirosoyn-vary-timima-apeiles-tramp-stin-e-e-meta-to-prostimo-stin-google/",
-        "https://www.kathimerini.gr/society/564364852/proastiakos-diakopi-dromologion-logo-tis-kakokairias/",
-        "https://www.kathimerini.gr/world/564364810/oykrania-nees-rosikes-epitheseis-me-15-nekroys-kai-pano-apo-100-traymaties/",
-        "https://www.kathimerini.gr/society/564364816/kakokairia-katerreyse-skalosia-ston-peiraia-ptoseis-dentron-stin-athina/",
-        "https://www.kathimerini.gr/athletics/564364804/athlitismos-i-epistrofi-tis-rosias-allazei-ton-charti-ton-epitychion/",
-        "https://www.kathimerini.gr/society/reportaz/564362734/to-esy-kaiei-toys-giatroys-kai-toys-nosileytes/"
+        "https://www.kathimerini.gr/world/564366127/toyrkia-o-ozgkioyr-ozel-idryse-to-neo-komma-kai-exelegi-proedros/",
+        "https://www.kathimerini.gr/society/564365857/kakokairia-pano-apo-apo-55-000-keraynoi-kataigides-kai-anemoi-se-polles-perioches/",
+        "https://www.kathimerini.gr/visual/infographics/564363157/chasma-metaxy-zitoymenon-kai-telikon-timon-polisis-katoikion/",
+        "https://www.kathimerini.gr/world/564366112/diethnes-poiniko-dikastirio-apopempetai-o-genikos-eisaggeleas-karim-chan/",
+        "https://www.kathimerini.gr/economy/564363148/sto-trapezi-i-epanafora-tis-epidotisis-sto-ntizel/",
+        "https://www.kathimerini.gr/culture/books/564362962/idryma-k-karamanli-to-1974-orosimo-gia-tin-istoria-tis-elladas/"
       ],
-      "seen_at_utc": "2026-07-24T18:28:27.076378+00:00"
+      "seen_at_utc": "2026-07-24T19:28:22.171193+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,47 +1264,51 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855818/fotia-tora-se-auli-epiheirisis-sto-markopoulo-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
-      "title": "Φωτιά τώρα σε αυλή εργοστασίου ανακύκλωσης στο Μαρκόπουλο, κινητοποίηση της Πυροσβεστικής",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΑΥΛΗ ΕΡΓΟΣΤΑΣΙΟΥ ΑΝΑΚΥΚΛΩΣΗΣ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ, ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1855833/aimatiro-epeisodio-sti-thessaloniki-sto-nosokomeio-35hronos-pou-dehthike-purovolismo/?utm_source=rss",
+      "title": "Αιματηρό επεισόδιο στη Θεσσαλονίκη: Στο νοσοκομείο 35χρονος που δέχθηκε πυροβολισμό",
+      "normalized_title": "ΑΙΜΑΤΗΡΟ ΕΠΕΙΣΟΔΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ 35ΧΡΟΝΟΣ ΠΟΥ ΔΕΧΘΗΚΕ ΠΥΡΟΒΟΛΙΣΜΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855818/fotia-tora-se-auli-epiheirisis-sto-markopoulo-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855833/aimatiro-epeisodio-sti-thessaloniki-sto-nosokomeio-35hronos-pou-dehthike-purovolismo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855832/tautopoiithike-30hronos-gia-anartiseis-pou-proetrepan-se-eglimatikes-energeies-meso-diadiktuou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855829/klirosi-eurojackpot-2472026-ta-apotelesmata-kai-oi-arithmoi-pou-kerdizoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855828/sunelifthi-40hroni-me-perissotero-apo-ena-kilo-iroinis-sta-ano-liosia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855823/plimmurise-i-leoforos-nato-sta-ano-liosia-eglovistikan-odigoi-deite-fotografies/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-24T18:28:27.076504+00:00"
+      "seen_at_utc": "2026-07-24T19:28:22.171279+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1435191/fotia-se-epiheirisi-me-ylika-anakyklosis-sto-markopoylo-attikis/",
-      "title": "Φωτιά σε επιχείρηση με υλικά ανακύκλωσης στο Μαρκόπουλο Αττικής",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΠΙΧΕΙΡΗΣΗ ΜΕ ΥΛΙΚΑ ΑΝΑΚΥΚΛΩΣΗΣ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ ΑΤΤΙΚΗΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1435258/olympiakos-varia-filiki-itta-apo-tin-antverp-provlimatise-stin-amyna/",
+      "title": "Ολυμπιακός: Βαριά φιλική ήττα από την Αντβέρπ – Προβλημάτισε στην άμυνα",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΒΑΡΙΑ ΦΙΛΙΚΗ ΗΤΤΑ ΑΠΟ ΤΗΝ ΑΝΤΒΕΡΠ – ΠΡΟΒΛΗΜΑΤΙΣΕ ΣΤΗΝ ΑΜΥΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1435191/fotia-se-epiheirisi-me-ylika-anakyklosis-sto-markopoylo-attikis/",
-        "https://www.efsyn.gr/ellada/1435182/kataigida-stin-attiki-parelysan-periohes-apo-ena-mpoyrini-ligon-lepton-plimmyres-apegklovismoi-dentra-stoys-dromoys-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1435187/aris-kitrinos-kai-episimos-o-vasilis-toliopoylos/",
-        "https://www.efsyn.gr/ellada/1435184/ergatiko-atyhima-se-kroyazieroploio-anoihta-ton-spetson-naytikos-epese-apo-ypsos-3-metron/",
-        "https://www.efsyn.gr/politiki/1435139/koyfonikolakoy-gia-tin-apokatastasi-tis-dimokratias-pos-pername-stin-alithini-kyriarhia-tis-koinonias/",
-        "https://www.efsyn.gr/politiki/1435101/tasoylas-sti-dexiosi-gia-ti-dimokratia-den-ehoyme-akoma-anakampsei-apo-ton-dihasmo-tis-krisis-eikones-vinteo/",
-        "https://www.efsyn.gr/ellada/1435142/hellenic-train-diakopikan-ta-dromologia-ston-proastiako-logo-tis-kakokairias/",
-        "https://www.efsyn.gr/ellada/1435126/kolydas-gia-to-kyma-kakokairias-kineitai-grigora-opote-grigori-tha-einai-kai-i-ektonosi-toy/"
+        "https://www.efsyn.gr/athlitismos/1435258/olympiakos-varia-filiki-itta-apo-tin-antverp-provlimatise-stin-amyna/",
+        "https://www.efsyn.gr/kosmos/1435226/flegetai-i-madriti-adynaton-na-svistei-i-pyrkagia-stahti-60-000-stremmata-anestioi-40-000-anthropoi-eikones-vinteo/",
+        "https://www.efsyn.gr/kosmos/1435234/stratiotes-sti-vretania-arpaxan-tank-to-evgalan-apo-to-stratopedo-kai-gazosan-ta-parkarismena-vinteo/",
+        "https://www.efsyn.gr/kosmos/1435235/oie-apopempetai-o-genikos-eisaggeleas-toy-diethnoys-poinikoy-dikastirioy-oi-kataggelies-sexoyaliki-epithesi/",
+        "https://www.efsyn.gr/ellada/1435232/taytopoiithike-30hronos-gia-anartiseis-poy-proetrepan-se-egklimatikes-energeies-meso-diadiktyoy/",
+        "https://www.efsyn.gr/ellada/1435200/kakokairia-epese-polli-vrohi-mesa-se-liges-ores-poy-katagrafikan-ta-megalytera-ypsi/",
+        "https://www.efsyn.gr/kosmos/1435198/frikto-ergatiko-dystyhima-sta-katehomena-tis-kyproy-ergatis-kataplakothike-apo-silo-2-500-tonon/",
+        "https://www.efsyn.gr/kosmos/1435194/orgi-tramp-gia-to-prostimo-tis-e-e-sti-google-proanaggellei-dasmoys-den-tha-ginoyme-o-koymparas-tis-eyropis/"
       ],
-      "seen_at_utc": "2026-07-24T18:28:27.076478+00:00"
+      "seen_at_utc": "2026-07-24T19:28:22.171258+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/24/sports/football/o-aris-anakoinose-tin-apoktisi-tou-sempastian-palasios-erxomai-se-omada-me-megali-dynamiki/",
-      "title": "Ο Άρης ανακοίνωσε την απόκτηση του Παλάσιος: «Έρχομαι σε ομάδα με μεγάλη δυναμική»",
-      "normalized_title": "Ο ΑΡΗΣ ΑΝΑΚΟΙΝΩΣΕ ΤΗΝ ΑΠΟΚΤΗΣΗ ΤΟΥ ΠΑΛΑΣΙΟΣ: «ΕΡΧΟΜΑΙ ΣΕ ΟΜΑΔΑ ΜΕ ΜΕΓΑΛΗ ΔΥΝΑΜΙΚΗ»",
+      "url": "https://www.in.gr/2026/07/24/sports/football/antverp-olympiakos-3-0-plirose-to-blackout/",
+      "title": "Αντβέρπ – Ολυμπιακός 3-0: Πλήρωσε το «blackout» – Ντεμπούτο ο Σάλιακας (vid)",
+      "normalized_title": "ΑΝΤΒΕΡΠ – ΟΛΥΜΠΙΑΚΟΣ 3-0: ΠΛΗΡΩΣΕ ΤΟ «BLACKOUT» – ΝΤΕΜΠΟΥΤΟ Ο ΣΑΛΙΑΚΑΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/07/24/sports/football/o-aris-anakoinose-tin-apoktisi-tou-sempastian-palasios-erxomai-se-omada-me-megali-dynamiki/",
-        "https://www.in.gr/2026/07/24/greece/se-poia-perioxi-epese-i-perissoteri-vroxi-simera-pano-apo-55-000-keraynoi-se-oli-ti-xora/",
-        "https://www.in.gr/2026/07/24/greece/fotia-se-proaylio-xoro-ergostasiou-anakyklosis-sto-markopoulo/",
-        "https://www.in.gr/2026/07/24/politics/erotisi-tou-kke-stin-komision-gia-to-kleisimo-tou-ksenona-metavatikis-filoksenias-xriston/",
-        "https://www.in.gr/2026/07/24/go-fun/fizz/to-nisi-ton-anemon-tous-paei-sofia-vergkara-kai-antonis-remos-synantithikan-sti-mykono/",
-        "https://www.in.gr/2026/07/24/sports/football/o-karlo-antseloti-aperripse-tin-protasi-tis-ethnikis-italias-pic/",
-        "https://www.in.gr/2026/07/24/world/orgi-tramp-gia-to-prostimo-stin-google-kai-proanaggelia-dasmou-den-tha-ginoume-o-koumparas-tis-eyropis/",
-        "https://www.in.gr/2026/07/24/sports/basketball/lempron-tzeims-meta-ti-symfonia-me-tous-siksers-na-tous-voithiso-na-ginoun-omada-protathlitismou/",
-        "https://www.in.gr/2026/07/24/go-fun/fizz/giati-o-kristofer-nolan-apagoreyse-tis-mpotes-ugg-sta-gyrismata-tis-odysseias/"
+        "https://www.in.gr/2026/07/24/sports/football/antverp-olympiakos-3-0-plirose-to-blackout/",
+        "https://www.in.gr/2026/07/24/economy/oikonomikes-eidiseis/aade-pos-ksemplokaroun-amesa-oi-desmeymenoi-trapezikoi-logariasmoi/",
+        "https://www.in.gr/2026/07/24/sports/football/o-kostas-karapapas-gia-ola-apokalypseis-gia-metagrafes-kai-protaseis-vid/",
+        "https://www.in.gr/2026/07/24/english-edition/more-greek-graduates-left-the-country-for-europe-in-2025/",
+        "https://www.in.gr/2026/07/24/world/mesi-anatoli-koryfonetai-i-entasi-me-apeiles-texerani-gia-kathe-nekro-irano-tha-skotonoume-enan-amerikano/",
+        "https://www.in.gr/2026/07/24/politics/epikairotita/epithesi-n-androulaki-ston-k-mitsotaki-apo-tis-polles-skies-mas-odigeite-sto-apolyto-skotadi-tis-diafthoras-pame-se-neo-opekepe-stin-anakyklosi/",
+        "https://www.in.gr/2026/07/24/sports/football/antverp-olympiakos-oraia-energeia-apo-ton-zelson-o-filis-astoxei-gia-ligo-vid/",
+        "https://www.in.gr/2026/07/24/life/culture-live/erxetai-to-ali-g-who-iz-i-me-to-agenes-agori-sasa-mparon-koen/",
+        "https://www.in.gr/2026/07/24/greece/stayros-georgiou-nea-vinteo-ntokoumenta-tou-28xronou-meta-ti-dolofonia-tou-poinikologou/"
       ],
-      "seen_at_utc": "2026-07-24T18:28:27.076447+00:00"
+      "seen_at_utc": "2026-07-24T19:28:22.171235+00:00"
     }
   },
-  "updated_at_utc": "2026-07-24T18:28:27.076603+00:00"
+  "updated_at_utc": "2026-07-24T19:28:22.171339+00:00"
 }
