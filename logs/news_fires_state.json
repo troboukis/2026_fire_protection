@@ -1,20 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564366004/anaplaseis-ktirion-se-peiraia-thessaloniki-apo-tin-orilina/",
-      "title": "Αναπλάσεις κτιρίων σε Πειραιά, Θεσσαλονίκη από την Orilina",
-      "normalized_title": "ΑΝΑΠΛΑΣΕΙΣ ΚΤΙΡΙΩΝ ΣΕ ΠΕΙΡΑΙΑ, ΘΕΣΣΑΛΟΝΙΚΗ ΑΠΟ ΤΗΝ ORILINA",
+      "url": "https://www.kathimerini.gr/economy/local/564365944/o-kindynos-tis-diplis-pagidas/",
+      "title": "Ο κίνδυνος της διπλής παγίδας",
+      "normalized_title": "Ο ΚΙΝΔΥΝΟΣ ΤΗΣ ΔΙΠΛΗΣ ΠΑΓΙΔΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564366004/anaplaseis-ktirion-se-peiraia-thessaloniki-apo-tin-orilina/",
-        "https://www.kathimerini.gr/society/564367426/egklima-sti-syro-anaparastasi-sto-simeio-opoy-machairothike-i-41chroni-ti-ereynatai/",
-        "https://www.kathimerini.gr/economy/business/564366025/dyskoli-pista-gia-mikres-etaireies-oi-aerometafores/",
-        "https://www.kathimerini.gr/opinion/interviews/564360214/misos-apollon-misos-samoyrai-i-archaia-ellada-tis-iaponias/",
-        "https://www.kathimerini.gr/world/564367378/roymania-katarripsi-drone-poy-paraviase-ton-ethniko-enaerio-choro-i-deyteri-se-24-ores/",
-        "https://www.kathimerini.gr/economy/business/564366007/enischysi-ependyseon-megalon-epicheiriseon-se-d-makedonia-megalopoli/",
-        "https://www.kathimerini.gr/culture/arts/564365770/yposchesi-choris-antikrisma/",
-        "https://www.kathimerini.gr/society/564367351/metro-erga-sti-mple-grammi-apo-tin-kyriaki-poioi-stathmoi-tha-kleinoyn-noritera/"
+        "https://www.kathimerini.gr/economy/local/564365944/o-kindynos-tis-diplis-pagidas/",
+        "https://www.kathimerini.gr/opinion/interviews/564365698/nteivint-sent-stin-k-pithani-katalipsi-nisioy-apo-tis-ipa/",
+        "https://www.kathimerini.gr/world/564367441/pyrini-kolasi-se-gallia-kai-ispania-ekkenonontai-proastia-toy-mpornto-sti-machi-kai-o-stratos/",
+        "https://www.kathimerini.gr/politics/amyna/564367450/saoydiki-aravia-deyteri-emploki-se-liges-ores-gia-toys-ellinikoys-patriot-katerripsan-kai-drone-apo-tin-yemeni/",
+        "https://www.kathimerini.gr/world/564365707/toyrkia-isovios-proedros-o-erntogan/",
+        "https://www.kathimerini.gr/society/564367432/epeisodiaki-syllipsi-apateonon-sto-kilkis-katadioxi-kai-traymatismos-astynomikon/",
+        "https://www.kathimerini.gr/economy/business/564366010/grigora-kai-apotelesmatika-i-machi-ton-trapezon-me-ton-chrono/"
       ],
-      "seen_at_utc": "2026-07-25T08:28:04.257561+00:00"
+      "seen_at_utc": "2026-07-25T09:28:03.059630+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,51 +1265,55 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855954/kilkis-apateonas-paresure-me-to-autokinito-tou-astunomikous-kai-politi-gia-na-xefugei/?utm_source=rss",
-      "title": "Κιλκίς: Απατεώνας παρέσυρε με το αυτοκίνητό του αστυνομικούς και πολίτη για να ξεφύγει",
-      "normalized_title": "ΚΙΛΚΙΣ: ΑΠΑΤΕΩΝΑΣ ΠΑΡΕΣΥΡΕ ΜΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ ΑΣΤΥΝΟΜΙΚΟΥΣ ΚΑΙ ΠΟΛΙΤΗ ΓΙΑ ΝΑ ΞΕΦΥΓΕΙ",
+      "url": "https://www.protothema.gr/greece/article/1855975/kerkura-fotia-stous-giannades-megali-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Κέρκυρα: Φωτιά στους Γιαννάδες, μεγάλη κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΚΕΡΚΥΡΑ: ΦΩΤΙΑ ΣΤΟΥΣ ΓΙΑΝΝΑΔΕΣ, ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855954/kilkis-apateonas-paresure-me-to-autokinito-tou-astunomikous-kai-politi-gia-na-xefugei/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855950/suggeneis-kai-filoi-apohairetisan-ton-dikigoro-stauro-georgiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855944/oloklirothike-i-anaparastasi-tis-dolofonias-tis-diasostrias-sti-suro-mustirio-ti-akrivos-sunevi-sto-esoteriko-tis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855941/spania-kalokairini-hionoptosi-ston-olubo-deite-eduposiaka-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855975/kerkura-fotia-stous-giannades-megali-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855974/o-dias-ekneuristike-etrehan-oi-touristes-stin-akropoli-me-tin-hthesini-kakokairia-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855970/duo-sullipseis-gia-purkagies-apo-ameleia-se-evro-kai-grevena-apo-ameleia-to-88-ton-purkagion-fetos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855968/taxidi-me-paidia-o-praktikos-odigos-asfaleias-pou-hreiazetai-kathe-oikogeneia-ti-leei-paidiatros/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855965/nees-eikones-apo-to-sfurokopima-tis-kakokairias-stin-istiaia-to-megalutero-upsos-vrohis-epesan-pano-apo-58000-keraunoi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855958/pos-to-frenarisma-ton-surmon-tou-metro-metatrepetai-se-ilektriki-energeia-i-nea-prasini-tehnologia-tis-stasu/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855957/trohaio-dustuhima-sti-rodo-me-thuma-28hrono-odigo-mihanis-karfothike-se-kolona-ilektrofotismou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855956/treis-sullipseis-gia-paranomi-diakinisi-metanaston-ston-evro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-25T08:28:04.257674+00:00"
+      "seen_at_utc": "2026-07-25T09:28:03.059764+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1435360/i-ekdioxi-apo-tin-politiki-edem/",
-      "title": "Η εκδίωξη από την πολιτική Εδέμ",
-      "normalized_title": "Η ΕΚΔΙΩΞΗ ΑΠΟ ΤΗΝ ΠΟΛΙΤΙΚΗ ΕΔΕΜ",
+      "url": "https://www.efsyn.gr/politiki/1435370/o-giannis-a-kefalogiannis-stin-ef-syn-me-ton-kyrio-samara-yparhoyn-dyo-an/",
+      "title": "Ο Γιάννης Α. Κεφαλογιάννης στην «Εφ.Συν.»: «Με τον κύριο Σαμαρά υπάρχουν δύο αν»",
+      "normalized_title": "Ο ΓΙΑΝΝΗΣ Α. ΚΕΦΑΛΟΓΙΑΝΝΗΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «ΜΕ ΤΟΝ ΚΥΡΙΟ ΣΑΜΑΡΑ ΥΠΑΡΧΟΥΝ ΔΥΟ ΑΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1435360/i-ekdioxi-apo-tin-politiki-edem/",
-        "https://www.efsyn.gr/stiles/1435354/ti-tha-elege-simera-o-platon-gia-tin-ellada/",
-        "https://www.efsyn.gr/stiles/1435348/ta-paradoxa-tis-apotamieysis-stin-ellada/",
-        "https://www.efsyn.gr/stiles/1435344/polos-elxis/",
-        "https://www.efsyn.gr/politiki/1435367/giorti-tis-dimokratias-ta-pigadakia-gia-tis-ekloges-sto-proedriko-kai-i-ataka-gia-debate-me-diadikasies-asep/",
-        "https://www.efsyn.gr/kosmos/1435343/kolasi-fotias-se-gallia-kai-ispania-perissoteroi-apo-220-000-katoikoi-apomakrynontai-apo-ta-spitia-toys/",
-        "https://www.efsyn.gr/stiles/1435349/i-nea-topiki-aytodioikisi-apo-diaheiristis-tis-kathimerinotitas-se-mohlo-anaptyxis-kai-dimokratias/"
+        "https://www.efsyn.gr/politiki/1435370/o-giannis-a-kefalogiannis-stin-ef-syn-me-ton-kyrio-samara-yparhoyn-dyo-an/",
+        "https://www.efsyn.gr/tehnes/1435411/epidayros-i-kataigida-diekopse-tin-eirini-toy-aristofani-to-eyharisto-toy-foivoy-delivoria-vinteo/",
+        "https://www.efsyn.gr/kosmos/1435405/oi-ellinikoi-patriot-katerripsan-kai-drone-apo-tin-yemeni-pano-apo-ti-saoydiki-aravia/",
+        "https://www.efsyn.gr/ellada/1435400/lamia-nekros-entopistike-mesa-sto-spiti-toy-24hronos-feretai-na-antimetopize-provlima-ygeias/",
+        "https://www.efsyn.gr/kosmos/1435392/to-deipno-toy-tramp-prosvoles-apeiles-sto-iran-kai-anakoinosi-ypopsifiotitas-gia-triti-thiteia/",
+        "https://www.efsyn.gr/ellada/1435390/tragodia-sti-rodo-nekros-se-trohaio-28hronos-poy-itan-sto-nisi-gia-na-doylepsei-sezon/",
+        "https://www.efsyn.gr/ellada/1435388/syros-oloklirothike-i-anaparastasi-toy-fonikoy-poy-estiazoyn-oi-arhes/",
+        "https://www.efsyn.gr/oikonomia/1435364/soypermarket-apo-ti-deytera-oi-protaseis-gia-meioseis-timon-o-stohos-kai-oi-katigories-proteraiotitas/"
       ],
-      "seen_at_utc": "2026-07-25T08:28:04.257638+00:00"
+      "seen_at_utc": "2026-07-25T09:28:03.059730+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/25/economy/timologia-reymatos-ta-kitrina-eginan-fthinotera-apo-ta-mple/",
-      "title": "Τι αλλάζει στα τιμολόγια ρεύματος: Τα «κίτρινα» έγιναν τα φθηνότερα",
-      "normalized_title": "ΤΙ ΑΛΛΑΖΕΙ ΣΤΑ ΤΙΜΟΛΟΓΙΑ ΡΕΥΜΑΤΟΣ: ΤΑ «ΚΙΤΡΙΝΑ» ΕΓΙΝΑΝ ΤΑ ΦΘΗΝΟΤΕΡΑ",
+      "url": "https://www.in.gr/2026/07/25/greece/kakokairia-stin-istiaia-eyvoias-ta-megalytera-ypsi-vroxis-katagrafikan-58-000-keraynoi/",
+      "title": "Στην Ιστιαία Ευβοίας τα μεγαλύτερα ύψη βροχής - Καταγράφηκαν 58.000 κεραυνοί",
+      "normalized_title": "ΣΤΗΝ ΙΣΤΙΑΙΑ ΕΥΒΟΙΑΣ ΤΑ ΜΕΓΑΛΥΤΕΡΑ ΥΨΗ ΒΡΟΧΗΣ - ΚΑΤΑΓΡΑΦΗΚΑΝ 58.000 ΚΕΡΑΥΝΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/25/economy/timologia-reymatos-ta-kitrina-eginan-fthinotera-apo-ta-mple/",
-        "https://www.in.gr/2026/07/25/sports/football/o-rodri-menei-sti-mantsester-siti-i-epivevaiosi-tou-mareska-pic/",
-        "https://www.in.gr/2026/07/25/economy/diethnis-oikonomia/germania-o-viomixanikos-tomeas-leei-oti-xanontai-15-000-theseis-ergasias-kathe-mina/",
-        "https://www.in.gr/2026/07/25/greece/xalkidiki-se-kali-katastasi-to-25-eton-koritsaki-pou-anasyrthike-xoris-tis-aisthiseis-tou/",
-        "https://www.in.gr/2026/07/25/life/culture-live/pethane-o-tsak-rasel-skinothetis-tis-tainias-i-maska-se-ilikia-74-eton/",
-        "https://www.in.gr/2026/07/25/greece/kallithea-i-37xroni-egkyos-kalese-moni-tis-tin-astynomia-otan-efyge-o-syntrofos-tis-pou-tin-ksylokopise/",
-        "https://www.in.gr/2026/07/25/sports/basketball/o-lempron-tha-exei-xamilotero-mistho-apo-8-paiktes-tou-olympiakou-kai-tou-panathinaikou/",
-        "https://www.in.gr/2026/07/25/politics/politiki-grammateia/ellada-tou-2035-me-kathari-politiki-matia-to-deytero-vinteo-sti-seira-pasok-ara-onair/",
-        "https://www.in.gr/2026/07/25/economy/oikonomikes-eidiseis/misthoi-i-sygklisi-tis-elladas-me-tin-eyropi-perna-apo-tin-paragogikotita/",
-        "https://www.in.gr/2026/07/25/economy/oikonomikes-eidiseis/foititiki-stegi-pos-diamorfonontai-oi-times-ton-enoikion-i-eikona-apo-patra-ioannina-kai-larisa/",
-        "https://www.in.gr/2026/07/25/sports/othersports/epos-tenistria-petakse-raketa-ston-diaititi-kai-den-timorithike-vid/"
+        "https://www.in.gr/2026/07/25/greece/kakokairia-stin-istiaia-eyvoias-ta-megalytera-ypsi-vroxis-katagrafikan-58-000-keraynoi/",
+        "https://www.in.gr/2026/07/25/politics/politiki-grammateia/kke-nea-epivevaiosi-tis-amesis-emplokis-tis-elladas-stis-polemikes-epixeiriseis-ston-kolpo/",
+        "https://www.in.gr/2026/07/25/greece/stayros-georgiou-syggeneis-kai-filoi-apoxairetisan-ton-gnosto-poinikologo-ti-deytera-apologeitai-o-28xronos/",
+        "https://www.in.gr/2026/07/25/world/saoudiki-aravia-meta-tous-pyraylous-oi-ellinikoi-patriot-katerripsan-kai-drone-apo-tin-yemeni/",
+        "https://www.in.gr/2026/07/25/sports/basketball/euroleague/plisiazei-i-ora-tis-apofasis-tou-sengkelia-gia-to-mellon-tou/",
+        "https://www.in.gr/2026/07/25/life/culture-live/o-pappous-mou-o-tsarls-manson-i-skinothetis-pou-thelei-na-ksorkisei-to-dna-tis-meso-enos-ntokimanter/",
+        "https://www.in.gr/2026/07/25/greece/kilkis-epeisodiaki-syllipsi-meta-apo-apopeira-apatis-me-prosxima-ofeili-stin-aade/",
+        "https://www.in.gr/2026/07/25/sports/basketball/tramp-gia-lempron-isos-einai-ratsistis-maikl-tzorntan-xoris-deyteri-skepsi/",
+        "https://www.in.gr/2026/07/25/greece/syros-oloklirothike-i-anaparastasi-ston-topo-tis-dolofonias-tis-42xronis-synexizontai-oi-ereynes-gia-kinitro/",
+        "https://www.in.gr/2026/07/25/world/to-iran-katigorei-tin-ee-gia-ypokrisia-sxetika-me-ti-stasi-tis-se-themata-anthropinon-dikaiomaton/"
       ],
-      "seen_at_utc": "2026-07-25T08:28:04.257613+00:00"
+      "seen_at_utc": "2026-07-25T09:28:03.059687+00:00"
     }
   },
-  "updated_at_utc": "2026-07-25T08:28:04.257742+00:00"
+  "updated_at_utc": "2026-07-25T09:28:03.059853+00:00"
 }
