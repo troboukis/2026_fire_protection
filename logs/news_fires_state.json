@@ -1,24 +1,24 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564365911/me-aformi-to-elliniko/",
-      "title": "Με αφορμή το Ελληνικό",
-      "normalized_title": "ΜΕ ΑΦΟΡΜΗ ΤΟ ΕΛΛΗΝΙΚΟ",
+      "url": "https://www.kathimerini.gr/economy/international/564365995/simantikes-morfes-tis-eyropis-sta-nea-chartonomismata-toy-eyro/",
+      "title": "Σημαντικές μορφές της Ευρώπης στα νέα χαρτονομίσματα του ευρώ",
+      "normalized_title": "ΣΗΜΑΝΤΙΚΕΣ ΜΟΡΦΕΣ ΤΗΣ ΕΥΡΩΠΗΣ ΣΤΑ ΝΕΑ ΧΑΡΤΟΝΟΜΙΣΜΑΤΑ ΤΟΥ ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564365911/me-aformi-to-elliniko/",
-        "https://www.kathimerini.gr/economy/international/564366064/geopolitikes-exelixeis-kai-anadyomenes-oikonomies/",
-        "https://www.kathimerini.gr/world/564367285/iran-oi-ipa-eplixan-tanker-poy-epicheirise-na-spasei-ton-naytiko-apokleismo/",
-        "https://www.kathimerini.gr/economy/diktis/564366100/pliromes-2-49-dis-apo-efka-kai-dypa/",
-        "https://www.kathimerini.gr/k/gastronomos/564367270/overnight-bowl-me-vromi-giaoyrti-froyta-kai-masticha/",
-        "https://www.kathimerini.gr/visual/photography/564364870/ta-oraiotera-axiotheata/",
-        "https://www.kathimerini.gr/politics/564365545/theoreio-sto-epikrateias-o-floros/",
-        "https://www.kathimerini.gr/politics/564365590/entos-kai-ektos-oi-dimotikes-seirines-toy-tsipra/",
-        "https://www.kathimerini.gr/society/564367255/kakokairia-provlimata-se-polles-perioches-apo-tis-kataigides-i-prognosi-gia-to-savvato/",
-        "https://www.kathimerini.gr/athletics/football/564365866/paok-panathinaikos-poly-kaloi-gia-tin-epochi/",
-        "https://www.kathimerini.gr/istoria/564362596/san-simera-25-ioylioy-1894-xekina-o-a-sinoiaponikos-polemos/",
-        "https://www.kathimerini.gr/economy/business/564365992/pano-apo-200-ellinikes-epicheiriseis-sta-inomena-aravika-emirata/"
+        "https://www.kathimerini.gr/economy/international/564365995/simantikes-morfes-tis-eyropis-sta-nea-chartonomismata-toy-eyro/",
+        "https://www.kathimerini.gr/economy/syntaxeis/564365983/rythmisi-anasa-gia-makrochronia-anergoys-konta-sti-syntaxi/",
+        "https://www.kathimerini.gr/politics/amyna/564367324/saoydiki-aravia-ellinikoi-patiot-anachaitisan-pyrayloys-apo-tin-yemeni/",
+        "https://www.kathimerini.gr/economy/international/564366055/ependysi-800-ekat-stin-eyropaiki-agora-akiniton-apo-ton-ortega/",
+        "https://www.kathimerini.gr/visual/video/564348430/120-lepta-me-ta-paidia-tis-nayarinoy/",
+        "https://www.kathimerini.gr/columns/564364093/i-ntomatosalata-einai-erotas-12-syntages-gia-na-echoyme-poikilia/",
+        "https://www.kathimerini.gr/economy/international/564366103/oi-plithoristikoi-kindynoi-fernoyn-konta-mia-nea-ayxisi-epitokion/",
+        "https://www.kathimerini.gr/athletics/football/564365860/xekinise-i-epochi-klop-stin-ethniki-germanias/",
+        "https://www.kathimerini.gr/culture/agenda/564367294/exodos-stin-athina-kai-ektos-to-savvato-kai-tin-kyriaki-25-kai-26-7-camelphat-kai-boyd-schidt/",
+        "https://www.kathimerini.gr/opinion/564365731/asimantes-meiopsifies-kai-koinoniko-kostos/",
+        "https://www.kathimerini.gr/opinion/564365746/h-ai-einai-o-mpampas-sas/",
+        "https://www.kathimerini.gr/opinion/564365728/to-marketingk-tis-odysseias/"
       ],
-      "seen_at_utc": "2026-07-25T05:28:07.414135+00:00"
+      "seen_at_utc": "2026-07-25T06:28:20.990786+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,46 +1270,57 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855872/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
-      "title": "Tα κυριακάτικα πρωινά, γίνονται καλύτερα με efood market και Πρώτο Θέμα!",
-      "normalized_title": "TΑ ΚΥΡΙΑΚΑΤΙΚΑ ΠΡΩΙΝΑ, ΓΙΝΟΝΤΑΙ ΚΑΛΥΤΕΡΑ ΜΕ EFOOD MARKET ΚΑΙ ΠΡΩΤΟ ΘΕΜΑ!",
+      "url": "https://www.protothema.gr/greece/article/1855905/1150000-monadikoi-hristes-enimerothikan-hthes-paraskeui-24-iouliou-apo-to-protothemagr/?utm_source=rss",
+      "title": "1.150.000 μοναδικοί χρήστες ενημερώθηκαν χθες Παρασκευή 24 Ιουλίου από το protothema.gr",
+      "normalized_title": "1.150.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΠΑΡΑΣΚΕΥΗ 24 ΙΟΥΛΙΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855872/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855869/panelladikes-2026-anodos-se-polutehneia-kai-pliroforiki-strofi-stis-stratiotikes-sholes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855866/xekina-i-mahi-gia-fthinotera-proioda-sta-souper-market-meioseis-eos-20-apo-tis-31-augoustou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855863/agioi-theodoroi-treis-roma-xulokopisan-kai-listepsan-anilikous-duo-sullipseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855905/1150000-monadikoi-hristes-enimerothikan-hthes-paraskeui-24-iouliou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855902/hionise-ston-olubo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855890/sti-suro-simera-i-anaparastasi-tis-dolofonias-tis-diasostrias-sto-mikroskopio-kathe-lepto-prin-apo-to-foniko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855884/xekinise-i-megali-exodos-ton-adeiouhon-pano-apo-50000-taxidiotes-anahorisan-apo-ta-limania-tis-attikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-25T05:28:07.414238+00:00"
+      "seen_at_utc": "2026-07-25T06:28:20.990978+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1435294/kairos-se-red-code-enteka-periohes-stadiaki-veltiosi-ton-entonon-fainomenon/",
-      "title": "Καιρός: Σε Red Code έντεκα περιοχές – Σταδιακή βελτίωση των έντονων φαινομένων",
-      "normalized_title": "ΚΑΙΡΟΣ: ΣΕ RED CODE ΕΝΤΕΚΑ ΠΕΡΙΟΧΕΣ – ΣΤΑΔΙΑΚΗ ΒΕΛΤΙΩΣΗ ΤΩΝ ΕΝΤΟΝΩΝ ΦΑΙΝΟΜΕΝΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1435321/kakokairia-pos-plimmyrise-i-attiki-mesa-se-liga-lepta-dromoi-potamia-kai-ekatontades-kliseis-stin-pyrosvestiki/",
+      "title": "Κακοκαιρία: Πώς «πλημμύρισε» η Αττική μέσα σε λίγα λεπτά – Δρόμοι ποτάμια και εκατοντάδες κλήσεις στην Πυροσβεστική",
+      "normalized_title": "ΚΑΚΟΚΑΙΡΙΑ: ΠΩΣ «ΠΛΗΜΜΥΡΙΣΕ» Η ΑΤΤΙΚΗ ΜΕΣΑ ΣΕ ΛΙΓΑ ΛΕΠΤΑ – ΔΡΟΜΟΙ ΠΟΤΑΜΙΑ ΚΑΙ ΕΚΑΤΟΝΤΑΔΕΣ ΚΛΗΣΕΙΣ ΣΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1435294/kairos-se-red-code-enteka-periohes-stadiaki-veltiosi-ton-entonon-fainomenon/",
-        "https://www.efsyn.gr/politiki/1435246/voyli-mitsotakis-kai-androylakis-ekanan-tin-anatheorisi-proeklogiko-ntimpeit/",
-        "https://www.efsyn.gr/kosmos/1435253/torpiles-tramp-sti-diethni-oikonomia/",
-        "https://www.efsyn.gr/ellada/1435291/eortologio-poioi-giortazoyn-simera-25-ioylioy/"
+        "https://www.efsyn.gr/ellada/1435321/kakokairia-pos-plimmyrise-i-attiki-mesa-se-liga-lepta-dromoi-potamia-kai-ekatontades-kliseis-stin-pyrosvestiki/",
+        "https://www.efsyn.gr/nisides/1435136/ti-simainei-flert/",
+        "https://www.efsyn.gr/ellada/1435318/voyliazoyn-ta-limania-tis-attikis-koryfonetai-i-exodos-ton-adeioyhon/",
+        "https://www.efsyn.gr/ellada/1435315/pethane-se-ilikia-79-eton-o-diakekrimenos-psyhiatros-theodoros-megalooikonomoy/",
+        "https://www.efsyn.gr/oikonomia/1435311/ti-allazei-sta-timologia-reymatos-fthinotera-ta-kitrina-akrivotera-ta-mple-stathera-ta-prasina/",
+        "https://www.efsyn.gr/nisides/1434913/i-politistiki-atzenta-tis-evdomadas-26-07-01-08-26/",
+        "https://www.efsyn.gr/nisides/1435307/coolcation-pos-i-anazitisi-droseron-diakopon-mporei-na-allaxei-tin-pagkosmia-geografia-toy-toyrismoy/",
+        "https://www.efsyn.gr/politiki/1435305/peftoyn-tilefona-sto-pasok-psahnoyn-toys-300-000-hiliades-poy-psifisan-stis-esokommatikes-ekloges/",
+        "https://www.efsyn.gr/politiki/1435303/i-alitheia-toy-mitsotaki-gia-tis-kalpes/",
+        "https://www.efsyn.gr/tehnes/1435257/sosialismos-i-thanatos-ekato-hronia-apo-ti-gennisi-toy-fintel-kastro/",
+        "https://www.efsyn.gr/protoselida/mega-pyrkagies-sos-gia-4-perifereies-stin-ellada/"
       ],
-      "seen_at_utc": "2026-07-25T05:28:07.414216+00:00"
+      "seen_at_utc": "2026-07-25T06:28:20.990941+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/25/greece/kairos-synexizetai-i-kakokairia-me-isxyra-fainomena-kai-ptosi-thermokrasias-pou-anamenontai-kataigides/",
-      "title": "Συνεχίζεται η κακοκαιρία, με ισχυρά φαινόμενα και πτώση θερμοκρασίας - Πού αναμένονται καταιγίδες",
-      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΚΑΚΟΚΑΙΡΙΑ, ΜΕ ΙΣΧΥΡΑ ΦΑΙΝΟΜΕΝΑ ΚΑΙ ΠΤΩΣΗ ΘΕΡΜΟΚΡΑΣΙΑΣ - ΠΟΥ ΑΝΑΜΕΝΟΝΤΑΙ ΚΑΤΑΙΓΙΔΕΣ",
+      "url": "https://www.in.gr/2026/07/25/sports/basketball/euroleague/i-vilermpan-edose-eggyiseis-ston-fransisko-kai-teleiose-tis-fimes-gia-to-mellon-tou/",
+      "title": "Η Βιλερμπάν έδωσε εγγυήσεις στον Φρανσίσκο και «τελείωσε» τις φήμες για το μέλλον του",
+      "normalized_title": "Η ΒΙΛΕΡΜΠΑΝ ΕΔΩΣΕ ΕΓΓΥΗΣΕΙΣ ΣΤΟΝ ΦΡΑΝΣΙΣΚΟ ΚΑΙ «ΤΕΛΕΙΩΣΕ» ΤΙΣ ΦΗΜΕΣ ΓΙΑ ΤΟ ΜΕΛΛΟΝ ΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/25/greece/kairos-synexizetai-i-kakokairia-me-isxyra-fainomena-kai-ptosi-thermokrasias-pou-anamenontai-kataigides/",
-        "https://www.in.gr/2026/07/25/plus/vita/ftaiei-i-texniti-noimosyni-pou-milame-pio-apotoma/",
-        "https://www.in.gr/2026/07/25/sports/football/panathinaikos-to-pososto-metapolisis-pou-diatirise-i-xapoel-mper-seva-gia-ton-kangkoua/",
-        "https://www.in.gr/2026/07/25/world/tramp-epivevaiose-tin-episkepsi-netaniaxou-stis-ipa-tin-epomeni-evdomada/",
-        "https://www.in.gr/2026/07/25/english-edition/fuel-prices-drop-until-the-end-of-august-for-both-gas-and-diesel/",
-        "https://www.in.gr/2026/07/25/world/trianta-eyro-o-enas-pos-oi-anaptires-eginan-ergaleio-epiviosis-sti-gaza/",
-        "https://www.in.gr/2026/07/25/life/geysi/syntagi-matilda-cake/",
-        "https://www.in.gr/2026/07/25/greece/al-xamintigia-kritikoi-kai-i-dialektos-tous-epivionoun-sti-syria-130-xronia-meta-tin-metanasteysi-tous/",
-        "https://www.in.gr/2026/07/25/plus/vita/den-einai-mono-i-geysi-okto-logoi-gia-na-to-valoume-sto-piato-mas/"
+        "https://www.in.gr/2026/07/25/sports/basketball/euroleague/i-vilermpan-edose-eggyiseis-ston-fransisko-kai-teleiose-tis-fimes-gia-to-mellon-tou/",
+        "https://www.in.gr/2026/07/25/world/saoudiki-aravia-ellinikoi-patriot-anaxaitisan-vallistikous-pyraylous-apo-tin-yemeni/",
+        "https://www.in.gr/2026/07/25/editorial/otan-i-nd-omologei-oti-thelei-na-metatrepsei-to-proeklogiko-tis-programma-kai-to-ideologiko-tis-stigma-se-syntagmatiki-diataksi/",
+        "https://www.in.gr/2026/07/25/world/ispania-gallia-pyrini-kolasi-pano-apo-220-xiliades-anthropoi-exoun-apomakrynthei-apo-tis-esties-tous/",
+        "https://www.in.gr/2026/07/25/sports/othersports/ellada-italia-megali-maxi-gia-tin-prokrisi-ston-teliko-tou-world-cup-sto-sidnei/",
+        "https://www.in.gr/2026/07/25/life/diakopes/diakopes-taksidia-analoga-me-tin-kathe-genia-ti-protimoun-gen-z-millennials-gen-x-kai-boomers/",
+        "https://www.in.gr/2026/07/25/go-fun/fizz/arkas-i-kalimera-tou-savvatou-den-mas-ta-leei-kala/",
+        "https://www.in.gr/2026/07/25/greece/vaseis-2026-oi-epiloges-ton-ypopsifion-anadiamorfonoun-ton-xarti-ton-sxolon/",
+        "https://www.in.gr/2026/07/25/sports/football/olympiakos-teleytaio-filiko-prin-ti-naimegken/",
+        "https://www.in.gr/2026/07/25/greece/syros-anaparastasi-kai-aytopsia-sto-spiti-opou-maxairothike-i-42xroni-diasostria/",
+        "https://www.in.gr/2026/07/25/life/culture-live/rogmes-anamesa-ston-xoro-to-theatro-kai-tin-poiisi/",
+        "https://www.in.gr/2026/07/25/sports/othersports/tsitsipas-ta-aerodromia-tha-eprepe-na-exoun-mia-oura-gia-osous-kseroun-na-vgazoun-to-laptop-tous/",
+        "https://www.in.gr/2026/07/25/economy/oikonomikes-eidiseis/tiktok-kai-souper-market-pos-ta-social-media-allazoun-ton-tropo-pou-psonizoume/"
       ],
-      "seen_at_utc": "2026-07-25T05:28:07.414180+00:00"
+      "seen_at_utc": "2026-07-25T06:28:20.990881+00:00"
     }
   },
-  "updated_at_utc": "2026-07-25T05:28:07.414306+00:00"
+  "updated_at_utc": "2026-07-25T06:28:20.991069+00:00"
 }
