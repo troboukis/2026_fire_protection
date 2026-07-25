@@ -1,17 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564366037/moyntial-kai-diakopes-entos-synoron-edosan-anasa-sti-vretaniki-oikonomia/",
-      "title": "Μουντιάλ και διακοπές εντός συνόρων έδωσαν ανάσα στη βρετανική οικονομία",
-      "normalized_title": "ΜΟΥΝΤΙΑΛ ΚΑΙ ΔΙΑΚΟΠΕΣ ΕΝΤΟΣ ΣΥΝΟΡΩΝ ΕΔΩΣΑΝ ΑΝΑΣΑ ΣΤΗ ΒΡΕΤΑΝΙΚΗ ΟΙΚΟΝΟΜΙΑ",
+      "url": "https://www.kathimerini.gr/economy/business/564366004/anaplaseis-ktirion-se-peiraia-thessaloniki-apo-tin-orilina/",
+      "title": "Αναπλάσεις κτιρίων σε Πειραιά, Θεσσαλονίκη από την Orilina",
+      "normalized_title": "ΑΝΑΠΛΑΣΕΙΣ ΚΤΙΡΙΩΝ ΣΕ ΠΕΙΡΑΙΑ, ΘΕΣΣΑΛΟΝΙΚΗ ΑΠΟ ΤΗΝ ORILINA",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564366037/moyntial-kai-diakopes-entos-synoron-edosan-anasa-sti-vretaniki-oikonomia/",
-        "https://www.kathimerini.gr/k/gastronomos/564367276/moschari-me-kolokythakia-aygolemono-apo-tin-eyi-voytsina/",
-        "https://www.kathimerini.gr/istoria/564365734/90-chronia-prin-25-7-1936/",
-        "https://www.kathimerini.gr/economy/international/564366052/oi-toyristes-epilegoyn-drosia-sti-skandinavia/",
-        "https://www.kathimerini.gr/society/564367315/exodos-adeioychon-pano-apo-50-000-taxidiotes-anachorisan-apo-ta-limania-tis-attikis/"
+        "https://www.kathimerini.gr/economy/business/564366004/anaplaseis-ktirion-se-peiraia-thessaloniki-apo-tin-orilina/",
+        "https://www.kathimerini.gr/society/564367426/egklima-sti-syro-anaparastasi-sto-simeio-opoy-machairothike-i-41chroni-ti-ereynatai/",
+        "https://www.kathimerini.gr/economy/business/564366025/dyskoli-pista-gia-mikres-etaireies-oi-aerometafores/",
+        "https://www.kathimerini.gr/opinion/interviews/564360214/misos-apollon-misos-samoyrai-i-archaia-ellada-tis-iaponias/",
+        "https://www.kathimerini.gr/world/564367378/roymania-katarripsi-drone-poy-paraviase-ton-ethniko-enaerio-choro-i-deyteri-se-24-ores/",
+        "https://www.kathimerini.gr/economy/business/564366007/enischysi-ependyseon-megalon-epicheiriseon-se-d-makedonia-megalopoli/",
+        "https://www.kathimerini.gr/culture/arts/564365770/yposchesi-choris-antikrisma/",
+        "https://www.kathimerini.gr/society/564367351/metro-erga-sti-mple-grammi-apo-tin-kyriaki-poioi-stathmoi-tha-kleinoyn-noritera/"
       ],
-      "seen_at_utc": "2026-07-25T07:28:01.139007+00:00"
+      "seen_at_utc": "2026-07-25T08:28:04.257561+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,53 +1266,51 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1855933/metro-kleinoun-noritera-oi-stathmoi-sudagma-euaggelismos-kai-megaro-mousikis-tis-grammis-3-apo-tin-kuriaki/?utm_source=rss",
-      "title": "Μετρό: Κλείνουν νωρίτερα οι σταθμοί Σύνταγμα, Ευαγγελισμός και Μέγαρο Μουσικής της Γραμμής 3 από την Κυριακή",
-      "normalized_title": "ΜΕΤΡΟ: ΚΛΕΙΝΟΥΝ ΝΩΡΙΤΕΡΑ ΟΙ ΣΤΑΘΜΟΙ ΣΥΝΤΑΓΜΑ, ΕΥΑΓΓΕΛΙΣΜΟΣ ΚΑΙ ΜΕΓΑΡΟ ΜΟΥΣΙΚΗΣ ΤΗΣ ΓΡΑΜΜΗΣ 3 ΑΠΟ ΤΗΝ ΚΥΡΙΑΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1855954/kilkis-apateonas-paresure-me-to-autokinito-tou-astunomikous-kai-politi-gia-na-xefugei/?utm_source=rss",
+      "title": "Κιλκίς: Απατεώνας παρέσυρε με το αυτοκίνητό του αστυνομικούς και πολίτη για να ξεφύγει",
+      "normalized_title": "ΚΙΛΚΙΣ: ΑΠΑΤΕΩΝΑΣ ΠΑΡΕΣΥΡΕ ΜΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ ΑΣΤΥΝΟΜΙΚΟΥΣ ΚΑΙ ΠΟΛΙΤΗ ΓΙΑ ΝΑ ΞΕΦΥΓΕΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1855933/metro-kleinoun-noritera-oi-stathmoi-sudagma-euaggelismos-kai-megaro-mousikis-tis-grammis-3-apo-tin-kuriaki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855928/kallithea-i-37hroni-eguos-kalese-moni-tis-tin-astunomia-otan-efuge-o-proin-sudrofos-tis-pou-tin-xulokopise/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855926/lamia-nekros-24hronos-mesa-sto-spiti-tou-mataies-oi-prospatheies-ton-diasoston-na-ton-epanaferoun/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1855912/patra-ioannina-kai-larisa-pos-diamorfonodai-oi-times-ton-enoikion-stis-treis-apo-tis-megaluteres-foititoupoleis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1855954/kilkis-apateonas-paresure-me-to-autokinito-tou-astunomikous-kai-politi-gia-na-xefugei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855950/suggeneis-kai-filoi-apohairetisan-ton-dikigoro-stauro-georgiou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855944/oloklirothike-i-anaparastasi-tis-dolofonias-tis-diasostrias-sti-suro-mustirio-ti-akrivos-sunevi-sto-esoteriko-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1855941/spania-kalokairini-hionoptosi-ston-olubo-deite-eduposiaka-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-25T07:28:01.139104+00:00"
+      "seen_at_utc": "2026-07-25T08:28:04.257674+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1435341/metro-kykloforiakes-rythmiseis-sti-grammi-3-poioi-stathmoi-tha-kleinoyn-noritera-apo-tin-kyriaki/",
-      "title": "Μετρό: Κυκλοφοριακές ρυθμίσεις στη Γραμμή 3 – Ποιοι σταθμοί θα κλείνουν νωρίτερα από την Κυριακή",
-      "normalized_title": "ΜΕΤΡΟ: ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗ ΓΡΑΜΜΗ 3 – ΠΟΙΟΙ ΣΤΑΘΜΟΙ ΘΑ ΚΛΕΙΝΟΥΝ ΝΩΡΙΤΕΡΑ ΑΠΟ ΤΗΝ ΚΥΡΙΑΚΗ",
+      "url": "https://www.efsyn.gr/stiles/1435360/i-ekdioxi-apo-tin-politiki-edem/",
+      "title": "Η εκδίωξη από την πολιτική Εδέμ",
+      "normalized_title": "Η ΕΚΔΙΩΞΗ ΑΠΟ ΤΗΝ ΠΟΛΙΤΙΚΗ ΕΔΕΜ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1435341/metro-kykloforiakes-rythmiseis-sti-grammi-3-poioi-stathmoi-tha-kleinoyn-noritera-apo-tin-kyriaki/",
-        "https://www.efsyn.gr/tehnes/1435338/pethane-se-ilikia-59-eton-o-lou-koller-ton-thrylikon-sick-of-it-all/",
-        "https://www.efsyn.gr/ellada/1435334/panelladikes-2026-diavazontas-xana-tis-vaseis-oi-10-sholes-poy-einai-stin-koryfi-ton-protimiseon/",
-        "https://www.efsyn.gr/oikonomia/1435336/i-germania-se-krisi-hanontai-15-000-theseis-ergasias-kathe-mina/",
-        "https://www.efsyn.gr/ellada/1435330/foniko-sti-syro-i-anaparastasi-dinei-apantiseis-sto-thriler-ta-vinteo-kai-ta-krisima-erotimata/",
-        "https://www.efsyn.gr/tehnes/1435159/savvato-diskokritiki-jack-white-gracie-abrams-savatage-stylianos-ou-the-cortisol-cows/",
-        "https://www.efsyn.gr/kosmos/1435327/saoydiki-aravia-ellinikoi-patriot-anahaitisan-vallistikoys-pyrayloys-apo-tin-yemeni/"
+        "https://www.efsyn.gr/stiles/1435360/i-ekdioxi-apo-tin-politiki-edem/",
+        "https://www.efsyn.gr/stiles/1435354/ti-tha-elege-simera-o-platon-gia-tin-ellada/",
+        "https://www.efsyn.gr/stiles/1435348/ta-paradoxa-tis-apotamieysis-stin-ellada/",
+        "https://www.efsyn.gr/stiles/1435344/polos-elxis/",
+        "https://www.efsyn.gr/politiki/1435367/giorti-tis-dimokratias-ta-pigadakia-gia-tis-ekloges-sto-proedriko-kai-i-ataka-gia-debate-me-diadikasies-asep/",
+        "https://www.efsyn.gr/kosmos/1435343/kolasi-fotias-se-gallia-kai-ispania-perissoteroi-apo-220-000-katoikoi-apomakrynontai-apo-ta-spitia-toys/",
+        "https://www.efsyn.gr/stiles/1435349/i-nea-topiki-aytodioikisi-apo-diaheiristis-tis-kathimerinotitas-se-mohlo-anaptyxis-kai-dimokratias/"
       ],
-      "seen_at_utc": "2026-07-25T07:28:01.139078+00:00"
+      "seen_at_utc": "2026-07-25T08:28:04.257638+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/25/greece/metro-prosorines-kykloforiakes-rythmiseis-pote-tha-anaxoroun-oi-teleytaioi-syrmoi/",
-      "title": "Κυκλοφοριακές ρυθμίσεις στο Μετρό - Πότε θα αναχωρούν οι τελευταίοι συρμοί",
-      "normalized_title": "ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΟ ΜΕΤΡΟ - ΠΟΤΕ ΘΑ ΑΝΑΧΩΡΟΥΝ ΟΙ ΤΕΛΕΥΤΑΙΟΙ ΣΥΡΜΟΙ",
+      "url": "https://www.in.gr/2026/07/25/economy/timologia-reymatos-ta-kitrina-eginan-fthinotera-apo-ta-mple/",
+      "title": "Τι αλλάζει στα τιμολόγια ρεύματος: Τα «κίτρινα» έγιναν τα φθηνότερα",
+      "normalized_title": "ΤΙ ΑΛΛΑΖΕΙ ΣΤΑ ΤΙΜΟΛΟΓΙΑ ΡΕΥΜΑΤΟΣ: ΤΑ «ΚΙΤΡΙΝΑ» ΕΓΙΝΑΝ ΤΑ ΦΘΗΝΟΤΕΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/25/greece/metro-prosorines-kykloforiakes-rythmiseis-pote-tha-anaxoroun-oi-teleytaioi-syrmoi/",
-        "https://www.in.gr/2026/07/25/greece/opou-fygei-fygei-oi-adeiouxoi-tou-iouliou-pano-apo-50-000-taksidiotes-anaxorisan-apo-ta-limania-tis-attikis/",
-        "https://www.in.gr/2026/07/25/greece/megala-provlimata-apo-tin-kakokairia-kommena-dentra-plimmyrismenoi-dromoi-xiliades-keraynoi/",
-        "https://www.in.gr/2026/07/25/sports/basketball/o-paok-rotise-gia-ton-gouili-ernangkometh-ti-isxyei-me-ton-aderfo-tou-xouantso/",
-        "https://www.in.gr/2026/07/25/greece/ena-ekklisaki-gia-ta-thymata-ti-mathame-gia-to-mpazoma-sta-tempi-apo-tin-parapompi-triantopoulou-agorastou/",
-        "https://www.in.gr/2026/07/25/inview/expla-in/the-expla-in-project-mobbing-i-psyxologiki-tromokratia-stis-zoes-gynaikon-kai-loatki-atomon-stin-ellada/",
-        "https://www.in.gr/2026/07/25/in-science/ai/texniti-noimosyni-to-paradeigma-me-to-stylo-pou-eksigei-ta-oria-ton-eksypnon-mixanon/",
-        "https://www.in.gr/2026/07/25/go-fun/eimai-perifani-parthena-i-adelfi-tis-gkreta-tounmpergk-tragoudaei-kanei-spagkato-den-ferei-kamia-eythyni/",
-        "https://www.in.gr/2026/07/25/world/sti-syria-o-gkouteres-i-proti-episkepsi-epikefalis-tou-oie-apo-to-2009/",
-        "https://www.in.gr/2026/07/25/auto/aytokinita-ta-kinezika-brands-epekteinontai-stin-ellada-oi-megaloi-paiktes-kai-i-eikona-stin-eyropi/",
-        "https://www.in.gr/2026/07/25/sports/football/o-gentvai-feygei-apo-ton-panathinaiko-ekleise-stin-al-sampamp-pic/",
-        "https://www.in.gr/2026/07/25/economy/sta-ypsi-oi-times-ton-kaysimon-mia-anasa-apo-ta-2-eyro-kai-me-epidotisi/",
-        "https://www.in.gr/2026/07/25/politics/politiki-grammateia/pasok-ta-karfia-androulaki-to-arthro-110-kai-to-presingk-sto-maksimou/"
+        "https://www.in.gr/2026/07/25/economy/timologia-reymatos-ta-kitrina-eginan-fthinotera-apo-ta-mple/",
+        "https://www.in.gr/2026/07/25/sports/football/o-rodri-menei-sti-mantsester-siti-i-epivevaiosi-tou-mareska-pic/",
+        "https://www.in.gr/2026/07/25/economy/diethnis-oikonomia/germania-o-viomixanikos-tomeas-leei-oti-xanontai-15-000-theseis-ergasias-kathe-mina/",
+        "https://www.in.gr/2026/07/25/greece/xalkidiki-se-kali-katastasi-to-25-eton-koritsaki-pou-anasyrthike-xoris-tis-aisthiseis-tou/",
+        "https://www.in.gr/2026/07/25/life/culture-live/pethane-o-tsak-rasel-skinothetis-tis-tainias-i-maska-se-ilikia-74-eton/",
+        "https://www.in.gr/2026/07/25/greece/kallithea-i-37xroni-egkyos-kalese-moni-tis-tin-astynomia-otan-efyge-o-syntrofos-tis-pou-tin-ksylokopise/",
+        "https://www.in.gr/2026/07/25/sports/basketball/o-lempron-tha-exei-xamilotero-mistho-apo-8-paiktes-tou-olympiakou-kai-tou-panathinaikou/",
+        "https://www.in.gr/2026/07/25/politics/politiki-grammateia/ellada-tou-2035-me-kathari-politiki-matia-to-deytero-vinteo-sti-seira-pasok-ara-onair/",
+        "https://www.in.gr/2026/07/25/economy/oikonomikes-eidiseis/misthoi-i-sygklisi-tis-elladas-me-tin-eyropi-perna-apo-tin-paragogikotita/",
+        "https://www.in.gr/2026/07/25/economy/oikonomikes-eidiseis/foititiki-stegi-pos-diamorfonontai-oi-times-ton-enoikion-i-eikona-apo-patra-ioannina-kai-larisa/",
+        "https://www.in.gr/2026/07/25/sports/othersports/epos-tenistria-petakse-raketa-ston-diaititi-kai-den-timorithike-vid/"
       ],
-      "seen_at_utc": "2026-07-25T07:28:01.139044+00:00"
+      "seen_at_utc": "2026-07-25T08:28:04.257613+00:00"
     }
   },
-  "updated_at_utc": "2026-07-25T07:28:01.139177+00:00"
+  "updated_at_utc": "2026-07-25T08:28:04.257742+00:00"
 }
