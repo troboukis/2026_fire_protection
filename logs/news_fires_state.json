@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564368056/odigies-gia-na-ftiaxeis-lakerda-apo-ton-giorgo-mitsaki/",
-      "title": "Οδηγίες για να φτιάξεις λακέρδα από τον Γιώργο Μητσάκη",
-      "normalized_title": "ΟΔΗΓΙΕΣ ΓΙΑ ΝΑ ΦΤΙΑΞΕΙΣ ΛΑΚΕΡΔΑ ΑΠΟ ΤΟΝ ΓΙΩΡΓΟ ΜΗΤΣΑΚΗ",
+      "url": "https://www.kathimerini.gr/society/564368086/synelifthi-29chronos-odigos-poy-etreche-me-208-chlm-ora-stin-athinon-korinthoy/",
+      "title": "Συνελήφθη 29χρονος οδηγός που έτρεχε με 208 χλμ./ώρα στην Αθηνών-Κορίνθου",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 29ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΠΟΥ ΕΤΡΕΧΕ ΜΕ 208 ΧΛΜ./ΩΡΑ ΣΤΗΝ ΑΘΗΝΩΝ-ΚΟΡΙΝΘΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564368056/odigies-gia-na-ftiaxeis-lakerda-apo-ton-giorgo-mitsaki/",
-        "https://www.kathimerini.gr/opinion/geyma-me-thn-k/564366706/giorgos-deodatis-na-mathoyme-apo-to-pathima-ton-ollandon/",
-        "https://www.kathimerini.gr/world/564368050/iran-stamatisame-tis-epitheseis-kata-ton-choron-toy-kolpoy-afoy-oi-ipa-stamatisan-na-mas-vomvardizoyn/"
+        "https://www.kathimerini.gr/society/564368086/synelifthi-29chronos-odigos-poy-etreche-me-208-chlm-ora-stin-athinon-korinthoy/",
+        "https://www.kathimerini.gr/world/564368080/iranika-mme-dexamenoploio-prosekroyse-se-narki-sta-stena-toy-ormoyz/",
+        "https://www.kathimerini.gr/culture/564368074/ti-ischyei-gia-ta-eisitiria-tis-eirinis-stin-epidayro/",
+        "https://www.kathimerini.gr/society/astynomiko/564368062/agia-paraskeyi-synelifthi-30chronos-poy-perpatoyse-stis-siragges-toy-metro/"
       ],
-      "seen_at_utc": "2026-07-26T12:28:21.064591+00:00"
+      "seen_at_utc": "2026-07-26T13:28:02.281559+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,36 +1271,38 @@
       "seen_at_utc": "2026-07-26T12:28:21.064685+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1435951/stena-toy-ormoyz-ekrixi-se-tanker-to-opoio-htypise-se-naytiki-narki/",
-      "title": "Στενά του Ορμούζ: Τάνερκ χτύπησε σε ναυτική νάρκη και εξερράγη",
-      "normalized_title": "ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ: ΤΑΝΕΡΚ ΧΤΥΠΗΣΕ ΣΕ ΝΑΥΤΙΚΗ ΝΑΡΚΗ ΚΑΙ ΕΞΕΡΡΑΓΗ",
+      "url": "https://www.efsyn.gr/oikonomia/1435687/stoiheia-tis-eurostat-i-krisi-stegis-pagonei-tis-genniseis-stin-ellada/",
+      "title": "Στοιχεία της Eurostat: Η κρίση στέγης «παγώνει» τις γεννήσεις στην Ελλάδα",
+      "normalized_title": "ΣΤΟΙΧΕΙΑ ΤΗΣ EUROSTAT: Η ΚΡΙΣΗ ΣΤΕΓΗΣ «ΠΑΓΩΝΕΙ» ΤΙΣ ΓΕΝΝΗΣΕΙΣ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1435951/stena-toy-ormoyz-ekrixi-se-tanker-to-opoio-htypise-se-naytiki-narki/",
-        "https://www.efsyn.gr/ellada/1435948/metro-poios-einai-o-30hronos-poy-mpike-se-siragga-stin-agia-paraskeyi-kai-prokalese-diakopi-kykloforias/",
-        "https://www.efsyn.gr/kosmos/1435942/plimmyra-sarose-ti-voreiodytiki-kina-deka-nekroi-kai-synagermos-gia-ton-tyfona-noyl/",
-        "https://www.efsyn.gr/ellada/1435938/oriothetithike-i-pyrkagia-se-dasiki-ektasi-sto-kallidromo-fthiotidas/",
-        "https://www.efsyn.gr/ellada/1435935/me-ti-kairo-tha-mpei-o-aygoystos-stadiaki-anodos-tis-thermokrasias-oi-provlepseis-gia-to-epomeno-15imero/",
-        "https://www.efsyn.gr/kosmos/1435931/polemos-sti-mesi-anatoli-proti-imera-horis-htypimata-apo-ipa-kai-iran-meta-apo-evdomades/"
+        "https://www.efsyn.gr/oikonomia/1435687/stoiheia-tis-eurostat-i-krisi-stegis-pagonei-tis-genniseis-stin-ellada/",
+        "https://www.efsyn.gr/athlitismos/1435962/pagkosmio-protathlima-kopilasias-k23-proti-dynami-i-ellada-me-exi-metallia/",
+        "https://www.efsyn.gr/life/1435960/tzeni-karezi-sto-fos-adimosieyti-fotografia-prin-apo-65-hronia-34-hronia-horis-ti-megali-star/",
+        "https://www.efsyn.gr/ellada/1435678/kampingk-mia-hameni-anaptyxiaki-eykairia-gia-tin-ellada-kena-stis-ypodomes-kahypopsia-kai-adiaforia/"
       ],
-      "seen_at_utc": "2026-07-26T12:28:21.064656+00:00"
+      "seen_at_utc": "2026-07-26T13:28:02.281678+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/26/go-fun/fizz/oi-tzastin-mpimper-kai-xeili-synexizoun-tis-diakopes-tous-stin-ellada/",
-      "title": "Από το Κρανίδι στις Σπέτσες: Οι Τζάστιν Μπίμπερ και Χέιλι συνεχίζουν τις διακοπές τους στην Ελλάδα",
-      "normalized_title": "ΑΠΟ ΤΟ ΚΡΑΝΙΔΙ ΣΤΙΣ ΣΠΕΤΣΕΣ: ΟΙ ΤΖΑΣΤΙΝ ΜΠΙΜΠΕΡ ΚΑΙ ΧΕΙΛΙ ΣΥΝΕΧΙΖΟΥΝ ΤΙΣ ΔΙΑΚΟΠΕΣ ΤΟΥΣ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.in.gr/2026/07/26/world/ispania-ekklisi-santseth-gia-ethniki-symfonia-gia-tin-antimetopisi-ton-epiptoseon-tis-klimatikis-allagis/",
+      "title": "Έκκληση Σάντσεθ για εθνική «συμφωνία» για την αντιμετώπιση των επιπτώσεων της κλιματικής αλλαγής στην Ισπανία",
+      "normalized_title": "ΕΚΚΛΗΣΗ ΣΑΝΤΣΕΘ ΓΙΑ ΕΘΝΙΚΗ «ΣΥΜΦΩΝΙΑ» ΓΙΑ ΤΗΝ ΑΝΤΙΜΕΤΩΠΙΣΗ ΤΩΝ ΕΠΙΠΤΩΣΕΩΝ ΤΗΣ ΚΛΙΜΑΤΙΚΗΣ ΑΛΛΑΓΗΣ ΣΤΗΝ ΙΣΠΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/26/go-fun/fizz/oi-tzastin-mpimper-kai-xeili-synexizoun-tis-diakopes-tous-stin-ellada/",
-        "https://www.in.gr/2026/07/26/sports/basketball/ta-metagrafika-sxedia-tou-olympiakou-ti-ginetai-me-tessari-kai-me-ton-ntorsei/",
-        "https://www.in.gr/2026/07/26/world/to-iran-stamatise-tis-epitheseis-stis-xores-tou-kolpou-afou-oi-ipa-stamatisan-na-vomvardizoun-ta-iranika-edafi/",
-        "https://www.in.gr/2026/07/26/greece/mov-medouses-deite-tis-ellinikes-aktes-opou-emfanizontai-se-pragmatiko-xrono-live-xartis/",
-        "https://www.in.gr/2026/07/26/sports/on-field/ked-to-xalasmeno-tilefono-ton-lanoua-valeri-kai-i-eythyni-tis-epo/",
-        "https://www.in.gr/2026/07/26/politics/politiki-grammateia/dimoskopisi-pagionetai-sti-deyteri-thesi-i-elas-maxi-gia-tous-kentroous-kai-tous-xoris-taytisi-psifoforous/",
-        "https://www.in.gr/2026/07/26/economy/diethnis-oikonomia/gen-z-mipos-to-na-akoloutheis-ta-pathi-sou-einai-pio-eksypno-apo-ta-na-kynigas-to-oneira-sou/",
-        "https://www.in.gr/2026/07/26/politics/epikairotita/elas-oi-pyrkagies-se-gallia-ispania-ypenthymizoun-oti-i-klimatiki-krisi-apotelei-koini-eyropaiki-proklisi/",
-        "https://www.in.gr/2026/07/26/sports/othersports/erasitexnis-olympiakos-gia-tin-ethniki-polo-mas-kanate-yperifanous-sas-eyxaristoume-pic/"
+        "https://www.in.gr/2026/07/26/world/ispania-ekklisi-santseth-gia-ethniki-symfonia-gia-tin-antimetopisi-ton-epiptoseon-tis-klimatikis-allagis/",
+        "https://www.in.gr/2026/07/26/life/culture-live/finos-film-i-epeteiaki-fotografia-gia-ta-34-xronia-apo-ton-thanato-tis-tzenis-krezi/",
+        "https://www.in.gr/2026/07/26/sports/basketball/o-panathinaikos-den-anisyxei-gia-ton-nan-epeidi-to-symvolaio-tou-den-exei-nba-out-pic/",
+        "https://www.in.gr/2026/07/26/greece/oi-synomilies-pou-kaine-ti-mafia-tis-kritis-2-mov-apopse-kai-10-sto-synolo-kai-gia-tous-dyo-dialogoi-pou-kaine/",
+        "https://www.in.gr/2026/07/26/go-fun/erotiki-zoi/se-agapo-alla-den-thelo-na-pao-diakopes-mazi-sou-olo-kai-perissotera-zeygaria-epilegoun-na-taksideyoun-solo/",
+        "https://www.in.gr/2026/07/26/world/symvainei-tora-stis-proodeytikes-ipa-eyaggelistes-kanoun-kirygma-stis-ptiseis/",
+        "https://www.in.gr/2026/07/26/sports/football/o-oliver-kan-ethese-erotimata-gia-tin-ethniki-germanias-kai-milise-gia-ton-klop/",
+        "https://www.in.gr/2026/07/26/economy/texniti-noimosyni-kai-agora-ergasias-poio-einai-to-elliniko-paradokso/",
+        "https://www.in.gr/2026/07/26/world/stena-tou-ormouz-tanker-ekserragi-prosekrouse-se-naytiki-narki/",
+        "https://www.in.gr/matchcenter/5900847/",
+        "https://www.in.gr/2026/07/26/greece/enosi-eisaggeleon-ellados-i-enisxysi-tis-prostasias-ton-eisaggelikon-leitourgon-den-mporei-na-perimenei/",
+        "https://www.in.gr/2026/07/26/sports/football/ayti-einai-i-endekada-tis-aek-gia-to-filiko-kontra-stin-tsvole-pic/",
+        "https://www.in.gr/2026/07/26/greece/agia-paraskeyi-synelifthi-soudanos-pou-perpatouse-stis-siragges-tou-metro/"
       ],
-      "seen_at_utc": "2026-07-26T12:28:21.064634+00:00"
+      "seen_at_utc": "2026-07-26T13:28:02.281633+00:00"
     }
   },
-  "updated_at_utc": "2026-07-26T12:28:21.064750+00:00"
+  "updated_at_utc": "2026-07-26T13:28:02.281766+00:00"
 }
