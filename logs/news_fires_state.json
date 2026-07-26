@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564367990/polo-pagkosmia-protathlitria-i-ellada-nikise-tin-oyggaria-ston-teliko-toy-world-cup/",
-      "title": "Πόλο: Παγκόσμια πρωταθλήτρια η Ελλάδα – Νίκησε την Ουγγαρία στον τελικό του World Cup",
-      "normalized_title": "ΠΟΛΟ: ΠΑΓΚΟΣΜΙΑ ΠΡΩΤΑΘΛΗΤΡΙΑ Η ΕΛΛΑΔΑ – ΝΙΚΗΣΕ ΤΗΝ ΟΥΓΓΑΡΙΑ ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ WORLD CUP",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564368026/pos-epiasan-ton-30chrono-me-ti-cheirovomvida-nea-stoicheia-apo-tin-el-as/",
+      "title": "Πώς έπιασαν τον 30χρονο με τη χειροβομβίδα – Νέα στοιχεία από την ΕΛ.ΑΣ.",
+      "normalized_title": "ΠΩΣ ΕΠΙΑΣΑΝ ΤΟΝ 30ΧΡΟΝΟ ΜΕ ΤΗ ΧΕΙΡΟΒΟΜΒΙΔΑ – ΝΕΑ ΣΤΟΙΧΕΙΑ ΑΠΟ ΤΗΝ ΕΛ.ΑΣ.",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564367990/polo-pagkosmia-protathlitria-i-ellada-nikise-tin-oyggaria-ston-teliko-toy-world-cup/",
-        "https://www.kathimerini.gr/world/564366466/o-peirasmos-tis-klimakosis/",
-        "https://www.kathimerini.gr/world/564367984/roymania-f-16-katerripse-kai-trito-drone-poy-paraviase-ton-enaerio-choro/"
+        "https://www.kathimerini.gr/society/astynomiko/564368026/pos-epiasan-ton-30chrono-me-ti-cheirovomvida-nea-stoicheia-apo-tin-el-as/",
+        "https://www.kathimerini.gr/athletics/564368011/polo-ta-sygcharitiria-toy-politikoy-kosmoy-stin-ethniki-gia-to-chryso-sto-world-cup/",
+        "https://www.kathimerini.gr/life/hours/564368005/waterproof-r-evolution/"
       ],
-      "seen_at_utc": "2026-07-26T09:28:07.199260+00:00"
+      "seen_at_utc": "2026-07-26T10:28:18.138473+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,47 +1261,51 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1856243/eihe-erthei-sto-nisi-gia-ta-genethlia-tis-koris-tis-leei-i-dikigoros-ton-goneon-tis-nekris-diasostrias-sti-suro/?utm_source=rss",
-      "title": "«Είχε έρθει στο νησί με άδεια από τη δουλειά της για τα γενέθλια της κόρης της» λέει η δικηγόρος των γονιών της νεκρής διασώστριας στη Σύρο",
-      "normalized_title": "«ΕΙΧΕ ΕΡΘΕΙ ΣΤΟ ΝΗΣΙ ΜΕ ΑΔΕΙΑ ΑΠΟ ΤΗ ΔΟΥΛΕΙΑ ΤΗΣ ΓΙΑ ΤΑ ΓΕΝΕΘΛΙΑ ΤΗΣ ΚΟΡΗΣ ΤΗΣ» ΛΕΕΙ Η ΔΙΚΗΓΟΡΟΣ ΤΩΝ ΓΟΝΙΩΝ ΤΗΣ ΝΕΚΡΗΣ ΔΙΑΣΩΣΤΡΙΑΣ ΣΤΗ ΣΥΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1856274/dinei-mahi-sti-meth-to-2hrono-pou-anasurthike-apo-pisina-sta-hania-krisima-ta-epomena-24ora/?utm_source=rss",
+      "title": "Δίνει μάχη στη ΜΕΘ το 2χρονο που ανασύρθηκε από πισίνα στα Χανιά , κρίσιμα τα επόμενα 24ωρα",
+      "normalized_title": "ΔΙΝΕΙ ΜΑΧΗ ΣΤΗ ΜΕΘ ΤΟ 2ΧΡΟΝΟ ΠΟΥ ΑΝΑΣΥΡΘΗΚΕ ΑΠΟ ΠΙΣΙΝΑ ΣΤΑ ΧΑΝΙΑ , ΚΡΙΣΙΜΑ ΤΑ ΕΠΟΜΕΝΑ 24ΩΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1856243/eihe-erthei-sto-nisi-gia-ta-genethlia-tis-koris-tis-leei-i-dikigoros-ton-goneon-tis-nekris-diasostrias-sti-suro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1856274/dinei-mahi-sti-meth-to-2hrono-pou-anasurthike-apo-pisina-sta-hania-krisima-ta-epomena-24ora/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856267/fotia-tora-sta-vasilika-fthiotidas-sikothikan-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856257/omonoia-sunelifthi-ep-autoforo-diarriktis-pou-espase-parathuro-autokinitou-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856252/evros-sunelifthi-ellinas-pou-metefere-11-paratupous-metanastes-me-ih/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856249/afados-o-27hronos-pou-paredose-tin-heirovomvida-ston-aiguptio-me-stoho-ton-dogiako-i-sunadisi-deuterolepton-sti-glufada/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-26T09:28:07.199377+00:00"
+      "seen_at_utc": "2026-07-26T10:28:18.138630+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1435875/egrapse-istoria-i-ethniki-andron-sto-polo-hryso-metallio-sto-wordl-cup-apenanti-stin-oyggaria/",
-      "title": "Έγραψε ιστορία η Εθνική ανδρών στο πόλο: Χρυσό μετάλλιο στο World Cup απέναντι στην Ουγγαρία",
-      "normalized_title": "ΕΓΡΑΨΕ ΙΣΤΟΡΙΑ Η ΕΘΝΙΚΗ ΑΝΔΡΩΝ ΣΤΟ ΠΟΛΟ: ΧΡΥΣΟ ΜΕΤΑΛΛΙΟ ΣΤΟ WORLD CUP ΑΠΕΝΑΝΤΙ ΣΤΗΝ ΟΥΓΓΑΡΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1435890/pos-shediazan-to-htypima-me-heirovomvida-sto-spiti-toy-ntogiakoy-egkleistos-stis-fylakes-o-egkefalos-eikones/",
+      "title": "Χειροβομβίδα κοντά στο σπίτι του Ντογιάκου: Τι εντόπισαν οι έρευνες του ελληνικού FBI – Και Έλληνας στη δικογραφία",
+      "normalized_title": "ΧΕΙΡΟΒΟΜΒΙΔΑ ΚΟΝΤΑ ΣΤΟ ΣΠΙΤΙ ΤΟΥ ΝΤΟΓΙΑΚΟΥ: ΤΙ ΕΝΤΟΠΙΣΑΝ ΟΙ ΕΡΕΥΝΕΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ FBI – ΚΑΙ ΕΛΛΗΝΑΣ ΣΤΗ ΔΙΚΟΓΡΑΦΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1435875/egrapse-istoria-i-ethniki-andron-sto-polo-hryso-metallio-sto-wordl-cup-apenanti-stin-oyggaria/",
-        "https://www.efsyn.gr/kosmos/1435867/epithesi-sto-verolino-ti-gnorizoyme-gia-ton-21hrono-vasiko-ypopto-tis-aimatiris-epithesis-sto-pride-eikones-vinteo/",
-        "https://www.efsyn.gr/kosmos/1435664/oykrania-giati-o-zelenski-vgainei-pligomenos-apo-tin-esoteriki-krisi-to-dilimma-poy-egine-gkafa/",
-        "https://www.efsyn.gr/politiki/1435863/tsoykalas-kata-mitsotaki-apodeiknyei-tin-proheirotita-kai-tin-asynepeia-tis-kyvernisis-toy/",
-        "https://www.efsyn.gr/ellada/1435855/fthiotida-kataggelia-gia-parenohlisi-anilikon-apo-methysmeno-se-paralia-epesan-sti-thalassa-gia-na-glitosoyn/",
-        "https://www.efsyn.gr/politiki/1435861/elas-gia-pyrkagies-se-gallia-kai-ispania-i-klimatiki-krisi-ypervainei-ta-ethnika-synora/",
-        "https://www.efsyn.gr/athlitismos/1435852/lebron-effect-exafanizontai-ta-eisitiria-ektoxeyontai-oi-times-sti-filadelfeia/"
+        "https://www.efsyn.gr/ellada/1435890/pos-shediazan-to-htypima-me-heirovomvida-sto-spiti-toy-ntogiakoy-egkleistos-stis-fylakes-o-egkefalos-eikones/",
+        "https://www.efsyn.gr/athlitismos/1435670/ta-moyntial-kai-i-megalomania-tis-fifa/",
+        "https://www.efsyn.gr/ellada/1435888/apisteyti-katadioxi-apo-ta-megara-eos-to-antirrio-espase-ta-diodia-emvolise-peripoliko-diefyge-pezos/",
+        "https://www.efsyn.gr/politiki/1435883/to-sholio-toy-kke-gia-tis-anakoinoseis-mitsotaki-ehei-kai-i-koroidia-ta-oria-tis/"
       ],
-      "seen_at_utc": "2026-07-26T09:28:07.199344+00:00"
+      "seen_at_utc": "2026-07-26T10:28:18.138599+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/26/in-science/protoporiaki-ereyna-dinei-elpides-gia-therapeia-tis-idiopathous-pneymonikis-inosis-ti-einai-o-ypodoxeas-tlr5/",
-      "title": "Πρωτοποριακή έρευνα δίνει ελπίδες για θεραπεία της ιδιοπαθούς πνευμονικής ίνωσης - Τι είναι ο υποδοχέας TLR5",
-      "normalized_title": "ΠΡΩΤΟΠΟΡΙΑΚΗ ΕΡΕΥΝΑ ΔΙΝΕΙ ΕΛΠΙΔΕΣ ΓΙΑ ΘΕΡΑΠΕΙΑ ΤΗΣ ΙΔΙΟΠΑΘΟΥΣ ΠΝΕΥΜΟΝΙΚΗΣ ΙΝΩΣΗΣ - ΤΙ ΕΙΝΑΙ Ο ΥΠΟΔΟΧΕΑΣ TLR5",
+      "url": "https://www.in.gr/2026/07/26/greece/fthiotida-fotia-sta-vasilika-sikothikan-tessera-enaeria-mesa/",
+      "title": "Φθιώτιδα: Φωτιά στα Βασιλικά – Σηκώθηκαν τέσσερα εναέρια μέσα",
+      "normalized_title": "ΦΘΙΩΤΙΔΑ: ΦΩΤΙΑ ΣΤΑ ΒΑΣΙΛΙΚΑ – ΣΗΚΩΘΗΚΑΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/26/in-science/protoporiaki-ereyna-dinei-elpides-gia-therapeia-tis-idiopathous-pneymonikis-inosis-ti-einai-o-ypodoxeas-tlr5/",
-        "https://www.in.gr/2026/07/26/greece/synagermos-sta-xania-eksafanistike-75xroni-me-anoia-pigainontas-pros-tin-ekklisia/",
-        "https://www.in.gr/2026/07/26/economy/anasfalista-oximata-me-texniti-noimosyni-i-eksetasi-ton-enstaseon-pos-enimeronontai-oi-idioktites/",
-        "https://www.in.gr/2026/07/26/sports/othersports/ellada-ouggaria-15-14-epos-tis-elladaras-proto-xryso-metallio-sto-polo-oi-magkes-me-ta-mple/",
-        "https://www.in.gr/2026/07/26/sports/football/i-real-madritis-ta-vrike-me-ton-ntiomante-kai-tha-syzitisei-me-ti-leipsia-pic/",
-        "https://www.in.gr/2026/07/26/politics/epikairotita/mitsotakis-gia-tin-entaksi-tou-olympou-stin-unesco-apo-simera-ginetai-vouno-olokliris-tis-anthropotitas/",
-        "https://www.in.gr/2026/07/26/life/woman/mparmpara-roumpin-i-efivi-skinothetis-pou-enose-tous-anti-gouorxol-alen-gkinsmpergk-kai-mpomp-ntilan/",
-        "https://www.in.gr/2026/07/26/sports/football/megales-stigmes-gia-ton-tsimika-pou-epaikse-os-arxigos-tis-liverpoul-sto-filiko-me-ti-santerlant/",
-        "https://www.in.gr/2026/07/26/economy/oikonomikes-eidiseis/sokolata-tous-influencers-epistrateyei-i-viomixania-gia-na-ksanakerdisei-meridia/",
-        "https://www.in.gr/2026/07/26/sports/football/epanerxetai-i-ntortmount-gia-ton-karetsa/"
+        "https://www.in.gr/2026/07/26/greece/fthiotida-fotia-sta-vasilika-sikothikan-tessera-enaeria-mesa/",
+        "https://www.in.gr/2026/07/26/sports/othersports/tzortzatos-kai-argyropoulos-vraveytikan-os-kalyteroi-sto-world-cup-vid/",
+        "https://www.in.gr/2026/07/26/world/gallia-synagermos-sto-mpornto-oi-pyrines-floges-apeiloun-olokliri-tin-poli-skepseis-gia-ekkenosi-tis/",
+        "https://www.in.gr/2026/07/26/sports/othersports/skoumpakis-itan-enas-trelos-telikos-kai-latreyo-tin-omada-mas-vid/",
+        "https://www.in.gr/2026/07/26/sports/othersports/rigi-sygkinisis-stin-aponomi-tou-xrysou-metalliou-stin-ethniki-polo/",
+        "https://www.in.gr/2026/07/26/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-26-07-01-08-2026/",
+        "https://www.in.gr/2026/07/26/go-fun/to-mystiko-piso-apo-ena-apo-ta-pio-diasima-epitrapezia-paixnidia-kryvetai-se-ena-mikro-ispaniko-mpar/",
+        "https://www.in.gr/2026/07/26/sports/on-field/poios-kai-ti-na-sygkrithei-mazi-sas/",
+        "https://www.in.gr/2026/07/26/greece/dyo-syllipseis-gia-ti-sxediazomeni-epithesi-me-xeirovomvida-stin-attiki-anaziteitai-27xronos/",
+        "https://www.in.gr/2026/07/26/sports/othersports/o-argyropoulos-skorare-kai-sfragise-to-xryso-i-tromeri-skini-me-ton-skoumpaki-vid/",
+        "https://www.in.gr/2026/07/26/greece/peiraias-ayksimeni-i-epivatiki-kinisi-pano-apo-100-anaxoriseis-ploion/",
+        "https://www.in.gr/2026/07/26/sports/othersports/ola-ta-metallia-tis-ethnikis-polo-meta-to-xryso-sto-world-cup/",
+        "https://www.in.gr/2026/07/26/sports/basketball/dysarestimenos-o-omprantovits-me-ti-xapoel-epeidi-tilefonise-ston-gkrant/"
       ],
-      "seen_at_utc": "2026-07-26T09:28:07.199315+00:00"
+      "seen_at_utc": "2026-07-26T10:28:18.138544+00:00"
     }
   },
-  "updated_at_utc": "2026-07-26T09:28:07.199454+00:00"
+  "updated_at_utc": "2026-07-26T10:28:18.138720+00:00"
 }
