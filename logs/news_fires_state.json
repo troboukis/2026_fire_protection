@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564346354/eortologio-poioi-giortazoyn-simera-27-ioylioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 27 Ιουλίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 27 ΙΟΥΛΙΟΥ",
+      "url": "https://www.kathimerini.gr/world/564368362/i-vrazilia-anakalese-ton-presveyti-tis-sto-mpoyenos-aires/",
+      "title": "Η Βραζιλία ανακάλεσε τον πρεσβευτή της στο Μπουένος Aϊρες",
+      "normalized_title": "Η ΒΡΑΖΙΛΙΑ ΑΝΑΚΑΛΕΣΕ ΤΟΝ ΠΡΕΣΒΕΥΤΗ ΤΗΣ ΣΤΟ ΜΠΟΥΕΝΟΣ AΙΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564346354/eortologio-poioi-giortazoyn-simera-27-ioylioy/",
-        "https://www.kathimerini.gr/economy/international/564368158/giati-to-kakao-fthinainei-kai-i-sokolata-ochi/",
-        "https://www.kathimerini.gr/k/gastronomos/564368134/anogeia-mia-liti-mageiriki-me-osa-dinei-i-gi/"
+        "https://www.kathimerini.gr/world/564368362/i-vrazilia-anakalese-ton-presveyti-tis-sto-mpoyenos-aires/",
+        "https://www.kathimerini.gr/politics/564366457/theoreio-allagi-tonoy-gia-ton-opekepe/",
+        "https://www.kathimerini.gr/society/564368344/diki-gia-ta-tempi-topothetiseis-synigoron-epi-tis-eisaggelikis-protasis-gia-ta-aitimata-anavolis/",
+        "https://www.kathimerini.gr/world/564368350/ipa-pyrovolismoi-sto-siatl-anafores-gia-nekroys-kai-traymaties/",
+        "https://www.kathimerini.gr/world/564368335/ipa-iran-o-tramp-afinei-choro-gia-diapragmateyseis/"
       ],
-      "seen_at_utc": "2026-07-26T21:28:01.696490+00:00"
+      "seen_at_utc": "2026-07-27T04:28:08.856379+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1263,71 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1856368/to-porisma-tou-iatrodikasti-tha-dosei-apadiseis-gia-ti-dolofonia-tis-diasostrias-sti-suro-poia-stoiheia-tha-rixoun-fos/?utm_source=rss",
-      "title": "Κρίσιμο το πόρισμα του ιατροδικαστή για τη δολοφονία της διασώστριας στη Σύρο, την Τρίτη στην Ερμούπολη η κηδεία της",
-      "normalized_title": "ΚΡΙΣΙΜΟ ΤΟ ΠΟΡΙΣΜΑ ΤΟΥ ΙΑΤΡΟΔΙΚΑΣΤΗ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΔΙΑΣΩΣΤΡΙΑΣ ΣΤΗ ΣΥΡΟ, ΤΗΝ ΤΡΙΤΗ ΣΤΗΝ ΕΡΜΟΥΠΟΛΗ Η ΚΗΔΕΙΑ ΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1856416/diki-gia-ta-tebi-sunehizodai-oi-agoreuseis-gia-ta-aitimata-anavolis/?utm_source=rss",
+      "title": "Δίκη για τα Τέμπη: Συνεχίζονται οι αγορεύσεις για τα αιτήματα αναβολής",
+      "normalized_title": "ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ: ΣΥΝΕΧΙΖΟΝΤΑΙ ΟΙ ΑΓΟΡΕΥΣΕΙΣ ΓΙΑ ΤΑ ΑΙΤΗΜΑΤΑ ΑΝΑΒΟΛΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1856368/to-porisma-tou-iatrodikasti-tha-dosei-apadiseis-gia-ti-dolofonia-tis-diasostrias-sti-suro-poia-stoiheia-tha-rixoun-fos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1856416/diki-gia-ta-tebi-sunehizodai-oi-agoreuseis-gia-ta-aitimata-anavolis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856413/kourier-me-trihes-kai-exafanizomena-minumata-i-sunomilia-me-dikigoro-pou-kaiei-ton-toxikologo-stin-kriti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856375/tetarto-atomo-pou-shetizetai-me-tin-epithesi-me-heirovomvida-anazita-i-elas-sta-2500-euro-i-amoivi-tou-aiguptiou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-26T20:28:14.635684+00:00"
+      "seen_at_utc": "2026-07-27T04:28:08.856523+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1436103/koyva-o-proedros-ntias-kanel-mila-gia-politiki-genoktonia-apo-tis-ipa/",
-      "title": "Κούβα: Ο πρόεδρος Ντίας-Κανέλ μιλά για πολιτική γενοκτονία από τις ΗΠΑ",
-      "normalized_title": "ΚΟΥΒΑ: Ο ΠΡΟΕΔΡΟΣ ΝΤΙΑΣ-ΚΑΝΕΛ ΜΙΛΑ ΓΙΑ ΠΟΛΙΤΙΚΗ ΓΕΝΟΚΤΟΝΙΑ ΑΠΟ ΤΙΣ ΗΠΑ",
+      "url": "https://www.efsyn.gr/politiki/1436130/epipleon-meiosi-sto-ntizel-ton-aygoysto-sta-15-lepta-i-synoliki-ekptosi/",
+      "title": "Επιπλέον μείωση στο ντίζελ: Στα 15 λεπτά η συνολική έκπτωση – Καυστικά ερωτήματα από την αντιπολίτευση",
+      "normalized_title": "ΕΠΙΠΛΕΟΝ ΜΕΙΩΣΗ ΣΤΟ ΝΤΙΖΕΛ: ΣΤΑ 15 ΛΕΠΤΑ Η ΣΥΝΟΛΙΚΗ ΕΚΠΤΩΣΗ – ΚΑΥΣΤΙΚΑ ΕΡΩΤΗΜΑΤΑ ΑΠΟ ΤΗΝ ΑΝΤΙΠΟΛΙΤΕΥΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1436103/koyva-o-proedros-ntias-kanel-mila-gia-politiki-genoktonia-apo-tis-ipa/",
-        "https://www.efsyn.gr/kosmos/1436100/gaza-egkrithike-apo-to-israil-i-eisodos-diethnoys-dynamis-statheropoiisis-sti-lorida/",
-        "https://www.efsyn.gr/kosmos/1436098/rosia-pente-vosnioi-oreivates-pisteyetai-oti-skotothikan-sto-voyno-elmproys-tis-oroseiras-toy-kaykasoy/",
-        "https://www.efsyn.gr/kosmos/1436089/friki-stin-irlandia-entopistikan-22-nees-soroi-vrefon-sto-idryma-toyam/"
+        "https://www.efsyn.gr/politiki/1436130/epipleon-meiosi-sto-ntizel-ton-aygoysto-sta-15-lepta-i-synoliki-ekptosi/",
+        "https://www.efsyn.gr/kosmos/1436121/pyrinos-efialtis-se-ispania-gallia-toylahiston-325-000-anthropoi-egkateleipsan-ta-spitia-toys/",
+        "https://www.efsyn.gr/oikonomia/1436117/anoigei-simera-o-neos-exodikastikos-mihanismos-poioi-mpainoyn-me-hrei-apo-5-000-eyro-oles-oi-leptomereies/",
+        "https://www.efsyn.gr/ellada/1436118/kairos-stoys-38-vathmoys-simera-o-ydrargyros-poy-anamenontai-kataigides/",
+        "https://www.efsyn.gr/kosmos/1436112/synagermos-sto-siatl-pyrovolismoi-se-festival-fagitoy-me-polloys-traymaties-eikones/",
+        "https://www.efsyn.gr/kosmos/1436110/ipa-kai-iran-anastelloyn-gia-deyteri-imera-tis-epitheseis-o-tramp-afinei-anoihta-ola-ta-endehomena/",
+        "https://www.efsyn.gr/protoselida/i-anakyklosi-tis-arpahtis/",
+        "https://www.efsyn.gr/ellada/1436106/eortologio-megali-giorti-simera-deytera-27-ioylioy-poioi-giortazoyn/"
       ],
-      "seen_at_utc": "2026-07-26T21:28:01.696560+00:00"
+      "seen_at_utc": "2026-07-27T04:28:08.856492+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/27/in-science/perivallon-b-science/souper-el-ninio-dysoiones-provlepseis-gia-tin-afriki-oikonomiki-zimia-ypsous-10-20-dis-dolarion/",
-      "title": "Δυσοίωνες προβλέψεις ελέω «Σούπερ Ελ Νίνιο» - Οικονομική ζημιά ύψους 10-20 δισ. δολαρίων στην Αφρική",
-      "normalized_title": "ΔΥΣΟΙΩΝΕΣ ΠΡΟΒΛΕΨΕΙΣ ΕΛΕΩ «ΣΟΥΠΕΡ ΕΛ ΝΙΝΙΟ» - ΟΙΚΟΝΟΜΙΚΗ ΖΗΜΙΑ ΥΨΟΥΣ 10-20 ΔΙΣ. ΔΟΛΑΡΙΩΝ ΣΤΗΝ ΑΦΡΙΚΗ",
+      "url": "https://www.in.gr/2026/07/27/politics/politiki-grammateia/syntagmatiki-anatheorisi-to-apogeyma-i-psifoforia-sti-vouli-ta-epimaxa-arthra/",
+      "title": "Το απόγευμα η ψηφοφορία στη Βουλή για τη συνταγματική αναθεώρηση - Τα επίμαχα άρθρα",
+      "normalized_title": "ΤΟ ΑΠΟΓΕΥΜΑ Η ΨΗΦΟΦΟΡΙΑ ΣΤΗ ΒΟΥΛΗ ΓΙΑ ΤΗ ΣΥΝΤΑΓΜΑΤΙΚΗ ΑΝΑΘΕΩΡΗΣΗ - ΤΑ ΕΠΙΜΑΧΑ ΑΡΘΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/27/in-science/perivallon-b-science/souper-el-ninio-dysoiones-provlepseis-gia-tin-afriki-oikonomiki-zimia-ypsous-10-20-dis-dolarion/",
-        "https://www.in.gr/2026/07/27/economy/diethnis-oikonomia/pos-oi-epixeirimaties-emathan-na-zoun-me-ton-plithorismo/",
-        "https://www.in.gr/2026/07/27/plus/medianews/sta-nea-tis-deyteras-an-den-ekdosate-ti-nea-taytotita/",
-        "https://www.in.gr/2026/07/27/world/kouva-o-proedros-ntias-kanel-xaraktirizei-politiki-genoktonia-to-petrelaiko-empargko-ton-ipa/"
+        "https://www.in.gr/2026/07/27/politics/politiki-grammateia/syntagmatiki-anatheorisi-to-apogeyma-i-psifoforia-sti-vouli-ta-epimaxa-arthra/",
+        "https://www.in.gr/2026/07/27/world/meiosi-tis-kinisis-ton-emporikon-ploion-stin-erythra-thalassa-meta-tis-epitheseis-ton-xouthi-enantion-tis-saoudikis-aravias/",
+        "https://www.in.gr/2026/07/27/life/geysi/dyo-syntages-made-in-italy/",
+        "https://www.in.gr/2026/07/27/world/pyrovolismoi-se-festival-fagitou-sto-siatl-toulaxiston-dyo-nekroi-kai-polloi-traymaties/",
+        "https://www.in.gr/2026/07/27/world/rosia-dyo-nekroi-kai-arketoi-traymaties-apo-oukranikes-epitheseis/",
+        "https://www.in.gr/2026/07/27/plus/vita/ola-osa-xarizoun-ston-organismo-mas-oi-fraoules/",
+        "https://www.in.gr/2026/07/27/greece/kairos-anodos-tis-thermokrasias-kai-afrikaniki-skoni-ti-deytera-pou-tha-vreksei/",
+        "https://www.in.gr/2026/07/27/greece/dikastiria-se-tria-metopa-strimoxnoun-tin-kyvernisi/",
+        "https://www.in.gr/2026/07/27/life/culture-live/xeirokrotima-15-700-theates-stin-eirini-ton-karathanou-delivoria-stin-epidayro-neoi-stathmoi-periodeias/",
+        "https://www.in.gr/2026/07/27/plus/vita/ta-social-media-katestrepsan-ton-kinimatografo-oi-tainies-dyo-oron-kourazoun-ti-nea-genia/",
+        "https://www.in.gr/2026/07/27/economy/diethnis-oikonomia/to-triptyxo-tis-stegastikis-krisis-agora-enoikiasi-kai-kataskeyi-akiniton-sta-ypsi/",
+        "https://www.in.gr/2026/07/27/in-science/ai/i-nea-arxitektoniki-tis-apasxolisis-apo-tous-aytonomous-algorithmous-stin-anagennisi-ton-soft-skills/",
+        "https://www.in.gr/2026/07/27/go-fun/fizz/den-ta-xreiazomai-an-me-kanoun-na-niotho-asxima-gia-ton-weird-al-ta-xrimata-den-exoun-kamia-simasia/",
+        "https://www.in.gr/2026/07/27/world/pos-sozeis-mia-dimokratia-o-erntogan-o-ozel-kai-i-klironomia-tou-atatourk/",
+        "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/ta-istorika-ksenodoxeia-pou-epistrefoun-ston-touristiko-xarti/",
+        "https://www.in.gr/2026/07/27/greece/stin-teliki-eytheia-prin-ti-diakopi-tou-aygoustou-i-diki-gia-ta-tempi-oi-apofaseis-pou-tha-parthoun/",
+        "https://www.in.gr/2026/07/27/greece/kypseli-me-mazikes-agoges-apeiloun-oi-katoikoi-gia-to-metro/",
+        "https://www.in.gr/2026/07/27/economy/diethnis-oikonomia/ispania-ena-gkol-aksias-peripou-4-dis-eyro-i-yperaksia-mias-epikis-nikis/",
+        "https://www.in.gr/2026/07/27/economy/diethnis-oikonomia/kaneis-den-thelei-na-ginei-afentiko-giati-i-gen-z-arneitai-tis-proagoges/",
+        "https://www.in.gr/2026/07/27/world/mesi-anatoli-mas-perimenei-ksana-enas-dyskolos-xeimonas-ektima-o-tzeims-si/",
+        "https://www.in.gr/2026/07/27/life/diakopes/diakopes-xoris-spoilers-stin-epoxi-ton-social-media-pos-na-ksanavreis-ti-mageia-tou-aythormitou-taksidiou/",
+        "https://www.in.gr/2026/07/27/world/iran-pos-o-ellinas-istorikos-ploutarxos-proevlepse-tin-parakmi-tis-amerikanikis-aytokratorias/",
+        "https://www.in.gr/2026/07/27/world/xili-synelifthi-proin-stratiotikos-katadikasmenos-gia-ti-dolofonia-tou-tragoudisti-viktor-xara/",
+        "https://www.in.gr/2026/07/27/world/iran-o-tramp-afinei-xoro-gia-diapragmateyseis-alla-diatirei-oles-tis-epiloges-sto-trapezi/",
+        "https://www.in.gr/2026/07/27/world/vrazilia-anakalei-ton-presveyti-tis-sto-mpouenos-aires-meta-tis-prosvlitikes-diloseis-tou-milei/",
+        "https://www.in.gr/2026/07/27/world/ld-kongko-3-200-krousmata-tou-empola-symperilamvanomenon-1-405-thanatiforon/",
+        "https://www.in.gr/2026/07/27/world/germania-o-ypourgos-metaforon-zita-tin-apolysi-tou-kanontas-logo-gia-anaksioprepi-katastasi/",
+        "https://www.in.gr/2026/07/27/world/oukrania-xtypithikan-limania-kai-ploia-apo-tis-rosikes-dynameis-eno-vythistike-to-golden-leo/",
+        "https://www.in.gr/2026/07/27/world/vietnam-17-naytikoi-agnoountai-epeita-apo-nayagio-fortigou-sti-notia-siniki-thalassa/",
+        "https://www.in.gr/2026/07/27/economy/diethnis-oikonomia/petrelaio-ptosi-ton-timon-kata-5-kai-pleon-eksaitias-elpidon-gia-symfonia-ipa-iran/",
+        "https://www.in.gr/2026/07/27/world/stena-tou-ormouz-aytos-einai-o-anthropos-pou-epeise-ton-tramp-na-min-ta-vomvardisei/"
       ],
-      "seen_at_utc": "2026-07-26T22:28:04.181020+00:00"
+      "seen_at_utc": "2026-07-27T04:28:08.856440+00:00"
     }
   },
-  "updated_at_utc": "2026-07-26T22:28:04.181112+00:00"
+  "updated_at_utc": "2026-07-27T04:28:08.856607+00:00"
 }
