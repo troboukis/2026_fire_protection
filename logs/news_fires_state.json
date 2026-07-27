@@ -1,18 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564369286/tha-ntrepomoyn-an-eicha-grapsei-to-senario-i-metafrastria-tis-odysseias-katakeraynonei-ton-nolan/",
-      "title": "«Θα ντρεπόμουν αν είχα γράψει το σενάριο…»: Mεταφράστρια της «Οδύσσειας» κατακεραυνώνει τον Νόλαν",
-      "normalized_title": "«ΘΑ ΝΤΡΕΠΟΜΟΥΝ ΑΝ ΕΙΧΑ ΓΡΑΨΕΙ ΤΟ ΣΕΝΑΡΙΟ…»: MΕΤΑΦΡΑΣΤΡΙΑ ΤΗΣ «ΟΔΥΣΣΕΙΑΣ» ΚΑΤΑΚΕΡΑΥΝΩΝΕΙ ΤΟΝ ΝΟΛΑΝ",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564369478/zooklopes-katapatiseis-kai-340-000-eyro-paranomes-epidotiseis-pos-droyse-to-kykloma-stin-kriti/",
+      "title": "Ζωοκλοπές, καταπατήσεις και 340.000 ευρώ παράνομες επιδοτήσεις – Πώς δρούσε το κύκλωμα στην Κρήτη",
+      "normalized_title": "ΖΩΟΚΛΟΠΕΣ, ΚΑΤΑΠΑΤΗΣΕΙΣ ΚΑΙ 340.000 ΕΥΡΩ ΠΑΡΑΝΟΜΕΣ ΕΠΙΔΟΤΗΣΕΙΣ – ΠΩΣ ΔΡΟΥΣΕ ΤΟ ΚΥΚΛΩΜΑ ΣΤΗΝ ΚΡΗΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564369286/tha-ntrepomoyn-an-eicha-grapsei-to-senario-i-metafrastria-tis-odysseias-katakeraynonei-ton-nolan/",
-        "https://www.kathimerini.gr/world/564369418/roymania-ektos-leitoyrgias-o-enas-apo-toys-dyo-pyrinikoys-antidrastires-tis/",
-        "https://www.kathimerini.gr/athletics/football/564369412/konstantinos-karetsas-talentoy-kai-alegrias-gonia/",
-        "https://www.kathimerini.gr/world/564369403/aystria-schedia-gia-ayxisi-tis-ypochreotikis-stratiotikis-thiteias/",
-        "https://www.kathimerini.gr/world/564369400/tramp-gia-f-35-kaneis-den-tha-moy-pei-ti-prepei-na-poylisoyme-spoydaios-symmachos-i-toyrkia/",
-        "https://www.kathimerini.gr/economy/564366808/metroyn-tis-xaplostres-me-drones/"
+        "https://www.kathimerini.gr/society/astynomiko/564369478/zooklopes-katapatiseis-kai-340-000-eyro-paranomes-epidotiseis-pos-droyse-to-kykloma-stin-kriti/",
+        "https://www.kathimerini.gr/world/564369427/toy-edinan-400-ekat-dolaria-gia-tin-etaireia-toy-ekeinos-apofasise-na-tin-charisei/",
+        "https://www.kathimerini.gr/economy/564366850/arthro-toy-giorgoy-stoympoy-stin-k-i-wall-street-apotima-tin-techniti-noimosyni-prosdetheite/",
+        "https://www.kathimerini.gr/world/564369421/poios-tha-analavei-ti-lvmh-i-aichmiri-apantisi-toy-arno/",
+        "https://www.kathimerini.gr/world/564369256/epairne-ta-chrimata-alla-den-ethave-toys-nekroys/",
+        "https://www.kathimerini.gr/society/564369460/synelifthi-ploiarchos-sto-keratsini-gia-yperarithmoys-epivates/",
+        "https://www.kathimerini.gr/world/564369442/makron-gia-pyrkagies-tha-prepei-na-fytepsoyme-ena-diaforetiko-dasos/",
+        "https://www.kathimerini.gr/culture/564364846/to-psifidoto-enos-imiteloys-aristoyrgimatos/"
       ],
-      "seen_at_utc": "2026-07-27T19:28:23.267330+00:00"
+      "seen_at_utc": "2026-07-27T20:28:13.160021+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,49 +1266,48 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1856873/exafanistikan-duo-adelfia-apo-horo-filoxenias-asunodeuton-anilikon-stous-tagarades-thessalonikis/?utm_source=rss",
-      "title": "Εξαφανίστηκαν δύο αδέλφια από χώρο φιλοξενίας ασυνόδευτων ανηλίκων στους Ταγαράδες Θεσσαλονίκης",
-      "normalized_title": "ΕΞΑΦΑΝΙΣΤΗΚΑΝ ΔΥΟ ΑΔΕΛΦΙΑ ΑΠΟ ΧΩΡΟ ΦΙΛΟΞΕΝΙΑΣ ΑΣΥΝΟΔΕΥΤΩΝ ΑΝΗΛΙΚΩΝ ΣΤΟΥΣ ΤΑΓΑΡΑΔΕΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1856893/kriti-okto-sullipseis-melon-tis-eglimatikis-organosis-pou-ekleve-zoa-kai-apospouse-paranoma-europaikes-enishuseis/?utm_source=rss",
+      "title": "Κρήτη: Οκτώ συλλήψεις μελών της εγκληματικής οργάνωσης που έκλεβε ζώα και αποσπούσε παράνομα ευρωπαϊκές ενισχύσεις",
+      "normalized_title": "ΚΡΗΤΗ: ΟΚΤΩ ΣΥΛΛΗΨΕΙΣ ΜΕΛΩΝ ΤΗΣ ΕΓΚΛΗΜΑΤΙΚΗΣ ΟΡΓΑΝΩΣΗΣ ΠΟΥ ΕΚΛΕΒΕ ΖΩΑ ΚΑΙ ΑΠΟΣΠΟΥΣΕ ΠΑΡΑΝΟΜΑ ΕΥΡΩΠΑΙΚΕΣ ΕΝΙΣΧΥΣΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1856873/exafanistikan-duo-adelfia-apo-horo-filoxenias-asunodeuton-anilikon-stous-tagarades-thessalonikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856869/edopistike-katastima-sti-thessaloniki-opou-diexagodan-paranoma-tuhera-paihnidia-4-sullipseis-pos-leitourgouse/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856866/psarepsan-gigadio-lagokefalo-50-ekatoston-sto-irakleio-tis-kritis-deite-video-kai-fotrografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1856893/kriti-okto-sullipseis-melon-tis-eglimatikis-organosis-pou-ekleve-zoa-kai-apospouse-paranoma-europaikes-enishuseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856888/sunelifthi-53hronos-ploiarhos-sto-keratsini-gia-uperarithmous-epivates-kai-paranomies-sti-metafora-ugraeriou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-27T19:28:23.267458+00:00"
+      "seen_at_utc": "2026-07-27T20:28:13.160118+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1436841/synelifthi-epiheirimatias-sti-halkidiki-noikiaze-tzet-ski-se-atoma-horis-diploma-o-enas-anilikos/",
-      "title": "Συνελήφθη επιχειρηματίας στη Χαλκιδική: Νοίκιαζε τζετ σκι σε άτομα χωρίς δίπλωμα – Ο ένας ανήλικος",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΕΠΙΧΕΙΡΗΜΑΤΙΑΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ: ΝΟΙΚΙΑΖΕ ΤΖΕΤ ΣΚΙ ΣΕ ΑΤΟΜΑ ΧΩΡΙΣ ΔΙΠΛΩΜΑ – Ο ΕΝΑΣ ΑΝΗΛΙΚΟΣ",
+      "url": "https://www.efsyn.gr/tehnes/1436866/emily-wilson-metafrastria-klasiki-filologos-tha-ntrepomoyn-na-eho-grapsei-ena-senario-opos-tis-odysseia-toy-nolan/",
+      "title": "Emily Wilson, μεταφράστρια – κλασική φιλόλογος: Θα ντρεπόμουν να έχω γράψει ένα σενάριο όπως της Οδύσσειας του Νόλαν",
+      "normalized_title": "EMILY WILSON, ΜΕΤΑΦΡΑΣΤΡΙΑ – ΚΛΑΣΙΚΗ ΦΙΛΟΛΟΓΟΣ: ΘΑ ΝΤΡΕΠΟΜΟΥΝ ΝΑ ΕΧΩ ΓΡΑΨΕΙ ΕΝΑ ΣΕΝΑΡΙΟ ΟΠΩΣ ΤΗΣ ΟΔΥΣΣΕΙΑΣ ΤΟΥ ΝΟΛΑΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1436841/synelifthi-epiheirimatias-sti-halkidiki-noikiaze-tzet-ski-se-atoma-horis-diploma-o-enas-anilikos/",
-        "https://www.efsyn.gr/ellada/1436827/nea-ntokoymenta-gia-ti-mafia-tis-kritis-mpalothies-me-vary-oplismo-dipla-se-polites-vinteo/",
-        "https://www.efsyn.gr/kosmos/1436828/synelifthi-o-teleytaios-katazitoymenos-apo-tin-epohi-toy-pinoset-eihe-dolofonisei-ton-tragoydisti-viktor-hara/",
-        "https://www.efsyn.gr/politiki/1436818/mendoni-gia-nomoshedio-yppo-den-einai-idiotikopoiisi-tis-politistikis-klironomias-alla-antimetopisi-me-anaptyxiaki-dynamiki/",
-        "https://www.efsyn.gr/politiki/1436807/paradohi-georgiadi-gia-ta-2-000-eyro-apo-ton-froyzi-se-idioktitria-site-sygkroysi-on-air-me-dimosiografo-vinteo/"
+        "https://www.efsyn.gr/tehnes/1436866/emily-wilson-metafrastria-klasiki-filologos-tha-ntrepomoyn-na-eho-grapsei-ena-senario-opos-tis-odysseia-toy-nolan/",
+        "https://www.efsyn.gr/ellada/1436857/synelifthi-ploiarhos-fortigoy-ohimatagogoy-sto-keratsini-gia-metafora-yperarithmon-epivaton/",
+        "https://www.efsyn.gr/athlitismos/1436861/kleinei-mager-i-aek/",
+        "https://www.efsyn.gr/ellada/1436845/exafanistike-25hronos-sto-el-venizelos-etheathi-argotera-sti-mandra-kai-ton-anazita-i-oikogeneia-toy/",
+        "https://www.efsyn.gr/politiki/1436849/marinakis-kata-androylaki-gia-syntagmatiki-anatheorisi-to-pasok-arkestike-se-ena-amihano-paron-i-katapsifise/"
       ],
-      "seen_at_utc": "2026-07-27T19:28:23.267434+00:00"
+      "seen_at_utc": "2026-07-27T20:28:13.160091+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/27/politics/epikairotita/i-elas-gia-ton-diorismo-prosorinis-dioikisis-ston-pis-i-nomimotita-den-apokathistatai-me-politikous-diorismous/",
-      "title": "Η ΕΛΑΣ για τον διορισμό προσωρινής διοίκησης στον ΠΙΣ: Η νομιμότητα δεν αποκαθίσταται με πολιτικούς διορισμούς",
-      "normalized_title": "Η ΕΛΑΣ ΓΙΑ ΤΟΝ ΔΙΟΡΙΣΜΟ ΠΡΟΣΩΡΙΝΗΣ ΔΙΟΙΚΗΣΗΣ ΣΤΟΝ ΠΙΣ: Η ΝΟΜΙΜΟΤΗΤΑ ΔΕΝ ΑΠΟΚΑΘΙΣΤΑΤΑΙ ΜΕ ΠΟΛΙΤΙΚΟΥΣ ΔΙΟΡΙΣΜΟΥΣ",
+      "url": "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/ee-kai-big-tech-ta-prostima-kai-oi-politikes-tous-proektaseis/",
+      "title": "Πώς καθορίζονται τα πρόστιμα στις λεγόμενες Big Tech",
+      "normalized_title": "ΠΩΣ ΚΑΘΟΡΙΖΟΝΤΑΙ ΤΑ ΠΡΟΣΤΙΜΑ ΣΤΙΣ ΛΕΓΟΜΕΝΕΣ BIG TECH",
       "seen_urls": [
-        "https://www.in.gr/2026/07/27/politics/epikairotita/i-elas-gia-ton-diorismo-prosorinis-dioikisis-ston-pis-i-nomimotita-den-apokathistatai-me-politikous-diorismous/",
-        "https://www.in.gr/2026/07/27/world/alvania-vouleytis-arpazei-aporrito-eggrafo-gia-ti-symfonia-me-tis-ipa-ypallilos-ton-katadiokei-kai-peftei-apo-tis-skales/",
-        "https://www.in.gr/2026/07/27/sports/football/ethniki-italias-paraitithika-malntini-kai-leonarnto-10-imeres-meta-tin-analipsi-ton-kathikonton-tous/",
-        "https://www.in.gr/2026/07/27/life/kristiano-ronalnto-hthopoios-paragogos-disekatommyriouxos-me-ton-tieri-anri-sti-nea-dramatiki-seira-day-1s/",
-        "https://www.in.gr/2026/07/27/greece/tragodia-stin-kefalonia-nekros-pateras-dyo-paidion-epese-me-to-aytokinito-tou-sti-xaradra-to-apoxairetistirio-minyma-tou/",
-        "https://www.in.gr/2026/07/27/greece/sto-mikroskopio-tou-ellinikou-fbi-sxedio-epithesis-me-xeirovomvida-stin-athina-to-pseydonymo-dragon-kai-oi-odigies/",
-        "https://www.in.gr/2026/07/27/greece/kairos-mazi-me-ti-zesti-epistrefei-kai-i-afrikaniki-skoni-oi-epta-perioxes-me-tis-megistes-sygkentroseis/",
-        "https://www.in.gr/2026/07/27/world/kontra-ipa-gallias-kapote-isastan-ypodeigma-gia-ta-anthropina-dikaiomata-ypokritiki-i-stasi-tis-gallias/",
-        "https://www.in.gr/2026/07/27/world/ispania-kai-gallia-dinoun-maxi-me-ton-xrono-oi-pyrkagies-mainontai-eno-perimenoun-neo-kaysona/",
-        "https://www.in.gr/2026/07/27/sports/othersports/paraligo-sovaro-atyxima-sto-tour-de-france-podilatis-pige-na-pesei-se-gkremo-vid/",
-        "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/foroi-ti-prepei-na-plirothei-mexri-tin-paraskeyi/",
-        "https://www.in.gr/2026/07/27/english-edition/greek-government-targets-fuel-prices-and-household-costs/"
+        "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/ee-kai-big-tech-ta-prostima-kai-oi-politikes-tous-proektaseis/",
+        "https://www.in.gr/2026/07/27/world/pos-sothikan-apo-tis-floges-ta-aloga-tou-mpiskaros-sti-gallia-xoris-na-yparksei-esto-traymatismos/",
+        "https://www.in.gr/2026/07/27/life/culture-live/o-gkregk-araki-gia-tin-apomakrynsi-tis-gen-z-apo-to-seks-parte-riska-vgeite-kaka-rantevou/",
+        "https://www.in.gr/2026/07/27/english-edition/zakynthos-port-set-for-first-major-works-since-1999/",
+        "https://www.in.gr/2026/07/27/greece/gigantios-lagokefalos-emfanistike-se-polysyxnasti-paralia-stin-kriti-ksepernouse-ta-50-ekatosta/",
+        "https://www.in.gr/2026/07/27/sports/football/i-aek-exei-erthei-se-proforiki-symfonia-me-ti-volfsmpourgk-gia-ton-mager/",
+        "https://www.in.gr/2026/07/27/world/italia-giatroi-xarisan-tin-orasi-se-tyfli-gynaika-ekanan-proti-fora-metamosxeysi-oxras-kilidas/",
+        "https://www.in.gr/2026/07/27/greece/synagermos-gia-eksafanisi-anilikon-sti-thessaloniki-anazitountai-dyo-adelfia-apo-xoro-filoksenias-asynodeyton-anilikon/",
+        "https://www.in.gr/2026/07/27/politics/politiki-grammateia/georgiadis-katafeygei-mexri-kai-stin-arxaia-falagga-gia-na-xtypisei-samara/",
+        "https://www.in.gr/2026/07/27/world/h-roumania-kleinei-pyriniko-antidrastira-gia-proliptikous-logous-kathos-exei-pesei-i-stathmi-tou-dounavi/",
+        "https://www.in.gr/2026/07/27/world/germania-aksiomatouxoi-zitoun-aystiroterous-nomous-gia-ton-ekstremismo-meta-tin-epithesi-sto-pride-tou-verolinou/",
+        "https://www.in.gr/2026/07/27/economy/booking-i-dikastiki-antepithesi-ton-ksenodoxon/"
       ],
-      "seen_at_utc": "2026-07-27T19:28:23.267399+00:00"
+      "seen_at_utc": "2026-07-27T20:28:13.160060+00:00"
     }
   },
-  "updated_at_utc": "2026-07-27T19:28:23.267540+00:00"
+  "updated_at_utc": "2026-07-27T20:28:13.160189+00:00"
 }
