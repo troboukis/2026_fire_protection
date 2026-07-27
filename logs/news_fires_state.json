@@ -1,20 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564368947/peiratiki-ekdosi-tis-odysseias-toy-nolan-emfanistike-sto-x/",
-      "title": "Πειρατική έκδοση της «Οδύσσειας» του Νόλαν εμφανίστηκε στο X",
-      "normalized_title": "ΠΕΙΡΑΤΙΚΗ ΕΚΔΟΣΗ ΤΗΣ «ΟΔΥΣΣΕΙΑΣ» ΤΟΥ ΝΟΛΑΝ ΕΜΦΑΝΙΣΤΗΚΕ ΣΤΟ X",
+      "url": "https://www.kathimerini.gr/world/564368986/saoydiki-aravia-anachaitiseis-drones-poy-ektoxeythikan-apo-to-irak/",
+      "title": "Σαουδική Αραβία: Αναχαιτίσεις drones που εκτοξεύθηκαν από το Ιράκ",
+      "normalized_title": "ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ: ΑΝΑΧΑΙΤΙΣΕΙΣ DRONES ΠΟΥ ΕΚΤΟΞΕΥΘΗΚΑΝ ΑΠΟ ΤΟ ΙΡΑΚ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564368947/peiratiki-ekdosi-tis-odysseias-toy-nolan-emfanistike-sto-x/",
-        "https://www.kathimerini.gr/politics/564366364/askiseis-trigonometrias/",
-        "https://www.kathimerini.gr/society/564368929/ekriki-kai-pyrkagia-se-ergostasio-sta-examilia-korinthias/",
-        "https://www.kathimerini.gr/economy/564366826/kirozini-kai-300-vomves-sto-ypedafos-toy-ellinikoy/",
-        "https://www.kathimerini.gr/society/564368926/irakleio-fotia-stin-periochi-alithini-ichise-to-112/",
-        "https://www.kathimerini.gr/society/564368923/trikala-pyrkagia-se-idiotiki-neyropsychiatriki-kliniki/",
-        "https://www.kathimerini.gr/world/564368899/notia-korea-poini-18-minon-me-anastoli-ston-proin-proedro-gioyn-gia-pseydeis-diloseis/",
-        "https://www.kathimerini.gr/world/564368917/pente-nekroi-apo-oykraniki-epithesi-me-drone-sto-rostof/"
+        "https://www.kathimerini.gr/world/564368986/saoydiki-aravia-anachaitiseis-drones-poy-ektoxeythikan-apo-to-irak/",
+        "https://www.kathimerini.gr/economy/564366886/giati-den-irthe-i-yfesi-poy-perimenan-oi-perissoteroi/",
+        "https://www.kathimerini.gr/society/564368977/kriti-okto-syllipseis-gia-zooklopes-ekviaseis-kai-apates-ano-ton-270-000-eyro/",
+        "https://www.kathimerini.gr/world/564368962/i-komision-proeidopoiei-oti-oi-megales-pyrkagies-dokimazoyn-tis-dynatotites-toy-eyropaikoy-michanismoy-politikis-prostasias/",
+        "https://www.kathimerini.gr/world/564368968/epithesi-me-machairi-sto-parisi-treis-gynaikes-traymatistikan/",
+        "https://www.kathimerini.gr/society/564368956/diki-valyraki-epimenei-stin-athootita-toy-o-katigoroymenos-psaras-ti-eipe-stin-apologia-toy/",
+        "https://www.kathimerini.gr/columns/564368884/einai-i-koinoviaki-zoi-i-lysi-stin-pandimia-monaxias/"
       ],
-      "seen_at_utc": "2026-07-27T11:28:17.788455+00:00"
+      "seen_at_utc": "2026-07-27T12:28:33.865643+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,59 +1265,51 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1856650/den-ehoume-kanei-tipota-epimenoun-stin-athootita-tous-oi-duo-psarades-sti-diki-gia-ton-thanato-tou-valuraki/?utm_source=rss",
-      "title": "«Δεν έχουμε κάνει τίποτα»: Επιμένουν στην αθωότητά τους οι δυο ψαράδες στη δίκη για τον θάνατο του Βαλυράκη",
-      "normalized_title": "«ΔΕΝ ΕΧΟΥΜΕ ΚΑΝΕΙ ΤΙΠΟΤΑ»: ΕΠΙΜΕΝΟΥΝ ΣΤΗΝ ΑΘΩΟΤΗΤΑ ΤΟΥΣ ΟΙ ΔΥΟ ΨΑΡΑΔΕΣ ΣΤΗ ΔΙΚΗ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΒΑΛΥΡΑΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1856665/megali-astunomiki-epiheirisi-stin-kriti-sullipseis-gia-zooklopes-ekviasmous-kai-apates/?utm_source=rss",
+      "title": "Μεγάλη αστυνομική επιχείρηση στην Κρήτη, συλλήψεις για ζωοκλοπές, εκβιασμούς και απάτες",
+      "normalized_title": "ΜΕΓΑΛΗ ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΗΝ ΚΡΗΤΗ, ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΖΩΟΚΛΟΠΕΣ, ΕΚΒΙΑΣΜΟΥΣ ΚΑΙ ΑΠΑΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1856650/den-ehoume-kanei-tipota-epimenoun-stin-athootita-tous-oi-duo-psarades-sti-diki-gia-ton-thanato-tou-valuraki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856649/sunergasia-voulis-me-ekpa-gia-ekpaideusi-kai-ereuna/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856636/ekrixi-kai-purkagia-se-ergostasio-stin-korintho/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856634/fotia-tora-sto-irakleio-kritis-112-gia-etoimotita-stin-periohi-tis-alithinis-sikothikan-2-elikoptera/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856631/me-arista-pistopoiithikan-ola-ta-metaptuhiaka-tou-opa-sta-prota-ellinika-panepistimia-me-pliros-pistopoiimeno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856630/falaina-edopistike-anoihta-tou-volou-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856628/epeisan-ilikiomeni-stin-arta-oti-katargeitai-to-euro-kai-tis-piran-32000-euro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1856665/megali-astunomiki-epiheirisi-stin-kriti-sullipseis-gia-zooklopes-ekviasmous-kai-apates/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856664/papastaurou-oi-polites-tha-doun-exorthologismo-stous-logariasmo-tou-nerou-eudap-euath-tha-analavoun-olistiki-diaheirisi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-27T11:28:17.788570+00:00"
+      "seen_at_utc": "2026-07-27T12:28:33.865737+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1436412/ta-yparxiaka-erotimata-enos-moyntial/",
-      "title": "Τα υπαρξιακά ερωτήματα ενός Μουντιάλ",
-      "normalized_title": "ΤΑ ΥΠΑΡΞΙΑΚΑ ΕΡΩΤΗΜΑΤΑ ΕΝΟΣ ΜΟΥΝΤΙΑΛ",
+      "url": "https://www.efsyn.gr/athlitismos/1436581/orgi-tis-original-kata-aggelopoyloy-gia-tin-parahorisi-tis-sunel-arena-ston-olympiako/",
+      "title": "Οργή της Original κατά Αγγελόπουλου για την παραχώρηση της Sunel Arena στον Ολυμπιακό",
+      "normalized_title": "ΟΡΓΗ ΤΗΣ ORIGINAL ΚΑΤΑ ΑΓΓΕΛΟΠΟΥΛΟΥ ΓΙΑ ΤΗΝ ΠΑΡΑΧΩΡΗΣΗ ΤΗΣ SUNEL ARENA ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1436412/ta-yparxiaka-erotimata-enos-moyntial/",
-        "https://www.efsyn.gr/ellada/1436543/lixi-synagermoy-stin-presveia-tis-gallias-farsa-to-tilefonima-gia-vomva/",
-        "https://www.efsyn.gr/ellada/1436481/syros-apo-mia-mahairia-ston-thoraka-i-dolofonia-tis-41hronis-diasostrias/",
-        "https://www.efsyn.gr/ellada/1436528/pyrkagia-stin-alithini-irakleioy-ihise-to-112-vinteo/",
-        "https://www.efsyn.gr/podcast/paratiritirio-synohis-ti-vrike-to-elegktiko-synedrio-gia-ton-opekepe/",
-        "https://www.efsyn.gr/ellada/1436505/anafores-gia-ekrixi-se-ergostasio-sta-examilia-korinthias/",
-        "https://www.efsyn.gr/ellada/1436496/trikala-anastatosi-logo-pyrkagias-se-idiotiki-psyhiatriki-kliniki-me-egkaymata-enas-trofimos/",
-        "https://www.efsyn.gr/oikonomia/1436405/stoa-arsakeioy-anoigei-tis-portes-tis-gia-toys-episkeptes-poia-katastimata-xekinisan-ti-leitoyrgia-toys/",
-        "https://www.efsyn.gr/kosmos/1436482/oi-eyropaioi-epilegoyn-ta-mellontika-shedia-ton-hartonomismaton-toy-eyro-ta-proteinomena-shedia/",
-        "https://www.efsyn.gr/ellada/1436382/kyvernitiko-kapsoni-me-to-metro-stoys-katoikoys-tis-kalamarias/",
-        "https://www.efsyn.gr/politiki/1436454/epithesi-pierrakaki-se-pasok-kai-elas-gia-ta-idiotika-panepistimia-i-antifasi-einai-pia-ekkofantiki/"
+        "https://www.efsyn.gr/athlitismos/1436581/orgi-tis-original-kata-aggelopoyloy-gia-tin-parahorisi-tis-sunel-arena-ston-olympiako/",
+        "https://www.efsyn.gr/ellada/1436575/i-matina-pagoni-nea-proedros-toy-panellinioy-iatrikoy-syllogoy-meta-apo-apofasi-georgiadi/",
+        "https://www.efsyn.gr/politiki/1436580/tritos-gyros-synomilion-elladas-livyis-simera-stin-athina-gia-tis-thalassies-zones/",
+        "https://www.efsyn.gr/ellada/1436567/diki-valyraki-den-ehoyme-kanei-tipota-den-katevika-sto-limani-apologithike-o-protos-psaras/",
+        "https://www.efsyn.gr/kosmos/1436562/i-voitheia-tis-e-e-se-ispania-kai-gallia-gia-tis-pyrkagies-ti-esteile-i-ellada/",
+        "https://www.efsyn.gr/politiki/1436556/pasok-gia-to-tameio-anakampsis-i-megali-hameni-eykairia-kai-gia-to-diadiktyo-kai-ti-syndesimotita/",
+        "https://www.efsyn.gr/politiki/1436547/syriza-o-diorismos-dioikisis-ston-panellinio-iatriko-syllogo-parapempei-se-kratiko-aytarhismo/",
+        "https://www.efsyn.gr/kosmos/1436554/epithesi-me-mahairi-sto-parisi-treis-traymaties-synelifthi-enas-ypoptos/",
+        "https://www.efsyn.gr/politiki/1436545/marinakis-ethniki-epityhia-i-apofasi-tis-unesco-gia-ton-olympo-syghronos-kai-asfalis-o-e65/"
       ],
-      "seen_at_utc": "2026-07-27T11:28:17.788533+00:00"
+      "seen_at_utc": "2026-07-27T12:28:33.865716+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/27/greece/farsa-to-tilefonima-gia-vomva-sti-galliki-presveia/",
-      "title": "Φάρσα το τηλεφώνημα για βόμβα στη γαλλική πρεσβεία",
-      "normalized_title": "ΦΑΡΣΑ ΤΟ ΤΗΛΕΦΩΝΗΜΑ ΓΙΑ ΒΟΜΒΑ ΣΤΗ ΓΑΛΛΙΚΗ ΠΡΕΣΒΕΙΑ",
+      "url": "https://www.in.gr/2026/07/27/health/anarrotikes-mono-me-xarti-giatrou-eidikoi-katadikazoun-tin-protasi-merts-gia-tin-paragogikotita/",
+      "title": "Αναρρωτική μόνο με χαρτί γιατρού; Ειδικοί καταδικάζουν την πολιτική «τόνωσης της παραγωγικότητας»",
+      "normalized_title": "ΑΝΑΡΡΩΤΙΚΗ ΜΟΝΟ ΜΕ ΧΑΡΤΙ ΓΙΑΤΡΟΥ; ΕΙΔΙΚΟΙ ΚΑΤΑΔΙΚΑΖΟΥΝ ΤΗΝ ΠΟΛΙΤΙΚΗ «ΤΟΝΩΣΗΣ ΤΗΣ ΠΑΡΑΓΩΓΙΚΟΤΗΤΑΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/07/27/greece/farsa-to-tilefonima-gia-vomva-sti-galliki-presveia/",
-        "https://www.in.gr/2026/07/27/greece/tin-triti-oi-apofaseis-gia-anavoli-i-anastoli-tis-dikis-gia-ta-tempi/",
-        "https://www.in.gr/2026/07/27/greece/fotia-sto-irakleio-kritis-ixise-to-112/",
-        "https://www.in.gr/2026/07/27/world/o-kapnos-apo-tis-pyrkagies-sti-gallia-kalypse-ton-atlantiko-doryforikes-eikones/",
-        "https://www.in.gr/2026/07/27/sports/football/o-manolis-saliakas-apoxairetise-ti-zankt-paouli-pics/",
-        "https://www.in.gr/2026/07/27/life/culture-live/ti-pisteyoun-oi-ellines-gia-tin-odysseia-tou-nolan-oi-new-york-times-to-psaxnoun/",
-        "https://www.in.gr/2026/07/27/politics/aftodioikisi/o-dimos-ellinikou-argyroupolis-sto-pleyro-tou-akritikou-dimou-agiou-eystratiou/",
-        "https://www.in.gr/2026/07/27/greece/pyrkagia-se-ergostasio-stin-korinthia-isxyres-astynomikes-dynameis-sto-simeio/",
-        "https://www.in.gr/2026/07/27/world/india-amesi-apeleytherosi-ton-syllifthenton-diadiloton-zita-to-komma-tou-laou-ton-katsaridon/",
-        "https://www.in.gr/2026/07/27/greece/elstat-oriaki-ayksisi-ton-genniseon-sto-proto-trimino-tou-2026/",
-        "https://www.in.gr/2026/07/27/sports/football/o-atromitos-anakoinose-tin-polisi-tou-17xronou-stoper-konstantinou-karandrika-stin-mpagern-monaxou/",
-        "https://www.in.gr/2026/07/27/world/eyropi-apo-ti-stegasi-stin-ygeia-gia-poio-thema-anisyxoun-perissotero-oi-polites-to-2026/"
+        "https://www.in.gr/2026/07/27/health/anarrotikes-mono-me-xarti-giatrou-eidikoi-katadikazoun-tin-protasi-merts-gia-tin-paragogikotita/",
+        "https://www.in.gr/2026/07/27/sports/pagkosmios-thaymasmos-gia-ton-milto-tentoglou-kai-to-866/",
+        "https://www.in.gr/2026/07/27/life/i-odysseia-dierreyse-sto-x-3-ekatommyria-provoles-xtypima-kato-apo-ti-mesi-tou-mask-ston-nolan/",
+        "https://www.in.gr/2026/07/27/politics/elas-kata-georgiadi-gia-f35-o-adonismos-kai-oi-akrodeksies-ysteries-den-exoun-thesi-stin-yperaspisi-ton-symferonton-tis-xoras/",
+        "https://www.in.gr/2026/07/27/go-fun/erotiki-zoi/nomizeis-oti-ksereis-pou-tha-se-vrei-to-pio-kayto-kalokairi-dont-bed-on-it/",
+        "https://www.in.gr/2026/07/27/sports/football/to-antio-tou-gentvai-ston-panathinaiko-pic/",
+        "https://www.in.gr/2026/07/27/world/epithesi-me-maxairi-sto-parisi-treis-gynaikes-traymatistikan-oi-dyo-sovara/",
+        "https://www.in.gr/2026/07/27/greece/syros-xtypima-sto-thoraka-dextike-i-42xroni-diasostria-tis-trypise-ton-pneymona/",
+        "https://www.in.gr/2026/07/27/greece/diki-gia-thanato-sifi-valyraki-den-vgikame-gia-psarema-ekeini-tin-imera-eipe-o-enas-ek-ton-dyo-katigoroumenon/",
+        "https://www.in.gr/2026/07/27/go-fun/tv/dyo-mayra-poukamisa-backstage-stigmes-me-tous-vasili-mpismpiki-kai-marianna-kimouli/",
+        "https://www.in.gr/2026/07/27/sports/football/i-ntortmount-ksekinaei-syzitiseis-me-tin-gkenk-gia-ton-konstantino-karetsa-pic/"
       ],
-      "seen_at_utc": "2026-07-27T11:28:17.788504+00:00"
+      "seen_at_utc": "2026-07-27T12:28:33.865690+00:00"
     }
   },
-  "updated_at_utc": "2026-07-27T11:28:17.788652+00:00"
+  "updated_at_utc": "2026-07-27T12:28:33.865816+00:00"
 }
