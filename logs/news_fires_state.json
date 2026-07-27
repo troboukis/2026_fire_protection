@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/astynomiko/564369478/zooklopes-katapatiseis-kai-340-000-eyro-paranomes-epidotiseis-pos-droyse-to-kykloma-stin-kriti/",
-      "title": "Ζωοκλοπές, καταπατήσεις και 340.000 ευρώ παράνομες επιδοτήσεις – Πώς δρούσε το κύκλωμα στην Κρήτη",
-      "normalized_title": "ΖΩΟΚΛΟΠΕΣ, ΚΑΤΑΠΑΤΗΣΕΙΣ ΚΑΙ 340.000 ΕΥΡΩ ΠΑΡΑΝΟΜΕΣ ΕΠΙΔΟΤΗΣΕΙΣ – ΠΩΣ ΔΡΟΥΣΕ ΤΟ ΚΥΚΛΩΜΑ ΣΤΗΝ ΚΡΗΤΗ",
+      "url": "https://www.kathimerini.gr/eortologio/564346363/eortologio-poioi-giortazoyn-simera-28-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 28 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 28 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/astynomiko/564369478/zooklopes-katapatiseis-kai-340-000-eyro-paranomes-epidotiseis-pos-droyse-to-kykloma-stin-kriti/",
-        "https://www.kathimerini.gr/world/564369427/toy-edinan-400-ekat-dolaria-gia-tin-etaireia-toy-ekeinos-apofasise-na-tin-charisei/",
-        "https://www.kathimerini.gr/economy/564366850/arthro-toy-giorgoy-stoympoy-stin-k-i-wall-street-apotima-tin-techniti-noimosyni-prosdetheite/",
-        "https://www.kathimerini.gr/world/564369421/poios-tha-analavei-ti-lvmh-i-aichmiri-apantisi-toy-arno/",
-        "https://www.kathimerini.gr/world/564369256/epairne-ta-chrimata-alla-den-ethave-toys-nekroys/",
-        "https://www.kathimerini.gr/society/564369460/synelifthi-ploiarchos-sto-keratsini-gia-yperarithmoys-epivates/",
-        "https://www.kathimerini.gr/world/564369442/makron-gia-pyrkagies-tha-prepei-na-fytepsoyme-ena-diaforetiko-dasos/",
-        "https://www.kathimerini.gr/culture/564364846/to-psifidoto-enos-imiteloys-aristoyrgimatos/"
+        "https://www.kathimerini.gr/eortologio/564346363/eortologio-poioi-giortazoyn-simera-28-ioylioy/",
+        "https://www.kathimerini.gr/culture/564367201/zoi-choris-erota-thanatos/",
+        "https://www.kathimerini.gr/culture/564367183/boys-don-t-cry-41-chronia-meta/",
+        "https://www.kathimerini.gr/economy/564366847/arthro-tis-domnas-michailidoy-stin-k-poiotita-zois-gia-oloys/"
       ],
-      "seen_at_utc": "2026-07-27T20:28:13.160021+00:00"
+      "seen_at_utc": "2026-07-27T21:27:58.950271+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1276,38 +1272,31 @@
       "seen_at_utc": "2026-07-27T20:28:13.160118+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1436866/emily-wilson-metafrastria-klasiki-filologos-tha-ntrepomoyn-na-eho-grapsei-ena-senario-opos-tis-odysseia-toy-nolan/",
-      "title": "Emily Wilson, μεταφράστρια – κλασική φιλόλογος: Θα ντρεπόμουν να έχω γράψει ένα σενάριο όπως της Οδύσσειας του Νόλαν",
-      "normalized_title": "EMILY WILSON, ΜΕΤΑΦΡΑΣΤΡΙΑ – ΚΛΑΣΙΚΗ ΦΙΛΟΛΟΓΟΣ: ΘΑ ΝΤΡΕΠΟΜΟΥΝ ΝΑ ΕΧΩ ΓΡΑΨΕΙ ΕΝΑ ΣΕΝΑΡΙΟ ΟΠΩΣ ΤΗΣ ΟΔΥΣΣΕΙΑΣ ΤΟΥ ΝΟΛΑΝ",
+      "url": "https://www.efsyn.gr/ellada/1436877/kriti-lagokefalos-me-mikos-pano-apo-50-ekatosta-emfanistike-se-polysyhnasti-paralia-vinteo/",
+      "title": "Κρήτη: Λαγοκέφαλος με μήκος πάνω από 50 εκατοστά εμφανίστηκε σε πολυσύχναστη παραλία [βίντεο]",
+      "normalized_title": "ΚΡΗΤΗ: ΛΑΓΟΚΕΦΑΛΟΣ ΜΕ ΜΗΚΟΣ ΠΑΝΩ ΑΠΟ 50 ΕΚΑΤΟΣΤΑ ΕΜΦΑΝΙΣΤΗΚΕ ΣΕ ΠΟΛΥΣΥΧΝΑΣΤΗ ΠΑΡΑΛΙΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1436866/emily-wilson-metafrastria-klasiki-filologos-tha-ntrepomoyn-na-eho-grapsei-ena-senario-opos-tis-odysseia-toy-nolan/",
-        "https://www.efsyn.gr/ellada/1436857/synelifthi-ploiarhos-fortigoy-ohimatagogoy-sto-keratsini-gia-metafora-yperarithmon-epivaton/",
-        "https://www.efsyn.gr/athlitismos/1436861/kleinei-mager-i-aek/",
-        "https://www.efsyn.gr/ellada/1436845/exafanistike-25hronos-sto-el-venizelos-etheathi-argotera-sti-mandra-kai-ton-anazita-i-oikogeneia-toy/",
-        "https://www.efsyn.gr/politiki/1436849/marinakis-kata-androylaki-gia-syntagmatiki-anatheorisi-to-pasok-arkestike-se-ena-amihano-paron-i-katapsifise/"
+        "https://www.efsyn.gr/ellada/1436877/kriti-lagokefalos-me-mikos-pano-apo-50-ekatosta-emfanistike-se-polysyhnasti-paralia-vinteo/",
+        "https://www.efsyn.gr/politiki/1436874/elas-gia-exodikastiko-i-nd-afise-7-hronia-toys-polites-ekthetoys-sta-funds-tora-ton-theorei-koinoniki-tomi/",
+        "https://www.efsyn.gr/ellada/1436872/agria-symploki-se-horio-tis-kritis-24hronos-ypesti-epithesi-me-mahairi/"
       ],
-      "seen_at_utc": "2026-07-27T20:28:13.160091+00:00"
+      "seen_at_utc": "2026-07-27T21:27:58.950361+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/ee-kai-big-tech-ta-prostima-kai-oi-politikes-tous-proektaseis/",
-      "title": "Πώς καθορίζονται τα πρόστιμα στις λεγόμενες Big Tech",
-      "normalized_title": "ΠΩΣ ΚΑΘΟΡΙΖΟΝΤΑΙ ΤΑ ΠΡΟΣΤΙΜΑ ΣΤΙΣ ΛΕΓΟΜΕΝΕΣ BIG TECH",
+      "url": "https://www.in.gr/2026/07/28/greece/fotia-se-ergostasio-sto-panaitolio-aitoloakarnanias/",
+      "title": "Φωτιά σε εργοστάσιο στο Παναιτώλιο Αιτωλοακαρνανίας",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΡΓΟΣΤΑΣΙΟ ΣΤΟ ΠΑΝΑΙΤΩΛΙΟ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/27/economy/oikonomikes-eidiseis/ee-kai-big-tech-ta-prostima-kai-oi-politikes-tous-proektaseis/",
-        "https://www.in.gr/2026/07/27/world/pos-sothikan-apo-tis-floges-ta-aloga-tou-mpiskaros-sti-gallia-xoris-na-yparksei-esto-traymatismos/",
-        "https://www.in.gr/2026/07/27/life/culture-live/o-gkregk-araki-gia-tin-apomakrynsi-tis-gen-z-apo-to-seks-parte-riska-vgeite-kaka-rantevou/",
-        "https://www.in.gr/2026/07/27/english-edition/zakynthos-port-set-for-first-major-works-since-1999/",
-        "https://www.in.gr/2026/07/27/greece/gigantios-lagokefalos-emfanistike-se-polysyxnasti-paralia-stin-kriti-ksepernouse-ta-50-ekatosta/",
-        "https://www.in.gr/2026/07/27/sports/football/i-aek-exei-erthei-se-proforiki-symfonia-me-ti-volfsmpourgk-gia-ton-mager/",
-        "https://www.in.gr/2026/07/27/world/italia-giatroi-xarisan-tin-orasi-se-tyfli-gynaika-ekanan-proti-fora-metamosxeysi-oxras-kilidas/",
-        "https://www.in.gr/2026/07/27/greece/synagermos-gia-eksafanisi-anilikon-sti-thessaloniki-anazitountai-dyo-adelfia-apo-xoro-filoksenias-asynodeyton-anilikon/",
-        "https://www.in.gr/2026/07/27/politics/politiki-grammateia/georgiadis-katafeygei-mexri-kai-stin-arxaia-falagga-gia-na-xtypisei-samara/",
-        "https://www.in.gr/2026/07/27/world/h-roumania-kleinei-pyriniko-antidrastira-gia-proliptikous-logous-kathos-exei-pesei-i-stathmi-tou-dounavi/",
-        "https://www.in.gr/2026/07/27/world/germania-aksiomatouxoi-zitoun-aystiroterous-nomous-gia-ton-ekstremismo-meta-tin-epithesi-sto-pride-tou-verolinou/",
-        "https://www.in.gr/2026/07/27/economy/booking-i-dikastiki-antepithesi-ton-ksenodoxon/"
+        "https://www.in.gr/2026/07/28/greece/fotia-se-ergostasio-sto-panaitolio-aitoloakarnanias/",
+        "https://www.in.gr/2026/07/28/economy/oikonomikes-eidiseis/texniti-noimosyni-pos-tha-mporouse-o-ploutos-pou-dimiourgei-na-katanemithei-se-olous-tous-amerikanous/",
+        "https://www.in.gr/2026/07/28/sports/football/ronteo-se-agona-gynaikon-sti-vrazilia-paiktria-ektos-eaytou-klotsise-sto-kefali-antipalo-tis-vid/",
+        "https://www.in.gr/2026/07/28/greece/giorti-simera-28-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/28/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-triti-28-07-2026/",
+        "https://www.in.gr/2026/07/27/world/voreia-kai-notia-korea-vrikan-neo-pedio-antagonismou-tin-anaptyksi-pyrinokiniton-ypovryxion/",
+        "https://www.in.gr/2026/07/27/greece/kriti-eksarthrothike-kykloma-zooklopon-stin-kriti-okto-syllipseis-kai-paranomes-epidotiseis-ano-ton-341-000-eyro/"
       ],
-      "seen_at_utc": "2026-07-27T20:28:13.160060+00:00"
+      "seen_at_utc": "2026-07-27T21:27:58.950320+00:00"
     }
   },
-  "updated_at_utc": "2026-07-27T20:28:13.160189+00:00"
+  "updated_at_utc": "2026-07-27T21:27:58.950455+00:00"
 }
