@@ -1,16 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564346363/eortologio-poioi-giortazoyn-simera-28-ioylioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 28 Ιουλίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 28 ΙΟΥΛΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564370171/volos-gios-epitethike-me-mpalta-ston-61chrono-patera-toy/",
+      "title": "Βόλος: Γιος επιτέθηκε με μπαλτά στον 61χρονο πατέρα του",
+      "normalized_title": "ΒΟΛΟΣ: ΓΙΟΣ ΕΠΙΤΕΘΗΚΕ ΜΕ ΜΠΑΛΤΑ ΣΤΟΝ 61ΧΡΟΝΟ ΠΑΤΕΡΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564346363/eortologio-poioi-giortazoyn-simera-28-ioylioy/",
-        "https://www.kathimerini.gr/culture/564367201/zoi-choris-erota-thanatos/",
-        "https://www.kathimerini.gr/culture/564367183/boys-don-t-cry-41-chronia-meta/",
-        "https://www.kathimerini.gr/economy/564366847/arthro-tis-domnas-michailidoy-stin-k-poiotita-zois-gia-oloys/"
+        "https://www.kathimerini.gr/society/564370171/volos-gios-epitethike-me-mpalta-ston-61chrono-patera-toy/",
+        "https://www.kathimerini.gr/society/564370153/chania-eleytheros-me-perioristikoys-oroys-o-57chronos-iatrodikastis/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564369613/kypriako-anoigei-simera-ta-chartia-toy-o-gkoyteres/",
+        "https://www.kathimerini.gr/politics/564369595/syntagmatiki-anatheorisi-choris-synainesi-i-proti-praxi/",
+        "https://www.kathimerini.gr/politics/564369616/entos-kai-ektos-kke-pasok-tsipras-kai-alla/",
+        "https://www.kathimerini.gr/politics/564369598/o-tramp-epimenei-gia-ta-f-35/",
+        "https://www.kathimerini.gr/society/astynomiko/564369625/greek-mafia-h-syllipsi-toy-entik-sto-ntoympai-kai-ta-aitimata-ekdosis/",
+        "https://www.kathimerini.gr/society/astynomiko/564369640/examilia-korinthias-i-ilektrosygkollisi-prin-apo-ti-foniki-ekrixi/"
       ],
-      "seen_at_utc": "2026-07-27T21:27:58.950271+00:00"
+      "seen_at_utc": "2026-07-28T04:28:18.392108+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1266,80 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1856893/kriti-okto-sullipseis-melon-tis-eglimatikis-organosis-pou-ekleve-zoa-kai-apospouse-paranoma-europaikes-enishuseis/?utm_source=rss",
-      "title": "Κρήτη: Οκτώ συλλήψεις μελών της εγκληματικής οργάνωσης που έκλεβε ζώα και αποσπούσε παράνομα ευρωπαϊκές ενισχύσεις",
-      "normalized_title": "ΚΡΗΤΗ: ΟΚΤΩ ΣΥΛΛΗΨΕΙΣ ΜΕΛΩΝ ΤΗΣ ΕΓΚΛΗΜΑΤΙΚΗΣ ΟΡΓΑΝΩΣΗΣ ΠΟΥ ΕΚΛΕΒΕ ΖΩΑ ΚΑΙ ΑΠΟΣΠΟΥΣΕ ΠΑΡΑΝΟΜΑ ΕΥΡΩΠΑΙΚΕΣ ΕΝΙΣΧΥΣΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1856960/stin-kupro-o-gouteres-anazita-diexodo-sto-kupriako-ligo-prin-apohorisei-apo-ton-oie/?utm_source=rss",
+      "title": "Στην Κύπρο ο Γκουτέρες, αναζητά διέξοδο στο Κυπριακό λίγο πριν αποχωρήσει από τον ΟΗΕ",
+      "normalized_title": "ΣΤΗΝ ΚΥΠΡΟ Ο ΓΚΟΥΤΕΡΕΣ, ΑΝΑΖΗΤΑ ΔΙΕΞΟΔΟ ΣΤΟ ΚΥΠΡΙΑΚΟ ΛΙΓΟ ΠΡΙΝ ΑΠΟΧΩΡΗΣΕΙ ΑΠΟ ΤΟΝ ΟΗΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1856893/kriti-okto-sullipseis-melon-tis-eglimatikis-organosis-pou-ekleve-zoa-kai-apospouse-paranoma-europaikes-enishuseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1856888/sunelifthi-53hronos-ploiarhos-sto-keratsini-gia-uperarithmous-epivates-kai-paranomies-sti-metafora-ugraeriou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1856960/stin-kupro-o-gouteres-anazita-diexodo-sto-kupriako-ligo-prin-apohorisei-apo-ton-oie/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856958/sto-mikroskopio-diarrixi-pou-eihe-ginei-sto-spiti-tou-zeugariou-sti-suro-meres-prin-to-foniko-me-ti-diasostria-ekav/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856953/1250000-monadikoi-hristes-enimerothikan-hthes-deutera-27-iouliou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856936/fotia-se-ergostasio-epexergasias-elion-stin-ethniki-odo-agriniou-adirriou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1856935/eleutheros-me-egguisi-20000-euro-o-57hronos-iatrodikastis-tou-panepistimiou-kritis-pou-katigoreitai-gia-dorodokia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-27T20:28:13.160118+00:00"
+      "seen_at_utc": "2026-07-28T04:28:18.392261+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1436877/kriti-lagokefalos-me-mikos-pano-apo-50-ekatosta-emfanistike-se-polysyhnasti-paralia-vinteo/",
-      "title": "Κρήτη: Λαγοκέφαλος με μήκος πάνω από 50 εκατοστά εμφανίστηκε σε πολυσύχναστη παραλία [βίντεο]",
-      "normalized_title": "ΚΡΗΤΗ: ΛΑΓΟΚΕΦΑΛΟΣ ΜΕ ΜΗΚΟΣ ΠΑΝΩ ΑΠΟ 50 ΕΚΑΤΟΣΤΑ ΕΜΦΑΝΙΣΤΗΚΕ ΣΕ ΠΟΛΥΣΥΧΝΑΣΤΗ ΠΑΡΑΛΙΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1436911/thessaloniki-gynaika-eisevale-me-ropalo-toy-mpeizmpol-se-katastima-psilikon-eihe-diafonisei-me-tin-ergazomeni/",
+      "title": "Θεσσαλονίκη: Γυναίκα εισέβαλε με ρόπαλο του μπέιζμπολ σε κατάστημα ψιλικών – Είχε διαφωνήσει με την εργαζόμενη",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΓΥΝΑΙΚΑ ΕΙΣΕΒΑΛΕ ΜΕ ΡΟΠΑΛΟ ΤΟΥ ΜΠΕΙΖΜΠΟΛ ΣΕ ΚΑΤΑΣΤΗΜΑ ΨΙΛΙΚΩΝ – ΕΙΧΕ ΔΙΑΦΩΝΗΣΕΙ ΜΕ ΤΗΝ ΕΡΓΑΖΟΜΕΝΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1436877/kriti-lagokefalos-me-mikos-pano-apo-50-ekatosta-emfanistike-se-polysyhnasti-paralia-vinteo/",
-        "https://www.efsyn.gr/politiki/1436874/elas-gia-exodikastiko-i-nd-afise-7-hronia-toys-polites-ekthetoys-sta-funds-tora-ton-theorei-koinoniki-tomi/",
-        "https://www.efsyn.gr/ellada/1436872/agria-symploki-se-horio-tis-kritis-24hronos-ypesti-epithesi-me-mahairi/"
+        "https://www.efsyn.gr/ellada/1436911/thessaloniki-gynaika-eisevale-me-ropalo-toy-mpeizmpol-se-katastima-psilikon-eihe-diafonisei-me-tin-ergazomeni/",
+        "https://www.efsyn.gr/politiki/1436908/simasia-leei-ehei-to-taxidi/",
+        "https://www.efsyn.gr/ellada/1436903/mikri-violanta-stin-korintho-me-enan-nekro-den-tirithikan-ta-metra-erotimata-gia-ti-diadikasia-adeiodotiseon/",
+        "https://www.efsyn.gr/oikonomia/1436899/opeka-xekina-simera-i-pliromi-toy-epidomatos-se-triteknoys-kai-polyteknoys/",
+        "https://www.efsyn.gr/politiki/1436900/apodynamomeni-i-kyvernisi-me-oriaki-pleiopsifia-egkrithikan-oi-protaseis-tis-nd-gia-ti-syntagmatiki-anatheorisi/",
+        "https://www.efsyn.gr/protoselida/diavoyleysi-erimin-ton-armodion/",
+        "https://www.efsyn.gr/kosmos/1436895/tholo-topio-sti-mesi-anatoli-o-tramp-mila-gia-filikes-synomilies-diapseydei-i-teherani/",
+        "https://www.efsyn.gr/nisides/1436559/to-neo-kathestos-tis-psifiakis-synthikis/",
+        "https://www.efsyn.gr/nisides/1436546/nikita-milivogievits-stin-ef-syn-kaneis-den-gennietai-teras/",
+        "https://www.efsyn.gr/ellada/1436889/kampanaki-gia-tis-pyrkagies-simera-ypsilos-kindynos-se-attiki-eyvoia-kriti/",
+        "https://www.efsyn.gr/ellada/1436884/kairos-epistrefei-i-afrikaniki-skoni-anevainei-i-thermokrasia-stoys-39-vathmoys-simera-o-ydrargyros/",
+        "https://www.efsyn.gr/ellada/1436880/eortologio-poioi-giortazoyn-simera-28-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-27T21:27:58.950361+00:00"
+      "seen_at_utc": "2026-07-28T04:28:18.392225+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/28/plus/medianews/sta-nea-tis-tritis-kyma-metavivaseon/",
-      "title": "Στα «ΝΕΑ» της Τρίτης: Κύμα μεταβιβάσεων",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΤΡΙΤΗΣ: ΚΥΜΑ ΜΕΤΑΒΙΒΑΣΕΩΝ",
+      "url": "https://www.in.gr/2026/07/28/economy/ektakto-epidoma-paidiou-deyteros-kyklos-pliromon-ton-aygousto/",
+      "title": "Έκτακτο επίδομα παιδιού: Δεύτερος κύκλος πληρωμών τον Αύγουστο",
+      "normalized_title": "ΕΚΤΑΚΤΟ ΕΠΙΔΟΜΑ ΠΑΙΔΙΟΥ: ΔΕΥΤΕΡΟΣ ΚΥΚΛΟΣ ΠΛΗΡΩΜΩΝ ΤΟΝ ΑΥΓΟΥΣΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/28/plus/medianews/sta-nea-tis-tritis-kyma-metavivaseon/",
-        "https://www.in.gr/2026/07/28/economy/diethnis-oikonomia/i-gallia-periorizei-tis-tilefonikes-poliseis-etaireion/"
+        "https://www.in.gr/2026/07/28/economy/ektakto-epidoma-paidiou-deyteros-kyklos-pliromon-ton-aygousto/",
+        "https://www.in.gr/2026/07/28/world/rosia-oukraniki-epithesi-me-drone-se-polykatoikia-anafores-gia-pithana-thymata/",
+        "https://www.in.gr/2026/07/28/life/geysi/syntagi-makaronia-me-kokkinista-keftedakia/",
+        "https://www.in.gr/2026/07/28/world/i-spacex-exase-12-tris-kefalaiopoiisi-se-ena-mina-gero-ksepoulima-stis-metoxes-texnitis-noimosynis/",
+        "https://www.in.gr/2026/07/28/health/ipatitida-pliris-elegxos-i-kai-therapeia-se-mia-astheneia-pou-den-kanei-diakriseis/",
+        "https://www.in.gr/2026/07/28/world/pos-ta-dasi-tis-gallias-kai-tis-ispanias-metatrapikan-se-prosanamma-oi-anemoi-kai-i-teleia-kataigida/",
+        "https://www.in.gr/2026/07/28/world/to-gyalino-mpol-pou-eksigei-giati-ta-drones-tis-texeranis-epivionoun-ton-vomvardismon/",
+        "https://www.in.gr/2026/07/28/greece/ypsilos-kindynos-ekdilosis-pyrkagias-se-13-perioxes/",
+        "https://www.in.gr/2026/07/28/greece/mafia-tis-kritis-eleytheros-meta-tin-apologia-tou-o-iatrodikastis-katigoreitai-gia-pathitiki-dorodokia/",
+        "https://www.in.gr/2026/07/28/plus/vita/o-xoros-einai-i-pio-xaroumeni-askisi/",
+        "https://www.in.gr/2026/07/28/greece/kairos-eos-tous-38-vathmous-i-thermokrasia-tin-triti-pou-tha-vreksei/",
+        "https://www.in.gr/2026/07/28/greece/sidirodromos-alloi-eksi-mines-xoris-systima-asfaleias/",
+        "https://www.in.gr/2026/07/28/life/culture-live/xongk-kongk-to-slogkan-eimai-ypallilos-vivliopoleiou-egine-viral/",
+        "https://www.in.gr/2026/07/28/plus/vita/i-epistimi-kserei-to-mystiko-tis-pio-eytyxismenis-meras/",
+        "https://www.in.gr/2026/07/28/greece/i-xeirovomvida-sto-mikroskopio-tou-ellinikou-fbi/",
+        "https://www.in.gr/2026/07/28/world/i-prosklisi-gkouteres-gia-to-teleytaio-tangko-sto-kypriako-tha-kataferei-o-gg-tou-oie-na-spasei-to-adieksodo/",
+        "https://www.in.gr/2026/07/28/go-fun/social-media-pos-o-algorithmos-mas-kanei-pio-egokentrikous/",
+        "https://www.in.gr/2026/07/28/economy/syntaksiouxoi-douleia-meta-ti-syntaksi-me-mponous-eos-120-eyro/",
+        "https://www.in.gr/2026/07/28/economy/diethnis-oikonomia/oi-kalyteres-xores-gia-na-zeis-kai-na-ergazesai-os-omogenis/",
+        "https://www.in.gr/2026/07/28/world/i-dikaiosyni-stin-eyropi-einai-genous-thilykou-to-paradeigma-tis-elladas/",
+        "https://www.in.gr/2026/07/28/life/woman/ti-frenarei-tin-epaggelmatiki-aneliksi-ton-gynaikon-eksakolouthoun-na-plironoun-to-kostos/",
+        "https://www.in.gr/2026/07/28/life/culture-live/tom-xolant-merikes-apo-tis-tainies-mou-einai-xalia-kai-den-prepei-na-tis-deite/",
+        "https://www.in.gr/2026/07/28/world/to-dilimma-tou-ekatommyriou-apokalyptei-poio-fylo-riskarei-perissotero/",
+        "https://www.in.gr/2026/07/28/politics/politiki-grammateia/adonis-georgiadis-kai-kyvernisi-nd-epi-epta-xronia-sygkalyptan-to-prostimo-salma-kai-tora-zitane-kai-ta-resta/",
+        "https://www.in.gr/2026/07/28/world/livanos-israil-oi-ipa-epivevaionoun-tis-nees-synomilies-sti-romi/",
+        "https://www.in.gr/2026/07/28/world/iran-molis-o-enas-stous-treis-amerikanous-yper-tou-polemou-ton-ipa/",
+        "https://www.in.gr/2026/07/28/world/iran-o-tramp-milaei-gia-pithanotita-symfonias-eno-i-texerani-den-dieksagei-kamia-diapragmateysi/",
+        "https://www.in.gr/2026/07/28/world/oukrania-7-nekroi-kai-pano-apo-20-traymaties-se-rosika-pligmata/",
+        "https://www.in.gr/2026/07/28/world/ti-einai-ta-synnefa-fotias-pou-ekanan-tin-emfanisi-tous-stin-gallia-gia-proti-fora/",
+        "https://www.in.gr/2026/07/28/world/yemeni-pligmata-kata-agogon-petrelaiou-tis-saoudikis-aravias-anakoinosan-oi-xouthoi/",
+        "https://www.in.gr/2026/07/28/world/oukrania-oi-rosikes-epitheseis-apeiloun-amaxous-emporio-kai-episitistiki-asfaleia-lene-aksiomatouxoi-tou-oie/",
+        "https://www.in.gr/2026/07/28/world/to-israil-pithanon-dieprakse-egklimata-polemou-ston-livano-dilonei-aksiomatouxos-tou-oie/",
+        "https://www.in.gr/2026/07/28/world/soudan-den-tha-sygkratei-pleon-tous-parastratiotikous-pou-katigorountai-gia-genoktonia-leei-o-epikefalis-tou/",
+        "https://www.in.gr/2026/07/28/world/germania-esokommatiki-dysforia-gia-tous-xeirismous-tou-kagkelariou-merts/"
       ],
-      "seen_at_utc": "2026-07-27T22:28:09.987174+00:00"
+      "seen_at_utc": "2026-07-28T04:28:18.392179+00:00"
     }
   },
-  "updated_at_utc": "2026-07-27T22:28:09.987275+00:00"
+  "updated_at_utc": "2026-07-28T04:28:18.392356+00:00"
 }
