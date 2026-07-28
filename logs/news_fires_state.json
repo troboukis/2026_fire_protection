@@ -1,23 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564371527/syros-dichognomia-gia-ton-41chrono-se-kat-oikon-periorismo-mechri-tin-apofasi-toy-symvoylioy/",
-      "title": "Σύρος: Διχογνωμία για τον 41χρονο – Σε κατ’ οίκον περιορισμό μέχρι την απόφαση του Συμβουλίου",
-      "normalized_title": "ΣΥΡΟΣ: ΔΙΧΟΓΝΩΜΙΑ ΓΙΑ ΤΟΝ 41ΧΡΟΝΟ – ΣΕ ΚΑΤ’ ΟΙΚΟΝ ΠΕΡΙΟΡΙΣΜΟ ΜΕΧΡΙ ΤΗΝ ΑΠΟΦΑΣΗ ΤΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+      "url": "https://www.kathimerini.gr/eortologio/564346372/eortologio-poioi-giortazoyn-simera-29-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 29 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 29 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564371527/syros-dichognomia-gia-ton-41chrono-se-kat-oikon-periorismo-mechri-tin-apofasi-toy-symvoylioy/",
-        "https://www.kathimerini.gr/economy/local/564369973/ayxithikan-kata-7-6-dis-oi-katatheseis-ton-epicheiriseon-ton-ioynio/",
-        "https://www.kathimerini.gr/society/564371521/seismos-4-5-richter-sta-ioannina/",
-        "https://www.kathimerini.gr/istoria/564369751/90-chronia-prin-28-7-1936/",
-        "https://www.kathimerini.gr/culture/564369781/i-peiraios-260-apokta-ti-diki-tis-theatriki-skini/",
-        "https://www.kathimerini.gr/world/564371482/seismos-stin-iaponia-agonia-gia-toys-egklovismenoys-zimies-se-ktiria-kai-ypodomes/",
-        "https://www.kathimerini.gr/economy/business/564370018/i-trastor-provlepei-kerdi-18-3-ekat-eyro/",
-        "https://www.kathimerini.gr/society/564371470/synelifthi-21chronos-sto-eleytherios-venizelos-me-18-7-kila-kannavis/",
-        "https://www.kathimerini.gr/economy/local/564369976/iarroi-kaysimon-sta-kratika-esoda/",
-        "https://www.kathimerini.gr/visual/infographics/564369970/enischythike-i-katanalotiki-dapani-alla-ypochorisan-oi-apotamieyseis-to-a-trimino/",
-        "https://www.kathimerini.gr/culture/cinema/564369802/nomoschedio-me-asteriskoys-gia-ta-750-ekat-toy-ekkomed/"
+        "https://www.kathimerini.gr/eortologio/564346372/eortologio-poioi-giortazoyn-simera-29-ioylioy/",
+        "https://www.kathimerini.gr/economy/564366793/forodoxies-gnorizete-oti-460/",
+        "https://www.kathimerini.gr/economy/564366844/arthro-toy-panagioti-rozaki-stin-k-i-apotimisi-ton-akiniton/",
+        "https://www.kathimerini.gr/economy/564366838/arthro-toy-kosta-mitropoyloy-stin-k-oi-prokliseis-gia-na-sygkratithei-to-kostos-ilektrismoy/"
       ],
-      "seen_at_utc": "2026-07-28T20:28:08.825943+00:00"
+      "seen_at_utc": "2026-07-28T21:28:07.708683+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1281,36 +1274,32 @@
       "seen_at_utc": "2026-07-28T20:28:08.826088+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1437653/notia-kriti-167-metanastes-apo-synolika-4-varkes-diasothikan-apo-to-limeniko/",
-      "title": "Νότια Κρήτη: 167 μετανάστες από συνολικά 4 βάρκες διασώθηκαν από το Λιμενικό",
-      "normalized_title": "ΝΟΤΙΑ ΚΡΗΤΗ: 167 ΜΕΤΑΝΑΣΤΕΣ ΑΠΟ ΣΥΝΟΛΙΚΑ 4 ΒΑΡΚΕΣ ΔΙΑΣΩΘΗΚΑΝ ΑΠΟ ΤΟ ΛΙΜΕΝΙΚΟ",
+      "url": "https://www.efsyn.gr/politiki/1437665/psifistike-mono-me-tis-psifoys-tis-nd-o-nomos-poy-idryei-ae-gia-ti-diaheirisi-tis-politistikis-klironomias/",
+      "title": "Ψηφίστηκε μόνο με τις ψήφους της ΝΔ ο νόμος που ιδρύει ΑΕ για τη διαχείριση της πολιτιστικής κληρονομιάς",
+      "normalized_title": "ΨΗΦΙΣΤΗΚΕ ΜΟΝΟ ΜΕ ΤΙΣ ΨΗΦΟΥΣ ΤΗΣ ΝΔ Ο ΝΟΜΟΣ ΠΟΥ ΙΔΡΥΕΙ ΑΕ ΓΙΑ ΤΗ ΔΙΑΧΕΙΡΙΣΗ ΤΗΣ ΠΟΛΙΤΙΣΤΙΚΗΣ ΚΛΗΡΟΝΟΜΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1437653/notia-kriti-167-metanastes-apo-synolika-4-varkes-diasothikan-apo-to-limeniko/",
-        "https://www.efsyn.gr/ellada/1437648/hellenic-train-pyrkagia-sto-menidi-diekopse-prosorina-ta-dromologia-toy-proastiakoy/",
-        "https://www.efsyn.gr/nisides/1437647/pente-ellinika-nisia-stin-koryfi-tis-listas-gia-pezoporia-kai-katadyseis-poio-xehorizei/",
-        "https://www.efsyn.gr/kosmos/1437624/tromos-stin-iaponia-meta-ton-seismo-anafores-se-polloys-nekroys-agnooymenoi-terasties-zimies/",
-        "https://www.efsyn.gr/tehnes/1437627/karfi-apo-ton-themi-karamoyratidi-meta-tin-apagoreysi-ston-manoli-mitsia/"
+        "https://www.efsyn.gr/politiki/1437665/psifistike-mono-me-tis-psifoys-tis-nd-o-nomos-poy-idryei-ae-gia-ti-diaheirisi-tis-politistikis-klironomias/",
+        "https://www.efsyn.gr/ellada/1437656/dyskoli-nyhta-stin-paro-adiakopi-mahi-me-tis-floges-me-ton-fovo-ton-dynaton-anemon-eikones-vinteo/",
+        "https://www.efsyn.gr/ellada/1437657/dolofonia-diasostrias-sti-syro-se-kat-oikon-periorismo-o-41hronos/"
       ],
-      "seen_at_utc": "2026-07-28T20:28:08.826050+00:00"
+      "seen_at_utc": "2026-07-28T21:28:07.708797+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/28/greece/taytopoiithikan-15-atoma-pou-emplekontai-stin-ypothesi-revenge-porn-me-thyma-tin-xristina-orfanidou/",
-      "title": "Ταυτοποιήθηκαν 15 άτομα που εμπλέκονται στην υπόθεση revenge porn με θύμα την Χριστίνα Ορφανίδου",
-      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΑΝ 15 ΑΤΟΜΑ ΠΟΥ ΕΜΠΛΕΚΟΝΤΑΙ ΣΤΗΝ ΥΠΟΘΕΣΗ REVENGE PORN ΜΕ ΘΥΜΑ ΤΗΝ ΧΡΙΣΤΙΝΑ ΟΡΦΑΝΙΔΟΥ",
+      "url": "https://www.in.gr/2026/07/29/world/sokaristiko-atyxima-se-louna-park-stis-ipa-espase-kalodio-paixnidiou-dyo-traymaties/",
+      "title": "Σοκαριστικό ατύχημα σε λούνα παρκ στις ΗΠΑ: Έσπασε καλώδιο παιχνιδιού, δύο τραυματίες",
+      "normalized_title": "ΣΟΚΑΡΙΣΤΙΚΟ ΑΤΥΧΗΜΑ ΣΕ ΛΟΥΝΑ ΠΑΡΚ ΣΤΙΣ ΗΠΑ: ΕΣΠΑΣΕ ΚΑΛΩΔΙΟ ΠΑΙΧΝΙΔΙΟΥ, ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/28/greece/taytopoiithikan-15-atoma-pou-emplekontai-stin-ypothesi-revenge-porn-me-thyma-tin-xristina-orfanidou/",
-        "https://www.in.gr/2026/07/28/greece/seismos-45-rixter-sta-ioannina/",
-        "https://www.in.gr/2026/07/28/in-science/technology/apple-lansarei-montelo-leasing-gia-fthina-paketa-iphone-mac-kai-ipad/",
-        "https://www.in.gr/2026/07/28/sports/othersports/world-ranking-stin-koryfi-tou-pagkosmiou-mikous-kai-pali-o-tentoglou-meta-tin-ptisi-sta-866m/",
-        "https://www.in.gr/2026/07/28/world/epikoinonia-ton-ypourgon-eksoterikon-iran-oukranias-symfonoun-se-apoklimakosi-meta-ti-vythisi-iranikou-ploiou/",
-        "https://www.in.gr/2026/07/28/world/i-eyropi-kaigetai-stis-floges-gallia-kai-ispania-se-kindyno-ellada-italia-poso-sovari-tha-ginei-i-katastasi/",
-        "https://www.in.gr/2026/07/28/world/ipa-pateras-skotose-tin-gynaika-tou-ta-eksi-tous-paidia-kai-evale-fotia-sto-spiti-prin-aytoktonisei/",
-        "https://www.in.gr/2026/07/28/sports/football/o-panathinaikos-karadokei-gia-ton-fransisko/",
-        "https://www.in.gr/2026/07/28/economy/oikonomikes-eidiseis/e-efka-paratasi-eos-10-septemvriou-gia-tis-analytikes-periodikes-diloseis/",
-        "https://www.in.gr/2026/07/28/stories/zizou-le-roi-i-epistrofi-tou-zintan-den-aresei-sti-lepen-i-massalia-o-mythos-kai-i-kontra-sto-misos/"
+        "https://www.in.gr/2026/07/29/world/sokaristiko-atyxima-se-louna-park-stis-ipa-espase-kalodio-paixnidiou-dyo-traymaties/",
+        "https://www.in.gr/2026/07/29/world/kypros-sygkratimeni-aisiodoksia-xristoudoulidi-gia-anakoinoseis-apo-gkouteres/",
+        "https://www.in.gr/2026/07/29/sports/football/i-ntinamo-zagkremp-apekleise-tin-toun-kai-ligostepse-tis-elpides-tis-aek-gia-tous-isxyrous/",
+        "https://www.in.gr/2026/07/29/greece/giorti-simera-29-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/29/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-tetarti-29-07-2026/",
+        "https://www.in.gr/2026/07/28/sports/football/prokrithike-sta-penalti-i-tsska-1948-kai-perimenei-ton-panathinaiko/",
+        "https://www.in.gr/2026/07/28/greece/syros-se-kat-oikon-periorismo-o-41xronos-gia-ton-thanato-tis-diasostrias-eleytheri-me-orous-i-30xroni/",
+        "https://www.in.gr/2026/07/28/life/culture-live/mporei-o-raian-gkoslingk-na-sosei-ton-pio-katarameno-antiiroa-tis-marvel/"
       ],
-      "seen_at_utc": "2026-07-28T20:28:08.826013+00:00"
+      "seen_at_utc": "2026-07-28T21:28:07.708740+00:00"
     }
   },
-  "updated_at_utc": "2026-07-28T20:28:08.826189+00:00"
+  "updated_at_utc": "2026-07-28T21:28:07.708876+00:00"
 }
