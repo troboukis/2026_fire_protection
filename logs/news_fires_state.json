@@ -1,22 +1,28 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564371221/stasi-ergasias-sto-ploio-ariadni-i-anakoinosi-tis-attica-group/",
-      "title": "«Παράνομη η στάση εργασίας στο πλοίο Αριάδνη» – Η ανακοίνωση της Attica Group",
-      "normalized_title": "«ΠΑΡΑΝΟΜΗ Η ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ ΣΤΟ ΠΛΟΙΟ ΑΡΙΑΔΝΗ» – Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ATTICA GROUP",
+      "url": "https://www.kathimerini.gr/society/reportaz/564355591/apozimioseis-ekatommyrion-gia-leykes-metafores/",
+      "title": "Αποζημιώσεις εκατομμυρίων για «λευκές» μεταφορές",
+      "normalized_title": "ΑΠΟΖΗΜΙΩΣΕΙΣ ΕΚΑΤΟΜΜΥΡΙΩΝ ΓΙΑ «ΛΕΥΚΕΣ» ΜΕΤΑΦΟΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564371221/stasi-ergasias-sto-ploio-ariadni-i-anakoinosi-tis-attica-group/",
-        "https://www.kathimerini.gr/economy/business/564370015/diatirisi-ypsilon-kerdon-gia-trapezes-kai-to-v-examino/",
-        "https://www.kathimerini.gr/culture/564364762/to-sinema-pethane-zito-to-yvridiko-sinema/",
-        "https://www.kathimerini.gr/economy/diktis/564370102/allages-sto-timoni-tis-athinaikis-zythopoiias/",
-        "https://www.kathimerini.gr/culture/tv/564371155/mpampa-s-agapo-xekinisan-ta-gyrismata-toy-deyteroy-kykloy/",
-        "https://www.kathimerini.gr/politics/564366373/alexis-tsipras-mia-aristera-mia-dexia/",
-        "https://www.kathimerini.gr/athletics/564371095/i-fifa-etoimazetai-na-poylisei-kommati-toy-moyntial/",
-        "https://www.kathimerini.gr/economy/564371110/i-apple-egine-i-deyteri-etaireia-poy-espase-to-orio-ton-5-tris/",
-        "https://www.kathimerini.gr/world/564366472/arthro-christoy-rozaki-stin-k-to-mare-liberum-kai-ta-stena-toy-ormoyz/",
-        "https://www.kathimerini.gr/world/564366502/oykrania-polemos-entos-ton-teichon/"
+        "https://www.kathimerini.gr/society/reportaz/564355591/apozimioseis-ekatommyrion-gia-leykes-metafores/",
+        "https://www.kathimerini.gr/society/564369634/mia-nosos-poy-mas-afora-oloys/",
+        "https://www.kathimerini.gr/politics/564371311/voyli-nea-kontra-me-epikentro-tis-anafores-kyriazidi-kata-konstantopoyloy/",
+        "https://www.kathimerini.gr/society/564371314/paros-machi-me-tis-anazopyroseis-i-fotia-xekinise-apo-ton-chyta/",
+        "https://www.kathimerini.gr/economy/business/564370009/nea-seira-ependytikon-proionton-apo-revolut-stin-ellada/",
+        "https://www.kathimerini.gr/economy/international/564370057/h-cxmt-egine-i-megalyteri-eisigmeni-etaireia-tis-kinas/",
+        "https://www.kathimerini.gr/columns/564368584/kryfa-se-ena-grafeio/",
+        "https://www.kathimerini.gr/world/564371263/seismos-stin-iaponia-i-stigmi-tis-ekrixis-sto-emporiko-kentro-vinteo/",
+        "https://www.kathimerini.gr/economy/international/564370099/allages-stin-agora-lng-logo-toy-polemoy-sto-iran/",
+        "https://www.kathimerini.gr/culture/tv/564371125/fonoi-sto-kampanario-2-to-mystirio-epistrefei-ston-alpha/",
+        "https://www.kathimerini.gr/world/564371260/o-merts-apaitei-perikopes-ekatontadon-dis-ston-proypologismo-tis-e-e/",
+        "https://www.kathimerini.gr/economy/business/564370012/enischysi-esodon-to-proto-trimino-gia-vodafone-elladas/",
+        "https://www.kathimerini.gr/world/564371245/seismos-stin-iaponia-oi-traymaties-ftanoyn-synechos-me-egkaymata-kai-katagmata/",
+        "https://www.kathimerini.gr/politics/amyna/564369610/i-epicheirisiaki-axia-ton-patriot-xana-sto-epikentro/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564369556/kato-apo-ta-asteria-odysseia-kyriaki-vrady-ston-therino-kinimatografo-thiseion/",
+        "https://www.kathimerini.gr/society/564369580/stoa-arsakeioy-to-ilektrosok-poy-perimenei-i-athina/"
       ],
-      "seen_at_utc": "2026-07-28T16:28:26.749990+00:00"
+      "seen_at_utc": "2026-07-28T17:28:14.333815+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,48 +1274,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1857349/fotia-tora-sta-favriana-irakleiou-epiheiroun-2-enaeria/?utm_source=rss",
-      "title": "Φωτιά τώρα στα Φαβριανά Ηρακλείου, επιχειρούν 2 εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΑ ΦΑΒΡΙΑΝΑ ΗΡΑΚΛΕΙΟΥ, ΕΠΙΧΕΙΡΟΥΝ 2 ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1857393/egefalika-nekro-4hrono-paidi-stin-kupro-pou-parousiase-subtomata-miniggitidas-iatriko-lathos-/?utm_source=rss",
+      "title": "Εγκεφαλικά νεκρό 4χρονο παιδί στην Κύπρο που παρουσίασε συμπτώματα μηνιγγίτιδας, ιατρικό λάθος καταγγέλλει η οικογένειά του",
+      "normalized_title": "ΕΓΚΕΦΑΛΙΚΑ ΝΕΚΡΟ 4ΧΡΟΝΟ ΠΑΙΔΙ ΣΤΗΝ ΚΥΠΡΟ ΠΟΥ ΠΑΡΟΥΣΙΑΣΕ ΣΥΜΠΤΩΜΑΤΑ ΜΗΝΙΓΓΙΤΙΔΑΣ, ΙΑΤΡΙΚΟ ΛΑΘΟΣ ΚΑΤΑΓΓΕΛΛΕΙ Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1857349/fotia-tora-sta-favriana-irakleiou-epiheiroun-2-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857345/tautopoiithikan-akomi-15-atoma-pou-eblekodai-stin-upothesi-revenge-porn-tis-hristinas-orfanidou-leei-i-dikigoros-tis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857344/kai-auti-tin-kuriaki-me-to-car-ola-sta-heria-sas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1857393/egefalika-nekro-4hrono-paidi-stin-kupro-pou-parousiase-subtomata-miniggitidas-iatriko-lathos-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-28T16:28:26.750163+00:00"
+      "seen_at_utc": "2026-07-28T17:28:14.333965+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1437520/i-fifa-vazei-idiotes-sti-diaheirisi-toy-moyntial-sto-kolpo-kai-i-oikogeneia-koysner-lavros-i-uefa/",
-      "title": "Η FIFA βάζει ιδιώτες στη διαχείριση του Μουντιάλ: Στο κόλπο και η οικογένεια Κούσνερ – Λάβρος η UEFA",
-      "normalized_title": "Η FIFA ΒΑΖΕΙ ΙΔΙΩΤΕΣ ΣΤΗ ΔΙΑΧΕΙΡΙΣΗ ΤΟΥ ΜΟΥΝΤΙΑΛ: ΣΤΟ ΚΟΛΠΟ ΚΑΙ Η ΟΙΚΟΓΕΝΕΙΑ ΚΟΥΣΝΕΡ – ΛΑΒΡΟΣ Η UEFA",
+      "url": "https://www.efsyn.gr/ellada/1437560/symfonia-penen-attica-group-elixe-i-apergiaki-kinitopoiisi-sto-ploio-ariadni/",
+      "title": "Συμφωνία ΠΕΝΕΝ – Attica Group: Έληξε η απεργιακή κινητοποίηση στο πλοίο «Αριάδνη»",
+      "normalized_title": "ΣΥΜΦΩΝΙΑ ΠΕΝΕΝ – ATTICA GROUP: ΕΛΗΞΕ Η ΑΠΕΡΓΙΑΚΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΣΤΟ ΠΛΟΙΟ «ΑΡΙΑΔΝΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1437520/i-fifa-vazei-idiotes-sti-diaheirisi-toy-moyntial-sto-kolpo-kai-i-oikogeneia-koysner-lavros-i-uefa/",
-        "https://www.efsyn.gr/athlitismos/1437519/anypomono-na-gnoriso-proponiti-kai-sympaiktes-stin-ellada-o-ortega-oi-protes-diloseis-toy-sto-aerodromio-vinteo/",
-        "https://www.efsyn.gr/ellada/1437511/fotia-sto-irakleio-kritis-sikothikan-enaeria-mesa/",
-        "https://www.efsyn.gr/tehnes/1437503/o-manolis-mitsias-gia-tin-apagoreysi-ermineias-tragoydion-toy-hatzidaki-itan-lypiro-o-laos-edose-ti-lysi/",
-        "https://www.efsyn.gr/ellada/1437501/apates-ypsoys-330-hil-se-ilikiomenoys-o-enas-toys-apasholoyse-sto-tilefono-o-allos-empaine-sto-spiti-kai-afairoyse-ti-leia/",
-        "https://www.efsyn.gr/ellada/1437175/idiotika-sholeia-ta-kalokairia-ton-apolyseon-ekpaideytikon/",
-        "https://www.efsyn.gr/politiki/1437495/i-apantisi-konstantopoyloy-se-kyriazidi-epithesi-akraia-kai-kanivaliki-to-eyharisto-sti-mendoni/",
-        "https://www.efsyn.gr/tehnes/1437491/to-agorafoviko-festival-epistrefei-deite-to-plires-line-up/"
+        "https://www.efsyn.gr/ellada/1437560/symfonia-penen-attica-group-elixe-i-apergiaki-kinitopoiisi-sto-ploio-ariadni/",
+        "https://www.efsyn.gr/kosmos/1437557/vretanos-voyleytis-edine-synenteyxi-pano-se-varka-kai-to-galliko-polemiko-naytiko-ekane-askisi-kataggellei-ekfovismo/",
+        "https://www.efsyn.gr/kosmos/1437553/o-zelenski-ston-tramp-i-syzitisi-mas-itan-kali-syzitisame-gia-patriot-kai-diplomatia-anefere/",
+        "https://www.efsyn.gr/kosmos/1437540/iaponia-gia-polloys-nekroys-mila-tileoptikos-stathmos-tromaktiki-i-stigmi-tis-donisis-mesa-sto-emporiko-kentro-vinteo/",
+        "https://www.efsyn.gr/politiki/1437541/fotia-stin-olomeleia-apo-ta-hydaia-sholia-katadiki-antiparatheseis-kai-antegkliseis/",
+        "https://www.efsyn.gr/politiki/1437537/arsi-asylias-avramopoyloy-tin-pempti-tha-exetastei-stin-epitropi-deontologias/",
+        "https://www.efsyn.gr/kosmos/1437527/voylgaria-ekkenonetai-kroyazieroploio-ston-doynavi-exokeile-logo-tis-hamilis-stathmis-toy-neroy/",
+        "https://www.efsyn.gr/ellada/1437526/protasi-toy-dimoy-athinas-gia-dorean-timis-eneken-tafi-tis-paolas-revenioti/"
       ],
-      "seen_at_utc": "2026-07-28T16:28:26.750115+00:00"
+      "seen_at_utc": "2026-07-28T17:28:14.333918+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/28/world/zelenski-kai-tramp-syzitisan-tis-adeies-gia-kataskeyi-patriot/",
-      "title": "Ζελένσκι και Τραμπ συζήτησαν τις άδειες για κατασκευή Patriot",
-      "normalized_title": "ΖΕΛΕΝΣΚΙ ΚΑΙ ΤΡΑΜΠ ΣΥΖΗΤΗΣΑΝ ΤΙΣ ΑΔΕΙΕΣ ΓΙΑ ΚΑΤΑΣΚΕΥΗ PATRIOT",
+      "url": "https://www.in.gr/2026/07/28/greece/syros-ta-dramatika-deyterolepta-prin-apo-ti-dolofonia-tis-42xronis-diasostrias-ti-ereynoun-oi-arxes/",
+      "title": "Σύρος: Tα δραματικά δευτερόλεπτα πριν από τη δολοφονία της 42χρονης διασώστριας – Τι ερευνούν οι Αρχές",
+      "normalized_title": "ΣΥΡΟΣ: TΑ ΔΡΑΜΑΤΙΚΑ ΔΕΥΤΕΡΟΛΕΠΤΑ ΠΡΙΝ ΑΠΟ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ 42ΧΡΟΝΗΣ ΔΙΑΣΩΣΤΡΙΑΣ – ΤΙ ΕΡΕΥΝΟΥΝ ΟΙ ΑΡΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/28/world/zelenski-kai-tramp-syzitisan-tis-adeies-gia-kataskeyi-patriot/",
-        "https://www.in.gr/2026/07/28/sports/stelios-argyropoulos-o-pio-cool-arxigos-tou-ellinikou-athlitismou-pou-sto-nero-ginetai-o-apolytos-killer/",
-        "https://www.in.gr/2026/07/28/politics/politiki-grammateia/diglossia-sti-nd-gia-kyriazidi-katadikazoun-fotilas-amyras-nai-men-alla-apo-kairidi/",
-        "https://www.in.gr/2026/07/28/greece/i-proti-neogenniti-fokia-gia-to-2026-katagrafike-sto-aigaio/",
-        "https://www.in.gr/2026/07/28/sports/football/epithesi-tis-uefa-sti-fifa-epeidi-kseperna-ta-oria-me-ta-sxedia-gia-to-mountial/",
-        "https://www.in.gr/2026/07/28/economy/oikonomikes-eidiseis/dypa-poioi-mporoun-na-lavoun-eidiko-epidoma-1-250-eyro/",
-        "https://www.in.gr/2026/07/28/go-fun/fizz/nikos-oikonomopoulos-i-vradini-volta-sta-matogiannia-i-dorea-ton-10-000e-kai-mia-kardoula/",
-        "https://www.in.gr/2026/07/28/greece/galatsiegklima-o-thanatos-tou-80xronou-ton-epniksan-me-maksilari/"
+        "https://www.in.gr/2026/07/28/greece/syros-ta-dramatika-deyterolepta-prin-apo-ti-dolofonia-tis-42xronis-diasostrias-ti-ereynoun-oi-arxes/",
+        "https://www.in.gr/2026/07/28/world/dytiki-oxthi-israilinoi-epoikoi-idryoun-neo-oikismo-katedafizontai-spitia-palaistinion-kai-desmeyetai-gi/",
+        "https://www.in.gr/2026/07/28/sports/football/champions-league-ta-dedomena-gia-olympiako-kai-aek-sta-plei-of/",
+        "https://www.in.gr/2026/07/28/greece/fylaki-i-epistrofi-pagomenes-oi-diadikasies-asylou-oi-nomima-aitountes-ypo-kratisi/",
+        "https://www.in.gr/2026/07/28/sports/football/o-mager-perase-tis-iatrikes-eksetaseis-kai-ypografei-stin-aek/",
+        "https://www.in.gr/2026/07/28/life/boy-george-orgi-gia-to-neo-tragoudi-tou-eseis-lete-genoktonia-ego-leo-polemo-leei-gia-ti-gaza/",
+        "https://www.in.gr/2026/07/28/greece/korinthos-neo-vinteo-ntokoumento-apo-to-esoteriko-tou-ergostasiou-piran-prothesmia-oi-syllifthentes/"
       ],
-      "seen_at_utc": "2026-07-28T16:28:26.750055+00:00"
+      "seen_at_utc": "2026-07-28T17:28:14.333877+00:00"
     }
   },
-  "updated_at_utc": "2026-07-28T16:28:26.750262+00:00"
+  "updated_at_utc": "2026-07-28T17:28:14.334036+00:00"
 }
