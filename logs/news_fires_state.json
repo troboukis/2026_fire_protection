@@ -1,16 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564346372/eortologio-poioi-giortazoyn-simera-29-ioylioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 29 Ιουλίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 29 ΙΟΥΛΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564372214/thessaloniki-ekrixi-se-atm-stin-kalamaria-ta-ximeromata/",
+      "title": "Θεσσαλονίκη: Eκρηξη σε ΑΤΜ στην Καλαμαριά τα ξημερώματα",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: EΚΡΗΞΗ ΣΕ ΑΤΜ ΣΤΗΝ ΚΑΛΑΜΑΡΙΑ ΤΑ ΞΗΜΕΡΩΜΑΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564346372/eortologio-poioi-giortazoyn-simera-29-ioylioy/",
-        "https://www.kathimerini.gr/economy/564366793/forodoxies-gnorizete-oti-460/",
-        "https://www.kathimerini.gr/economy/564366844/arthro-toy-panagioti-rozaki-stin-k-i-apotimisi-ton-akiniton/",
-        "https://www.kathimerini.gr/economy/564366838/arthro-toy-kosta-mitropoyloy-stin-k-oi-prokliseis-gia-na-sygkratithei-to-kostos-ilektrismoy/"
+        "https://www.kathimerini.gr/society/564372214/thessaloniki-ekrixi-se-atm-stin-kalamaria-ta-ximeromata/",
+        "https://www.kathimerini.gr/culture/agenda/564372211/exodos-stin-athina-kai-ektos-tin-tetarti-29-7-carl-craig-kai-eisvoleas-2/",
+        "https://www.kathimerini.gr/world/564372202/zelenski-i-protovoylia-den-vrisketai-pleon-sta-cheria-toy-poytin/",
+        "https://www.kathimerini.gr/politics/564371611/thoryvos/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564371659/kypriako-dokimazei-ta-nera-o-gkoyteres/",
+        "https://www.kathimerini.gr/economy/business/564372190/to-proto-deal-tis-metlen-gia-to-gallio/",
+        "https://www.kathimerini.gr/society/564372169/fotia-stin-paro-olonychtia-machi-me-tis-floges-112-gia-ekkenoseis-oikismon-katafthanoyn-dynameis-apo-tin-athina/"
       ],
-      "seen_at_utc": "2026-07-28T21:28:07.708683+00:00"
+      "seen_at_utc": "2026-07-29T04:28:25.812440+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,38 +1265,72 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1857446/seismos-45-rihter-sta-ioannina/?utm_source=rss",
-      "title": "Σεισμός 4,5 Ρίχτερ στα Ιωάννινα: Αναστάτωση από το βουητό στην πόλη και τα Ζαγοροχώρια",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4,5 ΡΙΧΤΕΡ ΣΤΑ ΙΩΑΝΝΙΝΑ: ΑΝΑΣΤΑΤΩΣΗ ΑΠΟ ΤΟ ΒΟΥΗΤΟ ΣΤΗΝ ΠΟΛΗ ΚΑΙ ΤΑ ΖΑΓΟΡΟΧΩΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1857486/fotia-se-horo-me-aporrimmata-sti-lero-sikothike-elikoptero/?utm_source=rss",
+      "title": "Φωτιά σε χώρο με απορρίμματα στη Λέρο, σηκώθηκε ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΧΩΡΟ ΜΕ ΑΠΟΡΡΙΜΜΑΤΑ ΣΤΗ ΛΕΡΟ, ΣΗΚΩΘΗΚΕ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1857446/seismos-45-rihter-sta-ioannina/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857444/diasothikan-167-metanastes-se-treis-epiheiriseis-tou-limenikou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857440/toulahiston-25-agrotodasikes-purkagies-to-teleutaio-24oro-sti-hora/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857439/seismos-41-rihter-voreia-tis-skiathou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1857486/fotia-se-horo-me-aporrimmata-sti-lero-sikothike-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1857479/mainetai-i-fotia-stin-paro-ekkenothikan-4-oikismoi-fovoi-gia-enishusi-anemon-sikothikan-7-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1857478/ekrixi-atm-stin-kalamaria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-28T20:28:08.826088+00:00"
+      "seen_at_utc": "2026-07-29T04:28:25.812547+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1437665/psifistike-mono-me-tis-psifoys-tis-nd-o-nomos-poy-idryei-ae-gia-ti-diaheirisi-tis-politistikis-klironomias/",
-      "title": "Ψηφίστηκε μόνο με τις ψήφους της ΝΔ ο νόμος που ιδρύει ΑΕ για τη διαχείριση της πολιτιστικής κληρονομιάς",
-      "normalized_title": "ΨΗΦΙΣΤΗΚΕ ΜΟΝΟ ΜΕ ΤΙΣ ΨΗΦΟΥΣ ΤΗΣ ΝΔ Ο ΝΟΜΟΣ ΠΟΥ ΙΔΡΥΕΙ ΑΕ ΓΙΑ ΤΗ ΔΙΑΧΕΙΡΙΣΗ ΤΗΣ ΠΟΛΙΤΙΣΤΙΚΗΣ ΚΛΗΡΟΝΟΜΙΑΣ",
+      "url": "https://www.efsyn.gr/politiki/1437693/kypriako-poker-gia-tis-thalassies-zones-i-stasi-tis-athinas-kai-i-krisimi-trimeris/",
+      "title": "Κυπριακό: «Πόκερ» για τις θαλάσσιες ζώνες – Η στάση της Αθήνας και η κρίσιμη τριμερής",
+      "normalized_title": "ΚΥΠΡΙΑΚΟ: «ΠΟΚΕΡ» ΓΙΑ ΤΙΣ ΘΑΛΑΣΣΙΕΣ ΖΩΝΕΣ – Η ΣΤΑΣΗ ΤΗΣ ΑΘΗΝΑΣ ΚΑΙ Η ΚΡΙΣΙΜΗ ΤΡΙΜΕΡΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1437665/psifistike-mono-me-tis-psifoys-tis-nd-o-nomos-poy-idryei-ae-gia-ti-diaheirisi-tis-politistikis-klironomias/",
-        "https://www.efsyn.gr/ellada/1437656/dyskoli-nyhta-stin-paro-adiakopi-mahi-me-tis-floges-me-ton-fovo-ton-dynaton-anemon-eikones-vinteo/",
-        "https://www.efsyn.gr/ellada/1437657/dolofonia-diasostrias-sti-syro-se-kat-oikon-periorismo-o-41hronos/"
+        "https://www.efsyn.gr/politiki/1437693/kypriako-poker-gia-tis-thalassies-zones-i-stasi-tis-athinas-kai-i-krisimi-trimeris/",
+        "https://www.efsyn.gr/ellada/1437692/synagermos-sti-lero-xespase-fotia-se-horo-me-aporrimmata-sikothike-elikoptero/",
+        "https://www.efsyn.gr/kosmos/1437689/anaflexi-sti-mesi-anatoli-pligmata-ipa-kai-saoydikis-aravias-sto-irak-to-iran-vomvardise-tanker-sto-ormoyz/",
+        "https://www.efsyn.gr/politiki/1437686/orgi-tis-antipoliteysis-gia-ta-sexistika-sholia-kyriazidi-pros-tin-konstantopoyloy-zitoyn-ti-diagrafi-toy/",
+        "https://www.efsyn.gr/protoselida/o-politismos-ealo/",
+        "https://www.efsyn.gr/ellada/1437671/kairos-kokteil-zesti-kai-afrikanikis-skonis-simera-enishyontai-ta-meltemia/",
+        "https://www.efsyn.gr/ellada/1437674/mahi-me-tis-floges-stin-paro-ekkenothikan-oikismoi-nea-minymata-toy-112-enishymenoi-simera-oi-anemoi/",
+        "https://www.efsyn.gr/nisides/1436586/to-onoma-moy-einai-andrew-windy-boy/",
+        "https://www.efsyn.gr/nisides/1436599/komentia-a-la-gkreka/",
+        "https://www.efsyn.gr/ellada/1437669/eortologio-poioi-giortazoyn-simera-29-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-28T21:28:07.708797+00:00"
+      "seen_at_utc": "2026-07-29T04:28:25.812524+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/29/greece/seismos-45-rixter-tarakounise-to-lekanopedio-ioanninon/",
-      "title": "Σεισμός ταρακούνησε το λεκανοπέδιο Ιωαννίνων",
-      "normalized_title": "ΣΕΙΣΜΟΣ ΤΑΡΑΚΟΥΝΗΣΕ ΤΟ ΛΕΚΑΝΟΠΕΔΙΟ ΙΩΑΝΝΙΝΩΝ",
+      "url": "https://www.in.gr/2026/07/29/greece/fotia-sti-lero-se-xoro-me-aporrimmata-sikothike-ena-elikoptero/",
+      "title": "Φωτιά στη Λέρο σε χώρο με απορρίμματα – Σηκώθηκε ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΛΕΡΟ ΣΕ ΧΩΡΟ ΜΕ ΑΠΟΡΡΙΜΜΑΤΑ – ΣΗΚΩΘΗΚΕ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/29/greece/seismos-45-rixter-tarakounise-to-lekanopedio-ioanninon/",
-        "https://www.in.gr/2026/07/29/plus/medianews/sta-nea-tis-tetartis-mystikos-deipnos-gia-tis-esties/"
+        "https://www.in.gr/2026/07/29/greece/fotia-sti-lero-se-xoro-me-aporrimmata-sikothike-ena-elikoptero/",
+        "https://www.in.gr/2026/07/29/economy/oi-treis-allages-pou-erxontai-stin-epaggelmatiki-asfalisi-osa-prepei-na-kserete/",
+        "https://www.in.gr/2026/07/29/life/geysi/syntagi-koulourakia-kanelas/",
+        "https://www.in.gr/2026/07/29/world/epediokse-o-zelenski-tin-amesi-emploki-tis-oukranias-ston-polemo-ipa-iran/",
+        "https://www.in.gr/2026/07/29/greece/thesmiko-praksikopima-i-topothetisi-dioikisis-tou-pis-apo-ton-a-georgiadi/",
+        "https://www.in.gr/2026/07/29/greece/mainetai-i-fotia-stin-paro-nea-minymata-apo-to-112-to-vrady-sti-maxi-apo-to-proi-kai-eksi-enaeria/",
+        "https://www.in.gr/2026/07/29/plus/vita/oi-pikres-trofes-kanoun-perissotero-kalo-apo-oso-nomizoume/",
+        "https://www.in.gr/2026/07/29/greece/kairos-mikri-ptosi-tis-thermokrasias-kai-isxyroi-anemoi-tin-tetarti/",
+        "https://www.in.gr/2026/07/29/economy/me-to-podi-sto-gkazi-oi-metavivaseis-akiniton/",
+        "https://www.in.gr/2026/07/29/life/culture-live/metafrastria-tis-odysseias-sta-agglika-eimai-eygnomon-pou-o-nolan-kanei-to-eyry-koino-na-diavazei-ksana/",
+        "https://www.in.gr/2026/07/29/plus/vita/i-kaki-mera-apo-to-proi-fainetai-epta-mystika-gia-na-soseis-tin-katastasi/",
+        "https://www.in.gr/2026/07/29/in-science/perivallon-b-science/o-kairos-ton-pyrkagion-ta-akraia-kairika-fainomena-tou-kalokairiou-dimiourgoun-tis-synthikes-gia-foties/",
+        "https://www.in.gr/2026/07/29/life/texni/abbey-road-reframed-sxedon-enas-aionas-mousikis-istorias-mesa-apo-fotografies/",
+        "https://www.in.gr/2026/07/29/world/ekthesi-apokalyptei-posi-palaistiniaki-gi-katelave-o-netaniaxou-ti-vgazei-sto-sfyri/",
+        "https://www.in.gr/2026/07/29/greece/oi-51-allages-gia-tin-prostasia-tis-mitrotitas/",
+        "https://www.in.gr/2026/07/29/economy/eyropaikos-pylonas-gia-ta-koinonika-dikaiomata-apiastos-o-stoxos-gia-meiosi-ftoxeias-ti-isxyei-stin-ellada/",
+        "https://www.in.gr/2026/07/29/world/i-ai-os-psifiakos-sirano-nte-mperzerak-i-gen-z-afinei-tin-texniti-noimosyni-na-milisei-gia-logariasmo-tis/",
+        "https://www.in.gr/2026/07/29/world/rosia-gynaika-nekri-se-oukraniki-epidromi-se-limani-stin-azofiki-thalassa/",
+        "https://www.in.gr/2026/07/29/economy/diethnis-oikonomia/petrelaio-ayksanontai-kata-3-oi-times-meta-tis-epitheseis-tou-iran-enantion-vaseon-ton-ipa/",
+        "https://www.in.gr/2026/07/29/apopsi/odigountai-se-politiki-krisi-oi-ipa/",
+        "https://www.in.gr/2026/07/29/world/perou-orkistike-i-fouximori-kai-yposxethike-na-valei-sto-stoxastro-tin-egklimatikotita/",
+        "https://www.in.gr/2026/07/29/world/afganistan-enoploi-dolofonisan-aksiomatouxo-sti-voreioanatoliki-eparxia-mpantaxsan/",
+        "https://www.in.gr/2026/07/29/world/ipa-kai-saoudiki-aravia-xtypoun-tis-dynameis-laikis-kinitopoiisis-sto-irak/",
+        "https://www.in.gr/2026/07/29/in-science/ai/o-ai-agent-tis-openai-pou-aytonomithike-xakare-kai-deyteri-etaireia-texnologias-irthe-i-ora-tis-monadikotitas/",
+        "https://www.in.gr/2026/07/29/world/iaponia-ayksanontai-oi-nekroi-apo-ton-seismo-ton-71-rixter/",
+        "https://www.in.gr/2026/07/29/world/ipa-i-kyvernisi-tramp-epitaxynei-tis-apelaseis-aitounton-asylo/",
+        "https://www.in.gr/2026/07/29/world/anastoli-olon-ton-ptiseon-tis-american-airlines-eksaitias-vlavis/",
+        "https://www.in.gr/2026/07/29/world/iaponia-2-nekres-sto-emporiko-kentro-pou-katerreyse-apo-ekriksi-meta-ta-71-rixter/",
+        "https://www.in.gr/2026/07/29/world/centcom-aifnidiastiki-epithesi-tou-iran-se-vasi-ton-ipa-stin-iordania/",
+        "https://www.in.gr/2026/07/29/world/mesi-anatoli-i-saoudiki-aravia-anaxaitise-drones-proerxomena-apo-to-irak/"
       ],
-      "seen_at_utc": "2026-07-28T22:28:05.561239+00:00"
+      "seen_at_utc": "2026-07-29T04:28:25.812489+00:00"
     }
   },
-  "updated_at_utc": "2026-07-28T22:28:05.561348+00:00"
+  "updated_at_utc": "2026-07-29T04:28:25.812626+00:00"
 }
