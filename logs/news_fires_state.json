@@ -1,19 +1,22 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564373285/fotia-tora-stin-agia-triada-siteias-ischyres-dynameis-stin-periochi-ichise-to-112/",
-      "title": "Φωτιά τώρα στην Αγία Τριάδα Σητείας – Ισχυρές δυνάμεις στην περιοχή, ήχησε το 112",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΑΓΙΑ ΤΡΙΑΔΑ ΣΗΤΕΙΑΣ – ΙΣΧΥΡΕΣ ΔΥΝΑΜΕΙΣ ΣΤΗΝ ΠΕΡΙΟΧΗ, ΗΧΗΣΕ ΤΟ 112",
+      "url": "https://www.kathimerini.gr/culture/cinema/564371680/o-omiros-mesa-apo-to-prisma-tis-dytikis-neoterikotitas/",
+      "title": "Ο Ομηρος μέσα από το πρίσμα της δυτικής νεωτερικότητας",
+      "normalized_title": "Ο ΟΜΗΡΟΣ ΜΕΣΑ ΑΠΟ ΤΟ ΠΡΙΣΜΑ ΤΗΣ ΔΥΤΙΚΗΣ ΝΕΩΤΕΡΙΚΟΤΗΤΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564373285/fotia-tora-stin-agia-triada-siteias-ischyres-dynameis-stin-periochi-ichise-to-112/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564373270/ypex-chairetizoyme-tin-anakoinosi-gkoyteres-gia-tin-epilysi-toy-kypriakoy/",
-        "https://www.kathimerini.gr/society/564373255/lesvos-dyskoli-i-katastasi-sto-metopo-tis-fotias-ekkenonetai-to-plomari/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564373252/i-protasi-gia-odofragmata-i-epikoinonia-me-fintan-kai-o-stochos-toy-g-g-oie/",
-        "https://www.kathimerini.gr/society/564373237/n-dendias-vathytati-thlipsi-gia-toys-dyo-pyrosvestes-poy-echasan-ti-zoi-toys-en-ora-kathikontos/",
-        "https://www.kathimerini.gr/world/564373207/ta-montela-tis-openai-dieisdysan-aytovoylos-se-akoma-tesseris-platformes/",
-        "https://www.kathimerini.gr/economy/564373189/wsj-pieseis-se-ypalliloys-tis-morgan-stanley-na-egkrinoyn-daneia-se-ploysioys-pelates/"
+        "https://www.kathimerini.gr/culture/cinema/564371680/o-omiros-mesa-apo-to-prisma-tis-dytikis-neoterikotitas/",
+        "https://www.kathimerini.gr/society/564371674/esy-epekteinetai-i-axiologisi/",
+        "https://www.kathimerini.gr/society/564373360/machi-me-tis-floges-se-oli-ti-chora-treis-nekroi-pyrosvestes/",
+        "https://www.kathimerini.gr/athletics/564373384/kai-episimos-ston-olympiako-o-stefan-ortegka/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564371608/dyo-keria-mesopelaga-zografikos-foros-timis-apo-ton-christo-mpokoro-sti-syra/",
+        "https://www.kathimerini.gr/world/564373378/aigyptos-epithesi-me-drones-se-tanker-amerikanikis-idioktisias/",
+        "https://www.kathimerini.gr/k/gastronomos/564371242/vlita-tsigariasta-me-ladolemono-ntomatas/",
+        "https://www.kathimerini.gr/society/564373369/mnimi-amp-dikaiosi-polonoi-anakalypsan-to-martyriko-distomo-dikoi-mas-toys-to-apekrypsan/",
+        "https://www.kathimerini.gr/athletics/564373198/uefa-kata-fifa-den-mporei-na-chrisimopoiei-to-podosfairo-gia-na-ploytizei/",
+        "https://www.kathimerini.gr/society/564373315/fotia-sto-gytheio-anafora-gia-traymatia-pyrosvesti/"
       ],
-      "seen_at_utc": "2026-07-29T15:28:40.748264+00:00"
+      "seen_at_utc": "2026-07-29T16:28:26.980077+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,56 +1268,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1857838/toulahiston-100-hiliometra-taxidepse-o-kapnos-apo-ti-fotia-stin-kriti-deite-hartes/?utm_source=rss",
-      "title": "Τουλάχιστον 100 χιλιόμετρα ταξίδεψε ο καπνός από τη φωτιά στην Κρήτη, δείτε χάρτες",
-      "normalized_title": "ΤΟΥΛΑΧΙΣΤΟΝ 100 ΧΙΛΙΟΜΕΤΡΑ ΤΑΞΙΔΕΨΕ Ο ΚΑΠΝΟΣ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΗΝ ΚΡΗΤΗ, ΔΕΙΤΕ ΧΑΡΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1857850/nekros-apo-pathologika-aitia-purosvestis-sto-gutheio/?utm_source=rss",
+      "title": "Νεκρός και τρίτος πυροσβέστης στο Γύθειο, αδιευκρίνιστα τα αίτια του θανάτου του",
+      "normalized_title": "ΝΕΚΡΟΣ ΚΑΙ ΤΡΙΤΟΣ ΠΥΡΟΣΒΕΣΤΗΣ ΣΤΟ ΓΥΘΕΙΟ, ΑΔΙΕΥΚΡΙΝΙΣΤΑ ΤΑ ΑΙΤΙΑ ΤΟΥ ΘΑΝΑΤΟΥ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1857838/toulahiston-100-hiliometra-taxidepse-o-kapnos-apo-ti-fotia-stin-kriti-deite-hartes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857833/i-fotia-einai-anexelegti-eftase-sta-prota-spitia-leei-o-koinotarhis-tis-kruas-vrusis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857831/fotia-tora-stin-agia-triada-sto-lasithi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857824/tragodia-sto-lasithi-55hronos-touristas-katerreuse-sto-limani-kai-pethane/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857815/sunelifthi-16hronos-stin-kalamata-gia-klopes-ilektrikon-patinion-kai-podilaton/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1857850/nekros-apo-pathologika-aitia-purosvestis-sto-gutheio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1857844/talaiporia-gia-tous-odigous-stin-egnatia-odo-me-tahutites-pou-den-xepernoun-ta-10-hlmora-se-mia-lorida-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1857841/to-ohima-ton-duo-purosveston-pou-vrikan-tragiko-thanato-sti-fotia-sto-rethumno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-29T15:28:40.748463+00:00"
+      "seen_at_utc": "2026-07-29T16:28:26.980234+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1438216/live-i-mahi-me-tis-floges-tragodia-me-dyo-nekroys-pyrosvestes-sto-rethymno-ektos-eleghoy-to-metopo-sti-lesvo/",
-      "title": "LIVE η μάχη με τις φλόγες: Τραγωδία με δύο νεκρούς πυροσβέστες στο Ρέθυμνο – Εκτός ελέγχου το μέτωπο στη Λέσβο",
-      "normalized_title": "LIVE Η ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ: ΤΡΑΓΩΔΙΑ ΜΕ ΔΥΟ ΝΕΚΡΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ ΣΤΟ ΡΕΘΥΜΝΟ – ΕΚΤΟΣ ΕΛΕΓΧΟΥ ΤΟ ΜΕΤΩΠΟ ΣΤΗ ΛΕΣΒΟ",
+      "url": "https://www.efsyn.gr/kosmos/1438251/koronoios-o-antoni-faoytsi-arnithike-me-milisei-se-epitropi-tis-geroysias-gia-tin-proeleysi-tis-pandimias/",
+      "title": "Κορονοϊός: Ο Άντονι Φάουτσι αρνήθηκε με μιλήσει σε Επιτροπή της Γερουσίας για την προέλευση της πανδημίας",
+      "normalized_title": "ΚΟΡΟΝΟΙΟΣ: Ο ΑΝΤΟΝΙ ΦΑΟΥΤΣΙ ΑΡΝΗΘΗΚΕ ΜΕ ΜΙΛΗΣΕΙ ΣΕ ΕΠΙΤΡΟΠΗ ΤΗΣ ΓΕΡΟΥΣΙΑΣ ΓΙΑ ΤΗΝ ΠΡΟΕΛΕΥΣΗ ΤΗΣ ΠΑΝΔΗΜΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1438216/live-i-mahi-me-tis-floges-tragodia-me-dyo-nekroys-pyrosvestes-sto-rethymno-ektos-eleghoy-to-metopo-sti-lesvo/",
-        "https://www.efsyn.gr/kosmos/1438218/i-gallia-apelaynei-ti-rosida-dimosiografo-xenia-fiontorova-zimionei-ta-themeliodi-symferonta-toy-kratoys/",
-        "https://www.efsyn.gr/nisides/1438016/lakonia-to-apolyto-kalokairino-road-trip-se-dyo-apo-ta-notiotera-akrotiria-tis-eyropis/",
-        "https://www.efsyn.gr/kosmos/1438219/ispania-pyrkagies-airetai-i-entoli-ekkenosis-gia-oles-tis-koinotites-tis-avila-kai-gia-alles-dyo-sti-madriti/",
-        "https://www.efsyn.gr/politiki/1438206/shedio-gkoyteres-gia-nees-synomilies-gia-to-kypriako-oi-protes-antidraseis-apo-ellada-kai-kypro-ti-leei-to-ypex/",
-        "https://www.efsyn.gr/stiles/1437887/oriothetisi-i-diolisthisi/",
-        "https://www.efsyn.gr/stiles/1437865/therines-politikes-ekptoseis/",
-        "https://www.efsyn.gr/stiles/1437859/aristera-tis-aristeras/",
-        "https://www.efsyn.gr/oikonomia/1438211/e-efka-epistrefontai-177-ekat-eyro-se-491-ergazomenoys-syntaxioyhoys/",
-        "https://www.efsyn.gr/politiki/1438207/to-pasok-xanafernei-sti-voyli-to-thema-tis-adeiodotisis-ton-idiotikon-panepistimion/",
-        "https://www.efsyn.gr/epistimi/1438205/openai-nees-apokalypseis-gia-ta-montela-poy-drapeteysan-epitethikan-se-alles-tesseris-platformes/",
-        "https://www.efsyn.gr/ellada/1438199/i-pyrosvestiki-gia-toys-dyo-nekroys-sto-rethymno-simera-einai-mia-dyskoli-mera/"
+        "https://www.efsyn.gr/kosmos/1438251/koronoios-o-antoni-faoytsi-arnithike-me-milisei-se-epitropi-tis-geroysias-gia-tin-proeleysi-tis-pandimias/",
+        "https://www.efsyn.gr/ellada/1438249/tilefoniki-apati-stin-pieria-epeisan-74hroni-na-vgalei-exo-lires-kai-kosmimata-axias-70-000-eyro/",
+        "https://www.efsyn.gr/politiki/1438241/pyrkagia-sto-rethymno-thrinos-gia-toys-dyo-nekroys-pyrosvestes-ta-minymata-politikon-kai-kommaton/",
+        "https://www.efsyn.gr/politiki/1438240/elas-gia-times-venzinis-oi-ethelontikes-symfonies-tis-kyvernisis-me-ta-diylistiria-itan-ena-epikoinoniako-fiasko/",
+        "https://www.efsyn.gr/kosmos/1437923/venezoyela-dialogoi-me-tis-ipa-pano-sta-syntrimmia-mia-hora-vythismeni-sto-penthos/",
+        "https://www.efsyn.gr/kosmos/1438228/i-oyggaria-kleinei-pyriniko-antidrastira-epese-i-stathmi-toy-doynavi-poy-ton-ydrodotoyse/"
       ],
-      "seen_at_utc": "2026-07-29T15:28:40.748421+00:00"
+      "seen_at_utc": "2026-07-29T16:28:26.980195+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/29/world/kouva-anoigei-dekades-tomeis-tis-oikonomias-gia-idiotes-sta-xeria-tou-kratous-ygeia-paideia-kai-asfaleia/",
-      "title": "Κούβα: Ανοίγει δεκάδες τομείς της οικονομίας για ιδιώτες – Στα χέρια του κράτους υγεία, παιδεία και ασφάλεια",
-      "normalized_title": "ΚΟΥΒΑ: ΑΝΟΙΓΕΙ ΔΕΚΑΔΕΣ ΤΟΜΕΙΣ ΤΗΣ ΟΙΚΟΝΟΜΙΑΣ ΓΙΑ ΙΔΙΩΤΕΣ – ΣΤΑ ΧΕΡΙΑ ΤΟΥ ΚΡΑΤΟΥΣ ΥΓΕΙΑ, ΠΑΙΔΕΙΑ ΚΑΙ ΑΣΦΑΛΕΙΑ",
+      "url": "https://www.in.gr/2026/07/29/world/ipa-o-faoutsi-arnithike-na-milisei-se-epitropi-tis-gerousias-ton-apeiloun-me-parapompi-sti-dikaiosyni/",
+      "title": "ΗΠΑ: Ο Φάουτσι αρνήθηκε να μιλήσει σε Επιτροπή της Γερουσίας – Τον απειλούν με παραπομπή στη Δικαιοσύνη",
+      "normalized_title": "ΗΠΑ: Ο ΦΑΟΥΤΣΙ ΑΡΝΗΘΗΚΕ ΝΑ ΜΙΛΗΣΕΙ ΣΕ ΕΠΙΤΡΟΠΗ ΤΗΣ ΓΕΡΟΥΣΙΑΣ – ΤΟΝ ΑΠΕΙΛΟΥΝ ΜΕ ΠΑΡΑΠΟΜΠΗ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/29/world/kouva-anoigei-dekades-tomeis-tis-oikonomias-gia-idiotes-sta-xeria-tou-kratous-ygeia-paideia-kai-asfaleia/",
-        "https://www.in.gr/2026/07/29/go-fun/fizz/karolos-kai-ntaiana-lekes-rotvailer-xameno-nyfiko-kai-alla-agnosta-mystika-apo-ton-gamo-ton-ekatommyrion/",
-        "https://www.in.gr/2026/07/29/sports/football/proponitis-ntinamo-kievou-epikindynos-o-konstantelias-ta-panta-einai-sto-xeri-mas/",
-        "https://www.in.gr/2026/07/29/world/gallia-diatagi-apelasis-tis-rosidas-dimosiografou-ksenia-fiontorova-einai-i-foni-tou-kremlinou-sta-gallika-mme/",
-        "https://www.in.gr/2026/07/29/economy/oikonomikes-eidiseis/giati-na-pas-sto-souper-market-me-lamborghini-oi-kolossoi-lene-antio-stin-panakrivi-texniti-noimosyni/",
-        "https://www.in.gr/2026/07/29/politics/diplomatia/ypeks-stoxos-i-epilysi-tou-kypriakou-kai-i-epanenosi-tou-nisiou/",
-        "https://www.in.gr/2026/07/29/sports/football/eftase-stin-ellada-gia-ton-olympiako-o-gkoustavo-sa-erxomai-sti-megalyteri-omada-tis-elladas/",
-        "https://www.in.gr/2026/07/29/greece/tilefoniki-apati-eis-varos-74xronis-tin-epeisan-na-afisei-lires-kai-kosmimata-70-000-eyro-ekso-apo-to-spiti-tis/",
-        "https://www.in.gr/2026/07/29/greece/kriti-thrinos-gia-tous-dyo-xamenous-pyrosvestes-vathia-thlipsi-sto-pyrosvestiko-soma/",
-        "https://www.in.gr/2026/07/29/sports/football/olympiakos-sta-erythroleyka-ki-episima-o-stefan-ortegka-vidpics/"
+        "https://www.in.gr/2026/07/29/world/ipa-o-faoutsi-arnithike-na-milisei-se-epitropi-tis-gerousias-ton-apeiloun-me-parapompi-sti-dikaiosyni/",
+        "https://www.in.gr/2026/07/29/life/culture-live/o-maikl-mp-tzorntan-den-einai-o-kleftis-pou-exeis-synithisei/",
+        "https://www.in.gr/2026/07/29/greece/aytes-einai-oi-paralies-tis-attikis-pou-apagoreyetai-i-kolymvisi/",
+        "https://www.in.gr/2026/07/29/sports/football/live-aek-samsounspor/",
+        "https://www.in.gr/2026/07/29/greece/fotia-stin-kriti-doryforiki-apotyposi-tou-kapnou-exei-dianysei-peripou-100-km/"
       ],
-      "seen_at_utc": "2026-07-29T15:28:40.748355+00:00"
+      "seen_at_utc": "2026-07-29T16:28:26.980145+00:00"
     }
   },
-  "updated_at_utc": "2026-07-29T15:28:40.748562+00:00"
+  "updated_at_utc": "2026-07-29T16:28:26.980314+00:00"
 }
