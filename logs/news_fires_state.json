@@ -1,20 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564372136/dyskolos-energeiakos-cheimonas-stin-eyropi/",
-      "title": "Δύσκολος ενεργειακός χειμώνας στην Ευρώπη",
-      "normalized_title": "ΔΥΣΚΟΛΟΣ ΕΝΕΡΓΕΙΑΚΟΣ ΧΕΙΜΩΝΑΣ ΣΤΗΝ ΕΥΡΩΠΗ",
+      "url": "https://www.kathimerini.gr/eortologio/564346378/eortologio-poioi-giortazoyn-simera-30-ioylioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 30 Ιουλίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 30 ΙΟΥΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564372136/dyskolos-energeiakos-cheimonas-stin-eyropi/",
-        "https://www.kathimerini.gr/society/564373657/pyrkagia-se-ergostasio-anakyklosis-sto-markopoylo/",
-        "https://www.kathimerini.gr/society/564373651/fotia-sto-rethymno-epicheirisi-diasosis-politon-apo-to-limeniko-vinteo/",
-        "https://www.kathimerini.gr/society/564373606/olonyktia-machi-me-tis-floges-se-kriti-kai-lesvo-nekroi-3-pyrosvestes/",
-        "https://www.kathimerini.gr/istoria/564371794/90-chronia-prin-29-7-1936/",
-        "https://www.kathimerini.gr/athletics/564373648/o-fransisko-ston-panathinaiko/",
-        "https://www.kathimerini.gr/culture/564371824/ena-neo-leykoma-syndyazei-eikona-kai-logotechnikotita/",
-        "https://www.kathimerini.gr/culture/theater/564371830/otan-i-alitheia-dikazetai/"
+        "https://www.kathimerini.gr/eortologio/564346378/eortologio-poioi-giortazoyn-simera-30-ioylioy/",
+        "https://www.kathimerini.gr/economy/diktis/564372139/to-ependytiko-neas-genias-tis-ete/",
+        "https://www.kathimerini.gr/world/564371710/nea-ekklisi-zelenski-gia-systimata-aeramynas/",
+        "https://www.kathimerini.gr/society/564373663/fotia-stin-paro-synelifthisan-o-dimarchos-kai-alla-tria-atoma/",
+        "https://www.kathimerini.gr/economy/business/564372055/nees-ependyseis-dromologei-o-omilos-aktor/"
       ],
-      "seen_at_utc": "2026-07-29T20:29:02.351993+00:00"
+      "seen_at_utc": "2026-07-29T21:29:01.091173+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,45 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1857941/okto-sullipseis-gia-tis-foties-se-oli-tin-ellada-anamesa-tous-o-dimarhos-ki-o-adidimarhos-parou-ergolavos/?utm_source=rss",
-      "title": "Οκτώ συλλήψεις για τις φωτιές σε όλη την Ελλάδα, ανάμεσά τους ο δήμαρχος κι ο αντιδήμαρχος Πάρου, εργολάβος και δημοτικός υπάλληλος για τον ΧΥΤΑ",
-      "normalized_title": "ΟΚΤΩ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΙΣ ΦΩΤΙΕΣ ΣΕ ΟΛΗ ΤΗΝ ΕΛΛΑΔΑ, ΑΝΑΜΕΣΑ ΤΟΥΣ Ο ΔΗΜΑΡΧΟΣ ΚΙ Ο ΑΝΤΙΔΗΜΑΡΧΟΣ ΠΑΡΟΥ, ΕΡΓΟΛΑΒΟΣ ΚΑΙ ΔΗΜΟΤΙΚΟΣ ΥΠΑΛΛΗΛΟΣ ΓΙΑ ΤΟΝ ΧΥΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1857945/apovasi-sta-zoniana-apo-dunameis-tis-astunomias-pano-apo-28-klimakia-eftasan-apo-athina-gia-eleghous-se-epiheirisi-pou-/?utm_source=rss",
+      "title": "Απόβαση στα Ζωνιανά έκαναν 28 κλιμάκια από Αθήνα για ελέγχους σε 180 κτηνοτροφικά μητρώα συνοδεία 200 αστυνομικών",
+      "normalized_title": "ΑΠΟΒΑΣΗ ΣΤΑ ΖΩΝΙΑΝΑ ΕΚΑΝΑΝ 28 ΚΛΙΜΑΚΙΑ ΑΠΟ ΑΘΗΝΑ ΓΙΑ ΕΛΕΓΧΟΥΣ ΣΕ 180 ΚΤΗΝΟΤΡΟΦΙΚΑ ΜΗΤΡΩΑ ΣΥΝΟΔΕΙΑ 200 ΑΣΤΥΝΟΜΙΚΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1857941/okto-sullipseis-gia-tis-foties-se-oli-tin-ellada-anamesa-tous-o-dimarhos-ki-o-adidimarhos-parou-ergolavos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857939/thrinos-sto-amari-gia-tous-purosvestes-pou-hathikan-sti-fotia-sto-rethumno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1857936/sto-kleisto-gumnastirio-moiron-metaferthikan-oi-katoikoi-tis-agias-galinis-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1857945/apovasi-sta-zoniana-apo-dunameis-tis-astunomias-pano-apo-28-klimakia-eftasan-apo-athina-gia-eleghous-se-epiheirisi-pou-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-29T20:29:02.352158+00:00"
+      "seen_at_utc": "2026-07-29T21:29:01.091269+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1438372/atmohub-parakoloythisi-toy-kapnoy-apo-tis-pyrkagies-se-kriti-lesvo-kai-toyrkia-poies-periohes-anamenetai-na-epireastoyn/",
-      "title": "AtmoHub: Παρακολούθηση του καπνού από τις πυρκαγιές σε Κρήτη, Λέσβο και Τουρκία – Ποιες περιοχές αναμένεται να επηρεαστούν",
-      "normalized_title": "ATMOHUB: ΠΑΡΑΚΟΛΟΥΘΗΣΗ ΤΟΥ ΚΑΠΝΟΥ ΑΠΟ ΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΕ ΚΡΗΤΗ, ΛΕΣΒΟ ΚΑΙ ΤΟΥΡΚΙΑ – ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΑΝΑΜΕΝΕΤΑΙ ΝΑ ΕΠΗΡΕΑΣΤΟΥΝ",
+      "url": "https://www.efsyn.gr/ellada/1438382/i-panselinos-toy-ioylioy-se-4-mageytika-simeia-tis-elladas-eikones/",
+      "title": "Η πανσέληνος του Ιουλίου σε 4 μαγευτικά σημεία της Ελλάδας [εικόνες]",
+      "normalized_title": "Η ΠΑΝΣΕΛΗΝΟΣ ΤΟΥ ΙΟΥΛΙΟΥ ΣΕ 4 ΜΑΓΕΥΤΙΚΑ ΣΗΜΕΙΑ ΤΗΣ ΕΛΛΑΔΑΣ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1438372/atmohub-parakoloythisi-toy-kapnoy-apo-tis-pyrkagies-se-kriti-lesvo-kai-toyrkia-poies-periohes-anamenetai-na-epireastoyn/",
-        "https://www.efsyn.gr/athlitismos/1438366/to-mpam-egine-o-fransisko-ston-panathinaiko/",
-        "https://www.efsyn.gr/politiki/1438359/apodokimasia-kata-adoni-sti-limno-ta-heria-mas-einai-kathara-pos-apanta-o-ypoyrgos-ygeias-vinteo/",
-        "https://www.efsyn.gr/stiles/1438344/ena-neo-koinoniko-symvolaio-gia-tin-axioprepi-diaviosi-i-nea-apostoli-toy-koinonikoy-kratoys/",
-        "https://www.efsyn.gr/ellada/1438332/pyrinos-efialtis-sto-rethymno-aperantes-esties-thyellodeis-anemoi-nekroi-pyrosvestes-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1438382/i-panselinos-toy-ioylioy-se-4-mageytika-simeia-tis-elladas-eikones/",
+        "https://www.efsyn.gr/kosmos/1438380/nees-apeiles-tramp-kata-toy-iran-einai-i-seira-mas-na-toys-htypisoyme/",
+        "https://www.efsyn.gr/ellada/1438376/paros-4-syllipseis-gia-ti-fotia-dimarhos-antidimarhos-ergolavos-apokomidis-aporrimmaton-kai-odigos-aporrimatoforoy/"
       ],
-      "seen_at_utc": "2026-07-29T20:29:02.352102+00:00"
+      "seen_at_utc": "2026-07-29T21:29:01.091241+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/29/life/music/oi-bts-mpoikotaroun-ta-grammy-eksaitias-tis-neas-katigorias-asiatiki-pop/",
-      "title": "Οι BTS μποϊκοτάρουν τα Grammy εξαιτίας της νέας κατηγορίας «ασιατική ποπ»",
-      "normalized_title": "ΟΙ BTS ΜΠΟΙΚΟΤΑΡΟΥΝ ΤΑ GRAMMY ΕΞΑΙΤΙΑΣ ΤΗΣ ΝΕΑΣ ΚΑΤΗΓΟΡΙΑΣ «ΑΣΙΑΤΙΚΗ ΠΟΠ»",
+      "url": "https://www.in.gr/2026/07/30/greece/olonyxtia-maxi-me-ti-fotia-stin-kriti-thrinos-gia-tous-3-nekrous-pyrosvestes-spitia-paradothikan-stis-floges/",
+      "title": "Ολονύχτια μάχη με τη φωτιά στην Κρήτη – Θρήνος για τους 3 νεκρούς πυροσβέστες, σπίτια παραδόθηκαν στις φλόγες",
+      "normalized_title": "ΟΛΟΝΥΧΤΙΑ ΜΑΧΗ ΜΕ ΤΗ ΦΩΤΙΑ ΣΤΗΝ ΚΡΗΤΗ – ΘΡΗΝΟΣ ΓΙΑ ΤΟΥΣ 3 ΝΕΚΡΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ, ΣΠΙΤΙΑ ΠΑΡΑΔΟΘΗΚΑΝ ΣΤΙΣ ΦΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/29/life/music/oi-bts-mpoikotaroun-ta-grammy-eksaitias-tis-neas-katigorias-asiatiki-pop/",
-        "https://www.in.gr/2026/07/29/politics/elas-sto-116-dis-e-to-fesi-apo-ta-daneika-kai-agyrista-tis-nd-kai-tou-pasok/",
-        "https://www.in.gr/2026/07/29/sports/football/me-doro-souper-ekpliksi-tis-aarxous-i-aek-vrisketai-stous-isxyrous-ton-plei-of-tou-champions-league/",
-        "https://www.in.gr/2026/07/29/world/india-oi-katsarides-efagan-enan-ypourgo-alla-arkei/",
-        "https://www.in.gr/2026/07/29/politics/aporripsi-agogis-slapp-tou-grigori-dimitriadi-kata-tou-in-kai-tis-alter-ego-media-ypoxreosi-kai-epivevlimeno-kathikon-enanti-tou-anagnostikou-koinou-i-enimerosi-gia-tis-ypoklopes/",
-        "https://www.in.gr/2026/07/29/sports/basketball/o-panathinaikos-pairnei-ton-fransisko/",
-        "https://www.in.gr/2026/07/29/economy/oikonomikes-eidiseis/13i-syntaksi-oi-syntaksiouxoi-apantoun-ston-stournara-den-skotonoun-ta-aloga-otan-gerasoun-kyrie-dioikita/",
-        "https://www.in.gr/2026/07/29/sports/football/ti-eipe-o-nikolits-gia-ton-mager-eno-perimenei-mia-akomi-metagrafi/"
+        "https://www.in.gr/2026/07/30/greece/olonyxtia-maxi-me-ti-fotia-stin-kriti-thrinos-gia-tous-3-nekrous-pyrosvestes-spitia-paradothikan-stis-floges/",
+        "https://www.in.gr/2026/07/30/world/tragodia-stin-argentini-epta-nekroi-se-syntrivi-elikopterou-kata-ti-diarkeia-askisis/",
+        "https://www.in.gr/2026/07/30/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-pempti-30-07-2026/",
+        "https://www.in.gr/2026/07/30/greece/giorti-simera-30-iouliou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/07/29/sports/football/infantino-protasi-kai-oxi-ypoxreosi-to-sxedio-gia-to-mountial/",
+        "https://www.in.gr/2026/07/29/greece/atmohub-o-kapnos-apo-tis-pyrkagies-se-kriti-lesvo-kai-tourkia-poies-perioxes-anamenetai-na-epireastoun/",
+        "https://www.in.gr/2026/07/29/greece/fotia-stin-paro-synelifthisan-o-dimarxos-o-antidimarxos-enas-ypallilos-tou-dimou-kai-enas-ergolavos/",
+        "https://www.in.gr/2026/07/29/sports/othersports/ouasingkton-apokleismos-gia-ton-tsitsipa-pou-ksespase-sti-raketa-tou-vid/",
+        "https://www.in.gr/2026/07/29/world/fotia-se-amerikaniko-deksamenoploio-se-limani-tis-aigyptou-nees-apeiles-tramp-gia-pligmata-kata-tou-iran/"
       ],
-      "seen_at_utc": "2026-07-29T20:29:02.352049+00:00"
+      "seen_at_utc": "2026-07-29T21:29:01.091218+00:00"
     }
   },
-  "updated_at_utc": "2026-07-29T20:29:02.352244+00:00"
+  "updated_at_utc": "2026-07-29T21:29:01.091335+00:00"
 }
