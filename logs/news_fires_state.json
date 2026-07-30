@@ -1,13 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564369073/to-neo-byzantino-vgainei-ston-kipo/",
-      "title": "Το νέο Byzantino βγαίνει στον κήπο",
-      "normalized_title": "ΤΟ ΝΕΟ BYZANTINO ΒΓΑΙΝΕΙ ΣΤΟΝ ΚΗΠΟ",
+      "url": "https://www.kathimerini.gr/world/564373573/voylgaria-o-doynavis-ypochorise-apokalyptontas-ena-mamoyth/",
+      "title": "Βουλγαρία: Ο Δούναβης υποχώρησε αποκαλύπτοντας ένα μαμούθ",
+      "normalized_title": "ΒΟΥΛΓΑΡΙΑ: Ο ΔΟΥΝΑΒΗΣ ΥΠΟΧΩΡΗΣΕ ΑΠΟΚΑΛΥΠΤΟΝΤΑΣ ΕΝΑ ΜΑΜΟΥΘ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564369073/to-neo-byzantino-vgainei-ston-kipo/"
+        "https://www.kathimerini.gr/world/564373573/voylgaria-o-doynavis-ypochorise-apokalyptontas-ena-mamoyth/",
+        "https://www.kathimerini.gr/life/auto/564375514/oi-markes-aytokiniton-poy-kyriarchoyn-stin-eyropi-to-proto-miso-toy-2026/",
+        "https://www.kathimerini.gr/society/564375469/rethymno-to-teleytaio-antio-ston-pyrosvesti-manoli-stratidaki/",
+        "https://www.kathimerini.gr/k/gastronomos/564373354/kotopoylo-psito-me-poyre-ntomatas-apo-tin-eyi-voytsina/",
+        "https://www.kathimerini.gr/culture/tv/564375424/to-mia-gynaika-erchetai-ston-alpha-me-ena-dynato-kast-kai-mia-sygkinitiki-istoria/",
+        "https://www.kathimerini.gr/economy/business/564374206/ligoteres-skalosies-apo-fthinoporo-logo-ptosis-neon-oikodomikon-adeion-perysi/",
+        "https://www.kathimerini.gr/society/564375412/thiva-epeisodia-stis-gynaikeies-fylakes-meta-ton-thanato-kratoymenis/",
+        "https://www.kathimerini.gr/columns/564375364/i-asteroskoni-toy-silven-fransisko-kontra-stin-gkarnt-katara-toy-panathinaikoy/"
       ],
-      "seen_at_utc": "2026-07-30T15:28:34.645893+00:00"
+      "seen_at_utc": "2026-07-30T16:28:07.388110+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,13 +1266,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858336/ta-nea-canadair-tis-ee-kai-o-komvikos-rolos-tis-elladas-stin-apoktisi-tous/?utm_source=rss",
-      "title": "Τα νέα Canadair της ΕΕ και ο κομβικός ρόλος της Ελλάδας στην απόκτησή τους",
-      "normalized_title": "ΤΑ ΝΕΑ CANADAIR ΤΗΣ ΕΕ ΚΑΙ Ο ΚΟΜΒΙΚΟΣ ΡΟΛΟΣ ΤΗΣ ΕΛΛΑΔΑΣ ΣΤΗΝ ΑΠΟΚΤΗΣΗ ΤΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1858345/o-manolis-mitsias-tragoudise-ton-gianni-ton-fonia-stin-ileia-para-tin-apagoreusi-tou-giou-tou-manou-hatzidaki-video/?utm_source=rss",
+      "title": "Ο Μανώλης Μητσιάς τραγούδησε τον «Γιάννη τον Φονιά» στο ναό του Επικούριου Απόλλωνα- «ποτέ δεν φοβήθηκα», είπε, δείτε βίντεο",
+      "normalized_title": "Ο ΜΑΝΩΛΗΣ ΜΗΤΣΙΑΣ ΤΡΑΓΟΥΔΗΣΕ ΤΟΝ «ΓΙΑΝΝΗ ΤΟΝ ΦΟΝΙΑ» ΣΤΟ ΝΑΟ ΤΟΥ ΕΠΙΚΟΥΡΙΟΥ ΑΠΟΛΛΩΝΑ- «ΠΟΤΕ ΔΕΝ ΦΟΒΗΘΗΚΑ», ΕΙΠΕ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858336/ta-nea-canadair-tis-ee-kai-o-komvikos-rolos-tis-elladas-stin-apoktisi-tous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858345/o-manolis-mitsias-tragoudise-ton-gianni-ton-fonia-stin-ileia-para-tin-apagoreusi-tou-giou-tou-manou-hatzidaki-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-30T15:28:34.646021+00:00"
+      "seen_at_utc": "2026-07-30T16:28:07.388205+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/?p=1438914",
@@ -1287,14 +1294,23 @@
       "seen_at_utc": "2026-07-30T15:23:31.457679+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/30/politics/kke-ekviasmos-kai-minyma-gia-emploki-tis-kyprou-stous-eyroatlantikous-sxediasmous-oi-diloseis-gkouteres/",
-      "title": "ΚΚΕ: Εκβιασμός και μήνυμα για εμπλοκή της Κύπρου στους ευρωατλαντικούς σχεδιασμούς οι δηλώσεις Γκουτέρες",
-      "normalized_title": "ΚΚΕ: ΕΚΒΙΑΣΜΟΣ ΚΑΙ ΜΗΝΥΜΑ ΓΙΑ ΕΜΠΛΟΚΗ ΤΗΣ ΚΥΠΡΟΥ ΣΤΟΥΣ ΕΥΡΩΑΤΛΑΝΤΙΚΟΥΣ ΣΧΕΔΙΑΣΜΟΥΣ ΟΙ ΔΗΛΩΣΕΙΣ ΓΚΟΥΤΕΡΕΣ",
+      "url": "https://www.in.gr/2026/07/30/greece/entyposiako-vinteo-apo-drone-deixnei-tin-ektasi-tis-fotias-ston-asomato-rethymnou/",
+      "title": "Εντυπωσιακό βίντεο από drone δείχνει την έκταση της φωτιάς στον Ασώματο Ρεθύμνου",
+      "normalized_title": "ΕΝΤΥΠΩΣΙΑΚΟ ΒΙΝΤΕΟ ΑΠΟ DRONE ΔΕΙΧΝΕΙ ΤΗΝ ΕΚΤΑΣΗ ΤΗΣ ΦΩΤΙΑΣ ΣΤΟΝ ΑΣΩΜΑΤΟ ΡΕΘΥΜΝΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/30/politics/kke-ekviasmos-kai-minyma-gia-emploki-tis-kyprou-stous-eyroatlantikous-sxediasmous-oi-diloseis-gkouteres/"
+        "https://www.in.gr/2026/07/30/greece/entyposiako-vinteo-apo-drone-deixnei-tin-ektasi-tis-fotias-ston-asomato-rethymnou/",
+        "https://www.in.gr/2026/07/30/life/culture-live/i-ema-stooun-itan-to-idaniko-kinimatografiko-tairi-tou-raian-gkoslingk/",
+        "https://www.in.gr/2026/07/30/sports/basketball/episimo-kai-me-ti-voula-ston-panathinaiko-o-fransisko/",
+        "https://www.in.gr/2026/07/30/greece/oi-thyellodeis-anemoi-sto-aigaio-eferan-apagoreytiko-apoplou-gia-tis-kyklades-apo-rafina/",
+        "https://www.in.gr/matchcenter/5958599/",
+        "https://www.in.gr/2026/07/30/world/vretania-rekor-afiksis-metanaston-meso-tis-magxis-me-752-anthropous-na-apovivazontai-stis-aktes-se-mia-imera/",
+        "https://www.in.gr/2026/07/30/world/asfyksia-sti-theouta-xiliades-metanastes-perasan-ta-synora-me-ta-podia-ekpempei-sos-o-ispanikos-thylakas-vinteo/",
+        "https://www.in.gr/2026/07/30/sports/basketball/ellada-ispania-66-69-itta-apokleismos-gia-tin-ethniki-efivon-apo-to-29/",
+        "https://www.in.gr/2026/07/30/world/agglia-pyrkagia-kaiei-stin-akti-tou-safolk-ekkenothike-parko-diakopon-se-epifylaki-gia-ton-pyriniko-stathmo/",
+        "https://www.in.gr/2026/07/30/sports/football/sokaroun-oi-eikones-apo-ti-listeia-se-varos-tou-podosfairisti-tis-ounion-sen-zilouaz-vid/"
       ],
-      "seen_at_utc": "2026-07-30T15:28:34.645955+00:00"
+      "seen_at_utc": "2026-07-30T16:28:07.388159+00:00"
     }
   },
-  "updated_at_utc": "2026-07-30T15:28:34.646107+00:00"
+  "updated_at_utc": "2026-07-30T16:28:07.388281+00:00"
 }
