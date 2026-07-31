@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564378088/vrefonipiakoi-stathmoi-poioi-epofeloyntai-ti-ischyei-gia-polyteknoys-pos-ginetai-i-aitisi/",
-      "title": "Βρεφονηπιακοί σταθμοί: Ποιοι επωφελούνται, τι ισχύει για πολύτεκνους, πώς γίνεται η αίτηση",
-      "normalized_title": "ΒΡΕΦΟΝΗΠΙΑΚΟΙ ΣΤΑΘΜΟΙ: ΠΟΙΟΙ ΕΠΩΦΕΛΟΥΝΤΑΙ, ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΠΟΛΥΤΕΚΝΟΥΣ, ΠΩΣ ΓΙΝΕΤΑΙ Η ΑΙΤΗΣΗ",
+      "url": "https://www.kathimerini.gr/economy/business/564376642/anodos-5-8-ton-poliseon-sta-soyper-market/",
+      "title": "Ανοδος 5,8% των πωλήσεων στα σούπερ μάρκετ",
+      "normalized_title": "ΑΝΟΔΟΣ 5,8% ΤΩΝ ΠΩΛΗΣΕΩΝ ΣΤΑ ΣΟΥΠΕΡ ΜΑΡΚΕΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564378088/vrefonipiakoi-stathmoi-poioi-epofeloyntai-ti-ischyei-gia-polyteknoys-pos-ginetai-i-aitisi/",
-        "https://www.kathimerini.gr/economy/564376657/to-ntomino-gia-chryso-kai-omologa-meta-tin-apofasi-fed-gia-ametavlita-epitokia/",
-        "https://www.kathimerini.gr/world/564378055/tramp-to-israil-einai-poly-ikanopoiimeno-apo-ti-symfonia-me-ti-chamas/",
-        "https://www.kathimerini.gr/culture/564376405/apo-ton-mai-toy-68-stin-epanastasi-tis-kathimerinotitas/"
+        "https://www.kathimerini.gr/economy/business/564376642/anodos-5-8-ton-poliseon-sta-soyper-market/"
       ],
-      "seen_at_utc": "2026-07-31T17:17:49.101094+00:00"
+      "seen_at_utc": "2026-07-31T17:30:56.373174+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,40 +1259,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858845/fotia-stin-periohi-aetos-karustou/?utm_source=rss",
-      "title": "Φωτιά στην περιοχή Αετός Καρύστου στην Εύβοια, δείτε βίντεο",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΕΤΟΣ ΚΑΡΥΣΤΟΥ ΣΤΗΝ ΕΥΒΟΙΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1858856/akuronetai-i-apopsini-parastasi-tou-festival-tis-epidaurou-logo-ton-purkagion/?utm_source=rss",
+      "title": "Ακυρώνεται η αποψινή παράσταση του Φεστιβάλ της Επιδαύρου λόγω των πυρκαγιών",
+      "normalized_title": "ΑΚΥΡΩΝΕΤΑΙ Η ΑΠΟΨΙΝΗ ΠΑΡΑΣΤΑΣΗ ΤΟΥ ΦΕΣΤΙΒΑΛ ΤΗΣ ΕΠΙΔΑΥΡΟΥ ΛΟΓΩ ΤΩΝ ΠΥΡΚΑΓΙΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858845/fotia-stin-periohi-aetos-karustou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858856/akuronetai-i-apopsini-parastasi-tou-festival-tis-epidaurou-logo-ton-purkagion/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858852/ti-allazei-gia-tous-vrefonipiakous-poioi-epofeloudai-31-erotiseis-kai-apadiseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T17:17:49.101223+00:00"
+      "seen_at_utc": "2026-07-31T17:30:56.373275+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439763/odigies-prostasias-apo-ton-kapno-ton-pyrkagion-poies-omades-kindyneyoyn-perissotero/",
-      "title": "Οδηγίες προστασίας από τον καπνό των πυρκαγιών – Ποιες ομάδες κινδυνεύουν περισσότερο",
-      "normalized_title": "ΟΔΗΓΙΕΣ ΠΡΟΣΤΑΣΙΑΣ ΑΠΟ ΤΟΝ ΚΑΠΝΟ ΤΩΝ ΠΥΡΚΑΓΙΩΝ – ΠΟΙΕΣ ΟΜΑΔΕΣ ΚΙΝΔΥΝΕΥΟΥΝ ΠΕΡΙΣΣΟΤΕΡΟ",
+      "url": "https://www.efsyn.gr/stiles/1439338/dikopo-mahairi/",
+      "title": "Δίκοπο μαχαίρι",
+      "normalized_title": "ΔΙΚΟΠΟ ΜΑΧΑΙΡΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439763/odigies-prostasias-apo-ton-kapno-ton-pyrkagion-poies-omades-kindyneyoyn-perissotero/",
-        "https://www.efsyn.gr/ellada/1439739/apokosmes-eikones-apo-to-porto-germeno-mayros-kapnos-kalypse-ton-orizonta/",
-        "https://www.efsyn.gr/ellada/1439745/keratsini-prostima-kai-aifnidiastikoi-eleghoi-meta-tis-kataggelies-gia-elleipsi-pyroprostasias-se-sholeia/",
-        "https://www.efsyn.gr/kosmos/1439740/elvetia-mystiriodis-astheneia-plittei-tis-agelades-galaktoparagogis/"
+        "https://www.efsyn.gr/stiles/1439338/dikopo-mahairi/",
+        "https://www.efsyn.gr/politiki/1439768/me-tis-psifoys-nd-pasok-perase-i-fotografiki-diataxi-gia-ton-giotopoylo-apasfalise-i-konstantopoyloy/"
       ],
-      "seen_at_utc": "2026-07-31T17:17:49.101196+00:00"
+      "seen_at_utc": "2026-07-31T17:30:56.373241+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/greece/meteo-sokaroun-oi-protes-ektimiseis-gia-tin-katastrofi-sto-rethymno-staxti-40-050-stremmata-stis-melampes/",
-      "title": "Ο πρώτος δορυφορικός απολογισμός του ολέθρου: Τεράστιες οι καμένες εκτάσεις σε Ρέθυμνο και Πάρο",
-      "normalized_title": "Ο ΠΡΩΤΟΣ ΔΟΡΥΦΟΡΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ ΤΟΥ ΟΛΕΘΡΟΥ: ΤΕΡΑΣΤΙΕΣ ΟΙ ΚΑΜΕΝΕΣ ΕΚΤΑΣΕΙΣ ΣΕ ΡΕΘΥΜΝΟ ΚΑΙ ΠΑΡΟ",
+      "url": "https://www.in.gr/2026/07/31/greece/eyvoia-fotia-stin-perioxi-aetos-karystou/",
+      "title": "Εύβοια: Φωτιά στην περιοχή Αετός Καρύστου",
+      "normalized_title": "ΕΥΒΟΙΑ: ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΕΤΟΣ ΚΑΡΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/greece/meteo-sokaroun-oi-protes-ektimiseis-gia-tin-katastrofi-sto-rethymno-staxti-40-050-stremmata-stis-melampes/",
-        "https://www.in.gr/2026/07/31/greece/airetai-to-apagoreytikou-apoplou-kanonika-ta-dromologia/",
-        "https://www.in.gr/2026/07/31/sports/basketball/episimo-stous-kavaliers-o-xezonia/",
-        "https://www.in.gr/2026/07/31/greece/metra-prostasias-apo-tin-pyrkagia-ti-na-proseksoume/",
-        "https://www.in.gr/2026/07/31/greece/paixnidia-entyposeon-eis-varos-ton-astegon-xriston-apo-ypourgeio-ygeias-kai-eopae/",
-        "https://www.in.gr/2026/07/31/greece/lygise-o-dimarxos-gia-ti-fotia-sto-kompoti-einai-o-topos-mas-eimaste-aderfia/"
+        "https://www.in.gr/2026/07/31/greece/eyvoia-fotia-stin-perioxi-aetos-karystou/"
       ],
-      "seen_at_utc": "2026-07-31T17:17:49.101155+00:00"
+      "seen_at_utc": "2026-07-31T17:30:56.373223+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T17:17:49.101318+00:00"
+  "updated_at_utc": "2026-07-31T17:30:56.373369+00:00"
 }
