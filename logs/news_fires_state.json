@@ -1,17 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564377158/tet-a-tet-mitsotaki-doyka-sto-maximoy-ti-syzitisan/",
-      "title": "Τετ α τετ Μητσοτάκη-Δούκα στο Μαξίμου: Τι συζήτησαν",
-      "normalized_title": "ΤΕΤ Α ΤΕΤ ΜΗΤΣΟΤΑΚΗ-ΔΟΥΚΑ ΣΤΟ ΜΑΞΙΜΟΥ: ΤΙ ΣΥΖΗΤΗΣΑΝ",
+      "url": "https://www.kathimerini.gr/economy/international/564377257/o-mask-diapseydei-polisi-tis-monadas-tis-tesla-stin-kina-kai-sygchoneysi-me-ti-spacex/",
+      "title": "Ο Μασκ διαψεύδει πώληση της μονάδας της Tesla στην Κίνα και συγχώνευση με τη SpaceX",
+      "normalized_title": "Ο ΜΑΣΚ ΔΙΑΨΕΥΔΕΙ ΠΩΛΗΣΗ ΤΗΣ ΜΟΝΑΔΑΣ ΤΗΣ TESLA ΣΤΗΝ ΚΙΝΑ ΚΑΙ ΣΥΓΧΩΝΕΥΣΗ ΜΕ ΤΗ SPACEX",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564377158/tet-a-tet-mitsotaki-doyka-sto-maximoy-ti-syzitisan/",
-        "https://www.kathimerini.gr/world/564377116/kypros-syllipsi-andra-gia-kataskopeia-vretanikis-stratiotikis-vasis-yper-toy-iran/",
-        "https://www.kathimerini.gr/world/564377083/ispania-ti-pyrodotei-tin-krisi-tis-theoyta-to-chroniko-tis-entasis-kai-oi-ponokefaloi-toy-santseth/",
-        "https://www.kathimerini.gr/society/564377095/fylakes-korydalloy-fotia-kai-epeisodia-kata-ti-metagogi-toyrkoy-kratoymenoy/",
-        "https://www.kathimerini.gr/culture/agenda/564377089/exodos-stin-athina-kai-ektos-tin-paraskeyi-31-7-ntempora-nte-loyka-kai-koypes/"
+        "https://www.kathimerini.gr/economy/international/564377257/o-mask-diapseydei-polisi-tis-monadas-tis-tesla-stin-kina-kai-sygchoneysi-me-ti-spacex/",
+        "https://www.kathimerini.gr/culture/music/564377230/odysseia-kykloforise-to-moysiko-vinteo-toy-when-i-m-home-toy-travis-skot/",
+        "https://www.kathimerini.gr/culture/music/564377209/o-pol-makkartnei-ypopsifios-proti-fora-gia-to-vraveio-mercury/",
+        "https://www.kathimerini.gr/athletics/564377191/fifa-koino-metopo-me-tin-uefa-apo-tis-amerikanikes-kai-asiatikes-omospondies-kata-tis-moyntial-a-e/",
+        "https://www.kathimerini.gr/economy/564377155/stoys-dromoys-ta-dyo-prota-aytokinita-kypselon-ydrogonoy-stin-ellada-poy-tha-kykloforisoyn/",
+        "https://www.kathimerini.gr/politics/564377185/nea-pyra-pasok-kata-elas-gia-tin-panepistimiaki-astynomia/"
       ],
-      "seen_at_utc": "2026-07-31T08:28:34.202744+00:00"
+      "seen_at_utc": "2026-07-31T09:28:14.313987+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,57 +1264,53 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858608/tilefonima-gia-vomva-sto-proxeneio-tis-gallias-kai-to-evea-sto-kedro-tis-athinas/?utm_source=rss",
-      "title": "Τηλεφώνημα για βόμβα στο προξενείο της Γαλλίας και το ΕΒΕΑ στο κέντρο της Αθήνας",
-      "normalized_title": "ΤΗΛΕΦΩΝΗΜΑ ΓΙΑ ΒΟΜΒΑ ΣΤΟ ΠΡΟΞΕΝΕΙΟ ΤΗΣ ΓΑΛΛΙΑΣ ΚΑΙ ΤΟ ΕΒΕΑ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1858633/i-megaluteri-eutheia-tis-athinas-egine-psifiako-frourio/?utm_source=rss",
+      "title": "Η μεγαλύτερη ευθεία της Αθήνας έγινε ψηφιακό «φρούριο»",
+      "normalized_title": "Η ΜΕΓΑΛΥΤΕΡΗ ΕΥΘΕΙΑ ΤΗΣ ΑΘΗΝΑΣ ΕΓΙΝΕ ΨΗΦΙΑΚΟ «ΦΡΟΥΡΙΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858608/tilefonima-gia-vomva-sto-proxeneio-tis-gallias-kai-to-evea-sto-kedro-tis-athinas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858603/ekana-auto-pou-ematha-ola-auta-ta-hronia-leei-o-dieuthudis-tou-kedrou-ugeias-areopolis-pou-odigise-asthenoforo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858600/thrinos-stin-kideia-tou-27hronou-purosvesti-pou-ehase-ti-zoi-tou-sto-gutheio-me-times-iroa-to-teleutaio-adio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858588/kolona-ilektrodotisis-i-fotia-sto-rethumno-sunelifthi-upeuthunos-tou-deddie-kathoristiki-i-ekthesi-tou-pragmatognomona/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858584/pame-prepei-na-fugoume-suglonistiko-video-apo-tin-paro-me-purosvestes-na-dinoun-mahi-me-tis-floges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858574/thuellodeis-voriades-stin-attiki-sta-150-hlmora-oi-ripes-anemou-stin-pedeli/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858569/tropologia-upaat-pliromes-horis-forologiki-kai-asfalistiki-enimerotita-se-24000-neous-agrotes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858568/edasi-stis-fulakes-korudallou-gia-tin-metagogi-tourkou-kratoumenou-kaine-adikeimena/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858633/i-megaluteri-eutheia-tis-athinas-egine-psifiako-frourio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858632/tsakali-epitethike-se-4hroni-se-auli-tavernas-stin-polihni-tin-traumatise-sto-prosopo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858628/iereas-tragoudise-tis-gerakinas-gios-se-paniguri-stis-serres-kai-sunadelfos-tou-horeue-zeibekiko-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858612/neos-voutzas-atomo-kataplakothike-apo-homata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T08:28:34.202859+00:00"
+      "seen_at_utc": "2026-07-31T09:28:14.314080+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1439284/institoyto-tsipra-ennea-erotimata-gia-ti-megalyteri-symvasi-cloud-stin-istoria-toy-ellinikoy-dimosioy/",
-      "title": "Ινστιτούτο Τσίπρα: Εννέα ερωτήματα για τη «μεγαλύτερη σύμβαση cloud στην ιστορία του ελληνικού Δημοσίου»",
-      "normalized_title": "ΙΝΣΤΙΤΟΥΤΟ ΤΣΙΠΡΑ: ΕΝΝΕΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΗ «ΜΕΓΑΛΥΤΕΡΗ ΣΥΜΒΑΣΗ CLOUD ΣΤΗΝ ΙΣΤΟΡΙΑ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΔΗΜΟΣΙΟΥ»",
+      "url": "https://www.efsyn.gr/oikonomia/1439250/naytergatika-somateia-ta-tameiaka-diathesima-toy-nat-einai-apo-to-aima-ton-naytergaton/",
+      "title": "Ναυτεργατικά σωματεία: «Τα ταμειακά διαθέσιμα του ΝΑΤ είναι από το αίμα των ναυτεργατών»",
+      "normalized_title": "ΝΑΥΤΕΡΓΑΤΙΚΑ ΣΩΜΑΤΕΙΑ: «ΤΑ ΤΑΜΕΙΑΚΑ ΔΙΑΘΕΣΙΜΑ ΤΟΥ ΝΑΤ ΕΙΝΑΙ ΑΠΟ ΤΟ ΑΙΜΑ ΤΩΝ ΝΑΥΤΕΡΓΑΤΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1439284/institoyto-tsipra-ennea-erotimata-gia-ti-megalyteri-symvasi-cloud-stin-istoria-toy-ellinikoy-dimosioy/",
-        "https://www.efsyn.gr/ellada/1439317/synagermos-ston-neo-voytza-atomo-ehei-kataplakothei-apo-homata/",
-        "https://www.efsyn.gr/ellada/1439293/agrinio-thrinos-stin-kideia-toy-27hronoy-pyrosvesti-poy-hathike-sti-fotia-sto-gytheio-eikones/",
-        "https://www.efsyn.gr/kosmos/1439297/gaza-ti-provlepei-i-symfonia-gia-ton-afoplismo-tis-hamas/",
-        "https://www.efsyn.gr/athlitismos/1439247/olympiakos-o-mentilimpar-kai-i-spazokefalia/",
-        "https://www.efsyn.gr/athlitismos/1439245/aek-irthe-i-ora-toy-aristeroy-mpak/",
-        "https://www.efsyn.gr/ellada/1439280/thyellodeis-voriades-stin-attiki-oi-ripes-toy-anemoy-xeperasan-ta-150-hlm-ora-stin-penteli/",
-        "https://www.efsyn.gr/ellada/1439281/epeisodia-stis-fylakes-korydalloy-kratoymenoi-evalan-fotia-sta-stromata-toys/",
-        "https://www.efsyn.gr/media/1439265/i-proti-fotografisi-paylopoyloy-hioti-gia-to-kalimera-ellada-coming-soon/",
-        "https://www.efsyn.gr/politiki/1439266/mpoylekos-kata-diamantopoyloy-gia-aygi-kai-kokkino-ta-dedoyleymena-stoys-ergazomenoys-ehoyn-apoplirothei/"
+        "https://www.efsyn.gr/oikonomia/1439250/naytergatika-somateia-ta-tameiaka-diathesima-toy-nat-einai-apo-to-aima-ton-naytergaton/",
+        "https://www.efsyn.gr/ellada/1439336/fotia-sto-rethymno-yperfortosi-kalodioy-deihnoyn-ta-prota-stoiheia-ston-eisaggelea-to-stelehos-toy-deddie/",
+        "https://www.efsyn.gr/ellada/1439351/neo-tilefonima-gia-vomva-sto-evea-kai-sto-galliko-proxeneio/",
+        "https://www.efsyn.gr/politiki/1439334/eironeies-elas-se-diamantopoyloy-syggnomi-poy-den-hreonoyme-ton-elliniko-lao/",
+        "https://www.efsyn.gr/politiki/1439326/latinopoyloy-kata-mitsotaki-pire-na-eyharistisei-ton-nolan-ntropi-i-hrimatodotisi-tis-mayris-elenis/",
+        "https://www.efsyn.gr/politiki/1439328/synantisi-mitsotaki-doyka-sto-maximoy-ti-syzitisan/",
+        "https://www.efsyn.gr/kosmos/1439329/politico-dyskolo-xekinima-stin-kypro-gia-ton-eidiko-ekprosopo-tis-komision/"
       ],
-      "seen_at_utc": "2026-07-31T08:28:34.202815+00:00"
+      "seen_at_utc": "2026-07-31T09:28:14.314063+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/politics/aftodioikisi/anavathmisi-gipedou-sto-dimo-kallitheas/",
-      "title": "Αναβάθμιση γηπέδου στο Δήμο Καλλιθέας",
-      "normalized_title": "ΑΝΑΒΑΘΜΙΣΗ ΓΗΠΕΔΟΥ ΣΤΟ ΔΗΜΟ ΚΑΛΛΙΘΕΑΣ",
+      "url": "https://www.in.gr/2026/07/31/greece/thessaloniki-tsakali-epitethike-se-4xrono-koritsaki-to-eserne-apo-tin-plati/",
+      "title": "Τρόμος για 4χρονο κορίτσι: Δέχτηκε άγρια επίθεση από τσακάλι - Το έσερνε από την πλάτη",
+      "normalized_title": "ΤΡΟΜΟΣ ΓΙΑ 4ΧΡΟΝΟ ΚΟΡΙΤΣΙ: ΔΕΧΤΗΚΕ ΑΓΡΙΑ ΕΠΙΘΕΣΗ ΑΠΟ ΤΣΑΚΑΛΙ - ΤΟ ΕΣΕΡΝΕ ΑΠΟ ΤΗΝ ΠΛΑΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/politics/aftodioikisi/anavathmisi-gipedou-sto-dimo-kallitheas/",
-        "https://www.in.gr/2026/07/31/greece/argolida-megali-fotia-konta-stis-mykines-ixise-to-112-gia-apomakrynsi-oson-vriskontai-sto-fixti/",
-        "https://www.in.gr/2026/07/31/greece/thyellodeis-voriades-stin-attiki-sta-150-xlm-ora-oi-ripes-anemou-stin-penteli/",
-        "https://www.in.gr/2026/07/31/sports/football/apotheose-paylidi-o-marko-silva-paiktis-kleidi-einai-apo-ekeinous-pou-arnountai-na-ittithoun/",
-        "https://www.in.gr/2026/07/31/life/culture-live/agogi-105-ekat-dolarion-kata-tou-netflix-eksafanistike-to-monadiko-master-tainias-me-ton-nikolas-keitz/",
-        "https://www.in.gr/2026/07/31/economy/oikonomikes-eidiseis/mesi-anatoli-sta-25-dis-eyro-o-protos-logariasmos-tou-polemou-gia-tin-ellada-apotimisi-tis-komision/",
-        "https://www.in.gr/2026/07/31/sports/basketball/euroleague/moxament-ntampone-to-neo-diamanti-tis-mpartselona-kai-tou-eyropaikou-mpasket-egine-ispanos/",
-        "https://www.in.gr/2026/07/31/greece/fotia-stis-fylakes-korydallou-deite-vinteo/",
-        "https://www.in.gr/2026/07/31/politics/aftodioikisi/geotrisi-sti-thesi-klairi-karousadon-dimou-voreias-kerkyras/",
-        "https://www.in.gr/2026/07/31/in-science/technology/h-amazon-kerdise-tin-protia-gia-ta-rompotika-taksi-stis-ipa/"
+        "https://www.in.gr/2026/07/31/greece/thessaloniki-tsakali-epitethike-se-4xrono-koritsaki-to-eserne-apo-tin-plati/",
+        "https://www.in.gr/2026/07/31/greece/syllogos-syggenon-thymaton-sta-tempi-2023-i-dikaiosyni-kaleitai-na-mpei-stin-ousia-tis-ypothesis/",
+        "https://www.in.gr/2026/07/31/politics/politiki-grammateia/institouto-tsipra-ston-aera-eyaisthita-mitroa-krisima-erotimata-gia-ti-megalyteri-symvasi-cloud-stin-istoria-tou-dimosiou/",
+        "https://www.in.gr/2026/07/31/greece/politiki-prostasia-se-katastasi-megistis-etoimotitas-oles-oi-dynameis-logo-ton-poly-isxyron-anemon/",
+        "https://www.in.gr/2026/07/31/greece/tilefonima-gia-vomva-sto-galliko-prokseneio-kai-sto-ktirio-tou-evea-stin-akadimias/",
+        "https://www.in.gr/2026/07/31/go-fun/fizz/ntaiana-kai-karolos-o-protos-kaygas-ston-mina-tou-melitos-gia-to-doro-tis-kamila/",
+        "https://www.in.gr/2026/07/31/sports/football/poia-einai-ta-dedomena-gia-ton-paok-se-europa-kai-conference-league-ti-isxyei-me-tis-kliroseis/",
+        "https://www.in.gr/2026/07/31/in-science/ai/neo-peristatiko-epithesis-apo-ai-to-claude-tis-anthropic-xakare-treis-etaireies/",
+        "https://www.in.gr/2026/07/31/greece/kriti-to-savvato-oi-apologies-ton-8-katigoroumenon-gia-to-kykloma-zooklopon-kai-paranomon-epidotiseon/",
+        "https://www.in.gr/2026/07/31/greece/neos-voutzas-xoris-tis-aisthiseis-tou-atomo-pou-kataplakothike-apo-xomata/",
+        "https://www.in.gr/2026/07/31/politics/aftodioikisi/paraxorisi-ton-apothikon-tou-ypourgeiou-agrotikis-anaptyksis-kai-trofimon-sto-dimo-oropediou-lasithiou/",
+        "https://www.in.gr/2026/07/31/greece/agrinio-thrinos-stin-kideia-tou-27xronou-pyrosvesti-pou-exase-ti-zoi-tou-sto-gytheio/",
+        "https://www.in.gr/2026/07/31/sports/basketball/noua-gia-ari-timi-pou-foresa-ayti-ti-fanela-pisteya-oti-ayto-to-taksidi-tha-itan-gia-polla-xronia/"
       ],
-      "seen_at_utc": "2026-07-31T08:28:34.202780+00:00"
+      "seen_at_utc": "2026-07-31T09:28:14.314037+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T08:28:34.202951+00:00"
+  "updated_at_utc": "2026-07-31T09:28:14.314157+00:00"
 }
