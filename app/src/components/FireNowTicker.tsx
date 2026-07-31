@@ -64,6 +64,7 @@ type FireTickerItem = {
   title: string
   primaryMeta: string
   secondaryMeta: string
+  secondaryTime?: string
   statusColor?: string
   locationLabel?: string
   hasLocation: boolean
@@ -146,10 +147,11 @@ function buildTickerItem(row: CurrentFireRow): FireTickerItem {
     municipalityKey: cleanText(row.municipality_key),
     municipalityLabel: `ΔΗΜΟΣ ${cleanText(row.municipality_raw) ?? '—'}`,
     title: normalizeCurrentFireFuelType(cleanText(row.fuel_type)) ?? '—',
-    primaryMeta: isXSource
-      ? `Αναρτήθηκε: ${formatDateEl(cleanText(row.last_seen_at) ?? cleanText(row.status_updated_at))}`
-      : `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
+    primaryMeta: isXSource ? '' : `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
     secondaryMeta: status,
+    secondaryTime: isXSource
+      ? formatNoticeTime(cleanText(row.last_seen_at) ?? cleanText(row.status_updated_at))
+      : undefined,
     statusColor: CURRENT_FIRE_STATUS_COLORS[status],
     locationLabel: isXSource && cleanText(row.source_location)
       ? `ΠΕΡΙΟΧΗ: ${cleanText(row.source_location)}`
@@ -310,8 +312,13 @@ function renderTickerEntries(
           </span>
           <strong className="fire-ticker__entry-title">{item.title}</strong>
           {item.locationLabel && <span className="fire-ticker__entry-location">{item.locationLabel}</span>}
-          <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>
-          <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
+          {item.primaryMeta && <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>}
+          {item.secondaryMeta && (
+            <span className="fire-ticker__entry-meta fire-ticker__entry-status">
+              <span style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
+              {item.secondaryTime && <span className="fire-ticker__entry-relative-time">{item.secondaryTime}</span>}
+            </span>
+          )}
         </div>
       )}
     </article>,
