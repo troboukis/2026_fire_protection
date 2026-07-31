@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564376150/sir-stelios-chatziioannoy-sto-pleyro-tis-koinonias-kai-ton-mikron-nision/",
-      "title": "Sir Στέλιος Χατζηιωάννου: στο πλευρό της κοινωνίας και των μικρών νησιών",
-      "normalized_title": "SIR ΣΤΕΛΙΟΣ ΧΑΤΖΗΙΩΑΝΝΟΥ: ΣΤΟ ΠΛΕΥΡΟ ΤΗΣ ΚΟΙΝΩΝΙΑΣ ΚΑΙ ΤΩΝ ΜΙΚΡΩΝ ΝΗΣΙΩΝ",
+      "url": "https://www.kathimerini.gr/society/564378052/kavala-synelifthi-elegchomenos-gia-lathremporio-apeilise-oti-tha-steilei-mpravoys/",
+      "title": "Καβάλα: Συνελήφθη ελεγχόμενος για λαθρεμπόριο – Απείλησε ότι θα στείλει «μπράβους»",
+      "normalized_title": "ΚΑΒΑΛΑ: ΣΥΝΕΛΗΦΘΗ ΕΛΕΓΧΟΜΕΝΟΣ ΓΙΑ ΛΑΘΡΕΜΠΟΡΙΟ – ΑΠΕΙΛΗΣΕ ΟΤΙ ΘΑ ΣΤΕΙΛΕΙ «ΜΠΡΑΒΟΥΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/athinaika-plus/564376150/sir-stelios-chatziioannoy-sto-pleyro-tis-koinonias-kai-ton-mikron-nision/",
-        "https://www.kathimerini.gr/society/564378004/kanonika-ta-dromologia-ton-ploion-6/",
-        "https://www.kathimerini.gr/world/564377896/sri-lanka-thanatikes-poines-se-axiomatoychoys-gia-tis-vomvistikes-epitheseis-toy-2019/",
-        "https://www.kathimerini.gr/opinion/564376153/kleinei-ti-syzitisi-gia-ekloges/"
+        "https://www.kathimerini.gr/society/564378052/kavala-synelifthi-elegchomenos-gia-lathremporio-apeilise-oti-tha-steilei-mpravoys/",
+        "https://www.kathimerini.gr/athletics/analysis/564377950/to-prasino-potiri-einai-misoadeio-i-misogemato/",
+        "https://www.kathimerini.gr/culture/564376411/sta-paraskinia-toy-taxitzi/",
+        "https://www.kathimerini.gr/columns/564377803/efivikes-apaitiseis-anektikes-noythesies-kai-oi-eykairies-neon-sto-elliniko-mpasket/",
+        "https://www.kathimerini.gr/culture/564376426/pos-apodideis-eyripidi-sti-noimatiki/"
       ],
-      "seen_at_utc": "2026-07-31T16:30:19.296205+00:00"
+      "seen_at_utc": "2026-07-31T16:51:56.181381+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,32 +1263,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858828/eguklios-tou-upourgeiou-ugeias-gia-tis-foties-odigies-prostasias-apo-ton-kapno-poioi-kinduneuoun-perissotero/?utm_source=rss",
-      "title": "Εγκύκλιος του υπουργείου Υγείας για τις φωτιές: Οδηγίες προστασίας από τον καπνό, ποιοι κινδυνεύουν περισσότερο",
-      "normalized_title": "ΕΓΚΥΚΛΙΟΣ ΤΟΥ ΥΠΟΥΡΓΕΙΟΥ ΥΓΕΙΑΣ ΓΙΑ ΤΙΣ ΦΩΤΙΕΣ: ΟΔΗΓΙΕΣ ΠΡΟΣΤΑΣΙΑΣ ΑΠΟ ΤΟΝ ΚΑΠΝΟ, ΠΟΙΟΙ ΚΙΝΔΥΝΕΥΟΥΝ ΠΕΡΙΣΣΟΤΕΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1858842/apeilise-tous-elegtes-tis-aade-me-bravous-gia-na-xeblokaroun-logariasmo-tou/?utm_source=rss",
+      "title": "Απείλησε τους ελεγκτές της ΑΑΔΕ με «μπράβους» για να ξεμπλοκάρουν λογαριασμό του",
+      "normalized_title": "ΑΠΕΙΛΗΣΕ ΤΟΥΣ ΕΛΕΓΚΤΕΣ ΤΗΣ ΑΑΔΕ ΜΕ «ΜΠΡΑΒΟΥΣ» ΓΙΑ ΝΑ ΞΕΜΠΛΟΚΑΡΟΥΝ ΛΟΓΑΡΙΑΣΜΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858828/eguklios-tou-upourgeiou-ugeias-gia-tis-foties-odigies-prostasias-apo-ton-kapno-poioi-kinduneuoun-perissotero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858842/apeilise-tous-elegtes-tis-aade-me-bravous-gia-na-xeblokaroun-logariasmo-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858839/fotia-tora-stin-keratea/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858834/exegersi-stis-fulakes-korudallou-foties-kai-edasi-gia-tin-ekdosi-tourkou-kratoumenou-video-dokoumedo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T16:30:19.296328+00:00"
+      "seen_at_utc": "2026-07-31T16:51:56.181478+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1439727/krisi-sti-theoyta-i-italia-anastellei-ti-sengken-me-tin-ispania/",
-      "title": "Κρίση στη Θέουτα: Η Ιταλία αναστέλλει τη Σένγκεν με την Ισπανία",
-      "normalized_title": "ΚΡΙΣΗ ΣΤΗ ΘΕΟΥΤΑ: Η ΙΤΑΛΙΑ ΑΝΑΣΤΕΛΛΕΙ ΤΗ ΣΕΝΓΚΕΝ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1439731/voles-elas-gia-tin-ayxisi-toy-aforologitoy-sta-tips-den-prokeitai-gia-nea-parohi-as-eimaste-sovaroi/",
+      "title": "Βολές ΕΛΑΣ για την αύξηση του αφορολόγητου στα tips: «Δεν πρόκειται για νέα παροχή, ας είμαστε σοβαροί»",
+      "normalized_title": "ΒΟΛΕΣ ΕΛΑΣ ΓΙΑ ΤΗΝ ΑΥΞΗΣΗ ΤΟΥ ΑΦΟΡΟΛΟΓΗΤΟΥ ΣΤΑ TIPS: «ΔΕΝ ΠΡΟΚΕΙΤΑΙ ΓΙΑ ΝΕΑ ΠΑΡΟΧΗ, ΑΣ ΕΙΜΑΣΤΕ ΣΟΒΑΡΟΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1439727/krisi-sti-theoyta-i-italia-anastellei-ti-sengken-me-tin-ispania/"
+        "https://www.efsyn.gr/politiki/1439731/voles-elas-gia-tin-ayxisi-toy-aforologitoy-sta-tips-den-prokeitai-gia-nea-parohi-as-eimaste-sovaroi/"
       ],
-      "seen_at_utc": "2026-07-31T16:30:19.296289+00:00"
+      "seen_at_utc": "2026-07-31T16:51:56.181453+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/world/i-italia-anastellei-ti-sengken-me-tin-ispania-logo-tis-krisis-sti-theouta/",
-      "title": "Η Ιταλία αναστέλλει τη Σένγκεν με την Ισπανία μετά την κρίση στη Θέουτα",
-      "normalized_title": "Η ΙΤΑΛΙΑ ΑΝΑΣΤΕΛΛΕΙ ΤΗ ΣΕΝΓΚΕΝ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ ΜΕΤΑ ΤΗΝ ΚΡΙΣΗ ΣΤΗ ΘΕΟΥΤΑ",
+      "url": "https://www.in.gr/2026/07/31/greece/fotia-stin-keratea-epixeiroun-52-pyrosvestes/",
+      "title": "Φωτιά στην Κερατέα – Επιχειρούν 52 πυροσβέστες",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΕΡΑΤΕΑ – ΕΠΙΧΕΙΡΟΥΝ 52 ΠΥΡΟΣΒΕΣΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/world/i-italia-anastellei-ti-sengken-me-tin-ispania-logo-tis-krisis-sti-theouta/"
+        "https://www.in.gr/2026/07/31/greece/fotia-stin-keratea-epixeiroun-52-pyrosvestes/",
+        "https://www.in.gr/2026/07/31/sports/football/paiktis-tou-panathinaikou-ki-episima-o-kingks-kangkoua/",
+        "https://www.in.gr/2026/07/31/life/culture-live/to-kastro-koumamoto-tis-iaponias-ypesti-zimies-logo-seismou/"
       ],
-      "seen_at_utc": "2026-07-31T16:30:19.296260+00:00"
+      "seen_at_utc": "2026-07-31T16:51:56.181421+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T16:30:19.296405+00:00"
+  "updated_at_utc": "2026-07-31T16:51:56.181563+00:00"
 }
