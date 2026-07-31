@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564376594/anodika-para-tis-geopolitikes-anataraxeis-o-toyrismos/",
-      "title": "Ανοδικά, παρά τις γεωπολιτικές αναταράξεις ο τουρισμός",
-      "normalized_title": "ΑΝΟΔΙΚΑ, ΠΑΡΑ ΤΙΣ ΓΕΩΠΟΛΙΤΙΚΕΣ ΑΝΑΤΑΡΑΞΕΙΣ Ο ΤΟΥΡΙΣΜΟΣ",
+      "url": "https://www.kathimerini.gr/society/564378877/pyrinos-efialtis-sto-porto-germeno-olonyktia-machi-se-polla-metopa/",
+      "title": "Πύρινος εφιάλτης στο Πόρτο Γερμενό – Ολονύκτια μάχη σε πολλά μέτωπα",
+      "normalized_title": "ΠΥΡΙΝΟΣ ΕΦΙΑΛΤΗΣ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ – ΟΛΟΝΥΚΤΙΑ ΜΑΧΗ ΣΕ ΠΟΛΛΑ ΜΕΤΩΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564376594/anodika-para-tis-geopolitikes-anataraxeis-o-toyrismos/",
-        "https://www.kathimerini.gr/economy/564376714/se-anthisi-oi-etaireies-toy-enos-atomoy-me-tziro-ekatommyrion/",
-        "https://www.kathimerini.gr/economy/business/564374221/sta-283-2-ekat-eyro-ta-kerdi-toy-ote-to-proto-examino/",
-        "https://www.kathimerini.gr/society/564378898/treis-syllipseis-gia-emporia-anthropon-kai-mastropeia-stin-xanthi/"
+        "https://www.kathimerini.gr/society/564378877/pyrinos-efialtis-sto-porto-germeno-olonyktia-machi-se-polla-metopa/",
+        "https://www.kathimerini.gr/visual/infographics/564376264/klimatiki-krisi-kai-energeia-prooptikes-ellinikis-symvolis/"
       ],
-      "seen_at_utc": "2026-07-31T20:17:20.698476+00:00"
+      "seen_at_utc": "2026-07-31T20:30:11.704055+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,25 +1270,23 @@
       "seen_at_utc": "2026-07-31T20:17:20.698588+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1439838/sok-ston-panathinaiko-me-pantelidi-ypesti-katagma-knimis-peronis-kai-mpainei-sto-heiroyrgeio/",
-      "title": "Σοκ στον Παναθηναϊκό με Παντελίδη: Υπέστη κάταγμα κνήμης – περόνης και μπαίνει στο χειρουργείο",
-      "normalized_title": "ΣΟΚ ΣΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΜΕ ΠΑΝΤΕΛΙΔΗ: ΥΠΕΣΤΗ ΚΑΤΑΓΜΑ ΚΝΗΜΗΣ – ΠΕΡΟΝΗΣ ΚΑΙ ΜΠΑΙΝΕΙ ΣΤΟ ΧΕΙΡΟΥΡΓΕΙΟ",
+      "url": "https://www.efsyn.gr/ellada/1439852/paros-apagoreytike-o-apoploys-fortigoy-ploioy-vlavi-paroysiase-o-katapeltis-toy/",
+      "title": "Πάρος: Απαγορεύτηκε ο απόπλους φορτηγού πλοίου – Παρουσίασε βλάβη ο καταπέλτης του",
+      "normalized_title": "ΠΑΡΟΣ: ΑΠΑΓΟΡΕΥΤΗΚΕ Ο ΑΠΟΠΛΟΥΣ ΦΟΡΤΗΓΟΥ ΠΛΟΙΟΥ – ΠΑΡΟΥΣΙΑΣΕ ΒΛΑΒΗ Ο ΚΑΤΑΠΕΛΤΗΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1439838/sok-ston-panathinaiko-me-pantelidi-ypesti-katagma-knimis-peronis-kai-mpainei-sto-heiroyrgeio/"
+        "https://www.efsyn.gr/ellada/1439852/paros-apagoreytike-o-apoploys-fortigoy-ploioy-vlavi-paroysiase-o-katapeltis-toy/"
       ],
-      "seen_at_utc": "2026-07-31T20:17:20.698568+00:00"
+      "seen_at_utc": "2026-07-31T20:30:11.704150+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/sports/football/reuters-i-fifa-epimenei-sto-plano-gia-mountial-64-omadon/",
-      "title": "Reuters: «Η FIFA επιμένει στο πλάνο για Μουντιάλ 64 ομάδων»",
-      "normalized_title": "REUTERS: «Η FIFA ΕΠΙΜΕΝΕΙ ΣΤΟ ΠΛΑΝΟ ΓΙΑ ΜΟΥΝΤΙΑΛ 64 ΟΜΑΔΩΝ»",
+      "url": "https://www.in.gr/2026/07/31/greece/ksanthi-treis-syllipseis-gia-emporia-anthropon-kai-mastropeia/",
+      "title": "Τρεις συλλήψεις στην Ξάνθη για εμπορία ανθρώπων και μαστροπεία",
+      "normalized_title": "ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΣΤΗΝ ΞΑΝΘΗ ΓΙΑ ΕΜΠΟΡΙΑ ΑΝΘΡΩΠΩΝ ΚΑΙ ΜΑΣΤΡΟΠΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/sports/football/reuters-i-fifa-epimenei-sto-plano-gia-mountial-64-omadon/",
-        "https://www.in.gr/2026/07/31/economy/diethnis-oikonomia/gouors-peristeri-se-kostoumi-gerakiou/",
-        "https://www.in.gr/2026/07/31/greece/synedriasi-tou-syntonistikou-politikis-prostasias-gia-tis-foties-poies-perioxes-tithentai-se-red-code/"
+        "https://www.in.gr/2026/07/31/greece/ksanthi-treis-syllipseis-gia-emporia-anthropon-kai-mastropeia/"
       ],
-      "seen_at_utc": "2026-07-31T20:17:20.698528+00:00"
+      "seen_at_utc": "2026-07-31T20:30:11.704104+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T20:17:20.698653+00:00"
+  "updated_at_utc": "2026-07-31T20:30:11.704228+00:00"
 }
