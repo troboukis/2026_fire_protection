@@ -757,6 +757,10 @@ main {
   margin: 0.2rem 0 0;
   padding-top: 0.55rem;
   border-top: 1px solid rgba(17, 17, 17, 0.08);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  line-height: 1.25;
+  color: var(--ink-soft);
 }
 
 .fire-ticker__title strong {
@@ -764,33 +768,6 @@ main {
   line-height: 1;
   letter-spacing: -0.03em;
   white-space: nowrap;
-}
-
-.fire-ticker__status-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  min-height: 1rem;
-  margin-top: 0.15rem;
-  align-items: center;
-}
-
-.fire-ticker__status-pill {
-  display: inline;
-  font-family: var(--font-mono);
-  font-size: 0.64rem;
-  line-height: 1.2;
-  color: var(--ink-soft);
-  white-space: normal;
-}
-
-.fire-ticker__status-separator {
-  display: inline-block;
-  width: 0.28rem;
-  height: 0.28rem;
-  border-radius: 999px;
-  background: #111;
-  flex: 0 0 auto;
 }
 
 .fire-ticker__viewport {
@@ -947,6 +924,14 @@ main {
   align-items: center;
   gap: 0.28rem;
   letter-spacing: 0.03em;
+}
+
+.fire-ticker__entry-location {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.25;
+  color: var(--ink);
+  letter-spacing: 0.02em;
 }
 
 .fire-ticker__location-icon {

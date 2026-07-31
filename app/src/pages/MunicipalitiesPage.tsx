@@ -90,6 +90,7 @@ type CurrentFireRow = {
   lon: number | string | null
   source: string | null
   source_account: string | null
+  source_location: string | null
 }
 
 type CopernicusRow = {
@@ -1687,6 +1688,7 @@ export default function MunicipalitiesPage() {
         sourceLabel: cleanText(row.source) === 'fireservice_x'
           ? `Πηγή: Πυροσβεστικό Σώμα στο X (${cleanText(row.source_account) ?? '@pyrosvestiki'})`
           : null,
+        sourceLocation: cleanText(row.source_location),
       }]
     })
   }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap])
@@ -2539,7 +2541,7 @@ export default function MunicipalitiesPage() {
           fetchAllPaginatedRows<CurrentFireRow>(
             (from, to) => supabase
               .from('current_fires')
-              .select('incident_key, first_seen_at, is_current, region, regional_unit, municipality_raw, fuel_type, status, status_updated_at, start_date, lat, lon, source, source_account')
+              .select('incident_key, first_seen_at, is_current, region, regional_unit, municipality_raw, fuel_type, status, status_updated_at, start_date, lat, lon, source, source_account, source_location')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('status_updated_at', { ascending: false, nullsFirst: false })
               .order('first_seen_at', { ascending: false, nullsFirst: false })
@@ -3943,6 +3945,7 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
                                     fire.area ? `Περιοχή: ${fire.area}` : null,
+                                    fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
@@ -3957,6 +3960,7 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
                                     fire.area ? `Περιοχή: ${fire.area}` : null,
+                                    fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
@@ -3978,6 +3982,7 @@ export default function MunicipalitiesPage() {
                                     'Ενεργή πυρκαγιά',
                                     [
                                       fire.area ? `Περιοχή: ${fire.area}` : null,
+                                      fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
                                       fire.fuelType,
                                       fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                       fire.status,

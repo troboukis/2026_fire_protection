@@ -93,6 +93,7 @@ type ActiveFirePoint = {
   status: string | null
   source: string | null
   sourceAccount: string | null
+  sourceLocation: string | null
 }
 
 type CurrentFireRow = {
@@ -106,6 +107,7 @@ type CurrentFireRow = {
   status: string | null
   source: string | null
   source_account: string | null
+  source_location: string | null
 }
 
 type HoveredFirmsTooltip = {
@@ -374,6 +376,7 @@ function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
         status: cleanText(row.status),
         source: cleanText(row.source),
         sourceAccount: cleanText(row.source_account),
+        sourceLocation: cleanText(row.source_location),
       } satisfies ActiveFirePoint
     })
     .filter((row): row is ActiveFirePoint => row !== null)
@@ -382,7 +385,7 @@ function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
 function currentFiresQuery() {
   return supabase
     .from('current_fires')
-    .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status, source, source_account')
+    .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status, source, source_account, source_location')
     .eq('is_current', true)
     .not('lat', 'is', null)
     .not('lon', 'is', null)
@@ -1042,6 +1045,7 @@ export default function SituationMap() {
         label: [
           fire.municipalityName ? `Ενεργή πυρκαγιά - ΔΗΜΟΣ ${fire.municipalityName}` : 'Ενεργή πυρκαγιά',
           fire.fuelType,
+          fire.sourceLocation ? `Περιοχή: ${fire.sourceLocation}` : null,
           fire.startDate ? `Ξέσπασε: ${formatDateEl(fire.startDate)}` : null,
           normalizeCurrentFireStatus(fire.status) ?? 'Ενεργή πυρκαγιά',
           fire.source === 'fireservice_x'
@@ -1830,6 +1834,7 @@ export default function SituationMap() {
                 <div className="fire-copernicus__tooltip-item">
                   <strong>{hoveredActiveFire.item.municipalityName ? `ΔΗΜΟΣ ${hoveredActiveFire.item.municipalityName}` : 'Άγνωστη περιοχή'}</strong>
                   <span>{hoveredActiveFire.item.fuelType ?? '—'}</span>
+                  {hoveredActiveFire.item.sourceLocation && <span>Περιοχή: {hoveredActiveFire.item.sourceLocation}</span>}
                   <span>Ξέσπασε: {formatDateEl(hoveredActiveFire.item.startDate)}</span>
                   <span>{hoveredActiveFire.item.normalizedStatus}</span>
                   {hoveredActiveFire.item.source === 'fireservice_x' && (
