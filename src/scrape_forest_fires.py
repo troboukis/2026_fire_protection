@@ -1133,6 +1133,10 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
             parse_iso_datetime_or_none(row.get("geocoded_at")),
             clean(row.get("status")) or None,
             clean(row.get("raw")) or None,
+            "fireservice_live_page",
+            None,
+            None,
+            URL,
         )
         for row in rows
     ]
@@ -1163,7 +1167,11 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           geocode_query,
           geocoded_at,
           status,
-          raw
+          raw,
+          source,
+          source_account,
+          source_post_id,
+          source_url
         ) VALUES %s
         ON CONFLICT (incident_key) DO UPDATE SET
           first_seen_at = EXCLUDED.first_seen_at,
@@ -1186,7 +1194,11 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           geocode_query = EXCLUDED.geocode_query,
           geocoded_at = EXCLUDED.geocoded_at,
           status = EXCLUDED.status,
-          raw = EXCLUDED.raw
+          raw = EXCLUDED.raw,
+          source = EXCLUDED.source,
+          source_account = EXCLUDED.source_account,
+          source_post_id = EXCLUDED.source_post_id,
+          source_url = EXCLUDED.source_url
         """,
         payload,
     )
@@ -1210,12 +1222,37 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--db-path", type=str, default=None, help="Optional DATABASE_URL override")
     p.add_argument("--google-geocoding-api-key", default=None, help="Google Geocoding API key override")
     p.add_argument("--skip-geocoding", action="store_true", help="Skip Google geocoding for active fire rows")
+    p.add_argument(
+        "--disable-x-fallback",
+        action="store_true",
+        help="Do not use @pyrosvestiki when the live incidents iframe returns HTTP 500",
+    )
     args = p.parse_args(argv)
 
     try:
         html, _ = fetch(args.url)
         scraped_at = datetime.now(timezone.utc)
     except requests.RequestException as exc:
+        response = getattr(exc, "response", None)
+        is_iframe_500 = (
+            response is not None
+            and response.status_code == 500
+            and "/apps/fire2019/symvanta/" in response.url
+        )
+        if is_iframe_500 and not args.disable_x_fallback:
+            print(
+                "WARNING: Fire Service incidents iframe returned HTTP 500; "
+                "running the @pyrosvestiki X fallback.",
+                file=sys.stderr,
+            )
+            try:
+                from fetch_pyrosvestiki_fires import main as run_x_fallback
+            except ModuleNotFoundError:
+                from src.fetch_pyrosvestiki_fires import main as run_x_fallback
+            fallback_args: list[str] = []
+            if args.db_path:
+                fallback_args.extend(["--db-path", args.db_path])
+            return run_x_fallback(fallback_args)
         print(f"ERROR: failed to fetch {args.url}: {exc}", file=sys.stderr)
         return 2
 

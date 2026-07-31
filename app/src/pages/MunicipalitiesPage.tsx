@@ -88,6 +88,8 @@ type CurrentFireRow = {
   start_date: string | null
   lat: number | string | null
   lon: number | string | null
+  source: string | null
+  source_account: string | null
 }
 
 type CopernicusRow = {
@@ -1682,6 +1684,9 @@ export default function MunicipalitiesPage() {
         statusColor: getCurrentFireStatusColor(row.status),
         startDate: cleanText(row.start_date) ?? cleanText(row.first_seen_at),
         area: cleanText(row.municipality_raw) ?? cleanText(row.regional_unit) ?? cleanText(row.region),
+        sourceLabel: cleanText(row.source) === 'fireservice_x'
+          ? `Πηγή: Πυροσβεστικό Σώμα στο X (${cleanText(row.source_account) ?? '@pyrosvestiki'})`
+          : null,
       }]
     })
   }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap])
@@ -2534,7 +2539,7 @@ export default function MunicipalitiesPage() {
           fetchAllPaginatedRows<CurrentFireRow>(
             (from, to) => supabase
               .from('current_fires')
-              .select('incident_key, first_seen_at, is_current, region, regional_unit, municipality_raw, fuel_type, status, status_updated_at, start_date, lat, lon')
+              .select('incident_key, first_seen_at, is_current, region, regional_unit, municipality_raw, fuel_type, status, status_updated_at, start_date, lat, lon, source, source_account')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('status_updated_at', { ascending: false, nullsFirst: false })
               .order('first_seen_at', { ascending: false, nullsFirst: false })
@@ -3941,6 +3946,7 @@ export default function MunicipalitiesPage() {
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
+                                    fire.sourceLabel,
                                     'Θέση κατά προσέγγιση',
                                   ], {
                                     id: fire.key,
@@ -3954,6 +3960,7 @@ export default function MunicipalitiesPage() {
                                     fire.fuelType,
                                     fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                     fire.status,
+                                    fire.sourceLabel,
                                     'Θέση κατά προσέγγιση',
                                   ], {
                                     id: fire.key,
@@ -3974,6 +3981,7 @@ export default function MunicipalitiesPage() {
                                       fire.fuelType,
                                       fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
                                       fire.status,
+                                      fire.sourceLabel,
                                       'Θέση κατά προσέγγιση',
                                     ],
                                     fire.key,

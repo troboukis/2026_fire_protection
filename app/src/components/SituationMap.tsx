@@ -91,6 +91,8 @@ type ActiveFirePoint = {
   fuelType: string | null
   startDate: string | null
   status: string | null
+  source: string | null
+  sourceAccount: string | null
 }
 
 type CurrentFireRow = {
@@ -102,6 +104,8 @@ type CurrentFireRow = {
   fuel_type: string | null
   start_date: string | null
   status: string | null
+  source: string | null
+  source_account: string | null
 }
 
 type HoveredFirmsTooltip = {
@@ -368,6 +372,8 @@ function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
         fuelType: cleanText(row.fuel_type),
         startDate: cleanText(row.start_date),
         status: cleanText(row.status),
+        source: cleanText(row.source),
+        sourceAccount: cleanText(row.source_account),
       } satisfies ActiveFirePoint
     })
     .filter((row): row is ActiveFirePoint => row !== null)
@@ -376,7 +382,7 @@ function mapCurrentFireRows(rows: CurrentFireRow[]): ActiveFirePoint[] {
 function currentFiresQuery() {
   return supabase
     .from('current_fires')
-    .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status')
+    .select('incident_key, lat, lon, municipality_key, municipality_raw, fuel_type, start_date, status, source, source_account')
     .eq('is_current', true)
     .not('lat', 'is', null)
     .not('lon', 'is', null)
@@ -1038,6 +1044,9 @@ export default function SituationMap() {
           fire.fuelType,
           fire.startDate ? `Ξέσπασε: ${formatDateEl(fire.startDate)}` : null,
           normalizeCurrentFireStatus(fire.status) ?? 'Ενεργή πυρκαγιά',
+          fire.source === 'fireservice_x'
+            ? `Πηγή: Πυροσβεστικό Σώμα στο X (${fire.sourceAccount ?? '@pyrosvestiki'})`
+            : null,
         ].filter(Boolean).join(' · '),
       })
     }
@@ -1823,6 +1832,9 @@ export default function SituationMap() {
                   <span>{hoveredActiveFire.item.fuelType ?? '—'}</span>
                   <span>Ξέσπασε: {formatDateEl(hoveredActiveFire.item.startDate)}</span>
                   <span>{hoveredActiveFire.item.normalizedStatus}</span>
+                  {hoveredActiveFire.item.source === 'fireservice_x' && (
+                    <span>Πηγή: Πυροσβεστικό Σώμα στο X ({hoveredActiveFire.item.sourceAccount ?? '@pyrosvestiki'})</span>
+                  )}
                 </div>
               </div>
             )}
