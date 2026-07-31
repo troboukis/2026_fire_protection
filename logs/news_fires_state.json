@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/interviews/564376606/iniatsio-kasis-stin-k-oi-elvetikes-epicheiriseis-echoyn-ependysei-4-5-dis-eyro-stin-ellada/",
-      "title": "Ινιάτσιο Κασίς στην «Κ»: Oι ελβετικές επιχειρήσεις έχουν επενδύσει 4,5 δισ. ευρώ στην Ελλάδα",
-      "normalized_title": "ΙΝΙΑΤΣΙΟ ΚΑΣΙΣ ΣΤΗΝ «Κ»: OΙ ΕΛΒΕΤΙΚΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ ΕΧΟΥΝ ΕΠΕΝΔΥΣΕΙ 4,5 ΔΙΣ. ΕΥΡΩ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.kathimerini.gr/economy/local/564376597/ti-ischyei-me-tis-yperories-ston-toyristiko-klado-kai-pos-plironontai/",
+      "title": "Τι ισχύει με τις υπερωρίες στον τουριστικό κλάδο και πώς πληρώνονται",
+      "normalized_title": "ΤΙ ΙΣΧΥΕΙ ΜΕ ΤΙΣ ΥΠΕΡΩΡΙΕΣ ΣΤΟΝ ΤΟΥΡΙΣΤΙΚΟ ΚΛΑΔΟ ΚΑΙ ΠΩΣ ΠΛΗΡΩΝΟΝΤΑΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/interviews/564376606/iniatsio-kasis-stin-k-oi-elvetikes-epicheiriseis-echoyn-ependysei-4-5-dis-eyro-stin-ellada/",
-        "https://www.kathimerini.gr/world/564378865/germania-nea-paratasi-ton-synoriakon-elegchon-kai-meta-ton-septemvrio/"
+        "https://www.kathimerini.gr/economy/local/564376597/ti-ischyei-me-tis-yperories-ston-toyristiko-klado-kai-pos-plironontai/"
       ],
-      "seen_at_utc": "2026-07-31T19:17:17.505308+00:00"
+      "seen_at_utc": "2026-07-31T19:30:21.244321+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1259,32 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858894/treis-sullipseis-gia-eboria-anthropon-kai-mastropeia-stin-xanthi/?utm_source=rss",
-      "title": "Τρεις συλλήψεις για εμπορία ανθρώπων και μαστροπεία στην Ξάνθη",
-      "normalized_title": "ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΕΜΠΟΡΙΑ ΑΝΘΡΩΠΩΝ ΚΑΙ ΜΑΣΤΡΟΠΕΙΑ ΣΤΗΝ ΞΑΝΘΗ",
+      "url": "https://www.protothema.gr/greece/article/1858896/sto-laurio-espeusmena-to-blue-star-paros-meta-ton-apoplou-apo-ton-peiraia-epivatis-metaferthike-se-nosokomeio/?utm_source=rss",
+      "title": "Στο Λαύριο εσπευσμένα το Blue Star Paros μετά τον απόπλου από τον Πειραιά, επιβάτης διακομίστηκε σε νοσοκομείο",
+      "normalized_title": "ΣΤΟ ΛΑΥΡΙΟ ΕΣΠΕΥΣΜΕΝΑ ΤΟ BLUE STAR PAROS ΜΕΤΑ ΤΟΝ ΑΠΟΠΛΟΥ ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ, ΕΠΙΒΑΤΗΣ ΔΙΑΚΟΜΙΣΤΗΚΕ ΣΕ ΝΟΣΟΚΟΜΕΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858894/treis-sullipseis-gia-eboria-anthropon-kai-mastropeia-stin-xanthi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858892/sunagermos-gia-tis-foties-red-code-se-10-periohes-se-epifulaki-olos-o-kratikos-mihanismos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858896/sto-laurio-espeusmena-to-blue-star-paros-meta-ton-apoplou-apo-ton-peiraia-epivatis-metaferthike-se-nosokomeio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T19:17:17.505514+00:00"
+      "seen_at_utc": "2026-07-31T19:30:21.244416+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1439807/o-tramp-evale-nekra-sto-thema-tis-kataskeyis-patriot-stin-oykrania/",
-      "title": "Ο Τραμπ έβαλε… «νεκρά» στο θέμα της κατασκευής Patriot στην Ουκρανία",
-      "normalized_title": "Ο ΤΡΑΜΠ ΕΒΑΛΕ… «ΝΕΚΡΑ» ΣΤΟ ΘΕΜΑ ΤΗΣ ΚΑΤΑΣΚΕΥΗΣ PATRIOT ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.efsyn.gr/kosmos/1439815/ispania-pyrkagies-ena-horio-enothike-gia-na-sosei-mia-kastania-500-eton-apo-tis-floges/",
+      "title": "Ισπανία-πυρκαγιές: Ένα χωριό ενώθηκε για να σώσει μια καστανιά 500 ετών από τις φλόγες",
+      "normalized_title": "ΙΣΠΑΝΙΑ-ΠΥΡΚΑΓΙΕΣ: ΕΝΑ ΧΩΡΙΟ ΕΝΩΘΗΚΕ ΓΙΑ ΝΑ ΣΩΣΕΙ ΜΙΑ ΚΑΣΤΑΝΙΑ 500 ΕΤΩΝ ΑΠΟ ΤΙΣ ΦΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1439807/o-tramp-evale-nekra-sto-thema-tis-kataskeyis-patriot-stin-oykrania/"
+        "https://www.efsyn.gr/kosmos/1439815/ispania-pyrkagies-ena-horio-enothike-gia-na-sosei-mia-kastania-500-eton-apo-tis-floges/"
       ],
-      "seen_at_utc": "2026-07-31T19:17:17.505470+00:00"
+      "seen_at_utc": "2026-07-31T19:30:21.244389+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/world/ena-olokliro-xorio-enothike-gia-na-prostatepsei-ena-dentro-500-800-eton-apo-tis-floges-stin-ispania/",
-      "title": "Ένα ολόκληρο χωριό ενώθηκε για να προστατέψει ένα δέντρο 500 – 800 ετών από τις φλόγες στην Ισπανία",
-      "normalized_title": "ΕΝΑ ΟΛΟΚΛΗΡΟ ΧΩΡΙΟ ΕΝΩΘΗΚΕ ΓΙΑ ΝΑ ΠΡΟΣΤΑΤΕΨΕΙ ΕΝΑ ΔΕΝΤΡΟ 500 – 800 ΕΤΩΝ ΑΠΟ ΤΙΣ ΦΛΟΓΕΣ ΣΤΗΝ ΙΣΠΑΝΙΑ",
+      "url": "https://www.in.gr/2026/07/31/world/seismos-47-vathmon-tis-klimakas-rixter-konta-sti-napoli-prokalei-simantikes-zimies/",
+      "title": "Σεισμός 4,7 βαθμών της κλίμακας Ρίχτερ κοντά στη Νάπολη προκαλεί σημαντικές ζημιές",
+      "normalized_title": "ΣΕΙΣΜΟΣ 4,7 ΒΑΘΜΩΝ ΤΗΣ ΚΛΙΜΑΚΑΣ ΡΙΧΤΕΡ ΚΟΝΤΑ ΣΤΗ ΝΑΠΟΛΗ ΠΡΟΚΑΛΕΙ ΣΗΜΑΝΤΙΚΕΣ ΖΗΜΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/world/ena-olokliro-xorio-enothike-gia-na-prostatepsei-ena-dentro-500-800-eton-apo-tis-floges-stin-ispania/",
-        "https://www.in.gr/2026/07/31/world/to-israil-einai-dysarestimeno-me-ti-symfonia-afoplismou-tis-xamas-den-protithetai-na-aposyrthei-apo-ti-gaza/",
-        "https://www.in.gr/2026/07/31/world/skandalo-stin-komision-mystikes-epafes-me-israil-gia-astynomiki-synergasia/",
-        "https://www.in.gr/2026/07/31/sports/football/o-tramp-arneitai-katigorimatika-opoiadipote-symmetoxi-tou-sto-plano-tou-infantino-gia-to-mountial/"
+        "https://www.in.gr/2026/07/31/world/seismos-47-vathmon-tis-klimakas-rixter-konta-sti-napoli-prokalei-simantikes-zimies/"
       ],
-      "seen_at_utc": "2026-07-31T19:17:17.505411+00:00"
+      "seen_at_utc": "2026-07-31T19:30:21.244363+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T19:17:17.505621+00:00"
+  "updated_at_utc": "2026-07-31T19:30:21.244476+00:00"
 }
