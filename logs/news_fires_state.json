@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564377575/ispania-25-000-metanastes-epestrepsan-oikeiothelos-sto-maroko-apo-ti-theoyta/",
-      "title": "Ισπανία: 25.000 μετανάστες επέστρεψαν οικειοθελώς στο Μαρόκο από τη Θέουτα",
-      "normalized_title": "ΙΣΠΑΝΙΑ: 25.000 ΜΕΤΑΝΑΣΤΕΣ ΕΠΕΣΤΡΕΨΑΝ ΟΙΚΕΙΟΘΕΛΩΣ ΣΤΟ ΜΑΡΟΚΟ ΑΠΟ ΤΗ ΘΕΟΥΤΑ",
+      "url": "https://www.kathimerini.gr/society/564377602/foties-pos-na-prostateyteite-apo-ton-kapno-oi-odigies-ton-eidikon/",
+      "title": "Φωτιές: Πώς να προστατευτείτε από τον καπνό – Οι ειδικοί συμβουλεύουν",
+      "normalized_title": "ΦΩΤΙΕΣ: ΠΩΣ ΝΑ ΠΡΟΣΤΑΤΕΥΤΕΙΤΕ ΑΠΟ ΤΟΝ ΚΑΠΝΟ – ΟΙ ΕΙΔΙΚΟΙ ΣΥΜΒΟΥΛΕΥΟΥΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564377575/ispania-25-000-metanastes-epestrepsan-oikeiothelos-sto-maroko-apo-ti-theoyta/",
-        "https://www.kathimerini.gr/society/564377560/fotia-ston-agio-vasileio-dramatikes-eikones-apo-tin-epicheirisi-ekkenosis/",
-        "https://www.kathimerini.gr/life/auto/564377527/dokimazoyme-to-petrelaiokinito-opel-astra/"
+        "https://www.kathimerini.gr/society/564377602/foties-pos-na-prostateyteite-apo-ton-kapno-oi-odigies-ton-eidikon/",
+        "https://www.kathimerini.gr/opinion/readers/564376363/pos-vathmologo-tin-kyvernisi/",
+        "https://www.kathimerini.gr/opinion/readers/564376351/i-dichonoia-mas-o-megalos-koinos-echthros/",
+        "https://www.kathimerini.gr/opinion/readers/564376354/gia-ta-polykentra-tis-anakyklosis/",
+        "https://www.kathimerini.gr/opinion/readers/564376357/to-chatgpt-politikoi-kai-symfrazomena/",
+        "https://www.kathimerini.gr/economy/564376651/rekor-esodon-kai-kerdon-gia-euronext-to-v-trimino/"
       ],
-      "seen_at_utc": "2026-07-31T12:51:19.028632+00:00"
+      "seen_at_utc": "2026-07-31T13:17:14.160405+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1264,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858729/fotia-tora-stin-perifereiaki-aigaleo/?utm_source=rss",
-      "title": "Φωτιά τώρα στην Περιφερειακή Αιγάλεω",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΠΕΡΙΦΕΡΕΙΑΚΗ ΑΙΓΑΛΕΩ",
+      "url": "https://www.protothema.gr/greece/article/1858733/dimos-athinaion-kleinoun-apo-ta-mesanuhta-oi-lofoi-lukavittou-kai-finopoulou-logo-akraiou-kindunou-purkagias/?utm_source=rss",
+      "title": "Δήμος Αθηναίων: Κλείνουν από τα μεσάνυχτα οι λόφοι Λυκαβηττού και Φινόπουλου λόγω ακραίου κινδύνου πυρκαγιάς",
+      "normalized_title": "ΔΗΜΟΣ ΑΘΗΝΑΙΩΝ: ΚΛΕΙΝΟΥΝ ΑΠΟ ΤΑ ΜΕΣΑΝΥΧΤΑ ΟΙ ΛΟΦΟΙ ΛΥΚΑΒΗΤΤΟΥ ΚΑΙ ΦΙΝΟΠΟΥΛΟΥ ΛΟΓΩ ΑΚΡΑΙΟΥ ΚΙΝΔΥΝΟΥ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858729/fotia-tora-stin-perifereiaki-aigaleo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858716/apo-opla-kai-narkotika-mehri-papagalous-ti-edopisan-oi-eleghoi-tis-aade-sta-teloneia-to-examino-ianouariou-iouniou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858733/dimos-athinaion-kleinoun-apo-ta-mesanuhta-oi-lofoi-lukavittou-kai-finopoulou-logo-akraiou-kindunou-purkagias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T12:51:19.028740+00:00"
+      "seen_at_utc": "2026-07-31T13:17:14.160530+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1439573/theoyta-60-000-metanastes-perasan-ta-synora-kai-34-pethanan-o-santseth-katigorei-ti-mafia-diakiniton-gia-parapliroforisi/",
-      "title": "Θέουτα: 60.000 μετανάστες πέρασαν τα σύνορα και 34 πέθαναν – Ο Σάντσεθ κατηγορεί τη μαφία διακινητών για παραπληροφόρηση",
-      "normalized_title": "ΘΕΟΥΤΑ: 60.000 ΜΕΤΑΝΑΣΤΕΣ ΠΕΡΑΣΑΝ ΤΑ ΣΥΝΟΡΑ ΚΑΙ 34 ΠΕΘΑΝΑΝ – Ο ΣΑΝΤΣΕΘ ΚΑΤΗΓΟΡΕΙ ΤΗ ΜΑΦΙΑ ΔΙΑΚΙΝΗΤΩΝ ΓΙΑ ΠΑΡΑΠΛΗΡΟΦΟΡΗΣΗ",
+      "url": "https://www.efsyn.gr/politiki/1439605/pyra-syriza-se-marinaki-paroysiase-mia-ellada-poy-yparhei-mono-stis-kyvernitikes-anakoinoseis/",
+      "title": "Πυρά ΣΥΡΙΖΑ σε Μαρινάκη: Παρουσίασε μια Ελλάδα που υπάρχει μόνο στις κυβερνητικές ανακοινώσεις",
+      "normalized_title": "ΠΥΡΑ ΣΥΡΙΖΑ ΣΕ ΜΑΡΙΝΑΚΗ: ΠΑΡΟΥΣΙΑΣΕ ΜΙΑ ΕΛΛΑΔΑ ΠΟΥ ΥΠΑΡΧΕΙ ΜΟΝΟ ΣΤΙΣ ΚΥΒΕΡΝΗΤΙΚΕΣ ΑΝΑΚΟΙΝΩΣΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1439573/theoyta-60-000-metanastes-perasan-ta-synora-kai-34-pethanan-o-santseth-katigorei-ti-mafia-diakiniton-gia-parapliroforisi/",
-        "https://www.efsyn.gr/ellada/1439562/fylakes-korydalloy-pos-xespase-i-entasi-i-metagogi-toyrkoy-kai-i-fotia-sta-kelia/"
+        "https://www.efsyn.gr/politiki/1439605/pyra-syriza-se-marinaki-paroysiase-mia-ellada-poy-yparhei-mono-stis-kyvernitikes-anakoinoseis/",
+        "https://www.efsyn.gr/ellada/1439592/pyrkagies-odigies-prostasias-apo-ton-kapno-kai-ta-aioroymena-somatidia/",
+        "https://www.efsyn.gr/oikonomia/1439560/lavrakia-apo-tin-aade-sta-teloneia-apo-narkotika-kai-lires-mehri-royha-maimoy-kai-papagaloys/"
       ],
-      "seen_at_utc": "2026-07-31T12:51:19.028720+00:00"
+      "seen_at_utc": "2026-07-31T13:17:14.160500+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/sports/basketball/euroleague/i-anartisi-tou-xezonia-apo-to-klivelant-vid/",
-      "title": "Η ανάρτηση του Χεζόνια από το Κλίβελαντ (vid)",
-      "normalized_title": "Η ΑΝΑΡΤΗΣΗ ΤΟΥ ΧΕΖΟΝΙΑ ΑΠΟ ΤΟ ΚΛΙΒΕΛΑΝΤ (VID)",
+      "url": "https://www.in.gr/2026/07/31/sports/football/ragdaies-ekselikseis-sti-fifa-paraitithike-me-aixmes-o-protos-symvoulos-tou-tziani-infantino/",
+      "title": "Ραγδαίες εξελίξεις στη FIFA: Παραιτήθηκε με αιχμές ο πρώτος σύμβουλος του Τζιάνι Ινφαντίνο",
+      "normalized_title": "ΡΑΓΔΑΙΕΣ ΕΞΕΛΙΞΕΙΣ ΣΤΗ FIFA: ΠΑΡΑΙΤΗΘΗΚΕ ΜΕ ΑΙΧΜΕΣ Ο ΠΡΩΤΟΣ ΣΥΜΒΟΥΛΟΣ ΤΟΥ ΤΖΙΑΝΙ ΙΝΦΑΝΤΙΝΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/sports/basketball/euroleague/i-anartisi-tou-xezonia-apo-to-klivelant-vid/",
-        "https://www.in.gr/2026/07/31/politics/aftodioikisi/i-ypourgos-paideias-thriskeymaton-kai-athlitismou-sofia-zaxaraki-ston-dimo-pallinis/",
-        "https://www.in.gr/2026/07/31/stories/kavafiki-aleksandreia-enas-ergatis-sideradikou/",
-        "https://www.in.gr/2026/07/31/politics/politiki-grammateia/agogi-kata-tis-konstantopoulou-katethese-i-polyzou-zitaei-apozimiosi-500-000-eyro-gia-to-epeisodio-sti-vouli/",
-        "https://www.in.gr/2026/07/31/life/music/o-pol-makkartnei-gia-proti-fora-ypopsifios-gia-to-vraveio-mercury/",
-        "https://www.in.gr/2026/07/31/sports/football/otan-o-marantona-forese-ti-fanela-tou-mparezi-kai-apotheose-ton-italo-thrylo-vid/"
+        "https://www.in.gr/2026/07/31/sports/football/ragdaies-ekselikseis-sti-fifa-paraitithike-me-aixmes-o-protos-symvoulos-tou-tziani-infantino/",
+        "https://www.in.gr/2026/07/31/greece/fotia-stin-perifereiaki-odo-sto-aigaleo-ixise-to-112/",
+        "https://www.in.gr/2026/07/31/politics/epikairotita/elas-o-mitsotakis-anakoinonei-akomi-mia-fora-os-paroxi-ti-meriki-diorthosi-provlimatos-pou-dimiourgise-o-idios/"
       ],
-      "seen_at_utc": "2026-07-31T12:51:19.028672+00:00"
+      "seen_at_utc": "2026-07-31T13:17:14.160460+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T12:51:19.028824+00:00"
+  "updated_at_utc": "2026-07-31T13:17:14.160618+00:00"
 }
