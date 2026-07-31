@@ -926,6 +926,17 @@ main {
   letter-spacing: 0.03em;
 }
 
+.fire-ticker__entry-status {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.42rem;
+}
+
+.fire-ticker__entry-relative-time {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
 .fire-ticker__entry-location {
   font-family: var(--font-mono);
   font-size: 0.68rem;
