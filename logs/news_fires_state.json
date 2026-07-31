@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564376057/rethymno-synelifthi-o-ypeythynos-leitoyrgias-diktyoy-toy-deddie-gia-ti-fotia/",
-      "title": "Ρέθυμνο: Συνελήφθη ο υπεύθυνος λειτουργίας δικτύου του ΔΕΔΔΗΕ για τη φωτιά",
-      "normalized_title": "ΡΕΘΥΜΝΟ: ΣΥΝΕΛΗΦΘΗ Ο ΥΠΕΥΘΥΝΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΔΙΚΤΥΟΥ ΤΟΥ ΔΕΔΔΗΕ ΓΙΑ ΤΗ ΦΩΤΙΑ",
+      "url": "https://www.kathimerini.gr/world/564376870/oie-gkrinspan-kai-mpirket-proporeyontai-stin-koyrsa-diadochis-gkoyteres/",
+      "title": "ΟΗΕ: Γκρίνσπαν και Μπιρκέτ προπορεύονται στην κούρσα διαδοχής Γκουτέρες",
+      "normalized_title": "ΟΗΕ: ΓΚΡΙΝΣΠΑΝ ΚΑΙ ΜΠΙΡΚΕΤ ΠΡΟΠΟΡΕΥΟΝΤΑΙ ΣΤΗΝ ΚΟΥΡΣΑ ΔΙΑΔΟΧΗΣ ΓΚΟΥΤΕΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564376057/rethymno-synelifthi-o-ypeythynos-leitoyrgias-diktyoy-toy-deddie-gia-ti-fotia/"
+        "https://www.kathimerini.gr/world/564376870/oie-gkrinspan-kai-mpirket-proporeyontai-stin-koyrsa-diadochis-gkoyteres/",
+        "https://www.kathimerini.gr/world/564376858/gaza-i-chamas-symfonise-na-afoplistei/",
+        "https://www.kathimerini.gr/society/564376843/live-foties-oles-oi-exelixeis-apo-ta-pyrina-metopa-tis-choras/"
       ],
-      "seen_at_utc": "2026-07-30T22:28:33.048081+00:00"
+      "seen_at_utc": "2026-07-31T04:28:55.092128+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,69 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858442/upo-elegho-fotia-sto-psitopoleio-thanasis-sto-monastiraki/?utm_source=rss",
-      "title": "Άρπαξε φωτιά η καμινάδα του κεμπαμπτζίδικου «Θανάσης» στο Μοναστηράκι, δείτε βίντεο",
-      "normalized_title": "ΑΡΠΑΞΕ ΦΩΤΙΑ Η ΚΑΜΙΝΑΔΑ ΤΟΥ ΚΕΜΠΑΜΠΤΖΙΔΙΚΟΥ «ΘΑΝΑΣΗΣ» ΣΤΟ ΜΟΝΑΣΤΗΡΑΚΙ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1858484/apagoreutiko-apoplou-apo-rafina-kai-laurio-logo-ishuron-anemon-poia-dromologia-ekteloudai-apo-peiraia/?utm_source=rss",
+      "title": "Απαγορευτικό απόπλου από Ραφήνα και Λαύριο λόγω ισχυρών ανέμων, ποια δρομολόγια εκτελούνται από Πειραιά",
+      "normalized_title": "ΑΠΑΓΟΡΕΥΤΙΚΟ ΑΠΟΠΛΟΥ ΑΠΟ ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ ΛΟΓΩ ΙΣΧΥΡΩΝ ΑΝΕΜΩΝ, ΠΟΙΑ ΔΡΟΜΟΛΟΓΙΑ ΕΚΤΕΛΟΥΝΤΑΙ ΑΠΟ ΠΕΙΡΑΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858442/upo-elegho-fotia-sto-psitopoleio-thanasis-sto-monastiraki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858484/apagoreutiko-apoplou-apo-rafina-kai-laurio-logo-ishuron-anemon-poia-dromologia-ekteloudai-apo-peiraia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858475/fotirss/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-30T21:28:25.327587+00:00"
+      "seen_at_utc": "2026-07-31T04:28:55.092296+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1439079/tropologia-expres-floridi-gia-tin-ayxisi-toy-hronoy-ektisis-isovion-apo-25-se-30/",
-      "title": "Τροπολογία-εξπρές Φλωρίδη για την αύξηση του χρόνου έκτισης ισοβίων από 25 σε 30",
-      "normalized_title": "ΤΡΟΠΟΛΟΓΙΑ-ΕΞΠΡΕΣ ΦΛΩΡΙΔΗ ΓΙΑ ΤΗΝ ΑΥΞΗΣΗ ΤΟΥ ΧΡΟΝΟΥ ΕΚΤΙΣΗΣ ΙΣΟΒΙΩΝ ΑΠΟ 25 ΣΕ 30",
+      "url": "https://www.efsyn.gr/ellada/1439112/demena-ta-ploia-se-rafina-kai-layrio-logo-ishyron-anemon-poia-dromologia-ekteloyntai-apo-ton-peiraia/",
+      "title": "Δεμένα τα πλοία σε Ραφήνα και Λαύριο λόγω ισχυρών ανέμων – Ποια δρομολόγια εκτελούνται από τον Πειραιά",
+      "normalized_title": "ΔΕΜΕΝΑ ΤΑ ΠΛΟΙΑ ΣΕ ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ ΛΟΓΩ ΙΣΧΥΡΩΝ ΑΝΕΜΩΝ – ΠΟΙΑ ΔΡΟΜΟΛΟΓΙΑ ΕΚΤΕΛΟΥΝΤΑΙ ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1439079/tropologia-expres-floridi-gia-tin-ayxisi-toy-hronoy-ektisis-isovion-apo-25-se-30/",
-        "https://www.efsyn.gr/kosmos/1439074/pakistan-toylahiston-8-nekroi-kai-dekades-agnooymenoi-se-ekrixi-se-oryheio-eikones-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1439070/prokrisi-me-vasana-gia-ton-panathinaiko-sto-conference-league/",
-        "https://www.efsyn.gr/politiki/1439068/elas-epikindyni-proklisi-i-toyrkiki-yperptisi-sto-farmakonisi-na-antidrasei-amesa-i-kyvernisi/"
+        "https://www.efsyn.gr/ellada/1439112/demena-ta-ploia-se-rafina-kai-layrio-logo-ishyron-anemon-poia-dromologia-ekteloyntai-apo-ton-peiraia/",
+        "https://www.efsyn.gr/ellada/1439113/poly-ypsilos-kindynos-pyrkagias-simera-se-attiki-kai-akomi-epta-perifereies/",
+        "https://www.efsyn.gr/protoselida/penthos-orgi-katastrofi/",
+        "https://www.efsyn.gr/ellada/1439108/pame-prepei-na-fygoyme-sygklonistiko-vinteo-apo-tin-pyrini-kolasi-stin-paro/",
+        "https://www.efsyn.gr/ellada/1439101/kairos-kokteil-zestis-kai-ishyron-anemon-simera-9-mpofor-tha-sarosoyn-to-aigaio/",
+        "https://www.efsyn.gr/kosmos/1439094/tramp-istoriki-symfonia-gia-ton-pliri-afoplismo-tis-hamas/",
+        "https://www.efsyn.gr/ellada/1439090/foties-olonyhtia-mahi-me-tis-floges-se-rethymno-kai-paro-syneheis-anazopyroseis-logo-ishyron-anemon/",
+        "https://www.efsyn.gr/ellada/1439087/pyrkagia-stin-ahaia-minyma-toy-112-gia-amesi-apomakrynsi-apo-ton-floka/",
+        "https://www.efsyn.gr/nisides/1437984/eimai-i-mpizan-kai-eimai-akoma-zontani/",
+        "https://www.efsyn.gr/nisides/1437980/poiitis-ek-toy-proheiroy-8/",
+        "https://www.efsyn.gr/ellada/1439082/eortologio-poioi-giortazoyn-simera-31-ioylioy/"
       ],
-      "seen_at_utc": "2026-07-30T21:28:25.327551+00:00"
+      "seen_at_utc": "2026-07-31T04:28:55.092257+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/plus/medianews/sta-nea-tis-paraskeyis-oi-synepeis-plironoun-ta-fesia/",
-      "title": "Στα «ΝΕΑ» της Παρασκευής: Οι συνεπείς πληρώνουν τα «φέσια»",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΠΑΡΑΣΚΕΥΗΣ: ΟΙ ΣΥΝΕΠΕΙΣ ΠΛΗΡΩΝΟΥΝ ΤΑ «ΦΕΣΙΑ»",
+      "url": "https://www.in.gr/2026/07/31/world/xaos-sti-theouta-xiliades-metanastes-perasan-stin-ispania-toulaxiston-18-nekroi-diplomatiki-krisi-me-tin-italia/",
+      "title": "Χάος στη Θέουτα: Χιλιάδες μετανάστες πέρασαν στην Ισπανία, τουλάχιστον 18 νεκροί – Διπλωματική κρίση με την Ιταλία",
+      "normalized_title": "ΧΑΟΣ ΣΤΗ ΘΕΟΥΤΑ: ΧΙΛΙΑΔΕΣ ΜΕΤΑΝΑΣΤΕΣ ΠΕΡΑΣΑΝ ΣΤΗΝ ΙΣΠΑΝΙΑ, ΤΟΥΛΑΧΙΣΤΟΝ 18 ΝΕΚΡΟΙ – ΔΙΠΛΩΜΑΤΙΚΗ ΚΡΙΣΗ ΜΕ ΤΗΝ ΙΤΑΛΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/plus/medianews/sta-nea-tis-paraskeyis-oi-synepeis-plironoun-ta-fesia/",
-        "https://www.in.gr/2026/07/31/world/symvoulio-asfaleias-gkrinspan-kai-mpirket-epikratisan-stin-proti-psifoforia-gia-ti-thesi-tou-neou-g-g-tou-oie/",
-        "https://www.in.gr/2026/07/31/world/gallia-etairiki-koinoniki-eythyni-me-aformi-tis-katastrofikes-pyrkagies/"
+        "https://www.in.gr/2026/07/31/world/xaos-sti-theouta-xiliades-metanastes-perasan-stin-ispania-toulaxiston-18-nekroi-diplomatiki-krisi-me-tin-italia/",
+        "https://www.in.gr/2026/07/31/go-fun/social/arkas-ksekinise-i-antistrofi-metrisi-gia-to-telos-ton-diakopon/",
+        "https://www.in.gr/2026/07/31/greece/nea-pyrkagia-stin-axaia-maxi-me-tis-anazopyroseis-stin-paro-synexizetai-o-pyrinos-efialtis-sto-rethymno/",
+        "https://www.in.gr/2026/07/31/health/psekasmoi-kai-elegxos-sta-eidi-ton-kounoupion-gia-ton-io-tou-d-neilou/",
+        "https://www.in.gr/2026/07/31/life/geysi/syntagi-psarokroketes-me-tono-kai-glykopatates-sto-fourno/",
+        "https://www.in.gr/2026/07/31/in-science/technology/i-eyropi-thespizei-to-dikaioma-stin-episkeyi/",
+        "https://www.in.gr/2026/07/31/greece/veltiomeni-i-eikona-ton-pyrkagion-se-andro-kai-kalymno-synexizetai-i-maxi-me-tis-anazopyroseis-stin-paro/",
+        "https://www.in.gr/2026/07/31/plus/vita/oi-ksiroi-karpoi-pou-thorakizoun-tin-kardia-mas/",
+        "https://www.in.gr/2026/07/31/stories/tent-kazinski-i-zoi-tou-unabomber-ginetai-tainia-sto-netflix/",
+        "https://www.in.gr/2026/07/31/plus/vita/koinoniki-koposi-irthe-i-stigmi-gia-dialopes-kai-apo-tous-filous/",
+        "https://www.in.gr/2026/07/31/economy/diethnis-oikonomia/stegi-stin-eyropi-to-2026-i-dyskoli-eksisosi-tis-eyresis-katoikias-kai-ton-ypsilon-timon-megalo-to-provlima-stin-ellada/",
+        "https://www.in.gr/2026/07/31/economy/koftes-se-syntakseis-xireias-kai-72-doseis-gia-xrei-pros-efka/",
+        "https://www.in.gr/2026/07/31/world/ekso-oi-vaseis-ton-ipa-lene-epifaneis-polites-tis-iordanias-se-mia-spania-proklisi-tis-eksousias-tou-vasilia/",
+        "https://www.in.gr/2026/07/31/life/maria-kallas-i-ntiva-sto-portofoli-tis-eyropis-elliniki-symmetoxi-gia-ta-nea-xartonomismata-tis-ekt/",
+        "https://www.in.gr/2026/07/31/world/i-epithesi-sto-pride-tou-verolinou-kai-i-epistrofi-tis-apeilis-tou-isis/",
+        "https://www.in.gr/2026/07/31/greece/neo-xorotaksiko-freno-stis-megales-ependyseis-se-koresmenous-proorismous/",
+        "https://www.in.gr/2026/07/31/economy/dypa-gefyra-sti-syntaksi-gia-8-000-anergous/",
+        "https://www.in.gr/2026/07/31/world/i-italia-eksetazei-prosorini-anastoli-tis-sengken-me-tin-ispania-meta-ta-gegonota-sti-theouta/",
+        "https://www.in.gr/2026/07/31/greece/axaia-megali-pyrkagia-se-dasiki-ektasi-stin-perioxi-floka-minyma-apo-to-112/",
+        "https://www.in.gr/2026/07/31/world/ispania-katadikazei-ti-dimagogia-tis-italikis-kyvernisis-kai-kalei-ton-italo-presveyti/",
+        "https://www.in.gr/2026/07/31/world/venezouela-arxisan-oi-katedafiseis-ktirion-pou-ypestisan-zimies-apo-ton-diplo-seismo/",
+        "https://www.in.gr/2026/07/31/world/gaza-o-tramp-anakoinonei-symfonia-gia-ton-pliri-afoplismo-tis-xamas-stelexi-tis-to-epivevaionoun/",
+        "https://www.in.gr/2026/07/31/world/ipa-15-xronia-katheirksi-ston-patera-gia-to-makeleio-pou-prokalese-o-gios-tou-mesa-se-sxoleio-me-toufeki-efodou/",
+        "https://www.in.gr/2026/07/31/world/meksiko-epiasan-ton-feromeno-os-egkefalo-dolofonias-dimarxou-pou-eixe-sygklonisei-ti-xora/",
+        "https://www.in.gr/2026/07/31/sports/football/uefa-ranking-oi-vathmoi-pou-edosan-paok-kai-panathinaikos-kai-i-10i-thesi/",
+        "https://www.in.gr/2026/07/31/uncategorized/meloni-sygklonismeni-apo-tis-eikones-sti-theouta-eksetazei-tin-paysi-tou-xorou-sengken-me-tin-ispania/",
+        "https://www.in.gr/2026/07/31/greece/andros-gynaika-traymatistike-mesa-sto-oxima-tis-apo-to-ormidion-epivatigou-oximatagogou-ploiou/"
       ],
-      "seen_at_utc": "2026-07-30T22:28:33.048125+00:00"
+      "seen_at_utc": "2026-07-31T04:28:55.092195+00:00"
     }
   },
-  "updated_at_utc": "2026-07-30T22:28:33.048199+00:00"
+  "updated_at_utc": "2026-07-31T04:28:55.092393+00:00"
 }
