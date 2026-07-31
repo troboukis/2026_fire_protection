@@ -1,14 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564376195/i-oikonomia-ton-yposcheseon-kai-to-stoichima-tis-axiopistias/",
-      "title": "Η οικονομία των υποσχέσεων και το στοίχημα της αξιοπιστίας",
-      "normalized_title": "Η ΟΙΚΟΝΟΜΙΑ ΤΩΝ ΥΠΟΣΧΕΣΕΩΝ ΚΑΙ ΤΟ ΣΤΟΙΧΗΜΑ ΤΗΣ ΑΞΙΟΠΙΣΤΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564377968/paros-kai-kriti-prin-kai-meta-tis-katastrofikes-pyrkagies-doryforikes-eikones/",
+      "title": "Πάρος και Κρήτη πριν και μετά τις καταστροφικές πυρκαγιές – Δορυφορικές εικόνες",
+      "normalized_title": "ΠΑΡΟΣ ΚΑΙ ΚΡΗΤΗ ΠΡΙΝ ΚΑΙ ΜΕΤΑ ΤΙΣ ΚΑΤΑΣΤΡΟΦΙΚΕΣ ΠΥΡΚΑΓΙΕΣ – ΔΟΡΥΦΟΡΙΚΕΣ ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564376195/i-oikonomia-ton-yposcheseon-kai-to-stoichima-tis-axiopistias/",
-        "https://www.kathimerini.gr/world/564377884/dimosio-chreos-rekor-sti-germania/"
+        "https://www.kathimerini.gr/society/564377968/paros-kai-kriti-prin-kai-meta-tis-katastrofikes-pyrkagies-doryforikes-eikones/",
+        "https://www.kathimerini.gr/world/564377962/italia-anastellei-ti-sengken-me-tin-ispania-me-fonto-tin-krisi-sti-theoyta/",
+        "https://www.kathimerini.gr/economy/international/564376663/anaptyxi-0-4-to-v-trimino-stin-eyrozoni/",
+        "https://www.kathimerini.gr/world/564377935/i-rosia-kataschese-123-akinita-poy-anikoyn-se-martyres-toy-iechova/",
+        "https://www.kathimerini.gr/economy/international/564376666/ta-noikokyria-eginan-ploysiotera-kata-40-tris-dolaria-to-2025/",
+        "https://www.kathimerini.gr/k/gastronomos/564375709/papoytsakia-apo-ton-polichnito/",
+        "https://www.kathimerini.gr/world/564377890/theoyta-pano-apo-37-000-metanastes-epestrepsan-sto-maroko-stoys-57-oi-nekroi/",
+        "https://www.kathimerini.gr/economy/564376708/zofero-to-mellon-gia-tin-agora-petrelaioy/"
       ],
-      "seen_at_utc": "2026-07-31T15:52:25.385552+00:00"
+      "seen_at_utc": "2026-07-31T16:17:35.537849+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1266,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858815/kathusteriseis-stin-attiki-odo-ston-komvo-paianias-pros-aerdromio-logo-trohaiou/?utm_source=rss",
-      "title": "Καθυστερήσεις στην Αττική Οδό στον κόμβο Παιανίας προς Αερoδρόμιο, λόγω τροχαίου",
-      "normalized_title": "ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΗΝ ΑΤΤΙΚΗ ΟΔΟ ΣΤΟΝ ΚΟΜΒΟ ΠΑΙΑΝΙΑΣ ΠΡΟΣ ΑΕΡOΔΡΟΜΙΟ, ΛΟΓΩ ΤΡΟΧΑΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1858822/kanonika-ta-dromologia-ton-ploion/?utm_source=rss",
+      "title": "Εκτελούνται κανονικά πλέον τα δρομολόγια των πλοίων, ήρθη το απαγορευτικό",
+      "normalized_title": "ΕΚΤΕΛΟΥΝΤΑΙ ΚΑΝΟΝΙΚΑ ΠΛΕΟΝ ΤΑ ΔΡΟΜΟΛΟΓΙΑ ΤΩΝ ΠΛΟΙΩΝ, ΗΡΘΗ ΤΟ ΑΠΑΓΟΡΕΥΤΙΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858815/kathusteriseis-stin-attiki-odo-ston-komvo-paianias-pros-aerdromio-logo-trohaiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858814/exi-trofimoi-metaferthikan-apo-to-dafni-se-attikon-kai-dromokaiteio-me-anapneustika-provlimata/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858822/kanonika-ta-dromologia-ton-ploion/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858818/fotia-tora-stin-periohi-lakka-katsari-ston-aspropurgo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T15:52:25.385633+00:00"
+      "seen_at_utc": "2026-07-31T16:17:35.537976+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439708/pyrkagia-sto-kompoti-artas-ta-dakrya-toy-dimarhoy-einai-o-topos-mas-vinteo/",
-      "title": "Πυρκαγιά στο Κομπότι Άρτας: Τα δάκρυα του δημάρχου – «Είναι ο τόπος μας» [βίντεο]",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΟ ΚΟΜΠΟΤΙ ΑΡΤΑΣ: ΤΑ ΔΑΚΡΥΑ ΤΟΥ ΔΗΜΑΡΧΟΥ – «ΕΙΝΑΙ Ο ΤΟΠΟΣ ΜΑΣ» [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1439724/arsi-toy-apagoreytikoy-apoploy-xekinoyn-dromologia-apo-peiraia-rafina-kai-layrio/",
+      "title": "Άρση του απαγορευτικού απόπλου: Ξεκινούν δρομολόγια από Πειραιά, Ραφήνα και Λαύριο",
+      "normalized_title": "ΑΡΣΗ ΤΟΥ ΑΠΑΓΟΡΕΥΤΙΚΟΥ ΑΠΟΠΛΟΥ: ΞΕΚΙΝΟΥΝ ΔΡΟΜΟΛΟΓΙΑ ΑΠΟ ΠΕΙΡΑΙΑ, ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439708/pyrkagia-sto-kompoti-artas-ta-dakrya-toy-dimarhoy-einai-o-topos-mas-vinteo/",
-        "https://www.efsyn.gr/kosmos/1439693/o-oros-poy-thetei-i-hamas-gia-ton-afoplismo-tis-amihania-apo-tin-israilini-pleyra/"
+        "https://www.efsyn.gr/ellada/1439724/arsi-toy-apagoreytikoy-apoploy-xekinoyn-dromologia-apo-peiraia-rafina-kai-layrio/",
+        "https://www.efsyn.gr/ellada/1439711/fotia-sto-haidari-16-astheneis-me-anapneystika-provlimata-metaferthikan-apo-to-dafni-sto-attikon/",
+        "https://www.efsyn.gr/athlitismos/1439717/prasinos-kai-me-ti-voyla-o-kangkoya/"
       ],
-      "seen_at_utc": "2026-07-31T15:52:25.385616+00:00"
+      "seen_at_utc": "2026-07-31T16:17:35.537943+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/sports/football/ispania-kai-portogalia-apeiloun-na-min-diorganosoun-to-mountial-tou-2030-logo-fifa-kai-infantino/",
-      "title": "Ισπανία και Πορτογαλία απειλούν να μην διοργανώσουν το Μουντιάλ του 2030 λόγω FIFA και Ινφαντίνο!",
-      "normalized_title": "ΙΣΠΑΝΙΑ ΚΑΙ ΠΟΡΤΟΓΑΛΙΑ ΑΠΕΙΛΟΥΝ ΝΑ ΜΗΝ ΔΙΟΡΓΑΝΩΣΟΥΝ ΤΟ ΜΟΥΝΤΙΑΛ ΤΟΥ 2030 ΛΟΓΩ FIFA ΚΑΙ ΙΝΦΑΝΤΙΝΟ!",
+      "url": "https://www.in.gr/2026/07/31/sports/othersports/me-apostoli-rekor-60-athliton-i-ellada-sto-eyropaiko-protathlima-stivou-tou-mpermigxam/",
+      "title": "Με αποστολή ρεκόρ 60 αθλητών η Ελλάδα στο Ευρωπαϊκό πρωτάθλημα στίβου του Μπέρμιγχαμ",
+      "normalized_title": "ΜΕ ΑΠΟΣΤΟΛΗ ΡΕΚΟΡ 60 ΑΘΛΗΤΩΝ Η ΕΛΛΑΔΑ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΣΤΙΒΟΥ ΤΟΥ ΜΠΕΡΜΙΓΧΑΜ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/sports/football/ispania-kai-portogalia-apeiloun-na-min-diorganosoun-to-mountial-tou-2030-logo-fifa-kai-infantino/",
-        "https://www.in.gr/2026/07/31/politics/politiki-grammateia/elas-to-nero-den-einai-emporeyma-i-kyvernisi-etoimazei-akrivoterous-logariasmous-gia-tous-polites/",
-        "https://www.in.gr/2026/07/31/go-fun/fizz/monos-sto-spiti-ksana-o-makolei-kalkin/"
+        "https://www.in.gr/2026/07/31/sports/othersports/me-apostoli-rekor-60-athliton-i-ellada-sto-eyropaiko-protathlima-stivou-tou-mpermigxam/",
+        "https://www.in.gr/2026/07/31/world/theouta-pano-apo-37-500-metanastes-epestrepsan-sto-maroko-toulaxiston-57-oi-nekroi/",
+        "https://www.in.gr/2026/07/31/world/rosia-eplikse-to-limani-tis-odissou-kai-ena-ploio-sti-mayri-thalassa/"
       ],
-      "seen_at_utc": "2026-07-31T15:52:25.385595+00:00"
+      "seen_at_utc": "2026-07-31T16:17:35.537902+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T15:52:25.385725+00:00"
+  "updated_at_utc": "2026-07-31T16:17:35.538053+00:00"
 }
