@@ -1136,6 +1136,7 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
             "fireservice_live_page",
             None,
             None,
+            None,
             URL,
         )
         for row in rows
@@ -1170,6 +1171,7 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           raw,
           source,
           source_account,
+          source_location,
           source_post_id,
           source_url
         ) VALUES %s
@@ -1197,6 +1199,7 @@ def upsert_current_fires(conn, rows: list[dict[str, str]]) -> None:
           raw = EXCLUDED.raw,
           source = EXCLUDED.source,
           source_account = EXCLUDED.source_account,
+          source_location = EXCLUDED.source_location,
           source_post_id = EXCLUDED.source_post_id,
           source_url = EXCLUDED.source_url
         """,

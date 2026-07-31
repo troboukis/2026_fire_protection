@@ -7,7 +7,6 @@ import { dispatchCurrentFireHover } from '../lib/currentFireHover'
 import { normalizeCurrentFireFuelType } from '../lib/currentFireFuelType'
 import {
   CURRENT_FIRE_STATUS_COLORS,
-  CURRENT_FIRE_STATUS_ORDER,
   normalizeCurrentFireStatus,
 } from '../lib/currentFireStatus'
 import { logError } from '../lib/logger'
@@ -25,6 +24,9 @@ type CurrentFireRow = {
   status: string | null
   lat: number | string | null
   lon: number | string | null
+  source: string | null
+  source_account: string | null
+  source_location: string | null
 }
 
 type NoticePlace = {
@@ -63,15 +65,10 @@ type FireTickerItem = {
   primaryMeta: string
   secondaryMeta: string
   statusColor?: string
+  locationLabel?: string
   hasLocation: boolean
   hoverIncidentKey: string | null
   sortTime: number
-}
-
-type FireStatusCount = {
-  status: string
-  count: number
-  color?: string
 }
 
 const NOTICE_112_MAX_AGE_MS = 24 * 60 * 60 * 1000
@@ -140,44 +137,42 @@ function hasValidCoordinatePair(lat: unknown, lon: unknown): boolean {
   return Number.isFinite(parsedLat) && Number.isFinite(parsedLon)
 }
 
-function buildStatusCounts(rows: CurrentFireRow[]): FireStatusCount[] {
-  const counts = new Map<string, number>()
-
-  for (const row of rows) {
-    const status = normalizeStatus(row.status)
-    if (!status) continue
-    counts.set(status, (counts.get(status) ?? 0) + 1)
-  }
-
-  return Array.from(counts.entries())
-    .map(([status, count]) => ({
-      status,
-      count,
-      color: CURRENT_FIRE_STATUS_COLORS[status],
-    }))
-    .sort((a, b) => {
-      const orderA = CURRENT_FIRE_STATUS_ORDER[a.status] ?? Number.MAX_SAFE_INTEGER
-      const orderB = CURRENT_FIRE_STATUS_ORDER[b.status] ?? Number.MAX_SAFE_INTEGER
-      if (orderA !== orderB) return orderA - orderB
-      return a.status.localeCompare(b.status, 'el')
-    })
-}
-
 function buildTickerItem(row: CurrentFireRow): FireTickerItem {
   const status = normalizeStatus(row.status) ?? '—'
+  const isXSource = cleanText(row.source) === 'fireservice_x'
   return {
     kind: 'fire',
     id: row.incident_key,
     municipalityKey: cleanText(row.municipality_key),
     municipalityLabel: `ΔΗΜΟΣ ${cleanText(row.municipality_raw) ?? '—'}`,
     title: normalizeCurrentFireFuelType(cleanText(row.fuel_type)) ?? '—',
-    primaryMeta: `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
+    primaryMeta: isXSource
+      ? `Αναρτήθηκε: ${formatDateEl(cleanText(row.last_seen_at) ?? cleanText(row.status_updated_at))}`
+      : `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
     secondaryMeta: status,
     statusColor: CURRENT_FIRE_STATUS_COLORS[status],
+    locationLabel: isXSource && cleanText(row.source_location)
+      ? `ΠΕΡΙΟΧΗ: ${cleanText(row.source_location)}`
+      : undefined,
     hasLocation: hasValidCoordinatePair(row.lat, row.lon),
     hoverIncidentKey: row.incident_key,
     sortTime: parseTime(cleanText(row.status_updated_at)) || parseTime(cleanText(row.last_seen_at)) || parseTime(cleanText(row.start_date)),
   }
+}
+
+function buildFireSourceLabel(rows: CurrentFireRow[]): string | null {
+  if (!rows.length) return null
+  const hasXSource = rows.some((row) => cleanText(row.source) === 'fireservice_x')
+  const hasLivePageSource = rows.some((row) => cleanText(row.source) !== 'fireservice_x')
+  const xAccount = rows
+    .map((row) => cleanText(row.source_account))
+    .find((account): account is string => Boolean(account)) ?? '@pyrosvestiki'
+
+  if (hasXSource && hasLivePageSource) {
+    return `Πηγές: Ενεργά συμβάντα Πυροσβεστικής & X (${xAccount})`
+  }
+  if (hasXSource) return `Πηγή: Πυροσβεστικό Σώμα στο X (${xAccount})`
+  return 'Πηγή: Ενεργά συμβάντα Πυροσβεστικής'
 }
 
 function isNoticeInstructions(value: unknown): value is NoticeInstructions {
@@ -314,6 +309,7 @@ function renderTickerEntries(
             <span>{item.municipalityLabel}</span>
           </span>
           <strong className="fire-ticker__entry-title">{item.title}</strong>
+          {item.locationLabel && <span className="fire-ticker__entry-location">{item.locationLabel}</span>}
           <span className="fire-ticker__entry-meta">{item.primaryMeta}</span>
           <span className="fire-ticker__entry-meta" style={item.statusColor ? { color: item.statusColor, fontWeight: 700 } : undefined}>{item.secondaryMeta}</span>
         </div>
@@ -325,7 +321,7 @@ function renderTickerEntries(
 async function fetchCurrentFires() {
   return supabase
     .from('current_fires')
-    .select('incident_key, is_current, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status, lat, lon')
+    .select('incident_key, is_current, municipality_key, municipality_raw, fuel_type, start_date, status_updated_at, last_seen_at, status, lat, lon, source, source_account, source_location')
     .eq('is_current', true)
     .or('status.is.null,status.neq.ΛΗΞΗ')
     .order('status_updated_at', { ascending: false, nullsFirst: false })
@@ -347,7 +343,7 @@ export default function FireNowTicker() {
   const navigate = useNavigate()
   const [items, setItems] = useState<FireTickerItem[]>([])
   const [activeCount, setActiveCount] = useState<number | null>(null)
-  const [statusCounts, setStatusCounts] = useState<FireStatusCount[]>([])
+  const [fireSourceLabel, setFireSourceLabel] = useState<string | null>(null)
   const [loadFailed, setLoadFailed] = useState(false)
   const [loading, setLoading] = useState(true)
   const [groupCount, setGroupCount] = useState(2)
@@ -385,7 +381,7 @@ export default function FireNowTicker() {
         }
         setItems([])
         setActiveCount(null)
-        setStatusCounts([])
+        setFireSourceLabel(null)
         setLoadFailed(true)
         setLoading(false)
         return
@@ -405,7 +401,7 @@ export default function FireNowTicker() {
       const noticeItems = noticeRows.map(buildNoticeItem)
       setLoadFailed(false)
       setActiveCount(rows.length)
-      setStatusCounts(buildStatusCounts(rows))
+      setFireSourceLabel(buildFireSourceLabel(rows))
       setItems([...fireItems, ...noticeItems].sort((a, b) => b.sortTime - a.sortTime))
       setLoading(false)
     }
@@ -540,10 +536,6 @@ export default function FireNowTicker() {
     dispatchCurrentFireHover(incidentKey)
   }
 
-  const visibleStatusCounts = loading
-    ? [{ status: 'Ανάκτηση δεδομένων', count: 0 }]
-    : statusCounts
-
   const renderedItems = loading
     ? [{
         kind: 'state' as const,
@@ -596,24 +588,7 @@ export default function FireNowTicker() {
         <div className="fire-ticker__title">
           <span className="eyebrow">live</span>
           <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
-          <div className="fire-ticker__status-list" aria-label="Κατανομή ενεργών πυρκαγιών ανά κατάσταση">
-            {visibleStatusCounts.map((entry, index) => {
-              const nodes = []
-              if (!loading && index > 0) {
-                nodes.push(<span key={`${entry.status}-separator`} className="fire-ticker__status-separator" aria-hidden="true" />)
-              }
-              nodes.push(
-                <span
-                  key={entry.status}
-                  className="fire-ticker__status-pill"
-                  style={entry.color ? { color: entry.color } : undefined}
-                >
-                  {loading ? entry.status : `${entry.count} ${entry.status}`}
-                </span>,
-              )
-              return nodes
-            })}
-          </div>
+          {fireSourceLabel && <span className="fire-ticker__source">{fireSourceLabel}</span>}
         </div>
         <div className="fire-ticker__viewport" ref={viewportRef}>
           <div className="fire-ticker__marquee">

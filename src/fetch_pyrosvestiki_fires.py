@@ -410,6 +410,7 @@ def build_incidents(
             "status": status,
             "source": X_SOURCE,
             "source_account": f"@{X_USERNAME}",
+            "source_location": clean_text(extracted.get("location_name")) or None,
             "source_post_id": post.post_id,
             "source_url": f"https://x.com/{X_USERNAME}/status/{post.post_id}",
             "raw_posts": [{
@@ -495,6 +496,7 @@ def upsert_incidents(
             json.dumps({"source": X_SOURCE, "posts": row["raw_posts"]}, ensure_ascii=False),
             row["source"],
             row["source_account"],
+            row["source_location"],
             row["source_post_id"],
             row["source_url"],
         )
@@ -511,7 +513,7 @@ def upsert_incidents(
                   region, regional_unit, municipality_key, municipality_normalized_value,
                   municipality_raw, fuel_type, start_date, days_burning, status_updated_at,
                   lat, lon, formatted_address, place_id, geocode_query, geocoded_at,
-                  status, raw, source, source_account, source_post_id, source_url
+                  status, raw, source, source_account, source_location, source_post_id, source_url
                 ) VALUES %s
                 ON CONFLICT (incident_key) DO UPDATE SET
                   first_seen_at = LEAST(current_fires.first_seen_at, EXCLUDED.first_seen_at),
@@ -549,6 +551,7 @@ def upsert_incidents(
                   END,
                   source = EXCLUDED.source,
                   source_account = EXCLUDED.source_account,
+                  source_location = COALESCE(EXCLUDED.source_location, current_fires.source_location),
                   source_post_id = EXCLUDED.source_post_id,
                   source_url = EXCLUDED.source_url
                 """,

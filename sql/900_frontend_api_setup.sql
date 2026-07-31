@@ -3049,12 +3049,23 @@ ALTER TABLE public.current_fires
   ADD COLUMN IF NOT EXISTS geocoded_at TIMESTAMPTZ,
   ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'fireservice_live_page',
   ADD COLUMN IF NOT EXISTS source_account TEXT,
+  ADD COLUMN IF NOT EXISTS source_location TEXT,
   ADD COLUMN IF NOT EXISTS source_post_id TEXT,
   ADD COLUMN IF NOT EXISTS source_url TEXT;
 
 UPDATE public.current_fires
 SET source = 'fireservice_live_page'
 WHERE source IS NULL OR btrim(source) = '';
+
+UPDATE public.current_fires
+SET source_location = NULLIF(
+  raw::jsonb -> 'posts' -> -1 -> 'extracted' ->> 'location_name',
+  ''
+)
+WHERE source = 'fireservice_x'
+  AND source_location IS NULL
+  AND raw IS NOT NULL
+  AND raw ~ '^\s*\{';
 
 ALTER TABLE public.current_fires
   DROP COLUMN IF EXISTS is_112_notice,
