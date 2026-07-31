@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564376642/anodos-5-8-ton-poliseon-sta-soyper-market/",
-      "title": "Ανοδος 5,8% των πωλήσεων στα σούπερ μάρκετ",
-      "normalized_title": "ΑΝΟΔΟΣ 5,8% ΤΩΝ ΠΩΛΗΣΕΩΝ ΣΤΑ ΣΟΥΠΕΡ ΜΑΡΚΕΤ",
+      "url": "https://www.kathimerini.gr/opinion/interviews/564376279/maik-rotzers-stin-k-den-ginetai-na-synechisoyme-etsi-gia-polloys-mines/",
+      "title": "Μάικ Ρότζερς στην «Κ»: Δεν γίνεται να συνεχίσουμε έτσι για πολλούς μήνες",
+      "normalized_title": "ΜΑΙΚ ΡΟΤΖΕΡΣ ΣΤΗΝ «Κ»: ΔΕΝ ΓΙΝΕΤΑΙ ΝΑ ΣΥΝΕΧΙΣΟΥΜΕ ΕΤΣΙ ΓΙΑ ΠΟΛΛΟΥΣ ΜΗΝΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564376642/anodos-5-8-ton-poliseon-sta-soyper-market/"
+        "https://www.kathimerini.gr/opinion/interviews/564376279/maik-rotzers-stin-k-den-ginetai-na-synechisoyme-etsi-gia-polloys-mines/",
+        "https://www.kathimerini.gr/world/564378112/gkoyteres-gia-kypriako-prepei-na-eimaste-kala-proetoimasmenoi-stin-pentameri/",
+        "https://www.kathimerini.gr/world/564376336/therapeies-gia-to-asthma-se-ypogeia-kliniki/",
+        "https://www.kathimerini.gr/economy/business/564376630/kathara-kerdi-738-ekat-eyro-gia-eurobank-to-proto-examino/"
       ],
-      "seen_at_utc": "2026-07-31T17:30:56.373174+00:00"
+      "seen_at_utc": "2026-07-31T17:51:16.556597+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,24 +1272,23 @@
       "seen_at_utc": "2026-07-31T17:30:56.373275+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1439338/dikopo-mahairi/",
-      "title": "Δίκοπο μαχαίρι",
-      "normalized_title": "ΔΙΚΟΠΟ ΜΑΧΑΙΡΙ",
+      "url": "https://www.efsyn.gr/tehnes/1439771/ethniko-theatro-akyronetai-i-parastasi-tin-epidayro-exaitias-ton-pyrkagion/",
+      "title": "Εθνικό Θέατρο: Ακυρώνεται η παράσταση την Επίδαυρο εξαιτίας των πυρκαγιών",
+      "normalized_title": "ΕΘΝΙΚΟ ΘΕΑΤΡΟ: ΑΚΥΡΩΝΕΤΑΙ Η ΠΑΡΑΣΤΑΣΗ ΤΗΝ ΕΠΙΔΑΥΡΟ ΕΞΑΙΤΙΑΣ ΤΩΝ ΠΥΡΚΑΓΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1439338/dikopo-mahairi/",
-        "https://www.efsyn.gr/politiki/1439768/me-tis-psifoys-nd-pasok-perase-i-fotografiki-diataxi-gia-ton-giotopoylo-apasfalise-i-konstantopoyloy/"
+        "https://www.efsyn.gr/tehnes/1439771/ethniko-theatro-akyronetai-i-parastasi-tin-epidayro-exaitias-ton-pyrkagion/"
       ],
-      "seen_at_utc": "2026-07-31T17:30:56.373241+00:00"
+      "seen_at_utc": "2026-07-31T17:51:16.556690+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/greece/eyvoia-fotia-stin-perioxi-aetos-karystou/",
-      "title": "Εύβοια: Φωτιά στην περιοχή Αετός Καρύστου",
-      "normalized_title": "ΕΥΒΟΙΑ: ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΕΤΟΣ ΚΑΡΥΣΤΟΥ",
+      "url": "https://www.in.gr/2026/07/31/life/diakopes/iptamenoi-kai-ntisko-ypirkse-mia-epoxi-pou-ta-aeroplana-eixan-pista-xorou/",
+      "title": "Ιπτάμενοι και ντίσκο - Υπήρξε μια εποχή που τα αεροπλάνα είχαν πίστα χορού",
+      "normalized_title": "ΙΠΤΑΜΕΝΟΙ ΚΑΙ ΝΤΙΣΚΟ - ΥΠΗΡΞΕ ΜΙΑ ΕΠΟΧΗ ΠΟΥ ΤΑ ΑΕΡΟΠΛΑΝΑ ΕΙΧΑΝ ΠΙΣΤΑ ΧΟΡΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/greece/eyvoia-fotia-stin-perioxi-aetos-karystou/"
+        "https://www.in.gr/2026/07/31/life/diakopes/iptamenoi-kai-ntisko-ypirkse-mia-epoxi-pou-ta-aeroplana-eixan-pista-xorou/"
       ],
-      "seen_at_utc": "2026-07-31T17:30:56.373223+00:00"
+      "seen_at_utc": "2026-07-31T17:51:16.556658+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T17:30:56.373369+00:00"
+  "updated_at_utc": "2026-07-31T17:51:16.556785+00:00"
 }
