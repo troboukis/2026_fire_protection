@@ -35,6 +35,14 @@ The live `public.current_fires` dataset and the homepage fire ticker are sourced
 - Scraper: `src/scrape_forest_fires.py`
 - Scope used in the frontend: active fires only, excluding rows with status `ΛΗΞΗ`
 
+When the embedded live-incidents iframe returns HTTP 500, the same scraper automatically
+runs `src/fetch_pyrosvestiki_fires.py` as a fallback. The fallback reads forest-fire posts
+from the official `@pyrosvestiki` X account, follows reply threads, extracts and geocodes
+one fire location, and stores it in `public.current_fires` with explicit X source metadata.
+X-sourced fires are displayed as current only for 24 hours after their latest relevant post.
+Already processed post IDs are read from the database so subsequent runs do not repeat LLM
+or geocoding requests.
+
 The homepage `NewsTicker` also uses `public.current_fires` to mark news articles that refer to an active fire. Hovering an article with an active-fire marker dispatches the same map highlight event used by the fire ticker.
 
 ## News fires data source

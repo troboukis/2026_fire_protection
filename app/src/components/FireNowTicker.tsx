@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
+import { normalizeCurrentFireFuelType } from '../lib/currentFireFuelType'
 import {
   CURRENT_FIRE_STATUS_COLORS,
   CURRENT_FIRE_STATUS_ORDER,
@@ -169,7 +170,7 @@ function buildTickerItem(row: CurrentFireRow): FireTickerItem {
     id: row.incident_key,
     municipalityKey: cleanText(row.municipality_key),
     municipalityLabel: `ΔΗΜΟΣ ${cleanText(row.municipality_raw) ?? '—'}`,
-    title: cleanText(row.fuel_type) ?? '—',
+    title: normalizeCurrentFireFuelType(cleanText(row.fuel_type)) ?? '—',
     primaryMeta: `Ξέσπασε: ${formatDateEl(cleanText(row.start_date))}`,
     secondaryMeta: status,
     statusColor: CURRENT_FIRE_STATUS_COLORS[status],
