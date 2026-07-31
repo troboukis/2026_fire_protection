@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564374218/ayxisi-esodon-kai-kerdoforias-gia-ti-noval-property/",
-      "title": "Αύξηση εσόδων και κερδοφορίας για τη Noval Property",
-      "normalized_title": "ΑΥΞΗΣΗ ΕΣΟΔΩΝ ΚΑΙ ΚΕΡΔΟΦΟΡΙΑΣ ΓΙΑ ΤΗ NOVAL PROPERTY",
+      "url": "https://www.kathimerini.gr/economy/local/564376594/anodika-para-tis-geopolitikes-anataraxeis-o-toyrismos/",
+      "title": "Ανοδικά, παρά τις γεωπολιτικές αναταράξεις ο τουρισμός",
+      "normalized_title": "ΑΝΟΔΙΚΑ, ΠΑΡΑ ΤΙΣ ΓΕΩΠΟΛΙΤΙΚΕΣ ΑΝΑΤΑΡΑΞΕΙΣ Ο ΤΟΥΡΙΣΜΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564374218/ayxisi-esodon-kai-kerdoforias-gia-ti-noval-property/",
-        "https://www.kathimerini.gr/economy/business/564374212/kerdi-rekor-gia-tin-peiraios-to-a-6mino-anilthan-sta-617-ekat/"
+        "https://www.kathimerini.gr/economy/local/564376594/anodika-para-tis-geopolitikes-anataraxeis-o-toyrismos/",
+        "https://www.kathimerini.gr/economy/564376714/se-anthisi-oi-etaireies-toy-enos-atomoy-me-tziro-ekatommyrion/",
+        "https://www.kathimerini.gr/economy/business/564374221/sta-283-2-ekat-eyro-ta-kerdi-toy-ote-to-proto-examino/",
+        "https://www.kathimerini.gr/society/564378898/treis-syllipseis-gia-emporia-anthropon-kai-mastropeia-stin-xanthi/"
       ],
-      "seen_at_utc": "2026-07-31T19:51:43.251820+00:00"
+      "seen_at_utc": "2026-07-31T20:17:20.698476+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858899/suginitiko-video-apo-to-porto-germeno-ethelodria-frodizei-skulaki/?utm_source=rss",
-      "title": "Συγκινητικό βίντεο από το Πόρτο Γερμενό: Εθελόντρια φροντίζει σκυλάκι ενώ μαίνεται η φωτιά",
-      "normalized_title": "ΣΥΓΚΙΝΗΤΙΚΟ ΒΙΝΤΕΟ ΑΠΟ ΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ: ΕΘΕΛΟΝΤΡΙΑ ΦΡΟΝΤΙΖΕΙ ΣΚΥΛΑΚΙ ΕΝΩ ΜΑΙΝΕΤΑΙ Η ΦΩΤΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1858904/traumatistike-40hronos-kiteserfer-stin-adiparo-diakomistike-sto-kedro-ugeias-parou/?utm_source=rss",
+      "title": "Τραυματίστηκε 40χρονος kitesurfer στην Αντίπαρο - Διακομίστηκε στο Κέντρο Υγείας Πάρου",
+      "normalized_title": "ΤΡΑΥΜΑΤΙΣΤΗΚΕ 40ΧΡΟΝΟΣ KITESURFER ΣΤΗΝ ΑΝΤΙΠΑΡΟ - ΔΙΑΚΟΜΙΣΤΗΚΕ ΣΤΟ ΚΕΝΤΡΟ ΥΓΕΙΑΣ ΠΑΡΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858899/suginitiko-video-apo-to-porto-germeno-ethelodria-frodizei-skulaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858904/traumatistike-40hronos-kiteserfer-stin-adiparo-diakomistike-sto-kedro-ugeias-parou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858903/deite-video-oi-suglonistikes-eikones-pou-metedose-apo-to-porto-germeno-o-apestalmenos-tou-protothemagr-marinos-aleiferis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T19:51:43.251961+00:00"
+      "seen_at_utc": "2026-07-31T20:17:20.698588+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439830/synagermos-to-savvato-gia-anemoys-kai-pyrkagies-sto-kokkino-attiki-kai-eyvoia-kampanaki-gia-okto-perifereies/",
-      "title": "Συναγερμός το Σάββατο για ανέμους και πυρκαγιές: Στο «κόκκινο» Αττική και Εύβοια – Καμπανάκι για οκτώ περιφέρειες",
-      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΤΟ ΣΑΒΒΑΤΟ ΓΙΑ ΑΝΕΜΟΥΣ ΚΑΙ ΠΥΡΚΑΓΙΕΣ: ΣΤΟ «ΚΟΚΚΙΝΟ» ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ – ΚΑΜΠΑΝΑΚΙ ΓΙΑ ΟΚΤΩ ΠΕΡΙΦΕΡΕΙΕΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1439838/sok-ston-panathinaiko-me-pantelidi-ypesti-katagma-knimis-peronis-kai-mpainei-sto-heiroyrgeio/",
+      "title": "Σοκ στον Παναθηναϊκό με Παντελίδη: Υπέστη κάταγμα κνήμης – περόνης και μπαίνει στο χειρουργείο",
+      "normalized_title": "ΣΟΚ ΣΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΜΕ ΠΑΝΤΕΛΙΔΗ: ΥΠΕΣΤΗ ΚΑΤΑΓΜΑ ΚΝΗΜΗΣ – ΠΕΡΟΝΗΣ ΚΑΙ ΜΠΑΙΝΕΙ ΣΤΟ ΧΕΙΡΟΥΡΓΕΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439830/synagermos-to-savvato-gia-anemoys-kai-pyrkagies-sto-kokkino-attiki-kai-eyvoia-kampanaki-gia-okto-perifereies/",
-        "https://www.efsyn.gr/politiki/1439828/apantisi-pasok-se-elas-gia-ta-yperhreomena-kommata-o-k-tsipras-katelixe-doyreios-ippos-toy-mitsotaki/",
-        "https://www.efsyn.gr/kosmos/1439826/portogalia-enishyontai-oi-eleghoi-sta-hersaia-kai-thalassia-synora-me-aformi-ta-gegonota-sti-theoyta/"
+        "https://www.efsyn.gr/athlitismos/1439838/sok-ston-panathinaiko-me-pantelidi-ypesti-katagma-knimis-peronis-kai-mpainei-sto-heiroyrgeio/"
       ],
-      "seen_at_utc": "2026-07-31T19:51:43.251922+00:00"
+      "seen_at_utc": "2026-07-31T20:17:20.698568+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/politics/politiki-grammateia/to-maxairi-sto-kokkalo-apo-tin-elas-gia-ta-yperxreomena-kommata-katathetei-protasi/",
-      "title": "Το μαχαίρι στο κόκκαλο από την ΕΛΑΣ για τα υπερχρεωμένα κόμματα – Καταθέτει πρόταση",
-      "normalized_title": "ΤΟ ΜΑΧΑΙΡΙ ΣΤΟ ΚΟΚΚΑΛΟ ΑΠΟ ΤΗΝ ΕΛΑΣ ΓΙΑ ΤΑ ΥΠΕΡΧΡΕΩΜΕΝΑ ΚΟΜΜΑΤΑ – ΚΑΤΑΘΕΤΕΙ ΠΡΟΤΑΣΗ",
+      "url": "https://www.in.gr/2026/07/31/sports/football/reuters-i-fifa-epimenei-sto-plano-gia-mountial-64-omadon/",
+      "title": "Reuters: «Η FIFA επιμένει στο πλάνο για Μουντιάλ 64 ομάδων»",
+      "normalized_title": "REUTERS: «Η FIFA ΕΠΙΜΕΝΕΙ ΣΤΟ ΠΛΑΝΟ ΓΙΑ ΜΟΥΝΤΙΑΛ 64 ΟΜΑΔΩΝ»",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/politics/politiki-grammateia/to-maxairi-sto-kokkalo-apo-tin-elas-gia-ta-yperxreomena-kommata-katathetei-protasi/",
-        "https://www.in.gr/2026/07/31/sports/othersports/ispania-ellada-7-11-nea-xrysi-epityxia-gia-to-elliniko-polo-pagkosmies-protathlitries-oi-korasides/",
-        "https://www.in.gr/2026/07/31/life/culture-live/flesh-impact-i-zoi-pou-den-ezise-i-merilin-monroe-kai-i-agnosti-syggeneia-tis-me-tin-ntakota-tzonson/"
+        "https://www.in.gr/2026/07/31/sports/football/reuters-i-fifa-epimenei-sto-plano-gia-mountial-64-omadon/",
+        "https://www.in.gr/2026/07/31/economy/diethnis-oikonomia/gouors-peristeri-se-kostoumi-gerakiou/",
+        "https://www.in.gr/2026/07/31/greece/synedriasi-tou-syntonistikou-politikis-prostasias-gia-tis-foties-poies-perioxes-tithentai-se-red-code/"
       ],
-      "seen_at_utc": "2026-07-31T19:51:43.251873+00:00"
+      "seen_at_utc": "2026-07-31T20:17:20.698528+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T19:51:43.252044+00:00"
+  "updated_at_utc": "2026-07-31T20:17:20.698653+00:00"
 }
