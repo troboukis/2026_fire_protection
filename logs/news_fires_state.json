@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564376597/ti-ischyei-me-tis-yperories-ston-toyristiko-klado-kai-pos-plironontai/",
-      "title": "Τι ισχύει με τις υπερωρίες στον τουριστικό κλάδο και πώς πληρώνονται",
-      "normalized_title": "ΤΙ ΙΣΧΥΕΙ ΜΕ ΤΙΣ ΥΠΕΡΩΡΙΕΣ ΣΤΟΝ ΤΟΥΡΙΣΤΙΚΟ ΚΛΑΔΟ ΚΑΙ ΠΩΣ ΠΛΗΡΩΝΟΝΤΑΙ",
+      "url": "https://www.kathimerini.gr/economy/business/564374218/ayxisi-esodon-kai-kerdoforias-gia-ti-noval-property/",
+      "title": "Αύξηση εσόδων και κερδοφορίας για τη Noval Property",
+      "normalized_title": "ΑΥΞΗΣΗ ΕΣΟΔΩΝ ΚΑΙ ΚΕΡΔΟΦΟΡΙΑΣ ΓΙΑ ΤΗ NOVAL PROPERTY",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564376597/ti-ischyei-me-tis-yperories-ston-toyristiko-klado-kai-pos-plironontai/"
+        "https://www.kathimerini.gr/economy/business/564374218/ayxisi-esodon-kai-kerdoforias-gia-ti-noval-property/",
+        "https://www.kathimerini.gr/economy/business/564374212/kerdi-rekor-gia-tin-peiraios-to-a-6mino-anilthan-sta-617-ekat/"
       ],
-      "seen_at_utc": "2026-07-31T19:30:21.244321+00:00"
+      "seen_at_utc": "2026-07-31T19:51:43.251820+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858896/sto-laurio-espeusmena-to-blue-star-paros-meta-ton-apoplou-apo-ton-peiraia-epivatis-metaferthike-se-nosokomeio/?utm_source=rss",
-      "title": "Στο Λαύριο εσπευσμένα το Blue Star Paros μετά τον απόπλου από τον Πειραιά, επιβάτης διακομίστηκε σε νοσοκομείο",
-      "normalized_title": "ΣΤΟ ΛΑΥΡΙΟ ΕΣΠΕΥΣΜΕΝΑ ΤΟ BLUE STAR PAROS ΜΕΤΑ ΤΟΝ ΑΠΟΠΛΟΥ ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ, ΕΠΙΒΑΤΗΣ ΔΙΑΚΟΜΙΣΤΗΚΕ ΣΕ ΝΟΣΟΚΟΜΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1858899/suginitiko-video-apo-to-porto-germeno-ethelodria-frodizei-skulaki/?utm_source=rss",
+      "title": "Συγκινητικό βίντεο από το Πόρτο Γερμενό: Εθελόντρια φροντίζει σκυλάκι ενώ μαίνεται η φωτιά",
+      "normalized_title": "ΣΥΓΚΙΝΗΤΙΚΟ ΒΙΝΤΕΟ ΑΠΟ ΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ: ΕΘΕΛΟΝΤΡΙΑ ΦΡΟΝΤΙΖΕΙ ΣΚΥΛΑΚΙ ΕΝΩ ΜΑΙΝΕΤΑΙ Η ΦΩΤΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858896/sto-laurio-espeusmena-to-blue-star-paros-meta-ton-apoplou-apo-ton-peiraia-epivatis-metaferthike-se-nosokomeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858899/suginitiko-video-apo-to-porto-germeno-ethelodria-frodizei-skulaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-07-31T19:30:21.244416+00:00"
+      "seen_at_utc": "2026-07-31T19:51:43.251961+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1439815/ispania-pyrkagies-ena-horio-enothike-gia-na-sosei-mia-kastania-500-eton-apo-tis-floges/",
-      "title": "Ισπανία-πυρκαγιές: Ένα χωριό ενώθηκε για να σώσει μια καστανιά 500 ετών από τις φλόγες",
-      "normalized_title": "ΙΣΠΑΝΙΑ-ΠΥΡΚΑΓΙΕΣ: ΕΝΑ ΧΩΡΙΟ ΕΝΩΘΗΚΕ ΓΙΑ ΝΑ ΣΩΣΕΙ ΜΙΑ ΚΑΣΤΑΝΙΑ 500 ΕΤΩΝ ΑΠΟ ΤΙΣ ΦΛΟΓΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1439830/synagermos-to-savvato-gia-anemoys-kai-pyrkagies-sto-kokkino-attiki-kai-eyvoia-kampanaki-gia-okto-perifereies/",
+      "title": "Συναγερμός το Σάββατο για ανέμους και πυρκαγιές: Στο «κόκκινο» Αττική και Εύβοια – Καμπανάκι για οκτώ περιφέρειες",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΤΟ ΣΑΒΒΑΤΟ ΓΙΑ ΑΝΕΜΟΥΣ ΚΑΙ ΠΥΡΚΑΓΙΕΣ: ΣΤΟ «ΚΟΚΚΙΝΟ» ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ – ΚΑΜΠΑΝΑΚΙ ΓΙΑ ΟΚΤΩ ΠΕΡΙΦΕΡΕΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1439815/ispania-pyrkagies-ena-horio-enothike-gia-na-sosei-mia-kastania-500-eton-apo-tis-floges/"
+        "https://www.efsyn.gr/ellada/1439830/synagermos-to-savvato-gia-anemoys-kai-pyrkagies-sto-kokkino-attiki-kai-eyvoia-kampanaki-gia-okto-perifereies/",
+        "https://www.efsyn.gr/politiki/1439828/apantisi-pasok-se-elas-gia-ta-yperhreomena-kommata-o-k-tsipras-katelixe-doyreios-ippos-toy-mitsotaki/",
+        "https://www.efsyn.gr/kosmos/1439826/portogalia-enishyontai-oi-eleghoi-sta-hersaia-kai-thalassia-synora-me-aformi-ta-gegonota-sti-theoyta/"
       ],
-      "seen_at_utc": "2026-07-31T19:30:21.244389+00:00"
+      "seen_at_utc": "2026-07-31T19:51:43.251922+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/world/seismos-47-vathmon-tis-klimakas-rixter-konta-sti-napoli-prokalei-simantikes-zimies/",
-      "title": "Σεισμός 4,7 βαθμών της κλίμακας Ρίχτερ κοντά στη Νάπολη προκαλεί σημαντικές ζημιές",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4,7 ΒΑΘΜΩΝ ΤΗΣ ΚΛΙΜΑΚΑΣ ΡΙΧΤΕΡ ΚΟΝΤΑ ΣΤΗ ΝΑΠΟΛΗ ΠΡΟΚΑΛΕΙ ΣΗΜΑΝΤΙΚΕΣ ΖΗΜΙΕΣ",
+      "url": "https://www.in.gr/2026/07/31/politics/politiki-grammateia/to-maxairi-sto-kokkalo-apo-tin-elas-gia-ta-yperxreomena-kommata-katathetei-protasi/",
+      "title": "Το μαχαίρι στο κόκκαλο από την ΕΛΑΣ για τα υπερχρεωμένα κόμματα – Καταθέτει πρόταση",
+      "normalized_title": "ΤΟ ΜΑΧΑΙΡΙ ΣΤΟ ΚΟΚΚΑΛΟ ΑΠΟ ΤΗΝ ΕΛΑΣ ΓΙΑ ΤΑ ΥΠΕΡΧΡΕΩΜΕΝΑ ΚΟΜΜΑΤΑ – ΚΑΤΑΘΕΤΕΙ ΠΡΟΤΑΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/world/seismos-47-vathmon-tis-klimakas-rixter-konta-sti-napoli-prokalei-simantikes-zimies/"
+        "https://www.in.gr/2026/07/31/politics/politiki-grammateia/to-maxairi-sto-kokkalo-apo-tin-elas-gia-ta-yperxreomena-kommata-katathetei-protasi/",
+        "https://www.in.gr/2026/07/31/sports/othersports/ispania-ellada-7-11-nea-xrysi-epityxia-gia-to-elliniko-polo-pagkosmies-protathlitries-oi-korasides/",
+        "https://www.in.gr/2026/07/31/life/culture-live/flesh-impact-i-zoi-pou-den-ezise-i-merilin-monroe-kai-i-agnosti-syggeneia-tis-me-tin-ntakota-tzonson/"
       ],
-      "seen_at_utc": "2026-07-31T19:30:21.244363+00:00"
+      "seen_at_utc": "2026-07-31T19:51:43.251873+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T19:30:21.244476+00:00"
+  "updated_at_utc": "2026-07-31T19:51:43.252044+00:00"
 }
