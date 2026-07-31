@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564378181/akyronetai-i-apopsini-parastasi-troades-stin-epidayro/",
-      "title": "Ακυρώνεται η αποψινή παράσταση «Τρωάδες» στην Επίδαυρο",
-      "normalized_title": "ΑΚΥΡΩΝΕΤΑΙ Η ΑΠΟΨΙΝΗ ΠΑΡΑΣΤΑΣΗ «ΤΡΩΑΔΕΣ» ΣΤΗΝ ΕΠΙΔΑΥΡΟ",
+      "url": "https://www.kathimerini.gr/society/564378859/fotia-se-voiotia-attiki-kai-argolida-epimenoyn-oi-poly-ischyroi-anemoi/",
+      "title": "Φωτιά σε Βοιωτία, Αττική και Αργολίδα: Επιμένουν οι πολύ ισχυροί άνεμοι",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΒΟΙΩΤΙΑ, ΑΤΤΙΚΗ ΚΑΙ ΑΡΓΟΛΙΔΑ: ΕΠΙΜΕΝΟΥΝ ΟΙ ΠΟΛΥ ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564378181/akyronetai-i-apopsini-parastasi-troades-stin-epidayro/",
-        "https://www.kathimerini.gr/economy/local/564376609/stasi-anamonis-apo-ti-nexans-gia-to-kalodio/"
+        "https://www.kathimerini.gr/society/564378859/fotia-se-voiotia-attiki-kai-argolida-epimenoyn-oi-poly-ischyroi-anemoi/",
+        "https://www.kathimerini.gr/world/564378841/gallia-enischyetai-i-astynomia-sta-synora-me-tin-ispania-logo-tis-krisis-sti-theoyta/",
+        "https://www.kathimerini.gr/economy/business/564374209/pano-apo-800-ekat-o-tziros-tis-ellinikis-thygatrikis-tis-inditex/",
+        "https://www.kathimerini.gr/politics/government/564376207/paidiatroi-oloklirosan-tin-ekpaideysi-alla-den-echoyn-ergaleia/"
       ],
-      "seen_at_utc": "2026-07-31T18:30:25.747822+00:00"
+      "seen_at_utc": "2026-07-31T18:51:39.489444+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,23 +1271,25 @@
       "seen_at_utc": "2026-07-31T18:17:51.309460+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439797/vrefonipiakoi-stathmoi-ti-allazei-kai-poioi-epofeloyntai-tesseris-erotiseis-kai-apantiseis/",
-      "title": "Βρεφονηπιακοί σταθμοί: Τι αλλάζει και ποιοι επωφελούνται – Τέσσερις ερωτήσεις και απαντήσεις",
-      "normalized_title": "ΒΡΕΦΟΝΗΠΙΑΚΟΙ ΣΤΑΘΜΟΙ: ΤΙ ΑΛΛΑΖΕΙ ΚΑΙ ΠΟΙΟΙ ΕΠΩΦΕΛΟΥΝΤΑΙ – ΤΕΣΣΕΡΙΣ ΕΡΩΤΗΣΕΙΣ ΚΑΙ ΑΠΑΝΤΗΣΕΙΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1439800/protathlitries-eyropis-oi-adelfes-alexandri-stin-kallitehniki-kolymvisi/",
+      "title": "Πρωταθλήτριες Ευρώπης οι αδελφές Αλεξανδρή στην καλλιτεχνική κολύμβηση",
+      "normalized_title": "ΠΡΩΤΑΘΛΗΤΡΙΕΣ ΕΥΡΩΠΗΣ ΟΙ ΑΔΕΛΦΕΣ ΑΛΕΞΑΝΔΡΗ ΣΤΗΝ ΚΑΛΛΙΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439797/vrefonipiakoi-stathmoi-ti-allazei-kai-poioi-epofeloyntai-tesseris-erotiseis-kai-apantiseis/"
+        "https://www.efsyn.gr/athlitismos/1439800/protathlitries-eyropis-oi-adelfes-alexandri-stin-kallitehniki-kolymvisi/"
       ],
-      "seen_at_utc": "2026-07-31T18:30:25.747895+00:00"
+      "seen_at_utc": "2026-07-31T18:51:39.489538+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/07/31/sports/othersports/kallitexniki-kolymvisi-protathlitries-eyropis-oi-adelfes-aleksandri/",
-      "title": "Καλλιτεχνική κολύμβηση: Πρωταθλήτριες Ευρώπης οι αδελφές Αλεξανδρή!",
-      "normalized_title": "ΚΑΛΛΙΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ: ΠΡΩΤΑΘΛΗΤΡΙΕΣ ΕΥΡΩΠΗΣ ΟΙ ΑΔΕΛΦΕΣ ΑΛΕΞΑΝΔΡΗ!",
+      "url": "https://www.in.gr/2026/07/31/greece/daily-mail-gia-kypseli-o-markos-theoreitai-o-kyrios-ypoptos-gia-ti-dolofonia-tis-38xronis-pou-vrethike-se-valitsa/",
+      "title": "Daily Mail για Κυψέλη: Ο «Μάρκος» θεωρείται ο κύριος ύποπτος για τη δολοφονία της 38χρονης που βρέθηκε σε βαλίτσα",
+      "normalized_title": "DAILY MAIL ΓΙΑ ΚΥΨΕΛΗ: Ο «ΜΑΡΚΟΣ» ΘΕΩΡΕΙΤΑΙ Ο ΚΥΡΙΟΣ ΥΠΟΠΤΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ 38ΧΡΟΝΗΣ ΠΟΥ ΒΡΕΘΗΚΕ ΣΕ ΒΑΛΙΤΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/07/31/sports/othersports/kallitexniki-kolymvisi-protathlitries-eyropis-oi-adelfes-aleksandri/"
+        "https://www.in.gr/2026/07/31/greece/daily-mail-gia-kypseli-o-markos-theoreitai-o-kyrios-ypoptos-gia-ti-dolofonia-tis-38xronis-pou-vrethike-se-valitsa/",
+        "https://www.in.gr/2026/07/31/politics/epikairotita/psifisthike-i-tropologia-gia-ta-isovia-kai-to-nomosxedio-gia-tis-slapp-agoges/",
+        "https://www.in.gr/2026/07/31/life/culture-live/o-kouper-xofman-itan-trela-eroteymenos-me-tin-olivia-gouailnt/"
       ],
-      "seen_at_utc": "2026-07-31T18:30:25.747863+00:00"
+      "seen_at_utc": "2026-07-31T18:51:39.489515+00:00"
     }
   },
-  "updated_at_utc": "2026-07-31T18:30:25.747969+00:00"
+  "updated_at_utc": "2026-07-31T18:51:39.489619+00:00"
 }
