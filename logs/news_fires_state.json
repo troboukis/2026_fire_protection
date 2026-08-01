@@ -1,16 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564379780/elliniko-kalokairi-stis-stachtes/",
-      "title": "Ελληνικό καλοκαίρι στις στάχτες",
-      "normalized_title": "ΕΛΛΗΝΙΚΟ ΚΑΛΟΚΑΙΡΙ ΣΤΙΣ ΣΤΑΧΤΕΣ",
+      "url": "https://www.kathimerini.gr/world/564379786/oman-dexamenoploio-chtypithike-apo-vlima/",
+      "title": "Ομάν: Δεξαμενόπλοιο χτυπήθηκε από βλήμα",
+      "normalized_title": "ΟΜΑΝ: ΔΕΞΑΜΕΝΟΠΛΟΙΟ ΧΤΥΠΗΘΗΚΕ ΑΠΟ ΒΛΗΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564379780/elliniko-kalokairi-stis-stachtes/",
-        "https://www.kathimerini.gr/opinion/564378463/pigainete-anatolika/",
-        "https://www.kathimerini.gr/opinion/564378649/i-kalosyni-ton-xenon-4/",
-        "https://www.kathimerini.gr/society/564379789/porto-germeno-ston-apegklovismo-12-anthropon-prochorisan-dynameis-toy-limenikoy-kai-tis-pyrosvestikis/"
+        "https://www.kathimerini.gr/world/564379786/oman-dexamenoploio-chtypithike-apo-vlima/",
+        "https://www.kathimerini.gr/society/564379810/voiotia-synechizetai-i-machi-me-tis-floges-i-fotia-kateythynetai-pros-domvraina/",
+        "https://www.kathimerini.gr/society/564379804/aigio-xekinisan-oi-ripseis-neroy-apo-ta-enaeria-mesa/",
+        "https://www.kathimerini.gr/politics/564378313/entos-kai-ektos-tis-diergasies-sto-riant-parakoloythei-i-athina/",
+        "https://www.kathimerini.gr/society/564379798/porto-germeno-kykloforiakes-rythmiseis-stin-periochi/",
+        "https://www.kathimerini.gr/opinion/564378460/h-theoria-tis-antikatastasis/"
       ],
-      "seen_at_utc": "2026-08-01T05:30:08.643238+00:00"
+      "seen_at_utc": "2026-08-01T05:51:17.637497+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1264,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858941/ergazomenoi-psna-kataggelloun-sovares-elleipseis-meta-ti-fotia-sto-poikilo-oros-kinduneusan-astheneis-kai-prosopiko/?utm_source=rss",
-      "title": "Εργαζόμενοι ΨΝΑ: Καταγγέλλουν σοβαρές ελλείψεις μετά τη φωτιά στο Ποικίλο Όρος – «Κινδύνευσαν ασθενείς και προσωπικό»",
-      "normalized_title": "ΕΡΓΑΖΟΜΕΝΟΙ ΨΝΑ: ΚΑΤΑΓΓΕΛΛΟΥΝ ΣΟΒΑΡΕΣ ΕΛΛΕΙΨΕΙΣ ΜΕΤΑ ΤΗ ΦΩΤΙΑ ΣΤΟ ΠΟΙΚΙΛΟ ΟΡΟΣ – «ΚΙΝΔΥΝΕΥΣΑΝ ΑΣΘΕΝΕΙΣ ΚΑΙ ΠΡΟΣΩΠΙΚΟ»",
+      "url": "https://www.protothema.gr/greece/article/1858954/purometeorologos-gia-ti-fotia-sti-voiotia-to-megethos-tis-katastrofis-einai-asullipto-ehoun-epireastie/?utm_source=rss",
+      "title": "«Έχουν επηρεαστεί 40.000 - 50.000 στρέμματα», λέει ο πυρομετεωρολόγος Θ.Γιάνναρος για τη φωτιά που ξεκίνησε από τη Βοιωτία",
+      "normalized_title": "«ΕΧΟΥΝ ΕΠΗΡΕΑΣΤΕΙ 40.000 - 50.000 ΣΤΡΕΜΜΑΤΑ», ΛΕΕΙ Ο ΠΥΡΟΜΕΤΕΩΡΟΛΟΓΟΣ Θ.ΓΙΑΝΝΑΡΟΣ ΓΙΑ ΤΗ ΦΩΤΙΑ ΠΟΥ ΞΕΚΙΝΗΣΕ ΑΠΟ ΤΗ ΒΟΙΩΤΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858941/ergazomenoi-psna-kataggelloun-sovares-elleipseis-meta-ti-fotia-sto-poikilo-oros-kinduneusan-astheneis-kai-prosopiko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858954/purometeorologos-gia-ti-fotia-sti-voiotia-to-megethos-tis-katastrofis-einai-asullipto-ehoun-epireastie/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858951/kanonika-ta-dromologia-ton-ploion-apo-peiraia-laurio-kai-rafina/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T05:30:08.643369+00:00"
+      "seen_at_utc": "2026-08-01T05:51:17.637639+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/to-martyrio-tis-stagonas-sta-nisia/",
-      "title": "Το μαρτύριο της σταγόνας στα νησιά",
-      "normalized_title": "ΤΟ ΜΑΡΤΥΡΙΟ ΤΗΣ ΣΤΑΓΟΝΑΣ ΣΤΑ ΝΗΣΙΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1439915/stegastiko-pano-apo-75-000-spitia-gia-anakainisi-me-epidotisi-36-000-eyro-sto-spiti-moy-ii-15-000-noikokyria/",
+      "title": "Στεγαστικό: Πάνω από 75.000 σπίτια για ανακαίνιση με επιδότηση 36.000 ευρώ – Στο «Σπίτι μου ΙΙ» 15.000 νοικοκυριά",
+      "normalized_title": "ΣΤΕΓΑΣΤΙΚΟ: ΠΑΝΩ ΑΠΟ 75.000 ΣΠΙΤΙΑ ΓΙΑ ΑΝΑΚΑΙΝΙΣΗ ΜΕ ΕΠΙΔΟΤΗΣΗ 36.000 ΕΥΡΩ – ΣΤΟ «ΣΠΙΤΙ ΜΟΥ ΙΙ» 15.000 ΝΟΙΚΟΚΥΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/to-martyrio-tis-stagonas-sta-nisia/",
-        "https://www.efsyn.gr/politiki/1439879/tropologies-gia-dioikisi-dikastirion-kai-dieythynonton-eisaggelion-zilepse-ton-georgiadi-o-floridis/"
+        "https://www.efsyn.gr/oikonomia/1439915/stegastiko-pano-apo-75-000-spitia-gia-anakainisi-me-epidotisi-36-000-eyro-sto-spiti-moy-ii-15-000-noikokyria/",
+        "https://www.efsyn.gr/ellada/1439913/eortologio-megali-mera-simera-poioi-giortazoyn-savvato-1i-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-01T05:30:08.643328+00:00"
+      "seen_at_utc": "2026-08-01T05:51:17.637595+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/greece/thessaloniki-kleinei-to-vrady-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/",
-      "title": "Θεσσαλονίκη: Κλείνει το βράδυ ο Περιφερειακός λόγω Flyover – Σε ποια σημεία, ποιες ώρες",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΚΛΕΙΝΕΙ ΤΟ ΒΡΑΔΥ Ο ΠΕΡΙΦΕΡΕΙΑΚΟΣ ΛΟΓΩ FLYOVER – ΣΕ ΠΟΙΑ ΣΗΜΕΙΑ, ΠΟΙΕΣ ΩΡΕΣ",
+      "url": "https://www.in.gr/2026/08/01/greece/porto-germeno-kykloforiakes-rythmiseis-logo-tis-fotias/",
+      "title": "Κυκλοφοριακές ρυθμίσεις στην περιοχή του Πόρτο Γερμενού λόγω της φωτιάς",
+      "normalized_title": "ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗΝ ΠΕΡΙΟΧΗ ΤΟΥ ΠΟΡΤΟ ΓΕΡΜΕΝΟΥ ΛΟΓΩ ΤΗΣ ΦΩΤΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/greece/thessaloniki-kleinei-to-vrady-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/",
-        "https://www.in.gr/2026/08/01/life/music/starovas-kai-giokarinis-enonoun-tis-dynameis-tous-ston-korydallo-se-mia-megali-rock-vradia/"
+        "https://www.in.gr/2026/08/01/greece/porto-germeno-kykloforiakes-rythmiseis-logo-tis-fotias/",
+        "https://www.in.gr/2026/08/01/plus/vita/overload-tesseris-logoi-pou-i-douleia-mas-eksantlei/",
+        "https://www.in.gr/2026/08/01/greece/sikothikan-ta-enaeria-sto-porto-germeno-meta-apo-nyxta-kolasi-stin-psatha-oi-floges-dyskoli-katastasi-sti-voiotia/",
+        "https://www.in.gr/2026/08/01/sports/football/panathinaikos-xeirourgithike-o-pantelidis-poso-kairo-tha-meinei-ektos/",
+        "https://www.in.gr/2026/08/01/go-fun/social/arkas-i-proti-kalimera-tou-aygoustou/"
       ],
-      "seen_at_utc": "2026-08-01T05:30:08.643306+00:00"
+      "seen_at_utc": "2026-08-01T05:51:17.637549+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T05:30:08.643459+00:00"
+  "updated_at_utc": "2026-08-01T05:51:17.637731+00:00"
 }
