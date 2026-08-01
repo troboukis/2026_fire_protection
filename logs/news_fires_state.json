@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380152/amerikanos-stratigos-proeidopoiei-to-pentagono-tha-prepei-na-epilexoyme-metaxy-ipa-kai-israil/",
-      "title": "Αμερικανός στρατηγός προειδοποιεί το Πεντάγωνο: Θα πρέπει να επιλέξουμε μεταξύ ΗΠΑ και Ισραήλ",
-      "normalized_title": "ΑΜΕΡΙΚΑΝΟΣ ΣΤΡΑΤΗΓΟΣ ΠΡΟΕΙΔΟΠΟΙΕΙ ΤΟ ΠΕΝΤΑΓΩΝΟ: ΘΑ ΠΡΕΠΕΙ ΝΑ ΕΠΙΛΕΞΟΥΜΕ ΜΕΤΑΞΥ ΗΠΑ ΚΑΙ ΙΣΡΑΗΛ",
+      "url": "https://www.kathimerini.gr/culture/564380179/troades-nea-parastasi-stis-2-aygoystoy/",
+      "title": "Τρωάδες: Νέα παράσταση στις 2 Αυγούστου",
+      "normalized_title": "ΤΡΩΑΔΕΣ: ΝΕΑ ΠΑΡΑΣΤΑΣΗ ΣΤΙΣ 2 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380152/amerikanos-stratigos-proeidopoiei-to-pentagono-tha-prepei-na-epilexoyme-metaxy-ipa-kai-israil/"
+        "https://www.kathimerini.gr/culture/564380179/troades-nea-parastasi-stis-2-aygoystoy/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564378265/za-ra-i-istoria-mias-geitonias-enos-kinimatografoy-kai-mias-oikogeneias/"
       ],
-      "seen_at_utc": "2026-08-01T14:51:29.580232+00:00"
+      "seen_at_utc": "2026-08-01T15:17:20.573641+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859184/ston-anakriti-o-upeuthunos-leitourgias-tou-diktuou-tou-deddie-rethumnou/?utm_source=rss",
-      "title": "Στον ανακριτή ο υπεύθυνος λειτουργίας του δικτύου του ΔΕΔΔΗΕ Ρεθύμνου",
-      "normalized_title": "ΣΤΟΝ ΑΝΑΚΡΙΤΗ Ο ΥΠΕΥΘΥΝΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΔΙΚΤΥΟΥ ΤΟΥ ΔΕΔΔΗΕ ΡΕΘΥΜΝΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1859196/poies-periohes-tha-epireastoun-apo-tis-purkagies-se-porto-germeno-voiotia-fokida-kai-aigialeia/?utm_source=rss",
+      "title": "Δείτε βίντεο: Ποιες περιοχές θα επηρεαστούν τους καπνούς από τις πυρκαγιές σε Πόρτο Γερμενό, Βοιωτία, Φωκίδα και Αιγιάλεια",
+      "normalized_title": "ΔΕΙΤΕ ΒΙΝΤΕΟ: ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΕΠΗΡΕΑΣΤΟΥΝ ΤΟΥΣ ΚΑΠΝΟΥΣ ΑΠΟ ΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΕ ΠΟΡΤΟ ΓΕΡΜΕΝΟ, ΒΟΙΩΤΙΑ, ΦΩΚΙΔΑ ΚΑΙ ΑΙΓΙΑΛΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859184/ston-anakriti-o-upeuthunos-leitourgias-tou-diktuou-tou-deddie-rethumnou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859196/poies-periohes-tha-epireastoun-apo-tis-purkagies-se-porto-germeno-voiotia-fokida-kai-aigialeia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859194/astunomikos-sti-voiotia-sozei-katsikaki-mesa-apo-tis-floges/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859188/duo-purosvestes-sto-nosokomeio-apo-ti-fotia-sti-voiotia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859186/suglonistiko-video-apo-ta-purina-metopa-purosvestes-apenadi-stin-purini-lailapa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T14:51:29.580359+00:00"
+      "seen_at_utc": "2026-08-01T15:17:20.573893+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1440032/melina-pros-lina-meros-i/",
-      "title": "Μελίνα προς Λίνα (μέρος Ι)",
-      "normalized_title": "ΜΕΛΙΝΑ ΠΡΟΣ ΛΙΝΑ (ΜΕΡΟΣ Ι)",
+      "url": "https://www.efsyn.gr/kosmos/1440144/ispania-egoistiki-dihastiki-kai-paranomi-i-antidrasi-kapoion-horon-tis-e-e-gia-ti-theoyta/",
+      "title": "Ισπανία: «Εγωιστική, διχαστική και παράνομη» η αντίδραση κάποιων χωρών της Ε.Ε. για τη Θέουτα",
+      "normalized_title": "ΙΣΠΑΝΙΑ: «ΕΓΩΙΣΤΙΚΗ, ΔΙΧΑΣΤΙΚΗ ΚΑΙ ΠΑΡΑΝΟΜΗ» Η ΑΝΤΙΔΡΑΣΗ ΚΑΠΟΙΩΝ ΧΩΡΩΝ ΤΗΣ Ε.Ε. ΓΙΑ ΤΗ ΘΕΟΥΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1440032/melina-pros-lina-meros-i/"
+        "https://www.efsyn.gr/kosmos/1440144/ispania-egoistiki-dihastiki-kai-paranomi-i-antidrasi-kapoion-horon-tis-e-e-gia-ti-theoyta/"
       ],
-      "seen_at_utc": "2026-08-01T14:51:29.580312+00:00"
+      "seen_at_utc": "2026-08-01T15:17:20.573819+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/life/texni/birds-of-passage-otan-ena-spiti-sti-santorini-metatrepetai-se-xoro-sygxronis-texnis/",
-      "title": "«Birds of Passage»: Όταν ένα σπίτι στη Σαντορίνη μετατρέπεται σε χώρο σύγχρονης τέχνης",
-      "normalized_title": "«BIRDS OF PASSAGE»: ΟΤΑΝ ΕΝΑ ΣΠΙΤΙ ΣΤΗ ΣΑΝΤΟΡΙΝΗ ΜΕΤΑΤΡΕΠΕΤΑΙ ΣΕ ΧΩΡΟ ΣΥΓΧΡΟΝΗΣ ΤΕΧΝΗΣ",
+      "url": "https://www.in.gr/2026/08/01/politics/politiki-grammateia/ergazomenoi-psna-dafni-gia-ti-fotia-sto-xaidari-anyparkti-pyroprostasia-enas-traymatioforeas-kai-apeiles-georgiadi-gia-peitharxika/",
+      "title": "Εργαζόμενοι ΨΝΑ – Δαφνί για τη φωτιά στο Χαϊδάρι: «Ανύπαρκτη πυροπροστασία, ένας τραυματιοφορέας και απειλές Γεωργιάδη για πειθαρχικά»",
+      "normalized_title": "ΕΡΓΑΖΟΜΕΝΟΙ ΨΝΑ – ΔΑΦΝΙ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΟ ΧΑΙΔΑΡΙ: «ΑΝΥΠΑΡΚΤΗ ΠΥΡΟΠΡΟΣΤΑΣΙΑ, ΕΝΑΣ ΤΡΑΥΜΑΤΙΟΦΟΡΕΑΣ ΚΑΙ ΑΠΕΙΛΕΣ ΓΕΩΡΓΙΑΔΗ ΓΙΑ ΠΕΙΘΑΡΧΙΚΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/life/texni/birds-of-passage-otan-ena-spiti-sti-santorini-metatrepetai-se-xoro-sygxronis-texnis/",
-        "https://www.in.gr/2026/08/01/sports/football/panathinaikos-o-kangkoua-den-einai-to-oxtari-pou-thelei-o-nistroup/",
-        "https://www.in.gr/2026/08/01/sports/on-field/diaitisia-i-epo-apofasise-anavoli-xoris-na-dosei-eksigiseis/",
-        "https://www.in.gr/2026/08/01/greece/ekklisi-tou-ellinikou-erythrou-stayrou-gia-tous-pyropliktous-kai-ta-oikosita-zoakia-ta-simeia-sygkentrosis/"
+        "https://www.in.gr/2026/08/01/politics/politiki-grammateia/ergazomenoi-psna-dafni-gia-ti-fotia-sto-xaidari-anyparkti-pyroprostasia-enas-traymatioforeas-kai-apeiles-georgiadi-gia-peitharxika/",
+        "https://www.in.gr/2026/08/01/sports/football/levadeiakos-anakoinose-tin-apoktisi-tou-gkregkorio-rontrigkez-pic/",
+        "https://www.in.gr/2026/08/01/world/italia-26-traymaties-apo-ton-seismo-konta-sti-napoli-i-stigmi-pou-xtypa-o-egkelados/"
       ],
-      "seen_at_utc": "2026-08-01T14:51:29.580283+00:00"
+      "seen_at_utc": "2026-08-01T15:17:20.573748+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T14:51:29.580433+00:00"
+  "updated_at_utc": "2026-08-01T15:17:20.574001+00:00"
 }
