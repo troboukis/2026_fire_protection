@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380296/livanos-o-israilinos-stratos-anakoinose-oti-skotose-arketa-meli-tis-chezmpolach/",
-      "title": "Λίβανος: Ο ισραηλινός στρατός ανακοίνωσε ότι σκότωσε αρκετά μέλη της Χεζμπολάχ",
-      "normalized_title": "ΛΙΒΑΝΟΣ: Ο ΙΣΡΑΗΛΙΝΟΣ ΣΤΡΑΤΟΣ ΑΝΑΚΟΙΝΩΣΕ ΟΤΙ ΣΚΟΤΩΣΕ ΑΡΚΕΤΑ ΜΕΛΗ ΤΗΣ ΧΕΖΜΠΟΛΑΧ",
+      "url": "https://www.kathimerini.gr/culture/564378523/antidraseis-gia-ekthesi-toy-steit-ntipartment/",
+      "title": "Αντιδράσεις για έκθεση του Στέιτ Ντιπάρτμεντ",
+      "normalized_title": "ΑΝΤΙΔΡΑΣΕΙΣ ΓΙΑ ΕΚΘΕΣΗ ΤΟΥ ΣΤΕΙΤ ΝΤΙΠΑΡΤΜΕΝΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380296/livanos-o-israilinos-stratos-anakoinose-oti-skotose-arketa-meli-tis-chezmpolach/",
-        "https://www.kathimerini.gr/economy/business/564378745/stin-polonia-epekteinetai-i-dei/"
+        "https://www.kathimerini.gr/culture/564378523/antidraseis-gia-ekthesi-toy-steit-ntipartment/",
+        "https://www.kathimerini.gr/society/564380350/eleytheros-me-perioristikoys-oroys-o-ypeythynos-leitoyrgias-toy-deddie-rethymnoy/"
       ],
-      "seen_at_utc": "2026-08-01T18:51:13.432368+00:00"
+      "seen_at_utc": "2026-08-01T19:17:19.559356+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859257/sunelifthi-sti-mutilini-tourkos-ploioktitis-melos-eglimatikis-organosis-gia-diakinisi-kokainis/?utm_source=rss",
-      "title": "Συνελήφθη στη Μυτιλήνη Τούρκος πλοιοκτήτης για διακίνηση κοκαΐνης μέσω εγκληματικής οργάνωσης",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΜΥΤΙΛΗΝΗ ΤΟΥΡΚΟΣ ΠΛΟΙΟΚΤΗΤΗΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΚΟΚΑΙΝΗΣ ΜΕΣΩ ΕΓΚΛΗΜΑΤΙΚΗΣ ΟΡΓΑΝΩΣΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1859273/apo-agrotiki-ergasia-i-megali-fotia-stin-argolida-veggaliko-stin-ileia-11-sullipseis/?utm_source=rss",
+      "title": "Από αγροτικές εργασίες με καταστροφέα η φωτιά στο Φίχτι, 11 συλλήψεις σε Αργολίδα, Ηλεία, Σέρρες, Αττική και Λέσβο",
+      "normalized_title": "ΑΠΟ ΑΓΡΟΤΙΚΕΣ ΕΡΓΑΣΙΕΣ ΜΕ ΚΑΤΑΣΤΡΟΦΕΑ Η ΦΩΤΙΑ ΣΤΟ ΦΙΧΤΙ, 11 ΣΥΛΛΗΨΕΙΣ ΣΕ ΑΡΓΟΛΙΔΑ, ΗΛΕΙΑ, ΣΕΡΡΕΣ, ΑΤΤΙΚΗ ΚΑΙ ΛΕΣΒΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859257/sunelifthi-sti-mutilini-tourkos-ploioktitis-melos-eglimatikis-organosis-gia-diakinisi-kokainis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859249/mahi-gia-na-sothoun-kai-ta-zoa-apo-tis-floges-dekades-metaferthikan-ston-prosorino-stathmo-sto-gipedo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859273/apo-agrotiki-ergasia-i-megali-fotia-stin-argolida-veggaliko-stin-ileia-11-sullipseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T18:51:13.432506+00:00"
+      "seen_at_utc": "2026-08-01T19:17:19.559597+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440191/eleytheros-me-perioristikoys-oroys-o-ypeythynos-leitoyrgias-toy-deddie-rethymnoy/",
-      "title": "Φωτιά στο Ρέθυμνο: Ελεύθερος με περιοριστικούς όρους ο υπεύθυνος λειτουργίας του ΔΕΔΔΗΕ",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΕΛΕΥΘΕΡΟΣ ΜΕ ΠΕΡΙΟΡΙΣΤΙΚΟΥΣ ΟΡΟΥΣ Ο ΥΠΕΥΘΥΝΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΔΕΔΔΗΕ",
+      "url": "https://www.efsyn.gr/kosmos/1440197/i-ispania-egkathista-ploto-fragma-sti-theoyta-stoys-67-oi-nekroi-metanastes/",
+      "title": "Η Ισπανία εγκαθιστά πλωτό φράγμα στη Θέουτα – Στους 67 οι νεκροί μετανάστες",
+      "normalized_title": "Η ΙΣΠΑΝΙΑ ΕΓΚΑΘΙΣΤΑ ΠΛΩΤΟ ΦΡΑΓΜΑ ΣΤΗ ΘΕΟΥΤΑ – ΣΤΟΥΣ 67 ΟΙ ΝΕΚΡΟΙ ΜΕΤΑΝΑΣΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440191/eleytheros-me-perioristikoys-oroys-o-ypeythynos-leitoyrgias-toy-deddie-rethymnoy/",
-        "https://www.efsyn.gr/athlitismos/1440046/aytos-poy-allazei-to-status/"
+        "https://www.efsyn.gr/kosmos/1440197/i-ispania-egkathista-ploto-fragma-sti-theoyta-stoys-67-oi-nekroi-metanastes/",
+        "https://www.efsyn.gr/kosmos/1440194/ipa-o-tzei-kleiton-tha-analavei-ti-thesi-toy-epikefalis-ton-mystikon-ypiresion-ti-deytera/"
       ],
-      "seen_at_utc": "2026-08-01T18:51:13.432456+00:00"
+      "seen_at_utc": "2026-08-01T19:17:19.559531+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/sports/football/paok-symfonise-kai-erxetai-stin-ellada-o-mikelmprensi/",
-      "title": "ΠΑΟΚ: Συμφώνησε και έρχεται στην Ελλάδα ο Μικελμπρενσί",
-      "normalized_title": "ΠΑΟΚ: ΣΥΜΦΩΝΗΣΕ ΚΑΙ ΕΡΧΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ Ο ΜΙΚΕΛΜΠΡΕΝΣΙ",
+      "url": "https://www.in.gr/2026/08/01/world/minyma-tramp-pros-ton-marokino-vasilia-oi-ipa-anagnorizoun-ti-safi-kyriarxia-tou-marokou-sti-dytiki-saxara/",
+      "title": "Μήνυμα Τραμπ προς τον μαροκινό βασιλιά: Οι ΗΠΑ αναγνωρίζουν τη σαφή κυριαρχία του Μαρόκου στη Δυτική Σαχάρα",
+      "normalized_title": "ΜΗΝΥΜΑ ΤΡΑΜΠ ΠΡΟΣ ΤΟΝ ΜΑΡΟΚΙΝΟ ΒΑΣΙΛΙΑ: ΟΙ ΗΠΑ ΑΝΑΓΝΩΡΙΖΟΥΝ ΤΗ ΣΑΦΗ ΚΥΡΙΑΡΧΙΑ ΤΟΥ ΜΑΡΟΚΟΥ ΣΤΗ ΔΥΤΙΚΗ ΣΑΧΑΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/sports/football/paok-symfonise-kai-erxetai-stin-ellada-o-mikelmprensi/",
-        "https://www.in.gr/2026/08/01/greece/tria-anilika-paidia-diasothikan-apo-nayagosostria-se-paralia-tis-thasou/",
-        "https://www.in.gr/2026/08/01/greece/symploki-aliergaton-pano-se-skafos-tesseris-syllipseis-stin-kavala-dyo-traymaties/",
-        "https://www.in.gr/2026/08/01/life/mparak-ompama-ti-na-diavasete-kai-ti-na-akousete-ayto-to-kalokairi-i-lista/"
+        "https://www.in.gr/2026/08/01/world/minyma-tramp-pros-ton-marokino-vasilia-oi-ipa-anagnorizoun-ti-safi-kyriarxia-tou-marokou-sti-dytiki-saxara/",
+        "https://www.in.gr/2026/08/01/sports/football/o-tzolis-skorare-proti-fora-me-ti-fanela-tis-arsenal-vid/",
+        "https://www.in.gr/2026/08/01/world/rosia-treis-nekroi-kai-15-traymaties-apo-ekriksi-sti-mosxa/"
       ],
-      "seen_at_utc": "2026-08-01T18:51:13.432418+00:00"
+      "seen_at_utc": "2026-08-01T19:17:19.559476+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T18:51:13.432582+00:00"
+  "updated_at_utc": "2026-08-01T19:17:19.559704+00:00"
 }
