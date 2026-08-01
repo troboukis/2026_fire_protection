@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564380263/ipa-nomoschedio-syndeei-ta-opla-pros-tin-toyrkia-me-ta-anthropina-dikaiomata/",
-      "title": "ΗΠΑ: Νομοσχέδιο συνδέει τα όπλα προς την Τουρκία με τα ανθρώπινα δικαιώματα",
-      "normalized_title": "ΗΠΑ: ΝΟΜΟΣΧΕΔΙΟ ΣΥΝΔΕΕΙ ΤΑ ΟΠΛΑ ΠΡΟΣ ΤΗΝ ΤΟΥΡΚΙΑ ΜΕ ΤΑ ΑΝΘΡΩΠΙΝΑ ΔΙΚΑΙΩΜΑΤΑ",
+      "url": "https://www.kathimerini.gr/society/564380284/kavala-symploki-metaxy-aliergaton-se-skafos-kataschethike-sfyri/",
+      "title": "Καβάλα: Συμπλοκή μεταξύ αλιεργατών σε σκάφος – Κατασχέθηκε σφυρί",
+      "normalized_title": "ΚΑΒΑΛΑ: ΣΥΜΠΛΟΚΗ ΜΕΤΑΞΥ ΑΛΙΕΡΓΑΤΩΝ ΣΕ ΣΚΑΦΟΣ – ΚΑΤΑΣΧΕΘΗΚΕ ΣΦΥΡΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564380263/ipa-nomoschedio-syndeei-ta-opla-pros-tin-toyrkia-me-ta-anthropina-dikaiomata/"
+        "https://www.kathimerini.gr/society/564380284/kavala-symploki-metaxy-aliergaton-se-skafos-kataschethike-sfyri/",
+        "https://www.kathimerini.gr/world/564380275/krisi-sti-theoyta-ektakti-synedriasi-ton-ypoyrgon-esoterikon-tin-triti/"
       ],
-      "seen_at_utc": "2026-08-01T16:30:11.059456+00:00"
+      "seen_at_utc": "2026-08-01T16:51:19.394058+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859215/sunelifthisan-duo-allodapoi-gia-klopes-se-hrusohoeia-stin-kefalonia-ekruvan-kosmimata-mesa-se-sabouan/?utm_source=rss",
-      "title": "Συνελήφθησαν δύο αλλοδαποί για κλοπές σε χρυσοχοεία στην Κεφαλονιά – Έκρυβαν κοσμήματα μέσα σε σαμπουάν",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗΣΑΝ ΔΥΟ ΑΛΛΟΔΑΠΟΙ ΓΙΑ ΚΛΟΠΕΣ ΣΕ ΧΡΥΣΟΧΟΕΙΑ ΣΤΗΝ ΚΕΦΑΛΟΝΙΑ – ΕΚΡΥΒΑΝ ΚΟΣΜΗΜΑΤΑ ΜΕΣΑ ΣΕ ΣΑΜΠΟΥΑΝ",
+      "url": "https://www.protothema.gr/greece/article/1859223/nees-eikones-apo-to-fovero-trohaio-sti-fthiotida-apo-tin-sugrousi-duo-fortigon-me-enan-nekro/?utm_source=rss",
+      "title": "Νέες εικόνες από το τρομακτικό τροχαίο στη Φθιώτιδα από την σύγκρουση δύο φορτηγών, με έναν νεκρό",
+      "normalized_title": "ΝΕΕΣ ΕΙΚΟΝΕΣ ΑΠΟ ΤΟ ΤΡΟΜΑΚΤΙΚΟ ΤΡΟΧΑΙΟ ΣΤΗ ΦΘΙΩΤΙΔΑ ΑΠΟ ΤΗΝ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΦΟΡΤΗΓΩΝ, ΜΕ ΕΝΑΝ ΝΕΚΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859215/sunelifthisan-duo-allodapoi-gia-klopes-se-hrusohoeia-stin-kefalonia-ekruvan-kosmimata-mesa-se-sabouan/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859223/nees-eikones-apo-to-fovero-trohaio-sti-fthiotida-apo-tin-sugrousi-duo-fortigon-me-enan-nekro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T16:17:16.279800+00:00"
+      "seen_at_utc": "2026-08-01T16:51:19.394137+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440162/tsoykalas-i-kyvernisi-epidotei-me-ta-hrimata-ton-forologoymenon-tin-etairiki-koinoniki-eythyni-ton-aktoploikon/",
-      "title": "Τσουκαλάς: Η κυβέρνηση επιδοτεί με τα χρήματα των φορολογούμενων την «εταιρική κοινωνική ευθύνη» των ακτοπλοϊκών",
-      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: Η ΚΥΒΕΡΝΗΣΗ ΕΠΙΔΟΤΕΙ ΜΕ ΤΑ ΧΡΗΜΑΤΑ ΤΩΝ ΦΟΡΟΛΟΓΟΥΜΕΝΩΝ ΤΗΝ «ΕΤΑΙΡΙΚΗ ΚΟΙΝΩΝΙΚΗ ΕΥΘΥΝΗ» ΤΩΝ ΑΚΤΟΠΛΟΙΚΩΝ",
+      "url": "https://www.efsyn.gr/oikonomia/1440037/epiheirimatikos-emfylios-viomihania-enantion-soyper-market/",
+      "title": "Επιχειρηματικός εμφύλιος: βιομηχανία εναντίον σούπερ μάρκετ!",
+      "normalized_title": "ΕΠΙΧΕΙΡΗΜΑΤΙΚΟΣ ΕΜΦΥΛΙΟΣ: ΒΙΟΜΗΧΑΝΙΑ ΕΝΑΝΤΙΟΝ ΣΟΥΠΕΡ ΜΑΡΚΕΤ!",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440162/tsoykalas-i-kyvernisi-epidotei-me-ta-hrimata-ton-forologoymenon-tin-etairiki-koinoniki-eythyni-ton-aktoploikon/"
+        "https://www.efsyn.gr/oikonomia/1440037/epiheirimatikos-emfylios-viomihania-enantion-soyper-market/",
+        "https://www.efsyn.gr/stiles/1440153/apo-nekrothaftis-toy-pasok-se-episimo-zoodoti-tis-nd/"
       ],
-      "seen_at_utc": "2026-08-01T16:30:11.059555+00:00"
+      "seen_at_utc": "2026-08-01T16:51:19.394120+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/world/ipa-nomosxedio-sto-kogkreso-syndeei-poliseis-oplon-kai-voitheia-stin-tourkia-me-ta-anthropina-dikaiomata/",
-      "title": "ΗΠΑ: Νομοσχέδιο στο Κογκρέσο συνδέει πωλήσεις όπλων και βοήθεια στην Τουρκία με τα ανθρώπινα δικαιώματα",
-      "normalized_title": "ΗΠΑ: ΝΟΜΟΣΧΕΔΙΟ ΣΤΟ ΚΟΓΚΡΕΣΟ ΣΥΝΔΕΕΙ ΠΩΛΗΣΕΙΣ ΟΠΛΩΝ ΚΑΙ ΒΟΗΘΕΙΑ ΣΤΗΝ ΤΟΥΡΚΙΑ ΜΕ ΤΑ ΑΝΘΡΩΠΙΝΑ ΔΙΚΑΙΩΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/01/economy/diethnis-oikonomia/kokkinos-synagermos-gia-tin-pagkosmia-oikonomia-i-klimatiki-krisi-apeilei-ton-pyrina-tis-xrimatopistotikis-statherotitas/",
+      "title": "Κόκκινος συναγερμός για την παγκόσμια οικονομία: Η κλιματική κρίση απειλεί τον πυρήνα της χρηματοπιστωτικής σταθερότητας",
+      "normalized_title": "ΚΟΚΚΙΝΟΣ ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΤΗΝ ΠΑΓΚΟΣΜΙΑ ΟΙΚΟΝΟΜΙΑ: Η ΚΛΙΜΑΤΙΚΗ ΚΡΙΣΗ ΑΠΕΙΛΕΙ ΤΟΝ ΠΥΡΗΝΑ ΤΗΣ ΧΡΗΜΑΤΟΠΙΣΤΩΤΙΚΗΣ ΣΤΑΘΕΡΟΤΗΤΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/world/ipa-nomosxedio-sto-kogkreso-syndeei-poliseis-oplon-kai-voitheia-stin-tourkia-me-ta-anthropina-dikaiomata/",
-        "https://www.in.gr/2026/08/01/politics/politiki-grammateia/sto-peitharxiko-stelnei-o-adonis-osous-tou-xalasan-to-soou-sto-psna-osoi-theloun-epanastasi-stin-kouva/",
-        "https://www.in.gr/2026/08/01/greece/fotia-sto-porto-germeno-agonia-sta-vilia-katoikoi-exoun-sygkentrothei-ekso-apo-to-xorio-ypo-ton-fovo-tis-pyrkagias/",
-        "https://www.in.gr/2026/08/01/sports/basketball/israil-ellada-64-84-mia-niki-makria-apo-to-pagkosmio-kypello-u19/"
+        "https://www.in.gr/2026/08/01/economy/diethnis-oikonomia/kokkinos-synagermos-gia-tin-pagkosmia-oikonomia-i-klimatiki-krisi-apeilei-ton-pyrina-tis-xrimatopistotikis-statherotitas/",
+        "https://www.in.gr/2026/08/01/sports/oi-aderfes-aleksandri-klevoun-tin-parastasi-sto-parisi-ntoumplarisan-ta-xrysa-metallia/",
+        "https://www.in.gr/2026/08/01/stories/apo-tin-arxaia-olympia-stin-ypiresia-tou-xitler-pos-oi-olympiakoi-agones-tou-1936-oplisan-tous-nazi/"
       ],
-      "seen_at_utc": "2026-08-01T16:17:16.279716+00:00"
+      "seen_at_utc": "2026-08-01T16:51:19.394100+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T16:30:11.059661+00:00"
+  "updated_at_utc": "2026-08-01T16:51:19.394211+00:00"
 }
