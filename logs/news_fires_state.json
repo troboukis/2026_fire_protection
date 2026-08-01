@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564379777/oykrania-epithesi-me-vallistikoys-pyrayloys-sto-kievo-9-nekroi/",
-      "title": "Ουκρανία: Eπίθεση με βαλλιστικούς πυραύλους στο Κίεβο – 9 νεκροί",
-      "normalized_title": "ΟΥΚΡΑΝΙΑ: EΠΙΘΕΣΗ ΜΕ ΒΑΛΛΙΣΤΙΚΟΥΣ ΠΥΡΑΥΛΟΥΣ ΣΤΟ ΚΙΕΒΟ – 9 ΝΕΚΡΟΙ",
+      "url": "https://www.kathimerini.gr/athletics/564378604/strofi-infantino-sto-plan-b/",
+      "title": "Στροφή Ινφαντίνο στο plan B",
+      "normalized_title": "ΣΤΡΟΦΗ ΙΝΦΑΝΤΙΝΟ ΣΤΟ PLAN B",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564379777/oykrania-epithesi-me-vallistikoys-pyrayloys-sto-kievo-9-nekroi/",
-        "https://www.kathimerini.gr/istoria/564375904/san-simera-1-aygoystoy-1571-oloklironetai-i-othomaniki-kataktisi-tis-kyproy/"
+        "https://www.kathimerini.gr/athletics/564378604/strofi-infantino-sto-plan-b/",
+        "https://www.kathimerini.gr/world/564379771/o-roympio-chairetizei-ti-strofi-tis-latinikis-amerikis-sti-dexia/",
+        "https://www.kathimerini.gr/visual/photography/564378130/etoimes-na-kataktisoyn-ton-kosmo/",
+        "https://www.kathimerini.gr/society/564378346/maches-me-polla-metopa-kai-se-akraies-synthikes/",
+        "https://www.kathimerini.gr/world/564379783/nees-apeiles-tramp-gia-poly-dynata-pligmata-sto-iran/"
       ],
-      "seen_at_utc": "2026-08-01T04:51:23.839914+00:00"
+      "seen_at_utc": "2026-08-01T05:17:11.795957+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1263,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858934/thessaloniki-kleinei-apopse-to-vradu-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Κλείνει απόψε το βράδυ ο Περιφερειακός λόγω Flyover – Σε ποια σημεία, ποιες ώρες",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΚΛΕΙΝΕΙ ΑΠΟΨΕ ΤΟ ΒΡΑΔΥ Ο ΠΕΡΙΦΕΡΕΙΑΚΟΣ ΛΟΓΩ FLYOVER – ΣΕ ΠΟΙΑ ΣΗΜΕΙΑ, ΠΟΙΕΣ ΩΡΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1858935/fotia-stin-aigialeia-olonuhtia-mahi-me-tis-floges-sikothikan-enaeria-mesa/?utm_source=rss",
+      "title": "Φωτιά στην Αιγιάλεια: Ολονύχτια μάχη με τις φλόγες, σηκώθηκαν εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΙΓΙΑΛΕΙΑ: ΟΛΟΝΥΧΤΙΑ ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ, ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858934/thessaloniki-kleinei-apopse-to-vradu-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858935/fotia-stin-aigialeia-olonuhtia-mahi-me-tis-floges-sikothikan-enaeria-mesa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T04:51:23.840013+00:00"
+      "seen_at_utc": "2026-08-01T05:17:11.796048+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1439859/polo-i-ethniki-ellados-korasidon-pagkosmia-protathlitria/",
-      "title": "Πόλο: Η Εθνική Ελλάδος Κορασίδων παγκόσμια πρωταθλήτρια",
-      "normalized_title": "ΠΟΛΟ: Η ΕΘΝΙΚΗ ΕΛΛΑΔΟΣ ΚΟΡΑΣΙΔΩΝ ΠΑΓΚΟΣΜΙΑ ΠΡΩΤΑΘΛΗΤΡΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1439907/o-aygoystos-mpike-me-polla-mpofor-ishyroi-anemoi-se-aigaio/",
+      "title": "Ο Αύγουστος μπήκε με πολλά… μποφόρ – Ισχυροί άνεμοι σε Αιγαίο",
+      "normalized_title": "Ο ΑΥΓΟΥΣΤΟΣ ΜΠΗΚΕ ΜΕ ΠΟΛΛΑ… ΜΠΟΦΟΡ – ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΣΕ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1439859/polo-i-ethniki-ellados-korasidon-pagkosmia-protathlitria/"
+        "https://www.efsyn.gr/ellada/1439907/o-aygoystos-mpike-me-polla-mpofor-ishyroi-anemoi-se-aigaio/",
+        "https://www.efsyn.gr/ellada/1439867/preveli-kompoti-fihtia-porto-germeno-haidari-me-kommeni-anasa-mprosta-ston-pyrino-efialti/",
+        "https://www.efsyn.gr/stiles/1439806/i-theodora-tzakri-stin-efsyn-gr-i-spatali-me-ta-spitakia-anakyklosis-ton-300-000-eyro-kai-i-13i-syntaxi/",
+        "https://www.efsyn.gr/ellada/1439901/pyrini-kolasi-sto-porto-germeno-kaikan-spitia-apegklovizontai-anthropoi-epiheiroyn-ta-enaeria-mesa/",
+        "https://www.efsyn.gr/oikonomia/1439545/savvato-gia-slide-therines-ekptoseis-i-akriveia-frenare-tis-agores-ton-katanaloton/",
+        "https://www.efsyn.gr/kosmos/1439862/theoyta-gemise-i-mesogeios-kormia-metanaston/"
       ],
-      "seen_at_utc": "2026-07-31T21:17:15.636732+00:00"
+      "seen_at_utc": "2026-08-01T05:17:11.796030+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/greece/kairos-anemoi-eos-9-mpofor-to-savvato-stous-37-vathmous-i-megisti-thermokrasia/",
-      "title": "Άνεμοι έως 9 μποφόρ το Σάββατο - Στους 37 βαθμούς η μέγιστη θερμοκρασία",
-      "normalized_title": "ΑΝΕΜΟΙ ΕΩΣ 9 ΜΠΟΦΟΡ ΤΟ ΣΑΒΒΑΤΟ - ΣΤΟΥΣ 37 ΒΑΘΜΟΥΣ Η ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑ",
+      "url": "https://www.in.gr/2026/08/01/sports/football/den-evale-myalo-meta-to-mountial-o-paredes-arpaxtike-kai-me-ton-diaititi-tou-agona-tis-mpoka-vid/",
+      "title": "Δεν έβαλε μυαλό μετά το Μουντιάλ ο Παρέδες, «αρπάχτηκε» και με τον διαιτητή του αγώνα της Μπόκα (vid)",
+      "normalized_title": "ΔΕΝ ΕΒΑΛΕ ΜΥΑΛΟ ΜΕΤΑ ΤΟ ΜΟΥΝΤΙΑΛ Ο ΠΑΡΕΔΕΣ, «ΑΡΠΑΧΤΗΚΕ» ΚΑΙ ΜΕ ΤΟΝ ΔΙΑΙΤΗΤΗ ΤΟΥ ΑΓΩΝΑ ΤΗΣ ΜΠΟΚΑ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/greece/kairos-anemoi-eos-9-mpofor-to-savvato-stous-37-vathmous-i-megisti-thermokrasia/",
-        "https://www.in.gr/2026/08/01/plus/vita/askisi-ta-30-deyterolepta-pou-kanoun-kalo-stin-ygeia-mas/"
+        "https://www.in.gr/2026/08/01/sports/football/den-evale-myalo-meta-to-mountial-o-paredes-arpaxtike-kai-me-ton-diaititi-tou-agona-tis-mpoka-vid/",
+        "https://www.in.gr/2026/08/01/economy/makroxronia-anergoi-dikaioma-dorean-ensimon-pente-eton-prin-ti-syntaksiodotisi/",
+        "https://www.in.gr/2026/08/01/life/geysi/syntagi-keftedakia-nisiotika-kai-patates-tsakistes/",
+        "https://www.in.gr/2026/08/01/greece/kokkinos-synagermos-gia-fotia-se-attiki-kai-eyvoia-pote-kopazoun-oi-anemoi/"
       ],
-      "seen_at_utc": "2026-08-01T04:51:23.839962+00:00"
+      "seen_at_utc": "2026-08-01T05:17:11.796008+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T04:51:23.840084+00:00"
+  "updated_at_utc": "2026-08-01T05:17:11.796136+00:00"
 }
