@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564380023/chania-syllipsi-15chronoy-poy-odigoyse-patini-ypo-tin-epireia-alkool/",
-      "title": "Χανιά: Σύλληψη 15χρονου που οδηγούσε πατίνι υπό την επήρεια αλκοόλ",
-      "normalized_title": "ΧΑΝΙΑ: ΣΥΛΛΗΨΗ 15ΧΡΟΝΟΥ ΠΟΥ ΟΔΗΓΟΥΣΕ ΠΑΤΙΝΙ ΥΠΟ ΤΗΝ ΕΠΗΡΕΙΑ ΑΛΚΟΟΛ",
+      "url": "https://www.kathimerini.gr/world/564380053/mayri-thalassa-oykranika-drones-vythisan-ploio-tis-rosatom/",
+      "title": "Μαύρη Θάλασσα: Oυκρανικά drones βύθισαν πλοίο της Rosatom",
+      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ: OΥΚΡΑΝΙΚΑ DRONES ΒΥΘΙΣΑΝ ΠΛΟΙΟ ΤΗΣ ROSATOM",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564380023/chania-syllipsi-15chronoy-poy-odigoyse-patini-ypo-tin-epireia-alkool/",
-        "https://www.kathimerini.gr/politics/564378268/triti-kai-kalyteri/"
+        "https://www.kathimerini.gr/world/564380053/mayri-thalassa-oykranika-drones-vythisan-ploio-tis-rosatom/",
+        "https://www.kathimerini.gr/world/564380041/uefa-i-empistosyni-ston-infantino-echei-chathei/",
+        "https://www.kathimerini.gr/society/564380032/fokida-fotia-stin-periochi-skaloma-sikothikan-enaeria-mesa/",
+        "https://www.kathimerini.gr/athletics/football/564378598/choris-anasa-kai-me-fonto-ta-plei-of/"
       ],
-      "seen_at_utc": "2026-08-01T11:30:18.911810+00:00"
+      "seen_at_utc": "2026-08-01T11:51:21.869250+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859134/fotia-tora-stin-periohi-skaloma-stin-fokida-epiheiroun-9-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά τώρα στην περιοχή Σκάλωμα στην Φωκίδα, επιχειρούν 9 εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΣΚΑΛΩΜΑ ΣΤΗΝ ΦΩΚΙΔΑ, ΕΠΙΧΕΙΡΟΥΝ 9 ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1859136/neo-trohaio-stin-euvoia-traumatistike-aniliko-koritsi/?utm_source=rss",
+      "title": "Νέο τροχαίο στην Εύβοια, τραυματίστηκε ανήλικο κορίτσι",
+      "normalized_title": "ΝΕΟ ΤΡΟΧΑΙΟ ΣΤΗΝ ΕΥΒΟΙΑ, ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΑΝΗΛΙΚΟ ΚΟΡΙΤΣΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859134/fotia-tora-stin-periohi-skaloma-stin-fokida-epiheiroun-9-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859133/i-epomeni-mera-tis-katastrofis-stin-argolida-stahti-ekatodades-stremmata-spitia-kai-kalliergeies-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859136/neo-trohaio-stin-euvoia-traumatistike-aniliko-koritsi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T11:30:18.912007+00:00"
+      "seen_at_utc": "2026-08-01T11:51:21.869364+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440095/syghroni-doyleia-stin-ptolemaida-dyo-51hronoi-katigoroyntai-gia-tin-emporia-57-anthropon/",
-      "title": "Σύγχρονη δουλεία στην Πτολεμαϊδα: Δύο 51χρονοι κατηγορούνται για την εμπορία 57 ανθρώπων",
-      "normalized_title": "ΣΥΓΧΡΟΝΗ ΔΟΥΛΕΙΑ ΣΤΗΝ ΠΤΟΛΕΜΑΙΔΑ: ΔΥΟ 51ΧΡΟΝΟΙ ΚΑΤΗΓΟΡΟΥΝΤΑΙ ΓΙΑ ΤΗΝ ΕΜΠΟΡΙΑ 57 ΑΝΘΡΩΠΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1440105/imathia-apates-57-800-eyro-me-ti-methodo-toy-logisti-eis-varos-ilikiomenon/",
+      "title": "Ημαθία: Απάτες 57.800 ευρώ με τη μέθοδο του λογιστή εις βάρος ηλικιωμένων",
+      "normalized_title": "ΗΜΑΘΙΑ: ΑΠΑΤΕΣ 57.800 ΕΥΡΩ ΜΕ ΤΗ ΜΕΘΟΔΟ ΤΟΥ ΛΟΓΙΣΤΗ ΕΙΣ ΒΑΡΟΣ ΗΛΙΚΙΩΜΕΝΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440095/syghroni-doyleia-stin-ptolemaida-dyo-51hronoi-katigoroyntai-gia-tin-emporia-57-anthropon/"
+        "https://www.efsyn.gr/ellada/1440105/imathia-apates-57-800-eyro-me-ti-methodo-toy-logisti-eis-varos-ilikiomenon/",
+        "https://www.efsyn.gr/politiki/1440102/tsoykalas-i-elas-kanei-light-antipoliteysi-sti-nd-kai-diexagei-monometopo-apenanti-sto-pasok/"
       ],
-      "seen_at_utc": "2026-08-01T11:30:18.911957+00:00"
+      "seen_at_utc": "2026-08-01T11:51:21.869337+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/sports/basketball/euroleague/apofasi-vomva-gia-ti-monako-emeine-ektos-epaggelmatikon-protathlimaton/",
-      "title": "Απόφαση… βόμβα για τη Μονακό: Έμεινε εκτός επαγγελματικών πρωταθλημάτων",
-      "normalized_title": "ΑΠΟΦΑΣΗ… ΒΟΜΒΑ ΓΙΑ ΤΗ ΜΟΝΑΚΟ: ΕΜΕΙΝΕ ΕΚΤΟΣ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΠΡΩΤΑΘΛΗΜΑΤΩΝ",
+      "url": "https://www.in.gr/2026/08/01/sports/football/tinazei-tin-mpanka-i-trampzonspor-gia-ton-salax-pic/",
+      "title": "«Τινάζει» την μπάνκα η Τραμπζονσπόρ για τον Σαλάχ (pic)",
+      "normalized_title": "«ΤΙΝΑΖΕΙ» ΤΗΝ ΜΠΑΝΚΑ Η ΤΡΑΜΠΖΟΝΣΠΟΡ ΓΙΑ ΤΟΝ ΣΑΛΑΧ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/sports/basketball/euroleague/apofasi-vomva-gia-ti-monako-emeine-ektos-epaggelmatikon-protathlimaton/",
-        "https://www.in.gr/2026/08/01/greece/xania-synelifthi-15xronos-odigouse-ilektriko-patini-ypo-tin-epireia-alkool/"
+        "https://www.in.gr/2026/08/01/sports/football/tinazei-tin-mpanka-i-trampzonspor-gia-ton-salax-pic/",
+        "https://www.in.gr/2026/08/01/world/pos-xiliades-metanastes-perasan-kolympontas-sti-theouta-mathimata-kolymvisis-stoles-katadysis-kai-google-maps/",
+        "https://www.in.gr/2026/08/01/economy/diethnis-oikonomia/oi-kalyteroi-proorismoi-ana-ton-kosmo-gia-syntaksiouxous-pou-vrisketai-i-ellada/"
       ],
-      "seen_at_utc": "2026-08-01T11:30:18.911898+00:00"
+      "seen_at_utc": "2026-08-01T11:51:21.869302+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T11:30:18.912108+00:00"
+  "updated_at_utc": "2026-08-01T11:51:21.869460+00:00"
 }
