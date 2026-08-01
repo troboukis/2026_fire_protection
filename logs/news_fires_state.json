@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/interviews/564378334/charis-oykas-stin-k-peripolies-gia-pio-kathari-athina/",
-      "title": "Χάρης ∆ούκας στην «Κ»: Περιπολίες για πιο καθαρή Αθήνα",
-      "normalized_title": "ΧΑΡΗΣ ∆ΟΥΚΑΣ ΣΤΗΝ «Κ»: ΠΕΡΙΠΟΛΙΕΣ ΓΙΑ ΠΙΟ ΚΑΘΑΡΗ ΑΘΗΝΑ",
+      "url": "https://www.kathimerini.gr/world/564380296/livanos-o-israilinos-stratos-anakoinose-oti-skotose-arketa-meli-tis-chezmpolach/",
+      "title": "Λίβανος: Ο ισραηλινός στρατός ανακοίνωσε ότι σκότωσε αρκετά μέλη της Χεζμπολάχ",
+      "normalized_title": "ΛΙΒΑΝΟΣ: Ο ΙΣΡΑΗΛΙΝΟΣ ΣΤΡΑΤΟΣ ΑΝΑΚΟΙΝΩΣΕ ΟΤΙ ΣΚΟΤΩΣΕ ΑΡΚΕΤΑ ΜΕΛΗ ΤΗΣ ΧΕΖΜΠΟΛΑΧ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/interviews/564378334/charis-oykas-stin-k-peripolies-gia-pio-kathari-athina/"
+        "https://www.kathimerini.gr/world/564380296/livanos-o-israilinos-stratos-anakoinose-oti-skotose-arketa-meli-tis-chezmpolach/",
+        "https://www.kathimerini.gr/economy/business/564378745/stin-polonia-epekteinetai-i-dei/"
       ],
-      "seen_at_utc": "2026-08-01T18:30:07.303588+00:00"
+      "seen_at_utc": "2026-08-01T18:51:13.432368+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859247/eleutheros-me-perioristikous-orous-o-upeuthunos-leitourgias-tou-deddie-rethumnou-katigoreitai-gia-ebrismo-/?utm_source=rss",
-      "title": "Ελεύθερος με περιοριστικούς όρους ο υπεύθυνος λειτουργίας του ΔΕΔΔΗΕ Ρεθύμνου, είχε συλληφθεί για τη φωτιά στην Κρύα Βρύση",
-      "normalized_title": "ΕΛΕΥΘΕΡΟΣ ΜΕ ΠΕΡΙΟΡΙΣΤΙΚΟΥΣ ΟΡΟΥΣ Ο ΥΠΕΥΘΥΝΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΔΕΔΔΗΕ ΡΕΘΥΜΝΟΥ, ΕΙΧΕ ΣΥΛΛΗΦΘΕΙ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΗΝ ΚΡΥΑ ΒΡΥΣΗ",
+      "url": "https://www.protothema.gr/greece/article/1859257/sunelifthi-sti-mutilini-tourkos-ploioktitis-melos-eglimatikis-organosis-gia-diakinisi-kokainis/?utm_source=rss",
+      "title": "Συνελήφθη στη Μυτιλήνη Τούρκος πλοιοκτήτης για διακίνηση κοκαΐνης μέσω εγκληματικής οργάνωσης",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΜΥΤΙΛΗΝΗ ΤΟΥΡΚΟΣ ΠΛΟΙΟΚΤΗΤΗΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΚΟΚΑΙΝΗΣ ΜΕΣΩ ΕΓΚΛΗΜΑΤΙΚΗΣ ΟΡΓΑΝΩΣΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859247/eleutheros-me-perioristikous-orous-o-upeuthunos-leitourgias-tou-deddie-rethumnou-katigoreitai-gia-ebrismo-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859257/sunelifthi-sti-mutilini-tourkos-ploioktitis-melos-eglimatikis-organosis-gia-diakinisi-kokainis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859249/mahi-gia-na-sothoun-kai-ta-zoa-apo-tis-floges-dekades-metaferthikan-ston-prosorino-stathmo-sto-gipedo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T18:17:05.696162+00:00"
+      "seen_at_utc": "2026-08-01T18:51:13.432506+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440188/mytilini-syllipsi-toyrkoy-ploioktiti-se-ektelesi-entalmatos-gia-diakinisi-dyo-tonon-kokainis/",
-      "title": "Μυτιλήνη: Σύλληψη Τούρκου πλοιοκτήτη σε εκτέλεση εντάλματος για διακίνηση δύο τόνων κοκαΐνης",
-      "normalized_title": "ΜΥΤΙΛΗΝΗ: ΣΥΛΛΗΨΗ ΤΟΥΡΚΟΥ ΠΛΟΙΟΚΤΗΤΗ ΣΕ ΕΚΤΕΛΕΣΗ ΕΝΤΑΛΜΑΤΟΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΔΥΟ ΤΟΝΩΝ ΚΟΚΑΙΝΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1440191/eleytheros-me-perioristikoys-oroys-o-ypeythynos-leitoyrgias-toy-deddie-rethymnoy/",
+      "title": "Φωτιά στο Ρέθυμνο: Ελεύθερος με περιοριστικούς όρους ο υπεύθυνος λειτουργίας του ΔΕΔΔΗΕ",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΕΛΕΥΘΕΡΟΣ ΜΕ ΠΕΡΙΟΡΙΣΤΙΚΟΥΣ ΟΡΟΥΣ Ο ΥΠΕΥΘΥΝΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΔΕΔΔΗΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440188/mytilini-syllipsi-toyrkoy-ploioktiti-se-ektelesi-entalmatos-gia-diakinisi-dyo-tonon-kokainis/"
+        "https://www.efsyn.gr/ellada/1440191/eleytheros-me-perioristikoys-oroys-o-ypeythynos-leitoyrgias-toy-deddie-rethymnoy/",
+        "https://www.efsyn.gr/athlitismos/1440046/aytos-poy-allazei-to-status/"
       ],
-      "seen_at_utc": "2026-08-01T18:17:05.696113+00:00"
+      "seen_at_utc": "2026-08-01T18:51:13.432456+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/sports/on-field/aystiri-odigia-tis-uefa-kovei-to-dekaniki-tou-var-gia-tous-diaitites-tis-super-league/",
-      "title": "Αυστηρή οδηγία της UEFA κόβει το… δεκανίκι του VAR για τους διαιτητές της Super League",
-      "normalized_title": "ΑΥΣΤΗΡΗ ΟΔΗΓΙΑ ΤΗΣ UEFA ΚΟΒΕΙ ΤΟ… ΔΕΚΑΝΙΚΙ ΤΟΥ VAR ΓΙΑ ΤΟΥΣ ΔΙΑΙΤΗΤΕΣ ΤΗΣ SUPER LEAGUE",
+      "url": "https://www.in.gr/2026/08/01/sports/football/paok-symfonise-kai-erxetai-stin-ellada-o-mikelmprensi/",
+      "title": "ΠΑΟΚ: Συμφώνησε και έρχεται στην Ελλάδα ο Μικελμπρενσί",
+      "normalized_title": "ΠΑΟΚ: ΣΥΜΦΩΝΗΣΕ ΚΑΙ ΕΡΧΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ Ο ΜΙΚΕΛΜΠΡΕΝΣΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/sports/on-field/aystiri-odigia-tis-uefa-kovei-to-dekaniki-tou-var-gia-tous-diaitites-tis-super-league/"
+        "https://www.in.gr/2026/08/01/sports/football/paok-symfonise-kai-erxetai-stin-ellada-o-mikelmprensi/",
+        "https://www.in.gr/2026/08/01/greece/tria-anilika-paidia-diasothikan-apo-nayagosostria-se-paralia-tis-thasou/",
+        "https://www.in.gr/2026/08/01/greece/symploki-aliergaton-pano-se-skafos-tesseris-syllipseis-stin-kavala-dyo-traymaties/",
+        "https://www.in.gr/2026/08/01/life/mparak-ompama-ti-na-diavasete-kai-ti-na-akousete-ayto-to-kalokairi-i-lista/"
       ],
-      "seen_at_utc": "2026-08-01T18:30:07.303642+00:00"
+      "seen_at_utc": "2026-08-01T18:51:13.432418+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T18:30:07.303721+00:00"
+  "updated_at_utc": "2026-08-01T18:51:13.432582+00:00"
 }
