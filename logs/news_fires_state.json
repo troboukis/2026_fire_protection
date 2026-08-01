@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564378283/theoyta-i-italia-anesteile-ti-zoni-sengken-me-tin-ispania/",
-      "title": "Θέουτα: Η Ιταλία ανέστειλε τη ζώνη Σένγκεν με την Ισπανία",
-      "normalized_title": "ΘΕΟΥΤΑ: Η ΙΤΑΛΙΑ ΑΝΕΣΤΕΙΛΕ ΤΗ ΖΩΝΗ ΣΕΝΓΚΕΝ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ",
+      "url": "https://www.kathimerini.gr/world/564379777/oykrania-epithesi-me-vallistikoys-pyrayloys-sto-kievo-9-nekroi/",
+      "title": "Ουκρανία: Eπίθεση με βαλλιστικούς πυραύλους στο Κίεβο – 9 νεκροί",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: EΠΙΘΕΣΗ ΜΕ ΒΑΛΛΙΣΤΙΚΟΥΣ ΠΥΡΑΥΛΟΥΣ ΣΤΟ ΚΙΕΒΟ – 9 ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564378283/theoyta-i-italia-anesteile-ti-zoni-sengken-me-tin-ispania/"
+        "https://www.kathimerini.gr/world/564379777/oykrania-epithesi-me-vallistikoys-pyrayloys-sto-kievo-9-nekroi/",
+        "https://www.kathimerini.gr/istoria/564375904/san-simera-1-aygoystoy-1571-oloklironetai-i-othomaniki-kataktisi-tis-kyproy/"
       ],
-      "seen_at_utc": "2026-08-01T04:30:21.085083+00:00"
+      "seen_at_utc": "2026-08-01T04:51:23.839914+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,15 +1260,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858924/apeglovistikan-dia-thalassis-12-atoma-apo-tin-paralia-porto-germeno/?utm_source=rss",
-      "title": "Απεγκλωβίστηκαν δια θαλάσσης 12 άτομα από την παραλία Πόρτο Γερμενό",
-      "normalized_title": "ΑΠΕΓΚΛΩΒΙΣΤΗΚΑΝ ΔΙΑ ΘΑΛΑΣΣΗΣ 12 ΑΤΟΜΑ ΑΠΟ ΤΗΝ ΠΑΡΑΛΙΑ ΠΟΡΤΟ ΓΕΡΜΕΝΟ",
+      "url": "https://www.protothema.gr/greece/article/1858934/thessaloniki-kleinei-apopse-to-vradu-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Κλείνει απόψε το βράδυ ο Περιφερειακός λόγω Flyover – Σε ποια σημεία, ποιες ώρες",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΚΛΕΙΝΕΙ ΑΠΟΨΕ ΤΟ ΒΡΑΔΥ Ο ΠΕΡΙΦΕΡΕΙΑΚΟΣ ΛΟΓΩ FLYOVER – ΣΕ ΠΟΙΑ ΣΗΜΕΙΑ, ΠΟΙΕΣ ΩΡΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858924/apeglovistikan-dia-thalassis-12-atoma-apo-tin-paralia-porto-germeno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858922/kairos-thuellodeis-anemoi-eos-9-bofor-sto-aigaio-stous-37c-i-thermokrasia-epimenei-o-upsilos-kindunos-purkagias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858921/purinos-efialtis-se-voiotia-kai-dutiki-attiki-apeglovismoi-sto-porto-germeno-nees-ekkenoseis-meso-112/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858934/thessaloniki-kleinei-apopse-to-vradu-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T04:17:13.528661+00:00"
+      "seen_at_utc": "2026-08-01T04:51:23.840013+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/athlitismos/1439859/polo-i-ethniki-ellados-korasidon-pagkosmia-protathlitria/",
@@ -1279,14 +1278,15 @@
       "seen_at_utc": "2026-07-31T21:17:15.636732+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/economy/oikonomikes-eidiseis/syntaksiouxoi-me-tessera-xronia-kathysterisi-misa-anadromika-11minou-se-20-000-dikaiouxous/",
-      "title": "Με τέσσερα χρόνια καθυστέρηση, μισά αναδρομικά 11μήνου σε 20.000 δικαιούχους συνταξιούχους",
-      "normalized_title": "ΜΕ ΤΕΣΣΕΡΑ ΧΡΟΝΙΑ ΚΑΘΥΣΤΕΡΗΣΗ, ΜΙΣΑ ΑΝΑΔΡΟΜΙΚΑ 11ΜΗΝΟΥ ΣΕ 20.000 ΔΙΚΑΙΟΥΧΟΥΣ ΣΥΝΤΑΞΙΟΥΧΟΥΣ",
+      "url": "https://www.in.gr/2026/08/01/greece/kairos-anemoi-eos-9-mpofor-to-savvato-stous-37-vathmous-i-megisti-thermokrasia/",
+      "title": "Άνεμοι έως 9 μποφόρ το Σάββατο - Στους 37 βαθμούς η μέγιστη θερμοκρασία",
+      "normalized_title": "ΑΝΕΜΟΙ ΕΩΣ 9 ΜΠΟΦΟΡ ΤΟ ΣΑΒΒΑΤΟ - ΣΤΟΥΣ 37 ΒΑΘΜΟΥΣ Η ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/economy/oikonomikes-eidiseis/syntaksiouxoi-me-tessera-xronia-kathysterisi-misa-anadromika-11minou-se-20-000-dikaiouxous/"
+        "https://www.in.gr/2026/08/01/greece/kairos-anemoi-eos-9-mpofor-to-savvato-stous-37-vathmous-i-megisti-thermokrasia/",
+        "https://www.in.gr/2026/08/01/plus/vita/askisi-ta-30-deyterolepta-pou-kanoun-kalo-stin-ygeia-mas/"
       ],
-      "seen_at_utc": "2026-08-01T04:30:21.085145+00:00"
+      "seen_at_utc": "2026-08-01T04:51:23.839962+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T04:30:21.085270+00:00"
+  "updated_at_utc": "2026-08-01T04:51:23.840084+00:00"
 }
