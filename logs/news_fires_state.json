@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564379846/fthiotida-trochaio-dystychima-me-ena-nekro-stin-ethniki-odo-sygkroystikan-dyo-fortiga/",
-      "title": "Φθιώτιδα: Τροχαίο δυστύχημα με ένα νεκρό στην εθνική οδό – Συγκρούστηκαν δύο φορτηγά",
-      "normalized_title": "ΦΘΙΩΤΙΔΑ: ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΜΕ ΕΝΑ ΝΕΚΡΟ ΣΤΗΝ ΕΘΝΙΚΗ ΟΔΟ – ΣΥΓΚΡΟΥΣΤΗΚΑΝ ΔΥΟ ΦΟΡΤΗΓΑ",
+      "url": "https://www.kathimerini.gr/world/564379837/napoli-eikosi-enan-traymaties-apo-ton-seismo-pano-apo-trianta-metaseismikes-doniseis/",
+      "title": "Νάπολη: 21 τραυματίες από τον σεισμό – Πάνω από τριάντα μετασεισμικές δονήσεις",
+      "normalized_title": "ΝΑΠΟΛΗ: 21 ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΤΟΝ ΣΕΙΣΜΟ – ΠΑΝΩ ΑΠΟ ΤΡΙΑΝΤΑ ΜΕΤΑΣΕΙΣΜΙΚΕΣ ΔΟΝΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564379846/fthiotida-trochaio-dystychima-me-ena-nekro-stin-ethniki-odo-sygkroystikan-dyo-fortiga/"
+        "https://www.kathimerini.gr/world/564379837/napoli-eikosi-enan-traymaties-apo-ton-seismo-pano-apo-trianta-metaseismikes-doniseis/",
+        "https://www.kathimerini.gr/politics/government/564378301/polemos-gia-ta-oikonomika/"
       ],
-      "seen_at_utc": "2026-08-01T06:30:10.076051+00:00"
+      "seen_at_utc": "2026-08-01T06:51:22.880495+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858989/tromero-trohaio-stin-athinon-lamias-nekros-odigos-se-sugrousi-duo-fortigon-to-ena-tulihthike-stis-floges/?utm_source=rss",
-      "title": "'Ενας νεκρός μετά από σύγκρουση δύο φορτηγών στην Αθηνών - Λαμίας - Κλειστή η εθνική και στα δύο ρεύματα στο ύψος του Κάστρου Βοιωτίας",
-      "normalized_title": "'ΕΝΑΣ ΝΕΚΡΟΣ ΜΕΤΑ ΑΠΟ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΦΟΡΤΗΓΩΝ ΣΤΗΝ ΑΘΗΝΩΝ - ΛΑΜΙΑΣ - ΚΛΕΙΣΤΗ Η ΕΘΝΙΚΗ ΚΑΙ ΣΤΑ ΔΥΟ ΡΕΥΜΑΤΑ ΣΤΟ ΥΨΟΣ ΤΟΥ ΚΑΣΤΡΟΥ ΒΟΙΩΤΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1859007/dorea-150000-euro-apo-koinofeli-organismo-deppy-vasileiadis-stis-oikogeneies-trion-purosveston/?utm_source=rss",
+      "title": "Δωρεά 150.000 ευρώ από τον κοινωφελή οργανισμό Deppy Vasileiadis στις οικογένειες των τριών πυροσβεστών που θυσιάστηκαν στο καθήκον",
+      "normalized_title": "ΔΩΡΕΑ 150.000 ΕΥΡΩ ΑΠΟ ΤΟΝ ΚΟΙΝΩΦΕΛΗ ΟΡΓΑΝΙΣΜΟ DEPPY VASILEIADIS ΣΤΙΣ ΟΙΚΟΓΕΝΕΙΕΣ ΤΩΝ ΤΡΙΩΝ ΠΥΡΟΣΒΕΣΤΩΝ ΠΟΥ ΘΥΣΙΑΣΤΗΚΑΝ ΣΤΟ ΚΑΘΗΚΟΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858989/tromero-trohaio-stin-athinon-lamias-nekros-odigos-se-sugrousi-duo-fortigon-to-ena-tulihthike-stis-floges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1858983/thuellodeis-anemoi-se-euvoia-attiki-aigaio-kai-kriti-sta-130-hlmora-oi-ripes-anemou-stin-paximada-karustou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859007/dorea-150000-euro-apo-koinofeli-organismo-deppy-vasileiadis-stis-oikogeneies-trion-purosveston/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1858998/sti-vouli-i-tropologia-gia-to-prolamvano-eos-to-2030-to-programma-me-kalupsi-apo-ton-proupologismo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T06:30:10.076198+00:00"
+      "seen_at_utc": "2026-08-01T06:51:22.880591+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439922/diakopi-kykloforias-stin-athinon-lamias-meta-apo-anatropi-fortigon/",
-      "title": "Διακοπή κυκλοφορίας στην Αθηνών – Λαμίας μετά από ανατροπή φορτηγών",
-      "normalized_title": "ΔΙΑΚΟΠΗ ΚΥΚΛΟΦΟΡΙΑΣ ΣΤΗΝ ΑΘΗΝΩΝ – ΛΑΜΙΑΣ ΜΕΤΑ ΑΠΟ ΑΝΑΤΡΟΠΗ ΦΟΡΤΗΓΩΝ",
+      "url": "https://www.efsyn.gr/life/1439930/to-nisi-toy-aigaioy-poy-tha-filoxenisei-ti-proti-diethnis-ekthesi-zografikis-toy-norman-hyams/",
+      "title": "Το νησί του Αιγαίου που θα φιλοξενήσει τη πρώτη διεθνής έκθεση ζωγραφικής του Norman Hyams",
+      "normalized_title": "ΤΟ ΝΗΣΙ ΤΟΥ ΑΙΓΑΙΟΥ ΠΟΥ ΘΑ ΦΙΛΟΞΕΝΗΣΕΙ ΤΗ ΠΡΩΤΗ ΔΙΕΘΝΗΣ ΕΚΘΕΣΗ ΖΩΓΡΑΦΙΚΗΣ ΤΟΥ NORMAN HYAMS",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439922/diakopi-kykloforias-stin-athinon-lamias-meta-apo-anatropi-fortigon/"
+        "https://www.efsyn.gr/life/1439930/to-nisi-toy-aigaioy-poy-tha-filoxenisei-ti-proti-diethnis-ekthesi-zografikis-toy-norman-hyams/",
+        "https://www.efsyn.gr/epistimi/1439925/igkoyana-44-ekatommyrion-hronon-taxidepse-apo-ti-dytiki-eyropi-sti-valkanatolia-o-rolos-toy-ellina-palaiontologoy/"
       ],
-      "seen_at_utc": "2026-08-01T06:30:10.076147+00:00"
+      "seen_at_utc": "2026-08-01T06:51:22.880562+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/greece/voiotia-i-fotia-sarose-eos-kai-50-000-stremmata-asyllipti-katastrofi-leei-pyrometeorologos/",
-      "title": "Η φωτιά στη Βοιωτία σάρωσε έως και 50.000 στρέμματα - «Ασύλληπτη καταστροφή» λέει πυρομετεωρολόγος",
-      "normalized_title": "Η ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ ΣΑΡΩΣΕ ΕΩΣ ΚΑΙ 50.000 ΣΤΡΕΜΜΑΤΑ - «ΑΣΥΛΛΗΠΤΗ ΚΑΤΑΣΤΡΟΦΗ» ΛΕΕΙ ΠΥΡΟΜΕΤΕΩΡΟΛΟΓΟΣ",
+      "url": "https://www.in.gr/2026/08/01/economy/e-efka-dypa-o-xartis-ton-pliromon-eos-7-aygoustou/",
+      "title": "e-ΕΦΚΑ – ΔΥΠΑ: Ο χάρτης των πληρωμών έως 7 Αυγούστου",
+      "normalized_title": "E-ΕΦΚΑ – ΔΥΠΑ: Ο ΧΑΡΤΗΣ ΤΩΝ ΠΛΗΡΩΜΩΝ ΕΩΣ 7 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/greece/voiotia-i-fotia-sarose-eos-kai-50-000-stremmata-asyllipti-katastrofi-leei-pyrometeorologos/",
-        "https://www.in.gr/2026/08/01/greece/diakopi-kykloforias-stin-athinon-lamias-meta-apo-anatropi-fortigon/",
-        "https://www.in.gr/2026/08/01/editorial/to-metanasteytiko-den-einai-ypothesi-mono-oute-kyrios-fraxton-kai-fylaksis-synoron/"
+        "https://www.in.gr/2026/08/01/economy/e-efka-dypa-o-xartis-ton-pliromon-eos-7-aygoustou/",
+        "https://www.in.gr/2026/08/01/world/sto-kokkino-rinos-kai-dounavis-stereyoun-apo-ksirasia-kai-kaysones/",
+        "https://www.in.gr/2026/08/01/sports/basketball/euroleague/ti-apofasise-o-ergkin-ataman-gia-to-mellon-tou-stous-pagkous/",
+        "https://www.in.gr/2026/08/01/life/music/pinelopi-anastasopoulou-kykloforise-to-the-unforgiven-ii-meta-tin-anagnorisi-apo-tous-metallica/"
       ],
-      "seen_at_utc": "2026-08-01T06:30:10.076114+00:00"
+      "seen_at_utc": "2026-08-01T06:51:22.880530+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T06:30:10.076268+00:00"
+  "updated_at_utc": "2026-08-01T06:51:22.880676+00:00"
 }
