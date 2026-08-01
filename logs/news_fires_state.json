@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564379891/voiotia-minyma-toy-112-gia-apomakrynsi-apo-tin-periochi-livadostra/",
-      "title": "Βοιωτία: Μήνυμα του «112» για απομάκρυνση από την περιοχή Λιβαδόστρα",
-      "normalized_title": "ΒΟΙΩΤΙΑ: ΜΗΝΥΜΑ ΤΟΥ «112» ΓΙΑ ΑΠΟΜΑΚΡΥΝΣΗ ΑΠΟ ΤΗΝ ΠΕΡΙΟΧΗ ΛΙΒΑΔΟΣΤΡΑ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564378316/i-agkyra-ependyei-sto-flert-me-ti-viryto/",
+      "title": "Η Αγκυρα επενδύει στο «φλερτ» με τη Βηρυτό",
+      "normalized_title": "Η ΑΓΚΥΡΑ ΕΠΕΝΔΥΕΙ ΣΤΟ «ΦΛΕΡΤ» ΜΕ ΤΗ ΒΗΡΥΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564379891/voiotia-minyma-toy-112-gia-apomakrynsi-apo-tin-periochi-livadostra/",
-        "https://www.kathimerini.gr/politics/564379888/mitsotakis-metevi-sto-syntonistiko-kentro-epicheirisis-kai-diacheirisis-kriseon-tis-politikis-prostasias/",
-        "https://www.kathimerini.gr/society/564379876/mykonos-synelifthi-57chronos-gia-ekviasi-zitoyse-50-000-eyro-gia-na-stamatisei-pseydeis-kataggelies/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564378316/i-agkyra-ependyei-sto-flert-me-ti-viryto/"
       ],
-      "seen_at_utc": "2026-08-01T08:29:56.081073+00:00"
+      "seen_at_utc": "2026-08-01T08:51:29.826054+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1259,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859036/fotia-sti-voiotia-se-apostasi-10-metron-apo-ta-spitia-sti-livadostra-oi-floges-leei-o-proedros-leuktron/?utm_source=rss",
-      "title": "Φωτιά στη Βοιωτία: 112 για εκκένωση της Λιβαδόστρας - Σε απόσταση 10 μέτρων από τα σπίτια οι φλόγες, λέει ο πρόεδρος Λεύκτρων",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ: 112 ΓΙΑ ΕΚΚΕΝΩΣΗ ΤΗΣ ΛΙΒΑΔΟΣΤΡΑΣ - ΣΕ ΑΠΟΣΤΑΣΗ 10 ΜΕΤΡΩΝ ΑΠΟ ΤΑ ΣΠΙΤΙΑ ΟΙ ΦΛΟΓΕΣ, ΛΕΕΙ Ο ΠΡΟΕΔΡΟΣ ΛΕΥΚΤΡΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1859060/thessaloniki-aniliko-edopistike-na-periplanietai-stin-odo-lagada-sunelifthi-i-mitera-tou/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Ανήλικο παιδί εντοπίστηκε να περιπλανιέται στην οδό Λαγκαδά, συνελήφθη η μητέρα του",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΑΝΗΛΙΚΟ ΠΑΙΔΙ ΕΝΤΟΠΙΣΤΗΚΕ ΝΑ ΠΕΡΙΠΛΑΝΙΕΤΑΙ ΣΤΗΝ ΟΔΟ ΛΑΓΚΑΔΑ, ΣΥΝΕΛΗΦΘΗ Η ΜΗΤΕΡΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859036/fotia-sti-voiotia-se-apostasi-10-metron-apo-ta-spitia-sti-livadostra-oi-floges-leei-o-proedros-leuktron/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859060/thessaloniki-aniliko-edopistike-na-periplanietai-stin-odo-lagada-sunelifthi-i-mitera-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T08:17:23.259356+00:00"
+      "seen_at_utc": "2026-08-01T08:51:29.826155+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1439994/tha-feroyn-tropologia-mehri-kai-gia-ilektriki-karekla/",
-      "title": "Θα φέρουν τροπολογία μέχρι και για… ηλεκτρική καρέκλα",
-      "normalized_title": "ΘΑ ΦΕΡΟΥΝ ΤΡΟΠΟΛΟΓΙΑ ΜΕΧΡΙ ΚΑΙ ΓΙΑ… ΗΛΕΚΤΡΙΚΗ ΚΑΡΕΚΛΑ",
+      "url": "https://www.efsyn.gr/politiki/1439999/psyhiatros-sto-dafni-gia-georgiadi-toy-eipame-na-fygei-kai-mas-apeilise-me-peitharhiko/",
+      "title": "Ψυχιάτρος στο Δαφνί για Γεωργιάδη: Του είπαμε να φύγει και μας απείλησε με πειθαρχικό",
+      "normalized_title": "ΨΥΧΙΑΤΡΟΣ ΣΤΟ ΔΑΦΝΙ ΓΙΑ ΓΕΩΡΓΙΑΔΗ: ΤΟΥ ΕΙΠΑΜΕ ΝΑ ΦΥΓΕΙ ΚΑΙ ΜΑΣ ΑΠΕΙΛΗΣΕ ΜΕ ΠΕΙΘΑΡΧΙΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1439994/tha-feroyn-tropologia-mehri-kai-gia-ilektriki-karekla/",
-        "https://www.efsyn.gr/politiki/1439991/ta-karfia-pasok-se-elas-gia-idiotika-panepistimia-kai-panepistimiaki-astynomia/",
-        "https://www.efsyn.gr/politiki/1439987/kai-o-proedros-paei-diakopes/"
+        "https://www.efsyn.gr/politiki/1439999/psyhiatros-sto-dafni-gia-georgiadi-toy-eipame-na-fygei-kai-mas-apeilise-me-peitharhiko/",
+        "https://www.efsyn.gr/stiles/1439891/i-forologisi-ton-yperploysion/",
+        "https://www.efsyn.gr/stiles/1439888/doyloi-rathymoi-k-o-k/"
       ],
-      "seen_at_utc": "2026-08-01T08:29:56.081126+00:00"
+      "seen_at_utc": "2026-08-01T08:51:29.826131+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/economy/koinonikes-katoikies-ta-stratopeda-pou-tha-dothoun-gia-ti-stegasi-ton-politon/",
-      "title": "Κοινωνικές κατοικίες: Τα στρατόπεδα που θα δοθούν για τη στέγαση των πολιτών",
-      "normalized_title": "ΚΟΙΝΩΝΙΚΕΣ ΚΑΤΟΙΚΙΕΣ: ΤΑ ΣΤΡΑΤΟΠΕΔΑ ΠΟΥ ΘΑ ΔΟΘΟΥΝ ΓΙΑ ΤΗ ΣΤΕΓΑΣΗ ΤΩΝ ΠΟΛΙΤΩΝ",
+      "url": "https://www.in.gr/2026/08/01/greece/fotia-se-voiotia-attiki-kai-argolida-eos-ti-voreia-afriki-eftase-o-pyknos-kapnos/",
+      "title": "Φωτιές σε Βοιωτία, Αττική και Αργολίδα: Έως τη βόρεια Αφρική έφτασε ο πυκνός καπνός - Διένυσε απόσταση άνω των 750 χλμ",
+      "normalized_title": "ΦΩΤΙΕΣ ΣΕ ΒΟΙΩΤΙΑ, ΑΤΤΙΚΗ ΚΑΙ ΑΡΓΟΛΙΔΑ: ΕΩΣ ΤΗ ΒΟΡΕΙΑ ΑΦΡΙΚΗ ΕΦΤΑΣΕ Ο ΠΥΚΝΟΣ ΚΑΠΝΟΣ - ΔΙΕΝΥΣΕ ΑΠΟΣΤΑΣΗ ΑΝΩ ΤΩΝ 750 ΧΛΜ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/economy/koinonikes-katoikies-ta-stratopeda-pou-tha-dothoun-gia-ti-stegasi-ton-politon/"
+        "https://www.in.gr/2026/08/01/greece/fotia-se-voiotia-attiki-kai-argolida-eos-ti-voreia-afriki-eftase-o-pyknos-kapnos/",
+        "https://www.in.gr/2026/08/01/greece/mykonos-synelifthi-57xronos-gia-ekviasi-eis-varos-epixeirisis/",
+        "https://www.in.gr/2026/08/01/sports/football/penthos-sto-vrazilianiko-podosfairo-nekros-sta-41-tou-proin-epithetikos-pou-eixe-agonistei-kai-stin-ellada/"
       ],
-      "seen_at_utc": "2026-08-01T08:29:56.081103+00:00"
+      "seen_at_utc": "2026-08-01T08:51:29.826105+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T08:29:56.081182+00:00"
+  "updated_at_utc": "2026-08-01T08:51:29.826227+00:00"
 }
