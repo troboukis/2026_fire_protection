@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564378604/strofi-infantino-sto-plan-b/",
-      "title": "Στροφή Ινφαντίνο στο plan B",
-      "normalized_title": "ΣΤΡΟΦΗ ΙΝΦΑΝΤΙΝΟ ΣΤΟ PLAN B",
+      "url": "https://www.kathimerini.gr/opinion/564379780/elliniko-kalokairi-stis-stachtes/",
+      "title": "Ελληνικό καλοκαίρι στις στάχτες",
+      "normalized_title": "ΕΛΛΗΝΙΚΟ ΚΑΛΟΚΑΙΡΙ ΣΤΙΣ ΣΤΑΧΤΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564378604/strofi-infantino-sto-plan-b/",
-        "https://www.kathimerini.gr/world/564379771/o-roympio-chairetizei-ti-strofi-tis-latinikis-amerikis-sti-dexia/",
-        "https://www.kathimerini.gr/visual/photography/564378130/etoimes-na-kataktisoyn-ton-kosmo/",
-        "https://www.kathimerini.gr/society/564378346/maches-me-polla-metopa-kai-se-akraies-synthikes/",
-        "https://www.kathimerini.gr/world/564379783/nees-apeiles-tramp-gia-poly-dynata-pligmata-sto-iran/"
+        "https://www.kathimerini.gr/opinion/564379780/elliniko-kalokairi-stis-stachtes/",
+        "https://www.kathimerini.gr/opinion/564378463/pigainete-anatolika/",
+        "https://www.kathimerini.gr/opinion/564378649/i-kalosyni-ton-xenon-4/",
+        "https://www.kathimerini.gr/society/564379789/porto-germeno-ston-apegklovismo-12-anthropon-prochorisan-dynameis-toy-limenikoy-kai-tis-pyrosvestikis/"
       ],
-      "seen_at_utc": "2026-08-01T05:17:11.795957+00:00"
+      "seen_at_utc": "2026-08-01T05:30:08.643238+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,40 +1262,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1858935/fotia-stin-aigialeia-olonuhtia-mahi-me-tis-floges-sikothikan-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά στην Αιγιάλεια: Ολονύχτια μάχη με τις φλόγες, σηκώθηκαν εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΙΓΙΑΛΕΙΑ: ΟΛΟΝΥΧΤΙΑ ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ, ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1858941/ergazomenoi-psna-kataggelloun-sovares-elleipseis-meta-ti-fotia-sto-poikilo-oros-kinduneusan-astheneis-kai-prosopiko/?utm_source=rss",
+      "title": "Εργαζόμενοι ΨΝΑ: Καταγγέλλουν σοβαρές ελλείψεις μετά τη φωτιά στο Ποικίλο Όρος – «Κινδύνευσαν ασθενείς και προσωπικό»",
+      "normalized_title": "ΕΡΓΑΖΟΜΕΝΟΙ ΨΝΑ: ΚΑΤΑΓΓΕΛΛΟΥΝ ΣΟΒΑΡΕΣ ΕΛΛΕΙΨΕΙΣ ΜΕΤΑ ΤΗ ΦΩΤΙΑ ΣΤΟ ΠΟΙΚΙΛΟ ΟΡΟΣ – «ΚΙΝΔΥΝΕΥΣΑΝ ΑΣΘΕΝΕΙΣ ΚΑΙ ΠΡΟΣΩΠΙΚΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1858935/fotia-stin-aigialeia-olonuhtia-mahi-me-tis-floges-sikothikan-enaeria-mesa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1858941/ergazomenoi-psna-kataggelloun-sovares-elleipseis-meta-ti-fotia-sto-poikilo-oros-kinduneusan-astheneis-kai-prosopiko/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-01T05:17:11.796048+00:00"
+      "seen_at_utc": "2026-08-01T05:30:08.643369+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1439907/o-aygoystos-mpike-me-polla-mpofor-ishyroi-anemoi-se-aigaio/",
-      "title": "Ο Αύγουστος μπήκε με πολλά… μποφόρ – Ισχυροί άνεμοι σε Αιγαίο",
-      "normalized_title": "Ο ΑΥΓΟΥΣΤΟΣ ΜΠΗΚΕ ΜΕ ΠΟΛΛΑ… ΜΠΟΦΟΡ – ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΣΕ ΑΙΓΑΙΟ",
+      "url": "https://www.efsyn.gr/protoselida/to-martyrio-tis-stagonas-sta-nisia/",
+      "title": "Το μαρτύριο της σταγόνας στα νησιά",
+      "normalized_title": "ΤΟ ΜΑΡΤΥΡΙΟ ΤΗΣ ΣΤΑΓΟΝΑΣ ΣΤΑ ΝΗΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1439907/o-aygoystos-mpike-me-polla-mpofor-ishyroi-anemoi-se-aigaio/",
-        "https://www.efsyn.gr/ellada/1439867/preveli-kompoti-fihtia-porto-germeno-haidari-me-kommeni-anasa-mprosta-ston-pyrino-efialti/",
-        "https://www.efsyn.gr/stiles/1439806/i-theodora-tzakri-stin-efsyn-gr-i-spatali-me-ta-spitakia-anakyklosis-ton-300-000-eyro-kai-i-13i-syntaxi/",
-        "https://www.efsyn.gr/ellada/1439901/pyrini-kolasi-sto-porto-germeno-kaikan-spitia-apegklovizontai-anthropoi-epiheiroyn-ta-enaeria-mesa/",
-        "https://www.efsyn.gr/oikonomia/1439545/savvato-gia-slide-therines-ekptoseis-i-akriveia-frenare-tis-agores-ton-katanaloton/",
-        "https://www.efsyn.gr/kosmos/1439862/theoyta-gemise-i-mesogeios-kormia-metanaston/"
+        "https://www.efsyn.gr/protoselida/to-martyrio-tis-stagonas-sta-nisia/",
+        "https://www.efsyn.gr/politiki/1439879/tropologies-gia-dioikisi-dikastirion-kai-dieythynonton-eisaggelion-zilepse-ton-georgiadi-o-floridis/"
       ],
-      "seen_at_utc": "2026-08-01T05:17:11.796030+00:00"
+      "seen_at_utc": "2026-08-01T05:30:08.643328+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/01/sports/football/den-evale-myalo-meta-to-mountial-o-paredes-arpaxtike-kai-me-ton-diaititi-tou-agona-tis-mpoka-vid/",
-      "title": "Δεν έβαλε μυαλό μετά το Μουντιάλ ο Παρέδες, «αρπάχτηκε» και με τον διαιτητή του αγώνα της Μπόκα (vid)",
-      "normalized_title": "ΔΕΝ ΕΒΑΛΕ ΜΥΑΛΟ ΜΕΤΑ ΤΟ ΜΟΥΝΤΙΑΛ Ο ΠΑΡΕΔΕΣ, «ΑΡΠΑΧΤΗΚΕ» ΚΑΙ ΜΕ ΤΟΝ ΔΙΑΙΤΗΤΗ ΤΟΥ ΑΓΩΝΑ ΤΗΣ ΜΠΟΚΑ (VID)",
+      "url": "https://www.in.gr/2026/08/01/greece/thessaloniki-kleinei-to-vrady-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/",
+      "title": "Θεσσαλονίκη: Κλείνει το βράδυ ο Περιφερειακός λόγω Flyover – Σε ποια σημεία, ποιες ώρες",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΚΛΕΙΝΕΙ ΤΟ ΒΡΑΔΥ Ο ΠΕΡΙΦΕΡΕΙΑΚΟΣ ΛΟΓΩ FLYOVER – ΣΕ ΠΟΙΑ ΣΗΜΕΙΑ, ΠΟΙΕΣ ΩΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/01/sports/football/den-evale-myalo-meta-to-mountial-o-paredes-arpaxtike-kai-me-ton-diaititi-tou-agona-tis-mpoka-vid/",
-        "https://www.in.gr/2026/08/01/economy/makroxronia-anergoi-dikaioma-dorean-ensimon-pente-eton-prin-ti-syntaksiodotisi/",
-        "https://www.in.gr/2026/08/01/life/geysi/syntagi-keftedakia-nisiotika-kai-patates-tsakistes/",
-        "https://www.in.gr/2026/08/01/greece/kokkinos-synagermos-gia-fotia-se-attiki-kai-eyvoia-pote-kopazoun-oi-anemoi/"
+        "https://www.in.gr/2026/08/01/greece/thessaloniki-kleinei-to-vrady-o-perifereiakos-logo-flyover-se-poia-simeia-poies-ores/",
+        "https://www.in.gr/2026/08/01/life/music/starovas-kai-giokarinis-enonoun-tis-dynameis-tous-ston-korydallo-se-mia-megali-rock-vradia/"
       ],
-      "seen_at_utc": "2026-08-01T05:17:11.796008+00:00"
+      "seen_at_utc": "2026-08-01T05:30:08.643306+00:00"
     }
   },
-  "updated_at_utc": "2026-08-01T05:17:11.796136+00:00"
+  "updated_at_utc": "2026-08-01T05:30:08.643459+00:00"
 }
