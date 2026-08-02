@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/environment/564381037/toylachiston-111-700-stremmata-stachti-sti-didymi-katastrofi-stin-attikovoiotia/",
-      "title": "Τουλάχιστον 111.700 στρέμματα στάχτη στη δίδυμη καταστροφή στην Αττικοβοιωτία",
-      "normalized_title": "ΤΟΥΛΑΧΙΣΤΟΝ 111.700 ΣΤΡΕΜΜΑΤΑ ΣΤΑΧΤΗ ΣΤΗ ΔΙΔΥΜΗ ΚΑΤΑΣΤΡΟΦΗ ΣΤΗΝ ΑΤΤΙΚΟΒΟΙΩΤΙΑ",
+      "url": "https://www.kathimerini.gr/society/564381046/symi-pente-agnooymenoi-meta-tin-parasyrsi-istioploikoy/",
+      "title": "Σύμη: Πέντε αγνοούμενοι μετά την παράσυρση ιστιοπλοϊκού",
+      "normalized_title": "ΣΥΜΗ: ΠΕΝΤΕ ΑΓΝΟΟΥΜΕΝΟΙ ΜΕΤΑ ΤΗΝ ΠΑΡΑΣΥΡΣΗ ΙΣΤΙΟΠΛΟΙΚΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/environment/564381037/toylachiston-111-700-stremmata-stachti-sti-didymi-katastrofi-stin-attikovoiotia/"
+        "https://www.kathimerini.gr/society/564381046/symi-pente-agnooymenoi-meta-tin-parasyrsi-istioploikoy/",
+        "https://www.kathimerini.gr/eortologio/564376720/eortologio-poioi-giortazoyn-simera-3-aygoystoy/",
+        "https://www.kathimerini.gr/world/564381040/theoyta-to-maroko-apodidei-tin-eisvoli-metanaston-stin-parapliroforisi-kai-ta-diktya-emporias/"
       ],
-      "seen_at_utc": "2026-08-02T20:53:46.052182+00:00"
+      "seen_at_utc": "2026-08-02T21:17:09.330662+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1367,25 +1369,27 @@
       "seen_at_utc": "2026-08-02T20:53:46.052253+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440510/eyaggelos-venizelos-o-giannis-varvitsiotis-itan-ftiagmenos-apo-palio-gero-metallo/",
-      "title": "Ευάγγελος Βενιζέλος: «Ο Γιάννης Βαρβιτσιώτης ήταν φτιαγμένος από παλιό γερό μέταλλο»",
-      "normalized_title": "ΕΥΑΓΓΕΛΟΣ ΒΕΝΙΖΕΛΟΣ: «Ο ΓΙΑΝΝΗΣ ΒΑΡΒΙΤΣΙΩΤΗΣ ΗΤΑΝ ΦΤΙΑΓΜΕΝΟΣ ΑΠΟ ΠΑΛΙΟ ΓΕΡΟ ΜΕΤΑΛΛΟ»",
+      "url": "https://www.efsyn.gr/ellada/1440514/triti-nyhta-agonias-sti-dytiki-attiki-floges-poliorkoyn-kryo-pigadi-kai-agio-nektario-nees-ekkenoseis-vinteo/",
+      "title": "Τρίτη νύχτα αγωνίας στη Δυτική Αττική: Φλόγες πολιορκούν Κρύο Πηγάδι και Άγιο Νεκτάριο – Νέες εκκενώσεις [βίντεο]",
+      "normalized_title": "ΤΡΙΤΗ ΝΥΧΤΑ ΑΓΩΝΙΑΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΦΛΟΓΕΣ ΠΟΛΙΟΡΚΟΥΝ ΚΡΥΟ ΠΗΓΑΔΙ ΚΑΙ ΑΓΙΟ ΝΕΚΤΑΡΙΟ – ΝΕΕΣ ΕΚΚΕΝΩΣΕΙΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440510/eyaggelos-venizelos-o-giannis-varvitsiotis-itan-ftiagmenos-apo-palio-gero-metallo/"
+        "https://www.efsyn.gr/ellada/1440514/triti-nyhta-agonias-sti-dytiki-attiki-floges-poliorkoyn-kryo-pigadi-kai-agio-nektario-nees-ekkenoseis-vinteo/"
       ],
-      "seen_at_utc": "2026-08-02T20:30:07.751809+00:00"
+      "seen_at_utc": "2026-08-02T21:17:09.330813+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/economy/diethnis-oikonomia/morgan-stanley-to-parti-meta-tin-eisagogi-tis-sto-xrimatistirio/",
-      "title": "Morgan Stanley: Το «πάρτι» μετά την εισαγωγή της στο χρηματιστήριο",
-      "normalized_title": "MORGAN STANLEY: ΤΟ «ΠΑΡΤΙ» ΜΕΤΑ ΤΗΝ ΕΙΣΑΓΩΓΗ ΤΗΣ ΣΤΟ ΧΡΗΜΑΤΙΣΤΗΡΙΟ",
+      "url": "https://www.in.gr/2026/08/03/greece/synagermos-sti-symi-pente-germanoi-agnoountai-sti-thalassa-meta-apo-voutia-apo-istioploiko/",
+      "title": "Συναγερμός στη Σύμη: Πέντε Γερμανοί αγνοούνται στη θάλασσα μετά από βουτιά από ιστιοπλοϊκό",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΗ ΣΥΜΗ: ΠΕΝΤΕ ΓΕΡΜΑΝΟΙ ΑΓΝΟΟΥΝΤΑΙ ΣΤΗ ΘΑΛΑΣΣΑ ΜΕΤΑ ΑΠΟ ΒΟΥΤΙΑ ΑΠΟ ΙΣΤΙΟΠΛΟΙΚΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/economy/diethnis-oikonomia/morgan-stanley-to-parti-meta-tin-eisagogi-tis-sto-xrimatistirio/",
-        "https://www.in.gr/2026/08/02/sports/basketball/o-giampousele-apokalypse-ton-logo-pou-efyge-apo-tous-niks/",
-        "https://www.in.gr/2026/08/02/life/culture-live/o-spider-man-simeiose-ti-deyteri-pio-epityximeni-premiera-olon-ton-epoxon/"
+        "https://www.in.gr/2026/08/03/greece/synagermos-sti-symi-pente-germanoi-agnoountai-sti-thalassa-meta-apo-voutia-apo-istioploiko/",
+        "https://www.in.gr/2026/08/03/greece/giorti-simera-3-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/03/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-deytera-03-08-2026/",
+        "https://www.in.gr/2026/08/02/sports/football/odigos-gia-tis-kliroseis-ton-ellinikon-omadon-se-champions-europa-kai-conference-league/",
+        "https://www.in.gr/2026/08/02/greece/pethane-o-spoudaios-lakis-xalkias/"
       ],
-      "seen_at_utc": "2026-08-02T20:53:46.052215+00:00"
+      "seen_at_utc": "2026-08-02T21:17:09.330717+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T20:53:46.052324+00:00"
+  "updated_at_utc": "2026-08-02T21:17:09.330894+00:00"
 }
