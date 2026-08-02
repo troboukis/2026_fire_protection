@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564378757/tsoychteri-i-anakainismeni-foititiki-katoikia/",
-      "title": "«Τσουχτερή» η ανακαινισμένη φοιτητική κατοικία",
-      "normalized_title": "«ΤΣΟΥΧΤΕΡΗ» Η ΑΝΑΚΑΙΝΙΣΜΕΝΗ ΦΟΙΤΗΤΙΚΗ ΚΑΤΟΙΚΙΑ",
+      "url": "https://www.kathimerini.gr/society/564380593/pyrometeorologiki-analysi-gia-tin-entasi-ton-anemon-tis-epomenes-ores-ti-anaferei/",
+      "title": "Πυρομετεωρολογική ανάλυση για την ένταση των ανέμων τις επόμενες ώρες – Τι αναφέρει",
+      "normalized_title": "ΠΥΡΟΜΕΤΕΩΡΟΛΟΓΙΚΗ ΑΝΑΛΥΣΗ ΓΙΑ ΤΗΝ ΕΝΤΑΣΗ ΤΩΝ ΑΝΕΜΩΝ ΤΙΣ ΕΠΟΜΕΝΕΣ ΩΡΕΣ – ΤΙ ΑΝΑΦΕΡΕΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564378757/tsoychteri-i-anakainismeni-foititiki-katoikia/",
-        "https://www.kathimerini.gr/world/564380557/eyropaikes-ligkes-i-thesi-toy-infantino-sti-fifa-den-einai-pleon-viosimi/",
-        "https://www.kathimerini.gr/politics/564380545/gerapetritis-diamantopoyloy-kai-christodoylakis-diapseydoyn-dimosieymata-gia-koino-deipno/"
+        "https://www.kathimerini.gr/society/564380593/pyrometeorologiki-analysi-gia-tin-entasi-ton-anemon-tis-epomenes-ores-ti-anaferei/"
       ],
-      "seen_at_utc": "2026-08-02T10:17:12.839038+00:00"
+      "seen_at_utc": "2026-08-02T10:30:24.152182+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,26 +1268,24 @@
       "seen_at_utc": "2026-08-02T10:17:12.839193+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1440065/soypermarket-ti-simainei-i-symfonia-kyrion-gia-meioseis-timon-kai-giati-den-tha-vgoyn-kerdismenoi-oi-katanalotes/",
-      "title": "Σουπερμάρκετ: Τι σημαίνει η «συμφωνία κυρίων» για μειώσεις τιμών και γιατί δεν θα βγουν κερδισμένοι οι καταναλωτές",
-      "normalized_title": "ΣΟΥΠΕΡΜΑΡΚΕΤ: ΤΙ ΣΗΜΑΙΝΕΙ Η «ΣΥΜΦΩΝΙΑ ΚΥΡΙΩΝ» ΓΙΑ ΜΕΙΩΣΕΙΣ ΤΙΜΩΝ ΚΑΙ ΓΙΑΤΙ ΔΕΝ ΘΑ ΒΓΟΥΝ ΚΕΡΔΙΣΜΕΝΟΙ ΟΙ ΚΑΤΑΝΑΛΩΤΕΣ",
+      "url": "https://www.efsyn.gr/politiki/1440324/pyrkagies-pyra-pasok-kke-kai-syriza-ston-mitsotaki-gia-tis-apologies-toy/",
+      "title": "Πυρκαγιές: Πυρά ΠΑΣΟΚ, ΚΚΕ και ΣΥΡΙΖΑ στον Μητσοτάκη για τις «απολογίες» του",
+      "normalized_title": "ΠΥΡΚΑΓΙΕΣ: ΠΥΡΑ ΠΑΣΟΚ, ΚΚΕ ΚΑΙ ΣΥΡΙΖΑ ΣΤΟΝ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΙΣ «ΑΠΟΛΟΓΙΕΣ» ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1440065/soypermarket-ti-simainei-i-symfonia-kyrion-gia-meioseis-timon-kai-giati-den-tha-vgoyn-kerdismenoi-oi-katanalotes/"
+        "https://www.efsyn.gr/politiki/1440324/pyrkagies-pyra-pasok-kke-kai-syriza-ston-mitsotaki-gia-tis-apologies-toy/"
       ],
-      "seen_at_utc": "2026-08-02T10:17:12.839131+00:00"
+      "seen_at_utc": "2026-08-02T10:30:24.152264+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/sports/football/xalase-i-metagrafi-tou-vozinia-sti-xili-konta-se-omada-tou-marokou/",
-      "title": "Χάλασε η μεταγραφή του Βοζίνια στη Χιλή – Κοντά σε ομάδα του Μαρόκου",
-      "normalized_title": "ΧΑΛΑΣΕ Η ΜΕΤΑΓΡΑΦΗ ΤΟΥ ΒΟΖΙΝΙΑ ΣΤΗ ΧΙΛΗ – ΚΟΝΤΑ ΣΕ ΟΜΑΔΑ ΤΟΥ ΜΑΡΟΚΟΥ",
+      "url": "https://www.in.gr/2026/08/02/politics/syriza-gia-mitsotaki-epimenei-ston-aytothaymasmo-gia-tin-etoimotita-tou-kratikou-mixanismou-tin-ora-pou-i-xora-metra-nekrous-pyrosvestes/",
+      "title": "ΣΥΡΙΖΑ για Μητσοτάκη: Επιμένει στον αυτοθαυμασμό για την ετοιμότητα του κρατικού μηχανισμού, την ώρα που η χώρα μετρά νεκρούς πυροσβέστες",
+      "normalized_title": "ΣΥΡΙΖΑ ΓΙΑ ΜΗΤΣΟΤΑΚΗ: ΕΠΙΜΕΝΕΙ ΣΤΟΝ ΑΥΤΟΘΑΥΜΑΣΜΟ ΓΙΑ ΤΗΝ ΕΤΟΙΜΟΤΗΤΑ ΤΟΥ ΚΡΑΤΙΚΟΥ ΜΗΧΑΝΙΣΜΟΥ, ΤΗΝ ΩΡΑ ΠΟΥ Η ΧΩΡΑ ΜΕΤΡΑ ΝΕΚΡΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/sports/football/xalase-i-metagrafi-tou-vozinia-sti-xili-konta-se-omada-tou-marokou/",
-        "https://www.in.gr/2026/08/02/greece/fotia-sto-porto-germeno-exysa-to-aima-mou-gi-ayto-to-spiti-kai-pige-strafi-leei-o-tasos-xalkias/",
-        "https://www.in.gr/2026/08/02/go-fun/fizz/pethane-o-vinsent-pastore-o-big-pussy-ton-the-sopranos/",
-        "https://www.in.gr/2026/08/02/greece/sygklonistikes-eikones-kai-vinteo-tou-in-apo-to-pyrino-metopo-apo-vilia-pros-porto-germeno/"
+        "https://www.in.gr/2026/08/02/politics/syriza-gia-mitsotaki-epimenei-ston-aytothaymasmo-gia-tin-etoimotita-tou-kratikou-mixanismou-tin-ora-pou-i-xora-metra-nekrous-pyrosvestes/",
+        "https://www.in.gr/2026/08/02/greece/nekros-entopistike-stin-kampina-tou-o-yparxos-tou-superferry/"
       ],
-      "seen_at_utc": "2026-08-02T10:17:12.839083+00:00"
+      "seen_at_utc": "2026-08-02T10:30:24.152239+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T10:17:12.839288+00:00"
+  "updated_at_utc": "2026-08-02T10:30:24.152328+00:00"
 }
