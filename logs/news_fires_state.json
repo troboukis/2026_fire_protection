@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564380965/ioannis-varvitsiotis-i-thiteia-sto-pleyro-toy-karamanli-i-eptaetia-i-metapoliteysi/",
-      "title": "Ιωάννης Βαρβιτσιώτης: Η θητεία στο πλευρό του Καραμανλή, η επταετία, η μεταπολίτευση",
-      "normalized_title": "ΙΩΑΝΝΗΣ ΒΑΡΒΙΤΣΙΩΤΗΣ: Η ΘΗΤΕΙΑ ΣΤΟ ΠΛΕΥΡΟ ΤΟΥ ΚΑΡΑΜΑΝΛΗ, Η ΕΠΤΑΕΤΙΑ, Η ΜΕΤΑΠΟΛΙΤΕΥΣΗ",
+      "url": "https://www.kathimerini.gr/culture/564377947/ti-den-mporoyme-na-koitaxoyme-katamata/",
+      "title": "Τι δεν μπορούμε να κοιτάξουμε κατάματα;",
+      "normalized_title": "ΤΙ ΔΕΝ ΜΠΟΡΟΥΜΕ ΝΑ ΚΟΙΤΑΞΟΥΜΕ ΚΑΤΑΜΑΤΑ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564380965/ioannis-varvitsiotis-i-thiteia-sto-pleyro-toy-karamanli-i-eptaetia-i-metapoliteysi/"
+        "https://www.kathimerini.gr/culture/564377947/ti-den-mporoyme-na-koitaxoyme-katamata/",
+        "https://www.kathimerini.gr/politics/564381007/k-mitsotakis-o-i-varvitsiotis-sfragise-tin-exelixi-tis-metapoliteysis/",
+        "https://www.kathimerini.gr/society/564381004/kriti-epitychis-epicheirisi-diasosis-39-allodapon-notia-tis-megalonisoy/",
+        "https://www.kathimerini.gr/culture/564377989/velona-klosti-kai-fantasia/"
       ],
-      "seen_at_utc": "2026-08-02T17:30:09.095915+00:00"
+      "seen_at_utc": "2026-08-02T18:17:17.459580+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,29 +1271,25 @@
       "seen_at_utc": "2026-08-02T17:51:24.642825+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440447/stahti-ki-apokaidia-sto-porto-germeno-eikones-katastrofis-meta-to-perasma-tis-pyrinis-lailapas/",
-      "title": "Στάχτη κι αποκαΐδια στο Πόρτο Γερμενό: Εικόνες καταστροφής μετά το πέρασμα της πύρινης λαίλαπας",
-      "normalized_title": "ΣΤΑΧΤΗ ΚΙ ΑΠΟΚΑΙΔΙΑ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ: ΕΙΚΟΝΕΣ ΚΑΤΑΣΤΡΟΦΗΣ ΜΕΤΑ ΤΟ ΠΕΡΑΣΜΑ ΤΗΣ ΠΥΡΙΝΗΣ ΛΑΙΛΑΠΑΣ",
+      "url": "https://www.efsyn.gr/politiki/1440487/mitsotakis-gia-ioanni-varvitsioti-sfragise-ohi-mono-ti-diadromi-tis-nd-alla-tin-idia-tin-exelixi-tis-metapoliteysis/",
+      "title": "Μητσοτάκης για Ιωάννη Βαρβιτσιώτη: «Σφράγισε όχι μόνο τη διαδρομή της ΝΔ, αλλά την ίδια την εξέλιξη της Μεταπολίτευσης»",
+      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΓΙΑ ΙΩΑΝΝΗ ΒΑΡΒΙΤΣΙΩΤΗ: «ΣΦΡΑΓΙΣΕ ΟΧΙ ΜΟΝΟ ΤΗ ΔΙΑΔΡΟΜΗ ΤΗΣ ΝΔ, ΑΛΛΑ ΤΗΝ ΙΔΙΑ ΤΗΝ ΕΞΕΛΙΞΗ ΤΗΣ ΜΕΤΑΠΟΛΙΤΕΥΣΗΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440447/stahti-ki-apokaidia-sto-porto-germeno-eikones-katastrofis-meta-to-perasma-tis-pyrinis-lailapas/",
-        "https://www.efsyn.gr/ellada/1440484/220-agrotodasikes-pyrkagies-mesa-se-mia-evdomada-dianyoyme-tis-dyskoloteres-imeres-toy-kalokairioy/",
-        "https://www.efsyn.gr/ellada/1440342/fylakes-orfanotrofeio-aiginas-topos-mnimis-ohi-fistikioy/"
+        "https://www.efsyn.gr/politiki/1440487/mitsotakis-gia-ioanni-varvitsioti-sfragise-ohi-mono-ti-diadromi-tis-nd-alla-tin-idia-tin-exelixi-tis-metapoliteysis/"
       ],
-      "seen_at_utc": "2026-08-02T17:51:24.642797+00:00"
+      "seen_at_utc": "2026-08-02T18:17:17.459687+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/world/toulaxiston-15-atoma-skotothikan-stin-gaza-apo-israilines-epitheseis-tessera-paidia-nekra/",
-      "title": "Τουλάχιστον 15 άτομα σκοτώθηκαν στην Γάζα από ισραηλινές επιθέσεις – Τέσσερα παιδιά νεκρά",
-      "normalized_title": "ΤΟΥΛΑΧΙΣΤΟΝ 15 ΑΤΟΜΑ ΣΚΟΤΩΘΗΚΑΝ ΣΤΗΝ ΓΑΖΑ ΑΠΟ ΙΣΡΑΗΛΙΝΕΣ ΕΠΙΘΕΣΕΙΣ – ΤΕΣΣΕΡΑ ΠΑΙΔΙΑ ΝΕΚΡΑ",
+      "url": "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/enfia-2027-allazei-o-tropos-ypologismou/",
+      "title": "Αλλάζει ο τρόπος υπολογισμού του ΕΝΦΙΑ από το 2027",
+      "normalized_title": "ΑΛΛΑΖΕΙ Ο ΤΡΟΠΟΣ ΥΠΟΛΟΓΙΣΜΟΥ ΤΟΥ ΕΝΦΙΑ ΑΠΟ ΤΟ 2027",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/world/toulaxiston-15-atoma-skotothikan-stin-gaza-apo-israilines-epitheseis-tessera-paidia-nekra/",
-        "https://www.in.gr/2026/08/02/politics/epikairotita/ektos-elpidas-gia-ti-dimokratia-o-thanasis-aygerinos-gia-dixastikes-diloseis-kai-symperifores-milaei-i-karystianou/",
-        "https://www.in.gr/2026/08/02/greece/syntrivi-elikopteron-pos-ta-misthomena-bell-kateliksan-stin-tragodia-i-syndesi-me-tin-aystraliani-mcdermott/",
-        "https://www.in.gr/2026/08/02/sports/football/o-louse-sti-thessaloniki-gia-na-ypograpsei-ston-paok-pics/",
-        "https://www.in.gr/2026/08/02/life/music/i-cardi-b-kanei-diss-ston-tramp-sto-neo-tis-kommati-ah-ha/"
+        "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/enfia-2027-allazei-o-tropos-ypologismou/",
+        "https://www.in.gr/2026/08/02/sports/ayto-einai-to-programma-tou-olympiakou-enopsei-tou-agona-me-ti-naimegken/",
+        "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/mporoun-oi-koftes-na-meiosoun-ta-enoikia/"
       ],
-      "seen_at_utc": "2026-08-02T17:51:24.642750+00:00"
+      "seen_at_utc": "2026-08-02T18:17:17.459631+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T17:51:24.642899+00:00"
+  "updated_at_utc": "2026-08-02T18:17:17.459772+00:00"
 }
