@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380602/oyggaria-krisimo-penthimero-gia-tin-energeiaki-epiviosi-tis-choras-leei-o-magiar/",
-      "title": "Ουγγαρία: Κρίσιμο πενθήμερο για την ενεργειακή επιβίωση της χώρας, λέει ο Μάγιαρ",
-      "normalized_title": "ΟΥΓΓΑΡΙΑ: ΚΡΙΣΙΜΟ ΠΕΝΘΗΜΕΡΟ ΓΙΑ ΤΗΝ ΕΝΕΡΓΕΙΑΚΗ ΕΠΙΒΙΩΣΗ ΤΗΣ ΧΩΡΑΣ, ΛΕΕΙ Ο ΜΑΓΙΑΡ",
+      "url": "https://www.kathimerini.gr/economy/local/564378706/kleidi-gia-ikanopoiitikes-syntaxeis-ta-tameia-epaggelmatikis-asfalisis/",
+      "title": "«Κλειδί» για ικανοποιητικές συντάξεις τα Ταμεία Επαγγελματικής Ασφάλισης",
+      "normalized_title": "«ΚΛΕΙΔΙ» ΓΙΑ ΙΚΑΝΟΠΟΙΗΤΙΚΕΣ ΣΥΝΤΑΞΕΙΣ ΤΑ ΤΑΜΕΙΑ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380602/oyggaria-krisimo-penthimero-gia-tin-energeiaki-epiviosi-tis-choras-leei-o-magiar/"
+        "https://www.kathimerini.gr/economy/local/564378706/kleidi-gia-ikanopoiitikes-syntaxeis-ta-tameia-epaggelmatikis-asfalisis/",
+        "https://www.kathimerini.gr/society/564380626/chalkidiki-vythistike-skafos-ston-agio-nikolao-siviris-kolympontas-vgikan-stin-akti-oi-epivates/",
+        "https://www.kathimerini.gr/culture/564378502/nea-zoi-gia-ena-stolidi/"
       ],
-      "seen_at_utc": "2026-08-02T10:51:32.343983+00:00"
+      "seen_at_utc": "2026-08-02T11:17:09.011838+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859448/voiotia-video-dokoumedo-katagrafei-ta-prota-deuterolepta-tis-fotias-eihe-proigithei/?utm_source=rss",
-      "title": "Βίντεο-ντοκουμέντο από τη Βοιωτία: Τα πρώτα δευτερόλεπτα από το σημείο μηδέν όπου ξέσπασε η πυρκαγιά – Στο ίδιο σημείο που είχε πιάσει φωτιά πριν από έναν μήνα",
-      "normalized_title": "ΒΙΝΤΕΟ-ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΗ ΒΟΙΩΤΙΑ: ΤΑ ΠΡΩΤΑ ΔΕΥΤΕΡΟΛΕΠΤΑ ΑΠΟ ΤΟ ΣΗΜΕΙΟ ΜΗΔΕΝ ΟΠΟΥ ΞΕΣΠΑΣΕ Η ΠΥΡΚΑΓΙΑ – ΣΤΟ ΙΔΙΟ ΣΗΜΕΙΟ ΠΟΥ ΕΙΧΕ ΠΙΑΣΕΙ ΦΩΤΙΑ ΠΡΙΝ ΑΠΟ ΕΝΑΝ ΜΗΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1859454/halkidiki-vuthistike-skafos-ston-agio-nikolao-oi-epivates-vgikan-stin-akti-kolubodas/?utm_source=rss",
+      "title": "Χαλκιδική: Βυθίστηκε σκάφος με Ρουμάνους τουρίστες - Καλά στην υγεία τους οι 5 επιβαίνοντες, βγήκαν στην ακτή κολυμπώντας",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΜΕ ΡΟΥΜΑΝΟΥΣ ΤΟΥΡΙΣΤΕΣ - ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥΣ ΟΙ 5 ΕΠΙΒΑΙΝΟΝΤΕΣ, ΒΓΗΚΑΝ ΣΤΗΝ ΑΚΤΗ ΚΟΛΥΜΠΩΝΤΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859448/voiotia-video-dokoumedo-katagrafei-ta-prota-deuterolepta-tis-fotias-eihe-proigithei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859454/halkidiki-vuthistike-skafos-ston-agio-nikolao-oi-epivates-vgikan-stin-akti-kolubodas/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T10:17:12.839193+00:00"
+      "seen_at_utc": "2026-08-02T11:17:09.011959+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440339/ti-leei-o-marinakis-gia-to-dimosieyma-poy-prokalese-tin-ekrixi-gerapetriti-diamantopoyloy-kai-hristodoylaki/",
-      "title": "Τι λέει ο Μαρινάκης για το δημοσίευμα που προκάλεσε την έκρηξη Γεραπετρίτη, Διαμαντοπούλου και Χριστοδουλάκη",
-      "normalized_title": "ΤΙ ΛΕΕΙ Ο ΜΑΡΙΝΑΚΗΣ ΓΙΑ ΤΟ ΔΗΜΟΣΙΕΥΜΑ ΠΟΥ ΠΡΟΚΑΛΕΣΕ ΤΗΝ ΕΚΡΗΞΗ ΓΕΡΑΠΕΤΡΙΤΗ, ΔΙΑΜΑΝΤΟΠΟΥΛΟΥ ΚΑΙ ΧΡΙΣΤΟΔΟΥΛΑΚΗ",
+      "url": "https://www.efsyn.gr/ellada/1440358/vythistike-skafos-sti-halkidiki-kolympontas-vgikan-stin-akti-oi-pente-epivates/",
+      "title": "Βυθίστηκε σκάφος στη Χαλκιδική – Κολυμπώντας βγήκαν στην ακτή οι πέντε επιβάτες",
+      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ – ΚΟΛΥΜΠΩΝΤΑΣ ΒΓΗΚΑΝ ΣΤΗΝ ΑΚΤΗ ΟΙ ΠΕΝΤΕ ΕΠΙΒΑΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440339/ti-leei-o-marinakis-gia-to-dimosieyma-poy-prokalese-tin-ekrixi-gerapetriti-diamantopoyloy-kai-hristodoylaki/"
+        "https://www.efsyn.gr/ellada/1440358/vythistike-skafos-sti-halkidiki-kolympontas-vgikan-stin-akti-oi-pente-epivates/",
+        "https://www.efsyn.gr/ellada/1440072/zoes-poy-den-ehoyn-simasia-os-kindyno-asfaleias-antimetopizei-toys-metanastes-to-eyropaiko-symfono-gia-to-asylo/",
+        "https://www.efsyn.gr/politiki/1440350/kyriakos-pierrakakis-sti-deth-tha-paroysiasoyme-shedio-tetraetias/"
       ],
-      "seen_at_utc": "2026-08-02T10:51:32.344046+00:00"
+      "seen_at_utc": "2026-08-02T11:17:09.011926+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/greece/fotia-sti-dytiki-attiki-se-isxy-kykloforiakes-rythmiseis/",
-      "title": "Φωτιά στη Δυτική Αττική – Σε ισχύ κυκλοφοριακές ρυθμίσεις",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ – ΣΕ ΙΣΧΥ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-ti-deytera-se-attiki-voiotia-kai-eyvoia/",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς τη Δευτέρα σε Αττική, Βοιωτία και Εύβοια",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗ ΔΕΥΤΕΡΑ ΣΕ ΑΤΤΙΚΗ, ΒΟΙΩΤΙΑ ΚΑΙ ΕΥΒΟΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/greece/fotia-sti-dytiki-attiki-se-isxy-kykloforiakes-rythmiseis/",
-        "https://www.in.gr/2026/08/02/greece/fotia-eksasthenoun-stadiaka-oi-enisxymenoi-anemoi-stin-attikovoiotia-prognostikoi-xartes/"
+        "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-ti-deytera-se-attiki-voiotia-kai-eyvoia/",
+        "https://www.in.gr/2026/08/02/sports/football/o-infantino-sxediaze-mistho-10-fores-megalytero-apo-ayton-pou-lamvanei-os-proedros-tis-fifa/",
+        "https://www.in.gr/2026/08/02/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-02-08-08-08-2026/",
+        "https://www.in.gr/2026/08/02/politics/kke-gia-anartisi-mitsotaki-athlia-kai-ypokritiki-prospatheia-na-dikaiologisei-tis-terasties-katastrofes/",
+        "https://www.in.gr/2026/08/02/in-science/episthmes/pos-eftase-ston-neo-kosmo-i-katara-tis-eylogias-oi-moumies-tis-xilis-thymountai/"
       ],
-      "seen_at_utc": "2026-08-02T10:51:32.344022+00:00"
+      "seen_at_utc": "2026-08-02T11:17:09.011889+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T10:51:32.344109+00:00"
+  "updated_at_utc": "2026-08-02T11:17:09.012026+00:00"
 }
