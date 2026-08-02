@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564378748/enischysi-ependytikon-schedion-sta-nisia-toy-notioy-aigaioy/",
-      "title": "Ενίσχυση επενδυτικών σχεδίων στα νησιά του Νοτίου Αιγαίου",
-      "normalized_title": "ΕΝΙΣΧΥΣΗ ΕΠΕΝΔΥΤΙΚΩΝ ΣΧΕΔΙΩΝ ΣΤΑ ΝΗΣΙΑ ΤΟΥ ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ",
+      "url": "https://www.kathimerini.gr/economy/564378709/vlepoyn-yperapodosi-forologikon-esodon/",
+      "title": "«Βλέπουν» υπεραπόδοση φορολογικών εσόδων",
+      "normalized_title": "«ΒΛΕΠΟΥΝ» ΥΠΕΡΑΠΟΔΟΣΗ ΦΟΡΟΛΟΓΙΚΩΝ ΕΣΟΔΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564378748/enischysi-ependytikon-schedion-sta-nisia-toy-notioy-aigaioy/"
+        "https://www.kathimerini.gr/economy/564378709/vlepoyn-yperapodosi-forologikon-esodon/",
+        "https://www.kathimerini.gr/society/564380650/pyrkagies-ston-eisaggelea-oi-dyo-syllifthentes-gia-ti-fotia-sti-voiotia/",
+        "https://www.kathimerini.gr/world/564379108/choris-schedio-choris-sfaires/"
       ],
-      "seen_at_utc": "2026-08-02T11:30:11.182067+00:00"
+      "seen_at_utc": "2026-08-02T11:51:15.883316+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859454/halkidiki-vuthistike-skafos-ston-agio-nikolao-oi-epivates-vgikan-stin-akti-kolubodas/?utm_source=rss",
-      "title": "Χαλκιδική: Βυθίστηκε σκάφος με Ρουμάνους τουρίστες - Καλά στην υγεία τους οι 5 επιβαίνοντες, βγήκαν στην ακτή κολυμπώντας",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΜΕ ΡΟΥΜΑΝΟΥΣ ΤΟΥΡΙΣΤΕΣ - ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥΣ ΟΙ 5 ΕΠΙΒΑΙΝΟΝΤΕΣ, ΒΓΗΚΑΝ ΣΤΗΝ ΑΚΤΗ ΚΟΛΥΜΠΩΝΤΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1859469/diaspartes-esties-fotias-adimetopizoun-oi-dunameis-purosvesis-stin-aigialeia-anefere-o-adidimarhos-politikis-prostasias/?utm_source=rss",
+      "title": "«Διάσπαρτες εστίες φωτιάς αντιμετωπίζουν οι δυνάμεις πυρόσβεσης στην Αιγιαλεία», ανέφερε ο αντιδήμαρχος Πολιτικής Προστασίας",
+      "normalized_title": "«ΔΙΑΣΠΑΡΤΕΣ ΕΣΤΙΕΣ ΦΩΤΙΑΣ ΑΝΤΙΜΕΤΩΠΙΖΟΥΝ ΟΙ ΔΥΝΑΜΕΙΣ ΠΥΡΟΣΒΕΣΗΣ ΣΤΗΝ ΑΙΓΙΑΛΕΙΑ», ΑΝΕΦΕΡΕ Ο ΑΝΤΙΔΗΜΑΡΧΟΣ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859454/halkidiki-vuthistike-skafos-ston-agio-nikolao-oi-epivates-vgikan-stin-akti-kolubodas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859469/diaspartes-esties-fotias-adimetopizoun-oi-dunameis-purosvesis-stin-aigialeia-anefere-o-adidimarhos-politikis-prostasias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859467/sto-kedro-ugeias-megaron-to-perifereiako-iatreio-vilion-kai-to-kedro-ugeias-eruthron-o-adonis-georgiadis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859465/enopion-eisaggelea-sti-thiva-odigoudai-simera-oi-duo-sullifthedes-gia-tin-purkagia-sti-voiotia-pou-epektathike-attiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T11:17:09.011959+00:00"
+      "seen_at_utc": "2026-08-02T11:51:15.883524+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440358/vythistike-skafos-sti-halkidiki-kolympontas-vgikan-stin-akti-oi-pente-epivates/",
-      "title": "Βυθίστηκε σκάφος στη Χαλκιδική – Κολυμπώντας βγήκαν στην ακτή οι πέντε επιβάτες",
-      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ – ΚΟΛΥΜΠΩΝΤΑΣ ΒΓΗΚΑΝ ΣΤΗΝ ΑΚΤΗ ΟΙ ΠΕΝΤΕ ΕΠΙΒΑΤΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1440365/pyrkagia-sti-voiotia-kakoyrgimatiki-dioxi-stoys-dyo-syllifthentes-kataziteitai-o-idioktitis-ton-anemogennitrion/",
+      "title": "Πυρκαγιά στη Βοιωτία: Κακουργηματική δίωξη στους δύο συλληφθέντες – Καταζητείται ο ιδιοκτήτης των ανεμογεννητριών",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΒΟΙΩΤΙΑ: ΚΑΚΟΥΡΓΗΜΑΤΙΚΗ ΔΙΩΞΗ ΣΤΟΥΣ ΔΥΟ ΣΥΛΛΗΦΘΕΝΤΕΣ – ΚΑΤΑΖΗΤΕΙΤΑΙ Ο ΙΔΙΟΚΤΗΤΗΣ ΤΩΝ ΑΝΕΜΟΓΕΝΝΗΤΡΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440358/vythistike-skafos-sti-halkidiki-kolympontas-vgikan-stin-akti-oi-pente-epivates/",
-        "https://www.efsyn.gr/ellada/1440072/zoes-poy-den-ehoyn-simasia-os-kindyno-asfaleias-antimetopizei-toys-metanastes-to-eyropaiko-symfono-gia-to-asylo/",
-        "https://www.efsyn.gr/politiki/1440350/kyriakos-pierrakakis-sti-deth-tha-paroysiasoyme-shedio-tetraetias/"
+        "https://www.efsyn.gr/ellada/1440365/pyrkagia-sti-voiotia-kakoyrgimatiki-dioxi-stoys-dyo-syllifthentes-kataziteitai-o-idioktitis-ton-anemogennitrion/",
+        "https://www.efsyn.gr/athlitismos/1440362/o-tzolis-xetrelane-idi-olo-to-nisi/"
       ],
-      "seen_at_utc": "2026-08-02T11:17:09.011926+00:00"
+      "seen_at_utc": "2026-08-02T11:51:15.883410+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-ti-deytera-se-attiki-voiotia-kai-eyvoia/",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς τη Δευτέρα σε Αττική, Βοιωτία και Εύβοια",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗ ΔΕΥΤΕΡΑ ΣΕ ΑΤΤΙΚΗ, ΒΟΙΩΤΙΑ ΚΑΙ ΕΥΒΟΙΑ",
+      "url": "https://www.in.gr/2026/08/02/sports/football/live-aek-sint-trouinten/",
+      "title": "LIVE: ΑΕΚ – Σιντ-Τρούιντεν",
+      "normalized_title": "LIVE: ΑΕΚ – ΣΙΝΤ-ΤΡΟΥΙΝΤΕΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-ti-deytera-se-attiki-voiotia-kai-eyvoia/",
-        "https://www.in.gr/2026/08/02/sports/football/o-infantino-sxediaze-mistho-10-fores-megalytero-apo-ayton-pou-lamvanei-os-proedros-tis-fifa/",
-        "https://www.in.gr/2026/08/02/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-02-08-08-08-2026/",
-        "https://www.in.gr/2026/08/02/politics/kke-gia-anartisi-mitsotaki-athlia-kai-ypokritiki-prospatheia-na-dikaiologisei-tis-terasties-katastrofes/",
-        "https://www.in.gr/2026/08/02/in-science/episthmes/pos-eftase-ston-neo-kosmo-i-katara-tis-eylogias-oi-moumies-tis-xilis-thymountai/"
+        "https://www.in.gr/2026/08/02/sports/football/live-aek-sint-trouinten/",
+        "https://www.in.gr/2026/08/02/in-analysis/i-eleytherotypia-den-apeileitai-kai-den-ekviazetai/",
+        "https://www.in.gr/2026/08/02/greece/ston-eisaggelea-oi-dyo-syllifthentes-gia-ti-megali-fotia-pou-ekdilothike-sti-voiotia-kai-epektathike-stin-attiki/",
+        "https://www.in.gr/2026/08/02/in-science/technology/neo-skandalo-me-praktores-tis-openai-pou-drapeteysan-apo-to-ergastirio/",
+        "https://www.in.gr/2026/08/02/sports/football/aek-i-arxiki-11ada-gia-to-filiko-paixnidi-me-ti-sint-trouiten/",
+        "https://www.in.gr/2026/08/02/life/i-syntomi-zoi-kai-o-tragikos-thanatos-tou-influencer-zyzz-plirose-to-kostos-tou-looksmaxxing-sta-22-tou/"
       ],
-      "seen_at_utc": "2026-08-02T11:17:09.011889+00:00"
+      "seen_at_utc": "2026-08-02T11:51:15.883361+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T11:30:11.182146+00:00"
+  "updated_at_utc": "2026-08-02T11:51:15.883603+00:00"
 }
