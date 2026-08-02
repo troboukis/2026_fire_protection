@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564380764/vinteo-i-stigmi-tis-sygkroysis-ton-elikopteron-konta-stin-psatha/",
-      "title": "Βίντεο: Η στιγμή της σύγκρουσης των ελικοπτέρων κοντά στην Ψάθα",
-      "normalized_title": "ΒΙΝΤΕΟ: Η ΣΤΙΓΜΗ ΤΗΣ ΣΥΓΚΡΟΥΣΗΣ ΤΩΝ ΕΛΙΚΟΠΤΕΡΩΝ ΚΟΝΤΑ ΣΤΗΝ ΨΑΘΑ",
+      "url": "https://www.kathimerini.gr/athletics/564380776/kopilasia-protathlitis-eyropis-o-gkaidatzis-chalkinos-o-ntoyskos/",
+      "title": "Κωπηλασία: Πρωταθλητής Ευρώπης ο Γκαϊδατζής, χάλκινος ο Ντούσκος",
+      "normalized_title": "ΚΩΠΗΛΑΣΙΑ: ΠΡΩΤΑΘΛΗΤΗΣ ΕΥΡΩΠΗΣ Ο ΓΚΑΙΔΑΤΖΗΣ, ΧΑΛΚΙΝΟΣ Ο ΝΤΟΥΣΚΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564380764/vinteo-i-stigmi-tis-sygkroysis-ton-elikopteron-konta-stin-psatha/"
+        "https://www.kathimerini.gr/athletics/564380776/kopilasia-protathlitis-eyropis-o-gkaidatzis-chalkinos-o-ntoyskos/",
+        "https://www.kathimerini.gr/culture/564378046/apolamvanontas-toys-klasikoys/"
       ],
-      "seen_at_utc": "2026-08-02T14:17:03.349597+00:00"
+      "seen_at_utc": "2026-08-02T14:29:59.392441+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1270,23 @@
       "seen_at_utc": "2026-08-02T14:17:03.349751+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440404/vinteo-ntokoymento-i-stigmi-tis-sygkroysis-ton-dyo-elikopteron-sti-dytiki-attiki/",
-      "title": "Βίντεο-ντοκουμέντο: Η στιγμή της σύγκρουσης των δύο ελικοπτέρων στην Ψάθα",
-      "normalized_title": "ΒΙΝΤΕΟ-ΝΤΟΚΟΥΜΕΝΤΟ: Η ΣΤΙΓΜΗ ΤΗΣ ΣΥΓΚΡΟΥΣΗΣ ΤΩΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ",
+      "url": "https://www.efsyn.gr/kosmos/1440331/oi-hores-toy-kolpoy-shediazoyn-na-apexartithoyn-apo-to-iran-kai-ton-elegho-toy-ormoyz-o-rolos-tis-toyrkias/",
+      "title": "Οι χώρες του Κόλπου σχεδιάζουν να «απεξαρτηθούν» από το Ιράν και τον έλεγχο του Ορμούζ – Ο ρόλος της Τουρκίας",
+      "normalized_title": "ΟΙ ΧΩΡΕΣ ΤΟΥ ΚΟΛΠΟΥ ΣΧΕΔΙΑΖΟΥΝ ΝΑ «ΑΠΕΞΑΡΤΗΘΟΥΝ» ΑΠΟ ΤΟ ΙΡΑΝ ΚΑΙ ΤΟΝ ΕΛΕΓΧΟ ΤΟΥ ΟΡΜΟΥΖ – Ο ΡΟΛΟΣ ΤΗΣ ΤΟΥΡΚΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440404/vinteo-ntokoymento-i-stigmi-tis-sygkroysis-ton-dyo-elikopteron-sti-dytiki-attiki/"
+        "https://www.efsyn.gr/kosmos/1440331/oi-hores-toy-kolpoy-shediazoyn-na-apexartithoyn-apo-to-iran-kai-ton-elegho-toy-ormoyz-o-rolos-tis-toyrkias/"
       ],
-      "seen_at_utc": "2026-08-02T14:17:03.349701+00:00"
+      "seen_at_utc": "2026-08-02T14:29:59.392529+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/in-science/ai/i-megali-pyramida-katerreyse-rosika-tank-mpikan-sto-kievo-salos-me-tis-eikones-ai-sto-google-earth/",
-      "title": "«Η Μεγάλη Πυραμίδα κατέρρευσε, ρωσικά τανκ μπήκαν στο Κίεβο» – Σάλος με τις εικόνες ΑΙ στο Google Earth",
-      "normalized_title": "«Η ΜΕΓΑΛΗ ΠΥΡΑΜΙΔΑ ΚΑΤΕΡΡΕΥΣΕ, ΡΩΣΙΚΑ ΤΑΝΚ ΜΠΗΚΑΝ ΣΤΟ ΚΙΕΒΟ» – ΣΑΛΟΣ ΜΕ ΤΙΣ ΕΙΚΟΝΕΣ ΑΙ ΣΤΟ GOOGLE EARTH",
+      "url": "https://www.in.gr/2026/08/02/world/entopizoun-tis-proin-tous-me-ena-klik-kataxrisi-kameron-apo-astynomikous-stis-ipa-gia-prosopikous-logous/",
+      "title": "Εντοπίζουν τις πρώην τους με ένα κλικ – Κατάχρηση καμερών από αστυνομικούς στις ΗΠΑ για προσωπικούς λόγους",
+      "normalized_title": "ΕΝΤΟΠΙΖΟΥΝ ΤΙΣ ΠΡΩΗΝ ΤΟΥΣ ΜΕ ΕΝΑ ΚΛΙΚ – ΚΑΤΑΧΡΗΣΗ ΚΑΜΕΡΩΝ ΑΠΟ ΑΣΤΥΝΟΜΙΚΟΥΣ ΣΤΙΣ ΗΠΑ ΓΙΑ ΠΡΟΣΩΠΙΚΟΥΣ ΛΟΓΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/in-science/ai/i-megali-pyramida-katerreyse-rosika-tank-mpikan-sto-kievo-salos-me-tis-eikones-ai-sto-google-earth/",
-        "https://www.in.gr/2026/08/02/sports/football/aek-sint-trouinten-3-0-ekleise-me-niki-ta-filika-stin-ollandia-dyo-gkol-o-pilios/",
-        "https://www.in.gr/2026/08/02/greece/kare-kare-i-sokaristiki-sygkrousi-ton-dyo-elikopteron-stin-psatha/",
-        "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/etoima-geymata-xrysoroxeio-gia-souper-market-kai-viomixania/"
+        "https://www.in.gr/2026/08/02/world/entopizoun-tis-proin-tous-me-ena-klik-kataxrisi-kameron-apo-astynomikous-stis-ipa-gia-prosopikous-logous/"
       ],
-      "seen_at_utc": "2026-08-02T14:17:03.349660+00:00"
+      "seen_at_utc": "2026-08-02T14:29:59.392496+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T14:17:03.349815+00:00"
+  "updated_at_utc": "2026-08-02T14:29:59.392594+00:00"
 }
