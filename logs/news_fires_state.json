@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380434/mesi-anatoli-o-tramp-anevale-nea-epithesi-sto-iran-apaitei-symfonia-gia-to-ormoyz/",
-      "title": "Μέση Ανατολή: Ο Τραμπ ανέβαλε νέα επίθεση στο Ιράν – Απαιτεί συμφωνία για το Ορμούζ",
-      "normalized_title": "ΜΕΣΗ ΑΝΑΤΟΛΗ: Ο ΤΡΑΜΠ ΑΝΕΒΑΛΕ ΝΕΑ ΕΠΙΘΕΣΗ ΣΤΟ ΙΡΑΝ – ΑΠΑΙΤΕΙ ΣΥΜΦΩΝΙΑ ΓΙΑ ΤΟ ΟΡΜΟΥΖ",
+      "url": "https://www.kathimerini.gr/economy/local/564378727/kerdi-497-2-ekat-kategrapse-i-alpha-bank-to-a-examino/",
+      "title": "Κέρδη 497,2 εκατ. κατέγραψε η Alpha Bank το α΄ εξάμηνο",
+      "normalized_title": "ΚΕΡΔΗ 497,2 ΕΚΑΤ. ΚΑΤΕΓΡΑΨΕ Η ALPHA BANK ΤΟ Α΄ ΕΞΑΜΗΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380434/mesi-anatoli-o-tramp-anevale-nea-epithesi-sto-iran-apaitei-symfonia-gia-to-ormoyz/"
+        "https://www.kathimerini.gr/economy/local/564378727/kerdi-497-2-ekat-kategrapse-i-alpha-bank-to-a-examino/",
+        "https://www.kathimerini.gr/world/564380437/ipa-se-pyrino-kloio-i-oyasigkton-chiliades-ekkenoseis-kai-diakopes-stin-ilektrodotisi/"
       ],
-      "seen_at_utc": "2026-08-02T04:51:30.385819+00:00"
+      "seen_at_utc": "2026-08-02T05:17:04.400344+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859304/apokardiotikes-eikones-apo-tin-katastrofiki-purkagia-sto-rethumno/?utm_source=rss",
-      "title": "Αποκαρδιωτικές εικόνες στο Ρέθυμνο, την επόμενη μέρα της φονικής πυρκαγιάς",
-      "normalized_title": "ΑΠΟΚΑΡΔΙΩΤΙΚΕΣ ΕΙΚΟΝΕΣ ΣΤΟ ΡΕΘΥΜΝΟ, ΤΗΝ ΕΠΟΜΕΝΗ ΜΕΡΑ ΤΗΣ ΦΟΝΙΚΗΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1859308/pethane-o-haris-katsaros-i-polutarahi-zoi-tou-proin-astunomikou-tis-omadas-z-pou-suglonise-me-tin-istoria-tou/?utm_source=rss",
+      "title": "Πέθανε ο Χάρης Κατσαρός: Η πολυτάραχη ζωή του πρώην αστυνομικού της Ομάδας Ζ που συγκλόνισε με την ιστορία του",
+      "normalized_title": "ΠΕΘΑΝΕ Ο ΧΑΡΗΣ ΚΑΤΣΑΡΟΣ: Η ΠΟΛΥΤΑΡΑΧΗ ΖΩΗ ΤΟΥ ΠΡΩΗΝ ΑΣΤΥΝΟΜΙΚΟΥ ΤΗΣ ΟΜΑΔΑΣ Ζ ΠΟΥ ΣΥΓΚΛΟΝΙΣΕ ΜΕ ΤΗΝ ΙΣΤΟΡΙΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859304/apokardiotikes-eikones-apo-tin-katastrofiki-purkagia-sto-rethumno/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859308/pethane-o-haris-katsaros-i-polutarahi-zoi-tou-proin-astunomikou-tis-omadas-z-pou-suglonise-me-tin-istoria-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T04:51:30.385883+00:00"
+      "seen_at_utc": "2026-08-02T05:17:04.400456+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1440226/iranos-ypex-tha-apantisoyme-se-opoiadipote-tyhodioktiki-energeia-ton-ipa/",
-      "title": "Ιρανός ΥΠΕΞ: Θα απαντήσουμε σε οποιαδήποτε «τυχοδιωκτική ενέργεια» των ΗΠΑ",
-      "normalized_title": "ΙΡΑΝΟΣ ΥΠΕΞ: ΘΑ ΑΠΑΝΤΗΣΟΥΜΕ ΣΕ ΟΠΟΙΑΔΗΠΟΤΕ «ΤΥΧΟΔΙΩΚΤΙΚΗ ΕΝΕΡΓΕΙΑ» ΤΩΝ ΗΠΑ",
+      "url": "https://www.efsyn.gr/politiki/1439981/sto-myalo-tis-neas-dimokratias-oi-31-logoi-poy-apomakrynoyn-tis-proores-ekloges/",
+      "title": "Στο μυαλό της Νέας Δημοκρατίας: Οι 3+1 λόγοι που απομακρύνουν τις πρόωρες εκλογές",
+      "normalized_title": "ΣΤΟ ΜΥΑΛΟ ΤΗΣ ΝΕΑΣ ΔΗΜΟΚΡΑΤΙΑΣ: ΟΙ 3+1 ΛΟΓΟΙ ΠΟΥ ΑΠΟΜΑΚΡΥΝΟΥΝ ΤΙΣ ΠΡΟΩΡΕΣ ΕΚΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1440226/iranos-ypex-tha-apantisoyme-se-opoiadipote-tyhodioktiki-energeia-ton-ipa/",
-        "https://www.efsyn.gr/ellada/1440210/pyrini-kolasi-sto-porto-germeno-konta-se-spitia-i-fotia-sti-veniza-tha-einai-dyskolo-vrady/"
+        "https://www.efsyn.gr/politiki/1439981/sto-myalo-tis-neas-dimokratias-oi-31-logoi-poy-apomakrynoyn-tis-proores-ekloges/",
+        "https://www.efsyn.gr/ellada/1440231/live-mahi-me-tis-floges-se-veniza-psatha-kai-fokida-pyrkagia-kai-mparaz-ekkenoseon-stin-kefalonia/"
       ],
-      "seen_at_utc": "2026-08-01T20:51:35.110387+00:00"
+      "seen_at_utc": "2026-08-02T05:17:04.400428+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/sta-limania-i-ellada-stazei-kai-anastenazei/",
-      "title": "Στα λιμάνια η Ελλάδα… στάζει και αναστενάζει",
-      "normalized_title": "ΣΤΑ ΛΙΜΑΝΙΑ Η ΕΛΛΑΔΑ… ΣΤΑΖΕΙ ΚΑΙ ΑΝΑΣΤΕΝΑΖΕΙ",
+      "url": "https://www.in.gr/2026/08/02/greece/kairos-voriades-eos-7-mpofor-kai-37aria-tin-kyriaki-anodos-tis-thermokrasias-ti-deytera/",
+      "title": "Βοριάδες έως 7 μποφόρ και 37άρια την Κυριακή - Άνοδος της θερμοκρασίας τη Δευτέρα",
+      "normalized_title": "ΒΟΡΙΑΔΕΣ ΕΩΣ 7 ΜΠΟΦΟΡ ΚΑΙ 37ΑΡΙΑ ΤΗΝ ΚΥΡΙΑΚΗ - ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΤΗ ΔΕΥΤΕΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/sta-limania-i-ellada-stazei-kai-anastenazei/",
-        "https://www.in.gr/2026/08/02/greece/nikos-xardalias-sti-maxi-otan-epixeiroume-den-milame/"
+        "https://www.in.gr/2026/08/02/greece/kairos-voriades-eos-7-mpofor-kai-37aria-tin-kyriaki-anodos-tis-thermokrasias-ti-deytera/",
+        "https://www.in.gr/2026/08/02/go-fun/fizz/linta-mpler-ereyna-ton-arxon-sto-katafygio-zoon-tis-meta-apo-kataggelia-gia-perissoterous-apo-100-skylous/",
+        "https://www.in.gr/2026/08/02/plus/vita/notifications-ayti-i-mastigma-oi-synexeis-eidopoiiseis-kourazoun-ton-egkefalo/",
+        "https://www.in.gr/2026/08/02/world/ntelsi-rontrigkes-i-pisti-symmaxos-tou-madouro-plireksousios-tou-tramp-pou-den-viazetai-gia-ekloges/",
+        "https://www.in.gr/2026/08/02/economy/diethnis-oikonomia/to-kazino-tis-mousikis/",
+        "https://www.in.gr/2026/08/02/economy/alaloum-kai-me-ti-meriki-apasxolisi-20-deixnei-o-efka-5-i-elstat/",
+        "https://www.in.gr/2026/08/02/world/new-york-times-epitelous-giati-anexomaste-ton-ratsismo-tou-ilon-mask/",
+        "https://www.in.gr/2026/08/02/life/culture-live/o-ntani-ntevito-ithele-apegnosmena-na-synergastei-me-ton-tarantino/",
+        "https://www.in.gr/2026/08/02/politics/politiki-grammateia/kyvernisi-speydei-na-kleisei-sti-ntoulapa-ti-rythmisi-tis-gia-ta-omofyla-ypo-ton-ixo-ton-pyron-samara/",
+        "https://www.in.gr/2026/08/02/economy/oikonomikes-eidiseis/i-apografi-akiniton-ksekina-apo-ta-xorafia/",
+        "https://www.in.gr/2026/08/02/life/geysi/syntagi-raspberry-splash/"
       ],
-      "seen_at_utc": "2026-08-02T04:17:31.437722+00:00"
+      "seen_at_utc": "2026-08-02T05:17:04.400403+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T04:51:30.385990+00:00"
+  "updated_at_utc": "2026-08-02T05:17:04.400559+00:00"
 }
