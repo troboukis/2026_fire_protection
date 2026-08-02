@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380431/koyva-choris-reyma-pente-eparchies-tis-choras/",
-      "title": "Κούβα: Χωρίς ρεύμα πέντε επαρχίες της χώρας",
-      "normalized_title": "ΚΟΥΒΑ: ΧΩΡΙΣ ΡΕΥΜΑ ΠΕΝΤΕ ΕΠΑΡΧΙΕΣ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.kathimerini.gr/society/564380458/synechizetai-i-machi-me-tis-floges-stin-aigialeia-veltiomeni-i-eikona/",
+      "title": "Συνεχίζεται η μάχη με τις φλόγες στην Αιγιάλεια – Βελτιωμένη η εικόνα",
+      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΤΗΝ ΑΙΓΙΑΛΕΙΑ – ΒΕΛΤΙΩΜΕΝΗ Η ΕΙΚΟΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380431/koyva-choris-reyma-pente-eparchies-tis-choras/"
+        "https://www.kathimerini.gr/society/564380458/synechizetai-i-machi-me-tis-floges-stin-aigialeia-veltiomeni-i-eikona/",
+        "https://www.kathimerini.gr/society/564380455/kefalonia-mainetai-i-megali-fotia-stin-periochi-pastra-sikothikan-ta-enaeria-mesa/",
+        "https://www.kathimerini.gr/society/564380449/pyrkagies-dyo-syllipseis-gia-ti-megali-fotia-sti-voiotia/"
       ],
-      "seen_at_utc": "2026-08-02T05:29:59.591711+00:00"
+      "seen_at_utc": "2026-08-02T05:51:56.016363+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859318/duo-sullipseis-gia-ti-megali-fotia-sti-voiotia-pou-eftase-eos-tin-attiki/?utm_source=rss",
-      "title": "Δύο συλλήψεις για τη μεγάλη φωτιά στη Βοιωτία, τους εντόπισαν μέσω βίντεο",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΗ ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ, ΤΟΥΣ ΕΝΤΟΠΙΣΑΝ ΜΕΣΩ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1859330/kameres-pano-apo-60000-ta-htupimata-vrohi-ilektronikon-kliseon-stin-attiki/?utm_source=rss",
+      "title": "Κάμερες: Πάνω από 60.000 τα... χτυπήματα - Βροχή ηλεκτρονικών κλήσεων στην Αττική",
+      "normalized_title": "ΚΑΜΕΡΕΣ: ΠΑΝΩ ΑΠΟ 60.000 ΤΑ... ΧΤΥΠΗΜΑΤΑ - ΒΡΟΧΗ ΗΛΕΚΤΡΟΝΙΚΩΝ ΚΛΗΣΕΩΝ ΣΤΗΝ ΑΤΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859318/duo-sullipseis-gia-ti-megali-fotia-sti-voiotia-pou-eftase-eos-tin-attiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859317/anoigei-o-dromos-gia-monimes-proslipseis-stous-dimotikous-paidikous-stathmous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859330/kameres-pano-apo-60000-ta-htupimata-vrohi-ilektronikon-kliseon-stin-attiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859321/vouchers-gia-paidikous-vrefonipiakous-stathmous-kai-kdap-2026-2027-poioi-einai-oi-dikaiouhoi-kai-mehri-pote-oi-aitiseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T05:29:59.591849+00:00"
+      "seen_at_utc": "2026-08-02T05:51:56.016574+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/podcast/anagoges-koyventes-o-hristoforos-zaralikos-mas-milaei-gia-ton-gio-toy/",
-      "title": "Ανάγωγες Κουβέντες: Ο Χριστόφορος Ζαραλίκος μας μιλάει για τον… γιό του",
-      "normalized_title": "ΑΝΑΓΩΓΕΣ ΚΟΥΒΕΝΤΕΣ: Ο ΧΡΙΣΤΟΦΟΡΟΣ ΖΑΡΑΛΙΚΟΣ ΜΑΣ ΜΙΛΑΕΙ ΓΙΑ ΤΟΝ… ΓΙΟ ΤΟΥ",
+      "url": "https://www.efsyn.gr/nisides/1439542/xenofon-kontiadis-stin-ef-syn-to-systima-timorei-toys-oneiropoloys/",
+      "title": "Ξενοφών Κοντιάδης στην «Εφ.Συν.»: «Το σύστημα τιμωρεί τους ονειροπόλους»",
+      "normalized_title": "ΞΕΝΟΦΩΝ ΚΟΝΤΙΑΔΗΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «ΤΟ ΣΥΣΤΗΜΑ ΤΙΜΩΡΕΙ ΤΟΥΣ ΟΝΕΙΡΟΠΟΛΟΥΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/podcast/anagoges-koyventes-o-hristoforos-zaralikos-mas-milaei-gia-ton-gio-toy/",
-        "https://www.efsyn.gr/ellada/1440240/eortologio-simantiki-kyriaki-gia-tin-ekklisia-poioi-giortazoyn-simera-2-aygoystoy/",
-        "https://www.efsyn.gr/ellada/1440237/exasthenei-oi-anemoi-stin-attiki-sta-8-mpofor-sto-aigaio/"
+        "https://www.efsyn.gr/nisides/1439542/xenofon-kontiadis-stin-ef-syn-to-systima-timorei-toys-oneiropoloys/",
+        "https://www.efsyn.gr/oikonomia/1439992/kyriaki-mahairi-ston-logariasmo-tis-tavernas-ayxanetai-o-toyrismos-meionetai-i-katanalosi-stin-estiasi/"
       ],
-      "seen_at_utc": "2026-08-02T05:29:59.591815+00:00"
+      "seen_at_utc": "2026-08-02T05:51:56.016546+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/greece/pyrkagies-pyrinos-efialtis-se-attiki-voiotia-kai-fokida-neo-metopo-stin-kefalonia-ekkenoseis-oikismon/",
-      "title": "Πύρινος εφιάλτης σε Αττική, Βοιωτία και Φωκίδα, νέο μέτωπο στην Κεφαλονιά - Εκκενώσεις οικισμών",
-      "normalized_title": "ΠΥΡΙΝΟΣ ΕΦΙΑΛΤΗΣ ΣΕ ΑΤΤΙΚΗ, ΒΟΙΩΤΙΑ ΚΑΙ ΦΩΚΙΔΑ, ΝΕΟ ΜΕΤΩΠΟ ΣΤΗΝ ΚΕΦΑΛΟΝΙΑ - ΕΚΚΕΝΩΣΕΙΣ ΟΙΚΙΣΜΩΝ",
+      "url": "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-simera-se-treis-perioxes/",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς σήμερα σε τρεις περιοχές",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΕ ΤΡΕΙΣ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/greece/pyrkagies-pyrinos-efialtis-se-attiki-voiotia-kai-fokida-neo-metopo-stin-kefalonia-ekkenoseis-oikismon/",
-        "https://www.in.gr/2026/08/02/plus/vita/i-sosti-diatrofi-gia-enan-kalo-ypno/",
-        "https://www.in.gr/2026/08/02/sports/basketball/i-xapoel-tel-aviv-anakoinose-proin-paikti-tou-ionikou-nikaias/"
+        "https://www.in.gr/2026/08/02/greece/poly-ypsilos-kindynos-pyrkagias-simera-se-treis-perioxes/",
+        "https://www.in.gr/2026/08/02/greece/dyo-syllipseis-gia-ti-megali-fotia-pou-ekdilothike-sti-voiotia-kai-epektathike-stin-attiki/",
+        "https://www.in.gr/2026/08/02/life/music/rempetiko-o-giorgos-ntalaras-mas-taksideyei-stin-pio-zontani-ekfrasi-tis-ellinikis-psyxis/",
+        "https://www.in.gr/2026/08/02/sports/football/panathinaikos-eksetazei-ton-tsaleta-tsar-ta-dedomena-gia-ton-islando-stoper/",
+        "https://www.in.gr/2026/08/02/world/meta-tis-apeiles-o-tramp-akyrose-neous-vomvardismous-sto-iran/",
+        "https://www.in.gr/2026/08/02/go-fun/fizz/mprouklin-mpekam-diakopes-me-ton-nono-tou-elton-tzon-eno-synexizetai-i-riksi-me-tin-oikogeneia-tou/"
       ],
-      "seen_at_utc": "2026-08-02T05:29:59.591776+00:00"
+      "seen_at_utc": "2026-08-02T05:51:56.016465+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T05:29:59.591931+00:00"
+  "updated_at_utc": "2026-08-02T05:51:56.016648+00:00"
 }
