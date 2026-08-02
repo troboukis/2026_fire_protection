@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564380464/kina-25-nekroi-apo-plimmyra-sto-voreiodytiko-tmima-tis-choras/",
-      "title": "Κίνα: 25 νεκροί από πλημμύρα στο βορειοδυτικό τμήμα της χώρας",
-      "normalized_title": "ΚΙΝΑ: 25 ΝΕΚΡΟΙ ΑΠΟ ΠΛΗΜΜΥΡΑ ΣΤΟ ΒΟΡΕΙΟΔΥΤΙΚΟ ΤΜΗΜΑ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.kathimerini.gr/istoria/564378106/90-chronia-prin-2-8-1936/",
+      "title": "90 Χρόνια πριν… 2-8-1936",
+      "normalized_title": "90 ΧΡΟΝΙΑ ΠΡΙΝ… 2-8-1936",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564380464/kina-25-nekroi-apo-plimmyra-sto-voreiodytiko-tmima-tis-choras/"
+        "https://www.kathimerini.gr/istoria/564378106/90-chronia-prin-2-8-1936/",
+        "https://www.kathimerini.gr/society/564380470/maziki-exodos-ton-adeioychon-pano-apo-61-000-epivates-anachorisan-apo-ta-limania-tis-attikis/",
+        "https://www.kathimerini.gr/opinion/interviews/564377545/ti-leo-se-osoys-theloyn-na-mathoyn-ellinika-meta-tin-odysseia-toy-nolan/"
       ],
-      "seen_at_utc": "2026-08-02T06:51:23.657840+00:00"
+      "seen_at_utc": "2026-08-02T07:17:33.869682+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859359/nees-tautotites-telos-hronou-gia-taxidia-sto-exoteriko-apo-tis-3-augoustou/?utm_source=rss",
-      "title": "Νέες ταυτότητες: Τέλος χρόνου για ταξίδια στο εξωτερικό από τις 3 Αυγούστου, τι αλλάζει",
-      "normalized_title": "ΝΕΕΣ ΤΑΥΤΟΤΗΤΕΣ: ΤΕΛΟΣ ΧΡΟΝΟΥ ΓΙΑ ΤΑΞΙΔΙΑ ΣΤΟ ΕΞΩΤΕΡΙΚΟ ΑΠΟ ΤΙΣ 3 ΑΥΓΟΥΣΤΟΥ, ΤΙ ΑΛΛΑΖΕΙ",
+      "url": "https://www.protothema.gr/greece/article/1859368/koimithikan-exo-apo-to-at-toubas-sti-thessaloniki-gia-na-ekdosoun-diavatirio-me-tin-palaia-tupou-tautotita/?utm_source=rss",
+      "title": "Κοιμήθηκαν έξω από το Α.Τ. Τούμπας στη Θεσσαλονίκη για να εκδώσουν διαβατήριο με την παλαιά τύπου ταυτότητα, δείτε βίντεο",
+      "normalized_title": "ΚΟΙΜΗΘΗΚΑΝ ΕΞΩ ΑΠΟ ΤΟ Α.Τ. ΤΟΥΜΠΑΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΓΙΑ ΝΑ ΕΚΔΩΣΟΥΝ ΔΙΑΒΑΤΗΡΙΟ ΜΕ ΤΗΝ ΠΑΛΑΙΑ ΤΥΠΟΥ ΤΑΥΤΟΤΗΤΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859359/nees-tautotites-telos-hronou-gia-taxidia-sto-exoteriko-apo-tis-3-augoustou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859368/koimithikan-exo-apo-to-at-toubas-sti-thessaloniki-gia-na-ekdosoun-diavatirio-me-tin-palaia-tupou-tautotita/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T06:51:23.657989+00:00"
+      "seen_at_utc": "2026-08-02T07:17:33.869777+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1440263/to-maroko-vaftise-tramp-aytokinitodromo-sti-dytiki-sahara/",
-      "title": "Το Μαρόκο βάφτισε Τραμπ αυτοκινητόδρομο στη Δυτική Σαχάρα",
-      "normalized_title": "ΤΟ ΜΑΡΟΚΟ ΒΑΦΤΙΣΕ ΤΡΑΜΠ ΑΥΤΟΚΙΝΗΤΟΔΡΟΜΟ ΣΤΗ ΔΥΤΙΚΗ ΣΑΧΑΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1440268/katedafizontai-aythaireta-dimotika-sfageia-sti-mytilini-gia-tin-anadeixi-toy-arhaioy-limanioy/",
+      "title": "Κατεδαφίζονται αυθαίρετα δημοτικά σφαγεία στη Μυτιλήνη για την ανάδειξη του αρχαίου λιμανιού",
+      "normalized_title": "ΚΑΤΕΔΑΦΙΖΟΝΤΑΙ ΑΥΘΑΙΡΕΤΑ ΔΗΜΟΤΙΚΑ ΣΦΑΓΕΙΑ ΣΤΗ ΜΥΤΙΛΗΝΗ ΓΙΑ ΤΗΝ ΑΝΑΔΕΙΞΗ ΤΟΥ ΑΡΧΑΙΟΥ ΛΙΜΑΝΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1440263/to-maroko-vaftise-tramp-aytokinitodromo-sti-dytiki-sahara/",
-        "https://www.efsyn.gr/ellada/1440260/maziki-exodos-adeioyhon-aygoystoy-pano-apo-61-000-epivates-anahorisan-apo-ta-limania-tis-attikis/",
-        "https://www.efsyn.gr/aytokinito/1439584/changan-deepal-s05-ultra-hybrid-258ps-me-entyposiaki-aytonomia/"
+        "https://www.efsyn.gr/ellada/1440268/katedafizontai-aythaireta-dimotika-sfageia-sti-mytilini-gia-tin-anadeixi-toy-arhaioy-limanioy/"
       ],
-      "seen_at_utc": "2026-08-02T06:51:23.657962+00:00"
+      "seen_at_utc": "2026-08-02T07:17:33.869748+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/uncategorized/ipa-pano-apo-ena-ekatommyrio-stremmata-stis-floges-stin-politeia-ouasingkton-ektetamenes-ekkenoseis/",
-      "title": "Πάνω από ένα εκατομμύριο στρέμματα στις φλόγες στην πολιτεία Ουάσινγκτον - Εκτεταμένες εκκενώσεις",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ ΕΝΑ ΕΚΑΤΟΜΜΥΡΙΟ ΣΤΡΕΜΜΑΤΑ ΣΤΙΣ ΦΛΟΓΕΣ ΣΤΗΝ ΠΟΛΙΤΕΙΑ ΟΥΑΣΙΝΓΚΤΟΝ - ΕΚΤΕΤΑΜΕΝΕΣ ΕΚΚΕΝΩΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/02/greece/fthiotida-synagermos-gia-fotia-ston-kyparissona-pelasgias/",
+      "title": "Φθιώτιδα: Συναγερμός για φωτιά στον Κυπαρισσώνα Πελασγίας",
+      "normalized_title": "ΦΘΙΩΤΙΔΑ: ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΦΩΤΙΑ ΣΤΟΝ ΚΥΠΑΡΙΣΣΩΝΑ ΠΕΛΑΣΓΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/uncategorized/ipa-pano-apo-ena-ekatommyrio-stremmata-stis-floges-stin-politeia-ouasingkton-ektetamenes-ekkenoseis/",
-        "https://www.in.gr/2026/08/02/stories/kapote-i-moda-skotone-kyriolektika-oi-eksi-pio-epikindynes-taseis-tis-istorias/"
+        "https://www.in.gr/2026/08/02/greece/fthiotida-synagermos-gia-fotia-ston-kyparissona-pelasgias/",
+        "https://www.in.gr/2026/08/02/sports/football/i-sokaristiki-tomi-sto-kalami-tou-pineda-apo-to-antiathlitiko-markarisma-antipalou-vidpic/",
+        "https://www.in.gr/2026/08/02/world/giati-to-bunkering-vrisketai-sto-epikentro-tis-antiparathesis-me-to-maroko/",
+        "https://www.in.gr/2026/08/02/inview/intalks/sofia-filippidou-to-ergo-mou-den-einai-mia-parastasi-einai-ena-ergo-zois/",
+        "https://www.in.gr/2026/08/02/pet-stories/o-skylos-antidra-otan-milate-sto-tilefono-ti-thelei-na-sas-pei/",
+        "https://www.in.gr/2026/08/02/greece/giannaros-sto-in-gia-porto-germeno-kai-vilia-ayti-itan-i-proti-mega-pyrkagia-tou-fetinou-kalokairiou/",
+        "https://www.in.gr/2026/08/02/greece/fotia-sti-dytiki-attiki-dekades-nees-energes-esties-to-proi-tis-kyriakis-ti-apokalyptoun-oi-doryforoi/"
       ],
-      "seen_at_utc": "2026-08-02T06:51:23.657893+00:00"
+      "seen_at_utc": "2026-08-02T07:17:33.869721+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T06:51:23.658058+00:00"
+  "updated_at_utc": "2026-08-02T07:17:33.869858+00:00"
 }
