@@ -3026,20 +3026,6 @@ USING (true);
 
 GRANT SELECT ON public.news_fires TO anon, authenticated, service_role;
 
-DO $$
-BEGIN
-  IF EXISTS (SELECT 1 FROM pg_publication WHERE pubname = 'supabase_realtime')
-     AND NOT EXISTS (
-       SELECT 1
-       FROM pg_publication_tables
-       WHERE pubname = 'supabase_realtime'
-         AND schemaname = 'public'
-         AND tablename = 'news_fires'
-     ) THEN
-    ALTER PUBLICATION supabase_realtime ADD TABLE public.news_fires;
-  END IF;
-END $$;
-
 ALTER TABLE public.current_fires
   ADD COLUMN IF NOT EXISTS lat NUMERIC(9, 6),
   ADD COLUMN IF NOT EXISTS lon NUMERIC(9, 6),
@@ -3862,12 +3848,39 @@ GRANT EXECUTE ON FUNCTION public.sync_current_fire_coordinates_from_firms()
 TO service_role;
 
 -- -------------------------------------------------------------
--- T) Force PostgREST to reload schema cache
+-- T) Disable Supabase Realtime database publications
+-- -------------------------------------------------------------
+DO $disable_supabase_realtime$
+DECLARE
+  published_table record;
+BEGIN
+  IF EXISTS (
+    SELECT 1
+    FROM pg_publication
+    WHERE pubname = 'supabase_realtime'
+  ) THEN
+    FOR published_table IN
+      SELECT schemaname, tablename
+      FROM pg_publication_tables
+      WHERE pubname = 'supabase_realtime'
+    LOOP
+      EXECUTE format(
+        'ALTER PUBLICATION supabase_realtime DROP TABLE %I.%I',
+        published_table.schemaname,
+        published_table.tablename
+      );
+    END LOOP;
+  END IF;
+END
+$disable_supabase_realtime$;
+
+-- -------------------------------------------------------------
+-- U) Force PostgREST to reload schema cache
 -- -------------------------------------------------------------
 NOTIFY pgrst, 'reload schema';
 
 -- -------------------------------------------------------------
--- U) Quick verification (run after setup)
+-- V) Quick verification (run after setup)
 -- -------------------------------------------------------------
 -- 1) Check RPC functions exist
 -- select p.proname, pg_get_function_arguments(p.oid) as args

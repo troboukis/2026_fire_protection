@@ -415,19 +415,8 @@ export default function FireNowTicker() {
 
     load()
 
-    const channel = supabase
-      .channel('current_fires_ticker')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
-        if (!cancelled) load()
-      })
-      .on('postgres_changes', { event: '*', schema: 'public', table: '112_notice' }, () => {
-        if (!cancelled) load()
-      })
-      .subscribe()
-
     return () => {
       cancelled = true
-      supabase.removeChannel(channel)
     }
   }, [])
 

@@ -6,7 +6,6 @@ import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/cu
 import { isAbortError } from '../lib/isAbortError'
 import { CURRENT_FIRE_HOVER_EVENT, type CurrentFireHoverDetail } from '../lib/currentFireHover'
 import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
-import { logError } from '../lib/logger'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
@@ -707,51 +706,6 @@ export default function SituationMap() {
       controller.abort()
     }
   }, [defaultStart, today])
-
-  useEffect(() => {
-    let cancelled = false
-    let refreshTimer: number | null = null
-
-    const refreshCurrentFires = async () => {
-      const { data, error } = await currentFiresQuery()
-      if (cancelled) return
-      if (error) {
-        if (import.meta.env.DEV) logError('Failed to refresh current fires for situation map', error)
-        return
-      }
-      const nextActiveFires = mapCurrentFireRows((data ?? []) as CurrentFireRow[])
-      setActiveFires(nextActiveFires)
-      setHoveredActiveFire((current) => {
-        if (!current) return current
-        return nextActiveFires.some((fire) => fire.id === current.item.id) ? current : null
-      })
-      setHighlightedActiveFireId((current) => {
-        if (!current) return current
-        return nextActiveFires.some((fire) => fire.id === current) ? current : null
-      })
-    }
-
-    const scheduleRefresh = () => {
-      if (cancelled || refreshTimer != null) return
-      refreshTimer = window.setTimeout(() => {
-        refreshTimer = null
-        void refreshCurrentFires()
-      }, 1000)
-    }
-
-    const channel = supabase
-      .channel('situation_map_current_fires')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
-        scheduleRefresh()
-      })
-      .subscribe()
-
-    return () => {
-      cancelled = true
-      if (refreshTimer != null) window.clearTimeout(refreshTimer)
-      supabase.removeChannel(channel)
-    }
-  }, [])
 
   useEffect(() => {
     if (hasLoadedHistoricalFires || rangeStartDay >= initialFetchStartDay) {

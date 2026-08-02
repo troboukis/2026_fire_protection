@@ -132,20 +132,9 @@ export default function NewsTicker() {
 
     load(true)
 
-    const channel = supabase
-      .channel('news_fires_ticker')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'news_fires' }, () => {
-        if (!cancelled) load(false)
-      })
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'current_fires' }, () => {
-        if (!cancelled) load(false)
-      })
-      .subscribe()
-
     return () => {
       cancelled = true
       controller.abort()
-      supabase.removeChannel(channel)
     }
   }, [])
 
