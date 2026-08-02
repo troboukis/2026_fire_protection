@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564378070/mia-kataigida-exethese-to-festival/",
-      "title": "Μία καταιγίδα εξέθεσε το Φεστιβάλ",
-      "normalized_title": "ΜΙΑ ΚΑΤΑΙΓΙΔΑ ΕΞΕΘΕΣΕ ΤΟ ΦΕΣΤΙΒΑΛ",
+      "url": "https://www.kathimerini.gr/world/564381013/nigiria-enoploi-skotosan-12-atoma-kai-apigagan-gynaikes-kai-paidia-apo-chorio/",
+      "title": "Νιγηρία : Ενοπλοι σκότωσαν 12 άτομα και απήγαγαν γυναίκες και παιδιά από χωριό",
+      "normalized_title": "ΝΙΓΗΡΙΑ : ΕΝΟΠΛΟΙ ΣΚΟΤΩΣΑΝ 12 ΑΤΟΜΑ ΚΑΙ ΑΠΗΓΑΓΑΝ ΓΥΝΑΙΚΕΣ ΚΑΙ ΠΑΙΔΙΑ ΑΠΟ ΧΩΡΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564378070/mia-kataigida-exethese-to-festival/"
+        "https://www.kathimerini.gr/world/564381013/nigiria-enoploi-skotosan-12-atoma-kai-apigagan-gynaikes-kai-paidia-apo-chorio/",
+        "https://www.kathimerini.gr/culture/564378100/nomoi-graptoi-kai-agrafoi/",
+        "https://www.kathimerini.gr/society/564381010/olympos-andras-entopistike-kai-diakomistike-choris-tis-aisthiseis-toy/",
+        "https://www.kathimerini.gr/culture/564378094/patisia-mia-toso-athinaiki-geitonia/"
       ],
-      "seen_at_utc": "2026-08-02T18:30:00.164514+00:00"
+      "seen_at_utc": "2026-08-02T18:51:19.014500+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859601/mahi-me-tis-floges-stin-attikovoiotia-nees-adipurikes-zones-me-ti-sundromi-stratou-kai-perifereias/?utm_source=rss",
-      "title": "Καρέ καρέ η επιχείρηση δημιουργίας αντιπυρικών ζωνών σε Κρύο Πηγάδι και Βίλια, δείτε βίντεο και φωτογραφίες",
-      "normalized_title": "ΚΑΡΕ ΚΑΡΕ Η ΕΠΙΧΕΙΡΗΣΗ ΔΗΜΙΟΥΡΓΙΑΣ ΑΝΤΙΠΥΡΙΚΩΝ ΖΩΝΩΝ ΣΕ ΚΡΥΟ ΠΗΓΑΔΙ ΚΑΙ ΒΙΛΙΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ ΚΑΙ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1859618/rafina-nekros-mesa-stin-kabina-tou-vrethike-o-uparhos-tou-superferry/?utm_source=rss",
+      "title": "Ραφήνα: Νεκρός μέσα στην καμπίνα του βρέθηκε ο ύπαρχος του «Superferry»",
+      "normalized_title": "ΡΑΦΗΝΑ: ΝΕΚΡΟΣ ΜΕΣΑ ΣΤΗΝ ΚΑΜΠΙΝΑ ΤΟΥ ΒΡΕΘΗΚΕ Ο ΥΠΑΡΧΟΣ ΤΟΥ «SUPERFERRY»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859601/mahi-me-tis-floges-stin-attikovoiotia-nees-adipurikes-zones-me-ti-sundromi-stratou-kai-perifereias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859618/rafina-nekros-mesa-stin-kabina-tou-vrethike-o-uparhos-tou-superferry/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859616/olubos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T17:51:24.642825+00:00"
+      "seen_at_utc": "2026-08-02T18:51:19.014614+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440487/mitsotakis-gia-ioanni-varvitsioti-sfragise-ohi-mono-ti-diadromi-tis-nd-alla-tin-idia-tin-exelixi-tis-metapoliteysis/",
-      "title": "Μητσοτάκης για Ιωάννη Βαρβιτσιώτη: «Σφράγισε όχι μόνο τη διαδρομή της ΝΔ, αλλά την ίδια την εξέλιξη της Μεταπολίτευσης»",
-      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΓΙΑ ΙΩΑΝΝΗ ΒΑΡΒΙΤΣΙΩΤΗ: «ΣΦΡΑΓΙΣΕ ΟΧΙ ΜΟΝΟ ΤΗ ΔΙΑΔΡΟΜΗ ΤΗΣ ΝΔ, ΑΛΛΑ ΤΗΝ ΙΔΙΑ ΤΗΝ ΕΞΕΛΙΞΗ ΤΗΣ ΜΕΤΑΠΟΛΙΤΕΥΣΗΣ»",
+      "url": "https://www.efsyn.gr/kosmos/1440351/data-poisoning-i-nea-mahi-tis-pagkosmias-propagandas/",
+      "title": "Data Poisoning: Η νέα μάχη της παγκόσμιας προπαγάνδας",
+      "normalized_title": "DATA POISONING: Η ΝΕΑ ΜΑΧΗ ΤΗΣ ΠΑΓΚΟΣΜΙΑΣ ΠΡΟΠΑΓΑΝΔΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440487/mitsotakis-gia-ioanni-varvitsioti-sfragise-ohi-mono-ti-diadromi-tis-nd-alla-tin-idia-tin-exelixi-tis-metapoliteysis/"
+        "https://www.efsyn.gr/kosmos/1440351/data-poisoning-i-nea-mahi-tis-pagkosmias-propagandas/",
+        "https://www.efsyn.gr/oikonomia/1440347/ti-kryvei-to-rekor-kerdon-ton-trapezon/"
       ],
-      "seen_at_utc": "2026-08-02T18:17:17.459687+00:00"
+      "seen_at_utc": "2026-08-02T18:51:19.014585+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/world/pakistan-vomvistiki-epithesi-aytoktonias-ekso-apo-astynomiko-tmima-toulaxiston-14-nekroi/",
-      "title": "Πακιστάν : Βομβιστική επίθεση αυτοκτονίας έξω από αστυνομικό τμήμα – Τουλάχιστον 14 νεκροί",
-      "normalized_title": "ΠΑΚΙΣΤΑΝ : ΒΟΜΒΙΣΤΙΚΗ ΕΠΙΘΕΣΗ ΑΥΤΟΚΤΟΝΙΑΣ ΕΞΩ ΑΠΟ ΑΣΤΥΝΟΜΙΚΟ ΤΜΗΜΑ – ΤΟΥΛΑΧΙΣΤΟΝ 14 ΝΕΚΡΟΙ",
+      "url": "https://www.in.gr/2026/08/02/greece/tragiki-eironeia-sta-vilia-ethelontis-esoze-spitia-eno-to-diko-tou-ginotan-staxti-vinteo/",
+      "title": "Τραγική ειρωνεία στα Βίλια: Εθελοντής έσωζε σπίτια ενώ το δικό του γινόταν στάχτη",
+      "normalized_title": "ΤΡΑΓΙΚΗ ΕΙΡΩΝΕΙΑ ΣΤΑ ΒΙΛΙΑ: ΕΘΕΛΟΝΤΗΣ ΕΣΩΖΕ ΣΠΙΤΙΑ ΕΝΩ ΤΟ ΔΙΚΟ ΤΟΥ ΓΙΝΟΤΑΝ ΣΤΑΧΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/world/pakistan-vomvistiki-epithesi-aytoktonias-ekso-apo-astynomiko-tmima-toulaxiston-14-nekroi/",
-        "https://www.in.gr/2026/08/02/sports/football/sto-stoxastro-tou-panathinaikou-o-livai-gkarsia/",
-        "https://www.in.gr/2026/08/02/politics/epikairotita/mitsotakis-o-ioannis-varvitsiotis-afise-piso-tou-mia-spania-parakatathiki-politikou-politismou/"
+        "https://www.in.gr/2026/08/02/greece/tragiki-eironeia-sta-vilia-ethelontis-esoze-spitia-eno-to-diko-tou-ginotan-staxti-vinteo/",
+        "https://www.in.gr/2026/08/02/go-fun/style/latreyo-ton-xitler-o-tzon-gkaliano-fernei-prooro-drama-sto-met-gala-2027/"
       ],
-      "seen_at_utc": "2026-08-02T18:30:00.164570+00:00"
+      "seen_at_utc": "2026-08-02T18:51:19.014550+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T18:30:00.164648+00:00"
+  "updated_at_utc": "2026-08-02T18:51:19.014692+00:00"
 }
