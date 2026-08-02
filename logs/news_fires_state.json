@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564379117/theoyta-exarsi-i-yvridiki-epithesi/",
-      "title": "Θέουτα: Εξαρση ή υβριδική επίθεση;",
-      "normalized_title": "ΘΕΟΥΤΑ: ΕΞΑΡΣΗ Η ΥΒΡΙΔΙΚΗ ΕΠΙΘΕΣΗ;",
+      "url": "https://www.kathimerini.gr/economy/international/564378772/anthektikes-oi-trapezes-sta-geopolitika-stress-test-tis-ekt/",
+      "title": "Ανθεκτικές οι τράπεζες στα γεωπολιτικά stress test της ΕΚΤ",
+      "normalized_title": "ΑΝΘΕΚΤΙΚΕΣ ΟΙ ΤΡΑΠΕΖΕΣ ΣΤΑ ΓΕΩΠΟΛΙΤΙΚΑ STRESS TEST ΤΗΣ ΕΚΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564379117/theoyta-exarsi-i-yvridiki-epithesi/"
+        "https://www.kathimerini.gr/economy/international/564378772/anthektikes-oi-trapezes-sta-geopolitika-stress-test-tis-ekt/",
+        "https://www.kathimerini.gr/world/564380542/seismos-5-9-richter-sti-nea-zilandia-2/",
+        "https://www.kathimerini.gr/life/environment/564378394/pamvotida-mas-lene-oti-tha-vroyme-tin-kyra-frosyni/",
+        "https://www.kathimerini.gr/world/564380533/indonisia-pente-nekroi-kai-41-agnooymenoi-apo-fotia-se-ploio/"
       ],
-      "seen_at_utc": "2026-08-02T09:30:05.662041+00:00"
+      "seen_at_utc": "2026-08-02T09:51:27.163688+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,23 +1271,26 @@
       "seen_at_utc": "2026-08-02T09:30:05.662151+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440305/dyo-fotografies-ena-kladi-elias-kai-i-elliniki-simaia-to-mnimeio-gia-toys-dyo-pyrosvestes-sto-rethymno/",
-      "title": "Δύο φωτογραφίες, ένα κλαδί ελιάς και η ελληνική σημαία: Το μνημείο για τους δύο πυροσβέστες στο Ρέθυμνο",
-      "normalized_title": "ΔΥΟ ΦΩΤΟΓΡΑΦΙΕΣ, ΕΝΑ ΚΛΑΔΙ ΕΛΙΑΣ ΚΑΙ Η ΕΛΛΗΝΙΚΗ ΣΗΜΑΙΑ: ΤΟ ΜΝΗΜΕΙΟ ΓΙΑ ΤΟΥΣ ΔΥΟ ΠΥΡΟΣΒΕΣΤΕΣ ΣΤΟ ΡΕΘΥΜΝΟ",
+      "url": "https://www.efsyn.gr/politiki/1440061/o-dimitris-avramopoylos-riskarei-na-fylakistei-an-paei-stis-vryxelles/",
+      "title": "Ο Δημήτρης Αβραμόπουλος ρισκάρει να φυλακιστεί αν πάει στις Βρυξέλλες",
+      "normalized_title": "Ο ΔΗΜΗΤΡΗΣ ΑΒΡΑΜΟΠΟΥΛΟΣ ΡΙΣΚΑΡΕΙ ΝΑ ΦΥΛΑΚΙΣΤΕΙ ΑΝ ΠΑΕΙ ΣΤΙΣ ΒΡΥΞΕΛΛΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440305/dyo-fotografies-ena-kladi-elias-kai-i-elliniki-simaia-to-mnimeio-gia-toys-dyo-pyrosvestes-sto-rethymno/"
+        "https://www.efsyn.gr/politiki/1440061/o-dimitris-avramopoylos-riskarei-na-fylakistei-an-paei-stis-vryxelles/",
+        "https://www.efsyn.gr/ellada/1440318/ampeli-kai-krasi-stin-kriti-ena-taxidi-sto-hrono/"
       ],
-      "seen_at_utc": "2026-08-02T09:30:05.662124+00:00"
+      "seen_at_utc": "2026-08-02T09:51:27.163806+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/politics/xoris-ixnos-aytokritikis-o-mitsotakis-gia-tis-pyrkagies-ta-rixnei-ola-sta-akraia-kairika-fainomena/",
-      "title": "Χωρίς ίχνος αυτοκριτικής ο Μητσοτάκης για τις πυρκαγιές – Τα ρίχνει όλα στα ακραία καιρικά φαινόμενα",
-      "normalized_title": "ΧΩΡΙΣ ΙΧΝΟΣ ΑΥΤΟΚΡΙΤΙΚΗΣ Ο ΜΗΤΣΟΤΑΚΗΣ ΓΙΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ – ΤΑ ΡΙΧΝΕΙ ΟΛΑ ΣΤΑ ΑΚΡΑΙΑ ΚΑΙΡΙΚΑ ΦΑΙΝΟΜΕΝΑ",
+      "url": "https://www.in.gr/2026/08/02/politics/tsoukalas-gia-pyrkagies-oi-protes-antiksoes-kairikes-synthikes-anedeiksan-ta-kena-tis-politikis-prostasias-pou-den-elyse-i-kyvernisi/",
+      "title": "Τσουκαλάς για πυρκαγιές: Οι πρώτες αντίξοες καιρικές συνθήκες ανέδειξαν τα κενά της πολιτικής προστασίας που δεν έλυσε η κυβέρνηση",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ: ΟΙ ΠΡΩΤΕΣ ΑΝΤΙΞΟΕΣ ΚΑΙΡΙΚΕΣ ΣΥΝΘΗΚΕΣ ΑΝΕΔΕΙΞΑΝ ΤΑ ΚΕΝΑ ΤΗΣ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ ΠΟΥ ΔΕΝ ΕΛΥΣΕ Η ΚΥΒΕΡΝΗΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/politics/xoris-ixnos-aytokritikis-o-mitsotakis-gia-tis-pyrkagies-ta-rixnei-ola-sta-akraia-kairika-fainomena/"
+        "https://www.in.gr/2026/08/02/politics/tsoukalas-gia-pyrkagies-oi-protes-antiksoes-kairikes-synthikes-anedeiksan-ta-kena-tis-politikis-prostasias-pou-den-elyse-i-kyvernisi/",
+        "https://www.in.gr/2026/08/02/sports/football/aris-foularei-gia-stoper/",
+        "https://www.in.gr/2026/08/02/greece/seismos-59-vathmon-rixter-eplikse-ti-nea-zilandia/"
       ],
-      "seen_at_utc": "2026-08-02T09:30:05.662096+00:00"
+      "seen_at_utc": "2026-08-02T09:51:27.163771+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T09:30:05.662220+00:00"
+  "updated_at_utc": "2026-08-02T09:51:27.163881+00:00"
 }
