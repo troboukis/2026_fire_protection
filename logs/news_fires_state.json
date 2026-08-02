@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564379420/to-stoichima-ton-tameion-epaggelmatikis-asfalisis/",
-      "title": "Το στοίχημα των Ταμείων Επαγγελματικής Ασφάλισης",
-      "normalized_title": "ΤΟ ΣΤΟΙΧΗΜΑ ΤΩΝ ΤΑΜΕΙΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
+      "url": "https://www.kathimerini.gr/culture/564381022/diimero-moysiko-festival-ston-panemorfo-agianni-arkadias/",
+      "title": "Διήμερο μουσικό φεστιβάλ στον πανέμορφο Αγιάννη Αρκαδίας",
+      "normalized_title": "ΔΙΗΜΕΡΟ ΜΟΥΣΙΚΟ ΦΕΣΤΙΒΑΛ ΣΤΟΝ ΠΑΝΕΜΟΡΦΟ ΑΓΙΑΝΝΗ ΑΡΚΑΔΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564379420/to-stoichima-ton-tameion-epaggelmatikis-asfalisis/"
+        "https://www.kathimerini.gr/culture/564381022/diimero-moysiko-festival-ston-panemorfo-agianni-arkadias/"
       ],
-      "seen_at_utc": "2026-08-02T19:51:17.005397+00:00"
+      "seen_at_utc": "2026-08-02T20:17:18.279860+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1259,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859624/tzoker-2826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
-      "title": "Τζόκερ 2/8/26: Τα αποτελέσματα της κλήρωσης - Τα νούμερα που κερδίζουν",
-      "normalized_title": "ΤΖΟΚΕΡ 2/8/26: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΗΣ ΚΛΗΡΩΣΗΣ - ΤΑ ΝΟΥΜΕΡΑ ΠΟΥ ΚΕΡΔΙΖΟΥΝ",
+      "url": "https://www.protothema.gr/greece/article/1859632/meteo-pano-apo-111000-stremmata-kamena-stis-dasikes-purkagies-se-voiotia-kai-attiki/?utm_source=rss",
+      "title": "Meteo: Πάνω από 111.000 στρέμματα καμένα στις πυρκαγιές σε Βοιωτία και Αττική",
+      "normalized_title": "METEO: ΠΑΝΩ ΑΠΟ 111.000 ΣΤΡΕΜΜΑΤΑ ΚΑΜΕΝΑ ΣΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΕ ΒΟΙΩΤΙΑ ΚΑΙ ΑΤΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859624/tzoker-2826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859621/purkagies-giati-i-ellada-den-hrisimopoiei-ta-rosika-purosvestika-aeroskafi-thiria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859632/meteo-pano-apo-111000-stremmata-kamena-stis-dasikes-purkagies-se-voiotia-kai-attiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T19:17:17.298910+00:00"
+      "seen_at_utc": "2026-08-02T20:17:18.280012+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440497/nd-gia-ioanni-varvitsioti-apo-tis-pio-emvlimatikes-morfes-tis-parataxis-kai-toy-dimosioy-vioy-tis-horas/",
-      "title": "ΝΔ για Ιωάννη Βαρβιτσιώτη: Από τις πιο εμβληματικές μορφές της παράταξης και του δημόσιου βίου της χώρας",
-      "normalized_title": "ΝΔ ΓΙΑ ΙΩΑΝΝΗ ΒΑΡΒΙΤΣΙΩΤΗ: ΑΠΟ ΤΙΣ ΠΙΟ ΕΜΒΛΗΜΑΤΙΚΕΣ ΜΟΡΦΕΣ ΤΗΣ ΠΑΡΑΤΑΞΗΣ ΚΑΙ ΤΟΥ ΔΗΜΟΣΙΟΥ ΒΙΟΥ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1440506/olympos-nekros-32hronos-poy-anasyrthike-apo-to-rema-orlia/",
+      "title": "Όλυμπος: Νεκρός 32χρονος που ανασύρθηκε από το ρέμα Ορλιά",
+      "normalized_title": "ΟΛΥΜΠΟΣ: ΝΕΚΡΟΣ 32ΧΡΟΝΟΣ ΠΟΥ ΑΝΑΣΥΡΘΗΚΕ ΑΠΟ ΤΟ ΡΕΜΑ ΟΡΛΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440497/nd-gia-ioanni-varvitsioti-apo-tis-pio-emvlimatikes-morfes-tis-parataxis-kai-toy-dimosioy-vioy-tis-horas/",
-        "https://www.efsyn.gr/politiki/1440495/aihmiri-apantisi-aygerinoy-se-karystianoy-gia-ti-diagrafi-toy-morainei-kyrios-%e1%bd%83n-voyletai-%e1%bc%80polesai/"
+        "https://www.efsyn.gr/ellada/1440506/olympos-nekros-32hronos-poy-anasyrthike-apo-to-rema-orlia/",
+        "https://www.efsyn.gr/ellada/1440502/sygkroysi-elikopteron-stin-psatha-to-hroniko-tis-tragodias-vathia-thlipsi-gia-toys-dyo-nekroys-vinteo/"
       ],
-      "seen_at_utc": "2026-08-02T19:17:17.298868+00:00"
+      "seen_at_utc": "2026-08-02T20:17:18.279973+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/02/world/mesanatoliko-ntomino-irak-kai-aigyptos-dieyrynoun-ton-polemo-ipa-iran/",
-      "title": "Μεσανατολικό ντόμινο: Iράκ και Αίγυπτος διευρύνουν τον πόλεμο ΗΠΑ-Ιράν",
-      "normalized_title": "ΜΕΣΑΝΑΤΟΛΙΚΟ ΝΤΟΜΙΝΟ: IΡΑΚ ΚΑΙ ΑΙΓΥΠΤΟΣ ΔΙΕΥΡΥΝΟΥΝ ΤΟΝ ΠΟΛΕΜΟ ΗΠΑ-ΙΡΑΝ",
+      "url": "https://www.in.gr/2026/08/02/sports/basketball/ellada-slovakia-78-60-ekpliktiki-emfanisi-i-ethniki-neanidon/",
+      "title": "Ελλάδα-Σλοβακία 78-60: Εκπληκτική εμφάνιση η Εθνική Νεανίδων",
+      "normalized_title": "ΕΛΛΑΔΑ-ΣΛΟΒΑΚΙΑ 78-60: ΕΚΠΛΗΚΤΙΚΗ ΕΜΦΑΝΙΣΗ Η ΕΘΝΙΚΗ ΝΕΑΝΙΔΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/02/world/mesanatoliko-ntomino-irak-kai-aigyptos-dieyrynoun-ton-polemo-ipa-iran/",
-        "https://www.in.gr/2026/08/02/sports/basketball/naitzel-xeiz-nteivis-perpatisa-pantou-ektos-apo-to-nero-vid/",
-        "https://www.in.gr/2026/08/02/politics/politiki-grammateia/aixmiro-minyma-aygerinou-meta-ti-diagrafi-apo-tin-karystianou-morainei-kyrios/",
-        "https://www.in.gr/2026/08/02/life/culture-live/o-50-cent-mas-dinei-mia-geysi-apo-ypokosmo-kai-pygmaxia-sto-fightland/",
-        "https://www.in.gr/2026/08/02/sports/football/oi-deka-omades-pou-plironoun-ypsiloterous-misthous-podosfairiston/"
+        "https://www.in.gr/2026/08/02/sports/basketball/ellada-slovakia-78-60-ekpliktiki-emfanisi-i-ethniki-neanidon/",
+        "https://www.in.gr/2026/08/02/world/aytos-itan-o-stoxos-tis-epithesis-sti-mosxa-traymatistike-i-kori-tou-ayksithikan-oi-nekroi/"
       ],
-      "seen_at_utc": "2026-08-02T19:51:17.005448+00:00"
+      "seen_at_utc": "2026-08-02T20:17:18.279932+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T19:51:17.005533+00:00"
+  "updated_at_utc": "2026-08-02T20:17:18.280130+00:00"
 }
