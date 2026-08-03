@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564381046/symi-pente-agnooymenoi-meta-tin-parasyrsi-istioploikoy/",
-      "title": "Σύμη: Πέντε αγνοούμενοι μετά την παράσυρση ιστιοπλοϊκού",
-      "normalized_title": "ΣΥΜΗ: ΠΕΝΤΕ ΑΓΝΟΟΥΜΕΝΟΙ ΜΕΤΑ ΤΗΝ ΠΑΡΑΣΥΡΣΗ ΙΣΤΙΟΠΛΟΙΚΟΥ",
+      "url": "https://www.kathimerini.gr/world/564381061/o-tramp-aniggeile-nees-diapragmateyseis-me-to-iran-apo-simera/",
+      "title": "Ο Τραμπ ανήγγειλε νέες διαπραγματεύσεις με το Ιράν από σήμερα",
+      "normalized_title": "Ο ΤΡΑΜΠ ΑΝΗΓΓΕΙΛΕ ΝΕΕΣ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΙΣ ΜΕ ΤΟ ΙΡΑΝ ΑΠΟ ΣΗΜΕΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564381046/symi-pente-agnooymenoi-meta-tin-parasyrsi-istioploikoy/",
-        "https://www.kathimerini.gr/eortologio/564376720/eortologio-poioi-giortazoyn-simera-3-aygoystoy/",
-        "https://www.kathimerini.gr/world/564381040/theoyta-to-maroko-apodidei-tin-eisvoli-metanaston-stin-parapliroforisi-kai-ta-diktya-emporias/"
+        "https://www.kathimerini.gr/world/564381061/o-tramp-aniggeile-nees-diapragmateyseis-me-to-iran-apo-simera/",
+        "https://www.kathimerini.gr/k/sunday-edition/564377842/ston-gastronomo-aygoystoy-echete-froyta-ftiaxte-glyko-tin-kyriaki-9-8-me-tin-kathimerini/",
+        "https://www.kathimerini.gr/k/sunday-edition/564377836/o-kolossos-tis-rodoy-o-deyteros-tomos-tis-seiras-disney-editor-s-choice-tin-kyriaki-9-8-me-tin-kathimerini/",
+        "https://www.kathimerini.gr/k/sunday-edition/564372985/to-mple-petradi-amp-alles-peripeteies-o-deyteros-tomos-apo-tis-klasikes-peripeteies-toy-thrylikoy-serlok-cholms-tin-kyriaki-9-8-me-tin-kathimerini/"
       ],
-      "seen_at_utc": "2026-08-02T21:17:09.330662+00:00"
+      "seen_at_utc": "2026-08-03T04:17:19.146123+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,32 +1262,64 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859643/sovaro-trohaio-me-agriogourouno-stin-euvoia-motosikletistis-traumatistike-kai-diakomistike-stin-athina/?utm_source=rss",
-      "title": "Σοβαρό τροχαίο με αγριογούρουνο στην Εύβοια: Μοτοσικλετιστής τραυματίστηκε και διακομίστηκε στην Αθήνα",
-      "normalized_title": "ΣΟΒΑΡΟ ΤΡΟΧΑΙΟ ΜΕ ΑΓΡΙΟΓΟΥΡΟΥΝΟ ΣΤΗΝ ΕΥΒΟΙΑ: ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΚΑΙ ΔΙΑΚΟΜΙΣΤΗΚΕ ΣΤΗΝ ΑΘΗΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1859671/mainetai-i-fotia-sti-dutiki-attiki-se-agio-nektario-kai-kandili-to-kurio-metopo-sti-mahi-7-enaeria-k/?utm_source=rss",
+      "title": "Μαίνεται η φωτιά στη Δυτική Αττική, στον οικισμό της Αγίας Σκέπης πέρασαν οι φλόγες, στη μάχη 7 εναέρια και πάνω από 450 πυροσβέστες",
+      "normalized_title": "ΜΑΙΝΕΤΑΙ Η ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ, ΣΤΟΝ ΟΙΚΙΣΜΟ ΤΗΣ ΑΓΙΑΣ ΣΚΕΠΗΣ ΠΕΡΑΣΑΝ ΟΙ ΦΛΟΓΕΣ, ΣΤΗ ΜΑΧΗ 7 ΕΝΑΕΡΙΑ ΚΑΙ ΠΑΝΩ ΑΠΟ 450 ΠΥΡΟΣΒΕΣΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859643/sovaro-trohaio-me-agriogourouno-stin-euvoia-motosikletistis-traumatistike-kai-diakomistike-stin-athina/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859671/mainetai-i-fotia-sti-dutiki-attiki-se-agio-nektario-kai-kandili-to-kurio-metopo-sti-mahi-7-enaeria-k/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859650/xekinoun-autopsies-se-exi-dimous-meta-tis-purkagies-suskepsi-katsafadou-sti-fokida-kai-ektakti-kuvernitiki-sunedriasi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-02T21:51:11.610360+00:00"
+      "seen_at_utc": "2026-08-03T04:17:19.146266+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440514/triti-nyhta-agonias-sti-dytiki-attiki-floges-poliorkoyn-kryo-pigadi-kai-agio-nektario-nees-ekkenoseis-vinteo/",
-      "title": "Τρίτη νύχτα αγωνίας στη Δυτική Αττική: Φλόγες πολιορκούν Κρύο Πηγάδι και Άγιο Νεκτάριο – Νέες εκκενώσεις [βίντεο]",
-      "normalized_title": "ΤΡΙΤΗ ΝΥΧΤΑ ΑΓΩΝΙΑΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΦΛΟΓΕΣ ΠΟΛΙΟΡΚΟΥΝ ΚΡΥΟ ΠΗΓΑΔΙ ΚΑΙ ΑΓΙΟ ΝΕΚΤΑΡΙΟ – ΝΕΕΣ ΕΚΚΕΝΩΣΕΙΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1440555/oyte-ihnos-aytokritikis/",
+      "title": "Ούτε ίχνος αυτοκριτικής",
+      "normalized_title": "ΟΥΤΕ ΙΧΝΟΣ ΑΥΤΟΚΡΙΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440514/triti-nyhta-agonias-sti-dytiki-attiki-floges-poliorkoyn-kryo-pigadi-kai-agio-nektario-nees-ekkenoseis-vinteo/"
+        "https://www.efsyn.gr/politiki/1440555/oyte-ihnos-aytokritikis/",
+        "https://www.efsyn.gr/ellada/1440523/sok-kai-deos-se-enan-efialti-horis-telos-pente-nekroi-sti-mahis-me-tis-floges-stahti-perissotera-apo-190-000-stremmata/",
+        "https://www.efsyn.gr/ellada/1440534/live-synehizetai-i-mahi-me-tis-floges-se-pollapla-metopa-antipyrikes-zones-kai-112-gia-ekkenosi-pros-nea-peramo/",
+        "https://www.efsyn.gr/protoselida/stahti-to-epiteliko-kratos/",
+        "https://www.efsyn.gr/nisides/1439595/ki-ego-ti-tha-eho/",
+        "https://www.efsyn.gr/nisides/1439607/odysseia-enas-iroas-exi-taxidia-kai-enas-aionas-kinimatografoy/",
+        "https://www.efsyn.gr/ellada/1440524/eortologio-poioi-giortazoyn-simera-3-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-02T21:17:09.330813+00:00"
+      "seen_at_utc": "2026-08-03T04:17:19.146209+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/world/theouta-pou-apodidei-to-maroko-tis-mazikes-dieleyseis-metanaston-pros-tous-ispanikous-thylakes/",
-      "title": "Τι λέει το Μαρόκο για τις μαζικές διελεύσεις μεταναστών στους ισπανικούς θύλακες",
-      "normalized_title": "ΤΙ ΛΕΕΙ ΤΟ ΜΑΡΟΚΟ ΓΙΑ ΤΙΣ ΜΑΖΙΚΕΣ ΔΙΕΛΕΥΣΕΙΣ ΜΕΤΑΝΑΣΤΩΝ ΣΤΟΥΣ ΙΣΠΑΝΙΚΟΥΣ ΘΥΛΑΚΕΣ",
+      "url": "https://www.in.gr/2026/08/03/greece/foties-olonyxtia-maxi-me-tis-floges-sti-dytiki-attiki-mparaz-112-ksekinisan-ripseis-ta-enaeria-mesa/",
+      "title": "Μάχη με τις φλόγες στη Δυτική Αττική - Κρίσιμα μέτωπα σε Άγιο Νεκτάριο Κανδήλι, ξεκίνησαν ρίψεις τα εναέρια μέσα",
+      "normalized_title": "ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ - ΚΡΙΣΙΜΑ ΜΕΤΩΠΑ ΣΕ ΑΓΙΟ ΝΕΚΤΑΡΙΟ ΚΑΝΔΗΛΙ, ΞΕΚΙΝΗΣΑΝ ΡΙΨΕΙΣ ΤΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/world/theouta-pou-apodidei-to-maroko-tis-mazikes-dieleyseis-metanaston-pros-tous-ispanikous-thylakes/"
+        "https://www.in.gr/2026/08/03/greece/foties-olonyxtia-maxi-me-tis-floges-sti-dytiki-attiki-mparaz-112-ksekinisan-ripseis-ta-enaeria-mesa/",
+        "https://www.in.gr/2026/08/03/greece/sygkrousi-elikopteron-stin-psatha-pos-ftasame-stin-tragodia-me-tous-dyo-nekrous/",
+        "https://www.in.gr/2026/08/03/politics/politiki-grammateia/mitsotakis-agonas-dromou-trexei-gia-diarroes-sta-deksia-komma-samara-kai-apoleies-sto-kentro/",
+        "https://www.in.gr/2026/08/03/life/geysi/syntagi-salata-me-kotopoulo-kai-pesto-2/",
+        "https://www.in.gr/2026/08/03/greece/se-portokali-synagermo-attiki-voiotia-kai-eyvoia-gia-ekdilosi-pyrkagias/",
+        "https://www.in.gr/2026/08/03/plus/vita/epta-trofes-pou-mas-xarizon-energeia/",
+        "https://www.in.gr/2026/08/03/greece/kairos-eksasthenisi-ton-anemon-eos-tous-37-vathmous-i-thermokrasia/",
+        "https://www.in.gr/2026/08/03/life/culture-live/o-maxersala-ali-rixnei-eytheies-voles-stin-marvel-gia-to-blade/",
+        "https://www.in.gr/2026/08/03/plus/vita/einai-to-online-flert-apistia/",
+        "https://www.in.gr/2026/08/03/economy/diethnis-oikonomia/katanalotes-otan-to-kinito-apofasizei-ti-tha-mpei-sto-kalathi/",
+        "https://www.in.gr/2026/08/03/life/culture-live/to-mouseio-guggenheim-tou-ampou-ntampi-anoigei-ton-dekemvrio-eikosi-xronia-kathysterisis-kai-diamartyries/",
+        "https://www.in.gr/2026/08/03/world/i-italia-vazei-eisitirio-stis-paralies/",
+        "https://www.in.gr/2026/08/03/world/krisi-sti-theouta-maga-kai-tel-aviv-ekdikountai-santseth-meso-marokou/",
+        "https://www.in.gr/2026/08/03/world/na-sikosei-ek-neou-kefali-epixeirei-i-akrodeksia-stin-eyropi-pos-prospathei-na-ekmetalleytei-ti-theouta/",
+        "https://www.in.gr/2026/08/03/interviews/tzeims-ker-lintsi-gia-kypriako-dyskolos-o-dromos-gia-mia-synoliki-dieythetisi/",
+        "https://www.in.gr/2026/08/03/greece/parnitha-oi-agrypnoi-fylakes-tou-attikou-vounou-mia-vardia-me-tous-ethelontes/",
+        "https://www.in.gr/2026/08/03/stories/lakis-xalkias-antio-ston-protomastora-tis-romiosynis-i-zoi-i-istoriki-diadromi-kai-i-spoudaia-parakatathiki-tou/",
+        "https://www.in.gr/2026/08/03/world/oukrania-i-alazoneia-tou-zelenski-den-synadei-me-ti-stratiotiki-pragmatikotita/",
+        "https://www.in.gr/2026/08/03/world/aigyptos-seismos-5-rixter-tarakounise-to-kairo-egine-aisthitos-kai-stin-aleksandreia/",
+        "https://www.in.gr/2026/08/03/world/argentini-vrazilia-o-milei-synexizei-na-xaraktirizei-klefti-kai-dieftharmeno-ton-loula/",
+        "https://www.in.gr/2026/08/03/greece/pyrkagia-stin-psatha-i-eyropi-penthei-me-tin-ellada-kai-ti-dania-grafei-i-fon-nter-laien/",
+        "https://www.in.gr/2026/08/03/politics/epikairotita/kypros-tourkika-drones-pano-apo-tin-antikatoxiki-ekdilosi-tou-dimou-ammoxostou/",
+        "https://www.in.gr/2026/08/03/world/stena-tou-ormouz-ekriksi-poly-konta-se-tanker-den-yparxoun-thymata/",
+        "https://www.in.gr/2026/08/03/economy/diethnis-oikonomia/petrelaio-ypoxoroun-oi-times-meta-ti-dilosi-tramp-gia-nees-diapragmateyseis-me-to-iran/",
+        "https://www.in.gr/2026/08/03/world/iran-o-tramp-anaggellei-nees-diapragmateyseis-apo-simera/",
+        "https://www.in.gr/2026/08/03/world/soudan-epliksan-me-drone-dikastirio-skotonontas-toulaxiston-35-anthropous/"
       ],
-      "seen_at_utc": "2026-08-02T22:51:14.271325+00:00"
+      "seen_at_utc": "2026-08-03T04:17:19.146185+00:00"
     }
   },
-  "updated_at_utc": "2026-08-02T22:51:14.271454+00:00"
+  "updated_at_utc": "2026-08-03T04:17:19.146349+00:00"
 }
