@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/istoria/564379276/diplomatiko-fiasko-protoy-megethoys/",
-      "title": "Διπλωματικό φιάσκο πρώτου μεγέθους",
-      "normalized_title": "ΔΙΠΛΩΜΑΤΙΚΟ ΦΙΑΣΚΟ ΠΡΩΤΟΥ ΜΕΓΕΘΟΥΣ",
+      "url": "https://www.kathimerini.gr/society/564381775/oi-katastrofes-poy-vlepoyn-na-prokalei-i-fotia-epireazoyn-toys-pilotoys/",
+      "title": "«Οι καταστροφές που βλέπουν να προκαλεί η φωτιά επηρεάζουν τους πιλότους»",
+      "normalized_title": "«ΟΙ ΚΑΤΑΣΤΡΟΦΕΣ ΠΟΥ ΒΛΕΠΟΥΝ ΝΑ ΠΡΟΚΑΛΕΙ Η ΦΩΤΙΑ ΕΠΗΡΕΑΖΟΥΝ ΤΟΥΣ ΠΙΛΟΤΟΥΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/istoria/564379276/diplomatiko-fiasko-protoy-megethoys/",
-        "https://www.kathimerini.gr/world/564381874/saoydaravika-dexamenoploia-ekanan-anastrofi-apo-ton-kolpo-toy-anten/"
+        "https://www.kathimerini.gr/society/564381775/oi-katastrofes-poy-vlepoyn-na-prokalei-i-fotia-epireazoyn-toys-pilotoys/",
+        "https://www.kathimerini.gr/society/564381937/diasoseis-zoon-mesa-sta-kamena-eikones/",
+        "https://www.kathimerini.gr/world/564381871/ft-xeperase-ta-3-dis-eyro-to-kostos-ton-fetinon-pyrkagion-stin-eyropi/"
       ],
-      "seen_at_utc": "2026-08-03T14:51:19.344469+00:00"
+      "seen_at_utc": "2026-08-03T15:17:50.895716+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860019/epiheirisi-diasosis-35-metanaston-notia-ton-kalon-limenon-stin-kriti/?utm_source=rss",
-      "title": "Επιχείρηση διάσωσης 35 μεταναστών νότια των Καλών Λιμένων στην Κρήτη",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ 35 ΜΕΤΑΝΑΣΤΩΝ ΝΟΤΙΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ ΣΤΗΝ ΚΡΗΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1860036/fotia-sto-tragano-ileias-kleisti-i-olubia-odos-sto-reuma-pros-purgo/?utm_source=rss",
+      "title": "Φωτιά στο Τραγανό Ηλείας: Κλειστή η Ολυμπία Οδός στο ρεύμα προς Πύργο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΤΡΑΓΑΝΟ ΗΛΕΙΑΣ: ΚΛΕΙΣΤΗ Η ΟΛΥΜΠΙΑ ΟΔΟΣ ΣΤΟ ΡΕΥΜΑ ΠΡΟΣ ΠΥΡΓΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860019/epiheirisi-diasosis-35-metanaston-notia-ton-kalon-limenon-stin-kriti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860010/suglonistikes-diasoseis-zoon-sta-purina-metopa-skulos-demenos-se-auli-kai-neogennita-gatakia-se-xulofourno/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860036/fotia-sto-tragano-ileias-kleisti-i-olubia-odos-sto-reuma-pros-purgo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T14:51:19.344599+00:00"
+      "seen_at_utc": "2026-08-03T15:17:50.895804+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441069/krisi-sti-theoyta-i-ispania-katigorei-emmesos-to-maroko-gia-ypothalpsi-ti-ektimoyn-oi-mystikes-ypiresies-tis-madritis/",
-      "title": "Κρίση στη Θέουτα: Η Μαδρίτη κατηγορεί εμμέσως το Μαρόκο για υπόθαλψη – Τι εκτιμούν οι ισπανικές μυστικές υπηρεσίες",
-      "normalized_title": "ΚΡΙΣΗ ΣΤΗ ΘΕΟΥΤΑ: Η ΜΑΔΡΙΤΗ ΚΑΤΗΓΟΡΕΙ ΕΜΜΕΣΩΣ ΤΟ ΜΑΡΟΚΟ ΓΙΑ ΥΠΟΘΑΛΨΗ – ΤΙ ΕΚΤΙΜΟΥΝ ΟΙ ΙΣΠΑΝΙΚΕΣ ΜΥΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ",
+      "url": "https://www.efsyn.gr/life/1441100/to-met-gala-toy-2027-tha-einai-afieromeno-ston-tzon-gkaliano/",
+      "title": "Το Met Gala του 2027 θα είναι αφιερωμένο στον Τζον Γκαλιάνο",
+      "normalized_title": "ΤΟ MET GALA ΤΟΥ 2027 ΘΑ ΕΙΝΑΙ ΑΦΙΕΡΩΜΕΝΟ ΣΤΟΝ ΤΖΟΝ ΓΚΑΛΙΑΝΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441069/krisi-sti-theoyta-i-ispania-katigorei-emmesos-to-maroko-gia-ypothalpsi-ti-ektimoyn-oi-mystikes-ypiresies-tis-madritis/"
+        "https://www.efsyn.gr/life/1441100/to-met-gala-toy-2027-tha-einai-afieromeno-ston-tzon-gkaliano/",
+        "https://www.efsyn.gr/oikonomia/1440844/ellines-ergazomenoi-simantiki-misthologiki-ysterisi-kai-i-pio-entoni-elleipsi-ergasiakon-dikaiomaton-stin-e-e/",
+        "https://www.efsyn.gr/life/1441093/etaireia-paragogis-zita-105-ekat-dolaria-apo-to-netflix-ehase-antigrafo-tainias-me-ton-nikolas-keitz/",
+        "https://www.efsyn.gr/athlitismos/1441092/mentilimpar-tin-eyropaiki-lista-tin-epilego-ego-kai-epelexa-toys-kalyteroys-gia-ayton-ton-gyro/",
+        "https://www.efsyn.gr/ellada/1441086/sygklonizei-o-pateras-toy-ellina-poy-skotothike-sti-sygkroysi-ton-dyo-elikopteron-tha-sas-kynigao-kai-apo-ton-tafo-moy/",
+        "https://www.efsyn.gr/media/1441081/poio-einai-to-didymo-poy-analamvanei-to-stoyntio-4-stin-ert/",
+        "https://www.efsyn.gr/ellada/1441082/pyrkagies-se-kokkino-synagermo-attiki-eyvoia-kai-hios-tin-triti/"
       ],
-      "seen_at_utc": "2026-08-03T14:51:19.344579+00:00"
+      "seen_at_utc": "2026-08-03T15:17:50.895783+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/life/culture-live/o-gounti-xarelson-kai-i-aksiothaymasti-anesi-stin-ermineia/",
-      "title": "Ο Γούντι Χάρελσον θα τιμηθεί στο Φεστιβάλ του Σαράγεβο - «Αξιοθαύμαστη άνεση στην ερμηνεία»",
-      "normalized_title": "Ο ΓΟΥΝΤΙ ΧΑΡΕΛΣΟΝ ΘΑ ΤΙΜΗΘΕΙ ΣΤΟ ΦΕΣΤΙΒΑΛ ΤΟΥ ΣΑΡΑΓΕΒΟ - «ΑΞΙΟΘΑΥΜΑΣΤΗ ΑΝΕΣΗ ΣΤΗΝ ΕΡΜΗΝΕΙΑ»",
+      "url": "https://www.in.gr/2026/08/03/greece/foties-se-tragano-kai-lampeia-arxaias-olympias-ekleise-i-ethniki-patron-pyrgou/",
+      "title": "Φωτιές σε Τραγανό και Λάμπεια Αρχαίας Ολυμπίας – Εκλεισε η Εθνική Πατρών-Πύργου",
+      "normalized_title": "ΦΩΤΙΕΣ ΣΕ ΤΡΑΓΑΝΟ ΚΑΙ ΛΑΜΠΕΙΑ ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ – ΕΚΛΕΙΣΕ Η ΕΘΝΙΚΗ ΠΑΤΡΩΝ-ΠΥΡΓΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/life/culture-live/o-gounti-xarelson-kai-i-aksiothaymasti-anesi-stin-ermineia/",
-        "https://www.in.gr/2026/08/03/in-science/perivallon-b-science/o-dounavis-sterepse-i-roumania-xrisimopoiise-ekriktika-gia-na-ektrepsei-nero-ston-pyriniko-stathmo-tis/",
-        "https://www.in.gr/2026/08/03/sports/football/proxeiroi-oi-kanonismoi-tis-epo-pics/"
+        "https://www.in.gr/2026/08/03/greece/foties-se-tragano-kai-lampeia-arxaias-olympias-ekleise-i-ethniki-patron-pyrgou/",
+        "https://www.in.gr/2026/08/03/politics/politiki-grammateia/dytiki-attiki-klimakio-tou-syriza-paredose-1-500-mpoukalia-nero-se-pyrosvestes-kai-ethelontes/",
+        "https://www.in.gr/2026/08/03/sports/football/karetsas-irtha-stin-ntortmount-gia-na-ekselixtho-kai-na-matho-polla-vid/",
+        "https://www.in.gr/2026/08/03/language-books/book/to-paramythi-tis-krisis-tis-arrenopotitas/",
+        "https://www.in.gr/2026/08/03/greece/tragodia-ston-olympo-o-32xronos-feretai-na-epathe-anakopi-otan-voutikse-sti-vathra/",
+        "https://www.in.gr/2026/08/03/economy/oikonomikes-eidiseis/pothen-esxes-anoikse-i-platforma-gia-tis-diloseis-oi-pagides/"
       ],
-      "seen_at_utc": "2026-08-03T14:51:19.344526+00:00"
+      "seen_at_utc": "2026-08-03T15:17:50.895759+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T14:51:19.344691+00:00"
+  "updated_at_utc": "2026-08-03T15:17:50.895876+00:00"
 }
