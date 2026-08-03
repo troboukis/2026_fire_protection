@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564378034/nikos-amanitis-sta-ichni-enos-anonymoy-apontos/",
-      "title": "Νίκος Αμανίτης: Στα ίχνη ενός ανώνυμου απόντος",
-      "normalized_title": "ΝΙΚΟΣ ΑΜΑΝΙΤΗΣ: ΣΤΑ ΙΧΝΗ ΕΝΟΣ ΑΝΩΝΥΜΟΥ ΑΠΟΝΤΟΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564376726/eortologio-poioi-giortazoyn-simera-4-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 4 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 4 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564378034/nikos-amanitis-sta-ichni-enos-anonymoy-apontos/",
-        "https://www.kathimerini.gr/society/564382249/voiotia-kai-d-attiki-ta-126-000-kamena-stremmata-kai-to-monopati-tis-fotias-toy-2009/",
-        "https://www.kathimerini.gr/economy/564379426/arthro-toy-gianni-stoyrnara-stin-k-i-eyropi-ton-diatarachon-kai-tis-eykairias/"
+        "https://www.kathimerini.gr/eortologio/564376726/eortologio-poioi-giortazoyn-simera-4-aygoystoy/",
+        "https://www.kathimerini.gr/society/564382165/96-ores-adiakopis-machis-sta-metopa-tis-attikis-kai-tis-voiotias/",
+        "https://www.kathimerini.gr/culture/564377932/o-ntavint-oykles-sti-voyli-ton-ellinon/"
       ],
-      "seen_at_utc": "2026-08-03T20:51:43.799954+00:00"
+      "seen_at_utc": "2026-08-03T21:17:17.411374+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1270,28 @@
       "seen_at_utc": "2026-08-03T20:51:43.800087+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441276/symvoylio-eirinis-toy-tramp-meta-ton-afoplismo-tis-hamas-o-israilinos-stratos-tha-apohorisei-apo-ti-gaza/",
-      "title": "«Συμβούλιο Ειρήνης» του Τραμπ: Μετά τον αφοπλισμό της Χαμάς, ο ισραηλινός στρατός θα αποχωρήσει από τη Γάζα",
-      "normalized_title": "«ΣΥΜΒΟΥΛΙΟ ΕΙΡΗΝΗΣ» ΤΟΥ ΤΡΑΜΠ: ΜΕΤΑ ΤΟΝ ΑΦΟΠΛΙΣΜΟ ΤΗΣ ΧΑΜΑΣ, Ο ΙΣΡΑΗΛΙΝΟΣ ΣΤΡΑΤΟΣ ΘΑ ΑΠΟΧΩΡΗΣΕΙ ΑΠΟ ΤΗ ΓΑΖΑ",
+      "url": "https://www.efsyn.gr/ellada/1441278/larisa-68hronos-pethane-eno-odigoyse-to-aytokinito-toy/",
+      "title": "Λάρισα: 68χρονος πέθανε ενώ οδηγούσε το αυτοκίνητό του",
+      "normalized_title": "ΛΑΡΙΣΑ: 68ΧΡΟΝΟΣ ΠΕΘΑΝΕ ΕΝΩ ΟΔΗΓΟΥΣΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441276/symvoylio-eirinis-toy-tramp-meta-ton-afoplismo-tis-hamas-o-israilinos-stratos-tha-apohorisei-apo-ti-gaza/"
+        "https://www.efsyn.gr/ellada/1441278/larisa-68hronos-pethane-eno-odigoyse-to-aytokinito-toy/"
       ],
-      "seen_at_utc": "2026-08-03T20:51:43.800056+00:00"
+      "seen_at_utc": "2026-08-03T21:17:17.411444+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/greece/xalkidiki-prosorina-akatallilo-pros-posi-to-nero-sti-siviri-dynitikoi-kindynoi-gia-tin-ygeia/",
-      "title": "Χαλκιδική: Προσωρινά ακατάλληλο προς πόση το νερό στη Σίβηρη – Δυνητικοί κίνδυνοι για την υγεία",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΠΡΟΣΩΡΙΝΑ ΑΚΑΤΑΛΛΗΛΟ ΠΡΟΣ ΠΟΣΗ ΤΟ ΝΕΡΟ ΣΤΗ ΣΙΒΗΡΗ – ΔΥΝΗΤΙΚΟΙ ΚΙΝΔΥΝΟΙ ΓΙΑ ΤΗΝ ΥΓΕΙΑ",
+      "url": "https://www.in.gr/2026/08/04/greece/nakso-xeiristis-skafous-exase-ton-elegxo-kai-kavalise-dyo-akomi-ploiaria/",
+      "title": "Νάξο: Χειριστής σκάφους έχασε τον έλεγχο και… καβάλησε δύο ακόμη πλοιάρια",
+      "normalized_title": "ΝΑΞΟ: ΧΕΙΡΙΣΤΗΣ ΣΚΑΦΟΥΣ ΕΧΑΣΕ ΤΟΝ ΕΛΕΓΧΟ ΚΑΙ… ΚΑΒΑΛΗΣΕ ΔΥΟ ΑΚΟΜΗ ΠΛΟΙΑΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/greece/xalkidiki-prosorina-akatallilo-pros-posi-to-nero-sti-siviri-dynitikoi-kindynoi-gia-tin-ygeia/",
-        "https://www.in.gr/2026/08/03/sports/football/megales-stigmes-o-karetsas-kerase-gyro-stous-filathlous-tis-ntortmount-pics-vid/",
-        "https://www.in.gr/2026/08/03/life/odysseia-o-kristofer-nolan-rixnei-to-ganti-stous-erasitexnes-kritikous-ton-social-media/"
+        "https://www.in.gr/2026/08/04/greece/nakso-xeiristis-skafous-exase-ton-elegxo-kai-kavalise-dyo-akomi-ploiaria/",
+        "https://www.in.gr/2026/08/04/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-triti-04-08-2026/",
+        "https://www.in.gr/2026/08/04/greece/giorti-simera-4-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/03/greece/attikovoiotia-perissotera-apo-130-000-stremmata-katastrafikan-apo-tis-pyrkagies/",
+        "https://www.in.gr/2026/08/03/sports/donis-an-vroume-ti-ximeia-mporoume-na-kataktisoume-titlous-me-ti-saoudiki-aravia/",
+        "https://www.in.gr/2026/08/03/greece/tragodia-sti-thesprotia-nekros-20xronos-xilianos-pou-ekane-pezoporia-apo-tin-alvania-stin-ellada/"
       ],
-      "seen_at_utc": "2026-08-03T20:51:43.800013+00:00"
+      "seen_at_utc": "2026-08-03T21:17:17.411428+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T20:51:43.800157+00:00"
+  "updated_at_utc": "2026-08-03T21:17:17.411508+00:00"
 }
