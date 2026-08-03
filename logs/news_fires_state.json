@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564381754/epidotiseis-eos-500-eyro-gia-ti-stirixi-ton-pyroplikton/",
-      "title": "Επιδότηση έως 500 ευρώ για τη στήριξη των πυρόπληκτων",
-      "normalized_title": "ΕΠΙΔΟΤΗΣΗ ΕΩΣ 500 ΕΥΡΩ ΓΙΑ ΤΗ ΣΤΗΡΙΞΗ ΤΩΝ ΠΥΡΟΠΛΗΚΤΩΝ",
+      "url": "https://www.kathimerini.gr/economy/564379375/oi-ayxiseis-misthon-den-vgazoyn-ton-plithorismo/",
+      "title": "Οι αυξήσεις μισθών δεν «βγάζουν» τον πληθωρισμό",
+      "normalized_title": "ΟΙ ΑΥΞΗΣΕΙΣ ΜΙΣΘΩΝ ΔΕΝ «ΒΓΑΖΟΥΝ» ΤΟΝ ΠΛΗΘΩΡΙΣΜΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564381754/epidotiseis-eos-500-eyro-gia-ti-stirixi-ton-pyroplikton/",
-        "https://www.kathimerini.gr/visual/podcasts/564381739/oi-prokliseis-toy-toyrismoy-sti-voreia-ellada/"
+        "https://www.kathimerini.gr/economy/564379375/oi-ayxiseis-misthon-den-vgazoyn-ton-plithorismo/",
+        "https://www.kathimerini.gr/society/564379192/oi-gkrizes-vizes-oi-plastografies-kai-i-exafanisi/",
+        "https://www.kathimerini.gr/athletics/564381490/o-koylierakis-to-panepistimio-tis-roma-kai-i-ethniki/",
+        "https://www.kathimerini.gr/society/564381781/fotia-stin-voiotia-ston-anakriti-tin-triti-oi-dyo-syllifthentes/",
+        "https://www.kathimerini.gr/athletics/564381784/conference-league-i-klirosi-ton-plei-of-pote-tha-diexachthoyn-oi-anametriseis/"
       ],
-      "seen_at_utc": "2026-08-03T13:30:07.375497+00:00"
+      "seen_at_utc": "2026-08-03T13:51:47.886721+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1263,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859960/elliniki-enosi-trapezon-metra-stirixis-gia-puropliktous-kai-tis-oikogeneies-ton-thumaton/?utm_source=rss",
-      "title": "Ελληνική Ένωση Τραπεζών: Μέτρα στήριξης για πυρόπληκτους και τις οικογένειες των θυμάτων",
-      "normalized_title": "ΕΛΛΗΝΙΚΗ ΕΝΩΣΗ ΤΡΑΠΕΖΩΝ: ΜΕΤΡΑ ΣΤΗΡΙΞΗΣ ΓΙΑ ΠΥΡΟΠΛΗΚΤΟΥΣ ΚΑΙ ΤΙΣ ΟΙΚΟΓΕΝΕΙΕΣ ΤΩΝ ΘΥΜΑΤΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1859979/trohaio-stin-l-mesogeion-sto-upsos-tou-holargou-dushereia-stin-kukloforia-ton-ohimaton/?utm_source=rss",
+      "title": "Τροχαίο στην Λ. Μεσογείων στο ύψος του Χολαργού, δυσχέρεια στην κυκλοφορία των οχημάτων",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗΝ Λ. ΜΕΣΟΓΕΙΩΝ ΣΤΟ ΥΨΟΣ ΤΟΥ ΧΟΛΑΡΓΟΥ, ΔΥΣΧΕΡΕΙΑ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ ΤΩΝ ΟΧΗΜΑΤΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859960/elliniki-enosi-trapezon-metra-stirixis-gia-puropliktous-kai-tis-oikogeneies-ton-thumaton/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859979/trohaio-stin-l-mesogeion-sto-upsos-tou-holargou-dushereia-stin-kukloforia-ton-ohimaton/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859966/vandalismoi-stin-anaplasmeni-odo-hilis-stin-kalamaria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T13:30:07.375648+00:00"
+      "seen_at_utc": "2026-08-03T13:51:47.886814+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441039/gaza-to-israil-epimenei-na-ekfrazei-anisyhies-gia-to-shedio-afoplismoy-tis-hamas/",
-      "title": "Γάζα: Το Ισραήλ επιμένει να εκφράζει ανησυχίες για το σχέδιο αφοπλισμού της Χαμάς –",
-      "normalized_title": "ΓΑΖΑ: ΤΟ ΙΣΡΑΗΛ ΕΠΙΜΕΝΕΙ ΝΑ ΕΚΦΡΑΖΕΙ ΑΝΗΣΥΧΙΕΣ ΓΙΑ ΤΟ ΣΧΕΔΙΟ ΑΦΟΠΛΙΣΜΟΥ ΤΗΣ ΧΑΜΑΣ –",
+      "url": "https://www.efsyn.gr/ellada/1441046/pyrkagia-sto-porto-germano-i-sygkinitiki-istoria-toy-mproyno-to-koytavi-poy-sothike-apo-ton-marko-vinteo/",
+      "title": "Πυρκαγιά στο Πόρτο Γερμανό: Η συγκινητική ιστορία του Μπρούνο – Το κουτάβι που σώθηκε από τον Μάρκο [βίντεο]",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΑΝΟ: Η ΣΥΓΚΙΝΗΤΙΚΗ ΙΣΤΟΡΙΑ ΤΟΥ ΜΠΡΟΥΝΟ – ΤΟ ΚΟΥΤΑΒΙ ΠΟΥ ΣΩΘΗΚΕ ΑΠΟ ΤΟΝ ΜΑΡΚΟ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441039/gaza-to-israil-epimenei-na-ekfrazei-anisyhies-gia-to-shedio-afoplismoy-tis-hamas/"
+        "https://www.efsyn.gr/ellada/1441046/pyrkagia-sto-porto-germano-i-sygkinitiki-istoria-toy-mproyno-to-koytavi-poy-sothike-apo-ton-marko-vinteo/",
+        "https://www.efsyn.gr/stiles/1441044/karavani-tis-elpidas-kai-theoyta/",
+        "https://www.efsyn.gr/kosmos/1441040/sokaristiko-vinteo-oykraniko-drone-kamikazi-epese-se-paralia-gemati-kosmo-stin-krimaia-toylahiston-6-nekroi/"
       ],
-      "seen_at_utc": "2026-08-03T13:30:07.375595+00:00"
+      "seen_at_utc": "2026-08-03T13:51:47.886791+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/sports/football/olympiakos-live-streaming-i-synenteyksi-typou-tou-mentilimpar-gia-to-mats-me-ti-naimegken/",
-      "title": "Ολυμπιακός: Live streaming η συνέντευξη Τύπου του Μεντιλίμπαρ για το ματς με τη Ναϊμέγκεν",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: LIVE STREAMING Η ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΤΟΥ ΜΕΝΤΙΛΙΜΠΑΡ ΓΙΑ ΤΟ ΜΑΤΣ ΜΕ ΤΗ ΝΑΙΜΕΓΚΕΝ",
+      "url": "https://www.in.gr/2026/08/03/greece/ksespa-o-pateras-tou-ellina-syntonisti-tou-elikopterou-pou-epese-stin-psatha/",
+      "title": "Ξεσπά ο πατέρας του Έλληνα συντονιστή του ελικοπτέρου που έπεσε στην Ψάθα",
+      "normalized_title": "ΞΕΣΠΑ Ο ΠΑΤΕΡΑΣ ΤΟΥ ΕΛΛΗΝΑ ΣΥΝΤΟΝΙΣΤΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΠΟΥ ΕΠΕΣΕ ΣΤΗΝ ΨΑΘΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/sports/football/olympiakos-live-streaming-i-synenteyksi-typou-tou-mentilimpar-gia-to-mats-me-ti-naimegken/",
-        "https://www.in.gr/2026/08/03/sports/football/to-sygkinitiko-antio-tis-gkenk-ston-karetsa-me-tis-koryfaies-stigmes-tou-vid/"
+        "https://www.in.gr/2026/08/03/greece/ksespa-o-pateras-tou-ellina-syntonisti-tou-elikopterou-pou-epese-stin-psatha/",
+        "https://www.in.gr/2026/08/03/go-fun/mipos-i-ariana-gkrante-einai-ena-teras-i-ergaleiopoiisi-tou-therapy-speak-kai-to-oxyro/",
+        "https://www.in.gr/2026/08/03/sports/football/mouzakitis-exoume-terastio-kinitro-theloume-na-eimaste-sto-champions-league/",
+        "https://www.in.gr/2026/08/03/economy/oikonomikes-eidiseis/pos-tha-mpoun-ta-kleista-spitia-sto-programma-anakainisi-katoikias/",
+        "https://www.in.gr/2026/08/03/world/oukrania-o-epikefalis-diapragmateytis-oumerof-tha-igithei-kai-ton-mystikon-ypiresion/",
+        "https://www.in.gr/2026/08/03/sports/on-field/o-panathinaikos-exei-anoixto-dromo-gia-ti-league-phase/"
       ],
-      "seen_at_utc": "2026-08-03T13:30:07.375548+00:00"
+      "seen_at_utc": "2026-08-03T13:51:47.886759+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T13:30:07.375720+00:00"
+  "updated_at_utc": "2026-08-03T13:51:47.886889+00:00"
 }
