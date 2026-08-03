@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564379441/forodoxies-gnorizete-oti-461/",
-      "title": "Φοροδοξίες: Γνωρίζετε ότι…",
-      "normalized_title": "ΦΟΡΟΔΟΞΙΕΣ: ΓΝΩΡΙΖΕΤΕ ΟΤΙ…",
+      "url": "https://www.kathimerini.gr/economy/564379459/elliniki-startup-epitheorei-anemogennitries-me-drones/",
+      "title": "Ελληνική startup επιθεωρεί ανεμογεννήτριες με drones",
+      "normalized_title": "ΕΛΛΗΝΙΚΗ STARTUP ΕΠΙΘΕΩΡΕΙ ΑΝΕΜΟΓΕΝΝΗΤΡΙΕΣ ΜΕ DRONES",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564379441/forodoxies-gnorizete-oti-461/",
-        "https://www.kathimerini.gr/world/564382156/o-zelenski-apepempse-me-diatagma-tin-oykranida-presvi-stis-ipa/",
-        "https://www.kathimerini.gr/society/astynomiko/564382153/apo-flogistro-kai-trocho-kopis-metallon-oi-dyo-pyrkagies-se-kifisia-kai-chalkidiki/",
-        "https://www.kathimerini.gr/world/564382126/eyropi-i-xirasia-voyliazei-tis-metafores-kai-kleinei-ergostasia/"
+        "https://www.kathimerini.gr/economy/564379459/elliniki-startup-epitheorei-anemogennitries-me-drones/",
+        "https://www.kathimerini.gr/culture/564379711/yposkaptontas-pepoithiseis-gia-ti-gnosi/",
+        "https://www.kathimerini.gr/economy/564379462/kerdizoyn-edafos-sta-trofima-ta-soyper-market/"
       ],
-      "seen_at_utc": "2026-08-03T18:51:33.816858+00:00"
+      "seen_at_utc": "2026-08-03T19:17:08.195857+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,38 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860140/tragodia-sti-larisa-68hronos-pethane-eno-odigouse-den-boresan-na-ton-epanaferoun-oi-diasostes/?utm_source=rss",
-      "title": "Τραγωδία στη Λάρισα: 68χρονος πέθανε ενώ οδηγούσε, δεν μπόρεσαν να τον επαναφέρουν οι διασώστες",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΑΡΙΣΑ: 68ΧΡΟΝΟΣ ΠΕΘΑΝΕ ΕΝΩ ΟΔΗΓΟΥΣΕ, ΔΕΝ ΜΠΟΡΕΣΑΝ ΝΑ ΤΟΝ ΕΠΑΝΑΦΕΡΟΥΝ ΟΙ ΔΙΑΣΩΣΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1860151/akatallilo-pros-posi-to-nero-sti-siviri-tis-halkidikis-anihneutikan-mikroviologikes-parametroi/?utm_source=rss",
+      "title": "Ακατάλληλο προς πόση το νερό στη Σίβηρη της Χαλκιδικής, ανιχνεύτηκαν μικροβιολογικές παράμετροι",
+      "normalized_title": "ΑΚΑΤΑΛΛΗΛΟ ΠΡΟΣ ΠΟΣΗ ΤΟ ΝΕΡΟ ΣΤΗ ΣΙΒΗΡΗ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ, ΑΝΙΧΝΕΥΤΗΚΑΝ ΜΙΚΡΟΒΙΟΛΟΓΙΚΕΣ ΠΑΡΑΜΕΤΡΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860140/tragodia-sti-larisa-68hronos-pethane-eno-odigouse-den-boresan-na-ton-epanaferoun-oi-diasostes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860151/akatallilo-pros-posi-to-nero-sti-siviri-tis-halkidikis-anihneutikan-mikroviologikes-parametroi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860145/stigmes-panikou-sti-naxo-heiristis-skafous-evale-bros-kai-paresure-duo-akomi-ploiaria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T18:51:33.817000+00:00"
+      "seen_at_utc": "2026-08-03T19:17:08.195961+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1441186/aek-kleinei-ton-vitalis-symfonia-me-tin-gkior-kai-tetraetes-symvolaio-ston-oyggro-meso/",
-      "title": "ΑΕΚ: «Κλείνει» τον Βιτάλις – Συμφωνία με την Γκιόρ και τετραετές συμβόλαιο στον Ούγγρο μέσο",
-      "normalized_title": "ΑΕΚ: «ΚΛΕΙΝΕΙ» ΤΟΝ ΒΙΤΑΛΙΣ – ΣΥΜΦΩΝΙΑ ΜΕ ΤΗΝ ΓΚΙΟΡ ΚΑΙ ΤΕΤΡΑΕΤΕΣ ΣΥΜΒΟΛΑΙΟ ΣΤΟΝ ΟΥΓΓΡΟ ΜΕΣΟ",
+      "url": "https://www.efsyn.gr/oikonomia/1440979/ti-valame-sto-kalathi-toy-soyper-market-to-proto-examino-ta-apolytos-anagkaia-agorazoyn-oi-katanalotes/",
+      "title": "Τι βάλαμε στο καλάθι του σούπερ μάρκετ το πρώτο εξάμηνο – Τα… απολύτως αναγκαία αγοράζουν οι καταναλωτές",
+      "normalized_title": "ΤΙ ΒΑΛΑΜΕ ΣΤΟ ΚΑΛΑΘΙ ΤΟΥ ΣΟΥΠΕΡ ΜΑΡΚΕΤ ΤΟ ΠΡΩΤΟ ΕΞΑΜΗΝΟ – ΤΑ… ΑΠΟΛΥΤΩΣ ΑΝΑΓΚΑΙΑ ΑΓΟΡΑΖΟΥΝ ΟΙ ΚΑΤΑΝΑΛΩΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1441186/aek-kleinei-ton-vitalis-symfonia-me-tin-gkior-kai-tetraetes-symvolaio-ston-oyggro-meso/",
-        "https://www.efsyn.gr/athlitismos/1441182/ypothesi-infantino-sti-fifa-tesseris-omospondies-toy-gyrisan-tin-plati-psahnei-sanida-sotirias-ston-tramp/",
-        "https://www.efsyn.gr/ellada/1441185/halkidiki-akatallilo-pros-posi-to-nero-sti-siviri-anihneytikan-mikroviologikes-parametroi/",
-        "https://www.efsyn.gr/kosmos/1441187/o-zelenski-elpizei-pos-oi-pieseis-pros-ti-mosha-tha-feroyn-tin-eirini-to-fthinoporo/"
+        "https://www.efsyn.gr/oikonomia/1440979/ti-valame-sto-kalathi-toy-soyper-market-to-proto-examino-ta-apolytos-anagkaia-agorazoyn-oi-katanalotes/",
+        "https://www.efsyn.gr/ellada/1441196/den-yparhoyn-logia-aneipoti-i-katastrofi-apo-tis-pyrkagies-sto-porto-germeno-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-08-03T18:51:33.816960+00:00"
+      "seen_at_utc": "2026-08-03T19:17:08.195939+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/sports/on-field/lanoua-den-ksero-pote-tha-parthei-apofasi-gia-ellines-diaitites-sta-ntermpi/",
-      "title": "Λανουά: «Δεν ξέρω πότε θα παρθεί απόφαση για Έλληνες διαιτητές στα ντέρμπι»",
-      "normalized_title": "ΛΑΝΟΥΑ: «ΔΕΝ ΞΕΡΩ ΠΟΤΕ ΘΑ ΠΑΡΘΕΙ ΑΠΟΦΑΣΗ ΓΙΑ ΕΛΛΗΝΕΣ ΔΙΑΙΤΗΤΕΣ ΣΤΑ ΝΤΕΡΜΠΙ»",
+      "url": "https://www.in.gr/2026/08/03/sports/football/proponitis-naimegken-aksizoume-na-eimaste-edo-ta-paidia-anypomonoun/",
+      "title": "Προπονητής Ναϊμέγκεν: «Αξίζουμε να είμαστε εδώ, τα παιδιά ανυπομονούν»",
+      "normalized_title": "ΠΡΟΠΟΝΗΤΗΣ ΝΑΙΜΕΓΚΕΝ: «ΑΞΙΖΟΥΜΕ ΝΑ ΕΙΜΑΣΤΕ ΕΔΩ, ΤΑ ΠΑΙΔΙΑ ΑΝΥΠΟΜΟΝΟΥΝ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/sports/on-field/lanoua-den-ksero-pote-tha-parthei-apofasi-gia-ellines-diaitites-sta-ntermpi/",
-        "https://www.in.gr/2026/08/03/go-fun/fizz/skot-istgount-o-saia-lampef-einai-trelos-evgale-to-donti-tou-travikse-maxairi-sotiras-o-mprant-pit/",
-        "https://www.in.gr/2026/08/03/world/ipa-repoumplikanos-vouleytis-katigoreitai-gia-endooikogeneiaki-via-epimenei-na-einai-ypopsifios-stis-ekloges/",
-        "https://www.in.gr/2026/08/03/sports/football/pote-tha-paiksei-o-olympiakos-sta-plei-of-tou-champions-league/"
+        "https://www.in.gr/2026/08/03/sports/football/proponitis-naimegken-aksizoume-na-eimaste-edo-ta-paidia-anypomonoun/",
+        "https://www.in.gr/2026/08/03/greece/proypologismos-2027-nea-senaria-logo-tis-krisis-sti-mesi-anatoli/",
+        "https://www.in.gr/2026/08/03/greece/i-teleytaia-fotografia-tou-danou-pilotou-prin-ti-moiraia-ptisi-stin-psatha-i-agapi-tou-gia-aeroporia/"
       ],
-      "seen_at_utc": "2026-08-03T18:51:33.816916+00:00"
+      "seen_at_utc": "2026-08-03T19:17:08.195909+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T18:51:33.817076+00:00"
+  "updated_at_utc": "2026-08-03T19:17:08.196026+00:00"
 }
