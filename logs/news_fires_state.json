@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564381631/agogi-kata-toy-netflix-gia-tin-apoleia-akykloforitis-tainias-me-ton-nikolas-keitz/",
-      "title": "Αγωγή κατά του Netflix για την απώλεια ακυκλοφόρητης ταινίας με τον Νίκολας Κέιτζ",
-      "normalized_title": "ΑΓΩΓΗ ΚΑΤΑ ΤΟΥ NETFLIX ΓΙΑ ΤΗΝ ΑΠΩΛΕΙΑ ΑΚΥΚΛΟΦΟΡΗΤΗΣ ΤΑΙΝΙΑΣ ΜΕ ΤΟΝ ΝΙΚΟΛΑΣ ΚΕΙΤΖ",
+      "url": "https://www.kathimerini.gr/k/k-magazine/564375970/urban-aygoystos-15-syntaktes-perigrafoyn-tin-idaniki-toys-mera-stin-poli/",
+      "title": "Urban Αύγουστος: 15 συντάκτες περιγράφουν την «ιδανική» τους μέρα στην πόλη",
+      "normalized_title": "URBAN ΑΥΓΟΥΣΤΟΣ: 15 ΣΥΝΤΑΚΤΕΣ ΠΕΡΙΓΡΑΦΟΥΝ ΤΗΝ «ΙΔΑΝΙΚΗ» ΤΟΥΣ ΜΕΡΑ ΣΤΗΝ ΠΟΛΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564381631/agogi-kata-toy-netflix-gia-tin-apoleia-akykloforitis-tainias-me-ton-nikolas-keitz/"
+        "https://www.kathimerini.gr/k/k-magazine/564375970/urban-aygoystos-15-syntaktes-perigrafoyn-tin-idaniki-toys-mera-stin-poli/",
+        "https://www.kathimerini.gr/world/564381661/fon-nter-laien-pros-santseth-prepei-na-ginoyn-perissotera-gia-tin-prostasia-ton-synoron/",
+        "https://www.kathimerini.gr/world/564381646/vretania-ereyna-se-varos-toy-deyteroy-stin-ierarchia-toy-kommatos-reform/",
+        "https://www.kathimerini.gr/society/564381643/thessaloniki-agnostoi-prokalesan-zimies-se-leoforeio-toy-dimoy-neapolis-sykeon/"
       ],
-      "seen_at_utc": "2026-08-03T11:30:09.846587+00:00"
+      "seen_at_utc": "2026-08-03T11:51:21.281094+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859896/proslamvanodai-171-neoi-odigoi-ston-oasth-anartithikan-oi-pinakes/?utm_source=rss",
-      "title": "Προσλαμβάνονται 171 νέοι οδηγοί στον ΟΑΣΘ, αναρτήθηκαν οι πίνακες",
-      "normalized_title": "ΠΡΟΣΛΑΜΒΑΝΟΝΤΑΙ 171 ΝΕΟΙ ΟΔΗΓΟΙ ΣΤΟΝ ΟΑΣΘ, ΑΝΑΡΤΗΘΗΚΑΝ ΟΙ ΠΙΝΑΚΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1859911/nekros-anasurthike-32hronos-apo-vathra-se-faraggi-ston-olubo/?utm_source=rss",
+      "title": "Νεκρός ανασύρθηκε 32χρονος από φαράγγι στον Όλυμπο",
+      "normalized_title": "ΝΕΚΡΟΣ ΑΝΑΣΥΡΘΗΚΕ 32ΧΡΟΝΟΣ ΑΠΟ ΦΑΡΑΓΓΙ ΣΤΟΝ ΟΛΥΜΠΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859896/proslamvanodai-171-neoi-odigoi-ston-oasth-anartithikan-oi-pinakes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859911/nekros-anasurthike-32hronos-apo-vathra-se-faraggi-ston-olubo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859903/aitiseis-gia-apozimioseis-puroplikton-epiheiriseon-ston-dimo-agiou-vasileiou-sto-rethumno-eos-1i-oktovriou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T11:30:09.846706+00:00"
+      "seen_at_utc": "2026-08-03T11:51:21.281202+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1440940/to-naoyroy-pleon-tha-legetai-naoero-giati-to-nisi-tis-haras-allaxe-onoma/",
-      "title": "Το Ναουρού πλέον θα λέγεται… Ναοέρο: Γιατί το «Νησί της Χαράς» άλλαξε όνομα",
-      "normalized_title": "ΤΟ ΝΑΟΥΡΟΥ ΠΛΕΟΝ ΘΑ ΛΕΓΕΤΑΙ… ΝΑΟΕΡΟ: ΓΙΑΤΙ ΤΟ «ΝΗΣΙ ΤΗΣ ΧΑΡΑΣ» ΑΛΛΑΞΕ ΟΝΟΜΑ",
+      "url": "https://www.efsyn.gr/kosmos/1440955/vomvistiki-epithesi-sto-kentro-tis-moshas-i-rosia-katigorei-tin-oykrania-gia-tromokratiki-energeia/",
+      "title": "Βομβιστική επίθεση στο κέντρο της Μόσχας: Η Ρωσία κατηγορεί την Ουκρανία για τρομοκρατική ενέργεια",
+      "normalized_title": "ΒΟΜΒΙΣΤΙΚΗ ΕΠΙΘΕΣΗ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΜΟΣΧΑΣ: Η ΡΩΣΙΑ ΚΑΤΗΓΟΡΕΙ ΤΗΝ ΟΥΚΡΑΝΙΑ ΓΙΑ ΤΡΟΜΟΚΡΑΤΙΚΗ ΕΝΕΡΓΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1440940/to-naoyroy-pleon-tha-legetai-naoero-giati-to-nisi-tis-haras-allaxe-onoma/",
-        "https://www.efsyn.gr/epistimi/1440941/amazonios-anakalyfthike-hamenos-politismos-3-ekat-anthropon-kato-apo-to-tropiko-dasos/"
+        "https://www.efsyn.gr/kosmos/1440955/vomvistiki-epithesi-sto-kentro-tis-moshas-i-rosia-katigorei-tin-oykrania-gia-tromokratiki-energeia/",
+        "https://www.efsyn.gr/athlitismos/1440939/europa-league-oi-antipaloi-paok-kai-ofi-sta-playoffs/",
+        "https://www.efsyn.gr/?p=1440933"
       ],
-      "seen_at_utc": "2026-08-03T11:30:09.846685+00:00"
+      "seen_at_utc": "2026-08-03T11:51:21.281186+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/sports/football/europa-league/o-paok-tha-paiksei-me-lefski-sofias-i-kairat-sta-play-offs-tou-europa-league-an-perasei-tin-anterlext/",
-      "title": "Ο ΠΑΟΚ θα παίξει με Λέφσκι Σόφιας ή Καϊράτ στα play offs του Europa League, αν περάσει την Άντερλεχτ",
-      "normalized_title": "Ο ΠΑΟΚ ΘΑ ΠΑΙΞΕΙ ΜΕ ΛΕΦΣΚΙ ΣΟΦΙΑΣ Η ΚΑΙΡΑΤ ΣΤΑ PLAY OFFS ΤΟΥ EUROPA LEAGUE, ΑΝ ΠΕΡΑΣΕΙ ΤΗΝ ΑΝΤΕΡΛΕΧΤ",
+      "url": "https://www.in.gr/2026/08/03/greece/o-dimarxos-stylidas-enas-apo-tous-dyo-syllifthentes-gia-ti-fotia-sti-voiotia/",
+      "title": "Ο δήμαρχος Στυλίδας ένας από τους δύο συλληφθέντες για τη φωτιά στη Βοιωτιά",
+      "normalized_title": "Ο ΔΗΜΑΡΧΟΣ ΣΤΥΛΙΔΑΣ ΕΝΑΣ ΑΠΟ ΤΟΥΣ ΔΥΟ ΣΥΛΛΗΦΘΕΝΤΕΣ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/sports/football/europa-league/o-paok-tha-paiksei-me-lefski-sofias-i-kairat-sta-play-offs-tou-europa-league-an-perasei-tin-anterlext/"
+        "https://www.in.gr/2026/08/03/greece/o-dimarxos-stylidas-enas-apo-tous-dyo-syllifthentes-gia-ti-fotia-sti-voiotia/",
+        "https://www.in.gr/2026/08/03/go-fun/music-stage/kelly-kelekidou-parousiazei-ti-diaskeyi-tou-glyka-glyka-me-ena-ekriktiko-music-video/",
+        "https://www.in.gr/2026/08/03/sports/football/i-ntortmount-anakoinose-ti-spoudaia-metagrafi-tou-karetsa-to-apithano-vinteo-apo-to-gyradiko/",
+        "https://www.in.gr/2026/08/03/politics/epikairotita/elas-gia-laki-xalkia-stivaros-ermineytis-stathike-panta-sti-sosti-pleyra-tis-istorias/",
+        "https://www.in.gr/2026/08/03/sports/football/europa-league/o-ofi-kontra-se-makampi-tel-aviv-i-tsska-sofias-sta-play-offs-tou-europa-league/",
+        "https://www.in.gr/2026/08/03/in-science/aposyretai-to-amfilegomeno-sxedio-gia-to-proto-ektrofeio-xtapodion/"
       ],
-      "seen_at_utc": "2026-08-03T11:30:09.846644+00:00"
+      "seen_at_utc": "2026-08-03T11:51:21.281148+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T11:30:09.846778+00:00"
+  "updated_at_utc": "2026-08-03T11:51:21.281277+00:00"
 }
