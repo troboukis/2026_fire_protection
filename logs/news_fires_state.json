@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564382147/ipa-repoymplikanos-voyleytis-katigoreitai-gia-endooikogeneiaki-via/",
-      "title": "ΗΠΑ: Ρεπουμπλικάνος βουλευτής κατηγορείται για ενδοοικογενειακή βία",
-      "normalized_title": "ΗΠΑ: ΡΕΠΟΥΜΠΛΙΚΑΝΟΣ ΒΟΥΛΕΥΤΗΣ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΒΙΑ",
+      "url": "https://www.kathimerini.gr/economy/564379441/forodoxies-gnorizete-oti-461/",
+      "title": "Φοροδοξίες: Γνωρίζετε ότι…",
+      "normalized_title": "ΦΟΡΟΔΟΞΙΕΣ: ΓΝΩΡΙΖΕΤΕ ΟΤΙ…",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564382147/ipa-repoymplikanos-voyleytis-katigoreitai-gia-endooikogeneiaki-via/",
-        "https://www.kathimerini.gr/k/k-magazine/564376027/ta-mystika-ton-80aridon-rok-star-poy-ta-dinoyn-ola-sti-skini/"
+        "https://www.kathimerini.gr/economy/564379441/forodoxies-gnorizete-oti-461/",
+        "https://www.kathimerini.gr/world/564382156/o-zelenski-apepempse-me-diatagma-tin-oykranida-presvi-stis-ipa/",
+        "https://www.kathimerini.gr/society/astynomiko/564382153/apo-flogistro-kai-trocho-kopis-metallon-oi-dyo-pyrkagies-se-kifisia-kai-chalkidiki/",
+        "https://www.kathimerini.gr/world/564382126/eyropi-i-xirasia-voyliazei-tis-metafores-kai-kleinei-ergostasia/"
       ],
-      "seen_at_utc": "2026-08-03T18:30:08.588680+00:00"
+      "seen_at_utc": "2026-08-03T18:51:33.816858+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1262,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860133/fotia-se-apothiki-ston-votaniko-kukloforiakes-ruthmiseis-stin-periohi/?utm_source=rss",
-      "title": "Φωτιά σε αποθήκη στον Βοτανικό, κυκλοφοριακές ρυθμίσεις στην Αγίας Άννης",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΠΟΘΗΚΗ ΣΤΟΝ ΒΟΤΑΝΙΚΟ, ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗΝ ΑΓΙΑΣ ΑΝΝΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1860140/tragodia-sti-larisa-68hronos-pethane-eno-odigouse-den-boresan-na-ton-epanaferoun-oi-diasostes/?utm_source=rss",
+      "title": "Τραγωδία στη Λάρισα: 68χρονος πέθανε ενώ οδηγούσε, δεν μπόρεσαν να τον επαναφέρουν οι διασώστες",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΑΡΙΣΑ: 68ΧΡΟΝΟΣ ΠΕΘΑΝΕ ΕΝΩ ΟΔΗΓΟΥΣΕ, ΔΕΝ ΜΠΟΡΕΣΑΝ ΝΑ ΤΟΝ ΕΠΑΝΑΦΕΡΟΥΝ ΟΙ ΔΙΑΣΩΣΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860133/fotia-se-apothiki-ston-votaniko-kukloforiakes-ruthmiseis-stin-periohi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860140/tragodia-sti-larisa-68hronos-pethane-eno-odigouse-den-boresan-na-ton-epanaferoun-oi-diasostes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T18:30:08.588770+00:00"
+      "seen_at_utc": "2026-08-03T18:51:33.817000+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441168/i-istoria-toy-danoy-pilotoy-poy-pethane-stin-pyrkagia-sta-psatha-i-agapi-toy-gia-tin-aeroporia-kai-i-teleytaia-fotografia/",
-      "title": "Η ιστορία του Δανού πιλότου που πέθανε στην πυρκαγιά στα Ψάθα: Η αγάπη του για την αεροπορία και η τελευταία φωτογραφία",
-      "normalized_title": "Η ΙΣΤΟΡΙΑ ΤΟΥ ΔΑΝΟΥ ΠΙΛΟΤΟΥ ΠΟΥ ΠΕΘΑΝΕ ΣΤΗΝ ΠΥΡΚΑΓΙΑ ΣΤΑ ΨΑΘΑ: Η ΑΓΑΠΗ ΤΟΥ ΓΙΑ ΤΗΝ ΑΕΡΟΠΟΡΙΑ ΚΑΙ Η ΤΕΛΕΥΤΑΙΑ ΦΩΤΟΓΡΑΦΙΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1441186/aek-kleinei-ton-vitalis-symfonia-me-tin-gkior-kai-tetraetes-symvolaio-ston-oyggro-meso/",
+      "title": "ΑΕΚ: «Κλείνει» τον Βιτάλις – Συμφωνία με την Γκιόρ και τετραετές συμβόλαιο στον Ούγγρο μέσο",
+      "normalized_title": "ΑΕΚ: «ΚΛΕΙΝΕΙ» ΤΟΝ ΒΙΤΑΛΙΣ – ΣΥΜΦΩΝΙΑ ΜΕ ΤΗΝ ΓΚΙΟΡ ΚΑΙ ΤΕΤΡΑΕΤΕΣ ΣΥΜΒΟΛΑΙΟ ΣΤΟΝ ΟΥΓΓΡΟ ΜΕΣΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441168/i-istoria-toy-danoy-pilotoy-poy-pethane-stin-pyrkagia-sta-psatha-i-agapi-toy-gia-tin-aeroporia-kai-i-teleytaia-fotografia/",
-        "https://www.efsyn.gr/ellada/1441176/psatha-sygklonizei-o-giatros-poy-eftase-protos-meta-ti-sygkroysi-ton-elikopteron-itan-katastrofi/",
-        "https://www.efsyn.gr/life/1441172/o-ithopoios-tasos-halkias-sta-ereipia-toy-kamenoy-spitioy-toy-sto-porto-germeno-vinteo/",
-        "https://www.efsyn.gr/kosmos/1441167/repoymplikanos-voyleytis-katigoreitai-gia-endooikogeneiaki-via-den-aposyrei-tin-ypopsifiotita-toy/",
-        "https://www.efsyn.gr/ellada/1440826/ypothesi-tis-ekpaideytikoy-hrysas-hotzogloy-515-imeres-makria-apo-tin-taxi-kai-toys-mathites-tis/",
-        "https://www.efsyn.gr/tehnes/1440889/troades-apo-to-ethniko-erixan-kai-to-teihos-tis-periorismenis-prosvasis/"
+        "https://www.efsyn.gr/athlitismos/1441186/aek-kleinei-ton-vitalis-symfonia-me-tin-gkior-kai-tetraetes-symvolaio-ston-oyggro-meso/",
+        "https://www.efsyn.gr/athlitismos/1441182/ypothesi-infantino-sti-fifa-tesseris-omospondies-toy-gyrisan-tin-plati-psahnei-sanida-sotirias-ston-tramp/",
+        "https://www.efsyn.gr/ellada/1441185/halkidiki-akatallilo-pros-posi-to-nero-sti-siviri-anihneytikan-mikroviologikes-parametroi/",
+        "https://www.efsyn.gr/kosmos/1441187/o-zelenski-elpizei-pos-oi-pieseis-pros-ti-mosha-tha-feroyn-tin-eirini-to-fthinoporo/"
       ],
-      "seen_at_utc": "2026-08-03T18:17:39.341661+00:00"
+      "seen_at_utc": "2026-08-03T18:51:33.816960+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/sports/football/ayti-einai-i-apostoli-tou-olympiakou-gia-to-mats-me-ti-naimegken-pic/",
-      "title": "Αυτή είναι η αποστολή του Ολυμπιακού για το ματς με τη Ναϊμέγκεν (pic)",
-      "normalized_title": "ΑΥΤΗ ΕΙΝΑΙ Η ΑΠΟΣΤΟΛΗ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΓΙΑ ΤΟ ΜΑΤΣ ΜΕ ΤΗ ΝΑΙΜΕΓΚΕΝ (PIC)",
+      "url": "https://www.in.gr/2026/08/03/sports/on-field/lanoua-den-ksero-pote-tha-parthei-apofasi-gia-ellines-diaitites-sta-ntermpi/",
+      "title": "Λανουά: «Δεν ξέρω πότε θα παρθεί απόφαση για Έλληνες διαιτητές στα ντέρμπι»",
+      "normalized_title": "ΛΑΝΟΥΑ: «ΔΕΝ ΞΕΡΩ ΠΟΤΕ ΘΑ ΠΑΡΘΕΙ ΑΠΟΦΑΣΗ ΓΙΑ ΕΛΛΗΝΕΣ ΔΙΑΙΤΗΤΕΣ ΣΤΑ ΝΤΕΡΜΠΙ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/sports/football/ayti-einai-i-apostoli-tou-olympiakou-gia-to-mats-me-ti-naimegken-pic/"
+        "https://www.in.gr/2026/08/03/sports/on-field/lanoua-den-ksero-pote-tha-parthei-apofasi-gia-ellines-diaitites-sta-ntermpi/",
+        "https://www.in.gr/2026/08/03/go-fun/fizz/skot-istgount-o-saia-lampef-einai-trelos-evgale-to-donti-tou-travikse-maxairi-sotiras-o-mprant-pit/",
+        "https://www.in.gr/2026/08/03/world/ipa-repoumplikanos-vouleytis-katigoreitai-gia-endooikogeneiaki-via-epimenei-na-einai-ypopsifios-stis-ekloges/",
+        "https://www.in.gr/2026/08/03/sports/football/pote-tha-paiksei-o-olympiakos-sta-plei-of-tou-champions-league/"
       ],
-      "seen_at_utc": "2026-08-03T18:30:08.588736+00:00"
+      "seen_at_utc": "2026-08-03T18:51:33.816916+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T18:30:08.588852+00:00"
+  "updated_at_utc": "2026-08-03T18:51:33.817076+00:00"
 }
