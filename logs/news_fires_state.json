@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564379123/germania-ston-isto-tis-enochis/",
-      "title": "Γερμανία: Στον ιστό της ενοχής",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΣΤΟΝ ΙΣΤΟ ΤΗΣ ΕΝΟΧΗΣ",
+      "url": "https://www.kathimerini.gr/world/564381445/i-uefa-apeilei-me-nomikes-energeies-kata-toy-schedioy-toy-infantino/",
+      "title": "Η UEFA απειλεί να προβεί σε νομικές ενέργειες κατά του σχεδίου του Ινφαντίνο",
+      "normalized_title": "Η UEFA ΑΠΕΙΛΕΙ ΝΑ ΠΡΟΒΕΙ ΣΕ ΝΟΜΙΚΕΣ ΕΝΕΡΓΕΙΕΣ ΚΑΤΑ ΤΟΥ ΣΧΕΔΙΟΥ ΤΟΥ ΙΝΦΑΝΤΙΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564379123/germania-ston-isto-tis-enochis/",
-        "https://www.kathimerini.gr/world/564381406/los-antzeles-i-santra-mpoylok-kai-i-nikol-kintman-ekanan-emfanisi-ekplixi/",
-        "https://www.kathimerini.gr/world/564381379/iraniko-ypex-den-yparchoyn-pros-to-paron-synomilies-me-tis-ipa/",
-        "https://www.kathimerini.gr/society/564379009/eiste-konta-sti-spilia-toy-kyklopa/"
+        "https://www.kathimerini.gr/world/564381445/i-uefa-apeilei-me-nomikes-energeies-kata-toy-schedioy-toy-infantino/",
+        "https://www.kathimerini.gr/society/564381436/meteo-rekor-15etias-sta-meltemia-ta-150-chlm-ora-eftasan-oi-ripes-stin-karysto/",
+        "https://www.kathimerini.gr/politics/564379060/i-toyrkia-fortonei-to-trapezi/"
       ],
-      "seen_at_utc": "2026-08-03T08:17:57.168056+00:00"
+      "seen_at_utc": "2026-08-03T08:52:05.430925+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,35 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859809/purosvestes-kataggelloun-oti-agnostoi-eklepsan-zades-se-ih-tous-sti-magoula-tin-ora-pou-epiheirousan-stin-purkagia/?utm_source=rss",
-      "title": "Πυροσβέστες καταγγέλλουν ότι άγνωστοι έκλεψαν ζάντες και προκάλεσαν φθορές σε ΙΧ τους στη Μαγούλα, την ώρα που επιχειρούσαν στην κατάσβεση της φωτιάς",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΕΣ ΚΑΤΑΓΓΕΛΛΟΥΝ ΟΤΙ ΑΓΝΩΣΤΟΙ ΕΚΛΕΨΑΝ ΖΑΝΤΕΣ ΚΑΙ ΠΡΟΚΑΛΕΣΑΝ ΦΘΟΡΕΣ ΣΕ ΙΧ ΤΟΥΣ ΣΤΗ ΜΑΓΟΥΛΑ, ΤΗΝ ΩΡΑ ΠΟΥ ΕΠΙΧΕΙΡΟΥΣΑΝ ΣΤΗΝ ΚΑΤΑΣΒΕΣΗ ΤΗΣ ΦΩΤΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1859819/kozani-xekinisan-oi-ergasies-gia-ton-neo-odiko-axona-kipos-gefura-rumniou/?utm_source=rss",
+      "title": "Κοζάνη: Ξεκίνησαν οι εργασίες για τον νέο οδικό άξονα Κήπος – Γέφυρα Ρυμνίου",
+      "normalized_title": "ΚΟΖΑΝΗ: ΞΕΚΙΝΗΣΑΝ ΟΙ ΕΡΓΑΣΙΕΣ ΓΙΑ ΤΟΝ ΝΕΟ ΟΔΙΚΟ ΑΞΟΝΑ ΚΗΠΟΣ – ΓΕΦΥΡΑ ΡΥΜΝΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859809/purosvestes-kataggelloun-oti-agnostoi-eklepsan-zades-se-ih-tous-sti-magoula-tin-ora-pou-epiheirousan-stin-purkagia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859819/kozani-xekinisan-oi-ergasies-gia-ton-neo-odiko-axona-kipos-gefura-rumniou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T08:30:08.120637+00:00"
+      "seen_at_utc": "2026-08-03T08:52:05.431062+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1440759/oi-aneggihtoi/",
-      "title": "Οι ανέγγιχτοι",
-      "normalized_title": "ΟΙ ΑΝΕΓΓΙΧΤΟΙ",
+      "url": "https://www.efsyn.gr/politiki/1440766/e-ohi-ki-etsi-vre-maries-sto-stohastro-karystianoy-gkratsia-gia-paraskiniakes-entoles-sto-komma/",
+      "title": "«Ε όχι κι έτσι βρε Μαρίες…»: Στο στόχαστρο Καρυστιανού – Γκρατσία για «παρασκηνιακές εντολές» στο κόμμα",
+      "normalized_title": "«Ε ΟΧΙ ΚΙ ΕΤΣΙ ΒΡΕ ΜΑΡΙΕΣ…»: ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΚΑΡΥΣΤΙΑΝΟΥ – ΓΚΡΑΤΣΙΑ ΓΙΑ «ΠΑΡΑΣΚΗΝΙΑΚΕΣ ΕΝΤΟΛΕΣ» ΣΤΟ ΚΟΜΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1440759/oi-aneggihtoi/",
-        "https://www.efsyn.gr/ellada/1440752/meteo-rekor-ishyron-anemon-se-eyvoia-rethymno-kai-attiki-ripes-eos-150-hlm-ora/",
-        "https://www.efsyn.gr/ellada/1440721/proistamenoi-dimosioy-me-montelo-asep-kai-tis-eylogies-ypoyrgoy-i-epilogi-toys/"
+        "https://www.efsyn.gr/politiki/1440766/e-ohi-ki-etsi-vre-maries-sto-stohastro-karystianoy-gkratsia-gia-paraskiniakes-entoles-sto-komma/",
+        "https://www.efsyn.gr/ellada/1440768/thessaloniki-synelifthisan-dyo-atoma-gia-xylodarmo-ypalliloy-katastimatos-psilikon/",
+        "https://www.efsyn.gr/athlitismos/1440738/ora-karetsa-sti-ntortmoynt-anakoinosan-tin-afixi-toy-me-gyro-vinteo/"
       ],
-      "seen_at_utc": "2026-08-03T08:30:08.120600+00:00"
+      "seen_at_utc": "2026-08-03T08:52:05.431038+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/politics/kke-gia-laki-xalkia-apoxairetoume-ton-synagonisti-mas-enas-spoudaio-ermineyti-kai-pneymatiko-anthropo/",
-      "title": "ΚΚΕ για Λάκη Χαλκιά: Αποχαιρετούμε τον συναγωνιστή μας, ένας σπουδαίο ερμηνευτή και πνευματικό άνθρωπο",
-      "normalized_title": "ΚΚΕ ΓΙΑ ΛΑΚΗ ΧΑΛΚΙΑ: ΑΠΟΧΑΙΡΕΤΟΥΜΕ ΤΟΝ ΣΥΝΑΓΩΝΙΣΤΗ ΜΑΣ, ΕΝΑΣ ΣΠΟΥΔΑΙΟ ΕΡΜΗΝΕΥΤΗ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟ ΑΝΘΡΩΠΟ",
+      "url": "https://www.in.gr/2026/08/03/uncategorized/syriza-gia-laki-xalkia-oramatistis-mousikos-adiapragmateytos-aristeros-kallitexnis-pou-kseperase-ta-synora/",
+      "title": "Οραματιστής μουσικός, αδιαπραγμάτευτος αριστερός, καλλιτέχνης που ξεπέρασε τα σύνορα - Το αντίο του ΣΥΡΙΖΑ στον Λάκη Χαλκιά",
+      "normalized_title": "ΟΡΑΜΑΤΙΣΤΗΣ ΜΟΥΣΙΚΟΣ, ΑΔΙΑΠΡΑΓΜΑΤΕΥΤΟΣ ΑΡΙΣΤΕΡΟΣ, ΚΑΛΛΙΤΕΧΝΗΣ ΠΟΥ ΞΕΠΕΡΑΣΕ ΤΑ ΣΥΝΟΡΑ - ΤΟ ΑΝΤΙΟ ΤΟΥ ΣΥΡΙΖΑ ΣΤΟΝ ΛΑΚΗ ΧΑΛΚΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/politics/kke-gia-laki-xalkia-apoxairetoume-ton-synagonisti-mas-enas-spoudaio-ermineyti-kai-pneymatiko-anthropo/",
-        "https://www.in.gr/2026/08/03/sports/football/kangkoua-irtha-gia-to-protathlima-ston-panathinaiko-ti-eipe-gia-tis-epafes-me-tin-aek/"
+        "https://www.in.gr/2026/08/03/uncategorized/syriza-gia-laki-xalkia-oramatistis-mousikos-adiapragmateytos-aristeros-kallitexnis-pou-kseperase-ta-synora/",
+        "https://www.in.gr/2026/08/03/sports/football/o-panathinaikos-symfonise-me-livai-gkarsia-ti-menei-gia-na-taksidepsei-stin-ellada/",
+        "https://www.in.gr/2026/08/03/go-fun/fizz/nikol-kintman-i-symvouli-pou-tis-edose-i-mitera-tis-prin-pethanei-afora-tin-eggoni-tis/",
+        "https://www.in.gr/2026/08/03/greece/kataggelia-sok-eklepsan-eksartimata-apo-ta-aytokinita-pyrosveston-eno-edinan-maxi-me-tis-floges-sti-magoula/",
+        "https://www.in.gr/2026/08/03/politics/aftodioikisi/22-erga-anadeiksis-tou-olympou-apo-parka-astronomias-mexri-ereynitika-kentra/",
+        "https://www.in.gr/2026/08/03/sports/basketball/euroleague/o-panathinaikos-pou-psaxtike-gia-montero-ton-maio-kai-to-thelo-olympiako-tou-dominikanou/"
       ],
-      "seen_at_utc": "2026-08-03T08:30:08.120566+00:00"
+      "seen_at_utc": "2026-08-03T08:52:05.430989+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T08:30:08.120706+00:00"
+  "updated_at_utc": "2026-08-03T08:52:05.431169+00:00"
 }
