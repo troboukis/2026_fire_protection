@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564382087/o-tzei-kleiton-neos-epikefalis-ton-amerikanikon-mystikon-ypiresion/",
-      "title": "Ο Τζέι Κλέιτον νέος επικεφαλής των αμερικανικών μυστικών υπηρεσιών",
-      "normalized_title": "Ο ΤΖΕΙ ΚΛΕΙΤΟΝ ΝΕΟΣ ΕΠΙΚΕΦΑΛΗΣ ΤΩΝ ΑΜΕΡΙΚΑΝΙΚΩΝ ΜΥΣΤΙΚΩΝ ΥΠΗΡΕΣΙΩΝ",
+      "url": "https://www.kathimerini.gr/athletics/564382111/infantino-out-kai-apo-soyidia-kai-servia/",
+      "title": "«Ινφαντίνο… out» και από Σουηδία και Σερβία",
+      "normalized_title": "«ΙΝΦΑΝΤΙΝΟ… OUT» ΚΑΙ ΑΠΟ ΣΟΥΗΔΙΑ ΚΑΙ ΣΕΡΒΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564382087/o-tzei-kleiton-neos-epikefalis-ton-amerikanikon-mystikon-ypiresion/",
-        "https://www.kathimerini.gr/world/564382033/opla-leizer-kai-anti-pyriniki-thorakisi-poso-diaferoyn-ta-air-force-one-apo-to-doro-toy-katar-ston-tramp/",
-        "https://www.kathimerini.gr/world/564382060/ipa-symfonia-mamoyth-gia-ayxisi-paragogis-ton-pyraylon-patriot-kai-thaad/"
+        "https://www.kathimerini.gr/athletics/564382111/infantino-out-kai-apo-soyidia-kai-servia/",
+        "https://www.kathimerini.gr/world/564382102/me-9-000-ores-ptisis-sto-energitiko-toy-o-danos-pilotos-poy-echase-ti-zoi-toy-stin-psatha/"
       ],
-      "seen_at_utc": "2026-08-03T17:17:12.767154+00:00"
+      "seen_at_utc": "2026-08-03T17:30:14.726280+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860089/epiheirisi-diasosis-pede-allodapon-anoihta-tis-ierapetras-apo-to-limeniko/?utm_source=rss",
-      "title": "Επιχείρηση διάσωσης πέντε αλλοδαπών ανοιχτά της Ιεράπετρας από το Λιμενικό",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ ΠΕΝΤΕ ΑΛΛΟΔΑΠΩΝ ΑΝΟΙΧΤΑ ΤΗΣ ΙΕΡΑΠΕΤΡΑΣ ΑΠΟ ΤΟ ΛΙΜΕΝΙΚΟ",
+      "url": "https://www.protothema.gr/greece/article/1860111/giati-svistikan-hiliades-kliseis-apo-tis-kameres-tis-attikis/?utm_source=rss",
+      "title": "Γιατί «έσβησαν» χιλιάδες κλήσεις από τις κάμερες της Αττικής",
+      "normalized_title": "ΓΙΑΤΙ «ΕΣΒΗΣΑΝ» ΧΙΛΙΑΔΕΣ ΚΛΗΣΕΙΣ ΑΠΟ ΤΙΣ ΚΑΜΕΡΕΣ ΤΗΣ ΑΤΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860089/epiheirisi-diasosis-pede-allodapon-anoihta-tis-ierapetras-apo-to-limeniko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860111/giati-svistikan-hiliades-kliseis-apo-tis-kameres-tis-attikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860108/horis-tis-aisthiseis-tou-edopistike-20hronos-apo-tin-hili-se-haradra-sta-ellinoalvanika-sunora/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860104/auti-tin-kuriaki-me-to-thema-akis-petretzikis-kalokairina-gluka-kai-pagota/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T17:17:12.767256+00:00"
+      "seen_at_utc": "2026-08-03T17:30:14.726422+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441143/dramatikes-stigmes-sti-loympa-attikis-mesa-ston-oikismo-oi-floges-vinteo/",
-      "title": "Δραματικές στιγμές στη Λούμπα Αττικής: Μέσα στον οικισμό οι φλόγες [βίντεο]",
-      "normalized_title": "ΔΡΑΜΑΤΙΚΕΣ ΣΤΙΓΜΕΣ ΣΤΗ ΛΟΥΜΠΑ ΑΤΤΙΚΗΣ: ΜΕΣΑ ΣΤΟΝ ΟΙΚΙΣΜΟ ΟΙ ΦΛΟΓΕΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1441152/ioannina-nekros-se-haradra-20hronos-o-filos-toy-leei-oti-den-eihan-lefta-kai-gyrnoysan-me-ta-podia-apo-alvania-stin-ellada/",
+      "title": "Ιωάννινα: Νεκρός σε χαράδρα 20χρονος – Ο φίλος του λέει ότι δεν είχαν λεφτά, γυρνούσαν με τα πόδια από Αλβανία στην Ελλάδα",
+      "normalized_title": "ΙΩΑΝΝΙΝΑ: ΝΕΚΡΟΣ ΣΕ ΧΑΡΑΔΡΑ 20ΧΡΟΝΟΣ – Ο ΦΙΛΟΣ ΤΟΥ ΛΕΕΙ ΟΤΙ ΔΕΝ ΕΙΧΑΝ ΛΕΦΤΑ, ΓΥΡΝΟΥΣΑΝ ΜΕ ΤΑ ΠΟΔΙΑ ΑΠΟ ΑΛΒΑΝΙΑ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441143/dramatikes-stigmes-sti-loympa-attikis-mesa-ston-oikismo-oi-floges-vinteo/",
-        "https://www.efsyn.gr/kosmos/1441145/apantisi-tramp-se-iran-mporei-na-epilexei-metaxy-mias-symfonias-i-tis-oloklirotikis-paradosis/"
+        "https://www.efsyn.gr/ellada/1441152/ioannina-nekros-se-haradra-20hronos-o-filos-toy-leei-oti-den-eihan-lefta-kai-gyrnoysan-me-ta-podia-apo-alvania-stin-ellada/",
+        "https://www.efsyn.gr/ellada/1441153/diasosi-pente-metanaston-notia-tis-ierapetras-synehizontai-oi-ereynes-gia-tyhon-agnooymenoys/"
       ],
-      "seen_at_utc": "2026-08-03T17:17:12.767236+00:00"
+      "seen_at_utc": "2026-08-03T17:30:14.726392+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/world/oliki-epanafora-tramp-stis-apeiles-to-iran-mporei-na-epileksei-metaksy-symfonias-kai-oloklirotikis-paradosis/",
-      "title": "Ολική επαναφορά Τραμπ στις απειλές: «Το Ιράν μπορεί να επιλέξει μεταξύ συμφωνίας και ολοκληρωτικής παράδοσης»",
-      "normalized_title": "ΟΛΙΚΗ ΕΠΑΝΑΦΟΡΑ ΤΡΑΜΠ ΣΤΙΣ ΑΠΕΙΛΕΣ: «ΤΟ ΙΡΑΝ ΜΠΟΡΕΙ ΝΑ ΕΠΙΛΕΞΕΙ ΜΕΤΑΞΥ ΣΥΜΦΩΝΙΑΣ ΚΑΙ ΟΛΟΚΛΗΡΩΤΙΚΗΣ ΠΑΡΑΔΟΣΗΣ»",
+      "url": "https://www.in.gr/2026/08/03/sports/football/i-teleytaia-proponisi-tou-olympiakou-prin-to-paixnidi-me-ti-naimegken-pics/",
+      "title": "Η τελευταία προπόνηση του Ολυμπιακού πριν το παιχνίδι με τη Ναϊμέγκεν (pics)",
+      "normalized_title": "Η ΤΕΛΕΥΤΑΙΑ ΠΡΟΠΟΝΗΣΗ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΠΡΙΝ ΤΟ ΠΑΙΧΝΙΔΙ ΜΕ ΤΗ ΝΑΙΜΕΓΚΕΝ (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/world/oliki-epanafora-tramp-stis-apeiles-to-iran-mporei-na-epileksei-metaksy-symfonias-kai-oloklirotikis-paradosis/",
-        "https://www.in.gr/2026/08/03/world/akomi-14-nekroi-ston-polemo-stin-oukrania-skotothikan-14-atoma-se-krimaia-krasnontar-kai-krivi-rix/",
-        "https://www.in.gr/2026/08/03/sports/football/tselsi-diakais-pothos-tou-alonso-o-ntiogko-kosta-vid/"
+        "https://www.in.gr/2026/08/03/sports/football/i-teleytaia-proponisi-tou-olympiakou-prin-to-paixnidi-me-ti-naimegken-pics/",
+        "https://www.in.gr/2026/08/03/economy/oikonomikes-eidiseis/tourismos-gia-olous-pote-anoigei-i-platforma/"
       ],
-      "seen_at_utc": "2026-08-03T17:17:12.767206+00:00"
+      "seen_at_utc": "2026-08-03T17:30:14.726332+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T17:17:12.767324+00:00"
+  "updated_at_utc": "2026-08-03T17:30:14.726499+00:00"
 }
