@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564382219/tramp-kata-petrelaikon-vgazoyn-ypervolika-polla-chrimata/",
-      "title": "Τραμπ κατά πετρελαϊκών: «Βγάζουν υπερβολικά πολλά χρήματα»",
-      "normalized_title": "ΤΡΑΜΠ ΚΑΤΑ ΠΕΤΡΕΛΑΙΚΩΝ: «ΒΓΑΖΟΥΝ ΥΠΕΡΒΟΛΙΚΑ ΠΟΛΛΑ ΧΡΗΜΑΤΑ»",
+      "url": "https://www.kathimerini.gr/economy/564379396/me-ypsiles-tachytites-trechoyn-oi-trapezes/",
+      "title": "Με υψηλές ταχύτητες τρέχουν οι τράπεζες",
+      "normalized_title": "ΜΕ ΥΨΗΛΕΣ ΤΑΧΥΤΗΤΕΣ ΤΡΕΧΟΥΝ ΟΙ ΤΡΑΠΕΖΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564382219/tramp-kata-petrelaikon-vgazoyn-ypervolika-polla-chrimata/",
-        "https://www.kathimerini.gr/culture/564379720/dikastiki-apofasi-kai-aisthitiki-krisi/",
-        "https://www.kathimerini.gr/economy/564379501/sok-akriveias-logo-soyper-el-ninio/"
+        "https://www.kathimerini.gr/economy/564379396/me-ypsiles-tachytites-trechoyn-oi-trapezes/",
+        "https://www.kathimerini.gr/culture/564378160/ti-echei-afisei-i-peiraios-260-20-chronia-meta/"
       ],
-      "seen_at_utc": "2026-08-03T19:51:39.497229+00:00"
+      "seen_at_utc": "2026-08-03T20:17:57.729499+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860151/akatallilo-pros-posi-to-nero-sti-siviri-tis-halkidikis-anihneutikan-mikroviologikes-parametroi/?utm_source=rss",
-      "title": "Ακατάλληλο προς πόση το νερό στη Σίβηρη της Χαλκιδικής, ανιχνεύτηκαν μικροβιολογικές παράμετροι",
-      "normalized_title": "ΑΚΑΤΑΛΛΗΛΟ ΠΡΟΣ ΠΟΣΗ ΤΟ ΝΕΡΟ ΣΤΗ ΣΙΒΗΡΗ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ, ΑΝΙΧΝΕΥΤΗΚΑΝ ΜΙΚΡΟΒΙΟΛΟΓΙΚΕΣ ΠΑΡΑΜΕΤΡΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1860165/sunelifthi-66hronos-gia-proklisi-purkagias-stin-halkidiki-tou-epivlithike-prostimo-168750-euro/?utm_source=rss",
+      "title": "Συνελήφθη 66χρονος για πρόκληση πυρκαγιάς στην Χαλκιδική, του επιβλήθηκε πρόστιμο 1.687,50 ευρώ",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 66ΧΡΟΝΟΣ ΓΙΑ ΠΡΟΚΛΗΣΗ ΠΥΡΚΑΓΙΑΣ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ, ΤΟΥ ΕΠΙΒΛΗΘΗΚΕ ΠΡΟΣΤΙΜΟ 1.687,50 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860151/akatallilo-pros-posi-to-nero-sti-siviri-tis-halkidikis-anihneutikan-mikroviologikes-parametroi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860145/stigmes-panikou-sti-naxo-heiristis-skafous-evale-bros-kai-paresure-duo-akomi-ploiaria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860165/sunelifthi-66hronos-gia-proklisi-purkagias-stin-halkidiki-tou-epivlithike-prostimo-168750-euro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T19:17:08.195961+00:00"
+      "seen_at_utc": "2026-08-03T20:17:57.729626+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1441241/tora-o-tramp-epikrinei-tis-amerikanikes-petrelaikes-vgazoyn-ypervolika-polla-hrimata/",
-      "title": "Τώρα ο Τραμπ επικρίνει τις αμερικανικές πετρελαϊκές: «Βγάζουν υπερβολικά πολλά χρήματα»",
-      "normalized_title": "ΤΩΡΑ Ο ΤΡΑΜΠ ΕΠΙΚΡΙΝΕΙ ΤΙΣ ΑΜΕΡΙΚΑΝΙΚΕΣ ΠΕΤΡΕΛΑΙΚΕΣ: «ΒΓΑΖΟΥΝ ΥΠΕΡΒΟΛΙΚΑ ΠΟΛΛΑ ΧΡΗΜΑΤΑ»",
+      "url": "https://www.efsyn.gr/ellada/1441184/1441184/",
+      "title": "Δυτική Αττική: Ολονύχτια μάχη με τις αναζωπυρώσεις στην Ψάθα – Βιβλικών διαστάσεων καταστροφή",
+      "normalized_title": "ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΟΛΟΝΥΧΤΙΑ ΜΑΧΗ ΜΕ ΤΙΣ ΑΝΑΖΩΠΥΡΩΣΕΙΣ ΣΤΗΝ ΨΑΘΑ – ΒΙΒΛΙΚΩΝ ΔΙΑΣΤΑΣΕΩΝ ΚΑΤΑΣΤΡΟΦΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1441241/tora-o-tramp-epikrinei-tis-amerikanikes-petrelaikes-vgazoyn-ypervolika-polla-hrimata/",
-        "https://www.efsyn.gr/ellada/1441232/perissotera-apo-7000-stremmata-i-pligeisa-ektasi-apo-tin-pyrkagia-stin-aigialeia/"
+        "https://www.efsyn.gr/ellada/1441184/1441184/",
+        "https://www.efsyn.gr/athlitismos/1441253/loyse-kai-me-ti-voyla-ston-paok/"
       ],
-      "seen_at_utc": "2026-08-03T19:51:39.497309+00:00"
+      "seen_at_utc": "2026-08-03T20:17:57.729600+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/world/polemos-tis-ksaplostras-kai-stin-italia-aplisiastes-times-gia-ti-mesi-oikogeneia/",
-      "title": "«Πόλεμος της ξαπλώστρας» και στην Ιταλία – «Απλησίαστες τιμές για τη μέση οικογένεια»",
-      "normalized_title": "«ΠΟΛΕΜΟΣ ΤΗΣ ΞΑΠΛΩΣΤΡΑΣ» ΚΑΙ ΣΤΗΝ ΙΤΑΛΙΑ – «ΑΠΛΗΣΙΑΣΤΕΣ ΤΙΜΕΣ ΓΙΑ ΤΗ ΜΕΣΗ ΟΙΚΟΓΕΝΕΙΑ»",
+      "url": "https://www.in.gr/2026/08/03/world/oukrania-i-presveytis-stis-ipa-apopemfthike-me-diatagma-eixe-zitisei-leei-na-apallagei-apo-ta-kathikonta-tis/",
+      "title": "Ουκρανία: Η πρεσβευτής στις ΗΠΑ αποπέμφθηκε με διάταγμα – Είχε ζητήσει, λέει, να απαλλαγεί από τα καθήκοντά της",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: Η ΠΡΕΣΒΕΥΤΗΣ ΣΤΙΣ ΗΠΑ ΑΠΟΠΕΜΦΘΗΚΕ ΜΕ ΔΙΑΤΑΓΜΑ – ΕΙΧΕ ΖΗΤΗΣΕΙ, ΛΕΕΙ, ΝΑ ΑΠΑΛΛΑΓΕΙ ΑΠΟ ΤΑ ΚΑΘΗΚΟΝΤΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/world/polemos-tis-ksaplostras-kai-stin-italia-aplisiastes-times-gia-ti-mesi-oikogeneia/",
-        "https://www.in.gr/2026/08/03/life/culture-live/o-vin-ntizel-apotheonei-to-fast-forever-epistrofi-stis-rizes/",
-        "https://www.in.gr/2026/08/03/sports/football/paok-anakoinose-ton-louse-me-symvolaio-mexri-to-2030-pic-vid/"
+        "https://www.in.gr/2026/08/03/world/oukrania-i-presveytis-stis-ipa-apopemfthike-me-diatagma-eixe-zitisei-leei-na-apallagei-apo-ta-kathikonta-tis/",
+        "https://www.in.gr/2026/08/03/sports/football/o-rafa-mir-sti-thessaloniki-gia-ton-ari-pics/",
+        "https://www.in.gr/2026/08/03/economy/eyropaiki-aytokinitoviomixania-giati-xanei-to-paixnidi-apo-tin-kina/"
       ],
-      "seen_at_utc": "2026-08-03T19:51:39.497278+00:00"
+      "seen_at_utc": "2026-08-03T20:17:57.729567+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T19:51:39.497376+00:00"
+  "updated_at_utc": "2026-08-03T20:17:57.729721+00:00"
 }
