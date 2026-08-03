@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564382039/tramp-symfonia-i-oloklirotiki-paradosi-oi-epiloges-toy-iran/",
-      "title": "Τραμπ: Συμφωνία ή ολοκληρωτική παράδοση οι επιλογές του Ιράν",
-      "normalized_title": "ΤΡΑΜΠ: ΣΥΜΦΩΝΙΑ Η ΟΛΟΚΛΗΡΩΤΙΚΗ ΠΑΡΑΔΟΣΗ ΟΙ ΕΠΙΛΟΓΕΣ ΤΟΥ ΙΡΑΝ",
+      "url": "https://www.kathimerini.gr/politics/564379051/aristera-kai-ton-pantelidon/",
+      "title": "Αριστερά και των Παντελήδων",
+      "normalized_title": "ΑΡΙΣΤΕΡΑ ΚΑΙ ΤΩΝ ΠΑΝΤΕΛΗΔΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564382039/tramp-symfonia-i-oloklirotiki-paradosi-oi-epiloges-toy-iran/",
-        "https://www.kathimerini.gr/columns/564381868/i-tampela-neos-ntontsits-den-allazei-tin-aplotita-toy-stefan-gioksimovits/",
-        "https://www.kathimerini.gr/world/564382024/vinteo-ydroplano-prosekroyse-se-provlita-stis-mpachames/"
+        "https://www.kathimerini.gr/politics/564379051/aristera-kai-ton-pantelidon/",
+        "https://www.kathimerini.gr/world/564382036/i-dania-epekteinei-ti-stratiotiki-thiteia-apo-4-se-11-mines/",
+        "https://www.kathimerini.gr/society/564379147/orgonoyn-ton-diko-mas-vytho/"
       ],
-      "seen_at_utc": "2026-08-03T16:17:37.841458+00:00"
+      "seen_at_utc": "2026-08-03T16:30:17.166490+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1270,23 @@
       "seen_at_utc": "2026-08-03T16:17:37.841555+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441112/pyrkagies-pano-apo-126-000-stremmata-kaikan-stin-attikovoiotia-stahti-480-000-stremmata-mesa-se-9-hronia-pinakes/",
-      "title": "Πυρκαγιές: Πάνω από 126.000 στρέμματα κάηκαν στην Αττικοβοιωτία – Στάχτη 480.000 στρέμματα μέσα σε 9 χρόνια [πίνακες]",
-      "normalized_title": "ΠΥΡΚΑΓΙΕΣ: ΠΑΝΩ ΑΠΟ 126.000 ΣΤΡΕΜΜΑΤΑ ΚΑΗΚΑΝ ΣΤΗΝ ΑΤΤΙΚΟΒΟΙΩΤΙΑ – ΣΤΑΧΤΗ 480.000 ΣΤΡΕΜΜΑΤΑ ΜΕΣΑ ΣΕ 9 ΧΡΟΝΙΑ [ΠΙΝΑΚΕΣ]",
+      "url": "https://www.efsyn.gr/oikonomia/1441119/anakainisi-katoikias-oi-4-logoi-poy-oi-idioktites-kleiston-akiniton-den-endiaferthikan-i-pomida-zita-paratasi/",
+      "title": "Ανακαίνιση κατοικίας: Οι 4 λόγοι που οι ιδιοκτήτες «κλειστών» ακινήτων δεν ενδιαφέρθηκαν – Η ΠΟΜΙΔΑ ζητά παράταση",
+      "normalized_title": "ΑΝΑΚΑΙΝΙΣΗ ΚΑΤΟΙΚΙΑΣ: ΟΙ 4 ΛΟΓΟΙ ΠΟΥ ΟΙ ΙΔΙΟΚΤΗΤΕΣ «ΚΛΕΙΣΤΩΝ» ΑΚΙΝΗΤΩΝ ΔΕΝ ΕΝΔΙΑΦΕΡΘΗΚΑΝ – Η ΠΟΜΙΔΑ ΖΗΤΑ ΠΑΡΑΤΑΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441112/pyrkagies-pano-apo-126-000-stremmata-kaikan-stin-attikovoiotia-stahti-480-000-stremmata-mesa-se-9-hronia-pinakes/"
+        "https://www.efsyn.gr/oikonomia/1441119/anakainisi-katoikias-oi-4-logoi-poy-oi-idioktites-kleiston-akiniton-den-endiaferthikan-i-pomida-zita-paratasi/"
       ],
-      "seen_at_utc": "2026-08-03T16:17:37.841535+00:00"
+      "seen_at_utc": "2026-08-03T16:30:17.166589+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/politics/politiki-grammateia/dania-epekteinei-ti-stratiotiki-thiteia-apo-4-se-11-mines-logo-groilandias-kai-polemou-stin-oukrania/",
-      "title": "Δανία: Επεκτείνει τη στρατιωτική θητεία από 4 σε 11 μήνες λόγω Γροιλανδίας και πολέμου στην Ουκρανία",
-      "normalized_title": "ΔΑΝΙΑ: ΕΠΕΚΤΕΙΝΕΙ ΤΗ ΣΤΡΑΤΙΩΤΙΚΗ ΘΗΤΕΙΑ ΑΠΟ 4 ΣΕ 11 ΜΗΝΕΣ ΛΟΓΩ ΓΡΟΙΛΑΝΔΙΑΣ ΚΑΙ ΠΟΛΕΜΟΥ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.in.gr/2026/08/03/world/o-fetinos-ioulios-sti-vretania-itan-o-pio-anydros-pou-exei-katagrafei-apo-to-1836/",
+      "title": "Ο φετινός Ιούλιος στη Βρετανία ήταν ο πιο άνυδρος που έχει καταγραφεί από το 1836",
+      "normalized_title": "Ο ΦΕΤΙΝΟΣ ΙΟΥΛΙΟΣ ΣΤΗ ΒΡΕΤΑΝΙΑ ΗΤΑΝ Ο ΠΙΟ ΑΝΥΔΡΟΣ ΠΟΥ ΕΧΕΙ ΚΑΤΑΓΡΑΦΕΙ ΑΠΟ ΤΟ 1836",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/politics/politiki-grammateia/dania-epekteinei-ti-stratiotiki-thiteia-apo-4-se-11-mines-logo-groilandias-kai-polemou-stin-oukrania/",
-        "https://www.in.gr/2026/08/03/sports/football/paok-pernaei-tin-porta-tou-xeirourgeiou-o-meite-menei-ektos-eos-kai-treis-mines/",
-        "https://www.in.gr/2026/08/03/economy/diethnis-oikonomia/foroi-se-plouto-crypto-kai-tzogo-o-neos-xartis-xrimatodotisis-tis-eyropaikis-enosis/",
-        "https://www.in.gr/2026/08/03/greece/pano-apo-480-000-stremmata-kamena-sti-dytiki-attiki-apo-dasikes-pyrkagies-ta-teleytaia-9-xronia/",
-        "https://www.in.gr/2026/08/03/sports/football/o-atromitos-anakoinose-ton-lyratzi-apo-ton-paok/",
-        "https://www.in.gr/2026/08/03/politics/politiki-grammateia/nea-aristera-ypologi-i-kyvernisi-mitsotaki-gia-ta-ekatommyria-kamenon-ektaseon/"
+        "https://www.in.gr/2026/08/03/world/o-fetinos-ioulios-sti-vretania-itan-o-pio-anydros-pou-exei-katagrafei-apo-to-1836/"
       ],
-      "seen_at_utc": "2026-08-03T16:17:37.841503+00:00"
+      "seen_at_utc": "2026-08-03T16:30:17.166540+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T16:17:37.841634+00:00"
+  "updated_at_utc": "2026-08-03T16:30:17.166654+00:00"
 }
