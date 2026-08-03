@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/music/564381100/pethane-o-spoydaios-tragoydistis-lakis-chalkias/",
-      "title": "Πέθανε ο σπουδαίος τραγουδιστής Λάκης Χαλκιάς",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΣΠΟΥΔΑΙΟΣ ΤΡΑΓΟΥΔΙΣΤΗΣ ΛΑΚΗΣ ΧΑΛΚΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564381112/live-foties-oles-oi-exelixeis-apo-ta-pyrina-metopa-tis-choras-2/",
+      "title": "Live / Φωτιές: Ολες οι εξελίξεις από τα πύρινα μέτωπα της χώρας",
+      "normalized_title": "LIVE / ΦΩΤΙΕΣ: ΟΛΕΣ ΟΙ ΕΞΕΛΙΞΕΙΣ ΑΠΟ ΤΑ ΠΥΡΙΝΑ ΜΕΤΩΠΑ ΤΗΣ ΧΩΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/music/564381100/pethane-o-spoydaios-tragoydistis-lakis-chalkias/",
-        "https://www.kathimerini.gr/istoria/564378886/san-simera-3-aygoystoy-1960-o-nigiras-apokta-tin-anexartisia-toy-apo-ti-gallia/",
-        "https://www.kathimerini.gr/world/564381094/seismos-5-richter-tarakoynise-sto-kairo/",
-        "https://www.kathimerini.gr/society/564381076/chartis-provlepsis-kindynoy-pyrkagias-portokali-synagermos-kai-simera-se-attiki-voiotia-kai-eyvoia/",
-        "https://www.kathimerini.gr/society/564381064/mainetai-gia-4i-imera-i-fotia-sti-dytiki-attiki-machi-se-dyo-vasika-metopa/"
+        "https://www.kathimerini.gr/society/564381112/live-foties-oles-oi-exelixeis-apo-ta-pyrina-metopa-tis-choras-2/",
+        "https://www.kathimerini.gr/world/564381136/i-koyva-vythistike-sto-skotadi-geniko-mplak-aoyt-se-olokliri-ti-chora/",
+        "https://www.kathimerini.gr/society/564381124/taytotites-apo-simera-telos-ta-taxidia-me-tis-palies-ti-chreiazetai-gia-tis-nees/",
+        "https://www.kathimerini.gr/world/564381127/ipa-ektetamenes-katastrofes-apo-tis-pyrkagies-sti-spokein/"
       ],
-      "seen_at_utc": "2026-08-03T04:30:49.575194+00:00"
+      "seen_at_utc": "2026-08-03T04:51:26.744773+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,23 +1271,27 @@
       "seen_at_utc": "2026-08-03T04:30:49.575362+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440557/thriler-sti-symi-istioploiko-entopistike-na-pleei-akyvernito-agnooyntai-pente-germanoi/",
-      "title": "Θρίλερ στη Σύμη: Ιστιοπλοϊκό εντοπίστηκε να πλέει ακυβέρνητο – Αγνοούνται πέντε Γερμανοί",
-      "normalized_title": "ΘΡΙΛΕΡ ΣΤΗ ΣΥΜΗ: ΙΣΤΙΟΠΛΟΙΚΟ ΕΝΤΟΠΙΣΤΗΚΕ ΝΑ ΠΛΕΕΙ ΑΚΥΒΕΡΝΗΤΟ – ΑΓΝΟΟΥΝΤΑΙ ΠΕΝΤΕ ΓΕΡΜΑΝΟΙ",
+      "url": "https://www.efsyn.gr/kosmos/1440577/tramp-arhizoyn-apo-simera-nees-synomilies-me-to-iran/",
+      "title": "Τραμπ: Αρχίζουν από σήμερα νέες συνομιλίες με το Ιράν",
+      "normalized_title": "ΤΡΑΜΠ: ΑΡΧΙΖΟΥΝ ΑΠΟ ΣΗΜΕΡΑ ΝΕΕΣ ΣΥΝΟΜΙΛΙΕΣ ΜΕ ΤΟ ΙΡΑΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440557/thriler-sti-symi-istioploiko-entopistike-na-pleei-akyvernito-agnooyntai-pente-germanoi/"
+        "https://www.efsyn.gr/kosmos/1440577/tramp-arhizoyn-apo-simera-nees-synomilies-me-to-iran/",
+        "https://www.efsyn.gr/politiki/1440533/skliri-kritiki-meta-tis-diloseis-mitsotaki-gia-tis-pyrkagies-ta-erixe-stis-akraies-kairikes-synthikes/",
+        "https://www.efsyn.gr/tehnes/1440564/lakis-halkias-sigise-gia-panta-i-famprika/",
+        "https://www.efsyn.gr/ellada/1440561/kairos-me-anodo-tis-thermokrasias-kai-mikri-exasthenisi-ton-anemon-xekina-i-evdomada/"
       ],
-      "seen_at_utc": "2026-08-03T04:30:49.575316+00:00"
+      "seen_at_utc": "2026-08-03T04:51:26.744844+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/economy/erxontai-allages-me-ta-ilektronika-timologia-poioi-entassontai/",
-      "title": "Έρχονται αλλαγές με τα ηλεκτρονικά τιμολόγια – Ποιοι εντάσσονται",
-      "normalized_title": "ΕΡΧΟΝΤΑΙ ΑΛΛΑΓΕΣ ΜΕ ΤΑ ΗΛΕΚΤΡΟΝΙΚΑ ΤΙΜΟΛΟΓΙΑ – ΠΟΙΟΙ ΕΝΤΑΣΣΟΝΤΑΙ",
+      "url": "https://www.in.gr/2026/08/03/greece/stin-el-as-anatethike-i-diereynisi-tis-sygkrousis-ton-dyo-elikopteron-stin-psatha/",
+      "title": "Στην ΕΛ.ΑΣ ανατέθηκε η διερεύνηση της σύγκρουσης των δύο ελικοπτέρων στην Ψάθα",
+      "normalized_title": "ΣΤΗΝ ΕΛ.ΑΣ ΑΝΑΤΕΘΗΚΕ Η ΔΙΕΡΕΥΝΗΣΗ ΤΗΣ ΣΥΓΚΡΟΥΣΗΣ ΤΩΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/economy/erxontai-allages-me-ta-ilektronika-timologia-poioi-entassontai/"
+        "https://www.in.gr/2026/08/03/greece/stin-el-as-anatethike-i-diereynisi-tis-sygkrousis-ton-dyo-elikopteron-stin-psatha/",
+        "https://www.in.gr/2026/08/03/plus/vita/einai-to-agxos-kollitiko/"
       ],
-      "seen_at_utc": "2026-08-03T04:30:49.575242+00:00"
+      "seen_at_utc": "2026-08-03T04:51:26.744823+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T04:30:49.575455+00:00"
+  "updated_at_utc": "2026-08-03T04:51:26.744918+00:00"
 }
