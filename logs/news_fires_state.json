@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564381511/pari-sen-zermen-symfonia-me-tin-google-gia-synergasia-sto-ai/",
-      "title": "Παρί Σεν Ζερμέν: Συμφωνία με την Google για συνεργασία στο ΑΙ",
-      "normalized_title": "ΠΑΡΙ ΣΕΝ ΖΕΡΜΕΝ: ΣΥΜΦΩΝΙΑ ΜΕ ΤΗΝ GOOGLE ΓΙΑ ΣΥΝΕΡΓΑΣΙΑ ΣΤΟ ΑΙ",
+      "url": "https://www.kathimerini.gr/culture/564381526/lakis-chalkias-to-dimotiko-tragoydi-simera-kakopoieitai-vanaysa/",
+      "title": "Λάκης Χαλκιάς: «Το δημοτικό τραγούδι σήμερα κακοποιείται βάναυσα»",
+      "normalized_title": "ΛΑΚΗΣ ΧΑΛΚΙΑΣ: «ΤΟ ΔΗΜΟΤΙΚΟ ΤΡΑΓΟΥΔΙ ΣΗΜΕΡΑ ΚΑΚΟΠΟΙΕΙΤΑΙ ΒΑΝΑΥΣΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564381511/pari-sen-zermen-symfonia-me-tin-google-gia-synergasia-sto-ai/",
-        "https://www.kathimerini.gr/society/564381508/fotia-tora-sto-kilkis-sikothikan-enaeria-mesa/"
+        "https://www.kathimerini.gr/culture/564381526/lakis-chalkias-to-dimotiko-tragoydi-simera-kakopoieitai-vanaysa/",
+        "https://www.kathimerini.gr/society/astynomiko/564381547/argolida-dyo-syllipseis-gia-ti-dolofonia-59chronoy-psychologoy/",
+        "https://www.kathimerini.gr/world/564381550/germania-apaiteitai-koini-eyropaiki-drasi-meta-ti-maziki-eisodo-metanaston-sti-theoyta/",
+        "https://www.kathimerini.gr/k/k-magazine/564375850/to-kokkino-toy-kalokairioy/",
+        "https://www.kathimerini.gr/society/564381538/gaydos-epicheirisi-gia-ton-entopismo-agnooymenon-metanaston/",
+        "https://www.kathimerini.gr/world/564381535/to-israil-diavivase-stis-ipa-tis-anisychies-toy-schetika-me-to-schedio-gia-ti-gaza/",
+        "https://www.kathimerini.gr/columns/564381514/ta-ftera-ikaroy-toy-tziani-infantino/"
       ],
-      "seen_at_utc": "2026-08-03T09:51:46.610970+00:00"
+      "seen_at_utc": "2026-08-03T10:17:15.412741+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,43 +1265,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859846/dolofonia-o-thanatos-tou-59hronou-psuhologou-apo-to-nauplio-pos-ton-skotosan-oi-duo-indoi/?utm_source=rss",
-      "title": "Δολοφονία ο θάνατος του 59χρονου ψυχολόγου από το Ναύπλιο, πώς τον σκότωσαν οι δύο Ινδοί",
-      "normalized_title": "ΔΟΛΟΦΟΝΙΑ Ο ΘΑΝΑΤΟΣ ΤΟΥ 59ΧΡΟΝΟΥ ΨΥΧΟΛΟΓΟΥ ΑΠΟ ΤΟ ΝΑΥΠΛΙΟ, ΠΩΣ ΤΟΝ ΣΚΟΤΩΣΑΝ ΟΙ ΔΥΟ ΙΝΔΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1859855/fotia-tora-se-georgiki-ektasi-stin-pulo/?utm_source=rss",
+      "title": "Φωτιά τώρα σε γεωργική έκταση στην Πύλο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΓΕΩΡΓΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΠΥΛΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859846/dolofonia-o-thanatos-tou-59hronou-psuhologou-apo-to-nauplio-pos-ton-skotosan-oi-duo-indoi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859844/fotia-tora-stin-periohi-vrodou-pierias-epiheiroun-14-purosvestes-me-6-ohimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1859843/stahtes-padou-apokardiotikes-eikones-apo-to-porto-germano-mia-imera-meta-to-sarotiko-perasma-tis-fotias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859855/fotia-tora-se-georgiki-ektasi-stin-pulo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859852/purgos-agrio-xulo-se-paniguri-ta-ximeromata-tis-kuriakis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859848/fotia-tora-stin-periohi-xirovrusi-tou-kilkis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T09:51:46.611182+00:00"
+      "seen_at_utc": "2026-08-03T10:17:15.412904+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1440830/fotia-stin-periohi-vrontoy-pierias-epiheiroyn-kai-elikoptera/",
-      "title": "Φωτιά στην περιοχή Βροντού Πιερίας: Επιχειρούν και ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΒΡΟΝΤΟΥ ΠΙΕΡΙΑΣ: ΕΠΙΧΕΙΡΟΥΝ ΚΑΙ ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1440822/o-dimarhos-stylidas-enas-apo-toys-dyo-syllifthentes-gia-ti-fotia-sti-voiotia-sto-mikroskopio-i-etaireia-toy/",
+      "title": "Ο δήμαρχος Στυλίδας ένας από τους δύο συλληφθέντες για τη φωτιά στη Βοιωτία – Στο μικροσκόπιο η εταιρεία του",
+      "normalized_title": "Ο ΔΗΜΑΡΧΟΣ ΣΤΥΛΙΔΑΣ ΕΝΑΣ ΑΠΟ ΤΟΥΣ ΔΥΟ ΣΥΛΛΗΦΘΕΝΤΕΣ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ – ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ Η ΕΤΑΙΡΕΙΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1440830/fotia-stin-periohi-vrontoy-pierias-epiheiroyn-kai-elikoptera/",
-        "https://www.efsyn.gr/politiki/1440824/alexis-tsipras-gia-pyrkagies-opoy-kai-na-stathoyme-aytes-tis-meres-i-ellada-mas-pligonei/",
-        "https://www.efsyn.gr/ellada/1440823/fotia-xespase-sto-kilkis-sikothikan-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1440790/foties-ayti-einai-i-nea-kanonikotita-hreiazontai-nees-methodologies-diaheirisis-to-pragma-den-einai-aplo/",
-        "https://www.efsyn.gr/ellada/1440796/ta-exi-senaria-gia-ti-sygkroysi-ton-elikopteron-proti-fora-symvainei-kati-tetoio-sti-dasopyrosvesi/"
+        "https://www.efsyn.gr/ellada/1440822/o-dimarhos-stylidas-enas-apo-toys-dyo-syllifthentes-gia-ti-fotia-sti-voiotia-sto-mikroskopio-i-etaireia-toy/"
       ],
-      "seen_at_utc": "2026-08-03T09:51:46.611146+00:00"
+      "seen_at_utc": "2026-08-03T10:17:15.412880+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/sports/football/champions-league/live-i-klirosi-olympiakou-kai-aek-sta-play-offs-tou-champions-league/",
-      "title": "LIVE: Η κλήρωση Ολυμπιακού και ΑΕΚ στα play offs του Champions League",
-      "normalized_title": "LIVE: Η ΚΛΗΡΩΣΗ ΟΛΥΜΠΙΑΚΟΥ ΚΑΙ ΑΕΚ ΣΤΑ PLAY OFFS ΤΟΥ CHAMPIONS LEAGUE",
+      "url": "https://www.in.gr/2026/08/03/sports/football/champions-league/aek-me-lefski-sofias-i-kairat-sta-play-offs-tou-champions-league/",
+      "title": "ΑΕΚ: Με Λέφσκι Σόφιας ή Καϊράτ στα play offs του Champions League",
+      "normalized_title": "ΑΕΚ: ΜΕ ΛΕΦΣΚΙ ΣΟΦΙΑΣ Η ΚΑΙΡΑΤ ΣΤΑ PLAY OFFS ΤΟΥ CHAMPIONS LEAGUE",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/sports/football/champions-league/live-i-klirosi-olympiakou-kai-aek-sta-play-offs-tou-champions-league/",
-        "https://www.in.gr/2026/08/03/life/culture-live/fallen-angels-i-epityximeni-parastasi-me-tis-roouz-mpern-kai-keli-oxara-sti-megali-othoni/",
-        "https://www.in.gr/2026/08/03/istoriko-arxeio/makarios-epi-ton-epalkseon-mexri-telous/",
-        "https://www.in.gr/2026/08/03/greece/porto-germeno-zoferes-eikones-meta-tin-katastrofiki-fotia-metroun-tis-pliges-tous-oi-katoikoi/",
-        "https://www.in.gr/2026/08/03/in-science/ai/themeliodes-elattoma-afinei-tin-ai-eyaloti-stin-paraplanisi-kai-tin-kataxrisi/",
-        "https://www.in.gr/2026/08/03/sports/football/sta-sxoinia-o-infantino-i-agglia-aposyrei-ti-stiriksi-tis-pros-ti-fifa-pic/"
+        "https://www.in.gr/2026/08/03/sports/football/champions-league/aek-me-lefski-sofias-i-kairat-sta-play-offs-tou-champions-league/",
+        "https://www.in.gr/2026/08/03/politics/politiki-grammateia/tsipras-opou-kai-na-stathoume-aytes-tis-meres-i-ellada-mas-pligonei-i-dramatiki-erotisi-pou-prokyptei/",
+        "https://www.in.gr/2026/08/03/plus/medianews/mega-proto-to-kentriko-deltio-eidiseon-mega-gegonota-ton-ioulio/",
+        "https://www.in.gr/2026/08/03/world/giati-i-riksi-tou-mpernam-me-ton-thatserismo-exei-simasia-gia-olokliri-tin-eyropi/"
       ],
-      "seen_at_utc": "2026-08-03T09:51:46.611105+00:00"
+      "seen_at_utc": "2026-08-03T10:17:15.412829+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T09:51:46.611289+00:00"
+  "updated_at_utc": "2026-08-03T10:17:15.413018+00:00"
 }
