@@ -1,15 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564381445/i-uefa-apeilei-me-nomikes-energeies-kata-toy-schedioy-toy-infantino/",
-      "title": "Η UEFA απειλεί να προβεί σε νομικές ενέργειες κατά του σχεδίου του Ινφαντίνο",
-      "normalized_title": "Η UEFA ΑΠΕΙΛΕΙ ΝΑ ΠΡΟΒΕΙ ΣΕ ΝΟΜΙΚΕΣ ΕΝΕΡΓΕΙΕΣ ΚΑΤΑ ΤΟΥ ΣΧΕΔΙΟΥ ΤΟΥ ΙΝΦΑΝΤΙΝΟ",
+      "url": "https://www.kathimerini.gr/society/564381499/pieria-fotia-stin-periochi-vrontoy/",
+      "title": "Πιερία: Φωτιά στην περιοχή Βροντού",
+      "normalized_title": "ΠΙΕΡΙΑ: ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΒΡΟΝΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564381445/i-uefa-apeilei-me-nomikes-energeies-kata-toy-schedioy-toy-infantino/",
-        "https://www.kathimerini.gr/society/564381436/meteo-rekor-15etias-sta-meltemia-ta-150-chlm-ora-eftasan-oi-ripes-stin-karysto/",
-        "https://www.kathimerini.gr/politics/564379060/i-toyrkia-fortonei-to-trapezi/"
+        "https://www.kathimerini.gr/society/564381499/pieria-fotia-stin-periochi-vrontoy/",
+        "https://www.kathimerini.gr/society/564381496/fotia-tora-stin-pylo-messinias/",
+        "https://www.kathimerini.gr/opinion/564379030/i-mpala-sta-podia-olon/",
+        "https://www.kathimerini.gr/world/564381493/i-aoyngk-san-soy-tsi-emfanistike-ygiis-stin-proti-epafi-tis-me-ton-exo-kosmo-edo-kai-2-5-chronia/",
+        "https://www.kathimerini.gr/society/564379204/epitheorisi-choris-epitheorites/",
+        "https://www.kathimerini.gr/opinion/564379057/giati-tora-to-kypriako/",
+        "https://www.kathimerini.gr/society/564381481/agios-nikolaos-synelifthi-28chronos-gia-seira-diarrixeon/",
+        "https://www.kathimerini.gr/culture/music/564381478/ariana-gkrante-dialeimma-apo-ti-dimosiotita-en-meso-ateleiotis-kritikis/",
+        "https://www.kathimerini.gr/columns/564370657/pos-einai-na-ta-paratas-ola-kai-na-feygeis-sezon/",
+        "https://www.kathimerini.gr/world/564381469/oyggaria-o-pyrinikos-stathmos-toy-paks-tha-diakopsei-pliros-tin-leitoyrgia-toy/",
+        "https://www.kathimerini.gr/politics/564381460/foties-sti-dytiki-attiki-epidotisi-enoikioy-eos-500-eyro-kai-100-apozimiosi-gia-katestrammena-spitia/"
       ],
-      "seen_at_utc": "2026-08-03T08:52:05.430925+00:00"
+      "seen_at_utc": "2026-08-03T09:30:47.580443+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1269,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1859819/kozani-xekinisan-oi-ergasies-gia-ton-neo-odiko-axona-kipos-gefura-rumniou/?utm_source=rss",
-      "title": "Κοζάνη: Ξεκίνησαν οι εργασίες για τον νέο οδικό άξονα Κήπος – Γέφυρα Ρυμνίου",
-      "normalized_title": "ΚΟΖΑΝΗ: ΞΕΚΙΝΗΣΑΝ ΟΙ ΕΡΓΑΣΙΕΣ ΓΙΑ ΤΟΝ ΝΕΟ ΟΔΙΚΟ ΑΞΟΝΑ ΚΗΠΟΣ – ΓΕΦΥΡΑ ΡΥΜΝΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1859839/fotia-sti-dutiki-attiki-thermiki-kamera-deihnei-ta-enaeria-mesa-na-epiheiroun-mesa-apo-tis-floges-deite-video/?utm_source=rss",
+      "title": "Φωτιά στη Δυτική Αττική: Θερμική κάμερα δείχνει τα εναέρια μέσα να επιχειρούν μέσα από τις φλόγες, δείτε βίντεο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΘΕΡΜΙΚΗ ΚΑΜΕΡΑ ΔΕΙΧΝΕΙ ΤΑ ΕΝΑΕΡΙΑ ΜΕΣΑ ΝΑ ΕΠΙΧΕΙΡΟΥΝ ΜΕΣΑ ΑΠΟ ΤΙΣ ΦΛΟΓΕΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1859819/kozani-xekinisan-oi-ergasies-gia-ton-neo-odiko-axona-kipos-gefura-rumniou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1859839/fotia-sti-dutiki-attiki-thermiki-kamera-deihnei-ta-enaeria-mesa-na-epiheiroun-mesa-apo-tis-floges-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859837/o-dimarhos-stulidas-o-enas-apo-tous-duo-pou-sunelifthisan-gia-ti-fotia-pou-xekinise-apo-ti-voiotia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1859825/tromos-se-geitonia-tis-amaliadas-apo-andra-pou-purovolouse-sta-tufla-exo-apo-spiti-ilikiomenis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-03T08:52:05.431062+00:00"
+      "seen_at_utc": "2026-08-03T09:30:47.580569+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1440766/e-ohi-ki-etsi-vre-maries-sto-stohastro-karystianoy-gkratsia-gia-paraskiniakes-entoles-sto-komma/",
-      "title": "«Ε όχι κι έτσι βρε Μαρίες…»: Στο στόχαστρο Καρυστιανού – Γκρατσία για «παρασκηνιακές εντολές» στο κόμμα",
-      "normalized_title": "«Ε ΟΧΙ ΚΙ ΕΤΣΙ ΒΡΕ ΜΑΡΙΕΣ…»: ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΚΑΡΥΣΤΙΑΝΟΥ – ΓΚΡΑΤΣΙΑ ΓΙΑ «ΠΑΡΑΣΚΗΝΙΑΚΕΣ ΕΝΤΟΛΕΣ» ΣΤΟ ΚΟΜΜΑ",
+      "url": "https://www.efsyn.gr/ellada/1440774/dimos-athinaion-se-efarmogi-o-mihanikos-tis-geitonias-gia-amesi-apokatastasi-provlimaton-sta-sholeia/",
+      "title": "Δήμος Αθηναίων: Σε εφαρμογή «ο Μηχανικός της Γειτονιάς» για άμεση αποκατάσταση προβλημάτων στα σχολεία",
+      "normalized_title": "ΔΗΜΟΣ ΑΘΗΝΑΙΩΝ: ΣΕ ΕΦΑΡΜΟΓΗ «Ο ΜΗΧΑΝΙΚΟΣ ΤΗΣ ΓΕΙΤΟΝΙΑΣ» ΓΙΑ ΑΜΕΣΗ ΑΠΟΚΑΤΑΣΤΑΣΗ ΠΡΟΒΛΗΜΑΤΩΝ ΣΤΑ ΣΧΟΛΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1440766/e-ohi-ki-etsi-vre-maries-sto-stohastro-karystianoy-gkratsia-gia-paraskiniakes-entoles-sto-komma/",
-        "https://www.efsyn.gr/ellada/1440768/thessaloniki-synelifthisan-dyo-atoma-gia-xylodarmo-ypalliloy-katastimatos-psilikon/",
-        "https://www.efsyn.gr/athlitismos/1440738/ora-karetsa-sti-ntortmoynt-anakoinosan-tin-afixi-toy-me-gyro-vinteo/"
+        "https://www.efsyn.gr/ellada/1440774/dimos-athinaion-se-efarmogi-o-mihanikos-tis-geitonias-gia-amesi-apokatastasi-provlimaton-sta-sholeia/",
+        "https://www.efsyn.gr/kosmos/1440737/ta-ploia-sta-stena-toy-ormoyz-apeiloyn-ta-thalassia-oikosystimata/"
       ],
-      "seen_at_utc": "2026-08-03T08:52:05.431038+00:00"
+      "seen_at_utc": "2026-08-03T09:30:47.580540+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/03/uncategorized/syriza-gia-laki-xalkia-oramatistis-mousikos-adiapragmateytos-aristeros-kallitexnis-pou-kseperase-ta-synora/",
-      "title": "Οραματιστής μουσικός, αδιαπραγμάτευτος αριστερός, καλλιτέχνης που ξεπέρασε τα σύνορα - Το αντίο του ΣΥΡΙΖΑ στον Λάκη Χαλκιά",
-      "normalized_title": "ΟΡΑΜΑΤΙΣΤΗΣ ΜΟΥΣΙΚΟΣ, ΑΔΙΑΠΡΑΓΜΑΤΕΥΤΟΣ ΑΡΙΣΤΕΡΟΣ, ΚΑΛΛΙΤΕΧΝΗΣ ΠΟΥ ΞΕΠΕΡΑΣΕ ΤΑ ΣΥΝΟΡΑ - ΤΟ ΑΝΤΙΟ ΤΟΥ ΣΥΡΙΖΑ ΣΤΟΝ ΛΑΚΗ ΧΑΛΚΙΑ",
+      "url": "https://www.in.gr/2026/08/03/politics/syllypitiria-dendia-gia-thanato-laki-xalkia-ypirkse-emvlimatiki-prosopikotita-ston-xoro-tis-ellinikis-mousikis/",
+      "title": "Συλλυπητήρια Δένδια για θάνατο Λάκη Χαλκιά – «Υπήρξε εμβληματική προσωπικότητα στον χώρο της ελληνικής μουσικής»",
+      "normalized_title": "ΣΥΛΛΥΠΗΤΗΡΙΑ ΔΕΝΔΙΑ ΓΙΑ ΘΑΝΑΤΟ ΛΑΚΗ ΧΑΛΚΙΑ – «ΥΠΗΡΞΕ ΕΜΒΛΗΜΑΤΙΚΗ ΠΡΟΣΩΠΙΚΟΤΗΤΑ ΣΤΟΝ ΧΩΡΟ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΜΟΥΣΙΚΗΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/03/uncategorized/syriza-gia-laki-xalkia-oramatistis-mousikos-adiapragmateytos-aristeros-kallitexnis-pou-kseperase-ta-synora/",
-        "https://www.in.gr/2026/08/03/sports/football/o-panathinaikos-symfonise-me-livai-gkarsia-ti-menei-gia-na-taksidepsei-stin-ellada/",
-        "https://www.in.gr/2026/08/03/go-fun/fizz/nikol-kintman-i-symvouli-pou-tis-edose-i-mitera-tis-prin-pethanei-afora-tin-eggoni-tis/",
-        "https://www.in.gr/2026/08/03/greece/kataggelia-sok-eklepsan-eksartimata-apo-ta-aytokinita-pyrosveston-eno-edinan-maxi-me-tis-floges-sti-magoula/",
-        "https://www.in.gr/2026/08/03/politics/aftodioikisi/22-erga-anadeiksis-tou-olympou-apo-parka-astronomias-mexri-ereynitika-kentra/",
-        "https://www.in.gr/2026/08/03/sports/basketball/euroleague/o-panathinaikos-pou-psaxtike-gia-montero-ton-maio-kai-to-thelo-olympiako-tou-dominikanou/"
+        "https://www.in.gr/2026/08/03/politics/syllypitiria-dendia-gia-thanato-laki-xalkia-ypirkse-emvlimatiki-prosopikotita-ston-xoro-tis-ellinikis-mousikis/",
+        "https://www.in.gr/2026/08/03/politics/aftodioikisi/o-dimos-athinaion-fernei-ton-mixaniko-tis-geitonias/",
+        "https://www.in.gr/2026/08/03/world/iran-ektelestikan-dyo-anthropoi-katigorithikan-oti-ergazontan-gia-to-israil/",
+        "https://www.in.gr/2026/08/03/sports/football/to-vinteo-proanaggelia-tis-ntortmount-gia-karetsa-me-gyro-vid/",
+        "https://www.in.gr/2026/08/03/politics/aftodioikisi/papagou-sta-skaria-nea-ekpaideytiki-monada/",
+        "https://www.in.gr/2026/08/03/politics/foties-kapoia-stigmi-o-mitsotakis-prepei-na-kanei-aytokritiki-synexizetai-i-politiki-antiparathesi/"
       ],
-      "seen_at_utc": "2026-08-03T08:52:05.430989+00:00"
+      "seen_at_utc": "2026-08-03T09:30:47.580511+00:00"
     }
   },
-  "updated_at_utc": "2026-08-03T08:52:05.431169+00:00"
+  "updated_at_utc": "2026-08-03T09:30:47.580674+00:00"
 }
