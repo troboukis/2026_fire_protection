@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564383182/skopelos-kykloma-lathremporias-korallion-apokalypse-i-aade-800-000-eyro-i-axia-toy-fortioy/",
-      "title": "Σκόπελος: Κύκλωμα λαθρεμπορίας κοραλλιών αποκάλυψε η ΑΑΔΕ – 800.000 ευρώ η αξία του φορτίου",
-      "normalized_title": "ΣΚΟΠΕΛΟΣ: ΚΥΚΛΩΜΑ ΛΑΘΡΕΜΠΟΡΙΑΣ ΚΟΡΑΛΛΙΩΝ ΑΠΟΚΑΛΥΨΕ Η ΑΑΔΕ – 800.000 ΕΥΡΩ Η ΑΞΙΑ ΤΟΥ ΦΟΡΤΙΟΥ",
+      "url": "https://www.kathimerini.gr/economy/local/564382756/nea-estia-anisychias-gia-tin-agora-ilektrikis-energeias/",
+      "title": "Νέα εστία ανησυχίας για την αγορά ηλεκτρικής ενέργειας",
+      "normalized_title": "ΝΕΑ ΕΣΤΙΑ ΑΝΗΣΥΧΙΑΣ ΓΙΑ ΤΗΝ ΑΓΟΡΑ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564383182/skopelos-kykloma-lathremporias-korallion-apokalypse-i-aade-800-000-eyro-i-axia-toy-fortioy/",
-        "https://www.kathimerini.gr/world/564383191/krimaia-stratiotikos-skotose-synadelfo-toy-kai-treis-polites/",
-        "https://www.kathimerini.gr/economy/international/564382789/polytimoteres-oi-dexiotites-ai-apo-ena-mba-gia-tis-epicheiriseis/"
+        "https://www.kathimerini.gr/economy/local/564382756/nea-estia-anisychias-gia-tin-agora-ilektrikis-energeias/",
+        "https://www.kathimerini.gr/culture/564382564/to-elliniko-ntizain-synanta-tin-idiofy-a-toy-antoni-gkaoynti/"
       ],
-      "seen_at_utc": "2026-08-04T07:30:11.692932+00:00"
+      "seen_at_utc": "2026-08-04T07:51:46.357735+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860320/drone-kategrapse-tin-katastrofi-pou-afise-piso-tis-i-fotia-sti-fokida/?utm_source=rss",
-      "title": "Drone κατέγραψε την καταστροφή που άφησε πίσω της η φωτιά στη Φωκίδα",
-      "normalized_title": "DRONE ΚΑΤΕΓΡΑΨΕ ΤΗΝ ΚΑΤΑΣΤΡΟΦΗ ΠΟΥ ΑΦΗΣΕ ΠΙΣΩ ΤΗΣ Η ΦΩΤΙΑ ΣΤΗ ΦΩΚΙΔΑ",
+      "url": "https://www.protothema.gr/greece/article/1860331/zarkadi-eglovistike-se-dexameni-nerou-stis-prespes-deite-eikona/?utm_source=rss",
+      "title": "Ζαρκάδι εγκλωβίστηκε σε δεξαμενή νερού στις Πρέσπες, δείτε εικόνα",
+      "normalized_title": "ΖΑΡΚΑΔΙ ΕΓΚΛΩΒΙΣΤΗΚΕ ΣΕ ΔΕΞΑΜΕΝΗ ΝΕΡΟΥ ΣΤΙΣ ΠΡΕΣΠΕΣ, ΔΕΙΤΕ ΕΙΚΟΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860320/drone-kategrapse-tin-katastrofi-pou-afise-piso-tis-i-fotia-sti-fokida/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860331/zarkadi-eglovistike-se-dexameni-nerou-stis-prespes-deite-eikona/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860329/lekkas-i-thermokrasiaki-anastrofi-pou-periorizei-tin-oratotita-stis-foties-kai-to-fainomeno-tis-upogeias-kausis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T07:30:11.693133+00:00"
+      "seen_at_utc": "2026-08-04T07:51:46.357910+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441449/entopismos-lemvoy-me-50-metanastes-anoihta-tis-ierapetras/",
-      "title": "Εντοπισμός λέμβου με 50 μετανάστες ανοιχτά της Ιεράπετρας",
-      "normalized_title": "ΕΝΤΟΠΙΣΜΟΣ ΛΕΜΒΟΥ ΜΕ 50 ΜΕΤΑΝΑΣΤΕΣ ΑΝΟΙΧΤΑ ΤΗΣ ΙΕΡΑΠΕΤΡΑΣ",
+      "url": "https://www.efsyn.gr/kosmos/1441477/anexelegktes-pyrkagies-stis-ipa-pano-apo-700-katestrammena-ktiria-64-000-anthropoi-ehoyn-fygei-apo-ta-spitia-toys/",
+      "title": "Ανεξέλεγκτες πυρκαγιές στις ΗΠΑ: Πάνω από 700 κατεστραμμένα κτίρια – 64.000 άνθρωποι έχουν φύγει από τα σπίτια τους",
+      "normalized_title": "ΑΝΕΞΕΛΕΓΚΤΕΣ ΠΥΡΚΑΓΙΕΣ ΣΤΙΣ ΗΠΑ: ΠΑΝΩ ΑΠΟ 700 ΚΑΤΕΣΤΡΑΜΜΕΝΑ ΚΤΙΡΙΑ – 64.000 ΑΝΘΡΩΠΟΙ ΕΧΟΥΝ ΦΥΓΕΙ ΑΠΟ ΤΑ ΣΠΙΤΙΑ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441449/entopismos-lemvoy-me-50-metanastes-anoihta-tis-ierapetras/",
-        "https://www.efsyn.gr/media/1441448/synadelfos-tis-reporter-toy-open-exigei-ton-logo-poy-geloyse-stis-foties-mporoyse-na-symvei-ston-opoiondipote/",
-        "https://www.efsyn.gr/athlitismos/1441363/i-apomonosi-toy-infantino/",
-        "https://www.efsyn.gr/tehnes/1441358/dimitris-xanthakis-1944-2026-efyge-mia-tagmeni-laiki-foni/",
-        "https://www.efsyn.gr/ellada/1441425/syros-apopeira-dioxeon-stin-kinitopoiisi-gia-to-crown-iris-oi-kataggelies-tis-antipolemikis-protovoylias/",
-        "https://www.efsyn.gr/stiles/1441418/ithika-pleonektimata-kai-meionektimata/"
+        "https://www.efsyn.gr/kosmos/1441477/anexelegktes-pyrkagies-stis-ipa-pano-apo-700-katestrammena-ktiria-64-000-anthropoi-ehoyn-fygei-apo-ta-spitia-toys/",
+        "https://www.efsyn.gr/ellada/1441466/fotia-sti-voiotia-ston-anakriti-o-dimarhos-stylidas-kai-o-ergolavos-poinikes-dioxeis-gia-4-kakoyrgimata-ki-ena-plimmelima/"
       ],
-      "seen_at_utc": "2026-08-04T07:30:11.693081+00:00"
+      "seen_at_utc": "2026-08-04T07:51:46.357853+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/greece/lakis-xalkias-tin-pempti-6-aygoustou-i-kideia-tou-dimosia-dapani-tha-proigithei-laiko-proskynima/",
-      "title": "Την Πέμπτη 6 Αυγούστου η κηδεία του Λάκη Χαλκιά, δημοσία δαπάνη - Θα προηγηθεί λαϊκό προσκύνημα",
-      "normalized_title": "ΤΗΝ ΠΕΜΠΤΗ 6 ΑΥΓΟΥΣΤΟΥ Η ΚΗΔΕΙΑ ΤΟΥ ΛΑΚΗ ΧΑΛΚΙΑ, ΔΗΜΟΣΙΑ ΔΑΠΑΝΗ - ΘΑ ΠΡΟΗΓΗΘΕΙ ΛΑΙΚΟ ΠΡΟΣΚΥΝΗΜΑ",
+      "url": "https://www.in.gr/2026/08/04/world/ipa-pyrkagies-konta-sto-spokan-exoun-anagkasei-64-000-anthropous-na-egkataleipsoun-ta-spitia-tous/",
+      "title": "Πυρκαγιές κοντά στο Σποκάν των ΗΠΑ έχουν αναγκάσει 64.000 ανθρώπους να εγκαταλείψουν τα σπίτια τους",
+      "normalized_title": "ΠΥΡΚΑΓΙΕΣ ΚΟΝΤΑ ΣΤΟ ΣΠΟΚΑΝ ΤΩΝ ΗΠΑ ΕΧΟΥΝ ΑΝΑΓΚΑΣΕΙ 64.000 ΑΝΘΡΩΠΟΥΣ ΝΑ ΕΓΚΑΤΑΛΕΙΨΟΥΝ ΤΑ ΣΠΙΤΙΑ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/greece/lakis-xalkias-tin-pempti-6-aygoustou-i-kideia-tou-dimosia-dapani-tha-proigithei-laiko-proskynima/"
+        "https://www.in.gr/2026/08/04/world/ipa-pyrkagies-konta-sto-spokan-exoun-anagkasei-64-000-anthropous-na-egkataleipsoun-ta-spitia-tous/",
+        "https://www.in.gr/2026/08/04/greece/foties-stin-attiki-staxti-700-000-stremmata-ta-teleytaia-ennea-xronia-apaiteitai-diaforetiki-proseggisi/",
+        "https://www.in.gr/2026/08/04/sports/football/tourkiki-omada-mpike-sfina-gia-ton-livai-gkarsia/"
       ],
-      "seen_at_utc": "2026-08-04T07:30:11.693025+00:00"
+      "seen_at_utc": "2026-08-04T07:51:46.357799+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T07:30:11.693196+00:00"
+  "updated_at_utc": "2026-08-04T07:51:46.358000+00:00"
 }
