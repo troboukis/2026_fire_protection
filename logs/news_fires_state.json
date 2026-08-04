@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564383797/sti-finlandia-i-proti-monimi-apothiki-pyrinikon-apovliton-ston-kosmo/",
-      "title": "Στη Φινλανδία η πρώτη μόνιμη «αποθήκη» πυρηνικών αποβλήτων στον κόσμο",
-      "normalized_title": "ΣΤΗ ΦΙΝΛΑΝΔΙΑ Η ΠΡΩΤΗ ΜΟΝΙΜΗ «ΑΠΟΘΗΚΗ» ΠΥΡΗΝΙΚΩΝ ΑΠΟΒΛΗΤΩΝ ΣΤΟΝ ΚΟΣΜΟ",
+      "url": "https://www.kathimerini.gr/society/564379024/dimitri-mipos-echeis-kanena-archaio-ploio/",
+      "title": "«Οδύσσεια»: «Δημήτρη, μήπως έχεις κανένα αρχαίο πλοίο;»",
+      "normalized_title": "«ΟΔΥΣΣΕΙΑ»: «ΔΗΜΗΤΡΗ, ΜΗΠΩΣ ΕΧΕΙΣ ΚΑΝΕΝΑ ΑΡΧΑΙΟ ΠΛΟΙΟ;»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564383797/sti-finlandia-i-proti-monimi-apothiki-pyrinikon-apovliton-ston-kosmo/"
+        "https://www.kathimerini.gr/society/564379024/dimitri-mipos-echeis-kanena-archaio-ploio/",
+        "https://www.kathimerini.gr/society/564383845/pno-anthygieini-metafora-skoypidion-me-ploia-tis-grammis-igoymenitsa-kerkyra/"
       ],
-      "seen_at_utc": "2026-08-04T14:30:12.194608+00:00"
+      "seen_at_utc": "2026-08-04T14:51:43.495423+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860550/sunelifthi-35hronos-palaistinios-sto-limani-tis-soudas-pou-metefere-80-paketa-lathraion-tsigaron/?utm_source=rss",
-      "title": "Συνελήφθη 35χρονος Παλαιστίνιος στο λιμάνι της Σούδας που μετέφερε 80 πακέτα λαθραίων τσιγάρων",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 35ΧΡΟΝΟΣ ΠΑΛΑΙΣΤΙΝΙΟΣ ΣΤΟ ΛΙΜΑΝΙ ΤΗΣ ΣΟΥΔΑΣ ΠΟΥ ΜΕΤΕΦΕΡΕ 80 ΠΑΚΕΤΑ ΛΑΘΡΑΙΩΝ ΤΣΙΓΑΡΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1860579/sunelifthi-50hronos-pou-eklepse-4425-euro-apo-monastiri-stin-troizina-kai-drapeteuse-me-podilato/?utm_source=rss",
+      "title": "Συνελήφθη 50χρονος που έκλεψε 4.425 ευρώ από μοναστήρι στην Τροιζήνα και δραπέτευσε με ποδήλατο",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 50ΧΡΟΝΟΣ ΠΟΥ ΕΚΛΕΨΕ 4.425 ΕΥΡΩ ΑΠΟ ΜΟΝΑΣΤΗΡΙ ΣΤΗΝ ΤΡΟΙΖΗΝΑ ΚΑΙ ΔΡΑΠΕΤΕΥΣΕ ΜΕ ΠΟΔΗΛΑΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860550/sunelifthi-35hronos-palaistinios-sto-limani-tis-soudas-pou-metefere-80-paketa-lathraion-tsigaron/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860545/nekros-88hronos-pezos-meta-apo-parasursi-apo-fortigo-sti-veroia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860538/tragodia-sti-folegandro-nekri-79hroni-se-paralia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860535/tragodia-sti-lesvo-52hronos-vrethike-nekros-mesa-se-pigadi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860529/sto-kedro-ugeias-astrous-to-esu-pire-arista/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860579/sunelifthi-50hronos-pou-eklepse-4425-euro-apo-monastiri-stin-troizina-kai-drapeteuse-me-podilato/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860558/epistrefoun-sta-kamena-tous-spitia-oi-puropliktoi-tou-porto-germeno-eho-dei-oli-mou-tin-paidiki-ilikia-kameni-katoikos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T14:17:11.398196+00:00"
+      "seen_at_utc": "2026-08-04T14:51:43.495530+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1441573/egklimatiki-diaheirisi-gia-tis-fysikes-katastrofes-pos-i-kyvernisi-apetyhe-na-thorakisei-ti-hora-meso-toy-tameioy-anakampsis/",
-      "title": "Εγκληματική διαχείριση για τις φυσικές καταστροφές: Πώς η κυβέρνηση απέτυχε να θωρακίσει τη χώρα μέσω του Ταμείου Ανάκαμψης",
-      "normalized_title": "ΕΓΚΛΗΜΑΤΙΚΗ ΔΙΑΧΕΙΡΙΣΗ ΓΙΑ ΤΙΣ ΦΥΣΙΚΕΣ ΚΑΤΑΣΤΡΟΦΕΣ: ΠΩΣ Η ΚΥΒΕΡΝΗΣΗ ΑΠΕΤΥΧΕ ΝΑ ΘΩΡΑΚΙΣΕΙ ΤΗ ΧΩΡΑ ΜΕΣΩ ΤΟΥ ΤΑΜΕΙΟΥ ΑΝΑΚΑΜΨΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1441765/sto-podi-pano-apo-500-pyrosvestes-gia-tyhon-anazopyroseis-sti-dytiki-attiki-kalyteri-i-eikona-ton-metopon-eikones-vinteo/",
+      "title": "Στο πόδι πάνω από 500 πυροσβέστες για τυχόν αναζωπυρώσεις στη Δυτική Αττική: Καλύτερη η εικόνα των μετώπων [εικόνες – βίντεο]",
+      "normalized_title": "ΣΤΟ ΠΟΔΙ ΠΑΝΩ ΑΠΟ 500 ΠΥΡΟΣΒΕΣΤΕΣ ΓΙΑ ΤΥΧΟΝ ΑΝΑΖΩΠΥΡΩΣΕΙΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΚΑΛΥΤΕΡΗ Η ΕΙΚΟΝΑ ΤΩΝ ΜΕΤΩΠΩΝ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1441573/egklimatiki-diaheirisi-gia-tis-fysikes-katastrofes-pos-i-kyvernisi-apetyhe-na-thorakisei-ti-hora-meso-toy-tameioy-anakampsis/"
+        "https://www.efsyn.gr/ellada/1441765/sto-podi-pano-apo-500-pyrosvestes-gia-tyhon-anazopyroseis-sti-dytiki-attiki-kalyteri-i-eikona-ton-metopon-eikones-vinteo/",
+        "https://www.efsyn.gr/athlitismos/1441770/omada-strong-me-kata-ari-gia-ti-metagrafi-toy-rafa-mir-kamia-thesi-ston-athlitismo-gia-kakopoiites/",
+        "https://www.efsyn.gr/ellada/1441783/apognosi-sto-porto-germeno-meta-tin-pyrkagia-ekapsan-toys-kopoys-mas-kamia-prolipsi-kamia-organosi-vinteo/",
+        "https://www.efsyn.gr/ellada/1441771/makavrio-eyrima-sto-mystra-entopistike-soros-ilikiomenoy-se-katapsykti-xenodoheioy-eihe-na-dosei-simeio-zois-5-hronia/"
       ],
-      "seen_at_utc": "2026-08-04T14:30:12.194710+00:00"
+      "seen_at_utc": "2026-08-04T14:51:43.495505+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/in-science/perivallon-b-science/thalassios-thisayros-metaksy-imvrou-kai-samothrakis-vrethike-terastio-koralliogenes-dasos-se-megalo-vathos/",
-      "title": "Θαλάσσιος θησαυρός μεταξύ Ίμβρου και Σαμοθράκης: Βρέθηκε τεράστιο κοραλλιογενές δάσος σε μεγάλο βάθος",
-      "normalized_title": "ΘΑΛΑΣΣΙΟΣ ΘΗΣΑΥΡΟΣ ΜΕΤΑΞΥ ΙΜΒΡΟΥ ΚΑΙ ΣΑΜΟΘΡΑΚΗΣ: ΒΡΕΘΗΚΕ ΤΕΡΑΣΤΙΟ ΚΟΡΑΛΛΙΟΓΕΝΕΣ ΔΑΣΟΣ ΣΕ ΜΕΓΑΛΟ ΒΑΘΟΣ",
+      "url": "https://www.in.gr/2026/08/04/plus/medianews/drasi-to-neo-teyxos-tou-thrylikou-periodikou-erxetai-to-savvato-me-ta-nea/",
+      "title": "ΔΡΑΣΗ: Το νέο τεύχος του θρυλικού περιοδικού έρχεται το Σάββατο με τα ΝΕΑ",
+      "normalized_title": "ΔΡΑΣΗ: ΤΟ ΝΕΟ ΤΕΥΧΟΣ ΤΟΥ ΘΡΥΛΙΚΟΥ ΠΕΡΙΟΔΙΚΟΥ ΕΡΧΕΤΑΙ ΤΟ ΣΑΒΒΑΤΟ ΜΕ ΤΑ ΝΕΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/in-science/perivallon-b-science/thalassios-thisayros-metaksy-imvrou-kai-samothrakis-vrethike-terastio-koralliogenes-dasos-se-megalo-vathos/"
+        "https://www.in.gr/2026/08/04/plus/medianews/drasi-to-neo-teyxos-tou-thrylikou-periodikou-erxetai-to-savvato-me-ta-nea/",
+        "https://www.in.gr/2026/08/04/greece/dolofonia-vretanidas-stin-kypseli-oi-goneis-tis-den-ithelan-ton-gamo-tous-apokalyptei-i-theia-tis-syzygou-tou-26xronou/",
+        "https://www.in.gr/2026/08/04/plus/medianews/sto-neo-syllektiko-iello-tzeni-karezi-34-xronia-meta-to-thanato-tis/",
+        "https://www.in.gr/2026/08/04/sports/othersports/ksekina-to-pagkosmio-protathlima-stivou-k20-me-elpides-gia-tin-ellada/",
+        "https://www.in.gr/2026/08/04/in-science/episthmes/giati-o-anthropos-einai-to-mono-zoo-pou-kokkinizei-apo-ntropi/"
       ],
-      "seen_at_utc": "2026-08-04T14:30:12.194666+00:00"
+      "seen_at_utc": "2026-08-04T14:51:43.495470+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T14:30:12.194778+00:00"
+  "updated_at_utc": "2026-08-04T14:51:43.495608+00:00"
 }
