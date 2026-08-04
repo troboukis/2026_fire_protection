@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564379732/o-giatros-stokman-egine-echthros-kai-toy-theati/",
-      "title": "Ο γιατρός Στόκμαν έγινε «εχθρός» και του θεατή",
-      "normalized_title": "Ο ΓΙΑΤΡΟΣ ΣΤΟΚΜΑΝ ΕΓΙΝΕ «ΕΧΘΡΟΣ» ΚΑΙ ΤΟΥ ΘΕΑΤΗ",
+      "url": "https://www.kathimerini.gr/culture/564378175/megalonontas-mazi-me-ti-vasilissa/",
+      "title": "Μεγαλώνοντας μαζί με τη «βασίλισσα»",
+      "normalized_title": "ΜΕΓΑΛΩΝΟΝΤΑΣ ΜΑΖΙ ΜΕ ΤΗ «ΒΑΣΙΛΙΣΣΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564379732/o-giatros-stokman-egine-echthros-kai-toy-theati/"
+        "https://www.kathimerini.gr/culture/564378175/megalonontas-mazi-me-ti-vasilissa/",
+        "https://www.kathimerini.gr/economy/564379414/arthro-toy-stayroy-theodoropoyloy-tin-k-pente-axones-gia-ti-thorakisi-tis-viomichanias-kai-ton-ergazomenon/",
+        "https://www.kathimerini.gr/society/564384439/toyrismos-gia-oloys-xekinoyn-ayrio-oi-aitiseis/"
       ],
-      "seen_at_utc": "2026-08-04T20:30:16.036856+00:00"
+      "seen_at_utc": "2026-08-04T20:51:22.026475+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,24 +1271,26 @@
       "seen_at_utc": "2026-08-04T20:17:05.482817+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1442024/kideytikan-sti-gaza-112-palaistinioi-poy-anasyrthikan-tora-apo-ta-ereipia-kyrios-gynaikes-kai-paidia-eihan-skotothei-to-2023-eikones/",
-      "title": "Κηδεύτηκαν στη Γάζα 112 Παλαιστίνιοι που ανασύρθηκαν τώρα από τα ερείπια – Κυρίως γυναίκες και παιδιά, είχαν σκοτωθεί το 2023 [εικόνες]",
-      "normalized_title": "ΚΗΔΕΥΤΗΚΑΝ ΣΤΗ ΓΑΖΑ 112 ΠΑΛΑΙΣΤΙΝΙΟΙ ΠΟΥ ΑΝΑΣΥΡΘΗΚΑΝ ΤΩΡΑ ΑΠΟ ΤΑ ΕΡΕΙΠΙΑ – ΚΥΡΙΩΣ ΓΥΝΑΙΚΕΣ ΚΑΙ ΠΑΙΔΙΑ, ΕΙΧΑΝ ΣΚΟΤΩΘΕΙ ΤΟ 2023 [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/kosmos/1442040/koyva-haos-meta-apo-nea-panethniki-diakopi-reymatos-arneitai-kathe-eythyni-i-oyasigkton-para-ton-apokleismo/",
+      "title": "Κούβα: Χάος μετά από νέα πανεθνική διακοπή ρεύματος – Αρνείται κάθε ευθύνη η Ουάσιγκτον παρά τον αποκλεισμό",
+      "normalized_title": "ΚΟΥΒΑ: ΧΑΟΣ ΜΕΤΑ ΑΠΟ ΝΕΑ ΠΑΝΕΘΝΙΚΗ ΔΙΑΚΟΠΗ ΡΕΥΜΑΤΟΣ – ΑΡΝΕΙΤΑΙ ΚΑΘΕ ΕΥΘΥΝΗ Η ΟΥΑΣΙΓΚΤΟΝ ΠΑΡΑ ΤΟΝ ΑΠΟΚΛΕΙΣΜΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1442024/kideytikan-sti-gaza-112-palaistinioi-poy-anasyrthikan-tora-apo-ta-ereipia-kyrios-gynaikes-kai-paidia-eihan-skotothei-to-2023-eikones/",
-        "https://www.efsyn.gr/athlitismos/1442035/kollise-sto-0-0-me-ti-naimegken-o-anetoimos-olympiakos/"
+        "https://www.efsyn.gr/kosmos/1442040/koyva-haos-meta-apo-nea-panethniki-diakopi-reymatos-arneitai-kathe-eythyni-i-oyasigkton-para-ton-apokleismo/"
       ],
-      "seen_at_utc": "2026-08-04T20:17:05.482789+00:00"
+      "seen_at_utc": "2026-08-04T20:51:22.026593+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/football/zota-silva-tha-dosoume-ta-panta-gia-tin-prokrisi-stin-ollandia/",
-      "title": "Ζότα Σίλβα: «Θα δώσουμε τα πάντα για την πρόκριση στην Ολλανδία»",
-      "normalized_title": "ΖΟΤΑ ΣΙΛΒΑ: «ΘΑ ΔΩΣΟΥΜΕ ΤΑ ΠΑΝΤΑ ΓΙΑ ΤΗΝ ΠΡΟΚΡΙΣΗ ΣΤΗΝ ΟΛΛΑΝΔΙΑ»",
+      "url": "https://www.in.gr/2026/08/04/world/kosovo-oi-arxes-entopisan-omadiko-tafo-sto-zoumpin-potok-pisteyoun-oti-einai-apo-ton-polemo-tou-1990/",
+      "title": "Κόσοβο: Οι αρχές εντόπισαν ομαδικό τάφο στο Ζούμπιν Πότοκ – Πιστεύουν ότι είναι από τον πόλεμο του 1990",
+      "normalized_title": "ΚΟΣΟΒΟ: ΟΙ ΑΡΧΕΣ ΕΝΤΟΠΙΣΑΝ ΟΜΑΔΙΚΟ ΤΑΦΟ ΣΤΟ ΖΟΥΜΠΙΝ ΠΟΤΟΚ – ΠΙΣΤΕΥΟΥΝ ΟΤΙ ΕΙΝΑΙ ΑΠΟ ΤΟΝ ΠΟΛΕΜΟ ΤΟΥ 1990",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/football/zota-silva-tha-dosoume-ta-panta-gia-tin-prokrisi-stin-ollandia/"
+        "https://www.in.gr/2026/08/04/world/kosovo-oi-arxes-entopisan-omadiko-tafo-sto-zoumpin-potok-pisteyoun-oti-einai-apo-ton-polemo-tou-1990/",
+        "https://www.in.gr/2026/08/04/sports/football/mentilimpar-tha-prepei-na-eimaste-diaforetikoi-stin-ollandia-kai-na-veltiosoume-polla-pragmata/",
+        "https://www.in.gr/2026/08/04/world/i-voulgaria-ekleise-ergastirio-faintanylis-pou-efodiaze-oli-ti-xora/",
+        "https://www.in.gr/2026/08/04/go-fun/kristina-aplgkeit-eimai-dynato-koritsi-eksitirio-apo-to-nosokomeio-meta-apo-4-mines/"
       ],
-      "seen_at_utc": "2026-08-04T20:30:16.036900+00:00"
+      "seen_at_utc": "2026-08-04T20:51:22.026542+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T20:30:16.036986+00:00"
+  "updated_at_utc": "2026-08-04T20:51:22.026677+00:00"
 }
