@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564383446/to-schedio-toy-nikolits-gia-ti-meta-pineda-aek/",
-      "title": "Το σχέδιο του Νίκολιτς για τη μετα-Πινέδα ΑΕΚ",
-      "normalized_title": "ΤΟ ΣΧΕΔΙΟ ΤΟΥ ΝΙΚΟΛΙΤΣ ΓΙΑ ΤΗ ΜΕΤΑ-ΠΙΝΕΔΑ ΑΕΚ",
+      "url": "https://www.kathimerini.gr/society/564383737/serres-egklima-piso-apo-ton-thanato-68chronoy-sto-spiti-toy-ti-eide-o-iatrodikastis/",
+      "title": "Σέρρες: Εγκλημα πίσω από τον θάνατο 68χρονου στο σπίτι του – Τι «είδε» ο ιατροδικαστής",
+      "normalized_title": "ΣΕΡΡΕΣ: ΕΓΚΛΗΜΑ ΠΙΣΩ ΑΠΟ ΤΟΝ ΘΑΝΑΤΟ 68ΧΡΟΝΟΥ ΣΤΟ ΣΠΙΤΙ ΤΟΥ – ΤΙ «ΕΙΔΕ» Ο ΙΑΤΡΟΔΙΚΑΣΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564383446/to-schedio-toy-nikolits-gia-ti-meta-pineda-aek/",
-        "https://www.kathimerini.gr/k/k-magazine/564376168/giati-oi-gloytoi-einai-to-megalytero-trend-sta-gymnastiria/"
+        "https://www.kathimerini.gr/society/564383737/serres-egklima-piso-apo-ton-thanato-68chronoy-sto-spiti-toy-ti-eide-o-iatrodikastis/",
+        "https://www.kathimerini.gr/society/564379177/ekei-pano-niotho-13os-theos/",
+        "https://www.kathimerini.gr/opinion/readers/564382498/o-empaigmos-ton-asteron-kai-i-ereyna/",
+        "https://www.kathimerini.gr/opinion/readers/564382501/i-machi-me-tis-pyrkagies-chanetai-ton-cheimona/",
+        "https://www.kathimerini.gr/opinion/readers/564382507/techniti-noimosyni-kai-ithikoi-kodikes/",
+        "https://www.kathimerini.gr/opinion/readers/564382495/kathikontologio-iatrikon-syllogon/",
+        "https://www.kathimerini.gr/opinion/readers/564382504/na-to-doyme-allios-me-ti-dexiosi/"
       ],
-      "seen_at_utc": "2026-08-04T12:51:27.998973+00:00"
+      "seen_at_utc": "2026-08-04T13:17:38.311338+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1265,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860494/i-xirasia-stegnonei-ton-udroviotopo-kalohoriou-anisuhitikes-eikones/?utm_source=rss",
-      "title": "Η ξηρασία «στεγνώνει» τον υδροβιότοπο Καλοχωρίου, δείτε εικόνες",
-      "normalized_title": "Η ΞΗΡΑΣΙΑ «ΣΤΕΓΝΩΝΕΙ» ΤΟΝ ΥΔΡΟΒΙΟΤΟΠΟ ΚΑΛΟΧΩΡΙΟΥ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1860500/autopsia-tis-daee-sto-simeio-ptosis-ton-duo-elikopteron-stin-psatha/?utm_source=rss",
+      "title": "Αυτοψία της ΔΑΕΕ στο σημείο πτώσης των δύο ελικοπτέρων στην Ψάθα, δείτε φωτογραφίες",
+      "normalized_title": "ΑΥΤΟΨΙΑ ΤΗΣ ΔΑΕΕ ΣΤΟ ΣΗΜΕΙΟ ΠΤΩΣΗΣ ΤΩΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860494/i-xirasia-stegnonei-ton-udroviotopo-kalohoriou-anisuhitikes-eikones/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860500/autopsia-tis-daee-sto-simeio-ptosis-ton-duo-elikopteron-stin-psatha/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T12:51:27.999079+00:00"
+      "seen_at_utc": "2026-08-04T13:17:38.311440+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1441698/komma-karystianoy-apohorise-i-katerina-moytsatsoy-kai-alla-dyo-stelehi/",
-      "title": "Κόμμα Καρυστιανού: Αποχώρησε η Κατερίνα Μουτσάτσου και άλλα δύο στελέχη",
-      "normalized_title": "ΚΟΜΜΑ ΚΑΡΥΣΤΙΑΝΟΥ: ΑΠΟΧΩΡΗΣΕ Η ΚΑΤΕΡΙΝΑ ΜΟΥΤΣΑΤΣΟΥ ΚΑΙ ΑΛΛΑ ΔΥΟ ΣΤΕΛΕΧΗ",
+      "url": "https://www.efsyn.gr/ellada/1441713/stoiheia-grothia-sto-stomahi-kaike-to-42-ton-dason-tis-attikis-mesa-se-10-hronia/",
+      "title": "Στοιχεία – γροθιά στο στομάχι: Κάηκε το 42% των δασών της Αττικής μέσα σε 10 χρόνια",
+      "normalized_title": "ΣΤΟΙΧΕΙΑ – ΓΡΟΘΙΑ ΣΤΟ ΣΤΟΜΑΧΙ: ΚΑΗΚΕ ΤΟ 42% ΤΩΝ ΔΑΣΩΝ ΤΗΣ ΑΤΤΙΚΗΣ ΜΕΣΑ ΣΕ 10 ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1441698/komma-karystianoy-apohorise-i-katerina-moytsatsoy-kai-alla-dyo-stelehi/",
-        "https://www.efsyn.gr/ellada/1441685/se-red-code-kai-tin-tetarti-attiki-kai-treis-akomi-periohes-kampanaki-gia-ekdilosi-pyrkagion/"
+        "https://www.efsyn.gr/ellada/1441713/stoiheia-grothia-sto-stomahi-kaike-to-42-ton-dason-tis-attikis-mesa-se-10-hronia/",
+        "https://www.efsyn.gr/athlitismos/1441716/nistroyp-den-tha-paixei-o-tettei-me-tin-tsska-1948-einai-sto-nosokomeio/",
+        "https://www.efsyn.gr/ellada/1441595/geniko-kratiko-nikaias-i-dioikisi-apanta-stis-kataggelies-ton-ergazomenon-mi-milate-gia-elleipseis/"
       ],
-      "seen_at_utc": "2026-08-04T12:51:27.999060+00:00"
+      "seen_at_utc": "2026-08-04T13:17:38.311421+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/politics/politiki-grammateia/to-antio-tis-neas-aristeras-ston-laki-xalkia-synedese-ti-foni-tou-me-tous-agones-tou-laou/",
-      "title": "Το «αντίο» της Νέας Αριστεράς στον Λάκη Χαλκιά: «Συνέδεσε τη φωνή του με τους αγώνες του λαού»",
-      "normalized_title": "ΤΟ «ΑΝΤΙΟ» ΤΗΣ ΝΕΑΣ ΑΡΙΣΤΕΡΑΣ ΣΤΟΝ ΛΑΚΗ ΧΑΛΚΙΑ: «ΣΥΝΕΔΕΣΕ ΤΗ ΦΩΝΗ ΤΟΥ ΜΕ ΤΟΥΣ ΑΓΩΝΕΣ ΤΟΥ ΛΑΟΥ»",
+      "url": "https://www.in.gr/2026/08/04/world/mesi-anatoli-oi-xouthi-lene-oti-xtypisan-aerodromio-sti-saoudiki-aravia-sto-epikentro-ksana-i-gaza/",
+      "title": "Μέση Ανατολή: Οι Χούθι λένε ότι χτύπησαν αεροδρόμιο στη Σαουδική Αραβία – Στο επίκεντρο ξανά η Γάζα",
+      "normalized_title": "ΜΕΣΗ ΑΝΑΤΟΛΗ: ΟΙ ΧΟΥΘΙ ΛΕΝΕ ΟΤΙ ΧΤΥΠΗΣΑΝ ΑΕΡΟΔΡΟΜΙΟ ΣΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ – ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΞΑΝΑ Η ΓΑΖΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/to-antio-tis-neas-aristeras-ston-laki-xalkia-synedese-ti-foni-tou-me-tous-agones-tou-laou/",
-        "https://www.in.gr/2026/08/04/sports/football/epistrefei-ston-paok-o-giannoulis/"
+        "https://www.in.gr/2026/08/04/world/mesi-anatoli-oi-xouthi-lene-oti-xtypisan-aerodromio-sti-saoudiki-aravia-sto-epikentro-ksana-i-gaza/",
+        "https://www.in.gr/2026/08/04/economy/diakopes-ston-vorra-kaysones-kai-pyrkagies-allazoun-ton-touristiko-xarti-tis-eyropis/",
+        "https://www.in.gr/2026/08/04/sports/basketball/euroleague/satoranski-o-paskoual-itan-o-logos-pou-emeina-stin-mpartselona/",
+        "https://www.in.gr/2026/08/04/life/music/theloun-mono-ti-foni-mou-h-queer-mitera-ton-mplouz-ma-rainey-palepse-enantion-ton-leykon-paragogon/"
       ],
-      "seen_at_utc": "2026-08-04T12:51:27.999036+00:00"
+      "seen_at_utc": "2026-08-04T13:17:38.311398+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T12:51:27.999152+00:00"
+  "updated_at_utc": "2026-08-04T13:17:38.311515+00:00"
 }
