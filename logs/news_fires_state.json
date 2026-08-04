@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564381376/gennimeno-gia-dialysi/",
-      "title": "Γεννημένο για διάλυση",
-      "normalized_title": "ΓΕΝΝΗΜΕΝΟ ΓΙΑ ΔΙΑΛΥΣΗ",
+      "url": "https://www.kathimerini.gr/society/564384199/epicheirisi-tis-el-as-se-fylakes-amfissas-kai-malandrinoy-pente-syllipseis-kratoymenon/",
+      "title": "Επιχείρηση της ΕΛ.ΑΣ. σε φυλακές Αμφισσας και Μαλανδρίνου – Πέντε συλλήψεις κρατουμένων",
+      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΤΗΣ ΕΛ.ΑΣ. ΣΕ ΦΥΛΑΚΕΣ ΑΜΦΙΣΣΑΣ ΚΑΙ ΜΑΛΑΝΔΡΙΝΟΥ – ΠΕΝΤΕ ΣΥΛΛΗΨΕΙΣ ΚΡΑΤΟΥΜΕΝΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564381376/gennimeno-gia-dialysi/",
-        "https://www.kathimerini.gr/politics/564384166/komma-karystianoy-apochorisan-moytsatsoy-ioannidoy-kai-kotsorgios/",
-        "https://www.kathimerini.gr/culture/tv/564383818/mia-gynaika-ena-sygklonistiko-taxidi-zois/"
+        "https://www.kathimerini.gr/society/564384199/epicheirisi-tis-el-as-se-fylakes-amfissas-kai-malandrinoy-pente-syllipseis-kratoymenon/",
+        "https://www.kathimerini.gr/opinion/interviews/564383575/i-epitychia-den-tha-metrithei-apo-tis-pyrkagies-poy-esvisan-alla-apo-to-poses-apotrapikan/",
+        "https://www.kathimerini.gr/society/astynomiko/564384181/i-anakoinosi-tis-el-as-gia-ton-55chrono-poy-kratoyse-ton-nekro-patera-toy-ston-katapsykti/"
       ],
-      "seen_at_utc": "2026-08-04T17:17:35.021671+00:00"
+      "seen_at_utc": "2026-08-04T17:30:11.382433+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1283,21 +1283,16 @@
       "seen_at_utc": "2026-08-04T17:17:35.021786+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/football/o-livai-gkarsia-einai-sto-aerodromio-tis-mosxas-kai-erxetai-stin-ellada-gia-ton-panathinaiko/",
-      "title": "«Ο Λιβάι Γκαρσία είναι στο αεροδρόμιο της Μόσχας και έρχεται στην Ελλάδα για τον Παναθηναϊκό»",
-      "normalized_title": "«Ο ΛΙΒΑΙ ΓΚΑΡΣΙΑ ΕΙΝΑΙ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΜΟΣΧΑΣ ΚΑΙ ΕΡΧΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ»",
+      "url": "https://www.in.gr/2026/08/04/life/music/alkistis-protopsalti-kai-nikos-portokaloglou-zontana-sto-theatro-gavaliotissas-stin-edessa/",
+      "title": "Άλκηστις Πρωτοψάλτη και Νίκος Πορτοκάλογλου ζωντανά στο Θέατρο Γαβαλιώτισσας στην Έδεσσα",
+      "normalized_title": "ΑΛΚΗΣΤΙΣ ΠΡΩΤΟΨΑΛΤΗ ΚΑΙ ΝΙΚΟΣ ΠΟΡΤΟΚΑΛΟΓΛΟΥ ΖΩΝΤΑΝΑ ΣΤΟ ΘΕΑΤΡΟ ΓΑΒΑΛΙΩΤΙΣΣΑΣ ΣΤΗΝ ΕΔΕΣΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/football/o-livai-gkarsia-einai-sto-aerodromio-tis-mosxas-kai-erxetai-stin-ellada-gia-ton-panathinaiko/",
-        "https://www.in.gr/2026/08/04/pet-stories/fotia-sta-megara-den-yparxoun-logia-gia-na-perigrapso-ayto-pou-zisame/",
-        "https://www.in.gr/2026/08/04/greece/ntokoumenta-apo-tin-psatha-aytopsia-gia-ta-aitia-tis-moiraias-sygkrousis-ton-ptitikon-meson/",
-        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/i-diaxroniki-epixeirisi-metathesis-eythynon-tou-kyr-mitsotaki-apo-ta-kairika-fainomena-mexri-tis-xronies-pathogeneies/",
-        "https://www.in.gr/2026/08/04/go-fun/fizz/mparak-ompama-aggelos-i-diavolos-mythos-kai-apokathilosi-sta-65a-genethlia-tou/",
-        "https://www.in.gr/2026/08/04/world/oukrania-sygklonistiko-vinteo-deixnei-rosiko-drone-na-kyniga-politi-stin-agora-tis-xersonas/",
-        "https://www.in.gr/2026/08/04/sports/football/olympiakos-i-11ada-me-tin-opoia-tha-antimetopisei-ti-naimegken-pic/",
-        "https://www.in.gr/2026/08/04/inbox/o-aris-anakoinose-ton-rafa-mir-stoxos-mou-na-petyxo-osa-perissotera-gkol-mporo-pics/"
+        "https://www.in.gr/2026/08/04/life/music/alkistis-protopsalti-kai-nikos-portokaloglou-zontana-sto-theatro-gavaliotissas-stin-edessa/",
+        "https://www.in.gr/2026/08/04/sports/football/champions-league/naimegken-i-11ada-gia-to-paixnidi-me-ton-olympiako-ston-pagko-o-tantits-pic/",
+        "https://www.in.gr/2026/08/04/sports/on-field/keraynos-sto-seminario-ton-diaititon-tis-super-league-kopikan-6-7-atoma-sta-grapta/"
       ],
-      "seen_at_utc": "2026-08-04T17:17:35.021734+00:00"
+      "seen_at_utc": "2026-08-04T17:30:11.382489+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T17:17:35.021904+00:00"
+  "updated_at_utc": "2026-08-04T17:30:11.382563+00:00"
 }
