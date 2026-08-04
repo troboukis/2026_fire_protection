@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564383416/toyrkiki-ekklisi-se-rosia-kai-oykrania-gia-asfaleia-sti-mayri-thalassa/",
-      "title": "Τουρκική έκκληση σε Ρωσία και Ουκρανία για ασφάλεια στη Μαύρη Θάλασσα",
-      "normalized_title": "ΤΟΥΡΚΙΚΗ ΕΚΚΛΗΣΗ ΣΕ ΡΩΣΙΑ ΚΑΙ ΟΥΚΡΑΝΙΑ ΓΙΑ ΑΣΦΑΛΕΙΑ ΣΤΗ ΜΑΥΡΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.kathimerini.gr/economy/international/564382723/dyskoles-epoches-gia-ti-germaniki-aytokinitoviomichania/",
+      "title": "Δύσκολες εποχές για τη γερμανική αυτοκινητοβιομηχανία",
+      "normalized_title": "ΔΥΣΚΟΛΕΣ ΕΠΟΧΕΣ ΓΙΑ ΤΗ ΓΕΡΜΑΝΙΚΗ ΑΥΤΟΚΙΝΗΤΟΒΙΟΜΗΧΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564383416/toyrkiki-ekklisi-se-rosia-kai-oykrania-gia-asfaleia-sti-mayri-thalassa/",
-        "https://www.kathimerini.gr/k/k-magazine/564376054/mia-volta-me-ton-timotheo-gavriilidi-petrin/",
-        "https://www.kathimerini.gr/world/564383407/aithiopia-14-nekroi-se-monastiri-apo-katolisthisi-edafoys/"
+        "https://www.kathimerini.gr/economy/international/564382723/dyskoles-epoches-gia-ti-germaniki-aytokinitoviomichania/",
+        "https://www.kathimerini.gr/world/564383434/italia-seismos-4-3-vathmon-richter-stin-toskani/",
+        "https://www.kathimerini.gr/world/564383431/ioylios-2026-o-pio-zestos-minas-poy-echei-pote-katagrafei-sti-gallia/",
+        "https://www.kathimerini.gr/world/564383419/eisvoleas-choris-egklimatiki-prothesi-synagermos-se-soyper-market-logo-skantzochoiroy/",
+        "https://www.kathimerini.gr/columns/564383311/to-anexitilo-stigma-toy-rafa-mir/"
       ],
-      "seen_at_utc": "2026-08-04T09:30:11.166243+00:00"
+      "seen_at_utc": "2026-08-04T09:51:33.213058+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860391/ekruve-se-spiti-sti-dutiki-attiki-18-kila-kannavis-kai-sunelifthi-mazi-me-ton-sunergo-tou/?utm_source=rss",
-      "title": "Έκρυβε σε σπίτι στη δυτική Αττική 18 κιλά κάνναβης και συνελήφθη μαζί με τον συνεργό του",
-      "normalized_title": "ΕΚΡΥΒΕ ΣΕ ΣΠΙΤΙ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ 18 ΚΙΛΑ ΚΑΝΝΑΒΗΣ ΚΑΙ ΣΥΝΕΛΗΦΘΗ ΜΑΖΙ ΜΕ ΤΟΝ ΣΥΝΕΡΓΟ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1860400/22hronos-epese-se-afulakti-geotrisi-sta-dimotika-iamatika-loutra-tis-samothrakis-upesti-egaumata-sto-38/?utm_source=rss",
+      "title": "22χρόνος έπεσε σε αφύλακτη γεώτρηση στα δημοτικά ιαματικά λουτρά της Σαμοθράκης, υπέστη εγκαύματα στο 38% του σώματός του",
+      "normalized_title": "22ΧΡΟΝΟΣ ΕΠΕΣΕ ΣΕ ΑΦΥΛΑΚΤΗ ΓΕΩΤΡΗΣΗ ΣΤΑ ΔΗΜΟΤΙΚΑ ΙΑΜΑΤΙΚΑ ΛΟΥΤΡΑ ΤΗΣ ΣΑΜΟΘΡΑΚΗΣ, ΥΠΕΣΤΗ ΕΓΚΑΥΜΑΤΑ ΣΤΟ 38% ΤΟΥ ΣΩΜΑΤΟΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860391/ekruve-se-spiti-sti-dutiki-attiki-18-kila-kannavis-kai-sunelifthi-mazi-me-ton-sunergo-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860400/22hronos-epese-se-afulakti-geotrisi-sta-dimotika-iamatika-loutra-tis-samothrakis-upesti-egaumata-sto-38/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860397/apofulakistikan-upo-orous-tria-meli-tis-oikogeneias-kargaki-apo-ta-vorizia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T09:30:11.166389+00:00"
+      "seen_at_utc": "2026-08-04T09:51:33.213146+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441567/vorizia-apofylakistikan-ypo-oroys-tria-meli-tis-oikogeneias-kargaki/",
-      "title": "Βορίζια: Αποφυλακίστηκαν υπό όρους τρία μέλη της οικογένειας Καργάκη",
-      "normalized_title": "ΒΟΡΙΖΙΑ: ΑΠΟΦΥΛΑΚΙΣΤΗΚΑΝ ΥΠΟ ΟΡΟΥΣ ΤΡΙΑ ΜΕΛΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ ΚΑΡΓΑΚΗ",
+      "url": "https://www.efsyn.gr/ellada/1441590/o-krymmenos-paragontas-piso-apo-tis-fetines-pyrkagies/",
+      "title": "Ο «κρυμμένος παράγοντας» πίσω από τις φετινές πυρκαγιές",
+      "normalized_title": "Ο «ΚΡΥΜΜΕΝΟΣ ΠΑΡΑΓΟΝΤΑΣ» ΠΙΣΩ ΑΠΟ ΤΙΣ ΦΕΤΙΝΕΣ ΠΥΡΚΑΓΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441567/vorizia-apofylakistikan-ypo-oroys-tria-meli-tis-oikogeneias-kargaki/",
-        "https://www.efsyn.gr/politiki/1441472/poioi-ithelan-kai-epevalan-ti-metaxiki-diktatoria/",
-        "https://www.efsyn.gr/ellada/1441522/dolofonia-proistamenoy-toy-kedasy-argolidas-ston-anakriti-nayplioy-oi-dyo-syllifthentes/"
+        "https://www.efsyn.gr/ellada/1441590/o-krymmenos-paragontas-piso-apo-tis-fetines-pyrkagies/",
+        "https://www.efsyn.gr/ellada/1441568/pyrkagies-pos-kai-pote-tha-apozimiothoyn-oi-pligentes-se-exelixi-oi-aytopsies-gia-tis-zimies/",
+        "https://www.efsyn.gr/ellada/1441578/dimosia-dapani-i-kideia-toy-laki-halkia/"
       ],
-      "seen_at_utc": "2026-08-04T09:30:11.166352+00:00"
+      "seen_at_utc": "2026-08-04T09:51:33.213117+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/politics/aftodioikisi/ksekinise-i-kataskeyi-tou-neou-vioklimatikou-kolymvitikou-sygkrotimatos-ston-dimo-ampelokipon-menemenis/",
-      "title": "Ξεκίνησε η κατασκευή του νέου βιοκλιματικού κολυμβητικού συγκροτήματος στον Δήμο Αμπελοκήπων–Μενεμένης",
-      "normalized_title": "ΞΕΚΙΝΗΣΕ Η ΚΑΤΑΣΚΕΥΗ ΤΟΥ ΝΕΟΥ ΒΙΟΚΛΙΜΑΤΙΚΟΥ ΚΟΛΥΜΒΗΤΙΚΟΥ ΣΥΓΚΡΟΤΗΜΑΤΟΣ ΣΤΟΝ ΔΗΜΟ ΑΜΠΕΛΟΚΗΠΩΝ–ΜΕΝΕΜΕΝΗΣ",
+      "url": "https://www.in.gr/2026/08/04/world/aithiopia-katolisthisi-se-monastiri-paresyre-proskynites-dekatessereis-nekroi/",
+      "title": "Αιθιοπία: Κατολίσθηση σε μοναστήρι παρέσυρε προσκυνητές – Δεκατέσσερεις νεκροί",
+      "normalized_title": "ΑΙΘΙΟΠΙΑ: ΚΑΤΟΛΙΣΘΗΣΗ ΣΕ ΜΟΝΑΣΤΗΡΙ ΠΑΡΕΣΥΡΕ ΠΡΟΣΚΥΝΗΤΕΣ – ΔΕΚΑΤΕΣΣΕΡΕΙΣ ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/politics/aftodioikisi/ksekinise-i-kataskeyi-tou-neou-vioklimatikou-kolymvitikou-sygkrotimatos-ston-dimo-ampelokipon-menemenis/",
-        "https://www.in.gr/2026/08/04/greece/makeleio-sta-vorizia-eleytheroi-treis-syllifthentes-me-ton-oro-na-min-plisiasoun-sto-xorio/"
+        "https://www.in.gr/2026/08/04/world/aithiopia-katolisthisi-se-monastiri-paresyre-proskynites-dekatessereis-nekroi/",
+        "https://www.in.gr/2026/08/04/politics/stis-pligeises-perioxes-tis-dyt-attikis-o-koutsoumpas-exei-terasties-eythynes-i-kyvernisi-vlepoume-ena-egklima-ksana-kai-ksana/",
+        "https://www.in.gr/2026/08/04/politics/aftodioikisi/anavathmizetai-i-eparxiaki-odos-arkadiko-sampatiki/",
+        "https://www.in.gr/2026/08/04/politics/aftodioikisi/epanaleitourgia-tis-pliros-anakataskeyasmenis-kai-anavathmismenis-foititikis-estias-karpenisiou/",
+        "https://www.in.gr/2026/08/04/sports/othersports/sok-sto-ufc-efyge-ksafnika-ston-ypno-tou-o-35xronos-athlitis-alan-nasimento/"
       ],
-      "seen_at_utc": "2026-08-04T09:30:11.166309+00:00"
+      "seen_at_utc": "2026-08-04T09:51:33.213095+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T09:30:11.166484+00:00"
+  "updated_at_utc": "2026-08-04T09:51:33.213213+00:00"
 }
