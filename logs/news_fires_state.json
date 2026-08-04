@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564383641/pyrkagia-se-ypogeio-choro-ston-peiraia-epicheiroyn-15-pyrosvestes/",
-      "title": "Πυρκαγιά σε υπόγειο χώρο στον Πειραιά – Επιχειρούν 15 πυροσβέστες",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΥΠΟΓΕΙΟ ΧΩΡΟ ΣΤΟΝ ΠΕΙΡΑΙΑ – ΕΠΙΧΕΙΡΟΥΝ 15 ΠΥΡΟΣΒΕΣΤΕΣ",
+      "url": "https://www.kathimerini.gr/culture/564383692/exodos-stin-athina-kai-ektos-tin-tetarti-5-8-parti-sto-kpisn-kai-synaylia-chroyli/",
+      "title": "Εξοδος στην Αθήνα και εκτός την Τετάρτη 5/8: Πάρτι στο ΚΠΙΣΝ και συναυλία Χρούλη",
+      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ ΚΑΙ ΕΚΤΟΣ ΤΗΝ ΤΕΤΑΡΤΗ 5/8: ΠΑΡΤΙ ΣΤΟ ΚΠΙΣΝ ΚΑΙ ΣΥΝΑΥΛΙΑ ΧΡΟΥΛΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564383641/pyrkagia-se-ypogeio-choro-ston-peiraia-epicheiroyn-15-pyrosvestes/"
+        "https://www.kathimerini.gr/culture/564383692/exodos-stin-athina-kai-ektos-tin-tetarti-5-8-parti-sto-kpisn-kai-synaylia-chroyli/",
+        "https://www.kathimerini.gr/society/564383686/isap-ptosi-kladion-stis-grammes-ektos-leitoyrgias-treis-stathmoi/",
+        "https://www.kathimerini.gr/world/564383680/ektakti-synedriasi-ypoyrgon-tis-e-e-stoys-75-oi-nekroi-apo-tin-krisi-tis-theoyta/",
+        "https://www.kathimerini.gr/world/564383671/se-portokali-synagermo-i-goyatemala-meta-tin-ekrixi-toy-ifaisteioy-foyego/"
       ],
-      "seen_at_utc": "2026-08-04T11:51:24.650753+00:00"
+      "seen_at_utc": "2026-08-04T12:17:12.919029+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860473/stasu-prosorina-ektos-leitourgias-oi-stathmoi-agios-nikolaos-kato-patisia-kai-agios-eleutherios-logo-ptosis-kladion/?utm_source=rss",
-      "title": "Διακοπή δρομολογίων στις στάσεις μετρό Άγιος Νικόλαος, Κάτω Πατήσια και Άγιος Ελευθέριος λόγω πτώσης κλαδιών",
-      "normalized_title": "ΔΙΑΚΟΠΗ ΔΡΟΜΟΛΟΓΙΩΝ ΣΤΙΣ ΣΤΑΣΕΙΣ ΜΕΤΡΟ ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ, ΚΑΤΩ ΠΑΤΗΣΙΑ ΚΑΙ ΑΓΙΟΣ ΕΛΕΥΘΕΡΙΟΣ ΛΟΓΩ ΠΤΩΣΗΣ ΚΛΑΔΙΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1860483/meteo-to-42-ton-dason-tis-attikis-kaike-mesa-sta-10-teleutaia-hronia/?utm_source=rss",
+      "title": "Meteo: Το 42% των δασών της Αττικής κάηκε μέσα στα 10 τελευταία χρόνια",
+      "normalized_title": "METEO: ΤΟ 42% ΤΩΝ ΔΑΣΩΝ ΤΗΣ ΑΤΤΙΚΗΣ ΚΑΗΚΕ ΜΕΣΑ ΣΤΑ 10 ΤΕΛΕΥΤΑΙΑ ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860473/stasu-prosorina-ektos-leitourgias-oi-stathmoi-agios-nikolaos-kato-patisia-kai-agios-eleutherios-logo-ptosis-kladion/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860471/eleutheros-me-orous-o-52hronos-upallilos-tou-deddie-gia-ti-fotia-sto-rethumno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860469/purkagia-se-upogeio-horo-ston-peiraia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860483/meteo-to-42-ton-dason-tis-attikis-kaike-mesa-sta-10-teleutaia-hronia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860478/fotia-stin-attikovoiotia-kaikan-pano-apo-126000-stremmata-mehri-tin-kuriaki-deite-hartes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T11:51:24.650894+00:00"
+      "seen_at_utc": "2026-08-04T12:17:12.919185+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1441678/pleyris-sto-symvoylio-ypoyrgon-esoterikon-gia-theoyta-i-ellada-zita-eyropaiko-mihanismo-anastolis-asyloy/",
-      "title": "Πλεύρης στο συμβούλιο υπουργών Εσωτερικών για Θέουτα: «Η Ελλάδα ζητά ευρωπαϊκό μηχανισμό αναστολής ασύλου»",
-      "normalized_title": "ΠΛΕΥΡΗΣ ΣΤΟ ΣΥΜΒΟΥΛΙΟ ΥΠΟΥΡΓΩΝ ΕΣΩΤΕΡΙΚΩΝ ΓΙΑ ΘΕΟΥΤΑ: «Η ΕΛΛΑΔΑ ΖΗΤΑ ΕΥΡΩΠΑΙΚΟ ΜΗΧΑΝΙΣΜΟ ΑΝΑΣΤΟΛΗΣ ΑΣΥΛΟΥ»",
+      "url": "https://www.efsyn.gr/ellada/1441695/thriler-stis-serres-me-nekro-68hrono-egklimatiki-energeia-edeixe-i-iatrodikastiki/",
+      "title": "Θρίλερ στις Σέρρες με νεκρό 68χρονο: Εγκληματική ενέργεια έδειξε η ιατροδικαστική",
+      "normalized_title": "ΘΡΙΛΕΡ ΣΤΙΣ ΣΕΡΡΕΣ ΜΕ ΝΕΚΡΟ 68ΧΡΟΝΟ: ΕΓΚΛΗΜΑΤΙΚΗ ΕΝΕΡΓΕΙΑ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1441678/pleyris-sto-symvoylio-ypoyrgon-esoterikon-gia-theoyta-i-ellada-zita-eyropaiko-mihanismo-anastolis-asyloy/",
-        "https://www.efsyn.gr/politiki/1441671/gratsia-de-diagrapsame-ton-aygerino-mas-ekane-entyposi-perimename-na-einai-sygkekrimenos/",
-        "https://www.efsyn.gr/kosmos/1441670/dystopiko-vinteo-rosiko-drone-kyniga-planodio-politi-sti-hersona-egklima-polemoy-kataggellei-i-oykrania/"
+        "https://www.efsyn.gr/ellada/1441695/thriler-stis-serres-me-nekro-68hrono-egklimatiki-energeia-edeixe-i-iatrodikastiki/",
+        "https://www.efsyn.gr/ellada/1441686/i-poergi-esteile-exodika-se-idika-kai-eopyy-gia-toys-eleghoys-stin-ilektroniki-syntagografisi/",
+        "https://www.efsyn.gr/ellada/1441688/provlimata-sta-dromologia-toy-isap-epesan-kladia-dentroy-ston-agio-nikolao/"
       ],
-      "seen_at_utc": "2026-08-04T11:51:24.650850+00:00"
+      "seen_at_utc": "2026-08-04T12:17:12.919151+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/football/i-epo-enimerose-tin-uefa-oti-apesyre-tin-stiriksi-tis-ston-infantino/",
-      "title": "Η ΕΠΟ ενημέρωσε την UEFA ότι απέσυρε την στήριξή της στον Ινφαντίνο",
-      "normalized_title": "Η ΕΠΟ ΕΝΗΜΕΡΩΣΕ ΤΗΝ UEFA ΟΤΙ ΑΠΕΣΥΡΕ ΤΗΝ ΣΤΗΡΙΞΗ ΤΗΣ ΣΤΟΝ ΙΝΦΑΝΤΙΝΟ",
+      "url": "https://www.in.gr/2026/08/04/sports/football/conference-league/nistroup-ektos-o-tettei-gia-to-mats-me-tin-tsska-1948-eimaste-favori-alla-den-einai-eykolo/",
+      "title": "Νίστρουπ: «Εκτός ο Τεττέη για το ματς με την ΤΣΣΚΑ 1948 – Είμαστε φαβορί αλλά δεν είναι εύκολο»",
+      "normalized_title": "ΝΙΣΤΡΟΥΠ: «ΕΚΤΟΣ Ο ΤΕΤΤΕΗ ΓΙΑ ΤΟ ΜΑΤΣ ΜΕ ΤΗΝ ΤΣΣΚΑ 1948 – ΕΙΜΑΣΤΕ ΦΑΒΟΡΙ ΑΛΛΑ ΔΕΝ ΕΙΝΑΙ ΕΥΚΟΛΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/football/i-epo-enimerose-tin-uefa-oti-apesyre-tin-stiriksi-tis-ston-infantino/",
-        "https://www.in.gr/2026/08/04/greece/salos-stin-kriti-kataggelia-oti-skotosan-kri-kri-to-epsisan-kai-to-efagan-sto-faraggi-tis-samaria/",
-        "https://www.in.gr/2026/08/04/sports/football/i-mpesiktas-psaxnetai-gia-neo-mpam-thelei-ton-nounies-pic/",
-        "https://www.in.gr/2026/08/04/politics/aftodioikisi/neo-politistiko-kentro-gia-ton-dimo-almyrou/"
+        "https://www.in.gr/2026/08/04/sports/football/conference-league/nistroup-ektos-o-tettei-gia-to-mats-me-tin-tsska-1948-eimaste-favori-alla-den-einai-eykolo/",
+        "https://www.in.gr/2026/08/04/world/oukrania-o-dimofilis-proin-arxigos-ton-enoplon-dynameon-leei-oti-i-xora-den-prokeitai-na-mpei-sto-nato/",
+        "https://www.in.gr/2026/08/04/life/culture-live/synagermos-gia-to-kastro-mpofor-ekklisi-stin-unesco-meta-tin-israilini-anatinaksi-me-700-tonous-ekriktikon/",
+        "https://www.in.gr/2026/08/04/politics/aftodioikisi/kataskeyi-neou-dimarxiakou-megarou-stin-eleousa/",
+        "https://www.in.gr/2026/08/04/greece/prosorini-tropopoiisi-sta-dromologia-tou-isap-logo-ptosis-kladion/",
+        "https://www.in.gr/2026/08/04/politics/kikilias-pano-apo-232-ekat-eyro-se-perissoterous-apo-281-000-nisiotes-meso-tou-metaforikou-isodynamou/"
       ],
-      "seen_at_utc": "2026-08-04T11:51:24.650805+00:00"
+      "seen_at_utc": "2026-08-04T12:17:12.919112+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T11:51:24.650989+00:00"
+  "updated_at_utc": "2026-08-04T12:17:12.919271+00:00"
 }
