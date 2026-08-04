@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564383842/sygkroysi-elikopteron-stin-psatha-pos-sothike-o-vretanos-pilotos/",
-      "title": "Σύγκρουση ελικοπτέρων στην Ψάθα: Πώς σώθηκε ο Βρετανός πιλότος",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ: ΠΩΣ ΣΩΘΗΚΕ Ο ΒΡΕΤΑΝΟΣ ΠΙΛΟΤΟΣ",
+      "url": "https://www.kathimerini.gr/society/564383956/megara-skyloi-poy-sothikan-apo-tis-foties-filoxenoyntai-se-gipedo-ekklisi-gia-voitheia/",
+      "title": "Μέγαρα: Σκύλοι που σώθηκαν από τις φωτιές φιλοξενούνται σε γήπεδο – Εκκληση για βοήθεια",
+      "normalized_title": "ΜΕΓΑΡΑ: ΣΚΥΛΟΙ ΠΟΥ ΣΩΘΗΚΑΝ ΑΠΟ ΤΙΣ ΦΩΤΙΕΣ ΦΙΛΟΞΕΝΟΥΝΤΑΙ ΣΕ ΓΗΠΕΔΟ – ΕΚΚΛΗΣΗ ΓΙΑ ΒΟΗΘΕΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564383842/sygkroysi-elikopteron-stin-psatha-pos-sothike-o-vretanos-pilotos/",
-        "https://www.kathimerini.gr/athletics/564383920/i-epo-apesyre-tin-ypostirixi-tis-stin-ypopsifiotita-infantino/",
-        "https://www.kathimerini.gr/economy/564379405/otan-ergodotis-einai-o-algorithmos/"
+        "https://www.kathimerini.gr/society/564383956/megara-skyloi-poy-sothikan-apo-tis-foties-filoxenoyntai-se-gipedo-ekklisi-gia-voitheia/",
+        "https://www.kathimerini.gr/world/564383866/se-synthikes-akraioy-kaysona-i-aystria/"
       ],
-      "seen_at_utc": "2026-08-04T15:30:21.598586+00:00"
+      "seen_at_utc": "2026-08-04T15:51:28.406524+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860598/makavrio-eurima-ston-mustra-kratouse-ton-nekro-patera-tou-se-katapsukti-gia-na-pairnei-ti-sudaxi/?utm_source=rss",
-      "title": "Μακάβριο εύρημα στον Μυστρά: Κρατούσε τον νεκρό πατέρα του σε καταψύκτη για να παίρνει τη σύνταξη",
-      "normalized_title": "ΜΑΚΑΒΡΙΟ ΕΥΡΗΜΑ ΣΤΟΝ ΜΥΣΤΡΑ: ΚΡΑΤΟΥΣΕ ΤΟΝ ΝΕΚΡΟ ΠΑΤΕΡΑ ΤΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ ΓΙΑ ΝΑ ΠΑΙΡΝΕΙ ΤΗ ΣΥΝΤΑΞΗ",
+      "url": "https://www.protothema.gr/greece/article/1860606/airetai-o-apokleismos-kukloforias-pou-eprokeito-na-efarmostei-apopse-stin-perifereiaki-odo-tis-thessalonikis/?utm_source=rss",
+      "title": "Αίρoνται οι κυκλοφοριακές ρυθμίσεις που επρόκειτο να εφαρμοστούν απόψε στην περιφερειακή οδό της Θεσσαλονίκης",
+      "normalized_title": "ΑΙΡOΝΤΑΙ ΟΙ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΠΟΥ ΕΠΡΟΚΕΙΤΟ ΝΑ ΕΦΑΡΜΟΣΤΟΥΝ ΑΠΟΨΕ ΣΤΗΝ ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860598/makavrio-eurima-ston-mustra-kratouse-ton-nekro-patera-tou-se-katapsukti-gia-na-pairnei-ti-sudaxi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860606/airetai-o-apokleismos-kukloforias-pou-eprokeito-na-efarmostei-apopse-stin-perifereiaki-odo-tis-thessalonikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860602/tesseris-sullipseis-se-rafina-ilion-nea-kifisia-kai-halkidiki-gia-energeies-pou-tha-borousan-na-prokalesoun-purkagia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T15:30:21.598705+00:00"
+      "seen_at_utc": "2026-08-04T15:51:28.406666+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1441844/oi-nees-syzitiseis-ipa-iran-dimioyrgoyn-prosdokies-stin-agora-petrelaioy-ypohoroyn-oi-times/",
-      "title": "Οι νέες συζητήσεις ΗΠΑ – Ιράν δημιουργούν προσδοκίες στην αγορά πετρελαίου: Υποχωρούν οι τιμές",
-      "normalized_title": "ΟΙ ΝΕΕΣ ΣΥΖΗΤΗΣΕΙΣ ΗΠΑ – ΙΡΑΝ ΔΗΜΙΟΥΡΓΟΥΝ ΠΡΟΣΔΟΚΙΕΣ ΣΤΗΝ ΑΓΟΡΑ ΠΕΤΡΕΛΑΙΟΥ: ΥΠΟΧΩΡΟΥΝ ΟΙ ΤΙΜΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1441850/wwf-ehoyn-ginei-stahti-pano-apo-180-000-stremmata-se-oli-tin-ellada-mesa-se-liges-meres/",
+      "title": "WWF: Έχουν γίνει στάχτη πάνω από 180.000 στρέμματα σε όλη την Ελλάδα μέσα σε λίγες μέρες",
+      "normalized_title": "WWF: ΕΧΟΥΝ ΓΙΝΕΙ ΣΤΑΧΤΗ ΠΑΝΩ ΑΠΟ 180.000 ΣΤΡΕΜΜΑΤΑ ΣΕ ΟΛΗ ΤΗΝ ΕΛΛΑΔΑ ΜΕΣΑ ΣΕ ΛΙΓΕΣ ΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1441844/oi-nees-syzitiseis-ipa-iran-dimioyrgoyn-prosdokies-stin-agora-petrelaioy-ypohoroyn-oi-times/",
-        "https://www.efsyn.gr/kosmos/1441837/vrazei-xana-i-aystria-rekor-ypsilis-thermokrasias-me-408c/"
+        "https://www.efsyn.gr/ellada/1441850/wwf-ehoyn-ginei-stahti-pano-apo-180-000-stremmata-se-oli-tin-ellada-mesa-se-liges-meres/",
+        "https://www.efsyn.gr/kosmos/1441848/apokalypsi-apo-to-reuters-oi-ipa-ehoyn-hrisimopoiisei-shedon-oloys-toys-diathesimoys-pyrayloys-megaloy-velinekoys/"
       ],
-      "seen_at_utc": "2026-08-04T15:30:21.598675+00:00"
+      "seen_at_utc": "2026-08-04T15:51:28.406627+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/greece/makavrio-eyrima-ston-mystra-vrethike-soros-ilikiomenou-se-katapsykti-kleistou-ksenodoxeiou/",
-      "title": "Μακάβριο εύρημα στον Μυστρά: Βρέθηκε σορός ηλικιωμένου σε καταψύκτη κλειστού ξενοδοχείου",
-      "normalized_title": "ΜΑΚΑΒΡΙΟ ΕΥΡΗΜΑ ΣΤΟΝ ΜΥΣΤΡΑ: ΒΡΕΘΗΚΕ ΣΟΡΟΣ ΗΛΙΚΙΩΜΕΝΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ ΚΛΕΙΣΤΟΥ ΞΕΝΟΔΟΧΕΙΟΥ",
+      "url": "https://www.in.gr/2026/08/04/greece/tragodia-sti-lero-fortigo-paresyre-kai-skotose-58xroni-touristria-stin-agia-marina/",
+      "title": "Τραγωδία στη Λέρο: Φορτηγό παρέσυρε και σκότωσε 58χρονη τουρίστρια στην Αγία Μαρίνα",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΕΡΟ: ΦΟΡΤΗΓΟ ΠΑΡΕΣΥΡΕ ΚΑΙ ΣΚΟΤΩΣΕ 58ΧΡΟΝΗ ΤΟΥΡΙΣΤΡΙΑ ΣΤΗΝ ΑΓΙΑ ΜΑΡΙΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/greece/makavrio-eyrima-ston-mystra-vrethike-soros-ilikiomenou-se-katapsykti-kleistou-ksenodoxeiou/",
-        "https://www.in.gr/2026/08/04/sports/football/dorea-tou-lionel-mesi-gia-ti-siera-oeste-pou-ypesti-katastrofes-apo-tis-pyrkagies/",
-        "https://www.in.gr/2026/08/04/world/antallages-pyron-metaksy-rosias-kai-oukranias-pente-nekroi/"
+        "https://www.in.gr/2026/08/04/greece/tragodia-sti-lero-fortigo-paresyre-kai-skotose-58xroni-touristria-stin-agia-marina/",
+        "https://www.in.gr/2026/08/04/apopsi/i-eyropaiki-enosi-einai-ayti-pou-ergaleiopoiei-to-prosfygiko-kai-to-metanasteytiko/",
+        "https://www.in.gr/2026/08/04/sports/football/zalizoun-ta-posa-gia-ton-vinisious-i-real-prosferei-22-ekat-aytos-thelei-30-ton-xrono-tha-poulithei-me-150/",
+        "https://www.in.gr/2026/08/04/greece/eiste-iroes-i-zografia-mikrou-paidiou-pros-tous-pyrosvestes-sta-megara/"
       ],
-      "seen_at_utc": "2026-08-04T15:30:21.598642+00:00"
+      "seen_at_utc": "2026-08-04T15:51:28.406589+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T15:30:21.598789+00:00"
+  "updated_at_utc": "2026-08-04T15:51:28.406763+00:00"
 }
