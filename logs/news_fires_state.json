@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564383722/i-mayri-agora-toy-kokkinoy-korallioy-apeilei-to-aigaio/",
-      "title": "Η μαύρη αγορά του κόκκινου κοραλλιού απειλεί το Αιγαίο",
-      "normalized_title": "Η ΜΑΥΡΗ ΑΓΟΡΑ ΤΟΥ ΚΟΚΚΙΝΟΥ ΚΟΡΑΛΛΙΟΥ ΑΠΕΙΛΕΙ ΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.kathimerini.gr/society/ekpaideysi/564383779/diorismoi-ekpaideytikon-5-eos-10-aygoystoy-oi-aitiseis-se-protovathmia-kai-deyterovathmia-ekpaideysi/",
+      "title": "Διορισμοί εκπαιδευτικών: 5 έως 10 Αυγούστου οι αιτήσεις σε Πρωτοβάθμια και Δευτεροβάθμια Εκπαίδευση",
+      "normalized_title": "ΔΙΟΡΙΣΜΟΙ ΕΚΠΑΙΔΕΥΤΙΚΩΝ: 5 ΕΩΣ 10 ΑΥΓΟΥΣΤΟΥ ΟΙ ΑΙΤΗΣΕΙΣ ΣΕ ΠΡΩΤΟΒΑΘΜΙΑ ΚΑΙ ΔΕΥΤΕΡΟΒΑΘΜΙΑ ΕΚΠΑΙΔΕΥΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564383722/i-mayri-agora-toy-kokkinoy-korallioy-apeilei-to-aigaio/"
+        "https://www.kathimerini.gr/society/ekpaideysi/564383779/diorismoi-ekpaideytikon-5-eos-10-aygoystoy-oi-aitiseis-se-protovathmia-kai-deyterovathmia-ekpaideysi/",
+        "https://www.kathimerini.gr/society/564383764/syros-profylakistike-o-41chronos-gia-ton-thanato-tis-diasostrias/",
+        "https://www.kathimerini.gr/world/564383752/mpesent-konta-se-symfonia-me-to-iran-gia-ta-stena-toy-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-04T13:30:09.529046+00:00"
+      "seen_at_utc": "2026-08-04T13:51:24.293985+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860500/autopsia-tis-daee-sto-simeio-ptosis-ton-duo-elikopteron-stin-psatha/?utm_source=rss",
-      "title": "Αυτοψία της ΔΑΕΕ στο σημείο πτώσης των δύο ελικοπτέρων στην Ψάθα, δείτε φωτογραφίες",
-      "normalized_title": "ΑΥΤΟΨΙΑ ΤΗΣ ΔΑΕΕ ΣΤΟ ΣΗΜΕΙΟ ΠΤΩΣΗΣ ΤΩΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1860526/profulakisteos-o-41hronos-gia-ti-dolofonia-tis-diasostrias-sti-suro/?utm_source=rss",
+      "title": "Προφυλακίστηκε ο 41χρονος για τη δολοφονία της διασώστριας στη Σύρο",
+      "normalized_title": "ΠΡΟΦΥΛΑΚΙΣΤΗΚΕ Ο 41ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΔΙΑΣΩΣΤΡΙΑΣ ΣΤΗ ΣΥΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860500/autopsia-tis-daee-sto-simeio-ptosis-ton-duo-elikopteron-stin-psatha/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860526/profulakisteos-o-41hronos-gia-ti-dolofonia-tis-diasostrias-sti-suro/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860524/tragodia-sti-veroia-fortigo-paresure-kai-skotose-88hrono-pezo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T13:17:38.311440+00:00"
+      "seen_at_utc": "2026-08-04T13:51:24.294092+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441725/tragodia-sti-theoyta-stoys-75-oi-nekroi-metanastes-allileggyi-stin-ispania-apo-toys-ypex-tis-e-e/",
-      "title": "Τραγωδία στη Θέουτα: Στους 75 οι νεκροί μετανάστες – Αλληλεγγύη στην Ισπανία από τους ΥΠΕΞ της Ε.Ε.",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΘΕΟΥΤΑ: ΣΤΟΥΣ 75 ΟΙ ΝΕΚΡΟΙ ΜΕΤΑΝΑΣΤΕΣ – ΑΛΛΗΛΕΓΓΥΗ ΣΤΗΝ ΙΣΠΑΝΙΑ ΑΠΟ ΤΟΥΣ ΥΠΕΞ ΤΗΣ Ε.Ε.",
+      "url": "https://www.efsyn.gr/ellada/1441736/dolofonia-diasostrias-sti-syro-profylakisteos-o-41hronos-vasikos-katigoroymenos/",
+      "title": "Δολοφονία διασώστριας στη Σύρο: Προφυλακιστέος ο 41χρονος βασικός κατηγορούμενος",
+      "normalized_title": "ΔΟΛΟΦΟΝΙΑ ΔΙΑΣΩΣΤΡΙΑΣ ΣΤΗ ΣΥΡΟ: ΠΡΟΦΥΛΑΚΙΣΤΕΟΣ Ο 41ΧΡΟΝΟΣ ΒΑΣΙΚΟΣ ΚΑΤΗΓΟΡΟΥΜΕΝΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441725/tragodia-sti-theoyta-stoys-75-oi-nekroi-metanastes-allileggyi-stin-ispania-apo-toys-ypex-tis-e-e/",
-        "https://www.efsyn.gr/tehnes/1441617/i-aggliki-filarmonia-ypo-dieythynsi-kavakoy/",
-        "https://www.efsyn.gr/ellada/1441723/pyrkagia-sto-rethymno-eleytheros-me-perioristikoys-oroys-o-epitheoritis-toy-diktyoy-deddie-ti-ypostirixe/"
+        "https://www.efsyn.gr/ellada/1441736/dolofonia-diasostrias-sti-syro-profylakisteos-o-41hronos-vasikos-katigoroymenos/",
+        "https://www.efsyn.gr/athlitismos/1441731/i-epo-apesyre-tin-ypostirixi-tis-stin-ypopsifiotita-infantino-enopsei-eklogon/"
       ],
-      "seen_at_utc": "2026-08-04T13:30:09.529129+00:00"
+      "seen_at_utc": "2026-08-04T13:51:24.294072+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/football/vlaxodimos-gia-ti-sevilli-na-epistrepso-stin-kalyteri-forma-mou-pic/",
-      "title": "Βλαχοδήμος για τη Σεβίλλη: «Να επιστρέψω στην καλύτερη φόρμα μου» (pic)",
-      "normalized_title": "ΒΛΑΧΟΔΗΜΟΣ ΓΙΑ ΤΗ ΣΕΒΙΛΛΗ: «ΝΑ ΕΠΙΣΤΡΕΨΩ ΣΤΗΝ ΚΑΛΥΤΕΡΗ ΦΟΡΜΑ ΜΟΥ» (PIC)",
+      "url": "https://www.in.gr/2026/08/04/greece/syros-prosorina-kratoumenos-o-41xronos-gia-ti-dolofonia-tis-42xronis-diasostrias/",
+      "title": "Προφυλακίστηκε ο 41χρονος για τη δολοφονία της 42χρονης διασώστριας",
+      "normalized_title": "ΠΡΟΦΥΛΑΚΙΣΤΗΚΕ Ο 41ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ 42ΧΡΟΝΗΣ ΔΙΑΣΩΣΤΡΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/football/vlaxodimos-gia-ti-sevilli-na-epistrepso-stin-kalyteri-forma-mou-pic/",
-        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/epithesi-sakellaridi-adikaiologiti-i-argoporia-tis-kyvernisis-stis-foties-ton-oktovrio-to-synedrio-tis-neas-aristeras/",
-        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/fyllorroei-to-komma-tis-karystianou-apoxorisan-moutsatsou-ioannidou-kai-kotsorgios/"
+        "https://www.in.gr/2026/08/04/greece/syros-prosorina-kratoumenos-o-41xronos-gia-ti-dolofonia-tis-42xronis-diasostrias/"
       ],
-      "seen_at_utc": "2026-08-04T13:30:09.529098+00:00"
+      "seen_at_utc": "2026-08-04T13:51:24.294027+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T13:30:09.529202+00:00"
+  "updated_at_utc": "2026-08-04T13:51:24.294160+00:00"
 }
