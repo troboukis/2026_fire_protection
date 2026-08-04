@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564378175/megalonontas-mazi-me-ti-vasilissa/",
-      "title": "Μεγαλώνοντας μαζί με τη «βασίλισσα»",
-      "normalized_title": "ΜΕΓΑΛΩΝΟΝΤΑΣ ΜΑΖΙ ΜΕ ΤΗ «ΒΑΣΙΛΙΣΣΑ»",
+      "url": "https://www.kathimerini.gr/eortologio/564376738/eortologio-poioi-giortazoyn-simera-5-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 5 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 5 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564378175/megalonontas-mazi-me-ti-vasilissa/",
-        "https://www.kathimerini.gr/economy/564379414/arthro-toy-stayroy-theodoropoyloy-tin-k-pente-axones-gia-ti-thorakisi-tis-viomichanias-kai-ton-ergazomenon/",
-        "https://www.kathimerini.gr/society/564384439/toyrismos-gia-oloys-xekinoyn-ayrio-oi-aitiseis/"
+        "https://www.kathimerini.gr/eortologio/564376738/eortologio-poioi-giortazoyn-simera-5-aygoystoy/",
+        "https://www.kathimerini.gr/culture/books/564382546/thysiazontas-spania-palaia-vivlia-gia-tin-ekpaideysi-tis-ai/"
       ],
-      "seen_at_utc": "2026-08-04T20:51:22.026475+00:00"
+      "seen_at_utc": "2026-08-04T21:17:17.778298+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,26 +1270,27 @@
       "seen_at_utc": "2026-08-04T20:17:05.482817+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1442040/koyva-haos-meta-apo-nea-panethniki-diakopi-reymatos-arneitai-kathe-eythyni-i-oyasigkton-para-ton-apokleismo/",
-      "title": "Κούβα: Χάος μετά από νέα πανεθνική διακοπή ρεύματος – Αρνείται κάθε ευθύνη η Ουάσιγκτον παρά τον αποκλεισμό",
-      "normalized_title": "ΚΟΥΒΑ: ΧΑΟΣ ΜΕΤΑ ΑΠΟ ΝΕΑ ΠΑΝΕΘΝΙΚΗ ΔΙΑΚΟΠΗ ΡΕΥΜΑΤΟΣ – ΑΡΝΕΙΤΑΙ ΚΑΘΕ ΕΥΘΥΝΗ Η ΟΥΑΣΙΓΚΤΟΝ ΠΑΡΑ ΤΟΝ ΑΠΟΚΛΕΙΣΜΟ",
+      "url": "https://www.efsyn.gr/ellada/1442052/pateras-synelifthi-stin-halkidiki-edose-ston-aniliko-gio-toy-na-odigisei-tzet-ski/",
+      "title": "Πατέρας συνελήφθη στην Χαλκιδική: Έδωσε στον ανήλικο γιο του να οδηγήσει τζετ σκι",
+      "normalized_title": "ΠΑΤΕΡΑΣ ΣΥΝΕΛΗΦΘΗ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ: ΕΔΩΣΕ ΣΤΟΝ ΑΝΗΛΙΚΟ ΓΙΟ ΤΟΥ ΝΑ ΟΔΗΓΗΣΕΙ ΤΖΕΤ ΣΚΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1442040/koyva-haos-meta-apo-nea-panethniki-diakopi-reymatos-arneitai-kathe-eythyni-i-oyasigkton-para-ton-apokleismo/"
+        "https://www.efsyn.gr/ellada/1442052/pateras-synelifthi-stin-halkidiki-edose-ston-aniliko-gio-toy-na-odigisei-tzet-ski/",
+        "https://www.efsyn.gr/kosmos/1442049/voylgaria-ergastirio-faintanylis-exarthrose-i-astynomia-promitheye-oli-ti-hora/"
       ],
-      "seen_at_utc": "2026-08-04T20:51:22.026593+00:00"
+      "seen_at_utc": "2026-08-04T21:17:17.778367+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/world/kosovo-oi-arxes-entopisan-omadiko-tafo-sto-zoumpin-potok-pisteyoun-oti-einai-apo-ton-polemo-tou-1990/",
-      "title": "Κόσοβο: Οι αρχές εντόπισαν ομαδικό τάφο στο Ζούμπιν Πότοκ – Πιστεύουν ότι είναι από τον πόλεμο του 1990",
-      "normalized_title": "ΚΟΣΟΒΟ: ΟΙ ΑΡΧΕΣ ΕΝΤΟΠΙΣΑΝ ΟΜΑΔΙΚΟ ΤΑΦΟ ΣΤΟ ΖΟΥΜΠΙΝ ΠΟΤΟΚ – ΠΙΣΤΕΥΟΥΝ ΟΤΙ ΕΙΝΑΙ ΑΠΟ ΤΟΝ ΠΟΛΕΜΟ ΤΟΥ 1990",
+      "url": "https://www.in.gr/2026/08/05/sports/football/srointer-xarika-pou-antimetopisame-mia-omada-san-ton-olympiako-se-ena-toso-entyposiako-gipedo/",
+      "title": "Σρόιντερ: «Είμαι περήφανος για την ομάδα μου, πλέον είμαστε εμείς το φαβορί»",
+      "normalized_title": "ΣΡΟΙΝΤΕΡ: «ΕΙΜΑΙ ΠΕΡΗΦΑΝΟΣ ΓΙΑ ΤΗΝ ΟΜΑΔΑ ΜΟΥ, ΠΛΕΟΝ ΕΙΜΑΣΤΕ ΕΜΕΙΣ ΤΟ ΦΑΒΟΡΙ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/world/kosovo-oi-arxes-entopisan-omadiko-tafo-sto-zoumpin-potok-pisteyoun-oti-einai-apo-ton-polemo-tou-1990/",
-        "https://www.in.gr/2026/08/04/sports/football/mentilimpar-tha-prepei-na-eimaste-diaforetikoi-stin-ollandia-kai-na-veltiosoume-polla-pragmata/",
-        "https://www.in.gr/2026/08/04/world/i-voulgaria-ekleise-ergastirio-faintanylis-pou-efodiaze-oli-ti-xora/",
-        "https://www.in.gr/2026/08/04/go-fun/kristina-aplgkeit-eimai-dynato-koritsi-eksitirio-apo-to-nosokomeio-meta-apo-4-mines/"
+        "https://www.in.gr/2026/08/05/sports/football/srointer-xarika-pou-antimetopisame-mia-omada-san-ton-olympiako-se-ena-toso-entyposiako-gipedo/",
+        "https://www.in.gr/2026/08/05/greece/giorti-simera-5-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/05/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-tetarti-05-08-2026/",
+        "https://www.in.gr/2026/08/04/sports/football/o-koulierakis-vrike-dixtya-sto-anepisimo-ntempouto-tou-me-ti-roma-vid/"
       ],
-      "seen_at_utc": "2026-08-04T20:51:22.026542+00:00"
+      "seen_at_utc": "2026-08-04T21:17:17.778338+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T20:51:22.026677+00:00"
+  "updated_at_utc": "2026-08-04T21:17:17.778440+00:00"
 }
