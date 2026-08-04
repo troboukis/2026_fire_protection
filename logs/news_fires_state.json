@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564383878/troizina-synelifthi-50chronos-gia-klopes-se-monastiri-kai-parekklisi/",
-      "title": "Τροιζήνα: Συνελήφθη 50χρονος για κλοπές σε μοναστήρι και παρεκκλήσι",
-      "normalized_title": "ΤΡΟΙΖΗΝΑ: ΣΥΝΕΛΗΦΘΗ 50ΧΡΟΝΟΣ ΓΙΑ ΚΛΟΠΕΣ ΣΕ ΜΟΝΑΣΤΗΡΙ ΚΑΙ ΠΑΡΕΚΚΛΗΣΙ",
+      "url": "https://www.kathimerini.gr/society/564383842/sygkroysi-elikopteron-stin-psatha-pos-sothike-o-vretanos-pilotos/",
+      "title": "Σύγκρουση ελικοπτέρων στην Ψάθα: Πώς σώθηκε ο Βρετανός πιλότος",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΕΛΙΚΟΠΤΕΡΩΝ ΣΤΗΝ ΨΑΘΑ: ΠΩΣ ΣΩΘΗΚΕ Ο ΒΡΕΤΑΝΟΣ ΠΙΛΟΤΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564383878/troizina-synelifthi-50chronos-gia-klopes-se-monastiri-kai-parekklisi/",
-        "https://www.kathimerini.gr/economy/564379387/to-pazl-tis-akriveias-stin-ellada-2/",
-        "https://www.kathimerini.gr/society/564383881/mystras-ekryve-ton-nekro-patera-toy-ston-katapsykti-gia-na-pairnei-ti-syntaxi/"
+        "https://www.kathimerini.gr/society/564383842/sygkroysi-elikopteron-stin-psatha-pos-sothike-o-vretanos-pilotos/",
+        "https://www.kathimerini.gr/athletics/564383920/i-epo-apesyre-tin-ypostirixi-tis-stin-ypopsifiotita-infantino/",
+        "https://www.kathimerini.gr/economy/564379405/otan-ergodotis-einai-o-algorithmos/"
       ],
-      "seen_at_utc": "2026-08-04T15:17:13.690956+00:00"
+      "seen_at_utc": "2026-08-04T15:30:21.598586+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860589/nekri-gunaika-pou-parasurthike-apo-fortigo-pou-ekane-opisthen-sti-lero/?utm_source=rss",
-      "title": "Νεκρή γυναίκα που παρασύρθηκε από φορτηγό που έκανε όπισθεν στη Λέρο",
-      "normalized_title": "ΝΕΚΡΗ ΓΥΝΑΙΚΑ ΠΟΥ ΠΑΡΑΣΥΡΘΗΚΕ ΑΠΟ ΦΟΡΤΗΓΟ ΠΟΥ ΕΚΑΝΕ ΟΠΙΣΘΕΝ ΣΤΗ ΛΕΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1860598/makavrio-eurima-ston-mustra-kratouse-ton-nekro-patera-tou-se-katapsukti-gia-na-pairnei-ti-sudaxi/?utm_source=rss",
+      "title": "Μακάβριο εύρημα στον Μυστρά: Κρατούσε τον νεκρό πατέρα του σε καταψύκτη για να παίρνει τη σύνταξη",
+      "normalized_title": "ΜΑΚΑΒΡΙΟ ΕΥΡΗΜΑ ΣΤΟΝ ΜΥΣΤΡΑ: ΚΡΑΤΟΥΣΕ ΤΟΝ ΝΕΚΡΟ ΠΑΤΕΡΑ ΤΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ ΓΙΑ ΝΑ ΠΑΙΡΝΕΙ ΤΗ ΣΥΝΤΑΞΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860589/nekri-gunaika-pou-parasurthike-apo-fortigo-pou-ekane-opisthen-sti-lero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860598/makavrio-eurima-ston-mustra-kratouse-ton-nekro-patera-tou-se-katapsukti-gia-na-pairnei-ti-sudaxi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T15:17:13.691031+00:00"
+      "seen_at_utc": "2026-08-04T15:30:21.598705+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1441831/thriler-sti-mytilini-vrethike-52hronos-nekros-se-pigadi/",
-      "title": "Θρίλερ στη Μυτιλήνη: Βρέθηκε 52χρονος νεκρός σε πηγάδι",
-      "normalized_title": "ΘΡΙΛΕΡ ΣΤΗ ΜΥΤΙΛΗΝΗ: ΒΡΕΘΗΚΕ 52ΧΡΟΝΟΣ ΝΕΚΡΟΣ ΣΕ ΠΗΓΑΔΙ",
+      "url": "https://www.efsyn.gr/oikonomia/1441844/oi-nees-syzitiseis-ipa-iran-dimioyrgoyn-prosdokies-stin-agora-petrelaioy-ypohoroyn-oi-times/",
+      "title": "Οι νέες συζητήσεις ΗΠΑ – Ιράν δημιουργούν προσδοκίες στην αγορά πετρελαίου: Υποχωρούν οι τιμές",
+      "normalized_title": "ΟΙ ΝΕΕΣ ΣΥΖΗΤΗΣΕΙΣ ΗΠΑ – ΙΡΑΝ ΔΗΜΙΟΥΡΓΟΥΝ ΠΡΟΣΔΟΚΙΕΣ ΣΤΗΝ ΑΓΟΡΑ ΠΕΤΡΕΛΑΙΟΥ: ΥΠΟΧΩΡΟΥΝ ΟΙ ΤΙΜΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1441831/thriler-sti-mytilini-vrethike-52hronos-nekros-se-pigadi/",
-        "https://www.efsyn.gr/ellada/1441802/sygkroysi-elikopteron-stin-psatha-theios-toy-vretanoy-epizonta-tipota-de-tha-mporoyse-na-ton-stamatisei-apo-to-na-petaei/",
-        "https://www.efsyn.gr/kosmos/1441824/oykraniko-treis-apothikes-tis-amazon-tis-rosias-eplixe-to-kievo-i-mosha-anakoinose-htypimata-se-ploia-kai-limania/",
-        "https://www.efsyn.gr/stiles/1441801/i-kyvernisi-afinei-aneggihto-ton-pyrina-tis-akriveias/",
-        "https://www.efsyn.gr/politiki/1441817/i-komision-anoigei-episimi-diadikasia-kata-tis-meta-gia-diafimiseis-oikonomikis-apatis-meta-apo-kataggelia-farantoyri/"
+        "https://www.efsyn.gr/oikonomia/1441844/oi-nees-syzitiseis-ipa-iran-dimioyrgoyn-prosdokies-stin-agora-petrelaioy-ypohoroyn-oi-times/",
+        "https://www.efsyn.gr/kosmos/1441837/vrazei-xana-i-aystria-rekor-ypsilis-thermokrasias-me-408c/"
       ],
-      "seen_at_utc": "2026-08-04T15:17:13.691015+00:00"
+      "seen_at_utc": "2026-08-04T15:30:21.598675+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/world/pio-diasimos-antisimitis-stin-ameriki-o-foititis-pou-dilose-den-thelo-na-doulepso-se-evraio/",
-      "title": "«Ο πιο διάσημος αντισημίτης στην Αμερική» ο φοιτητής που δήλωσε «δεν θέλω να δουλέψω σε Εβραίο»",
-      "normalized_title": "«Ο ΠΙΟ ΔΙΑΣΗΜΟΣ ΑΝΤΙΣΗΜΙΤΗΣ ΣΤΗΝ ΑΜΕΡΙΚΗ» Ο ΦΟΙΤΗΤΗΣ ΠΟΥ ΔΗΛΩΣΕ «ΔΕΝ ΘΕΛΩ ΝΑ ΔΟΥΛΕΨΩ ΣΕ ΕΒΡΑΙΟ»",
+      "url": "https://www.in.gr/2026/08/04/greece/makavrio-eyrima-ston-mystra-vrethike-soros-ilikiomenou-se-katapsykti-kleistou-ksenodoxeiou/",
+      "title": "Μακάβριο εύρημα στον Μυστρά: Βρέθηκε σορός ηλικιωμένου σε καταψύκτη κλειστού ξενοδοχείου",
+      "normalized_title": "ΜΑΚΑΒΡΙΟ ΕΥΡΗΜΑ ΣΤΟΝ ΜΥΣΤΡΑ: ΒΡΕΘΗΚΕ ΣΟΡΟΣ ΗΛΙΚΙΩΜΕΝΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ ΚΛΕΙΣΤΟΥ ΞΕΝΟΔΟΧΕΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/world/pio-diasimos-antisimitis-stin-ameriki-o-foititis-pou-dilose-den-thelo-na-doulepso-se-evraio/",
-        "https://www.in.gr/2026/08/04/life/culture-live/ania-teilor-tzoi-vlepo-tin-ypokritiki-os-mia-elegxomeni-psyxosi/",
-        "https://www.in.gr/2026/08/04/sports/football/symfonise-gia-dyo-xronia-me-ton-salax-i-trampzonspor-to-igemoniko-symvolaio-pou-tha-ypograpsei-pic/"
+        "https://www.in.gr/2026/08/04/greece/makavrio-eyrima-ston-mystra-vrethike-soros-ilikiomenou-se-katapsykti-kleistou-ksenodoxeiou/",
+        "https://www.in.gr/2026/08/04/sports/football/dorea-tou-lionel-mesi-gia-ti-siera-oeste-pou-ypesti-katastrofes-apo-tis-pyrkagies/",
+        "https://www.in.gr/2026/08/04/world/antallages-pyron-metaksy-rosias-kai-oukranias-pente-nekroi/"
       ],
-      "seen_at_utc": "2026-08-04T15:17:13.690994+00:00"
+      "seen_at_utc": "2026-08-04T15:30:21.598642+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T15:17:13.691112+00:00"
+  "updated_at_utc": "2026-08-04T15:30:21.598789+00:00"
 }
