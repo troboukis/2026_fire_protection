@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564384157/servia-i-chamili-stathmi-toy-doynavi-apokalypse-nayagia-ploion-ton-nazi/",
-      "title": "Σερβία: Η χαμηλή στάθμη του Δούναβη αποκάλυψε ναυάγια πλοίων των ναζί",
-      "normalized_title": "ΣΕΡΒΙΑ: Η ΧΑΜΗΛΗ ΣΤΑΘΜΗ ΤΟΥ ΔΟΥΝΑΒΗ ΑΠΟΚΑΛΥΨΕ ΝΑΥΑΓΙΑ ΠΛΟΙΩΝ ΤΩΝ ΝΑΖΙ",
+      "url": "https://www.kathimerini.gr/world/564384364/chtenisan-voyna-skoypidion-gia-na-vroyn-to-tychero-deltio-toy-1-ekat-eyro/",
+      "title": "«Χτένισαν» βουνά σκουπιδιών για να βρουν το τυχερό δελτίο του 1 εκατ. ευρώ",
+      "normalized_title": "«ΧΤΕΝΙΣΑΝ» ΒΟΥΝΑ ΣΚΟΥΠΙΔΙΩΝ ΓΙΑ ΝΑ ΒΡΟΥΝ ΤΟ ΤΥΧΕΡΟ ΔΕΛΤΙΟ ΤΟΥ 1 ΕΚΑΤ. ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564384157/servia-i-chamili-stathmi-toy-doynavi-apokalypse-nayagia-ploion-ton-nazi/",
-        "https://www.kathimerini.gr/athletics/analysis/564384088/panathinaikos-antimetopos-me-tin-tsska-kai-tis-atychies-toy/",
-        "https://www.kathimerini.gr/world/564384046/i-techniti-noimosyni-piso-apo-tis-mises-kyvernoepitheseis-stin-afriki/",
-        "https://www.kathimerini.gr/society/564384310/attikovoiotia-to-vrachykykloma-sto-simeio-miden-tis-pyrkagias/"
+        "https://www.kathimerini.gr/world/564384364/chtenisan-voyna-skoypidion-gia-na-vroyn-to-tychero-deltio-toy-1-ekat-eyro/",
+        "https://www.kathimerini.gr/economy/local/564382738/ta-akinita-ayxisan-ton-ployto-ton-ellinon-ano-toy-1-tris/"
       ],
-      "seen_at_utc": "2026-08-04T18:17:15.637832+00:00"
+      "seen_at_utc": "2026-08-04T18:30:10.778487+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,30 +1269,24 @@
       "seen_at_utc": "2026-08-04T18:17:15.637982+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1441952/pethane-to-idrytiko-stelehos-toy-mera25-andreas-mprakoylias-o-apohairetismos-toy-kommatos/",
-      "title": "Πέθανε το ιδρυτικό στέλεχος του ΜέΡΑ25 Ανδρέας Μπρακούλιας – Ο αποχαιρετισμός του κόμματος",
-      "normalized_title": "ΠΕΘΑΝΕ ΤΟ ΙΔΡΥΤΙΚΟ ΣΤΕΛΕΧΟΣ ΤΟΥ ΜΕΡΑ25 ΑΝΔΡΕΑΣ ΜΠΡΑΚΟΥΛΙΑΣ – Ο ΑΠΟΧΑΙΡΕΤΙΣΜΟΣ ΤΟΥ ΚΟΜΜΑΤΟΣ",
+      "url": "https://www.efsyn.gr/politiki/1441956/konstantopoyloy-gia-pyrkagies-to-kratos-epideiktika-apon-kai-i-kyvernisi-se-diakopes/",
+      "title": "Κωνσταντοπούλου για πυρκαγιές :«Το Κράτος επιδεικτικά απόν και η κυβέρνηση σε διακοπές»",
+      "normalized_title": "ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ ΓΙΑ ΠΥΡΚΑΓΙΕΣ :«ΤΟ ΚΡΑΤΟΣ ΕΠΙΔΕΙΚΤΙΚΑ ΑΠΟΝ ΚΑΙ Η ΚΥΒΕΡΝΗΣΗ ΣΕ ΔΙΑΚΟΠΕΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1441952/pethane-to-idrytiko-stelehos-toy-mera25-andreas-mprakoylias-o-apohairetismos-toy-kommatos/",
-        "https://www.efsyn.gr/politiki/1441947/neo-htypima-aygerinoy-kata-karystianoy-to-shedio-itan-i-apagogi-tis-igesias/",
-        "https://www.efsyn.gr/ellada/1441950/tragiko-trohaio-sti-lero-fortigo-kinithike-me-tin-opisthen-kai-skotose-pezi/"
+        "https://www.efsyn.gr/politiki/1441956/konstantopoyloy-gia-pyrkagies-to-kratos-epideiktika-apon-kai-i-kyvernisi-se-diakopes/"
       ],
-      "seen_at_utc": "2026-08-04T18:17:15.637938+00:00"
+      "seen_at_utc": "2026-08-04T18:30:10.778558+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/football/sygkinisi-stin-kideia-tou-spoudaiou-franko-mparezi-xiliades-kosmou-sto-teleytaio-antio-vid/",
-      "title": "Συγκίνηση στην κηδεία του σπουδαίου Φράνκο Μπαρέζι: Χιλιάδες κόσμου στο τελευταίο «αντίο» (vid)",
-      "normalized_title": "ΣΥΓΚΙΝΗΣΗ ΣΤΗΝ ΚΗΔΕΙΑ ΤΟΥ ΣΠΟΥΔΑΙΟΥ ΦΡΑΝΚΟ ΜΠΑΡΕΖΙ: ΧΙΛΙΑΔΕΣ ΚΟΣΜΟΥ ΣΤΟ ΤΕΛΕΥΤΑΙΟ «ΑΝΤΙΟ» (VID)",
+      "url": "https://www.in.gr/2026/08/04/sports/football/olympiakos-naimegken-to-markarisma-tou-negiamits-ston-tsikinio-sto-11/",
+      "title": "Ολυμπιακός-Ναϊμέγκεν: Το μαρκάρισμα του Νέγιαμιτς στον Τσικίνιο στο 11′",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ-ΝΑΙΜΕΓΚΕΝ: ΤΟ ΜΑΡΚΑΡΙΣΜΑ ΤΟΥ ΝΕΓΙΑΜΙΤΣ ΣΤΟΝ ΤΣΙΚΙΝΙΟ ΣΤΟ 11′",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/football/sygkinisi-stin-kideia-tou-spoudaiou-franko-mparezi-xiliades-kosmou-sto-teleytaio-antio-vid/",
-        "https://www.in.gr/2026/08/04/world/i-texerani-stronei-ton-dromo-gia-na-anoiksoun-ta-stena-tou-ormouz-pithani-i-symfonia-me-to-oman-leei/",
-        "https://www.in.gr/2026/08/04/life/culture-live/osa-emathe-o-alan-ritson-apo-ti-synergasia-tou-me-ton-arnolnt-svartsenegker/",
-        "https://www.in.gr/2026/08/04/in-science/episthmes/moriako-psalidi-kanei-kommatakia-to-dna-tou-karkinou/",
-        "https://www.in.gr/matchcenter/5954871/",
-        "https://www.in.gr/matchcenter/5954869/"
+        "https://www.in.gr/2026/08/04/sports/football/olympiakos-naimegken-to-markarisma-tou-negiamits-ston-tsikinio-sto-11/",
+        "https://www.in.gr/2026/08/04/sports/football/olympiakos-naimegken-anakoinothike-sold-out-sto-g-karaiskakis-pic/"
       ],
-      "seen_at_utc": "2026-08-04T18:17:15.637902+00:00"
+      "seen_at_utc": "2026-08-04T18:30:10.778532+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T18:17:15.638092+00:00"
+  "updated_at_utc": "2026-08-04T18:30:10.778639+00:00"
 }
