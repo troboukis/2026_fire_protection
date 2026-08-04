@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564379072/kachypopsia-gia-ipa-sympatheia-gia-ti-rosia/",
-      "title": "Καχυποψία για ΗΠΑ, συμπάθεια για τη Ρωσία",
-      "normalized_title": "ΚΑΧΥΠΟΨΙΑ ΓΙΑ ΗΠΑ, ΣΥΜΠΑΘΕΙΑ ΓΙΑ ΤΗ ΡΩΣΙΑ",
+      "url": "https://www.kathimerini.gr/columns/564381376/gennimeno-gia-dialysi/",
+      "title": "Γεννημένο για διάλυση",
+      "normalized_title": "ΓΕΝΝΗΜΕΝΟ ΓΙΑ ΔΙΑΛΥΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564379072/kachypopsia-gia-ipa-sympatheia-gia-ti-rosia/",
-        "https://www.kathimerini.gr/visual/infographics/564382765/ypsili-zitisi-gia-exochika-stin-ipeirotiki-ellada/"
+        "https://www.kathimerini.gr/columns/564381376/gennimeno-gia-dialysi/",
+        "https://www.kathimerini.gr/politics/564384166/komma-karystianoy-apochorisan-moytsatsoy-ioannidoy-kai-kotsorgios/",
+        "https://www.kathimerini.gr/culture/tv/564383818/mia-gynaika-ena-sygklonistiko-taxidi-zois/"
       ],
-      "seen_at_utc": "2026-08-04T16:51:21.182451+00:00"
+      "seen_at_utc": "2026-08-04T17:17:35.021671+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860661/diasosi-32-paranomon-metanaston-notiodutika-tou-tainarou/?utm_source=rss",
-      "title": "Διάσωση 32 παράνομων μεταναστών νοτιοδυτικά του Ταίναρου",
-      "normalized_title": "ΔΙΑΣΩΣΗ 32 ΠΑΡΑΝΟΜΩΝ ΜΕΤΑΝΑΣΤΩΝ ΝΟΤΙΟΔΥΤΙΚΑ ΤΟΥ ΤΑΙΝΑΡΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1860672/trohaio-dustuhima-sti-lakonia-nekri-25hroni-meta-apo-anatropi-autokinitou-sto-upsos-tis-apideas/?utm_source=rss",
+      "title": "Τροχαίο δυστύχημα στη Λακωνία: Νεκρή 25χρονη μετά από ανατροπή αυτοκινήτου στο ύψος της Απιδέας",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΗ ΛΑΚΩΝΙΑ: ΝΕΚΡΗ 25ΧΡΟΝΗ ΜΕΤΑ ΑΠΟ ΑΝΑΤΡΟΠΗ ΑΥΤΟΚΙΝΗΤΟΥ ΣΤΟ ΥΨΟΣ ΤΗΣ ΑΠΙΔΕΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860661/diasosi-32-paranomon-metanaston-notiodutika-tou-tainarou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860654/sugrousi-elikopteron-stin-attiki-nees-eikones-apo-to-simeio-tis-sudrivis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860672/trohaio-dustuhima-sti-lakonia-nekri-25hroni-meta-apo-anatropi-autokinitou-sto-upsos-tis-apideas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860667/xekinisan-oi-autopsies-stis-puropliktes-periohes-tou-dimou-agiou-vasileiou-sto-rethumno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T16:51:21.182572+00:00"
+      "seen_at_utc": "2026-08-04T17:17:35.021827+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441884/agogi-kata-toy-idryti-tis-revolut-katigoreitai-oti-parekampse-mesiti-gia-tin-agora-polyteloys-thalamigoy/",
-      "title": "Αγωγή κατά του ιδρυτή της Revolut – Κατηγορείται ότι παρέκαμψε μεσίτη για την αγορά πολυτελούς θαλαμηγού",
-      "normalized_title": "ΑΓΩΓΗ ΚΑΤΑ ΤΟΥ ΙΔΡΥΤΗ ΤΗΣ REVOLUT – ΚΑΤΗΓΟΡΕΙΤΑΙ ΟΤΙ ΠΑΡΕΚΑΜΨΕ ΜΕΣΙΤΗ ΓΙΑ ΤΗΝ ΑΓΟΡΑ ΠΟΛΥΤΕΛΟΥΣ ΘΑΛΑΜΗΓΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1441899/hiliades-milanezoi-apohairetisan-ton-thryliko-toys-igeti-franko-mparezi-antio-arhige-eikones-vinteo/",
+      "title": "Ρίγη στο Μιλάνο: Χιλιάδες οπαδοί της Μίλαν αποχαιρέτησαν τον θρυλικό Φράνκο Μπαρέζι – «Αντίο, αρχηγέ» [εικόνες – βίντεο]",
+      "normalized_title": "ΡΙΓΗ ΣΤΟ ΜΙΛΑΝΟ: ΧΙΛΙΑΔΕΣ ΟΠΑΔΟΙ ΤΗΣ ΜΙΛΑΝ ΑΠΟΧΑΙΡΕΤΗΣΑΝ ΤΟΝ ΘΡΥΛΙΚΟ ΦΡΑΝΚΟ ΜΠΑΡΕΖΙ – «ΑΝΤΙΟ, ΑΡΧΗΓΕ» [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441884/agogi-kata-toy-idryti-tis-revolut-katigoreitai-oti-parekampse-mesiti-gia-tin-agora-polyteloys-thalamigoy/",
-        "https://www.efsyn.gr/ellada/1441880/fotografies-ntokoymento-apo-ta-syntrimmia-toy-enos-elikopteroy-poy-synetrivi-sti-psatha/"
+        "https://www.efsyn.gr/athlitismos/1441899/hiliades-milanezoi-apohairetisan-ton-thryliko-toys-igeti-franko-mparezi-antio-arhige-eikones-vinteo/",
+        "https://www.efsyn.gr/ellada/1441914/sygkroysi-elikopteron-stin-psatha-ti-ypostirizoyn-el-as-kai-ypoyrgeio-klimatikis-krisis-gia-ton-eodasaam/",
+        "https://www.efsyn.gr/athlitismos/1441895/pethane-o-palaimahos-protathlitis-stivoy-giorgos-marsellos/",
+        "https://www.efsyn.gr/athlitismos/1441896/sti-rosia-einai-dedomeni-i-metagrafi-toy-livai-gkarsia-ston-panathinaiko/"
       ],
-      "seen_at_utc": "2026-08-04T16:51:21.182557+00:00"
+      "seen_at_utc": "2026-08-04T17:17:35.021786+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/greece/megara-se-ekseliksi-i-prospatheia-filoksenias-pyroplikton-zoon-i-anakoinosi-tis-zoofilikis-enosis/",
-      "title": "Μέγαρα: Σε εξέλιξη η προσπάθεια φιλοξενίας πυρόπληκτων ζώων – Η ανακοίνωση της Ζωοφιλικής Ένωσης",
-      "normalized_title": "ΜΕΓΑΡΑ: ΣΕ ΕΞΕΛΙΞΗ Η ΠΡΟΣΠΑΘΕΙΑ ΦΙΛΟΞΕΝΙΑΣ ΠΥΡΟΠΛΗΚΤΩΝ ΖΩΩΝ – Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΖΩΟΦΙΛΙΚΗΣ ΕΝΩΣΗΣ",
+      "url": "https://www.in.gr/2026/08/04/sports/football/o-livai-gkarsia-einai-sto-aerodromio-tis-mosxas-kai-erxetai-stin-ellada-gia-ton-panathinaiko/",
+      "title": "«Ο Λιβάι Γκαρσία είναι στο αεροδρόμιο της Μόσχας και έρχεται στην Ελλάδα για τον Παναθηναϊκό»",
+      "normalized_title": "«Ο ΛΙΒΑΙ ΓΚΑΡΣΙΑ ΕΙΝΑΙ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΜΟΣΧΑΣ ΚΑΙ ΕΡΧΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/greece/megara-se-ekseliksi-i-prospatheia-filoksenias-pyroplikton-zoon-i-anakoinosi-tis-zoofilikis-enosis/",
-        "https://www.in.gr/2026/08/04/world/italia-h-paysi-isxyos-tis-symfonias-tou-sengken-den-yiothetithike-kata-tis-ispanias/",
-        "https://www.in.gr/2026/08/04/sports/football/zota-silva-i-epilogi-tou-olympiakou-itan-poly-eykoli-terastios-syllogos-me-spoudaia-istoria/"
+        "https://www.in.gr/2026/08/04/sports/football/o-livai-gkarsia-einai-sto-aerodromio-tis-mosxas-kai-erxetai-stin-ellada-gia-ton-panathinaiko/",
+        "https://www.in.gr/2026/08/04/pet-stories/fotia-sta-megara-den-yparxoun-logia-gia-na-perigrapso-ayto-pou-zisame/",
+        "https://www.in.gr/2026/08/04/greece/ntokoumenta-apo-tin-psatha-aytopsia-gia-ta-aitia-tis-moiraias-sygkrousis-ton-ptitikon-meson/",
+        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/i-diaxroniki-epixeirisi-metathesis-eythynon-tou-kyr-mitsotaki-apo-ta-kairika-fainomena-mexri-tis-xronies-pathogeneies/",
+        "https://www.in.gr/2026/08/04/go-fun/fizz/mparak-ompama-aggelos-i-diavolos-mythos-kai-apokathilosi-sta-65a-genethlia-tou/",
+        "https://www.in.gr/2026/08/04/world/oukrania-sygklonistiko-vinteo-deixnei-rosiko-drone-na-kyniga-politi-stin-agora-tis-xersonas/",
+        "https://www.in.gr/2026/08/04/sports/football/olympiakos-i-11ada-me-tin-opoia-tha-antimetopisei-ti-naimegken-pic/",
+        "https://www.in.gr/2026/08/04/inbox/o-aris-anakoinose-ton-rafa-mir-stoxos-mou-na-petyxo-osa-perissotera-gkol-mporo-pics/"
       ],
-      "seen_at_utc": "2026-08-04T16:51:21.182519+00:00"
+      "seen_at_utc": "2026-08-04T17:17:35.021734+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T16:51:21.182665+00:00"
+  "updated_at_utc": "2026-08-04T17:17:35.021904+00:00"
 }
