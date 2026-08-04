@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564383692/exodos-stin-athina-kai-ektos-tin-tetarti-5-8-parti-sto-kpisn-kai-synaylia-chroyli/",
-      "title": "Εξοδος στην Αθήνα και εκτός την Τετάρτη 5/8: Πάρτι στο ΚΠΙΣΝ και συναυλία Χρούλη",
-      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ ΚΑΙ ΕΚΤΟΣ ΤΗΝ ΤΕΤΑΡΤΗ 5/8: ΠΑΡΤΙ ΣΤΟ ΚΠΙΣΝ ΚΑΙ ΣΥΝΑΥΛΙΑ ΧΡΟΥΛΗ",
+      "url": "https://www.kathimerini.gr/athletics/564383446/to-schedio-toy-nikolits-gia-ti-meta-pineda-aek/",
+      "title": "Το σχέδιο του Νίκολιτς για τη μετα-Πινέδα ΑΕΚ",
+      "normalized_title": "ΤΟ ΣΧΕΔΙΟ ΤΟΥ ΝΙΚΟΛΙΤΣ ΓΙΑ ΤΗ ΜΕΤΑ-ΠΙΝΕΔΑ ΑΕΚ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564383692/exodos-stin-athina-kai-ektos-tin-tetarti-5-8-parti-sto-kpisn-kai-synaylia-chroyli/",
-        "https://www.kathimerini.gr/society/564383686/isap-ptosi-kladion-stis-grammes-ektos-leitoyrgias-treis-stathmoi/",
-        "https://www.kathimerini.gr/world/564383680/ektakti-synedriasi-ypoyrgon-tis-e-e-stoys-75-oi-nekroi-apo-tin-krisi-tis-theoyta/",
-        "https://www.kathimerini.gr/world/564383671/se-portokali-synagermo-i-goyatemala-meta-tin-ekrixi-toy-ifaisteioy-foyego/"
+        "https://www.kathimerini.gr/athletics/564383446/to-schedio-toy-nikolits-gia-ti-meta-pineda-aek/",
+        "https://www.kathimerini.gr/k/k-magazine/564376168/giati-oi-gloytoi-einai-to-megalytero-trend-sta-gymnastiria/"
       ],
-      "seen_at_utc": "2026-08-04T12:17:12.919029+00:00"
+      "seen_at_utc": "2026-08-04T12:51:27.998973+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,35 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860483/meteo-to-42-ton-dason-tis-attikis-kaike-mesa-sta-10-teleutaia-hronia/?utm_source=rss",
-      "title": "Meteo: Το 42% των δασών της Αττικής κάηκε μέσα στα 10 τελευταία χρόνια",
-      "normalized_title": "METEO: ΤΟ 42% ΤΩΝ ΔΑΣΩΝ ΤΗΣ ΑΤΤΙΚΗΣ ΚΑΗΚΕ ΜΕΣΑ ΣΤΑ 10 ΤΕΛΕΥΤΑΙΑ ΧΡΟΝΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1860494/i-xirasia-stegnonei-ton-udroviotopo-kalohoriou-anisuhitikes-eikones/?utm_source=rss",
+      "title": "Η ξηρασία «στεγνώνει» τον υδροβιότοπο Καλοχωρίου, δείτε εικόνες",
+      "normalized_title": "Η ΞΗΡΑΣΙΑ «ΣΤΕΓΝΩΝΕΙ» ΤΟΝ ΥΔΡΟΒΙΟΤΟΠΟ ΚΑΛΟΧΩΡΙΟΥ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860483/meteo-to-42-ton-dason-tis-attikis-kaike-mesa-sta-10-teleutaia-hronia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860478/fotia-stin-attikovoiotia-kaikan-pano-apo-126000-stremmata-mehri-tin-kuriaki-deite-hartes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860494/i-xirasia-stegnonei-ton-udroviotopo-kalohoriou-anisuhitikes-eikones/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T12:17:12.919185+00:00"
+      "seen_at_utc": "2026-08-04T12:51:27.999079+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1441701/gaza-to-katar-katigorei-to-israil-oti-kathysterei-tin-efarmogi-toy-shedioy-eirinis/",
-      "title": "Γάζα: Το Κατάρ κατηγορεί το Ισραήλ ότι καθυστερεί την εφαρμογή του σχεδίου ειρήνης",
-      "normalized_title": "ΓΑΖΑ: ΤΟ ΚΑΤΑΡ ΚΑΤΗΓΟΡΕΙ ΤΟ ΙΣΡΑΗΛ ΟΤΙ ΚΑΘΥΣΤΕΡΕΙ ΤΗΝ ΕΦΑΡΜΟΓΗ ΤΟΥ ΣΧΕΔΙΟΥ ΕΙΡΗΝΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1441698/komma-karystianoy-apohorise-i-katerina-moytsatsoy-kai-alla-dyo-stelehi/",
+      "title": "Κόμμα Καρυστιανού: Αποχώρησε η Κατερίνα Μουτσάτσου και άλλα δύο στελέχη",
+      "normalized_title": "ΚΟΜΜΑ ΚΑΡΥΣΤΙΑΝΟΥ: ΑΠΟΧΩΡΗΣΕ Η ΚΑΤΕΡΙΝΑ ΜΟΥΤΣΑΤΣΟΥ ΚΑΙ ΑΛΛΑ ΔΥΟ ΣΤΕΛΕΧΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1441701/gaza-to-katar-katigorei-to-israil-oti-kathysterei-tin-efarmogi-toy-shedioy-eirinis/"
+        "https://www.efsyn.gr/politiki/1441698/komma-karystianoy-apohorise-i-katerina-moytsatsoy-kai-alla-dyo-stelehi/",
+        "https://www.efsyn.gr/ellada/1441685/se-red-code-kai-tin-tetarti-attiki-kai-treis-akomi-periohes-kampanaki-gia-ekdilosi-pyrkagion/"
       ],
-      "seen_at_utc": "2026-08-04T12:30:22.080150+00:00"
+      "seen_at_utc": "2026-08-04T12:51:27.999060+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/politics/epikairotita/syriza-megala-logia-kai-thlivera-erga-apo-tin-kyvernisi-mitsotaki-gia-tin-antimetopisi-ton-pyrkagion/",
-      "title": "ΣΥΡΙΖΑ: Μεγάλα λόγια και θλιβερά έργα από την κυβέρνηση Μητσοτάκη για την αντιμετώπιση των πυρκαγιών",
-      "normalized_title": "ΣΥΡΙΖΑ: ΜΕΓΑΛΑ ΛΟΓΙΑ ΚΑΙ ΘΛΙΒΕΡΑ ΕΡΓΑ ΑΠΟ ΤΗΝ ΚΥΒΕΡΝΗΣΗ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΗΝ ΑΝΤΙΜΕΤΩΠΙΣΗ ΤΩΝ ΠΥΡΚΑΓΙΩΝ",
+      "url": "https://www.in.gr/2026/08/04/politics/politiki-grammateia/to-antio-tis-neas-aristeras-ston-laki-xalkia-synedese-ti-foni-tou-me-tous-agones-tou-laou/",
+      "title": "Το «αντίο» της Νέας Αριστεράς στον Λάκη Χαλκιά: «Συνέδεσε τη φωνή του με τους αγώνες του λαού»",
+      "normalized_title": "ΤΟ «ΑΝΤΙΟ» ΤΗΣ ΝΕΑΣ ΑΡΙΣΤΕΡΑΣ ΣΤΟΝ ΛΑΚΗ ΧΑΛΚΙΑ: «ΣΥΝΕΔΕΣΕ ΤΗ ΦΩΝΗ ΤΟΥ ΜΕ ΤΟΥΣ ΑΓΩΝΕΣ ΤΟΥ ΛΑΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/politics/epikairotita/syriza-megala-logia-kai-thlivera-erga-apo-tin-kyvernisi-mitsotaki-gia-tin-antimetopisi-ton-pyrkagion/",
-        "https://www.in.gr/2026/08/04/politics/aftodioikisi/apokatastathike-toposimo-tou-metsovou/",
-        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/eyropaiko-mixanismo-anastolis-asylou-zita-o-pleyris-me-aformi-ti-theouta/"
+        "https://www.in.gr/2026/08/04/politics/politiki-grammateia/to-antio-tis-neas-aristeras-ston-laki-xalkia-synedese-ti-foni-tou-me-tous-agones-tou-laou/",
+        "https://www.in.gr/2026/08/04/sports/football/epistrefei-ston-paok-o-giannoulis/"
       ],
-      "seen_at_utc": "2026-08-04T12:30:22.080090+00:00"
+      "seen_at_utc": "2026-08-04T12:51:27.999036+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T12:30:22.080223+00:00"
+  "updated_at_utc": "2026-08-04T12:51:27.999152+00:00"
 }
