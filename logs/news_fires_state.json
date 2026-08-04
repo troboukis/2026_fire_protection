@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564383551/mitsotakis-ston-epikideio-gia-ton-gianni-varvitsioti-mas-afineis-varia-klironomia/",
-      "title": "Μητσοτάκης στον επικήδειο για τον Ιωάννη Βαρβιτσιώτη: «Μας αφήνεις βαριά κληρονομιά»",
-      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΣΤΟΝ ΕΠΙΚΗΔΕΙΟ ΓΙΑ ΤΟΝ ΙΩΑΝΝΗ ΒΑΡΒΙΤΣΙΩΤΗ: «ΜΑΣ ΑΦΗΝΕΙΣ ΒΑΡΙΑ ΚΛΗΡΟΝΟΜΙΑ»",
+      "url": "https://www.kathimerini.gr/culture/564378451/vivliostates-sto-skrolarisma/",
+      "title": "Βιβλιοστάτες στο σκρολάρισμα",
+      "normalized_title": "ΒΙΒΛΙΟΣΤΑΤΕΣ ΣΤΟ ΣΚΡΟΛΑΡΙΣΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564383551/mitsotakis-ston-epikideio-gia-ton-gianni-varvitsioti-mas-afineis-varia-klironomia/",
-        "https://www.kathimerini.gr/society/564383539/thessaloniki-enas-sovara-traymatias-epeita-apo-trochaio-sto-adendro/",
-        "https://www.kathimerini.gr/world/564383536/oi-choythi-tis-yemenis-anakoinosan-pligma-se-aerodromio-tis-saoydikis-aravias/"
+        "https://www.kathimerini.gr/culture/564378451/vivliostates-sto-skrolarisma/",
+        "https://www.kathimerini.gr/society/564383578/ypsilos-kindynos-pyrkagias-ayrio-red-code-gia-attiki-eyvoia-lesvo-kai-chio/",
+        "https://www.kathimerini.gr/opinion/sketches/564383338/skitso-toy-andrea-petroylaki-04-08-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564383347/skitso-toy-ilia-makri-04-08-26/",
+        "https://www.kathimerini.gr/world/564383572/avevaio-to-mellon-ton-synomilion-ipa-iran-meta-to-pligma-se-ploio-konta-sto-ormoyz/",
+        "https://www.kathimerini.gr/society/564383563/lakis-chalkias-tin-pempti-i-kideia-toy-sto-a-nekrotafeio-dimosia-dapani/"
       ],
-      "seen_at_utc": "2026-08-04T10:51:47.903750+00:00"
+      "seen_at_utc": "2026-08-04T11:17:33.370114+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1264,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860445/fotia-stin-periohi-kotuli-tou-kilkis/?utm_source=rss",
-      "title": "Φωτιά στην περιοχή Κοτύλη του Κιλκίς",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΚΟΤΥΛΗ ΤΟΥ ΚΙΛΚΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1860453/polu-upsilos-kindunos-gia-fotia-kai-tin-tetarti-5-augoustou-se-red-code-i-attiki-i-euvoia-i-lesvos-kai-i-hios/?utm_source=rss",
+      "title": "Πολύ υψηλός κίνδυνος για φωτιά και την Τετάρτη 5 Αυγούστου, σε Red Code η Αττική, η Εύβοια, η Λέσβος και η Χίος",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΓΙΑ ΦΩΤΙΑ ΚΑΙ ΤΗΝ ΤΕΤΑΡΤΗ 5 ΑΥΓΟΥΣΤΟΥ, ΣΕ RED CODE Η ΑΤΤΙΚΗ, Η ΕΥΒΟΙΑ, Η ΛΕΣΒΟΣ ΚΑΙ Η ΧΙΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860445/fotia-stin-periohi-kotuli-tou-kilkis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860444/upaat-apozimioseis-42-ekat-euro-se-176-ktinotrofous-gia-eulogia-aigoprovaton-kai-afthodi-pureto/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860441/paros-plastografisan-tis-psifiakes-tous-tautotites-gia-na-boun-se-nuhterino-kedro-kai-sunelifthisan-treis-17hronoi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860453/polu-upsilos-kindunos-gia-fotia-kai-tin-tetarti-5-augoustou-se-red-code-i-attiki-i-euvoia-i-lesvos-kai-i-hios/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860451/eleutheros-o-aderfos-adidimarhou-mandras-espase-bloko-elas-sudrivi-tou-elikopterou-kai-epese-sta-sudrimmia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-04T10:51:47.903913+00:00"
+      "seen_at_utc": "2026-08-04T11:17:33.370296+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/?p=1441499",
-      "title": "Το Σκασιαρχείο – Τεύχος Αύγουστος 2026",
-      "normalized_title": "ΤΟ ΣΚΑΣΙΑΡΧΕΙΟ – ΤΕΥΧΟΣ ΑΥΓΟΥΣΤΟΣ 2026",
+      "url": "https://www.efsyn.gr/athlitismos/1441659/paok-ta-typika-apomenoyn-gia-tin-epistrofi-giannoyli/",
+      "title": "ΠΑΟΚ: Τα τυπικά απομένουν για την επιστροφή Γιαννούλη",
+      "normalized_title": "ΠΑΟΚ: ΤΑ ΤΥΠΙΚΑ ΑΠΟΜΕΝΟΥΝ ΓΙΑ ΤΗΝ ΕΠΙΣΤΡΟΦΗ ΓΙΑΝΝΟΥΛΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/?p=1441499",
-        "https://www.efsyn.gr/ellada/1441626/pilio-fotia-ston-agio-layrentio-sikothikan-tria-aeroskafi/"
+        "https://www.efsyn.gr/athlitismos/1441659/paok-ta-typika-apomenoyn-gia-tin-epistrofi-giannoyli/",
+        "https://www.efsyn.gr/politiki/1441653/koytsoympas-apo-dytiki-attiki-gia-pyrkagies-i-kyvernisi-ehei-terasties-eythynes/",
+        "https://www.efsyn.gr/ellada/1441638/skopelos-speira-ekleve-ton-vytho-katashethikan-korallia-axias-800-000-eyro/",
+        "https://www.efsyn.gr/politiki/1441641/androylakis-gia-pyrkagies-i-klimatiki-krisi-einai-edo-den-mporei-na-einai-allothi/",
+        "https://www.efsyn.gr/ellada/1441627/ekrixi-se-viotehnia-sta-hania-nekros-o-idioktitis-poy-efere-sovara-egkaymata/"
       ],
-      "seen_at_utc": "2026-08-04T10:51:47.903874+00:00"
+      "seen_at_utc": "2026-08-04T11:17:33.370233+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/04/sports/basketball/euroleague/o-fournie-trelathike-apo-syllogi-filathlou-me-pano-apo-deka-faneles-tou/",
-      "title": "Ο Φουρνιέ «τρελάθηκε» από συλλογή φίλαθλου με πάνω από δέκα φανέλες του",
-      "normalized_title": "Ο ΦΟΥΡΝΙΕ «ΤΡΕΛΑΘΗΚΕ» ΑΠΟ ΣΥΛΛΟΓΗ ΦΙΛΑΘΛΟΥ ΜΕ ΠΑΝΩ ΑΠΟ ΔΕΚΑ ΦΑΝΕΛΕΣ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/04/sports/football/sto-rantar-ton-tselsi-giouventous-kai-ntortmount-o-konstantelias/",
+      "title": "«Στο… ραντάρ των Τσέλσι, Γιουβέντους και Ντόρτμουντ ο Κωνσταντέλιας»",
+      "normalized_title": "«ΣΤΟ… ΡΑΝΤΑΡ ΤΩΝ ΤΣΕΛΣΙ, ΓΙΟΥΒΕΝΤΟΥΣ ΚΑΙ ΝΤΟΡΤΜΟΥΝΤ Ο ΚΩΝΣΤΑΝΤΕΛΙΑΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/04/sports/basketball/euroleague/o-fournie-trelathike-apo-syllogi-filathlou-me-pano-apo-deka-faneles-tou/",
-        "https://www.in.gr/2026/08/04/world/o-pio-xaritomenos-diarriktis-skantzoxoiros-simane-synagermo-se-souper-market-tis-germanias/",
-        "https://www.in.gr/2026/08/04/politics/epikairotita/o-giannis-varvitsiotis-itan-ftiagmenos-apo-to-metallo-mias-allis-epoxis-o-epikideios-tou-prothypourgou/"
+        "https://www.in.gr/2026/08/04/sports/football/sto-rantar-ton-tselsi-giouventous-kai-ntortmount-o-konstantelias/",
+        "https://www.in.gr/2026/08/04/world/pano-apo-150-metanastes-diasothikan-sti-magxi-afou-to-skafos-tous-pire-fotia/",
+        "https://www.in.gr/2026/08/04/greece/i-akeraiotita-kai-i-entimotita-itan-gia-ekeinon-stasi-zois-sygkinimenes-oi-eggones-tou-apoxairetisan-ton-gianni-varvitsioti/",
+        "https://www.in.gr/2026/08/04/life/music/otan-o-nik-keiv-synantise-tin-kaili-minogk-oti-kaname-itan-tryfero-epiko-zesto/",
+        "https://www.in.gr/2026/08/04/world/livanos-israil-evdomos-gyros-synomilion-sti-romi/"
       ],
-      "seen_at_utc": "2026-08-04T10:51:47.903832+00:00"
+      "seen_at_utc": "2026-08-04T11:17:33.370194+00:00"
     }
   },
-  "updated_at_utc": "2026-08-04T10:51:47.904044+00:00"
+  "updated_at_utc": "2026-08-04T11:17:33.370408+00:00"
 }
