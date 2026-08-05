@@ -34,7 +34,28 @@ SECURITY INVOKER
 SET search_path = public
 SET statement_timeout = '20s'
 AS $$
-WITH base AS (
+WITH raw_query_terms AS (
+  SELECT parsed.raw_term
+  FROM regexp_split_to_table(
+    regexp_replace(LEFT(COALESCE(p_q, ''), 500), E'\\s*!\\s*', '&!', 'g'),
+    E'\\s*&\\s*'
+  ) WITH ORDINALITY AS parsed(raw_term, ordinal)
+  WHERE parsed.ordinal <= 10
+),
+query_terms AS (
+  SELECT
+    upper(
+      translate(
+        LEFT(BTRIM(CASE WHEN LEFT(raw_term, 1) = '!' THEN SUBSTRING(raw_term FROM 2) ELSE raw_term END), 100),
+        'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+        'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+      )
+    ) AS value,
+    LEFT(raw_term, 1) = '!' AS excluded
+  FROM raw_query_terms
+  WHERE BTRIM(CASE WHEN LEFT(raw_term, 1) = '!' THEN SUBSTRING(raw_term FROM 2) ELSE raw_term END) <> ''
+),
+base AS (
   SELECT
     d.id,
     d.org_type,
@@ -50,7 +71,21 @@ WITH base AS (
     d.thematic_categories,
     d.spending_signers,
     d.spending_contractors_name,
-    d.spending_contractors_afm
+    d.spending_contractors_afm,
+    upper(
+      translate(
+        CONCAT_WS(
+          ' ',
+          COALESCE(d.subject, ''),
+          COALESCE(d.org_type, ''),
+          COALESCE(d.org_name_clean, ''),
+          COALESCE(d.ada, ''),
+          COALESCE(d.diavgeia_document_type_decision_uid, '')
+        ),
+        'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+        'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+      )
+    ) AS searchable_text
   FROM public.diavgeia d
 ),
 filtered AS (
@@ -64,28 +99,11 @@ filtered AS (
       WHERE d.id = b.id
         AND d.municipality_key = p_municipality_key
     ))
-    AND (
-      p_q IS NULL OR p_q = '' OR
-      upper(
-        translate(
-          CONCAT_WS(
-            ' ',
-            COALESCE(b.subject, ''),
-            COALESCE(b.org_type, ''),
-            COALESCE(b.org_name_clean, ''),
-            COALESCE(b.ada, ''),
-            COALESCE(b.diavgeia_document_type_decision_uid, '')
-          ),
-          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
-          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
-        )
-      ) LIKE '%' || upper(
-        translate(
-          p_q,
-          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
-          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
-        )
-      ) || '%'
+    AND NOT EXISTS (
+      SELECT 1
+      FROM query_terms qt
+      WHERE (NOT qt.excluded AND STRPOS(b.searchable_text, qt.value) = 0)
+         OR (qt.excluded AND STRPOS(b.searchable_text, qt.value) > 0)
     )
 ),
 counted AS (
@@ -117,8 +135,36 @@ SELECT
   total_count
 FROM counted
 ORDER BY decision_date DESC NULLS LAST, id DESC
-OFFSET GREATEST((p_page - 1) * p_page_size, 0)
-LIMIT GREATEST(p_page_size, 1);
+OFFSET (LEAST(GREATEST(COALESCE(p_page, 1), 1), 10000) - 1)
+  * LEAST(GREATEST(COALESCE(p_page_size, 50), 1), 50000)
+LIMIT LEAST(GREATEST(COALESCE(p_page_size, 50), 1), 50000);
 $$;
 
 GRANT EXECUTE ON FUNCTION public.get_diavgeia_page(text, date, date, text, integer, integer) TO anon, authenticated, service_role;
+
+CREATE OR REPLACE FUNCTION public.get_diavgeia_page_snapshot(
+  p_date_from date DEFAULT NULL,
+  p_date_to date DEFAULT NULL,
+  p_municipality_key text DEFAULT NULL
+)
+RETURNS jsonb
+LANGUAGE sql
+SECURITY INVOKER
+SET search_path = public
+SET statement_timeout = '20s'
+AS $$
+SELECT jsonb_build_object(
+  'rows', COALESCE(
+    jsonb_agg(
+      to_jsonb(r) - 'total_count' - 'min_decision_date' - 'max_decision_date'
+      ORDER BY r.decision_date DESC NULLS LAST, r.id DESC
+    ),
+    '[]'::jsonb
+  )
+)
+FROM public.get_diavgeia_page(
+  NULL, p_date_from, p_date_to, p_municipality_key, 1, 50000
+) r;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_diavgeia_page_snapshot(date, date, text) TO anon, authenticated, service_role;

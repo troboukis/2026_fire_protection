@@ -18,6 +18,8 @@ RETURNS TABLE (
   organization_value text,
   title text,
   reference_number text,
+  prev_reference_no text,
+  next_ref_no text,
   cpv_value text,
   procedure_type_value text,
   beneficiary_name text,
@@ -32,8 +34,30 @@ RETURNS TABLE (
 LANGUAGE sql
 SECURITY INVOKER
 SET search_path = public
+SET statement_timeout = '20s'
 AS $$
-WITH RECURSIVE payment_agg AS (
+WITH RECURSIVE raw_query_terms AS (
+  SELECT parsed.raw_term
+  FROM regexp_split_to_table(
+    regexp_replace(LEFT(COALESCE(p_q, ''), 500), E'\\s*!\\s*', '&!', 'g'),
+    E'\\s*&\\s*'
+  ) WITH ORDINALITY AS parsed(raw_term, ordinal)
+  WHERE parsed.ordinal <= 10
+),
+query_terms AS (
+  SELECT
+    upper(
+      translate(
+        LEFT(BTRIM(CASE WHEN LEFT(raw_term, 1) = '!' THEN SUBSTRING(raw_term FROM 2) ELSE raw_term END), 100),
+        'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+        'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+      )
+    ) AS value,
+    LEFT(raw_term, 1) = '!' AS excluded
+  FROM raw_query_terms
+  WHERE BTRIM(CASE WHEN LEFT(raw_term, 1) = '!' THEN SUBSTRING(raw_term FROM 2) ELSE raw_term END) <> ''
+),
+payment_agg AS (
   SELECT
     py.procurement_id,
     SUM(py.amount_without_vat) AS amount_without_vat,
@@ -68,8 +92,7 @@ base AS (
     p.diavgeia_ada,
     COALESCE(p.cancelled, FALSE) AS cancelled,
     (
-      NULLIF(TRIM(p.prev_reference_no), '') IS NOT NULL
-      OR NULLIF(TRIM(p.next_ref_no), '') IS NOT NULL
+      NULLIF(TRIM(p.next_ref_no), '') IS NOT NULL
       OR COALESCE(p.next_modified, FALSE)
       OR COALESCE(p.next_extended, FALSE)
       OR EXISTS (
@@ -80,6 +103,7 @@ base AS (
     ) AS is_modified,
     p.reference_number,
     p.prev_reference_no,
+    p.next_ref_no,
     p.contract_number,
     p.organization_key,
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
@@ -147,38 +171,23 @@ dedup AS (
   FROM base
   WHERE rn = 1
 ),
-chain_walk AS (
-  SELECT
-    d.id,
-    d.prev_reference_no,
-    COALESCE(NULLIF(TRIM(d.reference_number), ''), CONCAT('id:', d.id::text)) AS root_reference,
-    ARRAY[d.id]::bigint[] AS visited_ids,
-    0 AS depth
-  FROM dedup d
-
-  UNION ALL
-
-  SELECT
-    chain_walk.id,
-    parent.prev_reference_no,
-    COALESCE(NULLIF(TRIM(parent.reference_number), ''), chain_walk.root_reference) AS root_reference,
-    chain_walk.visited_ids || parent.id,
-    chain_walk.depth + 1
-  FROM chain_walk
-  JOIN dedup parent
-    ON NULLIF(TRIM(parent.reference_number), '') = NULLIF(TRIM(chain_walk.prev_reference_no), '')
-  WHERE NOT parent.id = ANY(chain_walk.visited_ids)
-    AND chain_walk.depth < 50
-),
-chain_roots AS (
-  SELECT DISTINCT ON (id)
-    id,
-    root_reference
-  FROM chain_walk
-  ORDER BY id, depth DESC
-),
 eligible AS (
-  SELECT *
+  SELECT
+    d.*,
+    upper(
+      translate(
+        CONCAT_WS(
+          ' ',
+          COALESCE(d.title, ''),
+          COALESCE(d.organization_value, ''),
+          COALESCE(d.beneficiary_name, ''),
+          COALESCE(d.cpv_value, ''),
+          COALESCE(d.reference_number, '')
+        ),
+        'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
+        'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
+      )
+    ) AS searchable_text
   FROM dedup d
   WHERE (p_date_from IS NULL OR d.contract_signed_date >= p_date_from)
     AND (p_date_to IS NULL OR d.contract_signed_date <= p_date_to)
@@ -186,42 +195,44 @@ eligible AS (
     AND (p_procedure IS NULL OR p_procedure = '' OR d.procedure_type_value = p_procedure)
     AND (p_org IS NULL OR p_org = '' OR COALESCE(d.organization_value, '') ILIKE '%' || p_org || '%')
 ),
-matching_roots AS (
-  SELECT DISTINCT cr.root_reference
+chain_members AS (
+  SELECT
+    e.id,
+    e.reference_number,
+    e.prev_reference_no,
+    e.next_ref_no
   FROM eligible e
-  JOIN chain_roots cr ON cr.id = e.id
-  WHERE
-      upper(
-        translate(
-          CONCAT_WS(
-            ' ',
-            COALESCE(e.title, ''),
-            COALESCE(e.organization_value, ''),
-            COALESCE(e.beneficiary_name, ''),
-            COALESCE(e.cpv_value, ''),
-            COALESCE(e.reference_number, '')
-          ),
-          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
-          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
-        )
-      ) LIKE '%' || upper(
-        translate(
-          p_q,
-          'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
-          'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
-        )
-      ) || '%'
+  WHERE BTRIM(COALESCE(p_q, '')) <> ''
+    AND NOT EXISTS (
+      SELECT 1
+      FROM query_terms qt
+      WHERE (NOT qt.excluded AND STRPOS(e.searchable_text, qt.value) = 0)
+         OR (qt.excluded AND STRPOS(e.searchable_text, qt.value) > 0)
+    )
+
+  UNION
+
+  SELECT
+    neighbor.id,
+    neighbor.reference_number,
+    neighbor.prev_reference_no,
+    neighbor.next_ref_no
+  FROM chain_members member
+  JOIN dedup neighbor
+    ON NULLIF(BTRIM(neighbor.reference_number), '') = NULLIF(BTRIM(member.prev_reference_no), '')
+    OR NULLIF(BTRIM(neighbor.prev_reference_no), '') = NULLIF(BTRIM(member.reference_number), '')
+    OR NULLIF(BTRIM(neighbor.reference_number), '') = NULLIF(BTRIM(member.next_ref_no), '')
+    OR NULLIF(BTRIM(neighbor.next_ref_no), '') = NULLIF(BTRIM(member.reference_number), '')
 ),
 filtered AS (
   SELECT e.*
   FROM eligible e
-  JOIN chain_roots cr ON cr.id = e.id
   WHERE p_q IS NULL
     OR p_q = ''
     OR EXISTS (
       SELECT 1
-      FROM matching_roots mr
-      WHERE mr.root_reference = cr.root_reference
+      FROM chain_members member
+      WHERE member.id = e.id
     )
 ),
 counted AS (
@@ -234,6 +245,8 @@ SELECT
   organization_value,
   title,
   reference_number,
+  prev_reference_no,
+  next_ref_no,
   cpv_value,
   procedure_type_value,
   beneficiary_name,
@@ -246,8 +259,35 @@ SELECT
   total_count
 FROM counted
 ORDER BY contract_signed_date DESC NULLS LAST, id DESC
-OFFSET GREATEST((p_page - 1) * p_page_size, 0)
-LIMIT GREATEST(p_page_size, 1);
+OFFSET (LEAST(GREATEST(COALESCE(p_page, 1), 1), 10000) - 1)
+  * LEAST(GREATEST(COALESCE(p_page_size, 50), 1), 10000)
+LIMIT LEAST(GREATEST(COALESCE(p_page_size, 50), 1), 10000);
 $$;
 
 GRANT EXECUTE ON FUNCTION public.get_contracts_page(text, text, text, date, date, numeric, integer, integer) TO anon, authenticated, service_role;
+
+CREATE OR REPLACE FUNCTION public.get_contracts_page_snapshot(
+  p_date_from date DEFAULT NULL,
+  p_date_to date DEFAULT NULL
+)
+RETURNS jsonb
+LANGUAGE sql
+SECURITY INVOKER
+SET search_path = public
+SET statement_timeout = '20s'
+AS $$
+SELECT jsonb_build_object(
+  'rows', COALESCE(
+    jsonb_agg(
+      to_jsonb(r) - 'total_count'
+      ORDER BY r.contract_signed_date DESC NULLS LAST, r.id DESC
+    ),
+    '[]'::jsonb
+  )
+)
+FROM public.get_contracts_page(
+  NULL, NULL, NULL, p_date_from, p_date_to, NULL, 1, 10000
+) r;
+$$;
+
+GRANT EXECUTE ON FUNCTION public.get_contracts_page_snapshot(date, date) TO anon, authenticated, service_role;
