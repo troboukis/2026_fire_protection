@@ -691,3 +691,4 @@ run_started_at_athens,fetched_records,rows_added,csv_updated,success,error,error
 2026-08-04 12:01:43 +0300,3,3,True,True,False,NONE
 2026-08-04 15:01:59 +0300,0,0,False,False,True,"ReadTimeout: HTTPSConnectionPool(host='diavgeia.gov.gr', port=443): Read timed out. (read timeout=30)"
 2026-08-05 07:01:39 +0300,16,16,True,True,False,NONE
+2026-08-05 09:01:49 +0300,0,0,False,True,False,NONE
