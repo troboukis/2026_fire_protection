@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564385786/apo-ta-charakomata-stoys-aitheres-i-nea-fasi-toy-polemoy-stin-oykrania/",
-      "title": "Από τα χαρακώματα στους αιθέρες: Η νέα φάση του πολέμου στην Ουκρανία",
-      "normalized_title": "ΑΠΟ ΤΑ ΧΑΡΑΚΩΜΑΤΑ ΣΤΟΥΣ ΑΙΘΕΡΕΣ: Η ΝΕΑ ΦΑΣΗ ΤΟΥ ΠΟΛΕΜΟΥ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.kathimerini.gr/politics/564386497/elas-gia-to-kalodio-i-kyvernisi-panigyrizei-gia-ergo-poy-echei-pagosei-edo-kai-enan-chrono/",
+      "title": "ΕΛΑΣ για το καλώδιο: Η κυβέρνηση πανηγυρίζει για έργο που έχει παγώσει εδώ και ένα χρόνο",
+      "normalized_title": "ΕΛΑΣ ΓΙΑ ΤΟ ΚΑΛΩΔΙΟ: Η ΚΥΒΕΡΝΗΣΗ ΠΑΝΗΓΥΡΙΖΕΙ ΓΙΑ ΕΡΓΟ ΠΟΥ ΕΧΕΙ ΠΑΓΩΣΕΙ ΕΔΩ ΚΑΙ ΕΝΑ ΧΡΟΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564385786/apo-ta-charakomata-stoys-aitheres-i-nea-fasi-toy-polemoy-stin-oykrania/"
+        "https://www.kathimerini.gr/politics/564386497/elas-gia-to-kalodio-i-kyvernisi-panigyrizei-gia-ergo-poy-echei-pagosei-edo-kai-enan-chrono/",
+        "https://www.kathimerini.gr/world/564386500/google-allages-sto-timoni-tis-ai-metakineitai-o-chasampis/"
       ],
-      "seen_at_utc": "2026-08-05T19:30:08.282140+00:00"
+      "seen_at_utc": "2026-08-05T19:51:33.325876+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861281/se-germano-tourista-pou-eihe-hathei-me-allous-epta-anikei-i-soros-pou-edopistike-stin-sumi/?utm_source=rss",
-      "title": "Σε Γερμανό τουρίστα που είχε χαθεί με άλλους επτά ανήκει η σορός που εντοπίστηκε στην Σύμη",
-      "normalized_title": "ΣΕ ΓΕΡΜΑΝΟ ΤΟΥΡΙΣΤΑ ΠΟΥ ΕΙΧΕ ΧΑΘΕΙ ΜΕ ΑΛΛΟΥΣ ΕΠΤΑ ΑΝΗΚΕΙ Η ΣΟΡΟΣ ΠΟΥ ΕΝΤΟΠΙΣΤΗΚΕ ΣΤΗΝ ΣΥΜΗ",
+      "url": "https://www.protothema.gr/greece/article/1861284/fotia-sta-aivaliotika-tou-volou-pano-apo-to-arhaio-theatro-dimitriados/?utm_source=rss",
+      "title": "Φωτιά στα Αϊβαλιώτικα του Βόλου, πάνω από το αρχαίο θέατρο Δημητριάδος",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΑ ΑΙΒΑΛΙΩΤΙΚΑ ΤΟΥ ΒΟΛΟΥ, ΠΑΝΩ ΑΠΟ ΤΟ ΑΡΧΑΙΟ ΘΕΑΤΡΟ ΔΗΜΗΤΡΙΑΔΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861281/se-germano-tourista-pou-eihe-hathei-me-allous-epta-anikei-i-soros-pou-edopistike-stin-sumi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861274/video-oi-seirines-ton-ploion-sto-limani-tis-rafinas-apohairetisan-ton-uparho-tou-superferry/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861284/fotia-sta-aivaliotika-tou-volou-pano-apo-to-arhaio-theatro-dimitriados/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T19:21:48.776488+00:00"
+      "seen_at_utc": "2026-08-05T19:51:33.325991+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442782/tragiko-telos-gia-tis-ereynes-sti-symi-ston-agnooymeno-germano-anikei-i-soros-poy-entopistike-to-proi/",
-      "title": "Τραγικό τέλος για τις έρευνες στη Σύμη: Στον αγνοούμενο Γερμανό ανήκει η σορός που εντοπίστηκε το πρωί",
-      "normalized_title": "ΤΡΑΓΙΚΟ ΤΕΛΟΣ ΓΙΑ ΤΙΣ ΕΡΕΥΝΕΣ ΣΤΗ ΣΥΜΗ: ΣΤΟΝ ΑΓΝΟΟΥΜΕΝΟ ΓΕΡΜΑΝΟ ΑΝΗΚΕΙ Η ΣΟΡΟΣ ΠΟΥ ΕΝΤΟΠΙΣΤΗΚΕ ΤΟ ΠΡΩΙ",
+      "url": "https://www.efsyn.gr/ellada/1442788/fotia-stis-alykes-voloy/",
+      "title": "Φωτιά στις Αλυκές Βόλου",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΙΣ ΑΛΥΚΕΣ ΒΟΛΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442782/tragiko-telos-gia-tis-ereynes-sti-symi-ston-agnooymeno-germano-anikei-i-soros-poy-entopistike-to-proi/"
+        "https://www.efsyn.gr/ellada/1442788/fotia-stis-alykes-voloy/",
+        "https://www.efsyn.gr/athlitismos/1442785/sygkinisi-apopse-sto-oaka-enos-leptoy-sigi-sti-mnimi-ton-pyrosveston-poy-pethanan-sto-kathikon-vinteo/"
       ],
-      "seen_at_utc": "2026-08-05T19:30:08.282276+00:00"
+      "seen_at_utc": "2026-08-05T19:51:33.325957+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/kerdi-gia-tis-megales-etaireies-texnologias-tis-eyropis-apo-tin-texniti-noimosyni/",
-      "title": "Κέρδη για τις μεγάλες εταιρείες τεχνολογίας της Ευρώπης από την τεχνητή νοημοσύνη",
-      "normalized_title": "ΚΕΡΔΗ ΓΙΑ ΤΙΣ ΜΕΓΑΛΕΣ ΕΤΑΙΡΕΙΕΣ ΤΕΧΝΟΛΟΓΙΑΣ ΤΗΣ ΕΥΡΩΠΗΣ ΑΠΟ ΤΗΝ ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ",
+      "url": "https://www.in.gr/2026/08/05/greece/fotia-ston-volo-konta-sto-arxaio-theatro-dimitriados/",
+      "title": "Φωτιά στον Βόλο – Κοντά στο αρχαίο θέατρο Δημητριάδος",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΒΟΛΟ – ΚΟΝΤΑ ΣΤΟ ΑΡΧΑΙΟ ΘΕΑΤΡΟ ΔΗΜΗΤΡΙΑΔΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/kerdi-gia-tis-megales-etaireies-texnologias-tis-eyropis-apo-tin-texniti-noimosyni/"
+        "https://www.in.gr/2026/08/05/greece/fotia-ston-volo-konta-sto-arxaio-theatro-dimitriados/",
+        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/pasok-3/",
+        "https://www.in.gr/2026/08/05/sports/football/panathinaikos-tsska-1948-isofarisan-me-ton-rousef-oi-voulgaroi-vids/"
       ],
-      "seen_at_utc": "2026-08-05T19:30:08.282194+00:00"
+      "seen_at_utc": "2026-08-05T19:51:33.325933+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T19:30:08.282350+00:00"
+  "updated_at_utc": "2026-08-05T19:51:33.326099+00:00"
 }
