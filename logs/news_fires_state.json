@@ -1,18 +1,22 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564385117/gaza-omadikes-kideies-thymaton-poy-eichan-thaftei-sta-syntrimmia/",
-      "title": "Γάζα: Ομαδικές κηδείες θυμάτων που είχαν θαφτεί στα συντρίμμια",
-      "normalized_title": "ΓΑΖΑ: ΟΜΑΔΙΚΕΣ ΚΗΔΕΙΕΣ ΘΥΜΑΤΩΝ ΠΟΥ ΕΙΧΑΝ ΘΑΦΤΕΙ ΣΤΑ ΣΥΝΤΡΙΜΜΙΑ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564385015/syzitisi-gia-gsi-kai-energeiaki-synergasia/",
+      "title": "Συζήτηση για GSI και ενεργειακή συνεργασία",
+      "normalized_title": "ΣΥΖΗΤΗΣΗ ΓΙΑ GSI ΚΑΙ ΕΝΕΡΓΕΙΑΚΗ ΣΥΝΕΡΓΑΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564385117/gaza-omadikes-kideies-thymaton-poy-eichan-thaftei-sta-syntrimmia/",
-        "https://www.kathimerini.gr/politics/564384592/entos-kai-ektos-i-antipoliteysi-stis-pligeises-perioches/",
-        "https://www.kathimerini.gr/world/564385096/tramp-gia-ormoyz-tha-anoixei-poly-syntoma-i-to-iran-tha-ypostei-poly-dynata-pligmata/",
-        "https://www.kathimerini.gr/economy/business/564384949/thorakismenes-me-anthektika-kerdi-kai-ayxisi-daneion-oi-ellinikes-trapezes/",
-        "https://www.kathimerini.gr/politics/564385093/pyrkagies-diypoyrgiki-ypo-ton-mitsotaki-gia-tis-apozimioseis-ton-pyroplikton/",
-        "https://www.kathimerini.gr/world/564385090/oykrania-dyo-nekroi-apo-pligmata-tis-rosias-sto-kievo/"
+        "https://www.kathimerini.gr/economy/diktis/564385015/syzitisi-gia-gsi-kai-energeiaki-synergasia/",
+        "https://www.kathimerini.gr/world/564385153/i-vrazilia-ypovathmise-tis-diplomatikes-scheseis-me-tin-argentini/",
+        "https://www.kathimerini.gr/society/564385138/pyrkagia-sti-dytiki-attiki-veltiomeni-i-eikona-kapnogona-simeia-antimetopizoyn-oi-pyrosvestikes-dynameis/",
+        "https://www.kathimerini.gr/life/health/564207496/ti-prepei-na-kanete-an-echete-i-ypopsiazeste-oti-echete-erpita-zostira/",
+        "https://www.kathimerini.gr/life/health/564207490/kathimerines-synitheies-poy-exasthenoyn-ypoyla-ta-osta/",
+        "https://www.kathimerini.gr/k/gastronomos/564384163/8-foyrnoi-proorismoi-misi-ora-apo-tin-athina/",
+        "https://www.kathimerini.gr/visual/podcasts/564383953/expoze-sto-avato-toy-aspropyrgoy/",
+        "https://www.kathimerini.gr/culture/564381451/i-monadiki-ria-koyrti-echei-simera-ta-genethlia-tis/",
+        "https://www.kathimerini.gr/athletics/564385123/apontos-toy-olympiakoy-i-naimegken-apodeichthike-meggeni/",
+        "https://www.kathimerini.gr/politics/564384550/i-epomeni-imera-6/"
       ],
-      "seen_at_utc": "2026-08-05T04:51:35.866454+00:00"
+      "seen_at_utc": "2026-08-05T05:17:40.705495+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1268,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860806/apologeitai-o-afganos-gia-dolofonia-tis-vretanidas-stin-kupseli-i-istoria-tou-eihe-parousiastei-kai-apo-eruthro-stauro/?utm_source=rss",
-      "title": "Απολογείται σήμερα ο 26χρονος Αφγανός για τη δολοφονία της Βρετανίδας στην Κυψέλη, θέμα και από τον Ερυθρό Σταυρό είχε γίνει η ιστορία του",
-      "normalized_title": "ΑΠΟΛΟΓΕΙΤΑΙ ΣΗΜΕΡΑ Ο 26ΧΡΟΝΟΣ ΑΦΓΑΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΒΡΕΤΑΝΙΔΑΣ ΣΤΗΝ ΚΥΨΕΛΗ, ΘΕΜΑ ΚΑΙ ΑΠΟ ΤΟΝ ΕΡΥΘΡΟ ΣΤΑΥΡΟ ΕΙΧΕ ΓΙΝΕΙ Η ΙΣΤΟΡΙΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1860816/metamosheuseis-horis-sunora-35-ellinika-mosheumata-esosan-ti-zoi-asthenon-sto-exoteriko/?utm_source=rss",
+      "title": "Μεταμοσχεύσεις… χωρίς σύνορα: 35 ελληνικά μοσχεύματα έσωσαν τη ζωή ασθενών στο εξωτερικό",
+      "normalized_title": "ΜΕΤΑΜΟΣΧΕΥΣΕΙΣ… ΧΩΡΙΣ ΣΥΝΟΡΑ: 35 ΕΛΛΗΝΙΚΑ ΜΟΣΧΕΥΜΑΤΑ ΕΣΩΣΑΝ ΤΗ ΖΩΗ ΑΣΘΕΝΩΝ ΣΤΟ ΕΞΩΤΕΡΙΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860806/apologeitai-o-afganos-gia-dolofonia-tis-vretanidas-stin-kupseli-i-istoria-tou-eihe-parousiastei-kai-apo-eruthro-stauro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860816/metamosheuseis-horis-sunora-35-ellinika-mosheumata-esosan-ti-zoi-asthenon-sto-exoteriko/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T04:30:24.913955+00:00"
+      "seen_at_utc": "2026-08-05T05:17:40.705556+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442111/toys-exafanise/",
-      "title": "Τους… εξαφάνισε",
-      "normalized_title": "ΤΟΥΣ… ΕΞΑΦΑΝΙΣΕ",
+      "url": "https://www.efsyn.gr/politiki/1442085/minyma-stirixis-stin-karystianoy-en-meso-neoy-kymatos-apohoriseon/",
+      "title": "Μήνυμα στήριξης στην Καρυστιανού εν μέσω νέου κύματος αποχωρήσεων",
+      "normalized_title": "ΜΗΝΥΜΑ ΣΤΗΡΙΞΗΣ ΣΤΗΝ ΚΑΡΥΣΤΙΑΝΟΥ ΕΝ ΜΕΣΩ ΝΕΟΥ ΚΥΜΑΤΟΣ ΑΠΟΧΩΡΗΣΕΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442111/toys-exafanise/",
-        "https://www.efsyn.gr/politiki/1442103/oyte-koyventa-gia-to-predator/",
-        "https://www.efsyn.gr/oikonomia/1442099/toyrismos-gia-oloys-antistrofi-metrisi-gia-tis-aitiseis-oi-dikaioyhoi-kai-ta-voucher/"
+        "https://www.efsyn.gr/politiki/1442085/minyma-stirixis-stin-karystianoy-en-meso-neoy-kymatos-apohoriseon/",
+        "https://www.efsyn.gr/politiki/1442116/ton-ehei-sto-perimene-dyo-mines/",
+        "https://www.efsyn.gr/oikonomia/1442102/aisiodoxia-stis-agores-kato-apo-80-dolaria-to-petrelaio-en-meso-prosdokion-gia-to-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-05T04:51:35.866530+00:00"
+      "seen_at_utc": "2026-08-05T05:17:40.705542+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/greece/fotia-sti-dytiki-attiki-synexizetai-gia-6i-mera-i-maxi-tis-katasvesis-krisimes-oi-epomenes-ores/",
-      "title": "Φωτιά στη Δυτική Αττική: Συνεχίζεται για 6η μέρα η μάχη της κατάσβεσης – Κρίσιμες οι επόμενες ώρες",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΣΥΝΕΧΙΖΕΤΑΙ ΓΙΑ 6Η ΜΕΡΑ Η ΜΑΧΗ ΤΗΣ ΚΑΤΑΣΒΕΣΗΣ – ΚΡΙΣΙΜΕΣ ΟΙ ΕΠΟΜΕΝΕΣ ΩΡΕΣ",
+      "url": "https://www.in.gr/2026/08/05/economy/agro-in/elliniko-meli-eyoiones-oi-prooptikes-sti-galliki-agora-stathera-ypsili-katanalosi/",
+      "title": "Ευοίωνες οι προοπτικές του ελληνικού μελιού στη γαλλική αγορά - Σταθερά υψηλή κατανάλωση",
+      "normalized_title": "ΕΥΟΙΩΝΕΣ ΟΙ ΠΡΟΟΠΤΙΚΕΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΜΕΛΙΟΥ ΣΤΗ ΓΑΛΛΙΚΗ ΑΓΟΡΑ - ΣΤΑΘΕΡΑ ΥΨΗΛΗ ΚΑΤΑΝΑΛΩΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/greece/fotia-sti-dytiki-attiki-synexizetai-gia-6i-mera-i-maxi-tis-katasvesis-krisimes-oi-epomenes-ores/",
-        "https://www.in.gr/2026/08/05/plus/vita/oi-pente-vasikoi-pylones-tis-eytyxias/"
+        "https://www.in.gr/2026/08/05/economy/agro-in/elliniko-meli-eyoiones-oi-prooptikes-sti-galliki-agora-stathera-ypsili-katanalosi/",
+        "https://www.in.gr/2026/08/05/in-science/perivallon-b-science/i-akraia-zesti-plittei-ti-notia-eyropi-pou-flegetai-oi-igetes-tis-ee-apodynamonoun-tis-fysikes-amynes-tis/",
+        "https://www.in.gr/2026/08/05/editorial/mia-xora-pou-den-ependyei-sto-mellon-tis/",
+        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/nea-krisi-gia-tin-kyvernisi-pasxizei-gia-tin-epikoinoniaki-diaxeirisi-tis-pyrinis-katastrofis/",
+        "https://www.in.gr/2026/08/05/life/culture-live/to-skotadi-otan-i-orasi-den-mporei-na-se-voithisei/",
+        "https://www.in.gr/2026/08/05/greece/ston-anakriti-o-26xronos-afganos-gia-ti-dolofonia-tis-vretanidas-stin-kypseli/"
       ],
-      "seen_at_utc": "2026-08-05T04:51:35.866516+00:00"
+      "seen_at_utc": "2026-08-05T05:17:40.705530+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T04:51:35.866609+00:00"
+  "updated_at_utc": "2026-08-05T05:17:40.705617+00:00"
 }
