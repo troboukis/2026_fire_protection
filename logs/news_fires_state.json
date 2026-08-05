@@ -1,22 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/diktis/564385015/syzitisi-gia-gsi-kai-energeiaki-synergasia/",
-      "title": "Συζήτηση για GSI και ενεργειακή συνεργασία",
-      "normalized_title": "ΣΥΖΗΤΗΣΗ ΓΙΑ GSI ΚΑΙ ΕΝΕΡΓΕΙΑΚΗ ΣΥΝΕΡΓΑΣΙΑ",
+      "url": "https://www.kathimerini.gr/opinion/564384727/ekstatika-taxidia/",
+      "title": "Εκστατικά ταξίδια",
+      "normalized_title": "ΕΚΣΤΑΤΙΚΑ ΤΑΞΙΔΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/diktis/564385015/syzitisi-gia-gsi-kai-energeiaki-synergasia/",
-        "https://www.kathimerini.gr/world/564385153/i-vrazilia-ypovathmise-tis-diplomatikes-scheseis-me-tin-argentini/",
-        "https://www.kathimerini.gr/society/564385138/pyrkagia-sti-dytiki-attiki-veltiomeni-i-eikona-kapnogona-simeia-antimetopizoyn-oi-pyrosvestikes-dynameis/",
-        "https://www.kathimerini.gr/life/health/564207496/ti-prepei-na-kanete-an-echete-i-ypopsiazeste-oti-echete-erpita-zostira/",
-        "https://www.kathimerini.gr/life/health/564207490/kathimerines-synitheies-poy-exasthenoyn-ypoyla-ta-osta/",
-        "https://www.kathimerini.gr/k/gastronomos/564384163/8-foyrnoi-proorismoi-misi-ora-apo-tin-athina/",
-        "https://www.kathimerini.gr/visual/podcasts/564383953/expoze-sto-avato-toy-aspropyrgoy/",
-        "https://www.kathimerini.gr/culture/564381451/i-monadiki-ria-koyrti-echei-simera-ta-genethlia-tis/",
-        "https://www.kathimerini.gr/athletics/564385123/apontos-toy-olympiakoy-i-naimegken-apodeichthike-meggeni/",
-        "https://www.kathimerini.gr/politics/564384550/i-epomeni-imera-6/"
+        "https://www.kathimerini.gr/opinion/564384727/ekstatika-taxidia/",
+        "https://www.kathimerini.gr/opinion/564384733/pos-teleioneis-enan-polemo/",
+        "https://www.kathimerini.gr/opinion/564384739/oi-kykloi-toy-vlemmatos/",
+        "https://www.kathimerini.gr/opinion/564384553/kritiki-thalpori/",
+        "https://www.kathimerini.gr/economy/business/564384979/ayxisi-kerdon-sta-138-ekat-gia-ti-cenergy-holdings/"
       ],
-      "seen_at_utc": "2026-08-05T05:17:40.705495+00:00"
+      "seen_at_utc": "2026-08-05T05:30:30.721024+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1277,30 +1272,27 @@
       "seen_at_utc": "2026-08-05T05:17:40.705556+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442085/minyma-stirixis-stin-karystianoy-en-meso-neoy-kymatos-apohoriseon/",
-      "title": "Μήνυμα στήριξης στην Καρυστιανού εν μέσω νέου κύματος αποχωρήσεων",
-      "normalized_title": "ΜΗΝΥΜΑ ΣΤΗΡΙΞΗΣ ΣΤΗΝ ΚΑΡΥΣΤΙΑΝΟΥ ΕΝ ΜΕΣΩ ΝΕΟΥ ΚΥΜΑΤΟΣ ΑΠΟΧΩΡΗΣΕΩΝ",
+      "url": "https://www.efsyn.gr/athlitismos/1442105/hanei-ta-panta/",
+      "title": "Χάνει τα πάντα",
+      "normalized_title": "ΧΑΝΕΙ ΤΑ ΠΑΝΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442085/minyma-stirixis-stin-karystianoy-en-meso-neoy-kymatos-apohoriseon/",
-        "https://www.efsyn.gr/politiki/1442116/ton-ehei-sto-perimene-dyo-mines/",
-        "https://www.efsyn.gr/oikonomia/1442102/aisiodoxia-stis-agores-kato-apo-80-dolaria-to-petrelaio-en-meso-prosdokion-gia-to-ormoyz/"
+        "https://www.efsyn.gr/athlitismos/1442105/hanei-ta-panta/",
+        "https://www.efsyn.gr/media/1442112/press-point-ena-pazl-gia-na-valete-ta-kommatia-monoi-sas/",
+        "https://www.efsyn.gr/ellada/1442090/o-mayros-apologismos-ton-pyrkagion-pente-nekroi-stahti-pano-apo-180-000-stremmata/",
+        "https://www.efsyn.gr/life/1442117/dolofonia-tupac-epistrefei-sta-edrana-i-polykroti-ypothesi-nees-martyries-anatrepoyn-tin-episimi-ekdohi/"
       ],
-      "seen_at_utc": "2026-08-05T05:17:40.705542+00:00"
+      "seen_at_utc": "2026-08-05T05:30:30.721090+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/economy/agro-in/elliniko-meli-eyoiones-oi-prooptikes-sti-galliki-agora-stathera-ypsili-katanalosi/",
-      "title": "Ευοίωνες οι προοπτικές του ελληνικού μελιού στη γαλλική αγορά - Σταθερά υψηλή κατανάλωση",
-      "normalized_title": "ΕΥΟΙΩΝΕΣ ΟΙ ΠΡΟΟΠΤΙΚΕΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΜΕΛΙΟΥ ΣΤΗ ΓΑΛΛΙΚΗ ΑΓΟΡΑ - ΣΤΑΘΕΡΑ ΥΨΗΛΗ ΚΑΤΑΝΑΛΩΣΗ",
+      "url": "https://www.in.gr/2026/08/05/sports/football/al-nasr-synantithikan-proti-fora-kristiano-kai-postekoglou-pic/",
+      "title": "Αλ Νασρ: Συναντήθηκαν πρώτη φορά Κριστιάνο και Ποστέκογλου (pic)",
+      "normalized_title": "ΑΛ ΝΑΣΡ: ΣΥΝΑΝΤΗΘΗΚΑΝ ΠΡΩΤΗ ΦΟΡΑ ΚΡΙΣΤΙΑΝΟ ΚΑΙ ΠΟΣΤΕΚΟΓΛΟΥ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/economy/agro-in/elliniko-meli-eyoiones-oi-prooptikes-sti-galliki-agora-stathera-ypsili-katanalosi/",
-        "https://www.in.gr/2026/08/05/in-science/perivallon-b-science/i-akraia-zesti-plittei-ti-notia-eyropi-pou-flegetai-oi-igetes-tis-ee-apodynamonoun-tis-fysikes-amynes-tis/",
-        "https://www.in.gr/2026/08/05/editorial/mia-xora-pou-den-ependyei-sto-mellon-tis/",
-        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/nea-krisi-gia-tin-kyvernisi-pasxizei-gia-tin-epikoinoniaki-diaxeirisi-tis-pyrinis-katastrofis/",
-        "https://www.in.gr/2026/08/05/life/culture-live/to-skotadi-otan-i-orasi-den-mporei-na-se-voithisei/",
-        "https://www.in.gr/2026/08/05/greece/ston-anakriti-o-26xronos-afganos-gia-ti-dolofonia-tis-vretanidas-stin-kypseli/"
+        "https://www.in.gr/2026/08/05/sports/football/al-nasr-synantithikan-proti-fora-kristiano-kai-postekoglou-pic/",
+        "https://www.in.gr/2026/08/05/world/tramp-ta-stena-tou-ormouz-eite-tha-anoiksoun-poly-syntoma-eite-to-iran-tha-ypostei-poly-dynata-pligmata/"
       ],
-      "seen_at_utc": "2026-08-05T05:17:40.705530+00:00"
+      "seen_at_utc": "2026-08-05T05:30:30.721075+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T05:17:40.705617+00:00"
+  "updated_at_utc": "2026-08-05T05:30:30.721164+00:00"
 }
