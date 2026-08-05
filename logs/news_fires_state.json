@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564385633/foties-sti-dytiki-attiki-ta-metra-tis-kyvernisis-gia-ti-stirixi-ton-pligenton/",
-      "title": "Φωτιές στη Δυτική Αττική: Τα μέτρα της κυβέρνησης για τη στήριξη των πληγέντων",
-      "normalized_title": "ΦΩΤΙΕΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΤΑ ΜΕΤΡΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ ΓΙΑ ΤΗ ΣΤΗΡΙΞΗ ΤΩΝ ΠΛΗΓΕΝΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/564385651/mystras-tin-paraskeyi-i-apologia-toy-55chronoy-poy-ekryve-ti-soro-toy-patera-toy-se-katapsykti/",
+      "title": "Μυστράς: Την Παρασκευή η απολογία του 55χρονου που έκρυβε τη σορό του πατέρα του σε καταψύκτη",
+      "normalized_title": "ΜΥΣΤΡΑΣ: ΤΗΝ ΠΑΡΑΣΚΕΥΗ Η ΑΠΟΛΟΓΙΑ ΤΟΥ 55ΧΡΟΝΟΥ ΠΟΥ ΕΚΡΥΒΕ ΤΗ ΣΟΡΟ ΤΟΥ ΠΑΤΕΡΑ ΤΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564385633/foties-sti-dytiki-attiki-ta-metra-tis-kyvernisis-gia-ti-stirixi-ton-pligenton/",
-        "https://www.kathimerini.gr/world/564385624/machi-me-tis-floges-sti-malakastra-tis-alvanias/"
+        "https://www.kathimerini.gr/society/564385651/mystras-tin-paraskeyi-i-apologia-toy-55chronoy-poy-ekryve-ti-soro-toy-patera-toy-se-katapsykti/",
+        "https://www.kathimerini.gr/world/564385648/rosia-o-epikefalis-ergostasioy-drones-traymatistike-se-ekrixi-aytokinitoy-nekros-o-odigos-toy/"
       ],
-      "seen_at_utc": "2026-08-05T11:30:13.667846+00:00"
+      "seen_at_utc": "2026-08-05T11:51:19.696719+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861008/epiheiriseis-ekmetalleusis-van-ennea-nisia-den-tiroun-to-hrono-prokratisis-kai-anartisis-stoiheion-sto-psifiako-mitroo/?utm_source=rss",
-      "title": "Οι επιχειρήσεις εκμετάλλευσης Van σε εννέα νησιά δεν θα τηρούν το χρόνο προκράτησης και ανάρτησης στοιχείων στο ψηφιακό μητρώο",
-      "normalized_title": "ΟΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΕΚΜΕΤΑΛΛΕΥΣΗΣ VAN ΣΕ ΕΝΝΕΑ ΝΗΣΙΑ ΔΕΝ ΘΑ ΤΗΡΟΥΝ ΤΟ ΧΡΟΝΟ ΠΡΟΚΡΑΤΗΣΗΣ ΚΑΙ ΑΝΑΡΤΗΣΗΣ ΣΤΟΙΧΕΙΩΝ ΣΤΟ ΨΗΦΙΑΚΟ ΜΗΤΡΩΟ",
+      "url": "https://www.protothema.gr/greece/article/1861016/egainiastike-to-anakainismeno-gipedo-basket-tou-platanou-naupaktias-pou-apotelei-horigia-tis-farmakeutikis-biokosmos/?utm_source=rss",
+      "title": "Εγκαινιάστηκε το ανακαινισμένο γήπεδο μπάσκετ του Πλατάνου Ναυπακτίας, παρουσία Μπουρούση και Σχορτσιανίτη",
+      "normalized_title": "ΕΓΚΑΙΝΙΑΣΤΗΚΕ ΤΟ ΑΝΑΚΑΙΝΙΣΜΕΝΟ ΓΗΠΕΔΟ ΜΠΑΣΚΕΤ ΤΟΥ ΠΛΑΤΑΝΟΥ ΝΑΥΠΑΚΤΙΑΣ, ΠΑΡΟΥΣΙΑ ΜΠΟΥΡΟΥΣΗ ΚΑΙ ΣΧΟΡΤΣΙΑΝΙΤΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861008/epiheiriseis-ekmetalleusis-van-ennea-nisia-den-tiroun-to-hrono-prokratisis-kai-anartisis-stoiheion-sto-psifiako-mitroo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861004/fotia-sti-viomihaniki-periohi-koropiou-minuma-apo-to-112-gia-etoimotita/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861016/egainiastike-to-anakainismeno-gipedo-basket-tou-platanou-naupaktias-pou-apotelei-horigia-tis-farmakeutikis-biokosmos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T11:17:23.033573+00:00"
+      "seen_at_utc": "2026-08-05T11:51:19.696818+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442464/klimakio-tis-elas-sto-porto-germeno-na-yparxoyn-grigores-lyseis/",
-      "title": "Κλιμάκιο της ΕΛΑΣ στο Πόρτο Γερμενό: «Να υπάρξουν γρήγορες λύσεις»",
-      "normalized_title": "ΚΛΙΜΑΚΙΟ ΤΗΣ ΕΛΑΣ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ: «ΝΑ ΥΠΑΡΞΟΥΝ ΓΡΗΓΟΡΕΣ ΛΥΣΕΙΣ»",
+      "url": "https://www.efsyn.gr/periballon/1442266/apofasi-orosimo-toy-dee-gia-tis-periohes-natura-erga-mono-me-eidikoys-stohoys-diatirisis/",
+      "title": "Απόφαση – ορόσημο του ΔΕΕ για τις περιοχές Natura: Έργα μόνο με ειδικούς στόχους διατήρησης",
+      "normalized_title": "ΑΠΟΦΑΣΗ – ΟΡΟΣΗΜΟ ΤΟΥ ΔΕΕ ΓΙΑ ΤΙΣ ΠΕΡΙΟΧΕΣ NATURA: ΕΡΓΑ ΜΟΝΟ ΜΕ ΕΙΔΙΚΟΥΣ ΣΤΟΧΟΥΣ ΔΙΑΤΗΡΗΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442464/klimakio-tis-elas-sto-porto-germeno-na-yparxoyn-grigores-lyseis/",
-        "https://www.efsyn.gr/politiki/1442462/mitsotakis-ta-metra-gia-toys-pyropliktoys-epitahynsi-tis-kratikis-arogis-ti-ishyei-gia-tis-epiheiriseis/",
-        "https://www.efsyn.gr/ellada/1442459/pyrkagia-sto-koropi-sto-simeio-ishyres-dynameis-tis-pyrosvestikis/"
+        "https://www.efsyn.gr/periballon/1442266/apofasi-orosimo-toy-dee-gia-tis-periohes-natura-erga-mono-me-eidikoys-stohoys-diatirisis/",
+        "https://www.efsyn.gr/kosmos/1442486/theoyta-anypofori-i-katastasi-gia-ta-paidia-sta-kentra-ypodohis-2-600-pano-apo-to-orio-to-pososto-kalypsis/",
+        "https://www.efsyn.gr/politiki/1442466/voles-georgiadi-kata-konstantopoyloy-me-aformi-tin-synenteyxi-hoyrdaki-stin-ef-syn/",
+        "https://www.efsyn.gr/ellada/1442247/dimos-athinaion-43-sholikes-ayles-ginontai-pio-prasines-kai-pio-droseres/"
       ],
-      "seen_at_utc": "2026-08-05T11:30:13.667918+00:00"
+      "seen_at_utc": "2026-08-05T11:51:19.696793+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/greece/preveza-entopistike-sxedon-athikto-spanio-germaniko-nayagio-tou-v-pagkosmiou-polemou-sto-ionio-fotografies/",
-      "title": "Εντοπίστηκε σχεδόν άθικτο σπάνιο γερμανικό ναυάγιο του Β’ Παγκοσμίου Πολέμου στο Ιόνιο (φωτογραφίες)",
-      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΕ ΣΧΕΔΟΝ ΑΘΙΚΤΟ ΣΠΑΝΙΟ ΓΕΡΜΑΝΙΚΟ ΝΑΥΑΓΙΟ ΤΟΥ Β’ ΠΑΓΚΟΣΜΙΟΥ ΠΟΛΕΜΟΥ ΣΤΟ ΙΟΝΙΟ (ΦΩΤΟΓΡΑΦΙΕΣ)",
+      "url": "https://www.in.gr/2026/08/05/in-science/perivallon-b-science/oie-ena-isxyro-fainomeno-el-ninio-mporei-na-odigisei-epipleon-49-ekat-anthropous-se-okseia-episitistiki-anasfaleia/",
+      "title": "ΟΗΕ: Ένα ισχυρό φαινόμενο Ελ Νίνιο μπορεί να οδηγήσει επιπλέον 49 εκατ. ανθρώπους σε οξεία επισιτιστική ανασφάλεια",
+      "normalized_title": "ΟΗΕ: ΕΝΑ ΙΣΧΥΡΟ ΦΑΙΝΟΜΕΝΟ ΕΛ ΝΙΝΙΟ ΜΠΟΡΕΙ ΝΑ ΟΔΗΓΗΣΕΙ ΕΠΙΠΛΕΟΝ 49 ΕΚΑΤ. ΑΝΘΡΩΠΟΥΣ ΣΕ ΟΞΕΙΑ ΕΠΙΣΙΤΙΣΤΙΚΗ ΑΝΑΣΦΑΛΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/greece/preveza-entopistike-sxedon-athikto-spanio-germaniko-nayagio-tou-v-pagkosmiou-polemou-sto-ionio-fotografies/"
+        "https://www.in.gr/2026/08/05/in-science/perivallon-b-science/oie-ena-isxyro-fainomeno-el-ninio-mporei-na-odigisei-epipleon-49-ekat-anthropous-se-okseia-episitistiki-anasfaleia/",
+        "https://www.in.gr/2026/08/05/world/alvania-maxi-me-tis-floges-dinoun-oi-pyrosvestes-perioxi-tis-malakastra/",
+        "https://www.in.gr/2026/08/05/politics/aftodioikisi/koinonikes-domes-ton-dimon-stin-proti-grammi-enisxysis-ton-politon/",
+        "https://www.in.gr/2026/08/05/sports/football/i-mpenfika-zitaei-70-000-000-eyro-gia-na-poulisei-ton-paylidi/",
+        "https://www.in.gr/2026/08/05/politics/maria-repousi-paraitithike-apo-ton-syriza-me-aixmes-gia-to-politiko-sxedio-tis-neas-igesias/"
       ],
-      "seen_at_utc": "2026-08-05T11:30:13.667896+00:00"
+      "seen_at_utc": "2026-08-05T11:51:19.696761+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T11:30:13.668019+00:00"
+  "updated_at_utc": "2026-08-05T11:51:19.696893+00:00"
 }
