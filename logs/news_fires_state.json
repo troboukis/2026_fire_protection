@@ -1,16 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/investigations/564385876/pos-epireazoyn-oi-kaysones-ta-synaisthimata-mas/",
-      "title": "Πώς επηρεάζουν οι καύσωνες τα συναισθήματά μας",
-      "normalized_title": "ΠΩΣ ΕΠΗΡΕΑΖΟΥΝ ΟΙ ΚΑΥΣΩΝΕΣ ΤΑ ΣΥΝΑΙΣΘΗΜΑΤΑ ΜΑΣ",
+      "url": "https://www.kathimerini.gr/columns/564385990/odysseia-o-tarachopoios-toy-chokei-sto-film-toy-kristofer-nolan/",
+      "title": "«Οδύσσεια»: Ο «ταραχοποιός» του χόκεϊ που παίζει στην ταινία του Νόλαν",
+      "normalized_title": "«ΟΔΥΣΣΕΙΑ»: Ο «ΤΑΡΑΧΟΠΟΙΟΣ» ΤΟΥ ΧΟΚΕΙ ΠΟΥ ΠΑΙΖΕΙ ΣΤΗΝ ΤΑΙΝΙΑ ΤΟΥ ΝΟΛΑΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/investigations/564385876/pos-epireazoyn-oi-kaysones-ta-synaisthimata-mas/",
-        "https://www.kathimerini.gr/society/astynomiko/564386134/ypothesi-marfin-epistrefei-ayrio-stin-ellada-i-46chroni-meta-tin-ekdosi-tis-apo-ti-vretania/",
-        "https://www.kathimerini.gr/life/auto/564386092/exi-spania-montela-poy-kataskeyastikan-apo-gnostes-markes/",
-        "https://www.kathimerini.gr/k/gastronomos/564384346/pagomeni-tarta-black-forest/"
+        "https://www.kathimerini.gr/columns/564385990/odysseia-o-tarachopoios-toy-chokei-sto-film-toy-kristofer-nolan/",
+        "https://www.kathimerini.gr/society/reportaz/564384628/agrypnia-agioreiton-sto-kievo-en-meso-vomvardismon/",
+        "https://www.kathimerini.gr/politics/564379099/ton-ekapsan-ta-enoikia-sti-riviera/",
+        "https://www.kathimerini.gr/society/564386200/irakleio-choris-tis-aisthiseis-tis-i-42chroni-poy-epese-apo-skafos/"
       ],
-      "seen_at_utc": "2026-08-05T16:17:39.887302+00:00"
+      "seen_at_utc": "2026-08-05T16:51:43.140423+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1274,25 +1274,30 @@
       "seen_at_utc": "2026-08-05T16:17:39.887405+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1442670/an-hathagoyei-i-diaforetiki-pinelopi-poy-ensarkose-stin-odysseia-ohi-mono-ypomonetiki-alla-episis-eleytheri-kai-dynati-vinteo/",
-      "title": "Αν Χάθαγουεϊ: Η «διαφορετική» Πηνελόπη που ενσάρκωσε στην Οδύσσεια – Όχι μόνο υπομονετική, αλλά επίσης ελεύθερη και δυνατή [βίντεο]",
-      "normalized_title": "ΑΝ ΧΑΘΑΓΟΥΕΙ: Η «ΔΙΑΦΟΡΕΤΙΚΗ» ΠΗΝΕΛΟΠΗ ΠΟΥ ΕΝΣΑΡΚΩΣΕ ΣΤΗΝ ΟΔΥΣΣΕΙΑ – ΟΧΙ ΜΟΝΟ ΥΠΟΜΟΝΕΤΙΚΗ, ΑΛΛΑ ΕΠΙΣΗΣ ΕΛΕΥΘΕΡΗ ΚΑΙ ΔΥΝΑΤΗ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1442689/sok-sto-mexiko-influencer-ektelestike-se-zontani-metadosi-tin-ora-poy-ekane-metadosi-sto-tiktok/",
+      "title": "Σοκ στο Μεξικό: Influencer εκτελέστηκε «σε ζωντανή μετάδοση» την ώρα που έκανε live στο Tiktok",
+      "normalized_title": "ΣΟΚ ΣΤΟ ΜΕΞΙΚΟ: INFLUENCER ΕΚΤΕΛΕΣΤΗΚΕ «ΣΕ ΖΩΝΤΑΝΗ ΜΕΤΑΔΟΣΗ» ΤΗΝ ΩΡΑ ΠΟΥ ΕΚΑΝΕ LIVE ΣΤΟ TIKTOK",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1442670/an-hathagoyei-i-diaforetiki-pinelopi-poy-ensarkose-stin-odysseia-ohi-mono-ypomonetiki-alla-episis-eleytheri-kai-dynati-vinteo/",
-        "https://www.efsyn.gr/kosmos/1442677/germania-okto-efivoi-akrodexioi-katadikastikan-gia-epitheseis-enantion-prosfygon-kai-aktiviston-tis-aristeras/"
+        "https://www.efsyn.gr/kosmos/1442689/sok-sto-mexiko-influencer-ektelestike-se-zontani-metadosi-tin-ora-poy-ekane-metadosi-sto-tiktok/",
+        "https://www.efsyn.gr/ellada/1442690/tragodia-stin-kriti-nekri-42hroni-sta-malia-poy-epese-sti-thalassa-apo-foyskoto/",
+        "https://www.efsyn.gr/kosmos/1442693/o-proin-prothypoyrgos-tis-gallias-gkampriel-atal-leei-oti-itan-thyma-kyvernoepithesis-apo-ti-rosia/",
+        "https://www.efsyn.gr/epistimi/1442683/mikroskopikes-dines-anakalyfthikan-gia-proti-fora-stin-epifaneia-toy-ilioy/",
+        "https://www.efsyn.gr/kosmos/1442682/edosan-heria-iran-oman-gia-ta-stena-toy-ormoyz-symfonithike-mia-nea-diadromi-dieleysis-ton-ploion/"
       ],
-      "seen_at_utc": "2026-08-05T16:30:09.943361+00:00"
+      "seen_at_utc": "2026-08-05T16:51:43.140510+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/world/londino-den-theoreitai-tromokratiki-energeia-i-epithesi-sto-kovent-gkarnten-leei-i-astynomia/",
-      "title": "Λονδίνο: Δεν θεωρείται τρομοκρατική ενέργεια η επίθεση στο Κόβεντ Γκάρντεν, λέει η αστυνομία – Τι ερευνά",
-      "normalized_title": "ΛΟΝΔΙΝΟ: ΔΕΝ ΘΕΩΡΕΙΤΑΙ ΤΡΟΜΟΚΡΑΤΙΚΗ ΕΝΕΡΓΕΙΑ Η ΕΠΙΘΕΣΗ ΣΤΟ ΚΟΒΕΝΤ ΓΚΑΡΝΤΕΝ, ΛΕΕΙ Η ΑΣΤΥΝΟΜΙΑ – ΤΙ ΕΡΕΥΝΑ",
+      "url": "https://www.in.gr/2026/08/05/sports/football/o-infantino-yposxetai-ton-teliko-tou-mountial-sto-maroko-me-antallagma-ti-dimosia-stiriksi-tou/",
+      "title": "«Ο Ινφαντίνο υπόσχεται τον τελικό του Μουντιάλ στο Μαρόκο με αντάλλαγμα τη δημόσια στήριξή του»",
+      "normalized_title": "«Ο ΙΝΦΑΝΤΙΝΟ ΥΠΟΣΧΕΤΑΙ ΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΜΟΥΝΤΙΑΛ ΣΤΟ ΜΑΡΟΚΟ ΜΕ ΑΝΤΑΛΛΑΓΜΑ ΤΗ ΔΗΜΟΣΙΑ ΣΤΗΡΙΞΗ ΤΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/world/londino-den-theoreitai-tromokratiki-energeia-i-epithesi-sto-kovent-gkarnten-leei-i-astynomia/",
-        "https://www.in.gr/2026/08/05/sports/basketball/o-ntourant-apotheose-ton-gianni-antetokounmpo-tha-mporouse-na-ginei-o-koryfaios-paiktis-olon-ton-epoxon-vid/"
+        "https://www.in.gr/2026/08/05/sports/football/o-infantino-yposxetai-ton-teliko-tou-mountial-sto-maroko-me-antallagma-ti-dimosia-stiriksi-tou/",
+        "https://www.in.gr/2026/08/05/economy/oikonomikes-eidiseis/pyrkagies-to-sxedio-stiriksis-ton-pligenton-kai-apokatastasis-ton-kamenon-analytika-ta-metra/",
+        "https://www.in.gr/2026/08/05/world/o-tramp-einai-pagideymenos-i-tha-synainesei-se-symfonia-me-tous-orous-tou-iran-i-tha-kanei-aionia-polemo/",
+        "https://www.in.gr/2026/08/05/world/fylaki-eos-pente-xronia-gia-okto-efivous-sti-germania-pou-epititheto-se-prosfyges-kai-aktivistes/"
       ],
-      "seen_at_utc": "2026-08-05T16:30:09.943290+00:00"
+      "seen_at_utc": "2026-08-05T16:51:43.140480+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T16:30:09.943453+00:00"
+  "updated_at_utc": "2026-08-05T16:51:43.140604+00:00"
 }
