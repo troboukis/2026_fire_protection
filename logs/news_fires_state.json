@@ -1,18 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564385639/giati-i-vretania-den-agapise-to-tent-laso-oso-i-ameriki/",
-      "title": "Γιατί η Βρετανία δεν αγάπησε το «Τεντ Λάσο» όσο η Αμερική",
-      "normalized_title": "ΓΙΑΤΙ Η ΒΡΕΤΑΝΙΑ ΔΕΝ ΑΓΑΠΗΣΕ ΤΟ «ΤΕΝΤ ΛΑΣΟ» ΟΣΟ Η ΑΜΕΡΙΚΗ",
+      "url": "https://www.kathimerini.gr/world/564385945/vretania-i-kyvernisi-den-tha-prochorisei-se-diexagogi-ereynas-gia-ton-epstain/",
+      "title": "Βρετανία: Η κυβέρνηση δεν θα προχωρήσει σε διεξαγωγή έρευνας για τον Επσταϊν",
+      "normalized_title": "ΒΡΕΤΑΝΙΑ: Η ΚΥΒΕΡΝΗΣΗ ΔΕΝ ΘΑ ΠΡΟΧΩΡΗΣΕΙ ΣΕ ΔΙΕΞΑΓΩΓΗ ΕΡΕΥΝΑΣ ΓΙΑ ΤΟΝ ΕΠΣΤΑΙΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564385639/giati-i-vretania-den-agapise-to-tent-laso-oso-i-ameriki/",
-        "https://www.kathimerini.gr/world/564385912/to-israil-exapelyse-nees-epitheseis-ston-notio-livano/",
-        "https://www.kathimerini.gr/k/k-magazine/564383929/mesa-ston-skoteino-kosmo-toy-tenis-toy-athlimatos-poy-den-sygchorei/",
-        "https://www.kathimerini.gr/politics/564385843/tilefoniki-epikoinonia-mitsotaki-me-ton-proedro-tis-aigyptoy/",
-        "https://www.kathimerini.gr/k/gastronomos/564384331/ta-nistisima-tis-katsarolas-33-syntages-gia-ti-nisteia-toy-dekapentaygoystoy/",
-        "https://www.kathimerini.gr/world/564385885/ipa-epivradynsi-ton-proslipseon-ston-idiotiko-tomea-ton-ioylio/"
+        "https://www.kathimerini.gr/world/564385945/vretania-i-kyvernisi-den-tha-prochorisei-se-diexagogi-ereynas-gia-ton-epstain/",
+        "https://www.kathimerini.gr/world/564385891/i-odysseia-ginetai-kroyaziera-me-eisitirio-87-000-eyro/",
+        "https://www.kathimerini.gr/society/564385921/choris-energo-metopo-i-pyrkagia-sto-koropi/"
       ],
-      "seen_at_utc": "2026-08-05T14:17:13.050127+00:00"
+      "seen_at_utc": "2026-08-05T14:30:02.120984+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,37 +1261,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861103/trohaio-sti-leoforo-kifisou-sto-upsos-tis-gefuras-kaluftaki-sto-reuma-pros-lamia/?utm_source=rss",
-      "title": "Τροχαίο στη Λεωφόρο Κηφισού στο ύψος της γέφυρας Καλυφτάκη στο ρεύμα προς Λαμία",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΛΕΩΦΟΡΟ ΚΗΦΙΣΟΥ ΣΤΟ ΥΨΟΣ ΤΗΣ ΓΕΦΥΡΑΣ ΚΑΛΥΦΤΑΚΗ ΣΤΟ ΡΕΥΜΑ ΠΡΟΣ ΛΑΜΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1861120/edos-orion-ta-apotelesmata-apo-tis-protes-mikroviologikes-analuseis-sto-nero-sti-siviri-sti-halkidiki/?utm_source=rss",
+      "title": "Εντός ορίων τα αποτελέσματα από τις πρώτες μικροβιολογικές αναλύσεις στο νερό στη Σίβηρη της Χαλκιδικής",
+      "normalized_title": "ΕΝΤΟΣ ΟΡΙΩΝ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΠΟ ΤΙΣ ΠΡΩΤΕΣ ΜΙΚΡΟΒΙΟΛΟΓΙΚΕΣ ΑΝΑΛΥΣΕΙΣ ΣΤΟ ΝΕΡΟ ΣΤΗ ΣΙΒΗΡΗ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861103/trohaio-sti-leoforo-kifisou-sto-upsos-tis-gefuras-kaluftaki-sto-reuma-pros-lamia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861120/edos-orion-ta-apotelesmata-apo-tis-protes-mikroviologikes-analuseis-sto-nero-sti-siviri-sti-halkidiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T14:17:13.050256+00:00"
+      "seen_at_utc": "2026-08-05T14:30:02.121106+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442572/siviri-halkidikis-ti-edeixan-ta-apotelesmata-ton-eleghon-gia-to-nero/",
-      "title": "Σίβηρη Χαλκιδικής: Τι έδειξαν τα αποτελέσματα των ελέγχων για το νερό",
-      "normalized_title": "ΣΙΒΗΡΗ ΧΑΛΚΙΔΙΚΗΣ: ΤΙ ΕΔΕΙΞΑΝ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΩΝ ΕΛΕΓΧΩΝ ΓΙΑ ΤΟ ΝΕΡΟ",
+      "url": "https://www.efsyn.gr/kosmos/1442565/sto-podi-germania-nato-kai-oykrania-gia-to-drone-gemato-ekriktika-poy-vrethike-sto-aerodromio-tis-leipsias/",
+      "title": "Στο πόδι Γερμανία, ΝΑΤΟ και Ουκρανία για το drone γεμάτο εκρηκτικά που βρέθηκε στο αεροδρόμιο της Λειψίας",
+      "normalized_title": "ΣΤΟ ΠΟΔΙ ΓΕΡΜΑΝΙΑ, ΝΑΤΟ ΚΑΙ ΟΥΚΡΑΝΙΑ ΓΙΑ ΤΟ DRONE ΓΕΜΑΤΟ ΕΚΡΗΚΤΙΚΑ ΠΟΥ ΒΡΕΘΗΚΕ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΛΕΙΨΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442572/siviri-halkidikis-ti-edeixan-ta-apotelesmata-ton-eleghon-gia-to-nero/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-05-08-2026/",
-        "https://www.efsyn.gr/kosmos/1442560/vretania-tesseris-andres-mahairothikan-sto-koven-gkarnten-mia-47hroni-synelifthi-os-ypopti/"
+        "https://www.efsyn.gr/kosmos/1442565/sto-podi-germania-nato-kai-oykrania-gia-to-drone-gemato-ekriktika-poy-vrethike-sto-aerodromio-tis-leipsias/",
+        "https://www.efsyn.gr/politiki/1442564/apentaxi-ergon-dasopyrosvesis-erotisi-syriza-gia-tin-meta-to-protoselido-tis-ef-syn-na-dothoyn-amesa-exigiseis/"
       ],
-      "seen_at_utc": "2026-08-05T14:17:13.050223+00:00"
+      "seen_at_utc": "2026-08-05T14:30:02.121082+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/life/culture-live/i-naomi-gouots-gia-ton-mystiko-rolo-pou-anelave-sto-spider-man/",
-      "title": "Η Ναόμι Γουότς για τον μυστικό ρόλο που ανέλαβε στο «Spider-Man»",
-      "normalized_title": "Η ΝΑΟΜΙ ΓΟΥΟΤΣ ΓΙΑ ΤΟΝ ΜΥΣΤΙΚΟ ΡΟΛΟ ΠΟΥ ΑΝΕΛΑΒΕ ΣΤΟ «SPIDER-MAN»",
+      "url": "https://www.in.gr/2026/08/05/sports/football/paok-live-streaming-i-synenteyksi-typou-tou-lisi-enopsei-anterlext/",
+      "title": "ΠΑΟΚ: Live Streaming η συνέντευξη Τύπου του Λίσι ενόψει Άντερλεχτ",
+      "normalized_title": "ΠΑΟΚ: LIVE STREAMING Η ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΤΟΥ ΛΙΣΙ ΕΝΟΨΕΙ ΑΝΤΕΡΛΕΧΤ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/life/culture-live/i-naomi-gouots-gia-ton-mystiko-rolo-pou-anelave-sto-spider-man/",
-        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/epithesi-pasok-ston-georgiadi-gia-ta-spitakia-anakyklosis-anelave-ksana-o-anthropos-gia-tis-vromikes-douleies/",
-        "https://www.in.gr/2026/08/05/world/tesseris-traymaties-apo-epithesi-me-maxairi-sto-kentro-tou-londinou/",
-        "https://www.in.gr/2026/08/05/sports/football/figko-kata-infantino-ekane-ti-fifa-na-leitourgei-os-symmoria-na-paraitithei-tora/"
+        "https://www.in.gr/2026/08/05/sports/football/paok-live-streaming-i-synenteyksi-typou-tou-lisi-enopsei-anterlext/"
       ],
-      "seen_at_utc": "2026-08-05T14:17:13.050182+00:00"
+      "seen_at_utc": "2026-08-05T14:30:02.121041+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T14:17:13.050348+00:00"
+  "updated_at_utc": "2026-08-05T14:30:02.121195+00:00"
 }
