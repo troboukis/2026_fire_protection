@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564386299/katadikes-gia-ta-tsiko-toy-neonazismoy-sto-amvoyrgo/",
-      "title": "Καταδίκες για τα «τσικό» του νεοναζισμού στο Αμβούργο",
-      "normalized_title": "ΚΑΤΑΔΙΚΕΣ ΓΙΑ ΤΑ «ΤΣΙΚΟ» ΤΟΥ ΝΕΟΝΑΖΙΣΜΟΥ ΣΤΟ ΑΜΒΟΥΡΓΟ",
+      "url": "https://www.kathimerini.gr/eortologio/564376744/eortologio-poioi-giortazoyn-simera-6-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 6 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 6 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564386299/katadikes-gia-ta-tsiko-toy-neonazismoy-sto-amvoyrgo/",
-        "https://www.kathimerini.gr/economy/564379372/oi-dasmoapallages-gia-aytokinita-motosikletes/",
-        "https://www.kathimerini.gr/world/564386536/voreia-karolina-treis-nekroi-apo-pyrovolismoys-se-katoikia/"
+        "https://www.kathimerini.gr/eortologio/564376744/eortologio-poioi-giortazoyn-simera-6-aygoystoy/",
+        "https://www.kathimerini.gr/society/564386485/pezeskian-i-epikoinonia-me-ton-chamene-einai-poly-dyskoli/",
+        "https://www.kathimerini.gr/athletics/564386539/pagomeni-isopalia-gia-ton-panathinaiko/"
       ],
-      "seen_at_utc": "2026-08-05T20:51:23.349948+00:00"
+      "seen_at_utc": "2026-08-05T21:18:09.665638+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1270,30 @@
       "seen_at_utc": "2026-08-05T20:51:23.350089+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1442808/sti-sofia-i-syneheia-metaxy-panathinaikoy-kai-tsska-pagomeni-isopalia-1-1-sto-oaka/",
-      "title": "Στη Σόφια η συνέχεια μεταξύ Παναθηναϊκού και ΤΣΣΚΑ, «παγωμένη» ισοπαλία 1-1 στο ΟΑΚΑ",
-      "normalized_title": "ΣΤΗ ΣΟΦΙΑ Η ΣΥΝΕΧΕΙΑ ΜΕΤΑΞΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΚΑΙ ΤΣΣΚΑ, «ΠΑΓΩΜΕΝΗ» ΙΣΟΠΑΛΙΑ 1-1 ΣΤΟ ΟΑΚΑ",
+      "url": "https://www.efsyn.gr/kosmos/1442807/germanos-ypoyrgos-esoterikon-gia-to-drone-sti-leipsia-einai-pithano-ena-senario-yvridikis-epithesis/",
+      "title": "Γερμανός υπουργός Εσωτερικών για το drone στη Λειψία: Είναι πιθανό ένα «σενάριο υβριδικής επίθεσης»",
+      "normalized_title": "ΓΕΡΜΑΝΟΣ ΥΠΟΥΡΓΟΣ ΕΣΩΤΕΡΙΚΩΝ ΓΙΑ ΤΟ DRONE ΣΤΗ ΛΕΙΨΙΑ: ΕΙΝΑΙ ΠΙΘΑΝΟ ΕΝΑ «ΣΕΝΑΡΙΟ ΥΒΡΙΔΙΚΗΣ ΕΠΙΘΕΣΗΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1442808/sti-sofia-i-syneheia-metaxy-panathinaikoy-kai-tsska-pagomeni-isopalia-1-1-sto-oaka/"
+        "https://www.efsyn.gr/kosmos/1442807/germanos-ypoyrgos-esoterikon-gia-to-drone-sti-leipsia-einai-pithano-ena-senario-yvridikis-epithesis/",
+        "https://www.efsyn.gr/kosmos/1442805/iran-pezeskian-i-epikoinonia-me-ton-motztampa-hamenei-einai-tora-poly-dyskoli/"
       ],
-      "seen_at_utc": "2026-08-05T20:51:23.350047+00:00"
+      "seen_at_utc": "2026-08-05T21:18:09.665752+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/world/dilosi-grifos-apo-ton-pezeskian-i-epikoinonia-me-ton-anotato-igeti-xamenei-einai-poly-dyskoli-tora/",
-      "title": "Δήλωση-γρίφος από τον Πεζεσκιάν: Η επικοινωνία με τον ανώτατο ηγέτη Χαμενεΐ είναι «πολύ δύσκολη τώρα»",
-      "normalized_title": "ΔΗΛΩΣΗ-ΓΡΙΦΟΣ ΑΠΟ ΤΟΝ ΠΕΖΕΣΚΙΑΝ: Η ΕΠΙΚΟΙΝΩΝΙΑ ΜΕ ΤΟΝ ΑΝΩΤΑΤΟ ΗΓΕΤΗ ΧΑΜΕΝΕΙ ΕΙΝΑΙ «ΠΟΛΥ ΔΥΣΚΟΛΗ ΤΩΡΑ»",
+      "url": "https://www.in.gr/2026/08/06/world/oi-ipa-anastelloun-tis-eisagoges-apo-ton-megalytero-paragogo-avokanto-tou-meksikou/",
+      "title": "Οι ΗΠΑ αναστέλλουν τις εισαγωγές από τον μεγαλύτερο παραγωγό αβοκάντο του Μεξικού",
+      "normalized_title": "ΟΙ ΗΠΑ ΑΝΑΣΤΕΛΛΟΥΝ ΤΙΣ ΕΙΣΑΓΩΓΕΣ ΑΠΟ ΤΟΝ ΜΕΓΑΛΥΤΕΡΟ ΠΑΡΑΓΩΓΟ ΑΒΟΚΑΝΤΟ ΤΟΥ ΜΕΞΙΚΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/world/dilosi-grifos-apo-ton-pezeskian-i-epikoinonia-me-ton-anotato-igeti-xamenei-einai-poly-dyskoli-tora/",
-        "https://www.in.gr/2026/08/05/sports/football/panathinaikos-apodokimasies-apo-ton-kosmo-meta-to-1-1-me-tin-tsska-1948/",
-        "https://www.in.gr/2026/08/05/greece/fotia-stin-karpatho-stin-perioxi-santalo/",
-        "https://www.in.gr/2026/08/05/greece/thessaloniki-fotia-se-diamerisma-stin-polixni-ena-atomo-sto-nosokomeio/",
-        "https://www.in.gr/2026/08/05/greece/staxti-to-oneiro-stin-peloponniso-pyrkagia-katestrepse-to-spiti-vretanon-liges-meres-prin-ti-monimi-metegkatastasi-tous/"
+        "https://www.in.gr/2026/08/06/world/oi-ipa-anastelloun-tis-eisagoges-apo-ton-megalytero-paragogo-avokanto-tou-meksikou/",
+        "https://www.in.gr/2026/08/06/sports/football/nistroup-exoume-tin-piesi-alla-den-yparxei-kati-allo-gia-mas-peran-tis-nikis/",
+        "https://www.in.gr/2026/08/06/sports/football/asist-apo-ton-tzoli-sti-filiki-itta-tis-arsenal-1-3-vid/",
+        "https://www.in.gr/2026/08/06/greece/giorti-simera-6-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/06/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-pempti-06-08-2026/",
+        "https://www.in.gr/2026/08/05/sports/football/giagkousits-na-parousiastoume-kalyteroi-sti-voulgaria/",
+        "https://www.in.gr/2026/08/05/sports/football/panathinaikos-pote-tha-dieksaxthei-to-deytero-paixnidi-me-tin-tsska-1948/"
       ],
-      "seen_at_utc": "2026-08-05T20:51:23.350009+00:00"
+      "seen_at_utc": "2026-08-05T21:18:09.665695+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T20:51:23.350168+00:00"
+  "updated_at_utc": "2026-08-05T21:18:09.665856+00:00"
 }
