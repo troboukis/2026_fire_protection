@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564386149/o-tramp-xilonei-to-elikodromio-toy-leykoy-oikoy/",
-      "title": "Ο Τραμπ «ξηλώνει» το ελικοδρόμιο του Λευκού Οίκου",
-      "normalized_title": "Ο ΤΡΑΜΠ «ΞΗΛΩΝΕΙ» ΤΟ ΕΛΙΚΟΔΡΟΜΙΟ ΤΟΥ ΛΕΥΚΟΥ ΟΙΚΟΥ",
+      "url": "https://www.kathimerini.gr/world/564386299/katadikes-gia-ta-tsiko-toy-neonazismoy-sto-amvoyrgo/",
+      "title": "Καταδίκες για τα «τσικό» του νεοναζισμού στο Αμβούργο",
+      "normalized_title": "ΚΑΤΑΔΙΚΕΣ ΓΙΑ ΤΑ «ΤΣΙΚΟ» ΤΟΥ ΝΕΟΝΑΖΙΣΜΟΥ ΣΤΟ ΑΜΒΟΥΡΓΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564386149/o-tramp-xilonei-to-elikodromio-toy-leykoy-oikoy/",
-        "https://www.kathimerini.gr/world/564384643/oi-xechasmenoi-aichmalotoi-polemoy/"
+        "https://www.kathimerini.gr/world/564386299/katadikes-gia-ta-tsiko-toy-neonazismoy-sto-amvoyrgo/",
+        "https://www.kathimerini.gr/economy/564379372/oi-dasmoapallages-gia-aytokinita-motosikletes/",
+        "https://www.kathimerini.gr/world/564386536/voreia-karolina-treis-nekroi-apo-pyrovolismoys-se-katoikia/"
       ],
-      "seen_at_utc": "2026-08-05T20:30:31.649473+00:00"
+      "seen_at_utc": "2026-08-05T20:51:23.349948+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861284/fotia-sta-aivaliotika-tou-volou-pano-apo-to-arhaio-theatro-dimitriados/?utm_source=rss",
-      "title": "Φωτιά στα Αϊβαλιώτικα του Βόλου, πάνω από το αρχαίο θέατρο Δημητριάδος",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΑ ΑΙΒΑΛΙΩΤΙΚΑ ΤΟΥ ΒΟΛΟΥ, ΠΑΝΩ ΑΠΟ ΤΟ ΑΡΧΑΙΟ ΘΕΑΤΡΟ ΔΗΜΗΤΡΙΑΔΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1861294/mustras-den-itan-oikonomiko-to-kinitro-tou-tou-leei-o-sunigoros-tou-55hronou-kratouse-ton-nekro-patera-tou-se-katapsukti/?utm_source=rss",
+      "title": "Μυστράς: Δεν ήταν οικονομικό το κίνητρό του λέει ο συνήγορος του 55χρονου που κρατούσε τον νεκρό πατέρα του σε καταψύκτη",
+      "normalized_title": "ΜΥΣΤΡΑΣ: ΔΕΝ ΗΤΑΝ ΟΙΚΟΝΟΜΙΚΟ ΤΟ ΚΙΝΗΤΡΟ ΤΟΥ ΛΕΕΙ Ο ΣΥΝΗΓΟΡΟΣ ΤΟΥ 55ΧΡΟΝΟΥ ΠΟΥ ΚΡΑΤΟΥΣΕ ΤΟΝ ΝΕΚΡΟ ΠΑΤΕΡΑ ΤΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861284/fotia-sta-aivaliotika-tou-volou-pano-apo-to-arhaio-theatro-dimitriados/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861294/mustras-den-itan-oikonomiko-to-kinitro-tou-tou-leei-o-sunigoros-tou-55hronou-kratouse-ton-nekro-patera-tou-se-katapsukti/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T19:51:33.325991+00:00"
+      "seen_at_utc": "2026-08-05T20:51:23.350089+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1442805/iran-pezeskian-i-epikoinonia-me-ton-motztampa-hamenei-einai-tora-poly-dyskoli/",
-      "title": "Ιράν – Πεζεσκιάν: Η επικοινωνία με τον Μοτζτάμπα Χαμενεΐ είναι «τώρα πολύ δύσκολη»",
-      "normalized_title": "ΙΡΑΝ – ΠΕΖΕΣΚΙΑΝ: Η ΕΠΙΚΟΙΝΩΝΙΑ ΜΕ ΤΟΝ ΜΟΤΖΤΑΜΠΑ ΧΑΜΕΝΕΙ ΕΙΝΑΙ «ΤΩΡΑ ΠΟΛΥ ΔΥΣΚΟΛΗ»",
+      "url": "https://www.efsyn.gr/athlitismos/1442808/sti-sofia-i-syneheia-metaxy-panathinaikoy-kai-tsska-pagomeni-isopalia-1-1-sto-oaka/",
+      "title": "Στη Σόφια η συνέχεια μεταξύ Παναθηναϊκού και ΤΣΣΚΑ, «παγωμένη» ισοπαλία 1-1 στο ΟΑΚΑ",
+      "normalized_title": "ΣΤΗ ΣΟΦΙΑ Η ΣΥΝΕΧΕΙΑ ΜΕΤΑΞΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΚΑΙ ΤΣΣΚΑ, «ΠΑΓΩΜΕΝΗ» ΙΣΟΠΑΛΙΑ 1-1 ΣΤΟ ΟΑΚΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1442805/iran-pezeskian-i-epikoinonia-me-ton-motztampa-hamenei-einai-tora-poly-dyskoli/"
+        "https://www.efsyn.gr/athlitismos/1442808/sti-sofia-i-syneheia-metaxy-panathinaikoy-kai-tsska-pagomeni-isopalia-1-1-sto-oaka/"
       ],
-      "seen_at_utc": "2026-08-05T20:30:31.649563+00:00"
+      "seen_at_utc": "2026-08-05T20:51:23.350047+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/sports/football/conference-league/pao-tsska-1948-1-1-provlimatise-kai-afise-anoixti-tin-prokrisi-to-trifylli/",
-      "title": "Προβλημάτισε και άφησε ανοιχτή την πρόκριση ο Παναθηναϊκός (1-1)",
-      "normalized_title": "ΠΡΟΒΛΗΜΑΤΙΣΕ ΚΑΙ ΑΦΗΣΕ ΑΝΟΙΧΤΗ ΤΗΝ ΠΡΟΚΡΙΣΗ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ (1-1)",
+      "url": "https://www.in.gr/2026/08/05/world/dilosi-grifos-apo-ton-pezeskian-i-epikoinonia-me-ton-anotato-igeti-xamenei-einai-poly-dyskoli-tora/",
+      "title": "Δήλωση-γρίφος από τον Πεζεσκιάν: Η επικοινωνία με τον ανώτατο ηγέτη Χαμενεΐ είναι «πολύ δύσκολη τώρα»",
+      "normalized_title": "ΔΗΛΩΣΗ-ΓΡΙΦΟΣ ΑΠΟ ΤΟΝ ΠΕΖΕΣΚΙΑΝ: Η ΕΠΙΚΟΙΝΩΝΙΑ ΜΕ ΤΟΝ ΑΝΩΤΑΤΟ ΗΓΕΤΗ ΧΑΜΕΝΕΙ ΕΙΝΑΙ «ΠΟΛΥ ΔΥΣΚΟΛΗ ΤΩΡΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/sports/football/conference-league/pao-tsska-1948-1-1-provlimatise-kai-afise-anoixti-tin-prokrisi-to-trifylli/",
-        "https://www.in.gr/2026/08/05/greece/staxti-to-oneiro-stin-peloponniso-pyrkagia-katestrepse-to-spiti-vretanon-liges-meres-prin-ti-monimi-metegkatastasi-tous/",
-        "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/iran-kai-oman-apofasizoun-gia-to-stena-tou-ormouz-me-tis-ipa-theati/"
+        "https://www.in.gr/2026/08/05/world/dilosi-grifos-apo-ton-pezeskian-i-epikoinonia-me-ton-anotato-igeti-xamenei-einai-poly-dyskoli-tora/",
+        "https://www.in.gr/2026/08/05/sports/football/panathinaikos-apodokimasies-apo-ton-kosmo-meta-to-1-1-me-tin-tsska-1948/",
+        "https://www.in.gr/2026/08/05/greece/fotia-stin-karpatho-stin-perioxi-santalo/",
+        "https://www.in.gr/2026/08/05/greece/thessaloniki-fotia-se-diamerisma-stin-polixni-ena-atomo-sto-nosokomeio/",
+        "https://www.in.gr/2026/08/05/greece/staxti-to-oneiro-stin-peloponniso-pyrkagia-katestrepse-to-spiti-vretanon-liges-meres-prin-ti-monimi-metegkatastasi-tous/"
       ],
-      "seen_at_utc": "2026-08-05T20:30:31.649523+00:00"
+      "seen_at_utc": "2026-08-05T20:51:23.350009+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T20:30:31.649634+00:00"
+  "updated_at_utc": "2026-08-05T20:51:23.350168+00:00"
 }
