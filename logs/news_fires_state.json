@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564386017/o-logariasmos-ton-dasmon-epistrefei-ston-tramp-epitagi-100-dis-dolaria-se-etaireies/",
-      "title": "Ο λογαριασμός των δασμών επιστρέφει στον Τραμπ – «Επιταγή» 100 δισ. δολαρίων σε εταιρείες",
-      "normalized_title": "Ο ΛΟΓΑΡΙΑΣΜΟΣ ΤΩΝ ΔΑΣΜΩΝ ΕΠΙΣΤΡΕΦΕΙ ΣΤΟΝ ΤΡΑΜΠ – «ΕΠΙΤΑΓΗ» 100 ΔΙΣ. ΔΟΛΑΡΙΩΝ ΣΕ ΕΤΑΙΡΕΙΕΣ",
+      "url": "https://www.kathimerini.gr/world/564386008/drone-sti-leipsia-exetazetai-syndesi-me-ta-pagideymena-demata-toy-2024/",
+      "title": "Drone στη Λειψία: Εξετάζεται σύνδεση με τα παγιδευμένα δέματα του 2024",
+      "normalized_title": "DRONE ΣΤΗ ΛΕΙΨΙΑ: ΕΞΕΤΑΖΕΤΑΙ ΣΥΝΔΕΣΗ ΜΕ ΤΑ ΠΑΓΙΔΕΥΜΕΝΑ ΔΕΜΑΤΑ ΤΟΥ 2024",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564386017/o-logariasmos-ton-dasmon-epistrefei-ston-tramp-epitagi-100-dis-dolaria-se-etaireies/"
+        "https://www.kathimerini.gr/world/564386008/drone-sti-leipsia-exetazetai-syndesi-me-ta-pagideymena-demata-toy-2024/",
+        "https://www.kathimerini.gr/culture/tv/564385759/mpampa-s-agapo-o-nikos-allazei-kai-ola-anatrepontai-ston-neo-kyklo/",
+        "https://www.kathimerini.gr/life/diastima/564386059/mikroskopikes-dines-anakalyfthikan-gia-proti-fora-stin-epifaneia-toy-ilioy/"
       ],
-      "seen_at_utc": "2026-08-05T15:30:17.402513+00:00"
+      "seen_at_utc": "2026-08-05T15:51:24.623795+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861154/o-ataman-espase-piata-akougodas-anna-vissi-se-taverna-stin-sumi-deite-video/?utm_source=rss",
-      "title": "Ο Αταμάν έσπασε πιάτα ακούγοντας Άννα Βίσση σε ταβέρνα στην Σύμη, δείτε βίντεο",
-      "normalized_title": "Ο ΑΤΑΜΑΝ ΕΣΠΑΣΕ ΠΙΑΤΑ ΑΚΟΥΓΟΝΤΑΣ ΑΝΝΑ ΒΙΣΣΗ ΣΕ ΤΑΒΕΡΝΑ ΣΤΗΝ ΣΥΜΗ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1861169/purosvestiki-7-sullipseis-gia-thermes-ergasies-kauseis-kai-psistaries-se-attiki-preveza-kai-trikala/?utm_source=rss",
+      "title": "Πυροσβεστική: 7 συλλήψεις για θερμές εργασίες, καύσεις και ψησταριές σε Αττική, Πρέβεζα και Τρίκαλα",
+      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: 7 ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΘΕΡΜΕΣ ΕΡΓΑΣΙΕΣ, ΚΑΥΣΕΙΣ ΚΑΙ ΨΗΣΤΑΡΙΕΣ ΣΕ ΑΤΤΙΚΗ, ΠΡΕΒΕΖΑ ΚΑΙ ΤΡΙΚΑΛΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861154/o-ataman-espase-piata-akougodas-anna-vissi-se-taverna-stin-sumi-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861169/purosvestiki-7-sullipseis-gia-thermes-ergasies-kauseis-kai-psistaries-se-attiki-preveza-kai-trikala/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T15:30:17.402742+00:00"
+      "seen_at_utc": "2026-08-05T15:51:24.623903+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1442634/friktos-thanatos-podosfairisti-stin-tailandi-pethane-akariaia-apo-kerayno-skliro-vinteo/",
-      "title": "Φρικτός θάνατος ποδοσφαιριστή στην Ταϊλάνδη: Πέθανε ακαριαία από κεραυνό [σκληρό βίντεο]",
-      "normalized_title": "ΦΡΙΚΤΟΣ ΘΑΝΑΤΟΣ ΠΟΔΟΣΦΑΙΡΙΣΤΗ ΣΤΗΝ ΤΑΙΛΑΝΔΗ: ΠΕΘΑΝΕ ΑΚΑΡΙΑΙΑ ΑΠΟ ΚΕΡΑΥΝΟ [ΣΚΛΗΡΟ ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/oikonomia/1442651/mayri-thalassa-opos-stena-toy-ormoyz-oi-ehthropraxies-narkothetoyn-to-pagkosmio-emporio-petrelaioy-kai-sitiron/",
+      "title": "Μαύρη Θάλασσα όπως… Στενά του Ορμούζ: Οι εχθροπραξίες ναρκοθετούν το παγκόσμιο εμπόριο πετρελαίου και σιτηρών",
+      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ ΟΠΩΣ… ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ: ΟΙ ΕΧΘΡΟΠΡΑΞΙΕΣ ΝΑΡΚΟΘΕΤΟΥΝ ΤΟ ΠΑΓΚΟΣΜΙΟ ΕΜΠΟΡΙΟ ΠΕΤΡΕΛΑΙΟΥ ΚΑΙ ΣΙΤΗΡΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1442634/friktos-thanatos-podosfairisti-stin-tailandi-pethane-akariaia-apo-kerayno-skliro-vinteo/",
-        "https://www.efsyn.gr/oikonomia/1442611/aktor-desmeytiki-symfonia-me-ti-motor-oil-gia-tin-apoktisi-toy-75-ton-ilektor-kai-thalis/",
-        "https://www.efsyn.gr/ellada/1442632/tragiko-trohaio-sti-glyfada-odigos-paresyre-kai-skotose-76hroni-sti-voyliagmenis/"
+        "https://www.efsyn.gr/oikonomia/1442651/mayri-thalassa-opos-stena-toy-ormoyz-oi-ehthropraxies-narkothetoyn-to-pagkosmio-emporio-petrelaioy-kai-sitiron/",
+        "https://www.efsyn.gr/stiles/1442249/anaklisi/",
+        "https://www.efsyn.gr/ellada/1442637/akraia-rypansi-toy-vythoy-stin-paralia-imerolia-tis-kerkyras-erixan-xaplostres-mesa-sti-thalassa-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-08-05T15:30:17.402649+00:00"
+      "seen_at_utc": "2026-08-05T15:51:24.623877+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/sports/football/lisi-enopsei-anterlext-tha-einai-sklira-kai-isorropimena-mats-na-ekmetalleytoume-tis-kales-mas-stigmes/",
-      "title": "Λίσι ενόψει Άντερλεχτ: «Θα είναι σκληρά και ισορροπημένα ματς, να εκμεταλλευτούμε τις καλές μας στιγμές»",
-      "normalized_title": "ΛΙΣΙ ΕΝΟΨΕΙ ΑΝΤΕΡΛΕΧΤ: «ΘΑ ΕΙΝΑΙ ΣΚΛΗΡΑ ΚΑΙ ΙΣΟΡΡΟΠΗΜΕΝΑ ΜΑΤΣ, ΝΑ ΕΚΜΕΤΑΛΛΕΥΤΟΥΜΕ ΤΙΣ ΚΑΛΕΣ ΜΑΣ ΣΤΙΓΜΕΣ»",
+      "url": "https://www.in.gr/2026/08/05/world/apo-vinteo-sto-tiktok-os-politikes-diloseis-pos-diadidetai-i-paraliroforisi-gia-tin-krisi-tis-theouta/",
+      "title": "Από βίντεο στο TikTok ως πολιτικές δηλώσεις: Πώς διαδίδεται η παραληροφόρηση για την κρίση της Θέουτα",
+      "normalized_title": "ΑΠΟ ΒΙΝΤΕΟ ΣΤΟ TIKTOK ΩΣ ΠΟΛΙΤΙΚΕΣ ΔΗΛΩΣΕΙΣ: ΠΩΣ ΔΙΑΔΙΔΕΤΑΙ Η ΠΑΡΑΛΗΡΟΦΟΡΗΣΗ ΓΙΑ ΤΗΝ ΚΡΙΣΗ ΤΗΣ ΘΕΟΥΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/sports/football/lisi-enopsei-anterlext-tha-einai-sklira-kai-isorropimena-mats-na-ekmetalleytoume-tis-kales-mas-stigmes/",
-        "https://www.in.gr/2026/08/05/go-fun/style/ekpliksi-to-mantili-de-sxediastike-gia-na-fysame-ti-myti-mas-tote-gia-poio-logo/",
-        "https://www.in.gr/2026/08/05/politics/epikairotita/erotisi-ko-syriza-i-kyvernisi-apentakse-canadair-kai-krisima-enaeria-mesa-apo-to-tameio-anakampsis/",
-        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/oi-synantiseis-stis-pyropliktes-perioxes-tou-klimakiou-tis-elas-peripou-40-kamena-spitia-sto-porto-germeno/",
         "https://www.in.gr/2026/08/05/world/apo-vinteo-sto-tiktok-os-politikes-diloseis-pos-diadidetai-i-paraliroforisi-gia-tin-krisi-tis-theouta/",
-        "https://www.in.gr/2026/08/05/sports/football/gkomes-enopsei-anterlext-to-proto-vima-mprosta-stous-filathlous-mas/"
+        "https://www.in.gr/2026/08/05/sports/football/o-kristiano-ronalnto-epideiknyei-tin-apisteyti-syllogi-tou-apo-supercars-poso-kostizei-to-akrivotero-pics/",
+        "https://www.in.gr/2026/08/05/politics/epikairotita/kke-i-kyvernisi-epixeirei-na-krypsei-tis-megales-eythynes-tis-gia-tin-empristiki-politiki/"
       ],
-      "seen_at_utc": "2026-08-05T15:17:06.340217+00:00"
+      "seen_at_utc": "2026-08-05T15:51:24.623840+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T15:30:17.402824+00:00"
+  "updated_at_utc": "2026-08-05T15:51:24.623978+00:00"
 }
