@@ -3,6 +3,9 @@ import { useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
+import DiavgeiaModal from '../components/DiavgeiaModal'
+import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
+import { buildDiavgeiaDecisionCardView } from '../lib/diavgeiaDecision'
 import { supabase } from '../lib/supabase'
 
 type DiavgeiaPageRow = {
@@ -15,6 +18,12 @@ type DiavgeiaPageRow = {
   diavgeia_document_type_decision_uid: string | null
   document_url: string | null
   spending_contractors_value: string | null
+  municipality_key: string | null
+  protocol_number: string | null
+  thematic_categories: string | null
+  spending_signers: string | null
+  spending_contractors_name: string | null
+  spending_contractors_afm: string | null
   min_decision_date: string | null
   max_decision_date: string | null
   total_count: number
@@ -104,6 +113,7 @@ export default function DiavgeiaPage() {
   const [minDecisionDate, setMinDecisionDate] = useState<string | null>(null)
   const [maxDecisionDate, setMaxDecisionDate] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
+  const [selectedDecision, setSelectedDecision] = useState<DiavgeiaDecisionCardView | null>(null)
   const [q, setQ] = useState(initialQ)
   const [dateFrom, setDateFrom] = useState(initialDateFrom)
   const [dateTo, setDateTo] = useState(initialDateTo)
@@ -118,6 +128,7 @@ export default function DiavgeiaPage() {
     setDateFrom(initialDateFrom)
     setDateTo(initialDateTo)
     setPage(1)
+    setSelectedDecision(null)
   }, [initialDateFrom, initialDateTo, initialMunicipalityKey, initialQ])
 
   useEffect(() => {
@@ -206,7 +217,7 @@ export default function DiavgeiaPage() {
   }
 
   return (
-    <div className="contracts-page diavgeia-page">
+    <div className={`contracts-page diavgeia-page${selectedDecision ? ' contracts-page--modal-open' : ''}`}>
       <DevViewToggle />
       <ComponentTag name="DiavgeiaPage" />
       <header className="contracts-header section-rule">
@@ -283,7 +294,31 @@ export default function DiavgeiaPage() {
                     <tr key={row.id}>
                       <td data-label="Ημερομηνία">{fmtDate(row.decision_date)}</td>
                       <td data-label="Φορέας">{orgLabel}</td>
-                      <td data-label="Θέμα">{truncateWords(clean(row.subject), 18)}</td>
+                      <td data-label="Θέμα">
+                        <button
+                          type="button"
+                          className="contracts-title-button"
+                          onClick={() => setSelectedDecision(buildDiavgeiaDecisionCardView({
+                            diavgeia_id: row.id,
+                            org_type: row.org_type,
+                            org_name_clean: row.org_name_clean,
+                            subject: row.subject,
+                            decision_date: row.decision_date,
+                            ada: row.ada,
+                            diavgeia_document_type_decision_uid: row.diavgeia_document_type_decision_uid,
+                            spending_contractors_value: row.spending_contractors_value,
+                            document_url: row.document_url,
+                            municipality_key: row.municipality_key,
+                            protocol_number: row.protocol_number,
+                            thematic_categories: row.thematic_categories,
+                            spending_signers: row.spending_signers,
+                            spending_contractors_name: row.spending_contractors_name,
+                            spending_contractors_afm: row.spending_contractors_afm,
+                          }))}
+                        >
+                          {truncateWords(clean(row.subject), 18)}
+                        </button>
+                      </td>
                       <td data-label="Τύπος απόφασης">{clean(row.diavgeia_document_type_decision_uid) || '—'}</td>
                       <td data-label="Αξία">{fmtEurFromText(row.spending_contractors_value)}</td>
                       <td data-label="ΑΔΑ">
@@ -311,6 +346,13 @@ export default function DiavgeiaPage() {
           </>
         )}
       </section>
+
+      {selectedDecision && (
+        <DiavgeiaModal
+          decision={selectedDecision}
+          onClose={() => setSelectedDecision(null)}
+        />
+      )}
     </div>
   )
 }
