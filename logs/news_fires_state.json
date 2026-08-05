@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564385069/poly-ypsilos-o-kindynos-pyrkagias-simera-red-code-gia-attiki-eyvoia-chio-lesvo/",
-      "title": "Πολύ υψηλός ο κίνδυνος πυρκαγιάς σήμερα – «Red Code» για Αττική, Εύβοια, Χίο, Λέσβο",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ Ο ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ – «RED CODE» ΓΙΑ ΑΤΤΙΚΗ, ΕΥΒΟΙΑ, ΧΙΟ, ΛΕΣΒΟ",
+      "url": "https://www.kathimerini.gr/world/564385117/gaza-omadikes-kideies-thymaton-poy-eichan-thaftei-sta-syntrimmia/",
+      "title": "Γάζα: Ομαδικές κηδείες θυμάτων που είχαν θαφτεί στα συντρίμμια",
+      "normalized_title": "ΓΑΖΑ: ΟΜΑΔΙΚΕΣ ΚΗΔΕΙΕΣ ΘΥΜΑΤΩΝ ΠΟΥ ΕΙΧΑΝ ΘΑΦΤΕΙ ΣΤΑ ΣΥΝΤΡΙΜΜΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564385069/poly-ypsilos-o-kindynos-pyrkagias-simera-red-code-gia-attiki-eyvoia-chio-lesvo/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564384577/ichni-yvridikoy-polemoy-stis-pyles-tis-eyropis/",
-        "https://www.kathimerini.gr/world/564385060/ipa-enoplos-synelifthi-se-gipedo-gkolf-toy-tramp/"
+        "https://www.kathimerini.gr/world/564385117/gaza-omadikes-kideies-thymaton-poy-eichan-thaftei-sta-syntrimmia/",
+        "https://www.kathimerini.gr/politics/564384592/entos-kai-ektos-i-antipoliteysi-stis-pligeises-perioches/",
+        "https://www.kathimerini.gr/world/564385096/tramp-gia-ormoyz-tha-anoixei-poly-syntoma-i-to-iran-tha-ypostei-poly-dynata-pligmata/",
+        "https://www.kathimerini.gr/economy/business/564384949/thorakismenes-me-anthektika-kerdi-kai-ayxisi-daneion-oi-ellinikes-trapezes/",
+        "https://www.kathimerini.gr/politics/564385093/pyrkagies-diypoyrgiki-ypo-ton-mitsotaki-gia-tis-apozimioseis-ton-pyroplikton/",
+        "https://www.kathimerini.gr/world/564385090/oykrania-dyo-nekroi-apo-pligmata-tis-rosias-sto-kievo/"
       ],
-      "seen_at_utc": "2026-08-05T04:30:24.913856+00:00"
+      "seen_at_utc": "2026-08-05T04:51:35.866454+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1273,26 @@
       "seen_at_utc": "2026-08-05T04:30:24.913955+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442075/stin-pyra-to-asylo-anastoli-toy-diethnoys-prosfygikoy-dikaioy-proteinei-o-mitsotakis/",
-      "title": "Στην πυρά το άσυλο: Αναστολή του διεθνούς προσφυγικού δικαίου προτείνει ο Μητσοτάκης",
-      "normalized_title": "ΣΤΗΝ ΠΥΡΑ ΤΟ ΑΣΥΛΟ: ΑΝΑΣΤΟΛΗ ΤΟΥ ΔΙΕΘΝΟΥΣ ΠΡΟΣΦΥΓΙΚΟΥ ΔΙΚΑΙΟΥ ΠΡΟΤΕΙΝΕΙ Ο ΜΗΤΣΟΤΑΚΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1442111/toys-exafanise/",
+      "title": "Τους… εξαφάνισε",
+      "normalized_title": "ΤΟΥΣ… ΕΞΑΦΑΝΙΣΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442075/stin-pyra-to-asylo-anastoli-toy-diethnoys-prosfygikoy-dikaioy-proteinei-o-mitsotakis/",
-        "https://www.efsyn.gr/politiki/1442093/anthropoi-kynigimenoi-horis-elpida/"
+        "https://www.efsyn.gr/politiki/1442111/toys-exafanise/",
+        "https://www.efsyn.gr/politiki/1442103/oyte-koyventa-gia-to-predator/",
+        "https://www.efsyn.gr/oikonomia/1442099/toyrismos-gia-oloys-antistrofi-metrisi-gia-tis-aitiseis-oi-dikaioyhoi-kai-ta-voucher/"
       ],
-      "seen_at_utc": "2026-08-05T04:30:24.913921+00:00"
+      "seen_at_utc": "2026-08-05T04:51:35.866530+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/go-fun/social/arkas-i-kalimera-tis-tetartis-kai-to-martyrio-tou-thanasaki/",
-      "title": "Αρκάς: Η καλημέρα της Τετάρτης και το μαρτύριο του Θανασάκη",
-      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΤΕΤΑΡΤΗΣ ΚΑΙ ΤΟ ΜΑΡΤΥΡΙΟ ΤΟΥ ΘΑΝΑΣΑΚΗ",
+      "url": "https://www.in.gr/2026/08/05/greece/fotia-sti-dytiki-attiki-synexizetai-gia-6i-mera-i-maxi-tis-katasvesis-krisimes-oi-epomenes-ores/",
+      "title": "Φωτιά στη Δυτική Αττική: Συνεχίζεται για 6η μέρα η μάχη της κατάσβεσης – Κρίσιμες οι επόμενες ώρες",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΣΥΝΕΧΙΖΕΤΑΙ ΓΙΑ 6Η ΜΕΡΑ Η ΜΑΧΗ ΤΗΣ ΚΑΤΑΣΒΕΣΗΣ – ΚΡΙΣΙΜΕΣ ΟΙ ΕΠΟΜΕΝΕΣ ΩΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/go-fun/social/arkas-i-kalimera-tis-tetartis-kai-to-martyrio-tou-thanasaki/",
-        "https://www.in.gr/2026/08/05/economy/oikonomikes-eidiseis/misthos-to-stoixima-ton-1-500-eyro-posoi-ergazomenoi-pairnoun-ayta-ta-xrimata/"
+        "https://www.in.gr/2026/08/05/greece/fotia-sti-dytiki-attiki-synexizetai-gia-6i-mera-i-maxi-tis-katasvesis-krisimes-oi-epomenes-ores/",
+        "https://www.in.gr/2026/08/05/plus/vita/oi-pente-vasikoi-pylones-tis-eytyxias/"
       ],
-      "seen_at_utc": "2026-08-05T04:30:24.913896+00:00"
+      "seen_at_utc": "2026-08-05T04:51:35.866516+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T04:30:24.914032+00:00"
+  "updated_at_utc": "2026-08-05T04:51:35.866609+00:00"
 }
