@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564385888/o-olympiakos-poy-den-thymize-omada-toy-mentilimpar/",
-      "title": "Ο Ολυμπιακός που δεν θύμιζε ομάδα του Μεντιλίμπαρ",
-      "normalized_title": "Ο ΟΛΥΜΠΙΑΚΟΣ ΠΟΥ ΔΕΝ ΘΥΜΙΖΕ ΟΜΑΔΑ ΤΟΥ ΜΕΝΤΙΛΙΜΠΑΡ",
+      "url": "https://www.kathimerini.gr/life/health/564385957/giati-oi-soyper-peripatites-echoyn-pio-ygii-egkefalo-kai-pos-mporeite-na-ginete-enas-apo-aytoys/",
+      "title": "Γιατί οι «σούπερ περιπατητές» έχουν πιο υγιή εγκέφαλο – και πώς μπορείτε να γίνετε ένας από αυτούς",
+      "normalized_title": "ΓΙΑΤΙ ΟΙ «ΣΟΥΠΕΡ ΠΕΡΙΠΑΤΗΤΕΣ» ΕΧΟΥΝ ΠΙΟ ΥΓΙΗ ΕΓΚΕΦΑΛΟ – ΚΑΙ ΠΩΣ ΜΠΟΡΕΙΤΕ ΝΑ ΓΙΝΕΤΕ ΕΝΑΣ ΑΠΟ ΑΥΤΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564385888/o-olympiakos-poy-den-thymize-omada-toy-mentilimpar/"
+        "https://www.kathimerini.gr/life/health/564385957/giati-oi-soyper-peripatites-echoyn-pio-ygii-egkefalo-kai-pos-mporeite-na-ginete-enas-apo-aytoys/",
+        "https://www.kathimerini.gr/society/564386050/syllipsi-gia-mparmpekioy-sta-300-metra-apo-to-dasos/",
+        "https://www.kathimerini.gr/world/564385966/o-zoykermpergk-zitise-syggnomi-apo-tin-kyvernisi-tis-indias/"
       ],
-      "seen_at_utc": "2026-08-05T14:51:30.907789+00:00"
+      "seen_at_utc": "2026-08-05T15:17:06.340173+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,28 +1270,32 @@
       "seen_at_utc": "2026-08-05T14:30:02.121106+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442597/pyrkagia-stin-eyvoia-diakopi-kykloforias-ton-trenon-sto-tmima-oinoi-halkida/",
-      "title": "Πυρκαγιά στην Εύβοια: Διακοπή κυκλοφορίας των τρένων στο τμήμα Οινόη – Χαλκίδα",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΕΥΒΟΙΑ: ΔΙΑΚΟΠΗ ΚΥΚΛΟΦΟΡΙΑΣ ΤΩΝ ΤΡΕΝΩΝ ΣΤΟ ΤΜΗΜΑ ΟΙΝΟΗ – ΧΑΛΚΙΔΑ",
+      "url": "https://www.efsyn.gr/nisides/1442365/apodrasi-sto-aigaio-dyo-pelagisies-paralies-tis-eyvoias-dipla-stin-athina/",
+      "title": "Απόδραση στο Αιγαίο: Δύο πελαγίσιες παραλίες της Εύβοιας δίπλα στην Αθήνα",
+      "normalized_title": "ΑΠΟΔΡΑΣΗ ΣΤΟ ΑΙΓΑΙΟ: ΔΥΟ ΠΕΛΑΓΙΣΙΕΣ ΠΑΡΑΛΙΕΣ ΤΗΣ ΕΥΒΟΙΑΣ ΔΙΠΛΑ ΣΤΗΝ ΑΘΗΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442597/pyrkagia-stin-eyvoia-diakopi-kykloforias-ton-trenon-sto-tmima-oinoi-halkida/",
-        "https://www.efsyn.gr/epistimi/1442592/kena-sto-rythmistiko-plaisio-kai-tis-dokimes-asfaleias-ton-kallyntikon-gia-ta-heili-ti-katagrafei-nea-ereyna/",
-        "https://www.efsyn.gr/politiki/1442574/klimakio-tis-elas-stis-pyropliktes-periohes-alli-mia-fora-oi-fysikes-katastrofes-vriskoyn-aproetoimasti-tin-politeia/",
-        "https://www.efsyn.gr/ellada/1442582/ragizoyn-kardies-ta-plana-apo-tin-kammeni-gi-tis-voiotias-vinteo-apo-drone/",
-        "https://www.efsyn.gr/ellada/1442586/pyrkagies-se-katastasi-epagrypnisis-attiki-eyvoia-kai-voiotia-tin-pempti/"
+        "https://www.efsyn.gr/nisides/1442365/apodrasi-sto-aigaio-dyo-pelagisies-paralies-tis-eyvoias-dipla-stin-athina/",
+        "https://www.efsyn.gr/kosmos/1442561/i-enohlisi-zelenski-me-ipa-kai-e-e-gia-tin-elleipsi-anti-pyraylikon-systimaton-kai-i-rosiki-klimakosi-sto-kievo/",
+        "https://www.efsyn.gr/kosmos/1442598/to-israil-dynamitizei-tis-synomilies-gia-ta-stena-toy-ormoyz-kai-gia-tin-hezmpolah-vomvardismoi-sto-notio-livano/",
+        "https://www.efsyn.gr/oikonomia/1442593/kalodio-diasyndesis-elladas-kyproy-epesan-oi-ypografes-gia-ti-symmetohi-tis-gallikis-meridiam-sto-ergo/",
+        "https://www.efsyn.gr/politiki/1442605/epimenei-o-aygerinos-kata-karystianoy-shedon-olo-to-megaleiodes-kinima-ton-tempon-emeine-ektos-elpidas/"
       ],
-      "seen_at_utc": "2026-08-05T14:51:30.907858+00:00"
+      "seen_at_utc": "2026-08-05T15:17:06.340241+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/politics/epikairotita/pasok-oi-kyvernitikes-politikes-einai-poly-akrives-gia-to-eisodima-ton-politon/",
-      "title": "ΠΑΣΟΚ: Οι κυβερνητικές πολιτικές είναι πολύ ακριβές για το εισόδημα των πολιτών",
-      "normalized_title": "ΠΑΣΟΚ: ΟΙ ΚΥΒΕΡΝΗΤΙΚΕΣ ΠΟΛΙΤΙΚΕΣ ΕΙΝΑΙ ΠΟΛΥ ΑΚΡΙΒΕΣ ΓΙΑ ΤΟ ΕΙΣΟΔΗΜΑ ΤΩΝ ΠΟΛΙΤΩΝ",
+      "url": "https://www.in.gr/2026/08/05/sports/football/lisi-enopsei-anterlext-tha-einai-sklira-kai-isorropimena-mats-na-ekmetalleytoume-tis-kales-mas-stigmes/",
+      "title": "Λίσι ενόψει Άντερλεχτ: «Θα είναι σκληρά και ισορροπημένα ματς, να εκμεταλλευτούμε τις καλές μας στιγμές»",
+      "normalized_title": "ΛΙΣΙ ΕΝΟΨΕΙ ΑΝΤΕΡΛΕΧΤ: «ΘΑ ΕΙΝΑΙ ΣΚΛΗΡΑ ΚΑΙ ΙΣΟΡΡΟΠΗΜΕΝΑ ΜΑΤΣ, ΝΑ ΕΚΜΕΤΑΛΛΕΥΤΟΥΜΕ ΤΙΣ ΚΑΛΕΣ ΜΑΣ ΣΤΙΓΜΕΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/politics/epikairotita/pasok-oi-kyvernitikes-politikes-einai-poly-akrives-gia-to-eisodima-ton-politon/",
-        "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/afomoionei-ta-istorika-ypsila-i-wall-street/"
+        "https://www.in.gr/2026/08/05/sports/football/lisi-enopsei-anterlext-tha-einai-sklira-kai-isorropimena-mats-na-ekmetalleytoume-tis-kales-mas-stigmes/",
+        "https://www.in.gr/2026/08/05/go-fun/style/ekpliksi-to-mantili-de-sxediastike-gia-na-fysame-ti-myti-mas-tote-gia-poio-logo/",
+        "https://www.in.gr/2026/08/05/politics/epikairotita/erotisi-ko-syriza-i-kyvernisi-apentakse-canadair-kai-krisima-enaeria-mesa-apo-to-tameio-anakampsis/",
+        "https://www.in.gr/2026/08/05/politics/politiki-grammateia/oi-synantiseis-stis-pyropliktes-perioxes-tou-klimakiou-tis-elas-peripou-40-kamena-spitia-sto-porto-germeno/",
+        "https://www.in.gr/2026/08/05/world/apo-vinteo-sto-tiktok-os-politikes-diloseis-pos-diadidetai-i-paraliroforisi-gia-tin-krisi-tis-theouta/",
+        "https://www.in.gr/2026/08/05/sports/football/gkomes-enopsei-anterlext-to-proto-vima-mprosta-stous-filathlous-mas/"
       ],
-      "seen_at_utc": "2026-08-05T14:51:30.907832+00:00"
+      "seen_at_utc": "2026-08-05T15:17:06.340217+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T14:51:30.907939+00:00"
+  "updated_at_utc": "2026-08-05T15:17:06.340299+00:00"
 }
