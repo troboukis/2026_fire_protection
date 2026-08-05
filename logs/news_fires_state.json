@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564379384/i-elliniki-oikonomia-antexe-to-sok-toy-polemoy/",
-      "title": "Η ελληνική οικονομία άντεξε το σοκ του πολέμου",
-      "normalized_title": "Η ΕΛΛΗΝΙΚΗ ΟΙΚΟΝΟΜΙΑ ΑΝΤΕΞΕ ΤΟ ΣΟΚ ΤΟΥ ΠΟΛΕΜΟΥ",
+      "url": "https://www.kathimerini.gr/world/564386455/ipa-to-neo-mexiko-prosefyge-kata-toy-yp-dikaiosynis-gia-ta-archeia-epstain/",
+      "title": "ΗΠΑ: Το Νέο Μεξικό προσέφυγε κατά του υπ. Δικαιοσύνης για τα αρχεία Επσταϊν",
+      "normalized_title": "ΗΠΑ: ΤΟ ΝΕΟ ΜΕΞΙΚΟ ΠΡΟΣΕΦΥΓΕ ΚΑΤΑ ΤΟΥ ΥΠ. ΔΙΚΑΙΟΣΥΝΗΣ ΓΙΑ ΤΑ ΑΡΧΕΙΑ ΕΠΣΤΑΙΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564379384/i-elliniki-oikonomia-antexe-to-sok-toy-polemoy/"
+        "https://www.kathimerini.gr/world/564386455/ipa-to-neo-mexiko-prosefyge-kata-toy-yp-dikaiosynis-gia-ta-archeia-epstain/",
+        "https://www.kathimerini.gr/society/564379183/anakyklosi-apo-to-miden/",
+        "https://www.kathimerini.gr/society/564386419/fotia-stin-aigialeia-liges-meres-prin-metanasteyoyn-stin-ellada-to-spiti-ton-oneiron-toys-egine-stachti/"
       ],
-      "seen_at_utc": "2026-08-05T18:30:18.444118+00:00"
+      "seen_at_utc": "2026-08-05T18:51:54.712494+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861254/kala-einai-ta-tria-aloga-pou-prospathousan-na-xefugoun-apo-ti-megali-fotia-stin-attiki-deite-video/?utm_source=rss",
-      "title": "Συγκινητικό βίντεο: Τα άλογα που έφυγαν τρομαγμένα από τη φωτιά στη Δυτική Αττική, πίνουν νερό από το χέρι πυροσβεστών",
-      "normalized_title": "ΣΥΓΚΙΝΗΤΙΚΟ ΒΙΝΤΕΟ: ΤΑ ΑΛΟΓΑ ΠΟΥ ΕΦΥΓΑΝ ΤΡΟΜΑΓΜΕΝΑ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ, ΠΙΝΟΥΝ ΝΕΡΟ ΑΠΟ ΤΟ ΧΕΡΙ ΠΥΡΟΣΒΕΣΤΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1861264/meltemi-15etias-sarose-tin-ellada-ripes-eos-150-hiliometra-tin-ora-pou-espase-rekor/?utm_source=rss",
+      "title": "Μελτέμι 15ετίας σάρωσε την Ελλάδα: Ριπές έως 150 χιλιόμετρα την ώρα, που έσπασε ρεκόρ",
+      "normalized_title": "ΜΕΛΤΕΜΙ 15ΕΤΙΑΣ ΣΑΡΩΣΕ ΤΗΝ ΕΛΛΑΔΑ: ΡΙΠΕΣ ΕΩΣ 150 ΧΙΛΙΟΜΕΤΡΑ ΤΗΝ ΩΡΑ, ΠΟΥ ΕΣΠΑΣΕ ΡΕΚΟΡ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861254/kala-einai-ta-tria-aloga-pou-prospathousan-na-xefugoun-apo-ti-megali-fotia-stin-attiki-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861264/meltemi-15etias-sarose-tin-ellada-ripes-eos-150-hiliometra-tin-ora-pou-espase-rekor/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T18:17:07.939650+00:00"
+      "seen_at_utc": "2026-08-05T18:51:54.712634+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1442749/to-proto-minyma-toy-livai-gkarsia-pos-o-panathinaikos-ekleise-to-ntil-me-tin-spartak-moshas/",
-      "title": "Το πρώτο μήνυμα του Λιβάι Γκαρσία – Πώς ο Παναθηναϊκός έκλεισε το ντηλ με την Σπαρτάκ Μόσχας",
-      "normalized_title": "ΤΟ ΠΡΩΤΟ ΜΗΝΥΜΑ ΤΟΥ ΛΙΒΑΙ ΓΚΑΡΣΙΑ – ΠΩΣ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ ΕΚΛΕΙΣΕ ΤΟ ΝΤΗΛ ΜΕ ΤΗΝ ΣΠΑΡΤΑΚ ΜΟΣΧΑΣ",
+      "url": "https://www.efsyn.gr/kosmos/1442751/pos-metafrazetai-i-symfonia-iran-oman-gia-ta-stena-toy-ormoyz-giati-den-einai-ayto-poy-thelei-o-tramp/",
+      "title": "Πώς μεταφράζεται η συμφωνία του Ιράν με το Ομάν για τα Στενά του Ορμούζ – Γιατί δεν είναι αυτό που θέλει ο Τραμπ",
+      "normalized_title": "ΠΩΣ ΜΕΤΑΦΡΑΖΕΤΑΙ Η ΣΥΜΦΩΝΙΑ ΤΟΥ ΙΡΑΝ ΜΕ ΤΟ ΟΜΑΝ ΓΙΑ ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ – ΓΙΑΤΙ ΔΕΝ ΕΙΝΑΙ ΑΥΤΟ ΠΟΥ ΘΕΛΕΙ Ο ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1442749/to-proto-minyma-toy-livai-gkarsia-pos-o-panathinaikos-ekleise-to-ntil-me-tin-spartak-moshas/",
-        "https://www.efsyn.gr/oikonomia/1442277/pagkosmio-kampanaki-gia-omologa-kai-synallagma/"
+        "https://www.efsyn.gr/kosmos/1442751/pos-metafrazetai-i-symfonia-iran-oman-gia-ta-stena-toy-ormoyz-giati-den-einai-ayto-poy-thelei-o-tramp/"
       ],
-      "seen_at_utc": "2026-08-05T18:30:18.444207+00:00"
+      "seen_at_utc": "2026-08-05T18:51:54.712597+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/greece/ypothesi-marfin-tin-paraskeyi-ston-eisaggelea-i-46xroni-pou-synelifthi-stin-agglia-ftanei-ayrio-stin-athina/",
-      "title": "Υπόθεση Marfin: Την Παρασκευή στον εισαγγελέα η 46χρονη που συνελήφθη στην Αγγλία – Φτάνει αύριο στην Αθήνα",
-      "normalized_title": "ΥΠΟΘΕΣΗ MARFIN: ΤΗΝ ΠΑΡΑΣΚΕΥΗ ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ Η 46ΧΡΟΝΗ ΠΟΥ ΣΥΝΕΛΗΦΘΗ ΣΤΗΝ ΑΓΓΛΙΑ – ΦΤΑΝΕΙ ΑΥΡΙΟ ΣΤΗΝ ΑΘΗΝΑ",
+      "url": "https://www.in.gr/2026/08/05/world/fnintek-sempta-meligia-to-metanasteytiko-xaos-feretai-na-xeiragogithike-apo-algerina-psifiaka-diktya/",
+      "title": "Φνιντέκ – Σεμπτά – Μελίγια: Το μεταναστευτικό χάος φέρεται να χειραγωγήθηκε από αλγερινά ψηφιακά δίκτυα",
+      "normalized_title": "ΦΝΙΝΤΕΚ – ΣΕΜΠΤΑ – ΜΕΛΙΓΙΑ: ΤΟ ΜΕΤΑΝΑΣΤΕΥΤΙΚΟ ΧΑΟΣ ΦΕΡΕΤΑΙ ΝΑ ΧΕΙΡΑΓΩΓΗΘΗΚΕ ΑΠΟ ΑΛΓΕΡΙΝΑ ΨΗΦΙΑΚΑ ΔΙΚΤΥΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/greece/ypothesi-marfin-tin-paraskeyi-ston-eisaggelea-i-46xroni-pou-synelifthi-stin-agglia-ftanei-ayrio-stin-athina/"
+        "https://www.in.gr/2026/08/05/world/fnintek-sempta-meligia-to-metanasteytiko-xaos-feretai-na-xeiragogithike-apo-algerina-psifiaka-diktya/",
+        "https://www.in.gr/2026/08/05/world/mporei-i-texnologia-na-antikatastisei-tous-pyrosvestes-stin-maxi-enantia-stis-pyrkagies/",
+        "https://www.in.gr/2026/08/05/world/ipa-to-neo-meksiko-prosefyge-kata-tou-ypourgeiou-dikaiosynis-zitontas-prosvasi-sta-arxeia-epstain/",
+        "https://www.in.gr/2026/08/05/sports/football/anatropi-me-vinisious-se-epafes-me-anthropous-tis-real-gia-na-parameinei-vid/",
+        "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/mpoumerangk-oi-dasmoi-o-ntonalnt-tramp-epistrefei-100-disekatommyria-dolaria/"
       ],
-      "seen_at_utc": "2026-08-05T18:30:18.444169+00:00"
+      "seen_at_utc": "2026-08-05T18:51:54.712550+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T18:30:18.444273+00:00"
+  "updated_at_utc": "2026-08-05T18:51:54.712705+00:00"
 }
