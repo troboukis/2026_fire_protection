@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564386008/drone-sti-leipsia-exetazetai-syndesi-me-ta-pagideymena-demata-toy-2024/",
-      "title": "Drone στη Λειψία: Εξετάζεται σύνδεση με τα παγιδευμένα δέματα του 2024",
-      "normalized_title": "DRONE ΣΤΗ ΛΕΙΨΙΑ: ΕΞΕΤΑΖΕΤΑΙ ΣΥΝΔΕΣΗ ΜΕ ΤΑ ΠΑΓΙΔΕΥΜΕΝΑ ΔΕΜΑΤΑ ΤΟΥ 2024",
+      "url": "https://www.kathimerini.gr/investigations/564385876/pos-epireazoyn-oi-kaysones-ta-synaisthimata-mas/",
+      "title": "Πώς επηρεάζουν οι καύσωνες τα συναισθήματά μας",
+      "normalized_title": "ΠΩΣ ΕΠΗΡΕΑΖΟΥΝ ΟΙ ΚΑΥΣΩΝΕΣ ΤΑ ΣΥΝΑΙΣΘΗΜΑΤΑ ΜΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564386008/drone-sti-leipsia-exetazetai-syndesi-me-ta-pagideymena-demata-toy-2024/",
-        "https://www.kathimerini.gr/culture/tv/564385759/mpampa-s-agapo-o-nikos-allazei-kai-ola-anatrepontai-ston-neo-kyklo/",
-        "https://www.kathimerini.gr/life/diastima/564386059/mikroskopikes-dines-anakalyfthikan-gia-proti-fora-stin-epifaneia-toy-ilioy/"
+        "https://www.kathimerini.gr/investigations/564385876/pos-epireazoyn-oi-kaysones-ta-synaisthimata-mas/",
+        "https://www.kathimerini.gr/society/astynomiko/564386134/ypothesi-marfin-epistrefei-ayrio-stin-ellada-i-46chroni-meta-tin-ekdosi-tis-apo-ti-vretania/",
+        "https://www.kathimerini.gr/life/auto/564386092/exi-spania-montela-poy-kataskeyastikan-apo-gnostes-markes/",
+        "https://www.kathimerini.gr/k/gastronomos/564384346/pagomeni-tarta-black-forest/"
       ],
-      "seen_at_utc": "2026-08-05T15:51:24.623795+00:00"
+      "seen_at_utc": "2026-08-05T16:17:39.887302+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861169/purosvestiki-7-sullipseis-gia-thermes-ergasies-kauseis-kai-psistaries-se-attiki-preveza-kai-trikala/?utm_source=rss",
-      "title": "Πυροσβεστική: 7 συλλήψεις για θερμές εργασίες, καύσεις και ψησταριές σε Αττική, Πρέβεζα και Τρίκαλα",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: 7 ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΘΕΡΜΕΣ ΕΡΓΑΣΙΕΣ, ΚΑΥΣΕΙΣ ΚΑΙ ΨΗΣΤΑΡΙΕΣ ΣΕ ΑΤΤΙΚΗ, ΠΡΕΒΕΖΑ ΚΑΙ ΤΡΙΚΑΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1861184/tragodia-sta-malia-mitera-epese-apo-varka-kai-pnigike-brosta-se-tria-anilika-paidia/?utm_source=rss",
+      "title": "Τραγωδία στα Μάλια: Μητέρα έπεσε από βάρκα και πνίγηκε μπροστά σε τρία ανήλικα παιδιά",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΑ ΜΑΛΙΑ: ΜΗΤΕΡΑ ΕΠΕΣΕ ΑΠΟ ΒΑΡΚΑ ΚΑΙ ΠΝΙΓΗΚΕ ΜΠΡΟΣΤΑ ΣΕ ΤΡΙΑ ΑΝΗΛΙΚΑ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861169/purosvestiki-7-sullipseis-gia-thermes-ergasies-kauseis-kai-psistaries-se-attiki-preveza-kai-trikala/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861184/tragodia-sta-malia-mitera-epese-apo-varka-kai-pnigike-brosta-se-tria-anilika-paidia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861175/kratiki-arogi-meta-tis-foties-ta-metra-gia-katoikies-epiheiriseis-kai-agrotes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861173/ekdidetai-aurio-stin-ellada-i-46hroni-gia-tin-upothesi-tis-marfin/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861171/volos-26hronos-apeilise-ti-mitera-tou-oti-tha-ti-sfaxei-kai-plakothike-sto-xulo-me-ton-adelfo-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T15:51:24.623903+00:00"
+      "seen_at_utc": "2026-08-05T16:17:39.887405+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1442651/mayri-thalassa-opos-stena-toy-ormoyz-oi-ehthropraxies-narkothetoyn-to-pagkosmio-emporio-petrelaioy-kai-sitiron/",
-      "title": "Μαύρη Θάλασσα όπως… Στενά του Ορμούζ: Οι εχθροπραξίες ναρκοθετούν το παγκόσμιο εμπόριο πετρελαίου και σιτηρών",
-      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ ΟΠΩΣ… ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ: ΟΙ ΕΧΘΡΟΠΡΑΞΙΕΣ ΝΑΡΚΟΘΕΤΟΥΝ ΤΟ ΠΑΓΚΟΣΜΙΟ ΕΜΠΟΡΙΟ ΠΕΤΡΕΛΑΙΟΥ ΚΑΙ ΣΙΤΗΡΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1442668/pyrkagies-to-shedio-apokatastasis-kai-stirixis-ton-pligenton-analytika-ta-metra/",
+      "title": "Πυρκαγιές: Το σχέδιο στήριξης των πληγέντων και αποκατάστασης των καμένων – Αναλυτικά τα μέτρα",
+      "normalized_title": "ΠΥΡΚΑΓΙΕΣ: ΤΟ ΣΧΕΔΙΟ ΣΤΗΡΙΞΗΣ ΤΩΝ ΠΛΗΓΕΝΤΩΝ ΚΑΙ ΑΠΟΚΑΤΑΣΤΑΣΗΣ ΤΩΝ ΚΑΜΕΝΩΝ – ΑΝΑΛΥΤΙΚΑ ΤΑ ΜΕΤΡΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1442651/mayri-thalassa-opos-stena-toy-ormoyz-oi-ehthropraxies-narkothetoyn-to-pagkosmio-emporio-petrelaioy-kai-sitiron/",
-        "https://www.efsyn.gr/stiles/1442249/anaklisi/",
-        "https://www.efsyn.gr/ellada/1442637/akraia-rypansi-toy-vythoy-stin-paralia-imerolia-tis-kerkyras-erixan-xaplostres-mesa-sti-thalassa-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1442668/pyrkagies-to-shedio-apokatastasis-kai-stirixis-ton-pligenton-analytika-ta-metra/",
+        "https://www.efsyn.gr/ellada/1442660/soros-se-valitsa-stin-kypseli-ston-anakriti-ayrio-pempti-o-26hronos-epimenei-oti-den-ehei-kamia-emploki/",
+        "https://www.efsyn.gr/politiki/1442665/spitakia-anakyklosis-pos-o-adonis-eneplexe-ti-grammatea-thesmon-toy-pasok-kai-i-apantisi-tis-konstantinas-georgaki/",
+        "https://www.efsyn.gr/politiki/1442662/syriza-i-alitheia-gia-tis-pyrkagies-mesa-apo-tis-apokalypseis-toy-payloy-polaki-vinteo/"
       ],
-      "seen_at_utc": "2026-08-05T15:51:24.623877+00:00"
+      "seen_at_utc": "2026-08-05T16:17:39.887377+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/world/apo-vinteo-sto-tiktok-os-politikes-diloseis-pos-diadidetai-i-paraliroforisi-gia-tin-krisi-tis-theouta/",
-      "title": "Από βίντεο στο TikTok ως πολιτικές δηλώσεις: Πώς διαδίδεται η παραληροφόρηση για την κρίση της Θέουτα",
-      "normalized_title": "ΑΠΟ ΒΙΝΤΕΟ ΣΤΟ TIKTOK ΩΣ ΠΟΛΙΤΙΚΕΣ ΔΗΛΩΣΕΙΣ: ΠΩΣ ΔΙΑΔΙΔΕΤΑΙ Η ΠΑΡΑΛΗΡΟΦΟΡΗΣΗ ΓΙΑ ΤΗΝ ΚΡΙΣΗ ΤΗΣ ΘΕΟΥΤΑ",
+      "url": "https://www.in.gr/2026/08/05/economy/oikonomikes-eidiseis/pote-erxetai-i-epomeni-katavoli-tou-epidomatos-ton-150-eyro/",
+      "title": "Πότε έρχεται η επόμενη καταβολή του επιδόματος των 150 ευρώ",
+      "normalized_title": "ΠΟΤΕ ΕΡΧΕΤΑΙ Η ΕΠΟΜΕΝΗ ΚΑΤΑΒΟΛΗ ΤΟΥ ΕΠΙΔΟΜΑΤΟΣ ΤΩΝ 150 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/world/apo-vinteo-sto-tiktok-os-politikes-diloseis-pos-diadidetai-i-paraliroforisi-gia-tin-krisi-tis-theouta/",
-        "https://www.in.gr/2026/08/05/sports/football/o-kristiano-ronalnto-epideiknyei-tin-apisteyti-syllogi-tou-apo-supercars-poso-kostizei-to-akrivotero-pics/",
-        "https://www.in.gr/2026/08/05/politics/epikairotita/kke-i-kyvernisi-epixeirei-na-krypsei-tis-megales-eythynes-tis-gia-tin-empristiki-politiki/"
+        "https://www.in.gr/2026/08/05/economy/oikonomikes-eidiseis/pote-erxetai-i-epomeni-katavoli-tou-epidomatos-ton-150-eyro/",
+        "https://www.in.gr/2026/08/05/go-fun/fizz/antonio-mpanteras-to-emfragma-itan-to-kalytero-pragma-pou-mou-synevi-pote/",
+        "https://www.in.gr/2026/08/05/greece/tesseris-syllipseis-stin-attiki-gia-thermes-ergasies-kai-xrisi-psistarias/"
       ],
-      "seen_at_utc": "2026-08-05T15:51:24.623840+00:00"
+      "seen_at_utc": "2026-08-05T16:17:39.887343+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T15:51:24.623978+00:00"
+  "updated_at_utc": "2026-08-05T16:17:39.887482+00:00"
 }
