@@ -1,13 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564385408/o-olympiakos-epaixe-gia-na-kerdisei-i-gia-na-mi-chasei/",
-      "title": "Ο Ολυμπιακός έπαιξε για να κερδίσει ή για να μη χάσει;",
-      "normalized_title": "Ο ΟΛΥΜΠΙΑΚΟΣ ΕΠΑΙΞΕ ΓΙΑ ΝΑ ΚΕΡΔΙΣΕΙ Η ΓΙΑ ΝΑ ΜΗ ΧΑΣΕΙ;",
+      "url": "https://www.kathimerini.gr/world/564385612/i-kina-anakoinose-emporika-antipoina-se-varos-ton-ipa/",
+      "title": "Η Κίνα ανακοίνωσε εμπορικά αντίποινα σε βάρος των ΗΠΑ",
+      "normalized_title": "Η ΚΙΝΑ ΑΝΑΚΟΙΝΩΣΕ ΕΜΠΟΡΙΚΑ ΑΝΤΙΠΟΙΝΑ ΣΕ ΒΑΡΟΣ ΤΩΝ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564385408/o-olympiakos-epaixe-gia-na-kerdisei-i-gia-na-mi-chasei/"
+        "https://www.kathimerini.gr/world/564385612/i-kina-anakoinose-emporika-antipoina-se-varos-ton-ipa/",
+        "https://www.kathimerini.gr/society/564385603/fotia-tora-sto-koropi-4/",
+        "https://www.kathimerini.gr/world/564385600/i-odysseia-toy-nolan-fernei-perissoteroys-toyristes-sti-faviniana/",
+        "https://www.kathimerini.gr/opinion/sketches/564385540/skitso-toy-ilia-makri-05-08-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564385510/skitso-toy-andrea-petroylaki-05-08-26/",
+        "https://www.kathimerini.gr/world/564385300/theoyta-polemos-theseon-kai-palies-pliges-sta-aponera-tis-krisis/"
       ],
-      "seen_at_utc": "2026-08-05T10:51:25.940389+00:00"
+      "seen_at_utc": "2026-08-05T11:17:23.033427+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1264,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860998/arhizoun-koines-peripolies-italon-kai-ellinon-astunomikon-sto-kedro-tis-athinas-kai-tis-romis/?utm_source=rss",
-      "title": "Αρχίζουν κοινές περιπολίες Ιταλών και Ελλήνων αστυνομικών στο κέντρο της Αθήνας και της Ρώμης",
-      "normalized_title": "ΑΡΧΙΖΟΥΝ ΚΟΙΝΕΣ ΠΕΡΙΠΟΛΙΕΣ ΙΤΑΛΩΝ ΚΑΙ ΕΛΛΗΝΩΝ ΑΣΤΥΝΟΜΙΚΩΝ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ ΚΑΙ ΤΗΣ ΡΩΜΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1861008/epiheiriseis-ekmetalleusis-van-ennea-nisia-den-tiroun-to-hrono-prokratisis-kai-anartisis-stoiheion-sto-psifiako-mitroo/?utm_source=rss",
+      "title": "Οι επιχειρήσεις εκμετάλλευσης Van σε εννέα νησιά δεν θα τηρούν το χρόνο προκράτησης και ανάρτησης στοιχείων στο ψηφιακό μητρώο",
+      "normalized_title": "ΟΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΕΚΜΕΤΑΛΛΕΥΣΗΣ VAN ΣΕ ΕΝΝΕΑ ΝΗΣΙΑ ΔΕΝ ΘΑ ΤΗΡΟΥΝ ΤΟ ΧΡΟΝΟ ΠΡΟΚΡΑΤΗΣΗΣ ΚΑΙ ΑΝΑΡΤΗΣΗΣ ΣΤΟΙΧΕΙΩΝ ΣΤΟ ΨΗΦΙΑΚΟ ΜΗΤΡΩΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860998/arhizoun-koines-peripolies-italon-kai-ellinon-astunomikon-sto-kedro-tis-athinas-kai-tis-romis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860991/kalokairi-kai-trohaia-ena-sta-tria-atuhimata-katagrafetai-tous-therinous-mines-leei-o-gredzelos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860986/to-64-ton-dason-tis-dutikis-attikis-ehei-kaei-tin-teleutaia-dekaetia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860983/xekinisan-oi-autopsies-sto-porto-germeno-epta-klimakia-katagrafoun-zimies-se-spitia-meta-to-perasma-tis-fotias-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861008/epiheiriseis-ekmetalleusis-van-ennea-nisia-den-tiroun-to-hrono-prokratisis-kai-anartisis-stoiheion-sto-psifiako-mitroo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861004/fotia-sti-viomihaniki-periohi-koropiou-minuma-apo-to-112-gia-etoimotita/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T10:51:25.940491+00:00"
+      "seen_at_utc": "2026-08-05T11:17:23.033573+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442447/se-exelixi-i-diypoyrgiki-sto-maximoy-gia-tis-apozimioseis-ton-pyroplikton/",
-      "title": "Σε εξέλιξη η διυπουργική στο Μαξίμου για τις αποζημιώσεις των πυρόπληκτων",
-      "normalized_title": "ΣΕ ΕΞΕΛΙΞΗ Η ΔΙΥΠΟΥΡΓΙΚΗ ΣΤΟ ΜΑΞΙΜΟΥ ΓΙΑ ΤΙΣ ΑΠΟΖΗΜΙΩΣΕΙΣ ΤΩΝ ΠΥΡΟΠΛΗΚΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1442435/androylakis-hreiazetai-ena-allo-dogma-na-mi-menoyn-sta-logia-i-etoimotita-kai-sta-hartia-i-prolipsi/",
+      "title": "Ανδρουλάκης: «Χρειάζεται ένα άλλο δόγμα, να μη μένουν στα λόγια η ετοιμότητα και στα χαρτιά η πρόληψη»",
+      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: «ΧΡΕΙΑΖΕΤΑΙ ΕΝΑ ΑΛΛΟ ΔΟΓΜΑ, ΝΑ ΜΗ ΜΕΝΟΥΝ ΣΤΑ ΛΟΓΙΑ Η ΕΤΟΙΜΟΤΗΤΑ ΚΑΙ ΣΤΑ ΧΑΡΤΙΑ Η ΠΡΟΛΗΨΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442447/se-exelixi-i-diypoyrgiki-sto-maximoy-gia-tis-apozimioseis-ton-pyroplikton/",
-        "https://www.efsyn.gr/politiki/1442416/sto-nosokomeio-o-giannis-dragasakis-to-dimosio-eyharisto-stoys-giatroys-toy-gna/"
+        "https://www.efsyn.gr/politiki/1442435/androylakis-hreiazetai-ena-allo-dogma-na-mi-menoyn-sta-logia-i-etoimotita-kai-sta-hartia-i-prolipsi/",
+        "https://www.efsyn.gr/?p=1442392",
+        "https://www.efsyn.gr/stiles/1442231/ti-ypokrisia/",
+        "https://www.efsyn.gr/stiles/1442219/oi-proletarioi-tis-kakoitheias/",
+        "https://www.efsyn.gr/stiles/1442214/i-mahi-me-toys-kanapedes/",
+        "https://www.efsyn.gr/podcast/paratiritirio-synohis-i-perifereia-hreiazetai-domes-psyhikis-ygeias/"
       ],
-      "seen_at_utc": "2026-08-05T10:51:25.940468+00:00"
+      "seen_at_utc": "2026-08-05T11:17:23.033524+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/sports/basketball/euroleague/episimo-i-makampi-anakoinose-ton-tais-pic/",
-      "title": "Επίσημο: Η Μακάμπι ανακοίνωσε τον Τάις (pic)",
-      "normalized_title": "ΕΠΙΣΗΜΟ: Η ΜΑΚΑΜΠΙ ΑΝΑΚΟΙΝΩΣΕ ΤΟΝ ΤΑΙΣ (PIC)",
+      "url": "https://www.in.gr/2026/08/05/world/o-oie-ypostirizei-oti-to-iran-ektelese-toulaxiston-56-atoma-apo-ton-martio/",
+      "title": "Ο ΟΗΕ υποστηρίζει ότι το Ιράν εκτέλεσε τουλάχιστον 56 άτομα από τον Μάρτιο",
+      "normalized_title": "Ο ΟΗΕ ΥΠΟΣΤΗΡΙΖΕΙ ΟΤΙ ΤΟ ΙΡΑΝ ΕΚΤΕΛΕΣΕ ΤΟΥΛΑΧΙΣΤΟΝ 56 ΑΤΟΜΑ ΑΠΟ ΤΟΝ ΜΑΡΤΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/sports/basketball/euroleague/episimo-i-makampi-anakoinose-ton-tais-pic/",
-        "https://www.in.gr/2026/08/05/greece/kriti-dynati-ekriksi-sti-theriso-megali-kinitopoiisi-ton-arxon-traymatistike-ena-atomo/",
-        "https://www.in.gr/2026/08/05/greece/thessaloniki-speira-eksapatouse-ilikiomenes-me-to-prosxima-oti-ta-paidia-tous-xreiazontai-xrimata-gia-epemvasi/"
+        "https://www.in.gr/2026/08/05/world/o-oie-ypostirizei-oti-to-iran-ektelese-toulaxiston-56-atoma-apo-ton-martio/",
+        "https://www.in.gr/2026/08/05/greece/fotia-sto-koropi-ixise-to-112/",
+        "https://www.in.gr/2026/08/05/go-fun/fizz/vasiliko-succession-poioi-einai-oi-epomenoi-diadoxoi-tou-vretanikou-thronou-meta-ton-karolo/",
+        "https://www.in.gr/2026/08/05/sports/othersports/tsitsipas-gia-ton-patera-tou-imoun-ypervolika-ypomonetikos/",
+        "https://www.in.gr/2026/08/05/economy/diethnis-oikonomia/kina-ipa-to-pekino-anakoinose-antipoina-meta-tis-amerikanikes-emporikes-kyroseis/",
+        "https://www.in.gr/2026/08/05/in-science/ai/syn-ai-kai-xeira-kinei-i-texniti-noimosyni-allazei-tis-epixeiriseis-alla-oi-anthropoi-kathorizoun-to-apotelesma/",
+        "https://www.in.gr/2026/08/05/plus/medianews/elliniki-kouzina-erxetai-ayti-tin-kyriaki-mazi-me-to-vima-kai-tis-geyseis-tou-aygoustou/"
       ],
-      "seen_at_utc": "2026-08-05T10:51:25.940444+00:00"
+      "seen_at_utc": "2026-08-05T11:17:23.033478+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T10:51:25.940588+00:00"
+  "updated_at_utc": "2026-08-05T11:17:23.033647+00:00"
 }
