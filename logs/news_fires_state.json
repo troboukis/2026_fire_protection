@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/diastima/564385432/pyraylos-tis-spacex-prosekroyse-sti-selini-me-tachytita-schedon-9-000-chlm-ora-kai-dynami-3-tonon-tnt/",
-      "title": "Πύραυλος της SpaceX προσέκρουσε στη Σελήνη – Με ταχύτητα σχεδόν 9.000 χλμ/ώρα και δύναμη 3 τόνων ΤΝΤ",
-      "normalized_title": "ΠΥΡΑΥΛΟΣ ΤΗΣ SPACEX ΠΡΟΣΕΚΡΟΥΣΕ ΣΤΗ ΣΕΛΗΝΗ – ΜΕ ΤΑΧΥΤΗΤΑ ΣΧΕΔΟΝ 9.000 ΧΛΜ/ΩΡΑ ΚΑΙ ΔΥΝΑΜΗ 3 ΤΟΝΩΝ ΤΝΤ",
+      "url": "https://www.kathimerini.gr/world/564385504/toyrkia-katatithetai-sti-voyli-to-nomoschedio-gia-ti-dialysi-toy-rkk/",
+      "title": "Τουρκία: Κατατίθεται στη Βουλή το νομοσχέδιο για τη διάλυση του ΡΚΚ",
+      "normalized_title": "ΤΟΥΡΚΙΑ: ΚΑΤΑΤΙΘΕΤΑΙ ΣΤΗ ΒΟΥΛΗ ΤΟ ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΤΗ ΔΙΑΛΥΣΗ ΤΟΥ ΡΚΚ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/diastima/564385432/pyraylos-tis-spacex-prosekroyse-sti-selini-me-tachytita-schedon-9-000-chlm-ora-kai-dynami-3-tonon-tnt/",
-        "https://www.kathimerini.gr/world/564385462/i-e-e-tha-chrisimopoiisei-tokoys-pagomenon-rosikon-perioysiakon-stoicheion-gia-na-voithisei-tin-oykrania/"
+        "https://www.kathimerini.gr/world/564385504/toyrkia-katatithetai-sti-voyli-to-nomoschedio-gia-ti-dialysi-toy-rkk/",
+        "https://www.kathimerini.gr/society/564385501/therissos-irakleioy-anastatosi-apo-ekkofantiko-kroto-espasan-tzamia-apo-to-ostiko-kyma/",
+        "https://www.kathimerini.gr/athletics/football/564385498/i-chal-anakoinose-tin-apoktisi-toy-tzolaki/",
+        "https://www.kathimerini.gr/society/564384607/kaysones-to-kalokairi-poy-dielyse-tin-eyropi/",
+        "https://www.kathimerini.gr/columns/564385474/o-mproyno-gkimaraes-voytaei-sta-vathia-nera-toy-tamesi/"
       ],
-      "seen_at_utc": "2026-08-05T09:30:11.278383+00:00"
+      "seen_at_utc": "2026-08-05T09:51:16.280415+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1263,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860953/eisaggeliki-ereuna-gia-tis-helones-pou-vrethikan-vammenes-sti-thessaloniki/?utm_source=rss",
-      "title": "Εισαγγελική έρευνα για τις χελώνες που βρέθηκαν βαμμένες στη Θεσσαλονίκη",
-      "normalized_title": "ΕΙΣΑΓΓΕΛΙΚΗ ΕΡΕΥΝΑ ΓΙΑ ΤΙΣ ΧΕΛΩΝΕΣ ΠΟΥ ΒΡΕΘΗΚΑΝ ΒΑΜΜΕΝΕΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1860964/thriler-me-ton-thanato-68hronou-i-nekrotomi-deihnei-dolofonia-me-amvlu-adikeimeno/?utm_source=rss",
+      "title": "Θρίλερ με τον θάνατο του 68χρονου στις Σέρρες, η νεκροτομή «δείχνει» δολοφονία με αμβλύ αντικείμενο",
+      "normalized_title": "ΘΡΙΛΕΡ ΜΕ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ 68ΧΡΟΝΟΥ ΣΤΙΣ ΣΕΡΡΕΣ, Η ΝΕΚΡΟΤΟΜΗ «ΔΕΙΧΝΕΙ» ΔΟΛΟΦΟΝΙΑ ΜΕ ΑΜΒΛΥ ΑΝΤΙΚΕΙΜΕΝΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860953/eisaggeliki-ereuna-gia-tis-helones-pou-vrethikan-vammenes-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860952/tin-evala-se-mia-valitsa-tin-edosa-se-enan-gero-ti-ishuristike-o-28hronos-afganos-gia-dolofonia-vretanidas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860964/thriler-me-ton-thanato-68hronou-i-nekrotomi-deihnei-dolofonia-me-amvlu-adikeimeno/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860960/autokinito-epese-se-gremo-30-metron-stin-andritsaina-traumatistike-i-32hroni-odigos-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1860954/17-futeies-se-rethumno-anogeia-kai-mulopotamo-xerizose-i-elas-katashethikan-143-dendrullia-kannavis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T09:30:11.278465+00:00"
+      "seen_at_utc": "2026-08-05T09:51:16.280565+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442363/thessaloniki-eisaggeliki-paremvasi-gia-tis-helones-poy-vrethikan-vammenes-me-portokali-ladompogia/",
-      "title": "Θεσσαλονίκη: Εισαγγελική παρέμβαση για τις χελώνες που βρέθηκαν βαμμένες με πορτοκαλί λαδομπογιά",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΕΙΣΑΓΓΕΛΙΚΗ ΠΑΡΕΜΒΑΣΗ ΓΙΑ ΤΙΣ ΧΕΛΩΝΕΣ ΠΟΥ ΒΡΕΘΗΚΑΝ ΒΑΜΜΕΝΕΣ ΜΕ ΠΟΡΤΟΚΑΛΙ ΛΑΔΟΜΠΟΓΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1442359/aplisiastes-oi-voyties-stis-paralies-tis-horas-oi-xaplostres-poy-ftanoyn-ta-150-eyro/",
+      "title": "«Απλησίαστες» οι βουτιές στις παραλίες της χώρας – Οι ξαπλώστρες που φτάνουν τα 150 ευρώ",
+      "normalized_title": "«ΑΠΛΗΣΙΑΣΤΕΣ» ΟΙ ΒΟΥΤΙΕΣ ΣΤΙΣ ΠΑΡΑΛΙΕΣ ΤΗΣ ΧΩΡΑΣ – ΟΙ ΞΑΠΛΩΣΤΡΕΣ ΠΟΥ ΦΤΑΝΟΥΝ ΤΑ 150 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442363/thessaloniki-eisaggeliki-paremvasi-gia-tis-helones-poy-vrethikan-vammenes-me-portokali-ladompogia/"
+        "https://www.efsyn.gr/ellada/1442359/aplisiastes-oi-voyties-stis-paralies-tis-horas-oi-xaplostres-poy-ftanoyn-ta-150-eyro/",
+        "https://www.efsyn.gr/ellada/1442366/toyrismos-gia-oloys-anoixe-i-platforma-gia-tis-aitiseis-poioi-einai-oi-dikaioyhoi/"
       ],
-      "seen_at_utc": "2026-08-05T09:30:11.278445+00:00"
+      "seen_at_utc": "2026-08-05T09:51:16.280526+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/plus/medianews/naimegken-olympiakos-i-maxi-tis-prokrisis-zontana-sto-mega/",
-      "title": "Ναϊμέγκεν – Ολυμπιακός: Η μάχη της πρόκρισης ζωντανά στο MEGA",
-      "normalized_title": "ΝΑΙΜΕΓΚΕΝ – ΟΛΥΜΠΙΑΚΟΣ: Η ΜΑΧΗ ΤΗΣ ΠΡΟΚΡΙΣΗΣ ΖΩΝΤΑΝΑ ΣΤΟ MEGA",
+      "url": "https://www.in.gr/2026/08/05/politics/aftodioikisi/i-eretria-ependyei-ston-peripatitiko-tourismo/",
+      "title": "Η Ερέτρια επενδύει στον περιπατητικό τουρισμό",
+      "normalized_title": "Η ΕΡΕΤΡΙΑ ΕΠΕΝΔΥΕΙ ΣΤΟΝ ΠΕΡΙΠΑΤΗΤΙΚΟ ΤΟΥΡΙΣΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/plus/medianews/naimegken-olympiakos-i-maxi-tis-prokrisis-zontana-sto-mega/",
-        "https://www.in.gr/2026/08/05/politics/aftodioikisi/neos-meteorologikos-stathmos-ston-oikismo-tou-sykologou/",
-        "https://www.in.gr/2026/08/05/sports/football/episimo-sti-xal-o-tzolakis-vid/"
+        "https://www.in.gr/2026/08/05/politics/aftodioikisi/i-eretria-ependyei-ston-peripatitiko-tourismo/",
+        "https://www.in.gr/2026/08/05/sports/basketball/o-olympiakos-koitazei-ton-plota-poios-einai-o-22xronos-ellinas-gkarnt/",
+        "https://www.in.gr/2026/08/05/world/germania-epivevaiosi-apo-nato-drone-entopistike-konta-se-oukraniko-aeroskafos-sto-aerodromio-tis-leipsias/"
       ],
-      "seen_at_utc": "2026-08-05T09:30:11.278413+00:00"
+      "seen_at_utc": "2026-08-05T09:51:16.280463+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T09:30:11.278541+00:00"
+  "updated_at_utc": "2026-08-05T09:51:16.280656+00:00"
 }
