@@ -424,13 +424,15 @@ RETURNS TABLE (
   beneficiary_gemi text,
   amount_without_vat numeric,
   diavgeia_ada text,
+  cancelled boolean,
+  is_modified boolean,
   total_count bigint
 )
 LANGUAGE sql
 SECURITY INVOKER
 SET search_path = public
 AS $$
-WITH payment_agg AS (
+WITH RECURSIVE payment_agg AS (
   SELECT
     py.procurement_id,
     SUM(py.amount_without_vat) AS amount_without_vat,
@@ -460,7 +462,20 @@ base AS (
     p.title,
     public.normalize_procedure_type(p.procedure_type_value) AS procedure_type_value,
     p.diavgeia_ada,
+    COALESCE(p.cancelled, FALSE) AS cancelled,
+    (
+      NULLIF(TRIM(p.prev_reference_no), '') IS NOT NULL
+      OR NULLIF(TRIM(p.next_ref_no), '') IS NOT NULL
+      OR COALESCE(p.next_modified, FALSE)
+      OR COALESCE(p.next_extended, FALSE)
+      OR EXISTS (
+        SELECT 1
+        FROM public.procurement p2
+        WHERE NULLIF(TRIM(p2.prev_reference_no), '') = p.reference_number
+      )
+    ) AS is_modified,
     p.reference_number,
+    p.prev_reference_no,
     p.contract_number,
     p.organization_key,
     COALESCE(pa.amount_without_vat, p.contract_budget, p.budget) AS amount_without_vat,
@@ -522,14 +537,43 @@ base AS (
     LIMIT 1
   ) org ON TRUE
   LEFT JOIN cpv_agg ca ON ca.procurement_id = p.id
-  WHERE COALESCE(p.cancelled, FALSE) = FALSE
 ),
 dedup AS (
   SELECT *
   FROM base
   WHERE rn = 1
 ),
-filtered AS (
+chain_walk AS (
+  SELECT
+    d.id,
+    d.prev_reference_no,
+    COALESCE(NULLIF(TRIM(d.reference_number), ''), CONCAT('id:', d.id::text)) AS root_reference,
+    ARRAY[d.id]::bigint[] AS visited_ids,
+    0 AS depth
+  FROM dedup d
+
+  UNION ALL
+
+  SELECT
+    chain_walk.id,
+    parent.prev_reference_no,
+    COALESCE(NULLIF(TRIM(parent.reference_number), ''), chain_walk.root_reference) AS root_reference,
+    chain_walk.visited_ids || parent.id,
+    chain_walk.depth + 1
+  FROM chain_walk
+  JOIN dedup parent
+    ON NULLIF(TRIM(parent.reference_number), '') = NULLIF(TRIM(chain_walk.prev_reference_no), '')
+  WHERE NOT parent.id = ANY(chain_walk.visited_ids)
+    AND chain_walk.depth < 50
+),
+chain_roots AS (
+  SELECT DISTINCT ON (id)
+    id,
+    root_reference
+  FROM chain_walk
+  ORDER BY id, depth DESC
+),
+eligible AS (
   SELECT *
   FROM dedup d
   WHERE (p_date_from IS NULL OR d.contract_signed_date >= p_date_from)
@@ -537,17 +581,21 @@ filtered AS (
     AND (p_min_amount IS NULL OR COALESCE(d.amount_without_vat, 0) >= p_min_amount)
     AND (p_procedure IS NULL OR p_procedure = '' OR d.procedure_type_value = p_procedure)
     AND (p_org IS NULL OR p_org = '' OR COALESCE(d.organization_value, '') ILIKE '%' || p_org || '%')
-    AND (
-      p_q IS NULL OR p_q = '' OR
+),
+matching_roots AS (
+  SELECT DISTINCT cr.root_reference
+  FROM eligible e
+  JOIN chain_roots cr ON cr.id = e.id
+  WHERE
       upper(
         translate(
           CONCAT_WS(
             ' ',
-            COALESCE(d.title, ''),
-            COALESCE(d.organization_value, ''),
-            COALESCE(d.beneficiary_name, ''),
-            COALESCE(d.cpv_value, ''),
-            COALESCE(d.reference_number, '')
+            COALESCE(e.title, ''),
+            COALESCE(e.organization_value, ''),
+            COALESCE(e.beneficiary_name, ''),
+            COALESCE(e.cpv_value, ''),
+            COALESCE(e.reference_number, '')
           ),
           'ΆΈΉΊΪΌΎΫΏάέήίϊΐόύϋΰώ',
           'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
@@ -559,6 +607,17 @@ filtered AS (
           'ΑΕΗΙΙΟΥΥΩΑΕΗΙΙΙΟΥΥΥΩ'
         )
       ) || '%'
+),
+filtered AS (
+  SELECT e.*
+  FROM eligible e
+  JOIN chain_roots cr ON cr.id = e.id
+  WHERE p_q IS NULL
+    OR p_q = ''
+    OR EXISTS (
+      SELECT 1
+      FROM matching_roots mr
+      WHERE mr.root_reference = cr.root_reference
     )
 ),
 counted AS (
@@ -578,6 +637,8 @@ SELECT
   beneficiary_gemi,
   amount_without_vat,
   diavgeia_ada,
+  cancelled,
+  is_modified,
   total_count
 FROM counted
 ORDER BY contract_signed_date DESC NULLS LAST, id DESC

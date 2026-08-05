@@ -24,6 +24,8 @@ type ContractRow = {
   beneficiary_gemi: string | null
   amount_without_vat: number | null
   diavgeia_ada: string | null
+  cancelled?: boolean | null
+  is_modified?: boolean | null
   total_count: number
 }
 
@@ -177,12 +179,7 @@ function matchesScopedQuery(row: ContractRow, q: string): boolean {
 function dedupeContractRows(rows: ContractRow[]): ContractRow[] {
   return Array.from(
     new Map(
-      rows.map((row) => {
-        const key =
-          clean(row.diavgeia_ada) ||
-          `${clean(row.organization_value)}|${clean(row.title)}|${clean(row.contract_signed_date)}|${String(row.amount_without_vat ?? '')}`
-        return [key, row] as const
-      }),
+      rows.map((row) => [row.id, row] as const),
     ).values(),
   )
 }
@@ -1015,6 +1012,10 @@ export default function ContractsPage() {
       </section>
 
       <section className="contracts-table-wrap section-rule">
+        <div className="contracts-status-legend" aria-label="Υπόμνημα κατάστασης συμβάσεων">
+          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--cancelled" />Ακυρωμένη</span>
+          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--modified" />Τροποποιημένη</span>
+        </div>
         {loading ? (
           <DataLoadingCard message="Εκτελείται αναζήτηση συμβάσεων και προετοιμάζεται ο πίνακας αποτελεσμάτων." />
         ) : (
@@ -1081,7 +1082,10 @@ export default function ContractsPage() {
                     ? `ΔΗΜΟΣ ${orgRaw}`
                     : (orgRaw || '—')
                   return (
-                    <tr key={r.id}>
+                    <tr
+                      key={r.id}
+                      className={r.cancelled ? 'contracts-row--cancelled' : r.is_modified ? 'contracts-row--modified' : undefined}
+                    >
                       <td data-label="Ημερομηνία">{fmtDate(r.contract_signed_date)}</td>
                       <td data-label="Φορέας">{orgDisplay}</td>
                       <td data-label="Τίτλος">

@@ -4224,6 +4224,37 @@ main {
   width: 100%;
 }
 
+.contracts-status-legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.contracts-status-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contracts-status-legend__swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 1px solid rgba(17, 17, 17, 0.18);
+}
+
+.contracts-status-legend__swatch--cancelled {
+  background: rgba(190, 24, 24, 0.2);
+}
+
+.contracts-status-legend__swatch--modified {
+  background: rgba(37, 99, 235, 0.2);
+}
+
 .contracts-table {
   width: 100%;
   max-width: 100%;
@@ -4319,6 +4350,16 @@ main {
 
 .contracts-table tr:hover td {
   background: rgba(17, 17, 17, 0.02);
+}
+
+.contracts-table tr.contracts-row--cancelled td,
+.contracts-table tr.contracts-row--cancelled:hover td {
+  background: rgba(190, 24, 24, 0.2);
+}
+
+.contracts-table tr.contracts-row--modified td,
+.contracts-table tr.contracts-row--modified:hover td {
+  background: rgba(37, 99, 235, 0.2);
 }
 
 .contracts-amount {
