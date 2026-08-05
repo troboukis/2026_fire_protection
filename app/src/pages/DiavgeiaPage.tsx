@@ -6,6 +6,7 @@ import DevViewToggle from '../components/DevViewToggle'
 import DiavgeiaModal from '../components/DiavgeiaModal'
 import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import { buildDiavgeiaDecisionCardView } from '../lib/diavgeiaDecision'
+import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
 type DiavgeiaPageRow = {
@@ -108,10 +109,7 @@ export default function DiavgeiaPage() {
   const initialDateToParam = useMemo(() => clean(searchParams.get('dateTo')), [searchParams])
   const initialDateFrom = useMemo(() => initialAllDates ? '' : (initialDateFromParam || defaultDateFrom), [defaultDateFrom, initialAllDates, initialDateFromParam])
   const initialDateTo = useMemo(() => initialAllDates ? '' : (initialDateToParam || defaultDateTo), [defaultDateTo, initialAllDates, initialDateToParam])
-  const [rows, setRows] = useState<DiavgeiaPageRow[]>([])
-  const [totalCount, setTotalCount] = useState(0)
-  const [minDecisionDate, setMinDecisionDate] = useState<string | null>(null)
-  const [maxDecisionDate, setMaxDecisionDate] = useState<string | null>(null)
+  const [sourceRows, setSourceRows] = useState<DiavgeiaPageRow[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedDecision, setSelectedDecision] = useState<DiavgeiaDecisionCardView | null>(null)
   const [q, setQ] = useState(initialQ)
@@ -163,36 +161,43 @@ export default function DiavgeiaPage() {
 
     const loadPage = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_diavgeia_page', {
-          p_q: clean(q) || null,
+        const { data, error } = await supabase.rpc('get_diavgeia_page_snapshot', {
           p_date_from: clean(dateFrom) || null,
           p_date_to: clean(dateTo) || null,
           p_municipality_key: clean(municipalityKey) || null,
-          p_page: page,
-          p_page_size: pageSize,
         })
         if (error) throw error
 
         if (cancelled) return
-        const pageRows = (data ?? []) as DiavgeiaPageRow[]
-        setRows(pageRows)
-        setTotalCount(pageRows[0]?.total_count ?? 0)
-        setMinDecisionDate(pageRows[0]?.min_decision_date ?? null)
-        setMaxDecisionDate(pageRows[0]?.max_decision_date ?? null)
+        const payload = (data ?? {}) as { rows?: DiavgeiaPageRow[] }
+        const pageRows = Array.isArray(payload.rows) ? payload.rows : []
+        setSourceRows(pageRows)
         setLoading(false)
       } catch {
         if (cancelled) return
-        setRows([])
-        setTotalCount(0)
-        setMinDecisionDate(null)
-        setMaxDecisionDate(null)
+        setSourceRows([])
         setLoading(false)
       }
     }
 
     loadPage()
     return () => { cancelled = true }
-  }, [dateFrom, dateTo, municipalityKey, page, q])
+  }, [dateFrom, dateTo, municipalityKey])
+
+  const filteredRows = useMemo(() => sourceRows.filter((row) => matchesSearchQuery([
+    row.subject,
+    row.org_type,
+    row.org_name_clean,
+    row.ada,
+    row.diavgeia_document_type_decision_uid,
+  ].join(' '), q)), [sourceRows, q])
+  const totalCount = filteredRows.length
+  const rows = useMemo(() => {
+    const pageStart = Math.max((page - 1) * pageSize, 0)
+    return filteredRows.slice(pageStart, pageStart + pageSize)
+  }, [filteredRows, page])
+  const minDecisionDate = sourceRows[0]?.min_decision_date ?? null
+  const maxDecisionDate = sourceRows[0]?.max_decision_date ?? null
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
   const visiblePeriodLabel = useMemo(() => {
@@ -236,8 +241,10 @@ export default function DiavgeiaPage() {
         <input
           className="contracts-filter contracts-filter--search"
           value={q}
+          maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="Αναζήτηση (τίτλος/φορέας/ΑΔΑ/τύπος)"
+          placeholder="π.χ. πυροπροστασία & προμήθεια !καύσιμα"
+          title="Χρησιμοποιήστε & για υποχρεωτικούς όρους και ! για εξαιρέσεις"
         />
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-from"

@@ -310,36 +310,23 @@ def apply_procurement_chain_dedup(raw: pd.DataFrame) -> pd.DataFrame:
     return deduped
 
 
-def affected_reference_numbers_for_row(raw_row: pd.Series) -> set[str]:
-    affected: set[str] = set()
-    prev_ref = t(raw_row.get("prevReferenceNo"))
-    reference_number = t(raw_row.get("referenceNumber"))
-    next_ref = t(raw_row.get("nextRefNo"))
-    if prev_ref:
-        affected.add(prev_ref)
-    if reference_number and next_ref:
-        affected.add(reference_number)
-    return affected
-
-
-def zero_superseded_payment_amounts(cur, affected_references: set[str]) -> int:
-    refs = sorted(ref for ref in affected_references if ref)
-    if not refs:
-        return 0
-
+def zero_superseded_payment_amounts(cur) -> int:
     cur.execute(
         """
         UPDATE public.payment py
         SET amount_without_vat = 0
         FROM public.procurement p
-        JOIN (
-          SELECT unnest(%s::text[]) AS reference_number
-        ) affected
-          ON affected.reference_number = p.reference_number
         WHERE py.procurement_id = p.id
           AND py.amount_without_vat IS DISTINCT FROM 0
-        """,
-        (refs,),
+          AND (
+            NULLIF(BTRIM(p.next_ref_no), '') IS NOT NULL
+            OR EXISTS (
+              SELECT 1
+              FROM public.procurement successor
+              WHERE NULLIF(BTRIM(successor.prev_reference_no), '') = p.reference_number
+            )
+          )
+        """
     )
     return cur.rowcount
 
@@ -2272,7 +2259,6 @@ def main() -> None:
 
         cpv_rows_to_insert: list[tuple[str, str | None, int]] = []
         payment_rows_to_insert: list[tuple] = []
-        affected_superseded_references: set[str] = set()
         missing_cpv_keys: set[str] = set()
         if "procurement" in selected_tables:
             log("Loading existing procurement identity map...")
@@ -2320,7 +2306,6 @@ def main() -> None:
                     existing_proc_by_uid[uid] = procurement_id
                     inserted_proc += 1
 
-                affected_superseded_references.update(affected_reference_numbers_for_row(row))
                 keys = [x.strip() for x in str(row.get("cpv_keys") or "").split("|")] if t(row.get("cpv_keys")) else []
                 values = [x.strip() for x in str(row.get("cpv_values") or "").split("|")] if t(row.get("cpv_values")) else []
                 for idx_key, key in enumerate(keys):
@@ -2505,7 +2490,7 @@ def main() -> None:
                   AND p.payment_id IS DISTINCT FROM py.id
                 """
             )
-            zeroed_payments = zero_superseded_payment_amounts(cur, affected_superseded_references)
+            zeroed_payments = zero_superseded_payment_amounts(cur)
             conn.commit()
             log(f"Payment upsert/backfill committed (zeroed_superseded_payments={zeroed_payments})")
             if args.skip_prune_excluded_procurements:

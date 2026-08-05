@@ -9,6 +9,7 @@ import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
 import { summarizePaymentRows } from '../lib/paymentSummary'
+import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
 type ContractRow = {
@@ -24,6 +25,8 @@ type ContractRow = {
   beneficiary_gemi: string | null
   amount_without_vat: number | null
   diavgeia_ada: string | null
+  prev_reference_no?: string | null
+  next_ref_no?: string | null
   cancelled?: boolean | null
   is_modified?: boolean | null
   total_count: number
@@ -151,29 +154,54 @@ function chunk<T>(items: T[], size: number): T[][] {
   return out
 }
 
-function normalizeSearchText(value: unknown): string {
-  return clean(value)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ς/g, 'σ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toUpperCase()
-}
-
 function matchesScopedQuery(row: ContractRow, q: string): boolean {
-  const query = normalizeSearchText(q)
-  if (!query) return true
-
-  const haystack = normalizeSearchText([
+  return matchesSearchQuery([
     row.title,
     row.organization_value,
     row.beneficiary_name,
     row.cpv_value,
     row.reference_number,
-  ].join(' '))
+  ].join(' '), q)
+}
 
-  return haystack.includes(query)
+function filterContractRowsByQuery(rows: ContractRow[], q: string): ContractRow[] {
+  if (!clean(q)) return rows
+
+  const matchedIds = new Set(rows.filter((row) => matchesScopedQuery(row, q)).map((row) => row.id))
+  const linkedReferences = new Map<string, Set<string>>()
+
+  const link = (leftValue: unknown, rightValue: unknown) => {
+    const left = clean(leftValue)
+    const right = clean(rightValue)
+    if (!left || !right) return
+    if (!linkedReferences.has(left)) linkedReferences.set(left, new Set())
+    if (!linkedReferences.has(right)) linkedReferences.set(right, new Set())
+    linkedReferences.get(left)!.add(right)
+    linkedReferences.get(right)!.add(left)
+  }
+
+  for (const row of rows) {
+    link(row.reference_number, row.prev_reference_no)
+    link(row.reference_number, row.next_ref_no)
+  }
+
+  const matchedReferences = new Set(
+    rows
+      .filter((row) => matchedIds.has(row.id))
+      .map((row) => clean(row.reference_number))
+      .filter(Boolean),
+  )
+  const pending = [...matchedReferences]
+  while (pending.length > 0) {
+    const reference = pending.pop()!
+    for (const linked of linkedReferences.get(reference) ?? []) {
+      if (matchedReferences.has(linked)) continue
+      matchedReferences.add(linked)
+      pending.push(linked)
+    }
+  }
+
+  return rows.filter((row) => matchedIds.has(row.id) || matchedReferences.has(clean(row.reference_number)))
 }
 
 function dedupeContractRows(rows: ContractRow[]): ContractRow[] {
@@ -205,40 +233,17 @@ function sortContractRows(rows: ContractRow[], sort: ContractSort): ContractRow[
 }
 
 async function loadContractsPageRows(args: {
-  q: string
-  procedure: string
   dateFrom: string
   dateTo: string
-  minAmount: number | null
 }): Promise<ContractRow[]> {
-  const rpcPageSize = 1000
-  const allRows: ContractRow[] = []
-  let rpcPage = 1
-  let expectedTotal: number | null = null
+  const { data, error } = await supabase.rpc('get_contracts_page_snapshot', {
+    p_date_from: args.dateFrom || null,
+    p_date_to: args.dateTo || null,
+  })
 
-  while (expectedTotal == null || allRows.length < expectedTotal) {
-    const { data, error } = await supabase.rpc('get_contracts_page', {
-      p_q: args.q || null,
-      p_procedure: args.procedure || null,
-      p_date_from: args.dateFrom || null,
-      p_date_to: args.dateTo || null,
-      p_min_amount: args.minAmount != null && Number.isFinite(args.minAmount) ? args.minAmount : null,
-      p_page: rpcPage,
-      p_page_size: rpcPageSize,
-    })
-
-    if (error) throw error
-
-    const pageRows = (data ?? []) as ContractRow[]
-    if (expectedTotal == null) expectedTotal = pageRows[0]?.total_count ?? 0
-    if (pageRows.length === 0) break
-
-    allRows.push(...pageRows)
-    if (pageRows.length < rpcPageSize) break
-    rpcPage += 1
-  }
-
-  return dedupeContractRows(allRows)
+  if (error) throw error
+  const payload = (data ?? {}) as { rows?: ContractRow[] }
+  return dedupeContractRows(Array.isArray(payload.rows) ? payload.rows : [])
 }
 
 async function loadOrganizationScopedRows(organizationKeys: string[], dateFrom: string, dateTo: string): Promise<ContractRow[]> {
@@ -644,8 +649,7 @@ export default function ContractsPage() {
     initialFilters.organizationKeys.length > 0 ||
     Boolean(initialFilters.regionKey) ||
     Boolean(initialFilters.municipalityKey)
-  const [rows, setRows] = useState<ContractRow[]>([])
-  const [totalCount, setTotalCount] = useState(0)
+  const [sourceRows, setSourceRows] = useState<ContractRow[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [openingContractId, setOpeningContractId] = useState<number | null>(null)
@@ -730,51 +734,45 @@ export default function ContractsPage() {
 
           if (cancelled) return
 
-          const min = minAmount ? Number(minAmount) : null
-          const filteredRows = scopedBaseRows
-            .filter((row) => matchesScopedQuery(row, q))
-            .filter((row) => !procedure || clean(row.procedure_type_value) === procedure)
-            .filter((row) => {
-              if (min == null || !Number.isFinite(min)) return true
-              return Number(row.amount_without_vat ?? 0) >= min
-            })
-          const sortedRows = sortContractRows(filteredRows, sort)
-
-          const total = sortedRows.length
-          const pageStart = Math.max((page - 1) * pageSize, 0)
-          const pageRows = sortedRows.slice(pageStart, pageStart + pageSize)
-          setRows(pageRows)
-          setTotalCount(total)
+          setSourceRows(scopedBaseRows)
           setLoading(false)
           return
         }
 
-        const min = minAmount ? Number(minAmount) : null
-        const filteredRows = await loadContractsPageRows({
-          q,
-          procedure,
+        const loadedRows = await loadContractsPageRows({
           dateFrom,
           dateTo,
-          minAmount: min,
         })
 
         if (cancelled) return
-
-        const sortedRows = sortContractRows(filteredRows, sort)
-        const pageStart = Math.max((page - 1) * pageSize, 0)
-        setRows(sortedRows.slice(pageStart, pageStart + pageSize))
-        setTotalCount(sortedRows.length)
+        setSourceRows(loadedRows)
         setLoading(false)
       } catch {
         if (cancelled) return
-        setRows([])
-        setTotalCount(0)
+        setSourceRows([])
         setLoading(false)
       }
     }
     loadPage()
     return () => { cancelled = true }
-  }, [q, procedure, dateFrom, dateTo, minAmount, sort, page, organizationKeys, regionKey, municipalityKey, hasScopedSource])
+  }, [dateFrom, dateTo, organizationKeys, regionKey, municipalityKey, hasScopedSource])
+
+  const filteredRows = useMemo(() => {
+    const min = minAmount ? Number(minAmount) : null
+    const searchedRows = filterContractRowsByQuery(sourceRows, q)
+      .filter((row) => !procedure || clean(row.procedure_type_value) === procedure)
+      .filter((row) => {
+        if (min == null || !Number.isFinite(min)) return true
+        return Number(row.amount_without_vat ?? 0) >= min
+      })
+    return sortContractRows(searchedRows, sort)
+  }, [sourceRows, q, procedure, minAmount, sort])
+
+  const totalCount = filteredRows.length
+  const rows = useMemo(() => {
+    const pageStart = Math.max((page - 1) * pageSize, 0)
+    return filteredRows.slice(pageStart, pageStart + pageSize)
+  }, [filteredRows, page])
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
 
@@ -978,8 +976,10 @@ export default function ContractsPage() {
         <input
           className="contracts-filter contracts-filter--search"
           value={q}
+          maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="Αναζήτηση (τίτλος/φορέας/δικαιούχος/CPV)"
+          placeholder="π.χ. πυροπροστασία & προμήθεια !καύσιμα"
+          title="Χρησιμοποιήστε & για υποχρεωτικούς όρους και ! για εξαιρέσεις"
         />
         <select
           className="contracts-filter contracts-filter--procedure"
