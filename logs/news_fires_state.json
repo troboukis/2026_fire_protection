@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564385552/thessaloniki-nees-apates-se-varos-ilikiomenon-proschima-dithen-provlimata-ygeias-ton-paidion-toys/",
-      "title": "Θεσσαλονίκη: Νέες υποθέσεις απάτης σε βάρος ηλικιωμένων – Πρόσχημα δήθεν προβλήματα υγείας των παιδιών τους",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΝΕΕΣ ΥΠΟΘΕΣΕΙΣ ΑΠΑΤΗΣ ΣΕ ΒΑΡΟΣ ΗΛΙΚΙΩΜΕΝΩΝ – ΠΡΟΣΧΗΜΑ ΔΗΘΕΝ ΠΡΟΒΛΗΜΑΤΑ ΥΓΕΙΑΣ ΤΩΝ ΠΑΙΔΙΩΝ ΤΟΥΣ",
+      "url": "https://www.kathimerini.gr/society/564385576/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-pempti-se-attiki-kai-eyvoia/",
+      "title": "Πολύ υψηλός ο κίνδυνος πυρκαγιάς για αύριο Πέμπτη σε Αττική και Εύβοια",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ Ο ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΓΙΑ ΑΥΡΙΟ ΠΕΜΠΤΗ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564385552/thessaloniki-nees-apates-se-varos-ilikiomenon-proschima-dithen-provlimata-ygeias-ton-paidion-toys/",
-        "https://www.kathimerini.gr/opinion/564384502/ta-synora-tis-e-e/",
-        "https://www.kathimerini.gr/k/gastronomos/564384178/kolokythakia-psita-me-vlita-kai-ladolemono-dyosmoy/",
-        "https://www.kathimerini.gr/opinion/564384895/iroes-yperano-chrimaton/",
-        "https://www.kathimerini.gr/opinion/564384898/maria-karystianoy-efimeroptera/",
-        "https://www.kathimerini.gr/opinion/564384493/i-asymfori-kostologisi-ton-yposcheseon/",
-        "https://www.kathimerini.gr/opinion/564384736/anazopyroseisapronoisias/",
-        "https://www.kathimerini.gr/opinion/564384700/egine-eisvoli-metanaston/"
+        "https://www.kathimerini.gr/society/564385576/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-pempti-se-attiki-kai-eyvoia/",
+        "https://www.kathimerini.gr/world/564385564/pezeskian-to-iran-tha-stirixei-opoia-apofasi-lavei-i-palaistiniaki-igesia-gia-ti-gaza/",
+        "https://www.kathimerini.gr/life/auto/564385546/dokimazoyme-to-kia-ev2-easy-living/",
+        "https://www.kathimerini.gr/economy/international/564384931/to-megalo-stoichima-tis-eyropis/"
       ],
-      "seen_at_utc": "2026-08-05T10:17:07.122063+00:00"
+      "seen_at_utc": "2026-08-05T10:30:14.923802+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,44 +1262,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1860974/prothesmia-gia-na-apologithei-aurio-elave-o-26hronos-afganos-gia-ti-dolofonia-tis-vretanidas-stin-kupseli/?utm_source=rss",
-      "title": "Προθεσμία για να απολογηθεί αύριο έλαβε ο 26χρονος Αφγανός για τη δολοφονία της Βρετανίδας στην Κυψέλη",
-      "normalized_title": "ΠΡΟΘΕΣΜΙΑ ΓΙΑ ΝΑ ΑΠΟΛΟΓΗΘΕΙ ΑΥΡΙΟ ΕΛΑΒΕ Ο 26ΧΡΟΝΟΣ ΑΦΓΑΝΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΒΡΕΤΑΝΙΔΑΣ ΣΤΗΝ ΚΥΨΕΛΗ",
+      "url": "https://www.protothema.gr/greece/article/1860976/speira-exapatise-exi-ilikiomenes-se-pieria-kai-florina-pano-apo-100000-euro-i-leia-tous/?utm_source=rss",
+      "title": "Σπείρα εξαπάτησε έξι ηλικιωμένες σε Πιερία και Φλώρινα, πάνω από 100.000 ευρώ η λεία τους",
+      "normalized_title": "ΣΠΕΙΡΑ ΕΞΑΠΑΤΗΣΕ ΕΞΙ ΗΛΙΚΙΩΜΕΝΕΣ ΣΕ ΠΙΕΡΙΑ ΚΑΙ ΦΛΩΡΙΝΑ, ΠΑΝΩ ΑΠΟ 100.000 ΕΥΡΩ Η ΛΕΙΑ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1860974/prothesmia-gia-na-apologithei-aurio-elave-o-26hronos-afganos-gia-ti-dolofonia-tis-vretanidas-stin-kupseli/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860971/nosileutike-sto-gna-o-giannis-dragasakis-to-dimosio-euharisto-sto-iatriko-kai-nosileutiko-prosopiko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860966/sunagermos-sto-irakleio-meta-apo-ekrixi-se-epiheirisi-traumatistike-enas-andras-deite-eikones/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1860965/fotia-tora-sto-neohori-messinias-epiheiroun-enaeria-mesa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1860976/speira-exapatise-exi-ilikiomenes-se-pieria-kai-florina-pano-apo-100000-euro-i-leia-tous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T10:17:07.122189+00:00"
+      "seen_at_utc": "2026-08-05T10:30:14.923907+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442409/irakleio-kritis-synagermos-sti-therisso-meta-apo-ekrixi-se-magazi-enas-traymatias-vinteo/",
-      "title": "Ηράκλειο Κρήτης: Συναγερμός στη Θέρισσο μετά από έκρηξη σε μαγαζί – Ένας τραυματίας [βίντεο]",
-      "normalized_title": "ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ: ΣΥΝΑΓΕΡΜΟΣ ΣΤΗ ΘΕΡΙΣΣΟ ΜΕΤΑ ΑΠΟ ΕΚΡΗΞΗ ΣΕ ΜΑΓΑΖΙ – ΕΝΑΣ ΤΡΑΥΜΑΤΙΑΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1442421/tsoykalas-gia-spitakia-anakyklosis-na-apantisei-o-k-georgiadis-giati-kostisan-5-kai-6-fores-parapano-stoys-ellines/",
+      "title": "Τσουκαλάς για Σπιτάκια Ανακύκλωσης: «Να απαντήσει ο κ. Γεωργιάδης γιατί κόστισαν 5 και 6 φορές παραπάνω»",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΓΙΑ ΣΠΙΤΑΚΙΑ ΑΝΑΚΥΚΛΩΣΗΣ: «ΝΑ ΑΠΑΝΤΗΣΕΙ Ο Κ. ΓΕΩΡΓΙΑΔΗΣ ΓΙΑΤΙ ΚΟΣΤΙΣΑΝ 5 ΚΑΙ 6 ΦΟΡΕΣ ΠΑΡΑΠΑΝΩ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442409/irakleio-kritis-synagermos-sti-therisso-meta-apo-ekrixi-se-magazi-enas-traymatias-vinteo/",
-        "https://www.efsyn.gr/ellada/1442188/kriti-apogeiothike-to-kostos-gia-to-rantar-toy-aerodromioy-sto-kastelli/",
-        "https://www.efsyn.gr/tehnes/1442206/o-poiitis-nikos-kleisiotis-stin-ef-syn-epsahna-kapoion-poy-na-akoyei-tis-lexeis/",
-        "https://www.efsyn.gr/ellada/1442408/exapatoysan-ilikiomenes-legontas-oti-ta-paidia-toys-hreiazontai-hrimata-gia-epemvasi-mia-syllipsi/",
-        "https://www.efsyn.gr/politiki/1442387/paraitithike-apo-ton-syriza-i-maria-repoysi-ti-episimainei-stin-epistoli-tis-poy-dimosiopoiei-to-efsyn-gr/"
+        "https://www.efsyn.gr/politiki/1442421/tsoykalas-gia-spitakia-anakyklosis-na-apantisei-o-k-georgiadis-giati-kostisan-5-kai-6-fores-parapano-stoys-ellines/",
+        "https://www.efsyn.gr/stiles/1442360/i-efarmogi-toy-ai-act-einai-mono-i-arhi/"
       ],
-      "seen_at_utc": "2026-08-05T10:17:07.122156+00:00"
+      "seen_at_utc": "2026-08-05T10:30:14.923888+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/05/go-fun/fizz/a-perfect-world-to-xouneri-tou-klint-istgount-ston-kevin-kostner-gia-na-ton-didaksei-epaggelmatismo/",
-      "title": "A Perfect World: Το χουνέρι του Κλιντ Ίστγουντ στον Κέβιν Κόστνερ για να τον διδάξει επαγγελματισμό",
-      "normalized_title": "A PERFECT WORLD: ΤΟ ΧΟΥΝΕΡΙ ΤΟΥ ΚΛΙΝΤ ΙΣΤΓΟΥΝΤ ΣΤΟΝ ΚΕΒΙΝ ΚΟΣΤΝΕΡ ΓΙΑ ΝΑ ΤΟΝ ΔΙΔΑΞΕΙ ΕΠΑΓΓΕΛΜΑΤΙΣΜΟ",
+      "url": "https://www.in.gr/2026/08/05/politics/androulakis-apo-porto-germeno-i-politiki-prostasia-sti-xora-mas-prepei-na-apoktisei-ena-allo-dogma/",
+      "title": "Ανδρουλάκης από Πόρτο Γερμενό: Η πολιτική προστασία στη χώρα μας πρέπει να αποκτήσει ένα άλλο δόγμα",
+      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ ΑΠΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ: Η ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑ ΣΤΗ ΧΩΡΑ ΜΑΣ ΠΡΕΠΕΙ ΝΑ ΑΠΟΚΤΗΣΕΙ ΕΝΑ ΑΛΛΟ ΔΟΓΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/05/go-fun/fizz/a-perfect-world-to-xouneri-tou-klint-istgount-ston-kevin-kostner-gia-na-ton-didaksei-epaggelmatismo/",
-        "https://www.in.gr/2026/08/05/greece/fotia-tora-sto-neoxori-messinias-epixeiroun-enaeria-mesa/",
-        "https://www.in.gr/2026/08/05/greece/mystras-frourio-to-ksenodoxeio-tou-55xronou-kameres-alysides-kai-konoi-ekryvan-ti-friki-ston-katapsykti/",
-        "https://www.in.gr/2026/08/05/greece/pethane-ksafnika-o-airetos-tou-kysde-thodoris-katsonopoulos-itan-idrytiko-stelexos-tis-elas/",
-        "https://www.in.gr/2026/08/05/istoriko-arxeio/kypros-1974-i-grammi-karaoglan-o-proanaggeltheis-akrotiriasmos/",
-        "https://www.in.gr/2026/08/05/sports/football/tzolakis-gia-ti-metagrafi-sti-xal-niotho-etoimos-kai-enthousiasmenos-eixa-mia-petyximeni-poreia-me-ton-olympiako/"
+        "https://www.in.gr/2026/08/05/politics/androulakis-apo-porto-germeno-i-politiki-prostasia-sti-xora-mas-prepei-na-apoktisei-ena-allo-dogma/",
+        "https://www.in.gr/2026/08/05/politics/aftodioikisi/diadimotiki-synergasia-dimou-anatolikis-samou-kai-dimou-doksatou/",
+        "https://www.in.gr/2026/08/05/sports/football/olympiakos-gia-tzolaki-den-yparxoun-antio-ston-dromo-mas-pic/",
+        "https://www.in.gr/2026/08/05/greece/apokardiotikes-eikones-apo-tis-kamenes-ektaseis-se-porto-germeno-kai-prosili-odoiporiko-tou-in/"
       ],
-      "seen_at_utc": "2026-08-05T10:17:07.122118+00:00"
+      "seen_at_utc": "2026-08-05T10:30:14.923855+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T10:17:07.122282+00:00"
+  "updated_at_utc": "2026-08-05T10:30:14.923980+00:00"
 }
