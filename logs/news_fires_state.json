@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564386194/logotechnia-gia-paidia-oi-ekdoseis-poy-xechorisame/",
-      "title": "Λογοτεχνία για παιδιά: Οι εκδόσεις που ξεχωρίσαμε",
-      "normalized_title": "ΛΟΓΟΤΕΧΝΙΑ ΓΙΑ ΠΑΙΔΙΑ: ΟΙ ΕΚΔΟΣΕΙΣ ΠΟΥ ΞΕΧΩΡΙΣΑΜΕ",
+      "url": "https://www.kathimerini.gr/life/auto/564387799/dokimi-plug-in-yvridiko-toyota-rav4-awd/",
+      "title": "Δοκιμή: Plug-in υβριδικό Toyota RAV4 AWD",
+      "normalized_title": "ΔΟΚΙΜΗ: PLUG-IN ΥΒΡΙΔΙΚΟ TOYOTA RAV4 AWD",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564386194/logotechnia-gia-paidia-oi-ekdoseis-poy-xechorisame/"
+        "https://www.kathimerini.gr/life/auto/564387799/dokimi-plug-in-yvridiko-toyota-rav4-awd/",
+        "https://www.kathimerini.gr/society/564387793/meteo-poies-einai-oi-6-pio-epikindynes-evdomades-toy-etoys-gia-dasikes-pyrkagies/"
       ],
-      "seen_at_utc": "2026-08-06T12:30:04.718519+00:00"
+      "seen_at_utc": "2026-08-06T12:51:52.709063+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861557/fotia-stin-periohi-kolubada-stin-skuro-4-aeroskafi/?utm_source=rss",
-      "title": "Φωτιά στην περιοχή Κολυμπάδα στην Σκύρο, 4 αεροσκάφη",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΚΟΛΥΜΠΑΔΑ ΣΤΗΝ ΣΚΥΡΟ, 4 ΑΕΡΟΣΚΑΦΗ",
+      "url": "https://www.protothema.gr/greece/article/1861572/thuma-apatis-gunaika-sti-magnisia-tis-eipan-oti-tha-ginei-ekrixi-sto-spiti-tis-kai-tis-arpaxan-ta-kosmimata/?utm_source=rss",
+      "title": "Θύμα απάτης γυναίκα στη Μαγνησία: Δήθεν τεχνικοί του ΔΕΔΔΗΕ της είπαν ότι θα γίνει έκρηξη στο σπίτι της και της άρπαξαν τα κοσμήματα",
+      "normalized_title": "ΘΥΜΑ ΑΠΑΤΗΣ ΓΥΝΑΙΚΑ ΣΤΗ ΜΑΓΝΗΣΙΑ: ΔΗΘΕΝ ΤΕΧΝΙΚΟΙ ΤΟΥ ΔΕΔΔΗΕ ΤΗΣ ΕΙΠΑΝ ΟΤΙ ΘΑ ΓΙΝΕΙ ΕΚΡΗΞΗ ΣΤΟ ΣΠΙΤΙ ΤΗΣ ΚΑΙ ΤΗΣ ΑΡΠΑΞΑΝ ΤΑ ΚΟΣΜΗΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861557/fotia-stin-periohi-kolubada-stin-skuro-4-aeroskafi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861572/thuma-apatis-gunaika-sti-magnisia-tis-eipan-oti-tha-ginei-ekrixi-sto-spiti-tis-kai-tis-arpaxan-ta-kosmimata/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861568/oikogeneiaki-fotografia-gia-ton-enan-hrono-apo-ton-thanato-tis-lenas-samara-dimosieuse-o-aderfos-tis-kostas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861567/upaat-apozimioseis-381-ekat-euro-se-ktinotrofous-gia-eulogia-panoli-kai-afthodi-pureto/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T12:30:04.718588+00:00"
+      "seen_at_utc": "2026-08-06T12:51:52.709164+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1443236/halkidiki-airetai-i-proliptiki-systasi-gia-mi-hrisi-toy-neroy-sti-siviri/",
-      "title": "Χαλκιδική: Αίρεται η προληπτική σύσταση για μη χρήση του νερού στη Σίβηρη",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΙΡΕΤΑΙ Η ΠΡΟΛΗΠΤΙΚΗ ΣΥΣΤΑΣΗ ΓΙΑ ΜΗ ΧΡΗΣΗ ΤΟΥ ΝΕΡΟΥ ΣΤΗ ΣΙΒΗΡΗ",
+      "url": "https://www.efsyn.gr/politiki/1443253/i-karystianoy-stin-antepithesi-efygan-1-000-gia-ton-samara-alla-oloi-asholoyntai-me-ena-melos-apo-to-mesologgi/",
+      "title": "Η Καρυστιανού στην αντεπίθεση: «Έφυγαν 1.000 για τον Σαμαρά, αλλά όλοι ασχολούνται με ένα μέλος από το Μεσολόγγι»",
+      "normalized_title": "Η ΚΑΡΥΣΤΙΑΝΟΥ ΣΤΗΝ ΑΝΤΕΠΙΘΕΣΗ: «ΕΦΥΓΑΝ 1.000 ΓΙΑ ΤΟΝ ΣΑΜΑΡΑ, ΑΛΛΑ ΟΛΟΙ ΑΣΧΟΛΟΥΝΤΑΙ ΜΕ ΕΝΑ ΜΕΛΟΣ ΑΠΟ ΤΟ ΜΕΣΟΛΟΓΓΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1443236/halkidiki-airetai-i-proliptiki-systasi-gia-mi-hrisi-toy-neroy-sti-siviri/"
+        "https://www.efsyn.gr/politiki/1443253/i-karystianoy-stin-antepithesi-efygan-1-000-gia-ton-samara-alla-oloi-asholoyntai-me-ena-melos-apo-to-mesologgi/",
+        "https://www.efsyn.gr/ellada/1443246/pote-xekinoyn-oi-dasikes-pyrkagies-stin-ellada-oi-exi-pio-epikindynes-evdomades-kathe-hrono-pinakes/",
+        "https://www.efsyn.gr/kosmos/1443235/oyggaria-i-voydapesti-hamilonei-ta-fota-se-mnimeia-kai-istorika-ktiria-gia-exoikonomisi-energeias-en-meso-kaysona/",
+        "https://www.efsyn.gr/life/1443234/o-ataman-stin-symi-ta-espase-ola-sto-akoysma-tis-annas-vissi-to-piato-poy-efage-sto-kefali-vinteo/",
+        "https://www.efsyn.gr/kosmos/1443237/i-oykrania-eplixe-dyo-rosika-diylistiria-petrelaioy-pyknos-kapnos-pano-apo-to-giaroslavl-vinteo/",
+        "https://www.efsyn.gr/kosmos/1443244/lithoyania-i-rosia-tha-mporoyse-na-hrisimopoiisei-oykranika-drones-kata-tis-valtikis/"
       ],
-      "seen_at_utc": "2026-08-06T12:30:04.718575+00:00"
+      "seen_at_utc": "2026-08-06T12:51:52.709132+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/stories/nikos-tsiforos-i-idia-i-ekfrasi-tis-zois/",
-      "title": "Νίκος Τσιφόρος: «Αν...»",
-      "normalized_title": "ΝΙΚΟΣ ΤΣΙΦΟΡΟΣ: «ΑΝ...»",
+      "url": "https://www.in.gr/2026/08/06/greece/fotia-tora-sti-skyro-sikothikan-4-enaeria/",
+      "title": "Φωτιά στη Σκύρο – Σηκώθηκαν 4 εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΚΥΡΟ – ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/stories/nikos-tsiforos-i-idia-i-ekfrasi-tis-zois/",
-        "https://www.in.gr/2026/08/06/greece/i-parakatathiki-tou-tha-meinei-zontani-o-epikideios-apoxairetismos-tou-koutsoumpa-gia-ton-laki-xalkia/",
-        "https://www.in.gr/2026/08/06/politics/politiki-grammateia/pasok-poioi-tha-epomistoun-to-kostos-ton-40-ekatommyrion-gia-ta-spitakia-anakyklosis-oi-dimoi-kai-oi-polites/",
-        "https://www.in.gr/2026/08/06/sports/football/almeida-gia-to-mats-me-tin-inter-maiami-makari-o-mesi-na-min-exei-oreksi-na-paiksei-mazi-mas-vid/",
-        "https://www.in.gr/2026/08/06/greece/na-min-afiseis-na-se-allaksoun-o-epikideios-tis-aleksandras-fotaki-gia-ton-nono-tis-laki-xalkia/",
-        "https://www.in.gr/2026/08/06/greece/karampola-me-tessera-oximata-ston-kifiso-konta-stin-eksodo-gia-peiraia/",
-        "https://www.in.gr/2026/08/06/world/dimoskopisi-ipa-xaos-sti-mesi-anatoli-vlepoun-oi-amerikanoi-logo-tis-politikis-tramp-sto-iran/",
-        "https://www.in.gr/2026/08/06/go-fun/fizz/parelasi-asteron-sti-mykono-nikol-kintman-zoi-salntana-kai-omar-eps-stin-psarrou/"
+        "https://www.in.gr/2026/08/06/greece/fotia-tora-sti-skyro-sikothikan-4-enaeria/",
+        "https://www.in.gr/2026/08/06/greece/mystras-pathologika-ta-aitia-tou-thanatou-tou-90xronou-pou-vrethike-ston-katapsykti-ti-ektima-o-iatrodikastis/"
       ],
-      "seen_at_utc": "2026-08-06T12:30:04.718555+00:00"
+      "seen_at_utc": "2026-08-06T12:51:52.709097+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T12:30:04.718657+00:00"
+  "updated_at_utc": "2026-08-06T12:51:52.709245+00:00"
 }
