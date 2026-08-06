@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564387064/ypografes-gia-ton-exoplismo-sto-kastelli/",
-      "title": "Υπογραφές για τον εξοπλισμό στο Καστέλλι",
-      "normalized_title": "ΥΠΟΓΡΑΦΕΣ ΓΙΑ ΤΟΝ ΕΞΟΠΛΙΣΜΟ ΣΤΟ ΚΑΣΤΕΛΛΙ",
+      "url": "https://www.kathimerini.gr/society/564387337/arta-fotia-se-ypostathmo-tis-dei/",
+      "title": "Αρτα: Φωτιά σε υποσταθμό της ΔΕΗ",
+      "normalized_title": "ΑΡΤΑ: ΦΩΤΙΑ ΣΕ ΥΠΟΣΤΑΘΜΟ ΤΗΣ ΔΕΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564387064/ypografes-gia-ton-exoplismo-sto-kastelli/",
-        "https://www.kathimerini.gr/visual/infographics/564387091/diplasiasmos-katharon-kerdon-sta-400-ekat-gia-dei-to-a-examino/"
+        "https://www.kathimerini.gr/society/564387337/arta-fotia-se-ypostathmo-tis-dei/",
+        "https://www.kathimerini.gr/visual/infographics/564387085/enischysi-poliseon-gia-coca-cola-hbc/",
+        "https://www.kathimerini.gr/society/564387319/ti-einai-to-spanio-polomeno-meltemi-poy-synevale-stin-exaplosi-ton-pyrkagion/",
+        "https://www.kathimerini.gr/world/564386722/ipa-kontres-me-aroma-rialiti-sto-oval-grafeio/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564387292/dimosieyma-breitbart-o-tramp-tha-meinei-stin-istoria-ean-mesolavisei-gia-tin-epistrofi-ton-glypton-toy-parthenona/"
       ],
-      "seen_at_utc": "2026-08-06T06:30:07.748763+00:00"
+      "seen_at_utc": "2026-08-06T06:51:30.072110+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,13 +1263,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861395/metetrepsan-horafi-sti-halkidona-thessalonikis-se-homateri-me-baza-apo-anakainiseis-duo-sullipseis/?utm_source=rss",
-      "title": "Μετέτρεψαν χωράφι στη Χαλκηδόνα Θεσσαλονίκης σε χωματερή με μπάζα από ανακαινίσεις, δύο συλλήψεις",
-      "normalized_title": "ΜΕΤΕΤΡΕΨΑΝ ΧΩΡΑΦΙ ΣΤΗ ΧΑΛΚΗΔΟΝΑ ΘΕΣΣΑΛΟΝΙΚΗΣ ΣΕ ΧΩΜΑΤΕΡΗ ΜΕ ΜΠΑΖΑ ΑΠΟ ΑΝΑΚΑΙΝΙΣΕΙΣ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1861404/pagosmio-endiaferon-gia-tin-iatriki-tou-panepistimiou-patron-168-aitiseis-apo-23-hores-gia-to-neo-agglofono-programma/?utm_source=rss",
+      "title": "Παγκόσμιο ενδιαφέρον για την Ιατρική του Πανεπιστημίου Πατρών, 168 αιτήσεις από 23 χώρες για το νέο αγγλόφωνο πρόγραμμα",
+      "normalized_title": "ΠΑΓΚΟΣΜΙΟ ΕΝΔΙΑΦΕΡΟΝ ΓΙΑ ΤΗΝ ΙΑΤΡΙΚΗ ΤΟΥ ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΠΑΤΡΩΝ, 168 ΑΙΤΗΣΕΙΣ ΑΠΟ 23 ΧΩΡΕΣ ΓΙΑ ΤΟ ΝΕΟ ΑΓΓΛΟΦΩΝΟ ΠΡΟΓΡΑΜΜΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861395/metetrepsan-horafi-sti-halkidona-thessalonikis-se-homateri-me-baza-apo-anakainiseis-duo-sullipseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861404/pagosmio-endiaferon-gia-tin-iatriki-tou-panepistimiou-patron-168-aitiseis-apo-23-hores-gia-to-neo-agglofono-programma/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T06:30:07.748841+00:00"
+      "seen_at_utc": "2026-08-06T06:51:30.072231+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/stiles/1442941/o-plithorismos-tis-propagandas/",
@@ -1282,14 +1285,17 @@
       "seen_at_utc": "2026-08-06T06:30:07.748819+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/greece/nea-taytotita-pou-prepei-na-epikairopoiisete-ta-stoixeia-sas-otan-tin-paralavete/",
-      "title": "Πού πρέπει να επικαιροποιήσετε τα στοιχεία σας όταν παραλάβετε τη νέα ταυτότητα",
-      "normalized_title": "ΠΟΥ ΠΡΕΠΕΙ ΝΑ ΕΠΙΚΑΙΡΟΠΟΙΗΣΕΤΕ ΤΑ ΣΤΟΙΧΕΙΑ ΣΑΣ ΟΤΑΝ ΠΑΡΑΛΑΒΕΤΕ ΤΗ ΝΕΑ ΤΑΥΤΟΤΗΤΑ",
+      "url": "https://www.in.gr/2026/08/06/world/i-rosia-arneitai-opoiadipote-sxesi-me-kyklomata-stratologisis-misthoforon-apo-tin-kolomvia/",
+      "title": "Η Ρωσία αρνείται οποιαδήποτε σχέση με κυκλώματα στρατολόγησης μισθοφόρων από την Κολομβία",
+      "normalized_title": "Η ΡΩΣΙΑ ΑΡΝΕΙΤΑΙ ΟΠΟΙΑΔΗΠΟΤΕ ΣΧΕΣΗ ΜΕ ΚΥΚΛΩΜΑΤΑ ΣΤΡΑΤΟΛΟΓΗΣΗΣ ΜΙΣΘΟΦΟΡΩΝ ΑΠΟ ΤΗΝ ΚΟΛΟΜΒΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/greece/nea-taytotita-pou-prepei-na-epikairopoiisete-ta-stoixeia-sas-otan-tin-paralavete/"
+        "https://www.in.gr/2026/08/06/world/i-rosia-arneitai-opoiadipote-sxesi-me-kyklomata-stratologisis-misthoforon-apo-tin-kolomvia/",
+        "https://www.in.gr/2026/08/06/greece/kefalonia-profylakisteos-o-44xronos-pou-synelifthi-gia-emprismo-apo-prothesi/",
+        "https://www.in.gr/2026/08/06/sports/basketball/ksana-dipla-ston-lempron-o-kentavious-kalntgouel-pooup-anakoinothike-apo-tous-siksers-pic/",
+        "https://www.in.gr/2026/08/06/sports/basketball/euroleague/o-loni-gouoker-epistrefei-sto-nba-oristiki-symfonia-me-tous-nagkets-pic/"
       ],
-      "seen_at_utc": "2026-08-06T06:30:07.748800+00:00"
+      "seen_at_utc": "2026-08-06T06:51:30.072205+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T06:30:07.748918+00:00"
+  "updated_at_utc": "2026-08-06T06:51:30.072312+00:00"
 }
