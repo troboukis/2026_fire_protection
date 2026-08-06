@@ -1,17 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564386803/to-nato-o-makarios-kai-i-eda/",
-      "title": "To NATO, ο Μακάριος και η ΕΔΑ",
-      "normalized_title": "TO NATO, Ο ΜΑΚΑΡΙΟΣ ΚΑΙ Η ΕΔΑ",
+      "url": "https://www.kathimerini.gr/world/564387286/chirosima-81-chronia-apo-tin-atomiki-vomva-ekklisi-na-egkataleifthei-i-logiki-tis-pyrinikis-apotropis/",
+      "title": "Χιροσίμα: 81 χρόνια από την ατομική βόμβα – Εκκληση να εγκαταλειφθεί η λογική της πυρηνικής αποτροπής",
+      "normalized_title": "ΧΙΡΟΣΙΜΑ: 81 ΧΡΟΝΙΑ ΑΠΟ ΤΗΝ ΑΤΟΜΙΚΗ ΒΟΜΒΑ – ΕΚΚΛΗΣΗ ΝΑ ΕΓΚΑΤΑΛΕΙΦΘΕΙ Η ΛΟΓΙΚΗ ΤΗΣ ΠΥΡΗΝΙΚΗΣ ΑΠΟΤΡΟΠΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564386803/to-nato-o-makarios-kai-i-eda/",
-        "https://www.kathimerini.gr/opinion/564386800/eimaste-etoimoi/",
-        "https://www.kathimerini.gr/opinion/564386821/to-atheato-trayma-tis-fotias/",
-        "https://www.kathimerini.gr/opinion/564386638/ekdoches-archigismoy/",
-        "https://www.kathimerini.gr/athletics/football/564386923/paok-deytero-empodio-i-anterlecht/"
+        "https://www.kathimerini.gr/world/564387286/chirosima-81-chronia-apo-tin-atomiki-vomva-ekklisi-na-egkataleifthei-i-logiki-tis-pyrinikis-apotropis/",
+        "https://www.kathimerini.gr/economy/local/564387031/exodikastikos-michanismos-espasan-to-fragma-ton-20-dis-oi-rythmiseis/",
+        "https://www.kathimerini.gr/society/564387283/entopismos-kai-diasosi-40-metanaston-notia-tis-ierapetras/",
+        "https://www.kathimerini.gr/economy/business/564387067/oristiki-symfonia-aktor-motor-oil-gia-ilektor-kai-thalis/",
+        "https://www.kathimerini.gr/athletics/564387259/panathinaikos-kai-tora-trechoyme/",
+        "https://www.kathimerini.gr/opinion/564386815/to-metanasteytiko-i-e-e-kai-to-esoteriko-metopo/"
       ],
-      "seen_at_utc": "2026-08-06T05:30:12.151313+00:00"
+      "seen_at_utc": "2026-08-06T05:51:32.744504+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,36 +1264,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861350/na-einai-galinia-ta-nera-tou-teleutaiou-sou-taxidiou-suginei-o-adelfos-tou-uparhou-tou-superferry/?utm_source=rss",
-      "title": "«Να είναι γαλήνια τα νερά του τελευταίου σου ταξιδιού»: Συγκινεί ο αδελφός του υπάρχου του Superferry που βρέθηκε νεκρός στην καμπίνα του",
-      "normalized_title": "«ΝΑ ΕΙΝΑΙ ΓΑΛΗΝΙΑ ΤΑ ΝΕΡΑ ΤΟΥ ΤΕΛΕΥΤΑΙΟΥ ΣΟΥ ΤΑΞΙΔΙΟΥ»: ΣΥΓΚΙΝΕΙ Ο ΑΔΕΛΦΟΣ ΤΟΥ ΥΠΑΡΧΟΥ ΤΟΥ SUPERFERRY ΠΟΥ ΒΡΕΘΗΚΕ ΝΕΚΡΟΣ ΣΤΗΝ ΚΑΜΠΙΝΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1861372/1050000-monadikoi-hristes-enimerothikan-hthes-tetarti-5-augoustou-apo-to-protothemagr/?utm_source=rss",
+      "title": "1.050.000 μοναδικοί χρήστες ενημερώθηκαν χθες Τετάρτη 5 Αυγούστου από το protothema.gr",
+      "normalized_title": "1.050.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΤΕΤΑΡΤΗ 5 ΑΥΓΟΥΣΤΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861350/na-einai-galinia-ta-nera-tou-teleutaiou-sou-taxidiou-suginei-o-adelfos-tou-uparhou-tou-superferry/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861372/1050000-monadikoi-hristes-enimerothikan-hthes-tetarti-5-augoustou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861362/sta-65-ta-krousmata-tou-iou-dutikou-neilou-stin-ellada-23-nea-mesa-se-mia-evdomada-stous-exi-oi-nekroi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861359/autokinito-vgike-fortomeno-sholika-thrania-ston-paradromo-tis-ethnikis-odou-athinon-lamias-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861356/mukonos-sunelifthi-astunomikos-gia-epikinduni-odigisi-kai-apeitheia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861353/video-tou-geetha-etsi-sunedraman-oi-enoples-dunameis-sti-megali-purkagia-tis-attikovoiotia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T05:30:12.151454+00:00"
+      "seen_at_utc": "2026-08-06T05:51:32.744652+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1442879/misigkan-o-tramp-epathe-parakroysi-me-ton-ampntoyl-el-sagient-leei-males-misei-to-israil/",
-      "title": "Μίσιγκαν: Ο Τραμπ έπαθε… παράκρουση με τον Αμπντούλ Ελ Σαγιέντ – «Λέει μαλ@@@ες, μισεί το Ισραήλ»",
-      "normalized_title": "ΜΙΣΙΓΚΑΝ: Ο ΤΡΑΜΠ ΕΠΑΘΕ… ΠΑΡΑΚΡΟΥΣΗ ΜΕ ΤΟΝ ΑΜΠΝΤΟΥΛ ΕΛ ΣΑΓΙΕΝΤ – «ΛΕΕΙ ΜΑΛ@@@ΕΣ, ΜΙΣΕΙ ΤΟ ΙΣΡΑΗΛ»",
+      "url": "https://www.efsyn.gr/ellada/1442913/nea-epiheirisi-diasosis-metanaston-anoihta-tis-ierapetras-perisynelegisan-40-atoma/",
+      "title": "Νέα επιχείρηση διάσωσης μεταναστών ανοιχτά της Ιεράπετρας – Περισυνελέγησαν 40 άτομα",
+      "normalized_title": "ΝΕΑ ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ ΜΕΤΑΝΑΣΤΩΝ ΑΝΟΙΧΤΑ ΤΗΣ ΙΕΡΑΠΕΤΡΑΣ – ΠΕΡΙΣΥΝΕΛΕΓΗΣΑΝ 40 ΑΤΟΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1442879/misigkan-o-tramp-epathe-parakroysi-me-ton-ampntoyl-el-sagient-leei-males-misei-to-israil/"
+        "https://www.efsyn.gr/ellada/1442913/nea-epiheirisi-diasosis-metanaston-anoihta-tis-ierapetras-perisynelegisan-40-atoma/",
+        "https://www.efsyn.gr/athlitismos/1442907/i-syggnomi-tis-fifa-gia-to-shedio-infantino-kai-i-ameristi-stirixi-ston-proedro/",
+        "https://www.efsyn.gr/oikonomia/1442870/ti-simatodotei-to-deal-aktor-motor-oil-stin-kykliki-oikonomia/",
+        "https://www.efsyn.gr/athlitismos/1442899/o-paok-psahnei-provadisma-prokrisis-sta-playoffs-toy-europa-league-kontra-stin-anterleht/",
+        "https://www.efsyn.gr/politiki/1442894/syriza-erotimata-gia-toys-heirismoys-toy-ypex-stin-ypothesi-tis-presveias-sti-vrazilia/",
+        "https://www.efsyn.gr/ellada/1442900/lakis-halkias-simera-i-kideia-toy-sto-a-nekrotafeio-athinon/",
+        "https://www.efsyn.gr/politiki/1442885/sakellaridis-epikindynes-theseis-mitsotaki-sto-metanasteytiko/"
       ],
-      "seen_at_utc": "2026-08-06T05:30:12.151403+00:00"
+      "seen_at_utc": "2026-08-06T05:51:32.744611+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/sports/basketball/ta-dedomena-gia-ton-mpoth-gkax-pou-parakolouthei-o-olympiakos/",
-      "title": "«Τα δεδομένα για τον Μποθ Γκαχ που παρακολουθεί ο Ολυμπιακός»",
-      "normalized_title": "«ΤΑ ΔΕΔΟΜΕΝΑ ΓΙΑ ΤΟΝ ΜΠΟΘ ΓΚΑΧ ΠΟΥ ΠΑΡΑΚΟΛΟΥΘΕΙ Ο ΟΛΥΜΠΙΑΚΟΣ»",
+      "url": "https://www.in.gr/2026/08/06/world/oukrania-treis-nekroi-apo-rosikous-vomvardismous-sta-voreioanatolika/",
+      "title": "Τρεις νεκροί από ρωσικούς βομβαρδισμούς στη βορειοανατολική Ουκρανία",
+      "normalized_title": "ΤΡΕΙΣ ΝΕΚΡΟΙ ΑΠΟ ΡΩΣΙΚΟΥΣ ΒΟΜΒΑΡΔΙΣΜΟΥΣ ΣΤΗ ΒΟΡΕΙΟΑΝΑΤΟΛΙΚΗ ΟΥΚΡΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/sports/basketball/ta-dedomena-gia-ton-mpoth-gkax-pou-parakolouthei-o-olympiakos/",
-        "https://www.in.gr/2026/08/06/life/woman/mesa-sto-matrix-pos-montela-kai-influencers-trofodotoun-apates-platformas-gnorimion-kai-ta-pagkosmia-kerdi-tis/",
-        "https://www.in.gr/2026/08/06/editorial/i-dystyxia-tou-na-eisai-misthotos-stin-ellada-tou-2026/",
-        "https://www.in.gr/2026/08/06/life/culture-live/artist-unknown-i-ivi-itan-edo-oi-apoleies-oi-mnimes-kai-mia-istoria-pou-den-prepei-na-ksexastei/",
-        "https://www.in.gr/2026/08/06/economy/komision-pos-aksiologei-tin-ellada-stin-proti-ekthesi-gia-tous-katotatous-misthous-kai-tis-syllogikes-symvaseis/"
+        "https://www.in.gr/2026/08/06/world/oukrania-treis-nekroi-apo-rosikous-vomvardismous-sta-voreioanatolika/",
+        "https://www.in.gr/2026/08/06/life/culture-live/lakis-xalkias-simera-stis-12-00-i-kideia-tou-agapimenou-kallitexni/",
+        "https://www.in.gr/2026/08/06/sports/football/poios-einai-o-logos-pou-o-gkavi-evapse-roz-ta-mallia-tou-pics/",
+        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/o-vrazilianikos-kafes-perna-apo-tin-elliniki-naytilia-koryfaio-proion-eisagogis/",
+        "https://www.in.gr/2026/08/06/world/iran-leei-oti-exei-symfonisei-me-to-oman-gia-to-ormouz-alla-to-ean-tha-anoiksei-tha-eksartithei-apo-tis-ipa/"
       ],
-      "seen_at_utc": "2026-08-06T05:17:41.049088+00:00"
+      "seen_at_utc": "2026-08-06T05:51:32.744569+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T05:30:12.151550+00:00"
+  "updated_at_utc": "2026-08-06T05:51:32.744754+00:00"
 }
