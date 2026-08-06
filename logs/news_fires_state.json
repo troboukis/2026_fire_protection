@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564387709/dimoskopisi-reuters-apaisiodoxoi-oi-amerikanoi-provlepoyn-peraitero-chaos-sti-mesi-anatoli-kai-neoys-polemoys/",
-      "title": "Δημοσκόπηση Reuters: Απαισιόδοξοι οι Αμερικανοί – Προβλέπουν περαιτέρω χάος στη Μέση Ανατολή και νέους πολέμους",
-      "normalized_title": "ΔΗΜΟΣΚΟΠΗΣΗ REUTERS: ΑΠΑΙΣΙΟΔΟΞΟΙ ΟΙ ΑΜΕΡΙΚΑΝΟΙ – ΠΡΟΒΛΕΠΟΥΝ ΠΕΡΑΙΤΕΡΩ ΧΑΟΣ ΣΤΗ ΜΕΣΗ ΑΝΑΤΟΛΗ ΚΑΙ ΝΕΟΥΣ ΠΟΛΕΜΟΥΣ",
+      "url": "https://www.kathimerini.gr/columns/564387439/choris-pyxida-pros-tis-endiameses-ekloges/",
+      "title": "Χωρίς πυξίδα προς τις ενδιάμεσες εκλογές",
+      "normalized_title": "ΧΩΡΙΣ ΠΥΞΙΔΑ ΠΡΟΣ ΤΙΣ ΕΝΔΙΑΜΕΣΕΣ ΕΚΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564387709/dimoskopisi-reuters-apaisiodoxoi-oi-amerikanoi-provlepoyn-peraitero-chaos-sti-mesi-anatoli-kai-neoys-polemoys/",
-        "https://www.kathimerini.gr/society/564387706/zakynthos-pnigmos-57chronoy-vretanoy-stin-periochi-pisines-kerioy/",
-        "https://www.kathimerini.gr/k/k-magazine/564386176/mia-oneiriki-diplokatoikia-stoy-papagoy/"
+        "https://www.kathimerini.gr/columns/564387439/choris-pyxida-pros-tis-endiameses-ekloges/",
+        "https://www.kathimerini.gr/politics/564387724/to-schedio-toy-ypen-gia-ti-dytiki-attiki-antidiavrotika-erga-anadasotea-ta-kamena/"
       ],
-      "seen_at_utc": "2026-08-06T11:51:31.256083+00:00"
+      "seen_at_utc": "2026-08-06T12:17:11.446911+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,24 +1260,27 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861542/andras-stin-korintho-spaei-tzamaria-katastimatos-me-plaka-pezodromiou-deite-video/?utm_source=rss",
-      "title": "Άνδρας στην Κόρινθο σπάει τζαμαρία καταστήματος με πλάκα πεζοδρομίου, δείτε βίντεο",
-      "normalized_title": "ΑΝΔΡΑΣ ΣΤΗΝ ΚΟΡΙΝΘΟ ΣΠΑΕΙ ΤΖΑΜΑΡΙΑ ΚΑΤΑΣΤΗΜΑΤΟΣ ΜΕ ΠΛΑΚΑ ΠΕΖΟΔΡΟΜΙΟΥ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1861556/trohaio-sti-sumvoli-kifisou-kai-poseidonos-dushereia-sto-reuma-pros-peiraia/?utm_source=rss",
+      "title": "Τροχαίο στη συμβολή Κηφισού και Ποσειδώνος, δυσχέρεια στο ρεύμα προς Πειραιά",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΣΥΜΒΟΛΗ ΚΗΦΙΣΟΥ ΚΑΙ ΠΟΣΕΙΔΩΝΟΣ, ΔΥΣΧΕΡΕΙΑ ΣΤΟ ΡΕΥΜΑ ΠΡΟΣ ΠΕΙΡΑΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861542/andras-stin-korintho-spaei-tzamaria-katastimatos-me-plaka-pezodromiou-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861556/trohaio-sti-sumvoli-kifisou-kai-poseidonos-dushereia-sto-reuma-pros-peiraia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861555/airetai-sustasi-gia-mi-hrisi-tou-nerou-sti-siviri-halkidikis-edos-ton-provlepomenon-orion-ta-apotelesmata-ton-eleghon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861551/ektakta-metra-gia-tin-katastoli-tis-diasporas-tis-eulogias-ton-provaton-stin-kastoria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T11:51:31.256227+00:00"
+      "seen_at_utc": "2026-08-06T12:17:11.447033+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1443207/htypima-famelloy-gia-ta-spitakia-anakyklosis-einai-karampinato-kyvernitiko-skandalo/",
-      "title": "«Χτύπημα» Φάμελλου για τα σπιτάκια ανακύκλωσης: Είναι καραμπινάτο κυβερνητικό σκάνδαλο",
-      "normalized_title": "«ΧΤΥΠΗΜΑ» ΦΑΜΕΛΛΟΥ ΓΙΑ ΤΑ ΣΠΙΤΑΚΙΑ ΑΝΑΚΥΚΛΩΣΗΣ: ΕΙΝΑΙ ΚΑΡΑΜΠΙΝΑΤΟ ΚΥΒΕΡΝΗΤΙΚΟ ΣΚΑΝΔΑΛΟ",
+      "url": "https://www.efsyn.gr/oikonomia/1443024/i-pyriniki-energeia-mas-htypaei-tin-porta-o-rolos-idiotikis-etaireias-poy-synergazetai-me-ethnikes-arhes/",
+      "title": "Η πυρηνική ενέργεια μας χτυπάει την πόρτα – Ο ρόλος ιδιωτικής εταιρείας που συνεργάζεται με εθνικές αρχές",
+      "normalized_title": "Η ΠΥΡΗΝΙΚΗ ΕΝΕΡΓΕΙΑ ΜΑΣ ΧΤΥΠΑΕΙ ΤΗΝ ΠΟΡΤΑ – Ο ΡΟΛΟΣ ΙΔΙΩΤΙΚΗΣ ΕΤΑΙΡΕΙΑΣ ΠΟΥ ΣΥΝΕΡΓΑΖΕΤΑΙ ΜΕ ΕΘΝΙΚΕΣ ΑΡΧΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1443207/htypima-famelloy-gia-ta-spitakia-anakyklosis-einai-karampinato-kyvernitiko-skandalo/",
-        "https://www.efsyn.gr/ellada/1443029/thessaloniki-adeiase-i-limnothalassa-kalohorioy-to-fainomeno-poy-apeilei-amesa-tin-panida-tis-periohis/",
-        "https://www.efsyn.gr/kosmos/1443206/dimoskopisi-reuters-ipsos-antidimofilis-o-polemos-toy-tramp-sto-iran-oi-amerikanoi-etoimazontai-gia-perissotero-haos/"
+        "https://www.efsyn.gr/oikonomia/1443024/i-pyriniki-energeia-mas-htypaei-tin-porta-o-rolos-idiotikis-etaireias-poy-synergazetai-me-ethnikes-arhes/",
+        "https://www.efsyn.gr/politiki/1443218/theodorikakos-stirizoyme-tin-viomihania-gia-mia-oikonomia-pio-antagonistiki-me-kalyteroys-misthoys/",
+        "https://www.efsyn.gr/oikonomia/1443219/se-karantina-i-kastoria-logo-eylogias-ton-aigoprovaton-ektakta-metra-gia-tin-katastoli-tis-diasporas/",
+        "https://www.efsyn.gr/politiki/1443213/papastayroy-oi-vasikoi-axones-toy-shedioy-gia-ti-dytiki-attiki-antidiavrotika-erga-anadasotea-ta-kamena/"
       ],
-      "seen_at_utc": "2026-08-06T11:51:31.256192+00:00"
+      "seen_at_utc": "2026-08-06T12:17:11.446977+00:00"
     },
     "in_gr": {
       "url": "https://www.in.gr/2026/08/06/world/oukrania-i-proin-presveytis-stis-ipa-stefanisina-einai-ypopti-gia-diafthora/",
@@ -1294,5 +1296,5 @@
       "seen_at_utc": "2026-08-06T11:51:31.256144+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T11:51:31.256314+00:00"
+  "updated_at_utc": "2026-08-06T12:17:11.447114+00:00"
 }
