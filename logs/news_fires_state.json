@@ -1,18 +1,22 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564386683/entos-kai-ektos-i-e-e-kai-to-nomoschedio-gia-ti-galazia-patrida/",
-      "title": "Εντός και Εκτός: Η Ε.Ε. και το νομοσχέδιο για τη «Γαλάζια Πατρίδα»",
-      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: Η Ε.Ε. ΚΑΙ ΤΟ ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΤΗ «ΓΑΛΑΖΙΑ ΠΑΤΡΙΔΑ»",
+      "url": "https://www.kathimerini.gr/economy/diktis/564387115/poliseis-4-3-dis-gia-ti-viochalko/",
+      "title": "Πωλήσεις 4,3 δισ. για τη Βιοχάλκο",
+      "normalized_title": "ΠΩΛΗΣΕΙΣ 4,3 ΔΙΣ. ΓΙΑ ΤΗ ΒΙΟΧΑΛΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564386683/entos-kai-ektos-i-e-e-kai-to-nomoschedio-gia-ti-galazia-patrida/",
-        "https://www.kathimerini.gr/politics/564387193/nea-pyra-aygerinoy-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-kai-synomosies/",
-        "https://www.kathimerini.gr/economy/international/564387130/sto-stochastro-iranikon-pyraylon-oi-ypodomes-ai-ston-kolpo/",
-        "https://www.kathimerini.gr/istoria/564385741/san-simera-6-aygoystoy-1806-i-dialysi-tis-agias-romaikis-aytokratorias-toy-germanikoy-ethnoys/",
-        "https://www.kathimerini.gr/society/564387175/ypothesi-marfin-stin-ellada-ekdidetai-simera-i-46chroni-katigoroymeni/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564386677/parathyro-gia-to-kalodio-me-tin-kypro/"
+        "https://www.kathimerini.gr/economy/diktis/564387115/poliseis-4-3-dis-gia-ti-viochalko/",
+        "https://www.kathimerini.gr/society/564387232/kypseli-simera-i-apologia-toy-26chronoy-afganoy-gia-ti-dolofonia-tis-vretanidas/",
+        "https://www.kathimerini.gr/culture/cinema/564387223/i-afisa-poy-tromaxe-toys-epivates-toy-metro-sto-londino/",
+        "https://www.kathimerini.gr/visual/podcasts/564387169/tha-epireasoyn-ta-ellinotoyrkika-tis-epomenes-ekloges/",
+        "https://www.kathimerini.gr/culture/564381724/apo-ton-virvo-den-petas-tipota-oyte-ena-kai/",
+        "https://www.kathimerini.gr/life/health/564196780/o-proliptikos-elegchos-gia-ton-karkino-toy-prostati-veltionetai-diarkos/",
+        "https://www.kathimerini.gr/k/gastronomos/564386248/i-syros-tis-smaragdas-karydi-kai-tis-elenas-skoyla-stekia-proionta-mystika/",
+        "https://www.kathimerini.gr/world/564387205/mexiko-nearos-influencer-dolofonithike-se-zontani-metadosi-sto-tiktok/",
+        "https://www.kathimerini.gr/athletics/564387199/fifa-zita-syggnomi-gia-to-schedio-infantino-alla-ton-stirizei/",
+        "https://www.kathimerini.gr/politics/564386635/parathyro-epistrofis/"
       ],
-      "seen_at_utc": "2026-08-06T04:51:14.216460+00:00"
+      "seen_at_utc": "2026-08-06T05:17:41.049038+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,41 +1268,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861337/stin-ellada-fthanei-simera-i-46hroni-apo-ti-vretania-pou-katigoreitai-gia-ton-ebrismo-sti-marfin/?utm_source=rss",
-      "title": "Στην Ελλάδα φθάνει σήμερα η 46χρονη από τη Βρετανία που κατηγορείται για τον εμπρησμό στη Marfin",
-      "normalized_title": "ΣΤΗΝ ΕΛΛΑΔΑ ΦΘΑΝΕΙ ΣΗΜΕΡΑ Η 46ΧΡΟΝΗ ΑΠΟ ΤΗ ΒΡΕΤΑΝΙΑ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΟΝ ΕΜΠΡΗΣΜΟ ΣΤΗ MARFIN",
+      "url": "https://www.protothema.gr/greece/article/1861345/simera-stis-1200-i-kideia-tou-laki-halkia-sto-a-nekrotafeio-athinon-i-epithumia-tis-oikogeneias/?utm_source=rss",
+      "title": "Σήμερα στις 12:00 η κηδεία του Λάκη Χαλκιά στο Α' Νεκροταφείο Αθηνών, η επιθυμία της οικογένειας",
+      "normalized_title": "ΣΗΜΕΡΑ ΣΤΙΣ 12:00 Η ΚΗΔΕΙΑ ΤΟΥ ΛΑΚΗ ΧΑΛΚΙΑ ΣΤΟ Α' ΝΕΚΡΟΤΑΦΕΙΟ ΑΘΗΝΩΝ, Η ΕΠΙΘΥΜΙΑ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861337/stin-ellada-fthanei-simera-i-46hroni-apo-ti-vretania-pou-katigoreitai-gia-ton-ebrismo-sti-marfin/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861332/fotia-sto-lasithi-koda-ston-oikismo-karudi-112-gia-etoimotita/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861317/edopistikan-40-metanastes-notia-tis-ierapetras/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861345/simera-stis-1200-i-kideia-tou-laki-halkia-sto-a-nekrotafeio-athinon-i-epithumia-tis-oikogeneias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T04:17:40.995978+00:00"
+      "seen_at_utc": "2026-08-06T05:17:41.049168+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1442859/xanahtypa-o-aygerinos-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-i-dimokratia-tha-toys-halasei-to-oneiro/",
-      "title": "Ξαναχτυπά ο Αυγερινός κατά Καρυστιανού: «Κάποιοι ονειρεύονται βουλευτικά έδρανα, η δημοκρατία θα τους χαλάσει το όνειρο»",
-      "normalized_title": "ΞΑΝΑΧΤΥΠΑ Ο ΑΥΓΕΡΙΝΟΣ ΚΑΤΑ ΚΑΡΥΣΤΙΑΝΟΥ: «ΚΑΠΟΙΟΙ ΟΝΕΙΡΕΥΟΝΤΑΙ ΒΟΥΛΕΥΤΙΚΑ ΕΔΡΑΝΑ, Η ΔΗΜΟΚΡΑΤΙΑ ΘΑ ΤΟΥΣ ΧΑΛΑΣΕΙ ΤΟ ΟΝΕΙΡΟ»",
+      "url": "https://www.efsyn.gr/kosmos/1442873/horis-stirixi-oi-protaseis-tis-meloni-gia-to-metanasteytiko/",
+      "title": "Χωρίς στήριξη οι προτάσεις της Μελόνι για το μεταναστευτικό",
+      "normalized_title": "ΧΩΡΙΣ ΣΤΗΡΙΞΗ ΟΙ ΠΡΟΤΑΣΕΙΣ ΤΗΣ ΜΕΛΟΝΙ ΓΙΑ ΤΟ ΜΕΤΑΝΑΣΤΕΥΤΙΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1442859/xanahtypa-o-aygerinos-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-i-dimokratia-tha-toys-halasei-to-oneiro/",
-        "https://www.efsyn.gr/politiki/1442855/syriza-se-diorthotikes-apopompes-prohora-i-nea-igesia-ektos-institoytoy-nikos-poylantzas-i-maria-repoysi/",
-        "https://www.efsyn.gr/oikonomia/1442853/omilos-dei-sta-12-dis-to-ebitda-sto-a%ce%84-examino/",
-        "https://www.efsyn.gr/ellada/1442860/kairos-zesti-me-38aria-simera-anevainei-i-thermokrasia-to-savvato-mehri-6-mpofor-oi-anemoi-stin-attiki/"
+        "https://www.efsyn.gr/kosmos/1442873/horis-stirixi-oi-protaseis-tis-meloni-gia-to-metanasteytiko/",
+        "https://www.efsyn.gr/politiki/1442863/ilektriki-diasyndesi-elladas-kyproy-galliki-ypografi-horis-hronodiagramma/",
+        "https://www.efsyn.gr/politiki/1442876/i-koymoyndoyroy-den-paei-diakopes/",
+        "https://www.efsyn.gr/politiki/1442848/polemos-anakoinoseon-georgiadi-pasok-gia-ta-spitakia-anakyklosis/",
+        "https://www.efsyn.gr/politiki/1442839/copy-paste-metra-gia-toys-pyropliktoys/",
+        "https://www.efsyn.gr/politiki/1442851/pos-na-kerdisete-mia-ypoyrgiki-karekla/",
+        "https://www.efsyn.gr/athlitismos/1442867/athens-kallithea-me-tzeni-vanoy-i-entyposiaki-paroysiasi-tis-neas-fanelas-vinteo/"
       ],
-      "seen_at_utc": "2026-08-06T04:51:14.216543+00:00"
+      "seen_at_utc": "2026-08-06T05:17:41.049127+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/go-fun/social/arkas-i-kalimera-tis-pemptis-13/",
-      "title": "Αρκάς: Η καλημέρα της Πέμπτης",
-      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΠΕΜΠΤΗΣ",
+      "url": "https://www.in.gr/2026/08/06/sports/basketball/ta-dedomena-gia-ton-mpoth-gkax-pou-parakolouthei-o-olympiakos/",
+      "title": "«Τα δεδομένα για τον Μποθ Γκαχ που παρακολουθεί ο Ολυμπιακός»",
+      "normalized_title": "«ΤΑ ΔΕΔΟΜΕΝΑ ΓΙΑ ΤΟΝ ΜΠΟΘ ΓΚΑΧ ΠΟΥ ΠΑΡΑΚΟΛΟΥΘΕΙ Ο ΟΛΥΜΠΙΑΚΟΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/go-fun/social/arkas-i-kalimera-tis-pemptis-13/",
-        "https://www.in.gr/2026/08/06/greece/kypseli-ta-senaria-gia-to-kinitro-tis-dolofonias-tis-38xronis-vretanidas-ti-ypostirizei-o-26xronos/",
-        "https://www.in.gr/2026/08/06/life/diakopes/eleytheria-asfaleia-kai-prosopiki-ekseliksi-ti-kryvetai-piso-apo-tin-tasi-ton-solo-taksidion/",
-        "https://www.in.gr/2026/08/06/plus/vita/farmers-walk-i-askisi-pou-exei-ginei-trend/",
-        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/grafeia-sta-31-eyro-ta-enoikia-grafeion-sto-kentro-tis-athinas/"
+        "https://www.in.gr/2026/08/06/sports/basketball/ta-dedomena-gia-ton-mpoth-gkax-pou-parakolouthei-o-olympiakos/",
+        "https://www.in.gr/2026/08/06/life/woman/mesa-sto-matrix-pos-montela-kai-influencers-trofodotoun-apates-platformas-gnorimion-kai-ta-pagkosmia-kerdi-tis/",
+        "https://www.in.gr/2026/08/06/editorial/i-dystyxia-tou-na-eisai-misthotos-stin-ellada-tou-2026/",
+        "https://www.in.gr/2026/08/06/life/culture-live/artist-unknown-i-ivi-itan-edo-oi-apoleies-oi-mnimes-kai-mia-istoria-pou-den-prepei-na-ksexastei/",
+        "https://www.in.gr/2026/08/06/economy/komision-pos-aksiologei-tin-ellada-stin-proti-ekthesi-gia-tous-katotatous-misthous-kai-tis-syllogikes-symvaseis/"
       ],
-      "seen_at_utc": "2026-08-06T04:51:14.216495+00:00"
+      "seen_at_utc": "2026-08-06T05:17:41.049088+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T04:51:14.216613+00:00"
+  "updated_at_utc": "2026-08-06T05:17:41.049243+00:00"
 }
