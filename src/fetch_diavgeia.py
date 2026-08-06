@@ -12,6 +12,7 @@ import json
 import os
 import re
 import ast
+import time
 import unicodedata
 from urllib.parse import quote
 from datetime import datetime
@@ -95,6 +96,10 @@ KEYWORDS = [
     "αντιπυρικών",
 ]
 PAGE_SIZE = 100
+KEYWORD_BATCH_SIZE = 5
+SEARCH_REQUEST_TIMEOUT = 30
+SEARCH_MAX_ATTEMPTS = 3
+SEARCH_RETRY_BACKOFF_SECONDS = 2
 SPENDING_APPROVAL_LABEL = "ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ"
 COMMITMENT_LABEL = "ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ"
 DIRECT_ASSIGNMENT_LABEL = "ΑΝΑΘΕΣΗ ΕΡΓΩΝ / ΠΡΟΜΗΘΕΙΩΝ / ΥΠΗΡΕΣΙΩΝ / ΜΕΛΕΤΩΝ"
@@ -328,94 +333,143 @@ def append_run_log(
 # Fetch
 # ---------------------------------------------------------------------------
 
+def chunked_keywords(keywords: list[str], batch_size: int = KEYWORD_BATCH_SIZE) -> list[list[str]]:
+    """Split search terms into small batches so Diavgeia can answer reliably."""
+    if batch_size < 1:
+        raise ValueError("batch_size must be at least 1")
+    return [keywords[i:i + batch_size] for i in range(0, len(keywords), batch_size)]
+
+
+def build_search_params(keywords: list[str], page: int, since: datetime | None, now: datetime) -> dict:
+    """Build one Diavgeia search request for a bounded keyword batch."""
+    q_keywords = ", ".join(f'"{kw}"' for kw in keywords)
+    params = {
+        "q": f"q:[{q_keywords}]",
+        "sort": "recent",
+        "size": PAGE_SIZE,
+        "page": page,
+    }
+    if since is not None:
+        dt_from = since.strftime("%Y-%m-%dT%H:%M:%S")
+        dt_to = now.strftime("%Y-%m-%dT23:59:59")
+        params["fq"] = f"submissionTimestamp:[DT({dt_from}) TO DT({dt_to})]"
+    return params
+
+
+def fetch_search_page(session: requests.Session, params: dict) -> dict:
+    """Fetch one search page, retrying transient Diavgeia timeouts."""
+    for attempt in range(1, SEARCH_MAX_ATTEMPTS + 1):
+        try:
+            response = session.get(
+                SEARCH_URL,
+                params=params,
+                headers={"Accept": "application/json"},
+                timeout=SEARCH_REQUEST_TIMEOUT,
+            )
+            response.raise_for_status()
+            return response.json()
+        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError):
+            if attempt >= SEARCH_MAX_ATTEMPTS:
+                raise
+            delay = SEARCH_RETRY_BACKOFF_SECONDS * attempt
+            print(
+                f"[fetch] Diavgeia request timed out; retrying "
+                f"({attempt + 1}/{SEARCH_MAX_ATTEMPTS}) in {delay}s...",
+                flush=True,
+            )
+            time.sleep(delay)
+
+    raise RuntimeError("Unreachable Diavgeia retry state")
+
+
+def decision_dedupe_key(record: dict) -> tuple:
+    """Return a stable key for merging results from overlapping keyword batches."""
+    ada = str(record.get("ada") or "").strip()
+    if ada:
+        return ("ada", ada)
+    return (
+        "fallback",
+        record.get("submissionTimestamp"),
+        record.get("documentUrl"),
+        record.get("subject"),
+    )
+
+
 def fetch_new_decisions(since: datetime | None) -> list[dict]:
     """
     Fetch decisions from Diavgeia newer than `since`.
     Pages sorted by most-recent first; stops as soon as all records on a page
     are older than the cutoff.
     """
-    q_keywords = ", ".join(f'"{kw}"' for kw in KEYWORDS)
     now = datetime.now()
-
-    def build_params(page: int) -> dict:
-        p = {
-            "q": f"q:[{q_keywords}]",
-            "sort": "recent",
-            "size": PAGE_SIZE,
-            "page": page,
-        }
-        if since is not None:
-            dt_from = since.strftime("%Y-%m-%dT%H:%M:%S")
-            dt_to = now.strftime("%Y-%m-%dT23:59:59")
-            p["fq"] = f"submissionTimestamp:[DT({dt_from}) TO DT({dt_to})]"
-        return p
-
     results: list[dict] = []
-    page = 0
+    seen_keys: set[tuple] = set()
+    keyword_batches = chunked_keywords(KEYWORDS)
 
-    # First request — learn total
-    r = requests.get(SEARCH_URL, params=build_params(0), headers={"Accept": "application/json"}, timeout=30)
-    r.raise_for_status()
-    data = r.json()
-    total = data["info"]["total"]
-    pages = -(-total // PAGE_SIZE)  # ceiling division
-    print(f"[fetch] API reports {total} results across {pages} pages (since {since})")
-
-    while True:
-        if page > 0:
-            r = requests.get(SEARCH_URL, params=build_params(page), headers={"Accept": "application/json"}, timeout=30)
-            r.raise_for_status()
-            data = r.json()
-
-        batch = data.get("decisions", [])
-        if not batch:
-            break
-
-        excluded_in_batch = 0
-        filtered_batch = []
-        for rec in batch:
-            if record_has_excluded_org(rec):
-                excluded_in_batch += 1
-                continue
-            filtered_batch.append(rec)
-        batch = filtered_batch
-
-        # Client-side cutoff check (guards against APIs that ignore from_date)
-        if since is not None:
-            new_in_batch = []
-            stop = False
-            for rec in batch:
-                ts = rec.get("submissionTimestamp", "")
-                try:
-                    rec_dt = datetime.strptime(ts, "%d/%m/%Y %H:%M:%S")
-                except ValueError:
-                    rec_dt = None
-
-                if rec_dt is None or rec_dt > since:
-                    new_in_batch.append(rec)
-                else:
-                    stop = True  # hit old data; no need to go further
-
-            results.extend(new_in_batch)
-            excl_note = f", excluded orgs: {excluded_in_batch}" if excluded_in_batch else ""
+    with requests.Session() as session:
+        for batch_index, keywords in enumerate(keyword_batches, start=1):
+            page = 0
+            pages = 1
             print(
-                f"[fetch] page {page + 1}/{pages} — {len(new_in_batch)} new records "
-                f"(total so far: {len(results)}){excl_note}"
-            )
-            if stop:
-                print("[fetch] Reached records older than cutoff. Stopping.")
-                break
-        else:
-            results.extend(batch)
-            excl_note = f", excluded orgs: {excluded_in_batch}" if excluded_in_batch else ""
-            print(
-                f"[fetch] page {page + 1}/{pages} — {len(batch)} records "
-                f"(total so far: {len(results)}){excl_note}"
+                f"[fetch] keyword batch {batch_index}/{len(keyword_batches)}: "
+                f"{', '.join(keywords)}",
+                flush=True,
             )
 
-        page += 1
-        if page >= pages:
-            break
+            while page < pages:
+                params = build_search_params(keywords, page, since, now)
+                data = fetch_search_page(session, params)
+                total = data["info"]["total"]
+                pages = -(-total // PAGE_SIZE)  # ceiling division
+                if page == 0:
+                    print(
+                        f"[fetch] API reports {total} results across {pages} pages "
+                        f"for batch {batch_index} (since {since})"
+                    )
+
+                api_batch = data.get("decisions", [])
+                if not api_batch:
+                    break
+
+                excluded_in_batch = 0
+                filtered_batch = []
+                for rec in api_batch:
+                    if record_has_excluded_org(rec):
+                        excluded_in_batch += 1
+                        continue
+                    filtered_batch.append(rec)
+
+                # Client-side cutoff check (guards against APIs that ignore fq).
+                new_in_batch = []
+                stop = False
+                for rec in filtered_batch:
+                    if since is not None:
+                        ts = rec.get("submissionTimestamp", "")
+                        try:
+                            rec_dt = datetime.strptime(ts, "%d/%m/%Y %H:%M:%S")
+                        except ValueError:
+                            rec_dt = None
+                        if rec_dt is not None and rec_dt <= since:
+                            stop = True
+                            continue
+
+                    key = decision_dedupe_key(rec)
+                    if key not in seen_keys:
+                        seen_keys.add(key)
+                        new_in_batch.append(rec)
+
+                results.extend(new_in_batch)
+                excl_note = f", excluded orgs: {excluded_in_batch}" if excluded_in_batch else ""
+                print(
+                    f"[fetch] batch {batch_index}, page {page + 1}/{pages} — "
+                    f"{len(new_in_batch)} unique new records "
+                    f"(total so far: {len(results)}){excl_note}"
+                )
+                if stop:
+                    print(f"[fetch] Batch {batch_index} reached the cutoff. Stopping this batch.")
+                    break
+
+                page += 1
 
     return results
 
