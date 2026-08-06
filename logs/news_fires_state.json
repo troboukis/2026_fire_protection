@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564387088/ayxithikan-oi-ellines-poy-apofasisan-na-diakopsoyn-to-kapnisma/",
-      "title": "Αυξήθηκαν οι Ελληνες που αποφάσισαν να διακόψουν το κάπνισμα",
-      "normalized_title": "ΑΥΞΗΘΗΚΑΝ ΟΙ ΕΛΛΗΝΕΣ ΠΟΥ ΑΠΟΦΑΣΙΣΑΝ ΝΑ ΔΙΑΚΟΨΟΥΝ ΤΟ ΚΑΠΝΙΣΜΑ",
+      "url": "https://www.kathimerini.gr/politics/564386683/entos-kai-ektos-i-e-e-kai-to-nomoschedio-gia-ti-galazia-patrida/",
+      "title": "Εντός και Εκτός: Η Ε.Ε. και το νομοσχέδιο για τη «Γαλάζια Πατρίδα»",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: Η Ε.Ε. ΚΑΙ ΤΟ ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΤΗ «ΓΑΛΑΖΙΑ ΠΑΤΡΙΔΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564387088/ayxithikan-oi-ellines-poy-apofasisan-na-diakopsoyn-to-kapnisma/",
-        "https://www.kathimerini.gr/world/564387154/ipa-ereyna-gia-to-proedriko-elikoptero-poy-irthe-se-apostasi-anapnois-apo-aeroskafos-tis-grammis/",
-        "https://www.kathimerini.gr/society/564386695/deyteri-paremvasi-ste-gia-tis-oikodomikes-adeies-sti-sifno/"
+        "https://www.kathimerini.gr/politics/564386683/entos-kai-ektos-i-e-e-kai-to-nomoschedio-gia-ti-galazia-patrida/",
+        "https://www.kathimerini.gr/politics/564387193/nea-pyra-aygerinoy-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-kai-synomosies/",
+        "https://www.kathimerini.gr/economy/international/564387130/sto-stochastro-iranikon-pyraylon-oi-ypodomes-ai-ston-kolpo/",
+        "https://www.kathimerini.gr/istoria/564385741/san-simera-6-aygoystoy-1806-i-dialysi-tis-agias-romaikis-aytokratorias-toy-germanikoy-ethnoys/",
+        "https://www.kathimerini.gr/society/564387175/ypothesi-marfin-stin-ellada-ekdidetai-simera-i-46chroni-katigoroymeni/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564386677/parathyro-gia-to-kalodio-me-tin-kypro/"
       ],
-      "seen_at_utc": "2026-08-06T04:30:17.711606+00:00"
+      "seen_at_utc": "2026-08-06T04:51:14.216460+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,52 +1275,30 @@
       "seen_at_utc": "2026-08-06T04:17:40.995978+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1442845/anatropi-sta-malia-i-42hroni-pnigike-gia-na-sosei-ti-fili-tis-paroysia-trion-anilikon-paidion/",
-      "title": "Ανατροπή στα Μάλια: Η 42χρονη πνίγηκε για να σώσει τη φίλη της παρουσία τριών ανήλικων παιδιών",
-      "normalized_title": "ΑΝΑΤΡΟΠΗ ΣΤΑ ΜΑΛΙΑ: Η 42ΧΡΟΝΗ ΠΝΙΓΗΚΕ ΓΙΑ ΝΑ ΣΩΣΕΙ ΤΗ ΦΙΛΗ ΤΗΣ ΠΑΡΟΥΣΙΑ ΤΡΙΩΝ ΑΝΗΛΙΚΩΝ ΠΑΙΔΙΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1442859/xanahtypa-o-aygerinos-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-i-dimokratia-tha-toys-halasei-to-oneiro/",
+      "title": "Ξαναχτυπά ο Αυγερινός κατά Καρυστιανού: «Κάποιοι ονειρεύονται βουλευτικά έδρανα, η δημοκρατία θα τους χαλάσει το όνειρο»",
+      "normalized_title": "ΞΑΝΑΧΤΥΠΑ Ο ΑΥΓΕΡΙΝΟΣ ΚΑΤΑ ΚΑΡΥΣΤΙΑΝΟΥ: «ΚΑΠΟΙΟΙ ΟΝΕΙΡΕΥΟΝΤΑΙ ΒΟΥΛΕΥΤΙΚΑ ΕΔΡΑΝΑ, Η ΔΗΜΟΚΡΑΤΙΑ ΘΑ ΤΟΥΣ ΧΑΛΑΣΕΙ ΤΟ ΟΝΕΙΡΟ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1442845/anatropi-sta-malia-i-42hroni-pnigike-gia-na-sosei-ti-fili-tis-paroysia-trion-anilikon-paidion/"
+        "https://www.efsyn.gr/politiki/1442859/xanahtypa-o-aygerinos-kata-karystianoy-kapoioi-oneireyontai-voyleytika-edrana-i-dimokratia-tha-toys-halasei-to-oneiro/",
+        "https://www.efsyn.gr/politiki/1442855/syriza-se-diorthotikes-apopompes-prohora-i-nea-igesia-ektos-institoytoy-nikos-poylantzas-i-maria-repoysi/",
+        "https://www.efsyn.gr/oikonomia/1442853/omilos-dei-sta-12-dis-to-ebitda-sto-a%ce%84-examino/",
+        "https://www.efsyn.gr/ellada/1442860/kairos-zesti-me-38aria-simera-anevainei-i-thermokrasia-to-savvato-mehri-6-mpofor-oi-anemoi-stin-attiki/"
       ],
-      "seen_at_utc": "2026-08-06T04:30:17.711710+00:00"
+      "seen_at_utc": "2026-08-06T04:51:14.216543+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/world/meksiko-inflouenser-dolofonithike-se-live-metadosi/",
-      "title": "Μεξικό: Iνφλουένσερ δολοφονήθηκε σε live μετάδοση",
-      "normalized_title": "ΜΕΞΙΚΟ: IΝΦΛΟΥΕΝΣΕΡ ΔΟΛΟΦΟΝΗΘΗΚΕ ΣΕ LIVE ΜΕΤΑΔΟΣΗ",
+      "url": "https://www.in.gr/2026/08/06/go-fun/social/arkas-i-kalimera-tis-pemptis-13/",
+      "title": "Αρκάς: Η καλημέρα της Πέμπτης",
+      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΠΕΜΠΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/world/meksiko-inflouenser-dolofonithike-se-live-metadosi/",
-        "https://www.in.gr/2026/08/06/life/geysi/syntagi-kis-loren-me-tyri-krema/",
-        "https://www.in.gr/2026/08/06/greece/kriti-fotia-se-xamili-vlastisi-sti-siteia-minyma-tou-112/",
-        "https://www.in.gr/2026/08/06/economy/diethnis-oikonomia/to-akrivo-kaysimo-kaiei-tis-aeroporikes/",
-        "https://www.in.gr/2026/08/06/greece/fotia-poly-ypsilos-kindynos-ekdilosis-pyrkagias-simera-se-attiki-eyvoia-kai-voiotia/",
-        "https://www.in.gr/2026/08/06/world/o-exthros-tou-exthrou-mou-to-fainomeno-mpernam-kai-to-neo-psyxodrama-sti-vretaniki-akrodeksia/",
-        "https://www.in.gr/2026/08/06/economy/diethnis-oikonomia/zesti-pyrkagies-ksirasia-oi-times-se-frouta-laxanika-kai-elaiolado-tha-paroun-tin-aniousa/",
-        "https://www.in.gr/2026/08/06/plus/vita/tros-grigora-etsi-epireazei-to-soma-kai-to-varos-sou/",
-        "https://www.in.gr/2026/08/06/greece/kairos-isxyroi-voriades-kai-38aria-topikes-vroxes-kai-kataigides-sta-ipeirotika/",
-        "https://www.in.gr/2026/08/06/life/culture-live/ta-teixi-ton-synoron-symvola-dynamis-i-mnimeia-aytapatis/",
-        "https://www.in.gr/2026/08/06/plus/vita/to-xarvarnt-milise-oi-5-synitheies-pou-xarizoun-makrozoia/",
-        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/akriveia-simantikes-oi-diataktikes-sitisis-gia-3-stous-4-ergazomenous/",
-        "https://www.in.gr/2026/08/06/in-science/perivallon-b-science/skopelos-i-leilasia-tou-kokkinou-xrysou/",
-        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/metavivaseis-apo-elegktiko-koskino-xiliades-symvolaia-gia-to-pistopoiitiko-enfia/",
-        "https://www.in.gr/2026/08/06/world/oi-psithyroi-tou-kremlinou-stis-germanikes-kalpes/",
-        "https://www.in.gr/2026/08/06/stories/mikra-lathi-pou-odigisan-se-megales-tragodies/",
-        "https://www.in.gr/2026/08/06/life/culture-live/to-epomeno-vima-meta-to-michael-o-tzafar-tzakson-sto-pleyro-tou-gouil-smith/",
-        "https://www.in.gr/2026/08/06/in-science/perivallon-b-science/klimatiki-zoni-polemou-oi-akraies-kairikes-synthikes-anadiamorfonoun-tin-eyropi/",
-        "https://www.in.gr/2026/08/06/health/ta-kalokairina-tis-evale-kai-fetos-i-gripi/",
-        "https://www.in.gr/2026/08/06/world/tourkia-i-cumhuriyet-leei-ston-erntogan-oti-einai-anoisies-ta-peri-synexeias-tis-othomanikis-aytokratorias/",
-        "https://www.in.gr/2026/08/06/world/stena-tou-ormouz-ploiarxos-tanker-anaferei-dyo-ekrikseis/",
-        "https://www.in.gr/2026/08/06/world/tramp-to-proedriko-elikoptero-plisiase-ypervolika-aeroplano-tis-grammis-stin-ouasigkton/",
-        "https://www.in.gr/2026/08/06/world/gouatemala-termatistike-i-ekriktiki-drastiriotita-tou-ifaisteiou-fouego-epistrefoun-oi-katoikoi/",
-        "https://www.in.gr/2026/08/06/world/kolomvia-proeidopoiisi-gia-endexomenes-tromokratikes-energeies-kata-tin-orkomosia-tou-akrodeksiou-proedrou/",
-        "https://www.in.gr/2026/08/06/greece/pyrkagies-tethikan-ypo-meriko-elegxo-stis-alykes-volou-kai-stin-karpatho/",
-        "https://www.in.gr/2026/08/06/world/oi-ipa-zitoun-na-lifthoun-metra-kata-tis-nikaragouas-apo-ton-organismo-amerikanikon-kraton/",
-        "https://www.in.gr/2026/08/06/world/israil-o-ypeks-saar-episkeptetai-deksious-symmaxous-sti-latiniki-ameriki/",
-        "https://www.in.gr/2026/08/06/world/to-iran-apeilei-na-xtypisei-krati-tou-kolpou-ean-oi-ipa-eksapolysoun-nees-epitheseis/",
-        "https://www.in.gr/2026/08/06/world/tramp-ta-nea-thorikta-me-to-onoma-tou-endexetai-na-kostisoun-275-dis-dolaria/",
-        "https://www.in.gr/2026/08/06/world/ipa-roumpio-kai-milimpant-syzitisan-gia-tin-asfaleia-tis-eyropis-kai-tis-oukranias/"
+        "https://www.in.gr/2026/08/06/go-fun/social/arkas-i-kalimera-tis-pemptis-13/",
+        "https://www.in.gr/2026/08/06/greece/kypseli-ta-senaria-gia-to-kinitro-tis-dolofonias-tis-38xronis-vretanidas-ti-ypostirizei-o-26xronos/",
+        "https://www.in.gr/2026/08/06/life/diakopes/eleytheria-asfaleia-kai-prosopiki-ekseliksi-ti-kryvetai-piso-apo-tin-tasi-ton-solo-taksidion/",
+        "https://www.in.gr/2026/08/06/plus/vita/farmers-walk-i-askisi-pou-exei-ginei-trend/",
+        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/grafeia-sta-31-eyro-ta-enoikia-grafeion-sto-kentro-tis-athinas/"
       ],
-      "seen_at_utc": "2026-08-06T04:17:40.995906+00:00"
+      "seen_at_utc": "2026-08-06T04:51:14.216495+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T04:30:17.711792+00:00"
+  "updated_at_utc": "2026-08-06T04:51:14.216613+00:00"
 }
