@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564376744/eortologio-poioi-giortazoyn-simera-6-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 6 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 6 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/society/564387145/fotia-tora-sto-karydi-siteias-ichise-to-112/",
+      "title": "Φωτιά τώρα στο Καρύδι Σητείας – Ηχησε το «112»",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΚΑΡΥΔΙ ΣΗΤΕΙΑΣ – ΗΧΗΣΕ ΤΟ «112»",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564376744/eortologio-poioi-giortazoyn-simera-6-aygoystoy/",
-        "https://www.kathimerini.gr/society/564386485/pezeskian-i-epikoinonia-me-ton-chamene-einai-poly-dyskoli/",
-        "https://www.kathimerini.gr/athletics/564386539/pagomeni-isopalia-gia-ton-panathinaiko/"
+        "https://www.kathimerini.gr/society/564387145/fotia-tora-sto-karydi-siteias-ichise-to-112/",
+        "https://www.kathimerini.gr/opinion/interviews/564384682/soyzi-chansen-stin-k-emeine-choris-afigima-o-erntogan/",
+        "https://www.kathimerini.gr/visual/infographics/564387052/anavath-is-eno-to-fetino-toyris-os-gia-oloys/",
+        "https://www.kathimerini.gr/visual/infographics/564386659/ta-prota-metra-gia-toys-pyropliktoys/",
+        "https://www.kathimerini.gr/world/564386647/techerani-kai-moyskat-poly-konta-se-symfonia-gia-to-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-05T21:18:09.665638+00:00"
+      "seen_at_utc": "2026-08-06T04:17:40.995856+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1263,71 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861306/fotia-se-upostathmo-tis-dei-stin-arta-anafores-gia-ekrixeis-kai-diakopes-reumatos-deite-video/?utm_source=rss",
-      "title": "Φωτιά σε υποσταθμό της ΔΕΗ στην Άρτα, αναφορές για εκρήξεις και διακοπές ρεύματος, δείτε βίντεο",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΥΠΟΣΤΑΘΜΟ ΤΗΣ ΔΕΗ ΣΤΗΝ ΑΡΤΑ, ΑΝΑΦΟΡΕΣ ΓΙΑ ΕΚΡΗΞΕΙΣ ΚΑΙ ΔΙΑΚΟΠΕΣ ΡΕΥΜΑΤΟΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1861337/stin-ellada-fthanei-simera-i-46hroni-apo-ti-vretania-pou-katigoreitai-gia-ton-ebrismo-sti-marfin/?utm_source=rss",
+      "title": "Στην Ελλάδα φθάνει σήμερα η 46χρονη από τη Βρετανία που κατηγορείται για τον εμπρησμό στη Marfin",
+      "normalized_title": "ΣΤΗΝ ΕΛΛΑΔΑ ΦΘΑΝΕΙ ΣΗΜΕΡΑ Η 46ΧΡΟΝΗ ΑΠΟ ΤΗ ΒΡΕΤΑΝΙΑ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΟΝ ΕΜΠΡΗΣΜΟ ΣΤΗ MARFIN",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861306/fotia-se-upostathmo-tis-dei-stin-arta-anafores-gia-ekrixeis-kai-diakopes-reumatos-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861337/stin-ellada-fthanei-simera-i-46hroni-apo-ti-vretania-pou-katigoreitai-gia-ton-ebrismo-sti-marfin/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861332/fotia-sto-lasithi-koda-ston-oikismo-karudi-112-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1861317/edopistikan-40-metanastes-notia-tis-ierapetras/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-05T22:51:22.123701+00:00"
+      "seen_at_utc": "2026-08-06T04:17:40.995978+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1442807/germanos-ypoyrgos-esoterikon-gia-to-drone-sti-leipsia-einai-pithano-ena-senario-yvridikis-epithesis/",
-      "title": "Γερμανός υπουργός Εσωτερικών για το drone στη Λειψία: Είναι πιθανό ένα «σενάριο υβριδικής επίθεσης»",
-      "normalized_title": "ΓΕΡΜΑΝΟΣ ΥΠΟΥΡΓΟΣ ΕΣΩΤΕΡΙΚΩΝ ΓΙΑ ΤΟ DRONE ΣΤΗ ΛΕΙΨΙΑ: ΕΙΝΑΙ ΠΙΘΑΝΟ ΕΝΑ «ΣΕΝΑΡΙΟ ΥΒΡΙΔΙΚΗΣ ΕΠΙΘΕΣΗΣ»",
+      "url": "https://www.efsyn.gr/kosmos/1442827/theoyta-oi-politikoi-ta-vrikan-alla-to-drama-ton-prosfygon-synehizetai/",
+      "title": "Θέουτα: Οι πολιτικοί τα βρήκαν, αλλά το δράμα των προσφύγων συνεχίζεται",
+      "normalized_title": "ΘΕΟΥΤΑ: ΟΙ ΠΟΛΙΤΙΚΟΙ ΤΑ ΒΡΗΚΑΝ, ΑΛΛΑ ΤΟ ΔΡΑΜΑ ΤΩΝ ΠΡΟΣΦΥΓΩΝ ΣΥΝΕΧΙΖΕΤΑΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1442807/germanos-ypoyrgos-esoterikon-gia-to-drone-sti-leipsia-einai-pithano-ena-senario-yvridikis-epithesis/",
-        "https://www.efsyn.gr/kosmos/1442805/iran-pezeskian-i-epikoinonia-me-ton-motztampa-hamenei-einai-tora-poly-dyskoli/"
+        "https://www.efsyn.gr/kosmos/1442827/theoyta-oi-politikoi-ta-vrikan-alla-to-drama-ton-prosfygon-synehizetai/",
+        "https://www.efsyn.gr/politiki/1442815/sta-akra-i-sygkroysi-sto-komma-karystianoy-sovares-diafonies-me-ton-tropo-leitoyrgias-tha-antexoyme-kathe-epithesi/",
+        "https://www.efsyn.gr/ellada/1442833/stin-athina-i-46hroni-poy-katigoreitai-horis-stoiheia-gia-ton-emprismo-sti-marfin/",
+        "https://www.efsyn.gr/protoselida/i-pyriniki-fagoyra-tis-kyvernisis/",
+        "https://www.efsyn.gr/ellada/1442830/fotia-sti-siteia-sikothikan-enaeria-mesa-minyma-toy-112-gia-etoimotita/",
+        "https://www.efsyn.gr/kosmos/1442825/tramp-imastan-etoimoi-gia-ti-megalyteri-epithesi-apo-ton-v-pagkosmio-polemo-to-iran-mas-parakalese-na-min-to-kanoyme/",
+        "https://www.efsyn.gr/nisides/1442276/i-via-mporei-na-mi-gennisei-via/",
+        "https://www.efsyn.gr/nisides/1442260/giati-ligosteyoyn-ta-hronia-tis-athootitas/",
+        "https://www.efsyn.gr/ellada/1442816/eortologio-megali-giorti-simera-se-poioys-leme-hronia-polla/"
       ],
-      "seen_at_utc": "2026-08-05T21:18:09.665752+00:00"
+      "seen_at_utc": "2026-08-06T04:17:40.995940+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/plus/medianews/sta-nea-tis-pemptis-dikastiki-apofasi-fragmos-sta-airbnb/",
-      "title": "Στα «ΝΕΑ» της Πέμπτης: Δικαστική απόφαση φραγμός στα Airbnb",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΠΕΜΠΤΗΣ: ΔΙΚΑΣΤΙΚΗ ΑΠΟΦΑΣΗ ΦΡΑΓΜΟΣ ΣΤΑ AIRBNB",
+      "url": "https://www.in.gr/2026/08/06/world/meksiko-inflouenser-dolofonithike-se-live-metadosi/",
+      "title": "Μεξικό: Iνφλουένσερ δολοφονήθηκε σε live μετάδοση",
+      "normalized_title": "ΜΕΞΙΚΟ: IΝΦΛΟΥΕΝΣΕΡ ΔΟΛΟΦΟΝΗΘΗΚΕ ΣΕ LIVE ΜΕΤΑΔΟΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/plus/medianews/sta-nea-tis-pemptis-dikastiki-apofasi-fragmos-sta-airbnb/",
-        "https://www.in.gr/2026/08/06/greece/tragodia-stin-kriti-mitera-epese-apo-varka-sta-malia-kai-anasyrthike-nekri-parousia-anilikon-paidion/"
+        "https://www.in.gr/2026/08/06/world/meksiko-inflouenser-dolofonithike-se-live-metadosi/",
+        "https://www.in.gr/2026/08/06/life/geysi/syntagi-kis-loren-me-tyri-krema/",
+        "https://www.in.gr/2026/08/06/greece/kriti-fotia-se-xamili-vlastisi-sti-siteia-minyma-tou-112/",
+        "https://www.in.gr/2026/08/06/economy/diethnis-oikonomia/to-akrivo-kaysimo-kaiei-tis-aeroporikes/",
+        "https://www.in.gr/2026/08/06/greece/fotia-poly-ypsilos-kindynos-ekdilosis-pyrkagias-simera-se-attiki-eyvoia-kai-voiotia/",
+        "https://www.in.gr/2026/08/06/world/o-exthros-tou-exthrou-mou-to-fainomeno-mpernam-kai-to-neo-psyxodrama-sti-vretaniki-akrodeksia/",
+        "https://www.in.gr/2026/08/06/economy/diethnis-oikonomia/zesti-pyrkagies-ksirasia-oi-times-se-frouta-laxanika-kai-elaiolado-tha-paroun-tin-aniousa/",
+        "https://www.in.gr/2026/08/06/plus/vita/tros-grigora-etsi-epireazei-to-soma-kai-to-varos-sou/",
+        "https://www.in.gr/2026/08/06/greece/kairos-isxyroi-voriades-kai-38aria-topikes-vroxes-kai-kataigides-sta-ipeirotika/",
+        "https://www.in.gr/2026/08/06/life/culture-live/ta-teixi-ton-synoron-symvola-dynamis-i-mnimeia-aytapatis/",
+        "https://www.in.gr/2026/08/06/plus/vita/to-xarvarnt-milise-oi-5-synitheies-pou-xarizoun-makrozoia/",
+        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/akriveia-simantikes-oi-diataktikes-sitisis-gia-3-stous-4-ergazomenous/",
+        "https://www.in.gr/2026/08/06/in-science/perivallon-b-science/skopelos-i-leilasia-tou-kokkinou-xrysou/",
+        "https://www.in.gr/2026/08/06/economy/oikonomikes-eidiseis/metavivaseis-apo-elegktiko-koskino-xiliades-symvolaia-gia-to-pistopoiitiko-enfia/",
+        "https://www.in.gr/2026/08/06/world/oi-psithyroi-tou-kremlinou-stis-germanikes-kalpes/",
+        "https://www.in.gr/2026/08/06/stories/mikra-lathi-pou-odigisan-se-megales-tragodies/",
+        "https://www.in.gr/2026/08/06/life/culture-live/to-epomeno-vima-meta-to-michael-o-tzafar-tzakson-sto-pleyro-tou-gouil-smith/",
+        "https://www.in.gr/2026/08/06/in-science/perivallon-b-science/klimatiki-zoni-polemou-oi-akraies-kairikes-synthikes-anadiamorfonoun-tin-eyropi/",
+        "https://www.in.gr/2026/08/06/health/ta-kalokairina-tis-evale-kai-fetos-i-gripi/",
+        "https://www.in.gr/2026/08/06/world/tourkia-i-cumhuriyet-leei-ston-erntogan-oti-einai-anoisies-ta-peri-synexeias-tis-othomanikis-aytokratorias/",
+        "https://www.in.gr/2026/08/06/world/stena-tou-ormouz-ploiarxos-tanker-anaferei-dyo-ekrikseis/",
+        "https://www.in.gr/2026/08/06/world/tramp-to-proedriko-elikoptero-plisiase-ypervolika-aeroplano-tis-grammis-stin-ouasigkton/",
+        "https://www.in.gr/2026/08/06/world/gouatemala-termatistike-i-ekriktiki-drastiriotita-tou-ifaisteiou-fouego-epistrefoun-oi-katoikoi/",
+        "https://www.in.gr/2026/08/06/world/kolomvia-proeidopoiisi-gia-endexomenes-tromokratikes-energeies-kata-tin-orkomosia-tou-akrodeksiou-proedrou/",
+        "https://www.in.gr/2026/08/06/greece/pyrkagies-tethikan-ypo-meriko-elegxo-stis-alykes-volou-kai-stin-karpatho/",
+        "https://www.in.gr/2026/08/06/world/oi-ipa-zitoun-na-lifthoun-metra-kata-tis-nikaragouas-apo-ton-organismo-amerikanikon-kraton/",
+        "https://www.in.gr/2026/08/06/world/israil-o-ypeks-saar-episkeptetai-deksious-symmaxous-sti-latiniki-ameriki/",
+        "https://www.in.gr/2026/08/06/world/to-iran-apeilei-na-xtypisei-krati-tou-kolpou-ean-oi-ipa-eksapolysoun-nees-epitheseis/",
+        "https://www.in.gr/2026/08/06/world/tramp-ta-nea-thorikta-me-to-onoma-tou-endexetai-na-kostisoun-275-dis-dolaria/",
+        "https://www.in.gr/2026/08/06/world/ipa-roumpio-kai-milimpant-syzitisan-gia-tin-asfaleia-tis-eyropis-kai-tis-oukranias/"
       ],
-      "seen_at_utc": "2026-08-05T22:17:15.958404+00:00"
+      "seen_at_utc": "2026-08-06T04:17:40.995906+00:00"
     }
   },
-  "updated_at_utc": "2026-08-05T22:51:22.123806+00:00"
+  "updated_at_utc": "2026-08-06T04:17:40.996064+00:00"
 }
