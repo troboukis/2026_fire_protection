@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564387661/monacho-isovia-se-25chrono-afgano-poy-skotose-dyo-atoma-richnontas-to-aytokinito-toy-se-plithos/",
-      "title": "Μόναχο: Ισόβια σε 25χρονο Αφγανό που σκότωσε δύο άτομα ρίχνοντας το αυτοκίνητό του σε πλήθος",
-      "normalized_title": "ΜΟΝΑΧΟ: ΙΣΟΒΙΑ ΣΕ 25ΧΡΟΝΟ ΑΦΓΑΝΟ ΠΟΥ ΣΚΟΤΩΣΕ ΔΥΟ ΑΤΟΜΑ ΡΙΧΝΟΝΤΑΣ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ ΣΕ ΠΛΗΘΟΣ",
+      "url": "https://www.kathimerini.gr/world/564387709/dimoskopisi-reuters-apaisiodoxoi-oi-amerikanoi-provlepoyn-peraitero-chaos-sti-mesi-anatoli-kai-neoys-polemoys/",
+      "title": "Δημοσκόπηση Reuters: Απαισιόδοξοι οι Αμερικανοί – Προβλέπουν περαιτέρω χάος στη Μέση Ανατολή και νέους πολέμους",
+      "normalized_title": "ΔΗΜΟΣΚΟΠΗΣΗ REUTERS: ΑΠΑΙΣΙΟΔΟΞΟΙ ΟΙ ΑΜΕΡΙΚΑΝΟΙ – ΠΡΟΒΛΕΠΟΥΝ ΠΕΡΑΙΤΕΡΩ ΧΑΟΣ ΣΤΗ ΜΕΣΗ ΑΝΑΤΟΛΗ ΚΑΙ ΝΕΟΥΣ ΠΟΛΕΜΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564387661/monacho-isovia-se-25chrono-afgano-poy-skotose-dyo-atoma-richnontas-to-aytokinito-toy-se-plithos/",
-        "https://www.kathimerini.gr/k/disney/564387673/miky-maoys-634-ta-dyo-choria/"
+        "https://www.kathimerini.gr/world/564387709/dimoskopisi-reuters-apaisiodoxoi-oi-amerikanoi-provlepoyn-peraitero-chaos-sti-mesi-anatoli-kai-neoys-polemoys/",
+        "https://www.kathimerini.gr/society/564387706/zakynthos-pnigmos-57chronoy-vretanoy-stin-periochi-pisines-kerioy/",
+        "https://www.kathimerini.gr/k/k-magazine/564386176/mia-oneiriki-diplokatoikia-stoy-papagoy/"
       ],
-      "seen_at_utc": "2026-08-06T11:30:01.942275+00:00"
+      "seen_at_utc": "2026-08-06T11:51:31.256083+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861539/epikairopoioudai-ta-oria-dapanon-gia-saek-kai-sholeia-deuteris-eukairias/?utm_source=rss",
-      "title": "Νέα όρια δαπανών για ΣΑΕΚ και σχολεία δεύτερης ευκαιρίας, τι αλλάζει με το νέο ΦΕΚ",
-      "normalized_title": "ΝΕΑ ΟΡΙΑ ΔΑΠΑΝΩΝ ΓΙΑ ΣΑΕΚ ΚΑΙ ΣΧΟΛΕΙΑ ΔΕΥΤΕΡΗΣ ΕΥΚΑΙΡΙΑΣ, ΤΙ ΑΛΛΑΖΕΙ ΜΕ ΤΟ ΝΕΟ ΦΕΚ",
+      "url": "https://www.protothema.gr/greece/article/1861542/andras-stin-korintho-spaei-tzamaria-katastimatos-me-plaka-pezodromiou-deite-video/?utm_source=rss",
+      "title": "Άνδρας στην Κόρινθο σπάει τζαμαρία καταστήματος με πλάκα πεζοδρομίου, δείτε βίντεο",
+      "normalized_title": "ΑΝΔΡΑΣ ΣΤΗΝ ΚΟΡΙΝΘΟ ΣΠΑΕΙ ΤΖΑΜΑΡΙΑ ΚΑΤΑΣΤΗΜΑΤΟΣ ΜΕ ΠΛΑΚΑ ΠΕΖΟΔΡΟΜΙΟΥ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861539/epikairopoioudai-ta-oria-dapanon-gia-saek-kai-sholeia-deuteris-eukairias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861534/sunelifthi-37hronos-sto-aerodromio-el-venizelos-me-4-mahairia-kai-duo-psalidia-kladematos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861542/andras-stin-korintho-spaei-tzamaria-katastimatos-me-plaka-pezodromiou-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T11:30:01.942375+00:00"
+      "seen_at_utc": "2026-08-06T11:51:31.256227+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1443015/ston-pyriniko-dromo-i-neosystatheisa-kyvernitiki-epitropi-to-lobbying-tis-gallikis-dei-kai-to-elliniko-dilimma/",
-      "title": "Στον πυρηνικό δρόμο: Η νεοσυσταθείσα κυβερνητική επιτροπή, το lobbying της γαλλικής «ΔΕΗ» και το ελληνικό δίλημμα",
-      "normalized_title": "ΣΤΟΝ ΠΥΡΗΝΙΚΟ ΔΡΟΜΟ: Η ΝΕΟΣΥΣΤΑΘΕΙΣΑ ΚΥΒΕΡΝΗΤΙΚΗ ΕΠΙΤΡΟΠΗ, ΤΟ LOBBYING ΤΗΣ ΓΑΛΛΙΚΗΣ «ΔΕΗ» ΚΑΙ ΤΟ ΕΛΛΗΝΙΚΟ ΔΙΛΗΜΜΑ",
+      "url": "https://www.efsyn.gr/politiki/1443207/htypima-famelloy-gia-ta-spitakia-anakyklosis-einai-karampinato-kyvernitiko-skandalo/",
+      "title": "«Χτύπημα» Φάμελλου για τα σπιτάκια ανακύκλωσης: Είναι καραμπινάτο κυβερνητικό σκάνδαλο",
+      "normalized_title": "«ΧΤΥΠΗΜΑ» ΦΑΜΕΛΛΟΥ ΓΙΑ ΤΑ ΣΠΙΤΑΚΙΑ ΑΝΑΚΥΚΛΩΣΗΣ: ΕΙΝΑΙ ΚΑΡΑΜΠΙΝΑΤΟ ΚΥΒΕΡΝΗΤΙΚΟ ΣΚΑΝΔΑΛΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1443015/ston-pyriniko-dromo-i-neosystatheisa-kyvernitiki-epitropi-to-lobbying-tis-gallikis-dei-kai-to-elliniko-dilimma/",
-        "https://www.efsyn.gr/athlitismos/1443136/paok-episimi-i-epistrofi-giannoyli-sti-toympa/",
-        "https://www.efsyn.gr/politiki/1443199/nikos-pappas-apentaxan-canadair-drones-kai-elikoptera-kai-oi-pyrosvestes-mas-paleyoyn-tis-foties-me-ta-noikiarika/"
+        "https://www.efsyn.gr/politiki/1443207/htypima-famelloy-gia-ta-spitakia-anakyklosis-einai-karampinato-kyvernitiko-skandalo/",
+        "https://www.efsyn.gr/ellada/1443029/thessaloniki-adeiase-i-limnothalassa-kalohorioy-to-fainomeno-poy-apeilei-amesa-tin-panida-tis-periohis/",
+        "https://www.efsyn.gr/kosmos/1443206/dimoskopisi-reuters-ipsos-antidimofilis-o-polemos-toy-tramp-sto-iran-oi-amerikanoi-etoimazontai-gia-perissotero-haos/"
       ],
-      "seen_at_utc": "2026-08-06T11:30:01.942353+00:00"
+      "seen_at_utc": "2026-08-06T11:51:31.256192+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/greece/kypseli-profylakisteos-o-26xronos-gia-ti-dolofonia-tis-38xronis-vretanidas/",
-      "title": "Προφυλακιστέος ο 26χρονος που κατηγορείται για τη δολοφονία της 38χρονης Βρετανίδας στην Κυψέλη",
-      "normalized_title": "ΠΡΟΦΥΛΑΚΙΣΤΕΟΣ Ο 26ΧΡΟΝΟΣ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ 38ΧΡΟΝΗΣ ΒΡΕΤΑΝΙΔΑΣ ΣΤΗΝ ΚΥΨΕΛΗ",
+      "url": "https://www.in.gr/2026/08/06/world/oukrania-i-proin-presveytis-stis-ipa-stefanisina-einai-ypopti-gia-diafthora/",
+      "title": "Η πρώην πρεσβευτής της Ουκρανίας στις ΗΠΑ, Στεφανίσινα είναι ύποπτη για διαφθορά",
+      "normalized_title": "Η ΠΡΩΗΝ ΠΡΕΣΒΕΥΤΗΣ ΤΗΣ ΟΥΚΡΑΝΙΑΣ ΣΤΙΣ ΗΠΑ, ΣΤΕΦΑΝΙΣΙΝΑ ΕΙΝΑΙ ΥΠΟΠΤΗ ΓΙΑ ΔΙΑΦΘΟΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/greece/kypseli-profylakisteos-o-26xronos-gia-ti-dolofonia-tis-38xronis-vretanidas/",
-        "https://www.in.gr/2026/08/06/sports/football/o-tasos-papapetrou-diaititis-sto-superbet-super-cup/",
-        "https://www.in.gr/2026/08/06/politics/politiki-grammateia/pasok-gia-osde-i-kyvernisi-epixeirei-na-metatrepsei-ena-protofanes-fiasko-se-prothypourgiki-fiesta/"
+        "https://www.in.gr/2026/08/06/world/oukrania-i-proin-presveytis-stis-ipa-stefanisina-einai-ypopti-gia-diafthora/",
+        "https://www.in.gr/2026/08/06/politics/aftodioikisi/anamenetai-amesa-i-antikatastasi-tou-meteorologikou-stathmou-pou-katastrafike-apo-tin-fotia-stin-aigialeia/",
+        "https://www.in.gr/2026/08/06/sports/basketball/thanasis-spanoulis-stoxos-to-xryso-metallio-sto-eyrompasket-u16/",
+        "https://www.in.gr/2026/08/06/in-science/ai/i-texniti-noimosyni-to-skase-nea-anisyxitika-peristatika-se-openai-anthropic-kai-meta/",
+        "https://www.in.gr/2026/08/06/politics/aftodioikisi/stratigiki-synergasia-metaksy-tis-deya-meteoron-kai-tis-deya-larisas/"
       ],
-      "seen_at_utc": "2026-08-06T11:30:01.942319+00:00"
+      "seen_at_utc": "2026-08-06T11:51:31.256144+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T11:30:01.942445+00:00"
+  "updated_at_utc": "2026-08-06T11:51:31.256314+00:00"
 }
