@@ -58,7 +58,35 @@ PDF_EMBED_COLUMNS = [
 
 SEARCH_URL = "https://diavgeia.gov.gr/luminapi/api/search"
 DECISION_VIEW_URL = "https://diavgeia.gov.gr/luminapi/api/decisions/view"
-KEYWORDS = ["πυροπροστ", "αποψιλ", "δασοπροστ", "αντιπυρ"]
+# Diavgeia search matches complete words; it does not treat truncated terms as
+# stems and rejects wildcard searches. Keep the common inflected forms explicit
+# so decisions such as 9ΨΜΔ4653Π8-6ΙΑ ("αντιπυρική προστασία") are discoverable.
+KEYWORDS = [
+    # πυροπροστασία
+    "πυροπροστασία",
+    "πυροπροστασίας",
+    "πυροπροστασίες",
+    "πυροπροστασιών",
+    # αποψίλωση
+    "αποψίλωση",
+    "αποψίλωσης",
+    "αποψιλώσεις",
+    "αποψιλώσεων",
+    # δασοπροστασία
+    "δασοπροστασία",
+    "δασοπροστασίας",
+    # αντιπυρικός / αντιπυρική / αντιπυρικό
+    "αντιπυρικός",
+    "αντιπυρικού",
+    "αντιπυρικοί",
+    "αντιπυρικούς",
+    "αντιπυρική",
+    "αντιπυρικής",
+    "αντιπυρικές",
+    "αντιπυρικό",
+    "αντιπυρικά",
+    "αντιπυρικών",
+]
 PAGE_SIZE = 100
 SPENDING_APPROVAL_LABEL = "ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ"
 COMMITMENT_LABEL = "ΑΝΑΛΗΨΗ ΥΠΟΧΡΕΩΣΗΣ"
