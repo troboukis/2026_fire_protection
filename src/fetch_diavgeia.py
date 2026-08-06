@@ -58,10 +58,17 @@ PDF_EMBED_COLUMNS = [
 
 SEARCH_URL = "https://diavgeia.gov.gr/luminapi/api/search"
 DECISION_VIEW_URL = "https://diavgeia.gov.gr/luminapi/api/decisions/view"
-# Diavgeia search matches complete words; it does not treat truncated terms as
-# stems and rejects wildcard searches. Keep the common inflected forms explicit
-# so decisions such as 9ΨΜΔ4653Π8-6ΙΑ ("αντιπυρική προστασία") are discoverable.
+# Keep the existing truncated search terms for backwards compatibility, and add
+# common complete inflected forms explicitly. Diavgeia does not consistently
+# expand a truncated term to all of its grammatical forms, and rejects wildcard
+# searches, so the full forms are needed for decisions such as 9ΨΜΔ4653Π8-6ΙΑ
+# ("αντιπυρική προστασία").
 KEYWORDS = [
+    # Existing broad/truncated terms.
+    "πυροπροστ",
+    "αποψιλ",
+    "δασοπροστ",
+    "αντιπυρ",
     # πυροπροστασία
     "πυροπροστασία",
     "πυροπροστασίας",
