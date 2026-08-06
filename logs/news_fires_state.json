@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564387439/choris-pyxida-pros-tis-endiameses-ekloges/",
-      "title": "Χωρίς πυξίδα προς τις ενδιάμεσες εκλογές",
-      "normalized_title": "ΧΩΡΙΣ ΠΥΞΙΔΑ ΠΡΟΣ ΤΙΣ ΕΝΔΙΑΜΕΣΕΣ ΕΚΛΟΓΕΣ",
+      "url": "https://www.kathimerini.gr/k/k-magazine/564386194/logotechnia-gia-paidia-oi-ekdoseis-poy-xechorisame/",
+      "title": "Λογοτεχνία για παιδιά: Οι εκδόσεις που ξεχωρίσαμε",
+      "normalized_title": "ΛΟΓΟΤΕΧΝΙΑ ΓΙΑ ΠΑΙΔΙΑ: ΟΙ ΕΚΔΟΣΕΙΣ ΠΟΥ ΞΕΧΩΡΙΣΑΜΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564387439/choris-pyxida-pros-tis-endiameses-ekloges/",
-        "https://www.kathimerini.gr/politics/564387724/to-schedio-toy-ypen-gia-ti-dytiki-attiki-antidiavrotika-erga-anadasotea-ta-kamena/"
+        "https://www.kathimerini.gr/k/k-magazine/564386194/logotechnia-gia-paidia-oi-ekdoseis-poy-xechorisame/"
       ],
-      "seen_at_utc": "2026-08-06T12:17:11.446911+00:00"
+      "seen_at_utc": "2026-08-06T12:30:04.718519+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,41 +1259,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861556/trohaio-sti-sumvoli-kifisou-kai-poseidonos-dushereia-sto-reuma-pros-peiraia/?utm_source=rss",
-      "title": "Τροχαίο στη συμβολή Κηφισού και Ποσειδώνος, δυσχέρεια στο ρεύμα προς Πειραιά",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΣΥΜΒΟΛΗ ΚΗΦΙΣΟΥ ΚΑΙ ΠΟΣΕΙΔΩΝΟΣ, ΔΥΣΧΕΡΕΙΑ ΣΤΟ ΡΕΥΜΑ ΠΡΟΣ ΠΕΙΡΑΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1861557/fotia-stin-periohi-kolubada-stin-skuro-4-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά στην περιοχή Κολυμπάδα στην Σκύρο, 4 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΚΟΛΥΜΠΑΔΑ ΣΤΗΝ ΣΚΥΡΟ, 4 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861556/trohaio-sti-sumvoli-kifisou-kai-poseidonos-dushereia-sto-reuma-pros-peiraia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861555/airetai-sustasi-gia-mi-hrisi-tou-nerou-sti-siviri-halkidikis-edos-ton-provlepomenon-orion-ta-apotelesmata-ton-eleghon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861551/ektakta-metra-gia-tin-katastoli-tis-diasporas-tis-eulogias-ton-provaton-stin-kastoria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861557/fotia-stin-periohi-kolubada-stin-skuro-4-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-06T12:17:11.447033+00:00"
+      "seen_at_utc": "2026-08-06T12:30:04.718588+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1443024/i-pyriniki-energeia-mas-htypaei-tin-porta-o-rolos-idiotikis-etaireias-poy-synergazetai-me-ethnikes-arhes/",
-      "title": "Η πυρηνική ενέργεια μας χτυπάει την πόρτα – Ο ρόλος ιδιωτικής εταιρείας που συνεργάζεται με εθνικές αρχές",
-      "normalized_title": "Η ΠΥΡΗΝΙΚΗ ΕΝΕΡΓΕΙΑ ΜΑΣ ΧΤΥΠΑΕΙ ΤΗΝ ΠΟΡΤΑ – Ο ΡΟΛΟΣ ΙΔΙΩΤΙΚΗΣ ΕΤΑΙΡΕΙΑΣ ΠΟΥ ΣΥΝΕΡΓΑΖΕΤΑΙ ΜΕ ΕΘΝΙΚΕΣ ΑΡΧΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1443236/halkidiki-airetai-i-proliptiki-systasi-gia-mi-hrisi-toy-neroy-sti-siviri/",
+      "title": "Χαλκιδική: Αίρεται η προληπτική σύσταση για μη χρήση του νερού στη Σίβηρη",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΙΡΕΤΑΙ Η ΠΡΟΛΗΠΤΙΚΗ ΣΥΣΤΑΣΗ ΓΙΑ ΜΗ ΧΡΗΣΗ ΤΟΥ ΝΕΡΟΥ ΣΤΗ ΣΙΒΗΡΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1443024/i-pyriniki-energeia-mas-htypaei-tin-porta-o-rolos-idiotikis-etaireias-poy-synergazetai-me-ethnikes-arhes/",
-        "https://www.efsyn.gr/politiki/1443218/theodorikakos-stirizoyme-tin-viomihania-gia-mia-oikonomia-pio-antagonistiki-me-kalyteroys-misthoys/",
-        "https://www.efsyn.gr/oikonomia/1443219/se-karantina-i-kastoria-logo-eylogias-ton-aigoprovaton-ektakta-metra-gia-tin-katastoli-tis-diasporas/",
-        "https://www.efsyn.gr/politiki/1443213/papastayroy-oi-vasikoi-axones-toy-shedioy-gia-ti-dytiki-attiki-antidiavrotika-erga-anadasotea-ta-kamena/"
+        "https://www.efsyn.gr/ellada/1443236/halkidiki-airetai-i-proliptiki-systasi-gia-mi-hrisi-toy-neroy-sti-siviri/"
       ],
-      "seen_at_utc": "2026-08-06T12:17:11.446977+00:00"
+      "seen_at_utc": "2026-08-06T12:30:04.718575+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/06/world/oukrania-i-proin-presveytis-stis-ipa-stefanisina-einai-ypopti-gia-diafthora/",
-      "title": "Η πρώην πρεσβευτής της Ουκρανίας στις ΗΠΑ, Στεφανίσινα είναι ύποπτη για διαφθορά",
-      "normalized_title": "Η ΠΡΩΗΝ ΠΡΕΣΒΕΥΤΗΣ ΤΗΣ ΟΥΚΡΑΝΙΑΣ ΣΤΙΣ ΗΠΑ, ΣΤΕΦΑΝΙΣΙΝΑ ΕΙΝΑΙ ΥΠΟΠΤΗ ΓΙΑ ΔΙΑΦΘΟΡΑ",
+      "url": "https://www.in.gr/2026/08/06/stories/nikos-tsiforos-i-idia-i-ekfrasi-tis-zois/",
+      "title": "Νίκος Τσιφόρος: «Αν...»",
+      "normalized_title": "ΝΙΚΟΣ ΤΣΙΦΟΡΟΣ: «ΑΝ...»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/06/world/oukrania-i-proin-presveytis-stis-ipa-stefanisina-einai-ypopti-gia-diafthora/",
-        "https://www.in.gr/2026/08/06/politics/aftodioikisi/anamenetai-amesa-i-antikatastasi-tou-meteorologikou-stathmou-pou-katastrafike-apo-tin-fotia-stin-aigialeia/",
-        "https://www.in.gr/2026/08/06/sports/basketball/thanasis-spanoulis-stoxos-to-xryso-metallio-sto-eyrompasket-u16/",
-        "https://www.in.gr/2026/08/06/in-science/ai/i-texniti-noimosyni-to-skase-nea-anisyxitika-peristatika-se-openai-anthropic-kai-meta/",
-        "https://www.in.gr/2026/08/06/politics/aftodioikisi/stratigiki-synergasia-metaksy-tis-deya-meteoron-kai-tis-deya-larisas/"
+        "https://www.in.gr/2026/08/06/stories/nikos-tsiforos-i-idia-i-ekfrasi-tis-zois/",
+        "https://www.in.gr/2026/08/06/greece/i-parakatathiki-tou-tha-meinei-zontani-o-epikideios-apoxairetismos-tou-koutsoumpa-gia-ton-laki-xalkia/",
+        "https://www.in.gr/2026/08/06/politics/politiki-grammateia/pasok-poioi-tha-epomistoun-to-kostos-ton-40-ekatommyrion-gia-ta-spitakia-anakyklosis-oi-dimoi-kai-oi-polites/",
+        "https://www.in.gr/2026/08/06/sports/football/almeida-gia-to-mats-me-tin-inter-maiami-makari-o-mesi-na-min-exei-oreksi-na-paiksei-mazi-mas-vid/",
+        "https://www.in.gr/2026/08/06/greece/na-min-afiseis-na-se-allaksoun-o-epikideios-tis-aleksandras-fotaki-gia-ton-nono-tis-laki-xalkia/",
+        "https://www.in.gr/2026/08/06/greece/karampola-me-tessera-oximata-ston-kifiso-konta-stin-eksodo-gia-peiraia/",
+        "https://www.in.gr/2026/08/06/world/dimoskopisi-ipa-xaos-sti-mesi-anatoli-vlepoun-oi-amerikanoi-logo-tis-politikis-tramp-sto-iran/",
+        "https://www.in.gr/2026/08/06/go-fun/fizz/parelasi-asteron-sti-mykono-nikol-kintman-zoi-salntana-kai-omar-eps-stin-psarrou/"
       ],
-      "seen_at_utc": "2026-08-06T11:51:31.256144+00:00"
+      "seen_at_utc": "2026-08-06T12:30:04.718555+00:00"
     }
   },
-  "updated_at_utc": "2026-08-06T12:17:11.447114+00:00"
+  "updated_at_utc": "2026-08-06T12:30:04.718657+00:00"
 }
