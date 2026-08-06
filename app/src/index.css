@@ -258,29 +258,6 @@ textarea {
   color: var(--paper);
 }
 
-.nav-new-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.09rem 0.28rem 0.07rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
-  border-radius: 2px;
-  background: color-mix(in srgb, var(--accent) 16%, var(--paper));
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.top-nav a.active .nav-new-badge {
-  border-color: color-mix(in srgb, var(--paper) 42%, transparent);
-  background: color-mix(in srgb, var(--paper) 14%, transparent);
-  color: var(--paper);
-}
-
 .brand-home-link {
   text-decoration: none;
   color: inherit;
@@ -3924,15 +3901,6 @@ main {
   .top-nav [data-nav-item="analysis"],
   .top-nav [data-nav-item="about"] {
     grid-column: span 1;
-  }
-
-  .top-nav [data-nav-item="diavgeia"] {
-    flex-wrap: wrap;
-    row-gap: 0.18rem;
-  }
-
-  .top-nav [data-nav-item="diavgeia"] .nav-new-badge {
-    font-size: 0.48rem;
   }
 
   .top-nav [data-nav-item="home"],
