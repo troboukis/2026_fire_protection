@@ -118,10 +118,7 @@ export default function Layout() {
           <NavLink to="/municipalities" onClick={reloadWhenAlreadyOn('/municipalities')} data-nav-item="municipalities">Δήμοι</NavLink>
           <NavLink to="/environment-ministry" onClick={reloadWhenAlreadyOn('/environment-ministry')} data-nav-item="environment">Υπ. Περιβάλλοντος</NavLink>
           <NavLink to="/contracts" onClick={reloadWhenAlreadyOn('/contracts')} data-nav-item="contracts">Συμβάσεις</NavLink>
-          <NavLink to="/diavgeia" onClick={reloadWhenAlreadyOn('/diavgeia')} data-nav-item="diavgeia">
-            <span>Διαύγεια</span>
-            <span className="nav-new-badge">New</span>
-          </NavLink>
+          <NavLink to="/diavgeia" onClick={reloadWhenAlreadyOn('/diavgeia')} data-nav-item="diavgeia">Διαύγεια</NavLink>
           <NavLink to="/analysis" onClick={reloadWhenAlreadyOn('/analysis')} data-nav-item="analysis">Ανάλυση</NavLink>
           <button type="button" onClick={handleAbout} data-nav-item="about">Σχετικά</button>
         </nav>
