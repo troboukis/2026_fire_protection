@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564390157/to-pragmatiko-metro-tis-politikis-prostasias/",
-      "title": "Το πραγματικό μέτρο της Πολιτικής Προστασίας",
-      "normalized_title": "ΤΟ ΠΡΑΓΜΑΤΙΚΟ ΜΕΤΡΟ ΤΗΣ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
+      "url": "https://www.kathimerini.gr/culture/564390382/ekthesi-oi-kores-tis-agias-eirinis-keas/",
+      "title": "Εκθεση: «Οι Κόρες της Αγίας Ειρήνης Κέας»",
+      "normalized_title": "ΕΚΘΕΣΗ: «ΟΙ ΚΟΡΕΣ ΤΗΣ ΑΓΙΑΣ ΕΙΡΗΝΗΣ ΚΕΑΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564390157/to-pragmatiko-metro-tis-politikis-prostasias/",
-        "https://www.kathimerini.gr/world/564390370/oykrania-rosikes-epitheseis-se-petrelaikes-egkatastaseis-tis-naftogaz/",
-        "https://www.kathimerini.gr/k/gastronomos/564388237/oi-agapimenes-mas-tavernes-sta-nisia-37-nostimes-staseis-sto-aigaio-kai-to-ionio/",
-        "https://www.kathimerini.gr/world/564389935/tzon-gkaliano-i-amfilegomeni-paroysia-sto-met/"
+        "https://www.kathimerini.gr/culture/564390382/ekthesi-oi-kores-tis-agias-eirinis-keas/"
       ],
-      "seen_at_utc": "2026-08-07T16:17:14.655488+00:00"
+      "seen_at_utc": "2026-08-07T16:30:10.969864+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,27 +1269,26 @@
       "seen_at_utc": "2026-08-07T16:17:14.655631+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/media/1444169/tin-apohorisi-toy-ceo-grigori-dimitriadi-anakoinose-o-skai/",
-      "title": "Την αποχώρηση του CEO Γρηγόρη Δημητριάδη ανακοίνωσε ο ΣΚΑΪ",
-      "normalized_title": "ΤΗΝ ΑΠΟΧΩΡΗΣΗ ΤΟΥ CEO ΓΡΗΓΟΡΗ ΔΗΜΗΤΡΙΑΔΗ ΑΝΑΚΟΙΝΩΣΕ Ο ΣΚΑΙ",
+      "url": "https://www.efsyn.gr/stiles/1443853/pos-mporeite-na-katarrakosete-ti-dimokratia-me-mia-a-e/",
+      "title": "Πώς μπορείτε να καταρρακώσετε τη δημοκρατία με μία Α.Ε.",
+      "normalized_title": "ΠΩΣ ΜΠΟΡΕΙΤΕ ΝΑ ΚΑΤΑΡΡΑΚΩΣΕΤΕ ΤΗ ΔΗΜΟΚΡΑΤΙΑ ΜΕ ΜΙΑ Α.Ε.",
       "seen_urls": [
-        "https://www.efsyn.gr/media/1444169/tin-apohorisi-toy-ceo-grigori-dimitriadi-anakoinose-o-skai/",
-        "https://www.efsyn.gr/politiki/1444162/trito-koykoyloma-gia-tis-ypoklopes-to-skeptiko-toy-areioy-pagoy-kai-i-orgi-tis-antipoliteysis/",
-        "https://www.efsyn.gr/oikonomia/1444156/trofima-se-ypsilo-trietias-oi-times-pagkosmios-kaysones-kai-polemoi-ayxanoyn-to-kostos-ton-kalliergeion/"
+        "https://www.efsyn.gr/stiles/1443853/pos-mporeite-na-katarrakosete-ti-dimokratia-me-mia-a-e/",
+        "https://www.efsyn.gr/politiki/1444181/to-sholio-toy-kke-gia-tis-ypoklopes-proklitiki-epimoni-tis-dikaiosynis/",
+        "https://www.efsyn.gr/stiles/1443817/antikrizontas-tis-rogmes/",
+        "https://www.efsyn.gr/stiles/1443824/gynaikeies-fones-miteres-kai-kores/"
       ],
-      "seen_at_utc": "2026-08-07T16:17:14.655591+00:00"
+      "seen_at_utc": "2026-08-07T16:30:10.969946+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/i-paranomi-diakinisi-metanaston-exei-allaksei-giati-enas-kanonismos-tou-2002-kathorizei-akoma-poios-timoreitai/",
-      "title": "Η παράνομη διακίνηση μεταναστών έχει αλλάξει – Γιατί ένας κανονισμός του 2002 καθορίζει ακόμα ποιος τιμωρείται",
-      "normalized_title": "Η ΠΑΡΑΝΟΜΗ ΔΙΑΚΙΝΗΣΗ ΜΕΤΑΝΑΣΤΩΝ ΕΧΕΙ ΑΛΛΑΞΕΙ – ΓΙΑΤΙ ΕΝΑΣ ΚΑΝΟΝΙΣΜΟΣ ΤΟΥ 2002 ΚΑΘΟΡΙΖΕΙ ΑΚΟΜΑ ΠΟΙΟΣ ΤΙΜΩΡΕΙΤΑΙ",
+      "url": "https://www.in.gr/2026/08/07/sports/football/to-afigima-tou-gkagkatsi-gia-tin-diaitisia/",
+      "title": "Το αφήγημα του Γκαγκάτση για την διαιτησία",
+      "normalized_title": "ΤΟ ΑΦΗΓΗΜΑ ΤΟΥ ΓΚΑΓΚΑΤΣΗ ΓΙΑ ΤΗΝ ΔΙΑΙΤΗΣΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/i-paranomi-diakinisi-metanaston-exei-allaksei-giati-enas-kanonismos-tou-2002-kathorizei-akoma-poios-timoreitai/",
-        "https://www.in.gr/2026/08/07/life/culture-live/apo-tous-loudites-stin-ai-einai-pragmati-exthroi-tis-proodou-osoi-fovountai-tis-mixanes/",
-        "https://www.in.gr/2026/08/07/sports/football/panathinaikos-epaggelmatika-symvolaio-se-eksi-paiktes-tin-akadimia/"
+        "https://www.in.gr/2026/08/07/sports/football/to-afigima-tou-gkagkatsi-gia-tin-diaitisia/"
       ],
-      "seen_at_utc": "2026-08-07T16:17:14.655564+00:00"
+      "seen_at_utc": "2026-08-07T16:30:10.969908+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T16:17:14.655722+00:00"
+  "updated_at_utc": "2026-08-07T16:30:10.970077+00:00"
 }
