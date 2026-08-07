@@ -119,10 +119,24 @@
 - `ingest/stage2_load_erd.py` (`diav_rows`)
 - `scripts/backfill_diavgeia_amounts.py`
 
+### 9. KIMDIS contract amount override for `26SYMV019592516`
+
+- Problem:
+- The KIMDIS contract API returns `29,920,000.00` without VAT and `37,100,800.00` with VAT, exactly x1000.
+- The signed contract and the related award `26AWRD019555701` confirm `29,920.00` without VAT and `37,100.80` with VAT.
+- Decision:
+- Keep `data/raw_procurements.csv` unchanged.
+- Apply a reference-specific correction from a reviewed override registry before contract-chain deduplication.
+- Scope:
+- ingest / DB
+- Implementation:
+- `data/mappings/procurement_amount_overrides.csv`
+- `ingest/stage2_load_erd.py` (`apply_procurement_amount_overrides`)
+- Date:
+- 2026-08-07
+
 ## Open / Next
 
-- Προσθήκη manual override registry για ποσά (π.χ. `ADA -> corrected amount`) σε separate CSV/YAML.
-- Εφαρμογή overrides στο ingest προς `procurement_decisions.amount_eur`.
 - Προαιρετικά: αποθήκευση `amount_raw_text`, `amount_corrected`, `correction_reason` στη βάση.
 
 ## How To Update This File
