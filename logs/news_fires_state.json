@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564390052/feygo-me-tin-kardia-gemati-eygnomosyni-oloklirothike-i-thiteia-toy-presvi-toy-israil-stin-ellada/",
-      "title": "«Φεύγω με την καρδιά γεμάτη ευγνωμοσύνη»: Ολοκληρώθηκε η θητεία του πρέσβη του Ισραήλ στην Ελλάδα",
-      "normalized_title": "«ΦΕΥΓΩ ΜΕ ΤΗΝ ΚΑΡΔΙΑ ΓΕΜΑΤΗ ΕΥΓΝΩΜΟΣΥΝΗ»: ΟΛΟΚΛΗΡΩΘΗΚΕ Η ΘΗΤΕΙΑ ΤΟΥ ΠΡΕΣΒΗ ΤΟΥ ΙΣΡΑΗΛ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.kathimerini.gr/society/564390058/dystychima-stis-serres-den-ypirche-chronos-gia-antidrasi-leei-o-odigos-toy-fortigoy/",
+      "title": "Δυστύχημα στις Σέρρες: «Δεν υπήρχε χρόνος για αντίδραση», λέει ο οδηγός του φορτηγού",
+      "normalized_title": "ΔΥΣΤΥΧΗΜΑ ΣΤΙΣ ΣΕΡΡΕΣ: «ΔΕΝ ΥΠΗΡΧΕ ΧΡΟΝΟΣ ΓΙΑ ΑΝΤΙΔΡΑΣΗ», ΛΕΕΙ Ο ΟΔΗΓΟΣ ΤΟΥ ΦΟΡΤΗΓΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564390052/feygo-me-tin-kardia-gemati-eygnomosyni-oloklirothike-i-thiteia-toy-presvi-toy-israil-stin-ellada/",
-        "https://www.kathimerini.gr/society/564390043/fotia-sto-markopoylo/"
+        "https://www.kathimerini.gr/society/564390058/dystychima-stis-serres-den-ypirche-chronos-gia-antidrasi-leei-o-odigos-toy-fortigoy/"
       ],
-      "seen_at_utc": "2026-08-07T14:17:13.833818+00:00"
+      "seen_at_utc": "2026-08-07T14:30:16.751782+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,25 +1259,22 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862084/fotia-sto-monopigado-thessalonikis-epiheiroun-6-enaeria/?utm_source=rss",
-      "title": "Φωτιά στο Μονοπήγαδο Θεσσαλονίκης, επιχειρούν 6 εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΜΟΝΟΠΗΓΑΔΟ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΕΠΙΧΕΙΡΟΥΝ 6 ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1862102/efuge-apo-ti-zoi-i-dimosiografos-hristina-pitoura-sta-64-tis/?utm_source=rss",
+      "title": "Έφυγε από τη ζωή η δημοσιογράφος Χριστίνα Πιτουρά στα 64 της",
+      "normalized_title": "ΕΦΥΓΕ ΑΠΟ ΤΗ ΖΩΗ Η ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΧΡΙΣΤΙΝΑ ΠΙΤΟΥΡΑ ΣΤΑ 64 ΤΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862084/fotia-sto-monopigado-thessalonikis-epiheiroun-6-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862102/efuge-apo-ti-zoi-i-dimosiografos-hristina-pitoura-sta-64-tis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T13:52:26.278055+00:00"
+      "seen_at_utc": "2026-08-07T14:30:16.751917+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444089/maziki-exodos-adeioyhon-gemata-ta-ploia-sto-100-i-plirotita-gia-tis-kyklades/",
-      "title": "Μαζική έξοδος αδειούχων: Γεμάτα τα πλοία, στο 100% η πληρότητα για τις Κυκλάδες",
-      "normalized_title": "ΜΑΖΙΚΗ ΕΞΟΔΟΣ ΑΔΕΙΟΥΧΩΝ: ΓΕΜΑΤΑ ΤΑ ΠΛΟΙΑ, ΣΤΟ 100% Η ΠΛΗΡΟΤΗΤΑ ΓΙΑ ΤΙΣ ΚΥΚΛΑΔΕΣ",
+      "url": "https://www.efsyn.gr/kosmos/1444090/vivlikes-plimmyres-stin-india-shedon-100-nekroi-kai-pano-apo-140-000-kalliergisima-stremmata-katestrammena-vinteo/",
+      "title": "Βιβλικές πλημμύρες στην Ινδία – Σχεδόν 100 νεκροί και πάνω από 140.000 καλλιεργήσιμα στρέμματα κατεστραμμένα [βίντεο]",
+      "normalized_title": "ΒΙΒΛΙΚΕΣ ΠΛΗΜΜΥΡΕΣ ΣΤΗΝ ΙΝΔΙΑ – ΣΧΕΔΟΝ 100 ΝΕΚΡΟΙ ΚΑΙ ΠΑΝΩ ΑΠΟ 140.000 ΚΑΛΛΙΕΡΓΗΣΙΜΑ ΣΤΡΕΜΜΑΤΑ ΚΑΤΕΣΤΡΑΜΜΕΝΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444089/maziki-exodos-adeioyhon-gemata-ta-ploia-sto-100-i-plirotita-gia-tis-kyklades/",
-        "https://www.efsyn.gr/podcast/afylakti-diavasi-frantzesk-mpoix-o-fotografos-toy-maoythaoyzen/",
-        "https://www.efsyn.gr/ellada/1444080/lakonia-nekros-odigos-fortigoy-to-ohima-toy-epese-se-gkremo/",
-        "https://www.efsyn.gr/politiki/1444077/ypoklopes-antidrasi-pasok-gia-ton-areio-pago-anapantita-krisima-erotimata-gia-ti-dysodi-ypothesi/"
+        "https://www.efsyn.gr/kosmos/1444090/vivlikes-plimmyres-stin-india-shedon-100-nekroi-kai-pano-apo-140-000-kalliergisima-stremmata-katestrammena-vinteo/"
       ],
-      "seen_at_utc": "2026-08-07T14:17:13.833919+00:00"
+      "seen_at_utc": "2026-08-07T14:30:16.751867+00:00"
     },
     "in_gr": {
       "url": "https://www.in.gr/2026/08/07/economy/diethnis-oikonomia/einai-pio-paragogikes-oi-etaireies-pou-yiothetoun-tin-tetraimeri-ergasia-mia-nea-meleti-dinei-apantiseis/",
@@ -1293,5 +1289,5 @@
       "seen_at_utc": "2026-08-07T14:17:13.833885+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T14:17:13.833993+00:00"
+  "updated_at_utc": "2026-08-07T14:30:16.751992+00:00"
 }
