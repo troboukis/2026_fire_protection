@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564390502/el-venizelos-eiche-18-kila-kannavis-stis-aposkeyes-toy-treis-syllipseis/",
-      "title": "«Ελ. Βενιζέλος»: Εκρυβε 18 κιλά κάνναβης στις αποσκευές του – Τρεις συλλήψεις",
-      "normalized_title": "«ΕΛ. ΒΕΝΙΖΕΛΟΣ»: ΕΚΡΥΒΕ 18 ΚΙΛΑ ΚΑΝΝΑΒΗΣ ΣΤΙΣ ΑΠΟΣΚΕΥΕΣ ΤΟΥ – ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.kathimerini.gr/athletics/football/564390418/ola-toy-gamoy-dyskola-3/",
+      "title": "Ολα του γάμου δύσκολα",
+      "normalized_title": "ΟΛΑ ΤΟΥ ΓΑΜΟΥ ΔΥΣΚΟΛΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564390502/el-venizelos-eiche-18-kila-kannavis-stis-aposkeyes-toy-treis-syllipseis/",
-        "https://www.kathimerini.gr/visual/infographics/564388495/klimatiki-krisi-kai-energeia-ta-oikonomika-ofeli-toy-exilektrismoy/"
+        "https://www.kathimerini.gr/athletics/football/564390418/ola-toy-gamoy-dyskola-3/",
+        "https://www.kathimerini.gr/society/reportaz/564388498/den-einai-pia-stigmes-tis-paidikotitas-moy/",
+        "https://www.kathimerini.gr/world/564390556/i-ekleipsi-ilioy-svinei-9-7-gw-apo-to-ilektriko-diktyo-tis-eyropis/"
       ],
-      "seen_at_utc": "2026-08-07T17:17:52.545255+00:00"
+      "seen_at_utc": "2026-08-07T17:51:39.758458+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,25 +1270,30 @@
       "seen_at_utc": "2026-08-07T17:17:52.545356+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1444202/paok-o-konstantelias-sto-stohastro-tis-galatasarai/",
-      "title": "ΠΑΟΚ: Ο Κωνσταντέλιας στο στόχαστρο της Γαλατάσαραϊ",
-      "normalized_title": "ΠΑΟΚ: Ο ΚΩΝΣΤΑΝΤΕΛΙΑΣ ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΤΗΣ ΓΑΛΑΤΑΣΑΡΑΙ",
+      "url": "https://www.efsyn.gr/ellada/1444217/fotia-sto-lasithi-kaiei-konta-se-anemogennitries/",
+      "title": "Φωτιά στο Λασίθι – Καίει κοντά σε ανεμογεννήτριες",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΛΑΣΙΘΙ – ΚΑΙΕΙ ΚΟΝΤΑ ΣΕ ΑΝΕΜΟΓΕΝΝΗΤΡΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1444202/paok-o-konstantelias-sto-stohastro-tis-galatasarai/",
-        "https://www.efsyn.gr/ellada/1443850/leonidio-alazoneia-pros-ti-fysi-o-fotismos-toy-vrahoy/",
-        "https://www.efsyn.gr/tehnes/1443833/antigoni-mia-arhetypiki-tragodia-me-mia-nea-skiniki-glossa/"
+        "https://www.efsyn.gr/ellada/1444217/fotia-sto-lasithi-kaiei-konta-se-anemogennitries/",
+        "https://www.efsyn.gr/politiki/1444203/aygerinos-epanerhetai-kata-karystianoy-kai-gratsia-politiki-spekoyla-parapliroforisi-kai-prosopikes-epitheseis/",
+        "https://www.efsyn.gr/politiki/1444207/polakis-i-kyvernosa-aristera-poy-prepei-na-ginei-o-syriza-epistrefoyme/",
+        "https://www.efsyn.gr/kosmos/1444214/voreia-korea-soypa-me-kreas-skyloy-systinoyn-ta-kratika-mme-os-diexodo-ston-kaysona/"
       ],
-      "seen_at_utc": "2026-08-07T17:30:12.521625+00:00"
+      "seen_at_utc": "2026-08-07T17:51:39.758533+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/i-ksirasia-ston-dounavi-fernei-sto-fos-polemika-ploia-tou-v-pagkosmiou-polemou-vinteo/",
-      "title": "Η ξηρασία στον Δούναβη φέρνει στο φως πολεμικά πλοία του Β´ Παγκοσμίου Πολέμου",
-      "normalized_title": "Η ΞΗΡΑΣΙΑ ΣΤΟΝ ΔΟΥΝΑΒΗ ΦΕΡΝΕΙ ΣΤΟ ΦΩΣ ΠΟΛΕΜΙΚΑ ΠΛΟΙΑ ΤΟΥ Β´ ΠΑΓΚΟΣΜΙΟΥ ΠΟΛΕΜΟΥ",
+      "url": "https://www.in.gr/2026/08/07/world/vinteo-proaniggeile-tin-paraitisi-tou-merts-apodeixthike-oti-itan-ergo-roson-xaker/",
+      "title": "Βίντεο προανήγγειλε την παραίτηση του Μερτς – Αποδείχθηκε ότι ήταν έργο Ρώσων χάκερ",
+      "normalized_title": "ΒΙΝΤΕΟ ΠΡΟΑΝΗΓΓΕΙΛΕ ΤΗΝ ΠΑΡΑΙΤΗΣΗ ΤΟΥ ΜΕΡΤΣ – ΑΠΟΔΕΙΧΘΗΚΕ ΟΤΙ ΗΤΑΝ ΕΡΓΟ ΡΩΣΩΝ ΧΑΚΕΡ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/i-ksirasia-ston-dounavi-fernei-sto-fos-polemika-ploia-tou-v-pagkosmiou-polemou-vinteo/"
+        "https://www.in.gr/2026/08/07/world/vinteo-proaniggeile-tin-paraitisi-tou-merts-apodeixthike-oti-itan-ergo-roson-xaker/",
+        "https://www.in.gr/2026/08/07/world/i-douleia-mas-kynigaei-akoma-kai-stis-diakopes-pos-na-aposyndetheite-pragmatika/",
+        "https://www.in.gr/2026/08/07/greece/sok-stin-kriti-touristas-rotise-se-katastima-tin-timi-gia-na-agorasei-ena-aniliko-koritsi/",
+        "https://www.in.gr/2026/08/07/in-science/perivallon-b-science/ta-dedomena-den-pinontai-antidraseis-gia-gigantio-data-center-tis-google-se-dipsasmeni-perioxi-tis-indias/",
+        "https://www.in.gr/2026/08/07/sports/football/i-omospondia-tis-argentinis-perimenei-ti-tha-apofasisoun-oi-mesi-kai-skaloni-vid/"
       ],
-      "seen_at_utc": "2026-08-07T17:30:12.521549+00:00"
+      "seen_at_utc": "2026-08-07T17:51:39.758512+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T17:30:12.521709+00:00"
+  "updated_at_utc": "2026-08-07T17:51:39.758617+00:00"
 }
