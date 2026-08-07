@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564388048/i-pandaisia-tis-vanilias/",
-      "title": "Το φρούτο με τις αντιοξειδωτικές ιδιότητες που κάνει καλό στα οστά",
-      "normalized_title": "ΤΟ ΦΡΟΥΤΟ ΜΕ ΤΙΣ ΑΝΤΙΟΞΕΙΔΩΤΙΚΕΣ ΙΔΙΟΤΗΤΕΣ ΠΟΥ ΚΑΝΕΙ ΚΑΛΟ ΣΤΑ ΟΣΤΑ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564388849/megales-ayxiseis-timon-polisis-sta-mikra-diamerismata/",
+      "title": "Μεγάλες αυξήσεις τιμών πώλησης στα μικρά διαμερίσματα",
+      "normalized_title": "ΜΕΓΑΛΕΣ ΑΥΞΗΣΕΙΣ ΤΙΜΩΝ ΠΩΛΗΣΗΣ ΣΤΑ ΜΙΚΡΑ ΔΙΑΜΕΡΙΣΜΑΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564388048/i-pandaisia-tis-vanilias/",
-        "https://www.kathimerini.gr/world/564390172/oi-ipa-dinoyn-1-2-dis-se-etaireia-gia-na-egkataleipsei-protzekt-aiolikon-parkon/",
-        "https://www.kathimerini.gr/world/564390235/krisi-sti-theoyta-italiko-ochi-sto-ispaniko-telesigrafo-gia-toys-elegchoys-sta-synora/"
+        "https://www.kathimerini.gr/visual/infographics/564388849/megales-ayxiseis-timon-polisis-sta-mikra-diamerismata/"
       ],
-      "seen_at_utc": "2026-08-07T15:30:57.067718+00:00"
+      "seen_at_utc": "2026-08-07T15:51:42.060727+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,24 +1269,27 @@
       "seen_at_utc": "2026-08-07T15:30:57.067868+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444136/thessaloniki-ti-allazei-sta-leoforeia-tis-polis-meta-tin-epektasi-toy-metro-stin-kalamaria/",
-      "title": "Θεσσαλονίκη: Τι αλλάζει στα λεωφορεία της πόλης μετά την επέκταση του Μετρό στην Καλαμαριά",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΤΙ ΑΛΛΑΖΕΙ ΣΤΑ ΛΕΩΦΟΡΕΙΑ ΤΗΣ ΠΟΛΗΣ ΜΕΤΑ ΤΗΝ ΕΠΕΚΤΑΣΗ ΤΟΥ ΜΕΤΡΟ ΣΤΗΝ ΚΑΛΑΜΑΡΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1444135/o-ellinikos-proorismos-opoy-panemorfes-limnes-provalloyn-anamsa-se-palia-oryheia-aerofotografies/",
+      "title": "Ο ελληνικός προορισμός όπου πανέμορφες λίμνες προβάλλουν ανάμεσα σε παλιά ορυχεία [αεροφωτογραφίες]",
+      "normalized_title": "Ο ΕΛΛΗΝΙΚΟΣ ΠΡΟΟΡΙΣΜΟΣ ΟΠΟΥ ΠΑΝΕΜΟΡΦΕΣ ΛΙΜΝΕΣ ΠΡΟΒΑΛΛΟΥΝ ΑΝΑΜΕΣΑ ΣΕ ΠΑΛΙΑ ΟΡΥΧΕΙΑ [ΑΕΡΟΦΩΤΟΓΡΑΦΙΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444136/thessaloniki-ti-allazei-sta-leoforeia-tis-polis-meta-tin-epektasi-toy-metro-stin-kalamaria/",
-        "https://www.efsyn.gr/media/1444123/mia-monadiki-prosfora-tis-ef-syn-ayto-to-savvatokyriako-to-mythistorima-ta-thymata-ton-mpoyalo-narsezak/"
+        "https://www.efsyn.gr/ellada/1444135/o-ellinikos-proorismos-opoy-panemorfes-limnes-provalloyn-anamsa-se-palia-oryheia-aerofotografies/",
+        "https://www.efsyn.gr/ellada/1444121/giati-den-sosame-to-koytavi-poy-itan-se-ageli-lykon-ti-apanta-i-omada-ereyniton-poy-to-parakoloythoyse/"
       ],
-      "seen_at_utc": "2026-08-07T15:30:57.067824+00:00"
+      "seen_at_utc": "2026-08-07T15:51:42.060839+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/ilinois-efivos-ntymenos-klooun-katigoreitai-gia-ti-dolofonia-78xronou-veteranou/",
-      "title": "Ιλινόις: Έφηβος ντυμένος κλόουν κατηγορείται για τη δολοφονία 78χρονου βετεράνου",
-      "normalized_title": "ΙΛΙΝΟΙΣ: ΕΦΗΒΟΣ ΝΤΥΜΕΝΟΣ ΚΛΟΟΥΝ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ 78ΧΡΟΝΟΥ ΒΕΤΕΡΑΝΟΥ",
+      "url": "https://www.in.gr/2026/08/07/world/i-italia-arneitai-to-aitima-tis-ispanias-na-arei-tous-synoriakous-periorismous-meta-tin-krisi-sti-theouta/",
+      "title": "Η Ιταλία αρνείται το αίτημα της Ισπανίας να άρει τους συνοριακούς περιορισμούς μετά την κρίση στη Θέουτα",
+      "normalized_title": "Η ΙΤΑΛΙΑ ΑΡΝΕΙΤΑΙ ΤΟ ΑΙΤΗΜΑ ΤΗΣ ΙΣΠΑΝΙΑΣ ΝΑ ΑΡΕΙ ΤΟΥΣ ΣΥΝΟΡΙΑΚΟΥΣ ΠΕΡΙΟΡΙΣΜΟΥΣ ΜΕΤΑ ΤΗΝ ΚΡΙΣΗ ΣΤΗ ΘΕΟΥΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/ilinois-efivos-ntymenos-klooun-katigoreitai-gia-ti-dolofonia-78xronou-veteranou/"
+        "https://www.in.gr/2026/08/07/world/i-italia-arneitai-to-aitima-tis-ispanias-na-arei-tous-synoriakous-periorismous-meta-tin-krisi-sti-theouta/",
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/kainofanis-kai-akyri-i-nea-arxeiothetisi-ton-ypoklopon-leei-i-dikigoros-tou-xr-spirtzi/",
+        "https://www.in.gr/2026/08/07/sports/basketball/zalgkiris-anakoinose-tin-epistrofi-tou-kinan-evans-paei-daneikos-stous-lonton-laions-picvid/",
+        "https://www.in.gr/2026/08/07/greece/fotia-stin-ermakia-kozanis-epixeiroun-enaeries-kai-epigeies-dynameis/"
       ],
-      "seen_at_utc": "2026-08-07T15:30:57.067774+00:00"
+      "seen_at_utc": "2026-08-07T15:51:42.060794+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T15:30:57.067946+00:00"
+  "updated_at_utc": "2026-08-07T15:51:42.060912+00:00"
 }
