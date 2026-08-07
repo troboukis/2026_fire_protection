@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564390058/dystychima-stis-serres-den-ypirche-chronos-gia-antidrasi-leei-o-odigos-toy-fortigoy/",
-      "title": "Δυστύχημα στις Σέρρες: «Δεν υπήρχε χρόνος για αντίδραση», λέει ο οδηγός του φορτηγού",
-      "normalized_title": "ΔΥΣΤΥΧΗΜΑ ΣΤΙΣ ΣΕΡΡΕΣ: «ΔΕΝ ΥΠΗΡΧΕ ΧΡΟΝΟΣ ΓΙΑ ΑΝΤΙΔΡΑΣΗ», ΛΕΕΙ Ο ΟΔΗΓΟΣ ΤΟΥ ΦΟΡΤΗΓΟΥ",
+      "url": "https://www.kathimerini.gr/world/564390145/toyrkia-i-symfonia-me-s-aravia-kai-pakistan-den-stocheyei-sygkekrimeni-chora/",
+      "title": "Τουρκία: «Η συμφωνία με Σ. Αραβία και Πακιστάν δεν στοχεύει συγκεκριμένη χώρα»",
+      "normalized_title": "ΤΟΥΡΚΙΑ: «Η ΣΥΜΦΩΝΙΑ ΜΕ Σ. ΑΡΑΒΙΑ ΚΑΙ ΠΑΚΙΣΤΑΝ ΔΕΝ ΣΤΟΧΕΥΕΙ ΣΥΓΚΕΚΡΙΜΕΝΗ ΧΩΡΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564390058/dystychima-stis-serres-den-ypirche-chronos-gia-antidrasi-leei-o-odigos-toy-fortigoy/"
+        "https://www.kathimerini.gr/world/564390145/toyrkia-i-symfonia-me-s-aravia-kai-pakistan-den-stocheyei-sygkekrimeni-chora/",
+        "https://www.kathimerini.gr/world/564390082/makeleio-stin-tailandi-promeletimeni-i-epithesi-toy-14chronoy-mathiti/",
+        "https://www.kathimerini.gr/society/564389842/toy-chronoy-schediazoyme-na-epistrepsoyme-stin-kriti/"
       ],
-      "seen_at_utc": "2026-08-07T14:30:16.751782+00:00"
+      "seen_at_utc": "2026-08-07T14:52:37.971908+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862102/efuge-apo-ti-zoi-i-dimosiografos-hristina-pitoura-sta-64-tis/?utm_source=rss",
-      "title": "Έφυγε από τη ζωή η δημοσιογράφος Χριστίνα Πιτουρά στα 64 της",
-      "normalized_title": "ΕΦΥΓΕ ΑΠΟ ΤΗ ΖΩΗ Η ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΧΡΙΣΤΙΝΑ ΠΙΤΟΥΡΑ ΣΤΑ 64 ΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1862115/fotia-tora-stin-ermakia-kozanis-sikothikan-3-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά στην Ερμακιά Κοζάνης, σηκώθηκαν 3 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΕΡΜΑΚΙΑ ΚΟΖΑΝΗΣ, ΣΗΚΩΘΗΚΑΝ 3 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862102/efuge-apo-ti-zoi-i-dimosiografos-hristina-pitoura-sta-64-tis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862115/fotia-tora-stin-ermakia-kozanis-sikothikan-3-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T14:30:16.751917+00:00"
+      "seen_at_utc": "2026-08-07T14:52:37.972012+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1444090/vivlikes-plimmyres-stin-india-shedon-100-nekroi-kai-pano-apo-140-000-kalliergisima-stremmata-katestrammena-vinteo/",
-      "title": "Βιβλικές πλημμύρες στην Ινδία – Σχεδόν 100 νεκροί και πάνω από 140.000 καλλιεργήσιμα στρέμματα κατεστραμμένα [βίντεο]",
-      "normalized_title": "ΒΙΒΛΙΚΕΣ ΠΛΗΜΜΥΡΕΣ ΣΤΗΝ ΙΝΔΙΑ – ΣΧΕΔΟΝ 100 ΝΕΚΡΟΙ ΚΑΙ ΠΑΝΩ ΑΠΟ 140.000 ΚΑΛΛΙΕΡΓΗΣΙΜΑ ΣΤΡΕΜΜΑΤΑ ΚΑΤΕΣΤΡΑΜΜΕΝΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/oikonomia/1444108/giati-oi-toyrkoi-syrreoyn-sta-ellinika-nisia-toyrkos-arthrografos-exigei/",
+      "title": "Γιατί οι Τούρκοι συρρέουν στα ελληνικά νησιά: Τούρκος αρθρογράφος εξηγεί",
+      "normalized_title": "ΓΙΑΤΙ ΟΙ ΤΟΥΡΚΟΙ ΣΥΡΡΕΟΥΝ ΣΤΑ ΕΛΛΗΝΙΚΑ ΝΗΣΙΑ: ΤΟΥΡΚΟΣ ΑΡΘΡΟΓΡΑΦΟΣ ΕΞΗΓΕΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1444090/vivlikes-plimmyres-stin-india-shedon-100-nekroi-kai-pano-apo-140-000-kalliergisima-stremmata-katestrammena-vinteo/"
+        "https://www.efsyn.gr/oikonomia/1444108/giati-oi-toyrkoi-syrreoyn-sta-ellinika-nisia-toyrkos-arthrografos-exigei/",
+        "https://www.efsyn.gr/oikonomia/1444063/ey-mytilinaios-i-metlen-epistrefei-se-trohia-anaptyxis/",
+        "https://www.efsyn.gr/oikonomia/1444094/ipa-rogmes-stin-agora-ergasias-hathikan-23-000-theseis-ton-ioylio-eno-anamenotan-ayxisi-kata-87-000/",
+        "https://www.efsyn.gr/ellada/1444098/attikovoiotia-pos-kaike-mesa-se-dyo-vradia-to-55-tis-ektasis-oi-floges-apeleytherosan-energeia-isi-me-6-atomikes-vomves/"
       ],
-      "seen_at_utc": "2026-08-07T14:30:16.751867+00:00"
+      "seen_at_utc": "2026-08-07T14:52:37.971992+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/economy/diethnis-oikonomia/einai-pio-paragogikes-oi-etaireies-pou-yiothetoun-tin-tetraimeri-ergasia-mia-nea-meleti-dinei-apantiseis/",
-      "title": "Είναι πιο παραγωγικές οι εταιρείες που υιοθετούν την τετραήμερη εργασία; Μια νέα μελέτη δίνει απαντήσεις",
-      "normalized_title": "ΕΙΝΑΙ ΠΙΟ ΠΑΡΑΓΩΓΙΚΕΣ ΟΙ ΕΤΑΙΡΕΙΕΣ ΠΟΥ ΥΙΟΘΕΤΟΥΝ ΤΗΝ ΤΕΤΡΑΗΜΕΡΗ ΕΡΓΑΣΙΑ; ΜΙΑ ΝΕΑ ΜΕΛΕΤΗ ΔΙΝΕΙ ΑΠΑΝΤΗΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/07/politics/politiki-grammateia/elas-gia-ypoklopes-aprokalypti-osmosi-kyvernisis-dikaiosynis-ekthetei-ti-xora-diethnos/",
+      "title": "ΕΛΑΣ για υποκλοπές: Απροκάλυπτη ώσμωση κυβέρνησης-Δικαιοσύνης εκθέτει τη χώρα διεθνώς",
+      "normalized_title": "ΕΛΑΣ ΓΙΑ ΥΠΟΚΛΟΠΕΣ: ΑΠΡΟΚΑΛΥΠΤΗ ΩΣΜΩΣΗ ΚΥΒΕΡΝΗΣΗΣ-ΔΙΚΑΙΟΣΥΝΗΣ ΕΚΘΕΤΕΙ ΤΗ ΧΩΡΑ ΔΙΕΘΝΩΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/economy/diethnis-oikonomia/einai-pio-paragogikes-oi-etaireies-pou-yiothetoun-tin-tetraimeri-ergasia-mia-nea-meleti-dinei-apantiseis/",
-        "https://www.in.gr/2026/08/07/sports/on-field/to-panigyriko-adeiasma-tou-lanoua-meso-skotias-pic/",
-        "https://www.in.gr/2026/08/07/stories/xirosima-eksi-anthropoi-pou-epezisan-apo-tin-proti-pyriniki-kolasi/",
-        "https://www.in.gr/2026/08/07/greece/ta-exo-xasei-ola-ragizei-kardies-o-pateras-kai-syzygos-ton-thymaton-sto-troxaio-stis-serres/"
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/elas-gia-ypoklopes-aprokalypti-osmosi-kyvernisis-dikaiosynis-ekthetei-ti-xora-diethnos/",
+        "https://www.in.gr/2026/08/07/sports/football/paok-ta-dedomena-gia-ntespontof-enopsei-tis-revans-sto-velgio/",
+        "https://www.in.gr/2026/08/07/world/to-kalokairi-tou-2026-ekselissetai-se-ena-apo-ta-varytera-se-dasikes-pyrkagies-gia-tin-eyropi/",
+        "https://www.in.gr/2026/08/07/world/meinete-spitia-sas-enoploi-aytonomistes-proeidopoioun-osous-agorazoun-spitia-stin-korsiki/",
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/liakouli-to-skandalo-ton-ypoklopon-den-mporei-na-meinei-sto-skotadi-enos-arxeiou/",
+        "https://www.in.gr/2026/08/07/sports/football/aporrifthike-apo-ti-siti-protasi-tis-mpartselona-gia-ton-rodri-piezei-o-ispanos-pics/",
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/ti-agorazei-to-dimosio-me-7-ekat-eyro-kataggelia-tis-elas-gia-nees-ergolavies-sto-ktimatologio-sfodri-epithesi-stin-kyvernisi/"
       ],
-      "seen_at_utc": "2026-08-07T14:17:13.833885+00:00"
+      "seen_at_utc": "2026-08-07T14:52:37.971962+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T14:30:16.751992+00:00"
+  "updated_at_utc": "2026-08-07T14:52:37.972099+00:00"
 }
