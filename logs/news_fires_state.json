@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564389923/tsoykalas-i-ekthesi-toy-oosa-dialyei-to-success-story-tis-kyvernisis/",
-      "title": "Τσουκαλάς: Η έκθεση του ΟΟΣΑ διαλύει το success story της κυβέρνησης",
-      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: Η ΕΚΘΕΣΗ ΤΟΥ ΟΟΣΑ ΔΙΑΛΥΕΙ ΤΟ SUCCESS STORY ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ",
+      "url": "https://www.kathimerini.gr/life/auto/564375178/to-elliniko-paradoxo-soy-zitoyn-na-patiseis-gkazi-prin-apo-ti-diastayrosi/",
+      "title": "Το ελληνικό παράδοξο: Σου ζητούν να πατήσεις γκάζι πριν από τη διασταύρωση!",
+      "normalized_title": "ΤΟ ΕΛΛΗΝΙΚΟ ΠΑΡΑΔΟΞΟ: ΣΟΥ ΖΗΤΟΥΝ ΝΑ ΠΑΤΗΣΕΙΣ ΓΚΑΖΙ ΠΡΙΝ ΑΠΟ ΤΗ ΔΙΑΣΤΑΥΡΩΣΗ!",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564389923/tsoykalas-i-ekthesi-toy-oosa-dialyei-to-success-story-tis-kyvernisis/"
+        "https://www.kathimerini.gr/life/auto/564375178/to-elliniko-paradoxo-soy-zitoyn-na-patiseis-gkazi-prin-apo-ti-diastayrosi/",
+        "https://www.kathimerini.gr/society/564389938/tragodia-stis-serres-ta-echasa-ola-oi-diloseis-toy-patera-syzygoy-ton-thymaton/"
       ],
-      "seen_at_utc": "2026-08-07T12:30:09.010665+00:00"
+      "seen_at_utc": "2026-08-07T12:51:16.170220+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862061/21hronos-nauagosostis-esose-italida-touristria-sti-samothraki-tin-evgalan-sti-steria-se-imilipothumi-katastasi/?utm_source=rss",
-      "title": "21χρονος ναυαγοσώστης έσωσε Ιταλίδα τουρίστρια στη Σαμοθράκη: «Την έβγαλαν στη στεριά σε ημιλιπόθυμη κατάσταση»",
-      "normalized_title": "21ΧΡΟΝΟΣ ΝΑΥΑΓΟΣΩΣΤΗΣ ΕΣΩΣΕ ΙΤΑΛΙΔΑ ΤΟΥΡΙΣΤΡΙΑ ΣΤΗ ΣΑΜΟΘΡΑΚΗ: «ΤΗΝ ΕΒΓΑΛΑΝ ΣΤΗ ΣΤΕΡΙΑ ΣΕ ΗΜΙΛΙΠΟΘΥΜΗ ΚΑΤΑΣΤΑΣΗ»",
+      "url": "https://www.protothema.gr/greece/article/1862064/apeglovismos-traumatismenou-18hronou-roumanou-apo-dusvato-simeio-stin-thaso/?utm_source=rss",
+      "title": "Απεγκλωβισμός τραυματισμένου 18χρονου Ρουμάνου από δύσβατο σημείο στη Θάσο",
+      "normalized_title": "ΑΠΕΓΚΛΩΒΙΣΜΟΣ ΤΡΑΥΜΑΤΙΣΜΕΝΟΥ 18ΧΡΟΝΟΥ ΡΟΥΜΑΝΟΥ ΑΠΟ ΔΥΣΒΑΤΟ ΣΗΜΕΙΟ ΣΤΗ ΘΑΣΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862061/21hronos-nauagosostis-esose-italida-touristria-sti-samothraki-tin-evgalan-sti-steria-se-imilipothumi-katastasi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862064/apeglovismos-traumatismenou-18hronou-roumanou-apo-dusvato-simeio-stin-thaso/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T12:30:09.010767+00:00"
+      "seen_at_utc": "2026-08-07T12:51:16.170352+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1443988/arnisi-anasyrsis-ton-ypoklopon-kesses-o-mpakelas-paredose-ta-diapisteytiria-toy/",
-      "title": "Κεσσές για την άρνηση ανάσυρσης των υποκλοπών: «Ο Μπακέλας παρέδωσε τα διαπιστευτήριά του»",
-      "normalized_title": "ΚΕΣΣΕΣ ΓΙΑ ΤΗΝ ΑΡΝΗΣΗ ΑΝΑΣΥΡΣΗΣ ΤΩΝ ΥΠΟΚΛΟΠΩΝ: «Ο ΜΠΑΚΕΛΑΣ ΠΑΡΕΔΩΣΕ ΤΑ ΔΙΑΠΙΣΤΕΥΤΗΡΙΑ ΤΟΥ»",
+      "url": "https://www.efsyn.gr/kosmos/1444000/agria-omofoviki-dolofonia-31hronoy-sti-voylgaria-anafores-gia-enedra-thanatoy-meso-efarmogis-gnorimion/",
+      "title": "Άγρια ομοφοβική δολοφονία 31χρονου στη Βουλγαρία: Αναφορές για ενέδρα θανάτου μέσω εφαρμογής γνωριμιών",
+      "normalized_title": "ΑΓΡΙΑ ΟΜΟΦΟΒΙΚΗ ΔΟΛΟΦΟΝΙΑ 31ΧΡΟΝΟΥ ΣΤΗ ΒΟΥΛΓΑΡΙΑ: ΑΝΑΦΟΡΕΣ ΓΙΑ ΕΝΕΔΡΑ ΘΑΝΑΤΟΥ ΜΕΣΩ ΕΦΑΡΜΟΓΗΣ ΓΝΩΡΙΜΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1443988/arnisi-anasyrsis-ton-ypoklopon-kesses-o-mpakelas-paredose-ta-diapisteytiria-toy/"
+        "https://www.efsyn.gr/kosmos/1444000/agria-omofoviki-dolofonia-31hronoy-sti-voylgaria-anafores-gia-enedra-thanatoy-meso-efarmogis-gnorimion/",
+        "https://www.efsyn.gr/ellada/1444004/ios-dytikoy-neiloy-ekklisi-isa-gia-enishysi-ton-metron-kata-ton-koynoypion-idiaiteri-anisyhia-gia-tin-attiki/",
+        "https://www.efsyn.gr/ellada/1443828/akomi-mia-mystiki-kai-paranomi-epanaproothisi-apo-to-limeniko-ti-synevi-stis-2-aygoystoy-sti-nisida-gyali/"
       ],
-      "seen_at_utc": "2026-08-07T12:17:08.759616+00:00"
+      "seen_at_utc": "2026-08-07T12:51:16.170324+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/sports/football/nees-apokalypseis-gia-infantino-stelexi-tis-fifa-dexthikan-pieseis-prin-ton-teliko-tou-mountial/",
-      "title": "Νέες αποκαλύψεις για Ινφαντίνο: «Στελέχη της FIFA δέχθηκαν πιέσεις πριν τον τελικό του Μουντιάλ»",
-      "normalized_title": "ΝΕΕΣ ΑΠΟΚΑΛΥΨΕΙΣ ΓΙΑ ΙΝΦΑΝΤΙΝΟ: «ΣΤΕΛΕΧΗ ΤΗΣ FIFA ΔΕΧΘΗΚΑΝ ΠΙΕΣΕΙΣ ΠΡΙΝ ΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΜΟΥΝΤΙΑΛ»",
+      "url": "https://www.in.gr/2026/08/07/economy/diethnis-oikonomia/poutin-prasino-fos-gia-tin-polisi-tou-kyvernitikou-meridiou-sto-megalytero-aerodromio-tis-mosxas/",
+      "title": "Πράσινο φως από Πούτιν για την πώληση του κυβερνητικού μεριδίου στο μεγαλύτερο αεροδρόμιο της Μόσχας",
+      "normalized_title": "ΠΡΑΣΙΝΟ ΦΩΣ ΑΠΟ ΠΟΥΤΙΝ ΓΙΑ ΤΗΝ ΠΩΛΗΣΗ ΤΟΥ ΚΥΒΕΡΝΗΤΙΚΟΥ ΜΕΡΙΔΙΟΥ ΣΤΟ ΜΕΓΑΛΥΤΕΡΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΜΟΣΧΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/sports/football/nees-apokalypseis-gia-infantino-stelexi-tis-fifa-dexthikan-pieseis-prin-ton-teliko-tou-mountial/",
-        "https://www.in.gr/2026/08/07/politics/aftodioikisi/stin-kykloforia-to-anaplasmeno-tmima-tis-odou-eleytheriou-venizelou-stous-ampelokipous/",
-        "https://www.in.gr/2026/08/07/greece/xalkidiki-epixeirisi-diasosis-touristrias-traymatistike-se-dysvato-simeio-kai-kalese-to-112/"
+        "https://www.in.gr/2026/08/07/economy/diethnis-oikonomia/poutin-prasino-fos-gia-tin-polisi-tou-kyvernitikou-meridiou-sto-megalytero-aerodromio-tis-mosxas/",
+        "https://www.in.gr/2026/08/07/politics/epikairotita/pasok-ekthesi-kolafos-tou-oosa-dialyei-to-success-story-tis-kyvernisis-ypoxorise-to-kata-kefalin-eisodima-kata-36/",
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/nea-aristera-neo-thapsimo-ton-ereynon-gia-tis-ypoklopes-na-pesei-i-kyvernisi-mitsotaki-pou-kathodigei-anotatous-dikastikous/",
+        "https://www.in.gr/2026/08/07/politics/epikairotita/kke-gia-ta-monopolia-yparxei-ritra-diafygis-gia-tis-anagkes-ton-ergazomenon-koftes/",
+        "https://www.in.gr/2026/08/07/sports/basketball/se-live-streaming-to-ispania-ellada-gia-to-eurobasket-u16/"
       ],
-      "seen_at_utc": "2026-08-07T12:30:09.010718+00:00"
+      "seen_at_utc": "2026-08-07T12:51:16.170278+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T12:30:09.010838+00:00"
+  "updated_at_utc": "2026-08-07T12:51:16.170433+00:00"
 }
