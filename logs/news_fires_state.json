@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564389983/i-amazon-proetoimazei-ti-synecheia-toy-ntokimanter-gia-ti-melania-tramp/",
-      "title": "Η Amazon προετοιμάζει τη συνέχεια του ντοκιμαντέρ για τη Μελάνια Τραμπ",
-      "normalized_title": "Η AMAZON ΠΡΟΕΤΟΙΜΑΖΕΙ ΤΗ ΣΥΝΕΧΕΙΑ ΤΟΥ ΝΤΟΚΙΜΑΝΤΕΡ ΓΙΑ ΤΗ ΜΕΛΑΝΙΑ ΤΡΑΜΠ",
+      "url": "https://www.kathimerini.gr/society/564390037/fotia-sto-stefani-korinthias-minyma-112-gia-etoimotita/",
+      "title": "Φωτιά στο Στεφάνι Κορινθίας, μήνυμα 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΣΤΕΦΑΝΙ ΚΟΡΙΝΘΙΑΣ, ΜΗΝΥΜΑ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564389983/i-amazon-proetoimazei-ti-synecheia-toy-ntokimanter-gia-ti-melania-tramp/"
+        "https://www.kathimerini.gr/society/564390037/fotia-sto-stefani-korinthias-minyma-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/society/564389986/toxiki-stachti-kai-epifovo-nero-oi-kindynoi-gia-tin-ygeia-meta-ti-fotia/",
+        "https://www.kathimerini.gr/world/564390019/krisi-sti-theoyta-ispaniko-telesigrafo-stin-italia-gia-arsi-ton-elegchon-sta-synora/",
+        "https://www.kathimerini.gr/society/564390001/fotia-sti-thermi-thessalonikis-sikothikan-exi-enaeria/"
       ],
-      "seen_at_utc": "2026-08-07T13:30:03.569576+00:00"
+      "seen_at_utc": "2026-08-07T13:52:26.277917+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1262,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862081/fotia-tora-sto-stefani-korinthias-112-gia-etoimotita/?utm_source=rss",
-      "title": "Φωτιά τώρα στο Στεφάνι Κορινθίας, 112 για ετοιμότητα",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΣΤΕΦΑΝΙ ΚΟΡΙΝΘΙΑΣ, 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1862084/fotia-sto-monopigado-thessalonikis-epiheiroun-6-enaeria/?utm_source=rss",
+      "title": "Φωτιά στο Μονοπήγαδο Θεσσαλονίκης, επιχειρούν 6 εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΜΟΝΟΠΗΓΑΔΟ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΕΠΙΧΕΙΡΟΥΝ 6 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862081/fotia-tora-sto-stefani-korinthias-112-gia-etoimotita/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862079/shedon-23-ekat-euro-gia-ti-foititiki-stegi-sto-panepistimio-thessalias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862084/fotia-sto-monopigado-thessalonikis-epiheiroun-6-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T13:30:03.569673+00:00"
+      "seen_at_utc": "2026-08-07T13:52:26.278055+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444054/halkidiki-i-pyrosvestiki-metefere-traymatia-apo-dysvati-periohi-tin-entopise-meso-gps-meta-apo-klisi/",
-      "title": "Χαλκιδική: Η πυροσβεστική μετέφερε τραυματία από δύσβατη περιοχή – Την εντόπισε μέσω GPS μετά από κλήση",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: Η ΠΥΡΟΣΒΕΣΤΙΚΗ ΜΕΤΕΦΕΡΕ ΤΡΑΥΜΑΤΙΑ ΑΠΟ ΔΥΣΒΑΤΗ ΠΕΡΙΟΧΗ – ΤΗΝ ΕΝΤΟΠΙΣΕ ΜΕΣΩ GPS ΜΕΤΑ ΑΠΟ ΚΛΗΣΗ",
+      "url": "https://www.efsyn.gr/stiles/1444070/vathia-ton-fakelo-mehri-ton-pato/",
+      "title": "Βαθιά τον φάκελο μέχρι τον πάτο",
+      "normalized_title": "ΒΑΘΙΑ ΤΟΝ ΦΑΚΕΛΟ ΜΕΧΡΙ ΤΟΝ ΠΑΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444054/halkidiki-i-pyrosvestiki-metefere-traymatia-apo-dysvati-periohi-tin-entopise-meso-gps-meta-apo-klisi/",
-        "https://www.efsyn.gr/tehnes/1444058/oi-queens-of-the-stone-age-egkainiasan-grammi-paraponon-gia-toys-thaymastes-toys/"
+        "https://www.efsyn.gr/stiles/1444070/vathia-ton-fakelo-mehri-ton-pato/",
+        "https://www.efsyn.gr/ellada/1444062/i-perifereia-kritis-tima-osoys-synevalan-stin-ekkenosi-tis-prevelis-oi-anthropoi-tis-thalassas-poy-eginan-sotires/",
+        "https://www.efsyn.gr/ellada/1444064/pyrkagia-sto-stefani-korinthias-estali-minyma-apo-to-112-gia-etoimotita/",
+        "https://www.efsyn.gr/ellada/1444056/trohaio-stis-serres-sygklonizei-o-pateras-ti-leei-o-odigos-toy-fortigoy-ta-ehasa-ola-den-prolava-to-ih-epese-pano-moy/"
       ],
-      "seen_at_utc": "2026-08-07T13:30:03.569658+00:00"
+      "seen_at_utc": "2026-08-07T13:52:26.278021+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/politics/politiki-grammateia/kesses-gia-ypoklopes-o-k-mpakelas-paredose-ta-diapisteytiria-tou-syntirei-to-thesmiko-trayma/",
-      "title": "Κεσσές για υποκλοπές: Ο κ. Μπακέλας παρέδωσε τα διαπιστευτήριά του, συντηρεί το θεσμικό τραύμα",
-      "normalized_title": "ΚΕΣΣΕΣ ΓΙΑ ΥΠΟΚΛΟΠΕΣ: Ο Κ. ΜΠΑΚΕΛΑΣ ΠΑΡΕΔΩΣΕ ΤΑ ΔΙΑΠΙΣΤΕΥΤΗΡΙΑ ΤΟΥ, ΣΥΝΤΗΡΕΙ ΤΟ ΘΕΣΜΙΚΟ ΤΡΑΥΜΑ",
+      "url": "https://www.in.gr/2026/08/07/sports/football/ntiegko-forlan-epistrefei-stin-ethniki-ourougouais-os-proponitis/",
+      "title": "Ντιέγκο Φορλάν: Επιστρέφει στην εθνική Ουρουγουάης ως προπονητής",
+      "normalized_title": "ΝΤΙΕΓΚΟ ΦΟΡΛΑΝ: ΕΠΙΣΤΡΕΦΕΙ ΣΤΗΝ ΕΘΝΙΚΗ ΟΥΡΟΥΓΟΥΑΗΣ ΩΣ ΠΡΟΠΟΝΗΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/kesses-gia-ypoklopes-o-k-mpakelas-paredose-ta-diapisteytiria-tou-syntirei-to-thesmiko-trayma/",
-        "https://www.in.gr/2026/08/07/sports/mountial-2026/apokalypseis-sok-gia-apeiles-thanatou-sto-mountial-tha-anatinakso-ton-mesi-me-tesseris-vomves/"
+        "https://www.in.gr/2026/08/07/sports/football/ntiegko-forlan-epistrefei-stin-ethniki-ourougouais-os-proponitis/",
+        "https://www.in.gr/2026/08/07/greece/se-ekseliksi-i-fotia-sto-stefani-korinthias-megali-kinitopoiisi-tis-pyrosvestikis/",
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/pasok-gia-ypoklopes-oi-skies-megalonoun-aisthisi-pos-ena-aorato-xeri-mplokarei-ti-dialeykansi-voles-kata-kyvernisis-kai-dikaiosynis/"
       ],
-      "seen_at_utc": "2026-08-07T13:30:03.569625+00:00"
+      "seen_at_utc": "2026-08-07T13:52:26.277988+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T13:30:03.569725+00:00"
+  "updated_at_utc": "2026-08-07T13:52:26.278195+00:00"
 }
