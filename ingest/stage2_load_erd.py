@@ -57,6 +57,7 @@ FUND_CSV = REPO / "data" / "funding" / "municipal_funding.csv"
 ORG_MAP_CSV = REPO / "data" / "mappings" / "org_to_municipality.csv"
 REGION_MAP_CSV = REPO / "data" / "mappings" / "region_to_municipalities.csv"
 EXPANDED_MAP_CSV = REPO / "data" / "mappings" / "final_entity_mapping_expanded.csv"
+PROCUREMENT_AMOUNT_OVERRIDES_CSV = REPO / "data" / "mappings" / "procurement_amount_overrides.csv"
 
 FIRE_KEY_COLUMNS = (
     "municipality_key",
@@ -294,6 +295,40 @@ def read_csvs(limit: int | None = None) -> CsvBundle:
         region_map=read(REGION_MAP_CSV),
         expanded_map=read(EXPANDED_MAP_CSV),
     )
+
+
+def apply_procurement_amount_overrides(raw: pd.DataFrame, overrides: pd.DataFrame) -> pd.DataFrame:
+    """Apply reviewed KIMDIS amount corrections without changing the raw CSV."""
+    corrected = raw.copy()
+    if overrides.empty:
+        return corrected
+
+    required_columns = {"referenceNumber", "totalCostWithoutVAT", "totalCostWithVAT"}
+    missing_columns = required_columns.difference(overrides.columns)
+    if missing_columns:
+        raise ValueError(
+            "Procurement amount overrides are missing columns: "
+            + ", ".join(sorted(missing_columns))
+        )
+
+    references = overrides["referenceNumber"].fillna("").astype(str).str.strip()
+    duplicate_references = references[references.duplicated(keep=False) & references.ne("")].unique()
+    if len(duplicate_references):
+        raise ValueError(
+            "Duplicate procurement amount overrides: " + ", ".join(sorted(duplicate_references))
+        )
+
+    raw_references = corrected["referenceNumber"].fillna("").astype(str).str.strip()
+    for _, override in overrides.iterrows():
+        reference_number = t(override.get("referenceNumber"))
+        if reference_number is None:
+            continue
+        matched = raw_references.eq(reference_number)
+        if not matched.any():
+            continue
+        corrected.loc[matched, "totalCostWithoutVAT"] = t(override.get("totalCostWithoutVAT"))
+        corrected.loc[matched, "totalCostWithVAT"] = t(override.get("totalCostWithVAT"))
+    return corrected
 
 
 def apply_procurement_chain_dedup(raw: pd.DataFrame) -> pd.DataFrame:
@@ -1864,6 +1899,12 @@ def main() -> None:
     municipality_alias_lookup = build_municipality_alias_lookup(muni_seed)
     org_municipality_coverage_lookup = build_org_municipality_coverage_lookup(bundle.expanded_map)
     organization_lookup = build_organization_lookup(org_seed)
+    amount_overrides = pd.read_csv(
+        PROCUREMENT_AMOUNT_OVERRIDES_CSV,
+        dtype=str,
+        keep_default_na=False,
+    )
+    bundle.raw = apply_procurement_amount_overrides(bundle.raw, amount_overrides)
     bundle.raw = apply_procurement_chain_dedup(bundle.raw)
     preliminary_organization_metadata_rows = build_organization_metadata_rows(
         raw=bundle.raw,

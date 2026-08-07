@@ -172,8 +172,12 @@ Ingestion behavior:
    - affected refs are:
      - the new rows' `prevReferenceNo`
      - the new rows' own `referenceNumber` when they have `nextRefNo`
+8. Reviewed source amount errors are corrected in the derived ingest layer from
+   `data/mappings/procurement_amount_overrides.csv`, before contract-chain deduplication.
+   The raw `data/raw_procurements.csv` remains unchanged.
 
 Responsible functions:
+- `apply_procurement_amount_overrides()`
 - `payment_row_from_raw()`
 - `apply_procurement_chain_dedup()`
 - `affected_reference_numbers_for_row()`
