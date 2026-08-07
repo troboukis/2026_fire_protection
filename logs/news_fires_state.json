@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564390091/poly-ypsilos-kindynos-pyrkagias-to-savvato-gia-kriti-chio-samo-ikaria-se-red-code-i-attiki/",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς το Σάββατο για Κρήτη, Χίο, Σάμο, Ικαρία – Σε «Red Code» η Αττική",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΟ ΣΑΒΒΑΤΟ ΓΙΑ ΚΡΗΤΗ, ΧΙΟ, ΣΑΜΟ, ΙΚΑΡΙΑ – ΣΕ «RED CODE» Η ΑΤΤΙΚΗ",
+      "url": "https://www.kathimerini.gr/athletics/564389824/kai-oi-treis-den-mporei-na-einai-cheiroteroi/",
+      "title": "Και οι τρεις δεν μπορεί να είναι χειρότεροι",
+      "normalized_title": "ΚΑΙ ΟΙ ΤΡΕΙΣ ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΧΕΙΡΟΤΕΡΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564390091/poly-ypsilos-kindynos-pyrkagias-to-savvato-gia-kriti-chio-samo-ikaria-se-red-code-i-attiki/",
-        "https://www.kathimerini.gr/world/564390055/romi-politiki-machi-gia-to-mellon-enos-ktirioy-ypo-katalipsi/",
-        "https://www.kathimerini.gr/world/564391342/i-ispania-epivallei-synoriakoys-elegchoys-se-taxidiotes-apo-tin-italia/"
+        "https://www.kathimerini.gr/athletics/564389824/kai-oi-treis-den-mporei-na-einai-cheiroteroi/",
+        "https://www.kathimerini.gr/society/564391384/enosi-eisaggeleon-anakoinosi-gia-dimosieymata-schetika-me-tis-ypoklopes/"
       ],
-      "seen_at_utc": "2026-08-07T20:17:31.505967+00:00"
+      "seen_at_utc": "2026-08-07T20:31:11.784019+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1269,24 @@
       "seen_at_utc": "2026-08-07T20:17:31.506056+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444282/marfin-imoyn-stin-poreia-alla-den-eho-kamia-shesi-me-tin-epithesi-tonizei-i-46hroni/",
-      "title": "Marfin: «Ήμουν στην πορεία, αλλά δεν έχω καμία σχέση με την επίθεση», τονίζει η 46χρονη",
-      "normalized_title": "MARFIN: «ΗΜΟΥΝ ΣΤΗΝ ΠΟΡΕΙΑ, ΑΛΛΑ ΔΕΝ ΕΧΩ ΚΑΜΙΑ ΣΧΕΣΗ ΜΕ ΤΗΝ ΕΠΙΘΕΣΗ», ΤΟΝΙΖΕΙ Η 46ΧΡΟΝΗ",
+      "url": "https://www.efsyn.gr/kosmos/1444285/ipa-anamenetai-syntoma-symfonia-gia-ta-stena-toy-ormoyz-ypostirizei-amerikanos-axiomatoyhos/",
+      "title": "ΗΠΑ: «Αναμένεται σύντομα συμφωνία» για τα Στενά του Ορμούζ, υποστηρίζει Αμερικανός αξιωματούχος",
+      "normalized_title": "ΗΠΑ: «ΑΝΑΜΕΝΕΤΑΙ ΣΥΝΤΟΜΑ ΣΥΜΦΩΝΙΑ» ΓΙΑ ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ, ΥΠΟΣΤΗΡΙΖΕΙ ΑΜΕΡΙΚΑΝΟΣ ΑΞΙΩΜΑΤΟΥΧΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444282/marfin-imoyn-stin-poreia-alla-den-eho-kamia-shesi-me-tin-epithesi-tonizei-i-46hroni/",
-        "https://www.efsyn.gr/kosmos/1444277/iran-kalei-se-enotita-ton-moysoylmaniko-kosmo-meta-ti-symfonia-toyrkias-pakistan-saoydikis-aravias/"
+        "https://www.efsyn.gr/kosmos/1444285/ipa-anamenetai-syntoma-symfonia-gia-ta-stena-toy-ormoyz-ypostirizei-amerikanos-axiomatoyhos/"
       ],
-      "seen_at_utc": "2026-08-07T20:17:31.506034+00:00"
+      "seen_at_utc": "2026-08-07T20:31:11.784114+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/i-douleia-mas-kynigaei-akoma-kai-stis-diakopes-pos-na-aposyndetheite-pragmatika/",
-      "title": "Η δουλειά μάς κυνηγάει ακόμα και στις διακοπές – Πώς να αποσυνδεθείτε πραγματικά",
-      "normalized_title": "Η ΔΟΥΛΕΙΑ ΜΑΣ ΚΥΝΗΓΑΕΙ ΑΚΟΜΑ ΚΑΙ ΣΤΙΣ ΔΙΑΚΟΠΕΣ – ΠΩΣ ΝΑ ΑΠΟΣΥΝΔΕΘΕΙΤΕ ΠΡΑΓΜΑΤΙΚΑ",
+      "url": "https://www.in.gr/2026/08/07/sports/football/olympiakos-i-epistrofi-tou-ese-kai-i-apofasi-gia-ta-xaf/",
+      "title": "Ολυμπιακός: Η επιστροφή του Έσε και η απόφαση για τα χαφ",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: Η ΕΠΙΣΤΡΟΦΗ ΤΟΥ ΕΣΕ ΚΑΙ Η ΑΠΟΦΑΣΗ ΓΙΑ ΤΑ ΧΑΦ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/i-douleia-mas-kynigaei-akoma-kai-stis-diakopes-pos-na-aposyndetheite-pragmatika/",
-        "https://www.in.gr/2026/08/07/go-fun/mprant-pit-enantion-antzelina-tzoli-aneleitos-polemos-xoris-telos-gia-to-chateau-miraval-kakopoiitikos/",
-        "https://www.in.gr/2026/08/07/in-science/ai/i-ekriksi-tis-ai-kai-i-apeili-gia-tous-ydatinous-porous/",
-        "https://www.in.gr/2026/08/07/greece/fotia-stin-ano-glyfada-se-ypaithrio-xoro/"
+        "https://www.in.gr/2026/08/07/sports/football/olympiakos-i-epistrofi-tou-ese-kai-i-apofasi-gia-ta-xaf/",
+        "https://www.in.gr/2026/08/07/world/ipa-anamenoume-syntoma-symfonia-metaksy-iran-kai-oman-gia-to-ormouz-mpesent-tipota-den-tha-einai-opos-palia/"
       ],
-      "seen_at_utc": "2026-08-07T20:17:31.506007+00:00"
+      "seen_at_utc": "2026-08-07T20:31:11.784060+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T20:17:31.506150+00:00"
+  "updated_at_utc": "2026-08-07T20:31:11.784190+00:00"
 }
