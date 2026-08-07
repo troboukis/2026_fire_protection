@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564390628/voreia-korea-mme-synistoyn-soypa-me-kreas-skyloy-gia-ton-kaysona/",
-      "title": "Βόρεια Κορέα: ΜΜΕ συνιστούν σούπα με κρέας σκύλου για τον καύσωνα",
-      "normalized_title": "ΒΟΡΕΙΑ ΚΟΡΕΑ: ΜΜΕ ΣΥΝΙΣΤΟΥΝ ΣΟΥΠΑ ΜΕ ΚΡΕΑΣ ΣΚΥΛΟΥ ΓΙΑ ΤΟΝ ΚΑΥΣΩΝΑ",
+      "url": "https://www.kathimerini.gr/culture/books/564388642/archaiologia-trayma-kai-politiki-ton-mnimeion-sti-mikra-asia/",
+      "title": "Αρχαιολογία, τραύμα και πολιτική των μνημείων στη Μικρά Ασία",
+      "normalized_title": "ΑΡΧΑΙΟΛΟΓΙΑ, ΤΡΑΥΜΑ ΚΑΙ ΠΟΛΙΤΙΚΗ ΤΩΝ ΜΝΗΜΕΙΩΝ ΣΤΗ ΜΙΚΡΑ ΑΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564390628/voreia-korea-mme-synistoyn-soypa-me-kreas-skyloy-gia-ton-kaysona/",
-        "https://www.kathimerini.gr/opinion/interviews/564388507/karl-mpilnt-stin-k-theamatiki-i-apotychia-toy-poytin-stin-oykrania/"
+        "https://www.kathimerini.gr/culture/books/564388642/archaiologia-trayma-kai-politiki-ton-mnimeion-sti-mikra-asia/",
+        "https://www.kathimerini.gr/deltia-typoy/564390577/omilos-dei-nea-symfonia-gia-chartofylakio-ergon-ape-ano-ton-2-gw/",
+        "https://www.kathimerini.gr/economy/564391219/foititiki-stegi-ayxiseis-eos-kai-75-sta-enoikia-apo-to-2017/"
       ],
-      "seen_at_utc": "2026-08-07T18:51:33.481699+00:00"
+      "seen_at_utc": "2026-08-07T19:17:30.421402+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862243/fulakisi-15-minon-sti-vretanida-pou-methuse-me-tin-15hroni-kori-tis-kai-prokalese-epeisodio-sto-kedro-ugeias-skiathou/?utm_source=rss",
-      "title": "Φυλάκιση 15 μηνών στη Βρετανίδα που μέθυσε με την 15χρονη κόρη της και προκάλεσε επεισόδιο στο Κέντρο Υγείας Σκιάθου",
-      "normalized_title": "ΦΥΛΑΚΙΣΗ 15 ΜΗΝΩΝ ΣΤΗ ΒΡΕΤΑΝΙΔΑ ΠΟΥ ΜΕΘΥΣΕ ΜΕ ΤΗΝ 15ΧΡΟΝΗ ΚΟΡΗ ΤΗΣ ΚΑΙ ΠΡΟΚΑΛΕΣΕ ΕΠΕΙΣΟΔΙΟ ΣΤΟ ΚΕΝΤΡΟ ΥΓΕΙΑΣ ΣΚΙΑΘΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1862267/purkagia-se-isogeio-katastima-sto-palaio-faliro-ekkenonetai-proliptika-polukatoikia/?utm_source=rss",
+      "title": "Πυρκαγιά σε ισόγειο κατάστημα στο Παλαιό Φάληρο, εκκενώνεται προληπτικά πολυκατοικία",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΙΣΟΓΕΙΟ ΚΑΤΑΣΤΗΜΑ ΣΤΟ ΠΑΛΑΙΟ ΦΑΛΗΡΟ, ΕΚΚΕΝΩΝΕΤΑΙ ΠΡΟΛΗΠΤΙΚΑ ΠΟΛΥΚΑΤΟΙΚΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862243/fulakisi-15-minon-sti-vretanida-pou-methuse-me-tin-15hroni-kori-tis-kai-prokalese-epeisodio-sto-kedro-ugeias-skiathou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862267/purkagia-se-isogeio-katastima-sto-palaio-faliro-ekkenonetai-proliptika-polukatoikia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862265/anastatosi-sto-nosokomeio-purgou-fidi-emfanistike-sta-epeigoda-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862261/suginisi-sto-porto-germeno-skulos-gurise-sovara-traumatismenos-sto-spiti-pou-ton-frodizan-mia-evdomada-meta-ti-fotia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T18:30:11.802893+00:00"
+      "seen_at_utc": "2026-08-07T19:17:30.421519+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444228/sokaristiko-symvan-stin-kriti-toyristas-edeixe-10hrono-koritsi-kai-rotise-poso-vinteo/",
-      "title": "Σοκαριστικό συμβάν στην Κρήτη: Τουρίστας έδειξε 10χρονο κορίτσι και ρώτησε «πόσο;» [βίντεο]",
-      "normalized_title": "ΣΟΚΑΡΙΣΤΙΚΟ ΣΥΜΒΑΝ ΣΤΗΝ ΚΡΗΤΗ: ΤΟΥΡΙΣΤΑΣ ΕΔΕΙΞΕ 10ΧΡΟΝΟ ΚΟΡΙΤΣΙ ΚΑΙ ΡΩΤΗΣΕ «ΠΟΣΟ;» [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1444252/thessaloniki-sto-nosokomeio-odigos-ih-katiggeile-pos-allo-ohima-katadioxe-kai-emvolise-to-diko-toy/",
+      "title": "Θεσσαλονίκη: Στο νοσοκομείο οδηγός ΙΧ – Κατήγγειλε πως άλλο όχημα καταδίωξε και εμβόλισε το δικό του",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΟΔΗΓΟΣ ΙΧ – ΚΑΤΗΓΓΕΙΛΕ ΠΩΣ ΑΛΛΟ ΟΧΗΜΑ ΚΑΤΑΔΙΩΞΕ ΚΑΙ ΕΜΒΟΛΙΣΕ ΤΟ ΔΙΚΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444228/sokaristiko-symvan-stin-kriti-toyristas-edeixe-10hrono-koritsi-kai-rotise-poso-vinteo/",
-        "https://www.efsyn.gr/politiki/1444226/o-kikilias-leei-go-alexi-kai-stirizei-palio-toy-sympaikti-ston-panionio-tora-ypopsifio-dimarho-toy-sikago-eikones/",
-        "https://www.efsyn.gr/kosmos/1444233/hakers-prokalesan-anastatosi-sti-germania-me-fake-vinteo-poy-proaniggeile-tin-paraitisi-toy-merts/"
+        "https://www.efsyn.gr/ellada/1444252/thessaloniki-sto-nosokomeio-odigos-ih-katiggeile-pos-allo-ohima-katadioxe-kai-emvolise-to-diko-toy/",
+        "https://www.efsyn.gr/ellada/1444254/ishyroi-anemoi-kai-ypsiles-thermokrasies-htypoyn-kampanaki-gia-pyrkagies-to-savvatokyriako/",
+        "https://www.efsyn.gr/kosmos/1444239/asyllipto-grafeio-teleton-stis-ipa-kratoyse-dekades-soroys-se-mi-psyhomeno-horo-oi-arhes-antikrysan-tin-apolyti-friki/",
+        "https://www.efsyn.gr/oikonomia/1444249/ipa-i-geroysia-enekrine-nees-kyroseis-se-varos-tis-rosias/"
       ],
-      "seen_at_utc": "2026-08-07T18:51:33.481773+00:00"
+      "seen_at_utc": "2026-08-07T19:17:30.421495+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/ipa-i-gerousia-enekrine-nees-kyroseis-se-varos-tis-rosias-kai-tou-poutin/",
-      "title": "ΗΠΑ: Η Γερουσία ενέκρινε νέες κυρώσεις σε βάρος της Ρωσίας και του Πούτιν",
-      "normalized_title": "ΗΠΑ: Η ΓΕΡΟΥΣΙΑ ΕΝΕΚΡΙΝΕ ΝΕΕΣ ΚΥΡΩΣΕΙΣ ΣΕ ΒΑΡΟΣ ΤΗΣ ΡΩΣΙΑΣ ΚΑΙ ΤΟΥ ΠΟΥΤΙΝ",
+      "url": "https://www.in.gr/2026/08/07/politics/politiki-grammateia/dolofonia-xaraktiron-kai-politiki-spekoula-sfodra-pyra-kata-karystianou-apo-tous-apoxorisantes-apo-to-komma/",
+      "title": "«Δολοφονία χαρακτήρων και πολιτική σπέκουλα»: Σφοδρά πυρά κατά Καρυστιανού από τους αποχωρήσαντες από το κόμμα",
+      "normalized_title": "«ΔΟΛΟΦΟΝΙΑ ΧΑΡΑΚΤΗΡΩΝ ΚΑΙ ΠΟΛΙΤΙΚΗ ΣΠΕΚΟΥΛΑ»: ΣΦΟΔΡΑ ΠΥΡΑ ΚΑΤΑ ΚΑΡΥΣΤΙΑΝΟΥ ΑΠΟ ΤΟΥΣ ΑΠΟΧΩΡΗΣΑΝΤΕΣ ΑΠΟ ΤΟ ΚΟΜΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/ipa-i-gerousia-enekrine-nees-kyroseis-se-varos-tis-rosias-kai-tou-poutin/",
-        "https://www.in.gr/2026/08/07/world/tailandi-okto-oi-nekroi-tis-enoplis-epithesis-se-sxoleio-sxedio-gia-ton-periorismo-tis-oplokatoxis/"
+        "https://www.in.gr/2026/08/07/politics/politiki-grammateia/dolofonia-xaraktiron-kai-politiki-spekoula-sfodra-pyra-kata-karystianou-apo-tous-apoxorisantes-apo-to-komma/",
+        "https://www.in.gr/2026/08/07/sports/football/paok-perase-tin-porta-tou-xeirourgeiou-o-meite-pic/",
+        "https://www.in.gr/2026/08/07/go-fun/boy-george-se-parakrousi-stoxopoiei-ti-ntoua-lipa-me-fake-news-to-israil-prepei-na-afanistei/"
       ],
-      "seen_at_utc": "2026-08-07T18:51:33.481740+00:00"
+      "seen_at_utc": "2026-08-07T19:17:30.421465+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T18:51:33.481851+00:00"
+  "updated_at_utc": "2026-08-07T19:17:30.421610+00:00"
 }
