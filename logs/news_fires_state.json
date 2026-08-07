@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/books/564388645/apotypose-to-elliniko-gignesthai/",
-      "title": "Αποτύπωσε το ελληνικό γίγνεσθαι",
-      "normalized_title": "ΑΠΟΤΥΠΩΣΕ ΤΟ ΕΛΛΗΝΙΚΟ ΓΙΓΝΕΣΘΑΙ",
+      "url": "https://www.kathimerini.gr/eortologio/564376762/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 8 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 8 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/books/564388645/apotypose-to-elliniko-gignesthai/"
+        "https://www.kathimerini.gr/eortologio/564376762/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
+        "https://www.kathimerini.gr/athletics/564391330/moyntial-1986-dimoprateitai-i-mpala-ton-gkol-toy-marantona-epi-tis-agglias/"
       ],
-      "seen_at_utc": "2026-08-07T20:51:30.629763+00:00"
+      "seen_at_utc": "2026-08-07T21:17:10.902009+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,23 +1269,27 @@
       "seen_at_utc": "2026-08-07T20:51:30.629923+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1444287/marantona-sto-sfyri-i-mpala-poy-skorare-to-heri-toy-theoy-i-timi-tis-isos-xeperasei-ta-10-ekat-dolaria/",
-      "title": "Μαραντόνα: Στο σφυρί η μπάλα που σκόραρε το «χέρι του Θεού» – Η τιμή της ίσως ξεπεράσει τα 10 εκατ. δολάρια",
-      "normalized_title": "ΜΑΡΑΝΤΟΝΑ: ΣΤΟ ΣΦΥΡΙ Η ΜΠΑΛΑ ΠΟΥ ΣΚΟΡΑΡΕ ΤΟ «ΧΕΡΙ ΤΟΥ ΘΕΟΥ» – Η ΤΙΜΗ ΤΗΣ ΙΣΩΣ ΞΕΠΕΡΑΣΕΙ ΤΑ 10 ΕΚΑΤ. ΔΟΛΑΡΙΑ",
+      "url": "https://www.efsyn.gr/kosmos/1444290/klimakonetai-i-kontra-ispanias-italias-i-madriti-epanaferei-toys-synoriakoys-eleghoys/",
+      "title": "Κλιμακώνεται η κόντρα Ισπανίας – Ιταλίας: Η Μαδρίτη επαναφέρει τους συνοριακούς ελέγχους",
+      "normalized_title": "ΚΛΙΜΑΚΩΝΕΤΑΙ Η ΚΟΝΤΡΑ ΙΣΠΑΝΙΑΣ – ΙΤΑΛΙΑΣ: Η ΜΑΔΡΙΤΗ ΕΠΑΝΑΦΕΡΕΙ ΤΟΥΣ ΣΥΝΟΡΙΑΚΟΥΣ ΕΛΕΓΧΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1444287/marantona-sto-sfyri-i-mpala-poy-skorare-to-heri-toy-theoy-i-timi-tis-isos-xeperasei-ta-10-ekat-dolaria/"
+        "https://www.efsyn.gr/kosmos/1444290/klimakonetai-i-kontra-ispanias-italias-i-madriti-epanaferei-toys-synoriakoys-eleghoys/"
       ],
-      "seen_at_utc": "2026-08-07T20:51:30.629882+00:00"
+      "seen_at_utc": "2026-08-07T21:17:10.902101+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/i-ispania-epivallei-synoriakous-elegxous-gia-tous-italous-meta-tin-arnisi-tis-meloni-na-epanaferei-ti-sengken/",
-      "title": "Η Ισπανία επιβάλλει συνοριακούς ελέγχους για τους Ιταλούς, μετά την άρνηση της Μελόνι να επαναφέρει τη Σένγκεν",
-      "normalized_title": "Η ΙΣΠΑΝΙΑ ΕΠΙΒΑΛΛΕΙ ΣΥΝΟΡΙΑΚΟΥΣ ΕΛΕΓΧΟΥΣ ΓΙΑ ΤΟΥΣ ΙΤΑΛΟΥΣ, ΜΕΤΑ ΤΗΝ ΑΡΝΗΣΗ ΤΗΣ ΜΕΛΟΝΙ ΝΑ ΕΠΑΝΑΦΕΡΕΙ ΤΗ ΣΕΝΓΚΕΝ",
+      "url": "https://www.in.gr/2026/08/08/economy/amazon-pos-xtizei-data-center-sta-mouloxta-me-xorigia-se-festival-skordou/",
+      "title": "Amazon: Πώς χτίζει data center στα μουλωχτά… με χορηγία σε φεστιβάλ σκόρδου",
+      "normalized_title": "AMAZON: ΠΩΣ ΧΤΙΖΕΙ DATA CENTER ΣΤΑ ΜΟΥΛΩΧΤΑ… ΜΕ ΧΟΡΗΓΙΑ ΣΕ ΦΕΣΤΙΒΑΛ ΣΚΟΡΔΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/i-ispania-epivallei-synoriakous-elegxous-gia-tous-italous-meta-tin-arnisi-tis-meloni-na-epanaferei-ti-sengken/"
+        "https://www.in.gr/2026/08/08/economy/amazon-pos-xtizei-data-center-sta-mouloxta-me-xorigia-se-festival-skordou/",
+        "https://www.in.gr/2026/08/08/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-savvato-08-08-2026/",
+        "https://www.in.gr/2026/08/08/greece/giorti-simera-8-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/07/sports/football/me-gemato-gipedo-i-premiera-tis-anterlext-sto-protathlima-meta-ti-niki-stin-toumpa/",
+        "https://www.in.gr/2026/08/07/economy/se-istoriko-stayrodromi-i-volkswagen-ti-lene-oi-oikogeneies-pou-tin-elegxoun/"
       ],
-      "seen_at_utc": "2026-08-07T20:51:30.629833+00:00"
+      "seen_at_utc": "2026-08-07T21:17:10.902057+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T20:51:30.630003+00:00"
+  "updated_at_utc": "2026-08-07T21:17:10.902174+00:00"
 }
