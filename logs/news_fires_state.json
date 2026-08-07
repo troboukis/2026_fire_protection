@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564388813/i-ritra-gia-tin-energeia-kai-to-paketo-tis-deth/",
-      "title": "Η ρήτρα για την ενέργεια και το πακέτο της ΔΕΘ",
-      "normalized_title": "Η ΡΗΤΡΑ ΓΙΑ ΤΗΝ ΕΝΕΡΓΕΙΑ ΚΑΙ ΤΟ ΠΑΚΕΤΟ ΤΗΣ ΔΕΘ",
+      "url": "https://www.kathimerini.gr/politics/564388459/entos-kai-ektos-oi-polemoi-ton-ipa-gia-lathos-skopo/",
+      "title": "Εντός και Εκτός: Οι πόλεμοι των ΗΠΑ για λάθος σκοπό",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΟΙ ΠΟΛΕΜΟΙ ΤΩΝ ΗΠΑ ΓΙΑ ΛΑΘΟΣ ΣΚΟΠΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564388813/i-ritra-gia-tin-energeia-kai-to-paketo-tis-deth/",
-        "https://www.kathimerini.gr/world/564388966/seismos-5-8-vathmon-stis-dytikes-filippines/",
-        "https://www.kathimerini.gr/society/564388957/fotia-se-egkataleleimmeno-ktirio-sto-moschato/",
-        "https://www.kathimerini.gr/world/564388954/saoydiki-aravia-toyrkia-kai-pakistan-ypografoyn-amyntiki-symfonia/"
+        "https://www.kathimerini.gr/politics/564388459/entos-kai-ektos-oi-polemoi-ton-ipa-gia-lathos-skopo/",
+        "https://www.kathimerini.gr/society/564388993/voiotia-profylakistikan-o-dimarchos-kai-akomi-dyo-gia-ti-megali-fotia/",
+        "https://www.kathimerini.gr/world/564388510/h-cia-estise-mystiki-omada-drasis-gia-tin-koyva/",
+        "https://www.kathimerini.gr/istoria/564388264/san-simera-7-aygoystoy-1876-gennithike-i-margarita-tsele-gnosti-os-mata-chari/",
+        "https://www.kathimerini.gr/world/564388987/yemeni-58-stratiotikoi-nekroi-se-epitheseis-ton-choythi/"
       ],
-      "seen_at_utc": "2026-08-07T04:30:18.039430+00:00"
+      "seen_at_utc": "2026-08-07T04:51:27.815675+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1263,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1861849/to-neo-shedio-gia-ti-viomihania-oi-metarruthmiseis-oi-ependuseis-kai-oi-nees-proteraiotites/?utm_source=rss",
-      "title": "Το νέο σχέδιο για τη βιομηχανία: Οι μεταρρυθμίσεις, οι επενδύσεις και οι νέες προτεραιότητες",
-      "normalized_title": "ΤΟ ΝΕΟ ΣΧΕΔΙΟ ΓΙΑ ΤΗ ΒΙΟΜΗΧΑΝΙΑ: ΟΙ ΜΕΤΑΡΡΥΘΜΙΣΕΙΣ, ΟΙ ΕΠΕΝΔΥΣΕΙΣ ΚΑΙ ΟΙ ΝΕΕΣ ΠΡΟΤΕΡΑΙΟΤΗΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1861850/oi-teleutaies-imeres-tou-koutaviou-pou-zouse-me-lukous-stin-k-makedonia-i-xafniki-katarreusi-i-apomonosi/?utm_source=rss",
+      "title": "Οι τελευταίες ημέρες του κουταβιού που ζούσε με λύκους στην Κ. Μακεδονία - Γιατί δεν περισυνελέγη",
+      "normalized_title": "ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΗΜΕΡΕΣ ΤΟΥ ΚΟΥΤΑΒΙΟΥ ΠΟΥ ΖΟΥΣΕ ΜΕ ΛΥΚΟΥΣ ΣΤΗΝ Κ. ΜΑΚΕΔΟΝΙΑ - ΓΙΑΤΙ ΔΕΝ ΠΕΡΙΣΥΝΕΛΕΓΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1861849/to-neo-shedio-gia-ti-viomihania-oi-metarruthmiseis-oi-ependuseis-kai-oi-nees-proteraiotites/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1861848/den-to-pisteuoume-lene-oi-amerikanoi-pou-uiothetisan-ton-26hrono-afgano-i-arhiki-ekdohi-gia-to-foniko-stin-kupseli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1861850/oi-teleutaies-imeres-tou-koutaviou-pou-zouse-me-lukous-stin-k-makedonia-i-xafniki-katarreusi-i-apomonosi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T04:30:18.039516+00:00"
+      "seen_at_utc": "2026-08-07T04:51:27.815802+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1443568/stigmes-halarosis-gia-ton-mitsotaki-sta-hania-etheathi-se-gnosto-steki-me-tin-syzygo-toy-eikones/",
-      "title": "Στιγμές χαλάρωσης για τον Μητσοτάκη στα Χανιά: Εθεάθη σε γνωστό στέκι με την σύζυγό του [εικόνες]",
-      "normalized_title": "ΣΤΙΓΜΕΣ ΧΑΛΑΡΩΣΗΣ ΓΙΑ ΤΟΝ ΜΗΤΣΟΤΑΚΗ ΣΤΑ ΧΑΝΙΑ: ΕΘΕΑΘΗ ΣΕ ΓΝΩΣΤΟ ΣΤΕΚΙ ΜΕ ΤΗΝ ΣΥΖΥΓΟ ΤΟΥ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/kosmos/1443576/seismos-58-vathmon-stis-dytikes-filippines/",
+      "title": "Σεισμός 5,8 βαθμών στις δυτικές Φιλιππίνες",
+      "normalized_title": "ΣΕΙΣΜΟΣ 5,8 ΒΑΘΜΩΝ ΣΤΙΣ ΔΥΤΙΚΕΣ ΦΙΛΙΠΠΙΝΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1443568/stigmes-halarosis-gia-ton-mitsotaki-sta-hania-etheathi-se-gnosto-steki-me-tin-syzygo-toy-eikones/",
-        "https://www.efsyn.gr/politiki/1443563/hrysonoyn-to-hapi-%c2%b5e-epikoinoniako-sooy-pos-to-antinero-tha-periorisei-tin-exaplosi-ton-pyrkagion/"
+        "https://www.efsyn.gr/kosmos/1443576/seismos-58-vathmon-stis-dytikes-filippines/",
+        "https://www.efsyn.gr/politiki/1443574/poios-eythynetai/"
       ],
-      "seen_at_utc": "2026-08-07T04:30:18.039493+00:00"
+      "seen_at_utc": "2026-08-07T04:51:27.815762+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/world/tailandi-mathitis-anoikse-pyr-mesa-se-sxoleio-yparxoun-nekroi/",
-      "title": "Μαθητής άνοιξε πυρ σε σχολείο στην Ταϊλάνδη - Υπάρχουν νεκροί",
-      "normalized_title": "ΜΑΘΗΤΗΣ ΑΝΟΙΞΕ ΠΥΡ ΣΕ ΣΧΟΛΕΙΟ ΣΤΗΝ ΤΑΙΛΑΝΔΗ - ΥΠΑΡΧΟΥΝ ΝΕΚΡΟΙ",
+      "url": "https://www.in.gr/2026/08/07/greece/marfin-ston-eisaggelea-simera-i-46xroni-pou-katigoreitai-gia-tin-foniki-epithesi/",
+      "title": "Στον εισαγγελέα σήμερα η 46χρονη που κατηγορείται για την επίθεση στη Marfin",
+      "normalized_title": "ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ ΣΗΜΕΡΑ Η 46ΧΡΟΝΗ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ ΣΤΗ MARFIN",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/world/tailandi-mathitis-anoikse-pyr-mesa-se-sxoleio-yparxoun-nekroi/"
+        "https://www.in.gr/2026/08/07/greece/marfin-ston-eisaggelea-simera-i-46xroni-pou-katigoreitai-gia-tin-foniki-epithesi/",
+        "https://www.in.gr/2026/08/07/go-fun/social/arkas-i-kalimera-tis-paraskeyis-12/",
+        "https://www.in.gr/2026/08/07/plus/vita/klimatistiko-i-anemistiras-to-dilimma-tis-kalokairinis-zestis/"
       ],
-      "seen_at_utc": "2026-08-07T04:30:18.039463+00:00"
+      "seen_at_utc": "2026-08-07T04:51:27.815736+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T04:30:18.039591+00:00"
+  "updated_at_utc": "2026-08-07T04:51:27.815883+00:00"
 }
