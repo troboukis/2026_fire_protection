@@ -1,21 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564389038/ypothesi-marfin-simera-ston-eisaggelea-i-46chroni-poy-ekdothike-apo-ti-vretania/",
-      "title": "Υπόθεση Marfin: Σήμερα στον εισαγγελέα η 46χρονη που εκδόθηκε από τη Βρετανία",
-      "normalized_title": "ΥΠΟΘΕΣΗ MARFIN: ΣΗΜΕΡΑ ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ Η 46ΧΡΟΝΗ ΠΟΥ ΕΚΔΟΘΗΚΕ ΑΠΟ ΤΗ ΒΡΕΤΑΝΙΑ",
+      "url": "https://www.kathimerini.gr/opinion/564388588/kai-poly-kala-kanei/",
+      "title": "Και πολύ καλά κάνει",
+      "normalized_title": "ΚΑΙ ΠΟΛΥ ΚΑΛΑ ΚΑΝΕΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564389038/ypothesi-marfin-simera-ston-eisaggelea-i-46chroni-poy-ekdothike-apo-ti-vretania/",
-        "https://www.kathimerini.gr/world/564389053/prostimo-rekor-567-ekat-dol-sti-meta-gia-vlaves-se-anilikoys-christes/",
-        "https://www.kathimerini.gr/society/564388468/fotia-sti-voiotia-profylakiseis-kai-anastoli-leitoyrgias-toy-aiolikoy-parkoy/",
-        "https://www.kathimerini.gr/society/564389035/aerodromio-makedonia-ptino-trypose-ston-kinitira-aeroskafoys-akyrothike-i-ptisi/",
-        "https://www.kathimerini.gr/k/travel/564383590/i-archontiki-syros-se-9-fotografies/",
-        "https://www.kathimerini.gr/k/gastronomos/564388147/strapatsada-me-kremmydia-piperies-kai-dyosmo/",
-        "https://www.kathimerini.gr/culture/564385360/otan-o-dimitris-xanthakis-synantise-ton-stelio-kazantzidi/",
-        "https://www.kathimerini.gr/world/564389023/i-argentini-charaktirise-tromokratikes-organoseis-symmories-ston-isimerino/",
-        "https://www.kathimerini.gr/politics/564388414/kai-tora-diakopes/"
+        "https://www.kathimerini.gr/opinion/564388588/kai-poly-kala-kanei/",
+        "https://www.kathimerini.gr/opinion/564388585/to-tragoydi-toy-tzitzikioy/",
+        "https://www.kathimerini.gr/opinion/564388600/meres-toy-aygoystoy-me-kompreser/",
+        "https://www.kathimerini.gr/world/564389068/argentini-epeisodia-sto-mpoyenos-aires-anamesa-se-diadilotes-kai-astynomikoys/",
+        "https://www.kathimerini.gr/opinion/564388603/kalokairino-spiti-moyseio-anamniseon/",
+        "https://www.kathimerini.gr/economy/diktis/564388885/energeiako-ergo-me-pollapla-ofeli/"
       ],
-      "seen_at_utc": "2026-08-07T05:17:18.902099+00:00"
+      "seen_at_utc": "2026-08-07T05:30:19.389719+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1288,20 +1285,16 @@
       "seen_at_utc": "2026-08-07T05:17:18.902172+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/07/economy/oikonomikes-eidiseis/emporio-oi-notioafrikanoi-giatreyontai-me-ta-farmaka-mas-kai-mas-stelnoun-argilio/",
-      "title": "Το ελληνικό φάρμακο «ταξιδεύει» στη Νότια Αφρική – Το αργίλιο έρχεται στην Ελλάδα",
-      "normalized_title": "ΤΟ ΕΛΛΗΝΙΚΟ ΦΑΡΜΑΚΟ «ΤΑΞΙΔΕΥΕΙ» ΣΤΗ ΝΟΤΙΑ ΑΦΡΙΚΗ – ΤΟ ΑΡΓΙΛΙΟ ΕΡΧΕΤΑΙ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.in.gr/2026/08/07/greece/mystras-enopion-tou-anakriti-simera-o-55xronos-pou-ekryve-ton-nekro-patera-tou-se-katapsykti/",
+      "title": "Ενώπιον του ανακριτή σήμερα ο 55χρονος που έκρυβε τον νεκρό πατέρα του σε καταψύκτη",
+      "normalized_title": "ΕΝΩΠΙΟΝ ΤΟΥ ΑΝΑΚΡΙΤΗ ΣΗΜΕΡΑ Ο 55ΧΡΟΝΟΣ ΠΟΥ ΕΚΡΥΒΕ ΤΟΝ ΝΕΚΡΟ ΠΑΤΕΡΑ ΤΟΥ ΣΕ ΚΑΤΑΨΥΚΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/07/economy/oikonomikes-eidiseis/emporio-oi-notioafrikanoi-giatreyontai-me-ta-farmaka-mas-kai-mas-stelnoun-argilio/",
-        "https://www.in.gr/2026/08/07/greece/fotia-se-egkataleleimmeno-ktirio-sto-mosxato-katastrafike-olosxeros/",
-        "https://www.in.gr/2026/08/07/life/culture-live/to-oneiro-kalokairinis-nyxtas-kathe-savvato-sto-theatro-mavili/",
-        "https://www.in.gr/2026/08/07/in-science/episthmes/gonidio-ton-neantertal-xarizei-anastima-kai-romi-se-kapoious-tyxerous/",
-        "https://www.in.gr/2026/08/07/editorial/i-xora-den-mporei-na-einai-aixmaloti-tou-dikou-sas-vatheos-kratous-ton-dikon-sas-rousfetion-kai-tou-dikou-sas-palaiokommatismou-k-mitsotaki/",
-        "https://www.in.gr/2026/08/07/world/i-megali-allagi-stis-syskeyasies-ti-allazei-stin-ee-apo-tis-12-aygoustou/",
-        "https://www.in.gr/2026/08/07/economy/oikonomikes-eidiseis/servia-anakamptoun-oi-touristikes-roes-pros-tin-ellada/"
+        "https://www.in.gr/2026/08/07/greece/mystras-enopion-tou-anakriti-simera-o-55xronos-pou-ekryve-ton-nekro-patera-tou-se-katapsykti/",
+        "https://www.in.gr/2026/08/07/sports/basketball/o-parker-ekane-piso-meta-tis-diloseis-tou-gia-kataktisi-tou-nva-europe-pic/",
+        "https://www.in.gr/2026/08/07/economy/katatheseis-i-pragmatikotita-piso-apo-tin-ekriksi-ton-apotamieyseon/"
       ],
-      "seen_at_utc": "2026-08-07T05:17:18.902143+00:00"
+      "seen_at_utc": "2026-08-07T05:30:19.389772+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T05:17:18.902279+00:00"
+  "updated_at_utc": "2026-08-07T05:30:19.389845+00:00"
 }
