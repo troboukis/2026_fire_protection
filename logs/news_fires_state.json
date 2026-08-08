@@ -1,17 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564390910/anasynthetontas-ton-thrylo-toy-mpili-de-kint-logotechnika/",
-      "title": "Ανασυνθέτοντας τον θρύλο του Μπίλι δε Κιντ λογοτεχνικά",
-      "normalized_title": "ΑΝΑΣΥΝΘΕΤΟΝΤΑΣ ΤΟΝ ΘΡΥΛΟ ΤΟΥ ΜΠΙΛΙ ΔΕ ΚΙΝΤ ΛΟΓΟΤΕΧΝΙΚΑ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564390811/ston-mpalo-me-kratisi/",
+      "title": "Στον Μπάλο με κράτηση",
+      "normalized_title": "ΣΤΟΝ ΜΠΑΛΟ ΜΕ ΚΡΑΤΗΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564390910/anasynthetontas-ton-thrylo-toy-mpili-de-kint-logotechnika/",
-        "https://www.kathimerini.gr/society/564392323/agonas-dromoy-gia-tin-apokatastasi-ton-zimion-se-psatha-kai-porto-germeno/",
-        "https://www.kathimerini.gr/society/564381994/paidiki-vivliothiki-metsovoy-ena-zontano-kyttaro-gnosis-kai-politismoy/",
-        "https://www.kathimerini.gr/columns/564377236/pos-gennithikan-oi-almyres-karameles-voytyroy/",
-        "https://www.kathimerini.gr/society/564392302/koryfonetai-i-exodos-toy-aygoystoy-i-kinisi-sta-limania-tis-attikis/"
+        "https://www.kathimerini.gr/society/reportaz/564390811/ston-mpalo-me-kratisi/",
+        "https://www.kathimerini.gr/economy/international/564391144/adynati-i-epikoinonia-ton-christon-me-facebook-kai-instagram/"
       ],
-      "seen_at_utc": "2026-08-08T06:17:15.725555+00:00"
+      "seen_at_utc": "2026-08-08T06:30:09.878430+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,28 +1270,25 @@
       "seen_at_utc": "2026-08-08T06:17:15.725680+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444338/horotaxiko-gia-ton-toyrismo-oi-neoi-kanones-gia-ependyseis-ektos-shedioy-domisi-kai-airbnb/",
-      "title": "Χωροταξικό για τον τουρισμό: Οι νέοι κανόνες για επενδύσεις, εκτός σχεδίου δόμηση και Αirbnb",
-      "normalized_title": "ΧΩΡΟΤΑΞΙΚΟ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΜΟ: ΟΙ ΝΕΟΙ ΚΑΝΟΝΕΣ ΓΙΑ ΕΠΕΝΔΥΣΕΙΣ, ΕΚΤΟΣ ΣΧΕΔΙΟΥ ΔΟΜΗΣΗ ΚΑΙ ΑIRBNB",
+      "url": "https://www.efsyn.gr/kosmos/1444350/mayri-thalassa-i-emporiki-naytilia-stin-proti-grammi-enos-akiryhtoy-polemoy/",
+      "title": "Μαύρη Θάλασσα: Η εμπορική ναυτιλία στην πρώτη γραμμή ενός ακήρυχτου πολέμου",
+      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ: Η ΕΜΠΟΡΙΚΗ ΝΑΥΤΙΛΙΑ ΣΤΗΝ ΠΡΩΤΗ ΓΡΑΜΜΗ ΕΝΟΣ ΑΚΗΡΥΧΤΟΥ ΠΟΛΕΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444338/horotaxiko-gia-ton-toyrismo-oi-neoi-kanones-gia-ependyseis-ektos-shedioy-domisi-kai-airbnb/",
-        "https://www.efsyn.gr/ellada/1444332/koryfonetai-i-exodos-toy-aygoystoy-pano-apo-56-000-epivates-anahoroyn-simera-apo-ta-limania-tis-attikis/"
+        "https://www.efsyn.gr/kosmos/1444350/mayri-thalassa-i-emporiki-naytilia-stin-proti-grammi-enos-akiryhtoy-polemoy/",
+        "https://www.efsyn.gr/politiki/1444344/ayti-i-eylogimeni-hora-talaiporeitai-diahronika/"
       ],
-      "seen_at_utc": "2026-08-08T06:17:15.725653+00:00"
+      "seen_at_utc": "2026-08-08T06:30:09.878530+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/i-kinisi-tou-patera-tou-ntorsei-sta-social-media-kai-o-olympiakos/",
-      "title": "Η κίνηση του πατέρα του Ντόρσεϊ στα social media και ο… Ολυμπιακός",
-      "normalized_title": "Η ΚΙΝΗΣΗ ΤΟΥ ΠΑΤΕΡΑ ΤΟΥ ΝΤΟΡΣΕΙ ΣΤΑ SOCIAL MEDIA ΚΑΙ Ο… ΟΛΥΜΠΙΑΚΟΣ",
+      "url": "https://www.in.gr/2026/08/08/sports/football/o-xatzigiovanis-xarise-elpida-ston-mikro-dimitri-i-sygkinitiki-kinisi-tou-ellina-podosfairisti/",
+      "title": "Ο Χατζηγιοβάνης χάρισε ελπίδα στον μικρό Δημήτρη – Η συγκινητική κίνηση του Έλληνα ποδοσφαιριστή",
+      "normalized_title": "Ο ΧΑΤΖΗΓΙΟΒΑΝΗΣ ΧΑΡΙΣΕ ΕΛΠΙΔΑ ΣΤΟΝ ΜΙΚΡΟ ΔΗΜΗΤΡΗ – Η ΣΥΓΚΙΝΗΤΙΚΗ ΚΙΝΗΣΗ ΤΟΥ ΕΛΛΗΝΑ ΠΟΔΟΣΦΑΙΡΙΣΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/i-kinisi-tou-patera-tou-ntorsei-sta-social-media-kai-o-olympiakos/",
-        "https://www.in.gr/2026/08/08/greece/larisa-stin-entatiki-43xronos-epese-apo-ilektriko-patini/",
-        "https://www.in.gr/2026/08/08/in-science/perivallon-b-science/i-ksirasia-eksaplonetai-se-oli-tin-eyropi-eikones-me-ksera-edafi-kai-potamia-se-istorika-xamila-epipeda/",
-        "https://www.in.gr/2026/08/08/greece/koryfonetai-i-eksodos-tou-dekapentaygoustou-oures-sta-limania-me-ypsiles-plirotites-anaxoroun-ta-ploia/",
-        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/ti-eipe-o-team-tanager-tis-efes-gia-tin-epistrofi-tou-papagianni-sti-drasi/"
+        "https://www.in.gr/2026/08/08/sports/football/o-xatzigiovanis-xarise-elpida-ston-mikro-dimitri-i-sygkinitiki-kinisi-tou-ellina-podosfairisti/",
+        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/xorotaksiko-tourismou-oi-pente-katigories-ston-neo-xarti-to-eidiko-kathestos-gia-ta-nisia/"
       ],
-      "seen_at_utc": "2026-08-08T06:17:15.725622+00:00"
+      "seen_at_utc": "2026-08-08T06:30:09.878486+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T06:17:15.725748+00:00"
+  "updated_at_utc": "2026-08-08T06:30:09.878601+00:00"
 }
