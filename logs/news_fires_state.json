@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564392485/proika-50-ekat-sti-fourlis-a-e-symmetochon/",
-      "title": "«Προίκα» 50 εκατ. στη FOURLIS Α.Ε. ΣΥΜΜΕΤΟΧΩΝ",
-      "normalized_title": "«ΠΡΟΙΚΑ» 50 ΕΚΑΤ. ΣΤΗ FOURLIS Α.Ε. ΣΥΜΜΕΤΟΧΩΝ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564392410/psita-kalamaria-gemista-me-pasta-aromatikon/",
+      "title": "Ψητά καλαμάρια γεμιστά με «πάστα» αρωματικών",
+      "normalized_title": "ΨΗΤΑ ΚΑΛΑΜΑΡΙΑ ΓΕΜΙΣΤΑ ΜΕ «ΠΑΣΤΑ» ΑΡΩΜΑΤΙΚΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564392485/proika-50-ekat-sti-fourlis-a-e-symmetochon/"
+        "https://www.kathimerini.gr/k/gastronomos/564392410/psita-kalamaria-gemista-me-pasta-aromatikon/",
+        "https://www.kathimerini.gr/society/564392500/soros-entopistike-se-spilia-ston-lykavitto/",
+        "https://www.kathimerini.gr/world/564392491/oykrania-o-stratos-eplixe-dyo-rosika-diylistiria-petrelaioy-symfona-me-to-kievo/",
+        "https://www.kathimerini.gr/columns/564389971/paylidis-i-ioannidis-ellinikos-emfylios-gia-ton-throno/"
       ],
-      "seen_at_utc": "2026-08-08T09:29:59.722845+00:00"
+      "seen_at_utc": "2026-08-08T09:51:20.479488+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1262,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862392/8hronos-traumatistike-sto-kefali-meta-apo-voutia-se-paralia-tis-halkidikis/?utm_source=rss",
-      "title": "8χρονος τραυματίστηκε στο κεφάλι μετά από βουτιά σε παραλία της Χαλκιδικής",
-      "normalized_title": "8ΧΡΟΝΟΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΟ ΚΕΦΑΛΙ ΜΕΤΑ ΑΠΟ ΒΟΥΤΙΑ ΣΕ ΠΑΡΑΛΙΑ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1862394/anafores-gia-soro-ston-lukavitto-koda-sto-ekklisaki-ton-agion-isidoron/?utm_source=rss",
+      "title": "Βρέθηκε σορός στον Λυκαβηττό κοντά στο εκκλησάκι των Αγίων Ισιδώρων",
+      "normalized_title": "ΒΡΕΘΗΚΕ ΣΟΡΟΣ ΣΤΟΝ ΛΥΚΑΒΗΤΤΟ ΚΟΝΤΑ ΣΤΟ ΕΚΚΛΗΣΑΚΙ ΤΩΝ ΑΓΙΩΝ ΙΣΙΔΩΡΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862392/8hronos-traumatistike-sto-kefali-meta-apo-voutia-se-paralia-tis-halkidikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862391/sunedriase-i-epitropi-ektimisis-kindunou-logo-ton-upsilon-thermokrasion-kai-tis-enishusis-ton-anemon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862394/anafores-gia-soro-ston-lukavitto-koda-sto-ekklisaki-ton-agion-isidoron/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T09:17:19.027313+00:00"
+      "seen_at_utc": "2026-08-08T09:51:20.479595+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444426/apognosi-sto-porto-germeno-meta-tis-pyrkagies-den-ehei-meinei-tipote-oti-vlepeis-to-eftiaxa-me-ta-heria-moy/",
-      "title": "Απόγνωση στο Πόρτο Γερμενό μετά τις πυρκαγιές – «Δεν έχει μείνει τίποτε, ό,τι βλέπεις το έφτιαξα με τα χέρια μου»",
-      "normalized_title": "ΑΠΟΓΝΩΣΗ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ ΜΕΤΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ – «ΔΕΝ ΕΧΕΙ ΜΕΙΝΕΙ ΤΙΠΟΤΕ, Ο,ΤΙ ΒΛΕΠΕΙΣ ΤΟ ΕΦΤΙΑΞΑ ΜΕ ΤΑ ΧΕΡΙΑ ΜΟΥ»",
+      "url": "https://www.efsyn.gr/ellada/1444434/halkidiki-oktahronos-traymatistike-sto-kefali-meta-apo-voytia-sti-thalassa/",
+      "title": "Χαλκιδική: Οκτάχρονος τραυματίστηκε στο κεφάλι μετά από βουτιά στη θάλασσα",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΟΚΤΑΧΡΟΝΟΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΟ ΚΕΦΑΛΙ ΜΕΤΑ ΑΠΟ ΒΟΥΤΙΑ ΣΤΗ ΘΑΛΑΣΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444426/apognosi-sto-porto-germeno-meta-tis-pyrkagies-den-ehei-meinei-tipote-oti-vlepeis-to-eftiaxa-me-ta-heria-moy/"
+        "https://www.efsyn.gr/ellada/1444434/halkidiki-oktahronos-traymatistike-sto-kefali-meta-apo-voytia-sti-thalassa/"
       ],
-      "seen_at_utc": "2026-08-08T09:29:59.722924+00:00"
+      "seen_at_utc": "2026-08-08T09:51:20.479568+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/apokalypsi-in-ta-stoixeia-tis-elas-gia-to-tragiko-troxaio-stis-serres-ta-4-senaria-pou-eksetazoun/",
-      "title": "Αποκάλυψη in: Τα στοιχεία της ΕΛΑΣ για το τραγικό τροχαίο στις Σέρρες – Τα 4 σενάρια που εξετάζουν",
-      "normalized_title": "ΑΠΟΚΑΛΥΨΗ IN: ΤΑ ΣΤΟΙΧΕΙΑ ΤΗΣ ΕΛΑΣ ΓΙΑ ΤΟ ΤΡΑΓΙΚΟ ΤΡΟΧΑΙΟ ΣΤΙΣ ΣΕΡΡΕΣ – ΤΑ 4 ΣΕΝΑΡΙΑ ΠΟΥ ΕΞΕΤΑΖΟΥΝ",
+      "url": "https://www.in.gr/2026/08/08/greece/thriler-ston-lykavitto-entopistike-soros-se-spilia/",
+      "title": "Θρίλερ στον Λυκαβηττό: Εντοπίστηκε σορός σε σπηλιά",
+      "normalized_title": "ΘΡΙΛΕΡ ΣΤΟΝ ΛΥΚΑΒΗΤΤΟ: ΕΝΤΟΠΙΣΤΗΚΕ ΣΟΡΟΣ ΣΕ ΣΠΗΛΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/apokalypsi-in-ta-stoixeia-tis-elas-gia-to-tragiko-troxaio-stis-serres-ta-4-senaria-pou-eksetazoun/",
-        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/elas-i-kyvernisi-mas-proetoimazei-gia-dramatiki-meiosi-ekpaideytikon-pairnei-kato-apo-ti-vasi-stin-aksiologisi/"
+        "https://www.in.gr/2026/08/08/greece/thriler-ston-lykavitto-entopistike-soros-se-spilia/",
+        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/ypoklopes-nea-pyra-kesse-stin-enosi-eisaggeleon-gia-to-predator/",
+        "https://www.in.gr/2026/08/08/sports/football/ntiegko-marantona-to-xeri-tou-theou-vgainei-sto-sfyri/"
       ],
-      "seen_at_utc": "2026-08-08T09:29:59.722894+00:00"
+      "seen_at_utc": "2026-08-08T09:51:20.479528+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T09:29:59.722995+00:00"
+  "updated_at_utc": "2026-08-08T09:51:20.479686+00:00"
 }
