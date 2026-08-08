@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564390931/i-grafeiokratia-toy-potismatos-stin-ethniki-vivliothiki/",
-      "title": "Η γραφειοκρατία του ποτίσματος στην Εθνική Βιβλιοθήκη",
-      "normalized_title": "Η ΓΡΑΦΕΙΟΚΡΑΤΙΑ ΤΟΥ ΠΟΤΙΣΜΑΤΟΣ ΣΤΗΝ ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ",
+      "url": "https://www.kathimerini.gr/society/564392917/paros-nekro-4chrono-paidi-se-pisina-beach-bar-prosichthisan-oi-goneis-kai-o-idioktitis/",
+      "title": "Πάρος: Νεκρό 4χρονο παιδί σε πισίνα beach bar – Προσήχθησαν οι γονείς και ο ιδιοκτήτης",
+      "normalized_title": "ΠΑΡΟΣ: ΝΕΚΡΟ 4ΧΡΟΝΟ ΠΑΙΔΙ ΣΕ ΠΙΣΙΝΑ BEACH BAR – ΠΡΟΣΗΧΘΗΣΑΝ ΟΙ ΓΟΝΕΙΣ ΚΑΙ Ο ΙΔΙΟΚΤΗΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564390931/i-grafeiokratia-toy-potismatos-stin-ethniki-vivliothiki/",
-        "https://www.kathimerini.gr/world/564392872/voylgaria-exerragi-drone-konta-ston-agogo-fysikoy-aerioy-trans-balkan/"
+        "https://www.kathimerini.gr/society/564392917/paros-nekro-4chrono-paidi-se-pisina-beach-bar-prosichthisan-oi-goneis-kai-o-idioktitis/"
       ],
-      "seen_at_utc": "2026-08-08T16:17:24.672146+00:00"
+      "seen_at_utc": "2026-08-08T16:30:13.439874+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,27 +1270,25 @@
       "seen_at_utc": "2026-08-08T16:17:24.672269+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1444558/iran-i-symfonia-gia-to-ormoyz-einai-pro-ton-pylon-omos-i-teherani-vazei-oroys-stis-ipa-gia-na-anoixei-ta-stena/",
-      "title": "Ιράν: Η συμφωνία για το Ορμούζ είναι προ των πυλών, όμως η Τεχεράνη βάζει όρους στις ΗΠΑ για να ανοίξει τα Στενά",
-      "normalized_title": "ΙΡΑΝ: Η ΣΥΜΦΩΝΙΑ ΓΙΑ ΤΟ ΟΡΜΟΥΖ ΕΙΝΑΙ ΠΡΟ ΤΩΝ ΠΥΛΩΝ, ΟΜΩΣ Η ΤΕΧΕΡΑΝΗ ΒΑΖΕΙ ΟΡΟΥΣ ΣΤΙΣ ΗΠΑ ΓΙΑ ΝΑ ΑΝΟΙΞΕΙ ΤΑ ΣΤΕΝΑ",
+      "url": "https://www.efsyn.gr/politiki/1444562/kke-pligma-sti-logiki-ton-ishyron-symmahion-i-symfonia-toyrkias-pakistan-kai-saoydikis-aravias/",
+      "title": "ΚΚΕ: Πλήγμα στη λογική των «ισχυρών συμμαχιών», η συμφωνία Τουρκίας, Πακιστάν και Σαουδικής Αραβίας",
+      "normalized_title": "ΚΚΕ: ΠΛΗΓΜΑ ΣΤΗ ΛΟΓΙΚΗ ΤΩΝ «ΙΣΧΥΡΩΝ ΣΥΜΜΑΧΙΩΝ», Η ΣΥΜΦΩΝΙΑ ΤΟΥΡΚΙΑΣ, ΠΑΚΙΣΤΑΝ ΚΑΙ ΣΑΟΥΔΙΚΗΣ ΑΡΑΒΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1444558/iran-i-symfonia-gia-to-ormoyz-einai-pro-ton-pylon-omos-i-teherani-vazei-oroys-stis-ipa-gia-na-anoixei-ta-stena/"
+        "https://www.efsyn.gr/politiki/1444562/kke-pligma-sti-logiki-ton-ishyron-symmahion-i-symfonia-toyrkias-pakistan-kai-saoydikis-aravias/"
       ],
-      "seen_at_utc": "2026-08-08T16:17:24.672241+00:00"
+      "seen_at_utc": "2026-08-08T16:30:13.439964+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/fotia-sti-nakso-epixeirei-ena-elikoptero/",
-      "title": "Φωτιά στη Νάξο – Επιχειρεί ένα ελικόπτερο",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΝΑΞΟ – ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.in.gr/2026/08/08/sports/football/aek-i-11ada-gia-to-filiko-me-tin-athens-kallitha-pic/",
+      "title": "ΑΕΚ: Η 11άδα για το φιλικό με την Athens Kallithea (pic)",
+      "normalized_title": "ΑΕΚ: Η 11ΑΔΑ ΓΙΑ ΤΟ ΦΙΛΙΚΟ ΜΕ ΤΗΝ ATHENS KALLITHEA (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/fotia-sti-nakso-epixeirei-ena-elikoptero/",
-        "https://www.in.gr/2026/08/08/greece/pos-tha-kanete-kataggelia-gia-tis-paralies-me-tin-efarmogi-mycoast/",
-        "https://www.in.gr/2026/08/08/life/culture-live/pos-ta-sxolia-gia-to-soma-epireazoun-osous-exoun-diatrofiki-diataraxi/",
-        "https://www.in.gr/2026/08/08/sports/football/to-thryliko-mpomponera-megalonei-kai-ftanei-stis-80-000-theseis-vids/",
-        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/anoixtoi-kodikes-texnitis-noimosynis-vs-kleiston-sto-vathos-i-kina/"
+        "https://www.in.gr/2026/08/08/sports/football/aek-i-11ada-gia-to-filiko-me-tin-athens-kallitha-pic/",
+        "https://www.in.gr/2026/08/08/greece/tragodia-stin-paro-pnigike-4xrono-se-pisina-prosixthisan-idioktitis-kai-goneis/",
+        "https://www.in.gr/2026/08/08/politics/epikairotita/kke-pligma-sti-logiki-ton-isxyron-symmaxion-pou-diafimizei-i-kyvernisi-to-symfona-tourkias-pakistan-kai-s-aravias/"
       ],
-      "seen_at_utc": "2026-08-08T16:17:24.672195+00:00"
+      "seen_at_utc": "2026-08-08T16:30:13.439930+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T16:17:24.672358+00:00"
+  "updated_at_utc": "2026-08-08T16:30:13.440036+00:00"
 }
