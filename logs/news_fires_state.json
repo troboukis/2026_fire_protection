@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564376762/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 8 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 8 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564390814/oi-telikes-rythmiseis-kai-oi-oroi-gia-tin-anaptyxi-toy-toyrismoy/",
+      "title": "Οι τελικές ρυθμίσεις και οι όροι για την ανάπτυξη του τουρισμού",
+      "normalized_title": "ΟΙ ΤΕΛΙΚΕΣ ΡΥΘΜΙΣΕΙΣ ΚΑΙ ΟΙ ΟΡΟΙ ΓΙΑ ΤΗΝ ΑΝΑΠΤΥΞΗ ΤΟΥ ΤΟΥΡΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564376762/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
-        "https://www.kathimerini.gr/athletics/564391330/moyntial-1986-dimoprateitai-i-mpala-ton-gkol-toy-marantona-epi-tis-agglias/"
+        "https://www.kathimerini.gr/visual/infographics/564390814/oi-telikes-rythmiseis-kai-oi-oroi-gia-tin-anaptyxi-toy-toyrismoy/",
+        "https://www.kathimerini.gr/visual/infographics/564391120/ypochorise-kai-ton-ioylio-o-plithorismos/",
+        "https://www.kathimerini.gr/economy/international/564391195/pieseis-gia-ayxisi-ependyseon-stin-prostasia-tis-fysis-apo-e-e/",
+        "https://www.kathimerini.gr/society/astynomiko/564390757/organomeno-egklima-kalasnikof-kai-tsigara/"
       ],
-      "seen_at_utc": "2026-08-07T21:17:10.902009+00:00"
+      "seen_at_utc": "2026-08-08T04:17:33.952506+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,13 +1262,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862295/fotia-sti-siteia-koda-se-parko-me-anemogennitries-pneoun-ishuroi-anemoi-stin-periohi/?utm_source=rss",
-      "title": "Φωτιά στη Σητεία στην περιοχή Αχλάδια, κοντά σε πάρκο με ανεμογεννήτριες, πνέουν ισχυροί άνεμοι στην περιοχή",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΗΤΕΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΧΛΑΔΙΑ, ΚΟΝΤΑ ΣΕ ΠΑΡΚΟ ΜΕ ΑΝΕΜΟΓΕΝΝΗΤΡΙΕΣ, ΠΝΕΟΥΝ ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΣΤΗΝ ΠΕΡΙΟΧΗ",
+      "url": "https://www.protothema.gr/greece/article/1862319/polu-upsilos-kindunos-purkagias-simera-se-kriti-kai-voreio-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς σήμερα σε Κρήτη και Βόρειο Αιγαίο, ποιες περιοχές είναι στο «πορτοκαλί»",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΕ ΚΡΗΤΗ ΚΑΙ ΒΟΡΕΙΟ ΑΙΓΑΙΟ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΤΟ «ΠΟΡΤΟΚΑΛΙ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862295/fotia-sti-siteia-koda-se-parko-me-anemogennitries-pneoun-ishuroi-anemoi-stin-periohi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862319/polu-upsilos-kindunos-purkagias-simera-se-kriti-kai-voreio-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-07T20:51:30.629923+00:00"
+      "seen_at_utc": "2026-08-08T04:17:33.952612+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/kosmos/1444290/klimakonetai-i-kontra-ispanias-italias-i-madriti-epanaferei-toys-synoriakoys-eleghoys/",
@@ -1278,15 +1280,37 @@
       "seen_at_utc": "2026-08-07T21:17:10.902101+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/world/syntrivi-pyrosvestikou-elikopterou-sti-giouta-se-epixeirisi-katasvesis-pyrkagias/",
-      "title": "Συντριβή πυροσβεστικού ελικοπτέρου στη Γιούτα – Σε επιχείρηση κατάσβεσης πυρκαγιάς",
-      "normalized_title": "ΣΥΝΤΡΙΒΗ ΠΥΡΟΣΒΕΣΤΙΚΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΓΙΟΥΤΑ – ΣΕ ΕΠΙΧΕΙΡΗΣΗ ΚΑΤΑΣΒΕΣΗΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.in.gr/2026/08/08/life/culture-live/otan-o-ouranos-skoteiniaze-i-romi-evlepe-to-mellon-h-ekleipsi-iliou-os-oionos-ton-theon/",
+      "title": "Όταν ο ουρανός σκοτείνιαζε, η Ρώμη έβλεπε το μέλλον: H έκλειψη Ηλίου ως οιωνός των θεών",
+      "normalized_title": "ΟΤΑΝ Ο ΟΥΡΑΝΟΣ ΣΚΟΤΕΙΝΙΑΖΕ, Η ΡΩΜΗ ΕΒΛΕΠΕ ΤΟ ΜΕΛΛΟΝ: H ΕΚΛΕΙΨΗ ΗΛΙΟΥ ΩΣ ΟΙΩΝΟΣ ΤΩΝ ΘΕΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/world/syntrivi-pyrosvestikou-elikopterou-sti-giouta-se-epixeirisi-katasvesis-pyrkagias/",
-        "https://www.in.gr/2026/08/08/world/omospondiako-efeteio-mplokarei-tin-kataskeyi-aithousas-xorou-ston-leyko-oiko-prosfeygei-kata-tis-apofasis-o-tramp/"
+        "https://www.in.gr/2026/08/08/life/culture-live/otan-o-ouranos-skoteiniaze-i-romi-evlepe-to-mellon-h-ekleipsi-iliou-os-oionos-ton-theon/",
+        "https://www.in.gr/2026/08/08/plus/vita/pes-mou-ti-exeis-anagki-na-sou-po-ti-diakopes-tha-kaneis/",
+        "https://www.in.gr/2026/08/08/life/culture-live/gouilem-ntafoe-an-afetho-sta-xeria-enos-skinotheti-den-thelo-aplos-na-kanei-ti-douleia-tou/",
+        "https://www.in.gr/2026/08/08/politics/epikairotita/tourkia-gia-axilleio-pterna-kai-oxi-aspida-tou-axillea-kanei-logo-o-independent-turkce/",
+        "https://www.in.gr/2026/08/08/world/kolomvia-oi-ipa-prosferoun-1-dis-dolaria-sti-nea-kyvernisi-tou-akrodeksiou-espriegia/",
+        "https://www.in.gr/2026/08/08/economy/diataktikes-sitisis-enisxysi-tis-agorastikis-dynamis-i-kouponia-anti-misthou/",
+        "https://www.in.gr/2026/08/08/life/diakopes/nai-sto-yolo-oxi-sto-fomo-oi-taseis-pou-epireazoun-tis-epiloges-ton-taksidioton/",
+        "https://www.in.gr/2026/08/08/greece/foties-giati-kaike-i-dytiki-attiki-kai-oxi-i-anatoliki/",
+        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/ypoklopes-dyo-xronia-meta-to-porisma-zisi-to-thapsimo-tou-skandalou-synexizetai/",
+        "https://www.in.gr/2026/08/08/world/diplomatia-vs-polemos-apostratos-vgazei-xarti-kai-molyvi-kai-leei-ti-kostizei-perissotero/",
+        "https://www.in.gr/2026/08/08/greece/o-kaysonas-plittei-tin-tsepi-mas-kai-oxi-mono/",
+        "https://www.in.gr/2026/08/08/in-science/technology/i-nea-epoxi-stin-anthropini-istoria-einai-idi-edo-kai-tin-orizei-i-texniti-noimosyni/",
+        "https://www.in.gr/2026/08/08/health/e%c2%b5volio-neas-genias-i-gripi-perna-stin-epoxi-tou-mrna/",
+        "https://www.in.gr/2026/08/08/world/stop-sto-ksepoulima/",
+        "https://www.in.gr/2026/08/08/world/fnintek-sempta-meligia-to-metanasteytiko-xaos-feretai-na-xeiragogithike-apo-algerina-psifiaka-diktya/",
+        "https://www.in.gr/2026/08/08/in-science/perivallon-b-science/vrazilia-se-xamilo-dekaetias-ypoxorise-i-apopsilosi-tou-tropikou-dasous-tou-amazoniou/",
+        "https://www.in.gr/2026/08/08/world/oukrania-i-ee-xairetizei-tin-egkrisi-ton-kyroseon-se-varos-tis-rosias-apo-ti-gerousia-ton-ipa/",
+        "https://www.in.gr/2026/08/08/world/tourkia-den-antivainei-stis-desmeyseis-pros-to-nato-i-symfonia-me-pakistan-kai-saoudiki-aravia/",
+        "https://www.in.gr/2026/08/08/world/oukrania-dexetai-maziki-epithesi-gia-alli-mia-nyxta-apo-ti-rosia-toulaxiston-3-nekroi-paidi-anamesa-tous/",
+        "https://www.in.gr/2026/08/08/world/rosia-viastika-stimeni-provokatsia-to-peristatiko-me-to-drone-se-aerodromio-tis-germanias/",
+        "https://www.in.gr/2026/08/08/plus/medianews/sta-nea-savvatokyriako-ypoklopes-apofasi-proklisi/",
+        "https://www.in.gr/2026/08/08/world/kolomvia-o-ampelardo-nte-la-espriegia-orkistike-proedros-o-apoxairetismos-tou-petro/",
+        "https://www.in.gr/2026/08/08/greece/pyrkagia-se-agrotodasiki-ektasi-sto-velestino-volou/",
+        "https://www.in.gr/2026/08/08/greece/ypo-meriko-elegxo-tethike-i-pyrkagia-sto-velestino-volou/"
       ],
-      "seen_at_utc": "2026-08-07T22:51:15.237310+00:00"
+      "seen_at_utc": "2026-08-08T04:17:33.952571+00:00"
     }
   },
-  "updated_at_utc": "2026-08-07T22:51:15.237400+00:00"
+  "updated_at_utc": "2026-08-08T04:17:33.952703+00:00"
 }
