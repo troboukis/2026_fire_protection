@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/parties/564390736/ypogeies-diergasies-sto-pasok-logo-tis-tritis-thesis/",
-      "title": "Υπόγειες διεργασίες στο ΠΑΣΟΚ λόγω της τρίτης θέσης",
-      "normalized_title": "ΥΠΟΓΕΙΕΣ ΔΙΕΡΓΑΣΙΕΣ ΣΤΟ ΠΑΣΟΚ ΛΟΓΩ ΤΗΣ ΤΡΙΤΗΣ ΘΕΣΗΣ",
+      "url": "https://www.kathimerini.gr/istoria/564390886/90-chronia-prin-8-8-1936/",
+      "title": "90 Χρόνια πριν… 8-8-1936",
+      "normalized_title": "90 ΧΡΟΝΙΑ ΠΡΙΝ… 8-8-1936",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/parties/564390736/ypogeies-diergasies-sto-pasok-logo-tis-tritis-thesis/"
+        "https://www.kathimerini.gr/istoria/564390886/90-chronia-prin-8-8-1936/"
       ],
-      "seen_at_utc": "2026-08-08T06:51:22.100666+00:00"
+      "seen_at_utc": "2026-08-08T07:17:01.441994+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1259,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862357/diakopes-kai-me-neo-kolpo-oi-kleftes-autokiniton-ti-kanoun/?utm_source=rss",
-      "title": "Διακοπές και με νέο κόλπο οι κλέφτες αυτοκινήτων - Τι κάνουν;",
-      "normalized_title": "ΔΙΑΚΟΠΕΣ ΚΑΙ ΜΕ ΝΕΟ ΚΟΛΠΟ ΟΙ ΚΛΕΦΤΕΣ ΑΥΤΟΚΙΝΗΤΩΝ - ΤΙ ΚΑΝΟΥΝ;",
+      "url": "https://www.protothema.gr/greece/article/1862362/larisa-mahi-sti-meth-gia-ton-43hrono-pou-epese-apo-ilektriko-patini-mikra-simadia-veltiosis/?utm_source=rss",
+      "title": "Λάρισα: Μάχη στη ΜΕΘ για τον 43χρονο που έπεσε από ηλεκτρικό πατίνι, μικρά σημάδια βελτίωσης",
+      "normalized_title": "ΛΑΡΙΣΑ: ΜΑΧΗ ΣΤΗ ΜΕΘ ΓΙΑ ΤΟΝ 43ΧΡΟΝΟ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΗΛΕΚΤΡΙΚΟ ΠΑΤΙΝΙ, ΜΙΚΡΑ ΣΗΜΑΔΙΑ ΒΕΛΤΙΩΣΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862357/diakopes-kai-me-neo-kolpo-oi-kleftes-autokiniton-ti-kanoun/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862362/larisa-mahi-sti-meth-gia-ton-43hrono-pou-epese-apo-ilektriko-patini-mikra-simadia-veltiosis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T06:51:22.100815+00:00"
+      "seen_at_utc": "2026-08-08T07:17:01.442077+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444353/marfin-stis-fotografies-den-einai-i-46hroni-eihe-exetastei-kai-to-2022-leei-o-dikigoros-tis/",
-      "title": "Marfin: «Στις φωτογραφίες δεν είναι η 46χρονη, είχε εξεταστεί και το 2022» λέει ο δικηγόρος της",
-      "normalized_title": "MARFIN: «ΣΤΙΣ ΦΩΤΟΓΡΑΦΙΕΣ ΔΕΝ ΕΙΝΑΙ Η 46ΧΡΟΝΗ, ΕΙΧΕ ΕΞΕΤΑΣΤΕΙ ΚΑΙ ΤΟ 2022» ΛΕΕΙ Ο ΔΙΚΗΓΟΡΟΣ ΤΗΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1444370/toyrismos-gia-oloys-poia-afm-mporoyn-na-ypovalloyn-simera-aitiseis/",
+      "title": "Τουρισμός για όλους: Ποια ΑΦΜ μπορούν να υποβάλλουν σήμερα αιτήσεις",
+      "normalized_title": "ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ: ΠΟΙΑ ΑΦΜ ΜΠΟΡΟΥΝ ΝΑ ΥΠΟΒΑΛΛΟΥΝ ΣΗΜΕΡΑ ΑΙΤΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444353/marfin-stis-fotografies-den-einai-i-46hroni-eihe-exetastei-kai-to-2022-leei-o-dikigoros-tis/"
+        "https://www.efsyn.gr/oikonomia/1444370/toyrismos-gia-oloys-poia-afm-mporoyn-na-ypovalloyn-simera-aitiseis/",
+        "https://www.efsyn.gr/gallery/paylos-sidiropoylos-o-mythos-toy-prigkipa-tis-ellinikis-rok/",
+        "https://www.efsyn.gr/gallery/makrainontas-ta-genia-toy-odyssea/",
+        "https://www.efsyn.gr/nisides/1443989/i-politistiki-atzenta-tis-evdomadas-09-08-15-08-26/",
+        "https://www.efsyn.gr/nisides/1444361/to-kykladitiko-nisi-me-ta-grafika-horia-poy-syndyazei-aythentikotita-fysi-kai-politismo/"
       ],
-      "seen_at_utc": "2026-08-08T06:51:22.100784+00:00"
+      "seen_at_utc": "2026-08-08T07:17:01.442055+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/marfin-den-exei-taytopoiithei-i-46xroni-i-idia-eksetasi-egine-kai-to-2022-ti-leei-o-dikigoros-tis/",
-      "title": "Marfin: Δεν υπάρχει ταυτοποίηση της 46χρονης - Η ίδια εξέταση είχε γίνει και το 2022 - Τι λέει ο δικηγόρος της",
-      "normalized_title": "MARFIN: ΔΕΝ ΥΠΑΡΧΕΙ ΤΑΥΤΟΠΟΙΗΣΗ ΤΗΣ 46ΧΡΟΝΗΣ - Η ΙΔΙΑ ΕΞΕΤΑΣΗ ΕΙΧΕ ΓΙΝΕΙ ΚΑΙ ΤΟ 2022 - ΤΙ ΛΕΕΙ Ο ΔΙΚΗΓΟΡΟΣ ΤΗΣ",
+      "url": "https://www.in.gr/2026/08/08/sports/football/i-aek-den-ksexna-ton-mixali-katsouri-panta-pantou-paron-pics/",
+      "title": "Η ΑΕΚ δεν ξεχνά τον Μιχάλη Κατσούρη: «Πάντα, Παντού, Παρών» (pics)",
+      "normalized_title": "Η ΑΕΚ ΔΕΝ ΞΕΧΝΑ ΤΟΝ ΜΙΧΑΛΗ ΚΑΤΣΟΥΡΗ: «ΠΑΝΤΑ, ΠΑΝΤΟΥ, ΠΑΡΩΝ» (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/marfin-den-exei-taytopoiithei-i-46xroni-i-idia-eksetasi-egine-kai-to-2022-ti-leei-o-dikigoros-tis/",
-        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/epidoma-150-eyro-poioi-tha-plirothoun-teli-aygoustou/",
-        "https://www.in.gr/2026/08/08/life/music/queens-of-the-stone-age-giati-dimiourgisan-tilefoniki-grammi-paraponon-gia-tous-thaymastes-tous/"
+        "https://www.in.gr/2026/08/08/sports/football/i-aek-den-ksexna-ton-mixali-katsouri-panta-pantou-paron-pics/",
+        "https://www.in.gr/2026/08/08/health/ios-tou-dytikou-neilou-anisyxia-apo-ta-ayksimena-krousmata-ta-symptomata-pou-xtypoun-kampanaki/",
+        "https://www.in.gr/2026/08/08/pet-stories/pagkosmia-imera-gatas-ti-tha-mas-elege-ean-mporouse-na-milisei/",
+        "https://www.in.gr/2026/08/08/world/aleksantria-okasio-kortez-mia-sosialistria-gia-to-proedriko-xrisma-ton-dimokratikon-stis-ipa/",
+        "https://www.in.gr/2026/08/08/go-fun/style/madame-gres-h-istoria-tis-ainigmatikis-sfiggas-tis-modas-i-kompsotita-den-einai-pote-vareti/",
+        "https://www.in.gr/2026/08/08/sports/football/i-liverpoul-oloklironei-to-mpam-me-ton-araouxo/"
       ],
-      "seen_at_utc": "2026-08-08T06:51:22.100733+00:00"
+      "seen_at_utc": "2026-08-08T07:17:01.442032+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T06:51:22.100922+00:00"
+  "updated_at_utc": "2026-08-08T07:17:01.442142+00:00"
 }
