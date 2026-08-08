@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564392716/argentini-mono-o-mesi-tha-apofasisei-pote-tha-aposyrthei/",
-      "title": "Αργεντινή: «Μόνο ο Μέσι θα αποφασίσει πότε θα αποσυρθεί»",
-      "normalized_title": "ΑΡΓΕΝΤΙΝΗ: «ΜΟΝΟ Ο ΜΕΣΙ ΘΑ ΑΠΟΦΑΣΙΣΕΙ ΠΟΤΕ ΘΑ ΑΠΟΣΥΡΘΕΙ»",
+      "url": "https://www.kathimerini.gr/world/564392986/gaza-i-chamas-dilonei-etoimi-gia-ti-v-fasi-toy-amerikanikoy-schedioy/",
+      "title": "Γάζα: Η Χαμάς δηλώνει έτοιμη για τη β’ φάση του αμερικανικού σχεδίου",
+      "normalized_title": "ΓΑΖΑ: Η ΧΑΜΑΣ ΔΗΛΩΝΕΙ ΕΤΟΙΜΗ ΓΙΑ ΤΗ Β’ ΦΑΣΗ ΤΟΥ ΑΜΕΡΙΚΑΝΙΚΟΥ ΣΧΕΔΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564392716/argentini-mono-o-mesi-tha-apofasisei-pote-tha-aposyrthei/",
-        "https://www.kathimerini.gr/society/564393019/apo-vrachykykloma-se-fotovoltaiko-parko-i-fotia-stin-korinthia/",
-        "https://www.kathimerini.gr/k/k-magazine/564388081/ena-tsipaki-sozei/",
-        "https://www.kathimerini.gr/politics/564393010/komma-karystianoy-nea-apochorisi-me-aichmes-paraitithike-o-nikos-mproytzakis/"
+        "https://www.kathimerini.gr/world/564392986/gaza-i-chamas-dilonei-etoimi-gia-ti-v-fasi-toy-amerikanikoy-schedioy/"
       ],
-      "seen_at_utc": "2026-08-08T18:17:51.463792+00:00"
+      "seen_at_utc": "2026-08-08T18:51:15.971305+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,23 +1268,29 @@
       "seen_at_utc": "2026-08-08T18:30:23.194443+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444581/elas-ta-krisima-erotimata-meta-tis-pyrkagies-sti-dytiki-attiki-poy-akrivos-eginan-ta-erga-toy-antinero/",
-      "title": "ΕΛΑΣ: Τα «κρίσιμα ερωτήματα» μετά τις πυρκαγιές στη Δυτική Αττική – «Πού ακριβώς έγιναν τα έργα του AntiNero;»",
-      "normalized_title": "ΕΛΑΣ: ΤΑ «ΚΡΙΣΙΜΑ ΕΡΩΤΗΜΑΤΑ» ΜΕΤΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ – «ΠΟΥ ΑΚΡΙΒΩΣ ΕΓΙΝΑΝ ΤΑ ΕΡΓΑ ΤΟΥ ANTINERO;»",
+      "url": "https://www.efsyn.gr/stiles/1444453/rotzer-fenterer-epiheirimatias-toy-talentoy-toy/",
+      "title": "Ρότζερ Φέντερερ: Επιχειρηματίας του ταλέντου του",
+      "normalized_title": "ΡΟΤΖΕΡ ΦΕΝΤΕΡΕΡ: ΕΠΙΧΕΙΡΗΜΑΤΙΑΣ ΤΟΥ ΤΑΛΕΝΤΟΥ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444581/elas-ta-krisima-erotimata-meta-tis-pyrkagies-sti-dytiki-attiki-poy-akrivos-eginan-ta-erga-toy-antinero/"
+        "https://www.efsyn.gr/stiles/1444453/rotzer-fenterer-epiheirimatias-toy-talentoy-toy/",
+        "https://www.efsyn.gr/stiles/1444371/tasos-halkias-mprosta-stis-stahtes-toy-ellinikoy-oneiroy/",
+        "https://www.efsyn.gr/politiki/1444585/tsipras-pos-tha-polemisoyme-tin-akriveia-stis-2-septemvrioy-i-paroysiasi-toy-oikonomikoy-programmatos-tis-elas/"
       ],
-      "seen_at_utc": "2026-08-08T18:17:51.463888+00:00"
+      "seen_at_utc": "2026-08-08T18:51:15.971373+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/world/kanadas-se-katastasi-ektaktis-anagkis-i-vretaniki-kolomvia-diarkeis-entoles-ekkenosis-logo-pyrkagion/",
-      "title": "Καναδάς: Σε κατάσταση έκτακτης ανάγκης η Βρετανική Κολομβία – Διαρκείς εντολές εκκένωσης λόγω πυρκαγιών",
-      "normalized_title": "ΚΑΝΑΔΑΣ: ΣΕ ΚΑΤΑΣΤΑΣΗ ΕΚΤΑΚΤΗΣ ΑΝΑΓΚΗΣ Η ΒΡΕΤΑΝΙΚΗ ΚΟΛΟΜΒΙΑ – ΔΙΑΡΚΕΙΣ ΕΝΤΟΛΕΣ ΕΚΚΕΝΩΣΗΣ ΛΟΓΩ ΠΥΡΚΑΓΙΩΝ",
+      "url": "https://www.in.gr/2026/08/08/world/i-marokini-matia-stin-krisi-tis-theouta-den-apodeiknyetai-oti-to-rampat-organose-tis-mazikes-dieleyseis/",
+      "title": "Η Μαροκινή ματιά στην κρίση της Θέουτα: «Δεν αποδεικνύεται ότι το Ραμπάτ οργάνωσε τις μαζικές διελεύσεις»",
+      "normalized_title": "Η ΜΑΡΟΚΙΝΗ ΜΑΤΙΑ ΣΤΗΝ ΚΡΙΣΗ ΤΗΣ ΘΕΟΥΤΑ: «ΔΕΝ ΑΠΟΔΕΙΚΝΥΕΤΑΙ ΟΤΙ ΤΟ ΡΑΜΠΑΤ ΟΡΓΑΝΩΣΕ ΤΙΣ ΜΑΖΙΚΕΣ ΔΙΕΛΕΥΣΕΙΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/world/kanadas-se-katastasi-ektaktis-anagkis-i-vretaniki-kolomvia-diarkeis-entoles-ekkenosis-logo-pyrkagion/"
+        "https://www.in.gr/2026/08/08/world/i-marokini-matia-stin-krisi-tis-theouta-den-apodeiknyetai-oti-to-rampat-organose-tis-mazikes-dieleyseis/",
+        "https://www.in.gr/2026/08/08/world/oi-oroi-tis-texeranis-gia-na-anoiksoun-ta-stena-tou-ormouz-oi-ipa-prepei-na-allaksoun-symperifora/",
+        "https://www.in.gr/2026/08/08/world/tinder-gia-dotes-spermatos-i-nea-diadiktyaki-platforma-syndesis-doton-kai-goneon/",
+        "https://www.in.gr/2026/08/08/sports/football/o-salax-gemizei-ta-tameia-tis-trampzonspor-esoda-12-ekat-se-treis-meres-gia-tous-tourkous/",
+        "https://www.in.gr/2026/08/08/greece/rodos-odigos-trakare-stathmeymeno-aytokinito-paresyre-72xrono-kai-diefyge-vinteo-ntokoumento/"
       ],
-      "seen_at_utc": "2026-08-08T18:30:23.194383+00:00"
+      "seen_at_utc": "2026-08-08T18:51:15.971348+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T18:30:23.194522+00:00"
+  "updated_at_utc": "2026-08-08T18:51:15.971443+00:00"
 }
