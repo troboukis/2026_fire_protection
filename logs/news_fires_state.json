@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564391090/i-xirasia-apeilei-mia-zotiki-oikonomiki-artiria-stin-kardia-tis-eyropis/",
-      "title": "Η ξηρασία απειλεί μια ζωτική οικονομική αρτηρία στην καρδιά της Ευρώπης",
-      "normalized_title": "Η ΞΗΡΑΣΙΑ ΑΠΕΙΛΕΙ ΜΙΑ ΖΩΤΙΚΗ ΟΙΚΟΝΟΜΙΚΗ ΑΡΤΗΡΙΑ ΣΤΗΝ ΚΑΡΔΙΑ ΤΗΣ ΕΥΡΩΠΗΣ",
+      "url": "https://www.kathimerini.gr/economy/business/564392485/proika-50-ekat-sti-fourlis-a-e-symmetochon/",
+      "title": "«Προίκα» 50 εκατ. στη FOURLIS Α.Ε. ΣΥΜΜΕΤΟΧΩΝ",
+      "normalized_title": "«ΠΡΟΙΚΑ» 50 ΕΚΑΤ. ΣΤΗ FOURLIS Α.Ε. ΣΥΜΜΕΤΟΧΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564391090/i-xirasia-apeilei-mia-zotiki-oikonomiki-artiria-stin-kardia-tis-eyropis/",
-        "https://www.kathimerini.gr/world/564392464/i-rosia-dilonei-oti-eplixe-fortigo-ploio-me-opla-gia-tin-oykrania/",
-        "https://www.kathimerini.gr/society/564392458/chalkidiki-oktachronos-traymatistike-sto-kefali-meta-apo-voytia-sti-thalassa/"
+        "https://www.kathimerini.gr/economy/business/564392485/proika-50-ekat-sti-fourlis-a-e-symmetochon/"
       ],
-      "seen_at_utc": "2026-08-08T09:17:19.027146+00:00"
+      "seen_at_utc": "2026-08-08T09:29:59.722845+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,29 +1269,24 @@
       "seen_at_utc": "2026-08-08T09:17:19.027313+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444419/aihmes-tsoykala-meta-ti-symfonia-tis-mekkas-hreiazetai-alli-exoteriki-politiki-me-stratigiko-vathos/",
-      "title": "Αιχμές Τσουκαλά μετά τη συμφωνία της Μέκκας: Χρειάζεται άλλη εξωτερική πολιτική με στρατηγικό βάθος",
-      "normalized_title": "ΑΙΧΜΕΣ ΤΣΟΥΚΑΛΑ ΜΕΤΑ ΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ: ΧΡΕΙΑΖΕΤΑΙ ΑΛΛΗ ΕΞΩΤΕΡΙΚΗ ΠΟΛΙΤΙΚΗ ΜΕ ΣΤΡΑΤΗΓΙΚΟ ΒΑΘΟΣ",
+      "url": "https://www.efsyn.gr/ellada/1444426/apognosi-sto-porto-germeno-meta-tis-pyrkagies-den-ehei-meinei-tipote-oti-vlepeis-to-eftiaxa-me-ta-heria-moy/",
+      "title": "Απόγνωση στο Πόρτο Γερμενό μετά τις πυρκαγιές – «Δεν έχει μείνει τίποτε, ό,τι βλέπεις το έφτιαξα με τα χέρια μου»",
+      "normalized_title": "ΑΠΟΓΝΩΣΗ ΣΤΟ ΠΟΡΤΟ ΓΕΡΜΕΝΟ ΜΕΤΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ – «ΔΕΝ ΕΧΕΙ ΜΕΙΝΕΙ ΤΙΠΟΤΕ, Ο,ΤΙ ΒΛΕΠΕΙΣ ΤΟ ΕΦΤΙΑΞΑ ΜΕ ΤΑ ΧΕΡΙΑ ΜΟΥ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444419/aihmes-tsoykala-meta-ti-symfonia-tis-mekkas-hreiazetai-alli-exoteriki-politiki-me-stratigiko-vathos/",
-        "https://www.efsyn.gr/politiki/1444413/elas-kata-kyvernisis-gia-ta-kena-sta-sholeia-mipos-mas-proetoimazoyn-gia-dramatiki-meiosi-ton-proslipseon/"
+        "https://www.efsyn.gr/ellada/1444426/apognosi-sto-porto-germeno-meta-tis-pyrkagies-den-ehei-meinei-tipote-oti-vlepeis-to-eftiaxa-me-ta-heria-moy/"
       ],
-      "seen_at_utc": "2026-08-08T09:17:19.027276+00:00"
+      "seen_at_utc": "2026-08-08T09:29:59.722924+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/o-mpolompoi-menei-sti-vilermpan/",
-      "title": "«O Μπολομπόι μένει στη Βιλερμπάν»",
-      "normalized_title": "«O ΜΠΟΛΟΜΠΟΙ ΜΕΝΕΙ ΣΤΗ ΒΙΛΕΡΜΠΑΝ»",
+      "url": "https://www.in.gr/2026/08/08/greece/apokalypsi-in-ta-stoixeia-tis-elas-gia-to-tragiko-troxaio-stis-serres-ta-4-senaria-pou-eksetazoun/",
+      "title": "Αποκάλυψη in: Τα στοιχεία της ΕΛΑΣ για το τραγικό τροχαίο στις Σέρρες – Τα 4 σενάρια που εξετάζουν",
+      "normalized_title": "ΑΠΟΚΑΛΥΨΗ IN: ΤΑ ΣΤΟΙΧΕΙΑ ΤΗΣ ΕΛΑΣ ΓΙΑ ΤΟ ΤΡΑΓΙΚΟ ΤΡΟΧΑΙΟ ΣΤΙΣ ΣΕΡΡΕΣ – ΤΑ 4 ΣΕΝΑΡΙΑ ΠΟΥ ΕΞΕΤΑΖΟΥΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/o-mpolompoi-menei-sti-vilermpan/",
-        "https://www.in.gr/2026/08/08/greece/fotia-stin-attikovoiotia-ti-deytera-ksekinoun-oi-aitiseis-apozimiosis-apo-septemvrio-ta-antiplimmyrika/",
-        "https://www.in.gr/2026/08/08/go-fun/fizz/the-devil-wears-prada-2-se-dimoprasia-rouxa-kai-aksesouar-apo-tin-tainia/",
-        "https://www.in.gr/2026/08/08/world/ti-oie-xreiazomaste-o-al-kapone-tha-anagnorize-ti-simerini-pagkosmia-taksi-pragmaton-kai-ayto-den-einai-kalo/",
-        "https://www.in.gr/2026/08/08/sports/basketball/evgale-matia-o-anipsios-tou-giasikevitsious-ti-ekane-stin-premiera-tou-eurobasket-u16-vid/",
-        "https://www.in.gr/2026/08/08/world/sta-skoupidia-farmaka-pou-gemizoun-75-pisines-to-megethos-tis-spatalis-stin-agglia/"
+        "https://www.in.gr/2026/08/08/greece/apokalypsi-in-ta-stoixeia-tis-elas-gia-to-tragiko-troxaio-stis-serres-ta-4-senaria-pou-eksetazoun/",
+        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/elas-i-kyvernisi-mas-proetoimazei-gia-dramatiki-meiosi-ekpaideytikon-pairnei-kato-apo-ti-vasi-stin-aksiologisi/"
       ],
-      "seen_at_utc": "2026-08-08T09:17:19.027220+00:00"
+      "seen_at_utc": "2026-08-08T09:29:59.722894+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T09:17:19.027389+00:00"
+  "updated_at_utc": "2026-08-08T09:29:59.722995+00:00"
 }
