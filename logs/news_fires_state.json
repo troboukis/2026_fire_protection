@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564392548/iaponia-o-tyfonas-dolphin-eplixe-tin-okinaoya-i-kina-ekleise-limania-stin-anatoliki-akti-tis/",
-      "title": "Ιαπωνία: Ο τυφώνας Dolphin έπληξε την Οκινάουα – Η Κίνα έκλεισε λιμάνια στην ανατολική ακτή της",
-      "normalized_title": "ΙΑΠΩΝΙΑ: Ο ΤΥΦΩΝΑΣ DOLPHIN ΕΠΛΗΞΕ ΤΗΝ ΟΚΙΝΑΟΥΑ – Η ΚΙΝΑ ΕΚΛΕΙΣΕ ΛΙΜΑΝΙΑ ΣΤΗΝ ΑΝΑΤΟΛΙΚΗ ΑΚΤΗ ΤΗΣ",
+      "url": "https://www.kathimerini.gr/society/564392581/chardalias-kamia-anemogennitria-se-anadasotees-kai-pyropliktes-perioches-tis-attikis/",
+      "title": "Χαρδαλιάς: «Καμία ανεμογεννήτρια σε αναδασωτέες και πυρόπληκτες περιοχές της Αττικής»",
+      "normalized_title": "ΧΑΡΔΑΛΙΑΣ: «ΚΑΜΙΑ ΑΝΕΜΟΓΕΝΝΗΤΡΙΑ ΣΕ ΑΝΑΔΑΣΩΤΕΕΣ ΚΑΙ ΠΥΡΟΠΛΗΚΤΕΣ ΠΕΡΙΟΧΕΣ ΤΗΣ ΑΤΤΙΚΗΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564392548/iaponia-o-tyfonas-dolphin-eplixe-tin-okinaoya-i-kina-ekleise-limania-stin-anatoliki-akti-tis/"
+        "https://www.kathimerini.gr/society/564392581/chardalias-kamia-anemogennitria-se-anadasotees-kai-pyropliktes-perioches-tis-attikis/",
+        "https://www.kathimerini.gr/politics/government/564390742/kyvernisi-senaria-allagon-sto-proskinio/",
+        "https://www.kathimerini.gr/society/564392566/chalkidiki-odigos-motosikletas-traymatistike-sovara-se-trochaio/"
       ],
-      "seen_at_utc": "2026-08-08T10:30:05.312986+00:00"
+      "seen_at_utc": "2026-08-08T10:51:18.548722+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,23 +1271,28 @@
       "seen_at_utc": "2026-08-08T10:17:05.190041+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444452/anakoinosi-tis-astynomias-gia-ton-toyrista-stin-kriti-den-prokyptei-apopeira-proseggisis-anilikis-enanti-amoivis/",
-      "title": "Ανακοίνωση της αστυνομίας για τον τουρίστα στην Κρήτη: «Δεν προκύπτει απόπειρα προσέγγισης ανήλικης έναντι αμοιβής»",
-      "normalized_title": "ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΑΣΤΥΝΟΜΙΑΣ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΤΑ ΣΤΗΝ ΚΡΗΤΗ: «ΔΕΝ ΠΡΟΚΥΠΤΕΙ ΑΠΟΠΕΙΡΑ ΠΡΟΣΕΓΓΙΣΗΣ ΑΝΗΛΙΚΗΣ ΕΝΑΝΤΙ ΑΜΟΙΒΗΣ»",
+      "url": "https://www.efsyn.gr/ellada/1444460/epikindyno-kokteil-ishyron-anemon-kai-zestis-tis-epomenes-meres-synedriase-i-epitropi-ektimisis-kindynoy/",
+      "title": "Επικίνδυνο «κοκτέιλ» ισχυρών ανέμων και ζέστης τις επόμενες μέρες – Συνεδρίασε η Επιτροπή Εκτίμησης Κινδύνου",
+      "normalized_title": "ΕΠΙΚΙΝΔΥΝΟ «ΚΟΚΤΕΙΛ» ΙΣΧΥΡΩΝ ΑΝΕΜΩΝ ΚΑΙ ΖΕΣΤΗΣ ΤΙΣ ΕΠΟΜΕΝΕΣ ΜΕΡΕΣ – ΣΥΝΕΔΡΙΑΣΕ Η ΕΠΙΤΡΟΠΗ ΕΚΤΙΜΗΣΗΣ ΚΙΝΔΥΝΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444452/anakoinosi-tis-astynomias-gia-ton-toyrista-stin-kriti-den-prokyptei-apopeira-proseggisis-anilikis-enanti-amoivis/"
+        "https://www.efsyn.gr/ellada/1444460/epikindyno-kokteil-ishyron-anemon-kai-zestis-tis-epomenes-meres-synedriase-i-epitropi-ektimisis-kindynoy/"
       ],
-      "seen_at_utc": "2026-08-08T10:30:05.313069+00:00"
+      "seen_at_utc": "2026-08-08T10:51:18.548833+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/othersports/asimenio-metallio-gia-xioti-aleksiou-sto-pagkosmio-protathlima-kopilasias-efivon-neanidon/",
-      "title": "Ασημένιο μετάλλιο για Χιώτη-Αλεξίου στο Παγκόσμιο Πρωτάθλημα Κωπηλασίας εφήβων – νεανίδων",
-      "normalized_title": "ΑΣΗΜΕΝΙΟ ΜΕΤΑΛΛΙΟ ΓΙΑ ΧΙΩΤΗ-ΑΛΕΞΙΟΥ ΣΤΟ ΠΑΓΚΟΣΜΙΟ ΠΡΩΤΑΘΛΗΜΑ ΚΩΠΗΛΑΣΙΑΣ ΕΦΗΒΩΝ – ΝΕΑΝΙΔΩΝ",
+      "url": "https://www.in.gr/2026/08/08/greece/kriti-nea-dedomena-gia-tin-apopeira-proseggisis-10xronis-apo-eniliko-tourista-ti-leei-i-astynomia/",
+      "title": "Νέα δεδομένα για την απόπειρα προσέγγισης 10χρονης από ενήλικο τουρίστα στην Κρήτη - Τι λέει η Αστυνομία",
+      "normalized_title": "ΝΕΑ ΔΕΔΟΜΕΝΑ ΓΙΑ ΤΗΝ ΑΠΟΠΕΙΡΑ ΠΡΟΣΕΓΓΙΣΗΣ 10ΧΡΟΝΗΣ ΑΠΟ ΕΝΗΛΙΚΟ ΤΟΥΡΙΣΤΑ ΣΤΗΝ ΚΡΗΤΗ - ΤΙ ΛΕΕΙ Η ΑΣΤΥΝΟΜΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/othersports/asimenio-metallio-gia-xioti-aleksiou-sto-pagkosmio-protathlima-kopilasias-efivon-neanidon/"
+        "https://www.in.gr/2026/08/08/greece/kriti-nea-dedomena-gia-tin-apopeira-proseggisis-10xronis-apo-eniliko-tourista-ti-leei-i-astynomia/",
+        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/otan-leo-oikogeneia-to-ennoo-to-proto-sxolio-tou-evans-meta-ti-metagrafi-tou-sti-zalgkiris-pic/",
+        "https://www.in.gr/2026/08/08/economy/trofima-kai-pota-oi-ellinikes-etaireies-pou-trexoun-kontra-stin-krisi-ependyseis-kai-nea-proionta/",
+        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/tsoukalas-gia-tis-ypoklopes-oi-skies-paramenoun-poios-edose-tin-entoli-gia-tin-parakolouthisi-androulaki/",
+        "https://www.in.gr/2026/08/08/economy/pos-tha-ameifthoun-osoi-ergastoun-15-aygoustou/",
+        "https://www.in.gr/2026/08/08/world/iran-o-arxistratigos-ton-ipa-zita-dieksodo-apo-ton-polemo-apokalypseis-gia-tis-esoterikes-synomilies/"
       ],
-      "seen_at_utc": "2026-08-08T10:30:05.313029+00:00"
+      "seen_at_utc": "2026-08-08T10:51:18.548779+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T10:30:05.313149+00:00"
+  "updated_at_utc": "2026-08-08T10:51:18.548902+00:00"
 }
