@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564392443/miniaia-epanexetasi-gia-toys-patriot-sti-saoydiki-aravia/",
-      "title": "Μηνιαία επανεξέταση για τους Patriot στη Σαουδική Αραβία",
-      "normalized_title": "ΜΗΝΙΑΙΑ ΕΠΑΝΕΞΕΤΑΣΗ ΓΙΑ ΤΟΥΣ PATRIOT ΣΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ",
+      "url": "https://www.kathimerini.gr/economy/international/564391090/i-xirasia-apeilei-mia-zotiki-oikonomiki-artiria-stin-kardia-tis-eyropis/",
+      "title": "Η ξηρασία απειλεί μια ζωτική οικονομική αρτηρία στην καρδιά της Ευρώπης",
+      "normalized_title": "Η ΞΗΡΑΣΙΑ ΑΠΕΙΛΕΙ ΜΙΑ ΖΩΤΙΚΗ ΟΙΚΟΝΟΜΙΚΗ ΑΡΤΗΡΙΑ ΣΤΗΝ ΚΑΡΔΙΑ ΤΗΣ ΕΥΡΩΠΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564392443/miniaia-epanexetasi-gia-toys-patriot-sti-saoydiki-aravia/",
-        "https://www.kathimerini.gr/society/564392434/synedriasi-epitropis-ektimisis-kindynoy-gia-toys-ischyroys-anemoys-kai-tis-ypsiles-thermokrasies/",
-        "https://www.kathimerini.gr/economy/business/564391132/enischysi-ependytikon-schedion-sta-nisia-toy-voreioy-aigaioy/"
+        "https://www.kathimerini.gr/economy/international/564391090/i-xirasia-apeilei-mia-zotiki-oikonomiki-artiria-stin-kardia-tis-eyropis/",
+        "https://www.kathimerini.gr/world/564392464/i-rosia-dilonei-oti-eplixe-fortigo-ploio-me-opla-gia-tin-oykrania/",
+        "https://www.kathimerini.gr/society/564392458/chalkidiki-oktachronos-traymatistike-sto-kefali-meta-apo-voytia-sti-thalassa/"
       ],
-      "seen_at_utc": "2026-08-08T08:51:20.303688+00:00"
+      "seen_at_utc": "2026-08-08T09:17:19.027146+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862387/oi-marturies-katoikon-gia-ton-dimarho-mandras-eidullias-esose-to-spiti-mas-eno-dipla-kaigotan-to-diko-tou/?utm_source=rss",
-      "title": "Οι μαρτυρίες κατοίκων για τον δήμαρχο Μάνδρας-Ειδυλλίας: «Έσωσε το σπίτι μας, ενώ δίπλα καιγόταν το δικό του»",
-      "normalized_title": "ΟΙ ΜΑΡΤΥΡΙΕΣ ΚΑΤΟΙΚΩΝ ΓΙΑ ΤΟΝ ΔΗΜΑΡΧΟ ΜΑΝΔΡΑΣ-ΕΙΔΥΛΛΙΑΣ: «ΕΣΩΣΕ ΤΟ ΣΠΙΤΙ ΜΑΣ, ΕΝΩ ΔΙΠΛΑ ΚΑΙΓΟΤΑΝ ΤΟ ΔΙΚΟ ΤΟΥ»",
+      "url": "https://www.protothema.gr/greece/article/1862392/8hronos-traumatistike-sto-kefali-meta-apo-voutia-se-paralia-tis-halkidikis/?utm_source=rss",
+      "title": "8χρονος τραυματίστηκε στο κεφάλι μετά από βουτιά σε παραλία της Χαλκιδικής",
+      "normalized_title": "8ΧΡΟΝΟΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΟ ΚΕΦΑΛΙ ΜΕΤΑ ΑΠΟ ΒΟΥΤΙΑ ΣΕ ΠΑΡΑΛΙΑ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862387/oi-marturies-katoikon-gia-ton-dimarho-mandras-eidullias-esose-to-spiti-mas-eno-dipla-kaigotan-to-diko-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862392/8hronos-traumatistike-sto-kefali-meta-apo-voutia-se-paralia-tis-halkidikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862391/sunedriase-i-epitropi-ektimisis-kindunou-logo-ton-upsilon-thermokrasion-kai-tis-enishusis-ton-anemon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T08:51:20.303780+00:00"
+      "seen_at_utc": "2026-08-08T09:17:19.027313+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444402/se-dyo-faseis-i-episkepsi-tsipra-sti-thessaloniki/",
-      "title": "Σε δύο φάσεις η επίσκεψη Τσίπρα στη Θεσσαλονίκη",
-      "normalized_title": "ΣΕ ΔΥΟ ΦΑΣΕΙΣ Η ΕΠΙΣΚΕΨΗ ΤΣΙΠΡΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.efsyn.gr/politiki/1444419/aihmes-tsoykala-meta-ti-symfonia-tis-mekkas-hreiazetai-alli-exoteriki-politiki-me-stratigiko-vathos/",
+      "title": "Αιχμές Τσουκαλά μετά τη συμφωνία της Μέκκας: Χρειάζεται άλλη εξωτερική πολιτική με στρατηγικό βάθος",
+      "normalized_title": "ΑΙΧΜΕΣ ΤΣΟΥΚΑΛΑ ΜΕΤΑ ΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ: ΧΡΕΙΑΖΕΤΑΙ ΑΛΛΗ ΕΞΩΤΕΡΙΚΗ ΠΟΛΙΤΙΚΗ ΜΕ ΣΤΡΑΤΗΓΙΚΟ ΒΑΘΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444402/se-dyo-faseis-i-episkepsi-tsipra-sti-thessaloniki/",
-        "https://www.efsyn.gr/politiki/1444398/to-diktiko-sholio-toy-pasok-gia-ton-georgiadi/"
+        "https://www.efsyn.gr/politiki/1444419/aihmes-tsoykala-meta-ti-symfonia-tis-mekkas-hreiazetai-alli-exoteriki-politiki-me-stratigiko-vathos/",
+        "https://www.efsyn.gr/politiki/1444413/elas-kata-kyvernisis-gia-ta-kena-sta-sholeia-mipos-mas-proetoimazoyn-gia-dramatiki-meiosi-ton-proslipseon/"
       ],
-      "seen_at_utc": "2026-08-08T08:30:05.778441+00:00"
+      "seen_at_utc": "2026-08-08T09:17:19.027276+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/basketball/sta-xnaria-tou-kanter-o-gouait-thelei-na-dilosei-symmetoxi-sto-draft-tou-wnba-vid/",
-      "title": "Στα… χνάρια του Καντέρ: Ο Γουάιτ θέλει να δηλώσει συμμετοχή στο Draft του WNBA (vid)",
-      "normalized_title": "ΣΤΑ… ΧΝΑΡΙΑ ΤΟΥ ΚΑΝΤΕΡ: Ο ΓΟΥΑΙΤ ΘΕΛΕΙ ΝΑ ΔΗΛΩΣΕΙ ΣΥΜΜΕΤΟΧΗ ΣΤΟ DRAFT ΤΟΥ WNBA (VID)",
+      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/o-mpolompoi-menei-sti-vilermpan/",
+      "title": "«O Μπολομπόι μένει στη Βιλερμπάν»",
+      "normalized_title": "«O ΜΠΟΛΟΜΠΟΙ ΜΕΝΕΙ ΣΤΗ ΒΙΛΕΡΜΠΑΝ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/basketball/sta-xnaria-tou-kanter-o-gouait-thelei-na-dilosei-symmetoxi-sto-draft-tou-wnba-vid/",
-        "https://www.in.gr/2026/08/08/greece/apo-to-sok-tis-syllipsis-i-dilosi-gia-ti-syntaksi-ti-leei-o-dikigoros-tou-55xronou-ston-mystra/"
+        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/o-mpolompoi-menei-sti-vilermpan/",
+        "https://www.in.gr/2026/08/08/greece/fotia-stin-attikovoiotia-ti-deytera-ksekinoun-oi-aitiseis-apozimiosis-apo-septemvrio-ta-antiplimmyrika/",
+        "https://www.in.gr/2026/08/08/go-fun/fizz/the-devil-wears-prada-2-se-dimoprasia-rouxa-kai-aksesouar-apo-tin-tainia/",
+        "https://www.in.gr/2026/08/08/world/ti-oie-xreiazomaste-o-al-kapone-tha-anagnorize-ti-simerini-pagkosmia-taksi-pragmaton-kai-ayto-den-einai-kalo/",
+        "https://www.in.gr/2026/08/08/sports/basketball/evgale-matia-o-anipsios-tou-giasikevitsious-ti-ekane-stin-premiera-tou-eurobasket-u16-vid/",
+        "https://www.in.gr/2026/08/08/world/sta-skoupidia-farmaka-pou-gemizoun-75-pisines-to-megethos-tis-spatalis-stin-agglia/"
       ],
-      "seen_at_utc": "2026-08-08T08:51:20.303730+00:00"
+      "seen_at_utc": "2026-08-08T09:17:19.027220+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T08:51:20.303853+00:00"
+  "updated_at_utc": "2026-08-08T09:17:19.027389+00:00"
 }
