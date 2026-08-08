@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564389926/i-anoichti-epistoli-tis-ellinon-tis-astoria-ston-mamntani/",
-      "title": "Η ανοιχτή επιστολή των Ελλήνων της Αστόρια στον Μαμντάνι",
-      "normalized_title": "Η ΑΝΟΙΧΤΗ ΕΠΙΣΤΟΛΗ ΤΩΝ ΕΛΛΗΝΩΝ ΤΗΣ ΑΣΤΟΡΙΑ ΣΤΟΝ ΜΑΜΝΤΑΝΙ",
+      "url": "https://www.kathimerini.gr/world/564392743/chanter-mpainten-i-proedriki-chari-den-itan-kali-gia-tis-ipa-kai-tin-ysterofimia-toy-patera-moy/",
+      "title": "Χάντερ Μπάιντεν: «Η προεδρική χάρη δεν ήταν καλή για τις ΗΠΑ και την υστεροφημία του πατέρα μου»",
+      "normalized_title": "ΧΑΝΤΕΡ ΜΠΑΙΝΤΕΝ: «Η ΠΡΟΕΔΡΙΚΗ ΧΑΡΗ ΔΕΝ ΗΤΑΝ ΚΑΛΗ ΓΙΑ ΤΙΣ ΗΠΑ ΚΑΙ ΤΗΝ ΥΣΤΕΡΟΦΗΜΙΑ ΤΟΥ ΠΑΤΕΡΑ ΜΟΥ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564389926/i-anoichti-epistoli-tis-ellinon-tis-astoria-ston-mamntani/",
-        "https://www.kathimerini.gr/world/564392725/tanker-chtypithike-apo-vlima-anoikta-toy-oman/"
+        "https://www.kathimerini.gr/world/564392743/chanter-mpainten-i-proedriki-chari-den-itan-kali-gia-tis-ipa-kai-tin-ysterofimia-toy-patera-moy/"
       ],
-      "seen_at_utc": "2026-08-08T14:17:07.675149+00:00"
+      "seen_at_utc": "2026-08-08T14:30:09.082475+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1259,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862442/polu-upsilos-kindunos-purkagias-aurio-kuriaki-se-attiki-kai-alles-pede-periohes-tis-horas/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο Κυριακή σε Αττική και άλλες πέντε περιοχές της χώρας",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ ΚΥΡΙΑΚΗ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΑΛΛΕΣ ΠΕΝΤΕ ΠΕΡΙΟΧΕΣ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1862452/kastoria-nekri-megalosomi-arkouda-pithanon-apo-purovolismo/?utm_source=rss",
+      "title": "Καστοριά: Νεκρή μεγαλόσωμη αρκούδα, πιθανόν από πυροβολισμό",
+      "normalized_title": "ΚΑΣΤΟΡΙΑ: ΝΕΚΡΗ ΜΕΓΑΛΟΣΩΜΗ ΑΡΚΟΥΔΑ, ΠΙΘΑΝΟΝ ΑΠΟ ΠΥΡΟΒΟΛΙΣΜΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862442/polu-upsilos-kindunos-purkagias-aurio-kuriaki-se-attiki-kai-alles-pede-periohes-tis-horas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862441/horis-tis-aisthiseis-tou-anasurthike-43hronos-sti-metopi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862452/kastoria-nekri-megalosomi-arkouda-pithanon-apo-purovolismo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862450/fotia-tora-se-hamili-vlastisi-stin-eukarpia-kilkis-sikothikan-tria-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T13:51:26.012010+00:00"
+      "seen_at_utc": "2026-08-08T14:30:09.082572+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444541/ypoklopes-kesses-kata-enosis-eisaggeleon-na-papsei-na-ektithetai-me-tis-epilektikes-i-pithanos-kata-paraggelia-paremvaseis-tis/",
-      "title": "Υποκλοπές: Κεσσές κατά Ένωσης Εισαγγελέων – «Να πάψει να εκτίθεται με τις επιλεκτικές ή πιθανώς κατά παραγγελία παρεμβάσεις της»",
-      "normalized_title": "ΥΠΟΚΛΟΠΕΣ: ΚΕΣΣΕΣ ΚΑΤΑ ΕΝΩΣΗΣ ΕΙΣΑΓΓΕΛΕΩΝ – «ΝΑ ΠΑΨΕΙ ΝΑ ΕΚΤΙΘΕΤΑΙ ΜΕ ΤΙΣ ΕΠΙΛΕΚΤΙΚΕΣ Η ΠΙΘΑΝΩΣ ΚΑΤΑ ΠΑΡΑΓΓΕΛΙΑ ΠΑΡΕΜΒΑΣΕΙΣ ΤΗΣ»",
+      "url": "https://www.efsyn.gr/athlitismos/1444543/vary-penthos-gia-ton-lionel-mesi-pethane-o-pateras-toy-horhe/",
+      "title": "Βαρύ πένθος για τον Λιονέλ Μέσι: Πέθανε ο πατέρας του, Χόρχε",
+      "normalized_title": "ΒΑΡΥ ΠΕΝΘΟΣ ΓΙΑ ΤΟΝ ΛΙΟΝΕΛ ΜΕΣΙ: ΠΕΘΑΝΕ Ο ΠΑΤΕΡΑΣ ΤΟΥ, ΧΟΡΧΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444541/ypoklopes-kesses-kata-enosis-eisaggeleon-na-papsei-na-ektithetai-me-tis-epilektikes-i-pithanos-kata-paraggelia-paremvaseis-tis/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-arheio-3/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-08-08-2026/"
+        "https://www.efsyn.gr/athlitismos/1444543/vary-penthos-gia-ton-lionel-mesi-pethane-o-pateras-toy-horhe/"
       ],
-      "seen_at_utc": "2026-08-08T14:17:07.675262+00:00"
+      "seen_at_utc": "2026-08-08T14:30:09.082554+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/football/tzolis-gia-to-proto-gkol-me-tin-arsenal-otan-skorareis-me-atomiki-energeia-sou-dinei-aytopepoithisi-vid/",
-      "title": "Τζόλης για το πρώτο γκολ με την Άρσεναλ: «Όταν σκοράρεις με ατομική ενέργεια σου δίνει αυτοπεποίθηση» (vid)",
-      "normalized_title": "ΤΖΟΛΗΣ ΓΙΑ ΤΟ ΠΡΩΤΟ ΓΚΟΛ ΜΕ ΤΗΝ ΑΡΣΕΝΑΛ: «ΟΤΑΝ ΣΚΟΡΑΡΕΙΣ ΜΕ ΑΤΟΜΙΚΗ ΕΝΕΡΓΕΙΑ ΣΟΥ ΔΙΝΕΙ ΑΥΤΟΠΕΠΟΙΘΗΣΗ» (VID)",
+      "url": "https://www.in.gr/2026/08/08/world/ukmto-ploio-dexthike-epithesi-apo-agnostis-proeleysis-pyromaxiko-anatolika-tou-oman/",
+      "title": "UKMTO: Πλοίο δέχθηκε επίθεση από άγνωστης προέλευσης πυρομαχικό ανατολικά του Ομάν",
+      "normalized_title": "UKMTO: ΠΛΟΙΟ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΑΠΟ ΑΓΝΩΣΤΗΣ ΠΡΟΕΛΕΥΣΗΣ ΠΥΡΟΜΑΧΙΚΟ ΑΝΑΤΟΛΙΚΑ ΤΟΥ ΟΜΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/football/tzolis-gia-to-proto-gkol-me-tin-arsenal-otan-skorareis-me-atomiki-energeia-sou-dinei-aytopepoithisi-vid/",
-        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/i-oukraniki-startup-piso-apo-ta-drones-pou-xtypoun-vathia-ti-rosia/",
-        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/i-propaganda-stamata-ekei-pou-arxizoun-oi-arithmoi/",
-        "https://www.in.gr/2026/08/08/stories/proevlepan-panta-ta-taro-to-mellon/",
-        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/orgi-tramp-gia-dikastiko-mploko-pagonoun-oi-ergasies-sti-nea-aithousa-deksioseon/"
+        "https://www.in.gr/2026/08/08/world/ukmto-ploio-dexthike-epithesi-apo-agnostis-proeleysis-pyromaxiko-anatolika-tou-oman/"
       ],
-      "seen_at_utc": "2026-08-08T14:17:07.675218+00:00"
+      "seen_at_utc": "2026-08-08T14:30:09.082532+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T14:17:07.675347+00:00"
+  "updated_at_utc": "2026-08-08T14:30:09.082655+00:00"
 }
