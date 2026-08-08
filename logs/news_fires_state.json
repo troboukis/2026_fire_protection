@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564391108/thetikes-oi-ektimiseis-gia-rythmo-anaptyxis-deyteroy-triminoy/",
-      "title": "Θετικές οι εκτιμήσεις για ρυθμό ανάπτυξης δευτέρου τριμήνου",
-      "normalized_title": "ΘΕΤΙΚΕΣ ΟΙ ΕΚΤΙΜΗΣΕΙΣ ΓΙΑ ΡΥΘΜΟ ΑΝΑΠΤΥΞΗΣ ΔΕΥΤΕΡΟΥ ΤΡΙΜΗΝΟΥ",
+      "url": "https://www.kathimerini.gr/culture/564390910/anasynthetontas-ton-thrylo-toy-mpili-de-kint-logotechnika/",
+      "title": "Ανασυνθέτοντας τον θρύλο του Μπίλι δε Κιντ λογοτεχνικά",
+      "normalized_title": "ΑΝΑΣΥΝΘΕΤΟΝΤΑΣ ΤΟΝ ΘΡΥΛΟ ΤΟΥ ΜΠΙΛΙ ΔΕ ΚΙΝΤ ΛΟΓΟΤΕΧΝΙΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564391108/thetikes-oi-ektimiseis-gia-rythmo-anaptyxis-deyteroy-triminoy/",
-        "https://www.kathimerini.gr/athletics/football/564391009/podosfairo-den-thelei-kopo-thelei-tropo/",
-        "https://www.kathimerini.gr/opinion/564390880/eytychos-i-exoysia-den-kykloforei-stoys-dromoys/"
+        "https://www.kathimerini.gr/culture/564390910/anasynthetontas-ton-thrylo-toy-mpili-de-kint-logotechnika/",
+        "https://www.kathimerini.gr/society/564392323/agonas-dromoy-gia-tin-apokatastasi-ton-zimion-se-psatha-kai-porto-germeno/",
+        "https://www.kathimerini.gr/society/564381994/paidiki-vivliothiki-metsovoy-ena-zontano-kyttaro-gnosis-kai-politismoy/",
+        "https://www.kathimerini.gr/columns/564377236/pos-gennithikan-oi-almyres-karameles-voytyroy/",
+        "https://www.kathimerini.gr/society/564392302/koryfonetai-i-exodos-toy-aygoystoy-i-kinisi-sta-limania-tis-attikis/"
       ],
-      "seen_at_utc": "2026-08-08T05:51:16.317602+00:00"
+      "seen_at_utc": "2026-08-08T06:17:15.725555+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1263,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862334/kairos-savvatokuriako-me-39aria-kai-ishura-meltemia-eos-8-bofor-sto-aigaio/?utm_source=rss",
-      "title": "Καιρός: Σαββατοκύριακο με 39άρια και ισχυρά μελτέμια, έως 8 μποφόρ στο Αιγαίο",
-      "normalized_title": "ΚΑΙΡΟΣ: ΣΑΒΒΑΤΟΚΥΡΙΑΚΟ ΜΕ 39ΑΡΙΑ ΚΑΙ ΙΣΧΥΡΑ ΜΕΛΤΕΜΙΑ, ΕΩΣ 8 ΜΠΟΦΟΡ ΣΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1862343/dikigoros-46hronis-katigoroumenis-gia-marfin-den-einai-i-edoleas-mou-stis-fotografies-eihe-exetastei-kai-to-2022/?utm_source=rss",
+      "title": "Δικηγόρος 46χρονης κατηγορουμένης για Marfin: Δεν είναι η εντολέας μου στις φωτογραφίες, είχε εξεταστεί και το 2022",
+      "normalized_title": "ΔΙΚΗΓΟΡΟΣ 46ΧΡΟΝΗΣ ΚΑΤΗΓΟΡΟΥΜΕΝΗΣ ΓΙΑ MARFIN: ΔΕΝ ΕΙΝΑΙ Η ΕΝΤΟΛΕΑΣ ΜΟΥ ΣΤΙΣ ΦΩΤΟΓΡΑΦΙΕΣ, ΕΙΧΕ ΕΞΕΤΑΣΤΕΙ ΚΑΙ ΤΟ 2022",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862334/kairos-savvatokuriako-me-39aria-kai-ishura-meltemia-eos-8-bofor-sto-aigaio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862343/dikigoros-46hronis-katigoroumenis-gia-marfin-den-einai-i-edoleas-mou-stis-fotografies-eihe-exetastei-kai-to-2022/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862338/vouliazoun-ta-limania-tis-attikis-pano-apo-56000-epivates-anahoroun-simera-gia-ta-nisia-sto-kokkino-o-peiraias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T05:51:16.317734+00:00"
+      "seen_at_utc": "2026-08-08T06:17:15.725680+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/nisides/1443963/anagnosmata-toy-aygoystoy-okto-vivlia-gia-na-katevasoyme-rythmoys/",
-      "title": "Αναγνώσματα του Αυγούστου: Οκτώ βιβλία για να κατεβάσουμε ρυθμούς",
-      "normalized_title": "ΑΝΑΓΝΩΣΜΑΤΑ ΤΟΥ ΑΥΓΟΥΣΤΟΥ: ΟΚΤΩ ΒΙΒΛΙΑ ΓΙΑ ΝΑ ΚΑΤΕΒΑΣΟΥΜΕ ΡΥΘΜΟΥΣ",
+      "url": "https://www.efsyn.gr/ellada/1444338/horotaxiko-gia-ton-toyrismo-oi-neoi-kanones-gia-ependyseis-ektos-shedioy-domisi-kai-airbnb/",
+      "title": "Χωροταξικό για τον τουρισμό: Οι νέοι κανόνες για επενδύσεις, εκτός σχεδίου δόμηση και Αirbnb",
+      "normalized_title": "ΧΩΡΟΤΑΞΙΚΟ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΜΟ: ΟΙ ΝΕΟΙ ΚΑΝΟΝΕΣ ΓΙΑ ΕΠΕΝΔΥΣΕΙΣ, ΕΚΤΟΣ ΣΧΕΔΙΟΥ ΔΟΜΗΣΗ ΚΑΙ ΑIRBNB",
       "seen_urls": [
-        "https://www.efsyn.gr/nisides/1443963/anagnosmata-toy-aygoystoy-okto-vivlia-gia-na-katevasoyme-rythmoys/",
-        "https://www.efsyn.gr/athlitismos/1444302/tzani-infantino-o-vasilias-tis-aplistias-ta-erga-kai-oi-imeres-toy-sto-timoni-tis-fifa/",
-        "https://www.efsyn.gr/politiki/1444297/ypoklopes-trito-ohi-gia-nea-ereyna-para-ta-stoiheia-kai-tis-apokalypseis-ntilian/"
+        "https://www.efsyn.gr/ellada/1444338/horotaxiko-gia-ton-toyrismo-oi-neoi-kanones-gia-ependyseis-ektos-shedioy-domisi-kai-airbnb/",
+        "https://www.efsyn.gr/ellada/1444332/koryfonetai-i-exodos-toy-aygoystoy-pano-apo-56-000-epivates-anahoroyn-simera-apo-ta-limania-tis-attikis/"
       ],
-      "seen_at_utc": "2026-08-08T05:51:16.317707+00:00"
+      "seen_at_utc": "2026-08-08T06:17:15.725653+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/i-fotia-se-attiki-kai-voiotia-apeleytherose-energeia-isi-me-eksi-vomves-xirosima-111-732-stremmata-eginan-staxti-se-91-ores/",
-      "title": "Η φωτιά σε Αττική και Βοιωτία απελευθέρωσε ενέργεια ίση με έξι βόμβες Χιροσίμα – 111.732 στρέμματα έγιναν στάχτη σε 91 ώρες",
-      "normalized_title": "Η ΦΩΤΙΑ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΒΟΙΩΤΙΑ ΑΠΕΛΕΥΘΕΡΩΣΕ ΕΝΕΡΓΕΙΑ ΙΣΗ ΜΕ ΕΞΙ ΒΟΜΒΕΣ ΧΙΡΟΣΙΜΑ – 111.732 ΣΤΡΕΜΜΑΤΑ ΕΓΙΝΑΝ ΣΤΑΧΤΗ ΣΕ 91 ΩΡΕΣ",
+      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/i-kinisi-tou-patera-tou-ntorsei-sta-social-media-kai-o-olympiakos/",
+      "title": "Η κίνηση του πατέρα του Ντόρσεϊ στα social media και ο… Ολυμπιακός",
+      "normalized_title": "Η ΚΙΝΗΣΗ ΤΟΥ ΠΑΤΕΡΑ ΤΟΥ ΝΤΟΡΣΕΙ ΣΤΑ SOCIAL MEDIA ΚΑΙ Ο… ΟΛΥΜΠΙΑΚΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/i-fotia-se-attiki-kai-voiotia-apeleytherose-energeia-isi-me-eksi-vomves-xirosima-111-732-stremmata-eginan-staxti-se-91-ores/",
-        "https://www.in.gr/2026/08/08/uncategorized/miso-ekat-anthropoi-pethainoun-kathe-xrono-apo-tin-akraia-zesti-i-nea-klimatiki-pragmatikotita-apaitei-nea-antimetopisi/",
-        "https://www.in.gr/2026/08/08/sports/football/nees-apokalypseis-gia-ton-infantino-i-uefa-eixe-plirosei-eksapsifio-poso-se-proin-eromeni-tou/",
-        "https://www.in.gr/2026/08/08/go-fun/social/arkas-i-kalimera-tiy-savvatou/",
-        "https://www.in.gr/2026/08/08/plus/vita/ksexna-to-treksimo-pente-askiseis-gia-dynato-cardio/",
-        "https://www.in.gr/2026/08/08/world/o-tyfonas-dolphin-plittei-tin-okinaoua-tis-iaponias-i-kina-proetoimazetai-gia-tin-afiksi-tou/"
+        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/i-kinisi-tou-patera-tou-ntorsei-sta-social-media-kai-o-olympiakos/",
+        "https://www.in.gr/2026/08/08/greece/larisa-stin-entatiki-43xronos-epese-apo-ilektriko-patini/",
+        "https://www.in.gr/2026/08/08/in-science/perivallon-b-science/i-ksirasia-eksaplonetai-se-oli-tin-eyropi-eikones-me-ksera-edafi-kai-potamia-se-istorika-xamila-epipeda/",
+        "https://www.in.gr/2026/08/08/greece/koryfonetai-i-eksodos-tou-dekapentaygoustou-oures-sta-limania-me-ypsiles-plirotites-anaxoroun-ta-ploia/",
+        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/ti-eipe-o-team-tanager-tis-efes-gia-tin-epistrofi-tou-papagianni-sti-drasi/"
       ],
-      "seen_at_utc": "2026-08-08T05:51:16.317674+00:00"
+      "seen_at_utc": "2026-08-08T06:17:15.725622+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T05:51:16.317805+00:00"
+  "updated_at_utc": "2026-08-08T06:17:15.725748+00:00"
 }
