@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564392779/pyrkagia-stin-attikovoiotia-eikones-kai-vinteo-apo-ti-diasosi-254-politon-dia-thalassis/",
-      "title": "Πυρκαγιά στην Αττικοβοιωτία: Εικόνες και βίντεο από τη διάσωση 254 πολιτών διά θαλάσσης",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΑΤΤΙΚΟΒΟΙΩΤΙΑ: ΕΙΚΟΝΕΣ ΚΑΙ ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΔΙΑΣΩΣΗ 254 ΠΟΛΙΤΩΝ ΔΙΑ ΘΑΛΑΣΣΗΣ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564390931/i-grafeiokratia-toy-potismatos-stin-ethniki-vivliothiki/",
+      "title": "Η γραφειοκρατία του ποτίσματος στην Εθνική Βιβλιοθήκη",
+      "normalized_title": "Η ΓΡΑΦΕΙΟΚΡΑΤΙΑ ΤΟΥ ΠΟΤΙΣΜΑΤΟΣ ΣΤΗΝ ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564392779/pyrkagia-stin-attikovoiotia-eikones-kai-vinteo-apo-ti-diasosi-254-politon-dia-thalassis/"
+        "https://www.kathimerini.gr/society/reportaz/564390931/i-grafeiokratia-toy-potismatos-stin-ethniki-vivliothiki/",
+        "https://www.kathimerini.gr/world/564392872/voylgaria-exerragi-drone-konta-ston-agogo-fysikoy-aerioy-trans-balkan/"
       ],
-      "seen_at_utc": "2026-08-08T15:51:26.466035+00:00"
+      "seen_at_utc": "2026-08-08T16:17:24.672146+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862469/enas-sovara-traumatias-apo-trohaio-me-gourouna-stin-ileia/?utm_source=rss",
-      "title": "Ένας σοβαρά τραυματίας από τροχαίο με γουρούνα στην Ηλεία",
-      "normalized_title": "ΕΝΑΣ ΣΟΒΑΡΑ ΤΡΑΥΜΑΤΙΑΣ ΑΠΟ ΤΡΟΧΑΙΟ ΜΕ ΓΟΥΡΟΥΝΑ ΣΤΗΝ ΗΛΕΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1862474/fotia-tora-sti-mikri-vigla-tis-naxou-sikothike-ena-elikoptero/?utm_source=rss",
+      "title": "Φωτιά τώρα στη Μικρή Βίγλα της Νάξου, σηκώθηκε ένα ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗ ΜΙΚΡΗ ΒΙΓΛΑ ΤΗΣ ΝΑΞΟΥ, ΣΗΚΩΘΗΚΕ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862469/enas-sovara-traumatias-apo-trohaio-me-gourouna-stin-ileia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862474/fotia-tora-sti-mikri-vigla-tis-naxou-sikothike-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862472/tragodia-stin-paro-pnigike-4hronos-se-pisina/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862471/kleistos-o-lofos-finopoulou-stin-athina-logo-auximenou-kindunou-ekdilosis-purkagias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T15:51:26.466111+00:00"
+      "seen_at_utc": "2026-08-08T16:17:24.672269+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1444349/o-attalos-g%ce%84-kai-i-politiki-klironomia-toy/",
-      "title": "Ο Ατταλος Γ΄ και η πολιτική κληρονομιά του",
-      "normalized_title": "Ο ΑΤΤΑΛΟΣ Γ΄ ΚΑΙ Η ΠΟΛΙΤΙΚΗ ΚΛΗΡΟΝΟΜΙΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1444558/iran-i-symfonia-gia-to-ormoyz-einai-pro-ton-pylon-omos-i-teherani-vazei-oroys-stis-ipa-gia-na-anoixei-ta-stena/",
+      "title": "Ιράν: Η συμφωνία για το Ορμούζ είναι προ των πυλών, όμως η Τεχεράνη βάζει όρους στις ΗΠΑ για να ανοίξει τα Στενά",
+      "normalized_title": "ΙΡΑΝ: Η ΣΥΜΦΩΝΙΑ ΓΙΑ ΤΟ ΟΡΜΟΥΖ ΕΙΝΑΙ ΠΡΟ ΤΩΝ ΠΥΛΩΝ, ΟΜΩΣ Η ΤΕΧΕΡΑΝΗ ΒΑΖΕΙ ΟΡΟΥΣ ΣΤΙΣ ΗΠΑ ΓΙΑ ΝΑ ΑΝΟΙΞΕΙ ΤΑ ΣΤΕΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1444349/o-attalos-g%ce%84-kai-i-politiki-klironomia-toy/",
-        "https://www.efsyn.gr/stiles/1444343/i-ypothetiki-hora-ton-metanaston/"
+        "https://www.efsyn.gr/kosmos/1444558/iran-i-symfonia-gia-to-ormoyz-einai-pro-ton-pylon-omos-i-teherani-vazei-oroys-stis-ipa-gia-na-anoixei-ta-stena/"
       ],
-      "seen_at_utc": "2026-08-08T15:51:26.466096+00:00"
+      "seen_at_utc": "2026-08-08T16:17:24.672241+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/kastoria-arkouda-entopistike-nekri-pithanon-apo-pyrovolismo/",
-      "title": "Καστοριά: Αρκούδα εντοπίστηκε νεκρή, πιθανόν από πυροβολισμό",
-      "normalized_title": "ΚΑΣΤΟΡΙΑ: ΑΡΚΟΥΔΑ ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΗ, ΠΙΘΑΝΟΝ ΑΠΟ ΠΥΡΟΒΟΛΙΣΜΟ",
+      "url": "https://www.in.gr/2026/08/08/greece/fotia-sti-nakso-epixeirei-ena-elikoptero/",
+      "title": "Φωτιά στη Νάξο – Επιχειρεί ένα ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΝΑΞΟ – ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/kastoria-arkouda-entopistike-nekri-pithanon-apo-pyrovolismo/",
-        "https://www.in.gr/2026/08/08/sports/basketball/i-filia-tou-mpekam-me-ton-tzorntan-oi-koines-diakopes-kai-to-no23-sti-real-pros-timin-tou-air-vidpics/",
-        "https://www.in.gr/2026/08/08/greece/ydroponiki-kannavi-kai-diakinisi-stin-panepistimioupoli-zografou-treis-syllipseis-apo-ti-dioksi-narkotikon/"
+        "https://www.in.gr/2026/08/08/greece/fotia-sti-nakso-epixeirei-ena-elikoptero/",
+        "https://www.in.gr/2026/08/08/greece/pos-tha-kanete-kataggelia-gia-tis-paralies-me-tin-efarmogi-mycoast/",
+        "https://www.in.gr/2026/08/08/life/culture-live/pos-ta-sxolia-gia-to-soma-epireazoun-osous-exoun-diatrofiki-diataraxi/",
+        "https://www.in.gr/2026/08/08/sports/football/to-thryliko-mpomponera-megalonei-kai-ftanei-stis-80-000-theseis-vids/",
+        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/anoixtoi-kodikes-texnitis-noimosynis-vs-kleiston-sto-vathos-i-kina/"
       ],
-      "seen_at_utc": "2026-08-08T15:51:26.466079+00:00"
+      "seen_at_utc": "2026-08-08T16:17:24.672195+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T15:51:26.466194+00:00"
+  "updated_at_utc": "2026-08-08T16:17:24.672358+00:00"
 }
