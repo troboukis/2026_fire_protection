@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564392428/thessaloniki-syllipsi-37chronoy-meta-apo-emploki-toy-klemmenoy-ich-poy-odigoyse-se-trochaio/",
-      "title": "Θεσσαλονίκη: Σύλληψη 37χρονου μετά από τροχαίο με κλεμμένο ΙΧ",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΛΛΗΨΗ 37ΧΡΟΝΟΥ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΜΕ ΚΛΕΜΜΕΝΟ ΙΧ",
+      "url": "https://www.kathimerini.gr/politics/564392443/miniaia-epanexetasi-gia-toys-patriot-sti-saoydiki-aravia/",
+      "title": "Μηνιαία επανεξέταση για τους Patriot στη Σαουδική Αραβία",
+      "normalized_title": "ΜΗΝΙΑΙΑ ΕΠΑΝΕΞΕΤΑΣΗ ΓΙΑ ΤΟΥΣ PATRIOT ΣΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564392428/thessaloniki-syllipsi-37chronoy-meta-apo-emploki-toy-klemmenoy-ich-poy-odigoyse-se-trochaio/"
+        "https://www.kathimerini.gr/politics/564392443/miniaia-epanexetasi-gia-toys-patriot-sti-saoydiki-aravia/",
+        "https://www.kathimerini.gr/society/564392434/synedriasi-epitropis-ektimisis-kindynoy-gia-toys-ischyroys-anemoys-kai-tis-ypsiles-thermokrasies/",
+        "https://www.kathimerini.gr/economy/business/564391132/enischysi-ependytikon-schedion-sta-nisia-toy-voreioy-aigaioy/"
       ],
-      "seen_at_utc": "2026-08-08T08:30:05.778395+00:00"
+      "seen_at_utc": "2026-08-08T08:51:20.303688+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,13 +1261,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862378/i-epomeni-imera-meta-tis-purkagies-sti-dutiki-attiki-ta-erga-antinero-kai-o-agonas-dromou-prin-apo-tis-vrohes/?utm_source=rss",
-      "title": "Η επόμενη ημέρα μετά τις πυρκαγιές στη Δυτική Αττική: Τα έργα Antinero και ο αγώνας δρόμου πριν από τις βροχές",
-      "normalized_title": "Η ΕΠΟΜΕΝΗ ΗΜΕΡΑ ΜΕΤΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΤΑ ΕΡΓΑ ANTINERO ΚΑΙ Ο ΑΓΩΝΑΣ ΔΡΟΜΟΥ ΠΡΙΝ ΑΠΟ ΤΙΣ ΒΡΟΧΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1862387/oi-marturies-katoikon-gia-ton-dimarho-mandras-eidullias-esose-to-spiti-mas-eno-dipla-kaigotan-to-diko-tou/?utm_source=rss",
+      "title": "Οι μαρτυρίες κατοίκων για τον δήμαρχο Μάνδρας-Ειδυλλίας: «Έσωσε το σπίτι μας, ενώ δίπλα καιγόταν το δικό του»",
+      "normalized_title": "ΟΙ ΜΑΡΤΥΡΙΕΣ ΚΑΤΟΙΚΩΝ ΓΙΑ ΤΟΝ ΔΗΜΑΡΧΟ ΜΑΝΔΡΑΣ-ΕΙΔΥΛΛΙΑΣ: «ΕΣΩΣΕ ΤΟ ΣΠΙΤΙ ΜΑΣ, ΕΝΩ ΔΙΠΛΑ ΚΑΙΓΟΤΑΝ ΤΟ ΔΙΚΟ ΤΟΥ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862378/i-epomeni-imera-meta-tis-purkagies-sti-dutiki-attiki-ta-erga-antinero-kai-o-agonas-dromou-prin-apo-tis-vrohes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862387/oi-marturies-katoikon-gia-ton-dimarho-mandras-eidullias-esose-to-spiti-mas-eno-dipla-kaigotan-to-diko-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T08:17:19.721471+00:00"
+      "seen_at_utc": "2026-08-08T08:51:20.303780+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/politiki/1444402/se-dyo-faseis-i-episkepsi-tsipra-sti-thessaloniki/",
@@ -1278,17 +1280,15 @@
       "seen_at_utc": "2026-08-08T08:30:05.778441+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/stin-koryfi-ton-coach-power-rankings-o-mpartzokas-tritos-o-omprantovits/",
-      "title": "«Στην κορυφή των coach power rankings ο Μπαρτζώκας – Τρίτος ο Ομπράντοβιτς»",
-      "normalized_title": "«ΣΤΗΝ ΚΟΡΥΦΗ ΤΩΝ COACH POWER RANKINGS Ο ΜΠΑΡΤΖΩΚΑΣ – ΤΡΙΤΟΣ Ο ΟΜΠΡΑΝΤΟΒΙΤΣ»",
+      "url": "https://www.in.gr/2026/08/08/sports/basketball/sta-xnaria-tou-kanter-o-gouait-thelei-na-dilosei-symmetoxi-sto-draft-tou-wnba-vid/",
+      "title": "Στα… χνάρια του Καντέρ: Ο Γουάιτ θέλει να δηλώσει συμμετοχή στο Draft του WNBA (vid)",
+      "normalized_title": "ΣΤΑ… ΧΝΑΡΙΑ ΤΟΥ ΚΑΝΤΕΡ: Ο ΓΟΥΑΙΤ ΘΕΛΕΙ ΝΑ ΔΗΛΩΣΕΙ ΣΥΜΜΕΤΟΧΗ ΣΤΟ DRAFT ΤΟΥ WNBA (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/stin-koryfi-ton-coach-power-rankings-o-mpartzokas-tritos-o-omprantovits/",
-        "https://www.in.gr/2026/08/08/go-fun/fizz/lila-mpaklesi-gennise-to-proto-paidi-tis-i-anartisi-tou-syntrofou-tis/",
-        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/pou-zoun-oi-plousioteroi-i-megali-dynami-kai-i-megali-anisotita-ton-xrimatooikonomikon-poleon/",
-        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/e-efka-dypa-o-xartis-pliromon-eos-14-aygoustou/"
+        "https://www.in.gr/2026/08/08/sports/basketball/sta-xnaria-tou-kanter-o-gouait-thelei-na-dilosei-symmetoxi-sto-draft-tou-wnba-vid/",
+        "https://www.in.gr/2026/08/08/greece/apo-to-sok-tis-syllipsis-i-dilosi-gia-ti-syntaksi-ti-leei-o-dikigoros-tou-55xronou-ston-mystra/"
       ],
-      "seen_at_utc": "2026-08-08T08:17:19.721427+00:00"
+      "seen_at_utc": "2026-08-08T08:51:20.303730+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T08:30:05.778511+00:00"
+  "updated_at_utc": "2026-08-08T08:51:20.303853+00:00"
 }
