@@ -1,18 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564391150/exagora-trion-monadon-tis-el-pack-apo-tin-dunapack/",
-      "title": "Εξαγορά τριών μονάδων της El Pack από την Dunapack",
-      "normalized_title": "ΕΞΑΓΟΡΑ ΤΡΙΩΝ ΜΟΝΑΔΩΝ ΤΗΣ EL PACK ΑΠΟ ΤΗΝ DUNAPACK",
+      "url": "https://www.kathimerini.gr/economy/business/564391147/ischyri-ayxisi-megethon-gia-metka-to-proto-examino/",
+      "title": "Ισχυρή αύξηση μεγεθών για METKA το πρώτο εξάμηνο",
+      "normalized_title": "ΙΣΧΥΡΗ ΑΥΞΗΣΗ ΜΕΓΕΘΩΝ ΓΙΑ METKA ΤΟ ΠΡΩΤΟ ΕΞΑΜΗΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564391150/exagora-trion-monadon-tis-el-pack-apo-tin-dunapack/",
-        "https://www.kathimerini.gr/society/564392386/gaydos-epicheirisi-diasosis-31chronis-apo-dysvato-simeio/",
-        "https://www.kathimerini.gr/economy/business/564391105/eyoiones-prooptikes-ton-ellinikon-trapezon/",
-        "https://www.kathimerini.gr/society/564392377/pyrkagia-se-akatoikito-ktirio-stin-koymoyndoyroy/",
-        "https://www.kathimerini.gr/athletics/564392350/o-yperochos-marveloys-nakampa/",
-        "https://www.kathimerini.gr/economy/local/564391114/oi-ayxiseis-sta-atisan-ston-katotato-istho/"
+        "https://www.kathimerini.gr/economy/business/564391147/ischyri-ayxisi-megethon-gia-metka-to-proto-examino/",
+        "https://www.kathimerini.gr/economy/local/564391129/toyrismos-i-odysseia-efere-alma-stis-kratiseis/",
+        "https://www.kathimerini.gr/k/gastronomos/564392398/kathoyropites-tyropites-tiganites-apo-tin-ikaria/"
       ],
-      "seen_at_utc": "2026-08-08T07:51:23.976404+00:00"
+      "seen_at_utc": "2026-08-08T08:17:19.721364+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1261,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862372/purkagia-se-akatoikito-ktirio-stin-koumoundourou-apeglovistike-ena-atomo/?utm_source=rss",
-      "title": "Πυρκαγιά σε ακατοίκητο κτήριο στην Κουμουνδούρου, απεγκλωβίστηκε ένα άτομο",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΑΚΑΤΟΙΚΗΤΟ ΚΤΗΡΙΟ ΣΤΗΝ ΚΟΥΜΟΥΝΔΟΥΡΟΥ, ΑΠΕΓΚΛΩΒΙΣΤΗΚΕ ΕΝΑ ΑΤΟΜΟ",
+      "url": "https://www.protothema.gr/greece/article/1862378/i-epomeni-imera-meta-tis-purkagies-sti-dutiki-attiki-ta-erga-antinero-kai-o-agonas-dromou-prin-apo-tis-vrohes/?utm_source=rss",
+      "title": "Η επόμενη ημέρα μετά τις πυρκαγιές στη Δυτική Αττική: Τα έργα Antinero και ο αγώνας δρόμου πριν από τις βροχές",
+      "normalized_title": "Η ΕΠΟΜΕΝΗ ΗΜΕΡΑ ΜΕΤΑ ΤΙΣ ΠΥΡΚΑΓΙΕΣ ΣΤΗ ΔΥΤΙΚΗ ΑΤΤΙΚΗ: ΤΑ ΕΡΓΑ ANTINERO ΚΑΙ Ο ΑΓΩΝΑΣ ΔΡΟΜΟΥ ΠΡΙΝ ΑΠΟ ΤΙΣ ΒΡΟΧΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862372/purkagia-se-akatoikito-ktirio-stin-koumoundourou-apeglovistike-ena-atomo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862378/i-epomeni-imera-meta-tis-purkagies-sti-dutiki-attiki-ta-erga-antinero-kai-o-agonas-dromou-prin-apo-tis-vrohes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T07:51:23.976506+00:00"
+      "seen_at_utc": "2026-08-08T08:17:19.721471+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/gallery/mia-eikona-340-lexeis/",
-      "title": "Μια εικόνα, 340 λέξεις",
-      "normalized_title": "ΜΙΑ ΕΙΚΟΝΑ, 340 ΛΕΞΕΙΣ",
+      "url": "https://www.efsyn.gr/politiki/1444395/pyra-patoyli-se-galazioys-foreis/",
+      "title": "Πυρά Πατούλη σε «γαλάζιους» φορείς",
+      "normalized_title": "ΠΥΡΑ ΠΑΤΟΥΛΗ ΣΕ «ΓΑΛΑΖΙΟΥΣ» ΦΟΡΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/gallery/mia-eikona-340-lexeis/",
-        "https://www.efsyn.gr/ellada/1444381/pyrkagia-se-akatoikito-ktirio-stin-odo-koymoyndoyroy-apegklovistike-ena-atomo/"
+        "https://www.efsyn.gr/politiki/1444395/pyra-patoyli-se-galazioys-foreis/",
+        "https://www.efsyn.gr/politiki/1444392/sti-harilaoy-trikoypi-hamogeloyn-me-tin-ekthesi-toy-oosa/",
+        "https://www.efsyn.gr/stiles/1444319/aygoystiatika/",
+        "https://www.efsyn.gr/stiles/1444315/poios-kyprios-igetis-tha-dianysei-to-teleytaio-mili/",
+        "https://www.efsyn.gr/stiles/1444310/to-lygoyrio-ekpempei-sos/",
+        "https://www.efsyn.gr/stiles/1444305/to-atyhima-kai-i-prosvasimotita/",
+        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-t-astra-5/",
+        "https://www.efsyn.gr/gallery/ennea-pente-6/",
+        "https://www.efsyn.gr/gallery/o-mikros-koylis-7/",
+        "https://www.efsyn.gr/gallery/oi-haraktires-feygoyne-alla-to-gelio-menei/",
+        "https://www.efsyn.gr/ellada/1444386/antistrofi-metrisi-gia-tin-ekdosi-toy-31hronoy-poy-synelifthi-os-enas-apo-toys-ektelestes-tis-greek-mafia/"
       ],
-      "seen_at_utc": "2026-08-08T07:51:23.976477+00:00"
+      "seen_at_utc": "2026-08-08T08:17:19.721446+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/football/o-paylidis-thelei-fenermpaxtse-i-mpenfika-ekleise-tin-porta/",
-      "title": "«Ο Παυλίδης θέλει Φενέρμπαχτσε, η Μπενφίκα… έκλεισε την πόρτα»",
-      "normalized_title": "«Ο ΠΑΥΛΙΔΗΣ ΘΕΛΕΙ ΦΕΝΕΡΜΠΑΧΤΣΕ, Η ΜΠΕΝΦΙΚΑ… ΕΚΛΕΙΣΕ ΤΗΝ ΠΟΡΤΑ»",
+      "url": "https://www.in.gr/2026/08/08/sports/basketball/euroleague/stin-koryfi-ton-coach-power-rankings-o-mpartzokas-tritos-o-omprantovits/",
+      "title": "«Στην κορυφή των coach power rankings ο Μπαρτζώκας – Τρίτος ο Ομπράντοβιτς»",
+      "normalized_title": "«ΣΤΗΝ ΚΟΡΥΦΗ ΤΩΝ COACH POWER RANKINGS Ο ΜΠΑΡΤΖΩΚΑΣ – ΤΡΙΤΟΣ Ο ΟΜΠΡΑΝΤΟΒΙΤΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/football/o-paylidis-thelei-fenermpaxtse-i-mpenfika-ekleise-tin-porta/",
-        "https://www.in.gr/2026/08/08/greece/fotia-se-akatoikito-ktirio-stin-odo-koumoundourou-apegklovistike-ena-atomo/",
-        "https://www.in.gr/2026/08/08/sports/football/to-trelo-symvolaio-tou-salax-me-tin-trampzonspor-apo-amaksia-kai-viles-mexri-kommotirio-kai-xarti-ygeias/"
+        "https://www.in.gr/2026/08/08/sports/basketball/euroleague/stin-koryfi-ton-coach-power-rankings-o-mpartzokas-tritos-o-omprantovits/",
+        "https://www.in.gr/2026/08/08/go-fun/fizz/lila-mpaklesi-gennise-to-proto-paidi-tis-i-anartisi-tou-syntrofou-tis/",
+        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/pou-zoun-oi-plousioteroi-i-megali-dynami-kai-i-megali-anisotita-ton-xrimatooikonomikon-poleon/",
+        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/e-efka-dypa-o-xartis-pliromon-eos-14-aygoustou/"
       ],
-      "seen_at_utc": "2026-08-08T07:51:23.976457+00:00"
+      "seen_at_utc": "2026-08-08T08:17:19.721427+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T07:51:23.976603+00:00"
+  "updated_at_utc": "2026-08-08T08:17:19.721558+00:00"
 }
