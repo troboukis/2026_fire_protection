@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564392713/bloomberg-i-toyrkia-periorizei-ti-dieleysi-ploion-pros-ti-mayri-thalassa/",
-      "title": "Bloomberg: Η Τουρκία περιορίζει τη διέλευση πλοίων προς τη Μαύρη Θάλασσα",
-      "normalized_title": "BLOOMBERG: Η ΤΟΥΡΚΙΑ ΠΕΡΙΟΡΙΖΕΙ ΤΗ ΔΙΕΛΕΥΣΗ ΠΛΟΙΩΝ ΠΡΟΣ ΤΗ ΜΑΥΡΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.kathimerini.gr/society/564389926/i-anoichti-epistoli-tis-ellinon-tis-astoria-ston-mamntani/",
+      "title": "Η ανοιχτή επιστολή των Ελλήνων της Αστόρια στον Μαμντάνι",
+      "normalized_title": "Η ΑΝΟΙΧΤΗ ΕΠΙΣΤΟΛΗ ΤΩΝ ΕΛΛΗΝΩΝ ΤΗΣ ΑΣΤΟΡΙΑ ΣΤΟΝ ΜΑΜΝΤΑΝΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564392713/bloomberg-i-toyrkia-periorizei-ti-dieleysi-ploion-pros-ti-mayri-thalassa/"
+        "https://www.kathimerini.gr/society/564389926/i-anoichti-epistoli-tis-ellinon-tis-astoria-ston-mamntani/",
+        "https://www.kathimerini.gr/world/564392725/tanker-chtypithike-apo-vlima-anoikta-toy-oman/"
       ],
-      "seen_at_utc": "2026-08-08T13:51:26.011892+00:00"
+      "seen_at_utc": "2026-08-08T14:17:07.675149+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,29 @@
       "seen_at_utc": "2026-08-08T13:51:26.012010+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444539/saronikos-nekros-anasyrthike-43hronos-allodapos-apo-ti-thalassa/",
-      "title": "Σαρωνικός: Νεκρός ανασύρθηκε 43χρονος αλλοδαπός από τη θάλασσα",
-      "normalized_title": "ΣΑΡΩΝΙΚΟΣ: ΝΕΚΡΟΣ ΑΝΑΣΥΡΘΗΚΕ 43ΧΡΟΝΟΣ ΑΛΛΟΔΑΠΟΣ ΑΠΟ ΤΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.efsyn.gr/ellada/1444541/ypoklopes-kesses-kata-enosis-eisaggeleon-na-papsei-na-ektithetai-me-tis-epilektikes-i-pithanos-kata-paraggelia-paremvaseis-tis/",
+      "title": "Υποκλοπές: Κεσσές κατά Ένωσης Εισαγγελέων – «Να πάψει να εκτίθεται με τις επιλεκτικές ή πιθανώς κατά παραγγελία παρεμβάσεις της»",
+      "normalized_title": "ΥΠΟΚΛΟΠΕΣ: ΚΕΣΣΕΣ ΚΑΤΑ ΕΝΩΣΗΣ ΕΙΣΑΓΓΕΛΕΩΝ – «ΝΑ ΠΑΨΕΙ ΝΑ ΕΚΤΙΘΕΤΑΙ ΜΕ ΤΙΣ ΕΠΙΛΕΚΤΙΚΕΣ Η ΠΙΘΑΝΩΣ ΚΑΤΑ ΠΑΡΑΓΓΕΛΙΑ ΠΑΡΕΜΒΑΣΕΙΣ ΤΗΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444539/saronikos-nekros-anasyrthike-43hronos-allodapos-apo-ti-thalassa/"
+        "https://www.efsyn.gr/ellada/1444541/ypoklopes-kesses-kata-enosis-eisaggeleon-na-papsei-na-ektithetai-me-tis-epilektikes-i-pithanos-kata-paraggelia-paremvaseis-tis/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-arheio-3/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-08-08-2026/"
       ],
-      "seen_at_utc": "2026-08-08T13:51:26.011979+00:00"
+      "seen_at_utc": "2026-08-08T14:17:07.675262+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/football/ofi-konta-se-sold-out-gia-ton-superbet-super-cup/",
-      "title": "ΟΦΗ: Κοντά σε sold out για τον Superbet Super Cup",
-      "normalized_title": "ΟΦΗ: ΚΟΝΤΑ ΣΕ SOLD OUT ΓΙΑ ΤΟΝ SUPERBET SUPER CUP",
+      "url": "https://www.in.gr/2026/08/08/sports/football/tzolis-gia-to-proto-gkol-me-tin-arsenal-otan-skorareis-me-atomiki-energeia-sou-dinei-aytopepoithisi-vid/",
+      "title": "Τζόλης για το πρώτο γκολ με την Άρσεναλ: «Όταν σκοράρεις με ατομική ενέργεια σου δίνει αυτοπεποίθηση» (vid)",
+      "normalized_title": "ΤΖΟΛΗΣ ΓΙΑ ΤΟ ΠΡΩΤΟ ΓΚΟΛ ΜΕ ΤΗΝ ΑΡΣΕΝΑΛ: «ΟΤΑΝ ΣΚΟΡΑΡΕΙΣ ΜΕ ΑΤΟΜΙΚΗ ΕΝΕΡΓΕΙΑ ΣΟΥ ΔΙΝΕΙ ΑΥΤΟΠΕΠΟΙΘΗΣΗ» (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/football/ofi-konta-se-sold-out-gia-ton-superbet-super-cup/",
-        "https://www.in.gr/2026/08/08/world/kosovo-vouleytis-tis-antipoliteysis-petaei-ayga-ston-anapliroti-prothypourgo-almpin-kourti/",
-        "https://www.in.gr/2026/08/08/greece/pyrkagia-attikovoiotias-51-enaeria-mesa-den-mporousan-na-pragmatopoiisoun-ripseis-logo-anemon-eipe-o-tournas/",
-        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/tourismos-airbnb-vs-ksenodoxeia-pos-allazei-o-xartis-tis-filoksenias/",
-        "https://www.in.gr/2026/08/08/sports/football/i-fenermpaxtse-ksekinise-epafes-me-loukakou-meta-to-oxi-tis-mpenfika-gia-paylidi/"
+        "https://www.in.gr/2026/08/08/sports/football/tzolis-gia-to-proto-gkol-me-tin-arsenal-otan-skorareis-me-atomiki-energeia-sou-dinei-aytopepoithisi-vid/",
+        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/i-oukraniki-startup-piso-apo-ta-drones-pou-xtypoun-vathia-ti-rosia/",
+        "https://www.in.gr/2026/08/08/politics/politiki-grammateia/i-propaganda-stamata-ekei-pou-arxizoun-oi-arithmoi/",
+        "https://www.in.gr/2026/08/08/stories/proevlepan-panta-ta-taro-to-mellon/",
+        "https://www.in.gr/2026/08/08/economy/diethnis-oikonomia/orgi-tramp-gia-dikastiko-mploko-pagonoun-oi-ergasies-sti-nea-aithousa-deksioseon/"
       ],
-      "seen_at_utc": "2026-08-08T13:51:26.011950+00:00"
+      "seen_at_utc": "2026-08-08T14:17:07.675218+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T13:51:26.012142+00:00"
+  "updated_at_utc": "2026-08-08T14:17:07.675347+00:00"
 }
