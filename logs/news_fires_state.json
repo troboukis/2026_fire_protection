@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/diktis/564391174/antistrofi-metrisi-gia-anakainisi-katoikias/",
-      "title": "Αντίστροφη μέτρηση για «Ανακαίνιση Κατοικίας»",
-      "normalized_title": "ΑΝΤΙΣΤΡΟΦΗ ΜΕΤΡΗΣΗ ΓΙΑ «ΑΝΑΚΑΙΝΙΣΗ ΚΑΤΟΙΚΙΑΣ»",
+      "url": "https://www.kathimerini.gr/opinion/564390895/i-eyropi-pnigetai-se-mia-koytalia-mesogeio/",
+      "title": "Η Ευρώπη πνίγεται σε μια κουταλιά Μεσόγειο",
+      "normalized_title": "Η ΕΥΡΩΠΗ ΠΝΙΓΕΤΑΙ ΣΕ ΜΙΑ ΚΟΥΤΑΛΙΑ ΜΕΣΟΓΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/diktis/564391174/antistrofi-metrisi-gia-anakainisi-katoikias/",
-        "https://www.kathimerini.gr/politics/564392269/i-antidrasi-tis-toyrkias-me-aformi-to-neo-chorotaxiko-gia-ton-toyrismo/",
-        "https://www.kathimerini.gr/politics/564390709/kalokairini-stoli/"
+        "https://www.kathimerini.gr/opinion/564390895/i-eyropi-pnigetai-se-mia-koytalia-mesogeio/",
+        "https://www.kathimerini.gr/opinion/564390883/astynomiki-istoria-ston-oyrano/",
+        "https://www.kathimerini.gr/opinion/564391051/katastrofi-se-synechi-roi/",
+        "https://www.kathimerini.gr/world/564392284/i-oyasigkton-tha-prosferei-voitheia-1-dis-dolarion-sti-nea-kyvernisi-tis-kolomvias/",
+        "https://www.kathimerini.gr/economy/local/564391111/kata-14-6-anilthe-i-axia-ton-exagogon-to-proto-examino/"
       ],
-      "seen_at_utc": "2026-08-08T05:17:12.483614+00:00"
+      "seen_at_utc": "2026-08-08T05:29:59.889336+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1263,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862319/polu-upsilos-kindunos-purkagias-simera-se-kriti-kai-voreio-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς σήμερα σε Κρήτη και Βόρειο Αιγαίο, ποιες περιοχές είναι στο «πορτοκαλί»",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΕ ΚΡΗΤΗ ΚΑΙ ΒΟΡΕΙΟ ΑΙΓΑΙΟ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΤΟ «ΠΟΡΤΟΚΑΛΙ»",
+      "url": "https://www.protothema.gr/greece/article/1862330/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
+      "title": "Tα κυριακάτικα πρωινά, γίνονται καλύτερα με efood market και Πρώτο Θέμα!",
+      "normalized_title": "TΑ ΚΥΡΙΑΚΑΤΙΚΑ ΠΡΩΙΝΑ, ΓΙΝΟΝΤΑΙ ΚΑΛΥΤΕΡΑ ΜΕ EFOOD MARKET ΚΑΙ ΠΡΩΤΟ ΘΕΜΑ!",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862319/polu-upsilos-kindunos-purkagias-simera-se-kriti-kai-voreio-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862330/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T04:17:33.952612+00:00"
+      "seen_at_utc": "2026-08-08T05:29:59.889450+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444311/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 8 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 8 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1444316/kairos-anodos-tis-thermokrasias-kai-meltemia-oi-periohes-se-red-code/",
+      "title": "Καιρός: Άνοδος της θερμοκρασίας και μελτέμια – Οι περιοχές σε Red Code",
+      "normalized_title": "ΚΑΙΡΟΣ: ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΚΑΙ ΜΕΛΤΕΜΙΑ – ΟΙ ΠΕΡΙΟΧΕΣ ΣΕ RED CODE",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444311/eortologio-poioi-giortazoyn-simera-8-aygoystoy/",
-        "https://www.efsyn.gr/protoselida/den-plirono/"
+        "https://www.efsyn.gr/ellada/1444316/kairos-anodos-tis-thermokrasias-kai-meltemia-oi-periohes-se-red-code/"
       ],
-      "seen_at_utc": "2026-08-08T05:17:12.483683+00:00"
+      "seen_at_utc": "2026-08-08T05:29:59.889423+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/greece/kairos-stous-39c-skarfalonei-o-ydrargyros-to-savvato-enisxymenoi-voreioi-anemoi-sto-aigaio/",
-      "title": "Στους 39°C σκαρφαλώνει ο υδράργυρος το Σάββατο - Ενισχυμένοι βόρειοι άνεμοι στο Αιγαίο",
-      "normalized_title": "ΣΤΟΥΣ 39°C ΣΚΑΡΦΑΛΩΝΕΙ Ο ΥΔΡΑΡΓΥΡΟΣ ΤΟ ΣΑΒΒΑΤΟ - ΕΝΙΣΧΥΜΕΝΟΙ ΒΟΡΕΙΟΙ ΑΝΕΜΟΙ ΣΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.in.gr/2026/08/08/sports/football/ti-elege-o-giamal-prin-apo-ton-teliko-tou-mountial-vid/",
+      "title": "Τι έλεγε ο Γιαμάλ πριν από τον τελικό του Μουντιάλ (vid)",
+      "normalized_title": "ΤΙ ΕΛΕΓΕ Ο ΓΙΑΜΑΛ ΠΡΙΝ ΑΠΟ ΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΜΟΥΝΤΙΑΛ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/greece/kairos-stous-39c-skarfalonei-o-ydrargyros-to-savvato-enisxymenoi-voreioi-anemoi-sto-aigaio/",
-        "https://www.in.gr/2026/08/08/editorial/ypoklopes-oses-fores-kai-ean-ena-kathestotiko-systima-eksousias-arxeiothetisei-mia-ypothesi-ayto-den-simainei-oti-den-mporei-kai-den-prepei-na-anoiksei-ksana/",
-        "https://www.in.gr/2026/08/08/world/o-poutin-tha-mporouse-na-prokalesei-to-nato-ektos-oukranias-me-kyvernoepithesi-i-akomi-kai-xersaia-eisvoli/",
-        "https://www.in.gr/2026/08/08/english-edition/ppc-expands-central-european-footprint-with-2-gw-renewables-deal/",
-        "https://www.in.gr/2026/08/08/life/geysi/syntagi-spitiko-pagoto-kiwi-lime/",
-        "https://www.in.gr/2026/08/08/economy/oikonomikes-eidiseis/asfalistikes-eisfores-pro-ton-pylon-nea-meiosi-grafima/",
-        "https://www.in.gr/2026/08/08/plus/vita/meta-ta-50-i-mesogeiaki-diatrofi-prostateyei-tin-psyxiki-ygeia/"
+        "https://www.in.gr/2026/08/08/sports/football/ti-elege-o-giamal-prin-apo-ton-teliko-tou-mountial-vid/",
+        "https://www.in.gr/2026/08/08/life/culture-live/o-thaymatopoios-se-skinothesia-thanasi-dovri-sto-theatro-mpellos/"
       ],
-      "seen_at_utc": "2026-08-08T05:17:12.483658+00:00"
+      "seen_at_utc": "2026-08-08T05:29:59.889382+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T05:17:12.483783+00:00"
+  "updated_at_utc": "2026-08-08T05:29:59.889518+00:00"
 }
