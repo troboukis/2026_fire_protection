@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564390895/i-eyropi-pnigetai-se-mia-koytalia-mesogeio/",
-      "title": "Η Ευρώπη πνίγεται σε μια κουταλιά Μεσόγειο",
-      "normalized_title": "Η ΕΥΡΩΠΗ ΠΝΙΓΕΤΑΙ ΣΕ ΜΙΑ ΚΟΥΤΑΛΙΑ ΜΕΣΟΓΕΙΟ",
+      "url": "https://www.kathimerini.gr/economy/local/564391108/thetikes-oi-ektimiseis-gia-rythmo-anaptyxis-deyteroy-triminoy/",
+      "title": "Θετικές οι εκτιμήσεις για ρυθμό ανάπτυξης δευτέρου τριμήνου",
+      "normalized_title": "ΘΕΤΙΚΕΣ ΟΙ ΕΚΤΙΜΗΣΕΙΣ ΓΙΑ ΡΥΘΜΟ ΑΝΑΠΤΥΞΗΣ ΔΕΥΤΕΡΟΥ ΤΡΙΜΗΝΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564390895/i-eyropi-pnigetai-se-mia-koytalia-mesogeio/",
-        "https://www.kathimerini.gr/opinion/564390883/astynomiki-istoria-ston-oyrano/",
-        "https://www.kathimerini.gr/opinion/564391051/katastrofi-se-synechi-roi/",
-        "https://www.kathimerini.gr/world/564392284/i-oyasigkton-tha-prosferei-voitheia-1-dis-dolarion-sti-nea-kyvernisi-tis-kolomvias/",
-        "https://www.kathimerini.gr/economy/local/564391111/kata-14-6-anilthe-i-axia-ton-exagogon-to-proto-examino/"
+        "https://www.kathimerini.gr/economy/local/564391108/thetikes-oi-ektimiseis-gia-rythmo-anaptyxis-deyteroy-triminoy/",
+        "https://www.kathimerini.gr/athletics/football/564391009/podosfairo-den-thelei-kopo-thelei-tropo/",
+        "https://www.kathimerini.gr/opinion/564390880/eytychos-i-exoysia-den-kykloforei-stoys-dromoys/"
       ],
-      "seen_at_utc": "2026-08-08T05:29:59.889336+00:00"
+      "seen_at_utc": "2026-08-08T05:51:16.317602+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,33 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862330/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
-      "title": "Tα κυριακάτικα πρωινά, γίνονται καλύτερα με efood market και Πρώτο Θέμα!",
-      "normalized_title": "TΑ ΚΥΡΙΑΚΑΤΙΚΑ ΠΡΩΙΝΑ, ΓΙΝΟΝΤΑΙ ΚΑΛΥΤΕΡΑ ΜΕ EFOOD MARKET ΚΑΙ ΠΡΩΤΟ ΘΕΜΑ!",
+      "url": "https://www.protothema.gr/greece/article/1862334/kairos-savvatokuriako-me-39aria-kai-ishura-meltemia-eos-8-bofor-sto-aigaio/?utm_source=rss",
+      "title": "Καιρός: Σαββατοκύριακο με 39άρια και ισχυρά μελτέμια, έως 8 μποφόρ στο Αιγαίο",
+      "normalized_title": "ΚΑΙΡΟΣ: ΣΑΒΒΑΤΟΚΥΡΙΑΚΟ ΜΕ 39ΑΡΙΑ ΚΑΙ ΙΣΧΥΡΑ ΜΕΛΤΕΜΙΑ, ΕΩΣ 8 ΜΠΟΦΟΡ ΣΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862330/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862334/kairos-savvatokuriako-me-39aria-kai-ishura-meltemia-eos-8-bofor-sto-aigaio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-08T05:29:59.889450+00:00"
+      "seen_at_utc": "2026-08-08T05:51:16.317734+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444316/kairos-anodos-tis-thermokrasias-kai-meltemia-oi-periohes-se-red-code/",
-      "title": "Καιρός: Άνοδος της θερμοκρασίας και μελτέμια – Οι περιοχές σε Red Code",
-      "normalized_title": "ΚΑΙΡΟΣ: ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΚΑΙ ΜΕΛΤΕΜΙΑ – ΟΙ ΠΕΡΙΟΧΕΣ ΣΕ RED CODE",
+      "url": "https://www.efsyn.gr/nisides/1443963/anagnosmata-toy-aygoystoy-okto-vivlia-gia-na-katevasoyme-rythmoys/",
+      "title": "Αναγνώσματα του Αυγούστου: Οκτώ βιβλία για να κατεβάσουμε ρυθμούς",
+      "normalized_title": "ΑΝΑΓΝΩΣΜΑΤΑ ΤΟΥ ΑΥΓΟΥΣΤΟΥ: ΟΚΤΩ ΒΙΒΛΙΑ ΓΙΑ ΝΑ ΚΑΤΕΒΑΣΟΥΜΕ ΡΥΘΜΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444316/kairos-anodos-tis-thermokrasias-kai-meltemia-oi-periohes-se-red-code/"
+        "https://www.efsyn.gr/nisides/1443963/anagnosmata-toy-aygoystoy-okto-vivlia-gia-na-katevasoyme-rythmoys/",
+        "https://www.efsyn.gr/athlitismos/1444302/tzani-infantino-o-vasilias-tis-aplistias-ta-erga-kai-oi-imeres-toy-sto-timoni-tis-fifa/",
+        "https://www.efsyn.gr/politiki/1444297/ypoklopes-trito-ohi-gia-nea-ereyna-para-ta-stoiheia-kai-tis-apokalypseis-ntilian/"
       ],
-      "seen_at_utc": "2026-08-08T05:29:59.889423+00:00"
+      "seen_at_utc": "2026-08-08T05:51:16.317707+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/football/ti-elege-o-giamal-prin-apo-ton-teliko-tou-mountial-vid/",
-      "title": "Τι έλεγε ο Γιαμάλ πριν από τον τελικό του Μουντιάλ (vid)",
-      "normalized_title": "ΤΙ ΕΛΕΓΕ Ο ΓΙΑΜΑΛ ΠΡΙΝ ΑΠΟ ΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΜΟΥΝΤΙΑΛ (VID)",
+      "url": "https://www.in.gr/2026/08/08/greece/i-fotia-se-attiki-kai-voiotia-apeleytherose-energeia-isi-me-eksi-vomves-xirosima-111-732-stremmata-eginan-staxti-se-91-ores/",
+      "title": "Η φωτιά σε Αττική και Βοιωτία απελευθέρωσε ενέργεια ίση με έξι βόμβες Χιροσίμα – 111.732 στρέμματα έγιναν στάχτη σε 91 ώρες",
+      "normalized_title": "Η ΦΩΤΙΑ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΒΟΙΩΤΙΑ ΑΠΕΛΕΥΘΕΡΩΣΕ ΕΝΕΡΓΕΙΑ ΙΣΗ ΜΕ ΕΞΙ ΒΟΜΒΕΣ ΧΙΡΟΣΙΜΑ – 111.732 ΣΤΡΕΜΜΑΤΑ ΕΓΙΝΑΝ ΣΤΑΧΤΗ ΣΕ 91 ΩΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/football/ti-elege-o-giamal-prin-apo-ton-teliko-tou-mountial-vid/",
-        "https://www.in.gr/2026/08/08/life/culture-live/o-thaymatopoios-se-skinothesia-thanasi-dovri-sto-theatro-mpellos/"
+        "https://www.in.gr/2026/08/08/greece/i-fotia-se-attiki-kai-voiotia-apeleytherose-energeia-isi-me-eksi-vomves-xirosima-111-732-stremmata-eginan-staxti-se-91-ores/",
+        "https://www.in.gr/2026/08/08/uncategorized/miso-ekat-anthropoi-pethainoun-kathe-xrono-apo-tin-akraia-zesti-i-nea-klimatiki-pragmatikotita-apaitei-nea-antimetopisi/",
+        "https://www.in.gr/2026/08/08/sports/football/nees-apokalypseis-gia-ton-infantino-i-uefa-eixe-plirosei-eksapsifio-poso-se-proin-eromeni-tou/",
+        "https://www.in.gr/2026/08/08/go-fun/social/arkas-i-kalimera-tiy-savvatou/",
+        "https://www.in.gr/2026/08/08/plus/vita/ksexna-to-treksimo-pente-askiseis-gia-dynato-cardio/",
+        "https://www.in.gr/2026/08/08/world/o-tyfonas-dolphin-plittei-tin-okinaoua-tis-iaponias-i-kina-proetoimazetai-gia-tin-afiksi-tou/"
       ],
-      "seen_at_utc": "2026-08-08T05:29:59.889382+00:00"
+      "seen_at_utc": "2026-08-08T05:51:16.317674+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T05:29:59.889518+00:00"
+  "updated_at_utc": "2026-08-08T05:51:16.317805+00:00"
 }
