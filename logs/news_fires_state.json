@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564392947/stoys-39-5-vathmoys-i-thermokrasia-poy-katagrafikan-oi-ypsiloteres-times/",
-      "title": "Στους 39,5 βαθμούς η θερμοκρασία – Πού καταγράφηκαν οι υψηλότερες τιμές",
-      "normalized_title": "ΣΤΟΥΣ 39,5 ΒΑΘΜΟΥΣ Η ΘΕΡΜΟΚΡΑΣΙΑ – ΠΟΥ ΚΑΤΑΓΡΑΦΗΚΑΝ ΟΙ ΥΨΗΛΟΤΕΡΕΣ ΤΙΜΕΣ",
+      "url": "https://www.kathimerini.gr/world/564390856/oi-kalyteres-proponiseis-gia-to-myalo-askiseis-kai-ofeli/",
+      "title": "Οι καλύτερες «προπονήσεις» για το μυαλό – Ασκήσεις και οφέλη",
+      "normalized_title": "ΟΙ ΚΑΛΥΤΕΡΕΣ «ΠΡΟΠΟΝΗΣΕΙΣ» ΓΙΑ ΤΟ ΜΥΑΛΟ – ΑΣΚΗΣΕΙΣ ΚΑΙ ΟΦΕΛΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564392947/stoys-39-5-vathmoys-i-thermokrasia-poy-katagrafikan-oi-ypsiloteres-times/",
-        "https://www.kathimerini.gr/society/564389932/o-karkinos-den-mporei-na-apotelei-mia-isovia-oikonomiki-poini/",
-        "https://www.kathimerini.gr/politics/564391612/ioannis-varvitsiotis-1933-2026-mia-zoi-sta-koina/"
+        "https://www.kathimerini.gr/world/564390856/oi-kalyteres-proponiseis-gia-to-myalo-askiseis-kai-ofeli/"
       ],
-      "seen_at_utc": "2026-08-08T17:17:08.400669+00:00"
+      "seen_at_utc": "2026-08-08T17:51:24.895107+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,24 +1269,25 @@
       "seen_at_utc": "2026-08-08T17:30:01.094619+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1444356/hirosima-nagkasaki-ena-egklima-ohi-toso-makrino/",
-      "title": "Χιροσίμα – Ναγκασάκι: Ένα έγκλημα όχι τόσο μακρινό",
-      "normalized_title": "ΧΙΡΟΣΙΜΑ – ΝΑΓΚΑΣΑΚΙ: ΕΝΑ ΕΓΚΛΗΜΑ ΟΧΙ ΤΟΣΟ ΜΑΚΡΙΝΟ",
+      "url": "https://www.efsyn.gr/ellada/1444579/athina-kleinei-o-lofos-finopoyloy-se-ayximeni-etoimotita-o-dimos-gia-ton-kindyno-pyrkagias/",
+      "title": "Αθήνα: «Κλείνει» ο λόφος Φινόπουλου – Σε αυξημένη ετοιμότητα ο δήμος για τον κίνδυνο πυρκαγιάς",
+      "normalized_title": "ΑΘΗΝΑ: «ΚΛΕΙΝΕΙ» Ο ΛΟΦΟΣ ΦΙΝΟΠΟΥΛΟΥ – ΣΕ ΑΥΞΗΜΕΝΗ ΕΤΟΙΜΟΤΗΤΑ Ο ΔΗΜΟΣ ΓΙΑ ΤΟΝ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1444356/hirosima-nagkasaki-ena-egklima-ohi-toso-makrino/",
-        "https://www.efsyn.gr/ellada/1444572/ti-apanta-i-pyrosvestiki-sto-dimosieyma-kataggelia-pos-den-yparhoyn-antipyrikes-zones-sti-dytiki-attiki/"
+        "https://www.efsyn.gr/ellada/1444579/athina-kleinei-o-lofos-finopoyloy-se-ayximeni-etoimotita-o-dimos-gia-ton-kindyno-pyrkagias/"
       ],
-      "seen_at_utc": "2026-08-08T17:30:01.094584+00:00"
+      "seen_at_utc": "2026-08-08T17:51:24.895179+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/08/sports/football/ta-syllypitiria-tis-mpartselona-ston-mesi-gia-to-thanato-tou-patera-tou-pic/",
-      "title": "Τα συλλυπητήρια της Μπαρτσελόνα στον Μέσι για το θάνατο του πατέρα του (pic)",
-      "normalized_title": "ΤΑ ΣΥΛΛΥΠΗΤΗΡΙΑ ΤΗΣ ΜΠΑΡΤΣΕΛΟΝΑ ΣΤΟΝ ΜΕΣΙ ΓΙΑ ΤΟ ΘΑΝΑΤΟ ΤΟΥ ΠΑΤΕΡΑ ΤΟΥ (PIC)",
+      "url": "https://www.in.gr/2026/08/08/sports/football/aek-athens-kallithea-anoigei-to-skor-i-enosi-me-vitalis-vid/",
+      "title": "ΑΕΚ – Athens Kallithea: «Ανοίγει» το σκορ η «Ένωση» με Βιτάλις (vid)",
+      "normalized_title": "ΑΕΚ – ATHENS KALLITHEA: «ΑΝΟΙΓΕΙ» ΤΟ ΣΚΟΡ Η «ΕΝΩΣΗ» ΜΕ ΒΙΤΑΛΙΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/08/sports/football/ta-syllypitiria-tis-mpartselona-ston-mesi-gia-to-thanato-tou-patera-tou-pic/"
+        "https://www.in.gr/2026/08/08/sports/football/aek-athens-kallithea-anoigei-to-skor-i-enosi-me-vitalis-vid/",
+        "https://www.in.gr/2026/08/08/world/i-xamas-dilonei-ek-neou-etoimi-na-efarmosei-to-sxedio-ton-ipa-gia-ti-gaza/",
+        "https://www.in.gr/2026/08/08/greece/fotia-stin-attikovoiotia-pos-diesose-i-pyrosvestiki-tous-katoikous-perissoteroi-apo-250-polites-apomakrynthikan-dia-thalassis/"
       ],
-      "seen_at_utc": "2026-08-08T17:30:01.094544+00:00"
+      "seen_at_utc": "2026-08-08T17:51:24.895151+00:00"
     }
   },
-  "updated_at_utc": "2026-08-08T17:30:01.094696+00:00"
+  "updated_at_utc": "2026-08-08T17:51:24.895258+00:00"
 }
