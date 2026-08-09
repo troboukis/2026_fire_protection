@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/visual/video/564390727/oi-andres-pane-sto-kafeneio-emeis-gia-mpanio/",
-      "title": "Οι άνδρες πάνε στο καφενείο, εμείς για μπάνιο",
-      "normalized_title": "ΟΙ ΑΝΔΡΕΣ ΠΑΝΕ ΣΤΟ ΚΑΦΕΝΕΙΟ, ΕΜΕΙΣ ΓΙΑ ΜΠΑΝΙΟ",
+      "url": "https://www.kathimerini.gr/culture/564387727/sto-kafeneio-opoy-oi-moysikoi-afinan-enechyro-to-dachtylidi-toys/",
+      "title": "Στο καφενείο όπου οι μουσικοί άφηναν ενέχυρο το δαχτυλίδι τους",
+      "normalized_title": "ΣΤΟ ΚΑΦΕΝΕΙΟ ΟΠΟΥ ΟΙ ΜΟΥΣΙΚΟΙ ΑΦΗΝΑΝ ΕΝΕΧΥΡΟ ΤΟ ΔΑΧΤΥΛΙΔΙ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/visual/video/564390727/oi-andres-pane-sto-kafeneio-emeis-gia-mpanio/",
-        "https://www.kathimerini.gr/society/564393109/pinakides-kykloforias-se-tria-vimata-i-diadikasia-paraggelias-kai-ekdosis/"
+        "https://www.kathimerini.gr/culture/564387727/sto-kafeneio-opoy-oi-moysikoi-afinan-enechyro-to-dachtylidi-toys/",
+        "https://www.kathimerini.gr/istoria/564391381/90-chronia-prin-9-8-1936/",
+        "https://www.kathimerini.gr/opinion/interviews/564390916/i-themeliodis-tryferotita/"
       ],
-      "seen_at_utc": "2026-08-09T06:51:21.248296+00:00"
+      "seen_at_utc": "2026-08-09T07:17:14.727605+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,31 @@
       "seen_at_utc": "2026-08-09T06:51:21.248431+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444648/trohaio-stin-athinon-soynioy-pos-egine-i-sygkroysi-me-ti-mihani-tis-dias-sto-401-oi-dyo-astynomikoi/",
-      "title": "Τροχαίο στην Αθηνών-Σουνίου: Πώς έγινε η σύγκρουση με τη μηχανή της ΔΙΑΣ – Στο 401 οι δύο αστυνομικοί",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗΝ ΑΘΗΝΩΝ-ΣΟΥΝΙΟΥ: ΠΩΣ ΕΓΙΝΕ Η ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΗ ΜΗΧΑΝΗ ΤΗΣ ΔΙΑΣ – ΣΤΟ 401 ΟΙ ΔΥΟ ΑΣΤΥΝΟΜΙΚΟΙ",
+      "url": "https://www.efsyn.gr/nisides/1444034/stis-akrogialies-tis-patmoy-oi-dimofileis-paralies-oi-isyhes-kai-oi-kontines/",
+      "title": "Στις ακρογιαλιές της Πάτμου: Οι δημοφιλείς παραλίες, οι ήσυχες και οι κοντινές",
+      "normalized_title": "ΣΤΙΣ ΑΚΡΟΓΙΑΛΙΕΣ ΤΗΣ ΠΑΤΜΟΥ: ΟΙ ΔΗΜΟΦΙΛΕΙΣ ΠΑΡΑΛΙΕΣ, ΟΙ ΗΣΥΧΕΣ ΚΑΙ ΟΙ ΚΟΝΤΙΝΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444648/trohaio-stin-athinon-soynioy-pos-egine-i-sygkroysi-me-ti-mihani-tis-dias-sto-401-oi-dyo-astynomikoi/"
+        "https://www.efsyn.gr/nisides/1444034/stis-akrogialies-tis-patmoy-oi-dimofileis-paralies-oi-isyhes-kai-oi-kontines/",
+        "https://www.efsyn.gr/nisides/1444024/ti-simainei-poios-omiros/",
+        "https://www.efsyn.gr/stiles/1444657/mnimonia-mitsotakis-eferan-koinoniki-dialysi/",
+        "https://www.efsyn.gr/kosmos/1444654/hamos-sti-voyli-toy-kosovoy-voyleytis-petaxe-ayga-ston-ypiresiako-prothypoyrgo-vinteo/"
       ],
-      "seen_at_utc": "2026-08-09T06:51:21.248396+00:00"
+      "seen_at_utc": "2026-08-09T07:17:14.727690+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/greece/synexizetai-i-eksodos-tou-aygoustou-pano-apo-34-000-anaxoroun-simera-mono-apo-ton-peiraia/",
-      "title": "Συνεχίζεται η έξοδος του Αυγούστου – Πάνω από 34.000 αναχωρούν σήμερα μόνο από τον Πειραιά",
-      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΕΞΟΔΟΣ ΤΟΥ ΑΥΓΟΥΣΤΟΥ – ΠΑΝΩ ΑΠΟ 34.000 ΑΝΑΧΩΡΟΥΝ ΣΗΜΕΡΑ ΜΟΝΟ ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ",
+      "url": "https://www.in.gr/2026/08/09/greece/den-eixa-dei-pote-tetoio-anemo-ellines-kai-galloi-perigrafoun-ti-maxi-me-tis-foties-ypo-akraies-synthikes/",
+      "title": "«Δεν είχα δει ποτέ τέτοιο άνεμο» - Έλληνες και Γάλλοι περιγράφουν τη μάχη με τις φλόγες υπό ακραίες συνθήκες",
+      "normalized_title": "«ΔΕΝ ΕΙΧΑ ΔΕΙ ΠΟΤΕ ΤΕΤΟΙΟ ΑΝΕΜΟ» - ΕΛΛΗΝΕΣ ΚΑΙ ΓΑΛΛΟΙ ΠΕΡΙΓΡΑΦΟΥΝ ΤΗ ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΥΠΟ ΑΚΡΑΙΕΣ ΣΥΝΘΗΚΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/greece/synexizetai-i-eksodos-tou-aygoustou-pano-apo-34-000-anaxoroun-simera-mono-apo-ton-peiraia/",
-        "https://www.in.gr/2026/08/09/sports/basketball/euroleague/o-parker-einai-se-epafes-me-tin-oikogeneia-mpas-gia-tin-polisi-tis-vilermpan-pic/",
-        "https://www.in.gr/2026/08/09/sports/othersports/pagkosmio-stivou-k20-asimenia-i-roussou-sta-800-metra/",
-        "https://www.in.gr/2026/08/09/economy/oikonomikes-eidiseis/ftoxeia-anergia-apokleismos-ennea-ellades-stin-ee-tremoun-mia-vlavi-kai-ksexnoun-tis-diakopes/",
-        "https://www.in.gr/2026/08/09/life/culture-live/grown-ups-3-ksekinisan-ta-gyrismata-gia-ti-nea-tainia-me-ton-antam-santler/"
+        "https://www.in.gr/2026/08/09/greece/den-eixa-dei-pote-tetoio-anemo-ellines-kai-galloi-perigrafoun-ti-maxi-me-tis-foties-ypo-akraies-synthikes/",
+        "https://www.in.gr/2026/08/09/sports/football/o-nte-pol-skorare-kai-afierose-to-gkol-ston-mesi-kai-tin-oikogeneia-tou-gia-ton-xamo-tou-patera-tou-vid/",
+        "https://www.in.gr/2026/08/09/go-fun/fizz/eygenia-samara-nikos-moutsinas-oi-eksotikes-diakopes-tous-sto-meksiko/",
+        "https://www.in.gr/2026/08/09/world/theouta-eyropaiki-enosi-kai-geopolitiki-otan-ta-synora-ginontai-oplo-kai-oi-metanastes-pyromaxika/",
+        "https://www.in.gr/2026/08/09/pet-stories/epta-gatakia-den-exoun-oikogeneia-diasothikan-apo-ethelontries-stin-perioxi-tou-votanikou/",
+        "https://www.in.gr/2026/08/09/greece/pos-egine-to-troxaio-stin-athinon-souniou-i-anastrofi-tou-ix-kai-i-sygkrousi-me-ti-dias-sto-401-oi-dyo-astynomikoi/"
       ],
-      "seen_at_utc": "2026-08-09T06:51:21.248347+00:00"
+      "seen_at_utc": "2026-08-09T07:17:14.727659+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T06:51:21.248517+00:00"
+  "updated_at_utc": "2026-08-09T07:17:14.727770+00:00"
 }
