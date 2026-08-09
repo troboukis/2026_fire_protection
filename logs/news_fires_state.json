@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564393211/loytraki-75chronos-entopistike-nekros-dipla-se-kadoys-aporrimmaton/",
-      "title": "Λουτράκι: 75χρονος εντοπίστηκε νεκρός δίπλα σε κάδους απορριμμάτων",
-      "normalized_title": "ΛΟΥΤΡΑΚΙ: 75ΧΡΟΝΟΣ ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΟΣ ΔΙΠΛΑ ΣΕ ΚΑΔΟΥΣ ΑΠΟΡΡΙΜΜΑΤΩΝ",
+      "url": "https://www.kathimerini.gr/athletics/564393244/pagkosmio-k20-asimenia-i-royssoy-sta-800m/",
+      "title": "Παγκόσμιο Κ20: «Ασημένια» η Ρούσσου στα 800μ.",
+      "normalized_title": "ΠΑΓΚΟΣΜΙΟ Κ20: «ΑΣΗΜΕΝΙΑ» Η ΡΟΥΣΣΟΥ ΣΤΑ 800Μ.",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564393211/loytraki-75chronos-entopistike-nekros-dipla-se-kadoys-aporrimmaton/"
+        "https://www.kathimerini.gr/athletics/564393244/pagkosmio-k20-asimenia-i-royssoy-sta-800m/",
+        "https://www.kathimerini.gr/k/gastronomos/564393166/kremmydo-tiganites-me-myrodika/",
+        "https://www.kathimerini.gr/society/564393220/adeiazei-i-athina-pano-apo-110-000-atoma-efygan-apo-ta-limania-tis-attikis-to-savvatokyriako/"
       ],
-      "seen_at_utc": "2026-08-09T10:30:03.930485+00:00"
+      "seen_at_utc": "2026-08-09T10:51:16.593236+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862636/palia-puromahika-edopistikan-sto-ardani-tis-karpathou-apagoreutike-i-kolumvisi-stin-periohi/?utm_source=rss",
-      "title": "Απαγορεύτηκε η κολύμβηση στο Αρδάνι της Καρπάθου γιατί εντοπίστηκαν παλιά πυρομαχικά",
-      "normalized_title": "ΑΠΑΓΟΡΕΥΤΗΚΕ Η ΚΟΛΥΜΒΗΣΗ ΣΤΟ ΑΡΔΑΝΙ ΤΗΣ ΚΑΡΠΑΘΟΥ ΓΙΑΤΙ ΕΝΤΟΠΙΣΤΗΚΑΝ ΠΑΛΙΑ ΠΥΡΟΜΑΧΙΚΑ",
+      "url": "https://www.protothema.gr/greece/article/1862642/duo-sullipseis-gia-paranomi-metafora-metanaston-se-evro-kai-rodopi/?utm_source=rss",
+      "title": "Δύο συλλήψεις για παράνομη μεταφορά μεταναστών σε Έβρο και Ροδόπη",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΑΡΑΝΟΜΗ ΜΕΤΑΦΟΡΑ ΜΕΤΑΝΑΣΤΩΝ ΣΕ ΕΒΡΟ ΚΑΙ ΡΟΔΟΠΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862636/palia-puromahika-edopistikan-sto-ardani-tis-karpathou-apagoreutike-i-kolumvisi-stin-periohi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862642/duo-sullipseis-gia-paranomi-metafora-metanaston-se-evro-kai-rodopi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-09T10:17:07.127897+00:00"
+      "seen_at_utc": "2026-08-09T10:51:16.593340+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444711/milos-elikoptero-prosgeiothike-sto-sarakiniko-gia-na-kanoyn-mpanio-oi-epivates-toy-vinteo/",
-      "title": "Μήλος: Ελικόπτερο προσγειώθηκε στο Σαρακήνικο για να κάνουν μπάνιο οι επιβάτες του [βίντεο]",
-      "normalized_title": "ΜΗΛΟΣ: ΕΛΙΚΟΠΤΕΡΟ ΠΡΟΣΓΕΙΩΘΗΚΕ ΣΤΟ ΣΑΡΑΚΗΝΙΚΟ ΓΙΑ ΝΑ ΚΑΝΟΥΝ ΜΠΑΝΙΟ ΟΙ ΕΠΙΒΑΤΕΣ ΤΟΥ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1444717/karpathos-apagoreytike-i-kolymvisi-sto-ardani-entopistikan-palia-pyromahika/",
+      "title": "Κάρπαθος: Απαγορεύτηκε η κολύμβηση στο Αρδάνι – Εντοπίστηκαν παλιά πυρομαχικά",
+      "normalized_title": "ΚΑΡΠΑΘΟΣ: ΑΠΑΓΟΡΕΥΤΗΚΕ Η ΚΟΛΥΜΒΗΣΗ ΣΤΟ ΑΡΔΑΝΙ – ΕΝΤΟΠΙΣΤΗΚΑΝ ΠΑΛΙΑ ΠΥΡΟΜΑΧΙΚΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444711/milos-elikoptero-prosgeiothike-sto-sarakiniko-gia-na-kanoyn-mpanio-oi-epivates-toy-vinteo/"
+        "https://www.efsyn.gr/ellada/1444717/karpathos-apagoreytike-i-kolymvisi-sto-ardani-entopistikan-palia-pyromahika/",
+        "https://www.efsyn.gr/ellada/1444714/i-megali-exodos-ton-adeioyhon-toy-aygoystoy-pano-apo-114-000-efygan-se-dyo-imeres-apo-ta-limania-tis-attikis/"
       ],
-      "seen_at_utc": "2026-08-09T10:30:03.930546+00:00"
+      "seen_at_utc": "2026-08-09T10:51:16.593321+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/greece/synagermos-gia-foties-ti-deytera-isxyroi-anemoi-me-ripes-eos-9-mpofor-oi-perioxes-se-red-code/",
-      "title": "Συναγερμός για φωτιές τη Δευτέρα, ισχυροί άνεμοι με ριπές έως 9 μποφόρ - Οι περιοχές σε Red Code",
-      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΦΩΤΙΕΣ ΤΗ ΔΕΥΤΕΡΑ, ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΜΕ ΡΙΠΕΣ ΕΩΣ 9 ΜΠΟΦΟΡ - ΟΙ ΠΕΡΙΟΧΕΣ ΣΕ RED CODE",
+      "url": "https://www.in.gr/2026/08/09/health/ios-dytikou-neilou-i-attiki-sto-epikentro-tis-eksarsis-oi-proeidopoiiseis-eidikon-ti-na-prosexoume/",
+      "title": "Καμπανάκι ειδικών: Η Αττική στο επίκεντρο της έξαρσης του ιού του Δυτικού Νείλου - Τι να προσέχουμε",
+      "normalized_title": "ΚΑΜΠΑΝΑΚΙ ΕΙΔΙΚΩΝ: Η ΑΤΤΙΚΗ ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΤΗΣ ΕΞΑΡΣΗΣ ΤΟΥ ΙΟΥ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ - ΤΙ ΝΑ ΠΡΟΣΕΧΟΥΜΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/greece/synagermos-gia-foties-ti-deytera-isxyroi-anemoi-me-ripes-eos-9-mpofor-oi-perioxes-se-red-code/",
-        "https://www.in.gr/2026/08/09/sports/football/o-pedri-kratise-tin-yposxesi-tou-evapse-to-malli-tou-platine-meta-to-mountial-pic/",
-        "https://www.in.gr/2026/08/09/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-09-08-15-08-2026/",
-        "https://www.in.gr/2026/08/09/world/o-feromenos-alvanos-gkangkster-pou-mplekei-ta-sxedia-tou-kousner-stin-alvania/",
-        "https://www.in.gr/2026/08/09/sports/football/o-pilios-ananeose-me-tin-aek-eos-to-2030/"
+        "https://www.in.gr/2026/08/09/health/ios-dytikou-neilou-i-attiki-sto-epikentro-tis-eksarsis-oi-proeidopoiiseis-eidikon-ti-na-prosexoume/",
+        "https://www.in.gr/2026/08/09/in-science/technology/poios-krataei-to-kleidi-tis-ai-i-krisimi-diamaxi-gia-eleythera-i-kleista-montela/",
+        "https://www.in.gr/2026/08/09/go-fun/style/zoum-tou-fetinou-met-gala-ston-tzon-gkaliano-dikaiosi-i-kollima-tis-modas-sto-parelthon/",
+        "https://www.in.gr/2026/08/09/life/diakopes/den-einai-mono-i-venetia-tesseris-panemorfes-poleis-me-kanalia-dixos-polykosmia/",
+        "https://www.in.gr/2026/08/09/sports/football/malntini-o-pirlo-tha-itan-o-idanikos-proponitis-gia-tin-italia-ti-eipe-gia-gkouarntiola-kai-antseloti/",
+        "https://www.in.gr/2026/08/09/greece/se-pliri-ekseliksi-i-megali-eksodos-ton-adeiouxon-tou-aygoustou-xiliades-sta-limania/"
       ],
-      "seen_at_utc": "2026-08-09T10:17:07.127817+00:00"
+      "seen_at_utc": "2026-08-09T10:51:16.593289+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T10:30:03.930649+00:00"
+  "updated_at_utc": "2026-08-09T10:51:16.593411+00:00"
 }
