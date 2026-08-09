@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564393385/o-salach-kai-oi-ypoloipoi-oi-pio-exopragmatikes-apaitiseis-podosfairiston/",
-      "title": "Ο «Φαραώ» και οι (άλλοι) απαιτητικοί που έχασαν την μπάλα",
-      "normalized_title": "Ο «ΦΑΡΑΩ» ΚΑΙ ΟΙ (ΑΛΛΟΙ) ΑΠΑΙΤΗΤΙΚΟΙ ΠΟΥ ΕΧΑΣΑΝ ΤΗΝ ΜΠΑΛΑ",
+      "url": "https://www.kathimerini.gr/world/564393409/se-teliko-stadio-i-symfonia-iran-oman-gia-to-ormoyz-tha-anoixei-ypo-oroys/",
+      "title": "Σε «τελικό στάδιο» η συμφωνία Ιράν-Ομάν για το Ορμούζ – Θα ανοίξει «υπό όρους»",
+      "normalized_title": "ΣΕ «ΤΕΛΙΚΟ ΣΤΑΔΙΟ» Η ΣΥΜΦΩΝΙΑ ΙΡΑΝ-ΟΜΑΝ ΓΙΑ ΤΟ ΟΡΜΟΥΖ – ΘΑ ΑΝΟΙΞΕΙ «ΥΠΟ ΟΡΟΥΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564393385/o-salach-kai-oi-ypoloipoi-oi-pio-exopragmatikes-apaitiseis-podosfairiston/",
-        "https://www.kathimerini.gr/k/k-magazine/564388054/kathares-ellinikes-geyseis/",
-        "https://www.kathimerini.gr/society/564393400/paremvasi-eisaggelea-gia-tin-prosgeiosi-elikopteroy-sto-sarakiniko/"
+        "https://www.kathimerini.gr/world/564393409/se-teliko-stadio-i-symfonia-iran-oman-gia-to-ormoyz-tha-anoixei-ypo-oroys/",
+        "https://www.kathimerini.gr/society/564391720/epistrefoyme-ligi-apo-ti-storgi-poy-pirame/"
       ],
-      "seen_at_utc": "2026-08-09T16:17:38.014798+00:00"
+      "seen_at_utc": "2026-08-09T16:51:25.764372+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1269,28 @@
       "seen_at_utc": "2026-08-09T16:30:40.800841+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/gallery/i-attiki-flegetai/",
-      "title": "Η Αττική φλέγεται",
-      "normalized_title": "Η ΑΤΤΙΚΗ ΦΛΕΓΕΤΑΙ",
+      "url": "https://www.efsyn.gr/tehnes/1444800/efyge-apo-ti-zoi-o-spoydaios-ithopoios-nikos-kalogeropoylos/",
+      "title": "Έφυγε από τη ζωή ο σπουδαίος ηθοποιός Νίκος Καλογερόπουλος",
+      "normalized_title": "ΕΦΥΓΕ ΑΠΟ ΤΗ ΖΩΗ Ο ΣΠΟΥΔΑΙΟΣ ΗΘΟΠΟΙΟΣ ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/gallery/i-attiki-flegetai/"
+        "https://www.efsyn.gr/tehnes/1444800/efyge-apo-ti-zoi-o-spoydaios-ithopoios-nikos-kalogeropoylos/"
       ],
-      "seen_at_utc": "2026-08-09T16:30:40.800804+00:00"
+      "seen_at_utc": "2026-08-09T16:51:25.764467+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/economy/diethnis-oikonomia/marines-pou-rixnoun-agkyra-ta-ependytika-kefalaia/",
-      "title": "Πού ρίχνουν άγκυρα τα επενδυτικά κεφάλαια",
-      "normalized_title": "ΠΟΥ ΡΙΧΝΟΥΝ ΑΓΚΥΡΑ ΤΑ ΕΠΕΝΔΥΤΙΚΑ ΚΕΦΑΛΑΙΑ",
+      "url": "https://www.in.gr/2026/08/09/sports/kairos-stous-396-c-i-ypsiloteri-thermokrasia-tin-kyriaki-55-stathmoi-kategrapsan-thermokrasies-ano-ton-37-c/",
+      "title": "Στους 39,6 °C η υψηλότερη θερμοκρασία την Κυριακή - 55 σταθμοί κατέγραψαν θερμοκρασίες άνω των 37 °C",
+      "normalized_title": "ΣΤΟΥΣ 39,6 °C Η ΥΨΗΛΟΤΕΡΗ ΘΕΡΜΟΚΡΑΣΙΑ ΤΗΝ ΚΥΡΙΑΚΗ - 55 ΣΤΑΘΜΟΙ ΚΑΤΕΓΡΑΨΑΝ ΘΕΡΜΟΚΡΑΣΙΕΣ ΑΝΩ ΤΩΝ 37 °C",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/economy/diethnis-oikonomia/marines-pou-rixnoun-agkyra-ta-ependytika-kefalaia/",
-        "https://www.in.gr/2026/08/09/english-edition/wiretapping-scandal-filed-away-for-a-third-time/",
-        "https://www.in.gr/2026/08/09/greece/fthiotida-fotia-sto-neo-monastiri-domokou-sti-maxi-tria-enaeria/"
+        "https://www.in.gr/2026/08/09/sports/kairos-stous-396-c-i-ypsiloteri-thermokrasia-tin-kyriaki-55-stathmoi-kategrapsan-thermokrasies-ano-ton-37-c/",
+        "https://www.in.gr/2026/08/09/in-science/ai/diakommatika-pyra-gia-ti-sxesi-tramp-me-tis-big-tech-meta-tis-anisyxitikes-apodraseis-montelon-ai/",
+        "https://www.in.gr/2026/08/09/greece/pethane-o-nikos-kalogeropoulos/",
+        "https://www.in.gr/2026/08/09/politics/politiki-grammateia/apolytarxika-prosopopages-dieythyntirio-nea-apoxorisi-stelexous-apo-to-komma-tis-marias-karystianou/",
+        "https://www.in.gr/2026/08/09/life/culture-live/exei-pethanei-i-makrozoia-o-mpraian-tzonson-anatheorei-ton-stoxo-tis-aioniotitas/",
+        "https://www.in.gr/2026/08/09/sports/football/apotheonei-tous-dyo-ellines-o-ksenos-typos-o-karetsas-moiazei-me-diamanti-tzolis-o-monadikos-pou-elampse/"
       ],
-      "seen_at_utc": "2026-08-09T16:30:40.800771+00:00"
+      "seen_at_utc": "2026-08-09T16:51:25.764429+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T16:30:40.800929+00:00"
+  "updated_at_utc": "2026-08-09T16:51:25.764540+00:00"
 }
