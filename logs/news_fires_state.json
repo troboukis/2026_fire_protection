@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564393286/nagkasaki-epeteios-81-eton-apo-tin-atomiki-vomva-apolyto-kako-ta-pyrinika/",
-      "title": "Ναγκασάκι: Επέτειος 81 ετών από την ατομική βόμβα – «Απόλυτο κακό τα πυρηνικά»",
-      "normalized_title": "ΝΑΓΚΑΣΑΚΙ: ΕΠΕΤΕΙΟΣ 81 ΕΤΩΝ ΑΠΟ ΤΗΝ ΑΤΟΜΙΚΗ ΒΟΜΒΑ – «ΑΠΟΛΥΤΟ ΚΑΚΟ ΤΑ ΠΥΡΗΝΙΚΑ»",
+      "url": "https://www.kathimerini.gr/society/564393307/erythros-stayros-asthenis-epitethike-se-nosileytria-sta-epeigonta-ti-kataggellei-i-poedin/",
+      "title": "Ερυθρός Σταυρός: Ασθενής επιτέθηκε σε νοσηλεύτρια στα Επείγοντα – Τι καταγγέλλει η ΠΟΕΔΗΝ",
+      "normalized_title": "ΕΡΥΘΡΟΣ ΣΤΑΥΡΟΣ: ΑΣΘΕΝΗΣ ΕΠΙΤΕΘΗΚΕ ΣΕ ΝΟΣΗΛΕΥΤΡΙΑ ΣΤΑ ΕΠΕΙΓΟΝΤΑ – ΤΙ ΚΑΤΑΓΓΕΛΛΕΙ Η ΠΟΕΔΗΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564393286/nagkasaki-epeteios-81-eton-apo-tin-atomiki-vomva-apolyto-kako-ta-pyrinika/",
-        "https://www.kathimerini.gr/opinion/geyma-me-thn-k/564391801/skinothetontas-tin-odysseia-toy-sympantos/",
-        "https://www.kathimerini.gr/k/gastronomos/564393175/keftedes-galopoylas-me-karoto-kai-paprika/",
-        "https://www.kathimerini.gr/economy/564391918/pagides-kato-apo-ton-elliniko-ilio/"
+        "https://www.kathimerini.gr/society/564393307/erythros-stayros-asthenis-epitethike-se-nosileytria-sta-epeigonta-ti-kataggellei-i-poedin/",
+        "https://www.kathimerini.gr/society/564393304/teloneio-eyzonon-kathysteriseis-kai-simera-pano-apo-1-ora-oi-anamones/"
       ],
-      "seen_at_utc": "2026-08-09T12:17:13.163061+00:00"
+      "seen_at_utc": "2026-08-09T12:51:18.933700+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,33 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862657/ishuroi-anemoi-kai-ripes-eos-9-bofor-ti-deutera-se-epifulaki-i-politiki-prostasia-poies-periohes-epireazodai/?utm_source=rss",
-      "title": "Ισχυροί άνεμοι και ριπές έως 9 μποφόρ τη Δευτέρα: Ποιες περιοχές τίθενται σε κατάσταση κινητοποίησης Red Code",
-      "normalized_title": "ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΚΑΙ ΡΙΠΕΣ ΕΩΣ 9 ΜΠΟΦΟΡ ΤΗ ΔΕΥΤΕΡΑ: ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΤΙΘΕΝΤΑΙ ΣΕ ΚΑΤΑΣΤΑΣΗ ΚΙΝΗΤΟΠΟΙΗΣΗΣ RED CODE",
+      "url": "https://www.protothema.gr/greece/article/1862665/oures-kai-kathusteriseis-pano-apo-1-ora-sto-teloneio-euzonon-sto-reuma-exodou-apo-tin-ellada/?utm_source=rss",
+      "title": "Ουρές και καθυστερήσεις πάνω από 1 ώρα στο Τελωνείο Ευζώνων, στο ρεύμα εξόδου από την Ελλάδα, δείτε βίντεο",
+      "normalized_title": "ΟΥΡΕΣ ΚΑΙ ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΠΑΝΩ ΑΠΟ 1 ΩΡΑ ΣΤΟ ΤΕΛΩΝΕΙΟ ΕΥΖΩΝΩΝ, ΣΤΟ ΡΕΥΜΑ ΕΞΟΔΟΥ ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862657/ishuroi-anemoi-kai-ripes-eos-9-bofor-ti-deutera-se-epifulaki-i-politiki-prostasia-poies-periohes-epireazodai/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862665/oures-kai-kathusteriseis-pano-apo-1-ora-sto-teloneio-euzonon-sto-reuma-exodou-apo-tin-ellada/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-09T11:51:25.415781+00:00"
+      "seen_at_utc": "2026-08-09T12:51:18.933842+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444739/nikos-sofianos-gia-pyrkagies-sto-idio-ergo-theates-allazoyn-kyverniseis-kaigontai-dasi/",
-      "title": "Νίκος Σοφιανός για πυρκαγιές: Στο ίδιο έργο θεατές – Αλλάζουν κυβερνήσεις, καίγονται δάση",
-      "normalized_title": "ΝΙΚΟΣ ΣΟΦΙΑΝΟΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ: ΣΤΟ ΙΔΙΟ ΕΡΓΟ ΘΕΑΤΕΣ – ΑΛΛΑΖΟΥΝ ΚΥΒΕΡΝΗΣΕΙΣ, ΚΑΙΓΟΝΤΑΙ ΔΑΣΗ",
+      "url": "https://www.efsyn.gr/ellada/1444744/fotia-se-hamili-vlastisi-sta-pagoyria-komotinis/",
+      "title": "Φωτιά σε χαμηλή βλάστηση στα Παγούρια Κομοτηνής",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΑ ΠΑΓΟΥΡΙΑ ΚΟΜΟΤΗΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444739/nikos-sofianos-gia-pyrkagies-sto-idio-ergo-theates-allazoyn-kyverniseis-kaigontai-dasi/"
+        "https://www.efsyn.gr/ellada/1444744/fotia-se-hamili-vlastisi-sta-pagoyria-komotinis/",
+        "https://www.efsyn.gr/oikonomia/1444463/mikrozythopoiies-ftiahnoyn-topikes-mpires-se-oli-tin-ellada/"
       ],
-      "seen_at_utc": "2026-08-09T12:30:12.663783+00:00"
+      "seen_at_utc": "2026-08-09T12:51:18.933799+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/sports/basketball/live-streaming-ellada-georgia/",
-      "title": "Live Streaming: Ελλάδα – Γεωργία",
-      "normalized_title": "LIVE STREAMING: ΕΛΛΑΔΑ – ΓΕΩΡΓΙΑ",
+      "url": "https://www.in.gr/2026/08/09/greece/se-rythmous-dekapentaygoustou-i-athina-eikones-apo-omonoia-syntagma-kolonaki-kai-eksarxeia/",
+      "title": "Σε ρυθμούς Δεκαπενταύγουστου η Αθήνα – Εικόνες από Ομόνοια, Σύνταγμα, Κολωνάκι και Εξάρχεια",
+      "normalized_title": "ΣΕ ΡΥΘΜΟΥΣ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ Η ΑΘΗΝΑ – ΕΙΚΟΝΕΣ ΑΠΟ ΟΜΟΝΟΙΑ, ΣΥΝΤΑΓΜΑ, ΚΟΛΩΝΑΚΙ ΚΑΙ ΕΞΑΡΧΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/sports/basketball/live-streaming-ellada-georgia/",
-        "https://www.in.gr/2026/08/09/uncategorized/iran-proanaggellei-vinteo-me-ton-anotato-igeti-motztampa-xamenei/"
+        "https://www.in.gr/2026/08/09/greece/se-rythmous-dekapentaygoustou-i-athina-eikones-apo-omonoia-syntagma-kolonaki-kai-eksarxeia/",
+        "https://www.in.gr/2026/08/09/go-fun/fizz/otan-o-lionel-mesi-kai-o-pateras-tou-xorxe-orasio-eixan-katadikastei-se-21-mines-fylakisi-stin-ispania/",
+        "https://www.in.gr/2026/08/09/world/texniti-noimosyni-o-dimiourgos-tou-star-wars-ta-vazei-me-osous-tis-antistekontai-eidikos-ton-diapseydei/"
       ],
-      "seen_at_utc": "2026-08-09T12:30:12.663732+00:00"
+      "seen_at_utc": "2026-08-09T12:51:18.933769+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T12:30:12.663859+00:00"
+  "updated_at_utc": "2026-08-09T12:51:18.933930+00:00"
 }
