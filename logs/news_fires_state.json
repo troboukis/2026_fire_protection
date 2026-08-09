@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564393307/erythros-stayros-asthenis-epitethike-se-nosileytria-sta-epeigonta-ti-kataggellei-i-poedin/",
-      "title": "Ερυθρός Σταυρός: Ασθενής επιτέθηκε σε νοσηλεύτρια στα Επείγοντα – Τι καταγγέλλει η ΠΟΕΔΗΝ",
-      "normalized_title": "ΕΡΥΘΡΟΣ ΣΤΑΥΡΟΣ: ΑΣΘΕΝΗΣ ΕΠΙΤΕΘΗΚΕ ΣΕ ΝΟΣΗΛΕΥΤΡΙΑ ΣΤΑ ΕΠΕΙΓΟΝΤΑ – ΤΙ ΚΑΤΑΓΓΕΛΛΕΙ Η ΠΟΕΔΗΝ",
+      "url": "https://www.kathimerini.gr/society/564393319/sto-mikroskopio-to-proedriko-diatagma-meta-tin-prosgeiosi-elikopteroy-sto-sarakiniko/",
+      "title": "Στο μικροσκόπιο το Προεδρικό Διάταγμα μετά την προσγείωση ελικοπτέρου στο Σαρακήνικο",
+      "normalized_title": "ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΟ ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ ΜΕΤΑ ΤΗΝ ΠΡΟΣΓΕΙΩΣΗ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΟ ΣΑΡΑΚΗΝΙΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564393307/erythros-stayros-asthenis-epitethike-se-nosileytria-sta-epeigonta-ti-kataggellei-i-poedin/",
-        "https://www.kathimerini.gr/society/564393304/teloneio-eyzonon-kathysteriseis-kai-simera-pano-apo-1-ora-oi-anamones/"
+        "https://www.kathimerini.gr/society/564393319/sto-mikroskopio-to-proedriko-diatagma-meta-tin-prosgeiosi-elikopteroy-sto-sarakiniko/",
+        "https://www.kathimerini.gr/society/564393316/evros-pyrkagia-sti-giannoyli-soyflioy-sikothikan-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-09T12:51:18.933700+00:00"
+      "seen_at_utc": "2026-08-09T13:17:30.474105+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862665/oures-kai-kathusteriseis-pano-apo-1-ora-sto-teloneio-euzonon-sto-reuma-exodou-apo-tin-ellada/?utm_source=rss",
-      "title": "Ουρές και καθυστερήσεις πάνω από 1 ώρα στο Τελωνείο Ευζώνων, στο ρεύμα εξόδου από την Ελλάδα, δείτε βίντεο",
-      "normalized_title": "ΟΥΡΕΣ ΚΑΙ ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΠΑΝΩ ΑΠΟ 1 ΩΡΑ ΣΤΟ ΤΕΛΩΝΕΙΟ ΕΥΖΩΝΩΝ, ΣΤΟ ΡΕΥΜΑ ΕΞΟΔΟΥ ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1862671/fotia-tora-sto-koropi-112-stous-katoikous-gia-etoimotita/?utm_source=rss",
+      "title": "Φωτιά τώρα στο Κορωπί, 112 στους κατοίκους για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΚΟΡΩΠΙ, 112 ΣΤΟΥΣ ΚΑΤΟΙΚΟΥΣ ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862665/oures-kai-kathusteriseis-pano-apo-1-ora-sto-teloneio-euzonon-sto-reuma-exodou-apo-tin-ellada/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862671/fotia-tora-sto-koropi-112-stous-katoikous-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862669/apagoreusi-kukloforias-se-dasikes-periohes-tis-halkidikis-logo-upsilou-kindunou-ekdilosis-purkagias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862667/fotia-tora-se-hamili-vlastisi-sta-pagouria-komotinis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-09T12:51:18.933842+00:00"
+      "seen_at_utc": "2026-08-09T13:17:30.474227+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444744/fotia-se-hamili-vlastisi-sta-pagoyria-komotinis/",
-      "title": "Φωτιά σε χαμηλή βλάστηση στα Παγούρια Κομοτηνής",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΑ ΠΑΓΟΥΡΙΑ ΚΟΜΟΤΗΝΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1444756/pyrino-metopo-sto-soyfli-kinitopoiithikan-tessera-enaeria-mesa/",
+      "title": "Πύρινο μέτωπο στο Σουφλί – Κινητοποιήθηκαν τέσσερα εναέρια μέσα",
+      "normalized_title": "ΠΥΡΙΝΟ ΜΕΤΩΠΟ ΣΤΟ ΣΟΥΦΛΙ – ΚΙΝΗΤΟΠΟΙΗΘΗΚΑΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444744/fotia-se-hamili-vlastisi-sta-pagoyria-komotinis/",
-        "https://www.efsyn.gr/oikonomia/1444463/mikrozythopoiies-ftiahnoyn-topikes-mpires-se-oli-tin-ellada/"
+        "https://www.efsyn.gr/ellada/1444756/pyrino-metopo-sto-soyfli-kinitopoiithikan-tessera-enaeria-mesa/",
+        "https://www.efsyn.gr/athlitismos/1444752/mehri-to-2030-o-pilios-stin-aek-iliopoylos-se-pistepsa-kai-se-stirixa-vinteo/",
+        "https://www.efsyn.gr/kosmos/1444749/vinteo-me-ton-motztampa-hamenei-proanaggellei-to-iran/"
       ],
-      "seen_at_utc": "2026-08-09T12:51:18.933799+00:00"
+      "seen_at_utc": "2026-08-09T13:17:30.474200+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/greece/se-rythmous-dekapentaygoustou-i-athina-eikones-apo-omonoia-syntagma-kolonaki-kai-eksarxeia/",
-      "title": "Σε ρυθμούς Δεκαπενταύγουστου η Αθήνα – Εικόνες από Ομόνοια, Σύνταγμα, Κολωνάκι και Εξάρχεια",
-      "normalized_title": "ΣΕ ΡΥΘΜΟΥΣ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ Η ΑΘΗΝΑ – ΕΙΚΟΝΕΣ ΑΠΟ ΟΜΟΝΟΙΑ, ΣΥΝΤΑΓΜΑ, ΚΟΛΩΝΑΚΙ ΚΑΙ ΕΞΑΡΧΕΙΑ",
+      "url": "https://www.in.gr/2026/08/09/world/syria-ypegrapse-mnimonio-katanoisis-me-ti-mosxa-gia-to-mellon-ton-rosikon-vaseon-meta-apo-18-mines-diapragmateyseon/",
+      "title": "Συρία: Υπέγραψε μνημόνιο κατανόησης με τη Μόσχα για το μέλλον των ρωσικών βάσεων, μετά από 18 μήνες διαπραγματεύσεων",
+      "normalized_title": "ΣΥΡΙΑ: ΥΠΕΓΡΑΨΕ ΜΝΗΜΟΝΙΟ ΚΑΤΑΝΟΗΣΗΣ ΜΕ ΤΗ ΜΟΣΧΑ ΓΙΑ ΤΟ ΜΕΛΛΟΝ ΤΩΝ ΡΩΣΙΚΩΝ ΒΑΣΕΩΝ, ΜΕΤΑ ΑΠΟ 18 ΜΗΝΕΣ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/greece/se-rythmous-dekapentaygoustou-i-athina-eikones-apo-omonoia-syntagma-kolonaki-kai-eksarxeia/",
-        "https://www.in.gr/2026/08/09/go-fun/fizz/otan-o-lionel-mesi-kai-o-pateras-tou-xorxe-orasio-eixan-katadikastei-se-21-mines-fylakisi-stin-ispania/",
-        "https://www.in.gr/2026/08/09/world/texniti-noimosyni-o-dimiourgos-tou-star-wars-ta-vazei-me-osous-tis-antistekontai-eidikos-ton-diapseydei/"
+        "https://www.in.gr/2026/08/09/world/syria-ypegrapse-mnimonio-katanoisis-me-ti-mosxa-gia-to-mellon-ton-rosikon-vaseon-meta-apo-18-mines-diapragmateyseon/",
+        "https://www.in.gr/2026/08/09/greece/mytilini-salos-me-vinteo-apo-panigyri-evalan-aloga-na-perpatoun-pano-se-spasmena-gyalia/",
+        "https://www.in.gr/2026/08/09/stories/h-elliniki-ergasiaki-pragmatikotita-egine-videogame-katwtatos-misthos-simulation/",
+        "https://www.in.gr/2026/08/09/sports/othersports/se-trela-kefia-o-tzokovits-tragoudise-kai-xorepse-se-synaylia-vid/"
       ],
-      "seen_at_utc": "2026-08-09T12:51:18.933769+00:00"
+      "seen_at_utc": "2026-08-09T13:17:30.474168+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T12:51:18.933930+00:00"
+  "updated_at_utc": "2026-08-09T13:17:30.474333+00:00"
 }
