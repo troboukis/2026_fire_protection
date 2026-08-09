@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564391324/to-vlemma-sta-paidia-toy-loxia/",
-      "title": "Το βλέμμα στα «παιδιά του Λοξία»",
-      "normalized_title": "ΤΟ ΒΛΕΜΜΑ ΣΤΑ «ΠΑΙΔΙΑ ΤΟΥ ΛΟΞΙΑ»",
+      "url": "https://www.kathimerini.gr/culture/564391375/to-stoichima-einai-ta-prosopa/",
+      "title": "Το στοίχημα είναι τα πρόσωπα",
+      "normalized_title": "ΤΟ ΣΤΟΙΧΗΜΑ ΕΙΝΑΙ ΤΑ ΠΡΟΣΩΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564391324/to-vlemma-sta-paidia-toy-loxia/"
+        "https://www.kathimerini.gr/culture/564391375/to-stoichima-einai-ta-prosopa/",
+        "https://www.kathimerini.gr/society/564393463/ileia-kalyteri-i-eikona-tis-pyrkagias-sto-moyzaki/",
+        "https://www.kathimerini.gr/culture/564391357/odos-stadioy-enas-dromos-se-kyoforia/"
       ],
-      "seen_at_utc": "2026-08-09T18:30:13.234502+00:00"
+      "seen_at_utc": "2026-08-09T18:51:37.772153+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1270,27 @@
       "seen_at_utc": "2026-08-09T18:30:13.234607+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444814/pyrkagia-sto-kyt-arahthoy-eleytheroi-ypo-oroys-afethikan-o-dieythyntis-kai-o-tehnikos-asfaleias-toy-deddie/",
-      "title": "Πυρκαγιά στο ΚΥΤ Αράχθου: Ελεύθεροι υπό όρους αφέθηκαν ο διευθυντής και ο τεχνικός ασφαλείας του ΔΕΔΔΗΕ",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΟ ΚΥΤ ΑΡΑΧΘΟΥ: ΕΛΕΥΘΕΡΟΙ ΥΠΟ ΟΡΟΥΣ ΑΦΕΘΗΚΑΝ Ο ΔΙΕΥΘΥΝΤΗΣ ΚΑΙ Ο ΤΕΧΝΙΚΟΣ ΑΣΦΑΛΕΙΑΣ ΤΟΥ ΔΕΔΔΗΕ",
+      "url": "https://www.efsyn.gr/ellada/1444819/olonyhtia-mahi-me-tis-floges-stin-ileia-ishyres-epigeies-dynameis-prospathoyn-na-thesoyn-ypo-elegho-tin-pyrkagia/",
+      "title": "Ολονύχτια μάχη με τις φλόγες στην Ηλεία: Ισχυρές επίγειες δυνάμεις προσπαθούν να θέσουν υπό έλεγχο την πυρκαγιά",
+      "normalized_title": "ΟΛΟΝΥΧΤΙΑ ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΤΗΝ ΗΛΕΙΑ: ΙΣΧΥΡΕΣ ΕΠΙΓΕΙΕΣ ΔΥΝΑΜΕΙΣ ΠΡΟΣΠΑΘΟΥΝ ΝΑ ΘΕΣΟΥΝ ΥΠΟ ΕΛΕΓΧΟ ΤΗΝ ΠΥΡΚΑΓΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444814/pyrkagia-sto-kyt-arahthoy-eleytheroi-ypo-oroys-afethikan-o-dieythyntis-kai-o-tehnikos-asfaleias-toy-deddie/"
+        "https://www.efsyn.gr/ellada/1444819/olonyhtia-mahi-me-tis-floges-stin-ileia-ishyres-epigeies-dynameis-prospathoyn-na-thesoyn-ypo-elegho-tin-pyrkagia/"
       ],
-      "seen_at_utc": "2026-08-09T18:30:13.234577+00:00"
+      "seen_at_utc": "2026-08-09T18:51:37.772238+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/politics/epikairotita/i-texni-xoris-politiki-den-exei-noima-to-pasok-apoxaireta-ton-niko-kalogeropoulo/",
-      "title": "«Η τέχνη, χωρίς πολιτική, δεν έχει νόημα» – Το ΠΑΣΟΚ αποχαιρετά τον Νίκο Καλογερόπουλο",
-      "normalized_title": "«Η ΤΕΧΝΗ, ΧΩΡΙΣ ΠΟΛΙΤΙΚΗ, ΔΕΝ ΕΧΕΙ ΝΟΗΜΑ» – ΤΟ ΠΑΣΟΚ ΑΠΟΧΑΙΡΕΤΑ ΤΟΝ ΝΙΚΟ ΚΑΛΟΓΕΡΟΠΟΥΛΟ",
+      "url": "https://www.in.gr/2026/08/09/greece/fotia-sto-mouzaki-ileias-anemostrovilos-mesa-sto-metopo-tis-pyrkagias/",
+      "title": "Φωτιά στο Μουζάκι Ηλείας: Ανεμοστρόβιλος μέσα στο μέτωπο της πυρκαγιάς – Βελτιώθηκε η κατάσταση",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΜΟΥΖΑΚΙ ΗΛΕΙΑΣ: ΑΝΕΜΟΣΤΡΟΒΙΛΟΣ ΜΕΣΑ ΣΤΟ ΜΕΤΩΠΟ ΤΗΣ ΠΥΡΚΑΓΙΑΣ – ΒΕΛΤΙΩΘΗΚΕ Η ΚΑΤΑΣΤΑΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/politics/epikairotita/i-texni-xoris-politiki-den-exei-noima-to-pasok-apoxaireta-ton-niko-kalogeropoulo/",
-        "https://www.in.gr/2026/08/09/world/dania-arketoi-traymaties-se-peristatiko-me-pyrovolismous-pou-pithanon-syndeetai-me-ksekatharisma-logariasmon/"
+        "https://www.in.gr/2026/08/09/greece/fotia-sto-mouzaki-ileias-anemostrovilos-mesa-sto-metopo-tis-pyrkagias/",
+        "https://www.in.gr/2026/08/09/greece/paros-sygklonizei-o-pateras-tou-4xronou-pou-pnigike-se-pisina-beach-bar-fonazame-klaigame-ourliazame/",
+        "https://www.in.gr/2026/08/09/greece/elliniki-omospondia-thalassaimias-krisimes-elleipseis-aimatos-ekklisi-gia-amesi-aimodosia/",
+        "https://www.in.gr/2026/08/09/sports/basketball/efyge-apo-ti-zoi-o-thrylikos-nton-nelson-pic/",
+        "https://www.in.gr/2026/08/09/world/tramp-vriskomaste-se-imi-diapragmateyseis-me-to-iran-amerikanoi-aksiomatouxoi-yper-tis-oikonomikis-piesis/"
       ],
-      "seen_at_utc": "2026-08-09T18:30:13.234547+00:00"
+      "seen_at_utc": "2026-08-09T18:51:37.772205+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T18:30:13.234675+00:00"
+  "updated_at_utc": "2026-08-09T18:51:37.772327+00:00"
 }
