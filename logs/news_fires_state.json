@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/parties/564391588/dipolismos-sti-galazia-oikogeneia/",
-      "title": "Διπολισμός στη «γαλάζια» οικογένεια",
-      "normalized_title": "ΔΙΠΟΛΙΣΜΟΣ ΣΤΗ «ΓΑΛΑΖΙΑ» ΟΙΚΟΓΕΝΕΙΑ",
+      "url": "https://www.kathimerini.gr/economy/564391906/dichazoyn-ta-koyponia-sitisis-anti-ayxiseon/",
+      "title": "Διχάζουν τα «κουπόνια σίτισης» αντί αυξήσεων",
+      "normalized_title": "ΔΙΧΑΖΟΥΝ ΤΑ «ΚΟΥΠΟΝΙΑ ΣΙΤΙΣΗΣ» ΑΝΤΙ ΑΥΞΗΣΕΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/parties/564391588/dipolismos-sti-galazia-oikogeneia/"
+        "https://www.kathimerini.gr/economy/564391906/dichazoyn-ta-koyponia-sitisis-anti-ayxiseon/",
+        "https://www.kathimerini.gr/culture/564391225/anazitontas-to-mystiriodes-somatidio-toy-od/",
+        "https://www.kathimerini.gr/world/564393433/sikelia-anakalyfthike-nayagio-ano-ton-2-000-eton-gemato-archaioys-amforeis-ena-kommati-tis-istorias-mas/"
       ],
-      "seen_at_utc": "2026-08-09T17:51:29.329409+00:00"
+      "seen_at_utc": "2026-08-09T18:17:05.257712+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862730/elliniki-omospondia-thalassaimias-krisimes-elleipseis-aimatos-ekklisi-gia-amesi-aimodosia/?utm_source=rss",
-      "title": "Ελληνική Ομοσπονδία Θαλασσαιμίας: Κρίσιμες ελλείψεις, έκκληση για άμεση αιμοδοσία",
-      "normalized_title": "ΕΛΛΗΝΙΚΗ ΟΜΟΣΠΟΝΔΙΑ ΘΑΛΑΣΣΑΙΜΙΑΣ: ΚΡΙΣΙΜΕΣ ΕΛΛΕΙΨΕΙΣ, ΕΚΚΛΗΣΗ ΓΙΑ ΑΜΕΣΗ ΑΙΜΟΔΟΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1862733/efuge-gia-ena-deuterolepto-apo-tin-prosohi-mou-o-nauagosostis-einai-68-eton-i-dramatiki-perigrafi-tou-patera/?utm_source=rss",
+      "title": "«Έφυγε ένα δευτερόλεπτο από την προσοχή μου, ο ναυαγοσώστης είναι 68 ετών»: Η δραματική περιγραφή του πατέρα για τον θάνατο του 4χρονου σε πισίνα της Πάρου",
+      "normalized_title": "«ΕΦΥΓΕ ΕΝΑ ΔΕΥΤΕΡΟΛΕΠΤΟ ΑΠΟ ΤΗΝ ΠΡΟΣΟΧΗ ΜΟΥ, Ο ΝΑΥΑΓΟΣΩΣΤΗΣ ΕΙΝΑΙ 68 ΕΤΩΝ»: Η ΔΡΑΜΑΤΙΚΗ ΠΕΡΙΓΡΑΦΗ ΤΟΥ ΠΑΤΕΡΑ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ 4ΧΡΟΝΟΥ ΣΕ ΠΙΣΙΝΑ ΤΗΣ ΠΑΡΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862730/elliniki-omospondia-thalassaimias-krisimes-elleipseis-aimatos-ekklisi-gia-amesi-aimodosia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862726/fotia-tora-se-dasos-ston-agio-georgio-kerkuras-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862733/efuge-gia-ena-deuterolepto-apo-tin-prosohi-mou-o-nauagosostis-einai-68-eton-i-dramatiki-perigrafi-tou-patera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-09T17:51:29.329557+00:00"
+      "seen_at_utc": "2026-08-09T18:17:05.257872+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1444484/kakes-tehnes-osa-den-tha-ithele-pote-na-zisei-enas-dieythyntis-moyseioy/",
-      "title": "«Κακές τέχνες»: Όσα δεν θα ήθελε ποτέ να ζήσει ένας διευθυντής μουσείου",
-      "normalized_title": "«ΚΑΚΕΣ ΤΕΧΝΕΣ»: ΟΣΑ ΔΕΝ ΘΑ ΗΘΕΛΕ ΠΟΤΕ ΝΑ ΖΗΣΕΙ ΕΝΑΣ ΔΙΕΥΘΥΝΤΗΣ ΜΟΥΣΕΙΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1444812/vomva-giannakopoyloy-gia-to-mellon-toy-ston-panathinaiko-se-5-hronia-tha-vlepo-toys-agones-san-opados/",
+      "title": "«Βόμβα» Γιαννακόπουλου για το μέλλον του στον Παναθηναϊκό: «Σε 5 χρόνια θα βλέπω τους αγώνες σαν οπαδός»",
+      "normalized_title": "«ΒΟΜΒΑ» ΓΙΑΝΝΑΚΟΠΟΥΛΟΥ ΓΙΑ ΤΟ ΜΕΛΛΟΝ ΤΟΥ ΣΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ: «ΣΕ 5 ΧΡΟΝΙΑ ΘΑ ΒΛΕΠΩ ΤΟΥΣ ΑΓΩΝΕΣ ΣΑΝ ΟΠΑΔΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1444484/kakes-tehnes-osa-den-tha-ithele-pote-na-zisei-enas-dieythyntis-moyseioy/",
-        "https://www.efsyn.gr/ellada/1444806/prosgeiosi-elikopteroy-sto-sarakiniko-to-nomiko-keno-kai-i-eisaggeliki-paremvasi/"
+        "https://www.efsyn.gr/athlitismos/1444812/vomva-giannakopoyloy-gia-to-mellon-toy-ston-panathinaiko-se-5-hronia-tha-vlepo-toys-agones-san-opados/"
       ],
-      "seen_at_utc": "2026-08-09T17:51:29.329518+00:00"
+      "seen_at_utc": "2026-08-09T18:17:05.257819+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/greece/syllipseis-gia-pyrkagies-apo-ameleia-se-marousi-kai-xio/",
-      "title": "Συλλήψεις για πυρκαγιές από αμέλεια σε Μαρούσι και Χίο",
-      "normalized_title": "ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ ΑΠΟ ΑΜΕΛΕΙΑ ΣΕ ΜΑΡΟΥΣΙ ΚΑΙ ΧΙΟ",
+      "url": "https://www.in.gr/2026/08/09/sports/on-field/i-asist-tis-zois-tou-oi-diloseis-stin-poli-kai-o-giorgos-tou-olympiakou-pou-egrapse-tin-diki-tou-istoria/",
+      "title": "Η ασίστ της ζωής του, οι δηλώσεις στην Πόλη και ο Γιώργος του Ολυμπιακού που έγραψε την δική του ιστορία",
+      "normalized_title": "Η ΑΣΙΣΤ ΤΗΣ ΖΩΗΣ ΤΟΥ, ΟΙ ΔΗΛΩΣΕΙΣ ΣΤΗΝ ΠΟΛΗ ΚΑΙ Ο ΓΙΩΡΓΟΣ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΠΟΥ ΕΓΡΑΨΕ ΤΗΝ ΔΙΚΗ ΤΟΥ ΙΣΤΟΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/greece/syllipseis-gia-pyrkagies-apo-ameleia-se-marousi-kai-xio/",
-        "https://www.in.gr/2026/08/09/world/i-eyropi-den-einai-proetoimasmeni-gia-rosikes-epitheseis-me-drones-deixnei-meleti/"
+        "https://www.in.gr/2026/08/09/sports/on-field/i-asist-tis-zois-tou-oi-diloseis-stin-poli-kai-o-giorgos-tou-olympiakou-pou-egrapse-tin-diki-tou-istoria/",
+        "https://www.in.gr/2026/08/09/world/nea-yorki-mia-27xroni-kai-ena-vrefos-exasan-ti-zoi-tous-meta-tin-anatropi-skafous-konta-sto-nisi-tis-eleytherias/",
+        "https://www.in.gr/2026/08/09/greece/touristiki-perioxi-tis-xalkidikis-apagoreyei-ta-ntous-sta-beach-bar-logo-leipsydrias/",
+        "https://www.in.gr/2026/08/09/sports/basketball/i-omilia-tou-vasili-spanouli-stin-ethniki-paidon-meta-ti-niki-epi-tis-georgias-logia-apo-enan-thrylo-pics/"
       ],
-      "seen_at_utc": "2026-08-09T17:51:29.329478+00:00"
+      "seen_at_utc": "2026-08-09T18:17:05.257769+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T17:51:29.329672+00:00"
+  "updated_at_utc": "2026-08-09T18:17:05.257955+00:00"
 }
