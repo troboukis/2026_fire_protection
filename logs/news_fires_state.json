@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564393346/nea-meleti-apofeygontas-aytoys-toys-3-paragontes-kindynoy-kerdizoyme-13-chronia-choris-anoia/",
-      "title": "Νέα μελέτη: Αποφεύγοντας αυτούς τους 3 παράγοντες κινδύνου, κερδίζουμε 13 χρόνια χωρίς άνοια",
-      "normalized_title": "ΝΕΑ ΜΕΛΕΤΗ: ΑΠΟΦΕΥΓΟΝΤΑΣ ΑΥΤΟΥΣ ΤΟΥΣ 3 ΠΑΡΑΓΟΝΤΕΣ ΚΙΝΔΥΝΟΥ, ΚΕΡΔΙΖΟΥΜΕ 13 ΧΡΟΝΙΑ ΧΩΡΙΣ ΑΝΟΙΑ",
+      "url": "https://www.kathimerini.gr/society/564393361/kallimarmaro-xekina-o-katharismos-ton-marmaron-toy-gia-proti-fora-meta-apo-120-chronia/",
+      "title": "Καλλιμάρμαρο: Ξεκινά ο καθαρισμός των μαρμάρων του – Για πρώτη φορά μετά από 120 χρόνια",
+      "normalized_title": "ΚΑΛΛΙΜΑΡΜΑΡΟ: ΞΕΚΙΝΑ Ο ΚΑΘΑΡΙΣΜΟΣ ΤΩΝ ΜΑΡΜΑΡΩΝ ΤΟΥ – ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ ΜΕΤΑ ΑΠΟ 120 ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564393346/nea-meleti-apofeygontas-aytoys-toys-3-paragontes-kindynoy-kerdizoyme-13-chronia-choris-anoia/"
+        "https://www.kathimerini.gr/society/564393361/kallimarmaro-xekina-o-katharismos-ton-marmaron-toy-gia-proti-fora-meta-apo-120-chronia/",
+        "https://www.kathimerini.gr/world/564391648/egklovismenos-ston-kolpo/"
       ],
-      "seen_at_utc": "2026-08-09T14:30:10.138590+00:00"
+      "seen_at_utc": "2026-08-09T14:51:37.433665+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,27 +1269,32 @@
       "seen_at_utc": "2026-08-09T14:30:10.138713+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/themata/1444491/ta-mallia-toy-koykoyregia-kai-to-misos-gia-tin-alitheia/",
-      "title": "Τα μαλλιά του Κουκουρέγια και το μίσος για την αλήθεια",
-      "normalized_title": "ΤΑ ΜΑΛΛΙΑ ΤΟΥ ΚΟΥΚΟΥΡΕΓΙΑ ΚΑΙ ΤΟ ΜΙΣΟΣ ΓΙΑ ΤΗΝ ΑΛΗΘΕΙΑ",
+      "url": "https://www.efsyn.gr/kosmos/1444779/iran-sti-dimosiotita-vinteo-me-ton-motztampa-hamenei-den-prosdiorizetai-o-hronos-poy-gyristike/",
+      "title": "Ιράν: Στη δημοσιότητα βίντεο με τον Μοτζτάμπα Χαμενεΐ – Δεν προσδιορίζεται ο χρόνος που γυρίστηκε",
+      "normalized_title": "ΙΡΑΝ: ΣΤΗ ΔΗΜΟΣΙΟΤΗΤΑ ΒΙΝΤΕΟ ΜΕ ΤΟΝ ΜΟΤΖΤΑΜΠΑ ΧΑΜΕΝΕΙ – ΔΕΝ ΠΡΟΣΔΙΟΡΙΖΕΤΑΙ Ο ΧΡΟΝΟΣ ΠΟΥ ΓΥΡΙΣΤΗΚΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/themata/1444491/ta-mallia-toy-koykoyregia-kai-to-misos-gia-tin-alitheia/",
-        "https://www.efsyn.gr/politiki/1444774/elas-anagkaio-vima-to-eidiko-horotaxiko-gia-ton-toyrismo-i-hora-hreiazetai-olokliromeni-ethniki-stratigiki-10etias/",
-        "https://www.efsyn.gr/athlitismos/1444769/fifa-stin-antepithesi-o-infantino-kataggellei-syntonismeni-prospatheia-yponomeysis-toy/"
+        "https://www.efsyn.gr/kosmos/1444779/iran-sti-dimosiotita-vinteo-me-ton-motztampa-hamenei-den-prosdiorizetai-o-hronos-poy-gyristike/",
+        "https://www.efsyn.gr/ellada/1444777/pyrkagia-se-dasiki-ektasi-stin-ileia-megali-kinitopoiisi-tis-pyrosvestikis/"
       ],
-      "seen_at_utc": "2026-08-09T14:17:10.833925+00:00"
+      "seen_at_utc": "2026-08-09T14:51:37.433734+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/world/telos-stis-fimes-gia-tin-ygeia-tou-i-proti-dimosia-emfanisi-tou-motztampa-xamenei/",
-      "title": "Βίντεο με τον Μοτζτάμπα Χαμενεΐ έδωσε στη δημοσιότητα η Τεχεράνη",
-      "normalized_title": "ΒΙΝΤΕΟ ΜΕ ΤΟΝ ΜΟΤΖΤΑΜΠΑ ΧΑΜΕΝΕΙ ΕΔΩΣΕ ΣΤΗ ΔΗΜΟΣΙΟΤΗΤΑ Η ΤΕΧΕΡΑΝΗ",
+      "url": "https://www.in.gr/2026/08/09/world/o-netaniaxou-aporriptei-to-sxedio-tramp-gia-ti-gaza-prota-na-afoplistei-i-xamas/",
+      "title": "Ο Νετανιάχου απορρίπτει το σχέδιο Τραμπ για τη Γάζα – «Πρώτα να αφοπλιστεί η Χαμάς»",
+      "normalized_title": "Ο ΝΕΤΑΝΙΑΧΟΥ ΑΠΟΡΡΙΠΤΕΙ ΤΟ ΣΧΕΔΙΟ ΤΡΑΜΠ ΓΙΑ ΤΗ ΓΑΖΑ – «ΠΡΩΤΑ ΝΑ ΑΦΟΠΛΙΣΤΕΙ Η ΧΑΜΑΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/world/telos-stis-fimes-gia-tin-ygeia-tou-i-proti-dimosia-emfanisi-tou-motztampa-xamenei/",
+        "https://www.in.gr/2026/08/09/world/o-netaniaxou-aporriptei-to-sxedio-tramp-gia-ti-gaza-prota-na-afoplistei-i-xamas/",
+        "https://www.in.gr/2026/08/09/sports/on-field/o-masouras-efyge-os-athanatos-kai-exontas-pragmatopoiisei-ola-ta-paidika-tou-oneira-vid/",
+        "https://www.in.gr/2026/08/09/economy/diethnis-oikonomia/ayksithike-to-elleimma-tis-germanias-sto-emporiko-isozygio-me-tin-kina-poia-einai-i-aitia/",
+        "https://www.in.gr/2026/08/09/life/culture-live/tora-mporo-na-forao-takounia-o-paraforos-erotas-kai-to-thyellodes-diazygio-ton-kintman-kai-krouz/",
+        "https://www.in.gr/2026/08/09/sports/football/sti-neom-o-masouras-ton-apoxairetise-o-olympiakos-i-erythroleyki-oikogeneia-sou-eyxetai-kathe-epityxia/",
         "https://www.in.gr/2026/08/09/greece/synagermos-stin-ileia-fotia-tora-sto-xorio-mouzaki/",
-        "https://www.in.gr/2026/08/09/economy/diethnis-oikonomia/pagkosmia-anthisi-ton-ependyseon-se-agogous-petrelaiou/"
+        "https://www.in.gr/2026/08/09/economy/diethnis-oikonomia/pagkosmia-anthisi-ton-ependyseon-se-agogous-petrelaiou/",
+        "https://www.in.gr/2026/08/09/sports/football/arsenal-ntortmount-gkol-zografia-o-karetsas-kontra-stin-arsenal-tou-tzoli-vid/",
+        "https://www.in.gr/2026/08/09/world/gia-yvridiko-polemo-proeidopoiei-i-germania-ystera-apo-peristatiko-me-oplismeno-drone/"
       ],
-      "seen_at_utc": "2026-08-09T14:30:10.138664+00:00"
+      "seen_at_utc": "2026-08-09T14:51:37.433709+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T14:30:10.138827+00:00"
+  "updated_at_utc": "2026-08-09T14:51:37.433805+00:00"
 }
