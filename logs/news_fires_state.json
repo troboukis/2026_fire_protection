@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564393187/aytokinito-epese-se-gkremo-stin-parnitha/",
-      "title": "Αυτοκίνητο έπεσε σε γκρεμό στην Πάρνηθα",
-      "normalized_title": "ΑΥΤΟΚΙΝΗΤΟ ΕΠΕΣΕ ΣΕ ΓΚΡΕΜΟ ΣΤΗΝ ΠΑΡΝΗΘΑ",
+      "url": "https://www.kathimerini.gr/society/564393190/chania-syllipsi-52chronoy-gia-narkotika/",
+      "title": "Χανιά: Σύλληψη 52χρονου για ναρκωτικά",
+      "normalized_title": "ΧΑΝΙΑ: ΣΥΛΛΗΨΗ 52ΧΡΟΝΟΥ ΓΙΑ ΝΑΡΚΩΤΙΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564393187/aytokinito-epese-se-gkremo-stin-parnitha/",
-        "https://www.kathimerini.gr/society/564393178/ey-toyrnas-pano-apo-400-pyrkagies-se-deka-imeres/"
+        "https://www.kathimerini.gr/society/564393190/chania-syllipsi-52chronoy-gia-narkotika/"
       ],
-      "seen_at_utc": "2026-08-09T09:17:18.580356+00:00"
+      "seen_at_utc": "2026-08-09T09:30:03.832935+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,28 +1268,24 @@
       "seen_at_utc": "2026-08-09T08:51:19.785849+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444698/antidraseis-gia-to-sorts-toy-feidia-se-ekdilosi-mnimis-stin-kypro/",
-      "title": "Αντιδράσεις για το σορτς του Φειδία σε εκδήλωση μνήμης στην Κύπρο",
-      "normalized_title": "ΑΝΤΙΔΡΑΣΕΙΣ ΓΙΑ ΤΟ ΣΟΡΤΣ ΤΟΥ ΦΕΙΔΙΑ ΣΕ ΕΚΔΗΛΩΣΗ ΜΝΗΜΗΣ ΣΤΗΝ ΚΥΠΡΟ",
+      "url": "https://www.efsyn.gr/podcast/anagoges-koyventes-oi-isyhes-meres-toy-aygoystoy/",
+      "title": "Ανάγωγες κουβέντες: Οι ήσυχες μέρες του Αυγούστου",
+      "normalized_title": "ΑΝΑΓΩΓΕΣ ΚΟΥΒΕΝΤΕΣ: ΟΙ ΗΣΥΧΕΣ ΜΕΡΕΣ ΤΟΥ ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444698/antidraseis-gia-to-sorts-toy-feidia-se-ekdilosi-mnimis-stin-kypro/",
-        "https://www.efsyn.gr/oikonomia/1444444/stasi-pliromon-425-ekat-forologoymenon-i-aktinografia-tis-oikonomikis-asfyxias-kai-to-nayagio-ton-72-doseon/",
-        "https://www.efsyn.gr/politiki/1444688/oi-dyo-neoi-antiperifereiarhes-attikis-poy-orise-o-hardalias/"
+        "https://www.efsyn.gr/podcast/anagoges-koyventes-oi-isyhes-meres-toy-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-09T09:17:18.580433+00:00"
+      "seen_at_utc": "2026-08-09T09:30:03.833019+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/09/greece/erythros-stayros-asthenis-ksylokopise-nosileytria-xtypise-to-kefali-tis-se-porta-i-kataggelia-tis-poedin/",
-      "title": "Ερυθρός Σταυρός: Ασθενής ξυλοκόπησε νοσηλεύτρια, χτύπησε το κεφάλι της σε πόρτα – Η καταγγελία της ΠΟΕΔΗΝ",
-      "normalized_title": "ΕΡΥΘΡΟΣ ΣΤΑΥΡΟΣ: ΑΣΘΕΝΗΣ ΞΥΛΟΚΟΠΗΣΕ ΝΟΣΗΛΕΥΤΡΙΑ, ΧΤΥΠΗΣΕ ΤΟ ΚΕΦΑΛΙ ΤΗΣ ΣΕ ΠΟΡΤΑ – Η ΚΑΤΑΓΓΕΛΙΑ ΤΗΣ ΠΟΕΔΗΝ",
+      "url": "https://www.in.gr/2026/08/09/sports/football/gkimaraes-thelo-na-kerdiso-tropaia-kai-i-arsenal-einai-to-katallilo-meros/",
+      "title": "Γκιμαράες: «Θέλω να κερδίσω τρόπαια και η Άρσεναλ είναι το κατάλληλο μέρος»",
+      "normalized_title": "ΓΚΙΜΑΡΑΕΣ: «ΘΕΛΩ ΝΑ ΚΕΡΔΙΣΩ ΤΡΟΠΑΙΑ ΚΑΙ Η ΑΡΣΕΝΑΛ ΕΙΝΑΙ ΤΟ ΚΑΤΑΛΛΗΛΟ ΜΕΡΟΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/09/greece/erythros-stayros-asthenis-ksylokopise-nosileytria-xtypise-to-kefali-tis-se-porta-i-kataggelia-tis-poedin/",
-        "https://www.in.gr/2026/08/09/life/culture-live/rasel-kroou-mazi-me-tin-prigianka-tsopra-tzonas-sto-filodokso-sci-fi-thriler-bluefly/",
-        "https://www.in.gr/2026/08/09/sports/football/oloklironetai-tou-araouxo-sti-liverpoul-pernaei-iatrika-kai-ypografei/",
-        "https://www.in.gr/2026/08/09/greece/galazia-simaia-poies-einai-oi-17-paralies-tis-attikis-pou-pliroun-tis-prodiagrafes-gia-to-2026/"
+        "https://www.in.gr/2026/08/09/sports/football/gkimaraes-thelo-na-kerdiso-tropaia-kai-i-arsenal-einai-to-katallilo-meros/",
+        "https://www.in.gr/2026/08/09/politics/syriza-i-symfonia-tourkias-pakistan-s-aravias-anadeiknyei-tous-kindynous-tis-eksoterikis-politikis-mitsotaki/"
       ],
-      "seen_at_utc": "2026-08-09T09:17:18.580411+00:00"
+      "seen_at_utc": "2026-08-09T09:30:03.832984+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T09:17:18.580489+00:00"
+  "updated_at_utc": "2026-08-09T09:30:03.833091+00:00"
 }
