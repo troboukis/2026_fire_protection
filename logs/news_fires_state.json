@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564394522/epikoinonia-gerapetriti-me-ton-aigyptio-ypex-ampntelati-ti-syzitithike/",
-      "title": "Επικοινωνία Γεραπετρίτη με τον Αιγύπτιο ΥΠΕΞ Αμπντελάτι – Τι συζητήθηκε",
-      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΑΙΓΥΠΤΙΟ ΥΠΕΞ ΑΜΠΝΤΕΛΑΤΙ – ΤΙ ΣΥΖΗΤΗΘΗΚΕ",
+      "url": "https://www.kathimerini.gr/society/564394534/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
+      "title": "Νίκος Καλογερόπουλος: Την Τετάρτη η κηδεία του – Η παράκληση της οικογένειας",
+      "normalized_title": "ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ: ΤΗΝ ΤΕΤΑΡΤΗ Η ΚΗΔΕΙΑ ΤΟΥ – Η ΠΑΡΑΚΛΗΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564394522/epikoinonia-gerapetriti-me-ton-aigyptio-ypex-ampntelati-ti-syzitithike/",
-        "https://www.kathimerini.gr/life/auto/564394327/odigoyme-stin-ellada-ti-ferrari-amalfi-spider/",
-        "https://www.kathimerini.gr/world/564394495/ispania-megali-pyrkagia-stin-andaloysia-sti-machi-600-pyrosvestes-kai-26-enaeria/",
-        "https://www.kathimerini.gr/society/564394489/meteo-pano-apo-100-chlm-ora-oi-ripes-anemoy-se-attiki-kai-eyvoia/"
+        "https://www.kathimerini.gr/society/564394534/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
+        "https://www.kathimerini.gr/politics/564394510/doyroy-psifodeltio-me-osoys-theloyn-kai-mporoyn/",
+        "https://www.kathimerini.gr/society/564394525/fotia-konta-stin-kavala-minyma-112-gia-etoimotita/"
       ],
-      "seen_at_utc": "2026-08-10T15:51:48.598634+00:00"
+      "seen_at_utc": "2026-08-10T16:17:28.843504+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863154/duo-sullipseis-gia-diakinisi-narkotikon-stin-kerkura-katashethikan-narkotika-kai-metrita/?utm_source=rss",
-      "title": "Δύο συλλήψεις για διακίνηση ναρκωτικών στην Κέρκυρα, κατασχέθηκαν ναρκωτικά και μετρητά",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ ΣΤΗΝ ΚΕΡΚΥΡΑ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΝΑΡΚΩΤΙΚΑ ΚΑΙ ΜΕΤΡΗΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1863171/dodeka-paraviaseis-tou-ellinikou-enaeriou-horou-apo-tourkika-mi-epandromena-aeroskafi/?utm_source=rss",
+      "title": "Δώδεκα παραβιάσεις του ελληνικού εναέριου χώρου από τουρκικά μη επανδρωμένα αεροσκάφη",
+      "normalized_title": "ΔΩΔΕΚΑ ΠΑΡΑΒΙΑΣΕΙΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΕΝΑΕΡΙΟΥ ΧΩΡΟΥ ΑΠΟ ΤΟΥΡΚΙΚΑ ΜΗ ΕΠΑΝΔΡΩΜΕΝΑ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863154/duo-sullipseis-gia-diakinisi-narkotikon-stin-kerkura-katashethikan-narkotika-kai-metrita/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863171/dodeka-paraviaseis-tou-ellinikou-enaeriou-horou-apo-tourkika-mi-epandromena-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T15:30:15.572615+00:00"
+      "seen_at_utc": "2026-08-10T16:17:28.843603+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1445452/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-spoydaioy-ithopoioy-ti-zita-i-oikogeneia-toy/",
-      "title": "Νίκος Καλογερόπουλος: Την Τετάρτη η κηδεία του σπουδαίου ηθοποιού – Τι ζητά η οικογένειά του",
-      "normalized_title": "ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ: ΤΗΝ ΤΕΤΑΡΤΗ Η ΚΗΔΕΙΑ ΤΟΥ ΣΠΟΥΔΑΙΟΥ ΗΘΟΠΟΙΟΥ – ΤΙ ΖΗΤΑ Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1445461/xespasma-mpenoy-gia-ton-evro-kai-kataggelia-gia-akyrosi-toy-master-plan-den-axizo-ligo-sevasmoy-irtha-os-ethelontis-ihitiko/",
+      "title": "Ξέσπασμα Μπένου για τον Έβρο και καταγγελία για ακύρωσή του master plan: «Δεν αξίζω λίγο σεβασμού; Ήρθα ως εθελοντής» [ηχητικό]",
+      "normalized_title": "ΞΕΣΠΑΣΜΑ ΜΠΕΝΟΥ ΓΙΑ ΤΟΝ ΕΒΡΟ ΚΑΙ ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΑΚΥΡΩΣΗ ΤΟΥ MASTER PLAN: «ΔΕΝ ΑΞΙΖΩ ΛΙΓΟ ΣΕΒΑΣΜΟΥ; ΗΡΘΑ ΩΣ ΕΘΕΛΟΝΤΗΣ» [ΗΧΗΤΙΚΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1445452/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-spoydaioy-ithopoioy-ti-zita-i-oikogeneia-toy/",
-        "https://www.efsyn.gr/ellada/1445449/diasosi-sta-hania-nayagosostis-palepse-me-ta-kymata-gia-na-vgalei-toyristria-stin-akti-vinteo/",
-        "https://www.efsyn.gr/epistimi/1445424/epistimoniki-ereyna-pos-oi-karharies-mporoyn-na-voithisoyn-sti-veltiosi-ton-provlepseon-gia-tyfones/"
+        "https://www.efsyn.gr/politiki/1445461/xespasma-mpenoy-gia-ton-evro-kai-kataggelia-gia-akyrosi-toy-master-plan-den-axizo-ligo-sevasmoy-irtha-os-ethelontis-ihitiko/",
+        "https://www.efsyn.gr/ellada/1445233/evdomada-fotia-gia-200-000-ekpaideytikoys-diorismoi-pinakes-asep-kai-prosklisi-anapliroton/"
       ],
-      "seen_at_utc": "2026-08-10T15:51:48.598738+00:00"
+      "seen_at_utc": "2026-08-10T16:17:28.843583+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/politics/diplomatia/epikoinonia-gerapetriti-me-ton-aigyptio-ypeks-stin-atzenta-oi-dimereis-sxeseis-elladas-aigyptou/",
-      "title": "Επικοινωνία Γεραπετρίτη με τον Αιγύπτιο ΥΠΕΞ: Στην ατζέντα οι διμερείς σχέσεις Ελλάδας – Αιγύπτου",
-      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΑΙΓΥΠΤΙΟ ΥΠΕΞ: ΣΤΗΝ ΑΤΖΕΝΤΑ ΟΙ ΔΙΜΕΡΕΙΣ ΣΧΕΣΕΙΣ ΕΛΛΑΔΑΣ – ΑΙΓΥΠΤΟΥ",
+      "url": "https://www.in.gr/2026/08/10/sports/football/i-pae-aris-entaxthike-sto-pagkosmio-diktyo-tou-coloradd-protoporoume-stin-emprakti-symperilipsi/",
+      "title": "Η ΠΑΕ Άρης εντάχθηκε στο παγκόσμιο δίκτυο του ColorADD: «Πρωτοπορούμε στην έμπρακτη συμπερίληψη»",
+      "normalized_title": "Η ΠΑΕ ΑΡΗΣ ΕΝΤΑΧΘΗΚΕ ΣΤΟ ΠΑΓΚΟΣΜΙΟ ΔΙΚΤΥΟ ΤΟΥ COLORADD: «ΠΡΩΤΟΠΟΡΟΥΜΕ ΣΤΗΝ ΕΜΠΡΑΚΤΗ ΣΥΜΠΕΡΙΛΗΨΗ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/politics/diplomatia/epikoinonia-gerapetriti-me-ton-aigyptio-ypeks-stin-atzenta-oi-dimereis-sxeseis-elladas-aigyptou/",
-        "https://www.in.gr/2026/08/10/greece/serres-prosorina-kratoumenoi-adelfos-kai-anipsios-tou-66xronou-pou-vrethike-nekros-sta-ivira/",
-        "https://www.in.gr/2026/08/10/sports/football/champions-league/mentilimpar-na-eimaste-kalyteroi-sti-revans-doulepsame-poly-kai-irthame-gia-tin-prokrisi/"
+        "https://www.in.gr/2026/08/10/sports/football/i-pae-aris-entaxthike-sto-pagkosmio-diktyo-tou-coloradd-protoporoume-stin-emprakti-symperilipsi/",
+        "https://www.in.gr/2026/08/10/greece/taytopoiithike-o-odigos-tis-katadioksis-apo-tin-korintho-eos-to-antirrio-entalma-syllipsis-gia-38xrono-voulgaro/",
+        "https://www.in.gr/2026/08/10/greece/nikos-kalogeropoulos-tin-tetarti-i-kideia-tou-h-epithymia-tis-oikogeneias/",
+        "https://www.in.gr/2026/08/10/life/festival-kinimatografou-tou-lokarno-60-000-nekroi-palaistinioi-se-ena-sparaktiko-savano/",
+        "https://www.in.gr/2026/08/10/sports/othersports/tentoglou-tha-mou-vgainoun-eykola-almata-sto-8-50-den-ksero-an-kapoios-mporei-na-akolouthisei/"
       ],
-      "seen_at_utc": "2026-08-10T15:51:48.598700+00:00"
+      "seen_at_utc": "2026-08-10T16:17:28.843550+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T15:51:48.598822+00:00"
+  "updated_at_utc": "2026-08-10T16:17:28.843693+00:00"
 }
