@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564392167/to-saoyntrak-toy-kalokairioy/",
-      "title": "Το σάουντρακ του καλοκαιριού",
-      "normalized_title": "ΤΟ ΣΑΟΥΝΤΡΑΚ ΤΟΥ ΚΑΛΟΚΑΙΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/world/564394666/seismos-stin-kolomvia-agonia-sta-syntrimmia-gia-toys-egklovismenoys/",
+      "title": "Σεισμός στην Κολομβία: Αγωνία στα συντρίμμια για τους εγκλωβισμένους",
+      "normalized_title": "ΣΕΙΣΜΟΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ: ΑΓΩΝΙΑ ΣΤΑ ΣΥΝΤΡΙΜΜΙΑ ΓΙΑ ΤΟΥΣ ΕΓΚΛΩΒΙΣΜΕΝΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564392167/to-saoyntrak-toy-kalokairioy/"
+        "https://www.kathimerini.gr/world/564394666/seismos-stin-kolomvia-agonia-sta-syntrimmia-gia-toys-egklovismenoys/",
+        "https://www.kathimerini.gr/economy/564391957/arthro-toy-theodoroy-pelagidi-stin-k-i-epistrofi-toy-oikonomikoy-paremvatismoy/",
+        "https://www.kathimerini.gr/culture/564392146/ekdoches-tis-eyropaikis-thymatologias/"
       ],
-      "seen_at_utc": "2026-08-10T20:30:10.087340+00:00"
+      "seen_at_utc": "2026-08-10T20:51:32.589363+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1270,24 @@
       "seen_at_utc": "2026-08-10T19:30:44.587452+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445552/o-adonis-georgiadis-gia-tin-katarreysi-tmimatos-orofis-sto-venizeleio-paidia-halaroste-sovas-epese/",
-      "title": "Ο Άδωνις Γεωργιάδης για την κατάρρευση τμήματος οροφής στο Βενιζέλειο: «Παιδιά χαλαρώστε, σοβάς έπεσε…»",
-      "normalized_title": "Ο ΑΔΩΝΙΣ ΓΕΩΡΓΙΑΔΗΣ ΓΙΑ ΤΗΝ ΚΑΤΑΡΡΕΥΣΗ ΤΜΗΜΑΤΟΣ ΟΡΟΦΗΣ ΣΤΟ ΒΕΝΙΖΕΛΕΙΟ: «ΠΑΙΔΙΑ ΧΑΛΑΡΩΣΤΕ, ΣΟΒΑΣ ΕΠΕΣΕ…»",
+      "url": "https://www.efsyn.gr/kosmos/1445555/ipa-o-tramp-allazei-ta-dedomena-kai-sta-paidika-emvolia/",
+      "title": "ΗΠΑ: Ο Τραμπ αλλάζει τα δεδομένα και στα παιδικά εμβόλια",
+      "normalized_title": "ΗΠΑ: Ο ΤΡΑΜΠ ΑΛΛΑΖΕΙ ΤΑ ΔΕΔΟΜΕΝΑ ΚΑΙ ΣΤΑ ΠΑΙΔΙΚΑ ΕΜΒΟΛΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445552/o-adonis-georgiadis-gia-tin-katarreysi-tmimatos-orofis-sto-venizeleio-paidia-halaroste-sovas-epese/",
-        "https://www.efsyn.gr/athlitismos/1445549/olympiakos-prepei-na-kerdisoyme-ti-naimegken-eipe-o-mentilimpar-poy-paradehthike-pos-imastan-kakoi-sto-proto-mats/"
+        "https://www.efsyn.gr/kosmos/1445555/ipa-o-tramp-allazei-ta-dedomena-kai-sta-paidika-emvolia/"
       ],
-      "seen_at_utc": "2026-08-10T20:17:06.905653+00:00"
+      "seen_at_utc": "2026-08-10T20:51:32.589439+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/basketball/to-eixe-pei-kai-to-ekane-praksi-o-enes-kanter-katethese-aitima-symmetoxis-sto-wnba-vid/",
-      "title": "To είχε πει και το έκανε πράξη ο Ενές Καντέρ: Κατέθεσε αίτημα συμμετοχής στο… WNBA (vid)",
-      "normalized_title": "TO ΕΙΧΕ ΠΕΙ ΚΑΙ ΤΟ ΕΚΑΝΕ ΠΡΑΞΗ Ο ΕΝΕΣ ΚΑΝΤΕΡ: ΚΑΤΕΘΕΣΕ ΑΙΤΗΜΑ ΣΥΜΜΕΤΟΧΗΣ ΣΤΟ… WNBA (VID)",
+      "url": "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/texniti-noimosyni-poios-xreiazetai-symvoulous-stin-epoxi-tis-ai/",
+      "title": "Τεχνητή νοημοσύνη: Ποιος χρειάζεται συμβούλους στην εποχή της ΑΙ",
+      "normalized_title": "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ: ΠΟΙΟΣ ΧΡΕΙΑΖΕΤΑΙ ΣΥΜΒΟΥΛΟΥΣ ΣΤΗΝ ΕΠΟΧΗ ΤΗΣ ΑΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/basketball/to-eixe-pei-kai-to-ekane-praksi-o-enes-kanter-katethese-aitima-symmetoxis-sto-wnba-vid/"
+        "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/texniti-noimosyni-poios-xreiazetai-symvoulous-stin-epoxi-tis-ai/",
+        "https://www.in.gr/2026/08/10/sports/basketball/ethniki-mpasket-epistrofi-kalathi-mesa-kai-o-ntorsei-dyskola-o-giannis/"
       ],
-      "seen_at_utc": "2026-08-10T20:30:10.087399+00:00"
+      "seen_at_utc": "2026-08-10T20:51:32.589404+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T20:30:10.087480+00:00"
+  "updated_at_utc": "2026-08-10T20:51:32.589507+00:00"
 }
