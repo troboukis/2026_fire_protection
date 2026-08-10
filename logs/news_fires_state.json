@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564394633/ipa-ceos-mplokaroyn-tis-odigies-gia-ta-yperepexergasmena-trofima/",
-      "title": "ΗΠΑ: CEOs μπλοκάρουν τις οδηγίες για τα υπερεπεξεργασμένα τρόφιμα",
-      "normalized_title": "ΗΠΑ: CEOS ΜΠΛΟΚΑΡΟΥΝ ΤΙΣ ΟΔΗΓΙΕΣ ΓΙΑ ΤΑ ΥΠΕΡΕΠΕΞΕΡΓΑΣΜΕΝΑ ΤΡΟΦΙΜΑ",
+      "url": "https://www.kathimerini.gr/life/auto/564394483/timo-salonen-ayto-poy-vlepeis/",
+      "title": "Τίμο Σάλονεν: Αυτό που βλέπεις",
+      "normalized_title": "ΤΙΜΟ ΣΑΛΟΝΕΝ: ΑΥΤΟ ΠΟΥ ΒΛΕΠΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564394633/ipa-ceos-mplokaroyn-tis-odigies-gia-ta-yperepexergasmena-trofima/"
+        "https://www.kathimerini.gr/life/auto/564394483/timo-salonen-ayto-poy-vlepeis/"
       ],
-      "seen_at_utc": "2026-08-10T18:17:08.505749+00:00"
+      "seen_at_utc": "2026-08-10T18:30:08.972078+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,28 +1268,23 @@
       "seen_at_utc": "2026-08-10T17:51:30.820643+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445501/fotia-stin-attikovoiotia-diasothikan-282-pyroplikta-zoa/",
-      "title": "Φωτιά στην Αττικοβοιωτία: Διασώθηκαν 282 πυρόπληκτα ζώα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΤΤΙΚΟΒΟΙΩΤΙΑ: ΔΙΑΣΩΘΗΚΑΝ 282 ΠΥΡΟΠΛΗΚΤΑ ΖΩΑ",
+      "url": "https://www.efsyn.gr/kosmos/1445507/vretania-shedon-ta-tria-tetarta-tis-agglias-se-katastasi-xirasias/",
+      "title": "Βρετανία: Σχεδόν τα τρία τέταρτα της Αγγλίας σε κατάσταση ξηρασίας",
+      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΣΧΕΔΟΝ ΤΑ ΤΡΙΑ ΤΕΤΑΡΤΑ ΤΗΣ ΑΓΓΛΙΑΣ ΣΕ ΚΑΤΑΣΤΑΣΗ ΞΗΡΑΣΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445501/fotia-stin-attikovoiotia-diasothikan-282-pyroplikta-zoa/",
-        "https://www.efsyn.gr/periballon/1445195/adeiazoyn-ta-potamia-matonei-i-oikonomia-pos-i-leipsydria-fernei-alysidotes-synepeies-stin-eyropi/"
+        "https://www.efsyn.gr/kosmos/1445507/vretania-shedon-ta-tria-tetarta-tis-agglias-se-katastasi-xirasias/"
       ],
-      "seen_at_utc": "2026-08-10T18:17:08.505826+00:00"
+      "seen_at_utc": "2026-08-10T18:30:08.972173+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/football/uefa-kai-symmaxoi-eksetazoun-enallaktikes-diorganoseis-apenanti-ston-infantino/",
-      "title": "UEFA και σύμμαχοι εξετάζουν εναλλακτικές διοργανώσεις απέναντι στον Ινφαντίνο",
-      "normalized_title": "UEFA ΚΑΙ ΣΥΜΜΑΧΟΙ ΕΞΕΤΑΖΟΥΝ ΕΝΑΛΛΑΚΤΙΚΕΣ ΔΙΟΡΓΑΝΩΣΕΙΣ ΑΠΕΝΑΝΤΙ ΣΤΟΝ ΙΝΦΑΝΤΙΝΟ",
+      "url": "https://www.in.gr/2026/08/10/greece/sovaros-traymatismos-touristrias-apo-to-reyma-aeroplanou-sto-aerodromio-skiathou-diakomistike-sto-nosokomeio-volou/",
+      "title": "Σοβαρός τραυματισμός τουρίστριας από το ρεύμα αεροπλάνου στο αεροδρόμιο Σκιάθου – Διακομίστηκε στο νοσοκομείο Βόλου",
+      "normalized_title": "ΣΟΒΑΡΟΣ ΤΡΑΥΜΑΤΙΣΜΟΣ ΤΟΥΡΙΣΤΡΙΑΣ ΑΠΟ ΤΟ ΡΕΥΜΑ ΑΕΡΟΠΛΑΝΟΥ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΣΚΙΑΘΟΥ – ΔΙΑΚΟΜΙΣΤΗΚΕ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΒΟΛΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/football/uefa-kai-symmaxoi-eksetazoun-enallaktikes-diorganoseis-apenanti-ston-infantino/",
-        "https://www.in.gr/2026/08/10/sports/on-field/xamos-me-lanthasmeno-synagermo-gia-ekriktika-sto-poulman-tis-ethnikis-agglias-prin-ton-imiteliko-tou-mountial/",
-        "https://www.in.gr/2026/08/10/go-fun/perierga/oxi-o-usher-den-exei-klonopoiithei/",
-        "https://www.in.gr/2026/08/10/world/rosia-to-anotato-dikastirio-apekleise-to-anti-polemiko-komma-yabloko-apo-tis-vouleytikes-ekloges/",
-        "https://www.in.gr/2026/08/10/greece/fotia-se-xamili-vlastisi-sti-xalkida/"
+        "https://www.in.gr/2026/08/10/greece/sovaros-traymatismos-touristrias-apo-to-reyma-aeroplanou-sto-aerodromio-skiathou-diakomistike-sto-nosokomeio-volou/"
       ],
-      "seen_at_utc": "2026-08-10T18:17:08.505799+00:00"
+      "seen_at_utc": "2026-08-10T18:30:08.972137+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T18:17:08.505905+00:00"
+  "updated_at_utc": "2026-08-10T18:30:08.972241+00:00"
 }
