@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564392200/metamonternos-moysis-sto-sotiria/",
-      "title": "Μεταμοντέρνος Μωυσής στο «Σωτηρία»",
-      "normalized_title": "ΜΕΤΑΜΟΝΤΕΡΝΟΣ ΜΩΥΣΗΣ ΣΤΟ «ΣΩΤΗΡΙΑ»",
+      "url": "https://www.kathimerini.gr/world/564394735/kina-exerragi-o-pyraylos-poy-metefere-ton-doryforo-chinasat-4b/",
+      "title": "Κίνα: Εξερράγη ο πύραυλος που μετέφερε τον δορυφόρο ChinaSat-4B",
+      "normalized_title": "ΚΙΝΑ: ΕΞΕΡΡΑΓΗ Ο ΠΥΡΑΥΛΟΣ ΠΟΥ ΜΕΤΕΦΕΡΕ ΤΟΝ ΔΟΡΥΦΟΡΟ CHINASAT-4B",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564392200/metamonternos-moysis-sto-sotiria/",
-        "https://www.kathimerini.gr/society/564394699/venizeleio-nosokomeio-epese-tmima-tis-orofis-se-grafeio-giatron-eikones/"
+        "https://www.kathimerini.gr/world/564394735/kina-exerragi-o-pyraylos-poy-metefere-ton-doryforo-chinasat-4b/",
+        "https://www.kathimerini.gr/world/564394720/den-evlepa-diexodo-i-exomologisi-toy-mprant-pit-gia-tin-pio-dyskoli-periodo-tis-zois-toy/"
       ],
-      "seen_at_utc": "2026-08-10T19:17:05.053521+00:00"
+      "seen_at_utc": "2026-08-10T19:30:44.587371+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,23 +1260,22 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863245/dimosia-dapani-tha-telestei-i-kideia-tou-steliou-ramfou/?utm_source=rss",
-      "title": "Δημοσία δαπάνη θα τελεστεί η κηδεία του Στέλιου Ράμφου",
-      "normalized_title": "ΔΗΜΟΣΙΑ ΔΑΠΑΝΗ ΘΑ ΤΕΛΕΣΤΕΙ Η ΚΗΔΕΙΑ ΤΟΥ ΣΤΕΛΙΟΥ ΡΑΜΦΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1863248/16hronos-motosikletistis-epese-se-gremo-30-metron-meta-apo-trohaio-stin-arta-ton-anevase-i-purosvestiki-me-shoinia/?utm_source=rss",
+      "title": "16χρονος μοτοσικλετιστής έπεσε σε γκρεμό 30 μέτρων μετά από τροχαίο στην Άρτα, επιχείρηση διάσωσης από την Πυροσβεστική",
+      "normalized_title": "16ΧΡΟΝΟΣ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΕΠΕΣΕ ΣΕ ΓΚΡΕΜΟ 30 ΜΕΤΡΩΝ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΣΤΗΝ ΑΡΤΑ, ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ ΑΠΟ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863245/dimosia-dapani-tha-telestei-i-kideia-tou-steliou-ramfou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863248/16hronos-motosikletistis-epese-se-gremo-30-metron-meta-apo-trohaio-stin-arta-ton-anevase-i-purosvestiki-me-shoinia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T19:17:05.053657+00:00"
+      "seen_at_utc": "2026-08-10T19:30:44.587452+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445536/htypima-polaki-se-adoni-gia-to-venizeleio-koyrtina-den-ypirxe-gia-na-tin-travixoyn-oi-ergazomenoi/",
-      "title": "«Χτύπημα» Πολάκη σε Άδωνη για το Βενιζέλειο: «Κουρτίνα δεν υπήρξε για να την τραβήξουν οι εργαζόμενοι»",
-      "normalized_title": "«ΧΤΥΠΗΜΑ» ΠΟΛΑΚΗ ΣΕ ΑΔΩΝΗ ΓΙΑ ΤΟ ΒΕΝΙΖΕΛΕΙΟ: «ΚΟΥΡΤΙΝΑ ΔΕΝ ΥΠΗΡΞΕ ΓΙΑ ΝΑ ΤΗΝ ΤΡΑΒΗΞΟΥΝ ΟΙ ΕΡΓΑΖΟΜΕΝΟΙ»",
+      "url": "https://www.efsyn.gr/ellada/1445539/kypseli-orgi-katoikon-gia-dimosieyma-shetika-me-tis-zimies-apo-ta-erga-toy-metro-pseydi-kai-apokrypsi-stoiheion/",
+      "title": "Κυψέλη: Οργή κατοίκων για δημοσίευμα σχετικά με τις ζημιές από τα έργα του Μετρό: «Ψεύδη και απόκρυψη στοιχείων»",
+      "normalized_title": "ΚΥΨΕΛΗ: ΟΡΓΗ ΚΑΤΟΙΚΩΝ ΓΙΑ ΔΗΜΟΣΙΕΥΜΑ ΣΧΕΤΙΚΑ ΜΕ ΤΙΣ ΖΗΜΙΕΣ ΑΠΟ ΤΑ ΕΡΓΑ ΤΟΥ ΜΕΤΡΟ: «ΨΕΥΔΗ ΚΑΙ ΑΠΟΚΡΥΨΗ ΣΤΟΙΧΕΙΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445536/htypima-polaki-se-adoni-gia-to-venizeleio-koyrtina-den-ypirxe-gia-na-tin-travixoyn-oi-ergazomenoi/",
-        "https://www.efsyn.gr/ellada/1445525/skiathos-toyristria-ypesti-kranioegkefalikes-kakoseis-apo-to-reyma-aeros-poy-prokalesan-toyrmpines-aeroplanoy/"
+        "https://www.efsyn.gr/ellada/1445539/kypseli-orgi-katoikon-gia-dimosieyma-shetika-me-tis-zimies-apo-ta-erga-toy-metro-pseydi-kai-apokrypsi-stoiheion/"
       ],
-      "seen_at_utc": "2026-08-10T19:17:05.053629+00:00"
+      "seen_at_utc": "2026-08-10T19:30:44.587422+00:00"
     },
     "in_gr": {
       "url": "https://www.in.gr/2026/08/10/greece/tragodia-sti-trikala-nekros-vrefos-15-minon-para-ti-maxi-ton-giatron-sto-nosokomeio/",
@@ -1292,5 +1291,5 @@
       "seen_at_utc": "2026-08-10T19:17:05.053577+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T19:17:05.053725+00:00"
+  "updated_at_utc": "2026-08-10T19:30:44.587512+00:00"
 }
