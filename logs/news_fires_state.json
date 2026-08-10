@@ -1,16 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/agenda/564393493/exodos-stin-athina-kai-ektos-ti-deytera-10-aygoystoy-mangata-projekt-kai-karathanos/",
-      "title": "Εξοδος στην Αθήνα (και εκτός) τη Δευτέρα 10 Αυγούστου: Mångata Projekt και Καραθάνος",
-      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ (ΚΑΙ ΕΚΤΟΣ) ΤΗ ΔΕΥΤΕΡΑ 10 ΑΥΓΟΥΣΤΟΥ: MANGATA PROJEKT ΚΑΙ ΚΑΡΑΘΑΝΟΣ",
+      "url": "https://www.kathimerini.gr/society/564393544/kairos-ekriktiko-kokteil-simera-me-ischyra-meltemia-kai-39aria/",
+      "title": "Καιρός: Εκρηκτικό «κοκτέιλ» σήμερα με ισχυρά μελτέμια και 39άρια",
+      "normalized_title": "ΚΑΙΡΟΣ: ΕΚΡΗΚΤΙΚΟ «ΚΟΚΤΕΙΛ» ΣΗΜΕΡΑ ΜΕ ΙΣΧΥΡΑ ΜΕΛΤΕΜΙΑ ΚΑΙ 39ΑΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/agenda/564393493/exodos-stin-athina-kai-ektos-ti-deytera-10-aygoystoy-mangata-projekt-kai-karathanos/",
-        "https://www.kathimerini.gr/world/564393517/techerani-to-ormoyz-tha-meinei-kleisto-oso-oi-ipa-den-dechontai-oloys-toys-oroys-toy-iran/",
-        "https://www.kathimerini.gr/world/564393514/kanadas-megali-pyrkagia-stin-eparchia-tis-vretanikis-kolomvias-nekri-80chroni/",
-        "https://www.kathimerini.gr/world/564393502/ipa-dyo-aeroskafi-anachaitistikan-apo-f-16-konta-se-gipedo-gkolf-toy-ntonalnt-tramp/"
+        "https://www.kathimerini.gr/society/564393544/kairos-ekriktiko-kokteil-simera-me-ischyra-meltemia-kai-39aria/",
+        "https://www.kathimerini.gr/world/564393547/tragodia-sto-megalytero-chrysorycheio-tis-aigyptoy-thanatos-ergati-exaitias-katarreysis/",
+        "https://www.kathimerini.gr/culture/cinema/564393523/after-o-lars-fon-trier-oloklironei-to-senario-tis-teleytaias-toy-tainias/",
+        "https://www.kathimerini.gr/culture/cinema/564393520/odysseia-i-pio-emporiki-tainia-toy-kristofer-nolan-xeperase-to-1-dis-dolaria-sta-pagkosmia-box-office/",
+        "https://www.kathimerini.gr/world/564393535/kyani-akti-eklepsan-roloi-axias-260-000-eyro-apo-vraziliano-toyrista/",
+        "https://www.kathimerini.gr/economy/564391912/oyragoi-stin-energeiaki-anavathmisi/"
       ],
-      "seen_at_utc": "2026-08-10T04:30:08.546496+00:00"
+      "seen_at_utc": "2026-08-10T04:51:17.459977+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,24 +1274,28 @@
       "seen_at_utc": "2026-08-10T04:17:34.581930+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1444874/diapseysi-apo-to-pasok-gia-ton-mystiko-deipno-alla-ta-senaria-epimenoyn-neos-gyros-antidraseon/",
-      "title": "Διάψευση από το ΠΑΣΟΚ για τον «μυστικό δείπνο» αλλά τα σενάρια επιμένουν – Νέος γύρος αντιδράσεων",
-      "normalized_title": "ΔΙΑΨΕΥΣΗ ΑΠΟ ΤΟ ΠΑΣΟΚ ΓΙΑ ΤΟΝ «ΜΥΣΤΙΚΟ ΔΕΙΠΝΟ» ΑΛΛΑ ΤΑ ΣΕΝΑΡΙΑ ΕΠΙΜΕΝΟΥΝ – ΝΕΟΣ ΓΥΡΟΣ ΑΝΤΙΔΡΑΣΕΩΝ",
+      "url": "https://www.efsyn.gr/kosmos/1444889/torpili-netaniahoy-gia-ti-gaza-to-ohi-sto-shedio-tramp-i-rixi-me-tis-ipa-kai-oi-ekloges-sto-israil/",
+      "title": "«Τορπίλη» Νετανιάχου για τη Γάζα: Το «όχι» στο σχέδιο Τραμπ, η ρήξη με τις ΗΠΑ και οι εκλογές στο Ισραήλ",
+      "normalized_title": "«ΤΟΡΠΙΛΗ» ΝΕΤΑΝΙΑΧΟΥ ΓΙΑ ΤΗ ΓΑΖΑ: ΤΟ «ΟΧΙ» ΣΤΟ ΣΧΕΔΙΟ ΤΡΑΜΠ, Η ΡΗΞΗ ΜΕ ΤΙΣ ΗΠΑ ΚΑΙ ΟΙ ΕΚΛΟΓΕΣ ΣΤΟ ΙΣΡΑΗΛ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1444874/diapseysi-apo-to-pasok-gia-ton-mystiko-deipno-alla-ta-senaria-epimenoyn-neos-gyros-antidraseon/",
-        "https://www.efsyn.gr/ellada/1444880/leyteria-stin-palaistini-hiliades-anthropoi-diadilosan-se-oli-ti-hora-enantia-sti-genoktonia/"
+        "https://www.efsyn.gr/kosmos/1444889/torpili-netaniahoy-gia-ti-gaza-to-ohi-sto-shedio-tramp-i-rixi-me-tis-ipa-kai-oi-ekloges-sto-israil/",
+        "https://www.efsyn.gr/kosmos/1444893/stena-toy-ormoyz-to-iran-epimenei-sto-kleisimo-oi-oroi-pros-tis-ipa-kai-i-nea-entasi/",
+        "https://www.efsyn.gr/ellada/1444894/maroysi-synagermos-gia-fotia-se-spiti-ta-ximeromata/",
+        "https://www.efsyn.gr/protoselida/pahies-yposheseis-eptaetia-koroidias/"
       ],
-      "seen_at_utc": "2026-08-10T04:30:08.546550+00:00"
+      "seen_at_utc": "2026-08-10T04:51:17.460049+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/metavivaseis-akiniton-sto-mikroskopio-symvolaia-gia-to-pistopoiitiko-tou-enfia/",
-      "title": "Μεταβιβάσεις ακινήτων: Στο μικροσκόπιο συμβόλαια για το πιστοποιητικό του ΕΝΦΙΑ",
-      "normalized_title": "ΜΕΤΑΒΙΒΑΣΕΙΣ ΑΚΙΝΗΤΩΝ: ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΣΥΜΒΟΛΑΙΑ ΓΙΑ ΤΟ ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΤΟΥ ΕΝΦΙΑ",
+      "url": "https://www.in.gr/2026/08/10/go-fun/social/arkas-i-kalimera-tis-deyteras-6/",
+      "title": "Αρκάς: Η καλημέρα της Δευτέρας",
+      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΔΕΥΤΕΡΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/metavivaseis-akiniton-sto-mikroskopio-symvolaia-gia-to-pistopoiitiko-tou-enfia/"
+        "https://www.in.gr/2026/08/10/go-fun/social/arkas-i-kalimera-tis-deyteras-6/",
+        "https://www.in.gr/2026/08/10/greece/oiele-sovari-kataggelia-gia-idiotiko-sxoleio-yperergasia-epikindynes-ypodomes-kai-ergasiako-bullying/",
+        "https://www.in.gr/2026/08/10/plus/vita/askisi-pente-lepta-tin-imera-pou-kanoun-ti-diafora/"
       ],
-      "seen_at_utc": "2026-08-10T04:30:08.546528+00:00"
+      "seen_at_utc": "2026-08-10T04:51:17.460019+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T04:30:08.546609+00:00"
+  "updated_at_utc": "2026-08-10T04:51:17.460137+00:00"
 }
