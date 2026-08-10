@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564390529/mikro-spiti-sto-livadi-glykia-nostalgia-i-lagneia-toy-parelthontos/",
-      "title": "«Μικρό Σπίτι στο Λιβάδι»: Γλυκιά νοσταλγία ή λαγνεία του παρελθόντος;",
-      "normalized_title": "«ΜΙΚΡΟ ΣΠΙΤΙ ΣΤΟ ΛΙΒΑΔΙ»: ΓΛΥΚΙΑ ΝΟΣΤΑΛΓΙΑ Η ΛΑΓΝΕΙΑ ΤΟΥ ΠΑΡΕΛΘΟΝΤΟΣ;",
+      "url": "https://www.kathimerini.gr/politics/564394285/o-politikos-kosmos-apochaireta-ton-stelio-ramfo/",
+      "title": "Ο πολιτικός κόσμος αποχαιρετά τον Στέλιο Ράμφο",
+      "normalized_title": "Ο ΠΟΛΙΤΙΚΟΣ ΚΟΣΜΟΣ ΑΠΟΧΑΙΡΕΤΑ ΤΟΝ ΣΤΕΛΙΟ ΡΑΜΦΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564390529/mikro-spiti-sto-livadi-glykia-nostalgia-i-lagneia-toy-parelthontos/",
-        "https://www.kathimerini.gr/society/564394222/kifisias-trochaio-me-ochima-poy-mpike-sto-antitheto-reyma-5-traymaties/"
+        "https://www.kathimerini.gr/politics/564394285/o-politikos-kosmos-apochaireta-ton-stelio-ramfo/",
+        "https://www.kathimerini.gr/world/564394252/se-epipeda-rekor-i-thermokrasia-ton-okeanon-ton-ioylio/",
+        "https://www.kathimerini.gr/visual/podcasts/564394111/poy-skontaftei-o-schediasmos/"
       ],
-      "seen_at_utc": "2026-08-10T12:30:12.676439+00:00"
+      "seen_at_utc": "2026-08-10T12:51:24.576534+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863052/polu-upsilos-kindunos-purkagias-aurio-118-se-attiki-kai-alles-tesseris-periohes/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο (11/8) σε Αττική και άλλες τέσσερις περιοχές",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ (11/8) ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΑΛΛΕΣ ΤΕΣΣΕΡΙΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1863089/trohaio-ston-holargo-kathusteriseis-sti-mesogeion/?utm_source=rss",
+      "title": "Τροχαίο στον Χολαργό, καθυστερήσεις στη Μεσογείων",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΟΝ ΧΟΛΑΡΓΟ, ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΗ ΜΕΣΟΓΕΙΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863052/polu-upsilos-kindunos-purkagias-aurio-118-se-attiki-kai-alles-tesseris-periohes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863089/trohaio-ston-holargo-kathusteriseis-sti-mesogeion/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863085/fotia-tora-sti-gastouni-ileias-sikothikan-3-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T11:30:03.283533+00:00"
+      "seen_at_utc": "2026-08-10T12:51:24.576628+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445299/pasok-gia-tsipra-mono-san-asteio-akoygetai-oti-sygkroyetai-me-ta-symferonta/",
-      "title": "ΠΑΣΟΚ για Τσίπρα: «Μόνο σαν αστείο ακούγεται ότι “συγκρούεται” με τα συμφέροντα»",
-      "normalized_title": "ΠΑΣΟΚ ΓΙΑ ΤΣΙΠΡΑ: «ΜΟΝΟ ΣΑΝ ΑΣΤΕΙΟ ΑΚΟΥΓΕΤΑΙ ΟΤΙ “ΣΥΓΚΡΟΥΕΤΑΙ” ΜΕ ΤΑ ΣΥΜΦΕΡΟΝΤΑ»",
+      "url": "https://www.efsyn.gr/politiki/1445316/stelios-ramfos-ta-syllypitiria-minymata-toy-politikoy-kosmoy/",
+      "title": "Στέλιος Ράμφος: Τα συλλυπητήρια μηνύματα του πολιτικού κόσμου",
+      "normalized_title": "ΣΤΕΛΙΟΣ ΡΑΜΦΟΣ: ΤΑ ΣΥΛΛΥΠΗΤΗΡΙΑ ΜΗΝΥΜΑΤΑ ΤΟΥ ΠΟΛΙΤΙΚΟΥ ΚΟΣΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445299/pasok-gia-tsipra-mono-san-asteio-akoygetai-oti-sygkroyetai-me-ta-symferonta/",
-        "https://www.efsyn.gr/kosmos/1445297/iran-gia-symfono-saoydikis-aravias-toyrkias-pakistan-deihnei-allagi-antilipsis-pros-tis-ipa-i-apantisi-se-tramp/"
+        "https://www.efsyn.gr/politiki/1445316/stelios-ramfos-ta-syllypitiria-minymata-toy-politikoy-kosmoy/",
+        "https://www.efsyn.gr/podcast/paratiritirio-synohis-i-aristeia-katapinei-tis-foititikes-ypotrofies-ep-18/",
+        "https://www.efsyn.gr/ellada/1445286/afroditi-nestora-gia-ti-nekri-mitera-tis-syggnomi-poy-den-katafera-na-se-prostateyso/",
+        "https://www.efsyn.gr/ellada/1445311/koyvaras-oi-floges-perikyklosan-to-spiti-ilikiomenis-epiheirisi-apegklovismoy-tis-vinteo/"
       ],
-      "seen_at_utc": "2026-08-10T12:30:12.676537+00:00"
+      "seen_at_utc": "2026-08-10T12:51:24.576612+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/politics/epikairotita/pasok-gia-stelio-ramfo-elege-panta-me-tharros-tin-apopsi-tou/",
-      "title": "ΠΑΣΟΚ για Στέλιο Ράμφο: «Έλεγε πάντα με θάρρος την άποψη του»",
-      "normalized_title": "ΠΑΣΟΚ ΓΙΑ ΣΤΕΛΙΟ ΡΑΜΦΟ: «ΕΛΕΓΕ ΠΑΝΤΑ ΜΕ ΘΑΡΡΟΣ ΤΗΝ ΑΠΟΨΗ ΤΟΥ»",
+      "url": "https://www.in.gr/2026/08/10/sports/football/mprouno-einai-megali-proklisi-i-revans-me-ton-paok/",
+      "title": "Μπρούνο: «Είναι μεγάλη πρόκληση η ρεβάνς με τον ΠΑΟΚ»",
+      "normalized_title": "ΜΠΡΟΥΝΟ: «ΕΙΝΑΙ ΜΕΓΑΛΗ ΠΡΟΚΛΗΣΗ Η ΡΕΒΑΝΣ ΜΕ ΤΟΝ ΠΑΟΚ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/politics/epikairotita/pasok-gia-stelio-ramfo-elege-panta-me-tharros-tin-apopsi-tou/",
-        "https://www.in.gr/2026/08/10/sports/eyropaiko-protathlima-oi-papastamos-kai-vlaxogiannakos-prokrithikan-ston-teliko/",
-        "https://www.in.gr/2026/08/10/world/aystralia-simane-synagermos-gia-ptoma-gynaikas-mesa-se-valitsa-alla-telika-itan-koukla/"
+        "https://www.in.gr/2026/08/10/sports/football/mprouno-einai-megali-proklisi-i-revans-me-ton-paok/",
+        "https://www.in.gr/2026/08/10/greece/to-sygkinitiko-minyma-tis-afroditis-nestora-gia-ti-mitera-tis-syggnomi-pou-den-katafera-na-se-prostateyso/"
       ],
-      "seen_at_utc": "2026-08-10T12:30:12.676493+00:00"
+      "seen_at_utc": "2026-08-10T12:51:24.576589+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T12:30:12.676632+00:00"
+  "updated_at_utc": "2026-08-10T12:51:24.576710+00:00"
 }
