@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564391936/allazei-o-chartis-sto-lianemporio/",
-      "title": "Αλλάζει ο χάρτης στο λιανεμπόριο",
-      "normalized_title": "ΑΛΛΑΖΕΙ Ο ΧΑΡΤΗΣ ΣΤΟ ΛΙΑΝΕΜΠΟΡΙΟ",
+      "url": "https://www.kathimerini.gr/k/oinoxoos/564373459/apo-tin-kriti-kai-ochi-mono-sto-potiri/",
+      "title": "Από την Κρήτη (και όχι μόνο), στο ποτήρι",
+      "normalized_title": "ΑΠΟ ΤΗΝ ΚΡΗΤΗ (ΚΑΙ ΟΧΙ ΜΟΝΟ), ΣΤΟ ΠΟΤΗΡΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564391936/allazei-o-chartis-sto-lianemporio/",
-        "https://www.kathimerini.gr/world/564394183/pliromeni-apantisi-techeranis-se-tramp-oi-iranoi-einai-epaggelmaties-skakistes/",
-        "https://www.kathimerini.gr/economy/564394162/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-stin-ellada/",
-        "https://www.kathimerini.gr/politics/564394150/al-tsipras-i-politiki-einai-i-techni-tis-dieyrynsis-toy-efiktoy/",
-        "https://www.kathimerini.gr/world/564394147/tramp-o-polemos-einai-san-partida-skaki-oi-iranoi-einai-epaggelmaties-skakistes-apanta-i-techerani/",
-        "https://www.kathimerini.gr/world/564394126/iran-ta-erotimata-poy-den-apanta-to-vinteo-me-ton-chamene/"
+        "https://www.kathimerini.gr/k/oinoxoos/564373459/apo-tin-kriti-kai-ochi-mono-sto-potiri/",
+        "https://www.kathimerini.gr/athletics/564394219/tzef-mpezos-o-idrytis-tis-amazon-konta-se-symfonia-gia-tin-apoktisi-meridioy-sti-liverpoyl/",
+        "https://www.kathimerini.gr/culture/564393868/to-megalo-tragoydi-poy-egrapse-o-nikos-kalogeropoylos/",
+        "https://www.kathimerini.gr/world/564394201/mochsen-rezai-enas-skliropyrinikos-se-kairio-rolo-asfaleias-sto-iran/"
       ],
-      "seen_at_utc": "2026-08-10T11:51:32.331795+00:00"
+      "seen_at_utc": "2026-08-10T12:17:16.596113+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,28 +1271,33 @@
       "seen_at_utc": "2026-08-10T11:30:03.283533+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1445280/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-na-symmetehoyn-sta-ellinika-trapezika-idrymata/",
-      "title": "Στουρνάρας στη Handelsblatt: Ευπρόσδεκτες οι ξένες τράπεζες να συμμετέχουν στα ελληνικά τραπεζικά ιδρύματα",
-      "normalized_title": "ΣΤΟΥΡΝΑΡΑΣ ΣΤΗ HANDELSBLATT: ΕΥΠΡΟΣΔΕΚΤΕΣ ΟΙ ΞΕΝΕΣ ΤΡΑΠΕΖΕΣ ΝΑ ΣΥΜΜΕΤΕΧΟΥΝ ΣΤΑ ΕΛΛΗΝΙΚΑ ΤΡΑΠΕΖΙΚΑ ΙΔΡΥΜΑΤΑ",
+      "url": "https://www.efsyn.gr/ellada/1445171/zitaei-kai-ta-resta-i-koinopraxia-ktel-thessalonikis-serron/",
+      "title": "Ζητάει και τα ρέστα η κοινοπραξία ΚΤΕΛ Θεσσαλονίκης Σερρών",
+      "normalized_title": "ΖΗΤΑΕΙ ΚΑΙ ΤΑ ΡΕΣΤΑ Η ΚΟΙΝΟΠΡΑΞΙΑ ΚΤΕΛ ΘΕΣΣΑΛΟΝΙΚΗΣ ΣΕΡΡΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1445280/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-na-symmetehoyn-sta-ellinika-trapezika-idrymata/",
-        "https://www.efsyn.gr/athlitismos/1445269/nton-nelson-enas-hall-of-famer-poy-evlepe-to-mpasket-sto-nba-allios/",
-        "https://www.efsyn.gr/oikonomia/1445206/anasfalista-ih-me-ai-tha-eleghontai-oi-enstaseis-poios-tha-pairnei-tin-teliki-apofasi-gia-ta-prostima/",
-        "https://www.efsyn.gr/politiki/1445263/i-apantisi-hristodoylaki-sto-dimosieyma-gia-tis-kratikes-symvaseis-9-ekat-stin-oikogeneiaki-etaireia/"
+        "https://www.efsyn.gr/ellada/1445171/zitaei-kai-ta-resta-i-koinopraxia-ktel-thessalonikis-serron/",
+        "https://www.efsyn.gr/athlitismos/1445159/o-giannakopoylos-kai-to-syndromo-tis-stokholmis/",
+        "https://www.efsyn.gr/tehnes/1445285/release-athens-antio-stin-plateia-neroy-me-ena-epiko-aftermovie-apo-tis-fetines-synaylies-vinteo/",
+        "https://www.efsyn.gr/stiles/1445249/theoyta-i-giati-na-min-ypograpsete-os-prothypoyrgos-tin-akrodexia-ergaleiopoiisi-mias-tragodias/"
       ],
-      "seen_at_utc": "2026-08-10T11:51:32.331898+00:00"
+      "seen_at_utc": "2026-08-10T12:17:16.596196+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/football/to-iatriko-deltio-tis-naimegken-enopsei-olympiakou/",
-      "title": "Το ιατρικό δελτίο της Ναϊμέγκεν ενόψει Ολυμπιακού",
-      "normalized_title": "ΤΟ ΙΑΤΡΙΚΟ ΔΕΛΤΙΟ ΤΗΣ ΝΑΙΜΕΓΚΕΝ ΕΝΟΨΕΙ ΟΛΥΜΠΙΑΚΟΥ",
+      "url": "https://www.in.gr/2026/08/10/sports/football/masouras-den-forousa-aplos-mia-fanela-forousa-ena-oneiro-pic/",
+      "title": "Μασούρας: «Δεν φορούσα απλώς μια φανέλα, φορούσα ένα όνειρο» (pic)",
+      "normalized_title": "ΜΑΣΟΥΡΑΣ: «ΔΕΝ ΦΟΡΟΥΣΑ ΑΠΛΩΣ ΜΙΑ ΦΑΝΕΛΑ, ΦΟΡΟΥΣΑ ΕΝΑ ΟΝΕΙΡΟ» (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/football/to-iatriko-deltio-tis-naimegken-enopsei-olympiakou/",
-        "https://www.in.gr/2026/08/10/greece/foties-poly-ypsilos-kindynos-tin-triti-se-pente-perifereies-red-code-kinitopoiisis/",
-        "https://www.in.gr/2026/08/10/sports/aneti-prokrisi-826m-tou-tentoglou-ston-teliko-tou-eyropaikou/"
+        "https://www.in.gr/2026/08/10/sports/football/masouras-den-forousa-aplos-mia-fanela-forousa-ena-oneiro-pic/",
+        "https://www.in.gr/2026/08/10/politics/politiki-grammateia/keraynoi-spirtzi-gia-ti-mi-anasyrsi-tou-skandalou-ton-ypoklopon-i-ypothesi-den-kleinei-exoun-dikio-pou-fovountai/",
+        "https://www.in.gr/2026/08/10/in-science/ai/syndikata-oi-aplousteroi-kanones-gia-tin-ai-den-prepei-na-simainoun-meiomeni-asfaleia-gia-tous-ergazomenous/",
+        "https://www.in.gr/2026/08/10/in-science/technology/i-kina-exei-meridio-97-stin-paragogi-anthropoeidon-rompot/",
+        "https://www.in.gr/2026/08/10/sports/football/ti-anaferei-o-paok-gia-tin-katastasi-ton-ntespontof-kai-ali/",
+        "https://www.in.gr/2026/08/10/greece/venizelos-apoxaireto-me-sevasmo-kai-agapi-ton-stelio-ramfo/",
+        "https://www.in.gr/2026/08/10/go-fun/fizz/nikos-vertis-xalares-diakopes-sti-mykono/",
+        "https://www.in.gr/2026/08/10/world/iran-se-tramp-eimaste-epaggelmaties-skakistes/"
       ],
-      "seen_at_utc": "2026-08-10T11:51:32.331852+00:00"
+      "seen_at_utc": "2026-08-10T12:17:16.596160+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T11:51:32.331992+00:00"
+  "updated_at_utc": "2026-08-10T12:17:16.596266+00:00"
 }
