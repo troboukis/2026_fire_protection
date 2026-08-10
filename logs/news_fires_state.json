@@ -1,13 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/sports/564394120/miltos-tentogloy-ston-teliko-toy-eyropaikoy-protathlimatos-sto-mikos-me-alma-sta-8-26-metra/",
-      "title": "Μίλτος Τεντόγλου: Στον τελικό του Ευρωπαϊκού Πρωταθλήματος στο μήκος με άλμα στα 8,26 μέτρα",
-      "normalized_title": "ΜΙΛΤΟΣ ΤΕΝΤΟΓΛΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΕΥΡΩΠΑΙΚΟΥ ΠΡΩΤΑΘΛΗΜΑΤΟΣ ΣΤΟ ΜΗΚΟΣ ΜΕ ΑΛΜΑ ΣΤΑ 8,26 ΜΕΤΡΑ",
+      "url": "https://www.kathimerini.gr/economy/564391936/allazei-o-chartis-sto-lianemporio/",
+      "title": "Αλλάζει ο χάρτης στο λιανεμπόριο",
+      "normalized_title": "ΑΛΛΑΖΕΙ Ο ΧΑΡΤΗΣ ΣΤΟ ΛΙΑΝΕΜΠΟΡΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/sports/564394120/miltos-tentogloy-ston-teliko-toy-eyropaikoy-protathlimatos-sto-mikos-me-alma-sta-8-26-metra/"
+        "https://www.kathimerini.gr/economy/564391936/allazei-o-chartis-sto-lianemporio/",
+        "https://www.kathimerini.gr/world/564394183/pliromeni-apantisi-techeranis-se-tramp-oi-iranoi-einai-epaggelmaties-skakistes/",
+        "https://www.kathimerini.gr/economy/564394162/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-stin-ellada/",
+        "https://www.kathimerini.gr/politics/564394150/al-tsipras-i-politiki-einai-i-techni-tis-dieyrynsis-toy-efiktoy/",
+        "https://www.kathimerini.gr/world/564394147/tramp-o-polemos-einai-san-partida-skaki-oi-iranoi-einai-epaggelmaties-skakistes-apanta-i-techerani/",
+        "https://www.kathimerini.gr/world/564394126/iran-ta-erotimata-poy-den-apanta-to-vinteo-me-ton-chamene/"
       ],
-      "seen_at_utc": "2026-08-10T11:30:03.283382+00:00"
+      "seen_at_utc": "2026-08-10T11:51:32.331795+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,33 +1273,28 @@
       "seen_at_utc": "2026-08-10T11:30:03.283533+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1445261/miltos-tentogloy-ston-teliko-toy-eyropaikoy-protathlimatos-stivoy-petaxe-sta-826-metra/",
-      "title": "Μίλτος Τεντόγλου: Στον τελικό του Ευρωπαϊκού Πρωταθλήματος Στίβου – «Πέταξε» στα 8,26 μέτρα",
-      "normalized_title": "ΜΙΛΤΟΣ ΤΕΝΤΟΓΛΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΕΥΡΩΠΑΙΚΟΥ ΠΡΩΤΑΘΛΗΜΑΤΟΣ ΣΤΙΒΟΥ – «ΠΕΤΑΞΕ» ΣΤΑ 8,26 ΜΕΤΡΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1445280/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-na-symmetehoyn-sta-ellinika-trapezika-idrymata/",
+      "title": "Στουρνάρας στη Handelsblatt: Ευπρόσδεκτες οι ξένες τράπεζες να συμμετέχουν στα ελληνικά τραπεζικά ιδρύματα",
+      "normalized_title": "ΣΤΟΥΡΝΑΡΑΣ ΣΤΗ HANDELSBLATT: ΕΥΠΡΟΣΔΕΚΤΕΣ ΟΙ ΞΕΝΕΣ ΤΡΑΠΕΖΕΣ ΝΑ ΣΥΜΜΕΤΕΧΟΥΝ ΣΤΑ ΕΛΛΗΝΙΚΑ ΤΡΑΠΕΖΙΚΑ ΙΔΡΥΜΑΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1445261/miltos-tentogloy-ston-teliko-toy-eyropaikoy-protathlimatos-stivoy-petaxe-sta-826-metra/",
-        "https://www.efsyn.gr/politiki/1445250/syriza-backstage-apo-ti-fotografisi-gia-ti-nea-kampania-eikones/",
-        "https://www.efsyn.gr/stiles/1445146/to-stoihima-toy-politismoy/",
-        "https://www.efsyn.gr/stiles/1445133/apo-ta-megala-logia-sta-anyparkta-erga/",
-        "https://www.efsyn.gr/stiles/1445119/to-nero-einai-pigi-zois-kai-ohi-pedio-kerdoskopias/",
-        "https://www.efsyn.gr/stiles/1445095/axiologontas-tin-elas/",
-        "https://www.efsyn.gr/stiles/1445085/apanota-htypimata/",
-        "https://www.efsyn.gr/ellada/1445188/el-venizelos-synelifthi-53hronos-katazitoymenos-apo-tis-gallikes-arhes-gia-apates/"
+        "https://www.efsyn.gr/oikonomia/1445280/stoyrnaras-sti-handelsblatt-eyprosdektes-oi-xenes-trapezes-na-symmetehoyn-sta-ellinika-trapezika-idrymata/",
+        "https://www.efsyn.gr/athlitismos/1445269/nton-nelson-enas-hall-of-famer-poy-evlepe-to-mpasket-sto-nba-allios/",
+        "https://www.efsyn.gr/oikonomia/1445206/anasfalista-ih-me-ai-tha-eleghontai-oi-enstaseis-poios-tha-pairnei-tin-teliki-apofasi-gia-ta-prostima/",
+        "https://www.efsyn.gr/politiki/1445263/i-apantisi-hristodoylaki-sto-dimosieyma-gia-tis-kratikes-symvaseis-9-ekat-stin-oikogeneiaki-etaireia/"
       ],
-      "seen_at_utc": "2026-08-10T11:30:03.283498+00:00"
+      "seen_at_utc": "2026-08-10T11:51:32.331898+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/economy/diethnis-oikonomia/fysiko-aerio-se-xamila-epipeda-to-stok-stin-ee-ypo-steni-parakolouthisi-o-efodiasmos-ton-kraton/",
-      "title": "Σε χαμηλά επίπεδα το στοκ φυσικού αερίου στην ΕΕ - Υπό στενή παρακολούθηση ο εφοδιασμός των κρατών",
-      "normalized_title": "ΣΕ ΧΑΜΗΛΑ ΕΠΙΠΕΔΑ ΤΟ ΣΤΟΚ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ ΣΤΗΝ ΕΕ - ΥΠΟ ΣΤΕΝΗ ΠΑΡΑΚΟΛΟΥΘΗΣΗ Ο ΕΦΟΔΙΑΣΜΟΣ ΤΩΝ ΚΡΑΤΩΝ",
+      "url": "https://www.in.gr/2026/08/10/sports/football/to-iatriko-deltio-tis-naimegken-enopsei-olympiakou/",
+      "title": "Το ιατρικό δελτίο της Ναϊμέγκεν ενόψει Ολυμπιακού",
+      "normalized_title": "ΤΟ ΙΑΤΡΙΚΟ ΔΕΛΤΙΟ ΤΗΣ ΝΑΙΜΕΓΚΕΝ ΕΝΟΨΕΙ ΟΛΥΜΠΙΑΚΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/economy/diethnis-oikonomia/fysiko-aerio-se-xamila-epipeda-to-stok-stin-ee-ypo-steni-parakolouthisi-o-efodiasmos-ton-kraton/",
-        "https://www.in.gr/2026/08/10/greece/vinteo-tis-el-as-apo-tin-apomakrynsi-ilikiomenis-apo-ti-fotia-ston-kouvara/",
-        "https://www.in.gr/2026/08/10/greece/osa-prepei-na-periexei-ena-farmakeio-proton-voitheion-gia-aytokinito/",
-        "https://www.in.gr/2026/08/10/sports/football/o-olympiakos-eftase-sti-germania-kai-synexizei-odikos-gia-to-naimegken-pics/"
+        "https://www.in.gr/2026/08/10/sports/football/to-iatriko-deltio-tis-naimegken-enopsei-olympiakou/",
+        "https://www.in.gr/2026/08/10/greece/foties-poly-ypsilos-kindynos-tin-triti-se-pente-perifereies-red-code-kinitopoiisis/",
+        "https://www.in.gr/2026/08/10/sports/aneti-prokrisi-826m-tou-tentoglou-ston-teliko-tou-eyropaikou/"
       ],
-      "seen_at_utc": "2026-08-10T11:30:03.283442+00:00"
+      "seen_at_utc": "2026-08-10T11:51:32.331852+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T11:30:03.283622+00:00"
+  "updated_at_utc": "2026-08-10T11:51:32.331992+00:00"
 }
