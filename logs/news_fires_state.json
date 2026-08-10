@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564376780/eortologio-poioi-giortazoyn-simera-10-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 10 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 10 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/politics/564391561/ton-septemvrio-pataei-to-koympi-o-samaras/",
+      "title": "Tον Σεπτέμβριο πατάει το κουμπί ο Σαμαράς",
+      "normalized_title": "TΟΝ ΣΕΠΤΕΜΒΡΙΟ ΠΑΤΑΕΙ ΤΟ ΚΟΥΜΠΙ Ο ΣΑΜΑΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564376780/eortologio-poioi-giortazoyn-simera-10-aygoystoy/",
-        "https://www.kathimerini.gr/world/564393373/berkshire-hathaway-apo-tis-poliseis-stis-agores/"
+        "https://www.kathimerini.gr/politics/564391561/ton-septemvrio-pataei-to-koympi-o-samaras/",
+        "https://www.kathimerini.gr/society/564393484/kindynos-pyrkagias-red-code-simera-se-attiki-kai-alles-exi-perifereies/",
+        "https://www.kathimerini.gr/society/564391492/pyrkagies-choris-enochoys/"
       ],
-      "seen_at_utc": "2026-08-09T21:20:09.321549+00:00"
+      "seen_at_utc": "2026-08-10T04:17:34.581808+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,62 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862758/epiheirisi-diasosis-26-metanaston-notia-tis-gaudou/?utm_source=rss",
-      "title": "Επιχείρηση διάσωσης 26 μεταναστών νότια της Γαύδου",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ 26 ΜΕΤΑΝΑΣΤΩΝ ΝΟΤΙΑ ΤΗΣ ΓΑΥΔΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1862783/den-katafere-na-proseggisei-ta-psara-to-nisos-samos-logo-kakokairias/?utm_source=rss",
+      "title": "Δεν κατάφερε να προσεγγίσει τα Ψαρά το «Νήσος Σάμος» λόγω κακοκαιρίας",
+      "normalized_title": "ΔΕΝ ΚΑΤΑΦΕΡΕ ΝΑ ΠΡΟΣΕΓΓΙΣΕΙ ΤΑ ΨΑΡΑ ΤΟ «ΝΗΣΟΣ ΣΑΜΟΣ» ΛΟΓΩ ΚΑΚΟΚΑΙΡΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862758/epiheirisi-diasosis-26-metanaston-notia-tis-gaudou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862783/den-katafere-na-proseggisei-ta-psara-to-nisos-samos-logo-kakokairias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862773/tragodia-stin-paro-oi-kameres-kai-o-rolos-tou-nauagososti-sto-mikroskopio-gia-ton-thanato-tou-4hronou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-09T21:20:09.321692+00:00"
+      "seen_at_utc": "2026-08-10T04:17:34.581930+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1444850/me-tentogloy-i-premiera-tis-elladas-sto-eyropaiko-protathlima-stivoy/",
-      "title": "Με Τεντόγλου η πρεμιέρα της Ελλάδας στο Ευρωπαϊκό πρωτάθλημα στίβου",
-      "normalized_title": "ΜΕ ΤΕΝΤΟΓΛΟΥ Η ΠΡΕΜΙΕΡΑ ΤΗΣ ΕΛΛΑΔΑΣ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΣΤΙΒΟΥ",
+      "url": "https://www.efsyn.gr/tehnes/1444871/nikos-kalogeropoylos-to-talento-poy-den-antehe-tis-exoysies/",
+      "title": "Νίκος Καλογερόπουλος: Το ταλέντο που δεν άντεχε τις εξουσίες",
+      "normalized_title": "ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ: ΤΟ ΤΑΛΕΝΤΟ ΠΟΥ ΔΕΝ ΑΝΤΕΧΕ ΤΙΣ ΕΞΟΥΣΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1444850/me-tentogloy-i-premiera-tis-elladas-sto-eyropaiko-protathlima-stivoy/"
+        "https://www.efsyn.gr/tehnes/1444871/nikos-kalogeropoylos-to-talento-poy-den-antehe-tis-exoysies/",
+        "https://www.efsyn.gr/ellada/1444866/kairos-se-red-code-16-periohes-simera-ekriktiko-kokteil-me-39aria-kai-ishyroys-anemoys-sto-kokkino-kai-i-attiki/",
+        "https://www.efsyn.gr/ellada/1444863/eortologio-poioi-giortazoyn-simera-10-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-09T21:20:09.321677+00:00"
+      "seen_at_utc": "2026-08-10T04:17:34.581901+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/othersports/pagkosmio-k20-xalkino-metallio-i-iakovaki-me-panellinio-rekor-vid/",
-      "title": "Παγκόσμιο Κ20: Χάλκινο μετάλλιο η Ιακωβάκη στα 400μ. εμπόδια (vid)",
-      "normalized_title": "ΠΑΓΚΟΣΜΙΟ Κ20: ΧΑΛΚΙΝΟ ΜΕΤΑΛΛΙΟ Η ΙΑΚΩΒΑΚΗ ΣΤΑ 400Μ. ΕΜΠΟΔΙΑ (VID)",
+      "url": "https://www.in.gr/2026/08/10/greece/red-code-gia-foties-simera-logo-ton-thyellodon-anemon-kai-zestis-ta-9-mpofor-tha-ftasoun-oi-ripes/",
+      "title": "Red Code για φωτιές σήμερα λόγω των θυελλωδών ανέμων και ζέστης – Τα 9 μποφόρ θα φτάσουν οι ριπές",
+      "normalized_title": "RED CODE ΓΙΑ ΦΩΤΙΕΣ ΣΗΜΕΡΑ ΛΟΓΩ ΤΩΝ ΘΥΕΛΛΩΔΩΝ ΑΝΕΜΩΝ ΚΑΙ ΖΕΣΤΗΣ – ΤΑ 9 ΜΠΟΦΟΡ ΘΑ ΦΤΑΣΟΥΝ ΟΙ ΡΙΠΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/othersports/pagkosmio-k20-xalkino-metallio-i-iakovaki-me-panellinio-rekor-vid/",
-        "https://www.in.gr/2026/08/10/world/gallia-tesseris-ispanoi-synelifthisan-stin-kyani-akti-gia-tin-klopi-enos-rologiou-aksias-260-000-eyro/"
+        "https://www.in.gr/2026/08/10/greece/red-code-gia-foties-simera-logo-ton-thyellodon-anemon-kai-zestis-ta-9-mpofor-tha-ftasoun-oi-ripes/",
+        "https://www.in.gr/2026/08/10/world/o-dromos-pou-nikise-tin-erimo/",
+        "https://www.in.gr/2026/08/10/life/geysi/syntagi-mpiftekia-gemista-me-lemonati-saltsa/",
+        "https://www.in.gr/2026/08/10/greece/paradidetai-stin-kykloforia-i-palia-leoforos-poseidonos-telos-stin-talaiporia-gia-tous-odigous/",
+        "https://www.in.gr/2026/08/10/plus/vita/diatrofi-oi-trofes-pou-mas-ftiaxnoun-ti-mera/",
+        "https://www.in.gr/2026/08/10/greece/kairos-voriades-eos-8-mpofor-kai-39aria-vroxes-kai-pithanon-kataigides-sta-oreina-ipeirou-kai-makedonias/",
+        "https://www.in.gr/2026/08/10/life/texni/to-arxitektoniko-orama-tou-le-kormpizie-egine-kamini-gia-tous-enoikous-tou/",
+        "https://www.in.gr/2026/08/10/plus/vita/eksi-vimata-gia-na-ziseis-to-kalokairi-sto-100/",
+        "https://www.in.gr/2026/08/10/economy/diethnis-oikonomia/panta-diathesimoi-panta-syndedemenoi-i-douleia-eksaplonetai-olo-kai-perissotero-ston-eleythero-mas-xrono/",
+        "https://www.in.gr/2026/08/10/world/groilandia-amerikaniki-petrelaiki-me-tis-plates-tou-tramp-etoimazetai-gia-geotriseis-xoris-adeia/",
+        "https://www.in.gr/2026/08/10/go-fun/fizz/vanesa-paranti-samiouel-mpensetri-xorisan-meta-apo-10-xronia-sxesis/",
+        "https://www.in.gr/2026/08/10/in-science/technology/i-apati-tou-xampourgker-eftase-stin-eyropi/",
+        "https://www.in.gr/2026/08/10/greece/psyrri-oi-teleytaioi-pou-thymountai-tin-palia-geitonia/",
+        "https://www.in.gr/2026/08/10/economy/diethnis-oikonomia/aytokinitoviomixania-moudiasmenoi-oi-eyropaioi-apenanti-stin-eisvoli-ton-kinezon-kataskeyaston/",
+        "https://www.in.gr/2026/08/10/economy/pou-vriskei-o-poutin-ergates-akomi-kai-protasi-gia-ergasia-apo-ta-12/",
+        "https://www.in.gr/2026/08/10/world/to-fantasma-ton-rosikon-paremvaseon-stin-eyropi/",
+        "https://www.in.gr/2026/08/10/world/iran-to-aorato-metopo-pou-tha-synexisei-na-krata-anoixto-ton-polemo/",
+        "https://www.in.gr/2026/08/10/world/tourkia-to-pkk-kataggellei-ta-lathi-sto-nomosxedio-gia-to-mellon-ton-maxiton-tou/",
+        "https://www.in.gr/2026/08/10/politics/diplomatia/kypros-ypsilos-o-kindynos-klimakosis-ektima-i-rosia-anisyxia-gia-tin-prasini-grammi/",
+        "https://www.in.gr/2026/08/10/world/panamas-enisxyetai-i-asfaleia-sta-synora-epeita-apo-epitheseis-stin-kolomvia/",
+        "https://www.in.gr/2026/08/10/world/gaza-to-israil-aporriptei-to-sxedio-ton-ipa-pou-apodextike-i-xamas/",
+        "https://www.in.gr/2026/08/10/world/to-iran-aksionei-oi-ipa-na-dextoun-olous-tous-orous-tou-gia-na-anoiksoun-ksana-ta-stena-tou-ormouz/",
+        "https://www.in.gr/2026/08/10/world/aigyptos-ergatis-nekros-kai-5-traymaties-logo-katarreysis-sto-megalytero-xrysoryxeio-tis-xoras/",
+        "https://www.in.gr/2026/08/10/world/meksiko-5-ptomata-kremasmena-apo-gefyra-epanaferoun-ti-friki-stin-politeia-sakatekas/",
+        "https://www.in.gr/2026/08/10/greece/thriler-stis-serres-66xronos-entopistike-nekros-se-spiti-i-kataggelia-gia-ksylodarmo/",
+        "https://www.in.gr/2026/08/10/world/to-israil-den-tha-aposyrthei-apo-ti-gaza-mexri-oi-maxites-na-afoplistoun-leei-to-symvoulio-eirinis/",
+        "https://www.in.gr/2026/08/10/world/mali-toulaxiston-10-stratiotikoi-nekroi-se-epithesi-tzixantiston/",
+        "https://www.in.gr/2026/08/10/world/oi-dynameis-tou-israil-pragmatopoiisan-108-epitheseis-se-palaistinious-dimosiografous-mono-ton-ioulio/"
       ],
-      "seen_at_utc": "2026-08-09T22:51:16.194849+00:00"
+      "seen_at_utc": "2026-08-10T04:17:34.581870+00:00"
     }
   },
-  "updated_at_utc": "2026-08-09T22:51:16.194931+00:00"
+  "updated_at_utc": "2026-08-10T04:17:34.582010+00:00"
 }
