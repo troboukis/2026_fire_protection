@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564394534/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
-      "title": "Νίκος Καλογερόπουλος: Την Τετάρτη η κηδεία του – Η παράκληση της οικογένειας",
-      "normalized_title": "ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ: ΤΗΝ ΤΕΤΑΡΤΗ Η ΚΗΔΕΙΑ ΤΟΥ – Η ΠΑΡΑΚΛΗΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564394591/synechizetai-i-exodos-ton-adeioychon-gemata-ta-ploia-apo-peiraia/",
+      "title": "Συνεχίζεται η έξοδος των αδειούχων – Γεμάτα τα πλοία από Πειραιά",
+      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΕΞΟΔΟΣ ΤΩΝ ΑΔΕΙΟΥΧΩΝ – ΓΕΜΑΤΑ ΤΑ ΠΛΟΙΑ ΑΠΟ ΠΕΙΡΑΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564394534/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
-        "https://www.kathimerini.gr/politics/564394510/doyroy-psifodeltio-me-osoys-theloyn-kai-mporoyn/",
-        "https://www.kathimerini.gr/society/564394525/fotia-konta-stin-kavala-minyma-112-gia-etoimotita/"
+        "https://www.kathimerini.gr/society/564394591/synechizetai-i-exodos-ton-adeioychon-gemata-ta-ploia-apo-peiraia/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564394588/voucher-paidikon-stathmon-anartithikan-oi-prosorinoi-pinakes/",
+        "https://www.kathimerini.gr/world/564394528/rosia-vinteo-apo-to-oykraniko-chtypima-me-toys-13-nekroys/",
+        "https://www.kathimerini.gr/world/564394540/fovos-thymos-lypi-oi-skyloi-diavazoyn-ta-anthropina-prosopa/"
       ],
-      "seen_at_utc": "2026-08-10T16:17:28.843504+00:00"
+      "seen_at_utc": "2026-08-10T16:51:56.821646+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,32 +1262,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863176/oi-gupes-peftoun-kai-fetos-pano-apo-20-neara-poulia-stin-kriti-hreiastikan-perithalpsi/?utm_source=rss",
-      "title": "«Οι γύπες πέφτουν και φέτος»: Πάνω από 20 νεαρά πουλιά στην Κρήτη χρειάστηκαν περίθαλψη",
-      "normalized_title": "«ΟΙ ΓΥΠΕΣ ΠΕΦΤΟΥΝ ΚΑΙ ΦΕΤΟΣ»: ΠΑΝΩ ΑΠΟ 20 ΝΕΑΡΑ ΠΟΥΛΙΑ ΣΤΗΝ ΚΡΗΤΗ ΧΡΕΙΑΣΤΗΚΑΝ ΠΕΡΙΘΑΛΨΗ",
+      "url": "https://www.protothema.gr/greece/article/1863184/horis-tis-aisthiseis-tou-anasurthike-56hronos-servos-sti-sarti-halkidikis/?utm_source=rss",
+      "title": "Χωρίς τις αισθήσεις του ανασύρθηκε 56χρονος Σέρβος στη Σάρτη Χαλκιδικής",
+      "normalized_title": "ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ ΑΝΑΣΥΡΘΗΚΕ 56ΧΡΟΝΟΣ ΣΕΡΒΟΣ ΣΤΗ ΣΑΡΤΗ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863176/oi-gupes-peftoun-kai-fetos-pano-apo-20-neara-poulia-stin-kriti-hreiastikan-perithalpsi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863184/horis-tis-aisthiseis-tou-anasurthike-56hronos-servos-sti-sarti-halkidikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863180/ring-gumnastirio-sti-magnisia-18hronos-gronthokopise-aniliko-gia-ena-organo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T16:30:03.056862+00:00"
+      "seen_at_utc": "2026-08-10T16:51:56.821745+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445460/thanatos-66hronoy-stis-serres-profylakistikan-o-adelfos-kai-o-anipsios-toy/",
-      "title": "Θάνατος 66χρονου στις Σέρρες: Προφυλακίστηκαν ο αδελφός και ο ανιψιός του",
-      "normalized_title": "ΘΑΝΑΤΟΣ 66ΧΡΟΝΟΥ ΣΤΙΣ ΣΕΡΡΕΣ: ΠΡΟΦΥΛΑΚΙΣΤΗΚΑΝ Ο ΑΔΕΛΦΟΣ ΚΑΙ Ο ΑΝΙΨΙΟΣ ΤΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1445466/fonikes-oykranikes-epitheseis-se-rosikes-energeiakes-egkatastaseis-13-nekroi-75-traymaties/",
+      "title": "Φονικές ουκρανικές επιθέσεις σε ρωσικές ενεργειακές εγκαταστάσεις: 13 νεκροί, 75 τραυματίες και διακοπές ηλεκτροδότησης [βίντεο]",
+      "normalized_title": "ΦΟΝΙΚΕΣ ΟΥΚΡΑΝΙΚΕΣ ΕΠΙΘΕΣΕΙΣ ΣΕ ΡΩΣΙΚΕΣ ΕΝΕΡΓΕΙΑΚΕΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ: 13 ΝΕΚΡΟΙ, 75 ΤΡΑΥΜΑΤΙΕΣ ΚΑΙ ΔΙΑΚΟΠΕΣ ΗΛΕΚΤΡΟΔΟΤΗΣΗΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445460/thanatos-66hronoy-stis-serres-profylakistikan-o-adelfos-kai-o-anipsios-toy/"
+        "https://www.efsyn.gr/kosmos/1445466/fonikes-oykranikes-epitheseis-se-rosikes-energeiakes-egkatastaseis-13-nekroi-75-traymaties/",
+        "https://www.efsyn.gr/ellada/1445208/esy-evalan-aifnidiastika-stis-proines-efimeries-to-sismanogleio-i-kataggelia-tis-einap-i-pyrkagia-kai-oi-sovares-elleipseis/",
+        "https://www.efsyn.gr/kosmos/1445470/ispania-mahi-me-tis-floges-dinoyn-oi-pyrosvestes-se-mia-megali-pyrkagia-stin-andaloysia/"
       ],
-      "seen_at_utc": "2026-08-10T16:30:03.056818+00:00"
+      "seen_at_utc": "2026-08-10T16:51:56.821725+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/english-edition/changes-in-athens-public-transport-summer-schedule-in-effect/",
-      "title": "Changes in Athens Public Transport: Summer Schedule in Effect",
-      "normalized_title": "CHANGES IN ATHENS PUBLIC TRANSPORT: SUMMER SCHEDULE IN EFFECT",
+      "url": "https://www.in.gr/2026/08/10/greece/kriti-katerreyse-tmima-orofis-se-grafeio-iatron-sto-venizeleio-nosokomeio-sokaroun-oi-eikones/",
+      "title": "Κρήτη: Κατέρρευσε τμήμα οροφής σε γραφείο ιατρών στο Βενιζέλειο Νοσοκομείο – Σοκάρουν οι εικόνες",
+      "normalized_title": "ΚΡΗΤΗ: ΚΑΤΕΡΡΕΥΣΕ ΤΜΗΜΑ ΟΡΟΦΗΣ ΣΕ ΓΡΑΦΕΙΟ ΙΑΤΡΩΝ ΣΤΟ ΒΕΝΙΖΕΛΕΙΟ ΝΟΣΟΚΟΜΕΙΟ – ΣΟΚΑΡΟΥΝ ΟΙ ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/english-edition/changes-in-athens-public-transport-summer-schedule-in-effect/"
+        "https://www.in.gr/2026/08/10/greece/kriti-katerreyse-tmima-orofis-se-grafeio-iatron-sto-venizeleio-nosokomeio-sokaroun-oi-eikones/",
+        "https://www.in.gr/2026/08/10/world/ispania-megali-fotia-stin-andalousia-perikyklomena-apo-tis-floges-pano-apo-200-000-stremmata-gis/",
+        "https://www.in.gr/2026/08/10/politics/politiki-grammateia/o-floridis-krinei-eks-idion-ton-tsipra-gia-ti-dikaiosyni-me-ti-nd-na-apofeygei-opos-o-diavolos-to-livani-na-ksananoiksoun-oi-ypoklopes/",
+        "https://www.in.gr/2026/08/10/sports/on-field/mia-dyskoli-mera-gia-ton-iraola-den-masise-ta-logia-tou-o-ispanos-gia-tin-eikona-ton-kokkinon/"
       ],
-      "seen_at_utc": "2026-08-10T16:30:03.056767+00:00"
+      "seen_at_utc": "2026-08-10T16:51:56.821692+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T16:30:03.056940+00:00"
+  "updated_at_utc": "2026-08-10T16:51:56.821825+00:00"
 }
