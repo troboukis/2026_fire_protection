@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564394450/agio-oros-thriskeytikos-toyrismos-se-anodo-esoda-se-ptosi/",
-      "title": "Αγιον Ορος: Θρησκευτικός τουρισμός σε άνοδο, έσοδα σε πτώση",
-      "normalized_title": "ΑΓΙΟΝ ΟΡΟΣ: ΘΡΗΣΚΕΥΤΙΚΟΣ ΤΟΥΡΙΣΜΟΣ ΣΕ ΑΝΟΔΟ, ΕΣΟΔΑ ΣΕ ΠΤΩΣΗ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564394522/epikoinonia-gerapetriti-me-ton-aigyptio-ypex-ampntelati-ti-syzitithike/",
+      "title": "Επικοινωνία Γεραπετρίτη με τον Αιγύπτιο ΥΠΕΞ Αμπντελάτι – Τι συζητήθηκε",
+      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΑΙΓΥΠΤΙΟ ΥΠΕΞ ΑΜΠΝΤΕΛΑΤΙ – ΤΙ ΣΥΖΗΤΗΘΗΚΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564394450/agio-oros-thriskeytikos-toyrismos-se-anodo-esoda-se-ptosi/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564394522/epikoinonia-gerapetriti-me-ton-aigyptio-ypex-ampntelati-ti-syzitithike/",
+        "https://www.kathimerini.gr/life/auto/564394327/odigoyme-stin-ellada-ti-ferrari-amalfi-spider/",
+        "https://www.kathimerini.gr/world/564394495/ispania-megali-pyrkagia-stin-andaloysia-sti-machi-600-pyrosvestes-kai-26-enaeria/",
+        "https://www.kathimerini.gr/society/564394489/meteo-pano-apo-100-chlm-ora-oi-ripes-anemoy-se-attiki-kai-eyvoia/"
       ],
-      "seen_at_utc": "2026-08-10T15:30:15.572516+00:00"
+      "seen_at_utc": "2026-08-10T15:51:48.598634+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1271,27 @@
       "seen_at_utc": "2026-08-10T15:30:15.572615+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1445444/xirasia-sti-gallia-shedon-sto-70-tis-horas-epivlithikan-metra-periorismoy-tis-hrisis-toy-neroy/",
-      "title": "Ξηρασία στη Γαλλία: Σχεδόν στο 70% της χώρας επιβλήθηκαν μέτρα περιορισμού της χρήσης του νερού",
-      "normalized_title": "ΞΗΡΑΣΙΑ ΣΤΗ ΓΑΛΛΙΑ: ΣΧΕΔΟΝ ΣΤΟ 70% ΤΗΣ ΧΩΡΑΣ ΕΠΙΒΛΗΘΗΚΑΝ ΜΕΤΡΑ ΠΕΡΙΟΡΙΣΜΟΥ ΤΗΣ ΧΡΗΣΗΣ ΤΟΥ ΝΕΡΟΥ",
+      "url": "https://www.efsyn.gr/tehnes/1445452/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-spoydaioy-ithopoioy-ti-zita-i-oikogeneia-toy/",
+      "title": "Νίκος Καλογερόπουλος: Την Τετάρτη η κηδεία του σπουδαίου ηθοποιού – Τι ζητά η οικογένειά του",
+      "normalized_title": "ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ: ΤΗΝ ΤΕΤΑΡΤΗ Η ΚΗΔΕΙΑ ΤΟΥ ΣΠΟΥΔΑΙΟΥ ΗΘΟΠΟΙΟΥ – ΤΙ ΖΗΤΑ Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1445444/xirasia-sti-gallia-shedon-sto-70-tis-horas-epivlithikan-metra-periorismoy-tis-hrisis-toy-neroy/",
-        "https://www.efsyn.gr/athlitismos/1445437/to-sygkinitiko-antio-toy-masoyra-ston-olympiako-ena-oneiro-poy-egine-pragmatikotita/"
+        "https://www.efsyn.gr/tehnes/1445452/nikos-kalogeropoylos-tin-tetarti-i-kideia-toy-spoydaioy-ithopoioy-ti-zita-i-oikogeneia-toy/",
+        "https://www.efsyn.gr/ellada/1445449/diasosi-sta-hania-nayagosostis-palepse-me-ta-kymata-gia-na-vgalei-toyristria-stin-akti-vinteo/",
+        "https://www.efsyn.gr/epistimi/1445424/epistimoniki-ereyna-pos-oi-karharies-mporoyn-na-voithisoyn-sti-veltiosi-ton-provlepseon-gia-tyfones/"
       ],
-      "seen_at_utc": "2026-08-10T15:30:15.572593+00:00"
+      "seen_at_utc": "2026-08-10T15:51:48.598738+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/football/champions-league/el-kaampi-theloume-poly-tin-prokrisi-kai-exoume-erthei-gia-na-ta-kataferoume/",
-      "title": "Ελ Κααμπί: «Θέλουμε πολύ την πρόκριση και έχουμε έρθει για να τα καταφέρουμε»",
-      "normalized_title": "ΕΛ ΚΑΑΜΠΙ: «ΘΕΛΟΥΜΕ ΠΟΛΥ ΤΗΝ ΠΡΟΚΡΙΣΗ ΚΑΙ ΕΧΟΥΜΕ ΕΡΘΕΙ ΓΙΑ ΝΑ ΤΑ ΚΑΤΑΦΕΡΟΥΜΕ»",
+      "url": "https://www.in.gr/2026/08/10/politics/diplomatia/epikoinonia-gerapetriti-me-ton-aigyptio-ypeks-stin-atzenta-oi-dimereis-sxeseis-elladas-aigyptou/",
+      "title": "Επικοινωνία Γεραπετρίτη με τον Αιγύπτιο ΥΠΕΞ: Στην ατζέντα οι διμερείς σχέσεις Ελλάδας – Αιγύπτου",
+      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΑΙΓΥΠΤΙΟ ΥΠΕΞ: ΣΤΗΝ ΑΤΖΕΝΤΑ ΟΙ ΔΙΜΕΡΕΙΣ ΣΧΕΣΕΙΣ ΕΛΛΑΔΑΣ – ΑΙΓΥΠΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/football/champions-league/el-kaampi-theloume-poly-tin-prokrisi-kai-exoume-erthei-gia-na-ta-kataferoume/"
+        "https://www.in.gr/2026/08/10/politics/diplomatia/epikoinonia-gerapetriti-me-ton-aigyptio-ypeks-stin-atzenta-oi-dimereis-sxeseis-elladas-aigyptou/",
+        "https://www.in.gr/2026/08/10/greece/serres-prosorina-kratoumenoi-adelfos-kai-anipsios-tou-66xronou-pou-vrethike-nekros-sta-ivira/",
+        "https://www.in.gr/2026/08/10/sports/football/champions-league/mentilimpar-na-eimaste-kalyteroi-sti-revans-doulepsame-poly-kai-irthame-gia-tin-prokrisi/"
       ],
-      "seen_at_utc": "2026-08-10T15:30:15.572559+00:00"
+      "seen_at_utc": "2026-08-10T15:51:48.598700+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T15:30:15.572687+00:00"
+  "updated_at_utc": "2026-08-10T15:51:48.598822+00:00"
 }
