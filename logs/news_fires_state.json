@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564393946/koyvaras-attikis-veltiomeni-i-eikona-tis-fotias-kaikan-ktirio-kai-ochima/",
-      "title": "Κουβαράς Αττικής: Βελτιωμένη η εικόνα της φωτιάς – Κάηκαν κτίριο και όχημα",
-      "normalized_title": "ΚΟΥΒΑΡΑΣ ΑΤΤΙΚΗΣ: ΒΕΛΤΙΩΜΕΝΗ Η ΕΙΚΟΝΑ ΤΗΣ ΦΩΤΙΑΣ – ΚΑΗΚΑΝ ΚΤΙΡΙΟ ΚΑΙ ΟΧΗΜΑ",
+      "url": "https://www.kathimerini.gr/culture/tv/564393982/house-of-the-dragon-erchontai-skoteines-meres-ti-apokalyptei-o-dimioyrgos-gia-tin-tetarti-sezon/",
+      "title": "«House of the Dragon»: «Ερχονται σκοτεινές μέρες» – Τι αποκαλύπτει ο δημιουργός για την τέταρτη σεζόν",
+      "normalized_title": "«HOUSE OF THE DRAGON»: «ΕΡΧΟΝΤΑΙ ΣΚΟΤΕΙΝΕΣ ΜΕΡΕΣ» – ΤΙ ΑΠΟΚΑΛΥΠΤΕΙ Ο ΔΗΜΙΟΥΡΓΟΣ ΓΙΑ ΤΗΝ ΤΕΤΑΡΤΗ ΣΕΖΟΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564393946/koyvaras-attikis-veltiomeni-i-eikona-tis-fotias-kaikan-ktirio-kai-ochima/",
-        "https://www.kathimerini.gr/world/564393943/symfonia-syrias-rosias-gia-tis-rosikes-vaseis-ti-provlepei/"
+        "https://www.kathimerini.gr/culture/tv/564393982/house-of-the-dragon-erchontai-skoteines-meres-ti-apokalyptei-o-dimioyrgos-gia-tin-tetarti-sezon/",
+        "https://www.kathimerini.gr/society/564393976/rodos-cheiropedes-se-73chrono-gia-diathesi-alkool-se-treis-anilikoys/",
+        "https://www.kathimerini.gr/world/564393955/iae-apotrapikan-kyvernoepitheseis-se-stochoys-aeroporias-kai-energeias/",
+        "https://www.kathimerini.gr/world/564393961/rosia-kai-oykrania-antallaxan-nea-nychterina-pligmata-o-poy-epivevaiose-tin-katastrofi-apothikis/"
       ],
-      "seen_at_utc": "2026-08-10T09:30:02.448597+00:00"
+      "seen_at_utc": "2026-08-10T09:51:22.018335+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862979/grigora-na-svisoume-ti-fotia-i-stigmi-pou-astunomikoi-apomakrunoun-ilikiomeni-apo-to-spiti-tis-ston-kouvara-deite-video/?utm_source=rss",
-      "title": "«Γρήγορα, να σβήσουμε τη φωτιά»: Η στιγμή που αστυνομικοί απομακρύνουν ηλικιωμένη από το σπίτι της στον Κουβαρά, δείτε βίντεο",
-      "normalized_title": "«ΓΡΗΓΟΡΑ, ΝΑ ΣΒΗΣΟΥΜΕ ΤΗ ΦΩΤΙΑ»: Η ΣΤΙΓΜΗ ΠΟΥ ΑΣΤΥΝΟΜΙΚΟΙ ΑΠΟΜΑΚΡΥΝΟΥΝ ΗΛΙΚΙΩΜΕΝΗ ΑΠΟ ΤΟ ΣΠΙΤΙ ΤΗΣ ΣΤΟΝ ΚΟΥΒΑΡΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1863007/nauagosostis-edose-mahi-me-ta-kumata-gia-na-sosei-gunaika-se-paralia-ton-hanion-deite-video/?utm_source=rss",
+      "title": "Ναυαγοσώστης έδωσε μάχη με τα κύματα για να σώσει γυναίκα σε παραλία των Χανίων, δείτε βίντεο",
+      "normalized_title": "ΝΑΥΑΓΟΣΩΣΤΗΣ ΕΔΩΣΕ ΜΑΧΗ ΜΕ ΤΑ ΚΥΜΑΤΑ ΓΙΑ ΝΑ ΣΩΣΕΙ ΓΥΝΑΙΚΑ ΣΕ ΠΑΡΑΛΙΑ ΤΩΝ ΧΑΝΙΩΝ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862979/grigora-na-svisoume-ti-fotia-i-stigmi-pou-astunomikoi-apomakrunoun-ilikiomeni-apo-to-spiti-tis-ston-kouvara-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862972/porto-heli-nekri-64hroni-idioktitria-xenodoheiou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863007/nauagosostis-edose-mahi-me-ta-kumata-gia-na-sosei-gunaika-se-paralia-ton-hanion-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863001/sullipsi-73hronou-sti-rodo-giati-poulise-alkool-se-treis-anilikous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862997/apadisi-tis-purosvestikis-stis-kataggelies-oti-oi-purosvestes-sti-dutiki-attiki-afethikan-horis-trofi-i-nero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862992/chevening-epistrefoun-stin-ellada-oi-vretanikes-upotrofies-gia-metaptuhiakes-spoudes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T09:17:13.461723+00:00"
+      "seen_at_utc": "2026-08-10T09:51:22.018466+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1444992/dekades-apohoriseis-apo-tin-arhi-geologikon-kai-metalleytikon-ereynon/",
-      "title": "Δεκάδες αποχωρήσεις από την Αρχή Γεωλογικών και Μεταλλευτικών Ερευνών",
-      "normalized_title": "ΔΕΚΑΔΕΣ ΑΠΟΧΩΡΗΣΕΙΣ ΑΠΟ ΤΗΝ ΑΡΧΗ ΓΕΩΛΟΓΙΚΩΝ ΚΑΙ ΜΕΤΑΛΛΕΥΤΙΚΩΝ ΕΡΕΥΝΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1445155/tsipras-eho-akoysei-oti-paristano-ton-odyssea-oti-thelo-na-xanagrapso-tin-odysseia/",
+      "title": "Τσίπρας: «Έχω ακούσει ότι παριστάνω τον Οδυσσέα, ότι θέλω να ξαναγράψω την Οδύσσεια»",
+      "normalized_title": "ΤΣΙΠΡΑΣ: «ΕΧΩ ΑΚΟΥΣΕΙ ΟΤΙ ΠΑΡΙΣΤΑΝΩ ΤΟΝ ΟΔΥΣΣΕΑ, ΟΤΙ ΘΕΛΩ ΝΑ ΞΑΝΑΓΡΑΨΩ ΤΗΝ ΟΔΥΣΣΕΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1444992/dekades-apohoriseis-apo-tin-arhi-geologikon-kai-metalleytikon-ereynon/"
+        "https://www.efsyn.gr/politiki/1445155/tsipras-eho-akoysei-oti-paristano-ton-odyssea-oti-thelo-na-xanagrapso-tin-odysseia/",
+        "https://www.efsyn.gr/politiki/1445174/n-pappas-gia-protoselido-naytemporikis-i-nd-eihe-toys-poroys-kai-afise-to-idiotiko-hreos-na-gigantothei/",
+        "https://www.efsyn.gr/politiki/1445181/marinakis-kata-tsipra-i-syllogiki-mnimi-den-svinei-toso-eykola-oso-ekeinos-pisteyei/",
+        "https://www.efsyn.gr/tehnes/1445125/o-kallitehnikos-kosmos-apohaireta-ton-niko-kalogeropoylo-xeklirizetai-ena-eidos-anthropon-poy-eihan-anidioteleia-psyhi/",
+        "https://www.efsyn.gr/kosmos/1445111/cnn-gia-gaza-giati-o-netaniahoy-den-distase-na-mpei-sto-mati-toy-tramp-gia-to-shedio-15-simeion/"
       ],
-      "seen_at_utc": "2026-08-10T09:30:02.448687+00:00"
+      "seen_at_utc": "2026-08-10T09:51:22.018428+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/inbox/sti-thessaloniki-gia-ton-paok-o-foster-ti-eipe-gia-tous-stoxous-tis-omadas/",
-      "title": "Στη Θεσσαλονίκη για τον ΠΑΟΚ ο Φόστερ – Τι είπε για τους στόχους της ομάδας",
-      "normalized_title": "ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΓΙΑ ΤΟΝ ΠΑΟΚ Ο ΦΟΣΤΕΡ – ΤΙ ΕΙΠΕ ΓΙΑ ΤΟΥΣ ΣΤΟΧΟΥΣ ΤΗΣ ΟΜΑΔΑΣ",
+      "url": "https://www.in.gr/2026/08/10/politics/epikairotita/elas-o-nikos-kalogeropoulos-sfragise-tin-akmi-tou-neou-ellinikou-kinimatografou/",
+      "title": "ΕΛΑΣ: Ο Νίκος Καλογερόπουλος σφράγισε την ακμή του νέου ελληνικού κινηματογράφου",
+      "normalized_title": "ΕΛΑΣ: Ο ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ ΣΦΡΑΓΙΣΕ ΤΗΝ ΑΚΜΗ ΤΟΥ ΝΕΟΥ ΕΛΛΗΝΙΚΟΥ ΚΙΝΗΜΑΤΟΓΡΑΦΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/inbox/sti-thessaloniki-gia-ton-paok-o-foster-ti-eipe-gia-tous-stoxous-tis-omadas/"
+        "https://www.in.gr/2026/08/10/politics/epikairotita/elas-o-nikos-kalogeropoulos-sfragise-tin-akmi-tou-neou-ellinikou-kinimatografou/",
+        "https://www.in.gr/2026/08/10/greece/tripoli-sygkentrosi-diamartyrias-epoxikon-pyrosveston-ti-zitoun/"
       ],
-      "seen_at_utc": "2026-08-10T09:30:02.448655+00:00"
+      "seen_at_utc": "2026-08-10T09:51:22.018383+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T09:30:02.448764+00:00"
+  "updated_at_utc": "2026-08-10T09:51:22.018540+00:00"
 }
