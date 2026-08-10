@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564393820/kanadas-akyrothike-ptisi-epeidi-paidi-arnithike-na-kathisei-kai-na-foresei-zoni-asfaleias/",
-      "title": "Καναδάς: Ακυρώθηκε πτήση επειδή παιδί αρνήθηκε να καθίσει και να φορέσει ζώνη ασφαλείας",
-      "normalized_title": "ΚΑΝΑΔΑΣ: ΑΚΥΡΩΘΗΚΕ ΠΤΗΣΗ ΕΠΕΙΔΗ ΠΑΙΔΙ ΑΡΝΗΘΗΚΕ ΝΑ ΚΑΘΙΣΕΙ ΚΑΙ ΝΑ ΦΟΡΕΣΕΙ ΖΩΝΗ ΑΣΦΑΛΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564393853/milos-epicheirisi-diasosis-33chronoy-poy-den-mporoyse-na-katevei-apo-vracho-20-metron/",
+      "title": "Μήλος: Επιχείρηση διάσωσης 33χρονου που δεν μπορούσε να κατέβει από βράχο 20 μέτρων",
+      "normalized_title": "ΜΗΛΟΣ: ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ 33ΧΡΟΝΟΥ ΠΟΥ ΔΕΝ ΜΠΟΡΟΥΣΕ ΝΑ ΚΑΤΕΒΕΙ ΑΠΟ ΒΡΑΧΟ 20 ΜΕΤΡΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564393820/kanadas-akyrothike-ptisi-epeidi-paidi-arnithike-na-kathisei-kai-na-foresei-zoni-asfaleias/",
-        "https://www.kathimerini.gr/society/564393808/milos-paremvasi-eisaggelea-gia-to-elikoptero-sto-sarakiniko/"
+        "https://www.kathimerini.gr/society/564393853/milos-epicheirisi-diasosis-33chronoy-poy-den-mporoyse-na-katevei-apo-vracho-20-metron/",
+        "https://www.kathimerini.gr/world/564393847/chavai-20chronos-katigoreitai-oti-xylokopise-mechri-thanatoy-fylaka-se-theretro/",
+        "https://www.kathimerini.gr/columns/564393817/chorche-mesi-pateras-manatzer-fylakas-aggelos/"
       ],
-      "seen_at_utc": "2026-08-10T07:51:29.048447+00:00"
+      "seen_at_utc": "2026-08-10T08:17:23.542565+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862907/ilikiomeni-anasurthike-nekri-apo-ti-thalassa-stin-katerini/?utm_source=rss",
-      "title": "Ηλικιωμένη ανασύρθηκε νεκρή από τη θάλασσα στην Κατερίνη",
-      "normalized_title": "ΗΛΙΚΙΩΜΕΝΗ ΑΝΑΣΥΡΘΗΚΕ ΝΕΚΡΗ ΑΠΟ ΤΗ ΘΑΛΑΣΣΑ ΣΤΗΝ ΚΑΤΕΡΙΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1862939/milos-33hronos-touristas-eglovistike-se-vraho-20-metron-kai-ton-diesose-to-limeniko-ta-ximeromata/?utm_source=rss",
+      "title": "Μήλος: 33χρονος τουρίστας... εγκλωβίστηκε σε βράχο 20 μέτρων και τον διέσωσε το Λιμενικό τα ξημερώματα",
+      "normalized_title": "ΜΗΛΟΣ: 33ΧΡΟΝΟΣ ΤΟΥΡΙΣΤΑΣ... ΕΓΚΛΩΒΙΣΤΗΚΕ ΣΕ ΒΡΑΧΟ 20 ΜΕΤΡΩΝ ΚΑΙ ΤΟΝ ΔΙΕΣΩΣΕ ΤΟ ΛΙΜΕΝΙΚΟ ΤΑ ΞΗΜΕΡΩΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862907/ilikiomeni-anasurthike-nekri-apo-ti-thalassa-stin-katerini/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862939/milos-33hronos-touristas-eglovistike-se-vraho-20-metron-kai-ton-diesose-to-limeniko-ta-ximeromata/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862932/fotia-tora-se-dasiki-ektasi-stin-konitsa-ioanninon-sikothike-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862931/kriti-suskeui-parakolouthisis-sto-autokinito-tis-proin-sudrofou-tou-eihe-topothetisei-23hronos-pou-sunelifthi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T07:30:21.153659+00:00"
+      "seen_at_utc": "2026-08-10T08:17:23.542720+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445036/fotia-ston-koyvara-dimosiografos-diekopse-to-reportaz-gia-na-sosei-helona-apo-tin-pyrkagia-vinteo/",
-      "title": "Φωτιά στον Κουβαρά: Δημοσιογράφος διέκοψε το ρεπορτάζ για να σώσει χελώνα από την πυρκαγιά [βίντεο]",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΟΥΒΑΡΑ: ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΔΙΕΚΟΨΕ ΤΟ ΡΕΠΟΡΤΑΖ ΓΙΑ ΝΑ ΣΩΣΕΙ ΧΕΛΩΝΑ ΑΠΟ ΤΗΝ ΠΥΡΚΑΓΙΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1445027/epainoi-pleyri-se-tramp-meso-toy-akrodexioy-breitbart-allaxe-ti-metanasteytiki-politiki-stin-eyropi/",
+      "title": "Έπαινοι Πλεύρη σε Τραμπ μέσω του ακροδεξιού Breitbart: «Άλλαξε τη μεταναστευτική πολιτική στην Ευρώπη»",
+      "normalized_title": "ΕΠΑΙΝΟΙ ΠΛΕΥΡΗ ΣΕ ΤΡΑΜΠ ΜΕΣΩ ΤΟΥ ΑΚΡΟΔΕΞΙΟΥ BREITBART: «ΑΛΛΑΞΕ ΤΗ ΜΕΤΑΝΑΣΤΕΥΤΙΚΗ ΠΟΛΙΤΙΚΗ ΣΤΗΝ ΕΥΡΩΠΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445036/fotia-ston-koyvara-dimosiografos-diekopse-to-reportaz-gia-na-sosei-helona-apo-tin-pyrkagia-vinteo/"
+        "https://www.efsyn.gr/politiki/1445027/epainoi-pleyri-se-tramp-meso-toy-akrodexioy-breitbart-allaxe-ti-metanasteytiki-politiki-stin-eyropi/",
+        "https://www.efsyn.gr/nisides/1445071/stela-fyrogeni-stin-ef-syn-i-atimorisia-dialyei-ta-panta/",
+        "https://www.efsyn.gr/stiles/1445059/akrivo-moy-kalokairi/",
+        "https://www.efsyn.gr/nisides/1445009/andreas-kalvos-ellinoprepis-italos-poiitis/",
+        "https://www.efsyn.gr/nisides/1445015/to-mystirio-toy-eaytoy/",
+        "https://www.efsyn.gr/politiki/1445005/aihmes-karystianoy-gia-tis-apohoriseis-apo-to-komma-tis-kapoia-atoma-eihan-alloys-skopoys/"
       ],
-      "seen_at_utc": "2026-08-10T07:51:29.048531+00:00"
+      "seen_at_utc": "2026-08-10T08:17:23.542687+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/greece/tourismos-gia-olous-aneksartitos-afm-i-ypovoli-ton-aitiseon-gia-to-neo-programma-i-prothesmia/",
-      "title": "Ανεξαρτήτως ΑΦΜ η υποβολή των αιτήσεων για το νέο πρόγραμμα «Τουρισμός για Όλους» - Η προθεσμία",
-      "normalized_title": "ΑΝΕΞΑΡΤΗΤΩΣ ΑΦΜ Η ΥΠΟΒΟΛΗ ΤΩΝ ΑΙΤΗΣΕΩΝ ΓΙΑ ΤΟ ΝΕΟ ΠΡΟΓΡΑΜΜΑ «ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ» - Η ΠΡΟΘΕΣΜΙΑ",
+      "url": "https://www.in.gr/2026/08/10/greece/methysmeni-i-asthenis-pou-ksylokopise-tin-nosileytria-ston-erythro-stayro-sakos-tou-mpoks-oi-ygeionomikoi/",
+      "title": "Μεθυσμένη η ασθενής που ξυλοκόπησε την νοσηλεύτρια στον Ερυθρό Σταυρό – «Σάκος του μποξ» οι υγειονομικοί",
+      "normalized_title": "ΜΕΘΥΣΜΕΝΗ Η ΑΣΘΕΝΗΣ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΤΗΝ ΝΟΣΗΛΕΥΤΡΙΑ ΣΤΟΝ ΕΡΥΘΡΟ ΣΤΑΥΡΟ – «ΣΑΚΟΣ ΤΟΥ ΜΠΟΞ» ΟΙ ΥΓΕΙΟΝΟΜΙΚΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/greece/tourismos-gia-olous-aneksartitos-afm-i-ypovoli-ton-aitiseon-gia-to-neo-programma-i-prothesmia/",
-        "https://www.in.gr/2026/08/10/sports/football/stin-teliki-eytheia-oi-diapragmateyseis-mpartselona-kai-mantester-siti-gia-ton-rodri/"
+        "https://www.in.gr/2026/08/10/greece/methysmeni-i-asthenis-pou-ksylokopise-tin-nosileytria-ston-erythro-stayro-sakos-tou-mpoks-oi-ygeionomikoi/",
+        "https://www.in.gr/2026/08/10/go-fun/fizz/zizel-kanei-gymnastki-me-ton-15-xronon-gio-tis/",
+        "https://www.in.gr/2026/08/10/sports/football/evdomada-ekselikseon-gia-tin-paramoni-tou-xari-kein-stin-mpagern/"
       ],
-      "seen_at_utc": "2026-08-10T07:51:29.048504+00:00"
+      "seen_at_utc": "2026-08-10T08:17:23.542648+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T07:51:29.048619+00:00"
+  "updated_at_utc": "2026-08-10T08:17:23.542868+00:00"
 }
