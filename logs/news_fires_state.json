@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564392137/paskal-mprykner-goyokismos-kai-trampismos-opseis-toy-idioy-nomismatos/",
-      "title": "Πασκάλ Μπρυκνέρ: Γουοκισμός και τραμπισμός, όψεις του ιδίου νομίσματος",
-      "normalized_title": "ΠΑΣΚΑΛ ΜΠΡΥΚΝΕΡ: ΓΟΥΟΚΙΣΜΟΣ ΚΑΙ ΤΡΑΜΠΙΣΜΟΣ, ΟΨΕΙΣ ΤΟΥ ΙΔΙΟΥ ΝΟΜΙΣΜΑΤΟΣ",
+      "url": "https://www.kathimerini.gr/society/564393931/lasithi-anilikos-sto-nosokomeio-epeita-apo-methi-dyo-syllipseis/",
+      "title": "Λασίθι: Ανήλικος στο νοσοκομείο έπειτα από μέθη – Δύο συλλήψεις",
+      "normalized_title": "ΛΑΣΙΘΙ: ΑΝΗΛΙΚΟΣ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΕΠΕΙΤΑ ΑΠΟ ΜΕΘΗ – ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564392137/paskal-mprykner-goyokismos-kai-trampismos-opseis-toy-idioy-nomismatos/",
-        "https://www.kathimerini.gr/world/564393895/theleis-ekptosi-sti-venzini-chorepse-to-pratirio-kaysimon-kai-i-eyfantasti-prosfora-toy/",
-        "https://www.kathimerini.gr/society/564393877/ileia-voytia-sti-thalassa-katelixe-se-efialti-31chroni-chtypise-sovara-ston-aychena-synelifthi-o-syzygos/"
+        "https://www.kathimerini.gr/society/564393931/lasithi-anilikos-sto-nosokomeio-epeita-apo-methi-dyo-syllipseis/",
+        "https://www.kathimerini.gr/opinion/564391558/to-neo-topio-gia-to-kalodio/",
+        "https://www.kathimerini.gr/culture/tv/564393916/the-pitt-osa-tha-parakoloythisoyme-stin-triti-sezon/",
+        "https://www.kathimerini.gr/k/k-magazine/564390496/i-odysseia-tis-ithakis/",
+        "https://www.kathimerini.gr/world/564393919/metavoli-tis-antilipsis-s-aravias-pakistan-toyrkias-apenanti-stis-ipa-vlepei-i-techerani/",
+        "https://www.kathimerini.gr/society/564393904/patra-paidi-2-5-eton-epese-apo-mpalkoni-protoy-orofoy-ti-glitose-me-katagmata/"
       ],
-      "seen_at_utc": "2026-08-10T08:52:00.428589+00:00"
+      "seen_at_utc": "2026-08-10T09:17:13.461566+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1264,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862967/panellinias-omospondias-geotehnikon-upallilon-to-antinero-ehei-sumvallei-sti-mahi-kata-ton-purkagion-ohi-alli-upokrisia/?utm_source=rss",
-      "title": "Πανελλήνια Ομοσπονδία Γεωτεχνικών Δημοσίων Υπαλλήλων: Το Antinero έχει συμβάλλει στη μάχη κατά των πυρκαγιών, όχι άλλη υποκρισία",
-      "normalized_title": "ΠΑΝΕΛΛΗΝΙΑ ΟΜΟΣΠΟΝΔΙΑ ΓΕΩΤΕΧΝΙΚΩΝ ΔΗΜΟΣΙΩΝ ΥΠΑΛΛΗΛΩΝ: ΤΟ ANTINERO ΕΧΕΙ ΣΥΜΒΑΛΛΕΙ ΣΤΗ ΜΑΧΗ ΚΑΤΑ ΤΩΝ ΠΥΡΚΑΓΙΩΝ, ΟΧΙ ΑΛΛΗ ΥΠΟΚΡΙΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1862979/grigora-na-svisoume-ti-fotia-i-stigmi-pou-astunomikoi-apomakrunoun-ilikiomeni-apo-to-spiti-tis-ston-kouvara-deite-video/?utm_source=rss",
+      "title": "«Γρήγορα, να σβήσουμε τη φωτιά»: Η στιγμή που αστυνομικοί απομακρύνουν ηλικιωμένη από το σπίτι της στον Κουβαρά, δείτε βίντεο",
+      "normalized_title": "«ΓΡΗΓΟΡΑ, ΝΑ ΣΒΗΣΟΥΜΕ ΤΗ ΦΩΤΙΑ»: Η ΣΤΙΓΜΗ ΠΟΥ ΑΣΤΥΝΟΜΙΚΟΙ ΑΠΟΜΑΚΡΥΝΟΥΝ ΗΛΙΚΙΩΜΕΝΗ ΑΠΟ ΤΟ ΣΠΙΤΙ ΤΗΣ ΣΤΟΝ ΚΟΥΒΑΡΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862967/panellinias-omospondias-geotehnikon-upallilon-to-antinero-ehei-sumvallei-sti-mahi-kata-ton-purkagion-ohi-alli-upokrisia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862964/ola-kala-gia-to-elikodromio-sarakiniko-heiristis-kai-idioktitis-esteilan-dikigoro-kai-kinduneuoun-me-ena-prostimo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862960/forbes-oi-kaluteroi-proorismoi-ston-kosmo-gia-na-ziseis-meta-tin-sudaxi-anamesa-tous-kai-tesseris-poleis-tis-elladas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862956/mitera-katiggeile-tin-kori-tis-gia-narkotika-sto-irakleio-kai-ekeini-ti-minuse-gia-endooikogeneiaki-via/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862955/patra-paidi-25-eton-epese-apo-balkoni-kai-sothike-giati-dedro-anekopse-ti-poreia-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862979/grigora-na-svisoume-ti-fotia-i-stigmi-pou-astunomikoi-apomakrunoun-ilikiomeni-apo-to-spiti-tis-ston-kouvara-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862972/porto-heli-nekri-64hroni-idioktitria-xenodoheiou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T08:52:00.428736+00:00"
+      "seen_at_utc": "2026-08-10T09:17:13.461723+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445066/fotia-ston-koyvara-zimies-se-ergostasio-kai-ktinotrofikes-monades-ishyroi-oi-anemoi-vinteo/",
-      "title": "Φωτιά στον Κουβαρά: Ζημιές σε εργοστάσιο και κτηνοτροφικές μονάδες – Ισχυροί οι άνεμοι [βίντεο]",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΟΥΒΑΡΑ: ΖΗΜΙΕΣ ΣΕ ΕΡΓΟΣΤΑΣΙΟ ΚΑΙ ΚΤΗΝΟΤΡΟΦΙΚΕΣ ΜΟΝΑΔΕΣ – ΙΣΧΥΡΟΙ ΟΙ ΑΝΕΜΟΙ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1444997/patriot-me-ton-mina-i-paramoni-sti-saoydiki-aravia-antimetro-gia-ti-symfonia-tis-mekkas/",
+      "title": "Patriot: Με τον μήνα η παραμονή στη Σαουδική Αραβία – Αντίμετρο για τη συμφωνία της Μέκκας;",
+      "normalized_title": "PATRIOT: ΜΕ ΤΟΝ ΜΗΝΑ Η ΠΑΡΑΜΟΝΗ ΣΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ – ΑΝΤΙΜΕΤΡΟ ΓΙΑ ΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ;",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445066/fotia-ston-koyvara-zimies-se-ergostasio-kai-ktinotrofikes-monades-ishyroi-oi-anemoi-vinteo/",
-        "https://www.efsyn.gr/politiki/1445026/tsipras-i-akriveia-den-antimetopizetai-me-pass-kai-epidotiseis-alla-me-politiki-sygkroysis-me-ta-megala-symferonta/"
+        "https://www.efsyn.gr/politiki/1444997/patriot-me-ton-mina-i-paramoni-sti-saoydiki-aravia-antimetro-gia-ti-symfonia-tis-mekkas/",
+        "https://www.efsyn.gr/ellada/1445108/den-proseggise-ta-psara-to-ploio-nisos-samos-logo-kairoy/",
+        "https://www.efsyn.gr/ellada/1445116/milos-epiheirisi-diasosis-33hronoy-poy-anevike-se-vraho-20-metron-kai-den-mporoyse-na-katevei/"
       ],
-      "seen_at_utc": "2026-08-10T08:52:00.428699+00:00"
+      "seen_at_utc": "2026-08-10T09:17:13.461689+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/politics/epikairotita/kke-polytalantos-kai-anisyxos-dimiourgos-o-nikos-kalogeropoulos-to-antio-me-dyo-stixous-tou/",
-      "title": "ΚΚΕ: Πολυτάλαντος και ανήσυχος δημιουργός ο Νίκος Καλογερόπουλος – Το «αντίο» με δύο στίχους του",
-      "normalized_title": "ΚΚΕ: ΠΟΛΥΤΑΛΑΝΤΟΣ ΚΑΙ ΑΝΗΣΥΧΟΣ ΔΗΜΙΟΥΡΓΟΣ Ο ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ – ΤΟ «ΑΝΤΙΟ» ΜΕ ΔΥΟ ΣΤΙΧΟΥΣ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/iris-sto-mikroskopio-tis-aade-kai-oi-mikres-metafores-xrimaton-oi-pagides-pou-akyronoun-to-aforologito/",
+      "title": "IRIS: Στο μικροσκόπιο της ΑΑΔΕ και οι μικρές μεταφορές χρημάτων – Οι παγίδες που ακυρώνουν το αφορολόγητο",
+      "normalized_title": "IRIS: ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΗΣ ΑΑΔΕ ΚΑΙ ΟΙ ΜΙΚΡΕΣ ΜΕΤΑΦΟΡΕΣ ΧΡΗΜΑΤΩΝ – ΟΙ ΠΑΓΙΔΕΣ ΠΟΥ ΑΚΥΡΩΝΟΥΝ ΤΟ ΑΦΟΡΟΛΟΓΗΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/politics/epikairotita/kke-polytalantos-kai-anisyxos-dimiourgos-o-nikos-kalogeropoulos-to-antio-me-dyo-stixous-tou/",
-        "https://www.in.gr/2026/08/10/life/culture-live/nikos-kalogeropoulos-to-syllypitirio-minyma-tis-linas-mendoni-gia-tin-apoleia-tou-kallitexni/",
-        "https://www.in.gr/2026/08/10/greece/attikovoiotia-apo-simera-i-diadikasia-ypovolis-aitiseon-gia-tous-pyropliktous-apo-ti-megali-fotia/"
+        "https://www.in.gr/2026/08/10/economy/oikonomikes-eidiseis/iris-sto-mikroskopio-tis-aade-kai-oi-mikres-metafores-xrimaton-oi-pagides-pou-akyronoun-to-aforologito/",
+        "https://www.in.gr/2026/08/10/greece/patra-paidi-25-eton-epese-apo-mpalkoni-kai-prosekrouse-se-dentro-nosileyetai-sto-karamandaneio/",
+        "https://www.in.gr/2026/08/10/greece/milos-epixeirisi-diasosis-33xronou-ekglovistike-se-vraxo-ypsous-20-metron/",
+        "https://www.in.gr/2026/08/10/economy/diethnis-oikonomia/astronomiko-to-kostos-tou-fetinou-kalokairiou-gia-tin-oikonomia-i-notia-eyropi-tha-ypoferei/",
+        "https://www.in.gr/2026/08/10/life/culture-live/kapote-sto-xoligount-57-xronia-meta-ti-dolofonia-tis-saron-teit-kai-tis-xamenis-athootitas/",
+        "https://www.in.gr/2026/08/10/sports/football/epistoli-vomva-uefa-concacaf-kai-afc-kata-infantino-zitoun-aneksartiti-ereyna-gia-to-fifa-forward-program/"
       ],
-      "seen_at_utc": "2026-08-10T08:52:00.428660+00:00"
+      "seen_at_utc": "2026-08-10T09:17:13.461649+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T08:52:00.428829+00:00"
+  "updated_at_utc": "2026-08-10T09:17:13.461814+00:00"
 }
