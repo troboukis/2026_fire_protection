@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564394285/o-politikos-kosmos-apochaireta-ton-stelio-ramfo/",
-      "title": "Ο πολιτικός κόσμος αποχαιρετά τον Στέλιο Ράμφο",
-      "normalized_title": "Ο ΠΟΛΙΤΙΚΟΣ ΚΟΣΜΟΣ ΑΠΟΧΑΙΡΕΤΑ ΤΟΝ ΣΤΕΛΙΟ ΡΑΜΦΟ",
+      "url": "https://www.kathimerini.gr/life/auto/564394003/oi-aeroporikoi-kinitires-tis-bmw/",
+      "title": "Οι αεροπορικοί κινητήρες της BMW",
+      "normalized_title": "ΟΙ ΑΕΡΟΠΟΡΙΚΟΙ ΚΙΝΗΤΗΡΕΣ ΤΗΣ BMW",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564394285/o-politikos-kosmos-apochaireta-ton-stelio-ramfo/",
-        "https://www.kathimerini.gr/world/564394252/se-epipeda-rekor-i-thermokrasia-ton-okeanon-ton-ioylio/",
-        "https://www.kathimerini.gr/visual/podcasts/564394111/poy-skontaftei-o-schediasmos/"
+        "https://www.kathimerini.gr/life/auto/564394003/oi-aeroporikoi-kinitires-tis-bmw/",
+        "https://www.kathimerini.gr/world/564394294/seismos-6-7-richter-stin-kolomvia/"
       ],
-      "seen_at_utc": "2026-08-10T12:51:24.576534+00:00"
+      "seen_at_utc": "2026-08-10T13:17:06.955182+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863089/trohaio-ston-holargo-kathusteriseis-sti-mesogeion/?utm_source=rss",
-      "title": "Τροχαίο στον Χολαργό, καθυστερήσεις στη Μεσογείων",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΟΝ ΧΟΛΑΡΓΟ, ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΗ ΜΕΣΟΓΕΙΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1863097/ishuro-meltemi-se-attiki-kai-euvoia-ripes-ano-ton-110-hlmora-se-pedeli-kai-karusto/?utm_source=rss",
+      "title": "Ισχυρό μελτέμι σε Αττική και Εύβοια: Ριπές άνω των 110 χλμ/ώρα σε Πεντέλη και Κάρυστο",
+      "normalized_title": "ΙΣΧΥΡΟ ΜΕΛΤΕΜΙ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ: ΡΙΠΕΣ ΑΝΩ ΤΩΝ 110 ΧΛΜ/ΩΡΑ ΣΕ ΠΕΝΤΕΛΗ ΚΑΙ ΚΑΡΥΣΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863089/trohaio-ston-holargo-kathusteriseis-sti-mesogeion/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863085/fotia-tora-sti-gastouni-ileias-sikothikan-3-aeroskafi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863097/ishuro-meltemi-se-attiki-kai-euvoia-ripes-ano-ton-110-hlmora-se-pedeli-kai-karusto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863095/otan-o-stelios-ramfos-milouse-ston-danika-gia-tin-ellada-ta-oneira-kai-tis-diastrofes-tou-mualou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863094/fotia-tora-se-hamili-vlastisi-sta-kotteika-ileias-sikothikan-7-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T12:51:24.576628+00:00"
+      "seen_at_utc": "2026-08-10T13:17:06.955320+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445316/stelios-ramfos-ta-syllypitiria-minymata-toy-politikoy-kosmoy/",
-      "title": "Στέλιος Ράμφος: Τα συλλυπητήρια μηνύματα του πολιτικού κόσμου",
-      "normalized_title": "ΣΤΕΛΙΟΣ ΡΑΜΦΟΣ: ΤΑ ΣΥΛΛΥΠΗΤΗΡΙΑ ΜΗΝΥΜΑΤΑ ΤΟΥ ΠΟΛΙΤΙΚΟΥ ΚΟΣΜΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1445332/me-mayra-perivrahionia-oi-epohikoi-pyrosvestes-stin-tripoli-irthe-i-ora-na-vgaloyme-ta-mpez-vinteo/",
+      "title": "Με μαύρα περιβραχιόνια οι εποχικοί πυροσβέστες στην Τρίπολη: «Ήρθε η ώρα να βγάλουμε τα μπεζ» [βίντεο]",
+      "normalized_title": "ΜΕ ΜΑΥΡΑ ΠΕΡΙΒΡΑΧΙΟΝΙΑ ΟΙ ΕΠΟΧΙΚΟΙ ΠΥΡΟΣΒΕΣΤΕΣ ΣΤΗΝ ΤΡΙΠΟΛΗ: «ΗΡΘΕ Η ΩΡΑ ΝΑ ΒΓΑΛΟΥΜΕ ΤΑ ΜΠΕΖ» [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445316/stelios-ramfos-ta-syllypitiria-minymata-toy-politikoy-kosmoy/",
-        "https://www.efsyn.gr/podcast/paratiritirio-synohis-i-aristeia-katapinei-tis-foititikes-ypotrofies-ep-18/",
-        "https://www.efsyn.gr/ellada/1445286/afroditi-nestora-gia-ti-nekri-mitera-tis-syggnomi-poy-den-katafera-na-se-prostateyso/",
-        "https://www.efsyn.gr/ellada/1445311/koyvaras-oi-floges-perikyklosan-to-spiti-ilikiomenis-epiheirisi-apegklovismoy-tis-vinteo/"
+        "https://www.efsyn.gr/ellada/1445332/me-mayra-perivrahionia-oi-epohikoi-pyrosvestes-stin-tripoli-irthe-i-ora-na-vgaloyme-ta-mpez-vinteo/",
+        "https://www.efsyn.gr/kosmos/1445325/ishyros-seismos-72-rihter-tarakoynise-tin-kolomvia/",
+        "https://www.efsyn.gr/kosmos/1445320/i-xirasia-epitithetai-stin-eyropi-peftei-i-stathmi-ton-ydaton-o-rinos-tha-kopei-sta-dyo/",
+        "https://www.efsyn.gr/ellada/1445323/diplo-pyrino-metopo-stin-ileia-sikothikan-tria-aeroskafi/"
       ],
-      "seen_at_utc": "2026-08-10T12:51:24.576612+00:00"
+      "seen_at_utc": "2026-08-10T13:17:06.955285+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/football/mprouno-einai-megali-proklisi-i-revans-me-ton-paok/",
-      "title": "Μπρούνο: «Είναι μεγάλη πρόκληση η ρεβάνς με τον ΠΑΟΚ»",
-      "normalized_title": "ΜΠΡΟΥΝΟ: «ΕΙΝΑΙ ΜΕΓΑΛΗ ΠΡΟΚΛΗΣΗ Η ΡΕΒΑΝΣ ΜΕ ΤΟΝ ΠΑΟΚ»",
+      "url": "https://www.in.gr/2026/08/10/world/kolomvia-seismos-74-vathmon-stis-aktes-tou-eirinikou-sygklonise-tin-proteyousa-mpogkota/",
+      "title": "Σεισμός 7,4 βαθμών στις ακτές του Ειρηνικού συγκλόνισε την Μπογκοτά στην Κολομβία",
+      "normalized_title": "ΣΕΙΣΜΟΣ 7,4 ΒΑΘΜΩΝ ΣΤΙΣ ΑΚΤΕΣ ΤΟΥ ΕΙΡΗΝΙΚΟΥ ΣΥΓΚΛΟΝΙΣΕ ΤΗΝ ΜΠΟΓΚΟΤΑ ΣΤΗΝ ΚΟΛΟΜΒΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/football/mprouno-einai-megali-proklisi-i-revans-me-ton-paok/",
-        "https://www.in.gr/2026/08/10/greece/to-sygkinitiko-minyma-tis-afroditis-nestora-gia-ti-mitera-tis-syggnomi-pou-den-katafera-na-se-prostateyso/"
+        "https://www.in.gr/2026/08/10/world/kolomvia-seismos-74-vathmon-stis-aktes-tou-eirinikou-sygklonise-tin-proteyousa-mpogkota/",
+        "https://www.in.gr/2026/08/10/world/germania-polonia-o-rinos-tha-kopei-sta-dyo-i-stathmi-ston-potamo-vistoula-se-istorika-xamila/",
+        "https://www.in.gr/2026/08/10/life/poios-dolofonise-ton-toupak-i-ora-tis-krisis-30-xronia-meta-i-venteta-to-misos-kai-o-diddy/",
+        "https://www.in.gr/2026/08/10/sports/football/favori-gia-ton-gouotfornt-o-olympiakos-vid/",
+        "https://www.in.gr/2026/08/10/greece/fotia-sti-gastouni-ileias-sikothikan-tria-aeroskafi/",
+        "https://www.in.gr/2026/08/10/economy/stournaras-eyprosdektes-oi-ksenes-symmetoxes-stis-ellinikes-trapezes/"
       ],
-      "seen_at_utc": "2026-08-10T12:51:24.576589+00:00"
+      "seen_at_utc": "2026-08-10T13:17:06.955242+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T12:51:24.576710+00:00"
+  "updated_at_utc": "2026-08-10T13:17:06.955409+00:00"
 }
