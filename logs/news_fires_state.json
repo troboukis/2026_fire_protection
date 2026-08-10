@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564393592/fotia-ston-koyvara-megali-epicheirisi-tis-pyrosvestikis-kai-minyma-toy-112/",
-      "title": "Φωτιά στον Κουβάρα: Μεγάλη επιχείρηση της Πυροσβεστικής και μήνυμα του 112",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΟΥΒΑΡΑ: ΜΕΓΑΛΗ ΕΠΙΧΕΙΡΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ ΚΑΙ ΜΗΝΥΜΑ ΤΟΥ 112",
+      "url": "https://www.kathimerini.gr/world/564393622/rekor-zestis-sti-dytiki-eyropi-i-tachytera-thermainomeni-periochi-stin-ipeiro/",
+      "title": "Ρεκόρ ζέστης στη Δυτική Ευρώπη – Η ταχύτερα θερμαινόμενη περιοχή στην ήπειρο",
+      "normalized_title": "ΡΕΚΟΡ ΖΕΣΤΗΣ ΣΤΗ ΔΥΤΙΚΗ ΕΥΡΩΠΗ – Η ΤΑΧΥΤΕΡΑ ΘΕΡΜΑΙΝΟΜΕΝΗ ΠΕΡΙΟΧΗ ΣΤΗΝ ΗΠΕΙΡΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564393592/fotia-ston-koyvara-megali-epicheirisi-tis-pyrosvestikis-kai-minyma-toy-112/",
-        "https://www.kathimerini.gr/economy/564393601/anasfalista-ich-apo-koskino-technitis-noimosynis-tha-perasoyn-oi-enstaseis-32-200-prostima-ton-ioynio/",
-        "https://www.kathimerini.gr/world/564393589/epithesi-ton-choythi-sti-moka-7-nekroi-dekades-traymaties/"
+        "https://www.kathimerini.gr/world/564393622/rekor-zestis-sti-dytiki-eyropi-i-tachytera-thermainomeni-periochi-stin-ipeiro/",
+        "https://www.kathimerini.gr/world/564393619/isimerinos-okto-diamelismena-ptomata-entopistikan-thammena-se-paranomo-metalleio/"
       ],
-      "seen_at_utc": "2026-08-10T05:30:07.709721+00:00"
+      "seen_at_utc": "2026-08-10T05:51:28.055831+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1862807/fotia-tora-ston-kouvara-attikis-kaiei-koda-se-oikismo-petane-3-elikoptera/?utm_source=rss",
-      "title": "Φωτιά τώρα στον Κουβαρά Αττικής, καίει κοντά σε οικισμό, πετάνε 3 ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟΝ ΚΟΥΒΑΡΑ ΑΤΤΙΚΗΣ, ΚΑΙΕΙ ΚΟΝΤΑ ΣΕ ΟΙΚΙΣΜΟ, ΠΕΤΑΝΕ 3 ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1862838/pos-kinoudai-ton-augousto-metro-isap-tram-kai-leoforeia/?utm_source=rss",
+      "title": "Πώς κινούνται τον Αύγουστο μετρό, ΗΣΑΠ, τραμ και λεωφορεία",
+      "normalized_title": "ΠΩΣ ΚΙΝΟΥΝΤΑΙ ΤΟΝ ΑΥΓΟΥΣΤΟ ΜΕΤΡΟ, ΗΣΑΠ, ΤΡΑΜ ΚΑΙ ΛΕΩΦΟΡΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1862807/fotia-tora-ston-kouvara-attikis-kaiei-koda-se-oikismo-petane-3-elikoptera/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862806/i-24hroni-aristouhos-tis-iatrikis-athinon-pou-diavase-ton-ippokratiko-orko-mila-gia-ton-aristo-giatro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1862802/mustirio-sti-thessaloniki-me-katadioxi-duo-ohimaton-kai-duo-anavates-pou-espasan-ta-tzamia-tou-enos-ek-ton-ih/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1862838/pos-kinoudai-ton-augousto-metro-isap-tram-kai-leoforeia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862836/etoimi-i-nea-gefura-stin-palaia-leoforo-poseidonos-telos-stin-talaiporia-ton-odigon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862835/ileia-sovaros-traumatismos-31hronis-miteras-sti-thalassa-sto-vartholomio-sunelifthi-o-suzugos-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1862827/thessaloniki-tesseris-aiguptioi-htupisan-19hrono-gia-na-ton-listepsoun-sto-oraiokastro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T05:17:26.900942+00:00"
+      "seen_at_utc": "2026-08-10T05:51:28.055946+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1444922/fotia-ston-koyvara-attikis-ihise-to-112-epiheiroyn-3-elikoptera/",
-      "title": "Φωτιά στον Κουβαρά Αττικής – Ηχησε το 112, επιχειρούν τρία ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΟΥΒΑΡΑ ΑΤΤΙΚΗΣ – ΗΧΗΣΕ ΤΟ 112, ΕΠΙΧΕΙΡΟΥΝ ΤΡΙΑ ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1444905/dimosioi-ypalliloi-kataggelia-gia-tin-axiologisi-meso-tehnitis-noimosynis/",
+      "title": "Δημόσιοι υπάλληλοι: Καταγγελία για την αξιολόγηση μέσω Τεχνητής Νοημοσύνης",
+      "normalized_title": "ΔΗΜΟΣΙΟΙ ΥΠΑΛΛΗΛΟΙ: ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΤΗΝ ΑΞΙΟΛΟΓΗΣΗ ΜΕΣΩ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1444922/fotia-ston-koyvara-attikis-ihise-to-112-epiheiroyn-3-elikoptera/",
-        "https://www.efsyn.gr/media/1444918/press-point-pyr-n-d-kai-thalassa-poio-einai-to-pio-epikindyno-apo-ta-tria/",
-        "https://www.efsyn.gr/ellada/1444903/milos-paremvasi-eisaggelea-gia-tin-prosgeiosi-elikopteroy-sto-sarakiniko-ti-ypostirizei-o-heiristis/"
+        "https://www.efsyn.gr/ellada/1444905/dimosioi-ypalliloi-kataggelia-gia-tin-axiologisi-meso-tehnitis-noimosynis/",
+        "https://www.efsyn.gr/politiki/1444936/sti-thalpori-toy-vythoy/"
       ],
-      "seen_at_utc": "2026-08-10T05:30:07.709814+00:00"
+      "seen_at_utc": "2026-08-10T05:51:28.055918+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/10/sports/othersports/provlima-sto-gonato-gia-ton-siner-aposyrthike-apo-to-tournoua-tou-sinsinati-pic/",
-      "title": "Πρόβλημα στο γόνατο για τον Σίνερ – Αποσύρθηκε από το τουρνουά του Σινσινάτι (pic)",
-      "normalized_title": "ΠΡΟΒΛΗΜΑ ΣΤΟ ΓΟΝΑΤΟ ΓΙΑ ΤΟΝ ΣΙΝΕΡ – ΑΠΟΣΥΡΘΗΚΕ ΑΠΟ ΤΟ ΤΟΥΡΝΟΥΑ ΤΟΥ ΣΙΝΣΙΝΑΤΙ (PIC)",
+      "url": "https://www.in.gr/2026/08/10/in-science/perivallon-b-science/ksirasia-kai-pyrkagies-eferan-rekor-zestis-sti-dytiki-eyropi/",
+      "title": "Ξηρασία και πυρκαγιές έφεραν ρεκόρ ζέστης στη δυτική Ευρώπη",
+      "normalized_title": "ΞΗΡΑΣΙΑ ΚΑΙ ΠΥΡΚΑΓΙΕΣ ΕΦΕΡΑΝ ΡΕΚΟΡ ΖΕΣΤΗΣ ΣΤΗ ΔΥΤΙΚΗ ΕΥΡΩΠΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/10/sports/othersports/provlima-sto-gonato-gia-ton-siner-aposyrthike-apo-to-tournoua-tou-sinsinati-pic/",
-        "https://www.in.gr/2026/08/10/greece/anatoliki-attiki-megali-fotia-ston-kouvara-sikothikan-enaeria-mesa-minyma-tou-112/"
+        "https://www.in.gr/2026/08/10/in-science/perivallon-b-science/ksirasia-kai-pyrkagies-eferan-rekor-zestis-sti-dytiki-eyropi/",
+        "https://www.in.gr/2026/08/10/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-d/",
+        "https://www.in.gr/2026/08/10/greece/sarakiniko-prepei-ekeini-tin-ora-na-eixe-1-000-atoma-nees-martyries-gia-tin-prosgeiosi-tou-elikopterou/",
+        "https://www.in.gr/2026/08/10/life/culture-live/nikos-kalogeropoulos-o-rolos-tou-gianni-papadopoulou-sti-loufa-kai-parallagi-pou-tou-edose-to-vraveio/"
       ],
-      "seen_at_utc": "2026-08-10T05:30:07.709780+00:00"
+      "seen_at_utc": "2026-08-10T05:51:28.055883+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T05:30:07.709899+00:00"
+  "updated_at_utc": "2026-08-10T05:51:28.056034+00:00"
 }
