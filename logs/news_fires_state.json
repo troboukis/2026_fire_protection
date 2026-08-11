@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564396205/sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/",
-      "title": "Σύγκρουση δύο τουριστικών σκαφών στους Αντίπαξους",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΣΚΑΦΩΝ ΣΤΟΥΣ ΑΝΤΙΠΑΞΟΥΣ",
+      "url": "https://www.kathimerini.gr/world/564396274/medoyses-ekleisan-xana-pyriniko-stathmo-sti-gallia/",
+      "title": "Μέδουσες «έκλεισαν» ξανά πυρηνικό σταθμό στη Γαλλία",
+      "normalized_title": "ΜΕΔΟΥΣΕΣ «ΕΚΛΕΙΣΑΝ» ΞΑΝΑ ΠΥΡΗΝΙΚΟ ΣΤΑΘΜΟ ΣΤΗ ΓΑΛΛΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564396205/sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/"
+        "https://www.kathimerini.gr/world/564396274/medoyses-ekleisan-xana-pyriniko-stathmo-sti-gallia/",
+        "https://www.kathimerini.gr/life/auto/564396271/nissan-240-rs-amp-gtir-polyergaleia/"
       ],
-      "seen_at_utc": "2026-08-11T14:30:08.867117+00:00"
+      "seen_at_utc": "2026-08-11T14:51:30.402028+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863587/sugrousi-duo-touristikon-skafon-sto-voutoumi-adipaxon-treis-epivates-sto-kedro-ugeias/?utm_source=rss",
-      "title": "Σύγκρουση δύο τουριστικών σκαφών στο Βουτούμι Αντιπάξων, τρεις επιβάτες στο Κέντρο Υγείας",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΣΚΑΦΩΝ ΣΤΟ ΒΟΥΤΟΥΜΙ ΑΝΤΙΠΑΞΩΝ, ΤΡΕΙΣ ΕΠΙΒΑΤΕΣ ΣΤΟ ΚΕΝΤΡΟ ΥΓΕΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1863592/kare-kare-i-stigmi-pou-o-33hronos-katevainei-me-shoini-upo-tin-epivlepsi-drone-vraho-20-metron-sti-milo-deite-video/?utm_source=rss",
+      "title": "Καρέ καρέ η στιγμή που ο 33χρονος κατεβαίνει με σχοινί από τον βράχο 20 μέτρων στη Μήλο υπό την επίβλεψη drone, δείτε βίντεο",
+      "normalized_title": "ΚΑΡΕ ΚΑΡΕ Η ΣΤΙΓΜΗ ΠΟΥ Ο 33ΧΡΟΝΟΣ ΚΑΤΕΒΑΙΝΕΙ ΜΕ ΣΧΟΙΝΙ ΑΠΟ ΤΟΝ ΒΡΑΧΟ 20 ΜΕΤΡΩΝ ΣΤΗ ΜΗΛΟ ΥΠΟ ΤΗΝ ΕΠΙΒΛΕΨΗ DRONE, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863587/sugrousi-duo-touristikon-skafon-sto-voutoumi-adipaxon-treis-epivates-sto-kedro-ugeias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863581/eidiko-horotaxiko-gia-ton-tourismo-ti-allazei-se-xenodoheia-ektos-shediou-domisi-nisia-kai-vrahuhronies-misthoseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863592/kare-kare-i-stigmi-pou-o-33hronos-katevainei-me-shoini-upo-tin-epivlepsi-drone-vraho-20-metron-sti-milo-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T14:17:10.232694+00:00"
+      "seen_at_utc": "2026-08-11T14:51:30.402134+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446030/axios-mystiki-symfonia-ipa-me-syria-kai-israil-gia-kryfi-pyriniki-topothesia-tis-epohis-asant/",
-      "title": "Axios: Μυστική συμφωνία ΗΠΑ με Συρία και Ισραήλ για κρυφή πυρηνική τοποθεσία της εποχής Άσαντ",
-      "normalized_title": "AXIOS: ΜΥΣΤΙΚΗ ΣΥΜΦΩΝΙΑ ΗΠΑ ΜΕ ΣΥΡΙΑ ΚΑΙ ΙΣΡΑΗΛ ΓΙΑ ΚΡΥΦΗ ΠΥΡΗΝΙΚΗ ΤΟΠΟΘΕΣΙΑ ΤΗΣ ΕΠΟΧΗΣ ΑΣΑΝΤ",
+      "url": "https://www.efsyn.gr/kosmos/1446060/ta-skylia-mporoyn-na-diakrinoyn-synaisthimata-sta-prosopa-anthropon-symfona-me-meleti/",
+      "title": "Τα σκυλιά μπορούν να διακρίνουν συναισθήματα στα πρόσωπα ανθρώπων, σύμφωνα με μελέτη",
+      "normalized_title": "ΤΑ ΣΚΥΛΙΑ ΜΠΟΡΟΥΝ ΝΑ ΔΙΑΚΡΙΝΟΥΝ ΣΥΝΑΙΣΘΗΜΑΤΑ ΣΤΑ ΠΡΟΣΩΠΑ ΑΝΘΡΩΠΩΝ, ΣΥΜΦΩΝΑ ΜΕ ΜΕΛΕΤΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446030/axios-mystiki-symfonia-ipa-me-syria-kai-israil-gia-kryfi-pyriniki-topothesia-tis-epohis-asant/",
-        "https://www.efsyn.gr/kosmos/1446037/letonia-entopistike-siragga-kato-apo-ta-synora-me-ti-leykorosia-gia-metakinisi-metanaston/"
+        "https://www.efsyn.gr/kosmos/1446060/ta-skylia-mporoyn-na-diakrinoyn-synaisthimata-sta-prosopa-anthropon-symfona-me-meleti/",
+        "https://www.efsyn.gr/ellada/1446065/pyrkagia-stin-orofi-toy-1oy-gymnasioy-artemidas-vinteo/",
+        "https://www.efsyn.gr/oikonomia/1446058/eidiko-horotaxiko-gia-ton-toyrismo-ti-allazei-se-ependyseis-ektos-shedioy-domisi-nisia-kai-parakties-periohes/"
       ],
-      "seen_at_utc": "2026-08-11T14:30:08.867223+00:00"
+      "seen_at_utc": "2026-08-11T14:51:30.402104+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/othersports/giati-i-nea-genia-tou-ellinikou-stivou-mas-gemizei-aisiodoksia-kai-elpides-gia-spoudaies-diakriseis/",
-      "title": "Γιατί η νέα γενιά του ελληνικού στίβου μας γεμίζει αισιοδοξία και ελπίδες για σπουδαίες διακρίσεις",
-      "normalized_title": "ΓΙΑΤΙ Η ΝΕΑ ΓΕΝΙΑ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΣΤΙΒΟΥ ΜΑΣ ΓΕΜΙΖΕΙ ΑΙΣΙΟΔΟΞΙΑ ΚΑΙ ΕΛΠΙΔΕΣ ΓΙΑ ΣΠΟΥΔΑΙΕΣ ΔΙΑΚΡΙΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/11/politics/epikairotita/kke-entelos-apokroustiki-i-antiparathesi-kyvernisis-mitsotaki-pasok-kommatos-tsipra/",
+      "title": "ΚΚΕ: Εντελώς αποκρουστική η αντιπαράθεση κυβέρνησης Μητσοτάκη, ΠΑΣΟΚ, κόμματος Τσίπρα",
+      "normalized_title": "ΚΚΕ: ΕΝΤΕΛΩΣ ΑΠΟΚΡΟΥΣΤΙΚΗ Η ΑΝΤΙΠΑΡΑΘΕΣΗ ΚΥΒΕΡΝΗΣΗΣ ΜΗΤΣΟΤΑΚΗ, ΠΑΣΟΚ, ΚΟΜΜΑΤΟΣ ΤΣΙΠΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/othersports/giati-i-nea-genia-tou-ellinikou-stivou-mas-gemizei-aisiodoksia-kai-elpides-gia-spoudaies-diakriseis/"
+        "https://www.in.gr/2026/08/11/politics/epikairotita/kke-entelos-apokroustiki-i-antiparathesi-kyvernisis-mitsotaki-pasok-kommatos-tsipra/",
+        "https://www.in.gr/2026/08/11/in-science/episthmes/nea-meleti-ta-skylia-mporoun-na-diakrinoun-synaisthimata-sta-prosopa-anthropon/",
+        "https://www.in.gr/2026/08/11/economy/diethnis-oikonomia/i-oikonomia-tis-skias/",
+        "https://www.in.gr/2026/08/11/greece/sto-nosokomeio-o-kyriakos-mitsotakis-meta-apo-atyxima-me-to-podilato-sta-xania/",
+        "https://www.in.gr/2026/08/11/greece/kilkis-ektroxiasmos-vagoniou-trenou-pou-metefere-kaysima-stin-eidomeni/",
+        "https://www.in.gr/2026/08/11/politics/politiki-grammateia/elas-kalesma-stin-kyvernisi-gia-amesi-apostoli-voitheias-stin-pligeisa-apo-ton-seismo-kolomvia/",
+        "https://www.in.gr/2026/08/11/world/ipa-kai-iran-einai-konta-se-kapoiou-eidous-dieythetisi-leei-o-pakistanos-ypourgos-amynas/",
+        "https://www.in.gr/2026/08/11/greece/fotia-sto-1o-gymnasio-artemidas/",
+        "https://www.in.gr/2026/08/11/greece/andras-o-apanthrakomenos-pou-entopistike-sta-spata-ereynes-apo-to-anakritiko-tis-pyrosvestikis/",
+        "https://www.in.gr/2026/08/11/sports/on-field/to-palati-tou-salax-stin-tourkia/",
+        "https://www.in.gr/2026/08/11/life/culture-live/eixe-xarti-o-odysseas-arxaioi-geografoi-kai-oi-sygxronoi-ereynites-anazitoun-apantisi/"
       ],
-      "seen_at_utc": "2026-08-11T14:30:08.867174+00:00"
+      "seen_at_utc": "2026-08-11T14:51:30.402079+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T14:30:08.867296+00:00"
+  "updated_at_utc": "2026-08-11T14:51:30.402210+00:00"
 }
