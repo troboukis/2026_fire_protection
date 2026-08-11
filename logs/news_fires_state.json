@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564395284/i-kina-saronei-stin-agora-anthropoeidon-rompot/",
-      "title": "Η Κίνα σαρώνει στην αγορά ανθρωποειδών ρομπότ",
-      "normalized_title": "Η ΚΙΝΑ ΣΑΡΩΝΕΙ ΣΤΗΝ ΑΓΟΡΑ ΑΝΘΡΩΠΟΕΙΔΩΝ ΡΟΜΠΟΤ",
+      "url": "https://www.kathimerini.gr/economy/564395572/sta-3-5-disekatommyria-eyro-oi-lixiprothesmes-ypochreoseis-toy-dimosioy-se-idiotes/",
+      "title": "Στα 3,5 δισεκατομμύρια ευρώ οι ληξιπρόθεσμες υποχρεώσεις του δημοσίου σε ιδιώτες",
+      "normalized_title": "ΣΤΑ 3,5 ΔΙΣΕΚΑΤΟΜΜΥΡΙΑ ΕΥΡΩ ΟΙ ΛΗΞΙΠΡΟΘΕΣΜΕΣ ΥΠΟΧΡΕΩΣΕΙΣ ΤΟΥ ΔΗΜΟΣΙΟΥ ΣΕ ΙΔΙΩΤΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564395284/i-kina-saronei-stin-agora-anthropoeidon-rompot/",
-        "https://www.kathimerini.gr/world/564395530/i-aithalomichli-apo-tis-terasties-foties-pnigei-tin-indonisia/",
-        "https://www.kathimerini.gr/society/564394921/enstaseis-apo-ton-isa-gia-to-psifiako-apothetirio/",
-        "https://www.kathimerini.gr/opinion/564395014/to-rebranding-mpike-sti-zoi-mas/"
+        "https://www.kathimerini.gr/economy/564395572/sta-3-5-disekatommyria-eyro-oi-lixiprothesmes-ypochreoseis-toy-dimosioy-se-idiotes/",
+        "https://www.kathimerini.gr/society/564395554/patra-ektos-kindynoy-to-2-5-eton-paidi-poy-epese-apo-mpalkoni-i-katastasi-tis-ygeias-toy/",
+        "https://www.kathimerini.gr/visual/infographics/564395242/i-perifereia-epestrepse-stin-agora-omologon-tis-eyrozonis/",
+        "https://www.kathimerini.gr/economy/business/564395266/prostheti-reystotita-49-35-ekat-exasfalise-i-fourlis-symmetochon/",
+        "https://www.kathimerini.gr/world/564395545/oi-10-pio-fonikoi-seismoi-sti-latiniki-ameriki/"
       ],
-      "seen_at_utc": "2026-08-11T05:51:27.408295+00:00"
+      "seen_at_utc": "2026-08-11T06:17:13.604625+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,39 +1263,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863313/tautopoiithike-o-38hronos-voulgaros-gia-tin-katadioxi-apo-tin-korintho-eos-to-adirrio-eihe-emvolisei-kai-peripolika/?utm_source=rss",
-      "title": "Ταυτοποιήθηκε 38χρονος Βούλγαρος για την καταδίωξη από την Κόρινθο έως το Αντίρριο, είχε εμβολίσει και περιπολικά",
-      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ 38ΧΡΟΝΟΣ ΒΟΥΛΓΑΡΟΣ ΓΙΑ ΤΗΝ ΚΑΤΑΔΙΩΞΗ ΑΠΟ ΤΗΝ ΚΟΡΙΝΘΟ ΕΩΣ ΤΟ ΑΝΤΙΡΡΙΟ, ΕΙΧΕ ΕΜΒΟΛΙΣΕΙ ΚΑΙ ΠΕΡΙΠΟΛΙΚΑ",
+      "url": "https://www.protothema.gr/greece/article/1863354/giati-o-dekapedaugoustos-onomazetai-pasha-tou-kalokairiou/?utm_source=rss",
+      "title": "Γιατί ο Δεκαπενταύγουστος ονομάζεται «Πάσχα του καλοκαιριού»",
+      "normalized_title": "ΓΙΑΤΙ Ο ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΣ ΟΝΟΜΑΖΕΤΑΙ «ΠΑΣΧΑ ΤΟΥ ΚΑΛΟΚΑΙΡΙΟΥ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863313/tautopoiithike-o-38hronos-voulgaros-gia-tin-katadioxi-apo-tin-korintho-eos-to-adirrio-eihe-emvolisei-kai-peripolika/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863354/giati-o-dekapedaugoustos-onomazetai-pasha-tou-kalokairiou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863352/koropi-treis-koukouloforoi-htupisan-mezoneta-oso-i-oikogeneia-apousiaze-piran-hrusafika-15000-euro-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863340/therino-orario-sta-mmm-pos-kinoudai-ton-augousto-metro-isap-tram-kai-leoforeia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863335/pos-na-noikiasete-sosta-to-akinito-sas-fetos-ton-septemvrio-6-vimata-prin-paradosete-ta-kleidia-odigos-gia-idioktites/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863334/30-hronia-apo-tis-dolofonies-isaak-kai-solomou-tous-skotosan-brosta-stis-kameres-oi-drastes-den-dikastikan-pote/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T05:30:12.504407+00:00"
+      "seen_at_utc": "2026-08-11T06:17:13.604750+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1445664/apo-to-misthotirio-mehri-ta-kleidia-o-odigos-14-simeion-gia-mia-asfali-enoikiasi/",
-      "title": "Από το μισθωτήριο μέχρι τα κλειδιά: Ο οδηγός 14 σημείων για μια ασφαλή ενοικίαση",
-      "normalized_title": "ΑΠΟ ΤΟ ΜΙΣΘΩΤΗΡΙΟ ΜΕΧΡΙ ΤΑ ΚΛΕΙΔΙΑ: Ο ΟΔΗΓΟΣ 14 ΣΗΜΕΙΩΝ ΓΙΑ ΜΙΑ ΑΣΦΑΛΗ ΕΝΟΙΚΙΑΣΗ",
+      "url": "https://www.efsyn.gr/nisides/1445321/anamesa-sto-vioma-kai-to-taxidi/",
+      "title": "Ανάμεσα στο βίωμα και το ταξίδι",
+      "normalized_title": "ΑΝΑΜΕΣΑ ΣΤΟ ΒΙΩΜΑ ΚΑΙ ΤΟ ΤΑΞΙΔΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1445664/apo-to-misthotirio-mehri-ta-kleidia-o-odigos-14-simeion-gia-mia-asfali-enoikiasi/",
-        "https://www.efsyn.gr/politiki/1445671/anevazei-tonoys-to-pasok-kata-toy-tsipra/",
-        "https://www.efsyn.gr/politiki/1445667/ta-eyloga-erotimata-poy-genna-i-kataggelia-mpenoy/",
-        "https://www.efsyn.gr/politiki/1445661/venizeleio-oi-exaggelies-mporei-na-stekontai-orthies-oi-orofes-ohi-panta/"
+        "https://www.efsyn.gr/nisides/1445321/anamesa-sto-vioma-kai-to-taxidi/",
+        "https://www.efsyn.gr/nisides/1445298/gaia-gaia-fysi-anthropos-mia-traymatismeni-shesi/",
+        "https://www.efsyn.gr/ellada/1445638/epohikoi-pyrosvestes-vgainoyn-stoys-dromoys-mesa-stin-antipyriki-periodo-epomenos-stathmos-to-maximoy/",
+        "https://www.efsyn.gr/ellada/1445645/agios-dimitrios-mystirio-me-ton-thanato-toy-astynomikoy-mesa-se-epiheirisiako-ohima-ti-exetazoyn-oi-arhes/",
+        "https://www.efsyn.gr/kosmos/1445628/nea-antiparathesi-romis-verolinoy-gia-to-metanasteytiko-epistrofes-pros-italia-kai-ellada-thelei-o-merts/"
       ],
-      "seen_at_utc": "2026-08-11T05:51:27.408425+00:00"
+      "seen_at_utc": "2026-08-11T06:17:13.604692+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/tramp-allakse-mystika-aeroskafos-feygontas-apo-ti-synodo-tou-nato-eksaitias-apeilon-tou-iran/",
-      "title": "Ο Τραμπ άλλαξε «μυστικά» αεροσκάφος φεύγοντας από τη Σύνοδο του ΝΑΤΟ εξαιτίας απειλών του Ιράν",
-      "normalized_title": "Ο ΤΡΑΜΠ ΑΛΛΑΞΕ «ΜΥΣΤΙΚΑ» ΑΕΡΟΣΚΑΦΟΣ ΦΕΥΓΟΝΤΑΣ ΑΠΟ ΤΗ ΣΥΝΟΔΟ ΤΟΥ ΝΑΤΟ ΕΞΑΙΤΙΑΣ ΑΠΕΙΛΩΝ ΤΟΥ ΙΡΑΝ",
+      "url": "https://www.in.gr/2026/08/11/greece/pyrosvestes-posous-exei-i-ellada/",
+      "title": "Πόσους πυροσβέστες έχει η Ελλάδα;",
+      "normalized_title": "ΠΟΣΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ ΕΧΕΙ Η ΕΛΛΑΔΑ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/tramp-allakse-mystika-aeroskafos-feygontas-apo-ti-synodo-tou-nato-eksaitias-apeilon-tou-iran/",
-        "https://www.in.gr/2026/08/11/go-fun/fizz/mprant-pit-apokalyptei-tis-taseis-aytoktonias-meta-to-diazygio-me-tin-tzoli/",
-        "https://www.in.gr/2026/08/11/world/livyi-vomva-skotose-ton-epikefalis-tis-ypiresias-pliroforion-tou-xaftar/",
-        "https://www.in.gr/2026/08/11/politics/paraskinio/koutsoumpas-xorepse-zeimpekiko-me-tin-famprika-tou-laki-xalkia-se-sygkentrosi-tou-kke/",
-        "https://www.in.gr/2026/08/11/editorial/meta-apo-mia-oktaetia-mia-kyvernisi-krinetai-apo-to-ergo-tis-kai-oxi-tis-yposxeseis-tis/"
+        "https://www.in.gr/2026/08/11/greece/pyrosvestes-posous-exei-i-ellada/",
+        "https://www.in.gr/2026/08/11/sports/football/conference-league/me-tin-tsska-1948-o-panathinaikos-gia-na-meinei-zontanos-sto-conference-league/",
+        "https://www.in.gr/2026/08/11/in-science/perivallon-b-science/kina-poia-poli-ensomatonei-metra-prosarmogis-sti-zesti-ston-poleodomiko-sxediasmo-tis/",
+        "https://www.in.gr/2026/08/11/economy/katotatos-misthos-oi-onomastikes-ayksiseis-den-aggizoun-to-meso-mistho/",
+        "https://www.in.gr/2026/08/11/go-fun/fizz/thrinos-apoleia-monaksia-o-mprant-pit-spaei-ti-siopi-tou-gia-ton-thanato-tis-miteras-tou-enan-xrono-meta/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/apovasi-tourkon-touriston-sta-ellinika-nisia/",
+        "https://www.in.gr/2026/08/11/sports/football/champions-league/stin-ollandia-kontra-sti-naimegken-gia-tin-prokrisi-sta-playoffs-o-olympiakos/"
       ],
-      "seen_at_utc": "2026-08-11T05:51:27.408385+00:00"
+      "seen_at_utc": "2026-08-11T06:17:13.604659+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T05:51:27.408519+00:00"
+  "updated_at_utc": "2026-08-11T06:17:13.604824+00:00"
 }
