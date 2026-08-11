@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564396037/iran-o-motztampa-chamene-prochorise-se-allages-koryfis-etoimazetai-gia-paratetameni-sygkroysi/",
-      "title": "Ιράν: Ο Μοτζτάμπα Χαμενεΐ προχώρησε σε αλλαγές κορυφής – Ετοιμάζεται για παρατεταμένη σύγκρουση",
-      "normalized_title": "ΙΡΑΝ: Ο ΜΟΤΖΤΑΜΠΑ ΧΑΜΕΝΕΙ ΠΡΟΧΩΡΗΣΕ ΣΕ ΑΛΛΑΓΕΣ ΚΟΡΥΦΗΣ – ΕΤΟΙΜΑΖΕΤΑΙ ΓΙΑ ΠΑΡΑΤΕΤΑΜΕΝΗ ΣΥΓΚΡΟΥΣΗ",
+      "url": "https://www.kathimerini.gr/world/564396070/sto-fos-aporrita-minymata-toy-faoytsi-gia-tin-asfaleia-ton-emvolion-kata-toy-covid-stin-egkymosyni/",
+      "title": "Στο φως απόρρητα μηνύματα του Φάουτσι για την ασφάλεια των εμβολίων κατά του Covid στην εγκυμοσύνη",
+      "normalized_title": "ΣΤΟ ΦΩΣ ΑΠΟΡΡΗΤΑ ΜΗΝΥΜΑΤΑ ΤΟΥ ΦΑΟΥΤΣΙ ΓΙΑ ΤΗΝ ΑΣΦΑΛΕΙΑ ΤΩΝ ΕΜΒΟΛΙΩΝ ΚΑΤΑ ΤΟΥ COVID ΣΤΗΝ ΕΓΚΥΜΟΣΥΝΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564396037/iran-o-motztampa-chamene-prochorise-se-allages-koryfis-etoimazetai-gia-paratetameni-sygkroysi/",
-        "https://www.kathimerini.gr/world/564396049/livanos-katargithike-i-thanatiki-poini-me-istoriki-psifoforia-sti-voyli/",
-        "https://www.kathimerini.gr/society/564391525/arthro-ioanni-p-troygkakoy-stin-k-ti-den-kaname-meta-to-2021/"
+        "https://www.kathimerini.gr/world/564396070/sto-fos-aporrita-minymata-toy-faoytsi-gia-tin-asfaleia-ton-emvolion-kata-toy-covid-stin-egkymosyni/",
+        "https://www.kathimerini.gr/society/564396055/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-tetarti-se-epifylaki-exi-perifereies/",
+        "https://www.kathimerini.gr/politics/government/564394894/ta-gkalop-krinoyn-paroches-kai-kalpes/"
       ],
-      "seen_at_utc": "2026-08-11T11:30:24.776202+00:00"
+      "seen_at_utc": "2026-08-11T11:51:20.812139+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863513/fotia-tora-se-garaz-polukatoikias-sto-elliniko/?utm_source=rss",
-      "title": "Φωτιά σε γκαράζ πολυκατοικίας στο Ελληνικό",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΓΚΑΡΑΖ ΠΟΛΥΚΑΤΟΙΚΙΑΣ ΣΤΟ ΕΛΛΗΝΙΚΟ",
+      "url": "https://www.protothema.gr/greece/article/1863526/nekros-sto-spiti-tou-vrethike-48hronos-stin-halkidiki/?utm_source=rss",
+      "title": "Νεκρός στο σπίτι του βρέθηκε 48χρονος στην Χαλκιδική",
+      "normalized_title": "ΝΕΚΡΟΣ ΣΤΟ ΣΠΙΤΙ ΤΟΥ ΒΡΕΘΗΚΕ 48ΧΡΟΝΟΣ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863513/fotia-tora-se-garaz-polukatoikias-sto-elliniko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863511/sunagermos-ston-kolpo-tou-oman-epithesi-me-elikoptero-se-containership-fotia-sto-mihanostasio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863526/nekros-sto-spiti-tou-vrethike-48hronos-stin-halkidiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863524/polu-upsilos-kindunos-purkagias-aurio-128-se-attiki-peloponniso-sterea-aigaio-kai-anatoliki-makedonia-kai-thraki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T11:17:32.624426+00:00"
+      "seen_at_utc": "2026-08-11T11:51:20.812293+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445853/politico-to-gerasmeno-diktyo-tis-elladas-piso-apo-tis-pio-katastrofikes-pyrkagies-i-apantisi-toy-deddie/",
-      "title": "Politico: Το γερασμένο δίκτυο της Ελλάδας πίσω από τις πιο καταστροφικές πυρκαγιές – Η απάντηση του ΔΕΔΔΗΕ",
-      "normalized_title": "POLITICO: ΤΟ ΓΕΡΑΣΜΕΝΟ ΔΙΚΤΥΟ ΤΗΣ ΕΛΛΑΔΑΣ ΠΙΣΩ ΑΠΟ ΤΙΣ ΠΙΟ ΚΑΤΑΣΤΡΟΦΙΚΕΣ ΠΥΡΚΑΓΙΕΣ – Η ΑΠΑΝΤΗΣΗ ΤΟΥ ΔΕΔΔΗΕ",
+      "url": "https://www.efsyn.gr/politiki/1445915/gkara-gia-to-protoselido-tis-ef-syn-tragikes-oi-synepeies-apo-tis-politikes-tis-n-d-o-evros-hreiazetai-pragmatiki-stirixi/",
+      "title": "Γκαρά μετά το πρωτοσέλιδο της «Εφ.Συν.»: Τραγικές οι συνέπειες από τις πολιτικές της Ν.Δ. – Ο Έβρος χρειάζεται πραγματική στήριξη",
+      "normalized_title": "ΓΚΑΡΑ ΜΕΤΑ ΤΟ ΠΡΩΤΟΣΕΛΙΔΟ ΤΗΣ «ΕΦ.ΣΥΝ.»: ΤΡΑΓΙΚΕΣ ΟΙ ΣΥΝΕΠΕΙΕΣ ΑΠΟ ΤΙΣ ΠΟΛΙΤΙΚΕΣ ΤΗΣ Ν.Δ. – Ο ΕΒΡΟΣ ΧΡΕΙΑΖΕΤΑΙ ΠΡΑΓΜΑΤΙΚΗ ΣΤΗΡΙΞΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445853/politico-to-gerasmeno-diktyo-tis-elladas-piso-apo-tis-pio-katastrofikes-pyrkagies-i-apantisi-toy-deddie/"
+        "https://www.efsyn.gr/politiki/1445915/gkara-gia-to-protoselido-tis-ef-syn-tragikes-oi-synepeies-apo-tis-politikes-tis-n-d-o-evros-hreiazetai-pragmatiki-stirixi/",
+        "https://www.efsyn.gr/oikonomia/1445905/nea-ayxisi-stin-timi-toy-petrelaioy-oso-apomakrynetai-to-anoigma-toy-ormoyz-sta-89-dolaria-to-vareli/"
       ],
-      "seen_at_utc": "2026-08-11T11:30:24.776273+00:00"
+      "seen_at_utc": "2026-08-11T11:51:20.812265+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/football/kontis-einai-ena-tropaio-kai-prepei-na-dosoume-ta-panta/",
-      "title": "Κόντης: «Είναι ένα τρόπαιο και πρέπει να δώσουμε τα πάντα»",
-      "normalized_title": "ΚΟΝΤΗΣ: «ΕΙΝΑΙ ΕΝΑ ΤΡΟΠΑΙΟ ΚΑΙ ΠΡΕΠΕΙ ΝΑ ΔΩΣΟΥΜΕ ΤΑ ΠΑΝΤΑ»",
+      "url": "https://www.in.gr/2026/08/11/sports/othersports/eyropaiko-stivou-ston-teliko-tou-ypsous-merlos-kai-mita-vids/",
+      "title": "Ευρωπαϊκό Στίβου: Στον τελικό του ύψους Μέρλος και Μίτα (vids)",
+      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΥΨΟΥΣ ΜΕΡΛΟΣ ΚΑΙ ΜΙΤΑ (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/football/kontis-einai-ena-tropaio-kai-prepei-na-dosoume-ta-panta/",
-        "https://www.in.gr/2026/08/11/greece/fotia-se-polykatoikia-stin-argyroupoli/"
+        "https://www.in.gr/2026/08/11/sports/othersports/eyropaiko-stivou-ston-teliko-tou-ypsous-merlos-kai-mita-vids/",
+        "https://www.in.gr/2026/08/11/greece/voucher-paidikon-stathmon-anoikse-i-platforma-gia-tis-enstaseis/",
+        "https://www.in.gr/2026/08/11/world/petrelaio-ayksanetai-i-timi-tou-meta-tis-asymvates-apaitiseis-pou-ekfrazoun-ipa-kai-iran/",
+        "https://www.in.gr/2026/08/11/go-fun/fizz/anthi-voulgari-oi-eikones-me-ta-aloga-sti-lesvo-pou-prokalesan-to-ksespasma-tis/"
       ],
-      "seen_at_utc": "2026-08-11T11:30:24.776243+00:00"
+      "seen_at_utc": "2026-08-11T11:51:20.812202+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T11:30:24.776353+00:00"
+  "updated_at_utc": "2026-08-11T11:51:20.812383+00:00"
 }
