@@ -1,18 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564395287/apovasi-24-ekat-amerikanon-toyriston-stin-eyropi-to-2025/",
-      "title": "«Απόβαση» 24 εκατ. Αμερικανών τουριστών στην Ευρώπη το 2025",
-      "normalized_title": "«ΑΠΟΒΑΣΗ» 24 ΕΚΑΤ. ΑΜΕΡΙΚΑΝΩΝ ΤΟΥΡΙΣΤΩΝ ΣΤΗΝ ΕΥΡΩΠΗ ΤΟ 2025",
+      "url": "https://www.kathimerini.gr/world/564395896/se-synagermo-to-oman-gia-to-caroline-bezengi-fovoi-gia-katastrofi-an-to-tanker-spasei/",
+      "title": "Σε συναγερμό το Ομάν για το «Caroline Bezengi» – Φόβοι για καταστροφή αν το τάνκερ «σπάσει»",
+      "normalized_title": "ΣΕ ΣΥΝΑΓΕΡΜΟ ΤΟ ΟΜΑΝ ΓΙΑ ΤΟ «CAROLINE BEZENGI» – ΦΟΒΟΙ ΓΙΑ ΚΑΤΑΣΤΡΟΦΗ ΑΝ ΤΟ ΤΑΝΚΕΡ «ΣΠΑΣΕΙ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564395287/apovasi-24-ekat-amerikanon-toyriston-stin-eyropi-to-2025/",
-        "https://www.kathimerini.gr/society/564391519/o-daidalos-ton-misthomenon-enaerion-meson/",
-        "https://www.kathimerini.gr/society/564395839/aigialeia-cheiropedes-se-mitera-poy-chtypoyse-to-6chrono-paidi-tis-se-paralia/",
-        "https://www.kathimerini.gr/culture/564391309/epidayros-proti-fora-gia-oloys/",
-        "https://www.kathimerini.gr/world/564394978/anisychia-gia-mplak-aoyt-enopsei-tis-ekleipsis-ilioy/",
-        "https://www.kathimerini.gr/athletics/564395818/ethniki-mpasket-i-anakoinosi-tis-eok-gia-tin-apoysia-toy-gianni-antetokoynmpo-apo-tis-kliseis/"
+        "https://www.kathimerini.gr/world/564395896/se-synagermo-to-oman-gia-to-caroline-bezengi-fovoi-gia-katastrofi-an-to-tanker-spasei/",
+        "https://www.kathimerini.gr/world/564395893/syria-o-proin-proedros-mpasar-al-asant-katadikastike-erimin-se-thanato/",
+        "https://www.kathimerini.gr/world/564395812/elpida-sta-syntrimmia-i-stigmi-diasosis-enos-vrefoys-exi-minon-meta-ton-seismo-stin-kolomvia/",
+        "https://www.kathimerini.gr/society/564395845/stin-kykloforia-i-nea-gefyra-sti-leoforo-ethnarchoy-makarioy-sto-ypsos-toy-ilissoy-potamoy/",
+        "https://www.kathimerini.gr/politics/564395866/al-tsipras-i-elas-stis-deyteres-ekloges-mporei-na-einai-proto-komma/"
       ],
-      "seen_at_utc": "2026-08-11T08:51:24.018294+00:00"
+      "seen_at_utc": "2026-08-11T09:17:06.118232+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1275,27 +1274,33 @@
       "seen_at_utc": "2026-08-11T08:17:12.912161+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445772/astynomiki-epiheirisi-sti-mykono-katashethikan-pano-apo-5-kila-narkotikon-synelifthisan-dyo-23hronoi/",
-      "title": "Αστυνομική επιχείρηση στη Μύκονο: Κατασχέθηκαν πάνω από 5 κιλά ναρκωτικών – Συνελήφθησαν δύο 23χρονοι",
-      "normalized_title": "ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΗ ΜΥΚΟΝΟ: ΚΑΤΑΣΧΕΘΗΚΑΝ ΠΑΝΩ ΑΠΟ 5 ΚΙΛΑ ΝΑΡΚΩΤΙΚΩΝ – ΣΥΝΕΛΗΦΘΗΣΑΝ ΔΥΟ 23ΧΡΟΝΟΙ",
+      "url": "https://www.efsyn.gr/ellada/1445818/trohaio-sto-irakleio-ih-kinithike-sto-antitheto-reyma-kai-sygkroystike-me-allo-aytokinito/",
+      "title": "Τροχαίο στο Ηράκλειο: ΙΧ κινήθηκε στο αντίθετο ρεύμα και συγκρούστηκε με άλλο αυτοκίνητο",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΟ ΗΡΑΚΛΕΙΟ: ΙΧ ΚΙΝΗΘΗΚΕ ΣΤΟ ΑΝΤΙΘΕΤΟ ΡΕΥΜΑ ΚΑΙ ΣΥΓΚΡΟΥΣΤΗΚΕ ΜΕ ΑΛΛΟ ΑΥΤΟΚΙΝΗΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445772/astynomiki-epiheirisi-sti-mykono-katashethikan-pano-apo-5-kila-narkotikon-synelifthisan-dyo-23hronoi/",
-        "https://www.efsyn.gr/athlitismos/1445709/fifa-anoihti-epistoli-anoihtos-polemos/"
+        "https://www.efsyn.gr/ellada/1445818/trohaio-sto-irakleio-ih-kinithike-sto-antitheto-reyma-kai-sygkroystike-me-allo-aytokinito/",
+        "https://www.efsyn.gr/kosmos/1445812/ahtida-elpidas-stin-kolomvia-i-stigmi-toy-apegklovismoy-exi-minon-vrefoys-kai-tis-miteras-toy-vinteo/",
+        "https://www.efsyn.gr/ellada/1445753/dolofonia-tragoydisti-stin-karditsa-katadikastike-se-okto-hronia-fylakisis-o-17hronos/",
+        "https://www.efsyn.gr/oikonomia/1445797/dei-apokta-to-prime-status-tis-iss-stoxx-me-nea-anavathmisi-stin-axiologisi-esg/",
+        "https://www.efsyn.gr/life/1445793/mprant-pit-eniotha-to-kryo-atsali-tis-sfairas-sto-kefali-moy-oi-taseis-aytoktonias-meta-ton-horismo-me-tin-tzoli/",
+        "https://www.efsyn.gr/ellada/1445794/agios-dimitrios-ti-deihnei-i-arhiki-exetasi-gia-ton-thanato-toy-astynomikoy-poy-estiazoyn-oi-arhes/"
       ],
-      "seen_at_utc": "2026-08-11T08:51:24.018420+00:00"
+      "seen_at_utc": "2026-08-11T09:17:06.118322+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/zelenski-i-mosxa-xrisimopoiise-vallistikous-pyraylous-apo-ti-voreia-korea-gia-tin-epithesi-sti-zaporizia/",
-      "title": "Ο Ζελένσκι κατηγορεί τη Μόσχα ότι χρησιμοποίησε βορειοκορεατικούς βαλλιστικούς πυραύλους για την επίθεση στη Ζαπορίζια",
-      "normalized_title": "Ο ΖΕΛΕΝΣΚΙ ΚΑΤΗΓΟΡΕΙ ΤΗ ΜΟΣΧΑ ΟΤΙ ΧΡΗΣΙΜΟΠΟΙΗΣΕ ΒΟΡΕΙΟΚΟΡΕΑΤΙΚΟΥΣ ΒΑΛΛΙΣΤΙΚΟΥΣ ΠΥΡΑΥΛΟΥΣ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ ΣΤΗ ΖΑΠΟΡΙΖΙΑ",
+      "url": "https://www.in.gr/2026/08/11/world/syria-ti-thanatiki-poini-epevale-dikastirio-ston-asant/",
+      "title": "Δικαστήριο στη Συρία αποφάσισε θανατική ποινή για τον Άσαντ - Καταδικάστηκε για εγκλήματα κατά της ανθρωπότητας",
+      "normalized_title": "ΔΙΚΑΣΤΗΡΙΟ ΣΤΗ ΣΥΡΙΑ ΑΠΟΦΑΣΙΣΕ ΘΑΝΑΤΙΚΗ ΠΟΙΝΗ ΓΙΑ ΤΟΝ ΑΣΑΝΤ - ΚΑΤΑΔΙΚΑΣΤΗΚΕ ΓΙΑ ΕΓΚΛΗΜΑΤΑ ΚΑΤΑ ΤΗΣ ΑΝΘΡΩΠΟΤΗΤΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/zelenski-i-mosxa-xrisimopoiise-vallistikous-pyraylous-apo-ti-voreia-korea-gia-tin-epithesi-sti-zaporizia/",
-        "https://www.in.gr/2026/08/11/economy/diethnis-oikonomia/emfragma-sta-aerodromia-tis-eyropis/",
-        "https://www.in.gr/2026/08/11/sports/basketball/euroleague/ispanika-mme-o-mirotits-einai-i-pio-fysiki-epilogi-gia-ton-olympiako/",
-        "https://www.in.gr/2026/08/11/istoriko-arxeio/stelios-ramfos-i-glossa-poreyetai-agkaliazontas-tous-nekrous-kai-tous-zontas/"
+        "https://www.in.gr/2026/08/11/world/syria-ti-thanatiki-poini-epevale-dikastirio-ston-asant/",
+        "https://www.in.gr/2026/08/11/sports/football/o-tramp-sto-pleyro-tou-infantino-tromero-lathos-an-antikatastathei-apo-ti-fifa/",
+        "https://www.in.gr/2026/08/11/greece/sovaro-troxaio-sto-irakleio-ix-kinountan-sto-antitheto-reyma-kykloforias-sygkroustike-metopika-me-dierxomeno-oxima/",
+        "https://www.in.gr/2026/08/11/world/seismos-kolomvia-diasosi-vrefous-apo-ta-syntrimmia-deite-vinteo/",
+        "https://www.in.gr/2026/08/11/life/culture-live/gkregk-araki-ola-ta-frikta-pragmata-pou-symvainoun-ston-kosmo-ofeilontai-sti-seksoualiki-katapiesi/",
+        "https://www.in.gr/2026/08/11/stories/xenti-lamar-i-sagineytiki-ntiva-tou-xoligount-pou-egine-i-giagia-tou-wi-fi/"
       ],
-      "seen_at_utc": "2026-08-11T08:51:24.018364+00:00"
+      "seen_at_utc": "2026-08-11T09:17:06.118289+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T08:51:24.018498+00:00"
+  "updated_at_utc": "2026-08-11T09:17:06.118395+00:00"
 }
