@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564396070/sto-fos-aporrita-minymata-toy-faoytsi-gia-tin-asfaleia-ton-emvolion-kata-toy-covid-stin-egkymosyni/",
-      "title": "Στο φως απόρρητα μηνύματα του Φάουτσι για την ασφάλεια των εμβολίων κατά του Covid στην εγκυμοσύνη",
-      "normalized_title": "ΣΤΟ ΦΩΣ ΑΠΟΡΡΗΤΑ ΜΗΝΥΜΑΤΑ ΤΟΥ ΦΑΟΥΤΣΙ ΓΙΑ ΤΗΝ ΑΣΦΑΛΕΙΑ ΤΩΝ ΕΜΒΟΛΙΩΝ ΚΑΤΑ ΤΟΥ COVID ΣΤΗΝ ΕΓΚΥΜΟΣΥΝΗ",
+      "url": "https://www.kathimerini.gr/world/564396088/sti-sigkapoyri-oi-70chronoi-kanoyn-parkoyr/",
+      "title": "Στη Σιγκαπούρη οι 70χρονοι κάνουν παρκούρ",
+      "normalized_title": "ΣΤΗ ΣΙΓΚΑΠΟΥΡΗ ΟΙ 70ΧΡΟΝΟΙ ΚΑΝΟΥΝ ΠΑΡΚΟΥΡ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564396070/sto-fos-aporrita-minymata-toy-faoytsi-gia-tin-asfaleia-ton-emvolion-kata-toy-covid-stin-egkymosyni/",
-        "https://www.kathimerini.gr/society/564396055/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-tetarti-se-epifylaki-exi-perifereies/",
-        "https://www.kathimerini.gr/politics/government/564394894/ta-gkalop-krinoyn-paroches-kai-kalpes/"
+        "https://www.kathimerini.gr/world/564396088/sti-sigkapoyri-oi-70chronoi-kanoyn-parkoyr/",
+        "https://www.kathimerini.gr/world/564396079/elvetia-i-kyvernisi-aporriptei-tin-aystiri-ermineia-tis-oydeterotitas/"
       ],
-      "seen_at_utc": "2026-08-11T11:51:20.812139+00:00"
+      "seen_at_utc": "2026-08-11T12:19:29.448410+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863526/nekros-sto-spiti-tou-vrethike-48hronos-stin-halkidiki/?utm_source=rss",
-      "title": "Νεκρός στο σπίτι του βρέθηκε 48χρονος στην Χαλκιδική",
-      "normalized_title": "ΝΕΚΡΟΣ ΣΤΟ ΣΠΙΤΙ ΤΟΥ ΒΡΕΘΗΚΕ 48ΧΡΟΝΟΣ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1863533/stis-toxikologikes-exetaseis-oi-apadiseis-gia-ton-thanato-tou-astunomikou-ston-agio-dimitrio-kleidi-oi-teleutaies-ores/?utm_source=rss",
+      "title": "Στις τοξικολογικές εξετάσεις οι απαντήσεις για τον θάνατο του αστυνομικού στον Άγιο Δημήτριο, στο μικροσκόπιο οι τελευταίες ώρες του 38χρονου",
+      "normalized_title": "ΣΤΙΣ ΤΟΞΙΚΟΛΟΓΙΚΕΣ ΕΞΕΤΑΣΕΙΣ ΟΙ ΑΠΑΝΤΗΣΕΙΣ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΑΣΤΥΝΟΜΙΚΟΥ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΩΡΕΣ ΤΟΥ 38ΧΡΟΝΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863526/nekros-sto-spiti-tou-vrethike-48hronos-stin-halkidiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863524/polu-upsilos-kindunos-purkagias-aurio-128-se-attiki-peloponniso-sterea-aigaio-kai-anatoliki-makedonia-kai-thraki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863533/stis-toxikologikes-exetaseis-oi-apadiseis-gia-ton-thanato-tou-astunomikou-ston-agio-dimitrio-kleidi-oi-teleutaies-ores/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863532/sunelifthisan-duo-meli-speiras-tilefonikon-apaton-sto-agrinio-prospoioudan-tous-logistes-xeperna-tis-40000-i-leia-tous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T11:51:20.812293+00:00"
+      "seen_at_utc": "2026-08-11T12:19:29.448501+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445915/gkara-gia-to-protoselido-tis-ef-syn-tragikes-oi-synepeies-apo-tis-politikes-tis-n-d-o-evros-hreiazetai-pragmatiki-stirixi/",
-      "title": "Γκαρά μετά το πρωτοσέλιδο της «Εφ.Συν.»: Τραγικές οι συνέπειες από τις πολιτικές της Ν.Δ. – Ο Έβρος χρειάζεται πραγματική στήριξη",
-      "normalized_title": "ΓΚΑΡΑ ΜΕΤΑ ΤΟ ΠΡΩΤΟΣΕΛΙΔΟ ΤΗΣ «ΕΦ.ΣΥΝ.»: ΤΡΑΓΙΚΕΣ ΟΙ ΣΥΝΕΠΕΙΕΣ ΑΠΟ ΤΙΣ ΠΟΛΙΤΙΚΕΣ ΤΗΣ Ν.Δ. – Ο ΕΒΡΟΣ ΧΡΕΙΑΖΕΤΑΙ ΠΡΑΓΜΑΤΙΚΗ ΣΤΗΡΙΞΗ",
+      "url": "https://www.efsyn.gr/kosmos/1445910/ipa-giati-vrethike-sti-sentra-o-faoytsi-sti-dimosiotita-hiliades-synomilies-gia-ta-emvolia-covid-se-egkyoys/",
+      "title": "ΗΠΑ: Γιατί βρέθηκε «στη σέντρα» ο Φάουτσι – Στη δημοσιότητα χιλιάδες συνομιλίες για τα εμβόλια Covid σε εγκύους",
+      "normalized_title": "ΗΠΑ: ΓΙΑΤΙ ΒΡΕΘΗΚΕ «ΣΤΗ ΣΕΝΤΡΑ» Ο ΦΑΟΥΤΣΙ – ΣΤΗ ΔΗΜΟΣΙΟΤΗΤΑ ΧΙΛΙΑΔΕΣ ΣΥΝΟΜΙΛΙΕΣ ΓΙΑ ΤΑ ΕΜΒΟΛΙΑ COVID ΣΕ ΕΓΚΥΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445915/gkara-gia-to-protoselido-tis-ef-syn-tragikes-oi-synepeies-apo-tis-politikes-tis-n-d-o-evros-hreiazetai-pragmatiki-stirixi/",
-        "https://www.efsyn.gr/oikonomia/1445905/nea-ayxisi-stin-timi-toy-petrelaioy-oso-apomakrynetai-to-anoigma-toy-ormoyz-sta-89-dolaria-to-vareli/"
+        "https://www.efsyn.gr/kosmos/1445910/ipa-giati-vrethike-sti-sentra-o-faoytsi-sti-dimosiotita-hiliades-synomilies-gia-ta-emvolia-covid-se-egkyoys/",
+        "https://www.efsyn.gr/politiki/1445928/pasok-gia-to-protoselido-tis-ef-syn-i-megali-koroidia-toy-maximoy-90-ligoteri-prostasia-ston-evro/",
+        "https://www.efsyn.gr/politiki/1445914/o-tsipras-gia-tis-sheseis-me-pasok-gia-emas-den-yparhei-ehthrotita-alla-antagonistes-eimaste/",
+        "https://www.efsyn.gr/stiles/1445930/paramythades-sto-maximoy/",
+        "https://www.efsyn.gr/ellada/1445918/poly-ypsilos-kindynos-pyrkagias-gia-tin-tetarti-poies-perifereies-mpainoyn-se-katastasi-synagermoy/"
       ],
-      "seen_at_utc": "2026-08-11T11:51:20.812265+00:00"
+      "seen_at_utc": "2026-08-11T12:19:29.448471+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/othersports/eyropaiko-stivou-ston-teliko-tou-ypsous-merlos-kai-mita-vids/",
-      "title": "Ευρωπαϊκό Στίβου: Στον τελικό του ύψους Μέρλος και Μίτα (vids)",
-      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΥΨΟΥΣ ΜΕΡΛΟΣ ΚΑΙ ΜΙΤΑ (VIDS)",
+      "url": "https://www.in.gr/2026/08/11/sports/football/sti-notigxam-forest-o-ntiomante-pic/",
+      "title": "Στη Νότιγχαμ Φόρεστ ο Ντιομαντέ (pic)",
+      "normalized_title": "ΣΤΗ ΝΟΤΙΓΧΑΜ ΦΟΡΕΣΤ Ο ΝΤΙΟΜΑΝΤΕ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/othersports/eyropaiko-stivou-ston-teliko-tou-ypsous-merlos-kai-mita-vids/",
-        "https://www.in.gr/2026/08/11/greece/voucher-paidikon-stathmon-anoikse-i-platforma-gia-tis-enstaseis/",
-        "https://www.in.gr/2026/08/11/world/petrelaio-ayksanetai-i-timi-tou-meta-tis-asymvates-apaitiseis-pou-ekfrazoun-ipa-kai-iran/",
-        "https://www.in.gr/2026/08/11/go-fun/fizz/anthi-voulgari-oi-eikones-me-ta-aloga-sti-lesvo-pou-prokalesan-to-ksespasma-tis/"
+        "https://www.in.gr/2026/08/11/sports/football/sti-notigxam-forest-o-ntiomante-pic/",
+        "https://www.in.gr/2026/08/11/apopsi/avoles-alitheies-gia-tis-pyrkagies/",
+        "https://www.in.gr/2026/08/11/greece/poies-perioxes-kindyneyoun-perissotero-apo-pyrkagies-tin-tetarti-12-aygoustou/"
       ],
-      "seen_at_utc": "2026-08-11T11:51:20.812202+00:00"
+      "seen_at_utc": "2026-08-11T12:19:29.448441+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T11:51:20.812383+00:00"
+  "updated_at_utc": "2026-08-11T12:19:29.448566+00:00"
 }
