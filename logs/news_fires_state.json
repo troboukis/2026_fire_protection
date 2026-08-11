@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564396709/dimoskopisi-i-odysseia-toy-nolan-kerdise-toys-ellines/",
-      "title": "Δημοσκόπηση: Η «Οδύσσεια» του Νόλαν κέρδισε τους Ελληνες",
-      "normalized_title": "ΔΗΜΟΣΚΟΠΗΣΗ: Η «ΟΔΥΣΣΕΙΑ» ΤΟΥ ΝΟΛΑΝ ΚΕΡΔΙΣΕ ΤΟΥΣ ΕΛΛΗΝΕΣ",
+      "url": "https://www.kathimerini.gr/society/564396811/vinteo-apo-ti-sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/",
+      "title": "Βίντεο από τη σύγκρουση δύο τουριστικών σκαφών στους Αντίπαξους",
+      "normalized_title": "ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΣΚΑΦΩΝ ΣΤΟΥΣ ΑΝΤΙΠΑΞΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564396709/dimoskopisi-i-odysseia-toy-nolan-kerdise-toys-ellines/"
+        "https://www.kathimerini.gr/society/564396811/vinteo-apo-ti-sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/",
+        "https://www.kathimerini.gr/world/564396769/i-rosia-apeleytherose-amerikano-proin-pezonayti-meta-apo-synomilies-tramp-poytin/"
       ],
-      "seen_at_utc": "2026-08-11T19:30:18.321146+00:00"
+      "seen_at_utc": "2026-08-11T19:51:20.372698+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,23 +1269,27 @@
       "seen_at_utc": "2026-08-11T19:30:18.321263+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446190/vinteo-ntokoymento-i-fygadeysi-toy-tramp-apo-tin-toyrkia-krymmenos-se-ohima-trofodosias/",
-      "title": "Βίντεο – ντοκουμέντο: Η φυγάδευση του Τραμπ από την Τουρκία, κρυμμένος σε όχημα τροφοδοσίας",
-      "normalized_title": "ΒΙΝΤΕΟ – ΝΤΟΚΟΥΜΕΝΤΟ: Η ΦΥΓΑΔΕΥΣΗ ΤΟΥ ΤΡΑΜΠ ΑΠΟ ΤΗΝ ΤΟΥΡΚΙΑ, ΚΡΥΜΜΕΝΟΣ ΣΕ ΟΧΗΜΑ ΤΡΟΦΟΔΟΣΙΑΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1446198/champions-league-me-lefski-sofias-i-aek-sta-play-off/",
+      "title": "Champions League: Με Λέφσκι Σόφιας η ΑΕΚ στα play off",
+      "normalized_title": "CHAMPIONS LEAGUE: ΜΕ ΛΕΦΣΚΙ ΣΟΦΙΑΣ Η ΑΕΚ ΣΤΑ PLAY OFF",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446190/vinteo-ntokoymento-i-fygadeysi-toy-tramp-apo-tin-toyrkia-krymmenos-se-ohima-trofodosias/"
+        "https://www.efsyn.gr/athlitismos/1446198/champions-league-me-lefski-sofias-i-aek-sta-play-off/",
+        "https://www.efsyn.gr/kosmos/1446195/erythra-thalassa-toylahiston-exi-oi-nekroi-apo-tin-epithesi-se-emporiko-ploio/"
       ],
-      "seen_at_utc": "2026-08-11T19:30:18.321231+00:00"
+      "seen_at_utc": "2026-08-11T19:51:20.372785+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/football/champions-league/akyrothike-sosta-gkol-tis-naimegken-sto-93-vid/",
-      "title": "Ακυρώθηκε σωστά γκολ της Ναϊμέγκεν στο 93’ (vid)",
-      "normalized_title": "ΑΚΥΡΩΘΗΚΕ ΣΩΣΤΑ ΓΚΟΛ ΤΗΣ ΝΑΙΜΕΓΚΕΝ ΣΤΟ 93’ (VID)",
+      "url": "https://www.in.gr/2026/08/11/world/tragodia-sti-aigypto-18-nekroi-stin-pleionotita-tous-efivoi-se-troxaio-dystyxima/",
+      "title": "Τραγωδία στη Αίγυπτο: 18 νεκροί, στην πλειονότητά τους έφηβοι, σε τροχαίο δυστύχημα",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΑΙΓΥΠΤΟ: 18 ΝΕΚΡΟΙ, ΣΤΗΝ ΠΛΕΙΟΝΟΤΗΤΑ ΤΟΥΣ ΕΦΗΒΟΙ, ΣΕ ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/football/champions-league/akyrothike-sosta-gkol-tis-naimegken-sto-93-vid/"
+        "https://www.in.gr/2026/08/11/world/tragodia-sti-aigypto-18-nekroi-stin-pleionotita-tous-efivoi-se-troxaio-dystyxima/",
+        "https://www.in.gr/2026/08/11/sports/football/tsska-1948-panathinaikos-i-isofarisi-ton-voulgaron-se-1-1-me-ton-ntvali-vids/",
+        "https://www.in.gr/2026/08/11/sports/football/champions-league/provadisma-gia-ti-naimegken-stin-paratasi-2-1-vids/",
+        "https://www.in.gr/2026/08/11/world/stigmes-tromou-se-ptisi-pros-to-siatl-sminos-poulion-katestrepse-ton-kinitira-aeroskafous-kata-tin-apogeiosi-vinteo/"
       ],
-      "seen_at_utc": "2026-08-11T19:30:18.321184+00:00"
+      "seen_at_utc": "2026-08-11T19:51:20.372749+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T19:30:18.321358+00:00"
+  "updated_at_utc": "2026-08-11T19:51:20.372856+00:00"
 }
