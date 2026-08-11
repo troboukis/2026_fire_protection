@@ -1,20 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/diktis/564395311/prosthetoi-poroi-gia-exoikonomo-epicheiro/",
-      "title": "Πρόσθετοι πόροι για «Εξοικονομώ – Επιχειρώ»",
-      "normalized_title": "ΠΡΟΣΘΕΤΟΙ ΠΟΡΟΙ ΓΙΑ «ΕΞΟΙΚΟΝΟΜΩ – ΕΠΙΧΕΙΡΩ»",
+      "url": "https://www.kathimerini.gr/opinion/564395017/skoyntima-apo-ton-oyrano/",
+      "title": "Σκούντημα από τον ουρανό",
+      "normalized_title": "ΣΚΟΥΝΤΗΜΑ ΑΠΟ ΤΟΝ ΟΥΡΑΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/diktis/564395311/prosthetoi-poroi-gia-exoikonomo-epicheiro/",
-        "https://www.kathimerini.gr/world/564395488/venezoyela-synantisi-tis-ntelsi-rodrigkes-me-amerikanoys-axiomatoychoys/",
-        "https://www.kathimerini.gr/world/564395446/mikri-iroida-i-10chroni-poy-espeyse-na-sosei-falaina-poy-eiche-exokeilei/",
-        "https://www.kathimerini.gr/istoria/564394231/1976-i-alitheia-gia-ti-frasi-toy-andrea-papandreoy-vythisate-to-chora-kai-i-prosfygi-tis-elladas-sti-chagi-gia-tin-yfalokripida/",
-        "https://www.kathimerini.gr/culture/564393859/me-poia-tragoydia-megalose-o-dimitris-zervoydakis-kai-mia-ermineia-ekplixi/",
-        "https://www.kathimerini.gr/world/564395470/ipa-diatagma-tramp-periorizei-ta-synistomena-paidika-emvolia/",
-        "https://www.kathimerini.gr/politics/564394846/theoreio-pantoy-me-kamera/",
-        "https://www.kathimerini.gr/society/564395464/kairos-meltemi-eos-7-mpofor-kai-38aria-poly-ypsilos-kindynos-pyrkagias-se-polles-perioches-tis-choras/"
+        "https://www.kathimerini.gr/opinion/564395017/skoyntima-apo-ton-oyrano/",
+        "https://www.kathimerini.gr/opinion/564395029/oi-ragdaies-exelixeis-kai-peri-thorakisis/",
+        "https://www.kathimerini.gr/opinion/564395026/gia-toys-tzolides-toy-mellontos/",
+        "https://www.kathimerini.gr/opinion/564394849/fysa-aeraki-fysa-me-2/",
+        "https://www.kathimerini.gr/world/564395503/ee-anoigei-diaylo-me-meta-kai-tiktok-gia-tin-antimetopisi-tis-metanasteytikis-krisis-sti-theoyta/",
+        "https://www.kathimerini.gr/athletics/football/564395137/panathinaikos-ora-eythynis-sti-sofia/"
       ],
-      "seen_at_utc": "2026-08-11T05:17:15.756503+00:00"
+      "seen_at_utc": "2026-08-11T05:30:12.504344+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,14 +1264,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863311/posa-xodeuoun-ta-nosokomeia-tou-esu-oi-protathlites-se-farmaka-ugeionomiko-uliko-upiresies/?utm_source=rss",
-      "title": "Πόσα ξοδεύουν τα νοσοκομεία του ΕΣΥ: Οι «πρωταθλητές» σε φάρμακα, υγειονομικό υλικό, υπηρεσίες",
-      "normalized_title": "ΠΟΣΑ ΞΟΔΕΥΟΥΝ ΤΑ ΝΟΣΟΚΟΜΕΙΑ ΤΟΥ ΕΣΥ: ΟΙ «ΠΡΩΤΑΘΛΗΤΕΣ» ΣΕ ΦΑΡΜΑΚΑ, ΥΓΕΙΟΝΟΜΙΚΟ ΥΛΙΚΟ, ΥΠΗΡΕΣΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1863313/tautopoiithike-o-38hronos-voulgaros-gia-tin-katadioxi-apo-tin-korintho-eos-to-adirrio-eihe-emvolisei-kai-peripolika/?utm_source=rss",
+      "title": "Ταυτοποιήθηκε 38χρονος Βούλγαρος για την καταδίωξη από την Κόρινθο έως το Αντίρριο, είχε εμβολίσει και περιπολικά",
+      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ 38ΧΡΟΝΟΣ ΒΟΥΛΓΑΡΟΣ ΓΙΑ ΤΗΝ ΚΑΤΑΔΙΩΞΗ ΑΠΟ ΤΗΝ ΚΟΡΙΝΘΟ ΕΩΣ ΤΟ ΑΝΤΙΡΡΙΟ, ΕΙΧΕ ΕΜΒΟΛΙΣΕΙ ΚΑΙ ΠΕΡΙΠΟΛΙΚΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863311/posa-xodeuoun-ta-nosokomeia-tou-esu-oi-protathlites-se-farmaka-ugeionomiko-uliko-upiresies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863305/apologeitai-simera-i-46hroni-gia-tin-upothesi-marfin-arneitai-tin-tautopoiisi-tis-o-dikigoros-tis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863313/tautopoiithike-o-38hronos-voulgaros-gia-tin-katadioxi-apo-tin-korintho-eos-to-adirrio-eihe-emvolisei-kai-peripolika/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T05:17:15.756589+00:00"
+      "seen_at_utc": "2026-08-11T05:30:12.504407+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/ellada/1445622/argos-panigyrika-athoos-diadilotis-poy-synelifthi-se-sygkentrosi-gia-ton-thanato-toy-20hronoy-apo-astynomika-pyra/",
@@ -1290,16 +1287,15 @@
       "seen_at_utc": "2026-08-11T05:17:15.756569+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/sta-355-dis-ta-liksiprothesma-xrei-tou-dimosiou-poioi-einai-oi-protathlites/",
-      "title": "Στα 3,55 δισ. τα ληξιπρόθεσμα χρέη του Δημοσίου – Ποιοι είναι οι «πρωταθλητές»",
-      "normalized_title": "ΣΤΑ 3,55 ΔΙΣ. ΤΑ ΛΗΞΙΠΡΟΘΕΣΜΑ ΧΡΕΗ ΤΟΥ ΔΗΜΟΣΙΟΥ – ΠΟΙΟΙ ΕΙΝΑΙ ΟΙ «ΠΡΩΤΑΘΛΗΤΕΣ»",
+      "url": "https://www.in.gr/2026/08/11/greece/marfin-apologeitai-simera-i-46xroni-arneitai-kathe-sxesi-me-ti-foniki-epithesi/",
+      "title": "Marfin: Απολογείται σήμερα η 46χρονη – Αρνείται κάθε σχέση με τη φονική επίθεση",
+      "normalized_title": "MARFIN: ΑΠΟΛΟΓΕΙΤΑΙ ΣΗΜΕΡΑ Η 46ΧΡΟΝΗ – ΑΡΝΕΙΤΑΙ ΚΑΘΕ ΣΧΕΣΗ ΜΕ ΤΗ ΦΟΝΙΚΗ ΕΠΙΘΕΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/sta-355-dis-ta-liksiprothesma-xrei-tou-dimosiou-poioi-einai-oi-protathlites/",
-        "https://www.in.gr/2026/08/11/life/culture-live/ioulios-vern-200-i-synarpastiki-empeiria-ston-elliniko-kosmo/",
-        "https://www.in.gr/2026/08/11/world/seismos-stin-kolomvia-132-nekroi-agoniodis-anazitisi-egklovismenon-fovoi-gia-tyxon-energopoiisi-ifaisteiou/"
+        "https://www.in.gr/2026/08/11/greece/marfin-apologeitai-simera-i-46xroni-arneitai-kathe-sxesi-me-ti-foniki-epithesi/",
+        "https://www.in.gr/2026/08/11/sports/football/o-tzef-mpezos-mpainei-sti-liverpoul-symfonia-mamouth-gia-to-30-ton-reds/"
       ],
-      "seen_at_utc": "2026-08-11T05:17:15.756543+00:00"
+      "seen_at_utc": "2026-08-11T05:30:12.504377+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T05:17:15.756666+00:00"
+  "updated_at_utc": "2026-08-11T05:30:12.504467+00:00"
 }
