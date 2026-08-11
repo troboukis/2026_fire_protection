@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564396088/sti-sigkapoyri-oi-70chronoi-kanoyn-parkoyr/",
-      "title": "Στη Σιγκαπούρη οι 70χρονοι κάνουν παρκούρ",
-      "normalized_title": "ΣΤΗ ΣΙΓΚΑΠΟΥΡΗ ΟΙ 70ΧΡΟΝΟΙ ΚΑΝΟΥΝ ΠΑΡΚΟΥΡ",
+      "url": "https://www.kathimerini.gr/world/564396109/ta-klamp-toy-verolinoy-zitoyn-kratiki-enischysi/",
+      "title": "Τα κλαμπ του Βερολίνου ζητούν κρατική ενίσχυση",
+      "normalized_title": "ΤΑ ΚΛΑΜΠ ΤΟΥ ΒΕΡΟΛΙΝΟΥ ΖΗΤΟΥΝ ΚΡΑΤΙΚΗ ΕΝΙΣΧΥΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564396088/sti-sigkapoyri-oi-70chronoi-kanoyn-parkoyr/",
-        "https://www.kathimerini.gr/world/564396079/elvetia-i-kyvernisi-aporriptei-tin-aystiri-ermineia-tis-oydeterotitas/"
+        "https://www.kathimerini.gr/world/564396109/ta-klamp-toy-verolinoy-zitoyn-kratiki-enischysi/",
+        "https://www.kathimerini.gr/society/564396112/kilkis-ektrochiastike-vagoni-poy-metefere-kaysima/",
+        "https://www.kathimerini.gr/world/564396094/amerikanika-pyra-se-ploio-poy-epicheirise-na-spasei-ton-apokleismo-toy-iran/",
+        "https://www.kathimerini.gr/k/k-magazine/564390553/sto-parko-me-ton-dimitri-lagoyti/"
       ],
-      "seen_at_utc": "2026-08-11T12:19:29.448410+00:00"
+      "seen_at_utc": "2026-08-11T12:51:20.300345+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863533/stis-toxikologikes-exetaseis-oi-apadiseis-gia-ton-thanato-tou-astunomikou-ston-agio-dimitrio-kleidi-oi-teleutaies-ores/?utm_source=rss",
-      "title": "Στις τοξικολογικές εξετάσεις οι απαντήσεις για τον θάνατο του αστυνομικού στον Άγιο Δημήτριο, στο μικροσκόπιο οι τελευταίες ώρες του 38χρονου",
-      "normalized_title": "ΣΤΙΣ ΤΟΞΙΚΟΛΟΓΙΚΕΣ ΕΞΕΤΑΣΕΙΣ ΟΙ ΑΠΑΝΤΗΣΕΙΣ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΑΣΤΥΝΟΜΙΚΟΥ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΩΡΕΣ ΤΟΥ 38ΧΡΟΝΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1863547/mikroatuhima-gia-ton-mitsotaki-sta-hania-htupise-ton-omo-tou-kanodas-podilato/?utm_source=rss",
+      "title": "Μικροατύχημα για τον Μητσοτάκη στα Χανιά, χτύπησε τον ώμο του κάνοντας ποδήλατο",
+      "normalized_title": "ΜΙΚΡΟΑΤΥΧΗΜΑ ΓΙΑ ΤΟΝ ΜΗΤΣΟΤΑΚΗ ΣΤΑ ΧΑΝΙΑ, ΧΤΥΠΗΣΕ ΤΟΝ ΩΜΟ ΤΟΥ ΚΑΝΟΝΤΑΣ ΠΟΔΗΛΑΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863533/stis-toxikologikes-exetaseis-oi-apadiseis-gia-ton-thanato-tou-astunomikou-ston-agio-dimitrio-kleidi-oi-teleutaies-ores/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863532/sunelifthisan-duo-meli-speiras-tilefonikon-apaton-sto-agrinio-prospoioudan-tous-logistes-xeperna-tis-40000-i-leia-tous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863547/mikroatuhima-gia-ton-mitsotaki-sta-hania-htupise-ton-omo-tou-kanodas-podilato/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863544/me-plithos-piston-i-litaneia-tou-agiou-spuridonos-stin-kerkura-se-triimero-proskunima-to-iero-skinoma/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T12:19:29.448501+00:00"
+      "seen_at_utc": "2026-08-11T12:51:20.300484+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1445940/fotia-se-ypogeio-gkaraz-sto-elliniko-ekkenothike-i-polykatoikia-vinteo/",
-      "title": "Φωτιά σε υπόγειο γκαράζ στο Ελληνικό: Εκκενώθηκε η πολυκατοικία – Προκλήθηκαν φθορές [βίντεο]",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΥΠΟΓΕΙΟ ΓΚΑΡΑΖ ΣΤΟ ΕΛΛΗΝΙΚΟ: ΕΚΚΕΝΩΘΗΚΕ Η ΠΟΛΥΚΑΤΟΙΚΙΑ – ΠΡΟΚΛΗΘΗΚΑΝ ΦΘΟΡΕΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1445955/oie-i-akraia-zesti-ginetai-pio-syhni-kai-pio-entoni-ti-deihnoyn-ta-stoiheia-gia-tin-eyropi/",
+      "title": "ΟΗΕ: Η ακραία ζέστη γίνεται πιο συχνή και πιο έντονη – Τι δείχνουν τα στοιχεία για την Ευρώπη",
+      "normalized_title": "ΟΗΕ: Η ΑΚΡΑΙΑ ΖΕΣΤΗ ΓΙΝΕΤΑΙ ΠΙΟ ΣΥΧΝΗ ΚΑΙ ΠΙΟ ΕΝΤΟΝΗ – ΤΙ ΔΕΙΧΝΟΥΝ ΤΑ ΣΤΟΙΧΕΙΑ ΓΙΑ ΤΗΝ ΕΥΡΩΠΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1445940/fotia-se-ypogeio-gkaraz-sto-elliniko-ekkenothike-i-polykatoikia-vinteo/"
+        "https://www.efsyn.gr/kosmos/1445955/oie-i-akraia-zesti-ginetai-pio-syhni-kai-pio-entoni-ti-deihnoyn-ta-stoiheia-gia-tin-eyropi/",
+        "https://www.efsyn.gr/oikonomia/1445863/ipa-arrostos-tzogos-kai-me-tis-foties-oi-kataggelies-kai-oi-sheseis-tis-oikogeneias-tramp-me-tis-platformes-provlepseon/"
       ],
-      "seen_at_utc": "2026-08-11T12:30:13.910640+00:00"
+      "seen_at_utc": "2026-08-11T12:51:20.300454+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/football/sti-notigxam-forest-o-ntiomante-pic/",
-      "title": "Στη Νότιγχαμ Φόρεστ ο Ντιομαντέ (pic)",
-      "normalized_title": "ΣΤΗ ΝΟΤΙΓΧΑΜ ΦΟΡΕΣΤ Ο ΝΤΙΟΜΑΝΤΕ (PIC)",
+      "url": "https://www.in.gr/2026/08/11/greece/fotia-sto-pikermi-kaiei-xamili-vlastisi-ixise-to-112/",
+      "title": "Φωτιά στο Πικέρμι: Καίει χαμηλή βλάστηση – Ήχησε το 112",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΠΙΚΕΡΜΙ: ΚΑΙΕΙ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/football/sti-notigxam-forest-o-ntiomante-pic/",
-        "https://www.in.gr/2026/08/11/apopsi/avoles-alitheies-gia-tis-pyrkagies/",
-        "https://www.in.gr/2026/08/11/greece/poies-perioxes-kindyneyoun-perissotero-apo-pyrkagies-tin-tetarti-12-aygoustou/"
+        "https://www.in.gr/2026/08/11/greece/fotia-sto-pikermi-kaiei-xamili-vlastisi-ixise-to-112/",
+        "https://www.in.gr/2026/08/11/sports/football/vaggelis-marinakis-sti-dikaiosyni-kata-tis-kristal-palas/",
+        "https://www.in.gr/2026/08/11/politics/politiki-grammateia/eksypnades-sdoukou-gia-ton-tsipra-ton-mastora-pou-se-koroidepse-den-ton-ksanavazeis-sto-spiti/",
+        "https://www.in.gr/2026/08/11/politics/politiki-grammateia/pasok-i-megali-koroidia-tou-maksimou-90-ligoteri-prostasia-ston-evro/",
+        "https://www.in.gr/2026/08/11/world/kolomvia-ekkliseis-gia-voitheia-apo-topikes-arxes-me-gymna-xeria-skavoun-sta-ereipia-188-agnooumenoi-sto-kali/",
+        "https://www.in.gr/2026/08/11/sports/basketball/live-streaming-slovenia-ellada-3/",
+        "https://www.in.gr/2026/08/11/go-fun/fizz/i-kori-ton-mat-nteimon-kai-loutsiana-mparoso-egine-20-eton-kai-ypegrapse-symvolaio-me-praktoreio-montelon/"
       ],
-      "seen_at_utc": "2026-08-11T12:19:29.448441+00:00"
+      "seen_at_utc": "2026-08-11T12:51:20.300396+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T12:30:13.910749+00:00"
+  "updated_at_utc": "2026-08-11T12:51:20.300562+00:00"
 }
