@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564396475/praktores-tis-mosant-echoyn-episkeftei-polles-fores-ta-pyrinika-ochyra-toy-iran/",
-      "title": "«Πράκτορες της Μοσάντ έχουν επισκεφτεί πολλές φορές τα πυρηνικά οχυρά του Ιράν»",
-      "normalized_title": "«ΠΡΑΚΤΟΡΕΣ ΤΗΣ ΜΟΣΑΝΤ ΕΧΟΥΝ ΕΠΙΣΚΕΦΤΕΙ ΠΟΛΛΕΣ ΦΟΡΕΣ ΤΑ ΠΥΡΗΝΙΚΑ ΟΧΥΡΑ ΤΟΥ ΙΡΑΝ»",
+      "url": "https://www.kathimerini.gr/world/564396592/livyi-epithesi-me-drone-sto-megalytero-diylistirio-tis-choras/",
+      "title": "Λιβύη: Επίθεση με drone στο μεγαλύτερο διυλιστήριο της χώρας",
+      "normalized_title": "ΛΙΒΥΗ: ΕΠΙΘΕΣΗ ΜΕ DRONE ΣΤΟ ΜΕΓΑΛΥΤΕΡΟ ΔΙΥΛΙΣΤΗΡΙΟ ΤΗΣ ΧΩΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564396475/praktores-tis-mosant-echoyn-episkeftei-polles-fores-ta-pyrinika-ochyra-toy-iran/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564396514/diorismoi-ekpaideytikon-4-789-proslipseis-se-protovathmia-kai-deyterovathmia-ekpaideysi/"
+        "https://www.kathimerini.gr/world/564396592/livyi-epithesi-me-drone-sto-megalytero-diylistirio-tis-choras/",
+        "https://www.kathimerini.gr/society/564396553/tesseris-syllipseis-gia-pyrkagies-kai-paravaseis-pyrasfaleias-se-attiki-lesvo-kai-zakyntho/"
       ],
-      "seen_at_utc": "2026-08-11T16:51:41.247378+00:00"
+      "seen_at_utc": "2026-08-11T17:18:05.053437+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1260,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863652/upourgeio-paideias-monimoi-diorismoi-4789-ekpaideutikon-se-protovathmia-kai-deuterovathmia-ekpaideusi/?utm_source=rss",
-      "title": "Υπουργείο Παιδείας: Μόνιμοι διορισμοί 4.789 εκπαιδευτικών σε πρωτοβάθμια και δευτεροβάθμια εκπαίδευση",
-      "normalized_title": "ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ: ΜΟΝΙΜΟΙ ΔΙΟΡΙΣΜΟΙ 4.789 ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΣΕ ΠΡΩΤΟΒΑΘΜΙΑ ΚΑΙ ΔΕΥΤΕΡΟΒΑΘΜΙΑ ΕΚΠΑΙΔΕΥΣΗ",
+      "url": "https://www.protothema.gr/greece/article/1863662/fotia-tora-stin-paralia-paou-notiou-piliou-112-gia-etoimotita-sikothikan-tessera-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά τώρα στην παραλία Πάου Νοτίου Πηλίου, 112 για ετοιμότητα, σηκώθηκαν τέσσερα αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΠΑΡΑΛΙΑ ΠΑΟΥ ΝΟΤΙΟΥ ΠΗΛΙΟΥ, 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ, ΣΗΚΩΘΗΚΑΝ ΤΕΣΣΕΡΑ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863652/upourgeio-paideias-monimoi-diorismoi-4789-ekpaideutikon-se-protovathmia-kai-deuterovathmia-ekpaideusi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863651/fotia-tora-ston-mulopotamo-tis-kritis-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863662/fotia-tora-stin-paralia-paou-notiou-piliou-112-gia-etoimotita-sikothikan-tessera-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863656/fotia-tora-stin-agia-triada-ioanninon-sikothike-ena-elikoptero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T16:51:41.247550+00:00"
+      "seen_at_utc": "2026-08-11T17:18:05.053593+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1446109/dimoskopisi-kapa-research-gia-tin-odysseia-toy-nolan-oi-7-stoys-10-tin-krinoyn-thetika-dihasmos-gia-tin-oraia-eleni/",
-      "title": "Έρευνα Κάπα Research: Τι πιστεύουν οι Έλληνες για την «Οδύσσεια» του Νόλαν – Το 71% την κρίνει θετικά, διχασμός για την Ωραία Ελένη",
-      "normalized_title": "ΕΡΕΥΝΑ ΚΑΠΑ RESEARCH: ΤΙ ΠΙΣΤΕΥΟΥΝ ΟΙ ΕΛΛΗΝΕΣ ΓΙΑ ΤΗΝ «ΟΔΥΣΣΕΙΑ» ΤΟΥ ΝΟΛΑΝ – ΤΟ 71% ΤΗΝ ΚΡΙΝΕΙ ΘΕΤΙΚΑ, ΔΙΧΑΣΜΟΣ ΓΙΑ ΤΗΝ ΩΡΑΙΑ ΕΛΕΝΗ",
+      "url": "https://www.efsyn.gr/kosmos/1446134/htypithikan-ploia-se-erythra-thalassa-kai-kolpo-toy-oman-hoythi-kai-ipa-ferontai-piso-apo-tis-epitheseis-tesseris-nekroi/",
+      "title": "Χτυπήθηκαν πλοία σε Ερυθρά Θάλασσα και Κόλπο του Ομάν: Χούθι και ΗΠΑ φέρονται πίσω από τις επιθέσεις – Τέσσερις νεκροί",
+      "normalized_title": "ΧΤΥΠΗΘΗΚΑΝ ΠΛΟΙΑ ΣΕ ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ ΚΑΙ ΚΟΛΠΟ ΤΟΥ ΟΜΑΝ: ΧΟΥΘΙ ΚΑΙ ΗΠΑ ΦΕΡΟΝΤΑΙ ΠΙΣΩ ΑΠΟ ΤΙΣ ΕΠΙΘΕΣΕΙΣ – ΤΕΣΣΕΡΙΣ ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1446109/dimoskopisi-kapa-research-gia-tin-odysseia-toy-nolan-oi-7-stoys-10-tin-krinoyn-thetika-dihasmos-gia-tin-oraia-eleni/",
-        "https://www.efsyn.gr/ellada/1445875/pyrkagies-mia-parallili-aorati-krisi-gia-tin-ygeia-ta-vlavera-somatidia-kai-poioi-prepei-na-prosehoyn/"
+        "https://www.efsyn.gr/kosmos/1446134/htypithikan-ploia-se-erythra-thalassa-kai-kolpo-toy-oman-hoythi-kai-ipa-ferontai-piso-apo-tis-epitheseis-tesseris-nekroi/",
+        "https://www.efsyn.gr/tehnes/1446125/na-xerete-pos-ayto-poy-akoyte-einai-sfyrigma-trenoy-sto-theatro-olvio/"
       ],
-      "seen_at_utc": "2026-08-11T16:51:41.247515+00:00"
+      "seen_at_utc": "2026-08-11T17:18:05.053555+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/greece/se-spata-kai-markopoulo-ta-perissotera-krousmata-tou-iou-dytikou-neilou-oi-logoi-pou-i-attiki-einai-sto-epikentro/",
-      "title": "Σε Σπάτα και Μαρκόπουλο τα περισσότερα κρούσματα του ιού Δυτικού Νείλου – Οι λόγοι που η Αττική είναι στο επίκεντρο",
-      "normalized_title": "ΣΕ ΣΠΑΤΑ ΚΑΙ ΜΑΡΚΟΠΟΥΛΟ ΤΑ ΠΕΡΙΣΣΟΤΕΡΑ ΚΡΟΥΣΜΑΤΑ ΤΟΥ ΙΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ – ΟΙ ΛΟΓΟΙ ΠΟΥ Η ΑΤΤΙΚΗ ΕΙΝΑΙ ΣΤΟ ΕΠΙΚΕΝΤΡΟ",
+      "url": "https://www.in.gr/2026/08/11/greece/fotia-sto-notio-pilio-minyma-apo-to-112/",
+      "title": "Φωτιά στο Νότιο Πήλιο – Μήνυμα από το 112",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΝΟΤΙΟ ΠΗΛΙΟ – ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/greece/se-spata-kai-markopoulo-ta-perissotera-krousmata-tou-iou-dytikou-neilou-oi-logoi-pou-i-attiki-einai-sto-epikentro/",
-        "https://www.in.gr/matchcenter/5955367/",
-        "https://www.in.gr/2026/08/11/go-fun/style/ta-gyalia-iliou-aspida-aytou-tou-kalokairiou-apokleioun-ton-ilio-kai-ton-kosmo/",
-        "https://www.in.gr/2026/08/11/sports/football/panathinaikos-i-endekada-tou-gia-ti-revans-me-tin-tsska-1948-pic/"
+        "https://www.in.gr/2026/08/11/greece/fotia-sto-notio-pilio-minyma-apo-to-112/",
+        "https://www.in.gr/matchcenter/5955356/",
+        "https://www.in.gr/2026/08/11/greece/kriti-fotia-ston-mylopotamo-rethymnou-kinitopoiisi-tis-pyrosvestikis/",
+        "https://www.in.gr/2026/08/11/sports/football/kairat-almati-lefski-sofias-0-1-prokrisi-me-2x2-oi-voulgaroi-kai-tora-aek/",
+        "https://www.in.gr/2026/08/11/in-science/technology/to-manifesto-zakermpergk-gia-tin-texniti-noimosyni-proteinei-dorean-i-oikonomika-prositi-prosvasi-gia-olous/",
+        "https://www.in.gr/2026/08/11/greece/triti-xeiroteri-stin-eyropi-i-ellada-stis-kathysteriseis-ptiseon-i-ypostelexosi-kai-i-ayksisi-tis-kinisis/",
+        "https://www.in.gr/matchcenter/5954878/",
+        "https://www.in.gr/2026/08/11/greece/fotia-stin-agia-triada-ioanninon-sti-maxi-ena-elikoptero/",
+        "https://www.in.gr/2026/08/11/greece/troxaio-me-pente-traymaties-sto-rethymno-sygkroustikan-dyo-ix-me-touristes/"
       ],
-      "seen_at_utc": "2026-08-11T16:51:41.247466+00:00"
+      "seen_at_utc": "2026-08-11T17:18:05.053502+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T16:51:41.247660+00:00"
+  "updated_at_utc": "2026-08-11T17:18:05.053695+00:00"
 }
