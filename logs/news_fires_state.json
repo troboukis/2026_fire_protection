@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564396811/vinteo-apo-ti-sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/",
-      "title": "Βίντεο από τη σύγκρουση δύο τουριστικών σκαφών στους Αντίπαξους",
-      "normalized_title": "ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΣΚΑΦΩΝ ΣΤΟΥΣ ΑΝΤΙΠΑΞΟΥΣ",
+      "url": "https://www.kathimerini.gr/athletics/football/564396832/naimegken-olympiakos-2-1-lygise-me-10-paiktes-kai-synechizei-sto-europa-league/",
+      "title": "Ναϊμέγκεν – Ολυμπιακός 2-1: «Λύγισε» με 10 παίκτες και συνεχίζει στο Europa League",
+      "normalized_title": "ΝΑΙΜΕΓΚΕΝ – ΟΛΥΜΠΙΑΚΟΣ 2-1: «ΛΥΓΙΣΕ» ΜΕ 10 ΠΑΙΚΤΕΣ ΚΑΙ ΣΥΝΕΧΙΖΕΙ ΣΤΟ EUROPA LEAGUE",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564396811/vinteo-apo-ti-sygkroysi-dyo-toyristikon-skafon-stoys-antipaxoys/",
-        "https://www.kathimerini.gr/world/564396769/i-rosia-apeleytherose-amerikano-proin-pezonayti-meta-apo-synomilies-tramp-poytin/"
+        "https://www.kathimerini.gr/athletics/football/564396832/naimegken-olympiakos-2-1-lygise-me-10-paiktes-kai-synechizei-sto-europa-league/",
+        "https://www.kathimerini.gr/athletics/football/564396823/prokrisi-thriler-gia-ton-panathinaiko-stin-paratasi/",
+        "https://www.kathimerini.gr/world/564396361/i-germania-xemenei-apo-neoys/",
+        "https://www.kathimerini.gr/world/564396772/pos-to-iran-kerdise-ti-machi-ton-pyraylon/"
       ],
-      "seen_at_utc": "2026-08-11T19:51:20.372698+00:00"
+      "seen_at_utc": "2026-08-11T20:17:16.613729+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1271,29 @@
       "seen_at_utc": "2026-08-11T19:30:18.321263+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446198/champions-league-me-lefski-sofias-i-aek-sta-play-off/",
-      "title": "Champions League: Με Λέφσκι Σόφιας η ΑΕΚ στα play off",
-      "normalized_title": "CHAMPIONS LEAGUE: ΜΕ ΛΕΦΣΚΙ ΣΟΦΙΑΣ Η ΑΕΚ ΣΤΑ PLAY OFF",
+      "url": "https://www.efsyn.gr/athlitismos/1446203/niki-prokrisi-gia-ton-panathinaiko-mesa-sti-voylgaria/",
+      "title": "Νίκη-πρόκριση για τον Παναθηναϊκό μέσα στη Βουλγαρία [βίντεο]",
+      "normalized_title": "ΝΙΚΗ-ΠΡΟΚΡΙΣΗ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΜΕΣΑ ΣΤΗ ΒΟΥΛΓΑΡΙΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446198/champions-league-me-lefski-sofias-i-aek-sta-play-off/",
-        "https://www.efsyn.gr/kosmos/1446195/erythra-thalassa-toylahiston-exi-oi-nekroi-apo-tin-epithesi-se-emporiko-ploio/"
+        "https://www.efsyn.gr/athlitismos/1446203/niki-prokrisi-gia-ton-panathinaiko-mesa-sti-voylgaria/",
+        "https://www.efsyn.gr/kosmos/1446200/zimpampoye-ferimpot-me-95-epivainontes-anatrapike-mesa-se-limni-epiheirisi-diasosis-ton-agnooymenon/"
       ],
-      "seen_at_utc": "2026-08-11T19:51:20.372785+00:00"
+      "seen_at_utc": "2026-08-11T20:17:16.613827+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/tragodia-sti-aigypto-18-nekroi-stin-pleionotita-tous-efivoi-se-troxaio-dystyxima/",
-      "title": "Τραγωδία στη Αίγυπτο: 18 νεκροί, στην πλειονότητά τους έφηβοι, σε τροχαίο δυστύχημα",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΑΙΓΥΠΤΟ: 18 ΝΕΚΡΟΙ, ΣΤΗΝ ΠΛΕΙΟΝΟΤΗΤΑ ΤΟΥΣ ΕΦΗΒΟΙ, ΣΕ ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ",
+      "url": "https://www.in.gr/2026/08/11/sports/football/champions-league/naimegken-olympiakos-2-1-stin-paratasi1-1-k-d-apokleistikan-oi-peiraiotes/",
+      "title": "Ναϊμέγκεν – Ολυμπιακός 2-1 στην παράταση(1-1 κ.δ): Αποκλείστηκαν οι πειραιώτες",
+      "normalized_title": "ΝΑΙΜΕΓΚΕΝ – ΟΛΥΜΠΙΑΚΟΣ 2-1 ΣΤΗΝ ΠΑΡΑΤΑΣΗ(1-1 Κ.Δ): ΑΠΟΚΛΕΙΣΤΗΚΑΝ ΟΙ ΠΕΙΡΑΙΩΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/tragodia-sti-aigypto-18-nekroi-stin-pleionotita-tous-efivoi-se-troxaio-dystyxima/",
-        "https://www.in.gr/2026/08/11/sports/football/tsska-1948-panathinaikos-i-isofarisi-ton-voulgaron-se-1-1-me-ton-ntvali-vids/",
-        "https://www.in.gr/2026/08/11/sports/football/champions-league/provadisma-gia-ti-naimegken-stin-paratasi-2-1-vids/",
-        "https://www.in.gr/2026/08/11/world/stigmes-tromou-se-ptisi-pros-to-siatl-sminos-poulion-katestrepse-ton-kinitira-aeroskafous-kata-tin-apogeiosi-vinteo/"
+        "https://www.in.gr/2026/08/11/sports/football/champions-league/naimegken-olympiakos-2-1-stin-paratasi1-1-k-d-apokleistikan-oi-peiraiotes/",
+        "https://www.in.gr/2026/08/11/economy/diethnis-oikonomia/to-delear-ton-timon-den-arkei-pos-ta-fast-food-kerdizoun-pelates/",
+        "https://www.in.gr/2026/08/11/sports/football/tsska-1948-panathinaikos-1-2-sta-plei-of-tou-conference-oi-prasinoi-me-livai-kai-ntesers-vid/",
+        "https://www.in.gr/2026/08/11/sports/football/tsska-1948-panathinaikos-to-2-1-tou-trifylliou-me-ton-ntesers-vids/",
+        "https://www.in.gr/2026/08/11/economy/diethnis-oikonomia/antagonistikotita-enanti-asfaleias-o-kindynos-me-ta-systimata-elegxou-ton-mixanimaton/",
+        "https://www.in.gr/2026/08/11/greece/xania-diakinousan-narkotika-mesa-se-paixnidia-synelifthi-21xronos/"
       ],
-      "seen_at_utc": "2026-08-11T19:51:20.372749+00:00"
+      "seen_at_utc": "2026-08-11T20:17:16.613789+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T19:51:20.372856+00:00"
+  "updated_at_utc": "2026-08-11T20:17:16.613924+00:00"
 }
