@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564396181/vrizete-mia-16chroni-epeidi-kyniga-to-oneiro-tis-i-athlitria-tis-ethnikis-korasidon-apanta-sta-ratsistika-minymata/",
-      "title": "«Βρίζετε μια 16χρονη επειδή κυνηγά το όνειρό της»: Η αθλήτρια της Εθνικής κορασίδων απαντά στα ρατσιστικά μηνύματα",
-      "normalized_title": "«ΒΡΙΖΕΤΕ ΜΙΑ 16ΧΡΟΝΗ ΕΠΕΙΔΗ ΚΥΝΗΓΑ ΤΟ ΟΝΕΙΡΟ ΤΗΣ»: Η ΑΘΛΗΤΡΙΑ ΤΗΣ ΕΘΝΙΚΗΣ ΚΟΡΑΣΙΔΩΝ ΑΠΑΝΤΑ ΣΤΑ ΡΑΤΣΙΣΤΙΚΑ ΜΗΝΥΜΑΤΑ",
+      "url": "https://www.kathimerini.gr/society/564391690/tenontitida-o-ponos-toy-grafeioy/",
+      "title": "Τενοντίτιδα: Ο πόνος του γραφείου",
+      "normalized_title": "ΤΕΝΟΝΤΙΤΙΔΑ: Ο ΠΟΝΟΣ ΤΟΥ ΓΡΑΦΕΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564396181/vrizete-mia-16chroni-epeidi-kyniga-to-oneiro-tis-i-athlitria-tis-ethnikis-korasidon-apanta-sta-ratsistika-minymata/",
-        "https://www.kathimerini.gr/world/564396178/oyggaria-i-voyli-exelexe-proedro-tis-choras-ton-antras-mpaka/",
-        "https://www.kathimerini.gr/world/564396154/bloomberg-ipa-kai-iran-konta-se-kapoioy-eidoys-dieythetisi/"
+        "https://www.kathimerini.gr/society/564391690/tenontitida-o-ponos-toy-grafeioy/",
+        "https://www.kathimerini.gr/society/reportaz/564394924/ravasakia-grammena-se-playlist/",
+        "https://www.kathimerini.gr/world/564396184/potamia-lavas-apo-tin-aitna-os-ti-livyi-eftase-to-ifaisteiako-nefos/"
       ],
-      "seen_at_utc": "2026-08-11T13:51:33.009520+00:00"
+      "seen_at_utc": "2026-08-11T14:17:10.232563+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863577/astunomiki-epiheirisi-stis-fulakes-kerkuras-edopistikan-epta-autoshedia-mahairia-8-sullipseis/?utm_source=rss",
-      "title": "Αστυνομική επιχείρηση στις φυλακές Κέρκυρας, εντοπίστηκαν επτά αυτοσχέδια μαχαίρια, 8 συλλήψεις",
-      "normalized_title": "ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΙΣ ΦΥΛΑΚΕΣ ΚΕΡΚΥΡΑΣ, ΕΝΤΟΠΙΣΤΗΚΑΝ ΕΠΤΑ ΑΥΤΟΣΧΕΔΙΑ ΜΑΧΑΙΡΙΑ, 8 ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1863587/sugrousi-duo-touristikon-skafon-sto-voutoumi-adipaxon-treis-epivates-sto-kedro-ugeias/?utm_source=rss",
+      "title": "Σύγκρουση δύο τουριστικών σκαφών στο Βουτούμι Αντιπάξων, τρεις επιβάτες στο Κέντρο Υγείας",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΣΚΑΦΩΝ ΣΤΟ ΒΟΥΤΟΥΜΙ ΑΝΤΙΠΑΞΩΝ, ΤΡΕΙΣ ΕΠΙΒΑΤΕΣ ΣΤΟ ΚΕΝΤΡΟ ΥΓΕΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863577/astunomiki-epiheirisi-stis-fulakes-kerkuras-edopistikan-epta-autoshedia-mahairia-8-sullipseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863575/profulakistike-o-32hronos-algerinos-stin-kissamo-ekleve-katastimata-me-ti-methodo-tis-apasholisis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863587/sugrousi-duo-touristikon-skafon-sto-voutoumi-adipaxon-treis-epivates-sto-kedro-ugeias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863581/eidiko-horotaxiko-gia-ton-tourismo-ti-allazei-se-xenodoheia-ektos-shediou-domisi-nisia-kai-vrahuhronies-misthoseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T13:51:33.009645+00:00"
+      "seen_at_utc": "2026-08-11T14:17:10.232694+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446022/amerikaniko-elikoptero-epitethike-se-ploio-me-simaia-panama-ston-kolpo-toy-oman/",
-      "title": "Αμερικανικό ελικόπτερο επιτέθηκε σε πλοίο με σημαία Παναμά στον Κόλπο του Ομάν",
-      "normalized_title": "ΑΜΕΡΙΚΑΝΙΚΟ ΕΛΙΚΟΠΤΕΡΟ ΕΠΙΤΕΘΗΚΕ ΣΕ ΠΛΟΙΟ ΜΕ ΣΗΜΑΙΑ ΠΑΝΑΜΑ ΣΤΟΝ ΚΟΛΠΟ ΤΟΥ ΟΜΑΝ",
+      "url": "https://www.efsyn.gr/ellada/1446044/antipaxoi-sygkroystikan-dyo-toyristika-skafi-treis-epivates-metaferthikan-se-kentro-ygeias/",
+      "title": "Αντίπαξοι: Συγκρούστηκαν δύο τουριστικά σκάφη – Τρεις επιβάτες μεταφέρθηκαν σε Κέντρο Υγείας",
+      "normalized_title": "ΑΝΤΙΠΑΞΟΙ: ΣΥΓΚΡΟΥΣΤΗΚΑΝ ΔΥΟ ΤΟΥΡΙΣΤΙΚΑ ΣΚΑΦΗ – ΤΡΕΙΣ ΕΠΙΒΑΤΕΣ ΜΕΤΑΦΕΡΘΗΚΑΝ ΣΕ ΚΕΝΤΡΟ ΥΓΕΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446022/amerikaniko-elikoptero-epitethike-se-ploio-me-simaia-panama-ston-kolpo-toy-oman/",
-        "https://www.efsyn.gr/politiki/1446020/konstantopoyloy-imoyn-i-moni-politiki-arhigos-poy-milisa-prin-apo-dyo-hronia-gia-tis-symfonies-me-ti-saoydiki-aravia/",
-        "https://www.efsyn.gr/athlitismos/1446013/nikolits-to-soyper-kap-einai-telikos-gia-tin-aek-kai-ohi-einai-prova-gia-to-champions-league/",
-        "https://www.efsyn.gr/kosmos/1445956/filippines-toylahiston-16-nekroi-apo-moysones-kai-katolisthiseis-thalassa-me-skoypidia-i-manila-eikones/"
+        "https://www.efsyn.gr/ellada/1446044/antipaxoi-sygkroystikan-dyo-toyristika-skafi-treis-epivates-metaferthikan-se-kentro-ygeias/",
+        "https://www.efsyn.gr/ellada/1446019/ihiri-apantisi-16hronis-athlitrias-tis-ethnikis-mpasket-korasidon-ston-ratsistiko-oheto-pote-den-tha-me-kathorisete/",
+        "https://www.efsyn.gr/politiki/1446028/to-glyko-aproopto-poy-diekopse-politiko-ntimpeit-me-ti-marizeta-antonopoyloy-mama-thelo-na-soy-po-kati-vinteo/",
+        "https://www.efsyn.gr/tehnes/1445851/alexis-alexioy-mia-thalassa-apo-gyali-poy-kovei-vathia/",
+        "https://www.efsyn.gr/kosmos/1446029/istoriki-imera-gia-ton-livano-katargei-me-nomo-ti-thanatiki-poini/"
       ],
-      "seen_at_utc": "2026-08-11T13:51:33.009606+00:00"
+      "seen_at_utc": "2026-08-11T14:17:10.232654+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/livanos-i-xora-katargei-me-nomo-ti-thanatiki-poini/",
-      "title": "Ο Λίβανος καταργεί με νόμο τη θανατική ποινή",
-      "normalized_title": "Ο ΛΙΒΑΝΟΣ ΚΑΤΑΡΓΕΙ ΜΕ ΝΟΜΟ ΤΗ ΘΑΝΑΤΙΚΗ ΠΟΙΝΗ",
+      "url": "https://www.in.gr/2026/08/11/greece/sygkrousi-touristikon-ploion-stous-antipaksous-treis-elafra-traymaties/",
+      "title": "Σύγκρουση τουριστικών πλοίων στους Αντίπαξους – Τρεις ελαφρά τραυματίες",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΤΟΥΡΙΣΤΙΚΩΝ ΠΛΟΙΩΝ ΣΤΟΥΣ ΑΝΤΙΠΑΞΟΥΣ – ΤΡΕΙΣ ΕΛΑΦΡΑ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/livanos-i-xora-katargei-me-nomo-ti-thanatiki-poini/",
-        "https://www.in.gr/2026/08/11/greece/efodos-tis-el-as-stis-fylakes-kerkyras-entopistikan-aytosxedia-maxairia-kai-kinita-tilefona/",
-        "https://www.in.gr/2026/08/11/life/kalinyxta-agapi-mou-ta-teleytaia-logia-kai-i-aneipoti-tragodia-tou-rompin-gouiliams/"
+        "https://www.in.gr/2026/08/11/greece/sygkrousi-touristikon-ploion-stous-antipaksous-treis-elafra-traymaties/",
+        "https://www.in.gr/2026/08/11/pet-stories/dimos-megareon-pano-apo-280-zoa-diasothikan-apo-tin-pyrkagia-131-epestrepsan-stis-oikogeneies-tous/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/giati-i-gen-z-epanaferei-to-stylo-kai-to-xarti-sto-xoro-ergasias/",
+        "https://www.in.gr/2026/08/11/sports/othersports/mpermigxam-2026-ston-teliko-tou-ypsous-merlos-kai-mita-vids/",
+        "https://www.in.gr/2026/08/11/greece/agrinio-paristanan-tous-logistes-kai-eksapatousan-ilikiomenous-synelifthisan-dyo-drastes-o-enas-16xronos/"
       ],
-      "seen_at_utc": "2026-08-11T13:51:33.009562+00:00"
+      "seen_at_utc": "2026-08-11T14:17:10.232615+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T13:51:33.009722+00:00"
+  "updated_at_utc": "2026-08-11T14:17:10.232763+00:00"
 }
