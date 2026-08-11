@@ -1,18 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564395752/stelios-ramfos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
-      "title": "Στέλιος Ράμφος: Την Τετάρτη η κηδεία του – Η παράκληση της οικογένειας",
-      "normalized_title": "ΣΤΕΛΙΟΣ ΡΑΜΦΟΣ: ΤΗΝ ΤΕΤΑΡΤΗ Η ΚΗΔΕΙΑ ΤΟΥ – Η ΠΑΡΑΚΛΗΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564395782/seismos-stin-kolomvia-i-stigmi-poy-katarreei-nosokomeio-sto-kali-vinteo/",
+      "title": "Σεισμός στην Κολομβία – Η στιγμή που καταρρέει νοσοκομείο στο Κάλι (Βίντεο)",
+      "normalized_title": "ΣΕΙΣΜΟΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ – Η ΣΤΙΓΜΗ ΠΟΥ ΚΑΤΑΡΡΕΕΙ ΝΟΣΟΚΟΜΕΙΟ ΣΤΟ ΚΑΛΙ (ΒΙΝΤΕΟ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564395752/stelios-ramfos-tin-tetarti-i-kideia-toy-i-paraklisi-tis-oikogeneias/",
-        "https://www.kathimerini.gr/economy/international/564395326/magnitis-gia-toys-ependytes-oi-eyropaikes-chrimatagores/",
-        "https://www.kathimerini.gr/world/564395743/se-synagermo-paramenei-o-kanadas-katoikoi-trapikan-se-fygi-gia-na-sothoyn-apo-ti-fotia/",
-        "https://www.kathimerini.gr/culture/agenda/564395722/exodos-ektos-polis-tin-triti-11-aygoystoy-synaylia-se-iamatika-loytra-kai-ach-kai-vach/",
-        "https://www.kathimerini.gr/world/564394975/ispania-islandia-voyliazoyn-apo-toyristes/",
-        "https://www.kathimerini.gr/society/564395725/lasithi-dyo-syllipseis-meta-ti-methi-anilikoy-se-koinoniki-ekdilosi/"
+        "https://www.kathimerini.gr/world/564395782/seismos-stin-kolomvia-i-stigmi-poy-katarreei-nosokomeio-sto-kali-vinteo/",
+        "https://www.kathimerini.gr/world/564395785/mystiki-symfonia-apomakrynsis-pyrinikon-apo-kryfi-egkatastasi-sti-syria-apokalyptei-to-axios/",
+        "https://www.kathimerini.gr/society/564395764/mykonos-synelifthisan-dyo-23chronoi-gia-diakinisi-narkotikon-kataschethikan-5-kila-oysion/"
       ],
-      "seen_at_utc": "2026-08-11T07:51:47.854242+00:00"
+      "seen_at_utc": "2026-08-11T08:17:12.912031+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,37 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863416/friki-sta-melissatika-volou-kataggelies-gia-nekra-kai-arrosta-zoa-se-idiotiko-katafugio/?utm_source=rss",
-      "title": "Φρίκη στα Μελισσάτικα Βόλου: Καταγγελίες για νεκρά και άρρωστα ζώα σε ιδιωτικό καταφύγιο",
-      "normalized_title": "ΦΡΙΚΗ ΣΤΑ ΜΕΛΙΣΣΑΤΙΚΑ ΒΟΛΟΥ: ΚΑΤΑΓΓΕΛΙΕΣ ΓΙΑ ΝΕΚΡΑ ΚΑΙ ΑΡΡΩΣΤΑ ΖΩΑ ΣΕ ΙΔΙΩΤΙΚΟ ΚΑΤΑΦΥΓΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1863425/anoihti-xana-i-palaia-paraliaki-stin-kallithea-etoimi-i-nea-gefura-deite-fotografies/?utm_source=rss",
+      "title": "Ανοιχτή ξανά η Παλαιά Παραλιακή στην Καλλιθέα, έτοιμη η νέα γέφυρα - Δείτε φωτογραφίες",
+      "normalized_title": "ΑΝΟΙΧΤΗ ΞΑΝΑ Η ΠΑΛΑΙΑ ΠΑΡΑΛΙΑΚΗ ΣΤΗΝ ΚΑΛΛΙΘΕΑ, ΕΤΟΙΜΗ Η ΝΕΑ ΓΕΦΥΡΑ - ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863416/friki-sta-melissatika-volou-kataggelies-gia-nekra-kai-arrosta-zoa-se-idiotiko-katafugio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863406/epeisodiaki-katadioxi-meta-apo-apopeira-klopis-kalodion-se-fotovoltaiko-parko-tis-kozanis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863405/anevike-apotoma-i-thermokrasia-kai-amesos-egine-seismos-ellines-tis-kolomvias-perigrafoun-ti-stigmi-pou-htupise-o/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863425/anoihti-xana-i-palaia-paraliaki-stin-kallithea-etoimi-i-nea-gefura-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863423/video-stin-euelpidon-i-46hroni-katigoroumeni-gia-ton-ebrismo-stin-marfin-simera-i-apologia-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863420/anartithikan-oi-prosorinoi-pinakes-anapliroton-ekpaideutikon-tou-asep-deite-ta-apotelesmata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T07:51:47.854341+00:00"
+      "seen_at_utc": "2026-08-11T08:17:12.912161+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1445718/oliki-ekleipsi-ilioy-to-spanio-fainomeno-poy-tha-kathilosei-ekatommyria-anthropoys-poy-tha-einai-orati-ti-tha-doyme/",
-      "title": "Ολική έκλειψη Ηλίου: Το σπάνιο φαινόμενο που θα καθηλώσει εκατομμύρια ανθρώπους – Που θα είναι ορατή, τι θα δούμε",
-      "normalized_title": "ΟΛΙΚΗ ΕΚΛΕΙΨΗ ΗΛΙΟΥ: ΤΟ ΣΠΑΝΙΟ ΦΑΙΝΟΜΕΝΟ ΠΟΥ ΘΑ ΚΑΘΗΛΩΣΕΙ ΕΚΑΤΟΜΜΥΡΙΑ ΑΝΘΡΩΠΟΥΣ – ΠΟΥ ΘΑ ΕΙΝΑΙ ΟΡΑΤΗ, ΤΙ ΘΑ ΔΟΥΜΕ",
+      "url": "https://www.efsyn.gr/ellada/1445740/marfin-stin-eyelpidon-i-46hroni-katigoroymeni-vinteo/",
+      "title": "Marfin: Στην Ευελπίδων η 46χρονη κατηγορούμενη [βίντεο]",
+      "normalized_title": "MARFIN: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ Η 46ΧΡΟΝΗ ΚΑΤΗΓΟΡΟΥΜΕΝΗ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1445718/oliki-ekleipsi-ilioy-to-spanio-fainomeno-poy-tha-kathilosei-ekatommyria-anthropoys-poy-tha-einai-orati-ti-tha-doyme/",
-        "https://www.efsyn.gr/politiki/1445719/alexis-tsipras-kalpi-tis-anatropis-i-deyteri-kalpi-oi-metagrafes-aerodromioy-den-petyhainoyn-stin-politiki/"
+        "https://www.efsyn.gr/ellada/1445740/marfin-stin-eyelpidon-i-46hroni-katigoroymeni-vinteo/",
+        "https://www.efsyn.gr/politiki/1445590/evros-ston-kalatho-ton-ahriston-to-master-plan-3-dis-eyro-i-megali-apati-toy-maximoy-kai-i-orgi-mpenoy/",
+        "https://www.efsyn.gr/politiki/1445724/zahariadis-kata-kyvernisis-meta-to-protoselido-tis-ef-syn-otan-svisoyn-ta-fota-arhizoyn-oi-perikopes/"
       ],
-      "seen_at_utc": "2026-08-11T07:51:47.854320+00:00"
+      "seen_at_utc": "2026-08-11T08:17:12.912140+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/in-science/episthmes/ekleipsi-iliou-2026-oi-perioxes-opou-tha-einai-orati-pou-tha-tin-parakolouthisoume-live/",
-      "title": "Έκλειψη Ηλίου 2026: Οι περιοχές όπου θα είναι ορατή – Πού θα την παρακολουθήσουμε live",
-      "normalized_title": "ΕΚΛΕΙΨΗ ΗΛΙΟΥ 2026: ΟΙ ΠΕΡΙΟΧΕΣ ΟΠΟΥ ΘΑ ΕΙΝΑΙ ΟΡΑΤΗ – ΠΟΥ ΘΑ ΤΗΝ ΠΑΡΑΚΟΛΟΥΘΗΣΟΥΜΕ LIVE",
+      "url": "https://www.in.gr/2026/08/11/greece/anapantita-erotimata-gia-tin-tragodia-stin-paro-o-pnigmos-sto-glyko-nero-einai-pio-grigoros-apo-oti-sto-almyro/",
+      "title": "Αναπάντητα ερωτήματα για την τραγωδία στην Πάρο – «Ο πνιγμός στο γλυκό νερό είναι πιο γρήγορος από ότι στο αλμυρό»",
+      "normalized_title": "ΑΝΑΠΑΝΤΗΤΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΗΝ ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΠΑΡΟ – «Ο ΠΝΙΓΜΟΣ ΣΤΟ ΓΛΥΚΟ ΝΕΡΟ ΕΙΝΑΙ ΠΙΟ ΓΡΗΓΟΡΟΣ ΑΠΟ ΟΤΙ ΣΤΟ ΑΛΜΥΡΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/in-science/episthmes/ekleipsi-iliou-2026-oi-perioxes-opou-tha-einai-orati-pou-tha-tin-parakolouthisoume-live/",
-        "https://www.in.gr/2026/08/11/world/katoikoi-trepontai-se-fygi-gia-na-sothoun-apo-pyrkagia-pou-mainetai-ston-kanada/",
-        "https://www.in.gr/2026/08/11/sports/football/reportaz-vomva-o-mesi-diakoptei-ep-aoriston-tin-kariera-tou/"
+        "https://www.in.gr/2026/08/11/greece/anapantita-erotimata-gia-tin-tragodia-stin-paro-o-pnigmos-sto-glyko-nero-einai-pio-grigoros-apo-oti-sto-almyro/",
+        "https://www.in.gr/2026/08/11/greece/kypseli-metakinisi-ktirion-apo-tis-ergasies-tou-metro-mixanikos-entopise-provlimata-sti-statikotita/",
+        "https://www.in.gr/2026/08/11/greece/stin-eyelpidon-i-46xroni-katigoroumeni-gia-tin-ypothesi-tis-marfin/",
+        "https://www.in.gr/2026/08/11/sports/basketball/ethniki-mpasket-oristika-xoris-gianni-sta-prokrimatika-tou-pagkosmiou-mesa-ntorsei-kai-kalathis/",
+        "https://www.in.gr/2026/08/11/life/culture-live/scapegoat-o-tzeikomp-elornti-se-syzitiseis-gia-ti-nea-tainia-tou-ari-aster/",
+        "https://www.in.gr/2026/08/11/health/ios-dytikou-neilou-giati-ayksanontai-ta-krousmata-stin-attiki-oi-synthikes-pou-eynooun-ta-kounoupia-kai-ta-metra-prostasias/"
       ],
-      "seen_at_utc": "2026-08-11T07:51:47.854292+00:00"
+      "seen_at_utc": "2026-08-11T08:17:12.912115+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T07:51:47.854405+00:00"
+  "updated_at_utc": "2026-08-11T08:17:12.912237+00:00"
 }
