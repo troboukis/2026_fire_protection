@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564395275/endiaferon-tis-fairfax-gia-ton-klado-estiasis-tis-vivartia/",
-      "title": "Ενδιαφέρον της Fairfax για τον κλάδο εστίασης της Vivartia",
-      "normalized_title": "ΕΝΔΙΑΦΕΡΟΝ ΤΗΣ FAIRFAX ΓΙΑ ΤΟΝ ΚΛΑΔΟ ΕΣΤΙΑΣΗΣ ΤΗΣ VIVARTIA",
+      "url": "https://www.kathimerini.gr/world/564395686/a-great-book-to-neo-podcast-toy-mparak-ompama-gia-ta-vivlia-poy-toy-allaxan-ti-zoi/",
+      "title": "«A Great Book»: Το νέο podcast του Μπαράκ Ομπάμα για τα βιβλία που του άλλαξαν τη ζωή",
+      "normalized_title": "«A GREAT BOOK»: ΤΟ ΝΕΟ PODCAST ΤΟΥ ΜΠΑΡΑΚ ΟΜΠΑΜΑ ΓΙΑ ΤΑ ΒΙΒΛΙΑ ΠΟΥ ΤΟΥ ΑΛΛΑΞΑΝ ΤΗ ΖΩΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564395275/endiaferon-tis-fairfax-gia-ton-klado-estiasis-tis-vivartia/",
-        "https://www.kathimerini.gr/visual/infographics/564395269/yperdiplasiastikan-ta-kathara-kerdi-tis-fraport-greece-sta-11-6-ekat-eyro/",
-        "https://www.kathimerini.gr/world/564395608/tramp-terastio-lathos-endechomeni-apomakrynsi-toy-infantino-apo-ti-fifa/",
-        "https://www.kathimerini.gr/society/564395602/zakynthos-fotia-se-dasiki-ektasi-ston-marathia-ichise-to-112/"
+        "https://www.kathimerini.gr/world/564395686/a-great-book-to-neo-podcast-toy-mparak-ompama-gia-ta-vivlia-poy-toy-allaxan-ti-zoi/",
+        "https://www.kathimerini.gr/world/564395680/ennea-nekroi-se-rosikes-epitheseis-stin-oykrania-enas-nekros-se-oykraniki-epidromi/",
+        "https://www.kathimerini.gr/politics/parties/564394891/prova-polosis-me-to-vlemma-stin-proeklogiki-periodo/",
+        "https://www.kathimerini.gr/society/564395653/karditsa-poini-okto-eton-ston-17chrono-gia-ti-dolofonia-toy-gnostoy-tragoydisti-athoos-o-16chronos/",
+        "https://www.kathimerini.gr/opinion/564395020/90-chronia-prin-11-8-1936/"
       ],
-      "seen_at_utc": "2026-08-11T06:51:44.792538+00:00"
+      "seen_at_utc": "2026-08-11T07:17:12.391211+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,39 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863367/fotia-tora-se-dasiki-ektasi-ston-marathia-zakunthou/?utm_source=rss",
-      "title": "Φωτιά τώρα σε δασική έκταση στον Μαραθιά Ζακύνθου",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟΝ ΜΑΡΑΘΙΑ ΖΑΚΥΝΘΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1863390/agios-dimitrios-pneumatiko-oidima-i-epikratesteri-aitia-thanatou-tou-astunomikou-kleidi-oi-toxikologikes-exetaseis/?utm_source=rss",
+      "title": "Άγιος Δημήτριος: Πνευμονικό οίδημα η επικρατέστερη αιτία θανάτου του αστυνομικού, κλειδί οι τοξικολογικές εξετάσεις",
+      "normalized_title": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ: ΠΝΕΥΜΟΝΙΚΟ ΟΙΔΗΜΑ Η ΕΠΙΚΡΑΤΕΣΤΕΡΗ ΑΙΤΙΑ ΘΑΝΑΤΟΥ ΤΟΥ ΑΣΤΥΝΟΜΙΚΟΥ, ΚΛΕΙΔΙ ΟΙ ΤΟΞΙΚΟΛΟΓΙΚΕΣ ΕΞΕΤΑΣΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863367/fotia-tora-se-dasiki-ektasi-ston-marathia-zakunthou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863364/kos-sunelifthi-29hronos-agglos-gia-epithesi-se-varos-46hronou-pou-summeteihe-se-poreia-gia-tin-palaistini/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863360/sta-hania-to-megalutero-istioforo-krouazieroploio-tou-kosmou-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863390/agios-dimitrios-pneumatiko-oidima-i-epikratesteri-aitia-thanatou-tou-astunomikou-kleidi-oi-toxikologikes-exetaseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863388/sunelifthi-56hronos-odigos-taxi-sto-kalohori-metefere-tesseris-allodapous-horis-taxidiotika-eggrafa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863382/mukonos-shedon-pede-kila-kannavis-kai-pano-apo-miso-kilo-kokainis-edopistikan-se-spiti-ston-agio-sosti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863380/karditsa-fulakisi-8-eton-ston-17hrono-gia-ti-dolofonia-tou-tragoudisti-giorgou-tsitoglou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863379/touristiko-skafos-apo-kousadasi-me-250-epivates-eftase-me-athlies-stin-ko-i-paremvasi-limenikou-kai-to-bravo-kikili/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T06:30:16.047900+00:00"
+      "seen_at_utc": "2026-08-11T07:17:12.391330+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445710/erotisi-syriza-se-georgiadi-gia-toys-dyo-axonikoys-tomografoys-sto-attikon-poy-den-leitoyrgoyn/",
-      "title": "Ερώτηση ΣΥΡΙΖΑ σε Γεωργιάδη για τους δύο αξονικούς τομογράφους στο «Αττικόν» που δεν λειτουργούν",
-      "normalized_title": "ΕΡΩΤΗΣΗ ΣΥΡΙΖΑ ΣΕ ΓΕΩΡΓΙΑΔΗ ΓΙΑ ΤΟΥΣ ΔΥΟ ΑΞΟΝΙΚΟΥΣ ΤΟΜΟΓΡΑΦΟΥΣ ΣΤΟ «ΑΤΤΙΚΟΝ» ΠΟΥ ΔΕΝ ΛΕΙΤΟΥΡΓΟΥΝ",
+      "url": "https://www.efsyn.gr/stiles/1445657/mia-exairetiki-synenteyxi/",
+      "title": "Μια «εξαιρετική συνέντευξη»",
+      "normalized_title": "ΜΙΑ «ΕΞΑΙΡΕΤΙΚΗ ΣΥΝΕΝΤΕΥΞΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445710/erotisi-syriza-se-georgiadi-gia-toys-dyo-axonikoys-tomografoys-sto-attikon-poy-den-leitoyrgoyn/",
-        "https://www.efsyn.gr/kosmos/1445696/mystiki-epiheirisi-gia-ton-tramp-meta-ti-synodo-stin-toyrkia-ton-ekrypsan-se-ohima-trofodosias-kai-petaxe-me-allo-aeroplano/",
-        "https://www.efsyn.gr/ellada/1445698/zakynthos-fotia-se-dasiki-ektasi-ston-marathia-epiheiroyn-tria-enaeria/"
+        "https://www.efsyn.gr/stiles/1445657/mia-exairetiki-synenteyxi/",
+        "https://www.efsyn.gr/media/1445650/press-point-posa-ekatommyria-akoma-tha-dosoyn/"
       ],
-      "seen_at_utc": "2026-08-11T06:51:44.792612+00:00"
+      "seen_at_utc": "2026-08-11T07:17:12.391292+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/oukrania-ennea-nekroi-apo-rosikes-epitheseis-ekaterothen-pligmata/",
-      "title": "Εννέα νεκροί από ρωσικές επιθέσεις στην Ουκρανία - Εκατέρωθεν πλήγματα",
-      "normalized_title": "ΕΝΝΕΑ ΝΕΚΡΟΙ ΑΠΟ ΡΩΣΙΚΕΣ ΕΠΙΘΕΣΕΙΣ ΣΤΗΝ ΟΥΚΡΑΝΙΑ - ΕΚΑΤΕΡΩΘΕΝ ΠΛΗΓΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/11/world/venezouela-synantisi-stelexon-ypoik-ton-ipa-me-tin-proedro-rodrigkes-me-fonto-tis-diakopes-ilektrodotisis-tis-xoras/",
+      "title": "Συνάντηση στελεχών ΥΠΟΙΚ των ΗΠΑ με την πρόεδρο Ροδρίγκες, με φόντο τις διακοπές ηλεκτροδότησης στη Βενεζουέλα",
+      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΣΤΕΛΕΧΩΝ ΥΠΟΙΚ ΤΩΝ ΗΠΑ ΜΕ ΤΗΝ ΠΡΟΕΔΡΟ ΡΟΔΡΙΓΚΕΣ, ΜΕ ΦΟΝΤΟ ΤΙΣ ΔΙΑΚΟΠΕΣ ΗΛΕΚΤΡΟΔΟΤΗΣΗΣ ΣΤΗ ΒΕΝΕΖΟΥΕΛΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/oukrania-ennea-nekroi-apo-rosikes-epitheseis-ekaterothen-pligmata/",
-        "https://www.in.gr/2026/08/11/greece/megali-fotia-ston-marathia-zakynthou-sikothikan-6-enaeria-mesa-ixise-112/",
-        "https://www.in.gr/2026/08/11/sports/football/oi-athlitikes-metadoseis-tis-imeras-11-8-drasi-me-ta-eyropaika-mats-olympiakou-kai-panathinaikou/",
-        "https://www.in.gr/2026/08/11/greece/pneymoniko-oidima-i-aitia-thanatou-tou-astynomikou-krisimes-oi-apantiseis-ton-toksikologikon/"
+        "https://www.in.gr/2026/08/11/world/venezouela-synantisi-stelexon-ypoik-ton-ipa-me-tin-proedro-rodrigkes-me-fonto-tis-diakopes-ilektrodotisis-tis-xoras/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/ta-5-mi-prin-noikiasete-ena-akinito-o-odigos-gia-mia-asfali-enoikiasi/",
+        "https://www.in.gr/2026/08/11/sports/eyropaiko-protathlima-stivou-grafei-istoria-o-tentoglou/",
+        "https://www.in.gr/2026/08/11/politics/aftodioikisi/dimiourgia-stegis-ypostirizomenis-diaviosis-amea-stin-ilioupoli/",
+        "https://www.in.gr/2026/08/11/pet-stories/poies-einai-oi-pente-alitheies-sti-diatrofi-tou-skylou/",
+        "https://www.in.gr/2026/08/11/go-fun/fizz/sakira-to-minyma-symparastasis-gia-ton-isxyro-seismo-stin-kolomvia/"
       ],
-      "seen_at_utc": "2026-08-11T06:51:44.792582+00:00"
+      "seen_at_utc": "2026-08-11T07:17:12.391251+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T06:51:44.792691+00:00"
+  "updated_at_utc": "2026-08-11T07:17:12.391400+00:00"
 }
