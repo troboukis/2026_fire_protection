@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564393940/meionotikos-logoklopos/",
-      "title": "Μειονοτικός λογοκλόπος",
-      "normalized_title": "ΜΕΙΟΝΟΤΙΚΟΣ ΛΟΓΟΚΛΟΠΟΣ",
+      "url": "https://www.kathimerini.gr/economy/564391924/to-aerodromio-poy-enonei-india-me-kriti/",
+      "title": "Το αεροδρόμιο που ενώνει Ινδία με Κρήτη",
+      "normalized_title": "ΤΟ ΑΕΡΟΔΡΟΜΙΟ ΠΟΥ ΕΝΩΝΕΙ ΙΝΔΙΑ ΜΕ ΚΡΗΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564393940/meionotikos-logoklopos/",
-        "https://www.kathimerini.gr/world/564396460/apo-ton-klinton-ston-tramp-i-epicheirisi-paraplanisis-me-to-air-force-one/"
+        "https://www.kathimerini.gr/economy/564391924/to-aerodromio-poy-enonei-india-me-kriti/",
+        "https://www.kathimerini.gr/society/564396613/marfin-idiaiteros-epikindyni-i-46chroni-to-skeptiko-tis-profylakisis/",
+        "https://www.kathimerini.gr/society/564394915/oi-treis-megaloi-antipaloi-tis-mnimis-ti-deichnei-nea-meleti/"
       ],
-      "seen_at_utc": "2026-08-11T17:30:06.646159+00:00"
+      "seen_at_utc": "2026-08-11T17:51:47.349003+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,25 +1270,28 @@
       "seen_at_utc": "2026-08-11T17:30:06.646289+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446149/neari-athlitria-apanta-stis-ratsistikes-epitheseis-to-poso-kypria-eimai-to-deihnoyn-ta-apotelesmata-kai-i-anthropia-moy/",
-      "title": "Νεαρή αθλήτρια απαντά στις ρατσιστικές επιθέσεις: Το πόσο «Κύπρια» είμαι το δείχνουν τα αποτελέσματα και η ανθρωπιά μου",
-      "normalized_title": "ΝΕΑΡΗ ΑΘΛΗΤΡΙΑ ΑΠΑΝΤΑ ΣΤΙΣ ΡΑΤΣΙΣΤΙΚΕΣ ΕΠΙΘΕΣΕΙΣ: ΤΟ ΠΟΣΟ «ΚΥΠΡΙΑ» ΕΙΜΑΙ ΤΟ ΔΕΙΧΝΟΥΝ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΚΑΙ Η ΑΝΘΡΩΠΙΑ ΜΟΥ",
+      "url": "https://www.efsyn.gr/oikonomia/1445829/pos-i-akriveia-allaxe-tis-diatrofikes-synitheies-eidos-polyteleias-to-omo-kreas-strofi-sta-etoima-kai-propsimena/",
+      "title": "Πώς η ακρίβεια άλλαξε τις διατροφικές συνήθειες: Είδος πολυτελείας το ωμό κρέας – Στροφή στα έτοιμα και προψημένα",
+      "normalized_title": "ΠΩΣ Η ΑΚΡΙΒΕΙΑ ΑΛΛΑΞΕ ΤΙΣ ΔΙΑΤΡΟΦΙΚΕΣ ΣΥΝΗΘΕΙΕΣ: ΕΙΔΟΣ ΠΟΛΥΤΕΛΕΙΑΣ ΤΟ ΩΜΟ ΚΡΕΑΣ – ΣΤΡΟΦΗ ΣΤΑ ΕΤΟΙΜΑ ΚΑΙ ΠΡΟΨΗΜΕΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446149/neari-athlitria-apanta-stis-ratsistikes-epitheseis-to-poso-kypria-eimai-to-deihnoyn-ta-apotelesmata-kai-i-anthropia-moy/",
-        "https://www.efsyn.gr/ellada/1446151/ypoyrgeio-paideias-anakoinothikan-oi-monimoi-diorismoi-4-789-ekpaideytikon-oi-pinakes-ton-epityhonton/",
-        "https://www.efsyn.gr/ellada/1446148/ypoklopes-neo-htypima-kesse-milaei-gia-antifatikes-eisaggelikes-kriseis-stin-ypothesi-predator/"
+        "https://www.efsyn.gr/oikonomia/1445829/pos-i-akriveia-allaxe-tis-diatrofikes-synitheies-eidos-polyteleias-to-omo-kreas-strofi-sta-etoima-kai-propsimena/",
+        "https://www.efsyn.gr/ellada/1446160/pyrkagia-sto-notio-pilio-ihise-to-112/",
+        "https://www.efsyn.gr/ellada/1446158/syllipseis-kai-tsoyhtera-prostima-gia-tin-pyrkagia-sti-zakyntho-kai-ergasies-en-meso-ypsiloy-kindynoy-pyrkagias/"
       ],
-      "seen_at_utc": "2026-08-11T17:30:06.646263+00:00"
+      "seen_at_utc": "2026-08-11T17:51:47.349079+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/sports/football/olympiakos-dynamiki-parousia-apo-ton-kosmo-tou-sto-gipedo-tis-naimegken-vidpics/",
-      "title": "Δυναμική παρουσία από τον κόσμο του Ολυμπιακού στο γήπεδο της Ναϊμέγκεν (vid+pics)",
-      "normalized_title": "ΔΥΝΑΜΙΚΗ ΠΑΡΟΥΣΙΑ ΑΠΟ ΤΟΝ ΚΟΣΜΟ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΣΤΟ ΓΗΠΕΔΟ ΤΗΣ ΝΑΙΜΕΓΚΕΝ (VID+PICS)",
+      "url": "https://www.in.gr/2026/08/11/sports/football/kali-apokrousi-tou-popovits-kai-dokari-gia-ti-naimegken-vid/",
+      "title": "Καλή απόκρουση του Πόποβιτς και δοκάρι για τη Ναϊμέγκεν (vid)",
+      "normalized_title": "ΚΑΛΗ ΑΠΟΚΡΟΥΣΗ ΤΟΥ ΠΟΠΟΒΙΤΣ ΚΑΙ ΔΟΚΑΡΙ ΓΙΑ ΤΗ ΝΑΙΜΕΓΚΕΝ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/sports/football/olympiakos-dynamiki-parousia-apo-ton-kosmo-tou-sto-gipedo-tis-naimegken-vidpics/"
+        "https://www.in.gr/2026/08/11/sports/football/kali-apokrousi-tou-popovits-kai-dokari-gia-ti-naimegken-vid/",
+        "https://www.in.gr/2026/08/11/life/ereyna-7-stous-10-ellines-lene-nai-stin-odysseia-provoli-gia-ti-xora-dixazei-i-oraia-eleni/",
+        "https://www.in.gr/2026/08/11/world/kolomvia-anevainei-diarkos-o-arithmos-ton-nekron-sxedon-3-000-agnoountai-meta-ton-seismo-ton-74-rixter/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/kaysima-akrivoteri-venzini-me-poly-xamilotero-eisodima/"
       ],
-      "seen_at_utc": "2026-08-11T17:30:06.646224+00:00"
+      "seen_at_utc": "2026-08-11T17:51:47.349047+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T17:30:06.646377+00:00"
+  "updated_at_utc": "2026-08-11T17:51:47.349163+00:00"
 }
