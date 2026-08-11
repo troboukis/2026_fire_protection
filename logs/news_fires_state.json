@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/visual/infographics/564395254/ftochos-syggenis-i-ereyna/",
-      "title": "Φτωχός συγγενής η έρευνα",
-      "normalized_title": "ΦΤΩΧΟΣ ΣΥΓΓΕΝΗΣ Η ΕΡΕΥΝΑ",
+      "url": "https://www.kathimerini.gr/economy/local/564395287/apovasi-24-ekat-amerikanon-toyriston-stin-eyropi-to-2025/",
+      "title": "«Απόβαση» 24 εκατ. Αμερικανών τουριστών στην Ευρώπη το 2025",
+      "normalized_title": "«ΑΠΟΒΑΣΗ» 24 ΕΚΑΤ. ΑΜΕΡΙΚΑΝΩΝ ΤΟΥΡΙΣΤΩΝ ΣΤΗΝ ΕΥΡΩΠΗ ΤΟ 2025",
       "seen_urls": [
-        "https://www.kathimerini.gr/visual/infographics/564395254/ftochos-syggenis-i-ereyna/",
-        "https://www.kathimerini.gr/world/564395803/zelenski-o-poytin-chrisimopoiise-voreiokoreatikoys-pyrayloys-se-epithesi-stin-oykrania/",
-        "https://www.kathimerini.gr/culture/theater/564395047/somata-poy-afigoyntai-ti-via/"
+        "https://www.kathimerini.gr/economy/local/564395287/apovasi-24-ekat-amerikanon-toyriston-stin-eyropi-to-2025/",
+        "https://www.kathimerini.gr/society/564391519/o-daidalos-ton-misthomenon-enaerion-meson/",
+        "https://www.kathimerini.gr/society/564395839/aigialeia-cheiropedes-se-mitera-poy-chtypoyse-to-6chrono-paidi-tis-se-paralia/",
+        "https://www.kathimerini.gr/culture/564391309/epidayros-proti-fora-gia-oloys/",
+        "https://www.kathimerini.gr/world/564394978/anisychia-gia-mplak-aoyt-enopsei-tis-ekleipsis-ilioy/",
+        "https://www.kathimerini.gr/athletics/564395818/ethniki-mpasket-i-anakoinosi-tis-eok-gia-tin-apoysia-toy-gianni-antetokoynmpo-apo-tis-kliseis/"
       ],
-      "seen_at_utc": "2026-08-11T08:30:01.627954+00:00"
+      "seen_at_utc": "2026-08-11T08:51:24.018294+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,24 +1275,27 @@
       "seen_at_utc": "2026-08-11T08:17:12.912161+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1445735/kolomvia-o-ishyroteros-seismos-toy-aiona-sti-hora-anazitisi-sta-ereipia-me-gymna-heria-164-nekroi-vinteo/",
-      "title": "Κολομβία: «Ο ισχυρότερος σεισμός του αιώνα στη χώρα» – Αναζήτηση στα ερείπια και με γυμνά χέρια, 164 νεκροί [βίντεο]",
-      "normalized_title": "ΚΟΛΟΜΒΙΑ: «Ο ΙΣΧΥΡΟΤΕΡΟΣ ΣΕΙΣΜΟΣ ΤΟΥ ΑΙΩΝΑ ΣΤΗ ΧΩΡΑ» – ΑΝΑΖΗΤΗΣΗ ΣΤΑ ΕΡΕΙΠΙΑ ΚΑΙ ΜΕ ΓΥΜΝΑ ΧΕΡΙΑ, 164 ΝΕΚΡΟΙ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1445772/astynomiki-epiheirisi-sti-mykono-katashethikan-pano-apo-5-kila-narkotikon-synelifthisan-dyo-23hronoi/",
+      "title": "Αστυνομική επιχείρηση στη Μύκονο: Κατασχέθηκαν πάνω από 5 κιλά ναρκωτικών – Συνελήφθησαν δύο 23χρονοι",
+      "normalized_title": "ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΗ ΜΥΚΟΝΟ: ΚΑΤΑΣΧΕΘΗΚΑΝ ΠΑΝΩ ΑΠΟ 5 ΚΙΛΑ ΝΑΡΚΩΤΙΚΩΝ – ΣΥΝΕΛΗΦΘΗΣΑΝ ΔΥΟ 23ΧΡΟΝΟΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1445735/kolomvia-o-ishyroteros-seismos-toy-aiona-sti-hora-anazitisi-sta-ereipia-me-gymna-heria-164-nekroi-vinteo/",
-        "https://www.efsyn.gr/media/1445766/stayros-theodorakis-ston-skai-apo-ti-nea-sezon-ti-tha-paroysiazei/"
+        "https://www.efsyn.gr/ellada/1445772/astynomiki-epiheirisi-sti-mykono-katashethikan-pano-apo-5-kila-narkotikon-synelifthisan-dyo-23hronoi/",
+        "https://www.efsyn.gr/athlitismos/1445709/fifa-anoihti-epistoli-anoihtos-polemos/"
       ],
-      "seen_at_utc": "2026-08-11T08:30:01.628034+00:00"
+      "seen_at_utc": "2026-08-11T08:51:24.018420+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/in-science/episthmes/aystralia-tha-emvoliasei-ta-ptina-kata-tou-stelexous-h5-tis-gripis-ton-ptinon/",
-      "title": "Η Αυστραλία θα εμβολιάσει τα πτηνά κατά του στελέχους H5 της γρίπης των πτηνών",
-      "normalized_title": "Η ΑΥΣΤΡΑΛΙΑ ΘΑ ΕΜΒΟΛΙΑΣΕΙ ΤΑ ΠΤΗΝΑ ΚΑΤΑ ΤΟΥ ΣΤΕΛΕΧΟΥΣ H5 ΤΗΣ ΓΡΙΠΗΣ ΤΩΝ ΠΤΗΝΩΝ",
+      "url": "https://www.in.gr/2026/08/11/world/zelenski-i-mosxa-xrisimopoiise-vallistikous-pyraylous-apo-ti-voreia-korea-gia-tin-epithesi-sti-zaporizia/",
+      "title": "Ο Ζελένσκι κατηγορεί τη Μόσχα ότι χρησιμοποίησε βορειοκορεατικούς βαλλιστικούς πυραύλους για την επίθεση στη Ζαπορίζια",
+      "normalized_title": "Ο ΖΕΛΕΝΣΚΙ ΚΑΤΗΓΟΡΕΙ ΤΗ ΜΟΣΧΑ ΟΤΙ ΧΡΗΣΙΜΟΠΟΙΗΣΕ ΒΟΡΕΙΟΚΟΡΕΑΤΙΚΟΥΣ ΒΑΛΛΙΣΤΙΚΟΥΣ ΠΥΡΑΥΛΟΥΣ ΓΙΑ ΤΗΝ ΕΠΙΘΕΣΗ ΣΤΗ ΖΑΠΟΡΙΖΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/in-science/episthmes/aystralia-tha-emvoliasei-ta-ptina-kata-tou-stelexous-h5-tis-gripis-ton-ptinon/"
+        "https://www.in.gr/2026/08/11/world/zelenski-i-mosxa-xrisimopoiise-vallistikous-pyraylous-apo-ti-voreia-korea-gia-tin-epithesi-sti-zaporizia/",
+        "https://www.in.gr/2026/08/11/economy/diethnis-oikonomia/emfragma-sta-aerodromia-tis-eyropis/",
+        "https://www.in.gr/2026/08/11/sports/basketball/euroleague/ispanika-mme-o-mirotits-einai-i-pio-fysiki-epilogi-gia-ton-olympiako/",
+        "https://www.in.gr/2026/08/11/istoriko-arxeio/stelios-ramfos-i-glossa-poreyetai-agkaliazontas-tous-nekrous-kai-tous-zontas/"
       ],
-      "seen_at_utc": "2026-08-11T08:30:01.627994+00:00"
+      "seen_at_utc": "2026-08-11T08:51:24.018364+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T08:30:01.628106+00:00"
+  "updated_at_utc": "2026-08-11T08:51:24.018498+00:00"
 }
