@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564396007/kolpos-toy-oman-anafora-gia-peristatiko-me-tanker-kai-stratiotikes-dynameis/",
-      "title": "Κόλπος του Ομάν: Αναφορά για περιστατικό με τάνκερ και στρατιωτικές δυνάμεις",
-      "normalized_title": "ΚΟΛΠΟΣ ΤΟΥ ΟΜΑΝ: ΑΝΑΦΟΡΑ ΓΙΑ ΠΕΡΙΣΤΑΤΙΚΟ ΜΕ ΤΑΝΚΕΡ ΚΑΙ ΣΤΡΑΤΙΩΤΙΚΕΣ ΔΥΝΑΜΕΙΣ",
+      "url": "https://www.kathimerini.gr/economy/international/564395218/to-kineziko-sok-2-0-moirazei-xana-toys-roloys/",
+      "title": "Το «κινεζικό σοκ 2.0» μοιράζει ξανά τους ρόλους",
+      "normalized_title": "ΤΟ «ΚΙΝΕΖΙΚΟ ΣΟΚ 2.0» ΜΟΙΡΑΖΕΙ ΞΑΝΑ ΤΟΥΣ ΡΟΛΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564396007/kolpos-toy-oman-anafora-gia-peristatiko-me-tanker-kai-stratiotikes-dynameis/",
-        "https://www.kathimerini.gr/world/564395992/ispania-i-ekleipsi-o-astro-toyrismos-kai-o-fovos-tis-pyrkagias/"
+        "https://www.kathimerini.gr/economy/international/564395218/to-kineziko-sok-2-0-moirazei-xana-toys-roloys/"
       ],
-      "seen_at_utc": "2026-08-11T10:30:18.642246+00:00"
+      "seen_at_utc": "2026-08-11T10:51:52.395497+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863488/trohaio-me-duo-traumaties-sti-gaurolimni-autokinito-delaparise-stin-ethniki-odo-adirriou-ioanninon/?utm_source=rss",
-      "title": "Τροχαίο με δύο τραυματίες στη Γαυρολίμνη, αυτοκίνητο ντελαπάρισε στην Εθνική Οδό Αντιρρίου – Ιωαννίνων",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΜΕ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΣΤΗ ΓΑΥΡΟΛΙΜΝΗ, ΑΥΤΟΚΙΝΗΤΟ ΝΤΕΛΑΠΑΡΙΣΕ ΣΤΗΝ ΕΘΝΙΚΗ ΟΔΟ ΑΝΤΙΡΡΙΟΥ – ΙΩΑΝΝΙΝΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1863503/entharrudiki-i-eikona-tou-25-eton-paidiou-pou-epese-apo-balkoni-stin-patra-upovalletai-se-neo-kuklo-exetaseon/?utm_source=rss",
+      "title": "Ενθαρρυντική η εικόνα του 2,5 ετών παιδιού που έπεσε από μπαλκόνι στην Πάτρα, υποβάλλεται σε νέο κύκλο εξετάσεων",
+      "normalized_title": "ΕΝΘΑΡΡΥΝΤΙΚΗ Η ΕΙΚΟΝΑ ΤΟΥ 2,5 ΕΤΩΝ ΠΑΙΔΙΟΥ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΜΠΑΛΚΟΝΙ ΣΤΗΝ ΠΑΤΡΑ, ΥΠΟΒΑΛΛΕΤΑΙ ΣΕ ΝΕΟ ΚΥΚΛΟ ΕΞΕΤΑΣΕΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863488/trohaio-me-duo-traumaties-sti-gaurolimni-autokinito-delaparise-stin-ethniki-odo-adirriou-ioanninon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863487/leukada-anilikos-eklepse-apo-dano-tourista-dahtulidi-me-polutimous-lithous-axias-12000-euro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863484/fotia-tora-stin-zakuntho-stis-elies-volimon-energopoiithike-to-112/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863503/entharrudiki-i-eikona-tou-25-eton-paidiou-pou-epese-apo-balkoni-stin-patra-upovalletai-se-neo-kuklo-exetaseon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863500/vgikan-ta-fidakia-tis-panagias-kai-fetos-stin-kefalonia-to-spanio-fainomeno-pou-sumvainei-kathe-dekapedaugousto/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-11T10:18:10.317419+00:00"
+      "seen_at_utc": "2026-08-11T10:51:52.395610+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1445840/neo-spot-toy-pasok-gia-ellada-2-0-kai-tameio-anakampsis-i-megali-hameni-eykairia-gia-tin-oikogeneia-kai-to-paidi/",
-      "title": "Νέο σποτ του ΠΑΣΟΚ για «Ελλάδα 2.0» και Ταμείο Ανάκαμψης: «Η μεγάλη χαμένη ευκαιρία για την οικογένεια και το παιδί»",
-      "normalized_title": "ΝΕΟ ΣΠΟΤ ΤΟΥ ΠΑΣΟΚ ΓΙΑ «ΕΛΛΑΔΑ 2.0» ΚΑΙ ΤΑΜΕΙΟ ΑΝΑΚΑΜΨΗΣ: «Η ΜΕΓΑΛΗ ΧΑΜΕΝΗ ΕΥΚΑΙΡΙΑ ΓΙΑ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΚΑΙ ΤΟ ΠΑΙΔΙ»",
+      "url": "https://www.efsyn.gr/ellada/1445891/fotia-stis-volimes-zakynthoy-112-gia-ekkenosi-oikismoy-enishyontai-oi-dynameis/",
+      "title": "Φωτιά στις Βολίμες Ζακύνθου: 112 για εκκένωση οικισμού, ενισχύονται οι δυνάμεις",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΙΣ ΒΟΛΙΜΕΣ ΖΑΚΥΝΘΟΥ: 112 ΓΙΑ ΕΚΚΕΝΩΣΗ ΟΙΚΙΣΜΟΥ, ΕΝΙΣΧΥΟΝΤΑΙ ΟΙ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1445840/neo-spot-toy-pasok-gia-ellada-2-0-kai-tameio-anakampsis-i-megali-hameni-eykairia-gia-tin-oikogeneia-kai-to-paidi/"
+        "https://www.efsyn.gr/ellada/1445891/fotia-stis-volimes-zakynthoy-112-gia-ekkenosi-oikismoy-enishyontai-oi-dynameis/",
+        "https://www.efsyn.gr/kosmos/1445892/caroline-bezengi-synagermos-gia-oikologiki-katastrofi-fovoi-oti-to-ploio-tha-spasei-logo-moysonon-eikones/",
+        "https://www.efsyn.gr/ellada/1445877/therino-orario-sta-mmm-oi-syhnotites-ton-dromologion-se-ilektriko-metro-kai-tram-ton-aygoysto/"
       ],
-      "seen_at_utc": "2026-08-11T10:30:18.642342+00:00"
+      "seen_at_utc": "2026-08-11T10:51:52.395568+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/world/oukraniko-pligma-se-diylistirio-petrelaiou-stin-orsk-vathia-sti-rosia/",
-      "title": "Ουκρανικό πλήγμα σε διυλιστήριο πετρελαίου στην Ορσκ «βαθιά στη Ρωσία»",
-      "normalized_title": "ΟΥΚΡΑΝΙΚΟ ΠΛΗΓΜΑ ΣΕ ΔΙΥΛΙΣΤΗΡΙΟ ΠΕΤΡΕΛΑΙΟΥ ΣΤΗΝ ΟΡΣΚ «ΒΑΘΙΑ ΣΤΗ ΡΩΣΙΑ»",
+      "url": "https://www.in.gr/2026/08/11/sports/othersports/neo-panellinio-rekor-petyxe-o-markos-perase-ston-teliko-ton-800m-eleythero-vids/",
+      "title": "Νέο πανελλήνιο ρεκόρ πέτυχε ο Μάρκος – Πέρασε στον τελικό των 800μ. ελεύθερο (vids)",
+      "normalized_title": "ΝΕΟ ΠΑΝΕΛΛΗΝΙΟ ΡΕΚΟΡ ΠΕΤΥΧΕ Ο ΜΑΡΚΟΣ – ΠΕΡΑΣΕ ΣΤΟΝ ΤΕΛΙΚΟ ΤΩΝ 800Μ. ΕΛΕΥΘΕΡΟ (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/world/oukraniko-pligma-se-diylistirio-petrelaiou-stin-orsk-vathia-sti-rosia/",
-        "https://www.in.gr/2026/08/11/greece/fotia-sti-zakyntho-nea-estia-se-dasiki-ektasi-kai-minyma-apo-to-112-ypo-elegxo-to-metopo-ston-marathia/"
+        "https://www.in.gr/2026/08/11/sports/othersports/neo-panellinio-rekor-petyxe-o-markos-perase-ston-teliko-ton-800m-eleythero-vids/",
+        "https://www.in.gr/2026/08/11/life/music/oi-soul-ii-soul-metetrepsan-ton-lofo-tis-sanis-se-mia-megali-giorti-tis-mousikis/",
+        "https://www.in.gr/2026/08/11/world/ispania-etoimazetai-gia-tin-ekleipsi-iliou-sti-skia-kindynou-pyrkagion/"
       ],
-      "seen_at_utc": "2026-08-11T10:30:18.642296+00:00"
+      "seen_at_utc": "2026-08-11T10:51:52.395544+00:00"
     }
   },
-  "updated_at_utc": "2026-08-11T10:30:18.642432+00:00"
+  "updated_at_utc": "2026-08-11T10:51:52.395708+00:00"
 }
