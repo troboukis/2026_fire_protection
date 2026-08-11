@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564376786/eortologio-poioi-giortazoyn-simera-11-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 11 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 11 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/world/564395359/nekros-o-epikefalis-tis-ypiresias-pliroforion-tis-anatolikis-livyis-apo-ekrixi-vovmas/",
+      "title": "Νεκρός ο επικεφαλής της υπηρεσίας πληροφοριών της ανατολικής Λιβύης από έκρηξη βόμβας",
+      "normalized_title": "ΝΕΚΡΟΣ Ο ΕΠΙΚΕΦΑΛΗΣ ΤΗΣ ΥΠΗΡΕΣΙΑΣ ΠΛΗΡΟΦΟΡΙΩΝ ΤΗΣ ΑΝΑΤΟΛΙΚΗΣ ΛΙΒΥΗΣ ΑΠΟ ΕΚΡΗΞΗ ΒΟΜΒΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564376786/eortologio-poioi-giortazoyn-simera-11-aygoystoy/",
-        "https://www.kathimerini.gr/economy/564391927/forodoxies-gnorizete-oti-462/"
+        "https://www.kathimerini.gr/world/564395359/nekros-o-epikefalis-tis-ypiresias-pliroforion-tis-anatolikis-livyis-apo-ekrixi-vovmas/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564394879/geopolitiki-skakiera-oi-parenergeies-meta-ti-mekka/",
+        "https://www.kathimerini.gr/culture/564391270/zoi-stis-mikres-pinakothikes/",
+        "https://www.kathimerini.gr/society/564394867/stelios-ramfos-1939-2026-i-tolmi-enos-katharoy-myaloy/",
+        "https://www.kathimerini.gr/society/reportaz/564394909/ereynes-sto-diktyo-gia-ti-fotia-ston-koyvara/",
+        "https://www.kathimerini.gr/world/564394966/italia-pieseis-apo-ton-akrodexio-vanatsi-dechetai-i-meloni/",
+        "https://www.kathimerini.gr/world/564394930/se-stenopo-ormoyz-gazas-o-ntonalnt-tramp/"
       ],
-      "seen_at_utc": "2026-08-10T21:17:11.506840+00:00"
+      "seen_at_utc": "2026-08-11T04:17:29.580819+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1265,60 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863270/nekros-astunomikos-mesa-se-upiresiako-autokinito-ston-agio-dimitrio/?utm_source=rss",
-      "title": "Θρίλερ στον Άγιο Δημήτριο: Νεκρός αστυνομικός μέσα σε υπηρεσιακό αυτοκίνητο",
-      "normalized_title": "ΘΡΙΛΕΡ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ: ΝΕΚΡΟΣ ΑΣΤΥΝΟΜΙΚΟΣ ΜΕΣΑ ΣΕ ΥΠΗΡΕΣΙΑΚΟ ΑΥΤΟΚΙΝΗΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1863297/sunehizetai-to-kokteil-zestis-kai-ishuron-anemon-oi-periohes-me-polu-upsilo-kinduno-purkagias/?utm_source=rss",
+      "title": "Συνεχίζεται το κοκτέιλ ζέστης και ισχυρών ανέμων: Στους 38 βαθμούς ο υδράργυρος, οι περιοχές με πολύ υψηλό κίνδυνο πυρκαγιάς",
+      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ ΤΟ ΚΟΚΤΕΙΛ ΖΕΣΤΗΣ ΚΑΙ ΙΣΧΥΡΩΝ ΑΝΕΜΩΝ: ΣΤΟΥΣ 38 ΒΑΘΜΟΥΣ Ο ΥΔΡΑΡΓΥΡΟΣ, ΟΙ ΠΕΡΙΟΧΕΣ ΜΕ ΠΟΛΥ ΥΨΗΛΟ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863270/nekros-astunomikos-mesa-se-upiresiako-autokinito-ston-agio-dimitrio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863297/sunehizetai-to-kokteil-zestis-kai-ishuron-anemon-oi-periohes-me-polu-upsilo-kinduno-purkagias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-10T21:17:11.506939+00:00"
+      "seen_at_utc": "2026-08-11T04:17:29.580947+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1445556/vretania-i-xirasia-saronei-tin-agglia-27-ekat-anthropoi-vionoyn-periorismoys-sti-hrisi-neroy/",
-      "title": "Βρετανία: Η ξηρασία σαρώνει την Αγγλία – 27 εκατ. άνθρωποι βιώνουν περιορισμούς στη χρήση νερού",
-      "normalized_title": "ΒΡΕΤΑΝΙΑ: Η ΞΗΡΑΣΙΑ ΣΑΡΩΝΕΙ ΤΗΝ ΑΓΓΛΙΑ – 27 ΕΚΑΤ. ΑΝΘΡΩΠΟΙ ΒΙΩΝΟΥΝ ΠΕΡΙΟΡΙΣΜΟΥΣ ΣΤΗ ΧΡΗΣΗ ΝΕΡΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1445591/seismos-stin-kolomvia-agoniodis-anazitisi-gia-epizontes-toylahiston-111-nekroi/",
+      "title": "Σεισμός στην Κολομβία: Τουλάχιστον 132 νεκροί – Αγωνιώδης αναζήτηση για επιζώντες [εικόνες – βίντεο]",
+      "normalized_title": "ΣΕΙΣΜΟΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ: ΤΟΥΛΑΧΙΣΤΟΝ 132 ΝΕΚΡΟΙ – ΑΓΩΝΙΩΔΗΣ ΑΝΑΖΗΤΗΣΗ ΓΙΑ ΕΠΙΖΩΝΤΕΣ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1445556/vretania-i-xirasia-saronei-tin-agglia-27-ekat-anthropoi-vionoyn-periorismoys-sti-hrisi-neroy/"
+        "https://www.efsyn.gr/kosmos/1445591/seismos-stin-kolomvia-agoniodis-anazitisi-gia-epizontes-toylahiston-111-nekroi/",
+        "https://www.efsyn.gr/nisides/1445342/erin-mprokovits-den-antegrapse-toys-kodikes-tis-exoysias-gia-n-apoktisei-kyros/",
+        "https://www.efsyn.gr/politiki/1445571/karystianoy-skliri-apantisi-stoys-apohorisantes-den-tha-dehtho-ekviasmoys/",
+        "https://www.efsyn.gr/politiki/1445566/alexis-tsipras-to-oikonomiko-programma-i-akriveia-kai-to-4o-mnimonio/",
+        "https://www.efsyn.gr/tehnes/1445563/stelios-ramfos-1939-2026-apo-to-oneiro-tis-aristeras-stin-antitheti-ohthi/",
+        "https://www.efsyn.gr/ellada/1445574/kairos-stoys-38-vathmoys-simera-o-ydrargyros-ishyroi-anemoi-eos-7-mpofor-sto-aigaio/",
+        "https://www.efsyn.gr/ellada/1445568/eortologio-poioi-giortazoyn-simera-11-aygoystoy/",
+        "https://www.efsyn.gr/ellada/1445560/thriler-ston-agio-dimitrio-nekros-entopistike-38hronos-astynomikos-mesa-se-ypiresiako-ohima/"
       ],
-      "seen_at_utc": "2026-08-10T21:17:11.506920+00:00"
+      "seen_at_utc": "2026-08-11T04:17:29.580905+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/11/in-science/perivallon-b-science/ipa-o-ioulios-tou-2026-itan-o-thermoteros-minas-pou-exei-katagrafei-pote/",
-      "title": "Ο Ιούλιος ήταν ο θερμότερος μήνας που έχει καταγραφεί ποτέ στις ΗΠΑ",
-      "normalized_title": "Ο ΙΟΥΛΙΟΣ ΗΤΑΝ Ο ΘΕΡΜΟΤΕΡΟΣ ΜΗΝΑΣ ΠΟΥ ΕΧΕΙ ΚΑΤΑΓΡΑΦΕΙ ΠΟΤΕ ΣΤΙΣ ΗΠΑ",
+      "url": "https://www.in.gr/2026/08/11/life/geysi/syntagi-cheesecake-lemoniou-2/",
+      "title": "Συνταγή: Cheesecake λεμονιού",
+      "normalized_title": "ΣΥΝΤΑΓΗ: CHEESECAKE ΛΕΜΟΝΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/11/in-science/perivallon-b-science/ipa-o-ioulios-tou-2026-itan-o-thermoteros-minas-pou-exei-katagrafei-pote/"
+        "https://www.in.gr/2026/08/11/life/geysi/syntagi-cheesecake-lemoniou-2/",
+        "https://www.in.gr/2026/08/11/plus/vita/eksi-logoi-pou-kanoun-tin-kinoa-toso-ksexoristi/",
+        "https://www.in.gr/2026/08/11/greece/kairos-epikindyno-kokteil-zestis-ksirasias-kai-anemon-pou-enisxyontai-ti-anamenetai-ton-dekapentaygousto/",
+        "https://www.in.gr/2026/08/11/stories/zodiac-club-i-mystiki-lesxi-ton-megistanon-pou-epivionei-edo-kai-158-xronia/",
+        "https://www.in.gr/2026/08/11/plus/vita/apistia-kai-kinimatografos-pente-film-pou-meletoun-ti-prodosia-sti-sxesi/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/akinita-i-nea-formoula-pou-sozei-tin-proti-katoikia/",
+        "https://www.in.gr/2026/08/11/life/culture-live/digger-poia-tha-einai-telika-i-diarkeia-tis-tainias-me-ton-tom-krouz/",
+        "https://www.in.gr/2026/08/11/world/oi-nisoi-feroe-den-theloun-pleon-ti-dania-se-rolo-kidemona/",
+        "https://www.in.gr/2026/08/11/economy/oikonomikes-eidiseis/syntaksiodotisi-oi-7-stis-10-nees-aitiseis-einai-apo-gynaikes/",
+        "https://www.in.gr/2026/08/11/world/sto-stoxastro-ipa-kai-israil-to-portofoli-tis-xezmpolax-tha-anteksei-i-organosi/",
+        "https://www.in.gr/2026/08/11/greece/paravaseis-kok-anilikoi-sto-timoni-kai-xoris-diploma/",
+        "https://www.in.gr/2026/08/11/health/altsxaimer-i-zaxari-to-proto-kommati-sto-pazl-tis-nosou/",
+        "https://www.in.gr/2026/08/11/world/o-netaniaxou-se-tentomeno-sxoini-kai-to-dilimma-na-epileksei-anamesa-ston-tramp-kai-tous-deksious-psifoforous/",
+        "https://www.in.gr/2026/08/11/politics/politiki-grammateia/o-aleksis-tsipras-sto-in-i-kalpi-tis-anatropis-i-protasi-diakyvernisis-tis-elas-kai-i-skliri-epithesi-sto-kathestos-mitsotaki/",
+        "https://www.in.gr/2026/08/11/greece/pyrkagies-kai-psyxiki-ygeia-pos-egine-i-apoleia-synitheia-mas/",
+        "https://www.in.gr/2026/08/11/politics/diplomatia/rosia-skliri-epithesi-mosxas-se-athina-kai-proeidopoiisi-gia-apeytheias-sygkrousi-me-to-nato/",
+        "https://www.in.gr/2026/08/11/politics/epikairotita/tourkia-yparxei-kati-xeirotero-apo-tin-apoktisi-ton-f-35-tonizei-eidikos-sto-kogkreso-ton-ipa/",
+        "https://www.in.gr/2026/08/11/world/livyi-pyrkagia-se-megali-deksameni-venzinis-eksaitias-epithesis/",
+        "https://www.in.gr/2026/08/11/world/kolomvia-i-akrodeksia-kyvernisi-anagnorizei-tin-prosartisi-ton-ypsipedon-tou-gkolan-apo-to-israil/",
+        "https://www.in.gr/2026/08/11/world/o-tramp-xaraktirizei-poly-kali-ti-sxesi-tou-me-ton-netaniaxou/",
+        "https://www.in.gr/2026/08/11/world/oukrania-ekrikseis-sto-kievo-epeita-apo-synagermo-gia-rosiki-epithesi-me-vallistikous-pyraylous/",
+        "https://www.in.gr/2026/08/11/world/tourkia-psifistike-o-istorikos-nomos-gia-tin-koinoniki-epanentaksi-ton-maxiton-tou-pkk/"
       ],
-      "seen_at_utc": "2026-08-10T22:51:20.329251+00:00"
+      "seen_at_utc": "2026-08-11T04:17:29.580864+00:00"
     }
   },
-  "updated_at_utc": "2026-08-10T22:51:20.329328+00:00"
+  "updated_at_utc": "2026-08-11T04:17:29.581023+00:00"
 }
