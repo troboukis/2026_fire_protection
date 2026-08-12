@@ -1,18 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564397510/mpali-xespase-fotia-se-feri-epicheirisi-diasosis-gia-perissoteroys-apo-100-epivates/",
-      "title": "Μπαλί: Ξέσπασε φωτιά σε φέρι – Επιχείρηση διάσωσης για περισσότερους από 100 επιβάτες",
-      "normalized_title": "ΜΠΑΛΙ: ΞΕΣΠΑΣΕ ΦΩΤΙΑ ΣΕ ΦΕΡΙ – ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ ΓΙΑ ΠΕΡΙΣΣΟΤΕΡΟΥΣ ΑΠΟ 100 ΕΠΙΒΑΤΕΣ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564397405/egkrisi-enischyseon-gia-ependysi-tis-metlen/",
+      "title": "Εγκριση ενισχύσεων για επένδυση της Metlen",
+      "normalized_title": "ΕΓΚΡΙΣΗ ΕΝΙΣΧΥΣΕΩΝ ΓΙΑ ΕΠΕΝΔΥΣΗ ΤΗΣ METLEN",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564397510/mpali-xespase-fotia-se-feri-epicheirisi-diasosis-gia-perissoteroys-apo-100-epivates/",
-        "https://www.kathimerini.gr/politics/564396973/entos-kai-ektos-pieseis-xana-gia-patriot-stin-oykrania/",
-        "https://www.kathimerini.gr/world/564397495/iran-nees-epitheseis-kata-ploion-kathos-oi-diapragmateyseis-odigoyntai-se-neo-adiexodo/",
-        "https://www.kathimerini.gr/economy/business/564397363/oloklirothike-i-exagora-tis-rainbow-waters-apo-tin-culligan/",
-        "https://www.kathimerini.gr/society/564397492/chartis-provlepsis-pyrkagion-portokali-synagermos-se-17-perioches/",
-        "https://www.kathimerini.gr/istoria/564396697/san-simera-12-aygoystoy-1898-ypsonetai-i-amerikaniki-simaia-sti-chavai/"
+        "https://www.kathimerini.gr/economy/diktis/564397405/egkrisi-enischyseon-gia-ependysi-tis-metlen/",
+        "https://www.kathimerini.gr/society/564397522/nikos-kalogeropoylos-simera-i-kideia-toy-spoydaioy-ithopoioy-i-epithymia-tis-oikogeneias/",
+        "https://www.kathimerini.gr/culture/564395848/otan-pragmatika-o-tasos-chalkias-synantise-ton-mpeni-gkoyntman/",
+        "https://www.kathimerini.gr/k/travel/564389110/etsi-apolamvanoyme-ti-naxo-kai-ton-aygoysto/",
+        "https://www.kathimerini.gr/k/gastronomos/564396586/pites-me-anameikta-lachanika-kai-saltsa-giaoyrtioy/",
+        "https://www.kathimerini.gr/politics/564396925/theoreio-anazitoyntai-ypopsifioi-2/",
+        "https://www.kathimerini.gr/society/564397513/simera-to-teleytaio-antio-ston-stelio-ramfo/"
       ],
-      "seen_at_utc": "2026-08-12T04:51:18.112620+00:00"
+      "seen_at_utc": "2026-08-12T05:17:09.659338+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1265,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863763/kairos-eos-38-vathmous-simera-i-thermokrasia-kai-meltemia-sto-aigaio-pou-anamenodai-vrohes-prin-ton-dekapedaugousto/?utm_source=rss",
-      "title": "Έως 38 βαθμούς σήμερα η θερμοκρασία και μελτέμια στο Αιγαίο, πού αναμένονται βροχές πριν τον Δεκαπενταύγουστο",
-      "normalized_title": "ΕΩΣ 38 ΒΑΘΜΟΥΣ ΣΗΜΕΡΑ Η ΘΕΡΜΟΚΡΑΣΙΑ ΚΑΙ ΜΕΛΤΕΜΙΑ ΣΤΟ ΑΙΓΑΙΟ, ΠΟΥ ΑΝΑΜΕΝΟΝΤΑΙ ΒΡΟΧΕΣ ΠΡΙΝ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1863770/kimolos-pos-ena-mikro-iatreio-borei-na-sozei-zoes-o-giatros-pou-metakinithike-apo-tin-athina-mila-sto-ygeiamou/?utm_source=rss",
+      "title": "Κίμωλος: Πώς ένα μικρό ιατρείο μπορεί να σώζει ζωές – Ο γιατρός που μετακινήθηκε από την Αθήνα, μιλά στο ygeiamou",
+      "normalized_title": "ΚΙΜΩΛΟΣ: ΠΩΣ ΕΝΑ ΜΙΚΡΟ ΙΑΤΡΕΙΟ ΜΠΟΡΕΙ ΝΑ ΣΩΖΕΙ ΖΩΕΣ – Ο ΓΙΑΤΡΟΣ ΠΟΥ ΜΕΤΑΚΙΝΗΘΗΚΕ ΑΠΟ ΤΗΝ ΑΘΗΝΑ, ΜΙΛΑ ΣΤΟ YGEIAMOU",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863763/kairos-eos-38-vathmous-simera-i-thermokrasia-kai-meltemia-sto-aigaio-pou-anamenodai-vrohes-prin-ton-dekapedaugousto/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863770/kimolos-pos-ena-mikro-iatreio-borei-na-sozei-zoes-o-giatros-pou-metakinithike-apo-tin-athina-mila-sto-ygeiamou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863769/simera-stis-1200-i-politiki-kideia-tou-nikou-kalogeropoulou-sto-a-nekrotafeio-athinon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863767/simera-stis-1130-sto-halandri-to-teleutaio-adio-ston-stelio-ramfo-i-paraklisi-tis-oikogeneias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T04:51:18.112694+00:00"
+      "seen_at_utc": "2026-08-12T05:17:09.659484+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/teleionoyn-ta-apothemata-aimatos/",
-      "title": "Τελειώνουν τα αποθέματα αίματος",
-      "normalized_title": "ΤΕΛΕΙΩΝΟΥΝ ΤΑ ΑΠΟΘΕΜΑΤΑ ΑΙΜΑΤΟΣ",
+      "url": "https://www.efsyn.gr/media/1446290/press-point-oi-xenoi-kanoyn-apovasi-se-hores-kai-trapezes-tis-e-e/",
+      "title": "Press Point: Οι ξένοι κάνουν απόβαση σε χώρες και τράπεζες της Ε.Ε.",
+      "normalized_title": "PRESS POINT: ΟΙ ΞΕΝΟΙ ΚΑΝΟΥΝ ΑΠΟΒΑΣΗ ΣΕ ΧΩΡΕΣ ΚΑΙ ΤΡΑΠΕΖΕΣ ΤΗΣ Ε.Ε.",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/teleionoyn-ta-apothemata-aimatos/",
-        "https://www.efsyn.gr/kosmos/1446242/iran-akomi-pio-skliri-grammi-gia-ta-stena-toy-ormoyz-apo-ton-neo-ishyro-andra-tis-teheranis/",
-        "https://www.efsyn.gr/athlitismos/1446262/miltos-tentogloy-i-xekardistiki-antidrasi-toy-otan-xehase-to-metallio-mas-to-edosan-alla-to-paratisa-vinteo/"
+        "https://www.efsyn.gr/media/1446290/press-point-oi-xenoi-kanoyn-apovasi-se-hores-kai-trapezes-tis-e-e/",
+        "https://www.efsyn.gr/athlitismos/1446283/miltos-tentogloy-i-stigmi-tis-aponomis-toy-hrysoy-metallioy-ston-ellina-alti-vinteo/",
+        "https://www.efsyn.gr/politiki/1446284/to-skandalo-ton-ypoklopon-anapayetai-sto-arheio/"
       ],
-      "seen_at_utc": "2026-08-12T04:51:18.112667+00:00"
+      "seen_at_utc": "2026-08-12T05:17:09.659435+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/go-fun/social/arkas-i-kalimera-tis-tetartis-11/",
-      "title": "Αρκάς: Η καλημέρα της Τετάρτης",
-      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΤΕΤΑΡΤΗΣ",
+      "url": "https://www.in.gr/2026/08/12/world/vans-zitise-apo-tin-oukrania-na-stamatisei-ta-pligmata-se-tanker-pou-xrisimopoioun-rosiko-limani-lene-oi-ft/",
+      "title": "Ο Βανς ζήτησε από την Ουκρανία να σταματήσει τα πλήγματα σε τάνκερ που χρησιμοποιούν ρωσικό λιμάνι, λένε οι FT",
+      "normalized_title": "Ο ΒΑΝΣ ΖΗΤΗΣΕ ΑΠΟ ΤΗΝ ΟΥΚΡΑΝΙΑ ΝΑ ΣΤΑΜΑΤΗΣΕΙ ΤΑ ΠΛΗΓΜΑΤΑ ΣΕ ΤΑΝΚΕΡ ΠΟΥ ΧΡΗΣΙΜΟΠΟΙΟΥΝ ΡΩΣΙΚΟ ΛΙΜΑΝΙ, ΛΕΝΕ ΟΙ FT",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/go-fun/social/arkas-i-kalimera-tis-tetartis-11/",
-        "https://www.in.gr/2026/08/12/plus/vita/ypnos-koimomaste-kalytera-otan-kanoume-kampingk/"
+        "https://www.in.gr/2026/08/12/world/vans-zitise-apo-tin-oukrania-na-stamatisei-ta-pligmata-se-tanker-pou-xrisimopoioun-rosiko-limani-lene-oi-ft/",
+        "https://www.in.gr/2026/08/12/life/culture-live/rempetiko-gia-paidia-ena-taksidi-ston-xrono-mesa-apo-ti-mousiki/",
+        "https://www.in.gr/2026/08/12/economy/pou-aksizei-na-douleyeis-apo-apostasi-oi-pio-filikes-xores-tis-eyropis-gia-tous-psifiakous-nomades-kai-i-megali-ekpliksi/",
+        "https://www.in.gr/2026/08/12/editorial/rologia-kollimena-sto-2015/",
+        "https://www.in.gr/2026/08/12/economy/oikonomikes-eidiseis/sta-nisia-oi-rampo-tis-aade-poioi-mpainoun-sto-stoxastro/"
       ],
-      "seen_at_utc": "2026-08-12T04:51:18.112652+00:00"
+      "seen_at_utc": "2026-08-12T05:17:09.659396+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T04:51:18.112772+00:00"
+  "updated_at_utc": "2026-08-12T05:17:09.659555+00:00"
 }
