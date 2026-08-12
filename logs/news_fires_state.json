@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564398485/gallia-eos-15-dis-eyro-to-kostos-apo-ta-kymata-kaysona/",
-      "title": "Γαλλία: «Εως 15 δισ. ευρώ το κόστος από τα κύματα καύσωνα»",
-      "normalized_title": "ΓΑΛΛΙΑ: «ΕΩΣ 15 ΔΙΣ. ΕΥΡΩ ΤΟ ΚΟΣΤΟΣ ΑΠΟ ΤΑ ΚΥΜΑΤΑ ΚΑΥΣΩΝΑ»",
+      "url": "https://www.kathimerini.gr/world/564398500/mia-apo-tis-megalyteres-kyvernoepitheseis-dierreysan-dedomena-19-ekat-politon-stin-polonia/",
+      "title": "«Μία από τις μεγαλύτερες κυβερνοεπιθέσεις»: Διέρρευσαν δεδομένα 19 εκατ. πολιτών στην Πολωνία",
+      "normalized_title": "«ΜΙΑ ΑΠΟ ΤΙΣ ΜΕΓΑΛΥΤΕΡΕΣ ΚΥΒΕΡΝΟΕΠΙΘΕΣΕΙΣ»: ΔΙΕΡΡΕΥΣΑΝ ΔΕΔΟΜΕΝΑ 19 ΕΚΑΤ. ΠΟΛΙΤΩΝ ΣΤΗΝ ΠΟΛΩΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564398485/gallia-eos-15-dis-eyro-to-kostos-apo-ta-kymata-kaysona/",
-        "https://www.kathimerini.gr/athletics/564398347/o-mentilimpar-echei-dikio-alla-den-leei-oli-tin-istoria/"
+        "https://www.kathimerini.gr/world/564398500/mia-apo-tis-megalyteres-kyvernoepitheseis-dierreysan-dedomena-19-ekat-politon-stin-polonia/",
+        "https://www.kathimerini.gr/politics/parties/564396955/giati-i-n-d-protima-ton-tsipra-gia-antipalo/"
       ],
-      "seen_at_utc": "2026-08-12T14:51:18.958324+00:00"
+      "seen_at_utc": "2026-08-12T15:17:18.542068+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864042/tournas-gia-purkagies-exairetika-krisimi-i-auriani-imera-kanena-perithorio-efisuhasmou/?utm_source=rss",
-      "title": "Τουρνάς για πυρκαγιές: Εξαιρετικά κρίσιμη η αυριανή ημέρα, κανένα περιθώριο εφησυχασμού",
-      "normalized_title": "ΤΟΥΡΝΑΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ: ΕΞΑΙΡΕΤΙΚΑ ΚΡΙΣΙΜΗ Η ΑΥΡΙΑΝΗ ΗΜΕΡΑ, ΚΑΝΕΝΑ ΠΕΡΙΘΩΡΙΟ ΕΦΗΣΥΧΑΣΜΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1864059/epta-tautohrones-vlaves-sto-diktuo-udreusis-stin-kallithea-kataggellei-o-dimos/?utm_source=rss",
+      "title": "Επτά ταυτόχρονες βλάβες στο δίκτυο ύδρευσης στην Καλλιθέα, καταγγέλλει ο δήμος",
+      "normalized_title": "ΕΠΤΑ ΤΑΥΤΟΧΡΟΝΕΣ ΒΛΑΒΕΣ ΣΤΟ ΔΙΚΤΥΟ ΥΔΡΕΥΣΗΣ ΣΤΗΝ ΚΑΛΛΙΘΕΑ, ΚΑΤΑΓΓΕΛΛΕΙ Ο ΔΗΜΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864042/tournas-gia-purkagies-exairetika-krisimi-i-auriani-imera-kanena-perithorio-efisuhasmou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864059/epta-tautohrones-vlaves-sto-diktuo-udreusis-stin-kallithea-kataggellei-o-dimos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864050/epiheirisi-gia-ton-edopismo-zeugariou-pou-apoprosanatolistike-me-to-ohima-tou-sti-fthiotida/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T14:51:18.958456+00:00"
+      "seen_at_utc": "2026-08-12T15:17:18.542150+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446719/politico-to-shedio-tis-e-e-poy-isos-kanei-to-proino-mas-panakrivo/",
-      "title": "Politico: Το σχέδιο της Ε.Ε. που ίσως κάνει το πρωινό μας πανάκριβο",
-      "normalized_title": "POLITICO: ΤΟ ΣΧΕΔΙΟ ΤΗΣ Ε.Ε. ΠΟΥ ΙΣΩΣ ΚΑΝΕΙ ΤΟ ΠΡΩΙΝΟ ΜΑΣ ΠΑΝΑΚΡΙΒΟ",
+      "url": "https://www.efsyn.gr/athlitismos/1446772/paremvasi-nikoy-gkali-gia-to-ratsismo-kai-ti-lisa-itogia-stirizoyme-ta-paidia-poy-idronoyn-ti-galanoleyka/",
+      "title": "Παρέμβαση Νίκου Γκάλη για το ρατσισμό και τη Λίσα Ιτόγια: «Στηρίζουμε τα παιδιά που ιδρώνουν τη γαλανόλευκα»",
+      "normalized_title": "ΠΑΡΕΜΒΑΣΗ ΝΙΚΟΥ ΓΚΑΛΗ ΓΙΑ ΤΟ ΡΑΤΣΙΣΜΟ ΚΑΙ ΤΗ ΛΙΣΑ ΙΤΟΓΙΑ: «ΣΤΗΡΙΖΟΥΜΕ ΤΑ ΠΑΙΔΙΑ ΠΟΥ ΙΔΡΩΝΟΥΝ ΤΗ ΓΑΛΑΝΟΛΕΥΚΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446719/politico-to-shedio-tis-e-e-poy-isos-kanei-to-proino-mas-panakrivo/",
-        "https://www.efsyn.gr/politiki/1446743/synergatis-tis-latinopoyloy-katigorithike-gia-xylodarmo-apo-ti-dimosiografo-syntrofo-toy/",
-        "https://www.efsyn.gr/tehnes/1446512/anilio-park-festival-to-glastonbury-toy-metsovoy-ithele-zaketa/",
-        "https://www.efsyn.gr/ellada/1446747/agriogoyroyna-kanoyn-anemela-volta-exo-apo-ta-spitia-sti-lamia/"
+        "https://www.efsyn.gr/athlitismos/1446772/paremvasi-nikoy-gkali-gia-to-ratsismo-kai-ti-lisa-itogia-stirizoyme-ta-paidia-poy-idronoyn-ti-galanoleyka/",
+        "https://www.efsyn.gr/kosmos/1446769/kyvernoepithesi-mamoyth-stin-polonia-dierreysan-prosopika-dedomena-19-ekatommyrion-politon/",
+        "https://www.efsyn.gr/ellada/1446746/kimolos-sto-mikroskopio-oi-synthikes-thanatoy-toy-17hronoy-apo-ilektroplixia-ti-eipe-i-mitera-toy/"
       ],
-      "seen_at_utc": "2026-08-12T14:51:18.958423+00:00"
+      "seen_at_utc": "2026-08-12T15:17:18.542135+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/economy/to-dimografiko-metaksy-pragmatikotitas-kai-propagandas-i-polyparagontiki-eksisosi/",
-      "title": "Το δημογραφικό μεταξύ πραγματικότητας και προπαγάνδας – Η «πολυπαραγοντική εξίσωση»",
-      "normalized_title": "ΤΟ ΔΗΜΟΓΡΑΦΙΚΟ ΜΕΤΑΞΥ ΠΡΑΓΜΑΤΙΚΟΤΗΤΑΣ ΚΑΙ ΠΡΟΠΑΓΑΝΔΑΣ – Η «ΠΟΛΥΠΑΡΑΓΟΝΤΙΚΗ ΕΞΙΣΩΣΗ»",
+      "url": "https://www.in.gr/2026/08/12/in-science/technology/h-ora-tis-krisis-gia-ti-meta-sto-edolio-apenanti-se-29-politeies-ton-ipa-gia-vlaves-sta-paidia/",
+      "title": "H ώρα της κρίσης για τη Meta – Στο εδώλιο απέναντι σε 29 πολιτείες των ΗΠΑ για βλάβες στα παιδιά",
+      "normalized_title": "H ΩΡΑ ΤΗΣ ΚΡΙΣΗΣ ΓΙΑ ΤΗ META – ΣΤΟ ΕΔΩΛΙΟ ΑΠΕΝΑΝΤΙ ΣΕ 29 ΠΟΛΙΤΕΙΕΣ ΤΩΝ ΗΠΑ ΓΙΑ ΒΛΑΒΕΣ ΣΤΑ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/economy/to-dimografiko-metaksy-pragmatikotitas-kai-propagandas-i-polyparagontiki-eksisosi/",
-        "https://www.in.gr/2026/08/12/sports/basketball/letonia-ellada-92-80-ittithike-kai-emeine-ektos-zonis-metallion-i-ethniki-paidon/",
-        "https://www.in.gr/2026/08/12/sports/on-field/metra-antikataskopeias-apo-tin-mpagern/",
-        "https://www.in.gr/2026/08/12/world/stous-44-oi-nekroi-apo-tin-anatropi-ploiou-se-limni-sti-zimpampoue/"
+        "https://www.in.gr/2026/08/12/in-science/technology/h-ora-tis-krisis-gia-ti-meta-sto-edolio-apenanti-se-29-politeies-ton-ipa-gia-vlaves-sta-paidia/",
+        "https://www.in.gr/2026/08/12/politics/politiki-grammateia/syriza-kai-nea-aristera-apoxairetoun-ton-giatro-kai-agonisti-tis-aristeras-niko-kaklamani/",
+        "https://www.in.gr/2026/08/12/sports/football/erythros-asteras-paraitithike-o-stankovits-favori-o-riera-pic/",
+        "https://www.in.gr/2026/08/12/life/odysseia-etsi-gyristike-to-epos-tou-nolan-imax-paraskinia-kai-mystika-se-dyo-nea-vivlia/",
+        "https://www.in.gr/2026/08/12/greece/anilikoi-empristes-sta-xania-epaiza-me-spirta-ithela-na-do-pos-pairnei-fotia/"
       ],
-      "seen_at_utc": "2026-08-12T14:51:18.958389+00:00"
+      "seen_at_utc": "2026-08-12T15:17:18.542112+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T14:51:18.958557+00:00"
+  "updated_at_utc": "2026-08-12T15:17:18.542240+00:00"
 }
