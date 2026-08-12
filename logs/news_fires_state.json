@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564397333/atelis-i-anakampsi-tis-elladas/",
-      "title": "BofA: «Ατελής» η ανάκαμψη της Ελλάδας",
-      "normalized_title": "BOFA: «ΑΤΕΛΗΣ» Η ΑΝΑΚΑΜΨΗ ΤΗΣ ΕΛΛΑΔΑΣ",
+      "url": "https://www.kathimerini.gr/society/564397588/thessaloniki-nearos-prospoiithike-techniko-optikon-inon-gia-na-apospasei-kosmimata-apo-aniliki/",
+      "title": "Θεσσαλονίκη: Nεαρός προσποιήθηκε τεχνικό οπτικών ινών για να αποσπάσει κοσμήματα από ανήλικη",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: NΕΑΡΟΣ ΠΡΟΣΠΟΙΗΘΗΚΕ ΤΕΧΝΙΚΟ ΟΠΤΙΚΩΝ ΙΝΩΝ ΓΙΑ ΝΑ ΑΠΟΣΠΑΣΕΙ ΚΟΣΜΗΜΑΤΑ ΑΠΟ ΑΝΗΛΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564397333/atelis-i-anakampsi-tis-elladas/",
-        "https://www.kathimerini.gr/life/science/564397546/ekleipsi-ilioy-poy-kai-ti-ora-tha-einai-orati-stin-ellada/",
-        "https://www.kathimerini.gr/world/564397540/guardian-vretanos-me-anoia-antimetopos-me-apelasi-apo-ti-soyidia/",
-        "https://www.kathimerini.gr/economy/international/564397420/katastrofi-ean-chalarosoyn-oi-kanones-stis-trapezes/",
-        "https://www.kathimerini.gr/visual/video/564287608/pitsiriko-vasilis-karras-edo/",
-        "https://www.kathimerini.gr/opinion/564397117/ora-na-milisoyme-gia-ton-malaparte/"
+        "https://www.kathimerini.gr/society/564397588/thessaloniki-nearos-prospoiithike-techniko-optikon-inon-gia-na-apospasei-kosmimata-apo-aniliki/",
+        "https://www.kathimerini.gr/economy/international/564397378/thetikes-oi-prooptikes-gia-tis-eyropaikes-amyntikes-metoches/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564396958/stin-oygkanta-paratypoi-metanastes-apo-tin-e-e/",
+        "https://www.kathimerini.gr/world/564397585/o-vans-kalese-tin-oykrania-na-min-epitithetai-se-tanker-me-petrelaio/"
       ],
-      "seen_at_utc": "2026-08-12T05:51:22.491243+00:00"
+      "seen_at_utc": "2026-08-12T06:17:24.704434+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1262,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863785/thessaloniki-anilikos-roma-prospathise-na-arpaxei-kosmimata-apo-13hroni-ton-edioxe-i-geitonissa/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Ανήλικος Ρομά προσπάθησε να αρπάξει κοσμήματα από 13χρονη, τον έδιωξε η γειτόνισσα",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΑΝΗΛΙΚΟΣ ΡΟΜΑ ΠΡΟΣΠΑΘΗΣΕ ΝΑ ΑΡΠΑΞΕΙ ΚΟΣΜΗΜΑΤΑ ΑΠΟ 13ΧΡΟΝΗ, ΤΟΝ ΕΔΙΩΞΕ Η ΓΕΙΤΟΝΙΣΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1863813/ti-einai-o-seismos-endiamesou-vathous-pou-simeiothike-stin-kolomvia-o-kathigitis-papazahos-exigei/?utm_source=rss",
+      "title": "Τι είναι ο σεισμός ενδιάμεσου βάθους που σημειώθηκε στην Κολομβία: Ο καθηγητής Παπαζάχος εξηγεί, τα παραδείγματα σε Κύθηρα και Λεωνίδιο",
+      "normalized_title": "ΤΙ ΕΙΝΑΙ Ο ΣΕΙΣΜΟΣ ΕΝΔΙΑΜΕΣΟΥ ΒΑΘΟΥΣ ΠΟΥ ΣΗΜΕΙΩΘΗΚΕ ΣΤΗΝ ΚΟΛΟΜΒΙΑ: Ο ΚΑΘΗΓΗΤΗΣ ΠΑΠΑΖΑΧΟΣ ΕΞΗΓΕΙ, ΤΑ ΠΑΡΑΔΕΙΓΜΑΤΑ ΣΕ ΚΥΘΗΡΑ ΚΑΙ ΛΕΩΝΙΔΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863785/thessaloniki-anilikos-roma-prospathise-na-arpaxei-kosmimata-apo-13hroni-ton-edioxe-i-geitonissa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863813/ti-einai-o-seismos-endiamesou-vathous-pou-simeiothike-stin-kolomvia-o-kathigitis-papazahos-exigei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863801/karpathos-sunelifthi-34hronos-danos-pou-aunanizotan-brosta-se-mitera-kai-kori-se-paralia-tis-karpathou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T05:51:22.491340+00:00"
+      "seen_at_utc": "2026-08-12T06:17:24.704532+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446281/kolomvia-meta-ton-foniko-seismo-fovoi-kai-gia-emfylio/",
-      "title": "Κολομβία: Μετά τον φονικό σεισμό φόβοι και για εμφύλιο",
-      "normalized_title": "ΚΟΛΟΜΒΙΑ: ΜΕΤΑ ΤΟΝ ΦΟΝΙΚΟ ΣΕΙΣΜΟ ΦΟΒΟΙ ΚΑΙ ΓΙΑ ΕΜΦΥΛΙΟ",
+      "url": "https://www.efsyn.gr/politiki/1446338/to-aproopto-meta-tin-apohorisi-mitsotaki-apo-to-nosokomeio-hanion/",
+      "title": "Το απρόοπτο μετά την αποχώρηση Μητσοτάκη από το νοσοκομείο Χανίων",
+      "normalized_title": "ΤΟ ΑΠΡΟΟΠΤΟ ΜΕΤΑ ΤΗΝ ΑΠΟΧΩΡΗΣΗ ΜΗΤΣΟΤΑΚΗ ΑΠΟ ΤΟ ΝΟΣΟΚΟΜΕΙΟ ΧΑΝΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446281/kolomvia-meta-ton-foniko-seismo-fovoi-kai-gia-emfylio/",
-        "https://www.efsyn.gr/athlitismos/1446272/o-protos-titlos-aek-kai-ofi-diekdikoyn-sto-pagkritio-to-super-cup/",
-        "https://www.efsyn.gr/ellada/1446311/fotia-se-hamili-vlastisi-sto-haidari/"
+        "https://www.efsyn.gr/politiki/1446338/to-aproopto-meta-tin-apohorisi-mitsotaki-apo-to-nosokomeio-hanion/",
+        "https://www.efsyn.gr/politiki/1446332/diavazontas-ta-vivlia-poy-proteinei-i-mareva-mitsotaki-gia-to-kalokairi/",
+        "https://www.efsyn.gr/kosmos/1446317/tramp-gia-tin-epiheirisi-fygadeysis-toy-apo-tin-toyrkia-kano-ayto-poy-moy-leei-i-mystiki-ypiresia/",
+        "https://www.efsyn.gr/politiki/1446327/otan-i-dikaiosyni-troei-porta-apo-tin-aade/",
+        "https://www.efsyn.gr/politiki/1446324/giati-gia-tin-elas-o-floridis-einai-o-heiroteros-ypoyrgos-dikaiosynis/"
       ],
-      "seen_at_utc": "2026-08-12T05:51:22.491317+00:00"
+      "seen_at_utc": "2026-08-12T06:17:24.704501+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/sports/basketball/mpainei-kai-sto-mpasket-o-ronalntinio-thelei-na-agorasei-ti-monako-pic/",
-      "title": "«Μπαίνει» και στο μπάσκετ ο Ροναλντίνιο: «Θέλει να αγοράσει τη Μονακό» (pic)",
-      "normalized_title": "«ΜΠΑΙΝΕΙ» ΚΑΙ ΣΤΟ ΜΠΑΣΚΕΤ Ο ΡΟΝΑΛΝΤΙΝΙΟ: «ΘΕΛΕΙ ΝΑ ΑΓΟΡΑΣΕΙ ΤΗ ΜΟΝΑΚΟ» (PIC)",
+      "url": "https://www.in.gr/2026/08/12/in-science/episthmes/ta-skylia-anisyxoun-ta-poulia-siopoun-poia-einai-i-symperifora-ton-zoon-se-mia-oliki-ekleipsi-iliou/",
+      "title": "Τα σκυλιά ανησυχούν, τα πουλιά σιωπούν – Ποια είναι η συμπεριφορά των ζώων σε μια ολική έκλειψη Ηλίου",
+      "normalized_title": "ΤΑ ΣΚΥΛΙΑ ΑΝΗΣΥΧΟΥΝ, ΤΑ ΠΟΥΛΙΑ ΣΙΩΠΟΥΝ – ΠΟΙΑ ΕΙΝΑΙ Η ΣΥΜΠΕΡΙΦΟΡΑ ΤΩΝ ΖΩΩΝ ΣΕ ΜΙΑ ΟΛΙΚΗ ΕΚΛΕΙΨΗ ΗΛΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/sports/basketball/mpainei-kai-sto-mpasket-o-ronalntinio-thelei-na-agorasei-ti-monako-pic/",
-        "https://www.in.gr/2026/08/12/world/indonisia-diasosi-100-kai-pleon-epivaton-epeita-apo-pyrkagia-se-porthmeio/"
+        "https://www.in.gr/2026/08/12/in-science/episthmes/ta-skylia-anisyxoun-ta-poulia-siopoun-poia-einai-i-symperifora-ton-zoon-se-mia-oliki-ekleipsi-iliou/",
+        "https://www.in.gr/2026/08/12/economy/eyrozoni-poso-kostizei-i-lypiteri-apo-tous-kaysones-tis-pyrkagies-kai-tin-ksirasia-oi-apopseis-diistantai/",
+        "https://www.in.gr/2026/08/12/sports/basketball/gia-mia-thesi-ston-imiteliko-tou-eyrompasket-i-ethniki-paidon-kontra-sti-letonia/",
+        "https://www.in.gr/2026/08/12/world/apo-to-katafygio-tou-leykou-oikou-sto-fortigaki-tou-keteringk-o-ntonalnt-tramp-kai-oi-krypsones-tou/",
+        "https://www.in.gr/2026/08/12/go-fun/mprouk-silnts-rixnei-to-tiktok-me-pliromeni-apantisi-sto-mpoulingk-tis-koris-tis/",
+        "https://www.in.gr/2026/08/12/economy/oikonomikes-eidiseis/rythmisi-72-doseon-pagomeno-to-endiaferon-ton-ofeileton/",
+        "https://www.in.gr/2026/08/12/world/seismos-stin-kolomvia-maxi-me-ton-xrono-gia-tis-diasoseis-xoris-ilektriko-kai-vasikes-ypiresies-polles-perioxes/"
       ],
-      "seen_at_utc": "2026-08-12T05:51:22.491296+00:00"
+      "seen_at_utc": "2026-08-12T06:17:24.704480+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T05:51:22.491404+00:00"
+  "updated_at_utc": "2026-08-12T06:17:24.704607+00:00"
 }
