@@ -1,18 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564397102/eikones-ntropis-sto-syntagma/",
-      "title": "Εικόνες ντροπής στο Σύνταγμα",
-      "normalized_title": "ΕΙΚΟΝΕΣ ΝΤΡΟΠΗΣ ΣΤΟ ΣΥΝΤΑΓΜΑ",
+      "url": "https://www.kathimerini.gr/economy/local/564397333/atelis-i-anakampsi-tis-elladas/",
+      "title": "BofA: «Ατελής» η ανάκαμψη της Ελλάδας",
+      "normalized_title": "BOFA: «ΑΤΕΛΗΣ» Η ΑΝΑΚΑΜΨΗ ΤΗΣ ΕΛΛΑΔΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564397102/eikones-ntropis-sto-syntagma/",
-        "https://www.kathimerini.gr/opinion/564397099/i-spilia-ton-xifon/",
-        "https://www.kathimerini.gr/opinion/564397120/to-dekatria/",
-        "https://www.kathimerini.gr/opinion/564396928/katsika-i-taramas/",
-        "https://www.kathimerini.gr/athletics/analysis/564397531/panathinaikos-to-toso-oso-apodeichthike-arketo/",
-        "https://www.kathimerini.gr/economy/local/564397360/ayxisi-poliseon-kainoyrgion-aytokiniton-kata-7-4-sto-examino/"
+        "https://www.kathimerini.gr/economy/local/564397333/atelis-i-anakampsi-tis-elladas/",
+        "https://www.kathimerini.gr/life/science/564397546/ekleipsi-ilioy-poy-kai-ti-ora-tha-einai-orati-stin-ellada/",
+        "https://www.kathimerini.gr/world/564397540/guardian-vretanos-me-anoia-antimetopos-me-apelasi-apo-ti-soyidia/",
+        "https://www.kathimerini.gr/economy/international/564397420/katastrofi-ean-chalarosoyn-oi-kanones-stis-trapezes/",
+        "https://www.kathimerini.gr/visual/video/564287608/pitsiriko-vasilis-karras-edo/",
+        "https://www.kathimerini.gr/opinion/564397117/ora-na-milisoyme-gia-ton-malaparte/"
       ],
-      "seen_at_utc": "2026-08-12T05:30:20.152598+00:00"
+      "seen_at_utc": "2026-08-12T05:51:22.491243+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,36 +1264,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863777/fotia-tora-se-xera-horta-sto-haidari/?utm_source=rss",
-      "title": "Φωτιά τώρα σε ξερά χόρτα στο Χαϊδάρι",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΞΕΡΑ ΧΟΡΤΑ ΣΤΟ ΧΑΙΔΑΡΙ",
+      "url": "https://www.protothema.gr/greece/article/1863785/thessaloniki-anilikos-roma-prospathise-na-arpaxei-kosmimata-apo-13hroni-ton-edioxe-i-geitonissa/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Ανήλικος Ρομά προσπάθησε να αρπάξει κοσμήματα από 13χρονη, τον έδιωξε η γειτόνισσα",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΑΝΗΛΙΚΟΣ ΡΟΜΑ ΠΡΟΣΠΑΘΗΣΕ ΝΑ ΑΡΠΑΞΕΙ ΚΟΣΜΗΜΑΤΑ ΑΠΟ 13ΧΡΟΝΗ, ΤΟΝ ΕΔΙΩΞΕ Η ΓΕΙΤΟΝΙΣΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863777/fotia-tora-se-xera-horta-sto-haidari/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863776/to-asunithisto-monahiko-nefos-pou-travixe-ta-vlemmata-se-attiki-kai-kriti-ti-itan-telika-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863785/thessaloniki-anilikos-roma-prospathise-na-arpaxei-kosmimata-apo-13hroni-ton-edioxe-i-geitonissa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T05:30:20.152739+00:00"
+      "seen_at_utc": "2026-08-12T05:51:22.491340+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1446259/estiasi-mahi-ependyseon-sto-street-food-ta-nea-brands-kai-oi-megaloi-paiktes/",
-      "title": "Εστίαση: Μάχη επενδύσεων στο street food – Τα νέα brands και οι μεγάλοι παίκτες",
-      "normalized_title": "ΕΣΤΙΑΣΗ: ΜΑΧΗ ΕΠΕΝΔΥΣΕΩΝ ΣΤΟ STREET FOOD – ΤΑ ΝΕΑ BRANDS ΚΑΙ ΟΙ ΜΕΓΑΛΟΙ ΠΑΙΚΤΕΣ",
+      "url": "https://www.efsyn.gr/kosmos/1446281/kolomvia-meta-ton-foniko-seismo-fovoi-kai-gia-emfylio/",
+      "title": "Κολομβία: Μετά τον φονικό σεισμό φόβοι και για εμφύλιο",
+      "normalized_title": "ΚΟΛΟΜΒΙΑ: ΜΕΤΑ ΤΟΝ ΦΟΝΙΚΟ ΣΕΙΣΜΟ ΦΟΒΟΙ ΚΑΙ ΓΙΑ ΕΜΦΥΛΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1446259/estiasi-mahi-ependyseon-sto-street-food-ta-nea-brands-kai-oi-megaloi-paiktes/",
-        "https://www.efsyn.gr/politiki/1446250/evros-skoni-kai-thrypsala-to-programma-ton-3-dis-antidraseis-apo-tin-antipoliteysi/"
+        "https://www.efsyn.gr/kosmos/1446281/kolomvia-meta-ton-foniko-seismo-fovoi-kai-gia-emfylio/",
+        "https://www.efsyn.gr/athlitismos/1446272/o-protos-titlos-aek-kai-ofi-diekdikoyn-sto-pagkritio-to-super-cup/",
+        "https://www.efsyn.gr/ellada/1446311/fotia-se-hamili-vlastisi-sto-haidari/"
       ],
-      "seen_at_utc": "2026-08-12T05:30:20.152724+00:00"
+      "seen_at_utc": "2026-08-12T05:51:22.491317+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/greece/simera-stis-1130-sto-xalandri-to-teleytaio-antio-ston-stelio-ramfo-i-paraklisi-tis-oikogeneias/",
-      "title": "Σήμερα στις 11:30 στο Χαλάνδρι το τελευταίο αντίο στον Στέλιο Ράμφο – Η παράκληση της οικογένειας",
-      "normalized_title": "ΣΗΜΕΡΑ ΣΤΙΣ 11:30 ΣΤΟ ΧΑΛΑΝΔΡΙ ΤΟ ΤΕΛΕΥΤΑΙΟ ΑΝΤΙΟ ΣΤΟΝ ΣΤΕΛΙΟ ΡΑΜΦΟ – Η ΠΑΡΑΚΛΗΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
+      "url": "https://www.in.gr/2026/08/12/sports/basketball/mpainei-kai-sto-mpasket-o-ronalntinio-thelei-na-agorasei-ti-monako-pic/",
+      "title": "«Μπαίνει» και στο μπάσκετ ο Ροναλντίνιο: «Θέλει να αγοράσει τη Μονακό» (pic)",
+      "normalized_title": "«ΜΠΑΙΝΕΙ» ΚΑΙ ΣΤΟ ΜΠΑΣΚΕΤ Ο ΡΟΝΑΛΝΤΙΝΙΟ: «ΘΕΛΕΙ ΝΑ ΑΓΟΡΑΣΕΙ ΤΗ ΜΟΝΑΚΟ» (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/greece/simera-stis-1130-sto-xalandri-to-teleytaio-antio-ston-stelio-ramfo-i-paraklisi-tis-oikogeneias/",
-        "https://www.in.gr/2026/08/12/life/culture-live/nikos-kalogeropoulos-simera-stis-12-i-politiki-kideia-tou-ithopoiou/",
-        "https://www.in.gr/2026/08/12/sports/football/o-felipe-melo-stelnei-ton-neimar-stin-inter-maiami-tou-mesi/"
+        "https://www.in.gr/2026/08/12/sports/basketball/mpainei-kai-sto-mpasket-o-ronalntinio-thelei-na-agorasei-ti-monako-pic/",
+        "https://www.in.gr/2026/08/12/world/indonisia-diasosi-100-kai-pleon-epivaton-epeita-apo-pyrkagia-se-porthmeio/"
       ],
-      "seen_at_utc": "2026-08-12T05:30:20.152695+00:00"
+      "seen_at_utc": "2026-08-12T05:51:22.491296+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T05:30:20.152827+00:00"
+  "updated_at_utc": "2026-08-12T05:51:22.491404+00:00"
 }
