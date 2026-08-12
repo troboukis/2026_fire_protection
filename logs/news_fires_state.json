@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564398482/i-kerkyra-sto-monopati-tis-ekleipsis-ilioy/",
-      "title": "Η Κέρκυρα στο «μονοπάτι» της έκλειψης ηλίου",
-      "normalized_title": "Η ΚΕΡΚΥΡΑ ΣΤΟ «ΜΟΝΟΠΑΤΙ» ΤΗΣ ΕΚΛΕΙΨΗΣ ΗΛΙΟΥ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564398521/epikoinonia-gerapetriti-roympio-gia-dimereis-scheseis-mesi-anatoli-kai-oykrania/",
+      "title": "Επικοινωνία Γεραπετρίτη – Ρούμπιο για διμερείς σχέσεις, Μέση Ανατολή και Ουκρανία",
+      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ – ΡΟΥΜΠΙΟ ΓΙΑ ΔΙΜΕΡΕΙΣ ΣΧΕΣΕΙΣ, ΜΕΣΗ ΑΝΑΤΟΛΗ ΚΑΙ ΟΥΚΡΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564398482/i-kerkyra-sto-monopati-tis-ekleipsis-ilioy/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564398521/epikoinonia-gerapetriti-roympio-gia-dimereis-scheseis-mesi-anatoli-kai-oykrania/",
+        "https://www.kathimerini.gr/life/auto/564398428/lunar-roving-vehicle-apo-ti-gi-sti-selini/"
       ],
-      "seen_at_utc": "2026-08-12T15:30:10.172230+00:00"
+      "seen_at_utc": "2026-08-12T15:51:19.938249+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864070/dorean-kratiko-pistopoiitiko-glossomatheias-gia-agglika-gallika-italika-kai-germanika-se-mathites-tis-ggumnasiou/?utm_source=rss",
-      "title": "Δωρεάν κρατικό πιστοποιητικό γλωσσομάθειας για Αγγλικά, Γαλλικά, Ιταλικά και Γερμανικά σε μαθητές της Γ΄Γυμνασίου",
-      "normalized_title": "ΔΩΡΕΑΝ ΚΡΑΤΙΚΟ ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΓΛΩΣΣΟΜΑΘΕΙΑΣ ΓΙΑ ΑΓΓΛΙΚΑ, ΓΑΛΛΙΚΑ, ΙΤΑΛΙΚΑ ΚΑΙ ΓΕΡΜΑΝΙΚΑ ΣΕ ΜΑΘΗΤΕΣ ΤΗΣ Γ΄ΓΥΜΝΑΣΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1864075/se-klima-suginisis-kai-me-to-agapimeno-tou-tragoudi-apotefrothike-o-nikos-kalogeropoulos-sti-ritsona/?utm_source=rss",
+      "title": "Σε κλίμα συγκίνησης και με το αγαπημένο του τραγούδι αποτεφρώθηκε ο Νίκος Καλογερόπουλος στη Ριτσώνα",
+      "normalized_title": "ΣΕ ΚΛΙΜΑ ΣΥΓΚΙΝΗΣΗΣ ΚΑΙ ΜΕ ΤΟ ΑΓΑΠΗΜΕΝΟ ΤΟΥ ΤΡΑΓΟΥΔΙ ΑΠΟΤΕΦΡΩΘΗΚΕ Ο ΝΙΚΟΣ ΚΑΛΟΓΕΡΟΠΟΥΛΟΣ ΣΤΗ ΡΙΤΣΩΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864070/dorean-kratiko-pistopoiitiko-glossomatheias-gia-agglika-gallika-italika-kai-germanika-se-mathites-tis-ggumnasiou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864075/se-klima-suginisis-kai-me-to-agapimeno-tou-tragoudi-apotefrothike-o-nikos-kalogeropoulos-sti-ritsona/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T15:30:10.172357+00:00"
+      "seen_at_utc": "2026-08-12T15:51:19.938370+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446777/arhise-to-pazari-gia-dieyrynsi-stin-amyntiki-symfonia-tis-mekkas-i-agkyra-thelei-kai-tin-aigypto-to-riant-diafonei/",
-      "title": "Άρχισε το παζάρι για διεύρυνση στη συμφωνία της Μέκκας: Η Άγκυρα θέλει και την Αίγυπτο, το Ριάντ διαφωνεί",
-      "normalized_title": "ΑΡΧΙΣΕ ΤΟ ΠΑΖΑΡΙ ΓΙΑ ΔΙΕΥΡΥΝΣΗ ΣΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ: Η ΑΓΚΥΡΑ ΘΕΛΕΙ ΚΑΙ ΤΗΝ ΑΙΓΥΠΤΟ, ΤΟ ΡΙΑΝΤ ΔΙΑΦΩΝΕΙ",
+      "url": "https://www.efsyn.gr/kosmos/1446768/dytikoi-ohthi-israilinoi-epoikoi-poliorkoyn-oikogeneies-se-palaistiniako-horio/",
+      "title": "Δυτικοί Όχθη: Ισραηλινοί έποικοι πολιορκούν οικογένειες σε παλαιστινιακό χωριό",
+      "normalized_title": "ΔΥΤΙΚΟΙ ΟΧΘΗ: ΙΣΡΑΗΛΙΝΟΙ ΕΠΟΙΚΟΙ ΠΟΛΙΟΡΚΟΥΝ ΟΙΚΟΓΕΝΕΙΕΣ ΣΕ ΠΑΛΑΙΣΤΙΝΙΑΚΟ ΧΩΡΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446777/arhise-to-pazari-gia-dieyrynsi-stin-amyntiki-symfonia-tis-mekkas-i-agkyra-thelei-kai-tin-aigypto-to-riant-diafonei/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-arheio-3/"
+        "https://www.efsyn.gr/kosmos/1446768/dytikoi-ohthi-israilinoi-epoikoi-poliorkoyn-oikogeneies-se-palaistiniako-horio/",
+        "https://www.efsyn.gr/nisides/1446418/voreioanatoliki-eyvoia-deka-yperohes-paralies-me-vati-odiki-prosvasi-ligi-ora-makria-apo-tin-athina/"
       ],
-      "seen_at_utc": "2026-08-12T15:30:10.172331+00:00"
+      "seen_at_utc": "2026-08-12T15:51:19.938328+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/greece/kimolos-den-ypirxe-rele-asfaleias-leei-i-mitera-tou-17xronou-pou-skotothike-apo-ilektropliksia/",
-      "title": "Κίμωλος: «Δεν υπήρχε ρελέ ασφαλείας» λέει η μητέρα του 17χρονου που σκοτώθηκε από ηλεκτροπληξία",
-      "normalized_title": "ΚΙΜΩΛΟΣ: «ΔΕΝ ΥΠΗΡΧΕ ΡΕΛΕ ΑΣΦΑΛΕΙΑΣ» ΛΕΕΙ Η ΜΗΤΕΡΑ ΤΟΥ 17ΧΡΟΝΟΥ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΑΠΟ ΗΛΕΚΤΡΟΠΛΗΞΙΑ",
+      "url": "https://www.in.gr/2026/08/12/english-edition/meta-tiktok-to-fact-check-spain-border-crossing-content/",
+      "title": "Meta, TikTok to Fact-Check Spain Border Crossing Content",
+      "normalized_title": "META, TIKTOK TO FACT-CHECK SPAIN BORDER CROSSING CONTENT",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/greece/kimolos-den-ypirxe-rele-asfaleias-leei-i-mitera-tou-17xronou-pou-skotothike-apo-ilektropliksia/"
+        "https://www.in.gr/2026/08/12/english-edition/meta-tiktok-to-fact-check-spain-border-crossing-content/",
+        "https://www.in.gr/2026/08/12/greece/fthiotida-profylakisteoi-oi-dyo-syllifthentes-gia-ti-megali-xasisofyteia-sti-mesaia-kapsi-anaziteitai-48xronos/",
+        "https://www.in.gr/2026/08/12/politics/diplomatia/tilefoniki-epikoinonia-gerapetriti-me-roumpio-ti-syzitisan-oi-dyo-ypourgoi-eksoterikon/",
+        "https://www.in.gr/2026/08/12/sports/on-field/kala-nea-gia-to-neo-gipedo-tis-inter-kai-tis-milan/"
       ],
-      "seen_at_utc": "2026-08-12T15:30:10.172294+00:00"
+      "seen_at_utc": "2026-08-12T15:51:19.938284+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T15:30:10.172443+00:00"
+  "updated_at_utc": "2026-08-12T15:51:19.938463+00:00"
 }
