@@ -1,18 +1,25 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/disney/564395956/ntonalnt-146-chrysoi-erasitechnes/",
-      "title": "Ντόναλντ #146 ΧΡΥΣΟΙ ΕΡΑΣΙΤΕΧΝΕΣ",
-      "normalized_title": "ΝΤΟΝΑΛΝΤ #146 ΧΡΥΣΟΙ ΕΡΑΣΙΤΕΧΝΕΣ",
+      "url": "https://www.kathimerini.gr/world/564398038/aystralia-aposyrthikan-oi-katigories-gia-endooikogeneiaki-via-se-varos-toy-iroa-toy-mpontai/",
+      "title": "Αυστραλία: Αποσύρθηκαν οι κατηγορίες για ενδοοικογενειακή βία σε βάρος του «ήρωα» του Μπόνταϊ",
+      "normalized_title": "ΑΥΣΤΡΑΛΙΑ: ΑΠΟΣΥΡΘΗΚΑΝ ΟΙ ΚΑΤΗΓΟΡΙΕΣ ΓΙΑ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΒΙΑ ΣΕ ΒΑΡΟΣ ΤΟΥ «ΗΡΩΑ» ΤΟΥ ΜΠΟΝΤΑΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/disney/564395956/ntonalnt-146-chrysoi-erasitechnes/",
-        "https://www.kathimerini.gr/society/564397978/korinthia-ich-prosekroyse-se-stathmeymeno-fortigo-nekros-o-48chronos-odigos/",
-        "https://www.kathimerini.gr/world/564397963/anilikoi-kai-koinonika-diktya-antimetopi-me-agogi-dekadon-amerikanikon-politeion-i-meta/",
-        "https://www.kathimerini.gr/k/k-magazine/564388093/ti-allazei-sti-metafora-chrimaton-meso-pistotikis/",
-        "https://www.kathimerini.gr/culture/tv/564397960/tha-yparxei-pempti-sezon-toy-ted-lasso/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564396970/fthinoporina-metopa-stin-exoteriki-politiki/"
+        "https://www.kathimerini.gr/world/564398038/aystralia-aposyrthikan-oi-katigories-gia-endooikogeneiaki-via-se-varos-toy-iroa-toy-mpontai/",
+        "https://www.kathimerini.gr/world/564398032/pethane-o-proin-prothypoyrgos-tis-kinas-zoy-rongktzi/",
+        "https://www.kathimerini.gr/society/564398029/rodopi-fotia-stin-periochi-imeros-epicheiroyn-enaeria-mesa/",
+        "https://www.kathimerini.gr/world/564398011/oliki-ekleipsi-ilioy-osa-prepei-na-xerete-gia-to-spanio-fainomeno/",
+        "https://www.kathimerini.gr/columns/564398005/oi-nees-arches-threfoyn-ton-siril-ntesers/",
+        "https://www.kathimerini.gr/opinion/564396883/elleimmata-2/",
+        "https://www.kathimerini.gr/k/gastronomos/564396607/salata-me-glistrida-tono-kai-fasolia-apo-konserva/",
+        "https://www.kathimerini.gr/opinion/564397285/genarches-pepromenon/",
+        "https://www.kathimerini.gr/opinion/564397282/stelios-ramfos-anorthodoxies/",
+        "https://www.kathimerini.gr/opinion/564396877/egklovismenoi-stin-antiparathesi/",
+        "https://www.kathimerini.gr/opinion/564397114/to-trayma-tis-fotias/",
+        "https://www.kathimerini.gr/opinion/564397075/notheia-stis-ekloges-ton-ipa/",
+        "https://www.kathimerini.gr/opinion/564397969/dysvato-elliniko-kalokairi/"
       ],
-      "seen_at_utc": "2026-08-12T09:51:20.549477+00:00"
+      "seen_at_utc": "2026-08-12T10:17:33.937959+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,37 +1271,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863924/suginise-o-iereas-stin-kideia-tou-steliou-ramfou-gia-tis-teleutaies-stigmes-tou-kalufthike-me-to-petrahili/?utm_source=rss",
-      "title": "Συγκίνησε ο ιερέας στην κηδεία του Στέλιου Ράμφου για τις τελευταίες στιγμές του: Κατέβασε το πετραχήλι για να καλυφθεί με τη χάρη του Θεού",
-      "normalized_title": "ΣΥΓΚΙΝΗΣΕ Ο ΙΕΡΕΑΣ ΣΤΗΝ ΚΗΔΕΙΑ ΤΟΥ ΣΤΕΛΙΟΥ ΡΑΜΦΟΥ ΓΙΑ ΤΙΣ ΤΕΛΕΥΤΑΙΕΣ ΣΤΙΓΜΕΣ ΤΟΥ: ΚΑΤΕΒΑΣΕ ΤΟ ΠΕΤΡΑΧΗΛΙ ΓΙΑ ΝΑ ΚΑΛΥΦΘΕΙ ΜΕ ΤΗ ΧΑΡΗ ΤΟΥ ΘΕΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1863938/parartima-ekpa-stin-kupro-terastio-endiaferon-me-ekatodades-aitiseis-upopsifion-foititon/?utm_source=rss",
+      "title": "Παράρτημα ΕΚΠΑ στην Κύπρο: Τεράστιο ενδιαφέρον με εκατοντάδες αιτήσεις υποψήφιων φοιτητών",
+      "normalized_title": "ΠΑΡΑΡΤΗΜΑ ΕΚΠΑ ΣΤΗΝ ΚΥΠΡΟ: ΤΕΡΑΣΤΙΟ ΕΝΔΙΑΦΕΡΟΝ ΜΕ ΕΚΑΤΟΝΤΑΔΕΣ ΑΙΤΗΣΕΙΣ ΥΠΟΨΗΦΙΩΝ ΦΟΙΤΗΤΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863924/suginise-o-iereas-stin-kideia-tou-steliou-ramfou-gia-tis-teleutaies-stigmes-tou-kalufthike-me-to-petrahili/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863938/parartima-ekpa-stin-kupro-terastio-endiaferon-me-ekatodades-aitiseis-upopsifion-foititon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863937/ependuseis-1-dis-euro-gia-foititikes-esties-telos-stous-autodiaheirizoenous-horous-kai-epektasi-tis-eisodou-e-karta/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863935/fotia-se-hamili-vlastisi-stin-imero-rodopis-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863931/sta-dikastiria-thessalonikis-o-59hronos-puromanis-evale-exi-foties-stin-sindo-mesa-se-liges-imeres/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T09:51:20.549611+00:00"
+      "seen_at_utc": "2026-08-12T10:17:33.938152+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1446486/elas-gia-ton-xylodarmo-6hronoy-stin-aigialeia-to-paidi-den-einai-idioktisia-kanenos/",
-      "title": "ΕΛΑΣ για τον ξυλοδαρμό 6χρονου στην Αιγιάλεια: «Το παιδί δεν είναι ιδιοκτησία κανενός»",
-      "normalized_title": "ΕΛΑΣ ΓΙΑ ΤΟΝ ΞΥΛΟΔΑΡΜΟ 6ΧΡΟΝΟΥ ΣΤΗΝ ΑΙΓΙΑΛΕΙΑ: «ΤΟ ΠΑΙΔΙ ΔΕΝ ΕΙΝΑΙ ΙΔΙΟΚΤΗΣΙΑ ΚΑΝΕΝΟΣ»",
+      "url": "https://www.efsyn.gr/ellada/1446532/korinthia-nekros-48hronos-poy-parasyrthike-apo-ih-sto-ryto/",
+      "title": "Τροχαίο δυστύχημα στην Κορινθία: Νεκρός 48χρονος που παρασύρθηκε από ΙΧ στο Ρυτό",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΗΝ ΚΟΡΙΝΘΙΑ: ΝΕΚΡΟΣ 48ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΑΣΥΡΘΗΚΕ ΑΠΟ ΙΧ ΣΤΟ ΡΥΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1446486/elas-gia-ton-xylodarmo-6hronoy-stin-aigialeia-to-paidi-den-einai-idioktisia-kanenos/",
-        "https://www.efsyn.gr/politiki/1446501/elas-gia-elidek-dyo-kyvernitikes-exaggelies-se-dyo-mines-kai-akomi-kamia-apofasi-me-desmeymena-posa/",
-        "https://www.efsyn.gr/ellada/1446517/pethane-i-ithopoios-kiki-dalakoy-se-ilikia-83-eton/",
-        "https://www.efsyn.gr/ellada/1446356/arhaiologiko-moyseio-hioy-emeine-sti-mesi-i-anakataskeyi-i-odysseia-akomi-enos-dimosioy-ergoy/"
+        "https://www.efsyn.gr/ellada/1446532/korinthia-nekros-48hronos-poy-parasyrthike-apo-ih-sto-ryto/"
       ],
-      "seen_at_utc": "2026-08-12T09:51:20.549579+00:00"
+      "seen_at_utc": "2026-08-12T10:17:33.938116+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/politics/politiki-grammateia/diamantopoulou-oti-exei-parousiasei-o-tsipras-ta-exei-pei-to-pasok-i-i-nd-mpourdes-ta-peri-synergasias-me-nd/",
-      "title": "Διαμαντοπούλου: Ό,τι έχει παρουσιάσει ο Τσίπρας τα έχει πει το ΠΑΣΟΚ ή η ΝΔ – Μπούρδες τα περί συνεργασίας με ΝΔ",
-      "normalized_title": "ΔΙΑΜΑΝΤΟΠΟΥΛΟΥ: Ο,ΤΙ ΕΧΕΙ ΠΑΡΟΥΣΙΑΣΕΙ Ο ΤΣΙΠΡΑΣ ΤΑ ΕΧΕΙ ΠΕΙ ΤΟ ΠΑΣΟΚ Η Η ΝΔ – ΜΠΟΥΡΔΕΣ ΤΑ ΠΕΡΙ ΣΥΝΕΡΓΑΣΙΑΣ ΜΕ ΝΔ",
+      "url": "https://www.in.gr/2026/08/12/greece/fotia-sti-rodopi-sikothikan-tessera-enaeria-ekkenonontai-ampelakia-kai-profitis-ilias/",
+      "title": "Φωτιά στη Ροδόπη: Σηκώθηκαν τέσσερα εναέρια – Εκκενώνονται Αμπελάκια και Προφήτης Ηλίας",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΡΟΔΟΠΗ: ΣΗΚΩΘΗΚΑΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ – ΕΚΚΕΝΩΝΟΝΤΑΙ ΑΜΠΕΛΑΚΙΑ ΚΑΙ ΠΡΟΦΗΤΗΣ ΗΛΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/politics/politiki-grammateia/diamantopoulou-oti-exei-parousiasei-o-tsipras-ta-exei-pei-to-pasok-i-i-nd-mpourdes-ta-peri-synergasias-me-nd/",
-        "https://www.in.gr/2026/08/12/politics/politiki-grammateia/sdoukou-gia-tsipra-epidiokei-anataraxi-gia-na-kyvernisei-me-polemo-me-skiaxtra-apanta-i-nd-sti-synenteyksi-sto-in/",
-        "https://www.in.gr/2026/08/12/greece/tragodia-stin-kimolo-17xronos-pethane-apo-ilektropliksia-tin-ora-pou-ekane-ntous-ti-ereynoun-oi-arxes/"
+        "https://www.in.gr/2026/08/12/greece/fotia-sti-rodopi-sikothikan-tessera-enaeria-ekkenonontai-ampelakia-kai-profitis-ilias/",
+        "https://www.in.gr/2026/08/12/economy/diethnis-oikonomia/ekthesi-allianz-pos-i-ekriksi-ton-data-center-allazei-ton-asfalistiko-klado/",
+        "https://www.in.gr/2026/08/12/plus/medianews/mega-protia-stin-tiletheasi-gia-ton-agona-naimegken-olympiakos/",
+        "https://www.in.gr/2026/08/12/greece/prosopikos-voithos-poioi-mporoun-na-entaxthoun-gia-eos-1-939-eyro-ton-mina/",
+        "https://www.in.gr/2026/08/12/world/erntogan-i-symfonia-tis-mekkas-enisxyei-tin-apotreptiki-dynami-den-stoxeyei-kamia-xora/",
+        "https://www.in.gr/2026/08/12/economy/diethnis-oikonomia/oi-neoi-antimetopizoun-megalyteres-dyskolies-stin-anazitisi-aksioprepous-ergasias-pagkosmia-ayksisi-tis-anergias/",
+        "https://www.in.gr/2026/08/12/life/culture-live/paper-tiger-to-proto-treiler-tou-astynomikou-dramatos-thymizei-elliniki-tragodia-me-fonto-ti-nea-yorki/",
+        "https://www.in.gr/2026/08/12/sports/othersports/miltos-o-mythos-ta-12-xrysa-i-pagkosmia-anagnorisi-kai-i-mia-ptisi-pou-menei-vids/"
       ],
-      "seen_at_utc": "2026-08-12T09:51:20.549537+00:00"
+      "seen_at_utc": "2026-08-12T10:17:33.938031+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T09:51:20.549695+00:00"
+  "updated_at_utc": "2026-08-12T10:17:33.938242+00:00"
 }
