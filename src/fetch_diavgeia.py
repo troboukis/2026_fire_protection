@@ -25,8 +25,10 @@ from IPython.display import clear_output  # noqa: F401 (safe to remove if not in
 
 try:
     from .pdf_pipeline import extract_document_code, parse_pdf_file_to_row
+    from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
 except ImportError:  # script execution fallback: `python src/fetch_diavgeia.py`
     from pdf_pipeline import extract_document_code, parse_pdf_file_to_row
+    from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
 
 # ---------------------------------------------------------------------------
 # Config
@@ -434,7 +436,7 @@ def fetch_new_decisions(since: datetime | None) -> list[dict]:
                 excluded_in_batch = 0
                 filtered_batch = []
                 for rec in api_batch:
-                    if record_has_excluded_org(rec):
+                    if record_has_excluded_org(rec) or record_is_confirmed_irrelevant(rec):
                         excluded_in_batch += 1
                         continue
                     filtered_batch.append(rec)
@@ -726,6 +728,18 @@ def record_has_excluded_org(rec: dict) -> bool:
         org_name_clean = normalize_upper_no_accents(org_name_clean)
         org_name_clean = normalize_org_name_by_type(org_type, org_name_clean)
     return is_excluded_org_name_clean(org_name_clean)
+
+
+def record_is_confirmed_irrelevant(rec: dict) -> bool:
+    """Return true only for narrowly defined, non-target administrative acts."""
+    org_label = rec.get("organization")
+    if isinstance(org_label, dict):
+        org_label = org_label.get("label")
+    _, org_name_clean = classify_org(org_label)
+    return is_confirmed_irrelevant_decision(
+        org_name_clean,
+        extract_label(rec.get("decisionType")),
+    )
 
 
 def normalize_decision_columns(df: pd.DataFrame) -> pd.DataFrame:
