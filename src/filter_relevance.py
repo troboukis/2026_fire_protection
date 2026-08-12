@@ -31,6 +31,11 @@ from typing import Any
 import pandas as pd
 
 try:
+    from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+except ImportError:  # script execution fallback
+    from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+
+try:
     from tqdm import tqdm
 except Exception:  # pragma: no cover - optional dependency
     tqdm = None
@@ -269,7 +274,11 @@ def apply_relevance_filter(
         pdf_matches = find_matching_keywords(pdf_text, keyword_specs) if pdf_available else []
         pdf_match = len(pdf_matches) > 0
 
-        is_relevant = bool(subject_match or pdf_match)
+        confirmed_irrelevant = is_confirmed_irrelevant_decision(
+            df.at[idx, "org_name_clean"] if "org_name_clean" in df.columns else None,
+            df.at[idx, "decisionType"] if "decisionType" in df.columns else None,
+        )
+        is_relevant = bool(subject_match or pdf_match) and not confirmed_irrelevant
 
         df.at[idx, "subject_match"] = subject_match
         df.at[idx, "pdf_match"] = pdf_match

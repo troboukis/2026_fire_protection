@@ -41,6 +41,7 @@ if str(REPO) not in sys.path:
 
 from municipality_normalization import normalizeMunicipality
 from src.diavgeia_amounts import resolve_diavgeia_amount_text
+from src.diavgeia_relevance_rules import is_confirmed_irrelevant_decision
 from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
 
@@ -1524,6 +1525,8 @@ def diav_rows(
     for _, r in diav.iterrows():
         org_type = t_up(r.get("org_type")) or ""
         org_name = t_up(r.get("org_name_clean")) or ""
+        if is_confirmed_irrelevant_decision(org_name, r.get("decisionType")):
+            continue
         region_key, org_key_resolved, municipality_key = resolve_diavgeia_context(
             org_type=org_type,
             org_name=org_name,
