@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564398242/therise-o-ti-espeire-o-olympiakos/",
-      "title": "Θέρισε ό,τι έσπειρε ο Ολυμπιακός",
-      "normalized_title": "ΘΕΡΙΣΕ Ο,ΤΙ ΕΣΠΕΙΡΕ Ο ΟΛΥΜΠΙΑΚΟΣ",
+      "url": "https://www.kathimerini.gr/world/564398353/toyrkia-synetrivi-stratiotiko-aeroskafos-se-ekpaideytiki-ptisi/",
+      "title": "Τουρκία: Συνετρίβη μαχητικό F-16 σε εκπαιδευτική πτήση",
+      "normalized_title": "ΤΟΥΡΚΙΑ: ΣΥΝΕΤΡΙΒΗ ΜΑΧΗΤΙΚΟ F-16 ΣΕ ΕΚΠΑΙΔΕΥΤΙΚΗ ΠΤΗΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564398242/therise-o-ti-espeire-o-olympiakos/",
-        "https://www.kathimerini.gr/society/564398344/dimos-athinaion-peripolies-kai-drones-me-thermikes-kameres-gia-ton-kindyno-pyrkagias/"
+        "https://www.kathimerini.gr/world/564398353/toyrkia-synetrivi-stratiotiko-aeroskafos-se-ekpaideytiki-ptisi/"
       ],
-      "seen_at_utc": "2026-08-12T12:30:02.535200+00:00"
+      "seen_at_utc": "2026-08-12T12:40:17.445713+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,23 +1270,24 @@
       "seen_at_utc": "2026-08-12T12:30:02.535333+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446643/o-tramp-epivevaiose-oti-fygadeytike-apo-tin-agkyra-i-toyrkia-vlepei-kalostimeni-israilini-provokatsia/",
-      "title": "Ο Τραμπ επιβεβαίωσε ότι φυγαδεύτηκε από την Άγκυρα, η Τουρκία βλέπει καλοστημένη ισραηλινή προβοκάτσια",
-      "normalized_title": "Ο ΤΡΑΜΠ ΕΠΙΒΕΒΑΙΩΣΕ ΟΤΙ ΦΥΓΑΔΕΥΤΗΚΕ ΑΠΟ ΤΗΝ ΑΓΚΥΡΑ, Η ΤΟΥΡΚΙΑ ΒΛΕΠΕΙ ΚΑΛΟΣΤΗΜΕΝΗ ΙΣΡΑΗΛΙΝΗ ΠΡΟΒΟΚΑΤΣΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1446644/kozani-synelifthi-53hronos-gia-diakinisi-narkotikon-katashethike-elaio-kannavis-ektimomenis-axias-ekato-hiliadon-eyro/",
+      "title": "Κοζάνη: Συνελήφθη 53χρονος για διακίνηση ναρκωτικών – Κατασχέθηκε έλαιο κάνναβης εκτιμώμενης αξίας εκατό χιλιάδων ευρώ",
+      "normalized_title": "ΚΟΖΑΝΗ: ΣΥΝΕΛΗΦΘΗ 53ΧΡΟΝΟΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ – ΚΑΤΑΣΧΕΘΗΚΕ ΕΛΑΙΟ ΚΑΝΝΑΒΗΣ ΕΚΤΙΜΩΜΕΝΗΣ ΑΞΙΑΣ ΕΚΑΤΟ ΧΙΛΙΑΔΩΝ ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446643/o-tramp-epivevaiose-oti-fygadeytike-apo-tin-agkyra-i-toyrkia-vlepei-kalostimeni-israilini-provokatsia/"
+        "https://www.efsyn.gr/ellada/1446644/kozani-synelifthi-53hronos-gia-diakinisi-narkotikon-katashethike-elaio-kannavis-ektimomenis-axias-ekato-hiliadon-eyro/",
+        "https://www.efsyn.gr/epistimi/1446625/oliki-ekleipsi-ilioy-poy-tha-einai-orati-stin-eyropi-ti-ishyei-gia-tin-ellada-enthoysiasmenoi-oi-eidikoi/"
       ],
-      "seen_at_utc": "2026-08-12T12:30:02.535293+00:00"
+      "seen_at_utc": "2026-08-12T12:40:17.445824+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/sports/basketball/live-streaming-letonia-ellada-2/",
-      "title": "Live Streaming: Λετονία – Ελλάδα",
-      "normalized_title": "LIVE STREAMING: ΛΕΤΟΝΙΑ – ΕΛΛΑΔΑ",
+      "url": "https://www.in.gr/2026/08/12/greece/irakleio-skylos-xtypithike-apo-ilektriko-reyma-sti-mesi-tou-dromou-patise-svisto-fotistiko/",
+      "title": "Σκύλος χτυπήθηκε από ηλεκτρικό ρεύμα στη μέση του δρόμου στο Ηράκλειο - Πάτησε σβηστό φωτιστικό",
+      "normalized_title": "ΣΚΥΛΟΣ ΧΤΥΠΗΘΗΚΕ ΑΠΟ ΗΛΕΚΤΡΙΚΟ ΡΕΥΜΑ ΣΤΗ ΜΕΣΗ ΤΟΥ ΔΡΟΜΟΥ ΣΤΟ ΗΡΑΚΛΕΙΟ - ΠΑΤΗΣΕ ΣΒΗΣΤΟ ΦΩΤΙΣΤΙΚΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/sports/basketball/live-streaming-letonia-ellada-2/"
+        "https://www.in.gr/2026/08/12/greece/irakleio-skylos-xtypithike-apo-ilektriko-reyma-sti-mesi-tou-dromou-patise-svisto-fotistiko/"
       ],
-      "seen_at_utc": "2026-08-12T12:30:02.535247+00:00"
+      "seen_at_utc": "2026-08-12T12:40:17.445777+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T12:30:02.535416+00:00"
+  "updated_at_utc": "2026-08-12T12:40:17.445906+00:00"
 }
