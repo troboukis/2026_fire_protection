@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564398968/o-ofi-katektise-to-super-cup-kai-egrapse-istoria-5-4-sta-penalti-tin-aek/",
-      "title": "Ο ΟΦΗ κατέκτησε το Super Cup και έγραψε Ιστορία, 5-4 στα πέναλτι την ΑΕΚ",
-      "normalized_title": "Ο ΟΦΗ ΚΑΤΕΚΤΗΣΕ ΤΟ SUPER CUP ΚΑΙ ΕΓΡΑΨΕ ΙΣΤΟΡΙΑ, 5-4 ΣΤΑ ΠΕΝΑΛΤΙ ΤΗΝ ΑΕΚ",
+      "url": "https://www.kathimerini.gr/world/564398824/zelenski-o-oykranikos-stratos-apeleytherose-745-t-chlm-to-2026/",
+      "title": "Ζελένσκι: Ο ουκρανικός στρατός απελευθέρωσε 745 τ.χλμ. το 2026",
+      "normalized_title": "ΖΕΛΕΝΣΚΙ: Ο ΟΥΚΡΑΝΙΚΟΣ ΣΤΡΑΤΟΣ ΑΠΕΛΕΥΘΕΡΩΣΕ 745 Τ.ΧΛΜ. ΤΟ 2026",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564398968/o-ofi-katektise-to-super-cup-kai-egrapse-istoria-5-4-sta-penalti-tin-aek/",
-        "https://www.kathimerini.gr/society/564398692/dorean-pistopoiisi-xenis-glossas-gia-toys-mathites-g-gymnasioy/"
+        "https://www.kathimerini.gr/world/564398824/zelenski-o-oykranikos-stratos-apeleytherose-745-t-chlm-to-2026/",
+        "https://www.kathimerini.gr/athletics/564398809/olympiakos-mia-anasa-apo-tin-apoktisi-toy-empage-en-ntiage/"
       ],
-      "seen_at_utc": "2026-08-12T19:30:07.068481+00:00"
+      "seen_at_utc": "2026-08-12T19:52:07.847357+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864148/oi-oukranoi-upostirizoun-oti-eplixan-tria-polemika-ploia-sti-nautiki-vasi-tou-novorosisk/?utm_source=rss",
-      "title": "Οι Ουκρανοί υποστηρίζουν ότι έπληξαν τρία ρωσικά πολεμικά πλοία στη ναυτική βάση του Νοβοροσίσκ",
-      "normalized_title": "ΟΙ ΟΥΚΡΑΝΟΙ ΥΠΟΣΤΗΡΙΖΟΥΝ ΟΤΙ ΕΠΛΗΞΑΝ ΤΡΙΑ ΡΩΣΙΚΑ ΠΟΛΕΜΙΚΑ ΠΛΟΙΑ ΣΤΗ ΝΑΥΤΙΚΗ ΒΑΣΗ ΤΟΥ ΝΟΒΟΡΟΣΙΣΚ",
+      "url": "https://www.protothema.gr/greece/article/1864150/asuneiditos-odigos-vutioforou-prospernaei-paranoma-pano-se-strofi-paraligo-na-sugroustei-me-mihani-video/?utm_source=rss",
+      "title": "Αδιανόητο βίντεο: «Δολοφόνος» οδηγός βυτιοφόρου προσπερνάει πάνω σε στροφή, παρά λίγο γλίτωσε οδηγός μηχανής",
+      "normalized_title": "ΑΔΙΑΝΟΗΤΟ ΒΙΝΤΕΟ: «ΔΟΛΟΦΟΝΟΣ» ΟΔΗΓΟΣ ΒΥΤΙΟΦΟΡΟΥ ΠΡΟΣΠΕΡΝΑΕΙ ΠΑΝΩ ΣΕ ΣΤΡΟΦΗ, ΠΑΡΑ ΛΙΓΟ ΓΛΙΤΩΣΕ ΟΔΗΓΟΣ ΜΗΧΑΝΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864148/oi-oukranoi-upostirizoun-oti-eplixan-tria-polemika-ploia-sti-nautiki-vasi-tou-novorosisk/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864150/asuneiditos-odigos-vutioforou-prospernaei-paranoma-pano-se-strofi-paraligo-na-sugroustei-me-mihani-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T19:30:07.068550+00:00"
+      "seen_at_utc": "2026-08-12T19:52:07.847479+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446888/thriamvos-toy-ofi-sto-soyper-kap-sta-penalti-krithike-o-protos-titlos-tis-hronias/",
-      "title": "Θρίαμβος του ΟΦΗ στο Σούπερ Καπ: Στα πέναλτι κρίθηκε ο πρώτος τίτλος της χρονιάς",
-      "normalized_title": "ΘΡΙΑΜΒΟΣ ΤΟΥ ΟΦΗ ΣΤΟ ΣΟΥΠΕΡ ΚΑΠ: ΣΤΑ ΠΕΝΑΛΤΙ ΚΡΙΘΗΚΕ Ο ΠΡΩΤΟΣ ΤΙΤΛΟΣ ΤΗΣ ΧΡΟΝΙΑΣ",
+      "url": "https://www.efsyn.gr/kosmos/1446897/hathike-o-ilios-to-fainomeno-tis-olikis-ekleipsis-poy-kathilose-ekatommyria-anthropoys/",
+      "title": "Χάθηκε ο ήλιος: Το φαινόμενο της ολικής έκλειψης που καθήλωσε εκατομμύρια ανθρώπους",
+      "normalized_title": "ΧΑΘΗΚΕ Ο ΗΛΙΟΣ: ΤΟ ΦΑΙΝΟΜΕΝΟ ΤΗΣ ΟΛΙΚΗΣ ΕΚΛΕΙΨΗΣ ΠΟΥ ΚΑΘΗΛΩΣΕ ΕΚΑΤΟΜΜΥΡΙΑ ΑΝΘΡΩΠΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446888/thriamvos-toy-ofi-sto-soyper-kap-sta-penalti-krithike-o-protos-titlos-tis-hronias/",
-        "https://www.efsyn.gr/kosmos/1446883/ti-simainei-i-apodrasi-toy-tramp-apo-tin-agkyra-mia-epikoinoniaki-niki-toy-iran-se-enan-polemo-poy-den-leei-na-teleiosei/",
-        "https://www.efsyn.gr/kosmos/1446882/erntogan-o-netaniahoy-thelei-na-diagrapsei-tin-palaistini-apo-tin-pagkosmia-atzenta/"
+        "https://www.efsyn.gr/kosmos/1446897/hathike-o-ilios-to-fainomeno-tis-olikis-ekleipsis-poy-kathilose-ekatommyria-anthropoys/"
       ],
-      "seen_at_utc": "2026-08-12T19:17:17.408455+00:00"
+      "seen_at_utc": "2026-08-12T19:52:07.847437+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/sports/football/to-korner-doro-stin-aek-pou-efere-to-2-2-kai-ta-penalti-vid/",
-      "title": "Το κόρνερ – δώρο στην ΑΕΚ που έφερε το 2-2 και τα πέναλτι (vid)",
-      "normalized_title": "ΤΟ ΚΟΡΝΕΡ – ΔΩΡΟ ΣΤΗΝ ΑΕΚ ΠΟΥ ΕΦΕΡΕ ΤΟ 2-2 ΚΑΙ ΤΑ ΠΕΝΑΛΤΙ (VID)",
+      "url": "https://www.in.gr/2026/08/12/sports/football/megali-eykairia-gia-tin-vila-vid/",
+      "title": "Μεγάλη ευκαιρία για την Βίλα (vid)",
+      "normalized_title": "ΜΕΓΑΛΗ ΕΥΚΑΙΡΙΑ ΓΙΑ ΤΗΝ ΒΙΛΑ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/sports/football/to-korner-doro-stin-aek-pou-efere-to-2-2-kai-ta-penalti-vid/",
-        "https://www.in.gr/2026/08/12/in-science/perivallon-b-science/i-lista-ena-odoiporiko-sta-pio-kayta-simeia-tis-gis-pou-exoun-katagrafei-oi-ypsiloteres-thermokrasies-ston-kosmo/",
+        "https://www.in.gr/2026/08/12/sports/football/megali-eykairia-gia-tin-vila-vid/",
+        "https://www.in.gr/2026/08/12/economy/diethnis-oikonomia/i-nea-thilia-pou-apeilei-tin-pagkosmia-oikonomia/",
+        "https://www.in.gr/2026/08/12/sports/football/superbet-super-cup-i-diadikasia-ton-penalti-kai-oi-panigyrismoi-ton-kritikon-vid/",
         "https://www.in.gr/2026/08/12/economy/great-sea-interconnector-to-kalodio-elladas-kyprou-israil-paei-sto-amerikaniko-kogkreso/",
-        "https://www.in.gr/2026/08/12/sports/football/anoikse-to-skor-i-pari-me-gkol-tou-kvaratskelia-1-0-vid/",
-        "https://www.in.gr/2026/08/12/sports/football/aek-ofi-4-5-pen-2-2-k-a-meta-to-kypello-oi-kritikoi-katektisan-kai-to-super-cup/",
-        "https://www.in.gr/2026/08/12/politics/politiki-grammateia/sygxaritiria-tou-politikou-kosmou-ston-apostolo-sisko-gia-to-asimenio-metallio-sto-eyropaiko-protathlima/"
+        "https://www.in.gr/2026/08/12/world/telos-stis-theories-synomosias-i-zapper-tou-tramp-einai-aplos-egkyos/",
+        "https://www.in.gr/2026/08/12/sports/football/ola-ta-gkol-ston-teliko-tou-superbet-super-cup-vids/"
       ],
-      "seen_at_utc": "2026-08-12T19:30:07.068520+00:00"
+      "seen_at_utc": "2026-08-12T19:52:07.847394+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T19:30:07.068628+00:00"
+  "updated_at_utc": "2026-08-12T19:52:07.847557+00:00"
 }
