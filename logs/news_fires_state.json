@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564397789/to-iran-tha-entachthei-syntoma-stin-anaptyxiaki-trapeza-ton-brics/",
-      "title": "Το Ιράν «θα ενταχθεί σύντομα» στην αναπτυξιακή τράπεζα των BRICS",
-      "normalized_title": "ΤΟ ΙΡΑΝ «ΘΑ ΕΝΤΑΧΘΕΙ ΣΥΝΤΟΜΑ» ΣΤΗΝ ΑΝΑΠΤΥΞΙΑΚΗ ΤΡΑΠΕΖΑ ΤΩΝ BRICS",
+      "url": "https://www.kathimerini.gr/society/564397810/patra-ekrixi-ygraerioy-se-spiti-kinitopoiisi-tis-pyrosvestikis/",
+      "title": "Πάτρα: Εκρηξη υγραερίου σε σπίτι – Κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΠΑΤΡΑ: ΕΚΡΗΞΗ ΥΓΡΑΕΡΙΟΥ ΣΕ ΣΠΙΤΙ – ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564397789/to-iran-tha-entachthei-syntoma-stin-anaptyxiaki-trapeza-ton-brics/",
-        "https://www.kathimerini.gr/society/564397780/kimolos-nekros-17chronos-apo-ilektroplixia-ti-ereynoyn-oi-arches/",
-        "https://www.kathimerini.gr/culture/athinaika-plus/564396922/erieta-attali-apo-ti-dilo-sti-mykono-kai-apo-ekei-sto-kentro-toy-kosmoy/",
-        "https://www.kathimerini.gr/society/564397774/thessaloniki-vandalistike-anakataskeyasmeni-paidiki-chara-stin-ano-poli-eiche-molis-paradothei/",
-        "https://www.kathimerini.gr/culture/agenda/564397759/exodos-stin-athina-kai-ektos-tin-tetarti-12-8-panigyri-kai-mpofilioy/"
+        "https://www.kathimerini.gr/society/564397810/patra-ekrixi-ygraerioy-se-spiti-kinitopoiisi-tis-pyrosvestikis/",
+        "https://www.kathimerini.gr/world/564397807/seismos-stin-kolomvia-i-eyropaiki-enosi-apodesmeyse-voitheia-2-ekat-eyro/",
+        "https://www.kathimerini.gr/politics/564397795/nea-pyra-pasok-kata-tsipra-mprosta-sti-voylimia-tis-exoysias-enagkalizetai-me-symferonta-tis-oligarchias/"
       ],
-      "seen_at_utc": "2026-08-12T08:17:16.972704+00:00"
+      "seen_at_utc": "2026-08-12T08:30:03.746634+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,47 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1863880/auximenoi-kata-30-oi-psekasmoi-apo-tin-perifereia-gia-ta-kounoupia-stin-attiki/?utm_source=rss",
-      "title": "Αυξημένοι κατά 30% οι ψεκασμοί από την Περιφέρεια για τα κουνούπια στην Αττική",
-      "normalized_title": "ΑΥΞΗΜΕΝΟΙ ΚΑΤΑ 30% ΟΙ ΨΕΚΑΣΜΟΙ ΑΠΟ ΤΗΝ ΠΕΡΙΦΕΡΕΙΑ ΓΙΑ ΤΑ ΚΟΥΝΟΥΠΙΑ ΣΤΗΝ ΑΤΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1863891/nekros-17hronos-apo-ilektroplixia-stin-kimolo-ti-ereunoun-oi-arhes/?utm_source=rss",
+      "title": "Νεκρός 17χρονος από ηλεκτροπληξία στην Κίμωλο, τι ερευνούν οι Αρχές",
+      "normalized_title": "ΝΕΚΡΟΣ 17ΧΡΟΝΟΣ ΑΠΟ ΗΛΕΚΤΡΟΠΛΗΞΙΑ ΣΤΗΝ ΚΙΜΩΛΟ, ΤΙ ΕΡΕΥΝΟΥΝ ΟΙ ΑΡΧΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1863880/auximenoi-kata-30-oi-psekasmoi-apo-tin-perifereia-gia-ta-kounoupia-stin-attiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863877/sto-nosokomeio-hanion-duo-anilikes-meta-apo-katanalosi-alkool-se-parti-sunelifthisan-oi-kidemones-tous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863876/vandalistike-liga-24ora-meta-tin-paradosi-tis-anakataskeuasmeni-paidiki-hara-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863874/pote-kleinoun-oi-aitiseis-gia-to-eidiko-programma-apasholisis-gia-1000-anergous-ptuhiouhous-aei-sti-dupa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1863869/stelios-ramfos-autin-tin-ora-to-teleutaio-adio-ston-spoudaio-dianooumeno/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1863891/nekros-17hronos-apo-ilektroplixia-stin-kimolo-ti-ereunoun-oi-arhes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863888/sto-mikroskopio-oi-teleutaies-ores-tou-nekrou-astunomikou-ston-agio-dimitrio-ti-katethese-i-sudrofos-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1863887/pethane-i-mitera-pou-eihe-traumatistei-se-trohaio-stin-korinthou-tripoleos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T08:17:16.972794+00:00"
+      "seen_at_utc": "2026-08-12T08:30:03.746751+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446322/horis-gianni-i-ethniki-mpasket-ektos-kai-o-sloykas/",
-      "title": "Χωρίς Γιάννη η Εθνική μπάσκετ, εκτός και ο Σλούκας",
-      "normalized_title": "ΧΩΡΙΣ ΓΙΑΝΝΗ Η ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ, ΕΚΤΟΣ ΚΑΙ Ο ΣΛΟΥΚΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1446342/ypograpste-gia-na-anagnoristei-episima-o-oros-gynaikoktonia/",
+      "title": "Υπογράψτε για να αναγνωριστεί επίσημα ο όρος «γυναικοκτονία»",
+      "normalized_title": "ΥΠΟΓΡΑΨΤΕ ΓΙΑ ΝΑ ΑΝΑΓΝΩΡΙΣΤΕΙ ΕΠΙΣΗΜΑ Ο ΟΡΟΣ «ΓΥΝΑΙΚΟΚΤΟΝΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446322/horis-gianni-i-ethniki-mpasket-ektos-kai-o-sloykas/",
-        "https://www.efsyn.gr/ellada/1446399/nikos-kalogeropoylos-simera-to-teleytaio-antio-ston-agapimeno-ithopoio-eikones/",
-        "https://www.efsyn.gr/stiles/1446309/sta-panigyria/",
-        "https://www.efsyn.gr/politiki/1446380/pasok-kata-tsipra-giati-espeyse-na-dosei-diavevaioseis-ston-k-mitsotaki-oti-den-tha-anoixei-ta-skandala-tis-nd/",
-        "https://www.efsyn.gr/stiles/1446316/apo-ton-homo-sapiens-ston-homo-narcissus/",
-        "https://www.efsyn.gr/nisides/1446378/apo-ti-moni-koronas-mehri-ton-mesenikola-mia-diadromi-gemati-eikones-stin-kardia-tis-thessalias/",
-        "https://www.efsyn.gr/politiki/1446383/tsipras-den-tha-ayxisoyme-oyte-ena-eyro-ton-foro-sti-mesaia-taxi-to-parti-tis-diafthoras-tha-stamatisei/"
+        "https://www.efsyn.gr/ellada/1446342/ypograpste-gia-na-anagnoristei-episima-o-oros-gynaikoktonia/",
+        "https://www.efsyn.gr/ellada/1446432/syggeneis-kai-filoi-apohairetoyn-ton-stelio-ramfo-vinteo-eikones/",
+        "https://www.efsyn.gr/athlitismos/1446333/paok-etoimoi-pros-anahorisi/",
+        "https://www.efsyn.gr/politiki/1446375/ta-sygharitiria-toy-politikoy-kosmoy-ston-milto-tentogloy-gia-tin-kataktisi-toy-hrysoy-metallioy/"
       ],
-      "seen_at_utc": "2026-08-12T08:17:16.972770+00:00"
+      "seen_at_utc": "2026-08-12T08:30:03.746729+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/auto/to-lathos-sta-diodia-pou-mporei-na-sou-kostisei-350-eyro/",
-      "title": "Το λάθος στα διόδια που μπορεί να σου κοστίσει… 350 ευρώ",
-      "normalized_title": "ΤΟ ΛΑΘΟΣ ΣΤΑ ΔΙΟΔΙΑ ΠΟΥ ΜΠΟΡΕΙ ΝΑ ΣΟΥ ΚΟΣΤΙΣΕΙ… 350 ΕΥΡΩ",
+      "url": "https://www.in.gr/2026/08/12/greece/rodos-dyo-syllipseis-gia-ypothesi-eksapatisis-epeisan-47xroni-na-vgalei-ekso-ta-timalfi-tis-epeidi-kindyneye/",
+      "title": "Δύο συλλήψεις για υπόθεση εξαπάτησης στη Ρόδο - Έπεισαν 47χρονη να βγάλει έξω τα τιμαλφή της επειδή κινδύνευε",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΥΠΟΘΕΣΗ ΕΞΑΠΑΤΗΣΗΣ ΣΤΗ ΡΟΔΟ - ΕΠΕΙΣΑΝ 47ΧΡΟΝΗ ΝΑ ΒΓΑΛΕΙ ΕΞΩ ΤΑ ΤΙΜΑΛΦΗ ΤΗΣ ΕΠΕΙΔΗ ΚΙΝΔΥΝΕΥΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/auto/to-lathos-sta-diodia-pou-mporei-na-sou-kostisei-350-eyro/",
-        "https://www.in.gr/2026/08/12/sports/basketball/euroleague/aytoi-einai-oi-ypopsifioi-anti-piters-pou-eksetazei-o-olympiakos/",
-        "https://www.in.gr/2026/08/12/in-science/technology/ston-aeraston-vytho-i-voreia-thalassa-einai-gemati-rompot/",
-        "https://www.in.gr/2026/08/12/go-fun/fizz/zileyo-to-soma-tis-i-kaia-gkermper-oi-diatrofikes-diataraxes-i-sygkrisi-me-ti-mitera-tis-sinti-krofornt/",
-        "https://www.in.gr/2026/08/12/world/zimpampoue-toulaxiston-15-nekroi-kai-27-agnooumenoi-meta-tin-anatropi-epivatigou-ploiou-se-limni/",
-        "https://www.in.gr/2026/08/12/world/gallia-kopadia-medouson-mplokaroun-pyrinika-ergostasia-anoxyrota-stin-klimatiki-allagi/"
+        "https://www.in.gr/2026/08/12/greece/rodos-dyo-syllipseis-gia-ypothesi-eksapatisis-epeisan-47xroni-na-vgalei-ekso-ta-timalfi-tis-epeidi-kindyneye/",
+        "https://www.in.gr/2026/08/12/greece/marfin-xoris-tekmiriosi-i-profylakisi-tis-46xronis-se-prosfygi-proxora-i-yperaspisi/"
       ],
-      "seen_at_utc": "2026-08-12T08:17:16.972742+00:00"
+      "seen_at_utc": "2026-08-12T08:30:03.746692+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T08:17:16.972859+00:00"
+  "updated_at_utc": "2026-08-12T08:30:03.746823+00:00"
 }
