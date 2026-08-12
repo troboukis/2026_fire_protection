@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564398500/mia-apo-tis-megalyteres-kyvernoepitheseis-dierreysan-dedomena-19-ekat-politon-stin-polonia/",
-      "title": "«Μία από τις μεγαλύτερες κυβερνοεπιθέσεις»: Διέρρευσαν δεδομένα 19 εκατ. πολιτών στην Πολωνία",
-      "normalized_title": "«ΜΙΑ ΑΠΟ ΤΙΣ ΜΕΓΑΛΥΤΕΡΕΣ ΚΥΒΕΡΝΟΕΠΙΘΕΣΕΙΣ»: ΔΙΕΡΡΕΥΣΑΝ ΔΕΔΟΜΕΝΑ 19 ΕΚΑΤ. ΠΟΛΙΤΩΝ ΣΤΗΝ ΠΟΛΩΝΙΑ",
+      "url": "https://www.kathimerini.gr/society/564398482/i-kerkyra-sto-monopati-tis-ekleipsis-ilioy/",
+      "title": "Η Κέρκυρα στο «μονοπάτι» της έκλειψης ηλίου",
+      "normalized_title": "Η ΚΕΡΚΥΡΑ ΣΤΟ «ΜΟΝΟΠΑΤΙ» ΤΗΣ ΕΚΛΕΙΨΗΣ ΗΛΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564398500/mia-apo-tis-megalyteres-kyvernoepitheseis-dierreysan-dedomena-19-ekat-politon-stin-polonia/",
-        "https://www.kathimerini.gr/politics/parties/564396955/giati-i-n-d-protima-ton-tsipra-gia-antipalo/"
+        "https://www.kathimerini.gr/society/564398482/i-kerkyra-sto-monopati-tis-ekleipsis-ilioy/"
       ],
-      "seen_at_utc": "2026-08-12T15:17:18.542068+00:00"
+      "seen_at_utc": "2026-08-12T15:30:10.172230+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1259,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864059/epta-tautohrones-vlaves-sto-diktuo-udreusis-stin-kallithea-kataggellei-o-dimos/?utm_source=rss",
-      "title": "Επτά ταυτόχρονες βλάβες στο δίκτυο ύδρευσης στην Καλλιθέα, καταγγέλλει ο δήμος",
-      "normalized_title": "ΕΠΤΑ ΤΑΥΤΟΧΡΟΝΕΣ ΒΛΑΒΕΣ ΣΤΟ ΔΙΚΤΥΟ ΥΔΡΕΥΣΗΣ ΣΤΗΝ ΚΑΛΛΙΘΕΑ, ΚΑΤΑΓΓΕΛΛΕΙ Ο ΔΗΜΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1864070/dorean-kratiko-pistopoiitiko-glossomatheias-gia-agglika-gallika-italika-kai-germanika-se-mathites-tis-ggumnasiou/?utm_source=rss",
+      "title": "Δωρεάν κρατικό πιστοποιητικό γλωσσομάθειας για Αγγλικά, Γαλλικά, Ιταλικά και Γερμανικά σε μαθητές της Γ΄Γυμνασίου",
+      "normalized_title": "ΔΩΡΕΑΝ ΚΡΑΤΙΚΟ ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΓΛΩΣΣΟΜΑΘΕΙΑΣ ΓΙΑ ΑΓΓΛΙΚΑ, ΓΑΛΛΙΚΑ, ΙΤΑΛΙΚΑ ΚΑΙ ΓΕΡΜΑΝΙΚΑ ΣΕ ΜΑΘΗΤΕΣ ΤΗΣ Γ΄ΓΥΜΝΑΣΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864059/epta-tautohrones-vlaves-sto-diktuo-udreusis-stin-kallithea-kataggellei-o-dimos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864050/epiheirisi-gia-ton-edopismo-zeugariou-pou-apoprosanatolistike-me-to-ohima-tou-sti-fthiotida/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864070/dorean-kratiko-pistopoiitiko-glossomatheias-gia-agglika-gallika-italika-kai-germanika-se-mathites-tis-ggumnasiou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T15:17:18.542150+00:00"
+      "seen_at_utc": "2026-08-12T15:30:10.172357+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446772/paremvasi-nikoy-gkali-gia-to-ratsismo-kai-ti-lisa-itogia-stirizoyme-ta-paidia-poy-idronoyn-ti-galanoleyka/",
-      "title": "Παρέμβαση Νίκου Γκάλη για το ρατσισμό και τη Λίσα Ιτόγια: «Στηρίζουμε τα παιδιά που ιδρώνουν τη γαλανόλευκα»",
-      "normalized_title": "ΠΑΡΕΜΒΑΣΗ ΝΙΚΟΥ ΓΚΑΛΗ ΓΙΑ ΤΟ ΡΑΤΣΙΣΜΟ ΚΑΙ ΤΗ ΛΙΣΑ ΙΤΟΓΙΑ: «ΣΤΗΡΙΖΟΥΜΕ ΤΑ ΠΑΙΔΙΑ ΠΟΥ ΙΔΡΩΝΟΥΝ ΤΗ ΓΑΛΑΝΟΛΕΥΚΑ»",
+      "url": "https://www.efsyn.gr/kosmos/1446777/arhise-to-pazari-gia-dieyrynsi-stin-amyntiki-symfonia-tis-mekkas-i-agkyra-thelei-kai-tin-aigypto-to-riant-diafonei/",
+      "title": "Άρχισε το παζάρι για διεύρυνση στη συμφωνία της Μέκκας: Η Άγκυρα θέλει και την Αίγυπτο, το Ριάντ διαφωνεί",
+      "normalized_title": "ΑΡΧΙΣΕ ΤΟ ΠΑΖΑΡΙ ΓΙΑ ΔΙΕΥΡΥΝΣΗ ΣΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ: Η ΑΓΚΥΡΑ ΘΕΛΕΙ ΚΑΙ ΤΗΝ ΑΙΓΥΠΤΟ, ΤΟ ΡΙΑΝΤ ΔΙΑΦΩΝΕΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446772/paremvasi-nikoy-gkali-gia-to-ratsismo-kai-ti-lisa-itogia-stirizoyme-ta-paidia-poy-idronoyn-ti-galanoleyka/",
-        "https://www.efsyn.gr/kosmos/1446769/kyvernoepithesi-mamoyth-stin-polonia-dierreysan-prosopika-dedomena-19-ekatommyrion-politon/",
-        "https://www.efsyn.gr/ellada/1446746/kimolos-sto-mikroskopio-oi-synthikes-thanatoy-toy-17hronoy-apo-ilektroplixia-ti-eipe-i-mitera-toy/"
+        "https://www.efsyn.gr/kosmos/1446777/arhise-to-pazari-gia-dieyrynsi-stin-amyntiki-symfonia-tis-mekkas-i-agkyra-thelei-kai-tin-aigypto-to-riant-diafonei/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-arheio-3/"
       ],
-      "seen_at_utc": "2026-08-12T15:17:18.542135+00:00"
+      "seen_at_utc": "2026-08-12T15:30:10.172331+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/in-science/technology/h-ora-tis-krisis-gia-ti-meta-sto-edolio-apenanti-se-29-politeies-ton-ipa-gia-vlaves-sta-paidia/",
-      "title": "H ώρα της κρίσης για τη Meta – Στο εδώλιο απέναντι σε 29 πολιτείες των ΗΠΑ για βλάβες στα παιδιά",
-      "normalized_title": "H ΩΡΑ ΤΗΣ ΚΡΙΣΗΣ ΓΙΑ ΤΗ META – ΣΤΟ ΕΔΩΛΙΟ ΑΠΕΝΑΝΤΙ ΣΕ 29 ΠΟΛΙΤΕΙΕΣ ΤΩΝ ΗΠΑ ΓΙΑ ΒΛΑΒΕΣ ΣΤΑ ΠΑΙΔΙΑ",
+      "url": "https://www.in.gr/2026/08/12/greece/kimolos-den-ypirxe-rele-asfaleias-leei-i-mitera-tou-17xronou-pou-skotothike-apo-ilektropliksia/",
+      "title": "Κίμωλος: «Δεν υπήρχε ρελέ ασφαλείας» λέει η μητέρα του 17χρονου που σκοτώθηκε από ηλεκτροπληξία",
+      "normalized_title": "ΚΙΜΩΛΟΣ: «ΔΕΝ ΥΠΗΡΧΕ ΡΕΛΕ ΑΣΦΑΛΕΙΑΣ» ΛΕΕΙ Η ΜΗΤΕΡΑ ΤΟΥ 17ΧΡΟΝΟΥ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΑΠΟ ΗΛΕΚΤΡΟΠΛΗΞΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/in-science/technology/h-ora-tis-krisis-gia-ti-meta-sto-edolio-apenanti-se-29-politeies-ton-ipa-gia-vlaves-sta-paidia/",
-        "https://www.in.gr/2026/08/12/politics/politiki-grammateia/syriza-kai-nea-aristera-apoxairetoun-ton-giatro-kai-agonisti-tis-aristeras-niko-kaklamani/",
-        "https://www.in.gr/2026/08/12/sports/football/erythros-asteras-paraitithike-o-stankovits-favori-o-riera-pic/",
-        "https://www.in.gr/2026/08/12/life/odysseia-etsi-gyristike-to-epos-tou-nolan-imax-paraskinia-kai-mystika-se-dyo-nea-vivlia/",
-        "https://www.in.gr/2026/08/12/greece/anilikoi-empristes-sta-xania-epaiza-me-spirta-ithela-na-do-pos-pairnei-fotia/"
+        "https://www.in.gr/2026/08/12/greece/kimolos-den-ypirxe-rele-asfaleias-leei-i-mitera-tou-17xronou-pou-skotothike-apo-ilektropliksia/"
       ],
-      "seen_at_utc": "2026-08-12T15:17:18.542112+00:00"
+      "seen_at_utc": "2026-08-12T15:30:10.172294+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T15:17:18.542240+00:00"
+  "updated_at_utc": "2026-08-12T15:30:10.172443+00:00"
 }
