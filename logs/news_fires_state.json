@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564396943/nayagosostes-oi-froyroi-ton-plaz-miloyn-stin-k/",
-      "title": "Ναυαγοσώστες: Οι φρουροί των πλαζ μιλούν στην «Κ»",
-      "normalized_title": "ΝΑΥΑΓΟΣΩΣΤΕΣ: ΟΙ ΦΡΟΥΡΟΙ ΤΩΝ ΠΛΑΖ ΜΙΛΟΥΝ ΣΤΗΝ «Κ»",
+      "url": "https://www.kathimerini.gr/culture/564398953/allages-stoys-kanones-tis-eurovision/",
+      "title": "Αλλαγές στους κανόνες της Eurovision",
+      "normalized_title": "ΑΛΛΑΓΕΣ ΣΤΟΥΣ ΚΑΝΟΝΕΣ ΤΗΣ EUROVISION",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564396943/nayagosostes-oi-froyroi-ton-plaz-miloyn-stin-k/"
+        "https://www.kathimerini.gr/culture/564398953/allages-stoys-kanones-tis-eurovision/",
+        "https://www.kathimerini.gr/world/564398941/elpizo-na-min-xypniso-ayrio-sta-oria-katarreysis-to-pliroma-toy-abraham-lincoln-meta-apo-9-mines-en-plo/",
+        "https://www.kathimerini.gr/world/564398734/seismos-stin-kolomvia-triti-imera-machis-gia-ton-entopismo-epizonton/"
       ],
-      "seen_at_utc": "2026-08-12T18:30:08.248883+00:00"
+      "seen_at_utc": "2026-08-12T18:52:20.866439+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1270,26 @@
       "seen_at_utc": "2026-08-12T18:30:08.248991+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1446862/i-eurovision-allazei-toys-kanones-toy-diagonismoy-ti-ishyei-gia-tis-hores-poy-einai-se-empolemi-katastasi/",
-      "title": "Η Eurovision αλλάζει τους κανόνες του διαγωνισμού – Τι ισχύει για τις χώρες που είναι σε εμπόλεμη κατάσταση",
-      "normalized_title": "Η EUROVISION ΑΛΛΑΖΕΙ ΤΟΥΣ ΚΑΝΟΝΕΣ ΤΟΥ ΔΙΑΓΩΝΙΣΜΟΥ – ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΤΙΣ ΧΩΡΕΣ ΠΟΥ ΕΙΝΑΙ ΣΕ ΕΜΠΟΛΕΜΗ ΚΑΤΑΣΤΑΣΗ",
+      "url": "https://www.efsyn.gr/politiki/1446879/eykoloteri-pleon-i-katahorisi-lixiarhikon-gegonoton-ellinon-toy-exoterikoy-i-diadikasia-vima-pros-vima/",
+      "title": "Ευκολότερη πλέον η καταχώριση ληξιαρχικών γεγονότων Ελλήνων του εξωτερικού: Η διαδικασία βήμα προς βήμα",
+      "normalized_title": "ΕΥΚΟΛΟΤΕΡΗ ΠΛΕΟΝ Η ΚΑΤΑΧΩΡΙΣΗ ΛΗΞΙΑΡΧΙΚΩΝ ΓΕΓΟΝΟΤΩΝ ΕΛΛΗΝΩΝ ΤΟΥ ΕΞΩΤΕΡΙΚΟΥ: Η ΔΙΑΔΙΚΑΣΙΑ ΒΗΜΑ ΠΡΟΣ ΒΗΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1446862/i-eurovision-allazei-toys-kanones-toy-diagonismoy-ti-ishyei-gia-tis-hores-poy-einai-se-empolemi-katastasi/"
+        "https://www.efsyn.gr/politiki/1446879/eykoloteri-pleon-i-katahorisi-lixiarhikon-gegonoton-ellinon-toy-exoterikoy-i-diadikasia-vima-pros-vima/"
       ],
-      "seen_at_utc": "2026-08-12T18:30:08.248970+00:00"
+      "seen_at_utc": "2026-08-12T18:52:20.866533+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/sports/othersports/eyropaiko-protathlima-i-aponomi-tou-asimeniou-metalliou-ston-sisko-eixa-sto-myalo-mou-oli-tin-ellada-vid/",
-      "title": "Η απονομή του ασημένιου μεταλλίου στον Σίσκο: «Είχα στο μυαλό μου όλη την Ελλάδα» (vid)",
-      "normalized_title": "Η ΑΠΟΝΟΜΗ ΤΟΥ ΑΣΗΜΕΝΙΟΥ ΜΕΤΑΛΛΙΟΥ ΣΤΟΝ ΣΙΣΚΟ: «ΕΙΧΑ ΣΤΟ ΜΥΑΛΟ ΜΟΥ ΟΛΗ ΤΗΝ ΕΛΛΑΔΑ» (VID)",
+      "url": "https://www.in.gr/2026/08/12/sports/football/live-pari-sen-zermen-aston-vila-2/",
+      "title": "Live το UEFA Super Cup: Παρί Σεν Ζερμέν - Άστον Βίλα",
+      "normalized_title": "LIVE ΤΟ UEFA SUPER CUP: ΠΑΡΙ ΣΕΝ ΖΕΡΜΕΝ - ΑΣΤΟΝ ΒΙΛΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/sports/othersports/eyropaiko-protathlima-i-aponomi-tou-asimeniou-metalliou-ston-sisko-eixa-sto-myalo-mou-oli-tin-ellada-vid/",
-        "https://www.in.gr/2026/08/12/greece/paros-kameres-kategrapsan-tis-dramatikes-stigmes-me-ton-4xrono-stin-pisina-tou-beach-bar-den-fainetai-na-ypirxe-nayagosostis/"
+        "https://www.in.gr/2026/08/12/sports/football/live-pari-sen-zermen-aston-vila-2/",
+        "https://www.in.gr/2026/08/12/greece/syros-sto-nosokomeio-16xroni-gallida-meta-apo-voutia-se-vraxia-ti-eipe-i-nayagosostria-pou-tin-esose/",
+        "https://www.in.gr/2026/08/12/sports/football/pari-sen-zermen-aston-vila-oi-11ades-gia-ton-teliko-tou-uefa-super-cup/",
+        "https://www.in.gr/2026/08/12/economy/diethnis-oikonomia/stin-krystallini-sfaira-tis-fed-ti-etoimazei-ton-septemvrio/"
       ],
-      "seen_at_utc": "2026-08-12T18:30:08.248933+00:00"
+      "seen_at_utc": "2026-08-12T18:52:20.866482+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T18:30:08.249069+00:00"
+  "updated_at_utc": "2026-08-12T18:52:20.866608+00:00"
 }
