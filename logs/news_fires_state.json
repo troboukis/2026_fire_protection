@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/interviews/564391576/gkeralnt-knaoys-stin-k-tha-mporoyse-na-symvei-stin-kriti/",
-      "title": "Γκέραλντ Κνάους στην «Κ»: Θα μπορούσε να συμβεί στην Κρήτη",
-      "normalized_title": "ΓΚΕΡΑΛΝΤ ΚΝΑΟΥΣ ΣΤΗΝ «Κ»: ΘΑ ΜΠΟΡΟΥΣΕ ΝΑ ΣΥΜΒΕΙ ΣΤΗΝ ΚΡΗΤΗ",
+      "url": "https://www.kathimerini.gr/culture/564397165/to-elliniko-kalokairi-tis-evdomis-technis/",
+      "title": "Το ελληνικό καλοκαίρι της Εβδομης Τέχνης",
+      "normalized_title": "ΤΟ ΕΛΛΗΝΙΚΟ ΚΑΛΟΚΑΙΡΙ ΤΗΣ ΕΒΔΟΜΗΣ ΤΕΧΝΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/interviews/564391576/gkeralnt-knaoys-stin-k-tha-mporoyse-na-symvei-stin-kriti/",
-        "https://www.kathimerini.gr/athletics/564398773/eyropaiko-protathlima-asimenios-o-siskos-sta-200-m-yptio-me-panellinio-rekor/",
-        "https://www.kathimerini.gr/culture/athinaika-plus/564391477/ta-yvridika-onta-tis-zermen-risie-sto-moyseio-goylandri-tis-androy/"
+        "https://www.kathimerini.gr/culture/564397165/to-elliniko-kalokairi-tis-evdomis-technis/",
+        "https://www.kathimerini.gr/culture/564391249/vathia-pisti-vathia-athina/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564398821/paremvasi-sto-kogkreso-yper-toy-kalodioy-elladas-kyproy/"
       ],
-      "seen_at_utc": "2026-08-12T17:17:12.235703+00:00"
+      "seen_at_utc": "2026-08-12T17:30:10.303897+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1270,24 @@
       "seen_at_utc": "2026-08-12T17:17:12.235903+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1446485/neodioristos-eton-45-to-avevaio-mellon-tis-neas-genias-daskalon-kai-kathigiton/",
-      "title": "Νεοδιόριστος ετών 45: Το αβέβαιο μέλλον της νέας γενιάς δασκάλων και καθηγητών",
-      "normalized_title": "ΝΕΟΔΙΟΡΙΣΤΟΣ ΕΤΩΝ 45: ΤΟ ΑΒΕΒΑΙΟ ΜΕΛΛΟΝ ΤΗΣ ΝΕΑΣ ΓΕΝΙΑΣ ΔΑΣΚΑΛΩΝ ΚΑΙ ΚΑΘΗΓΗΤΩΝ",
+      "url": "https://www.efsyn.gr/kosmos/1446827/oliki-ekleipsi-ilioy-2026-deite-zontana-to-spanio-fainomeno/",
+      "title": "Ολική έκλειψη ηλίου 2026: Δείτε ζωντανά το σπάνιο φαινόμενο",
+      "normalized_title": "ΟΛΙΚΗ ΕΚΛΕΙΨΗ ΗΛΙΟΥ 2026: ΔΕΙΤΕ ΖΩΝΤΑΝΑ ΤΟ ΣΠΑΝΙΟ ΦΑΙΝΟΜΕΝΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1446485/neodioristos-eton-45-to-avevaio-mellon-tis-neas-genias-daskalon-kai-kathigiton/",
-        "https://www.efsyn.gr/athlitismos/1446818/eyropaiko-protathlima-kolymvisis-asimenios-o-siskos-sta-200m-yptio-me-panellinio-rekor/"
+        "https://www.efsyn.gr/kosmos/1446827/oliki-ekleipsi-ilioy-2026-deite-zontana-to-spanio-fainomeno/",
+        "https://www.efsyn.gr/kosmos/1446814/germania-dinoyn-yperexoysies-stis-mystikes-ypiresies-ypo-ton-fovo-yvridikon-apeilon/"
       ],
-      "seen_at_utc": "2026-08-12T17:17:12.235826+00:00"
+      "seen_at_utc": "2026-08-12T17:30:10.304042+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/12/sports/othersports/etsi-ezisan-ta-grevena-to-xryso-tou-tentoglou-sto-mpermigxam-to-ksespasma-sto-4o-alma-vid/",
-      "title": "Έτσι έζησαν τα Γρεβενά το χρυσό του Τεντόγλου στο Μπέρμιγχαμ: Το ξέσπασμα στο 4ο άλμα (vid)",
-      "normalized_title": "ΕΤΣΙ ΕΖΗΣΑΝ ΤΑ ΓΡΕΒΕΝΑ ΤΟ ΧΡΥΣΟ ΤΟΥ ΤΕΝΤΟΓΛΟΥ ΣΤΟ ΜΠΕΡΜΙΓΧΑΜ: ΤΟ ΞΕΣΠΑΣΜΑ ΣΤΟ 4Ο ΑΛΜΑ (VID)",
+      "url": "https://www.in.gr/2026/08/12/greece/kesses-o-georgiadis-rota-to-chatgpt-gia-anartiseis-mou-to-2019-kai-oxi-gia-to-poios-prospathise-na-ton-kataskopeysei/",
+      "title": "Κεσσές: Ο Γεωργιάδης ρωτά το ChatGPT για αναρτήσεις μου το 2019 και όχι για το ποιος προσπάθησε να τον κατασκοπεύσει",
+      "normalized_title": "ΚΕΣΣΕΣ: Ο ΓΕΩΡΓΙΑΔΗΣ ΡΩΤΑ ΤΟ CHATGPT ΓΙΑ ΑΝΑΡΤΗΣΕΙΣ ΜΟΥ ΤΟ 2019 ΚΑΙ ΟΧΙ ΓΙΑ ΤΟ ΠΟΙΟΣ ΠΡΟΣΠΑΘΗΣΕ ΝΑ ΤΟΝ ΚΑΤΑΣΚΟΠΕΥΣΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/12/sports/othersports/etsi-ezisan-ta-grevena-to-xryso-tou-tentoglou-sto-mpermigxam-to-ksespasma-sto-4o-alma-vid/",
-        "https://www.in.gr/2026/08/12/sports/othersports/spoudaios-siskos-katektise-to-asimenio-metallio-sta-200m-yptio-me-panellinio-rekor/",
-        "https://www.in.gr/2026/08/12/go-fun/an-xathagouei-mitrotita-xoris-dogmatismous-giati-i-egkymosyni-den-einai-tampou/",
-        "https://www.in.gr/2026/08/12/greece/xania-eleytheroi-me-perioristikous-oi-dyo-drastes-gia-tin-klopi-se-ixthyokalliergeia-sti-souda/"
+        "https://www.in.gr/2026/08/12/greece/kesses-o-georgiadis-rota-to-chatgpt-gia-anartiseis-mou-to-2019-kai-oxi-gia-to-poios-prospathise-na-ton-kataskopeysei/"
       ],
-      "seen_at_utc": "2026-08-12T17:17:12.235778+00:00"
+      "seen_at_utc": "2026-08-12T17:30:10.304002+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T17:17:12.236003+00:00"
+  "updated_at_utc": "2026-08-12T17:30:10.304115+00:00"
 }
