@@ -1,4 +1,4 @@
-import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
+import { lazy, Suspense, startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
 import { Link, useSearchParams } from 'react-router-dom'
 import ComponentTag from '../components/ComponentTag'
@@ -7,8 +7,8 @@ import DataLoadingCard from '../components/DataLoadingCard'
 import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
-import MapTilerLogo from '../components/MapTilerLogo'
 import MapLegendToggle from '../components/MapLegendToggle'
+import type { MunicipalityMapLibreData, MunicipalityMapLibreInteraction } from '../components/MunicipalityMapLibre'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
@@ -19,7 +19,6 @@ import { buildDiavgeiaDecisionCardView, type MunicipalityDiavgeiaDecisionRpcRow 
 import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { buildLatestContractCardView, type AuthorityScope } from '../lib/latestContractCard'
 import { logError } from '../lib/logger'
-import { getMunicipalityFireYearSource } from '../lib/municipalityFireYearSource'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import { summarizePaymentRows } from '../lib/paymentSummary'
 import {
@@ -141,6 +140,8 @@ type WorkRow = {
 
 type WorkMarker = {
   key: string
+  lon: number
+  lat: number
   x: number
   y: number
   procurementId: number | null
@@ -350,26 +351,13 @@ type MunicipalityFundingHistoryEntry = {
   totalAmount: number
 }
 
-type TerrainTileOverlay = {
-  key: string
-  href: string
-  x: number
-  y: number
-  width: number
-  height: number
-}
-
 const MOBILE_BREAKPOINT = 680
 const CONTRACT_CHART_VIEWBOX_WIDTH = 760
 const CONTRACT_CHART_PLOT_X0 = 44
 const CONTRACT_CHART_PLOT_X1 = 736
 const CONTRACT_CHART_DAY_COUNT = 365
 
-const HILLSHADE_TILESET_ID = 'hillshade'
-const HILLSHADE_TILE_SIZE = 256
-const HILLSHADE_MIN_ZOOM = 4
-const HILLSHADE_MAX_ZOOM = 12
-const HILLSHADE_OVERSAMPLE = 1.3
+const MunicipalityMapLibre = lazy(() => import('../components/MunicipalityMapLibre'))
 
 function reversePolygonRings(rings: number[][][]): number[][][] {
   return rings.map((ring) => [...ring].reverse())
@@ -607,105 +595,6 @@ async function fetchAllPaginatedRows<T>(
   return rows
 }
 
-function clampLatitude(lat: number): number {
-  return Math.max(-85.05112878, Math.min(85.05112878, lat))
-}
-
-function worldPixelX(lon: number, zoom: number): number {
-  return ((lon + 180) / 360) * HILLSHADE_TILE_SIZE * (2 ** zoom)
-}
-
-function worldPixelY(lat: number, zoom: number): number {
-  const clamped = clampLatitude(lat) * Math.PI / 180
-  return (
-    (0.5 - Math.log((1 + Math.sin(clamped)) / (1 - Math.sin(clamped))) / (4 * Math.PI))
-    * HILLSHADE_TILE_SIZE
-    * (2 ** zoom)
-  )
-}
-
-function tileLongitude(tileX: number, zoom: number): number {
-  return (tileX / (2 ** zoom)) * 360 - 180
-}
-
-function tileLatitude(tileY: number, zoom: number): number {
-  const n = Math.PI - (2 * Math.PI * tileY) / (2 ** zoom)
-  return Math.atan(Math.sinh(n)) * 180 / Math.PI
-}
-
-function chooseHillshadeZoom(
-  bounds: [[number, number], [number, number]],
-  targetWidth: number,
-  targetHeight: number,
-): number {
-  const [[west, south], [east, north]] = bounds
-  const safeWidth = Math.max(1, targetWidth)
-  const safeHeight = Math.max(1, targetHeight)
-
-  for (let zoom = HILLSHADE_MIN_ZOOM; zoom <= HILLSHADE_MAX_ZOOM; zoom += 1) {
-    const pixelWidth = Math.abs(worldPixelX(east, zoom) - worldPixelX(west, zoom))
-    const pixelHeight = Math.abs(worldPixelY(south, zoom) - worldPixelY(north, zoom))
-    if (pixelWidth >= safeWidth * HILLSHADE_OVERSAMPLE && pixelHeight >= safeHeight * HILLSHADE_OVERSAMPLE) {
-      return zoom
-    }
-  }
-
-  return HILLSHADE_MAX_ZOOM
-}
-
-function buildHillshadeTileOverlays(
-  feature: d3.GeoPermissibleObjects,
-  projection: d3.GeoProjection,
-  frameWidth: number,
-  frameHeight: number,
-  apiKey: string | null,
-): TerrainTileOverlay[] {
-  if (!apiKey) return []
-
-  const bounds = d3.geoBounds(feature)
-  const [[west, south], [east, north]] = bounds as [[number, number], [number, number]]
-  if (![west, south, east, north].every(Number.isFinite)) return []
-
-  const zoom = chooseHillshadeZoom(bounds as [[number, number], [number, number]], frameWidth, frameHeight)
-  const worldMinX = worldPixelX(west, zoom)
-  const worldMaxX = worldPixelX(east, zoom)
-  const worldNorthY = worldPixelY(north, zoom)
-  const worldSouthY = worldPixelY(south, zoom)
-  const xStart = Math.max(0, Math.floor(worldMinX / HILLSHADE_TILE_SIZE))
-  const xEnd = Math.min((2 ** zoom) - 1, Math.ceil(worldMaxX / HILLSHADE_TILE_SIZE) - 1)
-  const yStart = Math.max(0, Math.floor(worldNorthY / HILLSHADE_TILE_SIZE))
-  const yEnd = Math.min((2 ** zoom) - 1, Math.ceil(worldSouthY / HILLSHADE_TILE_SIZE) - 1)
-  const overlays: TerrainTileOverlay[] = []
-
-  for (let tileX = xStart; tileX <= xEnd; tileX += 1) {
-    for (let tileY = yStart; tileY <= yEnd; tileY += 1) {
-      const westLon = tileLongitude(tileX, zoom)
-      const eastLon = tileLongitude(tileX + 1, zoom)
-      const northLat = tileLatitude(tileY, zoom)
-      const southLat = tileLatitude(tileY + 1, zoom)
-      const topLeft = projection([westLon, northLat])
-      const bottomRight = projection([eastLon, southLat])
-
-      if (!topLeft || !bottomRight) continue
-
-      const [x0, y0] = topLeft
-      const [x1, y1] = bottomRight
-      if (![x0, y0, x1, y1].every(Number.isFinite)) continue
-
-      overlays.push({
-        key: `${zoom}/${tileX}/${tileY}`,
-        href: `https://api.maptiler.com/tiles/${HILLSHADE_TILESET_ID}/${zoom}/${tileX}/${tileY}?key=${encodeURIComponent(apiKey)}`,
-        x: Math.min(x0, x1),
-        y: Math.min(y0, y1),
-        width: Math.abs(x1 - x0),
-        height: Math.abs(y1 - y0),
-      })
-    }
-  }
-
-  return overlays
-}
-
 function formatInspectionViolations(count: number | null): string {
   if (count == null) return 'δεν υπάρχουν διαθέσιμα στοιχεία για παραβάσεις'
   if (count === 0) return 'δεν διαπιστώθηκε καμία παράβαση'
@@ -838,12 +727,6 @@ function buildContractStepPath(points: ContractCurvePoint[], maxValue: number): 
   return path
 }
 
-function getFireSourceDisplayLabel(source: string | null): string {
-  if (source === 'forest_fire') return 'ΠΗΓΗ: ΠΥΡΟΣΒΕΣΤΙΚΗ ΥΠΗΡΕΣΙΑ'
-  if (source === 'copernicus') return 'ΠΗΓΗ: COPERNICUS EFFIS'
-  return '—'
-}
-
 function formatCurrentFiresNarrativeSentence(year: number, count: number): string {
   if (count === 0) {
     return `Το ${year} δεν έχουμε εντοπίσει συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
@@ -866,7 +749,6 @@ function formatCopernicusNarrativeSentence(year: number, count: number): string 
 
 export default function MunicipalitiesPage() {
   const currentYear = new Date().getFullYear()
-  const mapTilerApiKey = cleanText(import.meta.env.VITE_MAPTILER_API_KEY)
   const years = useMemo(() => [currentYear, currentYear - 1, currentYear - 2], [currentYear])
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedMunicipalityKey = cleanText(searchParams.get('municipality'))
@@ -908,7 +790,8 @@ export default function MunicipalitiesPage() {
   const [cityPointsLoading, setCityPointsLoading] = useState(true)
   const [selectedFireYear, setSelectedFireYear] = useState<number>(currentYear)
   const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('shapes')
-  const [showCityPoints, setShowCityPoints] = useState(true)
+  const [showMunicipalityBoundary, setShowMunicipalityBoundary] = useState(false)
+  const showCityPoints = false
   const [showWorkPoints, setShowWorkPoints] = useState(true)
   const [showFirePoints, setShowFirePoints] = useState(true)
   const [showActiveFirePoints, setShowActiveFirePoints] = useState(true)
@@ -925,7 +808,6 @@ export default function MunicipalitiesPage() {
   const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
   const [pointTooltip, setPointTooltip] = useState<MunicipalityPointTooltip | null>(null)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
-  const [municipalityTerrainFailed, setMunicipalityTerrainFailed] = useState(false)
   const [isMobileMunicipalityMap, setIsMobileMunicipalityMap] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.innerWidth <= MOBILE_BREAKPOINT
@@ -1461,22 +1343,6 @@ export default function MunicipalitiesPage() {
     }
   }, [currentYear, selectedMunicipalityKey])
 
-  const selectedMunicipalityHillshadeTiles = useMemo(() => {
-    if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
-    return buildHillshadeTileOverlays(
-      selectedMunicipalityFeature as d3.GeoPermissibleObjects,
-      selectedMunicipalityMap.projection,
-      selectedMunicipalityMap.frameWidth,
-      selectedMunicipalityMap.frameHeight,
-      mapTilerApiKey,
-    )
-  }, [mapTilerApiKey, selectedMunicipalityFeature, selectedMunicipalityMap])
-  const showSelectedMunicipalityTerrain = selectedMunicipalityHillshadeTiles.length > 0 && !municipalityTerrainFailed
-
-  useEffect(() => {
-    setMunicipalityTerrainFailed(false)
-  }, [mapTilerApiKey, selectedMunicipalityKeyNormalized])
-
   const selectedMunicipalityCityPoints = useMemo(() => {
     if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
 
@@ -1536,9 +1402,6 @@ export default function MunicipalitiesPage() {
     return years
   }, [currentYear])
 
-  const selectedFireSource = getMunicipalityFireYearSource(selectedFireYear, currentYear)
-  const selectedFireSourceLabel = getFireSourceDisplayLabel(selectedFireSource)
-
   const selectedForestFireRows = useMemo(
     () => (selectedFireYear >= 2000 && selectedFireYear < 2024
       ? forestFireRows.filter((row) => toNumber(row.year) === selectedFireYear)
@@ -1573,6 +1436,8 @@ export default function MunicipalitiesPage() {
 
       return [{
         key: `${selectedMunicipalityKey ?? 'municipality'}-${index}-${x.toFixed(2)}-${y.toFixed(2)}`,
+        lon,
+        lat,
         x,
         y,
         radius,
@@ -1625,6 +1490,8 @@ export default function MunicipalitiesPage() {
 
       return [{
         key: `${selectedMunicipalityKey ?? 'municipality'}-copernicus-${index}-${x.toFixed(2)}-${y.toFixed(2)}`,
+        lon: coordinates[0],
+        lat: coordinates[1],
         x,
         y,
         radius,
@@ -1658,6 +1525,7 @@ export default function MunicipalitiesPage() {
 
       return [{
         key: `${selectedMunicipalityKey ?? 'municipality'}-copernicus-shape-${index}`,
+        geometry: shape as GeoJSON.Polygon | GeoJSON.MultiPolygon,
         d,
         x: centroid[0],
         y: centroid[1],
@@ -1685,6 +1553,8 @@ export default function MunicipalitiesPage() {
 
       return [{
         key: `${selectedMunicipalityKey ?? 'municipality'}-current-fire-${row.incident_key}-${index}`,
+        lon,
+        lat,
         x,
         y,
         fuelType: cleanText(row.fuel_type),
@@ -1728,6 +1598,8 @@ export default function MunicipalitiesPage() {
 
       return [{
         key: `${selectedMunicipalityKey ?? 'municipality'}-firms-${row.id}-${index}`,
+        lon,
+        lat,
         x,
         y,
         width: Math.min(24, Math.max(4.5, rawWidth)),
@@ -1779,6 +1651,8 @@ export default function MunicipalitiesPage() {
 
       return [{
         key,
+        lon,
+        lat,
         x,
         y,
         procurementId: toNumber(row.procurement_id),
@@ -1792,18 +1666,123 @@ export default function MunicipalitiesPage() {
     })
   }, [selectedFireYear, selectedMunicipalityFeature, selectedMunicipalityMap, workRows])
 
+  const municipalityMapLibreData = useMemo<MunicipalityMapLibreData>(() => {
+    const interactionProperties = (
+      kind: MunicipalityMapLibreInteraction['kind'],
+      id: string,
+      title: string,
+      items: Array<string | null>,
+      fallback: { x: number; y: number },
+      extra: GeoJSON.GeoJsonProperties = {},
+    ): GeoJSON.GeoJsonProperties => ({
+      ...extra,
+      kind,
+      interactionId: id,
+      tooltipTitle: title,
+      tooltipItems: JSON.stringify(items.filter((item): item is string => Boolean(item))),
+      fallbackX: fallback.x,
+      fallbackY: fallback.y,
+    })
+    const pointFeature = (lon: number, lat: number, properties: GeoJSON.GeoJsonProperties): GeoJSON.Feature<GeoJSON.Point> => ({
+      type: 'Feature',
+      properties,
+      geometry: { type: 'Point', coordinates: [lon, lat] },
+    })
+
+    const works = municipalityWorkMarkers.map((work) => pointFeature(work.lon, work.lat, interactionProperties(
+      'work',
+      work.key,
+      work.pointName ?? work.work ?? 'Εργασία',
+      getWorkTooltipItems(work),
+      work,
+      {
+        procurementId: work.procurementId,
+        organizationName: work.organizationName,
+      },
+    )))
+    const forestFirePoints = forestFireMarkers.map((fire) => pointFeature(fire.lon, fire.lat, interactionProperties(
+      'fire',
+      fire.key,
+      'Δασική πυρκαγιά',
+      [
+        fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
+        fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
+        fire.year != null ? `Έτος: ${fire.year}` : null,
+        `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+      ],
+      fire,
+      { area: fire.burnedAreaHa },
+    )))
+    const copernicusPoints = copernicusMarkers.map((fire) => pointFeature(fire.lon, fire.lat, interactionProperties(
+      'copernicus',
+      fire.key,
+      'Copernicus / EFFIS',
+      [
+        fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+        fire.year != null ? `Έτος: ${fire.year}` : null,
+        `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+      ],
+      fire,
+      { area: fire.areaHa },
+    )))
+    const fireShapes = copernicusShapes.map((fire) => ({
+      type: 'Feature' as const,
+      properties: interactionProperties(
+        'copernicus',
+        fire.key,
+        'Copernicus / EFFIS',
+        [
+          fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+          fire.year != null ? `Έτος: ${fire.year}` : null,
+          `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+        ],
+        fire,
+        { area: fire.areaHa },
+      ),
+      geometry: fire.geometry,
+    }))
+    const activeFires = activeCurrentFireMarkers.map((fire) => pointFeature(fire.lon, fire.lat, interactionProperties(
+      'current-fire',
+      fire.key,
+      'Ενεργή πυρκαγιά',
+      [
+        fire.area ? `Περιοχή: ${fire.area}` : null,
+        fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
+        fire.fuelType,
+        fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
+        fire.status,
+        fire.sourceLabel,
+        'Θέση κατά προσέγγιση',
+      ],
+      fire,
+      { statusColor: fire.statusColor },
+    )))
+    const firms = firmsDetectionMarkers.map((detection) => pointFeature(detection.lon, detection.lat, interactionProperties(
+      'firms',
+      detection.key,
+      'NASA FIRMS',
+      [],
+      detection,
+      { scanKm: detection.scanKm, trackKm: detection.trackKm },
+    )))
+
+    return {
+      works: { type: 'FeatureCollection', features: works },
+      firePoints: { type: 'FeatureCollection', features: [...forestFirePoints, ...copernicusPoints] },
+      fireShapes: { type: 'FeatureCollection', features: fireShapes },
+      activeFires: { type: 'FeatureCollection', features: activeFires },
+      firms: { type: 'FeatureCollection', features: firms },
+    }
+  }, [activeCurrentFireMarkers, copernicusMarkers, copernicusShapes, firmsDetectionMarkers, forestFireMarkers, municipalityWorkMarkers])
+
   const hasCopernicusShapes = copernicusShapes.length > 0
   const hasSelectedFireLegend = forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes
   const municipalityMapLegendItems = useMemo(() => {
-    const items: Array<{ key: string; tone: 'city' | 'work' | 'fire' | 'current-fire' | 'firms'; label: string }> = []
-
-    if (selectedMunicipalityCityPoints.length > 0) {
-      items.push({
-        key: 'city',
-        tone: 'city',
-        label: 'Οικισμοί',
-      })
-    }
+    const items: Array<{ key: string; tone: 'boundary' | 'work' | 'fire' | 'current-fire' | 'firms'; label: string }> = [{
+      key: 'boundary',
+      tone: 'boundary',
+      label: 'Όρια Δήμου',
+    }]
 
     if (municipalityWorkMarkers.length > 0 || workRowsLoading) {
       items.push({
@@ -1846,7 +1825,6 @@ export default function MunicipalitiesPage() {
     hasCopernicusShapes,
     hasSelectedFireLegend,
     municipalityWorkMarkers.length,
-    selectedMunicipalityCityPoints.length,
     workRowsLoading,
   ])
 
@@ -2165,6 +2143,83 @@ export default function MunicipalitiesPage() {
             isStacked: false,
           }
     ))
+  }
+
+  const showMapLibreInteractionTooltip = (interaction: MunicipalityMapLibreInteraction) => {
+    if (isMobileMunicipalityMap) return
+    if (interaction.kind === 'firms') {
+      const count = getNearbyFirmsDetections(interaction.fallback).length
+      setPointTooltip({
+        id: interaction.id,
+        x: interaction.point.x,
+        y: interaction.point.y,
+        title: count === 1
+          ? 'NASA FIRMS: 1 θερμική ανωμαλία'
+          : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+        items: getNearbyFirmsDetectionTooltipItems(interaction.fallback),
+        isStacked: false,
+      })
+      return
+    }
+
+    const tooltip = getStackedPointTooltip(
+      interaction.title,
+      interaction.items,
+      interaction.id,
+      interaction.fallback,
+    )
+    setPointTooltip({
+      id: interaction.id,
+      x: interaction.point.x,
+      y: interaction.point.y,
+      title: tooltip.title,
+      items: tooltip.items,
+      isStacked: tooltip.isStacked,
+      stackedRows: tooltip.stackedRows,
+    })
+  }
+
+  const activateMapLibreInteraction = (interaction: MunicipalityMapLibreInteraction) => {
+    if (interaction.kind === 'work') {
+      setPointTooltip(null)
+      void openContractModal(interaction.procurementId, interaction.organizationName)
+      return
+    }
+
+    if (interaction.kind === 'firms') {
+      const count = getNearbyFirmsDetections(interaction.fallback).length
+      setPointTooltip((current) => current?.id === interaction.id
+        ? null
+        : {
+            id: interaction.id,
+            x: interaction.point.x,
+            y: interaction.point.y,
+            title: count === 1
+              ? 'NASA FIRMS: 1 θερμική ανωμαλία'
+              : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+            items: getNearbyFirmsDetectionTooltipItems(interaction.fallback),
+            isStacked: false,
+          })
+      return
+    }
+
+    const tooltip = getStackedPointTooltip(
+      interaction.title,
+      interaction.items,
+      interaction.id,
+      interaction.fallback,
+    )
+    setPointTooltip((current) => current?.id === interaction.id
+      ? null
+      : {
+          id: interaction.id,
+          x: interaction.point.x,
+          y: interaction.point.y,
+          title: tooltip.title,
+          items: tooltip.items,
+          isStacked: tooltip.isStacked,
+          stackedRows: tooltip.stackedRows,
+        })
   }
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
@@ -3541,6 +3596,24 @@ export default function MunicipalitiesPage() {
                     />
                     {selectedMunicipalityMap ? (
                       <>
+                        <Suspense fallback={null}>
+                          <MunicipalityMapLibre
+                            feature={selectedMunicipalityFeature as GeoJSON.Feature<GeoJSON.Polygon | GeoJSON.MultiPolygon>}
+                            municipalityName={selectedName}
+                            data={municipalityMapLibreData}
+                            fireViewMode={fireViewMode}
+                            showBoundary={showMunicipalityBoundary}
+                            showWorks={showWorkPoints}
+                            showFires={showFirePoints}
+                            showActiveFires={showActiveFirePoints}
+                            showFirms={showFirmsPoints}
+                            onFeatureHover={showMapLibreInteractionTooltip}
+                            onFeatureLeave={() => {
+                              if (!isMobileMunicipalityMap) clearPointTooltip()
+                            }}
+                            onFeatureClick={activateMapLibreInteraction}
+                          />
+                        </Suspense>
                         <svg
                           width={selectedMunicipalityMap.frameWidth}
                           height={selectedMunicipalityMap.frameHeight}
@@ -3552,41 +3625,8 @@ export default function MunicipalitiesPage() {
                           <clipPath id={`municipality-fire-clip-${selectedMunicipalityKeyNormalized || 'selected'}`}>
                             <path d={selectedMunicipalityMap.d} />
                           </clipPath>
-                          <linearGradient id="municipality-map-fill" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stopColor="rgba(211, 72, 45, 0.16)" />
-                            <stop offset="100%" stopColor="rgba(17, 17, 17, 0.035)" />
-                          </linearGradient>
-                          <radialGradient id="municipality-map-wash" cx="50%" cy="50%" r="64%">
-                            <stop offset="0%" stopColor="rgba(247, 245, 238, 0.9)" />
-                            <stop offset="100%" stopColor="rgba(247, 245, 238, 0)" />
-                          </radialGradient>
                         </defs>
-                        <circle cx="256" cy="224" r="154" fill="url(#municipality-map-wash)" />
-                        <path
-                          d={selectedMunicipalityMap.d}
-                          fill="url(#municipality-map-fill)"
-                          stroke="rgba(17, 17, 17, 0.32)"
-                          strokeWidth="0.5"
-                          vectorEffect="non-scaling-stroke"
-                        />
 	                        <g clipPath={`url(#municipality-fire-clip-${selectedMunicipalityKeyNormalized || 'selected'})`}>
-                          {showSelectedMunicipalityTerrain && (
-                            <g opacity="0.12">
-                              {selectedMunicipalityHillshadeTiles.map((tile) => (
-                                <image
-                                  key={tile.key}
-                                  href={tile.href}
-                                  x={tile.x}
-                                  y={tile.y}
-                                  width={tile.width}
-                                  height={tile.height}
-                                  preserveAspectRatio="none"
-                                  className="municipality-profile-hero__terrain-tile"
-                                  onError={() => setMunicipalityTerrainFailed(true)}
-                                />
-                              ))}
-                            </g>
-                          )}
 	                          {showFirePoints && fireViewMode === 'shapes' && copernicusShapes.map((fire) => (
 	                            <g key={fire.key}>
 	                              <path
@@ -4068,9 +4108,6 @@ export default function MunicipalitiesPage() {
                           )
                         })}
                         </svg>
-                        {showSelectedMunicipalityTerrain && (
-                          <MapTilerLogo className="municipality-profile-hero__maptiler-logo" />
-                        )}
                       </>
                     ) : (
                       <div className="municipality-profile-hero__map-fallback">
@@ -4111,8 +4148,8 @@ export default function MunicipalitiesPage() {
                             <MapLegendToggle
                               key={item.key}
                               className="municipality-profile-hero__map-legend-item"
-                              visible={item.key === 'city'
-                                ? showCityPoints
+                              visible={item.key === 'boundary'
+                                ? showMunicipalityBoundary
                                 : item.key === 'work'
                                   ? showWorkPoints
                                   : item.key === 'fire'
@@ -4122,7 +4159,7 @@ export default function MunicipalitiesPage() {
                                       : showFirmsPoints}
                               onToggle={() => {
                                 setPointTooltip(null)
-                                if (item.key === 'city') setShowCityPoints((visible) => !visible)
+                                if (item.key === 'boundary') setShowMunicipalityBoundary((visible) => !visible)
                                 else if (item.key === 'work') setShowWorkPoints((visible) => !visible)
                                 else if (item.key === 'fire') setShowFirePoints((visible) => !visible)
                                 else if (item.key === 'current-fire') setShowActiveFirePoints((visible) => !visible)
@@ -4143,9 +4180,6 @@ export default function MunicipalitiesPage() {
                           ))}
                         </div>
                       )}
-	                    <div className="municipality-profile-hero__map-note">
-		                      <span>{hasSelectedFireLegend ? selectedFireSourceLabel : null}</span>
-	                    </div>
                     </div>
 	                </div>
               </>

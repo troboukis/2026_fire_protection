@@ -57,6 +57,9 @@ export default defineConfig(({ command }) => ({
   define: {
     __LAST_COMMIT_ISO__: JSON.stringify(getLastCommitIso()),
   },
+  optimizeDeps: {
+    exclude: ['maplibre-gl'],
+  },
   esbuild: command === 'build'
     ? {
         drop: ['console', 'debugger'],

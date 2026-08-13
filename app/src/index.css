@@ -3171,7 +3171,7 @@ main {
 .maptiler-logo {
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 44px;
   z-index: 999;
   display: inline-flex;
   align-items: center;
@@ -7306,18 +7306,21 @@ main {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  padding: clamp(0.95rem, 1.6vw, 1.15rem);
+  gap: 0;
+  padding: 0;
   border: 1px solid rgba(17, 17, 17, 0.08);
-  background: linear-gradient(180deg, rgba(250, 248, 243, 0.96), rgba(243, 239, 231, 0.9));
+  background: transparent;
   box-shadow: var(--shadow-paper);
   justify-self: stretch;
   overflow: visible;
 }
 
 .municipality-profile-hero__map-controls {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  z-index: 4;
+  top: clamp(0.95rem, 1.6vw, 1.15rem);
+  left: clamp(0.95rem, 1.6vw, 1.15rem);
+  right: clamp(3.9rem, 6vw, 4.5rem);
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -7439,17 +7442,81 @@ main {
   display: grid;
   flex: 1 1 auto;
   place-items: center;
-  min-height: clamp(19rem, 32vw, 27rem);
+  min-height: clamp(34rem, 58vw, 52rem);
   width: 100%;
-  padding: 0.3rem 0.2rem 0;
+  padding: 0;
   margin-inline: auto;
+  overflow: hidden;
 }
 
-.municipality-profile-hero__map-frame svg {
+.municipality-profile-hero__map-frame > svg {
+  position: relative;
+  z-index: 1;
   width: auto;
   max-width: 100%;
   height: auto;
-  display: block;
+  display: none;
+  pointer-events: none;
+}
+
+.municipality-profile-hero__map-frame > .municipality-maplibre {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  overflow: hidden;
+  background: #e9e5dc;
+}
+
+.municipality-profile-hero__map-frame > .municipality-maplibre .maplibregl-ctrl-attrib {
+  border-radius: 0;
+  pointer-events: auto;
+}
+
+.municipality-maplibre__geographic-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.municipality-maplibre__municipality {
+  fill: rgba(211, 72, 45, 0.18);
+  stroke: #761f14;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.municipality-maplibre__fire-shape {
+  fill: rgba(255, 59, 48, 0.78);
+  stroke: #9e211a;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.municipality-maplibre__city {
+  fill: #365d8a;
+  stroke: #fffaf2;
+  stroke-width: 1.4;
+}
+
+.municipality-maplibre__work {
+  fill: #f4cf42;
+  stroke: #5c4a00;
+  stroke-width: 1.2;
+}
+
+.municipality-maplibre__fire-point {
+  fill: #d3482d;
+  fill-opacity: 0.9;
+  stroke: #fffaf2;
+  stroke-width: 1.3;
 }
 
 .municipality-profile-hero__maptiler-logo {
@@ -7464,6 +7531,7 @@ main {
 
 .municipality-profile-hero__point-hitbox {
   cursor: pointer;
+  pointer-events: all;
 }
 
 .municipality-profile-hero__point-dot {
@@ -7523,21 +7591,43 @@ main {
 }
 
 .municipality-profile-hero__map-footer {
-  display: grid;
-  gap: 0.3rem;
-  margin-top: auto;
+  position: absolute;
+  z-index: 4;
+  left: 10px;
+  right: auto;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100% - 20px);
+  min-height: 24px;
+  padding: 2px 8px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .municipality-profile-hero__map-legend {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.35rem 0.75rem;
   align-items: center;
-  margin-top: 0.18rem;
+  width: max-content;
+  max-width: 100%;
+  min-height: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-top: 0;
   font-family: var(--font-mono);
   font-size: 0.58rem;
   line-height: 1.1;
   color: rgba(17, 17, 17, 0.74);
+}
+
+.municipality-profile-hero__map-legend::-webkit-scrollbar {
+  display: none;
 }
 
 .municipality-profile-hero__map-legend-item {
@@ -7565,6 +7655,12 @@ main {
 .municipality-profile-hero__map-legend-swatch--city {
   background: rgba(54, 93, 138, 0.78);
   box-shadow: 0 0 0 1px rgba(255, 252, 248, 0.82) inset;
+}
+
+.municipality-profile-hero__map-legend-swatch--boundary {
+  border: 2px solid #761f14;
+  border-radius: 0;
+  background: rgba(211, 72, 45, 0.18);
 }
 
 .municipality-profile-hero__map-legend-swatch--work {
@@ -8345,6 +8441,8 @@ main {
 
   .municipality-profile-hero__map-footer {
     gap: 0.28rem;
+    bottom: 44px;
+    max-width: calc(100% - 20px);
   }
 
   .municipality-profile-hero__map-legend {
