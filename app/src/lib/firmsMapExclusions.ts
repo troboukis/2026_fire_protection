@@ -7,6 +7,7 @@ const FIRMS_MAP_EXCLUSION_CENTERS = [
   { label: 'Pavlou Mela', latitude: 40.70065, longitude: 22.95211 },
   { label: 'Polygyros', latitude: 40.28647, longitude: 23.44398 },
   { label: 'Loutraki', latitude: 37.91736, longitude: 23.07091 },
+  { label: 'Volos', latitude: 39.35443, longitude: 22.98489 },
 ]
 
 function toFiniteNumber(value: unknown): number | null {
