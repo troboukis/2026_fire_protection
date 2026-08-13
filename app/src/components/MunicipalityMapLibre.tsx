@@ -174,11 +174,11 @@ function getFallbackBasemapStyle(): StyleSpecification {
     sources: {
       basemap: {
         type: 'raster',
-        tiles: ['https://tile.opentopomap.org/{z}/{x}/{y}.png'],
+        tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
         tileSize: 256,
         minzoom: 0,
         maxzoom: 17,
-        attribution: 'Map data © OpenStreetMap contributors; Map style © OpenTopoMap',
+        attribution: '© OpenStreetMap contributors',
       },
     },
     layers: [{ id: 'basemap', type: 'raster', source: 'basemap' }],
