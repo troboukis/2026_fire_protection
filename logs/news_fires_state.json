@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564400354/enas-nekros-kai-polloi-traymaties-apo-ekrixi-sto-limani-toy-roterntam/",
-      "title": "Ενας νεκρός και πολλοί τραυματίες από έκρηξη στο λιμάνι του Ρότερνταμ",
-      "normalized_title": "ΕΝΑΣ ΝΕΚΡΟΣ ΚΑΙ ΠΟΛΛΟΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΕΚΡΗΞΗ ΣΤΟ ΛΙΜΑΝΙ ΤΟΥ ΡΟΤΕΡΝΤΑΜ",
+      "url": "https://www.kathimerini.gr/society/564400393/fotia-tora-sti-naypakto-ichise-to-112/",
+      "title": "Φωτιά τώρα στη Ναύπακτο – Ηχησε το 112",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗ ΝΑΥΠΑΚΤΟ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564400354/enas-nekros-kai-polloi-traymaties-apo-ekrixi-sto-limani-toy-roterntam/",
-        "https://www.kathimerini.gr/world/564400345/ekrixi-se-naypigeio-sti-notioanatoliki-kina-12-traymaties/",
-        "https://www.kathimerini.gr/world/564400288/giati-roympio-kai-mpesent-taxidepsan-stin-ptisi-antiperispasmoy-meta-ti-fygadeysi-tramp-apo-tin-toyrkia/",
-        "https://www.kathimerini.gr/k/sunday-edition/564393751/ektaktos-to-savvato-15-8-me-tin-k-disney-editor-s-choice-serlok-cholms-periodiko-k-kai-othoni/",
-        "https://www.kathimerini.gr/society/564400078/synedriase-i-epitropi-ektimisis-kindynoy-gia-toys-thyellodeis-anemoys-eos-9-mpofor-ayrio-pote-exasthenoyn/"
+        "https://www.kathimerini.gr/society/564400393/fotia-tora-sti-naypakto-ichise-to-112/",
+        "https://www.kathimerini.gr/world/564400390/iranika-kratika-mesa-chleyazoyn-tin-epicheirisi-fygadeysis-toy-tramp-meme-ton-deichnei-na-kryvetai-se-fortigo/",
+        "https://www.kathimerini.gr/society/564400378/fotia-sti-chalkidiki-minyma-toy-112-stin-kassandra/",
+        "https://www.kathimerini.gr/society/564400369/alonnisos-fidi-dagkose-10chrono-epeigoysa-diakomidi-ston-volo/"
       ],
-      "seen_at_utc": "2026-08-13T11:51:25.438046+00:00"
+      "seen_at_utc": "2026-08-13T12:18:15.478059+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,37 +1262,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864445/fotia-sti-siviri-halkidikis-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά στη Σίβηρη Χαλκιδικής, ήχησε το 112 για ετοιμότητα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ ΧΑΛΚΙΔΙΚΗΣ, ΗΧΗΣΕ ΤΟ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1864458/fotia-sto-vartholomio-sikothikan-4-enaeria-estali-112-gia-etoimotita/?utm_source=rss",
+      "title": "Φωτιά στο Βαρθολομιό: Σηκώθηκαν 4 εναέρια, εστάλη 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΒΑΡΘΟΛΟΜΙΟ: ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ, ΕΣΤΑΛΗ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864445/fotia-sti-siviri-halkidikis-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864444/exihniastikan-duo-tilefonikes-apates-stin-pieria-tous-arpaxan-hrimata-kai-kosmimata-prospoioumenoi-tous-logistes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864441/akraios-kindunos-purkagias-aurio-148-se-attiki-voiotia-euvoia-argolida-kai-korinthia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864458/fotia-sto-vartholomio-sikothikan-4-enaeria-estali-112-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864457/heirovomvida-tou-v-pagosmiou-polemou-se-palia-apothiki-tis-euvoias-epiheirisi-gia-tin-apomakrunsi-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864455/thuellodi-meltemia-me-ripes-ano-ton-100-hlmora-to-epomeno-48oro-poies-periohes-tha-epireastoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864454/neos-traumatismos-touristrias-sto-aerodromio-skiathou-apo-to-reuma-aeroskafous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864447/fotia-tora-sti-makuneia-naupaktias-112-gia-etoimotita/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T11:51:25.438165+00:00"
+      "seen_at_utc": "2026-08-13T12:18:15.478206+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1447292/oi-leptomereies-tis-symfonias-tis-mekkas-toyrkia-pakistan-saoydiki-aravia-stinoyn-stratiotikoys-mihanismoys/",
-      "title": "Οι λεπτομέρειες της συμφωνίας της Μέκκας: Τουρκία, Πακιστάν, Σαουδική Αραβία στήνουν στρατιωτικούς μηχανισμούς",
-      "normalized_title": "ΟΙ ΛΕΠΤΟΜΕΡΕΙΕΣ ΤΗΣ ΣΥΜΦΩΝΙΑΣ ΤΗΣ ΜΕΚΚΑΣ: ΤΟΥΡΚΙΑ, ΠΑΚΙΣΤΑΝ, ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ ΣΤΗΝΟΥΝ ΣΤΡΑΤΙΩΤΙΚΟΥΣ ΜΗΧΑΝΙΣΜΟΥΣ",
+      "url": "https://www.efsyn.gr/ellada/1447314/nosokomeio-syroy-ekrixi-orgis-gia-tin-ede-stin-proedro-ton-ergazomenon-poy-katiggeile-tis-elleipseis-kai-tin-ypostelehosi/",
+      "title": "Νοσοκομείο Σύρου: Έκρηξη οργής για την ΕΔΕ στην πρόεδρο των εργαζομένων που κατήγγειλε ελλείψεις και υποστελέχωση",
+      "normalized_title": "ΝΟΣΟΚΟΜΕΙΟ ΣΥΡΟΥ: ΕΚΡΗΞΗ ΟΡΓΗΣ ΓΙΑ ΤΗΝ ΕΔΕ ΣΤΗΝ ΠΡΟΕΔΡΟ ΤΩΝ ΕΡΓΑΖΟΜΕΝΩΝ ΠΟΥ ΚΑΤΗΓΓΕΙΛΕ ΕΛΛΕΙΨΕΙΣ ΚΑΙ ΥΠΟΣΤΕΛΕΧΩΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1447292/oi-leptomereies-tis-symfonias-tis-mekkas-toyrkia-pakistan-saoydiki-aravia-stinoyn-stratiotikoys-mihanismoys/",
-        "https://www.efsyn.gr/ellada/1447291/tilefonikes-apates-pithani-hrisi-a-i-gia-mimisi-fonis-pos-droyn-oi-epitideioi-ti-na-prosexoyn-oi-polites/"
+        "https://www.efsyn.gr/ellada/1447314/nosokomeio-syroy-ekrixi-orgis-gia-tin-ede-stin-proedro-ton-ergazomenon-poy-katiggeile-tis-elleipseis-kai-tin-ypostelehosi/",
+        "https://www.efsyn.gr/ellada/1447297/fotia-sti-siviri-halkidikis-ihise-to-112-epiheiroyn-epta-enaeria-mesa/",
+        "https://www.efsyn.gr/kosmos/1447298/ekrixi-sto-limani-toy-roterntam-enas-nekros-kai-traymaties/"
       ],
-      "seen_at_utc": "2026-08-13T11:51:25.438139+00:00"
+      "seen_at_utc": "2026-08-13T12:18:15.478182+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/world/ollandia-ekriksi-sto-limani-tou-roterntam-enas-nekros-kai-traymaties/",
-      "title": "Ολλανδία: Έκρηξη στο λιμάνι του Ρότερνταμ – Ένας νεκρός και τραυματίες",
-      "normalized_title": "ΟΛΛΑΝΔΙΑ: ΕΚΡΗΞΗ ΣΤΟ ΛΙΜΑΝΙ ΤΟΥ ΡΟΤΕΡΝΤΑΜ – ΕΝΑΣ ΝΕΚΡΟΣ ΚΑΙ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.in.gr/2026/08/13/sports/othersports/ston-teliko-ton-1500m-eleythero-me-neo-apithano-panellinio-rekor-i-vasilaki-vid/",
+      "title": "Στον τελικό των 1500μ. ελεύθερο με νέο απίθανο πανελλήνιο ρεκόρ η Βασιλάκη (vid)",
+      "normalized_title": "ΣΤΟΝ ΤΕΛΙΚΟ ΤΩΝ 1500Μ. ΕΛΕΥΘΕΡΟ ΜΕ ΝΕΟ ΑΠΙΘΑΝΟ ΠΑΝΕΛΛΗΝΙΟ ΡΕΚΟΡ Η ΒΑΣΙΛΑΚΗ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/world/ollandia-ekriksi-sto-limani-tou-roterntam-enas-nekros-kai-traymaties/",
-        "https://www.in.gr/2026/08/13/politics/politiki-grammateia/pasok-i-stegastiki-krisi-ton-ekpaideytikon-yponomeyei-ti-stelexosi-tou-dimosiou-sxoleiou/",
-        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/fpa-pos-ginontai-oi-stoxeymenoi-elegxoi-ton-diloseon/"
+        "https://www.in.gr/2026/08/13/sports/othersports/ston-teliko-ton-1500m-eleythero-me-neo-apithano-panellinio-rekor-i-vasilaki-vid/",
+        "https://www.in.gr/2026/08/13/greece/fotia-sti-makyneia-naypaktias-minyma-tou-112-gia-etoimotita/",
+        "https://www.in.gr/2026/08/13/greece/fotia-sti-siviri-xalkidikis-ixise-to-112-stin-kassandra/",
+        "https://www.in.gr/2026/08/13/life/culture-live/spase-ton-kodika-mporei-i-texniti-noimosyni-na-mas-voithisei-na-apokryptografisoume-arxaies-glosses/",
+        "https://www.in.gr/2026/08/13/in-science/perivallon-b-science/ksypnise-poliki-me-arkouda-me-tin-korna-to-prostimo-tou-ekopse-to-gelio/",
+        "https://www.in.gr/2026/08/13/sports/othersports/siskos-eixa-sto-myalo-mou-oli-tin-ellada/",
+        "https://www.in.gr/2026/08/13/world/oukrania-dyo-sidirodromikoi-ypalliloi-skotothikan-se-rosiko-pligma-me-drone-se-epivatigo-treno/"
       ],
-      "seen_at_utc": "2026-08-13T11:51:25.438096+00:00"
+      "seen_at_utc": "2026-08-13T12:18:15.478131+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T11:51:25.438251+00:00"
+  "updated_at_utc": "2026-08-13T12:18:15.478339+00:00"
 }
