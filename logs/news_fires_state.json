@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564400996/athina-machi-me-ta-kinezika-skatharia-poy-apodekatizoyn-tis-moyries/",
-      "title": "Αθήνα: Μάχη με τα κινέζικα σκαθάρια που αποδεκατίζουν τις μουριές",
-      "normalized_title": "ΑΘΗΝΑ: ΜΑΧΗ ΜΕ ΤΑ ΚΙΝΕΖΙΚΑ ΣΚΑΘΑΡΙΑ ΠΟΥ ΑΠΟΔΕΚΑΤΙΖΟΥΝ ΤΙΣ ΜΟΥΡΙΕΣ",
+      "url": "https://www.kathimerini.gr/world/564400945/eklepsan-syllektikes-kartes-pokemon-axias-80-000-eyro-apo-katastima-sti-gallia/",
+      "title": "Εκλεψαν συλλεκτικές κάρτες Pokémon αξίας 80.000 ευρώ από κατάστημα στη Γαλλία",
+      "normalized_title": "ΕΚΛΕΨΑΝ ΣΥΛΛΕΚΤΙΚΕΣ ΚΑΡΤΕΣ POKEMON ΑΞΙΑΣ 80.000 ΕΥΡΩ ΑΠΟ ΚΑΤΑΣΤΗΜΑ ΣΤΗ ΓΑΛΛΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564400996/athina-machi-me-ta-kinezika-skatharia-poy-apodekatizoyn-tis-moyries/"
+        "https://www.kathimerini.gr/world/564400945/eklepsan-syllektikes-kartes-pokemon-axias-80-000-eyro-apo-katastima-sti-gallia/",
+        "https://www.kathimerini.gr/athletics/football/564402415/ektos-europa-league-o-paok-synechizei-sto-conference-me-mpran/",
+        "https://www.kathimerini.gr/world/564399235/poso-ofeloyn-ta-sympliromata-omega-3/"
       ],
-      "seen_at_utc": "2026-08-13T20:29:58.205329+00:00"
+      "seen_at_utc": "2026-08-13T20:51:32.684553+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864603/kinitopoiisi-tou-ekav-gia-25hroni-pou-traumatistike-stis-vathres-sti-samothraki-htupise-se-kefali-kai-soma-video/?utm_source=rss",
-      "title": "Σαμοθράκη: Τραυματίστηκε 25χρονη στις Βάθρες, δείτε βίντεο",
-      "normalized_title": "ΣΑΜΟΘΡΑΚΗ: ΤΡΑΥΜΑΤΙΣΤΗΚΕ 25ΧΡΟΝΗ ΣΤΙΣ ΒΑΘΡΕΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1864618/varthakogiannis-500-purkagies-ehoun-ekdilothei-apo-tin-1i-augoustou-oi-sunthikes-den-epitrepoun-efisuhasmo/?utm_source=rss",
+      "title": "Βαρθακογιάννης: 500 πυρκαγιές έχουν εκδηλωθεί από την 1η Αυγούστου, οι συνθήκες δεν επιτρέπουν εφησυχασμό",
+      "normalized_title": "ΒΑΡΘΑΚΟΓΙΑΝΝΗΣ: 500 ΠΥΡΚΑΓΙΕΣ ΕΧΟΥΝ ΕΚΔΗΛΩΘΕΙ ΑΠΟ ΤΗΝ 1Η ΑΥΓΟΥΣΤΟΥ, ΟΙ ΣΥΝΘΗΚΕΣ ΔΕΝ ΕΠΙΤΡΕΠΟΥΝ ΕΦΗΣΥΧΑΣΜΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864603/kinitopoiisi-tou-ekav-gia-25hroni-pou-traumatistike-stis-vathres-sti-samothraki-htupise-se-kefali-kai-soma-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864618/varthakogiannis-500-purkagies-ehoun-ekdilothei-apo-tin-1i-augoustou-oi-sunthikes-den-epitrepoun-efisuhasmo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864606/upoleimmata-poulion-edopistikan-ston-kinitira-tou-aeroplanou-tis-ryanair-pou-roufixe-epivati-pano-apo-ti-thessaloniki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T20:17:10.680587+00:00"
+      "seen_at_utc": "2026-08-13T20:51:32.684794+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1447585/empola-exaplonetai-o-fonikos-ios-sti-l-d-toy-kongko-entonos-provlimatismos-apo-toys-epistimones/",
-      "title": "Έμπολα: Εξαπλώνεται ο φονικός ιός στη Λ.Δ. του Κονγκό – Έντονος προβληματισμός από τους επιστήμονες",
-      "normalized_title": "ΕΜΠΟΛΑ: ΕΞΑΠΛΩΝΕΤΑΙ Ο ΦΟΝΙΚΟΣ ΙΟΣ ΣΤΗ Λ.Δ. ΤΟΥ ΚΟΝΓΚΟ – ΕΝΤΟΝΟΣ ΠΡΟΒΛΗΜΑΤΙΣΜΟΣ ΑΠΟ ΤΟΥΣ ΕΠΙΣΤΗΜΟΝΕΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1447591/paok-ypesti-deyteri-itta-apo-tin-anterleht-kai-apohairetise-to-europa-league/",
+      "title": "ΠΑΟΚ: Υπέστη δεύτερη ήττα από την Άντερλεχτ και αποχαιρέτισε το Europa League",
+      "normalized_title": "ΠΑΟΚ: ΥΠΕΣΤΗ ΔΕΥΤΕΡΗ ΗΤΤΑ ΑΠΟ ΤΗΝ ΑΝΤΕΡΛΕΧΤ ΚΑΙ ΑΠΟΧΑΙΡΕΤΙΣΕ ΤΟ EUROPA LEAGUE",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1447585/empola-exaplonetai-o-fonikos-ios-sti-l-d-toy-kongko-entonos-provlimatismos-apo-toys-epistimones/"
+        "https://www.efsyn.gr/athlitismos/1447591/paok-ypesti-deyteri-itta-apo-tin-anterleht-kai-apohairetise-to-europa-league/",
+        "https://www.efsyn.gr/ellada/1447589/ryanair-kommati-apo-exartima-toy-kinitira-i-aitia-poy-paraligo-na-vgei-epivatis-apo-to-parathyro/"
       ],
-      "seen_at_utc": "2026-08-13T20:17:10.680568+00:00"
+      "seen_at_utc": "2026-08-13T20:51:32.684686+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/sports/football/anterlext-paok-3-2-me-tragiki-amyna-apokleistike-apo-to-europa-league-synexizei-sto-conference/",
-      "title": "‘Aντερλεχτ-ΠΑΟΚ 3-2: Με τραγική άμυνα αποκλείστηκε από το Europa League, συνεχίζει στο Conference",
-      "normalized_title": "‘AΝΤΕΡΛΕΧΤ-ΠΑΟΚ 3-2: ΜΕ ΤΡΑΓΙΚΗ ΑΜΥΝΑ ΑΠΟΚΛΕΙΣΤΗΚΕ ΑΠΟ ΤΟ EUROPA LEAGUE, ΣΥΝΕΧΙΖΕΙ ΣΤΟ CONFERENCE",
+      "url": "https://www.in.gr/2026/08/13/economy/diethnis-oikonomia/se-tripli-pagida-ta-sitira-tis-oukranias/",
+      "title": "Σε τριπλή παγίδα τα σιτηρά της Ουκρανίας",
+      "normalized_title": "ΣΕ ΤΡΙΠΛΗ ΠΑΓΙΔΑ ΤΑ ΣΙΤΗΡΑ ΤΗΣ ΟΥΚΡΑΝΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/sports/football/anterlext-paok-3-2-me-tragiki-amyna-apokleistike-apo-to-europa-league-synexizei-sto-conference/",
-        "https://www.in.gr/2026/08/13/world/vretania-dyo-sovara-traymaties-apo-ton-ektroxiasmo-trenou-sto-saseks-akomi-ennea-sto-nosokomeio/"
+        "https://www.in.gr/2026/08/13/economy/diethnis-oikonomia/se-tripli-pagida-ta-sitira-tis-oukranias/",
+        "https://www.in.gr/2026/08/13/sports/football/europa-league/prokrisi-me-itta-gia-tin-tsska-sofias-pou-tha-paiksei-me-ton-ofi-sta-plei-of-pote-tha-ginoun-ta-paixnidia/",
+        "https://www.in.gr/2026/08/13/politics/politiki-grammateia/kke-apaitoume-tin-katargisi-tou-nomou-pierrakaki-i-ousia-tis-kyvernitikis-politikis-i-ypovathmisi-tis-ekpaideysis/"
       ],
-      "seen_at_utc": "2026-08-13T20:29:58.205387+00:00"
+      "seen_at_utc": "2026-08-13T20:51:32.684634+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T20:29:58.205468+00:00"
+  "updated_at_utc": "2026-08-13T20:51:32.684910+00:00"
 }
