@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564400396/chalkidiki-apagoreysi-kykloforias-se-dasikes-perioches-2/",
-      "title": "Χαλκιδική: Απαγόρευση κυκλοφορίας σε δασικές περιοχές",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΠΑΓΟΡΕΥΣΗ ΚΥΚΛΟΦΟΡΙΑΣ ΣΕ ΔΑΣΙΚΕΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/society/564400408/megali-fotia-sti-chalkidiki-ichise-to-112-gia-ekkenosi-enischyontai-oi-dynameis/",
+      "title": "Μεγάλη φωτιά στη Χαλκιδική: Ηχησε το 112 για εκκένωση – Ενισχύονται οι δυνάμεις",
+      "normalized_title": "ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΧΑΛΚΙΔΙΚΗ: ΗΧΗΣΕ ΤΟ 112 ΓΙΑ ΕΚΚΕΝΩΣΗ – ΕΝΙΣΧΥΟΝΤΑΙ ΟΙ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564400396/chalkidiki-apagoreysi-kykloforias-se-dasikes-perioches-2/",
-        "https://www.kathimerini.gr/politics/parties/564399118/i-n-d-diavazei-to-skiniko/"
+        "https://www.kathimerini.gr/society/564400408/megali-fotia-sti-chalkidiki-ichise-to-112-gia-ekkenosi-enischyontai-oi-dynameis/",
+        "https://www.kathimerini.gr/world/564400423/egkleistes-sta-spitia-toys-oi-mises-gynaikes-sto-afganistan/",
+        "https://www.kathimerini.gr/society/564400405/fotia-stin-ileia-ichise-to-112/"
       ],
-      "seen_at_utc": "2026-08-13T12:30:05.865642+00:00"
+      "seen_at_utc": "2026-08-13T12:52:36.514251+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864458/fotia-sto-vartholomio-sikothikan-4-enaeria-estali-112-gia-etoimotita/?utm_source=rss",
-      "title": "Φωτιά στο Βαρθολομιό: Σηκώθηκαν 4 εναέρια, εστάλη 112 για ετοιμότητα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΒΑΡΘΟΛΟΜΙΟ: ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ, ΕΣΤΑΛΗ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1864466/fotia-stin-potamoula-aitoloakarnanias-minuma-apo-to-112-gia-etoimotita/?utm_source=rss",
+      "title": "Φωτιά στην Ποταμούλα Αιτωλοακαρνανίας, μήνυμα από το 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΟΤΑΜΟΥΛΑ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864458/fotia-sto-vartholomio-sikothikan-4-enaeria-estali-112-gia-etoimotita/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864457/heirovomvida-tou-v-pagosmiou-polemou-se-palia-apothiki-tis-euvoias-epiheirisi-gia-tin-apomakrunsi-tis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864455/thuellodi-meltemia-me-ripes-ano-ton-100-hlmora-to-epomeno-48oro-poies-periohes-tha-epireastoun/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864454/neos-traumatismos-touristrias-sto-aerodromio-skiathou-apo-to-reuma-aeroskafous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864447/fotia-tora-sti-makuneia-naupaktias-112-gia-etoimotita/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864466/fotia-stin-potamoula-aitoloakarnanias-minuma-apo-to-112-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864465/tautopoiithike-o-odigos-tou-vutioforou-pou-ekane-epikinduni-prosperasi-se-tuflo-simeio-sti-limni-plastira/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T12:18:15.478206+00:00"
+      "seen_at_utc": "2026-08-13T12:52:36.514401+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447314/nosokomeio-syroy-ekrixi-orgis-gia-tin-ede-stin-proedro-ton-ergazomenon-poy-katiggeile-tis-elleipseis-kai-tin-ypostelehosi/",
-      "title": "Νοσοκομείο Σύρου: Έκρηξη οργής για την ΕΔΕ στην πρόεδρο των εργαζομένων που κατήγγειλε ελλείψεις και υποστελέχωση",
-      "normalized_title": "ΝΟΣΟΚΟΜΕΙΟ ΣΥΡΟΥ: ΕΚΡΗΞΗ ΟΡΓΗΣ ΓΙΑ ΤΗΝ ΕΔΕ ΣΤΗΝ ΠΡΟΕΔΡΟ ΤΩΝ ΕΡΓΑΖΟΜΕΝΩΝ ΠΟΥ ΚΑΤΗΓΓΕΙΛΕ ΕΛΛΕΙΨΕΙΣ ΚΑΙ ΥΠΟΣΤΕΛΕΧΩΣΗ",
+      "url": "https://www.efsyn.gr/ellada/1447345/kideia-nikoy-kalogeropoyloy-sygkinisi-sto-a-nekrotafeio-me-to-tragoydi-ego-dilono-mathitis-vinteo/",
+      "title": "Κηδεία Νίκου Καλογερόπουλου: Συγκίνηση στο Α’ Νεκροταφείο με το τραγούδι «Εγώ δηλώνω μαθητής» [βίντεο]",
+      "normalized_title": "ΚΗΔΕΙΑ ΝΙΚΟΥ ΚΑΛΟΓΕΡΟΠΟΥΛΟΥ: ΣΥΓΚΙΝΗΣΗ ΣΤΟ Α’ ΝΕΚΡΟΤΑΦΕΙΟ ΜΕ ΤΟ ΤΡΑΓΟΥΔΙ «ΕΓΩ ΔΗΛΩΝΩ ΜΑΘΗΤΗΣ» [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447314/nosokomeio-syroy-ekrixi-orgis-gia-tin-ede-stin-proedro-ton-ergazomenon-poy-katiggeile-tis-elleipseis-kai-tin-ypostelehosi/",
-        "https://www.efsyn.gr/ellada/1447297/fotia-sti-siviri-halkidikis-ihise-to-112-epiheiroyn-epta-enaeria-mesa/",
-        "https://www.efsyn.gr/kosmos/1447298/ekrixi-sto-limani-toy-roterntam-enas-nekros-kai-traymaties/"
+        "https://www.efsyn.gr/ellada/1447345/kideia-nikoy-kalogeropoyloy-sygkinisi-sto-a-nekrotafeio-me-to-tragoydi-ego-dilono-mathitis-vinteo/",
+        "https://www.efsyn.gr/politiki/1447334/to-aima-den-ftanei/",
+        "https://www.efsyn.gr/ellada/1447332/pyrkagia-ston-vartholomio-ileias-epiheiroyn-tessera-enaeria-mesa-minyma-112-gia-etoimotita/",
+        "https://www.efsyn.gr/ellada/1447327/halkidiki-syllipsi-65hronoy-gia-apati-eihe-kavatzosei-tehnito-limani-kai-to-leitoyrgoyse-idiotika/",
+        "https://www.efsyn.gr/ellada/1447329/pyrkagia-sti-makyneia-aitoloakarnanias-minyma-apo-to-112-gia-ekkenosi/"
       ],
-      "seen_at_utc": "2026-08-13T12:18:15.478182+00:00"
+      "seen_at_utc": "2026-08-13T12:52:36.514363+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/sports/basketball/euroleague/o-olympiakos-anakoinose-tin-apoktisi-tou-empage-entiage-pic/",
-      "title": "Ο Ολυμπιακός ανακοίνωσε την απόκτηση του Εμπαγέ Εντιαγέ (pic)",
-      "normalized_title": "Ο ΟΛΥΜΠΙΑΚΟΣ ΑΝΑΚΟΙΝΩΣΕ ΤΗΝ ΑΠΟΚΤΗΣΗ ΤΟΥ ΕΜΠΑΓΕ ΕΝΤΙΑΓΕ (PIC)",
+      "url": "https://www.in.gr/2026/08/13/world/oukrania-rosia-antallaksan-tis-sorous-stratioton-tous/",
+      "title": "Ουκρανία και Ρωσία αντάλλαξαν τις σορούς στρατιωτών τους",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ ΚΑΙ ΡΩΣΙΑ ΑΝΤΑΛΛΑΞΑΝ ΤΙΣ ΣΟΡΟΥΣ ΣΤΡΑΤΙΩΤΩΝ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/sports/basketball/euroleague/o-olympiakos-anakoinose-tin-apoktisi-tou-empage-entiage-pic/"
+        "https://www.in.gr/2026/08/13/world/oukrania-rosia-antallaksan-tis-sorous-stratioton-tous/",
+        "https://www.in.gr/2026/08/13/politics/epikairotita/elas-provlimatizei-i-apousia-dimosias-antidrasis-tis-kyvernisis-apenanti-sti-ratsistiki-epithesi-kata-tis-lisa-itogia/",
+        "https://www.in.gr/2026/08/13/greece/fotia-sto-vartholomio-ileias-kai-minyma-apo-to-112-gia-etoimotita/"
       ],
-      "seen_at_utc": "2026-08-13T12:30:05.865688+00:00"
+      "seen_at_utc": "2026-08-13T12:52:36.514305+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T12:30:05.865768+00:00"
+  "updated_at_utc": "2026-08-13T12:52:36.514489+00:00"
 }
