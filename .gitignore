@@ -21,6 +21,7 @@ logs/x_pyrosvestiki_enrichment_cache.json
 # Frontend build artifacts
 app/dist/
 app/.vite/
+app/public/west-attica-fire-2026/
 
 # Local env files (keep examples)
 app/.env
