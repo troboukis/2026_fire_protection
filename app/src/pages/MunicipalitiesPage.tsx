@@ -1760,8 +1760,12 @@ export default function MunicipalitiesPage() {
     const firms = firmsDetectionMarkers.map((detection) => pointFeature(detection.lon, detection.lat, interactionProperties(
       'firms',
       detection.key,
-      'NASA FIRMS',
-      [],
+      'NASA FIRMS: θερμική ανωμαλία',
+      [
+        `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
+        formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
+        `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+      ],
       detection,
       { scanKm: detection.scanKm, trackKm: detection.trackKm },
     )))
@@ -2147,35 +2151,13 @@ export default function MunicipalitiesPage() {
 
   const showMapLibreInteractionTooltip = (interaction: MunicipalityMapLibreInteraction) => {
     if (isMobileMunicipalityMap) return
-    if (interaction.kind === 'firms') {
-      const count = getNearbyFirmsDetections(interaction.fallback).length
-      setPointTooltip({
-        id: interaction.id,
-        x: interaction.point.x,
-        y: interaction.point.y,
-        title: count === 1
-          ? 'NASA FIRMS: 1 θερμική ανωμαλία'
-          : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
-        items: getNearbyFirmsDetectionTooltipItems(interaction.fallback),
-        isStacked: false,
-      })
-      return
-    }
-
-    const tooltip = getStackedPointTooltip(
-      interaction.title,
-      interaction.items,
-      interaction.id,
-      interaction.fallback,
-    )
     setPointTooltip({
       id: interaction.id,
       x: interaction.point.x,
       y: interaction.point.y,
-      title: tooltip.title,
-      items: tooltip.items,
-      isStacked: tooltip.isStacked,
-      stackedRows: tooltip.stackedRows,
+      title: interaction.title,
+      items: interaction.items,
+      isStacked: false,
     })
   }
 
@@ -2186,39 +2168,15 @@ export default function MunicipalitiesPage() {
       return
     }
 
-    if (interaction.kind === 'firms') {
-      const count = getNearbyFirmsDetections(interaction.fallback).length
-      setPointTooltip((current) => current?.id === interaction.id
-        ? null
-        : {
-            id: interaction.id,
-            x: interaction.point.x,
-            y: interaction.point.y,
-            title: count === 1
-              ? 'NASA FIRMS: 1 θερμική ανωμαλία'
-              : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
-            items: getNearbyFirmsDetectionTooltipItems(interaction.fallback),
-            isStacked: false,
-          })
-      return
-    }
-
-    const tooltip = getStackedPointTooltip(
-      interaction.title,
-      interaction.items,
-      interaction.id,
-      interaction.fallback,
-    )
     setPointTooltip((current) => current?.id === interaction.id
       ? null
       : {
           id: interaction.id,
           x: interaction.point.x,
           y: interaction.point.y,
-          title: tooltip.title,
-          items: tooltip.items,
-          isStacked: tooltip.isStacked,
-          stackedRows: tooltip.stackedRows,
+          title: interaction.title,
+          items: interaction.items,
+          isStacked: false,
         })
   }
 
@@ -3583,10 +3541,6 @@ export default function MunicipalitiesPage() {
                   <div
                     ref={municipalityMapFrameRef}
                     className="municipality-profile-hero__map-frame dev-tag-anchor"
-                    onClick={() => {
-                      if (!isMobileMunicipalityMap) return
-                      setPointTooltip(null)
-                    }}
                   >
                     <ComponentTag
                       name="municipality-profile-hero__map-frame"
@@ -3612,6 +3566,9 @@ export default function MunicipalitiesPage() {
                               if (!isMobileMunicipalityMap) clearPointTooltip()
                             }}
                             onFeatureClick={activateMapLibreInteraction}
+                            onBackgroundClick={() => {
+                              if (isMobileMunicipalityMap) setPointTooltip(null)
+                            }}
                           />
                         </Suspense>
                         <svg
