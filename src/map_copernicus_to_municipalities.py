@@ -157,6 +157,7 @@ def assign_municipalities(
     output["municipality_normalized_value"] = None
     output["municipality_match_method"] = None
     output["municipality_overlap_ratio"] = None
+    output["municipality_matches"] = [[] for _ in range(len(output))]
 
     sindex = municipalities_metric.sindex
 
@@ -179,12 +180,37 @@ def assign_municipalities(
             best_name = None
             best_area = 0.0
             total_area = geom.area if geom.area > 0 else None
+            area_ha = None
+            try:
+                area_ha = float(fire_row.get("area_ha"))
+            except (TypeError, ValueError):
+                pass
+            municipality_matches = []
             for _, municipality_row in intersections.iterrows():
                 overlap_area = geom.intersection(municipality_row.geometry).area
+                if overlap_area <= 0 or total_area is None:
+                    continue
+                overlap_ratio = overlap_area / total_area
+                stored_overlap_ratio = max(0.000001, round(overlap_ratio, 6))
+                municipality_code = str(municipality_row["municipality_code"]).strip()
+                municipality_name = str(municipality_row["name"]).strip()
+                municipality_matches.append({
+                    "municipality_key": municipality_code,
+                    "municipality_name": municipality_name,
+                    "municipality_normalized_value": normalized_name_lookup.get(municipality_code, municipality_name),
+                    "match_method": "shape_overlap",
+                    "overlap_ratio": stored_overlap_ratio,
+                    "overlap_area_ha": round(area_ha * overlap_ratio, 2) if area_ha is not None else None,
+                })
                 if overlap_area > best_area:
                     best_area = overlap_area
-                    best_code = municipality_row["municipality_code"]
-                    best_name = municipality_row["name"]
+                    best_code = municipality_code
+                    best_name = municipality_name
+
+            municipality_matches.sort(
+                key=lambda match: (-match["overlap_ratio"], match["municipality_key"]),
+            )
+            output.at[idx, "municipality_matches"] = municipality_matches
 
             if best_code is not None:
                 output.at[idx, "municipality_key"] = best_code
@@ -205,6 +231,21 @@ def assign_municipalities(
         )
         output.at[idx, "municipality_match_method"] = "centroid_contains"
         output.at[idx, "municipality_overlap_ratio"] = 1.0
+        area_ha = None
+        try:
+            area_ha = float(fire_row.get("area_ha"))
+        except (TypeError, ValueError):
+            pass
+        municipality_code = str(target["municipality_code"]).strip()
+        municipality_name = str(target["name"]).strip()
+        output.at[idx, "municipality_matches"] = [{
+            "municipality_key": municipality_code,
+            "municipality_name": municipality_name,
+            "municipality_normalized_value": normalized_name_lookup.get(municipality_code, municipality_name),
+            "match_method": "centroid_contains",
+            "overlap_ratio": 1.0,
+            "overlap_area_ha": round(area_ha, 2) if area_ha is not None else None,
+        }]
 
     return output
 

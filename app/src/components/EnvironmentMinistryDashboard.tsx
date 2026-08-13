@@ -9,6 +9,7 @@ import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './DiavgeiaD
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from './FeaturedRecordsSection'
 import LatestContractCard from './LatestContractCard'
 import MapTilerLogo from './MapTilerLogo'
+import MapLegendToggle from './MapLegendToggle'
 import ProfileMetricCard from './ProfileMetricCard'
 import ProfileSectionCard from './ProfileSectionCard'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
@@ -473,6 +474,7 @@ function EnvironmentWorksMap({
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [tooltip, setTooltip] = useState<WorkPointTooltip | null>(null)
   const [terrainFailed, setTerrainFailed] = useState(false)
+  const [showWorkPoints, setShowWorkPoints] = useState(true)
   const [isCompactViewport, setIsCompactViewport] = useState(() => (
     typeof window === 'undefined' ? false : window.matchMedia('(max-width: 760px)').matches
   ))
@@ -696,7 +698,7 @@ function EnvironmentWorksMap({
           </g>
         )}
         <g className="environment-map__points">
-          {mapData.points.map((point) => (
+          {showWorkPoints && mapData.points.map((point) => (
             <g key={point.id}>
               <circle
                 className="environment-map__point-hitbox"
@@ -754,8 +756,17 @@ function EnvironmentWorksMap({
         </div>
       ) : null}
       <div className="environment-map__legend">
-        <span className="environment-map__legend-dot" aria-hidden="true" />
-        <span>{`${mapData.points.length.toLocaleString('el-GR')} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το ${CURRENT_YEAR}`}</span>
+        <MapLegendToggle
+          visible={showWorkPoints}
+          onToggle={() => {
+            setTooltip(null)
+            setShowWorkPoints((visible) => !visible)
+          }}
+          label="Σημεία εργασιών"
+        >
+          <span className="environment-map__legend-dot" aria-hidden="true" />
+          <span>{`${mapData.points.length.toLocaleString('el-GR')} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το ${CURRENT_YEAR}`}</span>
+        </MapLegendToggle>
       </div>
     </div>
   )

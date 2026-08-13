@@ -70,6 +70,7 @@ interface Props {
   onMunicipalityClick?: (municipalityId: string) => void
   selectedMunicipalityIds?: Set<string> | null
   municipalityLabelById?: Map<string, string>
+  showChoropleth?: boolean
 }
 
 export function GreeceMap({
@@ -85,6 +86,7 @@ export function GreeceMap({
   onMunicipalityClick,
   selectedMunicipalityIds,
   municipalityLabelById,
+  showChoropleth = true,
 }: Props) {
   const containerRef          = useRef<HTMLDivElement>(null)
   const svgRef                = useRef<SVGSVGElement>(null)
@@ -172,12 +174,13 @@ export function GreeceMap({
   }, [geojson, viewMode])
 
   // Helper: compute fill for a given municipality code
-  const getFill = (code: string): string => {
+  const getFill = useCallback((code: string): string => {
+    if (!showChoropleth) return 'transparent'
     if (selectedRef.current.has(code)) return FILL_SELECTED
     const val = choroplethRef.current[code] ?? 0
     if (val <= 0 || !colorScaleRef.current) return FILL_DEFAULT
     return d3.interpolateReds(colorScaleRef.current(val))
-  }
+  }, [showChoropleth])
 
   // Draw map when geojson loads or SVG gets real dimensions
   useEffect(() => {
@@ -282,7 +285,7 @@ export function GreeceMap({
       .attr('stroke', 'rgba(255,255,255,0.75)')
       .attr('stroke-width', 0.8)
       .attr('pointer-events', 'none')
-  }, [buildProjection, geojson, svgSize, viewMode])
+  }, [buildProjection, geojson, getFill, svgSize, viewMode])
 
   // Draw/update procurement dots when data or map changes
   useEffect(() => {
@@ -314,7 +317,7 @@ export function GreeceMap({
       .attr('fill', d => getFill(municipalityCode(d)))
       .attr('stroke', STROKE)
       .attr('stroke-width', STROKE_W)
-  }, [choroplethData, geojson])
+  }, [choroplethData, geojson, getFill])
 
   // Update fill when URL selection changes
   useEffect(() => {
@@ -324,7 +327,7 @@ export function GreeceMap({
       .attr('fill', d => getFill(municipalityCode(d)))
       .attr('stroke', STROKE)
       .attr('stroke-width', STROKE_W)
-  }, [geojson, selectedMunicipalityIds])
+  }, [geojson, getFill, selectedMunicipalityIds])
 
 
   return (

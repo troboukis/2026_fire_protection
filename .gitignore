@@ -36,6 +36,7 @@ app/.env.production.local
 fire-protection.vpp*
 data/raw_items_backup.json
 backupDB/
+antinero_west_attica/
 
 # Mapping review artifacts (local/manual workflow)
 AGENTS.md

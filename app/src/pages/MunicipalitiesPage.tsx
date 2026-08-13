@@ -8,6 +8,7 @@ import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from '../componen
 import FeaturedRecordsSection, { type BeneficiaryInsightRow, type FeaturedRecordContract } from '../components/FeaturedRecordsSection'
 import LatestContractCard, { type LatestContractCardView } from '../components/LatestContractCard'
 import MapTilerLogo from '../components/MapTilerLogo'
+import MapLegendToggle from '../components/MapLegendToggle'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
 import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
@@ -95,7 +96,8 @@ type CurrentFireRow = {
 
 type CopernicusRow = {
   firedate: string | null
-  area_ha: number | string | null
+  total_area_ha: number | string | null
+  overlap_area_ha: number | string | null
   centroid: { coordinates?: [number, number] } | string | null
   shape: GeoJSON.Geometry | string | null
 }
@@ -905,7 +907,12 @@ export default function MunicipalitiesPage() {
   const [cityPoints, setCityPoints] = useState<CityPoint[]>([])
   const [cityPointsLoading, setCityPointsLoading] = useState(true)
   const [selectedFireYear, setSelectedFireYear] = useState<number>(currentYear)
-  const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
+  const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('shapes')
+  const [showCityPoints, setShowCityPoints] = useState(true)
+  const [showWorkPoints, setShowWorkPoints] = useState(true)
+  const [showFirePoints, setShowFirePoints] = useState(true)
+  const [showActiveFirePoints, setShowActiveFirePoints] = useState(true)
+  const [showFirmsPoints, setShowFirmsPoints] = useState(true)
   const [municipalityGeojson, setMunicipalityGeojson] = useState<GeoData | null>(null)
   const [municipalityGeojsonLoading, setMunicipalityGeojsonLoading] = useState(true)
   const normalizedSearch = useMemo(() => normalizeMunicipalitySearch(search), [search])
@@ -1513,12 +1520,12 @@ export default function MunicipalitiesPage() {
   useEffect(() => {
     setIsFireYearMenuOpen(false)
     setPointTooltip(null)
-    setFireViewMode('points')
+    setFireViewMode('shapes')
   }, [selectedMunicipalityKey])
 
   useEffect(() => {
     setPointTooltip(null)
-    setFireViewMode('points')
+    setFireViewMode('shapes')
   }, [selectedFireYear])
 
   const fireYearOptions = useMemo(() => {
@@ -1613,7 +1620,7 @@ export default function MunicipalitiesPage() {
       const [x, y] = projected
       if (!Number.isFinite(x) || !Number.isFinite(y)) return []
 
-      const areaHa = Math.max(0, toNumber(row.area_ha) ?? 0)
+      const areaHa = Math.max(0, toNumber(row.overlap_area_ha) ?? 0)
       const radius = Math.max(3, Math.min(14, 3.5 + Math.sqrt(areaHa) * 0.8))
 
       return [{
@@ -1654,7 +1661,7 @@ export default function MunicipalitiesPage() {
         d,
         x: centroid[0],
         y: centroid[1],
-        areaHa: Math.max(0, toNumber(row.area_ha) ?? 0),
+        areaHa: Math.max(0, toNumber(row.overlap_area_ha) ?? 0),
         date: cleanText(row.firedate),
         year: extractYear(row.firedate),
       }]
@@ -1851,7 +1858,7 @@ export default function MunicipalitiesPage() {
       ?? cleanText(selectedMunicipalityKey)
       ?? '—'
 
-    for (const city of selectedMunicipalityCityPoints) {
+    for (const city of showCityPoints ? selectedMunicipalityCityPoints : []) {
       points.push({
         id: city.key,
         x: city.x,
@@ -1865,7 +1872,7 @@ export default function MunicipalitiesPage() {
       })
     }
 
-    for (const work of municipalityWorkMarkers) {
+    for (const work of showWorkPoints ? municipalityWorkMarkers : []) {
       points.push({
         id: work.key,
         x: work.x,
@@ -1876,7 +1883,7 @@ export default function MunicipalitiesPage() {
       })
     }
 
-    for (const fire of forestFireMarkers) {
+    for (const fire of showFirePoints ? forestFireMarkers : []) {
       points.push({
         id: fire.key,
         x: fire.x,
@@ -1892,7 +1899,9 @@ export default function MunicipalitiesPage() {
       })
     }
 
-    const visibleCopernicusFires = fireViewMode === 'shapes' ? copernicusShapes : copernicusMarkers
+    const visibleCopernicusFires = showFirePoints
+      ? (fireViewMode === 'shapes' ? copernicusShapes : copernicusMarkers)
+      : []
     for (const fire of visibleCopernicusFires) {
       points.push({
         id: fire.key,
@@ -1903,12 +1912,12 @@ export default function MunicipalitiesPage() {
         items: [
           fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
           fire.year != null ? `Έτος: ${fire.year}` : null,
-          `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+          `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
         ],
       })
     }
 
-    for (const fire of activeCurrentFireMarkers) {
+    for (const fire of showActiveFirePoints ? activeCurrentFireMarkers : []) {
       points.push({
         id: fire.key,
         x: fire.x,
@@ -1925,7 +1934,7 @@ export default function MunicipalitiesPage() {
       })
     }
 
-    for (const detection of firmsDetectionMarkers) {
+    for (const detection of showFirmsPoints ? firmsDetectionMarkers : []) {
       points.push({
         id: detection.key,
         x: detection.x,
@@ -1954,6 +1963,11 @@ export default function MunicipalitiesPage() {
     profile,
     selectedMunicipalityCityPoints,
     selectedMunicipalityKey,
+    showActiveFirePoints,
+    showCityPoints,
+    showFirePoints,
+    showFirmsPoints,
+    showWorkPoints,
   ])
 
   const openMunicipality = (municipalityKey: string, replace = true) => {
@@ -2558,8 +2572,8 @@ export default function MunicipalitiesPage() {
           ),
           fetchAllPaginatedRows<CopernicusRow>(
             (from, to) => supabase
-              .from('copernicus')
-              .select('firedate, area_ha, centroid, shape')
+              .from('copernicus_municipality_fire')
+              .select('firedate, total_area_ha, overlap_area_ha, centroid, shape')
               .eq('municipality_key', selectedMunicipalityKey)
               .order('firedate', { ascending: true })
               .range(from, to),
@@ -3573,7 +3587,56 @@ export default function MunicipalitiesPage() {
                               ))}
                             </g>
                           )}
-	                          {selectedMunicipalityCityPoints.map((city) => (
+	                          {showFirePoints && fireViewMode === 'shapes' && copernicusShapes.map((fire) => (
+	                            <g key={fire.key}>
+	                              <path
+	                                d={fire.d}
+	                                fill="#ff3b30"
+	                                fillOpacity={0.8}
+	                                onMouseEnter={(event) => {
+	                                  if (isMobileMunicipalityMap) return
+	                                  updatePointTooltip(event, 'Copernicus / EFFIS', [
+	                                    fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+	                                    fire.year != null ? `Έτος: ${fire.year}` : null,
+	                                    `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                  ], {
+	                                    id: fire.key,
+	                                    fallback: { x: fire.x, y: fire.y },
+	                                  })
+	                                }}
+	                                onMouseMove={(event) => {
+	                                  if (isMobileMunicipalityMap) return
+	                                  updatePointTooltip(event, 'Copernicus / EFFIS', [
+	                                    fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+	                                    fire.year != null ? `Έτος: ${fire.year}` : null,
+	                                    `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                  ], {
+	                                    id: fire.key,
+	                                    fallback: { x: fire.x, y: fire.y },
+	                                  })
+	                                }}
+	                                onMouseLeave={() => {
+	                                  if (isMobileMunicipalityMap) return
+	                                  clearPointTooltip()
+	                                }}
+	                                onClick={(event) => {
+	                                  event.stopPropagation()
+	                                  togglePointTooltip(
+	                                    event,
+	                                    'Copernicus / EFFIS',
+	                                    [
+	                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
+	                                      fire.year != null ? `Έτος: ${fire.year}` : null,
+	                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                    ],
+	                                    fire.key,
+	                                    { x: fire.x, y: fire.y },
+	                                  )
+	                                }}
+	                              />
+	                            </g>
+	                          ))}
+	                          {showCityPoints && selectedMunicipalityCityPoints.map((city) => (
 	                            <g key={city.key}>
                               <circle
                                 className="municipality-profile-hero__point-hitbox"
@@ -3642,7 +3705,7 @@ export default function MunicipalitiesPage() {
                               </circle>
 	                            </g>
 	                          ))}
-                          {municipalityWorkMarkers.map((work) => (
+                          {showWorkPoints && municipalityWorkMarkers.map((work) => (
                             <g key={work.key}>
                               <circle
                                 className="municipality-profile-hero__point-hitbox"
@@ -3704,7 +3767,7 @@ export default function MunicipalitiesPage() {
                               </circle>
                             </g>
                           ))}
-                          {forestFireMarkers.map((fire) => (
+                          {showFirePoints && forestFireMarkers.map((fire) => (
                             <g key={fire.key}>
                               <circle
                                 className="municipality-profile-hero__point-hitbox"
@@ -3781,57 +3844,7 @@ export default function MunicipalitiesPage() {
                               </circle>
                             </g>
                           ))}
-                          {fireViewMode === 'shapes'
-                            ? copernicusShapes.map((fire) => (
-                              <g key={fire.key}>
-                                <path
-                                  d={fire.d}
-                                  fill="#ff3b30"
-                                  fillOpacity={0.8}
-                                  onMouseEnter={(event) => {
-                                    if (isMobileMunicipalityMap) return
-                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
-                                    ], {
-                                      id: fire.key,
-                                      fallback: { x: fire.x, y: fire.y },
-                                    })
-                                  }}
-                                  onMouseMove={(event) => {
-                                    if (isMobileMunicipalityMap) return
-                                    updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
-                                    ], {
-                                      id: fire.key,
-                                      fallback: { x: fire.x, y: fire.y },
-                                    })
-                                  }}
-                                  onMouseLeave={() => {
-                                    if (isMobileMunicipalityMap) return
-                                    clearPointTooltip()
-                                  }}
-                                  onClick={(event) => {
-                                    event.stopPropagation()
-                                    togglePointTooltip(
-                                      event,
-                                      'Copernicus / EFFIS',
-                                      [
-                                        fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                        fire.year != null ? `Έτος: ${fire.year}` : null,
-                                        `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
-                                      ],
-                                      fire.key,
-                                      { x: fire.x, y: fire.y },
-                                    )
-                                  }}
-                                />
-                              </g>
-                            ))
-                            : copernicusMarkers.map((fire) => (
+                          {showFirePoints && fireViewMode === 'points' && copernicusMarkers.map((fire) => (
                               <g key={fire.key}>
                                 <circle
                                   className="municipality-profile-hero__point-hitbox"
@@ -3844,7 +3857,7 @@ export default function MunicipalitiesPage() {
                                     updatePointTooltip(event, 'Copernicus / EFFIS', [
                                       fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
                                       fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
                                     ], {
                                       id: fire.key,
                                       fallback: { x: fire.x, y: fire.y },
@@ -3855,7 +3868,7 @@ export default function MunicipalitiesPage() {
                                     updatePointTooltip(event, 'Copernicus / EFFIS', [
                                       fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
                                       fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
                                     ], {
                                       id: fire.key,
                                       fallback: { x: fire.x, y: fire.y },
@@ -3873,7 +3886,7 @@ export default function MunicipalitiesPage() {
                                       [
                                         fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
                                         fire.year != null ? `Έτος: ${fire.year}` : null,
-                                        `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                        `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
                                       ],
                                       fire.key,
                                       { x: fire.x, y: fire.y },
@@ -3896,7 +3909,7 @@ export default function MunicipalitiesPage() {
                                     {[
                                       fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
                                       fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
                                     ]
                                       .filter(Boolean)
                                       .join(' • ')}
@@ -3905,7 +3918,7 @@ export default function MunicipalitiesPage() {
                               </g>
                             ))}
                           <g className="fire-firms__footprints">
-                            {firmsDetectionMarkers.map((detection) => (
+                            {showFirmsPoints && firmsDetectionMarkers.map((detection) => (
                               <rect
                                 key={detection.key}
                                 className="fire-firms__footprint"
@@ -3933,7 +3946,7 @@ export default function MunicipalitiesPage() {
                               />
                             ))}
                           </g>
-                          {activeCurrentFireMarkers.map((fire) => (
+                          {showActiveFirePoints && activeCurrentFireMarkers.map((fire) => (
                             <g key={fire.key}>
                               <circle
                                 className="municipality-profile-hero__point-hitbox"
@@ -4028,7 +4041,7 @@ export default function MunicipalitiesPage() {
                             </g>
                           ))}
                         </g>
-                        {selectedMunicipalityCityPoints.map((city) => {
+                        {showCityPoints && selectedMunicipalityCityPoints.map((city) => {
                           if (!city.labelled) return null
                           const labelPadding = isMobileMunicipalityMap ? 8 : 6
                           const nearRightEdge = city.x > selectedMunicipalityMap.frameWidth - 96
@@ -4095,7 +4108,28 @@ export default function MunicipalitiesPage() {
                       {municipalityMapLegendItems.length > 0 && (
                         <div className="municipality-profile-hero__map-legend" aria-label="Υπόμνημα σημείων χάρτη">
                           {municipalityMapLegendItems.map((item) => (
-                            <div key={item.key} className="municipality-profile-hero__map-legend-item">
+                            <MapLegendToggle
+                              key={item.key}
+                              className="municipality-profile-hero__map-legend-item"
+                              visible={item.key === 'city'
+                                ? showCityPoints
+                                : item.key === 'work'
+                                  ? showWorkPoints
+                                  : item.key === 'fire'
+                                    ? showFirePoints
+                                    : item.key === 'current-fire'
+                                      ? showActiveFirePoints
+                                      : showFirmsPoints}
+                              onToggle={() => {
+                                setPointTooltip(null)
+                                if (item.key === 'city') setShowCityPoints((visible) => !visible)
+                                else if (item.key === 'work') setShowWorkPoints((visible) => !visible)
+                                else if (item.key === 'fire') setShowFirePoints((visible) => !visible)
+                                else if (item.key === 'current-fire') setShowActiveFirePoints((visible) => !visible)
+                                else setShowFirmsPoints((visible) => !visible)
+                              }}
+                              label={item.label}
+                            >
                               {item.tone === 'current-fire' ? (
                                 <span className="fire-current__legend-icon" aria-hidden="true" />
                               ) : (
@@ -4105,7 +4139,7 @@ export default function MunicipalitiesPage() {
                                 />
                               )}
                               <strong>{item.label}</strong>
-                            </div>
+                            </MapLegendToggle>
                           ))}
                         </div>
                       )}

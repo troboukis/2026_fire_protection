@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ComponentTag from './ComponentTag'
 import type { ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
+import MapLegendToggle from './MapLegendToggle'
 import { loadMunicipalitiesGeojson } from '../lib/municipalitiesGeojson'
 import type { GeoData } from '../types'
 
@@ -60,6 +61,7 @@ function OrganizationActivityMap({
   organizationName: string
 }) {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
+  const [showWorkPoints, setShowWorkPoints] = useState(true)
 
   useEffect(() => {
     let cancelled = false
@@ -124,14 +126,20 @@ function OrganizationActivityMap({
           ))}
         </g>
         <g className="organization-map__points">
-          {mapData.points.map((point) => (
+          {showWorkPoints && mapData.points.map((point) => (
             <circle key={point.key} cx={point.x} cy={point.y} r={2.6} fill="#ff4d3d" stroke="#000000" />
           ))}
         </g>
       </svg>
       <div className="organization-map__legend">
-        <span className="organization-map__legend-dot" aria-hidden="true" />
-        <span>{`Εργασίες του ${organizationName} το ${yearLabel}`}</span>
+        <MapLegendToggle
+          visible={showWorkPoints}
+          onToggle={() => setShowWorkPoints((visible) => !visible)}
+          label={`Εργασίες του ${organizationName} το ${yearLabel}`}
+        >
+          <span className="organization-map__legend-dot" aria-hidden="true" />
+          <span>{`Εργασίες του ${organizationName} το ${yearLabel}`}</span>
+        </MapLegendToggle>
       </div>
     </div>
   )

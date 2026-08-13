@@ -11,6 +11,7 @@ import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import MapTilerLogo from './MapTilerLogo'
+import MapLegendToggle from './MapLegendToggle'
 
 type CopernicusFirePoint = {
   id: string
@@ -568,6 +569,9 @@ export default function SituationMap() {
   const [hasLoadedHistoricalFires, setHasLoadedHistoricalFires] = useState(false)
   const [historicalFiresLoading, setHistoricalFiresLoading] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [showCopernicusFires, setShowCopernicusFires] = useState(true)
+  const [showFirmsDetections, setShowFirmsDetections] = useState(true)
+  const [showActiveFires, setShowActiveFires] = useState(true)
   const [viewMode, setViewMode] = useState<'points' | 'shapes'>('points')
   const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, defaultStart))
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
@@ -987,7 +991,7 @@ export default function SituationMap() {
 
     const points: SituationTooltipPoint[] = []
 
-    for (const fire of activeFires) {
+    for (const fire of showActiveFires ? activeFires : []) {
       const marker = mapData.activeFirePoints.find((point) => point.id === fire.id)
       if (!marker) continue
       points.push({
@@ -1009,9 +1013,11 @@ export default function SituationMap() {
       })
     }
 
-    const copernicusPoints = viewMode === 'points'
-      ? mapData.points.flatMap((point) => point.items.map((item) => ({ ...item, x: point.x, y: point.y })))
-      : mapData.shapes
+    const copernicusPoints = showCopernicusFires
+      ? (viewMode === 'points'
+          ? mapData.points.flatMap((point) => point.items.map((item) => ({ ...item, x: point.x, y: point.y })))
+          : mapData.shapes)
+      : []
 
     for (const fire of copernicusPoints) {
       points.push({
@@ -1029,7 +1035,7 @@ export default function SituationMap() {
       })
     }
 
-    for (const detection of mapData.firmsFootprints) {
+    for (const detection of showFirmsDetections ? mapData.firmsFootprints : []) {
       points.push({
         id: `firms-${detection.id}`,
         x: detection.x,
@@ -1047,7 +1053,7 @@ export default function SituationMap() {
     }
 
     return points
-  }, [activeFires, mapData, viewMode])
+  }, [activeFires, mapData, showActiveFires, showCopernicusFires, showFirmsDetections, viewMode])
 
   const openMunicipalityProfile = useCallback((municipalityKey: string | null) => {
     if (!municipalityKey) return false
@@ -1197,7 +1203,7 @@ export default function SituationMap() {
         .append('g')
         .attr('class', 'fire-current__points')
         .selectAll<SVGGElement, (typeof mapData.activeFirePoints)[number]>('g')
-        .data(mapData.activeFirePoints)
+        .data(showActiveFires ? mapData.activeFirePoints : [])
         .join('g')
         .classed('is-highlighted', (fire) => fire.id === highlightedActiveFireId)
         .classed('is-dimmed', (fire) => highlightedActiveFireId != null && fire.id !== highlightedActiveFireId)
@@ -1315,7 +1321,7 @@ export default function SituationMap() {
       .append('g')
       .attr('class', 'fire-firms__footprints')
       .selectAll<SVGRectElement, (typeof mapData.firmsFootprints)[number]>('rect')
-      .data(mapData.firmsFootprints)
+      .data(showFirmsDetections ? mapData.firmsFootprints : [])
       .join('rect')
       .attr('class', 'fire-firms__footprint')
       .attr('x', (footprint) => footprint.x - footprint.width / 2)
@@ -1376,7 +1382,7 @@ export default function SituationMap() {
         .append('g')
         .attr('class', 'fire-copernicus__points')
         .selectAll<SVGGElement, (typeof mapData.points)[number]>('g')
-        .data(mapData.points)
+        .data(showCopernicusFires ? mapData.points : [])
         .join('g')
 
       const pointMarkers = pointGroups
@@ -1435,7 +1441,7 @@ export default function SituationMap() {
         .attr('class', 'fire-copernicus__shapes')
         .attr('transform', mapData.transform)
         .selectAll<SVGPathElement, (typeof mapData.shapes)[number]>('path')
-        .data(mapData.shapes)
+        .data(showCopernicusFires ? mapData.shapes : [])
         .join('path')
         .attr('d', (fire) => fire.d)
         .on('mouseenter', (event: MouseEvent, fire) => {
@@ -1497,7 +1503,7 @@ export default function SituationMap() {
     }
 
     drawActiveFires()
-  }, [highlightedActiveFireId, isTouchInput, mapClipPathId, mapData, openMunicipalityProfile, pointerInMap, terrainFailed, viewMode, visibleSituationTooltipPoints])
+  }, [highlightedActiveFireId, isTouchInput, mapClipPathId, mapData, openMunicipalityProfile, pointerInMap, showActiveFires, showCopernicusFires, showFirmsDetections, terrainFailed, viewMode, visibleSituationTooltipPoints])
 
   if (loading) {
     return (
@@ -1801,18 +1807,45 @@ export default function SituationMap() {
         )}
         {mapData && (
           <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus EFFIS">
-            <span className="fire-copernicus__legend-row">
+            <MapLegendToggle
+              className="fire-copernicus__legend-row"
+              visible={showCopernicusFires}
+              onToggle={() => {
+                setHoveredFire(null)
+                setHoveredStackedTooltip(null)
+                setShowCopernicusFires((visible) => !visible)
+              }}
+              label="Πυρκαγιές Copernicus EFFIS"
+            >
               <span className="fire-copernicus__legend-dot" aria-hidden="true" />
               <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus EFFIS' : 'Καμένη έκταση Copernicus EFFIS'}</span>
-            </span>
-            <span className="fire-copernicus__legend-row">
+            </MapLegendToggle>
+            <MapLegendToggle
+              className="fire-copernicus__legend-row"
+              visible={showFirmsDetections}
+              onToggle={() => {
+                setHoveredFirmsDetection(null)
+                setHoveredStackedTooltip(null)
+                setShowFirmsDetections((visible) => !visible)
+              }}
+              label="Ενεργή θερμική ανωμαλία NASA FIRMS"
+            >
               <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
               <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
-            </span>
-            <span className="fire-copernicus__legend-row">
+            </MapLegendToggle>
+            <MapLegendToggle
+              className="fire-copernicus__legend-row"
+              visible={showActiveFires}
+              onToggle={() => {
+                setHoveredActiveFire(null)
+                setHoveredStackedTooltip(null)
+                setShowActiveFires((visible) => !visible)
+              }}
+              label="Ενεργή πυρκαγιά"
+            >
               <span className="fire-current__legend-icon" aria-hidden="true" />
               <span>Ενεργή πυρκαγιά (θέση κατά προσέγγιση)</span>
-            </span>
+            </MapLegendToggle>
           </div>
         )}
       </div>

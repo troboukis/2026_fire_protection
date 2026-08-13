@@ -292,6 +292,7 @@ def upsert_copernicus(enriched, db_path: str | None) -> int:
 
     upserted = 0
     for _, row in enriched.iterrows():
+        copernicus_id = int(row["id"])
         cur.execute(
             """
             INSERT INTO public.copernicus (
@@ -357,7 +358,7 @@ def upsert_copernicus(enriched, db_path: str | None) -> int:
               updated_at = NOW()
             """,
             (
-                int(row["id"]),
+                copernicus_id,
                 Json(_parse_json_value(row.get("centroid"))) if row.get("centroid") else None,
                 _parse_bbox(row.get("bbox")),
                 Json(_parse_json_value(row.get("shape"))) if row.get("shape") else None,
@@ -386,6 +387,40 @@ def upsert_copernicus(enriched, db_path: str | None) -> int:
                 _parse_decimal(row.get("municipality_overlap_ratio")),
             ),
         )
+        cur.execute(
+            "DELETE FROM public.copernicus_municipality WHERE copernicus_id = %s",
+            (copernicus_id,),
+        )
+        municipality_matches = row.get("municipality_matches")
+        if isinstance(municipality_matches, list):
+            cur.executemany(
+                """
+                INSERT INTO public.copernicus_municipality (
+                  copernicus_id,
+                  municipality_key,
+                  match_method,
+                  overlap_ratio,
+                  overlap_area_ha
+                )
+                VALUES (%s, %s, %s, %s, %s)
+                ON CONFLICT (copernicus_id, municipality_key)
+                DO UPDATE SET
+                  match_method = EXCLUDED.match_method,
+                  overlap_ratio = EXCLUDED.overlap_ratio,
+                  overlap_area_ha = EXCLUDED.overlap_area_ha,
+                  updated_at = NOW()
+                """,
+                [
+                    (
+                        copernicus_id,
+                        match["municipality_key"],
+                        match["match_method"],
+                        match["overlap_ratio"],
+                        match["overlap_area_ha"],
+                    )
+                    for match in municipality_matches
+                ],
+            )
         upserted += 1
 
     conn.commit()
