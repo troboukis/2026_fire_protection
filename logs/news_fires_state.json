@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564400309/mi-kratika-aei-to-ste-akyrose-treis-adeies-leitoyrgias/",
-      "title": "Μη κρατικά ΑΕΙ: Το ΣτΕ ακύρωσε τρεις άδειες λειτουργίας",
-      "normalized_title": "ΜΗ ΚΡΑΤΙΚΑ ΑΕΙ: ΤΟ ΣΤΕ ΑΚΥΡΩΣΕ ΤΡΕΙΣ ΑΔΕΙΕΣ ΛΕΙΤΟΥΡΓΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564400129/toyrkia-pakistan-kai-s-aravia-tha-anaptyxoyn-michanismoys-syntonismoy-ti-leei-i-agkyra/",
+      "title": "Στρατιωτικοί και πολιτικοί μηχανισμοί στη «Συμφωνία της Μέκκας»",
+      "normalized_title": "ΣΤΡΑΤΙΩΤΙΚΟΙ ΚΑΙ ΠΟΛΙΤΙΚΟΙ ΜΗΧΑΝΙΣΜΟΙ ΣΤΗ «ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564400309/mi-kratika-aei-to-ste-akyrose-treis-adeies-leitoyrgias/",
-        "https://www.kathimerini.gr/world/564400297/min-xypnate-mia-arkoyda-poy-koimatai-ypsilo-prostimo-gia-mia-ageneia-stin-arktiki/",
-        "https://www.kathimerini.gr/opinion/sketches/564400189/skitso-toy-ilia-makri-13-08-26/"
+        "https://www.kathimerini.gr/world/564400129/toyrkia-pakistan-kai-s-aravia-tha-anaptyxoyn-michanismoys-syntonismoy-ti-leei-i-agkyra/"
       ],
-      "seen_at_utc": "2026-08-13T11:17:24.753655+00:00"
+      "seen_at_utc": "2026-08-13T11:30:03.752775+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,36 +1268,24 @@
       "seen_at_utc": "2026-08-13T11:17:24.753744+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1447184/elikodromio-athinon-akropolis/",
-      "title": "Ελικοδρόμιο Αθηνών «Ακρόπολις»",
-      "normalized_title": "ΕΛΙΚΟΔΡΟΜΙΟ ΑΘΗΝΩΝ «ΑΚΡΟΠΟΛΙΣ»",
+      "url": "https://www.efsyn.gr/tehnes/1447285/istoriko-reunion-33-hronia-meta-deep-purple-kai-ritchie-blackmore-xana-sti-skini-gia-to-smoke-on-the-water-vinteo/",
+      "title": "Ιστορικό reunion 33 χρόνια μετά: Deep Purple και Ritchie Blackmore μαζί στη σκηνή για το «Smoke on The Water» [βίντεο]",
+      "normalized_title": "ΙΣΤΟΡΙΚΟ REUNION 33 ΧΡΟΝΙΑ ΜΕΤΑ: DEEP PURPLE ΚΑΙ RITCHIE BLACKMORE ΜΑΖΙ ΣΤΗ ΣΚΗΝΗ ΓΙΑ ΤΟ «SMOKE ON THE WATER» [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1447184/elikodromio-athinon-akropolis/",
-        "https://www.efsyn.gr/stiles/1447177/mpros-gkremos-kai-piso-rema/",
-        "https://www.efsyn.gr/stiles/1447159/eggenis-antifasi/",
-        "https://www.efsyn.gr/stiles/1447152/me-metro-ta-tha-kai-ta-prepei/",
-        "https://www.efsyn.gr/ellada/1447274/fotia-se-diamerisma-sti-thessaloniki-dyo-gynaikes-metaferthikan-sto-nosokomeio/",
-        "https://www.efsyn.gr/ellada/1447273/mykonos-synelifthisan-dyo-gynaikes-gia-klopi-rologion-axias-42-000-eyro/",
-        "https://www.efsyn.gr/athlitismos/1447251/paok-anatropi-me-konstantelia-taxideyei-gia-tis-vryxelles/",
-        "https://www.efsyn.gr/ellada/1447272/ste-akyrose-tis-adeies-leitoyrgias-parartimaton-ton-city-university-keele-university-kai-anatolia-college/",
-        "https://www.efsyn.gr/ellada/1447126/sto-mikroskopio-toy-symvoylioy-tis-eyropis-i-ellada-gia-pushbacks-pieseis-gia-efarmogi-ton-apofaseon/"
+        "https://www.efsyn.gr/tehnes/1447285/istoriko-reunion-33-hronia-meta-deep-purple-kai-ritchie-blackmore-xana-sti-skini-gia-to-smoke-on-the-water-vinteo/"
       ],
-      "seen_at_utc": "2026-08-13T11:17:24.753719+00:00"
+      "seen_at_utc": "2026-08-13T11:30:03.752882+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/politics/epikairotita/to-proto-spot-o-syriza-einai-edo-gia-tin-aristera-kai-tous-anthropous-epistrefoume-proxorame/",
-      "title": "Το πρώτο σποτ: Ο ΣΥΡΙΖΑ είναι εδώ για την Αριστερά και τους ανθρώπους – Επιστρέφουμε, προχωράμε",
-      "normalized_title": "ΤΟ ΠΡΩΤΟ ΣΠΟΤ: Ο ΣΥΡΙΖΑ ΕΙΝΑΙ ΕΔΩ ΓΙΑ ΤΗΝ ΑΡΙΣΤΕΡΑ ΚΑΙ ΤΟΥΣ ΑΝΘΡΩΠΟΥΣ – ΕΠΙΣΤΡΕΦΟΥΜΕ, ΠΡΟΧΩΡΑΜΕ",
+      "url": "https://www.in.gr/2026/08/13/greece/kairos-enisxyetai-apo-simera-pempti-to-meltemi-ripes-ano-ton-100-xlm-ora-kata-topous/",
+      "title": "Ενισχύεται από σήμερα Πέμπτη το μελτέμι - Ριπές άνω των 100 χλμ/ώρα κατά τόπους",
+      "normalized_title": "ΕΝΙΣΧΥΕΤΑΙ ΑΠΟ ΣΗΜΕΡΑ ΠΕΜΠΤΗ ΤΟ ΜΕΛΤΕΜΙ - ΡΙΠΕΣ ΑΝΩ ΤΩΝ 100 ΧΛΜ/ΩΡΑ ΚΑΤΑ ΤΟΠΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/politics/epikairotita/to-proto-spot-o-syriza-einai-edo-gia-tin-aristera-kai-tous-anthropous-epistrefoume-proxorame/",
-        "https://www.in.gr/2026/08/13/greece/kriti-kinitopoiithikan-adika-isxyres-dynameis-tis-pyrosvestikis-gia-fotia-se-ksenodoxeio-ereynes-gia-ton-farser/",
-        "https://www.in.gr/2026/08/13/world/tourkia-dimiourgountai-politikoi-kai-stratiotikoi-mixanismoi-sto-plaisio-tis-symfonias-tis-mekkas/",
-        "https://www.in.gr/2026/08/13/go-fun/fizz/eurovision-2027-pou-kai-poies-imerominies-tha-dieksaxthi-o-71os-diagonismos-tragoudiou/",
-        "https://www.in.gr/2026/08/13/world/tourkia-nea-vinteo-apo-ti-syntrivi-tou-f-16-sti-gialova/",
-        "https://www.in.gr/2026/08/13/politics/politiki-grammateia/pasok-kata-ypourgeiou-tourismou-proxeirotita-kai-paraplanisi/"
+        "https://www.in.gr/2026/08/13/greece/kairos-enisxyetai-apo-simera-pempti-to-meltemi-ripes-ano-ton-100-xlm-ora-kata-topous/",
+        "https://www.in.gr/2026/08/13/sports/basketball/to-finale-enos-spoudaiou-o-rasel-gouestmprouk-anakoinose-to-telos-tis-karieras-tou-vid/"
       ],
-      "seen_at_utc": "2026-08-13T11:17:24.753702+00:00"
+      "seen_at_utc": "2026-08-13T11:30:03.752826+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T11:17:24.753819+00:00"
+  "updated_at_utc": "2026-08-13T11:30:03.752955+00:00"
 }
