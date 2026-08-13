@@ -1,15 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564399499/monimopoieitai-o-prosopikos-voithos-gia-atoma-me-anapiria/",
-      "title": "Μονιμοποιείται ο «προσωπικός βοηθός για Aτομα με Αναπηρία»",
-      "normalized_title": "ΜΟΝΙΜΟΠΟΙΕΙΤΑΙ Ο «ΠΡΟΣΩΠΙΚΟΣ ΒΟΗΘΟΣ ΓΙΑ AΤΟΜΑ ΜΕ ΑΝΑΠΗΡΙΑ»",
+      "url": "https://www.kathimerini.gr/politics/564399133/entos-kai-ektos-me-ritoriki-2015/",
+      "title": "Εντός και Εκτός: Με ρητορική 2015",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΜΕ ΡΗΤΟΡΙΚΗ 2015",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564399499/monimopoieitai-o-prosopikos-voithos-gia-atoma-me-anapiria/",
-        "https://www.kathimerini.gr/world/564399631/to-steno-toy-ormoyz-paramenei-apokleismeno-apanta-to-iran-stontramp/",
-        "https://www.kathimerini.gr/society/564399610/akraios-kidynos-pyrkagias-simera-se-synagermo-i-chora-oi-perioches-poy-vriskontai-sto-kokkino/"
+        "https://www.kathimerini.gr/politics/564399133/entos-kai-ektos-me-ritoriki-2015/",
+        "https://www.kathimerini.gr/world/564399709/krimaia-choris-reyma-i-sevastoypoli-epeita-apo-oykraniki-epidromi/",
+        "https://www.kathimerini.gr/world/564399691/syntrivi-stratiotikoy-elikopteroy-ton-ipa-sto-texas-nekroi-oi-dyo-cheiristes/",
+        "https://www.kathimerini.gr/economy/international/564399517/odikos-chartis-apo-to-eurogroup-gia-tin-trapeziki-enosi/",
+        "https://www.kathimerini.gr/world/564399679/seismos-stin-kolomvia-stoys-265-oi-nekroi-ekatontades-agnooymenoi/",
+        "https://www.kathimerini.gr/economy/564399514/oi-fysikes-katastrofes-apoteloyn-pleon-sovaro-dimosionomiko-kindyno/",
+        "https://www.kathimerini.gr/society/564399643/dekapentaygoystos-feygei-to-teleytaio-kyma-adeioychon-ayximeni-i-kinisi-sta-limania/",
+        "https://www.kathimerini.gr/istoria/564398929/san-simera-13-aygoystoy-1905-dimopsifisma-sti-norvigia-gia-ti-dialysi-tis-enosis-me-ti-soyidia/"
       ],
-      "seen_at_utc": "2026-08-13T04:30:22.335210+00:00"
+      "seen_at_utc": "2026-08-13T04:51:38.636067+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1275,26 @@
       "seen_at_utc": "2026-08-13T04:17:45.712512+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1446960/skliri-apantisi-iran-se-tramp-ta-stena-toy-ormoyz-paramenoyn-apokleismena/",
-      "title": "Σκληρή απάντηση Ιράν σε Τραμπ: «Τα στενά του Ορμούζ παραμένουν αποκλεισμένα»",
-      "normalized_title": "ΣΚΛΗΡΗ ΑΠΑΝΤΗΣΗ ΙΡΑΝ ΣΕ ΤΡΑΜΠ: «ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ ΠΑΡΑΜΕΝΟΥΝ ΑΠΟΚΛΕΙΣΜΕΝΑ»",
+      "url": "https://www.efsyn.gr/ellada/1446974/thanatos-17hronoy-stin-kimolo-me-to-poy-mpike-mesa-kai-epiase-to-tilefono-toy-mpanioy-teleiose-leei-syggenis/",
+      "title": "Θάνατος 17χρονου στην Κίμωλο: «Με το που έπιασε το τηλέφωνο του μπάνιου τελείωσε», λέει συγγενής",
+      "normalized_title": "ΘΑΝΑΤΟΣ 17ΧΡΟΝΟΥ ΣΤΗΝ ΚΙΜΩΛΟ: «ΜΕ ΤΟ ΠΟΥ ΕΠΙΑΣΕ ΤΟ ΤΗΛΕΦΩΝΟ ΤΟΥ ΜΠΑΝΙΟΥ ΤΕΛΕΙΩΣΕ», ΛΕΕΙ ΣΥΓΓΕΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1446960/skliri-apantisi-iran-se-tramp-ta-stena-toy-ormoyz-paramenoyn-apokleismena/"
+        "https://www.efsyn.gr/ellada/1446974/thanatos-17hronoy-stin-kimolo-me-to-poy-mpike-mesa-kai-epiase-to-tilefono-toy-mpanioy-teleiose-leei-syggenis/",
+        "https://www.efsyn.gr/protoselida/oi-dikes-poy-tromazoyn-to-maximoy/"
       ],
-      "seen_at_utc": "2026-08-13T04:30:22.335307+00:00"
+      "seen_at_utc": "2026-08-13T04:51:38.636137+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/daneia-se-elvetiko-fragko-skepseis-gia-paratasi-tis-rythmisis/",
-      "title": "Στο τραπέζι το ενδεχόμενο παράτασης της ρύθμισης για τα δάνεια σε ελβετικό φράγκο",
-      "normalized_title": "ΣΤΟ ΤΡΑΠΕΖΙ ΤΟ ΕΝΔΕΧΟΜΕΝΟ ΠΑΡΑΤΑΣΗΣ ΤΗΣ ΡΥΘΜΙΣΗΣ ΓΙΑ ΤΑ ΔΑΝΕΙΑ ΣΕ ΕΛΒΕΤΙΚΟ ΦΡΑΓΚΟ",
+      "url": "https://www.in.gr/2026/08/13/greece/ta-erotimata-gia-ton-thanato-tou-17xronou-stin-kimolo-sto-mikroskopio-i-ilektrologiki-egkatastasi-tou-spitiou/",
+      "title": "Τα ερωτήματα για τον θάνατο του 17χρονου στην Κίμωλο – Στο μικροσκόπιο η ηλεκτρολογική εγκατάσταση του σπιτιού",
+      "normalized_title": "ΤΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ 17ΧΡΟΝΟΥ ΣΤΗΝ ΚΙΜΩΛΟ – ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ Η ΗΛΕΚΤΡΟΛΟΓΙΚΗ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ ΣΠΙΤΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/daneia-se-elvetiko-fragko-skepseis-gia-paratasi-tis-rythmisis/"
+        "https://www.in.gr/2026/08/13/greece/ta-erotimata-gia-ton-thanato-tou-17xronou-stin-kimolo-sto-mikroskopio-i-ilektrologiki-egkatastasi-tou-spitiou/",
+        "https://www.in.gr/2026/08/13/go-fun/social/arkas-i-kalimera-tis-pemptis-14/",
+        "https://www.in.gr/2026/08/13/plus/vita/pos-oi-diakopes-dokimazoun-ton-erota/"
       ],
-      "seen_at_utc": "2026-08-13T04:30:22.335268+00:00"
+      "seen_at_utc": "2026-08-13T04:51:38.636102+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T04:30:22.335379+00:00"
+  "updated_at_utc": "2026-08-13T04:51:38.636204+00:00"
 }
