@@ -1,13 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564392212/troades-me-stomfo-gia-to-aytonoito/",
-      "title": "Τρωάδες με στόμφο για το αυτονόητο",
-      "normalized_title": "ΤΡΩΑΔΕΣ ΜΕ ΣΤΟΜΦΟ ΓΙΑ ΤΟ ΑΥΤΟΝΟΗΤΟ",
+      "url": "https://www.kathimerini.gr/politics/564399109/metopo-diarkeias-apo-to-pasok-kata-toy-tsipra/",
+      "title": "Μέτωπο διαρκείας από το ΠΑΣΟΚ κατά του Τσίπρα",
+      "normalized_title": "ΜΕΤΩΠΟ ΔΙΑΡΚΕΙΑΣ ΑΠΟ ΤΟ ΠΑΣΟΚ ΚΑΤΑ ΤΟΥ ΤΣΙΠΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564392212/troades-me-stomfo-gia-to-aytonoito/"
+        "https://www.kathimerini.gr/politics/564399109/metopo-diarkeias-apo-to-pasok-kata-toy-tsipra/",
+        "https://www.kathimerini.gr/world/564399229/oliki-ekleipsi-ilioy-otan-i-imera-egine-gia-ligo-nychta/",
+        "https://www.kathimerini.gr/visual/infographics/564399511/fthinotero-reyma-eferan-ta-meltemia/",
+        "https://www.kathimerini.gr/world/564399214/vretania-o-komis-kados-antipalos-toy-faratz/",
+        "https://www.kathimerini.gr/world/564399190/paremvasi-vans-ston-zelenski-gia-tis-vomves-sto-novorosisk/",
+        "https://www.kathimerini.gr/world/564399184/sklirainoyn-ti-stasi-toys-techerani-kai-oyasigkton/"
       ],
-      "seen_at_utc": "2026-08-12T21:17:10.888577+00:00"
+      "seen_at_utc": "2026-08-13T04:17:45.712330+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1264,60 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864172/kakourgimatiki-dioxi-ston-59hrono-gia-exi-foties-sti-sindo-tis-evaza-gia-na-xedino-apo-ti-douleia/?utm_source=rss",
-      "title": "Κακουργηματική δίωξη στον 59χρονο για έξι φωτιές στη Σίνδο: «Τις έβαζα για να ξεδίνω από τη δουλειά»",
-      "normalized_title": "ΚΑΚΟΥΡΓΗΜΑΤΙΚΗ ΔΙΩΞΗ ΣΤΟΝ 59ΧΡΟΝΟ ΓΙΑ ΕΞΙ ΦΩΤΙΕΣ ΣΤΗ ΣΙΝΔΟ: «ΤΙΣ ΕΒΑΖΑ ΓΙΑ ΝΑ ΞΕΔΙΝΩ ΑΠΟ ΤΗ ΔΟΥΛΕΙΑ»",
+      "url": "https://www.protothema.gr/greece/article/1864188/i-pio-epikinduni-imera-tou-kalokairiou-gia-foties-sto-kokkino-gia-proti-fora-attiki-kai-alles-periohes/?utm_source=rss",
+      "title": "Συναγερμός για ακραίο κίνδυνο πυρκαγιάς σήμερα: Στο κόκκινο η Αττική και άλλες πέντε περιοχές, δείτε χάρτη",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΑΚΡΑΙΟ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ: ΣΤΟ ΚΟΚΚΙΝΟ Η ΑΤΤΙΚΗ ΚΑΙ ΑΛΛΕΣ ΠΕΝΤΕ ΠΕΡΙΟΧΕΣ, ΔΕΙΤΕ ΧΑΡΤΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864172/kakourgimatiki-dioxi-ston-59hrono-gia-exi-foties-sti-sindo-tis-evaza-gia-na-xedino-apo-ti-douleia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864188/i-pio-epikinduni-imera-tou-kalokairiou-gia-foties-sto-kokkino-gia-proti-fora-attiki-kai-alles-periohes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-12T21:30:08.464567+00:00"
+      "seen_at_utc": "2026-08-13T04:17:45.712512+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1446931/kyriarhos-tis-eyropis-i-pari-katektise-kai-to-super-cup-kontra-stin-aston-vila/",
-      "title": "Κυρίαρχος της Ευρώπης η Παρί: Κατέκτησε και το Super Cup κόντρα στην Άστον Βίλα",
-      "normalized_title": "ΚΥΡΙΑΡΧΟΣ ΤΗΣ ΕΥΡΩΠΗΣ Η ΠΑΡΙ: ΚΑΤΕΚΤΗΣΕ ΚΑΙ ΤΟ SUPER CUP ΚΟΝΤΡΑ ΣΤΗΝ ΑΣΤΟΝ ΒΙΛΑ",
+      "url": "https://www.efsyn.gr/ellada/1446939/thessaloniki-synelifthi-o-59hronos-neronas-gia-seira-emprismon-epine-kai-meta-evaze-foties/",
+      "title": "Θεσσαλονίκη: Συνελήφθη ο 59χρονος «Νέρωνας» για σειρά εμπρησμών – Επινε και μετά έβαζε φωτιές",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ Ο 59ΧΡΟΝΟΣ «ΝΕΡΩΝΑΣ» ΓΙΑ ΣΕΙΡΑ ΕΜΠΡΗΣΜΩΝ – ΕΠΙΝΕ ΚΑΙ ΜΕΤΑ ΕΒΑΖΕ ΦΩΤΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1446931/kyriarhos-tis-eyropis-i-pari-katektise-kai-to-super-cup-kontra-stin-aston-vila/",
-        "https://www.efsyn.gr/athlitismos/1446926/eyropaiko-protathlima-stivoy-o-44hronos-tsiamis-prokrithike-ston-pempto-eyropaiko-teliko-tis-karieras-toy-vinteo/"
+        "https://www.efsyn.gr/ellada/1446939/thessaloniki-synelifthi-o-59hronos-neronas-gia-seira-emprismon-epine-kai-meta-evaze-foties/",
+        "https://www.efsyn.gr/kosmos/1446936/nea-proeidopoiisi-poytin-sti-dysi-tha-apantisoyme-analogika-an-katashethoyn-rosika-emporika-ploia/",
+        "https://www.efsyn.gr/ellada/1446947/kairos-me-ishyroys-anemoys-i-exodos-ton-ekdromeon-eos-37c-i-thermokrasia-vrohes-kai-kataigides-sta-voreia/",
+        "https://www.efsyn.gr/ellada/1446945/eortologio-poioi-giortazoyn-simera-13-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-12T21:17:10.888675+00:00"
+      "seen_at_utc": "2026-08-13T04:17:45.712461+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/plus/medianews/sta-nea-tis-pemptis-xoris-xrei-kai-foro/",
-      "title": "Στα «ΝΕΑ» της Πέμπτης: Χωρίς χρέη και φόρο",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΠΕΜΠΤΗΣ: ΧΩΡΙΣ ΧΡΕΗ ΚΑΙ ΦΟΡΟ",
+      "url": "https://www.in.gr/2026/08/13/life/geysi/dyo-syntages-gia-cheesecake/",
+      "title": "Δύο συνταγές για cheesecake",
+      "normalized_title": "ΔΥΟ ΣΥΝΤΑΓΕΣ ΓΙΑ CHEESECAKE",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/plus/medianews/sta-nea-tis-pemptis-xoris-xrei-kai-foro/"
+        "https://www.in.gr/2026/08/13/life/geysi/dyo-syntages-gia-cheesecake/",
+        "https://www.in.gr/2026/08/13/greece/to-steno-tou-ormouz-paramenei-apokleismeno-apanta-to-iran-ston-tramp/",
+        "https://www.in.gr/2026/08/13/plus/vita/ti-ora-tros-vradino/",
+        "https://www.in.gr/2026/08/13/greece/kairos-voriades-eos-8-mpofor-kai-mikri-ptosi-tis-thermokrasias-pou-tha-exei-vroxes-kai-kataigides/",
+        "https://www.in.gr/2026/08/13/go-fun/style/sanel-skiapareli-dyo-gynaikes-dyo-kosmoi-mia-thryliki-antipalotita/",
+        "https://www.in.gr/2026/08/13/plus/vita/zesti-stous-posous-vathmous-kaigetai-i-diathesi-mas/",
+        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/akinita-oi-foroi-pou-pagonoun-oi-anatropes-pou-erxontai/",
+        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/syntaksiouxoi-pos-na-diekdikisete-ayksiseis-anadromika/",
+        "https://www.in.gr/2026/08/13/world/tourismos-os-anagki-plasarontai-ta-makrina-taksidia-stis-ipa-psila-stis-protimiseis-i-eyropi-i-eikona-stin-ellada/",
+        "https://www.in.gr/2026/08/13/greece/voutia-tis-thermokrasias-ton-dekapentaygousto/",
+        "https://www.in.gr/2026/08/13/world/ta-29-xiliometra-pou-kratoun-anammeno-to-maroko/",
+        "https://www.in.gr/2026/08/13/world/i-kolomvia-exei-dyo-prosopa-o-megalos-seismos-ta-efere-sto-fos-apokalyptontas-adynamies-tou-neou-proedrou/",
+        "https://www.in.gr/2026/08/13/world/notia-afriki-treis-dekaeties-meta-to-apartxaint-o-agrotikos-ploutos-paramenei-en-pollois-leykos/",
+        "https://www.in.gr/2026/08/13/life/culture-live/possession-to-rimeik-tis-tainias-tou-antrei-zoulafski-erxetai-stis-aithouses-to-epomeno-kalokairi/",
+        "https://www.in.gr/2026/08/13/world/pos-to-iran-eksoudeterose-ta-aeroplanofora-ton-ipa-rosiki-analysi/",
+        "https://www.in.gr/2026/08/13/world/oukrania-rosia-ekaterotheon-epitheseis-sti-sevastoupoli-kai-sto-limani-ismail/",
+        "https://www.in.gr/2026/08/13/politics/diplomatia/kypriako-edafos-gia-epanadiapragmateysi-vlepei-o-erxiourman/",
+        "https://www.in.gr/2026/08/13/world/iran-stin-oikonomiki-piesi-moiazei-na-rixnei-pleon-to-varos-o-tramp/",
+        "https://www.in.gr/2026/08/13/world/israil-asynithista-sklires-epikriseis-apo-ton-proin-presveyti-tis-germanias-sto-tel-aviv/",
+        "https://www.in.gr/2026/08/13/world/kolomvia-toulaxiston-265-oi-nekroi-apo-ta-74-rixter-kiryssetai-katastasi-oikonomikis-ektaktis-anagkis/",
+        "https://www.in.gr/2026/08/13/world/israil-o-stratos-tou-tha-parameinei-ston-livano-sti-syria-kai-sti-gaza-epanalamvanei-o-kats/",
+        "https://www.in.gr/2026/08/13/world/ld-kongko-elpides-gia-antistrofi-mesa-se-treis-mines-tis-ayksitikis-tasis-tou-empola/",
+        "https://www.in.gr/2026/08/13/world/o-livanos-katadikazei-tis-systimatikes-katastrofes-ston-noto-apo-to-israil/",
+        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/motor-oil-epistrefei-ston-msci-standard-greece/",
+        "https://www.in.gr/2026/08/13/world/dytiki-oxthi-spitia-palaistinion-poliorkountai-apo-israilinous-epoikous-o-stratos-den-tous-apetrepse/",
+        "https://www.in.gr/2026/08/13/world/teksas-dyo-nekroi-meta-apo-syntrivi-stratiotikou-elikopterou-apatsi/"
       ],
-      "seen_at_utc": "2026-08-12T22:51:25.181448+00:00"
+      "seen_at_utc": "2026-08-13T04:17:45.712399+00:00"
     }
   },
-  "updated_at_utc": "2026-08-12T22:51:25.181554+00:00"
+  "updated_at_utc": "2026-08-13T04:17:45.712623+00:00"
 }
