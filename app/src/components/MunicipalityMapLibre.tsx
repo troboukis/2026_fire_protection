@@ -361,6 +361,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       bounds: getGeometryBounds(props.feature.geometry),
       fitBoundsOptions: { padding: 0, maxZoom: 13 },
       attributionControl: { compact: true },
+      canvasContextAttributes: { contextType: 'webgl' },
     })
     mapRef.current = map
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
