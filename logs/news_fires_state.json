@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564399334/oi-nees-tainies-tis-evdomadas-apistia-kato-apo-ton-ilio-tis-taggeris/",
-      "title": "Οι νέες ταινίες της εβδομάδας: Απιστία κάτω από τον ήλιο της Ταγγέρης",
-      "normalized_title": "ΟΙ ΝΕΕΣ ΤΑΙΝΙΕΣ ΤΗΣ ΕΒΔΟΜΑΔΑΣ: ΑΠΙΣΤΙΑ ΚΑΤΩ ΑΠΟ ΤΟΝ ΗΛΙΟ ΤΗΣ ΤΑΓΓΕΡΗΣ",
+      "url": "https://www.kathimerini.gr/society/564399958/fotia-ston-kalamo-leykadas-sti-machi-enaeria-mesa/",
+      "title": "Φωτιά στον Κάλαμο Λευκάδας – Στη μάχη εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΑΛΑΜΟ ΛΕΥΚΑΔΑΣ – ΣΤΗ ΜΑΧΗ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564399334/oi-nees-tainies-tis-evdomadas-apistia-kato-apo-ton-ilio-tis-taggeris/",
-        "https://www.kathimerini.gr/world/564399931/chaos-sti-dytiki-ochthi-oikogeneies-palaistinion-paramenoyn-ypo-poliorkia-para-ti-nea-paremvasi-toy-stratoy/",
-        "https://www.kathimerini.gr/economy/international/564399586/epithesi-tis-oykranias-sti-rosiki-oikonomia/"
+        "https://www.kathimerini.gr/society/564399958/fotia-ston-kalamo-leykadas-sti-machi-enaeria-mesa/",
+        "https://www.kathimerini.gr/society/564399949/kairos-erchetai-thermos-septemvrios-ti-deichnoyn-400-senaria-gia-tin-ellada/"
       ],
-      "seen_at_utc": "2026-08-13T07:30:39.636717+00:00"
+      "seen_at_utc": "2026-08-13T07:51:40.832740+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,25 +1271,28 @@
       "seen_at_utc": "2026-08-13T07:30:39.636841+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447085/ekleisan-lykavittos-pedion-toy-areos-kai-lofoi-se-kokkino-synagermo-i-attiki-gia-pyrkagies/",
-      "title": "Έκλεισαν Λυκαβηττός, Πεδίον του Άρεως και λόφοι – Σε «κόκκινο» συναγερμό η Αττική για πυρκαγιές",
-      "normalized_title": "ΕΚΛΕΙΣΑΝ ΛΥΚΑΒΗΤΤΟΣ, ΠΕΔΙΟΝ ΤΟΥ ΑΡΕΩΣ ΚΑΙ ΛΟΦΟΙ – ΣΕ «ΚΟΚΚΙΝΟ» ΣΥΝΑΓΕΡΜΟ Η ΑΤΤΙΚΗ ΓΙΑ ΠΥΡΚΑΓΙΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1447088/ios-dytikoy-neiloy-se-ellada-kai-italia-i-megalyteri-exaplosi-oi-periohes-me-ta-perissotera-kroysmata/",
+      "title": "Ιός Δυτικού Νείλου: Σε Ελλάδα και Ιταλία η μεγαλύτερη εξάπλωση – Οι περιοχές με τα περισσότερα κρούσματα",
+      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΣΕ ΕΛΛΑΔΑ ΚΑΙ ΙΤΑΛΙΑ Η ΜΕΓΑΛΥΤΕΡΗ ΕΞΑΠΛΩΣΗ – ΟΙ ΠΕΡΙΟΧΕΣ ΜΕ ΤΑ ΠΕΡΙΣΣΟΤΕΡΑ ΚΡΟΥΣΜΑΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447085/ekleisan-lykavittos-pedion-toy-areos-kai-lofoi-se-kokkino-synagermo-i-attiki-gia-pyrkagies/",
-        "https://www.efsyn.gr/ellada/1447100/fotia-ston-kalamo-leykadas-epiheiroyn-pente-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1447076/nekros-astynomikos-ston-agio-dimitrio-na-matho-an-itan-monos-ta-anapantita-erotimata-tis-oikogeneias/"
+        "https://www.efsyn.gr/ellada/1447088/ios-dytikoy-neiloy-se-ellada-kai-italia-i-megalyteri-exaplosi-oi-periohes-me-ta-perissotera-kroysmata/",
+        "https://www.efsyn.gr/stiles/1447095/akrodexia-paranoia-me-toys-metanastes/"
       ],
-      "seen_at_utc": "2026-08-13T07:30:39.636805+00:00"
+      "seen_at_utc": "2026-08-13T07:51:40.832856+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/in-science/ai/h-google-pataei-gkazi-gia-kyriarxia-stin-ai/",
-      "title": "H Google πατάει γκάζι για κυριαρχία στην ΑΙ",
-      "normalized_title": "H GOOGLE ΠΑΤΑΕΙ ΓΚΑΖΙ ΓΙΑ ΚΥΡΙΑΡΧΙΑ ΣΤΗΝ ΑΙ",
+      "url": "https://www.in.gr/2026/08/13/economy/agro-in/akriveia-sta-trofima-pente-fores-pano-i-diafora-stis-times-apo-to-xorafi-sto-rafi-adianoito-ayto-pou-ginetai/",
+      "title": "Ακρίβεια στα τρόφιμα: Πέντε φορές πάνω η διαφορά στις τιμές από το χωράφι στο ράφι – «Αδιανόητο αυτό που γίνεται»",
+      "normalized_title": "ΑΚΡΙΒΕΙΑ ΣΤΑ ΤΡΟΦΙΜΑ: ΠΕΝΤΕ ΦΟΡΕΣ ΠΑΝΩ Η ΔΙΑΦΟΡΑ ΣΤΙΣ ΤΙΜΕΣ ΑΠΟ ΤΟ ΧΩΡΑΦΙ ΣΤΟ ΡΑΦΙ – «ΑΔΙΑΝΟΗΤΟ ΑΥΤΟ ΠΟΥ ΓΙΝΕΤΑΙ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/in-science/ai/h-google-pataei-gkazi-gia-kyriarxia-stin-ai/"
+        "https://www.in.gr/2026/08/13/economy/agro-in/akriveia-sta-trofima-pente-fores-pano-i-diafora-stis-times-apo-to-xorafi-sto-rafi-adianoito-ayto-pou-ginetai/",
+        "https://www.in.gr/2026/08/13/world/syntrivi-737-max-stin-aithiopia-i-boeing-katadikazetai-na-katavalei-29-ekatommyria-dolaria-sti-xira-thymatos/",
+        "https://www.in.gr/2026/08/13/sports/football/ti-nyxta-mera-ekane-o-kosmos-tou-ofi-stin-kriti-vid-pics/",
+        "https://www.in.gr/2026/08/13/greece/fotia-ston-kalamo-leykadas-sikothikan-5-enaeria-mesa/",
+        "https://www.in.gr/2026/08/13/greece/ios-dytikou-neilou-110-krousmata-9-thanatoi-se-poious-dimous-entopistikan-ta-perissotera-krousmata/"
       ],
-      "seen_at_utc": "2026-08-13T07:30:39.636759+00:00"
+      "seen_at_utc": "2026-08-13T07:51:40.832811+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T07:30:39.636912+00:00"
+  "updated_at_utc": "2026-08-13T07:51:40.832956+00:00"
 }
