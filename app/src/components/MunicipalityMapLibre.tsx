@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import * as maplibregl from 'maplibre-gl'
-import { LngLatBounds, type ErrorEvent as MapLibreErrorEvent, type GeoJSONSource, type Map as MapLibreMap, type StyleSpecification } from 'maplibre-gl'
+import { LngLatBounds, type ErrorEvent as MapLibreErrorEvent, type Map as MapLibreMap, type StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { logError } from '../lib/logger'
 
@@ -44,23 +44,12 @@ type LayerVisibility = Pick<
   'fireViewMode' | 'showBoundary' | 'showWorks' | 'showFires' | 'showActiveFires' | 'showFirms'
 >
 
-const INTERACTIVE_LAYERS = [
-  'municipality-work-hit',
-  'municipality-fire-point-hit',
-  'municipality-fire-shape-hit',
-  'municipality-current-fire-hit',
-  'municipality-firms-hit',
-] as const
-
-function layerVisibility(visible: boolean): 'visible' | 'none' {
-  return visible ? 'visible' : 'none'
-}
-
 function parseInteraction(
-  feature: maplibregl.MapGeoJSONFeature | undefined,
+  feature: GeoJSON.Feature,
   point: { x: number; y: number },
+  fallback: { x: number; y: number },
 ): MunicipalityMapLibreInteraction | null {
-  const properties = feature?.properties
+  const properties = feature.properties
   if (!properties) return null
   const id = String(properties.interactionId ?? '')
   const kind = String(properties.kind ?? '') as MunicipalityMapLibreInteraction['kind']
@@ -74,94 +63,18 @@ function parseInteraction(
     items = []
   }
 
-  const fallbackX = Number(properties.fallbackX)
-  const fallbackY = Number(properties.fallbackY)
   const procurementId = Number(properties.procurementId)
   return {
     id,
     kind,
     point: { x: point.x, y: point.y },
-    fallback: {
-      x: Number.isFinite(fallbackX) ? fallbackX : point.x,
-      y: Number.isFinite(fallbackY) ? fallbackY : point.y,
-    },
+    fallback,
     title: String(properties.tooltipTitle ?? ''),
     items,
     procurementId: Number.isFinite(procurementId) ? procurementId : null,
     organizationName: typeof properties.organizationName === 'string' && properties.organizationName
       ? properties.organizationName
       : null,
-  }
-}
-
-function addInteractionLayers(map: MapLibreMap, data: MunicipalityMapLibreData, visibility: LayerVisibility) {
-  map.addSource('municipality-works', { type: 'geojson', data: data.works })
-  map.addSource('municipality-fire-points', { type: 'geojson', data: data.firePoints })
-  map.addSource('municipality-fire-shapes', { type: 'geojson', data: data.fireShapes })
-  map.addSource('municipality-active-fires', { type: 'geojson', data: data.activeFires })
-  map.addSource('municipality-firms', { type: 'geojson', data: data.firms })
-
-  map.addLayer({
-    id: 'municipality-work-hit',
-    type: 'circle',
-    source: 'municipality-works',
-    layout: { visibility: layerVisibility(visibility.showWorks) },
-    paint: { 'circle-radius': 10, 'circle-opacity': 0.001 },
-  })
-  map.addLayer({
-    id: 'municipality-fire-point-hit',
-    type: 'circle',
-    source: 'municipality-fire-points',
-    layout: { visibility: layerVisibility(visibility.showFires && visibility.fireViewMode === 'points') },
-    paint: { 'circle-radius': 7, 'circle-opacity': 0.001 },
-  })
-  map.addLayer({
-    id: 'municipality-fire-shape-hit',
-    type: 'fill',
-    source: 'municipality-fire-shapes',
-    layout: { visibility: layerVisibility(visibility.showFires && visibility.fireViewMode === 'shapes') },
-    paint: { 'fill-color': '#000000', 'fill-opacity': 0.001 },
-  })
-  map.addLayer({
-    id: 'municipality-current-fire-hit',
-    type: 'circle',
-    source: 'municipality-active-fires',
-    layout: { visibility: layerVisibility(visibility.showActiveFires) },
-    paint: { 'circle-radius': 8, 'circle-opacity': 0.001 },
-  })
-  map.addLayer({
-    id: 'municipality-firms-hit',
-    type: 'circle',
-    source: 'municipality-firms',
-    layout: { visibility: layerVisibility(visibility.showFirms) },
-    paint: { 'circle-radius': 7, 'circle-opacity': 0.001 },
-  })
-}
-
-function updateInteractionLayerVisibility(map: MapLibreMap, visibility: LayerVisibility) {
-  const values: Array<[string, boolean]> = [
-    ['municipality-work-hit', visibility.showWorks],
-    ['municipality-fire-point-hit', visibility.showFires && visibility.fireViewMode === 'points'],
-    ['municipality-fire-shape-hit', visibility.showFires && visibility.fireViewMode === 'shapes'],
-    ['municipality-current-fire-hit', visibility.showActiveFires],
-    ['municipality-firms-hit', visibility.showFirms],
-  ]
-  for (const [id, visible] of values) {
-    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', layerVisibility(visible))
-  }
-}
-
-function updateInteractionSources(map: MapLibreMap, data: MunicipalityMapLibreData) {
-  const sources: Array<[string, GeoJSON.FeatureCollection]> = [
-    ['municipality-works', data.works],
-    ['municipality-fire-points', data.firePoints],
-    ['municipality-fire-shapes', data.fireShapes],
-    ['municipality-active-fires', data.activeFires],
-    ['municipality-firms', data.firms],
-  ]
-  for (const [id, sourceData] of sources) {
-    const source = map.getSource(id) as GeoJSONSource | undefined
-    source?.setData(sourceData)
   }
 }
 
@@ -208,6 +121,64 @@ function svgElement<K extends keyof SVGElementTagNameMap>(name: K): SVGElementTa
   return document.createElementNS('http://www.w3.org/2000/svg', name)
 }
 
+type InteractionCallbacks = Pick<
+  MunicipalityMapLibreProps,
+  'onFeatureHover' | 'onFeatureLeave' | 'onFeatureClick'
+>
+
+function eventPoint(map: MapLibreMap, event: MouseEvent | PointerEvent) {
+  const rect = map.getContainer().getBoundingClientRect()
+  return { x: event.clientX - rect.left, y: event.clientY - rect.top }
+}
+
+function bindFeatureInteraction(
+  map: MapLibreMap,
+  element: SVGElement,
+  feature: GeoJSON.Feature,
+  fallback: { x: number; y: number },
+  getCallbacks: () => InteractionCallbacks,
+) {
+  element.setAttribute('pointer-events', 'all')
+  element.style.cursor = 'pointer'
+
+  const interactionFor = (event: MouseEvent | PointerEvent) => (
+    parseInteraction(feature, eventPoint(map, event), fallback)
+  )
+  const onMouseMove = (event: MouseEvent) => {
+    const interaction = interactionFor(event)
+    if (interaction) getCallbacks().onFeatureHover?.(interaction)
+  }
+  let lastTouchAt = 0
+  element.addEventListener('mousemove', onMouseMove)
+  element.addEventListener('mouseleave', () => getCallbacks().onFeatureLeave?.())
+  element.addEventListener('pointerdown', (event: PointerEvent) => {
+    if (event.pointerType === 'mouse') return
+    const interaction = interactionFor(event)
+    if (!interaction) return
+    event.preventDefault()
+    event.stopPropagation()
+    lastTouchAt = performance.now()
+    getCallbacks().onFeatureClick?.(interaction)
+  })
+  element.addEventListener('click', (event: MouseEvent) => {
+    event.preventDefault()
+    event.stopPropagation()
+    if (performance.now() - lastTouchAt < 700) return
+    const interaction = interactionFor(event)
+    if (interaction) getCallbacks().onFeatureClick?.(interaction)
+  })
+}
+
+function appendHitCircle(svg: SVGSVGElement, point: { x: number; y: number }, radius: number) {
+  const hit = svgElement('circle')
+  hit.setAttribute('cx', point.x.toFixed(2))
+  hit.setAttribute('cy', point.y.toFixed(2))
+  hit.setAttribute('r', String(radius))
+  hit.setAttribute('fill', 'transparent')
+  svg.append(hit)
+  return hit
+}
+
 function appendCircle(
   map: MapLibreMap,
   svg: SVGSVGElement,
@@ -216,7 +187,7 @@ function appendCircle(
   radius: number,
 ) {
   const [lon, lat] = feature.geometry.coordinates
-  if (!Number.isFinite(lon) || !Number.isFinite(lat)) return
+  if (!Number.isFinite(lon) || !Number.isFinite(lat)) return null
   const point = map.project([lon, lat])
   const circle = svgElement('circle')
   circle.setAttribute('class', className)
@@ -224,6 +195,7 @@ function appendCircle(
   circle.setAttribute('cy', point.y.toFixed(2))
   circle.setAttribute('r', String(radius))
   svg.append(circle)
+  return { point, circle }
 }
 
 function appendFirmsFootprint(
@@ -250,6 +222,7 @@ function appendFirmsFootprint(
   rect.setAttribute('width', width.toFixed(2))
   rect.setAttribute('height', height.toFixed(2))
   svg.append(rect)
+  return { point: center, rect }
 }
 
 function appendActiveFire(
@@ -291,6 +264,7 @@ function appendActiveFire(
   marker.setAttribute('stroke', color)
   group.append(pulse, marker)
   svg.append(group)
+  return { point, group }
 }
 
 function drawGeographicLayers(
@@ -299,6 +273,7 @@ function drawGeographicLayers(
   municipality: GeoJSON.Feature<GeoJSON.Polygon | GeoJSON.MultiPolygon>,
   data: MunicipalityMapLibreData,
   visibility: LayerVisibility,
+  getCallbacks: () => InteractionCallbacks,
 ) {
   const container = map.getContainer()
   svg.setAttribute('viewBox', `0 0 ${container.clientWidth} ${container.clientHeight}`)
@@ -319,22 +294,39 @@ function drawGeographicLayers(
       path.setAttribute('d', geometryPath(map, feature.geometry))
       path.setAttribute('fill-rule', 'evenodd')
       svg.append(path)
+      const coordinate = feature.geometry.type === 'Polygon'
+        ? feature.geometry.coordinates[0][0]
+        : feature.geometry.coordinates[0][0][0]
+      bindFeatureInteraction(map, path, feature, map.project([coordinate[0], coordinate[1]]), getCallbacks)
     }
   }
   if (visibility.showWorks) {
-    for (const feature of data.works.features) appendCircle(map, svg, feature, 'municipality-maplibre__work', 5)
+    for (const feature of data.works.features) {
+      const rendered = appendCircle(map, svg, feature, 'municipality-maplibre__work', 5)
+      if (!rendered) continue
+      bindFeatureInteraction(map, appendHitCircle(svg, rendered.point, 10), feature, rendered.point, getCallbacks)
+    }
   }
   if (visibility.showFires && visibility.fireViewMode === 'points') {
     for (const feature of data.firePoints.features) {
       const area = Number(feature.properties?.area ?? 0)
-      appendCircle(map, svg, feature, 'municipality-maplibre__fire-point', Math.max(5, Math.min(12, 5 + Math.sqrt(Math.max(0, area)) * 0.2)))
+      const radius = Math.max(5, Math.min(12, 5 + Math.sqrt(Math.max(0, area)) * 0.2))
+      const rendered = appendCircle(map, svg, feature, 'municipality-maplibre__fire-point', radius)
+      if (!rendered) continue
+      bindFeatureInteraction(map, appendHitCircle(svg, rendered.point, Math.max(7, radius)), feature, rendered.point, getCallbacks)
     }
   }
   if (visibility.showFirms) {
-    for (const feature of data.firms.features) appendFirmsFootprint(map, svg, feature)
+    for (const feature of data.firms.features) {
+      const rendered = appendFirmsFootprint(map, svg, feature)
+      bindFeatureInteraction(map, rendered.rect, feature, rendered.point, getCallbacks)
+    }
   }
   if (visibility.showActiveFires) {
-    for (const feature of data.activeFires.features) appendActiveFire(map, svg, feature)
+    for (const feature of data.activeFires.features) {
+      const rendered = appendActiveFire(map, svg, feature)
+      bindFeatureInteraction(map, appendHitCircle(svg, rendered.point, 8), feature, rendered.point, getCallbacks)
+    }
   }
 }
 
@@ -395,61 +387,21 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
     container.append(overlay)
     overlayRef.current = overlay
 
-    const draw = () => drawGeographicLayers(map, overlay, props.feature, dataRef.current, visibilityRef.current)
+    const draw = () => drawGeographicLayers(
+      map,
+      overlay,
+      props.feature,
+      dataRef.current,
+      visibilityRef.current,
+      () => callbacksRef.current,
+    )
     map.on('render', draw)
     map.on('move', draw)
     map.on('resize', draw)
     draw()
 
-    const onMouseMove = (event: maplibregl.MapLayerMouseEvent) => {
-      const interaction = parseInteraction(event.features?.[0], event.point)
-      if (!interaction) return
-      map.getCanvas().style.cursor = 'pointer'
-      callbacksRef.current.onFeatureHover?.(interaction)
-    }
-    const onMouseLeave = () => {
-      map.getCanvas().style.cursor = ''
-      callbacksRef.current.onFeatureLeave?.()
-    }
-    const interactionAtPoint = (point: { x: number; y: number }) => {
-      const availableLayers = INTERACTIVE_LAYERS.filter((layerId) => map.getLayer(layerId))
-      if (availableLayers.length === 0) return null
-      const features = map.queryRenderedFeatures(
-        [point.x, point.y],
-        { layers: availableLayers },
-      )
-      return parseInteraction(features[0], point)
-    }
-    let lastHandledTouchAt = 0
-    const onPointerDown = (event: PointerEvent) => {
-      if (event.pointerType === 'mouse') return
-      const rect = map.getCanvas().getBoundingClientRect()
-      const point = { x: event.clientX - rect.left, y: event.clientY - rect.top }
-      const interaction = interactionAtPoint(point)
-      if (!interaction) return
-      event.preventDefault()
-      event.stopPropagation()
-      lastHandledTouchAt = performance.now()
-      callbacksRef.current.onFeatureClick?.(interaction)
-    }
-    const onClick = (event: maplibregl.MapMouseEvent) => {
-      if (performance.now() - lastHandledTouchAt < 700) return
-      const interaction = interactionAtPoint(event.point)
-      if (interaction) callbacksRef.current.onFeatureClick?.(interaction)
-      else callbacksRef.current.onBackgroundClick?.()
-    }
-    const onStyleLoad = () => {
-      if (!map.getSource('municipality-works')) {
-        addInteractionLayers(map, dataRef.current, visibilityRef.current)
-      }
-    }
-    for (const layerId of INTERACTIVE_LAYERS) {
-      map.on('mousemove', layerId, onMouseMove)
-      map.on('mouseleave', layerId, onMouseLeave)
-    }
-    map.on('style.load', onStyleLoad)
-    map.on('click', onClick)
-    map.getCanvas().addEventListener('pointerdown', onPointerDown, { capture: true })
+    const onBackgroundClick = () => callbacksRef.current.onBackgroundClick?.()
+    map.on('click', onBackgroundClick)
 
     const resizeObserver = new ResizeObserver(() => map.resize())
     resizeObserver.observe(container)
@@ -463,9 +415,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
     }
     const onIdle = () => {
       if (usingFallbackStyle) return
-      const basemapLayerIds = (map.getStyle().layers ?? [])
-        .map((layer) => layer.id)
-        .filter((id) => !INTERACTIVE_LAYERS.includes(id as typeof INTERACTIVE_LAYERS[number]))
+      const basemapLayerIds = (map.getStyle().layers ?? []).map((layer) => layer.id)
       const hasRenderedBasemapFeatures = basemapLayerIds.length > 0
         && map.queryRenderedFeatures(undefined, { layers: basemapLayerIds }).length > 0
       if (hasRenderedBasemapFeatures) primaryStyleReady = true
@@ -485,16 +435,10 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       map.off('resize', draw)
       map.off('styledata', collapseAttributionOnce)
       map.off('sourcedata', collapseAttributionOnce)
-      map.off('style.load', onStyleLoad)
-      map.off('click', onClick)
-      map.getCanvas().removeEventListener('pointerdown', onPointerDown, { capture: true })
+      map.off('click', onBackgroundClick)
       map.off('idle', onIdle)
       window.clearTimeout(basemapTimeout)
       resizeObserver.disconnect()
-      for (const layerId of INTERACTIVE_LAYERS) {
-        map.off('mousemove', layerId, onMouseMove)
-        map.off('mouseleave', layerId, onMouseLeave)
-      }
       overlay.remove()
       overlayRef.current = null
       mapRef.current = null
@@ -506,11 +450,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
     const map = mapRef.current
     const overlay = overlayRef.current
     if (!map || !overlay) return
-    drawGeographicLayers(map, overlay, props.feature, props.data, visibilityRef.current)
-    if (map.isStyleLoaded()) {
-      updateInteractionSources(map, props.data)
-      updateInteractionLayerVisibility(map, visibilityRef.current)
-    }
+    drawGeographicLayers(map, overlay, props.feature, props.data, visibilityRef.current, () => callbacksRef.current)
   }, [props.data, props.feature, props.fireViewMode, props.showActiveFires, props.showBoundary, props.showFires, props.showFirms, props.showWorks])
 
   return (
