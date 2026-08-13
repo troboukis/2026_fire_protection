@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564401020/chania-chtypisan-kai-edesan-ilikiomeno-mesa-sto-spiti-toy/",
-      "title": "Χανιά: Χτύπησαν και έδεσαν ηλικιωμένο μέσα στο σπίτι του",
-      "normalized_title": "ΧΑΝΙΑ: ΧΤΥΠΗΣΑΝ ΚΑΙ ΕΔΕΣΑΝ ΗΛΙΚΙΩΜΕΝΟ ΜΕΣΑ ΣΤΟ ΣΠΙΤΙ ΤΟΥ",
+      "url": "https://www.kathimerini.gr/society/564401758/fotia-sti-chalkidiki-domatia-gia-toys-pyropliktoys-se-xenodocheia-tis-thessalonikis/",
+      "title": "Φωτιά στη Χαλκιδική: Δωμάτια για τους πυρόπληκτους σε ξενοδοχεία της Θεσσαλονίκης",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΧΑΛΚΙΔΙΚΗ: ΔΩΜΑΤΙΑ ΓΙΑ ΤΟΥΣ ΠΥΡΟΠΛΗΚΤΟΥΣ ΣΕ ΞΕΝΟΔΟΧΕΙΑ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564401020/chania-chtypisan-kai-edesan-ilikiomeno-mesa-sto-spiti-toy/",
-        "https://www.kathimerini.gr/k/gastronomos/564398689/mpakaliaros-plaki-katsarolas/",
-        "https://www.kathimerini.gr/world/564401011/imvros-sylleitoyrgo-prokathimenon-gia-ta-65-eti-ierosynis-toy-oikoymenikoy-patriarchi/"
+        "https://www.kathimerini.gr/society/564401758/fotia-sti-chalkidiki-domatia-gia-toys-pyropliktoys-se-xenodocheia-tis-thessalonikis/",
+        "https://www.kathimerini.gr/society/564401263/limni-plastira-taytopoiithike-o-odigos-vytioforoy-poy-odigoyse-epikindyna/"
       ],
-      "seen_at_utc": "2026-08-13T18:17:08.697933+00:00"
+      "seen_at_utc": "2026-08-13T18:51:44.654192+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,32 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864571/purosvestis-katerreuse-tin-ora-pou-ekkenonan-tin-paralia-siviris-diasostis-tou-edose-stis-protes-voitheies/?utm_source=rss",
-      "title": "Πυροσβέστης κατέρρευσε την ώρα που εκκένωναν την παραλία Σίβηρης, διασώστης του έδωσε στις πρώτες βοήθειες",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΗΣ ΚΑΤΕΡΡΕΥΣΕ ΤΗΝ ΩΡΑ ΠΟΥ ΕΚΚΕΝΩΝΑΝ ΤΗΝ ΠΑΡΑΛΙΑ ΣΙΒΗΡΗΣ, ΔΙΑΣΩΣΤΗΣ ΤΟΥ ΕΔΩΣΕ ΣΤΙΣ ΠΡΩΤΕΣ ΒΟΗΘΕΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1864580/me-htupaei-to-reuma-auti-ti-stigmi-elege-ston-giatro-i-mitera-tou-17hronou-pou-pethane-eno-ekane-banio-stin-kimolo/?utm_source=rss",
+      "title": "«Με χτυπάει και εμένα το ρεύμα αυτή τη στιγμή», έλεγε στον γιατρό η μητέρα του 17χρονου που πέθανε ενώ έκανε μπάνιο στην Κίμωλο",
+      "normalized_title": "«ΜΕ ΧΤΥΠΑΕΙ ΚΑΙ ΕΜΕΝΑ ΤΟ ΡΕΥΜΑ ΑΥΤΗ ΤΗ ΣΤΙΓΜΗ», ΕΛΕΓΕ ΣΤΟΝ ΓΙΑΤΡΟ Η ΜΗΤΕΡΑ ΤΟΥ 17ΧΡΟΝΟΥ ΠΟΥ ΠΕΘΑΝΕ ΕΝΩ ΕΚΑΝΕ ΜΠΑΝΙΟ ΣΤΗΝ ΚΙΜΩΛΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864571/purosvestis-katerreuse-tin-ora-pou-ekkenonan-tin-paralia-siviris-diasostis-tou-edose-stis-protes-voitheies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864580/me-htupaei-to-reuma-auti-ti-stigmi-elege-ston-giatro-i-mitera-tou-17hronou-pou-pethane-eno-ekane-banio-stin-kimolo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T17:51:47.264805+00:00"
+      "seen_at_utc": "2026-08-13T18:51:44.654329+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447539/sygklonistiko-vinteo-apo-ti-halkidiki-katerreyse-pyrosvestis-limenikos-toy-edose-tis-protes-voitheies/",
-      "title": "Συγκλονιστικό βίντεο από τη Χαλκιδική: Κατέρρευσε πυροσβέστης, λιμενικός του έδωσε τις πρώτες βοήθειες",
-      "normalized_title": "ΣΥΓΚΛΟΝΙΣΤΙΚΟ ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΧΑΛΚΙΔΙΚΗ: ΚΑΤΕΡΡΕΥΣΕ ΠΥΡΟΣΒΕΣΤΗΣ, ΛΙΜΕΝΙΚΟΣ ΤΟΥ ΕΔΩΣΕ ΤΙΣ ΠΡΩΤΕΣ ΒΟΗΘΕΙΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1447501/halkidiki-nyhta-agonias-sta-pyrina-metopa-terastia-idi-i-katastrofi-eikones-vinteo/",
+      "title": "Χαλκιδική: Νύχτα αγωνίας στα πύρινα μέτωπα – Τεράστια ήδη η καταστροφή [εικόνες-βίντεο]",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΝΥΧΤΑ ΑΓΩΝΙΑΣ ΣΤΑ ΠΥΡΙΝΑ ΜΕΤΩΠΑ – ΤΕΡΑΣΤΙΑ ΗΔΗ Η ΚΑΤΑΣΤΡΟΦΗ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447539/sygklonistiko-vinteo-apo-ti-halkidiki-katerreyse-pyrosvestis-limenikos-toy-edose-tis-protes-voitheies/"
+        "https://www.efsyn.gr/ellada/1447501/halkidiki-nyhta-agonias-sta-pyrina-metopa-terastia-idi-i-katastrofi-eikones-vinteo/",
+        "https://www.efsyn.gr/kosmos/1447543/itta-tramp-stin-agogi-kata-toy-harvarnt-dikastis-aperripse-tis-aitiaseis-gia-anohi-ston-antisimitismo/"
       ],
-      "seen_at_utc": "2026-08-13T18:30:47.225327+00:00"
+      "seen_at_utc": "2026-08-13T18:51:44.654282+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/world/oi-ipa-aposyroun-to-aeroplanoforo-lincoln-apo-to-iran-en-meso-anaforon-gia-krisi-psyxikis-ygeias-sto-pliroma/",
-      "title": "Οι ΗΠΑ αποσύρουν το αεροπλανοφόρο Lincoln από το Ιράν εν μέσω αναφορών για κρίση ψυχικής υγείας στο πλήρωμα",
-      "normalized_title": "ΟΙ ΗΠΑ ΑΠΟΣΥΡΟΥΝ ΤΟ ΑΕΡΟΠΛΑΝΟΦΟΡΟ LINCOLN ΑΠΟ ΤΟ ΙΡΑΝ ΕΝ ΜΕΣΩ ΑΝΑΦΟΡΩΝ ΓΙΑ ΚΡΙΣΗ ΨΥΧΙΚΗΣ ΥΓΕΙΑΣ ΣΤΟ ΠΛΗΡΩΜΑ",
+      "url": "https://www.in.gr/2026/08/13/sports/football/oloklirothike-i-polisi-tou-feran-tores-stin-pari-sen-zermen-pic/",
+      "title": "«Συμφωνία της Παρί με τη Μπαρτσελόνα για τον Φεράν Τόρες» (pic)",
+      "normalized_title": "«ΣΥΜΦΩΝΙΑ ΤΗΣ ΠΑΡΙ ΜΕ ΤΗ ΜΠΑΡΤΣΕΛΟΝΑ ΓΙΑ ΤΟΝ ΦΕΡΑΝ ΤΟΡΕΣ» (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/world/oi-ipa-aposyroun-to-aeroplanoforo-lincoln-apo-to-iran-en-meso-anaforon-gia-krisi-psyxikis-ygeias-sto-pliroma/"
+        "https://www.in.gr/2026/08/13/sports/football/oloklirothike-i-polisi-tou-feran-tores-stin-pari-sen-zermen-pic/",
+        "https://www.in.gr/2026/08/13/greece/sta-xeria-tis-el-as-o-odigos-tou-vytioforou-pou-ekane-epikindyni-prosperasi-sti-limni-plastira/",
+        "https://www.in.gr/2026/08/13/economy/oikonomikes-eidiseis/fysiko-aerio-giati-i-eyropi-dyskoleyetai-na-symplirosei-ta-apothemata-tis-prin-apo-to-xeimona/"
       ],
-      "seen_at_utc": "2026-08-13T18:30:47.225284+00:00"
+      "seen_at_utc": "2026-08-13T18:51:44.654244+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T18:30:47.225405+00:00"
+  "updated_at_utc": "2026-08-13T18:51:44.654411+00:00"
 }
