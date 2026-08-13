@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564399532/stin-teliki-eytheia-i-dimopratisi-toy-achilleioy/",
-      "title": "Στην τελική ευθεία η δημοπράτηση του Αχιλλείου",
-      "normalized_title": "ΣΤΗΝ ΤΕΛΙΚΗ ΕΥΘΕΙΑ Η ΔΗΜΟΠΡΑΤΗΣΗ ΤΟΥ ΑΧΙΛΛΕΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564399826/irakleio-epicheirisi-apegklovismoy-odigoy-epeita-apo-ektropi-toy-ochimatos-toy/",
+      "title": "Ηράκλειο: Επιχείρηση απεγκλωβισμού οδηγού έπειτα από εκτροπή του οχήματός του",
+      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΕΠΙΧΕΙΡΗΣΗ ΑΠΕΓΚΛΩΒΙΣΜΟΥ ΟΔΗΓΟΥ ΕΠΕΙΤΑ ΑΠΟ ΕΚΤΡΟΠΗ ΤΟΥ ΟΧΗΜΑΤΟΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564399532/stin-teliki-eytheia-i-dimopratisi-toy-achilleioy/",
-        "https://www.kathimerini.gr/society/564399775/vytioforo-kanei-prosperasi-pano-se-strofi-gia-ligo-apefyge-ti-metopiki-motosikletistis-vinteo/",
-        "https://www.kathimerini.gr/culture/music/564399331/koftis-toy-spotify-stoys-kallitechnes-poy-einai-proionta-ai/",
-        "https://www.kathimerini.gr/athletics/564399781/super-cup-yperprotathlitria-eyropis-xana-i-pari-sen-zermen/",
-        "https://www.kathimerini.gr/opinion/564399268/meta-tis-endiameses-ekloges/"
+        "https://www.kathimerini.gr/society/564399826/irakleio-epicheirisi-apegklovismoy-odigoy-epeita-apo-ektropi-toy-ochimatos-toy/",
+        "https://www.kathimerini.gr/society/564399154/antiplimmyrika-agonas-dromoy-gia-ti-thorakisi-dytikis-attikis-kai-voiotias/",
+        "https://www.kathimerini.gr/world/564399808/toyrkia-o-fylakismenos-imamogloy-egkataleipei-to-chp-kai-perna-sto-neo-komma-tis-antipoliteysis/",
+        "https://www.kathimerini.gr/world/564399802/i-klironomia-tis-karolain-leivit-i-ekprosopos-typoy-toy-leykoy-oikoy-apochorei-apo-ti-thesi-tis/"
       ],
-      "seen_at_utc": "2026-08-13T05:51:30.683954+00:00"
+      "seen_at_utc": "2026-08-13T06:17:04.498183+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,39 +1262,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864234/ta-metra-tis-trohaias-enopsei-dekapedaugoustou-ti-ishuei-gia-ta-fortiga/?utm_source=rss",
-      "title": "Τα μέτρα της Τροχαίας ενόψει Δεκαπενταύγουστου, τι ισχύει για τα φορτηγά",
-      "normalized_title": "ΤΑ ΜΕΤΡΑ ΤΗΣ ΤΡΟΧΑΙΑΣ ΕΝΟΨΕΙ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ, ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΤΑ ΦΟΡΤΗΓΑ",
+      "url": "https://www.protothema.gr/greece/article/1864258/se-ellada-kai-italia-i-megaluteri-exaplosi-tou-dutikou-neilou-stin-europi-tha-ehoume-perissoterous-thanatous/?utm_source=rss",
+      "title": "Σε Ελλάδα και Ιταλία η μεγαλύτερη εξάπλωση του Δυτικού Νείλου στην Ευρώπη, «θα έχουμε περισσότερους θανάτους» προειδοποιεί η Θεοδώρα Ψαλτοπούλου",
+      "normalized_title": "ΣΕ ΕΛΛΑΔΑ ΚΑΙ ΙΤΑΛΙΑ Η ΜΕΓΑΛΥΤΕΡΗ ΕΞΑΠΛΩΣΗ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ ΣΤΗΝ ΕΥΡΩΠΗ, «ΘΑ ΕΧΟΥΜΕ ΠΕΡΙΣΣΟΤΕΡΟΥΣ ΘΑΝΑΤΟΥΣ» ΠΡΟΕΙΔΟΠΟΙΕΙ Η ΘΕΟΔΩΡΑ ΨΑΛΤΟΠΟΥΛΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864234/ta-metra-tis-trohaias-enopsei-dekapedaugoustou-ti-ishuei-gia-ta-fortiga/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864226/den-anavoume-fotia-gia-kanenan-logo-ekklisi-apo-ton-ekprosopo-tis-purosvestikis-akraios-o-kindunos-purkagias-simera/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864258/se-ellada-kai-italia-i-megaluteri-exaplosi-tou-dutikou-neilou-stin-europi-tha-ehoume-perissoterous-thanatous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864253/na-matho-ean-itan-monos-apadiseis-anazita-i-adelfi-tou-38hronou-astunomikou-pou-vrethike-nekros-ston-agio-dimitrio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864252/soros-andra-vrethike-stin-dioruga-tou-isthmou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864246/exodos-dekapedaugoustou-korufonetai-i-kinisi-sta-limania-ektakta-metra-tis-trohaias-stis-ethnikes-odous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T05:51:30.684090+00:00"
+      "seen_at_utc": "2026-08-13T06:17:04.498282+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447028/podilatika-atyhimata-prothypoyrgon/",
-      "title": "Ποδηλατικά ατυχήματα πρωθυπουργών",
-      "normalized_title": "ΠΟΔΗΛΑΤΙΚΑ ΑΤΥΧΗΜΑΤΑ ΠΡΩΘΥΠΟΥΡΓΩΝ",
+      "url": "https://www.efsyn.gr/athlitismos/1447008/krisimo-48oro-gia-ton-olympiako/",
+      "title": "Κρίσιμο 48ωρο για τον Ολυμπιακό",
+      "normalized_title": "ΚΡΙΣΙΜΟ 48ΩΡΟ ΓΙΑ ΤΟΝ ΟΛΥΜΠΙΑΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447028/podilatika-atyhimata-prothypoyrgon/",
-        "https://www.efsyn.gr/politiki/1447016/nea-aristera-kata-georgiadi-ypoyrgos-influencer-me-parelthon-akrodexioy-tilevivliopoli/",
-        "https://www.efsyn.gr/ellada/1447009/vytioforo-ekane-epikindyni-prosperasi-se-strofi-kai-paraligo-na-sygkroystei-me-motosikletisti-vinteo/"
+        "https://www.efsyn.gr/athlitismos/1447008/krisimo-48oro-gia-ton-olympiako/",
+        "https://www.efsyn.gr/ellada/1447043/entopistike-soros-andra-sti-dioryga-tis-korinthoy/",
+        "https://www.efsyn.gr/oikonomia/1446997/dimokratikoi-katigoroyn-ton-tramp-oti-pire-miza-diamanti-gia-na-xehasei-toys-dasmoys/",
+        "https://www.efsyn.gr/periballon/1446984/sos-gia-kindyno-plimmyras-sti-rafina-i-proeidopoiisi-toy-elkethe-gia-to-megalo-rema/",
+        "https://www.efsyn.gr/media/1447022/press-point-to-kratos-hrostaei-ta-perissotera/"
       ],
-      "seen_at_utc": "2026-08-13T05:51:30.684057+00:00"
+      "seen_at_utc": "2026-08-13T06:17:04.498246+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/world/kolomvia-stin-pio-kathoristiki-fasi-oi-epixeirisi-ereynas-kai-diasosis-meta-ta-74r/",
-      "title": "Στην πιο καθοριστική φάση οι επιχείρηση έρευνας και διάσωσης στην Κολομβία μετά τα 7,4R",
-      "normalized_title": "ΣΤΗΝ ΠΙΟ ΚΑΘΟΡΙΣΤΙΚΗ ΦΑΣΗ ΟΙ ΕΠΙΧΕΙΡΗΣΗ ΕΡΕΥΝΑΣ ΚΑΙ ΔΙΑΣΩΣΗΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ ΜΕΤΑ ΤΑ 7,4R",
+      "url": "https://www.in.gr/2026/08/13/sports/othersports/to-programma-tis-ethnikis-andron-stous-mesogeiakous-agones-2026/",
+      "title": "Το πρόγραμμα της Εθνικής ανδρών στους Μεσογειακούς Αγώνες 2026",
+      "normalized_title": "ΤΟ ΠΡΟΓΡΑΜΜΑ ΤΗΣ ΕΘΝΙΚΗΣ ΑΝΔΡΩΝ ΣΤΟΥΣ ΜΕΣΟΓΕΙΑΚΟΥΣ ΑΓΩΝΕΣ 2026",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/world/kolomvia-stin-pio-kathoristiki-fasi-oi-epixeirisi-ereynas-kai-diasosis-meta-ta-74r/",
-        "https://www.in.gr/2026/08/13/sports/football/to-minyma-tou-rontinei-gia-ti-synexeia-tis-sezon-ston-olympiako-kataktisame-tin-eyropi-na-thymomaste-ti-mas-odigise-ekei/",
-        "https://www.in.gr/2026/08/13/world/ipa-me-nea-ergaleia-katastolis-eksoplizetai-i-perivoiti-ice-promitheyetai-kai-gantia-ilektrosok/",
-        "https://www.in.gr/2026/08/13/editorial/pasok-xamenoi-sti-metafrasi/",
-        "https://www.in.gr/2026/08/13/stories/tziovani-anieli-o-anthropos-pou-evale-tin-italia-se-tesseris-troxous/"
+        "https://www.in.gr/2026/08/13/sports/othersports/to-programma-tis-ethnikis-andron-stous-mesogeiakous-agones-2026/",
+        "https://www.in.gr/2026/08/13/life/culture-live/the-shards-seks-narkotika-kai-serial-killers-to-stilato-thriler-tou-raian-merfi-kai-tou-mpret-iston-elis/",
+        "https://www.in.gr/2026/08/13/in-science/technology/eygoniki-meso-start-up-etaireies-ypsilis-texnologias-yposxontai-eksypnotera-mora-me-to-azimioto/",
+        "https://www.in.gr/2026/08/13/world/seismos-55-vathmon-aisthitos-se-salvador-ondoura-kai-nikaragoua-xoris-thymata-i-zimies/",
+        "https://www.in.gr/2026/08/13/economy/klimatoplithorismos-ti-einai-to-climateflation-kai-giati-mas-afora-amesa/",
+        "https://www.in.gr/2026/08/13/greece/dekapentaygoustos-koryfonetai-i-eksodos-ton-adeiouxon-ayksimeni-i-kinisi-sta-limania/",
+        "https://www.in.gr/2026/08/13/world/nees-apokalypseis-gia-ti-fygadeysi-tramp-apo-tin-tourkia-poious-pire-mazi-tou-kai-poious-afise-sto-air-force-one/"
       ],
-      "seen_at_utc": "2026-08-13T05:51:30.684032+00:00"
+      "seen_at_utc": "2026-08-13T06:17:04.498223+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T05:51:30.684194+00:00"
+  "updated_at_utc": "2026-08-13T06:17:04.498355+00:00"
 }
