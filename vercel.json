@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    { "source": "/west-attica-fire-2026", "destination": "/west-attica-fire-2026/index.html" },
-    { "source": "/((?!api/|assets/|west-attica-fire-2026/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)", "destination": "/index.html" }
   ]
 }
