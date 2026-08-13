@@ -55,6 +55,37 @@
     disableGoogleAnalytics();
   }
 
+  function mountFireWatchFooter() {
+    if (document.querySelector('.firewatch-footer-shell')) return;
+
+    const shell = document.createElement('div');
+    shell.className = 'firewatch-footer-shell';
+    shell.innerHTML = `<footer class="site-footer">
+      © ${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms">Όροι χρήσης</a> · <a href="/privacy">Απόρρητο &amp; cookies</a> · <button type="button">Ρυθμίσεις cookies</button>
+    </footer>`;
+
+    shell.querySelector('button')?.addEventListener('click', () => {
+      CookieConsent.showPreferences();
+    });
+    document.body.appendChild(shell);
+
+    const syncFooterHeight = () => {
+      document.documentElement.style.setProperty(
+        '--firewatch-footer-height',
+        `${shell.getBoundingClientRect().height}px`,
+      );
+    };
+    syncFooterHeight();
+
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(syncFooterHeight).observe(shell);
+    } else {
+      window.addEventListener('resize', syncFooterHeight);
+    }
+  }
+
+  mountFireWatchFooter();
+
   void CookieConsent.run({
     mode: 'opt-in',
     revision: 1,
