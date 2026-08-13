@@ -1,16 +1,27 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564399307/vasilissis-olgas-i-epomeni-mera/",
-      "title": "Βασιλίσσης Ολγας: Η επόμενη μέρα",
-      "normalized_title": "ΒΑΣΙΛΙΣΣΗΣ ΟΛΓΑΣ: Η ΕΠΟΜΕΝΗ ΜΕΡΑ",
+      "url": "https://www.kathimerini.gr/world/564400240/rosia-oi-oykranikes-dynameis-eplixan-diylistirio-petrelaioy-kai-petrochimiko-ergostasio/",
+      "title": "Ρωσία: Οι ουκρανικές δυνάμεις έπληξαν διυλιστήριο πετρελαίου και πετροχημικό εργοστάσιο",
+      "normalized_title": "ΡΩΣΙΑ: ΟΙ ΟΥΚΡΑΝΙΚΕΣ ΔΥΝΑΜΕΙΣ ΕΠΛΗΞΑΝ ΔΙΥΛΙΣΤΗΡΙΟ ΠΕΤΡΕΛΑΙΟΥ ΚΑΙ ΠΕΤΡΟΧΗΜΙΚΟ ΕΡΓΟΣΤΑΣΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564399307/vasilissis-olgas-i-epomeni-mera/",
-        "https://www.kathimerini.gr/society/564400183/pyrkagia-tora-stin-kavala-sikothikan-dyo-aeroskafi/",
-        "https://www.kathimerini.gr/world/564400180/aitna-kleisto-to-aerodromio-tis-katanias-sti-sikelia-logo-ifaisteiakis-tefras/",
-        "https://www.kathimerini.gr/society/564400162/karpathos-eklepse-domatio-xenodocheioy-kai-epicheirise-na-diafygei-me-ploio-apodeichthike-drapetis-fylakon/"
+        "https://www.kathimerini.gr/world/564400240/rosia-oi-oykranikes-dynameis-eplixan-diylistirio-petrelaioy-kai-petrochimiko-ergostasio/",
+        "https://www.kathimerini.gr/world/564400159/giati-stin-iaponia-poloyntai-psygeia-gia-anthropoys/",
+        "https://www.kathimerini.gr/economy/syntaxeis/564399502/syntaxeis-allages-se-anagnorisi-plasmatikon-eton/",
+        "https://www.kathimerini.gr/society/astynomiko/564400228/irakleio-treis-syllipseis-gia-koka-ni-kai-chiliades-anavolika/",
+        "https://www.kathimerini.gr/opinion/564399034/asymmetries-2/",
+        "https://www.kathimerini.gr/k/gastronomos/564398638/ta-glyka-toy-dekapentaygoystoy-32-syntages-gia-na-kerasoyme/",
+        "https://www.kathimerini.gr/columns/564377329/droseres-kanates-gia-ton-dekapentaygoysto/",
+        "https://www.kathimerini.gr/opinion/564399451/oi-eyalotoi-trampoykoi/",
+        "https://www.kathimerini.gr/opinion/564399448/alexis-tsipras-voes/",
+        "https://www.kathimerini.gr/culture/agenda/564400216/exodos-stin-athina-kai-ektos-tin-pempti-kai-tin-paraskeyi-13-14-8-erini-kai-pedrik/",
+        "https://www.kathimerini.gr/opinion/564399025/to-asfales-mantri/",
+        "https://www.kathimerini.gr/opinion/564399289/i-elliniki-ekdramatisi/",
+        "https://www.kathimerini.gr/opinion/564399286/oikogeneia-toyrkia-metanastes/",
+        "https://www.kathimerini.gr/society/564400201/kimolos-ston-peiraia-gia-nekropsia-i-soros-toy-17chronoy-ereynatai-i-ilektrologiki-egkatastasi-toy-spitioy/",
+        "https://www.kathimerini.gr/opinion/564400198/oi-zografies-toy-a-i-einai-poly-varetes-alla-ti-simainei-ayto-gia-ti-metaxy-mas-anisotita/"
       ],
-      "seen_at_utc": "2026-08-13T09:52:10.505244+00:00"
+      "seen_at_utc": "2026-08-13T10:17:37.721904+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,38 +1273,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864393/sunelifthi-60hroni-gia-kalliergeia-kannavis-sti-rodo-katashethikan-10-dendrullia/?utm_source=rss",
-      "title": "Συνελήφθη 60χρονη για καλλιέργεια κάνναβης στη Ρόδο, κατασχέθηκαν 10 δενδρύλλια",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 60ΧΡΟΝΗ ΓΙΑ ΚΑΛΛΙΕΡΓΕΙΑ ΚΑΝΝΑΒΗΣ ΣΤΗ ΡΟΔΟ, ΚΑΤΑΣΧΕΘΗΚΑΝ 10 ΔΕΝΔΡΥΛΛΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1864409/vartholomaios-milisa-me-ton-mitsotaki-mou-zitise-na-teleso-ton-gamo-tou-giou-tou-ton-septemvrio-tou-2027/?utm_source=rss",
+      "title": "Βαρθολομαίος: Μίλησα με τον Μητσοτάκη, μου ζήτησε να τελέσω τον γάμο του γιου του τον Σεπτέμβριο του 2027",
+      "normalized_title": "ΒΑΡΘΟΛΟΜΑΙΟΣ: ΜΙΛΗΣΑ ΜΕ ΤΟΝ ΜΗΤΣΟΤΑΚΗ, ΜΟΥ ΖΗΤΗΣΕ ΝΑ ΤΕΛΕΣΩ ΤΟΝ ΓΑΜΟ ΤΟΥ ΓΙΟΥ ΤΟΥ ΤΟΝ ΣΕΠΤΕΜΒΡΙΟ ΤΟΥ 2027",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864393/sunelifthi-60hroni-gia-kalliergeia-kannavis-sti-rodo-katashethikan-10-dendrullia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864387/fotia-stin-paralia-ofruniou-kavalas-sti-mahi-kai-duo-aeroskafi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864409/vartholomaios-milisa-me-ton-mitsotaki-mou-zitise-na-teleso-ton-gamo-tou-giou-tou-ton-septemvrio-tou-2027/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864408/to-ste-akurose-treis-adeies-leitourgias-parartimaton-idiotikon-panepistimion/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864399/fotia-se-diamerisma-sti-thessaloniki-sto-nosokomeio-duo-atoma-logo-eispnois-kapnou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864398/stin-imvro-o-oikoumenikos-patriarhis-vartholomaios-gia-ta-65-hronia-apo-tin-eisodo-tou-stin-ierosuni-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T09:52:10.505390+00:00"
+      "seen_at_utc": "2026-08-13T10:17:37.722080+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447216/fotia-stin-paralia-ofrynioy-kavalas-megali-kinitopoiisi-tis-pyrosvestikis/",
-      "title": "Φωτιά στην Παραλία Οφρυνίου Καβάλας – Μεγάλη κινητοποίηση της Πυροσβεστικής",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΑΡΑΛΙΑ ΟΦΡΥΝΙΟΥ ΚΑΒΑΛΑΣ – ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1447237/fotia-se-epiheirisi-sto-kastraki-fokidas/",
+      "title": "Φωτιά σε επιχείρηση στο Καστράκι Φωκίδας",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΠΙΧΕΙΡΗΣΗ ΣΤΟ ΚΑΣΤΡΑΚΙ ΦΩΚΙΔΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447216/fotia-stin-paralia-ofrynioy-kavalas-megali-kinitopoiisi-tis-pyrosvestikis/",
-        "https://www.efsyn.gr/ellada/1447199/syros-nayagosostria-perigrafei-pos-esose-16hroni-meta-apo-voytia-eihe-trayma-se-ayhena-kai-spondyliki-stili/"
+        "https://www.efsyn.gr/ellada/1447237/fotia-se-epiheirisi-sto-kastraki-fokidas/",
+        "https://www.efsyn.gr/politiki/1447229/evros-kai-kyvernitiki-propaganda-enas-i-dyo-dromoi/",
+        "https://www.efsyn.gr/tehnes/1447109/adespotes-skyles-syghrones-gynaikes-se-katastasi-ektaktoy-anagkis/",
+        "https://www.efsyn.gr/politiki/1447015/evros-o-dromos-eihe-ti-diki-toy-pseytiki-istoria/",
+        "https://www.efsyn.gr/ellada/1447220/thyellodeis-anemoi-kai-ypsilos-kindynos-pyrkagion-tis-epomenes-imeres-ripes-eos-kai-100-hlm-ora-hartes/"
       ],
-      "seen_at_utc": "2026-08-13T09:52:10.505356+00:00"
+      "seen_at_utc": "2026-08-13T10:17:37.722029+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/world/roumania-katholiki-diakopi-tis-leitourgias-tou-pyrinikou-stathmou-tis-tsernavonta/",
-      "title": "Καθολική διακοπή της λειτουργίας του πυρηνικού σταθμού της Τσερναβόντα στη Ρουμανία",
-      "normalized_title": "ΚΑΘΟΛΙΚΗ ΔΙΑΚΟΠΗ ΤΗΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΠΥΡΗΝΙΚΟΥ ΣΤΑΘΜΟΥ ΤΗΣ ΤΣΕΡΝΑΒΟΝΤΑ ΣΤΗ ΡΟΥΜΑΝΙΑ",
+      "url": "https://www.in.gr/2026/08/13/world/nyt-to-kryfto-tou-tramp-stin-tourkia-einai-paidiko-paixnidi-se-sygkrisi-me-ta-texnasmata-tou-poutin/",
+      "title": "ΝΥΤ: Το «κρυφτό» του Τραμπ στην Τουρκία είναι παιδικό παιχνίδι σε σύγκριση με τα τεχνάσματα του Πούτιν",
+      "normalized_title": "ΝΥΤ: ΤΟ «ΚΡΥΦΤΟ» ΤΟΥ ΤΡΑΜΠ ΣΤΗΝ ΤΟΥΡΚΙΑ ΕΙΝΑΙ ΠΑΙΔΙΚΟ ΠΑΙΧΝΙΔΙ ΣΕ ΣΥΓΚΡΙΣΗ ΜΕ ΤΑ ΤΕΧΝΑΣΜΑΤΑ ΤΟΥ ΠΟΥΤΙΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/world/roumania-katholiki-diakopi-tis-leitourgias-tou-pyrinikou-stathmou-tis-tsernavonta/",
-        "https://www.in.gr/2026/08/13/sports/othersports/eyropaiko-protathlima-kolymvisis-anetes-prokriseis-gia-xristou-damasioti-kai-ntountounaki-vids/",
-        "https://www.in.gr/2026/08/13/greece/karpathos-eklepse-domatio-ksenodoxeiou-kai-epixeirise-na-fygei-me-ploio-apodeixthike-oti-itan-drapetis-fylakon/",
-        "https://www.in.gr/2026/08/13/plus/medianews/to-bhmagazino-me-ena-eksofyllo-afieromeno-sti-fysi-nature-whispers/",
-        "https://www.in.gr/2026/08/13/in-science/perivallon-b-science/pyrkagies-stin-eyropi-posi-ektasi-exei-kaei-ispania-kai-gallia-stin-koryfi-tis-listas-ekti-i-ellada/"
+        "https://www.in.gr/2026/08/13/world/nyt-to-kryfto-tou-tramp-stin-tourkia-einai-paidiko-paixnidi-se-sygkrisi-me-ta-texnasmata-tou-poutin/",
+        "https://www.in.gr/2026/08/13/in-science/episthmes/oi-ainigmatikoi-ntenisovan-isos-itan-to-psilotero-eidos-anthropou-pou-ezise-pote/",
+        "https://www.in.gr/2026/08/13/life/culture-live/lateks-ki-akriva-profylaktika-oi-tainies-tou-kalokairiou-estiazoun-sto-seks-os-apantisi-stin-apoksenosi/",
+        "https://www.in.gr/2026/08/13/greece/kiato-nekros-40xronos-pou-epese-apo-mpalkoni-2ou-orofou/"
       ],
-      "seen_at_utc": "2026-08-13T09:52:10.505318+00:00"
+      "seen_at_utc": "2026-08-13T10:17:37.721994+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T09:52:10.505528+00:00"
+  "updated_at_utc": "2026-08-13T10:17:37.722190+00:00"
 }
