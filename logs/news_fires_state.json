@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564398074/mia-mpoytik-stin-erimo/",
-      "title": "Μια μπουτίκ στην έρημο",
-      "normalized_title": "ΜΙΑ ΜΠΟΥΤΙΚ ΣΤΗΝ ΕΡΗΜΟ",
+      "url": "https://www.kathimerini.gr/athletics/564400939/eyropaiko-protathlima-ston-teliko-me-megalo-panellinio-rekor-i-ntoyntoynaki/",
+      "title": "Ευρωπαϊκό Πρωτάθλημα: Στον τελικό με μεγάλο πανελλήνιο ρεκόρ η Ντουντουνάκη",
+      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ: ΣΤΟΝ ΤΕΛΙΚΟ ΜΕ ΜΕΓΑΛΟ ΠΑΝΕΛΛΗΝΙΟ ΡΕΚΟΡ Η ΝΤΟΥΝΤΟΥΝΑΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564398074/mia-mpoytik-stin-erimo/",
-        "https://www.kathimerini.gr/society/564400789/kiato-lampadiase-fortigaki-en-kinisei-vgike-soos-o-odigos/"
+        "https://www.kathimerini.gr/athletics/564400939/eyropaiko-protathlima-ston-teliko-me-megalo-panellinio-rekor-i-ntoyntoynaki/",
+        "https://www.kathimerini.gr/society/564400381/gia-ena-kalokairi-i-athina-itan-to-kentro-toy-kosmoy/"
       ],
-      "seen_at_utc": "2026-08-13T17:17:22.854883+00:00"
+      "seen_at_utc": "2026-08-13T17:30:23.236235+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,41 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864559/auxisi-49-stin-epivatiki-kinisi-7minou-tou-2026-sto-sunolo-ton-aerodromion-tis-horas/?utm_source=rss",
-      "title": "Αύξηση 4,9% στην επιβατική κίνηση 7μηνου του 2026 στο σύνολο των αεροδρομίων της χώρας",
-      "normalized_title": "ΑΥΞΗΣΗ 4,9% ΣΤΗΝ ΕΠΙΒΑΤΙΚΗ ΚΙΝΗΣΗ 7ΜΗΝΟΥ ΤΟΥ 2026 ΣΤΟ ΣΥΝΟΛΟ ΤΩΝ ΑΕΡΟΔΡΟΜΙΩΝ ΤΗΣ ΧΩΡΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1864561/an-eiha-autokinito-den-tha-borousa-na-to-apofugo-leei-o-odigos-tis-mihanis-pou-eide-to-vutioforo-sti-limni-plastira-na/?utm_source=rss",
+      "title": "«Αν είχα αυτοκίνητο δεν θα μπορούσα να το αποφύγω» λέει ο οδηγός της μηχανής που είδε το βυτιοφόρο να έρχεται κατά πάνω του",
+      "normalized_title": "«ΑΝ ΕΙΧΑ ΑΥΤΟΚΙΝΗΤΟ ΔΕΝ ΘΑ ΜΠΟΡΟΥΣΑ ΝΑ ΤΟ ΑΠΟΦΥΓΩ» ΛΕΕΙ Ο ΟΔΗΓΟΣ ΤΗΣ ΜΗΧΑΝΗΣ ΠΟΥ ΕΙΔΕ ΤΟ ΒΥΤΙΟΦΟΡΟ ΝΑ ΕΡΧΕΤΑΙ ΚΑΤΑ ΠΑΝΩ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864559/auxisi-49-stin-epivatiki-kinisi-7minou-tou-2026-sto-sunolo-ton-aerodromion-tis-horas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864561/an-eiha-autokinito-den-tha-borousa-na-to-apofugo-leei-o-odigos-tis-mihanis-pou-eide-to-vutioforo-sti-limni-plastira-na/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T16:51:22.175890+00:00"
+      "seen_at_utc": "2026-08-13T17:30:23.236340+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1447521/olympiakos-tin-paraskeyi-to-krisimo-rantevoy-marinaki-mentilimpar/",
-      "title": "Ολυμπιακός: Την Παρασκευή το κρίσιμο ραντεβού Μαρινάκη – Μεντιλίμπαρ",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΤΗΝ ΠΑΡΑΣΚΕΥΗ ΤΟ ΚΡΙΣΙΜΟ ΡΑΝΤΕΒΟΥ ΜΑΡΙΝΑΚΗ – ΜΕΝΤΙΛΙΜΠΑΡ",
+      "url": "https://www.efsyn.gr/ellada/1447520/pyrkagia-sti-halkidiki-tileoptiko-synergeio-toy-mega-dehthike-epithesi-mas-evrisan-mas-eftysan-mas-htypisan/",
+      "title": "Πυρκαγιά στη Χαλκιδική: Τηλεοπτικό συνεργείο του Mega δέχθηκε επίθεση – «Μας έβρισαν, μας έφτυσαν, μας χτύπησαν»",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΧΑΛΚΙΔΙΚΗ: ΤΗΛΕΟΠΤΙΚΟ ΣΥΝΕΡΓΕΙΟ ΤΟΥ MEGA ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ – «ΜΑΣ ΕΒΡΙΣΑΝ, ΜΑΣ ΕΦΤΥΣΑΝ, ΜΑΣ ΧΤΥΠΗΣΑΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1447521/olympiakos-tin-paraskeyi-to-krisimo-rantevoy-marinaki-mentilimpar/",
-        "https://www.efsyn.gr/life/1447517/to-apolyto-viral-to-alma-ispanoy-skateboarder-ti-stigmi-tis-olikis-ekleipsis-ilioy-vinteo/",
-        "https://www.efsyn.gr/kosmos/1447511/tromaktiki-ekrixi-se-ergostasio-pyromahikon-se-proastio-tis-romis-vinteo/"
+        "https://www.efsyn.gr/ellada/1447520/pyrkagia-sti-halkidiki-tileoptiko-synergeio-toy-mega-dehthike-epithesi-mas-evrisan-mas-eftysan-mas-htypisan/"
       ],
-      "seen_at_utc": "2026-08-13T17:17:22.854954+00:00"
+      "seen_at_utc": "2026-08-13T17:30:23.236310+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/greece/fotia-sti-siviri-oi-protes-doryforikes-eikones-tis-pyrkagias-sti-xalkidiki/",
-      "title": "Φωτιά στη Σίβηρη – Οι πρώτες δορυφορικές εικόνες της πυρκαγιάς στη Χαλκιδική",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ – ΟΙ ΠΡΩΤΕΣ ΔΟΡΥΦΟΡΙΚΕΣ ΕΙΚΟΝΕΣ ΤΗΣ ΠΥΡΚΑΓΙΑΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.in.gr/2026/08/13/world/afganistan-sovietiki-vomva-misou-tonou-vrethike-ston-kipo-katoikias/",
+      "title": "Σοβιετική βόμβα μισού τόνου βρέθηκε στον κήπο κατοικίας",
+      "normalized_title": "ΣΟΒΙΕΤΙΚΗ ΒΟΜΒΑ ΜΙΣΟΥ ΤΟΝΟΥ ΒΡΕΘΗΚΕ ΣΤΟΝ ΚΗΠΟ ΚΑΤΟΙΚΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/greece/fotia-sti-siviri-oi-protes-doryforikes-eikones-tis-pyrkagias-sti-xalkidiki/",
-        "https://www.in.gr/2026/08/13/world/gallia-koukouloforoi-eklepsan-syllektikes-kartes-pokemon-pou-polountai-gia-xiliades-eyro/",
-        "https://www.in.gr/2026/08/13/world/politico-o-agonas-dromou-tis-oukranias-gia-aeramyna-kai-i-eksantlisi-ton-dytikon-oplostasion/",
-        "https://www.in.gr/2026/08/13/world/afganistan-oi-amerikanoi-fygane-alla-oi-kinezoi-den-viazontai-ti-zitaei-to-pekino-apo-tous-talimpan/",
-        "https://www.in.gr/2026/08/13/life/culture-live/i-elvetia-paei-sta-oskar-me-tainia-gia-tin-gaza/",
-        "https://www.in.gr/matchcenter/5955031/",
-        "https://www.in.gr/matchcenter/5955021/",
-        "https://www.in.gr/matchcenter/5955036/"
+        "https://www.in.gr/2026/08/13/world/afganistan-sovietiki-vomva-misou-tonou-vrethike-ston-kipo-katoikias/",
+        "https://www.in.gr/2026/08/13/sports/othersports/eyropaiko-protathlima-kolymvisis-ston-teliko-ton-50m-yptio-o-xristou-vid/",
+        "https://www.in.gr/2026/08/13/world/stin-koryfi-tou-kosmou-to-aerodromio-intseon-tis-notias-koreas/",
+        "https://www.in.gr/2026/08/13/sports/football/protasi-momfis-kata-tou-infantino-etoimazei-i-i-uefa-pic/"
       ],
-      "seen_at_utc": "2026-08-13T17:17:22.854934+00:00"
+      "seen_at_utc": "2026-08-13T17:30:23.236279+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T17:17:22.855022+00:00"
+  "updated_at_utc": "2026-08-13T17:30:23.236425+00:00"
 }
