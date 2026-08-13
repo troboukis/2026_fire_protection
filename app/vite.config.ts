@@ -1,5 +1,7 @@
 import { execSync } from 'node:child_process'
-import { defineConfig } from 'vite'
+import { readFile } from 'node:fs/promises'
+import path from 'node:path'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import { getCompanyUrlByAfm, normalizeAfm } from './server/gemiCompanyUrl.js'
 
@@ -11,10 +13,48 @@ function getLastCommitIso(): string {
   }
 }
 
+function standaloneWestAtticaMapDevRoute(): Plugin {
+  const routePaths = new Set([
+    '/west-attica-fire-2026',
+    '/west-attica-fire-2026/',
+  ])
+  const indexPath = path.resolve(process.cwd(), 'public/west-attica-fire-2026/index.html')
+
+  return {
+    name: 'standalone-west-attica-map-dev-route',
+    configureServer(server) {
+      server.middlewares.use(async (req, res, next) => {
+        const requestUrl = req.url
+        if (!requestUrl || req.method !== 'GET') {
+          next()
+          return
+        }
+
+        const url = new URL(requestUrl, 'http://localhost')
+        if (!routePaths.has(url.pathname)) {
+          next()
+          return
+        }
+
+        try {
+          const html = await readFile(indexPath, 'utf8')
+          res.statusCode = 200
+          res.setHeader('Content-Type', 'text/html; charset=utf-8')
+          res.setHeader('Cache-Control', 'no-store')
+          res.end(html)
+        } catch (error) {
+          next(error)
+        }
+      })
+    },
+  }
+}
+
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
   plugins: [
     react(),
+    standaloneWestAtticaMapDevRoute(),
     {
       name: 'gemi-company-url-dev-api',
       configureServer(server) {

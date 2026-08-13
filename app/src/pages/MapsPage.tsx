@@ -6,6 +6,7 @@ import DevViewToggle from '../components/DevViewToggle'
 import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import { GreeceMap } from '../components/GreeceMap'
 import MapSelectionPanel, { type SelectionKind, type SelectionSource } from '../components/MapSelectionPanel'
+import MapLegendToggle from '../components/MapLegendToggle'
 import type { LatestContractCardView } from '../components/LatestContractCard'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
@@ -186,6 +187,7 @@ export default function MapsPage() {
   const mapYear = new Date().getFullYear()
   const [mapView, setMapView] = useState<'greece' | 'attica'>('greece')
   const [mapMetric, setMapMetric] = useState<MapMetric>('spending')
+  const [showChoropleth, setShowChoropleth] = useState(true)
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [municipalitySpendPer100kById, setMunicipalitySpendPer100kById] = useState<Record<string, number>>({})
   const [municipalityFundingPer100kById, setMunicipalityFundingPer100kById] = useState<Record<string, number>>({})
@@ -1399,6 +1401,7 @@ export default function MapsPage() {
                 onMunicipalityClick={handleMapMunicipalityClick}
                 selectedMunicipalityIds={selectedMunicipalityIdsForMap}
                 municipalityLabelById={municipalityLabelById}
+                showChoropleth={showChoropleth}
               />
             </div>
           </section>
@@ -1410,11 +1413,16 @@ export default function MapsPage() {
               className="component-tag--overlay"
               style={{ left: 'auto', right: '0.45rem' }}
             />
-            <div className="maps-legend__scale" aria-hidden="true">
+            <MapLegendToggle
+              className="maps-legend__scale"
+              visible={showChoropleth}
+              onToggle={() => setShowChoropleth((visible) => !visible)}
+              label={`Δήμοι με ${activeMetricLabel}`}
+            >
               <span className="maps-legend__scale-label">Λιγότερα</span>
-              <div className="maps-legend__scale-bar" />
+              <span className="maps-legend__scale-bar" aria-hidden="true" />
               <span className="maps-legend__scale-label">Περισσότερα € {activeMetricLabelGenitive} / 100.000 κατοίκους</span>
-            </div>
+            </MapLegendToggle>
             <p className="maps-legend__summary">
               {loading
                 ? 'Φόρτωση χάρτη…'

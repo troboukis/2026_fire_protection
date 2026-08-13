@@ -9,6 +9,7 @@ import { supabase } from '../lib/supabase'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import MapTilerLogo from './MapTilerLogo'
+import MapLegendToggle from './MapLegendToggle'
 
 type FirmsDetection = {
   id: string
@@ -257,6 +258,7 @@ export default function FireFirmsSection() {
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [detections, setDetections] = useState<FirmsDetection[]>([])
   const [loading, setLoading] = useState(true)
+  const [showFirmsDetections, setShowFirmsDetections] = useState(true)
   const [hoveredDetection, setHoveredDetection] = useState<FirmsTooltip | null>(null)
   const [terrainFailed, setTerrainFailed] = useState(false)
   const [mapSize, setMapSize] = useState<{ width: number; height: number } | null>(null)
@@ -584,7 +586,7 @@ export default function FireFirmsSection() {
                 </g>
               )}
               <g className="fire-firms__footprints">
-                {mapData.footprints.map((footprint, index) => (
+                {showFirmsDetections && mapData.footprints.map((footprint, index) => (
                   <g
                     key={`${footprint.id}-${index}`}
                     onMouseEnter={(event) => {
@@ -662,8 +664,17 @@ export default function FireFirmsSection() {
         )}
         {mapData && (
           <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα NASA FIRMS">
-            <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
-            <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            <MapLegendToggle
+              visible={showFirmsDetections}
+              onToggle={() => {
+                setHoveredDetection(null)
+                setShowFirmsDetections((visible) => !visible)
+              }}
+              label="Ενεργή θερμική ανωμαλία NASA FIRMS"
+            >
+              <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
+              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+            </MapLegendToggle>
           </div>
         )}
       </div>

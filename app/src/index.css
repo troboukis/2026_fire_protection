@@ -8867,3 +8867,59 @@ main {
     animation: none;
   }
 }
+.map-legend-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.map-legend-toggle:hover {
+  color: #111;
+}
+
+.map-legend-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.map-legend-toggle.is-hidden {
+  color: #8a8a8a;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.map-legend-toggle.is-hidden strong,
+.map-legend-toggle.is-hidden span {
+  color: inherit;
+}
+
+.map-legend-toggle.is-hidden > [aria-hidden="true"],
+.map-legend-toggle.is-hidden .maps-legend__scale-bar {
+  filter: grayscale(1);
+  opacity: 0.45;
+}
+
+.map-legend-toggle.is-hidden > [aria-hidden="true"] {
+  position: relative;
+}
+
+.map-legend-toggle.is-hidden > [aria-hidden="true"]::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 50%;
+  border-top: 1px solid currentColor;
+  transform: rotate(-12deg);
+}

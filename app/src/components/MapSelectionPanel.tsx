@@ -6,6 +6,7 @@ import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './DiavgeiaD
 import EditorialLead from './EditorialLead'
 import LatestContractCard, { type LatestContractCardView } from './LatestContractCard'
 import MapTilerLogo from './MapTilerLogo'
+import MapLegendToggle from './MapLegendToggle'
 import { buildHillshadeTileOverlays } from '../lib/maptilerHillshade'
 import type { GeoFeature } from '../types'
 
@@ -121,6 +122,10 @@ export default function MapSelectionPanel({
     return window.matchMedia('(hover: none), (pointer: coarse)').matches
   }, [])
   const [fireViewMode, setFireViewMode] = useState<'points' | 'shapes'>('points')
+  const [showCurrentFires, setShowCurrentFires] = useState(true)
+  const [showPreviousFires, setShowPreviousFires] = useState(true)
+  const [showMunicipalityWork, setShowMunicipalityWork] = useState(true)
+  const [showRegionalWork, setShowRegionalWork] = useState(true)
   const [previewTerrainFailed, setPreviewTerrainFailed] = useState(false)
   const [hoveredFirePoint, setHoveredFirePoint] = useState<{
     x: number
@@ -521,7 +526,7 @@ export default function MapSelectionPanel({
             {fireViewMode === 'shapes'
               ? (
                 <>
-                  {projectedPreviousFireShapes.map((p, idx) => (
+                  {showPreviousFires && projectedPreviousFireShapes.map((p, idx) => (
                     <g
                       key={`fire-shape-prev-${idx}`}
                       onMouseEnter={() => {
@@ -554,7 +559,7 @@ export default function MapSelectionPanel({
                       />
                     </g>
                   ))}
-                  {projectedCurrentFireShapes.map((p, idx) => (
+                  {showCurrentFires && projectedCurrentFireShapes.map((p, idx) => (
                     <g
                       key={`fire-shape-current-${idx}`}
                       onMouseEnter={() => {
@@ -591,7 +596,7 @@ export default function MapSelectionPanel({
               )
               : (
                 <>
-                  {projectedPreviousFirePoints.map((p, idx) => (
+                  {showPreviousFires && projectedPreviousFirePoints.map((p, idx) => (
                     <g
                       key={`fire-point-prev-${idx}`}
                       onMouseEnter={() => {
@@ -621,7 +626,7 @@ export default function MapSelectionPanel({
                       <circle cx={p.x} cy={p.y} r={4} fill="#dadada" fillOpacity={0.85} />
                     </g>
                   ))}
-                  {projectedCurrentFirePoints.map((p, idx) => (
+                  {showCurrentFires && projectedCurrentFirePoints.map((p, idx) => (
                     <g
                       key={`fire-point-current-${idx}`}
                       onMouseEnter={() => {
@@ -664,7 +669,7 @@ export default function MapSelectionPanel({
                 <text x={p.textX} y={p.textY} textAnchor={p.textAnchor}>{p.name}</text>
               </g>
             ))}
-            {projectedRegionalWorkDots.map((p, idx) => (
+            {showRegionalWork && projectedRegionalWorkDots.map((p, idx) => (
               <g
                 key={`regional-work-dot-${idx}`}
                 className="maps-work-dot maps-work-dot--regional"
@@ -687,7 +692,7 @@ export default function MapSelectionPanel({
                 <circle cx={p.x} cy={p.y} r={3.25} fill="#9fdb6f" stroke="#26410f" strokeWidth={0.9} />
               </g>
             ))}
-            {projectedMunicipalityWorkDots.map((p, idx) => (
+            {showMunicipalityWork && projectedMunicipalityWorkDots.map((p, idx) => (
               <g
                 key={`municipality-work-dot-${idx}`}
                 className="maps-work-dot maps-work-dot--municipality"
@@ -747,13 +752,31 @@ export default function MapSelectionPanel({
               : projectedFireShapes.length > 0
                 ? (
                   <>
-                    <span className="maps-legend-dot maps-legend-dot--fire" aria-hidden="true" />
-                    {` Πυρκαγιές 2026 — ${projectedCurrentFireShapes.length.toLocaleString('el-GR')}`}
+                    <MapLegendToggle
+                      visible={showCurrentFires}
+                      onToggle={() => {
+                        setHoveredFirePoint(null)
+                        setShowCurrentFires((visible) => !visible)
+                      }}
+                      label="Πυρκαγιές 2026"
+                    >
+                      <span className="maps-legend-dot maps-legend-dot--fire" aria-hidden="true" />
+                      <span>{`Πυρκαγιές 2026 — ${projectedCurrentFireShapes.length.toLocaleString('el-GR')}`}</span>
+                    </MapLegendToggle>
                     {projectedPreviousFireShapes.length > 0 && (
                       <>
                         {' · '}
-                        <span className="maps-legend-dot maps-legend-dot--fire-previous" aria-hidden="true" />
-                        {` Πυρκαγιές 2024-2025 — ${projectedPreviousFireShapes.length.toLocaleString('el-GR')}`}
+                        <MapLegendToggle
+                          visible={showPreviousFires}
+                          onToggle={() => {
+                            setHoveredFirePoint(null)
+                            setShowPreviousFires((visible) => !visible)
+                          }}
+                          label="Πυρκαγιές 2024-2025"
+                        >
+                          <span className="maps-legend-dot maps-legend-dot--fire-previous" aria-hidden="true" />
+                          <span>{`Πυρκαγιές 2024-2025 — ${projectedPreviousFireShapes.length.toLocaleString('el-GR')}`}</span>
+                        </MapLegendToggle>
                       </>
                     )}
                     {' · '}
@@ -768,15 +791,33 @@ export default function MapSelectionPanel({
             {!municipalityWorkLoading && projectedMunicipalityWorkDots.length > 0 && (
               <>
                 {' · '}
-                <span className="maps-legend-dot maps-legend-dot--work" aria-hidden="true" />
-                {` Αντιπυρικές εργασίες — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}
+                <MapLegendToggle
+                  visible={showMunicipalityWork}
+                  onToggle={() => {
+                    setHoveredWorkPoint(null)
+                    setShowMunicipalityWork((visible) => !visible)
+                  }}
+                  label="Αντιπυρικές εργασίες"
+                >
+                  <span className="maps-legend-dot maps-legend-dot--work" aria-hidden="true" />
+                  <span>{`Αντιπυρικές εργασίες — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}</span>
+                </MapLegendToggle>
               </>
             )}
             {!municipalityWorkLoading && projectedRegionalWorkDots.length > 0 && (
               <>
                 {' · '}
-                <span className="maps-legend-dot maps-legend-dot--regional-work" aria-hidden="true" />
-                {` ΕΡΓΑΣΙΕΣ ΠΕΡΙΦΕΡΕΙΑΣ — ${projectedRegionalWorkDots.length.toLocaleString('el-GR')}`}
+                <MapLegendToggle
+                  visible={showRegionalWork}
+                  onToggle={() => {
+                    setHoveredWorkPoint(null)
+                    setShowRegionalWork((visible) => !visible)
+                  }}
+                  label="Εργασίες περιφέρειας"
+                >
+                  <span className="maps-legend-dot maps-legend-dot--regional-work" aria-hidden="true" />
+                  <span>{`ΕΡΓΑΣΙΕΣ ΠΕΡΙΦΕΡΕΙΑΣ — ${projectedRegionalWorkDots.length.toLocaleString('el-GR')}`}</span>
+                </MapLegendToggle>
               </>
             )}
           </div>
