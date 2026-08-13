@@ -1,19 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/sunday-edition/564399766/i-klironomia-toy-mystra-diakopes-sto-exochiko-ipeirotika-panigyria-sto-periodiko-k-ektaktos-to-savvato-15-8-me-tin-kathimerini/",
-      "title": "Η κληρονομιά του Μυστρά, διακοπές στο εξοχικό, ηπειρώτικα πανηγύρια – Στο περιοδικό «Κ», εκτάκτως το Σάββατο 15/8 με την «Καθημερινή»",
-      "normalized_title": "Η ΚΛΗΡΟΝΟΜΙΑ ΤΟΥ ΜΥΣΤΡΑ, ΔΙΑΚΟΠΕΣ ΣΤΟ ΕΞΟΧΙΚΟ, ΗΠΕΙΡΩΤΙΚΑ ΠΑΝΗΓΥΡΙΑ – ΣΤΟ ΠΕΡΙΟΔΙΚΟ «Κ», ΕΚΤΑΚΤΩΣ ΤΟ ΣΑΒΒΑΤΟ 15/8 ΜΕ ΤΗΝ «ΚΑΘΗΜΕΡΙΝΗ»",
+      "url": "https://www.kathimerini.gr/economy/564399532/stin-teliki-eytheia-i-dimopratisi-toy-achilleioy/",
+      "title": "Στην τελική ευθεία η δημοπράτηση του Αχιλλείου",
+      "normalized_title": "ΣΤΗΝ ΤΕΛΙΚΗ ΕΥΘΕΙΑ Η ΔΗΜΟΠΡΑΤΗΣΗ ΤΟΥ ΑΧΙΛΛΕΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/sunday-edition/564399766/i-klironomia-toy-mystra-diakopes-sto-exochiko-ipeirotika-panigyria-sto-periodiko-k-ektaktos-to-savvato-15-8-me-tin-kathimerini/",
-        "https://www.kathimerini.gr/opinion/564399274/na-miliso-gia-iroes-na-miliso-gia-iroes/",
-        "https://www.kathimerini.gr/world/564399736/wp-i-cia-axiologise-os-chamilis-axiopistias-ta-peri-apeilis-kata-tramp-poy-odigisan-stin-epicheirisi-fygadeysis/",
-        "https://www.kathimerini.gr/opinion/564399271/interstellar-1/",
-        "https://www.kathimerini.gr/opinion/564399292/apelasi-stin-proin-soyazilandi/",
-        "https://www.kathimerini.gr/economy/international/564399544/epideinonetai-i-krisi-stin-prosfora-petrelaioy/",
-        "https://www.kathimerini.gr/world/564399748/zelenski-ekklisi-stis-ipa-gia-perissoteroys-patriot-me-to-10-tha-katastrepsoyme-ti-rosia/"
+        "https://www.kathimerini.gr/economy/564399532/stin-teliki-eytheia-i-dimopratisi-toy-achilleioy/",
+        "https://www.kathimerini.gr/society/564399775/vytioforo-kanei-prosperasi-pano-se-strofi-gia-ligo-apefyge-ti-metopiki-motosikletistis-vinteo/",
+        "https://www.kathimerini.gr/culture/music/564399331/koftis-toy-spotify-stoys-kallitechnes-poy-einai-proionta-ai/",
+        "https://www.kathimerini.gr/athletics/564399781/super-cup-yperprotathlitria-eyropis-xana-i-pari-sen-zermen/",
+        "https://www.kathimerini.gr/opinion/564399268/meta-tis-endiameses-ekloges/"
       ],
-      "seen_at_utc": "2026-08-13T05:30:14.897260+00:00"
+      "seen_at_utc": "2026-08-13T05:51:30.683954+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,35 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864219/ta-krisima-erotimata-gia-ton-thanato-tou-17hronou-stin-kimolo-i-marturia-suggeni-gia-tis-teleutaies-stigmes-tou/?utm_source=rss",
-      "title": "Τα κρίσιμα ερωτήματα για τον θάνατο του 17χρονου στην Κίμωλο, η μαρτυρία συγγενή για τις τελευταίες στιγμές του στο μπάνιο",
-      "normalized_title": "ΤΑ ΚΡΙΣΙΜΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ 17ΧΡΟΝΟΥ ΣΤΗΝ ΚΙΜΩΛΟ, Η ΜΑΡΤΥΡΙΑ ΣΥΓΓΕΝΗ ΓΙΑ ΤΙΣ ΤΕΛΕΥΤΑΙΕΣ ΣΤΙΓΜΕΣ ΤΟΥ ΣΤΟ ΜΠΑΝΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1864234/ta-metra-tis-trohaias-enopsei-dekapedaugoustou-ti-ishuei-gia-ta-fortiga/?utm_source=rss",
+      "title": "Τα μέτρα της Τροχαίας ενόψει Δεκαπενταύγουστου, τι ισχύει για τα φορτηγά",
+      "normalized_title": "ΤΑ ΜΕΤΡΑ ΤΗΣ ΤΡΟΧΑΙΑΣ ΕΝΟΨΕΙ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ, ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΤΑ ΦΟΡΤΗΓΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864219/ta-krisima-erotimata-gia-ton-thanato-tou-17hronou-stin-kimolo-i-marturia-suggeni-gia-tis-teleutaies-stigmes-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864217/elleipseis-sta-apothemata-aimatos-anavallodai-metaggiseis-asthenon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864234/ta-metra-tis-trohaias-enopsei-dekapedaugoustou-ti-ishuei-gia-ta-fortiga/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864226/den-anavoume-fotia-gia-kanenan-logo-ekklisi-apo-ton-ekprosopo-tis-purosvestikis-akraios-o-kindunos-purkagias-simera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T05:17:10.650204+00:00"
+      "seen_at_utc": "2026-08-13T05:51:30.684090+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447006/mporei-na-allaxei-i-katastasi/",
-      "title": "Μπορεί να αλλάξει η κατάσταση;",
-      "normalized_title": "ΜΠΟΡΕΙ ΝΑ ΑΛΛΑΞΕΙ Η ΚΑΤΑΣΤΑΣΗ;",
+      "url": "https://www.efsyn.gr/politiki/1447028/podilatika-atyhimata-prothypoyrgon/",
+      "title": "Ποδηλατικά ατυχήματα πρωθυπουργών",
+      "normalized_title": "ΠΟΔΗΛΑΤΙΚΑ ΑΤΥΧΗΜΑΤΑ ΠΡΩΘΥΠΟΥΡΓΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447006/mporei-na-allaxei-i-katastasi/",
-        "https://www.efsyn.gr/ellada/1446990/koryfonetai-i-exodos-ton-adeioyhon-toy-dekapentaygoystoy-sto-kokkino-ta-limania-ta-metra-tis-trohaias/"
+        "https://www.efsyn.gr/politiki/1447028/podilatika-atyhimata-prothypoyrgon/",
+        "https://www.efsyn.gr/politiki/1447016/nea-aristera-kata-georgiadi-ypoyrgos-influencer-me-parelthon-akrodexioy-tilevivliopoli/",
+        "https://www.efsyn.gr/ellada/1447009/vytioforo-ekane-epikindyni-prosperasi-se-strofi-kai-paraligo-na-sygkroystei-me-motosikletisti-vinteo/"
       ],
-      "seen_at_utc": "2026-08-13T05:30:14.897341+00:00"
+      "seen_at_utc": "2026-08-13T05:51:30.684057+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/sports/football/o-tsavi-anelave-kai-episima-tin-texniki-igesia-tis-ethnikis-ollandias-pic/",
-      "title": "Ο Τσάβι ανέλαβε και επίσημα την τεχνική ηγεσία της Εθνικής Ολλανδίας (pic)",
-      "normalized_title": "Ο ΤΣΑΒΙ ΑΝΕΛΑΒΕ ΚΑΙ ΕΠΙΣΗΜΑ ΤΗΝ ΤΕΧΝΙΚΗ ΗΓΕΣΙΑ ΤΗΣ ΕΘΝΙΚΗΣ ΟΛΛΑΝΔΙΑΣ (PIC)",
+      "url": "https://www.in.gr/2026/08/13/world/kolomvia-stin-pio-kathoristiki-fasi-oi-epixeirisi-ereynas-kai-diasosis-meta-ta-74r/",
+      "title": "Στην πιο καθοριστική φάση οι επιχείρηση έρευνας και διάσωσης στην Κολομβία μετά τα 7,4R",
+      "normalized_title": "ΣΤΗΝ ΠΙΟ ΚΑΘΟΡΙΣΤΙΚΗ ΦΑΣΗ ΟΙ ΕΠΙΧΕΙΡΗΣΗ ΕΡΕΥΝΑΣ ΚΑΙ ΔΙΑΣΩΣΗΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ ΜΕΤΑ ΤΑ 7,4R",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/sports/football/o-tsavi-anelave-kai-episima-tin-texniki-igesia-tis-ethnikis-ollandias-pic/",
-        "https://www.in.gr/2026/08/13/world/poutin-stis-kouriles-nisous-gia-proti-fora-antikeimeno-dieneksis-me-tin-iaponia-diamartyria-apo-tokio/"
+        "https://www.in.gr/2026/08/13/world/kolomvia-stin-pio-kathoristiki-fasi-oi-epixeirisi-ereynas-kai-diasosis-meta-ta-74r/",
+        "https://www.in.gr/2026/08/13/sports/football/to-minyma-tou-rontinei-gia-ti-synexeia-tis-sezon-ston-olympiako-kataktisame-tin-eyropi-na-thymomaste-ti-mas-odigise-ekei/",
+        "https://www.in.gr/2026/08/13/world/ipa-me-nea-ergaleia-katastolis-eksoplizetai-i-perivoiti-ice-promitheyetai-kai-gantia-ilektrosok/",
+        "https://www.in.gr/2026/08/13/editorial/pasok-xamenoi-sti-metafrasi/",
+        "https://www.in.gr/2026/08/13/stories/tziovani-anieli-o-anthropos-pou-evale-tin-italia-se-tesseris-troxous/"
       ],
-      "seen_at_utc": "2026-08-13T05:30:14.897309+00:00"
+      "seen_at_utc": "2026-08-13T05:51:30.684032+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T05:30:14.897415+00:00"
+  "updated_at_utc": "2026-08-13T05:51:30.684194+00:00"
 }
