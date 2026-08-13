@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564400453/o-rosikos-klonos-toy-starlink-richnei-ti-skia-toy-stin-oykrania/",
-      "title": "Ο ρωσικός «κλώνος» του Starlink ρίχνει τη σκιά του στην Ουκρανία",
-      "normalized_title": "Ο ΡΩΣΙΚΟΣ «ΚΛΩΝΟΣ» ΤΟΥ STARLINK ΡΙΧΝΕΙ ΤΗ ΣΚΙΑ ΤΟΥ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.kathimerini.gr/society/564400480/fotia-sto-akontio-voiotias-sikothikan-dyo-aeroskafi/",
+      "title": "Φωτιά στο Ακόντιο Βοιωτίας, σηκώθηκαν δύο αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΑΚΟΝΤΙΟ ΒΟΙΩΤΙΑΣ, ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564400453/o-rosikos-klonos-toy-starlink-richnei-ti-skia-toy-stin-oykrania/",
-        "https://www.kathimerini.gr/world/564400462/vretania-faratz-enantion-komi-skoypidoprosopoy/"
+        "https://www.kathimerini.gr/society/564400480/fotia-sto-akontio-voiotias-sikothikan-dyo-aeroskafi/",
+        "https://www.kathimerini.gr/k/k-magazine/564396508/i-retro-goiteia-tis-neas-filadelfeias/"
       ],
-      "seen_at_utc": "2026-08-13T13:30:06.538396+00:00"
+      "seen_at_utc": "2026-08-13T13:51:41.722051+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864466/fotia-stin-potamoula-aitoloakarnanias-minuma-apo-to-112-gia-etoimotita/?utm_source=rss",
-      "title": "Φωτιά στην Ποταμούλα Αιτωλοακαρνανίας, μήνυμα από το 112 για ετοιμότητα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΟΤΑΜΟΥΛΑ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1864487/leukada-touristiko-istioforo-me-7-epivainodes-prosekrouse-se-ellimenismena-skafi-ston-kalamo/?utm_source=rss",
+      "title": "Λευκάδα: Τουριστικό ιστιοφόρο με 7 επιβαίνοντες προσέκρουσε σε ελλιμενισμένα σκάφη στον Κάλαμο",
+      "normalized_title": "ΛΕΥΚΑΔΑ: ΤΟΥΡΙΣΤΙΚΟ ΙΣΤΙΟΦΟΡΟ ΜΕ 7 ΕΠΙΒΑΙΝΟΝΤΕΣ ΠΡΟΣΕΚΡΟΥΣΕ ΣΕ ΕΛΛΙΜΕΝΙΣΜΕΝΑ ΣΚΑΦΗ ΣΤΟΝ ΚΑΛΑΜΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864466/fotia-stin-potamoula-aitoloakarnanias-minuma-apo-to-112-gia-etoimotita/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864465/tautopoiithike-o-odigos-tou-vutioforou-pou-ekane-epikinduni-prosperasi-se-tuflo-simeio-sti-limni-plastira/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864487/leukada-touristiko-istioforo-me-7-epivainodes-prosekrouse-se-ellimenismena-skafi-ston-kalamo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864485/poies-upourgikes-apofaseis-gia-tis-adeies-ton-idiotikon-panepistimion-akurose-to-sumvoulio-tis-epikrateias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T12:52:36.514401+00:00"
+      "seen_at_utc": "2026-08-13T13:51:41.722200+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447377/elas-gia-ste-kai-idiotika-panepistimia-den-tha-epitrepsoyme-epikratisi-skopimotiton-kai-asydosias/",
-      "title": "ΕΛΑΣ για ΣτΕ και ιδιωτικά πανεπιστήμια: «Δεν θα επιτρέψουμε επικράτηση σκοπιμοτήτων και ασυδοσίας»",
-      "normalized_title": "ΕΛΑΣ ΓΙΑ ΣΤΕ ΚΑΙ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: «ΔΕΝ ΘΑ ΕΠΙΤΡΕΨΟΥΜΕ ΕΠΙΚΡΑΤΗΣΗ ΣΚΟΠΙΜΟΤΗΤΩΝ ΚΑΙ ΑΣΥΔΟΣΙΑΣ»",
+      "url": "https://www.efsyn.gr/kosmos/1447219/gallia-sto-edolio-i-misogynia-se-psifiakes-platformes-syllipseis-45-andron-meta-apo-polymini-ereyna/",
+      "title": "Γαλλία: Στο εδώλιο η μισογυνία σε ψηφιακές πλατφόρμες – Συλλήψεις 45 ανδρών μετά από πολύμηνη έρευνα",
+      "normalized_title": "ΓΑΛΛΙΑ: ΣΤΟ ΕΔΩΛΙΟ Η ΜΙΣΟΓΥΝΙΑ ΣΕ ΨΗΦΙΑΚΕΣ ΠΛΑΤΦΟΡΜΕΣ – ΣΥΛΛΗΨΕΙΣ 45 ΑΝΔΡΩΝ ΜΕΤΑ ΑΠΟ ΠΟΛΥΜΗΝΗ ΕΡΕΥΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447377/elas-gia-ste-kai-idiotika-panepistimia-den-tha-epitrepsoyme-epikratisi-skopimotiton-kai-asydosias/",
-        "https://www.efsyn.gr/ellada/1447374/kifisos-karampola-trion-ohimaton-sto-ypsos-toy-sef-ayximeni-i-kinisi-sto-simeio/"
+        "https://www.efsyn.gr/kosmos/1447219/gallia-sto-edolio-i-misogynia-se-psifiakes-platformes-syllipseis-45-andron-meta-apo-polymini-ereyna/",
+        "https://www.efsyn.gr/kosmos/1447383/protofanis-paremvasi-toy-amerikanoy-presvi-sto-israil-tromokrates-oi-epoikoi-poy-poliorkoyn-spitia-palaistinion/",
+        "https://www.efsyn.gr/ellada/1447386/kriti-dyo-trohaia-shedon-diadohika-ston-voak-karampola-epta-ohimaton/"
       ],
-      "seen_at_utc": "2026-08-13T13:30:06.538497+00:00"
+      "seen_at_utc": "2026-08-13T13:51:41.722161+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/sports/basketball/kykloforisan-ta-eisitiria-gia-to-filiko-tis-ethnikis-elladas-me-tin-kypro/",
-      "title": "Κυκλοφόρησαν τα εισιτήρια για το φιλικό της Εθνικής Ελλάδας με την Κύπρο",
-      "normalized_title": "ΚΥΚΛΟΦΟΡΗΣΑΝ ΤΑ ΕΙΣΙΤΗΡΙΑ ΓΙΑ ΤΟ ΦΙΛΙΚΟ ΤΗΣ ΕΘΝΙΚΗΣ ΕΛΛΑΔΑΣ ΜΕ ΤΗΝ ΚΥΠΡΟ",
+      "url": "https://www.in.gr/2026/08/13/politics/politiki-grammateia/nea-aristera-gia-apofasi-ste-gia-idiotika-panepistimia-na-katargithei-o-nomos-pierrakaki-tora/",
+      "title": "Νέα Αριστερά για απόφαση ΣτΕ για ιδιωτικά πανεπιστήμια: Να καταργηθεί ο νόμος Πιερρακάκη τώρα",
+      "normalized_title": "ΝΕΑ ΑΡΙΣΤΕΡΑ ΓΙΑ ΑΠΟΦΑΣΗ ΣΤΕ ΓΙΑ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΝΑ ΚΑΤΑΡΓΗΘΕΙ Ο ΝΟΜΟΣ ΠΙΕΡΡΑΚΑΚΗ ΤΩΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/sports/basketball/kykloforisan-ta-eisitiria-gia-to-filiko-tis-ethnikis-elladas-me-tin-kypro/",
-        "https://www.in.gr/2026/08/13/sports/football/panathinaikos-o-livai-gkarsia-allazei-ta-dedomena-stin-epithesi/"
+        "https://www.in.gr/2026/08/13/politics/politiki-grammateia/nea-aristera-gia-apofasi-ste-gia-idiotika-panepistimia-na-katargithei-o-nomos-pierrakaki-tora/",
+        "https://www.in.gr/2026/08/13/sports/basketball/euroleague/ayto-einai-to-deal-tou-olympiakou-gia-ton-entiage-pic/",
+        "https://www.in.gr/2026/08/13/in-science/technology/einai-i-apagoreysi-ton-social-media-i-kalyteri-lysi-gia-tous-neous-polloi-amfivalloun/",
+        "https://www.in.gr/2026/08/13/greece/taytopoiithike-o-odigos-tou-vytioforou-pou-ekane-egklimatiki-prosperasi-sti-limni-plastira/"
       ],
-      "seen_at_utc": "2026-08-13T13:30:06.538445+00:00"
+      "seen_at_utc": "2026-08-13T13:51:41.722115+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T13:30:06.538573+00:00"
+  "updated_at_utc": "2026-08-13T13:51:41.722287+00:00"
 }
