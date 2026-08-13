@@ -1,17 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/readers/564399259/peta-to-diploma-krata-tin-korniza/",
-      "title": "«Πέτα το δίπλωμα, κράτα την κορνίζα»",
-      "normalized_title": "«ΠΕΤΑ ΤΟ ΔΙΠΛΩΜΑ, ΚΡΑΤΑ ΤΗΝ ΚΟΡΝΙΖΑ»",
+      "url": "https://www.kathimerini.gr/world/564400453/o-rosikos-klonos-toy-starlink-richnei-ti-skia-toy-stin-oykrania/",
+      "title": "Ο ρωσικός «κλώνος» του Starlink ρίχνει τη σκιά του στην Ουκρανία",
+      "normalized_title": "Ο ΡΩΣΙΚΟΣ «ΚΛΩΝΟΣ» ΤΟΥ STARLINK ΡΙΧΝΕΙ ΤΗ ΣΚΙΑ ΤΟΥ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/readers/564399259/peta-to-diploma-krata-tin-korniza/",
-        "https://www.kathimerini.gr/opinion/readers/564399262/syntagografisi-kai-talaiporia/",
-        "https://www.kathimerini.gr/world/564399238/einai-to-pagomeno-giaoyrti-pio-ygieini-epilogi-apo-to-pagoto/",
-        "https://www.kathimerini.gr/opinion/readers/564399256/peri-trapezon-kai-pathogeneion/",
-        "https://www.kathimerini.gr/opinion/readers/564399253/ta-sofa-panta-epikaira-logia-toy-g-theotoka/"
+        "https://www.kathimerini.gr/world/564400453/o-rosikos-klonos-toy-starlink-richnei-ti-skia-toy-stin-oykrania/",
+        "https://www.kathimerini.gr/world/564400462/vretania-faratz-enantion-komi-skoypidoprosopoy/"
       ],
-      "seen_at_utc": "2026-08-13T13:17:26.973001+00:00"
+      "seen_at_utc": "2026-08-13T13:30:06.538396+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,29 +1270,25 @@
       "seen_at_utc": "2026-08-13T12:52:36.514401+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1447318/toyrismos-oi-protathlites-tis-epivatikis-kinisis-sto-eptamino-i-eikona-sta-14-perifereiaka-aerodromia/",
-      "title": "Τουρισμός: Οι «πρωταθλητές» της επιβατικής κίνησης στο επτάμηνο – Η εικόνα στα 14 περιφερειακά αεροδρόμια",
-      "normalized_title": "ΤΟΥΡΙΣΜΟΣ: ΟΙ «ΠΡΩΤΑΘΛΗΤΕΣ» ΤΗΣ ΕΠΙΒΑΤΙΚΗΣ ΚΙΝΗΣΗΣ ΣΤΟ ΕΠΤΑΜΗΝΟ – Η ΕΙΚΟΝΑ ΣΤΑ 14 ΠΕΡΙΦΕΡΕΙΑΚΑ ΑΕΡΟΔΡΟΜΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1447377/elas-gia-ste-kai-idiotika-panepistimia-den-tha-epitrepsoyme-epikratisi-skopimotiton-kai-asydosias/",
+      "title": "ΕΛΑΣ για ΣτΕ και ιδιωτικά πανεπιστήμια: «Δεν θα επιτρέψουμε επικράτηση σκοπιμοτήτων και ασυδοσίας»",
+      "normalized_title": "ΕΛΑΣ ΓΙΑ ΣΤΕ ΚΑΙ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: «ΔΕΝ ΘΑ ΕΠΙΤΡΕΨΟΥΜΕ ΕΠΙΚΡΑΤΗΣΗ ΣΚΟΠΙΜΟΤΗΤΩΝ ΚΑΙ ΑΣΥΔΟΣΙΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1447318/toyrismos-oi-protathlites-tis-epivatikis-kinisis-sto-eptamino-i-eikona-sta-14-perifereiaka-aerodromia/",
-        "https://www.efsyn.gr/ellada/1447358/vythistike-skafos-anoihta-toy-limanioy-tis-ierapetras-diasothike-o-kyvernitis/"
+        "https://www.efsyn.gr/politiki/1447377/elas-gia-ste-kai-idiotika-panepistimia-den-tha-epitrepsoyme-epikratisi-skopimotiton-kai-asydosias/",
+        "https://www.efsyn.gr/ellada/1447374/kifisos-karampola-trion-ohimaton-sto-ypsos-toy-sef-ayximeni-i-kinisi-sto-simeio/"
       ],
-      "seen_at_utc": "2026-08-13T13:17:26.973099+00:00"
+      "seen_at_utc": "2026-08-13T13:30:06.538497+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/13/greece/pyrkagies-maxi-me-tis-floges-se-xalkidiki-aitoloakarnania-kai-ileia-en-meso-isxyron-anemon-mparaz-minymaton-112/",
-      "title": "Πυρκαγιές: Μάχη με τις φλόγες σε Χαλκιδική, Αιτωλοακαρνανία και Ηλεία εν μέσω ισχυρών ανέμων – Μπαράζ μηνυμάτων 112",
-      "normalized_title": "ΠΥΡΚΑΓΙΕΣ: ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΕ ΧΑΛΚΙΔΙΚΗ, ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑ ΚΑΙ ΗΛΕΙΑ ΕΝ ΜΕΣΩ ΙΣΧΥΡΩΝ ΑΝΕΜΩΝ – ΜΠΑΡΑΖ ΜΗΝΥΜΑΤΩΝ 112",
+      "url": "https://www.in.gr/2026/08/13/sports/basketball/kykloforisan-ta-eisitiria-gia-to-filiko-tis-ethnikis-elladas-me-tin-kypro/",
+      "title": "Κυκλοφόρησαν τα εισιτήρια για το φιλικό της Εθνικής Ελλάδας με την Κύπρο",
+      "normalized_title": "ΚΥΚΛΟΦΟΡΗΣΑΝ ΤΑ ΕΙΣΙΤΗΡΙΑ ΓΙΑ ΤΟ ΦΙΛΙΚΟ ΤΗΣ ΕΘΝΙΚΗΣ ΕΛΛΑΔΑΣ ΜΕ ΤΗΝ ΚΥΠΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/13/greece/pyrkagies-maxi-me-tis-floges-se-xalkidiki-aitoloakarnania-kai-ileia-en-meso-isxyron-anemon-mparaz-minymaton-112/",
-        "https://www.in.gr/2026/08/13/life/culture-live/i-17xroni-sani-santler-ston-proto-tis-protagonistiko-rolo-eksoudeteronei-ta-klise/",
-        "https://www.in.gr/2026/08/13/world/to-thorikto-ton-23-dis-dolarion-pou-oramatizetai-o-tramp-tha-exei-paliosei-prin-kan-pesei-sto-nero/",
-        "https://www.in.gr/2026/08/13/greece/fotia-stin-potamoula-aitoloakarnanias-proeidopoiitiko-minyma-apo-to-112/",
-        "https://www.in.gr/2026/08/13/politics/epikairotita/elas-gia-apofasi-ste-gia-idiotika-panepistimia-de-tha-epitrepsoume-skopimotites-kai-asydosia-stin-anotati-ekpaideysi/",
-        "https://www.in.gr/2026/08/13/sports/basketball/i-anartisi-tou-arka-gia-tin-liza-itogia-to-mono-xroma-pou-den-tairiazei-sti-galanoleyki-einai-to-mayro-tou-ratsismou/"
+        "https://www.in.gr/2026/08/13/sports/basketball/kykloforisan-ta-eisitiria-gia-to-filiko-tis-ethnikis-elladas-me-tin-kypro/",
+        "https://www.in.gr/2026/08/13/sports/football/panathinaikos-o-livai-gkarsia-allazei-ta-dedomena-stin-epithesi/"
       ],
-      "seen_at_utc": "2026-08-13T13:17:26.973064+00:00"
+      "seen_at_utc": "2026-08-13T13:30:06.538445+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T13:17:26.973170+00:00"
+  "updated_at_utc": "2026-08-13T13:30:06.538573+00:00"
 }
