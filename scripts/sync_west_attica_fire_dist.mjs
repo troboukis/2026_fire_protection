@@ -94,6 +94,37 @@ function standaloneConsentScript(measurementId) {
     disableGoogleAnalytics();
   }
 
+  function mountFireWatchFooter() {
+    if (document.querySelector('.firewatch-footer-shell')) return;
+
+    const shell = document.createElement('div');
+    shell.className = 'firewatch-footer-shell';
+    shell.innerHTML = \`<footer class="site-footer">
+      © \${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms">Όροι χρήσης</a> · <a href="/privacy">Απόρρητο &amp; cookies</a> · <button type="button">Ρυθμίσεις cookies</button>
+    </footer>\`;
+
+    shell.querySelector('button')?.addEventListener('click', () => {
+      CookieConsent.showPreferences();
+    });
+    document.body.appendChild(shell);
+
+    const syncFooterHeight = () => {
+      document.documentElement.style.setProperty(
+        '--firewatch-footer-height',
+        \`\${shell.getBoundingClientRect().height}px\`,
+      );
+    };
+    syncFooterHeight();
+
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(syncFooterHeight).observe(shell);
+    } else {
+      window.addEventListener('resize', syncFooterHeight);
+    }
+  }
+
+  mountFireWatchFooter();
+
   void CookieConsent.run({
     mode: 'opt-in',
     revision: 1,
@@ -196,6 +227,73 @@ function standaloneConsentScript(measurementId) {
 })();\n`
 }
 
+const standaloneFooterCss = `:root {
+  --firewatch-footer-height: 0px;
+}
+
+.wwf-page {
+  bottom: var(--firewatch-footer-height) !important;
+}
+
+.firewatch-footer-shell {
+  --paper: #f7f5ee;
+  --paper-2: #f1eee5;
+  --ink: #111111;
+  --ink-soft: #4d4d4d;
+  --ink-faint: #89857c;
+  --line: #cfc8bb;
+  --accent: #d3482d;
+  --font-sans: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, Menlo, monospace;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  box-sizing: border-box;
+  padding: 0 max(1rem, env(safe-area-inset-right)) calc(0.55rem + env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+  border-top: 1px solid var(--line);
+  background: #efede4;
+}
+
+.site-footer {
+  margin-top: 0;
+  padding: 0.35rem 0 0;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--ink-soft);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.site-footer button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible,
+.site-footer button:hover,
+.site-footer button:focus-visible {
+  color: var(--accent);
+  outline: none;
+}
+`
+
 async function syncDist() {
   const sourceIndex = await readFile(path.join(sourceDir, 'index.html'), 'utf8')
 
@@ -230,11 +328,17 @@ async function syncDist() {
     standaloneConsentScript(measurementId),
     'utf8',
   )
+  await writeFile(
+    path.join(vendorDir, 'standalone-footer.css'),
+    standaloneFooterCss,
+    'utf8',
+  )
 
   const headMarkup = [
     '    <meta name="description" content="Διαδραστικός χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική το 2026." />',
     `    <link rel="canonical" href="https://fire-watch-app.gr${expectedBase}" />`,
     `    <link rel="stylesheet" href="${expectedBase}firewatch/cookieconsent.css" />`,
+    `    <link rel="stylesheet" href="${expectedBase}firewatch/standalone-footer.css" />`,
   ].join('\n')
   const bodyMarkup = [
     `    <script src="${expectedBase}firewatch/cookieconsent.umd.js"></script>`,
