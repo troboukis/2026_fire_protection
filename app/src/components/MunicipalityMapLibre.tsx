@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import * as maplibregl from 'maplibre-gl'
-import { LngLatBounds, type ErrorEvent as MapLibreErrorEvent, type Map as MapLibreMap } from 'maplibre-gl'
+import { LngLatBounds, type ErrorEvent as MapLibreErrorEvent, type GeoJSONSource, type Map as MapLibreMap, type StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { logError } from '../lib/logger'
 
@@ -36,6 +36,7 @@ type MunicipalityMapLibreProps = {
   onFeatureHover?: (interaction: MunicipalityMapLibreInteraction) => void
   onFeatureLeave?: () => void
   onFeatureClick?: (interaction: MunicipalityMapLibreInteraction) => void
+  onBackgroundClick?: () => void
 }
 
 type LayerVisibility = Pick<
@@ -56,9 +57,10 @@ function layerVisibility(visible: boolean): 'visible' | 'none' {
 }
 
 function parseInteraction(
-  event: maplibregl.MapLayerMouseEvent,
+  feature: maplibregl.MapGeoJSONFeature | undefined,
+  point: maplibregl.Point,
 ): MunicipalityMapLibreInteraction | null {
-  const properties = event.features?.[0]?.properties
+  const properties = feature?.properties
   if (!properties) return null
   const id = String(properties.interactionId ?? '')
   const kind = String(properties.kind ?? '') as MunicipalityMapLibreInteraction['kind']
@@ -78,10 +80,10 @@ function parseInteraction(
   return {
     id,
     kind,
-    point: { x: event.point.x, y: event.point.y },
+    point: { x: point.x, y: point.y },
     fallback: {
-      x: Number.isFinite(fallbackX) ? fallbackX : event.point.x,
-      y: Number.isFinite(fallbackY) ? fallbackY : event.point.y,
+      x: Number.isFinite(fallbackX) ? fallbackX : point.x,
+      y: Number.isFinite(fallbackY) ? fallbackY : point.y,
     },
     title: String(properties.tooltipTitle ?? ''),
     items,
@@ -104,35 +106,35 @@ function addInteractionLayers(map: MapLibreMap, data: MunicipalityMapLibreData, 
     type: 'circle',
     source: 'municipality-works',
     layout: { visibility: layerVisibility(visibility.showWorks) },
-    paint: { 'circle-radius': 10, 'circle-opacity': 0 },
+    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-fire-point-hit',
     type: 'circle',
     source: 'municipality-fire-points',
     layout: { visibility: layerVisibility(visibility.showFires && visibility.fireViewMode === 'points') },
-    paint: { 'circle-radius': 12, 'circle-opacity': 0 },
+    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-fire-shape-hit',
     type: 'fill',
     source: 'municipality-fire-shapes',
     layout: { visibility: layerVisibility(visibility.showFires && visibility.fireViewMode === 'shapes') },
-    paint: { 'fill-color': '#000000', 'fill-opacity': 0 },
+    paint: { 'fill-color': '#000000', 'fill-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-current-fire-hit',
     type: 'circle',
     source: 'municipality-active-fires',
     layout: { visibility: layerVisibility(visibility.showActiveFires) },
-    paint: { 'circle-radius': 12, 'circle-opacity': 0 },
+    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-firms-hit',
     type: 'circle',
     source: 'municipality-firms',
     layout: { visibility: layerVisibility(visibility.showFirms) },
-    paint: { 'circle-radius': 10, 'circle-opacity': 0 },
+    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
   })
 }
 
@@ -149,7 +151,39 @@ function updateInteractionLayerVisibility(map: MapLibreMap, visibility: LayerVis
   }
 }
 
+function updateInteractionSources(map: MapLibreMap, data: MunicipalityMapLibreData) {
+  const sources: Array<[string, GeoJSON.FeatureCollection]> = [
+    ['municipality-works', data.works],
+    ['municipality-fire-points', data.firePoints],
+    ['municipality-fire-shapes', data.fireShapes],
+    ['municipality-active-fires', data.activeFires],
+    ['municipality-firms', data.firms],
+  ]
+  for (const [id, sourceData] of sources) {
+    const source = map.getSource(id) as GeoJSONSource | undefined
+    source?.setData(sourceData)
+  }
+}
+
 const OPENFREEMAP_POSITRON_STYLE = 'https://tiles.openfreemap.org/styles/positron'
+const BASEMAP_LOAD_TIMEOUT_MS = 8_000
+
+function getFallbackBasemapStyle(): StyleSpecification {
+  return {
+    version: 8,
+    sources: {
+      basemap: {
+        type: 'raster',
+        tiles: ['https://tile.opentopomap.org/{z}/{x}/{y}.png'],
+        tileSize: 256,
+        minzoom: 0,
+        maxzoom: 17,
+        attribution: 'Map data © OpenStreetMap contributors; Map style © OpenTopoMap',
+      },
+    },
+    layers: [{ id: 'basemap', type: 'raster', source: 'basemap' }],
+  }
+}
 
 function getGeometryBounds(geometry: GeoJSON.Polygon | GeoJSON.MultiPolygon): LngLatBounds {
   const bounds = new LngLatBounds()
@@ -308,17 +342,21 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const overlayRef = useRef<SVGSVGElement | null>(null)
   const mapRef = useRef<MapLibreMap | null>(null)
+  const dataRef = useRef(props.data)
   const visibilityRef = useRef<LayerVisibility>(props)
   const callbacksRef = useRef({
     onFeatureHover: props.onFeatureHover,
     onFeatureLeave: props.onFeatureLeave,
     onFeatureClick: props.onFeatureClick,
+    onBackgroundClick: props.onBackgroundClick,
   })
   visibilityRef.current = props
+  dataRef.current = props.data
   callbacksRef.current = {
     onFeatureHover: props.onFeatureHover,
     onFeatureLeave: props.onFeatureLeave,
     onFeatureClick: props.onFeatureClick,
+    onBackgroundClick: props.onBackgroundClick,
   }
 
   useEffect(() => {
@@ -357,14 +395,14 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
     container.append(overlay)
     overlayRef.current = overlay
 
-    const draw = () => drawGeographicLayers(map, overlay, props.feature, props.data, visibilityRef.current)
+    const draw = () => drawGeographicLayers(map, overlay, props.feature, dataRef.current, visibilityRef.current)
     map.on('render', draw)
     map.on('move', draw)
     map.on('resize', draw)
     draw()
 
     const onMouseMove = (event: maplibregl.MapLayerMouseEvent) => {
-      const interaction = parseInteraction(event)
+      const interaction = parseInteraction(event.features?.[0], event.point)
       if (!interaction) return
       map.getCanvas().style.cursor = 'pointer'
       callbacksRef.current.onFeatureHover?.(interaction)
@@ -373,24 +411,57 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       map.getCanvas().style.cursor = ''
       callbacksRef.current.onFeatureLeave?.()
     }
-    const onClick = (event: maplibregl.MapLayerMouseEvent) => {
-      const interaction = parseInteraction(event)
-      if (!interaction) return
-      event.originalEvent.stopPropagation()
-      callbacksRef.current.onFeatureClick?.(interaction)
+    const onClick = (event: maplibregl.MapMouseEvent) => {
+      const touchRadius = 22
+      const features = map.queryRenderedFeatures(
+        [
+          [event.point.x - touchRadius, event.point.y - touchRadius],
+          [event.point.x + touchRadius, event.point.y + touchRadius],
+        ],
+        { layers: [...INTERACTIVE_LAYERS] },
+      )
+      const interaction = parseInteraction(features[0], event.point)
+      if (interaction) callbacksRef.current.onFeatureClick?.(interaction)
+      else callbacksRef.current.onBackgroundClick?.()
     }
-    const onLoad = () => {
-      addInteractionLayers(map, props.data, visibilityRef.current)
-      for (const layerId of INTERACTIVE_LAYERS) {
-        map.on('mousemove', layerId, onMouseMove)
-        map.on('mouseleave', layerId, onMouseLeave)
-        map.on('click', layerId, onClick)
+    const onStyleLoad = () => {
+      if (!map.getSource('municipality-works')) {
+        addInteractionLayers(map, dataRef.current, visibilityRef.current)
       }
     }
-    map.on('load', onLoad)
+    for (const layerId of INTERACTIVE_LAYERS) {
+      map.on('mousemove', layerId, onMouseMove)
+      map.on('mouseleave', layerId, onMouseLeave)
+    }
+    map.on('style.load', onStyleLoad)
+    map.on('click', onClick)
+
+    const resizeObserver = new ResizeObserver(() => map.resize())
+    resizeObserver.observe(container)
+
+    let usingFallbackStyle = false
+    let primaryStyleReady = false
+    const switchToFallbackStyle = () => {
+      if (usingFallbackStyle || primaryStyleReady) return
+      usingFallbackStyle = true
+      map.setStyle(getFallbackBasemapStyle())
+    }
+    const onIdle = () => {
+      if (usingFallbackStyle) return
+      const basemapLayerIds = (map.getStyle().layers ?? [])
+        .map((layer) => layer.id)
+        .filter((id) => !INTERACTIVE_LAYERS.includes(id as typeof INTERACTIVE_LAYERS[number]))
+      const hasRenderedBasemapFeatures = basemapLayerIds.length > 0
+        && map.queryRenderedFeatures(undefined, { layers: basemapLayerIds }).length > 0
+      if (hasRenderedBasemapFeatures) primaryStyleReady = true
+      else switchToFallbackStyle()
+    }
+    const basemapTimeout = window.setTimeout(switchToFallbackStyle, BASEMAP_LOAD_TIMEOUT_MS)
+    map.once('idle', onIdle)
 
     map.on('error', (event: MapLibreErrorEvent) => {
       if (import.meta.env.DEV) logError('[MunicipalityMapLibre] map failed', event.error)
+      switchToFallbackStyle()
     })
 
     return () => {
@@ -399,25 +470,31 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       map.off('resize', draw)
       map.off('styledata', collapseAttributionOnce)
       map.off('sourcedata', collapseAttributionOnce)
-      map.off('load', onLoad)
+      map.off('style.load', onStyleLoad)
+      map.off('click', onClick)
+      map.off('idle', onIdle)
+      window.clearTimeout(basemapTimeout)
+      resizeObserver.disconnect()
       for (const layerId of INTERACTIVE_LAYERS) {
         map.off('mousemove', layerId, onMouseMove)
         map.off('mouseleave', layerId, onMouseLeave)
-        map.off('click', layerId, onClick)
       }
       overlay.remove()
       overlayRef.current = null
       mapRef.current = null
       map.remove()
     }
-  }, [props.data, props.feature])
+  }, [props.feature])
 
   useEffect(() => {
     const map = mapRef.current
     const overlay = overlayRef.current
     if (!map || !overlay) return
     drawGeographicLayers(map, overlay, props.feature, props.data, visibilityRef.current)
-    if (map.isStyleLoaded()) updateInteractionLayerVisibility(map, visibilityRef.current)
+    if (map.isStyleLoaded()) {
+      updateInteractionSources(map, props.data)
+      updateInteractionLayerVisibility(map, visibilityRef.current)
+    }
   }, [props.data, props.feature, props.fireViewMode, props.showActiveFires, props.showBoundary, props.showFires, props.showFirms, props.showWorks])
 
   return (
