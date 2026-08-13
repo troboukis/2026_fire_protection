@@ -58,7 +58,7 @@ function layerVisibility(visible: boolean): 'visible' | 'none' {
 
 function parseInteraction(
   feature: maplibregl.MapGeoJSONFeature | undefined,
-  point: maplibregl.Point,
+  point: { x: number; y: number },
 ): MunicipalityMapLibreInteraction | null {
   const properties = feature?.properties
   if (!properties) return null
@@ -106,14 +106,14 @@ function addInteractionLayers(map: MapLibreMap, data: MunicipalityMapLibreData, 
     type: 'circle',
     source: 'municipality-works',
     layout: { visibility: layerVisibility(visibility.showWorks) },
-    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
+    paint: { 'circle-radius': 10, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-fire-point-hit',
     type: 'circle',
     source: 'municipality-fire-points',
     layout: { visibility: layerVisibility(visibility.showFires && visibility.fireViewMode === 'points') },
-    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
+    paint: { 'circle-radius': 7, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-fire-shape-hit',
@@ -127,14 +127,14 @@ function addInteractionLayers(map: MapLibreMap, data: MunicipalityMapLibreData, 
     type: 'circle',
     source: 'municipality-active-fires',
     layout: { visibility: layerVisibility(visibility.showActiveFires) },
-    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
+    paint: { 'circle-radius': 8, 'circle-opacity': 0.001 },
   })
   map.addLayer({
     id: 'municipality-firms-hit',
     type: 'circle',
     source: 'municipality-firms',
     layout: { visibility: layerVisibility(visibility.showFirms) },
-    paint: { 'circle-radius': 22, 'circle-opacity': 0.001 },
+    paint: { 'circle-radius': 7, 'circle-opacity': 0.001 },
   })
 }
 
@@ -411,16 +411,30 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       map.getCanvas().style.cursor = ''
       callbacksRef.current.onFeatureLeave?.()
     }
-    const onClick = (event: maplibregl.MapMouseEvent) => {
-      const touchRadius = 22
+    const interactionAtPoint = (point: { x: number; y: number }) => {
+      const availableLayers = INTERACTIVE_LAYERS.filter((layerId) => map.getLayer(layerId))
+      if (availableLayers.length === 0) return null
       const features = map.queryRenderedFeatures(
-        [
-          [event.point.x - touchRadius, event.point.y - touchRadius],
-          [event.point.x + touchRadius, event.point.y + touchRadius],
-        ],
-        { layers: [...INTERACTIVE_LAYERS] },
+        [point.x, point.y],
+        { layers: availableLayers },
       )
-      const interaction = parseInteraction(features[0], event.point)
+      return parseInteraction(features[0], point)
+    }
+    let lastHandledTouchAt = 0
+    const onPointerDown = (event: PointerEvent) => {
+      if (event.pointerType === 'mouse') return
+      const rect = map.getCanvas().getBoundingClientRect()
+      const point = { x: event.clientX - rect.left, y: event.clientY - rect.top }
+      const interaction = interactionAtPoint(point)
+      if (!interaction) return
+      event.preventDefault()
+      event.stopPropagation()
+      lastHandledTouchAt = performance.now()
+      callbacksRef.current.onFeatureClick?.(interaction)
+    }
+    const onClick = (event: maplibregl.MapMouseEvent) => {
+      if (performance.now() - lastHandledTouchAt < 700) return
+      const interaction = interactionAtPoint(event.point)
       if (interaction) callbacksRef.current.onFeatureClick?.(interaction)
       else callbacksRef.current.onBackgroundClick?.()
     }
@@ -435,6 +449,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
     }
     map.on('style.load', onStyleLoad)
     map.on('click', onClick)
+    map.getCanvas().addEventListener('pointerdown', onPointerDown, { capture: true })
 
     const resizeObserver = new ResizeObserver(() => map.resize())
     resizeObserver.observe(container)
@@ -472,6 +487,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       map.off('sourcedata', collapseAttributionOnce)
       map.off('style.load', onStyleLoad)
       map.off('click', onClick)
+      map.getCanvas().removeEventListener('pointerdown', onPointerDown, { capture: true })
       map.off('idle', onIdle)
       window.clearTimeout(basemapTimeout)
       resizeObserver.disconnect()

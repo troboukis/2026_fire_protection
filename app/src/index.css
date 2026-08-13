@@ -7550,7 +7550,6 @@ main {
 .municipality-profile-hero__point-tooltip {
   position: absolute;
   z-index: 3;
-  transform: translateY(-50%);
   display: grid;
   gap: 0.18rem;
   max-width: min(15rem, calc(100% - 1.5rem));
@@ -7558,7 +7557,7 @@ main {
 }
 
 .municipality-profile-hero__point-tooltip.app-tooltip {
-  transform: translateY(-50%);
+  transform: translateY(calc(-100% - 6px));
 }
 
 .municipality-profile-hero__point-tooltip--stacked .tooltip-type-separator {
@@ -8457,6 +8456,10 @@ main {
   .municipality-profile-hero__map-frame {
     min-height: 34rem;
     height: min(72rem, 145vw);
+  }
+
+  .municipality-profile-hero__point-tooltip.app-tooltip {
+    transform: translateY(calc(-100% - 2px));
   }
 
   .municipality-profile-hero__map-footer {
