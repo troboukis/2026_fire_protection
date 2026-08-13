@@ -237,6 +237,7 @@ type MunicipalityPointTooltip = {
   y: number
   title: string
   items: string[]
+  placement?: 'above' | 'below'
   isStacked?: boolean
   stackedRows?: Array<{
     label: string
@@ -2157,6 +2158,7 @@ export default function MunicipalitiesPage() {
       y: interaction.point.y,
       title: interaction.title,
       items: interaction.items,
+      placement: interaction.point.y < 96 ? 'below' : 'above',
       isStacked: false,
     })
   }
@@ -2168,16 +2170,19 @@ export default function MunicipalitiesPage() {
       return
     }
 
-    setPointTooltip((current) => current?.id === interaction.id
-      ? null
-      : {
+    setPointTooltip((current) => (
+      !isMobileMunicipalityMap && current?.id === interaction.id
+        ? null
+        : {
           id: interaction.id,
           x: interaction.point.x,
           y: interaction.point.y,
           title: interaction.title,
           items: interaction.items,
+          placement: interaction.point.y < 96 ? 'below' : 'above',
           isStacked: false,
-        })
+        }
+    ))
   }
 
   const downloadContractPdf = async (contract: ContractModalContract) => {
@@ -4076,7 +4081,10 @@ export default function MunicipalitiesPage() {
                         className={`municipality-profile-hero__point-tooltip app-tooltip${pointTooltip.isStacked ? ' municipality-profile-hero__point-tooltip--stacked' : ''}`}
                         style={{
                           left: `${Math.max(12, pointTooltip.x + 14)}px`,
-                          top: `${Math.max(12, pointTooltip.y)}px`,
+                          top: `${pointTooltip.placement === 'below'
+                            ? pointTooltip.y + 14
+                            : Math.max(12, pointTooltip.y - 14)}px`,
+                          transform: pointTooltip.placement === 'below' ? 'none' : undefined,
                         }}
                       >
                         <strong>{pointTooltip.title}</strong>
