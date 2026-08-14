@@ -1,17 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564401332/eimai-sad/",
-      "title": "Είμαι SAD",
-      "normalized_title": "ΕΙΜΑΙ SAD",
+      "url": "https://www.kathimerini.gr/economy/local/564401599/santorini-dieyrynetai-to-pagoma-ton-oikodomikon-adeion/",
+      "title": "Σαντορίνη: Διευρύνεται το «πάγωμα» των οικοδομικών αδειών",
+      "normalized_title": "ΣΑΝΤΟΡΙΝΗ: ΔΙΕΥΡΥΝΕΤΑΙ ΤΟ «ΠΑΓΩΜΑ» ΤΩΝ ΟΙΚΟΔΟΜΙΚΩΝ ΑΔΕΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564401332/eimai-sad/",
-        "https://www.kathimerini.gr/opinion/564401347/ta-choria-otan-svisoyn-ta-fota/",
-        "https://www.kathimerini.gr/opinion/564401497/ta-kleista-alsi/",
-        "https://www.kathimerini.gr/opinion/564401350/trikymia-logo-leipsydrias/",
-        "https://www.kathimerini.gr/economy/international/564401614/vretania-sto-0-4-i-anaptyxi-para-ton-polemo-sto-iran/"
+        "https://www.kathimerini.gr/economy/local/564401599/santorini-dieyrynetai-to-pagoma-ton-oikodomikon-adeion/",
+        "https://www.kathimerini.gr/society/564402907/thessaloniki-fotia-se-diamerisma-stin-ano-poli-ta-ximeromata/",
+        "https://www.kathimerini.gr/world/564402904/iaponia-tesseris-nekroi-apo-katarraktodeis-vrochoptoseis-konta-sto-tokio/",
+        "https://www.kathimerini.gr/athletics/football/564401452/o-chrysos-kyklos-ekleise/",
+        "https://www.kathimerini.gr/politics/564402898/tilefoniki-epikoinonia-gerapetriti-aragtsi/",
+        "https://www.kathimerini.gr/world/564402895/atychima-ryanair-sti-thessaloniki-vrethikan-ypoleimmata-ptinoy-ston-kinitira-toy-boeing-737/",
+        "https://www.kathimerini.gr/world/564402889/seismos-stin-kolomvia-i-elpida-na-vrethoyn-epizontes-svinei/",
+        "https://www.kathimerini.gr/opinion/564401335/anazitontas-ti-chameni-aythentikotita/"
       ],
-      "seen_at_utc": "2026-08-14T05:30:10.257961+00:00"
+      "seen_at_utc": "2026-08-14T05:51:27.540376+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,36 +1266,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864676/sto-mikroskopio-video-apo-tin-pisina-opou-pnigike-o-4hronos-stin-paro-horis-pistopoiisi-o-nauagosostis-idioktiti/?utm_source=rss",
-      "title": "Στο μικροσκόπιο βίντεο από την πισίνα όπου πνίγηκε ο 4χρονος στην Πάρο, χωρίς πιστοποίηση ο ναυαγοσώστης - ιδιοκτήτη",
-      "normalized_title": "ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΒΙΝΤΕΟ ΑΠΟ ΤΗΝ ΠΙΣΙΝΑ ΟΠΟΥ ΠΝΙΓΗΚΕ Ο 4ΧΡΟΝΟΣ ΣΤΗΝ ΠΑΡΟ, ΧΩΡΙΣ ΠΙΣΤΟΠΟΙΗΣΗ Ο ΝΑΥΑΓΟΣΩΣΤΗΣ - ΙΔΙΟΚΤΗΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1864689/fotia-se-diamerisma-stin-ano-poli-tis-thessalonikis-apomakrunthikan-oi-katoikoi-tou-ktiriou/?utm_source=rss",
+      "title": "Φωτιά σε διαμέρισμα στην Άνω Πόλη της Θεσσαλονίκης, απομακρύνθηκαν οι κάτοικοι του κτηρίου",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗΝ ΑΝΩ ΠΟΛΗ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΑΠΟΜΑΚΡΥΝΘΗΚΑΝ ΟΙ ΚΑΤΟΙΚΟΙ ΤΟΥ ΚΤΗΡΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864676/sto-mikroskopio-video-apo-tin-pisina-opou-pnigike-o-4hronos-stin-paro-horis-pistopoiisi-o-nauagosostis-idioktiti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864675/ti-poines-adimetopizei-o-odigos-tou-vutioforou-gia-tin-eglimatiki-prosperasi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864689/fotia-se-diamerisma-stin-ano-poli-tis-thessalonikis-apomakrunthikan-oi-katoikoi-tou-ktiriou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864686/sovato-trohaio-sti-thessaloniki-duo-ih-sugroustikan-kai-epesan-pano-se-alla-exi-stathmeumena-duo-traumaties/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864684/purgos-horis-energo-metopo-i-megali-fotia-stin-alfeiousa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T05:30:10.258068+00:00"
+      "seen_at_utc": "2026-08-14T05:51:27.540536+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447672/aparadekti-paraleipsi/",
-      "title": "Απαράδεκτη παράλειψη",
-      "normalized_title": "ΑΠΑΡΑΔΕΚΤΗ ΠΑΡΑΛΕΙΨΗ",
+      "url": "https://www.efsyn.gr/ellada/1447681/thessaloniki-sygkroystikan-dyo-aytokinita-kai-epesan-pano-se-stathmeymena-ih-traymatistikan-dyo-atoma/",
+      "title": "Θεσσαλονίκη: Συγκρούστηκαν δύο αυτοκίνητα και έπεσαν πάνω σε σταθμευμένα ΙΧ – Τραυματίστηκαν δύο άτομα",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΓΚΡΟΥΣΤΗΚΑΝ ΔΥΟ ΑΥΤΟΚΙΝΗΤΑ ΚΑΙ ΕΠΕΣΑΝ ΠΑΝΩ ΣΕ ΣΤΑΘΜΕΥΜΕΝΑ ΙΧ – ΤΡΑΥΜΑΤΙΣΤΗΚΑΝ ΔΥΟ ΑΤΟΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447672/aparadekti-paraleipsi/",
-        "https://www.efsyn.gr/ellada/1447665/trohaio-sti-halkidiki-epistrefei-sti-moldavia-i-7hroni-poy-ehase-tin-oikogeneia-tis/",
-        "https://www.efsyn.gr/ellada/1447658/paros-vinteo-kategrapse-tis-teleytaies-stigmes-toy-4hronoy-stin-pisina-horis-pistopoiisi-o-nayagosostis/"
+        "https://www.efsyn.gr/ellada/1447681/thessaloniki-sygkroystikan-dyo-aytokinita-kai-epesan-pano-se-stathmeymena-ih-traymatistikan-dyo-atoma/",
+        "https://www.efsyn.gr/ellada/1447676/peiraias-sygkentrosi-diamartyrias-sto-limani-gia-tin-afixi-toy-israilinoy-kroyazieroploioy-crown-iris-eikones/"
       ],
-      "seen_at_utc": "2026-08-14T05:30:10.258033+00:00"
+      "seen_at_utc": "2026-08-14T05:51:27.540489+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/world/tilefoniki-epikoinonia-aragtsi-me-gerapetriti-sto-epikentro-ta-stena-tou-ormouz/",
-      "title": "Τηλεφωνική επικοινωνία Αραγτσί με Γεραπετρίτη – Στο επίκεντρο τα Στενά του Ορμούζ",
-      "normalized_title": "ΤΗΛΕΦΩΝΙΚΗ ΕΠΙΚΟΙΝΩΝΙΑ ΑΡΑΓΤΣΙ ΜΕ ΓΕΡΑΠΕΤΡΙΤΗ – ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ",
+      "url": "https://www.in.gr/2026/08/14/go-fun/fizz/dimitris-papaioannou-thymatai-tous-olympiakous-agones-22-xronia-meta/",
+      "title": "Δημήτρης Παπαϊωάννου: Θυμάται τους Ολύμπιακούς αγώνες 22 χρόνια μετά",
+      "normalized_title": "ΔΗΜΗΤΡΗΣ ΠΑΠΑΙΩΑΝΝΟΥ: ΘΥΜΑΤΑΙ ΤΟΥΣ ΟΛΥΜΠΙΑΚΟΥΣ ΑΓΩΝΕΣ 22 ΧΡΟΝΙΑ ΜΕΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/world/tilefoniki-epikoinonia-aragtsi-me-gerapetriti-sto-epikentro-ta-stena-tou-ormouz/",
-        "https://www.in.gr/2026/08/14/world/katarripsi-drone-ston-enaerio-xoro-tis-letonias-apo-maxitiko-tou-nato/"
+        "https://www.in.gr/2026/08/14/go-fun/fizz/dimitris-papaioannou-thymatai-tous-olympiakous-agones-22-xronia-meta/",
+        "https://www.in.gr/2026/08/14/world/ipa-anagnorizoun-tin-iaponiki-kyriarxia-stis-kouriles-nisous-pou-episkefthike-o-poutin/",
+        "https://www.in.gr/2026/08/14/greece/dekapentaygoustos-ta-panigyria-ta-ethima-kai-oi-paradoseis-sta-dodekanisa/"
       ],
-      "seen_at_utc": "2026-08-14T05:30:10.258013+00:00"
+      "seen_at_utc": "2026-08-14T05:51:27.540441+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T05:30:10.258146+00:00"
+  "updated_at_utc": "2026-08-14T05:51:27.540630+00:00"
 }
