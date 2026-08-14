@@ -1,22 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564403441/pyrkagia-se-chamili-vlastisi-stin-periochi-agora-dramas/",
-      "title": "Πυρκαγιά σε χαμηλή βλάστηση στην περιοχή Αγορά Δράμας",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΓΟΡΑ ΔΡΑΜΑΣ",
+      "url": "https://www.kathimerini.gr/k/oinoxoos/564373528/o-andras-poy-den-itan-pia-o-idios/",
+      "title": "Ο άνδρας που δεν ήταν πια ο ίδιος",
+      "normalized_title": "Ο ΑΝΔΡΑΣ ΠΟΥ ΔΕΝ ΗΤΑΝ ΠΙΑ Ο ΙΔΙΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564403441/pyrkagia-se-chamili-vlastisi-stin-periochi-agora-dramas/",
-        "https://www.kathimerini.gr/society/564403408/thessaloniki-oi-megales-pyrkagies-ton-teleytaion-chronon-sti-chalkidiki/",
-        "https://www.kathimerini.gr/athletics/analysis/564403423/to-megalo-pisogyrisma-toy-paok/",
-        "https://www.kathimerini.gr/politics/government/564401152/o-diplos-pichys-gia-ti-nea-dimokratia/",
-        "https://www.kathimerini.gr/opinion/sketches/564403276/skitso-toy-ilia-makri-14-08-26/",
-        "https://www.kathimerini.gr/politics/amyna/564401197/fthinoporo-exelixeon-gia-ta-exoplistika-programmata/",
-        "https://www.kathimerini.gr/society/564403426/preveza-sygkroysi-fortigoy-me-tria-ich-stin-ypothalassia-siragga-aktioy-yparchoyn-traymaties/",
-        "https://www.kathimerini.gr/society/564403183/akyroseis-kai-allages-se-aktoploika-dromologia-logo-dysmenon-kairikon-synthikon/",
-        "https://www.kathimerini.gr/world/564403405/i-polonia-leei-oti-apetrepse-rosiko-schedio-dolofonias-amerikanoy-politi-sti-varsovia/",
-        "https://www.kathimerini.gr/world/564403345/romi-i-istoriki-gefyra-toy-nerona-anadythike-apo-ton-tiveri-en-meso-paratetamenis-anomvrias/"
+        "https://www.kathimerini.gr/k/oinoxoos/564373528/o-andras-poy-den-itan-pia-o-idios/",
+        "https://www.kathimerini.gr/society/564403486/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-se-ayximeni-epifylaki-deka-perifereies/",
+        "https://www.kathimerini.gr/life/auto/564403465/tria-fiat-eos-19-000-eyro-pandina-500-hybrid-kai-grande-panda/",
+        "https://www.kathimerini.gr/society/reportaz/564399172/skrolarontas-erchetai-i-kovetai-i-orexi/",
+        "https://www.kathimerini.gr/society/564403480/anoichtos-ton-dekapentaygoysto-o-lofos-lykavittoy-paramenei-kleistos-o-lofos-finopoyloy/",
+        "https://www.kathimerini.gr/columns/564403438/to-giati-tora-toy-mpezos-sti-liverpoyl-kai-ton-aigker-koysner-stoys-leikers/"
       ],
-      "seen_at_utc": "2026-08-14T11:18:16.437968+00:00"
+      "seen_at_utc": "2026-08-14T12:17:44.763881+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,39 +1264,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864843/duo-sullipseis-kai-mia-tautopoiisi-gia-epithesi-se-varos-tileoptikou-sunergeiou/?utm_source=rss",
-      "title": "Δύο συλλήψεις και μία ταυτοποίηση για επίθεση σε βάρος τηλεοπτικού συνεργείου κατά τη διάρκεια της φωτιάς στη Χαλκιδική",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΚΑΙ ΜΙΑ ΤΑΥΤΟΠΟΙΗΣΗ ΓΙΑ ΕΠΙΘΕΣΗ ΣΕ ΒΑΡΟΣ ΤΗΛΕΟΠΤΙΚΟΥ ΣΥΝΕΡΓΕΙΟΥ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΤΗΣ ΦΩΤΙΑΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1864858/idrusi-idiotikon-nomikon-sholon-proupothetei-shediasmo-kai-diavouleusi-leei-i-olomeleia-ton-dikigorikon-sullogon/?utm_source=rss",
+      "title": "Η ίδρυση ιδιωτικών νομικών σχολών προϋποθέτει συνολικό σχεδιασμό και διαβούλευση, λέει η ολομέλεια των δικηγορικών συλλόγων",
+      "normalized_title": "Η ΙΔΡΥΣΗ ΙΔΙΩΤΙΚΩΝ ΝΟΜΙΚΩΝ ΣΧΟΛΩΝ ΠΡΟΥΠΟΘΕΤΕΙ ΣΥΝΟΛΙΚΟ ΣΧΕΔΙΑΣΜΟ ΚΑΙ ΔΙΑΒΟΥΛΕΥΣΗ, ΛΕΕΙ Η ΟΛΟΜΕΛΕΙΑ ΤΩΝ ΔΙΚΗΓΟΡΙΚΩΝ ΣΥΛΛΟΓΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864843/duo-sullipseis-kai-mia-tautopoiisi-gia-epithesi-se-varos-tileoptikou-sunergeiou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864841/polu-upsilos-kindunos-purkagias-aurio-158-se-attiki-kai-alles-ennea-perifereies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864858/idrusi-idiotikon-nomikon-sholon-proupothetei-shediasmo-kai-diavouleusi-leei-i-olomeleia-ton-dikigorikon-sullogon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864852/akrotiriastike-60hronos-ergazomenos-se-fourno-tou-volou-mihanima-tou-ekopse-tria-dahtula/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864851/fotia-tora-sto-vathukoilo-fthiotidas-sikothikan-5-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864850/aade-48ora-louketa-kai-prostima-se-estiatoria-enoikiazomena-domatia-kai-mini-market-se-sadorini-kai-naxo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864849/anoiktos-ton-dekapedaugousto-o-lofos-lukavittou-paramenei-kleistos-o-lofos-finopoulou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T11:51:28.188490+00:00"
+      "seen_at_utc": "2026-08-14T12:17:44.764033+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447946/sygkroysi-adoni-me-ton-skitsografo-stathi-gia-omiro-kai-manolidoy-eisai-misogynis-woke-anoisies/",
-      "title": "Σύγκρουση Άδωνη με τον σκιτσογράφο Στάθη για Όμηρο και Μανωλίδου: «Είσαι μισογύνης» – «Woke ανοησίες»",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΑΔΩΝΗ ΜΕ ΤΟΝ ΣΚΙΤΣΟΓΡΑΦΟ ΣΤΑΘΗ ΓΙΑ ΟΜΗΡΟ ΚΑΙ ΜΑΝΩΛΙΔΟΥ: «ΕΙΣΑΙ ΜΙΣΟΓΥΝΗΣ» – «WOKE ΑΝΟΗΣΙΕΣ»",
+      "url": "https://www.efsyn.gr/athlitismos/1447972/iptamenos-xana-o-emmanoyil-karalis-aneta-ston-teliko-me-ena-alma/",
+      "title": "Ιπτάμενος ξανά ο Εμμανουήλ Καραλής: Άνετα στον τελικό με ένα άλμα",
+      "normalized_title": "ΙΠΤΑΜΕΝΟΣ ΞΑΝΑ Ο ΕΜΜΑΝΟΥΗΛ ΚΑΡΑΛΗΣ: ΑΝΕΤΑ ΣΤΟΝ ΤΕΛΙΚΟ ΜΕ ΕΝΑ ΑΛΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447946/sygkroysi-adoni-me-ton-skitsografo-stathi-gia-omiro-kai-manolidoy-eisai-misogynis-woke-anoisies/",
-        "https://www.efsyn.gr/ellada/1447945/airetai-stis-1600-to-apagoreytiko-apoploy-poia-dromologia-tha-anahorisoyn-apo-rafina-kai-layrio/"
+        "https://www.efsyn.gr/athlitismos/1447972/iptamenos-xana-o-emmanoyil-karalis-aneta-ston-teliko-me-ena-alma/",
+        "https://www.efsyn.gr/oikonomia/1447957/giati-en-meso-kaysona-pyrkagion-kai-xirasias-ta-hrimatistiria-eftasan-se-istorika-ypsi/",
+        "https://www.efsyn.gr/ellada/1447962/anoihtos-ton-dekapentaygoysto-o-lofos-lykavittoy-kleistos-mehri-neoteras-o-lofos-finopoyloy/",
+        "https://www.efsyn.gr/ellada/1447961/pyrkagia-sti-halkidiki-dyo-syllipseis-kai-mia-taytopoiisi-gia-tin-epithesi-sto-synergeio-toy-mega/"
       ],
-      "seen_at_utc": "2026-08-14T11:51:28.188458+00:00"
+      "seen_at_utc": "2026-08-14T12:17:44.763995+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/in-science/episthmes/ekaton-eksinta-katagmata-thrymmatismenos-skeletos-einai-to-proto-epivevaiomeno-thyma-katapelti/",
-      "title": "Εκατόν εξήντα κατάγματα – Θρυμματισμένος σκελετός είναι το πρώτο επιβεβαιωμένο θύμα καταπέλτη",
-      "normalized_title": "ΕΚΑΤΟΝ ΕΞΗΝΤΑ ΚΑΤΑΓΜΑΤΑ – ΘΡΥΜΜΑΤΙΣΜΕΝΟΣ ΣΚΕΛΕΤΟΣ ΕΙΝΑΙ ΤΟ ΠΡΩΤΟ ΕΠΙΒΕΒΑΙΩΜΕΝΟ ΘΥΜΑ ΚΑΤΑΠΕΛΤΗ",
+      "url": "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-stivou-ston-teliko-me-tin-proti-o-karalis-vid/",
+      "title": "Ευρωπαϊκό Στίβου: Στον τελικό με την… πρώτη ο Καραλής (vid)",
+      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΜΕ ΤΗΝ… ΠΡΩΤΗ Ο ΚΑΡΑΛΗΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/in-science/episthmes/ekaton-eksinta-katagmata-thrymmatismenos-skeletos-einai-to-proto-epivevaiomeno-thyma-katapelti/",
-        "https://www.in.gr/2026/08/14/sports/basketball/vezenkof-eimai-opados-tis-tsska-eide-apo-konta-to-mats-tis-antipalou-tou-ofi/",
-        "https://www.in.gr/2026/08/14/politics/epikairotita/elas-o-arxon-tis-statistikis-alximeias-tou-maksimou-skertsos-panigyrizei-gia-ta-kamena-stin-xalkidiki/",
-        "https://www.in.gr/2026/08/14/greece/thermos-kai-pithanos-vroxeros-prominyetai-o-septemvrios-o-mesoprothesmes-ektimiseis/",
-        "https://www.in.gr/2026/08/14/world/o-tramp-ypostirizei-oti-ton-xtypoun-ta-mme-ti-symvainei-stin-pragmatikotita-i-taktiki-sanewashing/",
-        "https://www.in.gr/2026/08/14/greece/fotia-stin-tripoli-sikothikan-dyo-enaeria/"
+        "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-stivou-ston-teliko-me-tin-proti-o-karalis-vid/",
+        "https://www.in.gr/2026/08/14/greece/fotia-sto-vathykoilo-fthiotidas-epixeiroun-pente-enaeria-mesa/",
+        "https://www.in.gr/2026/08/14/greece/airetai-to-apagoreytiko-apoplou-se-rafina-kai-layrio-prosthetes-anaxoriseis/",
+        "https://www.in.gr/2026/08/14/world/pou-oi-epitheseis-se-egkatastaseis-ygeionomikis-perithalpsis-ygeionomikous-astheneis-synexizoun-na-ayksanontai/",
+        "https://www.in.gr/2026/08/14/go-fun/fizz/akyrothike-i-provoli-tis-tainias-arkoudotrypa-sto-aigio-logo-akraion-omofovikon-antidraseon/",
+        "https://www.in.gr/2026/08/14/greece/preveza-karampola-tessaron-oximaton-treis-traymaties/"
       ],
-      "seen_at_utc": "2026-08-14T11:51:28.188411+00:00"
+      "seen_at_utc": "2026-08-14T12:17:44.763962+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T11:51:28.188583+00:00"
+  "updated_at_utc": "2026-08-14T12:17:44.764129+00:00"
 }
