@@ -1,18 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/oinoxoos/564373528/o-andras-poy-den-itan-pia-o-idios/",
-      "title": "Ο άνδρας που δεν ήταν πια ο ίδιος",
-      "normalized_title": "Ο ΑΝΔΡΑΣ ΠΟΥ ΔΕΝ ΗΤΑΝ ΠΙΑ Ο ΙΔΙΟΣ",
+      "url": "https://www.kathimerini.gr/economy/564401563/poies-syntaxeis-chireias-ayxanontai-kata-470-eyro/",
+      "title": "Ποιες συντάξεις χηρείας αυξάνονται κατά 470 ευρώ",
+      "normalized_title": "ΠΟΙΕΣ ΣΥΝΤΑΞΕΙΣ ΧΗΡΕΙΑΣ ΑΥΞΑΝΟΝΤΑΙ ΚΑΤΑ 470 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/oinoxoos/564373528/o-andras-poy-den-itan-pia-o-idios/",
-        "https://www.kathimerini.gr/society/564403486/poly-ypsilos-o-kindynos-pyrkagias-gia-ayrio-se-ayximeni-epifylaki-deka-perifereies/",
-        "https://www.kathimerini.gr/life/auto/564403465/tria-fiat-eos-19-000-eyro-pandina-500-hybrid-kai-grande-panda/",
-        "https://www.kathimerini.gr/society/reportaz/564399172/skrolarontas-erchetai-i-kovetai-i-orexi/",
-        "https://www.kathimerini.gr/society/564403480/anoichtos-ton-dekapentaygoysto-o-lofos-lykavittoy-paramenei-kleistos-o-lofos-finopoyloy/",
-        "https://www.kathimerini.gr/columns/564403438/to-giati-tora-toy-mpezos-sti-liverpoyl-kai-ton-aigker-koysner-stoys-leikers/"
+        "https://www.kathimerini.gr/economy/564401563/poies-syntaxeis-chireias-ayxanontai-kata-470-eyro/",
+        "https://www.kathimerini.gr/economy/564403555/loyketa-kai-prostima-gia-forologikes-paravaseis-se-santorini-kai-naxo/",
+        "https://www.kathimerini.gr/world/564403537/iaponia-8-nekroi-apo-tis-kataklysmiaies-vroches-chiliades-taxidiotes-egklovistikan-sto-narita-4-ores-anamoni-gia-ena-taxi/",
+        "https://www.kathimerini.gr/society/564403525/aneti-prokrisi-ston-teliko-gia-karali-kai-tzengko/",
+        "https://www.kathimerini.gr/society/564403507/thessaloniki-ypo-elegcho-i-pyrkagia-stin-agora-dramas/"
       ],
-      "seen_at_utc": "2026-08-14T12:17:44.763881+00:00"
+      "seen_at_utc": "2026-08-14T12:51:24.891282+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,26 +1272,24 @@
       "seen_at_utc": "2026-08-14T12:30:06.690532+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1447972/iptamenos-xana-o-emmanoyil-karalis-aneta-ston-teliko-me-ena-alma/",
-      "title": "Ιπτάμενος ξανά ο Εμμανουήλ Καραλής: Άνετα στον τελικό με ένα άλμα",
-      "normalized_title": "ΙΠΤΑΜΕΝΟΣ ΞΑΝΑ Ο ΕΜΜΑΝΟΥΗΛ ΚΑΡΑΛΗΣ: ΑΝΕΤΑ ΣΤΟΝ ΤΕΛΙΚΟ ΜΕ ΕΝΑ ΑΛΜΑ",
+      "url": "https://www.efsyn.gr/kosmos/1447968/axios-giati-o-tramp-distazei-na-ypostirixei-ton-zorismeno-mpimpi/",
+      "title": "Axios: Γιατί ο Τραμπ διστάζει να υποστηρίξει τον… ζορισμένο Μπίμπι",
+      "normalized_title": "AXIOS: ΓΙΑΤΙ Ο ΤΡΑΜΠ ΔΙΣΤΑΖΕΙ ΝΑ ΥΠΟΣΤΗΡΙΞΕΙ ΤΟΝ… ΖΟΡΙΣΜΕΝΟ ΜΠΙΜΠΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1447972/iptamenos-xana-o-emmanoyil-karalis-aneta-ston-teliko-me-ena-alma/",
-        "https://www.efsyn.gr/oikonomia/1447957/giati-en-meso-kaysona-pyrkagion-kai-xirasias-ta-hrimatistiria-eftasan-se-istorika-ypsi/",
-        "https://www.efsyn.gr/ellada/1447962/anoihtos-ton-dekapentaygoysto-o-lofos-lykavittoy-kleistos-mehri-neoteras-o-lofos-finopoyloy/",
-        "https://www.efsyn.gr/ellada/1447961/pyrkagia-sti-halkidiki-dyo-syllipseis-kai-mia-taytopoiisi-gia-tin-epithesi-sto-synergeio-toy-mega/"
+        "https://www.efsyn.gr/kosmos/1447968/axios-giati-o-tramp-distazei-na-ypostirixei-ton-zorismeno-mpimpi/"
       ],
-      "seen_at_utc": "2026-08-14T12:17:44.763995+00:00"
+      "seen_at_utc": "2026-08-14T12:51:24.891381+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-stivou-ston-teliko-tou-akontismou-me-spoudaia-epidosi-i-tzengko-vid/",
-      "title": "Ευρωπαϊκό Στίβου: Στον τελικό του ακοντισμού με σπουδαία επίδοση η Τζένγκο (vid)",
-      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΑΚΟΝΤΙΣΜΟΥ ΜΕ ΣΠΟΥΔΑΙΑ ΕΠΙΔΟΣΗ Η ΤΖΕΝΓΚΟ (VID)",
+      "url": "https://www.in.gr/2026/08/14/world/ispania-oi-arxes-apomakrynan-ta-leipsana-vasiliadon-tou-11ou-aiona-apo-monastiri-pou-apeileito-apo-pyrkagia/",
+      "title": "Ισπανία: Οι αρχές απομάκρυναν τα λείψανα βασιλιάδων του 11ου αιώνα από μοναστήρι που απειλείτο από πυρκαγιά",
+      "normalized_title": "ΙΣΠΑΝΙΑ: ΟΙ ΑΡΧΕΣ ΑΠΟΜΑΚΡΥΝΑΝ ΤΑ ΛΕΙΨΑΝΑ ΒΑΣΙΛΙΑΔΩΝ ΤΟΥ 11ΟΥ ΑΙΩΝΑ ΑΠΟ ΜΟΝΑΣΤΗΡΙ ΠΟΥ ΑΠΕΙΛΕΙΤΟ ΑΠΟ ΠΥΡΚΑΓΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-stivou-ston-teliko-tou-akontismou-me-spoudaia-epidosi-i-tzengko-vid/"
+        "https://www.in.gr/2026/08/14/world/ispania-oi-arxes-apomakrynan-ta-leipsana-vasiliadon-tou-11ou-aiona-apo-monastiri-pou-apeileito-apo-pyrkagia/",
+        "https://www.in.gr/2026/08/14/english-edition/athens-public-transport-changes-for-august-15-holiday/"
       ],
-      "seen_at_utc": "2026-08-14T12:30:06.690482+00:00"
+      "seen_at_utc": "2026-08-14T12:51:24.891345+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T12:30:06.690613+00:00"
+  "updated_at_utc": "2026-08-14T12:51:24.891456+00:00"
 }
