@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564403714/efyge-apo-ti-zoi-o-pygmachos-pritsarnt-kolon-11-chronia-meta-ton-moiraio-agona/",
-      "title": "Eφυγε από τη ζωή ο πυγμάχος Πρίτσαρντ Κολόν, 11 χρόνια μετά τον μοιραίο αγώνα",
-      "normalized_title": "EΦΥΓΕ ΑΠΟ ΤΗ ΖΩΗ Ο ΠΥΓΜΑΧΟΣ ΠΡΙΤΣΑΡΝΤ ΚΟΛΟΝ, 11 ΧΡΟΝΙΑ ΜΕΤΑ ΤΟΝ ΜΟΙΡΑΙΟ ΑΓΩΝΑ",
+      "url": "https://www.kathimerini.gr/world/564403960/notia-korea-to-teleytaio-kalokairi-toy-kreatos-skyloy/",
+      "title": "Νότια Κορέα: Το τελευταίο καλοκαίρι του κρέατος σκύλου",
+      "normalized_title": "ΝΟΤΙΑ ΚΟΡΕΑ: ΤΟ ΤΕΛΕΥΤΑΙΟ ΚΑΛΟΚΑΙΡΙ ΤΟΥ ΚΡΕΑΤΟΣ ΣΚΥΛΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564403714/efyge-apo-ti-zoi-o-pygmachos-pritsarnt-kolon-11-chronia-meta-ton-moiraio-agona/",
-        "https://www.kathimerini.gr/world/564404110/aitna-parateinetai-to-kleisimo-toy-aerodromioy-tis-katanias/",
-        "https://www.kathimerini.gr/society/564404164/fotia-sti-chalkidiki-eleytheroi-oi-dyo-ergolavoi-toy-deddie/"
+        "https://www.kathimerini.gr/world/564403960/notia-korea-to-teleytaio-kalokairi-toy-kreatos-skyloy/"
       ],
-      "seen_at_utc": "2026-08-14T20:17:20.478152+00:00"
+      "seen_at_utc": "2026-08-14T20:30:01.044268+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,27 +1269,24 @@
       "seen_at_utc": "2026-08-14T19:51:19.066528+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448185/ekatontades-pakistanoi-stin-plateia-kotzia-gia-tin-imera-tis-anexartisias-vinteo/",
-      "title": "Εκατοντάδες Πακιστανοί στην πλατεία Κοτζιά για την Ημέρα της Ανεξαρτησίας [βίντεο]",
-      "normalized_title": "ΕΚΑΤΟΝΤΑΔΕΣ ΠΑΚΙΣΤΑΝΟΙ ΣΤΗΝ ΠΛΑΤΕΙΑ ΚΟΤΖΙΑ ΓΙΑ ΤΗΝ ΗΜΕΡΑ ΤΗΣ ΑΝΕΞΑΡΤΗΣΙΑΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/athlitismos/1448191/kypella-eyropis-symplirothike-to-pazl-gia-ta-play-offs-se-europa-kai-conference-league/",
+      "title": "Κύπελλα Ευρώπης: Συμπληρώθηκε το παζλ για τα play offs σε Europa και Conference League",
+      "normalized_title": "ΚΥΠΕΛΛΑ ΕΥΡΩΠΗΣ: ΣΥΜΠΛΗΡΩΘΗΚΕ ΤΟ ΠΑΖΛ ΓΙΑ ΤΑ PLAY OFFS ΣΕ EUROPA ΚΑΙ CONFERENCE LEAGUE",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448185/ekatontades-pakistanoi-stin-plateia-kotzia-gia-tin-imera-tis-anexartisias-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1448183/tsitsipas-me-to-dexi-sto-sinisnati-omos-i-syneheia-einai-poly-dyskoli/"
+        "https://www.efsyn.gr/athlitismos/1448191/kypella-eyropis-symplirothike-to-pazl-gia-ta-play-offs-se-europa-kai-conference-league/"
       ],
-      "seen_at_utc": "2026-08-14T20:17:20.478255+00:00"
+      "seen_at_utc": "2026-08-14T20:30:01.044364+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/voiotia-aytopsia-klimakiou-tis-dieythynsis-antimetopisis-egklimaton-emprismou-sto-simeio-miden-tis-megalis-pyrkagias/",
-      "title": "Αυτοψία κλιμακίου της Διεύθυνσης Αντιμετώπισης Εγκλημάτων Εμπρησμού στο σημείο μηδέν της μεγάλης πυρκαγιάς στη Βοιωτία",
-      "normalized_title": "ΑΥΤΟΨΙΑ ΚΛΙΜΑΚΙΟΥ ΤΗΣ ΔΙΕΥΘΥΝΣΗΣ ΑΝΤΙΜΕΤΩΠΙΣΗΣ ΕΓΚΛΗΜΑΤΩΝ ΕΜΠΡΗΣΜΟΥ ΣΤΟ ΣΗΜΕΙΟ ΜΗΔΕΝ ΤΗΣ ΜΕΓΑΛΗΣ ΠΥΡΚΑΓΙΑΣ ΣΤΗ ΒΟΙΩΤΙΑ",
+      "url": "https://www.in.gr/2026/08/14/sports/football/stin-eyropaiki-lista-tou-panathinaikou-o-kalampria-poios-emeine-ektos/",
+      "title": "Στην Ευρωπαϊκή λίστα του Παναθηναϊκού ο Καλάμπρια – Ποιος έμεινε εκτός",
+      "normalized_title": "ΣΤΗΝ ΕΥΡΩΠΑΙΚΗ ΛΙΣΤΑ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ Ο ΚΑΛΑΜΠΡΙΑ – ΠΟΙΟΣ ΕΜΕΙΝΕ ΕΚΤΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/voiotia-aytopsia-klimakiou-tis-dieythynsis-antimetopisis-egklimaton-emprismou-sto-simeio-miden-tis-megalis-pyrkagias/",
-        "https://www.in.gr/2026/08/14/world/oualia-syntrivi-mikrou-aeroskafous-dyo-nekroi/",
-        "https://www.in.gr/2026/08/14/life/culture-live/mark-raintel-o-ypopsifios-gia-oskar-skinothetis-apeviose-se-ilikia-97-eton/",
-        "https://www.in.gr/2026/08/14/sports/football/o-gallos-petris-gia-tessera-xronia-ston-ari/"
+        "https://www.in.gr/2026/08/14/sports/football/stin-eyropaiki-lista-tou-panathinaikou-o-kalampria-poios-emeine-ektos/",
+        "https://www.in.gr/2026/08/14/world/tramp-syntoma-tha-anakiryksoume-ta-stena-tou-ormouz-kyriarxo-edafos-ton-ipa/"
       ],
-      "seen_at_utc": "2026-08-14T20:17:20.478215+00:00"
+      "seen_at_utc": "2026-08-14T20:30:01.044321+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T20:17:20.478348+00:00"
+  "updated_at_utc": "2026-08-14T20:30:01.044454+00:00"
 }
