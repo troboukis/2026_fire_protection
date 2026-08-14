@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564403906/chalkidiki-agria-epithesi-se-odigo-aporrimmatoforoy/",
-      "title": "Χαλκιδική: Αγρια επίθεση σε οδηγό απορριμματοφόρου",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΓΡΙΑ ΕΠΙΘΕΣΗ ΣΕ ΟΔΗΓΟ ΑΠΟΡΡΙΜΜΑΤΟΦΟΡΟΥ",
+      "url": "https://www.kathimerini.gr/athletics/564403996/tetarti-i-ntoyntoynaki-sta-100m-petaloyda-ogdoi-i-damasioti/",
+      "title": "Τέταρτη η Ντουντουνάκη στα 100 μ. πεταλούδα, όγδοη η Δαμασιώτη",
+      "normalized_title": "ΤΕΤΑΡΤΗ Η ΝΤΟΥΝΤΟΥΝΑΚΗ ΣΤΑ 100 Μ. ΠΕΤΑΛΟΥΔΑ, ΟΓΔΟΗ Η ΔΑΜΑΣΙΩΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564403906/chalkidiki-agria-epithesi-se-odigo-aporrimmatoforoy/"
+        "https://www.kathimerini.gr/athletics/564403996/tetarti-i-ntoyntoynaki-sta-100m-petaloyda-ogdoi-i-damasioti/",
+        "https://www.kathimerini.gr/world/564403636/i-dimioyrgiki-asafeia-tis-symfonias-tis-mekkas/",
+        "https://www.kathimerini.gr/society/564403966/fotia-stin-ko-stelnontai-enischyseis-apo-rodo/"
       ],
-      "seen_at_utc": "2026-08-14T17:30:09.134414+00:00"
+      "seen_at_utc": "2026-08-14T17:51:38.268505+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864997/ston-eisaggelea-duo-upeuthunoi-ergolavoi-tou-deddie-gia-ti-fotia-sti-siviri/?utm_source=rss",
-      "title": "Στον εισαγγελέα δύο υπεύθυνοι εργολάβοι του ΔΕΔΔΗΕ για τη φωτιά στη Σίβηρη",
-      "normalized_title": "ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ ΔΥΟ ΥΠΕΥΘΥΝΟΙ ΕΡΓΟΛΑΒΟΙ ΤΟΥ ΔΕΔΔΗΕ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ",
+      "url": "https://www.protothema.gr/greece/article/1865006/halkidiki-paramenoun-oi-purosvestikes-dunameis-sti-hersoniso-tis-kassandras-kleistos-o-dromos-siviri-fourka/?utm_source=rss",
+      "title": "Χαλκιδική: Παραμένουν οι πυροσβεστικές δυνάμεις στη χερσόνησο της Κασσάνδρας, κλειστός ο δρόμος Σίβηρη - Φούρκα",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΠΑΡΑΜΕΝΟΥΝ ΟΙ ΠΥΡΟΣΒΕΣΤΙΚΕΣ ΔΥΝΑΜΕΙΣ ΣΤΗ ΧΕΡΣΟΝΗΣΟ ΤΗΣ ΚΑΣΣΑΝΔΡΑΣ, ΚΛΕΙΣΤΟΣ Ο ΔΡΟΜΟΣ ΣΙΒΗΡΗ - ΦΟΥΡΚΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864997/ston-eisaggelea-duo-upeuthunoi-ergolavoi-tou-deddie-gia-ti-fotia-sti-siviri/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865006/halkidiki-paramenoun-oi-purosvestikes-dunameis-sti-hersoniso-tis-kassandras-kleistos-o-dromos-siviri-fourka/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T17:30:09.134607+00:00"
+      "seen_at_utc": "2026-08-14T17:51:38.268612+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448122/volos-aniliki-katiggeile-sexoyaliki-kakopoiisi-apo-ton-82hrono-pappoy-tis/",
-      "title": "Βόλος: Ανήλικη κατήγγειλε σεξουαλική κακοποίηση από τον 82χρονο παππού της",
-      "normalized_title": "ΒΟΛΟΣ: ΑΝΗΛΙΚΗ ΚΑΤΗΓΓΕΙΛΕ ΣΕΞΟΥΑΛΙΚΗ ΚΑΚΟΠΟΙΗΣΗ ΑΠΟ ΤΟΝ 82ΧΡΟΝΟ ΠΑΠΠΟΥ ΤΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1448132/o-loyitzi-mantzione-dilose-enohos-gia-ti-dolofonia-toy-ceo-tis-unitedhealthcare-ton-pyrovolisa-kai-pethane/",
+      "title": "Ο Λουίτζι Μαντζιόνε δήλωσε ένοχος για τη δολοφονία του CEO της UnitedHealthcare: «Τον πυροβόλησα και πέθανε»",
+      "normalized_title": "Ο ΛΟΥΙΤΖΙ ΜΑΝΤΖΙΟΝΕ ΔΗΛΩΣΕ ΕΝΟΧΟΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ CEO ΤΗΣ UNITEDHEALTHCARE: «ΤΟΝ ΠΥΡΟΒΟΛΗΣΑ ΚΑΙ ΠΕΘΑΝΕ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448122/volos-aniliki-katiggeile-sexoyaliki-kakopoiisi-apo-ton-82hrono-pappoy-tis/",
-        "https://www.efsyn.gr/ellada/1448121/halkidiki-agria-epithesi-se-odigo-aporrimmatoforoy-me-htypoysan-sto-kefali-kai-ta-pleyra-vinteo/"
+        "https://www.efsyn.gr/kosmos/1448132/o-loyitzi-mantzione-dilose-enohos-gia-ti-dolofonia-toy-ceo-tis-unitedhealthcare-ton-pyrovolisa-kai-pethane/",
+        "https://www.efsyn.gr/ellada/1448131/fotia-se-dysvato-simeio-stin-ko-sti-mahi-pente-enaeria-mesa-enishyseis-apo-ti-rodo/"
       ],
-      "seen_at_utc": "2026-08-14T17:30:09.134564+00:00"
+      "seen_at_utc": "2026-08-14T17:51:38.268584+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/isxyro-meltemi-oi-ripes-anemou-kata-topous-kseperasan-ta-100-xlm-ora/",
-      "title": "Ισχυρό μελτέμι – Οι ριπές ανέμου κατά τόπους ξεπέρασαν τα 100 χλμ/ώρα",
-      "normalized_title": "ΙΣΧΥΡΟ ΜΕΛΤΕΜΙ – ΟΙ ΡΙΠΕΣ ΑΝΕΜΟΥ ΚΑΤΑ ΤΟΠΟΥΣ ΞΕΠΕΡΑΣΑΝ ΤΑ 100 ΧΛΜ/ΩΡΑ",
+      "url": "https://www.in.gr/2026/08/14/greece/xalkidiki-ekleisan-ton-dromo-se-odigo-aporrimmatoforou-kai-ton-ksylokopisan-gia-mia-paratirisi/",
+      "title": "Χαλκιδική: Έκλεισαν τον δρόμο σε οδηγό απορριμματοφόρου και τον ξυλοκόπησαν για μια παρατήρηση",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΕΚΛΕΙΣΑΝ ΤΟΝ ΔΡΟΜΟ ΣΕ ΟΔΗΓΟ ΑΠΟΡΡΙΜΜΑΤΟΦΟΡΟΥ ΚΑΙ ΤΟΝ ΞΥΛΟΚΟΠΗΣΑΝ ΓΙΑ ΜΙΑ ΠΑΡΑΤΗΡΗΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/isxyro-meltemi-oi-ripes-anemou-kata-topous-kseperasan-ta-100-xlm-ora/"
+        "https://www.in.gr/2026/08/14/greece/xalkidiki-ekleisan-ton-dromo-se-odigo-aporrimmatoforou-kai-ton-ksylokopisan-gia-mia-paratirisi/",
+        "https://www.in.gr/2026/08/14/greece/apokalypsi-in-nea-ixiri-diapseysi-floridi-gia-dolofonia-pou-proekypse-aytoktonia/",
+        "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-protathlima-kolymvisis-ston-teliko-ton-200m-petalouda-me-panellinio-rekor-o-siskos-vid/",
+        "https://www.in.gr/2026/08/14/sports/othersports/i-rosia-prosfeygei-ksana-sto-cas-kata-tou-apokleismou-tis-apo-ton-pagkosmio-stivo/",
+        "https://www.in.gr/2026/08/14/world/o-mantzione-dilose-enoxos-gia-omospondiakes-katigories-gia-ti-dolofonia-tou-ceo-isovia-zitoun-oi-eisaggeleis/",
+        "https://www.in.gr/2026/08/14/inview/inshorts/praksi-allileggyis-ston-evro-ena-olokliro-xorio-extise-spiti-gia-nea-oikogeneia-vinteo/",
+        "https://www.in.gr/2026/08/14/sports/football/giati-to-ispaniko-super-cup-metakomizei-gia-proti-fora-stin-konstantinoupoli/"
       ],
-      "seen_at_utc": "2026-08-14T17:30:09.134507+00:00"
+      "seen_at_utc": "2026-08-14T17:51:38.268553+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T17:30:09.134715+00:00"
+  "updated_at_utc": "2026-08-14T17:51:38.268712+00:00"
 }
