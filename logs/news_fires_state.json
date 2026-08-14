@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564400774/zoyme-tin-exegersi-tis-technitis-noimosynis/",
-      "title": "Ζούμε την εξέγερση της τεχνητής νοημοσύνης;",
-      "normalized_title": "ΖΟΥΜΕ ΤΗΝ ΕΞΕΓΕΡΣΗ ΤΗΣ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ;",
+      "url": "https://www.kathimerini.gr/athletics/564403984/o-stochos-einai-idios-alla-to-plano-isos-einai-diaforetiko/",
+      "title": "Παναθηναϊκός: Ο στόχος είναι ίδιος, αλλά το πλάνο ίσως είναι διαφορετικό",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: Ο ΣΤΟΧΟΣ ΕΙΝΑΙ ΙΔΙΟΣ, ΑΛΛΑ ΤΟ ΠΛΑΝΟ ΙΣΩΣ ΕΙΝΑΙ ΔΙΑΦΟΡΕΤΙΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564400774/zoyme-tin-exegersi-tis-technitis-noimosynis/",
-        "https://www.kathimerini.gr/society/564404002/fotia-sti-chalkidiki-paramenoyn-ischyres-pyrosvestikes-dynameis-stin-periochi/",
-        "https://www.kathimerini.gr/k/gastronomos/564401788/politikos-mezes-me-galopoyla-karydia-kai-paprika/",
-        "https://www.kathimerini.gr/society/564404008/fotia-sti-chalkidiki-ston-eisaggelea-oi-dyo-ypeythynoi-ergolavoi-toy-deddie/"
+        "https://www.kathimerini.gr/athletics/564403984/o-stochos-einai-idios-alla-to-plano-isos-einai-diaforetiko/",
+        "https://www.kathimerini.gr/life/auto/564403705/mclaren-mcl-6gt-proaggelos-cheirokinitis-apolaysis/"
       ],
-      "seen_at_utc": "2026-08-14T18:17:19.359263+00:00"
+      "seen_at_utc": "2026-08-14T18:30:45.785856+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,28 +1269,25 @@
       "seen_at_utc": "2026-08-14T17:51:38.268612+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448143/pnigike-i-iaponia-okto-nekroi-apo-protofaneis-vrohoptoseis-horis-reyma-pano-apo-20-000-noikokyria/",
-      "title": "Πνίγηκε η Ιαπωνία: Οκτώ νεκροί από «πρωτοφανείς» βροχοπτώσεις – Χωρίς ρεύμα πάνω από 20.000 νοικοκυριά",
-      "normalized_title": "ΠΝΙΓΗΚΕ Η ΙΑΠΩΝΙΑ: ΟΚΤΩ ΝΕΚΡΟΙ ΑΠΟ «ΠΡΩΤΟΦΑΝΕΙΣ» ΒΡΟΧΟΠΤΩΣΕΙΣ – ΧΩΡΙΣ ΡΕΥΜΑ ΠΑΝΩ ΑΠΟ 20.000 ΝΟΙΚΟΚΥΡΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1448150/voiotia-poy-epikentronontai-oi-ereynes-tis-daee-gia-ti-megali-pyrkagia-ston-agio-vasileio/",
+      "title": "Βοιωτία: Πού επικεντρώνονται οι έρευνες της ΔΑΕΕ για τη μεγάλη πυρκαγιά στον Άγιο Βασίλειο",
+      "normalized_title": "ΒΟΙΩΤΙΑ: ΠΟΥ ΕΠΙΚΕΝΤΡΩΝΟΝΤΑΙ ΟΙ ΕΡΕΥΝΕΣ ΤΗΣ ΔΑΕΕ ΓΙΑ ΤΗ ΜΕΓΑΛΗ ΠΥΡΚΑΓΙΑ ΣΤΟΝ ΑΓΙΟ ΒΑΣΙΛΕΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448143/pnigike-i-iaponia-okto-nekroi-apo-protofaneis-vrohoptoseis-horis-reyma-pano-apo-20-000-noikokyria/",
-        "https://www.efsyn.gr/oikonomia/1448145/o-hartis-ton-pliromon-apo-ton-e-efka-kai-ti-dypa-eos-tis-21-aygoystoy/",
-        "https://www.efsyn.gr/athlitismos/1448137/episima-o-tzef-mpezos-sti-liverpoyl-i-koinopraxia-toy-agorase-to-1-3-ton-metohon-tis-agglikis-omadas/"
+        "https://www.efsyn.gr/ellada/1448150/voiotia-poy-epikentronontai-oi-ereynes-tis-daee-gia-ti-megali-pyrkagia-ston-agio-vasileio/",
+        "https://www.efsyn.gr/ellada/1448151/halkidiki-to-simeio-miden-poy-xespase-i-pyrkagia-ston-eisaggelea-dyo-ergolavoi-toy-deddie/"
       ],
-      "seen_at_utc": "2026-08-14T18:17:19.359373+00:00"
+      "seen_at_utc": "2026-08-14T18:30:45.785916+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/o-mporis-tzonson-psifizei-ksana-ellada-gia-tis-kalokairines-tou-diakopes-i-anartisi-tis-syzygou-tou/",
-      "title": "Ο Μπόρις Τζόνσον ψηφίζει ξανά Ελλάδα για τις καλοκαιρινές του διακοπές – Η ανάρτηση της συζύγου του",
-      "normalized_title": "Ο ΜΠΟΡΙΣ ΤΖΟΝΣΟΝ ΨΗΦΙΖΕΙ ΞΑΝΑ ΕΛΛΑΔΑ ΓΙΑ ΤΙΣ ΚΑΛΟΚΑΙΡΙΝΕΣ ΤΟΥ ΔΙΑΚΟΠΕΣ – Η ΑΝΑΡΤΗΣΗ ΤΗΣ ΣΥΖΥΓΟΥ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/14/english-edition/gen-z-is-returning-to-movie-theaters/",
+      "title": "Gen Z Is Returning to Movie Theaters",
+      "normalized_title": "GEN Z IS RETURNING TO MOVIE THEATERS",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/o-mporis-tzonson-psifizei-ksana-ellada-gia-tis-kalokairines-tou-diakopes-i-anartisi-tis-syzygou-tou/",
-        "https://www.in.gr/2026/08/14/sports/othersports/eyropaiko-protathlima-kolymvisis-apisteyto-o-xristou-emeine-ektos-vathrou-gia-ena-ekatosto-vid/",
-        "https://www.in.gr/2026/08/14/go-fun/fizz/h-tzenifer-lopez-glitose-ton-mathiou-makkonaxi-apo-ena-terastio-mpleksimo-sta-synora-me-to-meksiko/",
-        "https://www.in.gr/2026/08/14/in-science/space/i-apeili-ton-diastimikon-aporrimmaton-pos-i-syntrivi-pyraylou-sti-selini-anisyxei-tous-epistimones/"
+        "https://www.in.gr/2026/08/14/english-edition/gen-z-is-returning-to-movie-theaters/",
+        "https://www.in.gr/2026/08/14/world/o-faratz-antimetopos-me-ereyna-gia-paranomi-xrimatodotisi-i-epoptiki-arxi-proxora-ti-diadikasia/"
       ],
-      "seen_at_utc": "2026-08-14T18:17:19.359326+00:00"
+      "seen_at_utc": "2026-08-14T18:30:45.785885+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T18:17:19.359456+00:00"
+  "updated_at_utc": "2026-08-14T18:30:45.785995+00:00"
 }
