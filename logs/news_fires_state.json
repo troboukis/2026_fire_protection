@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564403042/thessaloniki-dyo-syllipseis-gia-emporia-narkotikon/",
-      "title": "Θεσσαλονίκη: Δύο συλλήψεις για εμπορία ναρκωτικών",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΕΜΠΟΡΙΑ ΝΑΡΚΩΤΙΚΩΝ",
+      "url": "https://www.kathimerini.gr/politics/parties/564401146/sta-skaria-oi-listes-tis-elas-enopsei-ton-eklogon/",
+      "title": "Στα σκαριά οι λίστες της ΕΛΑΣ ενόψει των εκλογών",
+      "normalized_title": "ΣΤΑ ΣΚΑΡΙΑ ΟΙ ΛΙΣΤΕΣ ΤΗΣ ΕΛΑΣ ΕΝΟΨΕΙ ΤΩΝ ΕΚΛΟΓΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564403042/thessaloniki-dyo-syllipseis-gia-emporia-narkotikon/",
-        "https://www.kathimerini.gr/society/564403033/anakoinosi-toy-fodsa-notioy-aigaioy-gia-ta-ogkodi-apovlita-stin-paro/",
-        "https://www.kathimerini.gr/society/564403030/paros-vinteo-kleidi-gia-ton-thanato-toy-4chronoy-stin-pisina-choris-pistopoiisi-nayagososti-o-idioktitis/"
+        "https://www.kathimerini.gr/politics/parties/564401146/sta-skaria-oi-listes-tis-elas-enopsei-ton-eklogon/",
+        "https://www.kathimerini.gr/world/564403057/israilinos-ypoyrgos-amynas-gia-ti-via-ton-epoikon-den-einai-doyleia-toy-stratoy-na-kyniga-nearoys-stoys-lofoys/",
+        "https://www.kathimerini.gr/economy/local/564401560/dechetai-metrita-to-99-ton-mikromesaion-epicheiriseon-stin-ellada/",
+        "https://www.kathimerini.gr/society/564403054/patra-trochaio-stin-ovrya-aytokinito-ekane-treis-toympes/"
       ],
-      "seen_at_utc": "2026-08-14T07:30:05.767420+00:00"
+      "seen_at_utc": "2026-08-14T07:51:19.722148+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1262,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864721/metanasteutiko-574-afixeis-stin-kriti-mesa-se-tesseris-imeres-200-atoma-eftasan-mono-hthes/?utm_source=rss",
-      "title": "Μεταναστευτικό: 574 αφίξεις στην Κρήτη μέσα σε τέσσερις ημέρες, 200 άτομα έφτασαν μόνο χθες",
-      "normalized_title": "ΜΕΤΑΝΑΣΤΕΥΤΙΚΟ: 574 ΑΦΙΞΕΙΣ ΣΤΗΝ ΚΡΗΤΗ ΜΕΣΑ ΣΕ ΤΕΣΣΕΡΙΣ ΗΜΕΡΕΣ, 200 ΑΤΟΜΑ ΕΦΤΑΣΑΝ ΜΟΝΟ ΧΘΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1864738/i-stigmi-pou-to-istioforo-proskrouei-se-ellimenismena-skafi-kata-tin-eisodo-tou-sto-limani-tou-kalamou-sti-leukada/?utm_source=rss",
+      "title": "Η στιγμή που το ιστιοφόρο προσκρούει σε ελλιμενισμένα σκάφη στο λιμάνι του Καλάμου στη Λευκάδα, δείτε βίντεο",
+      "normalized_title": "Η ΣΤΙΓΜΗ ΠΟΥ ΤΟ ΙΣΤΙΟΦΟΡΟ ΠΡΟΣΚΡΟΥΕΙ ΣΕ ΕΛΛΙΜΕΝΙΣΜΕΝΑ ΣΚΑΦΗ ΣΤΟ ΛΙΜΑΝΙ ΤΟΥ ΚΑΛΑΜΟΥ ΣΤΗ ΛΕΥΚΑΔΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864721/metanasteutiko-574-afixeis-stin-kriti-mesa-se-tesseris-imeres-200-atoma-eftasan-mono-hthes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864738/i-stigmi-pou-to-istioforo-proskrouei-se-ellimenismena-skafi-kata-tin-eisodo-tou-sto-limani-tou-kalamou-sti-leukada/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864737/akurothike-i-provoli-tis-tainias-arkoudotrupa-se-horio-tis-aigialeias-akraies-omofovikes-adidraseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T07:17:09.213388+00:00"
+      "seen_at_utc": "2026-08-14T07:51:19.722285+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447772/dekapentaygoystos-pos-tha-kinithoyn-ta-mmm-stin-athina-ti-ishyei-gia-metro-kai-leoforeia/",
-      "title": "Δεκαπενταύγουστος: Πώς θα κινηθούν τα ΜΜΜ στην Αθήνα – Τι ισχύει για Μετρό και λεωφορεία",
-      "normalized_title": "ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΣ: ΠΩΣ ΘΑ ΚΙΝΗΘΟΥΝ ΤΑ ΜΜΜ ΣΤΗΝ ΑΘΗΝΑ – ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΜΕΤΡΟ ΚΑΙ ΛΕΩΦΟΡΕΙΑ",
+      "url": "https://www.efsyn.gr/kosmos/1447800/katarripsi-drone-ston-enaerio-horo-tis-letonias-apo-mahitiko-toy-nato/",
+      "title": "Κατάρριψη drone στον εναέριο χώρο της Λετονίας από μαχητικό του NATO",
+      "normalized_title": "ΚΑΤΑΡΡΙΨΗ DRONE ΣΤΟΝ ΕΝΑΕΡΙΟ ΧΩΡΟ ΤΗΣ ΛΕΤΟΝΙΑΣ ΑΠΟ ΜΑΧΗΤΙΚΟ ΤΟΥ NATO",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447772/dekapentaygoystos-pos-tha-kinithoyn-ta-mmm-stin-athina-ti-ishyei-gia-metro-kai-leoforeia/",
-        "https://www.efsyn.gr/stiles/1447633/proeklogiki-apo-ti-nafthalini/",
-        "https://www.efsyn.gr/stiles/1447626/egnatia-sos/",
-        "https://www.efsyn.gr/stiles/1447621/evros-i-anaptyxi-perimenei-stin-oyra/",
-        "https://www.efsyn.gr/ellada/1447752/fotia-sti-halkidiki-stahti-3-500-stremmata-fovoi-gia-anazopyroseis-apo-tin-enishysi-ton-anemon/",
-        "https://www.efsyn.gr/stiles/1447608/thelo-na-gino-kideia-dimosia-dapani/",
-        "https://www.efsyn.gr/kosmos/1447744/sto-trapezi-episkepsi-koysner-sto-israil-meta-to-ohi-netaniahoy-sto-shedio-gia-ti-gaza/"
+        "https://www.efsyn.gr/kosmos/1447800/katarripsi-drone-ston-enaerio-horo-tis-letonias-apo-mahitiko-toy-nato/",
+        "https://www.efsyn.gr/kosmos/1447778/vretania-o-faratz-nikise-ton-komi-skoypidoprosopo-kai-epanexelegi-voyleytis-vinteo-eikones/"
       ],
-      "seen_at_utc": "2026-08-14T07:17:09.213365+00:00"
+      "seen_at_utc": "2026-08-14T07:51:19.722246+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/pos-tha-leitourgisoun-ta-mesa-metaforas-ton-dekapentaygousto/",
-      "title": "Πώς θα λειτουργήσουν τα μέσα μεταφοράς τον Δεκαπενταύγουστο",
-      "normalized_title": "ΠΩΣ ΘΑ ΛΕΙΤΟΥΡΓΗΣΟΥΝ ΤΑ ΜΕΣΑ ΜΕΤΑΦΟΡΑΣ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ",
+      "url": "https://www.in.gr/2026/08/14/greece/protasi-gamou-me-dipli-paranomia-sto-nayagio-i-epilogi-amerikanou-athliti-pou-egine-viral/",
+      "title": "Πρόταση γάμου με… διπλή παρανομία στο Ναυάγιο – Η επιλογή Αμερικανού αθλητή που έγινε viral",
+      "normalized_title": "ΠΡΟΤΑΣΗ ΓΑΜΟΥ ΜΕ… ΔΙΠΛΗ ΠΑΡΑΝΟΜΙΑ ΣΤΟ ΝΑΥΑΓΙΟ – Η ΕΠΙΛΟΓΗ ΑΜΕΡΙΚΑΝΟΥ ΑΘΛΗΤΗ ΠΟΥ ΕΓΙΝΕ VIRAL",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/pos-tha-leitourgisoun-ta-mesa-metaforas-ton-dekapentaygousto/",
-        "https://www.in.gr/2026/08/14/world/faratz-epanekselegi-vouleytis-alla-den-kseplythike-polloi-psifisan-ton-komi-skoupidoprosopo/"
+        "https://www.in.gr/2026/08/14/greece/protasi-gamou-me-dipli-paranomia-sto-nayagio-i-epilogi-amerikanou-athliti-pou-egine-viral/",
+        "https://www.in.gr/2026/08/14/sports/perasan-22-xronia-apo-tin-teleti-enarksis-ton-olympiakon-agonon-tis-athinas-dyo-nea-vinteo-dimosieyse-o-dimitris-papaioannou-vids/",
+        "https://www.in.gr/2026/08/14/greece/tourismos-gia-olous-stis-21-aygoustou-ligei-i-prothesmia-gia-to-programma-ta-eisodimatika-oria/"
       ],
-      "seen_at_utc": "2026-08-14T07:30:05.767469+00:00"
+      "seen_at_utc": "2026-08-14T07:51:19.722205+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T07:30:05.767555+00:00"
+  "updated_at_utc": "2026-08-14T07:51:19.722361+00:00"
 }
