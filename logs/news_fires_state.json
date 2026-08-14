@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564401575/ligoteres-taxinomiseis-i-ch-ton-ioylio-logo-elleipsis-pinakidon/",
-      "title": "Λιγότερες ταξινομήσεις Ι.Χ. τον Ιούλιο λόγω έλλειψης πινακίδων",
-      "normalized_title": "ΛΙΓΟΤΕΡΕΣ ΤΑΞΙΝΟΜΗΣΕΙΣ Ι.Χ. ΤΟΝ ΙΟΥΛΙΟ ΛΟΓΩ ΕΛΛΕΙΨΗΣ ΠΙΝΑΚΙΔΩΝ",
+      "url": "https://www.kathimerini.gr/world/564402973/vrazilia-sta-cheria-tis-astynomias-okto-klemmena-erga-toy-anri-matis/",
+      "title": "Βραζιλία: Στα χέρια της αστυνομίας οκτώ κλεμμένα έργα του Ανρί Ματίς",
+      "normalized_title": "ΒΡΑΖΙΛΙΑ: ΣΤΑ ΧΕΡΙΑ ΤΗΣ ΑΣΤΥΝΟΜΙΑΣ ΟΚΤΩ ΚΛΕΜΜΕΝΑ ΕΡΓΑ ΤΟΥ ΑΝΡΙ ΜΑΤΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564401575/ligoteres-taxinomiseis-i-ch-ton-ioylio-logo-elleipsis-pinakidon/",
-        "https://www.kathimerini.gr/world/564402940/o-naitzel-faratz-nikise-ton-komi-skoypidoprosopo-kai-epistrefei-sti-voyli/",
-        "https://www.kathimerini.gr/world/564402937/o-soyltanos-toy-mproynei-afairese-ton-vasiliko-titlo-apo-ti-nyfi-toy-gia-aseveia/"
+        "https://www.kathimerini.gr/world/564402973/vrazilia-sta-cheria-tis-astynomias-okto-klemmena-erga-toy-anri-matis/",
+        "https://www.kathimerini.gr/economy/564401572/nea-othisi-sto-ergo-tis-ilektrikis-diasyndesis-kyproy-israil/",
+        "https://www.kathimerini.gr/society/564402964/thessaloniki-karampola-pente-ochimaton-exo-apo-ti-thermi-enas-traymatias/",
+        "https://www.kathimerini.gr/world/564402961/dasiki-pyrkagia-sti-germania-apomakrynthikan-1-800-katoikoi-chorioy-konta-sta-synora-me-velgio/"
       ],
-      "seen_at_utc": "2026-08-14T06:17:09.347793+00:00"
+      "seen_at_utc": "2026-08-14T06:30:16.694346+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,40 +1262,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864689/fotia-se-diamerisma-stin-ano-poli-tis-thessalonikis-apomakrunthikan-oi-katoikoi-tou-ktiriou/?utm_source=rss",
-      "title": "Φωτιά σε διαμέρισμα στην Άνω Πόλη της Θεσσαλονίκης, απομακρύνθηκαν οι κάτοικοι του κτηρίου",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗΝ ΑΝΩ ΠΟΛΗ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΑΠΟΜΑΚΡΥΝΘΗΚΑΝ ΟΙ ΚΑΤΟΙΚΟΙ ΤΟΥ ΚΤΗΡΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1864710/3500-kamena-stremmata-katastrofes-se-spitia-kai-autokinita-apo-ti-fotia-sti-siviri-suneheis-ripseis-nerou/?utm_source=rss",
+      "title": "3.500 καμένα στρέμματα, καταστροφές σε σπίτια και αυτοκίνητα από τη φωτιά στη Σίβηρη, συνεχείς ρίψεις νερού για να σβήσουν όλες οι εστίες",
+      "normalized_title": "3.500 ΚΑΜΕΝΑ ΣΤΡΕΜΜΑΤΑ, ΚΑΤΑΣΤΡΟΦΕΣ ΣΕ ΣΠΙΤΙΑ ΚΑΙ ΑΥΤΟΚΙΝΗΤΑ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ, ΣΥΝΕΧΕΙΣ ΡΙΨΕΙΣ ΝΕΡΟΥ ΓΙΑ ΝΑ ΣΒΗΣΟΥΝ ΟΛΕΣ ΟΙ ΕΣΤΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864689/fotia-se-diamerisma-stin-ano-poli-tis-thessalonikis-apomakrunthikan-oi-katoikoi-tou-ktiriou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864686/sovato-trohaio-sti-thessaloniki-duo-ih-sugroustikan-kai-epesan-pano-se-alla-exi-stathmeumena-duo-traumaties/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864684/purgos-horis-energo-metopo-i-megali-fotia-stin-alfeiousa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864710/3500-kamena-stremmata-katastrofes-se-spitia-kai-autokinita-apo-ti-fotia-sti-siviri-suneheis-ripseis-nerou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864708/sugedrosi-diamarturias-sto-limani-tou-peiraia-gia-tin-afixi-tou-israilinou-krouazieroploiou-crown-iris-deite-eikones/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864707/dekapedaugoustos-sta-dodekanisa-ta-ethima-kai-oi-paradoseis-pou-enonoun-ta-nisia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T05:51:27.540536+00:00"
+      "seen_at_utc": "2026-08-14T06:30:16.694472+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1447714/to-kalytero-esy-me-odigies-hrisis/",
-      "title": "Το «καλύτερο ΕΣΥ» με οδηγίες χρήσης",
-      "normalized_title": "ΤΟ «ΚΑΛΥΤΕΡΟ ΕΣΥ» ΜΕ ΟΔΗΓΙΕΣ ΧΡΗΣΗΣ",
+      "url": "https://www.efsyn.gr/tehnes/1447710/o-papaioannoy-thymithike-toys-olympiakoys-agones-toy-2004-me-dyo-nea-vinteo-apo-tin-teleti-enarxis/",
+      "title": "22 χρόνια από τους Ολυμπιακούς Αγώνες της Αθήνας – Τα βίντεο του Δημήτρη Παπαϊωάννου από την τελετή έναρξης",
+      "normalized_title": "22 ΧΡΟΝΙΑ ΑΠΟ ΤΟΥΣ ΟΛΥΜΠΙΑΚΟΥΣ ΑΓΩΝΕΣ ΤΗΣ ΑΘΗΝΑΣ – ΤΑ ΒΙΝΤΕΟ ΤΟΥ ΔΗΜΗΤΡΗ ΠΑΠΑΙΩΑΝΝΟΥ ΑΠΟ ΤΗΝ ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1447714/to-kalytero-esy-me-odigies-hrisis/",
-        "https://www.efsyn.gr/politiki/1447704/ikanopoiisi-ston-syriza-apo-to-gkel-toy-protoy-spot/"
+        "https://www.efsyn.gr/tehnes/1447710/o-papaioannoy-thymithike-toys-olympiakoys-agones-toy-2004-me-dyo-nea-vinteo-apo-tin-teleti-enarxis/",
+        "https://www.efsyn.gr/politiki/1447719/neos-ekprosopos-sto-ypex/"
       ],
-      "seen_at_utc": "2026-08-14T06:17:09.347882+00:00"
+      "seen_at_utc": "2026-08-14T06:30:16.694442+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/sports/football/epos-spiker-trelainetai-me-to-gkol-tou-karetsa-kai-tragouda-sikose-to-to-gno-vids/",
-      "title": "Έπος: Σπίκερ «τρελαίνεται» με το γκολ του Καρέτσα και τραγουδά «σήκωσέ το το γ@@@@νο» (vids)",
-      "normalized_title": "ΕΠΟΣ: ΣΠΙΚΕΡ «ΤΡΕΛΑΙΝΕΤΑΙ» ΜΕ ΤΟ ΓΚΟΛ ΤΟΥ ΚΑΡΕΤΣΑ ΚΑΙ ΤΡΑΓΟΥΔΑ «ΣΗΚΩΣΕ ΤΟ ΤΟ Γ@@@@ΝΟ» (VIDS)",
+      "url": "https://www.in.gr/2026/08/14/greece/nees-tilefonikes-apates-me-xrisi-ai-gia-mimisi-fonis-systaseis-tis-el-as-pros-tous-polites/",
+      "title": "Νέες τηλεφωνικές απάτες με χρήση AI για μίμηση φωνής - Συστάσεις της ΕΛ.ΑΣ. προς τους πολίτες",
+      "normalized_title": "ΝΕΕΣ ΤΗΛΕΦΩΝΙΚΕΣ ΑΠΑΤΕΣ ΜΕ ΧΡΗΣΗ AI ΓΙΑ ΜΙΜΗΣΗ ΦΩΝΗΣ - ΣΥΣΤΑΣΕΙΣ ΤΗΣ ΕΛ.ΑΣ. ΠΡΟΣ ΤΟΥΣ ΠΟΛΙΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/sports/football/epos-spiker-trelainetai-me-to-gkol-tou-karetsa-kai-tragouda-sikose-to-to-gno-vids/",
-        "https://www.in.gr/2026/08/14/world/den-ksero-pos-xoresa-eilikrina-o-odigos-tis-mixanis-perigrafei-pos-glitose-apo-to-vytioforo/",
-        "https://www.in.gr/2026/08/14/economy/oikonomikes-eidiseis/iris-ti-pragmatika-isxyei-gia-tis-metafores-xrimaton/",
-        "https://www.in.gr/2026/08/14/world/eyropi-to-triptyxo-tis-politikis-polosis-pos-epidroun-stis-pepoithiseis-genia-topos-kai-fylo/",
-        "https://www.in.gr/2026/08/14/go-fun/fizz/ntonalnt-tramp-opos-nikol-kintman-i-maga-kampania-tou-leykou-oikou-parodei-to-viral-spot-tis-amc/",
-        "https://www.in.gr/2026/08/14/greece/perifereiarxis-xalkidikis-kalyteri-i-eikona-tis-pyrkagias-katastrafike-o-viologikos/"
+        "https://www.in.gr/2026/08/14/greece/nees-tilefonikes-apates-me-xrisi-ai-gia-mimisi-fonis-systaseis-tis-el-as-pros-tous-polites/",
+        "https://www.in.gr/2026/08/14/economy/akinita-ekpneei-i-prothesmia-gia-to-programma-anakainizo-pos-mporoun-na-kanoun-aitisi-oi-dikaiouxoi/"
       ],
-      "seen_at_utc": "2026-08-14T06:17:09.347857+00:00"
+      "seen_at_utc": "2026-08-14T06:30:16.694405+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T06:17:09.347953+00:00"
+  "updated_at_utc": "2026-08-14T06:30:16.694561+00:00"
 }
