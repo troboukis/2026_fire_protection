@@ -1,15 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564402748/to-nato-katerripse-drone-ston-enaerio-choro-tis-letonias/",
-      "title": "Το ΝΑΤΟ κατέρριψε drone στον εναέριο χώρο της Λετονίας",
-      "normalized_title": "ΤΟ ΝΑΤΟ ΚΑΤΕΡΡΙΨΕ DRONE ΣΤΟΝ ΕΝΑΕΡΙΟ ΧΩΡΟ ΤΗΣ ΛΕΤΟΝΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564402802/gaza-i-oyasigkton-exetazei-pithani-episkepsi-toy-koysner-sto-israil/",
+      "title": "Γάζα: Η Ουάσιγκτον εξετάζει πιθανή επίσκεψη του Κούσνερ στο Ισραήλ",
+      "normalized_title": "ΓΑΖΑ: Η ΟΥΑΣΙΓΚΤΟΝ ΕΞΕΤΑΖΕΙ ΠΙΘΑΝΗ ΕΠΙΣΚΕΨΗ ΤΟΥ ΚΟΥΣΝΕΡ ΣΤΟ ΙΣΡΑΗΛ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564402748/to-nato-katerripse-drone-ston-enaerio-choro-tis-letonias/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564401182/giati-to-ste-akyrose-adeies-idiotikon-aei/",
-        "https://www.kathimerini.gr/world/564402736/o-tramp-epivallei-dasmoys-stis-eisagoges-drones/"
+        "https://www.kathimerini.gr/world/564402802/gaza-i-oyasigkton-exetazei-pithani-episkepsi-toy-koysner-sto-israil/",
+        "https://www.kathimerini.gr/politics/564401164/entos-kai-ektos-o-ronalntinio-tis-koymoyndoyroy/",
+        "https://www.kathimerini.gr/society/564402790/apagoreytiko-apoploy-apo-ta-limania-tis-rafinas-kai-toy-layrioy-tropopoiiseis-ston-peiraia/",
+        "https://www.kathimerini.gr/economy/international/564401611/toyrkia-sto-28-i-provlepsi-gia-ton-plithorismo-fetos/",
+        "https://www.kathimerini.gr/society/reportaz/564399103/athina-schediazontas-ti-mitropoli-toy-mellontos/",
+        "https://www.kathimerini.gr/economy/international/564401617/ektoxeythike-sta-432-dis-dolaria-to-elleimma-ton-ipa-ton-ioylio/",
+        "https://www.kathimerini.gr/world/564402763/ipa-to-iran-tha-ypostei-oikonomiki-apomonosi-poy-den-xanaeide-pote-o-kosmos/",
+        "https://www.kathimerini.gr/society/564402760/akraios-kindynos-pyrkagias-enischyontai-ta-meltemia-se-epifylaki-politiki-prostasia-kai-pyrosvestiki/"
       ],
-      "seen_at_utc": "2026-08-14T04:29:59.859638+00:00"
+      "seen_at_utc": "2026-08-14T04:51:16.371436+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,33 +1266,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864652/agrieuoun-ta-meltemia-to-epomeno-48oro-me-ripes-100-hlmora-kai-upsilo-kinduno-purkagias/?utm_source=rss",
-      "title": "Αγριεύουν τα μελτέμια για 48 ώρες: Απαγορευτικό από Ραφήνα και Λαύριο, ακυρώθηκε δρομολόγιο από Πειραιά, πολύ αυξημένος ο κίνδυνος πυρκαγιάς",
-      "normalized_title": "ΑΓΡΙΕΥΟΥΝ ΤΑ ΜΕΛΤΕΜΙΑ ΓΙΑ 48 ΩΡΕΣ: ΑΠΑΓΟΡΕΥΤΙΚΟ ΑΠΟ ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ, ΑΚΥΡΩΘΗΚΕ ΔΡΟΜΟΛΟΓΙΟ ΑΠΟ ΠΕΙΡΑΙΑ, ΠΟΛΥ ΑΥΞΗΜΕΝΟΣ Ο ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1864660/duo-epiheiriseis-diasosis-134-metanaston-ta-ximeromata-stin-kriti/?utm_source=rss",
+      "title": "Δύο επιχειρήσεις διάσωσης 134 μεταναστών τα ξημερώματα στην Κρήτη",
+      "normalized_title": "ΔΥΟ ΕΠΙΧΕΙΡΗΣΕΙΣ ΔΙΑΣΩΣΗΣ 134 ΜΕΤΑΝΑΣΤΩΝ ΤΑ ΞΗΜΕΡΩΜΑΤΑ ΣΤΗΝ ΚΡΗΤΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864652/agrieuoun-ta-meltemia-to-epomeno-48oro-me-ripes-100-hlmora-kai-upsilo-kinduno-purkagias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864647/horis-eniaio-metopo-i-fotia-sti-siviri-halkidikis-mahi-me-diaspartes-esties-481-anthropoi-metaferthikan-se-asfali-simeia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864660/duo-epiheiriseis-diasosis-134-metanaston-ta-ximeromata-stin-kriti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864658/amerikanos-agnoise-tis-apagoreuseis-sto-nauagio-tis-zakunthou-kai-ekane-protasi-gamou-eftase-ekei-me-alexiptoto/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T04:17:41.553879+00:00"
+      "seen_at_utc": "2026-08-14T04:51:16.371536+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447627/idiotika-panepistimia-oi-synergasies-fantasmata-poy-eide-to-ste-anoigei-o-dromos-gia-nees-prosfyges/",
-      "title": "Ιδιωτικά πανεπιστήμια: Οι συνεργασίες – φαντάσματα που είδε το ΣτΕ – Ανοίγει ο δρόμος για νέες προσφυγές",
-      "normalized_title": "ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΟΙ ΣΥΝΕΡΓΑΣΙΕΣ – ΦΑΝΤΑΣΜΑΤΑ ΠΟΥ ΕΙΔΕ ΤΟ ΣΤΕ – ΑΝΟΙΓΕΙ Ο ΔΡΟΜΟΣ ΓΙΑ ΝΕΕΣ ΠΡΟΣΦΥΓΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1447643/dekapentaygoystos-apagoreytiko-apoploy-apo-rafina-kai-layrio-provlimata-ston-peiraia/",
+      "title": "Δεκαπενταύγουστος: Απαγορευτικό απόπλου από Ραφήνα και Λαύριο, προβλήματα στον Πειραιά",
+      "normalized_title": "ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΣ: ΑΠΑΓΟΡΕΥΤΙΚΟ ΑΠΟΠΛΟΥ ΑΠΟ ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ, ΠΡΟΒΛΗΜΑΤΑ ΣΤΟΝ ΠΕΙΡΑΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447627/idiotika-panepistimia-oi-synergasies-fantasmata-poy-eide-to-ste-anoigei-o-dromos-gia-nees-prosfyges/"
+        "https://www.efsyn.gr/ellada/1447643/dekapentaygoystos-apagoreytiko-apoploy-apo-rafina-kai-layrio-provlimata-ston-peiraia/",
+        "https://www.efsyn.gr/kosmos/1447644/stena-toy-ormoyz-i-teherani-sklirainei-synehos-ti-stasi-tis-shedon-midenistikan-oi-dieleyseis-ploion/",
+        "https://www.efsyn.gr/protoselida/kentroaristera-vs-mitsotaki/",
+        "https://www.efsyn.gr/ellada/1447635/thessaloniki-ston-anakriti-o-59hronos-gia-tis-exi-foties-sti-sindo/"
       ],
-      "seen_at_utc": "2026-08-14T04:29:59.859751+00:00"
+      "seen_at_utc": "2026-08-14T04:51:16.371511+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/fotia-sti-xalkidiki-maxi-me-diaspartes-esties-se-epifylaki-gia-anazopyroseis-kleistos-o-dromos-pros-fourka/",
-      "title": "Μάχη με διάσπαρτες εστίες στη Χαλκιδική - Σε επιφυλακή για αναζωπυρώσεις - Κλειστός ο δρόμος προς Φούρκα",
-      "normalized_title": "ΜΑΧΗ ΜΕ ΔΙΑΣΠΑΡΤΕΣ ΕΣΤΙΕΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ - ΣΕ ΕΠΙΦΥΛΑΚΗ ΓΙΑ ΑΝΑΖΩΠΥΡΩΣΕΙΣ - ΚΛΕΙΣΤΟΣ Ο ΔΡΟΜΟΣ ΠΡΟΣ ΦΟΥΡΚΑ",
+      "url": "https://www.in.gr/2026/08/14/go-fun/social/arkas-i-kalimera-tis-paraskeyis-13/",
+      "title": "Αρκάς: Η καλημέρα της Παρασκευής",
+      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΠΑΡΑΣΚΕΥΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/fotia-sti-xalkidiki-maxi-me-diaspartes-esties-se-epifylaki-gia-anazopyroseis-kleistos-o-dromos-pros-fourka/"
+        "https://www.in.gr/2026/08/14/go-fun/social/arkas-i-kalimera-tis-paraskeyis-13/",
+        "https://www.in.gr/2026/08/14/world/karolain-livit-vinteo-me-ton-tramp-pyrodotise-erotimata-prin-tin-paraitisi-tis/",
+        "https://www.in.gr/2026/08/14/plus/vita/i-glossa-tou-somatos-leei-perissotera-apo-osa-nomizeis/"
       ],
-      "seen_at_utc": "2026-08-14T04:29:59.859697+00:00"
+      "seen_at_utc": "2026-08-14T04:51:16.371475+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T04:29:59.859830+00:00"
+  "updated_at_utc": "2026-08-14T04:51:16.371618+00:00"
 }
