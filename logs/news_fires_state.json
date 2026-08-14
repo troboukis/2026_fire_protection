@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564403873/se-kokkino-synagermo-i-chora-synechizontai-oi-poly-ischyroi-anemoi-mechri-kai-tin-kyriaki/",
-      "title": "Σε «κόκκινο» συναγερμό η χώρα – Συνεχίζονται οι πολύ ισχυροί άνεμοι μέχρι και την Κυριακή",
-      "normalized_title": "ΣΕ «ΚΟΚΚΙΝΟ» ΣΥΝΑΓΕΡΜΟ Η ΧΩΡΑ – ΣΥΝΕΧΙΖΟΝΤΑΙ ΟΙ ΠΟΛΥ ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ ΜΕΧΡΙ ΚΑΙ ΤΗΝ ΚΥΡΙΑΚΗ",
+      "url": "https://www.kathimerini.gr/life/environment/564394480/echei-dimioyrgithei-mia-oasi-kai-emeis-den-ti-syntiroyme/",
+      "title": "«Εχει δημιουργηθεί μια όαση και εμείς δεν τη συντηρούμε»",
+      "normalized_title": "«ΕΧΕΙ ΔΗΜΙΟΥΡΓΗΘΕΙ ΜΙΑ ΟΑΣΗ ΚΑΙ ΕΜΕΙΣ ΔΕΝ ΤΗ ΣΥΝΤΗΡΟΥΜΕ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564403873/se-kokkino-synagermo-i-chora-synechizontai-oi-poly-ischyroi-anemoi-mechri-kai-tin-kyriaki/",
-        "https://www.kathimerini.gr/k/gastronomos/564401779/kappari-pos-ti-ftiachnoyme-31-syntages-apo-kapparosalata-kai-tsatnei-mechri-kapparogiachni/",
-        "https://www.kathimerini.gr/society/564403858/trochaio-stin-preveza-pos-egine-i-karampola-me-to-fortigo-kai-ta-tria-i-ch/"
+        "https://www.kathimerini.gr/life/environment/564394480/echei-dimioyrgithei-mia-oasi-kai-emeis-den-ti-syntiroyme/",
+        "https://www.kathimerini.gr/athletics/football/564403903/paramenei-sto-timoni-toy-olympiakoy-o-mentilimpar/"
       ],
-      "seen_at_utc": "2026-08-14T16:17:34.509578+00:00"
+      "seen_at_utc": "2026-08-14T16:30:31.310594+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,40 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864956/purkagia-se-hamili-vlastisi-ston-lahana-thessalonikis/?utm_source=rss",
-      "title": "Πυρκαγιά σε χαμηλή βλάστηση στον Λαχανά Θεσσαλονίκης",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΟΝ ΛΑΧΑΝΑ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1864970/seismos-tora-stin-thesprotia/?utm_source=rss",
+      "title": "Σεισμός τώρα στην Θεσπρωτία",
+      "normalized_title": "ΣΕΙΣΜΟΣ ΤΩΡΑ ΣΤΗΝ ΘΕΣΠΡΩΤΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864956/purkagia-se-hamili-vlastisi-ston-lahana-thessalonikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864955/o-boris-tzonson-psifizei-xana-ellada-gia-tis-kalokairines-tou-diakopes-bures-vouties-kai-turopites-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864970/seismos-tora-stin-thesprotia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864968/apopeira-ebrismou-se-autokinita-sta-kalamia-korinthias-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864966/autopsia-apo-klimakio-tis-daee-ston-agio-vasileio-voiotias-gia-ta-aitia-tis-purkagias-pou-ekapse-pano-apo-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864965/xulokopisan-odigo-aporrimatoforou-gia-mia-paratirisi-stin-halkidiki-me-htupousan-sto-kefali-leei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864964/efialtis-gia-mitera-trion-paidion-sto-volo-prospathouse-na-me-pnixei-kai-me-htupouse-olo-to-vradu/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T16:17:34.509729+00:00"
+      "seen_at_utc": "2026-08-14T16:30:31.310732+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448094/pnigmoi-sti-thalassa-o-dekalogos-gia-asfali-kolymvisi-stis-ypsiloteres-theseis-i-ellada-me-thanatoys-sto-nero/",
-      "title": "Πνιγμοί στη θάλασσα: Ο δεκάλογος για ασφαλή κολύμβηση – Στις υψηλότερες θέσεις η Ελλάδα με θανάτους στο νερό",
-      "normalized_title": "ΠΝΙΓΜΟΙ ΣΤΗ ΘΑΛΑΣΣΑ: Ο ΔΕΚΑΛΟΓΟΣ ΓΙΑ ΑΣΦΑΛΗ ΚΟΛΥΜΒΗΣΗ – ΣΤΙΣ ΥΨΗΛΟΤΕΡΕΣ ΘΕΣΕΙΣ Η ΕΛΛΑΔΑ ΜΕ ΘΑΝΑΤΟΥΣ ΣΤΟ ΝΕΡΟ",
+      "url": "https://www.efsyn.gr/ellada/1448095/opoy-fygei-fygei-me-kathe-meso-egkataleipoyn-ta-astika-kentra-oi-ekdromeis-toy-dekapentaygoystoy/",
+      "title": "Όπου φύγει… φύγει: Με κάθε μέσο εγκαταλείπουν τα αστικά κέντρα οι εκδρομείς του Δεκαπενταύγουστου",
+      "normalized_title": "ΟΠΟΥ ΦΥΓΕΙ… ΦΥΓΕΙ: ΜΕ ΚΑΘΕ ΜΕΣΟ ΕΓΚΑΤΑΛΕΙΠΟΥΝ ΤΑ ΑΣΤΙΚΑ ΚΕΝΤΡΑ ΟΙ ΕΚΔΡΟΜΕΙΣ ΤΟΥ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448094/pnigmoi-sti-thalassa-o-dekalogos-gia-asfali-kolymvisi-stis-ypsiloteres-theseis-i-ellada-me-thanatoys-sto-nero/",
-        "https://www.efsyn.gr/politiki/1448089/htypima-moytsatsoy-se-karystianoy-ypovathmizoyn-ti-syneisfora-mas-epeidi-fygame/"
+        "https://www.efsyn.gr/ellada/1448095/opoy-fygei-fygei-me-kathe-meso-egkataleipoyn-ta-astika-kentra-oi-ekdromeis-toy-dekapentaygoystoy/"
       ],
-      "seen_at_utc": "2026-08-14T16:17:34.509707+00:00"
+      "seen_at_utc": "2026-08-14T16:30:31.310710+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/preveza-pos-synevi-to-troxaio-me-8-traymaties-ekovan-lamarines-gia-na-apegklovisoun-oikogeneies-vinteo/",
-      "title": "Πρέβεζα: Πώς συνέβη το τροχαίο με 8 τραυματίες - Έκοβαν τις λαμαρίνες για να απεγκλωβίσουν τις οικογένειες",
-      "normalized_title": "ΠΡΕΒΕΖΑ: ΠΩΣ ΣΥΝΕΒΗ ΤΟ ΤΡΟΧΑΙΟ ΜΕ 8 ΤΡΑΥΜΑΤΙΕΣ - ΕΚΟΒΑΝ ΤΙΣ ΛΑΜΑΡΙΝΕΣ ΓΙΑ ΝΑ ΑΠΕΓΚΛΩΒΙΣΟΥΝ ΤΙΣ ΟΙΚΟΓΕΝΕΙΕΣ",
+      "url": "https://www.in.gr/2026/08/14/world/poso-afosiomenoi-eiste-ston-ntonalnt-tramp-oi-ipa-zitoun-apo-tous-symmaxous-tou-nato-politika-diapisteytiria/",
+      "title": "Πόσο αφοσιωμένοι είστε στον Ντόναλντ Τραμπ; Οι ΗΠΑ ζητούν από τους συμμάχους του ΝΑΤΟ πολιτικά διαπιστευτήρια",
+      "normalized_title": "ΠΟΣΟ ΑΦΟΣΙΩΜΕΝΟΙ ΕΙΣΤΕ ΣΤΟΝ ΝΤΟΝΑΛΝΤ ΤΡΑΜΠ; ΟΙ ΗΠΑ ΖΗΤΟΥΝ ΑΠΟ ΤΟΥΣ ΣΥΜΜΑΧΟΥΣ ΤΟΥ ΝΑΤΟ ΠΟΛΙΤΙΚΑ ΔΙΑΠΙΣΤΕΥΤΗΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/preveza-pos-synevi-to-troxaio-me-8-traymaties-ekovan-lamarines-gia-na-apegklovisoun-oikogeneies-vinteo/",
-        "https://www.in.gr/2026/08/14/sports/football/mazi-gia-na-kataktisoume-ta-panta-leykos-kapnos-sti-synantisi-marinaki-mentilimpar-kai-leyki-epitagi/",
-        "https://www.in.gr/2026/08/14/politics/politiki-grammateia/me-politiki-tymvoryxia-kai-volikes-statistikes-gia-ta-kamena-o-panepistimon-akis-skertsos-katigorei-ton-tsipra-gia-kynismo-kai-laikismo/",
-        "https://www.in.gr/2026/08/14/life/culture-live/o-diavolos-foraei-prada-2-efere-touristes-sto-milano/",
-        "https://www.in.gr/2026/08/14/greece/fotia-stin-ko-epixeiroun-pente-enaeria/",
-        "https://www.in.gr/2026/08/14/sports/othersports/emmanouil-karalis-pote-tha-ginei-o-telikos-sto-alma-epi-konto/",
-        "https://www.in.gr/2026/08/14/sports/football/synexizoun-mazi-olympiakos-kai-mentilimpar/"
+        "https://www.in.gr/2026/08/14/world/poso-afosiomenoi-eiste-ston-ntonalnt-tramp-oi-ipa-zitoun-apo-tous-symmaxous-tou-nato-politika-diapisteytiria/",
+        "https://www.in.gr/2026/08/14/greece/thessaloniki-fotia-ston-laxana-tou-dimou-lagkada-sti-maxi-kai-elikoptera/"
       ],
-      "seen_at_utc": "2026-08-14T16:17:34.509665+00:00"
+      "seen_at_utc": "2026-08-14T16:30:31.310662+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T16:17:34.509831+00:00"
+  "updated_at_utc": "2026-08-14T16:30:31.310815+00:00"
 }
