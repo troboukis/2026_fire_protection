@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564402973/vrazilia-sta-cheria-tis-astynomias-okto-klemmena-erga-toy-anri-matis/",
-      "title": "Βραζιλία: Στα χέρια της αστυνομίας οκτώ κλεμμένα έργα του Ανρί Ματίς",
-      "normalized_title": "ΒΡΑΖΙΛΙΑ: ΣΤΑ ΧΕΡΙΑ ΤΗΣ ΑΣΤΥΝΟΜΙΑΣ ΟΚΤΩ ΚΛΕΜΜΕΝΑ ΕΡΓΑ ΤΟΥ ΑΝΡΙ ΜΑΤΙΣ",
+      "url": "https://www.kathimerini.gr/economy/564401557/se-diastayroymena-pyra-to-neo-chorotaxiko-schedio-gia-ton-toyrismo/",
+      "title": "Σε διασταυρούμενα πυρά το νέο χωροταξικό σχέδιο για τον τουρισμό",
+      "normalized_title": "ΣΕ ΔΙΑΣΤΑΥΡΟΥΜΕΝΑ ΠΥΡΑ ΤΟ ΝΕΟ ΧΩΡΟΤΑΞΙΚΟ ΣΧΕΔΙΟ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΜΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564402973/vrazilia-sta-cheria-tis-astynomias-okto-klemmena-erga-toy-anri-matis/",
-        "https://www.kathimerini.gr/economy/564401572/nea-othisi-sto-ergo-tis-ilektrikis-diasyndesis-kyproy-israil/",
-        "https://www.kathimerini.gr/society/564402964/thessaloniki-karampola-pente-ochimaton-exo-apo-ti-thermi-enas-traymatias/",
-        "https://www.kathimerini.gr/world/564402961/dasiki-pyrkagia-sti-germania-apomakrynthikan-1-800-katoikoi-chorioy-konta-sta-synora-me-velgio/"
+        "https://www.kathimerini.gr/economy/564401557/se-diastayroymena-pyra-to-neo-chorotaxiko-schedio-gia-ton-toyrismo/",
+        "https://www.kathimerini.gr/society/564402976/artopoios-sta-3-500-stremmata-ektimatai-i-kameni-ektasi-sti-siviri/",
+        "https://www.kathimerini.gr/economy/business/564401593/trapezikes-synallages-me-ligoteres-entoles/"
       ],
-      "seen_at_utc": "2026-08-14T06:30:16.694346+00:00"
+      "seen_at_utc": "2026-08-14T06:51:26.303428+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864710/3500-kamena-stremmata-katastrofes-se-spitia-kai-autokinita-apo-ti-fotia-sti-siviri-suneheis-ripseis-nerou/?utm_source=rss",
-      "title": "3.500 καμένα στρέμματα, καταστροφές σε σπίτια και αυτοκίνητα από τη φωτιά στη Σίβηρη, συνεχείς ρίψεις νερού για να σβήσουν όλες οι εστίες",
-      "normalized_title": "3.500 ΚΑΜΕΝΑ ΣΤΡΕΜΜΑΤΑ, ΚΑΤΑΣΤΡΟΦΕΣ ΣΕ ΣΠΙΤΙΑ ΚΑΙ ΑΥΤΟΚΙΝΗΤΑ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ, ΣΥΝΕΧΕΙΣ ΡΙΨΕΙΣ ΝΕΡΟΥ ΓΙΑ ΝΑ ΣΒΗΣΟΥΝ ΟΛΕΣ ΟΙ ΕΣΤΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1864714/apo-1i-septemvriou-i-upohreotiki-ilektroniki-katahorisi-diagnostikon-exetaseon-georgiadis-tromazo-me-amorfosia/?utm_source=rss",
+      "title": "Από 1η Σεπτεμβρίου η υποχρεωτική ηλεκτρονική καταχώρηση διαγνωστικών εξετάσεων - Γεωργιάδης: «Τρομάζω με την τοξικότητα και αμορφωσιά που έχουν κάποιοι»",
+      "normalized_title": "ΑΠΟ 1Η ΣΕΠΤΕΜΒΡΙΟΥ Η ΥΠΟΧΡΕΩΤΙΚΗ ΗΛΕΚΤΡΟΝΙΚΗ ΚΑΤΑΧΩΡΗΣΗ ΔΙΑΓΝΩΣΤΙΚΩΝ ΕΞΕΤΑΣΕΩΝ - ΓΕΩΡΓΙΑΔΗΣ: «ΤΡΟΜΑΖΩ ΜΕ ΤΗΝ ΤΟΞΙΚΟΤΗΤΑ ΚΑΙ ΑΜΟΡΦΩΣΙΑ ΠΟΥ ΕΧΟΥΝ ΚΑΠΟΙΟΙ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864710/3500-kamena-stremmata-katastrofes-se-spitia-kai-autokinita-apo-ti-fotia-sti-siviri-suneheis-ripseis-nerou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864708/sugedrosi-diamarturias-sto-limani-tou-peiraia-gia-tin-afixi-tou-israilinou-krouazieroploiou-crown-iris-deite-eikones/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864707/dekapedaugoustos-sta-dodekanisa-ta-ethima-kai-oi-paradoseis-pou-enonoun-ta-nisia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864714/apo-1i-septemvriou-i-upohreotiki-ilektroniki-katahorisi-diagnostikon-exetaseon-georgiadis-tromazo-me-amorfosia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864713/pano-apo-43600-epivates-anahoroun-apo-ton-peiraia-gia-ton-dekapedaugousto-194-dromologia-eos-tin-kuriaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T06:30:16.694472+00:00"
+      "seen_at_utc": "2026-08-14T06:51:26.303574+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1447710/o-papaioannoy-thymithike-toys-olympiakoys-agones-toy-2004-me-dyo-nea-vinteo-apo-tin-teleti-enarxis/",
-      "title": "22 χρόνια από τους Ολυμπιακούς Αγώνες της Αθήνας – Τα βίντεο του Δημήτρη Παπαϊωάννου από την τελετή έναρξης",
-      "normalized_title": "22 ΧΡΟΝΙΑ ΑΠΟ ΤΟΥΣ ΟΛΥΜΠΙΑΚΟΥΣ ΑΓΩΝΕΣ ΤΗΣ ΑΘΗΝΑΣ – ΤΑ ΒΙΝΤΕΟ ΤΟΥ ΔΗΜΗΤΡΗ ΠΑΠΑΙΩΑΝΝΟΥ ΑΠΟ ΤΗΝ ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1447740/o-tramp-anakoinonei-dasmoys-eos-kai-100-sta-eisagomena-drones/",
+      "title": "Ο Τραμπ ανακοινώνει δασμούς έως και 100% στα εισαγόμενα drones",
+      "normalized_title": "Ο ΤΡΑΜΠ ΑΝΑΚΟΙΝΩΝΕΙ ΔΑΣΜΟΥΣ ΕΩΣ ΚΑΙ 100% ΣΤΑ ΕΙΣΑΓΟΜΕΝΑ DRONES",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1447710/o-papaioannoy-thymithike-toys-olympiakoys-agones-toy-2004-me-dyo-nea-vinteo-apo-tin-teleti-enarxis/",
-        "https://www.efsyn.gr/politiki/1447719/neos-ekprosopos-sto-ypex/"
+        "https://www.efsyn.gr/kosmos/1447740/o-tramp-anakoinonei-dasmoys-eos-kai-100-sta-eisagomena-drones/",
+        "https://www.efsyn.gr/politiki/1447733/tilefoniki-epikoinonia-gerapetriti-aragtsi-me-epikentro-ta-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/aytokinito/1446736/jaecoo-7-shs-p-exclusive-polyteleia-kai-yvridiki-oikonomia/",
+        "https://www.efsyn.gr/politiki/1447729/mises-alitheies-gia-ton-dromo-stin-alexandroypoli/"
       ],
-      "seen_at_utc": "2026-08-14T06:30:16.694442+00:00"
+      "seen_at_utc": "2026-08-14T06:51:26.303520+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/greece/nees-tilefonikes-apates-me-xrisi-ai-gia-mimisi-fonis-systaseis-tis-el-as-pros-tous-polites/",
-      "title": "Νέες τηλεφωνικές απάτες με χρήση AI για μίμηση φωνής - Συστάσεις της ΕΛ.ΑΣ. προς τους πολίτες",
-      "normalized_title": "ΝΕΕΣ ΤΗΛΕΦΩΝΙΚΕΣ ΑΠΑΤΕΣ ΜΕ ΧΡΗΣΗ AI ΓΙΑ ΜΙΜΗΣΗ ΦΩΝΗΣ - ΣΥΣΤΑΣΕΙΣ ΤΗΣ ΕΛ.ΑΣ. ΠΡΟΣ ΤΟΥΣ ΠΟΛΙΤΕΣ",
+      "url": "https://www.in.gr/2026/08/14/greece/thessaloniki-ston-anakriti-simera-o-59xronos-pou-evale-eksi-foties-se-treis-meres-sti-sindo/",
+      "title": "Στον ανακριτή σήμερα ο 59χρονος που έβαλε έξι φωτιές σε τρεις μέρες στη Σίνδο",
+      "normalized_title": "ΣΤΟΝ ΑΝΑΚΡΙΤΗ ΣΗΜΕΡΑ Ο 59ΧΡΟΝΟΣ ΠΟΥ ΕΒΑΛΕ ΕΞΙ ΦΩΤΙΕΣ ΣΕ ΤΡΕΙΣ ΜΕΡΕΣ ΣΤΗ ΣΙΝΔΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/greece/nees-tilefonikes-apates-me-xrisi-ai-gia-mimisi-fonis-systaseis-tis-el-as-pros-tous-polites/",
-        "https://www.in.gr/2026/08/14/economy/akinita-ekpneei-i-prothesmia-gia-to-programma-anakainizo-pos-mporoun-na-kanoun-aitisi-oi-dikaiouxoi/"
+        "https://www.in.gr/2026/08/14/greece/thessaloniki-ston-anakriti-simera-o-59xronos-pou-evale-eksi-foties-se-treis-meres-sti-sindo/",
+        "https://www.in.gr/2026/08/14/world/iaponia-tesseris-nekroi-apo-vroxoptoseis-xoris-proigoumeno-konta-sto-tokio/",
+        "https://www.in.gr/2026/08/14/sports/football/symfonia-aek-reintzers-gia-ton-penrais-pic/"
       ],
-      "seen_at_utc": "2026-08-14T06:30:16.694405+00:00"
+      "seen_at_utc": "2026-08-14T06:51:26.303487+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T06:30:16.694561+00:00"
+  "updated_at_utc": "2026-08-14T06:51:26.303659+00:00"
 }
