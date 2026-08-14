@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564376810/eortologio-poioi-giortazoyn-simera-14-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 14 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 14 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/economy/international/564401656/i-eyropi-stereyei-apo-pyriniki-energeia/",
+      "title": "Η Ευρώπη «στερεύει» από πυρηνική ενέργεια",
+      "normalized_title": "Η ΕΥΡΩΠΗ «ΣΤΕΡΕΥΕΙ» ΑΠΟ ΠΥΡΗΝΙΚΗ ΕΝΕΡΓΕΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564376810/eortologio-poioi-giortazoyn-simera-14-aygoystoy/",
-        "https://www.kathimerini.gr/world/564401842/oi-ceos-apoktoyn-klonoys-ai-i-megali-mpizna-kai-oi-pagides/"
+        "https://www.kathimerini.gr/economy/international/564401656/i-eyropi-stereyei-apo-pyriniki-energeia/",
+        "https://www.kathimerini.gr/society/dikastiko/564401179/apofasi-stathmos-gia-tis-apozimioseis-apo-to-dimosio/",
+        "https://www.kathimerini.gr/society/564402718/fotia-sti-chalkidiki-machi-me-tis-diaspartes-esties-epifylaki-gia-anazopyroseis/",
+        "https://www.kathimerini.gr/world/564401245/se-exelixi-to-pempto-kyma-kaysona-stin-eyropi/",
+        "https://www.kathimerini.gr/world/564401248/dytiki-ochthi-antidraseis-ton-amerikanon-sto-orgio-vias-ton-epoikon/",
+        "https://www.kathimerini.gr/world/564401287/kontra-iaponias-rosias-gia-tis-koyriles-nisoys/"
       ],
-      "seen_at_utc": "2026-08-13T21:17:06.602971+00:00"
+      "seen_at_utc": "2026-08-14T04:17:41.553736+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1264,61 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864629/diasosi-48-metanaston-apo-fortigo-ploio-notia-tis-gaudou/?utm_source=rss",
-      "title": "Διάσωση 48 μεταναστών από φορτηγό πλοίο νότια της Γαύδου",
-      "normalized_title": "ΔΙΑΣΩΣΗ 48 ΜΕΤΑΝΑΣΤΩΝ ΑΠΟ ΦΟΡΤΗΓΟ ΠΛΟΙΟ ΝΟΤΙΑ ΤΗΣ ΓΑΥΔΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1864652/agrieuoun-ta-meltemia-to-epomeno-48oro-me-ripes-100-hlmora-kai-upsilo-kinduno-purkagias/?utm_source=rss",
+      "title": "Αγριεύουν τα μελτέμια για 48 ώρες: Απαγορευτικό από Ραφήνα και Λαύριο, ακυρώθηκε δρομολόγιο από Πειραιά, πολύ αυξημένος ο κίνδυνος πυρκαγιάς",
+      "normalized_title": "ΑΓΡΙΕΥΟΥΝ ΤΑ ΜΕΛΤΕΜΙΑ ΓΙΑ 48 ΩΡΕΣ: ΑΠΑΓΟΡΕΥΤΙΚΟ ΑΠΟ ΡΑΦΗΝΑ ΚΑΙ ΛΑΥΡΙΟ, ΑΚΥΡΩΘΗΚΕ ΔΡΟΜΟΛΟΓΙΟ ΑΠΟ ΠΕΙΡΑΙΑ, ΠΟΛΥ ΑΥΞΗΜΕΝΟΣ Ο ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864629/diasosi-48-metanaston-apo-fortigo-ploio-notia-tis-gaudou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864652/agrieuoun-ta-meltemia-to-epomeno-48oro-me-ripes-100-hlmora-kai-upsilo-kinduno-purkagias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864647/horis-eniaio-metopo-i-fotia-sti-siviri-halkidikis-mahi-me-diaspartes-esties-481-anthropoi-metaferthikan-se-asfali-simeia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-13T22:51:24.700841+00:00"
+      "seen_at_utc": "2026-08-14T04:17:41.553879+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1447597/eyropaiko-stivoy-ekti-i-stefanidi-poy-ekane-xana-tin-ypervasi-i-agkalia-me-to-paidi-tis-meta-ton-agona-vinteo/",
-      "title": "Ευρωπαϊκό στίβου: Έκτη η Στεφανίδη που έκανε ξανά την υπέρβαση – Η αγκαλιά με το παιδί της μετά τον αγώνα [βίντεο]",
-      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΕΚΤΗ Η ΣΤΕΦΑΝΙΔΗ ΠΟΥ ΕΚΑΝΕ ΞΑΝΑ ΤΗΝ ΥΠΕΡΒΑΣΗ – Η ΑΓΚΑΛΙΑ ΜΕ ΤΟ ΠΑΙΔΙ ΤΗΣ ΜΕΤΑ ΤΟΝ ΑΓΩΝΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1447618/kimolos-me-htypaei-ki-emena-to-reyma-ayti-ti-stigmi-sygklonizei-to-tilefonima-tis-miteras-ston-giatro/",
+      "title": "Κίμωλος: «Με χτυπάει κι εμένα το ρεύμα αυτή τη στιγμή» – Το τηλεφώνημα της μητέρας στον γιατρό",
+      "normalized_title": "ΚΙΜΩΛΟΣ: «ΜΕ ΧΤΥΠΑΕΙ ΚΙ ΕΜΕΝΑ ΤΟ ΡΕΥΜΑ ΑΥΤΗ ΤΗ ΣΤΙΓΜΗ» – ΤΟ ΤΗΛΕΦΩΝΗΜΑ ΤΗΣ ΜΗΤΕΡΑΣ ΣΤΟΝ ΓΙΑΤΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1447597/eyropaiko-stivoy-ekti-i-stefanidi-poy-ekane-xana-tin-ypervasi-i-agkalia-me-to-paidi-tis-meta-ton-agona-vinteo/"
+        "https://www.efsyn.gr/ellada/1447618/kimolos-me-htypaei-ki-emena-to-reyma-ayti-ti-stigmi-sygklonizei-to-tilefonima-tis-miteras-ston-giatro/",
+        "https://www.efsyn.gr/nisides/1446727/poiitis-ek-toy-proheiroy-10/",
+        "https://www.efsyn.gr/ellada/1447606/fotia-sti-siviri-halkidikis-horis-eniaio-metopo-481-anthropoi-metaferthikan-se-asfali-simeia/",
+        "https://www.efsyn.gr/ellada/1447604/kindynos-pyrkagias-red-code-se-attiki-kai-polles-periohes-anemoi-eos-9-mpofor-kai-ripes-ano-ton-100-hlm-ora/",
+        "https://www.efsyn.gr/ellada/1447602/eortologio-poioi-giortazoyn-simera-14-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-13T21:17:06.603042+00:00"
+      "seen_at_utc": "2026-08-14T04:17:41.553822+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/plus/medianews/ta-nea-savvatokyriako-ektaktos-apo-tin-paraskeyi-14-aygoustou/",
-      "title": "«Τα Νέα Σαββατοκύριακο» εκτάκτως από την Παρασκευή 14 Αυγούστου",
-      "normalized_title": "«ΤΑ ΝΕΑ ΣΑΒΒΑΤΟΚΥΡΙΑΚΟ» ΕΚΤΑΚΤΩΣ ΑΠΟ ΤΗΝ ΠΑΡΑΣΚΕΥΗ 14 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.in.gr/2026/08/14/life/geysi/syntagi-zymarika-me-garides/",
+      "title": "Συνταγή: Ζυμαρικά με γαρίδες",
+      "normalized_title": "ΣΥΝΤΑΓΗ: ΖΥΜΑΡΙΚΑ ΜΕ ΓΑΡΙΔΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/plus/medianews/ta-nea-savvatokyriako-ektaktos-apo-tin-paraskeyi-14-aygoustou/"
+        "https://www.in.gr/2026/08/14/life/geysi/syntagi-zymarika-me-garides/",
+        "https://www.in.gr/2026/08/14/greece/anaplirotes-ekpaideytikoi-anoigei-simera-i-platforma-dilosis-perioxon/",
+        "https://www.in.gr/2026/08/14/plus/vita/pente-askiseis-mesa-sto-nero/",
+        "https://www.in.gr/2026/08/14/greece/kairos-isxyroi-anemoi-eos-9-mpofor-kai-ptosi-tis-thermokrasias/",
+        "https://www.in.gr/2026/08/14/greece/to-paradokso-tou-esy/",
+        "https://www.in.gr/2026/08/14/health/poso-kindyneyoun-ta-matia-mas-apo-ta-thalassia-spor/",
+        "https://www.in.gr/2026/08/14/life/culture-live/yparxei-periptosi-na-doume-ton-mathiou-makkonaxi-sto-spinoff-tou-yellowstone/",
+        "https://www.in.gr/2026/08/14/economy/oikonomikes-eidiseis/efka-syntaksi-me-xrei-alla-kai-me-koftes/",
+        "https://www.in.gr/2026/08/14/plus/vita/i-teleiomania-mporei-na-mas-dialysei/",
+        "https://www.in.gr/2026/08/14/life/culture-live/animals-kykloforise-to-teaser-tis-neas-tainias-tou-netflix-me-tous-mpen-aflek-kai-keri-ouasingkton/",
+        "https://www.in.gr/2026/08/14/in-science/ai/tha-einai-i-texniti-noimosyni-i-teleytaia-anthropini-anakalypsi/",
+        "https://www.in.gr/2026/08/14/greece/klironomies-deyteri-eykairia-gia-osous-kindyneyoun-apo-xrei/",
+        "https://www.in.gr/2026/08/14/in-science/perivallon-b-science/giati-i-eyropi-einai-i-taxytera-thermainomeni-ipeiros-me-tin-ellada-na-vrisketai-se-hotspot/",
+        "https://www.in.gr/2026/08/14/world/kolomvia-i-dieythyntria-tis-actionaid-sto-in-gia-tin-aorati-krisi-meta-ton-seismo/",
+        "https://www.in.gr/2026/08/14/politics/epikairotita/apokalypsi-gia-isaak-solomou-yparxoun-entalmata-gia-tous-dolofonous-tous-alla-den-ektelountai/",
+        "https://www.in.gr/2026/08/14/world/israil-telei-ypo-syzitisi-taksidi-tou-kousner-stin-ierousalim-symfona-me-to-axios/",
+        "https://www.in.gr/2026/08/14/world/iran-tha-ypostei-oikonomiki-apomonosi-pou-den-ksanaeide-pote-o-kosmos-leei-o-mpesent/",
+        "https://www.in.gr/2026/08/14/world/iran-stoxos-yp-arithmon-ena-gia-tis-ipa-na-diatirithei-xamila-i-timi-ton-kaysimon-dilonei-o-vans/",
+        "https://www.in.gr/2026/08/14/world/oi-ipa-sxediazoun-xersaies-epixeiriseis-sti-latiniki-ameriki-kata-tis-diakinisis-narkotikon/",
+        "https://www.in.gr/2026/08/14/in-science/perivallon-b-science/perou-kiryxtike-katastasi-ektaktis-anagkis-gia-ton-kindyno-ksirasias-logo-tou-el-ninio/",
+        "https://www.in.gr/2026/08/14/world/kouva-9-diplomates-tis-apelaynei-i-dominikani-dimokratia/",
+        "https://www.in.gr/2026/08/14/world/oukrania-toulaxiston-enas-nekros-kai-15-traymaties-se-pligmata-tis-rosias-stin-kramatorsk/",
+        "https://www.in.gr/2026/08/14/greece/ileia-pyrkagia-ksespase-se-agrotodasiki-ektasi-stin-perioxi-alfeiousa/",
+        "https://www.in.gr/2026/08/14/world/ipa-dasmous-eos-100-stis-eisagoges-drones-gia-logous-ethnikis-asfaleias-anakoinose-o-ntonalnt-tramp/",
+        "https://www.in.gr/2026/08/14/world/ipa-treis-ekteleseis-thanatopoiniton-se-mia-imera-gia-proti-fora-epeita-apo-16-xronia/"
       ],
-      "seen_at_utc": "2026-08-13T22:51:24.700801+00:00"
+      "seen_at_utc": "2026-08-14T04:17:41.553784+00:00"
     }
   },
-  "updated_at_utc": "2026-08-13T22:51:24.700922+00:00"
+  "updated_at_utc": "2026-08-14T04:17:41.553988+00:00"
 }
