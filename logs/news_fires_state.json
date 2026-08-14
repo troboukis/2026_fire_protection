@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564400759/ti-kerdizoyn-oi-kato-ton-25-eton-an-archisoyn-na-ergazontai-simera/",
-      "title": "Τι κερδίζουν οι κάτω των 25 ετών αν αρχίσουν να εργάζονται σήμερα",
-      "normalized_title": "ΤΙ ΚΕΡΔΙΖΟΥΝ ΟΙ ΚΑΤΩ ΤΩΝ 25 ΕΤΩΝ ΑΝ ΑΡΧΙΣΟΥΝ ΝΑ ΕΡΓΑΖΟΝΤΑΙ ΣΗΜΕΡΑ",
+      "url": "https://www.kathimerini.gr/society/564403819/fotia-stin-ileia-sikothikan-aeroskafi/",
+      "title": "Φωτιά στην Ηλεία – Σηκώθηκαν αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΗΛΕΙΑ – ΣΗΚΩΘΗΚΑΝ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564400759/ti-kerdizoyn-oi-kato-ton-25-eton-an-archisoyn-na-ergazontai-simera/",
-        "https://www.kathimerini.gr/k/sunday-edition/564403771/diavaste-stin-kathimerini-tis-kyriakis-452/"
+        "https://www.kathimerini.gr/society/564403819/fotia-stin-ileia-sikothikan-aeroskafi/",
+        "https://www.kathimerini.gr/society/564403804/voyties-choris-risko-oi-symvoyles-ton-eidikon-gia-prostasia-apo-ton-pnigmo/",
+        "https://www.kathimerini.gr/society/564403807/arsi-toy-apagoreytikoy-ta-ploia-poy-feygoyn-apo-rafina-kai-layrio-prostheta-dromologia/",
+        "https://www.kathimerini.gr/world/564403780/seismos-stin-kolomvia-ektakti-voitheia-200-ekat-esteile-i-pagkosmia-trapeza/",
+        "https://www.kathimerini.gr/world/564403717/kyvernisi-tramp-zita-apo-to-anotato-dikastirio-na-epitrepsei-tin-oloklirosi-tis-aithoysas-choroy-ston-leyko-oiko/"
       ],
-      "seen_at_utc": "2026-08-14T14:51:15.543080+00:00"
+      "seen_at_utc": "2026-08-14T15:17:58.207921+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1263,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864930/o-dimos-kassandras-anesteile-logo-tis-fotias-oles-tis-ekdiloseis-gia-ton-dekapedaugousto/?utm_source=rss",
-      "title": "Ο Δήμος Κασσάνδρας ανέστειλε λόγω της φωτιάς όλες τις εκδηλώσεις για τον Δεκαπενταύγουστο",
-      "normalized_title": "Ο ΔΗΜΟΣ ΚΑΣΣΑΝΔΡΑΣ ΑΝΕΣΤΕΙΛΕ ΛΟΓΩ ΤΗΣ ΦΩΤΙΑΣ ΟΛΕΣ ΤΙΣ ΕΚΔΗΛΩΣΕΙΣ ΓΙΑ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1864939/sunelifthi-sti-filothei-48hronos-gia-anthropoktonia-stin-alvania/?utm_source=rss",
+      "title": "Συνελήφθη 48χρονος στη Φιλοθέη που καταζητούνταν για ανθρωποκτονία στην Αλβανία",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 48ΧΡΟΝΟΣ ΣΤΗ ΦΙΛΟΘΕΗ ΠΟΥ ΚΑΤΑΖΗΤΟΥΝΤΑΝ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΣΤΗΝ ΑΛΒΑΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864930/o-dimos-kassandras-anesteile-logo-tis-fotias-oles-tis-ekdiloseis-gia-ton-dekapedaugousto/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864939/sunelifthi-sti-filothei-48hronos-gia-anthropoktonia-stin-alvania/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864937/pnigmoi-stin-ellada-ano-ton-60-eton-to-80-ton-thumaton-kai-megala-pososta-kai-sta-paidia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864933/sovaro-trohaio-stin-preveza-pos-egine-to-par-oligon-moiraio-atuhima-me-8-traumaties-anamesa-tous-kai-paidia-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T14:51:15.543221+00:00"
+      "seen_at_utc": "2026-08-14T15:17:58.208015+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448061/i-eyropaiki-lista-tis-aek-gia-ta-plei-of-toy-champions-league-ektos-vitalis-kai-alexioy/",
-      "title": "Η ευρωπαϊκή λίστα της ΑΕΚ για τα πλέι οφ του Champions League: Εκτός Βιτάλις και Αλεξίου",
-      "normalized_title": "Η ΕΥΡΩΠΑΙΚΗ ΛΙΣΤΑ ΤΗΣ ΑΕΚ ΓΙΑ ΤΑ ΠΛΕΙ ΟΦ ΤΟΥ CHAMPIONS LEAGUE: ΕΚΤΟΣ ΒΙΤΑΛΙΣ ΚΑΙ ΑΛΕΞΙΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1448067/spoydaio-mathima-anthropias-kai-allileggyis-ston-evro-olokliro-horio-htizei-ethelontika-spiti-gia-nea-oikogeneia-vinteo/",
+      "title": "Σπουδαίο μάθημα ανθρωπιάς και αλληλεγγύης στον Έβρο: Ολόκληρο χωριό χτίζει εθελοντικά σπίτι για νέα οικογένεια [βίντεο]",
+      "normalized_title": "ΣΠΟΥΔΑΙΟ ΜΑΘΗΜΑ ΑΝΘΡΩΠΙΑΣ ΚΑΙ ΑΛΛΗΛΕΓΓΥΗΣ ΣΤΟΝ ΕΒΡΟ: ΟΛΟΚΛΗΡΟ ΧΩΡΙΟ ΧΤΙΖΕΙ ΕΘΕΛΟΝΤΙΚΑ ΣΠΙΤΙ ΓΙΑ ΝΕΑ ΟΙΚΟΓΕΝΕΙΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448061/i-eyropaiki-lista-tis-aek-gia-ta-plei-of-toy-champions-league-ektos-vitalis-kai-alexioy/",
-        "https://www.efsyn.gr/kosmos/1448059/deyteros-ektrohiasmos-trenoy-sti-vretania-mesa-se-24-ores/",
-        "https://www.efsyn.gr/kosmos/1448045/gallia-to-syntagmatiko-symvoylio-mplokarei-tin-apagoreysi-ton-social-media-se-paidia-pligma-gia-ton-proedro-makron/"
+        "https://www.efsyn.gr/ellada/1448067/spoydaio-mathima-anthropias-kai-allileggyis-ston-evro-olokliro-horio-htizei-ethelontika-spiti-gia-nea-oikogeneia-vinteo/",
+        "https://www.efsyn.gr/ellada/1448056/oi-pyrkagies-poy-simadepsan-ti-halkidiki-ta-teleytaia-hronia-oi-idiaiterotites-tis-periohis/"
       ],
-      "seen_at_utc": "2026-08-14T14:51:15.543197+00:00"
+      "seen_at_utc": "2026-08-14T15:17:58.207994+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/sports/football/tsikinio-poly-xaroumenos-pou-eimai-ston-olympiako-pano-apo-ola-i-omada-kai-na-eimaste-enomenoi/",
-      "title": "Τσικίνιο: «Πολύ χαρούμενος που είμαι στον Ολυμπιακό – Πάνω από όλα η ομάδα και να είμαστε ενωμένοι»",
-      "normalized_title": "ΤΣΙΚΙΝΙΟ: «ΠΟΛΥ ΧΑΡΟΥΜΕΝΟΣ ΠΟΥ ΕΙΜΑΙ ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ – ΠΑΝΩ ΑΠΟ ΟΛΑ Η ΟΜΑΔΑ ΚΑΙ ΝΑ ΕΙΜΑΣΤΕ ΕΝΩΜΕΝΟΙ»",
+      "url": "https://www.in.gr/2026/08/14/greece/fotia-sti-varda-ileias-kinitopoiithikan-3-aeroskafi/",
+      "title": "Φωτιά στη Βάρδα Ηλείας – Κινητοποιήθηκαν 3 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΒΑΡΔΑ ΗΛΕΙΑΣ – ΚΙΝΗΤΟΠΟΙΗΘΗΚΑΝ 3 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/sports/football/tsikinio-poly-xaroumenos-pou-eimai-ston-olympiako-pano-apo-ola-i-omada-kai-na-eimaste-enomenoi/",
-        "https://www.in.gr/2026/08/14/world/seismos-stin-kolomvia-oi-gynaikes-stin-proti-grammi-den-exoume-oute-koutali/",
-        "https://www.in.gr/2026/08/14/world/kolomvia-ektakti-voitheia-200-ekat-dolarion-apo-tin-pagkosmia-trapeza-meta-ton-katastrofiko-seismo/",
-        "https://www.in.gr/2026/08/14/in-science/technology/antisyntagmatiki-krithike-i-galliki-apagoreysi-ton-social-media-gia-tous-anilikous/"
+        "https://www.in.gr/2026/08/14/greece/fotia-sti-varda-ileias-kinitopoiithikan-3-aeroskafi/",
+        "https://www.in.gr/2026/08/14/sports/football/o-nomos-mpove-emeine-xoris-xrimata/",
+        "https://www.in.gr/2026/08/14/world/deyteros-ektroxiasmos-trenou-sti-vretania-mesa-se-24-ores/",
+        "https://www.in.gr/2026/08/14/life/culture-live/i-asia-artzento-gia-ton-rolo-tis-os-ratsistria-kai-tin-paragogi-enos-ntokimanter-gia-ti-tzia-karantzi/"
       ],
-      "seen_at_utc": "2026-08-14T14:51:15.543154+00:00"
+      "seen_at_utc": "2026-08-14T15:17:58.207960+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T14:51:15.543305+00:00"
+  "updated_at_utc": "2026-08-14T15:17:58.208101+00:00"
 }
