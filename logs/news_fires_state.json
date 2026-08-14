@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564403225/thessaloniki-traymatisan-kai-listepsan-astynomiko-sti-nea-paralia/",
-      "title": "Θεσσαλονίκη: Τραυμάτισαν και λήστεψαν αστυνομικό στη Νέα Παραλία",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΤΡΑΥΜΑΤΙΣΑΝ ΚΑΙ ΛΗΣΤΕΨΑΝ ΑΣΤΥΝΟΜΙΚΟ ΣΤΗ ΝΕΑ ΠΑΡΑΛΙΑ",
+      "url": "https://www.kathimerini.gr/world/564403270/ispania-kai-maroko-enischyoyn-ta-synora-sti-theoyta-fovoyntai-neo-kyma-metanaston-ton-dekapentaygoysto/",
+      "title": "Ισπανία και Μαρόκο ενισχύουν τα σύνορα στη Θέουτα – Φοβούνται νέο κύμα μεταναστών τον Δεκαπενταύγουστο",
+      "normalized_title": "ΙΣΠΑΝΙΑ ΚΑΙ ΜΑΡΟΚΟ ΕΝΙΣΧΥΟΥΝ ΤΑ ΣΥΝΟΡΑ ΣΤΗ ΘΕΟΥΤΑ – ΦΟΒΟΥΝΤΑΙ ΝΕΟ ΚΥΜΑ ΜΕΤΑΝΑΣΤΩΝ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564403225/thessaloniki-traymatisan-kai-listepsan-astynomiko-sti-nea-paralia/",
-        "https://www.kathimerini.gr/world/564403228/amerikanos-ierapostolos-afethike-eleytheros-epeita-apo-ennea-mines-omirias/",
-        "https://www.kathimerini.gr/economy/international/564401536/ayxanontai-ontos-oi-exagoges-petrelaioy-apo-ti-m-anatoli/"
+        "https://www.kathimerini.gr/world/564403270/ispania-kai-maroko-enischyoyn-ta-synora-sti-theoyta-fovoyntai-neo-kyma-metanaston-ton-dekapentaygoysto/",
+        "https://www.kathimerini.gr/society/564403261/epitropi-ektimisis-kindynoy-paramenoyn-oi-thyellodeis-anemoi-kai-ayrio-savvato/",
+        "https://www.kathimerini.gr/culture/music/564399313/mia-koinotita-poy-epimenei/",
+        "https://www.kathimerini.gr/society/564403246/ypothesi-marfin-prosfygi-kata-tis-prosorinis-kratisis-tis-46chronis-ti-ypostirizei-o-synigoros-tis/",
+        "https://www.kathimerini.gr/society/564403237/xanthi-ptosi-gynaikas-apo-ton-tetarto-orofo-oikodomis/"
       ],
-      "seen_at_utc": "2026-08-14T09:30:17.613418+00:00"
+      "seen_at_utc": "2026-08-14T09:51:12.534281+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1864796/eutuhos-den-hathike-anthropini-zoi-leei-o-proedros-tou-iatrikou-sullogou-halkidikis-gia-ti-fotia-stin-kassandra/?utm_source=rss",
-      "title": "«Ευτυχώς δεν χάθηκε ανθρώπινη ζωή», λέει ο πρόεδρος του Ιατρικού Συλλόγου Χαλκιδικής για τη φωτιά στην Κασσάνδρα",
-      "normalized_title": "«ΕΥΤΥΧΩΣ ΔΕΝ ΧΑΘΗΚΕ ΑΝΘΡΩΠΙΝΗ ΖΩΗ», ΛΕΕΙ Ο ΠΡΟΕΔΡΟΣ ΤΟΥ ΙΑΤΡΙΚΟΥ ΣΥΛΛΟΓΟΥ ΧΑΛΚΙΔΙΚΗΣ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΗΝ ΚΑΣΣΑΝΔΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1864807/sullipsi-70hronou-kai-61hronou-sti-thessaloniki-gia-diakinisi-kannavis/?utm_source=rss",
+      "title": "Σύλληψη 70χρονου και 61χρονου στη Θεσσαλονίκη για διακίνηση κάνναβης",
+      "normalized_title": "ΣΥΛΛΗΨΗ 70ΧΡΟΝΟΥ ΚΑΙ 61ΧΡΟΝΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΚΑΝΝΑΒΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1864796/eutuhos-den-hathike-anthropini-zoi-leei-o-proedros-tou-iatrikou-sullogou-halkidikis-gia-ti-fotia-stin-kassandra/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1864795/katatethike-prosfugi-enadion-tou-edalmatos-prosorinis-kratisis-tis-46hronis-pou-ebleketai-stin-upothesi-tis-marfin/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1864807/sullipsi-70hronou-kai-61hronou-sti-thessaloniki-gia-diakinisi-kannavis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864802/pos-shetizetai-i-exarsi-tou-iou-tou-dutikou-neilou-stin-attiki-me-tin-kakokairia-daniel-exigei-o-gikas-magiorkinis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1864801/autokinito-vrethike-anapoda-se-kedriko-dromo-tis-patras-meta-apo-trohaio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-14T09:30:17.613624+00:00"
+      "seen_at_utc": "2026-08-14T09:51:12.534409+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447879/exodos-dekapentaygoystoy-voreia-ellada-ayximeni-kinisi-stoys-dromoys-kasthysteriseis-sta-diodia-malgaron/",
-      "title": "Έξοδος Δεκαπενταύγουστου – Βόρεια Ελλάδα: Αυξημένη κίνηση στους δρόμους – Κασθυστερήσεις στα διόδια Μαλγάρων",
-      "normalized_title": "ΕΞΟΔΟΣ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ – ΒΟΡΕΙΑ ΕΛΛΑΔΑ: ΑΥΞΗΜΕΝΗ ΚΙΝΗΣΗ ΣΤΟΥΣ ΔΡΟΜΟΥΣ – ΚΑΣΘΥΣΤΕΡΗΣΕΙΣ ΣΤΑ ΔΙΟΔΙΑ ΜΑΛΓΑΡΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1447893/marfin-katethese-prosfygi-kata-tis-profylakisis-tis-i-46hroni-anyparkta-ta-stoiheia-tis-dikografias/",
+      "title": "Marfin: Κατέθεσε προσφυγή κατά της προφυλάκισής της η 46χρονη – «Ανύπαρκτα τα στοιχεία της δικογραφίας»",
+      "normalized_title": "MARFIN: ΚΑΤΕΘΕΣΕ ΠΡΟΣΦΥΓΗ ΚΑΤΑ ΤΗΣ ΠΡΟΦΥΛΑΚΙΣΗΣ ΤΗΣ Η 46ΧΡΟΝΗ – «ΑΝΥΠΑΡΚΤΑ ΤΑ ΣΤΟΙΧΕΙΑ ΤΗΣ ΔΙΚΟΓΡΑΦΙΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447879/exodos-dekapentaygoystoy-voreia-ellada-ayximeni-kinisi-stoys-dromoys-kasthysteriseis-sta-diodia-malgaron/",
-        "https://www.efsyn.gr/kosmos/1447851/analysi-cnn-o-polikos-dromos-toy-metaxioy-fernei-pio-konta-rosia-kai-kina-mpiznes-kato-apo-ti-myti-ton-ipa/"
+        "https://www.efsyn.gr/ellada/1447893/marfin-katethese-prosfygi-kata-tis-profylakisis-tis-i-46hroni-anyparkta-ta-stoiheia-tis-dikografias/",
+        "https://www.efsyn.gr/ellada/1447896/xanthi-neari-gynaika-epese-apo-ton-4o-orofo-nosileyetai-se-krisimi-katastasi-sti-meth/",
+        "https://www.efsyn.gr/ellada/1447889/aigialeia-akyrothike-provoli-tis-tainias-arkoydotrypa-meta-apo-omofovikes-antidraseis/"
       ],
-      "seen_at_utc": "2026-08-14T09:30:17.613564+00:00"
+      "seen_at_utc": "2026-08-14T09:51:12.534388+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/economy/diethnis-oikonomia/xamenes-zoes-xamenes-sodeies-o-kaysonas-tha-stoixisei-sto-eyropaiko-aep/",
-      "title": "Χαμένες ζωές, χαμένες σοδειές – Ο καύσωνας θα στοιχίσει στο ευρωπαϊκό ΑΕΠ",
-      "normalized_title": "ΧΑΜΕΝΕΣ ΖΩΕΣ, ΧΑΜΕΝΕΣ ΣΟΔΕΙΕΣ – Ο ΚΑΥΣΩΝΑΣ ΘΑ ΣΤΟΙΧΙΣΕΙ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΑΕΠ",
+      "url": "https://www.in.gr/2026/08/14/world/ekrikseis-stin-aitna-kleisto-paramenei-to-aerodromio-tis-katania-ekatontades-akyroseis-ptiseon/",
+      "title": "Κλειστό παραμένει το αεροδρόμιο της Κατάνια λόγω των εκρήξεων στην Αίτνα - Εκατοντάδες ακυρώσεις πτήσεων",
+      "normalized_title": "ΚΛΕΙΣΤΟ ΠΑΡΑΜΕΝΕΙ ΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΚΑΤΑΝΙΑ ΛΟΓΩ ΤΩΝ ΕΚΡΗΞΕΩΝ ΣΤΗΝ ΑΙΤΝΑ - ΕΚΑΤΟΝΤΑΔΕΣ ΑΚΥΡΩΣΕΙΣ ΠΤΗΣΕΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/economy/diethnis-oikonomia/xamenes-zoes-xamenes-sodeies-o-kaysonas-tha-stoixisei-sto-eyropaiko-aep/"
+        "https://www.in.gr/2026/08/14/world/ekrikseis-stin-aitna-kleisto-paramenei-to-aerodromio-tis-katania-ekatontades-akyroseis-ptiseon/",
+        "https://www.in.gr/2026/08/14/sports/othersports/ston-imiteliko-ton-200m-petalouda-perase-o-siskos-vid/",
+        "https://www.in.gr/2026/08/14/greece/crown-iris-diadilosi-ston-peiraia-gia-tin-afiksi-tou-israilinou-krouazieroploiou/",
+        "https://www.in.gr/2026/08/14/plus/aprosmeni-mageia-kai-oikeiotita-stis-diakopes-tesseris-tropoi-gia-na-parateinete-ta-ofeli-tis-kalokairinis-apodrasis/"
       ],
-      "seen_at_utc": "2026-08-14T09:30:17.613503+00:00"
+      "seen_at_utc": "2026-08-14T09:51:12.534343+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T09:30:17.613734+00:00"
+  "updated_at_utc": "2026-08-14T09:51:12.534489+00:00"
 }
