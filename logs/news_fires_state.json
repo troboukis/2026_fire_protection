@@ -1,18 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564401656/i-eyropi-stereyei-apo-pyriniki-energeia/",
-      "title": "Η Ευρώπη «στερεύει» από πυρηνική ενέργεια",
-      "normalized_title": "Η ΕΥΡΩΠΗ «ΣΤΕΡΕΥΕΙ» ΑΠΟ ΠΥΡΗΝΙΚΗ ΕΝΕΡΓΕΙΑ",
+      "url": "https://www.kathimerini.gr/world/564402748/to-nato-katerripse-drone-ston-enaerio-choro-tis-letonias/",
+      "title": "Το ΝΑΤΟ κατέρριψε drone στον εναέριο χώρο της Λετονίας",
+      "normalized_title": "ΤΟ ΝΑΤΟ ΚΑΤΕΡΡΙΨΕ DRONE ΣΤΟΝ ΕΝΑΕΡΙΟ ΧΩΡΟ ΤΗΣ ΛΕΤΟΝΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564401656/i-eyropi-stereyei-apo-pyriniki-energeia/",
-        "https://www.kathimerini.gr/society/dikastiko/564401179/apofasi-stathmos-gia-tis-apozimioseis-apo-to-dimosio/",
-        "https://www.kathimerini.gr/society/564402718/fotia-sti-chalkidiki-machi-me-tis-diaspartes-esties-epifylaki-gia-anazopyroseis/",
-        "https://www.kathimerini.gr/world/564401245/se-exelixi-to-pempto-kyma-kaysona-stin-eyropi/",
-        "https://www.kathimerini.gr/world/564401248/dytiki-ochthi-antidraseis-ton-amerikanon-sto-orgio-vias-ton-epoikon/",
-        "https://www.kathimerini.gr/world/564401287/kontra-iaponias-rosias-gia-tis-koyriles-nisoys/"
+        "https://www.kathimerini.gr/world/564402748/to-nato-katerripse-drone-ston-enaerio-choro-tis-letonias/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564401182/giati-to-ste-akyrose-adeies-idiotikon-aei/",
+        "https://www.kathimerini.gr/world/564402736/o-tramp-epivallei-dasmoys-stis-eisagoges-drones/"
       ],
-      "seen_at_utc": "2026-08-14T04:17:41.553736+00:00"
+      "seen_at_utc": "2026-08-14T04:29:59.859638+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1274,51 +1271,23 @@
       "seen_at_utc": "2026-08-14T04:17:41.553879+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447618/kimolos-me-htypaei-ki-emena-to-reyma-ayti-ti-stigmi-sygklonizei-to-tilefonima-tis-miteras-ston-giatro/",
-      "title": "Κίμωλος: «Με χτυπάει κι εμένα το ρεύμα αυτή τη στιγμή» – Το τηλεφώνημα της μητέρας στον γιατρό",
-      "normalized_title": "ΚΙΜΩΛΟΣ: «ΜΕ ΧΤΥΠΑΕΙ ΚΙ ΕΜΕΝΑ ΤΟ ΡΕΥΜΑ ΑΥΤΗ ΤΗ ΣΤΙΓΜΗ» – ΤΟ ΤΗΛΕΦΩΝΗΜΑ ΤΗΣ ΜΗΤΕΡΑΣ ΣΤΟΝ ΓΙΑΤΡΟ",
+      "url": "https://www.efsyn.gr/ellada/1447627/idiotika-panepistimia-oi-synergasies-fantasmata-poy-eide-to-ste-anoigei-o-dromos-gia-nees-prosfyges/",
+      "title": "Ιδιωτικά πανεπιστήμια: Οι συνεργασίες – φαντάσματα που είδε το ΣτΕ – Ανοίγει ο δρόμος για νέες προσφυγές",
+      "normalized_title": "ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΟΙ ΣΥΝΕΡΓΑΣΙΕΣ – ΦΑΝΤΑΣΜΑΤΑ ΠΟΥ ΕΙΔΕ ΤΟ ΣΤΕ – ΑΝΟΙΓΕΙ Ο ΔΡΟΜΟΣ ΓΙΑ ΝΕΕΣ ΠΡΟΣΦΥΓΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447618/kimolos-me-htypaei-ki-emena-to-reyma-ayti-ti-stigmi-sygklonizei-to-tilefonima-tis-miteras-ston-giatro/",
-        "https://www.efsyn.gr/nisides/1446727/poiitis-ek-toy-proheiroy-10/",
-        "https://www.efsyn.gr/ellada/1447606/fotia-sti-siviri-halkidikis-horis-eniaio-metopo-481-anthropoi-metaferthikan-se-asfali-simeia/",
-        "https://www.efsyn.gr/ellada/1447604/kindynos-pyrkagias-red-code-se-attiki-kai-polles-periohes-anemoi-eos-9-mpofor-kai-ripes-ano-ton-100-hlm-ora/",
-        "https://www.efsyn.gr/ellada/1447602/eortologio-poioi-giortazoyn-simera-14-aygoystoy/"
+        "https://www.efsyn.gr/ellada/1447627/idiotika-panepistimia-oi-synergasies-fantasmata-poy-eide-to-ste-anoigei-o-dromos-gia-nees-prosfyges/"
       ],
-      "seen_at_utc": "2026-08-14T04:17:41.553822+00:00"
+      "seen_at_utc": "2026-08-14T04:29:59.859751+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/14/life/geysi/syntagi-zymarika-me-garides/",
-      "title": "Συνταγή: Ζυμαρικά με γαρίδες",
-      "normalized_title": "ΣΥΝΤΑΓΗ: ΖΥΜΑΡΙΚΑ ΜΕ ΓΑΡΙΔΕΣ",
+      "url": "https://www.in.gr/2026/08/14/greece/fotia-sti-xalkidiki-maxi-me-diaspartes-esties-se-epifylaki-gia-anazopyroseis-kleistos-o-dromos-pros-fourka/",
+      "title": "Μάχη με διάσπαρτες εστίες στη Χαλκιδική - Σε επιφυλακή για αναζωπυρώσεις - Κλειστός ο δρόμος προς Φούρκα",
+      "normalized_title": "ΜΑΧΗ ΜΕ ΔΙΑΣΠΑΡΤΕΣ ΕΣΤΙΕΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ - ΣΕ ΕΠΙΦΥΛΑΚΗ ΓΙΑ ΑΝΑΖΩΠΥΡΩΣΕΙΣ - ΚΛΕΙΣΤΟΣ Ο ΔΡΟΜΟΣ ΠΡΟΣ ΦΟΥΡΚΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/14/life/geysi/syntagi-zymarika-me-garides/",
-        "https://www.in.gr/2026/08/14/greece/anaplirotes-ekpaideytikoi-anoigei-simera-i-platforma-dilosis-perioxon/",
-        "https://www.in.gr/2026/08/14/plus/vita/pente-askiseis-mesa-sto-nero/",
-        "https://www.in.gr/2026/08/14/greece/kairos-isxyroi-anemoi-eos-9-mpofor-kai-ptosi-tis-thermokrasias/",
-        "https://www.in.gr/2026/08/14/greece/to-paradokso-tou-esy/",
-        "https://www.in.gr/2026/08/14/health/poso-kindyneyoun-ta-matia-mas-apo-ta-thalassia-spor/",
-        "https://www.in.gr/2026/08/14/life/culture-live/yparxei-periptosi-na-doume-ton-mathiou-makkonaxi-sto-spinoff-tou-yellowstone/",
-        "https://www.in.gr/2026/08/14/economy/oikonomikes-eidiseis/efka-syntaksi-me-xrei-alla-kai-me-koftes/",
-        "https://www.in.gr/2026/08/14/plus/vita/i-teleiomania-mporei-na-mas-dialysei/",
-        "https://www.in.gr/2026/08/14/life/culture-live/animals-kykloforise-to-teaser-tis-neas-tainias-tou-netflix-me-tous-mpen-aflek-kai-keri-ouasingkton/",
-        "https://www.in.gr/2026/08/14/in-science/ai/tha-einai-i-texniti-noimosyni-i-teleytaia-anthropini-anakalypsi/",
-        "https://www.in.gr/2026/08/14/greece/klironomies-deyteri-eykairia-gia-osous-kindyneyoun-apo-xrei/",
-        "https://www.in.gr/2026/08/14/in-science/perivallon-b-science/giati-i-eyropi-einai-i-taxytera-thermainomeni-ipeiros-me-tin-ellada-na-vrisketai-se-hotspot/",
-        "https://www.in.gr/2026/08/14/world/kolomvia-i-dieythyntria-tis-actionaid-sto-in-gia-tin-aorati-krisi-meta-ton-seismo/",
-        "https://www.in.gr/2026/08/14/politics/epikairotita/apokalypsi-gia-isaak-solomou-yparxoun-entalmata-gia-tous-dolofonous-tous-alla-den-ektelountai/",
-        "https://www.in.gr/2026/08/14/world/israil-telei-ypo-syzitisi-taksidi-tou-kousner-stin-ierousalim-symfona-me-to-axios/",
-        "https://www.in.gr/2026/08/14/world/iran-tha-ypostei-oikonomiki-apomonosi-pou-den-ksanaeide-pote-o-kosmos-leei-o-mpesent/",
-        "https://www.in.gr/2026/08/14/world/iran-stoxos-yp-arithmon-ena-gia-tis-ipa-na-diatirithei-xamila-i-timi-ton-kaysimon-dilonei-o-vans/",
-        "https://www.in.gr/2026/08/14/world/oi-ipa-sxediazoun-xersaies-epixeiriseis-sti-latiniki-ameriki-kata-tis-diakinisis-narkotikon/",
-        "https://www.in.gr/2026/08/14/in-science/perivallon-b-science/perou-kiryxtike-katastasi-ektaktis-anagkis-gia-ton-kindyno-ksirasias-logo-tou-el-ninio/",
-        "https://www.in.gr/2026/08/14/world/kouva-9-diplomates-tis-apelaynei-i-dominikani-dimokratia/",
-        "https://www.in.gr/2026/08/14/world/oukrania-toulaxiston-enas-nekros-kai-15-traymaties-se-pligmata-tis-rosias-stin-kramatorsk/",
-        "https://www.in.gr/2026/08/14/greece/ileia-pyrkagia-ksespase-se-agrotodasiki-ektasi-stin-perioxi-alfeiousa/",
-        "https://www.in.gr/2026/08/14/world/ipa-dasmous-eos-100-stis-eisagoges-drones-gia-logous-ethnikis-asfaleias-anakoinose-o-ntonalnt-tramp/",
-        "https://www.in.gr/2026/08/14/world/ipa-treis-ekteleseis-thanatopoiniton-se-mia-imera-gia-proti-fora-epeita-apo-16-xronia/"
+        "https://www.in.gr/2026/08/14/greece/fotia-sti-xalkidiki-maxi-me-diaspartes-esties-se-epifylaki-gia-anazopyroseis-kleistos-o-dromos-pros-fourka/"
       ],
-      "seen_at_utc": "2026-08-14T04:17:41.553784+00:00"
+      "seen_at_utc": "2026-08-14T04:29:59.859697+00:00"
     }
   },
-  "updated_at_utc": "2026-08-14T04:17:41.553988+00:00"
+  "updated_at_utc": "2026-08-14T04:29:59.859830+00:00"
 }
