@@ -1,34 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564404692/choris-energa-metopa-oi-pyrkagies-se-nea-michaniona-kai-samothraki/",
-      "title": "Χωρίς ενεργά μέτωπα οι πυρκαγιές σε Νέα Μηχανιώνα και Σαμοθράκη",
-      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΑ ΜΕΤΩΠΑ ΟΙ ΠΥΡΚΑΓΙΕΣ ΣΕ ΝΕΑ ΜΗΧΑΝΙΩΝΑ ΚΑΙ ΣΑΜΟΘΡΑΚΗ",
+      "url": "https://www.kathimerini.gr/culture/564401383/i-ellada-toy-gkotie-tis-goylf-toy-ntarel/",
+      "title": "Η Ελλάδα του Γκοτιέ, της Γουλφ, του Ντάρελ",
+      "normalized_title": "Η ΕΛΛΑΔΑ ΤΟΥ ΓΚΟΤΙΕ, ΤΗΣ ΓΟΥΛΦ, ΤΟΥ ΝΤΑΡΕΛ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564404692/choris-energa-metopa-oi-pyrkagies-se-nea-michaniona-kai-samothraki/",
-        "https://www.kathimerini.gr/opinion/564401890/ypodeigma-prostasias/",
-        "https://www.kathimerini.gr/opinion/564402187/palaiokommatikos-politikos-i-statesman/",
-        "https://www.kathimerini.gr/opinion/564402193/sovarofaneia-i-sovarotita/",
-        "https://www.kathimerini.gr/opinion/564401950/me-mia-allaxia/",
-        "https://www.kathimerini.gr/opinion/564402190/ta-asymmazeyta/",
-        "https://www.kathimerini.gr/opinion/564402223/i-laikistiki-apotelesmatikotita/",
-        "https://www.kathimerini.gr/opinion/564402034/diaforetikos-alla-idios/",
-        "https://www.kathimerini.gr/opinion/564402184/pos-aposynarmologeis-mia-zoi/",
-        "https://www.kathimerini.gr/opinion/564402232/stin-oraioteri-chora-toy-kosmoy/",
-        "https://www.kathimerini.gr/opinion/564402229/i-klaoyntia-mas-kai-o-komis-toy-montrone/",
-        "https://www.kathimerini.gr/opinion/564402208/metamorfoseis-toy-ellinikoy-toyrismoy/",
-        "https://www.kathimerini.gr/opinion/564402205/poy-prepei-na-mpei-to-freno/",
-        "https://www.kathimerini.gr/opinion/564402220/choris-aspides-psychis-sta-veli-toy-ilioy/",
-        "https://www.kathimerini.gr/opinion/sketches/564404224/skitso-toy-dimitri-chantzopoyloy-15-08-26/",
-        "https://www.kathimerini.gr/opinion/564402217/tesseris-ellinikes-istories/",
-        "https://www.kathimerini.gr/opinion/sketches/564404230/skitso-toy-ilia-makri-15-08-26/",
-        "https://www.kathimerini.gr/opinion/564402235/dyo-diaforetikes-michanes-provlepsis/",
-        "https://www.kathimerini.gr/opinion/564402226/megalos-igetis-kakos-kyvernitis/",
-        "https://www.kathimerini.gr/opinion/564401959/i-elliniki-amichania-sti-mesi-anatoli/",
-        "https://www.kathimerini.gr/opinion/564401968/kentrodexia-choris-kentro/",
-        "https://www.kathimerini.gr/opinion/564402031/me-to-vlemmasta-dasi-toy-2050/"
+        "https://www.kathimerini.gr/culture/564401383/i-ellada-toy-gkotie-tis-goylf-toy-ntarel/",
+        "https://www.kathimerini.gr/k/gastronomos/564404452/adana-kempap-apo-ton-christoforo-peskia/"
       ],
-      "seen_at_utc": "2026-08-15T17:17:16.386007+00:00"
+      "seen_at_utc": "2026-08-15T17:30:03.611174+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1289,29 +1269,26 @@
       "seen_at_utc": "2026-08-15T17:17:16.386132+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448441/egrapse-istoria-sto-eyropaiko-kolymvisis-o-siskos-halkino-sta-200m-petaloyda-kai-panellinio-rekor/",
-      "title": "Έγραψε ιστορία στο Ευρωπαϊκό Κολύμβησης ο Σίσκος – Χάλκινο στα 200μ. πεταλούδα και πανελλήνιο ρεκόρ",
-      "normalized_title": "ΕΓΡΑΨΕ ΙΣΤΟΡΙΑ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΚΟΛΥΜΒΗΣΗΣ Ο ΣΙΣΚΟΣ – ΧΑΛΚΙΝΟ ΣΤΑ 200Μ. ΠΕΤΑΛΟΥΔΑ ΚΑΙ ΠΑΝΕΛΛΗΝΙΟ ΡΕΚΟΡ",
+      "url": "https://www.efsyn.gr/stiles/1447775/espin-vilma-kastro-ftiaxame-mia-koinonia-isotitas-ton-fylon/",
+      "title": "Εσπίν Βίλμα Κάστρο: «Φτιάξαμε μια κοινωνία ισότητας των φύλων»",
+      "normalized_title": "ΕΣΠΙΝ ΒΙΛΜΑ ΚΑΣΤΡΟ: «ΦΤΙΑΞΑΜΕ ΜΙΑ ΚΟΙΝΩΝΙΑ ΙΣΟΤΗΤΑΣ ΤΩΝ ΦΥΛΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448441/egrapse-istoria-sto-eyropaiko-kolymvisis-o-siskos-halkino-sta-200m-petaloyda-kai-panellinio-rekor/",
-        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-t-astra-6/",
-        "https://www.efsyn.gr/gallery/ennea-pente-7/",
-        "https://www.efsyn.gr/gallery/o-mikros-koylis-8/"
+        "https://www.efsyn.gr/stiles/1447775/espin-vilma-kastro-ftiaxame-mia-koinonia-isotitas-ton-fylon/",
+        "https://www.efsyn.gr/ellada/1448444/anoixan-oi-oyranoi-sti-mani-potamia-oi-dromoi-apo-mpoyrini-to-nero-mpike-sta-spitia-vinteo/"
       ],
-      "seen_at_utc": "2026-08-15T17:17:16.386109+00:00"
+      "seen_at_utc": "2026-08-15T17:30:03.611265+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/sports/football/o-gkringount-sti-fenermpaxtse-kai-oi-antidraseis-sti-feministiki-geitonia-tis-polis/",
-      "title": "Ο Γκρίνγουντ στη Φενέρμπαχτσε και οι αντιδράσεις στη «φεμινιστική» γειτονιά της Πόλης",
-      "normalized_title": "Ο ΓΚΡΙΝΓΟΥΝΤ ΣΤΗ ΦΕΝΕΡΜΠΑΧΤΣΕ ΚΑΙ ΟΙ ΑΝΤΙΔΡΑΣΕΙΣ ΣΤΗ «ΦΕΜΙΝΙΣΤΙΚΗ» ΓΕΙΤΟΝΙΑ ΤΗΣ ΠΟΛΗΣ",
+      "url": "https://www.in.gr/2026/08/15/sports/sygklonise-o-siskos-to-efera-gia-tin-patrida-kai-tous-pyrosvestes-pou-dinoun-maxi-vid/",
+      "title": "Συγκλόνισε ο Σίσκος: «Το έφερα για την πατρίδα και τους πυροσβέστες που δίνουν μάχη»! (vid)",
+      "normalized_title": "ΣΥΓΚΛΟΝΙΣΕ Ο ΣΙΣΚΟΣ: «ΤΟ ΕΦΕΡΑ ΓΙΑ ΤΗΝ ΠΑΤΡΙΔΑ ΚΑΙ ΤΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ ΠΟΥ ΔΙΝΟΥΝ ΜΑΧΗ»! (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/sports/football/o-gkringount-sti-fenermpaxtse-kai-oi-antidraseis-sti-feministiki-geitonia-tis-polis/",
-        "https://www.in.gr/2026/08/15/go-fun/perierga/den-krinoume-o-drake-gavgizei-san-skylos-epeidi-tou-to-zitise-ena-goth-koritsi/",
-        "https://www.in.gr/2026/08/15/world/zimpampoue-stous-68-oi-nekroi-apo-tin-anatropi-epivatigou-ploiou-se-limni-tin-perasmeni-triti/",
-        "https://www.in.gr/2026/08/15/sports/othersports/xalkino-metallio-sto-eyropaiko-gia-ton-apostolo-sisko-me-panellinio-rekor/"
+        "https://www.in.gr/2026/08/15/sports/sygklonise-o-siskos-to-efera-gia-tin-patrida-kai-tous-pyrosvestes-pou-dinoun-maxi-vid/",
+        "https://www.in.gr/2026/08/15/greece/paros-odigos-taksi-epitithetai-se-ypallilo-etairias-enoikiazomenon-oximaton-gia-to-parkingk/",
+        "https://www.in.gr/2026/08/15/world/oukrania-eplikse-se-epitheseis-megalou-velinekous-rosiko-stratiotiko-aerodromio-kai-kentro-pyraylon/"
       ],
-      "seen_at_utc": "2026-08-15T17:17:16.386072+00:00"
+      "seen_at_utc": "2026-08-15T17:30:03.611228+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T17:17:16.386210+00:00"
+  "updated_at_utc": "2026-08-15T17:30:03.611338+00:00"
 }
