@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564404437/psita-syka-me-prosoyto-kai-ladolemono-me-oyzo/",
-      "title": "Ψητά σύκα με προσούτο και λαδολέμονο με ούζο",
-      "normalized_title": "ΨΗΤΑ ΣΥΚΑ ΜΕ ΠΡΟΣΟΥΤΟ ΚΑΙ ΛΑΔΟΛΕΜΟΝΟ ΜΕ ΟΥΖΟ",
+      "url": "https://www.kathimerini.gr/columns/564404536/oi-tesseris-ploysies-tis-ftochis-toyrkias/",
+      "title": "Οι τέσσερις «πλούσιες» της «φτωχής» Τουρκίας",
+      "normalized_title": "ΟΙ ΤΕΣΣΕΡΙΣ «ΠΛΟΥΣΙΕΣ» ΤΗΣ «ΦΤΩΧΗΣ» ΤΟΥΡΚΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564404437/psita-syka-me-prosoyto-kai-ladolemono-me-oyzo/",
-        "https://www.kathimerini.gr/society/564404527/voiotia-ti-edeixe-i-aytopsia-sto-simeio-poy-xekinise-i-fotia/"
+        "https://www.kathimerini.gr/columns/564404536/oi-tesseris-ploysies-tis-ftochis-toyrkias/",
+        "https://www.kathimerini.gr/k/k-magazine/564400684/kati-elafry-gia-tin-paralia/"
       ],
-      "seen_at_utc": "2026-08-15T12:51:11.958398+00:00"
+      "seen_at_utc": "2026-08-15T13:17:17.304420+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865267/sto-nosokomeio-i-perifereiarhis-kedrikis-makedonias-nana-aidona/?utm_source=rss",
-      "title": "Στο νοσοκομείο η περιφερειάρχης Κεντρικής Μακεδονίας Νανά Αηδονά",
-      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ Η ΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΝΑΝΑ ΑΗΔΟΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1865272/fotia-tora-sti-skuro-sikothikan-kai-enaeria-mesa/?utm_source=rss",
+      "title": "Φωτιά τώρα στη Σκύρο, σηκώθηκαν και εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗ ΣΚΥΡΟ, ΣΗΚΩΘΗΚΑΝ ΚΑΙ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865267/sto-nosokomeio-i-perifereiarhis-kedrikis-makedonias-nana-aidona/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865265/video-louomenoi-sti-rodo-kanoun-vouties-apo-to-sfragismeno-trabolino-stin-paralia-elli-sustaseis-apo-to-limeniko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865264/tragodia-sto-varnava-74hroni-ehase-ti-zoi-tis-otan-to-autokinito-tis-vgike-apo-ton-dromo-epese-se-rema-kai-toubare/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865262/porto-rafti-50hroni-katiggeile-ton-sudrofo-tis-gia-epithesi-ton-anazita-i-astunomia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865272/fotia-tora-sti-skuro-sikothikan-kai-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865271/boukare-me-to-amaxi-se-katastima-sti-messini-kai-dieluse-ti-tzamaria-stamatise-anamesa-se-trapezia-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T12:51:11.958494+00:00"
+      "seen_at_utc": "2026-08-15T13:17:17.304558+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448383/agrio-epeisodio-stin-paro-anamesa-se-odigo-taxi-kai-ypallilo-etaireias-gia-mia-thesi-parkingk-vinteo/",
-      "title": "Άγριο επεισόδιο στην Πάρο ανάμεσα σε οδηγό ταξί και υπάλληλο εταιρείας για μια θέση πάρκινγκ [βίντεο]",
-      "normalized_title": "ΑΓΡΙΟ ΕΠΕΙΣΟΔΙΟ ΣΤΗΝ ΠΑΡΟ ΑΝΑΜΕΣΑ ΣΕ ΟΔΗΓΟ ΤΑΞΙ ΚΑΙ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΓΙΑ ΜΙΑ ΘΕΣΗ ΠΑΡΚΙΝΓΚ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1448393/i-mera-poy-ehasa-ti-hora-moy-oi-afganes-einai-mones-toys-ston-polemo-ton-talimpan-enantion-toys/",
+      "title": "«Η μέρα που έχασα τη χώρα μου» – Οι Αφγανές είναι μόνες τους στον πόλεμο των Ταλιμπάν εναντίον τους",
+      "normalized_title": "«Η ΜΕΡΑ ΠΟΥ ΕΧΑΣΑ ΤΗ ΧΩΡΑ ΜΟΥ» – ΟΙ ΑΦΓΑΝΕΣ ΕΙΝΑΙ ΜΟΝΕΣ ΤΟΥΣ ΣΤΟΝ ΠΟΛΕΜΟ ΤΩΝ ΤΑΛΙΜΠΑΝ ΕΝΑΝΤΙΟΝ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448383/agrio-epeisodio-stin-paro-anamesa-se-odigo-taxi-kai-ypallilo-etaireias-gia-mia-thesi-parkingk-vinteo/",
-        "https://www.efsyn.gr/ellada/1448384/thessaloniki-sto-ahepa-i-perifereiarhis-k-makedonias-athina-aidona-ystera-apo-xafniki-adiathesia/"
+        "https://www.efsyn.gr/kosmos/1448393/i-mera-poy-ehasa-ti-hora-moy-oi-afganes-einai-mones-toys-ston-polemo-ton-talimpan-enantion-toys/",
+        "https://www.efsyn.gr/ellada/1448389/erhetai-allagi-kairoy-ypohoroyn-oi-anemoi-kai-anevainei-i-thermokrasia-oi-teleytaies-prognoseis/"
       ],
-      "seen_at_utc": "2026-08-15T12:51:11.958476+00:00"
+      "seen_at_utc": "2026-08-15T13:17:17.304530+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-poli-fantasma-i-athina-eikones-apo-tous-erimous-dromous-sto-kentro/",
-      "title": "Πόλη «φάντασμα» η Αθήνα τον Δεκαπενταύγουστο - Εικόνες από τους έρημους δρόμους",
-      "normalized_title": "ΠΟΛΗ «ΦΑΝΤΑΣΜΑ» Η ΑΘΗΝΑ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ - ΕΙΚΟΝΕΣ ΑΠΟ ΤΟΥΣ ΕΡΗΜΟΥΣ ΔΡΟΜΟΥΣ",
+      "url": "https://www.in.gr/2026/08/15/sports/othersports/eyropaiko-stivou-ston-teliko-ton-4x100m-i-ellada/",
+      "title": "Ευρωπαϊκό Στίβου: Στον τελικό των 4×100μ η Ελλάδα",
+      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΣΤΙΒΟΥ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΩΝ 4×100Μ Η ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-poli-fantasma-i-athina-eikones-apo-tous-erimous-dromous-sto-kentro/",
-        "https://www.in.gr/2026/08/15/sports/basketball/yperoxi-kinisi-tou-makintair-tou-olympiakou-agorase-apo-pitsirika-lemonada-enanti-240-eyro-pic/"
+        "https://www.in.gr/2026/08/15/sports/othersports/eyropaiko-stivou-ston-teliko-ton-4x100m-i-ellada/",
+        "https://www.in.gr/2026/08/15/greece/red-code-gia-tin-attiki-kai-alles-tesseris-perioxes-gia-ayrio-kyriaki-poly-ypsilos-kindynos-pyrkagias/",
+        "https://www.in.gr/2026/08/15/go-fun/social/myspace-megalo-comeback-terastio-risko-millennials-zimies-kai-o-titanas-tiktok/",
+        "https://www.in.gr/2026/08/15/world/livanos-o-proedros-aoun-kataggellei-tis-israilines-epitheseis-pou-skotosan-mia-oikogeneia/",
+        "https://www.in.gr/2026/08/15/world/synagermos-sto-panepistimio-tis-virtzinia-pyrovolismoi-apo-pollous-drastes-me-pollous-traymaties/",
+        "https://www.in.gr/2026/08/15/greece/sokarismeni-i-irlandia-apo-to-xamo-tou-17xronou-stin-kimolo-eixe-ti-zoi-mprosta-tou/",
+        "https://www.in.gr/2026/08/15/sports/basketball/germania-ellada-85-77-stin-6i-thesi-tou-eyrompasket-k16-i-ethniki-paidon/"
       ],
-      "seen_at_utc": "2026-08-15T12:51:11.958448+00:00"
+      "seen_at_utc": "2026-08-15T13:17:17.304480+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T12:51:11.958588+00:00"
+  "updated_at_utc": "2026-08-15T13:17:17.304666+00:00"
 }
