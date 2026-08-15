@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404305/kongko-enas-nekros-apo-empola-kathe-30-lepta/",
-      "title": "Κονγκό: Ενας νεκρός από Εμπολα κάθε 30 λεπτά",
-      "normalized_title": "ΚΟΝΓΚΟ: ΕΝΑΣ ΝΕΚΡΟΣ ΑΠΟ ΕΜΠΟΛΑ ΚΑΘΕ 30 ΛΕΠΤΑ",
+      "url": "https://www.kathimerini.gr/istoria/564332146/to-ploio-poy-efere-tis-protes-kroyazieres-stin-ellada/",
+      "title": "Το πλοίο που έφερε τις πρώτες κρουαζιέρες στην Ελλάδα",
+      "normalized_title": "ΤΟ ΠΛΟΙΟ ΠΟΥ ΕΦΕΡΕ ΤΙΣ ΠΡΩΤΕΣ ΚΡΟΥΑΖΙΕΡΕΣ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404305/kongko-enas-nekros-apo-empola-kathe-30-lepta/"
+        "https://www.kathimerini.gr/istoria/564332146/to-ploio-poy-efere-tis-protes-kroyazieres-stin-ellada/",
+        "https://www.kathimerini.gr/society/564404317/tinos-ogdonta-exi-chronia-apo-ton-torpilismo-tis-ellis-to-chroniko/",
+        "https://www.kathimerini.gr/society/564404311/dekapentaygoystos-ayximeni-i-exodos-apo-ta-limania-para-ta-provlimata/"
       ],
-      "seen_at_utc": "2026-08-15T06:51:18.054482+00:00"
+      "seen_at_utc": "2026-08-15T07:17:01.399166+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1271,32 @@
       "seen_at_utc": "2026-08-15T06:17:06.035774+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448265/petrelaioforo-dexamenoploio-ton-iae-ypesti-epithesi-sta-stena-toy-ormoyz/",
-      "title": "Πετρελαιοφόρο δεξαμενόπλοιο των ΗΑΕ υπέστη επίθεση στα Στενά του Ορμούζ",
-      "normalized_title": "ΠΕΤΡΕΛΑΙΟΦΟΡΟ ΔΕΞΑΜΕΝΟΠΛΟΙΟ ΤΩΝ ΗΑΕ ΥΠΕΣΤΗ ΕΠΙΘΕΣΗ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ",
+      "url": "https://www.efsyn.gr/politiki/1448270/pethane-se-ilikia-87-eton-o-stefanos-manos/",
+      "title": "Πέθανε σε ηλικία 87 ετών ο Στέφανος Μάνος",
+      "normalized_title": "ΠΕΘΑΝΕ ΣΕ ΗΛΙΚΙΑ 87 ΕΤΩΝ Ο ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448265/petrelaioforo-dexamenoploio-ton-iae-ypesti-epithesi-sta-stena-toy-ormoyz/",
-        "https://www.efsyn.gr/nisides/1447295/i-politistiki-atzenta-tis-evdomadas-15-08-22-08-26/",
-        "https://www.efsyn.gr/ellada/1448244/dekapentaygoystos-ethima-kai-eortasmoi-se-oli-tin-ellada-apo-tin-tino-eos-ti-rodopi/"
+        "https://www.efsyn.gr/politiki/1448270/pethane-se-ilikia-87-eton-o-stefanos-manos/",
+        "https://www.efsyn.gr/kosmos/1448267/tragiko-telos-gia-ton-tzeison-arntei-o-neoteros-mayros-kathigitis-stin-istoria-toy-keimpritz-poy-katigorithike-gia-logoklopi/"
       ],
-      "seen_at_utc": "2026-08-15T06:51:18.054585+00:00"
+      "seen_at_utc": "2026-08-15T07:17:01.399237+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/sports/basketball/euroleague/ti-eipan-sti-lithouania-gia-ton-panathinaiko-tou-omprantovits-ayto-einai-to-vasiko-red-flag/",
-      "title": "Τι είπαν στη Λιθουανία για τον Παναθηναϊκό του Ομπράντοβιτς: «Αυτό είναι το βασικό… red flag»",
-      "normalized_title": "ΤΙ ΕΙΠΑΝ ΣΤΗ ΛΙΘΟΥΑΝΙΑ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΤΟΥ ΟΜΠΡΑΝΤΟΒΙΤΣ: «ΑΥΤΟ ΕΙΝΑΙ ΤΟ ΒΑΣΙΚΟ… RED FLAG»",
+      "url": "https://www.in.gr/2026/08/15/greece/pethane-o-stefanos-manos/",
+      "title": "Πέθανε ο Στέφανος Μάνος",
+      "normalized_title": "ΠΕΘΑΝΕ Ο ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/sports/basketball/euroleague/ti-eipan-sti-lithouania-gia-ton-panathinaiko-tou-omprantovits-ayto-einai-to-vasiko-red-flag/",
-        "https://www.in.gr/2026/08/15/greece/o-torpilismos-tis-ellis-stin-tino-86-xronia-meta-to-xroniko/"
+        "https://www.in.gr/2026/08/15/greece/pethane-o-stefanos-manos/",
+        "https://www.in.gr/2026/08/15/sports/on-field/vroxi-apo-ekatommyria-kai-asteria-stin-tourkia-alla-poso-tha-anteksoun/",
+        "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-ayksimeni-anamenetai-i-epivatiki-kinisi-sta-limania-tis-attikis-para-tous-periorismous/",
+        "https://www.in.gr/2026/08/15/greece/protathlitria-eyropis-stous-pyrosvestes-i-ellada-alla-mono-sta-xartia-ti-symvainei-pragmatika/",
+        "https://www.in.gr/2026/08/15/life/dekapentaygoustos-kai-elliniko-sinema-thayma-pisti-kai-katanyksi-apo-ton-kakogianni-ston-giannari/",
+        "https://www.in.gr/2026/08/15/health/kai-omos-i-pliksi-kanei-kalo-pos-i-ania-mporei-na-apodeixthei-ofelimi/",
+        "https://www.in.gr/2026/08/15/pet-stories/pos-na-katalavete-oti-enas-skylos-einai-etoimos-na-dagkosei/",
+        "https://www.in.gr/2026/08/15/go-fun/fizz/ta-diasima-zeygaria-pou-pantreytikan-dyo-fores-mazi-den-ekanan-kai-xoria-de-mporousan/",
+        "https://www.in.gr/2026/08/15/stories/ta-erotimata-gia-ton-thanato-tou-kathigiti-pou-paraitithike-apo-to-keimpritz-meta-tis-kataggelies-gia-logoklopi/"
       ],
-      "seen_at_utc": "2026-08-15T06:51:18.054542+00:00"
+      "seen_at_utc": "2026-08-15T07:17:01.399207+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T06:51:18.054665+00:00"
+  "updated_at_utc": "2026-08-15T07:17:01.399327+00:00"
 }
