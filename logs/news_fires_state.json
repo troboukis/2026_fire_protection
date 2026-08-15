@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564404467/galaktompoyreko-ikariotiko/",
-      "title": "Γαλακτομπούρεκο ικαριώτικο",
-      "normalized_title": "ΓΑΛΑΚΤΟΜΠΟΥΡΕΚΟ ΙΚΑΡΙΩΤΙΚΟ",
+      "url": "https://www.kathimerini.gr/eortologio/564376825/eortologio-poioi-giortazoyn-simera-16-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 16 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 16 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564404467/galaktompoyreko-ikariotiko/",
-        "https://www.kathimerini.gr/athletics/564404764/eyropaiko-protathlima-kolymvisis-o-christoy-ston-teliko-ton-100m-yptio-gia-na-synechisei-to-seri/",
-        "https://www.kathimerini.gr/culture/564402643/o-rolos-tis-askt-sti-choynta/"
+        "https://www.kathimerini.gr/eortologio/564376825/eortologio-poioi-giortazoyn-simera-16-aygoystoy/",
+        "https://www.kathimerini.gr/economy/564404698/giati-oi-syntomes-diakopes-mporei-na-mas-xekoyrazoyn-oso-oi-megales/"
       ],
-      "seen_at_utc": "2026-08-15T20:51:10.264758+00:00"
+      "seen_at_utc": "2026-08-15T21:17:06.456906+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865349/zimies-se-spitia-kai-odiko-diktuo-apo-tin-katarraktodi-vrohi-sti-mani-einai-protognori-katastasi-gia-tin-periohi-mas/?utm_source=rss",
-      "title": "Ζημιές σε σπίτια και οδικό δίκτυο από την καταρρακτώδη βροχή στη Μάνη: «Είναι πρωτόγνωρη κατάσταση για την περιοχή μας»",
-      "normalized_title": "ΖΗΜΙΕΣ ΣΕ ΣΠΙΤΙΑ ΚΑΙ ΟΔΙΚΟ ΔΙΚΤΥΟ ΑΠΟ ΤΗΝ ΚΑΤΑΡΡΑΚΤΩΔΗ ΒΡΟΧΗ ΣΤΗ ΜΑΝΗ: «ΕΙΝΑΙ ΠΡΩΤΟΓΝΩΡΗ ΚΑΤΑΣΤΑΣΗ ΓΙΑ ΤΗΝ ΠΕΡΙΟΧΗ ΜΑΣ»",
+      "url": "https://www.protothema.gr/greece/article/1865357/to-blue-star-mukonos-apedose-times-sti-megalohari-tis-tinou-deite-video/?utm_source=rss",
+      "title": "Το Blue Star Μύκονος απέδωσε τιμές στη Μεγαλόχαρη της Τήνου, δείτε βίντεο",
+      "normalized_title": "ΤΟ BLUE STAR ΜΥΚΟΝΟΣ ΑΠΕΔΩΣΕ ΤΙΜΕΣ ΣΤΗ ΜΕΓΑΛΟΧΑΡΗ ΤΗΣ ΤΗΝΟΥ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865349/zimies-se-spitia-kai-odiko-diktuo-apo-tin-katarraktodi-vrohi-sti-mani-einai-protognori-katastasi-gia-tin-periohi-mas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865357/to-blue-star-mukonos-apedose-times-sti-megalohari-tis-tinou-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865355/duo-traumaties-apo-sugrousi-tahuploou-me-istioforo-exo-apo-to-limani-tis-eretrias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T20:17:06.124465+00:00"
+      "seen_at_utc": "2026-08-15T21:17:06.456970+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448475/pyrkagia-sti-voiotia-endeixeis-gia-sovares-astohies-sto-aioliko-parko-ti-edeixe-i-aytopsia/",
-      "title": "Πυρκαγιά στη Βοιωτία: Ενδείξεις για σοβαρές αστοχίες στο αιολικό πάρκο – Τι έδειξε η αυτοψία",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΒΟΙΩΤΙΑ: ΕΝΔΕΙΞΕΙΣ ΓΙΑ ΣΟΒΑΡΕΣ ΑΣΤΟΧΙΕΣ ΣΤΟ ΑΙΟΛΙΚΟ ΠΑΡΚΟ – ΤΙ ΕΔΕΙΞΕ Η ΑΥΤΟΨΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1448480/eyvoia-sygkroysi-tahyplooy-me-istioforo-exo-apo-tin-eretria-dyo-traymaties/",
+      "title": "Εύβοια: Σύγκρουση ταχύπλοου με ιστιοφόρο έξω από την Ερέτρια – Δύο τραυματίες",
+      "normalized_title": "ΕΥΒΟΙΑ: ΣΥΓΚΡΟΥΣΗ ΤΑΧΥΠΛΟΟΥ ΜΕ ΙΣΤΙΟΦΟΡΟ ΕΞΩ ΑΠΟ ΤΗΝ ΕΡΕΤΡΙΑ – ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448475/pyrkagia-sti-voiotia-endeixeis-gia-sovares-astohies-sto-aioliko-parko-ti-edeixe-i-aytopsia/"
+        "https://www.efsyn.gr/ellada/1448480/eyvoia-sygkroysi-tahyplooy-me-istioforo-exo-apo-tin-eretria-dyo-traymaties/",
+        "https://www.efsyn.gr/kosmos/1448478/bloomberg-iran-kai-oman-konta-se-symfonia-gia-ta-stena-toy-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-15T20:51:10.264828+00:00"
+      "seen_at_utc": "2026-08-15T21:17:06.456952+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/in-science/technology/google-tha-epitrepei-tin-afairesi-tou-oratou-ydatografima-stis-ai-eikones/",
-      "title": "Η Google θα επιτρέπει την αφαίρεση του ορατού υδατογράφημα στις AI εικόνες",
-      "normalized_title": "Η GOOGLE ΘΑ ΕΠΙΤΡΕΠΕΙ ΤΗΝ ΑΦΑΙΡΕΣΗ ΤΟΥ ΟΡΑΤΟΥ ΥΔΑΤΟΓΡΑΦΗΜΑ ΣΤΙΣ AI ΕΙΚΟΝΕΣ",
+      "url": "https://www.in.gr/2026/08/16/world/ispania-ksafniki-plimmyra-sti-leon-dyo-nekres-gynaikes-dyo-mora-traymatistikan/",
+      "title": "Ξαφνική πλημμύρα στη Λεόν της Ισπανίας - Δύο νεκρές γυναίκες, δύο μωρά τραυματίστηκαν",
+      "normalized_title": "ΞΑΦΝΙΚΗ ΠΛΗΜΜΥΡΑ ΣΤΗ ΛΕΟΝ ΤΗΣ ΙΣΠΑΝΙΑΣ - ΔΥΟ ΝΕΚΡΕΣ ΓΥΝΑΙΚΕΣ, ΔΥΟ ΜΩΡΑ ΤΡΑΥΜΑΤΙΣΤΗΚΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/in-science/technology/google-tha-epitrepei-tin-afairesi-tou-oratou-ydatografima-stis-ai-eikones/",
-        "https://www.in.gr/2026/08/15/economy/diethnis-oikonomia/oi-maskot-poloun-ta-panta-apo-ai-mexri-nero-vrysis/",
-        "https://www.in.gr/2026/08/15/sports/football/petkof-i-lefski-mporei-na-apokleisei-tin-aek/",
-        "https://www.in.gr/2026/08/15/world/erntogan-i-aigyptos-tha-mporouse-na-entaxthei-sti-symfonia-tis-mekkas/"
+        "https://www.in.gr/2026/08/16/world/ispania-ksafniki-plimmyra-sti-leon-dyo-nekres-gynaikes-dyo-mora-traymatistikan/",
+        "https://www.in.gr/2026/08/16/greece/giorti-simera-16-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/16/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-kyriaki-16-08-2026/",
+        "https://www.in.gr/2026/08/15/sports/o-44xronos-tsiamis-ogdoos-ston-teliko-tou-triploun-vids/",
+        "https://www.in.gr/2026/08/15/economy/diethnis-oikonomia/oi-igetes-tis-eyropaikis-enosis-pane-diakopes-oxi-omos-kai-oi-kriseis/",
+        "https://www.in.gr/2026/08/15/sports/football/i-ntinamo-dresdis-vazei-kokkini-karta-stous-influencers-ton-gipedon/"
       ],
-      "seen_at_utc": "2026-08-15T20:51:10.264804+00:00"
+      "seen_at_utc": "2026-08-15T21:17:06.456931+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T20:51:10.264908+00:00"
+  "updated_at_utc": "2026-08-15T21:17:06.457023+00:00"
 }
