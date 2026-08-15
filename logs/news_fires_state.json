@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564401296/aples-askiseis-prostateyoyn-apo-ton-karkino-ti-deichnoyn-nees-meletes/",
-      "title": "Απλές ασκήσεις προστατεύουν από τον καρκίνο -Τι δείχνουν νέες μελέτες",
-      "normalized_title": "ΑΠΛΕΣ ΑΣΚΗΣΕΙΣ ΠΡΟΣΤΑΤΕΥΟΥΝ ΑΠΟ ΤΟΝ ΚΑΡΚΙΝΟ -ΤΙ ΔΕΙΧΝΟΥΝ ΝΕΕΣ ΜΕΛΕΤΕΣ",
+      "url": "https://www.kathimerini.gr/world/564404305/kongko-enas-nekros-apo-empola-kathe-30-lepta/",
+      "title": "Κονγκό: Ενας νεκρός από Εμπολα κάθε 30 λεπτά",
+      "normalized_title": "ΚΟΝΓΚΟ: ΕΝΑΣ ΝΕΚΡΟΣ ΑΠΟ ΕΜΠΟΛΑ ΚΑΘΕ 30 ΛΕΠΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564401296/aples-askiseis-prostateyoyn-apo-ton-karkino-ti-deichnoyn-nees-meletes/",
-        "https://www.kathimerini.gr/society/564404296/panagia-tis-tinoy-to-megalo-proskynima-toy-dekapentaygoystoy/",
-        "https://www.kathimerini.gr/columns/564385771/glyka-psygeioy-me-i-choris-ti-mama/"
+        "https://www.kathimerini.gr/world/564404305/kongko-enas-nekros-apo-empola-kathe-30-lepta/"
       ],
-      "seen_at_utc": "2026-08-15T06:17:06.035639+00:00"
+      "seen_at_utc": "2026-08-15T06:51:18.054482+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,23 +1269,26 @@
       "seen_at_utc": "2026-08-15T06:17:06.035774+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448242/ogdonta-exi-hronia-apo-ton-torpilismo-tis-ellis-stin-tino-to-hroniko-kai-o-polemikos-antiktypos/",
-      "title": "Ογδόντα έξι χρόνια από τον τορπιλισμό της «Έλλης» στην Τήνο – Το χρονικό και ο πολεμικός αντίκτυπος",
-      "normalized_title": "ΟΓΔΟΝΤΑ ΕΞΙ ΧΡΟΝΙΑ ΑΠΟ ΤΟΝ ΤΟΡΠΙΛΙΣΜΟ ΤΗΣ «ΕΛΛΗΣ» ΣΤΗΝ ΤΗΝΟ – ΤΟ ΧΡΟΝΙΚΟ ΚΑΙ Ο ΠΟΛΕΜΙΚΟΣ ΑΝΤΙΚΤΥΠΟΣ",
+      "url": "https://www.efsyn.gr/kosmos/1448265/petrelaioforo-dexamenoploio-ton-iae-ypesti-epithesi-sta-stena-toy-ormoyz/",
+      "title": "Πετρελαιοφόρο δεξαμενόπλοιο των ΗΑΕ υπέστη επίθεση στα Στενά του Ορμούζ",
+      "normalized_title": "ΠΕΤΡΕΛΑΙΟΦΟΡΟ ΔΕΞΑΜΕΝΟΠΛΟΙΟ ΤΩΝ ΗΑΕ ΥΠΕΣΤΗ ΕΠΙΘΕΣΗ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448242/ogdonta-exi-hronia-apo-ton-torpilismo-tis-ellis-stin-tino-to-hroniko-kai-o-polemikos-antiktypos/"
+        "https://www.efsyn.gr/kosmos/1448265/petrelaioforo-dexamenoploio-ton-iae-ypesti-epithesi-sta-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/nisides/1447295/i-politistiki-atzenta-tis-evdomadas-15-08-22-08-26/",
+        "https://www.efsyn.gr/ellada/1448244/dekapentaygoystos-ethima-kai-eortasmoi-se-oli-tin-ellada-apo-tin-tino-eos-ti-rodopi/"
       ],
-      "seen_at_utc": "2026-08-15T06:30:06.362018+00:00"
+      "seen_at_utc": "2026-08-15T06:51:18.054585+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/anastatosi-se-taverna-tis-eyvoias-fidi-pernouse-kato-apo-ta-trapezia/",
-      "title": "Αναστάτωση σε ταβέρνα της Εύβοιας: Φίδι περνούσε κάτω από τα τραπέζια",
-      "normalized_title": "ΑΝΑΣΤΑΤΩΣΗ ΣΕ ΤΑΒΕΡΝΑ ΤΗΣ ΕΥΒΟΙΑΣ: ΦΙΔΙ ΠΕΡΝΟΥΣΕ ΚΑΤΩ ΑΠΟ ΤΑ ΤΡΑΠΕΖΙΑ",
+      "url": "https://www.in.gr/2026/08/15/sports/basketball/euroleague/ti-eipan-sti-lithouania-gia-ton-panathinaiko-tou-omprantovits-ayto-einai-to-vasiko-red-flag/",
+      "title": "Τι είπαν στη Λιθουανία για τον Παναθηναϊκό του Ομπράντοβιτς: «Αυτό είναι το βασικό… red flag»",
+      "normalized_title": "ΤΙ ΕΙΠΑΝ ΣΤΗ ΛΙΘΟΥΑΝΙΑ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΤΟΥ ΟΜΠΡΑΝΤΟΒΙΤΣ: «ΑΥΤΟ ΕΙΝΑΙ ΤΟ ΒΑΣΙΚΟ… RED FLAG»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/anastatosi-se-taverna-tis-eyvoias-fidi-pernouse-kato-apo-ta-trapezia/"
+        "https://www.in.gr/2026/08/15/sports/basketball/euroleague/ti-eipan-sti-lithouania-gia-ton-panathinaiko-tou-omprantovits-ayto-einai-to-vasiko-red-flag/",
+        "https://www.in.gr/2026/08/15/greece/o-torpilismos-tis-ellis-stin-tino-86-xronia-meta-to-xroniko/"
       ],
-      "seen_at_utc": "2026-08-15T06:30:06.361974+00:00"
+      "seen_at_utc": "2026-08-15T06:51:18.054542+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T06:30:06.362103+00:00"
+  "updated_at_utc": "2026-08-15T06:51:18.054665+00:00"
 }
