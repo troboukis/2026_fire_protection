@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564404389/dendias-aytarchikes-apopseis-prospathoyn-na-allaxoyn-to-kektimeno-toy-diethnoys-dikaioy/",
-      "title": "Δένδιας: Αυταρχικές απόψεις προσπαθούν να αλλάξουν το κεκτημένο του Διεθνούς Δικαίου",
-      "normalized_title": "ΔΕΝΔΙΑΣ: ΑΥΤΑΡΧΙΚΕΣ ΑΠΟΨΕΙΣ ΠΡΟΣΠΑΘΟΥΝ ΝΑ ΑΛΛΑΞΟΥΝ ΤΟ ΚΕΚΤΗΜΕΝΟ ΤΟΥ ΔΙΕΘΝΟΥΣ ΔΙΚΑΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564404410/poly-ypsilos-kindynos-pyrkagias-tin-kyriaki-red-code-se-tesseris-perifereies/",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς την Κυριακή – Red code σε τέσσερις περιφέρειες",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗΝ ΚΥΡΙΑΚΗ – RED CODE ΣΕ ΤΕΣΣΕΡΙΣ ΠΕΡΙΦΕΡΕΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564404389/dendias-aytarchikes-apopseis-prospathoyn-na-allaxoyn-to-kektimeno-toy-diethnoys-dikaioy/",
-        "https://www.kathimerini.gr/society/564404395/acha-a-nekros-entopistike-63chronos-meta-apo-fotia-sto-spiti-toy/"
+        "https://www.kathimerini.gr/society/564404410/poly-ypsilos-kindynos-pyrkagias-tin-kyriaki-red-code-se-tesseris-perifereies/",
+        "https://www.kathimerini.gr/society/564404419/fotia-sti-siviri-sta-2-480-stremmata-i-kameni-ektasi/"
       ],
-      "seen_at_utc": "2026-08-15T10:30:12.554708+00:00"
+      "seen_at_utc": "2026-08-15T10:51:43.001524+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865208/arsi-tou-apagoreutikou-apoplou-apo-laurio-kai-rafina-feugoun-ta-ploia-apo-ta-limania/?utm_source=rss",
-      "title": "Άρση του απαγορευτικού απόπλου από Λαύριο και Ραφήνα, φεύγουν τα πλοία από τα λιμάνια",
-      "normalized_title": "ΑΡΣΗ ΤΟΥ ΑΠΑΓΟΡΕΥΤΙΚΟΥ ΑΠΟΠΛΟΥ ΑΠΟ ΛΑΥΡΙΟ ΚΑΙ ΡΑΦΗΝΑ, ΦΕΥΓΟΥΝ ΤΑ ΠΛΟΙΑ ΑΠΟ ΤΑ ΛΙΜΑΝΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1865219/fotia-se-spiti-sta-moiraiika-ahaias-andras-edopistike-horis-tis-aisthiseis-tou-apo-tin-purosvestiki/?utm_source=rss",
+      "title": "Φωτιά σε σπίτι στα Μοιραίικα Αχαΐας, άνδρας εντοπίστηκε χωρίς τις αισθήσεις του από την Πυροσβεστική",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΣΠΙΤΙ ΣΤΑ ΜΟΙΡΑΙΙΚΑ ΑΧΑΙΑΣ, ΑΝΔΡΑΣ ΕΝΤΟΠΙΣΤΗΚΕ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ ΑΠΟ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865208/arsi-tou-apagoreutikou-apoplou-apo-laurio-kai-rafina-feugoun-ta-ploia-apo-ta-limania/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865205/dekapedaugoustos-stin-athina-plithos-piston-stin-panagia-padanassa-sto-monastiraki-oi-suginitikes-istories-piston/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865219/fotia-se-spiti-sta-moiraiika-ahaias-andras-edopistike-horis-tis-aisthiseis-tou-apo-tin-purosvestiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865216/polu-upsilos-kindunos-purkagias-aurio-kuriaki-gia-attiki-voiotia-euvoia-kuklades-kriti/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T10:17:13.842708+00:00"
+      "seen_at_utc": "2026-08-15T10:51:43.001641+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448324/nea-aktoploika-dromologia-apo-peiraia-rafina-kai-layrio-meta-ti-veltiosi-toy-kairoy/",
-      "title": "Ήρθη το απαγορευτικό απόπλου – Νέα δρομολόγια από Πειραιά, Ραφήνα, Λαύριο μετά τη βελτίωση του καιρού",
-      "normalized_title": "ΗΡΘΗ ΤΟ ΑΠΑΓΟΡΕΥΤΙΚΟ ΑΠΟΠΛΟΥ – ΝΕΑ ΔΡΟΜΟΛΟΓΙΑ ΑΠΟ ΠΕΙΡΑΙΑ, ΡΑΦΗΝΑ, ΛΑΥΡΙΟ ΜΕΤΑ ΤΗ ΒΕΛΤΙΩΣΗ ΤΟΥ ΚΑΙΡΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1448333/indonisia-efialtis-apo-ta-77-rihter-nekroi-kai-egklovismenoi-sta-syntrimmia-eikones-vinteo/",
+      "title": "Ινδονησία: Εφιάλτης από τα 7,7 Ρίχτερ – Νεκροί και εγκλωβισμένοι στα συντρίμμια [εικόνες-βίντεο]",
+      "normalized_title": "ΙΝΔΟΝΗΣΙΑ: ΕΦΙΑΛΤΗΣ ΑΠΟ ΤΑ 7,7 ΡΙΧΤΕΡ – ΝΕΚΡΟΙ ΚΑΙ ΕΓΚΛΩΒΙΣΜΕΝΟΙ ΣΤΑ ΣΥΝΤΡΙΜΜΙΑ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448324/nea-aktoploika-dromologia-apo-peiraia-rafina-kai-layrio-meta-ti-veltiosi-toy-kairoy/",
-        "https://www.efsyn.gr/ellada/1448321/tragodia-stin-patra-andras-anasyrthike-nekros-kata-ti-diarkeia-pyrkagias-se-spiti/",
-        "https://www.efsyn.gr/kosmos/1448316/makeleio-stis-ipa-39hronos-skotose-pente-atoma-se-tria-diaforetika-simeia-kai-aytoktonise/"
+        "https://www.efsyn.gr/kosmos/1448333/indonisia-efialtis-apo-ta-77-rihter-nekroi-kai-egklovismenoi-sta-syntrimmia-eikones-vinteo/",
+        "https://www.efsyn.gr/politiki/1448327/dekapentaygoystos-minyma-dendia-apo-tin-paro-me-to-vlemma-stin-agkyra/",
+        "https://www.efsyn.gr/ellada/1448330/dekapentaygoystos-sto-kentro-tis-athinas-i-panagia-pantanassa-sto-monastiraki-vinteo/"
       ],
-      "seen_at_utc": "2026-08-15T10:17:13.842686+00:00"
+      "seen_at_utc": "2026-08-15T10:51:43.001596+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/world/seismos-stin-indonisia-megalonei-o-arithmos-ton-thymaton-apo-ta-77-rixter-stous-38-oi-nekroi-2-000-anthropoi-egkateleipsan-tis-esties-tous/",
-      "title": "Μεγαλώνει ο αριθμός των θυμάτων από τα 7,7 Ρίχτερ - 38 νεκροί, 2.000 άνθρωποι εγκατέλειψαν τα σπίτια τους",
-      "normalized_title": "ΜΕΓΑΛΩΝΕΙ Ο ΑΡΙΘΜΟΣ ΤΩΝ ΘΥΜΑΤΩΝ ΑΠΟ ΤΑ 7,7 ΡΙΧΤΕΡ - 38 ΝΕΚΡΟΙ, 2.000 ΑΝΘΡΩΠΟΙ ΕΓΚΑΤΕΛΕΙΨΑΝ ΤΑ ΣΠΙΤΙΑ ΤΟΥΣ",
+      "url": "https://www.in.gr/2026/08/15/greece/xalkidiki-perimetro-kamenis-ektasis-2-480-stremmaton-apo-ti-fotia-sti-siviri-kategrapse-i-ypiresia-copernicus/",
+      "title": "Περίμετρο 2.500 στρεμμάτων έκαψε η φωτιά στη Σίβηρη - Τι κατέγραψε το Copernicus",
+      "normalized_title": "ΠΕΡΙΜΕΤΡΟ 2.500 ΣΤΡΕΜΜΑΤΩΝ ΕΚΑΨΕ Η ΦΩΤΙΑ ΣΤΗ ΣΙΒΗΡΗ - ΤΙ ΚΑΤΕΓΡΑΨΕ ΤΟ COPERNICUS",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/world/seismos-stin-indonisia-megalonei-o-arithmos-ton-thymaton-apo-ta-77-rixter-stous-38-oi-nekroi-2-000-anthropoi-egkateleipsan-tis-esties-tous/",
-        "https://www.in.gr/2026/08/15/in-science/perivallon-b-science/el-ninio-allazei-pros-to-xeirotero-i-provlepsi-to-fainomeno-odeyei-pros-istoriko-rekor-entasis/",
-        "https://www.in.gr/2026/08/15/go-fun/fizz/emanouel-makron-pozarei-sto-paris-match-kanontas-tzet-ski-eno-i-gallia-kaigetai-politiki-thyella-kai-orgi/"
+        "https://www.in.gr/2026/08/15/greece/xalkidiki-perimetro-kamenis-ektasis-2-480-stremmaton-apo-ti-fotia-sti-siviri-kategrapse-i-ypiresia-copernicus/",
+        "https://www.in.gr/2026/08/15/politics/politiki-grammateia/dendias-gia-tourkia-aytarxikes-apopseis-prospathoun-na-allaksoun-to-kektimeno-tou-diethnous-dikaiou/",
+        "https://www.in.gr/2026/08/15/sports/othersports/eyropaiko-stivou-tetarti-me-atomiko-rekor-i-ntrismpioti-ston-marathonio-vadin/"
       ],
-      "seen_at_utc": "2026-08-15T10:17:13.842657+00:00"
+      "seen_at_utc": "2026-08-15T10:51:43.001560+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T10:30:12.554811+00:00"
+  "updated_at_utc": "2026-08-15T10:51:43.001723+00:00"
 }
