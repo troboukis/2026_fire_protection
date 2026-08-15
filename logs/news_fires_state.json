@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/parties/564402007/poios-tsakonei-poion/",
-      "title": "Ποιος τσακώνει ποιον",
-      "normalized_title": "ΠΟΙΟΣ ΤΣΑΚΩΝΕΙ ΠΟΙΟΝ",
+      "url": "https://www.kathimerini.gr/society/564404599/chalkidiki-apagoreysi-kykloforias-pezon-kai-ochimaton-se-dasikes-perioches/",
+      "title": "Χαλκιδική: Απαγόρευση κυκλοφορίας πεζών και οχημάτων σε δασικές περιοχές",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΑΠΑΓΟΡΕΥΣΗ ΚΥΚΛΟΦΟΡΙΑΣ ΠΕΖΩΝ ΚΑΙ ΟΧΗΜΑΤΩΝ ΣΕ ΔΑΣΙΚΕΣ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/parties/564402007/poios-tsakonei-poion/",
-        "https://www.kathimerini.gr/life/564403231/diakopes-choris-kaysona-i-anodos-ton-coolcations/",
-        "https://www.kathimerini.gr/society/564404569/fotia-sti-skyro-minyma-112-gia-ekkenosi-oikismoy/"
+        "https://www.kathimerini.gr/society/564404599/chalkidiki-apagoreysi-kykloforias-pezon-kai-ochimaton-se-dasikes-perioches/",
+        "https://www.kathimerini.gr/world/564404587/i-rosia-zita-exigiseis-apo-oyasingkton-kai-agkyra-gia-pithani-metafora-amerikanikon-oplon-sto-kievo/"
       ],
-      "seen_at_utc": "2026-08-15T14:17:31.923065+00:00"
+      "seen_at_utc": "2026-08-15T14:51:37.049110+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,32 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865277/valkaniki-mafia-ekruvan-324-kila-kannavis-mesa-se-anakuklosima-ulika-apo-tin-alvania-tha-kateligan-meso-elladas-/?utm_source=rss",
-      "title": "Βαλκανική Μαφία: Έκρυβαν 324 κιλά κάνναβης μέσα σε ανακυκλώσιμα υλικά, από την Αλβανία θα κατέληγαν μέσω Ελλάδας στην Τουρκία, δείτε βίντεο",
-      "normalized_title": "ΒΑΛΚΑΝΙΚΗ ΜΑΦΙΑ: ΕΚΡΥΒΑΝ 324 ΚΙΛΑ ΚΑΝΝΑΒΗΣ ΜΕΣΑ ΣΕ ΑΝΑΚΥΚΛΩΣΙΜΑ ΥΛΙΚΑ, ΑΠΟ ΤΗΝ ΑΛΒΑΝΙΑ ΘΑ ΚΑΤΕΛΗΓΑΝ ΜΕΣΩ ΕΛΛΑΔΑΣ ΣΤΗΝ ΤΟΥΡΚΙΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1865285/fotia-se-sunergeio-autokiniton-sto-kalohori-thessalonikis/?utm_source=rss",
+      "title": "Φωτιά σε συνεργείο αυτοκινήτων στο Καλοχώρι Θεσσαλονίκης",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΣΥΝΕΡΓΕΙΟ ΑΥΤΟΚΙΝΗΤΩΝ ΣΤΟ ΚΑΛΟΧΩΡΙ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865277/valkaniki-mafia-ekruvan-324-kila-kannavis-mesa-se-anakuklosima-ulika-apo-tin-alvania-tha-kateligan-meso-elladas-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865285/fotia-se-sunergeio-autokiniton-sto-kalohori-thessalonikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T14:17:31.923160+00:00"
+      "seen_at_utc": "2026-08-15T14:51:37.049231+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448408/keimpritz-thriler-me-ton-thanato-toy-tzeison-arntei-ekstrateia-katadioxis-kataggellei-i-oikogeneia-toy/",
-      "title": "Κέιμπριτζ – Θρίλερ με τον θάνατο του Τζέισον Άρντεϊ: Εκστρατεία καταδίωξης καταγγέλλει η οικογένειά του",
-      "normalized_title": "ΚΕΙΜΠΡΙΤΖ – ΘΡΙΛΕΡ ΜΕ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΤΖΕΙΣΟΝ ΑΡΝΤΕΙ: ΕΚΣΤΡΑΤΕΙΑ ΚΑΤΑΔΙΩΞΗΣ ΚΑΤΑΓΓΕΛΛΕΙ Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1448414/thessaloniki-pyrkagia-se-ayleio-horo-epiheirisis-sto-kalohori/",
+      "title": "Θεσσαλονίκη: Πυρκαγιά σε αύλειο χώρο επιχείρησης στο Καλοχώρι",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΥΡΚΑΓΙΑ ΣΕ ΑΥΛΕΙΟ ΧΩΡΟ ΕΠΙΧΕΙΡΗΣΗΣ ΣΤΟ ΚΑΛΟΧΩΡΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448408/keimpritz-thriler-me-ton-thanato-toy-tzeison-arntei-ekstrateia-katadioxis-kataggellei-i-oikogeneia-toy/"
+        "https://www.efsyn.gr/ellada/1448414/thessaloniki-pyrkagia-se-ayleio-horo-epiheirisis-sto-kalohori/"
       ],
-      "seen_at_utc": "2026-08-15T14:30:00.132378+00:00"
+      "seen_at_utc": "2026-08-15T14:51:37.049200+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/sports/on-field/i-sosti-apofasi-gia-tous-sostous-logous/",
-      "title": "Η σωστή απόφαση για τους σωστούς λόγους",
-      "normalized_title": "Η ΣΩΣΤΗ ΑΠΟΦΑΣΗ ΓΙΑ ΤΟΥΣ ΣΩΣΤΟΥΣ ΛΟΓΟΥΣ",
+      "url": "https://www.in.gr/2026/08/15/sports/football/la-liga-se-anodiki-troxia-kyniga-esoda-pano-apo-6-dis-eyro/",
+      "title": "La Liga: Σε ανοδική τροχιά, «κυνηγά» έσοδα πάνω από 6 δισ. ευρώ",
+      "normalized_title": "LA LIGA: ΣΕ ΑΝΟΔΙΚΗ ΤΡΟΧΙΑ, «ΚΥΝΗΓΑ» ΕΣΟΔΑ ΠΑΝΩ ΑΠΟ 6 ΔΙΣ. ΕΥΡΩ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/sports/on-field/i-sosti-apofasi-gia-tous-sostous-logous/"
+        "https://www.in.gr/2026/08/15/sports/football/la-liga-se-anodiki-troxia-kyniga-esoda-pano-apo-6-dis-eyro/",
+        "https://www.in.gr/2026/08/15/greece/diakinousan-narkotika-apo-tin-alvania-stin-tourkia-mesa-se-fortia-me-xarti-anakyklosis-apokalyptikes-eikones/",
+        "https://www.in.gr/2026/08/15/greece/thessaloniki-fotia-se-synergeio-aytokiniton-sto-kaloxori/",
+        "https://www.in.gr/2026/08/15/world/indonisia-megalonei-o-arithmos-ton-nekron-kleistoi-dromoi-provlimata-stis-epikoinonies/",
+        "https://www.in.gr/2026/08/15/sports/on-field/i-anoixti-grammi-kai-o-atromitos/"
       ],
-      "seen_at_utc": "2026-08-15T14:30:00.132317+00:00"
+      "seen_at_utc": "2026-08-15T14:51:37.049167+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T14:30:00.132483+00:00"
+  "updated_at_utc": "2026-08-15T14:51:37.049323+00:00"
 }
