@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404518/neos-seismos-6-9-richter-stin-indonisia/",
-      "title": "Νέος σεισμός 6,9 Ρίχτερ στην Ινδονησία",
-      "normalized_title": "ΝΕΟΣ ΣΕΙΣΜΟΣ 6,9 ΡΙΧΤΕΡ ΣΤΗΝ ΙΝΔΟΝΗΣΙΑ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564404437/psita-syka-me-prosoyto-kai-ladolemono-me-oyzo/",
+      "title": "Ψητά σύκα με προσούτο και λαδολέμονο με ούζο",
+      "normalized_title": "ΨΗΤΑ ΣΥΚΑ ΜΕ ΠΡΟΣΟΥΤΟ ΚΑΙ ΛΑΔΟΛΕΜΟΝΟ ΜΕ ΟΥΖΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404518/neos-seismos-6-9-richter-stin-indonisia/"
+        "https://www.kathimerini.gr/k/gastronomos/564404437/psita-syka-me-prosoyto-kai-ladolemono-me-oyzo/",
+        "https://www.kathimerini.gr/society/564404527/voiotia-ti-edeixe-i-aytopsia-sto-simeio-poy-xekinise-i-fotia/"
       ],
-      "seen_at_utc": "2026-08-15T12:30:02.817405+00:00"
+      "seen_at_utc": "2026-08-15T12:51:11.958398+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865254/apisteuto-video-apo-tis-spetses-fortosan-mihanaki-se-tender-kai-to-pigan-volta-tous-epivlithike-prostimo/?utm_source=rss",
-      "title": "Απίστευτο βίντεο από τις Σπέτσες: Φόρτωσαν μηχανάκι σε tender και το πήγαν... βόλτα, τους επιβλήθηκε πρόστιμο",
-      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΒΙΝΤΕΟ ΑΠΟ ΤΙΣ ΣΠΕΤΣΕΣ: ΦΟΡΤΩΣΑΝ ΜΗΧΑΝΑΚΙ ΣΕ TENDER ΚΑΙ ΤΟ ΠΗΓΑΝ... ΒΟΛΤΑ, ΤΟΥΣ ΕΠΙΒΛΗΘΗΚΕ ΠΡΟΣΤΙΜΟ",
+      "url": "https://www.protothema.gr/greece/article/1865267/sto-nosokomeio-i-perifereiarhis-kedrikis-makedonias-nana-aidona/?utm_source=rss",
+      "title": "Στο νοσοκομείο η περιφερειάρχης Κεντρικής Μακεδονίας Νανά Αηδονά",
+      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ Η ΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ ΝΑΝΑ ΑΗΔΟΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865254/apisteuto-video-apo-tis-spetses-fortosan-mihanaki-se-tender-kai-to-pigan-volta-tous-epivlithike-prostimo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865267/sto-nosokomeio-i-perifereiarhis-kedrikis-makedonias-nana-aidona/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865265/video-louomenoi-sti-rodo-kanoun-vouties-apo-to-sfragismeno-trabolino-stin-paralia-elli-sustaseis-apo-to-limeniko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865264/tragodia-sto-varnava-74hroni-ehase-ti-zoi-tis-otan-to-autokinito-tis-vgike-apo-ton-dromo-epese-se-rema-kai-toubare/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865262/porto-rafti-50hroni-katiggeile-ton-sudrofo-tis-gia-epithesi-ton-anazita-i-astunomia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T12:30:02.817555+00:00"
+      "seen_at_utc": "2026-08-15T12:51:11.958494+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448380/sfagi-sto-livano-to-israil-xeklirise-oikogeneia-epta-nekroi-apo-aeroporiko-pligma-ston-noto/",
-      "title": "Σφαγή στο Λίβανο: Το Ισραήλ ξεκλήρισε οικογένεια – Επτά νεκροί από αεροπορικό πλήγμα στον νότο",
-      "normalized_title": "ΣΦΑΓΗ ΣΤΟ ΛΙΒΑΝΟ: ΤΟ ΙΣΡΑΗΛ ΞΕΚΛΗΡΙΣΕ ΟΙΚΟΓΕΝΕΙΑ – ΕΠΤΑ ΝΕΚΡΟΙ ΑΠΟ ΑΕΡΟΠΟΡΙΚΟ ΠΛΗΓΜΑ ΣΤΟΝ ΝΟΤΟ",
+      "url": "https://www.efsyn.gr/ellada/1448383/agrio-epeisodio-stin-paro-anamesa-se-odigo-taxi-kai-ypallilo-etaireias-gia-mia-thesi-parkingk-vinteo/",
+      "title": "Άγριο επεισόδιο στην Πάρο ανάμεσα σε οδηγό ταξί και υπάλληλο εταιρείας για μια θέση πάρκινγκ [βίντεο]",
+      "normalized_title": "ΑΓΡΙΟ ΕΠΕΙΣΟΔΙΟ ΣΤΗΝ ΠΑΡΟ ΑΝΑΜΕΣΑ ΣΕ ΟΔΗΓΟ ΤΑΞΙ ΚΑΙ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΓΙΑ ΜΙΑ ΘΕΣΗ ΠΑΡΚΙΝΓΚ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448380/sfagi-sto-livano-to-israil-xeklirise-oikogeneia-epta-nekroi-apo-aeroporiko-pligma-ston-noto/",
-        "https://www.efsyn.gr/gallery/nikos-kalogeropoylos-1952-2026/"
+        "https://www.efsyn.gr/ellada/1448383/agrio-epeisodio-stin-paro-anamesa-se-odigo-taxi-kai-ypallilo-etaireias-gia-mia-thesi-parkingk-vinteo/",
+        "https://www.efsyn.gr/ellada/1448384/thessaloniki-sto-ahepa-i-perifereiarhis-k-makedonias-athina-aidona-ystera-apo-xafniki-adiathesia/"
       ],
-      "seen_at_utc": "2026-08-15T12:30:02.817495+00:00"
+      "seen_at_utc": "2026-08-15T12:51:11.958476+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/sygkrousi-thalamigou-me-ellimenismena-skafi-stin-aigina/",
-      "title": "Σύγκρουση θαλαμηγού με ελλιμενισμένα σκάφη στην Αίγινα",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΘΑΛΑΜΗΓΟΥ ΜΕ ΕΛΛΙΜΕΝΙΣΜΕΝΑ ΣΚΑΦΗ ΣΤΗΝ ΑΙΓΙΝΑ",
+      "url": "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-poli-fantasma-i-athina-eikones-apo-tous-erimous-dromous-sto-kentro/",
+      "title": "Πόλη «φάντασμα» η Αθήνα τον Δεκαπενταύγουστο - Εικόνες από τους έρημους δρόμους",
+      "normalized_title": "ΠΟΛΗ «ΦΑΝΤΑΣΜΑ» Η ΑΘΗΝΑ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ - ΕΙΚΟΝΕΣ ΑΠΟ ΤΟΥΣ ΕΡΗΜΟΥΣ ΔΡΟΜΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/sygkrousi-thalamigou-me-ellimenismena-skafi-stin-aigina/",
-        "https://www.in.gr/2026/08/15/world/afganistan-15-aygoustou-2021-i-mera-pou-exasa-ti-xora-mou/"
+        "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-poli-fantasma-i-athina-eikones-apo-tous-erimous-dromous-sto-kentro/",
+        "https://www.in.gr/2026/08/15/sports/basketball/yperoxi-kinisi-tou-makintair-tou-olympiakou-agorase-apo-pitsirika-lemonada-enanti-240-eyro-pic/"
       ],
-      "seen_at_utc": "2026-08-15T12:30:02.817445+00:00"
+      "seen_at_utc": "2026-08-15T12:51:11.958448+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T12:30:02.817654+00:00"
+  "updated_at_utc": "2026-08-15T12:51:11.958588+00:00"
 }
