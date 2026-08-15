@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564404341/ta-minymata-ton-politikon-gia-tin-eorti-toy-dekapentaygoystoy/",
-      "title": "Τα μηνύματα των πολιτικών για την εορτή του Δεκαπενταύγουστου",
-      "normalized_title": "ΤΑ ΜΗΝΥΜΑΤΑ ΤΩΝ ΠΟΛΙΤΙΚΩΝ ΓΙΑ ΤΗΝ ΕΟΡΤΗ ΤΟΥ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/politics/564404347/mitsotakis-gia-stefano-mano-anamfivoli-i-prosfora-toy-sti-dimosia-zoi/",
+      "title": "Μητσοτάκης για Στέφανο Μάνο: «Aναμφίβολη η προσφορά του στη δημόσια ζωή»",
+      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΓΙΑ ΣΤΕΦΑΝΟ ΜΑΝΟ: «AΝΑΜΦΙΒΟΛΗ Η ΠΡΟΣΦΟΡΑ ΤΟΥ ΣΤΗ ΔΗΜΟΣΙΑ ΖΩΗ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564404341/ta-minymata-ton-politikon-gia-tin-eorti-toy-dekapentaygoystoy/"
+        "https://www.kathimerini.gr/politics/564404347/mitsotakis-gia-stefano-mano-anamfivoli-i-prosfora-toy-sti-dimosia-zoi/"
       ],
-      "seen_at_utc": "2026-08-15T08:30:02.982325+00:00"
+      "seen_at_utc": "2026-08-15T08:51:13.593844+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,26 +1268,28 @@
       "seen_at_utc": "2026-08-15T08:17:14.466626+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1448292/o-adonis-ta-vazei-me-toys-galloys-dikastes-kai-kataggellei-ton-akrato-dikaiomatismo/",
-      "title": "Ο Αδωνις τα βάζει με τους Γάλλους δικαστές και καταγγέλλει τον «άκρατο δικαίωματισμο» ;",
-      "normalized_title": "Ο ΑΔΩΝΙΣ ΤΑ ΒΑΖΕΙ ΜΕ ΤΟΥΣ ΓΑΛΛΟΥΣ ΔΙΚΑΣΤΕΣ ΚΑΙ ΚΑΤΑΓΓΕΛΛΕΙ ΤΟΝ «ΑΚΡΑΤΟ ΔΙΚΑΙΩΜΑΤΙΣΜΟ» ;",
+      "url": "https://www.efsyn.gr/ellada/1448294/pethane-xafnika-sti-mytilini-o-proedros-tis-epitropis-tilepikoinonion-kai-tahydromeion/",
+      "title": "Πέθανε ξαφνικά στη Μυτιλήνη ο πρόεδρος της Επιτροπής Τηλεπικοινωνιών και Ταχυδρομείων",
+      "normalized_title": "ΠΕΘΑΝΕ ΞΑΦΝΙΚΑ ΣΤΗ ΜΥΤΙΛΗΝΗ Ο ΠΡΟΕΔΡΟΣ ΤΗΣ ΕΠΙΤΡΟΠΗΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ ΚΑΙ ΤΑΧΥΔΡΟΜΕΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1448292/o-adonis-ta-vazei-me-toys-galloys-dikastes-kai-kataggellei-ton-akrato-dikaiomatismo/",
-        "https://www.efsyn.gr/stiles/1447673/i-themeliodis-anthektikotita-tis-ellinikis-oikonomias/",
-        "https://www.efsyn.gr/politiki/1448289/dekapentaygoystos-ta-minymata-ton-politikon-gia-ti-megali-giorti/"
+        "https://www.efsyn.gr/ellada/1448294/pethane-xafnika-sti-mytilini-o-proedros-tis-epitropis-tilepikoinonion-kai-tahydromeion/",
+        "https://www.efsyn.gr/stiles/1447615/o-skoypidotenekes-paei-kalpi/"
       ],
-      "seen_at_utc": "2026-08-15T08:30:02.982436+00:00"
+      "seen_at_utc": "2026-08-15T08:51:13.593897+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/world/ipa-sto-kokkino-ta-pliromata-ton-aeroplanoforon-martyries-nayton-gia-athlies-synthikes-kai-elleipseis-vasikon-eidon/",
-      "title": "Μαρτυρίες ναυτών για άθλιες συνθήκες και ελλείψεις βασικών ειδών σε αεροπλανοφόρα των ΗΠΑ - Στο «κόκκινο» τα πληρώματα",
-      "normalized_title": "ΜΑΡΤΥΡΙΕΣ ΝΑΥΤΩΝ ΓΙΑ ΑΘΛΙΕΣ ΣΥΝΘΗΚΕΣ ΚΑΙ ΕΛΛΕΙΨΕΙΣ ΒΑΣΙΚΩΝ ΕΙΔΩΝ ΣΕ ΑΕΡΟΠΛΑΝΟΦΟΡΑ ΤΩΝ ΗΠΑ - ΣΤΟ «ΚΟΚΚΙΝΟ» ΤΑ ΠΛΗΡΩΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/15/world/ipa-pente-nekroi-apo-pyrovolismous-sto-misigkan-aytoktonise-o-drastis/",
+      "title": "Πέντε νεκροί από πυροβολισμούς στο Μίσιγκαν - Αυτοκτόνησε ο δράστης",
+      "normalized_title": "ΠΕΝΤΕ ΝΕΚΡΟΙ ΑΠΟ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΤΟ ΜΙΣΙΓΚΑΝ - ΑΥΤΟΚΤΟΝΗΣΕ Ο ΔΡΑΣΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/world/ipa-sto-kokkino-ta-pliromata-ton-aeroplanoforon-martyries-nayton-gia-athlies-synthikes-kai-elleipseis-vasikon-eidon/",
-        "https://www.in.gr/2026/08/15/sports/football/to-apithano-ntempouto-tou-kyziridi-stin-tsoroum-me-gkolara-kai-apovoli-vids/"
+        "https://www.in.gr/2026/08/15/world/ipa-pente-nekroi-apo-pyrovolismous-sto-misigkan-aytoktonise-o-drastis/",
+        "https://www.in.gr/2026/08/15/sports/othersports/eyropaiko-kolymvisis-aneti-prokrisi-gia-ti-damasioti-ston-imiteliko-ton-200m-petalouda-vid/",
+        "https://www.in.gr/2026/08/15/economy/oikonomikes-eidiseis/oi-asfaires-ekptoseis-kai-to-kalpiko-3eyro/",
+        "https://www.in.gr/2026/08/15/sports/nba-to-nou-sou-fetos-tha-kyriarxiso-proeidopoiei-o-giannis-antetokounmpo-vid/",
+        "https://www.in.gr/2026/08/15/politics/epikairotita/dourou-o-dekapentaygoustos-einai-mia-imera-vathia-rizomeni-stin-paradosi-kai-ti-syllogiki-mnimi-tou-laou-mas/"
       ],
-      "seen_at_utc": "2026-08-15T08:30:02.982388+00:00"
+      "seen_at_utc": "2026-08-15T08:51:13.593874+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T08:30:02.982507+00:00"
+  "updated_at_utc": "2026-08-15T08:51:13.593960+00:00"
 }
