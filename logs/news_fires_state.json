@@ -1,13 +1,34 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564404680/chalkino-metallio-sta-200m-petaloyda-o-siskos/",
-      "title": "Χάλκινο μετάλλιο στα 200μ. πεταλούδα ο Σίσκος",
-      "normalized_title": "ΧΑΛΚΙΝΟ ΜΕΤΑΛΛΙΟ ΣΤΑ 200Μ. ΠΕΤΑΛΟΥΔΑ Ο ΣΙΣΚΟΣ",
+      "url": "https://www.kathimerini.gr/society/564404692/choris-energa-metopa-oi-pyrkagies-se-nea-michaniona-kai-samothraki/",
+      "title": "Χωρίς ενεργά μέτωπα οι πυρκαγιές σε Νέα Μηχανιώνα και Σαμοθράκη",
+      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΑ ΜΕΤΩΠΑ ΟΙ ΠΥΡΚΑΓΙΕΣ ΣΕ ΝΕΑ ΜΗΧΑΝΙΩΝΑ ΚΑΙ ΣΑΜΟΘΡΑΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564404680/chalkino-metallio-sta-200m-petaloyda-o-siskos/"
+        "https://www.kathimerini.gr/society/564404692/choris-energa-metopa-oi-pyrkagies-se-nea-michaniona-kai-samothraki/",
+        "https://www.kathimerini.gr/opinion/564401890/ypodeigma-prostasias/",
+        "https://www.kathimerini.gr/opinion/564402187/palaiokommatikos-politikos-i-statesman/",
+        "https://www.kathimerini.gr/opinion/564402193/sovarofaneia-i-sovarotita/",
+        "https://www.kathimerini.gr/opinion/564401950/me-mia-allaxia/",
+        "https://www.kathimerini.gr/opinion/564402190/ta-asymmazeyta/",
+        "https://www.kathimerini.gr/opinion/564402223/i-laikistiki-apotelesmatikotita/",
+        "https://www.kathimerini.gr/opinion/564402034/diaforetikos-alla-idios/",
+        "https://www.kathimerini.gr/opinion/564402184/pos-aposynarmologeis-mia-zoi/",
+        "https://www.kathimerini.gr/opinion/564402232/stin-oraioteri-chora-toy-kosmoy/",
+        "https://www.kathimerini.gr/opinion/564402229/i-klaoyntia-mas-kai-o-komis-toy-montrone/",
+        "https://www.kathimerini.gr/opinion/564402208/metamorfoseis-toy-ellinikoy-toyrismoy/",
+        "https://www.kathimerini.gr/opinion/564402205/poy-prepei-na-mpei-to-freno/",
+        "https://www.kathimerini.gr/opinion/564402220/choris-aspides-psychis-sta-veli-toy-ilioy/",
+        "https://www.kathimerini.gr/opinion/sketches/564404224/skitso-toy-dimitri-chantzopoyloy-15-08-26/",
+        "https://www.kathimerini.gr/opinion/564402217/tesseris-ellinikes-istories/",
+        "https://www.kathimerini.gr/opinion/sketches/564404230/skitso-toy-ilia-makri-15-08-26/",
+        "https://www.kathimerini.gr/opinion/564402235/dyo-diaforetikes-michanes-provlepsis/",
+        "https://www.kathimerini.gr/opinion/564402226/megalos-igetis-kakos-kyvernitis/",
+        "https://www.kathimerini.gr/opinion/564401959/i-elliniki-amichania-sti-mesi-anatoli/",
+        "https://www.kathimerini.gr/opinion/564401968/kentrodexia-choris-kentro/",
+        "https://www.kathimerini.gr/opinion/564402031/me-to-vlemmasta-dasi-toy-2050/"
       ],
-      "seen_at_utc": "2026-08-15T16:51:13.720382+00:00"
+      "seen_at_utc": "2026-08-15T17:17:16.386007+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1280,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865301/apoluthike-o-odigos-taxi-pou-xulokopise-ton-upallilo-etaireias-enoikiasis-autokiniton-stin-paro/?utm_source=rss",
-      "title": "Απολύθηκε ο οδηγός ταξί που ξυλοκόπησε τον υπάλληλο εταιρείας ενοικίασης αυτοκινήτων στην Πάρο: «Τελείωσε από την επιχείρησή μου» λέει ο εργοδότης του",
-      "normalized_title": "ΑΠΟΛΥΘΗΚΕ Ο ΟΔΗΓΟΣ ΤΑΞΙ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΤΟΝ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΕΝΟΙΚΙΑΣΗΣ ΑΥΤΟΚΙΝΗΤΩΝ ΣΤΗΝ ΠΑΡΟ: «ΤΕΛΕΙΩΣΕ ΑΠΟ ΤΗΝ ΕΠΙΧΕΙΡΗΣΗ ΜΟΥ» ΛΕΕΙ Ο ΕΡΓΟΔΟΤΗΣ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1865314/ishuro-meltemi-se-attiki-euvoia-kai-tino-ripes-ano-ton-100-hlmora/?utm_source=rss",
+      "title": "Ισχυρό μελτέμι σε Αττική, Εύβοια και Τήνο: Ριπές άνω των 100 χλμ/ώρα",
+      "normalized_title": "ΙΣΧΥΡΟ ΜΕΛΤΕΜΙ ΣΕ ΑΤΤΙΚΗ, ΕΥΒΟΙΑ ΚΑΙ ΤΗΝΟ: ΡΙΠΕΣ ΑΝΩ ΤΩΝ 100 ΧΛΜ/ΩΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865301/apoluthike-o-odigos-taxi-pou-xulokopise-ton-upallilo-etaireias-enoikiasis-autokiniton-stin-paro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865314/ishuro-meltemi-se-attiki-euvoia-kai-tino-ripes-ano-ton-100-hlmora/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T16:17:50.443981+00:00"
+      "seen_at_utc": "2026-08-15T17:17:16.386132+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448437/indonisia-ayxanontai-dramatika-oi-nekroi-apo-ton-seismo-san-na-vriskomastan-pano-se-trampolino/",
-      "title": "Ινδονησία: Αυξάνονται δραματικά οι νεκροί από τον σεισμό – «Σαν να βρισκόμασταν πάνω σε τραμπολίνο»",
-      "normalized_title": "ΙΝΔΟΝΗΣΙΑ: ΑΥΞΑΝΟΝΤΑΙ ΔΡΑΜΑΤΙΚΑ ΟΙ ΝΕΚΡΟΙ ΑΠΟ ΤΟΝ ΣΕΙΣΜΟ – «ΣΑΝ ΝΑ ΒΡΙΣΚΟΜΑΣΤΑΝ ΠΑΝΩ ΣΕ ΤΡΑΜΠΟΛΙΝΟ»",
+      "url": "https://www.efsyn.gr/athlitismos/1448441/egrapse-istoria-sto-eyropaiko-kolymvisis-o-siskos-halkino-sta-200m-petaloyda-kai-panellinio-rekor/",
+      "title": "Έγραψε ιστορία στο Ευρωπαϊκό Κολύμβησης ο Σίσκος – Χάλκινο στα 200μ. πεταλούδα και πανελλήνιο ρεκόρ",
+      "normalized_title": "ΕΓΡΑΨΕ ΙΣΤΟΡΙΑ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΚΟΛΥΜΒΗΣΗΣ Ο ΣΙΣΚΟΣ – ΧΑΛΚΙΝΟ ΣΤΑ 200Μ. ΠΕΤΑΛΟΥΔΑ ΚΑΙ ΠΑΝΕΛΛΗΝΙΟ ΡΕΚΟΡ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448437/indonisia-ayxanontai-dramatika-oi-nekroi-apo-ton-seismo-san-na-vriskomastan-pano-se-trampolino/"
+        "https://www.efsyn.gr/athlitismos/1448441/egrapse-istoria-sto-eyropaiko-kolymvisis-o-siskos-halkino-sta-200m-petaloyda-kai-panellinio-rekor/",
+        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-t-astra-6/",
+        "https://www.efsyn.gr/gallery/ennea-pente-7/",
+        "https://www.efsyn.gr/gallery/o-mikros-koylis-8/"
       ],
-      "seen_at_utc": "2026-08-15T16:30:02.356881+00:00"
+      "seen_at_utc": "2026-08-15T17:17:16.386109+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/sports/on-field/i-kanonikotita-agnoeitai-stin-epo/",
-      "title": "Η κανονικότητα αγνοείται στην ΕΠΟ",
-      "normalized_title": "Η ΚΑΝΟΝΙΚΟΤΗΤΑ ΑΓΝΟΕΙΤΑΙ ΣΤΗΝ ΕΠΟ",
+      "url": "https://www.in.gr/2026/08/15/sports/football/o-gkringount-sti-fenermpaxtse-kai-oi-antidraseis-sti-feministiki-geitonia-tis-polis/",
+      "title": "Ο Γκρίνγουντ στη Φενέρμπαχτσε και οι αντιδράσεις στη «φεμινιστική» γειτονιά της Πόλης",
+      "normalized_title": "Ο ΓΚΡΙΝΓΟΥΝΤ ΣΤΗ ΦΕΝΕΡΜΠΑΧΤΣΕ ΚΑΙ ΟΙ ΑΝΤΙΔΡΑΣΕΙΣ ΣΤΗ «ΦΕΜΙΝΙΣΤΙΚΗ» ΓΕΙΤΟΝΙΑ ΤΗΣ ΠΟΛΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/sports/on-field/i-kanonikotita-agnoeitai-stin-epo/",
-        "https://www.in.gr/2026/08/15/world/livanos-toulaxiston-11-oi-nekroi-apo-pligmata-tou-israil-ston-noto-ti-lene-oi-idf/",
-        "https://www.in.gr/2026/08/15/world/iran-treis-iranoi-pilotoi-exoun-aixmalotisthei-sto-katar-i-texerani-zita-tin-apeleytherosi-tous/"
+        "https://www.in.gr/2026/08/15/sports/football/o-gkringount-sti-fenermpaxtse-kai-oi-antidraseis-sti-feministiki-geitonia-tis-polis/",
+        "https://www.in.gr/2026/08/15/go-fun/perierga/den-krinoume-o-drake-gavgizei-san-skylos-epeidi-tou-to-zitise-ena-goth-koritsi/",
+        "https://www.in.gr/2026/08/15/world/zimpampoue-stous-68-oi-nekroi-apo-tin-anatropi-epivatigou-ploiou-se-limni-tin-perasmeni-triti/",
+        "https://www.in.gr/2026/08/15/sports/othersports/xalkino-metallio-sto-eyropaiko-gia-ton-apostolo-sisko-me-panellinio-rekor/"
       ],
-      "seen_at_utc": "2026-08-15T16:51:13.720417+00:00"
+      "seen_at_utc": "2026-08-15T17:17:16.386072+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T16:51:13.720494+00:00"
+  "updated_at_utc": "2026-08-15T17:17:16.386210+00:00"
 }
