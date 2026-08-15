@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404548/akraia-zesti-stin-eyropi-16-000-perissoteroi-thanatoi-se-mia-evdomada/",
-      "title": "Ακραία ζέστη στην Ευρώπη: 16.000 περισσότεροι θάνατοι σε μία εβδομάδα",
-      "normalized_title": "ΑΚΡΑΙΑ ΖΕΣΤΗ ΣΤΗΝ ΕΥΡΩΠΗ: 16.000 ΠΕΡΙΣΣΟΤΕΡΟΙ ΘΑΝΑΤΟΙ ΣΕ ΜΙΑ ΕΒΔΟΜΑΔΑ",
+      "url": "https://www.kathimerini.gr/life/technology/564403774/osoi-chrisimopoioyn-ai-den-tha-mporoyn-na-kryftoyn/",
+      "title": "Οσοι χρησιμοποιούν ΑΙ δεν θα μπορούν να κρυφτούν",
+      "normalized_title": "ΟΣΟΙ ΧΡΗΣΙΜΟΠΟΙΟΥΝ ΑΙ ΔΕΝ ΘΑ ΜΠΟΡΟΥΝ ΝΑ ΚΡΥΦΤΟΥΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404548/akraia-zesti-stin-eyropi-16-000-perissoteroi-thanatoi-se-mia-evdomada/",
-        "https://www.kathimerini.gr/society/564402148/dr-tomas-sompotka-stin-k-den-echei-pia-tin-idia-axia-na-eisai-gonios/",
-        "https://www.kathimerini.gr/society/564404725/synelifthi-35chronos-gia-tin-pyrkagia-sto-rethymno-eiche-anapsei-psistaria-me-katigoria-kindynoy-4/"
+        "https://www.kathimerini.gr/life/technology/564403774/osoi-chrisimopoioyn-ai-den-tha-mporoyn-na-kryftoyn/",
+        "https://www.kathimerini.gr/society/564404746/limeniko-diasothikan-tesseris-roymanoi-ston-saroniko-epevainan-se-foyskoto-choris-michani/",
+        "https://www.kathimerini.gr/economy/564402394/forodoxies-gnorizete-oti-463/"
       ],
-      "seen_at_utc": "2026-08-15T18:51:21.149804+00:00"
+      "seen_at_utc": "2026-08-15T19:17:02.829542+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865327/video-i-mahi-tou-skopeliti-me-ta-kumata-sto-aigaio/?utm_source=rss",
-      "title": "Βίντεο: Η «μάχη» του Σκοπελίτη με τα κύματα στο Αιγαίο",
-      "normalized_title": "ΒΙΝΤΕΟ: Η «ΜΑΧΗ» ΤΟΥ ΣΚΟΠΕΛΙΤΗ ΜΕ ΤΑ ΚΥΜΑΤΑ ΣΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1865342/to-metaniono-alla-me-varese-protos-upostirizei-odigos-taxi-pou-irthe-sta-heria-me-upallilo-etaireias-ohimaton-paro/?utm_source=rss",
+      "title": "«Το μετανιώνω αλλά με βάρεσε πρώτος»: Τι υποστηρίζει ο οδηγός ταξί που ξυλοκόπησε τον υπάλληλο εταιρείας ενοικίασης οχημάτων στην Πάρο",
+      "normalized_title": "«ΤΟ ΜΕΤΑΝΙΩΝΩ ΑΛΛΑ ΜΕ ΒΑΡΕΣΕ ΠΡΩΤΟΣ»: ΤΙ ΥΠΟΣΤΗΡΙΖΕΙ Ο ΟΔΗΓΟΣ ΤΑΞΙ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΤΟΝ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΕΝΟΙΚΙΑΣΗΣ ΟΧΗΜΑΤΩΝ ΣΤΗΝ ΠΑΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865327/video-i-mahi-tou-skopeliti-me-ta-kumata-sto-aigaio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865325/sunelifthi-israilinos-gia-ti-fotia-sto-rethumno-eihe-anapsei-psistaria-se-imera-upsilou-kindunou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865342/to-metaniono-alla-me-varese-protos-upostirizei-odigos-taxi-pou-irthe-sta-heria-me-upallilo-etaireias-ohimaton-paro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T18:17:44.440459+00:00"
+      "seen_at_utc": "2026-08-15T19:17:02.829696+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448459/erntogan-eho-lavei-yposhesi-apo-ton-tramp-gia-ta-f-35-pithani-i-entaxi-tis-aigyptoy-sti-symfonia-tis-mekkas/",
-      "title": "Ερντογάν: Έχω λάβει υπόσχεση από τον Τραμπ για τα F-35 – Πιθανή η ένταξη της Αιγύπτου στη Συμφωνία της Μέκκας",
-      "normalized_title": "ΕΡΝΤΟΓΑΝ: ΕΧΩ ΛΑΒΕΙ ΥΠΟΣΧΕΣΗ ΑΠΟ ΤΟΝ ΤΡΑΜΠ ΓΙΑ ΤΑ F-35 – ΠΙΘΑΝΗ Η ΕΝΤΑΞΗ ΤΗΣ ΑΙΓΥΠΤΟΥ ΣΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1448463/ishyro-mpoyrini-sti-mani-keraynos-htypise-gynaika-poy-vriskotan-sto-ohima-tis-i-anartisi-georgiadi/",
+      "title": "Ισχυρό μπουρίνι στη Μάνη: Κεραυνός χτύπησε γυναίκα που βρισκόταν στο όχημά της – Η ανάρτηση Γεωργιάδη",
+      "normalized_title": "ΙΣΧΥΡΟ ΜΠΟΥΡΙΝΙ ΣΤΗ ΜΑΝΗ: ΚΕΡΑΥΝΟΣ ΧΤΥΠΗΣΕ ΓΥΝΑΙΚΑ ΠΟΥ ΒΡΙΣΚΟΤΑΝ ΣΤΟ ΟΧΗΜΑ ΤΗΣ – Η ΑΝΑΡΤΗΣΗ ΓΕΩΡΓΙΑΔΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448459/erntogan-eho-lavei-yposhesi-apo-ton-tramp-gia-ta-f-35-pithani-i-entaxi-tis-aigyptoy-sti-symfonia-tis-mekkas/"
+        "https://www.efsyn.gr/ellada/1448463/ishyro-mpoyrini-sti-mani-keraynos-htypise-gynaika-poy-vriskotan-sto-ohima-tis-i-anartisi-georgiadi/",
+        "https://www.efsyn.gr/kosmos/1448461/to-ampoy-ntampi-kataggellei-to-iran-oti-epitethike-se-ploio-ton-emiraton-sto-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-15T18:51:21.149904+00:00"
+      "seen_at_utc": "2026-08-15T19:17:02.829650+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/world/i-anodos-ton-idiotikon-kraton-i-katarreysi-ton-dimosion-ypodomon-kai-oi-paralliles-koinonies/",
-      "title": "Η άνοδος των «ιδιωτικών κρατών» – Η κατάρρευση των δημόσιων υποδομών και οι παράλληλες κοινωνίες",
-      "normalized_title": "Η ΑΝΟΔΟΣ ΤΩΝ «ΙΔΙΩΤΙΚΩΝ ΚΡΑΤΩΝ» – Η ΚΑΤΑΡΡΕΥΣΗ ΤΩΝ ΔΗΜΟΣΙΩΝ ΥΠΟΔΟΜΩΝ ΚΑΙ ΟΙ ΠΑΡΑΛΛΗΛΕΣ ΚΟΙΝΩΝΙΕΣ",
+      "url": "https://www.in.gr/2026/08/15/economy/klimatiki-krisi-otan-i-oikonomia-douleyei-me-to-feggari-to-nyxterino-jet-lag-tis-ypaithrou/",
+      "title": "Όταν η οικονομία δουλεύει με το φεγγάρι - Το νυχτερινό «jet lag» της υπαίθρου",
+      "normalized_title": "ΟΤΑΝ Η ΟΙΚΟΝΟΜΙΑ ΔΟΥΛΕΥΕΙ ΜΕ ΤΟ ΦΕΓΓΑΡΙ - ΤΟ ΝΥΧΤΕΡΙΝΟ «JET LAG» ΤΗΣ ΥΠΑΙΘΡΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/world/i-anodos-ton-idiotikon-kraton-i-katarreysi-ton-dimosion-ypodomon-kai-oi-paralliles-koinonies/",
-        "https://www.in.gr/2026/08/15/economy/diethnis-oikonomia/nea-yorki-pos-enas-18xronos-vgazei-xiliades-dolaria-poulontas-krymmenous-thisayrous-apo-egkataleleimmenes-apothikes/"
+        "https://www.in.gr/2026/08/15/economy/klimatiki-krisi-otan-i-oikonomia-douleyei-me-to-feggari-to-nyxterino-jet-lag-tis-ypaithrou/",
+        "https://www.in.gr/2026/08/15/sports/football/xintetosi-nakata-egkateleipse-to-podosfairo-gia-na-anakalypsei-tin-iaponia-vids/",
+        "https://www.in.gr/2026/08/15/go-fun/fizz/h-spania-dimosia-emfanisi-tou-mprous-gouilis-sto-gamo-tis-koris-tou/",
+        "https://www.in.gr/2026/08/15/world/to-rosiko-telesigrafo-stin-tourkia-gia-ta-amerikanika-opla-kai-o-neos-oukranikos-vallistikos-pyraylos/",
+        "https://www.in.gr/2026/08/15/sports/aneti-prokrisi-tou-xristou-ston-teliko-ton-100m-yptio-vid/"
       ],
-      "seen_at_utc": "2026-08-15T18:51:21.149871+00:00"
+      "seen_at_utc": "2026-08-15T19:17:02.829599+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T18:51:21.149980+00:00"
+  "updated_at_utc": "2026-08-15T19:17:02.829788+00:00"
 }
