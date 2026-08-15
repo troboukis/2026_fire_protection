@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564402433/arthro-toy-giorgoy-kalpadaki-stin-k-o-plithorismos-ton-politon/",
-      "title": "Αρθρο του Γιώργου Καλπαδάκη στην «Κ»: Ο πληθωρισμός των πωλητών",
-      "normalized_title": "ΑΡΘΡΟ ΤΟΥ ΓΙΩΡΓΟΥ ΚΑΛΠΑΔΑΚΗ ΣΤΗΝ «Κ»: Ο ΠΛΗΘΩΡΙΣΜΟΣ ΤΩΝ ΠΩΛΗΤΩΝ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564404467/galaktompoyreko-ikariotiko/",
+      "title": "Γαλακτομπούρεκο ικαριώτικο",
+      "normalized_title": "ΓΑΛΑΚΤΟΜΠΟΥΡΕΚΟ ΙΚΑΡΙΩΤΙΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564402433/arthro-toy-giorgoy-kalpadaki-stin-k-o-plithorismos-ton-politon/"
+        "https://www.kathimerini.gr/k/gastronomos/564404467/galaktompoyreko-ikariotiko/",
+        "https://www.kathimerini.gr/athletics/564404764/eyropaiko-protathlima-kolymvisis-o-christoy-ston-teliko-ton-100m-yptio-gia-na-synechisei-to-seri/",
+        "https://www.kathimerini.gr/culture/564402643/o-rolos-tis-askt-sti-choynta/"
       ],
-      "seen_at_utc": "2026-08-15T20:30:07.694533+00:00"
+      "seen_at_utc": "2026-08-15T20:51:10.264758+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,23 +1270,26 @@
       "seen_at_utc": "2026-08-15T20:17:06.124465+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448469/synehizetai-i-mahi-me-tis-floges-sti-skyro-enishyontai-oi-epigeies-dynameis-anamenetai-dyskoli-nyhta/",
-      "title": "Συνεχίζεται η μάχη με τις φλόγες στη Σκύρο: Ενισχύονται οι επίγειες δυνάμεις – Αναμένεται δύσκολη νύχτα",
-      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΤΗ ΣΚΥΡΟ: ΕΝΙΣΧΥΟΝΤΑΙ ΟΙ ΕΠΙΓΕΙΕΣ ΔΥΝΑΜΕΙΣ – ΑΝΑΜΕΝΕΤΑΙ ΔΥΣΚΟΛΗ ΝΥΧΤΑ",
+      "url": "https://www.efsyn.gr/ellada/1448475/pyrkagia-sti-voiotia-endeixeis-gia-sovares-astohies-sto-aioliko-parko-ti-edeixe-i-aytopsia/",
+      "title": "Πυρκαγιά στη Βοιωτία: Ενδείξεις για σοβαρές αστοχίες στο αιολικό πάρκο – Τι έδειξε η αυτοψία",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΒΟΙΩΤΙΑ: ΕΝΔΕΙΞΕΙΣ ΓΙΑ ΣΟΒΑΡΕΣ ΑΣΤΟΧΙΕΣ ΣΤΟ ΑΙΟΛΙΚΟ ΠΑΡΚΟ – ΤΙ ΕΔΕΙΞΕ Η ΑΥΤΟΨΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448469/synehizetai-i-mahi-me-tis-floges-sti-skyro-enishyontai-oi-epigeies-dynameis-anamenetai-dyskoli-nyhta/"
+        "https://www.efsyn.gr/ellada/1448475/pyrkagia-sti-voiotia-endeixeis-gia-sovares-astohies-sto-aioliko-parko-ti-edeixe-i-aytopsia/"
       ],
-      "seen_at_utc": "2026-08-15T20:17:06.124423+00:00"
+      "seen_at_utc": "2026-08-15T20:51:10.264828+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/energopoiithike-i-ypiresia-copernicus-tis-e-e-gia-tin-katagrafi-ton-kamenon-ektaseon-sti-skyro/",
-      "title": "Ενεργοποιήθηκε η υπηρεσία Copernicus της Ε.Ε. για την καταγραφή των καμένων εκτάσεων στη Σκύρο",
-      "normalized_title": "ΕΝΕΡΓΟΠΟΙΗΘΗΚΕ Η ΥΠΗΡΕΣΙΑ COPERNICUS ΤΗΣ Ε.Ε. ΓΙΑ ΤΗΝ ΚΑΤΑΓΡΑΦΗ ΤΩΝ ΚΑΜΕΝΩΝ ΕΚΤΑΣΕΩΝ ΣΤΗ ΣΚΥΡΟ",
+      "url": "https://www.in.gr/2026/08/15/in-science/technology/google-tha-epitrepei-tin-afairesi-tou-oratou-ydatografima-stis-ai-eikones/",
+      "title": "Η Google θα επιτρέπει την αφαίρεση του ορατού υδατογράφημα στις AI εικόνες",
+      "normalized_title": "Η GOOGLE ΘΑ ΕΠΙΤΡΕΠΕΙ ΤΗΝ ΑΦΑΙΡΕΣΗ ΤΟΥ ΟΡΑΤΟΥ ΥΔΑΤΟΓΡΑΦΗΜΑ ΣΤΙΣ AI ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/energopoiithike-i-ypiresia-copernicus-tis-e-e-gia-tin-katagrafi-ton-kamenon-ektaseon-sti-skyro/"
+        "https://www.in.gr/2026/08/15/in-science/technology/google-tha-epitrepei-tin-afairesi-tou-oratou-ydatografima-stis-ai-eikones/",
+        "https://www.in.gr/2026/08/15/economy/diethnis-oikonomia/oi-maskot-poloun-ta-panta-apo-ai-mexri-nero-vrysis/",
+        "https://www.in.gr/2026/08/15/sports/football/petkof-i-lefski-mporei-na-apokleisei-tin-aek/",
+        "https://www.in.gr/2026/08/15/world/erntogan-i-aigyptos-tha-mporouse-na-entaxthei-sti-symfonia-tis-mekkas/"
       ],
-      "seen_at_utc": "2026-08-15T20:30:07.694589+00:00"
+      "seen_at_utc": "2026-08-15T20:51:10.264804+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T20:30:07.694660+00:00"
+  "updated_at_utc": "2026-08-15T20:51:10.264908+00:00"
 }
