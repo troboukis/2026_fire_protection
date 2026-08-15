@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/istoria/564332146/to-ploio-poy-efere-tis-protes-kroyazieres-stin-ellada/",
-      "title": "Το πλοίο που έφερε τις πρώτες κρουαζιέρες στην Ελλάδα",
-      "normalized_title": "ΤΟ ΠΛΟΙΟ ΠΟΥ ΕΦΕΡΕ ΤΙΣ ΠΡΩΤΕΣ ΚΡΟΥΑΖΙΕΡΕΣ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.kathimerini.gr/world/564404323/ispania-seismos-5-vathmon-sti-granada-zimies-se-ktiria-kai-ochimata/",
+      "title": "Ισπανία: Σεισμός 5 βαθμών στη Γρανάδα – Ζημιές σε κτίρια και οχήματα",
+      "normalized_title": "ΙΣΠΑΝΙΑ: ΣΕΙΣΜΟΣ 5 ΒΑΘΜΩΝ ΣΤΗ ΓΡΑΝΑΔΑ – ΖΗΜΙΕΣ ΣΕ ΚΤΙΡΙΑ ΚΑΙ ΟΧΗΜΑΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/istoria/564332146/to-ploio-poy-efere-tis-protes-kroyazieres-stin-ellada/",
-        "https://www.kathimerini.gr/society/564404317/tinos-ogdonta-exi-chronia-apo-ton-torpilismo-tis-ellis-to-chroniko/",
-        "https://www.kathimerini.gr/society/564404311/dekapentaygoystos-ayximeni-i-exodos-apo-ta-limania-para-ta-provlimata/"
+        "https://www.kathimerini.gr/world/564404323/ispania-seismos-5-vathmon-sti-granada-zimies-se-ktiria-kai-ochimata/",
+        "https://www.kathimerini.gr/society/564404329/pethane-o-stefanos-manos/"
       ],
-      "seen_at_utc": "2026-08-15T07:17:01.399166+00:00"
+      "seen_at_utc": "2026-08-15T07:30:03.515939+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,14 +1260,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865120/dekapedaugoustos-73-anahoriseis-me-21893-epivates-apo-ton-peiraia/?utm_source=rss",
-      "title": "Δεκαπενταύγουστος: 73 αναχωρήσεις με 21.893 επιβάτες από τον Πειραιά",
-      "normalized_title": "ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΣ: 73 ΑΝΑΧΩΡΗΣΕΙΣ ΜΕ 21.893 ΕΠΙΒΑΤΕΣ ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1865150/skertsos-gia-stefano-mano-ton-apohairetoume-me-sevasmo-gia-ti-diakriti-trohia-pou-haraxe-sta-dimosia-pragmata/?utm_source=rss",
+      "title": "Σκέρτσος για Στέφανο Μάνο: Τον αποχαιρετούμε με σεβασμό για τη διακριτή τροχιά που χάραξε στα δημόσια πράγματα έως το τέλος",
+      "normalized_title": "ΣΚΕΡΤΣΟΣ ΓΙΑ ΣΤΕΦΑΝΟ ΜΑΝΟ: ΤΟΝ ΑΠΟΧΑΙΡΕΤΟΥΜΕ ΜΕ ΣΕΒΑΣΜΟ ΓΙΑ ΤΗ ΔΙΑΚΡΙΤΗ ΤΡΟΧΙΑ ΠΟΥ ΧΑΡΑΞΕ ΣΤΑ ΔΗΜΟΣΙΑ ΠΡΑΓΜΑΤΑ ΕΩΣ ΤΟ ΤΕΛΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865120/dekapedaugoustos-73-anahoriseis-me-21893-epivates-apo-ton-peiraia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865114/anastatosi-se-taverna-stin-euvoia-apo-fidi-pou-pernouse-kato-apo-ta-trapezia-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865150/skertsos-gia-stefano-mano-ton-apohairetoume-me-sevasmo-gia-ti-diakriti-trohia-pou-haraxe-sta-dimosia-pragmata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T06:17:06.035774+00:00"
+      "seen_at_utc": "2026-08-15T07:30:03.516007+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/politiki/1448270/pethane-se-ilikia-87-eton-o-stefanos-manos/",
@@ -1281,22 +1279,14 @@
       "seen_at_utc": "2026-08-15T07:17:01.399237+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/pethane-o-stefanos-manos/",
-      "title": "Πέθανε ο Στέφανος Μάνος",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ",
+      "url": "https://www.in.gr/2026/08/15/auto/trakares-sto-gkaraz-ploiou-ti-prepei-na-kaneis/",
+      "title": "Τράκαρες στο γκαράζ πλοίου; Τι πρέπει να κάνεις",
+      "normalized_title": "ΤΡΑΚΑΡΕΣ ΣΤΟ ΓΚΑΡΑΖ ΠΛΟΙΟΥ; ΤΙ ΠΡΕΠΕΙ ΝΑ ΚΑΝΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/pethane-o-stefanos-manos/",
-        "https://www.in.gr/2026/08/15/sports/on-field/vroxi-apo-ekatommyria-kai-asteria-stin-tourkia-alla-poso-tha-anteksoun/",
-        "https://www.in.gr/2026/08/15/greece/dekapentaygoustos-ayksimeni-anamenetai-i-epivatiki-kinisi-sta-limania-tis-attikis-para-tous-periorismous/",
-        "https://www.in.gr/2026/08/15/greece/protathlitria-eyropis-stous-pyrosvestes-i-ellada-alla-mono-sta-xartia-ti-symvainei-pragmatika/",
-        "https://www.in.gr/2026/08/15/life/dekapentaygoustos-kai-elliniko-sinema-thayma-pisti-kai-katanyksi-apo-ton-kakogianni-ston-giannari/",
-        "https://www.in.gr/2026/08/15/health/kai-omos-i-pliksi-kanei-kalo-pos-i-ania-mporei-na-apodeixthei-ofelimi/",
-        "https://www.in.gr/2026/08/15/pet-stories/pos-na-katalavete-oti-enas-skylos-einai-etoimos-na-dagkosei/",
-        "https://www.in.gr/2026/08/15/go-fun/fizz/ta-diasima-zeygaria-pou-pantreytikan-dyo-fores-mazi-den-ekanan-kai-xoria-de-mporousan/",
-        "https://www.in.gr/2026/08/15/stories/ta-erotimata-gia-ton-thanato-tou-kathigiti-pou-paraitithike-apo-to-keimpritz-meta-tis-kataggelies-gia-logoklopi/"
+        "https://www.in.gr/2026/08/15/auto/trakares-sto-gkaraz-ploiou-ti-prepei-na-kaneis/"
       ],
-      "seen_at_utc": "2026-08-15T07:17:01.399207+00:00"
+      "seen_at_utc": "2026-08-15T07:30:03.515970+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T07:17:01.399327+00:00"
+  "updated_at_utc": "2026-08-15T07:30:03.516069+00:00"
 }
