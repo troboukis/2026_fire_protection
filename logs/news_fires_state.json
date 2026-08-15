@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564402424/mpotiliarisma-soyper-giot-se-ionio-aigaio/",
-      "title": "Μποτιλιάρισμα σούπερ γιοτ σε Ιόνιο, Αιγαίο",
-      "normalized_title": "ΜΠΟΤΙΛΙΑΡΙΣΜΑ ΣΟΥΠΕΡ ΓΙΟΤ ΣΕ ΙΟΝΙΟ, ΑΙΓΑΙΟ",
+      "url": "https://www.kathimerini.gr/politics/564404341/ta-minymata-ton-politikon-gia-tin-eorti-toy-dekapentaygoystoy/",
+      "title": "Τα μηνύματα των πολιτικών για την εορτή του Δεκαπενταύγουστου",
+      "normalized_title": "ΤΑ ΜΗΝΥΜΑΤΑ ΤΩΝ ΠΟΛΙΤΙΚΩΝ ΓΙΑ ΤΗΝ ΕΟΡΤΗ ΤΟΥ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564402424/mpotiliarisma-soyper-giot-se-ionio-aigaio/"
+        "https://www.kathimerini.gr/politics/564404341/ta-minymata-ton-politikon-gia-tin-eorti-toy-dekapentaygoystoy/"
       ],
-      "seen_at_utc": "2026-08-15T08:17:14.466519+00:00"
+      "seen_at_utc": "2026-08-15T08:30:02.982325+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,26 +1268,26 @@
       "seen_at_utc": "2026-08-15T08:17:14.466626+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448287/rethymno-oriothetimeni-kai-horis-energa-metopa-i-pyrkagia-stin-periohi-ton-sellion/",
-      "title": "Ρέθυμνο: Οριοθετημένη και χωρίς ενεργά μέτωπα η πυρκαγιά στην περιοχή των Σελλίων",
-      "normalized_title": "ΡΕΘΥΜΝΟ: ΟΡΙΟΘΕΤΗΜΕΝΗ ΚΑΙ ΧΩΡΙΣ ΕΝΕΡΓΑ ΜΕΤΩΠΑ Η ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΤΩΝ ΣΕΛΛΙΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1448292/o-adonis-ta-vazei-me-toys-galloys-dikastes-kai-kataggellei-ton-akrato-dikaiomatismo/",
+      "title": "Ο Αδωνις τα βάζει με τους Γάλλους δικαστές και καταγγέλλει τον «άκρατο δικαίωματισμο» ;",
+      "normalized_title": "Ο ΑΔΩΝΙΣ ΤΑ ΒΑΖΕΙ ΜΕ ΤΟΥΣ ΓΑΛΛΟΥΣ ΔΙΚΑΣΤΕΣ ΚΑΙ ΚΑΤΑΓΓΕΛΛΕΙ ΤΟΝ «ΑΚΡΑΤΟ ΔΙΚΑΙΩΜΑΤΙΣΜΟ» ;",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448287/rethymno-oriothetimeni-kai-horis-energa-metopa-i-pyrkagia-stin-periohi-ton-sellion/",
-        "https://www.efsyn.gr/stiles/1447663/to-pasok-ypo-tin-apeili-ton-9-rihter/",
-        "https://www.efsyn.gr/ellada/1448284/nayplio-syllipsi-54hronoy-gia-sexoyaliki-parenohlisi-44hronis-se-katamaran/"
+        "https://www.efsyn.gr/politiki/1448292/o-adonis-ta-vazei-me-toys-galloys-dikastes-kai-kataggellei-ton-akrato-dikaiomatismo/",
+        "https://www.efsyn.gr/stiles/1447673/i-themeliodis-anthektikotita-tis-ellinikis-oikonomias/",
+        "https://www.efsyn.gr/politiki/1448289/dekapentaygoystos-ta-minymata-ton-politikon-gia-ti-megali-giorti/"
       ],
-      "seen_at_utc": "2026-08-15T08:17:14.466607+00:00"
+      "seen_at_utc": "2026-08-15T08:30:02.982436+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/politics/epikairotita/androulakis-me-elpida-kai-enotita-mporoume-na-xtisoume-mia-ellada-pio-dynati-kai-mia-koinonia-pio-dikaii/",
-      "title": "Ανδρουλάκης: Με ελπίδα και ενότητα, μπορούμε να χτίσουμε μια Ελλάδα πιο δυνατή και μια κοινωνία πιο δίκαιη",
-      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: ΜΕ ΕΛΠΙΔΑ ΚΑΙ ΕΝΟΤΗΤΑ, ΜΠΟΡΟΥΜΕ ΝΑ ΧΤΙΣΟΥΜΕ ΜΙΑ ΕΛΛΑΔΑ ΠΙΟ ΔΥΝΑΤΗ ΚΑΙ ΜΙΑ ΚΟΙΝΩΝΙΑ ΠΙΟ ΔΙΚΑΙΗ",
+      "url": "https://www.in.gr/2026/08/15/world/ipa-sto-kokkino-ta-pliromata-ton-aeroplanoforon-martyries-nayton-gia-athlies-synthikes-kai-elleipseis-vasikon-eidon/",
+      "title": "Μαρτυρίες ναυτών για άθλιες συνθήκες και ελλείψεις βασικών ειδών σε αεροπλανοφόρα των ΗΠΑ - Στο «κόκκινο» τα πληρώματα",
+      "normalized_title": "ΜΑΡΤΥΡΙΕΣ ΝΑΥΤΩΝ ΓΙΑ ΑΘΛΙΕΣ ΣΥΝΘΗΚΕΣ ΚΑΙ ΕΛΛΕΙΨΕΙΣ ΒΑΣΙΚΩΝ ΕΙΔΩΝ ΣΕ ΑΕΡΟΠΛΑΝΟΦΟΡΑ ΤΩΝ ΗΠΑ - ΣΤΟ «ΚΟΚΚΙΝΟ» ΤΑ ΠΛΗΡΩΜΑΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/politics/epikairotita/androulakis-me-elpida-kai-enotita-mporoume-na-xtisoume-mia-ellada-pio-dynati-kai-mia-koinonia-pio-dikaii/",
-        "https://www.in.gr/2026/08/15/go-fun/spider-man-i-zentagia-aporriptei-ton-syzygo-tis-tom-xolant-se-diagonismo-gia-sosies/"
+        "https://www.in.gr/2026/08/15/world/ipa-sto-kokkino-ta-pliromata-ton-aeroplanoforon-martyries-nayton-gia-athlies-synthikes-kai-elleipseis-vasikon-eidon/",
+        "https://www.in.gr/2026/08/15/sports/football/to-apithano-ntempouto-tou-kyziridi-stin-tsoroum-me-gkolara-kai-apovoli-vids/"
       ],
-      "seen_at_utc": "2026-08-15T08:17:14.466581+00:00"
+      "seen_at_utc": "2026-08-15T08:30:02.982388+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T08:17:14.466736+00:00"
+  "updated_at_utc": "2026-08-15T08:30:02.982507+00:00"
 }
