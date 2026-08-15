@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564404650/fotia-stis-vamvakes-korinthias-sikothikan-ochto-enaeria/",
-      "title": "Φωτιά στις Βαμβακές Κορινθίας, σηκώθηκαν οχτώ εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΙΣ ΒΑΜΒΑΚΕΣ ΚΟΡΙΝΘΙΑΣ, ΣΗΚΩΘΗΚΑΝ ΟΧΤΩ ΕΝΑΕΡΙΑ",
+      "url": "https://www.kathimerini.gr/politics/564404641/osa-egrafe-kai-elege-o-stefanos-manos-stin-k-oi-paremvaseis-kai-oi-idees-toy/",
+      "title": "Οσα έγραφε και έλεγε ο Στέφανος Μάνος στην «Κ»: Οι παρεμβάσεις και οι ιδέες του",
+      "normalized_title": "ΟΣΑ ΕΓΡΑΦΕ ΚΑΙ ΕΛΕΓΕ Ο ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ ΣΤΗΝ «Κ»: ΟΙ ΠΑΡΕΜΒΑΣΕΙΣ ΚΑΙ ΟΙ ΙΔΕΕΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564404650/fotia-stis-vamvakes-korinthias-sikothikan-ochto-enaeria/",
-        "https://www.kathimerini.gr/world/564404626/i-techerani-zita-tin-apeleytherosi-trion-piloton-poy-aichmalotistikan-sto-katar/"
+        "https://www.kathimerini.gr/politics/564404641/osa-egrafe-kai-elege-o-stefanos-manos-stin-k-oi-paremvaseis-kai-oi-idees-toy/",
+        "https://www.kathimerini.gr/society/reportaz/564396334/pyrkagies-oi-siopiles-chelones-kai-i-tycheri-koyroyna/",
+        "https://www.kathimerini.gr/society/564404653/fotia-ston-xiropotamo-samothrakis-minyma-112-gia-etoimotita/"
       ],
-      "seen_at_utc": "2026-08-15T15:51:50.306496+00:00"
+      "seen_at_utc": "2026-08-15T16:17:50.443880+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,40 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865295/fotia-tora-ston-xiropotamo-samothrakis-112-gia-etoimotita-epiheiroun-1-elikoptero-kai-3-aeroskafi/?utm_source=rss",
-      "title": "Φωτιά στον Ξηροπόταμο Σαμοθράκης: 112 για ετοιμότητα, επιχειρούν 1 ελικόπτερο και 3 αεροσκάφη",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΞΗΡΟΠΟΤΑΜΟ ΣΑΜΟΘΡΑΚΗΣ: 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ, ΕΠΙΧΕΙΡΟΥΝ 1 ΕΛΙΚΟΠΤΕΡΟ ΚΑΙ 3 ΑΕΡΟΣΚΑΦΗ",
+      "url": "https://www.protothema.gr/greece/article/1865301/apoluthike-o-odigos-taxi-pou-xulokopise-ton-upallilo-etaireias-enoikiasis-autokiniton-stin-paro/?utm_source=rss",
+      "title": "Απολύθηκε ο οδηγός ταξί που ξυλοκόπησε τον υπάλληλο εταιρείας ενοικίασης αυτοκινήτων στην Πάρο: «Τελείωσε από την επιχείρησή μου» λέει ο εργοδότης του",
+      "normalized_title": "ΑΠΟΛΥΘΗΚΕ Ο ΟΔΗΓΟΣ ΤΑΞΙ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΤΟΝ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΕΝΟΙΚΙΑΣΗΣ ΑΥΤΟΚΙΝΗΤΩΝ ΣΤΗΝ ΠΑΡΟ: «ΤΕΛΕΙΩΣΕ ΑΠΟ ΤΗΝ ΕΠΙΧΕΙΡΗΣΗ ΜΟΥ» ΛΕΕΙ Ο ΕΡΓΟΔΟΤΗΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865295/fotia-tora-ston-xiropotamo-samothrakis-112-gia-etoimotita-epiheiroun-1-elikoptero-kai-3-aeroskafi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865294/kataigida-sti-mani-plimmurisan-dromoi-kai-spitia-stin-alupa-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865301/apoluthike-o-odigos-taxi-pou-xulokopise-ton-upallilo-etaireias-enoikiasis-autokiniton-stin-paro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T15:51:50.306616+00:00"
+      "seen_at_utc": "2026-08-15T16:17:50.443981+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448428/ekryvan-324-kila-kannavis-mesa-se-anakyklosima-ylika-pano-apo-700-000-eyro-to-kerdos/",
-      "title": "Έκρυβαν 324 κιλά κάνναβης μέσα σε ανακυκλώσιμα υλικά – Πάνω από 700.000 ευρώ το κέρδος",
-      "normalized_title": "ΕΚΡΥΒΑΝ 324 ΚΙΛΑ ΚΑΝΝΑΒΗΣ ΜΕΣΑ ΣΕ ΑΝΑΚΥΚΛΩΣΙΜΑ ΥΛΙΚΑ – ΠΑΝΩ ΑΠΟ 700.000 ΕΥΡΩ ΤΟ ΚΕΡΔΟΣ",
+      "url": "https://www.efsyn.gr/stiles/1447738/ampntoyl-el-sagent-enas-ypopsifios-ton-dimokratikon-me-taytotita/",
+      "title": "Αμπντούλ ελ Σαγέντ: Ενας υποψήφιος των Δημοκρατικών με «ταυτότητα»",
+      "normalized_title": "ΑΜΠΝΤΟΥΛ ΕΛ ΣΑΓΕΝΤ: ΕΝΑΣ ΥΠΟΨΗΦΙΟΣ ΤΩΝ ΔΗΜΟΚΡΑΤΙΚΩΝ ΜΕ «ΤΑΥΤΟΤΗΤΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448428/ekryvan-324-kila-kannavis-mesa-se-anakyklosima-ylika-pano-apo-700-000-eyro-to-kerdos/",
-        "https://www.efsyn.gr/gallery/pos-einai-apo-mesa-9/",
-        "https://www.efsyn.gr/gallery/h-eis-ton-ps-9/",
-        "https://www.efsyn.gr/gallery/to-lexiko-tis-krisis-10/",
-        "https://www.efsyn.gr/gallery/enas-mangka-gatos-me-onoma-skyloy/",
-        "https://www.efsyn.gr/gallery/mia-eikona-350-lexeis/"
+        "https://www.efsyn.gr/stiles/1447738/ampntoyl-el-sagent-enas-ypopsifios-ton-dimokratikon-me-taytotita/",
+        "https://www.efsyn.gr/ellada/1448433/pyrkagia-sti-samothraki-ihise-to-112-parameinete-se-etoimotita/"
       ],
-      "seen_at_utc": "2026-08-15T15:51:50.306583+00:00"
+      "seen_at_utc": "2026-08-15T16:17:50.443946+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/fotia-sti-samothraki-minyma-apo-to-112/",
-      "title": "Φωτιά στη Σαμοθράκη – Μήνυμα από το 112",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΑΜΟΘΡΑΚΗ – ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112",
+      "url": "https://www.in.gr/2026/08/15/in-science/space/i-megali-siopi-pou-einai-oi-eksogiinoi-giati-den-tous-exoun-vrei-akoma/",
+      "title": "Η μεγάλη σιωπή: Πού είναι οι εξωγήινοι; – Γιατί δεν τους έχουν βρει ακόμα;",
+      "normalized_title": "Η ΜΕΓΑΛΗ ΣΙΩΠΗ: ΠΟΥ ΕΙΝΑΙ ΟΙ ΕΞΩΓΗΙΝΟΙ; – ΓΙΑΤΙ ΔΕΝ ΤΟΥΣ ΕΧΟΥΝ ΒΡΕΙ ΑΚΟΜΑ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/fotia-sti-samothraki-minyma-apo-to-112/",
-        "https://www.in.gr/2026/08/15/greece/fotia-stis-vamvakes-korinthias-sikothikan-8-enaeria-mesa/",
-        "https://www.in.gr/2026/08/15/sports/football/i-apollo-mpainei-stous-niou-giork-giankis/"
+        "https://www.in.gr/2026/08/15/in-science/space/i-megali-siopi-pou-einai-oi-eksogiinoi-giati-den-tous-exoun-vrei-akoma/",
+        "https://www.in.gr/2026/08/15/economy/oikonomikes-eidiseis/akriveia-taksideyontas-me-to-vlemma-ston-deikti-ton-kaysimon-to-ektimomeno-kostos-se-dimofileis-proorismous/",
+        "https://www.in.gr/2026/08/15/sports/on-field/sto-stoxastro-tis-mantsester-giounaitent-to-teras/",
+        "https://www.in.gr/2026/08/15/economy/diethnis-oikonomia/i-siopili-epistrofi-tis-litotitas-pos-ta-ypsila-epitokia-straggalizoun-ta-kratika-tameia-pagkosmios/",
+        "https://www.in.gr/2026/08/15/life/culture-live/to-met-parousiazei-sto-koino-enan-papyro-tis-odysseias/"
       ],
-      "seen_at_utc": "2026-08-15T15:51:50.306544+00:00"
+      "seen_at_utc": "2026-08-15T16:17:50.443924+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T15:51:50.306722+00:00"
+  "updated_at_utc": "2026-08-15T16:17:50.444067+00:00"
 }
