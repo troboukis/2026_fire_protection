@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404572/h-petrelaiokilida-efthase-stis-aktes-toy-oman-rypansi-se-12-chiliometra-akton/",
-      "title": "H πετρελαιοκηλίδα έφθασε στις ακτές του Ομάν – Ρύπανση σε 12 χιλιόμετρα ακτών",
-      "normalized_title": "H ΠΕΤΡΕΛΑΙΟΚΗΛΙΔΑ ΕΦΘΑΣΕ ΣΤΙΣ ΑΚΤΕΣ ΤΟΥ ΟΜΑΝ – ΡΥΠΑΝΣΗ ΣΕ 12 ΧΙΛΙΟΜΕΤΡΑ ΑΚΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/564404758/mani-protognori-katastasi-gia-tin-periochi-mas-zimies-se-spitia-kai-odiko-diktyo/",
+      "title": "Πλημμύρες στη Μάνη: «Πρωτόγνωρη κατάσταση για την περιοχή μας, ζημιές σε σπίτια και οδικό δίκτυο»",
+      "normalized_title": "ΠΛΗΜΜΥΡΕΣ ΣΤΗ ΜΑΝΗ: «ΠΡΩΤΟΓΝΩΡΗ ΚΑΤΑΣΤΑΣΗ ΓΙΑ ΤΗΝ ΠΕΡΙΟΧΗ ΜΑΣ, ΖΗΜΙΕΣ ΣΕ ΣΠΙΤΙΑ ΚΑΙ ΟΔΙΚΟ ΔΙΚΤΥΟ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404572/h-petrelaiokilida-efthase-stis-aktes-toy-oman-rypansi-se-12-chiliometra-akton/"
+        "https://www.kathimerini.gr/society/564404758/mani-protognori-katastasi-gia-tin-periochi-mas-zimies-se-spitia-kai-odiko-diktyo/",
+        "https://www.kathimerini.gr/k/gastronomos/564404461/smyrnaiiko-atzem-pilafi-apo-tin-eyi-voytsina/"
       ],
-      "seen_at_utc": "2026-08-15T19:29:56.915058+00:00"
+      "seen_at_utc": "2026-08-15T19:51:09.959098+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,23 +1269,25 @@
       "seen_at_utc": "2026-08-15T19:29:56.915197+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1448465/elas-gia-indonisia-den-mporoyn-na-apotrapoyn-ta-fysika-fainomena-mporoyn-omos-na-perioristoyn-oi-katastrofes-toys/",
-      "title": "ΕΛΑΣ για Ινδονησία: Δεν μπορούν να αποτραπούν τα φυσικά φαινόμενα, μπορούν όμως να περιοριστούν οι καταστροφές τους",
-      "normalized_title": "ΕΛΑΣ ΓΙΑ ΙΝΔΟΝΗΣΙΑ: ΔΕΝ ΜΠΟΡΟΥΝ ΝΑ ΑΠΟΤΡΑΠΟΥΝ ΤΑ ΦΥΣΙΚΑ ΦΑΙΝΟΜΕΝΑ, ΜΠΟΡΟΥΝ ΟΜΩΣ ΝΑ ΠΕΡΙΟΡΙΣΤΟΥΝ ΟΙ ΚΑΤΑΣΤΡΟΦΕΣ ΤΟΥΣ",
+      "url": "https://www.efsyn.gr/ellada/1448467/paros-apolythike-o-odigos-taxi-poy-xylokopise-ypallilo-etaireias-gia-mia-thesi-parkingk/",
+      "title": "Πάρος: Απολύθηκε ο οδηγός ταξί που ξυλοκόπησε υπάλληλο εταιρείας για μια θέση πάρκινγκ",
+      "normalized_title": "ΠΑΡΟΣ: ΑΠΟΛΥΘΗΚΕ Ο ΟΔΗΓΟΣ ΤΑΞΙ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΥΠΑΛΛΗΛΟ ΕΤΑΙΡΕΙΑΣ ΓΙΑ ΜΙΑ ΘΕΣΗ ΠΑΡΚΙΝΓΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1448465/elas-gia-indonisia-den-mporoyn-na-apotrapoyn-ta-fysika-fainomena-mporoyn-omos-na-perioristoyn-oi-katastrofes-toys/"
+        "https://www.efsyn.gr/ellada/1448467/paros-apolythike-o-odigos-taxi-poy-xylokopise-ypallilo-etaireias-gia-mia-thesi-parkingk/"
       ],
-      "seen_at_utc": "2026-08-15T19:29:56.915159+00:00"
+      "seen_at_utc": "2026-08-15T19:51:09.959195+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/world/livanos-me-antipoina-apeilei-i-xezmpolax-meta-tis-simerines-fonikes-epitheseis-tou-israil/",
-      "title": "Με αντίποινα απειλεί η Χεζμπολάχ μετά τις σημερινές φονικές επιθέσεις του Ισραήλ στον Λίβανο",
-      "normalized_title": "ΜΕ ΑΝΤΙΠΟΙΝΑ ΑΠΕΙΛΕΙ Η ΧΕΖΜΠΟΛΑΧ ΜΕΤΑ ΤΙΣ ΣΗΜΕΡΙΝΕΣ ΦΟΝΙΚΕΣ ΕΠΙΘΕΣΕΙΣ ΤΟΥ ΙΣΡΑΗΛ ΣΤΟΝ ΛΙΒΑΝΟ",
+      "url": "https://www.in.gr/2026/08/15/world/netaniaxou-epainoi-pros-ton-kolomviano-akrodeksio-proedro-gia-tis-filoisrailines-theseis-tou/",
+      "title": "Έπαινοι Νετανιάχου προς τον Κολομβιανό ακροδεξιό πρόεδρο για τις φιλοϊσραηλινές θέσεις του",
+      "normalized_title": "ΕΠΑΙΝΟΙ ΝΕΤΑΝΙΑΧΟΥ ΠΡΟΣ ΤΟΝ ΚΟΛΟΜΒΙΑΝΟ ΑΚΡΟΔΕΞΙΟ ΠΡΟΕΔΡΟ ΓΙΑ ΤΙΣ ΦΙΛΟΙΣΡΑΗΛΙΝΕΣ ΘΕΣΕΙΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/world/livanos-me-antipoina-apeilei-i-xezmpolax-meta-tis-simerines-fonikes-epitheseis-tou-israil/"
+        "https://www.in.gr/2026/08/15/world/netaniaxou-epainoi-pros-ton-kolomviano-akrodeksio-proedro-gia-tis-filoisrailines-theseis-tou/",
+        "https://www.in.gr/2026/08/15/sports/on-field/i-arsenal-dinei-resta-gia-osimen/",
+        "https://www.in.gr/2026/08/15/greece/dyskoli-nyxta-sti-skyro-enisxyontai-oi-epigeies-dynameis-sto-nisi-se-pykno-dasos-to-pyrino-metopo/"
       ],
-      "seen_at_utc": "2026-08-15T19:29:56.915110+00:00"
+      "seen_at_utc": "2026-08-15T19:51:09.959158+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T19:29:56.915275+00:00"
+  "updated_at_utc": "2026-08-15T19:51:09.959283+00:00"
 }
