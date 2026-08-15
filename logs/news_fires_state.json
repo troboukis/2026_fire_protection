@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564404482/thessaloniki-synelifthi-57chronos-me-pano-apo-45-kila-kannavis/",
-      "title": "Θεσσαλονίκη: Συνελήφθη 57χρονος με πάνω από 45 κιλά κάνναβης",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 57ΧΡΟΝΟΣ ΜΕ ΠΑΝΩ ΑΠΟ 45 ΚΙΛΑ ΚΑΝΝΑΒΗΣ",
+      "url": "https://www.kathimerini.gr/society/564404503/sygkroysi-thalamigoy-me-ellimenismena-skafi-stin-aigina-den-anaferthikan-traymatismoi/",
+      "title": "Σύγκρουση θαλαμηγού με ελλιμενισμένα σκάφη στην Αίγινα – Δεν αναφέρθηκαν τραυματισμοί",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΘΑΛΑΜΗΓΟΥ ΜΕ ΕΛΛΙΜΕΝΙΣΜΕΝΑ ΣΚΑΦΗ ΣΤΗΝ ΑΙΓΙΝΑ – ΔΕΝ ΑΝΑΦΕΡΘΗΚΑΝ ΤΡΑΥΜΑΤΙΣΜΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564404482/thessaloniki-synelifthi-57chronos-me-pano-apo-45-kila-kannavis/",
-        "https://www.kathimerini.gr/politics/564404476/o-politikos-kosmos-apochaireta-ton-stefano-mano/"
+        "https://www.kathimerini.gr/society/564404503/sygkroysi-thalamigoy-me-ellimenismena-skafi-stin-aigina-den-anaferthikan-traymatismoi/",
+        "https://www.kathimerini.gr/opinion/geyma-me-thn-k/564402259/nikos-argyris-marilena-panoyrgia-den-thelame-o-ikaros-na-ginei-moyseio/",
+        "https://www.kathimerini.gr/politics/564404494/tasoylas-na-anagnorisei-kai-i-toyrkia-ti-genoktonia-ton-pontion/"
       ],
-      "seen_at_utc": "2026-08-15T11:51:08.444157+00:00"
+      "seen_at_utc": "2026-08-15T12:17:20.014473+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865242/to-3rd-digital-beach-summit-epistrefei-stis-28-kai-29-augoustou-me-nea-thematiki-ai-sgc-in-digital-green-era/?utm_source=rss",
-      "title": "Το 3rd Digital Beach Summit επιστρέφει στις 28 και 29 Αυγούστου με νέα θεματική «AI SGC in Digital Green Era»",
-      "normalized_title": "ΤΟ 3RD DIGITAL BEACH SUMMIT ΕΠΙΣΤΡΕΦΕΙ ΣΤΙΣ 28 ΚΑΙ 29 ΑΥΓΟΥΣΤΟΥ ΜΕ ΝΕΑ ΘΕΜΑΤΙΚΗ «AI SGC IN DIGITAL GREEN ERA»",
+      "url": "https://www.protothema.gr/greece/article/1865253/amesa-stin-athina-o-froiler-gia-na-oloklirosei-ti-metagrafi-tou-ston-olubiako/?utm_source=rss",
+      "title": "Άμεσα στην Αθήνα ο Φρόιλερ για να ολοκληρώσει τη μεταγραφή του στον Ολυμπιακό",
+      "normalized_title": "ΑΜΕΣΑ ΣΤΗΝ ΑΘΗΝΑ Ο ΦΡΟΙΛΕΡ ΓΙΑ ΝΑ ΟΛΟΚΛΗΡΩΣΕΙ ΤΗ ΜΕΤΑΓΡΑΦΗ ΤΟΥ ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865242/to-3rd-digital-beach-summit-epistrefei-stis-28-kai-29-augoustou-me-nea-thematiki-ai-sgc-in-digital-green-era/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865253/amesa-stin-athina-o-froiler-gia-na-oloklirosei-ti-metagrafi-tou-ston-olubiako/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865251/poli-fadasma-i-athina-ton-dekapedaugousto-plana-apo-drone-se-erimous-dromous-kai-plateies-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865247/listeia-sti-sparti-koukouloforoi-eisevalan-se-spiti-63hronou-kai-tis-90hronis-miteras-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T11:51:08.444246+00:00"
+      "seen_at_utc": "2026-08-15T12:17:20.014554+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448361/eyropaiko-protathlima-i-ntrismpioti-4i-ston-marathonio-vadin-5i-i-tsinopoyloy/",
-      "title": "Ευρωπαϊκό Πρωτάθλημα: Η Ντρισμπιώτη 4η στον Μαραθώνιο βάδην, 5η η Τσινοπούλου",
-      "normalized_title": "ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ: Η ΝΤΡΙΣΜΠΙΩΤΗ 4Η ΣΤΟΝ ΜΑΡΑΘΩΝΙΟ ΒΑΔΗΝ, 5Η Η ΤΣΙΝΟΠΟΥΛΟΥ",
+      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-john-antono-13-08-2025/",
+      "title": "Σκίτσο της Εφ.Συν. [John Antono 13.08.2025]",
+      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [JOHN ANTONO 13.08.2025]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448361/eyropaiko-protathlima-i-ntrismpioti-4i-ston-marathonio-vadin-5i-i-tsinopoyloy/",
-        "https://www.efsyn.gr/kosmos/1448357/oles-oi-periohes-poy-thelei-na-prosartisei-o-tramp-apo-ti-grilandia-sta-stena-toy-ormoyz/"
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-john-antono-13-08-2025/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-arheio-4/",
+        "https://www.efsyn.gr/ellada/1448378/fotia-sto-koropi-epiheiroyn-ishyres-pyrosvestikes-dynameis-kai-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1448375/poli-fantasma-i-athina-ton-dekapentaygoysto-entyposiakes-eikones-apo-drone-vinteo/",
+        "https://www.efsyn.gr/ellada/1448373/sygkroysi-thalamigoy-me-ellimenismena-skafi-stin-aigina-den-anaferthikan-traymatismoi/",
+        "https://www.efsyn.gr/politiki/1448364/dekapentaygoystos-stin-panagia-soymela-o-proedros-tis-dimokratias-to-minyma-gia-ti-genoktonia-ton-pontion/"
       ],
-      "seen_at_utc": "2026-08-15T11:51:08.444219+00:00"
+      "seen_at_utc": "2026-08-15T12:17:20.014533+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/15/greece/pyrkagia-tora-sto-koropi-sikothikan-enaeria/",
-      "title": "Πυρκαγιά τώρα στο Κορωπί – Σηκώθηκαν εναέρια",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΤΩΡΑ ΣΤΟ ΚΟΡΩΠΙ – ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/08/15/sports/football/ta-vrikan-aris-kai-velio-tin-kyriaki-sti-thessaloniki-o-portogalos/",
+      "title": "Τα βρήκαν Άρης και Βέλιο – Την Κυριακή στη Θεσσαλονίκη ο Πορτογάλος",
+      "normalized_title": "ΤΑ ΒΡΗΚΑΝ ΑΡΗΣ ΚΑΙ ΒΕΛΙΟ – ΤΗΝ ΚΥΡΙΑΚΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ Ο ΠΟΡΤΟΓΑΛΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/15/greece/pyrkagia-tora-sto-koropi-sikothikan-enaeria/"
+        "https://www.in.gr/2026/08/15/sports/football/ta-vrikan-aris-kai-velio-tin-kyriaki-sti-thessaloniki-o-portogalos/",
+        "https://www.in.gr/2026/08/15/go-fun/fizz/to-elliniko-kalokairi-tis-emili-rataikofski-einai-erotas/"
       ],
-      "seen_at_utc": "2026-08-15T11:51:08.444197+00:00"
+      "seen_at_utc": "2026-08-15T12:17:20.014515+00:00"
     }
   },
-  "updated_at_utc": "2026-08-15T11:51:08.444332+00:00"
+  "updated_at_utc": "2026-08-15T12:17:20.014631+00:00"
 }
