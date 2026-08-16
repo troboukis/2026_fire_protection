@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564402448/apo-tis-serres-stis-agores-oloy-toy-kosmoy-i-kri-kri/",
-      "title": "Από τις Σέρρες στις αγορές όλου του κόσμου η Κρι Κρι",
-      "normalized_title": "ΑΠΟ ΤΙΣ ΣΕΡΡΕΣ ΣΤΙΣ ΑΓΟΡΕΣ ΟΛΟΥ ΤΟΥ ΚΟΣΜΟΥ Η ΚΡΙ ΚΡΙ",
+      "url": "https://www.kathimerini.gr/society/564405163/salamina-ragdaia-exaplosi-tis-fotias-mesa-se-7-lepta-eikones/",
+      "title": "Σαλαμίνα: Ραγδαία εξάπλωση της φωτιάς μέσα σε 7 λεπτά [εικόνες]",
+      "normalized_title": "ΣΑΛΑΜΙΝΑ: ΡΑΓΔΑΙΑ ΕΞΑΠΛΩΣΗ ΤΗΣ ΦΩΤΙΑΣ ΜΕΣΑ ΣΕ 7 ΛΕΠΤΑ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564402448/apo-tis-serres-stis-agores-oloy-toy-kosmoy-i-kri-kri/"
+        "https://www.kathimerini.gr/society/564405163/salamina-ragdaia-exaplosi-tis-fotias-mesa-se-7-lepta-eikones/",
+        "https://www.kathimerini.gr/politics/parties/564402004/o-epeteiakos-pentozalis-kai-to-tagko-me-ti-skia/"
       ],
-      "seen_at_utc": "2026-08-16T15:30:05.239325+00:00"
+      "seen_at_utc": "2026-08-16T15:51:08.467236+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1269,25 @@
       "seen_at_utc": "2026-08-16T15:17:46.103864+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447799/paralies-prosvasimes-se-amea-edo-kai-tora/",
-      "title": "Παραλίες προσβάσιμες σε ΑμεΑ εδώ και τώρα!",
-      "normalized_title": "ΠΑΡΑΛΙΕΣ ΠΡΟΣΒΑΣΙΜΕΣ ΣΕ ΑΜΕΑ ΕΔΩ ΚΑΙ ΤΩΡΑ!",
+      "url": "https://www.efsyn.gr/ellada/1448708/pethane-o-aderfos-toy-maki-triantafyllopoyloy-entopistike-nekros-sto-spiti-toy/",
+      "title": "Πέθανε ο αδερφός του Μάκη Τριανταφυλλόπουλου – Εντοπίστηκε νεκρός στο σπίτι του",
+      "normalized_title": "ΠΕΘΑΝΕ Ο ΑΔΕΡΦΟΣ ΤΟΥ ΜΑΚΗ ΤΡΙΑΝΤΑΦΥΛΛΟΠΟΥΛΟΥ – ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΟΣ ΣΤΟ ΣΠΙΤΙ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447799/paralies-prosvasimes-se-amea-edo-kai-tora/",
-        "https://www.efsyn.gr/media/1448695/salamina-i-stigmi-poy-tileoptiko-synergeio-trehei-na-sothei-apo-ti-fotia-vinteo/"
+        "https://www.efsyn.gr/ellada/1448708/pethane-o-aderfos-toy-maki-triantafyllopoyloy-entopistike-nekros-sto-spiti-toy/",
+        "https://www.efsyn.gr/ellada/1448699/ekrixi-se-ergostasio-sta-oinofyta-me-egkaymata-dyo-ergazomenoi-vinteo/"
       ],
-      "seen_at_utc": "2026-08-16T15:17:46.103834+00:00"
+      "seen_at_utc": "2026-08-16T15:51:08.467330+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/sports/on-field/kampanaki-kindynou-apo-ton-mikael-karik/",
-      "title": "«Καμπανάκι» κινδύνου από τον Μίκαελ Κάρικ",
-      "normalized_title": "«ΚΑΜΠΑΝΑΚΙ» ΚΙΝΔΥΝΟΥ ΑΠΟ ΤΟΝ ΜΙΚΑΕΛ ΚΑΡΙΚ",
+      "url": "https://www.in.gr/2026/08/16/sports/football/deyteri-asist-apo-ton-tzoli-3-0-i-arsenal-me-ton-entegkaarnt-vids/",
+      "title": "Δεύτερη ασίστ από τον Τζόλη, 3-0 η Άρσεναλ με τον Έντεγκααρντ (vids)",
+      "normalized_title": "ΔΕΥΤΕΡΗ ΑΣΙΣΤ ΑΠΟ ΤΟΝ ΤΖΟΛΗ, 3-0 Η ΑΡΣΕΝΑΛ ΜΕ ΤΟΝ ΕΝΤΕΓΚΑΑΡΝΤ (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/sports/on-field/kampanaki-kindynou-apo-ton-mikael-karik/"
+        "https://www.in.gr/2026/08/16/sports/football/deyteri-asist-apo-ton-tzoli-3-0-i-arsenal-me-ton-entegkaarnt-vids/",
+        "https://www.in.gr/2026/08/16/greece/mani-oi-pithanoi-logoi-tis-katastrofikis-kataigidas-o-thodoris-kolydas-eksigei-ta-pithana-aitia/"
       ],
-      "seen_at_utc": "2026-08-16T15:30:05.239374+00:00"
+      "seen_at_utc": "2026-08-16T15:51:08.467295+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T15:30:05.239450+00:00"
+  "updated_at_utc": "2026-08-16T15:51:08.467411+00:00"
 }
