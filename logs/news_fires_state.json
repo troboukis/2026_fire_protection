@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564402178/elikoptera-kai-alles-istories-toyristikis-trelas/",
-      "title": "Ελικόπτερα και άλλες ιστορίες τουριστικής τρέλας",
-      "normalized_title": "ΕΛΙΚΟΠΤΕΡΑ ΚΑΙ ΑΛΛΕΣ ΙΣΤΟΡΙΕΣ ΤΟΥΡΙΣΤΙΚΗΣ ΤΡΕΛΑΣ",
+      "url": "https://www.kathimerini.gr/society/564405103/se-aigypto-kai-israil-o-tzarent-koysner-gia-ti-lorida-tis-gazas/",
+      "title": "«Σχέδιο Τραμπ» για την Γάζα: Συνάντηση Κούσνερ με τον πρόεδρο της Αιγύπτου",
+      "normalized_title": "«ΣΧΕΔΙΟ ΤΡΑΜΠ» ΓΙΑ ΤΗΝ ΓΑΖΑ: ΣΥΝΑΝΤΗΣΗ ΚΟΥΣΝΕΡ ΜΕ ΤΟΝ ΠΡΟΕΔΡΟ ΤΗΣ ΑΙΓΥΠΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564402178/elikoptera-kai-alles-istories-toyristikis-trelas/",
-        "https://www.kathimerini.gr/society/564405067/fotia-sti-salamina-tesseris-traymaties-me-egkaymata/"
+        "https://www.kathimerini.gr/society/564405103/se-aigypto-kai-israil-o-tzarent-koysner-gia-ti-lorida-tis-gazas/",
+        "https://www.kathimerini.gr/society/564405088/fotia-sti-salamina-entopistikan-dyo-soroi-kaikan-spitia-lepto-pros-lepto-oi-exelixeis/"
       ],
-      "seen_at_utc": "2026-08-16T14:17:29.626445+00:00"
+      "seen_at_utc": "2026-08-16T14:51:40.170927+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,24 +1271,23 @@
       "seen_at_utc": "2026-08-16T14:30:15.833458+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448685/dimarhos-salaminas-kaikan-spitia-sta-peristeria-zitisame-feri-mpot-gia-na-apomakrynthei-o-kosmos/",
-      "title": "Δήμαρχος Σαλαμίνας: Κάηκαν σπίτια στα Περιστέρια – Ζητήσαμε φέρι μποτ για να απομακρυνθεί ο κόσμος",
-      "normalized_title": "ΔΗΜΑΡΧΟΣ ΣΑΛΑΜΙΝΑΣ: ΚΑΗΚΑΝ ΣΠΙΤΙΑ ΣΤΑ ΠΕΡΙΣΤΕΡΙΑ – ΖΗΤΗΣΑΜΕ ΦΕΡΙ ΜΠΟΤ ΓΙΑ ΝΑ ΑΠΟΜΑΚΡΥΝΘΕΙ Ο ΚΟΣΜΟΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1448690/paok-konstantelias-katalipsi-stin-toympa-apo-opadoys-zitoyn-synantisi-me-savvidi/",
+      "title": "ΠΑΟΚ – Κωνσταντέλιας: Κατάληψη στην Τούμπα από οπαδούς – Ζητούν συνάντηση με Σαββίδη",
+      "normalized_title": "ΠΑΟΚ – ΚΩΝΣΤΑΝΤΕΛΙΑΣ: ΚΑΤΑΛΗΨΗ ΣΤΗΝ ΤΟΥΜΠΑ ΑΠΟ ΟΠΑΔΟΥΣ – ΖΗΤΟΥΝ ΣΥΝΑΝΤΗΣΗ ΜΕ ΣΑΒΒΙΔΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448685/dimarhos-salaminas-kaikan-spitia-sta-peristeria-zitisame-feri-mpot-gia-na-apomakrynthei-o-kosmos/"
+        "https://www.efsyn.gr/athlitismos/1448690/paok-konstantelias-katalipsi-stin-toympa-apo-opadoys-zitoyn-synantisi-me-savvidi/"
       ],
-      "seen_at_utc": "2026-08-16T14:30:15.833429+00:00"
+      "seen_at_utc": "2026-08-16T14:51:40.171087+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/greece/salamina-kamena-spitia-apo-ti-fotia/",
-      "title": "Καμένα σπίτια από τη φωτιά στη Σαλαμίνα",
-      "normalized_title": "ΚΑΜΕΝΑ ΣΠΙΤΙΑ ΑΠΟ ΤΗ ΦΩΤΙΑ ΣΤΗ ΣΑΛΑΜΙΝΑ",
+      "url": "https://www.in.gr/2026/08/16/world/stous-53-oi-nekroi-apo-ton-seismo-stin-indonisia-xiliades-anthropoi-exoun-anagki-apo-epeigousa-voitheia/",
+      "title": "Στους 53 οι νεκροί από τον σεισμό στην Ινδονησία – Χιλιάδες άνθρωποι έχουν ανάγκη από επείγουσα βοήθεια",
+      "normalized_title": "ΣΤΟΥΣ 53 ΟΙ ΝΕΚΡΟΙ ΑΠΟ ΤΟΝ ΣΕΙΣΜΟ ΣΤΗΝ ΙΝΔΟΝΗΣΙΑ – ΧΙΛΙΑΔΕΣ ΑΝΘΡΩΠΟΙ ΕΧΟΥΝ ΑΝΑΓΚΗ ΑΠΟ ΕΠΕΙΓΟΥΣΑ ΒΟΗΘΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/greece/salamina-kamena-spitia-apo-ti-fotia/",
-        "https://www.in.gr/2026/08/16/sports/football/arsenal-mantsester-siti-gkol-oi-kanonierides-sta-23-deyterolepta-vid/"
+        "https://www.in.gr/2026/08/16/world/stous-53-oi-nekroi-apo-ton-seismo-stin-indonisia-xiliades-anthropoi-exoun-anagki-apo-epeigousa-voitheia/"
       ],
-      "seen_at_utc": "2026-08-16T14:30:15.833379+00:00"
+      "seen_at_utc": "2026-08-16T14:51:40.170982+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T14:30:15.833554+00:00"
+  "updated_at_utc": "2026-08-16T14:51:40.171200+00:00"
 }
