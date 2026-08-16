@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404785/epta-nekroi-se-trochaio-stin-toyrkia/",
-      "title": "Επτά νεκροί σε τροχαίο στην Τουρκία",
-      "normalized_title": "ΕΠΤΑ ΝΕΚΡΟΙ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗΝ ΤΟΥΡΚΙΑ",
+      "url": "https://www.kathimerini.gr/world/564404803/seismos-6-1-vathmon-simeiothike-voreia-toy-vanoyatoy-ston-eiriniko/",
+      "title": "Σεισμός 6,1 βαθμών σημειώθηκε βόρεια του Βανουάτου στον Ειρηνικό",
+      "normalized_title": "ΣΕΙΣΜΟΣ 6,1 ΒΑΘΜΩΝ ΣΗΜΕΙΩΘΗΚΕ ΒΟΡΕΙΑ ΤΟΥ ΒΑΝΟΥΑΤΟΥ ΣΤΟΝ ΕΙΡΗΝΙΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404785/epta-nekroi-se-trochaio-stin-toyrkia/",
-        "https://www.kathimerini.gr/istoria/564404068/san-simera-16-aygoystoy-1819-i-sfagi-toy-piterloy/"
+        "https://www.kathimerini.gr/world/564404803/seismos-6-1-vathmon-simeiothike-voreia-toy-vanoyatoy-ston-eiriniko/",
+        "https://www.kathimerini.gr/world/564404794/seismos-stin-kolomvia-i-32chroni-ntaniela-poy-antexe-37-ores-sta-syntrimmia-ypekypse-telika-sto-nosokomeio/"
       ],
-      "seen_at_utc": "2026-08-16T04:51:16.218305+00:00"
+      "seen_at_utc": "2026-08-16T05:17:06.578673+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,29 +1269,34 @@
       "seen_at_utc": "2026-08-16T04:51:16.218402+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448480/eyvoia-sygkroysi-tahyplooy-me-istioforo-exo-apo-tin-eretria-dyo-traymaties/",
-      "title": "Εύβοια: Σύγκρουση ταχύπλοου με ιστιοφόρο έξω από την Ερέτρια – Δύο τραυματίες",
-      "normalized_title": "ΕΥΒΟΙΑ: ΣΥΓΚΡΟΥΣΗ ΤΑΧΥΠΛΟΟΥ ΜΕ ΙΣΤΙΟΦΟΡΟ ΕΞΩ ΑΠΟ ΤΗΝ ΕΡΕΤΡΙΑ – ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1448482/eortologio-poioi-giortazoyn-simera-16-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 16 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 16 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448480/eyvoia-sygkroysi-tahyplooy-me-istioforo-exo-apo-tin-eretria-dyo-traymaties/",
-        "https://www.efsyn.gr/kosmos/1448478/bloomberg-iran-kai-oman-konta-se-symfonia-gia-ta-stena-toy-ormoyz/"
+        "https://www.efsyn.gr/ellada/1448482/eortologio-poioi-giortazoyn-simera-16-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-15T21:17:06.456952+00:00"
+      "seen_at_utc": "2026-08-16T05:17:06.578724+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/world/ratsismos-enantion-leykon/",
-      "title": "Ρατσισμός εναντίον λευκών",
-      "normalized_title": "ΡΑΤΣΙΣΜΟΣ ΕΝΑΝΤΙΟΝ ΛΕΥΚΩΝ",
+      "url": "https://www.in.gr/2026/08/16/greece/kairos-anevainei-o-ydrargyros-tin-kyriaki-epimenoun-oi-voriades/",
+      "title": "Ανεβαίνει ο υδράργυρος την Κυριακή, επιμένουν οι βοριάδες",
+      "normalized_title": "ΑΝΕΒΑΙΝΕΙ Ο ΥΔΡΑΡΓΥΡΟΣ ΤΗΝ ΚΥΡΙΑΚΗ, ΕΠΙΜΕΝΟΥΝ ΟΙ ΒΟΡΙΑΔΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/world/ratsismos-enantion-leykon/",
-        "https://www.in.gr/2026/08/16/world/seismos-stin-kolomvia-o-nte-la-espriegia-zitise-apo-ton-tramp-na-anasteilei-tous-teloneiakous-dasmous/",
-        "https://www.in.gr/2026/08/16/world/xamas-stin-aigypto-o-igetis-tis-prin-apo-tin-episkepsi-kousner-me-poion-tha-synantithei/",
-        "https://www.in.gr/2026/08/16/world/iran-epanenarksi-ton-esoterikon-ptiseon-sto-aerodromio-mpantar-ampas-meta-tis-imeres-tou-polemou/",
-        "https://www.in.gr/2026/08/16/economy/diethnis-oikonomia/o-polemos-ton-burger-klimakonetai-ta-mcdonalds-xanoun-edafos-apo-ton-aionio-antipalo/",
-        "https://www.in.gr/2026/08/16/world/mponi-tailer-xiliades-synodeysan-to-feretro-tis-tragoudistrias-ligo-prin-apo-tin-tafi-tis-sti-geneteira-tis/"
+        "https://www.in.gr/2026/08/16/greece/kairos-anevainei-o-ydrargyros-tin-kyriaki-epimenoun-oi-voriades/",
+        "https://www.in.gr/2026/08/16/world/i-agkyra-kai-i-dysi-epistrofi-i-apostrofi/",
+        "https://www.in.gr/2026/08/16/economy/oikonomikes-eidiseis/syntaksiouxoi-oi-eisodimatikes-enisxyseis-pou-fernoun-tesseris-paremvaseis/",
+        "https://www.in.gr/2026/08/16/life/x-men-2028-i-marvel-apokalypse-tin-epomeni-genia-metallagmenon-oloi-oi-neoi-star-tou-mcu/",
+        "https://www.in.gr/2026/08/16/plus/vita/giati-i-mousiki-tis-efiveias-mas-synexizei-na-mas-aggizei-mexri-kai-simera/",
+        "https://www.in.gr/2026/08/16/world/giati-oi-asynartisies-ton-politikon-exoun-noima-pos-ta-mme-symmazepsan-ton-tramp/",
+        "https://www.in.gr/2026/08/16/world/to-dimografiko-synanta-tin-pagkosmia-oikonomia-to-oristiko-telos-tis-epoxis-tou-fthinou-ergatikou-dynamikou/",
+        "https://www.in.gr/2026/08/16/world/ipa-to-1-4-tou-ploutou-ton-disekatommyriouxon-to-katexoun-metanastes/",
+        "https://www.in.gr/2026/08/16/life/music/oute-to-2027-i-mantona-tha-anevei-sti-skini-tou-glastonbury/",
+        "https://www.in.gr/2026/08/16/stories/to-timima-tis-apolaysis-gia-tous-eyropaious-apoikiokrates-ithelan-kapno-kai-zaxari-piran-karkino-kai-teridona/",
+        "https://www.in.gr/2026/08/16/politics/epikairotita/ta-metra-pou-kleidonoun-sto-paketo-tis-deth/",
+        "https://www.in.gr/2026/08/16/life/geysi/syntagi-katsikaki-sto-fourno-me-patates/"
       ],
-      "seen_at_utc": "2026-08-16T04:17:19.663971+00:00"
+      "seen_at_utc": "2026-08-16T05:17:06.578705+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T04:51:16.218491+00:00"
+  "updated_at_utc": "2026-08-16T05:17:06.578809+00:00"
 }
