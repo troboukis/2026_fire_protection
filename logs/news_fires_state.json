@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564402298/meso-sofias-stin-ithaki-ton-19-ekat/",
-      "title": "Μέσω Σόφιας στην «Ιθάκη» των 19 εκατ.",
-      "normalized_title": "ΜΕΣΩ ΣΟΦΙΑΣ ΣΤΗΝ «ΙΘΑΚΗ» ΤΩΝ 19 ΕΚΑΤ.",
+      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564401947/o-amerikanos-vivliopolis-poy-efere-xana-tis-ellinikes-efimerides-stin-ydra/",
+      "title": "Ο Αμερικανός βιβλιοπώλης που έφερε ξανά τις ελληνικές εφημερίδες στην Υδρα!",
+      "normalized_title": "Ο ΑΜΕΡΙΚΑΝΟΣ ΒΙΒΛΙΟΠΩΛΗΣ ΠΟΥ ΕΦΕΡΕ ΞΑΝΑ ΤΙΣ ΕΛΛΗΝΙΚΕΣ ΕΦΗΜΕΡΙΔΕΣ ΣΤΗΝ ΥΔΡΑ!",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564402298/meso-sofias-stin-ithaki-ton-19-ekat/"
+        "https://www.kathimerini.gr/culture/athinaika-plus/564401947/o-amerikanos-vivliopolis-poy-efere-xana-tis-ellinikes-efimerides-stin-ydra/"
       ],
-      "seen_at_utc": "2026-08-16T13:17:12.012661+00:00"
+      "seen_at_utc": "2026-08-16T13:30:00.201260+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,27 +1268,23 @@
       "seen_at_utc": "2026-08-16T13:17:12.012767+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1447841/spitakia-hrysoryheia-apo-tis-kordeles-toy-maximoy-stin-eyropaiki-eisaggelia/",
-      "title": "Σπιτάκια – «χρυσωρυχεία»: Από τις κορδέλες του Μαξίμου στην Ευρωπαϊκή Εισαγγελία",
-      "normalized_title": "ΣΠΙΤΑΚΙΑ – «ΧΡΥΣΩΡΥΧΕΙΑ»: ΑΠΟ ΤΙΣ ΚΟΡΔΕΛΕΣ ΤΟΥ ΜΑΞΙΜΟΥ ΣΤΗΝ ΕΥΡΩΠΑΙΚΗ ΕΙΣΑΓΓΕΛΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1448670/ios-toy-dytikoy-neiloy-o-isa-kroyei-ton-kodona-oi-systaseis-pros-toys-polites/",
+      "title": "Ιός του Δυτικού Νείλου: Ο ΙΣΑ κρούει τον κώδωνα – Οι συστάσεις προς τους πολίτες",
+      "normalized_title": "ΙΟΣ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: Ο ΙΣΑ ΚΡΟΥΕΙ ΤΟΝ ΚΩΔΩΝΑ – ΟΙ ΣΥΣΤΑΣΕΙΣ ΠΡΟΣ ΤΟΥΣ ΠΟΛΙΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1447841/spitakia-hrysoryheia-apo-tis-kordeles-toy-maximoy-stin-eyropaiki-eisaggelia/",
-        "https://www.efsyn.gr/kosmos/1448666/sok-stin-portogalia-15hronos-skotose-tin-33hroni-mitera-toy-kataggelies-gia-endooikogeneiaki-via/"
+        "https://www.efsyn.gr/ellada/1448670/ios-toy-dytikoy-neiloy-o-isa-kroyei-ton-kodona-oi-systaseis-pros-toys-polites/"
       ],
-      "seen_at_utc": "2026-08-16T13:17:12.012739+00:00"
+      "seen_at_utc": "2026-08-16T13:30:00.201357+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/sports/basketball/o-fournie-eide-tin-odysseia-tou-nolan-ti-sxoliase-sta-social-media-pic/",
-      "title": "Ο Φουρνιέ είδε την «Οδύσσεια» του Νόλαν – Τι σχολίασε στα social media (pic)",
-      "normalized_title": "Ο ΦΟΥΡΝΙΕ ΕΙΔΕ ΤΗΝ «ΟΔΥΣΣΕΙΑ» ΤΟΥ ΝΟΛΑΝ – ΤΙ ΣΧΟΛΙΑΣΕ ΣΤΑ SOCIAL MEDIA (PIC)",
+      "url": "https://www.in.gr/2026/08/16/sports/football/arsenal-mantsester-siti-o-tzolis-ksekina-vasikos-sto-community-shield/",
+      "title": "Άρσεναλ – Μάντσεστερ Σίτι: Ο Τζόλης ξεκινά βασικός στο Community Shield",
+      "normalized_title": "ΑΡΣΕΝΑΛ – ΜΑΝΤΣΕΣΤΕΡ ΣΙΤΙ: Ο ΤΖΟΛΗΣ ΞΕΚΙΝΑ ΒΑΣΙΚΟΣ ΣΤΟ COMMUNITY SHIELD",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/sports/basketball/o-fournie-eide-tin-odysseia-tou-nolan-ti-sxoliase-sta-social-media-pic/",
-        "https://www.in.gr/2026/08/16/go-fun/kalytera-na-eksafanisteite-skliri-symvouli-se-xari-kai-megkan-meta-apo-akomi-ena-fiasko/",
-        "https://www.in.gr/2026/08/16/in-science/technology/thymaste-tin-blackberry-den-paragei-pia-tilefona-omos-zei-kai-vasileyei/",
-        "https://www.in.gr/2026/08/16/greece/to-meteo-eksigei-ti-synevi-sti-mani-ton-dekapentaygousto-pano-apo-2-000-keraynoi-se-liges-ores/"
+        "https://www.in.gr/2026/08/16/sports/football/arsenal-mantsester-siti-o-tzolis-ksekina-vasikos-sto-community-shield/"
       ],
-      "seen_at_utc": "2026-08-16T13:17:12.012716+00:00"
+      "seen_at_utc": "2026-08-16T13:30:00.201312+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T13:17:12.012854+00:00"
+  "updated_at_utc": "2026-08-16T13:30:00.201436+00:00"
 }
