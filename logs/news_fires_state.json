@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404839/iaponia-ennea-nekroi-apo-tis-katarraktodeis-vroches-sto-tokio/",
-      "title": "Ιαπωνία: Εννέα νεκροί από τις καταρρακτώδεις βροχές στο Τόκιο",
-      "normalized_title": "ΙΑΠΩΝΙΑ: ΕΝΝΕΑ ΝΕΚΡΟΙ ΑΠΟ ΤΙΣ ΚΑΤΑΡΡΑΚΤΩΔΕΙΣ ΒΡΟΧΕΣ ΣΤΟ ΤΟΚΙΟ",
+      "url": "https://www.kathimerini.gr/society/564404848/machi-se-dyo-metopa-dinoyn-oi-pyrosvestes-sti-skyro-epicheiroyn-epigeies-kai-enaeries-dynameis/",
+      "title": "Μάχη σε δύο μέτωπα δίνουν οι πυροσβέστες στη Σκύρο – Επιχειρούν επίγειες και εναέριες δυνάμεις",
+      "normalized_title": "ΜΑΧΗ ΣΕ ΔΥΟ ΜΕΤΩΠΑ ΔΙΝΟΥΝ ΟΙ ΠΥΡΟΣΒΕΣΤΕΣ ΣΤΗ ΣΚΥΡΟ – ΕΠΙΧΕΙΡΟΥΝ ΕΠΙΓΕΙΕΣ ΚΑΙ ΕΝΑΕΡΙΕΣ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404839/iaponia-ennea-nekroi-apo-tis-katarraktodeis-vroches-sto-tokio/"
+        "https://www.kathimerini.gr/society/564404848/machi-se-dyo-metopa-dinoyn-oi-pyrosvestes-sti-skyro-epicheiroyn-epigeies-kai-enaeries-dynameis/",
+        "https://www.kathimerini.gr/culture/564398224/i-seirina-tis-odysseias-poy-edose-to-onoma-tis-sti-napoli/"
       ],
-      "seen_at_utc": "2026-08-16T06:51:07.339483+00:00"
+      "seen_at_utc": "2026-08-16T07:17:13.827966+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865430/16hroni-katiggeile-sti-thiva-ton-viasmo-tis-apo-15hrono-kai-allo-ena-atomo/?utm_source=rss",
-      "title": "16χρονη κατήγγειλε στη Θήβα τον βιασμό της από 15χρονο και άλλο ένα άτομο",
-      "normalized_title": "16ΧΡΟΝΗ ΚΑΤΗΓΓΕΙΛΕ ΣΤΗ ΘΗΒΑ ΤΟΝ ΒΙΑΣΜΟ ΤΗΣ ΑΠΟ 15ΧΡΟΝΟ ΚΑΙ ΑΛΛΟ ΕΝΑ ΑΤΟΜΟ",
+      "url": "https://www.protothema.gr/greece/article/1865443/patra-istioforo-prosaraxe-dutika-tou-riou-kala-stin-ugeia-tous-oi-5-epivainodes/?utm_source=rss",
+      "title": "Πάτρα: Ιστιοφόρο προσάραξε δυτικά του Ρίου, καλά στην υγεία τους οι 5 επιβαίνοντες",
+      "normalized_title": "ΠΑΤΡΑ: ΙΣΤΙΟΦΟΡΟ ΠΡΟΣΑΡΑΞΕ ΔΥΤΙΚΑ ΤΟΥ ΡΙΟΥ, ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥΣ ΟΙ 5 ΕΠΙΒΑΙΝΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865430/16hroni-katiggeile-sti-thiva-ton-viasmo-tis-apo-15hrono-kai-allo-ena-atomo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865443/patra-istioforo-prosaraxe-dutika-tou-riou-kala-stin-ugeia-tous-oi-5-epivainodes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865439/sparti-afadoi-oi-treis-koukouloforoi-pou-listepsan-63hrono-kai-tin-90hroni-mitera-tou-arpazan-enan-hruso-stauro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-16T06:29:57.494335+00:00"
+      "seen_at_utc": "2026-08-16T07:17:13.828099+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448524/plimmyres-sti-mani-protofanes-fainomeno-zimies-kai-spitia-kai-dromoys-vinteo/",
-      "title": "Πλημμύρες στη Μάνη: «Πρωτοφανές φαινόμενο» – Ζημιές και σπίτια και δρόμους [βίντεο]",
-      "normalized_title": "ΠΛΗΜΜΥΡΕΣ ΣΤΗ ΜΑΝΗ: «ΠΡΩΤΟΦΑΝΕΣ ΦΑΙΝΟΜΕΝΟ» – ΖΗΜΙΕΣ ΚΑΙ ΣΠΙΤΙΑ ΚΑΙ ΔΡΟΜΟΥΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1448543/mia-kataskinosi-fernei-xana-paidikes-fones-stin-kardia-tis-aitoloakarnanias-meta-apo-miso-aiona/",
+      "title": "Μια κατασκήνωση φέρνει ξανά παιδικές φωνές στην καρδιά της Αιτωλοακαρνανίας μετά από μισό αιώνα",
+      "normalized_title": "ΜΙΑ ΚΑΤΑΣΚΗΝΩΣΗ ΦΕΡΝΕΙ ΞΑΝΑ ΠΑΙΔΙΚΕΣ ΦΩΝΕΣ ΣΤΗΝ ΚΑΡΔΙΑ ΤΗΣ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ ΜΕΤΑ ΑΠΟ ΜΙΣΟ ΑΙΩΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448524/plimmyres-sti-mani-protofanes-fainomeno-zimies-kai-spitia-kai-dromoys-vinteo/",
-        "https://www.efsyn.gr/kosmos/1448515/haos-stin-indonisia-hiliades-anthropoi-egkateleipsan-ta-spitia-toys-meta-ton-seismo-agonia-gia-egklovismenoys/"
+        "https://www.efsyn.gr/ellada/1448543/mia-kataskinosi-fernei-xana-paidikes-fones-stin-kardia-tis-aitoloakarnanias-meta-apo-miso-aiona/",
+        "https://www.efsyn.gr/athlitismos/1448534/paok-sti-germania-o-giannis-konstantelias-etoimos-na-kleisei-sti-ntortmoynt/",
+        "https://www.efsyn.gr/kosmos/1448530/frihto-trohaio-stin-oyggaria-dodeka-nekroi-kai-toylahiston-deka-traymaties/"
       ],
-      "seen_at_utc": "2026-08-16T06:51:07.339577+00:00"
+      "seen_at_utc": "2026-08-16T07:17:13.828068+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/greece/xalkidiki-apagoreysi-kykloforias-mexri-ti-deytera-se-dasikes-perioxes/",
-      "title": "Απαγόρευση κυκλοφορίας μέχρι τη Δευτέρα σε δασικές περιοχές της Χαλκιδικής",
-      "normalized_title": "ΑΠΑΓΟΡΕΥΣΗ ΚΥΚΛΟΦΟΡΙΑΣ ΜΕΧΡΙ ΤΗ ΔΕΥΤΕΡΑ ΣΕ ΔΑΣΙΚΕΣ ΠΕΡΙΟΧΕΣ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ",
+      "url": "https://www.in.gr/2026/08/16/world/tokio-ennea-nekroi-apo-tis-katarraktodeis-vroxes-sovares-plimmyres-terastia-provlimata-stis-metafores/",
+      "title": "Εννέα νεκροί από τις καταρρακτώδεις βροχές στο Τόκιο - Σοβαρές πλημμύρες, τεράστια προβλήματα στις μεταφορές",
+      "normalized_title": "ΕΝΝΕΑ ΝΕΚΡΟΙ ΑΠΟ ΤΙΣ ΚΑΤΑΡΡΑΚΤΩΔΕΙΣ ΒΡΟΧΕΣ ΣΤΟ ΤΟΚΙΟ - ΣΟΒΑΡΕΣ ΠΛΗΜΜΥΡΕΣ, ΤΕΡΑΣΤΙΑ ΠΡΟΒΛΗΜΑΤΑ ΣΤΙΣ ΜΕΤΑΦΟΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/greece/xalkidiki-apagoreysi-kykloforias-mexri-ti-deytera-se-dasikes-perioxes/"
+        "https://www.in.gr/2026/08/16/world/tokio-ennea-nekroi-apo-tis-katarraktodeis-vroxes-sovares-plimmyres-terastia-provlimata-stis-metafores/",
+        "https://www.in.gr/2026/08/16/world/o-kim-eksymnei-ti-sxesi-voreias-koreas-kai-rosias-tha-steilei-ksana-strateymata-ston-polemo-kata-tis-oukranias/",
+        "https://www.in.gr/2026/08/16/sports/basketball/sto-hall-of-fame-mpikan-nt-antoni-rivers-kai-stountemair/",
+        "https://www.in.gr/2026/08/16/go-fun/fizz/antzela-gkerekou-paidi-tis-panagias-s-elege-o-mpampas-sou-i-maria-i-kerkyra-kai-o-tolis-voskopoulos/",
+        "https://www.in.gr/2026/08/16/economy/oikonomikes-eidiseis/metrita-poioi-kladoi-stin-ellada-epimenoun-akoma-i-aktinografia-ton-pliromon-me-ta-matia-tis-ekt/",
+        "https://www.in.gr/2026/08/16/world/verolino-i-stigmi-pou-gynaika-pida-sto-keno-gia-na-sothei-apo-ti-fotia-sygklonistiko-vinteo/"
       ],
-      "seen_at_utc": "2026-08-16T06:51:07.339532+00:00"
+      "seen_at_utc": "2026-08-16T07:17:13.828030+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T06:51:07.339650+00:00"
+  "updated_at_utc": "2026-08-16T07:17:13.828177+00:00"
 }
