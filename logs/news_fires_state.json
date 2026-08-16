@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564405346/tzeison-arntei-31-000-ypografes-gia-ereyna-schetika-me-to-kynigi-apo-ta-mme/",
-      "title": "Τζέισον Αρντεϊ: 31.000 υπογραφές για έρευνα σχετικά με το «κυνήγι» από τα ΜΜΕ",
-      "normalized_title": "ΤΖΕΙΣΟΝ ΑΡΝΤΕΙ: 31.000 ΥΠΟΓΡΑΦΕΣ ΓΙΑ ΕΡΕΥΝΑ ΣΧΕΤΙΚΑ ΜΕ ΤΟ «ΚΥΝΗΓΙ» ΑΠΟ ΤΑ ΜΜΕ",
+      "url": "https://www.kathimerini.gr/athletics/564405361/asimenios-o-karalis-tetarto-chryso-o-ntoyplantis/",
+      "title": "«Ασημένιος» ο Καραλής, τέταρτο χρυσό ο Ντουπλάντις",
+      "normalized_title": "«ΑΣΗΜΕΝΙΟΣ» Ο ΚΑΡΑΛΗΣ, ΤΕΤΑΡΤΟ ΧΡΥΣΟ Ο ΝΤΟΥΠΛΑΝΤΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564405346/tzeison-arntei-31-000-ypografes-gia-ereyna-schetika-me-to-kynigi-apo-ta-mme/",
-        "https://www.kathimerini.gr/culture/564402598/agiografoi-ek-samarinis/"
+        "https://www.kathimerini.gr/athletics/564405361/asimenios-o-karalis-tetarto-chryso-o-ntoyplantis/",
+        "https://www.kathimerini.gr/world/564405241/okto-moysoylmanikes-chores-kata-israil-gia-to-schedio-tramp-sti-gaza/",
+        "https://www.kathimerini.gr/athletics/564405355/sti-ntortmoynt-o-konstantelias-sta-32-ekat-eyro-to-deal-me-ton-paok/",
+        "https://www.kathimerini.gr/economy/564402355/arthro-toy-gkavin-magkoyair-stin-k-i-anthisi-ton-ape-meionei-ti-zitisi-gia-aerio-stin-eyropi/"
       ],
-      "seen_at_utc": "2026-08-16T20:29:57.932638+00:00"
+      "seen_at_utc": "2026-08-16T20:51:32.051649+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,24 +1272,25 @@
       "seen_at_utc": "2026-08-16T19:17:29.886021+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448761/konstantelias-ypegrapse-sti-nortmoynt-i-akrivoteri-polisi-stin-istoria-toy-paok/",
-      "title": "Κωνσταντέλιας: Υπέγραψε στη Ντόρτμουντ – Η ακριβότερη πώληση στην ιστορία του ΠΑΟΚ",
-      "normalized_title": "ΚΩΝΣΤΑΝΤΕΛΙΑΣ: ΥΠΕΓΡΑΨΕ ΣΤΗ ΝΤΟΡΤΜΟΥΝΤ – Η ΑΚΡΙΒΟΤΕΡΗ ΠΩΛΗΣΗ ΣΤΗΝ ΙΣΤΟΡΙΑ ΤΟΥ ΠΑΟΚ",
+      "url": "https://www.efsyn.gr/ellada/1448769/horis-energo-metopo-i-fotia-stin-kalymno-gia-tetarti-fora-fetos-kaigetai-to-simeio-ti-leei-o-dimarhos/",
+      "title": "Χωρίς ενεργό μέτωπο η φωτιά στην Κάλυμνο: Για τέταρτη φορά φέτος καίγεται το σημείο – Τι λέει ο δήμαρχος",
+      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΟ ΜΕΤΩΠΟ Η ΦΩΤΙΑ ΣΤΗΝ ΚΑΛΥΜΝΟ: ΓΙΑ ΤΕΤΑΡΤΗ ΦΟΡΑ ΦΕΤΟΣ ΚΑΙΓΕΤΑΙ ΤΟ ΣΗΜΕΙΟ – ΤΙ ΛΕΕΙ Ο ΔΗΜΑΡΧΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448761/konstantelias-ypegrapse-sti-nortmoynt-i-akrivoteri-polisi-stin-istoria-toy-paok/"
+        "https://www.efsyn.gr/ellada/1448769/horis-energo-metopo-i-fotia-stin-kalymno-gia-tetarti-fora-fetos-kaigetai-to-simeio-ti-leei-o-dimarhos/",
+        "https://www.efsyn.gr/ellada/1448765/fotia-sti-skyro-pano-apo-3-600-stremmata-eginan-stahti/"
       ],
-      "seen_at_utc": "2026-08-16T20:29:57.932730+00:00"
+      "seen_at_utc": "2026-08-16T20:51:32.051705+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/economy/ston-pago-o-fpa-sta-neodmita-kai-to-2027-to-sxedio/",
-      "title": "Στον «πάγο» (;) ο ΦΠΑ στα νεόδμητα και το 2027 – Το σχέδιο",
-      "normalized_title": "ΣΤΟΝ «ΠΑΓΟ» (;) Ο ΦΠΑ ΣΤΑ ΝΕΟΔΜΗΤΑ ΚΑΙ ΤΟ 2027 – ΤΟ ΣΧΕΔΙΟ",
+      "url": "https://www.in.gr/2026/08/16/sports/othersports/mpermigxam-2026-asimenio-metallio-gia-ton-spoudaio-karali-me-katathesi-psyxis-vid/",
+      "title": "Ασημένιο μετάλλιο για τον σπουδαίο Καραλή, με κατάθεση ψυχής (vid)",
+      "normalized_title": "ΑΣΗΜΕΝΙΟ ΜΕΤΑΛΛΙΟ ΓΙΑ ΤΟΝ ΣΠΟΥΔΑΙΟ ΚΑΡΑΛΗ, ΜΕ ΚΑΤΑΘΕΣΗ ΨΥΧΗΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/economy/ston-pago-o-fpa-sta-neodmita-kai-to-2027-to-sxedio/",
-        "https://www.in.gr/2026/08/16/economy/diethnis-oikonomia/theretra-se-tourkia-kai-kypro-plittontai-apo-ton-polemo-sto-iran/"
+        "https://www.in.gr/2026/08/16/sports/othersports/mpermigxam-2026-asimenio-metallio-gia-ton-spoudaio-karali-me-katathesi-psyxis-vid/",
+        "https://www.in.gr/2026/08/16/world/sxedio-tramp-i-xamas-zita-apo-to-symvoulio-eirinis-na-anagkasei-to-israil-na-apodextei-to-sxedio-gia-ti-gaza/"
       ],
-      "seen_at_utc": "2026-08-16T20:29:57.932684+00:00"
+      "seen_at_utc": "2026-08-16T20:51:32.051680+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T20:29:57.932802+00:00"
+  "updated_at_utc": "2026-08-16T20:51:32.051767+00:00"
 }
