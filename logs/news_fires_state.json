@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564405010/kefalotyri-saganaki-me-piperies-florinis/",
-      "title": "Κεφαλοτύρι σαγανάκι με πιπεριές Φλωρίνης",
-      "normalized_title": "ΚΕΦΑΛΟΤΥΡΙ ΣΑΓΑΝΑΚΙ ΜΕ ΠΙΠΕΡΙΕΣ ΦΛΩΡΙΝΗΣ",
+      "url": "https://www.kathimerini.gr/politics/564405031/tilefoniki-epikoinonia-gerapetriti-me-ton-oykrano-omologo-toy/",
+      "title": "Τηλεφωνική επικοινωνία Γεραπετρίτη με τον Ουκρανό ομόλογό του",
+      "normalized_title": "ΤΗΛΕΦΩΝΙΚΗ ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΟΥΚΡΑΝΟ ΟΜΟΛΟΓΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564405010/kefalotyri-saganaki-me-piperies-florinis/"
+        "https://www.kathimerini.gr/politics/564405031/tilefoniki-epikoinonia-gerapetriti-me-ton-oykrano-omologo-toy/"
       ],
-      "seen_at_utc": "2026-08-16T12:30:14.388014+00:00"
+      "seen_at_utc": "2026-08-16T12:51:13.823957+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865544/giati-to-hthesino-bourini-prokalese-megales-katastrofes-sti-mani-deite-video/?utm_source=rss",
-      "title": "Γιατί το χθεσινό μπουρίνι προκάλεσε μεγάλες καταστροφές στη Μάνη, δείτε βίντεο",
-      "normalized_title": "ΓΙΑΤΙ ΤΟ ΧΘΕΣΙΝΟ ΜΠΟΥΡΙΝΙ ΠΡΟΚΑΛΕΣΕ ΜΕΓΑΛΕΣ ΚΑΤΑΣΤΡΟΦΕΣ ΣΤΗ ΜΑΝΗ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1865554/amesi-drasi-gia-ton-io-tou-dutikou-neilou-zitoun-oi-loimoxiologoi-ta-12-metra-prolipsis-pou-proteinoun/?utm_source=rss",
+      "title": "Άμεση δράση για τον ιό του Δυτικού Νείλου ζητούν οι λοιμωξιολόγοι, τα 12 μέτρα πρόληψης που προτείνουν",
+      "normalized_title": "ΑΜΕΣΗ ΔΡΑΣΗ ΓΙΑ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ ΖΗΤΟΥΝ ΟΙ ΛΟΙΜΩΞΙΟΛΟΓΟΙ, ΤΑ 12 ΜΕΤΡΑ ΠΡΟΛΗΨΗΣ ΠΟΥ ΠΡΟΤΕΙΝΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865544/giati-to-hthesino-bourini-prokalese-megales-katastrofes-sti-mani-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865542/fotia-tora-se-dasiki-ektasi-sti-salamina-kinitopoiithikan-82-purosvestes-kai-epta-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865541/peripeteia-ston-saroniko-gia-tesseris-roumanous-se-lemvo-diasothikan-kai-tous-epivlithikan-prostima-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865554/amesi-drasi-gia-ton-io-tou-dutikou-neilou-zitoun-oi-loimoxiologoi-ta-12-metra-prolipsis-pou-proteinoun/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-16T12:17:25.300401+00:00"
+      "seen_at_utc": "2026-08-16T12:51:13.824060+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448650/stahti-30-000-stremmata-i-megalyteri-pyrkagia-stin-istoria-toy-velgioy-kateythynetai-pros-ti-germania-eikones/",
-      "title": "Στάχτη 30.000 στρέμματα: Η μεγαλύτερη πυρκαγιά στην ιστορία του Βελγίου κατευθύνεται προς τη Γερμανία [εικόνες]",
-      "normalized_title": "ΣΤΑΧΤΗ 30.000 ΣΤΡΕΜΜΑΤΑ: Η ΜΕΓΑΛΥΤΕΡΗ ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΙΣΤΟΡΙΑ ΤΟΥ ΒΕΛΓΙΟΥ ΚΑΤΕΥΘΥΝΕΤΑΙ ΠΡΟΣ ΤΗ ΓΕΡΜΑΝΙΑ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/politiki/1447823/eklogikes-askiseis-gia-ta-psifodeltia-se-xanthi-kai-rodopi-i-eisodos-tis-elas-anakateyei-tin-trapoyla/",
+      "title": "Εκλογικές ασκήσεις για τα ψηφοδέλτια σε Ξάνθη και Ροδόπη – Η είσοδος της ΕΛΑΣ ανακατεύει την τράπουλα",
+      "normalized_title": "ΕΚΛΟΓΙΚΕΣ ΑΣΚΗΣΕΙΣ ΓΙΑ ΤΑ ΨΗΦΟΔΕΛΤΙΑ ΣΕ ΞΑΝΘΗ ΚΑΙ ΡΟΔΟΠΗ – Η ΕΙΣΟΔΟΣ ΤΗΣ ΕΛΑΣ ΑΝΑΚΑΤΕΥΕΙ ΤΗΝ ΤΡΑΠΟΥΛΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448650/stahti-30-000-stremmata-i-megalyteri-pyrkagia-stin-istoria-toy-velgioy-kateythynetai-pros-ti-germania-eikones/"
+        "https://www.efsyn.gr/politiki/1447823/eklogikes-askiseis-gia-ta-psifodeltia-se-xanthi-kai-rodopi-i-eisodos-tis-elas-anakateyei-tin-trapoyla/",
+        "https://www.efsyn.gr/ellada/1448659/panagia-katafygiotissa-o-asynithistos-naos-poy-zografise-o-megalos-dimitris-mytaras-anoixe-gia-ton-dekapentaygoysto-vinteo/"
       ],
-      "seen_at_utc": "2026-08-16T12:30:14.388067+00:00"
+      "seen_at_utc": "2026-08-16T12:51:13.824031+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/greece/fotia-sti-salamina-ixise-to-112-sikothikan-epta-enaeria/",
-      "title": "Φωτιά στη Σαλαμίνα - Ήχησε το 112, σηκώθηκαν επτά εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΑΛΑΜΙΝΑ - ΗΧΗΣΕ ΤΟ 112, ΣΗΚΩΘΗΚΑΝ ΕΠΤΑ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/08/16/sports/football/europa-league/o-diaititis-tou-ofi-tsska-sofias-gia-ta-play-offs/",
+      "title": "O διαιτητής του ΟΦΗ – ΤΣΣΚΑ Σόφιας για τα play offs",
+      "normalized_title": "O ΔΙΑΙΤΗΤΗΣ ΤΟΥ ΟΦΗ – ΤΣΣΚΑ ΣΟΦΙΑΣ ΓΙΑ ΤΑ PLAY OFFS",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/greece/fotia-sti-salamina-ixise-to-112-sikothikan-epta-enaeria/",
-        "https://www.in.gr/2026/08/16/go-fun/oute-podosfairo-oute-porno-giati-o-mprant-pit-den-antexei-na-vlepei-tipota-apo-ta-dyo/",
-        "https://www.in.gr/2026/08/16/sports/xamos-se-podosfairiko-agona-lykeion-stis-ipa-klotsies-kai-grothies-metaksy-paikton-vid/",
-        "https://www.in.gr/2026/08/16/economy/oikonomikes-eidiseis/elliniki-oikonomia-sto-mikroskopio-ton-dbrs-moodys-kai-scope-apo-ton-septemvrio/"
+        "https://www.in.gr/2026/08/16/sports/football/europa-league/o-diaititis-tou-ofi-tsska-sofias-gia-ta-play-offs/",
+        "https://www.in.gr/2026/08/16/in-science/technology/ego-kai-o-klonos-mou-stelexi-kai-influencer-antigrafoun-ton-eayto-tous-me-ai/",
+        "https://www.in.gr/2026/08/16/greece/ekriksi-se-ergostasio-sta-oinofyta-dyo-ergazomenoi-me-egkaymata/"
       ],
-      "seen_at_utc": "2026-08-16T12:17:25.300330+00:00"
+      "seen_at_utc": "2026-08-16T12:51:13.823992+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T12:30:14.388147+00:00"
+  "updated_at_utc": "2026-08-16T12:51:13.824123+00:00"
 }
