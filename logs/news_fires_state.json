@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/interviews/564402046/tomas-frintman-stin-k-den-echoyme-pia-politiki-mono-parormiseis/",
-      "title": "Τόμας Φρίντμαν στην «Κ»: Δεν έχουμε πια πολιτική. Μόνο παρορμήσεις",
-      "normalized_title": "ΤΟΜΑΣ ΦΡΙΝΤΜΑΝ ΣΤΗΝ «Κ»: ΔΕΝ ΕΧΟΥΜΕ ΠΙΑ ΠΟΛΙΤΙΚΗ. ΜΟΝΟ ΠΑΡΟΡΜΗΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/society/564405304/fotia-sti-skyro-stachti-pano-apo-3-600-stremmata/",
+      "title": "Φωτιά στη Σκύρο: Στάχτη πάνω από 3.600 στρέμματα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΣΚΥΡΟ: ΣΤΑΧΤΗ ΠΑΝΩ ΑΠΟ 3.600 ΣΤΡΕΜΜΑΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/interviews/564402046/tomas-frintman-stin-k-den-echoyme-pia-politiki-mono-parormiseis/",
-        "https://www.kathimerini.gr/culture/564402679/o-ichos-tis-apoleias-se-soympert-kai-mpach/"
+        "https://www.kathimerini.gr/society/564405304/fotia-sti-skyro-stachti-pano-apo-3-600-stremmata/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564405319/epikoinonia-gerapetriti-me-ypex-mpachrein-gia-mesi-anatoli-kai-synergasia-sto-sa/",
+        "https://www.kathimerini.gr/society/564405334/megali-kinitopoiisi-tis-pyrosvestikis-sto-lasithi-ichise-to-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/society/564402079/stelios-ramfos-me-tin-eygeneia-toy-polemisti-kai-tin-apatheia-toy-sofoy/"
       ],
-      "seen_at_utc": "2026-08-16T19:30:10.167159+00:00"
+      "seen_at_utc": "2026-08-16T19:51:34.425749+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1272,25 @@
       "seen_at_utc": "2026-08-16T19:17:29.886021+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448754/fotia-stin-kalymno-parameinete-se-etoimotita-leei-to-112/",
-      "title": "Φωτιά στην Κάλυμνο: «Παραμείνετε σε ετοιμότητα» λέει το 112",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΑΛΥΜΝΟ: «ΠΑΡΑΜΕΙΝΕΤΕ ΣΕ ΕΤΟΙΜΟΤΗΤΑ» ΛΕΕΙ ΤΟ 112",
+      "url": "https://www.efsyn.gr/ellada/1448756/synagermos-sto-lasithi-megali-fotia-se-dasiki-ektasi-ihise-to-112/",
+      "title": "Συναγερμός στο Λασίθι: Μεγάλη φωτιά σε δασική έκταση – Ήχησε το 112",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΟ ΛΑΣΙΘΙ: ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448754/fotia-stin-kalymno-parameinete-se-etoimotita-leei-to-112/"
+        "https://www.efsyn.gr/ellada/1448756/synagermos-sto-lasithi-megali-fotia-se-dasiki-ektasi-ihise-to-112/"
       ],
-      "seen_at_utc": "2026-08-16T19:30:10.167277+00:00"
+      "seen_at_utc": "2026-08-16T19:51:34.425810+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/economy/agro-in/i-ksirasia-apeilei-ti-georgia-stin-eyropi-ta-apothematika-tis-krisis-den-arkoun/",
-      "title": "Η ξηρασία απειλεί τη γεωργία στην Ευρώπη – Τα αποθεματικά της κρίσης δεν αρκούν",
-      "normalized_title": "Η ΞΗΡΑΣΙΑ ΑΠΕΙΛΕΙ ΤΗ ΓΕΩΡΓΙΑ ΣΤΗΝ ΕΥΡΩΠΗ – ΤΑ ΑΠΟΘΕΜΑΤΙΚΑ ΤΗΣ ΚΡΙΣΗΣ ΔΕΝ ΑΡΚΟΥΝ",
+      "url": "https://www.in.gr/2026/08/16/in-science/ai/poso-asfalis-einai-simera-i-texniti-noimosyni-ti-prepei-na-gnorizete/",
+      "title": "Πόσο ασφαλής είναι σήμερα η τεχνητή νοημοσύνη; – Τι πρέπει να γνωρίζετε",
+      "normalized_title": "ΠΟΣΟ ΑΣΦΑΛΗΣ ΕΙΝΑΙ ΣΗΜΕΡΑ Η ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ; – ΤΙ ΠΡΕΠΕΙ ΝΑ ΓΝΩΡΙΖΕΤΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/economy/agro-in/i-ksirasia-apeilei-ti-georgia-stin-eyropi-ta-apothematika-tis-krisis-den-arkoun/"
+        "https://www.in.gr/2026/08/16/in-science/ai/poso-asfalis-einai-simera-i-texniti-noimosyni-ti-prepei-na-gnorizete/",
+        "https://www.in.gr/2026/08/16/world/sxedio-oikonomikis-asfyksias-tou-iran-oi-pente-epiloges-sto-trapezi-tis-kyvernisis-tramp/",
+        "https://www.in.gr/2026/08/16/sports/football/kristiano-ronalnto-pithanotata-tha-einai-i-teleytaia-mou-xronia-sto-podosfairo/"
       ],
-      "seen_at_utc": "2026-08-16T19:30:10.167249+00:00"
+      "seen_at_utc": "2026-08-16T19:51:34.425787+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T19:30:10.167376+00:00"
+  "updated_at_utc": "2026-08-16T19:51:34.425881+00:00"
 }
