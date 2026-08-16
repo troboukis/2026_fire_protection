@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564404869/i-dramatiki-epistrofi-toy-proedroy-tis-goyineas-meta-tis-diakopes-toy-stin-ellada-vinteo/",
-      "title": "Η δραματική επιστροφή του προέδρου της Γουινέας μετά τις διακοπές του στην Ελλάδα – Βίντεο",
-      "normalized_title": "Η ΔΡΑΜΑΤΙΚΗ ΕΠΙΣΤΡΟΦΗ ΤΟΥ ΠΡΟΕΔΡΟΥ ΤΗΣ ΓΟΥΙΝΕΑΣ ΜΕΤΑ ΤΙΣ ΔΙΑΚΟΠΕΣ ΤΟΥ ΣΤΗΝ ΕΛΛΑΔΑ – ΒΙΝΤΕΟ",
+      "url": "https://www.kathimerini.gr/economy/564402400/ayxisi-40-ston-mistho-ton-neon-se-mia-4etia/",
+      "title": "Αύξηση 40% στον μισθό των νέων σε μια 4ετία",
+      "normalized_title": "ΑΥΞΗΣΗ 40% ΣΤΟΝ ΜΙΣΘΟ ΤΩΝ ΝΕΩΝ ΣΕ ΜΙΑ 4ΕΤΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564404869/i-dramatiki-epistrofi-toy-proedroy-tis-goyineas-meta-tis-diakopes-toy-stin-ellada-vinteo/"
+        "https://www.kathimerini.gr/economy/564402400/ayxisi-40-ston-mistho-ton-neon-se-mia-4etia/"
       ],
-      "seen_at_utc": "2026-08-16T08:17:00.528288+00:00"
+      "seen_at_utc": "2026-08-16T08:30:04.446615+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1270,26 @@
       "seen_at_utc": "2026-08-16T08:17:00.528449+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1448555/aade-prostimo-132-ekat-eyro-se-epiheirisi-noikiaze-132-aytokinita-poy-eihe-dilosei-se-akinisia-sti-dytiki-ellada/",
-      "title": "ΑΑΔΕ: Πρόστιμο 1,32 εκατ. ευρώ σε επιχείρηση – Νοίκιαζε 132 αυτοκίνητα που είχε δηλώσει σε ακινησία στη Δυτική Ελλάδα",
-      "normalized_title": "ΑΑΔΕ: ΠΡΟΣΤΙΜΟ 1,32 ΕΚΑΤ. ΕΥΡΩ ΣΕ ΕΠΙΧΕΙΡΗΣΗ – ΝΟΙΚΙΑΖΕ 132 ΑΥΤΟΚΙΝΗΤΑ ΠΟΥ ΕΙΧΕ ΔΗΛΩΣΕΙ ΣΕ ΑΚΙΝΗΣΙΑ ΣΤΗ ΔΥΤΙΚΗ ΕΛΛΑΔΑ",
+      "url": "https://www.efsyn.gr/ellada/1448562/koryfonetai-i-exodos-ton-ekdromeon-apo-ta-limania-tis-attikis/",
+      "title": "Κορυφώνεται η έξοδος των εκδρομέων από τα λιμάνια της Αττικής",
+      "normalized_title": "ΚΟΡΥΦΩΝΕΤΑΙ Η ΕΞΟΔΟΣ ΤΩΝ ΕΚΔΡΟΜΕΩΝ ΑΠΟ ΤΑ ΛΙΜΑΝΙΑ ΤΗΣ ΑΤΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1448555/aade-prostimo-132-ekat-eyro-se-epiheirisi-noikiaze-132-aytokinita-poy-eihe-dilosei-se-akinisia-sti-dytiki-ellada/"
+        "https://www.efsyn.gr/ellada/1448562/koryfonetai-i-exodos-ton-ekdromeon-apo-ta-limania-tis-attikis/",
+        "https://www.efsyn.gr/stiles/1447785/tha-epiviosei-o-syriza/",
+        "https://www.efsyn.gr/stiles/1447801/to-xediploma-toy-halioy/",
+        "https://www.efsyn.gr/stiles/1447789/tsipras-enopsei-pyr-omadon/"
       ],
-      "seen_at_utc": "2026-08-16T08:17:00.528395+00:00"
+      "seen_at_utc": "2026-08-16T08:30:04.446789+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/economy/diethnis-oikonomia/den-einai-neoi-kai-oraioi-omos-oi-boomers-einai-plousioi-kai-gyrizoun-ton-kosmo/",
-      "title": "Δεν είναι νέοι και ωραίοι, όμως οι boomers είναι πλούσιοι και γυρίζουν τον κόσμο",
-      "normalized_title": "ΔΕΝ ΕΙΝΑΙ ΝΕΟΙ ΚΑΙ ΩΡΑΙΟΙ, ΟΜΩΣ ΟΙ BOOMERS ΕΙΝΑΙ ΠΛΟΥΣΙΟΙ ΚΑΙ ΓΥΡΙΖΟΥΝ ΤΟΝ ΚΟΣΜΟ",
+      "url": "https://www.in.gr/2026/08/16/greece/aade-prostimo-132-ekat-eyro-se-epixeirisi-pou-noikiaze-aytokinita-pou-eixe-dilosei-se-akinisia/",
+      "title": "Νοίκιαζαν αυτοκίνητα που είχαν δηλώσει σε ακινησία - Καμπάνα 1,32 εκατ. ευρώ από την ΑΑΔΕ",
+      "normalized_title": "ΝΟΙΚΙΑΖΑΝ ΑΥΤΟΚΙΝΗΤΑ ΠΟΥ ΕΙΧΑΝ ΔΗΛΩΣΕΙ ΣΕ ΑΚΙΝΗΣΙΑ - ΚΑΜΠΑΝΑ 1,32 ΕΚΑΤ. ΕΥΡΩ ΑΠΟ ΤΗΝ ΑΑΔΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/economy/diethnis-oikonomia/den-einai-neoi-kai-oraioi-omos-oi-boomers-einai-plousioi-kai-gyrizoun-ton-kosmo/",
-        "https://www.in.gr/2026/08/16/world/seismos-stin-kolomvia-thysiase-ti-zoi-tis-gia-na-sosei-ton-skylo-tis-otan-agapas-kati-to-prostateyeis/",
-        "https://www.in.gr/2026/08/16/sports/othersports/oi-athlitikes-metadoseis-tis-imeras-16-8-drasi-me-eyropaiko-stivou-arsenal-siti-kai-la-liga/",
-        "https://www.in.gr/2026/08/16/life/music/i-bjork-forese-700-mpalonia-ki-epaikse-mousiki-sto-rave-tis-iliakis-ekleipsis-stin-islandia/",
-        "https://www.in.gr/2026/08/16/apopsi/i-odysseia-os-mplokmpaster-oi-arxaioi-mythoi-tou-neofileleytherismou/",
-        "https://www.in.gr/2026/08/16/greece/eksodos-ayksimeni-i-kinisi-sta-tria-limania-tis-attikis-feygoun-kata-xiliades-pros-ta-nisia/"
+        "https://www.in.gr/2026/08/16/greece/aade-prostimo-132-ekat-eyro-se-epixeirisi-pou-noikiaze-aytokinita-pou-eixe-dilosei-se-akinisia/"
       ],
-      "seen_at_utc": "2026-08-16T08:17:00.528340+00:00"
+      "seen_at_utc": "2026-08-16T08:30:04.446704+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T08:17:00.528532+00:00"
+  "updated_at_utc": "2026-08-16T08:30:04.446869+00:00"
 }
