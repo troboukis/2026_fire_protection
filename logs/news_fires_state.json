@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564404776/pyrkagia-sti-skyro-enischyseis-apo-attiki-eyvoia-kai-thessalia-machi-me-tis-floges-sto-metopo-pros-to-peyko/",
-      "title": "Πυρκαγιά στη Σκύρο: Ενισχύσεις από Αττική, Εύβοια και Θεσσαλία – Μάχη με τις φλόγες στο μέτωπο προς το Πεύκο",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΚΥΡΟ: ΕΝΙΣΧΥΣΕΙΣ ΑΠΟ ΑΤΤΙΚΗ, ΕΥΒΟΙΑ ΚΑΙ ΘΕΣΣΑΛΙΑ – ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΣΤΟ ΜΕΤΩΠΟ ΠΡΟΣ ΤΟ ΠΕΥΚΟ",
+      "url": "https://www.kathimerini.gr/economy/564402493/oi-kaysones-kaine-tin-oikonomia/",
+      "title": "Οι καύσωνες «καίνε» την οικονομία",
+      "normalized_title": "ΟΙ ΚΑΥΣΩΝΕΣ «ΚΑΙΝΕ» ΤΗΝ ΟΙΚΟΝΟΜΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564404776/pyrkagia-sti-skyro-enischyseis-apo-attiki-eyvoia-kai-thessalia-machi-me-tis-floges-sto-metopo-pros-to-peyko/"
+        "https://www.kathimerini.gr/economy/564402493/oi-kaysones-kaine-tin-oikonomia/",
+        "https://www.kathimerini.gr/society/564404782/red-code-kai-simera-se-attiki-voiotia-eyvoia-kyklades-kai-kriti/"
       ],
-      "seen_at_utc": "2026-08-16T04:17:19.663921+00:00"
+      "seen_at_utc": "2026-08-16T04:30:01.023669+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,14 +1260,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865357/to-blue-star-mukonos-apedose-times-sti-megalohari-tis-tinou-deite-video/?utm_source=rss",
-      "title": "Το Blue Star Μύκονος απέδωσε τιμές στη Μεγαλόχαρη της Τήνου, δείτε βίντεο",
-      "normalized_title": "ΤΟ BLUE STAR ΜΥΚΟΝΟΣ ΑΠΕΔΩΣΕ ΤΙΜΕΣ ΣΤΗ ΜΕΓΑΛΟΧΑΡΗ ΤΗΣ ΤΗΝΟΥ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1865384/epimenoun-oi-ishuroi-anemoi-se-red-code-gia-purkagies-se-7-periohes/?utm_source=rss",
+      "title": "Επιμένουν οι ισχυροί άνεμοι, σε red code για πυρκαγιές σε 7 περιοχές",
+      "normalized_title": "ΕΠΙΜΕΝΟΥΝ ΟΙ ΙΣΧΥΡΟΙ ΑΝΕΜΟΙ, ΣΕ RED CODE ΓΙΑ ΠΥΡΚΑΓΙΕΣ ΣΕ 7 ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865357/to-blue-star-mukonos-apedose-times-sti-megalohari-tis-tinou-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865355/duo-traumaties-apo-sugrousi-tahuploou-me-istioforo-exo-apo-to-limani-tis-eretrias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865384/epimenoun-oi-ishuroi-anemoi-se-red-code-gia-purkagies-se-7-periohes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-15T21:17:06.456970+00:00"
+      "seen_at_utc": "2026-08-16T04:30:01.023732+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/ellada/1448480/eyvoia-sygkroysi-tahyplooy-me-istioforo-exo-apo-tin-eretria-dyo-traymaties/",
@@ -1293,5 +1293,5 @@
       "seen_at_utc": "2026-08-16T04:17:19.663971+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T04:17:19.664058+00:00"
+  "updated_at_utc": "2026-08-16T04:30:01.023824+00:00"
 }
