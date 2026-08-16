@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564405280/anagkastiki-prosthalassosi-pyrosvestikoy-aeroskafoys-ston-astako-kala-stin-ygeia-toy-o-pilotos/",
-      "title": "Αναγκαστική προσθαλάσσωση πυροσβεστικού αεροσκάφους στον Αστακό – Καλά στην υγεία του ο πιλότος",
-      "normalized_title": "ΑΝΑΓΚΑΣΤΙΚΗ ΠΡΟΣΘΑΛΑΣΣΩΣΗ ΠΥΡΟΣΒΕΣΤΙΚΟΥ ΑΕΡΟΣΚΑΦΟΥΣ ΣΤΟΝ ΑΣΤΑΚΟ – ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥ Ο ΠΙΛΟΤΟΣ",
+      "url": "https://www.kathimerini.gr/society/564405250/salamina-dyo-nekroi-apo-ti-fotia-ta-senaria-gia-tis-dyo-pyrkagies/",
+      "title": "Σαλαμίνα: Δύο νεκροί από τη φωτιά – Τα σενάρια για τις δύο πυρκαγιές",
+      "normalized_title": "ΣΑΛΑΜΙΝΑ: ΔΥΟ ΝΕΚΡΟΙ ΑΠΟ ΤΗ ΦΩΤΙΑ – ΤΑ ΣΕΝΑΡΙΑ ΓΙΑ ΤΙΣ ΔΥΟ ΠΥΡΚΑΓΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564405280/anagkastiki-prosthalassosi-pyrosvestikoy-aeroskafoys-ston-astako-kala-stin-ygeia-toy-o-pilotos/"
+        "https://www.kathimerini.gr/society/564405250/salamina-dyo-nekroi-apo-ti-fotia-ta-senaria-gia-tis-dyo-pyrkagies/",
+        "https://www.kathimerini.gr/society/564405292/fotia-se-ergostasio-exo-apo-ti-larisa-hchise-to-112/"
       ],
-      "seen_at_utc": "2026-08-16T18:30:09.642039+00:00"
+      "seen_at_utc": "2026-08-16T18:52:26.588059+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865598/anagastiki-prosthalassosi-ekane-purosvestiko-aeroskafos-ston-astako-aitoloakarnanias-kala-stin-ugeia-tou-o-pilotos/?utm_source=rss",
-      "title": "Αναγκαστική προσθαλάσσωση έκανε πυροσβεστικό αεροσκάφος στον Αστακό Αιτωλοακαρνανίας, καλά στην υγεία του ο πιλότος",
-      "normalized_title": "ΑΝΑΓΚΑΣΤΙΚΗ ΠΡΟΣΘΑΛΑΣΣΩΣΗ ΕΚΑΝΕ ΠΥΡΟΣΒΕΣΤΙΚΟ ΑΕΡΟΣΚΑΦΟΣ ΣΤΟΝ ΑΣΤΑΚΟ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥ Ο ΠΙΛΟΤΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1865609/fotia-tora-stin-kalumno-minuma-tou-112-gia-etoimotita-sta-vluhadia/?utm_source=rss",
+      "title": "Φωτιά στην Κάλυμνο: Μήνυμα του 112 για ετοιμότητα στα Βλυχάδια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΑΛΥΜΝΟ: ΜΗΝΥΜΑ ΤΟΥ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ ΣΤΑ ΒΛΥΧΑΔΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865598/anagastiki-prosthalassosi-ekane-purosvestiko-aeroskafos-ston-astako-aitoloakarnanias-kala-stin-ugeia-tou-o-pilotos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865609/fotia-tora-stin-kalumno-minuma-tou-112-gia-etoimotita-sta-vluhadia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865608/fovithika-tha-borouse-na-me-eihe-skotosei-leei-o-71hronos-pou-xulokopithike-apo-odigo-taxi-stin-paro/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865607/fotia-sti-skuro-pano-apo-3600-ta-kamena-stremmata-sumfona-me-to-copernicus-paramenoun-diaspartes-esties/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-16T18:17:02.344774+00:00"
+      "seen_at_utc": "2026-08-16T18:52:26.588203+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1448736/toyrkia-dyo-nea-thalassia-parka-me-diatagmata-erntogan-se-aigaio-kai-anatoliki-mesogeio-oi-hartes/",
-      "title": "Τουρκία: Δύο νέα θαλάσσια πάρκα με διατάγματα Ερντογάν σε Αιγαίο και Ανατολική Μεσόγειο – Οι χάρτες",
-      "normalized_title": "ΤΟΥΡΚΙΑ: ΔΥΟ ΝΕΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ ΜΕ ΔΙΑΤΑΓΜΑΤΑ ΕΡΝΤΟΓΑΝ ΣΕ ΑΙΓΑΙΟ ΚΑΙ ΑΝΑΤΟΛΙΚΗ ΜΕΣΟΓΕΙΟ – ΟΙ ΧΑΡΤΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1448748/kaigetai-ergostasio-me-plastika-sti-larisa-ihise-to-112/",
+      "title": "Καίγεται εργοστάσιο με πλαστικά στη Λάρισα – Ήχησε το 112",
+      "normalized_title": "ΚΑΙΓΕΤΑΙ ΕΡΓΟΣΤΑΣΙΟ ΜΕ ΠΛΑΣΤΙΚΑ ΣΤΗ ΛΑΡΙΣΑ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1448736/toyrkia-dyo-nea-thalassia-parka-me-diatagmata-erntogan-se-aigaio-kai-anatoliki-mesogeio-oi-hartes/"
+        "https://www.efsyn.gr/ellada/1448748/kaigetai-ergostasio-me-plastika-sti-larisa-ihise-to-112/",
+        "https://www.efsyn.gr/ellada/1448745/fotia-sto-mesologgi-anagkastiki-prosthalassosi-pyrosvestikoy-aeroskafoys/",
+        "https://www.efsyn.gr/ellada/1448743/idiotika-panepistimia-o-kathigitis-poy-ekane-tin-prosfygi-exigei-ti-simainei-i-apofasi-toy-ste/"
       ],
-      "seen_at_utc": "2026-08-16T18:17:02.344748+00:00"
+      "seen_at_utc": "2026-08-16T18:52:26.588173+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/greece/salamina-antikrouomenes-plirofories-gia-tin-enarksi-tis-pyrkagias-sta-peristeria/",
-      "title": "Αντικρουόμενες πληροφορίες για την έναρξη της πυρκαγιάς στα Περιστέρια Σαλαμίνας",
-      "normalized_title": "ΑΝΤΙΚΡΟΥΟΜΕΝΕΣ ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΗΝ ΕΝΑΡΞΗ ΤΗΣ ΠΥΡΚΑΓΙΑΣ ΣΤΑ ΠΕΡΙΣΤΕΡΙΑ ΣΑΛΑΜΙΝΑΣ",
+      "url": "https://www.in.gr/2026/08/16/politics/epikairotita/i-elas-gia-ti-foniki-pyrkagia-sti-salamina-proexoun-i-prostasia-tis-anthropinis-zois-kai-i-stiriksi-ton-pligenton/",
+      "title": "Η ΕΛΑΣ για τη φονική πυρκαγιά στη Σαλαμίνα: Προέχουν η προστασία της ανθρώπινης ζωής και η στήριξη των πληγέντων",
+      "normalized_title": "Η ΕΛΑΣ ΓΙΑ ΤΗ ΦΟΝΙΚΗ ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΑΛΑΜΙΝΑ: ΠΡΟΕΧΟΥΝ Η ΠΡΟΣΤΑΣΙΑ ΤΗΣ ΑΝΘΡΩΠΙΝΗΣ ΖΩΗΣ ΚΑΙ Η ΣΤΗΡΙΞΗ ΤΩΝ ΠΛΗΓΕΝΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/greece/salamina-antikrouomenes-plirofories-gia-tin-enarksi-tis-pyrkagias-sta-peristeria/"
+        "https://www.in.gr/2026/08/16/politics/epikairotita/i-elas-gia-ti-foniki-pyrkagia-sti-salamina-proexoun-i-prostasia-tis-anthropinis-zois-kai-i-stiriksi-ton-pligenton/",
+        "https://www.in.gr/2026/08/16/greece/fotia-stin-kalymno-minyma-apo-to-112/",
+        "https://www.in.gr/2026/08/16/sports/football/estakse-meli-gia-ton-tzoli-o-arteta-einai-eksypnos-akrivis-pairnei-tis-sostes-apofaseis-se-mikrous-xorous/",
+        "https://www.in.gr/2026/08/16/greece/megali-fotia-se-ergostasio-plastikon-sti-larisa-minyma-apo-to-112-gia-tous-kapnous/"
       ],
-      "seen_at_utc": "2026-08-16T18:30:09.642098+00:00"
+      "seen_at_utc": "2026-08-16T18:52:26.588141+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T18:30:09.642178+00:00"
+  "updated_at_utc": "2026-08-16T18:52:26.588312+00:00"
 }
