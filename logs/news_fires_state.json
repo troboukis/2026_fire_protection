@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564402400/ayxisi-40-ston-mistho-ton-neon-se-mia-4etia/",
-      "title": "Αύξηση 40% στον μισθό των νέων σε μια 4ετία",
-      "normalized_title": "ΑΥΞΗΣΗ 40% ΣΤΟΝ ΜΙΣΘΟ ΤΩΝ ΝΕΩΝ ΣΕ ΜΙΑ 4ΕΤΙΑ",
+      "url": "https://www.kathimerini.gr/society/564404890/chania-synelifthisan-oi-kidemones-trion-anilikon-den-toys-prostateysan-apo-katanalosi-alkool/",
+      "title": "Χανιά: Συνελήφθησαν οι κηδεμόνες τριών ανηλίκων – Δεν τούς προστάτευσαν από κατανάλωση αλκοόλ",
+      "normalized_title": "ΧΑΝΙΑ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΚΗΔΕΜΟΝΕΣ ΤΡΙΩΝ ΑΝΗΛΙΚΩΝ – ΔΕΝ ΤΟΥΣ ΠΡΟΣΤΑΤΕΥΣΑΝ ΑΠΟ ΚΑΤΑΝΑΛΩΣΗ ΑΛΚΟΟΛ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564402400/ayxisi-40-ston-mistho-ton-neon-se-mia-4etia/"
+        "https://www.kathimerini.gr/society/564404890/chania-synelifthisan-oi-kidemones-trion-anilikon-den-toys-prostateysan-apo-katanalosi-alkool/",
+        "https://www.kathimerini.gr/k/gastronomos/564404881/peltes-ntomatas/"
       ],
-      "seen_at_utc": "2026-08-16T08:30:04.446615+00:00"
+      "seen_at_utc": "2026-08-16T08:51:14.952661+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865480/kriti-pigan-katakoiti-giagia-me-tin-xaplostra-se-paniguri-kai-ekeini-heirokrotouse-deite-video/?utm_source=rss",
-      "title": "Επικό σκηνικό σε πανηγύρι στο Μυλοπόταμο: Σήκωσαν κατάκοιτη γιαγιά με την ξαπλώστρα στα χέρια και εκείνη χειροκροτούσε την ορχήστρα, δείτε βίντεο",
-      "normalized_title": "ΕΠΙΚΟ ΣΚΗΝΙΚΟ ΣΕ ΠΑΝΗΓΥΡΙ ΣΤΟ ΜΥΛΟΠΟΤΑΜΟ: ΣΗΚΩΣΑΝ ΚΑΤΑΚΟΙΤΗ ΓΙΑΓΙΑ ΜΕ ΤΗΝ ΞΑΠΛΩΣΤΡΑ ΣΤΑ ΧΕΡΙΑ ΚΑΙ ΕΚΕΙΝΗ ΧΕΙΡΟΚΡΟΤΟΥΣΕ ΤΗΝ ΟΡΧΗΣΤΡΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1865490/thessaloniki-sunelifthi-35hroni-stin-kalamaria-pou-poulise-alkool-se-epta-anilikous/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Συνελήφθη 35χρονη στην Καλαμαριά που πούλησε αλκοόλ σε επτά ανήλικους",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 35ΧΡΟΝΗ ΣΤΗΝ ΚΑΛΑΜΑΡΙΑ ΠΟΥ ΠΟΥΛΗΣΕ ΑΛΚΟΟΛ ΣΕ ΕΠΤΑ ΑΝΗΛΙΚΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865480/kriti-pigan-katakoiti-giagia-me-tin-xaplostra-se-paniguri-kai-ekeini-heirokrotouse-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865477/hania-treis-anilikoi-sto-nosokomeio-meta-apo-katanalosi-alkool-sunelifthisan-oi-kidemones-tous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865467/paros-ti-poines-adimetopizei-o-odigos-taxi-pou-gronthokopise-ton-ilikiomeno/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865490/thessaloniki-sunelifthi-35hroni-stin-kalamaria-pou-poulise-alkool-se-epta-anilikous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-16T08:17:00.528449+00:00"
+      "seen_at_utc": "2026-08-16T08:51:14.952755+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1448562/koryfonetai-i-exodos-ton-ekdromeon-apo-ta-limania-tis-attikis/",
-      "title": "Κορυφώνεται η έξοδος των εκδρομέων από τα λιμάνια της Αττικής",
-      "normalized_title": "ΚΟΡΥΦΩΝΕΤΑΙ Η ΕΞΟΔΟΣ ΤΩΝ ΕΚΔΡΟΜΕΩΝ ΑΠΟ ΤΑ ΛΙΜΑΝΙΑ ΤΗΣ ΑΤΤΙΚΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1448564/sygklonistiki-diasosi-sto-verolino-gynaika-pida-sto-keno-gia-na-sothei-apo-fotia-vinteo/",
+      "title": "Συγκλονιστική διάσωση στο Βερολίνο: Γυναίκα πηδά στο κενό για να σωθεί από φωτιά [βίντεο]",
+      "normalized_title": "ΣΥΓΚΛΟΝΙΣΤΙΚΗ ΔΙΑΣΩΣΗ ΣΤΟ ΒΕΡΟΛΙΝΟ: ΓΥΝΑΙΚΑ ΠΗΔΑ ΣΤΟ ΚΕΝΟ ΓΙΑ ΝΑ ΣΩΘΕΙ ΑΠΟ ΦΩΤΙΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1448562/koryfonetai-i-exodos-ton-ekdromeon-apo-ta-limania-tis-attikis/",
-        "https://www.efsyn.gr/stiles/1447785/tha-epiviosei-o-syriza/",
-        "https://www.efsyn.gr/stiles/1447801/to-xediploma-toy-halioy/",
-        "https://www.efsyn.gr/stiles/1447789/tsipras-enopsei-pyr-omadon/"
+        "https://www.efsyn.gr/kosmos/1448564/sygklonistiki-diasosi-sto-verolino-gynaika-pida-sto-keno-gia-na-sothei-apo-fotia-vinteo/"
       ],
-      "seen_at_utc": "2026-08-16T08:30:04.446789+00:00"
+      "seen_at_utc": "2026-08-16T08:51:14.952733+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/greece/aade-prostimo-132-ekat-eyro-se-epixeirisi-pou-noikiaze-aytokinita-pou-eixe-dilosei-se-akinisia/",
-      "title": "Νοίκιαζαν αυτοκίνητα που είχαν δηλώσει σε ακινησία - Καμπάνα 1,32 εκατ. ευρώ από την ΑΑΔΕ",
-      "normalized_title": "ΝΟΙΚΙΑΖΑΝ ΑΥΤΟΚΙΝΗΤΑ ΠΟΥ ΕΙΧΑΝ ΔΗΛΩΣΕΙ ΣΕ ΑΚΙΝΗΣΙΑ - ΚΑΜΠΑΝΑ 1,32 ΕΚΑΤ. ΕΥΡΩ ΑΠΟ ΤΗΝ ΑΑΔΕ",
+      "url": "https://www.in.gr/2026/08/16/world/tragodia-stin-ouggaria-12-nekroi-kai-10-traymaties-se-dystyxima-me-poloniko-leoforeio/",
+      "title": "Tραγωδία στην Ουγγαρία: 12 νεκροί και 10 τραυματίες σε δυστύχημα με πολωνικό λεωφορείο",
+      "normalized_title": "TΡΑΓΩΔΙΑ ΣΤΗΝ ΟΥΓΓΑΡΙΑ: 12 ΝΕΚΡΟΙ ΚΑΙ 10 ΤΡΑΥΜΑΤΙΕΣ ΣΕ ΔΥΣΤΥΧΗΜΑ ΜΕ ΠΟΛΩΝΙΚΟ ΛΕΩΦΟΡΕΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/greece/aade-prostimo-132-ekat-eyro-se-epixeirisi-pou-noikiaze-aytokinita-pou-eixe-dilosei-se-akinisia/"
+        "https://www.in.gr/2026/08/16/world/tragodia-stin-ouggaria-12-nekroi-kai-10-traymaties-se-dystyxima-me-poloniko-leoforeio/",
+        "https://www.in.gr/2026/08/16/greece/mani/",
+        "https://www.in.gr/2026/08/16/sports/basketball/euroleague/eksartatai-apo-ton-olympiako-osa-apokalypse-o-gm-tis-ntoumpai-gia-ton-gouokap/",
+        "https://www.in.gr/2026/08/16/world/akoma-enas-iranos-ektelestike-gia-tis-antikyvernitikes-diadiloseis/"
       ],
-      "seen_at_utc": "2026-08-16T08:30:04.446704+00:00"
+      "seen_at_utc": "2026-08-16T08:51:14.952707+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T08:30:04.446869+00:00"
+  "updated_at_utc": "2026-08-16T08:51:14.952816+00:00"
 }
