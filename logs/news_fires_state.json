@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564405322/apantisi-ypex-se-agkyra-paranoma-ta-toyrkika-thalassia-parka-den-dimioyrgoyn-tetelesmena/",
-      "title": "Απάντηση ΥΠΕΞ σε Αγκυρα: «Παράνομα τα τουρκικά θαλάσσια πάρκα, δεν δημιουργούν τετελεσμένα»",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΥΠΕΞ ΣΕ ΑΓΚΥΡΑ: «ΠΑΡΑΝΟΜΑ ΤΑ ΤΟΥΡΚΙΚΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ, ΔΕΝ ΔΗΜΙΟΥΡΓΟΥΝ ΤΕΤΕΛΕΣΜΕΝΑ»",
+      "url": "https://www.kathimerini.gr/opinion/interviews/564402046/tomas-frintman-stin-k-den-echoyme-pia-politiki-mono-parormiseis/",
+      "title": "Τόμας Φρίντμαν στην «Κ»: Δεν έχουμε πια πολιτική. Μόνο παρορμήσεις",
+      "normalized_title": "ΤΟΜΑΣ ΦΡΙΝΤΜΑΝ ΣΤΗΝ «Κ»: ΔΕΝ ΕΧΟΥΜΕ ΠΙΑ ΠΟΛΙΤΙΚΗ. ΜΟΝΟ ΠΑΡΟΡΜΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564405322/apantisi-ypex-se-agkyra-paranoma-ta-toyrkika-thalassia-parka-den-dimioyrgoyn-tetelesmena/"
+        "https://www.kathimerini.gr/opinion/interviews/564402046/tomas-frintman-stin-k-den-echoyme-pia-politiki-mono-parormiseis/",
+        "https://www.kathimerini.gr/culture/564402679/o-ichos-tis-apoleias-se-soympert-kai-mpach/"
       ],
-      "seen_at_utc": "2026-08-16T19:17:29.885856+00:00"
+      "seen_at_utc": "2026-08-16T19:30:10.167159+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,29 +1270,23 @@
       "seen_at_utc": "2026-08-16T19:17:29.886021+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1448752/apantisi-athinas-se-agkyra-paranoma-ta-dyo-nea-thalassia-parka-den-dimioyrgoyn-tetelesmena/",
-      "title": "Απάντηση Αθήνας σε Άγκυρα: Παράνομα τα δύο νέα θαλάσσια πάρκα, δεν δημιουργούν τετελεσμένα",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΑΘΗΝΑΣ ΣΕ ΑΓΚΥΡΑ: ΠΑΡΑΝΟΜΑ ΤΑ ΔΥΟ ΝΕΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ, ΔΕΝ ΔΗΜΙΟΥΡΓΟΥΝ ΤΕΤΕΛΕΣΜΕΝΑ",
+      "url": "https://www.efsyn.gr/ellada/1448754/fotia-stin-kalymno-parameinete-se-etoimotita-leei-to-112/",
+      "title": "Φωτιά στην Κάλυμνο: «Παραμείνετε σε ετοιμότητα» λέει το 112",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΑΛΥΜΝΟ: «ΠΑΡΑΜΕΙΝΕΤΕ ΣΕ ΕΤΟΙΜΟΤΗΤΑ» ΛΕΕΙ ΤΟ 112",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1448752/apantisi-athinas-se-agkyra-paranoma-ta-dyo-nea-thalassia-parka-den-dimioyrgoyn-tetelesmena/",
-        "https://www.efsyn.gr/kosmos/1448750/spaei-to-fragma-hamas-ipa-anamenetai-synantisi-me-koysner-gia-to-shedio-tramp-gia-ti-gaza/"
+        "https://www.efsyn.gr/ellada/1448754/fotia-stin-kalymno-parameinete-se-etoimotita-leei-to-112/"
       ],
-      "seen_at_utc": "2026-08-16T19:17:29.885986+00:00"
+      "seen_at_utc": "2026-08-16T19:30:10.167277+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/16/politics/politiki-grammateia/diplomatiki-entasi-gia-ta-ethnika-thalassia-parka-tis-tourkias-ixiro-minyma-apo-tin-athina/",
-      "title": "Διπλωματική ένταση για τα «εθνικά θαλάσσια πάρκα» της Τουρκίας – Ηχηρό μήνυμα από την Αθήνα",
-      "normalized_title": "ΔΙΠΛΩΜΑΤΙΚΗ ΕΝΤΑΣΗ ΓΙΑ ΤΑ «ΕΘΝΙΚΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ» ΤΗΣ ΤΟΥΡΚΙΑΣ – ΗΧΗΡΟ ΜΗΝΥΜΑ ΑΠΟ ΤΗΝ ΑΘΗΝΑ",
+      "url": "https://www.in.gr/2026/08/16/economy/agro-in/i-ksirasia-apeilei-ti-georgia-stin-eyropi-ta-apothematika-tis-krisis-den-arkoun/",
+      "title": "Η ξηρασία απειλεί τη γεωργία στην Ευρώπη – Τα αποθεματικά της κρίσης δεν αρκούν",
+      "normalized_title": "Η ΞΗΡΑΣΙΑ ΑΠΕΙΛΕΙ ΤΗ ΓΕΩΡΓΙΑ ΣΤΗΝ ΕΥΡΩΠΗ – ΤΑ ΑΠΟΘΕΜΑΤΙΚΑ ΤΗΣ ΚΡΙΣΗΣ ΔΕΝ ΑΡΚΟΥΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/16/politics/politiki-grammateia/diplomatiki-entasi-gia-ta-ethnika-thalassia-parka-tis-tourkias-ixiro-minyma-apo-tin-athina/",
-        "https://www.in.gr/2026/08/16/go-fun/fizz/gia-tin-ntrea-nte-mateo-to-onlyfans-itan-politiki-dilosi/",
-        "https://www.in.gr/2026/08/16/sports/othersports/i-aponomi-tou-xrysou-metalliou-sta-100m-yptio-ston-xristou-kai-i-anakrousi-tou-ethnikou-ymnou-vid/",
-        "https://www.in.gr/2026/08/16/greece/lasithi-fotia-se-agrotodasiki-perioxi-stin-kritsa-minyma-apo-to-112/",
-        "https://www.in.gr/2026/08/16/world/sxedio-oikonomikis-asfyksias-tou-iran-oi-pente-epiloges-sto-trapezi-tis-kyvernisis-tramp/",
-        "https://www.in.gr/2026/08/16/sports/on-field/to-megalo-provlima-tis-mantsester-siti/"
+        "https://www.in.gr/2026/08/16/economy/agro-in/i-ksirasia-apeilei-ti-georgia-stin-eyropi-ta-apothematika-tis-krisis-den-arkoun/"
       ],
-      "seen_at_utc": "2026-08-16T19:17:29.885935+00:00"
+      "seen_at_utc": "2026-08-16T19:30:10.167249+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T19:17:29.886131+00:00"
+  "updated_at_utc": "2026-08-16T19:30:10.167376+00:00"
 }
