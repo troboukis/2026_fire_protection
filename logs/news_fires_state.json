@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/interviews/564402247/ntempora-koen-stin-k-poioi-kanoyn-toys-giatroys-sta-sosial-mintia/",
-      "title": "Ντέμπορα Κοέν στην «Κ»: Ποιοι κάνουν τους γιατρούς στα σόσιαλ μίντια",
-      "normalized_title": "ΝΤΕΜΠΟΡΑ ΚΟΕΝ ΣΤΗΝ «Κ»: ΠΟΙΟΙ ΚΑΝΟΥΝ ΤΟΥΣ ΓΙΑΤΡΟΥΣ ΣΤΑ ΣΟΣΙΑΛ ΜΙΝΤΙΑ",
+      "url": "https://www.kathimerini.gr/world/564405445/iran-se-tramp-tha-soy-spasoyme-ta-podia-epikiryxi-30-000-dolarion-gia-amerikanoys-stratiotes/",
+      "title": "Ιράν σε Τραμπ: «Θα σου σπάσουμε τα πόδια» – Επικήρυξη 30.000 δολαρίων για Αμερικανούς στρατιώτες",
+      "normalized_title": "ΙΡΑΝ ΣΕ ΤΡΑΜΠ: «ΘΑ ΣΟΥ ΣΠΑΣΟΥΜΕ ΤΑ ΠΟΔΙΑ» – ΕΠΙΚΗΡΥΞΗ 30.000 ΔΟΛΑΡΙΩΝ ΓΙΑ ΑΜΕΡΙΚΑΝΟΥΣ ΣΤΡΑΤΙΩΤΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/interviews/564402247/ntempora-koen-stin-k-poioi-kanoyn-toys-giatroys-sta-sosial-mintia/"
+        "https://www.kathimerini.gr/world/564405445/iran-se-tramp-tha-soy-spasoyme-ta-podia-epikiryxi-30-000-dolarion-gia-amerikanoys-stratiotes/"
       ],
-      "seen_at_utc": "2026-08-17T05:29:56.491854+00:00"
+      "seen_at_utc": "2026-08-17T05:51:23.181924+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1259,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865663/xekinoun-oi-autopsies-sti-salamina-sto-epikedro-tis-ereunas-i-kataggelia-katoikou-gia-ti-fotia-me-tous-duo-nekrous/?utm_source=rss",
-      "title": "Ξεκινούν οι αυτοψίες στη Σαλαμίνα: Στο επίκεντρο της έρευνας η καταγγελία κατοίκου για τη φονική φωτιά με τους δύο νεκρούς",
-      "normalized_title": "ΞΕΚΙΝΟΥΝ ΟΙ ΑΥΤΟΨΙΕΣ ΣΤΗ ΣΑΛΑΜΙΝΑ: ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΤΗΣ ΕΡΕΥΝΑΣ Η ΚΑΤΑΓΓΕΛΙΑ ΚΑΤΟΙΚΟΥ ΓΙΑ ΤΗ ΦΟΝΙΚΗ ΦΩΤΙΑ ΜΕ ΤΟΥΣ ΔΥΟ ΝΕΚΡΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1865686/horis-energes-esties-i-fotia-sto-ergostasio-plastikon-paramenoun-purosvestikes-dunameis-sto-simeio/?utm_source=rss",
+      "title": "Χωρίς ενεργές εστίες η φωτιά στο εργοστάσιο πλαστικών στη Λάρισα, παραμένουν πυροσβεστικές δυνάμεις στο σημείο",
+      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΕΣ ΕΣΤΙΕΣ Η ΦΩΤΙΑ ΣΤΟ ΕΡΓΟΣΤΑΣΙΟ ΠΛΑΣΤΙΚΩΝ ΣΤΗ ΛΑΡΙΣΑ, ΠΑΡΑΜΕΝΟΥΝ ΠΥΡΟΣΒΕΣΤΙΚΕΣ ΔΥΝΑΜΕΙΣ ΣΤΟ ΣΗΜΕΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865663/xekinoun-oi-autopsies-sti-salamina-sto-epikedro-tis-ereunas-i-kataggelia-katoikou-gia-ti-fotia-me-tous-duo-nekrous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865686/horis-energes-esties-i-fotia-sto-ergostasio-plastikon-paramenoun-purosvestikes-dunameis-sto-simeio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T05:17:12.235844+00:00"
+      "seen_at_utc": "2026-08-17T05:51:23.182084+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1448825/sto-mikroskopio-tis-athinas-oi-epafes-fintan-se-livyi-kai-aigypto/",
-      "title": "Στο μικροσκόπιο της Αθήνας οι επαφές Φιντάν σε Λιβύη και Αίγυπτο",
-      "normalized_title": "ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΗΣ ΑΘΗΝΑΣ ΟΙ ΕΠΑΦΕΣ ΦΙΝΤΑΝ ΣΕ ΛΙΒΥΗ ΚΑΙ ΑΙΓΥΠΤΟ",
+      "url": "https://www.efsyn.gr/athlitismos/1448854/emmanoyil-karalis-i-ypodohi-meta-to-asimenio-metallio-sto-eyropaiko-pame-na-ta-pioyme-vinteo/",
+      "title": "Εμμανουήλ Καραλής: Η υποδοχή μετά το ασημένιο μετάλλιο στο ευρωπαϊκό – «Πάμε να τα πιούμε» [βίντεο]",
+      "normalized_title": "ΕΜΜΑΝΟΥΗΛ ΚΑΡΑΛΗΣ: Η ΥΠΟΔΟΧΗ ΜΕΤΑ ΤΟ ΑΣΗΜΕΝΙΟ ΜΕΤΑΛΛΙΟ ΣΤΟ ΕΥΡΩΠΑΙΚΟ – «ΠΑΜΕ ΝΑ ΤΑ ΠΙΟΥΜΕ» [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1448825/sto-mikroskopio-tis-athinas-oi-epafes-fintan-se-livyi-kai-aigypto/",
-        "https://www.efsyn.gr/kosmos/1448813/neo-hastoyki-gia-ton-tramp-ton-adeiase-gia-to-iran-akomi-kai-o-antiproedros-toy/"
+        "https://www.efsyn.gr/athlitismos/1448854/emmanoyil-karalis-i-ypodohi-meta-to-asimenio-metallio-sto-eyropaiko-pame-na-ta-pioyme-vinteo/",
+        "https://www.efsyn.gr/politiki/1448857/pote-kaneis-ekloges/",
+        "https://www.efsyn.gr/politiki/1448831/anasygkrotisi-evroy-enopion-ton-eythynon-tis-i-kyvernisi-8-erotimata-gia-tin-epomeni-imera/",
+        "https://www.efsyn.gr/politiki/1448844/mpoylekos-oi-portes-toy-syriza-einai-anoiktes-horis-pistopoiitika-politikon-fronimaton/",
+        "https://www.efsyn.gr/politiki/1448842/o-karahalios-anakoinose-poion-stirizei-pleon-meta-ti-rixi-me-karystianoy/"
       ],
-      "seen_at_utc": "2026-08-17T05:29:56.491949+00:00"
+      "seen_at_utc": "2026-08-17T05:51:23.182038+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/world/velgio-staxti-30-000-stremmata-apo-megali-dasiki-pyrkagia-ekkenothike-poli-tis-germanias-konta-sta-synora/",
-      "title": "Πύρινη κόλαση στο Βέλγιο: Στάχτη 30.000 στρέμματα - Εκκενώθηκε πόλη της Γερμανίας κοντά στα σύνορα",
-      "normalized_title": "ΠΥΡΙΝΗ ΚΟΛΑΣΗ ΣΤΟ ΒΕΛΓΙΟ: ΣΤΑΧΤΗ 30.000 ΣΤΡΕΜΜΑΤΑ - ΕΚΚΕΝΩΘΗΚΕ ΠΟΛΗ ΤΗΣ ΓΕΡΜΑΝΙΑΣ ΚΟΝΤΑ ΣΤΑ ΣΥΝΟΡΑ",
+      "url": "https://www.in.gr/2026/08/17/greece/paros-mou-zitise-na-aposyro-ti-minysi-kai-arnithika-ti-leei-o-ilikiomenos-pou-ksylokopithike-apo-taksitzi/",
+      "title": "«Μου ζήτησε να αποσύρω τη μήνυση και αρνήθηκα» - Τι λέει ο ηλικιωμένος που ξυλοκοπήθηκε από ταξιτζή",
+      "normalized_title": "«ΜΟΥ ΖΗΤΗΣΕ ΝΑ ΑΠΟΣΥΡΩ ΤΗ ΜΗΝΥΣΗ ΚΑΙ ΑΡΝΗΘΗΚΑ» - ΤΙ ΛΕΕΙ Ο ΗΛΙΚΙΩΜΕΝΟΣ ΠΟΥ ΞΥΛΟΚΟΠΗΘΗΚΕ ΑΠΟ ΤΑΞΙΤΖΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/world/velgio-staxti-30-000-stremmata-apo-megali-dasiki-pyrkagia-ekkenothike-poli-tis-germanias-konta-sta-synora/",
-        "https://www.in.gr/2026/08/17/sports/on-field/ta-epta-vimata-pou-den-ekane-o-lanoua-kai-i-diaitisia-pire-tin-katifora/"
+        "https://www.in.gr/2026/08/17/greece/paros-mou-zitise-na-aposyro-ti-minysi-kai-arnithika-ti-leei-o-ilikiomenos-pou-ksylokopithike-apo-taksitzi/",
+        "https://www.in.gr/2026/08/17/world/zimpampoue-se-84-anilthe-o-arithmos-ton-nekron-apo-to-nayagio-tou-feri-paidia-anamesa-sta-thymata/",
+        "https://www.in.gr/2026/08/17/sports/football/irthe-stin-athina-gia-tin-aek-o-ariagka/",
+        "https://www.in.gr/2026/08/17/greece/fotia-sti-salamina-poia-i-katastasi-ton-traymation-gynaika-exei-kaei-sto-25-tou-somatos-tis/"
       ],
-      "seen_at_utc": "2026-08-17T05:29:56.491909+00:00"
+      "seen_at_utc": "2026-08-17T05:51:23.181990+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T05:29:56.492020+00:00"
+  "updated_at_utc": "2026-08-17T05:51:23.182192+00:00"
 }
