@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564405385/o-tramp-meionei-ti-symmetochi-toy-amerikanikoy-stratoy-sta-etisia-gymnasia-me-ti-notia-korea/",
-      "title": "Ο Τραμπ μειώνει τη συμμετοχή του αμερικανικού στρατού στα ετήσια γυμνάσια με τη Νότια Κορέα",
-      "normalized_title": "Ο ΤΡΑΜΠ ΜΕΙΩΝΕΙ ΤΗ ΣΥΜΜΕΤΟΧΗ ΤΟΥ ΑΜΕΡΙΚΑΝΙΚΟΥ ΣΤΡΑΤΟΥ ΣΤΑ ΕΤΗΣΙΑ ΓΥΜΝΑΣΙΑ ΜΕ ΤΗ ΝΟΤΙΑ ΚΟΡΕΑ",
+      "url": "https://www.kathimerini.gr/world/564405418/meta-tis-epafes-me-chamas-o-koysner-synanta-ton-netaniachoy-sto-epikentro-i-gaza/",
+      "title": "Μετά τις επαφές με Χαμάς, ο Κούσνερ συναντά τον Νετανιάχου – Στο επίκεντρο η Γάζα",
+      "normalized_title": "ΜΕΤΑ ΤΙΣ ΕΠΑΦΕΣ ΜΕ ΧΑΜΑΣ, Ο ΚΟΥΣΝΕΡ ΣΥΝΑΝΤΑ ΤΟΝ ΝΕΤΑΝΙΑΧΟΥ – ΣΤΟ ΕΠΙΚΕΝΤΡΟ Η ΓΑΖΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564405385/o-tramp-meionei-ti-symmetochi-toy-amerikanikoy-stratoy-sta-etisia-gymnasia-me-ti-notia-korea/",
-        "https://www.kathimerini.gr/society/564405382/kairos-mikri-anodos-tis-thermokrasias-poy-anamenontai-vroches-3/"
+        "https://www.kathimerini.gr/world/564405418/meta-tis-epafes-me-chamas-o-koysner-synanta-ton-netaniachoy-sto-epikentro-i-gaza/",
+        "https://www.kathimerini.gr/istoria/564404086/san-simera-17-aygoystoy-986-i-machi-stis-pyles-toy-traianoy/",
+        "https://www.kathimerini.gr/world/564405403/venezoyela-treis-nekroi-apo-tis-ischyres-vroches-kai-plimmyres/",
+        "https://www.kathimerini.gr/society/564405400/ypsilos-kindynos-pyrkagias-kai-simera-paramenei-se-epifylaki-i-politiki-prostasia/"
       ],
-      "seen_at_utc": "2026-08-17T04:29:56.431049+00:00"
+      "seen_at_utc": "2026-08-17T04:51:25.612922+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1272,29 @@
       "seen_at_utc": "2026-08-17T04:17:53.226489+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1448806/pethane-sta-36-tis-i-heinten-panetier-i-gnosti-ithopoios-ton-heroes-kai-nashville/",
-      "title": "Πέθανε στα 36 της η Χέιντεν Πανετιέρ – Η γνωστή ηθοποιός των «Heroes» και «Nashville»",
-      "normalized_title": "ΠΕΘΑΝΕ ΣΤΑ 36 ΤΗΣ Η ΧΕΙΝΤΕΝ ΠΑΝΕΤΙΕΡ – Η ΓΝΩΣΤΗ ΗΘΟΠΟΙΟΣ ΤΩΝ «HEROES» ΚΑΙ «NASHVILLE»",
+      "url": "https://www.efsyn.gr/ellada/1448793/i-anatoliki-mani-mana-pnigetai/",
+      "title": "Η Aνατολική Μάνη, μάνα, πνίγεται",
+      "normalized_title": "Η AΝΑΤΟΛΙΚΗ ΜΑΝΗ, ΜΑΝΑ, ΠΝΙΓΕΤΑΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1448806/pethane-sta-36-tis-i-heinten-panetier-i-gnosti-ithopoios-ton-heroes-kai-nashville/"
+        "https://www.efsyn.gr/ellada/1448793/i-anatoliki-mani-mana-pnigetai/",
+        "https://www.efsyn.gr/politiki/1448779/fotia-sti-salamina-eythynes-stin-kyvernisi-gia-tin-tragodia-apo-tin-antipoliteysi/",
+        "https://www.efsyn.gr/kosmos/1448814/tramp-i-amyntiki-synergasia-saoydikis-aravias-toyrkias-pakistan-deihnei-oti-i-mesi-anatoli-enonetai/"
       ],
-      "seen_at_utc": "2026-08-17T04:29:56.431138+00:00"
+      "seen_at_utc": "2026-08-17T04:51:25.612975+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/greece/oi-perioxes-me-ypsilo-kindyno-ekdilosis-pyrkagias/",
-      "title": "Οι περιοχές με υψηλό κίνδυνο εκδήλωσης πυρκαγιάς",
-      "normalized_title": "ΟΙ ΠΕΡΙΟΧΕΣ ΜΕ ΥΨΗΛΟ ΚΙΝΔΥΝΟ ΕΚΔΗΛΩΣΗΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.in.gr/2026/08/17/world/meksiko-psaras-epezise-15-imeres-egklovismenos-se-ypovryxia-spilia/",
+      "title": "«Ήταν ένα θαύμα» - Ψαράς επέζησε 15 ημέρες εγκλωβισμένος σε υποβρύχια σπηλιά",
+      "normalized_title": "«ΗΤΑΝ ΕΝΑ ΘΑΥΜΑ» - ΨΑΡΑΣ ΕΠΕΖΗΣΕ 15 ΗΜΕΡΕΣ ΕΓΚΛΩΒΙΣΜΕΝΟΣ ΣΕ ΥΠΟΒΡΥΧΙΑ ΣΠΗΛΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/greece/oi-perioxes-me-ypsilo-kindyno-ekdilosis-pyrkagias/"
+        "https://www.in.gr/2026/08/17/world/meksiko-psaras-epezise-15-imeres-egklovismenos-se-ypovryxia-spilia/",
+        "https://www.in.gr/2026/08/17/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-e/",
+        "https://www.in.gr/2026/08/17/go-fun/social/arkas-i-kalimera-tis-deyteras-7/",
+        "https://www.in.gr/2026/08/17/greece/fotia-maxi-me-diaspartes-esties-sti-salamina-pou-thrinei-dyo-nekrous-kai-metra-tis-pliges-tis-dyskoli-i-epomeni-mera/",
+        "https://www.in.gr/2026/08/17/plus/vita/i-gen-z-gyrnaei-tin-plati-tis-sta-dating-apps/"
       ],
-      "seen_at_utc": "2026-08-17T04:29:56.431095+00:00"
+      "seen_at_utc": "2026-08-17T04:51:25.612962+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T04:29:56.431207+00:00"
+  "updated_at_utc": "2026-08-17T04:51:25.613043+00:00"
 }
