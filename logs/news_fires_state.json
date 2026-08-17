@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564406174/ennea-soyrealistikes-stigmes-se-panigyria/",
-      "title": "Εννέα σουρεαλιστικές στιγμές σε πανηγύρια",
-      "normalized_title": "ΕΝΝΕΑ ΣΟΥΡΕΑΛΙΣΤΙΚΕΣ ΣΤΙΓΜΕΣ ΣΕ ΠΑΝΗΓΥΡΙΑ",
+      "url": "https://www.kathimerini.gr/society/564406345/sifnos-vinteo-apo-ti-ptosi-toy-elikopteroy/",
+      "title": "Σίφνος: Βίντεο από την πτώση του ελικοπτέρου",
+      "normalized_title": "ΣΙΦΝΟΣ: ΒΙΝΤΕΟ ΑΠΟ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564406174/ennea-soyrealistikes-stigmes-se-panigyria/",
-        "https://www.kathimerini.gr/world/564402064/exarsi-tis-vias-kata-ton-christianon-sto-israil/",
-        "https://www.kathimerini.gr/politics/564401971/kalpes-to-2027-to-schedio-gia-tin-koyrsa-ton-9-minon/"
+        "https://www.kathimerini.gr/society/564406345/sifnos-vinteo-apo-ti-ptosi-toy-elikopteroy/",
+        "https://www.kathimerini.gr/society/564406312/synelifthi-40chronos-gia-emprismo-stin-troizina-exetazetai-i-emploki-toy-se-9-akomi-pyrkagies/",
+        "https://www.kathimerini.gr/culture/564402694/mythoi-polemoi-kai-kati-pagotinia/"
       ],
-      "seen_at_utc": "2026-08-17T18:53:20.055919+00:00"
+      "seen_at_utc": "2026-08-17T19:17:00.799543+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,41 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866046/sunelifthi-40hronos-pou-evale-fotia-se-dikuklo-stin-troizina-exetazetai-i-ebloki-tou-se-9-akomi-ebrismous/?utm_source=rss",
-      "title": "Συνελήφθη 40χρονος που έβαλε φωτιά σε δίκυκλο στην Τροιζήνα, εξετάζεται η εμπλοκή του σε 9 ακόμη εμπρησμούς",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΠΟΥ ΕΒΑΛΕ ΦΩΤΙΑ ΣΕ ΔΙΚΥΚΛΟ ΣΤΗΝ ΤΡΟΙΖΗΝΑ, ΕΞΕΤΑΖΕΤΑΙ Η ΕΜΠΛΟΚΗ ΤΟΥ ΣΕ 9 ΑΚΟΜΗ ΕΜΠΡΗΣΜΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1866059/epithesi-roma-se-astunomikous-stin-gastouni-gia-na-apeleutherosoun-18hrono-traumatistikan-duo-enstoloi/?utm_source=rss",
+      "title": "Δύο αστυνομικοί τραυματίες από την επίθεση των Ρομά στη Γαστούνη, ταυτοποιήθηκαν οι δράστες",
+      "normalized_title": "ΔΥΟ ΑΣΤΥΝΟΜΙΚΟΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΤΗΝ ΕΠΙΘΕΣΗ ΤΩΝ ΡΟΜΑ ΣΤΗ ΓΑΣΤΟΥΝΗ, ΤΑΥΤΟΠΟΙΗΘΗΚΑΝ ΟΙ ΔΡΑΣΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866046/sunelifthi-40hronos-pou-evale-fotia-se-dikuklo-stin-troizina-exetazetai-i-ebloki-tou-se-9-akomi-ebrismous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866059/epithesi-roma-se-astunomikous-stin-gastouni-gia-na-apeleutherosoun-18hrono-traumatistikan-duo-enstoloi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T18:53:20.056045+00:00"
+      "seen_at_utc": "2026-08-17T19:17:00.799664+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1449466/heinten-panetier-den-proekypsan-ihni-traymatismoy-stin-iatrodikastiki-exetasi-anafores-gia-ypervoliki-dosi/",
-      "title": "Θάνατος Χέιντεν Πανετιέρ: Τι έδειξε η ιατροδικαστική εξέταση",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΧΕΙΝΤΕΝ ΠΑΝΕΤΙΕΡ: ΤΙ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΕΞΕΤΑΣΗ",
+      "url": "https://www.efsyn.gr/athlitismos/1449481/vomva-gia-infantino-ehei-ypiretisei-to-megisto-orio-ton-trion-thiteion-den-ehei-dikaioma-epaneklogis/",
+      "title": "«Βόμβα» για Ινφαντίνο: Έχει υπηρετήσει το μέγιστο όριο των τριών θητειών – «Δεν έχει δικαίωμα επανεκλογής»",
+      "normalized_title": "«ΒΟΜΒΑ» ΓΙΑ ΙΝΦΑΝΤΙΝΟ: ΕΧΕΙ ΥΠΗΡΕΤΗΣΕΙ ΤΟ ΜΕΓΙΣΤΟ ΟΡΙΟ ΤΩΝ ΤΡΙΩΝ ΘΗΤΕΙΩΝ – «ΔΕΝ ΕΧΕΙ ΔΙΚΑΙΩΜΑ ΕΠΑΝΕΚΛΟΓΗΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1449466/heinten-panetier-den-proekypsan-ihni-traymatismoy-stin-iatrodikastiki-exetasi-anafores-gia-ypervoliki-dosi/",
-        "https://www.efsyn.gr/kosmos/1449464/rosia-dekades-syllipseis-ypostirikton-toy-antipoliteyomenoy-giamplako-katheirxi-11-eton-ston-antiproedro-toy-kommatos/",
-        "https://www.efsyn.gr/ellada/1449442/syntrivi-elikopteroy-sti-sifno-to-gamilio-taxidi-poy-katelixe-se-tragodia-pos-egine-to-dystyhima-me-toys-treis-nekroys/"
+        "https://www.efsyn.gr/athlitismos/1449481/vomva-gia-infantino-ehei-ypiretisei-to-megisto-orio-ton-trion-thiteion-den-ehei-dikaioma-epaneklogis/",
+        "https://www.efsyn.gr/ellada/1449476/vinteo-ntokoymento-i-stigmi-tis-ptosis-toy-moiraioy-elikopteroy-sti-sifno/",
+        "https://www.efsyn.gr/politiki/1449085/voyli-deka-mines-adiakopon-sygkroyseon-apo-ton-opekepe-kai-tis-ypoklopes-eos-tin-anaviosi-toy-skandaloy-novartis/"
       ],
-      "seen_at_utc": "2026-08-17T18:53:20.056001+00:00"
+      "seen_at_utc": "2026-08-17T19:17:00.799642+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/",
-      "title": "Σε υψηλά 18ετίας το κόστος δανεισμού των «μεγάλων»",
-      "normalized_title": "ΣΕ ΥΨΗΛΑ 18ΕΤΙΑΣ ΤΟ ΚΟΣΤΟΣ ΔΑΝΕΙΣΜΟΥ ΤΩΝ «ΜΕΓΑΛΩΝ»",
+      "url": "https://www.in.gr/2026/08/17/auto/neo-rekor-polisis-aytokinitou-kathos-ferarri-luce-polithike-se-dimoprasia-gia-40-000-000-dolaria/",
+      "title": "Νέο ρεκόρ πώλησης αυτοκινήτου καθώς Ferarri Luce πωλήθηκε σε δημοπρασία για 40.000.000 δολάρια",
+      "normalized_title": "ΝΕΟ ΡΕΚΟΡ ΠΩΛΗΣΗΣ ΑΥΤΟΚΙΝΗΤΟΥ ΚΑΘΩΣ FERARRI LUCE ΠΩΛΗΘΗΚΕ ΣΕ ΔΗΜΟΠΡΑΣΙΑ ΓΙΑ 40.000.000 ΔΟΛΑΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/",
-        "https://www.in.gr/2026/08/17/greece/synelifthi-40xronos-gia-pyrkagia-apo-prothesi-stin-troizina-eksetazetai-i-emploki-tou-se-9-akomi-emprismous/",
-        "https://www.in.gr/2026/08/17/sports/football/athens-kallithea-ael-novibet-1-3-sti-league-phase-tou-superbet-kypellou-ellados-oi-thessaloi/",
-        "https://www.in.gr/2026/08/17/economy/oikonomikes-eidiseis/aade-lavrakia-apo-tin-epixeirisi-krouaziera-tha-se-pao-2026-ti-edeiksan-oi-mazikoi-elegxoi-se-touristika-ploia/",
-        "https://www.in.gr/2026/08/17/life/diakopes/o-politismos-nikaei-tin-polyteleia-kai-i-ai-mpainei-sto-paixnidi-aytes-einai-oi-taksidiotikes-taseis-tou-2026/",
-        "https://www.in.gr/2026/08/17/world/zimpampoue-o-apologismos-tou-nayagiou-feri-anerxetai-se-92-nekrous/",
-        "https://www.in.gr/2026/08/17/sports/othersports/giati-oi-adelfes-gouiliams-eksakolouthoun-na-paizoun-tenis-vids/",
-        "https://www.in.gr/2026/08/17/go-fun/fizz/americas-next-top-model-to-netflix-adeiazei-tin-taira-mpanks-meta-ti-minysi-gia-sykofantiki-dysfimisi/"
+        "https://www.in.gr/2026/08/17/auto/neo-rekor-polisis-aytokinitou-kathos-ferarri-luce-polithike-se-dimoprasia-gia-40-000-000-dolaria/",
+        "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/o-aoratos-foros-tou-xronou-poso-aksizei-st-alitheia-mia-ora-tis-zois-mas/",
+        "https://www.in.gr/2026/08/17/sports/on-field/i-giounaitent-ekopse-ton-vixa-tis-galata-den-poleitai-o-fernantes/",
+        "https://www.in.gr/2026/08/17/world/nosileyetai-o-makrovioteros-monarxis-tis-eyropis-xaralnt-tis-norvigias-pire-anarrotiki-adeia/",
+        "https://www.in.gr/2026/08/17/greece/akousame-enan-periergo-thoryvo-kai-akariaia-eidame-ton-kapno-martyria-apo-ti-sifno-gia-ti-syntrivi-tou-elikopterou-vinteo/"
       ],
-      "seen_at_utc": "2026-08-17T18:53:20.055968+00:00"
+      "seen_at_utc": "2026-08-17T19:17:00.799609+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T18:53:20.056122+00:00"
+  "updated_at_utc": "2026-08-17T19:17:00.799766+00:00"
 }
