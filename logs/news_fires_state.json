@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564406186/steit-ntipartment-gia-gsi-oi-ipa-stirizoyn-tin-energeiaki-asfaleia-stin-anatoliki-mesogeio/",
-      "title": "Στέιτ Ντιπάρτμεντ για GSI: Οι ΗΠΑ στηρίζουν την ενεργειακή ασφάλεια στην Ανατολική Μεσόγειο",
-      "normalized_title": "ΣΤΕΙΤ ΝΤΙΠΑΡΤΜΕΝΤ ΓΙΑ GSI: ΟΙ ΗΠΑ ΣΤΗΡΙΖΟΥΝ ΤΗΝ ΕΝΕΡΓΕΙΑΚΗ ΑΣΦΑΛΕΙΑ ΣΤΗΝ ΑΝΑΤΟΛΙΚΗ ΜΕΣΟΓΕΙΟ",
+      "url": "https://www.kathimerini.gr/society/564406219/pyrkagia-se-chamili-vlastisi-sta-pigadakia-arkadias/",
+      "title": "Πυρκαγιά σε χαμηλή βλάστηση στα Πηγαδάκια Αρκαδίας",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΑ ΠΗΓΑΔΑΚΙΑ ΑΡΚΑΔΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564406186/steit-ntipartment-gia-gsi-oi-ipa-stirizoyn-tin-energeiaki-asfaleia-stin-anatoliki-mesogeio/"
+        "https://www.kathimerini.gr/society/564406219/pyrkagia-se-chamili-vlastisi-sta-pigadakia-arkadias/",
+        "https://www.kathimerini.gr/society/564402166/akrivi-moy-katapsyxi/"
       ],
-      "seen_at_utc": "2026-08-17T16:30:18.228898+00:00"
+      "seen_at_utc": "2026-08-17T16:51:53.790432+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865985/purosvestiki-41-agrotodasikes-purkagies-se-ena-24oro-prostima-se-ithaki-katerini-kai-kavala/?utm_source=rss",
-      "title": "Πυροσβεστική: 41 αγροτοδασικές πυρκαγιές σε ένα 24ωρο – Πρόστιμα σε Ιθάκη, Κατερίνη και Καβάλα",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: 41 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΣΕ ΕΝΑ 24ΩΡΟ – ΠΡΟΣΤΙΜΑ ΣΕ ΙΘΑΚΗ, ΚΑΤΕΡΙΝΗ ΚΑΙ ΚΑΒΑΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1865998/anoixan-oi-ouranoi-sta-giannena-dromoi-metatrapikan-se-potami-meta-apo-kalokairini-bora-epese-kai-halazi-video/?utm_source=rss",
+      "title": "Άνοιξαν οι ουρανοί στα Γιαννενα, δρόμοι μετατράπηκαν σε ποτάμι μετά από καλοκαιρινή μπόρα, έπεσε και χαλάζι, βίντεο",
+      "normalized_title": "ΑΝΟΙΞΑΝ ΟΙ ΟΥΡΑΝΟΙ ΣΤΑ ΓΙΑΝΝΕΝΑ, ΔΡΟΜΟΙ ΜΕΤΑΤΡΑΠΗΚΑΝ ΣΕ ΠΟΤΑΜΙ ΜΕΤΑ ΑΠΟ ΚΑΛΟΚΑΙΡΙΝΗ ΜΠΟΡΑ, ΕΠΕΣΕ ΚΑΙ ΧΑΛΑΖΙ, ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865985/purosvestiki-41-agrotodasikes-purkagies-se-ena-24oro-prostima-se-ithaki-katerini-kai-kavala/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865998/anoixan-oi-ouranoi-sta-giannena-dromoi-metatrapikan-se-potami-meta-apo-kalokairini-bora-epese-kai-halazi-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865987/kanonika-oi-forologikoi-eleghoi-tis-epiheirisis-theros-apo-tin-aade/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T16:30:18.229125+00:00"
+      "seen_at_utc": "2026-08-17T16:51:53.790515+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1449393/volos-pateras-skotothike-se-trohaio-ston-idio-dromo-opoy-eihe-pethanei-kai-o-gios-toy/",
-      "title": "Βόλος: Πατέρας σκοτώθηκε σε τροχαίο, στον ίδιο δρόμο όπου είχε πεθάνει και ο γιος του",
-      "normalized_title": "ΒΟΛΟΣ: ΠΑΤΕΡΑΣ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ, ΣΤΟΝ ΙΔΙΟ ΔΡΟΜΟ ΟΠΟΥ ΕΙΧΕ ΠΕΘΑΝΕΙ ΚΑΙ Ο ΓΙΟΣ ΤΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1449407/ptosi-elikopteroy-sti-sifno-oi-protes-martyries-ekane-enan-paraxeno-thoryvo-kai-meta-apo-ligo-epese/",
+      "title": "Πτώση ελικοπτέρου στη Σίφνο: Οι πρώτες μαρτυρίες – «Έκανε έναν παράξενο θόρυβο και μετά από λίγο έπεσε»",
+      "normalized_title": "ΠΤΩΣΗ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ: ΟΙ ΠΡΩΤΕΣ ΜΑΡΤΥΡΙΕΣ – «ΕΚΑΝΕ ΕΝΑΝ ΠΑΡΑΞΕΝΟ ΘΟΡΥΒΟ ΚΑΙ ΜΕΤΑ ΑΠΟ ΛΙΓΟ ΕΠΕΣΕ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1449393/volos-pateras-skotothike-se-trohaio-ston-idio-dromo-opoy-eihe-pethanei-kai-o-gios-toy/",
-        "https://www.efsyn.gr/periballon/1449142/politiki-diamahi-gia-ta-apostraggismena-potamia-tis-germanias/"
+        "https://www.efsyn.gr/ellada/1449407/ptosi-elikopteroy-sti-sifno-oi-protes-martyries-ekane-enan-paraxeno-thoryvo-kai-meta-apo-ligo-epese/",
+        "https://www.efsyn.gr/politiki/1449397/o-nikos-pappas-kata-tis-prooris-apopliromis-dimosioy-hreoys-13-dis-eyro-yparhoyn-alles-katepeigoyses-anagkes/",
+        "https://www.efsyn.gr/kosmos/1449400/o-gallos-prothypoyrgos-akoyse-gallika-apo-pyropliktoys-arnithike-na-toys-synantisei-poy-einai-poy-einai/",
+        "https://www.efsyn.gr/ellada/1449402/fotia-stin-arkadia-epiheiroyn-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-17T16:30:18.229082+00:00"
+      "seen_at_utc": "2026-08-17T16:51:53.790494+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/greece/tragodia-ston-volo-antras-skotothike-se-troxaio-ston-dromo-opou-eixe-xasei-ti-zoi-tou-o-gios-tou/",
-      "title": "Τραγωδία στον Βόλο: Άντρας σκοτώθηκε σε τροχαίο στον δρόμο όπου είχε χάσει τη ζωή του ο γιος του",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟΝ ΒΟΛΟ: ΑΝΤΡΑΣ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ ΣΤΟΝ ΔΡΟΜΟ ΟΠΟΥ ΕΙΧΕ ΧΑΣΕΙ ΤΗ ΖΩΗ ΤΟΥ Ο ΓΙΟΣ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/17/world/oi-synomilies-kousner-me-israil-kai-xamas-oloklirothikan-xoris-proodo-sto-sxedio-tramp-gia-ti-gaza/",
+      "title": "Οι συνομιλίες Κούσνερ με Ισραήλ και Χαμάς ολοκληρώθηκαν χωρίς πρόοδο στο σχέδιο Τραμπ για τη Γάζα",
+      "normalized_title": "ΟΙ ΣΥΝΟΜΙΛΙΕΣ ΚΟΥΣΝΕΡ ΜΕ ΙΣΡΑΗΛ ΚΑΙ ΧΑΜΑΣ ΟΛΟΚΛΗΡΩΘΗΚΑΝ ΧΩΡΙΣ ΠΡΟΟΔΟ ΣΤΟ ΣΧΕΔΙΟ ΤΡΑΜΠ ΓΙΑ ΤΗ ΓΑΖΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/greece/tragodia-ston-volo-antras-skotothike-se-troxaio-ston-dromo-opou-eixe-xasei-ti-zoi-tou-o-gios-tou/",
-        "https://www.in.gr/2026/08/17/sports/football/allakse-ora-to-olympiakos-atromitos-stis-2130-anti-gia-2200/",
-        "https://www.in.gr/2026/08/17/greece/se-eksarsi-o-ios-tou-dytikou-neilou-pou-entopizontai-ta-perissotera-krousmata/"
+        "https://www.in.gr/2026/08/17/world/oi-synomilies-kousner-me-israil-kai-xamas-oloklirothikan-xoris-proodo-sto-sxedio-tramp-gia-ti-gaza/",
+        "https://www.in.gr/2026/08/17/sports/football/champions-league/nikolits-prepei-na-stathoume-antaksioi-ton-prosdokion-kai-ton-apaitiseon/",
+        "https://www.in.gr/2026/08/17/greece/dekades-agrotodasikes-pyrkagies-to-teleytaio-eikositetraoro-se-kitrino-synagermo-arketes-perifereies/",
+        "https://www.in.gr/2026/08/17/world/oi-ipa-stirizoun-tin-energeiaki-asfaleia-kai-ti-synergasia-stin-anatoliki-mesogeio-leei-to-steit-ntipartment/",
+        "https://www.in.gr/2026/08/17/stories/viky-mosxoliou-21-xronia-xoris-tekmiria-mnimis-kai-to-aftharto-metallo-tis-arxontissas-sto-fos-manoula/"
       ],
-      "seen_at_utc": "2026-08-17T16:30:18.229029+00:00"
+      "seen_at_utc": "2026-08-17T16:51:53.790472+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T16:30:18.229221+00:00"
+  "updated_at_utc": "2026-08-17T16:51:53.790576+00:00"
 }
