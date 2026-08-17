@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398806/eortologio-poioi-giortazoyn-simera-17-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 17 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 17 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/world/564405373/i-mesi-anatoli-enonetai-eytychis-dilonei-o-tramp-gia-ti-symfonia-tis-mekkas/",
+      "title": "«Η Μέση Ανατολή ενώνεται» – Ευτυχής δηλώνει ο Τραμπ για τη συμφωνία της Μέκκας",
+      "normalized_title": "«Η ΜΕΣΗ ΑΝΑΤΟΛΗ ΕΝΩΝΕΤΑΙ» – ΕΥΤΥΧΗΣ ΔΗΛΩΝΕΙ Ο ΤΡΑΜΠ ΓΙΑ ΤΗ ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398806/eortologio-poioi-giortazoyn-simera-17-aygoystoy/",
-        "https://www.kathimerini.gr/economy/564405229/to-savvatokyriako-egine-100-eton-kai-kindyneyoyme-na-to-chasoyme/"
+        "https://www.kathimerini.gr/world/564405373/i-mesi-anatoli-enonetai-eytychis-dilonei-o-tramp-gia-ti-symfonia-tis-mekkas/",
+        "https://www.kathimerini.gr/economy/564402391/ta-yperesoda-toy-2026-ayxanoyn-to-paketo-tis-deth/",
+        "https://www.kathimerini.gr/society/564405367/foties-sti-salamina-dyo-nekroi-9-egkaymaties-kai-megales-katastrofes-pos-xekinisan-oi-pyrkagies/",
+        "https://www.kathimerini.gr/economy/564402385/to-diktyo-deddie-sto-epikentro-ton-ereynon/"
       ],
-      "seen_at_utc": "2026-08-16T21:17:05.806731+00:00"
+      "seen_at_utc": "2026-08-17T04:17:53.226395+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1262,61 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865618/tzoker-16826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
-      "title": "Τζόκερ 16/8/26: Τα αποτελέσματα της κλήρωσης - Τα νούμερα που κερδίζουν",
-      "normalized_title": "ΤΖΟΚΕΡ 16/8/26: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΗΣ ΚΛΗΡΩΣΗΣ - ΤΑ ΝΟΥΜΕΡΑ ΠΟΥ ΚΕΡΔΙΖΟΥΝ",
+      "url": "https://www.protothema.gr/greece/article/1865659/trohaio-sto-halandri-autokinito-prosekrouse-se-stathmeumeno-ohima-kai-anatrapike-deite-fotografies/?utm_source=rss",
+      "title": "Τροχαίο στο Χαλάνδρι: Αυτοκίνητο προσέκρουσε σε σταθμευμένο όχημα και ανατράπηκε, δείτε βίντεο και φωτογραφίες",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΟ ΧΑΛΑΝΔΡΙ: ΑΥΤΟΚΙΝΗΤΟ ΠΡΟΣΕΚΡΟΥΣΕ ΣΕ ΣΤΑΘΜΕΥΜΕΝΟ ΟΧΗΜΑ ΚΑΙ ΑΝΑΤΡΑΠΗΚΕ, ΔΕΙΤΕ ΒΙΝΤΕΟ ΚΑΙ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865618/tzoker-16826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1865614/fotia-tora-stin-kritsa-lasithiou-112-gia-etoimotita-ishures-dunameis-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865659/trohaio-sto-halandri-autokinito-prosekrouse-se-stathmeumeno-ohima-kai-anatrapike-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865657/kairos-exasthenoun-ta-meltemia-anevainei-i-thermokrasia-pou-uparhei-upsilos-kindunos-purkagias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-16T19:17:29.886021+00:00"
+      "seen_at_utc": "2026-08-17T04:17:53.226489+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448773/asimenios-o-karalis-sto-eyropaiko-protathlima-stivoy/",
-      "title": "«Ασημένιος» ο Καραλής στο Ευρωπαϊκό Πρωτάθλημα Στίβου",
-      "normalized_title": "«ΑΣΗΜΕΝΙΟΣ» Ο ΚΑΡΑΛΗΣ ΣΤΟ ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΣΤΙΒΟΥ",
+      "url": "https://www.efsyn.gr/protoselida/i-ergasiaki-galera-toy-toyrismoy/",
+      "title": "Η εργασιακή γαλέρα του τουρισμού",
+      "normalized_title": "Η ΕΡΓΑΣΙΑΚΗ ΓΑΛΕΡΑ ΤΟΥ ΤΟΥΡΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448773/asimenios-o-karalis-sto-eyropaiko-protathlima-stivoy/",
-        "https://www.efsyn.gr/life/1448771/mantona-stin-kerkyra-gia-ta-68a-genethlia-tis-i-ekplixi-kai-o-horos-pano-sto-skafos/"
+        "https://www.efsyn.gr/protoselida/i-ergasiaki-galera-toy-toyrismoy/",
+        "https://www.efsyn.gr/kosmos/1448795/seismos-stin-kolomvia-300-nekroi-kai-pano-140-agnooymenoi-synehizontai-oi-ereynes-horis-polles-elpides/",
+        "https://www.efsyn.gr/kosmos/1448783/rosia-oykrania-sfodro-pingk-pongk-me-drones-kai-pyrayloys-se-krisimes-ypodomes/",
+        "https://www.efsyn.gr/ellada/1448791/paros-fovithika-tha-mporoyse-na-me-eihe-skotosei-ton-htypisa-se-amyna-leei-o-71hronos-meta-to-epeisodio/",
+        "https://www.efsyn.gr/ellada/1448776/fotia-sti-salamina-pos-exaplothike-mesa-se-liga-lepta-dyo-nekroi-502-apegklovistikan/",
+        "https://www.efsyn.gr/ellada/1448785/kairos-eos-36c-simera-exasthenoyn-ta-meltemia-topikes-vrohes-kai-kataigides-sta-dytika/",
+        "https://www.efsyn.gr/ellada/1448782/eortologio-poioi-giortazoyn-simera-17-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-16T21:17:05.806818+00:00"
+      "seen_at_utc": "2026-08-17T04:17:53.226456+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/sports/othersports/mpermigxam-i-aponomi-tou-asimeniou-metalliou-ston-karali-vid/",
-      "title": "Μπέρμιγχαμ: Η απονομή του ασημένιου μεταλλίου στον Καραλή (vid)",
-      "normalized_title": "ΜΠΕΡΜΙΓΧΑΜ: Η ΑΠΟΝΟΜΗ ΤΟΥ ΑΣΗΜΕΝΙΟΥ ΜΕΤΑΛΛΙΟΥ ΣΤΟΝ ΚΑΡΑΛΗ (VID)",
+      "url": "https://www.in.gr/2026/08/17/world/epistrefei-to-seks-sta-dimosia-loutra-tis-neas-yorkis/",
+      "title": "Επιστρέφει το σεξ στα δημόσια λουτρά της Νέας Υόρκης;",
+      "normalized_title": "ΕΠΙΣΤΡΕΦΕΙ ΤΟ ΣΕΞ ΣΤΑ ΔΗΜΟΣΙΑ ΛΟΥΤΡΑ ΤΗΣ ΝΕΑΣ ΥΟΡΚΗΣ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/sports/othersports/mpermigxam-i-aponomi-tou-asimeniou-metalliou-ston-karali-vid/",
-        "https://www.in.gr/2026/08/17/world/venezouela-3-nekroi-anamesa-tous-2-anilikes-apo-entones-vroxoptoseis/"
+        "https://www.in.gr/2026/08/17/world/epistrefei-to-seks-sta-dimosia-loutra-tis-neas-yorkis/",
+        "https://www.in.gr/2026/08/17/life/geysi/syntagi-lavraki-fileto-me-psita-laxanika-kai-dressing-lemoniou/",
+        "https://www.in.gr/2026/08/17/politics/politiki-grammateia/vouleytes-monoi-psaxnoun-politiki-stegi-pos-i-nea-politiki-xronia-tha-krinei-to-mellon-aneksartiton-kai-mi/",
+        "https://www.in.gr/2026/08/17/world/filodokso-katalogo-kyroseon-se-rosous-zita-i-kagia-kalas/",
+        "https://www.in.gr/2026/08/17/plus/vita/pos-mas-epireazei-o-kafes-meta-to-ksenyxti/",
+        "https://www.in.gr/2026/08/17/greece/kairos-mikri-eksasthenisi-ton-anemon-kai-thermokrasies-eos-36-vathmous-pou-tha-exei-vroxes-kai-kataigides/",
+        "https://www.in.gr/2026/08/17/go-fun/fizz/mpraian-mei-o-kitharistas-ton-queen-gia-tin-texniti-noimosyni/",
+        "https://www.in.gr/2026/08/17/plus/vita/symvainei-se-olous-giati-stis-diakopes-xanoume-tin-aisthisi-tou-xronou/",
+        "https://www.in.gr/2026/08/17/go-fun/fizz/kristiano-ronalnto-tzortzina-rontrigkes-o-oikeios-gamos-sto-saloni-tou-spitiou-tous/",
+        "https://www.in.gr/2026/08/17/in-science/perivallon-b-science/ksirasia-kai-leipsydria-anoxyroti-i-eyropi-stis-epanalamvanomenes-kriseis-aprostateytoi-oi-agrotes/",
+        "https://www.in.gr/2026/08/17/in-science/ai/ekpaideyontas-ta-chatbots/",
+        "https://www.in.gr/2026/08/17/world/ma-giati-oi-ipa-xanoun-stous-polemous-kathigitis-tou-xarvarnt-apantaei-sto-ainigma/",
+        "https://www.in.gr/2026/08/17/world/to-sygxrono-italiko-pagoto-ksekinise-apo-to-empoli-xari-se-amerikanikous-katapsyktes-tou-v-pagkosmiou-polemou/",
+        "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/polemos-kai-gia-ta-apovlita/",
+        "https://www.in.gr/2026/08/17/stories/vinteo-pou-kovoun-tin-anasa-me-ton-gianni-aggeli-na-giteyei-kompres-stin-tailandi/",
+        "https://www.in.gr/2026/08/17/world/o-tramp-meionei-simantika-ti-symmetoxi-tou-stratou-sta-koina-gymnasia-me-ti-notia-korea/",
+        "https://www.in.gr/2026/08/17/world/kolomvia-oi-ereynes-synexizontai-alla-oi-elpides-svinoun-sta-syntrimmia/",
+        "https://www.in.gr/2026/08/17/world/gaza-8-mousoulmanikes-xores-katadikazoun-tin-arnisi-tou-israil-na-proxorisei-to-sxedio-tramp/",
+        "https://www.in.gr/2026/08/17/world/nigiras-apoleies-tou-stratou-se-epitheseis-antarton-ston-vorra/",
+        "https://www.in.gr/2026/08/17/world/vretania-pano-apo-30-000-ypografes-gia-enarksi-ereynas-peri-ekstrateias-katadioksis-kata-tou-arntei/",
+        "https://www.in.gr/2026/08/17/world/o-tramp-dilonei-poly-eytyxis-gia-ti-symfonia-saoudikis-aravias-tourkias-kai-pakistan/",
+        "https://www.in.gr/2026/08/17/world/velgio-entoli-apomakrynsis-katoikon-apo-ta-spitia-tous-eksaitias-pyrkagias-pou-kateythynetai-sti-germania/",
+        "https://www.in.gr/2026/08/17/world/to-aeroplanoforo-abraham-lincoln-eixe-ton-xamilotero-arithmo-krousmaton-psyxikis-ygeias/"
       ],
-      "seen_at_utc": "2026-08-16T22:51:10.814311+00:00"
+      "seen_at_utc": "2026-08-17T04:17:53.226438+00:00"
     }
   },
-  "updated_at_utc": "2026-08-16T22:51:10.814376+00:00"
+  "updated_at_utc": "2026-08-17T04:17:53.226570+00:00"
 }
