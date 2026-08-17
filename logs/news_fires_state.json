@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564405481/zimpampoye-stoys-84-oi-nekroi-apo-to-nayagio-sti-limni-karimpa-agnostos-arithmos-agnooymenon/",
-      "title": "Ζιμπάμπουε: Στους 84 οι νεκροί από το ναυάγιο στη λίμνη Καρίμπα – Αγνωστος αριθμός αγνοουμένων",
-      "normalized_title": "ΖΙΜΠΑΜΠΟΥΕ: ΣΤΟΥΣ 84 ΟΙ ΝΕΚΡΟΙ ΑΠΟ ΤΟ ΝΑΥΑΓΙΟ ΣΤΗ ΛΙΜΝΗ ΚΑΡΙΜΠΑ – ΑΓΝΩΣΤΟΣ ΑΡΙΘΜΟΣ ΑΓΝΟΟΥΜΕΝΩΝ",
+      "url": "https://www.kathimerini.gr/society/564405505/pyrkagia-sti-siviri-xekinise-i-ypovoli-aitiseon-kratikis-arogis-se-epicheiriseis-poy-epligisan/",
+      "title": "Πυρκαγιά στη Σίβηρη: Ξεκίνησε η υποβολή αιτήσεων κρατικής αρωγής σε επιχειρήσεις που επλήγησαν",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΙΒΗΡΗ: ΞΕΚΙΝΗΣΕ Η ΥΠΟΒΟΛΗ ΑΙΤΗΣΕΩΝ ΚΡΑΤΙΚΗΣ ΑΡΩΓΗΣ ΣΕ ΕΠΙΧΕΙΡΗΣΕΙΣ ΠΟΥ ΕΠΛΗΓΗΣΑΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564405481/zimpampoye-stoys-84-oi-nekroi-apo-to-nayagio-sti-limni-karimpa-agnostos-arithmos-agnooymenon/"
+        "https://www.kathimerini.gr/society/564405505/pyrkagia-sti-siviri-xekinise-i-ypovoli-aitiseon-kratikis-arogis-se-epicheiriseis-poy-epligisan/",
+        "https://www.kathimerini.gr/athletics/564405508/kervin-ariagka-ena-skyli-toy-polemoy-gia-tin-aek/",
+        "https://www.kathimerini.gr/society/564405496/larisa-se-yfesi-i-fotia-se-ergostasio-plastikon-olonychtia-machi-kai-ischyres-dynameis-sto-simeio/",
+        "https://www.kathimerini.gr/world/564405484/velgio-i-megalyteri-fotia-stin-istoria-tis-choras-den-apeilei-pleon-ti-germania/"
       ],
-      "seen_at_utc": "2026-08-17T06:30:07.614526+00:00"
+      "seen_at_utc": "2026-08-17T06:51:41.615557+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1272,26 @@
       "seen_at_utc": "2026-08-17T06:30:07.614614+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448891/tin-11i-thesi-katelave-ston-akontismo-i-elina-tzengko/",
-      "title": "Την 11η θέση κατέλαβε στον ακοντισμό η Ελίνα Τζένγκο",
-      "normalized_title": "ΤΗΝ 11Η ΘΕΣΗ ΚΑΤΕΛΑΒΕ ΣΤΟΝ ΑΚΟΝΤΙΣΜΟ Η ΕΛΙΝΑ ΤΖΕΝΓΚΟ",
+      "url": "https://www.efsyn.gr/kosmos/1448907/o-koysner-sto-israil-meta-ti-hamas-tha-milisei-me-netaniahoy-gia-to-shedio-tramp-gia-ti-gaza/",
+      "title": "Ο Κούσνερ στο Ισραήλ: Μετά τη Χαμάς, θα μιλήσει με Νετανιάχου για το σχέδιο Τραμπ για τη Γάζα",
+      "normalized_title": "Ο ΚΟΥΣΝΕΡ ΣΤΟ ΙΣΡΑΗΛ: ΜΕΤΑ ΤΗ ΧΑΜΑΣ, ΘΑ ΜΙΛΗΣΕΙ ΜΕ ΝΕΤΑΝΙΑΧΟΥ ΓΙΑ ΤΟ ΣΧΕΔΙΟ ΤΡΑΜΠ ΓΙΑ ΤΗ ΓΑΖΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448891/tin-11i-thesi-katelave-ston-akontismo-i-elina-tzengko/",
-        "https://www.efsyn.gr/media/1448840/press-point-endiaferoyses-emmones-kai-alitheies/",
-        "https://www.efsyn.gr/kosmos/1448882/pyrkagies-stin-kroatia-tesseris-syllipseis-ypopton-8-atoma-se-sovari-katastasi/"
+        "https://www.efsyn.gr/kosmos/1448907/o-koysner-sto-israil-meta-ti-hamas-tha-milisei-me-netaniahoy-gia-to-shedio-tramp-gia-ti-gaza/",
+        "https://www.efsyn.gr/ellada/1448893/larisa-i-epomeni-mera-apo-tin-pyrkagia-se-ergostasio-plastikon-eikones/"
       ],
-      "seen_at_utc": "2026-08-17T06:30:07.614593+00:00"
+      "seen_at_utc": "2026-08-17T06:51:41.615623+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/sports/football/superbet-kypello-ellada-aris-kai-iraklis-ksekinoun-tis-ypoxreoseis-tous-to-programma/",
-      "title": "Superbet Κύπελλο Ελλάδας: Άρης και Ηρακλής ξεκινούν τις υποχρεώσεις τους – Το πρόγραμμα",
-      "normalized_title": "SUPERBET ΚΥΠΕΛΛΟ ΕΛΛΑΔΑΣ: ΑΡΗΣ ΚΑΙ ΗΡΑΚΛΗΣ ΞΕΚΙΝΟΥΝ ΤΙΣ ΥΠΟΧΡΕΩΣΕΙΣ ΤΟΥΣ – ΤΟ ΠΡΟΓΡΑΜΜΑ",
+      "url": "https://www.in.gr/2026/08/17/sports/football/stin-athina-o-tiknizian-irtha-se-mia-terastia-omada-vids/",
+      "title": "Στην Αθήνα ο Τικνιζιάν - Ήρθα σε μια τεράστια ομάδα (vids)",
+      "normalized_title": "ΣΤΗΝ ΑΘΗΝΑ Ο ΤΙΚΝΙΖΙΑΝ - ΗΡΘΑ ΣΕ ΜΙΑ ΤΕΡΑΣΤΙΑ ΟΜΑΔΑ (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/sports/football/superbet-kypello-ellada-aris-kai-iraklis-ksekinoun-tis-ypoxreoseis-tous-to-programma/",
-        "https://www.in.gr/2026/08/17/politics/syriza-gia-tourkika-thalassia-parka-me-eyxologia-i-kyvernisi-den-prostateyei-ta-kyriarxika-dikaiomata-tis-xoras/"
+        "https://www.in.gr/2026/08/17/sports/football/stin-athina-o-tiknizian-irtha-se-mia-terastia-omada-vids/",
+        "https://www.in.gr/2026/08/17/world/mpernam-synomilouse-me-atomo-pou-paristane-tin-prosoparxi-tou-tramp/",
+        "https://www.in.gr/2026/08/17/greece/meteo-ta-epipeda-ksirasias-stin-ellada-ti-deixnoun-ta-stoixeia/"
       ],
-      "seen_at_utc": "2026-08-17T06:30:07.614573+00:00"
+      "seen_at_utc": "2026-08-17T06:51:41.615595+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T06:30:07.614695+00:00"
+  "updated_at_utc": "2026-08-17T06:51:41.615698+00:00"
 }
