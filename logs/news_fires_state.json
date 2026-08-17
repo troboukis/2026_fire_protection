@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564405445/iran-se-tramp-tha-soy-spasoyme-ta-podia-epikiryxi-30-000-dolarion-gia-amerikanoys-stratiotes/",
-      "title": "Ιράν σε Τραμπ: «Θα σου σπάσουμε τα πόδια» – Επικήρυξη 30.000 δολαρίων για Αμερικανούς στρατιώτες",
-      "normalized_title": "ΙΡΑΝ ΣΕ ΤΡΑΜΠ: «ΘΑ ΣΟΥ ΣΠΑΣΟΥΜΕ ΤΑ ΠΟΔΙΑ» – ΕΠΙΚΗΡΥΞΗ 30.000 ΔΟΛΑΡΙΩΝ ΓΙΑ ΑΜΕΡΙΚΑΝΟΥΣ ΣΤΡΑΤΙΩΤΕΣ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564401962/i-symfonia-tis-mekkas-kai-i-athina/",
+      "title": "Η συμφωνία της Μέκκας και η Αθήνα",
+      "normalized_title": "Η ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ ΚΑΙ Η ΑΘΗΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564405445/iran-se-tramp-tha-soy-spasoyme-ta-podia-epikiryxi-30-000-dolarion-gia-amerikanoys-stratiotes/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564401962/i-symfonia-tis-mekkas-kai-i-athina/",
+        "https://www.kathimerini.gr/society/564405472/thessaloniki-synelifthisan-pente-andres-poy-exyvrisan-apeilisan-kai-chtypisan-astynomikoys/",
+        "https://www.kathimerini.gr/society/564405469/gastoyni-dierrixan-ekklisia-animera-toy-dekapentaygoystoy-kai-adeiasan-to-pagkari/",
+        "https://www.kathimerini.gr/k/sunday-edition/564405460/to-mayro-fantasma-o-tetartos-tomos-tis-seiras-disney-editor-s-choice-tin-kyriaki-23-8-me-tin-kathimerini/"
       ],
-      "seen_at_utc": "2026-08-17T05:51:23.181924+00:00"
+      "seen_at_utc": "2026-08-17T06:16:59.412428+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1262,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865686/horis-energes-esties-i-fotia-sto-ergostasio-plastikon-paramenoun-purosvestikes-dunameis-sto-simeio/?utm_source=rss",
-      "title": "Χωρίς ενεργές εστίες η φωτιά στο εργοστάσιο πλαστικών στη Λάρισα, παραμένουν πυροσβεστικές δυνάμεις στο σημείο",
-      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΕΣ ΕΣΤΙΕΣ Η ΦΩΤΙΑ ΣΤΟ ΕΡΓΟΣΤΑΣΙΟ ΠΛΑΣΤΙΚΩΝ ΣΤΗ ΛΑΡΙΣΑ, ΠΑΡΑΜΕΝΟΥΝ ΠΥΡΟΣΒΕΣΤΙΚΕΣ ΔΥΝΑΜΕΙΣ ΣΤΟ ΣΗΜΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1865703/e65-poies-periohes-ofeloudai-perissotero-apo-to-ergo-ti-deihnei-meleti-tou-panepistimiou-thessalias/?utm_source=rss",
+      "title": "Ε65: Ποιες περιοχές ωφελούνται περισσότερο από το έργο, τι δείχνει μελέτη του Πανεπιστημίου Θεσσαλίας",
+      "normalized_title": "Ε65: ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΩΦΕΛΟΥΝΤΑΙ ΠΕΡΙΣΣΟΤΕΡΟ ΑΠΟ ΤΟ ΕΡΓΟ, ΤΙ ΔΕΙΧΝΕΙ ΜΕΛΕΤΗ ΤΟΥ ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΘΕΣΣΑΛΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865686/horis-energes-esties-i-fotia-sto-ergostasio-plastikon-paramenoun-purosvestikes-dunameis-sto-simeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865703/e65-poies-periohes-ofeloudai-perissotero-apo-to-ergo-ti-deihnei-meleti-tou-panepistimiou-thessalias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865702/epeisodio-thessaloniki-roma-xulokopisan-60hrono-pou-tous-ekane-paratirisi-gia-ti-mousiki-kai-epitethikan-se-astunomikous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T05:51:23.182084+00:00"
+      "seen_at_utc": "2026-08-17T06:16:59.412551+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448854/emmanoyil-karalis-i-ypodohi-meta-to-asimenio-metallio-sto-eyropaiko-pame-na-ta-pioyme-vinteo/",
-      "title": "Εμμανουήλ Καραλής: Η υποδοχή μετά το ασημένιο μετάλλιο στο ευρωπαϊκό – «Πάμε να τα πιούμε» [βίντεο]",
-      "normalized_title": "ΕΜΜΑΝΟΥΗΛ ΚΑΡΑΛΗΣ: Η ΥΠΟΔΟΧΗ ΜΕΤΑ ΤΟ ΑΣΗΜΕΝΙΟ ΜΕΤΑΛΛΙΟ ΣΤΟ ΕΥΡΩΠΑΙΚΟ – «ΠΑΜΕ ΝΑ ΤΑ ΠΙΟΥΜΕ» [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1448877/samarina-edioxan-galazia-stelehi-apo-glenti-ktinotrofos-toys-empodise-na-horepsoyn-kai-efygan/",
+      "title": "Σαμαρίνα: Έδιωξαν γαλάζια στελέχη από γλέντι – Κτηνοτρόφος τους εμπόδισε να χορέψουν και έφυγαν",
+      "normalized_title": "ΣΑΜΑΡΙΝΑ: ΕΔΙΩΞΑΝ ΓΑΛΑΖΙΑ ΣΤΕΛΕΧΗ ΑΠΟ ΓΛΕΝΤΙ – ΚΤΗΝΟΤΡΟΦΟΣ ΤΟΥΣ ΕΜΠΟΔΙΣΕ ΝΑ ΧΟΡΕΨΟΥΝ ΚΑΙ ΕΦΥΓΑΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448854/emmanoyil-karalis-i-ypodohi-meta-to-asimenio-metallio-sto-eyropaiko-pame-na-ta-pioyme-vinteo/",
-        "https://www.efsyn.gr/politiki/1448857/pote-kaneis-ekloges/",
-        "https://www.efsyn.gr/politiki/1448831/anasygkrotisi-evroy-enopion-ton-eythynon-tis-i-kyvernisi-8-erotimata-gia-tin-epomeni-imera/",
-        "https://www.efsyn.gr/politiki/1448844/mpoylekos-oi-portes-toy-syriza-einai-anoiktes-horis-pistopoiitika-politikon-fronimaton/",
-        "https://www.efsyn.gr/politiki/1448842/o-karahalios-anakoinose-poion-stirizei-pleon-meta-ti-rixi-me-karystianoy/"
+        "https://www.efsyn.gr/politiki/1448877/samarina-edioxan-galazia-stelehi-apo-glenti-ktinotrofos-toys-empodise-na-horepsoyn-kai-efygan/",
+        "https://www.efsyn.gr/politiki/1448878/elas-i-toyrkia-paraviazei-to-dikaio-tis-thalassas-na-allaxei-pleysi-i-kyvernisi/",
+        "https://www.efsyn.gr/politiki/1448864/rena-doyroy-gia-ta-thalassia-parka-tis-toyrkias-teleiomo-den-ehoyn-oi-toyrkikes-prokliseis/",
+        "https://www.efsyn.gr/politiki/1448853/gyalia-poy-katagrafoyn-o-adonis-vrike-synigoro-enan-palio-synergati-toy-hristodoyloy/"
       ],
-      "seen_at_utc": "2026-08-17T05:51:23.182038+00:00"
+      "seen_at_utc": "2026-08-17T06:16:59.412524+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/greece/paros-mou-zitise-na-aposyro-ti-minysi-kai-arnithika-ti-leei-o-ilikiomenos-pou-ksylokopithike-apo-taksitzi/",
-      "title": "«Μου ζήτησε να αποσύρω τη μήνυση και αρνήθηκα» - Τι λέει ο ηλικιωμένος που ξυλοκοπήθηκε από ταξιτζή",
-      "normalized_title": "«ΜΟΥ ΖΗΤΗΣΕ ΝΑ ΑΠΟΣΥΡΩ ΤΗ ΜΗΝΥΣΗ ΚΑΙ ΑΡΝΗΘΗΚΑ» - ΤΙ ΛΕΕΙ Ο ΗΛΙΚΙΩΜΕΝΟΣ ΠΟΥ ΞΥΛΟΚΟΠΗΘΗΚΕ ΑΠΟ ΤΑΞΙΤΖΗ",
+      "url": "https://www.in.gr/2026/08/17/greece/santorini-traymatismos-epivatidas-entos-ploiou-sti-thira-pos-egine-to-atyxima/",
+      "title": "Τραυματισμός επιβάτιδας εντός πλοίου στη Θήρα - Πώς έγινε το ατύχημα",
+      "normalized_title": "ΤΡΑΥΜΑΤΙΣΜΟΣ ΕΠΙΒΑΤΙΔΑΣ ΕΝΤΟΣ ΠΛΟΙΟΥ ΣΤΗ ΘΗΡΑ - ΠΩΣ ΕΓΙΝΕ ΤΟ ΑΤΥΧΗΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/greece/paros-mou-zitise-na-aposyro-ti-minysi-kai-arnithika-ti-leei-o-ilikiomenos-pou-ksylokopithike-apo-taksitzi/",
-        "https://www.in.gr/2026/08/17/world/zimpampoue-se-84-anilthe-o-arithmos-ton-nekron-apo-to-nayagio-tou-feri-paidia-anamesa-sta-thymata/",
-        "https://www.in.gr/2026/08/17/sports/football/irthe-stin-athina-gia-tin-aek-o-ariagka/",
-        "https://www.in.gr/2026/08/17/greece/fotia-sti-salamina-poia-i-katastasi-ton-traymation-gynaika-exei-kaei-sto-25-tou-somatos-tis/"
+        "https://www.in.gr/2026/08/17/greece/santorini-traymatismos-epivatidas-entos-ploiou-sti-thira-pos-egine-to-atyxima/",
+        "https://www.in.gr/2026/08/17/sports/othersports/i-antidrasi-tou-ntouplantis-otan-o-karalis-erikse-ton-pixi-sta-6-10m-den-to-pisteye-o-souidos-vid/",
+        "https://www.in.gr/2026/08/17/go-fun/apolytos-daskalos-i-kaia-gkermper-gia-ti-gennaia-kai-dimosia-maxi-tou-adelfou-tis-me-narkotika-kai-alkool/",
+        "https://www.in.gr/2026/08/17/economy/oi-sezonistas-antepitithentai-ksypnisan-oi-sklavoi-stis-galeres-tou-tourismou/",
+        "https://www.in.gr/2026/08/17/greece/gypas-prokalese-anastatosi-sto-aerodromio-irakleiou-den-efeyge-apo-to-ftero-aeroplanou-pou-itan-etoimo-gia-apogeiosi/",
+        "https://www.in.gr/2026/08/17/editorial/i-politiki-den-einai-epikoinonia-oso-kai-ean-tha-to-ithelan-merikoi/"
       ],
-      "seen_at_utc": "2026-08-17T05:51:23.181990+00:00"
+      "seen_at_utc": "2026-08-17T06:16:59.412473+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T05:51:23.182192+00:00"
+  "updated_at_utc": "2026-08-17T06:16:59.412614+00:00"
 }
