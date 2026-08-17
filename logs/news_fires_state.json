@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/parties/564401992/i-aristera-o-samaras-kai-o-lenin/",
-      "title": "Η Αριστερά, ο Σαμαράς και ο Λένιν",
-      "normalized_title": "Η ΑΡΙΣΤΕΡΑ, Ο ΣΑΜΑΡΑΣ ΚΑΙ Ο ΛΕΝΙΝ",
+      "url": "https://www.kathimerini.gr/economy/564402370/idiotika-diktya-reymatos-choris-elegcho/",
+      "title": "Ιδιωτικά δίκτυα ρεύματος χωρίς έλεγχο",
+      "normalized_title": "ΙΔΙΩΤΙΚΑ ΔΙΚΤΥΑ ΡΕΥΜΑΤΟΣ ΧΩΡΙΣ ΕΛΕΓΧΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/parties/564401992/i-aristera-o-samaras-kai-o-lenin/",
-        "https://www.kathimerini.gr/world/564406036/sygkroysi-skafon-ston-kolpo-ton-kannon-enas-agnooymenos-kai-tesseris-sovara-traymaties/"
+        "https://www.kathimerini.gr/economy/564402370/idiotika-diktya-reymatos-choris-elegcho/",
+        "https://www.kathimerini.gr/world/564406039/ta-pio-vomvardimena-mcdonald-s-toy-kosmoy/",
+        "https://www.kathimerini.gr/athletics/564406057/episimopoiithike-o-daneismos-toy-entiage-ston-paok-apo-ti-samsoynspor/",
+        "https://www.kathimerini.gr/politics/564401995/nea-dimokratia-oi-odigoi-tis-koyrsas/"
       ],
-      "seen_at_utc": "2026-08-17T13:30:13.779951+00:00"
+      "seen_at_utc": "2026-08-17T13:51:33.757150+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,24 +1273,27 @@
       "seen_at_utc": "2026-08-17T13:17:27.105304+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1449251/ileia-ypostiriktes-prosahthenta-epitethikan-se-a-t-traymatisan-toys-astynomikoys-kai-ton-apeleytherosan/",
-      "title": "Ένταση στην Ηλεία: Υποστηρικτές προσαχθέντα επιτέθηκαν σε αστυνομικό τμήμα και τον απελευθέρωσαν",
-      "normalized_title": "ΕΝΤΑΣΗ ΣΤΗΝ ΗΛΕΙΑ: ΥΠΟΣΤΗΡΙΚΤΕΣ ΠΡΟΣΑΧΘΕΝΤΑ ΕΠΙΤΕΘΗΚΑΝ ΣΕ ΑΣΤΥΝΟΜΙΚΟ ΤΜΗΜΑ ΚΑΙ ΤΟΝ ΑΠΕΛΕΥΘΕΡΩΣΑΝ",
+      "url": "https://www.efsyn.gr/ellada/1449269/kalamaria-agrio-peristatiko-emfylis-vias-se-varos-27hronis-synelifthi-29hronos/",
+      "title": "Καλαμαριά: Άγριο περιστατικό έμφυλης βίας σε βάρος 27χρονης – Συνελήφθη 29χρονος",
+      "normalized_title": "ΚΑΛΑΜΑΡΙΑ: ΑΓΡΙΟ ΠΕΡΙΣΤΑΤΙΚΟ ΕΜΦΥΛΗΣ ΒΙΑΣ ΣΕ ΒΑΡΟΣ 27ΧΡΟΝΗΣ – ΣΥΝΕΛΗΦΘΗ 29ΧΡΟΝΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1449251/ileia-ypostiriktes-prosahthenta-epitethikan-se-a-t-traymatisan-toys-astynomikoys-kai-ton-apeleytherosan/",
-        "https://www.efsyn.gr/ellada/1449254/den-ektononetai-i-entasi-sta-vorizia-neo-epeisodio-metaxy-ton-dyo-oikogeneion-me-minyseis-kai-syllipseis/"
+        "https://www.efsyn.gr/ellada/1449269/kalamaria-agrio-peristatiko-emfylis-vias-se-varos-27hronis-synelifthi-29hronos/",
+        "https://www.efsyn.gr/kosmos/1449270/o-germanikos-stratos-se-poreia-ayxisis-ton-strateysimon-panigyrizei-to-ypoyrgeio-amynas/",
+        "https://www.efsyn.gr/podcast/paratiritirio-synohis-giati-o-evros-paramenei-se-apomonosi-ep-20/"
       ],
-      "seen_at_utc": "2026-08-17T13:30:13.780059+00:00"
+      "seen_at_utc": "2026-08-17T13:51:33.757250+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/economy/distillation-sygkrousi-giganton-gia-tin-pneymatiki-idioktisia-to-mystiko-tis-kinas-pou-thoryvise-ti-silikon-valei/",
-      "title": "Σύγκρουση «γιγάντων» για την πνευματική ιδιοκτησία - To «μυστικό» της Κίνας που θορύβησε τη Σίλικον Βάλεϊ",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ «ΓΙΓΑΝΤΩΝ» ΓΙΑ ΤΗΝ ΠΝΕΥΜΑΤΙΚΗ ΙΔΙΟΚΤΗΣΙΑ - TO «ΜΥΣΤΙΚΟ» ΤΗΣ ΚΙΝΑΣ ΠΟΥ ΘΟΡΥΒΗΣΕ ΤΗ ΣΙΛΙΚΟΝ ΒΑΛΕΙ",
+      "url": "https://www.in.gr/2026/08/17/world/coolcation-an-varethikate-ta-40aria-ayti-einai-i-nea-tasi-pou-prepei-na-gnorizete/",
+      "title": "Διακοπές χωρίς καύσωνα; Το coolcation γίνεται η νέα εμμονή των ταξιδιωτών",
+      "normalized_title": "ΔΙΑΚΟΠΕΣ ΧΩΡΙΣ ΚΑΥΣΩΝΑ; ΤΟ COOLCATION ΓΙΝΕΤΑΙ Η ΝΕΑ ΕΜΜΟΝΗ ΤΩΝ ΤΑΞΙΔΙΩΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/economy/distillation-sygkrousi-giganton-gia-tin-pneymatiki-idioktisia-to-mystiko-tis-kinas-pou-thoryvise-ti-silikon-valei/"
+        "https://www.in.gr/2026/08/17/world/coolcation-an-varethikate-ta-40aria-ayti-einai-i-nea-tasi-pou-prepei-na-gnorizete/",
+        "https://www.in.gr/2026/08/17/greece/salamina-ksekinoun-ayrio-oi-aytopsies-gia-tin-katagrafi-ton-zimion-apo-tis-pyrkagies-toulaxiston-15-kamena-spitia/",
+        "https://www.in.gr/2026/08/17/sports/football/anri-me-pire-tilefono-o-vieira-kai-mou-eipe-ti-talento-o-tzolis-vid/"
       ],
-      "seen_at_utc": "2026-08-17T13:30:13.780022+00:00"
+      "seen_at_utc": "2026-08-17T13:51:33.757211+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T13:30:13.780138+00:00"
+  "updated_at_utc": "2026-08-17T13:51:33.757333+00:00"
 }
