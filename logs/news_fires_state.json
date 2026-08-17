@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564405706/kyr-mitsotakis-i-ellada-tha-diekdikisei-to-eyropaiko-protathlima-polo-toy-2028/",
-      "title": "Κυρ. Μητσοτάκης: Η Ελλάδα θα διεκδικήσει το Ευρωπαϊκό Πρωτάθλημα Πόλο του 2028",
-      "normalized_title": "ΚΥΡ. ΜΗΤΣΟΤΑΚΗΣ: Η ΕΛΛΑΔΑ ΘΑ ΔΙΕΚΔΙΚΗΣΕΙ ΤΟ ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΠΟΛΟ ΤΟΥ 2028",
+      "url": "https://www.kathimerini.gr/society/564405715/fotia-tora-sto-palaiochori-chalkidikis/",
+      "title": "Φωτιά τώρα στο Παλαιοχώρι Χαλκιδικής",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΠΑΛΑΙΟΧΩΡΙ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564405706/kyr-mitsotakis-i-ellada-tha-diekdikisei-to-eyropaiko-protathlima-polo-toy-2028/",
-        "https://www.kathimerini.gr/world/564405703/ipa-meta-ta-fonika-pligmata-sti-thalassa-etoimazoyn-chersaies-epicheiriseis-sti-latiniki-ameriki/",
-        "https://www.kathimerini.gr/k/k-magazine/564400729/ti-krasia-pinoyme-ton-dekapentaygoysto/",
-        "https://www.kathimerini.gr/life/hours/564405691/long-live-the-monarch/"
+        "https://www.kathimerini.gr/society/564405715/fotia-tora-sto-palaiochori-chalkidikis/"
       ],
-      "seen_at_utc": "2026-08-17T10:18:06.051815+00:00"
+      "seen_at_utc": "2026-08-17T10:30:24.703578+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,41 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865842/fotia-tora-se-agrotodasiki-ektasi-sto-palaiohori-halkidikis/?utm_source=rss",
-      "title": "Φωτιά τώρα σε αγροτοδασική έκταση στο Παλαιοχώρι Χαλκιδικής",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΠΑΛΑΙΟΧΩΡΙ ΧΑΛΚΙΔΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1865849/onaseia-sholeia-aitiseis-ekpaideutikon-gia-proslipsi-os-anaplirotes-gia-to-sholiko-etos-2026-2027/?utm_source=rss",
+      "title": "Ωνάσεια Σχολεία: Πότε σταματούν οι αιτήσεις εκπαιδευτικών για πρόσληψη ως αναπληρωτές για το σχολικό έτος 2026 - 2027",
+      "normalized_title": "ΩΝΑΣΕΙΑ ΣΧΟΛΕΙΑ: ΠΟΤΕ ΣΤΑΜΑΤΟΥΝ ΟΙ ΑΙΤΗΣΕΙΣ ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΓΙΑ ΠΡΟΣΛΗΨΗ ΩΣ ΑΝΑΠΛΗΡΩΤΕΣ ΓΙΑ ΤΟ ΣΧΟΛΙΚΟ ΕΤΟΣ 2026 - 2027",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865842/fotia-tora-se-agrotodasiki-ektasi-sto-palaiohori-halkidikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865849/onaseia-sholeia-aitiseis-ekpaideutikon-gia-proslipsi-os-anaplirotes-gia-to-sholiko-etos-2026-2027/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865846/halkidiki-anazitoudan-29hronos-kai-vrethike-nekros-meta-apo-trohaio-stin-moudanion-sukias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T10:18:06.051948+00:00"
+      "seen_at_utc": "2026-08-17T10:30:24.703660+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448970/panathinaikos-i-proetoimasia-kai-i-diapseysi/",
-      "title": "Παναθηναϊκός: Η προετοιμασία και η διάψευση",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: Η ΠΡΟΕΤΟΙΜΑΣΙΑ ΚΑΙ Η ΔΙΑΨΕΥΣΗ",
+      "url": "https://www.efsyn.gr/politiki/1449098/pasok-irema-nera-tha-eprepe-na-simainoyn-amoivaia-eilikrineia-kai-sevasmo-toy-diethnoys-dikaioy/",
+      "title": "ΠΑΣΟΚ: «Ήρεμα νερά» θα έπρεπε να σημαίνουν αμοιβαία ειλικρίνεια και σεβασμό του διεθνούς δικαίου",
+      "normalized_title": "ΠΑΣΟΚ: «ΗΡΕΜΑ ΝΕΡΑ» ΘΑ ΕΠΡΕΠΕ ΝΑ ΣΗΜΑΙΝΟΥΝ ΑΜΟΙΒΑΙΑ ΕΙΛΙΚΡΙΝΕΙΑ ΚΑΙ ΣΕΒΑΣΜΟ ΤΟΥ ΔΙΕΘΝΟΥΣ ΔΙΚΑΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448970/panathinaikos-i-proetoimasia-kai-i-diapseysi/",
-        "https://www.efsyn.gr/politiki/1449104/eyrovoyleytes-pasok-pros-kagia-kalas-pos-tha-antimetopisei-i-ee-ta-toyrkika-thalassia-parka/",
-        "https://www.efsyn.gr/politiki/1449088/apostolopoylos-pali-psemata-o-adonis-enantion-moy-i-akrodexia-trefetai-apo-to-lege-lege-kati-tha-meinei/",
-        "https://www.efsyn.gr/politiki/1449091/sygharitiria-mitsotaki-se-hristoy-kai-sisko-i-ellada-diekdikei-to-eyropaiko-protathlima-polo-toy-2028/",
-        "https://www.efsyn.gr/ellada/1449084/ayta-einai-ta-meli-tis-speiras-poy-prospoioyntan-ypalliloys-reymatos-kai-xafrizan-ilikiomenoys/"
+        "https://www.efsyn.gr/politiki/1449098/pasok-irema-nera-tha-eprepe-na-simainoyn-amoivaia-eilikrineia-kai-sevasmo-toy-diethnoys-dikaioy/",
+        "https://www.efsyn.gr/ellada/1449120/fotia-sto-palaiohori-halkidikis/",
+        "https://www.efsyn.gr/politiki/1449112/torpili-sta-irema-nera-me-ta-dyo-toyrkika-thalassia-parka-mydroi-tis-antipoliteysis/",
+        "https://www.efsyn.gr/tehnes/1448988/hilma-af-klint-1862-1944-i-zografos-poy-perimene-enan-aiona/"
       ],
-      "seen_at_utc": "2026-08-17T10:18:06.051924+00:00"
+      "seen_at_utc": "2026-08-17T10:30:24.703636+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/greece/astynomia-sti-dimosiotita-stoixeia-kai-fotografies-syllifthenton-gia-apates-se-varos-ilikiomenon/",
-      "title": "Δόθηκαν στη δημοσιότητα στοιχεία και φωτογραφίες συλληφθέντων για απάτες σε βάρος ηλικιωμένων",
-      "normalized_title": "ΔΟΘΗΚΑΝ ΣΤΗ ΔΗΜΟΣΙΟΤΗΤΑ ΣΤΟΙΧΕΙΑ ΚΑΙ ΦΩΤΟΓΡΑΦΙΕΣ ΣΥΛΛΗΦΘΕΝΤΩΝ ΓΙΑ ΑΠΑΤΕΣ ΣΕ ΒΑΡΟΣ ΗΛΙΚΙΩΜΕΝΩΝ",
+      "url": "https://www.in.gr/2026/08/17/sports/basketball/paiktis-tis-aek-o-forgouornt-nterik-ouiliams/",
+      "title": "Παίκτης της ΑΕΚ ο φόργουορντ Ντέρικ Ουίλιαμς",
+      "normalized_title": "ΠΑΙΚΤΗΣ ΤΗΣ ΑΕΚ Ο ΦΟΡΓΟΥΟΡΝΤ ΝΤΕΡΙΚ ΟΥΙΛΙΑΜΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/greece/astynomia-sti-dimosiotita-stoixeia-kai-fotografies-syllifthenton-gia-apates-se-varos-ilikiomenon/",
-        "https://www.in.gr/2026/08/17/economy/oikonomikes-eidiseis/iris-pote-oi-metafores-xrimaton-theorountai-dorea-oi-pagides-pou-akyronoun-to-aforologito/",
-        "https://www.in.gr/2026/08/17/life/culture-live/tzoni-ntep-etoimos-na-foresei-ksana-to-kostoumi-tou-jack-sparrow/",
-        "https://www.in.gr/2026/08/17/greece/salamina-to-spiti-tous-sothike-ekeinoi-kaikan-sto-rema-martyria-gia-tous-ilikiomenous-pou-exasan-tin-zoi-tous/",
-        "https://www.in.gr/2026/08/17/sports/football/o-mourinio-emfanistike-me-mayrismeno-mati-ti-synevi-vid/",
-        "https://www.in.gr/2026/08/17/economy/temu-shein-aliexpress-pos-to-xaratsi-ton-3-eyro-allazei-tis-online-agores-pos-antidroun-oi-kinezikes-platformes/"
+        "https://www.in.gr/2026/08/17/sports/basketball/paiktis-tis-aek-o-forgouornt-nterik-ouiliams/",
+        "https://www.in.gr/2026/08/17/greece/fotia-sto-palaioxori-xalkidikis/"
       ],
-      "seen_at_utc": "2026-08-17T10:18:06.051898+00:00"
+      "seen_at_utc": "2026-08-17T10:30:24.703610+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T10:18:06.052047+00:00"
+  "updated_at_utc": "2026-08-17T10:30:24.703730+00:00"
 }
