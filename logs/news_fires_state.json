@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564406357/siskos-christoy-semna-kai-choris-megala-logia-stis-koryfaies-theseis-tis-eyropis/",
-      "title": "Σίσκος – Χρήστου: Σεμνά και χωρίς μεγάλα λόγια στις κορυφαίες θέσεις της Ευρώπης",
-      "normalized_title": "ΣΙΣΚΟΣ – ΧΡΗΣΤΟΥ: ΣΕΜΝΑ ΚΑΙ ΧΩΡΙΣ ΜΕΓΑΛΑ ΛΟΓΙΑ ΣΤΙΣ ΚΟΡΥΦΑΙΕΣ ΘΕΣΕΙΣ ΤΗΣ ΕΥΡΩΠΗΣ",
+      "url": "https://www.kathimerini.gr/society/564406387/gastoyni-to-chroniko-tis-epithesis-stoys-astynomikoys-apo-omada-roma/",
+      "title": "Γαστούνη: Το χρονικό της επίθεσης στους αστυνομικούς από ομάδα Ρομά",
+      "normalized_title": "ΓΑΣΤΟΥΝΗ: ΤΟ ΧΡΟΝΙΚΟ ΤΗΣ ΕΠΙΘΕΣΗΣ ΣΤΟΥΣ ΑΣΤΥΝΟΜΙΚΟΥΣ ΑΠΟ ΟΜΑΔΑ ΡΟΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564406357/siskos-christoy-semna-kai-choris-megala-logia-stis-koryfaies-theseis-tis-eyropis/"
+        "https://www.kathimerini.gr/society/564406387/gastoyni-to-chroniko-tis-epithesis-stoys-astynomikoys-apo-omada-roma/",
+        "https://www.kathimerini.gr/world/564406375/tramp-kamia-paratasi-sto-mnimonio-katanoisis-me-to-iran/"
       ],
-      "seen_at_utc": "2026-08-17T19:30:08.961439+00:00"
+      "seen_at_utc": "2026-08-17T19:51:43.490207+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1269,27 @@
       "seen_at_utc": "2026-08-17T19:30:08.961525+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1449486/meta-ti-metagrafi-konstantelia-o-paok-pire-17hrono-ellina-apo-ti-ntortmoynt/",
-      "title": "Μετά τη μεταγραφή Κωνσταντέλια ο ΠΑΟΚ πήρε 17χρονο Έλληνα από τη Ντόρτμουντ",
-      "normalized_title": "ΜΕΤΑ ΤΗ ΜΕΤΑΓΡΑΦΗ ΚΩΝΣΤΑΝΤΕΛΙΑ Ο ΠΑΟΚ ΠΗΡΕ 17ΧΡΟΝΟ ΕΛΛΗΝΑ ΑΠΟ ΤΗ ΝΤΟΡΤΜΟΥΝΤ",
+      "url": "https://www.efsyn.gr/kosmos/1449487/euronews-oi-vryxelles-parakoloythoyn-ta-ufo-apo-to-2023/",
+      "title": "Euronews: Οι Βρυξέλλες παρακολουθούν τα UFO από το 2023",
+      "normalized_title": "EURONEWS: ΟΙ ΒΡΥΞΕΛΛΕΣ ΠΑΡΑΚΟΛΟΥΘΟΥΝ ΤΑ UFO ΑΠΟ ΤΟ 2023",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1449486/meta-ti-metagrafi-konstantelia-o-paok-pire-17hrono-ellina-apo-ti-ntortmoynt/",
-        "https://www.efsyn.gr/kosmos/1449483/thrinos-sti-zimpampoye-o-apologismos-toy-nayagioy-feri-anerhetai-se-92-nekroys/"
+        "https://www.efsyn.gr/kosmos/1449487/euronews-oi-vryxelles-parakoloythoyn-ta-ufo-apo-to-2023/",
+        "https://www.efsyn.gr/kosmos/1449490/neo-akyro-apo-to-anotato-dikastirio-se-prosfygi-toy-tramp-kata-tis-katavolis-apozimiosis-gia-sexoyaliki-epithesi/"
       ],
-      "seen_at_utc": "2026-08-17T19:30:08.961499+00:00"
+      "seen_at_utc": "2026-08-17T19:51:43.490285+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/life/culture-live/sinti-krofornt-kai-ritsarnt-gkir-o-90s-gamos-to-diazygio-to-karma-na-symprotagonistisoun-ta-paidia-tous/",
-      "title": "Σίντι Κρόφορντ και Ρίτσαρντ Γκιρ: Ο 90s γάμος, το διαζύγιο, το κάρμα να συμπρωταγωνιστήσουν τα παιδιά τους",
-      "normalized_title": "ΣΙΝΤΙ ΚΡΟΦΟΡΝΤ ΚΑΙ ΡΙΤΣΑΡΝΤ ΓΚΙΡ: Ο 90S ΓΑΜΟΣ, ΤΟ ΔΙΑΖΥΓΙΟ, ΤΟ ΚΑΡΜΑ ΝΑ ΣΥΜΠΡΩΤΑΓΩΝΙΣΤΗΣΟΥΝ ΤΑ ΠΑΙΔΙΑ ΤΟΥΣ",
+      "url": "https://www.in.gr/2026/08/17/greece/sifnos-vinteo-ntokoumento-apo-tin-ptosi-tou-elikopterou-enas-apo-tous-epivates-pidikse-prin-syntrivei-alla-den-ta-katafere/",
+      "title": "Σίφνος: Βίντεο ντοκουμέντο από την πτώση του ελικοπτέρου – Ένας από τους επιβάτες πήδηξε πριν συντριβεί αλλά δεν τα κατάφερε",
+      "normalized_title": "ΣΙΦΝΟΣ: ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ – ΕΝΑΣ ΑΠΟ ΤΟΥΣ ΕΠΙΒΑΤΕΣ ΠΗΔΗΞΕ ΠΡΙΝ ΣΥΝΤΡΙΒΕΙ ΑΛΛΑ ΔΕΝ ΤΑ ΚΑΤΑΦΕΡΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/life/culture-live/sinti-krofornt-kai-ritsarnt-gkir-o-90s-gamos-to-diazygio-to-karma-na-symprotagonistisoun-ta-paidia-tous/"
+        "https://www.in.gr/2026/08/17/greece/sifnos-vinteo-ntokoumento-apo-tin-ptosi-tou-elikopterou-enas-apo-tous-epivates-pidikse-prin-syntrivei-alla-den-ta-katafere/",
+        "https://www.in.gr/2026/08/17/sports/football/aek-anakoinose-ton-ariagka-ypegrapse-gia-tessera-xronia-pics/",
+        "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/to-grafeio-tis-neas-epoxis-esy-poios-apo-tous-6-typous-ergazomenou-eisai/",
+        "https://www.in.gr/2026/08/17/politics/to-epiteliko-kratos-mitsotaki-apenanti-sti-fotia-45-ekat-stremmata-meta-oi-apantiseis-agnoountai/"
       ],
-      "seen_at_utc": "2026-08-17T19:30:08.961475+00:00"
+      "seen_at_utc": "2026-08-17T19:51:43.490265+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T19:30:08.961590+00:00"
+  "updated_at_utc": "2026-08-17T19:51:43.490362+00:00"
 }
