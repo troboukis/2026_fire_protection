@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564405853/to-iran-etoimo-na-klimakosei-an-apotychei-i-diplomatia-me-tis-ipa/",
-      "title": "Το Ιράν «έτοιμο να κλιμακώσει» αν αποτύχει η διπλωματία με τις ΗΠΑ",
-      "normalized_title": "ΤΟ ΙΡΑΝ «ΕΤΟΙΜΟ ΝΑ ΚΛΙΜΑΚΩΣΕΙ» ΑΝ ΑΠΟΤΥΧΕΙ Η ΔΙΠΛΩΜΑΤΙΑ ΜΕ ΤΙΣ ΗΠΑ",
+      "url": "https://www.kathimerini.gr/world/564405877/germania-rekor-13-eton-ston-arithmo-ton-stratioton/",
+      "title": "Γερμανία: Ρεκόρ 13 ετών στον αριθμό των στρατιωτών",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΡΕΚΟΡ 13 ΕΤΩΝ ΣΤΟΝ ΑΡΙΘΜΟ ΤΩΝ ΣΤΡΑΤΙΩΤΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564405853/to-iran-etoimo-na-klimakosei-an-apotychei-i-diplomatia-me-tis-ipa/",
-        "https://www.kathimerini.gr/society/564405850/fotia-se-dasiki-ektasi-sta-agrafa-sikothikan-dyo-aeroskafi/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564405832/i-pninat-gianai-nea-presvis-toy-israil-stin-ellada/",
-        "https://www.kathimerini.gr/society/564405838/ste-mploko-stis-taktopoiiseis-aythaireton-me-akyromeni-oikodomiki-adeia/"
+        "https://www.kathimerini.gr/world/564405877/germania-rekor-13-eton-ston-arithmo-ton-stratioton/",
+        "https://www.kathimerini.gr/society/564405931/aspropyrgos-synelifthi-28chronos-poy-epitethike-me-karampina-se-gynaika-kai-ton-gio-tis/",
+        "https://www.kathimerini.gr/world/564405874/tsechia-syggnomi-apo-ton-prothypoyrgo-epeidi-ekopse-loyloydia-se-prostateyomeni-periochi/"
       ],
-      "seen_at_utc": "2026-08-17T12:51:31.476346+00:00"
+      "seen_at_utc": "2026-08-17T13:17:27.105204+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,37 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865901/fotia-sto-xiromero-aitoloakarnanias-epiheiroun-tria-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά στο Ξηρόμερο Αιτωλοακαρνανίας, επιχειρούν τρία εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΞΗΡΟΜΕΡΟ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΕΠΙΧΕΙΡΟΥΝ ΤΡΙΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1865914/freno-apo-to-ste-stin-taktopoiisi-authaireton-me-akuromeni-oikodomiki-adeia-apo-ti-dikaiosuni/?utm_source=rss",
+      "title": "Φρένο από το ΣτΕ στην τακτοποίηση αυθαιρέτων με ακυρωμένη οικοδομική άδεια από τη Δικαιοσύνη",
+      "normalized_title": "ΦΡΕΝΟ ΑΠΟ ΤΟ ΣΤΕ ΣΤΗΝ ΤΑΚΤΟΠΟΙΗΣΗ ΑΥΘΑΙΡΕΤΩΝ ΜΕ ΑΚΥΡΩΜΕΝΗ ΟΙΚΟΔΟΜΙΚΗ ΑΔΕΙΑ ΑΠΟ ΤΗ ΔΙΚΑΙΟΣΥΝΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865901/fotia-sto-xiromero-aitoloakarnanias-epiheiroun-tria-enaeria-mesa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865914/freno-apo-to-ste-stin-taktopoiisi-authaireton-me-akuromeni-oikodomiki-adeia-apo-ti-dikaiosuni/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865912/andras-eklepse-futa-axias-12500-euro-apo-auli-spitiou-stin-pella/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1865905/sunelifthi-28hronos-pou-purovolise-aniliko-ston-aspropurgo-anazitoudai-alloi-duo-andres/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T12:51:31.476501+00:00"
+      "seen_at_utc": "2026-08-17T13:17:27.105304+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1449222/heinten-panetier-den-yparhoyn-endeixeis-egklimatikis-energeias-ta-prota-stoiheia-gia-ton-thanato-tis/",
-      "title": "Χέιντεν Πανετιέρ: «Δεν υπάρχουν ενδείξεις εγκληματικής ενέργειας» – Τα πρώτα στοιχεία για τον θάνατό της",
-      "normalized_title": "ΧΕΙΝΤΕΝ ΠΑΝΕΤΙΕΡ: «ΔΕΝ ΥΠΑΡΧΟΥΝ ΕΝΔΕΙΞΕΙΣ ΕΓΚΛΗΜΑΤΙΚΗΣ ΕΝΕΡΓΕΙΑΣ» – ΤΑ ΠΡΩΤΑ ΣΤΟΙΧΕΙΑ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΗΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1449246/o-paok-anakoinose-ton-entiage-apohorei-o-geremegef/",
+      "title": "Ο ΠΑΟΚ ανακοίνωσε τον Εντιαγέ, αποχωρεί ο Γερεμέγεφ",
+      "normalized_title": "Ο ΠΑΟΚ ΑΝΑΚΟΙΝΩΣΕ ΤΟΝ ΕΝΤΙΑΓΕ, ΑΠΟΧΩΡΕΙ Ο ΓΕΡΕΜΕΓΕΦ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1449222/heinten-panetier-den-yparhoyn-endeixeis-egklimatikis-energeias-ta-prota-stoiheia-gia-ton-thanato-tis/",
-        "https://www.efsyn.gr/oikonomia/1449097/toyrismos-ena-akomi-kalokairi-galeras-gia-toys-ergazomenoys-apliroti-ergasia-kai-diamoni-se-ypogeia/",
-        "https://www.efsyn.gr/kosmos/1449215/stena-toy-ormoyz-o-tramp-tora-apeilei-na-vomvardisei-to-oman-ean-stathei-empodio-stis-diapragmateyseis/",
-        "https://www.efsyn.gr/ellada/1449218/aimatiroi-pyrovolismoi-ston-aspropyrgo-synelifthi-28hronos-anazitoyntai-alloi-dyo-andres/"
+        "https://www.efsyn.gr/athlitismos/1449246/o-paok-anakoinose-ton-entiage-apohorei-o-geremegef/",
+        "https://www.efsyn.gr/politiki/1449223/syriza-meta-to-protoselido-tis-ef-syn-i-kyvernisi-afinei-anexelegkti-tin-ergodotiki-aythairesia-ston-toyrismo/",
+        "https://www.efsyn.gr/ellada/1449245/fotia-sta-agrafa-eyrytanias-sti-mahi-tis-katasvesis-dyo-aeroskafi/",
+        "https://www.efsyn.gr/politiki/1449232/stin-athina-i-nea-presvis-toy-israil-eiste-vasikos-etairos-mas-stin-anatoliki-mesogeio-dilose/"
       ],
-      "seen_at_utc": "2026-08-17T12:51:31.476477+00:00"
+      "seen_at_utc": "2026-08-17T13:17:27.105280+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/politics/politiki-grammateia/eyxaristoume-gia-ti-sygkinisi-pou-mas-xarisate-sygxaritiria-apo-tin-elas-stous-athlites-mas-pou-dieprepsan-sto-mpermigxam/",
-      "title": "«Ευχαριστούμε για τη συγκίνηση που μας χαρίσατε»: Συγχαρητήρια από την ΕΛΑΣ στους αθλητές μας που διέπρεψαν στο Μπέρμιγχαμ",
-      "normalized_title": "«ΕΥΧΑΡΙΣΤΟΥΜΕ ΓΙΑ ΤΗ ΣΥΓΚΙΝΗΣΗ ΠΟΥ ΜΑΣ ΧΑΡΙΣΑΤΕ»: ΣΥΓΧΑΡΗΤΗΡΙΑ ΑΠΟ ΤΗΝ ΕΛΑΣ ΣΤΟΥΣ ΑΘΛΗΤΕΣ ΜΑΣ ΠΟΥ ΔΙΕΠΡΕΨΑΝ ΣΤΟ ΜΠΕΡΜΙΓΧΑΜ",
+      "url": "https://www.in.gr/2026/08/17/politics/politiki-grammateia/pos-tha-apantisei-i-ee-sti-nea-tourkiki-proklisi-paremvasi-ton-eyrovouleyton-tou-pasok-gia-ta-thalassia-parka/",
+      "title": "«Πώς θα απαντήσει η ΕΕ στη νέα τουρκική πρόκληση»; Παρέμβαση των ευρωβουλευτών του ΠΑΣΟΚ για τα «θαλάσσια πάρκα»",
+      "normalized_title": "«ΠΩΣ ΘΑ ΑΠΑΝΤΗΣΕΙ Η ΕΕ ΣΤΗ ΝΕΑ ΤΟΥΡΚΙΚΗ ΠΡΟΚΛΗΣΗ»; ΠΑΡΕΜΒΑΣΗ ΤΩΝ ΕΥΡΩΒΟΥΛΕΥΤΩΝ ΤΟΥ ΠΑΣΟΚ ΓΙΑ ΤΑ «ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/politics/politiki-grammateia/eyxaristoume-gia-ti-sygkinisi-pou-mas-xarisate-sygxaritiria-apo-tin-elas-stous-athlites-mas-pou-dieprepsan-sto-mpermigxam/",
-        "https://www.in.gr/2026/08/17/sports/football/i-apoxorisi-tou-konstantelia-apo-ton-paok-pikrainei-alla-eprepe-na-ginei/",
-        "https://www.in.gr/2026/08/17/politics/politiki-grammateia/pasok-katigorei-tin-kyvernisi-gia-adraneia-gia-ta-thalassia-parka-tis-tourkias-paranomi-energeia/"
+        "https://www.in.gr/2026/08/17/politics/politiki-grammateia/pos-tha-apantisei-i-ee-sti-nea-tourkiki-proklisi-paremvasi-ton-eyrovouleyton-tou-pasok-gia-ta-thalassia-parka/",
+        "https://www.in.gr/2026/08/17/world/coolcation-an-varethikate-ta-40aria-ayti-einai-i-nea-tasi-pou-prepei-na-gnorizete/",
+        "https://www.in.gr/2026/08/17/sports/othersports/tsitsipas-asimenio-metallio-ksana-yperifanos-gia-sena-manolo/",
+        "https://www.in.gr/2026/08/17/go-fun/fizz/xeinten-panetier-h-ypervoliki-dosi-i-11xroni-kori-kai-i-elpida-mines-prin-ton-thanato-tis-sta-36-tis/",
+        "https://www.in.gr/2026/08/17/greece/fotia-sti-salamina-i-fotia-mpike-mesa-sto-spiti-katakaika-pantou-leei-enas-apo-tous-pyropliktous/"
       ],
-      "seen_at_utc": "2026-08-17T12:51:31.476427+00:00"
+      "seen_at_utc": "2026-08-17T13:17:27.105259+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T12:51:31.476610+00:00"
+  "updated_at_utc": "2026-08-17T13:17:27.105400+00:00"
 }
