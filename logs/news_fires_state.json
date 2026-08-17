@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564405667/to-oneiriko-kalokairi-toy-christoy-tzoli/",
-      "title": "Το ονειρικό καλοκαίρι του Χρήστου Τζόλη",
-      "normalized_title": "ΤΟ ΟΝΕΙΡΙΚΟ ΚΑΛΟΚΑΙΡΙ ΤΟΥ ΧΡΗΣΤΟΥ ΤΖΟΛΗ",
+      "url": "https://www.kathimerini.gr/politics/564405706/kyr-mitsotakis-i-ellada-tha-diekdikisei-to-eyropaiko-protathlima-polo-toy-2028/",
+      "title": "Κυρ. Μητσοτάκης: Η Ελλάδα θα διεκδικήσει το Ευρωπαϊκό Πρωτάθλημα Πόλο του 2028",
+      "normalized_title": "ΚΥΡ. ΜΗΤΣΟΤΑΚΗΣ: Η ΕΛΛΑΔΑ ΘΑ ΔΙΕΚΔΙΚΗΣΕΙ ΤΟ ΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΠΟΛΟ ΤΟΥ 2028",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564405667/to-oneiriko-kalokairi-toy-christoy-tzoli/",
-        "https://www.kathimerini.gr/world/564405649/israilinos-ypoyrgos-na-skotonoyme-30-40-palaistinioys-sti-gaza-kathe-vrady/"
+        "https://www.kathimerini.gr/politics/564405706/kyr-mitsotakis-i-ellada-tha-diekdikisei-to-eyropaiko-protathlima-polo-toy-2028/",
+        "https://www.kathimerini.gr/world/564405703/ipa-meta-ta-fonika-pligmata-sti-thalassa-etoimazoyn-chersaies-epicheiriseis-sti-latiniki-ameriki/",
+        "https://www.kathimerini.gr/k/k-magazine/564400729/ti-krasia-pinoyme-ton-dekapentaygoysto/",
+        "https://www.kathimerini.gr/life/hours/564405691/long-live-the-monarch/"
       ],
-      "seen_at_utc": "2026-08-17T09:51:14.077219+00:00"
+      "seen_at_utc": "2026-08-17T10:18:06.051815+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1262,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1865831/14hronos-skarfalose-se-louki-polukatoikias-kai-eklepse-kosmimata-stin-patra-to-parelthon-me-ti-meth-kai-tous-skulous/?utm_source=rss",
-      "title": "14χρονος σκαρφάλωσε σε λούκι πολυκατοικίας και έκλεψε κοσμήματα στην Πάτρα, το παρελθόν με τη ΜΕΘ και τους σκύλους",
-      "normalized_title": "14ΧΡΟΝΟΣ ΣΚΑΡΦΑΛΩΣΕ ΣΕ ΛΟΥΚΙ ΠΟΛΥΚΑΤΟΙΚΙΑΣ ΚΑΙ ΕΚΛΕΨΕ ΚΟΣΜΗΜΑΤΑ ΣΤΗΝ ΠΑΤΡΑ, ΤΟ ΠΑΡΕΛΘΟΝ ΜΕ ΤΗ ΜΕΘ ΚΑΙ ΤΟΥΣ ΣΚΥΛΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1865842/fotia-tora-se-agrotodasiki-ektasi-sto-palaiohori-halkidikis/?utm_source=rss",
+      "title": "Φωτιά τώρα σε αγροτοδασική έκταση στο Παλαιοχώρι Χαλκιδικής",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΠΑΛΑΙΟΧΩΡΙ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1865831/14hronos-skarfalose-se-louki-polukatoikias-kai-eklepse-kosmimata-stin-patra-to-parelthon-me-ti-meth-kai-tous-skulous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1865842/fotia-tora-se-agrotodasiki-ektasi-sto-palaiohori-halkidikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T09:51:14.077323+00:00"
+      "seen_at_utc": "2026-08-17T10:18:06.051948+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1448964/aek-pairnei-ton-ariagka-etoimazetai-gia-lefski/",
-      "title": "ΑΕΚ: Παίρνει τον Αριάγκα, ετοιμάζεται για Λέφσκι",
-      "normalized_title": "ΑΕΚ: ΠΑΙΡΝΕΙ ΤΟΝ ΑΡΙΑΓΚΑ, ΕΤΟΙΜΑΖΕΤΑΙ ΓΙΑ ΛΕΦΣΚΙ",
+      "url": "https://www.efsyn.gr/athlitismos/1448970/panathinaikos-i-proetoimasia-kai-i-diapseysi/",
+      "title": "Παναθηναϊκός: Η προετοιμασία και η διάψευση",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: Η ΠΡΟΕΤΟΙΜΑΣΙΑ ΚΑΙ Η ΔΙΑΨΕΥΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1448964/aek-pairnei-ton-ariagka-etoimazetai-gia-lefski/",
-        "https://www.efsyn.gr/athlitismos/1449038/karalis-otan-eheis-ena-megalo-kyma-agapis-mporeis-na-xeperaseis-ton-eayto-soy-to-parapono-toy/"
+        "https://www.efsyn.gr/athlitismos/1448970/panathinaikos-i-proetoimasia-kai-i-diapseysi/",
+        "https://www.efsyn.gr/politiki/1449104/eyrovoyleytes-pasok-pros-kagia-kalas-pos-tha-antimetopisei-i-ee-ta-toyrkika-thalassia-parka/",
+        "https://www.efsyn.gr/politiki/1449088/apostolopoylos-pali-psemata-o-adonis-enantion-moy-i-akrodexia-trefetai-apo-to-lege-lege-kati-tha-meinei/",
+        "https://www.efsyn.gr/politiki/1449091/sygharitiria-mitsotaki-se-hristoy-kai-sisko-i-ellada-diekdikei-to-eyropaiko-protathlima-polo-toy-2028/",
+        "https://www.efsyn.gr/ellada/1449084/ayta-einai-ta-meli-tis-speiras-poy-prospoioyntan-ypalliloys-reymatos-kai-xafrizan-ilikiomenoys/"
       ],
-      "seen_at_utc": "2026-08-17T09:51:14.077291+00:00"
+      "seen_at_utc": "2026-08-17T10:18:06.051924+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/in-science/technology/ta-galaxy-buds-tis-samsung-leitourgoun-kai-os-akoustika-varikoias/",
-      "title": "Τα Galaxy Buds της Samsung λειτουργούν και ως ακουστικά βαρηκοΐας",
-      "normalized_title": "ΤΑ GALAXY BUDS ΤΗΣ SAMSUNG ΛΕΙΤΟΥΡΓΟΥΝ ΚΑΙ ΩΣ ΑΚΟΥΣΤΙΚΑ ΒΑΡΗΚΟΙΑΣ",
+      "url": "https://www.in.gr/2026/08/17/greece/astynomia-sti-dimosiotita-stoixeia-kai-fotografies-syllifthenton-gia-apates-se-varos-ilikiomenon/",
+      "title": "Δόθηκαν στη δημοσιότητα στοιχεία και φωτογραφίες συλληφθέντων για απάτες σε βάρος ηλικιωμένων",
+      "normalized_title": "ΔΟΘΗΚΑΝ ΣΤΗ ΔΗΜΟΣΙΟΤΗΤΑ ΣΤΟΙΧΕΙΑ ΚΑΙ ΦΩΤΟΓΡΑΦΙΕΣ ΣΥΛΛΗΦΘΕΝΤΩΝ ΓΙΑ ΑΠΑΤΕΣ ΣΕ ΒΑΡΟΣ ΗΛΙΚΙΩΜΕΝΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/in-science/technology/ta-galaxy-buds-tis-samsung-leitourgoun-kai-os-akoustika-varikoias/",
-        "https://www.in.gr/2026/08/17/sports/football/romano-%ce%84epesan-oi-ypografes-gia-ti-metagrafi-konstantelia-sti-ntortmount-ayti-einai-symfonia-me-paok/"
+        "https://www.in.gr/2026/08/17/greece/astynomia-sti-dimosiotita-stoixeia-kai-fotografies-syllifthenton-gia-apates-se-varos-ilikiomenon/",
+        "https://www.in.gr/2026/08/17/economy/oikonomikes-eidiseis/iris-pote-oi-metafores-xrimaton-theorountai-dorea-oi-pagides-pou-akyronoun-to-aforologito/",
+        "https://www.in.gr/2026/08/17/life/culture-live/tzoni-ntep-etoimos-na-foresei-ksana-to-kostoumi-tou-jack-sparrow/",
+        "https://www.in.gr/2026/08/17/greece/salamina-to-spiti-tous-sothike-ekeinoi-kaikan-sto-rema-martyria-gia-tous-ilikiomenous-pou-exasan-tin-zoi-tous/",
+        "https://www.in.gr/2026/08/17/sports/football/o-mourinio-emfanistike-me-mayrismeno-mati-ti-synevi-vid/",
+        "https://www.in.gr/2026/08/17/economy/temu-shein-aliexpress-pos-to-xaratsi-ton-3-eyro-allazei-tis-online-agores-pos-antidroun-oi-kinezikes-platformes/"
       ],
-      "seen_at_utc": "2026-08-17T09:51:14.077263+00:00"
+      "seen_at_utc": "2026-08-17T10:18:06.051898+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T09:51:14.077400+00:00"
+  "updated_at_utc": "2026-08-17T10:18:06.052047+00:00"
 }
