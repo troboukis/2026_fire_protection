@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564406183/ellinotoyrkika-epistrofi-stis-ergostasiakes-rythmiseis/",
-      "title": "Ελληνοτουρκικά: Επιστροφή στις εργοστασιακές ρυθμίσεις",
-      "normalized_title": "ΕΛΛΗΝΟΤΟΥΡΚΙΚΑ: ΕΠΙΣΤΡΟΦΗ ΣΤΙΣ ΕΡΓΟΣΤΑΣΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/society/564406174/ennea-soyrealistikes-stigmes-se-panigyria/",
+      "title": "Εννέα σουρεαλιστικές στιγμές σε πανηγύρια",
+      "normalized_title": "ΕΝΝΕΑ ΣΟΥΡΕΑΛΙΣΤΙΚΕΣ ΣΤΙΓΜΕΣ ΣΕ ΠΑΝΗΓΥΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564406183/ellinotoyrkika-epistrofi-stis-ergostasiakes-rythmiseis/",
-        "https://www.kathimerini.gr/economy/564406294/aade-forodiafygi-gia-1-sta-2-toyristika-skafi-sti-santorini/",
-        "https://www.kathimerini.gr/politics/564402013/stayros-mpenos-i-thermi-exodos-toy-ethelonti/",
-        "https://www.kathimerini.gr/world/564406285/aitna-nekros-apo-kerayno-amerikanos-toyristas/",
-        "https://www.kathimerini.gr/economy/564406270/transpay-se-leitoyrgia-i-efarmogi-gia-ti-dimosiopoiisi-ton-pliromon-agrotikon-enischyseon/"
+        "https://www.kathimerini.gr/society/564406174/ennea-soyrealistikes-stigmes-se-panigyria/",
+        "https://www.kathimerini.gr/world/564402064/exarsi-tis-vias-kata-ton-christianon-sto-israil/",
+        "https://www.kathimerini.gr/politics/564401971/kalpes-to-2027-to-schedio-gia-tin-koyrsa-ton-9-minon/"
       ],
-      "seen_at_utc": "2026-08-17T18:17:03.557940+00:00"
+      "seen_at_utc": "2026-08-17T18:53:20.055919+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,51 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866039/treis-anilikoi-epitethikan-me-mahairi-kai-spasmeno-boukali-se-17hrono-sto-menidi/?utm_source=rss",
-      "title": "Τρεις ανήλικοι επιτέθηκαν με μαχαίρι και σπασμένο μπουκάλι σε 17χρονο στο Μενίδι, δείτε βίντεο",
-      "normalized_title": "ΤΡΕΙΣ ΑΝΗΛΙΚΟΙ ΕΠΙΤΕΘΗΚΑΝ ΜΕ ΜΑΧΑΙΡΙ ΚΑΙ ΣΠΑΣΜΕΝΟ ΜΠΟΥΚΑΛΙ ΣΕ 17ΧΡΟΝΟ ΣΤΟ ΜΕΝΙΔΙ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1866046/sunelifthi-40hronos-pou-evale-fotia-se-dikuklo-stin-troizina-exetazetai-i-ebloki-tou-se-9-akomi-ebrismous/?utm_source=rss",
+      "title": "Συνελήφθη 40χρονος που έβαλε φωτιά σε δίκυκλο στην Τροιζήνα, εξετάζεται η εμπλοκή του σε 9 ακόμη εμπρησμούς",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΠΟΥ ΕΒΑΛΕ ΦΩΤΙΑ ΣΕ ΔΙΚΥΚΛΟ ΣΤΗΝ ΤΡΟΙΖΗΝΑ, ΕΞΕΤΑΖΕΤΑΙ Η ΕΜΠΛΟΚΗ ΤΟΥ ΣΕ 9 ΑΚΟΜΗ ΕΜΠΡΗΣΜΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866039/treis-anilikoi-epitethikan-me-mahairi-kai-spasmeno-boukali-se-17hrono-sto-menidi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866035/poios-itan-o-ebeiros-pilotos-pou-ehase-ti-zoi-tou-sti-sudrivi-tou-elikopterou-sti-sifno-niopadro-zeugari-oi-epivates/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866024/endeixeis-ameleias-piso-apo-ti-megali-fotia-sta-peristeria-tis-salaminas-i-ilikiomeni-gunaika-kai-to-kadilaki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866023/katarraktodeis-vrohes-metetrepsan-dromous-tis-leukosias-se-potamia-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866019/video-dokoumedo-i-stigmi-tis-ptosis-tou-elikopterou-sti-sifno-ti-deihnei-gia-ta-aitia-tis-tragodias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866018/otan-i-karina-ton-anogeion-xesikone-ta-anogeia-me-ton-horo-tis-se-paniguri-shedon-miso-aiona-piso-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866046/sunelifthi-40hronos-pou-evale-fotia-se-dikuklo-stin-troizina-exetazetai-i-ebloki-tou-se-9-akomi-ebrismous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T18:17:03.558065+00:00"
+      "seen_at_utc": "2026-08-17T18:53:20.056045+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1449039/sto-paidiko-domatio-mehri-ta-34-toys-oi-neoi-stin-ellada-ta-stoiheia-tis-eurostat/",
-      "title": "Στο παιδικό δωμάτιο μέχρι τα 34 τους οι νέοι στην Ελλάδα – Τα στοιχεία της Eurostat",
-      "normalized_title": "ΣΤΟ ΠΑΙΔΙΚΟ ΔΩΜΑΤΙΟ ΜΕΧΡΙ ΤΑ 34 ΤΟΥΣ ΟΙ ΝΕΟΙ ΣΤΗΝ ΕΛΛΑΔΑ – ΤΑ ΣΤΟΙΧΕΙΑ ΤΗΣ EUROSTAT",
+      "url": "https://www.efsyn.gr/life/1449466/heinten-panetier-den-proekypsan-ihni-traymatismoy-stin-iatrodikastiki-exetasi-anafores-gia-ypervoliki-dosi/",
+      "title": "Θάνατος Χέιντεν Πανετιέρ: Τι έδειξε η ιατροδικαστική εξέταση",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΧΕΙΝΤΕΝ ΠΑΝΕΤΙΕΡ: ΤΙ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΕΞΕΤΑΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1449039/sto-paidiko-domatio-mehri-ta-34-toys-oi-neoi-stin-ellada-ta-stoiheia-tis-eurostat/",
-        "https://www.efsyn.gr/ellada/1449454/synelifthi-40hronos-gia-pyrkagia-apo-prothesi-stin-troizina-exetazetai-i-emploki-toy-se-alloys-9-emprismoys/",
-        "https://www.efsyn.gr/kosmos/1449431/eyropi-kaysonas-kai-xirasia-kaine-ti-georgia-protofanis-krisi-dramatikes-meioseis-stin-agrotiki-paragogi/",
-        "https://www.efsyn.gr/ellada/1449446/sifnos-sygklonistika-plana-apo-to-simeio-opoy-synetrivi-to-elikoptero-vinteo/",
-        "https://www.efsyn.gr/oikonomia/1449440/kroyaziera-tha-se-pao-2026-forodiafygi-sto-50-ton-toyristikon-skafon-sti-santorini/",
-        "https://www.efsyn.gr/life/1449452/o-kanie-oyest-etoimazetai-gia-synaylies-sti-rosia-meta-ta-akyra-stin-eyropi/",
-        "https://www.efsyn.gr/oikonomia/1449113/giati-ektoxeythike-i-agora-metaheirismenon-proionton-stin-ellada-athemito-antagonismo-vlepoyn-oi-emporoi/"
+        "https://www.efsyn.gr/life/1449466/heinten-panetier-den-proekypsan-ihni-traymatismoy-stin-iatrodikastiki-exetasi-anafores-gia-ypervoliki-dosi/",
+        "https://www.efsyn.gr/kosmos/1449464/rosia-dekades-syllipseis-ypostirikton-toy-antipoliteyomenoy-giamplako-katheirxi-11-eton-ston-antiproedro-toy-kommatos/",
+        "https://www.efsyn.gr/ellada/1449442/syntrivi-elikopteroy-sti-sifno-to-gamilio-taxidi-poy-katelixe-se-tragodia-pos-egine-to-dystyhima-me-toys-treis-nekroys/"
       ],
-      "seen_at_utc": "2026-08-17T18:17:03.558030+00:00"
+      "seen_at_utc": "2026-08-17T18:53:20.056001+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/17/economy/erxetai-o-mida-prota-sto-stoxastro-ta-agrotemaxia-meta-oi-katoikies/",
-      "title": "Έρχεται ο ΜΙΔΑ – Πρώτα στο στόχαστρο τα αγροτεμάχια, μετά οι κατοικίες",
-      "normalized_title": "ΕΡΧΕΤΑΙ Ο ΜΙΔΑ – ΠΡΩΤΑ ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΤΑ ΑΓΡΟΤΕΜΑΧΙΑ, ΜΕΤΑ ΟΙ ΚΑΤΟΙΚΙΕΣ",
+      "url": "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/",
+      "title": "Σε υψηλά 18ετίας το κόστος δανεισμού των «μεγάλων»",
+      "normalized_title": "ΣΕ ΥΨΗΛΑ 18ΕΤΙΑΣ ΤΟ ΚΟΣΤΟΣ ΔΑΝΕΙΣΜΟΥ ΤΩΝ «ΜΕΓΑΛΩΝ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/17/economy/erxetai-o-mida-prota-sto-stoxastro-ta-agrotemaxia-meta-oi-katoikies/",
-        "https://www.in.gr/2026/08/17/life/oi-eksi-faseis-ton-diakopon-apo-tin-ergasiaki-eksantlisi-stin-anapofeykti-epistrofi/",
-        "https://www.in.gr/matchcenter/6030438/",
-        "https://www.in.gr/2026/08/17/greece/eetaa-paidikoi-stathmoi-anartithikan-ta-oristika-apotelesmata-gia-ta-vouchers/",
-        "https://www.in.gr/2026/08/17/sports/othersports/i-sviatek-stamatise-tin-sakkari-apokleismos-me-anatropi-gia-tin-ellinida-tenistria-1-2/",
-        "https://www.in.gr/2026/08/17/world/to-anotato-dikastirio-aperripse-tin-prosfygi-tramp-kata-tis-katavolis-apozimiosis-gia-seksoualiki-epithesi/",
-        "https://www.in.gr/2026/08/17/world/reuters-i-texerani-dinei-dioria-ligon-evdomadon-stis-ipa-na-efarmosei-to-mnimonio/",
-        "https://www.in.gr/2026/08/17/greece/tragodia-sti-sifno-ti-leei-sto-in-i-dimarxos-tou-nisiou-apokleistikes-eikones-apo-to-simeio-tis-ptosis-tou-elikopterou/",
-        "https://www.in.gr/2026/08/17/sports/on-field/o-koryfaios-xaf-tou-mountial-kai-i-koryfi-tis-eyropis/"
+        "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/",
+        "https://www.in.gr/2026/08/17/greece/synelifthi-40xronos-gia-pyrkagia-apo-prothesi-stin-troizina-eksetazetai-i-emploki-tou-se-9-akomi-emprismous/",
+        "https://www.in.gr/2026/08/17/sports/football/athens-kallithea-ael-novibet-1-3-sti-league-phase-tou-superbet-kypellou-ellados-oi-thessaloi/",
+        "https://www.in.gr/2026/08/17/economy/oikonomikes-eidiseis/aade-lavrakia-apo-tin-epixeirisi-krouaziera-tha-se-pao-2026-ti-edeiksan-oi-mazikoi-elegxoi-se-touristika-ploia/",
+        "https://www.in.gr/2026/08/17/life/diakopes/o-politismos-nikaei-tin-polyteleia-kai-i-ai-mpainei-sto-paixnidi-aytes-einai-oi-taksidiotikes-taseis-tou-2026/",
+        "https://www.in.gr/2026/08/17/world/zimpampoue-o-apologismos-tou-nayagiou-feri-anerxetai-se-92-nekrous/",
+        "https://www.in.gr/2026/08/17/sports/othersports/giati-oi-adelfes-gouiliams-eksakolouthoun-na-paizoun-tenis-vids/",
+        "https://www.in.gr/2026/08/17/go-fun/fizz/americas-next-top-model-to-netflix-adeiazei-tin-taira-mpanks-meta-ti-minysi-gia-sykofantiki-dysfimisi/"
       ],
-      "seen_at_utc": "2026-08-17T18:17:03.557993+00:00"
+      "seen_at_utc": "2026-08-17T18:53:20.055968+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T18:17:03.558154+00:00"
+  "updated_at_utc": "2026-08-17T18:53:20.056122+00:00"
 }
