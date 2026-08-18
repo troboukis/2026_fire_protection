@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564407236/pethane-o-dimosiografos-giannis-tzoystas/",
-      "title": "Πέθανε ο δημοσιογράφος Γιάννης Τζούστας",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΓΙΑΝΝΗΣ ΤΖΟΥΣΤΑΣ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564406489/arthro-konstantinoy-fili-stin-k-proaggelos-sovaris-epideinosis/",
+      "title": "Αρθρο Κωνσταντίνου Φίλη στην «Κ»: Προάγγελος σοβαρής επιδείνωσης",
+      "normalized_title": "ΑΡΘΡΟ ΚΩΝΣΤΑΝΤΙΝΟΥ ΦΙΛΗ ΣΤΗΝ «Κ»: ΠΡΟΑΓΓΕΛΟΣ ΣΟΒΑΡΗΣ ΕΠΙΔΕΙΝΩΣΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564407236/pethane-o-dimosiografos-giannis-tzoystas/",
-        "https://www.kathimerini.gr/society/564407218/anaklisi-proionton-mpampoy-apo-ton-efet/",
-        "https://www.kathimerini.gr/economy/international/564406861/i-parakampsi-ton-stenon-toy-ormoyz-kostizei-akriva/",
-        "https://www.kathimerini.gr/world/564407209/sto-nosokomeio-o-vasilias-charalnt-tis-norvigias-ypovalletai-se-therapeia-gia-aimatologiki-noso/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564406489/arthro-konstantinoy-fili-stin-k-proaggelos-sovaris-epideinosis/",
+        "https://www.kathimerini.gr/society/564407251/onaseia-scholeia-xekinisan-oi-aitiseis-gia-tin-proslipsi-anapliroton-ekpaideytikon/",
+        "https://www.kathimerini.gr/world/564407239/tilefoniki-epikoinonia-tramp-erntogan-gia-iran-kai-gaza/",
+        "https://www.kathimerini.gr/society/564407242/rodos-syllipsi-18chronoy-gia-mparaz-diarrixeon-anazitoyntai-treis-synergoi/",
+        "https://www.kathimerini.gr/society/564402082/stelios-ramfos-o-theos-einai-i-dipsa-soy-gia-to-allios/"
       ],
-      "seen_at_utc": "2026-08-18T08:30:11.204219+00:00"
+      "seen_at_utc": "2026-08-18T08:51:13.692011+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,26 +1273,29 @@
       "seen_at_utc": "2026-08-18T08:30:11.204317+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1449723/o-efet-anakalei-piata-doheia-kai-koytales-prosohi-poloyntai-os-proionta-mpampoy/",
-      "title": "Ο ΕΦΕΤ ανακαλεί πιάτα, δοχεία και κουτάλες – Προσοχή: Πωλούνται ως προϊόντα «μπαμπού»",
-      "normalized_title": "Ο ΕΦΕΤ ΑΝΑΚΑΛΕΙ ΠΙΑΤΑ, ΔΟΧΕΙΑ ΚΑΙ ΚΟΥΤΑΛΕΣ – ΠΡΟΣΟΧΗ: ΠΩΛΟΥΝΤΑΙ ΩΣ ΠΡΟΙΟΝΤΑ «ΜΠΑΜΠΟΥ»",
+      "url": "https://www.efsyn.gr/politiki/1449718/pasok-gia-idiotika-panepistimia-protofanes-politiko-fiasko-ti-tha-symvei-me-tis-nees-adeiodotiseis/",
+      "title": "ΠΑΣΟΚ για ιδιωτικά πανεπιστήμια: «Πρωτοφανές πολιτικό φιάσκο – Τι θα συμβεί με τις νέες αδειοδοτήσεις;»",
+      "normalized_title": "ΠΑΣΟΚ ΓΙΑ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: «ΠΡΩΤΟΦΑΝΕΣ ΠΟΛΙΤΙΚΟ ΦΙΑΣΚΟ – ΤΙ ΘΑ ΣΥΜΒΕΙ ΜΕ ΤΙΣ ΝΕΕΣ ΑΔΕΙΟΔΟΤΗΣΕΙΣ;»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1449723/o-efet-anakalei-piata-doheia-kai-koytales-prosohi-poloyntai-os-proionta-mpampoy/",
-        "https://www.efsyn.gr/life/1449707/to-kalokairi-toy-gianni-antetokoynmpo-kai-i-oikogeneiaki-episkepsi-stin-akropoli-eikones/"
+        "https://www.efsyn.gr/politiki/1449718/pasok-gia-idiotika-panepistimia-protofanes-politiko-fiasko-ti-tha-symvei-me-tis-nees-adeiodotiseis/",
+        "https://www.efsyn.gr/ellada/1449703/politico-pos-i-ellada-sampotarei-moni-tis-to-brain-regain-fiasko-me-to-programma-epanapatrismoy-epistimonon/"
       ],
-      "seen_at_utc": "2026-08-18T08:30:11.204290+00:00"
+      "seen_at_utc": "2026-08-18T08:51:13.692093+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/economy/agro-in/lesvos-eleytheri-pleon-i-diakinisi-tyrokomikon-proionton-pou-eixan-apagoreythei-logo-afthodous-pyretou/",
-      "title": "Λέσβος: Ελεύθερη πλέον η διακίνηση τυροκομικών προϊόντων, που είχαν απαγορευθεί λόγω αφθώδους πυρετού",
-      "normalized_title": "ΛΕΣΒΟΣ: ΕΛΕΥΘΕΡΗ ΠΛΕΟΝ Η ΔΙΑΚΙΝΗΣΗ ΤΥΡΟΚΟΜΙΚΩΝ ΠΡΟΙΟΝΤΩΝ, ΠΟΥ ΕΙΧΑΝ ΑΠΑΓΟΡΕΥΘΕΙ ΛΟΓΩ ΑΦΘΩΔΟΥΣ ΠΥΡΕΤΟΥ",
+      "url": "https://www.in.gr/2026/08/18/politics/aftodioikisi/egkrisi-xrimatikon-epidomaton-se-iatrous-kai-dimosious-ypallilous-ston-dimo-parou/",
+      "title": "Έγκριση χρηματικών επιδομάτων σε ιατρούς και δημόσιους υπαλλήλους στο Δήμο Πάρου",
+      "normalized_title": "ΕΓΚΡΙΣΗ ΧΡΗΜΑΤΙΚΩΝ ΕΠΙΔΟΜΑΤΩΝ ΣΕ ΙΑΤΡΟΥΣ ΚΑΙ ΔΗΜΟΣΙΟΥΣ ΥΠΑΛΛΗΛΟΥΣ ΣΤΟ ΔΗΜΟ ΠΑΡΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/economy/agro-in/lesvos-eleytheri-pleon-i-diakinisi-tyrokomikon-proionton-pou-eixan-apagoreythei-logo-afthodous-pyretou/",
-        "https://www.in.gr/2026/08/18/in-science/technology/ksekina-i-megali-diki-tis-meta-simeio-kampis-gia-ta-social-media/",
-        "https://www.in.gr/2026/08/18/politics/tsoukalas-gia-tourkika-thalassia-parka-i-kyvernisi-na-min-kanei-oute-vima-piso-apo-tis-ethnikes-kokkines-grammes/"
+        "https://www.in.gr/2026/08/18/politics/aftodioikisi/egkrisi-xrimatikon-epidomaton-se-iatrous-kai-dimosious-ypallilous-ston-dimo-parou/",
+        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/pasok-i-apofasi-tou-ste-gia-ta-idiotika-panepistimia-apokalyptei-kathestos-asydosias-kai-adiafaneias/",
+        "https://www.in.gr/2026/08/18/greece/pethane-se-ilikia-69-eton-o-dimosiografos-giannis-tzoustas/",
+        "https://www.in.gr/2026/08/18/greece/dytiki-axaia-nekros-45xronos-apo-kynigetiko-oplo/",
+        "https://www.in.gr/2026/08/18/plus/medianews/ta-play-off-tou-uefa-champions-league-paizoun-zontana-sto-mega/",
+        "https://www.in.gr/2026/08/18/sports/othersports/sygklonizei-i-ntragkomirova-zo-ti-zoi-pou-thelo-ego-oxi-oi-polemistes-tou-pliktrologiou-pic/"
       ],
-      "seen_at_utc": "2026-08-18T08:30:11.204259+00:00"
+      "seen_at_utc": "2026-08-18T08:51:13.692058+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T08:30:11.204394+00:00"
+  "updated_at_utc": "2026-08-18T08:51:13.692174+00:00"
 }
