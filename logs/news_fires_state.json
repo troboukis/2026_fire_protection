@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564407941/xekinisan-oi-aytopsies-sti-salamina-ereyna-sto-simeio-miden-tis-pyrkagias/",
-      "title": "Ξεκίνησαν οι αυτοψίες στη Σαλαμίνα – Ερευνα στο σημείο «μηδέν» της πυρκαγιάς",
-      "normalized_title": "ΞΕΚΙΝΗΣΑΝ ΟΙ ΑΥΤΟΨΙΕΣ ΣΤΗ ΣΑΛΑΜΙΝΑ – ΕΡΕΥΝΑ ΣΤΟ ΣΗΜΕΙΟ «ΜΗΔΕΝ» ΤΗΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564408076/nasa-live-o-diastimikos-peripatos-dyo-astronayton/",
+      "title": "NASA: Live ο διαστημικός περίπατος δύο αστροναυτών",
+      "normalized_title": "NASA: LIVE Ο ΔΙΑΣΤΗΜΙΚΟΣ ΠΕΡΙΠΑΤΟΣ ΔΥΟ ΑΣΤΡΟΝΑΥΤΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564407941/xekinisan-oi-aytopsies-sti-salamina-ereyna-sto-simeio-miden-tis-pyrkagias/"
+        "https://www.kathimerini.gr/world/564408076/nasa-live-o-diastimikos-peripatos-dyo-astronayton/",
+        "https://www.kathimerini.gr/athletics/564408025/olympiakos-o-goyokap-katiggeile-to-symvolaio-toy-i-apantisi-tis-kae/"
       ],
-      "seen_at_utc": "2026-08-18T16:30:13.079337+00:00"
+      "seen_at_utc": "2026-08-18T16:51:34.404445+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866465/fotia-se-dasiki-ektasi-stous-rogous-kalavruton-sikothike-ena-elikoptero/?utm_source=rss",
-      "title": "Φωτιά από κεραυνό στους Ρωγούς Καλαβρύτων, σηκώθηκε ένα ελικόπτερο",
-      "normalized_title": "ΦΩΤΙΑ ΑΠΟ ΚΕΡΑΥΝΟ ΣΤΟΥΣ ΡΩΓΟΥΣ ΚΑΛΑΒΡΥΤΩΝ, ΣΗΚΩΘΗΚΕ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1866472/prokalei-i-tourkia-25-paraviaseis-tou-ellinikou-enaeriou-horou-kai-mia-eikoniki-aeromahia-pano-apo-to-aigaio/?utm_source=rss",
+      "title": "Προκαλεί η Τουρκία: 25 παραβιάσεις του ελληνικού εναέριου χώρου και μια εικονική αερομαχία πάνω από το Αιγαίο",
+      "normalized_title": "ΠΡΟΚΑΛΕΙ Η ΤΟΥΡΚΙΑ: 25 ΠΑΡΑΒΙΑΣΕΙΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΕΝΑΕΡΙΟΥ ΧΩΡΟΥ ΚΑΙ ΜΙΑ ΕΙΚΟΝΙΚΗ ΑΕΡΟΜΑΧΙΑ ΠΑΝΩ ΑΠΟ ΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866465/fotia-se-dasiki-ektasi-stous-rogous-kalavruton-sikothike-ena-elikoptero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866472/prokalei-i-tourkia-25-paraviaseis-tou-ellinikou-enaeriou-horou-kai-mia-eikoniki-aeromahia-pano-apo-to-aigaio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T16:30:13.079444+00:00"
+      "seen_at_utc": "2026-08-18T16:51:34.404540+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450062/fotia-sti-milo-epiheiroyn-enaeria-mesa/",
-      "title": "Φωτιά στη Μήλο – Επιχειρούν εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΜΗΛΟ – ΕΠΙΧΕΙΡΟΥΝ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.efsyn.gr/ellada/1450076/fotia-apo-kerayno-sta-kalavryta-epiheirei-elikoptero-gia-tin-katasvesi/",
+      "title": "Φωτιά από κεραυνό στα Καλάβρυτα – Επιχειρεί ελικόπτερο για την κατάσβεση",
+      "normalized_title": "ΦΩΤΙΑ ΑΠΟ ΚΕΡΑΥΝΟ ΣΤΑ ΚΑΛΑΒΡΥΤΑ – ΕΠΙΧΕΙΡΕΙ ΕΛΙΚΟΠΤΕΡΟ ΓΙΑ ΤΗΝ ΚΑΤΑΣΒΕΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450062/fotia-sti-milo-epiheiroyn-enaeria-mesa/"
+        "https://www.efsyn.gr/ellada/1450076/fotia-apo-kerayno-sta-kalavryta-epiheirei-elikoptero-gia-tin-katasvesi/",
+        "https://www.efsyn.gr/athlitismos/1450066/sta-akra-goyokap-kai-olympiakos-zita-na-meinei-eleytheros-me-kataggelia-o-paiktis-pame-sta-dikastiria-apanta-i-kae/"
       ],
-      "seen_at_utc": "2026-08-18T16:30:13.079420+00:00"
+      "seen_at_utc": "2026-08-18T16:51:34.404513+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/greece/ormouz-ellinoktito-ploio-xtypithike-apo-agnostis-proeleysis-vlima-ena-thyma-anamesa-sta-meli-tou-pliromatos/",
-      "title": "Ορμούζ: Ελληνόκτητο πλοίο χτυπήθηκε από άγνωστης προέλευσης βλήμα – Ένα θύμα ανάμεσα στα μέλη του πληρώματος",
-      "normalized_title": "ΟΡΜΟΥΖ: ΕΛΛΗΝΟΚΤΗΤΟ ΠΛΟΙΟ ΧΤΥΠΗΘΗΚΕ ΑΠΟ ΑΓΝΩΣΤΗΣ ΠΡΟΕΛΕΥΣΗΣ ΒΛΗΜΑ – ΕΝΑ ΘΥΜΑ ΑΝΑΜΕΣΑ ΣΤΑ ΜΕΛΗ ΤΟΥ ΠΛΗΡΩΜΑΤΟΣ",
+      "url": "https://www.in.gr/2026/08/18/politics/politiki-grammateia/giorgos-papandreou-i-apoleia-tou-konstantinou-tsoukala-afinei-megalo-keno-stin-elliniki-pneymatiki-zoi/",
+      "title": "Γιώργος Παπανδρέου: Η απώλεια του Κωνσταντίνου Τσουκαλά αφήνει μεγάλο κενό στην ελληνική πνευματική ζωή",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΠΑΠΑΝΔΡΕΟΥ: Η ΑΠΩΛΕΙΑ ΤΟΥ ΚΩΝΣΤΑΝΤΙΝΟΥ ΤΣΟΥΚΑΛΑ ΑΦΗΝΕΙ ΜΕΓΑΛΟ ΚΕΝΟ ΣΤΗΝ ΕΛΛΗΝΙΚΗ ΠΝΕΥΜΑΤΙΚΗ ΖΩΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/greece/ormouz-ellinoktito-ploio-xtypithike-apo-agnostis-proeleysis-vlima-ena-thyma-anamesa-sta-meli-tou-pliromatos/"
+        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/giorgos-papandreou-i-apoleia-tou-konstantinou-tsoukala-afinei-megalo-keno-stin-elliniki-pneymatiki-zoi/",
+        "https://www.in.gr/2026/08/18/sports/basketball/o-gouokap-katiggeile-monomeros-to-symvolaio-tou-ti-apanta-i-kae-olympiakos/",
+        "https://www.in.gr/2026/08/18/economy/i-apasxolisi-ton-neon-stin-eyropi-ligoteres-eykairies-perissoteri-apaisiodoksia/",
+        "https://www.in.gr/2026/08/18/sports/on-field/ena-tilefonima-tou-gkouarntiola-esteile-ton-rodri-stin-mpartselona/",
+        "https://www.in.gr/2026/08/18/greece/foties-apo-keraynous-se-kalavryta-kai-arkadia/",
+        "https://www.in.gr/2026/08/18/go-fun/tzamil-aleksanter-thermiotis-prigkipissa-iman-didymes-eggones-gia-ti-vasilissa-rania-poios-einai-o-ellinas-gampros-tis/"
       ],
-      "seen_at_utc": "2026-08-18T16:30:13.079398+00:00"
+      "seen_at_utc": "2026-08-18T16:51:34.404490+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T16:30:13.079533+00:00"
+  "updated_at_utc": "2026-08-18T16:51:34.404620+00:00"
 }
