@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564406879/46-95-ekat-epivates-sta-aerodromia-sto-eptamino/",
-      "title": "46,95 εκατ. επιβάτες στα αεροδρόμια στο επτάμηνο",
-      "normalized_title": "46,95 ΕΚΑΤ. ΕΠΙΒΑΤΕΣ ΣΤΑ ΑΕΡΟΔΡΟΜΙΑ ΣΤΟ ΕΠΤΑΜΗΝΟ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564406906/sta-ypsi-to-epitokiako-perithorio-ton-trapezon/",
+      "title": "Στα ύψη το επιτοκιακό περιθώριο των τραπεζών",
+      "normalized_title": "ΣΤΑ ΥΨΗ ΤΟ ΕΠΙΤΟΚΙΑΚΟ ΠΕΡΙΘΩΡΙΟ ΤΩΝ ΤΡΑΠΕΖΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564406879/46-95-ekat-epivates-sta-aerodromia-sto-eptamino/",
-        "https://www.kathimerini.gr/politics/parliament/564402022/echoyme-ontos-polloys-voyleytes/",
-        "https://www.kathimerini.gr/economy/international/564406954/allagi-stasis-apo-ti-germaniki-kyvernisi-gia-tin-commerzbank/"
+        "https://www.kathimerini.gr/visual/infographics/564406906/sta-ypsi-to-epitokiako-perithorio-ton-trapezon/",
+        "https://www.kathimerini.gr/society/564407149/rethymno-sto-nosokomeio-anilikos-gallos-methyse-me-raki/",
+        "https://www.kathimerini.gr/world/564407134/ntonalnt-tramp-i-dimotikotita-toy-katrakylise-sto-33-to-chamilotero-pososto-tis-proedrias-toy/",
+        "https://www.kathimerini.gr/istoria/564406657/90-chronia-prin-18-8-1936/"
       ],
-      "seen_at_utc": "2026-08-18T06:51:19.719680+00:00"
+      "seen_at_utc": "2026-08-18T07:17:00.281384+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866170/ilikiomeni-me-mercedes-pigaine-anapoda-stin-athinon-korinthou-sto-upsos-tis-magoulas-deite-video/?utm_source=rss",
-      "title": "Ηλικιωμένη με Mercedes πήγαινε ανάποδα στην Αθηνών - Κορίνθου στο ύψος της Μαγούλας, δείτε βίντεο",
-      "normalized_title": "ΗΛΙΚΙΩΜΕΝΗ ΜΕ MERCEDES ΠΗΓΑΙΝΕ ΑΝΑΠΟΔΑ ΣΤΗΝ ΑΘΗΝΩΝ - ΚΟΡΙΝΘΟΥ ΣΤΟ ΥΨΟΣ ΤΗΣ ΜΑΓΟΥΛΑΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1866180/kleisto-simera-to-faraggi-tis-samarias-logo-kairikon-sunthikon/?utm_source=rss",
+      "title": "Κλειστό σήμερα το φαράγγι της Σαμαριάς λόγω καιρικών συνθηκών",
+      "normalized_title": "ΚΛΕΙΣΤΟ ΣΗΜΕΡΑ ΤΟ ΦΑΡΑΓΓΙ ΤΗΣ ΣΑΜΑΡΙΑΣ ΛΟΓΩ ΚΑΙΡΙΚΩΝ ΣΥΝΘΗΚΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866170/ilikiomeni-me-mercedes-pigaine-anapoda-stin-athinon-korinthou-sto-upsos-tis-magoulas-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866160/kriti-sto-nosokomeio-7hronos-pou-dehtike-epithesi-apo-skulo-sto-irakleio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866180/kleisto-simera-to-faraggi-tis-samarias-logo-kairikon-sunthikon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866177/to-taxi-kanei-epikinduni-anastrofi-kai-to-mihanaki-peftei-pano-tou-deite-video-apo-to-trohaio-sti-voula/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T06:51:19.719808+00:00"
+      "seen_at_utc": "2026-08-18T07:17:00.281486+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1449630/filippines-mathitis-anoixe-pyr-mesa-se-sholeio-kai-stin-syneheia-aytoktonise-enas-nekros-dyo-traymaties/",
-      "title": "Φιλιππίνες: Μαθητής άνοιξε πυρ μέσα σε σχολείο και στην συνέχεια αυτοκτόνησε – Ενας νεκρός, δύο τραυματίες",
-      "normalized_title": "ΦΙΛΙΠΠΙΝΕΣ: ΜΑΘΗΤΗΣ ΑΝΟΙΞΕ ΠΥΡ ΜΕΣΑ ΣΕ ΣΧΟΛΕΙΟ ΚΑΙ ΣΤΗΝ ΣΥΝΕΧΕΙΑ ΑΥΤΟΚΤΟΝΗΣΕ – ΕΝΑΣ ΝΕΚΡΟΣ, ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.efsyn.gr/stiles/1449602/i-politiki-anamesa-stin-anaparastasi-kai-tin-epitelesi/",
+      "title": "Η πολιτική ανάμεσα στην αναπαράσταση και την επιτέλεση",
+      "normalized_title": "Η ΠΟΛΙΤΙΚΗ ΑΝΑΜΕΣΑ ΣΤΗΝ ΑΝΑΠΑΡΑΣΤΑΣΗ ΚΑΙ ΤΗΝ ΕΠΙΤΕΛΕΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1449630/filippines-mathitis-anoixe-pyr-mesa-se-sholeio-kai-stin-syneheia-aytoktonise-enas-nekros-dyo-traymaties/"
+        "https://www.efsyn.gr/stiles/1449602/i-politiki-anamesa-stin-anaparastasi-kai-tin-epitelesi/",
+        "https://www.efsyn.gr/stiles/1449597/i-ideologia-tis-aristeras-simera/",
+        "https://www.efsyn.gr/stiles/1449587/maforio-agapis/",
+        "https://www.efsyn.gr/stiles/1449579/katanalosi-sta-anagkaia/",
+        "https://www.efsyn.gr/kosmos/1449644/tilefoniki-epikoinonia-erntogan-tramp-sto-epikentro-iran-gaza-kai-symfonia-tis-mekkas/"
       ],
-      "seen_at_utc": "2026-08-18T06:51:19.719780+00:00"
+      "seen_at_utc": "2026-08-18T07:17:00.281456+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/sports/football/synexeia-sto-superbet-kypello-ellados-me-dyo-agones-tin-triti-18-8/",
-      "title": "Συνέχεια στο Superbet Κύπελλο Ελλάδος με δύο αγώνες την Τρίτη (18/8)",
-      "normalized_title": "ΣΥΝΕΧΕΙΑ ΣΤΟ SUPERBET ΚΥΠΕΛΛΟ ΕΛΛΑΔΟΣ ΜΕ ΔΥΟ ΑΓΩΝΕΣ ΤΗΝ ΤΡΙΤΗ (18/8)",
+      "url": "https://www.in.gr/2026/08/18/greece/irakleio-sto-nosokomeio-eptaxrono-koritsaki-meta-apo-epithesi-skylou/",
+      "title": "Ηράκλειο: Στο νοσοκομείο επτάχρονο κοριτσάκι μετά από επίθεση σκύλου",
+      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΕΠΤΑΧΡΟΝΟ ΚΟΡΙΤΣΑΚΙ ΜΕΤΑ ΑΠΟ ΕΠΙΘΕΣΗ ΣΚΥΛΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/sports/football/synexeia-sto-superbet-kypello-ellados-me-dyo-agones-tin-triti-18-8/",
-        "https://www.in.gr/2026/08/18/greece/agios-dimitrios-ypirkse-allo-atomo-sto-ypiresiako-oxima-pou-vrethike-nekros-o-astynomikos-ti-eksetazetai/"
+        "https://www.in.gr/2026/08/18/greece/irakleio-sto-nosokomeio-eptaxrono-koritsaki-meta-apo-epithesi-skylou/",
+        "https://www.in.gr/2026/08/18/sports/football/ston-olympiako-o-nair-tiknizian/",
+        "https://www.in.gr/2026/08/18/go-fun/fizz/xeinten-panetier-to-farmako-pou-vrethike-sto-diamerisma-tis-ti-edeikse-i-iatrodikastiki-eksetasi/",
+        "https://www.in.gr/2026/08/18/pet-stories/pos-na-ekpaideysoume-ton-skylo-mas-me-diaskedastiko-tropo/",
+        "https://www.in.gr/2026/08/18/greece/tropopoiiseis-dromologion-tou-proastiakou-logo-pyrkagias-ston-aspropyrgo/",
+        "https://www.in.gr/2026/08/18/greece/i-megali-pyrkagia-tou-1917-pou-gennise-mia-nea-thessaloniki/"
       ],
-      "seen_at_utc": "2026-08-18T06:51:19.719725+00:00"
+      "seen_at_utc": "2026-08-18T07:17:00.281428+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T06:51:19.719880+00:00"
+  "updated_at_utc": "2026-08-18T07:17:00.281551+00:00"
 }
