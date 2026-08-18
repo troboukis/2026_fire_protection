@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/government/564406519/epithetiki-taktiki-apo-maximoy/",
-      "title": "Επιθετική τακτική από Μαξίμου",
-      "normalized_title": "ΕΠΙΘΕΤΙΚΗ ΤΑΚΤΙΚΗ ΑΠΟ ΜΑΞΙΜΟΥ",
+      "url": "https://www.kathimerini.gr/athletics/564407815/i-arsenal-kai-oi-alloi/",
+      "title": "Η Αρσεναλ και οι… άλλοι",
+      "normalized_title": "Η ΑΡΣΕΝΑΛ ΚΑΙ ΟΙ… ΑΛΛΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/government/564406519/epithetiki-taktiki-apo-maximoy/",
-        "https://www.kathimerini.gr/life/environment/564408007/to-ischyrotero-el-ninio-plisiazei-pos-tha-epireasei-ton-kairo-kai-tin-oikonomia/"
+        "https://www.kathimerini.gr/athletics/564407815/i-arsenal-kai-oi-alloi/"
       ],
-      "seen_at_utc": "2026-08-18T18:17:13.210373+00:00"
+      "seen_at_utc": "2026-08-18T18:30:12.688443+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1269,26 @@
       "seen_at_utc": "2026-08-18T17:51:20.332926+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1450124/gaza-neo-foniko-israilino-pligma-sto-limani-toylahiston-exi-nekroi/",
-      "title": "Γάζα: Νέο φονικό ισραηλινό πλήγμα στο λιμάνι – Τουλάχιστον έξι νεκροί",
-      "normalized_title": "ΓΑΖΑ: ΝΕΟ ΦΟΝΙΚΟ ΙΣΡΑΗΛΙΝΟ ΠΛΗΓΜΑ ΣΤΟ ΛΙΜΑΝΙ – ΤΟΥΛΑΧΙΣΤΟΝ ΕΞΙ ΝΕΚΡΟΙ",
+      "url": "https://www.efsyn.gr/life/1450132/mantona-to-fotografiko-almpoym-apo-ta-genethlia-tis-stin-ellada-fae-proseyhisoy-agapa-horepse/",
+      "title": "Μαντόνα: Το φωτογραφικό άλμπουμ από τα γενέθλιά της στην Ελλάδα – «Φάε, προσευχήσου, αγάπα, χόρεψε» [εικόνες]",
+      "normalized_title": "ΜΑΝΤΟΝΑ: ΤΟ ΦΩΤΟΓΡΑΦΙΚΟ ΑΛΜΠΟΥΜ ΑΠΟ ΤΑ ΓΕΝΕΘΛΙΑ ΤΗΣ ΣΤΗΝ ΕΛΛΑΔΑ – «ΦΑΕ, ΠΡΟΣΕΥΧΗΣΟΥ, ΑΓΑΠΑ, ΧΟΡΕΨΕ» [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1450124/gaza-neo-foniko-israilino-pligma-sto-limani-toylahiston-exi-nekroi/",
-        "https://www.efsyn.gr/ellada/1450122/tragodia-sti-sifno-ta-apanthrakomena-syntrimmia-toy-elikopteroy-nea-plana/"
+        "https://www.efsyn.gr/life/1450132/mantona-to-fotografiko-almpoym-apo-ta-genethlia-tis-stin-ellada-fae-proseyhisoy-agapa-horepse/",
+        "https://www.efsyn.gr/ellada/1450061/apo-ta-vathi-tis-kardias-moy-stin-koryfi-toy-kosmoy-ekthesi-fotografias-apo-tin-femartact/",
+        "https://www.efsyn.gr/ellada/1449769/ergolavoi-i-lysi-gia-kathe-provlima-oloena-kai-perissoteres-leitoyrgies-toy-esy-se-idiotes/"
       ],
-      "seen_at_utc": "2026-08-18T18:17:13.210448+00:00"
+      "seen_at_utc": "2026-08-18T18:30:12.688545+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/sports/football/atromitos-pyrgos-1968-3-1-perase-eykola-sti-league-phase-tou-superbet-kypellou-ellados/",
-      "title": "Ατρόμητος – Πύργος 1968 3-1: Πέρασε εύκολα στη League Phase του Superbet Κυπέλλου Ελλάδος",
-      "normalized_title": "ΑΤΡΟΜΗΤΟΣ – ΠΥΡΓΟΣ 1968 3-1: ΠΕΡΑΣΕ ΕΥΚΟΛΑ ΣΤΗ LEAGUE PHASE ΤΟΥ SUPERBET ΚΥΠΕΛΛΟΥ ΕΛΛΑΔΟΣ",
+      "url": "https://www.in.gr/2026/08/18/economy/to-lianemporio-antekse-7-xronia-kriseon-o-rolos-tis-akriveias/",
+      "title": "Το λιανεμπόριο άντεξε 7 χρόνια κρίσεων – Ο ρόλος της ακρίβειας",
+      "normalized_title": "ΤΟ ΛΙΑΝΕΜΠΟΡΙΟ ΑΝΤΕΞΕ 7 ΧΡΟΝΙΑ ΚΡΙΣΕΩΝ – Ο ΡΟΛΟΣ ΤΗΣ ΑΚΡΙΒΕΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/sports/football/atromitos-pyrgos-1968-3-1-perase-eykola-sti-league-phase-tou-superbet-kypellou-ellados/",
-        "https://www.in.gr/2026/08/18/world/to-israil-xtypise-proliptika-aeroporiki-vasi-sti-syria-gia-na-min-egkatastathei-tourkikos-stratos/",
-        "https://www.in.gr/2026/08/18/world/lavrof-i-vretania-kindyneyei-na-theorithei-os-meros-tou-polemou-stin-oukrania/",
-        "https://www.in.gr/2026/08/18/greece/oloklirothikan-oi-aytopsies-sti-salamina-zimies-se-22-ktiria-apo-tis-foties-pente-xaraktiristikan-kokkina/"
+        "https://www.in.gr/2026/08/18/economy/to-lianemporio-antekse-7-xronia-kriseon-o-rolos-tis-akriveias/",
+        "https://www.in.gr/2026/08/18/sports/football/champions-league/h-11ada-tis-aek-gia-to-paixnidi-me-ti-lefski-sti-sofia-pic/"
       ],
-      "seen_at_utc": "2026-08-18T18:17:13.210426+00:00"
+      "seen_at_utc": "2026-08-18T18:30:12.688488+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T18:17:13.210520+00:00"
+  "updated_at_utc": "2026-08-18T18:30:12.688618+00:00"
 }
