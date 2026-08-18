@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564408127/pyrosvestiki-47-agrotodasikes-pyrkagies-to-teleytaio-24oro/",
-      "title": "Πυροσβεστική: 47 αγροτοδασικές πυρκαγιές το τελευταίο 24ωρο",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: 47 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ",
+      "url": "https://www.kathimerini.gr/society/564408187/agios-dimitrios-apopeira-listeias-me-machairi-se-varos-18chronoy/",
+      "title": "Αγιος Δημήτριος: Απόπειρα ληστείας με μαχαίρι σε βάρος 18χρονου",
+      "normalized_title": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ: ΑΠΟΠΕΙΡΑ ΛΗΣΤΕΙΑΣ ΜΕ ΜΑΧΑΙΡΙ ΣΕ ΒΑΡΟΣ 18ΧΡΟΝΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564408127/pyrosvestiki-47-agrotodasikes-pyrkagies-to-teleytaio-24oro/",
-        "https://www.kathimerini.gr/world/564408010/giati-o-tramp-apeilei-gia-deyteri-fora-na-vomvardisei-to-oman/",
-        "https://www.kathimerini.gr/culture/tv/564407719/gia-sena-nikos-poyrsanidis-kai-anna-magkoy-mas-systinoyn-toys-neoys-toys-roloys/",
-        "https://www.kathimerini.gr/society/564408226/thessaloniki-sti-dimosiotita-ta-stoicheia-toy-23chronoy-poy-katigoreitai-gia-viasmo-anilikoy/"
+        "https://www.kathimerini.gr/society/564408187/agios-dimitrios-apopeira-listeias-me-machairi-se-varos-18chronoy/",
+        "https://www.kathimerini.gr/world/564408232/i-gallia-apelaynei-dyo-iranoys-diplomates/"
       ],
-      "seen_at_utc": "2026-08-18T18:51:31.747466+00:00"
+      "seen_at_utc": "2026-08-18T19:17:10.344653+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,27 +1270,31 @@
       "seen_at_utc": "2026-08-18T17:51:20.332926+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1450108/oykraniko-ti-simatodotei-i-epikindyni-klimakosi-metaxy-moshas-kai-londinoy-drones-apeiles-kai-diplomatiki-kontra/",
-      "title": "Ουκρανικό: Τι σηματοδοτεί η επικίνδυνη κλιμάκωση μεταξύ Μόσχας και Λονδίνου – Drones, απειλές και διπλωματική κόντρα",
-      "normalized_title": "ΟΥΚΡΑΝΙΚΟ: ΤΙ ΣΗΜΑΤΟΔΟΤΕΙ Η ΕΠΙΚΙΝΔΥΝΗ ΚΛΙΜΑΚΩΣΗ ΜΕΤΑΞΥ ΜΟΣΧΑΣ ΚΑΙ ΛΟΝΔΙΝΟΥ – DRONES, ΑΠΕΙΛΕΣ ΚΑΙ ΔΙΠΛΩΜΑΤΙΚΗ ΚΟΝΤΡΑ",
+      "url": "https://www.efsyn.gr/kosmos/1450151/kypros-pnigike-27hronos-sti-lemeso-epese-apo-katamaran-sti-thalassa-gia-na-vrei-to-kinito-toy/",
+      "title": "Κύπρος: Πνίγηκε 27χρονος στη Λεμεσό – Έπεσε από καταμαράν στη θάλασσα για να βρει το κινητό του",
+      "normalized_title": "ΚΥΠΡΟΣ: ΠΝΙΓΗΚΕ 27ΧΡΟΝΟΣ ΣΤΗ ΛΕΜΕΣΟ – ΕΠΕΣΕ ΑΠΟ ΚΑΤΑΜΑΡΑΝ ΣΤΗ ΘΑΛΑΣΣΑ ΓΙΑ ΝΑ ΒΡΕΙ ΤΟ ΚΙΝΗΤΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1450108/oykraniko-ti-simatodotei-i-epikindyni-klimakosi-metaxy-moshas-kai-londinoy-drones-apeiles-kai-diplomatiki-kontra/",
-        "https://www.efsyn.gr/athlitismos/1450150/kypello-eykoli-prokrisi-toy-atromitoy-sti-league-phase/"
+        "https://www.efsyn.gr/kosmos/1450151/kypros-pnigike-27hronos-sti-lemeso-epese-apo-katamaran-sti-thalassa-gia-na-vrei-to-kinito-toy/",
+        "https://www.efsyn.gr/kosmos/1450158/vomva-washington-post-to-pentagono-exetasei-meiosi-tis-stratiotikis-paroysias-ston-kolpo/",
+        "https://www.efsyn.gr/ellada/1450157/dyo-syllipseis-gia-proklisi-pyrkagion-se-trikala-kai-karysto/"
       ],
-      "seen_at_utc": "2026-08-18T18:51:31.747597+00:00"
+      "seen_at_utc": "2026-08-18T19:17:10.344767+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/politics/politiki-grammateia/syriza-to-paraskinio-me-ti-diagrafi-kasimati-kai-to-telesigrafo-sti-gerovasili/",
-      "title": "ΣΥΡΙΖΑ: Το παρασκήνιο με τη διαγραφή Κασιμάτη και το τελεσίγραφο στη Γεροβασίλη",
-      "normalized_title": "ΣΥΡΙΖΑ: ΤΟ ΠΑΡΑΣΚΗΝΙΟ ΜΕ ΤΗ ΔΙΑΓΡΑΦΗ ΚΑΣΙΜΑΤΗ ΚΑΙ ΤΟ ΤΕΛΕΣΙΓΡΑΦΟ ΣΤΗ ΓΕΡΟΒΑΣΙΛΗ",
+      "url": "https://www.in.gr/2026/08/18/politics/epikairotita/dieykriniseis-gia-to-antinero-apo-to-ypen-krinetai-apo-ta-stoixeia-kai-ta-apotelesmata-tou/",
+      "title": "Διευκρινίσεις για το Antinero από το ΥΠΕΝ – «Κρίνεται από τα στοιχεία και τα αποτελέσματά του»",
+      "normalized_title": "ΔΙΕΥΚΡΙΝΙΣΕΙΣ ΓΙΑ ΤΟ ANTINERO ΑΠΟ ΤΟ ΥΠΕΝ – «ΚΡΙΝΕΤΑΙ ΑΠΟ ΤΑ ΣΤΟΙΧΕΙΑ ΚΑΙ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/syriza-to-paraskinio-me-ti-diagrafi-kasimati-kai-to-telesigrafo-sti-gerovasili/",
-        "https://www.in.gr/2026/08/18/greece/taytopoiithike-i-ilikiomeni-pou-odigouse-anapoda-stin-ethniki-odo-athinon-korinthou/",
-        "https://www.in.gr/matchcenter/5987798/",
-        "https://www.in.gr/2026/08/18/life/pos-na-poulisete-mia-genoktonia-vivliothiki-aposyrei-vivlio-pou-epikrinei-to-israil-sfodres-antidraseis/"
+        "https://www.in.gr/2026/08/18/politics/epikairotita/dieykriniseis-gia-to-antinero-apo-to-ypen-krinetai-apo-ta-stoixeia-kai-ta-apotelesmata-tou/",
+        "https://www.in.gr/2026/08/18/sports/football/megali-anisyxia-gia-mousiala-katerreyse-deyteri-fora-se-diastima-ligon-imeron/",
+        "https://www.in.gr/2026/08/18/greece/sifnos-nees-eikones-apo-ta-syntrimmia-tou-moiraiou-elikopterou-se-ekseliksi-oi-ereynes-gia-ta-aitia-tis-tragodias/",
+        "https://www.in.gr/2026/08/18/stories/konstantinos-tsoukalas-i-istoriki-omilia-tou-stin-akadimia-athinon-anamesa-sto-oloi-mas-kai-to-kaneis/",
+        "https://www.in.gr/2026/08/18/world/oi-apeiles-tramp-kata-oman-ektokseysan-tis-times-petrelaiou-aragtsi-oi-ipa-mas-iketeyoun/",
+        "https://www.in.gr/2026/08/18/in-science/space/mageytikes-eikones-i-oliki-ekleipsi-iliou-tis-12is-aygoustou-opos-katagrafike-apo-to-diastima/",
+        "https://www.in.gr/2026/08/18/sports/on-field/sto-kolpo-gia-ton-osimen-kai-i-mantsester-giounaitent/"
       ],
-      "seen_at_utc": "2026-08-18T18:51:31.747548+00:00"
+      "seen_at_utc": "2026-08-18T19:17:10.344723+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T18:51:31.747694+00:00"
+  "updated_at_utc": "2026-08-18T19:17:10.344855+00:00"
 }
