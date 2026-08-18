@@ -1,16 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564406555/vriskomai-sto-stochastro-toy-alvanoy-prothypoyrgoy/",
-      "title": "«Βρίσκομαι στο στόχαστρο του Αλβανού πρωθυπουργού»",
-      "normalized_title": "«ΒΡΙΣΚΟΜΑΙ ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΤΟΥ ΑΛΒΑΝΟΥ ΠΡΩΘΥΠΟΥΡΓΟΥ»",
+      "url": "https://www.kathimerini.gr/politics/564407371/kyriakos-mitsotakis-ethniki-epitychia-i-proori-apopliromi-toy-chreoys/",
+      "title": "Κυριάκος Μητσοτάκης: «Εθνική επιτυχία η πρόωρη αποπληρωμή του χρέους»",
+      "normalized_title": "ΚΥΡΙΑΚΟΣ ΜΗΤΣΟΤΑΚΗΣ: «ΕΘΝΙΚΗ ΕΠΙΤΥΧΙΑ Η ΠΡΟΩΡΗ ΑΠΟΠΛΗΡΩΜΗ ΤΟΥ ΧΡΕΟΥΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564406555/vriskomai-sto-stochastro-toy-alvanoy-prothypoyrgoy/",
-        "https://www.kathimerini.gr/world/564407320/fifa-apolythike-o-kevin-lamoyr-poy-eiche-askisei-dimosia-kritiki-ston-infantino/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564406495/ellinotoyrkika-tholonei-i-diakiryxi-ton-athinon-metaxy-athinas-kai-agkyras/",
-        "https://www.kathimerini.gr/world/564407311/afganistan-dekades-mathites-traymatistikan-apo-ekrixi-se-scholeio-tis-kampoyl/"
+        "https://www.kathimerini.gr/politics/564407371/kyriakos-mitsotakis-ethniki-epitychia-i-proori-apopliromi-toy-chreoys/",
+        "https://www.kathimerini.gr/society/564407353/epikindyni-anastrofi-leoforeioy-stin-athinon-soynioy-taytopoiithike-i-48chroni-odigos/",
+        "https://www.kathimerini.gr/opinion/564406435/ta-empodia-gia-ta-aei/",
+        "https://www.kathimerini.gr/society/564407344/megali-fotia-se-apostaktirio-sto-rethymno-kaigetai-oloscheros-to-ktirio/",
+        "https://www.kathimerini.gr/opinion/564406828/i-itta-tis-manichaistikis-oikologias/",
+        "https://www.kathimerini.gr/opinion/564406825/stefanos-manos-kornizes/",
+        "https://www.kathimerini.gr/opinion/564406663/enas-allos-topos-otan-spasei-o-agogos/",
+        "https://www.kathimerini.gr/opinion/564406426/i-athina-kai-o-stefanos-manos/",
+        "https://www.kathimerini.gr/society/564407335/ptosi-elikopteroy-sti-sifno-to-elliniko-fbi-stis-ereynes/",
+        "https://www.kathimerini.gr/opinion/564406627/ta-gyalia-kai-i-nomimotita/",
+        "https://www.kathimerini.gr/opinion/564407299/oi-gynaikes-eimaste-aproetoimastes-gia-mia-zoi-mesa-sto-gynaikeio-soma/"
       ],
-      "seen_at_utc": "2026-08-18T09:51:13.671856+00:00"
+      "seen_at_utc": "2026-08-18T10:17:47.066208+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1269,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866263/dierrixan-kai-vandalisan-sholeio-sti-lamia-ehusan-bogies-prokalesan-zimies-kai-anevasan-pagaki-se-pervazi/?utm_source=rss",
-      "title": "Διέρρηξαν και βανδάλισαν σχολείο στη Λαμία: Έχυσαν μπογιές, προκάλεσαν ζημιές και ανέβασαν παγκάκι σε περβάζι",
-      "normalized_title": "ΔΙΕΡΡΗΞΑΝ ΚΑΙ ΒΑΝΔΑΛΙΣΑΝ ΣΧΟΛΕΙΟ ΣΤΗ ΛΑΜΙΑ: ΕΧΥΣΑΝ ΜΠΟΓΙΕΣ, ΠΡΟΚΑΛΕΣΑΝ ΖΗΜΙΕΣ ΚΑΙ ΑΝΕΒΑΣΑΝ ΠΑΓΚΑΚΙ ΣΕ ΠΕΡΒΑΖΙ",
+      "url": "https://www.protothema.gr/greece/article/1866274/fotia-tora-se-epiheirisi-sto-rethumno/?utm_source=rss",
+      "title": "Φωτιά σε αποστακτήριο στο Ρέθυμνο, επί τόπου η Πυροσβεστική",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΠΟΣΤΑΚΤΗΡΙΟ ΣΤΟ ΡΕΘΥΜΝΟ, ΕΠΙ ΤΟΠΟΥ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866263/dierrixan-kai-vandalisan-sholeio-sti-lamia-ehusan-bogies-prokalesan-zimies-kai-anevasan-pagaki-se-pervazi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866259/spoudaio-arhaiologiko-eurima-stin-attaleia-tis-pamfulias-anakalufthike-agalma-tou-asklipiou-stin-arhaia-elliniki-poli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866274/fotia-tora-se-epiheirisi-sto-rethumno/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866273/tautopoiithike-48hroni-odigos-leoforeiou-pou-ekane-paranomi-anastrofi-stin-athinon-souniou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T09:51:13.672018+00:00"
+      "seen_at_utc": "2026-08-18T10:17:47.066307+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1449780/i-apantisi-tis-ntragkomirova-stoys-epikrites-tis-to-makigiaz-den-me-empodizei-na-trexo/",
-      "title": "Η απάντηση της Ντραγκομίροβα στους επικριτές της: «Το μακιγιάζ δεν με εμποδίζει να τρέξω»",
-      "normalized_title": "Η ΑΠΑΝΤΗΣΗ ΤΗΣ ΝΤΡΑΓΚΟΜΙΡΟΒΑ ΣΤΟΥΣ ΕΠΙΚΡΙΤΕΣ ΤΗΣ: «ΤΟ ΜΑΚΙΓΙΑΖ ΔΕΝ ΜΕ ΕΜΠΟΔΙΖΕΙ ΝΑ ΤΡΕΞΩ»",
+      "url": "https://www.efsyn.gr/ellada/1449808/fotia-sto-komito-karystoy-epiheiroyn-pente-enaeria-mesa/",
+      "title": "Φωτιά στο Κόμιτο Καρύστου – Επιχειρούν πέντε εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΚΟΜΙΤΟ ΚΑΡΥΣΤΟΥ – ΕΠΙΧΕΙΡΟΥΝ ΠΕΝΤΕ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1449780/i-apantisi-tis-ntragkomirova-stoys-epikrites-tis-to-makigiaz-den-me-empodizei-na-trexo/",
-        "https://www.efsyn.gr/ellada/1449773/onaseia-sholeia-anoixan-oi-aitiseis-gia-toys-anaplirotes-ekpaideytikoys/"
+        "https://www.efsyn.gr/ellada/1449808/fotia-sto-komito-karystoy-epiheiroyn-pente-enaeria-mesa/",
+        "https://www.efsyn.gr/oikonomia/1449652/ektetheimeni-i-eyrozoni-apo-mia-diorthosi-stin-agora-tehnitis-noimosynis/",
+        "https://www.efsyn.gr/ellada/1449740/ptosi-elikopteroy-sti-sifno-ta-dyo-senaria-poy-exetazontai-den-ypirxe-epikoinonia-me-to-elikodromio/",
+        "https://www.efsyn.gr/ellada/1449798/odigos-leoforeioy-ekane-anastrofi-pano-sti-leoforo-athinon-soynioy-dikografia-gia-epikindyni-odigisi/",
+        "https://www.efsyn.gr/ellada/1449784/fotia-sti-salamina-to-magazi-tha-to-xanaftiaxoyme-to-dasos-omos-den-yparhei-pia/"
       ],
-      "seen_at_utc": "2026-08-18T09:51:13.671973+00:00"
+      "seen_at_utc": "2026-08-18T10:17:47.066290+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/world/filippines-nekros-kai-traymaties-apo-pyra-mathiti-se-sxoleio-aytoktonise-o-drastis/",
-      "title": "Νεκρός και τραυματίες από πυρά μαθητή σε σχολείο στις Φιλιππίνες - Αυτοκτόνησε ο δράστης",
-      "normalized_title": "ΝΕΚΡΟΣ ΚΑΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΠΥΡΑ ΜΑΘΗΤΗ ΣΕ ΣΧΟΛΕΙΟ ΣΤΙΣ ΦΙΛΙΠΠΙΝΕΣ - ΑΥΤΟΚΤΟΝΗΣΕ Ο ΔΡΑΣΤΗΣ",
+      "url": "https://www.in.gr/2026/08/18/greece/brain-drain-i-ellada-sampotarei-ta-sxedia-tis-to-fiasko-tou-trust-your-stars-ston-diethni-typo/",
+      "title": "«Η Ελλάδα σαμποτάρει τα σχέδιά της για επιστροφή των επιστημόνων» - Το φιάσκο του «Trust your Stars» στον διεθνή Τύπο",
+      "normalized_title": "«Η ΕΛΛΑΔΑ ΣΑΜΠΟΤΑΡΕΙ ΤΑ ΣΧΕΔΙΑ ΤΗΣ ΓΙΑ ΕΠΙΣΤΡΟΦΗ ΤΩΝ ΕΠΙΣΤΗΜΟΝΩΝ» - ΤΟ ΦΙΑΣΚΟ ΤΟΥ «TRUST YOUR STARS» ΣΤΟΝ ΔΙΕΘΝΗ ΤΥΠΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/world/filippines-nekros-kai-traymaties-apo-pyra-mathiti-se-sxoleio-aytoktonise-o-drastis/",
-        "https://www.in.gr/2026/08/18/sports/football/etoimos-gia-tin-proklisi-tou-olympiakou-o-tiknizian-antilamvanomai-poly-kala-pou-vriskomai-vid/",
-        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/ksana-sta-2e-venzini-kai-ntizel-atmos-epidotiseis-370-ekat-eyro/"
+        "https://www.in.gr/2026/08/18/greece/brain-drain-i-ellada-sampotarei-ta-sxedia-tis-to-fiasko-tou-trust-your-stars-ston-diethni-typo/",
+        "https://www.in.gr/2026/08/18/greece/rethymno-megali-kinitopoiisi-tis-pyrosvestikis-gia-fotia-sto-sfakaki/",
+        "https://www.in.gr/2026/08/18/go-fun/fizz/romeo-mpekam-oi-voltes-sti-mykono-me-tin-24xroni-syntrofo-tou-kim-turnbul/",
+        "https://www.in.gr/2026/08/18/in-science/episthmes/i-salata-diastayrothike-me-ti-mprizola-tropopoiimena-maroulia-dinoun-proteini-xoirinou/",
+        "https://www.in.gr/2026/08/18/sports/football/anoiksan-oi-portes-sti-fifa-parelthon-to-no3-tis-pagkosmias-omospondias-logo-infantino/",
+        "https://www.in.gr/2026/08/18/greece/salamina-aytopsies-sta-ktiria-pou-ypestisan-zimies-to-dasos-pou-paizame-paidia-den-yparxei-pia/"
       ],
-      "seen_at_utc": "2026-08-18T09:51:13.671920+00:00"
+      "seen_at_utc": "2026-08-18T10:17:47.066269+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T09:51:13.672122+00:00"
+  "updated_at_utc": "2026-08-18T10:17:47.066394+00:00"
 }
