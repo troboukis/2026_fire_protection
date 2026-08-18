@@ -2093,3 +2093,5 @@ run_started_at_utc,reference_number,organization_value,title,status,inserted_row
 2026-08-18T09:05:45.189234+00:00,26SYMV019635347,,Σύμβαση για τη διάθεση οχημάτων/μηχανημάτων έργου στο Πυροσβεστικό Σώμα από τις 31-07-2026.,success,1,
 2026-08-18T09:05:45.189234+00:00,26SYMV019635890,,ΠΡΟΜΗΘΕΙΑ ΔΕΞΑΜΕΝΗΣ ΠΥΡΟΣΒΕΣΗΣ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
 2026-08-18T09:05:45.189234+00:00,26SYMV019637584,,ΔΙΑΝΟΙΞΗ ΔΡΟΜΩΝ ΑΝΤΙΠΥΡΙΚΩΝ ΖΩΝΩΝ ΤΟΥ ΔΗΜΟΥ ΚΑΙ ΚΑΘΑΡΙΣΜΟΣ ΔΗΜΟΤΙΚΩΝ ΟΙΚΟΠΕΔΩΝ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-08-18T12:13:25.751856+00:00,26SYMV019635890,,ΠΡΟΜΗΘΕΙΑ ΔΕΞΑΜΕΝΗΣ ΠΥΡΟΣΒΕΣΗΣ,no_findings,0,
+2026-08-18T12:13:25.751856+00:00,26SYMV019637584,,ΔΙΑΝΟΙΞΗ ΔΡΟΜΩΝ ΑΝΤΙΠΥΡΙΚΩΝ ΖΩΝΩΝ ΤΟΥ ΔΗΜΟΥ ΚΑΙ ΚΑΘΑΡΙΣΜΟΣ ΔΗΜΟΤΙΚΩΝ ΟΙΚΟΠΕΔΩΝ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
