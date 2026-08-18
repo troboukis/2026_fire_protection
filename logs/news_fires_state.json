@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564407659/mpampa-s-agapo-i-proti-agapi-toy-dimitri-apeilei-ti-schesi-toy-me-tin-eleni/",
-      "title": "«Μπαμπά, σ’ αγαπώ»: Η πρώτη αγάπη του Δημήτρη απειλεί τη σχέση του με την Ελένη",
-      "normalized_title": "«ΜΠΑΜΠΑ, Σ’ ΑΓΑΠΩ»: Η ΠΡΩΤΗ ΑΓΑΠΗ ΤΟΥ ΔΗΜΗΤΡΗ ΑΠΕΙΛΕΙ ΤΗ ΣΧΕΣΗ ΤΟΥ ΜΕ ΤΗΝ ΕΛΕΝΗ",
+      "url": "https://www.kathimerini.gr/society/564407992/volos-se-exelixi-i-pyrkagia-sta-aivaliotika-112-gia-etoimotita-sikothikan-5-enaeria-mesa/",
+      "title": "Βόλος: Σε εξέλιξη η πυρκαγιά στα Αϊβαλιώτικα, 112 για ετοιμότητα, σηκώθηκαν 5 εναέρια μέσα",
+      "normalized_title": "ΒΟΛΟΣ: ΣΕ ΕΞΕΛΙΞΗ Η ΠΥΡΚΑΓΙΑ ΣΤΑ ΑΙΒΑΛΙΩΤΙΚΑ, 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ, ΣΗΚΩΘΗΚΑΝ 5 ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564407659/mpampa-s-agapo-i-proti-agapi-toy-dimitri-apeilei-ti-schesi-toy-me-tin-eleni/"
+        "https://www.kathimerini.gr/society/564407992/volos-se-exelixi-i-pyrkagia-sta-aivaliotika-112-gia-etoimotita-sikothikan-5-enaeria-mesa/",
+        "https://www.kathimerini.gr/society/564407953/salamina-oriothetithike-i-pyrkagia-ston-profiti-ilia/"
       ],
-      "seen_at_utc": "2026-08-18T15:51:14.124819+00:00"
+      "seen_at_utc": "2026-08-18T16:18:57.524008+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1260,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866437/pano-apo-5000-keraunoi-se-kedriki-ellada-kai-peloponniso-deite-ton-harti/?utm_source=rss",
-      "title": "Πάνω από 5.000 κεραυνοί σε κεντρική Ελλάδα και Πελοπόννησο, δείτε τον χάρτη",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 5.000 ΚΕΡΑΥΝΟΙ ΣΕ ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ ΚΑΙ ΠΕΛΟΠΟΝΝΗΣΟ, ΔΕΙΤΕ ΤΟΝ ΧΑΡΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1866460/fotia-tora-ston-profiti-ilia-stin-milo-sikothikan-5-enaeria/?utm_source=rss",
+      "title": "Φωτιά στον Προφήτη Ηλία στη Μήλο, σηκώθηκαν 5 εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΠΡΟΦΗΤΗ ΗΛΙΑ ΣΤΗ ΜΗΛΟ, ΣΗΚΩΘΗΚΑΝ 5 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866437/pano-apo-5000-keraunoi-se-kedriki-ellada-kai-peloponniso-deite-ton-harti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866436/tha-ertho-me-tin-karabina-sunelifthi-anergos-pou-apeilise-ergazomenous-sti-dupa-giati-den-parelave-tin-propliromeni/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866460/fotia-tora-ston-profiti-ilia-stin-milo-sikothikan-5-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866446/upourgeio-perivallodos-kai-energeias-to-antinero-krinetai-apo-ta-stoiheia-kai-ta-apotelesmata-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T15:51:14.124908+00:00"
+      "seen_at_utc": "2026-08-18T16:18:57.524176+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450032/kefalonia-elafra-sygkroysi-dyo-toyristikon-ploion-apagoreytike-o-apoploys/",
-      "title": "Κεφαλονιά: Ελαφρά σύγκρουση δύο τουριστικών πλοίων – Απαγορεύτηκε ο απόπλους",
-      "normalized_title": "ΚΕΦΑΛΟΝΙΑ: ΕΛΑΦΡΑ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΤΟΥΡΙΣΤΙΚΩΝ ΠΛΟΙΩΝ – ΑΠΑΓΟΡΕΥΤΗΚΕ Ο ΑΠΟΠΛΟΥΣ",
+      "url": "https://www.efsyn.gr/kosmos/1450035/syria-nea-entasi-pyrodotei-i-aprokliti-israilini-epithesi-katadikazei-i-toyrkia-gia-askopi-klimakosi-miloyn-oi-ipa/",
+      "title": "Συρία: Νέα ένταση πυροδοτεί η απρόκλητη ισραηλινή επίθεση – Καταδικάζει η Τουρκία, για «άσκοπη κλιμάκωση» μιλούν οι ΗΠΑ",
+      "normalized_title": "ΣΥΡΙΑ: ΝΕΑ ΕΝΤΑΣΗ ΠΥΡΟΔΟΤΕΙ Η ΑΠΡΟΚΛΗΤΗ ΙΣΡΑΗΛΙΝΗ ΕΠΙΘΕΣΗ – ΚΑΤΑΔΙΚΑΖΕΙ Η ΤΟΥΡΚΙΑ, ΓΙΑ «ΑΣΚΟΠΗ ΚΛΙΜΑΚΩΣΗ» ΜΙΛΟΥΝ ΟΙ ΗΠΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450032/kefalonia-elafra-sygkroysi-dyo-toyristikon-ploion-apagoreytike-o-apoploys/",
-        "https://www.efsyn.gr/ellada/1450031/aytokinito-pire-fotia-kai-kaike-olosheros-stin-athinon-lamias-vinteo/"
+        "https://www.efsyn.gr/kosmos/1450035/syria-nea-entasi-pyrodotei-i-aprokliti-israilini-epithesi-katadikazei-i-toyrkia-gia-askopi-klimakosi-miloyn-oi-ipa/",
+        "https://www.efsyn.gr/kosmos/1449950/to-drama-toy-uss-abraham-lincoln-pos-einai-na-zeis-pano-se-ena-aeroplanoforo-en-kairo-polemoy/",
+        "https://www.efsyn.gr/ellada/1450029/konstantinos-tsoykalas-to-antio-politikon-kai-dianooymenon-ston-megalo-stohasti/",
+        "https://www.efsyn.gr/ellada/1450041/taytopoiithike-i-82hroni-poy-pigaine-anapoda-stin-athinon-korinthoy-den-katalave-to-lathos-reyma-eihe-ligmeno-diploma/",
+        "https://www.efsyn.gr/kosmos/1450038/to-diktyo-abc-prosfeygei-sti-dikaiosyni-kata-tis-kyvernisis-tramp-gia-tin-eleytheria-tis-ekfrasis/"
       ],
-      "seen_at_utc": "2026-08-18T15:51:14.124889+00:00"
+      "seen_at_utc": "2026-08-18T16:18:57.524150+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/economy/i-viomixania-ai-prosferei-eykairies-epaggelmatikis-apokatastasis-kyrios-omos-gia-tous-andres/",
-      "title": "Η βιομηχανία ΑΙ προσφέρει ευκαιρίες επαγγελματικής αποκατάστασης – Κυρίως όμως για τους άνδρες",
-      "normalized_title": "Η ΒΙΟΜΗΧΑΝΙΑ ΑΙ ΠΡΟΣΦΕΡΕΙ ΕΥΚΑΙΡΙΕΣ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΠΟΚΑΤΑΣΤΑΣΗΣ – ΚΥΡΙΩΣ ΟΜΩΣ ΓΙΑ ΤΟΥΣ ΑΝΔΡΕΣ",
+      "url": "https://www.in.gr/2026/08/18/in-science/space/ena-kosmiko-potami-aeriou-mikous-12-trisekatommyrion-milion-anetrepse-tis-troxies-planiton-ston-asterismo-tou-oriona/",
+      "title": "Ένα κοσμικό «ποτάμι» αερίου μήκους 1,2 τρισεκατομμυρίων μιλίων ανέτρεψε τις τροχιές πλανητών στον αστερισμό του Ωρίωνα",
+      "normalized_title": "ΕΝΑ ΚΟΣΜΙΚΟ «ΠΟΤΑΜΙ» ΑΕΡΙΟΥ ΜΗΚΟΥΣ 1,2 ΤΡΙΣΕΚΑΤΟΜΜΥΡΙΩΝ ΜΙΛΙΩΝ ΑΝΕΤΡΕΨΕ ΤΙΣ ΤΡΟΧΙΕΣ ΠΛΑΝΗΤΩΝ ΣΤΟΝ ΑΣΤΕΡΙΣΜΟ ΤΟΥ ΩΡΙΩΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/economy/i-viomixania-ai-prosferei-eykairies-epaggelmatikis-apokatastasis-kyrios-omos-gia-tous-andres/",
-        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/o-proedros-tis-dimokratias-gia-ton-konstantino-tsoukala-apo-tous-simantikoterous-dianoites-tis-epoxis-mas/",
-        "https://www.in.gr/2026/08/18/sports/football/i-episimi-parousiasi-tou-mourinio-apo-ti-real-epistrefo-sto-spiti-mou-pic/",
-        "https://www.in.gr/2026/08/18/go-fun/fizz/i-finos-film-thymatai-ti-zoi-laskari-ennea-xronia-meta-ton-thanato-tis/",
-        "https://www.in.gr/2026/08/18/in-science/ai/chatgpt-for-teens-h-openai-lansarei-asfalestero-chatbot-gia-efivous/"
+        "https://www.in.gr/2026/08/18/in-science/space/ena-kosmiko-potami-aeriou-mikous-12-trisekatommyrion-milion-anetrepse-tis-troxies-planiton-ston-asterismo-tou-oriona/",
+        "https://www.in.gr/2026/08/18/sports/basketball/o-gkarison-mathious-stin-armani-milano-pic/",
+        "https://www.in.gr/2026/08/18/greece/fotia-se-xamili-vlastisi-sti-milo/",
+        "https://www.in.gr/2026/08/18/world/ipa-to-diktyo-abc-idioktisias-tis-disney-prosfeygei-sti-dikaiosyni-kata-tis-kyvernisis-tramp/",
+        "https://www.in.gr/2026/08/18/sports/football/anakoinothike-apo-tin-kansas-siti-o-antre-louis-pic/"
       ],
-      "seen_at_utc": "2026-08-18T15:51:14.124867+00:00"
+      "seen_at_utc": "2026-08-18T16:18:57.524096+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T15:51:14.125011+00:00"
+  "updated_at_utc": "2026-08-18T16:18:57.524273+00:00"
 }
