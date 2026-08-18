@@ -1,16 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564402088/stelios-ramfos-1939-2026-kyrie-ramfo-tha-mas-grapsete-ti-einai-i-ellada/",
-      "title": "Στέλιος Ράμφος (1939-2026): Κύριε Ράμφο, θα μας γράψετε τι είναι η Ελλάδα;",
-      "normalized_title": "ΣΤΕΛΙΟΣ ΡΑΜΦΟΣ (1939-2026): ΚΥΡΙΕ ΡΑΜΦΟ, ΘΑ ΜΑΣ ΓΡΑΨΕΤΕ ΤΙ ΕΙΝΑΙ Η ΕΛΛΑΔΑ;",
+      "url": "https://www.kathimerini.gr/athletics/football/564407809/panathinaikos-eisitiria-diarkeias-stoys-paiktes-poy-egrapsan-istoria-me-tin-omada/",
+      "title": "Παναθηναϊκός: Εισιτήρια διαρκείας στους παίκτες που έγραψαν ιστορία με την ομάδα",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΕΙΣΙΤΗΡΙΑ ΔΙΑΡΚΕΙΑΣ ΣΤΟΥΣ ΠΑΙΚΤΕΣ ΠΟΥ ΕΓΡΑΨΑΝ ΙΣΤΟΡΙΑ ΜΕ ΤΗΝ ΟΜΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564402088/stelios-ramfos-1939-2026-kyrie-ramfo-tha-mas-grapsete-ti-einai-i-ellada/",
-        "https://www.kathimerini.gr/culture/tv/564407638/dyo-mayra-poykamisa-to-deytero-treiler-apokalyptei-enan-erota-poy-dokimazei-mia-dynati-filia/",
-        "https://www.kathimerini.gr/society/564407713/sifnos-neo-vinteo-apo-ti-syntrivi-toy-elikopteroy/",
-        "https://www.kathimerini.gr/world/564407692/ti-prepei-na-gnorizoyn-oi-goneis-gia-to-neo-chatgpt-ton-efivon/"
+        "https://www.kathimerini.gr/athletics/football/564407809/panathinaikos-eisitiria-diarkeias-stoys-paiktes-poy-egrapsan-istoria-me-tin-omada/",
+        "https://www.kathimerini.gr/k/k-magazine/564407791/ateleioto-kalokairi-se-7-fotografies-apo-aystralia-mechri-ta-ellinika-nisia/",
+        "https://www.kathimerini.gr/athletics/analysis/564407755/panathinaikos-prepei-na-metatrepsei-to-oaka-se-oplo/",
+        "https://www.kathimerini.gr/visual/infographics/564406882/vrachychronia-misthosi-diplasiastikan-oi-times-se-mia-dekaetia/"
       ],
-      "seen_at_utc": "2026-08-18T14:30:11.218777+00:00"
+      "seen_at_utc": "2026-08-18T15:17:56.866967+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,39 +1262,52 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866395/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-catherine-steadman-kati-sto-nero/?utm_source=rss",
-      "title": "Αυτή την Κυριακή με το ΘΕMA, το συναρπαστικό μυθιστόρημα της Catherine Steadman «Κάτι στο νερό»",
-      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ ΜΕ ΤΟ ΘΕMA, ΤΟ ΣΥΝΑΡΠΑΣΤΙΚΟ ΜΥΘΙΣΤΟΡΗΜΑ ΤΗΣ CATHERINE STEADMAN «ΚΑΤΙ ΣΤΟ ΝΕΡΟ»",
+      "url": "https://www.protothema.gr/greece/article/1866431/fotia-tora-sta-aivaliotika-volou-sikothikan-2-elikoptera/?utm_source=rss",
+      "title": "Φωτιά τώρα στα Αϊβαλιώτικα Βόλου: 112 για ετοιμότητα, σηκώθηκαν 2 ελικόπτερα",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΑ ΑΙΒΑΛΙΩΤΙΚΑ ΒΟΛΟΥ: 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ, ΣΗΚΩΘΗΚΑΝ 2 ΕΛΙΚΟΠΤΕΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866395/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-catherine-steadman-kati-sto-nero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866431/fotia-tora-sta-aivaliotika-volou-sikothikan-2-elikoptera/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866421/katelixe-85hronos-pou-anasurthike-horis-aisthiseis-apo-thalassia-periohi-sti-naxo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866419/fotia-ston-profiti-ilia-salaminas-epiheiroun-2-elikoptera/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866409/gios-heirourgou-pou-didaskei-kai-stin-ellada-o-35hronos-israilinos-ston-opoio-apodidetai-i-fotia-sta-sellia-rethumnou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866402/auti-tin-kuriaki-me-to-thema-extra-teuhos-marie-claire-collections-fthinoporo-heimonas-2026-27/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866400/fotia-sto-palaiohori-mandras-epiheirei-ena-elikoptero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T14:30:11.218862+00:00"
+      "seen_at_utc": "2026-08-18T15:17:56.867147+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1449978/sifnos-neo-vinteo-ntokoymento-apo-tin-tragiki-ptosi-toy-elikopteroy-i-apoleia-eleghoy-kai-i-voytia-sto-edafos/",
-      "title": "Σίφνος: Νέο βίντεο-ντοκουμέντο από την τραγική πτώση του ελικοπτέρου – Η απώλεια ελέγχου και η βουτιά στο έδαφος",
-      "normalized_title": "ΣΙΦΝΟΣ: ΝΕΟ ΒΙΝΤΕΟ-ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΗΝ ΤΡΑΓΙΚΗ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ – Η ΑΠΩΛΕΙΑ ΕΛΕΓΧΟΥ ΚΑΙ Η ΒΟΥΤΙΑ ΣΤΟ ΕΔΑΦΟΣ",
+      "url": "https://www.efsyn.gr/politiki/1450006/arvanitis-ta-ethnika-symferonta-den-einai-oikogeneiaki-ypothesi/",
+      "title": "Αρβανίτης: Τα εθνικά συμφέροντα δεν είναι «οικογενειακή υπόθεση»",
+      "normalized_title": "ΑΡΒΑΝΙΤΗΣ: ΤΑ ΕΘΝΙΚΑ ΣΥΜΦΕΡΟΝΤΑ ΔΕΝ ΕΙΝΑΙ «ΟΙΚΟΓΕΝΕΙΑΚΗ ΥΠΟΘΕΣΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1449978/sifnos-neo-vinteo-ntokoymento-apo-tin-tragiki-ptosi-toy-elikopteroy-i-apoleia-eleghoy-kai-i-voytia-sto-edafos/",
-        "https://www.efsyn.gr/athlitismos/1449980/to-sygkinitiko-antio-toy-taison-se-konstantelia-o-kosmos-einai-dikos-soy-kai-prepei-na-se-gnorisei-mage/",
-        "https://www.efsyn.gr/ellada/1449974/i-akadimia-athinon-gia-ton-thanato-toy-konstantinoy-tsoykala-spoydaios-stohastis-simainon-koinonikos-filosofos/",
-        "https://www.efsyn.gr/tehnes/1449803/erga-dionysioy-layragka-se-cd/",
-        "https://www.efsyn.gr/ellada/1449973/pyrino-metopo-sti-thiva-sti-mahi-me-tis-floges-tria-enaeria-mesa/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-v-papavasileioy-18-08-2026/"
+        "https://www.efsyn.gr/politiki/1450006/arvanitis-ta-ethnika-symferonta-den-einai-oikogeneiaki-ypothesi/",
+        "https://www.efsyn.gr/kosmos/1450008/kolomvia-vivliki-katastrofi-apo-to-foniko-seismo-pano-apo-95-dis-dolaria-ektimontai-oi-zimies/",
+        "https://www.efsyn.gr/ellada/1450005/pyrkagia-sti-salamina-epiheiroyn-kai-enaeria-mesa/",
+        "https://www.efsyn.gr/athlitismos/1450000/panathinaikos-eisitirio-diarkeias-stoys-paiktes-poy-piran-protathlima-i-symmeteihan-se-istorikes-poreies-stin-eyropi/",
+        "https://www.efsyn.gr/kosmos/1449987/ta-gyrizei-tora-o-tramp-gia-tis-synomilies-me-to-iran-aragtsi-mas-iketeyoyn-na-diapragmateytoyn-mazi-mas/",
+        "https://www.efsyn.gr/ellada/1449989/tragodia-sti-sifno-poioi-itan-oi-neonymfoi-epivates-kai-o-empeiros-heiristis-toy-moiraioy-elikopteroy/",
+        "https://www.efsyn.gr/ellada/1449993/fotia-stin-periohi-palaiohori-sti-mandra-attikis/",
+        "https://www.efsyn.gr/kosmos/1449988/mayri-thalassa-ellinoktito-bulk-carrier-dehthike-apanota-pligmata-apo-drones/"
       ],
-      "seen_at_utc": "2026-08-18T14:18:06.001067+00:00"
+      "seen_at_utc": "2026-08-18T15:17:56.867122+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/sports/on-field/se-anammena-karvouna-i-ked-gia-to-var/",
-      "title": "Σε αναμμένα κάρβουνα η ΚΕΔ για το VAR",
-      "normalized_title": "ΣΕ ΑΝΑΜΜΕΝΑ ΚΑΡΒΟΥΝΑ Η ΚΕΔ ΓΙΑ ΤΟ VAR",
+      "url": "https://www.in.gr/2026/08/18/world/o-tramp-me-ton-kim-ta-pane-teleia-poioi-theloun-kai-poioi-polemoun-proseggisi-seoul-kai-piongiangk/",
+      "title": "Ο Τραμπ με τον Κίμ τα πάνε «τέλεια!» – Ποιοι θέλουν και ποιοι πολεμούν προσέγγιση Σεούλ και Πιονγιανγκ;",
+      "normalized_title": "Ο ΤΡΑΜΠ ΜΕ ΤΟΝ ΚΙΜ ΤΑ ΠΑΝΕ «ΤΕΛΕΙΑ!» – ΠΟΙΟΙ ΘΕΛΟΥΝ ΚΑΙ ΠΟΙΟΙ ΠΟΛΕΜΟΥΝ ΠΡΟΣΕΓΓΙΣΗ ΣΕΟΥΛ ΚΑΙ ΠΙΟΝΓΙΑΝΓΚ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/sports/on-field/se-anammena-karvouna-i-ked-gia-to-var/",
-        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/syriza-gia-tin-apoleia-tou-konstantinou-tsoukala-i-elliniki-aristera-kai-oi-koinonikes-epistimes-einai-apo-simera-ftoxoteres/",
-        "https://www.in.gr/2026/08/18/greece/fotia-sti-mandra-attikis-sikothike-ena-elikoptero/"
+        "https://www.in.gr/2026/08/18/world/o-tramp-me-ton-kim-ta-pane-teleia-poioi-theloun-kai-poioi-polemoun-proseggisi-seoul-kai-piongiangk/",
+        "https://www.in.gr/2026/08/18/sports/football/mexri-to-2030-stin-mpartselona-o-rodri-pragmatopoiithike-ena-oneiro-vid/",
+        "https://www.in.gr/2026/08/18/politics/inat-apo-tin-energeiaki-oligarxia-stin-energeiaki-dimokratia-epta-paremvaseis-gia-ti-metavasi/",
+        "https://www.in.gr/2026/08/18/world/ayto-einai-protofanes-giati-oi-prosfates-apokalypseis-tou-pentagonou-gia-ta-ufo-einai-toso-simantikes/",
+        "https://www.in.gr/2026/08/18/greece/fotia-sti-salamina-sikothikan-2-elikoptera/",
+        "https://www.in.gr/2026/08/18/sports/on-field/neo-xtypima-tis-al-xilal-me-oli-gouotkins/",
+        "https://www.in.gr/2026/08/18/politics/epikairotita/to-antio-tou-eyaggelou-venizelou-ston-konstantino-tsoukala-apoxaireto-to-foteino-myalo-tou/",
+        "https://www.in.gr/2026/08/18/world/rosia-oi-mystikes-vaseis-drones-me-velinekes-se-apostasi-anapnois-apo-xores-tou-nato/",
+        "https://www.in.gr/2026/08/18/life/culture-live/o-vin-ntizel-einai-etoimos-gia-tin-teleytaia-tainia-tou-franchise-fast-and-furious/"
       ],
-      "seen_at_utc": "2026-08-18T14:30:11.218819+00:00"
+      "seen_at_utc": "2026-08-18T15:17:56.867095+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T14:30:11.218931+00:00"
+  "updated_at_utc": "2026-08-18T15:17:56.867246+00:00"
 }
