@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/books/564406708/kyttara-politismoy-stis-kyklades/",
-      "title": "Κύτταρα πολιτισμού στις Κυκλάδες",
-      "normalized_title": "ΚΥΤΤΑΡΑ ΠΟΛΙΤΙΣΜΟΥ ΣΤΙΣ ΚΥΚΛΑΔΕΣ",
+      "url": "https://www.kathimerini.gr/culture/tv/564407737/oi-kores-tis-aretis-i-marianna-poyregka-systinetai-sto-tileoptiko-koino-os-tzeni/",
+      "title": "«Οι κόρες της Αρετής»: Η Μαριάννα Πουρέγκα συστήνεται στο τηλεοπτικό κοινό ως Τζένη",
+      "normalized_title": "«ΟΙ ΚΟΡΕΣ ΤΗΣ ΑΡΕΤΗΣ»: Η ΜΑΡΙΑΝΝΑ ΠΟΥΡΕΓΚΑ ΣΥΣΤΗΝΕΤΑΙ ΣΤΟ ΤΗΛΕΟΠΤΙΚΟ ΚΟΙΝΟ ΩΣ ΤΖΕΝΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/books/564406708/kyttara-politismoy-stis-kyklades/",
-        "https://www.kathimerini.gr/society/564408202/dypa-synelifthi-politis-poy-apeilise-ergazomenoys-stin-kifisia/"
+        "https://www.kathimerini.gr/culture/tv/564407737/oi-kores-tis-aretis-i-marianna-poyregka-systinetai-sto-tileoptiko-koino-os-tzeni/",
+        "https://www.kathimerini.gr/world/564408133/lavrof-rosia-kai-voreia-korea-agonizontai-gia-mia-nea-kai-dikaii-pagkosmia-taxi/"
       ],
-      "seen_at_utc": "2026-08-18T19:51:21.766829+00:00"
+      "seen_at_utc": "2026-08-18T20:17:03.702943+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1270,27 @@
       "seen_at_utc": "2026-08-18T19:51:21.766963+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1450170/symfonisan-mpartselona-me-rodri-oloklirothike-i-pio-megali-metagrafi-toy-kalokairioy/",
-      "title": "Συμφώνησαν Μπαρτσελόνα με Ρόδρι, ολοκληρώθηκε η πιο μεγάλη μεταγραφή του καλοκαιριού",
-      "normalized_title": "ΣΥΜΦΩΝΗΣΑΝ ΜΠΑΡΤΣΕΛΟΝΑ ΜΕ ΡΟΔΡΙ, ΟΛΟΚΛΗΡΩΘΗΚΕ Η ΠΙΟ ΜΕΓΑΛΗ ΜΕΤΑΓΡΑΦΗ ΤΟΥ ΚΑΛΟΚΑΙΡΙΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1450176/toyrkokyprios-proin-eyrovoyleytis-zita-syggnomi-gia-tis-dolofonies-isaak-kai-solomoy-ti-apanta-i-kori-toy-isaak/",
+      "title": "Τουρκοκύπριος πρώην ευρωβουλευτής ζητά συγγνώμη για τις δολοφονίες Ισαάκ και Σολωμού – Τι απαντά η κόρη του Ισαάκ",
+      "normalized_title": "ΤΟΥΡΚΟΚΥΠΡΙΟΣ ΠΡΩΗΝ ΕΥΡΩΒΟΥΛΕΥΤΗΣ ΖΗΤΑ ΣΥΓΓΝΩΜΗ ΓΙΑ ΤΙΣ ΔΟΛΟΦΟΝΙΕΣ ΙΣΑΑΚ ΚΑΙ ΣΟΛΩΜΟΥ – ΤΙ ΑΠΑΝΤΑ Η ΚΟΡΗ ΤΟΥ ΙΣΑΑΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1450170/symfonisan-mpartselona-me-rodri-oloklirothike-i-pio-megali-metagrafi-toy-kalokairioy/"
+        "https://www.efsyn.gr/kosmos/1450176/toyrkokyprios-proin-eyrovoyleytis-zita-syggnomi-gia-tis-dolofonies-isaak-kai-solomoy-ti-apanta-i-kori-toy-isaak/",
+        "https://www.efsyn.gr/ellada/1450177/mparaz-toyrkikon-paraviaseon-sto-aigaio/"
       ],
-      "seen_at_utc": "2026-08-18T19:51:21.766934+00:00"
+      "seen_at_utc": "2026-08-18T20:17:03.703029+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/sports/football/champions-league/eykairies-me-giovits-gia-tin-aek-eixe-kai-dokari-o-servos-vids/",
-      "title": "Ευκαιρίες με Γιόβιτς για την ΑΕΚ – Είχε και δοκάρι ο Σέρβος (vids)",
-      "normalized_title": "ΕΥΚΑΙΡΙΕΣ ΜΕ ΓΙΟΒΙΤΣ ΓΙΑ ΤΗΝ ΑΕΚ – ΕΙΧΕ ΚΑΙ ΔΟΚΑΡΙ Ο ΣΕΡΒΟΣ (VIDS)",
+      "url": "https://www.in.gr/2026/08/18/world/aimatiri-symploki-stous-agious-saranta-dolofonisan-20xrono-tourista-sto-portmpagkaz-kryvotan-o-drastis/",
+      "title": "Αλβανία: Νεκρός 20χρονος Πορτογάλος τουρίστας στο Εξαμίλι μετά από άγρια συμπλοκή – 11 συλλήψεις",
+      "normalized_title": "ΑΛΒΑΝΙΑ: ΝΕΚΡΟΣ 20ΧΡΟΝΟΣ ΠΟΡΤΟΓΑΛΟΣ ΤΟΥΡΙΣΤΑΣ ΣΤΟ ΕΞΑΜΙΛΙ ΜΕΤΑ ΑΠΟ ΑΓΡΙΑ ΣΥΜΠΛΟΚΗ – 11 ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/sports/football/champions-league/eykairies-me-giovits-gia-tin-aek-eixe-kai-dokari-o-servos-vids/"
+        "https://www.in.gr/2026/08/18/world/aimatiri-symploki-stous-agious-saranta-dolofonisan-20xrono-tourista-sto-portmpagkaz-kryvotan-o-drastis/",
+        "https://www.in.gr/2026/08/18/greece/dyo-syllipseis-gia-pyrkagies-se-trikala-kai-karysto-46xronos-eixe-prokalesei-toulaxiston-treis-foties-apo-prothesi/",
+        "https://www.in.gr/2026/08/18/world/o-proedros-germanikis-start-up-pou-promitheyei-me-drones-tin-oukrania-kryvetai-epeidi-fovatai-tin-rosia/",
+        "https://www.in.gr/2026/08/18/sports/football/l-4/"
       ],
-      "seen_at_utc": "2026-08-18T19:51:21.766894+00:00"
+      "seen_at_utc": "2026-08-18T20:17:03.702998+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T19:51:21.767057+00:00"
+  "updated_at_utc": "2026-08-18T20:17:03.703101+00:00"
 }
