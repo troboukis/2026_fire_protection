@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564407545/syriza-ektos-ko-i-nina-kasimati-me-apofasi-doyroy-ti-zita-apo-ti-gerovasili/",
-      "title": "ΣΥΡΙΖΑ: Εκτος ΚΟ η Νίνα Κασιμάτη με απόφαση Δούρου – Τι ζητά από τη Γεροβασίλη",
-      "normalized_title": "ΣΥΡΙΖΑ: ΕΚΤΟΣ ΚΟ Η ΝΙΝΑ ΚΑΣΙΜΑΤΗ ΜΕ ΑΠΟΦΑΣΗ ΔΟΥΡΟΥ – ΤΙ ΖΗΤΑ ΑΠΟ ΤΗ ΓΕΡΟΒΑΣΙΛΗ",
+      "url": "https://www.kathimerini.gr/society/564407554/sifnos-poio-itan-to-zeygari-neonymfon-poy-skotothike-sto-elikoptero/",
+      "title": "Σίφνος: Ποιο ήταν το ζευγάρι νεόνυμφων που σκοτώθηκε στο ελικόπτερο",
+      "normalized_title": "ΣΙΦΝΟΣ: ΠΟΙΟ ΗΤΑΝ ΤΟ ΖΕΥΓΑΡΙ ΝΕΟΝΥΜΦΩΝ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΤΟ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564407545/syriza-ektos-ko-i-nina-kasimati-me-apofasi-doyroy-ti-zita-apo-ti-gerovasili/",
-        "https://www.kathimerini.gr/athletics/basketball/564407506/me-amerikaniki-dream-team-kai-aperanti-lampsi-to-pagkosmio-kypello-gynaikon/"
+        "https://www.kathimerini.gr/society/564407554/sifnos-poio-itan-to-zeygari-neonymfon-poy-skotothike-sto-elikoptero/",
+        "https://www.kathimerini.gr/opinion/readers/564406642/itan-mprosta-apo-tin-epochi-toy/",
+        "https://www.kathimerini.gr/opinion/readers/564406645/mia-tolmiri-apofasi-toy-stefanoy-manoy/",
+        "https://www.kathimerini.gr/society/astynomiko/564407563/athina-synelifthi-26chroni-toyrkala-poy-katazitoyntan-me-erythra-aggelia-tis-interpol/",
+        "https://www.kathimerini.gr/opinion/readers/564406639/oi-ypodomes-kai-oi-yparchontes/",
+        "https://www.kathimerini.gr/opinion/readers/564406636/i-toyrkia-paizei-se-polla-tamplo/",
+        "https://www.kathimerini.gr/opinion/readers/564406633/ereyna-a-diafaneia-kai-chrimatodotisi/"
       ],
-      "seen_at_utc": "2026-08-18T12:51:15.966894+00:00"
+      "seen_at_utc": "2026-08-18T13:17:29.054276+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1265,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866341/fotia-tora-sto-tebloni-tis-kerkuras-sikothikan-7-enaeria/?utm_source=rss",
-      "title": "Φωτιά στο Τεμπλόνι της Κέρκυρας, σηκώθηκαν 7 εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΤΕΜΠΛΟΝΙ ΤΗΣ ΚΕΡΚΥΡΑΣ, ΣΗΚΩΘΗΚΑΝ 7 ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1866354/exi-traumaties-apo-proskrousi-touristikou-skafous-se-tsimedolithous-stin-zakunthos-sunelifthi-o-kuvernitis/?utm_source=rss",
+      "title": "Έξι τραυματίες από πρόσκρουση τουριστικού σκάφους σε τσιμεντόλιθους στην Ζάκυνθο, συνελήφθη ο κυβερνήτης",
+      "normalized_title": "ΕΞΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΠΡΟΣΚΡΟΥΣΗ ΤΟΥΡΙΣΤΙΚΟΥ ΣΚΑΦΟΥΣ ΣΕ ΤΣΙΜΕΝΤΟΛΙΘΟΥΣ ΣΤΗΝ ΖΑΚΥΝΘΟ, ΣΥΝΕΛΗΦΘΗ Ο ΚΥΒΕΡΝΗΤΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866341/fotia-tora-sto-tebloni-tis-kerkuras-sikothikan-7-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866332/epeigousa-odigia-tis-apa-meta-tin-tragodia-sti-sifno-eleghoi-sto-ouraio-strofeio-ton-bell-206-prin-apo-kathe-ptisi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866354/exi-traumaties-apo-proskrousi-touristikou-skafous-se-tsimedolithous-stin-zakunthos-sunelifthi-o-kuvernitis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T12:51:15.967031+00:00"
+      "seen_at_utc": "2026-08-18T13:17:29.054367+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1449933/to-katar-zita-symfonia-oman-kai-iran-gia-ta-stena-toy-ormoyz-oste-na-xepagosoyn-oi-iranoamerikanikes-diapragmateyseis/",
-      "title": "Το Κατάρ ζητά συμφωνία Ομάν και Ιράν για τα Στενά του Ορμούζ ώστε να ξεπαγώσουν οι ιρανοαμερικανικές διαπραγματεύσεις",
-      "normalized_title": "ΤΟ ΚΑΤΑΡ ΖΗΤΑ ΣΥΜΦΩΝΙΑ ΟΜΑΝ ΚΑΙ ΙΡΑΝ ΓΙΑ ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ ΩΣΤΕ ΝΑ ΞΕΠΑΓΩΣΟΥΝ ΟΙ ΙΡΑΝΟΑΜΕΡΙΚΑΝΙΚΕΣ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΙΣ",
+      "url": "https://www.efsyn.gr/ellada/1449936/eurostat-stoys-oyragoys-tis-eyropis-i-ellada-stis-dapanes-gia-tin-paideia/",
+      "title": "Eurostat: Στους ουραγούς της Ευρώπης η Ελλάδα στις δαπάνες για την Παιδεία",
+      "normalized_title": "EUROSTAT: ΣΤΟΥΣ ΟΥΡΑΓΟΥΣ ΤΗΣ ΕΥΡΩΠΗΣ Η ΕΛΛΑΔΑ ΣΤΙΣ ΔΑΠΑΝΕΣ ΓΙΑ ΤΗΝ ΠΑΙΔΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1449933/to-katar-zita-symfonia-oman-kai-iran-gia-ta-stena-toy-ormoyz-oste-na-xepagosoyn-oi-iranoamerikanikes-diapragmateyseis/",
-        "https://www.efsyn.gr/politiki/1449924/katarriptoyn-toys-panigyrismoys-mitsotaki-pasok-kai-kke-na-poy-ofeiletai-i-proori-apopliromi-toy-hreoys/",
-        "https://www.efsyn.gr/politiki/1449926/to-antio-toy-alexi-tsipra-ston-konstantino-tsoykala-enas-apo-toys-simantikoteroys-dianoites-toy-topoy-mas/",
-        "https://www.efsyn.gr/kosmos/1449733/to-kalokairi-tis-afypnisis-gia-ti-germania-asfaleia-den-dinoyn-mono-ta-opla/"
+        "https://www.efsyn.gr/ellada/1449936/eurostat-stoys-oyragoys-tis-eyropis-i-ellada-stis-dapanes-gia-tin-paideia/",
+        "https://www.efsyn.gr/ellada/1449940/pyrkagia-stin-kerkyra-minyma-112-sikothikan-enaeria-mesa/",
+        "https://www.efsyn.gr/life/1449939/ennea-hronia-horis-ti-zoi-laskari-to-vinteo-tis-finos-film-eihe-mia-finetsa-kai-mia-lampsi/",
+        "https://www.efsyn.gr/politiki/1449928/syriza-gia-konstantino-tsoykala-epirease-kathoristika-ton-tropo-me-ton-opoio-meletame-tin-elliniki-koinonia/",
+        "https://www.efsyn.gr/life/1449930/gia-oti-ekanes-kalo-pote-mi-metanioseis-to-sygkinitiko-poiima-toy-tasoy-halkia-gia-tin-katastrofi-toy-spitioy-toy/"
       ],
-      "seen_at_utc": "2026-08-18T12:51:15.967010+00:00"
+      "seen_at_utc": "2026-08-18T13:17:29.054341+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/politics/politiki-grammateia/pasok-i-apopliromi-tou-xreous-xtizetai-pano-sti-forologiki-afaimaksi-ton-politon/",
-      "title": "ΠΑΣΟΚ: Η αποπληρωμή του χρέους χτίζεται πάνω στη φορολογική αφαίμαξη των πολιτών",
-      "normalized_title": "ΠΑΣΟΚ: Η ΑΠΟΠΛΗΡΩΜΗ ΤΟΥ ΧΡΕΟΥΣ ΧΤΙΖΕΤΑΙ ΠΑΝΩ ΣΤΗ ΦΟΡΟΛΟΓΙΚΗ ΑΦΑΙΜΑΞΗ ΤΩΝ ΠΟΛΙΤΩΝ",
+      "url": "https://www.in.gr/2026/08/18/apopsi/konstantinos-tsoukalas-to-vathy-apotypoma-tou-kritikou-stoxasmou/",
+      "title": "Κωνσταντίνος Τσουκαλάς: το βαθύ αποτύπωμα του κριτικού στοχασμού",
+      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΣΟΥΚΑΛΑΣ: ΤΟ ΒΑΘΥ ΑΠΟΤΥΠΩΜΑ ΤΟΥ ΚΡΙΤΙΚΟΥ ΣΤΟΧΑΣΜΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/pasok-i-apopliromi-tou-xreous-xtizetai-pano-sti-forologiki-afaimaksi-ton-politon/",
-        "https://www.in.gr/2026/08/18/go-fun/tv/dyo-mayra-poukamisa-ayto-einai-to-deytero-trailer-tis-neas-seiras/",
-        "https://www.in.gr/2026/08/18/sports/basketball/olympiakos-to-programma-ton-filikon-kai-tis-proetoimasias/",
-        "https://www.in.gr/2026/08/18/politics/epikairotita/ektos-ko-tou-syriza-i-kasimati-dioria-stin-gerovasili-na-paradosei-tin-edra/"
+        "https://www.in.gr/2026/08/18/apopsi/konstantinos-tsoukalas-to-vathy-apotypoma-tou-kritikou-stoxasmou/",
+        "https://www.in.gr/2026/08/18/greece/fotia-sto-temploni-stin-kerkyra-minyma-112/",
+        "https://www.in.gr/2026/08/18/sports/othersports/ta-kefalia-mesa-gia-tentoglou-kai-karali-epestrepsan-sti-douleia-pic/",
+        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/oosa-i-siopiri-krisi-tou-mple-xrysou-i-apeili-tou-8-sto-pagkosmio-aep-kai-to-stoixima-tis-elladas/"
       ],
-      "seen_at_utc": "2026-08-18T12:51:15.966964+00:00"
+      "seen_at_utc": "2026-08-18T13:17:29.054316+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T12:51:15.967129+00:00"
+  "updated_at_utc": "2026-08-18T13:17:29.054455+00:00"
 }
