@@ -1,19 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564407554/sifnos-poio-itan-to-zeygari-neonymfon-poy-skotothike-sto-elikoptero/",
-      "title": "Σίφνος: Ποιο ήταν το ζευγάρι νεόνυμφων που σκοτώθηκε στο ελικόπτερο",
-      "normalized_title": "ΣΙΦΝΟΣ: ΠΟΙΟ ΗΤΑΝ ΤΟ ΖΕΥΓΑΡΙ ΝΕΟΝΥΜΦΩΝ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΤΟ ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.kathimerini.gr/society/564407617/i-anakoinosi-tis-el-as-gia-tin-ptosi-toy-elikopteroy-sti-sifno/",
+      "title": "Η ανακοίνωση της ΕΛ.ΑΣ. για την πτώση του ελικοπτέρου στη Σίφνο",
+      "normalized_title": "Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΕΛ.ΑΣ. ΓΙΑ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564407554/sifnos-poio-itan-to-zeygari-neonymfon-poy-skotothike-sto-elikoptero/",
-        "https://www.kathimerini.gr/opinion/readers/564406642/itan-mprosta-apo-tin-epochi-toy/",
-        "https://www.kathimerini.gr/opinion/readers/564406645/mia-tolmiri-apofasi-toy-stefanoy-manoy/",
-        "https://www.kathimerini.gr/society/astynomiko/564407563/athina-synelifthi-26chroni-toyrkala-poy-katazitoyntan-me-erythra-aggelia-tis-interpol/",
-        "https://www.kathimerini.gr/opinion/readers/564406639/oi-ypodomes-kai-oi-yparchontes/",
-        "https://www.kathimerini.gr/opinion/readers/564406636/i-toyrkia-paizei-se-polla-tamplo/",
-        "https://www.kathimerini.gr/opinion/readers/564406633/ereyna-a-diafaneia-kai-chrimatodotisi/"
+        "https://www.kathimerini.gr/society/564407617/i-anakoinosi-tis-el-as-gia-tin-ptosi-toy-elikopteroy-sti-sifno/",
+        "https://www.kathimerini.gr/society/564407557/epidimia-paravaseon-stoys-adeioys-dromoys-tis-paraliakis-vinteo/",
+        "https://www.kathimerini.gr/society/564407590/fotia-se-aytokinito-stin-athinon-lamias-vinteo/",
+        "https://www.kathimerini.gr/society/564407602/fotia-stin-kerkyra-minyma-112-gia-etoimotita-sti-machi-efta-enaeria/",
+        "https://www.kathimerini.gr/world/564407593/stena-toy-ormoyz-nekros-naytikos-meta-apo-epithesi-sto-ellinoktito-minoan-dignity/"
       ],
-      "seen_at_utc": "2026-08-18T13:17:29.054276+00:00"
+      "seen_at_utc": "2026-08-18T13:52:33.533245+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,39 +1263,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866354/exi-traumaties-apo-proskrousi-touristikou-skafous-se-tsimedolithous-stin-zakunthos-sunelifthi-o-kuvernitis/?utm_source=rss",
-      "title": "Έξι τραυματίες από πρόσκρουση τουριστικού σκάφους σε τσιμεντόλιθους στην Ζάκυνθο, συνελήφθη ο κυβερνήτης",
-      "normalized_title": "ΕΞΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΠΡΟΣΚΡΟΥΣΗ ΤΟΥΡΙΣΤΙΚΟΥ ΣΚΑΦΟΥΣ ΣΕ ΤΣΙΜΕΝΤΟΛΙΘΟΥΣ ΣΤΗΝ ΖΑΚΥΝΘΟ, ΣΥΝΕΛΗΦΘΗ Ο ΚΥΒΕΡΝΗΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1866372/tautopoiithike-i-82hroni-odigos-tis-mercedes-pou-kinoudan-anapoda-stin-athinon-korinthou-eihe-lixei-i-adeia-odigisis-tis/?utm_source=rss",
+      "title": "Ταυτοποιήθηκε η 82χρονη οδηγός της Mercedes που κινούνταν ανάποδα στην Αθηνών-Κορίνθου, είχε λήξει το δίπλωμά της",
+      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ Η 82ΧΡΟΝΗ ΟΔΗΓΟΣ ΤΗΣ MERCEDES ΠΟΥ ΚΙΝΟΥΝΤΑΝ ΑΝΑΠΟΔΑ ΣΤΗΝ ΑΘΗΝΩΝ-ΚΟΡΙΝΘΟΥ, ΕΙΧΕ ΛΗΞΕΙ ΤΟ ΔΙΠΛΩΜΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866354/exi-traumaties-apo-proskrousi-touristikou-skafous-se-tsimedolithous-stin-zakunthos-sunelifthi-o-kuvernitis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866372/tautopoiithike-i-82hroni-odigos-tis-mercedes-pou-kinoudan-anapoda-stin-athinon-korinthou-eihe-lixei-i-adeia-odigisis-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866371/diaskedaze-purovolodas-tis-labes-tis-plateias-sto-podi-ena-olokliro-horio-tis-fthiotidas-ta-mesanuhta/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866367/fotia-tora-sti-thiva-sikothikan-3-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866363/sunelifthi-26hroni-stin-athina-pou-anazitoudan-apo-tin-iderpol-gia-narkotika/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866362/neo-video-apo-ti-sudrivi-tou-elikopterou-sti-sifno-pou-strefodai-oi-ereunes-elas-kai-eodasaam/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T13:17:29.054367+00:00"
+      "seen_at_utc": "2026-08-18T13:52:33.533375+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1449936/eurostat-stoys-oyragoys-tis-eyropis-i-ellada-stis-dapanes-gia-tin-paideia/",
-      "title": "Eurostat: Στους ουραγούς της Ευρώπης η Ελλάδα στις δαπάνες για την Παιδεία",
-      "normalized_title": "EUROSTAT: ΣΤΟΥΣ ΟΥΡΑΓΟΥΣ ΤΗΣ ΕΥΡΩΠΗΣ Η ΕΛΛΑΔΑ ΣΤΙΣ ΔΑΠΑΝΕΣ ΓΙΑ ΤΗΝ ΠΑΙΔΕΙΑ",
+      "url": "https://www.efsyn.gr/kosmos/1449964/o-poy-kroyei-ton-kodona-kindynoy-gia-ton-empola-anexelegkti-i-epidimia-ypsilos-o-kindynos-diethnoys-exaplosis/",
+      "title": "Ο ΠΟΥ κρούει τον κώδωνα κινδύνου για τον Έμπολα: Ανεξέλεγκτη η επιδημία, υψηλός ο κίνδυνος διεθνούς εξάπλωσης",
+      "normalized_title": "Ο ΠΟΥ ΚΡΟΥΕΙ ΤΟΝ ΚΩΔΩΝΑ ΚΙΝΔΥΝΟΥ ΓΙΑ ΤΟΝ ΕΜΠΟΛΑ: ΑΝΕΞΕΛΕΓΚΤΗ Η ΕΠΙΔΗΜΙΑ, ΥΨΗΛΟΣ Ο ΚΙΝΔΥΝΟΣ ΔΙΕΘΝΟΥΣ ΕΞΑΠΛΩΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1449936/eurostat-stoys-oyragoys-tis-eyropis-i-ellada-stis-dapanes-gia-tin-paideia/",
-        "https://www.efsyn.gr/ellada/1449940/pyrkagia-stin-kerkyra-minyma-112-sikothikan-enaeria-mesa/",
-        "https://www.efsyn.gr/life/1449939/ennea-hronia-horis-ti-zoi-laskari-to-vinteo-tis-finos-film-eihe-mia-finetsa-kai-mia-lampsi/",
-        "https://www.efsyn.gr/politiki/1449928/syriza-gia-konstantino-tsoykala-epirease-kathoristika-ton-tropo-me-ton-opoio-meletame-tin-elliniki-koinonia/",
-        "https://www.efsyn.gr/life/1449930/gia-oti-ekanes-kalo-pote-mi-metanioseis-to-sygkinitiko-poiima-toy-tasoy-halkia-gia-tin-katastrofi-toy-spitioy-toy/"
+        "https://www.efsyn.gr/kosmos/1449964/o-poy-kroyei-ton-kodona-kindynoy-gia-ton-empola-anexelegkti-i-epidimia-ypsilos-o-kindynos-diethnoys-exaplosis/",
+        "https://www.efsyn.gr/ellada/1449957/elikoptera-epeigoysa-odigia-tis-politikis-aeroporias-gia-eleghoys-meta-tin-ptosi-sti-sifno/",
+        "https://www.efsyn.gr/ellada/1449963/vrethike-i-48hroni-odigos-poy-ekane-anastrofi-me-leoforeio-stin-athinon-soynioy/",
+        "https://www.efsyn.gr/politiki/1449949/pasok-gia-konstantino-tsoykala-ton-apohairetoyme-me-sevasmo-kai-eygnomosyni/",
+        "https://www.efsyn.gr/ellada/1449953/sifnos-ti-anaferei-i-astynomia-gia-tin-ptosi-toy-elikopteroy-den-prokyptei-emploki-allon-atomon/",
+        "https://www.efsyn.gr/ellada/1449946/thodoris-kolydas-erhontai-nea-40aria-se-liges-meres-xekinoyn-kai-pali-ypsiles-thermokrasies/"
       ],
-      "seen_at_utc": "2026-08-18T13:17:29.054341+00:00"
+      "seen_at_utc": "2026-08-18T13:52:33.533342+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/apopsi/konstantinos-tsoukalas-to-vathy-apotypoma-tou-kritikou-stoxasmou/",
-      "title": "Κωνσταντίνος Τσουκαλάς: το βαθύ αποτύπωμα του κριτικού στοχασμού",
-      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΣΟΥΚΑΛΑΣ: ΤΟ ΒΑΘΥ ΑΠΟΤΥΠΩΜΑ ΤΟΥ ΚΡΙΤΙΚΟΥ ΣΤΟΧΑΣΜΟΥ",
+      "url": "https://www.in.gr/2026/08/18/greece/fotia-sti-thiva-sikothikan-2-aeroskafi-kai-1-elikoptero/",
+      "title": "Φωτιά στη Θήβα – Σηκώθηκαν 2 αεροσκάφη και 1 ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΘΗΒΑ – ΣΗΚΩΘΗΚΑΝ 2 ΑΕΡΟΣΚΑΦΗ ΚΑΙ 1 ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/apopsi/konstantinos-tsoukalas-to-vathy-apotypoma-tou-kritikou-stoxasmou/",
-        "https://www.in.gr/2026/08/18/greece/fotia-sto-temploni-stin-kerkyra-minyma-112/",
-        "https://www.in.gr/2026/08/18/sports/othersports/ta-kefalia-mesa-gia-tentoglou-kai-karali-epestrepsan-sti-douleia-pic/",
-        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/oosa-i-siopiri-krisi-tou-mple-xrysou-i-apeili-tou-8-sto-pagkosmio-aep-kai-to-stoixima-tis-elladas/"
+        "https://www.in.gr/2026/08/18/greece/fotia-sti-thiva-sikothikan-2-aeroskafi-kai-1-elikoptero/",
+        "https://www.in.gr/2026/08/18/sports/football/to-sygkinitiko-antio-tou-taison-ston-konstantelia-o-kosmos-einai-dikos-sou-mage-peta-psila-pic/",
+        "https://www.in.gr/2026/08/18/world/ispania-nees-seismikes-doniseis-sti-granada-toulaxiston-treis-traymaties-kai-zimies-se-ktiria/",
+        "https://www.in.gr/2026/08/18/greece/sifnos-syndromi-kai-apo-to-elliniko-fbi-stis-ereynes-gia-tin-ptosi-tou-elikopterou-i-anakoinosi-tis-el-as/",
+        "https://www.in.gr/2026/08/18/go-fun/fizz/tzon-stamos-o-omogenis-star-kai-o-8xronos-gios-tou-grafoun-vivlio-as-ferei-elpida/",
+        "https://www.in.gr/2026/08/18/in-science/space/anakalypsi-stathmos-apo-to-james-webb-treis-ypermegetheis-mayres-trypes-se-xoro-thanatou-sta-vathi-tou-sympantos/"
       ],
-      "seen_at_utc": "2026-08-18T13:17:29.054316+00:00"
+      "seen_at_utc": "2026-08-18T13:52:33.533303+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T13:17:29.054455+00:00"
+  "updated_at_utc": "2026-08-18T13:52:33.533487+00:00"
 }
