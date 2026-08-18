@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398818/eortologio-poioi-giortazoyn-simera-18-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 18 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 18 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564406543/diarkis-ayxisi-sta-kroysmata-apo-ton-io-toy-dytikoy-neiloy/",
+      "title": "Διαρκής αύξηση στα κρούσματα από τον ιό του Δυτικού Νείλου",
+      "normalized_title": "ΔΙΑΡΚΗΣ ΑΥΞΗΣΗ ΣΤΑ ΚΡΟΥΣΜΑΤΑ ΑΠΟ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398818/eortologio-poioi-giortazoyn-simera-18-aygoystoy/",
-        "https://www.kathimerini.gr/economy/564402436/arthro-toy-vasileioy-panoysopoyloy-stin-k-i-metochiki-axia-ton-epicheiriseon/"
+        "https://www.kathimerini.gr/visual/infographics/564406543/diarkis-ayxisi-sta-kroysmata-apo-ton-io-toy-dytikoy-neiloy/",
+        "https://www.kathimerini.gr/society/reportaz/564406531/anazitontas-to-simeio-miden-stis-dyo-esties-fotias-sti-salamina/",
+        "https://www.kathimerini.gr/world/564406981/seismoi-sti-venezoyela-ayxanetai-o-tragikos-apologismos-schedon-6-500-oi-nekroi/",
+        "https://www.kathimerini.gr/visual/infographics/564406486/ellinotoyrkika-ta-dyo-senaria-meta-ta-thalassia-parka/",
+        "https://www.kathimerini.gr/world/564406603/nees-elleipseis-kaysimon-sti-moscha/",
+        "https://www.kathimerini.gr/visual/infographics/564406573/psychroloysia-sti-seoyl-apo-tramp/",
+        "https://www.kathimerini.gr/world/564406606/pieseis-koysner-gia-eirini-sti-gaza/"
       ],
-      "seen_at_utc": "2026-08-17T21:17:51.002199+00:00"
+      "seen_at_utc": "2026-08-18T04:17:39.425581+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1265,65 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866081/trohaio-sti-leoforo-poseidonos-sti-voula-sovara-traumatias-odigos-motosikletas/?utm_source=rss",
-      "title": "Τροχαίο στη Λεωφόρο Ποσειδώνος στη Βούλα: Ταξί συγκρούστηκε με μηχανή, τραυματίστηκε σοβαρά ο μοτοσικλετιστής",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΛΕΩΦΟΡΟ ΠΟΣΕΙΔΩΝΟΣ ΣΤΗ ΒΟΥΛΑ: ΤΑΞΙ ΣΥΓΚΡΟΥΣΤΗΚΕ ΜΕ ΜΗΧΑΝΗ, ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΟΒΑΡΑ Ο ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1866107/apadiseis-sta-teleutaia-deuterolepta-prin-apo-ti-sudrivi-tou-elikopterou-sti-sifno-psahnoun-oi-arhes/?utm_source=rss",
+      "title": "Απαντήσεις στα τελευταία δευτερόλεπτα πριν από τη συντριβή του ελικοπτέρου στη Σίφνο ψάχνουν οι Αρχές, τι δείχνει το βίντεο ντοκουμέντο",
+      "normalized_title": "ΑΠΑΝΤΗΣΕΙΣ ΣΤΑ ΤΕΛΕΥΤΑΙΑ ΔΕΥΤΕΡΟΛΕΠΤΑ ΠΡΙΝ ΑΠΟ ΤΗ ΣΥΝΤΡΙΒΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ ΨΑΧΝΟΥΝ ΟΙ ΑΡΧΕΣ, ΤΙ ΔΕΙΧΝΕΙ ΤΟ ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866081/trohaio-sti-leoforo-poseidonos-sti-voula-sovara-traumatias-odigos-motosikletas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866107/apadiseis-sta-teleutaia-deuterolepta-prin-apo-ti-sudrivi-tou-elikopterou-sti-sifno-psahnoun-oi-arhes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866104/kairos-37aria-simera-kai-nea-anodos-tis-thermokrasias-apo-tin-pebti-pou-anamenodai-topikes-vrohes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-17T20:52:50.287323+00:00"
+      "seen_at_utc": "2026-08-18T04:17:39.425668+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1449509/kypello-elladas-poies-omades-poy-perasan-sti-league-phase-vinteo/",
-      "title": "Κύπελλο Ελλάδας: Ποιες ομάδες που πέρασαν στη League Phase [βίντεο]",
-      "normalized_title": "ΚΥΠΕΛΛΟ ΕΛΛΑΔΑΣ: ΠΟΙΕΣ ΟΜΑΔΕΣ ΠΟΥ ΠΕΡΑΣΑΝ ΣΤΗ LEAGUE PHASE [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1449524/erntogan-perimeno-na-tirithei-i-yposhesi-tramp-gia-ta-f-35-ti-eipe-gia-ti-symfonia-tis-mekkas/",
+      "title": "Ερντογάν: «Περιμένω να τηρηθεί η υπόσχεση Τραμπ για τα F-35» – Τι είπε για τη «Συμφωνία της Μέκκας»",
+      "normalized_title": "ΕΡΝΤΟΓΑΝ: «ΠΕΡΙΜΕΝΩ ΝΑ ΤΗΡΗΘΕΙ Η ΥΠΟΣΧΕΣΗ ΤΡΑΜΠ ΓΙΑ ΤΑ F-35» – ΤΙ ΕΙΠΕ ΓΙΑ ΤΗ «ΣΥΜΦΩΝΙΑ ΤΗΣ ΜΕΚΚΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1449509/kypello-elladas-poies-omades-poy-perasan-sti-league-phase-vinteo/"
+        "https://www.efsyn.gr/politiki/1449524/erntogan-perimeno-na-tirithei-i-yposhesi-tramp-gia-ta-f-35-ti-eipe-gia-ti-symfonia-tis-mekkas/",
+        "https://www.efsyn.gr/kosmos/1449533/iran-apeilei-me-pliri-epithesi-meta-to-adiexodo-stis-diapragmateyseis-sto-epikentro-ta-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/nisides/1449243/polytima-petradia-istorikis-mnimis/",
+        "https://www.efsyn.gr/ellada/1449516/fotia-sti-salamina-xekinoyn-oi-aytopsies-posa-spitia-ehoyn-ypostei-zimies-eytyhos-poy-fysoyse-vorias/",
+        "https://www.efsyn.gr/ellada/1449519/kairos-eos-37-vathmoys-i-thermokrasia-poy-anamenontai-topikes-vrohes/",
+        "https://www.efsyn.gr/ellada/1449513/sifnos-mystirio-me-tin-ptosi-toy-elikopteroy-ti-exetazoyn-oi-arhes-ta-krisima-lepta-prin-apo-tin-tragodia/",
+        "https://www.efsyn.gr/ellada/1449517/eortologio-poioi-giortazoyn-simera-18-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-17T21:17:51.002270+00:00"
+      "seen_at_utc": "2026-08-18T04:17:39.425646+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/world/nea-yorki-anavlithike-i-diki-tou-louitzi-mantzione-meta-tin-omologia-tou/",
-      "title": "Αναβλήθηκε η δίκη του Λουίτζι Μαντζιόνε μετά την ομολογία του",
-      "normalized_title": "ΑΝΑΒΛΗΘΗΚΕ Η ΔΙΚΗ ΤΟΥ ΛΟΥΙΤΖΙ ΜΑΝΤΖΙΟΝΕ ΜΕΤΑ ΤΗΝ ΟΜΟΛΟΓΙΑ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/18/greece/salamina-ksekinoun-oi-aytopsies-gia-ta-kamena-prosagogi-ypoptis-gia-emprismo/",
+      "title": "Σαλαμίνα: Ξεκινούν οι αυτοψίες για τα καμένα, προσαγωγή ύποπτης για εμπρησμό",
+      "normalized_title": "ΣΑΛΑΜΙΝΑ: ΞΕΚΙΝΟΥΝ ΟΙ ΑΥΤΟΨΙΕΣ ΓΙΑ ΤΑ ΚΑΜΕΝΑ, ΠΡΟΣΑΓΩΓΗ ΥΠΟΠΤΗΣ ΓΙΑ ΕΜΠΡΗΣΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/world/nea-yorki-anavlithike-i-diki-tou-louitzi-mantzione-meta-tin-omologia-tou/"
+        "https://www.in.gr/2026/08/18/greece/salamina-ksekinoun-oi-aytopsies-gia-ta-kamena-prosagogi-ypoptis-gia-emprismo/",
+        "https://www.in.gr/2026/08/18/life/geysi/syntagi-paradosiakoi-laxanontolmades/",
+        "https://www.in.gr/2026/08/18/world/ukmto-ploio-xtypithike-apo-agnosto-vlima-sta-stena-tou-ormouz-enas-nekros/",
+        "https://www.in.gr/2026/08/18/greece/tragodia-sti-sifno-poios-itan-o-empeiros-pilotos-pou-skotothike-sti-syntrivi/",
+        "https://www.in.gr/2026/08/18/plus/vita/oi-trofes-pou-mas-prostateyoun-apo-ton-ilio/",
+        "https://www.in.gr/2026/08/18/greece/peftoun-oi-anemoi-anevainei-o-ydrargyros/",
+        "https://www.in.gr/2026/08/18/health/den-einai-aplos-douleia-pos-ta-synaisthimata-paizoun-kentriko-rolo-sti-diaxeirisi-tou-ergasiakou-perivallontos/",
+        "https://www.in.gr/2026/08/18/life/culture-live/o-morgkan-friman-epainei-ton-teilor-serintan-gia-tis-vathia-anthropines-istories-tou/",
+        "https://www.in.gr/2026/08/18/plus/medianews/mathimata-agapis-apo-pente-agapimenes-tainies/",
+        "https://www.in.gr/2026/08/18/world/to-smartwatch-leei-oti-eisai-arrostos-oi-giatroi-lene-prosoxi/",
+        "https://www.in.gr/2026/08/18/world/maga-enantion-eyropis-i-nea-deksia-tou-tramp-vlepei-tin-ipeiro-os-progoniki-estia-kai-ideologiko-pedio-maxis/",
+        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/anakainisi-ktiriou-pote-einai-nomimi-kai-poies-adeies-apaitountai-ola-osa-prepei-na-gnorizete/",
+        "https://www.in.gr/2026/08/18/economy/diethnis-oikonomia/i-nea-epoxi-tou-eyro/",
+        "https://www.in.gr/2026/08/18/world/ksepagonei-o-pagomenos-dromos-tou-metaksiou/",
+        "https://www.in.gr/2026/08/18/economy/thilia-gia-aytoapasxoloumenous-kai-agrotes-ta-xrei-ston-efka-ksepernane-ta-524-dis-eyro/",
+        "https://www.in.gr/2026/08/18/life/culture-live/primetime-rekor-provolon-gia-to-treiler-tis-neas-tainias-tou-rompert-patinson/",
+        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/argyro-elladas-stis-ptoxeyseis-epixeiriseon/",
+        "https://www.in.gr/2026/08/18/economy/diethnis-oikonomia/oi-dramatikes-oikonomikes-epiptoseis-tis-ksirasias-stin-eyropi/",
+        "https://www.in.gr/2026/08/18/world/israil-o-kousner-elpizei-pos-tha-yparksei-proodos-entos-30-imeron/",
+        "https://www.in.gr/2026/08/18/world/i-rosia-proeidopoiei-ti-vretania-pos-tha-logodotisei-gia-ti-stratiotiki-synergasia-tis-me-tin-oukrania/",
+        "https://www.in.gr/2026/08/18/world/iran-to-diplomatiko-adieksodo-apeilei-na-parateinei-ton-polemo-sti-mesi-anatoli/",
+        "https://www.in.gr/2026/08/18/world/tramp-kai-leykos-oikos-vazoun-sto-stoxastro-ti-reporter-xolms-tou-cnn/",
+        "https://www.in.gr/2026/08/18/life/music/rosia-o-amerikanos-raper-kanie-gouest-tha-dosei-dyo-synaylies-stin-agia-petroupoli/",
+        "https://www.in.gr/2026/08/18/world/venezouela-stous-6-438-oi-nekroi-apo-ton-diplo-seismo-symfona-me-neotero-prosorino-apologismo/",
+        "https://www.in.gr/2026/08/18/world/arxigos-symmorias-tou-los-antzeles-itan-o-egkefalos-tis-dolofonias-tou-toupak-dilose-o-eisaggeleas/",
+        "https://www.in.gr/2026/08/18/world/nigiria-dolofonisan-dekades-mousoulmanous-eno-proseyxontan/",
+        "https://www.in.gr/2026/08/18/world/rosia-kouriles-o-iaponas-presveytis-klithike-sto-ypourgeio-eksoterikon/"
       ],
-      "seen_at_utc": "2026-08-17T22:51:08.852681+00:00"
+      "seen_at_utc": "2026-08-18T04:17:39.425620+00:00"
     }
   },
-  "updated_at_utc": "2026-08-17T22:51:08.852762+00:00"
+  "updated_at_utc": "2026-08-18T04:17:39.425746+00:00"
 }
