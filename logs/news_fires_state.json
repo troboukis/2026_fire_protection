@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564407422/o-armanto-gkonsales-den-fovatai-pia-oyte-ta-myrmigkia/",
-      "title": "Ο Αρμάντο Γκονσάλες δεν φοβάται πια ούτε τα μυρμήγκια",
-      "normalized_title": "Ο ΑΡΜΑΝΤΟ ΓΚΟΝΣΑΛΕΣ ΔΕΝ ΦΟΒΑΤΑΙ ΠΙΑ ΟΥΤΕ ΤΑ ΜΥΡΜΗΓΚΙΑ",
+      "url": "https://www.kathimerini.gr/culture/564402553/i-prasini-panepistimioy/",
+      "title": "Η πράσινη Πανεπιστημίου",
+      "normalized_title": "Η ΠΡΑΣΙΝΗ ΠΑΝΕΠΙΣΤΗΜΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564407422/o-armanto-gkonsales-den-fovatai-pia-oyte-ta-myrmigkia/",
-        "https://www.kathimerini.gr/world/564407359/iran-kleista-ta-stena-toy-ormoyz-eos-otoy-oi-ipa-ekplirosoyn-toys-oroys-tis-symfonias/"
+        "https://www.kathimerini.gr/culture/564402553/i-prasini-panepistimioy/",
+        "https://www.kathimerini.gr/opinion/sketches/564407431/skitso-toy-ilia-makri-18-08-26/",
+        "https://www.kathimerini.gr/economy/international/564406918/oi-kaysones-apeiloyn-sodeies-ayxanoyn-times/"
       ],
-      "seen_at_utc": "2026-08-18T10:51:28.415026+00:00"
+      "seen_at_utc": "2026-08-18T11:17:07.264843+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866298/thessaloniki-sti-fulaki-42hronos-pou-eklepse-pano-apo-100-pagota-apo-periptero-mazi-me-ti-sudrofo-tou/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Στη φυλακή 42χρονος που έκλεψε πάνω από 100 παγωτά από περίπτερο μαζί με τη σύντροφό του",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΗ ΦΥΛΑΚΗ 42ΧΡΟΝΟΣ ΠΟΥ ΕΚΛΕΨΕ ΠΑΝΩ ΑΠΟ 100 ΠΑΓΩΤΑ ΑΠΟ ΠΕΡΙΠΤΕΡΟ ΜΑΖΙ ΜΕ ΤΗ ΣΥΝΤΡΟΦΟ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1866304/neo-plaisio-gia-tis-sholikes-ekdromes-oles-oi-allages-gia-mathites-kai-ekpaideutikous-ti-tha-ishuei-gia-ta-kinita/?utm_source=rss",
+      "title": "Νέο πλαίσιο για τις σχολικές εκδρομές: Όλες οι αλλαγές για μαθητές και εκπαιδευτικούς, τι θα ισχύει για τα κινητά",
+      "normalized_title": "ΝΕΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΙΣ ΣΧΟΛΙΚΕΣ ΕΚΔΡΟΜΕΣ: ΟΛΕΣ ΟΙ ΑΛΛΑΓΕΣ ΓΙΑ ΜΑΘΗΤΕΣ ΚΑΙ ΕΚΠΑΙΔΕΥΤΙΚΟΥΣ, ΤΙ ΘΑ ΙΣΧΥΕΙ ΓΙΑ ΤΑ ΚΙΝΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866298/thessaloniki-sti-fulaki-42hronos-pou-eklepse-pano-apo-100-pagota-apo-periptero-mazi-me-ti-sudrofo-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866304/neo-plaisio-gia-tis-sholikes-ekdromes-oles-oi-allages-gia-mathites-kai-ekpaideutikous-ti-tha-ishuei-gia-ta-kinita/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T10:51:28.415121+00:00"
+      "seen_at_utc": "2026-08-18T11:17:07.264969+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1449832/panigyrismoi-mitsotaki-gia-tin-proori-apopliromi-toy-hreoys-tora-spaei-i-alysida-eythynon/",
-      "title": "Πανηγυρισμοί Μητσοτάκη για την πρόωρη αποπληρωμή του χρέους: «Τώρα σπάει η αλυσίδα ευθυνών»",
-      "normalized_title": "ΠΑΝΗΓΥΡΙΣΜΟΙ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΗΝ ΠΡΟΩΡΗ ΑΠΟΠΛΗΡΩΜΗ ΤΟΥ ΧΡΕΟΥΣ: «ΤΩΡΑ ΣΠΑΕΙ Η ΑΛΥΣΙΔΑ ΕΥΘΥΝΩΝ»",
+      "url": "https://www.efsyn.gr/nisides/1449848/sta-grafika-psarohoria-toy-saronikoy-gia-tis-apodraseis-meta-ton-dekapentaygoysto-eikones/",
+      "title": "Στα γραφικά ψαροχώρια του Σαρωνικού για τις αποδράσεις μετά τον Δεκαπενταύγουστο [εικόνες]",
+      "normalized_title": "ΣΤΑ ΓΡΑΦΙΚΑ ΨΑΡΟΧΩΡΙΑ ΤΟΥ ΣΑΡΩΝΙΚΟΥ ΓΙΑ ΤΙΣ ΑΠΟΔΡΑΣΕΙΣ ΜΕΤΑ ΤΟΝ ΔΕΚΑΠΕΝΤΑΥΓΟΥΣΤΟ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1449832/panigyrismoi-mitsotaki-gia-tin-proori-apopliromi-toy-hreoys-tora-spaei-i-alysida-eythynon/",
-        "https://www.efsyn.gr/ellada/1449830/halkidiki-xilothikan-100-rezerve-ompreles-kai-xaplostres-apo-paralia-eikones/"
+        "https://www.efsyn.gr/nisides/1449848/sta-grafika-psarohoria-toy-saronikoy-gia-tis-apodraseis-meta-ton-dekapentaygoysto-eikones/",
+        "https://www.efsyn.gr/ellada/1449855/elas-gia-gianni-tzoysta-i-apoleia-toy-afinei-dysanapliroto-keno-stoys-anthropoys-poy-ton-gnorisan/",
+        "https://www.efsyn.gr/ellada/1449856/salamina-ameleia-deihnoyn-ta-prota-stoiheia-gia-ti-fotia-sta-peristeria-endeixeis-emprismoy-sta-selinia/"
       ],
-      "seen_at_utc": "2026-08-18T10:51:28.415095+00:00"
+      "seen_at_utc": "2026-08-18T11:17:07.264941+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/greece/pyrkagia-se-dasiki-ektasi-ston-komito-karystou-epixeiroun-pente-enaeria/",
-      "title": "Πυρκαγιά σε δασική έκταση στον Κόμιτο Καρύστου – Επιχειρούν πέντε εναέρια",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟΝ ΚΟΜΙΤΟ ΚΑΡΥΣΤΟΥ – ΕΠΙΧΕΙΡΟΥΝ ΠΕΝΤΕ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/08/18/economy/diethnis-oikonomia/kyvernoasfaleia-krisimes-ypodomes-ta-pagota-ta-lampakia-ton-xristougennon-kai-oi-tsixles-symfona-me-tin-ee/",
+      "title": "Παγωτά, λαμπάκια Χριστουγέννων και τσίχλες - Η κυβερνοασφάλεια το βασικό τους κοινό",
+      "normalized_title": "ΠΑΓΩΤΑ, ΛΑΜΠΑΚΙΑ ΧΡΙΣΤΟΥΓΕΝΝΩΝ ΚΑΙ ΤΣΙΧΛΕΣ - Η ΚΥΒΕΡΝΟΑΣΦΑΛΕΙΑ ΤΟ ΒΑΣΙΚΟ ΤΟΥΣ ΚΟΙΝΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/greece/pyrkagia-se-dasiki-ektasi-ston-komito-karystou-epixeiroun-pente-enaeria/",
-        "https://www.in.gr/2026/08/18/plus/medianews/anti-stress-erxetai-ayto-to-savvato-me-ta-nea/",
-        "https://www.in.gr/2026/08/18/in-science/technology/symfonia-tou-xoligount-me-tin-kineziki-bytedance-gia-tin-prostasia-tou-copyright-apo-tin-ai/",
-        "https://www.in.gr/2026/08/18/sports/basketball/i-entyposiaki-fasi-tou-fournie-me-ton-gouempaniama-stin-proponisi-tis-gallias-vid/",
-        "https://www.in.gr/2026/08/18/greece/ptosi-tis-thermokrasias-kai-vroxes-mexri-tin-pempti-erxetai-kaysonas-apo-savvatokyriako/",
-        "https://www.in.gr/2026/08/18/world/new-york-times-netaniaxou-o-pio-katastrofikos-prothypourgos-ayti-einai-i-klironomia-tou/"
+        "https://www.in.gr/2026/08/18/economy/diethnis-oikonomia/kyvernoasfaleia-krisimes-ypodomes-ta-pagota-ta-lampakia-ton-xristougennon-kai-oi-tsixles-symfona-me-tin-ee/",
+        "https://www.in.gr/2026/08/18/sports/football/konstantelias-to-neo-45ari-tis-ntortmount-pic/",
+        "https://www.in.gr/2026/08/18/life/music/apantisi-sti-dolofonia-tou-toupak-to-1996-arxigos-symmorias-pire-ekdikisi-gia-ton-ksylodarmo-tou-anipsiou-tou/",
+        "https://www.in.gr/2026/08/18/plus/medianews/harpers-bazaar-greece-to-teyxos-septemvriou-kykloforei-ayti-tin-kyriaki-me-to-vima/",
+        "https://www.in.gr/2026/08/18/greece/apeleytherothike-i-paralia-tis-gerakinis-apo-tis-rezerve-ompreles-kai-ksaplostres/"
       ],
-      "seen_at_utc": "2026-08-18T10:51:28.415067+00:00"
+      "seen_at_utc": "2026-08-18T11:17:07.264893+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T10:51:28.415191+00:00"
+  "updated_at_utc": "2026-08-18T11:17:07.265046+00:00"
 }
