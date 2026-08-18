@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564407107/i-oykrania-xemenei-apo-to-pio-perizitito-oplo-ston-kosmo/",
-      "title": "Η Ουκρανία ξεμένει από το πιο περιζήτητο όπλο στον κόσμο",
-      "normalized_title": "Η ΟΥΚΡΑΝΙΑ ΞΕΜΕΝΕΙ ΑΠΟ ΤΟ ΠΙΟ ΠΕΡΙΖΗΤΗΤΟ ΟΠΛΟ ΣΤΟΝ ΚΟΣΜΟ",
+      "url": "https://www.kathimerini.gr/economy/local/564406879/46-95-ekat-epivates-sta-aerodromia-sto-eptamino/",
+      "title": "46,95 εκατ. επιβάτες στα αεροδρόμια στο επτάμηνο",
+      "normalized_title": "46,95 ΕΚΑΤ. ΕΠΙΒΑΤΕΣ ΣΤΑ ΑΕΡΟΔΡΟΜΙΑ ΣΤΟ ΕΠΤΑΜΗΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564407107/i-oykrania-xemenei-apo-to-pio-perizitito-oplo-ston-kosmo/",
-        "https://www.kathimerini.gr/world/564407119/thanatos-cheinten-panetier-i-klisi-sto-911-kai-to-farmako-poy-vrethike-sto-diamerisma/",
-        "https://www.kathimerini.gr/society/564407110/kriti-sto-nosokomeio-7chronos-poy-dechtike-epithesi-apo-skylo/",
-        "https://www.kathimerini.gr/world/564406567/pos-diadothike-pseydis-eidisi-gia-ta-pyrinika-toy-iran/"
+        "https://www.kathimerini.gr/economy/local/564406879/46-95-ekat-epivates-sta-aerodromia-sto-eptamino/",
+        "https://www.kathimerini.gr/politics/parliament/564402022/echoyme-ontos-polloys-voyleytes/",
+        "https://www.kathimerini.gr/economy/international/564406954/allagi-stasis-apo-ti-germaniki-kyvernisi-gia-tin-commerzbank/"
       ],
-      "seen_at_utc": "2026-08-18T06:29:58.158191+00:00"
+      "seen_at_utc": "2026-08-18T06:51:19.719680+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1261,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866152/andras-edopistike-nekros-stin-auli-tou-spitiou-tou-stin-ahaia-ferei-trauma-apo-kunigetiko-oplo/?utm_source=rss",
-      "title": "Άνδρας εντοπίστηκε νεκρός στην αυλή του σπιτιού του στην Αχαΐα, φέρει τραύμα από κυνηγετικό όπλο",
-      "normalized_title": "ΑΝΔΡΑΣ ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΟΣ ΣΤΗΝ ΑΥΛΗ ΤΟΥ ΣΠΙΤΙΟΥ ΤΟΥ ΣΤΗΝ ΑΧΑΙΑ, ΦΕΡΕΙ ΤΡΑΥΜΑ ΑΠΟ ΚΥΝΗΓΕΤΙΚΟ ΟΠΛΟ",
+      "url": "https://www.protothema.gr/greece/article/1866170/ilikiomeni-me-mercedes-pigaine-anapoda-stin-athinon-korinthou-sto-upsos-tis-magoulas-deite-video/?utm_source=rss",
+      "title": "Ηλικιωμένη με Mercedes πήγαινε ανάποδα στην Αθηνών - Κορίνθου στο ύψος της Μαγούλας, δείτε βίντεο",
+      "normalized_title": "ΗΛΙΚΙΩΜΕΝΗ ΜΕ MERCEDES ΠΗΓΑΙΝΕ ΑΝΑΠΟΔΑ ΣΤΗΝ ΑΘΗΝΩΝ - ΚΟΡΙΝΘΟΥ ΣΤΟ ΥΨΟΣ ΤΗΣ ΜΑΓΟΥΛΑΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866152/andras-edopistike-nekros-stin-auli-tou-spitiou-tou-stin-ahaia-ferei-trauma-apo-kunigetiko-oplo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866149/fotia-ston-aspropurgo-koda-stis-grammes-tou-proastiakou-diakopikan-ta-dromologia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866170/ilikiomeni-me-mercedes-pigaine-anapoda-stin-athinon-korinthou-sto-upsos-tis-magoulas-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866160/kriti-sto-nosokomeio-7hronos-pou-dehtike-epithesi-apo-skulo-sto-irakleio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T06:29:58.158345+00:00"
+      "seen_at_utc": "2026-08-18T06:51:19.719808+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1449619/seismos-stin-kolomvia-i-sakira-tha-hrimatodotisei-tin-anoikodomisi-sholeion-tosoi-anthropoi-tha-xehastoyn/",
-      "title": "Σεισμός στην Κολομβία: Η Σακίρα θα χρηματοδοτήσει την ανοικοδόμηση σχολείων – «Τόσοι άνθρωποι θα ξεχαστούν»",
-      "normalized_title": "ΣΕΙΣΜΟΣ ΣΤΗΝ ΚΟΛΟΜΒΙΑ: Η ΣΑΚΙΡΑ ΘΑ ΧΡΗΜΑΤΟΔΟΤΗΣΕΙ ΤΗΝ ΑΝΟΙΚΟΔΟΜΗΣΗ ΣΧΟΛΕΙΩΝ – «ΤΟΣΟΙ ΑΝΘΡΩΠΟΙ ΘΑ ΞΕΧΑΣΤΟΥΝ»",
+      "url": "https://www.efsyn.gr/kosmos/1449630/filippines-mathitis-anoixe-pyr-mesa-se-sholeio-kai-stin-syneheia-aytoktonise-enas-nekros-dyo-traymaties/",
+      "title": "Φιλιππίνες: Μαθητής άνοιξε πυρ μέσα σε σχολείο και στην συνέχεια αυτοκτόνησε – Ενας νεκρός, δύο τραυματίες",
+      "normalized_title": "ΦΙΛΙΠΠΙΝΕΣ: ΜΑΘΗΤΗΣ ΑΝΟΙΞΕ ΠΥΡ ΜΕΣΑ ΣΕ ΣΧΟΛΕΙΟ ΚΑΙ ΣΤΗΝ ΣΥΝΕΧΕΙΑ ΑΥΤΟΚΤΟΝΗΣΕ – ΕΝΑΣ ΝΕΚΡΟΣ, ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1449619/seismos-stin-kolomvia-i-sakira-tha-hrimatodotisei-tin-anoikodomisi-sholeion-tosoi-anthropoi-tha-xehastoyn/",
-        "https://www.efsyn.gr/ellada/1449620/fotia-ston-aspropyrgo-diakopes-kai-kathysteriseis-ston-proastiako-i-anakoinosi-tis-hellenic-train/"
+        "https://www.efsyn.gr/kosmos/1449630/filippines-mathitis-anoixe-pyr-mesa-se-sholeio-kai-stin-syneheia-aytoktonise-enas-nekros-dyo-traymaties/"
       ],
-      "seen_at_utc": "2026-08-18T06:29:58.158303+00:00"
+      "seen_at_utc": "2026-08-18T06:51:19.719780+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/greece/sifnos-to-kyriarxo-senario-gia-tin-ptosi-tou-elikopterou-to-gamilio-taksidi-pou-katelikse-se-tragodia/",
-      "title": "Το γαμήλιο ταξίδι που κατέληξε σε τραγωδία - Το κυρίαρχο σενάριο για την πτώση του ελικοπτέρου στη Σίφνο",
-      "normalized_title": "ΤΟ ΓΑΜΗΛΙΟ ΤΑΞΙΔΙ ΠΟΥ ΚΑΤΕΛΗΞΕ ΣΕ ΤΡΑΓΩΔΙΑ - ΤΟ ΚΥΡΙΑΡΧΟ ΣΕΝΑΡΙΟ ΓΙΑ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ",
+      "url": "https://www.in.gr/2026/08/18/sports/football/synexeia-sto-superbet-kypello-ellados-me-dyo-agones-tin-triti-18-8/",
+      "title": "Συνέχεια στο Superbet Κύπελλο Ελλάδος με δύο αγώνες την Τρίτη (18/8)",
+      "normalized_title": "ΣΥΝΕΧΕΙΑ ΣΤΟ SUPERBET ΚΥΠΕΛΛΟ ΕΛΛΑΔΟΣ ΜΕ ΔΥΟ ΑΓΩΝΕΣ ΤΗΝ ΤΡΙΤΗ (18/8)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/greece/sifnos-to-kyriarxo-senario-gia-tin-ptosi-tou-elikopterou-to-gamilio-taksidi-pou-katelikse-se-tragodia/"
+        "https://www.in.gr/2026/08/18/sports/football/synexeia-sto-superbet-kypello-ellados-me-dyo-agones-tin-triti-18-8/",
+        "https://www.in.gr/2026/08/18/greece/agios-dimitrios-ypirkse-allo-atomo-sto-ypiresiako-oxima-pou-vrethike-nekros-o-astynomikos-ti-eksetazetai/"
       ],
-      "seen_at_utc": "2026-08-18T06:29:58.158254+00:00"
+      "seen_at_utc": "2026-08-18T06:51:19.719725+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T06:29:58.158423+00:00"
+  "updated_at_utc": "2026-08-18T06:51:19.719880+00:00"
 }
