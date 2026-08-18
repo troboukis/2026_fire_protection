@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564407617/i-anakoinosi-tis-el-as-gia-tin-ptosi-toy-elikopteroy-sti-sifno/",
-      "title": "Η ανακοίνωση της ΕΛ.ΑΣ. για την πτώση του ελικοπτέρου στη Σίφνο",
-      "normalized_title": "Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΕΛ.ΑΣ. ΓΙΑ ΤΗΝ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ",
+      "url": "https://www.kathimerini.gr/society/564407629/zakynthos-exi-traymaties-apo-proskroysi-toyristikoy-skafoys-se-tsimentolithoys-synelifthi-o-kyvernitis/",
+      "title": "Ζάκυνθος: Εξι τραυματίες από πρόσκρουση τουριστικού σκάφους σε τσιμεντόλιθους, συνελήφθη ο κυβερνήτης",
+      "normalized_title": "ΖΑΚΥΝΘΟΣ: ΕΞΙ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΠΡΟΣΚΡΟΥΣΗ ΤΟΥΡΙΣΤΙΚΟΥ ΣΚΑΦΟΥΣ ΣΕ ΤΣΙΜΕΝΤΟΛΙΘΟΥΣ, ΣΥΝΕΛΗΦΘΗ Ο ΚΥΒΕΡΝΗΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564407617/i-anakoinosi-tis-el-as-gia-tin-ptosi-toy-elikopteroy-sti-sifno/",
-        "https://www.kathimerini.gr/society/564407557/epidimia-paravaseon-stoys-adeioys-dromoys-tis-paraliakis-vinteo/",
-        "https://www.kathimerini.gr/society/564407590/fotia-se-aytokinito-stin-athinon-lamias-vinteo/",
-        "https://www.kathimerini.gr/society/564407602/fotia-stin-kerkyra-minyma-112-gia-etoimotita-sti-machi-efta-enaeria/",
-        "https://www.kathimerini.gr/world/564407593/stena-toy-ormoyz-nekros-naytikos-meta-apo-epithesi-sto-ellinoktito-minoan-dignity/"
+        "https://www.kathimerini.gr/society/564407629/zakynthos-exi-traymaties-apo-proskroysi-toyristikoy-skafoys-se-tsimentolithoys-synelifthi-o-kyvernitis/",
+        "https://www.kathimerini.gr/society/564407674/politiki-aeroporia-gia-bell-206-elegchoi-sto-oyraio-strofeio-prin-apo-kathe-ptisi/",
+        "https://www.kathimerini.gr/society/564407614/mesistia-i-simaia-stin-akadimia-athinon-to-keno-poy-afinei-o-konstantinos-tsoykalas-einai-dysanapliroto/"
       ],
-      "seen_at_utc": "2026-08-18T13:52:33.533245+00:00"
+      "seen_at_utc": "2026-08-18T14:18:06.000965+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,46 +1261,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866372/tautopoiithike-i-82hroni-odigos-tis-mercedes-pou-kinoudan-anapoda-stin-athinon-korinthou-eihe-lixei-i-adeia-odigisis-tis/?utm_source=rss",
-      "title": "Ταυτοποιήθηκε η 82χρονη οδηγός της Mercedes που κινούνταν ανάποδα στην Αθηνών-Κορίνθου, είχε λήξει το δίπλωμά της",
-      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ Η 82ΧΡΟΝΗ ΟΔΗΓΟΣ ΤΗΣ MERCEDES ΠΟΥ ΚΙΝΟΥΝΤΑΝ ΑΝΑΠΟΔΑ ΣΤΗΝ ΑΘΗΝΩΝ-ΚΟΡΙΝΘΟΥ, ΕΙΧΕ ΛΗΞΕΙ ΤΟ ΔΙΠΛΩΜΑ ΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1866390/mesistia-i-simaia-stin-akadimia-athinon-gia-treis-meres-to-keno-pou-afinei-o-konstadinos-tsoukalas-einai-dusanapliroto/?utm_source=rss",
+      "title": "Μεσίστια η σημαία στην Ακαδημία Αθηνών για τρεις μέρες: «Το κενό που αφήνει ο Κωνσταντίνος Τσουκαλάς είναι δυσαναπλήρωτο»",
+      "normalized_title": "ΜΕΣΙΣΤΙΑ Η ΣΗΜΑΙΑ ΣΤΗΝ ΑΚΑΔΗΜΙΑ ΑΘΗΝΩΝ ΓΙΑ ΤΡΕΙΣ ΜΕΡΕΣ: «ΤΟ ΚΕΝΟ ΠΟΥ ΑΦΗΝΕΙ Ο ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΣΟΥΚΑΛΑΣ ΕΙΝΑΙ ΔΥΣΑΝΑΠΛΗΡΩΤΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866372/tautopoiithike-i-82hroni-odigos-tis-mercedes-pou-kinoudan-anapoda-stin-athinon-korinthou-eihe-lixei-i-adeia-odigisis-tis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866371/diaskedaze-purovolodas-tis-labes-tis-plateias-sto-podi-ena-olokliro-horio-tis-fthiotidas-ta-mesanuhta/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866367/fotia-tora-sti-thiva-sikothikan-3-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866363/sunelifthi-26hroni-stin-athina-pou-anazitoudan-apo-tin-iderpol-gia-narkotika/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866362/neo-video-apo-ti-sudrivi-tou-elikopterou-sti-sifno-pou-strefodai-oi-ereunes-elas-kai-eodasaam/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866390/mesistia-i-simaia-stin-akadimia-athinon-gia-treis-meres-to-keno-pou-afinei-o-konstadinos-tsoukalas-einai-dusanapliroto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866379/autokinito-labadiase-en-kinisei-stin-ethniki-odo-athinon-lamias-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T13:52:33.533375+00:00"
+      "seen_at_utc": "2026-08-18T14:18:06.001141+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1449964/o-poy-kroyei-ton-kodona-kindynoy-gia-ton-empola-anexelegkti-i-epidimia-ypsilos-o-kindynos-diethnoys-exaplosis/",
-      "title": "Ο ΠΟΥ κρούει τον κώδωνα κινδύνου για τον Έμπολα: Ανεξέλεγκτη η επιδημία, υψηλός ο κίνδυνος διεθνούς εξάπλωσης",
-      "normalized_title": "Ο ΠΟΥ ΚΡΟΥΕΙ ΤΟΝ ΚΩΔΩΝΑ ΚΙΝΔΥΝΟΥ ΓΙΑ ΤΟΝ ΕΜΠΟΛΑ: ΑΝΕΞΕΛΕΓΚΤΗ Η ΕΠΙΔΗΜΙΑ, ΥΨΗΛΟΣ Ο ΚΙΝΔΥΝΟΣ ΔΙΕΘΝΟΥΣ ΕΞΑΠΛΩΣΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1449978/sifnos-neo-vinteo-ntokoymento-apo-tin-tragiki-ptosi-toy-elikopteroy-i-apoleia-eleghoy-kai-i-voytia-sto-edafos/",
+      "title": "Σίφνος: Νέο βίντεο-ντοκουμέντο από την τραγική πτώση του ελικοπτέρου – Η απώλεια ελέγχου και η βουτιά στο έδαφος",
+      "normalized_title": "ΣΙΦΝΟΣ: ΝΕΟ ΒΙΝΤΕΟ-ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΗΝ ΤΡΑΓΙΚΗ ΠΤΩΣΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ – Η ΑΠΩΛΕΙΑ ΕΛΕΓΧΟΥ ΚΑΙ Η ΒΟΥΤΙΑ ΣΤΟ ΕΔΑΦΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1449964/o-poy-kroyei-ton-kodona-kindynoy-gia-ton-empola-anexelegkti-i-epidimia-ypsilos-o-kindynos-diethnoys-exaplosis/",
-        "https://www.efsyn.gr/ellada/1449957/elikoptera-epeigoysa-odigia-tis-politikis-aeroporias-gia-eleghoys-meta-tin-ptosi-sti-sifno/",
-        "https://www.efsyn.gr/ellada/1449963/vrethike-i-48hroni-odigos-poy-ekane-anastrofi-me-leoforeio-stin-athinon-soynioy/",
-        "https://www.efsyn.gr/politiki/1449949/pasok-gia-konstantino-tsoykala-ton-apohairetoyme-me-sevasmo-kai-eygnomosyni/",
-        "https://www.efsyn.gr/ellada/1449953/sifnos-ti-anaferei-i-astynomia-gia-tin-ptosi-toy-elikopteroy-den-prokyptei-emploki-allon-atomon/",
-        "https://www.efsyn.gr/ellada/1449946/thodoris-kolydas-erhontai-nea-40aria-se-liges-meres-xekinoyn-kai-pali-ypsiles-thermokrasies/"
+        "https://www.efsyn.gr/ellada/1449978/sifnos-neo-vinteo-ntokoymento-apo-tin-tragiki-ptosi-toy-elikopteroy-i-apoleia-eleghoy-kai-i-voytia-sto-edafos/",
+        "https://www.efsyn.gr/athlitismos/1449980/to-sygkinitiko-antio-toy-taison-se-konstantelia-o-kosmos-einai-dikos-soy-kai-prepei-na-se-gnorisei-mage/",
+        "https://www.efsyn.gr/ellada/1449974/i-akadimia-athinon-gia-ton-thanato-toy-konstantinoy-tsoykala-spoydaios-stohastis-simainon-koinonikos-filosofos/",
+        "https://www.efsyn.gr/tehnes/1449803/erga-dionysioy-layragka-se-cd/",
+        "https://www.efsyn.gr/ellada/1449973/pyrino-metopo-sti-thiva-sti-mahi-me-tis-floges-tria-enaeria-mesa/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-v-papavasileioy-18-08-2026/"
       ],
-      "seen_at_utc": "2026-08-18T13:52:33.533342+00:00"
+      "seen_at_utc": "2026-08-18T14:18:06.001067+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/greece/fotia-sti-thiva-sikothikan-2-aeroskafi-kai-1-elikoptero/",
-      "title": "Φωτιά στη Θήβα – Σηκώθηκαν 2 αεροσκάφη και 1 ελικόπτερο",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΘΗΒΑ – ΣΗΚΩΘΗΚΑΝ 2 ΑΕΡΟΣΚΑΦΗ ΚΑΙ 1 ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.in.gr/2026/08/18/world/pou-i-epidimia-empola-paramenei-anekselegkti-poly-ypsilo-epipedo-kindynou-gia-kongko-kai-geitonikes-xores/",
+      "title": "ΠΟΥ: Η επιδημία Έμπολα «παραμένει ανεξέλεγκτη» – Πολύ υψηλό επίπεδο κινδύνου για Κονγκό και γειτονικές χώρες",
+      "normalized_title": "ΠΟΥ: Η ΕΠΙΔΗΜΙΑ ΕΜΠΟΛΑ «ΠΑΡΑΜΕΝΕΙ ΑΝΕΞΕΛΕΓΚΤΗ» – ΠΟΛΥ ΥΨΗΛΟ ΕΠΙΠΕΔΟ ΚΙΝΔΥΝΟΥ ΓΙΑ ΚΟΝΓΚΟ ΚΑΙ ΓΕΙΤΟΝΙΚΕΣ ΧΩΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/greece/fotia-sti-thiva-sikothikan-2-aeroskafi-kai-1-elikoptero/",
-        "https://www.in.gr/2026/08/18/sports/football/to-sygkinitiko-antio-tou-taison-ston-konstantelia-o-kosmos-einai-dikos-sou-mage-peta-psila-pic/",
-        "https://www.in.gr/2026/08/18/world/ispania-nees-seismikes-doniseis-sti-granada-toulaxiston-treis-traymaties-kai-zimies-se-ktiria/",
-        "https://www.in.gr/2026/08/18/greece/sifnos-syndromi-kai-apo-to-elliniko-fbi-stis-ereynes-gia-tin-ptosi-tou-elikopterou-i-anakoinosi-tis-el-as/",
-        "https://www.in.gr/2026/08/18/go-fun/fizz/tzon-stamos-o-omogenis-star-kai-o-8xronos-gios-tou-grafoun-vivlio-as-ferei-elpida/",
-        "https://www.in.gr/2026/08/18/in-science/space/anakalypsi-stathmos-apo-to-james-webb-treis-ypermegetheis-mayres-trypes-se-xoro-thanatou-sta-vathi-tou-sympantos/"
+        "https://www.in.gr/2026/08/18/world/pou-i-epidimia-empola-paramenei-anekselegkti-poly-ypsilo-epipedo-kindynou-gia-kongko-kai-geitonikes-xores/",
+        "https://www.in.gr/2026/08/18/in-science/episthmes/sarkofago-fyto-apo-ta-vouna-tis-kinas-dikaionei-ton-darvino/",
+        "https://www.in.gr/2026/08/18/plus/medianews/iello-mesa-sto-kalokairi-tis-katerinas-kainourgiou/",
+        "https://www.in.gr/2026/08/18/in-science/space/to-nekro-astro-pou-apokalyptei-to-telos-tou-iliou-pos-tha-dialythei-ston-galaksia-se-5-dis-xronia/",
+        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/nea-aristera-o-konstantinos-tsoukalas-synevale-sti-syzitisi-gia-ti-metapoliteysi-stin-ellada/",
+        "https://www.in.gr/2026/08/18/sports/football/panathinaikos-ti-paizei-me-ton-azentin-ounai-kai-ti-fimologia/",
+        "https://www.in.gr/2026/08/18/sports/football/paok-anevazoun-strofes-ali-kai-ntespontof/",
+        "https://www.in.gr/2026/08/18/greece/fotia-stin-ethniki-odo-sto-ypsos-tis-tanagras-ksekinise-apo-flegomeno-ix/"
       ],
-      "seen_at_utc": "2026-08-18T13:52:33.533303+00:00"
+      "seen_at_utc": "2026-08-18T14:18:06.001026+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T13:52:33.533487+00:00"
+  "updated_at_utc": "2026-08-18T14:18:06.001202+00:00"
 }
