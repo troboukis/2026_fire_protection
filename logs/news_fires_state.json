@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564405865/elas-pantoy/",
-      "title": "ΕΛΑΣ παντού",
-      "normalized_title": "ΕΛΑΣ ΠΑΝΤΟΥ",
+      "url": "https://www.kathimerini.gr/istoria/564402289/pos-o-kaningk-enorchistrose-to-nayarino/",
+      "title": "Πώς ο Κάνινγκ ενορχήστρωσε το Ναυαρίνο",
+      "normalized_title": "ΠΩΣ Ο ΚΑΝΙΝΓΚ ΕΝΟΡΧΗΣΤΡΩΣΕ ΤΟ ΝΑΥΑΡΙΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564405865/elas-pantoy/",
-        "https://www.kathimerini.gr/world/564408022/klimakosi-italias-kata-germanias-sto-metanasteytiko/"
+        "https://www.kathimerini.gr/istoria/564402289/pos-o-kaningk-enorchistrose-to-nayarino/",
+        "https://www.kathimerini.gr/culture/564402625/i-odysseia-ton-diaskeyon/",
+        "https://www.kathimerini.gr/culture/tv/564407695/fonoi-sto-kampanario-o-leyteris-soypiadis-mpainei-sti-seira-o-neos-symmachos-toy-sofianoy/"
       ],
-      "seen_at_utc": "2026-08-18T17:17:08.795571+00:00"
+      "seen_at_utc": "2026-08-18T17:30:00.063986+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,31 +1270,23 @@
       "seen_at_utc": "2026-08-18T17:17:08.795687+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450084/pyrkagies-aytopsia-stis-pligeises-periohes-pano-apo-150-ta-kokkina-ktiria-mesa-se-mia-evdomada/",
-      "title": "Πυρκαγιές: Αυτοψία στις πληγείσες περιοχές – Πάνω από 150 τα «κόκκινα» κτίρια μέσα σε μια εβδομάδα",
-      "normalized_title": "ΠΥΡΚΑΓΙΕΣ: ΑΥΤΟΨΙΑ ΣΤΙΣ ΠΛΗΓΕΙΣΕΣ ΠΕΡΙΟΧΕΣ – ΠΑΝΩ ΑΠΟ 150 ΤΑ «ΚΟΚΚΙΝΑ» ΚΤΙΡΙΑ ΜΕΣΑ ΣΕ ΜΙΑ ΕΒΔΟΜΑΔΑ",
+      "url": "https://www.efsyn.gr/kosmos/1450095/kina-o-proedros-si-stirizei-to-dikaioma-ton-horon-tis-latinikis-amerikis-gia-anexartisia/",
+      "title": "Κίνα: Ο πρόεδρος Σι στηρίζει το δικαίωμα των χωρών της Λατινικής Αμερικής για ανεξαρτησία",
+      "normalized_title": "ΚΙΝΑ: Ο ΠΡΟΕΔΡΟΣ ΣΙ ΣΤΗΡΙΖΕΙ ΤΟ ΔΙΚΑΙΩΜΑ ΤΩΝ ΧΩΡΩΝ ΤΗΣ ΛΑΤΙΝΙΚΗΣ ΑΜΕΡΙΚΗΣ ΓΙΑ ΑΝΕΞΑΡΤΗΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450084/pyrkagies-aytopsia-stis-pligeises-periohes-pano-apo-150-ta-kokkina-ktiria-mesa-se-mia-evdomada/",
-        "https://www.efsyn.gr/ellada/1450079/fthiotida-synelifthi-andras-poy-pyrovoloyse-toys-lamptires-toy-dimosioy-fotismoy/",
-        "https://www.efsyn.gr/tehnes/1450085/vraveia-mtv-i-vasilissa-epistrefei-i-madonna-xeperase-tin-taylor-swift-se-ypopsifiotites/",
-        "https://www.efsyn.gr/ellada/1450074/dypa-synelifthi-politis-poy-apeilise-ergazomenoys-stin-kifisia-katatethike-minysi-enantion-toy/",
-        "https://www.efsyn.gr/tehnes/1449779/akropoli-poia-einai-i-neosystati-idiotiki-etaireia-poy-analamvanei-vasikes-ypiresies-me-to-azimioto/"
+        "https://www.efsyn.gr/kosmos/1450095/kina-o-proedros-si-stirizei-to-dikaioma-ton-horon-tis-latinikis-amerikis-gia-anexartisia/"
       ],
-      "seen_at_utc": "2026-08-18T17:17:08.795659+00:00"
+      "seen_at_utc": "2026-08-18T17:30:00.064091+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/sports/football/eskase-i-vomva-rodri-o-mvp-tou-mountial-stin-mpartselona-mexri-to-2030-pic-vid/",
-      "title": "‘Εσκασε η… βόμβα Ρόδρι: Ο MVP του Μουντιάλ στην Μπαρτσελόνα μέχρι το 2030 (pic & vid)",
-      "normalized_title": "‘ΕΣΚΑΣΕ Η… ΒΟΜΒΑ ΡΟΔΡΙ: Ο MVP ΤΟΥ ΜΟΥΝΤΙΑΛ ΣΤΗΝ ΜΠΑΡΤΣΕΛΟΝΑ ΜΕΧΡΙ ΤΟ 2030 (PIC & VID)",
+      "url": "https://www.in.gr/2026/08/18/economy/i-apasxolisi-ton-neon-stin-eyropi-ligoteres-eykairies-perissoteri-apaisiodoksia/",
+      "title": "Η απασχόληση των νέων στην Ευρώπη: Λιγότερες ευκαιρίες – Περισσότερη απαισιοδοξία",
+      "normalized_title": "Η ΑΠΑΣΧΟΛΗΣΗ ΤΩΝ ΝΕΩΝ ΣΤΗΝ ΕΥΡΩΠΗ: ΛΙΓΟΤΕΡΕΣ ΕΥΚΑΙΡΙΕΣ – ΠΕΡΙΣΣΟΤΕΡΗ ΑΠΑΙΣΙΟΔΟΞΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/sports/football/eskase-i-vomva-rodri-o-mvp-tou-mountial-stin-mpartselona-mexri-to-2030-pic-vid/",
-        "https://www.in.gr/2026/08/18/politics/politiki-grammateia/katrinis-xoris-ousiastiki-kyvernitiki-apantisi-i-amfisvitisi-ton-kyriarxikon-mas-dikaiomaton-apo-tin-tourkia/",
-        "https://www.in.gr/2026/08/18/world/se-apognosi-to-kievo-i-pagkosmia-elleipsi-patriot-afinei-anyperaspisti-tin-oukrania-apenanti-sti-rosia/",
-        "https://www.in.gr/2026/08/18/economy/i-apasxolisi-ton-neon-stin-eyropi-ligoteres-eykairies-perissoteri-apaisiodoksia/",
-        "https://www.in.gr/2026/08/18/in-science/ipa-pos-syndeetai-i-ayksisi-ton-troxaion-dystyximaton-me-tin-kykloforia-neon-mousikon-almpoum/"
+        "https://www.in.gr/2026/08/18/economy/i-apasxolisi-ton-neon-stin-eyropi-ligoteres-eykairies-perissoteri-apaisiodoksia/"
       ],
-      "seen_at_utc": "2026-08-18T17:17:08.795624+00:00"
+      "seen_at_utc": "2026-08-18T17:30:00.064043+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T17:17:08.795760+00:00"
+  "updated_at_utc": "2026-08-18T17:30:00.064167+00:00"
 }
