@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564408196/pano-apo-5-000-keraynoi-se-kentriki-ellada-kai-peloponniso-chartis/",
-      "title": "Πάνω από 5.000 κεραυνοί σε κεντρική Ελλάδα και Πελοπόννησο (χάρτης)",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 5.000 ΚΕΡΑΥΝΟΙ ΣΕ ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ ΚΑΙ ΠΕΛΟΠΟΝΝΗΣΟ (ΧΑΡΤΗΣ)",
+      "url": "https://www.kathimerini.gr/culture/books/564406708/kyttara-politismoy-stis-kyklades/",
+      "title": "Κύτταρα πολιτισμού στις Κυκλάδες",
+      "normalized_title": "ΚΥΤΤΑΡΑ ΠΟΛΙΤΙΣΜΟΥ ΣΤΙΣ ΚΥΚΛΑΔΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564408196/pano-apo-5-000-keraynoi-se-kentriki-ellada-kai-peloponniso-chartis/"
+        "https://www.kathimerini.gr/culture/books/564406708/kyttara-politismoy-stis-kyklades/",
+        "https://www.kathimerini.gr/society/564408202/dypa-synelifthi-politis-poy-apeilise-ergazomenoys-stin-kifisia/"
       ],
-      "seen_at_utc": "2026-08-18T19:30:09.324636+00:00"
+      "seen_at_utc": "2026-08-18T19:51:21.766829+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1260,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866542/vuthistike-skafos-sto-plomari-lesvou-diasothikan-oi-pede-epivainodes/?utm_source=rss",
-      "title": "Βυθίστηκε σκάφος στο Πλωμάρι Λέσβου: Διασώθηκαν οι πέντε επιβαίνοντες",
-      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΣΤΟ ΠΛΩΜΑΡΙ ΛΕΣΒΟΥ: ΔΙΑΣΩΘΗΚΑΝ ΟΙ ΠΕΝΤΕ ΕΠΙΒΑΙΝΟΝΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1866552/duo-sullipseis-gia-purkagies-se-trikala-kai-karusto/?utm_source=rss",
+      "title": "Δύο συλλήψεις για πυρκαγιές σε Τρίκαλα και Κάρυστο",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ ΣΕ ΤΡΙΚΑΛΑ ΚΑΙ ΚΑΡΥΣΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866542/vuthistike-skafos-sto-plomari-lesvou-diasothikan-oi-pede-epivainodes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866539/berdeutika-kai-vgika-sto-aditheto-reuma-ti-eipe-stous-astunomikous-i-82hroni-pou-odigouse-anapoda-stin-ethniki-odo-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866552/duo-sullipseis-gia-purkagies-se-trikala-kai-karusto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866548/adidimarhos-agriniou-akinitopoiise-apateones-ston-agio-konstadino-eihan-arpaxei-kosmimata-apo-ilikiomeno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T19:30:09.324741+00:00"
+      "seen_at_utc": "2026-08-18T19:51:21.766963+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1450160/to-neo-nayagio-metaxy-ipa-iran-kai-oi-apeiles-toy-tramp-sto-oman-eferan-alma-stis-times-toy-petrelaioy/",
-      "title": "Το νέο «ναυάγιο» μεταξύ ΗΠΑ – Ιράν και οι απειλές του Τραμπ στο Ομάν έφεραν άλμα στις τιμές του πετρελαίου",
-      "normalized_title": "ΤΟ ΝΕΟ «ΝΑΥΑΓΙΟ» ΜΕΤΑΞΥ ΗΠΑ – ΙΡΑΝ ΚΑΙ ΟΙ ΑΠΕΙΛΕΣ ΤΟΥ ΤΡΑΜΠ ΣΤΟ ΟΜΑΝ ΕΦΕΡΑΝ ΑΛΜΑ ΣΤΙΣ ΤΙΜΕΣ ΤΟΥ ΠΕΤΡΕΛΑΙΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1450170/symfonisan-mpartselona-me-rodri-oloklirothike-i-pio-megali-metagrafi-toy-kalokairioy/",
+      "title": "Συμφώνησαν Μπαρτσελόνα με Ρόδρι, ολοκληρώθηκε η πιο μεγάλη μεταγραφή του καλοκαιριού",
+      "normalized_title": "ΣΥΜΦΩΝΗΣΑΝ ΜΠΑΡΤΣΕΛΟΝΑ ΜΕ ΡΟΔΡΙ, ΟΛΟΚΛΗΡΩΘΗΚΕ Η ΠΙΟ ΜΕΓΑΛΗ ΜΕΤΑΓΡΑΦΗ ΤΟΥ ΚΑΛΟΚΑΙΡΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1450160/to-neo-nayagio-metaxy-ipa-iran-kai-oi-apeiles-toy-tramp-sto-oman-eferan-alma-stis-times-toy-petrelaioy/"
+        "https://www.efsyn.gr/athlitismos/1450170/symfonisan-mpartselona-me-rodri-oloklirothike-i-pio-megali-metagrafi-toy-kalokairioy/"
       ],
-      "seen_at_utc": "2026-08-18T19:30:09.324699+00:00"
+      "seen_at_utc": "2026-08-18T19:51:21.766934+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/politics/epikairotita/dieykriniseis-gia-to-antinero-apo-to-ypen-krinetai-apo-ta-stoixeia-kai-ta-apotelesmata-tou/",
-      "title": "Διευκρινίσεις για το Antinero από το ΥΠΕΝ – «Κρίνεται από τα στοιχεία και τα αποτελέσματά του»",
-      "normalized_title": "ΔΙΕΥΚΡΙΝΙΣΕΙΣ ΓΙΑ ΤΟ ANTINERO ΑΠΟ ΤΟ ΥΠΕΝ – «ΚΡΙΝΕΤΑΙ ΑΠΟ ΤΑ ΣΤΟΙΧΕΙΑ ΚΑΙ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΟΥ»",
+      "url": "https://www.in.gr/2026/08/18/sports/football/champions-league/eykairies-me-giovits-gia-tin-aek-eixe-kai-dokari-o-servos-vids/",
+      "title": "Ευκαιρίες με Γιόβιτς για την ΑΕΚ – Είχε και δοκάρι ο Σέρβος (vids)",
+      "normalized_title": "ΕΥΚΑΙΡΙΕΣ ΜΕ ΓΙΟΒΙΤΣ ΓΙΑ ΤΗΝ ΑΕΚ – ΕΙΧΕ ΚΑΙ ΔΟΚΑΡΙ Ο ΣΕΡΒΟΣ (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/politics/epikairotita/dieykriniseis-gia-to-antinero-apo-to-ypen-krinetai-apo-ta-stoixeia-kai-ta-apotelesmata-tou/",
-        "https://www.in.gr/2026/08/18/sports/football/megali-anisyxia-gia-mousiala-katerreyse-deyteri-fora-se-diastima-ligon-imeron/",
-        "https://www.in.gr/2026/08/18/greece/sifnos-nees-eikones-apo-ta-syntrimmia-tou-moiraiou-elikopterou-se-ekseliksi-oi-ereynes-gia-ta-aitia-tis-tragodias/",
-        "https://www.in.gr/2026/08/18/stories/konstantinos-tsoukalas-i-istoriki-omilia-tou-stin-akadimia-athinon-anamesa-sto-oloi-mas-kai-to-kaneis/",
-        "https://www.in.gr/2026/08/18/world/oi-apeiles-tramp-kata-oman-ektokseysan-tis-times-petrelaiou-aragtsi-oi-ipa-mas-iketeyoun/",
-        "https://www.in.gr/2026/08/18/in-science/space/mageytikes-eikones-i-oliki-ekleipsi-iliou-tis-12is-aygoustou-opos-katagrafike-apo-to-diastima/",
-        "https://www.in.gr/2026/08/18/sports/on-field/sto-kolpo-gia-ton-osimen-kai-i-mantsester-giounaitent/"
+        "https://www.in.gr/2026/08/18/sports/football/champions-league/eykairies-me-giovits-gia-tin-aek-eixe-kai-dokari-o-servos-vids/"
       ],
-      "seen_at_utc": "2026-08-18T19:17:10.344723+00:00"
+      "seen_at_utc": "2026-08-18T19:51:21.766894+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T19:30:09.324816+00:00"
+  "updated_at_utc": "2026-08-18T19:51:21.767057+00:00"
 }
