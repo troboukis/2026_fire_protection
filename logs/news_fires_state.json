@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564406894/meso-trapezas-i-pliromi-enoikion-apo-tin-1i-oktovrioy/",
-      "title": "Μέσω τράπεζας η πληρωμή ενοικίων από την 1η Οκτωβρίου",
-      "normalized_title": "ΜΕΣΩ ΤΡΑΠΕΖΑΣ Η ΠΛΗΡΩΜΗ ΕΝΟΙΚΙΩΝ ΑΠΟ ΤΗΝ 1Η ΟΚΤΩΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/world/564406612/oi-apeiles-apo-tin-ektrofi-solomoy/",
+      "title": "Οι απειλές από την εκτροφή σολομού",
+      "normalized_title": "ΟΙ ΑΠΕΙΛΕΣ ΑΠΟ ΤΗΝ ΕΚΤΡΟΦΗ ΣΟΛΟΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564406894/meso-trapezas-i-pliromi-enoikion-apo-tin-1i-oktovrioy/",
-        "https://www.kathimerini.gr/society/564402115/vrika-ta-osta-toy-patera-moy-stin-alvania/"
+        "https://www.kathimerini.gr/world/564406612/oi-apeiles-apo-tin-ektrofi-solomoy/",
+        "https://www.kathimerini.gr/society/564407194/dytiki-acha-a-45chronos-entopistike-nekros-apo-pyrovolismo-me-kynigetiko-oplo/",
+        "https://www.kathimerini.gr/society/564407182/mytilini-asfali-ta-tyrokomika-proionta-poy-eiche-apagoreythei-i-diakinisi-toys-logo-afthodoys-pyretoy/"
       ],
-      "seen_at_utc": "2026-08-18T07:51:07.862097+00:00"
+      "seen_at_utc": "2026-08-18T08:17:23.197658+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866193/lesvos-eleutheri-xana-i-metafora-turokomikon-proiodon-ektos-nisiou-meta-tin-krisi-me-ton-afthodi-pureto/?utm_source=rss",
-      "title": "Λέσβος: Ελεύθερη ξανά η μεταφορά τυροκομικών προϊόντων εκτός νησιού μετά την κρίση με τον αφθώδη πυρετό",
-      "normalized_title": "ΛΕΣΒΟΣ: ΕΛΕΥΘΕΡΗ ΞΑΝΑ Η ΜΕΤΑΦΟΡΑ ΤΥΡΟΚΟΜΙΚΩΝ ΠΡΟΙΟΝΤΩΝ ΕΚΤΟΣ ΝΗΣΙΟΥ ΜΕΤΑ ΤΗΝ ΚΡΙΣΗ ΜΕ ΤΟΝ ΑΦΘΩΔΗ ΠΥΡΕΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1866213/fotia-se-georgiki-ektasi-stin-troizina/?utm_source=rss",
+      "title": "Φωτιά σε γεωργική έκταση στην Τροιζήνα",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΓΕΩΡΓΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΤΡΟΙΖΗΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866193/lesvos-eleutheri-xana-i-metafora-turokomikon-proiodon-ektos-nisiou-meta-tin-krisi-me-ton-afthodi-pureto/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866213/fotia-se-georgiki-ektasi-stin-troizina/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866208/salamina-xekinisan-oi-autopsies-sta-kamena-spitia-se-exelixi-oi-ereunes-gia-ta-aitia-tis-fonikis-purkagias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866204/sholiki-hronia-2026-2027-pote-anoigoun-fetos-ta-sholeia-kai-poies-argies-akolouthoun/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-18T07:30:34.897285+00:00"
+      "seen_at_utc": "2026-08-18T08:17:23.197793+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1449676/i-psaria-toy-theodoraki-ston-mytika/",
-      "title": "Η ψάρια του Θεοδωράκη στον Μύτικα",
-      "normalized_title": "Η ΨΑΡΙΑ ΤΟΥ ΘΕΟΔΩΡΑΚΗ ΣΤΟΝ ΜΥΤΙΚΑ",
+      "url": "https://www.efsyn.gr/politiki/1449678/tsoykalas-i-kyvernisi-na-zitisei-apo-tin-ee-na-epivallei-kyroseis-stin-toyrkia/",
+      "title": "Τσουκαλάς: «Η κυβέρνηση να ζητήσει από την ΕΕ να επιβάλλει κυρώσεις στην Τουρκία»",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: «Η ΚΥΒΕΡΝΗΣΗ ΝΑ ΖΗΤΗΣΕΙ ΑΠΟ ΤΗΝ ΕΕ ΝΑ ΕΠΙΒΑΛΛΕΙ ΚΥΡΩΣΕΙΣ ΣΤΗΝ ΤΟΥΡΚΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1449676/i-psaria-toy-theodoraki-ston-mytika/",
-        "https://www.efsyn.gr/ellada/1449668/irakleio-sto-nosokomeio-7hrono-koritsaki-poy-dehthike-epithesi-apo-skylo/"
+        "https://www.efsyn.gr/politiki/1449678/tsoykalas-i-kyvernisi-na-zitisei-apo-tin-ee-na-epivallei-kyroseis-stin-toyrkia/",
+        "https://www.efsyn.gr/oikonomia/1449626/samos-kai-skiathos-kanoyn-fetos-tin-ekplixi/",
+        "https://www.efsyn.gr/oikonomia/1449617/minysi-kata-toy-tramp-gia-ti-mihani-pronomiakis-pliroforisis/",
+        "https://www.efsyn.gr/ellada/1449672/trohaio-sti-voyla-vinteo-ntokoymento-apo-ti-stigmi-poy-to-taxi-kanei-anastrofi-kai-peftei-pano-toy-i-mihani/",
+        "https://www.efsyn.gr/ellada/1449680/efyge-o-dimosiografos-giannis-tzoystas/"
       ],
-      "seen_at_utc": "2026-08-18T07:51:07.862182+00:00"
+      "seen_at_utc": "2026-08-18T08:17:23.197776+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/18/greece/tha-skotothoume-ilikiomeni-odigouse-anapoda-stin-ethniki-odo-athinon-korinthou/",
-      "title": "«Θα σκοτωθούμε»: Ηλικιωμένη οδηγούσε ανάποδα στην εθνική οδό Αθηνών – Κορίνθου",
-      "normalized_title": "«ΘΑ ΣΚΟΤΩΘΟΥΜΕ»: ΗΛΙΚΙΩΜΕΝΗ ΟΔΗΓΟΥΣΕ ΑΝΑΠΟΔΑ ΣΤΗΝ ΕΘΝΙΚΗ ΟΔΟ ΑΘΗΝΩΝ – ΚΟΡΙΝΘΟΥ",
+      "url": "https://www.in.gr/2026/08/18/world/amerikaniko-antitorpiliko-emeine-mesopelaga-tesseris-imeres-xoris-reyma-nero-kai-toualetes/",
+      "title": "Αμερικανικό αντιτορπιλικό «έμεινε» μεσοπέλαγα – Τέσσερις ημέρες χωρίς ρεύμα, νερό και τουαλέτες",
+      "normalized_title": "ΑΜΕΡΙΚΑΝΙΚΟ ΑΝΤΙΤΟΡΠΙΛΙΚΟ «ΕΜΕΙΝΕ» ΜΕΣΟΠΕΛΑΓΑ – ΤΕΣΣΕΡΙΣ ΗΜΕΡΕΣ ΧΩΡΙΣ ΡΕΥΜΑ, ΝΕΡΟ ΚΑΙ ΤΟΥΑΛΕΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/18/greece/tha-skotothoume-ilikiomeni-odigouse-anapoda-stin-ethniki-odo-athinon-korinthou/",
-        "https://www.in.gr/2026/08/18/sports/basketball/saronei-kai-o-psifiakos-antetokounmpo-ektos-kalyteros-paiktis-sto-nba2k27-o-giannis-pic/",
-        "https://www.in.gr/2026/08/18/in-science/technology/apo-to-spacewar-sto-roblox-pos-ta-video-games-eginan-mia-apo-tis-megalyteres-viomixanies/"
+        "https://www.in.gr/2026/08/18/world/amerikaniko-antitorpiliko-emeine-mesopelaga-tesseris-imeres-xoris-reyma-nero-kai-toualetes/",
+        "https://www.in.gr/2026/08/18/greece/voula-vinteo-ntokoumento-apo-to-sokaristiko-troxaio-i-stigmi-pou-i-mixani-peftei-pano-sto-taksi/",
+        "https://www.in.gr/2026/08/18/health/oi-ilikiomenoi-pio-eyalotoi-sti-zesti-apo-oti-pisteyame-kai-to-provlima-diogkonetai/",
+        "https://www.in.gr/2026/08/18/sports/football/paylidis-eimai-se-kali-forma-arxizoume-kai-katalavainoume-tis-idees-tou-proponiti/",
+        "https://www.in.gr/2026/08/18/go-fun/fizz/tzeni-katsigianni-eferan-me-klark-paletes-me-piata-sto-panigyri-tis-kai-ta-espasan-stin-pista/",
+        "https://www.in.gr/2026/08/18/economy/oikonomikes-eidiseis/ekptoseis-se-dokimasia-i-elliniki-agora-lianikis-allazoun-oi-katanalotikes-synitheies-ton-ellinon/"
       ],
-      "seen_at_utc": "2026-08-18T07:51:07.862151+00:00"
+      "seen_at_utc": "2026-08-18T08:17:23.197738+00:00"
     }
   },
-  "updated_at_utc": "2026-08-18T07:51:07.862265+00:00"
+  "updated_at_utc": "2026-08-18T08:17:23.197895+00:00"
 }
