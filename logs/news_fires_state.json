@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564408859/kairos-eos-37-vathmoys-i-thermokrasia-simera-poy-anamenontai-vroches/",
-      "title": "Καιρός: Εως 37 βαθμούς η θερμοκρασία σήμερα – Πού αναμένονται βροχές",
-      "normalized_title": "ΚΑΙΡΟΣ: ΕΩΣ 37 ΒΑΘΜΟΥΣ Η ΘΕΡΜΟΚΡΑΣΙΑ ΣΗΜΕΡΑ – ΠΟΥ ΑΝΑΜΕΝΟΝΤΑΙ ΒΡΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/society/564408898/thessaloniki-synelifthisan-me-120-pagota-kai-21-mpoykalia-poton/",
+      "title": "Θεσσαλονίκη: Συνελήφθησαν με 120 παγωτά και 21 μπουκάλια ποτών",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΜΕ 120 ΠΑΓΩΤΑ ΚΑΙ 21 ΜΠΟΥΚΑΛΙΑ ΠΟΤΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564408859/kairos-eos-37-vathmoys-i-thermokrasia-simera-poy-anamenontai-vroches/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564408421/ypoyrgeio-paideias-katagrafi-ton-kenon-gia-tis-proslipseis-anapliroton/"
+        "https://www.kathimerini.gr/society/564408898/thessaloniki-synelifthisan-me-120-pagota-kai-21-mpoykalia-poton/",
+        "https://www.kathimerini.gr/politics/564408394/entos-kai-ektos-karatomiseis-kai-minymata-apo-ti-doyroy/",
+        "https://www.kathimerini.gr/world/564408883/india-toylachiston-ennea-nekroi-apo-pyrkagia-se-xenodocheio-stin-kolkata/",
+        "https://www.kathimerini.gr/world/564408868/ipa-notia-korea-ta-koina-stratiotika-gymnasia-syntomeyontai-kata-exi-imeres/",
+        "https://www.kathimerini.gr/economy/international/564408784/i-klimatiki-krisi-plittei-tis-oikonomies/",
+        "https://www.kathimerini.gr/world/564408865/pagonoyn-oi-synomilies-ipa-iran-sta-akra-i-kontra-gia-ta-stena-toy-ormoyz/"
       ],
-      "seen_at_utc": "2026-08-19T04:30:03.137761+00:00"
+      "seen_at_utc": "2026-08-19T04:51:17.295939+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1264,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866593/stous-37-vathmous-i-megisti-thermokrasia-simera-erhetai-nea-anodos-apo-aurio-i-prognosi-ana-periohi/?utm_source=rss",
-      "title": "Στους 37 βαθμούς η μέγιστη θερμοκρασία σήμερα, έρχεται νέα άνοδος από αύριο - Η πρόγνωση ανά περιοχή",
-      "normalized_title": "ΣΤΟΥΣ 37 ΒΑΘΜΟΥΣ Η ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑ ΣΗΜΕΡΑ, ΕΡΧΕΤΑΙ ΝΕΑ ΑΝΟΔΟΣ ΑΠΟ ΑΥΡΙΟ - Η ΠΡΟΓΝΩΣΗ ΑΝΑ ΠΕΡΙΟΧΗ",
+      "url": "https://www.protothema.gr/greece/article/1866598/astunomikos-ektos-upiresias-stin-kriti-epese-pano-se-katazitoumeno/?utm_source=rss",
+      "title": "Αστυνομικός εκτός υπηρεσίας στην Κρήτη... έπεσε πάνω σε καταζητούμενο και τραυματίστηκε στην προσπάθειά του να τον ακινητοποιήσει",
+      "normalized_title": "ΑΣΤΥΝΟΜΙΚΟΣ ΕΚΤΟΣ ΥΠΗΡΕΣΙΑΣ ΣΤΗΝ ΚΡΗΤΗ... ΕΠΕΣΕ ΠΑΝΩ ΣΕ ΚΑΤΑΖΗΤΟΥΜΕΝΟ ΚΑΙ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΗΝ ΠΡΟΣΠΑΘΕΙΑ ΤΟΥ ΝΑ ΤΟΝ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866593/stous-37-vathmous-i-megisti-thermokrasia-simera-erhetai-nea-anodos-apo-aurio-i-prognosi-ana-periohi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866598/astunomikos-ektos-upiresias-stin-kriti-epese-pano-se-katazitoumeno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T04:17:37.216578+00:00"
+      "seen_at_utc": "2026-08-19T04:51:17.296073+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/enoikia-fotia-foitites-se-apognosi/",
-      "title": "Ενοίκια-φωτιά, φοιτητές σε απόγνωση",
-      "normalized_title": "ΕΝΟΙΚΙΑ-ΦΩΤΙΑ, ΦΟΙΤΗΤΕΣ ΣΕ ΑΠΟΓΝΩΣΗ",
+      "url": "https://www.efsyn.gr/politiki/1450252/sti-leoforo-tis-aplistias/",
+      "title": "Στη λεωφόρο της απληστίας",
+      "normalized_title": "ΣΤΗ ΛΕΩΦΟΡΟ ΤΗΣ ΑΠΛΗΣΤΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/enoikia-fotia-foitites-se-apognosi/"
+        "https://www.efsyn.gr/politiki/1450252/sti-leoforo-tis-aplistias/",
+        "https://www.efsyn.gr/oikonomia/1450230/pagides-stis-synallages-meso-iris-pote-mpainei-foros-apo-to-proto-eyro/",
+        "https://www.efsyn.gr/life/1450236/efyge-apo-ti-zoi-o-ntramer-ton-zz-top-frank-mpernt-se-ilikia-77-eton/",
+        "https://www.efsyn.gr/tehnes/1450206/konstantinos-tsoykalas-1937-2026-enas-megalos-stohastis-apenanti-stis-vevaiotites/"
       ],
-      "seen_at_utc": "2026-08-19T04:30:03.137825+00:00"
+      "seen_at_utc": "2026-08-19T04:51:17.296022+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/economy/nea-platforma-gia-osous-xanoun-dikaioma-domisis-ton-akiniton-tous-osa-prepei-na-kserete/",
-      "title": "Νέα πλατφόρμα για όσους χάνουν δικαίωμα δόμησης των ακινήτων τους – Όσα πρέπει να ξέρετε",
-      "normalized_title": "ΝΕΑ ΠΛΑΤΦΟΡΜΑ ΓΙΑ ΟΣΟΥΣ ΧΑΝΟΥΝ ΔΙΚΑΙΩΜΑ ΔΟΜΗΣΗΣ ΤΩΝ ΑΚΙΝΗΤΩΝ ΤΟΥΣ – ΟΣΑ ΠΡΕΠΕΙ ΝΑ ΞΕΡΕΤΕ",
+      "url": "https://www.in.gr/2026/08/19/politics/politiki-grammateia/i-dimiourgia-tis-elas-mesa-apo-mia-trilogia-kinimatografikon-afigiseon-me-katharotita-amesotita-xoris-klise/",
+      "title": "Η δημιουργία της ΕΛΑΣ μέσα από μια τριλογία κινηματογραφικών αφηγήσεων – «Με καθαρότητα, αμεσότητα, χωρίς κλισέ»",
+      "normalized_title": "Η ΔΗΜΙΟΥΡΓΙΑ ΤΗΣ ΕΛΑΣ ΜΕΣΑ ΑΠΟ ΜΙΑ ΤΡΙΛΟΓΙΑ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΩΝ ΑΦΗΓΗΣΕΩΝ – «ΜΕ ΚΑΘΑΡΟΤΗΤΑ, ΑΜΕΣΟΤΗΤΑ, ΧΩΡΙΣ ΚΛΙΣΕ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/economy/nea-platforma-gia-osous-xanoun-dikaioma-domisis-ton-akiniton-tous-osa-prepei-na-kserete/"
+        "https://www.in.gr/2026/08/19/politics/politiki-grammateia/i-dimiourgia-tis-elas-mesa-apo-mia-trilogia-kinimatografikon-afigiseon-me-katharotita-amesotita-xoris-klise/",
+        "https://www.in.gr/2026/08/19/go-fun/social/arkas-i-kalimera-tis-tetartis-12/",
+        "https://www.in.gr/2026/08/19/world/tragodia-stin-india-ennea-nekroi-meta-apo-fotia-se-ksenodoxeio/",
+        "https://www.in.gr/2026/08/19/plus/vita/giati-den-teleionoun-pote-oi-douleies-tou-spitiou/",
+        "https://www.in.gr/2026/08/19/politics/deth-to-stoixima-tou-kyriakou-mitsotaki-i-epistrofi-tou-aleksi-tsipra-kai-i-maxi-tou-nikou-androulaki/"
       ],
-      "seen_at_utc": "2026-08-19T04:30:03.137810+00:00"
+      "seen_at_utc": "2026-08-19T04:51:17.296000+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T04:30:03.137915+00:00"
+  "updated_at_utc": "2026-08-19T04:51:17.296146+00:00"
 }
