@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564408787/stin-atzenta-tis-eyropis-oi-adeies-kaysona/",
-      "title": "Στην ατζέντα της Ευρώπης οι «άδειες καύσωνα»",
-      "normalized_title": "ΣΤΗΝ ΑΤΖΕΝΤΑ ΤΗΣ ΕΥΡΩΠΗΣ ΟΙ «ΑΔΕΙΕΣ ΚΑΥΣΩΝΑ»",
+      "url": "https://www.kathimerini.gr/world/564409108/charvarnt-apozimioseis-53-ekat-dolarion-gia-to-makavrio-skandalo-me-tin-polisi-anthropinon-melon/",
+      "title": "Χάρβαρντ: Αποζημιώσεις 53 εκατ. δολαρίων για το μακάβριο σκάνδαλο με την πώληση ανθρώπινων μελών",
+      "normalized_title": "ΧΑΡΒΑΡΝΤ: ΑΠΟΖΗΜΙΩΣΕΙΣ 53 ΕΚΑΤ. ΔΟΛΑΡΙΩΝ ΓΙΑ ΤΟ ΜΑΚΑΒΡΙΟ ΣΚΑΝΔΑΛΟ ΜΕ ΤΗΝ ΠΩΛΗΣΗ ΑΝΘΡΩΠΙΝΩΝ ΜΕΛΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564408787/stin-atzenta-tis-eyropis-oi-adeies-kaysona/",
-        "https://www.kathimerini.gr/society/564409078/karystos-nekros-43chronos-meta-apo-sygkroysi-fortigon/"
+        "https://www.kathimerini.gr/world/564409108/charvarnt-apozimioseis-53-ekat-dolarion-gia-to-makavrio-skandalo-me-tin-polisi-anthropinon-melon/",
+        "https://www.kathimerini.gr/society/564408409/kyvernisi-schedio-gia-kalpes-ton-maio/",
+        "https://www.kathimerini.gr/politics/amyna/564409090/episkepsi-toy-archigoy-geetha-sto-israil/"
       ],
-      "seen_at_utc": "2026-08-19T08:30:06.309545+00:00"
+      "seen_at_utc": "2026-08-19T08:51:12.601532+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866727/mia-simaia-mia-ellada-to-video-tou-ges-me-tin-eparsi-tis-ellinikis-simaias-apo-tin-ipeirotiki-hora-eos-ta-nisia/?utm_source=rss",
-      "title": "«Μια Σημαία, μια Ελλάδα»: Το βίντεο του ΓΕΣ με την έπαρση της ελληνικής σημαίας από την ηπειρωτική χώρα έως τα νησιά",
-      "normalized_title": "«ΜΙΑ ΣΗΜΑΙΑ, ΜΙΑ ΕΛΛΑΔΑ»: ΤΟ ΒΙΝΤΕΟ ΤΟΥ ΓΕΣ ΜΕ ΤΗΝ ΕΠΑΡΣΗ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΣΗΜΑΙΑΣ ΑΠΟ ΤΗΝ ΗΠΕΙΡΩΤΙΚΗ ΧΩΡΑ ΕΩΣ ΤΑ ΝΗΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1866732/sto-israil-o-arhigos-geetha-dimitris-houpis-sunadithike-me-ton-arhigo-ton-idf/?utm_source=rss",
+      "title": "Στο Ισραήλ ο αρχηγός ΓΕΕΘΑ Δημήτρης Χούπης, συναντήθηκε με τον αρχηγό των IDF",
+      "normalized_title": "ΣΤΟ ΙΣΡΑΗΛ Ο ΑΡΧΗΓΟΣ ΓΕΕΘΑ ΔΗΜΗΤΡΗΣ ΧΟΥΠΗΣ, ΣΥΝΑΝΤΗΘΗΚΕ ΜΕ ΤΟΝ ΑΡΧΗΓΟ ΤΩΝ IDF",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866727/mia-simaia-mia-ellada-to-video-tou-ges-me-tin-eparsi-tis-ellinikis-simaias-apo-tin-ipeirotiki-hora-eos-ta-nisia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866732/sto-israil-o-arhigos-geetha-dimitris-houpis-sunadithike-me-ton-arhigo-ton-idf/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T08:30:06.309629+00:00"
+      "seen_at_utc": "2026-08-19T08:51:12.601676+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1450326/kaiei-o-anti-konstantelias/",
-      "title": "«Καίει» ο αντι-Κωνσταντέλιας",
-      "normalized_title": "«ΚΑΙΕΙ» Ο ΑΝΤΙ-ΚΩΝΣΤΑΝΤΕΛΙΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1450392/rodos-eklepsan-hrimatokivotio-me-100-000-eyro-taytopoiithikan-treis-vretanoi-synelifthi-o-enas/",
+      "title": "Ρόδος: Έκλεψαν χρηματοκιβώτιο με 100.000 ευρώ – Ταυτοποιήθηκαν τρεις Βρετανοί, συνελήφθη ο ένας",
+      "normalized_title": "ΡΟΔΟΣ: ΕΚΛΕΨΑΝ ΧΡΗΜΑΤΟΚΙΒΩΤΙΟ ΜΕ 100.000 ΕΥΡΩ – ΤΑΥΤΟΠΟΙΗΘΗΚΑΝ ΤΡΕΙΣ ΒΡΕΤΑΝΟΙ, ΣΥΝΕΛΗΦΘΗ Ο ΕΝΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1450326/kaiei-o-anti-konstantelias/",
-        "https://www.efsyn.gr/oikonomia/1450382/hios-oloklirothikan-oi-pliromes-se-59-epiheiriseis-gia-tis-pyrkagies-toy-2025/",
-        "https://www.efsyn.gr/ellada/1450397/eyvoia-22hronos-epese-se-gkremo-15-metron-meta-apo-trohaio-vinteo-apo-tin-epiheirisi-diasosis/"
+        "https://www.efsyn.gr/ellada/1450392/rodos-eklepsan-hrimatokivotio-me-100-000-eyro-taytopoiithikan-treis-vretanoi-synelifthi-o-enas/",
+        "https://www.efsyn.gr/stiles/1450405/oraia-einai-alla-vromaei-ligo/",
+        "https://www.efsyn.gr/ellada/1450333/sifnos-xypnise-apo-ton-lithargo-i-arhi-politikis-aeroporias-meta-tin-ptosi-toy-elikopteroy/",
+        "https://www.efsyn.gr/periballon/1450411/neo-horotaxiko-plaisio-gia-tis-ape-poy-mpainei-veto-se-fotovoltaika-kai-aiolika-parka/"
       ],
-      "seen_at_utc": "2026-08-19T08:30:06.309601+00:00"
+      "seen_at_utc": "2026-08-19T08:51:12.601642+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/in-science/perivallon-b-science/pou-epitrepontai-anemogennitries-kai-fotovoltaika-to-neo-xoraksiko-gia-tis-ape/",
-      "title": "Πού επιτρέπονται ανεμογεννήτριες και φωτοβολταϊκά – Το νέο χωραξικό για τις ΑΠΕ",
-      "normalized_title": "ΠΟΥ ΕΠΙΤΡΕΠΟΝΤΑΙ ΑΝΕΜΟΓΕΝΝΗΤΡΙΕΣ ΚΑΙ ΦΩΤΟΒΟΛΤΑΙΚΑ – ΤΟ ΝΕΟ ΧΩΡΑΞΙΚΟ ΓΙΑ ΤΙΣ ΑΠΕ",
+      "url": "https://www.in.gr/2026/08/19/world/alvania-nea-stoixeia-gia-ti-dolofonia-portogalou-tourista-sto-eksamili-i-kinimatografiki-syllipsi-drasti/",
+      "title": "Αλβανία: Νέα στοιχεία για τη δολοφονία Πορτογάλου τουρίστα στο Εξαμίλι – Η κινηματογραφική σύλληψη του δράστη",
+      "normalized_title": "ΑΛΒΑΝΙΑ: ΝΕΑ ΣΤΟΙΧΕΙΑ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΠΟΡΤΟΓΑΛΟΥ ΤΟΥΡΙΣΤΑ ΣΤΟ ΕΞΑΜΙΛΙ – Η ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΣΥΛΛΗΨΗ ΤΟΥ ΔΡΑΣΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/in-science/perivallon-b-science/pou-epitrepontai-anemogennitries-kai-fotovoltaika-to-neo-xoraksiko-gia-tis-ape/"
+        "https://www.in.gr/2026/08/19/world/alvania-nea-stoixeia-gia-ti-dolofonia-portogalou-tourista-sto-eksamili-i-kinimatografiki-syllipsi-drasti/",
+        "https://www.in.gr/2026/08/19/sports/basketball/o-olympiakos-perimenei-ton-gouokap-stin-proti-kai-aytos-anevase-vinteo-apo-ti-nea-yorki-vid/",
+        "https://www.in.gr/2026/08/19/greece/rodos-taytopoiithikan-treis-vretanoi-pou-sikosan-xrimatokivotiou-me-100-000-eyro/"
       ],
-      "seen_at_utc": "2026-08-19T08:30:06.309586+00:00"
+      "seen_at_utc": "2026-08-19T08:51:12.601594+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T08:30:06.309722+00:00"
+  "updated_at_utc": "2026-08-19T08:51:12.601757+00:00"
 }
