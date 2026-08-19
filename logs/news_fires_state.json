@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564409165/chalkidiki-traymatistike-65chronos-ypovrychios-alieas-apo-skafos-sti-sykia/",
-      "title": "Χαλκιδική: Τραυματίστηκε 65χρονος υποβρύχιος αλιέας από σκάφος στη Συκιά",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΤΡΑΥΜΑΤΙΣΤΗΚΕ 65ΧΡΟΝΟΣ ΥΠΟΒΡΥΧΙΟΣ ΑΛΙΕΑΣ ΑΠΟ ΣΚΑΦΟΣ ΣΤΗ ΣΥΚΙΑ",
+      "url": "https://www.kathimerini.gr/society/564409192/santorini-61chroni-toyristria-traymatistike-meta-apo-ptosi-se-skafos-metaferthike-sto-nosokomeio/",
+      "title": "Σαντορίνη: 61χρονη τουρίστρια τραυματίστηκε μετά από πτώση σε σκάφος – Μεταφέρθηκε στο νοσοκομείο",
+      "normalized_title": "ΣΑΝΤΟΡΙΝΗ: 61ΧΡΟΝΗ ΤΟΥΡΙΣΤΡΙΑ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΜΕΤΑ ΑΠΟ ΠΤΩΣΗ ΣΕ ΣΚΑΦΟΣ – ΜΕΤΑΦΕΡΘΗΚΕ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564409165/chalkidiki-traymatistike-65chronos-ypovrychios-alieas-apo-skafos-sti-sykia/"
+        "https://www.kathimerini.gr/society/564409192/santorini-61chroni-toyristria-traymatistike-meta-apo-ptosi-se-skafos-metaferthike-sto-nosokomeio/",
+        "https://www.kathimerini.gr/world/564409177/germania-synelifthi-oykranos-gia-tis-ekrixeis-ston-nord-stream/",
+        "https://www.kathimerini.gr/visual/infographics/564408760/o-ypsilos-plithorismos-rokanizei-tis-katatheseis/"
       ],
-      "seen_at_utc": "2026-08-19T09:30:00.699172+00:00"
+      "seen_at_utc": "2026-08-19T09:51:19.149356+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866761/pote-xekinoun-oi-eggrafes-epituhodon-apo-to-parallilo-mihanografiko-stis-30-saek-tis-dupa/?utm_source=rss",
-      "title": "Πότε ξεκινούν οι εγγραφές επιτυχόντων από το παράλληλο μηχανογραφικό στις 30 ΣΑΕΚ της ΔΥΠΑ",
-      "normalized_title": "ΠΟΤΕ ΞΕΚΙΝΟΥΝ ΟΙ ΕΓΓΡΑΦΕΣ ΕΠΙΤΥΧΟΝΤΩΝ ΑΠΟ ΤΟ ΠΑΡΑΛΛΗΛΟ ΜΗΧΑΝΟΓΡΑΦΙΚΟ ΣΤΙΣ 30 ΣΑΕΚ ΤΗΣ ΔΥΠΑ",
+      "url": "https://www.protothema.gr/greece/article/1866771/apokosmes-eikones-se-paro-kai-adiparo-ploia-xeprovalloun-mesa-apo-tin-omihli-me-suneheis-surigmous-deite-video/?utm_source=rss",
+      "title": "Απόκοσμες εικόνες σε Πάρο και Αντίπαρο: Πλοία ξεπροβάλλουν μέσα από την ομίχλη με συνεχείς συριγμούς, δείτε βίντεο",
+      "normalized_title": "ΑΠΟΚΟΣΜΕΣ ΕΙΚΟΝΕΣ ΣΕ ΠΑΡΟ ΚΑΙ ΑΝΤΙΠΑΡΟ: ΠΛΟΙΑ ΞΕΠΡΟΒΑΛΛΟΥΝ ΜΕΣΑ ΑΠΟ ΤΗΝ ΟΜΙΧΛΗ ΜΕ ΣΥΝΕΧΕΙΣ ΣΥΡΙΓΜΟΥΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866761/pote-xekinoun-oi-eggrafes-epituhodon-apo-to-parallilo-mihanografiko-stis-30-saek-tis-dupa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866758/edopistike-kai-paradothike-ston-arktouro-o-lukos-pou-epitethike-se-4hroni-sti-thessaloniki-itan-akrotiriasmenos-kai/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866771/apokosmes-eikones-se-paro-kai-adiparo-ploia-xeprovalloun-mesa-apo-tin-omihli-me-suneheis-surigmous-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866770/thessaloniki-sto-nosokomeio-treis-kratoumenoi-meta-apo-fotia-stis-fulakes-diavaton/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T09:30:00.699303+00:00"
+      "seen_at_utc": "2026-08-19T09:51:19.149456+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450447/idiotika-panepistimia-neo-aitima-lazaratoy-sto-ste-gia-tin-akyrosi-epta-akoma-idrymaton/",
-      "title": "Ιδιωτικά πανεπιστήμια: Νέο αίτημα Λαζαράτου στο ΣτΕ για την ακύρωση επτά ακόμα ιδρυμάτων",
-      "normalized_title": "ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΝΕΟ ΑΙΤΗΜΑ ΛΑΖΑΡΑΤΟΥ ΣΤΟ ΣΤΕ ΓΙΑ ΤΗΝ ΑΚΥΡΩΣΗ ΕΠΤΑ ΑΚΟΜΑ ΙΔΡΥΜΑΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1450473/akrita-gia-ti-mataiosi-tis-arkoydotrypas-kapote-ekaigan-vivlia-tora-akyronoyn-provoles/",
+      "title": "Ακρίτα για τη ματαίωση της «Αρκουδότρυπας»: Κάποτε έκαιγαν βιβλία, τώρα ακυρώνουν προβολές",
+      "normalized_title": "ΑΚΡΙΤΑ ΓΙΑ ΤΗ ΜΑΤΑΙΩΣΗ ΤΗΣ «ΑΡΚΟΥΔΟΤΡΥΠΑΣ»: ΚΑΠΟΤΕ ΕΚΑΙΓΑΝ ΒΙΒΛΙΑ, ΤΩΡΑ ΑΚΥΡΩΝΟΥΝ ΠΡΟΒΟΛΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450447/idiotika-panepistimia-neo-aitima-lazaratoy-sto-ste-gia-tin-akyrosi-epta-akoma-idrymaton/",
-        "https://www.efsyn.gr/athlitismos/1450446/thetikos-se-kokaini-o-nik-kyrgios-ekana-ena-terastio-lathos/",
-        "https://www.efsyn.gr/ellada/1450413/kairos-apo-tis-kataigides-sta-40aria-to-savvatokyriako-i-prognosi-ton-meteorologon/"
+        "https://www.efsyn.gr/politiki/1450473/akrita-gia-ti-mataiosi-tis-arkoydotrypas-kapote-ekaigan-vivlia-tora-akyronoyn-provoles/",
+        "https://www.efsyn.gr/politiki/1450440/eyrovoyleytes-pasok-se-komision-i-eyropi-na-parei-thesi-gia-ti-moni-ag-aikaterinis-sto-sina/",
+        "https://www.efsyn.gr/ellada/1450448/thessaloniki-piastike-o-lykos-poy-eihe-epitethei-se-4hrono-paidi/",
+        "https://www.efsyn.gr/stiles/1450361/elegeia-gia-ton-konstantino/",
+        "https://www.efsyn.gr/ellada/1450349/par-oligon-tragodia-ston-eyaggelismo-me-anafylaktiko-sok-nosileytria-poy-itan-allergiki-se-antiviotiko/"
       ],
-      "seen_at_utc": "2026-08-19T09:30:00.699267+00:00"
+      "seen_at_utc": "2026-08-19T09:51:19.149424+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/politics/syriza-ouragos-i-ellada-stin-eyropi-stis-kratikes-dapanes-gia-tin-paideia/",
-      "title": "ΣΥΡΙΖΑ: Ουραγός η Ελλάδα στην Ευρώπη στις κρατικές δαπάνες για την παιδεία",
-      "normalized_title": "ΣΥΡΙΖΑ: ΟΥΡΑΓΟΣ Η ΕΛΛΑΔΑ ΣΤΗΝ ΕΥΡΩΠΗ ΣΤΙΣ ΚΡΑΤΙΚΕΣ ΔΑΠΑΝΕΣ ΓΙΑ ΤΗΝ ΠΑΙΔΕΙΑ",
+      "url": "https://www.in.gr/2026/08/19/world/oukrania-piesi-ston-zelenski-neo-skandalo-diafthoras-meta-to-aitima-tou-fentorof-gia-dieksagogi-eklogon/",
+      "title": "Αυξάνεται η πίεση στον Ζελένσκι: Νέο σκάνδαλο διαφθοράς μετά το αίτημα του δημοφιλούς Φεντόροφ για διεξαγωγή εκλογών",
+      "normalized_title": "ΑΥΞΑΝΕΤΑΙ Η ΠΙΕΣΗ ΣΤΟΝ ΖΕΛΕΝΣΚΙ: ΝΕΟ ΣΚΑΝΔΑΛΟ ΔΙΑΦΘΟΡΑΣ ΜΕΤΑ ΤΟ ΑΙΤΗΜΑ ΤΟΥ ΔΗΜΟΦΙΛΟΥΣ ΦΕΝΤΟΡΟΦ ΓΙΑ ΔΙΕΞΑΓΩΓΗ ΕΚΛΟΓΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/politics/syriza-ouragos-i-ellada-stin-eyropi-stis-kratikes-dapanes-gia-tin-paideia/"
+        "https://www.in.gr/2026/08/19/world/oukrania-piesi-ston-zelenski-neo-skandalo-diafthoras-meta-to-aitima-tou-fentorof-gia-dieksagogi-eklogon/",
+        "https://www.in.gr/2026/08/19/economy/agro-in/elia-apo-ton-psekasmo-os-ti-sygkomidi-pos-ta-drones-allazoun-tin-paragogi/",
+        "https://www.in.gr/2026/08/19/sports/othersports/sok-thetikos-se-xrisi-kokainis-o-kyrgios-ekana-ena-megalo-lathos-pic/",
+        "https://www.in.gr/2026/08/19/in-science/technology/mia-ethismeni-genia-gia-xari-tou-kerdous-i-diki-tis-meta-fernei-seismo-sta-social-media/"
       ],
-      "seen_at_utc": "2026-08-19T09:30:00.699224+00:00"
+      "seen_at_utc": "2026-08-19T09:51:19.149400+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T09:30:00.699373+00:00"
+  "updated_at_utc": "2026-08-19T09:51:19.149524+00:00"
 }
