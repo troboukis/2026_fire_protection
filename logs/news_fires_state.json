@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/ekpaideysi/564408418/oi-allages-poy-erchontai-stis-scholikes-ekdromes/",
-      "title": "Οι αλλαγές που έρχονται στις σχολικές εκδρομές",
-      "normalized_title": "ΟΙ ΑΛΛΑΓΕΣ ΠΟΥ ΕΡΧΟΝΤΑΙ ΣΤΙΣ ΣΧΟΛΙΚΕΣ ΕΚΔΡΟΜΕΣ",
+      "url": "https://www.kathimerini.gr/economy/business/564408775/mi-epandromena-skafi-epifaneias-made-in-greece/",
+      "title": "Μη επανδρωμένα σκάφη επιφανείας made in Greece",
+      "normalized_title": "ΜΗ ΕΠΑΝΔΡΩΜΕΝΑ ΣΚΑΦΗ ΕΠΙΦΑΝΕΙΑΣ MADE IN GREECE",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/ekpaideysi/564408418/oi-allages-poy-erchontai-stis-scholikes-ekdromes/",
-        "https://www.kathimerini.gr/society/564409054/irakleio-85chronos-entopistike-nekros-se-agrotiki-topothesia/"
+        "https://www.kathimerini.gr/economy/business/564408775/mi-epandromena-skafi-epifaneias-made-in-greece/",
+        "https://www.kathimerini.gr/society/564409075/rodos-taytopoiithikan-treis-vretanoi-gia-tin-klopi-chrimatokivotioy-me-100-000-eyro-synelifthi-o-enas/",
+        "https://www.kathimerini.gr/politics/564409060/ape-se-ischy-to-neo-eidiko-chorotaxiko-plaisio-ti-provlepei/",
+        "https://www.kathimerini.gr/world/564409069/cnn-chanei-ton-elegcho-sta-stena-toy-ormoyz-to-iran-ta-ploia-strefontai-sti-diadromi-toy-oman/"
       ],
-      "seen_at_utc": "2026-08-19T07:51:15.519129+00:00"
+      "seen_at_utc": "2026-08-19T08:16:57.786661+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,40 +1262,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866701/rodos-tautopoiithikan-treis-vretanoi-gia-tin-klopi-hrimatokivotiou-me-leia-100000-euro-sunelifthi-o-enas/?utm_source=rss",
-      "title": "Ρόδος: Ταυτοποιήθηκαν τρεις Βρετανοί για την κλοπή χρηματοκιβωτίου με λεία 100.000 ευρώ, συνελήφθη ο ένας",
-      "normalized_title": "ΡΟΔΟΣ: ΤΑΥΤΟΠΟΙΗΘΗΚΑΝ ΤΡΕΙΣ ΒΡΕΤΑΝΟΙ ΓΙΑ ΤΗΝ ΚΛΟΠΗ ΧΡΗΜΑΤΟΚΙΒΩΤΙΟΥ ΜΕ ΛΕΙΑ 100.000 ΕΥΡΩ, ΣΥΝΕΛΗΦΘΗ Ο ΕΝΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1866719/ebeirognomones-sto-simeio-tis-sudrivis-tou-elikopterou-sti-sifno-stin-athina-gia-iatrodikastiki-exetasi-oi-soroi/?utm_source=rss",
+      "title": "Εμπειρογνώμονες στο σημείο της συντριβής του ελικοπτέρου στη Σίφνο - Στην Αθήνα για ιατροδικαστική εξέταση οι σοροί",
+      "normalized_title": "ΕΜΠΕΙΡΟΓΝΩΜΟΝΕΣ ΣΤΟ ΣΗΜΕΙΟ ΤΗΣ ΣΥΝΤΡΙΒΗΣ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ - ΣΤΗΝ ΑΘΗΝΑ ΓΙΑ ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΕΞΕΤΑΣΗ ΟΙ ΣΟΡΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866701/rodos-tautopoiithikan-treis-vretanoi-gia-tin-klopi-hrimatokivotiou-me-leia-100000-euro-sunelifthi-o-enas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866700/se-ishu-to-neo-horotaxiko-gia-tis-ape-pou-apagoreuodai-ta-aiolika-parka-ti-allazei-se-nisia-kai-natura/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866698/sto-mikroskopio-tis-purosvestikis-oi-foties-se-trikala-volo-kai-pilio-ta-video-pou-exetazodai-gia-pithanous-ebrismous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866695/thanatiforo-trohaio-sto-marmari-nekros-43hronos-meta-apo-sfodri-sugrousi-duo-ih/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866719/ebeirognomones-sto-simeio-tis-sudrivis-tou-elikopterou-sti-sifno-stin-athina-gia-iatrodikastiki-exetasi-oi-soroi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866711/i-apadisi-tahiaou-stin-kataggelia-gia-paraligo-tragodia-se-ptisi-apo-irakleio-pros-athina-itan-mia-eleghomeni-diadikasia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866706/diasosi-46-metanaston-notia-tis-gaudou-metaferodai-stin-kriti/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T07:51:15.519219+00:00"
+      "seen_at_utc": "2026-08-19T08:16:57.786761+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450365/thessaloniki-zeygari-synelifthi-me-120-pagota-kai-21-mpoykalia-poton/",
-      "title": "Θεσσαλονίκη: Ζευγάρι συνελήφθη με 120 παγωτά και 21 μπουκάλια ποτών",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΖΕΥΓΑΡΙ ΣΥΝΕΛΗΦΘΗ ΜΕ 120 ΠΑΓΩΤΑ ΚΑΙ 21 ΜΠΟΥΚΑΛΙΑ ΠΟΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1450379/kallianos-to-kommati-toy-parioy-poy-tragoydise-sta-social-kai-i-apantisi-stin-kritiki/",
+      "title": "Καλλιάνος: Το κομμάτι του Πάριου που τραγούδησε στα social και η απάντηση στην κριτική",
+      "normalized_title": "ΚΑΛΛΙΑΝΟΣ: ΤΟ ΚΟΜΜΑΤΙ ΤΟΥ ΠΑΡΙΟΥ ΠΟΥ ΤΡΑΓΟΥΔΗΣΕ ΣΤΑ SOCIAL ΚΑΙ Η ΑΠΑΝΤΗΣΗ ΣΤΗΝ ΚΡΙΤΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450365/thessaloniki-zeygari-synelifthi-me-120-pagota-kai-21-mpoykalia-poton/"
+        "https://www.efsyn.gr/politiki/1450379/kallianos-to-kommati-toy-parioy-poy-tragoydise-sta-social-kai-i-apantisi-stin-kritiki/",
+        "https://www.efsyn.gr/ellada/1450369/halkidiki-fytrosan-xana-oi-rezerve-ompreles-kai-xaplostres-liges-ores-meta-to-xiloma-toys-vinteo/"
       ],
-      "seen_at_utc": "2026-08-19T07:51:15.519198+00:00"
+      "seen_at_utc": "2026-08-19T08:16:57.786736+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/world/tesseris-nekroi-sti-notia-oukrania-meta-apo-rosiki-epithesi-drone-se-leoforeio/",
-      "title": "Τέσσερις νεκροί στη νότια Ουκρανία μετά από ρωσική επίθεση drone σε λεωφορείο",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΝΕΚΡΟΙ ΣΤΗ ΝΟΤΙΑ ΟΥΚΡΑΝΙΑ ΜΕΤΑ ΑΠΟ ΡΩΣΙΚΗ ΕΠΙΘΕΣΗ DRONE ΣΕ ΛΕΩΦΟΡΕΙΟ",
+      "url": "https://www.in.gr/2026/08/19/plus/medianews/mega-sentra-stin-athlitiki-enimerosi-me-super-mpala-live/",
+      "title": "MEGA: Σέντρα στην αθλητική ενημέρωση με «Super Μπάλα Live»",
+      "normalized_title": "MEGA: ΣΕΝΤΡΑ ΣΤΗΝ ΑΘΛΗΤΙΚΗ ΕΝΗΜΕΡΩΣΗ ΜΕ «SUPER ΜΠΑΛΑ LIVE»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/world/tesseris-nekroi-sti-notia-oukrania-meta-apo-rosiki-epithesi-drone-se-leoforeio/",
-        "https://www.in.gr/2026/08/19/sports/othersports/leyteris-petrounias-o-arxontas-ton-krikon-paei-gia-to-9o-xryso-se-eyropaiko-vids/",
-        "https://www.in.gr/2026/08/19/economy/pos-tha-ksekleidosei-i-navtex-gia-to-kalodio-elladas-kyprou-oi-dyo-ekkremotites-tis-leykosias/",
-        "https://www.in.gr/2026/08/19/world/i-syria-synelave-aksiomatiko-tis-epoxis-tou-asant-pou-eixe-diafygei-apo-tin-aystria-meta-tin-katadiki-tou/",
-        "https://www.in.gr/2026/08/19/greece/poio-einai-to-elliniko-xorio-pou-i-pleiopsifia-ton-zeygarion-einai-tritekna-i-polytekna/",
-        "https://www.in.gr/2026/08/19/sports/basketball/olympiakos-me-aroma-90s-kai-entyposiako-vinteo-i-kae-parousiase-tis-nees-faneles-vid-pic/"
+        "https://www.in.gr/2026/08/19/plus/medianews/mega-sentra-stin-athlitiki-enimerosi-me-super-mpala-live/",
+        "https://www.in.gr/2026/08/19/sports/football/plithainoun-oi-fones-kata-tis-fifa-kai-tou-infantino-patise-to-koumpi-tis-aytokatastrofis/",
+        "https://www.in.gr/2026/08/19/greece/rodos-taytopoiithikan-treis-vretanoi-pou-sikosan-xrimatokivotiou-me-100-000-eyro/",
+        "https://www.in.gr/2026/08/19/go-fun/fizz/eurovision-i-oikodespoina-poli-tou-epomenou-etous-den-einai-i-sofia-i-ntara-mperdeytike/",
+        "https://www.in.gr/2026/08/19/politics/politiki-grammateia/akriveia-kratikes-paremvaseis-kai-anadianomi-eisodimatos-zita-i-antipoliteysi-eisagomeno-to-provlima-leei-i-kyvernisi/"
       ],
-      "seen_at_utc": "2026-08-19T07:51:15.519180+00:00"
+      "seen_at_utc": "2026-08-19T08:16:57.786703+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T07:51:15.519290+00:00"
+  "updated_at_utc": "2026-08-19T08:16:57.786842+00:00"
 }
