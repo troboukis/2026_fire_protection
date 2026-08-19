@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564409411/rosia-arkoyda-esyre-kataskinotria-exo-apo-skini-kai-ti-skotose/",
-      "title": "Ρωσία: Αρκούδα έσυρε κατασκηνώτρια έξω από σκηνή και τη σκότωσε",
-      "normalized_title": "ΡΩΣΙΑ: ΑΡΚΟΥΔΑ ΕΣΥΡΕ ΚΑΤΑΣΚΗΝΩΤΡΙΑ ΕΞΩ ΑΠΟ ΣΚΗΝΗ ΚΑΙ ΤΗ ΣΚΟΤΩΣΕ",
+      "url": "https://www.kathimerini.gr/society/564409474/thessaloniki-o-mat-chagkengkroymper-neos-genikos-proxenos-ton-ipa/",
+      "title": "Θεσσαλονίκη: Ο Ματ Χαγκενγκρούμπερ νέος γενικός πρόξενος των ΗΠΑ",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: Ο ΜΑΤ ΧΑΓΚΕΝΓΚΡΟΥΜΠΕΡ ΝΕΟΣ ΓΕΝΙΚΟΣ ΠΡΟΞΕΝΟΣ ΤΩΝ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564409411/rosia-arkoyda-esyre-kataskinotria-exo-apo-skini-kai-ti-skotose/"
+        "https://www.kathimerini.gr/society/564409474/thessaloniki-o-mat-chagkengkroymper-neos-genikos-proxenos-ton-ipa/",
+        "https://www.kathimerini.gr/k/gastronomos/564407986/ta-thrylika-ladera-tis-kritis-12-syntages-synarpastika-litis-mageirikis/",
+        "https://www.kathimerini.gr/athletics/564409408/alvania-o-proedros-tis-ntinamo-tiranon-eloyse-me-metrita-toys-paiktes-sta-apodytiria/"
       ],
-      "seen_at_utc": "2026-08-19T13:51:18.934025+00:00"
+      "seen_at_utc": "2026-08-19T14:17:06.342705+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1272,28 @@
       "seen_at_utc": "2026-08-19T13:51:18.934118+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1450646/ti-leei-to-ypoyrgeio-amynas-gia-ti-metafora-patriot-sti-soyda-ena-apo-ta-senaria-poy-exetazontai/",
-      "title": "Τι λέει το υπουργείο Άμυνας για τη μεταφορά Patriot στη Σούδα: «Ένα από τα σενάρια που εξετάζονται»",
-      "normalized_title": "ΤΙ ΛΕΕΙ ΤΟ ΥΠΟΥΡΓΕΙΟ ΑΜΥΝΑΣ ΓΙΑ ΤΗ ΜΕΤΑΦΟΡΑ PATRIOT ΣΤΗ ΣΟΥΔΑ: «ΕΝΑ ΑΠΟ ΤΑ ΣΕΝΑΡΙΑ ΠΟΥ ΕΞΕΤΑΖΟΝΤΑΙ»",
+      "url": "https://www.efsyn.gr/ellada/1450679/mesologgi-syllipseis-gia-xylodarmo-kai-apeiles-kata-16hronoy/",
+      "title": "Μεσολόγγι: Συλλήψεις για ξυλοδαρμό και απειλές κατά 16χρονου",
+      "normalized_title": "ΜΕΣΟΛΟΓΓΙ: ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΞΥΛΟΔΑΡΜΟ ΚΑΙ ΑΠΕΙΛΕΣ ΚΑΤΑ 16ΧΡΟΝΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1450646/ti-leei-to-ypoyrgeio-amynas-gia-ti-metafora-patriot-sti-soyda-ena-apo-ta-senaria-poy-exetazontai/",
-        "https://www.efsyn.gr/ellada/1450611/malia-synelifthi-29hronos-poy-epese-me-to-aytokinito-toy-pano-se-toyristes-traymatistike-mia-vretanida/",
-        "https://www.efsyn.gr/periballon/1450463/perivallontikes-organoseis-pros-ypen-meta-apo-reportaz-tis-ef-syn-diereyniste-amesa-tis-paranomes-ylotomiseis/"
+        "https://www.efsyn.gr/ellada/1450679/mesologgi-syllipseis-gia-xylodarmo-kai-apeiles-kata-16hronoy/",
+        "https://www.efsyn.gr/kosmos/1450675/oykrania-neo-kroysma-diafthoras-fernei-mpelades-ston-zelenski-apopemfthike-axiomatoyhos-toy-proedrikoy-grafeioy/",
+        "https://www.efsyn.gr/kosmos/1450644/gaza-epeita-apo-25-hronia-o-idf-xekina-ereyna-gia-ti-dolofonia-tis-6hronis-hint-ratzamp-i-istoria-poy-sygklonise/"
       ],
-      "seen_at_utc": "2026-08-19T13:51:18.934103+00:00"
+      "seen_at_utc": "2026-08-19T14:17:06.342779+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/sports/football/nistroup-otan-eisai-se-mia-omada-opos-o-panathinaikos-i-nootropia-prepei-na-einai-nikiti/",
-      "title": "Νίστρουπ: «Όταν είσαι σε μία ομάδα όπως ο Παναθηναϊκός, η νοοτροπία πρέπει να είναι νικητή»",
-      "normalized_title": "ΝΙΣΤΡΟΥΠ: «ΟΤΑΝ ΕΙΣΑΙ ΣΕ ΜΙΑ ΟΜΑΔΑ ΟΠΩΣ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ, Η ΝΟΟΤΡΟΠΙΑ ΠΡΕΠΕΙ ΝΑ ΕΙΝΑΙ ΝΙΚΗΤΗ»",
+      "url": "https://www.in.gr/2026/08/19/world/ft-i-venezouela-egkataleipei-ton-madouro-sti-moira-tou-me-gnomona-tin-epiviosi/",
+      "title": "Η Βενεζουέλα εγκαταλείπει (;) τον Μαδούρο στη μοίρα του με γνώμονα «την επιβίωση»",
+      "normalized_title": "Η ΒΕΝΕΖΟΥΕΛΑ ΕΓΚΑΤΑΛΕΙΠΕΙ (;) ΤΟΝ ΜΑΔΟΥΡΟ ΣΤΗ ΜΟΙΡΑ ΤΟΥ ΜΕ ΓΝΩΜΟΝΑ «ΤΗΝ ΕΠΙΒΙΩΣΗ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/sports/football/nistroup-otan-eisai-se-mia-omada-opos-o-panathinaikos-i-nootropia-prepei-na-einai-nikiti/",
-        "https://www.in.gr/2026/08/19/in-science/episthmes/eksatomikeymeno-emvolio-mrna-tis-moderna-ayksanei-tin-epiviosi-asthenon-me-melanoma/",
-        "https://www.in.gr/2026/08/19/world/to-nato-proeidopoiei-to-iran-tha-yperaspistoume-tous-symmaxous-mas-apo-opoiadipote-apeili/"
+        "https://www.in.gr/2026/08/19/world/ft-i-venezouela-egkataleipei-ton-madouro-sti-moira-tou-me-gnomona-tin-epiviosi/",
+        "https://www.in.gr/2026/08/19/greece/poso-alkool-exei-to-kathe-potiri-potou-oi-diafores-metaksy-mpyras-krasiou-ouzou-kai-tsipourou/",
+        "https://www.in.gr/2026/08/19/life/selin-ntion-i-megali-epistrofi-enos-icon-sto-harpers-bazaar-den-zo-me-tin-astheneia-zo-me-ti-zoi/",
+        "https://www.in.gr/2026/08/19/sports/football/live-ta-prokrimatika-tou-superbet-kypellou-ellados-oli-i-drasi/"
       ],
-      "seen_at_utc": "2026-08-19T13:51:18.934068+00:00"
+      "seen_at_utc": "2026-08-19T14:17:06.342749+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T13:51:18.934198+00:00"
+  "updated_at_utc": "2026-08-19T14:17:06.342844+00:00"
 }
