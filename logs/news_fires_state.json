@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564409483/michaniki-vlavi-sto-ploio-athina-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/",
-      "title": "Μηχανική βλάβη στο πλοίο «ΑΘΗΝΑ» – Δεν εκτελέστηκε το δρομολόγιο για Αίγινα και Αγκίστρι",
-      "normalized_title": "ΜΗΧΑΝΙΚΗ ΒΛΑΒΗ ΣΤΟ ΠΛΟΙΟ «ΑΘΗΝΑ» – ΔΕΝ ΕΚΤΕΛΕΣΤΗΚΕ ΤΟ ΔΡΟΜΟΛΟΓΙΟ ΓΙΑ ΑΙΓΙΝΑ ΚΑΙ ΑΓΚΙΣΤΡΙ",
+      "url": "https://www.kathimerini.gr/society/564409495/oi-ntopioi-to-apokaloyn-anedosa-h-spania-gia-tin-epochi-omichli-poy-skepase-to-aigaio/",
+      "title": "«Οι ντόπιοι το αποκαλούν ανεδοσά»: H σπάνια για την εποχή ομίχλη που σκέπασε το Αιγαίο",
+      "normalized_title": "«ΟΙ ΝΤΟΠΙΟΙ ΤΟ ΑΠΟΚΑΛΟΥΝ ΑΝΕΔΟΣΑ»: H ΣΠΑΝΙΑ ΓΙΑ ΤΗΝ ΕΠΟΧΗ ΟΜΙΧΛΗ ΠΟΥ ΣΚΕΠΑΣΕ ΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564409483/michaniki-vlavi-sto-ploio-athina-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/"
+        "https://www.kathimerini.gr/society/564409495/oi-ntopioi-to-apokaloyn-anedosa-h-spania-gia-tin-epochi-omichli-poy-skepase-to-aigaio/",
+        "https://www.kathimerini.gr/culture/music/564409480/frank-beard-i-antifatiki-ischys-piso-apo-tis-geneiades-ton-zz-top/"
       ],
-      "seen_at_utc": "2026-08-19T14:29:56.973885+00:00"
+      "seen_at_utc": "2026-08-19T14:52:17.197233+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866883/auti-tin-kuriaki-mi-hasete-to-proto-thema/?utm_source=rss",
-      "title": "Αυτή την Κυριακή, μη χάσετε το Πρώτο Θέμα",
-      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ, ΜΗ ΧΑΣΕΤΕ ΤΟ ΠΡΩΤΟ ΘΕΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1866905/sudagmatiki-i-mi-epanafora-ton-doron-stous-dimosious-upallilous-to-skeptiko-tou-sumvouliou-tis-epikrateias/?utm_source=rss",
+      "title": "Συνταγματική η μη επαναφορά των δώρων στους δημοσίους υπαλλήλους, το σκεπτικό του Συμβουλίου της Επικρατείας",
+      "normalized_title": "ΣΥΝΤΑΓΜΑΤΙΚΗ Η ΜΗ ΕΠΑΝΑΦΟΡΑ ΤΩΝ ΔΩΡΩΝ ΣΤΟΥΣ ΔΗΜΟΣΙΟΥΣ ΥΠΑΛΛΗΛΟΥΣ, ΤΟ ΣΚΕΠΤΙΚΟ ΤΟΥ ΣΥΜΒΟΥΛΙΟΥ ΤΗΣ ΕΠΙΚΡΑΤΕΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866883/auti-tin-kuriaki-mi-hasete-to-proto-thema/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866882/exarsi-gastrederitidas-sti-rodo-eos-kai-50-peristatika-kathe-mera-sta-epeigoda/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866879/thriler-sti-larisa-60hroni-vrethike-nekri-sto-diamerisma-tis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866905/sudagmatiki-i-mi-epanafora-ton-doron-stous-dimosious-upallilous-to-skeptiko-tou-sumvouliou-tis-epikrateias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866899/eleutheros-me-perioristikous-orous-o-32hronos-odigos-taxi-gia-to-trohaio-sti-voula-paraplanithika-apo-to-gps-upostirixe/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866897/kairos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T13:51:18.934118+00:00"
+      "seen_at_utc": "2026-08-19T14:52:17.197382+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1450671/cnn-ayti-einai-i-natali-harp-i-polysyzitimeni-synergatis-kerveros-toy-tramp/",
-      "title": "Νάταλι Χαρπ: Η πολυσυζητημένη συνεργάτις του Τραμπ που κρύφτηκε ακόμη και σε πορτ μπαγκάζ για να είναι κοντά του",
-      "normalized_title": "ΝΑΤΑΛΙ ΧΑΡΠ: Η ΠΟΛΥΣΥΖΗΤΗΜΕΝΗ ΣΥΝΕΡΓΑΤΙΣ ΤΟΥ ΤΡΑΜΠ ΠΟΥ ΚΡΥΦΤΗΚΕ ΑΚΟΜΗ ΚΑΙ ΣΕ ΠΟΡΤ ΜΠΑΓΚΑΖ ΓΙΑ ΝΑ ΕΙΝΑΙ ΚΟΝΤΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1450714/peiraias-mihaniki-vlavi-se-ploio-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/",
+      "title": "Πειραιάς: Μηχανική βλάβη σε πλοίο – Δεν εκτελέστηκε το δρομολόγιο για Αίγινα και Αγκίστρι",
+      "normalized_title": "ΠΕΙΡΑΙΑΣ: ΜΗΧΑΝΙΚΗ ΒΛΑΒΗ ΣΕ ΠΛΟΙΟ – ΔΕΝ ΕΚΤΕΛΕΣΤΗΚΕ ΤΟ ΔΡΟΜΟΛΟΓΙΟ ΓΙΑ ΑΙΓΙΝΑ ΚΑΙ ΑΓΚΙΣΤΡΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1450671/cnn-ayti-einai-i-natali-harp-i-polysyzitimeni-synergatis-kerveros-toy-tramp/",
-        "https://www.efsyn.gr/kosmos/1450687/rosia-friktos-thanatos-29hronis-kataskinotrias-apo-arkoyda-stin-oroseira-altai/",
-        "https://www.efsyn.gr/kosmos/1450677/sygkinisi-stin-indonisia-mia-84hroni-anasyrthike-zontani-apo-ta-ereipia-treis-meres-meta-ton-foniko-seismo/"
+        "https://www.efsyn.gr/ellada/1450714/peiraias-mihaniki-vlavi-se-ploio-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/",
+        "https://www.efsyn.gr/kosmos/1450705/mparaz-gynaikoktonion-stin-italia-simeiothikan-6-neoi-fonoi-mesa-se-5-molis-meres/",
+        "https://www.efsyn.gr/ellada/1450704/salamina-sygklonistiki-perigrafi-zeygarioy-gia-ti-mahi-me-tis-floges-horis-ta-zoa-moy-den-feygo-vinteo/",
+        "https://www.efsyn.gr/life/1450678/hrysonetai-o-tom-holant-tha-parei-100-ekat-dolaria-gia-ti-nea-tainia-toy-spider-man-poy-gnorizei-terastia-emporiki-epityhia/",
+        "https://www.efsyn.gr/kosmos/1450698/gallia-epipleon-1-243-thanatoi-sti-hora-kata-ti-diarkeia-ton-kymaton-kaysona-toy-ioylioy/"
       ],
-      "seen_at_utc": "2026-08-19T14:29:56.974022+00:00"
+      "seen_at_utc": "2026-08-19T14:52:17.197340+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/sports/on-field/ora-atromitou-sto-renti-oi-odigies-tou-menti-stous-erythroleykous-gia-tin-premiera-tou-protathlimatos/",
-      "title": "Ώρα… Ατρόμητου στο Ρέντη – Οι οδηγίες του Μέντι στους «ερυθρόλευκους» για την πρεμιέρα του πρωταθλήματος",
-      "normalized_title": "ΩΡΑ… ΑΤΡΟΜΗΤΟΥ ΣΤΟ ΡΕΝΤΗ – ΟΙ ΟΔΗΓΙΕΣ ΤΟΥ ΜΕΝΤΙ ΣΤΟΥΣ «ΕΡΥΘΡΟΛΕΥΚΟΥΣ» ΓΙΑ ΤΗΝ ΠΡΕΜΙΕΡΑ ΤΟΥ ΠΡΩΤΑΘΛΗΜΑΤΟΣ",
+      "url": "https://www.in.gr/2026/08/19/sports/football/i-vernter-vremis-aperripse-protasi-tou-panathinaikou-gia-ton-stagke-posa-prosfere-to-trifylli/",
+      "title": "Η Βέρντερ απέρριψε πρόταση του Παναθηναϊκού για τον Στάγκε – Πόσα πρόσφερε το «τριφύλλι»",
+      "normalized_title": "Η ΒΕΡΝΤΕΡ ΑΠΕΡΡΙΨΕ ΠΡΟΤΑΣΗ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΓΙΑ ΤΟΝ ΣΤΑΓΚΕ – ΠΟΣΑ ΠΡΟΣΦΕΡΕ ΤΟ «ΤΡΙΦΥΛΛΙ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/sports/on-field/ora-atromitou-sto-renti-oi-odigies-tou-menti-stous-erythroleykous-gia-tin-premiera-tou-protathlimatos/",
-        "https://www.in.gr/2026/08/19/world/etoimi-i-tourkia-gia-eksorykseis-petrelaiou-sti-syria-ypegrafi-mnimonio-kai-gia-fosforika-alata/"
+        "https://www.in.gr/2026/08/19/sports/football/i-vernter-vremis-aperripse-protasi-tou-panathinaikou-gia-ton-stagke-posa-prosfere-to-trifylli/",
+        "https://www.in.gr/2026/08/19/life/culture-live/apo-ti-valtiki-sti-mesogeio-to-piraeus-port-film-festival-epistrefei-gia-3i-xronia/"
       ],
-      "seen_at_utc": "2026-08-19T14:29:56.973942+00:00"
+      "seen_at_utc": "2026-08-19T14:52:17.197292+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T14:29:56.974093+00:00"
+  "updated_at_utc": "2026-08-19T14:52:17.197468+00:00"
 }
