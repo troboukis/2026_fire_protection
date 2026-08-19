@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564409495/oi-ntopioi-to-apokaloyn-anedosa-h-spania-gia-tin-epochi-omichli-poy-skepase-to-aigaio/",
-      "title": "«Οι ντόπιοι το αποκαλούν ανεδοσά»: H σπάνια για την εποχή ομίχλη που σκέπασε το Αιγαίο",
-      "normalized_title": "«ΟΙ ΝΤΟΠΙΟΙ ΤΟ ΑΠΟΚΑΛΟΥΝ ΑΝΕΔΟΣΑ»: H ΣΠΑΝΙΑ ΓΙΑ ΤΗΝ ΕΠΟΧΗ ΟΜΙΧΛΗ ΠΟΥ ΣΚΕΠΑΣΕ ΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.kathimerini.gr/society/564409561/rodos-kathe-mera-50-astheneis-me-gastrenteritida-sto-nosokomeio/",
+      "title": "Ρόδος: Κάθε μέρα 50 ασθενείς με γαστρεντερίτιδα στο νοσοκομείο",
+      "normalized_title": "ΡΟΔΟΣ: ΚΑΘΕ ΜΕΡΑ 50 ΑΣΘΕΝΕΙΣ ΜΕ ΓΑΣΤΡΕΝΤΕΡΙΤΙΔΑ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564409495/oi-ntopioi-to-apokaloyn-anedosa-h-spania-gia-tin-epochi-omichli-poy-skepase-to-aigaio/",
-        "https://www.kathimerini.gr/culture/music/564409480/frank-beard-i-antifatiki-ischys-piso-apo-tis-geneiades-ton-zz-top/"
+        "https://www.kathimerini.gr/society/564409561/rodos-kathe-mera-50-astheneis-me-gastrenteritida-sto-nosokomeio/",
+        "https://www.kathimerini.gr/life/technology/564409465/meta-tis-epitheseis-tis-openai-frenaroyn-tin-ekpaideysi-tis-technitis-noimosynis/",
+        "https://www.kathimerini.gr/world/564409459/tramp-charp-mia-schesi-poy-prokalei-psithyroys-stin-oyasigkton/",
+        "https://www.kathimerini.gr/economy/local/564408748/aade-sygkrisi-dilothenton-me-dapanes-kai-perioysia/"
       ],
-      "seen_at_utc": "2026-08-19T14:52:17.197233+00:00"
+      "seen_at_utc": "2026-08-19T15:17:03.928823+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,28 +1273,27 @@
       "seen_at_utc": "2026-08-19T14:52:17.197382+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450714/peiraias-mihaniki-vlavi-se-ploio-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/",
-      "title": "Πειραιάς: Μηχανική βλάβη σε πλοίο – Δεν εκτελέστηκε το δρομολόγιο για Αίγινα και Αγκίστρι",
-      "normalized_title": "ΠΕΙΡΑΙΑΣ: ΜΗΧΑΝΙΚΗ ΒΛΑΒΗ ΣΕ ΠΛΟΙΟ – ΔΕΝ ΕΚΤΕΛΕΣΤΗΚΕ ΤΟ ΔΡΟΜΟΛΟΓΙΟ ΓΙΑ ΑΙΓΙΝΑ ΚΑΙ ΑΓΚΙΣΤΡΙ",
+      "url": "https://www.efsyn.gr/kosmos/1450715/gallia-se-ishy-o-nomos-gia-tin-ypovoithoymeni-aytoktonia-oi-aystires-proypotheseis-kai-oi-antidraseis/",
+      "title": "Γαλλία: Σε ισχύ ο νόμος για την «υποβοηθούμενη αυτοκτονία» – Οι αυστηρές προϋποθέσεις και οι αντιδράσεις",
+      "normalized_title": "ΓΑΛΛΙΑ: ΣΕ ΙΣΧΥ Ο ΝΟΜΟΣ ΓΙΑ ΤΗΝ «ΥΠΟΒΟΗΘΟΥΜΕΝΗ ΑΥΤΟΚΤΟΝΙΑ» – ΟΙ ΑΥΣΤΗΡΕΣ ΠΡΟΥΠΟΘΕΣΕΙΣ ΚΑΙ ΟΙ ΑΝΤΙΔΡΑΣΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450714/peiraias-mihaniki-vlavi-se-ploio-den-ektelestike-to-dromologio-gia-aigina-kai-agkistri/",
-        "https://www.efsyn.gr/kosmos/1450705/mparaz-gynaikoktonion-stin-italia-simeiothikan-6-neoi-fonoi-mesa-se-5-molis-meres/",
-        "https://www.efsyn.gr/ellada/1450704/salamina-sygklonistiki-perigrafi-zeygarioy-gia-ti-mahi-me-tis-floges-horis-ta-zoa-moy-den-feygo-vinteo/",
-        "https://www.efsyn.gr/life/1450678/hrysonetai-o-tom-holant-tha-parei-100-ekat-dolaria-gia-ti-nea-tainia-toy-spider-man-poy-gnorizei-terastia-emporiki-epityhia/",
-        "https://www.efsyn.gr/kosmos/1450698/gallia-epipleon-1-243-thanatoi-sti-hora-kata-ti-diarkeia-ton-kymaton-kaysona-toy-ioylioy/"
+        "https://www.efsyn.gr/kosmos/1450715/gallia-se-ishy-o-nomos-gia-tin-ypovoithoymeni-aytoktonia-oi-aystires-proypotheseis-kai-oi-antidraseis/",
+        "https://www.efsyn.gr/ellada/1450724/sifnos-sygklonizei-o-giatros-tis-sifnoy-o-pilotos-ektinahthike-zontanos-kai-paleye-me-ti-fotia-gia-na-sothei-vinteo/",
+        "https://www.efsyn.gr/life/1450706/i-aihmiri-anartisi-tis-elenis-rantoy-gia-ton-ilikiako-ratsismo-stin-paralia-apantahoy-gynaikes-mi-masate/",
+        "https://www.efsyn.gr/kosmos/1450503/seismos-stin-kolomvia-tragika-apoysa-i-kyvernisi-o-proedros-moirazei-yposheseis-kai-etoimazetai-gia-mpiznes-me-ipa-kai-israil/"
       ],
-      "seen_at_utc": "2026-08-19T14:52:17.197340+00:00"
+      "seen_at_utc": "2026-08-19T15:17:03.928905+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/sports/football/i-vernter-vremis-aperripse-protasi-tou-panathinaikou-gia-ton-stagke-posa-prosfere-to-trifylli/",
-      "title": "Η Βέρντερ απέρριψε πρόταση του Παναθηναϊκού για τον Στάγκε – Πόσα πρόσφερε το «τριφύλλι»",
-      "normalized_title": "Η ΒΕΡΝΤΕΡ ΑΠΕΡΡΙΨΕ ΠΡΟΤΑΣΗ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΓΙΑ ΤΟΝ ΣΤΑΓΚΕ – ΠΟΣΑ ΠΡΟΣΦΕΡΕ ΤΟ «ΤΡΙΦΥΛΛΙ»",
+      "url": "https://www.in.gr/2026/08/19/in-science/ai/i-openai-vazei-ston-pago-ta-nea-tis-montela-meta-tis-anisyxitikes-kyvernoepitheseis/",
+      "title": "Η OpenAI βάζει στον πάγο τα νέα της μοντέλα μετά τις ανησυχητικές κυβερνοεπιθέσεις",
+      "normalized_title": "Η OPENAI ΒΑΖΕΙ ΣΤΟΝ ΠΑΓΟ ΤΑ ΝΕΑ ΤΗΣ ΜΟΝΤΕΛΑ ΜΕΤΑ ΤΙΣ ΑΝΗΣΥΧΗΤΙΚΕΣ ΚΥΒΕΡΝΟΕΠΙΘΕΣΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/sports/football/i-vernter-vremis-aperripse-protasi-tou-panathinaikou-gia-ton-stagke-posa-prosfere-to-trifylli/",
-        "https://www.in.gr/2026/08/19/life/culture-live/apo-ti-valtiki-sti-mesogeio-to-piraeus-port-film-festival-epistrefei-gia-3i-xronia/"
+        "https://www.in.gr/2026/08/19/in-science/ai/i-openai-vazei-ston-pago-ta-nea-tis-montela-meta-tis-anisyxitikes-kyvernoepitheseis/",
+        "https://www.in.gr/2026/08/19/greece/ste-syntagmatiki-i-perikopi-ton-doron-sto-dimosio/"
       ],
-      "seen_at_utc": "2026-08-19T14:52:17.197292+00:00"
+      "seen_at_utc": "2026-08-19T15:17:03.928864+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T14:52:17.197468+00:00"
+  "updated_at_utc": "2026-08-19T15:17:03.928967+00:00"
 }
