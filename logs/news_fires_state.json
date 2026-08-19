@@ -1,18 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564408526/oi-paraxenies-tis-istorias/",
-      "title": "Οι παραξενιές της Ιστορίας",
-      "normalized_title": "ΟΙ ΠΑΡΑΞΕΝΙΕΣ ΤΗΣ ΙΣΤΟΡΙΑΣ",
+      "url": "https://www.kathimerini.gr/economy/business/564408769/ayxisi-kerdon-sta-53-3-ekat-gia-ethniki-asfalistiki-to-proto-examino/",
+      "title": "Αύξηση κερδών στα 53,3 εκατ. για Εθνική Ασφαλιστική το πρώτο εξάμηνο",
+      "normalized_title": "ΑΥΞΗΣΗ ΚΕΡΔΩΝ ΣΤΑ 53,3 ΕΚΑΤ. ΓΙΑ ΕΘΝΙΚΗ ΑΣΦΑΛΙΣΤΙΚΗ ΤΟ ΠΡΩΤΟ ΕΞΑΜΗΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564408526/oi-paraxenies-tis-istorias/",
-        "https://www.kathimerini.gr/opinion/564408538/sta-voyna-ton-aygoysto/",
-        "https://www.kathimerini.gr/opinion/564408544/mprosta-sti-voyli/",
-        "https://www.kathimerini.gr/opinion/564408349/rekor-sti-samarina/",
-        "https://www.kathimerini.gr/economy/international/564408826/oi-aities-piso-apo-to-alma-apodoseon-sta-kratika-omologa/",
-        "https://www.kathimerini.gr/world/564408931/ipa-kai-kanadas-apefygan-stis-kathysteriseis-toys-neoys-dasmoys-50-triimeri-anastoli-apo-tramp/"
+        "https://www.kathimerini.gr/economy/business/564408769/ayxisi-kerdon-sta-53-3-ekat-gia-ethniki-asfalistiki-to-proto-examino/",
+        "https://www.kathimerini.gr/world/564408934/ft-to-iran-exetazei-pligmata-stin-eyropi-an-o-tramp-klimakosei-ton-polemo/",
+        "https://www.kathimerini.gr/society/564408952/pano-apo-5-000-ilektrikes-ekkenoseis-stin-ellada-se-18-ores-ti-deichnoyn-ta-stoicheia-toy-meteo/",
+        "https://www.kathimerini.gr/economy/local/564408745/eikoniki-dieythynsi-apo-efka-gia-ligoteres-episkepseis-sta-gkise/",
+        "https://www.kathimerini.gr/columns/564408166/i-trypa-ton-822-dis-oi-fraoyles-toy-tramp-to-moiraio-lathos-tis-ai-kai-pos-ta-4-15-ekat-eginan-27-46-ekat-eyro/",
+        "https://www.kathimerini.gr/opinion/564408523/protaseis-theloyme-protaseis/"
       ],
-      "seen_at_utc": "2026-08-19T05:30:04.391994+00:00"
+      "seen_at_utc": "2026-08-19T05:51:08.216401+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,37 +1264,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866601/epeigoda-poso-sudoma-tha-boroume-na-doume-sto-kinito-tous-hronous-anamonis-mias-efimerias/?utm_source=rss",
-      "title": "Επείγοντα: Πόσο σύντομα θα μπορούμε να δούμε στο κινητό τους χρόνους αναμονής μιας εφημερίας",
-      "normalized_title": "ΕΠΕΙΓΟΝΤΑ: ΠΟΣΟ ΣΥΝΤΟΜΑ ΘΑ ΜΠΟΡΟΥΜΕ ΝΑ ΔΟΥΜΕ ΣΤΟ ΚΙΝΗΤΟ ΤΟΥΣ ΧΡΟΝΟΥΣ ΑΝΑΜΟΝΗΣ ΜΙΑΣ ΕΦΗΜΕΡΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1866615/kupros-tragodia-sti-lemeso-vrethike-nekro-vrefos-pede-minon/?utm_source=rss",
+      "title": "Κύπρος: Τραγωδία στη Λεμεσό, βρέθηκε νεκρό βρέφος πέντε μηνών",
+      "normalized_title": "ΚΥΠΡΟΣ: ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΕΜΕΣΟ, ΒΡΕΘΗΚΕ ΝΕΚΡΟ ΒΡΕΦΟΣ ΠΕΝΤΕ ΜΗΝΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866601/epeigoda-poso-sudoma-tha-boroume-na-doume-sto-kinito-tous-hronous-anamonis-mias-efimerias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866615/kupros-tragodia-sti-lemeso-vrethike-nekro-vrefos-pede-minon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T05:17:00.197934+00:00"
+      "seen_at_utc": "2026-08-19T05:51:08.216521+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1450233/aihmes-karystianoy-gia-varidia-poy-ithelan-na-dialysoyn-to-komma-ithelan-na-kanoyn-koymanto/",
-      "title": "Αιχμές Καρυστιανού για «βαρίδια» που ήθελαν να διαλύσουν το κόμμα: «Ηθελαν να κάνουν κουμάντο»",
-      "normalized_title": "ΑΙΧΜΕΣ ΚΑΡΥΣΤΙΑΝΟΥ ΓΙΑ «ΒΑΡΙΔΙΑ» ΠΟΥ ΗΘΕΛΑΝ ΝΑ ΔΙΑΛΥΣΟΥΝ ΤΟ ΚΟΜΜΑ: «ΗΘΕΛΑΝ ΝΑ ΚΑΝΟΥΝ ΚΟΥΜΑΝΤΟ»",
+      "url": "https://www.efsyn.gr/oikonomia/1450269/toyrismos-gia-oloys-antistrofi-metrisi-gia-tis-aitiseis-eos-600-eyro-to-voucher/",
+      "title": "«Τουρισμός για όλους»: Αντίστροφη μέτρηση για το voucher έως 600 ευρώ",
+      "normalized_title": "«ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ»: ΑΝΤΙΣΤΡΟΦΗ ΜΕΤΡΗΣΗ ΓΙΑ ΤΟ VOUCHER ΕΩΣ 600 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1450233/aihmes-karystianoy-gia-varidia-poy-ithelan-na-dialysoyn-to-komma-ithelan-na-kanoyn-koymanto/",
-        "https://www.efsyn.gr/athlitismos/1450255/tzamal-moysiala-katerreyse-gia-deyteri-fora-mesa-se-tesseris-imeres-ti-dilose-o-podosfairistis/",
-        "https://www.efsyn.gr/politiki/1450264/o-syriza-den-dinei-mahi-epiviosis/",
-        "https://www.efsyn.gr/politiki/1450257/dikastiki-dikaiosi-gia-tin-elena-akrita/"
+        "https://www.efsyn.gr/oikonomia/1450269/toyrismos-gia-oloys-antistrofi-metrisi-gia-tis-aitiseis-eos-600-eyro-to-voucher/",
+        "https://www.efsyn.gr/kosmos/1450293/tragodia-stin-kypro-vrefos-5-minon-vrethike-nekro-sto-krevati-toy/",
+        "https://www.efsyn.gr/athlitismos/1450260/o-mentilimpar-thelei-hil/",
+        "https://www.efsyn.gr/ellada/1450249/halkidiki-nero-kai-reyma-apoysiazoyn-se-kalokairines-diakopes/",
+        "https://www.efsyn.gr/ellada/1450275/irakleio-ektos-ypiresias-astynomikos-akinitopoiise-katazitoymeno-kai-traymatistike/",
+        "https://www.efsyn.gr/ellada/1450241/arhaiologiko-moyseio-giapi-sti-hio-to-ypoyrgeio-politismoy-dinei-apantiseis-horis-exigiseis/",
+        "https://www.efsyn.gr/kosmos/1450272/gaza-genoktonias-syneheia-exi-nekroi-apo-israilinoys-vomvardismoys-anamesa-sta-thymata-paidi/"
       ],
-      "seen_at_utc": "2026-08-19T05:17:00.197905+00:00"
+      "seen_at_utc": "2026-08-19T05:51:08.216496+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/world/anafores-oti-to-iran-sxediazei-pligmata-se-amerikanikous-stoxous-stin-eyropi-an-o-tramp-klimakosei-ton-polemo/",
-      "title": "Αναφορές ότι το Ιράν σχεδιάζει πλήγματα σε αμερικανικούς στόχους στην Ευρώπη αν ο Τραμπ κλιμακώσει τον πόλεμο",
-      "normalized_title": "ΑΝΑΦΟΡΕΣ ΟΤΙ ΤΟ ΙΡΑΝ ΣΧΕΔΙΑΖΕΙ ΠΛΗΓΜΑΤΑ ΣΕ ΑΜΕΡΙΚΑΝΙΚΟΥΣ ΣΤΟΧΟΥΣ ΣΤΗΝ ΕΥΡΩΠΗ ΑΝ Ο ΤΡΑΜΠ ΚΛΙΜΑΚΩΣΕΙ ΤΟΝ ΠΟΛΕΜΟ",
+      "url": "https://www.in.gr/2026/08/19/economy/diethnis-oikonomia/ipa-kanadas-sto-para-ena-symfonia-anesteile-o-tramp-tous-dasmous-antipoina/",
+      "title": "Στο παρά ένα ΗΠΑ και Καναδάς κατέληξαν σε συμφωνία - Ανέστειλε ο Τραμπ τους δασμούς «αντιποινα»",
+      "normalized_title": "ΣΤΟ ΠΑΡΑ ΕΝΑ ΗΠΑ ΚΑΙ ΚΑΝΑΔΑΣ ΚΑΤΕΛΗΞΑΝ ΣΕ ΣΥΜΦΩΝΙΑ - ΑΝΕΣΤΕΙΛΕ Ο ΤΡΑΜΠ ΤΟΥΣ ΔΑΣΜΟΥΣ «ΑΝΤΙΠΟΙΝΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/world/anafores-oti-to-iran-sxediazei-pligmata-se-amerikanikous-stoxous-stin-eyropi-an-o-tramp-klimakosei-ton-polemo/",
-        "https://www.in.gr/2026/08/19/economy/oikonomikes-eidiseis/eurostat-ston-pato-tis-eyropis-i-ellada-stis-dapanes-gia-tin-paideia-oi-xores-pou-vriskontai-stin-koryfi-tis-listas/",
-        "https://www.in.gr/2026/08/19/plus/medianews/swan-behind-the-scenes-to-akrovatiko-ypertheama-tis-kinas-erxetai-stin-ellada/"
+        "https://www.in.gr/2026/08/19/economy/diethnis-oikonomia/ipa-kanadas-sto-para-ena-symfonia-anesteile-o-tramp-tous-dasmous-antipoina/",
+        "https://www.in.gr/2026/08/19/greece/sifnos-to-pithanotero-senario-gia-tin-ptosi-tou-elikopterou-akeraia-entopistikan-ta-ptomata/",
+        "https://www.in.gr/2026/08/19/sports/basketball/fournie-prepei-na-kerdiseis-ti-thesi-sou-stin-ethniki/",
+        "https://www.in.gr/2026/08/19/editorial/oute-krayges-oute-efisyxasmos-sta-ellinotourkika/",
+        "https://www.in.gr/2026/08/19/life/music/frank-mpernt-pethane-o-ntramer-ton-zz-top-se-ilikia-77-xronon/",
+        "https://www.in.gr/2026/08/19/world/tramp-to-adeiasma-tis-notias-koreas-kai-oi-apeiles-sto-oman-skeptikismos-stous-symmaxous-ton-ipa-stin-asia/"
       ],
-      "seen_at_utc": "2026-08-19T05:17:00.197863+00:00"
+      "seen_at_utc": "2026-08-19T05:51:08.216457+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T05:30:04.392076+00:00"
+  "updated_at_utc": "2026-08-19T05:51:08.216616+00:00"
 }
