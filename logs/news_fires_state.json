@@ -1,18 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564409372/kyklades-pykni-omichli-ekrypse-ta-nisia-entyposiakes-eikones/",
-      "title": "Κυκλάδες: Πυκνή ομίχλη «έκρυψε» τα νησιά – Εντυπωσιακές εικόνες",
-      "normalized_title": "ΚΥΚΛΑΔΕΣ: ΠΥΚΝΗ ΟΜΙΧΛΗ «ΕΚΡΥΨΕ» ΤΑ ΝΗΣΙΑ – ΕΝΤΥΠΩΣΙΑΚΕΣ ΕΙΚΟΝΕΣ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564408370/dialogoi-stin-k-klimakosi-toy-toyrkikoy-anatheoritismoy/",
+      "title": "Διάλογοι στην «Κ»: Κλιμάκωση του τουρκικού αναθεωρητισμού",
+      "normalized_title": "ΔΙΑΛΟΓΟΙ ΣΤΗΝ «Κ»: ΚΛΙΜΑΚΩΣΗ ΤΟΥ ΤΟΥΡΚΙΚΟΥ ΑΝΑΘΕΩΡΗΤΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564409372/kyklades-pykni-omichli-ekrypse-ta-nisia-entyposiakes-eikones/",
-        "https://www.kathimerini.gr/opinion/readers/564408508/ta-therina-sinema-pethanan-kai-ochi-monon-ayta/",
-        "https://www.kathimerini.gr/opinion/readers/564408517/milontas-lexi-pros-lexi-choris-skepsi/",
-        "https://www.kathimerini.gr/opinion/readers/564408514/peninta-chronia-prin-se-ena-cheiroyrgeio/",
-        "https://www.kathimerini.gr/opinion/readers/564408511/dromos-dasikos-alla-adiavatos/",
-        "https://www.kathimerini.gr/society/564409366/fotia-tora-ston-geraka-ichise-to-112/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564408370/dialogoi-stin-k-klimakosi-toy-toyrkikoy-anatheoritismoy/"
       ],
-      "seen_at_utc": "2026-08-19T13:17:25.040149+00:00"
+      "seen_at_utc": "2026-08-19T13:30:00.677032+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,41 +1259,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866860/fotia-tora-ston-geraka-dipla-stin-attiki-odo-sikothikan-4-enaeria/?utm_source=rss",
-      "title": "Φωτιά τώρα στον Γέρακα δίπλα στην Αττική Οδό: 112 για ετοιμότητα, σηκώθηκαν 4 εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟΝ ΓΕΡΑΚΑ ΔΙΠΛΑ ΣΤΗΝ ΑΤΤΙΚΗ ΟΔΟ: 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ, ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1866878/mukonos-18hroni-italida-katiggeile-viasmo-se-gnosto-beach-bar-sunelifthi-23hronos/?utm_source=rss",
+      "title": "Μύκονος: 18χρονη Ιταλίδα κατήγγειλε βιασμό σε γνωστό beach bar, συνελήφθη 23χρονος",
+      "normalized_title": "ΜΥΚΟΝΟΣ: 18ΧΡΟΝΗ ΙΤΑΛΙΔΑ ΚΑΤΗΓΓΕΙΛΕ ΒΙΑΣΜΟ ΣΕ ΓΝΩΣΤΟ BEACH BAR, ΣΥΝΕΛΗΦΘΗ 23ΧΡΟΝΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866860/fotia-tora-ston-geraka-dipla-stin-attiki-odo-sikothikan-4-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866878/mukonos-18hroni-italida-katiggeile-viasmo-se-gnosto-beach-bar-sunelifthi-23hronos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1866876/ti-einai-to-fainomeno-sea-smoke-pou-exafanise-paralies-kai-nisia-apokosmes-eikones-apo-tis-kuklades/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T12:51:41.234845+00:00"
+      "seen_at_utc": "2026-08-19T13:30:00.677175+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1450624/proponitis-paok-adynato-na-vrethei-toso-syntoma-paromoias-axias-paiktis-san-ton-konstantelia/",
-      "title": "Προπονητής ΠΑΟΚ: «Αδύνατο να βρεθεί τόσο σύντομα παρόμοιας αξίας παίκτης σαν τον Κωνσταντέλια»",
-      "normalized_title": "ΠΡΟΠΟΝΗΤΗΣ ΠΑΟΚ: «ΑΔΥΝΑΤΟ ΝΑ ΒΡΕΘΕΙ ΤΟΣΟ ΣΥΝΤΟΜΑ ΠΑΡΟΜΟΙΑΣ ΑΞΙΑΣ ΠΑΙΚΤΗΣ ΣΑΝ ΤΟΝ ΚΩΝΣΤΑΝΤΕΛΙΑ»",
+      "url": "https://www.efsyn.gr/politiki/1450641/o-nikos-pappas-apanta-stin-kyvernisi-gia-to-hreos-epta-deth-kostizei-i-proori-apopliromi/",
+      "title": "Ο Νίκος Παππάς απαντά στην κυβέρνηση για το χρέος: «Επτά ΔΕΘ» κοστίζει η πρόωρη αποπληρωμή",
+      "normalized_title": "Ο ΝΙΚΟΣ ΠΑΠΠΑΣ ΑΠΑΝΤΑ ΣΤΗΝ ΚΥΒΕΡΝΗΣΗ ΓΙΑ ΤΟ ΧΡΕΟΣ: «ΕΠΤΑ ΔΕΘ» ΚΟΣΤΙΖΕΙ Η ΠΡΟΩΡΗ ΑΠΟΠΛΗΡΩΜΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1450624/proponitis-paok-adynato-na-vrethei-toso-syntoma-paromoias-axias-paiktis-san-ton-konstantelia/",
-        "https://www.efsyn.gr/athlitismos/1450612/ofi-os-terastia-proklisi-vlepei-o-kontis-to-mats-me-tin-tsska-sofias-to-perimenoyme-me-anypomonisia/",
-        "https://www.efsyn.gr/ellada/1450588/eke-gia-konstantino-tsoykala-afinei-piso-toy-ena-spoydaio-kai-polyshides-epistimoniko-ergo/",
-        "https://www.efsyn.gr/ellada/1450577/ahaia-thalamigos-me-pente-epivainontes-kollise-se-avathi-nera/",
-        "https://www.efsyn.gr/ellada/1450604/pyrkagia-konta-sto-nekrotafeio-toy-geraka-sikothikan-enaeria/",
-        "https://www.efsyn.gr/kosmos/1450582/ihiri-apantisi-dpd-stis-kyroseis-ton-ipa-fon-nter-laien-kai-kosta-sto-pleyro-toy-dikastirioy/"
+        "https://www.efsyn.gr/politiki/1450641/o-nikos-pappas-apanta-stin-kyvernisi-gia-to-hreos-epta-deth-kostizei-i-proori-apopliromi/",
+        "https://www.efsyn.gr/athlitismos/1450630/panathinaikos-pisti-gia-tin-prokrisi-kontra-stin-tsska-1948-apon-o-tettei/",
+        "https://www.efsyn.gr/ellada/1450616/konstantinos-tsoykalas-syggeneis-kai-filoi-apohairetisan-ton-megalo-dianooymeno-sti-ritsona-eikones/"
       ],
-      "seen_at_utc": "2026-08-19T13:17:25.040224+00:00"
+      "seen_at_utc": "2026-08-19T13:30:00.677138+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/greece/ekato-paidia-ton-mina-sta-nosokomeia-logo-xrisis-alkool-kanenas-elegxos-leei-o-giannakos/",
-      "title": "Εκατό παιδιά τον μήνα στα νοσοκομεία λόγω χρήσης αλκοόλ - «Κανένας έλεγχος» λέει ο Γιαννάκος",
-      "normalized_title": "ΕΚΑΤΟ ΠΑΙΔΙΑ ΤΟΝ ΜΗΝΑ ΣΤΑ ΝΟΣΟΚΟΜΕΙΑ ΛΟΓΩ ΧΡΗΣΗΣ ΑΛΚΟΟΛ - «ΚΑΝΕΝΑΣ ΕΛΕΓΧΟΣ» ΛΕΕΙ Ο ΓΙΑΝΝΑΚΟΣ",
+      "url": "https://www.in.gr/2026/08/19/greece/tragodia-sti-larisa-gynaika-vrethike-nekri-se-ypogeio-fainetai-pos-eixe-pethanei-edo-kai-kairo/",
+      "title": "Τραγωδία στη Λάρισα: Γυναίκα βρέθηκε νεκρή σε υπόγειο – Φαίνεται πως είχε πεθάνει εδώ και καιρό",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΑΡΙΣΑ: ΓΥΝΑΙΚΑ ΒΡΕΘΗΚΕ ΝΕΚΡΗ ΣΕ ΥΠΟΓΕΙΟ – ΦΑΙΝΕΤΑΙ ΠΩΣ ΕΙΧΕ ΠΕΘΑΝΕΙ ΕΔΩ ΚΑΙ ΚΑΙΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/greece/ekato-paidia-ton-mina-sta-nosokomeia-logo-xrisis-alkool-kanenas-elegxos-leei-o-giannakos/",
-        "https://www.in.gr/2026/08/19/life/culture-live/agapa-me-emena-kai-to-pligomeno-mou-ego-tainies-gia-ton-narkissisti-kallitexni-apenanti-sti-giransi/",
-        "https://www.in.gr/2026/08/19/world/touristiko-elikoptero-synetrivi-stin-kenya-i-astynomia-kanei-logo-gia-epta-nekrous/",
-        "https://www.in.gr/2026/08/19/world/dpd-i-oursoula-fon-nter-laien-kai-o-antonio-kosta-stirizoun-tous-dikastes-kontra-stis-amerikanikes-kyroseis/",
-        "https://www.in.gr/2026/08/19/sports/basketball/sto-marousi-o-lountzis/"
+        "https://www.in.gr/2026/08/19/greece/tragodia-sti-larisa-gynaika-vrethike-nekri-se-ypogeio-fainetai-pos-eixe-pethanei-edo-kai-kairo/",
+        "https://www.in.gr/2026/08/19/sports/basketball/xoris-alntama-i-ispania-kontra-stin-ellada/"
       ],
-      "seen_at_utc": "2026-08-19T13:17:25.040196+00:00"
+      "seen_at_utc": "2026-08-19T13:30:00.677090+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T13:17:25.040313+00:00"
+  "updated_at_utc": "2026-08-19T13:30:00.677248+00:00"
 }
