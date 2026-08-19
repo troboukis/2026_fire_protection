@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564409891/poios-tha-parei-ti-megalyteri-etaireia-elaioladoy-ston-kosmo/",
-      "title": "Ποιος θα πάρει τη μεγαλύτερη εταιρεία ελαιολάδου στον κόσμο",
-      "normalized_title": "ΠΟΙΟΣ ΘΑ ΠΑΡΕΙ ΤΗ ΜΕΓΑΛΥΤΕΡΗ ΕΤΑΙΡΕΙΑ ΕΛΑΙΟΛΑΔΟΥ ΣΤΟΝ ΚΟΣΜΟ",
+      "url": "https://www.kathimerini.gr/athletics/564410068/spanoylis-sigoyros-pos-tha-deixoyme-to-kalo-mas-prosopo/",
+      "title": "Σπανούλης: «Σίγουρος πως θα δείξουμε το καλό μας πρόσωπο»",
+      "normalized_title": "ΣΠΑΝΟΥΛΗΣ: «ΣΙΓΟΥΡΟΣ ΠΩΣ ΘΑ ΔΕΙΞΟΥΜΕ ΤΟ ΚΑΛΟ ΜΑΣ ΠΡΟΣΩΠΟ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564409891/poios-tha-parei-ti-megalyteri-etaireia-elaioladoy-ston-kosmo/",
-        "https://www.kathimerini.gr/society/564410062/kozani-aytokinito-epese-se-charadra-vathoys-150-metron-apegklovistikan-treis-ilikiomenoi/"
+        "https://www.kathimerini.gr/athletics/564410068/spanoylis-sigoyros-pos-tha-deixoyme-to-kalo-mas-prosopo/",
+        "https://www.kathimerini.gr/world/564409990/i-eyropi-troei-olo-kai-perissotero-pagoto/"
       ],
-      "seen_at_utc": "2026-08-19T20:17:03.671259+00:00"
+      "seen_at_utc": "2026-08-19T20:30:03.460637+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1269,23 @@
       "seen_at_utc": "2026-08-19T19:51:11.232700+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1450887/petroynias-ston-teliko-toy-eyropaikoy-enorganis-o-arhontas-ton-krikon-kyniga-to-9o-hryso-toy-metallio-vinteo/",
-      "title": "Πετρούνιας: Στον τελικό του Ευρωπαϊκού ενόργανης ο «άρχοντας των κρίκων» – Κυνηγά το 9ο χρυσό του μετάλλιο [βίντεο]",
-      "normalized_title": "ΠΕΤΡΟΥΝΙΑΣ: ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΕΥΡΩΠΑΙΚΟΥ ΕΝΟΡΓΑΝΗΣ Ο «ΑΡΧΟΝΤΑΣ ΤΩΝ ΚΡΙΚΩΝ» – ΚΥΝΗΓΑ ΤΟ 9Ο ΧΡΥΣΟ ΤΟΥ ΜΕΤΑΛΛΙΟ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1450890/kenya-nekros-o-epikefalis-ton-mystikon-ypiresion-toy-ekoyador-epese-to-elikoptero-sto-opoio-epevaine/",
+      "title": "Κένυα: Νεκρός ο επικεφαλής των μυστικών υπηρεσιών του Εκουαδόρ – Έπεσε το ελικόπτερο στο οποίο επέβαινε",
+      "normalized_title": "ΚΕΝΥΑ: ΝΕΚΡΟΣ Ο ΕΠΙΚΕΦΑΛΗΣ ΤΩΝ ΜΥΣΤΙΚΩΝ ΥΠΗΡΕΣΙΩΝ ΤΟΥ ΕΚΟΥΑΔΟΡ – ΕΠΕΣΕ ΤΟ ΕΛΙΚΟΠΤΕΡΟ ΣΤΟ ΟΠΟΙΟ ΕΠΕΒΑΙΝΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1450887/petroynias-ston-teliko-toy-eyropaikoy-enorganis-o-arhontas-ton-krikon-kyniga-to-9o-hryso-toy-metallio-vinteo/"
+        "https://www.efsyn.gr/kosmos/1450890/kenya-nekros-o-epikefalis-ton-mystikon-ypiresion-toy-ekoyador-epese-to-elikoptero-sto-opoio-epevaine/"
       ],
-      "seen_at_utc": "2026-08-19T20:17:03.671359+00:00"
+      "seen_at_utc": "2026-08-19T20:30:03.460745+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/sports/othersports/nea-monomaxia-gia-karali-kai-ntouplantis-sto-diamond-league-tis-lozanis/",
-      "title": "Νέα «μονομαχία» για Καραλή και Ντουπλάντις στο Diamond League της Λοζάνης",
-      "normalized_title": "ΝΕΑ «ΜΟΝΟΜΑΧΙΑ» ΓΙΑ ΚΑΡΑΛΗ ΚΑΙ ΝΤΟΥΠΛΑΝΤΙΣ ΣΤΟ DIAMOND LEAGUE ΤΗΣ ΛΟΖΑΝΗΣ",
+      "url": "https://www.in.gr/2026/08/19/world/ekatontades-maxites-anamesa-tous-dioikites-aytomolisan-apo-tis-rsf-tou-soudan-symfona-me-ton-strato/",
+      "title": "Εκατοντάδες μαχητές, ανάμεσά τους διοικητές, αυτομόλησαν από τις RSF του Σουδάν, σύμφωνα με τον στρατό",
+      "normalized_title": "ΕΚΑΤΟΝΤΑΔΕΣ ΜΑΧΗΤΕΣ, ΑΝΑΜΕΣΑ ΤΟΥΣ ΔΙΟΙΚΗΤΕΣ, ΑΥΤΟΜΟΛΗΣΑΝ ΑΠΟ ΤΙΣ RSF ΤΟΥ ΣΟΥΔΑΝ, ΣΥΜΦΩΝΑ ΜΕ ΤΟΝ ΣΤΡΑΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/sports/othersports/nea-monomaxia-gia-karali-kai-ntouplantis-sto-diamond-league-tis-lozanis/",
-        "https://www.in.gr/2026/08/19/greece/sifnos-ta-epikratestera-senaria-tis-moiraias-ptosis-tou-elikopterou-ti-ereynoun-ta-stelexi-tou-ellinikou-fbi/",
-        "https://www.in.gr/2026/08/19/world/germania-82xronos-omologise-ti-dolofonia-amerikanidas-touristrias-prin-apo-32-xronia-ton-prodose-to-dna/",
-        "https://www.in.gr/2026/08/19/sports/football/champions-league/deytero-gkol-gia-tin-seltik-kontra-stin-lask-2-0-vids/"
+        "https://www.in.gr/2026/08/19/world/ekatontades-maxites-anamesa-tous-dioikites-aytomolisan-apo-tis-rsf-tou-soudan-symfona-me-ton-strato/"
       ],
-      "seen_at_utc": "2026-08-19T20:17:03.671305+00:00"
+      "seen_at_utc": "2026-08-19T20:30:03.460693+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T20:17:03.671432+00:00"
+  "updated_at_utc": "2026-08-19T20:30:03.460813+00:00"
 }
