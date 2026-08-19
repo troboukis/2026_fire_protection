@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564409618/ochi-apo-ste-stin-epanafora-epidomaton-adeias-kai-eorton-sto-dimosio/",
-      "title": "«Οχι» από ΣτΕ στην επαναφορά επιδομάτων αδείας και εορτών στο Δημόσιο",
-      "normalized_title": "«ΟΧΙ» ΑΠΟ ΣΤΕ ΣΤΗΝ ΕΠΑΝΑΦΟΡΑ ΕΠΙΔΟΜΑΤΩΝ ΑΔΕΙΑΣ ΚΑΙ ΕΟΡΤΩΝ ΣΤΟ ΔΗΜΟΣΙΟ",
+      "url": "https://www.kathimerini.gr/society/564409639/trochaio-sti-voyla-eleytheros-o-odigos-taxi-toy-afairethike-ep-aoriston-to-diploma/",
+      "title": "Τροχαίο στη Βούλα: Ελεύθερος ο οδηγός ταξί – Του αφαιρέθηκε επ’ αόριστον το δίπλωμα",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΒΟΥΛΑ: ΕΛΕΥΘΕΡΟΣ Ο ΟΔΗΓΟΣ ΤΑΞΙ – ΤΟΥ ΑΦΑΙΡΕΘΗΚΕ ΕΠ’ ΑΟΡΙΣΤΟΝ ΤΟ ΔΙΠΛΩΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564409618/ochi-apo-ste-stin-epanafora-epidomaton-adeias-kai-eorton-sto-dimosio/"
+        "https://www.kathimerini.gr/society/564409639/trochaio-sti-voyla-eleytheros-o-odigos-taxi-toy-afairethike-ep-aoriston-to-diploma/"
       ],
-      "seen_at_utc": "2026-08-19T15:30:05.718013+00:00"
+      "seen_at_utc": "2026-08-19T15:51:09.686100+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1866926/purosvestiki-39-agrotodasikes-purkagies-duo-sullipseis-kai-varia-prostima-se-ena-24oro/?utm_source=rss",
-      "title": "Πυροσβεστική: 39 αγροτοδασικές πυρκαγιές, δύο συλλήψεις και βαριά πρόστιμα σε ένα 24ωρο",
-      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: 39 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΚΑΙ ΒΑΡΙΑ ΠΡΟΣΤΙΜΑ ΣΕ ΕΝΑ 24ΩΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1866927/nearoi-htupisan-kai-traumatisan-16hrono-mesa-se-katastima-sto-mesologgi-duo-sullipseis/?utm_source=rss",
+      "title": "Νεαροί χτύπησαν και τραυμάτισαν 16χρονο μέσα σε κατάστημα στο Μεσολόγγι, δύο συλλήψεις",
+      "normalized_title": "ΝΕΑΡΟΙ ΧΤΥΠΗΣΑΝ ΚΑΙ ΤΡΑΥΜΑΤΙΣΑΝ 16ΧΡΟΝΟ ΜΕΣΑ ΣΕ ΚΑΤΑΣΤΗΜΑ ΣΤΟ ΜΕΣΟΛΟΓΓΙ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1866926/purosvestiki-39-agrotodasikes-purkagies-duo-sullipseis-kai-varia-prostima-se-ena-24oro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1866925/sunagermos-ston-vurona-exafanistikan-duo-14hronoi-apo-domi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1866927/nearoi-htupisan-kai-traumatisan-16hrono-mesa-se-katastima-sto-mesologgi-duo-sullipseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T15:30:05.718168+00:00"
+      "seen_at_utc": "2026-08-19T15:51:09.686235+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1450740/ste-oristiki-i-katargisi-ton-doron-kai-ton-epidomaton-adeias-gia-toys-dimosioys-ypalliloys/",
-      "title": "ΣτΕ: Οριστική η κατάργηση των δώρων και των επιδομάτων αδείας για τους δημόσιους υπαλλήλους",
-      "normalized_title": "ΣΤΕ: ΟΡΙΣΤΙΚΗ Η ΚΑΤΑΡΓΗΣΗ ΤΩΝ ΔΩΡΩΝ ΚΑΙ ΤΩΝ ΕΠΙΔΟΜΑΤΩΝ ΑΔΕΙΑΣ ΓΙΑ ΤΟΥΣ ΔΗΜΟΣΙΟΥΣ ΥΠΑΛΛΗΛΟΥΣ",
+      "url": "https://www.efsyn.gr/kosmos/1450742/tragodia-stin-kentroafrikaniki-dimokratia-toylahiston-100-nekroi-apo-katolisthisi-se-hrysoryheio-vinteo/",
+      "title": "Τραγωδία στην Κεντροαφρικανική Δημοκρατία: Τουλάχιστον 100 νεκροί από κατολίσθηση σε χρυσωρυχείο [βίντεο]",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΚΕΝΤΡΟΑΦΡΙΚΑΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ: ΤΟΥΛΑΧΙΣΤΟΝ 100 ΝΕΚΡΟΙ ΑΠΟ ΚΑΤΟΛΙΣΘΗΣΗ ΣΕ ΧΡΥΣΩΡΥΧΕΙΟ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1450740/ste-oristiki-i-katargisi-ton-doron-kai-ton-epidomaton-adeias-gia-toys-dimosioys-ypalliloys/"
+        "https://www.efsyn.gr/kosmos/1450742/tragodia-stin-kentroafrikaniki-dimokratia-toylahiston-100-nekroi-apo-katolisthisi-se-hrysoryheio-vinteo/",
+        "https://www.efsyn.gr/ellada/1450748/lagoyvardos-erhetai-exantlitiki-thermi-eisvoli-epistrefei-o-kaysonas/",
+        "https://www.efsyn.gr/ellada/1450744/trohaio-sti-voyla-apoprosanatolistika-apo-to-gps-ypostirixe-o-odigos-taxi-poy-ekane-anastrofi/"
       ],
-      "seen_at_utc": "2026-08-19T15:30:05.718131+00:00"
+      "seen_at_utc": "2026-08-19T15:51:09.686199+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/19/greece/eleytheros-o-odigos-taksi-pou-prokalese-to-troxaio-sti-voula-paraplanithika-apo-to-gps/",
-      "title": "Ελεύθερος ο οδηγός ταξί που προκάλεσε το τροχαίο στη Βούλα – «Παραπλανήθηκα από το GPS»",
-      "normalized_title": "ΕΛΕΥΘΕΡΟΣ Ο ΟΔΗΓΟΣ ΤΑΞΙ ΠΟΥ ΠΡΟΚΑΛΕΣΕ ΤΟ ΤΡΟΧΑΙΟ ΣΤΗ ΒΟΥΛΑ – «ΠΑΡΑΠΛΑΝΗΘΗΚΑ ΑΠΟ ΤΟ GPS»",
+      "url": "https://www.in.gr/2026/08/19/sports/basketball/ekane-piso-o-masmpern-gia-ti-monako-monadiki-elpida-gia-tous-monegaskous-o-ronalntinio/",
+      "title": "Έκανε πίσω ο Μάσμπερν για τη Μονακό, μοναδική ελπίδα για τους Μονεγάσκους ο Ροναλντίνιο",
+      "normalized_title": "ΕΚΑΝΕ ΠΙΣΩ Ο ΜΑΣΜΠΕΡΝ ΓΙΑ ΤΗ ΜΟΝΑΚΟ, ΜΟΝΑΔΙΚΗ ΕΛΠΙΔΑ ΓΙΑ ΤΟΥΣ ΜΟΝΕΓΑΣΚΟΥΣ Ο ΡΟΝΑΛΝΤΙΝΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/19/greece/eleytheros-o-odigos-taksi-pou-prokalese-to-troxaio-sti-voula-paraplanithika-apo-to-gps/",
-        "https://www.in.gr/2026/08/19/politics/epikairotita/pethane-o-giorgos-louloudakis-ena-apo-ta-paliotera-stelexi-tis-nd-kai-stenos-synergatis-tou-antoni-samara/"
+        "https://www.in.gr/2026/08/19/sports/basketball/ekane-piso-o-masmpern-gia-ti-monako-monadiki-elpida-gia-tous-monegaskous-o-ronalntinio/",
+        "https://www.in.gr/2026/08/19/go-fun/fizz/nikol-kintman-oikogeneiakes-diakopes-stin-islandia-se-ena-taksidi-zois/"
       ],
-      "seen_at_utc": "2026-08-19T15:30:05.718091+00:00"
+      "seen_at_utc": "2026-08-19T15:51:09.686151+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T15:30:05.718274+00:00"
+  "updated_at_utc": "2026-08-19T15:51:09.686307+00:00"
 }
