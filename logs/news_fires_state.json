@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564411244/fifa-uefa-afc-kai-concacaf-exetazoyn-protasi-momfis-kata-toy-infantino/",
-      "title": "FIFA: UEFA, AFC και CONCACAF εξετάζουν πρόταση μομφής κατά του Ινφαντίνο",
-      "normalized_title": "FIFA: UEFA, AFC ΚΑΙ CONCACAF ΕΞΕΤΑΖΟΥΝ ΠΡΟΤΑΣΗ ΜΟΜΦΗΣ ΚΑΤΑ ΤΟΥ ΙΝΦΑΝΤΙΝΟ",
+      "url": "https://www.kathimerini.gr/world/564411259/toyrkia-den-tha-pesoyme-stin-pagida-toy-netaniachoy-diaminyei-i-proedria/",
+      "title": "Τουρκία: «Δεν θα πέσουμε στην παγίδα του Νετανιάχου», διαμηνύει η προεδρία",
+      "normalized_title": "ΤΟΥΡΚΙΑ: «ΔΕΝ ΘΑ ΠΕΣΟΥΜΕ ΣΤΗΝ ΠΑΓΙΔΑ ΤΟΥ ΝΕΤΑΝΙΑΧΟΥ», ΔΙΑΜΗΝΥΕΙ Η ΠΡΟΕΔΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564411244/fifa-uefa-afc-kai-concacaf-exetazoyn-protasi-momfis-kata-toy-infantino/"
+        "https://www.kathimerini.gr/world/564411259/toyrkia-den-tha-pesoyme-stin-pagida-toy-netaniachoy-diaminyei-i-proedria/",
+        "https://www.kathimerini.gr/columns/564411082/anoigontas-ton-geopolitiko-asko-toy-aioloy/",
+        "https://www.kathimerini.gr/politics/government/564410212/kyvernisi-metra-me-eklogiki-stocheysi/"
       ],
-      "seen_at_utc": "2026-08-20T12:29:59.457049+00:00"
+      "seen_at_utc": "2026-08-20T12:51:13.488223+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,25 +1271,27 @@
       "seen_at_utc": "2026-08-20T12:29:59.457157+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451328/mayri-thalassa-roymaniko-mahitiko-f-16-katestrepse-oplismeno-thalassio-drone-konta-se-egkatastaseis-aerioy/",
-      "title": "Μαύρη Θάλασσα: Ρουμανικό μαχητικό F-16 κατέστρεψε οπλισμένο θαλάσσιο drone κοντά σε εγκαταστάσεις αερίου",
-      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ: ΡΟΥΜΑΝΙΚΟ ΜΑΧΗΤΙΚΟ F-16 ΚΑΤΕΣΤΡΕΨΕ ΟΠΛΙΣΜΕΝΟ ΘΑΛΑΣΣΙΟ DRONE ΚΟΝΤΑ ΣΕ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΑΕΡΙΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1451327/papaioannoy-gia-idiotika-aei-kai-apofasi-ste-tha-thespistei-neo-kanonistiko-plaisio-den-tha-hathei-to-akadimaiko-etos/",
+      "title": "Παπαϊωάννου για ιδιωτικά ΑΕΙ και απόφαση ΣτΕ: Θα θεσπιστεί νέο κανονιστικό πλαίσιο – Δεν θα χαθεί το ακαδημαϊκό έτος",
+      "normalized_title": "ΠΑΠΑΙΩΑΝΝΟΥ ΓΙΑ ΙΔΙΩΤΙΚΑ ΑΕΙ ΚΑΙ ΑΠΟΦΑΣΗ ΣΤΕ: ΘΑ ΘΕΣΠΙΣΤΕΙ ΝΕΟ ΚΑΝΟΝΙΣΤΙΚΟ ΠΛΑΙΣΙΟ – ΔΕΝ ΘΑ ΧΑΘΕΙ ΤΟ ΑΚΑΔΗΜΑΙΚΟ ΕΤΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451328/mayri-thalassa-roymaniko-mahitiko-f-16-katestrepse-oplismeno-thalassio-drone-konta-se-egkatastaseis-aerioy/",
-        "https://www.efsyn.gr/oikonomia/1451169/ninemia-meta-tin-kataigida-stin-agora-omologon-poy-thymise-meres-tis-krisis-toy-2007/"
+        "https://www.efsyn.gr/politiki/1451327/papaioannoy-gia-idiotika-aei-kai-apofasi-ste-tha-thespistei-neo-kanonistiko-plaisio-den-tha-hathei-to-akadimaiko-etos/",
+        "https://www.efsyn.gr/kosmos/1451336/elvetia-to-liosimo-ton-pagon-stis-alpeis-apokalypse-soroys-dyo-oreivaton-poy-agnooyntan-apo-to-1992/",
+        "https://www.efsyn.gr/ellada/1451335/kozani-synelifthi-33hronos-poy-eihe-drapeteysei-apo-tis-agrotikes-fylakes-kassandras/"
       ],
-      "seen_at_utc": "2026-08-20T12:29:59.457127+00:00"
+      "seen_at_utc": "2026-08-20T12:51:13.488324+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/economy/diethnis-oikonomia/se-nea-krisi-ta-sitira-fovoi-gia-neo-sok-stin-agora/",
-      "title": "Σε νέα κρίση τα σιτηρά – Φόβοι για νέο σοκ στην αγορά",
-      "normalized_title": "ΣΕ ΝΕΑ ΚΡΙΣΗ ΤΑ ΣΙΤΗΡΑ – ΦΟΒΟΙ ΓΙΑ ΝΕΟ ΣΟΚ ΣΤΗΝ ΑΓΟΡΑ",
+      "url": "https://www.in.gr/2026/08/20/sports/football/fifa-oi-ipeirotikes-podosfairikes-omospondies-sproxnoun-ton-infantino-pros-tin-eksodo/",
+      "title": "FIFA: Οι ηπειρωτικές ποδοσφαιρικές ομοσπονδίες σπρώχνουν τον Ινφαντίνο προς την έξοδο",
+      "normalized_title": "FIFA: ΟΙ ΗΠΕΙΡΩΤΙΚΕΣ ΠΟΔΟΣΦΑΙΡΙΚΕΣ ΟΜΟΣΠΟΝΔΙΕΣ ΣΠΡΩΧΝΟΥΝ ΤΟΝ ΙΝΦΑΝΤΙΝΟ ΠΡΟΣ ΤΗΝ ΕΞΟΔΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/economy/diethnis-oikonomia/se-nea-krisi-ta-sitira-fovoi-gia-neo-sok-stin-agora/",
-        "https://www.in.gr/2026/08/20/greece/synelifthi-stin-kozani-33xronos-pou-eixe-drapeteysei-apo-tis-agrotikes-fylakes-kassandras-sti-xalkidiki/"
+        "https://www.in.gr/2026/08/20/sports/football/fifa-oi-ipeirotikes-podosfairikes-omospondies-sproxnoun-ton-infantino-pros-tin-eksodo/",
+        "https://www.in.gr/2026/08/20/greece/xalkidiki-trisagio-sti-mnimi-tis-oikogeneias-apo-ti-moldavia-pou-ksekliristike-se-troxaio-se-nosokomeio-paramenei-i-7xroni-patritsia/",
+        "https://www.in.gr/2026/08/20/life/music/o-vasilis-papakonstantinou-akyrose-tis-programmatismenes-synaylies-tou/"
       ],
-      "seen_at_utc": "2026-08-20T12:29:59.457092+00:00"
+      "seen_at_utc": "2026-08-20T12:51:13.488274+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T12:29:59.457250+00:00"
+  "updated_at_utc": "2026-08-20T12:51:13.488424+00:00"
 }
