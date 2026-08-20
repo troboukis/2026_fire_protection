@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564410437/eroyrem-mia-anorthodoxi-aytoviografia-san-syllogi-empeirion/",
-      "title": "«Ερουρέμ», μια ανορθόδοξη αυτοβιογραφία σαν συλλογή εμπειριών",
-      "normalized_title": "«ΕΡΟΥΡΕΜ», ΜΙΑ ΑΝΟΡΘΟΔΟΞΗ ΑΥΤΟΒΙΟΓΡΑΦΙΑ ΣΑΝ ΣΥΛΛΟΓΗ ΕΜΠΕΙΡΙΩΝ",
+      "url": "https://www.kathimerini.gr/society/564411217/rodos-synagermos-gia-ta-ayximena-kroysmata-gastrenteritidas-eos-50-tin-imera/",
+      "title": "Ρόδος: Συναγερμός για τα αυξημένα κρούσματα γαστρεντερίτιδας – Εως 50 την ημέρα",
+      "normalized_title": "ΡΟΔΟΣ: ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΤΑ ΑΥΞΗΜΕΝΑ ΚΡΟΥΣΜΑΤΑ ΓΑΣΤΡΕΝΤΕΡΙΤΙΔΑΣ – ΕΩΣ 50 ΤΗΝ ΗΜΕΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564410437/eroyrem-mia-anorthodoxi-aytoviografia-san-syllogi-empeirion/"
+        "https://www.kathimerini.gr/society/564411217/rodos-synagermos-gia-ta-ayximena-kroysmata-gastrenteritidas-eos-50-tin-imera/",
+        "https://www.kathimerini.gr/society/564411232/kozani-synelifthi-33chronos-poy-eiche-drapeteysei-apo-tis-agrotikes-fylakes-kassandras/",
+        "https://www.kathimerini.gr/life/hours/564411235/oi-faseis-toy-feggarioy-toy-pikaso/",
+        "https://www.kathimerini.gr/society/564411220/pasignosto-politiko-prosopo-itan-to-doloma-pos-apespasan-apo-ilikiomeno-300-000-eyro/",
+        "https://www.kathimerini.gr/society/564411226/pyrkagia-se-dasiki-ektasi-sti-lakonia-epicheiroyn-tessera-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-20T11:51:33.160682+00:00"
+      "seen_at_utc": "2026-08-20T12:17:47.501220+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1263,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867290/fotia-tora-stin-kremasti-lakonias-sikothikan-4-enaeria/?utm_source=rss",
-      "title": "Φωτιά στην Κρεμαστή Λακωνίας, σηκώθηκαν 4 εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΡΕΜΑΣΤΗ ΛΑΚΩΝΙΑΣ, ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1867293/preveli-pote-tha-anagennithei-to-pligomeno-apo-tis-foties-foinikodasos-poies-einai-oi-proupotheseis/?utm_source=rss",
+      "title": "Πρέβελη: Πότε θα αναγεννηθεί το «πληγωμένο» από τις φωτιές φοινικόδασος, δείτε βίντεο",
+      "normalized_title": "ΠΡΕΒΕΛΗ: ΠΟΤΕ ΘΑ ΑΝΑΓΕΝΝΗΘΕΙ ΤΟ «ΠΛΗΓΩΜΕΝΟ» ΑΠΟ ΤΙΣ ΦΩΤΙΕΣ ΦΟΙΝΙΚΟΔΑΣΟΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867290/fotia-tora-stin-kremasti-lakonias-sikothikan-4-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867288/itan-i-pio-simadiki-stigmi-sta-30-hronia-mou-sti-thalassa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867286/i-stigmi-pou-diarriktis-paraviazei-porta-polukatoikias-sta-notia-proastia-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867280/trisagio-sti-mnimi-tis-oikogeneias-paratheriston-apo-ti-moldavia-pou-ehasan-ti-zoi-tous-se-trohaio-sti-halkidiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867293/preveli-pote-tha-anagennithei-to-pligomeno-apo-tis-foties-foinikodasos-poies-einai-oi-proupotheseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867292/fulakisi-me-anastoli-se-andra-eihe-ginei-skia-nearis-thessaloniki-me-eihe-apeilisei-oti-tha-me-skotosei/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T11:51:33.160783+00:00"
+      "seen_at_utc": "2026-08-20T12:17:47.501329+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1451290/kke-gia-13o-kai-14o-mistho-sto-dimosio-to-ste-yiothetei-ola-ta-athlia-epiheirimata-tis-kyvernisis/",
-      "title": "ΚΚΕ για 13ο και 14ο μισθό στο Δημόσιο: Το ΣτΕ υιοθετεί όλα τα άθλια επιχειρήματα της κυβέρνησης",
-      "normalized_title": "ΚΚΕ ΓΙΑ 13Ο ΚΑΙ 14Ο ΜΙΣΘΟ ΣΤΟ ΔΗΜΟΣΙΟ: ΤΟ ΣΤΕ ΥΙΟΘΕΤΕΙ ΟΛΑ ΤΑ ΑΘΛΙΑ ΕΠΙΧΕΙΡΗΜΑΤΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1451298/systimata-pyranihneysis-kai-pyroprostasias-egkathistantai-se-mnimeia-arhaiologikoys-horoys/",
+      "title": "Συστήματα πυρανίχνευσης και πυροπροστασίας εγκαθίστανται σε μνημεία – αρχαιολογικούς χώρους",
+      "normalized_title": "ΣΥΣΤΗΜΑΤΑ ΠΥΡΑΝΙΧΝΕΥΣΗΣ ΚΑΙ ΠΥΡΟΠΡΟΣΤΑΣΙΑΣ ΕΓΚΑΘΙΣΤΑΝΤΑΙ ΣΕ ΜΝΗΜΕΙΑ – ΑΡΧΑΙΟΛΟΓΙΚΟΥΣ ΧΩΡΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1451290/kke-gia-13o-kai-14o-mistho-sto-dimosio-to-ste-yiothetei-ola-ta-athlia-epiheirimata-tis-kyvernisis/"
+        "https://www.efsyn.gr/ellada/1451298/systimata-pyranihneysis-kai-pyroprostasias-egkathistantai-se-mnimeia-arhaiologikoys-horoys/",
+        "https://www.efsyn.gr/kosmos/1451293/o-mperni-santers-exigei-giati-oi-proodeytikoi-ypopsifioi-saronoyn-stis-ipa-den-einai-polyploko/",
+        "https://www.efsyn.gr/ellada/1451305/fotia-stin-kremasti-lakonias-epiheiroyn-tessera-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-20T11:51:33.160765+00:00"
+      "seen_at_utc": "2026-08-20T12:17:47.501304+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/greece/fotia-se-dasiki-ektasi-sti-lakonia-sikothikan-tessera-enaeria/",
-      "title": "Φωτιά σε δασική έκταση στη Λακωνία - Σηκώθηκαν τέσσερα εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗ ΛΑΚΩΝΙΑ - ΣΗΚΩΘΗΚΑΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/08/20/sports/football/to-19-pire-o-froiler-oi-arithmoi-pou-epeleksan-oi-paiktes-tou-olympiakou-gia-ti-nea-sezon/",
+      "title": "Το «19» πήρε ο Φρόιλερ: Οι αριθμοί που επέλεξαν οι παίκτες του Ολυμπιακού για τη νέα σεζόν",
+      "normalized_title": "ΤΟ «19» ΠΗΡΕ Ο ΦΡΟΙΛΕΡ: ΟΙ ΑΡΙΘΜΟΙ ΠΟΥ ΕΠΕΛΕΞΑΝ ΟΙ ΠΑΙΚΤΕΣ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΓΙΑ ΤΗ ΝΕΑ ΣΕΖΟΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/greece/fotia-se-dasiki-ektasi-sti-lakonia-sikothikan-tessera-enaeria/",
-        "https://www.in.gr/2026/08/20/plus/medianews/bhmagazino-mpomp-aigker-tzos-kousner-kai-o-mythos-ton-125-dis-dolarion-gia-tous-los-angeles-lakers/",
-        "https://www.in.gr/2026/08/20/sports/basketball/olympiakos-anakoinothike-o-plotas/",
-        "https://www.in.gr/2026/08/20/greece/ypsilos-kindyno-gia-fotia-tin-paraskeyi-deite-ton-xarti-prognosis-me-tis-perioxes/",
-        "https://www.in.gr/2026/08/20/life/woman/tzefri-epstain-i-kataggelia-tou-xiou-xefner-sto-fbi-pou-feretai-na-agnoithike-gia-15-xronia/"
+        "https://www.in.gr/2026/08/20/sports/football/to-19-pire-o-froiler-oi-arithmoi-pou-epeleksan-oi-paiktes-tou-olympiakou-gia-ti-nea-sezon/",
+        "https://www.in.gr/2026/08/20/greece/therizei-i-gastrenteritida-sti-rodo-kathimerina-dekades-astheneis-sta-epeigonta-ti-leei-o-giannakos/",
+        "https://www.in.gr/2026/08/20/world/nea-stoixeia-gia-tin-dolofonias-tis-17xronis-pou-vrethike-se-valitsa-stin-tailandi-apo-asfyksia-o-thanatos-tis/",
+        "https://www.in.gr/2026/08/20/in-science/technology/ki-omos-yparxoun-dentra-pou-epideinonoun-tin-poiotita-tou-aera-stis-poleis/"
       ],
-      "seen_at_utc": "2026-08-20T11:51:33.160732+00:00"
+      "seen_at_utc": "2026-08-20T12:17:47.501278+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T11:51:33.160883+00:00"
+  "updated_at_utc": "2026-08-20T12:17:47.501439+00:00"
 }
