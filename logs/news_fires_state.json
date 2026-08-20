@@ -1,17 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/arts/564410413/i-mnimi-kai-o-mochthos-stin-proti-mpienale-ton-kykladon/",
-      "title": "Η μνήμη και ο μόχθος στην πρώτη Μπιενάλε των Κυκλάδων",
-      "normalized_title": "Η ΜΝΗΜΗ ΚΑΙ Ο ΜΟΧΘΟΣ ΣΤΗΝ ΠΡΩΤΗ ΜΠΙΕΝΑΛΕ ΤΩΝ ΚΥΚΛΑΔΩΝ",
+      "url": "https://www.kathimerini.gr/politics/564410209/ta-ethnika-themata-psila-stin-atzenta-pasok-kai-elas/",
+      "title": "Τα εθνικά θέματα ψηλά στην ατζέντα ΠΑΣΟΚ και ΕΛΑΣ",
+      "normalized_title": "ΤΑ ΕΘΝΙΚΑ ΘΕΜΑΤΑ ΨΗΛΑ ΣΤΗΝ ΑΤΖΕΝΤΑ ΠΑΣΟΚ ΚΑΙ ΕΛΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/arts/564410413/i-mnimi-kai-o-mochthos-stin-proti-mpienale-ton-kykladon/",
-        "https://www.kathimerini.gr/world/564410851/ipa-to-dimosio-chreos-espase-to-fragma-ton-40-tris-dolarion-sto-125-toy-aep/",
-        "https://www.kathimerini.gr/economy/local/564410611/meiothikan-oi-energes-rythmiseis-chreon-pros-ton-efka-to-deytero-trimino/",
-        "https://www.kathimerini.gr/columns/564409795/i-paralia-chrysafi-to-big-deal-tis-au-vodka-i-kitrini-karta-bofa-stin-ellada-kai-i-zoi-meta-to-taa/",
-        "https://www.kathimerini.gr/opinion/564410398/aytarchikoi-igetes-o-tramp-kai-emeis/"
+        "https://www.kathimerini.gr/politics/564410209/ta-ethnika-themata-psila-stin-atzenta-pasok-kai-elas/",
+        "https://www.kathimerini.gr/world/564410857/oykrania-toylachiston-7-nekroi-apo-rosikoys-vomvardismoys-mesa-sti-nychta/"
       ],
-      "seen_at_utc": "2026-08-20T05:51:23.163614+00:00"
+      "seen_at_utc": "2026-08-20T06:17:05.125092+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,36 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867082/fotia-tora-stin-thesprotia-sikothikan-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά τώρα στην Θεσπρωτία, σηκώθηκαν εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΘΕΣΠΡΩΤΙΑ, ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1867107/trohaio-dustuhima-sto-rethumno-nekros-21hronos-odigos-mihanis-meta-apo-sugrousi-me-taxi/?utm_source=rss",
+      "title": "Τροχαίο δυστύχημα στο Ρέθυμνο: Νεκρός 21χρονος οδηγός μηχανής μετά από σύγκρουση με ταξί",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΝΕΚΡΟΣ 21ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΜΗΧΑΝΗΣ ΜΕΤΑ ΑΠΟ ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΑΞΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867082/fotia-tora-stin-thesprotia-sikothikan-enaeria-mesa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867107/trohaio-dustuhima-sto-rethumno-nekros-21hronos-odigos-mihanis-meta-apo-sugrousi-me-taxi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T05:30:13.143089+00:00"
+      "seen_at_utc": "2026-08-20T06:17:05.125230+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1450994/ipa-to-dimosio-hreos-ektoxeytike-sta-40-tris-dolaria-gia-proti-fora/",
-      "title": "ΗΠΑ: Το δημόσιο χρέος ξεπέρασε τα 40 τρισ. δολάρια – Για πρώτη φορά",
-      "normalized_title": "ΗΠΑ: ΤΟ ΔΗΜΟΣΙΟ ΧΡΕΟΣ ΞΕΠΕΡΑΣΕ ΤΑ 40 ΤΡΙΣ. ΔΟΛΑΡΙΑ – ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1451014/trohaio-dystyhima-sto-rethymno-nekros-21hronos-motosikletistis-meta-apo-sygkroysi-me-taxi/",
+      "title": "Τροχαίο δυστύχημα στο Ρέθυμνο: Νεκρός 21χρονος μοτοσικλετιστής μετά από σύγκρουση με ταξί",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΝΕΚΡΟΣ 21ΧΡΟΝΟΣ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΜΕΤΑ ΑΠΟ ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΑΞΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1450994/ipa-to-dimosio-hreos-ektoxeytike-sta-40-tris-dolaria-gia-proti-fora/",
-        "https://www.efsyn.gr/politiki/1450996/anemogennitries-kai-sta-mastihohoria/",
-        "https://www.efsyn.gr/ellada/1450985/fotia-ston-palampa-thesprotias-sikothikan-enaeria-mesa/"
+        "https://www.efsyn.gr/ellada/1451014/trohaio-dystyhima-sto-rethymno-nekros-21hronos-motosikletistis-meta-apo-sygkroysi-me-taxi/",
+        "https://www.efsyn.gr/kosmos/1450950/goyroynes-ilithies-dieftharmenes-oi-hydaies-epitheseis-tramp-se-gynaikes-dimosiografoys/",
+        "https://www.efsyn.gr/ellada/1450937/thessaloniki-synelifthi-i-arrosti-lykaina-eleytheroi-oi-dipodoi-lykoi/",
+        "https://www.efsyn.gr/politiki/1451007/elas-i-kyvernisi-epiteloys-na-antidrasei-dynamika-apenanti-stis-toyrkikes-prokliseis/",
+        "https://www.efsyn.gr/ellada/1451004/agios-dimitrios-23hronos-epitethike-me-mahairi-se-18hrono-gia-na-ton-listepsei/",
+        "https://www.efsyn.gr/politiki/1451001/silver-alert-gia-ton-giorgo-kotsira/"
       ],
-      "seen_at_utc": "2026-08-20T05:51:23.163675+00:00"
+      "seen_at_utc": "2026-08-20T06:17:05.125192+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/greece/fotia-se-dasiki-ektasi-sti-thesprotia-sikothikan-dyo-enaeria/",
-      "title": "Φωτιά σε δασική έκταση στη Θεσπρωτία - Σηκώθηκαν δύο εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗ ΘΕΣΠΡΩΤΙΑ - ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/08/20/sports/football/conference-league/eyropaikes-maxes-gia-panathinaiko-paok-kai-ofi-sta-play-offs/",
+      "title": "Ευρωπαϊκές μάχες για Παναθηναϊκό, ΠΑΟΚ και ΟΦΗ στα play offs",
+      "normalized_title": "ΕΥΡΩΠΑΙΚΕΣ ΜΑΧΕΣ ΓΙΑ ΠΑΝΑΘΗΝΑΙΚΟ, ΠΑΟΚ ΚΑΙ ΟΦΗ ΣΤΑ PLAY OFFS",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/greece/fotia-se-dasiki-ektasi-sti-thesprotia-sikothikan-dyo-enaeria/",
-        "https://www.in.gr/2026/08/20/sports/proto-gkol-gia-ton-mesi-meta-ton-thanato-tou-patera-tou-vid/",
-        "https://www.in.gr/2026/08/20/life/music/pethane-ksafnika-sta-59-tou-o-stathis-parxaridis-thlipsi-sto-pontiako-tragoudi/"
+        "https://www.in.gr/2026/08/20/sports/football/conference-league/eyropaikes-maxes-gia-panathinaiko-paok-kai-ofi-sta-play-offs/",
+        "https://www.in.gr/2026/08/20/in-science/ai/parakolouthontas-tous-pantes-i-argentini-tou-milei-odeyei-pros-ena-dystopiko-texno-aytarxiko-kathestos-meso-ai/",
+        "https://www.in.gr/2026/08/20/go-fun/fizz/i-kamila-mila-proti-fora-gia-ti-diagnosi-karkinou-tou-karolou-den-itan-i-katallili-stigmi/",
+        "https://www.in.gr/2026/08/20/economy/tourismos-gia-olous-ekpneei-i-prothesmia-ypovolis-aitiseon-oi-dikaiouxoi/"
       ],
-      "seen_at_utc": "2026-08-20T05:51:23.163651+00:00"
+      "seen_at_utc": "2026-08-20T06:17:05.125142+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T05:51:23.163748+00:00"
+  "updated_at_utc": "2026-08-20T06:17:05.125305+00:00"
 }
