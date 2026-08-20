@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564411904/tmima-mpalkonioy-katerreyse-sto-kentro-tis-thessalonikis/",
-      "title": "Τμήμα μπαλκονιού κατέρρευσε στο κέντρο της Θεσσαλονίκης",
-      "normalized_title": "ΤΜΗΜΑ ΜΠΑΛΚΟΝΙΟΥ ΚΑΤΕΡΡΕΥΣΕ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/athletics/football/564411937/paok-mpran-1-1-kai-tora-mono-niki-sti-norvigia/",
+      "title": "ΠΑΟΚ-Μπραν 1-1: Και τώρα μόνο νίκη στη Νορβηγία",
+      "normalized_title": "ΠΑΟΚ-ΜΠΡΑΝ 1-1: ΚΑΙ ΤΩΡΑ ΜΟΝΟ ΝΙΚΗ ΣΤΗ ΝΟΡΒΗΓΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564411904/tmima-mpalkonioy-katerreyse-sto-kentro-tis-thessalonikis/"
+        "https://www.kathimerini.gr/athletics/football/564411937/paok-mpran-1-1-kai-tora-mono-niki-sti-norvigia/",
+        "https://www.kathimerini.gr/culture/564410419/me-ta-logia-toy-odyssea/",
+        "https://www.kathimerini.gr/world/564411892/epistrefei-stis-ipa-to-koyrasmeno-aeroplanoforo-abraham-lincoln-orgi-toy-pliromatos-gia-tis-synthikes-diaviosis/"
       ],
-      "seen_at_utc": "2026-08-20T19:29:59.476835+00:00"
+      "seen_at_utc": "2026-08-20T19:51:11.050443+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,25 +1270,27 @@
       "seen_at_utc": "2026-08-20T19:17:02.902881+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1451581/o-dramatikos-dialogos-miteras-gioy-meta-tin-epithesi-ston-agio-dimitrio-mama-trexe-me-mahairosan-einai-farsa-vinteo/",
-      "title": "Ο δραματικός διάλογος μητέρας-γιου μετά την επίθεση στον Άγιο Δημήτριο: «Μαμά τρέξε, με μαχαίρωσαν» – «Είναι φάρσα;» [βίντεο]",
-      "normalized_title": "Ο ΔΡΑΜΑΤΙΚΟΣ ΔΙΑΛΟΓΟΣ ΜΗΤΕΡΑΣ-ΓΙΟΥ ΜΕΤΑ ΤΗΝ ΕΠΙΘΕΣΗ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ: «ΜΑΜΑ ΤΡΕΞΕ, ΜΕ ΜΑΧΑΙΡΩΣΑΝ» – «ΕΙΝΑΙ ΦΑΡΣΑ;» [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1451597/voyla-i-oikogeneia-toy-39hronoy-prohora-se-dorea-organon-mporei-na-dosei-zoi-mehri-kai-se-8-anthropoys-leei-i-adelfi-toy/",
+      "title": "Τροχαίο στη Βούλα: Συγκινεί η αδελφή του 39χρονου – «Ο αδελφός μου φεύγει στα ήρωας, σώζοντας άλλους ανθρώπους»",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΒΟΥΛΑ: ΣΥΓΚΙΝΕΙ Η ΑΔΕΛΦΗ ΤΟΥ 39ΧΡΟΝΟΥ – «Ο ΑΔΕΛΦΟΣ ΜΟΥ ΦΕΥΓΕΙ ΣΤΑ ΗΡΩΑΣ, ΣΩΖΟΝΤΑΣ ΑΛΛΟΥΣ ΑΝΘΡΩΠΟΥΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1451581/o-dramatikos-dialogos-miteras-gioy-meta-tin-epithesi-ston-agio-dimitrio-mama-trexe-me-mahairosan-einai-farsa-vinteo/",
-        "https://www.efsyn.gr/kosmos/1451590/stena-toy-ormoyz-ta-ploia-fovoyntai-perissotero-tis-ipa-i-to-iran-ti-deihnoyn-ta-stoiheia/"
+        "https://www.efsyn.gr/ellada/1451597/voyla-i-oikogeneia-toy-39hronoy-prohora-se-dorea-organon-mporei-na-dosei-zoi-mehri-kai-se-8-anthropoys-leei-i-adelfi-toy/"
       ],
-      "seen_at_utc": "2026-08-20T19:29:59.476941+00:00"
+      "seen_at_utc": "2026-08-20T19:51:11.050552+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/sports/football/europa-league/penalti-meso-var-gia-ton-ofi-kai-2-0-me-ton-founta-vids/",
-      "title": "Πέναλτι μέσω VAR για τον ΟΦΗ και 2-0 με τον Φούντα (vids)",
-      "normalized_title": "ΠΕΝΑΛΤΙ ΜΕΣΩ VAR ΓΙΑ ΤΟΝ ΟΦΗ ΚΑΙ 2-0 ΜΕ ΤΟΝ ΦΟΥΝΤΑ (VIDS)",
+      "url": "https://www.in.gr/2026/08/20/economy/diethnis-oikonomia/i-kina-roufa-to-petrelaio-kai-i-india-dipsa-giati-mas-afora/",
+      "title": "Η Κίνα «ρουφά» το πετρέλαιο και η Ινδία «διψά» – Γιατί μας αφορά",
+      "normalized_title": "Η ΚΙΝΑ «ΡΟΥΦΑ» ΤΟ ΠΕΤΡΕΛΑΙΟ ΚΑΙ Η ΙΝΔΙΑ «ΔΙΨΑ» – ΓΙΑΤΙ ΜΑΣ ΑΦΟΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/sports/football/europa-league/penalti-meso-var-gia-ton-ofi-kai-2-0-me-ton-founta-vids/",
-        "https://www.in.gr/2026/08/20/pet-stories/psarades-sozoun-skylo-pou-kolympouse-eksantlimenos-ston-eiriniko-okeano/"
+        "https://www.in.gr/2026/08/20/economy/diethnis-oikonomia/i-kina-roufa-to-petrelaio-kai-i-india-dipsa-giati-mas-afora/",
+        "https://www.in.gr/2026/08/20/sports/football/paok-mpran-1-1-me-dyo-prosopa-oi-gipedouxoi-klataran-sto-deytero-imixrono/",
+        "https://www.in.gr/2026/08/20/greece/leykada-paraligo-metopiki-sygkrousi-meta-apo-epikindyni-prosperasi/",
+        "https://www.in.gr/2026/08/20/sports/football/conference-league/isofarise-se-1-1-o-paok-me-kefalia-tou-mpampa-vids/",
+        "https://www.in.gr/2026/08/20/stories/i-moda-i-kakopoiisi-oi-apeiles-to-psyxiatreio-i-apomonosi-i-karen-mulder-epestrepse-meta-apo-25-xronia-siopis/"
       ],
-      "seen_at_utc": "2026-08-20T19:29:59.476883+00:00"
+      "seen_at_utc": "2026-08-20T19:51:11.050496+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T19:29:59.477021+00:00"
+  "updated_at_utc": "2026-08-20T19:51:11.050630+00:00"
 }
