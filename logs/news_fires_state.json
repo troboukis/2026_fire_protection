@@ -1,18 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564410227/entos-kai-ektos-episkepsi-toy-archigoy-geetha-sto-israil/",
-      "title": "Εντός και Εκτός: Επίσκεψη του αρχηγού ΓΕΕΘΑ στο Ισραήλ",
-      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΕΠΙΣΚΕΨΗ ΤΟΥ ΑΡΧΗΓΟΥ ΓΕΕΘΑ ΣΤΟ ΙΣΡΑΗΛ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564410665/na-mi-meinei-piso-i-eyropi-stin-ai/",
+      "title": "«Να μη μείνει πίσω η Ευρώπη στην AI»",
+      "normalized_title": "«ΝΑ ΜΗ ΜΕΙΝΕΙ ΠΙΣΩ Η ΕΥΡΩΠΗ ΣΤΗΝ AI»",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564410227/entos-kai-ektos-episkepsi-toy-archigoy-geetha-sto-israil/",
-        "https://www.kathimerini.gr/society/564410767/thessaloniki-fotia-se-egkataleleimmeno-ktirio-sto-kentro-tis-polis/",
-        "https://www.kathimerini.gr/athletics/football/564410515/tripli-eyropaiki-machi/",
-        "https://www.kathimerini.gr/society/564410743/kairos-erchetai-kaysonas-diarkeias-stoys-38-vathmoys-simera-nea-anodos-apo-paraskeyi/",
-        "https://www.kathimerini.gr/economy/local/564410626/epivradyne-sto-2-7-o-plithoris-os/",
-        "https://www.kathimerini.gr/istoria/564410083/san-simera-20-aygoystoy-1882-i-premiera-tis-overtoyra-1812-toy-tsaikofski/"
+        "https://www.kathimerini.gr/economy/diktis/564410665/na-mi-meinei-piso-i-eyropi-stin-ai/",
+        "https://www.kathimerini.gr/society/564410818/irakleio-aerio-gelioy-gia-30-000-mpalonia-kai-pano-apo-1-000-litra-alkool/",
+        "https://www.kathimerini.gr/society/564410800/stratiotiki-thiteia-ennea-minon-gia-osoys-katatagoyn-choris-anavoli/",
+        "https://www.kathimerini.gr/istoria/564409438/otan-o-nteivint-mpooyi-tragoydise-to-1979-pos-i-kypros-einai-to-nisi-moy/",
+        "https://www.kathimerini.gr/visual/photography/564409954/ta-skylia-tis-dalmatias/",
+        "https://www.kathimerini.gr/k/gastronomos/564409555/pierre-gagnaire-mia-apokleistiki-synenteyxi-me-ton-thrylo-tis-gallikis-gastronomias/",
+        "https://www.kathimerini.gr/society/564410791/neo-trochaio-dystychima-stin-kriti-nekros-21chronos-odigos-michanis/",
+        "https://www.kathimerini.gr/world/564410764/epistrefoyn-sti-vretania-chari-kai-megkan/",
+        "https://www.kathimerini.gr/politics/564410188/theoreio-entonos-ekneyrismos/"
       ],
-      "seen_at_utc": "2026-08-20T04:51:26.029978+00:00"
+      "seen_at_utc": "2026-08-20T05:17:06.271603+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,38 +1267,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867072/fotia-tora-se-egataleleimmeno-ktirio-sti-thessaloniki-sto-simeio-i-purosvestiki/?utm_source=rss",
-      "title": "Φωτιά σε εγκαταλελειμμένο κτίριο στη Θεσσαλονίκη, στο σημείο η Πυροσβεστική",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΣΤΟ ΣΗΜΕΙΟ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1867078/stratiotiki-thiteia-9-minon-gia-osous-katatagoun-horis-anavoli-ti-ishuei-gia-osous-theloun-na-spoudasoun/?utm_source=rss",
+      "title": "Στρατιωτική θητεία 9 μηνών για όσους καταταγούν χωρίς αναβολή, τι ισχύει για όσους θέλουν να σπουδάσουν",
+      "normalized_title": "ΣΤΡΑΤΙΩΤΙΚΗ ΘΗΤΕΙΑ 9 ΜΗΝΩΝ ΓΙΑ ΟΣΟΥΣ ΚΑΤΑΤΑΓΟΥΝ ΧΩΡΙΣ ΑΝΑΒΟΛΗ, ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΟΣΟΥΣ ΘΕΛΟΥΝ ΝΑ ΣΠΟΥΔΑΣΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867072/fotia-tora-se-egataleleimmeno-ktirio-sti-thessaloniki-sto-simeio-i-purosvestiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867071/dolofonos-tasou-isaak-i-simaia-den-prepei-na-katevainei/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867070/pao-se-mia-doulitsa-kai-erhomai-i-teleutaia-sunomilia-tis-diasostrias-me-ton-patera-tis-prin-to-foniko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867067/se-trohia-anodou-i-thermokrasia-apo-simera-me-38aria-to-skiniko-tou-kairou-to-savvatokuriako/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867078/stratiotiki-thiteia-9-minon-gia-osous-katatagoun-horis-anavoli-ti-ishuei-gia-osous-theloun-na-spoudasoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867077/aimatiro-epeisodio-sti-thessaloniki-31hronos-mahairose-25hroni-katiggeile-oti-prospathise-na-ton-listepsei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867075/thesprotia-thuma-megalis-apatis-78hronos-tou-apespasan-300000-euro-gia-ependuseis-se-kruptonomismata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T04:17:14.010982+00:00"
+      "seen_at_utc": "2026-08-20T05:17:06.271756+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1450900/antisymvatiki-kampania-tsipra-me-dyo-minymata-kai-safeis-apodektes/",
-      "title": "Αντισυμβατική καμπάνια Τσίπρα με δύο μηνύματα και σαφείς αποδέκτες",
-      "normalized_title": "ΑΝΤΙΣΥΜΒΑΤΙΚΗ ΚΑΜΠΑΝΙΑ ΤΣΙΠΡΑ ΜΕ ΔΥΟ ΜΗΝΥΜΑΤΑ ΚΑΙ ΣΑΦΕΙΣ ΑΠΟΔΕΚΤΕΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1450928/protovoylia-gia-tis-times-sta-soypermarket-apo-septemvrio-anamenontai-meioseis-6-7-se-peripoy-1-000-proionta/",
+      "title": "Πρωτοβουλία για τις τιμές στα σουπερμάρκετ: Από Σεπτέμβριο αναμένονται μειώσεις 6-7% σε περίπου 1.000 προϊόντα",
+      "normalized_title": "ΠΡΩΤΟΒΟΥΛΙΑ ΓΙΑ ΤΙΣ ΤΙΜΕΣ ΣΤΑ ΣΟΥΠΕΡΜΑΡΚΕΤ: ΑΠΟ ΣΕΠΤΕΜΒΡΙΟ ΑΝΑΜΕΝΟΝΤΑΙ ΜΕΙΩΣΕΙΣ 6-7% ΣΕ ΠΕΡΙΠΟΥ 1.000 ΠΡΟΙΟΝΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1450900/antisymvatiki-kampania-tsipra-me-dyo-minymata-kai-safeis-apodektes/",
-        "https://www.efsyn.gr/ellada/1450949/thessaloniki-31hronos-mahairose-25hroni-mesa-se-diamerisma-ti-ypostirixe-o-drastis/",
-        "https://www.efsyn.gr/life/1450933/mantona-triimero-stin-patmo-i-episkepsi-sto-spilaio-tis-apokalypsis-kai-i-yposhesi-eikones-vinteo/"
+        "https://www.efsyn.gr/oikonomia/1450928/protovoylia-gia-tis-times-sta-soypermarket-apo-septemvrio-anamenontai-meioseis-6-7-se-peripoy-1-000-proionta/",
+        "https://www.efsyn.gr/ellada/1450923/hios-i-proti-dikaiosi-gia-tin-amani-kai-toys-katoikoys-tis/",
+        "https://www.efsyn.gr/tehnes/1450643/oi-tainies-tis-evdomadas-sinema-enos-ohi-kala-krymmenoy-syntiritismoy/",
+        "https://www.efsyn.gr/kosmos/1450913/ta-emirata-endidoyn-stis-pieseis-ton-ipa-kai-diakoptoyn-kathe-emporiki-shesi-me-to-iran/"
       ],
-      "seen_at_utc": "2026-08-20T04:51:26.030036+00:00"
+      "seen_at_utc": "2026-08-20T05:17:06.271718+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/greece/thessaloniki-fotia-se-egkataleleimmeno-ktirio/",
-      "title": "Φωτιά σε εγκαταλελειμμένο κτίριο στη Θεσσαλονίκη",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.in.gr/2026/08/20/world/indonisia-84xroni-vrethike-zontani-treis-imeres-meta-ton-foniko-seismo/",
+      "title": "Ινδονησία: 84χρονη βρέθηκε ζωντανή τρεις ημέρες μετά τον φονικό σεισμό",
+      "normalized_title": "ΙΝΔΟΝΗΣΙΑ: 84ΧΡΟΝΗ ΒΡΕΘΗΚΕ ΖΩΝΤΑΝΗ ΤΡΕΙΣ ΗΜΕΡΕΣ ΜΕΤΑ ΤΟΝ ΦΟΝΙΚΟ ΣΕΙΣΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/greece/thessaloniki-fotia-se-egkataleleimmeno-ktirio/",
-        "https://www.in.gr/2026/08/20/plus/vita/askisi-pos-vriskoume-ksana-rythmo-meta-tis-diakopes/"
+        "https://www.in.gr/2026/08/20/world/indonisia-84xroni-vrethike-zontani-treis-imeres-meta-ton-foniko-seismo/",
+        "https://www.in.gr/2026/08/20/editorial/o-stoxos-einai-i-ergasia-sto-dimosio-na-ginei-timoria/",
+        "https://www.in.gr/2026/08/20/life/culture-live/oi-12-enorkoi-oi-thymomenoi-antres-tou-retzinalnt-roouz-epistrefoun-sto-theatro-alkmini/",
+        "https://www.in.gr/2026/08/20/economy/agro-in/fytofarmaka-dysepilytos-grifos-o-syndyasmos-aystiroteron-kanonon-xoris-ayksisi-tou-kostous-paragogis/"
       ],
-      "seen_at_utc": "2026-08-20T04:51:26.030014+00:00"
+      "seen_at_utc": "2026-08-20T05:17:06.271650+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T04:51:26.030119+00:00"
+  "updated_at_utc": "2026-08-20T05:17:06.271930+00:00"
 }
