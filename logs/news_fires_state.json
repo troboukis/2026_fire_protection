@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564410278/i-klimatiki-krisi-ayxanei-ta-thalassia-kymata-kaysona/",
-      "title": "Η κλιματική κρίση αυξάνει τα θαλάσσια κύματα καύσωνα",
-      "normalized_title": "Η ΚΛΙΜΑΤΙΚΗ ΚΡΙΣΗ ΑΥΞΑΝΕΙ ΤΑ ΘΑΛΑΣΣΙΑ ΚΥΜΑΤΑ ΚΑΥΣΩΝΑ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564410677/oi-amerikanoi-agorazoyn-medoseis-tin-kathimerinotita-toys/",
+      "title": "Οι Αμερικανοί αγοράζουν με δόσεις την καθημερινότητά τους",
+      "normalized_title": "ΟΙ ΑΜΕΡΙΚΑΝΟΙ ΑΓΟΡΑΖΟΥΝ ΜΕ ΔΟΣΕΙΣ ΤΗΝ ΚΑΘΗΜΕΡΙΝΟΤΗΤΑ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564410278/i-klimatiki-krisi-ayxanei-ta-thalassia-kymata-kaysona/",
-        "https://www.kathimerini.gr/world/564410878/notia-korea-i-voreia-korea-mporei-na-diathetei-eos-kai-120-pyrinikes-kefales/"
+        "https://www.kathimerini.gr/visual/infographics/564410677/oi-amerikanoi-agorazoyn-medoseis-tin-kathimerinotita-toys/",
+        "https://www.kathimerini.gr/society/564410899/mykonos-dyo-syllipseis-gia-diakinisi-narkotikon-kataschethikan-65-900-eyro-kai-poikilia-oysion/",
+        "https://www.kathimerini.gr/society/564410890/entopistike-lemvos-me-peripoy-50-allodapoys-sti-thalassia-periochi-ton-kalon-limenon/",
+        "https://www.kathimerini.gr/k/gastronomos/564409705/limnos-10-staseis-gia-kalo-fagito-kai-krasi-sto-nisi-toy-ifaistoy/",
+        "https://www.kathimerini.gr/world/564410827/axios-mystiki-epicheirisi-metaforas-petrelaioy-apo-tis-ipa-meso-toy-ormoyz/",
+        "https://www.kathimerini.gr/istoria/564410386/90-chronia-prin-20-8-1936/"
       ],
-      "seen_at_utc": "2026-08-20T06:51:06.055026+00:00"
+      "seen_at_utc": "2026-08-20T07:17:04.332044+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1264,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867122/mi-kratika-panepistimia-ti-allazei-meta-tin-apofasi-tou-ste-ti-ginetai-me-tous-foitites-kai-ta-epta-nea-idrumata/?utm_source=rss",
-      "title": "Μη κρατικά πανεπιστήμια: Τι αλλάζει μετά την απόφαση του ΣτΕ, τι γίνεται με τους φοιτητές και τα επτά νέα ιδρύματα",
-      "normalized_title": "ΜΗ ΚΡΑΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΤΙ ΑΛΛΑΖΕΙ ΜΕΤΑ ΤΗΝ ΑΠΟΦΑΣΗ ΤΟΥ ΣΤΕ, ΤΙ ΓΙΝΕΤΑΙ ΜΕ ΤΟΥΣ ΦΟΙΤΗΤΕΣ ΚΑΙ ΤΑ ΕΠΤΑ ΝΕΑ ΙΔΡΥΜΑΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1867138/duo-sullipseis-gia-diakinisi-narkotikon-sti-mukono-katashethikan-65900-euro-mdma-kai-kokaini/?utm_source=rss",
+      "title": "Δύο συλλήψεις για διακίνηση ναρκωτικών στη Μύκονο: Κατασχέθηκαν 65.900 ευρώ, MDMA και κοκαΐνη",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ ΣΤΗ ΜΥΚΟΝΟ: ΚΑΤΑΣΧΕΘΗΚΑΝ 65.900 ΕΥΡΩ, MDMA ΚΑΙ ΚΟΚΑΙΝΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867122/mi-kratika-panepistimia-ti-allazei-meta-tin-apofasi-tou-ste-ti-ginetai-me-tous-foitites-kai-ta-epta-nea-idrumata/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867138/duo-sullipseis-gia-diakinisi-narkotikon-sti-mukono-katashethikan-65900-euro-mdma-kai-kokaini/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T06:51:06.055133+00:00"
+      "seen_at_utc": "2026-08-20T07:17:04.332203+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451031/nea-anaflexi-israil-toyrkias-sti-syria-i-agkyra-den-mporei-na-ehei-stratiotiki-vasi-sti-damasko-xekatharizei-o-netaniahoy/",
-      "title": "Νέα ανάφλεξη Ισραήλ – Τουρκίας στη Συρία: Η Άγκυρα δεν μπορεί να έχει στρατιωτική βάση στη Δαμασκό, ξεκαθαρίζει ο Νετανιάχου",
-      "normalized_title": "ΝΕΑ ΑΝΑΦΛΕΞΗ ΙΣΡΑΗΛ – ΤΟΥΡΚΙΑΣ ΣΤΗ ΣΥΡΙΑ: Η ΑΓΚΥΡΑ ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΕΧΕΙ ΣΤΡΑΤΙΩΤΙΚΗ ΒΑΣΗ ΣΤΗ ΔΑΜΑΣΚΟ, ΞΕΚΑΘΑΡΙΖΕΙ Ο ΝΕΤΑΝΙΑΧΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1451024/halkidiki-xilosan-kai-alles-aythairetes-kataskeyes-apomakrynan-apo-fiales-ygraerioy-mehri-fotovoltaika-panel-eikones/",
+      "title": "Χαλκιδική: Έστησαν ολόκληρο νοικοκυριό σε παραλία – Από φιάλες υγραερίου μέχρι φωτοβολταϊκά [εικόνες]",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΕΣΤΗΣΑΝ ΟΛΟΚΛΗΡΟ ΝΟΙΚΟΚΥΡΙΟ ΣΕ ΠΑΡΑΛΙΑ – ΑΠΟ ΦΙΑΛΕΣ ΥΓΡΑΕΡΙΟΥ ΜΕΧΡΙ ΦΩΤΟΒΟΛΤΑΙΚΑ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451031/nea-anaflexi-israil-toyrkias-sti-syria-i-agkyra-den-mporei-na-ehei-stratiotiki-vasi-sti-damasko-xekatharizei-o-netaniahoy/"
+        "https://www.efsyn.gr/ellada/1451024/halkidiki-xilosan-kai-alles-aythairetes-kataskeyes-apomakrynan-apo-fiales-ygraerioy-mehri-fotovoltaika-panel-eikones/",
+        "https://www.efsyn.gr/ellada/1450970/ptosi-elikopteroy-sti-sifno-sigi-apo-tin-etaireia-bellavia-aneparkis-koyltoyra-asfaleias/",
+        "https://www.efsyn.gr/kosmos/1451040/ergatiko-dystyhima-stin-iaponia-tesseris-nekroi-htypithikan-apo-treno-kata-ti-diarkeia-ergasion-stis-grammes/"
       ],
-      "seen_at_utc": "2026-08-20T06:51:06.055106+00:00"
+      "seen_at_utc": "2026-08-20T07:17:04.332163+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/world/israilinos-yp-amynas-kata-erntogan-sernei-tin-tourkia-se-epikindynes-peripeteies-sti-syria/",
-      "title": "Iσραηλινός υπ. Άμυνας κατά Ερντογάν: «Σέρνει την Τουρκία σε επικίνδυνες περιπέτειες στη Συρία»",
-      "normalized_title": "IΣΡΑΗΛΙΝΟΣ ΥΠ. ΑΜΥΝΑΣ ΚΑΤΑ ΕΡΝΤΟΓΑΝ: «ΣΕΡΝΕΙ ΤΗΝ ΤΟΥΡΚΙΑ ΣΕ ΕΠΙΚΙΝΔΥΝΕΣ ΠΕΡΙΠΕΤΕΙΕΣ ΣΤΗ ΣΥΡΙΑ»",
+      "url": "https://www.in.gr/2026/08/20/politics/diplomatia/diarkis-i-amfisvitisi-ellinikon-kyriarxikon-dikaiomaton-apo-tin-tourkia-meta-ta-thalassia-parka-i-proklisi-gia-tis-ape/",
+      "title": "Διαρκής η αμφισβήτηση ελληνικών κυριαρχικών δικαιωμάτων από την Τουρκία – Μετά τα θαλάσσια πάρκα, η πρόκληση για τις ΑΠΕ",
+      "normalized_title": "ΔΙΑΡΚΗΣ Η ΑΜΦΙΣΒΗΤΗΣΗ ΕΛΛΗΝΙΚΩΝ ΚΥΡΙΑΡΧΙΚΩΝ ΔΙΚΑΙΩΜΑΤΩΝ ΑΠΟ ΤΗΝ ΤΟΥΡΚΙΑ – ΜΕΤΑ ΤΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ, Η ΠΡΟΚΛΗΣΗ ΓΙΑ ΤΙΣ ΑΠΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/world/israilinos-yp-amynas-kata-erntogan-sernei-tin-tourkia-se-epikindynes-peripeteies-sti-syria/",
-        "https://www.in.gr/2026/08/20/sports/basketball/to-minyma-tou-nan-gia-ton-traymatismo-tou-i-mixani-xreiastike-ena-update-pic/"
+        "https://www.in.gr/2026/08/20/politics/diplomatia/diarkis-i-amfisvitisi-ellinikon-kyriarxikon-dikaiomaton-apo-tin-tourkia-meta-ta-thalassia-parka-i-proklisi-gia-tis-ape/",
+        "https://www.in.gr/2026/08/20/pet-stories/pos-na-diamorfosete-to-idaniko-spiti-gia-mia-eytyxismeni-kai-asfali-gata/",
+        "https://www.in.gr/2026/08/20/life/culture-live/xint-ratzamp-to-israil-paradexetai-oti-anoikse-pyr-sto-aytokinito-opou-vriskotan-i-eksaxroni/",
+        "https://www.in.gr/2026/08/20/sports/football/oi-athlitikes-metadoseis-tis-imeras-20-8-drasi-me-tis-ellinikes-omades-se-europa-kai-conference-league/",
+        "https://www.in.gr/2026/08/20/greece/thesprotia-thyma-megalis-apatis-78xronos-pos-kataferan-na-tou-arpaksoun-300-000-eyro/"
       ],
-      "seen_at_utc": "2026-08-20T06:51:06.055069+00:00"
+      "seen_at_utc": "2026-08-20T07:17:04.332110+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T06:51:06.055197+00:00"
+  "updated_at_utc": "2026-08-20T07:17:04.332273+00:00"
 }
