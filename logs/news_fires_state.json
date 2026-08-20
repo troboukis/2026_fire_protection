@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/amyna/564410233/polyethniki-naytiki-askisi-stin-kypro-me-symmetochi-ipa/",
-      "title": "Πολυεθνική ναυτική άσκηση στην Κύπρο με συμμετοχή ΗΠΑ",
-      "normalized_title": "ΠΟΛΥΕΘΝΙΚΗ ΝΑΥΤΙΚΗ ΑΣΚΗΣΗ ΣΤΗΝ ΚΥΠΡΟ ΜΕ ΣΥΜΜΕΤΟΧΗ ΗΠΑ",
+      "url": "https://www.kathimerini.gr/politics/564410227/entos-kai-ektos-episkepsi-toy-archigoy-geetha-sto-israil/",
+      "title": "Εντός και Εκτός: Επίσκεψη του αρχηγού ΓΕΕΘΑ στο Ισραήλ",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΕΠΙΣΚΕΨΗ ΤΟΥ ΑΡΧΗΓΟΥ ΓΕΕΘΑ ΣΤΟ ΙΣΡΑΗΛ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/amyna/564410233/polyethniki-naytiki-askisi-stin-kypro-me-symmetochi-ipa/",
-        "https://www.kathimerini.gr/world/564410701/tramp-kiryxe-oikonomiko-polemo-sto-iran-synepeies-se-opoia-chora-to-voithisei/",
-        "https://www.kathimerini.gr/society/564410245/i-epomeni-imera-meta-tin-pyrkagia-sti-chalkidiki/"
+        "https://www.kathimerini.gr/politics/564410227/entos-kai-ektos-episkepsi-toy-archigoy-geetha-sto-israil/",
+        "https://www.kathimerini.gr/society/564410767/thessaloniki-fotia-se-egkataleleimmeno-ktirio-sto-kentro-tis-polis/",
+        "https://www.kathimerini.gr/athletics/football/564410515/tripli-eyropaiki-machi/",
+        "https://www.kathimerini.gr/society/564410743/kairos-erchetai-kaysonas-diarkeias-stoys-38-vathmoys-simera-nea-anodos-apo-paraskeyi/",
+        "https://www.kathimerini.gr/economy/local/564410626/epivradyne-sto-2-7-o-plithoris-os/",
+        "https://www.kathimerini.gr/istoria/564410083/san-simera-20-aygoystoy-1882-i-premiera-tis-overtoyra-1812-toy-tsaikofski/"
       ],
-      "seen_at_utc": "2026-08-20T04:30:11.090473+00:00"
+      "seen_at_utc": "2026-08-20T04:51:26.029978+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,24 +1276,26 @@
       "seen_at_utc": "2026-08-20T04:17:14.010982+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/i-ellada-mpainei-sto-stohastro/",
-      "title": "Η Ελλάδα μπαίνει στο στόχαστρο",
-      "normalized_title": "Η ΕΛΛΑΔΑ ΜΠΑΙΝΕΙ ΣΤΟ ΣΤΟΧΑΣΤΡΟ",
+      "url": "https://www.efsyn.gr/politiki/1450900/antisymvatiki-kampania-tsipra-me-dyo-minymata-kai-safeis-apodektes/",
+      "title": "Αντισυμβατική καμπάνια Τσίπρα με δύο μηνύματα και σαφείς αποδέκτες",
+      "normalized_title": "ΑΝΤΙΣΥΜΒΑΤΙΚΗ ΚΑΜΠΑΝΙΑ ΤΣΙΠΡΑ ΜΕ ΔΥΟ ΜΗΝΥΜΑΤΑ ΚΑΙ ΣΑΦΕΙΣ ΑΠΟΔΕΚΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/i-ellada-mpainei-sto-stohastro/"
+        "https://www.efsyn.gr/politiki/1450900/antisymvatiki-kampania-tsipra-me-dyo-minymata-kai-safeis-apodektes/",
+        "https://www.efsyn.gr/ellada/1450949/thessaloniki-31hronos-mahairose-25hroni-mesa-se-diamerisma-ti-ypostirixe-o-drastis/",
+        "https://www.efsyn.gr/life/1450933/mantona-triimero-stin-patmo-i-episkepsi-sto-spilaio-tis-apokalypsis-kai-i-yposhesi-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-08-20T04:30:11.090546+00:00"
+      "seen_at_utc": "2026-08-20T04:51:26.030036+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/world/ti-kryvoun-oi-apeiles-tramp-gia-syntriptikes-oikonomikes-synepeies-sto-iran-poies-xores-mporei-na-stoxeysei/",
-      "title": "Τι κρύβουν οι απειλές Τραμπ για «συντριπτικές» οικονομικές συνέπειες στο Ιράν – Ποιες χώρες μπορεί να στοχεύσει",
-      "normalized_title": "ΤΙ ΚΡΥΒΟΥΝ ΟΙ ΑΠΕΙΛΕΣ ΤΡΑΜΠ ΓΙΑ «ΣΥΝΤΡΙΠΤΙΚΕΣ» ΟΙΚΟΝΟΜΙΚΕΣ ΣΥΝΕΠΕΙΕΣ ΣΤΟ ΙΡΑΝ – ΠΟΙΕΣ ΧΩΡΕΣ ΜΠΟΡΕΙ ΝΑ ΣΤΟΧΕΥΣΕΙ",
+      "url": "https://www.in.gr/2026/08/20/greece/thessaloniki-fotia-se-egkataleleimmeno-ktirio/",
+      "title": "Φωτιά σε εγκαταλελειμμένο κτίριο στη Θεσσαλονίκη",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/world/ti-kryvoun-oi-apeiles-tramp-gia-syntriptikes-oikonomikes-synepeies-sto-iran-poies-xores-mporei-na-stoxeysei/",
-        "https://www.in.gr/2026/08/20/go-fun/social/arkas-eseis-valate-ksypnitiri-simera/"
+        "https://www.in.gr/2026/08/20/greece/thessaloniki-fotia-se-egkataleleimmeno-ktirio/",
+        "https://www.in.gr/2026/08/20/plus/vita/askisi-pos-vriskoume-ksana-rythmo-meta-tis-diakopes/"
       ],
-      "seen_at_utc": "2026-08-20T04:30:11.090531+00:00"
+      "seen_at_utc": "2026-08-20T04:51:26.030014+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T04:30:11.090611+00:00"
+  "updated_at_utc": "2026-08-20T04:51:26.030119+00:00"
 }
