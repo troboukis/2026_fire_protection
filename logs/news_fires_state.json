@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564410209/ta-ethnika-themata-psila-stin-atzenta-pasok-kai-elas/",
-      "title": "Τα εθνικά θέματα ψηλά στην ατζέντα ΠΑΣΟΚ και ΕΛΑΣ",
-      "normalized_title": "ΤΑ ΕΘΝΙΚΑ ΘΕΜΑΤΑ ΨΗΛΑ ΣΤΗΝ ΑΤΖΕΝΤΑ ΠΑΣΟΚ ΚΑΙ ΕΛΑΣ",
+      "url": "https://www.kathimerini.gr/world/564410866/i-vretania-zitei-apo-to-israil-na-anasteilei-schedio-gia-tin-anegersi-chiliadon-katoikion-sti-dytiki-ochthi/",
+      "title": "Η Βρετανία ζητεί από το Ισραήλ να αναστείλει σχέδιο για την ανέγερση χιλιάδων κατοικιών στη Δυτική Οχθη",
+      "normalized_title": "Η ΒΡΕΤΑΝΙΑ ΖΗΤΕΙ ΑΠΟ ΤΟ ΙΣΡΑΗΛ ΝΑ ΑΝΑΣΤΕΙΛΕΙ ΣΧΕΔΙΟ ΓΙΑ ΤΗΝ ΑΝΕΓΕΡΣΗ ΧΙΛΙΑΔΩΝ ΚΑΤΟΙΚΙΩΝ ΣΤΗ ΔΥΤΙΚΗ ΟΧΘΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564410209/ta-ethnika-themata-psila-stin-atzenta-pasok-kai-elas/",
-        "https://www.kathimerini.gr/world/564410857/oykrania-toylachiston-7-nekroi-apo-rosikoys-vomvardismoys-mesa-sti-nychta/"
+        "https://www.kathimerini.gr/world/564410866/i-vretania-zitei-apo-to-israil-na-anasteilei-schedio-gia-tin-anegersi-chiliadon-katoikion-sti-dytiki-ochthi/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564410263/mi-kratika-aei-anatheorisi-ton-kritirion-pistopoiisis-apo-tin-ethaae/"
       ],
-      "seen_at_utc": "2026-08-20T06:17:05.125092+00:00"
+      "seen_at_utc": "2026-08-20T06:30:02.567198+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,40 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867107/trohaio-dustuhima-sto-rethumno-nekros-21hronos-odigos-mihanis-meta-apo-sugrousi-me-taxi/?utm_source=rss",
-      "title": "Τροχαίο δυστύχημα στο Ρέθυμνο: Νεκρός 21χρονος οδηγός μηχανής μετά από σύγκρουση με ταξί",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΝΕΚΡΟΣ 21ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΜΗΧΑΝΗΣ ΜΕΤΑ ΑΠΟ ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΑΞΙ",
+      "url": "https://www.protothema.gr/greece/article/1867109/tourismos-gia-olous-2026-2027-mehri-tin-paraskeui-21-augoustou-oi-aitiseis-pote-tha-vgoun-ta-apotelesmata/?utm_source=rss",
+      "title": "Τουρισμός για Όλους 2026 - 2027: Μέχρι την Παρασκευή 21 Αυγούστου οι αιτήσεις, πότε θα βγουν τα αποτελέσματα",
+      "normalized_title": "ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ 2026 - 2027: ΜΕΧΡΙ ΤΗΝ ΠΑΡΑΣΚΕΥΗ 21 ΑΥΓΟΥΣΤΟΥ ΟΙ ΑΙΤΗΣΕΙΣ, ΠΟΤΕ ΘΑ ΒΓΟΥΝ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867107/trohaio-dustuhima-sto-rethumno-nekros-21hronos-odigos-mihanis-meta-apo-sugrousi-me-taxi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867109/tourismos-gia-olous-2026-2027-mehri-tin-paraskeui-21-augoustou-oi-aitiseis-pote-tha-vgoun-ta-apotelesmata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T06:17:05.125230+00:00"
+      "seen_at_utc": "2026-08-20T06:30:02.567391+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1451014/trohaio-dystyhima-sto-rethymno-nekros-21hronos-motosikletistis-meta-apo-sygkroysi-me-taxi/",
-      "title": "Τροχαίο δυστύχημα στο Ρέθυμνο: Νεκρός 21χρονος μοτοσικλετιστής μετά από σύγκρουση με ταξί",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΟ ΡΕΘΥΜΝΟ: ΝΕΚΡΟΣ 21ΧΡΟΝΟΣ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΜΕΤΑ ΑΠΟ ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΑΞΙ",
+      "url": "https://www.efsyn.gr/athlitismos/1450960/paok-me-ntopes-kai-ena-stoihima/",
+      "title": "ΠΑΟΚ: Με ντόπες και ένα στοίχημα",
+      "normalized_title": "ΠΑΟΚ: ΜΕ ΝΤΟΠΕΣ ΚΑΙ ΕΝΑ ΣΤΟΙΧΗΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1451014/trohaio-dystyhima-sto-rethymno-nekros-21hronos-motosikletistis-meta-apo-sygkroysi-me-taxi/",
-        "https://www.efsyn.gr/kosmos/1450950/goyroynes-ilithies-dieftharmenes-oi-hydaies-epitheseis-tramp-se-gynaikes-dimosiografoys/",
-        "https://www.efsyn.gr/ellada/1450937/thessaloniki-synelifthi-i-arrosti-lykaina-eleytheroi-oi-dipodoi-lykoi/",
-        "https://www.efsyn.gr/politiki/1451007/elas-i-kyvernisi-epiteloys-na-antidrasei-dynamika-apenanti-stis-toyrkikes-prokliseis/",
-        "https://www.efsyn.gr/ellada/1451004/agios-dimitrios-23hronos-epitethike-me-mahairi-se-18hrono-gia-na-ton-listepsei/",
-        "https://www.efsyn.gr/politiki/1451001/silver-alert-gia-ton-giorgo-kotsira/"
+        "https://www.efsyn.gr/athlitismos/1450960/paok-me-ntopes-kai-ena-stoihima/",
+        "https://www.efsyn.gr/politiki/1451020/polakis-ehase-ti-synedriasi-toy-syriza-logo-psarematos/"
       ],
-      "seen_at_utc": "2026-08-20T06:17:05.125192+00:00"
+      "seen_at_utc": "2026-08-20T06:30:02.567332+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/sports/football/conference-league/eyropaikes-maxes-gia-panathinaiko-paok-kai-ofi-sta-play-offs/",
-      "title": "Ευρωπαϊκές μάχες για Παναθηναϊκό, ΠΑΟΚ και ΟΦΗ στα play offs",
-      "normalized_title": "ΕΥΡΩΠΑΙΚΕΣ ΜΑΧΕΣ ΓΙΑ ΠΑΝΑΘΗΝΑΙΚΟ, ΠΑΟΚ ΚΑΙ ΟΦΗ ΣΤΑ PLAY OFFS",
+      "url": "https://www.in.gr/2026/08/20/greece/larisa-nekros-48xronos-pou-kataplakothike-apo-trakter-stin-agia/",
+      "title": "Νεκρός 48χρονος που καταπλακώθηκε από τρακτέρ στην Αγιά",
+      "normalized_title": "ΝΕΚΡΟΣ 48ΧΡΟΝΟΣ ΠΟΥ ΚΑΤΑΠΛΑΚΩΘΗΚΕ ΑΠΟ ΤΡΑΚΤΕΡ ΣΤΗΝ ΑΓΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/sports/football/conference-league/eyropaikes-maxes-gia-panathinaiko-paok-kai-ofi-sta-play-offs/",
-        "https://www.in.gr/2026/08/20/in-science/ai/parakolouthontas-tous-pantes-i-argentini-tou-milei-odeyei-pros-ena-dystopiko-texno-aytarxiko-kathestos-meso-ai/",
-        "https://www.in.gr/2026/08/20/go-fun/fizz/i-kamila-mila-proti-fora-gia-ti-diagnosi-karkinou-tou-karolou-den-itan-i-katallili-stigmi/",
-        "https://www.in.gr/2026/08/20/economy/tourismos-gia-olous-ekpneei-i-prothesmia-ypovolis-aitiseon-oi-dikaiouxoi/"
+        "https://www.in.gr/2026/08/20/greece/larisa-nekros-48xronos-pou-kataplakothike-apo-trakter-stin-agia/",
+        "https://www.in.gr/2026/08/20/world/atlanta-synelifthi-42xroni-pou-apigage-dyo-anilika-koritsia-vinteo-apo-ti-diasosi-tous/"
       ],
-      "seen_at_utc": "2026-08-20T06:17:05.125142+00:00"
+      "seen_at_utc": "2026-08-20T06:30:02.567239+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T06:17:05.125305+00:00"
+  "updated_at_utc": "2026-08-20T06:30:02.567471+00:00"
 }
