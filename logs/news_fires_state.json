@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564411340/pella-ilikiomeni-epese-thyma-fake-astynomikoy-tis-eklepsan-15-000-eyro-kai-chryses-lires/",
-      "title": "Πέλλα: Ηλικιωμένη έπεσε θύμα fake αστυνομικού – Της έκλεψαν 15.000 ευρώ και χρυσές λίρες",
-      "normalized_title": "ΠΕΛΛΑ: ΗΛΙΚΙΩΜΕΝΗ ΕΠΕΣΕ ΘΥΜΑ FAKE ΑΣΤΥΝΟΜΙΚΟΥ – ΤΗΣ ΕΚΛΕΨΑΝ 15.000 ΕΥΡΩ ΚΑΙ ΧΡΥΣΕΣ ΛΙΡΕΣ",
+      "url": "https://www.kathimerini.gr/society/564411373/dyo-syllipseis-gia-emprismoys-se-attiki-ki-eyvoia/",
+      "title": "Δύο συλλήψεις για εμπρησμούς σε Αττική και Εύβοια",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΕΜΠΡΗΣΜΟΥΣ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564411340/pella-ilikiomeni-epese-thyma-fake-astynomikoy-tis-eklepsan-15-000-eyro-kai-chryses-lires/"
+        "https://www.kathimerini.gr/society/564411373/dyo-syllipseis-gia-emprismoys-se-attiki-ki-eyvoia/",
+        "https://www.kathimerini.gr/world/564410344/chreiazontai-oi-gynaikes-eidiki-gymnastiki-stin-emminopaysi/",
+        "https://www.kathimerini.gr/world/564411361/kypros-toyrkika-machitika-diastayronontai-me-krisimoys-aerodiadromoys/"
       ],
-      "seen_at_utc": "2026-08-20T14:51:34.556243+00:00"
+      "seen_at_utc": "2026-08-20T15:17:27.069512+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867357/sullipsi-39hronou-gia-ebrismo-me-anaptira-stin-attiki-heiropedes-kai-se-42hrono-stin-euvoia/?utm_source=rss",
-      "title": "Συνελήφθη 39χρονος για εμπρησμό με αναπτήρα στην Αττική, χειροπέδες και σε 42χρονο στην Εύβοια",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 39ΧΡΟΝΟΣ ΓΙΑ ΕΜΠΡΗΣΜΟ ΜΕ ΑΝΑΠΤΗΡΑ ΣΤΗΝ ΑΤΤΙΚΗ, ΧΕΙΡΟΠΕΔΕΣ ΚΑΙ ΣΕ 42ΧΡΟΝΟ ΣΤΗΝ ΕΥΒΟΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1867377/vretanoi-touristes-piastikan-sta-heria-me-odigo-taxi-sti-skiatho-gia-to-parathuro-tis-portas-treis-sullipseis/?utm_source=rss",
+      "title": "Βρετανοί τουρίστες πιάστηκαν στα χέρια με οδηγό ταξί στη Σκιάθο για... το παράθυρο της πόρτας, τρεις συλλήψεις",
+      "normalized_title": "ΒΡΕΤΑΝΟΙ ΤΟΥΡΙΣΤΕΣ ΠΙΑΣΤΗΚΑΝ ΣΤΑ ΧΕΡΙΑ ΜΕ ΟΔΗΓΟ ΤΑΞΙ ΣΤΗ ΣΚΙΑΘΟ ΓΙΑ... ΤΟ ΠΑΡΑΘΥΡΟ ΤΗΣ ΠΟΡΤΑΣ, ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867357/sullipsi-39hronou-gia-ebrismo-me-anaptira-stin-attiki-heiropedes-kai-se-42hrono-stin-euvoia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867377/vretanoi-touristes-piastikan-sta-heria-me-odigo-taxi-sti-skiatho-gia-to-parathuro-tis-portas-treis-sullipseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867376/eudap-deua-halkidas-proti-sunergasia-sto-apoheteutiko-diktuo-to-neo-modelo-pou-erhetai/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867374/nearos-gupas-periferotan-exadlimenos-ston-voak-ton-esose-dierhomenos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867371/sunelifthisan-duo-nearoi-touristes-pou-odigousan-methusmenoi-ilektrika-patinia-ston-lagana-zakunthou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T14:51:34.556396+00:00"
+      "seen_at_utc": "2026-08-20T15:17:27.069603+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451434/letonia-oykraniko-itan-telika-to-drone-poy-katarrifthike-stis-14-aygoystoy/",
-      "title": "Λετονία: Ουκρανικό ήταν τελικά το drone που καταρρίφθηκε στις 14 Αυγούστου",
-      "normalized_title": "ΛΕΤΟΝΙΑ: ΟΥΚΡΑΝΙΚΟ ΗΤΑΝ ΤΕΛΙΚΑ ΤΟ DRONE ΠΟΥ ΚΑΤΑΡΡΙΦΘΗΚΕ ΣΤΙΣ 14 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.efsyn.gr/stiles/1451249/arthro-katoikoy-tis-kypselis-stin-ef-syn-o-tromopontikas-posos-empaigmos-kai-ypokrisia/",
+      "title": "Άρθρο κατοίκου της Κυψέλης στην «Εφ.Συν.»: Ο τρομοπόντικας – Πόσος εμπαιγμός και υποκρισία",
+      "normalized_title": "ΑΡΘΡΟ ΚΑΤΟΙΚΟΥ ΤΗΣ ΚΥΨΕΛΗΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: Ο ΤΡΟΜΟΠΟΝΤΙΚΑΣ – ΠΟΣΟΣ ΕΜΠΑΙΓΜΟΣ ΚΑΙ ΥΠΟΚΡΙΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451434/letonia-oykraniko-itan-telika-to-drone-poy-katarrifthike-stis-14-aygoystoy/",
-        "https://www.efsyn.gr/politiki/1451427/i-elas-apanta-sto-ypen-gia-to-antinero-hreiazetai-anexartiti-axiologisi-kai-ohi-kyvernitiki-aytoepivevaiosi/",
-        "https://www.efsyn.gr/life/1451405/velgio-nearos-proin-politis-aytokiniton-anagnoristike-apo-ton-loran-kai-egine-prigkipas/",
-        "https://www.efsyn.gr/kosmos/1451411/oykrania-i-rosia-sfyrokopa-to-kievo-toylahiston-16-nekroi-dekades-oi-traymaties/"
+        "https://www.efsyn.gr/stiles/1451249/arthro-katoikoy-tis-kypselis-stin-ef-syn-o-tromopontikas-posos-empaigmos-kai-ypokrisia/",
+        "https://www.efsyn.gr/kosmos/1451446/tailandi-ormitika-nera-paresyran-toyristes-plimmyrise-xafnika-koilada-gyro-apo-katarrakti-vinteo/",
+        "https://www.efsyn.gr/kosmos/1451398/oie-evdominta-hiliades-doseis-toy-emvolioy-gia-ton-empola-tithentai-sti-diathesi-tis-ld-kongko-poy/",
+        "https://www.efsyn.gr/athlitismos/1451444/olympiakos-pataei-ellada-o-gkonzales-pros-emirata-o-taremi/",
+        "https://www.efsyn.gr/ellada/1451438/pyrkagies-dyo-syllipseis-se-attiki-kai-eyvoia-gia-emprismo/"
       ],
-      "seen_at_utc": "2026-08-20T14:51:34.556371+00:00"
+      "seen_at_utc": "2026-08-20T15:17:27.069575+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/in-science/technology/exei-i-texniti-noimosyni-syneidisi-giati-einai-lathos-na-to-pistepsoume/",
-      "title": "Έχει η τεχνητή νοημοσύνη συνείδηση; Γιατί είναι λάθος να το πιστέψουμε",
-      "normalized_title": "ΕΧΕΙ Η ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ ΣΥΝΕΙΔΗΣΗ; ΓΙΑΤΙ ΕΙΝΑΙ ΛΑΘΟΣ ΝΑ ΤΟ ΠΙΣΤΕΨΟΥΜΕ",
+      "url": "https://www.in.gr/2026/08/20/sports/on-field/ta-erotimatika-apo-tous-orismous-tou-lanoua/",
+      "title": "Τα ερωτηματικά από τους ορισμούς του Λανουά",
+      "normalized_title": "ΤΑ ΕΡΩΤΗΜΑΤΙΚΑ ΑΠΟ ΤΟΥΣ ΟΡΙΣΜΟΥΣ ΤΟΥ ΛΑΝΟΥΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/in-science/technology/exei-i-texniti-noimosyni-syneidisi-giati-einai-lathos-na-to-pistepsoume/",
-        "https://www.in.gr/2026/08/20/world/kolomvia-katerreyse-to-edafos-se-paranomo-xrysoryxeio-13-anthropoi-nekroi/",
-        "https://www.in.gr/2026/08/20/greece/epeisodiaki-katadioksi-47xronou-sta-grevena-traymatistike-astynomikos/",
-        "https://www.in.gr/2026/08/20/sports/football/epestrepse-ki-episima-sti-mpartselona-o-zoao-kanselo-vidspics/",
-        "https://www.in.gr/2026/08/20/go-fun/fizz/filarakia-i-liza-kountroou-ithele-ton-rolo-tis-reitsel-alla-den-itan-panemorfi/"
+        "https://www.in.gr/2026/08/20/sports/on-field/ta-erotimatika-apo-tous-orismous-tou-lanoua/",
+        "https://www.in.gr/2026/08/20/politics/epikairotita/i-elas-zita-gia-to-antinero-aneksartiti-aksiologisi-gia-tin-apotelesmatikotita-tou/"
       ],
-      "seen_at_utc": "2026-08-20T14:51:34.556343+00:00"
+      "seen_at_utc": "2026-08-20T15:17:27.069546+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T14:51:34.556495+00:00"
+  "updated_at_utc": "2026-08-20T15:17:27.069689+00:00"
 }
