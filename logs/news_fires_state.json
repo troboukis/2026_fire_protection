@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564411529/i-kathimerini-teletoyrgia-toy-tsagioy-kanei-poly-kalo-stin-ygeia/",
-      "title": "Η καθημερινή «τελετουργία» του τσαγιού κάνει (πολύ) καλό στην υγεία",
-      "normalized_title": "Η ΚΑΘΗΜΕΡΙΝΗ «ΤΕΛΕΤΟΥΡΓΙΑ» ΤΟΥ ΤΣΑΓΙΟΥ ΚΑΝΕΙ (ΠΟΛΥ) ΚΑΛΟ ΣΤΗΝ ΥΓΕΙΑ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564409897/meletame-ta-paximadia-i-ypsili-diatrofiki-toys-axia-kai-oi-syndyasmoi-poy-tin-enischyoyn/",
+      "title": "Μελετάμε τα παξιμάδια: η υψηλή διατροφική τους αξία και οι συνδυασμοί που την ενισχύουν",
+      "normalized_title": "ΜΕΛΕΤΑΜΕ ΤΑ ΠΑΞΙΜΑΔΙΑ: Η ΥΨΗΛΗ ΔΙΑΤΡΟΦΙΚΗ ΤΟΥΣ ΑΞΙΑ ΚΑΙ ΟΙ ΣΥΝΔΥΑΣΜΟΙ ΠΟΥ ΤΗΝ ΕΝΙΣΧΥΟΥΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564411529/i-kathimerini-teletoyrgia-toy-tsagioy-kanei-poly-kalo-stin-ygeia/"
+        "https://www.kathimerini.gr/k/gastronomos/564409897/meletame-ta-paximadia-i-ypsili-diatrofiki-toys-axia-kai-oi-syndyasmoi-poy-tin-enischyoyn/",
+        "https://www.kathimerini.gr/society/564411862/thalamigos-apokollithike-apo-avathi-sto-drepano-patron-vinteo/",
+        "https://www.kathimerini.gr/world/564411439/ispania-metanastes-apovivastikan-se-paralia-me-loyomenoys-synelifthisan-apo-tin-astynomia/"
       ],
-      "seen_at_utc": "2026-08-20T17:51:14.864454+00:00"
+      "seen_at_utc": "2026-08-20T18:18:12.401631+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867428/fotia-stin-agia-triada-koropiou-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
-      "title": "Φωτιά στην Αγία Τριάδα Κορωπίου, κινητοποίηση της Πυροσβεστικής",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΓΙΑ ΤΡΙΑΔΑ ΚΟΡΩΠΙΟΥ, ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1867440/pige-na-ton-skotosei-xespa-i-mitera-tou-18hronou-pou-dehthike-epithesi-me-mahairi-ston-agio-dimitrio/?utm_source=rss",
+      "title": "«Πήγε να τον σκοτώσει», ξεσπά η μητέρα του 18χρονου που δέχθηκε επίθεση με μαχαίρι στον Άγιο Δημήτριο",
+      "normalized_title": "«ΠΗΓΕ ΝΑ ΤΟΝ ΣΚΟΤΩΣΕΙ», ΞΕΣΠΑ Η ΜΗΤΕΡΑ ΤΟΥ 18ΧΡΟΝΟΥ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΜΕ ΜΑΧΑΙΡΙ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867428/fotia-stin-agia-triada-koropiou-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867440/pige-na-ton-skotosei-xespa-i-mitera-tou-18hronou-pou-dehthike-epithesi-me-mahairi-ston-agio-dimitrio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T17:30:24.882027+00:00"
+      "seen_at_utc": "2026-08-20T18:18:12.401766+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1451523/symploki-me-dyo-traymaties-sti-skiatho-toyristes-piastikan-sta-heria-me-odigo-taxi/",
-      "title": "Συμπλοκή με δύο τραυματίες στη Σκιάθο: Τουρίστες «πιάστηκαν στα χέρια» με οδηγό ταξί",
-      "normalized_title": "ΣΥΜΠΛΟΚΗ ΜΕ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΣΤΗ ΣΚΙΑΘΟ: ΤΟΥΡΙΣΤΕΣ «ΠΙΑΣΤΗΚΑΝ ΣΤΑ ΧΕΡΙΑ» ΜΕ ΟΔΗΓΟ ΤΑΞΙ",
+      "url": "https://www.efsyn.gr/kosmos/1451535/grilandia-oi-pagoi-lionoyn-oi-giganties-falaines-erhontai-mia-terastia-allagi-sto-oikosystima/",
+      "title": "Γριλανδία: Οι πάγοι λιώνουν, οι γιγάντιες φάλαινες έρχονται – Μια τεράστια αλλαγή στο οικοσύστημα",
+      "normalized_title": "ΓΡΙΛΑΝΔΙΑ: ΟΙ ΠΑΓΟΙ ΛΙΩΝΟΥΝ, ΟΙ ΓΙΓΑΝΤΙΕΣ ΦΑΛΑΙΝΕΣ ΕΡΧΟΝΤΑΙ – ΜΙΑ ΤΕΡΑΣΤΙΑ ΑΛΛΑΓΗ ΣΤΟ ΟΙΚΟΣΥΣΤΗΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1451523/symploki-me-dyo-traymaties-sti-skiatho-toyristes-piastikan-sta-heria-me-odigo-taxi/",
-        "https://www.efsyn.gr/ellada/1451526/ahaia-apokollithike-apo-to-amerikaniko-giot-meta-apo-tesseris-imeres-i-stigmi-tis-apokollisis-vinteo/",
-        "https://www.efsyn.gr/ellada/1451520/anastatosi-sti-halkida-fortigo-ploio-prosekroyse-stin-palia-gefyra-vinteo/"
+        "https://www.efsyn.gr/kosmos/1451535/grilandia-oi-pagoi-lionoyn-oi-giganties-falaines-erhontai-mia-terastia-allagi-sto-oikosystima/",
+        "https://www.efsyn.gr/ellada/1451532/thessaloniki-katerreyse-mpalkoni-1oy-orofoy-sto-kentro-epese-pano-se-stathmeymeno-ih-eikones-vinteo/",
+        "https://www.efsyn.gr/kosmos/1451511/ipa-pos-oi-megaloi-paiktes-rihnoyn-hrima-stis-endiameses-ekloges-etaireies-ai-stoihimatikes-kai-kryptonomismata/",
+        "https://www.efsyn.gr/kosmos/1451512/voreia-korea-gia-ti-meiosi-ton-koinon-askiseon-ipa-notias-koreas-you-get-what-you-deserve/"
       ],
-      "seen_at_utc": "2026-08-20T17:51:14.864535+00:00"
+      "seen_at_utc": "2026-08-20T18:18:12.401737+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/5987966/",
-      "title": "LIVE: ΟΦΗ – ΤΣΣΚΑ Σόφιας",
-      "normalized_title": "LIVE: ΟΦΗ – ΤΣΣΚΑ ΣΟΦΙΑΣ",
+      "url": "https://www.in.gr/2026/08/20/world/ixiri-proeidopoiisi-tou-amerikanou-presvi-stous-israilinous-epoikous-na-min-peiraksoun-periousies-amerikanon/",
+      "title": "Ηχηρή προειδοποίηση του αμερικανού πρέσβη στους Ισραηλινούς εποίκους να μην πειράξουν περιουσίες Αμερικανών",
+      "normalized_title": "ΗΧΗΡΗ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΤΟΥ ΑΜΕΡΙΚΑΝΟΥ ΠΡΕΣΒΗ ΣΤΟΥΣ ΙΣΡΑΗΛΙΝΟΥΣ ΕΠΟΙΚΟΥΣ ΝΑ ΜΗΝ ΠΕΙΡΑΞΟΥΝ ΠΕΡΙΟΥΣΙΕΣ ΑΜΕΡΙΚΑΝΩΝ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/5987966/",
-        "https://www.in.gr/2026/08/20/greece/xoris-telos-oi-aythairesies-se-paralies-se-olokliri-ti-xora/",
-        "https://www.in.gr/2026/08/20/life/culture-live/tsarls-manson-pera-apo-tis-theories-synomosias-ti-menei-otan-katarreei-o-mythos-tou-helter-skelter/"
+        "https://www.in.gr/2026/08/20/world/ixiri-proeidopoiisi-tou-amerikanou-presvi-stous-israilinous-epoikous-na-min-peiraksoun-periousies-amerikanon/",
+        "https://www.in.gr/2026/08/20/economy/oikonomikes-eidiseis/stegastiki-krisi-otan-i-apoktisi-stegis-apaitei-mistho-stelexous-kai-ypomoni-mias-zois-to-apagoreytiko-timima-tis-aytonomias/",
+        "https://www.in.gr/2026/08/20/world/i-norvigia-enisxyei-ta-synora-me-ti-rosia-anavathmizei-ti-neosystati-taksiarxia-tis-stin-arktiki/",
+        "https://www.in.gr/2026/08/20/politics/diplomatia/i-tourkia-tarazei-ta-irema-nera-i-kyvernisi-psaxnei-tin-apantisi-tis/",
+        "https://www.in.gr/matchcenter/5988062/",
+        "https://www.in.gr/2026/08/20/greece/thessaloniki-mpalkoni-katerreyse-kai-epese-se-ix-sto-kentro-tis-polis/"
       ],
-      "seen_at_utc": "2026-08-20T17:51:14.864488+00:00"
+      "seen_at_utc": "2026-08-20T18:18:12.401675+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T17:51:14.864609+00:00"
+  "updated_at_utc": "2026-08-20T18:18:12.401845+00:00"
 }
