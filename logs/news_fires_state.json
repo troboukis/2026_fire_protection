@@ -1,20 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564410251/ios-dytikoy-neiloy-kroysmata-se-akomi-5-dimoys/",
-      "title": "Ιός Δυτικού Νείλου: Κρούσματα σε ακόμη 5 δήμους",
-      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΚΡΟΥΣΜΑΤΑ ΣΕ ΑΚΟΜΗ 5 ΔΗΜΟΥΣ",
+      "url": "https://www.kathimerini.gr/politics/amyna/564410233/polyethniki-naytiki-askisi-stin-kypro-me-symmetochi-ipa/",
+      "title": "Πολυεθνική ναυτική άσκηση στην Κύπρο με συμμετοχή ΗΠΑ",
+      "normalized_title": "ΠΟΛΥΕΘΝΙΚΗ ΝΑΥΤΙΚΗ ΑΣΚΗΣΗ ΣΤΗΝ ΚΥΠΡΟ ΜΕ ΣΥΜΜΕΤΟΧΗ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564410251/ios-dytikoy-neiloy-kroysmata-se-akomi-5-dimoys/",
-        "https://www.kathimerini.gr/society/564410719/aimatiro-epeisodio-sti-thessaloniki-31chronos-machairose-25chroni-mesa-se-diamerisma/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564410230/klimakosi-me-gkrizes-zones-apo-tin-agkyra/",
-        "https://www.kathimerini.gr/economy/564410641/poy-apagoreyontai-fotovoltaika-kai-aiolika-me-to-neo-chorotaxiko-gia-tis-ape/",
-        "https://www.kathimerini.gr/visual/infographics/564410197/i-iraniki-apeili-sta-rantar-ton-patriot/",
-        "https://www.kathimerini.gr/world/564410200/diekopse-tis-emporikes-scheseis-me-to-ampoy-ntampi-i-techerani/",
-        "https://www.kathimerini.gr/world/564410332/se-kloio-skandalon-o-zelenski/",
-        "https://www.kathimerini.gr/world/564410290/skiniko-entasis-metaxy-israil-toyrkias/"
+        "https://www.kathimerini.gr/politics/amyna/564410233/polyethniki-naytiki-askisi-stin-kypro-me-symmetochi-ipa/",
+        "https://www.kathimerini.gr/world/564410701/tramp-kiryxe-oikonomiko-polemo-sto-iran-synepeies-se-opoia-chora-to-voithisei/",
+        "https://www.kathimerini.gr/society/564410245/i-epomeni-imera-meta-tin-pyrkagia-sti-chalkidiki/"
       ],
-      "seen_at_utc": "2026-08-20T04:17:14.010869+00:00"
+      "seen_at_utc": "2026-08-20T04:30:11.090473+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,53 +1273,24 @@
       "seen_at_utc": "2026-08-20T04:17:14.010982+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/nisides/1449323/oi-troades-allaxan-tin-epidayro/",
-      "title": "Οι «Τρωάδες» άλλαξαν την Επίδαυρο",
-      "normalized_title": "ΟΙ «ΤΡΩΑΔΕΣ» ΑΛΛΑΞΑΝ ΤΗΝ ΕΠΙΔΑΥΡΟ",
+      "url": "https://www.efsyn.gr/protoselida/i-ellada-mpainei-sto-stohastro/",
+      "title": "Η Ελλάδα μπαίνει στο στόχαστρο",
+      "normalized_title": "Η ΕΛΛΑΔΑ ΜΠΑΙΝΕΙ ΣΤΟ ΣΤΟΧΑΣΤΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/nisides/1449323/oi-troades-allaxan-tin-epidayro/",
-        "https://www.efsyn.gr/kosmos/1450924/o-tramp-apeilei-me-oikonomiko-d-day-to-iran-sto-stohastro-osoi-synallassontai-me-tin-teherani/",
-        "https://www.efsyn.gr/nisides/1449305/i-aytoexoristi-grafi/",
-        "https://www.efsyn.gr/politiki/1450907/diergasies-stin-aristera-meta-to-prosklitirio-doyroy-poioi-syzitoyn-me-ton-syriza-ti-frenarei-tis-epistrofes/",
-        "https://www.efsyn.gr/ellada/1450903/sifnos-katepeigoysa-ereyna-gia-ti-syntrivi-toy-elikopteroy-sto-mikroskopio-to-oyraio-strofeio/",
-        "https://www.efsyn.gr/ellada/1450910/kairos-erhetai-kaysonas-diarkeias-eos-kai-40-vathmoys-to-savvatokyriako/",
-        "https://www.efsyn.gr/ellada/1450904/eortologio-poioi-giortazoyn-simera-20-aygoystoy/"
+        "https://www.efsyn.gr/protoselida/i-ellada-mpainei-sto-stohastro/"
       ],
-      "seen_at_utc": "2026-08-20T04:17:14.010947+00:00"
+      "seen_at_utc": "2026-08-20T04:30:11.090546+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/economy/ti-provlepei-to-xorotaksiko-ape-freno-sta-aiolika-gia-nisia/",
-      "title": "Τι προβλέπει το «Χωροταξικό ΑΠΕ»: «Φρένο» στα αιολικά για νησιά",
-      "normalized_title": "ΤΙ ΠΡΟΒΛΕΠΕΙ ΤΟ «ΧΩΡΟΤΑΞΙΚΟ ΑΠΕ»: «ΦΡΕΝΟ» ΣΤΑ ΑΙΟΛΙΚΑ ΓΙΑ ΝΗΣΙΑ",
+      "url": "https://www.in.gr/2026/08/20/world/ti-kryvoun-oi-apeiles-tramp-gia-syntriptikes-oikonomikes-synepeies-sto-iran-poies-xores-mporei-na-stoxeysei/",
+      "title": "Τι κρύβουν οι απειλές Τραμπ για «συντριπτικές» οικονομικές συνέπειες στο Ιράν – Ποιες χώρες μπορεί να στοχεύσει",
+      "normalized_title": "ΤΙ ΚΡΥΒΟΥΝ ΟΙ ΑΠΕΙΛΕΣ ΤΡΑΜΠ ΓΙΑ «ΣΥΝΤΡΙΠΤΙΚΕΣ» ΟΙΚΟΝΟΜΙΚΕΣ ΣΥΝΕΠΕΙΕΣ ΣΤΟ ΙΡΑΝ – ΠΟΙΕΣ ΧΩΡΕΣ ΜΠΟΡΕΙ ΝΑ ΣΤΟΧΕΥΣΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/economy/ti-provlepei-to-xorotaksiko-ape-freno-sta-aiolika-gia-nisia/",
-        "https://www.in.gr/2026/08/20/life/geysi/syntagi-giouvetsi-me-mosxari/",
-        "https://www.in.gr/2026/08/20/greece/ypsilos-kindynos-pyrkagias-se-arketes-perioxes-tin-pempti-2/",
-        "https://www.in.gr/2026/08/20/life/geysi/poies-einai-oi-diafores-anamesa-stis-ntomates-kai-ta-ntomatinia/",
-        "https://www.in.gr/2026/08/20/greece/kairos-anevainei-i-thermokrasia-tin-pempti-pote-tha-kseperasei-tous-40-vathmous-o-ydrargyros/",
-        "https://www.in.gr/2026/08/20/greece/ta-pente-senaria-gia-ti-sifno/",
-        "https://www.in.gr/2026/08/20/life/culture-live/i-inte-navarete-apokalyptei-ton-rolo-ton-oneiron-tis-sti-marvel/",
-        "https://www.in.gr/2026/08/20/plus/vita/i-apodrasi-pou-mporeis-na-kaneis-apo-ton-kanape-sou-kai-ta-vazei-me-to-stres/",
-        "https://www.in.gr/2026/08/20/greece/oi-aorates-floges-tis-epomenis-imeras/",
-        "https://www.in.gr/2026/08/20/world/i-dimokratia-enantion-tis-mixanis-i-gennisi-tis-psifiakis-epoxis-kai-oi-proeidopoiiseis-pou-agnoithikan/",
-        "https://www.in.gr/2026/08/20/world/i-islandia-apofasizei-me-dimopsifisma-gia-mellon-tis-entos-i-ektos-ee-xoris-na-xasei-tin-taytotita-tis/",
-        "https://www.in.gr/2026/08/20/world/ormouz-to-naytiko-ton-ipa-voitha-sti-metafora-petrelaiou-alla-me-megalo-kostos/",
-        "https://www.in.gr/2026/08/20/life/culture-live/digger-pote-einai-i-pagkosmia-premiera-gia-ti-nea-tainia-tou-tom-krouz/",
-        "https://www.in.gr/2026/08/20/economy/plithorismos-ti-mas-perimenei-meta-tin-anasa-tou-iouliou-ayksiseis-69-stis-times-eisagogon-sti-viomixania/",
-        "https://www.in.gr/2026/08/20/life/diakopes/ta-soupermarket-os-touristiki-atraksion-giati-oi-taksidiotes-exoun-emmoni-na-psonizoun-me-tous-ntopious/",
-        "https://www.in.gr/2026/08/20/politics/kommata/me-tis-ekloges-sto-israil-na-einai-konta-o-tramp-niothei-pos-krataei-ton-netaniaxou/",
-        "https://www.in.gr/2026/08/20/economy/syntakseis-nea-maxi-gia-anadromika-apo-tin-eisfora-allileggyis/",
-        "https://www.in.gr/2026/08/20/politics/epikairotita/i-tourkia-eskise-kai-petakse-ton-xarti-tis-sevillis-me-ta-thalassia-parka-tis-grafei-i-xouriet/",
-        "https://www.in.gr/2026/08/20/world/israil-den-tha-dexthoume-opoiadipote-apeili-sta-synora-diaminyei-o-arxigos-tou-israilinou-stratou/",
-        "https://www.in.gr/2026/08/20/world/aiti-epitaxynsi-ton-eggafon-stous-eklogikous-katalogous-thelei-o-organismos-amerikanikon-kraton/",
-        "https://www.in.gr/2026/08/20/world/iran-o-tramp-apeilei-me-tromeres-synepeies-opoiadipote-xora-voithisei-oikonomika-tin-texerani/",
-        "https://www.in.gr/2026/08/20/world/oukrania-5-nekroi-23-traymaties-apo-tis-nees-rosikes-epidromes-sto-kievo/",
-        "https://www.in.gr/2026/08/20/go-fun/music-stage/iran-akyronontai-oi-synaylies-ton-sakira-kai-agkilera-sta-iae/",
-        "https://www.in.gr/2026/08/20/in-science/perivallon-b-science/elvetia-i-stathmi-sti-limni-tis-zyrixis-vrisketai-sto-xamilotero-epipedo-apo-to-1951/",
-        "https://www.in.gr/2026/08/20/world/israil-katesti-safes-stin-tourkia-pos-den-mporei-na-exei-stratiotiki-vasi-sti-syria-dilonei-o-netaniaxou/"
+        "https://www.in.gr/2026/08/20/world/ti-kryvoun-oi-apeiles-tramp-gia-syntriptikes-oikonomikes-synepeies-sto-iran-poies-xores-mporei-na-stoxeysei/",
+        "https://www.in.gr/2026/08/20/go-fun/social/arkas-eseis-valate-ksypnitiri-simera/"
       ],
-      "seen_at_utc": "2026-08-20T04:17:14.010921+00:00"
+      "seen_at_utc": "2026-08-20T04:30:11.090531+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T04:17:14.011066+00:00"
+  "updated_at_utc": "2026-08-20T04:30:11.090611+00:00"
 }
