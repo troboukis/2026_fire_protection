@@ -1,14 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398845/eortologio-poioi-giortazoyn-simera-20-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 20 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 20 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/society/564410251/ios-dytikoy-neiloy-kroysmata-se-akomi-5-dimoys/",
+      "title": "Ιός Δυτικού Νείλου: Κρούσματα σε ακόμη 5 δήμους",
+      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΚΡΟΥΣΜΑΤΑ ΣΕ ΑΚΟΜΗ 5 ΔΗΜΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398845/eortologio-poioi-giortazoyn-simera-20-aygoystoy/",
-        "https://www.kathimerini.gr/athletics/564409963/o-petroynias-ekane-to-proto-vima-gia-to-9o-chryso-metallio-sta-eyropaika-protathlimata/"
+        "https://www.kathimerini.gr/society/564410251/ios-dytikoy-neiloy-kroysmata-se-akomi-5-dimoys/",
+        "https://www.kathimerini.gr/society/564410719/aimatiro-epeisodio-sti-thessaloniki-31chronos-machairose-25chroni-mesa-se-diamerisma/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564410230/klimakosi-me-gkrizes-zones-apo-tin-agkyra/",
+        "https://www.kathimerini.gr/economy/564410641/poy-apagoreyontai-fotovoltaika-kai-aiolika-me-to-neo-chorotaxiko-gia-tis-ape/",
+        "https://www.kathimerini.gr/visual/infographics/564410197/i-iraniki-apeili-sta-rantar-ton-patriot/",
+        "https://www.kathimerini.gr/world/564410200/diekopse-tis-emporikes-scheseis-me-to-ampoy-ntampi-i-techerani/",
+        "https://www.kathimerini.gr/world/564410332/se-kloio-skandalon-o-zelenski/",
+        "https://www.kathimerini.gr/world/564410290/skiniko-entasis-metaxy-israil-toyrkias/"
       ],
-      "seen_at_utc": "2026-08-19T21:17:03.163642+00:00"
+      "seen_at_utc": "2026-08-20T04:17:14.010869+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1266,65 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867032/duo-sullipseis-gia-polisi-maimou-proiodon-sto-irakleio-tis-kritis-oikonomiki-zimia-se-etaireies-peripou-80000/?utm_source=rss",
-      "title": "Δύο συλλήψεις για πώληση «μαϊμού» προϊόντων στο Ηράκλειο της Κρήτης, οικονομική ζημιά σε εταιρείες περίπου 80.000€",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΩΛΗΣΗ «ΜΑΙΜΟΥ» ΠΡΟΙΟΝΤΩΝ ΣΤΟ ΗΡΑΚΛΕΙΟ ΤΗΣ ΚΡΗΤΗΣ, ΟΙΚΟΝΟΜΙΚΗ ΖΗΜΙΑ ΣΕ ΕΤΑΙΡΕΙΕΣ ΠΕΡΙΠΟΥ 80.000€",
+      "url": "https://www.protothema.gr/greece/article/1867072/fotia-tora-se-egataleleimmeno-ktirio-sti-thessaloniki-sto-simeio-i-purosvestiki/?utm_source=rss",
+      "title": "Φωτιά σε εγκαταλελειμμένο κτίριο στη Θεσσαλονίκη, στο σημείο η Πυροσβεστική",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΣΤΟ ΣΗΜΕΙΟ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867032/duo-sullipseis-gia-polisi-maimou-proiodon-sto-irakleio-tis-kritis-oikonomiki-zimia-se-etaireies-peripou-80000/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867072/fotia-tora-se-egataleleimmeno-ktirio-sti-thessaloniki-sto-simeio-i-purosvestiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867071/dolofonos-tasou-isaak-i-simaia-den-prepei-na-katevainei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867070/pao-se-mia-doulitsa-kai-erhomai-i-teleutaia-sunomilia-tis-diasostrias-me-ton-patera-tis-prin-to-foniko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867067/se-trohia-anodou-i-thermokrasia-apo-simera-me-38aria-to-skiniko-tou-kairou-to-savvatokuriako/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-19T19:51:11.232700+00:00"
+      "seen_at_utc": "2026-08-20T04:17:14.010982+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1450895/axios-ki-omos-oi-ipa-metaferoyn-petrelaio-meso-toy-ormoyz-10-ekat-varelia-pernoyn-kathimerina-apo-ta-stena/",
-      "title": "Axios: Κι όμως, οι ΗΠΑ μεταφέρουν πετρέλαιο μέσω του Ορμούζ – 10 εκατ. βαρέλια περνούν καθημερινά από τα Στενά",
-      "normalized_title": "AXIOS: ΚΙ ΟΜΩΣ, ΟΙ ΗΠΑ ΜΕΤΑΦΕΡΟΥΝ ΠΕΤΡΕΛΑΙΟ ΜΕΣΩ ΤΟΥ ΟΡΜΟΥΖ – 10 ΕΚΑΤ. ΒΑΡΕΛΙΑ ΠΕΡΝΟΥΝ ΚΑΘΗΜΕΡΙΝΑ ΑΠΟ ΤΑ ΣΤΕΝΑ",
+      "url": "https://www.efsyn.gr/nisides/1449323/oi-troades-allaxan-tin-epidayro/",
+      "title": "Οι «Τρωάδες» άλλαξαν την Επίδαυρο",
+      "normalized_title": "ΟΙ «ΤΡΩΑΔΕΣ» ΑΛΛΑΞΑΝ ΤΗΝ ΕΠΙΔΑΥΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1450895/axios-ki-omos-oi-ipa-metaferoyn-petrelaio-meso-toy-ormoyz-10-ekat-varelia-pernoyn-kathimerina-apo-ta-stena/"
+        "https://www.efsyn.gr/nisides/1449323/oi-troades-allaxan-tin-epidayro/",
+        "https://www.efsyn.gr/kosmos/1450924/o-tramp-apeilei-me-oikonomiko-d-day-to-iran-sto-stohastro-osoi-synallassontai-me-tin-teherani/",
+        "https://www.efsyn.gr/nisides/1449305/i-aytoexoristi-grafi/",
+        "https://www.efsyn.gr/politiki/1450907/diergasies-stin-aristera-meta-to-prosklitirio-doyroy-poioi-syzitoyn-me-ton-syriza-ti-frenarei-tis-epistrofes/",
+        "https://www.efsyn.gr/ellada/1450903/sifnos-katepeigoysa-ereyna-gia-ti-syntrivi-toy-elikopteroy-sto-mikroskopio-to-oyraio-strofeio/",
+        "https://www.efsyn.gr/ellada/1450910/kairos-erhetai-kaysonas-diarkeias-eos-kai-40-vathmoys-to-savvatokyriako/",
+        "https://www.efsyn.gr/ellada/1450904/eortologio-poioi-giortazoyn-simera-20-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-19T21:17:03.163719+00:00"
+      "seen_at_utc": "2026-08-20T04:17:14.010947+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/plus/medianews/sta-nea-tis-pemptis-kai-i-ellada-sto-stoxastro/",
-      "title": "Στα «ΝΕΑ» της Πέμπτης: Και η Ελλάδα στο στόχαστρο",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΠΕΜΠΤΗΣ: ΚΑΙ Η ΕΛΛΑΔΑ ΣΤΟ ΣΤΟΧΑΣΤΡΟ",
+      "url": "https://www.in.gr/2026/08/20/economy/ti-provlepei-to-xorotaksiko-ape-freno-sta-aiolika-gia-nisia/",
+      "title": "Τι προβλέπει το «Χωροταξικό ΑΠΕ»: «Φρένο» στα αιολικά για νησιά",
+      "normalized_title": "ΤΙ ΠΡΟΒΛΕΠΕΙ ΤΟ «ΧΩΡΟΤΑΞΙΚΟ ΑΠΕ»: «ΦΡΕΝΟ» ΣΤΑ ΑΙΟΛΙΚΑ ΓΙΑ ΝΗΣΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/plus/medianews/sta-nea-tis-pemptis-kai-i-ellada-sto-stoxastro/",
-        "https://www.in.gr/2026/08/20/world/oukrania-nea-maziki-epithesi-me-vallistikous-pyraylous-kata-tou-kievou/"
+        "https://www.in.gr/2026/08/20/economy/ti-provlepei-to-xorotaksiko-ape-freno-sta-aiolika-gia-nisia/",
+        "https://www.in.gr/2026/08/20/life/geysi/syntagi-giouvetsi-me-mosxari/",
+        "https://www.in.gr/2026/08/20/greece/ypsilos-kindynos-pyrkagias-se-arketes-perioxes-tin-pempti-2/",
+        "https://www.in.gr/2026/08/20/life/geysi/poies-einai-oi-diafores-anamesa-stis-ntomates-kai-ta-ntomatinia/",
+        "https://www.in.gr/2026/08/20/greece/kairos-anevainei-i-thermokrasia-tin-pempti-pote-tha-kseperasei-tous-40-vathmous-o-ydrargyros/",
+        "https://www.in.gr/2026/08/20/greece/ta-pente-senaria-gia-ti-sifno/",
+        "https://www.in.gr/2026/08/20/life/culture-live/i-inte-navarete-apokalyptei-ton-rolo-ton-oneiron-tis-sti-marvel/",
+        "https://www.in.gr/2026/08/20/plus/vita/i-apodrasi-pou-mporeis-na-kaneis-apo-ton-kanape-sou-kai-ta-vazei-me-to-stres/",
+        "https://www.in.gr/2026/08/20/greece/oi-aorates-floges-tis-epomenis-imeras/",
+        "https://www.in.gr/2026/08/20/world/i-dimokratia-enantion-tis-mixanis-i-gennisi-tis-psifiakis-epoxis-kai-oi-proeidopoiiseis-pou-agnoithikan/",
+        "https://www.in.gr/2026/08/20/world/i-islandia-apofasizei-me-dimopsifisma-gia-mellon-tis-entos-i-ektos-ee-xoris-na-xasei-tin-taytotita-tis/",
+        "https://www.in.gr/2026/08/20/world/ormouz-to-naytiko-ton-ipa-voitha-sti-metafora-petrelaiou-alla-me-megalo-kostos/",
+        "https://www.in.gr/2026/08/20/life/culture-live/digger-pote-einai-i-pagkosmia-premiera-gia-ti-nea-tainia-tou-tom-krouz/",
+        "https://www.in.gr/2026/08/20/economy/plithorismos-ti-mas-perimenei-meta-tin-anasa-tou-iouliou-ayksiseis-69-stis-times-eisagogon-sti-viomixania/",
+        "https://www.in.gr/2026/08/20/life/diakopes/ta-soupermarket-os-touristiki-atraksion-giati-oi-taksidiotes-exoun-emmoni-na-psonizoun-me-tous-ntopious/",
+        "https://www.in.gr/2026/08/20/politics/kommata/me-tis-ekloges-sto-israil-na-einai-konta-o-tramp-niothei-pos-krataei-ton-netaniaxou/",
+        "https://www.in.gr/2026/08/20/economy/syntakseis-nea-maxi-gia-anadromika-apo-tin-eisfora-allileggyis/",
+        "https://www.in.gr/2026/08/20/politics/epikairotita/i-tourkia-eskise-kai-petakse-ton-xarti-tis-sevillis-me-ta-thalassia-parka-tis-grafei-i-xouriet/",
+        "https://www.in.gr/2026/08/20/world/israil-den-tha-dexthoume-opoiadipote-apeili-sta-synora-diaminyei-o-arxigos-tou-israilinou-stratou/",
+        "https://www.in.gr/2026/08/20/world/aiti-epitaxynsi-ton-eggafon-stous-eklogikous-katalogous-thelei-o-organismos-amerikanikon-kraton/",
+        "https://www.in.gr/2026/08/20/world/iran-o-tramp-apeilei-me-tromeres-synepeies-opoiadipote-xora-voithisei-oikonomika-tin-texerani/",
+        "https://www.in.gr/2026/08/20/world/oukrania-5-nekroi-23-traymaties-apo-tis-nees-rosikes-epidromes-sto-kievo/",
+        "https://www.in.gr/2026/08/20/go-fun/music-stage/iran-akyronontai-oi-synaylies-ton-sakira-kai-agkilera-sta-iae/",
+        "https://www.in.gr/2026/08/20/in-science/perivallon-b-science/elvetia-i-stathmi-sti-limni-tis-zyrixis-vrisketai-sto-xamilotero-epipedo-apo-to-1951/",
+        "https://www.in.gr/2026/08/20/world/israil-katesti-safes-stin-tourkia-pos-den-mporei-na-exei-stratiotiki-vasi-sti-syria-dilonei-o-netaniaxou/"
       ],
-      "seen_at_utc": "2026-08-19T22:51:10.912366+00:00"
+      "seen_at_utc": "2026-08-20T04:17:14.010921+00:00"
     }
   },
-  "updated_at_utc": "2026-08-19T22:51:10.912461+00:00"
+  "updated_at_utc": "2026-08-20T04:17:14.011066+00:00"
 }
