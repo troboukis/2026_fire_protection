@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564410617/ilektroniki-timologisi-paratasi-se-mikres-epicheiriseis/",
-      "title": "Ηλεκτρονική τιμολόγηση: Παράταση σε μικρές επιχειρήσεις",
-      "normalized_title": "ΗΛΕΚΤΡΟΝΙΚΗ ΤΙΜΟΛΟΓΗΣΗ: ΠΑΡΑΤΑΣΗ ΣΕ ΜΙΚΡΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564410185/i-istoria-tis-paroy-mesa-apo-mia-katoikia-100-eton-kai-ena-soi-karavokyraion/",
+      "title": "Η ιστορία της Πάρου μέσα από μια κατοικία 100 ετών και ένα σόι καραβοκυραίων",
+      "normalized_title": "Η ΙΣΤΟΡΙΑ ΤΗΣ ΠΑΡΟΥ ΜΕΣΑ ΑΠΟ ΜΙΑ ΚΑΤΟΙΚΙΑ 100 ΕΤΩΝ ΚΑΙ ΕΝΑ ΣΟΙ ΚΑΡΑΒΟΚΥΡΑΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564410617/ilektroniki-timologisi-paratasi-se-mikres-epicheiriseis/",
-        "https://www.kathimerini.gr/world/564411031/zaporizia-choris-reyma-o-pyrinikos-stathmos-me-gennitries-ektaktis-anagkis-ta-systimata-asfaleias/",
-        "https://www.kathimerini.gr/society/reportaz/564406138/mazeye-kalamia-apo-tin-ellada-gia-ton-aylo-poy-akoyme-stin-odysseia/",
-        "https://www.kathimerini.gr/world/564411022/kina-se-isovia-katheirxi-katadikastike-o-idrytis-toy-omiloy-evergrande/"
+        "https://www.kathimerini.gr/culture/athinaika-plus/564410185/i-istoria-tis-paroy-mesa-apo-mia-katoikia-100-eton-kai-ena-soi-karavokyraion/"
       ],
-      "seen_at_utc": "2026-08-20T09:17:13.098505+00:00"
+      "seen_at_utc": "2026-08-20T09:30:04.644290+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867217/exeligmena-sustimata-puroprostasias-se-arhaiologikous-horous-i-akropoli-o-mustras-oi-mukines-kai-ta-sunolika-22-simeia/?utm_source=rss",
-      "title": "Εξελιγμένα συστήματα πυροπροστασίας σε αρχαιολογικούς χώρους: Η Ακρόπολη, ο Μυστράς, οι Μυκήνες και τα συνολικά 22 σημεία",
-      "normalized_title": "ΕΞΕΛΙΓΜΕΝΑ ΣΥΣΤΗΜΑΤΑ ΠΥΡΟΠΡΟΣΤΑΣΙΑΣ ΣΕ ΑΡΧΑΙΟΛΟΓΙΚΟΥΣ ΧΩΡΟΥΣ: Η ΑΚΡΟΠΟΛΗ, Ο ΜΥΣΤΡΑΣ, ΟΙ ΜΥΚΗΝΕΣ ΚΑΙ ΤΑ ΣΥΝΟΛΙΚΑ 22 ΣΗΜΕΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1867221/magiorkinis-gia-io-dutikou-neilou-oi-perissoteroi-den-katalavainoun-oti-molunthikan-poies-periohes-tis-attikis/?utm_source=rss",
+      "title": "Μαγιορκίνης για ιό Δυτικού Νείλου: Οι περισσότεροι δεν καταλαβαίνουν ότι μολύνθηκαν, ποιες περιοχές της Αττικής κινδυνεύουν περισσότερο",
+      "normalized_title": "ΜΑΓΙΟΡΚΙΝΗΣ ΓΙΑ ΙΟ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΟΙ ΠΕΡΙΣΣΟΤΕΡΟΙ ΔΕΝ ΚΑΤΑΛΑΒΑΙΝΟΥΝ ΟΤΙ ΜΟΛΥΝΘΗΚΑΝ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΤΗΣ ΑΤΤΙΚΗΣ ΚΙΝΔΥΝΕΥΟΥΝ ΠΕΡΙΣΣΟΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867217/exeligmena-sustimata-puroprostasias-se-arhaiologikous-horous-i-akropoli-o-mustras-oi-mukines-kai-ta-sunolika-22-simeia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867212/agnostos-karfose-20-megala-karfia-se-mouria-sti-thessaloniki-deite-eikones/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867221/magiorkinis-gia-io-dutikou-neilou-oi-perissoteroi-den-katalavainoun-oti-molunthikan-poies-periohes-tis-attikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T09:17:13.098607+00:00"
+      "seen_at_utc": "2026-08-20T09:30:04.644424+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1451042/mesi-anatoli-kindynos-neas-ellinikis-emplokis-ta-apotelesmata-tis-kyvernitikis-politikis/",
-      "title": "Μέση Ανατολή: Κίνδυνος νέας ελληνικής εμπλοκής – Στο τραπέζι η μεταφορά Patriot σε Κρήτη και Διδυμότειχο",
-      "normalized_title": "ΜΕΣΗ ΑΝΑΤΟΛΗ: ΚΙΝΔΥΝΟΣ ΝΕΑΣ ΕΛΛΗΝΙΚΗΣ ΕΜΠΛΟΚΗΣ – ΣΤΟ ΤΡΑΠΕΖΙ Η ΜΕΤΑΦΟΡΑ PATRIOT ΣΕ ΚΡΗΤΗ ΚΑΙ ΔΙΔΥΜΟΤΕΙΧΟ",
+      "url": "https://www.efsyn.gr/politiki/1451151/oi-neoi-tomearhes-toy-syriza-ola-ta-onomata/",
+      "title": "Οι νέοι τομεάρχες του ΣΥΡΙΖΑ – Όλα τα ονόματα",
+      "normalized_title": "ΟΙ ΝΕΟΙ ΤΟΜΕΑΡΧΕΣ ΤΟΥ ΣΥΡΙΖΑ – ΟΛΑ ΤΑ ΟΝΟΜΑΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1451042/mesi-anatoli-kindynos-neas-ellinikis-emplokis-ta-apotelesmata-tis-kyvernitikis-politikis/"
+        "https://www.efsyn.gr/politiki/1451151/oi-neoi-tomearhes-toy-syriza-ola-ta-onomata/",
+        "https://www.efsyn.gr/oikonomia/1451061/ipa-okto-ekat-amerikanoi-horis-ygeionomiki-kalypsi-eleo-tramp/",
+        "https://www.efsyn.gr/life/1451136/na-soy-rixei-ki-allo-vitrioli-to-emetiko-minyma-stin-ioanna-paliospyroy-kai-i-apantisi-tis/"
       ],
-      "seen_at_utc": "2026-08-20T09:17:13.098585+00:00"
+      "seen_at_utc": "2026-08-20T09:30:04.644372+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/greece/ios-tou-dytikou-neilou-ayksanontai-ta-peristatika-loimoksis-ta-anisyxitika-symptomata/",
-      "title": "Αυξάνονται τα περιστατικά λοίμωξης από τον ιό του Δυτικού Νείλου - Τα ανησυχητικά συμπτώματα",
-      "normalized_title": "ΑΥΞΑΝΟΝΤΑΙ ΤΑ ΠΕΡΙΣΤΑΤΙΚΑ ΛΟΙΜΩΞΗΣ ΑΠΟ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ - ΤΑ ΑΝΗΣΥΧΗΤΙΚΑ ΣΥΜΠΤΩΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/20/sports/football/aek-ekleise-kai-mpainei-stin-eyropaiki-lista-o-lykogiannis/",
+      "title": "ΑΕΚ: «Έκλεισε» και μπαίνει στην ευρωπαϊκή λίστα ο Λυκογιάννης",
+      "normalized_title": "ΑΕΚ: «ΕΚΛΕΙΣΕ» ΚΑΙ ΜΠΑΙΝΕΙ ΣΤΗΝ ΕΥΡΩΠΑΙΚΗ ΛΙΣΤΑ Ο ΛΥΚΟΓΙΑΝΝΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/greece/ios-tou-dytikou-neilou-ayksanontai-ta-peristatika-loimoksis-ta-anisyxitika-symptomata/",
-        "https://www.in.gr/2026/08/20/in-science/technology/to-stegastiko-provlima-ton-data-center-oi-ependytes-strefontai-stin-eyropaiki-eparxia/",
-        "https://www.in.gr/2026/08/20/sports/football/oi-diaitites-tis-1is-agonistikis-tis-super-league/",
-        "https://www.in.gr/2026/08/20/world/tailandi-tromaktiko-vinteo-touristes-parasyrontai-apo-ormitika-nera-se-katarrakti/"
+        "https://www.in.gr/2026/08/20/sports/football/aek-ekleise-kai-mpainei-stin-eyropaiki-lista-o-lykogiannis/",
+        "https://www.in.gr/2026/08/20/world/i-voreia-korea-ektokseyse-vallistiko-pyraylo-sti-thalassa-ypostirizoun-oi-iaponikes-arxes/"
       ],
-      "seen_at_utc": "2026-08-20T09:17:13.098546+00:00"
+      "seen_at_utc": "2026-08-20T09:30:04.644335+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T09:17:13.098665+00:00"
+  "updated_at_utc": "2026-08-20T09:30:04.644494+00:00"
 }
