@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564411451/olympiakos-den-emfanistike-o-tomas-goyokap-gia-ta-ergometrika/",
-      "title": "Ολυμπιακός: Δεν εμφανίστηκε ο Τόμας Γουόκαπ για τα εργομετρικά",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΔΕΝ ΕΜΦΑΝΙΣΤΗΚΕ Ο ΤΟΜΑΣ ΓΟΥΟΚΑΠ ΓΙΑ ΤΑ ΕΡΓΟΜΕΤΡΙΚΑ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564411508/athina-se-agkyra-anypostatoi-ischyrismoi-kai-anatheoritikes-emmones-to-kathestos-sto-aigaio-einai-xekatharo/",
+      "title": "Αθήνα σε Aγκυρα: «Aνυπόστατοι ισχυρισμοί και αναθεωρητικές εμμονές – Το καθεστώς στο Αιγαίο είναι ξεκάθαρο»",
+      "normalized_title": "ΑΘΗΝΑ ΣΕ AΓΚΥΡΑ: «AΝΥΠΟΣΤΑΤΟΙ ΙΣΧΥΡΙΣΜΟΙ ΚΑΙ ΑΝΑΘΕΩΡΗΤΙΚΕΣ ΕΜΜΟΝΕΣ – ΤΟ ΚΑΘΕΣΤΩΣ ΣΤΟ ΑΙΓΑΙΟ ΕΙΝΑΙ ΞΕΚΑΘΑΡΟ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564411451/olympiakos-den-emfanistike-o-tomas-goyokap-gia-ta-ergometrika/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564411508/athina-se-agkyra-anypostatoi-ischyrismoi-kai-anatheoritikes-emmones-to-kathestos-sto-aigaio-einai-xekatharo/",
+        "https://www.kathimerini.gr/k/gastronomos/564409879/omeleta-me-karonoys-apo-tin-ikaria/",
+        "https://www.kathimerini.gr/k/k-magazine/564408121/sta-mystagogika-panigyria-tis-ipeiroy/",
+        "https://www.kathimerini.gr/world/564411388/israil-chaos-sto-aerodromio-mpen-gkoyrion-meta-apo-aifnidiastiki-stasi-ergasias-vinteo/"
       ],
-      "seen_at_utc": "2026-08-20T15:51:32.282054+00:00"
+      "seen_at_utc": "2026-08-20T16:17:05.584795+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1262,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867388/thrinos-gia-ton-21hrono-aggelo-pou-skotothike-se-trohaio-sto-rethumno-i-mihani-tou-sugroustike-me-taxi/?utm_source=rss",
-      "title": "Θρήνος για τον 21χρονο Άγγελο που σκοτώθηκε σε τροχαίο στo Ρέθυμνο, η μηχανή του συγκρούστηκε με ταξί",
-      "normalized_title": "ΘΡΗΝΟΣ ΓΙΑ ΤΟΝ 21ΧΡΟΝΟ ΑΓΓΕΛΟ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ ΣΤO ΡΕΘΥΜΝΟ, Η ΜΗΧΑΝΗ ΤΟΥ ΣΥΓΚΡΟΥΣΤΗΚΕ ΜΕ ΤΑΞΙ",
+      "url": "https://www.protothema.gr/greece/article/1867404/sunelifthi-stin-kozani-33hronos-drapetis-pou-den-epestrepse-apo-adeia-stis-agrotikes-fulakes-kassandras/?utm_source=rss",
+      "title": "Συνελήφθη στην Κοζάνη δραπέτης των αγροτικών φυλακών Κασσάνδρας, χειροπέδες και σε 44χρονη συνεργό του",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗΝ ΚΟΖΑΝΗ ΔΡΑΠΕΤΗΣ ΤΩΝ ΑΓΡΟΤΙΚΩΝ ΦΥΛΑΚΩΝ ΚΑΣΣΑΝΔΡΑΣ, ΧΕΙΡΟΠΕΔΕΣ ΚΑΙ ΣΕ 44ΧΡΟΝΗ ΣΥΝΕΡΓΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867388/thrinos-gia-ton-21hrono-aggelo-pou-skotothike-se-trohaio-sto-rethumno-i-mihani-tou-sugroustike-me-taxi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867404/sunelifthi-stin-kozani-33hronos-drapetis-pou-den-epestrepse-apo-adeia-stis-agrotikes-fulakes-kassandras/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867401/parateinodai-ta-proliptika-metra-gia-tin-eulogia-ton-aigoprovaton-stin-kriti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867397/fotia-tora-se-xera-horta-sta-megara-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T15:51:32.282126+00:00"
+      "seen_at_utc": "2026-08-20T16:17:05.584947+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1451464/pyrkagia-xespase-sti-nea-petra-serron/",
-      "title": "Πυρκαγιά ξέσπασε στη Νέα Πέτρα Σερρών",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΞΕΣΠΑΣΕ ΣΤΗ ΝΕΑ ΠΕΤΡΑ ΣΕΡΡΩΝ",
+      "url": "https://www.efsyn.gr/life/1451468/prigkipas-hari-kai-megkan-ta-erotimata-gia-tin-epistrofi-toys-sto-inomeno-vasileio/",
+      "title": "Πρίγκιπας Χάρι και Μέγκαν: Τα ερωτήματα για την επιστροφή τους στο Ηνωμένο Βασίλειο",
+      "normalized_title": "ΠΡΙΓΚΙΠΑΣ ΧΑΡΙ ΚΑΙ ΜΕΓΚΑΝ: ΤΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΗΝ ΕΠΙΣΤΡΟΦΗ ΤΟΥΣ ΣΤΟ ΗΝΩΜΕΝΟ ΒΑΣΙΛΕΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1451464/pyrkagia-xespase-sti-nea-petra-serron/",
-        "https://www.efsyn.gr/kosmos/1451461/ereyna-guardian-an-den-drasoyme-oi-dasikes-pyrkagies-stin-eyropi-tha-ayxithoyn-toylahiston-kata-39/",
-        "https://www.efsyn.gr/athlitismos/1451460/olympiakos-den-pire-o-goyokap-stis-ergometrikes-exetaseis-ton-kalei-se-apologia-i-kae/"
+        "https://www.efsyn.gr/life/1451468/prigkipas-hari-kai-megkan-ta-erotimata-gia-tin-epistrofi-toys-sto-inomeno-vasileio/",
+        "https://www.efsyn.gr/kosmos/1451467/orgi-iran-gia-tis-nees-amerikanikes-kyroseis-prokeitai-gia-oikonomiki-tromokratia-kai-egklimata-kata-tis-anthropotitas/",
+        "https://www.efsyn.gr/politiki/1451470/i-athina-apanta-stin-agkyra-gia-to-horotaxiko-plaisio-to-kathestos-kyriarhias-sto-aigaio-einai-apolytos-xekatharo/"
       ],
-      "seen_at_utc": "2026-08-20T15:51:32.282105+00:00"
+      "seen_at_utc": "2026-08-20T16:17:05.584915+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/in-science/technology/poios-einai-o-pragmatikos-logos-pou-xrisimopoioume-to-airplane-mode-stis-ptiseis/",
-      "title": "Ποιος είναι ο πραγματικός λόγος που χρησιμοποιούμε το «airplane mode» στις πτήσεις",
-      "normalized_title": "ΠΟΙΟΣ ΕΙΝΑΙ Ο ΠΡΑΓΜΑΤΙΚΟΣ ΛΟΓΟΣ ΠΟΥ ΧΡΗΣΙΜΟΠΟΙΟΥΜΕ ΤΟ «AIRPLANE MODE» ΣΤΙΣ ΠΤΗΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/20/politics/diplomatia/aystiri-apantisi-stin-tourkia-anypostatoi-isxyrismoi-apolytos-ksekatharo-to-kathestos-kyriarxias-sto-aigaio/",
+      "title": "Αυστηρή απάντηση ΥΠΕΞ στην Άγκυρα: Ανυπόστατοι ισχυρισμοί - Απολύτως ξεκάθαρο το καθεστώς κυριαρχίας στο Αιγαίο",
+      "normalized_title": "ΑΥΣΤΗΡΗ ΑΠΑΝΤΗΣΗ ΥΠΕΞ ΣΤΗΝ ΑΓΚΥΡΑ: ΑΝΥΠΟΣΤΑΤΟΙ ΙΣΧΥΡΙΣΜΟΙ - ΑΠΟΛΥΤΩΣ ΞΕΚΑΘΑΡΟ ΤΟ ΚΑΘΕΣΤΩΣ ΚΥΡΙΑΡΧΙΑΣ ΣΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/in-science/technology/poios-einai-o-pragmatikos-logos-pou-xrisimopoioume-to-airplane-mode-stis-ptiseis/",
-        "https://www.in.gr/2026/08/20/sports/football/kovats-se-eksairetiki-katastasi-o-konstantelias-den-vrisko-logo-na-min-einai-stin-apostoli-gia-mpagern/",
-        "https://www.in.gr/2026/08/20/greece/astynomiki-epixeirisi-se-oikismous-ston-aspropyrgo-16-syllipseis/",
-        "https://www.in.gr/2026/08/20/greece/fotia-se-xamili-vlastisi-sti-nea-petra-serron/"
+        "https://www.in.gr/2026/08/20/politics/diplomatia/aystiri-apantisi-stin-tourkia-anypostatoi-isxyrismoi-apolytos-ksekatharo-to-kathestos-kyriarxias-sto-aigaio/",
+        "https://www.in.gr/2026/08/20/economy/agro-in/parateinontai-ta-metra-gia-tin-eylogia-ton-aigoprovaton-stin-kriti/",
+        "https://www.in.gr/2026/08/20/sports/football/kypello-enstasi-gia-to-mats-me-ton-levadeiako-katethese-o-asteras/",
+        "https://www.in.gr/2026/08/20/greece/skiathos-symploki-odigou-taksi-me-dyo-vretanous-touristes-gia-to-parathyro-tis-piso-portas/"
       ],
-      "seen_at_utc": "2026-08-20T15:51:32.282091+00:00"
+      "seen_at_utc": "2026-08-20T16:17:05.584876+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T15:51:32.282192+00:00"
+  "updated_at_utc": "2026-08-20T16:17:05.585039+00:00"
 }
