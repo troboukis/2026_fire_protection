@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564411493/ntortmoynt-oi-18-antartes-me-ta-kapela-piso-apo-to-chamogelo-toy-konstantelia/",
-      "title": "Ντόρτμουντ: Οι 18 «αντάρτες» με τα καπέλα πίσω από το χαμόγελο του Κωνσταντέλια",
-      "normalized_title": "ΝΤΟΡΤΜΟΥΝΤ: ΟΙ 18 «ΑΝΤΑΡΤΕΣ» ΜΕ ΤΑ ΚΑΠΕΛΑ ΠΙΣΩ ΑΠΟ ΤΟ ΧΑΜΟΓΕΛΟ ΤΟΥ ΚΩΝΣΤΑΝΤΕΛΙΑ",
+      "url": "https://www.kathimerini.gr/columns/564407179/enshittification-giati-ola-ginontai-cheirotera/",
+      "title": "Enshittification: Γιατί όλα γίνονται χειρότερα",
+      "normalized_title": "ENSHITTIFICATION: ΓΙΑΤΙ ΟΛΑ ΓΙΝΟΝΤΑΙ ΧΕΙΡΟΤΕΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564411493/ntortmoynt-oi-18-antartes-me-ta-kapela-piso-apo-to-chamogelo-toy-konstantelia/"
+        "https://www.kathimerini.gr/columns/564407179/enshittification-giati-ola-ginontai-cheirotera/",
+        "https://www.kathimerini.gr/world/564411349/se-anastoli-o-akadimaikos-poy-katiggeile-gia-logoklopi-ton-tzeison-arntei/",
+        "https://www.kathimerini.gr/opinion/interviews/564410281/dr-konstantinos-mylonas-stin-k-eimaste-se-periodo-mi-anastrepsimon-allagon/"
       ],
-      "seen_at_utc": "2026-08-20T16:51:29.529816+00:00"
+      "seen_at_utc": "2026-08-20T17:18:24.047314+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,43 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867417/epeisodiaki-katadioxi-sta-grevena-47hronos-epese-me-to-autokinito-tou-pano-se-astunomiko/?utm_source=rss",
-      "title": "Επεισοδιακή καταδίωξη στα Γρεβενά: 47χρονος έπεσε με το αυτοκίνητό του πάνω σε αστυνομικό",
-      "normalized_title": "ΕΠΕΙΣΟΔΙΑΚΗ ΚΑΤΑΔΙΩΞΗ ΣΤΑ ΓΡΕΒΕΝΑ: 47ΧΡΟΝΟΣ ΕΠΕΣΕ ΜΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ ΠΑΝΩ ΣΕ ΑΣΤΥΝΟΜΙΚΟ",
+      "url": "https://www.protothema.gr/greece/article/1867425/deite-video-asuneiditos-odigos-leoforeiou-epiheirei-epikinduni-prosperasi-pano-sti-gefura-tis-leukadas/?utm_source=rss",
+      "title": "Δείτε βίντεο: Ασυνείδητος οδηγός λεωφορείου επιχειρεί επικίνδυνη προσπέραση πάνω στη γέφυρα της Λευκάδας",
+      "normalized_title": "ΔΕΙΤΕ ΒΙΝΤΕΟ: ΑΣΥΝΕΙΔΗΤΟΣ ΟΔΗΓΟΣ ΛΕΩΦΟΡΕΙΟΥ ΕΠΙΧΕΙΡΕΙ ΕΠΙΚΙΝΔΥΝΗ ΠΡΟΣΠΕΡΑΣΗ ΠΑΝΩ ΣΤΗ ΓΕΦΥΡΑ ΤΗΣ ΛΕΥΚΑΔΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867417/epeisodiaki-katadioxi-sta-grevena-47hronos-epese-me-to-autokinito-tou-pano-se-astunomiko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867425/deite-video-asuneiditos-odigos-leoforeiou-epiheirei-epikinduni-prosperasi-pano-sti-gefura-tis-leukadas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867421/sto-apotefrotirio-ritsonas-to-teleutaio-adio-ston-gianni-tzousta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T16:51:29.529950+00:00"
+      "seen_at_utc": "2026-08-20T17:18:24.047500+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1451497/sti-ritsona-to-teleytaio-antio-ston-gianni-tzoysta-to-vinteo-to-agapimeno-toy-tragoydi-kai-to-kaskol-tis-mpartselona/",
-      "title": "Στη Ριτσώνα το «τελευταίο αντίο» στον δημοσιογράφο Γιάννη Τζούστα – Το αγαπημένο του τραγούδι και το κασκόλ της Μπαρτσελόνα",
-      "normalized_title": "ΣΤΗ ΡΙΤΣΩΝΑ ΤΟ «ΤΕΛΕΥΤΑΙΟ ΑΝΤΙΟ» ΣΤΟΝ ΔΗΜΟΣΙΟΓΡΑΦΟ ΓΙΑΝΝΗ ΤΖΟΥΣΤΑ – ΤΟ ΑΓΑΠΗΜΕΝΟ ΤΟΥ ΤΡΑΓΟΥΔΙ ΚΑΙ ΤΟ ΚΑΣΚΟΛ ΤΗΣ ΜΠΑΡΤΣΕΛΟΝΑ",
+      "url": "https://www.efsyn.gr/ellada/1451232/alvanoi-stin-proti-grammi-tis-politikis-prostasias-i-ethelontiki-omada-tis-lesvoy-poy-voitha-tin-pyrosvestiki/",
+      "title": "Αλβανοί στην πρώτη γραμμή της πολιτικής προστασίας: Η εθελοντική ομάδα της Λέσβου που βοηθά την Πυροσβεστική",
+      "normalized_title": "ΑΛΒΑΝΟΙ ΣΤΗΝ ΠΡΩΤΗ ΓΡΑΜΜΗ ΤΗΣ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ: Η ΕΘΕΛΟΝΤΙΚΗ ΟΜΑΔΑ ΤΗΣ ΛΕΣΒΟΥ ΠΟΥ ΒΟΗΘΑ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1451497/sti-ritsona-to-teleytaio-antio-ston-gianni-tzoysta-to-vinteo-to-agapimeno-toy-tragoydi-kai-to-kaskol-tis-mpartselona/",
-        "https://www.efsyn.gr/politiki/1451499/o-samaras-ekane-dilosi-gia-ton-konstantino-tsoykala-apohairetismos-makria-apo-kommatikes-tampeles-i-ideologikes-mempsimoiries/",
-        "https://www.efsyn.gr/oikonomia/1451213/nea-dedomena-gia-toys-ergazomenoys-stis-platformes-delivery-ti-allazei-stin-ellada-apo-tin-eyropaiki-odigia/",
-        "https://www.efsyn.gr/ellada/1451483/kypseli-synenteyxi-typoy-gia-tis-zimies-apo-to-metro-poso-akomi-tha-perimenoyme-gia-apantiseis/",
-        "https://www.efsyn.gr/athlitismos/1451489/kypello-elladas-enstasi-apo-ton-astera-tripolis-gia-to-mats-me-ton-levadeiako/",
-        "https://www.efsyn.gr/kosmos/1451482/presveytis-ipa-sto-israil-o-epoikismos-spition-ton-amerikano-palaistinion-me-dipli-ithageneia-einai-antithetos-stoys-nomoys-toy-theoy/",
-        "https://www.efsyn.gr/ellada/1451487/irakleio-parateinontai-ta-metra-gia-tin-eylogia-ton-aigoprovaton-stin-kriti/"
+        "https://www.efsyn.gr/ellada/1451232/alvanoi-stin-proti-grammi-tis-politikis-prostasias-i-ethelontiki-omada-tis-lesvoy-poy-voitha-tin-pyrosvestiki/",
+        "https://www.efsyn.gr/kosmos/1451514/tragodia-sti-nigiria-toylahiston-40-nekra-paidia-apo-anatropi-varkas-pigainan-na-doylepsoyn-se-fyteies/"
       ],
-      "seen_at_utc": "2026-08-20T16:51:29.529912+00:00"
+      "seen_at_utc": "2026-08-20T17:18:24.047456+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/sports/football/ayti-einai-i-endekada-tou-paok-gia-to-paixnidi-me-tin-mpran-pic/",
-      "title": "Αυτή είναι η ενδεκάδα του ΠΑΟΚ για το παιχνίδι με την Μπραν (pic)",
-      "normalized_title": "ΑΥΤΗ ΕΙΝΑΙ Η ΕΝΔΕΚΑΔΑ ΤΟΥ ΠΑΟΚ ΓΙΑ ΤΟ ΠΑΙΧΝΙΔΙ ΜΕ ΤΗΝ ΜΠΡΑΝ (PIC)",
+      "url": "https://www.in.gr/2026/08/20/greece/agios-dimitrios-pige-na-ton-skotosei-ksespa-i-mitera-tou-18xronou-pou-dexthike-epithesi-me-maxairi-apo-23xrono/",
+      "title": "Άγιος Δημήτριος: «Πήγε να τον σκοτώσει» – Ξεσπά η μητέρα του 18χρονου που δέχθηκε επίθεση με μαχαίρι από 23χρονο",
+      "normalized_title": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ: «ΠΗΓΕ ΝΑ ΤΟΝ ΣΚΟΤΩΣΕΙ» – ΞΕΣΠΑ Η ΜΗΤΕΡΑ ΤΟΥ 18ΧΡΟΝΟΥ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΜΕ ΜΑΧΑΙΡΙ ΑΠΟ 23ΧΡΟΝΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/sports/football/ayti-einai-i-endekada-tou-paok-gia-to-paixnidi-me-tin-mpran-pic/",
-        "https://www.in.gr/2026/08/20/greece/xaidari-ypekypse-o-idioktitis-pratiriou-kaysimon-pou-aytopyrovolithike/",
-        "https://www.in.gr/2026/08/20/greece/fotia-se-xamili-vlastisi-sta-megara-antimetopistike-amesa/",
-        "https://www.in.gr/2026/08/20/sports/othersports/us-open-2026-apo-xrysafi-to-megalytero-xrimatiko-epathlo-stin-istoria-tou-tenis-pics/",
-        "https://www.in.gr/2026/08/20/economy/epidoma-150-eyro-poioi-plironontai-kai-pote/",
-        "https://www.in.gr/2026/08/20/life/ramagiana-epiki-apantisi-tis-indias-stin-odysseia-tou-nolan-apo-ton-omiro-stis-vedes/"
+        "https://www.in.gr/2026/08/20/greece/agios-dimitrios-pige-na-ton-skotosei-ksespa-i-mitera-tou-18xronou-pou-dexthike-epithesi-me-maxairi-apo-23xrono/",
+        "https://www.in.gr/2026/08/20/sports/football/ofi-tsska-sofias-i-endekada-ton-aspromayron/"
       ],
-      "seen_at_utc": "2026-08-20T16:51:29.529868+00:00"
+      "seen_at_utc": "2026-08-20T17:18:24.047400+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T16:51:29.530021+00:00"
+  "updated_at_utc": "2026-08-20T17:18:24.047583+00:00"
 }
