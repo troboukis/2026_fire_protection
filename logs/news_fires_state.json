@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564407179/enshittification-giati-ola-ginontai-cheirotera/",
-      "title": "Enshittification: Γιατί όλα γίνονται χειρότερα",
-      "normalized_title": "ENSHITTIFICATION: ΓΙΑΤΙ ΟΛΑ ΓΙΝΟΝΤΑΙ ΧΕΙΡΟΤΕΡΑ",
+      "url": "https://www.kathimerini.gr/world/564411478/komo-o-dimarchos-apagoreyse-ta-podilata-se-tmima-tis-polis-meta-apo-diko-toy-atychima-antidroyn-oi-katoikoi/",
+      "title": "Κόμο: Ο δήμαρχος απαγόρευσε τα ποδήλατα σε τμήμα της πόλης μετά από δικό του ατύχημα – Αντιδρούν οι κάτοικοι",
+      "normalized_title": "ΚΟΜΟ: Ο ΔΗΜΑΡΧΟΣ ΑΠΑΓΟΡΕΥΣΕ ΤΑ ΠΟΔΗΛΑΤΑ ΣΕ ΤΜΗΜΑ ΤΗΣ ΠΟΛΗΣ ΜΕΤΑ ΑΠΟ ΔΙΚΟ ΤΟΥ ΑΤΥΧΗΜΑ – ΑΝΤΙΔΡΟΥΝ ΟΙ ΚΑΤΟΙΚΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564407179/enshittification-giati-ola-ginontai-cheirotera/",
-        "https://www.kathimerini.gr/world/564411349/se-anastoli-o-akadimaikos-poy-katiggeile-gia-logoklopi-ton-tzeison-arntei/",
-        "https://www.kathimerini.gr/opinion/interviews/564410281/dr-konstantinos-mylonas-stin-k-eimaste-se-periodo-mi-anastrepsimon-allagon/"
+        "https://www.kathimerini.gr/world/564411478/komo-o-dimarchos-apagoreyse-ta-podilata-se-tmima-tis-polis-meta-apo-diko-toy-atychima-antidroyn-oi-katoikoi/",
+        "https://www.kathimerini.gr/opinion/564410137/kostos-zois-kai-misthoi/"
       ],
-      "seen_at_utc": "2026-08-20T17:18:24.047314+00:00"
+      "seen_at_utc": "2026-08-20T17:30:24.881913+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,14 +1260,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867425/deite-video-asuneiditos-odigos-leoforeiou-epiheirei-epikinduni-prosperasi-pano-sti-gefura-tis-leukadas/?utm_source=rss",
-      "title": "Δείτε βίντεο: Ασυνείδητος οδηγός λεωφορείου επιχειρεί επικίνδυνη προσπέραση πάνω στη γέφυρα της Λευκάδας",
-      "normalized_title": "ΔΕΙΤΕ ΒΙΝΤΕΟ: ΑΣΥΝΕΙΔΗΤΟΣ ΟΔΗΓΟΣ ΛΕΩΦΟΡΕΙΟΥ ΕΠΙΧΕΙΡΕΙ ΕΠΙΚΙΝΔΥΝΗ ΠΡΟΣΠΕΡΑΣΗ ΠΑΝΩ ΣΤΗ ΓΕΦΥΡΑ ΤΗΣ ΛΕΥΚΑΔΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1867428/fotia-stin-agia-triada-koropiou-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά στην Αγία Τριάδα Κορωπίου, κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΓΙΑ ΤΡΙΑΔΑ ΚΟΡΩΠΙΟΥ, ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867425/deite-video-asuneiditos-odigos-leoforeiou-epiheirei-epikinduni-prosperasi-pano-sti-gefura-tis-leukadas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867421/sto-apotefrotirio-ritsonas-to-teleutaio-adio-ston-gianni-tzousta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867428/fotia-stin-agia-triada-koropiou-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T17:18:24.047500+00:00"
+      "seen_at_utc": "2026-08-20T17:30:24.882027+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/ellada/1451232/alvanoi-stin-proti-grammi-tis-politikis-prostasias-i-ethelontiki-omada-tis-lesvoy-poy-voitha-tin-pyrosvestiki/",
@@ -1281,15 +1279,18 @@
       "seen_at_utc": "2026-08-20T17:18:24.047456+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/greece/agios-dimitrios-pige-na-ton-skotosei-ksespa-i-mitera-tou-18xronou-pou-dexthike-epithesi-me-maxairi-apo-23xrono/",
-      "title": "Άγιος Δημήτριος: «Πήγε να τον σκοτώσει» – Ξεσπά η μητέρα του 18χρονου που δέχθηκε επίθεση με μαχαίρι από 23χρονο",
-      "normalized_title": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ: «ΠΗΓΕ ΝΑ ΤΟΝ ΣΚΟΤΩΣΕΙ» – ΞΕΣΠΑ Η ΜΗΤΕΡΑ ΤΟΥ 18ΧΡΟΝΟΥ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΜΕ ΜΑΧΑΙΡΙ ΑΠΟ 23ΧΡΟΝΟ",
+      "url": "https://www.in.gr/matchcenter/5988064/",
+      "title": "LIVE: ΠΑΟΚ – Μπραν",
+      "normalized_title": "LIVE: ΠΑΟΚ – ΜΠΡΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/greece/agios-dimitrios-pige-na-ton-skotosei-ksespa-i-mitera-tou-18xronou-pou-dexthike-epithesi-me-maxairi-apo-23xrono/",
-        "https://www.in.gr/2026/08/20/sports/football/ofi-tsska-sofias-i-endekada-ton-aspromayron/"
+        "https://www.in.gr/matchcenter/5988064/",
+        "https://www.in.gr/2026/08/20/sports/football/panathinaikos-i-11ada-gia-to-proto-paixnidi-me-ti-xrantets-kralove/",
+        "https://www.in.gr/2026/08/20/world/kypros-parenoxlisi-ptiseon-apo-tourkika-drones-kai-maxitika-ti-kataggelloun-oi-elegktes-ti-apanta-i-politiki-aeroporia/",
+        "https://www.in.gr/2026/08/20/greece/fotia-se-xamili-vlastisi-sto-koropi-antimetopistike-amesa/",
+        "https://www.in.gr/2026/08/20/world/to-iran-apanta-stis-apeiles-tramp-gia-kyroseis-safis-paradoxi-egklimaton-kata-tis-anthropotitas/"
       ],
-      "seen_at_utc": "2026-08-20T17:18:24.047400+00:00"
+      "seen_at_utc": "2026-08-20T17:30:24.881973+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T17:18:24.047583+00:00"
+  "updated_at_utc": "2026-08-20T17:30:24.882145+00:00"
 }
