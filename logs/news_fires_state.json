@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564411193/stis-27-aygoystoy-ftanei-stin-kalamaria-to-metro-thessalonikis/",
-      "title": "Στις 27 Αυγούστου φτάνει στην Καλαμαριά το μετρό Θεσσαλονίκης",
-      "normalized_title": "ΣΤΙΣ 27 ΑΥΓΟΥΣΤΟΥ ΦΤΑΝΕΙ ΣΤΗΝ ΚΑΛΑΜΑΡΙΑ ΤΟ ΜΕΤΡΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/society/564411205/chalkidiki-trisagio-sti-mnimi-tis-oikogeneias-apo-ti-moldavia-nosileyomeni-stin-patrida-tis-i-7chroni-patritsia/",
+      "title": "Χαλκιδική: Τρισάγιο στη μνήμη της οικογένειας από τη Μολδαβία – Νοσηλευόμενη στην πατρίδα της η 7χρονη Πατρίτσια",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΤΡΙΣΑΓΙΟ ΣΤΗ ΜΝΗΜΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ ΑΠΟ ΤΗ ΜΟΛΔΑΒΙΑ – ΝΟΣΗΛΕΥΟΜΕΝΗ ΣΤΗΝ ΠΑΤΡΙΔΑ ΤΗΣ Η 7ΧΡΟΝΗ ΠΑΤΡΙΤΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564411193/stis-27-aygoystoy-ftanei-stin-kalamaria-to-metro-thessalonikis/",
-        "https://www.kathimerini.gr/opinion/sketches/564411145/skitso-toy-ilia-makri-20-08-26/"
+        "https://www.kathimerini.gr/society/564411205/chalkidiki-trisagio-sti-mnimi-tis-oikogeneias-apo-ti-moldavia-nosileyomeni-stin-patrida-tis-i-7chroni-patritsia/",
+        "https://www.kathimerini.gr/society/564411202/aimatiro-epeisodio-sti-thessaloniki-i-diadiktyaki-gnorimia-kai-i-apopeira-klopis/",
+        "https://www.kathimerini.gr/visual/infographics/564410629/akrivi-poli-gia-toys-misthoys-ton-ellinon-i-athina/"
       ],
-      "seen_at_utc": "2026-08-20T11:17:04.284176+00:00"
+      "seen_at_utc": "2026-08-20T11:30:06.085327+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,40 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867274/dioxi-gia-apopeira-anthropoktonias-ston-31hrono-pou-mahairose-25hroni-sti-thessaloniki-ekleisan-radevou-apo-efarmogi-kai/?utm_source=rss",
-      "title": "Η 25χρονη επιτέθηκε πρώτη με μαχαίρι εναντίον του 31χρονου στη Θεσσαλονίκη, έκλεισαν ραντεβού από εφαρμογή και πήγε να του κλέψει το ρολόι",
-      "normalized_title": "Η 25ΧΡΟΝΗ ΕΠΙΤΕΘΗΚΕ ΠΡΩΤΗ ΜΕ ΜΑΧΑΙΡΙ ΕΝΑΝΤΙΟΝ ΤΟΥ 31ΧΡΟΝΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΕΚΛΕΙΣΑΝ ΡΑΝΤΕΒΟΥ ΑΠΟ ΕΦΑΡΜΟΓΗ ΚΑΙ ΠΗΓΕ ΝΑ ΤΟΥ ΚΛΕΨΕΙ ΤΟ ΡΟΛΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1867277/stis-27-augoustou-ftanei-stin-kalamaria-to-metro-thessalonikis/?utm_source=rss",
+      "title": "Στις 27 Αυγούστου φτάνει στην Καλαμαριά το μετρό Θεσσαλονίκης",
+      "normalized_title": "ΣΤΙΣ 27 ΑΥΓΟΥΣΤΟΥ ΦΤΑΝΕΙ ΣΤΗΝ ΚΑΛΑΜΑΡΙΑ ΤΟ ΜΕΤΡΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867274/dioxi-gia-apopeira-anthropoktonias-ston-31hrono-pou-mahairose-25hroni-sti-thessaloniki-ekleisan-radevou-apo-efarmogi-kai/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867277/stis-27-augoustou-ftanei-stin-kalamaria-to-metro-thessalonikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-20T11:17:04.284298+00:00"
+      "seen_at_utc": "2026-08-20T11:30:06.085452+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1451143/n-d-ideolipsies-kai-peaip/",
-      "title": "Ν.Δ., ιδεοληψίες και ΠΕΑΙΠ",
-      "normalized_title": "Ν.Δ., ΙΔΕΟΛΗΨΙΕΣ ΚΑΙ ΠΕΑΙΠ",
+      "url": "https://www.efsyn.gr/kosmos/1451281/ereyna-gia-ti-dolofonia-tis-hint-ratzamp-den-empisteyomaste-to-israilino-dikastiko-systima-xespa-i-giagia-tis/",
+      "title": "Έρευνα για τη δολοφονία της Χιντ Ρατζάμπ: «Δεν εμπιστευόμαστε το ισραηλινό δικαστικό σύστημα», ξεσπά η γιαγιά της",
+      "normalized_title": "ΕΡΕΥΝΑ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΗΣ ΧΙΝΤ ΡΑΤΖΑΜΠ: «ΔΕΝ ΕΜΠΙΣΤΕΥΟΜΑΣΤΕ ΤΟ ΙΣΡΑΗΛΙΝΟ ΔΙΚΑΣΤΙΚΟ ΣΥΣΤΗΜΑ», ΞΕΣΠΑ Η ΓΙΑΓΙΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1451143/n-d-ideolipsies-kai-peaip/",
-        "https://www.efsyn.gr/stiles/1451127/olo-kai-pio-vathia-ston-polemo/",
-        "https://www.efsyn.gr/stiles/1451119/xehasmena-valkania/",
-        "https://www.efsyn.gr/stiles/1451112/to-ste-apokalyptei-to-megalo-fiasko/",
-        "https://www.efsyn.gr/stiles/1451094/epikindyni-strofi/",
-        "https://www.efsyn.gr/stiles/1451104/oi-amlet-tis-koymoyndoyroy/",
-        "https://www.efsyn.gr/epistimi/1451260/melanoma-elpides-gia-emvolio-mrna-kata-toy-karkinoy-ti-edeixe-meleti/",
-        "https://www.efsyn.gr/ellada/1451235/ti-einai-oi-kyratzides-poy-evriskan-katafygio-sta-monastiria-tis-pindoy/"
+        "https://www.efsyn.gr/kosmos/1451281/ereyna-gia-ti-dolofonia-tis-hint-ratzamp-den-empisteyomaste-to-israilino-dikastiko-systima-xespa-i-giagia-tis/",
+        "https://www.efsyn.gr/politiki/1451268/thema-gkrizon-zonon-sto-aigaio-epanaferei-i-agkyra-meta-to-neo-horotaxiko-gia-tis-ape/"
       ],
-      "seen_at_utc": "2026-08-20T11:17:04.284264+00:00"
+      "seen_at_utc": "2026-08-20T11:30:06.085431+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/20/in-science/ai/ai-sti-mayri-lista-ton-algorithmon-pos-i-texniti-noimosyni-apokleiei-ypopsifious-apo-ti-douleia/",
-      "title": "Στη «μαύρη λίστα» των αλγορίθμων - Πώς η τεχνητή νοημοσύνη αποκλείει υποψηφίους από τη δουλειά",
-      "normalized_title": "ΣΤΗ «ΜΑΥΡΗ ΛΙΣΤΑ» ΤΩΝ ΑΛΓΟΡΙΘΜΩΝ - ΠΩΣ Η ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ ΑΠΟΚΛΕΙΕΙ ΥΠΟΨΗΦΙΟΥΣ ΑΠΟ ΤΗ ΔΟΥΛΕΙΑ",
+      "url": "https://www.in.gr/2026/08/20/world/o-ypeks-tou-israil-epikrinei-to-aitima-tou-londinou-na-anastalei-to-sxedio-epektasis-oikismon-sti-dytiki-oxthi/",
+      "title": "Ο ΥΠΕΞ του Ισραήλ επικρίνει το αίτημα του Λονδίνου να ανασταλεί το σχέδιο επέκτασης οικισμών στη Δυτική Όχθη",
+      "normalized_title": "Ο ΥΠΕΞ ΤΟΥ ΙΣΡΑΗΛ ΕΠΙΚΡΙΝΕΙ ΤΟ ΑΙΤΗΜΑ ΤΟΥ ΛΟΝΔΙΝΟΥ ΝΑ ΑΝΑΣΤΑΛΕΙ ΤΟ ΣΧΕΔΙΟ ΕΠΕΚΤΑΣΗΣ ΟΙΚΙΣΜΩΝ ΣΤΗ ΔΥΤΙΚΗ ΟΧΘΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/20/in-science/ai/ai-sti-mayri-lista-ton-algorithmon-pos-i-texniti-noimosyni-apokleiei-ypopsifious-apo-ti-douleia/",
-        "https://www.in.gr/2026/08/20/politics/metopiki-pasok-me-pierrakaki-apythmeno-to-politiko-tou-thrasos-emeis-kratisame-ti-xora-sto-eyro/"
+        "https://www.in.gr/2026/08/20/world/o-ypeks-tou-israil-epikrinei-to-aitima-tou-londinou-na-anastalei-to-sxedio-epektasis-oikismon-sti-dytiki-oxthi/",
+        "https://www.in.gr/2026/08/20/greece/ypikoos-servias-i-louomeni-pou-exase-ti-zoi-tis-ston-korino-pierias/",
+        "https://www.in.gr/2026/08/20/uncategorized/mpam-me-kraounter-i-vilermpan-proti-fora-stin-eyropi-meta-apo-14-sezon-sto-nba-o-amerikanos/"
       ],
-      "seen_at_utc": "2026-08-20T11:17:04.284232+00:00"
+      "seen_at_utc": "2026-08-20T11:30:06.085383+00:00"
     }
   },
-  "updated_at_utc": "2026-08-20T11:17:04.284365+00:00"
+  "updated_at_utc": "2026-08-20T11:30:06.085512+00:00"
 }
