@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564412153/synelifthi-o-lykos-poy-episkeptotan-ti-thessaloniki/",
-      "title": "Συνελήφθη ο λύκος που επισκεπτόταν τη Θεσσαλονίκη",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ Ο ΛΥΚΟΣ ΠΟΥ ΕΠΙΣΚΕΠΤΟΤΑΝ ΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.kathimerini.gr/politics/564412096/entos-kai-ektos-gia-poioys-tha-ischysei-thiteia-ennea-minon/",
+      "title": "Εντός και Εκτός: Για ποιους θα ισχύσει θητεία εννέα μηνών",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΓΙΑ ΠΟΙΟΥΣ ΘΑ ΙΣΧΥΣΕΙ ΘΗΤΕΙΑ ΕΝΝΕΑ ΜΗΝΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564412153/synelifthi-o-lykos-poy-episkeptotan-ti-thessaloniki/",
-        "https://www.kathimerini.gr/world/564412600/synechizei-na-seietai-i-latiniki-ameriki-seismos-6-7-vathmon-sto-notio-peroy/",
-        "https://www.kathimerini.gr/society/564412114/epelaynei-o-ios-toy-dytikoy-neiloy/"
+        "https://www.kathimerini.gr/politics/564412096/entos-kai-ektos-gia-poioys-tha-ischysei-thiteia-ennea-minon/",
+        "https://www.kathimerini.gr/world/564412645/toyrismos-gia-oloys-2026-2027-ligei-simera-i-prothesmia-poioi-pairnoyn-eos-600-eyro/",
+        "https://www.kathimerini.gr/world/564412213/sodeies-kai-zoa-sti-notioanatoliki-asia-sto-eleos-toy-el-ninio/",
+        "https://www.kathimerini.gr/world/564412621/epta-chores-kaloyn-to-israil-na-valei-telos-stin-epektasi-toy-epoikismoy-tis-dytikis-ochthis/",
+        "https://www.kathimerini.gr/world/564412162/voreia-korea-apantise-me-pyrayliki-dokimi/",
+        "https://www.kathimerini.gr/world/564412618/panamas-meiosi-toy-arithmoy-dieleyseon-ploion-sti-dioryga-logo-el-ninio/",
+        "https://www.kathimerini.gr/istoria/564411895/san-simera-21-aygoystoy-1911-klopi-tis-mona-liza-apo-to-loyvro-2/"
       ],
-      "seen_at_utc": "2026-08-21T04:30:07.182000+00:00"
+      "seen_at_utc": "2026-08-21T04:51:06.218189+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,24 +1274,29 @@
       "seen_at_utc": "2026-08-21T04:17:23.313933+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1451633/kalesma-tsipra-stoys-neoys-me-tin-elpida-tis-anatropis/",
-      "title": "Κάλεσμα Τσίπρα στους νέους με την «ελπίδα της ανατροπής»",
-      "normalized_title": "ΚΑΛΕΣΜΑ ΤΣΙΠΡΑ ΣΤΟΥΣ ΝΕΟΥΣ ΜΕ ΤΗΝ «ΕΛΠΙΔΑ ΤΗΣ ΑΝΑΤΡΟΠΗΣ»",
+      "url": "https://www.efsyn.gr/ellada/1451648/toyrismos-gia-oloys-ligei-simera-21-8-i-prothesmia-gia-tin-ypovoli-aitiseon-ta-eisodimatika-oria/",
+      "title": "Τουρισμός για όλους: Λήγει σήμερα (21/8) η προθεσμία για την υποβολή αιτήσεων – Τα εισοδηματικά όρια",
+      "normalized_title": "ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ: ΛΗΓΕΙ ΣΗΜΕΡΑ (21/8) Η ΠΡΟΘΕΣΜΙΑ ΓΙΑ ΤΗΝ ΥΠΟΒΟΛΗ ΑΙΤΗΣΕΩΝ – ΤΑ ΕΙΣΟΔΗΜΑΤΙΚΑ ΟΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1451633/kalesma-tsipra-stoys-neoys-me-tin-elpida-tis-anatropis/"
+        "https://www.efsyn.gr/ellada/1451648/toyrismos-gia-oloys-ligei-simera-21-8-i-prothesmia-gia-tin-ypovoli-aitiseon-ta-eisodimatika-oria/",
+        "https://www.efsyn.gr/politiki/1451642/pos-vlepei-i-athina-tin-apofasi-tis-toyrkias-na-thesei-xana-thema-gkrizon-zonon/",
+        "https://www.efsyn.gr/kosmos/1451638/seismos-67-rihter-sto-peroy-treis-traymaties-zimies-se-spitia-kai-sholeia-apokollithikan-vrahoi-vinteo/",
+        "https://www.efsyn.gr/protoselida/pyrodotoyn-ti-stegastiki-krisi/"
       ],
-      "seen_at_utc": "2026-08-21T04:30:07.182087+00:00"
+      "seen_at_utc": "2026-08-21T04:51:06.218300+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/economy/agrotes-o-xartis-ton-enisxyseon-eos-to-telos-septemvriou/",
-      "title": "Αγρότες: Ο χάρτης των ενισχύσεων έως το τέλος Σεπτεμβρίου",
-      "normalized_title": "ΑΓΡΟΤΕΣ: Ο ΧΑΡΤΗΣ ΤΩΝ ΕΝΙΣΧΥΣΕΩΝ ΕΩΣ ΤΟ ΤΕΛΟΣ ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.in.gr/2026/08/21/greece/agios-dimitrios-sygklonizei-o-pateras-tou-18xronou-pou-dexthike-epithesi-me-maxairi/",
+      "title": "Συγκλονίζει ο πατέρας του 18χρονου που δέχθηκε επίθεση με μαχαίρι - «Τον κάρφωσε στο κεφάλι και την πλάτη»",
+      "normalized_title": "ΣΥΓΚΛΟΝΙΖΕΙ Ο ΠΑΤΕΡΑΣ ΤΟΥ 18ΧΡΟΝΟΥ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΜΕ ΜΑΧΑΙΡΙ - «ΤΟΝ ΚΑΡΦΩΣΕ ΣΤΟ ΚΕΦΑΛΙ ΚΑΙ ΤΗΝ ΠΛΑΤΗ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/economy/agrotes-o-xartis-ton-enisxyseon-eos-to-telos-septemvriou/",
-        "https://www.in.gr/2026/08/21/world/alaska-syntrivi-aeroskafous-me-okto-epivainontes/"
+        "https://www.in.gr/2026/08/21/greece/agios-dimitrios-sygklonizei-o-pateras-tou-18xronou-pou-dexthike-epithesi-me-maxairi/",
+        "https://www.in.gr/2026/08/21/world/oie-nea-endeiktiki-psifoforia-gia-tin-epilogi-genikou-grammatea-ta-favori-i-diadikasia-kai-oi-prokliseis/",
+        "https://www.in.gr/2026/08/21/go-fun/social/arkas-i-kalimera-tis-paraskeyis-14/",
+        "https://www.in.gr/2026/08/21/plus/vita/pente-trofes-pou-mporoun-na-xarisoun-eos-kai-10-epipleon-xronia/"
       ],
-      "seen_at_utc": "2026-08-21T04:30:07.182047+00:00"
+      "seen_at_utc": "2026-08-21T04:51:06.218249+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T04:30:07.182166+00:00"
+  "updated_at_utc": "2026-08-21T04:51:06.218402+00:00"
 }
