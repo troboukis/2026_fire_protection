@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564413380/ethel-katercham-i-giraioteri-gynaika-ston-kosmo-egine-117-eton/",
-      "title": "Εθελ Κάτερχαμ: Η γηραιότερη γυναίκα στον κόσμο έγινε 117 ετών",
-      "normalized_title": "ΕΘΕΛ ΚΑΤΕΡΧΑΜ: Η ΓΗΡΑΙΟΤΕΡΗ ΓΥΝΑΙΚΑ ΣΤΟΝ ΚΟΣΜΟ ΕΓΙΝΕ 117 ΕΤΩΝ",
+      "url": "https://www.kathimerini.gr/world/564413443/netaniachoy-o-erntogan-einai-antisimitis-diktatoras-katechei-ti-misi-kypro/",
+      "title": "Νετανιάχου: «Ο Ερντογάν είναι αντισημίτης δικτάτορας, κατέχει τη μισή Κύπρο»",
+      "normalized_title": "ΝΕΤΑΝΙΑΧΟΥ: «Ο ΕΡΝΤΟΓΑΝ ΕΙΝΑΙ ΑΝΤΙΣΗΜΙΤΗΣ ΔΙΚΤΑΤΟΡΑΣ, ΚΑΤΕΧΕΙ ΤΗ ΜΙΣΗ ΚΥΠΡΟ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564413380/ethel-katercham-i-giraioteri-gynaika-ston-kosmo-egine-117-eton/"
+        "https://www.kathimerini.gr/world/564413443/netaniachoy-o-erntogan-einai-antisimitis-diktatoras-katechei-ti-misi-kypro/",
+        "https://www.kathimerini.gr/world/564413422/kroatia-ypo-kratisi-o-oykranos-ypoptos-gia-tin-anatinaxi-toy-nord-stream/",
+        "https://www.kathimerini.gr/k/k-magazine/564411406/i-eyodiasti-masticha/"
       ],
-      "seen_at_utc": "2026-08-21T15:29:57.428286+00:00"
+      "seen_at_utc": "2026-08-21T15:51:15.058534+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,26 +1270,29 @@
       "seen_at_utc": "2026-08-21T15:29:57.428441+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452081/geotehnikoi-meta-to-dimosieyma-tis-ef-syn-i-kap-na-paroysiastei-se-dimosio-aei-ohi-stin-kyvernitiki-fiesta/",
-      "title": "Γεωτεχνικοί μετά το δημοσίευμα της «Εφ.Συν.»: Η ΚΑΠ να παρουσιαστεί σε δημόσιο ΑΕΙ – Όχι σε αυτή την κυβερνητική φιέστα",
-      "normalized_title": "ΓΕΩΤΕΧΝΙΚΟΙ ΜΕΤΑ ΤΟ ΔΗΜΟΣΙΕΥΜΑ ΤΗΣ «ΕΦ.ΣΥΝ.»: Η ΚΑΠ ΝΑ ΠΑΡΟΥΣΙΑΣΤΕΙ ΣΕ ΔΗΜΟΣΙΟ ΑΕΙ – ΟΧΙ ΣΕ ΑΥΤΗ ΤΗΝ ΚΥΒΕΡΝΗΤΙΚΗ ΦΙΕΣΤΑ",
+      "url": "https://www.efsyn.gr/ellada/1452108/thessaloniki-sti-fylaki-o-31hronos-poy-mahairose-25hroni-mesa-se-diamerisma/",
+      "title": "Θεσσαλονίκη: Στη φυλακή ο 31χρονος που μαχαίρωσε 25χρονη μέσα σε διαμέρισμα",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΗ ΦΥΛΑΚΗ Ο 31ΧΡΟΝΟΣ ΠΟΥ ΜΑΧΑΙΡΩΣΕ 25ΧΡΟΝΗ ΜΕΣΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452081/geotehnikoi-meta-to-dimosieyma-tis-ef-syn-i-kap-na-paroysiastei-se-dimosio-aei-ohi-stin-kyvernitiki-fiesta/",
-        "https://www.efsyn.gr/kosmos/1452100/paremvasi-pezeskian-irthe-i-ora-na-teleiosei-o-polemos-oso-to-iran-einai-se-thesi-ishyos/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-arheio-9/"
+        "https://www.efsyn.gr/ellada/1452108/thessaloniki-sti-fylaki-o-31hronos-poy-mahairose-25hroni-mesa-se-diamerisma/",
+        "https://www.efsyn.gr/ellada/1452093/layrio-o-dimarhos-apanta-gia-to-agalma-poy-ehei-dihasei-tin-periohi-prospathisan-na-ergaleiopoiisoyn-to-zitima/"
       ],
-      "seen_at_utc": "2026-08-21T15:29:57.428413+00:00"
+      "seen_at_utc": "2026-08-21T15:51:15.058598+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/world/apantisi-netaniaxou-ston-erntogan-gia-to-entalma-antisimitis-diktatoras-pou-epitithetai-kata-tou-israil/",
-      "title": "Απάντηση Νετανιάχου στον Ερντογάν για το ένταλμα: «Αντισημίτης δικτάτορας» που επιτίθεται κατά του Ισραήλ",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΝΕΤΑΝΙΑΧΟΥ ΣΤΟΝ ΕΡΝΤΟΓΑΝ ΓΙΑ ΤΟ ΕΝΤΑΛΜΑ: «ΑΝΤΙΣΗΜΙΤΗΣ ΔΙΚΤΑΤΟΡΑΣ» ΠΟΥ ΕΠΙΤΙΘΕΤΑΙ ΚΑΤΑ ΤΟΥ ΙΣΡΑΗΛ",
+      "url": "https://www.in.gr/2026/08/21/greece/vgike-apo-ti-meth-o-aristotelis-xantzis-metaferthike-stin-pneymonologiki-kliniki-tou-eyaggelismou/",
+      "title": "Βγήκε από τη ΜΕΘ ο Αριστοτέλης Χαντζής, μετά από 58 μέρες",
+      "normalized_title": "ΒΓΗΚΕ ΑΠΟ ΤΗ ΜΕΘ Ο ΑΡΙΣΤΟΤΕΛΗΣ ΧΑΝΤΖΗΣ, ΜΕΤΑ ΑΠΟ 58 ΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/world/apantisi-netaniaxou-ston-erntogan-gia-to-entalma-antisimitis-diktatoras-pou-epitithetai-kata-tou-israil/",
-        "https://www.in.gr/2026/08/21/go-fun/perierga/to-xoligount-exei-ksodepsei-600-ekat-dolaria-gia-na-epistrepsei-o-mat-nteimon-spiti-tou/"
+        "https://www.in.gr/2026/08/21/greece/vgike-apo-ti-meth-o-aristotelis-xantzis-metaferthike-stin-pneymonologiki-kliniki-tou-eyaggelismou/",
+        "https://www.in.gr/2026/08/21/economy/diethnis-oikonomia/kina-i-megalyteri-stin-istoria-anaklisi-aytokiniton-poio-provlima-anisyxei/",
+        "https://www.in.gr/2026/08/21/economy/xalkino-gia-tin-ellada-stin-ayksisi-tis-timis-ntizel-ton-ioulio/",
+        "https://www.in.gr/2026/08/21/sports/football/symfonia-me-ton-mposko-soutalo-gia-to-kentro-tis-amynas-o-aris/",
+        "https://www.in.gr/2026/08/21/english-edition/diesel-tops-e2-a-liter-as-government-weighs-fuel-pass-extension/",
+        "https://www.in.gr/2026/08/21/in-science/space/to-taxytero-gnosto-astro-gyrofernei-ti-mayri-trypa-tou-galaksia-me-taxytita-25-000-xlm-ana-deyterolepto/"
       ],
-      "seen_at_utc": "2026-08-21T15:29:57.428362+00:00"
+      "seen_at_utc": "2026-08-21T15:51:15.058570+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T15:29:57.428510+00:00"
+  "updated_at_utc": "2026-08-21T15:51:15.058661+00:00"
 }
