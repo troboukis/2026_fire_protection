@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564385858/mia-odi-stis-gates-tis-akropolis/",
-      "title": "Μια ωδή στις γάτες της Ακρόπολης",
-      "normalized_title": "ΜΙΑ ΩΔΗ ΣΤΙΣ ΓΑΤΕΣ ΤΗΣ ΑΚΡΟΠΟΛΗΣ",
+      "url": "https://www.kathimerini.gr/world/564413677/i-megkan-markl-se-syzitiseis-gia-rolo-se-seira-toy-netflix/",
+      "title": "Η Μέγκαν Μαρκλ σε συζητήσεις για ρόλο σε σειρά του Netflix",
+      "normalized_title": "Η ΜΕΓΚΑΝ ΜΑΡΚΛ ΣΕ ΣΥΖΗΤΗΣΕΙΣ ΓΙΑ ΡΟΛΟ ΣΕ ΣΕΙΡΑ ΤΟΥ NETFLIX",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564385858/mia-odi-stis-gates-tis-akropolis/",
-        "https://www.kathimerini.gr/k/k-magazine/564253792/ti-symvainei-sto-soma-mas-an-kleinoyme-ta-panta-stis-6-30-m-m/"
+        "https://www.kathimerini.gr/world/564413677/i-megkan-markl-se-syzitiseis-gia-rolo-se-seira-toy-netflix/",
+        "https://www.kathimerini.gr/society/564413626/thessaloniki-synelifthi-toyrkos-poy-katazitoyntan-me-erythra-aggelia-tis-interpol/",
+        "https://www.kathimerini.gr/k/k-magazine/564343759/pos-tha-vreite-to-talento-toy-paidioy-sas/",
+        "https://www.kathimerini.gr/athletics/564413596/gold-to-neo-vinteoklip-toy-ntoyplantis-me-cameo-karali/"
       ],
-      "seen_at_utc": "2026-08-21T17:18:04.398992+00:00"
+      "seen_at_utc": "2026-08-21T17:51:08.895274+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867840/sunelifthi-stin-thessaloniki-29hronos-tourkos-pou-katazitoudan-gia-anthropoktonia-stin-konstadinoupoli/?utm_source=rss",
-      "title": "Συνελήφθη στη Θεσσαλονίκη 29χρονος που καταζητούνταν για ανθρωποκτονία στην Κωνσταντινούπολη",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ 29ΧΡΟΝΟΣ ΠΟΥ ΚΑΤΑΖΗΤΟΥΝΤΑΝ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΣΤΗΝ ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΗ",
+      "url": "https://www.protothema.gr/greece/article/1867860/sunagermos-gia-ton-io-tou-dutikou-neilou-deuteri-stin-europi-i-ellada-se-krousmata-sto-epikedro-periohes-tis-attikis/?utm_source=rss",
+      "title": "Συναγερμός για τον ιό του Δυτικού Νείλου: Δεύτερη στην Ευρώπη η Ελλάδα σε κρούσματα, στο επίκεντρο περιοχές της Αττικής",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΔΕΥΤΕΡΗ ΣΤΗΝ ΕΥΡΩΠΗ Η ΕΛΛΑΔΑ ΣΕ ΚΡΟΥΣΜΑΤΑ, ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΠΕΡΙΟΧΕΣ ΤΗΣ ΑΤΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867840/sunelifthi-stin-thessaloniki-29hronos-tourkos-pou-katazitoudan-gia-anthropoktonia-stin-konstadinoupoli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867860/sunagermos-gia-ton-io-tou-dutikou-neilou-deuteri-stin-europi-i-ellada-se-krousmata-sto-epikedro-periohes-tis-attikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-21T16:30:00.821873+00:00"
+      "seen_at_utc": "2026-08-21T17:51:08.895379+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1452163/fifa-kampana-deka-agonistikon-ston-paredes-gia-tin-ekrixi-toy-ston-teliko-toy-moyntial/",
-      "title": "FIFA: «Καμπάνα» δέκα αγωνιστικών στον Παρέδες για την «έκρηξή» του στον τελικό του Μουντιάλ",
-      "normalized_title": "FIFA: «ΚΑΜΠΑΝΑ» ΔΕΚΑ ΑΓΩΝΙΣΤΙΚΩΝ ΣΤΟΝ ΠΑΡΕΔΕΣ ΓΙΑ ΤΗΝ «ΕΚΡΗΞΗ» ΤΟΥ ΣΤΟΝ ΤΕΛΙΚΟ ΤΟΥ ΜΟΥΝΤΙΑΛ",
+      "url": "https://www.efsyn.gr/ellada/1452179/tragodia-sta-tzoymerka-nekros-86hronos-poy-epese-apo-ti-stegi-toy-spitioy-toy/",
+      "title": "Τραγωδία στα Τζουμέρκα: Νεκρός 86χρονος που έπεσε από τη στέγη του σπιτιού του",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΑ ΤΖΟΥΜΕΡΚΑ: ΝΕΚΡΟΣ 86ΧΡΟΝΟΣ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΤΗ ΣΤΕΓΗ ΤΟΥ ΣΠΙΤΙΟΥ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1452163/fifa-kampana-deka-agonistikon-ston-paredes-gia-tin-ekrixi-toy-ston-teliko-toy-moyntial/"
+        "https://www.efsyn.gr/ellada/1452179/tragodia-sta-tzoymerka-nekros-86hronos-poy-epese-apo-ti-stegi-toy-spitioy-toy/",
+        "https://www.efsyn.gr/tehnes/1452172/oi-1000mods-stin-efsyn-to-proto-festival-sto-hiliomodi-kai-ena-paidiko-oneiro-poy-ginetai-pragmatikotita/",
+        "https://www.efsyn.gr/athlitismos/1452171/epistrefei-stin-agonistiki-drasi-o-46hronos-ronalntinio-kyniga-to-300o-gkol-tis-karieras-toy/"
       ],
-      "seen_at_utc": "2026-08-21T17:30:23.060766+00:00"
+      "seen_at_utc": "2026-08-21T17:51:08.895351+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/greece/kairos-pote-tha-ypoxorisei-to-kyma-kaysona-pou-tha-simeiothoun-oi-ypsiloteres-thermokrasies/",
-      "title": "Πότε θα υποχωρήσει το κύμα καύσωνα - Πού θα σημειωθούν οι υψηλότερες θερμοκρασίες",
-      "normalized_title": "ΠΟΤΕ ΘΑ ΥΠΟΧΩΡΗΣΕΙ ΤΟ ΚΥΜΑ ΚΑΥΣΩΝΑ - ΠΟΥ ΘΑ ΣΗΜΕΙΩΘΟΥΝ ΟΙ ΥΨΗΛΟΤΕΡΕΣ ΘΕΡΜΟΚΡΑΣΙΕΣ",
+      "url": "https://www.in.gr/2026/08/21/politics/politiki-grammateia/pos-tha-apozimionontai-pio-grigora-pyropliktoi-kai-plimmyropatheis-oi-treis-protaseis-tis-elas-gia-ti-stegastiki-arogi/",
+      "title": "Πώς θα αποζημιώνονται πιο γρήγορα πυρόπληκτοι και πλημμυροπαθείς – Οι τρεις προτάσεις της ΕΛΑΣ για τη στεγαστική αρωγή",
+      "normalized_title": "ΠΩΣ ΘΑ ΑΠΟΖΗΜΙΩΝΟΝΤΑΙ ΠΙΟ ΓΡΗΓΟΡΑ ΠΥΡΟΠΛΗΚΤΟΙ ΚΑΙ ΠΛΗΜΜΥΡΟΠΑΘΕΙΣ – ΟΙ ΤΡΕΙΣ ΠΡΟΤΑΣΕΙΣ ΤΗΣ ΕΛΑΣ ΓΙΑ ΤΗ ΣΤΕΓΑΣΤΙΚΗ ΑΡΩΓΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/greece/kairos-pote-tha-ypoxorisei-to-kyma-kaysona-pou-tha-simeiothoun-oi-ypsiloteres-thermokrasies/",
-        "https://www.in.gr/2026/08/21/life/woman/i-gynaikologos-ton-disekatommyriouxon-tis-silicon-valley-leei-pos-to-seks-mas-voitha-na-zoume-perissotero/"
+        "https://www.in.gr/2026/08/21/politics/politiki-grammateia/pos-tha-apozimionontai-pio-grigora-pyropliktoi-kai-plimmyropatheis-oi-treis-protaseis-tis-elas-gia-ti-stegastiki-arogi/",
+        "https://www.in.gr/2026/08/21/sports/live-o-telikos-tou-petrounia-sto-eyropaiko-protathlima-tou-zagkremp/"
       ],
-      "seen_at_utc": "2026-08-21T17:30:23.060717+00:00"
+      "seen_at_utc": "2026-08-21T17:51:08.895321+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T17:30:23.060842+00:00"
+  "updated_at_utc": "2026-08-21T17:51:08.895451+00:00"
 }
