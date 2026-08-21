@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564413101/empola-ekthetiki-exaplosi-toy-ioy-sto-kongko-pano-apo-2-500-nekroi/",
-      "title": "Εμπολα: Εκθετική εξάπλωση του ιού στο Κονγκό – Πάνω από 2.500 νεκροί",
-      "normalized_title": "ΕΜΠΟΛΑ: ΕΚΘΕΤΙΚΗ ΕΞΑΠΛΩΣΗ ΤΟΥ ΙΟΥ ΣΤΟ ΚΟΝΓΚΟ – ΠΑΝΩ ΑΠΟ 2.500 ΝΕΚΡΟΙ",
+      "url": "https://www.kathimerini.gr/society/ekpaideysi/564412126/axiopoieitai-i-panepistimiaki-akiniti-perioysia-to-chronodiagramma/",
+      "title": "Αξιοποιείται η πανεπιστημιακή ακίνητη περιουσία – Το χρονοδιάγραμμα",
+      "normalized_title": "ΑΞΙΟΠΟΙΕΙΤΑΙ Η ΠΑΝΕΠΙΣΤΗΜΙΑΚΗ ΑΚΙΝΗΤΗ ΠΕΡΙΟΥΣΙΑ – ΤΟ ΧΡΟΝΟΔΙΑΓΡΑΜΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564413101/empola-ekthetiki-exaplosi-toy-ioy-sto-kongko-pano-apo-2-500-nekroi/",
-        "https://www.kathimerini.gr/athletics/analysis/564413104/o-panathinaikos-edeixe-taseis-aytokatastrofis/"
+        "https://www.kathimerini.gr/society/ekpaideysi/564412126/axiopoieitai-i-panepistimiaki-akiniti-perioysia-to-chronodiagramma/",
+        "https://www.kathimerini.gr/opinion/sketches/564413023/skitso-toy-ilia-makri-21-08-26/",
+        "https://www.kathimerini.gr/society/564413122/deyteri-syllipsi-se-ena-24oro-sto-irakleio-3-856-litra-paranomoy-alkool-kai-aerio-gelioy-gia-18-000-mpalonia/",
+        "https://www.kathimerini.gr/economy/international/564413071/mesi-anatoli-katastrofiki-apantisi-stis-apeiles-tramp-yposchetai-to-iran/"
       ],
-      "seen_at_utc": "2026-08-21T10:51:12.494954+00:00"
+      "seen_at_utc": "2026-08-21T11:17:00.899070+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1262,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867674/profulakisteos-o-31hronos-pou-mahairose-25hroni-sti-thessaloniki-tis-epitethike-otan-pige-na-tou-klepsei-to-roloi/?utm_source=rss",
-      "title": "Προφυλακιστέος ο 31χρονος που μαχαίρωσε 25χρονη στη Θεσσαλονίκη: Της επιτέθηκε όταν πήγε να του κλέψει το ρολόι",
-      "normalized_title": "ΠΡΟΦΥΛΑΚΙΣΤΕΟΣ Ο 31ΧΡΟΝΟΣ ΠΟΥ ΜΑΧΑΙΡΩΣΕ 25ΧΡΟΝΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΤΗΣ ΕΠΙΤΕΘΗΚΕ ΟΤΑΝ ΠΗΓΕ ΝΑ ΤΟΥ ΚΛΕΨΕΙ ΤΟ ΡΟΛΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1867690/georgiadis-i-theamatiki-veltiosi-tou-esu-se-ola-ta-nisia-einai-emfanis-se-osous-den-ehoun-ebatheia/?utm_source=rss",
+      "title": "Γεωργιάδης: Η θεαματική βελτίωση του ΕΣΥ σε όλα τα νησιά είναι εμφανής σε όσους δεν έχουν εμπάθεια",
+      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ: Η ΘΕΑΜΑΤΙΚΗ ΒΕΛΤΙΩΣΗ ΤΟΥ ΕΣΥ ΣΕ ΟΛΑ ΤΑ ΝΗΣΙΑ ΕΙΝΑΙ ΕΜΦΑΝΗΣ ΣΕ ΟΣΟΥΣ ΔΕΝ ΕΧΟΥΝ ΕΜΠΑΘΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867674/profulakisteos-o-31hronos-pou-mahairose-25hroni-sti-thessaloniki-tis-epitethike-otan-pige-na-tou-klepsei-to-roloi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867671/trohaio-exo-apo-ti-larisa-amorfi-maza-siderikon-egine-ih-meta-ti-sugrousi-me-fortigo-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867668/pleuris-apo-rodo-stirizoume-ebrakta-ta-nisia-pou-sikosan-to-varos-tou-metanasteutikou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867690/georgiadis-i-theamatiki-veltiosi-tou-esu-se-ola-ta-nisia-einai-emfanis-se-osous-den-ehoun-ebatheia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867687/principote-mykonos-gia-ti-dolofonia-tou-20hronou-stin-alvania-kamia-shesi-me-to-katastima-sto-examili-hrisimopoiei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867682/kausonas-eos-tin-tetarti-stous-40c-to-thermometro-pou-tha-einai-edonoteros-o-kausonas/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-21T10:51:12.495038+00:00"
+      "seen_at_utc": "2026-08-21T11:17:00.899219+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1451861/xanthopoylos-gia-opekepe-posa-aigoprovata-ehei-telika-i-hora-apoklisi-arithmon-metaxy-dyo-episimon-pigon/",
-      "title": "Ξανθόπουλος για ΟΠΕΚΕΠΕ: «Πόσα αιγοπρόβατα έχει τελικά η χώρα; – Απόκλιση αριθμών μεταξύ δύο επίσημων πηγών»",
-      "normalized_title": "ΞΑΝΘΟΠΟΥΛΟΣ ΓΙΑ ΟΠΕΚΕΠΕ: «ΠΟΣΑ ΑΙΓΟΠΡΟΒΑΤΑ ΕΧΕΙ ΤΕΛΙΚΑ Η ΧΩΡΑ; – ΑΠΟΚΛΙΣΗ ΑΡΙΘΜΩΝ ΜΕΤΑΞΥ ΔΥΟ ΕΠΙΣΗΜΩΝ ΠΗΓΩΝ»",
+      "url": "https://www.efsyn.gr/stiles/1451794/den-rihnoyn-mono-ta-tanks-ti-dimokratia/",
+      "title": "Δεν ρίχνουν μόνο τα τανκς τη δημοκρατία",
+      "normalized_title": "ΔΕΝ ΡΙΧΝΟΥΝ ΜΟΝΟ ΤΑ ΤΑΝΚΣ ΤΗ ΔΗΜΟΚΡΑΤΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1451861/xanthopoylos-gia-opekepe-posa-aigoprovata-ehei-telika-i-hora-apoklisi-arithmon-metaxy-dyo-episimon-pigon/",
-        "https://www.efsyn.gr/ellada/1451877/se-kloio-kaysona-i-hora-mehri-tin-tetarti-eos-42-vathmoys-o-ydrargyros-oi-hartes-toy-meteo/"
+        "https://www.efsyn.gr/stiles/1451794/den-rihnoyn-mono-ta-tanks-ti-dimokratia/",
+        "https://www.efsyn.gr/stiles/1451808/rythmisi-tis-agoras-katoikias/",
+        "https://www.efsyn.gr/stiles/1451791/apagoreymeni-zoni/",
+        "https://www.efsyn.gr/stiles/1451782/o-lakkos-ton-idiotikon-panepistimion/",
+        "https://www.efsyn.gr/ellada/1451902/adedy-sygkentrosi-diamartyrias-sti-thessaloniki-gia-ton-13o-kai-14o-mistho-tin-proti-mera-tis-deth/",
+        "https://www.efsyn.gr/kosmos/1451899/giatroi-horis-synora-dyo-hronia-siopis-kai-kamia-logodosia-gia-tis-dolofonies-melon-mas-sti-gaza/",
+        "https://www.efsyn.gr/kosmos/1451894/to-israil-flertarei-me-tin-epomeni-intifanta/"
       ],
-      "seen_at_utc": "2026-08-21T10:51:12.495017+00:00"
+      "seen_at_utc": "2026-08-21T11:17:00.899153+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/politics/politiki-grammateia/pasok-gia-marinaki-leilatisan-me-forologisi-tous-eleytherous-epaggelmaties-kai-tora-moirazoun-kathreftakia/",
-      "title": "ΠΑΣΟΚ για Μαρινάκη: Λεηλάτησαν με φορολόγηση τους ελεύθερους επαγγελματίες και τώρα μοιράζουν «καθρεφτάκια»",
-      "normalized_title": "ΠΑΣΟΚ ΓΙΑ ΜΑΡΙΝΑΚΗ: ΛΕΗΛΑΤΗΣΑΝ ΜΕ ΦΟΡΟΛΟΓΗΣΗ ΤΟΥΣ ΕΛΕΥΘΕΡΟΥΣ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ΚΑΙ ΤΩΡΑ ΜΟΙΡΑΖΟΥΝ «ΚΑΘΡΕΦΤΑΚΙΑ»",
+      "url": "https://www.in.gr/2026/08/21/greece/ypsilos-kindynos-gia-fotia-to-savvato-se-polles-perioxes-deite-ton-xarti-provlepsis/",
+      "title": "Υψηλός κίνδυνος για φωτιά το Σάββατο σε πολλές περιοχές - Δείτε τον χάρτη πρόβλεψης",
+      "normalized_title": "ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΓΙΑ ΦΩΤΙΑ ΤΟ ΣΑΒΒΑΤΟ ΣΕ ΠΟΛΛΕΣ ΠΕΡΙΟΧΕΣ - ΔΕΙΤΕ ΤΟΝ ΧΑΡΤΗ ΠΡΟΒΛΕΨΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/politics/politiki-grammateia/pasok-gia-marinaki-leilatisan-me-forologisi-tous-eleytherous-epaggelmaties-kai-tora-moirazoun-kathreftakia/",
-        "https://www.in.gr/2026/08/21/politics/politiki-grammateia/elas-mporoume-na-allaksoume-ton-kosmo-mazi-me-allous-anthropoi-kathe-ilikias-kai-diaforetikon-diadromon-sto-trito-vinteo/",
-        "https://www.in.gr/2026/08/21/sports/football/saliakas-ithela-na-gyriso-stin-omada-pou-agapo/"
+        "https://www.in.gr/2026/08/21/greece/ypsilos-kindynos-gia-fotia-to-savvato-se-polles-perioxes-deite-ton-xarti-provlepsis/",
+        "https://www.in.gr/2026/08/21/sports/football/super-league-protasi-ektroma-tou-alafouzou-gia-parapodosfairiko-forea-gia-ta-tileoptika/",
+        "https://www.in.gr/2026/08/21/greece/larisa-se-amorfi-maza-siderikon-metatrapike-aytokinito-meta-ti-sygkrousi-me-fortigo-deite-eikones/",
+        "https://www.in.gr/2026/08/21/life/music/the-hollies-to-vretaniko-sygkrotima-erikse-aylaia-meta-apo-63-xronia-zois/",
+        "https://www.in.gr/2026/08/21/in-science/space/kosmiko-atyxima-isos-ekane-feggari-tou-ari-na-moiazei-me-stravoxymeno-loukouma/",
+        "https://www.in.gr/2026/08/21/sports/basketball/euroleague/kataggelia-tis-kae-olympiakos-stin-eyroligka-gia-tin-ypothesi-gouokap-epistoli-ton-erythroleykon-sti-ntoumpai/",
+        "https://www.in.gr/2026/08/21/politics/syriza-kata-kyvernisis-88-ekat-aigoprovata-i-elstat-157-ekat-to-ktiniatriko-systima-posa-zoa-exei-telika-i-xora/"
       ],
-      "seen_at_utc": "2026-08-21T10:51:12.494988+00:00"
+      "seen_at_utc": "2026-08-21T11:17:00.899128+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T10:51:12.495097+00:00"
+  "updated_at_utc": "2026-08-21T11:17:00.899295+00:00"
 }
