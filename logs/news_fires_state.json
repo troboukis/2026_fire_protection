@@ -1,17 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564412246/to-keno-exoysias-vlaptei-sovara-tin-ellada/",
-      "title": "Το κενό εξουσίας βλάπτει σοβαρά την Ελλάδα",
-      "normalized_title": "ΤΟ ΚΕΝΟ ΕΞΟΥΣΙΑΣ ΒΛΑΠΤΕΙ ΣΟΒΑΡΑ ΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.kathimerini.gr/economy/international/564412558/se-trochia-anakampsis-i-germaniki-oikonomia-mikri-ayxisi-toy-aep/",
+      "title": "Σε τροχιά ανάκαμψης η γερμανική οικονομία, μικρή αύξηση του ΑΕΠ",
+      "normalized_title": "ΣΕ ΤΡΟΧΙΑ ΑΝΑΚΑΜΨΗΣ Η ΓΕΡΜΑΝΙΚΗ ΟΙΚΟΝΟΜΙΑ, ΜΙΚΡΗ ΑΥΞΗΣΗ ΤΟΥ ΑΕΠ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564412246/to-keno-exoysias-vlaptei-sovara-tin-ellada/",
-        "https://www.kathimerini.gr/opinion/564412249/i-aorati-astynomia/",
-        "https://www.kathimerini.gr/opinion/564412264/panigyria-gia-ta-panigyria/",
-        "https://www.kathimerini.gr/opinion/564412261/oi-araves-kai-to-mein-kampf/",
-        "https://www.kathimerini.gr/economy/shipping/564412501/ellinoamerikaniki-synergasiastoys-kladoys-naytilias-naypigeion/"
+        "https://www.kathimerini.gr/economy/international/564412558/se-trochia-anakampsis-i-germaniki-oikonomia-mikri-ayxisi-toy-aep/",
+        "https://www.kathimerini.gr/world/564412711/oie-deyteri-psifoforia-gia-ti-diadochi-gkoyteres-i-machi-ton-8-kai-i-kontra-gia-tin-mpermpok/",
+        "https://www.kathimerini.gr/economy/local/564412477/mikri-ayxisi-ton-toyristikon-esodon-ton-ioynio/",
+        "https://www.kathimerini.gr/world/564412690/alaska-syntrivi-aeroskafoys-me-okto-epivainontes/",
+        "https://www.kathimerini.gr/society/564412687/thessaloniki-tromos-gia-anilikoys-toys-perikyklose-kopadi-agriogoyroynon/",
+        "https://www.kathimerini.gr/opinion/564412225/o-idanikos-arithmos-ton-ota/",
+        "https://www.kathimerini.gr/columns/564411826/aravika-kefalaia-gia-tin-athina-dyo-dromoi-kato-apo-ti-gi-to-lathos-sto-panepistimio-kai-poso-paei-to-t-m-sti-deth/"
       ],
-      "seen_at_utc": "2026-08-21T05:30:01.656654+00:00"
+      "seen_at_utc": "2026-08-21T05:51:12.684566+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,31 +1275,30 @@
       "seen_at_utc": "2026-08-21T05:17:03.351522+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451666/dytiki-ohthi-diethnis-antidrasi-kata-toy-israil-gia-toys-epoikismoys-na-aposyrei-amesos-to-shedio/",
-      "title": "Δυτική Όχθη: Διεθνής αντίδραση κατά του Ισραήλ για τους εποικισμούς – «Να αποσύρει αμέσως το σχέδιο»",
-      "normalized_title": "ΔΥΤΙΚΗ ΟΧΘΗ: ΔΙΕΘΝΗΣ ΑΝΤΙΔΡΑΣΗ ΚΑΤΑ ΤΟΥ ΙΣΡΑΗΛ ΓΙΑ ΤΟΥΣ ΕΠΟΙΚΙΣΜΟΥΣ – «ΝΑ ΑΠΟΣΥΡΕΙ ΑΜΕΣΩΣ ΤΟ ΣΧΕΔΙΟ»",
+      "url": "https://www.efsyn.gr/tehnes/1451677/tehni-ston-dimosio-horo-to-agalma-poy-dihazei-to-layrio/",
+      "title": "Τέχνη στον δημόσιο χώρο: Το άγαλμα που διχάζει το Λαύριο",
+      "normalized_title": "ΤΕΧΝΗ ΣΤΟΝ ΔΗΜΟΣΙΟ ΧΩΡΟ: ΤΟ ΑΓΑΛΜΑ ΠΟΥ ΔΙΧΑΖΕΙ ΤΟ ΛΑΥΡΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451666/dytiki-ohthi-diethnis-antidrasi-kata-toy-israil-gia-toys-epoikismoys-na-aposyrei-amesos-to-shedio/",
-        "https://www.efsyn.gr/ellada/1451671/thesprotia-78hronos-ehase-300-000-eyro-se-apati-me-ependyseis-se-kryptonomismata/",
-        "https://www.efsyn.gr/politiki/1451672/rezerve-ammoydia-telos/",
-        "https://www.efsyn.gr/tehnes/1451664/stathis-parharidis-1967-2026-pethane-enas-spoydaios-ekprosopos-tis-pontiakis-paradosis/"
+        "https://www.efsyn.gr/tehnes/1451677/tehni-ston-dimosio-horo-to-agalma-poy-dihazei-to-layrio/",
+        "https://www.efsyn.gr/oikonomia/1451691/petrelaio-se-ypsila-epipeda-paramenoyn-oi-times-molis-epta-ploia-perasan-ta-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/oikonomia/1451668/dikastiko-freno-se-13o-kai-14o-mistho-sto-dimosio-mono-me-politiki-apofasi-i-epanafora/",
+        "https://www.efsyn.gr/ellada/1451670/ano-glyfada-diarriktis-paraviase-tin-porta-me-katsavidi-alla-trapike-se-fygi-tromagmenos-vinteo/",
+        "https://www.efsyn.gr/politiki/1451684/poios-sas-edose-to-mail-moy-kyrie-spanaki/"
       ],
-      "seen_at_utc": "2026-08-21T05:30:01.656717+00:00"
+      "seen_at_utc": "2026-08-21T05:51:12.684653+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/sports/football/conference-league/tettei-na-mas-ginei-mathima/",
-      "title": "H αυτοκριτική, το σύνθημα αντεπίθεσης και η «γεμάτη» παρουσία του Τεττέη (vid)",
-      "normalized_title": "H ΑΥΤΟΚΡΙΤΙΚΗ, ΤΟ ΣΥΝΘΗΜΑ ΑΝΤΕΠΙΘΕΣΗΣ ΚΑΙ Η «ΓΕΜΑΤΗ» ΠΑΡΟΥΣΙΑ ΤΟΥ ΤΕΤΤΕΗ (VID)",
+      "url": "https://www.in.gr/2026/08/21/sports/othersports/mesogeiakoi-agones-me-to-deksi-ksekinise-i-ethniki-volei-gynaikon-3-0-to-kosovo/",
+      "title": "Μεσογειακοί Αγώνες: Με το δεξί ξεκίνησε η Εθνική βόλεϊ γυναικών, 3-0 το Κόσοβο",
+      "normalized_title": "ΜΕΣΟΓΕΙΑΚΟΙ ΑΓΩΝΕΣ: ΜΕ ΤΟ ΔΕΞΙ ΞΕΚΙΝΗΣΕ Η ΕΘΝΙΚΗ ΒΟΛΕΙ ΓΥΝΑΙΚΩΝ, 3-0 ΤΟ ΚΟΣΟΒΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/sports/football/conference-league/tettei-na-mas-ginei-mathima/",
-        "https://www.in.gr/2026/08/21/greece/ano-glyfada-i-stigmi-pou-diarriktis-paraviazei-porta-polykatoikias-vinteo-ntokoumento/",
-        "https://www.in.gr/2026/08/21/economy/ta-paidia-tis-ai-provlimatizoun-tous-ergodotes-pou-pige-i-kritiki-skepsi/",
-        "https://www.in.gr/2026/08/21/editorial/mporei-kaneis-na-koitaksei-tis-nees-genies-sta-matia/",
-        "https://www.in.gr/2026/08/21/life/music/apostolos-kaldaras-ena-megalo-mousiko-afieroma-me-ton-giorgo-ntalara-kai-ti-nea-genia-tou-laikou-tragoudiou/",
-        "https://www.in.gr/2026/08/21/economy/tourismos-gia-olous-teleytaia-imera-gia-tin-ypovoli-aitiseon/"
+        "https://www.in.gr/2026/08/21/sports/othersports/mesogeiakoi-agones-me-to-deksi-ksekinise-i-ethniki-volei-gynaikon-3-0-to-kosovo/",
+        "https://www.in.gr/2026/08/21/greece/argolida-taksi-tylixtike-stis-floges-sti-mesi-tou-dromou/",
+        "https://www.in.gr/2026/08/21/life/music/toupak-sakour-i-ixografisi-pou-deixnei-ton-dolofono-tou-sxedon-30-xronia-meta/",
+        "https://www.in.gr/2026/08/21/greece/pano-apo-triakosies-syllipseis-gia-emprismo-apo-tis-arxes-tou-etous-se-ayksimeni-epifylaki-i-pyrosvestiki/"
       ],
-      "seen_at_utc": "2026-08-21T05:30:01.656688+00:00"
+      "seen_at_utc": "2026-08-21T05:51:12.684621+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T05:30:01.656778+00:00"
+  "updated_at_utc": "2026-08-21T05:51:12.684725+00:00"
 }
