@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564412954/kina-oi-kyroseis-kai-oi-pieseis-ton-ipa-den-einai-i-lysi-ston-polemo-me-to-iran/",
-      "title": "Κίνα: Οι κυρώσεις και οι πιέσεις των ΗΠΑ δεν είναι η λύση στον πόλεμο με το Ιράν",
-      "normalized_title": "ΚΙΝΑ: ΟΙ ΚΥΡΩΣΕΙΣ ΚΑΙ ΟΙ ΠΙΕΣΕΙΣ ΤΩΝ ΗΠΑ ΔΕΝ ΕΙΝΑΙ Η ΛΥΣΗ ΣΤΟΝ ΠΟΛΕΜΟ ΜΕ ΤΟ ΙΡΑΝ",
+      "url": "https://www.kathimerini.gr/world/564413002/antonis-panoytsos-nosileyetai-se-krisimi-katastasi-me-io-toy-dytikoy-neiloy/",
+      "title": "Αντώνης Πανούτσος: Νοσηλεύεται σε κρίσιμη κατάσταση με ιό του Δυτικού Νείλου",
+      "normalized_title": "ΑΝΤΩΝΗΣ ΠΑΝΟΥΤΣΟΣ: ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΚΡΙΣΙΜΗ ΚΑΤΑΣΤΑΣΗ ΜΕ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564412954/kina-oi-kyroseis-kai-oi-pieseis-ton-ipa-den-einai-i-lysi-ston-polemo-me-to-iran/",
-        "https://www.kathimerini.gr/politics/government/564412099/dilimma-meso-proedrias-e-e/"
+        "https://www.kathimerini.gr/world/564413002/antonis-panoytsos-nosileyetai-se-krisimi-katastasi-me-io-toy-dytikoy-neiloy/",
+        "https://www.kathimerini.gr/world/564413014/polemos-stin-oykrania-pligma-se-diylistirio-vathia-sti-rosia-syllipseis-gia-sampotaz-sti-moscha/",
+        "https://www.kathimerini.gr/world/564413005/i-techerani-apanta-stis-ipa-gia-ton-oikonomiko-polemo-prepei-na-xeperasoyme-tis-adikes-kyroseis/"
       ],
-      "seen_at_utc": "2026-08-21T09:30:05.224755+00:00"
+      "seen_at_utc": "2026-08-21T09:51:33.812229+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867639/aade-edopistikan-4-tonoi-lathraion-poton-kai-700-fiales-me-aerio-geliou-sto-irakleio/?utm_source=rss",
-      "title": "AAΔE: Εντοπίστηκαν 4 τόνοι λαθραίων ποτών και 700 φιάλες με αέριο γέλιου στο Ηράκλειο",
-      "normalized_title": "AAΔE: ΕΝΤΟΠΙΣΤΗΚΑΝ 4 ΤΟΝΟΙ ΛΑΘΡΑΙΩΝ ΠΟΤΩΝ ΚΑΙ 700 ΦΙΑΛΕΣ ΜΕ ΑΕΡΙΟ ΓΕΛΙΟΥ ΣΤΟ ΗΡΑΚΛΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1867651/fotia-tora-sta-zoniana-kritis-epiheiroun-epigeies-kai-enaeries-dunameis/?utm_source=rss",
+      "title": "Φωτιά τώρα στα Ζωνιανά Κρήτης, επιχειρούν επίγειες και εναέριες δυνάμεις",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΑ ΖΩΝΙΑΝΑ ΚΡΗΤΗΣ, ΕΠΙΧΕΙΡΟΥΝ ΕΠΙΓΕΙΕΣ ΚΑΙ ΕΝΑΕΡΙΕΣ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867639/aade-edopistikan-4-tonoi-lathraion-poton-kai-700-fiales-me-aerio-geliou-sto-irakleio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1867638/sunagermos-sto-limeniko-vrethike-osto-stin-thalassa-tis-kimolo-se-exelixi-oi-ereunes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867651/fotia-tora-sta-zoniana-kritis-epiheiroun-epigeies-kai-enaeries-dunameis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867648/sto-nosokomeio-duo-16hronoi-epeita-apo-atuhima-se-thalassia-paidiki-hara-stin-epanomi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867647/sugrousi-thalamigou-me-istioforo-sti-leukada-epta-atoma-epevainan-sta-duo-skafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867646/sunelifthi-ep-autoforo-43hronos-diarriktis-sti-nikaia-ton-epiasan-me-mia-tileorasi-sta-heria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867645/ios-dutikou-neilou-sta-157-ta-peristatika-molunsis-stin-ellada-mesa-sto-2026-stous-13-oi-thanatoi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867642/fotia-tora-stin-tourtougia-larisas-kaiei-hamili-vlastisi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-21T09:30:05.224858+00:00"
+      "seen_at_utc": "2026-08-21T09:51:33.812442+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451835/epikindynes-diloseis-milei-gia-tis-amvloseis-plironoyme-poly-akriva-ayti-tin-trela/",
-      "title": "Επικίνδυνες δηλώσεις Μιλέι για τις αμβλώσεις: «Πληρώνουμε πολύ ακριβά αυτή την τρέλα»",
-      "normalized_title": "ΕΠΙΚΙΝΔΥΝΕΣ ΔΗΛΩΣΕΙΣ ΜΙΛΕΙ ΓΙΑ ΤΙΣ ΑΜΒΛΩΣΕΙΣ: «ΠΛΗΡΩΝΟΥΜΕ ΠΟΛΥ ΑΚΡΙΒΑ ΑΥΤΗ ΤΗΝ ΤΡΕΛΑ»",
+      "url": "https://www.efsyn.gr/politiki/1451857/vraveysi-toy-nikola-farantoyri-apo-tin-arhiepiskopi-zampias-kai-mozamvikis/",
+      "title": "Βράβευση του Νικόλα Φαραντούρη από την Αρχιεπισκοπή Ζάμπιας και Μοζαμβίκης",
+      "normalized_title": "ΒΡΑΒΕΥΣΗ ΤΟΥ ΝΙΚΟΛΑ ΦΑΡΑΝΤΟΥΡΗ ΑΠΟ ΤΗΝ ΑΡΧΙΕΠΙΣΚΟΠΗ ΖΑΜΠΙΑΣ ΚΑΙ ΜΟΖΑΜΒΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451835/epikindynes-diloseis-milei-gia-tis-amvloseis-plironoyme-poly-akriva-ayti-tin-trela/",
-        "https://www.efsyn.gr/politiki/1451755/epikoinoniako-sooy-mitsotaki-gia-tin-kap-kai-orgi-gia-ton-horo-tis-fiestas-diafimizei-ypo-idrysi-idiotiko-panepistimio/"
+        "https://www.efsyn.gr/politiki/1451857/vraveysi-toy-nikola-farantoyri-apo-tin-arhiepiskopi-zampias-kai-mozamvikis/",
+        "https://www.efsyn.gr/ellada/1451823/thessaloniki-ageli-agriogoyroynon-perikyklose-anilikoys-se-parko-kalesan-tin-astynomia/",
+        "https://www.efsyn.gr/life/1451832/o-emmanoyil-karalis-sto-vinteo-toy-neoy-tragoydioy-toy-monto-ntoyplantis/"
       ],
-      "seen_at_utc": "2026-08-21T09:30:05.224832+00:00"
+      "seen_at_utc": "2026-08-21T09:51:33.812395+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/greece/kaysonas-ypsiles-thermokrasies-tis-epomenes-meres-pote-koryfonetai-to-kyma-zestis-me-40aria/",
-      "title": "Συνθήκες καύσωνα μέχρι την επόμενη εβδομάδα - Πότε κορυφώνεται το κύμα ζέστης με 40αρια",
-      "normalized_title": "ΣΥΝΘΗΚΕΣ ΚΑΥΣΩΝΑ ΜΕΧΡΙ ΤΗΝ ΕΠΟΜΕΝΗ ΕΒΔΟΜΑΔΑ - ΠΟΤΕ ΚΟΡΥΦΩΝΕΤΑΙ ΤΟ ΚΥΜΑ ΖΕΣΤΗΣ ΜΕ 40ΑΡΙΑ",
+      "url": "https://www.in.gr/2026/08/21/economy/agro-in/opekepe-oi-aorates-agelades-ton-epidotiseon-ti-anaferei-to-politico/",
+      "title": "Οι «αόρατες» αγελάδες των επιδοτήσεων - Το Politico για τις «ουρές» του ΟΠΕΚΕΠΕ",
+      "normalized_title": "ΟΙ «ΑΟΡΑΤΕΣ» ΑΓΕΛΑΔΕΣ ΤΩΝ ΕΠΙΔΟΤΗΣΕΩΝ - ΤΟ POLITICO ΓΙΑ ΤΙΣ «ΟΥΡΕΣ» ΤΟΥ ΟΠΕΚΕΠΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/greece/kaysonas-ypsiles-thermokrasies-tis-epomenes-meres-pote-koryfonetai-to-kyma-zestis-me-40aria/"
+        "https://www.in.gr/2026/08/21/economy/agro-in/opekepe-oi-aorates-agelades-ton-epidotiseon-ti-anaferei-to-politico/",
+        "https://www.in.gr/2026/08/21/greece/aigio-sto-nosokomeio-5xronos-pou-kataplakothike-apo-mixanima-me-loutrina-paixnidia/",
+        "https://www.in.gr/2026/08/21/in-science/ai/i-ai-einai-idi-metr-tis-peithous-isos-kai-tis-paraplanisis/",
+        "https://www.in.gr/2026/08/21/sports/football/mentilimpar-theloume-na-kerdizoume-ola-ta-paixnidia-2/",
+        "https://www.in.gr/2026/08/21/greece/tzoumerka-nekros-86xronos-pou-epese-apo-ti-stegi-tou-spitiou-tou-eno-ekane-ergasies/"
       ],
-      "seen_at_utc": "2026-08-21T09:30:05.224798+00:00"
+      "seen_at_utc": "2026-08-21T09:51:33.812343+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T09:30:05.224920+00:00"
+  "updated_at_utc": "2026-08-21T09:51:33.812551+00:00"
 }
