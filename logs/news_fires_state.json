@@ -1,19 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564412675/cnn-to-polemiko-naytiko-thelei-na-metonomasei-aeroplanoforo-pros-timin-toy-tramp/",
-      "title": "CNN: Το Πολεμικό Ναυτικό θέλει να μετονομάσει αεροπλανοφόρο προς τιμήν του Τραμπ",
-      "normalized_title": "CNN: ΤΟ ΠΟΛΕΜΙΚΟ ΝΑΥΤΙΚΟ ΘΕΛΕΙ ΝΑ ΜΕΤΟΝΟΜΑΣΕΙ ΑΕΡΟΠΛΑΝΟΦΟΡΟ ΠΡΟΣ ΤΙΜΗΝ ΤΟΥ ΤΡΑΜΠ",
+      "url": "https://www.kathimerini.gr/opinion/564412246/to-keno-exoysias-vlaptei-sovara-tin-ellada/",
+      "title": "Το κενό εξουσίας βλάπτει σοβαρά την Ελλάδα",
+      "normalized_title": "ΤΟ ΚΕΝΟ ΕΞΟΥΣΙΑΣ ΒΛΑΠΤΕΙ ΣΟΒΑΡΑ ΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564412675/cnn-to-polemiko-naytiko-thelei-na-metonomasei-aeroplanoforo-pros-timin-toy-tramp/",
-        "https://www.kathimerini.gr/economy/diktis/564412543/ekdosi-omologion-apo-ethniki-aafalistiki/",
-        "https://www.kathimerini.gr/society/564412657/vinteo-ntokoymento-diarriktis-paraviazei-porta-me-katsavidi-stin-ano-glyfada/",
-        "https://www.kathimerini.gr/k/travel/564408265/i-anagennisi-tis-pitsas-symvainei-mono-sti-romi/",
-        "https://www.kathimerini.gr/visual/photography/564411856/ston-aera-4/",
-        "https://www.kathimerini.gr/k/gastronomos/564411544/i-paros-toy-giorgoy-pitta-stekia-proionta-mystika/",
-        "https://www.kathimerini.gr/politics/564412048/theoreio-erchetai-me-fora/"
+        "https://www.kathimerini.gr/opinion/564412246/to-keno-exoysias-vlaptei-sovara-tin-ellada/",
+        "https://www.kathimerini.gr/opinion/564412249/i-aorati-astynomia/",
+        "https://www.kathimerini.gr/opinion/564412264/panigyria-gia-ta-panigyria/",
+        "https://www.kathimerini.gr/opinion/564412261/oi-araves-kai-to-mein-kampf/",
+        "https://www.kathimerini.gr/economy/shipping/564412501/ellinoamerikaniki-synergasiastoys-kladoys-naytilias-naypigeion/"
       ],
-      "seen_at_utc": "2026-08-21T05:17:03.351409+00:00"
+      "seen_at_utc": "2026-08-21T05:30:01.656654+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1275,27 +1273,31 @@
       "seen_at_utc": "2026-08-21T05:17:03.351522+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1451661/toytes-tis-meres-to-ehei-dei-aizenhaoyer/",
-      "title": "Τούτες τις μέρες το έχει δει Αϊζενχάουερ",
-      "normalized_title": "ΤΟΥΤΕΣ ΤΙΣ ΜΕΡΕΣ ΤΟ ΕΧΕΙ ΔΕΙ ΑΙΖΕΝΧΑΟΥΕΡ",
+      "url": "https://www.efsyn.gr/kosmos/1451666/dytiki-ohthi-diethnis-antidrasi-kata-toy-israil-gia-toys-epoikismoys-na-aposyrei-amesos-to-shedio/",
+      "title": "Δυτική Όχθη: Διεθνής αντίδραση κατά του Ισραήλ για τους εποικισμούς – «Να αποσύρει αμέσως το σχέδιο»",
+      "normalized_title": "ΔΥΤΙΚΗ ΟΧΘΗ: ΔΙΕΘΝΗΣ ΑΝΤΙΔΡΑΣΗ ΚΑΤΑ ΤΟΥ ΙΣΡΑΗΛ ΓΙΑ ΤΟΥΣ ΕΠΟΙΚΙΣΜΟΥΣ – «ΝΑ ΑΠΟΣΥΡΕΙ ΑΜΕΣΩΣ ΤΟ ΣΧΕΔΙΟ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1451661/toytes-tis-meres-to-ehei-dei-aizenhaoyer/",
-        "https://www.efsyn.gr/kosmos/1451654/nordstream-deyteri-syllipsi-oykranoy-gia-tin-anatinaxi-ton-agogon-poios-theoreitai-o-egkefalos/"
+        "https://www.efsyn.gr/kosmos/1451666/dytiki-ohthi-diethnis-antidrasi-kata-toy-israil-gia-toys-epoikismoys-na-aposyrei-amesos-to-shedio/",
+        "https://www.efsyn.gr/ellada/1451671/thesprotia-78hronos-ehase-300-000-eyro-se-apati-me-ependyseis-se-kryptonomismata/",
+        "https://www.efsyn.gr/politiki/1451672/rezerve-ammoydia-telos/",
+        "https://www.efsyn.gr/tehnes/1451664/stathis-parharidis-1967-2026-pethane-enas-spoydaios-ekprosopos-tis-pontiakis-paradosis/"
       ],
-      "seen_at_utc": "2026-08-21T05:17:03.351444+00:00"
+      "seen_at_utc": "2026-08-21T05:30:01.656717+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/greece/agios-dimitrios-sygklonizei-o-pateras-tou-18xronou-pou-dexthike-epithesi-me-maxairi/",
-      "title": "Συγκλονίζει ο πατέρας του 18χρονου που δέχθηκε επίθεση με μαχαίρι - «Τον κάρφωσε στο κεφάλι και την πλάτη»",
-      "normalized_title": "ΣΥΓΚΛΟΝΙΖΕΙ Ο ΠΑΤΕΡΑΣ ΤΟΥ 18ΧΡΟΝΟΥ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΜΕ ΜΑΧΑΙΡΙ - «ΤΟΝ ΚΑΡΦΩΣΕ ΣΤΟ ΚΕΦΑΛΙ ΚΑΙ ΤΗΝ ΠΛΑΤΗ»",
+      "url": "https://www.in.gr/2026/08/21/sports/football/conference-league/tettei-na-mas-ginei-mathima/",
+      "title": "H αυτοκριτική, το σύνθημα αντεπίθεσης και η «γεμάτη» παρουσία του Τεττέη (vid)",
+      "normalized_title": "H ΑΥΤΟΚΡΙΤΙΚΗ, ΤΟ ΣΥΝΘΗΜΑ ΑΝΤΕΠΙΘΕΣΗΣ ΚΑΙ Η «ΓΕΜΑΤΗ» ΠΑΡΟΥΣΙΑ ΤΟΥ ΤΕΤΤΕΗ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/greece/agios-dimitrios-sygklonizei-o-pateras-tou-18xronou-pou-dexthike-epithesi-me-maxairi/",
-        "https://www.in.gr/2026/08/21/world/oie-nea-endeiktiki-psifoforia-gia-tin-epilogi-genikou-grammatea-ta-favori-i-diadikasia-kai-oi-prokliseis/",
-        "https://www.in.gr/2026/08/21/go-fun/social/arkas-i-kalimera-tis-paraskeyis-14/",
-        "https://www.in.gr/2026/08/21/plus/vita/pente-trofes-pou-mporoun-na-xarisoun-eos-kai-10-epipleon-xronia/"
+        "https://www.in.gr/2026/08/21/sports/football/conference-league/tettei-na-mas-ginei-mathima/",
+        "https://www.in.gr/2026/08/21/greece/ano-glyfada-i-stigmi-pou-diarriktis-paraviazei-porta-polykatoikias-vinteo-ntokoumento/",
+        "https://www.in.gr/2026/08/21/economy/ta-paidia-tis-ai-provlimatizoun-tous-ergodotes-pou-pige-i-kritiki-skepsi/",
+        "https://www.in.gr/2026/08/21/editorial/mporei-kaneis-na-koitaksei-tis-nees-genies-sta-matia/",
+        "https://www.in.gr/2026/08/21/life/music/apostolos-kaldaras-ena-megalo-mousiko-afieroma-me-ton-giorgo-ntalara-kai-ti-nea-genia-tou-laikou-tragoudiou/",
+        "https://www.in.gr/2026/08/21/economy/tourismos-gia-olous-teleytaia-imera-gia-tin-ypovoli-aitiseon/"
       ],
-      "seen_at_utc": "2026-08-21T04:51:06.218249+00:00"
+      "seen_at_utc": "2026-08-21T05:30:01.656688+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T05:17:03.351595+00:00"
+  "updated_at_utc": "2026-08-21T05:30:01.656778+00:00"
 }
