@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/auto/564377539/slate-truck-i-epistrofi-toy-polymorfikoy-aytokinitoy/",
-      "title": "Slate Truck: Η επιστροφή του πολυμορφικού αυτοκινήτου",
-      "normalized_title": "SLATE TRUCK: Η ΕΠΙΣΤΡΟΦΗ ΤΟΥ ΠΟΛΥΜΟΡΦΙΚΟΥ ΑΥΤΟΚΙΝΗΤΟΥ",
+      "url": "https://www.kathimerini.gr/world/564413176/ipa-apozimiosi-550-000-se-dyo-efives-poy-emeinan-kremasmenes-anapoda-se-loyna-park/",
+      "title": "ΗΠΑ: Αποζημίωση 550.000$ σε δύο έφηβες που έμειναν κρεμασμένες ανάποδα σε λούνα παρκ",
+      "normalized_title": "ΗΠΑ: ΑΠΟΖΗΜΙΩΣΗ 550.000$ ΣΕ ΔΥΟ ΕΦΗΒΕΣ ΠΟΥ ΕΜΕΙΝΑΝ ΚΡΕΜΑΣΜΕΝΕΣ ΑΝΑΠΟΔΑ ΣΕ ΛΟΥΝΑ ΠΑΡΚ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/auto/564377539/slate-truck-i-epistrofi-toy-polymorfikoy-aytokinitoy/"
+        "https://www.kathimerini.gr/world/564413176/ipa-apozimiosi-550-000-se-dyo-efives-poy-emeinan-kremasmenes-anapoda-se-loyna-park/",
+        "https://www.kathimerini.gr/world/564413179/i-toyrkia-exedose-diethnes-entalma-syllipsis-kata-toy-netaniachoy/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564412057/ellinotoyrkika-o-ti-diekdikeitai-den-aposyretai/"
       ],
-      "seen_at_utc": "2026-08-21T12:30:14.998843+00:00"
+      "seen_at_utc": "2026-08-21T12:51:44.906025+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867716/fotia-tora-se-dasos-sti-neromana-aitoloakarnanias-sikothikan-duo-enaeria/?utm_source=rss",
-      "title": "Φωτιά τώρα σε δάσος στη Νερομάνα Αιτωλοακαρνανίας, σηκώθηκαν δύο εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΗ ΝΕΡΟΜΑΝΑ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1867729/fotia-tora-se-dasos-sto-katafuto-neurokopiou-dramas-epiheiroun-tessera-enaeria/?utm_source=rss",
+      "title": "Φωτιά τώρα σε δάσος στο Κατάφυτο Νευροκοπίου Δράμας, επιχειρούν τέσσερα εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΟ ΚΑΤΑΦΥΤΟ ΝΕΥΡΟΚΟΠΙΟΥ ΔΡΑΜΑΣ, ΕΠΙΧΕΙΡΟΥΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867716/fotia-tora-se-dasos-sti-neromana-aitoloakarnanias-sikothikan-duo-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867729/fotia-tora-se-dasos-sto-katafuto-neurokopiou-dramas-epiheiroun-tessera-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867727/epiheirisan-na-perasoun-kinita-sim-kai-router-me-drone-stis-fulakes-larisas-energopoiithike-to-sustima-adi-drone/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-21T12:30:14.998996+00:00"
+      "seen_at_utc": "2026-08-21T12:51:44.906162+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1451964/to-iran-xekatharizei-syntriptiki-tha-einai-i-apantisi-stis-apeiles-tramp/",
-      "title": "Το Ιράν ξεκαθαρίζει: «Συντριπτική» θα είναι η απάντηση στις απειλές Τραμπ",
-      "normalized_title": "ΤΟ ΙΡΑΝ ΞΕΚΑΘΑΡΙΖΕΙ: «ΣΥΝΤΡΙΠΤΙΚΗ» ΘΑ ΕΙΝΑΙ Η ΑΠΑΝΤΗΣΗ ΣΤΙΣ ΑΠΕΙΛΕΣ ΤΡΑΜΠ",
+      "url": "https://www.efsyn.gr/ellada/1451971/se-statheri-anodo-to-organomeno-kampingk-akriveia-kai-hamila-eisodimata-stelnoyn-toys-ellines-stis-skines/",
+      "title": "Σε ανοδική τροχιά το οργανωμένο κάμπινγκ: Ακρίβεια και χαμηλά εισοδήματα «στέλνουν» τους Έλληνες στις σκηνές",
+      "normalized_title": "ΣΕ ΑΝΟΔΙΚΗ ΤΡΟΧΙΑ ΤΟ ΟΡΓΑΝΩΜΕΝΟ ΚΑΜΠΙΝΓΚ: ΑΚΡΙΒΕΙΑ ΚΑΙ ΧΑΜΗΛΑ ΕΙΣΟΔΗΜΑΤΑ «ΣΤΕΛΝΟΥΝ» ΤΟΥΣ ΕΛΛΗΝΕΣ ΣΤΙΣ ΣΚΗΝΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1451964/to-iran-xekatharizei-syntriptiki-tha-einai-i-apantisi-stis-apeiles-tramp/"
+        "https://www.efsyn.gr/ellada/1451971/se-statheri-anodo-to-organomeno-kampingk-akriveia-kai-hamila-eisodimata-stelnoyn-toys-ellines-stis-skines/",
+        "https://www.efsyn.gr/oikonomia/1451979/tte-ypsila-kerdi-gia-tis-taxidiotikes-etaireies-sta-88-dis-oi-eispraxeis-ayxithikan-kata-15-apo-persi/",
+        "https://www.efsyn.gr/kosmos/1451978/i-toyrkia-exedose-entalma-syllipsis-gia-ton-mpeniamin-netaniahoy/"
       ],
-      "seen_at_utc": "2026-08-21T12:30:14.998958+00:00"
+      "seen_at_utc": "2026-08-21T12:51:44.906136+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/21/greece/xalkidiki-apagoreysi-kykloforias-se-dasikes-perioxes-logo-ypsilou-kindynou-pyrkagias/",
-      "title": "Απαγόρευση κυκλοφορίας σε δασικές περιοχές λόγω υψηλού κινδύνου πυρκαγιάς στη Χαλκιδική",
-      "normalized_title": "ΑΠΑΓΟΡΕΥΣΗ ΚΥΚΛΟΦΟΡΙΑΣ ΣΕ ΔΑΣΙΚΕΣ ΠΕΡΙΟΧΕΣ ΛΟΓΩ ΥΨΗΛΟΥ ΚΙΝΔΥΝΟΥ ΠΥΡΚΑΓΙΑΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.in.gr/2026/08/21/greece/fotia-se-dasiki-ektasi-sto-neyrokopi-sikothikan-tessera-enaeria/",
+      "title": "Φωτιά σε δασική έκταση στο Νευροκόπι - Σηκώθηκαν τέσσερα εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΝΕΥΡΟΚΟΠΙ - ΣΗΚΩΘΗΚΑΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/21/greece/xalkidiki-apagoreysi-kykloforias-se-dasikes-perioxes-logo-ypsilou-kindynou-pyrkagias/"
+        "https://www.in.gr/2026/08/21/greece/fotia-se-dasiki-ektasi-sto-neyrokopi-sikothikan-tessera-enaeria/",
+        "https://www.in.gr/2026/08/21/world/tourkia-ekdosi-diethnous-entalmatos-syllipsis-kata-tou-netaniaxou/",
+        "https://www.in.gr/2026/08/21/greece/limnos-fotia-ksespase-stin-perioxi-thanos-kaiei-xamili-vlastisi/",
+        "https://www.in.gr/2026/08/21/sports/football/systithike-o-ntelias-i-zesti-agkalia-karetsa-konstantelia-kai-i-proti-gnorimia-me-tin-ypoloipi-omada-vid/"
       ],
-      "seen_at_utc": "2026-08-21T12:30:14.998912+00:00"
+      "seen_at_utc": "2026-08-21T12:51:44.906089+00:00"
     }
   },
-  "updated_at_utc": "2026-08-21T12:30:14.999083+00:00"
+  "updated_at_utc": "2026-08-21T12:51:44.906248+00:00"
 }
