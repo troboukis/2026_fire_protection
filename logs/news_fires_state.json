@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416041/giannitsa-synelifthi-andras-gia-paranomi-katochi-oplon/",
-      "title": "Γιαννιτσά: Συνελήφθη άνδρας για παράνομη κατοχή όπλων",
-      "normalized_title": "ΓΙΑΝΝΙΤΣΑ: ΣΥΝΕΛΗΦΘΗ ΑΝΔΡΑΣ ΓΙΑ ΠΑΡΑΝΟΜΗ ΚΑΤΟΧΗ ΟΠΛΩΝ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564416053/oftos-katsikaki-gemisto-me-ryzi-kai-myrodika-apo-tin-ikaria/",
+      "title": "Οφτός: κατσικάκι γεμιστό με ρύζι και μυρωδικά, από την Ικαρία",
+      "normalized_title": "ΟΦΤΟΣ: ΚΑΤΣΙΚΑΚΙ ΓΕΜΙΣΤΟ ΜΕ ΡΥΖΙ ΚΑΙ ΜΥΡΩΔΙΚΑ, ΑΠΟ ΤΗΝ ΙΚΑΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416041/giannitsa-synelifthi-andras-gia-paranomi-katochi-oplon/",
-        "https://www.kathimerini.gr/world/564415981/koryfaioi-politikoi-toy-iran-zitoyn-to-telos-toy-polemoy/",
-        "https://www.kathimerini.gr/society/564416026/soyidia-ti-exetazoyn-oi-arches-meta-ton-thanato-17chronis-apo-epithesi-me-spathi/",
-        "https://www.kathimerini.gr/society/564416047/kriti-vinteo-ntokoymento-apo-tin-parasyrsi-toyriston-apo-ochima/"
+        "https://www.kathimerini.gr/k/gastronomos/564416053/oftos-katsikaki-gemisto-me-ryzi-kai-myrodika-apo-tin-ikaria/",
+        "https://www.kathimerini.gr/society/564416062/olympos-oreivatis-epese-se-charadra-megali-epicheirisi-diasosis/"
       ],
-      "seen_at_utc": "2026-08-22T12:17:18.503594+00:00"
+      "seen_at_utc": "2026-08-22T12:51:11.695684+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,32 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868105/to-paidi-mou-na-dosei-zoi-se-allous-anthropous-harizei-zoi-meta-ton-thanato-tou-o-39hronos-motosikletistis/?utm_source=rss",
-      "title": "«Το παιδί μου να δώσει ζωή»: Μεγαλείο ψυχής από την οικογένεια του 39χρονου μοτοσικλετιστή, σε Ελλάδα και Γερμανία τα όργανά του",
-      "normalized_title": "«ΤΟ ΠΑΙΔΙ ΜΟΥ ΝΑ ΔΩΣΕΙ ΖΩΗ»: ΜΕΓΑΛΕΙΟ ΨΥΧΗΣ ΑΠΟ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ 39ΧΡΟΝΟΥ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗ, ΣΕ ΕΛΛΑΔΑ ΚΑΙ ΓΕΡΜΑΝΙΑ ΤΑ ΟΡΓΑΝΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1868117/atladis-katedafistike-o-istorikos-kinimatografos-tis-dafnis-meta-apo-70-hronia-leitourgias-deite-fotografies/?utm_source=rss",
+      "title": "Ατλαντίς: Κατεδαφίστηκε ο ιστορικός κινηματογράφος της Δάφνης μετά από 70 χρόνια λειτουργίας, δείτε φωτογραφίες",
+      "normalized_title": "ΑΤΛΑΝΤΙΣ: ΚΑΤΕΔΑΦΙΣΤΗΚΕ Ο ΙΣΤΟΡΙΚΟΣ ΚΙΝΗΜΑΤΟΓΡΑΦΟΣ ΤΗΣ ΔΑΦΝΗΣ ΜΕΤΑ ΑΠΟ 70 ΧΡΟΝΙΑ ΛΕΙΤΟΥΡΓΙΑΣ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868105/to-paidi-mou-na-dosei-zoi-se-allous-anthropous-harizei-zoi-meta-ton-thanato-tou-o-39hronos-motosikletistis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868117/atladis-katedafistike-o-istorikos-kinimatografos-tis-dafnis-meta-apo-70-hronia-leitourgias-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868116/epestrefe-apo-ti-douleia-tis-i-46hroni-eleni-pou-skotothike-sto-trohaio-stin-kato-ahaia-dikografia-se-varos-tou-53hronou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868114/prosorini-diakopi-reumatos-sti-murina-limnou-to-provlima-tha-ehei-apokatastathei-amesa-leei-o-deddie/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T12:30:02.119845+00:00"
+      "seen_at_utc": "2026-08-22T12:51:11.695827+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1452459/kontra-georgiadi-akrita-gia-mantona-vrike-logo-na-mizeriasei-den-einai-fyteia-toy-notoy-na-mazeyoyme-vamvaki/",
-      "title": "Κόντρα Γεωργιάδη – Ακρίτα για Μαντόνα: «Βρήκε λόγο να μιζεριάσει» – «Δεν είναι φυτεία του Νότου να μαζεύουμε βαμβάκι»",
-      "normalized_title": "ΚΟΝΤΡΑ ΓΕΩΡΓΙΑΔΗ – ΑΚΡΙΤΑ ΓΙΑ ΜΑΝΤΟΝΑ: «ΒΡΗΚΕ ΛΟΓΟ ΝΑ ΜΙΖΕΡΙΑΣΕΙ» – «ΔΕΝ ΕΙΝΑΙ ΦΥΤΕΙΑ ΤΟΥ ΝΟΤΟΥ ΝΑ ΜΑΖΕΥΟΥΜΕ ΒΑΜΒΑΚΙ»",
+      "url": "https://www.efsyn.gr/ellada/1452470/olympos-ptosi-oreivati-se-dysvati-haradra-se-exelixi-epiheirisi-tis-emak/",
+      "title": "Όλυμπος: Πτώση ορειβάτη σε δύσβατη χαράδρα – Σε εξέλιξη επιχείρηση της ΕΜΑΚ",
+      "normalized_title": "ΟΛΥΜΠΟΣ: ΠΤΩΣΗ ΟΡΕΙΒΑΤΗ ΣΕ ΔΥΣΒΑΤΗ ΧΑΡΑΔΡΑ – ΣΕ ΕΞΕΛΙΞΗ ΕΠΙΧΕΙΡΗΣΗ ΤΗΣ ΕΜΑΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1452459/kontra-georgiadi-akrita-gia-mantona-vrike-logo-na-mizeriasei-den-einai-fyteia-toy-notoy-na-mazeyoyme-vamvaki/"
+        "https://www.efsyn.gr/ellada/1452470/olympos-ptosi-oreivati-se-dysvati-haradra-se-exelixi-epiheirisi-tis-emak/",
+        "https://www.efsyn.gr/politiki/1452280/o-kostas-karpoyhtsis-stin-ef-syn-anaptyxi-poy-ftanei-stin-koinonia/"
       ],
-      "seen_at_utc": "2026-08-22T12:30:02.119786+00:00"
+      "seen_at_utc": "2026-08-22T12:51:11.695787+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/politics/elas-allo-ena-ogkologiko-farmako-feygei-apo-tin-ellada-den-einai-memonomeno-peristatiko/",
-      "title": "ΕΛΑΣ: Άλλο ένα ογκολογικό φάρμακο φεύγει από την Ελλάδα – Δεν είναι μεμονωμένο περιστατικό",
-      "normalized_title": "ΕΛΑΣ: ΑΛΛΟ ΕΝΑ ΟΓΚΟΛΟΓΙΚΟ ΦΑΡΜΑΚΟ ΦΕΥΓΕΙ ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ – ΔΕΝ ΕΙΝΑΙ ΜΕΜΟΝΩΜΕΝΟ ΠΕΡΙΣΤΑΤΙΚΟ",
+      "url": "https://www.in.gr/2026/08/22/greece/ktel-kifisou-odigouse-taksi-xoris-diploma-kai-xreone-paranoma-dipli-tarifa/",
+      "title": "Συνελήφθη 36χρονος στα ΚΤΕΛ Κηφισού - Οδηγούσε ταξί χωρίς δίπλωμα και χρέωνε παράνομα διπλή ταρίφα",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 36ΧΡΟΝΟΣ ΣΤΑ ΚΤΕΛ ΚΗΦΙΣΟΥ - ΟΔΗΓΟΥΣΕ ΤΑΞΙ ΧΩΡΙΣ ΔΙΠΛΩΜΑ ΚΑΙ ΧΡΕΩΝΕ ΠΑΡΑΝΟΜΑ ΔΙΠΛΗ ΤΑΡΙΦΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/politics/elas-allo-ena-ogkologiko-farmako-feygei-apo-tin-ellada-den-einai-memonomeno-peristatiko/"
+        "https://www.in.gr/2026/08/22/greece/ktel-kifisou-odigouse-taksi-xoris-diploma-kai-xreone-paranoma-dipli-tarifa/",
+        "https://www.in.gr/2026/08/22/world/rosia-toulaxiston-eksi-nekroi-apo-pligmata-oukranikon-drone/",
+        "https://www.in.gr/2026/08/22/sports/football/paiktis-tis-al-ouasl-o-taremi-to-antio-tou-olympiakou-pics/",
+        "https://www.in.gr/2026/08/22/in-science/perivallon-b-science/i-klimatiki-allagi-os-pollaplasiastis-anisotiton-to-38-ton-eyropaion-adynatoun-na-drosisoun-to-spiti-tous/"
       ],
-      "seen_at_utc": "2026-08-22T12:30:02.119720+00:00"
+      "seen_at_utc": "2026-08-22T12:51:11.695745+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T12:30:02.119917+00:00"
+  "updated_at_utc": "2026-08-22T12:51:11.695903+00:00"
 }
