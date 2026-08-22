@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564414238/to-fthinoporo-einai-to-neo-kalokairi-gia-toys-toyristes-2/",
-      "title": "Το φθινόπωρο είναι το νέο καλοκαίρι για τους τουρίστες",
-      "normalized_title": "ΤΟ ΦΘΙΝΟΠΩΡΟ ΕΙΝΑΙ ΤΟ ΝΕΟ ΚΑΛΟΚΑΙΡΙ ΓΙΑ ΤΟΥΣ ΤΟΥΡΙΣΤΕΣ",
+      "url": "https://www.kathimerini.gr/world/564416176/mporei-o-oikonomikos-polemos-toy-tramp-na-kampsei-to-iran/",
+      "title": "Μπορεί ο οικονομικός πόλεμος του Τραμπ να κάμψει το Ιράν;",
+      "normalized_title": "ΜΠΟΡΕΙ Ο ΟΙΚΟΝΟΜΙΚΟΣ ΠΟΛΕΜΟΣ ΤΟΥ ΤΡΑΜΠ ΝΑ ΚΑΜΨΕΙ ΤΟ ΙΡΑΝ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564414238/to-fthinoporo-einai-to-neo-kalokairi-gia-toys-toyristes-2/"
+        "https://www.kathimerini.gr/world/564416176/mporei-o-oikonomikos-polemos-toy-tramp-na-kampsei-to-iran/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564413848/i-apeili-diagrafis-veltiose-toys-deiktes-apofoitisis/",
+        "https://www.kathimerini.gr/k/k-magazine/564411457/oi-archaggeloi-tis-filozoias/",
+        "https://www.kathimerini.gr/society/564416308/spetses-elikoptero-prosgeiothike-se-paralia-me-loyomenoys-vinteo/"
       ],
-      "seen_at_utc": "2026-08-22T17:51:07.386613+00:00"
+      "seen_at_utc": "2026-08-22T18:16:57.979343+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868192/mustirio-me-to-elikoptero-stis-spetses-o-pilotos-eipe-oti-den-prosgeiothike-sto-elikodromio-gia-ena-mihanaki-kai-o-dimas/?utm_source=rss",
-      "title": "Μυστήριο με το ελικόπτερο στις Σπέτσες: Ο πιλότος είπε ότι δεν προσγειώθηκε στο ελικοδρόμιο για ένα μηχανάκι και ο Δήμας... ερευνά ακόμη το περιστατικό",
-      "normalized_title": "ΜΥΣΤΗΡΙΟ ΜΕ ΤΟ ΕΛΙΚΟΠΤΕΡΟ ΣΤΙΣ ΣΠΕΤΣΕΣ: Ο ΠΙΛΟΤΟΣ ΕΙΠΕ ΟΤΙ ΔΕΝ ΠΡΟΣΓΕΙΩΘΗΚΕ ΣΤΟ ΕΛΙΚΟΔΡΟΜΙΟ ΓΙΑ ΕΝΑ ΜΗΧΑΝΑΚΙ ΚΑΙ Ο ΔΗΜΑΣ... ΕΡΕΥΝΑ ΑΚΟΜΗ ΤΟ ΠΕΡΙΣΤΑΤΙΚΟ",
+      "url": "https://www.protothema.gr/greece/article/1868197/sunelifthi-enas-epivatis-tou-elikopterou-stis-spetses-ton-eidan-na-petaei-ena-sakoulaki-me-narkotika/?utm_source=rss",
+      "title": "Συνελήφθη επιβάτης του ελικοπτέρου στις Σπέτσες, τον είδαν να πετάει ένα σακουλάκι με ναρκωτικά",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΕΠΙΒΑΤΗΣ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΙΣ ΣΠΕΤΣΕΣ, ΤΟΝ ΕΙΔΑΝ ΝΑ ΠΕΤΑΕΙ ΕΝΑ ΣΑΚΟΥΛΑΚΙ ΜΕ ΝΑΡΚΩΤΙΚΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868192/mustirio-me-to-elikoptero-stis-spetses-o-pilotos-eipe-oti-den-prosgeiothike-sto-elikodromio-gia-ena-mihanaki-kai-o-dimas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868197/sunelifthi-enas-epivatis-tou-elikopterou-stis-spetses-ton-eidan-na-petaei-ena-sakoulaki-me-narkotika/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868195/horis-aisthiseis-anasurthike-56hronos-apo-thalassia-periohi-sti-halkidiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T17:51:07.386702+00:00"
+      "seen_at_utc": "2026-08-22T18:16:57.979426+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1452529/epanerhetai-o-adonis-kata-akrita-doti-voyleytis-kyniga-emena-poy-eklegomai-20-hronia-me-dekades-hiliades-psifoys/",
-      "title": "Επανέρχεται ο Άδωνις κατά Ακρίτα: «Δοτή βουλευτής κυνηγά εμένα που εκλέγομαι 20 χρόνια με δεκάδες χιλιάδες ψήφους»",
-      "normalized_title": "ΕΠΑΝΕΡΧΕΤΑΙ Ο ΑΔΩΝΙΣ ΚΑΤΑ ΑΚΡΙΤΑ: «ΔΟΤΗ ΒΟΥΛΕΥΤΗΣ ΚΥΝΗΓΑ ΕΜΕΝΑ ΠΟΥ ΕΚΛΕΓΟΜΑΙ 20 ΧΡΟΝΙΑ ΜΕ ΔΕΚΑΔΕΣ ΧΙΛΙΑΔΕΣ ΨΗΦΟΥΣ»",
+      "url": "https://www.efsyn.gr/ellada/1452535/voyliaxan-oi-paralies-tis-attikis-gia-mia-anasa-apo-ti-zesti-vinteo/",
+      "title": "«Βούλιαξαν» οι παραλίες της Αττικής για μια ανάσα από τη ζέστη [βίντεο]",
+      "normalized_title": "«ΒΟΥΛΙΑΞΑΝ» ΟΙ ΠΑΡΑΛΙΕΣ ΤΗΣ ΑΤΤΙΚΗΣ ΓΙΑ ΜΙΑ ΑΝΑΣΑ ΑΠΟ ΤΗ ΖΕΣΤΗ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1452529/epanerhetai-o-adonis-kata-akrita-doti-voyleytis-kyniga-emena-poy-eklegomai-20-hronia-me-dekades-hiliades-psifoys/",
-        "https://www.efsyn.gr/kosmos/1452502/exelixeis-sta-stena-toy-ormoyz-to-iran-epetrepse-ti-dieleysi-irakinon-ploion/"
+        "https://www.efsyn.gr/ellada/1452535/voyliaxan-oi-paralies-tis-attikis-gia-mia-anasa-apo-ti-zesti-vinteo/"
       ],
-      "seen_at_utc": "2026-08-22T17:51:07.386675+00:00"
+      "seen_at_utc": "2026-08-22T18:16:57.979401+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/in-science/space/ti-symvainei-otan-svinoun-oi-ypermegetheis-mayres-trypes-anakalypsi-neon-radiogalaksion/",
-      "title": "Τι συμβαίνει όταν «σβήνουν» οι υπερμεγέθεις μαύρες τρύπες: Ανακάλυψη νέων ραδιογαλαξιών",
-      "normalized_title": "ΤΙ ΣΥΜΒΑΙΝΕΙ ΟΤΑΝ «ΣΒΗΝΟΥΝ» ΟΙ ΥΠΕΡΜΕΓΕΘΕΙΣ ΜΑΥΡΕΣ ΤΡΥΠΕΣ: ΑΝΑΚΑΛΥΨΗ ΝΕΩΝ ΡΑΔΙΟΓΑΛΑΞΙΩΝ",
+      "url": "https://www.in.gr/matchcenter/5943228/",
+      "title": "LIVE: Ολυμπιακός – Ατρόμητος",
+      "normalized_title": "LIVE: ΟΛΥΜΠΙΑΚΟΣ – ΑΤΡΟΜΗΤΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/in-science/space/ti-symvainei-otan-svinoun-oi-ypermegetheis-mayres-trypes-anakalypsi-neon-radiogalaksion/",
-        "https://www.in.gr/2026/08/22/greece/kerkyra-ktinodia-apo-odigo-pou-patise-kai-skotose-skylo-tin-ora-pou-koimotan/",
-        "https://www.in.gr/2026/08/22/sports/football/olympiakos-i-11ada-gia-tin-anametrisi-me-ton-atromito-pic/",
-        "https://www.in.gr/2026/08/22/world/giati-oxi-mia-dolofonia-se-ena-estiatorio-pote-mia-ektelesi-einai-dikaiologimeni/"
+        "https://www.in.gr/matchcenter/5943228/",
+        "https://www.in.gr/2026/08/22/go-fun/fizz/o-giannis-antetokounmpo-sti-mykono-me-tin-oikogeneia-tou/",
+        "https://www.in.gr/2026/08/22/sports/football/ntortmount-mpagern-monaxou-stin-11ada-o-karetsas-ston-pagko-o-konstantelias-gia-to-germaniko-super-cup/"
       ],
-      "seen_at_utc": "2026-08-22T17:51:07.386646+00:00"
+      "seen_at_utc": "2026-08-22T18:16:57.979372+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T17:51:07.386758+00:00"
+  "updated_at_utc": "2026-08-22T18:16:57.979496+00:00"
 }
