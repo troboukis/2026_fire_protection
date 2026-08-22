@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564415777/ipa-kanadas-nayagio-stis-synomilies-klimakonetai-o-emporikos-polemos/",
-      "title": "ΗΠΑ-Καναδάς: Ναυάγιο στις συνομιλίες – Κλιμακώνεται ο εμπορικός πόλεμος",
-      "normalized_title": "ΗΠΑ-ΚΑΝΑΔΑΣ: ΝΑΥΑΓΙΟ ΣΤΙΣ ΣΥΝΟΜΙΛΙΕΣ – ΚΛΙΜΑΚΩΝΕΤΑΙ Ο ΕΜΠΟΡΙΚΟΣ ΠΟΛΕΜΟΣ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564414262/anatimiseis-sta-akinita-anamenoyn-oi-ellines/",
+      "title": "Ανατιμήσεις στα ακίνητα αναμένουν οι Ελληνες",
+      "normalized_title": "ΑΝΑΤΙΜΗΣΕΙΣ ΣΤΑ ΑΚΙΝΗΤΑ ΑΝΑΜΕΝΟΥΝ ΟΙ ΕΛΛΗΝΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564415777/ipa-kanadas-nayagio-stis-synomilies-klimakonetai-o-emporikos-polemos/",
-        "https://www.kathimerini.gr/politics/564413833/entos-kai-ektos-psachnoyn-symmachies-stin-aristeri-polykatoikia/",
-        "https://www.kathimerini.gr/economy/international/564414277/synecheia-sto-sirial-ton-trapezikon-exagoron-stin-italia/",
-        "https://www.kathimerini.gr/istoria/564411922/san-simera-22-aygoystoy-1953-kleinei-oristika-to-nisi-toy-diavoloy-sti-galliki-goyiana/"
+        "https://www.kathimerini.gr/economy/diktis/564414262/anatimiseis-sta-akinita-anamenoyn-oi-ellines/",
+        "https://www.kathimerini.gr/visual/photography/564413662/to-kentro-aisthitikis-to-sosto/",
+        "https://www.kathimerini.gr/politics/564413785/theoreio-thesmiko-atopima/"
       ],
-      "seen_at_utc": "2026-08-22T04:51:15.448738+00:00"
+      "seen_at_utc": "2026-08-22T05:16:59.358614+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1261,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867926/pano-apo-30-metanastes-edopistikan-se-lemvo-sti-gaudo/?utm_source=rss",
-      "title": "Πάνω από 30 μετανάστες εντοπίστηκαν σε λέμβο στη Γαύδο",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 30 ΜΕΤΑΝΑΣΤΕΣ ΕΝΤΟΠΙΣΤΗΚΑΝ ΣΕ ΛΕΜΒΟ ΣΤΗ ΓΑΥΔΟ",
+      "url": "https://www.protothema.gr/greece/article/1867929/katavlithikan-oi-protes-oikonomikes-enishuseis-se-puropliktous-sto-dimo-mandras/?utm_source=rss",
+      "title": "Καταβλήθηκαν οι πρώτες οικονομικές ενισχύσεις σε πυρόπληκτους στο Δήμο Μάνδρας",
+      "normalized_title": "ΚΑΤΑΒΛΗΘΗΚΑΝ ΟΙ ΠΡΩΤΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΕΝΙΣΧΥΣΕΙΣ ΣΕ ΠΥΡΟΠΛΗΚΤΟΥΣ ΣΤΟ ΔΗΜΟ ΜΑΝΔΡΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867926/pano-apo-30-metanastes-edopistikan-se-lemvo-sti-gaudo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1867929/katavlithikan-oi-protes-oikonomikes-enishuseis-se-puropliktous-sto-dimo-mandras/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1867928/se-trohia-kausona-i-ellada-pou-tha-katagrafoun-oi-upsiloteres-thermokrasies-poies-periohes-tha-ehoun-thermiki-epivarunsi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T04:17:40.122904+00:00"
+      "seen_at_utc": "2026-08-22T05:16:59.358733+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1452256/premiera-me-to-dexi-gia-arsenal-kai-tzoli-stin-premier-league/",
-      "title": "Πρεμιέρα με το δεξί για Άρσεναλ και Τζόλη στην Premier League",
-      "normalized_title": "ΠΡΕΜΙΕΡΑ ΜΕ ΤΟ ΔΕΞΙ ΓΙΑ ΑΡΣΕΝΑΛ ΚΑΙ ΤΖΟΛΗ ΣΤΗΝ PREMIER LEAGUE",
+      "url": "https://www.efsyn.gr/ellada/1452284/kairos-se-kloio-kaysona-apo-simera-i-hora-40aria-se-arketes-periohes-eos-30-vathmoys-ti-nyhta/",
+      "title": "Καιρός: Σε κλοιό καύσωνα από σήμερα η χώρα – 40άρια σε αρκετές περιοχές, έως 30 βαθμούς τη νύχτα",
+      "normalized_title": "ΚΑΙΡΟΣ: ΣΕ ΚΛΟΙΟ ΚΑΥΣΩΝΑ ΑΠΟ ΣΗΜΕΡΑ Η ΧΩΡΑ – 40ΑΡΙΑ ΣΕ ΑΡΚΕΤΕΣ ΠΕΡΙΟΧΕΣ, ΕΩΣ 30 ΒΑΘΜΟΥΣ ΤΗ ΝΥΧΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1452256/premiera-me-to-dexi-gia-arsenal-kai-tzoli-stin-premier-league/"
+        "https://www.efsyn.gr/ellada/1452284/kairos-se-kloio-kaysona-apo-simera-i-hora-40aria-se-arketes-periohes-eos-30-vathmoys-ti-nyhta/",
+        "https://www.efsyn.gr/ellada/1452282/eortologio-poioi-giortazoyn-simera-22-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-21T21:17:03.476632+00:00"
+      "seen_at_utc": "2026-08-22T05:16:59.358709+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/economy/klironei-gia-tin-epidotisi-sto-ntizel/",
-      "title": "Κληρώνει για την επιδότηση στο ντίζελ",
-      "normalized_title": "ΚΛΗΡΩΝΕΙ ΓΙΑ ΤΗΝ ΕΠΙΔΟΤΗΣΗ ΣΤΟ ΝΤΙΖΕΛ",
+      "url": "https://www.in.gr/2026/08/22/life/geysi/dyo-syntages-gia-drosera-pota-xoris-alkool/",
+      "title": "Δύο συνταγές για δροσερά ποτά χωρίς αλκοόλ",
+      "normalized_title": "ΔΥΟ ΣΥΝΤΑΓΕΣ ΓΙΑ ΔΡΟΣΕΡΑ ΠΟΤΑ ΧΩΡΙΣ ΑΛΚΟΟΛ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/economy/klironei-gia-tin-epidotisi-sto-ntizel/",
-        "https://www.in.gr/2026/08/22/world/proin-symvoulos-reigkan-mia-stratiotika-aytonomi-eyropi-symferei-tis-ipa/",
-        "https://www.in.gr/2026/08/22/plus/vita/to-pente-to-kalo-ola-osa-xreiazetai-i-diatrofi-mas-meta-ta-50/"
+        "https://www.in.gr/2026/08/22/life/geysi/dyo-syntages-gia-drosera-pota-xoris-alkool/"
       ],
-      "seen_at_utc": "2026-08-22T04:51:15.448766+00:00"
+      "seen_at_utc": "2026-08-22T05:16:59.358655+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T04:51:15.448845+00:00"
+  "updated_at_utc": "2026-08-22T05:16:59.358804+00:00"
 }
