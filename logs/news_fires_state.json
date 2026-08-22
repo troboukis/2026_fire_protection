@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564415996/xylokastro-synelifthi-58chronos-gia-pyrkagia-apo-ameleia/",
-      "title": "Ξυλόκαστρο: Συνελήφθη 58χρονος για πυρκαγιά από αμέλεια",
-      "normalized_title": "ΞΥΛΟΚΑΣΤΡΟ: ΣΥΝΕΛΗΦΘΗ 58ΧΡΟΝΟΣ ΓΙΑ ΠΥΡΚΑΓΙΑ ΑΠΟ ΑΜΕΛΕΙΑ",
+      "url": "https://www.kathimerini.gr/politics/564415957/foyrtoyna-kai-stin-antipoliteysi-gia-ta-parka/",
+      "title": "«Φουρτούνα» και στην αντιπολίτευση για τα πάρκα",
+      "normalized_title": "«ΦΟΥΡΤΟΥΝΑ» ΚΑΙ ΣΤΗΝ ΑΝΤΙΠΟΛΙΤΕΥΣΗ ΓΙΑ ΤΑ ΠΑΡΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564415996/xylokastro-synelifthi-58chronos-gia-pyrkagia-apo-ameleia/"
+        "https://www.kathimerini.gr/politics/564415957/foyrtoyna-kai-stin-antipoliteysi-gia-ta-parka/",
+        "https://www.kathimerini.gr/society/564416011/chalkidiki-apagoreysi-kykloforias-ayrio-logo-kindynoy-pyrkagias/",
+        "https://www.kathimerini.gr/world/564416002/chaos-sto-manchaim-85-traymaties-meta-ta-epeisodia-sto-ntermpi-me-tin-kaizerslaoytern/"
       ],
-      "seen_at_utc": "2026-08-22T11:30:13.147472+00:00"
+      "seen_at_utc": "2026-08-22T11:51:41.234824+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868080/video-i-stigmi-pou-ih-parasernei-touristes-sta-malia-den-imoun-ego-leei-o-29hronos-odigos/?utm_source=rss",
-      "title": "Βίντεο: Η στιγμή που ΙΧ παρασέρνει τουρίστες στα Μάλια, «δεν ήμουν εγώ» λέει ο 29χρονος οδηγός από την Παλαιστίνη",
-      "normalized_title": "ΒΙΝΤΕΟ: Η ΣΤΙΓΜΗ ΠΟΥ ΙΧ ΠΑΡΑΣΕΡΝΕΙ ΤΟΥΡΙΣΤΕΣ ΣΤΑ ΜΑΛΙΑ, «ΔΕΝ ΗΜΟΥΝ ΕΓΩ» ΛΕΕΙ Ο 29ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΑΠΟ ΤΗΝ ΠΑΛΑΙΣΤΙΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1868093/kalamata-nekri-46hroni-se-trohaio-tin-egateleipse-o-odigos-pou-tin-skotose/?utm_source=rss",
+      "title": "Καλαμάτα: Νεκρή 46χρονη σε τροχαίο, την εγκατέλειψε ο οδηγός που την σκότωσε",
+      "normalized_title": "ΚΑΛΑΜΑΤΑ: ΝΕΚΡΗ 46ΧΡΟΝΗ ΣΕ ΤΡΟΧΑΙΟ, ΤΗΝ ΕΓΚΑΤΕΛΕΙΨΕ Ο ΟΔΗΓΟΣ ΠΟΥ ΤΗΝ ΣΚΟΤΩΣΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868080/video-i-stigmi-pou-ih-parasernei-touristes-sta-malia-den-imoun-ego-leei-o-29hronos-odigos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868078/sullipsi-58hronou-gia-purkagia-se-fotovoltaiko-parko-sto-xulokastro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868093/kalamata-nekri-46hroni-se-trohaio-tin-egateleipse-o-odigos-pou-tin-skotose/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T11:30:13.147613+00:00"
+      "seen_at_utc": "2026-08-22T11:51:41.234955+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452439/politico-i-germania-shediazei-exoplistiko-programma-mamoyth-ypsoys-12-dis-eyro-gia-na-apotrepsei-ton-poytin/",
-      "title": "Politico: Η Γερμανία έχει στα σκαριά εξοπλιστικό πρόγραμμα «μαμούθ» ύψους 12 δισ. ευρώ για να αποτρέψει τον Πούτιν",
-      "normalized_title": "POLITICO: Η ΓΕΡΜΑΝΙΑ ΕΧΕΙ ΣΤΑ ΣΚΑΡΙΑ ΕΞΟΠΛΙΣΤΙΚΟ ΠΡΟΓΡΑΜΜΑ «ΜΑΜΟΥΘ» ΥΨΟΥΣ 12 ΔΙΣ. ΕΥΡΩ ΓΙΑ ΝΑ ΑΠΟΤΡΕΨΕΙ ΤΟΝ ΠΟΥΤΙΝ",
+      "url": "https://www.efsyn.gr/politiki/1452438/o-hristos-spirtzis-grafei-stin-ef-syn-afoy-den-miloyn-aytoi-poy-ofeiloyn/",
+      "title": "Ο Χρήστος Σπίρτζης γράφει στην «Εφ.Συν.»: Αφού δεν μιλούν αυτοί που οφείλουν…",
+      "normalized_title": "Ο ΧΡΗΣΤΟΣ ΣΠΙΡΤΖΗΣ ΓΡΑΦΕΙ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: ΑΦΟΥ ΔΕΝ ΜΙΛΟΥΝ ΑΥΤΟΙ ΠΟΥ ΟΦΕΙΛΟΥΝ…",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452439/politico-i-germania-shediazei-exoplistiko-programma-mamoyth-ypsoys-12-dis-eyro-gia-na-apotrepsei-ton-poytin/"
+        "https://www.efsyn.gr/politiki/1452438/o-hristos-spirtzis-grafei-stin-ef-syn-afoy-den-miloyn-aytoi-poy-ofeiloyn/"
       ],
-      "seen_at_utc": "2026-08-22T11:30:13.147578+00:00"
+      "seen_at_utc": "2026-08-22T11:51:41.234924+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/world/souidia-sto-stoxastro-tis-astynomias-diadiktyakes-koinotites-meta-tin-epithesi-me-spathi-se-sxoleio/",
-      "title": "Στο στόχαστρο της σουηδικής αστυνομίας διαδικτυακές κοινότητες μετά την επίθεση με σπαθί σε σχολείο",
-      "normalized_title": "ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΤΗΣ ΣΟΥΗΔΙΚΗΣ ΑΣΤΥΝΟΜΙΑΣ ΔΙΑΔΙΚΤΥΑΚΕΣ ΚΟΙΝΟΤΗΤΕΣ ΜΕΤΑ ΤΗΝ ΕΠΙΘΕΣΗ ΜΕ ΣΠΑΘΙ ΣΕ ΣΧΟΛΕΙΟ",
+      "url": "https://www.in.gr/2026/08/22/sports/football/super-league-o-nistroup-i-allagi-filosofias-kai-o-apolytos-stoxos-tou-panathinaikou/",
+      "title": "Super League: Ο Νίστρουπ, η αλλαγή φιλοσοφίας και ο απόλυτος στόχος του Παναθηναϊκού",
+      "normalized_title": "SUPER LEAGUE: Ο ΝΙΣΤΡΟΥΠ, Η ΑΛΛΑΓΗ ΦΙΛΟΣΟΦΙΑΣ ΚΑΙ Ο ΑΠΟΛΥΤΟΣ ΣΤΟΧΟΣ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/world/souidia-sto-stoxastro-tis-astynomias-diadiktyakes-koinotites-meta-tin-epithesi-me-spathi-se-sxoleio/",
-        "https://www.in.gr/matchcenter/5795364/",
-        "https://www.in.gr/2026/08/22/greece/pyrkagies-se-kitrino-synagermo-to-megalytero-meros-tis-xoras-tin-kyriaki/"
+        "https://www.in.gr/2026/08/22/sports/football/super-league-o-nistroup-i-allagi-filosofias-kai-o-apolytos-stoxos-tou-panathinaikou/",
+        "https://www.in.gr/2026/08/22/world/ispania-epta-traymaties-apo-sfodres-vroxoptoseis/"
       ],
-      "seen_at_utc": "2026-08-22T11:30:13.147533+00:00"
+      "seen_at_utc": "2026-08-22T11:51:41.234887+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T11:30:13.147704+00:00"
+  "updated_at_utc": "2026-08-22T11:51:41.235046+00:00"
 }
