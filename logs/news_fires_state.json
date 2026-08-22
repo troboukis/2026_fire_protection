@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564413803/giati-den-pao-diakopes-ton-aygoysto/",
-      "title": "Γιατί δεν πάω διακοπές τον Αύγουστο",
-      "normalized_title": "ΓΙΑΤΙ ΔΕΝ ΠΑΩ ΔΙΑΚΟΠΕΣ ΤΟΝ ΑΥΓΟΥΣΤΟ",
+      "url": "https://www.kathimerini.gr/society/564416233/stoys-41-vathmoys-i-thermokrasia-poy-katagrafikan-oi-ypsiloteres-times/",
+      "title": "Στους 41 βαθμούς η θερμοκρασία – Πού καταγράφηκαν οι υψηλότερες τιμές",
+      "normalized_title": "ΣΤΟΥΣ 41 ΒΑΘΜΟΥΣ Η ΘΕΡΜΟΚΡΑΣΙΑ – ΠΟΥ ΚΑΤΑΓΡΑΦΗΚΑΝ ΟΙ ΥΨΗΛΟΤΕΡΕΣ ΤΙΜΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564413803/giati-den-pao-diakopes-ton-aygoysto/",
-        "https://www.kathimerini.gr/society/564416200/chtypima-se-kykloma-narkotikon-sti-mykono-o-rolos-ton-melon-kai-ta-terastia-kerdi/"
+        "https://www.kathimerini.gr/society/564416233/stoys-41-vathmoys-i-thermokrasia-poy-katagrafikan-oi-ypsiloteres-times/",
+        "https://www.kathimerini.gr/athletics/analysis/564416224/oi-tesseris-megaloi-stin-afetiria-tis-superleague/"
       ],
-      "seen_at_utc": "2026-08-22T15:51:12.965614+00:00"
+      "seen_at_utc": "2026-08-22T16:17:07.150553+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,26 +1272,25 @@
       "seen_at_utc": "2026-08-22T15:51:12.965735+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452493/kaysonas-anoihtes-kai-klimatizomenes-tha-paramenoyn-oi-leshes-filias-toy-dimoy-athinaion-deite-se-poies-periohes/",
-      "title": "Καύσωνας στην Αθήνα: Ανοιχτές για τους πολίτες οι κλιματιζόμενες Λέσχες Φιλίας του δήμου – Πού ακριβώς βρίσκονται",
-      "normalized_title": "ΚΑΥΣΩΝΑΣ ΣΤΗΝ ΑΘΗΝΑ: ΑΝΟΙΧΤΕΣ ΓΙΑ ΤΟΥΣ ΠΟΛΙΤΕΣ ΟΙ ΚΛΙΜΑΤΙΖΟΜΕΝΕΣ ΛΕΣΧΕΣ ΦΙΛΙΑΣ ΤΟΥ ΔΗΜΟΥ – ΠΟΥ ΑΚΡΙΒΩΣ ΒΡΙΣΚΟΝΤΑΙ",
+      "url": "https://www.efsyn.gr/ellada/1452503/kaysonas-to-savvatokyriako-einai-mono-i-arhi-ti-provlepoyn-oi-meoteorologoi-gia-ayrio-kai-methayrio/",
+      "title": "Ακραία ζέστη: Το Σαββατοκύριακο είναι μόνο η αρχή – Τι προβλέπουν οι μεωτεωρολόγοι για αύριο και μεθαύριο",
+      "normalized_title": "ΑΚΡΑΙΑ ΖΕΣΤΗ: ΤΟ ΣΑΒΒΑΤΟΚΥΡΙΑΚΟ ΕΙΝΑΙ ΜΟΝΟ Η ΑΡΧΗ – ΤΙ ΠΡΟΒΛΕΠΟΥΝ ΟΙ ΜΕΩΤΕΩΡΟΛΟΓΟΙ ΓΙΑ ΑΥΡΙΟ ΚΑΙ ΜΕΘΑΥΡΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452493/kaysonas-anoihtes-kai-klimatizomenes-tha-paramenoyn-oi-leshes-filias-toy-dimoy-athinaion-deite-se-poies-periohes/"
+        "https://www.efsyn.gr/ellada/1452503/kaysonas-to-savvatokyriako-einai-mono-i-arhi-ti-provlepoyn-oi-meoteorologoi-gia-ayrio-kai-methayrio/"
       ],
-      "seen_at_utc": "2026-08-22T15:30:00.117589+00:00"
+      "seen_at_utc": "2026-08-22T16:17:07.150647+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/greece/apisteyto-skiniko-stis-spetses-elikoptero-prosgeionetai-se-paralia-sti-zogeria-synelifthi-o-pilotos/",
-      "title": "Απίστευτο σκηνικό στις Σπέτσες – Ελικόπτερο προσγειώνεται σε παραλία στη Ζωγεριά – Συνελήφθη ο πιλότος",
-      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΣΚΗΝΙΚΟ ΣΤΙΣ ΣΠΕΤΣΕΣ – ΕΛΙΚΟΠΤΕΡΟ ΠΡΟΣΓΕΙΩΝΕΤΑΙ ΣΕ ΠΑΡΑΛΙΑ ΣΤΗ ΖΩΓΕΡΙΑ – ΣΥΝΕΛΗΦΘΗ Ο ΠΙΛΟΤΟΣ",
+      "url": "https://www.in.gr/2026/08/22/economy/diethnis-oikonomia/kanadas-ton-xalyva-kai-ta-galaktokomika-proionta-tha-xtypisoun-metaksy-allon-ta-antipoina-gia-tous-dasmous-tramp/",
+      "title": "Καναδάς: Τον χάλυβα και τα γαλακτοκομικά προϊόντα θα χτυπήσουν μεταξύ άλλων τα αντίποινα για τους δασμούς Τραμπ",
+      "normalized_title": "ΚΑΝΑΔΑΣ: ΤΟΝ ΧΑΛΥΒΑ ΚΑΙ ΤΑ ΓΑΛΑΚΤΟΚΟΜΙΚΑ ΠΡΟΙΟΝΤΑ ΘΑ ΧΤΥΠΗΣΟΥΝ ΜΕΤΑΞΥ ΑΛΛΩΝ ΤΑ ΑΝΤΙΠΟΙΝΑ ΓΙΑ ΤΟΥΣ ΔΑΣΜΟΥΣ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/greece/apisteyto-skiniko-stis-spetses-elikoptero-prosgeionetai-se-paralia-sti-zogeria-synelifthi-o-pilotos/",
-        "https://www.in.gr/2026/08/22/sports/football/ston-olympiako-to-neo-megalo-asteri-tou-meksikanikou-podosfairou-armanto-gkonzales/",
-        "https://www.in.gr/2026/08/22/sports/football/aroma-elladas-stin-premier-league-meta-ton-tzoli-kai-o-tzolakis-pire-to-vraveio-tou-mvp/",
-        "https://www.in.gr/2026/08/22/world/anoiksate-to-kouti-tis-pandoras-skliro-minyma-poutin-stin-oukrania-gia-epitheseis-se-mi-stratiotikous-stoxous/"
+        "https://www.in.gr/2026/08/22/economy/diethnis-oikonomia/kanadas-ton-xalyva-kai-ta-galaktokomika-proionta-tha-xtypisoun-metaksy-allon-ta-antipoina-gia-tous-dasmous-tramp/",
+        "https://www.in.gr/2026/08/22/life/lgbtqi/zak-kostopoulos-simera-tha-itan-mera-xaras-grothia-sto-stomaxi-i-anartisi-tis-miteras-tou/",
+        "https://www.in.gr/2026/08/22/world/apoxorisan-apo-ti-voulgaria-dyo-amerikanika-aeroskafi-efodiasmou-meta-tin-entasi-me-to-iran/"
       ],
-      "seen_at_utc": "2026-08-22T15:51:12.965689+00:00"
+      "seen_at_utc": "2026-08-22T16:17:07.150613+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T15:51:12.965843+00:00"
+  "updated_at_utc": "2026-08-22T16:17:07.150716+00:00"
 }
