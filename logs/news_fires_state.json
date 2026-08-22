@@ -1,20 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564413989/stelios-ramfos-anoichti-aeikiniti-tolmiri-skepsi/",
-      "title": "Στέλιος Ράμφος: Ανοιχτή, αεικίνητη, τολμηρή σκέψη",
-      "normalized_title": "ΣΤΕΛΙΟΣ ΡΑΜΦΟΣ: ΑΝΟΙΧΤΗ, ΑΕΙΚΙΝΗΤΗ, ΤΟΛΜΗΡΗ ΣΚΕΨΗ",
+      "url": "https://www.kathimerini.gr/world/564415972/iaponia-egkateleipse-ton-7chrono-gio-toy-sto-oros-foytzi-gia-ores/",
+      "title": "Ιαπωνία: Εγκατέλειψε τον 7χρονο γιο του στο Όρος Φούτζι για ώρες",
+      "normalized_title": "ΙΑΠΩΝΙΑ: ΕΓΚΑΤΕΛΕΙΨΕ ΤΟΝ 7ΧΡΟΝΟ ΓΙΟ ΤΟΥ ΣΤΟ ΟΡΟΣ ΦΟΥΤΖΙ ΓΙΑ ΩΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564413989/stelios-ramfos-anoichti-aeikiniti-tolmiri-skepsi/",
-        "https://www.kathimerini.gr/world/564415948/n-afriki-nekros-apo-pyrovolismoys-o-pagkosmios-protathlitis-pygmachias-zolani-tete/",
-        "https://www.kathimerini.gr/opinion/564413737/i-askisi-ton-tekmirion/",
-        "https://www.kathimerini.gr/k/k-magazine/564411355/astamatiti-drasi/",
-        "https://www.kathimerini.gr/opinion/564414142/kateynasmos-i-sygkroysi/",
-        "https://www.kathimerini.gr/opinion/564413971/i-diafthora-ton-apo-kato/",
-        "https://www.kathimerini.gr/opinion/564413734/oi-aoratoi-cheimones-sta-nisia/",
-        "https://www.kathimerini.gr/opinion/564413818/polemos-entyposeon/"
+        "https://www.kathimerini.gr/world/564415972/iaponia-egkateleipse-ton-7chrono-gio-toy-sto-oros-foytzi-gia-ores/",
+        "https://www.kathimerini.gr/society/564415969/kalavryta-pyrovolisan-skylo-me-karampina-vrethikan-45-skagia-sto-soma-toy/"
       ],
-      "seen_at_utc": "2026-08-22T10:17:03.857641+00:00"
+      "seen_at_utc": "2026-08-22T10:51:13.127741+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1275,24 +1269,25 @@
       "seen_at_utc": "2026-08-22T10:29:59.321591+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452415/vasilakopoylos-gia-io-dytikoy-neiloy-koryfosi-gia-akomi-dyo-me-treis-evdomades-poioi-kindyneyoyn-perissotero/",
-      "title": "Βασιλακόπουλος για ιό Δυτικού Νείλου: Κορύφωση για ακόμη δύο με τρεις εβδομάδες – Ποιοι κινδυνεύουν περισσότερο",
-      "normalized_title": "ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ ΓΙΑ ΙΟ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΚΟΡΥΦΩΣΗ ΓΙΑ ΑΚΟΜΗ ΔΥΟ ΜΕ ΤΡΕΙΣ ΕΒΔΟΜΑΔΕΣ – ΠΟΙΟΙ ΚΙΝΔΥΝΕΥΟΥΝ ΠΕΡΙΣΣΟΤΕΡΟ",
+      "url": "https://www.efsyn.gr/ellada/1452424/volos-fotia-se-ergastirio-glypton-eikones/",
+      "title": "Βόλος: Φωτιά σε εργαστήριο γλυπτών [εικόνες]",
+      "normalized_title": "ΒΟΛΟΣ: ΦΩΤΙΑ ΣΕ ΕΡΓΑΣΤΗΡΙΟ ΓΛΥΠΤΩΝ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452415/vasilakopoylos-gia-io-dytikoy-neiloy-koryfosi-gia-akomi-dyo-me-treis-evdomades-poioi-kindyneyoyn-perissotero/"
+        "https://www.efsyn.gr/ellada/1452424/volos-fotia-se-ergastirio-glypton-eikones/"
       ],
-      "seen_at_utc": "2026-08-22T10:29:59.321549+00:00"
+      "seen_at_utc": "2026-08-22T10:51:13.127834+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/sports/football/super-league-me-menti-kai-liftingk-sto-roster-gia-epistrofi-stin-koryfi/",
-      "title": "Super League: Με «Μέντι» και… λίφτινγκ στο ρόστερ για επιστροφή στην κορυφή",
-      "normalized_title": "SUPER LEAGUE: ΜΕ «ΜΕΝΤΙ» ΚΑΙ… ΛΙΦΤΙΝΓΚ ΣΤΟ ΡΟΣΤΕΡ ΓΙΑ ΕΠΙΣΤΡΟΦΗ ΣΤΗΝ ΚΟΡΥΦΗ",
+      "url": "https://www.in.gr/2026/08/22/greece/kato-axaia-frouroumenos-nosileyetai-o-53xronos-meta-to-thanatiforo-troxaio-thrinos-gia-tin-46xroni/",
+      "title": "Φρουρούμενος νοσηλεύεται ο 53χρονος μετά το θανατηφόρο τροχαίο στην Κάτω Αχαΐα - Θρήνος για την 46χρονη Ελένη",
+      "normalized_title": "ΦΡΟΥΡΟΥΜΕΝΟΣ ΝΟΣΗΛΕΥΕΤΑΙ Ο 53ΧΡΟΝΟΣ ΜΕΤΑ ΤΟ ΘΑΝΑΤΗΦΟΡΟ ΤΡΟΧΑΙΟ ΣΤΗΝ ΚΑΤΩ ΑΧΑΙΑ - ΘΡΗΝΟΣ ΓΙΑ ΤΗΝ 46ΧΡΟΝΗ ΕΛΕΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/sports/football/super-league-me-menti-kai-liftingk-sto-roster-gia-epistrofi-stin-koryfi/",
-        "https://www.in.gr/2026/08/22/english-edition/tourism-revenue-rises-14-8-in-first-half-of-2026/"
+        "https://www.in.gr/2026/08/22/greece/kato-axaia-frouroumenos-nosileyetai-o-53xronos-meta-to-thanatiforo-troxaio-thrinos-gia-tin-46xroni/",
+        "https://www.in.gr/2026/08/22/sports/football/vasikos-o-tzolakis-stin-premiera-tis-xal-kontra-sti-giounaitent/",
+        "https://www.in.gr/2026/08/22/world/iran-edose-adeia-se-irakina-petrelaiofora-na-pernoun-apo-ta-stena-tou-ormouz/"
       ],
-      "seen_at_utc": "2026-08-22T10:29:59.321492+00:00"
+      "seen_at_utc": "2026-08-22T10:51:13.127808+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T10:29:59.321657+00:00"
+  "updated_at_utc": "2026-08-22T10:51:13.127904+00:00"
 }
