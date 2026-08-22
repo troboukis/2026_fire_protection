@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564416245/poytin-to-kathestos-toy-kievoy-anoixe-to-koyti-tis-pandoras/",
-      "title": "Πούτιν: Το καθεστώς του Κιέβου άνοιξε «το κουτί της Πανδώρας»",
-      "normalized_title": "ΠΟΥΤΙΝ: ΤΟ ΚΑΘΕΣΤΩΣ ΤΟΥ ΚΙΕΒΟΥ ΑΝΟΙΞΕ «ΤΟ ΚΟΥΤΙ ΤΗΣ ΠΑΝΔΩΡΑΣ»",
+      "url": "https://www.kathimerini.gr/politics/564416251/epikoinonia-gerapetriti-me-ton-ypex-tis-aigyptoy-sto-epikentro-energeia-kai-ependyseis/",
+      "title": "Επικοινωνία Γεραπετρίτη με τον ΥΠΕΞ της Αιγύπτου – Στο επίκεντρο ενέργεια και επενδύσεις",
+      "normalized_title": "ΕΠΙΚΟΙΝΩΝΙΑ ΓΕΡΑΠΕΤΡΙΤΗ ΜΕ ΤΟΝ ΥΠΕΞ ΤΗΣ ΑΙΓΥΠΤΟΥ – ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΕΝΕΡΓΕΙΑ ΚΑΙ ΕΠΕΝΔΥΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564416245/poytin-to-kathestos-toy-kievoy-anoixe-to-koyti-tis-pandoras/"
+        "https://www.kathimerini.gr/politics/564416251/epikoinonia-gerapetriti-me-ton-ypex-tis-aigyptoy-sto-epikentro-energeia-kai-ependyseis/"
       ],
-      "seen_at_utc": "2026-08-22T16:30:01.994540+00:00"
+      "seen_at_utc": "2026-08-22T16:51:06.493049+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,25 +1271,31 @@
       "seen_at_utc": "2026-08-22T15:51:12.965735+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452503/kaysonas-to-savvatokyriako-einai-mono-i-arhi-ti-provlepoyn-oi-meoteorologoi-gia-ayrio-kai-methayrio/",
-      "title": "Ακραία ζέστη: Το Σαββατοκύριακο είναι μόνο η αρχή – Τι προβλέπουν οι μεωτεωρολόγοι για αύριο και μεθαύριο",
-      "normalized_title": "ΑΚΡΑΙΑ ΖΕΣΤΗ: ΤΟ ΣΑΒΒΑΤΟΚΥΡΙΑΚΟ ΕΙΝΑΙ ΜΟΝΟ Η ΑΡΧΗ – ΤΙ ΠΡΟΒΛΕΠΟΥΝ ΟΙ ΜΕΩΤΕΩΡΟΛΟΓΟΙ ΓΙΑ ΑΥΡΙΟ ΚΑΙ ΜΕΘΑΥΡΙΟ",
+      "url": "https://www.efsyn.gr/ellada/1452511/mykonos-neo-kykloma-diakinisis-narkotikon-exarthrose-i-astynomia-kerdi-pano-apo-170-hil-eyro/",
+      "title": "Μύκονος: Νέο κύκλωμα διακίνησης ναρκωτικών εξάρθρωσε η αστυνομία – Κέρδη πάνω από 170 χιλ. ευρώ",
+      "normalized_title": "ΜΥΚΟΝΟΣ: ΝΕΟ ΚΥΚΛΩΜΑ ΔΙΑΚΙΝΗΣΗΣ ΝΑΡΚΩΤΙΚΩΝ ΕΞΑΡΘΡΩΣΕ Η ΑΣΤΥΝΟΜΙΑ – ΚΕΡΔΗ ΠΑΝΩ ΑΠΟ 170 ΧΙΛ. ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452503/kaysonas-to-savvatokyriako-einai-mono-i-arhi-ti-provlepoyn-oi-meoteorologoi-gia-ayrio-kai-methayrio/"
+        "https://www.efsyn.gr/ellada/1452511/mykonos-neo-kykloma-diakinisis-narkotikon-exarthrose-i-astynomia-kerdi-pano-apo-170-hil-eyro/",
+        "https://www.efsyn.gr/kosmos/1452321/ipa-mia-evdomada-me-nikes-thayma-gia-toys-proodeytikoys/",
+        "https://www.efsyn.gr/politiki/1452508/gerapetritis-gia-exelixeis-me-toyrkia-theloyme-irema-nera-alla-eimaste-etoimoi-gia-ola/"
       ],
-      "seen_at_utc": "2026-08-22T16:17:07.150647+00:00"
+      "seen_at_utc": "2026-08-22T16:51:06.493134+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/sports/football/velio-kai-petris-stin-endekada-tou-ari-kontra-stin-kalamata/",
-      "title": "Βέλιο και Πέτρις στην ενδεκάδα του ‘Αρη κόντρα στην Καλαμάτα",
-      "normalized_title": "ΒΕΛΙΟ ΚΑΙ ΠΕΤΡΙΣ ΣΤΗΝ ΕΝΔΕΚΑΔΑ ΤΟΥ ‘ΑΡΗ ΚΟΝΤΡΑ ΣΤΗΝ ΚΑΛΑΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/22/sports/football/aek-i-arxiki-11ada-gia-to-paixnidi-me-ton-irakli/",
+      "title": "ΑΕΚ: Η αρχική 11άδα για το παιχνίδι με τον Ηρακλή",
+      "normalized_title": "ΑΕΚ: Η ΑΡΧΙΚΗ 11ΑΔΑ ΓΙΑ ΤΟ ΠΑΙΧΝΙΔΙ ΜΕ ΤΟΝ ΗΡΑΚΛΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/sports/football/velio-kai-petris-stin-endekada-tou-ari-kontra-stin-kalamata/",
-        "https://www.in.gr/2026/08/22/sports/football/to-entyposiako-vinteo-gia-ton-gkonsales-to-pepromeno-mou-einai-o-olympiakos/",
-        "https://www.in.gr/2026/08/22/world/polonia-andras-pariggeile-300-pitses-os-farsa-tora-kindyneyei-me-poini-fylakisis-eos-kai-okto-eton/"
+        "https://www.in.gr/2026/08/22/sports/football/aek-i-arxiki-11ada-gia-to-paixnidi-me-ton-irakli/",
+        "https://www.in.gr/2026/08/22/greece/anatrixiastiko-theama-stin-eyvoia-xiliades-podia-apo-kotes-kai-galopoules-ksevrastikan-stin-akti/",
+        "https://www.in.gr/matchcenter/5943226/",
+        "https://www.in.gr/matchcenter/5943225/",
+        "https://www.in.gr/2026/08/22/sports/on-field/to-minyma-gkonsales-ston-menti/",
+        "https://www.in.gr/2026/08/22/greece/kaysonas-aggikse-tous-41-vathmous-o-ydrargyros-se-poies-perioxes-simeiothikan-oi-ypsiloteres-thermokrasies/",
+        "https://www.in.gr/2026/08/22/sports/football/premier-league-nikifora-sto-neo-protathlima-everton-2-0-ipsouits-2-1-kai-lints-1-0/"
       ],
-      "seen_at_utc": "2026-08-22T16:30:01.994588+00:00"
+      "seen_at_utc": "2026-08-22T16:51:06.493087+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T16:30:01.994669+00:00"
+  "updated_at_utc": "2026-08-22T16:51:06.493205+00:00"
 }
