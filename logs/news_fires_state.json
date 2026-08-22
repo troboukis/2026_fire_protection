@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564414232/istoria-184-eton-gia-tis-trapezes-sti-santorini/",
-      "title": "Ιστορία 184 ετών για τις τράπεζες στη Σαντορίνη",
-      "normalized_title": "ΙΣΤΟΡΙΑ 184 ΕΤΩΝ ΓΙΑ ΤΙΣ ΤΡΑΠΕΖΕΣ ΣΤΗ ΣΑΝΤΟΡΙΝΗ",
+      "url": "https://www.kathimerini.gr/economy/local/564414202/oi-trypes-sto-systima-tis-psifiakis-kartas-ergasias/",
+      "title": "Οι τρύπες στο σύστημα της ψηφιακής κάρτας εργασίας",
+      "normalized_title": "ΟΙ ΤΡΥΠΕΣ ΣΤΟ ΣΥΣΤΗΜΑ ΤΗΣ ΨΗΦΙΑΚΗΣ ΚΑΡΤΑΣ ΕΡΓΑΣΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564414232/istoria-184-eton-gia-tis-trapezes-sti-santorini/"
+        "https://www.kathimerini.gr/economy/local/564414202/oi-trypes-sto-systima-tis-psifiakis-kartas-ergasias/",
+        "https://www.kathimerini.gr/society/564415888/epeisodiaki-syllipsi-diakiniti-ekryve-aniliko-sto-port-mpagkaz/",
+        "https://www.kathimerini.gr/society/564415879/thessaloniki-syllipsi-60chronoy-me-erythra-aggelia/"
       ],
-      "seen_at_utc": "2026-08-22T07:51:08.350503+00:00"
+      "seen_at_utc": "2026-08-22T08:17:00.031884+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1867997/erasitehniko-skafos-vuthistike-sto-limanaki-tis-neas-horas-sta-hania/?utm_source=rss",
-      "title": "Ερασιτεχνικό σκάφος βυθίστηκε στο λιμανάκι της Νέας Χώρας στα Χανιά",
-      "normalized_title": "ΕΡΑΣΙΤΕΧΝΙΚΟ ΣΚΑΦΟΣ ΒΥΘΙΣΤΗΚΕ ΣΤΟ ΛΙΜΑΝΑΚΙ ΤΗΣ ΝΕΑΣ ΧΩΡΑΣ ΣΤΑ ΧΑΝΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1868016/enas-60hronos-allodapos-sunelifthi-sti-thessaloniki-eihe-ekdothei-kai-eruthra-aggelia-tis-interpol/?utm_source=rss",
+      "title": "Ένας 60χρονος αλλοδαπός συνελήφθη στη Θεσσαλονίκη, είχε εκδοθεί και Ερυθρά Αγγελία της Interpol",
+      "normalized_title": "ΕΝΑΣ 60ΧΡΟΝΟΣ ΑΛΛΟΔΑΠΟΣ ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΕΙΧΕ ΕΚΔΟΘΕΙ ΚΑΙ ΕΡΥΘΡΑ ΑΓΓΕΛΙΑ ΤΗΣ INTERPOL",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1867997/erasitehniko-skafos-vuthistike-sto-limanaki-tis-neas-horas-sta-hania/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868016/enas-60hronos-allodapos-sunelifthi-sti-thessaloniki-eihe-ekdothei-kai-eruthra-aggelia-tis-interpol/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T07:51:08.350627+00:00"
+      "seen_at_utc": "2026-08-22T08:17:00.032000+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/nisides/1451350/eytyhis-mpitsakis-sto-myalo-stin-psyhi-stin-kardia-mas-pano-ap-ola/",
-      "title": "Ευτύχης Μπιτσάκης: Στο μυαλό, στην ψυχή, στην καρδιά μας πάνω απ’ όλα",
-      "normalized_title": "ΕΥΤΥΧΗΣ ΜΠΙΤΣΑΚΗΣ: ΣΤΟ ΜΥΑΛΟ, ΣΤΗΝ ΨΥΧΗ, ΣΤΗΝ ΚΑΡΔΙΑ ΜΑΣ ΠΑΝΩ ΑΠ’ ΟΛΑ",
+      "url": "https://www.efsyn.gr/stiles/1452272/diplopenies-tramp/",
+      "title": "Διπλοπενιές Τραμπ",
+      "normalized_title": "ΔΙΠΛΟΠΕΝΙΕΣ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.efsyn.gr/nisides/1451350/eytyhis-mpitsakis-sto-myalo-stin-psyhi-stin-kardia-mas-pano-ap-ola/",
-        "https://www.efsyn.gr/gallery/mia-eikona-328-lexeis/",
-        "https://www.efsyn.gr/gallery/i-anatomia-enos-amerikanoy-oligarhi/",
-        "https://www.efsyn.gr/gallery/skliroi-adexioi-kai-afragkoi/"
+        "https://www.efsyn.gr/stiles/1452272/diplopenies-tramp/",
+        "https://www.efsyn.gr/nisides/1451324/i-politistiki-atzenta-tis-evdomadas-23-08-29-08-26/",
+        "https://www.efsyn.gr/ellada/1452358/ahaia-epestrefe-apo-ti-doyleia-tis-i-46hroni-i-moiraia-diadromi-stin-palaia-ethniki-patron-pyrgoy/"
       ],
-      "seen_at_utc": "2026-08-22T07:51:08.350599+00:00"
+      "seen_at_utc": "2026-08-22T08:17:00.031964+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/greece/kalavryta-pyrovolithike-skylos-se-ayli-spitiou-sto-soma-tou-vrethikan-pano-apo-45-skagia/",
-      "title": "Πυροβολήθηκε σκύλος σε αυλή σπιτιού - Στο σώμα του βρέθηκαν πάνω από 45 σκάγια",
-      "normalized_title": "ΠΥΡΟΒΟΛΗΘΗΚΕ ΣΚΥΛΟΣ ΣΕ ΑΥΛΗ ΣΠΙΤΙΟΥ - ΣΤΟ ΣΩΜΑ ΤΟΥ ΒΡΕΘΗΚΑΝ ΠΑΝΩ ΑΠΟ 45 ΣΚΑΓΙΑ",
+      "url": "https://www.in.gr/2026/08/22/world/mpali-sti-fylaki-gia-enan-xrono-elvetos-touristas-pou-paraviase-tin-imera-tis-siopis/",
+      "title": "Στη φυλακή για έναν χρόνο, τουρίστας που «μίλησε» την «Ημέρα της Σιωπής» στο Μπαλί",
+      "normalized_title": "ΣΤΗ ΦΥΛΑΚΗ ΓΙΑ ΕΝΑΝ ΧΡΟΝΟ, ΤΟΥΡΙΣΤΑΣ ΠΟΥ «ΜΙΛΗΣΕ» ΤΗΝ «ΗΜΕΡΑ ΤΗΣ ΣΙΩΠΗΣ» ΣΤΟ ΜΠΑΛΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/greece/kalavryta-pyrovolithike-skylos-se-ayli-spitiou-sto-soma-tou-vrethikan-pano-apo-45-skagia/",
-        "https://www.in.gr/2026/08/22/world/douvlino-skeftontai-ta-likes-to-neo-challenge-pou-skotose-pente-efiva-agoria/"
+        "https://www.in.gr/2026/08/22/world/mpali-sti-fylaki-gia-enan-xrono-elvetos-touristas-pou-paraviase-tin-imera-tis-siopis/",
+        "https://www.in.gr/2026/08/22/go-fun/fizz/mprant-pit-kai-i-18xroni-kori-tou-vivian-zitise-na-afairesei-to-eponymo-tou-patera-tis/",
+        "https://www.in.gr/2026/08/22/politics/i-amfisvitisi-nision-kai-vraxonisidon-apo-tin-tourkia-kai-to-endexomeno-neou-gyrou-entasis/",
+        "https://www.in.gr/2026/08/22/english-edition/what-greek-influencers-earn-and-why-tax-authorities-are-watching/",
+        "https://www.in.gr/2026/08/22/sports/basketball/prova-prokrimatikon-gia-tin-ethniki-kontra-stin-polonia/"
       ],
-      "seen_at_utc": "2026-08-22T07:51:08.350556+00:00"
+      "seen_at_utc": "2026-08-22T08:17:00.031939+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T07:51:08.350697+00:00"
+  "updated_at_utc": "2026-08-22T08:17:00.032102+00:00"
 }
