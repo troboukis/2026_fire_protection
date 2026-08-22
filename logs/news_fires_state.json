@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564413869/pairnoyn-ta-voyna-anti-na-mpoyn-se-karavia-gia-tis-kyklades/",
-      "title": "«Παίρνουν τα βουνά» αντί να μπουν σε καράβια για τις Κυκλάδες",
-      "normalized_title": "«ΠΑΙΡΝΟΥΝ ΤΑ ΒΟΥΝΑ» ΑΝΤΙ ΝΑ ΜΠΟΥΝ ΣΕ ΚΑΡΑΒΙΑ ΓΙΑ ΤΙΣ ΚΥΚΛΑΔΕΣ",
+      "url": "https://www.kathimerini.gr/culture/564416281/atlantis-telos-epochis-gia-ton-istoriko-kinimatografo-katedafistike-meta-apo-70-chronia-leitoyrgias/",
+      "title": "Ατλαντίς: Τέλος εποχής για τον ιστορικό κινηματογράφο – Κατεδαφίστηκε μετά από 70 χρόνια λειτουργίας",
+      "normalized_title": "ΑΤΛΑΝΤΙΣ: ΤΕΛΟΣ ΕΠΟΧΗΣ ΓΙΑ ΤΟΝ ΙΣΤΟΡΙΚΟ ΚΙΝΗΜΑΤΟΓΡΑΦΟ – ΚΑΤΕΔΑΦΙΣΤΗΚΕ ΜΕΤΑ ΑΠΟ 70 ΧΡΟΝΙΑ ΛΕΙΤΟΥΡΓΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564413869/pairnoyn-ta-voyna-anti-na-mpoyn-se-karavia-gia-tis-kyklades/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564413836/exelixeis-me-epikentro-ti-moni-sina/"
+        "https://www.kathimerini.gr/culture/564416281/atlantis-telos-epochis-gia-ton-istoriko-kinimatografo-katedafistike-meta-apo-70-chronia-leitoyrgias/",
+        "https://www.kathimerini.gr/society/564416389/spetses-sakidio-me-nakrotika-sto-simeio-prosgeiosis-toy-elikopteroy-synelifthi-39chronos/"
       ],
-      "seen_at_utc": "2026-08-22T18:51:15.637706+00:00"
+      "seen_at_utc": "2026-08-22T19:17:05.413619+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868197/sunelifthi-enas-epivatis-tou-elikopterou-stis-spetses-ton-eidan-na-petaei-ena-sakoulaki-me-narkotika/?utm_source=rss",
-      "title": "Συνελήφθη επιβάτης του ελικοπτέρου στις Σπέτσες, τον είδαν να πετάει ένα σακουλάκι με ναρκωτικά",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΕΠΙΒΑΤΗΣ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΙΣ ΣΠΕΤΣΕΣ, ΤΟΝ ΕΙΔΑΝ ΝΑ ΠΕΤΑΕΙ ΕΝΑ ΣΑΚΟΥΛΑΚΙ ΜΕ ΝΑΡΚΩΤΙΚΑ",
+      "url": "https://www.protothema.gr/greece/article/1868204/sunelifthi-adidimarhos-meta-ti-megali-purkagia-sti-limno-sto-mikroskopio-anexelegti-homateri/?utm_source=rss",
+      "title": "Συνελήφθη αντιδήμαρχος για την φωτιά στη Λήμνο, στο «μικροσκόπιο» ανεξέλεγκτη χωματερή",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΑΝΤΙΔΗΜΑΡΧΟΣ ΓΙΑ ΤΗΝ ΦΩΤΙΑ ΣΤΗ ΛΗΜΝΟ, ΣΤΟ «ΜΙΚΡΟΣΚΟΠΙΟ» ΑΝΕΞΕΛΕΓΚΤΗ ΧΩΜΑΤΕΡΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868197/sunelifthi-enas-epivatis-tou-elikopterou-stis-spetses-ton-eidan-na-petaei-ena-sakoulaki-me-narkotika/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868195/horis-aisthiseis-anasurthike-56hronos-apo-thalassia-periohi-sti-halkidiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868204/sunelifthi-adidimarhos-meta-ti-megali-purkagia-sti-limno-sto-mikroskopio-anexelegti-homateri/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T18:16:57.979426+00:00"
+      "seen_at_utc": "2026-08-22T19:17:05.413758+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452543/halkidiki-56hronos-anasyrthike-nekros-apo-ti-thalassa/",
-      "title": "Χαλκιδική: 56χρονος ανασύρθηκε νεκρός από τη θάλασσα",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: 56ΧΡΟΝΟΣ ΑΝΑΣΥΡΘΗΚΕ ΝΕΚΡΟΣ ΑΠΟ ΤΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1452551/epivlitiki-premiera-gia-tin-protathlitria-aek-me-4-0-kata-toy-irakli/",
+      "title": "Επιβλητική πρεμιέρα για την πρωταθλήτρια ΑΕΚ με 4-0 κατά του Ηρακλή",
+      "normalized_title": "ΕΠΙΒΛΗΤΙΚΗ ΠΡΕΜΙΕΡΑ ΓΙΑ ΤΗΝ ΠΡΩΤΑΘΛΗΤΡΙΑ ΑΕΚ ΜΕ 4-0 ΚΑΤΑ ΤΟΥ ΗΡΑΚΛΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452543/halkidiki-56hronos-anasyrthike-nekros-apo-ti-thalassa/"
+        "https://www.efsyn.gr/athlitismos/1452551/epivlitiki-premiera-gia-tin-protathlitria-aek-me-4-0-kata-toy-irakli/",
+        "https://www.efsyn.gr/kosmos/1452548/syria-traymaties-se-epithesi-me-ekriktika-enantion-leoforeioy-ton-dynameon-asfaleias-konta-sti-damasko/",
+        "https://www.efsyn.gr/kosmos/1452545/apeiles-poytin-i-oykrania-anoixe-to-koyti-tis-pandoras-me-ta-pligmata-tis-se-oikonomikoys-stohoys/"
       ],
-      "seen_at_utc": "2026-08-22T18:51:15.637799+00:00"
+      "seen_at_utc": "2026-08-22T19:17:05.413723+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/world/pos-i-yperoxi-tis-eyropaikis-poiotitas-zois-metatrepetai-se-axilleio-pterna-gia-tin-ipeiro/",
-      "title": "Πώς η υπεροχή της ευρωπαϊκής ποιότητας ζωής μετατρέπεται σε αχίλλειο πτέρνα για την ήπειρο",
-      "normalized_title": "ΠΩΣ Η ΥΠΕΡΟΧΗ ΤΗΣ ΕΥΡΩΠΑΙΚΗΣ ΠΟΙΟΤΗΤΑΣ ΖΩΗΣ ΜΕΤΑΤΡΕΠΕΤΑΙ ΣΕ ΑΧΙΛΛΕΙΟ ΠΤΕΡΝΑ ΓΙΑ ΤΗΝ ΗΠΕΙΡΟ",
+      "url": "https://www.in.gr/2026/08/22/in-science/ai/mporei-i-texniti-noimosyni-na-mas-voithisei-na-ksanasyndethoume-me-ton-pragmatiko-kosmo/",
+      "title": "Μπορεί η τεχνητή νοημοσύνη να μας βοηθήσει να ξανασυνδεθούμε με τον πραγματικό κόσμο;",
+      "normalized_title": "ΜΠΟΡΕΙ Η ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ ΝΑ ΜΑΣ ΒΟΗΘΗΣΕΙ ΝΑ ΞΑΝΑΣΥΝΔΕΘΟΥΜΕ ΜΕ ΤΟΝ ΠΡΑΓΜΑΤΙΚΟ ΚΟΣΜΟ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/world/pos-i-yperoxi-tis-eyropaikis-poiotitas-zois-metatrepetai-se-axilleio-pterna-gia-tin-ipeiro/",
-        "https://www.in.gr/2026/08/22/sports/football/megali-eykairia-tou-olympiakou-me-el-kaampi-vid/",
-        "https://www.in.gr/matchcenter/5749644/",
-        "https://www.in.gr/2026/08/22/world/vretanos-dimosiografos-ti-rotise-treis-fores-mia-evraiki-zoi-aksizei-oso-mia-palaistiniaki-den-apantise/"
+        "https://www.in.gr/2026/08/22/in-science/ai/mporei-i-texniti-noimosyni-na-mas-voithisei-na-ksanasyndethoume-me-ton-pragmatiko-kosmo/",
+        "https://www.in.gr/2026/08/22/sports/football/kalamata-aris-2-3-o-fampiano-ekane-tin-anatropi-me-gkol-sto-89-kai-sto-93/",
+        "https://www.in.gr/2026/08/22/sports/football/kali-fasi-gia-ton-olympiako-me-oraio-faoul-tou-fortouni-vid/",
+        "https://www.in.gr/2026/08/22/go-fun/fizz/olethria-sxesi-to-kryfo-plano-me-ta-gennitika-organa-tou-maikl-ntagklas-i-apokalypsi-tou-skinotheti/",
+        "https://www.in.gr/2026/08/22/sports/football/aek-iraklis-4-0-eykoli-premiera-gia-tin-enosi-me-ton-giovits-na-ektelei-dis/"
       ],
-      "seen_at_utc": "2026-08-22T18:51:15.637768+00:00"
+      "seen_at_utc": "2026-08-22T19:17:05.413689+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T18:51:15.637878+00:00"
+  "updated_at_utc": "2026-08-22T19:17:05.413858+00:00"
 }
