@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564414211/elegchoi-se-225-000-metavivaseis-akiniton/",
-      "title": "Ελεγχοι σε 225.000 μεταβιβάσεις ακινήτων",
-      "normalized_title": "ΕΛΕΓΧΟΙ ΣΕ 225.000 ΜΕΤΑΒΙΒΑΣΕΙΣ ΑΚΙΝΗΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564413869/pairnoyn-ta-voyna-anti-na-mpoyn-se-karavia-gia-tis-kyklades/",
+      "title": "«Παίρνουν τα βουνά» αντί να μπουν σε καράβια για τις Κυκλάδες",
+      "normalized_title": "«ΠΑΙΡΝΟΥΝ ΤΑ ΒΟΥΝΑ» ΑΝΤΙ ΝΑ ΜΠΟΥΝ ΣΕ ΚΑΡΑΒΙΑ ΓΙΑ ΤΙΣ ΚΥΚΛΑΔΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564414211/elegchoi-se-225-000-metavivaseis-akiniton/"
+        "https://www.kathimerini.gr/society/reportaz/564413869/pairnoyn-ta-voyna-anti-na-mpoyn-se-karavia-gia-tis-kyklades/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564413836/exelixeis-me-epikentro-ti-moni-sina/"
       ],
-      "seen_at_utc": "2026-08-22T18:29:55.454039+00:00"
+      "seen_at_utc": "2026-08-22T18:51:15.637706+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,24 +1270,26 @@
       "seen_at_utc": "2026-08-22T18:16:57.979426+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452537/dafni-poio-istoriko-sinema-tis-periohis-protoleitoyrgise-to-1950-kai-simera-katedafizetai-vinteo/",
-      "title": "Δάφνη: Ποιο ιστορικό σινεμά της περιοχής πρωτολειτούργησε το 1950 και σήμερα κατεδαφίζεται [βίντεο]",
-      "normalized_title": "ΔΑΦΝΗ: ΠΟΙΟ ΙΣΤΟΡΙΚΟ ΣΙΝΕΜΑ ΤΗΣ ΠΕΡΙΟΧΗΣ ΠΡΩΤΟΛΕΙΤΟΥΡΓΗΣΕ ΤΟ 1950 ΚΑΙ ΣΗΜΕΡΑ ΚΑΤΕΔΑΦΙΖΕΤΑΙ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1452543/halkidiki-56hronos-anasyrthike-nekros-apo-ti-thalassa/",
+      "title": "Χαλκιδική: 56χρονος ανασύρθηκε νεκρός από τη θάλασσα",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: 56ΧΡΟΝΟΣ ΑΝΑΣΥΡΘΗΚΕ ΝΕΚΡΟΣ ΑΠΟ ΤΗ ΘΑΛΑΣΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452537/dafni-poio-istoriko-sinema-tis-periohis-protoleitoyrgise-to-1950-kai-simera-katedafizetai-vinteo/"
+        "https://www.efsyn.gr/ellada/1452543/halkidiki-56hronos-anasyrthike-nekros-apo-ti-thalassa/"
       ],
-      "seen_at_utc": "2026-08-22T18:29:55.454161+00:00"
+      "seen_at_utc": "2026-08-22T18:51:15.637799+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/greece/sifnos-to-moiraio-elikoptero-eixe-ypostei-zimia-sto-piso-meros-prin-dyo-mines-ti-synevi-kai-ti-eksetazoun-oi-arxes/",
-      "title": "Σίφνος: Το μοιραίο ελικόπτερο είχε υποστεί ζημιά στο πίσω μέρος πριν δύο μήνες – Τι συνέβη και τι εξετάζουν οι Αρχές",
-      "normalized_title": "ΣΙΦΝΟΣ: ΤΟ ΜΟΙΡΑΙΟ ΕΛΙΚΟΠΤΕΡΟ ΕΙΧΕ ΥΠΟΣΤΕΙ ΖΗΜΙΑ ΣΤΟ ΠΙΣΩ ΜΕΡΟΣ ΠΡΙΝ ΔΥΟ ΜΗΝΕΣ – ΤΙ ΣΥΝΕΒΗ ΚΑΙ ΤΙ ΕΞΕΤΑΖΟΥΝ ΟΙ ΑΡΧΕΣ",
+      "url": "https://www.in.gr/2026/08/22/world/pos-i-yperoxi-tis-eyropaikis-poiotitas-zois-metatrepetai-se-axilleio-pterna-gia-tin-ipeiro/",
+      "title": "Πώς η υπεροχή της ευρωπαϊκής ποιότητας ζωής μετατρέπεται σε αχίλλειο πτέρνα για την ήπειρο",
+      "normalized_title": "ΠΩΣ Η ΥΠΕΡΟΧΗ ΤΗΣ ΕΥΡΩΠΑΙΚΗΣ ΠΟΙΟΤΗΤΑΣ ΖΩΗΣ ΜΕΤΑΤΡΕΠΕΤΑΙ ΣΕ ΑΧΙΛΛΕΙΟ ΠΤΕΡΝΑ ΓΙΑ ΤΗΝ ΗΠΕΙΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/greece/sifnos-to-moiraio-elikoptero-eixe-ypostei-zimia-sto-piso-meros-prin-dyo-mines-ti-synevi-kai-ti-eksetazoun-oi-arxes/",
-        "https://www.in.gr/2026/08/22/in-science/technology/synagermos-gia-ta-eksypna-gyalia-pos-oi-gynaikes-peftoun-thymata-aytis-tis-neas-texnologias/"
+        "https://www.in.gr/2026/08/22/world/pos-i-yperoxi-tis-eyropaikis-poiotitas-zois-metatrepetai-se-axilleio-pterna-gia-tin-ipeiro/",
+        "https://www.in.gr/2026/08/22/sports/football/megali-eykairia-tou-olympiakou-me-el-kaampi-vid/",
+        "https://www.in.gr/matchcenter/5749644/",
+        "https://www.in.gr/2026/08/22/world/vretanos-dimosiografos-ti-rotise-treis-fores-mia-evraiki-zoi-aksizei-oso-mia-palaistiniaki-den-apantise/"
       ],
-      "seen_at_utc": "2026-08-22T18:29:55.454099+00:00"
+      "seen_at_utc": "2026-08-22T18:51:15.637768+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T18:29:55.454230+00:00"
+  "updated_at_utc": "2026-08-22T18:51:15.637878+00:00"
 }
