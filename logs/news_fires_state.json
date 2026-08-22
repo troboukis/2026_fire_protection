@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564416104/syria-enas-traymatias-epeita-apo-epithesi-israilinoy-drone/",
-      "title": "Συρία: Ενας τραυματίας έπειτα από επίθεση ισραηλινού drone",
-      "normalized_title": "ΣΥΡΙΑ: ΕΝΑΣ ΤΡΑΥΜΑΤΙΑΣ ΕΠΕΙΤΑ ΑΠΟ ΕΠΙΘΕΣΗ ΙΣΡΑΗΛΙΝΟΥ DRONE",
+      "url": "https://www.kathimerini.gr/athletics/564416197/oneiremeno-ntempoyto-gia-ton-tzolaki-kai-thriamvos-tis-chal-epi-tis-gioynaitent/",
+      "title": "Ονειρεμένο ντεμπούτο για τον Τζολάκη και θρίαμβος της Χαλ επί της Γιουνάιτεντ",
+      "normalized_title": "ΟΝΕΙΡΕΜΕΝΟ ΝΤΕΜΠΟΥΤΟ ΓΙΑ ΤΟΝ ΤΖΟΛΑΚΗ ΚΑΙ ΘΡΙΑΜΒΟΣ ΤΗΣ ΧΑΛ ΕΠΙ ΤΗΣ ΓΙΟΥΝΑΙΤΕΝΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564416104/syria-enas-traymatias-epeita-apo-epithesi-israilinoy-drone/"
+        "https://www.kathimerini.gr/athletics/564416197/oneiremeno-ntempoyto-gia-ton-tzolaki-kai-thriamvos-tis-chal-epi-tis-gioynaitent/",
+        "https://www.kathimerini.gr/world/564416191/israil-gemates-anakriveies-oi-amerikanikes-epikriseis-gia-ta-pligmata-sti-syria/"
       ],
-      "seen_at_utc": "2026-08-22T14:51:01.507810+00:00"
+      "seen_at_utc": "2026-08-22T15:17:18.088071+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,24 +1271,32 @@
       "seen_at_utc": "2026-08-22T14:30:13.826584+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1452288/mpen-gkvir-akrodexios-epikindynos-ametanoitos/",
-      "title": "Μπεν Γκβιρ: Ακροδεξιός, επικίνδυνος, αμετανόητος",
-      "normalized_title": "ΜΠΕΝ ΓΚΒΙΡ: ΑΚΡΟΔΕΞΙΟΣ, ΕΠΙΚΙΝΔΥΝΟΣ, ΑΜΕΤΑΝΟΗΤΟΣ",
+      "url": "https://www.efsyn.gr/stiles/1452311/eyimeria-antiparatheseon-dystyhia-tis-koinonias/",
+      "title": "Ευημερία αντιπαραθέσεων, δυστυχία της κοινωνίας",
+      "normalized_title": "ΕΥΗΜΕΡΙΑ ΑΝΤΙΠΑΡΑΘΕΣΕΩΝ, ΔΥΣΤΥΧΙΑ ΤΗΣ ΚΟΙΝΩΝΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1452288/mpen-gkvir-akrodexios-epikindynos-ametanoitos/"
+        "https://www.efsyn.gr/stiles/1452311/eyimeria-antiparatheseon-dystyhia-tis-koinonias/",
+        "https://www.efsyn.gr/stiles/1452316/me-mia-agkyra-sta-podia/",
+        "https://www.efsyn.gr/stiles/1452305/giati-o-hristodoylidis-den-peithei-ton-oie/",
+        "https://www.efsyn.gr/stiles/1452332/ezise-endoxa-efyge-adoxa/",
+        "https://www.efsyn.gr/politiki/1452495/skliri-apantisi-akrita-se-georgiadi-kakomoiri-ftiaxe-ton-mastografo-sti-nikaia-poy-se-kynigao-tria-hronia/"
       ],
-      "seen_at_utc": "2026-08-22T14:51:01.507876+00:00"
+      "seen_at_utc": "2026-08-22T15:17:18.088163+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/22/sports/football/tzolakis-apotheosi-gia-ton-ellina-termatofylaka-stin-agglia-ton-paromoiazoun-me-ton-kourtoua-picsvid/",
-      "title": "Αποθέωση για Τζολάκη στην Αγγλία- Τον παρομοιάζουν με τον Κουρτουά! (pics+vid)",
-      "normalized_title": "ΑΠΟΘΕΩΣΗ ΓΙΑ ΤΖΟΛΑΚΗ ΣΤΗΝ ΑΓΓΛΙΑ- ΤΟΝ ΠΑΡΟΜΟΙΑΖΟΥΝ ΜΕ ΤΟΝ ΚΟΥΡΤΟΥΑ! (PICS+VID)",
+      "url": "https://www.in.gr/2026/08/22/world/diethnis-piesi-apo-proin-diplomates-i-palaistini-svinetai-apo-ton-xarti-aparaititi-i-epivoli-aystiron-kyroseon/",
+      "title": "Διεθνής πίεση από πρώην διπλωμάτες: Η Παλαιστίνη σβήνεται από τον χάρτη – Απαραίτητη η επιβολή αυστηρών κυρώσεων",
+      "normalized_title": "ΔΙΕΘΝΗΣ ΠΙΕΣΗ ΑΠΟ ΠΡΩΗΝ ΔΙΠΛΩΜΑΤΕΣ: Η ΠΑΛΑΙΣΤΙΝΗ ΣΒΗΝΕΤΑΙ ΑΠΟ ΤΟΝ ΧΑΡΤΗ – ΑΠΑΡΑΙΤΗΤΗ Η ΕΠΙΒΟΛΗ ΑΥΣΤΗΡΩΝ ΚΥΡΩΣΕΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/22/sports/football/tzolakis-apotheosi-gia-ton-ellina-termatofylaka-stin-agglia-ton-paromoiazoun-me-ton-kourtoua-picsvid/",
-        "https://www.in.gr/2026/08/22/world/kaysonas-stin-eyropi-ekriktika-apo-tin-epoxi-tou-a%ce%84-kai-tou-v%ce%84-pagkosmiou-polemou-vgainoun-stin-epifaneia/"
+        "https://www.in.gr/2026/08/22/world/diethnis-piesi-apo-proin-diplomates-i-palaistini-svinetai-apo-ton-xarti-aparaititi-i-epivoli-aystiron-kyroseon/",
+        "https://www.in.gr/2026/08/22/world/katafori-paraviasi-tis-edafikis-kyriarxias-i-syria-katadikazei-to-israil-gia-to-pligma-konta-sto-gkolan/",
+        "https://www.in.gr/2026/08/22/life/megkan-markl-apo-to-suits-sto-the-gentlemen-tou-gkai-ritsi-megalo-comeback-sto-netflix/",
+        "https://www.in.gr/2026/08/22/greece/ti-anaferei-to-limeniko-gia-ta-tourkika-alieytika-sto-thalassio-parko-alonnisou/",
+        "https://www.in.gr/2026/08/22/greece/volos-katastrafikan-olosxeros-meta-apo-fotia-oi-egkatastaseis-ergastirion-amea/",
+        "https://www.in.gr/2026/08/22/world/i-ee-apostellei-elikoptera-kai-pyrosvestes-sti-servia-gia-tin-katapolemisi-megalis-dasikis-pyrkagias/"
       ],
-      "seen_at_utc": "2026-08-22T14:51:01.507848+00:00"
+      "seen_at_utc": "2026-08-22T15:17:18.088134+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T14:51:01.507941+00:00"
+  "updated_at_utc": "2026-08-22T15:17:18.088236+00:00"
 }
