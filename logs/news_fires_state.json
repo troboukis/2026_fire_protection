@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398878/eortologio-poioi-giortazoyn-simera-23-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 23 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 23 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/world/564416668/iaponia-dekades-traymaties-apo-seismo-5-9-vathmon/",
+      "title": "Ιαπωνία: Δεκάδες τραυματίες από σεισμό 5,9 βαθμών",
+      "normalized_title": "ΙΑΠΩΝΙΑ: ΔΕΚΑΔΕΣ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΣΕΙΣΜΟ 5,9 ΒΑΘΜΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398878/eortologio-poioi-giortazoyn-simera-23-aygoystoy/",
-        "https://www.kathimerini.gr/life/technology/564416257/kina-rompot-xeperase-to-pagkosmio-rekor-toy-gioysein-mpolt-sta-100-metra/"
+        "https://www.kathimerini.gr/world/564416668/iaponia-dekades-traymaties-apo-seismo-5-9-vathmon/"
       ],
-      "seen_at_utc": "2026-08-22T21:17:06.166998+00:00"
+      "seen_at_utc": "2026-08-23T04:16:57.590160+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,13 +1259,15 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868238/treis-pnigmoi-to-savvato-se-palaia-fokaia-halkidiki-kai-karpatho/?utm_source=rss",
-      "title": "Τρεις πνιγμοί το Σάββατο σε Παλαιά Φώκαια, Χαλκιδική και Κάρπαθο",
-      "normalized_title": "ΤΡΕΙΣ ΠΝΙΓΜΟΙ ΤΟ ΣΑΒΒΑΤΟ ΣΕ ΠΑΛΑΙΑ ΦΩΚΑΙΑ, ΧΑΛΚΙΔΙΚΗ ΚΑΙ ΚΑΡΠΑΘΟ",
+      "url": "https://www.protothema.gr/greece/article/1868255/anoigoun-simera-kuriaki-epta-klimatizomenoi-horoi-ston-dimo-athinaion-logo-ton-upsilon-thermokrasion/?utm_source=rss",
+      "title": "Ανοίγουν σήμερα Κυριακή επτά κλιματιζόμενοι χώροι στον Δήμο Αθηναίων λόγω των υψηλών θερμοκρασιών",
+      "normalized_title": "ΑΝΟΙΓΟΥΝ ΣΗΜΕΡΑ ΚΥΡΙΑΚΗ ΕΠΤΑ ΚΛΙΜΑΤΙΖΟΜΕΝΟΙ ΧΩΡΟΙ ΣΤΟΝ ΔΗΜΟ ΑΘΗΝΑΙΩΝ ΛΟΓΩ ΤΩΝ ΥΨΗΛΩΝ ΘΕΡΜΟΚΡΑΣΙΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868238/treis-pnigmoi-to-savvato-se-palaia-fokaia-halkidiki-kai-karpatho/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868255/anoigoun-simera-kuriaki-epta-klimatizomenoi-horoi-ston-dimo-athinaion-logo-ton-upsilon-thermokrasion/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868251/seismos-34-rihter-sti-halki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868250/purkagia-se-ih-ston-agio-dimitrio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-22T21:51:06.665396+00:00"
+      "seen_at_utc": "2026-08-23T04:16:57.590262+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/ellada/1452579/tromaktiki-agriotita-stin-kerkyra-odigos-patise-pano-se-skylo-poy-koimotan-ton-skotose-kai-apohorise-apo-to-simeio/",
@@ -1279,15 +1280,25 @@
       "seen_at_utc": "2026-08-22T21:17:06.167074+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/sports/football/espaniol-real-madritis-1-2-niki-stis-kathysteriseis-me-ton-karlos-espi/",
-      "title": "Εσπανιόλ – Ρεάλ Μαδρίτης 1-2: Νίκη στις καθυστερήσεις με τον Κάρλος Εσπί",
-      "normalized_title": "ΕΣΠΑΝΙΟΛ – ΡΕΑΛ ΜΑΔΡΙΤΗΣ 1-2: ΝΙΚΗ ΣΤΙΣ ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΜΕ ΤΟΝ ΚΑΡΛΟΣ ΕΣΠΙ",
+      "url": "https://www.in.gr/2026/08/23/world/einai-i-ameriki-akoma-ikani-na-epivalei-tin-pagkosmia-taksi/",
+      "title": "Είναι η Αμερική ακόμα ικανή να επιβάλει την Παγκόσμια Τάξη;",
+      "normalized_title": "ΕΙΝΑΙ Η ΑΜΕΡΙΚΗ ΑΚΟΜΑ ΙΚΑΝΗ ΝΑ ΕΠΙΒΑΛΕΙ ΤΗΝ ΠΑΓΚΟΣΜΙΑ ΤΑΞΗ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/sports/football/espaniol-real-madritis-1-2-niki-stis-kathysteriseis-me-ton-karlos-espi/",
-        "https://www.in.gr/2026/08/23/world/aeroporikes-epidromes-tis-tourkias-sti-somalia-enantion-peiraton-gia-tin-katalipsi-ploiou-me-opla/"
+        "https://www.in.gr/2026/08/23/world/einai-i-ameriki-akoma-ikani-na-epivalei-tin-pagkosmia-taksi/",
+        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/i-viomixania-ton-video-games-ksemenei-apo-zoes/",
+        "https://www.in.gr/2026/08/23/world/elvetia-dimopsifisma-ksana-ayti-ti-fora-gia-ta-trofima/",
+        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/kanadas-poia-proionta-tha-xtypisoun-ta-antipoina-gia-tous-dasmous-tramp/",
+        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/ta-paidia-paizei-akomi-stis-ipa-i-kalyteri-epidosi-6etias/",
+        "https://www.in.gr/2026/08/23/world/epeisodia-se-ratsistiki-diadilosi-stin-minesota-synelifthi-o-diorganotis-kai-o-spiderman/",
+        "https://www.in.gr/2026/08/23/in-science/ai/i-nea-yorki-ekthronizei-to-san-fransisko-stin-koryfi-tis-ai/",
+        "https://www.in.gr/2026/08/23/world/diadilosi-gia-to-klima-kai-tin-klimatiki-allagi-sti-souidia-enopsei-eklogon-me-260-organoseis/",
+        "https://www.in.gr/2026/08/23/world/india-fortigo-ploio-me-simaia-panama-vythistike-ston-kolpo-tis-veggalis-agnoountai-22-naytikoi/",
+        "https://www.in.gr/2026/08/23/world/gallos-touristas-pethane-stin-koilada-tou-thanatou-stis-ipa-eixe-46-vathmous-kelsiou/",
+        "https://www.in.gr/2026/08/23/world/iranoi-xaker-ekleisan-gia-4-imeres-stathmo-paragogis-ilektrikis-energeias-sti-megali-vretania/",
+        "https://www.in.gr/2026/08/23/world/i-xili-anakoinose-pos-tha-kleisei-tin-presveia-tis-sto-iran-gia-logous-asfaleias-kai-kostous/"
       ],
-      "seen_at_utc": "2026-08-22T22:17:00.538067+00:00"
+      "seen_at_utc": "2026-08-23T04:16:57.590213+00:00"
     }
   },
-  "updated_at_utc": "2026-08-22T22:51:14.014406+00:00"
+  "updated_at_utc": "2026-08-23T04:16:57.590342+00:00"
 }
