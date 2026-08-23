@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416767/ios-dytikoy-neiloy-poioi-kindyneyoyn-perissotero-ta-symptomata-kai-oi-epiplokes/",
-      "title": "Ιός Δυτικού Νείλου: Ποιοι κινδυνεύουν περισσότερο – Τα συμπτώματα και οι επιπλοκές",
-      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΠΟΙΟΙ ΚΙΝΔΥΝΕΥΟΥΝ ΠΕΡΙΣΣΟΤΕΡΟ – ΤΑ ΣΥΜΠΤΩΜΑΤΑ ΚΑΙ ΟΙ ΕΠΙΠΛΟΚΕΣ",
+      "url": "https://www.kathimerini.gr/society/564416773/evros-epeisodiakes-katadioxeis-diakiniton-deka-syllipseis/",
+      "title": "Εβρος: Επεισοδιακές καταδιώξεις διακινητών – Δέκα συλλήψεις",
+      "normalized_title": "ΕΒΡΟΣ: ΕΠΕΙΣΟΔΙΑΚΕΣ ΚΑΤΑΔΙΩΞΕΙΣ ΔΙΑΚΙΝΗΤΩΝ – ΔΕΚΑ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416767/ios-dytikoy-neiloy-poioi-kindyneyoyn-perissotero-ta-symptomata-kai-oi-epiplokes/",
-        "https://www.kathimerini.gr/athletics/football/564414829/eida-ton-kroif-9-chronon-ston-volo/"
+        "https://www.kathimerini.gr/society/564416773/evros-epeisodiakes-katadioxeis-diakiniton-deka-syllipseis/"
       ],
-      "seen_at_utc": "2026-08-23T08:51:09.892783+00:00"
+      "seen_at_utc": "2026-08-23T09:17:05.026471+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1259,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868351/karpathos-80hronos-anasurthike-apo-ti-thalassa-horis-tis-aisthiseis-tou/?utm_source=rss",
-      "title": "Κάρπαθος: 80χρονος ανασύρθηκε από τη θάλασσα χωρίς τις αισθήσεις του",
-      "normalized_title": "ΚΑΡΠΑΘΟΣ: 80ΧΡΟΝΟΣ ΑΝΑΣΥΡΘΗΚΕ ΑΠΟ ΤΗ ΘΑΛΑΣΣΑ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1868364/nea-smurni-perimene-tin-45hroni-mesa-sto-autokinito-tou-kai-tin-skotose-molis-tin-eide-o-48hronos-/?utm_source=rss",
+      "title": "Νέα Σμύρνη: Ο 48χρονος περίμενε την 45χρονη μέσα στο αυτοκίνητό του και την σκότωσε μόλις την είδε - «Ακούσαμε τρεις πυροβολισμούς» λένε μάρτυρες",
+      "normalized_title": "ΝΕΑ ΣΜΥΡΝΗ: Ο 48ΧΡΟΝΟΣ ΠΕΡΙΜΕΝΕ ΤΗΝ 45ΧΡΟΝΗ ΜΕΣΑ ΣΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ ΚΑΙ ΤΗΝ ΣΚΟΤΩΣΕ ΜΟΛΙΣ ΤΗΝ ΕΙΔΕ - «ΑΚΟΥΣΑΜΕ ΤΡΕΙΣ ΠΥΡΟΒΟΛΙΣΜΟΥΣ» ΛΕΝΕ ΜΑΡΤΥΡΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868351/karpathos-80hronos-anasurthike-apo-ti-thalassa-horis-tis-aisthiseis-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868364/nea-smurni-perimene-tin-45hroni-mesa-sto-autokinito-tou-kai-tin-skotose-molis-tin-eide-o-48hronos-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868362/apisteuto-peristatiko-stin-kato-ahaia-eklepsan-tin-katsarola-pou-mageireue-oso-ekeinos-itan-sto-periptero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T08:30:00.559619+00:00"
+      "seen_at_utc": "2026-08-23T09:17:05.026608+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452624/pos-12-lepta-stin-ora-enarxis-ton-sholeion-mporoyn-na-meiosoyn-to-proino-mpotiliarisma/",
-      "title": "Πώς 12 λεπτά στην ώρα έναρξης των σχολείων μπορούν να μειώσουν το πρωινό μποτιλιάρισμα",
-      "normalized_title": "ΠΩΣ 12 ΛΕΠΤΑ ΣΤΗΝ ΩΡΑ ΕΝΑΡΞΗΣ ΤΩΝ ΣΧΟΛΕΙΩΝ ΜΠΟΡΟΥΝ ΝΑ ΜΕΙΩΣΟΥΝ ΤΟ ΠΡΩΙΝΟ ΜΠΟΤΙΛΙΑΡΙΣΜΑ",
+      "url": "https://www.efsyn.gr/stiles/1452449/psemata-kai-diaspaseis/",
+      "title": "Ψέματα και… διασπάσεις",
+      "normalized_title": "ΨΕΜΑΤΑ ΚΑΙ… ΔΙΑΣΠΑΣΕΙΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452624/pos-12-lepta-stin-ora-enarxis-ton-sholeion-mporoyn-na-meiosoyn-to-proino-mpotiliarisma/"
+        "https://www.efsyn.gr/stiles/1452449/psemata-kai-diaspaseis/",
+        "https://www.efsyn.gr/politiki/1452641/tsoykalas-giati-o-mitsotakis-den-sikose-to-tilefono-gia-tin-toyrkia/",
+        "https://www.efsyn.gr/stiles/1452442/prasino-fos/",
+        "https://www.efsyn.gr/politiki/1452639/marinakis-protofanis-aprepeia-toy-tsipra-na-proigithei-toy-prothypoyrgoy-sti-thessaloniki/"
       ],
-      "seen_at_utc": "2026-08-23T08:51:09.892877+00:00"
+      "seen_at_utc": "2026-08-23T09:17:05.026565+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/world/ipa-proeidopoiiseis-gia-sympliroma-pou-xorigeitai-se-pyrosvestes-meta-tin-ekthesi-se-kapno-poioi-oi-kindynoi/",
-      "title": "ΗΠΑ: Προειδοποιήσεις για συμπλήρωμα που χορηγείται σε πυροσβέστες μετά την έκθεση σε καπνό – Ποιοι οι κίνδυνοι",
-      "normalized_title": "ΗΠΑ: ΠΡΟΕΙΔΟΠΟΙΗΣΕΙΣ ΓΙΑ ΣΥΜΠΛΗΡΩΜΑ ΠΟΥ ΧΟΡΗΓΕΙΤΑΙ ΣΕ ΠΥΡΟΣΒΕΣΤΕΣ ΜΕΤΑ ΤΗΝ ΕΚΘΕΣΗ ΣΕ ΚΑΠΝΟ – ΠΟΙΟΙ ΟΙ ΚΙΝΔΥΝΟΙ",
+      "url": "https://www.in.gr/2026/08/23/politics/tsoukalas-kata-mitsotaki-giati-den-sikose-to-tilefono-analamvanontas-protovoulies-gia-epivoli-eyropaikon-kyroseon-stin-tourkia/",
+      "title": "Τσουκαλάς κατά Μητσοτάκη: Γιατί δεν σήκωσε το τηλέφωνο αναλαμβάνοντας πρωτοβουλίες για επιβολή ευρωπαϊκών κυρώσεων στην Τουρκία;",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: ΓΙΑΤΙ ΔΕΝ ΣΗΚΩΣΕ ΤΟ ΤΗΛΕΦΩΝΟ ΑΝΑΛΑΜΒΑΝΟΝΤΑΣ ΠΡΩΤΟΒΟΥΛΙΕΣ ΓΙΑ ΕΠΙΒΟΛΗ ΕΥΡΩΠΑΙΚΩΝ ΚΥΡΩΣΕΩΝ ΣΤΗΝ ΤΟΥΡΚΙΑ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/world/ipa-proeidopoiiseis-gia-sympliroma-pou-xorigeitai-se-pyrosvestes-meta-tin-ekthesi-se-kapno-poioi-oi-kindynoi/",
-        "https://www.in.gr/2026/08/23/sports/on-field/olympiakos-o-yperoxos-tiknizian-o-roka-pou-anevainei-kai-to-pazl-pou-oloklironetai/",
-        "https://www.in.gr/2026/08/23/greece/dytiki-axaia-75xronos-mpike-se-astynomiko-tmima-kai-apeilouse-na-loustei-me-venzini/",
-        "https://www.in.gr/2026/08/23/politics/poso-deksia-mporei-na-paei-i-nd-o-kyriakos-mitsotakis-kai-to-provlima-ton-diarroon-stin-akrodeksia/"
+        "https://www.in.gr/2026/08/23/politics/tsoukalas-kata-mitsotaki-giati-den-sikose-to-tilefono-analamvanontas-protovoulies-gia-epivoli-eyropaikon-kyroseon-stin-tourkia/",
+        "https://www.in.gr/2026/08/23/sports/football/mourinio-monimo-thyma-bullying-o-vinisious/",
+        "https://www.in.gr/2026/08/23/go-fun/fizz/giannis-antetokounmpo-oikogeneiakes-diakopes-sti-mykono/",
+        "https://www.in.gr/2026/08/23/politics/mitsotakis-kalliergeia-prosdokion-enopsei-deth-kai-eikoniki-pragmatikotita-to-minyma-stin-tourkia/"
       ],
-      "seen_at_utc": "2026-08-23T08:51:09.892842+00:00"
+      "seen_at_utc": "2026-08-23T09:17:05.026537+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T08:51:09.892948+00:00"
+  "updated_at_utc": "2026-08-23T09:17:05.026699+00:00"
 }
