@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416878/epistrefoyn-oi-adeioychoi-kinisi-sta-limania-tis-attikis/",
-      "title": "Επιστρέφουν οι αδειούχοι – Κίνηση στα λιμάνια της Αττικής",
-      "normalized_title": "ΕΠΙΣΤΡΕΦΟΥΝ ΟΙ ΑΔΕΙΟΥΧΟΙ – ΚΙΝΗΣΗ ΣΤΑ ΛΙΜΑΝΙΑ ΤΗΣ ΑΤΤΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/world/564416890/oykraniko-drone-chtypise-ton-rosiko-kolosso-ozon-vinteo/",
+      "title": "Ουκρανικό drone χτύπησε τον ρωσικό κολοσσό Ozon (βίντεο)",
+      "normalized_title": "ΟΥΚΡΑΝΙΚΟ DRONE ΧΤΥΠΗΣΕ ΤΟΝ ΡΩΣΙΚΟ ΚΟΛΟΣΣΟ OZON (ΒΙΝΤΕΟ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416878/epistrefoyn-oi-adeioychoi-kinisi-sta-limania-tis-attikis/"
+        "https://www.kathimerini.gr/world/564416890/oykraniko-drone-chtypise-ton-rosiko-kolosso-ozon-vinteo/",
+        "https://www.kathimerini.gr/society/564416884/kerkyra-ston-eisaggelea-i-odigos-poy-patise-skylo-me-to-aytokinito/"
       ],
-      "seen_at_utc": "2026-08-23T12:51:13.618025+00:00"
+      "seen_at_utc": "2026-08-23T13:17:02.554473+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,26 @@
       "seen_at_utc": "2026-08-23T12:51:13.618176+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452692/thessaloniki-synelifthi-48hronos-astynomikos-meta-apo-kataggelia-gia-viasmo-kai-endooikogeneiaki-via/",
-      "title": "Θεσσαλονίκη: Συνελήφθη 48χρονος αστυνομικός μετά από καταγγελία για βιασμό και ενδοοικογενειακή βία",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 48ΧΡΟΝΟΣ ΑΣΤΥΝΟΜΙΚΟΣ ΜΕΤΑ ΑΠΟ ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΒΙΑΣΜΟ ΚΑΙ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΒΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1452694/apisteytes-eikones-stin-igoymenitsa-mikri-limni-egine-roz-eikones/",
+      "title": "Απίστευτες εικόνες στην Ηγουμενίτσα: Μικρή λίμνη έγινε… ροζ [εικόνες]",
+      "normalized_title": "ΑΠΙΣΤΕΥΤΕΣ ΕΙΚΟΝΕΣ ΣΤΗΝ ΗΓΟΥΜΕΝΙΤΣΑ: ΜΙΚΡΗ ΛΙΜΝΗ ΕΓΙΝΕ… ΡΟΖ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452692/thessaloniki-synelifthi-48hronos-astynomikos-meta-apo-kataggelia-gia-viasmo-kai-endooikogeneiaki-via/"
+        "https://www.efsyn.gr/ellada/1452694/apisteytes-eikones-stin-igoymenitsa-mikri-limni-egine-roz-eikones/"
       ],
-      "seen_at_utc": "2026-08-23T12:51:13.618141+00:00"
+      "seen_at_utc": "2026-08-23T13:17:02.554566+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/politics/kke-kata-mitsotaki-epimenei-na-kryvei-oti-o-dialogos-me-tin-tourkia-simainei-ypoxoriseis/",
-      "title": "ΚΚΕ κατά Μητσοτάκη: Επιμένει να κρύβει ότι ο “διάλογος” με την Τουρκία σημαίνει υποχωρήσεις",
-      "normalized_title": "ΚΚΕ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: ΕΠΙΜΕΝΕΙ ΝΑ ΚΡΥΒΕΙ ΟΤΙ Ο “ΔΙΑΛΟΓΟΣ” ΜΕ ΤΗΝ ΤΟΥΡΚΙΑ ΣΗΜΑΙΝΕΙ ΥΠΟΧΩΡΗΣΕΙΣ",
+      "url": "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/stegastiki-krisi-kai-energeiaki-krisi-o-logos-pou-prepei-na-antimetopistoun-taytoxrona-to-paradeigma-tis-varkelonis/",
+      "title": "Ο σοβαρός λόγος που στεγαστική και ενεργειακή κρίση πρέπει να αντιμετωπιστούν ταυτόχρονα - Το παράδειγμα της Βαρκελώνης",
+      "normalized_title": "Ο ΣΟΒΑΡΟΣ ΛΟΓΟΣ ΠΟΥ ΣΤΕΓΑΣΤΙΚΗ ΚΑΙ ΕΝΕΡΓΕΙΑΚΗ ΚΡΙΣΗ ΠΡΕΠΕΙ ΝΑ ΑΝΤΙΜΕΤΩΠΙΣΤΟΥΝ ΤΑΥΤΟΧΡΟΝΑ - ΤΟ ΠΑΡΑΔΕΙΓΜΑ ΤΗΣ ΒΑΡΚΕΛΩΝΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/politics/kke-kata-mitsotaki-epimenei-na-kryvei-oti-o-dialogos-me-tin-tourkia-simainei-ypoxoriseis/",
-        "https://www.in.gr/2026/08/23/sports/basketball/ethniki-mpasket-traymatistike-o-xaralampopoulos-kai-xanei-oukrania-kai-ispania/",
-        "https://www.in.gr/2026/08/23/politics/glavinas-sti-deth-tha-deiksoume-tin-programmatiki-mas-yperoxi-i-meiosi-tis-emmesis-forologias-sto-epikentro/",
-        "https://www.in.gr/2026/08/23/world/londino-kathreftis-ton-fyletikon-diakriseon-oi-aneksixniastes-dolofonies-9-stis-10-exoun-thymata-ethnotikon-meionotiton/",
-        "https://www.in.gr/2026/08/23/life/culture-live/telos-epoxis-gia-ton-istoriko-kinimatografo-atlantis-sti-dafni-meta-apo-70-xronia-leitourgias/"
+        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/stegastiki-krisi-kai-energeiaki-krisi-o-logos-pou-prepei-na-antimetopistoun-taytoxrona-to-paradeigma-tis-varkelonis/",
+        "https://www.in.gr/matchcenter/5795369/",
+        "https://www.in.gr/matchcenter/5795370/",
+        "https://www.in.gr/2026/08/23/greece/florina-syllipsi-32xronou-me-eyropaiko-entalma-syllipsis/"
       ],
-      "seen_at_utc": "2026-08-23T12:51:13.618100+00:00"
+      "seen_at_utc": "2026-08-23T13:17:02.554531+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T12:51:13.618274+00:00"
+  "updated_at_utc": "2026-08-23T13:17:02.554630+00:00"
 }
