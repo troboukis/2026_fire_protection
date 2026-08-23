@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564414769/konstantinos-tsoykalas-1937-2026-o-stochastis-tis-akorestis-periergeias/",
-      "title": "Κωνσταντίνος Τσουκαλάς (1937-2026): Ο στοχαστής της ακόρεστης περιέργειας",
-      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΣΟΥΚΑΛΑΣ (1937-2026): Ο ΣΤΟΧΑΣΤΗΣ ΤΗΣ ΑΚΟΡΕΣΤΗΣ ΠΕΡΙΕΡΓΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564417028/thanatiforo-trochaio-sti-nea-ionia-nekros-60chronos-motosykletistis/",
+      "title": "Θανατηφόρο τροχαίο στη Νέα Ιωνία: Νεκρός 60χρονος μοτοσυκλετιστής",
+      "normalized_title": "ΘΑΝΑΤΗΦΟΡΟ ΤΡΟΧΑΙΟ ΣΤΗ ΝΕΑ ΙΩΝΙΑ: ΝΕΚΡΟΣ 60ΧΡΟΝΟΣ ΜΟΤΟΣΥΚΛΕΤΙΣΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564414769/konstantinos-tsoykalas-1937-2026-o-stochastis-tis-akorestis-periergeias/"
+        "https://www.kathimerini.gr/society/564417028/thanatiforo-trochaio-sti-nea-ionia-nekros-60chronos-motosykletistis/"
       ],
-      "seen_at_utc": "2026-08-23T17:30:08.913191+00:00"
+      "seen_at_utc": "2026-08-23T17:51:30.234181+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868513/purkagia-se-dasiki-ektasi-stin-aiani-stin-kozani-sto-simeio-kai-elikoptero/?utm_source=rss",
-      "title": "Φωτιά σε δασική έκταση στην Αιανή Κοζάνης, στο σημείο και ελικόπτερο",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΑΙΑΝΗ ΚΟΖΑΝΗΣ, ΣΤΟ ΣΗΜΕΙΟ ΚΑΙ ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1868521/sunelifthi-o-andras-pou-listeue-ilikiomenes-sti-thessaloniki-meta-apo-pezi-katadioxi/?utm_source=rss",
+      "title": "Συνελήφθη o άνδρας που λήστευε ηλικιωμένες στη Θεσσαλονίκη μετά από πεζή καταδίωξη",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ O ΑΝΔΡΑΣ ΠΟΥ ΛΗΣΤΕΥΕ ΗΛΙΚΙΩΜΕΝΕΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΜΕΤΑ ΑΠΟ ΠΕΖΗ ΚΑΤΑΔΙΩΞΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868513/purkagia-se-dasiki-ektasi-stin-aiani-stin-kozani-sto-simeio-kai-elikoptero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868521/sunelifthi-o-andras-pou-listeue-ilikiomenes-sti-thessaloniki-meta-apo-pezi-katadioxi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868520/odigouse-me-anoihtes-portes-se-siragga-tis-athinon-korinthou-ston-eisaggelea-i-upothesi-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868519/tha-sti-stiso-kai-tha-se-sakatepso-odigos-leoforeiou-vrizei-kai-apeilei-ilikiomeno-epivati-gia-mia-paratirisi-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T17:30:08.913342+00:00"
+      "seen_at_utc": "2026-08-23T17:51:30.234266+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1452781/gerapetritis-i-ellada-tis-pathitikis-diplomatias-teleiose-minyma-stin-toyrkia-gia-aigaio-12-milia-kai-thalassia-parka/",
-      "title": "Γεραπετρίτης: «Η Ελλάδα της παθητικής διπλωματίας τελείωσε» – Μήνυμα στην Τουρκία για Αιγαίο, 12 μίλια και θαλάσσια πάρκα",
-      "normalized_title": "ΓΕΡΑΠΕΤΡΙΤΗΣ: «Η ΕΛΛΑΔΑ ΤΗΣ ΠΑΘΗΤΙΚΗΣ ΔΙΠΛΩΜΑΤΙΑΣ ΤΕΛΕΙΩΣΕ» – ΜΗΝΥΜΑ ΣΤΗΝ ΤΟΥΡΚΙΑ ΓΙΑ ΑΙΓΑΙΟ, 12 ΜΙΛΙΑ ΚΑΙ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ",
+      "url": "https://www.efsyn.gr/kosmos/1452785/iran-oi-nees-kyroseis-poy-apeilei-na-epivalei-i-oyasigkton-tha-apotyhoyn/",
+      "title": "Ιράν: Οι νέες κυρώσεις που απειλεί να επιβάλει η Ουάσιγκτον θα αποτύχουν",
+      "normalized_title": "ΙΡΑΝ: ΟΙ ΝΕΕΣ ΚΥΡΩΣΕΙΣ ΠΟΥ ΑΠΕΙΛΕΙ ΝΑ ΕΠΙΒΑΛΕΙ Η ΟΥΑΣΙΓΚΤΟΝ ΘΑ ΑΠΟΤΥΧΟΥΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1452781/gerapetritis-i-ellada-tis-pathitikis-diplomatias-teleiose-minyma-stin-toyrkia-gia-aigaio-12-milia-kai-thalassia-parka/",
-        "https://www.efsyn.gr/politiki/1452752/kke-o-k-mitsotakis-kryvei-oti-o-dialogos-me-tin-toyrkia-simainei-ypohoriseis-apo-ta-kyriarhika-dikaiomata/",
-        "https://www.efsyn.gr/politiki/1452754/synedriazei-to-ypoyrgiko-symvoylio-ti-deytera-ta-nomoshedia-poy-tha-syzitithoyn/"
+        "https://www.efsyn.gr/kosmos/1452785/iran-oi-nees-kyroseis-poy-apeilei-na-epivalei-i-oyasigkton-tha-apotyhoyn/"
       ],
-      "seen_at_utc": "2026-08-23T17:30:08.913308+00:00"
+      "seen_at_utc": "2026-08-23T17:51:30.234244+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/sports/football/me-8-allages-o-paok-kontra-ston-levadeiako/",
-      "title": "Με 8 αλλαγές ο ΠΑΟΚ κόντρα στον Λεβαδειακό",
-      "normalized_title": "ΜΕ 8 ΑΛΛΑΓΕΣ Ο ΠΑΟΚ ΚΟΝΤΡΑ ΣΤΟΝ ΛΕΒΑΔΕΙΑΚΟ",
+      "url": "https://www.in.gr/matchcenter/5943231/",
+      "title": "LIVE: ΠΑΟΚ – Λεβαδειακός",
+      "normalized_title": "LIVE: ΠΑΟΚ – ΛΕΒΑΔΕΙΑΚΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/sports/football/me-8-allages-o-paok-kontra-ston-levadeiako/"
+        "https://www.in.gr/matchcenter/5943231/",
+        "https://www.in.gr/2026/08/23/greece/fotia-stin-perioxi-kostos-stin-paro/",
+        "https://www.in.gr/2026/08/23/greece/voula-vinteo-ntokoumento-meta-tin-aimatiri-symploki-sto-tram/",
+        "https://www.in.gr/2026/08/23/go-fun/social/einai-pragmati-politika-asovari-i-gen-z-i-periptosi-tou-louitzi-mantzione/"
       ],
-      "seen_at_utc": "2026-08-23T17:30:08.913255+00:00"
+      "seen_at_utc": "2026-08-23T17:51:30.234220+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T17:30:08.913451+00:00"
+  "updated_at_utc": "2026-08-23T17:51:30.234358+00:00"
 }
