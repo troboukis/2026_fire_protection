@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416815/serres-syllipseis-kai-traymatismoi-apo-ta-epeisodia-sti-domi-sintikis/",
-      "title": "Σέρρες: Συλλήψεις και τραυματισμοί από τα επεισόδια στη δομή Σιντικής",
-      "normalized_title": "ΣΕΡΡΕΣ: ΣΥΛΛΗΨΕΙΣ ΚΑΙ ΤΡΑΥΜΑΤΙΣΜΟΙ ΑΠΟ ΤΑ ΕΠΕΙΣΟΔΙΑ ΣΤΗ ΔΟΜΗ ΣΙΝΤΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/society/564416827/trochaio-me-parasyrsi-anilikis-stin-palaia-ethniki-chanion-kisamoy/",
+      "title": "Τροχαίο με παράσυρση ανήλικης στην Παλαιά Εθνική Χανίων – Κισάμου",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΜΕ ΠΑΡΑΣΥΡΣΗ ΑΝΗΛΙΚΗΣ ΣΤΗΝ ΠΑΛΑΙΑ ΕΘΝΙΚΗ ΧΑΝΙΩΝ – ΚΙΣΑΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416815/serres-syllipseis-kai-traymatismoi-apo-ta-epeisodia-sti-domi-sintikis/",
-        "https://www.kathimerini.gr/society/564416809/chersonisos-treis-syllipseis-gia-alkool-se-anilikoys/"
+        "https://www.kathimerini.gr/society/564416827/trochaio-me-parasyrsi-anilikis-stin-palaia-ethniki-chanion-kisamoy/",
+        "https://www.kathimerini.gr/society/564416821/kairos-epimenei-o-kaysonas-eos-kai-40-vathmoys-i-thermokrasia/"
       ],
-      "seen_at_utc": "2026-08-23T10:30:10.223759+00:00"
+      "seen_at_utc": "2026-08-23T10:51:31.060889+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868400/sidiki-17-sullipseis-meta-tin-exegersi-sti-domi-se-exelixi-i-katametrisi-gia-tuhon-drapetes/?utm_source=rss",
-      "title": "Σιντική: 17 συλλήψεις μετά την εξέγερση στη δομή, σε εξέλιξη η καταμέτρηση για τυχόν δραπέτες",
-      "normalized_title": "ΣΙΝΤΙΚΗ: 17 ΣΥΛΛΗΨΕΙΣ ΜΕΤΑ ΤΗΝ ΕΞΕΓΕΡΣΗ ΣΤΗ ΔΟΜΗ, ΣΕ ΕΞΕΛΙΞΗ Η ΚΑΤΑΜΕΤΡΗΣΗ ΓΙΑ ΤΥΧΟΝ ΔΡΑΠΕΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1868403/kausonas-diarkeias-sto-telos-augoustou-ta-prognostika-modela-sumfonoun-gia-akraies-thermokrasies/?utm_source=rss",
+      "title": "Καύσωνας διαρκείας στο τέλος Αυγούστου: Τα προγνωστικά μοντέλα «συμφωνούν» για ακραίες θερμοκρασίες",
+      "normalized_title": "ΚΑΥΣΩΝΑΣ ΔΙΑΡΚΕΙΑΣ ΣΤΟ ΤΕΛΟΣ ΑΥΓΟΥΣΤΟΥ: ΤΑ ΠΡΟΓΝΩΣΤΙΚΑ ΜΟΝΤΕΛΑ «ΣΥΜΦΩΝΟΥΝ» ΓΙΑ ΑΚΡΑΙΕΣ ΘΕΡΜΟΚΡΑΣΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868400/sidiki-17-sullipseis-meta-tin-exegersi-sti-domi-se-exelixi-i-katametrisi-gia-tuhon-drapetes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868403/kausonas-diarkeias-sto-telos-augoustou-ta-prognostika-modela-sumfonoun-gia-akraies-thermokrasies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868402/kataggelia-gia-adisimitiko-epeisodio-se-bar-tis-athinas-mou-zitisan-na-fugo-epeidi-eimai-evraios/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868401/nea-smurni-den-mou-eihe-pei-tipota-se-sok-i-mitera-tis-45hronis-emathe-prin-ligi-ora-gia-ti-dolofonia-tis-koris-tis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T10:30:10.223885+00:00"
+      "seen_at_utc": "2026-08-23T10:51:31.060958+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452661/olympos-pos-egine-i-tragodia-i-moiraia-ptosi-toy-40hronoy-sti-haradra/",
-      "title": "Όλυμπος: Πώς έγινε η τραγωδία – Η μοιραία πτώση του 40χρονου στη χαράδρα",
-      "normalized_title": "ΟΛΥΜΠΟΣ: ΠΩΣ ΕΓΙΝΕ Η ΤΡΑΓΩΔΙΑ – Η ΜΟΙΡΑΙΑ ΠΤΩΣΗ ΤΟΥ 40ΧΡΟΝΟΥ ΣΤΗ ΧΑΡΑΔΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1452670/fotia-sto-spathovoyni-korinthias-ishyres-dynameis-sto-simeio/",
+      "title": "Φωτιά στο Σπαθοβούνι Κορινθίας – Ισχυρές δυνάμεις στο σημείο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΣΠΑΘΟΒΟΥΝΙ ΚΟΡΙΝΘΙΑΣ – ΙΣΧΥΡΕΣ ΔΥΝΑΜΕΙΣ ΣΤΟ ΣΗΜΕΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452661/olympos-pos-egine-i-tragodia-i-moiraia-ptosi-toy-40hronoy-sti-haradra/",
-        "https://www.efsyn.gr/politiki/1452383/dihasmos-sti-nd-i-rixi-mitsotaki-karamanli-kai-samara-kai-i-mahi-gia-tin-epomeni-imera/"
+        "https://www.efsyn.gr/ellada/1452670/fotia-sto-spathovoyni-korinthias-ishyres-dynameis-sto-simeio/",
+        "https://www.efsyn.gr/ellada/1452392/halkidiki-leipsydria-afalatosi-kai-to-fiasko-me-to-fragma-havria/",
+        "https://www.efsyn.gr/ellada/1452664/serres-epeisodia-metaxy-metanaston-kai-elas-me-fthores-kai-petropolemo/"
       ],
-      "seen_at_utc": "2026-08-23T10:30:10.223856+00:00"
+      "seen_at_utc": "2026-08-23T10:51:31.060938+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/greece/fotia-sto-spathovouni-korinthias/",
-      "title": "Φωτιά στο Σπαθοβούνι Κορινθίας",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΣΠΑΘΟΒΟΥΝΙ ΚΟΡΙΝΘΙΑΣ",
+      "url": "https://www.in.gr/2026/08/23/greece/lesvos-taxyploo-prosarakse-se-vraxonisida-traymatistike-o-60xronos-xeiristis-tou-skafous/",
+      "title": "Ταχύπλοο προσάραξε σε βραχονησίδα - Τραυματίστηκε ο 60χρονος χειριστής του σκάφους",
+      "normalized_title": "ΤΑΧΥΠΛΟΟ ΠΡΟΣΑΡΑΞΕ ΣΕ ΒΡΑΧΟΝΗΣΙΔΑ - ΤΡΑΥΜΑΤΙΣΤΗΚΕ Ο 60ΧΡΟΝΟΣ ΧΕΙΡΙΣΤΗΣ ΤΟΥ ΣΚΑΦΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/greece/fotia-sto-spathovouni-korinthias/"
+        "https://www.in.gr/2026/08/23/greece/lesvos-taxyploo-prosarakse-se-vraxonisida-traymatistike-o-60xronos-xeiristis-tou-skafous/",
+        "https://www.in.gr/2026/08/23/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-23-08-29-08-2026/",
+        "https://www.in.gr/2026/08/23/sports/apotheothike-apo-ton-fampregas-o-douvikas-exei-nootropia-pou-spania-synantas-sto-simerino-podosfairo/",
+        "https://www.in.gr/2026/08/23/greece/fotia-portokali-synagermos-gia-poly-ypsilo-kindyno-ti-deytera-deite-tis-perioxes/"
       ],
-      "seen_at_utc": "2026-08-23T10:30:10.223801+00:00"
+      "seen_at_utc": "2026-08-23T10:51:31.060922+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T10:30:10.223980+00:00"
+  "updated_at_utc": "2026-08-23T10:51:31.061041+00:00"
 }
