@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564416872/choirini-tigania-me-ikariotiko-pramneio-oino/",
-      "title": "Χοιρινή τηγανιά με ικαριώτικο Πράμνειο οίνο",
-      "normalized_title": "ΧΟΙΡΙΝΗ ΤΗΓΑΝΙΑ ΜΕ ΙΚΑΡΙΩΤΙΚΟ ΠΡΑΜΝΕΙΟ ΟΙΝΟ",
+      "url": "https://www.kathimerini.gr/society/564416878/epistrefoyn-oi-adeioychoi-kinisi-sta-limania-tis-attikis/",
+      "title": "Επιστρέφουν οι αδειούχοι – Κίνηση στα λιμάνια της Αττικής",
+      "normalized_title": "ΕΠΙΣΤΡΕΦΟΥΝ ΟΙ ΑΔΕΙΟΥΧΟΙ – ΚΙΝΗΣΗ ΣΤΑ ΛΙΜΑΝΙΑ ΤΗΣ ΑΤΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564416872/choirini-tigania-me-ikariotiko-pramneio-oino/"
+        "https://www.kathimerini.gr/society/564416878/epistrefoyn-oi-adeioychoi-kinisi-sta-limania-tis-attikis/"
       ],
-      "seen_at_utc": "2026-08-23T12:30:01.736050+00:00"
+      "seen_at_utc": "2026-08-23T12:51:13.618025+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868432/sullipsi-32hronou-sti-florina-gia-stalking-stin-italia-ekkremouse-se-varos-tou-europaiko-edalma/?utm_source=rss",
-      "title": "Σύλληψη 32χρονου στη Φλώρινα για stalking στην Ιταλία, εκκρεμούσε σε βάρος του Ευρωπαϊκό Ένταλμα",
-      "normalized_title": "ΣΥΛΛΗΨΗ 32ΧΡΟΝΟΥ ΣΤΗ ΦΛΩΡΙΝΑ ΓΙΑ STALKING ΣΤΗΝ ΙΤΑΛΙΑ, ΕΚΚΡΕΜΟΥΣΕ ΣΕ ΒΑΡΟΣ ΤΟΥ ΕΥΡΩΠΑΙΚΟ ΕΝΤΑΛΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1868439/fotia-tora-stin-periohi-giannota-larisas-sikothikan-3-aeroskafi-kai-1-elikoptero/?utm_source=rss",
+      "title": "Φωτιά τώρα στην περιοχή Γιαννωτά Λάρισας, σηκώθηκαν 3 αεροσκάφη και 1 ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΓΙΑΝΝΩΤΑ ΛΑΡΙΣΑΣ, ΣΗΚΩΘΗΚΑΝ 3 ΑΕΡΟΣΚΑΦΗ ΚΑΙ 1 ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868432/sullipsi-32hronou-sti-florina-gia-stalking-stin-italia-ekkremouse-se-varos-tou-europaiko-edalma/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868439/fotia-tora-stin-periohi-giannota-larisas-sikothikan-3-aeroskafi-kai-1-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868436/aimatiri-epithesi-sti-voula-andras-traumatise-epivati-me-spasmeno-boukali-mesa-sto-tram-kai-exafanistike/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T12:30:01.736147+00:00"
+      "seen_at_utc": "2026-08-23T12:51:13.618176+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1452690/erlingk-haalant-telos-to-haraktiristiko-makry-malli-agnoristos-meta-to-neo-toy-koyrema-eikones-vinteo/",
-      "title": "Έρλινγκ Χάαλαντ: Τέλος το χαρακτηριστικό μακρύ μαλλί – Αγνώριστος μετά το νέο του κούρεμα [εικόνες – βίντεο]",
-      "normalized_title": "ΕΡΛΙΝΓΚ ΧΑΑΛΑΝΤ: ΤΕΛΟΣ ΤΟ ΧΑΡΑΚΤΗΡΙΣΤΙΚΟ ΜΑΚΡΥ ΜΑΛΛΙ – ΑΓΝΩΡΙΣΤΟΣ ΜΕΤΑ ΤΟ ΝΕΟ ΤΟΥ ΚΟΥΡΕΜΑ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1452692/thessaloniki-synelifthi-48hronos-astynomikos-meta-apo-kataggelia-gia-viasmo-kai-endooikogeneiaki-via/",
+      "title": "Θεσσαλονίκη: Συνελήφθη 48χρονος αστυνομικός μετά από καταγγελία για βιασμό και ενδοοικογενειακή βία",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 48ΧΡΟΝΟΣ ΑΣΤΥΝΟΜΙΚΟΣ ΜΕΤΑ ΑΠΟ ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΒΙΑΣΜΟ ΚΑΙ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΒΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1452690/erlingk-haalant-telos-to-haraktiristiko-makry-malli-agnoristos-meta-to-neo-toy-koyrema-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1452692/thessaloniki-synelifthi-48hronos-astynomikos-meta-apo-kataggelia-gia-viasmo-kai-endooikogeneiaki-via/"
       ],
-      "seen_at_utc": "2026-08-23T12:30:01.736122+00:00"
+      "seen_at_utc": "2026-08-23T12:51:13.618141+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/politics/synedriazei-ti-deytera-to-ypourgiko-symvoulio-i-atzenta/",
-      "title": "Συνεδριάζει τη Δευτέρα το Υπουργικό Συμβούλιο – Η ατζέντα",
-      "normalized_title": "ΣΥΝΕΔΡΙΑΖΕΙ ΤΗ ΔΕΥΤΕΡΑ ΤΟ ΥΠΟΥΡΓΙΚΟ ΣΥΜΒΟΥΛΙΟ – Η ΑΤΖΕΝΤΑ",
+      "url": "https://www.in.gr/2026/08/23/politics/kke-kata-mitsotaki-epimenei-na-kryvei-oti-o-dialogos-me-tin-tourkia-simainei-ypoxoriseis/",
+      "title": "ΚΚΕ κατά Μητσοτάκη: Επιμένει να κρύβει ότι ο “διάλογος” με την Τουρκία σημαίνει υποχωρήσεις",
+      "normalized_title": "ΚΚΕ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: ΕΠΙΜΕΝΕΙ ΝΑ ΚΡΥΒΕΙ ΟΤΙ Ο “ΔΙΑΛΟΓΟΣ” ΜΕ ΤΗΝ ΤΟΥΡΚΙΑ ΣΗΜΑΙΝΕΙ ΥΠΟΧΩΡΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/politics/synedriazei-ti-deytera-to-ypourgiko-symvoulio-i-atzenta/"
+        "https://www.in.gr/2026/08/23/politics/kke-kata-mitsotaki-epimenei-na-kryvei-oti-o-dialogos-me-tin-tourkia-simainei-ypoxoriseis/",
+        "https://www.in.gr/2026/08/23/sports/basketball/ethniki-mpasket-traymatistike-o-xaralampopoulos-kai-xanei-oukrania-kai-ispania/",
+        "https://www.in.gr/2026/08/23/politics/glavinas-sti-deth-tha-deiksoume-tin-programmatiki-mas-yperoxi-i-meiosi-tis-emmesis-forologias-sto-epikentro/",
+        "https://www.in.gr/2026/08/23/world/londino-kathreftis-ton-fyletikon-diakriseon-oi-aneksixniastes-dolofonies-9-stis-10-exoun-thymata-ethnotikon-meionotiton/",
+        "https://www.in.gr/2026/08/23/life/culture-live/telos-epoxis-gia-ton-istoriko-kinimatografo-atlantis-sti-dafni-meta-apo-70-xronia-leitourgias/"
       ],
-      "seen_at_utc": "2026-08-23T12:30:01.736085+00:00"
+      "seen_at_utc": "2026-08-23T12:51:13.618100+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T12:30:01.736224+00:00"
+  "updated_at_utc": "2026-08-23T12:51:13.618274+00:00"
 }
