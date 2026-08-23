@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564413548/dodeka-chronia-sklaves/",
-      "title": "Δώδεκα χρόνια σκλάβες",
-      "normalized_title": "ΔΩΔΕΚΑ ΧΡΟΝΙΑ ΣΚΛΑΒΕΣ",
+      "url": "https://www.kathimerini.gr/culture/564415678/ena-theatro-athoryvo-choris-stigma/",
+      "title": "Ενα θέατρο «αθόρυβο», χωρίς στίγμα",
+      "normalized_title": "ΕΝΑ ΘΕΑΤΡΟ «ΑΘΟΡΥΒΟ», ΧΩΡΙΣ ΣΤΙΓΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564413548/dodeka-chronia-sklaves/",
-        "https://www.kathimerini.gr/politics/parties/564414520/sti-deth-alla-choris-programma-thessalonikis/",
-        "https://www.kathimerini.gr/world/564414619/sok-kai-deos-se-4-metopa/"
+        "https://www.kathimerini.gr/culture/564415678/ena-theatro-athoryvo-choris-stigma/"
       ],
-      "seen_at_utc": "2026-08-23T18:17:14.414168+00:00"
+      "seen_at_utc": "2026-08-23T18:30:00.146889+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,32 +1268,25 @@
       "seen_at_utc": "2026-08-23T18:17:14.414329+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1452791/to-iran-anakoinose-oti-anakalypse-nea-koitasmata-aerioy-anafores-gia-pano-apo-160-dis-kyvika-metra/",
-      "title": "Το Ιράν ανακοίνωσε ότι ανακάλυψε νέα κοιτάσματα αερίου – Αναφορές για πάνω από 160 δισ. κυβικά μέτρα",
-      "normalized_title": "ΤΟ ΙΡΑΝ ΑΝΑΚΟΙΝΩΣΕ ΟΤΙ ΑΝΑΚΑΛΥΨΕ ΝΕΑ ΚΟΙΤΑΣΜΑΤΑ ΑΕΡΙΟΥ – ΑΝΑΦΟΡΕΣ ΓΙΑ ΠΑΝΩ ΑΠΟ 160 ΔΙΣ. ΚΥΒΙΚΑ ΜΕΤΡΑ",
+      "url": "https://www.efsyn.gr/politiki/1452797/diaoloskorpismata/",
+      "title": "Διαολοσκορπίσματα",
+      "normalized_title": "ΔΙΑΟΛΟΣΚΟΡΠΙΣΜΑΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1452791/to-iran-anakoinose-oti-anakalypse-nea-koitasmata-aerioy-anafores-gia-pano-apo-160-dis-kyvika-metra/",
-        "https://www.efsyn.gr/athlitismos/1452420/super-league-ayton-ton-titlo-poios-tha-ton-parei/",
-        "https://www.efsyn.gr/oikonomia/1452423/disekatommyria-stin-tehniti-noimosyni-me-elliniko-dna/",
-        "https://www.efsyn.gr/kosmos/1452787/sokaristiko-vinteo-apo-israilino-pligma-sti-gaza-toylahiston-treis-nekroi-anamesa-toys-mia-4hroni/"
+        "https://www.efsyn.gr/politiki/1452797/diaoloskorpismata/"
       ],
-      "seen_at_utc": "2026-08-23T18:17:14.414291+00:00"
+      "seen_at_utc": "2026-08-23T18:30:00.146962+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/greece/xania-pethane-i-41xroni-touristria-pou-katerreyse-eno-ekane-pezoporia-sta-falasarna/",
-      "title": "Χανιά: Πέθανε η 41χρονη τουρίστρια που κατέρρευσε ενώ έκανε πεζοπορία στα Φαλάσαρνα",
-      "normalized_title": "ΧΑΝΙΑ: ΠΕΘΑΝΕ Η 41ΧΡΟΝΗ ΤΟΥΡΙΣΤΡΙΑ ΠΟΥ ΚΑΤΕΡΡΕΥΣΕ ΕΝΩ ΕΚΑΝΕ ΠΕΖΟΠΟΡΙΑ ΣΤΑ ΦΑΛΑΣΑΡΝΑ",
+      "url": "https://www.in.gr/matchcenter/5943230/",
+      "title": "LIVE: Παναιτωλικός – Αστέρας Τρίπολης",
+      "normalized_title": "LIVE: ΠΑΝΑΙΤΩΛΙΚΟΣ – ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/greece/xania-pethane-i-41xroni-touristria-pou-katerreyse-eno-ekane-pezoporia-sta-falasarna/",
-        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/eksi-krati-tis-ee-zitoun-ti-thespisi-efapaks-forou-stis-petrelaikes-gia-na-metriastei-o-antiktypos-tou-polemou/",
-        "https://www.in.gr/2026/08/23/sports/football/nioukastl-liverpoul-2-2-glitosan-tin-itta-sto-909-oi-kokkinoi/",
-        "https://www.in.gr/2026/08/23/greece/limni-stin-igoumenitsa-vaftike-roz-se-ti-mporei-na-ofeiletai-to-fainomeno/",
-        "https://www.in.gr/2026/08/23/health/elliniko-giaourti-i-tyri-cottage-poio-apo-ta-dyo-einai-pio-ygieino-symfona-me-tous-eidikous/",
-        "https://www.in.gr/2026/08/23/greece/salamina-synelifthi-49xronos-pou-ekane-ergasias-ilektrosygkollisis-kai-prokalese-fotia/",
-        "https://www.in.gr/2026/08/23/politics/epikairotita/i-elas-perna-stin-antepithesi-o-mitsotakis-tremei-ti-sygkrisi-anamesa-stin-entimotita-kai-ti-diafthora/"
+        "https://www.in.gr/matchcenter/5943230/",
+        "https://www.in.gr/2026/08/23/stories/i-smart-pitsa-tis-neas-yorkis-mia-treli-idea-me-fanatikous-pelates/",
+        "https://www.in.gr/2026/08/23/sports/on-field/o-serki-esose-ton-mareska/"
       ],
-      "seen_at_utc": "2026-08-23T18:17:14.414241+00:00"
+      "seen_at_utc": "2026-08-23T18:30:00.146935+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T18:17:14.414425+00:00"
+  "updated_at_utc": "2026-08-23T18:30:00.147044+00:00"
 }
