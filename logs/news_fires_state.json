@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564415009/i-energeiaki-krisi-isos-molis-xekinise/",
-      "title": "Η ενεργειακή κρίση ίσως μόλις ξεκίνησε",
-      "normalized_title": "Η ΕΝΕΡΓΕΙΑΚΗ ΚΡΙΣΗ ΙΣΩΣ ΜΟΛΙΣ ΞΕΚΙΝΗΣΕ",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564416917/katsikaki-argomageiremeno-me-petimezi/",
+      "title": "Κατσικάκι αργομαγειρεμένο με πετιμέζι",
+      "normalized_title": "ΚΑΤΣΙΚΑΚΙ ΑΡΓΟΜΑΓΕΙΡΕΜΕΝΟ ΜΕ ΠΕΤΙΜΕΖΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564415009/i-energeiaki-krisi-isos-molis-xekinise/"
+        "https://www.kathimerini.gr/k/gastronomos/564416917/katsikaki-argomageiremeno-me-petimezi/",
+        "https://www.kathimerini.gr/society/564416926/fotia-ston-agio-nikolao-lakonias-ischyres-pyrosvestikes-dynameis-stin-periochi/"
       ],
-      "seen_at_utc": "2026-08-23T14:30:17.182489+00:00"
+      "seen_at_utc": "2026-08-23T14:51:25.411239+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868463/louomenoi-se-paralia-tis-euvoias-vrikan-andra-mesa-sti-thalassa-horis-tis-aisthiseis-tou/?utm_source=rss",
-      "title": "Λουόμενοι σε παραλία της Εύβοιας βρήκαν άνδρα μέσα στη θάλασσα χωρίς τις αισθήσεις του",
-      "normalized_title": "ΛΟΥΟΜΕΝΟΙ ΣΕ ΠΑΡΑΛΙΑ ΤΗΣ ΕΥΒΟΙΑΣ ΒΡΗΚΑΝ ΑΝΔΡΑ ΜΕΣΑ ΣΤΗ ΘΑΛΑΣΣΑ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1868468/gemisan-oi-paralies-tis-attikis-gia-mia-anasa-drosias-epimenei-o-kausonas-erhodai-40aria-kai-ti-deutera/?utm_source=rss",
+      "title": "Γέμισαν οι παραλίες της Αττικής για μια ανάσα δροσιάς: Επιμένει ο καύσωνας, έρχονται 40άρια και τη Δευτέρα",
+      "normalized_title": "ΓΕΜΙΣΑΝ ΟΙ ΠΑΡΑΛΙΕΣ ΤΗΣ ΑΤΤΙΚΗΣ ΓΙΑ ΜΙΑ ΑΝΑΣΑ ΔΡΟΣΙΑΣ: ΕΠΙΜΕΝΕΙ Ο ΚΑΥΣΩΝΑΣ, ΕΡΧΟΝΤΑΙ 40ΑΡΙΑ ΚΑΙ ΤΗ ΔΕΥΤΕΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868463/louomenoi-se-paralia-tis-euvoias-vrikan-andra-mesa-sti-thalassa-horis-tis-aisthiseis-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868468/gemisan-oi-paralies-tis-attikis-gia-mia-anasa-drosias-epimenei-o-kausonas-erhodai-40aria-kai-ti-deutera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T14:17:26.179849+00:00"
+      "seen_at_utc": "2026-08-23T14:51:25.411351+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452711/foties-se-epifylaki-ayrio-deytera-i-attiki-kai-11-nomoi-tis-horas-poly-ypsilos-kindynos/",
-      "title": "Φωτιές: Σε επιφυλακή αύριο Δευτέρα η Αττική και 11 νομοί της χώρας – Πολύ υψηλός κίνδυνος",
-      "normalized_title": "ΦΩΤΙΕΣ: ΣΕ ΕΠΙΦΥΛΑΚΗ ΑΥΡΙΟ ΔΕΥΤΕΡΑ Η ΑΤΤΙΚΗ ΚΑΙ 11 ΝΟΜΟΙ ΤΗΣ ΧΩΡΑΣ – ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1452714/atyhima-sok-toy-ferstapen-stin-ollandia-prosekroyse-stis-mpares-tis-pistas-vinteo/",
+      "title": "Ατύχημα-σοκ του Φερστάπεν στην Ολλανδία – Προσέκρουσε στις μπάρες της πίστας [βίντεο]",
+      "normalized_title": "ΑΤΥΧΗΜΑ-ΣΟΚ ΤΟΥ ΦΕΡΣΤΑΠΕΝ ΣΤΗΝ ΟΛΛΑΝΔΙΑ – ΠΡΟΣΕΚΡΟΥΣΕ ΣΤΙΣ ΜΠΑΡΕΣ ΤΗΣ ΠΙΣΤΑΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452711/foties-se-epifylaki-ayrio-deytera-i-attiki-kai-11-nomoi-tis-horas-poly-ypsilos-kindynos/"
+        "https://www.efsyn.gr/athlitismos/1452714/atyhima-sok-toy-ferstapen-stin-ollandia-prosekroyse-stis-mpares-tis-pistas-vinteo/"
       ],
-      "seen_at_utc": "2026-08-23T14:30:17.182582+00:00"
+      "seen_at_utc": "2026-08-23T14:51:25.411318+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/greece/synagermos-stin-politiki-prostasia-se-katastasi-red-code-i-attiki-kai-oles-oi-perioxes-me-poly-ypsilo-kindyno-pyrkagias/",
-      "title": "Συναγερμός στην Πολιτική Προστασία – Σε κατάσταση red code η Αττική και όλες οι περιοχές με πολύ υψηλό κίνδυνο πυρκαγιάς",
-      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΗΝ ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑ – ΣΕ ΚΑΤΑΣΤΑΣΗ RED CODE Η ΑΤΤΙΚΗ ΚΑΙ ΟΛΕΣ ΟΙ ΠΕΡΙΟΧΕΣ ΜΕ ΠΟΛΥ ΥΨΗΛΟ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.in.gr/2026/08/23/greece/salamina-to-challenge-metaksy-anilikon-sto-epikentro-ton-arxon-gia-ti-fotia/",
+      "title": "Σαλαμίνα: Το challenge μεταξύ ανηλίκων στο επίκεντρο των Αρχών για τη φωτιά",
+      "normalized_title": "ΣΑΛΑΜΙΝΑ: ΤΟ CHALLENGE ΜΕΤΑΞΥ ΑΝΗΛΙΚΩΝ ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΤΩΝ ΑΡΧΩΝ ΓΙΑ ΤΗ ΦΩΤΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/greece/synagermos-stin-politiki-prostasia-se-katastasi-red-code-i-attiki-kai-oles-oi-perioxes-me-poly-ypsilo-kindyno-pyrkagias/"
+        "https://www.in.gr/2026/08/23/greece/salamina-to-challenge-metaksy-anilikon-sto-epikentro-ton-arxon-gia-ti-fotia/",
+        "https://www.in.gr/2026/08/23/greece/fotia-sto-pentakorfo-aitoloakarnanias-epixeiroun-2-aeroskafi/",
+        "https://www.in.gr/2026/08/23/greece/epistrofi-ton-ekdromeon-stin-athina-simeioton-i-kinisi-se-kineta-kai-megara/",
+        "https://www.in.gr/2026/08/23/greece/epimenei-o-kaysonas-pou-xtypise-40aria-o-ydrargyros-kosmosyrroi-stis-paralies-vinteo/",
+        "https://www.in.gr/2026/08/23/sports/football/mpornto-dakrya-orgi-kai-o-efialtis-tis-dialysis/"
       ],
-      "seen_at_utc": "2026-08-23T14:30:17.182540+00:00"
+      "seen_at_utc": "2026-08-23T14:51:25.411287+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T14:30:17.182663+00:00"
+  "updated_at_utc": "2026-08-23T14:51:25.411426+00:00"
 }
