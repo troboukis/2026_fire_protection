@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416800/cheiropedes-se-48chrono-astynomiko-meta-apo-kataggelia-gia-viasmo-endooikogeneiaki-via-kai-exyvrisi/",
-      "title": "Θεσσαλονίκη: Σύλληψη αστυνομικού μετά από καταγγελία για βιασμό, ενδοοικογενειακή βία και εξύβριση",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΛΛΗΨΗ ΑΣΤΥΝΟΜΙΚΟΥ ΜΕΤΑ ΑΠΟ ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΒΙΑΣΜΟ, ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΒΙΑ ΚΑΙ ΕΞΥΒΡΙΣΗ",
+      "url": "https://www.kathimerini.gr/society/564416815/serres-syllipseis-kai-traymatismoi-apo-ta-epeisodia-sti-domi-sintikis/",
+      "title": "Σέρρες: Συλλήψεις και τραυματισμοί από τα επεισόδια στη δομή Σιντικής",
+      "normalized_title": "ΣΕΡΡΕΣ: ΣΥΛΛΗΨΕΙΣ ΚΑΙ ΤΡΑΥΜΑΤΙΣΜΟΙ ΑΠΟ ΤΑ ΕΠΕΙΣΟΔΙΑ ΣΤΗ ΔΟΜΗ ΣΙΝΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416800/cheiropedes-se-48chrono-astynomiko-meta-apo-kataggelia-gia-viasmo-endooikogeneiaki-via-kai-exyvrisi/"
+        "https://www.kathimerini.gr/society/564416815/serres-syllipseis-kai-traymatismoi-apo-ta-epeisodia-sti-domi-sintikis/",
+        "https://www.kathimerini.gr/society/564416809/chersonisos-treis-syllipseis-gia-alkool-se-anilikoys/"
       ],
-      "seen_at_utc": "2026-08-23T10:17:01.603692+00:00"
+      "seen_at_utc": "2026-08-23T10:30:10.223759+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,40 +1260,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868397/pos-na-prostateuteite-apo-ton-io-tou-dutikou-neilou-oi-6-vasikes-kiniseis-kai-oi-pagides-stous-idiotikous-horous/?utm_source=rss",
-      "title": "Πώς να προστατευτείτε από τον Ιό του Δυτικού Νείλου: Οι 6 βασικές κινήσεις και οι παγίδες στους ιδιωτικούς χώρους",
-      "normalized_title": "ΠΩΣ ΝΑ ΠΡΟΣΤΑΤΕΥΤΕΙΤΕ ΑΠΟ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΟΙ 6 ΒΑΣΙΚΕΣ ΚΙΝΗΣΕΙΣ ΚΑΙ ΟΙ ΠΑΓΙΔΕΣ ΣΤΟΥΣ ΙΔΙΩΤΙΚΟΥΣ ΧΩΡΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1868400/sidiki-17-sullipseis-meta-tin-exegersi-sti-domi-se-exelixi-i-katametrisi-gia-tuhon-drapetes/?utm_source=rss",
+      "title": "Σιντική: 17 συλλήψεις μετά την εξέγερση στη δομή, σε εξέλιξη η καταμέτρηση για τυχόν δραπέτες",
+      "normalized_title": "ΣΙΝΤΙΚΗ: 17 ΣΥΛΛΗΨΕΙΣ ΜΕΤΑ ΤΗΝ ΕΞΕΓΕΡΣΗ ΣΤΗ ΔΟΜΗ, ΣΕ ΕΞΕΛΙΞΗ Η ΚΑΤΑΜΕΤΡΗΣΗ ΓΙΑ ΤΥΧΟΝ ΔΡΑΠΕΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868397/pos-na-prostateuteite-apo-ton-io-tou-dutikou-neilou-oi-6-vasikes-kiniseis-kai-oi-pagides-stous-idiotikous-horous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868391/fotia-tora-sto-spathovouni-korinthias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868389/tahuploo-prosaraxe-se-vrahonisida-sti-lesvo-traumatistike-o-60hronos-heiristis-tou-skafous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868400/sidiki-17-sullipseis-meta-tin-exegersi-sti-domi-se-exelixi-i-katametrisi-gia-tuhon-drapetes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T10:17:01.603839+00:00"
+      "seen_at_utc": "2026-08-23T10:30:10.223885+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452655/gynaikoktonia-sti-nea-smyrni-treis-pyrovolismoi-kai-to-kinitro-to-peristatiko-toy-2024-poy-exetazoyn-oi-arhes/",
-      "title": "Γυναικοκτονία στη Νέα Σμύρνη: Τρεις πυροβολισμοί και το κίνητρο – Το περιστατικό του 2024 που εξετάζουν οι Αρχές",
-      "normalized_title": "ΓΥΝΑΙΚΟΚΤΟΝΙΑ ΣΤΗ ΝΕΑ ΣΜΥΡΝΗ: ΤΡΕΙΣ ΠΥΡΟΒΟΛΙΣΜΟΙ ΚΑΙ ΤΟ ΚΙΝΗΤΡΟ – ΤΟ ΠΕΡΙΣΤΑΤΙΚΟ ΤΟΥ 2024 ΠΟΥ ΕΞΕΤΑΖΟΥΝ ΟΙ ΑΡΧΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1452661/olympos-pos-egine-i-tragodia-i-moiraia-ptosi-toy-40hronoy-sti-haradra/",
+      "title": "Όλυμπος: Πώς έγινε η τραγωδία – Η μοιραία πτώση του 40χρονου στη χαράδρα",
+      "normalized_title": "ΟΛΥΜΠΟΣ: ΠΩΣ ΕΓΙΝΕ Η ΤΡΑΓΩΔΙΑ – Η ΜΟΙΡΑΙΑ ΠΤΩΣΗ ΤΟΥ 40ΧΡΟΝΟΥ ΣΤΗ ΧΑΡΑΔΡΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452655/gynaikoktonia-sti-nea-smyrni-treis-pyrovolismoi-kai-to-kinitro-to-peristatiko-toy-2024-poy-exetazoyn-oi-arhes/",
-        "https://www.efsyn.gr/stiles/1452456/ta-paramorfotika-katoptra-tis-ametanoitis-aytapatis-mas/",
-        "https://www.efsyn.gr/politiki/1452647/to-mpravo-toy-polaki-ston-spirtzi-gia-to-arthro-toy-stin-ef-syn/"
+        "https://www.efsyn.gr/ellada/1452661/olympos-pos-egine-i-tragodia-i-moiraia-ptosi-toy-40hronoy-sti-haradra/",
+        "https://www.efsyn.gr/politiki/1452383/dihasmos-sti-nd-i-rixi-mitsotaki-karamanli-kai-samara-kai-i-mahi-gia-tin-epomeni-imera/"
       ],
-      "seen_at_utc": "2026-08-23T10:17:01.603790+00:00"
+      "seen_at_utc": "2026-08-23T10:30:10.223856+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/language-books/theos-kai-filosofia/",
-      "title": "Θεός και φιλοσοφία",
-      "normalized_title": "ΘΕΟΣ ΚΑΙ ΦΙΛΟΣΟΦΙΑ",
+      "url": "https://www.in.gr/2026/08/23/greece/fotia-sto-spathovouni-korinthias/",
+      "title": "Φωτιά στο Σπαθοβούνι Κορινθίας",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΣΠΑΘΟΒΟΥΝΙ ΚΟΡΙΝΘΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/language-books/theos-kai-filosofia/",
-        "https://www.in.gr/2026/08/23/sports/on-field/olympiakos-ta-anamenomena-zoria-kai-oi-allages-pou-ekanan-ti-diafora/",
-        "https://www.in.gr/2026/08/23/greece/anakyklosi-tou-egklovismou-kai-meta-apelaseis-417-metanastes-apo-tin-kriti-metaferontai-se-samo-kai-lesvo/",
-        "https://www.in.gr/2026/08/23/go-fun/fizz/o-tom-krouz-eksafanistike-mesa-ston-neo-tou-rolo-ena-pragmatiko-alma-sto-agnosto/",
-        "https://www.in.gr/2026/08/23/greece/nea-smyrni-pos-estise-to-karteri-thanatou-stin-45xroni-oi-arxes-anazitoun-to-kinitro-tis-dolofonias/"
+        "https://www.in.gr/2026/08/23/greece/fotia-sto-spathovouni-korinthias/"
       ],
-      "seen_at_utc": "2026-08-23T10:17:01.603737+00:00"
+      "seen_at_utc": "2026-08-23T10:30:10.223801+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T10:17:01.603942+00:00"
+  "updated_at_utc": "2026-08-23T10:30:10.223980+00:00"
 }
