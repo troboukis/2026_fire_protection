@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417028/thanatiforo-trochaio-sti-nea-ionia-nekros-60chronos-motosykletistis/",
-      "title": "Θανατηφόρο τροχαίο στη Νέα Ιωνία: Νεκρός 60χρονος μοτοσυκλετιστής",
-      "normalized_title": "ΘΑΝΑΤΗΦΟΡΟ ΤΡΟΧΑΙΟ ΣΤΗ ΝΕΑ ΙΩΝΙΑ: ΝΕΚΡΟΣ 60ΧΡΟΝΟΣ ΜΟΤΟΣΥΚΛΕΤΙΣΤΗΣ",
+      "url": "https://www.kathimerini.gr/culture/564413548/dodeka-chronia-sklaves/",
+      "title": "Δώδεκα χρόνια σκλάβες",
+      "normalized_title": "ΔΩΔΕΚΑ ΧΡΟΝΙΑ ΣΚΛΑΒΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417028/thanatiforo-trochaio-sti-nea-ionia-nekros-60chronos-motosykletistis/"
+        "https://www.kathimerini.gr/culture/564413548/dodeka-chronia-sklaves/",
+        "https://www.kathimerini.gr/politics/parties/564414520/sti-deth-alla-choris-programma-thessalonikis/",
+        "https://www.kathimerini.gr/world/564414619/sok-kai-deos-se-4-metopa/"
       ],
-      "seen_at_utc": "2026-08-23T17:51:30.234181+00:00"
+      "seen_at_utc": "2026-08-23T18:17:14.414168+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868521/sunelifthi-o-andras-pou-listeue-ilikiomenes-sti-thessaloniki-meta-apo-pezi-katadioxi/?utm_source=rss",
-      "title": "Συνελήφθη o άνδρας που λήστευε ηλικιωμένες στη Θεσσαλονίκη μετά από πεζή καταδίωξη",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ O ΑΝΔΡΑΣ ΠΟΥ ΛΗΣΤΕΥΕ ΗΛΙΚΙΩΜΕΝΕΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΜΕΤΑ ΑΠΟ ΠΕΖΗ ΚΑΤΑΔΙΩΞΗ",
+      "url": "https://www.protothema.gr/greece/article/1868529/fotia-tora-se-hamili-vlastisi-ston-kosto-tis-parou-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά τώρα σε χαμηλή βλάστηση στον Κώστο της Πάρου, άμεση κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΟΝ ΚΩΣΤΟ ΤΗΣ ΠΑΡΟΥ, ΑΜΕΣΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868521/sunelifthi-o-andras-pou-listeue-ilikiomenes-sti-thessaloniki-meta-apo-pezi-katadioxi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868520/odigouse-me-anoihtes-portes-se-siragga-tis-athinon-korinthou-ston-eisaggelea-i-upothesi-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868519/tha-sti-stiso-kai-tha-se-sakatepso-odigos-leoforeiou-vrizei-kai-apeilei-ilikiomeno-epivati-gia-mia-paratirisi-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868529/fotia-tora-se-hamili-vlastisi-ston-kosto-tis-parou-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T17:51:30.234266+00:00"
+      "seen_at_utc": "2026-08-23T18:17:14.414329+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1452785/iran-oi-nees-kyroseis-poy-apeilei-na-epivalei-i-oyasigkton-tha-apotyhoyn/",
-      "title": "Ιράν: Οι νέες κυρώσεις που απειλεί να επιβάλει η Ουάσιγκτον θα αποτύχουν",
-      "normalized_title": "ΙΡΑΝ: ΟΙ ΝΕΕΣ ΚΥΡΩΣΕΙΣ ΠΟΥ ΑΠΕΙΛΕΙ ΝΑ ΕΠΙΒΑΛΕΙ Η ΟΥΑΣΙΓΚΤΟΝ ΘΑ ΑΠΟΤΥΧΟΥΝ",
+      "url": "https://www.efsyn.gr/kosmos/1452791/to-iran-anakoinose-oti-anakalypse-nea-koitasmata-aerioy-anafores-gia-pano-apo-160-dis-kyvika-metra/",
+      "title": "Το Ιράν ανακοίνωσε ότι ανακάλυψε νέα κοιτάσματα αερίου – Αναφορές για πάνω από 160 δισ. κυβικά μέτρα",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΑΝΑΚΟΙΝΩΣΕ ΟΤΙ ΑΝΑΚΑΛΥΨΕ ΝΕΑ ΚΟΙΤΑΣΜΑΤΑ ΑΕΡΙΟΥ – ΑΝΑΦΟΡΕΣ ΓΙΑ ΠΑΝΩ ΑΠΟ 160 ΔΙΣ. ΚΥΒΙΚΑ ΜΕΤΡΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1452785/iran-oi-nees-kyroseis-poy-apeilei-na-epivalei-i-oyasigkton-tha-apotyhoyn/"
+        "https://www.efsyn.gr/kosmos/1452791/to-iran-anakoinose-oti-anakalypse-nea-koitasmata-aerioy-anafores-gia-pano-apo-160-dis-kyvika-metra/",
+        "https://www.efsyn.gr/athlitismos/1452420/super-league-ayton-ton-titlo-poios-tha-ton-parei/",
+        "https://www.efsyn.gr/oikonomia/1452423/disekatommyria-stin-tehniti-noimosyni-me-elliniko-dna/",
+        "https://www.efsyn.gr/kosmos/1452787/sokaristiko-vinteo-apo-israilino-pligma-sti-gaza-toylahiston-treis-nekroi-anamesa-toys-mia-4hroni/"
       ],
-      "seen_at_utc": "2026-08-23T17:51:30.234244+00:00"
+      "seen_at_utc": "2026-08-23T18:17:14.414291+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/5943231/",
-      "title": "LIVE: ΠΑΟΚ – Λεβαδειακός",
-      "normalized_title": "LIVE: ΠΑΟΚ – ΛΕΒΑΔΕΙΑΚΟΣ",
+      "url": "https://www.in.gr/2026/08/23/greece/xania-pethane-i-41xroni-touristria-pou-katerreyse-eno-ekane-pezoporia-sta-falasarna/",
+      "title": "Χανιά: Πέθανε η 41χρονη τουρίστρια που κατέρρευσε ενώ έκανε πεζοπορία στα Φαλάσαρνα",
+      "normalized_title": "ΧΑΝΙΑ: ΠΕΘΑΝΕ Η 41ΧΡΟΝΗ ΤΟΥΡΙΣΤΡΙΑ ΠΟΥ ΚΑΤΕΡΡΕΥΣΕ ΕΝΩ ΕΚΑΝΕ ΠΕΖΟΠΟΡΙΑ ΣΤΑ ΦΑΛΑΣΑΡΝΑ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/5943231/",
-        "https://www.in.gr/2026/08/23/greece/fotia-stin-perioxi-kostos-stin-paro/",
-        "https://www.in.gr/2026/08/23/greece/voula-vinteo-ntokoumento-meta-tin-aimatiri-symploki-sto-tram/",
-        "https://www.in.gr/2026/08/23/go-fun/social/einai-pragmati-politika-asovari-i-gen-z-i-periptosi-tou-louitzi-mantzione/"
+        "https://www.in.gr/2026/08/23/greece/xania-pethane-i-41xroni-touristria-pou-katerreyse-eno-ekane-pezoporia-sta-falasarna/",
+        "https://www.in.gr/2026/08/23/economy/diethnis-oikonomia/eksi-krati-tis-ee-zitoun-ti-thespisi-efapaks-forou-stis-petrelaikes-gia-na-metriastei-o-antiktypos-tou-polemou/",
+        "https://www.in.gr/2026/08/23/sports/football/nioukastl-liverpoul-2-2-glitosan-tin-itta-sto-909-oi-kokkinoi/",
+        "https://www.in.gr/2026/08/23/greece/limni-stin-igoumenitsa-vaftike-roz-se-ti-mporei-na-ofeiletai-to-fainomeno/",
+        "https://www.in.gr/2026/08/23/health/elliniko-giaourti-i-tyri-cottage-poio-apo-ta-dyo-einai-pio-ygieino-symfona-me-tous-eidikous/",
+        "https://www.in.gr/2026/08/23/greece/salamina-synelifthi-49xronos-pou-ekane-ergasias-ilektrosygkollisis-kai-prokalese-fotia/",
+        "https://www.in.gr/2026/08/23/politics/epikairotita/i-elas-perna-stin-antepithesi-o-mitsotakis-tremei-ti-sygkrisi-anamesa-stin-entimotita-kai-ti-diafthora/"
       ],
-      "seen_at_utc": "2026-08-23T17:51:30.234220+00:00"
+      "seen_at_utc": "2026-08-23T18:17:14.414241+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T17:51:30.234358+00:00"
+  "updated_at_utc": "2026-08-23T18:17:14.414425+00:00"
 }
