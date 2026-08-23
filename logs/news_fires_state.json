@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564416752/kerkyra-odigos-patise-kai-skotose-skylo-poy-koimotan/",
-      "title": "Κέρκυρα: Οδηγός πάτησε και σκότωσε σκύλο που κοιμόταν",
-      "normalized_title": "ΚΕΡΚΥΡΑ: ΟΔΗΓΟΣ ΠΑΤΗΣΕ ΚΑΙ ΣΚΟΤΩΣΕ ΣΚΥΛΟ ΠΟΥ ΚΟΙΜΟΤΑΝ",
+      "url": "https://www.kathimerini.gr/society/564416761/mayrovoynio-synelifthi-andras-gia-ton-viasmo-22chronis-stin-chalkidiki/",
+      "title": "Μαυροβούνιο: Συνελήφθη άνδρας για τον βιασμό 22χρονης στην Χαλκιδική",
+      "normalized_title": "ΜΑΥΡΟΒΟΥΝΙΟ: ΣΥΝΕΛΗΦΘΗ ΑΝΔΡΑΣ ΓΙΑ ΤΟΝ ΒΙΑΣΜΟ 22ΧΡΟΝΗΣ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564416752/kerkyra-odigos-patise-kai-skotose-skylo-poy-koimotan/"
+        "https://www.kathimerini.gr/society/564416761/mayrovoynio-synelifthi-andras-gia-ton-viasmo-22chronis-stin-chalkidiki/",
+        "https://www.kathimerini.gr/society/564416758/acha-a-antras-apeiloyse-na-aytopyrpolithei-mesa-se-astynomiko-tmima/"
       ],
-      "seen_at_utc": "2026-08-23T07:51:12.485181+00:00"
+      "seen_at_utc": "2026-08-23T08:17:04.687883+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868333/andras-apeilouse-na-loustei-me-venzini-sto-astunomiko-tmima-dutikis-ahaias/?utm_source=rss",
-      "title": "Άνδρας απειλούσε να λουστεί με βενζίνη στο Αστυνομικό Τμήμα Δυτικής Αχαΐας",
-      "normalized_title": "ΑΝΔΡΑΣ ΑΠΕΙΛΟΥΣΕ ΝΑ ΛΟΥΣΤΕΙ ΜΕ ΒΕΝΖΙΝΗ ΣΤΟ ΑΣΤΥΝΟΜΙΚΟ ΤΜΗΜΑ ΔΥΤΙΚΗΣ ΑΧΑΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1868343/21hroni-traumatistike-sto-heri-apo-paradosiaki-pistola-se-paniguri-sto-mesologgi/?utm_source=rss",
+      "title": "21χρονη τραυματίστηκε στο χέρι από παραδοσιακή πιστόλα σε πανηγύρι στο Μεσολόγγι",
+      "normalized_title": "21ΧΡΟΝΗ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΟ ΧΕΡΙ ΑΠΟ ΠΑΡΑΔΟΣΙΑΚΗ ΠΙΣΤΟΛΑ ΣΕ ΠΑΝΗΓΥΡΙ ΣΤΟ ΜΕΣΟΛΟΓΓΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868333/andras-apeilouse-na-loustei-me-venzini-sto-astunomiko-tmima-dutikis-ahaias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868331/kerkura-ston-eisaggelea-o-sulliftheis-gia-ti-thanatosi-skulou-stous-auliotes-adimetopos-me-katheirxi-eos-10-eti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868330/trohaio-me-klemmeni-mihani-stin-eukarpia-etrehan-me-iliggiodi-tahutita-se-monodromo-kai-sugroustikan-me-fortigo-treis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868343/21hroni-traumatistike-sto-heri-apo-paradosiaki-pistola-se-paniguri-sto-mesologgi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T07:51:12.485279+00:00"
+      "seen_at_utc": "2026-08-23T08:17:04.687967+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/nisides/1451384/leonarnto-padoyra-stin-ef-syn-i-moira-tis-koyvas-akoma-paizetai/",
-      "title": "Λεονάρντο Παδούρα στην «Εφ.Συν.»: «Η μοίρα της Κούβας ακόμα παίζεται»",
-      "normalized_title": "ΛΕΟΝΑΡΝΤΟ ΠΑΔΟΥΡΑ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «Η ΜΟΙΡΑ ΤΗΣ ΚΟΥΒΑΣ ΑΚΟΜΑ ΠΑΙΖΕΤΑΙ»",
+      "url": "https://www.efsyn.gr/ellada/1452628/fotia-stin-proti-serron-kaiei-konta-sto-katafygio-megali-kinitopoiisi-tis-pyrosvestikis/",
+      "title": "Φωτιά στην Πρώτη Σερρών: Καίει κοντά στο καταφύγιο – Μεγάλη κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΡΩΤΗ ΣΕΡΡΩΝ: ΚΑΙΕΙ ΚΟΝΤΑ ΣΤΟ ΚΑΤΑΦΥΓΙΟ – ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/nisides/1451384/leonarnto-padoyra-stin-ef-syn-i-moira-tis-koyvas-akoma-paizetai/",
-        "https://www.efsyn.gr/life/1452617/prigkipas-hari-i-dyskoli-epistrofi-sti-vretania-kai-to-hasma-me-ton-oyiliam/"
+        "https://www.efsyn.gr/ellada/1452628/fotia-stin-proti-serron-kaiei-konta-sto-katafygio-megali-kinitopoiisi-tis-pyrosvestikis/",
+        "https://www.efsyn.gr/politiki/1452626/mitsotakis-gia-ellinotoyrkika-dialogos-den-simanei-ypohorisi/"
       ],
-      "seen_at_utc": "2026-08-23T07:30:10.470060+00:00"
+      "seen_at_utc": "2026-08-23T08:17:04.687950+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/23/greece/thessaloniki-epikindyni-odigisi-me-klemmeni-motosikleta-katelikse-se-troxaio-kai-syllipseis/",
-      "title": "Επικίνδυνη οδήγηση με κλεμμένη μοτοσικλέτα κατέληξε σε τροχαίο και συλλήψεις",
-      "normalized_title": "ΕΠΙΚΙΝΔΥΝΗ ΟΔΗΓΗΣΗ ΜΕ ΚΛΕΜΜΕΝΗ ΜΟΤΟΣΙΚΛΕΤΑ ΚΑΤΕΛΗΞΕ ΣΕ ΤΡΟΧΑΙΟ ΚΑΙ ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.in.gr/2026/08/23/sports/basketball/voutsevits-mou-aresei-o-olympiakos-katakta-titlous-kai-ftiaxnei-kales-omades/",
+      "title": "Βούτσεβιτς: «Μου αρέσει ο Ολυμπιακός, κατακτά τίτλους και φτιάχνει καλές ομάδες»",
+      "normalized_title": "ΒΟΥΤΣΕΒΙΤΣ: «ΜΟΥ ΑΡΕΣΕΙ Ο ΟΛΥΜΠΙΑΚΟΣ, ΚΑΤΑΚΤΑ ΤΙΤΛΟΥΣ ΚΑΙ ΦΤΙΑΧΝΕΙ ΚΑΛΕΣ ΟΜΑΔΕΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/23/greece/thessaloniki-epikindyni-odigisi-me-klemmeni-motosikleta-katelikse-se-troxaio-kai-syllipseis/",
-        "https://www.in.gr/2026/08/23/sports/tourkia-katerreyse-o-aktourkoglou-tis-fenermpaxtse-meta-apo-xtypima-sto-kefali-vids-pic/",
-        "https://www.in.gr/2026/08/23/go-fun/fizz/xristos-mastoras-mazi-me-ti-garyfallia-kalifoni-ston-gamo-tis-aderfis-tou/"
+        "https://www.in.gr/2026/08/23/sports/basketball/voutsevits-mou-aresei-o-olympiakos-katakta-titlous-kai-ftiaxnei-kales-omades/",
+        "https://www.in.gr/2026/08/23/editorial/psyxiatreio-xreiazontai-osoi-pisteyoun-oti-i-xora-den-prepei-pote-na-allaksei-kyvernisi/",
+        "https://www.in.gr/2026/08/23/life/music/apo-tous-metallica-stous-nirvana-oi-44-meres-pou-allaksan-tin-eikona-tis-rock-prin-apo-35-xronia/",
+        "https://www.in.gr/2026/08/23/greece/kerkyra-ston-eisaggelea-o-odigos-pou-patise-kai-skotose-skylo-tin-ora-pou-koimotan/"
       ],
-      "seen_at_utc": "2026-08-23T07:51:12.485236+00:00"
+      "seen_at_utc": "2026-08-23T08:17:04.687927+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T07:51:12.485364+00:00"
+  "updated_at_utc": "2026-08-23T08:17:04.688035+00:00"
 }
