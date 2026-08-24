@@ -1,19 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/oinoxoos/564398797/otan-i-schara-anavei-i-mpira-milaei/",
-      "title": "Όταν η σχάρα ανάβει, η μπίρα μιλάει",
-      "normalized_title": "ΟΤΑΝ Η ΣΧΑΡΑ ΑΝΑΒΕΙ, Η ΜΠΙΡΑ ΜΙΛΑΕΙ",
+      "url": "https://www.kathimerini.gr/society/564417592/kriti-synelifthi-igetiko-melos-tis-servikis-mafias-ereynontai-oi-epafes-toy-stin-ellada/",
+      "title": "Κρήτη: Συνελήφθη ηγετικό μέλος της σέρβικης μαφίας – Ερευνώνται οι επαφές του στην Ελλάδα",
+      "normalized_title": "ΚΡΗΤΗ: ΣΥΝΕΛΗΦΘΗ ΗΓΕΤΙΚΟ ΜΕΛΟΣ ΤΗΣ ΣΕΡΒΙΚΗΣ ΜΑΦΙΑΣ – ΕΡΕΥΝΩΝΤΑΙ ΟΙ ΕΠΑΦΕΣ ΤΟΥ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/oinoxoos/564398797/otan-i-schara-anavei-i-mpira-milaei/",
-        "https://www.kathimerini.gr/society/564417586/pyrkagia-stin-amfipoli-serron-sikothike-ena-elikoptero/",
-        "https://www.kathimerini.gr/columns/564417430/schetika-me-ton-erotiko-desmo-anthropoy-skyloy/",
-        "https://www.kathimerini.gr/visual/podcasts/564417562/mporeis-na-chtiseis-nomima-stin-ellada/",
-        "https://www.kathimerini.gr/society/564417574/fotia-tora-ston-marathokampo-samoy-megali-pyrosvestiki-dynami-sto-simeio/",
-        "https://www.kathimerini.gr/society/564417568/korinthia-pyrkagia-se-agrotodasiki-ektasi-ston-agio-vasileio/",
-        "https://www.kathimerini.gr/politics/564417553/ti-tha-ginei-me-tin-anavathmisi-ton-ellinikon-patriot-apo-ti-saoydiki-aravia/"
+        "https://www.kathimerini.gr/society/564417592/kriti-synelifthi-igetiko-melos-tis-servikis-mafias-ereynontai-oi-epafes-toy-stin-ellada/",
+        "https://www.kathimerini.gr/k/k-magazine/564413419/i-mageia-toy-okeanoy-mesa-apo-entyposiakes-fotografies/"
       ],
-      "seen_at_utc": "2026-08-24T12:18:08.431263+00:00"
+      "seen_at_utc": "2026-08-24T12:30:07.983755+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,44 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868835/i-paralia-tou-elafonisiou-sta-hania-stis-kaluteres-tou-kosmou/?utm_source=rss",
-      "title": "Η παραλία του Ελαφονησίου στα Χανιά στις καλύτερες του κόσμου",
-      "normalized_title": "Η ΠΑΡΑΛΙΑ ΤΟΥ ΕΛΑΦΟΝΗΣΙΟΥ ΣΤΑ ΧΑΝΙΑ ΣΤΙΣ ΚΑΛΥΤΕΡΕΣ ΤΟΥ ΚΟΣΜΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1868839/katatheseis-kai-dna-edosan-oi-goneis-tou-niopadrou-zeugariou-pou-skotothike-sti-sudrivi-tou-elikopterou-sti-sifno/?utm_source=rss",
+      "title": "Καταθέσεις και DNA έδωσαν οι γονείς του νιόπαντρου ζευγαριού που σκοτώθηκε στη συντριβή του ελικοπτέρου στη Σίφνο",
+      "normalized_title": "ΚΑΤΑΘΕΣΕΙΣ ΚΑΙ DNA ΕΔΩΣΑΝ ΟΙ ΓΟΝΕΙΣ ΤΟΥ ΝΙΟΠΑΝΤΡΟΥ ΖΕΥΓΑΡΙΟΥ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΤΗ ΣΥΝΤΡΙΒΗ ΤΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΣΙΦΝΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868835/i-paralia-tou-elafonisiou-sta-hania-stis-kaluteres-tou-kosmou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868828/fotia-tora-ston-marathokabo-samou-epiheirei-ena-elikoptero/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868839/katatheseis-kai-dna-edosan-oi-goneis-tou-niopadrou-zeugariou-pou-skotothike-sti-sudrivi-tou-elikopterou-sti-sifno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T12:18:08.431436+00:00"
+      "seen_at_utc": "2026-08-24T12:30:07.983912+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453377/i-magiki-paralia-tis-kritis-poy-anadeihthike-2i-ston-kosmo-stin-katataxi-toy-tripadvisor/",
-      "title": "Η μαγική παραλία της Κρήτης που αναδείχθηκε 2η στον κόσμο στην κατάταξη του Tripadvisor",
-      "normalized_title": "Η ΜΑΓΙΚΗ ΠΑΡΑΛΙΑ ΤΗΣ ΚΡΗΤΗΣ ΠΟΥ ΑΝΑΔΕΙΧΘΗΚΕ 2Η ΣΤΟΝ ΚΟΣΜΟ ΣΤΗΝ ΚΑΤΑΤΑΞΗ ΤΟΥ TRIPADVISOR",
+      "url": "https://www.efsyn.gr/oikonomia/1453387/eee-realistiko-kai-efarmosimo-plaisio-gia-tin-apanthrakopoiisi-tis-naytilias-zita-i-melina-trayloy/",
+      "title": "Ενωση Ελλήνων Εφοπλιστών: Ρεαλιστικό και εφαρμόσιμο πλαίσιο για την απανθρακοποίηση της ναυτιλίας ζητά η Μελίνα Τραυλού",
+      "normalized_title": "ΕΝΩΣΗ ΕΛΛΗΝΩΝ ΕΦΟΠΛΙΣΤΩΝ: ΡΕΑΛΙΣΤΙΚΟ ΚΑΙ ΕΦΑΡΜΟΣΙΜΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΗΝ ΑΠΑΝΘΡΑΚΟΠΟΙΗΣΗ ΤΗΣ ΝΑΥΤΙΛΙΑΣ ΖΗΤΑ Η ΜΕΛΙΝΑ ΤΡΑΥΛΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453377/i-magiki-paralia-tis-kritis-poy-anadeihthike-2i-ston-kosmo-stin-katataxi-toy-tripadvisor/",
-        "https://www.efsyn.gr/politiki/1453374/kke-epikindynoi-oi-leontarismoi-mitsotaki-gia-ta-ellinotoyrkika-katarreei-o-mythos-ton-iremon-neron/",
-        "https://www.efsyn.gr/politiki/1453354/karystianoy-ehoyme-stoiheia-gia-organomeno-shedio-dialysis-toy-kinimatos/",
-        "https://www.efsyn.gr/ellada/1453368/fotia-se-agrotodasiki-ektasi-ston-agio-vasileio-korinthias/",
-        "https://www.efsyn.gr/media/1453361/mplak-aoyt-ston-athina-984-den-ekpempei-o-radiostathmos-meta-apo-pyrkagia-stis-egkatastaseis-toy/",
-        "https://www.efsyn.gr/ellada/1453353/fotia-sti-samo-se-dasiki-ektasi-megali-kinitopoiisi-tis-pyrosvestikis/",
-        "https://www.efsyn.gr/politiki/1453116/kyvernisi-vs-antipoliteysi-sto-foyl-oi-kommatikes-mihanes-gia-ti-mahi-tis-thessalonikis/"
+        "https://www.efsyn.gr/oikonomia/1453387/eee-realistiko-kai-efarmosimo-plaisio-gia-tin-apanthrakopoiisi-tis-naytilias-zita-i-melina-trayloy/",
+        "https://www.efsyn.gr/oikonomia/1453382/emporikos-syllogos-athinon-to-713-ton-epiheiriseon-dilonei-heirotero-tziro-apo-perysi/"
       ],
-      "seen_at_utc": "2026-08-24T12:18:08.431397+00:00"
+      "seen_at_utc": "2026-08-24T12:30:07.983832+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/politics/politiki-grammateia/emmoni-paylou-marinaki-me-tsipra-nea-epithesi-enopsei-deth/",
-      "title": "Εμμονή Παύλου Μαρινάκη με Τσίπρα – Νέα επίθεση ενόψει ΔΕΘ",
-      "normalized_title": "ΕΜΜΟΝΗ ΠΑΥΛΟΥ ΜΑΡΙΝΑΚΗ ΜΕ ΤΣΙΠΡΑ – ΝΕΑ ΕΠΙΘΕΣΗ ΕΝΟΨΕΙ ΔΕΘ",
+      "url": "https://www.in.gr/2026/08/24/in-science/perivallon-b-science/i-norvigia-apsifa-ti-grammi-tis-ee-etoimazei-nees-geotriseis-stin-arktiki/",
+      "title": "Η Νορβηγία αψηφά τη γραμμή της ΕΕ, ετοιμάζει νέες γεωτρήσεις στην Αρκτική",
+      "normalized_title": "Η ΝΟΡΒΗΓΙΑ ΑΨΗΦΑ ΤΗ ΓΡΑΜΜΗ ΤΗΣ ΕΕ, ΕΤΟΙΜΑΖΕΙ ΝΕΕΣ ΓΕΩΤΡΗΣΕΙΣ ΣΤΗΝ ΑΡΚΤΙΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/politics/politiki-grammateia/emmoni-paylou-marinaki-me-tsipra-nea-epithesi-enopsei-deth/",
-        "https://www.in.gr/2026/08/24/politics/politiki-grammateia/xreiazetai-ena-allo-meigma-oikonomikis-politikis-i-kyvernisi-exei-xasei-tin-aksiopistia-tis-antipoliteytika-pyra-enopsei-deth/",
-        "https://www.in.gr/2026/08/24/economy/katanalotikes-prosdokies-mikri-veltiosi-stin-ellada-alla-paramenoume-oi-pio-apaisiodoksoi-tis-eyrozonis/",
-        "https://www.in.gr/2026/08/24/go-fun/fizz/argyris-aggelou-aytotrolaretai-giati-kerdise-xarti-ygeias-me-laxno-se-panigyri/",
-        "https://www.in.gr/2026/08/24/sports/football/ayta-einai-ta-kritiria-isovathmias-tis-stoiximan-super-league/",
-        "https://www.in.gr/2026/08/24/greece/fotia-ston-agio-vasileio-korinthias/"
+        "https://www.in.gr/2026/08/24/in-science/perivallon-b-science/i-norvigia-apsifa-ti-grammi-tis-ee-etoimazei-nees-geotriseis-stin-arktiki/",
+        "https://www.in.gr/2026/08/24/sports/football/o-paok-symfonise-me-ton-strelets-se-diapragmateyseis-me-tin-mintlesmpro-pic/"
       ],
-      "seen_at_utc": "2026-08-24T12:18:08.431339+00:00"
+      "seen_at_utc": "2026-08-24T12:30:07.983795+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T12:18:08.431545+00:00"
+  "updated_at_utc": "2026-08-24T12:30:07.984014+00:00"
 }
