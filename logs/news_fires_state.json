@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564418102/korydallos-i-aformi-tis-exegersis-kai-mia-anastoli-tis-teleytaias-stigmis/",
-      "title": "Κορυδαλλός: Η αφορμή της εξέγερσης και μία αναστολή της «τελευταίας στιγμής»",
-      "normalized_title": "ΚΟΡΥΔΑΛΛΟΣ: Η ΑΦΟΡΜΗ ΤΗΣ ΕΞΕΓΕΡΣΗΣ ΚΑΙ ΜΙΑ ΑΝΑΣΤΟΛΗ ΤΗΣ «ΤΕΛΕΥΤΑΙΑΣ ΣΤΙΓΜΗΣ»",
+      "url": "https://www.kathimerini.gr/economy/564414898/h-forologisi-tis-monimis-egkatastasis-xenis-epicheirisis-stin-ellada/",
+      "title": "H φορολόγηση της μόνιμης εγκατάστασης ξένης επιχείρησης στην Ελλάδα",
+      "normalized_title": "H ΦΟΡΟΛΟΓΗΣΗ ΤΗΣ ΜΟΝΙΜΗΣ ΕΓΚΑΤΑΣΤΑΣΗΣ ΞΕΝΗΣ ΕΠΙΧΕΙΡΗΣΗΣ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564418102/korydallos-i-aformi-tis-exegersis-kai-mia-anastoli-tis-teleytaias-stigmis/",
-        "https://www.kathimerini.gr/world/564417808/afganistan-theokratia-ftocheia-kai-apokleismos-ton-gynaikon-i-5etia-ton-talimpan/"
+        "https://www.kathimerini.gr/economy/564414898/h-forologisi-tis-monimis-egkatastasis-xenis-epicheirisis-stin-ellada/",
+        "https://www.kathimerini.gr/culture/tv/564417853/mpampa-s-agapo-oi-megales-allages-kai-i-apofasi-tis-tzenis/",
+        "https://www.kathimerini.gr/world/564418132/gkalimpaf-oi-etairoi-mas-agnooyn-pliros-tis-kyroseis-ton-ipa/",
+        "https://www.kathimerini.gr/society/astynomiko/564418111/epithesi-se-stathmarchi-toy-stathmoy-metro-korydallos-i-anakoinosi-tis-el-as/"
       ],
-      "seen_at_utc": "2026-08-24T19:51:14.060819+00:00"
+      "seen_at_utc": "2026-08-24T20:18:37.333880+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1271,25 @@
       "seen_at_utc": "2026-08-24T19:51:14.060960+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453614/ios-toy-dytikoy-neiloy-epivevaiothike-kroysma-sto-psyhiko-se-psekasmoys-prohora-o-dimos/",
-      "title": "Ιός του δυτικού Νείλου: Επιβεβαιώθηκε κρούσμα στο Ψυχικό – Σε ψεκασμούς προχωρά ο δήμος",
-      "normalized_title": "ΙΟΣ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΕΠΙΒΕΒΑΙΩΘΗΚΕ ΚΡΟΥΣΜΑ ΣΤΟ ΨΥΧΙΚΟ – ΣΕ ΨΕΚΑΣΜΟΥΣ ΠΡΟΧΩΡΑ Ο ΔΗΜΟΣ",
+      "url": "https://www.efsyn.gr/politiki/1453623/ikanopoiisi-skertsoy-gia-to-tameio-anakampsis-i-ellada-petyhainei-ton-stoho-tis-pliroys-aporrofisis/",
+      "title": "Ικανοποίηση Σκέρτσου για το Ταμείο Ανάκαμψης: Η Ελλάδα πετυχαίνει «τον στόχο της πλήρους απορρόφησης»",
+      "normalized_title": "ΙΚΑΝΟΠΟΙΗΣΗ ΣΚΕΡΤΣΟΥ ΓΙΑ ΤΟ ΤΑΜΕΙΟ ΑΝΑΚΑΜΨΗΣ: Η ΕΛΛΑΔΑ ΠΕΤΥΧΑΙΝΕΙ «ΤΟΝ ΣΤΟΧΟ ΤΗΣ ΠΛΗΡΟΥΣ ΑΠΟΡΡΟΦΗΣΗΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453614/ios-toy-dytikoy-neiloy-epivevaiothike-kroysma-sto-psyhiko-se-psekasmoys-prohora-o-dimos/",
-        "https://www.efsyn.gr/kosmos/1453611/anypohorito-to-iran-ypovathmisei-tis-kyroseis-ton-ipa-kaneis-den-tha-pistepsei-tis-anoisies-toys/"
+        "https://www.efsyn.gr/politiki/1453623/ikanopoiisi-skertsoy-gia-to-tameio-anakampsis-i-ellada-petyhainei-ton-stoho-tis-pliroys-aporrofisis/",
+        "https://www.efsyn.gr/kosmos/1453620/ipa-mainetai-i-megali-dasiki-pyrkagia-sti-nevada-dekades-hiliades-katoikoi-egkateleipsan-ta-spitia-toys-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-08-24T19:51:14.060921+00:00"
+      "seen_at_utc": "2026-08-24T20:18:37.333967+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/sports/basketball/ethniki-andron-mpasket-se-kykloforia-ta-eisitiria-gia-to-simantiko-paixnidi-me-tin-ispania/",
-      "title": "Εθνική Ανδρών μπάσκετ: Σε κυκλοφορία τα εισιτήρια για το σημαντικό παιχνίδι με την Ισπανία",
-      "normalized_title": "ΕΘΝΙΚΗ ΑΝΔΡΩΝ ΜΠΑΣΚΕΤ: ΣΕ ΚΥΚΛΟΦΟΡΙΑ ΤΑ ΕΙΣΙΤΗΡΙΑ ΓΙΑ ΤΟ ΣΗΜΑΝΤΙΚΟ ΠΑΙΧΝΙΔΙ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ",
+      "url": "https://www.in.gr/2026/08/24/world/israilines-epitheseis-sti-gaza-prokalesan-ton-thanato-toulaxiston-pente-anthropon-sta-thymata-kai-paidia/",
+      "title": "Ισραηλινές επιθέσεις στη Γάζα προκάλεσαν τον θάνατο τουλάχιστον πέντε ανθρώπων – Στα θύματα και παιδιά",
+      "normalized_title": "ΙΣΡΑΗΛΙΝΕΣ ΕΠΙΘΕΣΕΙΣ ΣΤΗ ΓΑΖΑ ΠΡΟΚΑΛΕΣΑΝ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥΛΑΧΙΣΤΟΝ ΠΕΝΤΕ ΑΝΘΡΩΠΩΝ – ΣΤΑ ΘΥΜΑΤΑ ΚΑΙ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/sports/basketball/ethniki-andron-mpasket-se-kykloforia-ta-eisitiria-gia-to-simantiko-paixnidi-me-tin-ispania/",
-        "https://www.in.gr/2026/08/24/greece/skiathos-proskrousi-epivatigou-ploiou-se-thalassio-taksi-sto-limani-apagoreysi-apoplou-kai-sta-dyo-ploia/",
-        "https://www.in.gr/2026/08/24/auto/erxontai-alkotest-kai-to-mesimeri-sto-stoxastro-oi-odigoi-taksi-leoforeion-kai-fortigon/"
+        "https://www.in.gr/2026/08/24/world/israilines-epitheseis-sti-gaza-prokalesan-ton-thanato-toulaxiston-pente-anthropon-sta-thymata-kai-paidia/",
+        "https://www.in.gr/2026/08/24/economy/diethnis-oikonomia/ilektrika-diktya-oi-anatropes-tis-ai-strefoun-ta-idiotika-ependytika-kefalaia-stis-ypiresies-koinis-ofeleias/"
       ],
-      "seen_at_utc": "2026-08-24T19:51:14.060872+00:00"
+      "seen_at_utc": "2026-08-24T20:18:37.333935+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T19:51:14.061075+00:00"
+  "updated_at_utc": "2026-08-24T20:18:37.334079+00:00"
 }
