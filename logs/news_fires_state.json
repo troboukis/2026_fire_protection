@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417439/thessaloniki-ypo-kratisi-o-29chronos-toyrkos-poy-kataziteitai-gia-anthropoktonia-stin-patrida-toy/",
-      "title": "Θεσσαλονίκη: Υπό κράτηση ο 29χρονος Τούρκος που καταζητείται για ανθρωποκτονία στην πατρίδα του",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΥΠΟ ΚΡΑΤΗΣΗ Ο 29ΧΡΟΝΟΣ ΤΟΥΡΚΟΣ ΠΟΥ ΚΑΤΑΖΗΤΕΙΤΑΙ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΣΤΗΝ ΠΑΤΡΙΔΑ ΤΟΥ",
+      "url": "https://www.kathimerini.gr/world/564417466/nigiria-vinteo-feretai-na-deichnei-600-apachthentes-sti-diarkeia-epithesis-se-tzami/",
+      "title": "Νιγηρία: Βίντεο φέρεται να δείχνει 600 απαχθέντες στη διάρκεια επίθεσης σε τζαμί",
+      "normalized_title": "ΝΙΓΗΡΙΑ: ΒΙΝΤΕΟ ΦΕΡΕΤΑΙ ΝΑ ΔΕΙΧΝΕΙ 600 ΑΠΑΧΘΕΝΤΕΣ ΣΤΗ ΔΙΑΡΚΕΙΑ ΕΠΙΘΕΣΗΣ ΣΕ ΤΖΑΜΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417439/thessaloniki-ypo-kratisi-o-29chronos-toyrkos-poy-kataziteitai-gia-anthropoktonia-stin-patrida-toy/",
-        "https://www.kathimerini.gr/k/k-magazine/564411445/pagos-o-kryfos-protagonistis/",
-        "https://www.kathimerini.gr/society/564417436/fotia-tora-stin-penteli-kaiei-chamili-vlastisi/",
-        "https://www.kathimerini.gr/world/564417433/poy-na-skotosete-ton-mparon-neo-apeilitiko-vinteo-toy-iran-gia-ton-yio-tramp/"
+        "https://www.kathimerini.gr/world/564417466/nigiria-vinteo-feretai-na-deichnei-600-apachthentes-sti-diarkeia-epithesis-se-tzami/"
       ],
-      "seen_at_utc": "2026-08-24T10:17:23.366042+00:00"
+      "seen_at_utc": "2026-08-24T10:30:02.064169+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,26 +1259,28 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868778/sto-nosokomeio-o-astunomikos-pou-katigoreitai-gia-viasmo-tis-proin-sudrofou-tou-sti-thessaloniki/?utm_source=rss",
-      "title": "Στο νοσοκομείο ο αστυνομικός που κατηγορείται για βιασμό της πρώην συντρόφου του στη Θεσσαλονίκη",
-      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ Ο ΑΣΤΥΝΟΜΙΚΟΣ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΒΙΑΣΜΟ ΤΗΣ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟΥ ΤΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1868788/thessaloniki-den-sunainei-stin-ekdosi-tou-o-29hronos-tourkos-pou-katigoreitai-gia-dolofonia-stin-konstadinoupoli/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Δεν συναινεί στην έκδοση του ο 29χρονος Τούρκος που κατηγορείται για δολοφονία στην Κωνσταντινούπολη",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΕΝ ΣΥΝΑΙΝΕΙ ΣΤΗΝ ΕΚΔΟΣΗ ΤΟΥ Ο 29ΧΡΟΝΟΣ ΤΟΥΡΚΟΣ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΔΟΛΟΦΟΝΙΑ ΣΤΗΝ ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868778/sto-nosokomeio-o-astunomikos-pou-katigoreitai-gia-viasmo-tis-proin-sudrofou-tou-sti-thessaloniki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868788/thessaloniki-den-sunainei-stin-ekdosi-tou-o-29hronos-tourkos-pou-katigoreitai-gia-dolofonia-stin-konstadinoupoli/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868782/sunelifthi-43hronos-sto-eleutherios-venizelos-me-7889-lathraia-tsigara/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T10:17:23.366150+00:00"
+      "seen_at_utc": "2026-08-24T10:30:02.064278+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1453232/i-diamantopoyloy-adeiazei-ton-loysko-gia-to-arthro-doyka-stin-ef-syn-kaneis-den-mila-ex-onomatos-moy/",
-      "title": "Η Διαμαντοπούλου αδειάζει τον Λούσκο για το άρθρο Δούκα στην «Εφ.Συν.»: «Κανείς δεν μιλά εξ ονόματός μου»",
-      "normalized_title": "Η ΔΙΑΜΑΝΤΟΠΟΥΛΟΥ ΑΔΕΙΑΖΕΙ ΤΟΝ ΛΟΥΣΚΟ ΓΙΑ ΤΟ ΑΡΘΡΟ ΔΟΥΚΑ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «ΚΑΝΕΙΣ ΔΕΝ ΜΙΛΑ ΕΞ ΟΝΟΜΑΤΟΣ ΜΟΥ»",
+      "url": "https://www.efsyn.gr/oikonomia/1453133/freno-ston-apliroto-energeiako-toyrismo-pote-oi-katanalotes-den-tha-mporoyn-na-allaxoyn-etaireia-reymatos/",
+      "title": "Φρένο στον απλήρωτο ενεργειακό «τουρισμό»: Πότε οι καταναλωτές δεν θα μπορούν να αλλάξουν εταιρεία ρεύματος",
+      "normalized_title": "ΦΡΕΝΟ ΣΤΟΝ ΑΠΛΗΡΩΤΟ ΕΝΕΡΓΕΙΑΚΟ «ΤΟΥΡΙΣΜΟ»: ΠΟΤΕ ΟΙ ΚΑΤΑΝΑΛΩΤΕΣ ΔΕΝ ΘΑ ΜΠΟΡΟΥΝ ΝΑ ΑΛΛΑΞΟΥΝ ΕΤΑΙΡΕΙΑ ΡΕΥΜΑΤΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1453232/i-diamantopoyloy-adeiazei-ton-loysko-gia-to-arthro-doyka-stin-ef-syn-kaneis-den-mila-ex-onomatos-moy/",
-        "https://www.efsyn.gr/ellada/1453255/telos-epohis-gia-ton-kinimatografo-atlantis-sti-voyliagmenis-niotho-oti-hathikan-ta-paidika-moy-hronia/",
-        "https://www.efsyn.gr/ellada/1453220/siteia-17hronos-horepse-me-kopela-se-panigyri-kai-ton-xylokopisan-katelixe-sto-nosokomeio/",
-        "https://www.efsyn.gr/ellada/1453231/agia-paraskeyi-gnosti-paroysiastria-katiggeile-ton-syzygo-tis-gia-exyvrisi/",
-        "https://www.efsyn.gr/politiki/1453230/tsoykalas-i-nd-exapatise-toys-eleytheroys-epaggelmaties-den-toys-pisteyei-kaneis/"
+        "https://www.efsyn.gr/oikonomia/1453133/freno-ston-apliroto-energeiako-toyrismo-pote-oi-katanalotes-den-tha-mporoyn-na-allaxoyn-etaireia-reymatos/",
+        "https://www.efsyn.gr/kosmos/1453227/soyreal-peristatiko-stis-ipa-i-ice-synelave-ton-patera-nayti-toy-aeroplanoforoy-lincoln/",
+        "https://www.efsyn.gr/ellada/1453153/fotia-se-aytokinito-sti-leoforo-alexandras-provlimata-stin-kykloforia-ton-ohimaton/",
+        "https://www.efsyn.gr/ellada/1453234/pethane-i-elliniki-foni-tis-neas-yorkis-ioanna-antzoyli-giannopoyloy/",
+        "https://www.efsyn.gr/ellada/1453200/efyge-apo-ti-zoi-o-mikros-dimitris-poy-edine-mahi-me-to-neyrovlastoma-to-antio-toy-hatzigiovani/",
+        "https://www.efsyn.gr/politiki/1453256/marinakis-orio-ilikias-ta-15-eti-gia-tin-prosvasi-ton-anilikon-sta-social-media-apo-to-2027/"
       ],
-      "seen_at_utc": "2026-08-24T10:17:23.366128+00:00"
+      "seen_at_utc": "2026-08-24T10:30:02.064235+00:00"
     },
     "in_gr": {
       "url": "https://www.in.gr/2026/08/24/economy/provlepsi-sok-tha-kseperasoun-ta-100-eyro-oi-times-sto-fysiko-aerio-ti-anaferoun-oi-analytes/",
@@ -1297,5 +1296,5 @@
       "seen_at_utc": "2026-08-24T10:17:23.366099+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T10:17:23.366243+00:00"
+  "updated_at_utc": "2026-08-24T10:30:02.064348+00:00"
 }
