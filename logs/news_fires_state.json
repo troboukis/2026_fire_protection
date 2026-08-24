@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564414553/agonas-dromoy-gia-ta-mi-kratika-aei-meta-to-ste/",
-      "title": "Αγώνας δρόμου για τα μη κρατικά ΑΕΙ μετά το ΣτΕ",
-      "normalized_title": "ΑΓΩΝΑΣ ΔΡΟΜΟΥ ΓΙΑ ΤΑ ΜΗ ΚΡΑΤΙΚΑ ΑΕΙ ΜΕΤΑ ΤΟ ΣΤΕ",
+      "url": "https://www.kathimerini.gr/world/564418096/o-prigkipas-chari-apochorei-apo-afrikaniki-mko-poy-eneplaki-se-skandalo/",
+      "title": "Ο πρίγκιπας Χάρι αποχωρεί από αφρικανική ΜΚΟ που ενεπλάκη σε σκάνδαλο",
+      "normalized_title": "Ο ΠΡΙΓΚΙΠΑΣ ΧΑΡΙ ΑΠΟΧΩΡΕΙ ΑΠΟ ΑΦΡΙΚΑΝΙΚΗ ΜΚΟ ΠΟΥ ΕΝΕΠΛΑΚΗ ΣΕ ΣΚΑΝΔΑΛΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564414553/agonas-dromoy-gia-ta-mi-kratika-aei-meta-to-ste/",
-        "https://www.kathimerini.gr/world/564417979/sto-edolio-to-zeygari-poy-arravoniastike-stin-koryfi-toy-empire-state-building/"
+        "https://www.kathimerini.gr/world/564418096/o-prigkipas-chari-apochorei-apo-afrikaniki-mko-poy-eneplaki-se-skandalo/",
+        "https://www.kathimerini.gr/society/564418075/thriler-me-ton-ispano-epicheirimatia-poy-epese-apo-istioforo-ta-erotimata-ton-archon/",
+        "https://www.kathimerini.gr/society/564418081/proskroysi-epivatigoy-ploioy-se-thalassio-taxi-sto-limani-tis-skiathoy/"
       ],
-      "seen_at_utc": "2026-08-24T18:51:30.468956+00:00"
+      "seen_at_utc": "2026-08-24T19:17:02.923969+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,29 +1271,26 @@
       "seen_at_utc": "2026-08-24T18:51:30.469170+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453601/skiathos-proskroysi-epivatigoy-me-thalassio-taxi-apagoreytike-o-apoploys-kai-sta-dyo-ploia/",
-      "title": "Σκιάθος: Πρόσκρουση επιβατηγού με θαλάσσιο ταξί – Απαγορεύτηκε ο απόπλους και στα δύο πλοία",
-      "normalized_title": "ΣΚΙΑΘΟΣ: ΠΡΟΣΚΡΟΥΣΗ ΕΠΙΒΑΤΗΓΟΥ ΜΕ ΘΑΛΑΣΣΙΟ ΤΑΞΙ – ΑΠΑΓΟΡΕΥΤΗΚΕ Ο ΑΠΟΠΛΟΥΣ ΚΑΙ ΣΤΑ ΔΥΟ ΠΛΟΙΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1453607/fifa-legends-kai-pagkosmioi-protathlites-kata-infantino-i-exoysia-ehei-tholosei-tin-krisi-tis-simerinis-igesias/",
+      "title": "FIFA Legends και παγκόσμιοι πρωταθλητές κατά Ινφαντίνο: «Η εξουσία έχει θολώσει την κρίση της σημερινής ηγεσίας»",
+      "normalized_title": "FIFA LEGENDS ΚΑΙ ΠΑΓΚΟΣΜΙΟΙ ΠΡΩΤΑΘΛΗΤΕΣ ΚΑΤΑ ΙΝΦΑΝΤΙΝΟ: «Η ΕΞΟΥΣΙΑ ΕΧΕΙ ΘΟΛΩΣΕΙ ΤΗΝ ΚΡΙΣΗ ΤΗΣ ΣΗΜΕΡΙΝΗΣ ΗΓΕΣΙΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453601/skiathos-proskroysi-epivatigoy-me-thalassio-taxi-apagoreytike-o-apoploys-kai-sta-dyo-ploia/",
-        "https://www.efsyn.gr/ellada/1453591/rethymno-hakaristike-trapezikos-logariasmos-tis-perifereias-140-000-eyro-ekanan-ftera/",
-        "https://www.efsyn.gr/ellada/1453593/pyrkagia-ston-votaniko-kipo-haidarioy-synelifthi-54hronos-gia-emprismo-apo-ameleia/",
-        "https://www.efsyn.gr/ellada/1453594/volos-synelifthi-50hronos-ergodotis-ton-katiggeile-30hroni-ypallilos-gia-apopeira-viasmoy/"
+        "https://www.efsyn.gr/athlitismos/1453607/fifa-legends-kai-pagkosmioi-protathlites-kata-infantino-i-exoysia-ehei-tholosei-tin-krisi-tis-simerinis-igesias/"
       ],
-      "seen_at_utc": "2026-08-24T18:51:30.469125+00:00"
+      "seen_at_utc": "2026-08-24T19:17:02.924084+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/world/netaniaxou-to-iran-prospathise-na-dolofonisei-enan-apo-tous-gious-mou/",
-      "title": "Νετανιάχου: Το Ιράν «προσπάθησε να δολοφονήσει» έναν από τους γιους μου",
-      "normalized_title": "ΝΕΤΑΝΙΑΧΟΥ: ΤΟ ΙΡΑΝ «ΠΡΟΣΠΑΘΗΣΕ ΝΑ ΔΟΛΟΦΟΝΗΣΕΙ» ΕΝΑΝ ΑΠΟ ΤΟΥΣ ΓΙΟΥΣ ΜΟΥ",
+      "url": "https://www.in.gr/2026/08/24/politics/politiki-grammateia/se-anammena-karvouna-i-kyvernisi-ston-dromo-pros-tis-kalpes-oi-anoixtes-dikastikes-ypotheseis-pou-kaine/",
+      "title": "Σε αναμμένα κάρβουνα η κυβέρνηση στον δρόμο προς τις κάλπες – Οι ανοιχτές δικαστικές υποθέσεις που «καίνε»",
+      "normalized_title": "ΣΕ ΑΝΑΜΜΕΝΑ ΚΑΡΒΟΥΝΑ Η ΚΥΒΕΡΝΗΣΗ ΣΤΟΝ ΔΡΟΜΟ ΠΡΟΣ ΤΙΣ ΚΑΛΠΕΣ – ΟΙ ΑΝΟΙΧΤΕΣ ΔΙΚΑΣΤΙΚΕΣ ΥΠΟΘΕΣΕΙΣ ΠΟΥ «ΚΑΙΝΕ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/world/netaniaxou-to-iran-prospathise-na-dolofonisei-enan-apo-tous-gious-mou/",
-        "https://www.in.gr/2026/08/24/go-fun/ntoua-lipa-o-magikos-gamos-me-ton-kaloum-terner-i-metakomisi-stis-ipa-kai-ta-paidia-osa-eipe-sti-vogue/",
-        "https://www.in.gr/2026/08/24/sports/basketball/giannaras-proponitis-kyprou-poly-synaisthimatiki-stigmi-ayti-tou-koinou-ethnikou-ymnou-vid/",
-        "https://www.in.gr/2026/08/24/english-edition/eu-approves-another-e6-1-billion-for-ukraines-defense/"
+        "https://www.in.gr/2026/08/24/politics/politiki-grammateia/se-anammena-karvouna-i-kyvernisi-ston-dromo-pros-tis-kalpes-oi-anoixtes-dikastikes-ypotheseis-pou-kaine/",
+        "https://www.in.gr/2026/08/24/in-science/episthmes/meta-ta-kounoupia-ta-tsimpouria-epikindynes-astheneies-eksaplonontai-kathos-i-eyropi-thermainetai/",
+        "https://www.in.gr/2026/08/24/greece/eixe-prosxediasei-ti-gynaikoktonia-o-48xronos-mporei-na-min-me-ksanadeis-eixe-pei-stin-oikogeneia-tou-liges-ores-prin/",
+        "https://www.in.gr/matchcenter/5795372/"
       ],
-      "seen_at_utc": "2026-08-24T18:51:30.469055+00:00"
+      "seen_at_utc": "2026-08-24T19:17:02.924033+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T18:51:30.469247+00:00"
+  "updated_at_utc": "2026-08-24T19:17:02.924162+00:00"
 }
