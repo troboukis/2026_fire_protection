@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564414901/polli-doyleia-alla-ligi-paragogi/",
-      "title": "Πολλή δουλειά αλλά λίγη παραγωγή",
-      "normalized_title": "ΠΟΛΛΗ ΔΟΥΛΕΙΑ ΑΛΛΑ ΛΙΓΗ ΠΑΡΑΓΩΓΗ",
+      "url": "https://www.kathimerini.gr/society/564417817/nea-smyrni-ti-edeixe-i-iatrodikastiki-exetasi-gia-ton-fono-tis-45chronis/",
+      "title": "Νέα Σμύρνη: Τι έδειξε η ιατροδικαστική εξέταση για τον φόνο της 45χρονης",
+      "normalized_title": "ΝΕΑ ΣΜΥΡΝΗ: ΤΙ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΕΞΕΤΑΣΗ ΓΙΑ ΤΟΝ ΦΟΝΟ ΤΗΣ 45ΧΡΟΝΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564414901/polli-doyleia-alla-ligi-paragogi/"
+        "https://www.kathimerini.gr/society/564417817/nea-smyrni-ti-edeixe-i-iatrodikastiki-exetasi-gia-ton-fono-tis-45chronis/",
+        "https://www.kathimerini.gr/life/environment/564417805/rekor-thermokrasias-stoys-okeanoys-tis-gis/"
       ],
-      "seen_at_utc": "2026-08-24T13:30:23.321995+00:00"
+      "seen_at_utc": "2026-08-24T13:51:20.495667+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868879/oi-varies-poines-pou-adimetopizei-o-odigos-tis-kinitis-disko/?utm_source=rss",
-      "title": "Οι βαριές ποινές που αντιμετωπίζει ο οδηγός της «κινητής ντίσκο»",
-      "normalized_title": "ΟΙ ΒΑΡΙΕΣ ΠΟΙΝΕΣ ΠΟΥ ΑΝΤΙΜΕΤΩΠΙΖΕΙ Ο ΟΔΗΓΟΣ ΤΗΣ «ΚΙΝΗΤΗΣ ΝΤΙΣΚΟ»",
+      "url": "https://www.protothema.gr/greece/article/1868892/exarthrothike-summoria-pou-ekane-diarrixeis-se-spitia-stin-paro-ekanan-25-klopes-mesa-se-ligotero-apo-enan-mina/?utm_source=rss",
+      "title": "Εξαρθρώθηκε συμμορία που έκανε διαρρήξεις σε σπίτια στην Πάρο: Έκαναν 25 κλοπές μέσα σε λιγότερο από έναν μήνα",
+      "normalized_title": "ΕΞΑΡΘΡΩΘΗΚΕ ΣΥΜΜΟΡΙΑ ΠΟΥ ΕΚΑΝΕ ΔΙΑΡΡΗΞΕΙΣ ΣΕ ΣΠΙΤΙΑ ΣΤΗΝ ΠΑΡΟ: ΕΚΑΝΑΝ 25 ΚΛΟΠΕΣ ΜΕΣΑ ΣΕ ΛΙΓΟΤΕΡΟ ΑΠΟ ΕΝΑΝ ΜΗΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868879/oi-varies-poines-pou-adimetopizei-o-odigos-tis-kinitis-disko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868892/exarthrothike-summoria-pou-ekane-diarrixeis-se-spitia-stin-paro-ekanan-25-klopes-mesa-se-ligotero-apo-enan-mina/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T13:30:23.322081+00:00"
+      "seen_at_utc": "2026-08-24T13:51:20.495770+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1453421/akraios-ratsismos-sto-verolino-akyrothike-ekdilosi-gia-mayra-paidia-se-dimosia-pisina/",
-      "title": "Ακραίος ρατσισμός στο Βερολίνο: Ακυρώθηκε εκδήλωση για μαύρα παιδιά σε δημόσια πισίνα",
-      "normalized_title": "ΑΚΡΑΙΟΣ ΡΑΤΣΙΣΜΟΣ ΣΤΟ ΒΕΡΟΛΙΝΟ: ΑΚΥΡΩΘΗΚΕ ΕΚΔΗΛΩΣΗ ΓΙΑ ΜΑΥΡΑ ΠΑΙΔΙΑ ΣΕ ΔΗΜΟΣΙΑ ΠΙΣΙΝΑ",
+      "url": "https://www.efsyn.gr/kosmos/1453437/sovari-klimakosi-apo-to-iran-apeilei-me-katashesi-46-ploia-sto-ormoyz-poy-den-symmorfonontai-me-toys-kanones/",
+      "title": "Σοβαρή κλιμάκωση από το Ιράν: Απειλεί με κατάσχεση 46 πλοία στο Ορμούζ που δεν συμμορφώνονται με τους «κανόνες»",
+      "normalized_title": "ΣΟΒΑΡΗ ΚΛΙΜΑΚΩΣΗ ΑΠΟ ΤΟ ΙΡΑΝ: ΑΠΕΙΛΕΙ ΜΕ ΚΑΤΑΣΧΕΣΗ 46 ΠΛΟΙΑ ΣΤΟ ΟΡΜΟΥΖ ΠΟΥ ΔΕΝ ΣΥΜΜΟΡΦΩΝΟΝΤΑΙ ΜΕ ΤΟΥΣ «ΚΑΝΟΝΕΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1453421/akraios-ratsismos-sto-verolino-akyrothike-ekdilosi-gia-mayra-paidia-se-dimosia-pisina/",
-        "https://www.efsyn.gr/politiki/1453427/pappas-an-den-itan-o-syriza-kanenas-den-tha-miloyse-gia-tin-proori-apopliromi-toy-hreoys/"
+        "https://www.efsyn.gr/kosmos/1453437/sovari-klimakosi-apo-to-iran-apeilei-me-katashesi-46-ploia-sto-ormoyz-poy-den-symmorfonontai-me-toys-kanones/",
+        "https://www.efsyn.gr/oikonomia/1453429/theodorikakos-gia-protovoylia-meiosis-timon-850-kodikoi-synehos-prostithentai-nea-proionta/"
       ],
-      "seen_at_utc": "2026-08-24T13:30:23.322063+00:00"
+      "seen_at_utc": "2026-08-24T13:51:20.495748+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/english-edition/tax-authoritys-new-structure-and-ai-units-come-into-force/",
-      "title": "Tax Authority’s New Structure and AI Units Come into Force",
-      "normalized_title": "TAX AUTHORITY’S NEW STRUCTURE AND AI UNITS COME INTO FORCE",
+      "url": "https://www.in.gr/2026/08/24/greece/zesti-mikri-anasa-drosias-prin-o-ydrargyros-parei-pali-tin-aniousa/",
+      "title": "Μικρή ανάσα δροσιάς πριν ο υδράργυρος πάρει πάλι την ανιούσα - «Καθαρή» η τάση υποχώρησης της ζέστης",
+      "normalized_title": "ΜΙΚΡΗ ΑΝΑΣΑ ΔΡΟΣΙΑΣ ΠΡΙΝ Ο ΥΔΡΑΡΓΥΡΟΣ ΠΑΡΕΙ ΠΑΛΙ ΤΗΝ ΑΝΙΟΥΣΑ - «ΚΑΘΑΡΗ» Η ΤΑΣΗ ΥΠΟΧΩΡΗΣΗΣ ΤΗΣ ΖΕΣΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/english-edition/tax-authoritys-new-structure-and-ai-units-come-into-force/"
+        "https://www.in.gr/2026/08/24/greece/zesti-mikri-anasa-drosias-prin-o-ydrargyros-parei-pali-tin-aniousa/",
+        "https://www.in.gr/2026/08/24/in-science/episthmes/nea-texnologia-metatrepei-plastika-mpoukalia-kai-axyra-se-mpiskota-me-geysi-vanilia/",
+        "https://www.in.gr/2026/08/24/greece/gynaikoktonia-sti-n-smyrni-latris-ton-polemikon-texnon-o-48xronos-drastis-pozare-me-opla-sta-social-media/",
+        "https://www.in.gr/2026/08/24/sports/football/symfonia-panathinaikou-al-ouaxnta-feygei-amesa-o-tserin/"
       ],
-      "seen_at_utc": "2026-08-24T13:30:23.322031+00:00"
+      "seen_at_utc": "2026-08-24T13:51:20.495718+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T13:30:23.322144+00:00"
+  "updated_at_utc": "2026-08-24T13:51:20.495833+00:00"
 }
