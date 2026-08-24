@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417151/zakynthos-synelifthi-gynaika-gia-thanatosi-gatas-tis-epivlithike-prostimo-30-000-eyro/",
-      "title": "Ζάκυνθος: Συνελήφθη γυναίκα για θανάτωση γάτας – Της επιβλήθηκε πρόστιμο 30.000 ευρώ",
-      "normalized_title": "ΖΑΚΥΝΘΟΣ: ΣΥΝΕΛΗΦΘΗ ΓΥΝΑΙΚΑ ΓΙΑ ΘΑΝΑΤΩΣΗ ΓΑΤΑΣ – ΤΗΣ ΕΠΙΒΛΗΘΗΚΕ ΠΡΟΣΤΙΜΟ 30.000 ΕΥΡΩ",
+      "url": "https://www.kathimerini.gr/society/564417163/chania-nekri-i-41chroni-toyristria-poy-katerreyse-se-pezoporia/",
+      "title": "Χανιά: Νεκρή η 41χρονη τουρίστρια που κατέρρευσε σε πεζοπορία",
+      "normalized_title": "ΧΑΝΙΑ: ΝΕΚΡΗ Η 41ΧΡΟΝΗ ΤΟΥΡΙΣΤΡΙΑ ΠΟΥ ΚΑΤΕΡΡΕΥΣΕ ΣΕ ΠΕΖΟΠΟΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417151/zakynthos-synelifthi-gynaika-gia-thanatosi-gatas-tis-epivlithike-prostimo-30-000-eyro/",
-        "https://www.kathimerini.gr/society/564417157/spanio-fainomeno-stin-igoymenitsa-limni-apektise-entono-roz-chroma-pos-exigeitai/",
-        "https://www.kathimerini.gr/politics/564417139/ypoyrgiko-symvoylio-synedriazei-stis-11-30-ypo-ton-prothypoyrgo-i-atzenta/",
-        "https://www.kathimerini.gr/culture/music/564413293/san-simera-efyge-i-megali-kyria-poy-tragoydise-mitsaki-alla-kai-chatzidaki/"
+        "https://www.kathimerini.gr/society/564417163/chania-nekri-i-41chroni-toyristria-poy-katerreyse-se-pezoporia/",
+        "https://www.kathimerini.gr/society/564417169/vonitsa-anilikos-o-drastis-toy-machairomatos-20chronoy-se-panigyri-nosileyetai-froyroymenos/"
       ],
-      "seen_at_utc": "2026-08-24T05:30:01.701221+00:00"
+      "seen_at_utc": "2026-08-24T05:51:13.440163+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868595/fotia-se-diamerisma-sti-nea-smurni/?utm_source=rss",
-      "title": "Φωτιά σε διαμέρισμα στη Νέα Σμύρνη",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗ ΝΕΑ ΣΜΥΡΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1868600/ios-dutikou-neilou-rekor-eptaetias-se-krousmata-kai-thanatous-o-hartis-me-tis-periohes-upsilou-kindunou/?utm_source=rss",
+      "title": "Ιός Δυτικού Νείλου: Ρεκόρ επταετίας σε κρούσματα και θανάτους - Ο χάρτης με τις περιοχές υψηλού κινδύνου",
+      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΡΕΚΟΡ ΕΠΤΑΕΤΙΑΣ ΣΕ ΚΡΟΥΣΜΑΤΑ ΚΑΙ ΘΑΝΑΤΟΥΣ - Ο ΧΑΡΤΗΣ ΜΕ ΤΙΣ ΠΕΡΙΟΧΕΣ ΥΨΗΛΟΥ ΚΙΝΔΥΝΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868595/fotia-se-diamerisma-sti-nea-smurni/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868600/ios-dutikou-neilou-rekor-eptaetias-se-krousmata-kai-thanatous-o-hartis-me-tis-periohes-upsilou-kindunou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T04:30:10.514237+00:00"
+      "seen_at_utc": "2026-08-24T05:51:13.440290+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1452926/45-hronia-apo-tin-enarxi-toy-oykranikoy-synedriazei-i-symmahia-ton-prothymon-sto-kievo-o-mpernam/",
-      "title": "4,5 χρόνια από την έναρξη του ουκρανικού: Συνεδριάζει η «Συμμαχία των Προθύμων» – Στο Κίεβο ο Μπέρναμ",
-      "normalized_title": "4,5 ΧΡΟΝΙΑ ΑΠΟ ΤΗΝ ΕΝΑΡΞΗ ΤΟΥ ΟΥΚΡΑΝΙΚΟΥ: ΣΥΝΕΔΡΙΑΖΕΙ Η «ΣΥΜΜΑΧΙΑ ΤΩΝ ΠΡΟΘΥΜΩΝ» – ΣΤΟ ΚΙΕΒΟ Ο ΜΠΕΡΝΑΜ",
+      "url": "https://www.efsyn.gr/ellada/1452904/akomi-mia-exegersi-apelpisias-sto-kolastirio-ton-serron/",
+      "title": "Ακόμη μια εξέγερση απελπισίας στο κολαστήριο των Σερρών: Δραπέτευσαν 40 άτομα",
+      "normalized_title": "ΑΚΟΜΗ ΜΙΑ ΕΞΕΓΕΡΣΗ ΑΠΕΛΠΙΣΙΑΣ ΣΤΟ ΚΟΛΑΣΤΗΡΙΟ ΤΩΝ ΣΕΡΡΩΝ: ΔΡΑΠΕΤΕΥΣΑΝ 40 ΑΤΟΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1452926/45-hronia-apo-tin-enarxi-toy-oykranikoy-synedriazei-i-symmahia-ton-prothymon-sto-kievo-o-mpernam/",
-        "https://www.efsyn.gr/athlitismos/1452919/petyhimeni-i-prova-gia-tin-aek-i-protathlitria-edeixe-etoimi-enopsei-lefski-sto-4-0-epi-toy-irakli/"
+        "https://www.efsyn.gr/ellada/1452904/akomi-mia-exegersi-apelpisias-sto-kolastirio-ton-serron/",
+        "https://www.efsyn.gr/politiki/1452950/psinontai-3-4-metagrafes-apo-nea-aristera-se-koymoyndoyroy/",
+        "https://www.efsyn.gr/ellada/1452925/kerkyra-ston-eisaggelea-i-44hroni-poy-patise-skylo-me-to-aytokinito-tis-ti-ypostirixe/"
       ],
-      "seen_at_utc": "2026-08-24T05:30:01.701311+00:00"
+      "seen_at_utc": "2026-08-24T05:51:13.440263+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/sports/basketball/zeliko-omprantovits-sto-pleyro-ton-paidion/",
-      "title": "Ζέλικο Ομπράντοβιτς: Στο πλευρό των παιδιών",
-      "normalized_title": "ΖΕΛΙΚΟ ΟΜΠΡΑΝΤΟΒΙΤΣ: ΣΤΟ ΠΛΕΥΡΟ ΤΩΝ ΠΑΙΔΙΩΝ",
+      "url": "https://www.in.gr/2026/08/24/world/n-zilandia-nomosxedio-gia-tin-apagoreysi-tis-xrisis-ton-social-media-se-paidia-kato-ton-16-eton/",
+      "title": "Ν. Ζηλανδία: Νομοσχέδιο για την απαγόρευση της χρήσης των social media σε παιδιά κάτω των 16 ετών",
+      "normalized_title": "Ν. ΖΗΛΑΝΔΙΑ: ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΤΗΝ ΑΠΑΓΟΡΕΥΣΗ ΤΗΣ ΧΡΗΣΗΣ ΤΩΝ SOCIAL MEDIA ΣΕ ΠΑΙΔΙΑ ΚΑΤΩ ΤΩΝ 16 ΕΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/sports/basketball/zeliko-omprantovits-sto-pleyro-ton-paidion/",
-        "https://www.in.gr/2026/08/24/greece/kakia-skala-dikografia-se-varos-21xronou-odigouse-me-anoixtes-portes-kai-mousiki-sti-diapason/"
+        "https://www.in.gr/2026/08/24/world/n-zilandia-nomosxedio-gia-tin-apagoreysi-tis-xrisis-ton-social-media-se-paidia-kato-ton-16-eton/",
+        "https://www.in.gr/2026/08/24/go-fun/fizz/thodoris-ferris-troei-burger-kata-ti-diarkeia-synaylias-tou-kai-ginetai-viral-sta-social/",
+        "https://www.in.gr/2026/08/24/sports/football/sti-thessaloniki-gia-ton-ari-o-soutalo-pics/",
+        "https://www.in.gr/2026/08/24/english-edition/heat-wave-to-push-greece-temperatures-to-42c/"
       ],
-      "seen_at_utc": "2026-08-24T05:30:01.701261+00:00"
+      "seen_at_utc": "2026-08-24T05:51:13.440223+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T05:30:01.701385+00:00"
+  "updated_at_utc": "2026-08-24T05:51:13.440368+00:00"
 }
