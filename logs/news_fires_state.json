@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417241/veroia-enas-nekros-kai-dyo-traymaties-se-metopiki-sygkroysi-dyo-ich-aytokiniton/",
-      "title": "Βέροια: Ενας νεκρός και δύο τραυματίες σε μετωπική σύγκρουση δύο ΙΧ αυτοκινήτων",
-      "normalized_title": "ΒΕΡΟΙΑ: ΕΝΑΣ ΝΕΚΡΟΣ ΚΑΙ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΣΕ ΜΕΤΩΠΙΚΗ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΙΧ ΑΥΤΟΚΙΝΗΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/564417259/pyrkagia-se-ktirio-ston-peiraia-epi-podos-i-pyrosvestiki/",
+      "title": "Πυρκαγιά σε κτίριο στον Πειραιά – Επί ποδός η Πυροσβεστική",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΚΤΙΡΙΟ ΣΤΟΝ ΠΕΙΡΑΙΑ – ΕΠΙ ΠΟΔΟΣ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417241/veroia-enas-nekros-kai-dyo-traymaties-se-metopiki-sygkroysi-dyo-ich-aytokiniton/",
-        "https://www.kathimerini.gr/world/564417232/i-ee-enekrine-epipleon-6-1-disek-eyro-gia-tin-oykraniki-amyna/",
-        "https://www.kathimerini.gr/k/disney/564405661/komix-146-o-gamos-toy-skroytz-mak-ntak/"
+        "https://www.kathimerini.gr/society/564417259/pyrkagia-se-ktirio-ston-peiraia-epi-podos-i-pyrosvestiki/"
       ],
-      "seen_at_utc": "2026-08-24T07:17:17.319252+00:00"
+      "seen_at_utc": "2026-08-24T07:30:18.626150+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,44 +1259,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868669/ptolemaida-27-ekat-euro-gia-neo-kedro-olistikis-diaheirisis-karkinou-sto-bodosakeio/?utm_source=rss",
-      "title": "27 εκατ. ευρώ για νέο Κέντρο Ολιστικής Διαχείρισης Καρκίνου στο «Μποδοσάκειο»",
-      "normalized_title": "27 ΕΚΑΤ. ΕΥΡΩ ΓΙΑ ΝΕΟ ΚΕΝΤΡΟ ΟΛΙΣΤΙΚΗΣ ΔΙΑΧΕΙΡΙΣΗΣ ΚΑΡΚΙΝΟΥ ΣΤΟ «ΜΠΟΔΟΣΑΚΕΙΟ»",
+      "url": "https://www.protothema.gr/greece/article/1868687/fotia-se-dasiki-ektasi-sta-grevena-epiheirei-ena-elikoptero/?utm_source=rss",
+      "title": "Φωτιά σε δασική έκταση στα Γρεβενά, επιχειρεί ένα ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΑ ΓΡΕΒΕΝΑ, ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868669/ptolemaida-27-ekat-euro-gia-neo-kedro-olistikis-diaheirisis-karkinou-sto-bodosakeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868687/fotia-se-dasiki-ektasi-sta-grevena-epiheirei-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868686/duo-kataggelies-mesa-se-ligous-mines-se-varos-20hronou-gia-endooikogeneiaki-via-ton-katiggeile-xana-i-suzugos-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868685/fotia-se-ktirio-ston-peiraia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868684/imathia-enas-nekros-kai-duo-traumaties-meta-apo-metopiki-sugrousi-duo-ih/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T07:17:17.319352+00:00"
+      "seen_at_utc": "2026-08-24T07:30:18.626271+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453002/ryanair-neo-vinteo-apo-tin-ptisi-poy-epivatis-paraligo-na-vgei-exo-apo-to-spasmeno-parathyro/",
-      "title": "Ryanair: Νέο βίντεο από την πτήση που επιβάτης παραλίγο να βγει έξω από το σπασμένο παράθυρο",
-      "normalized_title": "RYANAIR: ΝΕΟ ΒΙΝΤΕΟ ΑΠΟ ΤΗΝ ΠΤΗΣΗ ΠΟΥ ΕΠΙΒΑΤΗΣ ΠΑΡΑΛΙΓΟ ΝΑ ΒΓΕΙ ΕΞΩ ΑΠΟ ΤΟ ΣΠΑΣΜΕΝΟ ΠΑΡΑΘΥΡΟ",
+      "url": "https://www.efsyn.gr/politiki/1453025/o-georgiadis-ta-vazei-pali-me-ton-tsipra-paliopaido-itan-paliopaido-paramenei/",
+      "title": "O Γεωργιάδης τα βάζει πάλι με τον Τσίπρα: «Παλιόπαιδο ήταν, παλιόπαιδο παραμένει»",
+      "normalized_title": "O ΓΕΩΡΓΙΑΔΗΣ ΤΑ ΒΑΖΕΙ ΠΑΛΙ ΜΕ ΤΟΝ ΤΣΙΠΡΑ: «ΠΑΛΙΟΠΑΙΔΟ ΗΤΑΝ, ΠΑΛΙΟΠΑΙΔΟ ΠΑΡΑΜΕΝΕΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453002/ryanair-neo-vinteo-apo-tin-ptisi-poy-epivatis-paraligo-na-vgei-exo-apo-to-spasmeno-parathyro/",
-        "https://www.efsyn.gr/ellada/1453028/foniki-fotia-stin-ileia-19-hronia-apo-ti-mayri-paraskeyi-49-anthropoi-hathikan-stis-floges/",
-        "https://www.efsyn.gr/ellada/1453012/thessaloniki-46hronos-motosikletistis-etrehe-me-142-hlm-ora-eno-to-orio-itan-50-eikones/",
-        "https://www.efsyn.gr/stiles/1453010/h-kraygi-dikaiosis-tis-hint-ratzamp/",
-        "https://www.efsyn.gr/stiles/1452973/ta-horia-poy-antehoyn/",
-        "https://www.efsyn.gr/stiles/1452994/konstantinos-tsoykalas-1937-2026-mia-prosopiki-martyria/",
-        "https://www.efsyn.gr/stiles/1453000/apohairetismos-ston-konstantino/"
+        "https://www.efsyn.gr/politiki/1453025/o-georgiadis-ta-vazei-pali-me-ton-tsipra-paliopaido-itan-paliopaido-paramenei/"
       ],
-      "seen_at_utc": "2026-08-24T07:17:17.319330+00:00"
+      "seen_at_utc": "2026-08-24T07:30:18.626251+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/greece/synthikes-kaysona-kamini-kai-to-vrady-i-attiki-me-33aria-sto-kokkino-o-ydrargyros-kai-tis-epomenes-meres/",
-      "title": "Καμίνι και το βράδυ η Αττική με 33άρια - Στο «κόκκινο» ο υδράργυρος και τις επόμενες μέρες",
-      "normalized_title": "ΚΑΜΙΝΙ ΚΑΙ ΤΟ ΒΡΑΔΥ Η ΑΤΤΙΚΗ ΜΕ 33ΑΡΙΑ - ΣΤΟ «ΚΟΚΚΙΝΟ» Ο ΥΔΡΑΡΓΥΡΟΣ ΚΑΙ ΤΙΣ ΕΠΟΜΕΝΕΣ ΜΕΡΕΣ",
+      "url": "https://www.in.gr/2026/08/24/world/oukrania-sto-kievo-eyropaioi-igetes-gia-tin-35i-epeteio-tis-aneksartisias-tis-xoras-61-disek-eyro-apo-tin-ee-gia-tin-oukraniki-amyna/",
+      "title": "Στο Κίεβο ευρωπαίοι ηγέτες για την 35η επέτειο της ανεξαρτησίας της χώρας - 6,1 δισεκ. ευρώ από την ΕΕ για την ουκρανική άμυνα",
+      "normalized_title": "ΣΤΟ ΚΙΕΒΟ ΕΥΡΩΠΑΙΟΙ ΗΓΕΤΕΣ ΓΙΑ ΤΗΝ 35Η ΕΠΕΤΕΙΟ ΤΗΣ ΑΝΕΞΑΡΤΗΣΙΑΣ ΤΗΣ ΧΩΡΑΣ - 6,1 ΔΙΣΕΚ. ΕΥΡΩ ΑΠΟ ΤΗΝ ΕΕ ΓΙΑ ΤΗΝ ΟΥΚΡΑΝΙΚΗ ΑΜΥΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/greece/synthikes-kaysona-kamini-kai-to-vrady-i-attiki-me-33aria-sto-kokkino-o-ydrargyros-kai-tis-epomenes-meres/",
-        "https://www.in.gr/2026/08/24/go-fun/fizz/smaragda-karydi-giati-apofasise-apotoksinosi-apo-ta-social-media-ayto-to-kalokairi/",
-        "https://www.in.gr/2026/08/24/sports/football/efesi-tou-paok-gia-tin-timoria-tou-zivkovits/",
-        "https://www.in.gr/2026/08/24/in-science/perivallon-b-science/me-ti-leipsydria-na-rimazei-tis-sodeies-i-eyropi-anazita-nees-georgikes-praktikes/",
-        "https://www.in.gr/2026/08/24/plus/ayta-einai-ta-8-themata-pou-den-prepei-na-syzitate-sti-douleia-symfona-me-tous-eidikous/",
-        "https://www.in.gr/2026/08/24/pet-stories/mia-alithini-istoria-san-paramythi-i-filia-enos-psara-me-ton-mpili-to-katsikaki/",
-        "https://www.in.gr/2026/08/24/greece/aigaleo-enopli-listeia-se-mini-market/"
+        "https://www.in.gr/2026/08/24/world/oukrania-sto-kievo-eyropaioi-igetes-gia-tin-35i-epeteio-tis-aneksartisias-tis-xoras-61-disek-eyro-apo-tin-ee-gia-tin-oukraniki-amyna/",
+        "https://www.in.gr/2026/08/24/sports/football/o-forlan-anoigei-ksana-tin-porta-tis-ourougouais-ston-souares/",
+        "https://www.in.gr/2026/08/24/world/ipa-i-ice-synelave-patera-nayti-pou-ypiretei-sto-aeroplanoforo-lincoln/",
+        "https://www.in.gr/2026/08/24/greece/kypseli-sto-nosokomeio-anilikos-meta-apo-atyxima-me-patini/"
       ],
-      "seen_at_utc": "2026-08-24T07:17:17.319301+00:00"
+      "seen_at_utc": "2026-08-24T07:30:18.626223+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T07:17:17.319428+00:00"
+  "updated_at_utc": "2026-08-24T07:30:18.626374+00:00"
 }
