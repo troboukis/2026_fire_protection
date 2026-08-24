@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564417745/ios-dytikoy-neiloy-kampanaki-toy-isa-gia-tin-ayximeni-kykloforia-stin-attiki/",
-      "title": "Ιός Δυτικού Νείλου: «Καμπανάκι» του ΙΣΑ για την αυξημένη κυκλοφορία στην Αττική",
-      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: «ΚΑΜΠΑΝΑΚΙ» ΤΟΥ ΙΣΑ ΓΙΑ ΤΗΝ ΑΥΞΗΜΕΝΗ ΚΥΚΛΟΦΟΡΙΑ ΣΤΗΝ ΑΤΤΙΚΗ",
+      "url": "https://www.kathimerini.gr/economy/564414901/polli-doyleia-alla-ligi-paragogi/",
+      "title": "Πολλή δουλειά αλλά λίγη παραγωγή",
+      "normalized_title": "ΠΟΛΛΗ ΔΟΥΛΕΙΑ ΑΛΛΑ ΛΙΓΗ ΠΑΡΑΓΩΓΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564417745/ios-dytikoy-neiloy-kampanaki-toy-isa-gia-tin-ayximeni-kykloforia-stin-attiki/",
-        "https://www.kathimerini.gr/economy/564417673/doae-den-exetazetai-deyteri-apodesmeysi-stratigikon-apothematon-petrelaioy/"
+        "https://www.kathimerini.gr/economy/564414901/polli-doyleia-alla-ligi-paragogi/"
       ],
-      "seen_at_utc": "2026-08-24T13:17:09.133329+00:00"
+      "seen_at_utc": "2026-08-24T13:30:23.321995+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,41 +1259,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868871/diasosi-60hronis-meta-apo-ptosi-sti-gria-vathra-samothrakis/?utm_source=rss",
-      "title": "Διάσωση 60χρονης μετά από πτώση στη Γριά Βάθρα Σαμοθράκης",
-      "normalized_title": "ΔΙΑΣΩΣΗ 60ΧΡΟΝΗΣ ΜΕΤΑ ΑΠΟ ΠΤΩΣΗ ΣΤΗ ΓΡΙΑ ΒΑΘΡΑ ΣΑΜΟΘΡΑΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1868879/oi-varies-poines-pou-adimetopizei-o-odigos-tis-kinitis-disko/?utm_source=rss",
+      "title": "Οι βαριές ποινές που αντιμετωπίζει ο οδηγός της «κινητής ντίσκο»",
+      "normalized_title": "ΟΙ ΒΑΡΙΕΣ ΠΟΙΝΕΣ ΠΟΥ ΑΝΤΙΜΕΤΩΠΙΖΕΙ Ο ΟΔΗΓΟΣ ΤΗΣ «ΚΙΝΗΤΗΣ ΝΤΙΣΚΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868871/diasosi-60hronis-meta-apo-ptosi-sti-gria-vathra-samothrakis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868870/doro-zois-se-tesseris-astheneis-edose-18hronos-pou-eihe-traumatistei-meta-apo-voutia-stin-agia-triada-thessalonikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868865/video-drones-se-diko-tis-ergastirio-kataskeuazei-i-ethniki-froura-tis-kuprou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868862/giatros-kapetanios-tourista-zakuntho-79-lepta-karpa-perigrafoun-diasosis-fonaze-pateras-voitheia-ragise-kardia-mou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868879/oi-varies-poines-pou-adimetopizei-o-odigos-tis-kinitis-disko/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T13:17:09.133420+00:00"
+      "seen_at_utc": "2026-08-24T13:30:23.322081+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453413/kriti-synelifthi-igetiko-melos-servikis-mafiozikis-organosis-ereynontai-oi-epafes-toy-stin-ellada/",
-      "title": "Κρήτη: Συνελήφθη ηγετικό μέλος σερβικής μαφιόζικης οργάνωσης – Ερευνώνται οι επαφές του στην Ελλάδα",
-      "normalized_title": "ΚΡΗΤΗ: ΣΥΝΕΛΗΦΘΗ ΗΓΕΤΙΚΟ ΜΕΛΟΣ ΣΕΡΒΙΚΗΣ ΜΑΦΙΟΖΙΚΗΣ ΟΡΓΑΝΩΣΗΣ – ΕΡΕΥΝΩΝΤΑΙ ΟΙ ΕΠΑΦΕΣ ΤΟΥ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.efsyn.gr/kosmos/1453421/akraios-ratsismos-sto-verolino-akyrothike-ekdilosi-gia-mayra-paidia-se-dimosia-pisina/",
+      "title": "Ακραίος ρατσισμός στο Βερολίνο: Ακυρώθηκε εκδήλωση για μαύρα παιδιά σε δημόσια πισίνα",
+      "normalized_title": "ΑΚΡΑΙΟΣ ΡΑΤΣΙΣΜΟΣ ΣΤΟ ΒΕΡΟΛΙΝΟ: ΑΚΥΡΩΘΗΚΕ ΕΚΔΗΛΩΣΗ ΓΙΑ ΜΑΥΡΑ ΠΑΙΔΙΑ ΣΕ ΔΗΜΟΣΙΑ ΠΙΣΙΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453413/kriti-synelifthi-igetiko-melos-servikis-mafiozikis-organosis-ereynontai-oi-epafes-toy-stin-ellada/",
-        "https://www.efsyn.gr/ellada/1453384/gynaikoktonia-sti-nea-smyrni-ta-eyrimata-tis-iatrodikastikis-tin-anagkase-na-gonatisei-kai-tin-pyrovolise/",
-        "https://www.efsyn.gr/ellada/1453419/paristanan-toys-logistes-kai-xafrizan-ilikiomenoys-dyo-syllipseis-se-nea-smyrni-kai-palaio-faliro/",
-        "https://www.efsyn.gr/kosmos/1453412/pyrkagia-sti-nevada-dothike-entoli-ekkenosis-se-90-000-polites-vinteo/",
-        "https://www.efsyn.gr/oikonomia/1453253/fotia-sta-pagia-ton-tilepikoinonion/"
+        "https://www.efsyn.gr/kosmos/1453421/akraios-ratsismos-sto-verolino-akyrothike-ekdilosi-gia-mayra-paidia-se-dimosia-pisina/",
+        "https://www.efsyn.gr/politiki/1453427/pappas-an-den-itan-o-syriza-kanenas-den-tha-miloyse-gia-tin-proori-apopliromi-toy-hreoys/"
       ],
-      "seen_at_utc": "2026-08-24T13:17:09.133402+00:00"
+      "seen_at_utc": "2026-08-24T13:30:23.322063+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/politics/politiki-grammateia/diamantopoulou-adeiazei-ton-lousko-gia-tis-antidraseis-ston-douka-kaneis-den-mila-eks-onomatos-mou/",
-      "title": "«Κανείς δεν μιλά εξ ονόματός μου», λέει η Διαμαντοπούλου μετά τα «καρφιά» Λούσκου στον Δούκα",
-      "normalized_title": "«ΚΑΝΕΙΣ ΔΕΝ ΜΙΛΑ ΕΞ ΟΝΟΜΑΤΟΣ ΜΟΥ», ΛΕΕΙ Η ΔΙΑΜΑΝΤΟΠΟΥΛΟΥ ΜΕΤΑ ΤΑ «ΚΑΡΦΙΑ» ΛΟΥΣΚΟΥ ΣΤΟΝ ΔΟΥΚΑ",
+      "url": "https://www.in.gr/2026/08/24/english-edition/tax-authoritys-new-structure-and-ai-units-come-into-force/",
+      "title": "Tax Authority’s New Structure and AI Units Come into Force",
+      "normalized_title": "TAX AUTHORITY’S NEW STRUCTURE AND AI UNITS COME INTO FORCE",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/politics/politiki-grammateia/diamantopoulou-adeiazei-ton-lousko-gia-tis-antidraseis-ston-douka-kaneis-den-mila-eks-onomatos-mou/",
-        "https://www.in.gr/2026/08/24/stories/fernan-mprontel-i-dikaiosi-ton-provlepseon-tou-gia-ton-kapitalismo/",
-        "https://www.in.gr/2026/08/24/life/texni/skandalo-sto-mucem-seksoualiki-parenoxlisi-kai-eynoiokratia-kaine-proin-steno-synergati-ton-makron/"
+        "https://www.in.gr/2026/08/24/english-edition/tax-authoritys-new-structure-and-ai-units-come-into-force/"
       ],
-      "seen_at_utc": "2026-08-24T13:17:09.133372+00:00"
+      "seen_at_utc": "2026-08-24T13:30:23.322031+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T13:17:09.133501+00:00"
+  "updated_at_utc": "2026-08-24T13:30:23.322144+00:00"
 }
