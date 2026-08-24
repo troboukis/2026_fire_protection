@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417226/thessaloniki-synelifthi-motosikletistis-poy-etreche-me-142-chlm-ora-se-dromo-me-orio-ta-50/",
-      "title": "Θεσσαλονίκη: Συνελήφθη μοτοσικλετιστής που έτρεχε με 142 χλμ/ώρα σε δρόμο με όριο τα 50",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΠΟΥ ΕΤΡΕΧΕ ΜΕ 142 ΧΛΜ/ΩΡΑ ΣΕ ΔΡΟΜΟ ΜΕ ΟΡΙΟ ΤΑ 50",
+      "url": "https://www.kathimerini.gr/society/564417241/veroia-enas-nekros-kai-dyo-traymaties-se-metopiki-sygkroysi-dyo-ich-aytokiniton/",
+      "title": "Βέροια: Ενας νεκρός και δύο τραυματίες σε μετωπική σύγκρουση δύο ΙΧ αυτοκινήτων",
+      "normalized_title": "ΒΕΡΟΙΑ: ΕΝΑΣ ΝΕΚΡΟΣ ΚΑΙ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΣΕ ΜΕΤΩΠΙΚΗ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΙΧ ΑΥΤΟΚΙΝΗΤΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417226/thessaloniki-synelifthi-motosikletistis-poy-etreche-me-142-chlm-ora-se-dromo-me-orio-ta-50/",
-        "https://www.kathimerini.gr/world/564417223/ollandia-leoforeio-me-mathites-gymnasioy-apo-ti-germania-eneplaki-se-trochaio-okto-traymaties/"
+        "https://www.kathimerini.gr/society/564417241/veroia-enas-nekros-kai-dyo-traymaties-se-metopiki-sygkroysi-dyo-ich-aytokiniton/",
+        "https://www.kathimerini.gr/world/564417232/i-ee-enekrine-epipleon-6-1-disek-eyro-gia-tin-oykraniki-amyna/",
+        "https://www.kathimerini.gr/k/disney/564405661/komix-146-o-gamos-toy-skroytz-mak-ntak/"
       ],
-      "seen_at_utc": "2026-08-24T06:51:22.328879+00:00"
+      "seen_at_utc": "2026-08-24T07:17:17.319252+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1261,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868656/thessaloniki-motosikletistis-etrehe-me-142-hlmora-se-dromo-me-orio-ta-50/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Μοτοσικλετιστής έτρεχε με 142 χλμ/ώρα σε δρόμο με όριο τα 50",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΕΤΡΕΧΕ ΜΕ 142 ΧΛΜ/ΩΡΑ ΣΕ ΔΡΟΜΟ ΜΕ ΟΡΙΟ ΤΑ 50",
+      "url": "https://www.protothema.gr/greece/article/1868669/ptolemaida-27-ekat-euro-gia-neo-kedro-olistikis-diaheirisis-karkinou-sto-bodosakeio/?utm_source=rss",
+      "title": "27 εκατ. ευρώ για νέο Κέντρο Ολιστικής Διαχείρισης Καρκίνου στο «Μποδοσάκειο»",
+      "normalized_title": "27 ΕΚΑΤ. ΕΥΡΩ ΓΙΑ ΝΕΟ ΚΕΝΤΡΟ ΟΛΙΣΤΙΚΗΣ ΔΙΑΧΕΙΡΙΣΗΣ ΚΑΡΚΙΝΟΥ ΣΤΟ «ΜΠΟΔΟΣΑΚΕΙΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868656/thessaloniki-motosikletistis-etrehe-me-142-hlmora-se-dromo-me-orio-ta-50/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868669/ptolemaida-27-ekat-euro-gia-neo-kedro-olistikis-diaheirisis-karkinou-sto-bodosakeio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T06:51:22.329003+00:00"
+      "seen_at_utc": "2026-08-24T07:17:17.319352+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453008/oikogeneiaki-tragodia-stin-patra-zeygari-giatron-pethane-me-diafora-30-imeron/",
-      "title": "Οικογενειακή τραγωδία στην Πάτρα: Ζευγάρι γιατρών πέθανε με διαφορά 30 ημερών",
-      "normalized_title": "ΟΙΚΟΓΕΝΕΙΑΚΗ ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΠΑΤΡΑ: ΖΕΥΓΑΡΙ ΓΙΑΤΡΩΝ ΠΕΘΑΝΕ ΜΕ ΔΙΑΦΟΡΑ 30 ΗΜΕΡΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1453002/ryanair-neo-vinteo-apo-tin-ptisi-poy-epivatis-paraligo-na-vgei-exo-apo-to-spasmeno-parathyro/",
+      "title": "Ryanair: Νέο βίντεο από την πτήση που επιβάτης παραλίγο να βγει έξω από το σπασμένο παράθυρο",
+      "normalized_title": "RYANAIR: ΝΕΟ ΒΙΝΤΕΟ ΑΠΟ ΤΗΝ ΠΤΗΣΗ ΠΟΥ ΕΠΙΒΑΤΗΣ ΠΑΡΑΛΙΓΟ ΝΑ ΒΓΕΙ ΕΞΩ ΑΠΟ ΤΟ ΣΠΑΣΜΕΝΟ ΠΑΡΑΘΥΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453008/oikogeneiaki-tragodia-stin-patra-zeygari-giatron-pethane-me-diafora-30-imeron/",
-        "https://www.efsyn.gr/ellada/1453001/pyrkagia-sti-limno-eleytheros-o-antidimarhos-synehizetai-i-prokatarktiki-ereyna/",
-        "https://www.efsyn.gr/politiki/1452938/to-kykladitiko-island-hopping-toy-payloy-polaki-i-periodeia-se-62-nisia-eikones/"
+        "https://www.efsyn.gr/ellada/1453002/ryanair-neo-vinteo-apo-tin-ptisi-poy-epivatis-paraligo-na-vgei-exo-apo-to-spasmeno-parathyro/",
+        "https://www.efsyn.gr/ellada/1453028/foniki-fotia-stin-ileia-19-hronia-apo-ti-mayri-paraskeyi-49-anthropoi-hathikan-stis-floges/",
+        "https://www.efsyn.gr/ellada/1453012/thessaloniki-46hronos-motosikletistis-etrehe-me-142-hlm-ora-eno-to-orio-itan-50-eikones/",
+        "https://www.efsyn.gr/stiles/1453010/h-kraygi-dikaiosis-tis-hint-ratzamp/",
+        "https://www.efsyn.gr/stiles/1452973/ta-horia-poy-antehoyn/",
+        "https://www.efsyn.gr/stiles/1452994/konstantinos-tsoykalas-1937-2026-mia-prosopiki-martyria/",
+        "https://www.efsyn.gr/stiles/1453000/apohairetismos-ston-konstantino/"
       ],
-      "seen_at_utc": "2026-08-24T06:51:22.328977+00:00"
+      "seen_at_utc": "2026-08-24T07:17:17.319330+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-st/",
-      "title": "Δημοσθένης: Παράφορο πάθος και γνήσια τραγικότητα (Μέρος ΣΤ’)",
-      "normalized_title": "ΔΗΜΟΣΘΕΝΗΣ: ΠΑΡΑΦΟΡΟ ΠΑΘΟΣ ΚΑΙ ΓΝΗΣΙΑ ΤΡΑΓΙΚΟΤΗΤΑ (ΜΕΡΟΣ ΣΤ’)",
+      "url": "https://www.in.gr/2026/08/24/greece/synthikes-kaysona-kamini-kai-to-vrady-i-attiki-me-33aria-sto-kokkino-o-ydrargyros-kai-tis-epomenes-meres/",
+      "title": "Καμίνι και το βράδυ η Αττική με 33άρια - Στο «κόκκινο» ο υδράργυρος και τις επόμενες μέρες",
+      "normalized_title": "ΚΑΜΙΝΙ ΚΑΙ ΤΟ ΒΡΑΔΥ Η ΑΤΤΙΚΗ ΜΕ 33ΑΡΙΑ - ΣΤΟ «ΚΟΚΚΙΝΟ» Ο ΥΔΡΑΡΓΥΡΟΣ ΚΑΙ ΤΙΣ ΕΠΟΜΕΝΕΣ ΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-st/",
-        "https://www.in.gr/2026/08/24/sports/football/stin-trampzonspor-kai-o-fampinio/",
-        "https://www.in.gr/2026/08/24/greece/pylos-den-gyrizo-piso-mexri-na-vrethei-leei-i-syzygos-tou-epixeirimatia-pou-epese-apo-skafos/",
-        "https://www.in.gr/2026/08/24/world/notia-korea-to-syndikato-ergazomenon-sti-hyundai-ksanarxizei-diapragmateyseis-epeita-apo-spania-24ori-apergia/"
+        "https://www.in.gr/2026/08/24/greece/synthikes-kaysona-kamini-kai-to-vrady-i-attiki-me-33aria-sto-kokkino-o-ydrargyros-kai-tis-epomenes-meres/",
+        "https://www.in.gr/2026/08/24/go-fun/fizz/smaragda-karydi-giati-apofasise-apotoksinosi-apo-ta-social-media-ayto-to-kalokairi/",
+        "https://www.in.gr/2026/08/24/sports/football/efesi-tou-paok-gia-tin-timoria-tou-zivkovits/",
+        "https://www.in.gr/2026/08/24/in-science/perivallon-b-science/me-ti-leipsydria-na-rimazei-tis-sodeies-i-eyropi-anazita-nees-georgikes-praktikes/",
+        "https://www.in.gr/2026/08/24/plus/ayta-einai-ta-8-themata-pou-den-prepei-na-syzitate-sti-douleia-symfona-me-tous-eidikous/",
+        "https://www.in.gr/2026/08/24/pet-stories/mia-alithini-istoria-san-paramythi-i-filia-enos-psara-me-ton-mpili-to-katsikaki/",
+        "https://www.in.gr/2026/08/24/greece/aigaleo-enopli-listeia-se-mini-market/"
       ],
-      "seen_at_utc": "2026-08-24T06:51:22.328921+00:00"
+      "seen_at_utc": "2026-08-24T07:17:17.319301+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T06:51:22.329078+00:00"
+  "updated_at_utc": "2026-08-24T07:17:17.319428+00:00"
 }
