@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398893/eortologio-poioi-giortazoyn-simera-24-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 24 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 24 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/society/564417076/fotia-se-diamerisma-sti-nea-smyrni-3/",
+      "title": "Φωτιά σε διαμέρισμα στη Νέα Σμύρνη",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗ ΝΕΑ ΣΜΥΡΝΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398893/eortologio-poioi-giortazoyn-simera-24-aygoystoy/",
-        "https://www.kathimerini.gr/economy/international/564416977/kafes-oi-vroches-sti-vrazilia-apeiloyn-tin-premium-arabica-anevainoyn-oi-times/"
+        "https://www.kathimerini.gr/society/564417076/fotia-se-diamerisma-sti-nea-smyrni-3/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564414475/metrontas-milia-se-agria-nera/",
+        "https://www.kathimerini.gr/politics/564414547/theoreio-politiki-me-ta-trents/"
       ],
-      "seen_at_utc": "2026-08-23T21:17:02.944089+00:00"
+      "seen_at_utc": "2026-08-24T04:17:27.451514+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,68 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868572/halkida-andras-ehase-ti-zoi-tou-se-trohaio-dustuhima-me-mihani/?utm_source=rss",
-      "title": "Χαλκίδα: Άνδρας έχασε τη ζωή του σε τροχαίο δυστύχημα με μηχανή",
-      "normalized_title": "ΧΑΛΚΙΔΑ: ΑΝΔΡΑΣ ΕΧΑΣΕ ΤΗ ΖΩΗ ΤΟΥ ΣΕ ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΜΕ ΜΗΧΑΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1868593/epimenei-o-kausonas-stous-40-vathmous-o-udrarguros-pote-upohorei-i-zesti/?utm_source=rss",
+      "title": "Επιμένει ο καύσωνας: Στους 40 βαθμούς ο υδράργυρος, red code σήμερα σε Αττική και ακόμα 11 περιοχές για πυρκαγιά",
+      "normalized_title": "ΕΠΙΜΕΝΕΙ Ο ΚΑΥΣΩΝΑΣ: ΣΤΟΥΣ 40 ΒΑΘΜΟΥΣ Ο ΥΔΡΑΡΓΥΡΟΣ, RED CODE ΣΗΜΕΡΑ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΑΚΟΜΑ 11 ΠΕΡΙΟΧΕΣ ΓΙΑ ΠΥΡΚΑΓΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868572/halkida-andras-ehase-ti-zoi-tou-se-trohaio-dustuhima-me-mihani/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868593/epimenei-o-kausonas-stous-40-vathmous-o-udrarguros-pote-upohorei-i-zesti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868591/red-code-simera-se-attiki-kai-11-periohes-gia-polu-upsilo-kinduno-purkagias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868588/tragodia-stin-ahaia-nekri-46hroni-epese-me-to-autokinito-tis-apo-gremo-30-metron/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868584/spanio-fainomeno-stin-igoumenitsa-limni-vaftike-roz/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-23T22:51:04.498593+00:00"
+      "seen_at_utc": "2026-08-24T04:17:27.451635+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1452845/prosfygika-i-eyropaiki-epitropi-dikaionei-tis-theseis-mas-apenanti-stis-prospatheies-ekkenosis/",
-      "title": "Προσφυγικά: Η Ευρωπαϊκή Επιτροπή δικαιώνει τις θέσεις μας απέναντι στις προσπάθειες εκκένωσης",
-      "normalized_title": "ΠΡΟΣΦΥΓΙΚΑ: Η ΕΥΡΩΠΑΙΚΗ ΕΠΙΤΡΟΠΗ ΔΙΚΑΙΩΝΕΙ ΤΙΣ ΘΕΣΕΙΣ ΜΑΣ ΑΠΕΝΑΝΤΙ ΣΤΙΣ ΠΡΟΣΠΑΘΕΙΕΣ ΕΚΚΕΝΩΣΗΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1452874/premiera-gia-ton-paok-me-iremia-katharise-me-tessara-ton-levadeiako-kai-etoimazetai-gia-norvigia/",
+      "title": "Πρεμιέρα για τον ΠΑΟΚ με ηρεμία: Καθάρισε με «τεσσάρα» τον Λεβαδειακό και ετοιμάζεται για Νορβηγία",
+      "normalized_title": "ΠΡΕΜΙΕΡΑ ΓΙΑ ΤΟΝ ΠΑΟΚ ΜΕ ΗΡΕΜΙΑ: ΚΑΘΑΡΙΣΕ ΜΕ «ΤΕΣΣΑΡΑ» ΤΟΝ ΛΕΒΑΔΕΙΑΚΟ ΚΑΙ ΕΤΟΙΜΑΖΕΤΑΙ ΓΙΑ ΝΟΡΒΗΓΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1452845/prosfygika-i-eyropaiki-epitropi-dikaionei-tis-theseis-mas-apenanti-stis-prospatheies-ekkenosis/",
-        "https://www.efsyn.gr/ellada/1452841/oi-oykranoi-sygkentrothikan-sto-syntagma-gia-tin-imera-anexartisias-toys-tragoydisan-kai-ton-elliniko-ethniko-ymno-vinteo/"
+        "https://www.efsyn.gr/athlitismos/1452874/premiera-gia-ton-paok-me-iremia-katharise-me-tessara-ton-levadeiako-kai-etoimazetai-gia-norvigia/",
+        "https://www.efsyn.gr/?p=1451428",
+        "https://www.efsyn.gr/politiki/1452868/pasok-diamantopoyloy-kata-doyka-meta-to-arthro-stin-ef-syn-oi-synedriakes-apofaseis-den-einai-ieres-grafes/",
+        "https://www.efsyn.gr/politiki/1452855/se-anadiataxi-i-elliniki-aeramyna-epistrefei-i-systoihia-patriot-apo-ti-s-aravia-logo-ton-iranikon-apeilon/",
+        "https://www.efsyn.gr/ellada/1452860/gynaikoktonia-sti-n-smyrni-i-45hroni-eihe-kataggeilei-ton-drasti-to-2024-sto-mikroskopio-ta-social-media-toy-48hronoy/",
+        "https://www.efsyn.gr/ellada/1452866/tragodia-stin-ahaia-nekri-46hroni-poy-epese-me-to-aytokinito-tis-apo-gkremo-30-metron/",
+        "https://www.efsyn.gr/ellada/1452847/epimenei-o-kaysonas-40aria-mehri-tis-arhes-septemvrioy-red-code-simera-se-attiki-kai-akoma-11-periohes/",
+        "https://www.efsyn.gr/protoselida/politiki-krisi-politikoi-se-krisi/",
+        "https://www.efsyn.gr/nisides/1451408/shediasmata-mnimis-kai-lithis/",
+        "https://www.efsyn.gr/nisides/1451417/apo-tin-asimantotita-stin-aytonomia/",
+        "https://www.efsyn.gr/ellada/1452849/eortologio-poioi-giortazoyn-simera-deytera-24-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-23T21:17:02.944185+00:00"
+      "seen_at_utc": "2026-08-24T04:17:27.451606+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/world/o-tramp-katevase-tin-prasini-simaia-tou-protofanous-agona-aytokiniton-stous-dromous-tis-ouasigkton/",
-      "title": "Ο Τραμπ κατέβασε την πράσινη σημαία του Feedom 250 Grand Prix",
-      "normalized_title": "Ο ΤΡΑΜΠ ΚΑΤΕΒΑΣΕ ΤΗΝ ΠΡΑΣΙΝΗ ΣΗΜΑΙΑ ΤΟΥ FEEDOM 250 GRAND PRIX",
+      "url": "https://www.in.gr/2026/08/24/greece/tragodia-stin-axaia-me-nekri-46xroni-epese-me-to-aytokinito-tis-se-gkremo-30-metron/",
+      "title": "Τραγωδία στην Αχαΐα με νεκρή 46χρονη: Έπεσε με το αυτοκίνητό της σε γκρεμό 30 μέτρων",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΑΧΑΙΑ ΜΕ ΝΕΚΡΗ 46ΧΡΟΝΗ: ΕΠΕΣΕ ΜΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΗΣ ΣΕ ΓΚΡΕΜΟ 30 ΜΕΤΡΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/world/o-tramp-katevase-tin-prasini-simaia-tou-protofanous-agona-aytokiniton-stous-dromous-tis-ouasigkton/"
+        "https://www.in.gr/2026/08/24/greece/tragodia-stin-axaia-me-nekri-46xroni-epese-me-to-aytokinito-tis-se-gkremo-30-metron/",
+        "https://www.in.gr/2026/08/24/apopsi/kalokairi-2026-oi-oratoi-aoratoi-lagokefaloi-kai-i-xoriatiki-xrysafi/",
+        "https://www.in.gr/2026/08/24/life/geysi/syntagi-kotopoulo-psito-me-motsarela/",
+        "https://www.in.gr/2026/08/24/world/mazikoi-fonoi-sto-oregkon-pente-nekroi-se-agrotiki-perioxi-aytoktonise-o-ypoptos/",
+        "https://www.in.gr/2026/08/24/greece/fotia-red-code-simera-se-attiki-kai-11-perioxes-stin-katigoria-4-o-kindynos-pyrkagias/",
+        "https://www.in.gr/2026/08/24/plus/vita/oi-xymoi-frouton-voithoun-tin-psyxiki-ygeia-mas/",
+        "https://www.in.gr/2026/08/24/greece/kairos-synthikes-kaysona-kai-ti-deytera-pou-tha-deiksei-40aria/",
+        "https://www.in.gr/2026/08/24/life/culture-live/mark-rafalo-vs-paramount-apokroustiki-kai-anentimi-i-katigoria-peri-antisimitismou/",
+        "https://www.in.gr/2026/08/24/plus/vita/giati-den-mporoume-na-poume-oxi-se-ena-kommati-sokolata/",
+        "https://www.in.gr/2026/08/24/world/texniti-noimosyni-politikoi-pou-apotheonan-ta-data-centers-tora-ta-polemoun/",
+        "https://www.in.gr/2026/08/24/world/o-polemos-sto-iran-edraiose-tin-igesia-ton-frouron-tis-epanastasis-giati-ayto-den-einai-kalo-neo/",
+        "https://www.in.gr/2026/08/24/world/zan-mpatist-mprene-oi-araves-den-einai-o-allos-tis-eyropis/",
+        "https://www.in.gr/2026/08/24/economy/oikonomikes-eidiseis/ilektronikes-diastayroseis-psifiako-mati-pano-apo-kathe-oxima/",
+        "https://www.in.gr/2026/08/24/economy/oikonomikes-eidiseis/se-epipeda-rekor-oi-ofeiles-se-efka-keao/",
+        "https://www.in.gr/2026/08/24/economy/oikonomikes-eidiseis/sygkrisi-oi-miniaioi-misthoi-se-69-megales-poleis-anazitontas-sti-lista-tin-athina/",
+        "https://www.in.gr/2026/08/24/life/music/royksopp-se-dimoprasia-spanio-almpoum-tous-me-eksofyllo-tou-banksy/",
+        "https://www.in.gr/2026/08/24/world/iran-o-tramp-agnoei-oti-oi-oroi-sax-mat-sto-skaki-einai-persikoi/",
+        "https://www.in.gr/2026/08/24/world/tynisia-12-oi-nekroi-kai-2-oi-agnooumenoi-apo-to-nayagio-skafous-me-metanastes/",
+        "https://www.in.gr/2026/08/24/world/oukrania-synodos-tis-symmaxias-ton-prothymon-en-meso-ayksanomenis-piesis-apo-ti-rosia/",
+        "https://www.in.gr/2026/08/24/world/rosia-dyo-paidia-nekra-se-oukraniki-epithesi-me-drones/",
+        "https://www.in.gr/2026/08/24/world/oukrania-o-neos-prothypourgos-tis-vretanias-mpernam-metavainei-sto-kievo/",
+        "https://www.in.gr/2026/08/24/world/gouinea-30-nekroi-apo-katolisthisi-se-xomateri-epeita-apo-sfodres-vroxoptoseis/",
+        "https://www.in.gr/2026/08/24/world/iran-o-oikonomikos-polemos-pou-aniggeilan-oi-ipa-tha-ginei-mpoumerangk-proeidopoiei-o-galimpaf/",
+        "https://www.in.gr/2026/08/24/world/iordania-o-ypeks-tis-syrias-synantithike-me-ton-arxigo-tis-mosant-anaferoun-piges/"
       ],
-      "seen_at_utc": "2026-08-23T22:51:04.498561+00:00"
+      "seen_at_utc": "2026-08-24T04:17:27.451577+00:00"
     }
   },
-  "updated_at_utc": "2026-08-23T22:51:04.498667+00:00"
+  "updated_at_utc": "2026-08-24T04:17:27.451745+00:00"
 }
