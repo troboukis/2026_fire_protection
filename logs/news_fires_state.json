@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564417877/paros-symmoria-rimaze-spitia-vinteo-apo-tin-epicheirisi-tis-el-as/",
-      "title": "Πάρος: Συμμορία «ρήμαζε» σπίτια – Βίντεο από την επιχείρηση της ΕΛ.ΑΣ.",
-      "normalized_title": "ΠΑΡΟΣ: ΣΥΜΜΟΡΙΑ «ΡΗΜΑΖΕ» ΣΠΙΤΙΑ – ΒΙΝΤΕΟ ΑΠΟ ΤΗΝ ΕΠΙΧΕΙΡΗΣΗ ΤΗΣ ΕΛ.ΑΣ.",
+      "url": "https://www.kathimerini.gr/society/564417913/attiki-pano-apo-5-000-paravaseis-se-mia-evdomada-odigoi-etrechan-me-170-chlm-ora/",
+      "title": "Αττική: Πάνω από 5.000 παραβάσεις σε μία εβδομάδα – Οδηγοί έτρεχαν με 170 χλμ./ώρα",
+      "normalized_title": "ΑΤΤΙΚΗ: ΠΑΝΩ ΑΠΟ 5.000 ΠΑΡΑΒΑΣΕΙΣ ΣΕ ΜΙΑ ΕΒΔΟΜΑΔΑ – ΟΔΗΓΟΙ ΕΤΡΕΧΑΝ ΜΕ 170 ΧΛΜ./ΩΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564417877/paros-symmoria-rimaze-spitia-vinteo-apo-tin-epicheirisi-tis-el-as/"
+        "https://www.kathimerini.gr/society/564417913/attiki-pano-apo-5-000-paravaseis-se-mia-evdomada-odigoi-etrechan-me-170-chlm-ora/",
+        "https://www.kathimerini.gr/world/564417871/synantisi-si-tzinpingk-me-ton-iordano-vasilia-ampntala/",
+        "https://www.kathimerini.gr/society/564417901/paristanan-toys-logistes-kai-eklevan-ilikiomenoys-dyo-syllipseis-gia-pente-apates/"
       ],
-      "seen_at_utc": "2026-08-24T14:51:17.574572+00:00"
+      "seen_at_utc": "2026-08-24T15:17:35.603295+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868911/sti-dikaiosuni-odigeitai-o-21hronos-pou-odigouse-me-anoihtes-portes-kai-mousiki-sti-diapason-stin-athinon-korinthou/?utm_source=rss",
-      "title": "Ταυτοποιήθηκε ο 21χρονος που οδηγούσε με ανοιχτές πόρτες και μουσική στη διαπασών στην Αθηνών-Κορίνθου",
-      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ Ο 21ΧΡΟΝΟΣ ΠΟΥ ΟΔΗΓΟΥΣΕ ΜΕ ΑΝΟΙΧΤΕΣ ΠΟΡΤΕΣ ΚΑΙ ΜΟΥΣΙΚΗ ΣΤΗ ΔΙΑΠΑΣΩΝ ΣΤΗΝ ΑΘΗΝΩΝ-ΚΟΡΙΝΘΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1868927/fotia-tora-ston-aspro-kilkis-epiheirei-ena-elikoptero/?utm_source=rss",
+      "title": "Φωτιά τώρα στον Άσπρο Κιλκίς, επιχειρεί ένα ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟΝ ΑΣΠΡΟ ΚΙΛΚΙΣ, ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868911/sti-dikaiosuni-odigeitai-o-21hronos-pou-odigouse-me-anoihtes-portes-kai-mousiki-sti-diapason-stin-athinon-korinthou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868927/fotia-tora-ston-aspro-kilkis-epiheirei-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868921/fotia-tora-sto-tragano-ileias-sikothikan-tria-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T14:51:17.574755+00:00"
+      "seen_at_utc": "2026-08-24T15:17:35.603451+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453459/antiperifereiarhis-proteine-ti-metonomasia-ton-eptanison-se-nisia-toy-odyssea-antithetos-o-dimarhos-ithakis/",
-      "title": "Αντιπεριφερειάρχης πρότεινε τη μετονομασία των Επτανήσων σε «Νησιά του Οδυσσέα» – Αντίθετος ο δήμαρχος Ιθάκης",
-      "normalized_title": "ΑΝΤΙΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΠΡΟΤΕΙΝΕ ΤΗ ΜΕΤΟΝΟΜΑΣΙΑ ΤΩΝ ΕΠΤΑΝΗΣΩΝ ΣΕ «ΝΗΣΙΑ ΤΟΥ ΟΔΥΣΣΕΑ» – ΑΝΤΙΘΕΤΟΣ Ο ΔΗΜΑΡΧΟΣ ΙΘΑΚΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1453483/oykrania-o-zelesnki-zita-27-dis-eyro-apo-toys-symmahoys-toy-epikaleitai-amyntikes-anagkes/",
+      "title": "Ουκρανία: Ο Ζελέσνκι ζητά 27 δισ. ευρώ από τους συμμάχους του – Επικαλείται αμυντικές ανάγκες",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: Ο ΖΕΛΕΣΝΚΙ ΖΗΤΑ 27 ΔΙΣ. ΕΥΡΩ ΑΠΟ ΤΟΥΣ ΣΥΜΜΑΧΟΥΣ ΤΟΥ – ΕΠΙΚΑΛΕΙΤΑΙ ΑΜΥΝΤΙΚΕΣ ΑΝΑΓΚΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453459/antiperifereiarhis-proteine-ti-metonomasia-ton-eptanison-se-nisia-toy-odyssea-antithetos-o-dimarhos-ithakis/",
-        "https://www.efsyn.gr/ellada/1453466/thessaloniki-18hronos-dinei-zoi-se-tesseris-astheneis-me-dorea-organon/"
+        "https://www.efsyn.gr/kosmos/1453483/oykrania-o-zelesnki-zita-27-dis-eyro-apo-toys-symmahoys-toy-epikaleitai-amyntikes-anagkes/",
+        "https://www.efsyn.gr/ellada/1453488/fotia-sto-tragano-ileias-epiheiroyn-tria-aeroskafi/",
+        "https://www.efsyn.gr/ellada/1453489/pyrino-metopo-se-hamili-vlastisi-sto-kilkis/",
+        "https://www.efsyn.gr/ellada/1453470/keerfa-epistoli-300-egkleiston-sto-kolastirio-tis-sintikis-eimaste-exantlimenoi-polloi-skeftontai-tin-aytoktonia/",
+        "https://www.efsyn.gr/politiki/1453209/milon-tis-eridos-oi-53-anexartitoi-voyleytes-poioi-einai-apo-poy-proerhontai-kai-poy-pigainoyn/",
+        "https://www.efsyn.gr/kosmos/1453471/emporikos-polemos-ipa-kanada-o-tramp-apeilei-me-dasmoys-50-se-aytokinita-kai-halyva/"
       ],
-      "seen_at_utc": "2026-08-24T14:51:17.574714+00:00"
+      "seen_at_utc": "2026-08-24T15:17:35.603426+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/greece/gynaikoktonia-sti-nea-smyrni-ti-edeikse-i-iatrodikastiki-eksetasi-den-mporese-na-antidrasei-i-atyxi-45xroni/",
-      "title": "Τι έδειξε η ιατροδικαστική στις σορούς θύματος και δράστη – Δεν μπόρεσε να αντιδράσει η άτυχη 45χρονη",
-      "normalized_title": "ΤΙ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΣΤΙΣ ΣΟΡΟΥΣ ΘΥΜΑΤΟΣ ΚΑΙ ΔΡΑΣΤΗ – ΔΕΝ ΜΠΟΡΕΣΕ ΝΑ ΑΝΤΙΔΡΑΣΕΙ Η ΑΤΥΧΗ 45ΧΡΟΝΗ",
+      "url": "https://www.in.gr/2026/08/24/greece/thriler-me-ton-ispano-epixeirimatia-pou-agnoeitai-sto-ionio-fotografies-ntokoumento-apo-ti-rymoulkisi-tou-skafous/",
+      "title": "Θρίλερ με τον Ισπανό επιχειρηματία που αγνοείται στο Ιόνιο – Φωτογραφίες ντοκουμέντο από τη ρυμούλκηση του σκάφους",
+      "normalized_title": "ΘΡΙΛΕΡ ΜΕ ΤΟΝ ΙΣΠΑΝΟ ΕΠΙΧΕΙΡΗΜΑΤΙΑ ΠΟΥ ΑΓΝΟΕΙΤΑΙ ΣΤΟ ΙΟΝΙΟ – ΦΩΤΟΓΡΑΦΙΕΣ ΝΤΟΚΟΥΜΕΝΤΟ ΑΠΟ ΤΗ ΡΥΜΟΥΛΚΗΣΗ ΤΟΥ ΣΚΑΦΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/greece/gynaikoktonia-sti-nea-smyrni-ti-edeikse-i-iatrodikastiki-eksetasi-den-mporese-na-antidrasei-i-atyxi-45xroni/",
-        "https://www.in.gr/2026/08/24/sports/basketball/oi-nagkets-dimiourgoun-neo-big-three-me-ton-nterozan-vids/"
+        "https://www.in.gr/2026/08/24/greece/thriler-me-ton-ispano-epixeirimatia-pou-agnoeitai-sto-ionio-fotografies-ntokoumento-apo-ti-rymoulkisi-tou-skafous/",
+        "https://www.in.gr/2026/08/24/politics/epikairotita/erotisi-tou-syriza-gia-ton-rolo-tis-gallikis-meridiam-stin-ilektriki-diasyndesi-elladas-kyprou/",
+        "https://www.in.gr/2026/08/24/go-fun/fizz/o-tarantino-apotheose-to-black-hawk-down-kai-o-rintlei-skot-apanta-pes-mas-ti-pineis-kai-den-mas-dineis/",
+        "https://www.in.gr/2026/08/24/in-science/perivallon-b-science/epi-dekaeties-i-ouggaria-apostraggize-tous-ygrotopous-tis-tora-plironei-to-timima/",
+        "https://www.in.gr/2026/08/24/greece/prokopis-paylopoulos-protypo-o-vios-tou-kosma-tou-aitolou/",
+        "https://www.in.gr/2026/08/24/sports/basketball/live-ellada-kypros-3/"
       ],
-      "seen_at_utc": "2026-08-24T14:51:17.574658+00:00"
+      "seen_at_utc": "2026-08-24T15:17:35.603385+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T14:51:17.574847+00:00"
+  "updated_at_utc": "2026-08-24T15:17:35.603558+00:00"
 }
