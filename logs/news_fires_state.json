@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564417301/i-aek-toy-nikolits-archizei-na-deichnei-ti-thelei-na-ginei/",
-      "title": "Η ΑΕΚ του Νίκολιτς αρχίζει να δείχνει τι θέλει να γίνει",
-      "normalized_title": "Η ΑΕΚ ΤΟΥ ΝΙΚΟΛΙΤΣ ΑΡΧΙΖΕΙ ΝΑ ΔΕΙΧΝΕΙ ΤΙ ΘΕΛΕΙ ΝΑ ΓΙΝΕΙ",
+      "url": "https://www.kathimerini.gr/society/564417373/fotia-stin-kastania-imathias-dyo-elikoptera-sti-machi-me-tis-floges/",
+      "title": "Φωτιά στην Καστανιά Ημαθίας – Δύο ελικόπτερα στη μάχη με τις φλόγες",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΑΣΤΑΝΙΑ ΗΜΑΘΙΑΣ – ΔΥΟ ΕΛΙΚΟΠΤΕΡΑ ΣΤΗ ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564417301/i-aek-toy-nikolits-archizei-na-deichnei-ti-thelei-na-ginei/",
-        "https://www.kathimerini.gr/society/564417298/kypseli-sovaro-atychima-me-ilektriko-patini-sto-agla-a-kyriakoy-15chronos/",
-        "https://www.kathimerini.gr/k/disney/564405676/miky-maoys-637-i-teleytaia-peripeteia/",
-        "https://www.kathimerini.gr/world/564417292/marantona-i-mpala-apo-to-cheri-toy-theoy-poylithike-gia-2-9-ekatommyria-eyro/",
-        "https://www.kathimerini.gr/society/564417280/aigaleo-enopli-listeia-se-mini-market-apeilisan-21chroni-ypallilo/"
+        "https://www.kathimerini.gr/society/564417373/fotia-stin-kastania-imathias-dyo-elikoptera-sti-machi-me-tis-floges/",
+        "https://www.kathimerini.gr/society/564417370/lasithi-synelifthisan-dyo-anilikoi-gia-xylodarmo-synomilikoy-toys-synelifthisan-kai-oi-goneis-toys/",
+        "https://www.kathimerini.gr/world/564417289/stoys-dromoys-oi-fryganieres-tis-amazon-ta-prota-rompotaxi-choris-tamplo-kai-pental/",
+        "https://www.kathimerini.gr/politics/564417355/syriza-anexartitopoiithike-i-olga-gerovasili/"
       ],
-      "seen_at_utc": "2026-08-24T08:17:12.826526+00:00"
+      "seen_at_utc": "2026-08-24T08:51:16.068681+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,35 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868715/oikogeneiaki-tragodia-stin-patra-zeugari-efuge-me-diafora-30-imeron/?utm_source=rss",
-      "title": "Οικογενειακή τραγωδία στην Πάτρα: Ζευγάρι «έφυγε» με διαφορά 30 ημερών",
-      "normalized_title": "ΟΙΚΟΓΕΝΕΙΑΚΗ ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΠΑΤΡΑ: ΖΕΥΓΑΡΙ «ΕΦΥΓΕ» ΜΕ ΔΙΑΦΟΡΑ 30 ΗΜΕΡΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1868734/to-cyclone-project-oloklironei-tis-paremvaseis-tou-stous-nomous-argolidas-messinias-kai-fokidas/?utm_source=rss",
+      "title": "Το Cyclone Project ολοκληρώνει τις παρεμβάσεις του στους Νομούς Αργολίδας, Μεσσηνίας και Φωκίδας",
+      "normalized_title": "ΤΟ CYCLONE PROJECT ΟΛΟΚΛΗΡΩΝΕΙ ΤΙΣ ΠΑΡΕΜΒΑΣΕΙΣ ΤΟΥ ΣΤΟΥΣ ΝΟΜΟΥΣ ΑΡΓΟΛΙΔΑΣ, ΜΕΣΣΗΝΙΑΣ ΚΑΙ ΦΩΚΙΔΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868715/oikogeneiaki-tragodia-stin-patra-zeugari-efuge-me-diafora-30-imeron/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1868734/to-cyclone-project-oloklironei-tis-paremvaseis-tou-stous-nomous-argolidas-messinias-kai-fokidas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1868725/giati-stamata-na-leitourgei-o-anelkustiras-ston-iero-vraho-tis-akropolis-ti-apada-to-upourgeio-politismou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T08:30:22.047540+00:00"
+      "seen_at_utc": "2026-08-24T08:51:16.068778+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1453089/to-glypto-sto-layrio-kai-o-dimosios-horos/",
-      "title": "Το γλυπτό στο Λαύριο και ο δημόσιος χώρος",
-      "normalized_title": "ΤΟ ΓΛΥΠΤΟ ΣΤΟ ΛΑΥΡΙΟ ΚΑΙ Ο ΔΗΜΟΣΙΟΣ ΧΩΡΟΣ",
+      "url": "https://www.efsyn.gr/kosmos/1453148/to-iran-proeidopoiei-tin-voylgaria-i-synergasia-me-tis-ipa-apotelei-praxi-epithetikotitas/",
+      "title": "Το Ιράν προειδοποιεί την Βουλγαρία: «Η συνεργασία με τις ΗΠΑ αποτελεί πράξη επιθετικότητας»",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΠΡΟΕΙΔΟΠΟΙΕΙ ΤΗΝ ΒΟΥΛΓΑΡΙΑ: «Η ΣΥΝΕΡΓΑΣΙΑ ΜΕ ΤΙΣ ΗΠΑ ΑΠΟΤΕΛΕΙ ΠΡΑΞΗ ΕΠΙΘΕΤΙΚΟΤΗΤΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1453089/to-glypto-sto-layrio-kai-o-dimosios-horos/",
-        "https://www.efsyn.gr/ellada/1453121/veroia-pyrkagia-se-dasiki-ektasi-konta-stin-kastania/"
+        "https://www.efsyn.gr/kosmos/1453148/to-iran-proeidopoiei-tin-voylgaria-i-synergasia-me-tis-ipa-apotelei-praxi-epithetikotitas/",
+        "https://www.efsyn.gr/stiles/1453141/apo-tin-kypseli-sto-ntoympai-enas-doysis-dromos/",
+        "https://www.efsyn.gr/ellada/1453137/sovaro-atyhima-me-patini-stin-kypseli-se-krisimi-katastasi-15hronos/",
+        "https://www.efsyn.gr/politiki/1453130/i-olga-gerovasili-kai-episimos-anexartiti-voyleytria/"
       ],
-      "seen_at_utc": "2026-08-24T08:30:22.047518+00:00"
+      "seen_at_utc": "2026-08-24T08:51:16.068753+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/greece/fotia-se-dasiki-perioxi-sta-grevena-sti-maxi-epigeia-kai-enaeria-mesa/",
-      "title": "Φωτιά σε δασική περιοχή στα Γρεβενά – Στη μάχη επίγεια και εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΠΕΡΙΟΧΗ ΣΤΑ ΓΡΕΒΕΝΑ – ΣΤΗ ΜΑΧΗ ΕΠΙΓΕΙΑ ΚΑΙ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.in.gr/2026/08/24/greece/patra-zeygari-giatron-pethane-me-diafora-30-imeron/",
+      "title": "Μαζί στη ζωή μαζί και στον θάνατο: Ζευγάρι γιατρών πέθανε με διαφορά 30 ημερών",
+      "normalized_title": "ΜΑΖΙ ΣΤΗ ΖΩΗ ΜΑΖΙ ΚΑΙ ΣΤΟΝ ΘΑΝΑΤΟ: ΖΕΥΓΑΡΙ ΓΙΑΤΡΩΝ ΠΕΘΑΝΕ ΜΕ ΔΙΑΦΟΡΑ 30 ΗΜΕΡΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/greece/fotia-se-dasiki-perioxi-sta-grevena-sti-maxi-epigeia-kai-enaeria-mesa/",
-        "https://www.in.gr/2026/08/24/life/culture-live/ypourgeio-politismou-ti-apanta-sta-dimosieymata-gia-ti-leitourgia-tou-anelkystira-tou-ierou-vraxou-akropolis/",
-        "https://www.in.gr/2026/08/24/sports/on-field/tzolakis-kai-tzolis-stin-idaniki-entekada-tis-premier-ligk/"
+        "https://www.in.gr/2026/08/24/greece/patra-zeygari-giatron-pethane-me-diafora-30-imeron/",
+        "https://www.in.gr/2026/08/24/in-science/technology/i-kina-ta-vazei-me-tis-epikindynes-kryfes-xeirolaves-tis-tesla-ekatommyria-aytokinita-anakalountai/",
+        "https://www.in.gr/2026/08/24/sports/basketball/euroleague/anakoinothike-to-programma-tou-super-cup-tis-euroleague-oi-agones-tou-olympiakou/",
+        "https://www.in.gr/2026/08/24/world/iran-proeidopoiisi-sti-voulgaria-den-tha-deiksoume-epieikeia-se-osous-emplekontai-se-epitheseis-enantion-mas/",
+        "https://www.in.gr/2026/08/24/politics/syriza-aneksartitopoiithike-kai-episima-i-olga-gerovasili/"
       ],
-      "seen_at_utc": "2026-08-24T08:30:22.047489+00:00"
+      "seen_at_utc": "2026-08-24T08:51:16.068726+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T08:30:22.047617+00:00"
+  "updated_at_utc": "2026-08-24T08:51:16.068855+00:00"
 }
