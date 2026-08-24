@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564414559/stefanos-manos-ego-ta-idia-tha-po/",
-      "title": "Στέφανος Μάνος: «Εγώ τα ίδια θα πω…»",
-      "normalized_title": "ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ: «ΕΓΩ ΤΑ ΙΔΙΑ ΘΑ ΠΩ…»",
+      "url": "https://www.kathimerini.gr/economy/564414976/enas-rizospastis-toy-oikonomikoy-fileleytherismoy/",
+      "title": "Ενας ριζοσπάστης του οικονομικού φιλελευθερισμού",
+      "normalized_title": "ΕΝΑΣ ΡΙΖΟΣΠΑΣΤΗΣ ΤΟΥ ΟΙΚΟΝΟΜΙΚΟΥ ΦΙΛΕΛΕΥΘΕΡΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564414559/stefanos-manos-ego-ta-idia-tha-po/"
+        "https://www.kathimerini.gr/economy/564414976/enas-rizospastis-toy-oikonomikoy-fileleytherismoy/",
+        "https://www.kathimerini.gr/society/564414607/stefanos-manos-1939-2026-to-ypodeigma-tis-omis-alitheias/",
+        "https://www.kathimerini.gr/world/564418027/oikonomiki-d-day-gia-to-iran-oi-ipa-stocheyoyn-ontotites-prosopa-kai-ploia/",
+        "https://www.kathimerini.gr/world/564418021/netaniachoy-to-iran-epicheirise-na-dolofonisei-enan-apo-toys-gioys-moy/"
       ],
-      "seen_at_utc": "2026-08-24T17:30:02.570486+00:00"
+      "seen_at_utc": "2026-08-24T17:51:17.072474+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1262,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1868995/proto-krousma-tou-iou-tou-dutikou-neilou-stin-kriti-ilikiomenos-nosileutike-sto-nosokomeio/?utm_source=rss",
-      "title": "Πρώτο κρούσμα του ιού του Δυτικού Νείλου στην Κρήτη, ηλικιωμένος νοσηλεύτηκε στο νοσοκομείο",
-      "normalized_title": "ΠΡΩΤΟ ΚΡΟΥΣΜΑ ΤΟΥ ΙΟΥ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ ΣΤΗΝ ΚΡΗΤΗ, ΗΛΙΚΙΩΜΕΝΟΣ ΝΟΣΗΛΕΥΤΗΚΕ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1869003/sunelifthisan-12-anthropoi-stin-vretania-epeita-apo-polunekro-dustuhima-se-autokinitodromo/?utm_source=rss",
+      "title": "Τα ελληνόφωνα χωριά της Καλαβρίας επισκέφθηκε η πρέσβης μας στην Ιταλία, Ελένη Σουρανή",
+      "normalized_title": "ΤΑ ΕΛΛΗΝΟΦΩΝΑ ΧΩΡΙΑ ΤΗΣ ΚΑΛΑΒΡΙΑΣ ΕΠΙΣΚΕΦΘΗΚΕ Η ΠΡΕΣΒΗΣ ΜΑΣ ΣΤΗΝ ΙΤΑΛΙΑ, ΕΛΕΝΗ ΣΟΥΡΑΝΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1868995/proto-krousma-tou-iou-tou-dutikou-neilou-stin-kriti-ilikiomenos-nosileutike-sto-nosokomeio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1868992/horis-tis-aisthiseis-tou-anasurthike-63hronos-pou-eihe-exafanistei-apo-tin-makrakomi-fthiotidas/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869003/sunelifthisan-12-anthropoi-stin-vretania-epeita-apo-polunekro-dustuhima-se-autokinitodromo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-24T17:17:13.898509+00:00"
+      "seen_at_utc": "2026-08-24T17:51:17.072618+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453557/i-exomologisi-tis-stellas-kyriakidoy-diagnostika-me-karkino-meros-tis-zois-moy-alla-den-tin-kathorizei/",
-      "title": "Η εξομολόγηση της Στέλλας Κυριακίδου: Διαγνώστηκα με καρκίνο – «Μέρος της ζωής μου, αλλά δεν την καθορίζει»",
-      "normalized_title": "Η ΕΞΟΜΟΛΟΓΗΣΗ ΤΗΣ ΣΤΕΛΛΑΣ ΚΥΡΙΑΚΙΔΟΥ: ΔΙΑΓΝΩΣΤΗΚΑ ΜΕ ΚΑΡΚΙΝΟ – «ΜΕΡΟΣ ΤΗΣ ΖΩΗΣ ΜΟΥ, ΑΛΛΑ ΔΕΝ ΤΗΝ ΚΑΘΟΡΙΖΕΙ»",
+      "url": "https://www.efsyn.gr/kosmos/1453564/apeiles-mpesent-kata-iran-tha-kopsoyme-kathe-grammi-zois-poy-to-stirizei-stohos-na-apomonothei-i-teherani/",
+      "title": "Κυρώσεις Μπέσεντ κατά Ιράν: «Θα κόψουμε κάθε γραμμή ζωής που το στηρίζει» – Τελεσίγραφο σε τρίτες χώρες",
+      "normalized_title": "ΚΥΡΩΣΕΙΣ ΜΠΕΣΕΝΤ ΚΑΤΑ ΙΡΑΝ: «ΘΑ ΚΟΨΟΥΜΕ ΚΑΘΕ ΓΡΑΜΜΗ ΖΩΗΣ ΠΟΥ ΤΟ ΣΤΗΡΙΖΕΙ» – ΤΕΛΕΣΙΓΡΑΦΟ ΣΕ ΤΡΙΤΕΣ ΧΩΡΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453557/i-exomologisi-tis-stellas-kyriakidoy-diagnostika-me-karkino-meros-tis-zois-moy-alla-den-tin-kathorizei/",
-        "https://www.efsyn.gr/ellada/1453552/emprismos-mystirio-se-farmakeio-sti-vlaherna-arkadias-agnostoi-toy-evalan-fotia-mesa-sti-nyhta-eikones-vinteo/"
+        "https://www.efsyn.gr/kosmos/1453564/apeiles-mpesent-kata-iran-tha-kopsoyme-kathe-grammi-zois-poy-to-stirizei-stohos-na-apomonothei-i-teherani/",
+        "https://www.efsyn.gr/ellada/1453281/farmakeytiki-kainotomia-oi-therapeies-poy-den-ftanoyn-ston-ellina-astheni/"
       ],
-      "seen_at_utc": "2026-08-24T17:30:02.570620+00:00"
+      "seen_at_utc": "2026-08-24T17:51:17.072595+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/24/politics/aftodioikisi/ithaki-pairnei-thesi-stin-protasi-na-metonomastoun-tou-eptanisa-se-nisia-tou-odyssea/",
-      "title": "Η Ιθάκη παίρνει θέση στην πρόταση να μετονομαστούν του Επτάνησα σε «Νησιά του Οδυσσέα»",
-      "normalized_title": "Η ΙΘΑΚΗ ΠΑΙΡΝΕΙ ΘΕΣΗ ΣΤΗΝ ΠΡΟΤΑΣΗ ΝΑ ΜΕΤΟΝΟΜΑΣΤΟΥΝ ΤΟΥ ΕΠΤΑΝΗΣΑ ΣΕ «ΝΗΣΙΑ ΤΟΥ ΟΔΥΣΣΕΑ»",
+      "url": "https://www.in.gr/2026/08/24/greece/kaysonas-kamini-i-xora-stous-418c-o-ydrargyros-sti-messinia-ti-edeiksan-oi-thermikes-kameres/",
+      "title": "«Καμίνι» η χώρα - Στους 41,8°C ο υδράργυρος στη Μεσσηνία, τι έδειξαν οι θερμικές κάμερες",
+      "normalized_title": "«ΚΑΜΙΝΙ» Η ΧΩΡΑ - ΣΤΟΥΣ 41,8°C Ο ΥΔΡΑΡΓΥΡΟΣ ΣΤΗ ΜΕΣΣΗΝΙΑ, ΤΙ ΕΔΕΙΞΑΝ ΟΙ ΘΕΡΜΙΚΕΣ ΚΑΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/24/politics/aftodioikisi/ithaki-pairnei-thesi-stin-protasi-na-metonomastoun-tou-eptanisa-se-nisia-tou-odyssea/",
-        "https://www.in.gr/2026/08/24/go-fun/fizz/i-mitera-tis-xeinten-panetier-apantaei-stous-haters-akyronei-tin-adikoxameni-kori-tis/"
+        "https://www.in.gr/2026/08/24/greece/kaysonas-kamini-i-xora-stous-418c-o-ydrargyros-sti-messinia-ti-edeiksan-oi-thermikes-kameres/",
+        "https://www.in.gr/2026/08/24/sports/football/kai-thryloi-tou-podosfairou-kata-tou-infantino-i-allagi-einai-aparaititi/",
+        "https://www.in.gr/2026/08/24/greece/to-laxmatzoun-i-mystiki-syntagi-kai-o-fovos-ton-elegxon-tou-sdoe-oi-dialogoi-tou-kyklomatos-narkotikon-sti-mykono/"
       ],
-      "seen_at_utc": "2026-08-24T17:30:02.570549+00:00"
+      "seen_at_utc": "2026-08-24T17:51:17.072543+00:00"
     }
   },
-  "updated_at_utc": "2026-08-24T17:30:02.570688+00:00"
+  "updated_at_utc": "2026-08-24T17:51:17.072690+00:00"
 }
