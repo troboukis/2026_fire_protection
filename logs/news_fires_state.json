@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564420094/kanadas-antipoina-stis-ipa-me-dasmoys-se-proionta-20-dis/",
-      "title": "Καναδάς: Αντίποινα στις ΗΠΑ με δασμούς σε προϊόντα 20 δισ.",
-      "normalized_title": "ΚΑΝΑΔΑΣ: ΑΝΤΙΠΟΙΝΑ ΣΤΙΣ ΗΠΑ ΜΕ ΔΑΣΜΟΥΣ ΣΕ ΠΡΟΙΟΝΤΑ 20 ΔΙΣ.",
+      "url": "https://www.kathimerini.gr/life/people/564389941/oreini-naypaktia-o-fylakas-tis-mnimis/",
+      "title": "Ορεινή Ναυπακτία: Ο φύλακας της μνήμης",
+      "normalized_title": "ΟΡΕΙΝΗ ΝΑΥΠΑΚΤΙΑ: Ο ΦΥΛΑΚΑΣ ΤΗΣ ΜΝΗΜΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564420094/kanadas-antipoina-stis-ipa-me-dasmoys-se-proionta-20-dis/"
+        "https://www.kathimerini.gr/life/people/564389941/oreini-naypaktia-o-fylakas-tis-mnimis/",
+        "https://www.kathimerini.gr/society/564420103/fotia-sti-voiotia-ichise-to-112-gia-ekkenosi/"
       ],
-      "seen_at_utc": "2026-08-25T15:30:12.250131+00:00"
+      "seen_at_utc": "2026-08-25T15:51:31.933732+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869413/pano-apo-50-metanastes-edopistikan-se-lemvo-stin-ierapetra/?utm_source=rss",
-      "title": "Πάνω από 50 μετανάστες εντοπίστηκαν σε λέμβο στην Ιεράπετρα",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 50 ΜΕΤΑΝΑΣΤΕΣ ΕΝΤΟΠΙΣΤΗΚΑΝ ΣΕ ΛΕΜΒΟ ΣΤΗΝ ΙΕΡΑΠΕΤΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1869422/metanasteutiko-243-afixeis-stin-kriti-mesa-se-mia-mono-mera-baraz-epiheiriseon-apo-to-limeniko/?utm_source=rss",
+      "title": "Μεταναστευτικό: 243 αφίξεις στην Κρήτη μέσα σε μία μόνο μέρα, μπαράζ επιχειρήσεων από το Λιμενικό",
+      "normalized_title": "ΜΕΤΑΝΑΣΤΕΥΤΙΚΟ: 243 ΑΦΙΞΕΙΣ ΣΤΗΝ ΚΡΗΤΗ ΜΕΣΑ ΣΕ ΜΙΑ ΜΟΝΟ ΜΕΡΑ, ΜΠΑΡΑΖ ΕΠΙΧΕΙΡΗΣΕΩΝ ΑΠΟ ΤΟ ΛΙΜΕΝΙΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869413/pano-apo-50-metanastes-edopistikan-se-lemvo-stin-ierapetra/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869422/metanasteutiko-243-afixeis-stin-kriti-mesa-se-mia-mono-mera-baraz-epiheiriseon-apo-to-limeniko/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T15:30:12.250200+00:00"
+      "seen_at_utc": "2026-08-25T15:51:31.933835+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1454185/pasok-to-tameio-anakampsis-itan-mia-megali-ethniki-eykairia-kai-i-kyvernisi-tin-ehase/",
-      "title": "ΠΑΣΟΚ: Το Ταμείο Ανάκαμψης ήταν μια μεγάλη εθνική ευκαιρία και η κυβέρνηση την έχασε",
-      "normalized_title": "ΠΑΣΟΚ: ΤΟ ΤΑΜΕΙΟ ΑΝΑΚΑΜΨΗΣ ΗΤΑΝ ΜΙΑ ΜΕΓΑΛΗ ΕΘΝΙΚΗ ΕΥΚΑΙΡΙΑ ΚΑΙ Η ΚΥΒΕΡΝΗΣΗ ΤΗΝ ΕΧΑΣΕ",
+      "url": "https://www.efsyn.gr/kosmos/1454197/anisyhia-sto-iran-meta-tis-kyroseis-ton-ipa-oi-polites-shimatizoyn-oyres-sta-venzinadika-eikones-vinteo/",
+      "title": "Ανησυχία στο Ιράν μετά τις κυρώσεις των ΗΠΑ – Οι πολίτες σχηματίζουν ουρές στα βενζινάδικα [εικόνες – βίντεο]",
+      "normalized_title": "ΑΝΗΣΥΧΙΑ ΣΤΟ ΙΡΑΝ ΜΕΤΑ ΤΙΣ ΚΥΡΩΣΕΙΣ ΤΩΝ ΗΠΑ – ΟΙ ΠΟΛΙΤΕΣ ΣΧΗΜΑΤΙΖΟΥΝ ΟΥΡΕΣ ΣΤΑ ΒΕΝΖΙΝΑΔΙΚΑ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1454185/pasok-to-tameio-anakampsis-itan-mia-megali-ethniki-eykairia-kai-i-kyvernisi-tin-ehase/"
+        "https://www.efsyn.gr/kosmos/1454197/anisyhia-sto-iran-meta-tis-kyroseis-ton-ipa-oi-polites-shimatizoyn-oyres-sta-venzinadika-eikones-vinteo/",
+        "https://www.efsyn.gr/kosmos/1454198/erntogan-xekinise-i-epohi-tis-megalis-kai-ishyris-toyrkias-oi-genoktonoi-tha-ittithoyn/",
+        "https://www.efsyn.gr/ellada/1454206/pyrkagia-sti-voiotia-ekkenonontai-oi-tsoykalades-epiheiroyn-11-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1453970/gerasmena-aytokinita-gia-toys-polloys-ilektrokinisi-gia-ligoys-sto-leasing-strefontai-oi-ellines/",
+        "https://www.efsyn.gr/politiki/1454187/galazios-agrotosyndikalistis-epi-tsipra-plironomastan-stin-ora-mas-apo-ton-opekepe-kai-den-eihame-kai-skandala/",
+        "https://www.efsyn.gr/kosmos/1454189/sti-mosha-o-dieythyntis-tis-cia-sti-mosha-sigi-ihthyos-gia-to-poioys-tha-synantisei-kai-giati/"
       ],
-      "seen_at_utc": "2026-08-25T15:30:12.250188+00:00"
+      "seen_at_utc": "2026-08-25T15:51:31.933809+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/stories/synexeia-se-kontra-dimitris-kai-stamatis-kokotas-i-alithini-anaglyfi-sxesi-patera-kai-giou/",
-      "title": "«Συνέχεια σε κόντρα»: Δημήτρης και Σταμάτης Κόκοτας – Η αληθινή, ανάγλυφη σχέση πατέρα και γιου",
-      "normalized_title": "«ΣΥΝΕΧΕΙΑ ΣΕ ΚΟΝΤΡΑ»: ΔΗΜΗΤΡΗΣ ΚΑΙ ΣΤΑΜΑΤΗΣ ΚΟΚΟΤΑΣ – Η ΑΛΗΘΙΝΗ, ΑΝΑΓΛΥΦΗ ΣΧΕΣΗ ΠΑΤΕΡΑ ΚΑΙ ΓΙΟΥ",
+      "url": "https://www.in.gr/2026/08/25/greece/to-vary-timima-piso-apo-ton-fthino-odontiatriko-tourismo-stin-tourkia/",
+      "title": "Το βαρύ τίμημα πίσω από τον φθηνό οδοντιατρικό τουρισμό στην Τουρκία",
+      "normalized_title": "ΤΟ ΒΑΡΥ ΤΙΜΗΜΑ ΠΙΣΩ ΑΠΟ ΤΟΝ ΦΘΗΝΟ ΟΔΟΝΤΙΑΤΡΙΚΟ ΤΟΥΡΙΣΜΟ ΣΤΗΝ ΤΟΥΡΚΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/stories/synexeia-se-kontra-dimitris-kai-stamatis-kokotas-i-alithini-anaglyfi-sxesi-patera-kai-giou/",
-        "https://www.in.gr/2026/08/25/apopsi/epta-xronia-xamenon-eykairion-anaptyksi-gia-ligous-kai-eklektous-i-eyimeria-gia-tous-pollous/",
-        "https://www.in.gr/2026/08/25/world/dasmoi-enanti-dasmon-i-apantisi-tou-kanada-stis-ipa-den-argise-na-erthei/"
+        "https://www.in.gr/2026/08/25/greece/to-vary-timima-piso-apo-ton-fthino-odontiatriko-tourismo-stin-tourkia/",
+        "https://www.in.gr/2026/08/25/english-edition/high-prices-what-fuel-costs-revealed-about-greek-vacations/",
+        "https://www.in.gr/2026/08/25/greece/treis-mines-agonias-gia-tin-kineza-metafrastria-to-taksidi-stin-kina-kai-ta-teleytaia-minymata-me-ton-gio-tis/",
+        "https://www.in.gr/2026/08/25/sports/basketball/xamos-stin-euroleague-perissoteres-apo-20-omades-endiaferontai-na-paiksoun-prosfores-kai-apo-ari-paok/"
       ],
-      "seen_at_utc": "2026-08-25T15:30:12.250165+00:00"
+      "seen_at_utc": "2026-08-25T15:51:31.933777+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T15:30:12.250272+00:00"
+  "updated_at_utc": "2026-08-25T15:51:31.933930+00:00"
 }
