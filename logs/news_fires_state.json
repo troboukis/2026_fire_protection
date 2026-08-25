@@ -1,15 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564419452/metro-stin-kypseli-i-proti-eikona-gia-tis-rogmes-se-14-ktiria/",
-      "title": "Μετρό στην Κυψέλη: Η πρώτη εικόνα για τις ρωγμές σε 14 κτίρια",
-      "normalized_title": "ΜΕΤΡΟ ΣΤΗΝ ΚΥΨΕΛΗ: Η ΠΡΩΤΗ ΕΙΚΟΝΑ ΓΙΑ ΤΙΣ ΡΩΓΜΕΣ ΣΕ 14 ΚΤΙΡΙΑ",
+      "url": "https://www.kathimerini.gr/world/564419692/erntogan-oi-genoktonoi-tis-periochis-tha-ittithoyn-charaxe-i-epochi-tis-megalis-toyrkias/",
+      "title": "Ερντογάν: Οι γενοκτόνοι της περιοχής θα ηττηθούν – Χάραξε η εποχή της μεγάλης Τουρκίας",
+      "normalized_title": "ΕΡΝΤΟΓΑΝ: ΟΙ ΓΕΝΟΚΤΟΝΟΙ ΤΗΣ ΠΕΡΙΟΧΗΣ ΘΑ ΗΤΤΗΘΟΥΝ – ΧΑΡΑΞΕ Η ΕΠΟΧΗ ΤΗΣ ΜΕΓΑΛΗΣ ΤΟΥΡΚΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564419452/metro-stin-kypseli-i-proti-eikona-gia-tis-rogmes-se-14-ktiria/",
-        "https://www.kathimerini.gr/society/564419458/pethane-o-dimitris-kokotas-se-ilikia-57-eton/",
-        "https://www.kathimerini.gr/world/564419440/zelenski-i-oykrania-elave-mikro-arithmo-pyraylon-patriot/"
+        "https://www.kathimerini.gr/world/564419692/erntogan-oi-genoktonoi-tis-periochis-tha-ittithoyn-charaxe-i-epochi-tis-megalis-toyrkias/",
+        "https://www.kathimerini.gr/society/564419800/odigos-taxi-apespase-me-apeiles-600-eyro-apo-toyristes/",
+        "https://www.kathimerini.gr/opinion/readers/564418402/sygkatoikoi-eimaste-oloi-s-ayti-ti-gi/",
+        "https://www.kathimerini.gr/opinion/readers/564418393/i-ofeili-pros-ton-stefano-mano/",
+        "https://www.kathimerini.gr/opinion/readers/564418384/i-thaymasti-aplotita-toy-stelioy-ramfoy/",
+        "https://www.kathimerini.gr/opinion/readers/564418390/i-epidotisi-toy-brain-drain/",
+        "https://www.kathimerini.gr/opinion/readers/564418399/idiotiki-asfalisi-kai-katastrofes/",
+        "https://www.kathimerini.gr/world/564419455/israilinos-voyleytis-espase-me-variopoyla-palaistiniako-mnimeio/"
       ],
-      "seen_at_utc": "2026-08-25T12:51:22.297801+00:00"
+      "seen_at_utc": "2026-08-25T13:17:38.034417+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,39 +1266,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869340/peripou-45-metanastes-edopistikan-se-lemvo-notia-ton-kalon-limenon-stin-kriti/?utm_source=rss",
-      "title": "Περίπου 45 μετανάστες εντοπίστηκαν σε λέμβο νότια των Καλών Λιμένων στην Κρήτη",
-      "normalized_title": "ΠΕΡΙΠΟΥ 45 ΜΕΤΑΝΑΣΤΕΣ ΕΝΤΟΠΙΣΤΗΚΑΝ ΣΕ ΛΕΜΒΟ ΝΟΤΙΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ ΣΤΗΝ ΚΡΗΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1869353/telos-stin-anamoni-eos-to-2039-gia-hiliades-dikastikes-upotheseis-xekina-o-epanaprosdiorismos/?utm_source=rss",
+      "title": "Τέλος στην αναμονή έως το 2039 για δικαστικές υποθέσεις, ξεκινά ο επαναπροσδιορισμός",
+      "normalized_title": "ΤΕΛΟΣ ΣΤΗΝ ΑΝΑΜΟΝΗ ΕΩΣ ΤΟ 2039 ΓΙΑ ΔΙΚΑΣΤΙΚΕΣ ΥΠΟΘΕΣΕΙΣ, ΞΕΚΙΝΑ Ο ΕΠΑΝΑΠΡΟΣΔΙΟΡΙΣΜΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869340/peripou-45-metanastes-edopistikan-se-lemvo-notia-ton-kalon-limenon-stin-kriti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869339/sunelifthi-andras-pou-katevase-to-magio-tou-kai-edeihne-ta-gennitika-tou-organa-se-paralia-tis-pargas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869336/fotia-tora-se-dasos-sti-stefani-voiotias-sikothikan-tessera-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869353/telos-stin-anamoni-eos-to-2039-gia-hiliades-dikastikes-upotheseis-xekina-o-epanaprosdiorismos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869350/eleutheros-mehri-ti-diki-o-suzugos-gnostis-parousiastrias-den-borei-na-epistrepsei-stin-oikogeneiaki-katoikia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869343/fotia-tora-sto-kalopigado-kerateas-epiheiroun-tria-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T12:51:22.297919+00:00"
+      "seen_at_utc": "2026-08-25T13:17:38.034588+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454052/pethane-o-gnostos-tragoydistis-dimitris-kokotas/",
-      "title": "Πέθανε ο τραγουδιστής Δημήτρης Κόκοτας σε ηλικία 57 ετών",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΤΡΑΓΟΥΔΙΣΤΗΣ ΔΗΜΗΤΡΗΣ ΚΟΚΟΤΑΣ ΣΕ ΗΛΙΚΙΑ 57 ΕΤΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1454062/porto-germeno-i-apoleia-dason-ayxanei-tis-thermokrasies-epifaneias-ta-anisyhitika-stoiheia-toy-meteo/",
+      "title": "Πόρτο Γερμενό: Αυξήθηκε μέχρι και 14 βαθμούς η θερμοκρασία του εδάφους μετά την πυρκαγιά",
+      "normalized_title": "ΠΟΡΤΟ ΓΕΡΜΕΝΟ: ΑΥΞΗΘΗΚΕ ΜΕΧΡΙ ΚΑΙ 14 ΒΑΘΜΟΥΣ Η ΘΕΡΜΟΚΡΑΣΙΑ ΤΟΥ ΕΔΑΦΟΥΣ ΜΕΤΑ ΤΗΝ ΠΥΡΚΑΓΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454052/pethane-o-gnostos-tragoydistis-dimitris-kokotas/",
-        "https://www.efsyn.gr/politiki/1454043/nea-veli-aygerinoy-kata-karystianoy-to-komma-einai-dyo-gynaikes-kai-polloi-stratiotes/"
+        "https://www.efsyn.gr/ellada/1454062/porto-germeno-i-apoleia-dason-ayxanei-tis-thermokrasies-epifaneias-ta-anisyhitika-stoiheia-toy-meteo/",
+        "https://www.efsyn.gr/ellada/1454067/fotia-sto-kalopigado-layrioy-sikothikan-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1454065/megali-fotia-stin-stefani-voiotias-epiheiroyn-4-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-25T12:51:22.297883+00:00"
+      "seen_at_utc": "2026-08-25T13:17:38.034541+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/sports/football/o-panathinaikos-paei-ksana-gia-ton-ounai/",
-      "title": "Ο Παναθηναϊκός πάει για το «oui» του Ουναϊ",
-      "normalized_title": "Ο ΠΑΝΑΘΗΝΑΙΚΟΣ ΠΑΕΙ ΓΙΑ ΤΟ «OUI» ΤΟΥ ΟΥΝΑΙ",
+      "url": "https://www.in.gr/2026/08/25/sports/football/paok-pairnei-ton-ogknien-ougkresits-tis-partizan/",
+      "title": "ΠΑΟΚ: Παίρνει τον Όγκνιεν Ούγκρεσιτς της Παρτιζάν",
+      "normalized_title": "ΠΑΟΚ: ΠΑΙΡΝΕΙ ΤΟΝ ΟΓΚΝΙΕΝ ΟΥΓΚΡΕΣΙΤΣ ΤΗΣ ΠΑΡΤΙΖΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/sports/football/o-panathinaikos-paei-ksana-gia-ton-ounai/",
-        "https://www.in.gr/2026/08/25/politics/politiki-grammateia/paraitithike-o-sotiris-sermpos-apo-symvoulos-tou-prothypourgou-se-themata-eksoterikis-politikis/",
-        "https://www.in.gr/2026/08/25/in-science/technology/stelexos-tis-nvidia-katigoreitai-gia-lathremporio-proigmenon-tsip-stin-kina/",
-        "https://www.in.gr/2026/08/25/greece/dimitris-kokotas-pethane-o-gnostos-tragoudistis-se-ilikia-57-eton/",
-        "https://www.in.gr/2026/08/25/world/giati-na-tinaksoume-tin-pagkosmia-oikonomia-ston-aera-oi-kyroseis-pou-den-irthan-kai-o-avevaios-vimatismos-ton-ipa/"
+        "https://www.in.gr/2026/08/25/sports/football/paok-pairnei-ton-ogknien-ougkresits-tis-partizan/",
+        "https://www.in.gr/2026/08/25/politics/politiki-grammateia/tsoukalas-o-mitsotakis-servirei-katepsygmeno-dipolismo-gia-na-diasothei/",
+        "https://www.in.gr/2026/08/25/world/zelenski-lavame-enan-mikro-arithmo-patriot/",
+        "https://www.in.gr/2026/08/25/politics/pasok-kata-yp-paideias-gia-mia-akomi-xronia-xrisimopoiithike-to-gnosto-mpakaloteftero-gia-tin-kalypsi-ton-kenon-sta-sxoleia/",
+        "https://www.in.gr/2026/08/25/world/rosia-sti-mosxa-ypourgos-eksoterikon-tou-vatikanou-zita-to-telos-tou-polemou-stin-oukrania/",
+        "https://www.in.gr/2026/08/25/world/giati-to-iran-thymizei-tin-ellada-tou-1940-treis-eidikoi-eksigoun-sto-in-ti-symvainei-stin-iraniki-koinonia/",
+        "https://www.in.gr/2026/08/25/greece/fotia-sto-layrio-epixeiroun-tria-enaeria-mesa/",
+        "https://www.in.gr/2026/08/25/politics/neo-oxi-apo-paylo-marinaki-gia-13o-14o-mistho-sto-dimosio-den-yparxoun-lefta-kostizoun-3-dis-to-xrono/"
       ],
-      "seen_at_utc": "2026-08-25T12:51:22.297850+00:00"
+      "seen_at_utc": "2026-08-25T13:17:38.034485+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T12:51:22.297992+00:00"
+  "updated_at_utc": "2026-08-25T13:17:38.034703+00:00"
 }
