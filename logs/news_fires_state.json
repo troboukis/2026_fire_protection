@@ -1,16 +1,31 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/ceos-2026/564365287/i-dynamiki-tis-farmakoviomichanias-gia-ton-paragogiko-metaschimatismo/",
-      "title": "Η δυναμική της φαρμακοβιομηχανίας για τον παραγωγικό μετασχηματισμό",
-      "normalized_title": "Η ΔΥΝΑΜΙΚΗ ΤΗΣ ΦΑΡΜΑΚΟΒΙΟΜΗΧΑΝΙΑΣ ΓΙΑ ΤΟΝ ΠΑΡΑΓΩΓΙΚΟ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟ",
+      "url": "https://www.kathimerini.gr/ceos-2026/564365146/i-asfalisi-os-pylonas-anthektikotitas-sti-nea-epochi/",
+      "title": "Η ασφάλιση ως πυλώνας ανθεκτικότητας στη νέα εποχή",
+      "normalized_title": "Η ΑΣΦΑΛΙΣΗ ΩΣ ΠΥΛΩΝΑΣ ΑΝΘΕΚΤΙΚΟΤΗΤΑΣ ΣΤΗ ΝΕΑ ΕΠΟΧΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/ceos-2026/564365287/i-dynamiki-tis-farmakoviomichanias-gia-ton-paragogiko-metaschimatismo/",
-        "https://www.kathimerini.gr/ceos-2026/564365296/i-epomeni-mera-toy-retail-einai-thema-empistosynis/",
-        "https://www.kathimerini.gr/ceos-2026/564365308/ependyoyme-sto-mellon-tis-ygeias-me-eythyni-kai-orama/",
-        "https://www.kathimerini.gr/world/564418318/anadiplosi-mparak-gia-ta-ypsipeda-toy-gkolan/"
+        "https://www.kathimerini.gr/ceos-2026/564365146/i-asfalisi-os-pylonas-anthektikotitas-sti-nea-epochi/",
+        "https://www.kathimerini.gr/ceos-2026/564365155/anaptyxi-me-ischyres-vaseis-kai-technologiko-metaschimatismo/",
+        "https://www.kathimerini.gr/ceos-2026/564365164/to-ayrio-tis-ellinikis-oikonomias-krinetai-apo-tis-ependyseis-toy-simera/",
+        "https://www.kathimerini.gr/society/564419167/kavala-pyrkagia-se-chamili-vlastisi-sikothikan-enaeria/",
+        "https://www.kathimerini.gr/ceos-2026/564365173/ston-sosto-dromo-gia-ton-fysiko-mas-ployto-alla-o-dromos-einai-makrys/",
+        "https://www.kathimerini.gr/ceos-2026/564365185/protovoylies-ton-trapezon-pera-apo-tin-oikonomia/",
+        "https://www.kathimerini.gr/ceos-2026/564365194/to-ayrio-krinetai-apo-tis-epiloges-toy-simera/",
+        "https://www.kathimerini.gr/world/564419161/lokermpi-nea-stoicheia-gia-tin-tromokratiki-epithesi-poy-skotose-270-atoma-to-1988/",
+        "https://www.kathimerini.gr/ceos-2026/564365203/i-nea-epochi-toy-neroy-stratigikos-porostoy-mellontos/",
+        "https://www.kathimerini.gr/society/564419158/meteo-ayximeni-eos-kai-14-c-i-thermokrasia-edafoys-sto-porto-germeno-meta-ti-fotia/",
+        "https://www.kathimerini.gr/ceos-2026/564365224/enischyoyme-ti-syndesimotita-dimioyrgontas-axia-stis-topikes-koinonies/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564418261/polemika-senaria-anakyklonoyn-ta-mme-tis-toyrkias/",
+        "https://www.kathimerini.gr/ceos-2026/564365236/dynamiki-anaptyxi-me-eyropaiko-apotypoma/",
+        "https://www.kathimerini.gr/ceos-2026/564365245/diamorfonoyme-ena-energeiako-mellon-anthektiko-kai-viosimo/",
+        "https://www.kathimerini.gr/ceos-2026/564365254/i-anaptyxi-os-stratigiki-epilogi-se-mia-epochi-diarkoys-metavasis/",
+        "https://www.kathimerini.gr/society/564419113/ano-liosia-pos-synevi-to-thanatiforo-trochaio-me-ti-17chroni-ti-exetazei-i-trochaia/",
+        "https://www.kathimerini.gr/ceos-2026/564365263/ependyoyme-stathera-sto-mellon-tis-elladas/",
+        "https://www.kathimerini.gr/ceos-2026/564365272/i-epomeni-imera-toy-lianemporioy-isorropia-ependyseis-kai-koinoniki-eythyni/",
+        "https://www.kathimerini.gr/ceos-2026/564365281/igesia-se-epochi-astatheias-apo-ti-diacheirisi-kriseon-sti-stratigiki-anthektikotita/"
       ],
-      "seen_at_utc": "2026-08-25T08:51:24.079413+00:00"
+      "seen_at_utc": "2026-08-25T09:17:44.341174+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,41 +1277,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869202/fotia-ston-dimo-paggaiou-stin-kavala-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά στον Δήμο Παγγαίου στην Καβάλα, επιχειρούν τέσσερα εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΔΗΜΟ ΠΑΓΓΑΙΟΥ ΣΤΗΝ ΚΑΒΑΛΑ, ΕΠΙΧΕΙΡΟΥΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1869214/auti-tin-kuriaki-me-to-thema-to-xekardistiko-thriler-tou-stephen-spotswood-i-tuhi-eunoei-tous-nekrous/?utm_source=rss",
+      "title": "Αυτή την Κυριακή με το ΘΕMA, το... ξεκαρδιστικό θρίλερ του Stephen Spotswood «Η τύχη ευνοεί τους νεκρούς»",
+      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ ΜΕ ΤΟ ΘΕMA, ΤΟ... ΞΕΚΑΡΔΙΣΤΙΚΟ ΘΡΙΛΕΡ ΤΟΥ STEPHEN SPOTSWOOD «Η ΤΥΧΗ ΕΥΝΟΕΙ ΤΟΥΣ ΝΕΚΡΟΥΣ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869202/fotia-ston-dimo-paggaiou-stin-kavala-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869201/ti-allazei-sta-sholeia-ti-nea-hronia-5259-diorismoi-lockers-sta-dimotika-kai-669-anakainismenes-monades/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869199/sunelifthi-gia-endooikogeneiaki-via-o-suzugos-tis-parousiastrias-pou-prosihthi-hthes-gia-exuvrisi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869214/auti-tin-kuriaki-me-to-thema-to-xekardistiko-thriler-tou-stephen-spotswood-i-tuhi-eunoei-tous-nekrous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869207/i-volta-pede-nearon-pou-katelixe-se-tragodia-pos-egine-to-trohaio-sta-ano-liosia-me-thuma-17hroni/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T08:51:24.079626+00:00"
+      "seen_at_utc": "2026-08-25T09:17:44.341266+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453847/rodos-katelavan-me-paranoma-omprelokathismata-tin-paralia-antoni-koyin-dinontas-438-eyro-eikones/",
-      "title": "Ρόδος: Κατέλαβαν με παράνομα ομπρελοκαθίσματα την παραλία Άντονι Κουίν δίνοντας… 438 ευρώ [εικόνες]",
-      "normalized_title": "ΡΟΔΟΣ: ΚΑΤΕΛΑΒΑΝ ΜΕ ΠΑΡΑΝΟΜΑ ΟΜΠΡΕΛΟΚΑΘΙΣΜΑΤΑ ΤΗΝ ΠΑΡΑΛΙΑ ΑΝΤΟΝΙ ΚΟΥΙΝ ΔΙΝΟΝΤΑΣ… 438 ΕΥΡΩ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/ellada/1453883/fotia-stin-kavala-kaiei-se-hamili-vlastisi-stin-periohi-vrysi-epiheiroyn-tessera-enaeria/",
+      "title": "Φωτιά στην Καβάλα: Ισχυρές δυνάμεις στο σημείο – Σηκώθηκαν 4 εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΑΒΑΛΑ: ΙΣΧΥΡΕΣ ΔΥΝΑΜΕΙΣ ΣΤΟ ΣΗΜΕΙΟ – ΣΗΚΩΘΗΚΑΝ 4 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453847/rodos-katelavan-me-paranoma-omprelokathismata-tin-paralia-antoni-koyin-dinontas-438-eyro-eikones/",
-        "https://www.efsyn.gr/politiki/1453784/theloyn-na-xypnisoyn-mnimes-andrea-sto-pasok-syskepsi-ergasias-simera-ypo-ton-androylaki/",
-        "https://www.efsyn.gr/politiki/1453866/marinakis-gia-ellinotoyrkika-pseytopatriotes-proexofloyn-ethnikes-ittes-kai-metrane-koyvades/",
-        "https://www.efsyn.gr/politiki/1453836/synantisi-mitsotaki-nestora-sto-maximoy-sto-epikentro-tromokratia-kai-ekloges/"
+        "https://www.efsyn.gr/ellada/1453883/fotia-stin-kavala-kaiei-se-hamili-vlastisi-stin-periohi-vrysi-epiheiroyn-tessera-enaeria/"
       ],
-      "seen_at_utc": "2026-08-25T08:51:24.079581+00:00"
+      "seen_at_utc": "2026-08-25T09:17:44.341240+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/greece/afthodis-pyretos-sti-lesvo-ygeionomiki-vomva-o-xyta-misothammena-nekra-zoa/",
-      "title": "Αφθώδης πυρετός στη Λέσβο: Υγειονομική βόμβα ο ΧΥΤΑ – Μισοθαμμένα νεκρά ζώα",
-      "normalized_title": "ΑΦΘΩΔΗΣ ΠΥΡΕΤΟΣ ΣΤΗ ΛΕΣΒΟ: ΥΓΕΙΟΝΟΜΙΚΗ ΒΟΜΒΑ Ο ΧΥΤΑ – ΜΙΣΟΘΑΜΜΕΝΑ ΝΕΚΡΑ ΖΩΑ",
+      "url": "https://www.in.gr/2026/08/25/greece/kallithea-synelifthi-18xronos-pou-maxairose-proin-syntrofo-tou-tis-arpakse-kai-to-kinito/",
+      "title": "Συνελήφθη στη Καλλιθέα 18χρονος που μαχαίρωσε πρώην σύντροφό του – Της άρπαξε και το κινητό",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΚΑΛΛΙΘΕΑ 18ΧΡΟΝΟΣ ΠΟΥ ΜΑΧΑΙΡΩΣΕ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟ ΤΟΥ – ΤΗΣ ΑΡΠΑΞΕ ΚΑΙ ΤΟ ΚΙΝΗΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/greece/afthodis-pyretos-sti-lesvo-ygeionomiki-vomva-o-xyta-misothammena-nekra-zoa/",
-        "https://www.in.gr/2026/08/25/politics/politiki-grammateia/emporio-elpidas-i-paroxologia-tis-kyvernisis-sfodra-pyra-tis-antipoliteysis-enopsei-deth/",
-        "https://www.in.gr/2026/08/25/greece/aytokinito-paresyre-proskynitria-ston-voak-kai-tin-petakse-apo-aerogefyra/",
-        "https://www.in.gr/2026/08/25/sports/basketball/to-show-synexizetai-apo-ton-kanter-eimai-gynaika-ti-eipe-gia-to-epeisodio-se-mats-tou-wnba-vids/",
-        "https://www.in.gr/2026/08/25/in-science/ai/amerikaniki-ereyna-gia-tin-kyvernoepithesi-apo-anekselegkto-praktora-tis-openai/"
+        "https://www.in.gr/2026/08/25/greece/kallithea-synelifthi-18xronos-pou-maxairose-proin-syntrofo-tou-tis-arpakse-kai-to-kinito/",
+        "https://www.in.gr/2026/08/25/greece/fotia-stin-kavala-epixeiroun-tessera-enaeria-mesa/",
+        "https://www.in.gr/2026/08/25/sports/basketball/ypoklithike-se-olympiako-kai-mpartoka-o-omprantovits-kseroun-ti-kanoun-kathe-stigmi-vid/",
+        "https://www.in.gr/2026/08/25/go-fun/fizz/nikos-polyderopoulos-valasia-symiakou-volta-sti-mykono-me-ton-ligon-minon-gio-tous/",
+        "https://www.in.gr/2026/08/25/greece/axarnes-skylos-epitethike-se-26xroni-tin-traymatise-kai-skotose-to-skyli-tis-synelifthi-o-idioktitis/"
       ],
-      "seen_at_utc": "2026-08-25T08:51:24.079505+00:00"
+      "seen_at_utc": "2026-08-25T09:17:44.341217+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T08:51:24.079731+00:00"
+  "updated_at_utc": "2026-08-25T09:17:44.341344+00:00"
 }
