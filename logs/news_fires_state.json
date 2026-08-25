@@ -1,13 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564418966/chaidari-synelifthi-54chronos-gia-ti-fotia-ston-votaniko-kipo-ekove-chorta-me-chortokoptiko/",
-      "title": "Χαϊδάρι: Συνελήφθη 54χρονος για τη φωτιά στον Βοτανικό Κήπο – Εκοβε χόρτα με χορτοκοπτικό",
-      "normalized_title": "ΧΑΙΔΑΡΙ: ΣΥΝΕΛΗΦΘΗ 54ΧΡΟΝΟΣ ΓΙΑ ΤΗ ΦΩΤΙΑ ΣΤΟΝ ΒΟΤΑΝΙΚΟ ΚΗΠΟ – ΕΚΟΒΕ ΧΟΡΤΑ ΜΕ ΧΟΡΤΟΚΟΠΤΙΚΟ",
+      "url": "https://www.kathimerini.gr/world/564418954/mesa-sto-proto-moyseio-medoysas-ton-ipa-ypnotistiko/",
+      "title": "Μέσα στο πρώτο μουσείο μέδουσας των ΗΠΑ – «Υπνωτιστικό»",
+      "normalized_title": "ΜΕΣΑ ΣΤΟ ΠΡΩΤΟ ΜΟΥΣΕΙΟ ΜΕΔΟΥΣΑΣ ΤΩΝ ΗΠΑ – «ΥΠΝΩΤΙΣΤΙΚΟ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564418966/chaidari-synelifthi-54chronos-gia-ti-fotia-ston-votaniko-kipo-ekove-chorta-me-chortokoptiko/"
+        "https://www.kathimerini.gr/world/564418954/mesa-sto-proto-moyseio-medoysas-ton-ipa-ypnotistiko/",
+        "https://www.kathimerini.gr/ceos-2026/564365443/antagonistiko-pleonektima-i-tachytita-lipsis-apofaseon/",
+        "https://www.kathimerini.gr/economy/local/564418645/meiosi-prostimon-apo-aade-eos-50/",
+        "https://www.kathimerini.gr/society/564418993/christos-markidis-nekros-sto-spiti-toy-sta-exarcheia-o-zografos-kai-poiitis/",
+        "https://www.kathimerini.gr/world/564418969/germania-entopistike-trito-drone-kai-ekriktika-konta-sto-aerodromio-tis-leipsias/",
+        "https://www.kathimerini.gr/society/564418975/trochaio-me-egkataleipsi-ston-voak-paresyre-proskynitria-kai-tin-petaxe-apo-aerogefyra/"
       ],
-      "seen_at_utc": "2026-08-25T07:30:09.544789+00:00"
+      "seen_at_utc": "2026-08-25T07:51:09.451648+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1264,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869156/germanos-touristas-vrethike-apaghonismenos-se-domatio-xenodoheiou-sti-magnisia/?utm_source=rss",
-      "title": "Γερμανός τουρίστας βρέθηκε απαγχονισμένος σε δωμάτιο ξενοδοχείου στη Μαγνησία",
-      "normalized_title": "ΓΕΡΜΑΝΟΣ ΤΟΥΡΙΣΤΑΣ ΒΡΕΘΗΚΕ ΑΠΑΓΧΟΝΙΣΜΕΝΟΣ ΣΕ ΔΩΜΑΤΙΟ ΞΕΝΟΔΟΧΕΙΟΥ ΣΤΗ ΜΑΓΝΗΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1869165/kallithea-18hronos-epitethike-me-aihmiro-adikeimeno-stin-19hroni-proin-sudrofo-tou-kai-tin-traumatise-sto-podi/?utm_source=rss",
+      "title": "Καλλιθέα: 18χρονος επιτέθηκε με αιχμηρό αντικείμενο στην 19χρονη πρώην σύντροφό του και την τραυμάτισε στο πόδι",
+      "normalized_title": "ΚΑΛΛΙΘΕΑ: 18ΧΡΟΝΟΣ ΕΠΙΤΕΘΗΚΕ ΜΕ ΑΙΧΜΗΡΟ ΑΝΤΙΚΕΙΜΕΝΟ ΣΤΗΝ 19ΧΡΟΝΗ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟ ΤΟΥ ΚΑΙ ΤΗΝ ΤΡΑΥΜΑΤΙΣΕ ΣΤΟ ΠΟΔΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869156/germanos-touristas-vrethike-apaghonismenos-se-domatio-xenodoheiou-sti-magnisia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869165/kallithea-18hronos-epitethike-me-aihmiro-adikeimeno-stin-19hroni-proin-sudrofo-tou-kai-tin-traumatise-sto-podi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869163/mustirio-me-to-autokinito-pou-vrethike-stis-ekvoles-tou-giofurou-potamou-stin-kriti-anazitoudai-duo-epivainodes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T07:30:09.544928+00:00"
+      "seen_at_utc": "2026-08-25T07:51:09.451812+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1453781/to-iran-dilonei-oti-einai-pliros-proetoimasmeno-gia-tin-oikonomiki-d-day-ton-ipa/",
-      "title": "Το Ιράν δηλώνει ότι είναι «πλήρως προετοιμασμένο» για την οικονομική «D-Day» των ΗΠΑ",
-      "normalized_title": "ΤΟ ΙΡΑΝ ΔΗΛΩΝΕΙ ΟΤΙ ΕΙΝΑΙ «ΠΛΗΡΩΣ ΠΡΟΕΤΟΙΜΑΣΜΕΝΟ» ΓΙΑ ΤΗΝ ΟΙΚΟΝΟΜΙΚΗ «D-DAY» ΤΩΝ ΗΠΑ",
+      "url": "https://www.efsyn.gr/ellada/1453808/hristos-markidis-i-ainigmatiki-anartisi-liges-ores-prin-vrethei-nekros-i-gennisi-einai-pagida/",
+      "title": "Χρήστος Μαρκίδης: Η αινιγματική ανάρτηση λίγες ώρες πριν βρεθεί νεκρός – «Η γέννηση είναι παγίδα»",
+      "normalized_title": "ΧΡΗΣΤΟΣ ΜΑΡΚΙΔΗΣ: Η ΑΙΝΙΓΜΑΤΙΚΗ ΑΝΑΡΤΗΣΗ ΛΙΓΕΣ ΩΡΕΣ ΠΡΙΝ ΒΡΕΘΕΙ ΝΕΚΡΟΣ – «Η ΓΕΝΝΗΣΗ ΕΙΝΑΙ ΠΑΓΙΔΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1453781/to-iran-dilonei-oti-einai-pliros-proetoimasmeno-gia-tin-oikonomiki-d-day-ton-ipa/"
+        "https://www.efsyn.gr/ellada/1453808/hristos-markidis-i-ainigmatiki-anartisi-liges-ores-prin-vrethei-nekros-i-gennisi-einai-pagida/",
+        "https://www.efsyn.gr/ellada/1453804/kyma-orgis-gia-tin-ktinodia-stin-kerkyra-perase-atarahi-me-to-tzip-pano-apo-ton-skylo/",
+        "https://www.efsyn.gr/athlitismos/1453789/olympiakos-mahi-gia-ton-alvares/",
+        "https://www.efsyn.gr/politiki/1453778/allazei-i-paideia-stin-ellada-to-vidcast-toy-pasok-gia-tin-ekpaideysi/"
       ],
-      "seen_at_utc": "2026-08-25T07:30:09.544898+00:00"
+      "seen_at_utc": "2026-08-25T07:51:09.451744+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/sports/football/gkonsales-o-olympiakos-me-ithele-pragmatika-ti-zitise-o-meksikanos-apo-tous-erythroleykous-vid/",
-      "title": "Γκονσάλες: «Ο Ολυμπιακός με ήθελε πραγματικά» – Τι ζήτησε ο Μεξικανός από τους «ερυθρόλευκους» (vid)",
-      "normalized_title": "ΓΚΟΝΣΑΛΕΣ: «Ο ΟΛΥΜΠΙΑΚΟΣ ΜΕ ΗΘΕΛΕ ΠΡΑΓΜΑΤΙΚΑ» – ΤΙ ΖΗΤΗΣΕ Ο ΜΕΞΙΚΑΝΟΣ ΑΠΟ ΤΟΥΣ «ΕΡΥΘΡΟΛΕΥΚΟΥΣ» (VID)",
+      "url": "https://www.in.gr/2026/08/25/in-science/perivallon-b-science/wsj-i-ee-epekrine-to-pisogyrisma-tramp-gia-tin-klimatiki-allagi-tora-omos-kathysterei-ta-dika-tis-metra/",
+      "title": "Ενώ η Ευρώπη καίγεται, η ΕΕ αναβάλλει τους πράσινους στόχους της",
+      "normalized_title": "ΕΝΩ Η ΕΥΡΩΠΗ ΚΑΙΓΕΤΑΙ, Η ΕΕ ΑΝΑΒΑΛΛΕΙ ΤΟΥΣ ΠΡΑΣΙΝΟΥΣ ΣΤΟΧΟΥΣ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/sports/football/gkonsales-o-olympiakos-me-ithele-pragmatika-ti-zitise-o-meksikanos-apo-tous-erythroleykous-vid/",
-        "https://www.in.gr/2026/08/25/politics/politiki-grammateia/elas-102-ekat-eyro-gia-psifiakes-ypodomes-mia-prosfora-idio-anadoxo-sxima-vathyteri-texnologiki-eksartisi/",
-        "https://www.in.gr/2026/08/25/greece/xristos-markidis-tragiko-telos-gia-ton-eikastiko-kai-poiiti-vrethike-nekros-mesa-sto-spiti-tou/"
+        "https://www.in.gr/2026/08/25/in-science/perivallon-b-science/wsj-i-ee-epekrine-to-pisogyrisma-tramp-gia-tin-klimatiki-allagi-tora-omos-kathysterei-ta-dika-tis-metra/",
+        "https://www.in.gr/2026/08/25/greece/pos-egine-to-frikto-troxaio-sti-l-fylis-me-thyma-17xroni-sokaristikes-eikones/"
       ],
-      "seen_at_utc": "2026-08-25T07:30:09.544855+00:00"
+      "seen_at_utc": "2026-08-25T07:51:09.451693+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T07:30:09.545014+00:00"
+  "updated_at_utc": "2026-08-25T07:51:09.451883+00:00"
 }
