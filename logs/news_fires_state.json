@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564253756/5-monadikes-nostimies-poy-prosferei-i-elliniki-gi/",
-      "title": "5 μοναδικές νοστιμιές που προσφέρει η ελληνική γη",
-      "normalized_title": "5 ΜΟΝΑΔΙΚΕΣ ΝΟΣΤΙΜΙΕΣ ΠΟΥ ΠΡΟΣΦΕΡΕΙ Η ΕΛΛΗΝΙΚΗ ΓΗ",
+      "url": "https://www.kathimerini.gr/economy/business/564418663/sto-1-02-dis-eyro-ayxithike-o-tziros-tis-papastratos-to-2025/",
+      "title": "Στο 1,02 δισ. ευρώ αυξήθηκε ο τζίρος της «Παπαστράτος» το 2025",
+      "normalized_title": "ΣΤΟ 1,02 ΔΙΣ. ΕΥΡΩ ΑΥΞΗΘΗΚΕ Ο ΤΖΙΡΟΣ ΤΗΣ «ΠΑΠΑΣΤΡΑΤΟΣ» ΤΟ 2025",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564253756/5-monadikes-nostimies-poy-prosferei-i-elliniki-gi/",
-        "https://www.kathimerini.gr/culture/564418456/fernanta-trias-stin-k-o-fovos-kyriarchei-stin-epikairotita/"
+        "https://www.kathimerini.gr/economy/business/564418663/sto-1-02-dis-eyro-ayxithike-o-tziros-tis-papastratos-to-2025/",
+        "https://www.kathimerini.gr/economy/local/564418627/magnitis-i-ellada-gia-xenoys-syntaxioychoys/",
+        "https://www.kathimerini.gr/world/564420442/tramp-gia-thanato-ntoli-parton-mesisties-simaies-gia-mia-evdomada-se-oles-tis-ipa/"
       ],
-      "seen_at_utc": "2026-08-25T19:29:59.735471+00:00"
+      "seen_at_utc": "2026-08-25T19:51:30.691452+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,23 +1270,28 @@
       "seen_at_utc": "2026-08-25T19:29:59.735620+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454310/synehizetai-i-agonia-gia-ton-agnooymeno-ispano-oi-arhes-stiazoyn-se-ena-simeioma-to-sosivio-kai-ton-asyrmato/",
-      "title": "Συνεχίζεται η αγωνία για τον αγνοούμενο Ισπανό: Οι αρχές εστιάζουν σε ένα σημείωμα, το σωσίβιο και τον ασύρματο",
-      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΑΓΩΝΙΑ ΓΙΑ ΤΟΝ ΑΓΝΟΟΥΜΕΝΟ ΙΣΠΑΝΟ: ΟΙ ΑΡΧΕΣ ΕΣΤΙΑΖΟΥΝ ΣΕ ΕΝΑ ΣΗΜΕΙΩΜΑ, ΤΟ ΣΩΣΙΒΙΟ ΚΑΙ ΤΟΝ ΑΣΥΡΜΑΤΟ",
+      "url": "https://www.efsyn.gr/kosmos/1454327/thanatos-ntoli-parton-mesisties-simaies-stis-ipa-gia-mia-evdomada/",
+      "title": "Θάνατος Ντόλι Πάρτον: Μεσίστιες σημαίες στις ΗΠΑ για μια εβδομάδα",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΝΤΟΛΙ ΠΑΡΤΟΝ: ΜΕΣΙΣΤΙΕΣ ΣΗΜΑΙΕΣ ΣΤΙΣ ΗΠΑ ΓΙΑ ΜΙΑ ΕΒΔΟΜΑΔΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454310/synehizetai-i-agonia-gia-ton-agnooymeno-ispano-oi-arhes-stiazoyn-se-ena-simeioma-to-sosivio-kai-ton-asyrmato/"
+        "https://www.efsyn.gr/kosmos/1454327/thanatos-ntoli-parton-mesisties-simaies-stis-ipa-gia-mia-evdomada/",
+        "https://www.efsyn.gr/politiki/1454314/o-syriza-me-to-vlemma-sti-deth-i-dynamiki-epiheirisi-anakampsis-kai-i-sygkratimeni-aisiodoxia/"
       ],
-      "seen_at_utc": "2026-08-25T19:29:59.735591+00:00"
+      "seen_at_utc": "2026-08-25T19:51:30.691576+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/economy/diethnis-oikonomia/ta-5-megalytera-thymata-tis-oikonomikis-d-day-tou-tramp-sto-iran/",
-      "title": "Τα 5 μεγαλύτερα θύματα της οικονομικής D-Day του Τραμπ στο Ιράν",
-      "normalized_title": "ΤΑ 5 ΜΕΓΑΛΥΤΕΡΑ ΘΥΜΑΤΑ ΤΗΣ ΟΙΚΟΝΟΜΙΚΗΣ D-DAY ΤΟΥ ΤΡΑΜΠ ΣΤΟ ΙΡΑΝ",
+      "url": "https://www.in.gr/2026/08/25/greece/fotia-ston-aspropyrgo-antimetopistike-amesa-diakopi-tou-proastiakou-apo-nea-peramo-eos-ano-liosia/",
+      "title": "Φωτιά στον Ασπρόπυργο – Αντιμετωπίστηκε άμεσα – Διακοπή του Προαστιακού από Νέα Πέραμο έως Άνω Λιόσια",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΑΣΠΡΟΠΥΡΓΟ – ΑΝΤΙΜΕΤΩΠΙΣΤΗΚΕ ΑΜΕΣΑ – ΔΙΑΚΟΠΗ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΑΠΟ ΝΕΑ ΠΕΡΑΜΟ ΕΩΣ ΑΝΩ ΛΙΟΣΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/economy/diethnis-oikonomia/ta-5-megalytera-thymata-tis-oikonomikis-d-day-tou-tramp-sto-iran/"
+        "https://www.in.gr/2026/08/25/greece/fotia-ston-aspropyrgo-antimetopistike-amesa-diakopi-tou-proastiakou-apo-nea-peramo-eos-ano-liosia/",
+        "https://www.in.gr/2026/08/25/economy/oikonomikes-eidiseis/tameio-anakampsis-i-ethniki-epityxia-me-apentakseis-kai-perikopes-se-100-erga/",
+        "https://www.in.gr/2026/08/25/life/culture-live/to-kako-paidi-tou-londinou-epestrepse-ayto-einai-to-trailer-tou-ali-g-who-iz-i/",
+        "https://www.in.gr/2026/08/25/greece/rodos-dimopratithike-gia-200-000-eyro-plirothikan-molis-438e-kai-gemise-ksaplostres-i-paralia-antoni-kouin/",
+        "https://www.in.gr/2026/08/25/greece/dyo-syllipseis-gia-ti-fotia-sti-vrysi-kavalas/"
       ],
-      "seen_at_utc": "2026-08-25T19:29:59.735514+00:00"
+      "seen_at_utc": "2026-08-25T19:51:30.691537+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T19:29:59.735692+00:00"
+  "updated_at_utc": "2026-08-25T19:51:30.691643+00:00"
 }
