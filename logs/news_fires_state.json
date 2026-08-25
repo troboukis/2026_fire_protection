@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564418840/arizona-i-erimos-pagida-ta-leipsana-kai-i-exafanisi-tis-nansi-gkathri/",
-      "title": "Αριζόνα: Η έρημος-παγίδα, τα λείψανα και η εξαφάνιση της Νάνσι Γκάθρι",
-      "normalized_title": "ΑΡΙΖΟΝΑ: Η ΕΡΗΜΟΣ-ΠΑΓΙΔΑ, ΤΑ ΛΕΙΨΑΝΑ ΚΑΙ Η ΕΞΑΦΑΝΙΣΗ ΤΗΣ ΝΑΝΣΙ ΓΚΑΘΡΙ",
+      "url": "https://www.kathimerini.gr/world/564418888/iran-pakistan-simantiki-proodo-stis-synomilies-gia-to-telos-toy-polemoy/",
+      "title": "Ιράν-Πακιστάν: «Σημαντική πρόοδο» στις συνομιλίες για το τέλος του πολέμου",
+      "normalized_title": "ΙΡΑΝ-ΠΑΚΙΣΤΑΝ: «ΣΗΜΑΝΤΙΚΗ ΠΡΟΟΔΟ» ΣΤΙΣ ΣΥΝΟΜΙΛΙΕΣ ΓΙΑ ΤΟ ΤΕΛΟΣ ΤΟΥ ΠΟΛΕΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564418840/arizona-i-erimos-pagida-ta-leipsana-kai-i-exafanisi-tis-nansi-gkathri/",
-        "https://www.kathimerini.gr/opinion/564418381/ta-midenika-toy-ntonalnt-tramp/",
-        "https://www.kathimerini.gr/columns/564417952/o-anonymos-symvoylos-oi-influencers-kai-ta-psaria-i-apovasi-ton-aystralon-kai-o-fovos-enos-neoy-sok/"
+        "https://www.kathimerini.gr/world/564418888/iran-pakistan-simantiki-proodo-stis-synomilies-gia-to-telos-toy-polemoy/",
+        "https://www.kathimerini.gr/world/564418876/klimakonetai-o-emporikos-polemos-ipa-kanada-antapodotika-metra-anakoinonei-simera-i-otava/",
+        "https://www.kathimerini.gr/society/564418873/thessaloniki-synelifthi-44chronos-gia-viasmo-kai-xylodarmo-tis-en-diastasei-syzygoy-toy/"
       ],
-      "seen_at_utc": "2026-08-25T05:51:14.867226+00:00"
+      "seen_at_utc": "2026-08-25T06:22:08.973011+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,29 +1270,35 @@
       "seen_at_utc": "2026-08-25T05:51:14.867364+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453720/spetses-i-orfani-fokia-alexis-periplaniotan-kai-epsahne-apegnosmena-ti-mitera-toy/",
-      "title": "Σπέτσες: Η ορφανή φώκια «Αλέξης» περιπλανιόταν και έψαχνε απεγνωσμένα τη μητέρα του",
-      "normalized_title": "ΣΠΕΤΣΕΣ: Η ΟΡΦΑΝΗ ΦΩΚΙΑ «ΑΛΕΞΗΣ» ΠΕΡΙΠΛΑΝΙΟΤΑΝ ΚΑΙ ΕΨΑΧΝΕ ΑΠΕΓΝΩΣΜΕΝΑ ΤΗ ΜΗΤΕΡΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/athlitismos/1453744/kanter-prosdiorizomai-os-gynaika-prepei-na-moy-epitrepsoyn-na-paixo-sto-wnba/",
+      "title": "Καντέρ: «Προσδιορίζομαι ως γυναίκα, πρέπει να μου επιτρέψουν να παίξω στο WNBA»",
+      "normalized_title": "ΚΑΝΤΕΡ: «ΠΡΟΣΔΙΟΡΙΖΟΜΑΙ ΩΣ ΓΥΝΑΙΚΑ, ΠΡΕΠΕΙ ΝΑ ΜΟΥ ΕΠΙΤΡΕΨΟΥΝ ΝΑ ΠΑΙΞΩ ΣΤΟ WNBA»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453720/spetses-i-orfani-fokia-alexis-periplaniotan-kai-epsahne-apegnosmena-ti-mitera-toy/",
-        "https://www.efsyn.gr/politiki/1453708/htizei-afigima-gia-tin-oikonomia-i-kyvernisi-etoimazetai-to-paketo-tis-deth/",
-        "https://www.efsyn.gr/ellada/1453714/pylos-thriler-dihos-telos-me-ton-agnooymeno-ispano-epiheirimatia-ta-erotimata-kai-to-prosopo-kleidi/",
-        "https://www.efsyn.gr/kosmos/1453667/oi-prothymoi-ypostirizoyn-ton-zelenski/"
+        "https://www.efsyn.gr/athlitismos/1453744/kanter-prosdiorizomai-os-gynaika-prepei-na-moy-epitrepsoyn-na-paixo-sto-wnba/",
+        "https://www.efsyn.gr/athlitismos/1453719/paok-vrike-epipleon-epiloges-enopsei-mpran/",
+        "https://www.efsyn.gr/athlitismos/1453695/rafinia-i-apantisi-tis-mpartselona-ston-alvares/",
+        "https://www.efsyn.gr/media/1453723/press-point-ti-efagan-telos-panton-gerapetritis-diamantopoyloy-kai-hristodoylakis/",
+        "https://www.efsyn.gr/politiki/1453749/den-paei-poythena-o-aleiftiras/",
+        "https://www.efsyn.gr/politiki/1453742/kryvei-to-programma-min-tis-to-klepsei-o-tsipras/",
+        "https://www.efsyn.gr/kosmos/1453730/l-ameriki-o-tramp-tis-kolomvias-dietaxe-tin-amesi-apelasi-metanaston-horis-hartia/",
+        "https://www.efsyn.gr/politiki/1453738/apo-to-oloi-mazi-ta-fagame-sto-oloi-mazi-mayrisame/",
+        "https://www.efsyn.gr/ellada/1453732/halkidiki-xilosan-paktomenes-ompreles-kai-xaplostres-apo-paralia-stis-kalyves-vinteo/"
       ],
-      "seen_at_utc": "2026-08-25T05:51:14.867319+00:00"
+      "seen_at_utc": "2026-08-25T06:22:08.973082+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/sports/football/pateras-gkonsales-omada-ypsilou-epipedou-o-olympiakos/",
-      "title": "Πατέρας Γκονσάλες: «Ομάδα υψηλού επιπέδου ο Ολυμπιακός»",
-      "normalized_title": "ΠΑΤΕΡΑΣ ΓΚΟΝΣΑΛΕΣ: «ΟΜΑΔΑ ΥΨΗΛΟΥ ΕΠΙΠΕΔΟΥ Ο ΟΛΥΜΠΙΑΚΟΣ»",
+      "url": "https://www.in.gr/2026/08/25/politics/tha-sygkyvernisei-to-pasok-me-ti-deksia-to-paraskinio-me-tin-topothetisi-louskou/",
+      "title": "Θα συγκυβερνήσει το ΠΑΣΟΚ με τη δεξιά; Το παρασκήνιο με την τοποθέτηση Λούσκου",
+      "normalized_title": "ΘΑ ΣΥΓΚΥΒΕΡΝΗΣΕΙ ΤΟ ΠΑΣΟΚ ΜΕ ΤΗ ΔΕΞΙΑ; ΤΟ ΠΑΡΑΣΚΗΝΙΟ ΜΕ ΤΗΝ ΤΟΠΟΘΕΤΗΣΗ ΛΟΥΣΚΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/sports/football/pateras-gkonsales-omada-ypsilou-epipedou-o-olympiakos/",
-        "https://www.in.gr/2026/08/25/greece/nea-smyrni-kleidi-gia-to-kinitro-tis-dolofonias-oi-katatheseis-ton-syggenon-to-karteri-kai-i-foniki-epithesi/",
-        "https://www.in.gr/2026/08/25/editorial/den-einai-paixnidi-na-paizeis-me-to-fesi/",
-        "https://www.in.gr/2026/08/25/life/music/san-na-to-iksere-o-toupak-sakour-milouse-synexos-gia-ton-thanato-tou/"
+        "https://www.in.gr/2026/08/25/politics/tha-sygkyvernisei-to-pasok-me-ti-deksia-to-paraskinio-me-tin-topothetisi-louskou/",
+        "https://www.in.gr/2026/08/25/sports/oi-athlitikes-metadoseis-tis-imeras-25-8-drasi-me-champions-league-playoffs/",
+        "https://www.in.gr/2026/08/25/politics/i-amfisvitisi-ton-iremon-neron-kai-i-stoxopoiisi-tis-elladas-apo-tin-tourkia-kai-logo-israil/",
+        "https://www.in.gr/2026/08/25/go-fun/social/onlymarms-pos-o-tramp-ekane-tis-marmotes-star-sto-onlyfans-ereynitiki-apostoli/",
+        "https://www.in.gr/2026/08/25/world/stena-tou-ormouz-20-nekroi-se-eksi-mines-polemou/"
       ],
-      "seen_at_utc": "2026-08-25T05:51:14.867272+00:00"
+      "seen_at_utc": "2026-08-25T06:22:08.973049+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T05:51:14.867439+00:00"
+  "updated_at_utc": "2026-08-25T06:22:08.973161+00:00"
 }
