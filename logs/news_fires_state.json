@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/diktis/564418753/risko-kai-antamoivi-ston-persiko-kolpo/",
-      "title": "Ρίσκο και ανταμοιβή στον Περσικό Κόλπο",
-      "normalized_title": "ΡΙΣΚΟ ΚΑΙ ΑΝΤΑΜΟΙΒΗ ΣΤΟΝ ΠΕΡΣΙΚΟ ΚΟΛΠΟ",
+      "url": "https://www.kathimerini.gr/k/k-magazine/564253756/5-monadikes-nostimies-poy-prosferei-i-elliniki-gi/",
+      "title": "5 μοναδικές νοστιμιές που προσφέρει η ελληνική γη",
+      "normalized_title": "5 ΜΟΝΑΔΙΚΕΣ ΝΟΣΤΙΜΙΕΣ ΠΟΥ ΠΡΟΣΦΕΡΕΙ Η ΕΛΛΗΝΙΚΗ ΓΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/diktis/564418753/risko-kai-antamoivi-ston-persiko-kolpo/",
-        "https://www.kathimerini.gr/life/health/564420430/se-exarsi-o-ios-toy-dytikoy-neiloy-oi-dimoi-ypsiloy-kindynoy-stin-attiki-enteinontai-oi-psekasmoi/",
-        "https://www.kathimerini.gr/k/k-magazine/564203005/thymoyntai-ayta-poy-toys-leme-ta-tsatmpot/"
+        "https://www.kathimerini.gr/k/k-magazine/564253756/5-monadikes-nostimies-poy-prosferei-i-elliniki-gi/",
+        "https://www.kathimerini.gr/culture/564418456/fernanta-trias-stin-k-o-fovos-kyriarchei-stin-epikairotita/"
       ],
-      "seen_at_utc": "2026-08-25T19:17:17.319320+00:00"
+      "seen_at_utc": "2026-08-25T19:29:59.735471+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1260,32 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869516/duo-sullipseis-gia-purkagia-apo-ohima-pou-epektathike-se-dasiki-ektasi-stin-kavala/?utm_source=rss",
-      "title": "Δύο συλλήψεις για φωτιά που ξεκίνησε από όχημα και επεκτάθηκε σε δασική έκταση στην Καβάλα",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΦΩΤΙΑ ΠΟΥ ΞΕΚΙΝΗΣΕ ΑΠΟ ΟΧΗΜΑ ΚΑΙ ΕΠΕΚΤΑΘΗΚΕ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΚΑΒΑΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1869520/tzoker-25826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
+      "title": "Τζόκερ 25/8/26: Τα αποτελέσματα της κλήρωσης - Τα νούμερα που κερδίζουν",
+      "normalized_title": "ΤΖΟΚΕΡ 25/8/26: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΗΣ ΚΛΗΡΩΣΗΣ - ΤΑ ΝΟΥΜΕΡΑ ΠΟΥ ΚΕΡΔΙΖΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869516/duo-sullipseis-gia-purkagia-apo-ohima-pou-epektathike-se-dasiki-ektasi-stin-kavala/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869520/tzoker-25826-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T19:17:17.319450+00:00"
+      "seen_at_utc": "2026-08-25T19:29:59.735620+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1454279/elas-galazioi-imeteroi-akoma-kai-stin-akropoli/",
-      "title": "ΕΛΑΣ: Γαλάζιοι «ημέτεροι» ακόμα και στην Ακρόπολη;",
-      "normalized_title": "ΕΛΑΣ: ΓΑΛΑΖΙΟΙ «ΗΜΕΤΕΡΟΙ» ΑΚΟΜΑ ΚΑΙ ΣΤΗΝ ΑΚΡΟΠΟΛΗ;",
+      "url": "https://www.efsyn.gr/ellada/1454310/synehizetai-i-agonia-gia-ton-agnooymeno-ispano-oi-arhes-stiazoyn-se-ena-simeioma-to-sosivio-kai-ton-asyrmato/",
+      "title": "Συνεχίζεται η αγωνία για τον αγνοούμενο Ισπανό: Οι αρχές εστιάζουν σε ένα σημείωμα, το σωσίβιο και τον ασύρματο",
+      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΑΓΩΝΙΑ ΓΙΑ ΤΟΝ ΑΓΝΟΟΥΜΕΝΟ ΙΣΠΑΝΟ: ΟΙ ΑΡΧΕΣ ΕΣΤΙΑΖΟΥΝ ΣΕ ΕΝΑ ΣΗΜΕΙΩΜΑ, ΤΟ ΣΩΣΙΒΙΟ ΚΑΙ ΤΟΝ ΑΣΥΡΜΑΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1454279/elas-galazioi-imeteroi-akoma-kai-stin-akropoli/"
+        "https://www.efsyn.gr/ellada/1454310/synehizetai-i-agonia-gia-ton-agnooymeno-ispano-oi-arhes-stiazoyn-se-ena-simeioma-to-sosivio-kai-ton-asyrmato/"
       ],
-      "seen_at_utc": "2026-08-25T19:17:17.319424+00:00"
+      "seen_at_utc": "2026-08-25T19:29:59.735591+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/sports/football/tzoxor-ntaroul-tazim-i-agnosti-omada-apo-ti-malaisia-pou-espase-ena-pagkosmio-rekor-32-eton/",
-      "title": "Τζοχόρ Νταρούλ Ταζίμ: Η άγνωστη ομάδα από τη Μαλαισία που έσπασε ένα παγκόσμιο ρεκόρ 32 ετών",
-      "normalized_title": "ΤΖΟΧΟΡ ΝΤΑΡΟΥΛ ΤΑΖΙΜ: Η ΑΓΝΩΣΤΗ ΟΜΑΔΑ ΑΠΟ ΤΗ ΜΑΛΑΙΣΙΑ ΠΟΥ ΕΣΠΑΣΕ ΕΝΑ ΠΑΓΚΟΣΜΙΟ ΡΕΚΟΡ 32 ΕΤΩΝ",
+      "url": "https://www.in.gr/2026/08/25/economy/diethnis-oikonomia/ta-5-megalytera-thymata-tis-oikonomikis-d-day-tou-tramp-sto-iran/",
+      "title": "Τα 5 μεγαλύτερα θύματα της οικονομικής D-Day του Τραμπ στο Ιράν",
+      "normalized_title": "ΤΑ 5 ΜΕΓΑΛΥΤΕΡΑ ΘΥΜΑΤΑ ΤΗΣ ΟΙΚΟΝΟΜΙΚΗΣ D-DAY ΤΟΥ ΤΡΑΜΠ ΣΤΟ ΙΡΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/sports/football/tzoxor-ntaroul-tazim-i-agnosti-omada-apo-ti-malaisia-pou-espase-ena-pagkosmio-rekor-32-eton/",
-        "https://www.in.gr/2026/08/25/economy/diethnis-oikonomia/o-kanadas-anakoinose-dasmous-isis-aksias-me-tous-dasmous-ton-ipa-se-poies-viomixanies-tha-stoxeysei/",
-        "https://www.in.gr/2026/08/25/life/ola-einai-ypothesi-kardias-apoxairetismos-sti-spoudaia-ntoli-parton-gennaiodori-protopotos-monadiki/",
-        "https://www.in.gr/2026/08/25/economy/oikonomikes-eidiseis/sxedon-oi-misoi-ceos-vlepoun-tyflo-simeio-sti-diadoxi-stelexon/",
-        "https://www.in.gr/matchcenter/5987806/"
+        "https://www.in.gr/2026/08/25/economy/diethnis-oikonomia/ta-5-megalytera-thymata-tis-oikonomikis-d-day-tou-tramp-sto-iran/"
       ],
-      "seen_at_utc": "2026-08-25T19:17:17.319401+00:00"
+      "seen_at_utc": "2026-08-25T19:29:59.735514+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T19:17:17.319558+00:00"
+  "updated_at_utc": "2026-08-25T19:29:59.735692+00:00"
 }
