@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564420289/stena-toy-ormoyz-iran-kai-oman-syzitoyn-gia-prosorino-diadromo-naysiplo-as/",
-      "title": "Στενά του Ορμούζ: Ιράν και Ομάν συζητούν για «προσωρινό διάδρομο ναυσιπλοΐας»",
-      "normalized_title": "ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ: ΙΡΑΝ ΚΑΙ ΟΜΑΝ ΣΥΖΗΤΟΥΝ ΓΙΑ «ΠΡΟΣΩΡΙΝΟ ΔΙΑΔΡΟΜΟ ΝΑΥΣΙΠΛΟΙΑΣ»",
+      "url": "https://www.kathimerini.gr/society/564420343/fotia-sti-voiotia-enischyontai-oi-dynameis-ston-agio-vlasio/",
+      "title": "Φωτιά στη Βοιωτία: Ενισχύονται οι δυνάμεις στον Αγιο Βλάσιο",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΒΟΙΩΤΙΑ: ΕΝΙΣΧΥΟΝΤΑΙ ΟΙ ΔΥΝΑΜΕΙΣ ΣΤΟΝ ΑΓΙΟ ΒΛΑΣΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564420289/stena-toy-ormoyz-iran-kai-oman-syzitoyn-gia-prosorino-diadromo-naysiplo-as/"
+        "https://www.kathimerini.gr/society/564420343/fotia-sti-voiotia-enischyontai-oi-dynameis-ston-agio-vlasio/",
+        "https://www.kathimerini.gr/economy/local/564418639/katapeltis-o-areios-pagos-gia-ependyseis-ypsiloy-riskoy/",
+        "https://www.kathimerini.gr/world/564420268/minyma-erntogan-sto-israil-den-tha-kanoyme-kamia-parachorisi-apo-ta-ethnika-mas-symferonta/",
+        "https://www.kathimerini.gr/society/564420337/trochaio-stin-athinon-soynioy-dyo-traymaties-meta-apo-sygkroysi-ich-me-michani/"
       ],
-      "seen_at_utc": "2026-08-25T17:30:03.921794+00:00"
+      "seen_at_utc": "2026-08-25T17:51:34.215045+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869444/apokatastasi-kai-ohi-metatropi-se-touristika-katalumata-gia-tous-anemomulous-apada-o-dimos-udras/?utm_source=rss",
-      "title": "Τι απαντά ο δήμος Ύδρας στην Ελληνική Εταιρεία Περιβάλλοντος και Πολιτισμού για τους ιστορικούς ανεμόμυλους",
-      "normalized_title": "ΤΙ ΑΠΑΝΤΑ Ο ΔΗΜΟΣ ΥΔΡΑΣ ΣΤΗΝ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΕΙΑ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΠΟΛΙΤΙΣΜΟΥ ΓΙΑ ΤΟΥΣ ΙΣΤΟΡΙΚΟΥΣ ΑΝΕΜΟΜΥΛΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1869482/rekor-purkagion-stous-dromous-giati-labadiazoun-ta-autokinita-tis-elladas/?utm_source=rss",
+      "title": "Ρεκόρ πυρκαγιών στους δρόμους: Γιατί λαμπαδιάζουν τα αυτοκίνητα της Ελλάδας",
+      "normalized_title": "ΡΕΚΟΡ ΠΥΡΚΑΓΙΩΝ ΣΤΟΥΣ ΔΡΟΜΟΥΣ: ΓΙΑΤΙ ΛΑΜΠΑΔΙΑΖΟΥΝ ΤΑ ΑΥΤΟΚΙΝΗΤΑ ΤΗΣ ΕΛΛΑΔΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869444/apokatastasi-kai-ohi-metatropi-se-touristika-katalumata-gia-tous-anemomulous-apada-o-dimos-udras/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869482/rekor-purkagion-stous-dromous-giati-labadiazoun-ta-autokinita-tis-elladas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869472/exafanistike-14hroni-ston-volo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T16:31:42.286791+00:00"
+      "seen_at_utc": "2026-08-25T17:51:34.215294+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1454254/kypello-to-programma-tis-league-phase-kai-ta-megala-ntermpi-paok-aek-olympiakos-panathinaikos/",
-      "title": "Κύπελλο: Το πρόγραμμα της League Phase και τα μεγάλα ντέρμπι ΠΑΟΚ-ΑΕΚ, Ολυμπιακός-Παναθηναϊκός",
-      "normalized_title": "ΚΥΠΕΛΛΟ: ΤΟ ΠΡΟΓΡΑΜΜΑ ΤΗΣ LEAGUE PHASE ΚΑΙ ΤΑ ΜΕΓΑΛΑ ΝΤΕΡΜΠΙ ΠΑΟΚ-ΑΕΚ, ΟΛΥΜΠΙΑΚΟΣ-ΠΑΝΑΘΗΝΑΙΚΟΣ",
+      "url": "https://www.efsyn.gr/kosmos/1454267/i-koyva-katadikazei-tin-paratasi-toy-empargko-katigorei-tis-ipa-gia-genoktoniki-politiki/",
+      "title": "Η Κούβα καταδικάζει την παράταση του εμπάργκο – Κατηγορεί τις ΗΠΑ για «γενοκτονική πολιτική»",
+      "normalized_title": "Η ΚΟΥΒΑ ΚΑΤΑΔΙΚΑΖΕΙ ΤΗΝ ΠΑΡΑΤΑΣΗ ΤΟΥ ΕΜΠΑΡΓΚΟ – ΚΑΤΗΓΟΡΕΙ ΤΙΣ ΗΠΑ ΓΙΑ «ΓΕΝΟΚΤΟΝΙΚΗ ΠΟΛΙΤΙΚΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1454254/kypello-to-programma-tis-league-phase-kai-ta-megala-ntermpi-paok-aek-olympiakos-panathinaikos/",
-        "https://www.efsyn.gr/ellada/1454236/gynaikoktonia-sti-nea-smyrni-sygklonizei-i-kori-toy-drasti-sterise-ti-mitera-mias-synomilikis-moy/",
-        "https://www.efsyn.gr/ellada/1454251/tragodia-sto-kato-koyfonisi-nekri-69hroni-meta-apo-voytia-apo-imeroploio/"
+        "https://www.efsyn.gr/kosmos/1454267/i-koyva-katadikazei-tin-paratasi-toy-empargko-katigorei-tis-ipa-gia-genoktoniki-politiki/",
+        "https://www.efsyn.gr/kosmos/1454261/protofanis-exarsi-salmonelas-sto-velgio-toylahiston-306-kroysmata/",
+        "https://www.efsyn.gr/ellada/1454259/o-dimos-naxoy-prosfeygei-sto-ste-kata-toy-neoy-horotaxikoy-gia-tis-ape/"
       ],
-      "seen_at_utc": "2026-08-25T17:17:31.784426+00:00"
+      "seen_at_utc": "2026-08-25T17:51:34.215238+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/sports/football/proponitis-lefski-na-deiksoume-xaraktira-tharros-kai-poioi-pragmatika-eimaste/",
-      "title": "Προπονητής Λέφσκι: «Να δείξουμε χαρακτήρα, θάρρος και ποιοι πραγματικά είμαστε»",
-      "normalized_title": "ΠΡΟΠΟΝΗΤΗΣ ΛΕΦΣΚΙ: «ΝΑ ΔΕΙΞΟΥΜΕ ΧΑΡΑΚΤΗΡΑ, ΘΑΡΡΟΣ ΚΑΙ ΠΟΙΟΙ ΠΡΑΓΜΑΤΙΚΑ ΕΙΜΑΣΤΕ»",
+      "url": "https://www.in.gr/2026/08/25/sports/basketball/aris-akomi-den-exoume-katathesei-akoma-episimi-protasi-gia-franchise-sti-euroleague/",
+      "title": "Άρης: «Ακόμη δεν έχουμε καταθέσει ακόμα επίσημη πρόταση για franchise στη Euroleague»",
+      "normalized_title": "ΑΡΗΣ: «ΑΚΟΜΗ ΔΕΝ ΕΧΟΥΜΕ ΚΑΤΑΘΕΣΕΙ ΑΚΟΜΑ ΕΠΙΣΗΜΗ ΠΡΟΤΑΣΗ ΓΙΑ FRANCHISE ΣΤΗ EUROLEAGUE»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/sports/football/proponitis-lefski-na-deiksoume-xaraktira-tharros-kai-poioi-pragmatika-eimaste/",
-        "https://www.in.gr/2026/08/25/greece/synelifthi-sta-katexomena-o-katazitoumenos-gia-ti-dolofonia-tou-vaggeli-zampouni/",
-        "https://www.in.gr/2026/08/25/life/music/giati-oi-thaymastes-foroun-panes-gia-na-stathoun-stin-proti-seira-stis-synaylies/"
+        "https://www.in.gr/2026/08/25/sports/basketball/aris-akomi-den-exoume-katathesei-akoma-episimi-protasi-gia-franchise-sti-euroleague/",
+        "https://www.in.gr/2026/08/25/greece/se-yfesi-i-fotia-sti-salamina-den-yparxei-kindynos-epektasis/",
+        "https://www.in.gr/2026/08/25/world/oi-ipa-zitisan-apo-tin-oukrania-mosxa-kai-agia-petroupoli-giati-tha-tis-episkefthei-amerikaniki-antiprosopeia/",
+        "https://www.in.gr/2026/08/25/world/velgio-eksarsi-salmonelas-apo-ayga-pano-apo-300-anthropoi-nosisan/",
+        "https://www.in.gr/2026/08/25/politics/idiotika-panepistimia-diavevaioseis-zaxaraki-gia-amesi-epanaktisi-ton-adeion-meta-to-fiasko/",
+        "https://www.in.gr/2026/08/25/greece/sovaro-troxaio-stin-leoforo-athinon-souniou-sto-koropi/"
       ],
-      "seen_at_utc": "2026-08-25T17:30:03.921857+00:00"
+      "seen_at_utc": "2026-08-25T17:51:34.215170+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T17:30:03.921941+00:00"
+  "updated_at_utc": "2026-08-25T17:51:34.215416+00:00"
 }
