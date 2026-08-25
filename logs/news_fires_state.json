@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564419995/thessaloniki-eleytheros-o-48chronos-astynomikos-anavlithike-ek-neoy-i-diki/",
-      "title": "Θεσσαλονίκη: Περιοριστικοί όροι σε αστυνομικό μετά από καταγγελία πρώην συντρόφου",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΕΡΙΟΡΙΣΤΙΚΟΙ ΟΡΟΙ ΣΕ ΑΣΤΥΝΟΜΙΚΟ ΜΕΤΑ ΑΠΟ ΚΑΤΑΓΓΕΛΙΑ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟΥ",
+      "url": "https://www.kathimerini.gr/world/564420022/o-dieythyntis-tis-cia-vrisketai-sti-rosia-gia-synantiseis/",
+      "title": "Ο διευθυντής της CIA βρίσκεται στη Ρωσία για συναντήσεις",
+      "normalized_title": "Ο ΔΙΕΥΘΥΝΤΗΣ ΤΗΣ CIA ΒΡΙΣΚΕΤΑΙ ΣΤΗ ΡΩΣΙΑ ΓΙΑ ΣΥΝΑΝΤΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564419995/thessaloniki-eleytheros-o-48chronos-astynomikos-anavlithike-ek-neoy-i-diki/"
+        "https://www.kathimerini.gr/world/564420022/o-dieythyntis-tis-cia-vrisketai-sti-rosia-gia-synantiseis/",
+        "https://www.kathimerini.gr/economy/international/564418759/i-e-e-skliraineiti-stasi-tis-apenanti-stin-kina/"
       ],
-      "seen_at_utc": "2026-08-25T14:30:15.191250+00:00"
+      "seen_at_utc": "2026-08-25T14:51:25.189997+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869383/fotia-sto-dimo-gortunas-sto-irakleio-kritis-epiheiroun-4-enaeria/?utm_source=rss",
-      "title": "Φωτιά στην περιοχή Άγιοι Δέκα στο Ηράκλειο Κρήτης, επιχειρούν 4 ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΓΙΟΙ ΔΕΚΑ ΣΤΟ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, ΕΠΙΧΕΙΡΟΥΝ 4 ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1869391/sta-heria-tis-elas-summoria-pou-eihe-rimaxei-12-spitia-se-duo-mines-stin-rodo-duo-sullipseis/?utm_source=rss",
+      "title": "Στα χέρια τις ΕΛΑΣ συμμορία που είχε ρημάξει 12 σπίτια σε δύο μήνες στη Ρόδο, δύο συλλήψεις",
+      "normalized_title": "ΣΤΑ ΧΕΡΙΑ ΤΙΣ ΕΛΑΣ ΣΥΜΜΟΡΙΑ ΠΟΥ ΕΙΧΕ ΡΗΜΑΞΕΙ 12 ΣΠΙΤΙΑ ΣΕ ΔΥΟ ΜΗΝΕΣ ΣΤΗ ΡΟΔΟ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869383/fotia-sto-dimo-gortunas-sto-irakleio-kritis-epiheiroun-4-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869391/sta-heria-tis-elas-summoria-pou-eihe-rimaxei-12-spitia-se-duo-mines-stin-rodo-duo-sullipseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T14:30:15.191413+00:00"
+      "seen_at_utc": "2026-08-25T14:51:25.190094+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454138/thessaloniki-eleytheros-me-oroys-o-48hronos-astynomikos-poy-ton-katiggeile-gia-viasmo-proin-syntrofos-toy/",
-      "title": "Θεσσαλονίκη: Ελεύθερος με όρους ο 48χρονος αστυνομικός που τον κατήγγειλε για βιασμό πρώην σύντροφός του",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΕΛΕΥΘΕΡΟΣ ΜΕ ΟΡΟΥΣ Ο 48ΧΡΟΝΟΣ ΑΣΤΥΝΟΜΙΚΟΣ ΠΟΥ ΤΟΝ ΚΑΤΗΓΓΕΙΛΕ ΓΙΑ ΒΙΑΣΜΟ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟΣ ΤΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1454151/pyrino-metopo-sto-irakleio-kritis-sikothikan-enaeria-mesa/",
+      "title": "Πύρινο μέτωπο στο Ηράκλειο Κρήτης – Σηκώθηκαν εναέρια μέσα, ήχησε το 112",
+      "normalized_title": "ΠΥΡΙΝΟ ΜΕΤΩΠΟ ΣΤΟ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ – ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ ΜΕΣΑ, ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454138/thessaloniki-eleytheros-me-oroys-o-48hronos-astynomikos-poy-ton-katiggeile-gia-viasmo-proin-syntrofos-toy/",
-        "https://www.efsyn.gr/ellada/1454137/salamina-ekkenonontai-dyo-oikismoi-piso-apo-to-naystathmo-i-fotia-mayroi-kapnoi-ston-oyrano/",
-        "https://www.efsyn.gr/kosmos/1454121/o-tramp-voyliazei-ston-emporiko-polemo-me-ton-kanada-tora-apeilei-na-metonomasei-ti-limni-ontario-se-limni-amerikis/",
-        "https://www.efsyn.gr/stiles/1453882/aneythynotita-koroidia-kai-thrasos/",
-        "https://www.efsyn.gr/ellada/1454131/pyrkagia-sti-stefani-voiotias-enishythikan-oi-pyrosvestikes-dynameis-epiheiroyn-8-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1454124/fotia-sto-elliniko-salaminas-epiheiroyn-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1454122/tin-pempti-ta-egkainia-tis-epektasis-toy-metro-thessalonikis-pros-kalamaria/"
+        "https://www.efsyn.gr/ellada/1454151/pyrino-metopo-sto-irakleio-kritis-sikothikan-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1454153/synelifthi-sta-katehomena-o-katazitoymenos-gia-ti-dolofonia-zampoyni-ston-neo-kosmo/"
       ],
-      "seen_at_utc": "2026-08-25T14:18:14.374257+00:00"
+      "seen_at_utc": "2026-08-25T14:51:25.190065+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/greece/odigos-taksi-xreose-600e-gia-ti-diadromi-aerodromio-kentro-athinas-kai-apeilise-oikogeneia-touriston-gia-na-parei-ta-xrimata/",
-      "title": "Οδηγός ταξί χρέωσε 600€ για τη διαδρομή αεροδρόμιο – κέντρο Αθήνας και απείλησε οικογένεια τουριστών για να πάρει τα χρήματα",
-      "normalized_title": "ΟΔΗΓΟΣ ΤΑΞΙ ΧΡΕΩΣΕ 600€ ΓΙΑ ΤΗ ΔΙΑΔΡΟΜΗ ΑΕΡΟΔΡΟΜΙΟ – ΚΕΝΤΡΟ ΑΘΗΝΑΣ ΚΑΙ ΑΠΕΙΛΗΣΕ ΟΙΚΟΓΕΝΕΙΑ ΤΟΥΡΙΣΤΩΝ ΓΙΑ ΝΑ ΠΑΡΕΙ ΤΑ ΧΡΗΜΑΤΑ",
+      "url": "https://www.in.gr/2026/08/25/in-science/space/nancy-roman-neo-diastimiko-tileskopio-tis-nasa-tha-meletisei-ti-skoteini-yli-kai-ti-skoteini-energeia/",
+      "title": "Νέο διαστημικό τηλεσκόπιο της NASA θα μελετήσει τη σκοτεινή ύλη και τη σκοτεινή ενέργεια",
+      "normalized_title": "ΝΕΟ ΔΙΑΣΤΗΜΙΚΟ ΤΗΛΕΣΚΟΠΙΟ ΤΗΣ NASA ΘΑ ΜΕΛΕΤΗΣΕΙ ΤΗ ΣΚΟΤΕΙΝΗ ΥΛΗ ΚΑΙ ΤΗ ΣΚΟΤΕΙΝΗ ΕΝΕΡΓΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/greece/odigos-taksi-xreose-600e-gia-ti-diadromi-aerodromio-kentro-athinas-kai-apeilise-oikogeneia-touriston-gia-na-parei-ta-xrimata/"
+        "https://www.in.gr/2026/08/25/in-science/space/nancy-roman-neo-diastimiko-tileskopio-tis-nasa-tha-meletisei-ti-skoteini-yli-kai-ti-skoteini-energeia/",
+        "https://www.in.gr/2026/08/25/greece/pithanotata-einai-nekros-leei-o-gios-tou-ispanou-epixeirimatia-poios-parakolouthouse-tin-poreia-tou-skafous/",
+        "https://www.in.gr/2026/08/25/greece/fotia-ston-agio-vlasi-voiotias-sikothikan-9-enaeria-mesa-minyma-apo-to-112/",
+        "https://www.in.gr/2026/08/25/sports/football/nikolits-anameno-yperoxi-vradia-elpizo-se-thetiko-apotelesma/",
+        "https://www.in.gr/2026/08/25/greece/fotia-se-agrotodasiki-sto-irakleio-kritis-ixise-to-112/",
+        "https://www.in.gr/2026/08/25/politics/aftodioikisi/prostasia-kai-anadeiksi-tou-kastrou-kai-metavyzantinon-naon-tis-skiathou/",
+        "https://www.in.gr/2026/08/25/sports/on-field/o-karagker-dikase-tis-persines-metagrafes-tis-liverpoul/",
+        "https://www.in.gr/2026/08/25/life/music/mastodon-i-zoi-meta-ton-mprent-xints-to-marrow-deep-anoigei-ena-neo-kefalaio/"
       ],
-      "seen_at_utc": "2026-08-25T14:30:15.191364+00:00"
+      "seen_at_utc": "2026-08-25T14:51:25.190038+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T14:30:15.191508+00:00"
+  "updated_at_utc": "2026-08-25T14:51:25.190159+00:00"
 }
