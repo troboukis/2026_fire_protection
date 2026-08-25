@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564419356/to-aeroplanoforo-abraham-lincoln-tha-katapleysei-stin-tailandi/",
-      "title": "Το αεροπλανοφόρο «Abraham Lincoln» θα καταπλεύσει στην Ταϊλάνδη",
-      "normalized_title": "ΤΟ ΑΕΡΟΠΛΑΝΟΦΟΡΟ «ABRAHAM LINCOLN» ΘΑ ΚΑΤΑΠΛΕΥΣΕΙ ΣΤΗΝ ΤΑΙΛΑΝΔΗ",
+      "url": "https://www.kathimerini.gr/world/564419389/pethane-o-palaistinios-kallitechnis-sliman-mansoyr/",
+      "title": "Πέθανε ο Παλαιστίνιος καλλιτέχνης Σλιμάν Μανσούρ",
+      "normalized_title": "ΠΕΘΑΝΕ Ο ΠΑΛΑΙΣΤΙΝΙΟΣ ΚΑΛΛΙΤΕΧΝΗΣ ΣΛΙΜΑΝ ΜΑΝΣΟΥΡ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564419356/to-aeroplanoforo-abraham-lincoln-tha-katapleysei-stin-tailandi/",
-        "https://www.kathimerini.gr/world/564419341/sta-akra-i-kontra-ipa-kanada-o-tramp-apeilei-na-allaxei-to-onoma-tis-limnis-ontario-se-limni-ameriki/"
+        "https://www.kathimerini.gr/world/564419389/pethane-o-palaistinios-kallitechnis-sliman-mansoyr/",
+        "https://www.kathimerini.gr/world/564419368/kina-antitithemetha-stis-paranomes-monomereis-kyroseis-kata-toy-iran-tha-prostateysoyme-ta-symferonta-mas/",
+        "https://www.kathimerini.gr/world/564419287/rosia-to-ypovrychio-tis-apokalypsis-vgike-gia-proti-fora-sti-thalassa/",
+        "https://www.kathimerini.gr/society/564419374/fotia-sto-xirolivado-veroias-ena-elikoptero-kai-dyo-aeroskafi-sti-machi/"
       ],
-      "seen_at_utc": "2026-08-25T11:30:12.838572+00:00"
+      "seen_at_utc": "2026-08-25T11:51:17.320253+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1262,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869287/me-htupouse-me-duo-mahairia-eleutheri-i-25hroni-pou-dehthike-epithesi-apo-ton-31hrono-sto-spiti-tou-sti-thessaloniki/?utm_source=rss",
-      "title": "«Με χτυπούσε με δύο μαχαίρια»: Ελεύθερη η 25χρονη που δέχθηκε επίθεση από τον 31χρονο στο σπίτι του στη Θεσσαλονίκη",
-      "normalized_title": "«ΜΕ ΧΤΥΠΟΥΣΕ ΜΕ ΔΥΟ ΜΑΧΑΙΡΙΑ»: ΕΛΕΥΘΕΡΗ Η 25ΧΡΟΝΗ ΠΟΥ ΔΕΧΘΗΚΕ ΕΠΙΘΕΣΗ ΑΠΟ ΤΟΝ 31ΧΡΟΝΟ ΣΤΟ ΣΠΙΤΙ ΤΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1869299/paradothike-i-meleti-gia-ta-14-ktiria-me-provlimata-apo-ta-erga-tou-metro-stin-kupseli-den-kindunepsoun-zoes-periousies/?utm_source=rss",
+      "title": "Παραδόθηκε η μελέτη για τα 14 κτίρια με προβλήματα από τα έργα του Μετρό στην Κυψέλη: «Δεν θα κινδυνέψουν ζωές και περιουσίες», είπε ο Δούκας",
+      "normalized_title": "ΠΑΡΑΔΟΘΗΚΕ Η ΜΕΛΕΤΗ ΓΙΑ ΤΑ 14 ΚΤΙΡΙΑ ΜΕ ΠΡΟΒΛΗΜΑΤΑ ΑΠΟ ΤΑ ΕΡΓΑ ΤΟΥ ΜΕΤΡΟ ΣΤΗΝ ΚΥΨΕΛΗ: «ΔΕΝ ΘΑ ΚΙΝΔΥΝΕΨΟΥΝ ΖΩΕΣ ΚΑΙ ΠΕΡΙΟΥΣΙΕΣ», ΕΙΠΕ Ο ΔΟΥΚΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869287/me-htupouse-me-duo-mahairia-eleutheri-i-25hroni-pou-dehthike-epithesi-apo-ton-31hrono-sto-spiti-tou-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869285/soreia-kliseon-mesa-sta-parking-ton-souper-market/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869284/fotia-tora-sto-xirolivado-veroias-epiheiroun-2-aeroskafi-kai-1-elikoptero/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869280/mi-kratika-panepistimia-ti-allazei-meta-tis-apofaseis-tou-ste-to-neo-hronodiagramma-gia-keele-york-kai-anatolia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869299/paradothike-i-meleti-gia-ta-14-ktiria-me-provlimata-apo-ta-erga-tou-metro-stin-kupseli-den-kindunepsoun-zoes-periousies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869291/kakourgimatiki-dioxi-ston-44hrono-pou-katigoreitai-gia-viasmo-kai-xulodarmo-tis-en-diastasei-suzugou-tou-sti/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869289/i-eleutheria-itan-olos-o-kosmos-tous-sudetrimmeni-i-oikogeneia-tis-17hronis-pou-skotothike-se-trohaio-sta-ano-liosia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T11:17:24.972935+00:00"
+      "seen_at_utc": "2026-08-25T11:51:17.320405+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454011/veroia-pyrkagia-se-dasiki-ektasi-stin-periohi-xirolivado-epiheiroyn-tria-enaeria-mesa/",
-      "title": "Βέροια: Πυρκαγιά σε δασική έκταση στην περιοχή Ξηρολίβαδο – Επιχειρούν τρία εναέρια μέσα",
-      "normalized_title": "ΒΕΡΟΙΑ: ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΠΕΡΙΟΧΗ ΞΗΡΟΛΙΒΑΔΟ – ΕΠΙΧΕΙΡΟΥΝ ΤΡΙΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.efsyn.gr/ellada/1454006/thessaloniki-eleytheri-i-25hroni-poy-dehtike-epithesi-apo-31hrono-me-htypoyse-me-dyo-mahairia-eipe-stin-apologia-tis/",
+      "title": "Θεσσαλονίκη: Ελεύθερη η 25χρονη που δέχτηκε επίθεση από 31χρονο – «Με χτυπούσε με δύο μαχαίρια», είπε στην απολογία της",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΕΛΕΥΘΕΡΗ Η 25ΧΡΟΝΗ ΠΟΥ ΔΕΧΤΗΚΕ ΕΠΙΘΕΣΗ ΑΠΟ 31ΧΡΟΝΟ – «ΜΕ ΧΤΥΠΟΥΣΕ ΜΕ ΔΥΟ ΜΑΧΑΙΡΙΑ», ΕΙΠΕ ΣΤΗΝ ΑΠΟΛΟΓΙΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454011/veroia-pyrkagia-se-dasiki-ektasi-stin-periohi-xirolivado-epiheiroyn-tria-enaeria-mesa/",
-        "https://www.efsyn.gr/politiki/1453978/apostaseis-syrigoy-einai-lathos-na-epistrepsoyn-oi-patriot-logo-tis-symfonias-tis-mekkas/",
-        "https://www.efsyn.gr/stiles/1453891/oi-medoyses-mplokaroyn-ta-pyrinika-shedia/",
-        "https://www.efsyn.gr/stiles/1453873/proliptikos-polemos/",
-        "https://www.efsyn.gr/stiles/1453857/mathainontas-na-zoyme-sti-zoni-endiaferontos/"
+        "https://www.efsyn.gr/ellada/1454006/thessaloniki-eleytheri-i-25hroni-poy-dehtike-epithesi-apo-31hrono-me-htypoyse-me-dyo-mahairia-eipe-stin-apologia-tis/",
+        "https://www.efsyn.gr/oikonomia/1453897/posa-dis-eyro-tha-hasoyme-apo-to-elliniko-shedio-anakampsis-mpotiliarisma-117-ekkremotiton/",
+        "https://www.efsyn.gr/ellada/1453975/rodos-loyketo-se-4-paranoma-beach-bar-stin-paralia-tsampika-paranomes-kataskeyes-eos-500-t-m/"
       ],
-      "seen_at_utc": "2026-08-25T11:30:12.838654+00:00"
+      "seen_at_utc": "2026-08-25T11:51:17.320364+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/economy/akinita-anodiki-i-zitisi-gia-agora-katoikias-sta-nisia-oi-protagonistes/",
-      "title": "Ανοδική ζήτηση και τιμές για αγορά κατοικίας στα νησιά - Αυξημένο το ενδιαφέρον ξένων επενδυτών",
-      "normalized_title": "ΑΝΟΔΙΚΗ ΖΗΤΗΣΗ ΚΑΙ ΤΙΜΕΣ ΓΙΑ ΑΓΟΡΑ ΚΑΤΟΙΚΙΑΣ ΣΤΑ ΝΗΣΙΑ - ΑΥΞΗΜΕΝΟ ΤΟ ΕΝΔΙΑΦΕΡΟΝ ΞΕΝΩΝ ΕΠΕΝΔΥΤΩΝ",
+      "url": "https://www.in.gr/2026/08/25/greece/thessaloniki-me-xtypise-me-dyo-maxairia-oi-isxyrismoi-gia-to-aimatiro-epeisodio-mesa-se-diamerisma/",
+      "title": "«Με χτύπησε με δύο μαχαίρια» - Οι ισχυρισμοί για το αιματηρό επεισόδιο μέσα σε διαμέρισμα",
+      "normalized_title": "«ΜΕ ΧΤΥΠΗΣΕ ΜΕ ΔΥΟ ΜΑΧΑΙΡΙΑ» - ΟΙ ΙΣΧΥΡΙΣΜΟΙ ΓΙΑ ΤΟ ΑΙΜΑΤΗΡΟ ΕΠΕΙΣΟΔΙΟ ΜΕΣΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/economy/akinita-anodiki-i-zitisi-gia-agora-katoikias-sta-nisia-oi-protagonistes/"
+        "https://www.in.gr/2026/08/25/greece/thessaloniki-me-xtypise-me-dyo-maxairia-oi-isxyrismoi-gia-to-aimatiro-epeisodio-mesa-se-diamerisma/",
+        "https://www.in.gr/2026/08/25/world/pyriniko-ypovryxio-eksapelyse-o-poutin-doste-stous-vretanous-3-imeres-gia-na-mathoun-na-anapneoun-kato-apo-to-nero/"
       ],
-      "seen_at_utc": "2026-08-25T11:30:12.838626+00:00"
+      "seen_at_utc": "2026-08-25T11:51:17.320317+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T11:30:12.838734+00:00"
+  "updated_at_utc": "2026-08-25T11:51:17.320482+00:00"
 }
