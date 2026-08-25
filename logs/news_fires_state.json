@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564418216/theoreio-ena-karfi-40-eton/",
-      "title": "Θεωρείο: Ενα καρφί 40 ετών",
-      "normalized_title": "ΘΕΩΡΕΙΟ: ΕΝΑ ΚΑΡΦΙ 40 ΕΤΩΝ",
+      "url": "https://www.kathimerini.gr/opinion/564418417/prooptikes-toy-trigonoy-scheseon-me-toyrkia-israil/",
+      "title": "Προοπτικές του τριγώνου σχέσεων με Τουρκία, Ισραήλ",
+      "normalized_title": "ΠΡΟΟΠΤΙΚΕΣ ΤΟΥ ΤΡΙΓΩΝΟΥ ΣΧΕΣΕΩΝ ΜΕ ΤΟΥΡΚΙΑ, ΙΣΡΑΗΛ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564418216/theoreio-ena-karfi-40-eton/",
-        "https://www.kathimerini.gr/visual/photography/564418066/apo-ta-oyrania-sta-dikastiria/",
-        "https://www.kathimerini.gr/politics/564418264/entos-kai-ektos-psinontai-nees-ekloges-ston-syriza/"
+        "https://www.kathimerini.gr/opinion/564418417/prooptikes-toy-trigonoy-scheseon-me-toyrkia-israil/",
+        "https://www.kathimerini.gr/opinion/564418408/fos-ton-aygoysto/",
+        "https://www.kathimerini.gr/world/564418855/skliri-apantisi-toy-iran-meta-tis-nees-kyroseis-ton-ipa-na-perimenoyn-epithesi/",
+        "https://www.kathimerini.gr/opinion/564418405/i-epignosi-ton-orion-kai-ta-oramata/",
+        "https://www.kathimerini.gr/opinion/564418420/to-cheirotero-senario/",
+        "https://www.kathimerini.gr/opinion/564418219/lathos-noymero/",
+        "https://www.kathimerini.gr/world/564418786/israil-apagoreyse-tin-eisodo-se-soyidoys-eyrovoyleytes/"
       ],
-      "seen_at_utc": "2026-08-25T05:17:09.825806+00:00"
+      "seen_at_utc": "2026-08-25T05:30:03.567687+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1265,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869079/posoi-giatroi-metakinithikan-sta-nisia-auto-to-kalokairi-2-krisima-kinitra-gia-na-parameinoun-to-fthinoporo/?utm_source=rss",
-      "title": "Πόσοι γιατροί μετακινήθηκαν στα νησιά αυτό το καλοκαίρι, 2 κρίσιμα κίνητρα για να παραμείνουν το φθινόπωρο",
-      "normalized_title": "ΠΟΣΟΙ ΓΙΑΤΡΟΙ ΜΕΤΑΚΙΝΗΘΗΚΑΝ ΣΤΑ ΝΗΣΙΑ ΑΥΤΟ ΤΟ ΚΑΛΟΚΑΙΡΙ, 2 ΚΡΙΣΙΜΑ ΚΙΝΗΤΡΑ ΓΙΑ ΝΑ ΠΑΡΑΜΕΙΝΟΥΝ ΤΟ ΦΘΙΝΟΠΩΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1869086/ehei-i-ellada-ta-perissotera-diodia-stin-europaiki-enosi/?utm_source=rss",
+      "title": "Έχει η Ελλάδα τα περισσότερα διόδια στην Ευρώπη;",
+      "normalized_title": "ΕΧΕΙ Η ΕΛΛΑΔΑ ΤΑ ΠΕΡΙΣΣΟΤΕΡΑ ΔΙΟΔΙΑ ΣΤΗΝ ΕΥΡΩΠΗ;",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869079/posoi-giatroi-metakinithikan-sta-nisia-auto-to-kalokairi-2-krisima-kinitra-gia-na-parameinoun-to-fthinoporo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869086/ehei-i-ellada-ta-perissotera-diodia-stin-europaiki-enosi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869082/gemata-ta-limania-epistrefoun-oi-ekdromeis-eno-polloi-xekinoun-tora-tis-diakopes-tous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869081/1000000-monadikoi-hristes-enimerothikan-hthes-deutera-24-augoustou-apo-to-protothemagr/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T05:17:09.825915+00:00"
+      "seen_at_utc": "2026-08-25T05:30:03.567773+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1453660/neyrikotita-sto-maximoy-gia-ti-sfina-tsipra-sti-deth/",
-      "title": "Νευρικότητα στο Μαξίμου για τη «σφήνα» Τσίπρα στη ΔΕΘ",
-      "normalized_title": "ΝΕΥΡΙΚΟΤΗΤΑ ΣΤΟ ΜΑΞΙΜΟΥ ΓΙΑ ΤΗ «ΣΦΗΝΑ» ΤΣΙΠΡΑ ΣΤΗ ΔΕΘ",
+      "url": "https://www.efsyn.gr/ellada/1453704/anagkastiki-prosgeiosi-elikopteroy-ston-haraka-metaferthike-sto-el-venizelos-sooi-oi-pente-epivainontes/",
+      "title": "Αναγκαστική προσγείωση ελικοπτέρου στον Χάρακα: Μεταφέρθηκε στο «Ελ. Βενιζέλος» – Σώοι οι πέντε επιβαίνοντες",
+      "normalized_title": "ΑΝΑΓΚΑΣΤΙΚΗ ΠΡΟΣΓΕΙΩΣΗ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΟΝ ΧΑΡΑΚΑ: ΜΕΤΑΦΕΡΘΗΚΕ ΣΤΟ «ΕΛ. ΒΕΝΙΖΕΛΟΣ» – ΣΩΟΙ ΟΙ ΠΕΝΤΕ ΕΠΙΒΑΙΝΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1453660/neyrikotita-sto-maximoy-gia-ti-sfina-tsipra-sti-deth/",
-        "https://www.efsyn.gr/athlitismos/1453685/aek-ehoyn-to-myalo-mono-sti-lefski/",
-        "https://www.efsyn.gr/athlitismos/1453679/ntomino-metakiniseon-ston-panathinaiko/",
-        "https://www.efsyn.gr/athlitismos/1453691/olympiakos-o-giorgos-aggelopoylos-anevike-se-mpoylntoza-kai-epitheorise-ta-erga-sto-sef-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1453704/anagkastiki-prosgeiosi-elikopteroy-ston-haraka-metaferthike-sto-el-venizelos-sooi-oi-pente-epivainontes/"
       ],
-      "seen_at_utc": "2026-08-25T05:17:09.825870+00:00"
+      "seen_at_utc": "2026-08-25T05:30:03.567756+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/greece/ypsilos-kindynos-pyrkagias-simera-oi-perioxes-pou-vriskontai-se-kitrino-synagermo/",
-      "title": "Υψηλός κίνδυνος πυρκαγιάς σήμερα – Οι περιοχές που βρίσκονται σε «κίτρινο» συναγερμό",
-      "normalized_title": "ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ – ΟΙ ΠΕΡΙΟΧΕΣ ΠΟΥ ΒΡΙΣΚΟΝΤΑΙ ΣΕ «ΚΙΤΡΙΝΟ» ΣΥΝΑΓΕΡΜΟ",
+      "url": "https://www.in.gr/2026/08/25/world/notia-korea-symfonia-dioikisis-ergazomenon-tis-hyundai-meta-tin-petyximeni-apergia/",
+      "title": "Hyundai: Συμφωνία διοίκησης - εργαζομένων μετά την πετυχημένη απεργία",
+      "normalized_title": "HYUNDAI: ΣΥΜΦΩΝΙΑ ΔΙΟΙΚΗΣΗΣ - ΕΡΓΑΖΟΜΕΝΩΝ ΜΕΤΑ ΤΗΝ ΠΕΤΥΧΗΜΕΝΗ ΑΠΕΡΓΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/greece/ypsilos-kindynos-pyrkagias-simera-oi-perioxes-pou-vriskontai-se-kitrino-synagermo/",
-        "https://www.in.gr/2026/08/25/politics/aftodioikisi/to-apofasise-dimarxos-metaferei-allou-paidiki-xara-pou-vandalizetai/",
-        "https://www.in.gr/2026/08/25/life/music/o-spyros-grammenos-stin-texnopoli-tou-dimou-athinaion/"
+        "https://www.in.gr/2026/08/25/world/notia-korea-symfonia-dioikisis-ergazomenon-tis-hyundai-meta-tin-petyximeni-apergia/",
+        "https://www.in.gr/2026/08/25/sports/football/arsenal-pros-al-xilal-odeyei-o-martineli-pos-epireazei-ton-tzoli/"
       ],
-      "seen_at_utc": "2026-08-25T05:17:09.825853+00:00"
+      "seen_at_utc": "2026-08-25T05:30:03.567722+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T05:17:09.825988+00:00"
+  "updated_at_utc": "2026-08-25T05:30:03.567866+00:00"
 }
