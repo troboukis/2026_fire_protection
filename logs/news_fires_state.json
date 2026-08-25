@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564419809/osman-kavala-katapeltis-enantion-tis-toyrkias-i-apofasi-toy-edad/",
-      "title": "Οσμάν Καβαλά: «Καταπέλτης» εναντίον της Τουρκίας η απόφαση του ΕΔΑΔ",
-      "normalized_title": "ΟΣΜΑΝ ΚΑΒΑΛΑ: «ΚΑΤΑΠΕΛΤΗΣ» ΕΝΑΝΤΙΟΝ ΤΗΣ ΤΟΥΡΚΙΑΣ Η ΑΠΟΦΑΣΗ ΤΟΥ ΕΔΑΔ",
+      "url": "https://www.kathimerini.gr/culture/tv/564419923/rififi-i-seira-fainomeno-toy-sotiri-tsafoylia-erchetai-ston-alpha/",
+      "title": "«Ριφιφί»: Η σειρά-φαινόμενο του Σωτήρη Τσαφούλια έρχεται στον Alpha",
+      "normalized_title": "«ΡΙΦΙΦΙ»: Η ΣΕΙΡΑ-ΦΑΙΝΟΜΕΝΟ ΤΟΥ ΣΩΤΗΡΗ ΤΣΑΦΟΥΛΙΑ ΕΡΧΕΤΑΙ ΣΤΟΝ ALPHA",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564419809/osman-kavala-katapeltis-enantion-tis-toyrkias-i-apofasi-toy-edad/"
+        "https://www.kathimerini.gr/culture/tv/564419923/rififi-i-seira-fainomeno-toy-sotiri-tsafoylia-erchetai-ston-alpha/",
+        "https://www.kathimerini.gr/world/564419914/greek-mafia-synelifthi-sta-katechomena-o-katazitoymenos-gia-ti-dolofonia-zampoyni/",
+        "https://www.kathimerini.gr/society/564418231/katharizontas-archaiologikoys-choroys/"
       ],
-      "seen_at_utc": "2026-08-25T13:30:07.926569+00:00"
+      "seen_at_utc": "2026-08-25T13:51:27.780763+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869358/trohaio-stin-halkida-autokinito-katelixe-sta-vrahia-deite-fotografies/?utm_source=rss",
-      "title": "Τροχαίο στην Χαλκίδα: Αυτοκίνητο κατέληξε στα βράχια, δείτε φωτογραφίες",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗΝ ΧΑΛΚΙΔΑ: ΑΥΤΟΚΙΝΗΤΟ ΚΑΤΕΛΗΞΕ ΣΤΑ ΒΡΑΧΙΑ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1869363/fotia-tora-se-dasos-sti-salamina-speudoun-dunameis-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά τώρα σε δάσος στη Σαλαμίνα, σπεύδουν δυνάμεις της Πυροσβεστικής, δείτε βίντεο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΗ ΣΑΛΑΜΙΝΑ, ΣΠΕΥΔΟΥΝ ΔΥΝΑΜΕΙΣ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869358/trohaio-stin-halkida-autokinito-katelixe-sta-vrahia-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869363/fotia-tora-se-dasos-sti-salamina-speudoun-dunameis-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869360/fotia-tora-se-ergostasio-sti-leoforo-anthousas-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T13:30:07.926659+00:00"
+      "seen_at_utc": "2026-08-25T13:51:27.780857+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1454090/rosia-mystirio-me-to-metagogiko-aeroskafos-ton-ipa-poy-prosgeiothike-sti-mosha/",
-      "title": "Ρωσία: Μυστήριο με το μεταγωγικό αεροσκάφος των ΗΠΑ που προσγειώθηκε στη Μόσχα",
-      "normalized_title": "ΡΩΣΙΑ: ΜΥΣΤΗΡΙΟ ΜΕ ΤΟ ΜΕΤΑΓΩΓΙΚΟ ΑΕΡΟΣΚΑΦΟΣ ΤΩΝ ΗΠΑ ΠΟΥ ΠΡΟΣΓΕΙΩΘΗΚΕ ΣΤΗ ΜΟΣΧΑ",
+      "url": "https://www.efsyn.gr/tehnes/1453935/anavionontas-tin-karmen-toy-1875/",
+      "title": "Αναβιώνοντας την «Κάρμεν» του 1875",
+      "normalized_title": "ΑΝΑΒΙΩΝΟΝΤΑΣ ΤΗΝ «ΚΑΡΜΕΝ» ΤΟΥ 1875",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1454090/rosia-mystirio-me-to-metagogiko-aeroskafos-ton-ipa-poy-prosgeiothike-sti-mosha/",
-        "https://www.efsyn.gr/athlitismos/1454071/segas-diapseydei-me-aihmes-ta-peri-thetikoy-deigmatos-ntopingk-athlitrias-anthrakas-o-dithen-thisayros/",
-        "https://www.efsyn.gr/ellada/1454080/se-epifylaki-red-code-ayrio-tetarti-ta-nisia-toy-ionioy-poly-ypsilos-kindynos-pyrkagias/"
+        "https://www.efsyn.gr/tehnes/1453935/anavionontas-tin-karmen-toy-1875/",
+        "https://www.efsyn.gr/ellada/1454114/fotia-se-epaggelmatiko-horo-sti-leoforo-anthoysas/",
+        "https://www.efsyn.gr/ellada/1454098/entoli-na-fygei-apo-to-spiti-o-syzygos-tis-paroysiastrias-dikazetai-tin-pempti-gia-endooikogeneiaki-via/",
+        "https://www.efsyn.gr/ellada/1454092/synelifthi-odigos-taxi-zitise-apo-toyristes-600-eyro-gia-ti-diadromi-aerodromio-syntagma-kai-toys-ta-pire-apeilontas/",
+        "https://www.efsyn.gr/ellada/1454091/i-anakoinosi-toy-nosokomeioy-gennimatas-gia-ton-thanato-toy-dimitri-kokota/"
       ],
-      "seen_at_utc": "2026-08-25T13:30:07.926640+00:00"
+      "seen_at_utc": "2026-08-25T13:51:27.780822+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/politics/aftodioikisi/sintrivania-kleinoun-logo-iou-tou-dytikou-neilou/",
-      "title": "Σιντριβάνια κλείνουν λόγω ιού του Δυτικού Νείλου",
-      "normalized_title": "ΣΙΝΤΡΙΒΑΝΙΑ ΚΛΕΙΝΟΥΝ ΛΟΓΩ ΙΟΥ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ",
+      "url": "https://www.in.gr/2026/08/25/greece/megali-fotia-sti-salamina/",
+      "title": "Μεγάλη φωτιά στη Σαλαμίνα",
+      "normalized_title": "ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΣΑΛΑΜΙΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/politics/aftodioikisi/sintrivania-kleinoun-logo-iou-tou-dytikou-neilou/",
-        "https://www.in.gr/2026/08/25/plus/medianews/hello-i-sissy-xristidou-pio-entyposiaki-apo-pote/"
+        "https://www.in.gr/2026/08/25/greece/megali-fotia-sti-salamina/",
+        "https://www.in.gr/2026/08/25/politics/diplomatia/synantisi-xoupi-gianai-sto-epikentro-i-stratigiki-amyntiki-synergasia-elladas-israil/",
+        "https://www.in.gr/2026/08/25/sports/basketball/euroleague/fal-stoxos-i-euroleague-me-ton-panathinaiko-opos-kai-me-ton-olympiako/",
+        "https://www.in.gr/2026/08/25/life/dimitris-kokotas-apo-ta-platinenia-90s-sto-a-tribute-to-the-legends-foivos-karvelas-kai-oles-oi-epityxies-tou/",
+        "https://www.in.gr/2026/08/25/greece/megali-fotia-sti-stefani-voiotias-sikothikan-8-enaeria-mesa/",
+        "https://www.in.gr/2026/08/25/greece/dimitris-kokotas-i-episimi-anakoinosi-tou-nosokomeiou-g-gennimatas/",
+        "https://www.in.gr/2026/08/25/politics/epikairotita/inat-poios-tha-plirosei-to-reyma-tis-texnitis-noimosynis-i-epilogi-den-einai-texnokratiki-einai-politiki/"
       ],
-      "seen_at_utc": "2026-08-25T13:30:07.926615+00:00"
+      "seen_at_utc": "2026-08-25T13:51:27.780798+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T13:30:07.926766+00:00"
+  "updated_at_utc": "2026-08-25T13:51:27.780946+00:00"
 }
