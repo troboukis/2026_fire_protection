@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564418924/kriti-epicheirisi-diasosis-85-metanaston-anoichta-ton-kalon-limenon/",
-      "title": "Κρήτη: Επιχείρηση διάσωσης 85 μεταναστών ανοιχτά των Καλών Λιμένων",
-      "normalized_title": "ΚΡΗΤΗ: ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ 85 ΜΕΤΑΝΑΣΤΩΝ ΑΝΟΙΧΤΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ",
+      "url": "https://www.kathimerini.gr/culture/agenda/564418939/exodos-stin-athina-kai-ektos-tin-pempti-25-8-deelo-kai-kotsiras/",
+      "title": "Εξοδος στην Αθήνα (και εκτός) την Πέμπτη 25/8: Deelo και Κότσιρας",
+      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ (ΚΑΙ ΕΚΤΟΣ) ΤΗΝ ΠΕΜΠΤΗ 25/8: DEELO ΚΑΙ ΚΟΤΣΙΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564418924/kriti-epicheirisi-diasosis-85-metanaston-anoichta-ton-kalon-limenon/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564418267/minyma-mitsotaki-pros-tin-agkyra-oi-antidraseis-den-epireazoyn-ton-diko-mas-schediasmo/",
-        "https://www.kathimerini.gr/world/564418903/ipa-iran-oi-5-pliges-poy-apeiloyn-tin-techerani-ypo-tin-oikonomiki-piesi-tramp/"
+        "https://www.kathimerini.gr/culture/agenda/564418939/exodos-stin-athina-kai-ektos-tin-pempti-25-8-deelo-kai-kotsiras/",
+        "https://www.kathimerini.gr/world/564418945/mete-frenteriksen-i-apantisi-ston-plastiko-cheiroyrgo-poy-thelise-na-diorthosei-ti-myti-tis/",
+        "https://www.kathimerini.gr/athletics/564418927/pamplo-gkarsia-stin-kivoto-tis-noa/",
+        "https://www.kathimerini.gr/athletics/564418516/agkalia-me-tin-prokrisi-stis-16-i-ethniki-gynaikon/",
+        "https://www.kathimerini.gr/economy/local/564418624/sti-voyli-to-neo-nomoschedio-gia-tin-epaggelmatiki-asfalisi/"
       ],
-      "seen_at_utc": "2026-08-25T06:51:20.477777+00:00"
+      "seen_at_utc": "2026-08-25T07:17:04.699314+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869098/thessaloniki-35hroni-katiggeile-oti-o-en-diastasei-suzugos-tis-ti-viase-kai-tin-kratise-kleidomeni-se-diamerisma/?utm_source=rss",
-      "title": "Θεσσαλονίκη: 35χρονη κατήγγειλε ότι ο εν διαστάσει σύζυγός της τη βίασε και την κράτησε κλειδωμένη σε διαμέρισμα",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: 35ΧΡΟΝΗ ΚΑΤΗΓΓΕΙΛΕ ΟΤΙ Ο ΕΝ ΔΙΑΣΤΑΣΕΙ ΣΥΖΥΓΟΣ ΤΗΣ ΤΗ ΒΙΑΣΕ ΚΑΙ ΤΗΝ ΚΡΑΤΗΣΕ ΚΛΕΙΔΩΜΕΝΗ ΣΕ ΔΙΑΜΕΡΙΣΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1869142/epiheirisi-sti-rodo-katelave-tin-paralia-adoni-kouin-me-obrelokathismata-horis-na-plironei-misthoma/?utm_source=rss",
+      "title": "Επιχείρηση στη Ρόδο «κατέλαβε» την παραλία Άντονι Κουίν με ομπρελοκαθίσματα χωρίς να πληρώνει μίσθωμα",
+      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΣΤΗ ΡΟΔΟ «ΚΑΤΕΛΑΒΕ» ΤΗΝ ΠΑΡΑΛΙΑ ΑΝΤΟΝΙ ΚΟΥΙΝ ΜΕ ΟΜΠΡΕΛΟΚΑΘΙΣΜΑΤΑ ΧΩΡΙΣ ΝΑ ΠΛΗΡΩΝΕΙ ΜΙΣΘΩΜΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869098/thessaloniki-35hroni-katiggeile-oti-o-en-diastasei-suzugos-tis-ti-viase-kai-tin-kratise-kleidomeni-se-diamerisma/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869142/epiheirisi-sti-rodo-katelave-tin-paralia-adoni-kouin-me-obrelokathismata-horis-na-plironei-misthoma/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T05:51:14.867364+00:00"
+      "seen_at_utc": "2026-08-25T07:17:04.699471+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1453773/tragodia-sta-exarheia-vrethike-nekros-sto-spiti-toy-gnostos-zografos-kai-poiitis/",
-      "title": "Τραγωδία στα Εξάρχεια: Βρέθηκε νεκρός στο σπίτι του γνωστός ζωγράφος και ποιητής",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΑ ΕΞΑΡΧΕΙΑ: ΒΡΕΘΗΚΕ ΝΕΚΡΟΣ ΣΤΟ ΣΠΙΤΙ ΤΟΥ ΓΝΩΣΤΟΣ ΖΩΓΡΑΦΟΣ ΚΑΙ ΠΟΙΗΤΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1453790/elas-102-ekat-eyro-gia-tis-psifiakes-ypodomes-mia-prosfora-idio-anadoho-shima-vathyteri-tehnologiki-exartisi/",
+      "title": "ΕΛΑΣ: 102 εκατ. ευρώ για τις ψηφιακές υποδομές – Μία προσφορά, ίδιο ανάδοχο σχήμα, βαθύτερη τεχνολογική εξάρτηση",
+      "normalized_title": "ΕΛΑΣ: 102 ΕΚΑΤ. ΕΥΡΩ ΓΙΑ ΤΙΣ ΨΗΦΙΑΚΕΣ ΥΠΟΔΟΜΕΣ – ΜΙΑ ΠΡΟΣΦΟΡΑ, ΙΔΙΟ ΑΝΑΔΟΧΟ ΣΧΗΜΑ, ΒΑΘΥΤΕΡΗ ΤΕΧΝΟΛΟΓΙΚΗ ΕΞΑΡΤΗΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1453773/tragodia-sta-exarheia-vrethike-nekros-sto-spiti-toy-gnostos-zografos-kai-poiitis/",
-        "https://www.efsyn.gr/stiles/1453762/hamili-diethnis-antagonistikotita-tis-ellinikis-oikonomias/",
-        "https://www.efsyn.gr/ellada/1453758/ios-dytikoy-neiloy-pote-anamenetai-koryfosi-ton-kroysmaton-perissoteres-oi-molynseis-apo-tis-episimes-katagrafes/"
+        "https://www.efsyn.gr/politiki/1453790/elas-102-ekat-eyro-gia-tis-psifiakes-ypodomes-mia-prosfora-idio-anadoho-shima-vathyteri-tehnologiki-exartisi/",
+        "https://www.efsyn.gr/stiles/1453776/to-kleidi-toy-kypriakoy-sta-heria-tis-e-e/",
+        "https://www.efsyn.gr/stiles/1453772/i-thesi-toy-trotski-stin-istoria/",
+        "https://www.efsyn.gr/ellada/1453771/thessaloniki-synelifthi-44hronos-gia-viasmo-kai-xylodarmo-tis-en-diastasei-syzygoy-toy/",
+        "https://www.efsyn.gr/ellada/1453766/koryfonetai-i-epistrofi-ton-adeioyhon-kikilias-i-kinisi-einai-poly-megali-sta-limania-vinteo/"
       ],
-      "seen_at_utc": "2026-08-25T06:51:20.477868+00:00"
+      "seen_at_utc": "2026-08-25T07:17:04.699430+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/25/economy/pou-tha-ftasei-i-timi-tis-venzinis-ta-3-senaria/",
-      "title": "Πού θα φτάσει η τιμή της βενζίνης – Τα 3 σενάρια",
-      "normalized_title": "ΠΟΥ ΘΑ ΦΤΑΣΕΙ Η ΤΙΜΗ ΤΗΣ ΒΕΝΖΙΝΗΣ – ΤΑ 3 ΣΕΝΑΡΙΑ",
+      "url": "https://www.in.gr/2026/08/25/politics/aftodioikisi/enimerosi-gia-epivevaiomeno-krousma-loimoksis-apo-ton-io-tou-dytikou-neilou-sto-dimo-papagou-xolargou/",
+      "title": "Ενημέρωση για επιβεβαιωμένο κρούσμα λοίμωξης από τον ιό του Δυτικού Νείλου στο δήμο Παπάγου-Χολαργού",
+      "normalized_title": "ΕΝΗΜΕΡΩΣΗ ΓΙΑ ΕΠΙΒΕΒΑΙΩΜΕΝΟ ΚΡΟΥΣΜΑ ΛΟΙΜΩΞΗΣ ΑΠΟ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ ΣΤΟ ΔΗΜΟ ΠΑΠΑΓΟΥ-ΧΟΛΑΡΓΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/25/economy/pou-tha-ftasei-i-timi-tis-venzinis-ta-3-senaria/",
-        "https://www.in.gr/2026/08/25/politics/i-sfina-tou-aleksi-tsipra-sti-deth-kai-i-anisyxia-tou-maksimou-i-maxi-gia-tin-atzenta-tis-epomenis-meras/",
-        "https://www.in.gr/2026/08/25/greece/ios-tou-dytikou-neilou-pote-anamenetai-koryfosi-ton-krousmaton-pos-mporoume-na-prostateytoume/",
-        "https://www.in.gr/2026/08/25/sports/othersports/ston-3o-gyro-tou-gouinston-salem-o-tsitsipas-vids/",
-        "https://www.in.gr/2026/08/25/in-science/perivallon-b-science/i-apoleia-dasikis-vlastisis-ayksanei-tis-thermokrasies-edafous-i-sygkrisi-prin-kai-meta-ti-fotia-sto-porto-germeno/"
+        "https://www.in.gr/2026/08/25/politics/aftodioikisi/enimerosi-gia-epivevaiomeno-krousma-loimoksis-apo-ton-io-tou-dytikou-neilou-sto-dimo-papagou-xolargou/",
+        "https://www.in.gr/2026/08/25/language-books/glossa/i-elliniki-glossa-sto-diava-tou-xronou-i-ennoia-tou-ellinismou-meros-d/",
+        "https://www.in.gr/2026/08/25/sports/football/superbet-kypello-elladas-mathainoun-antipalous-oi-16-tis-league-phase/",
+        "https://www.in.gr/2026/08/25/life/music/megk-gouait-i-ntramer-pou-oloi-amfisvitisan-kai-o-xronos-dikaiose/",
+        "https://www.in.gr/2026/08/25/politics/aftodioikisi/thessalia-drasi-enimerosis-ton-mathiton-gia-ti-via-ton-athlitismo-kai-ta-amea/",
+        "https://www.in.gr/2026/08/25/pet-stories/pos-na-prosferoume-mia-eytyxismeni-zoi-ston-skylo-mas-mesa-apo-aples-kathimerines-synitheies/",
+        "https://www.in.gr/2026/08/25/world/pakistan-simantiki-proodos-stis-epafes-me-to-iran-gia-tin-apoklimakosi-tis-krisis/"
       ],
-      "seen_at_utc": "2026-08-25T06:51:20.477832+00:00"
+      "seen_at_utc": "2026-08-25T07:17:04.699373+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T06:51:20.477948+00:00"
+  "updated_at_utc": "2026-08-25T07:17:04.699546+00:00"
 }
