@@ -1,16 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564420955/dyo-nea-programmata-apascholisis-gia-35-500-anergoys/",
-      "title": "Δύο νέα προγράμματα απασχόλησης για 35.500 ανέργους",
-      "normalized_title": "ΔΥΟ ΝΕΑ ΠΡΟΓΡΑΜΜΑΤΑ ΑΠΑΣΧΟΛΗΣΗΣ ΓΙΑ 35.500 ΑΝΕΡΓΟΥΣ",
+      "url": "https://www.kathimerini.gr/economy/international/564421021/prosthetes-dapanes-ypsoys-20-dis-eyro-proteinei-gia-to-2027-o-mateo-salvini/",
+      "title": "Πρόσθετες δαπάνες ύψους 20 δισ. ευρώ προτείνει για το 2027 ο Ματέο Σαλβίνι",
+      "normalized_title": "ΠΡΟΣΘΕΤΕΣ ΔΑΠΑΝΕΣ ΥΨΟΥΣ 20 ΔΙΣ. ΕΥΡΩ ΠΡΟΤΕΙΝΕΙ ΓΙΑ ΤΟ 2027 Ο ΜΑΤΕΟ ΣΑΛΒΙΝΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564420955/dyo-nea-programmata-apascholisis-gia-35-500-anergoys/",
-        "https://www.kathimerini.gr/athletics/564422158/i-katarameni-fanela-me-to-no9/",
-        "https://www.kathimerini.gr/world/564422113/chaos-sto-nepal-i-katarreysi-toy-pagetona-kai-to-senario-toy-seismoy-doryforikes-eikones/",
-        "https://www.kathimerini.gr/economy/564420952/montelo-i-ellada-gia-tin-epimikynsi-tis-toyristikis-sezon-leei-i-fitch/"
+        "https://www.kathimerini.gr/economy/international/564421021/prosthetes-dapanes-ypsoys-20-dis-eyro-proteinei-gia-to-2027-o-mateo-salvini/",
+        "https://www.kathimerini.gr/economy/international/564421018/emporiko-elleimma-14-9-dis-gia-tin-e-e-to-proto-examino/",
+        "https://www.kathimerini.gr/world/564422167/mpari-pyrayloi-akeron-se-fortigo-apo-tin-patra/",
+        "https://www.kathimerini.gr/society/564422140/nepal-miloyn-gia-chiliades-nekroys-martyria-ellina-poy-zei-sto-nepal/",
+        "https://www.kathimerini.gr/economy/international/564421033/i-machi-tis-tentas-stis-akrives-perioches-toy-londinoy/",
+        "https://www.kathimerini.gr/society/564422146/thessaloniki-kataschethikan-pano-apo-3-kila-iroinis/"
       ],
-      "seen_at_utc": "2026-08-26T19:51:14.211443+00:00"
+      "seen_at_utc": "2026-08-26T20:17:03.811102+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,30 +1273,27 @@
       "seen_at_utc": "2026-08-26T19:30:14.937990+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1454967/panathinaikos-o-nistroyp-entopise-ta-lathi-toy-protoy-mats-kai-zita-ti-niki-prokrisi-stin-tsehia/",
-      "title": "Παναθηναϊκός: Ο Νίστρουπ εντόπισε τα λάθη του πρώτου ματς και ζητά τη νίκη-πρόκριση στην Τσεχία",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: Ο ΝΙΣΤΡΟΥΠ ΕΝΤΟΠΙΣΕ ΤΑ ΛΑΘΗ ΤΟΥ ΠΡΩΤΟΥ ΜΑΤΣ ΚΑΙ ΖΗΤΑ ΤΗ ΝΙΚΗ-ΠΡΟΚΡΙΣΗ ΣΤΗΝ ΤΣΕΧΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1454974/pasok-ti-den-mas-lene-gia-to-idiotiko-hreos-to-teaser-tis-m-apostolaki-prin-tin-ekdilosi-sto-serafeio-vinteo/",
+      "title": "ΠΑΣΟΚ: «Τι δεν μας λένε για το ιδιωτικό χρέος» – Το «teaser» της Μ. Αποστολάκη πριν την εκδήλωση στο Σεράφειο [βίντεο]",
+      "normalized_title": "ΠΑΣΟΚ: «ΤΙ ΔΕΝ ΜΑΣ ΛΕΝΕ ΓΙΑ ΤΟ ΙΔΙΩΤΙΚΟ ΧΡΕΟΣ» – ΤΟ «TEASER» ΤΗΣ Μ. ΑΠΟΣΤΟΛΑΚΗ ΠΡΙΝ ΤΗΝ ΕΚΔΗΛΩΣΗ ΣΤΟ ΣΕΡΑΦΕΙΟ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1454967/panathinaikos-o-nistroyp-entopise-ta-lathi-toy-protoy-mats-kai-zita-ti-niki-prokrisi-stin-tsehia/",
-        "https://www.efsyn.gr/kosmos/1454665/volivia-sti-fylaki-o-gkoyroy-tis-akrodexias-gia-apopeira-gynaikoktonias/",
-        "https://www.efsyn.gr/ellada/1454966/traymatistike-heiristria-jet-ski-anoikta-toy-polygyroy-halkidikis/"
+        "https://www.efsyn.gr/politiki/1454974/pasok-ti-den-mas-lene-gia-to-idiotiko-hreos-to-teaser-tis-m-apostolaki-prin-tin-ekdilosi-sto-serafeio-vinteo/",
+        "https://www.efsyn.gr/kosmos/1454973/katehomena-gynaika-omologise-oti-skotose-ton-antra-tis-me-30-mahairies/"
       ],
-      "seen_at_utc": "2026-08-26T19:51:14.211544+00:00"
+      "seen_at_utc": "2026-08-26T20:17:03.811202+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/politics/politiki-grammateia/androulakis-apostolaki-ti-den-mas-lene-gia-to-xreos-anyperaspisti-i-a-katoikia-iliggiodi-kerdi-gia-tis-trapezes/",
-      "title": "Ανδρουλάκης-Αποστολάκη: Τι δεν μας λένε για το χρέος – Ανυπεράσπιστη η α’ κατοικία, ιλιγγιώδη κέρδη για τις τράπεζες",
-      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ-ΑΠΟΣΤΟΛΑΚΗ: ΤΙ ΔΕΝ ΜΑΣ ΛΕΝΕ ΓΙΑ ΤΟ ΧΡΕΟΣ – ΑΝΥΠΕΡΑΣΠΙΣΤΗ Η Α’ ΚΑΤΟΙΚΙΑ, ΙΛΙΓΓΙΩΔΗ ΚΕΡΔΗ ΓΙΑ ΤΙΣ ΤΡΑΠΕΖΕΣ",
+      "url": "https://www.in.gr/2026/08/26/sports/on-field/o-alvares-den-apantise-sto-tilefonima-tou-arteta/",
+      "title": "Ο Άλβαρες δεν απάντησε στο τηλεφώνημα του Αρτέτα",
+      "normalized_title": "Ο ΑΛΒΑΡΕΣ ΔΕΝ ΑΠΑΝΤΗΣΕ ΣΤΟ ΤΗΛΕΦΩΝΗΜΑ ΤΟΥ ΑΡΤΕΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/androulakis-apostolaki-ti-den-mas-lene-gia-to-xreos-anyperaspisti-i-a-katoikia-iliggiodi-kerdi-gia-tis-trapezes/",
-        "https://www.in.gr/2026/08/26/world/ntoli-parton-pos-to-9-to-5-tin-ekane-ergasiako-kai-feministiko-eidolo-ti-eipan-ta-syndikata-gia-aytin/",
-        "https://www.in.gr/2026/08/26/world/i-kina-apeilei-me-antipoina-tis-ipa-gia-tis-kyroseis-enantion-kinezikon-etaireion-me-aformi-to-iran/",
-        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/pyra-elas-stin-kyvernisi-gia-tis-gynaikoktonies-kreitton-to-sigan-to-thrasos-den-ypokathista-tin-eythyni/",
-        "https://www.in.gr/2026/08/26/world/o-ploutos-stin-eksousia-pos-3-000-disekatommyriouxoi-diamorfonoun-tis-pagkosmies-apofaseis/",
-        "https://www.in.gr/2026/08/26/world/nepal-i-foniki-plimmyra-pithanos-proklithike-apo-katarreysi-pagetona/"
+        "https://www.in.gr/2026/08/26/sports/on-field/o-alvares-den-apantise-sto-tilefonima-tou-arteta/",
+        "https://www.in.gr/2026/08/26/world/stin-argentini-tou-milei-oi-polites-pnigontai-sta-kokkina-daneia-kai-tin-ypotimisi-tou-peso/",
+        "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-o-vargka-skorarei-gia-deyteri-fora-kai-kanei-to-3-0-gia-tin-enosi-vid/",
+        "https://www.in.gr/2026/08/26/world/o-ploutos-stin-eksousia-pos-3-000-disekatommyriouxoi-diamorfonoun-tis-pagkosmies-apofaseis/"
       ],
-      "seen_at_utc": "2026-08-26T19:51:14.211506+00:00"
+      "seen_at_utc": "2026-08-26T20:17:03.811145+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T19:51:14.211655+00:00"
+  "updated_at_utc": "2026-08-26T20:17:03.811279+00:00"
 }
