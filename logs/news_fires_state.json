@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564420991/startups-ellinon-xechorizoyn-stis-inomenes-politeies/",
-      "title": "Startups Ελλήνων ξεχωρίζουν στις Ηνωμένες Πολιτείες",
-      "normalized_title": "STARTUPS ΕΛΛΗΝΩΝ ΞΕΧΩΡΙΖΟΥΝ ΣΤΙΣ ΗΝΩΜΕΝΕΣ ΠΟΛΙΤΕΙΕΣ",
+      "url": "https://www.kathimerini.gr/economy/international/564421081/ta-myrmigkia-tis-n-koreas-echasan-tis-oikonomies-mias-zois/",
+      "title": "Τα «μυρμήγκια» της Ν. Κορέας έχασαν τις οικονομίες μιας ζωής",
+      "normalized_title": "ΤΑ «ΜΥΡΜΗΓΚΙΑ» ΤΗΣ Ν. ΚΟΡΕΑΣ ΕΧΑΣΑΝ ΤΙΣ ΟΙΚΟΝΟΜΙΕΣ ΜΙΑΣ ΖΩΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564420991/startups-ellinon-xechorizoyn-stis-inomenes-politeies/"
+        "https://www.kathimerini.gr/economy/international/564421081/ta-myrmigkia-tis-n-koreas-echasan-tis-oikonomies-mias-zois/",
+        "https://www.kathimerini.gr/world/564421891/pethane-o-ithopoios-tim-kari-se-ilikia-80-eton/"
       ],
-      "seen_at_utc": "2026-08-26T16:51:23.580028+00:00"
+      "seen_at_utc": "2026-08-26T17:17:03.618054+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,26 +1269,27 @@
       "seen_at_utc": "2026-08-26T16:51:23.580136+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454918/o-haris-doykas-zita-tin-amesi-katedafisi-toy-ktirioy-toy-badminton-i-omofoni-apofasi-toy-d-s-athinaion/",
-      "title": "Ο Χάρης Δούκας ζητά την άμεση κατεδάφιση του κτιρίου του Badminton – Η ομόφωνη απόφαση του Δ.Σ. Αθηναίων",
-      "normalized_title": "Ο ΧΑΡΗΣ ΔΟΥΚΑΣ ΖΗΤΑ ΤΗΝ ΑΜΕΣΗ ΚΑΤΕΔΑΦΙΣΗ ΤΟΥ ΚΤΙΡΙΟΥ ΤΟΥ BADMINTON – Η ΟΜΟΦΩΝΗ ΑΠΟΦΑΣΗ ΤΟΥ Δ.Σ. ΑΘΗΝΑΙΩΝ",
+      "url": "https://www.efsyn.gr/kosmos/1454921/meta-ti-vretania-kai-oi-ipa-haraktirizoyn-tromokratiki-tin-organosi-palestine-action/",
+      "title": "Μετά τη Βρετανία και οι ΗΠΑ χαρακτηρίζουν «τρομοκρατική» την οργάνωση Palestine Action",
+      "normalized_title": "ΜΕΤΑ ΤΗ ΒΡΕΤΑΝΙΑ ΚΑΙ ΟΙ ΗΠΑ ΧΑΡΑΚΤΗΡΙΖΟΥΝ «ΤΡΟΜΟΚΡΑΤΙΚΗ» ΤΗΝ ΟΡΓΑΝΩΣΗ PALESTINE ACTION",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454918/o-haris-doykas-zita-tin-amesi-katedafisi-toy-ktirioy-toy-badminton-i-omofoni-apofasi-toy-d-s-athinaion/",
-        "https://www.efsyn.gr/ellada/1454911/kilkis-fotia-se-agrotodasiki-ektasi-epiheiroyn-enaeria-mesa/",
-        "https://www.efsyn.gr/kosmos/1454895/nyhterino-mploko-gia-toys-anilikoys-sta-social-ti-provlepei-o-symvivasmos-ton-17-dis-dolarion-tis-meta/",
-        "https://www.efsyn.gr/athlitismos/1454540/tsavi-i-triti-epilogi/"
+        "https://www.efsyn.gr/kosmos/1454921/meta-ti-vretania-kai-oi-ipa-haraktirizoyn-tromokratiki-tin-organosi-palestine-action/",
+        "https://www.efsyn.gr/politiki/1454914/kontra-kerameos-elas-gia-tis-syntaxeis-hireias-i-anakoinosi-toys-apotelei-mnimeio-politikoy-thrasoys/"
       ],
-      "seen_at_utc": "2026-08-26T16:51:23.580112+00:00"
+      "seen_at_utc": "2026-08-26T17:17:03.618140+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/life/culture-live/apo-to-rocky-horror-show-sto-monos-sto-spiti-2-pethane-o-gnostos-ithopoios-tim-kari/",
-      "title": "Από το Rocky Horror Show στο Μόνος στο Σπίτι 2: Πέθανε ο γνωστός ηθοποιός Τιμ Κάρι",
-      "normalized_title": "ΑΠΟ ΤΟ ROCKY HORROR SHOW ΣΤΟ ΜΟΝΟΣ ΣΤΟ ΣΠΙΤΙ 2: ΠΕΘΑΝΕ Ο ΓΝΩΣΤΟΣ ΗΘΟΠΟΙΟΣ ΤΙΜ ΚΑΡΙ",
+      "url": "https://www.in.gr/2026/08/26/sports/football/ston-olympiakos-mexri-to-2029-o-zota-silva/",
+      "title": "Στον Ολυμπιακό μέχρι το 2029 ο Ζότα Σίλβα",
+      "normalized_title": "ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ ΜΕΧΡΙ ΤΟ 2029 Ο ΖΟΤΑ ΣΙΛΒΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/life/culture-live/apo-to-rocky-horror-show-sto-monos-sto-spiti-2-pethane-o-gnostos-ithopoios-tim-kari/"
+        "https://www.in.gr/2026/08/26/sports/football/ston-olympiakos-mexri-to-2029-o-zota-silva/",
+        "https://www.in.gr/2026/08/26/world/ispania-synelifthi-o-metr-ton-apodraseon-eixe-apodrasei-4-fores-apo-ti-fylaki/",
+        "https://www.in.gr/2026/08/26/sports/basketball/mpasketmpolistria-apo-tin-oukrania-apoxorise-apo-to-panepistimio-lsu-epeidi-apektise-rosida-sympaiktria/",
+        "https://www.in.gr/2026/08/26/economy/oikonomikes-eidiseis/tourismos-ypsiles-plirotites-se-oreinous-proorismous/"
       ],
-      "seen_at_utc": "2026-08-26T16:51:23.580080+00:00"
+      "seen_at_utc": "2026-08-26T17:17:03.618099+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T16:51:23.580221+00:00"
+  "updated_at_utc": "2026-08-26T17:17:03.618213+00:00"
 }
