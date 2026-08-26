@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/ekpaideysi/564420547/ligoteroi-kata-21-000-oi-mathites-se-mia-trietia/",
-      "title": "Λιγότεροι κατά 21.000 οι μαθητές σε μία τριετία",
-      "normalized_title": "ΛΙΓΟΤΕΡΟΙ ΚΑΤΑ 21.000 ΟΙ ΜΑΘΗΤΕΣ ΣΕ ΜΙΑ ΤΡΙΕΤΙΑ",
+      "url": "https://www.kathimerini.gr/athletics/564422014/panathinaikos-eftase-stin-athina-o-loyza-sta-7-ekat-eyro-to-kostos-tis-metagrafis/",
+      "title": "Παναθηναϊκός: Εφτασε στην Αθήνα ο Λούζα, στα 7 εκατ. ευρώ το κόστος της μεταγραφής",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΕΦΤΑΣΕ ΣΤΗΝ ΑΘΗΝΑ Ο ΛΟΥΖΑ, ΣΤΑ 7 ΕΚΑΤ. ΕΥΡΩ ΤΟ ΚΟΣΤΟΣ ΤΗΣ ΜΕΤΑΓΡΑΦΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/ekpaideysi/564420547/ligoteroi-kata-21-000-oi-mathites-se-mia-trietia/"
+        "https://www.kathimerini.gr/athletics/564422014/panathinaikos-eftase-stin-athina-o-loyza-sta-7-ekat-eyro-to-kostos-tis-metagrafis/",
+        "https://www.kathimerini.gr/society/564420604/pos-proetoimazei-o-kasidiaris-ti-dimioyrgia-kommatos/"
       ],
-      "seen_at_utc": "2026-08-26T17:29:58.138455+00:00"
+      "seen_at_utc": "2026-08-26T17:51:14.232452+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869940/edopistikan-alepoudes-stis-egatastaseis-tou-oaka-odigies-se-athlites-athloumenous-kai-episkeptes/?utm_source=rss",
-      "title": "Εντοπίστηκαν αλεπούδες στις εγκαταστάσεις του ΟΑΚΑ, οδηγίες σε αθλητές, αθλούμενους και επισκέπτες",
-      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΑΝ ΑΛΕΠΟΥΔΕΣ ΣΤΙΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΤΟΥ ΟΑΚΑ, ΟΔΗΓΙΕΣ ΣΕ ΑΘΛΗΤΕΣ, ΑΘΛΟΥΜΕΝΟΥΣ ΚΑΙ ΕΠΙΣΚΕΠΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1869963/prostima-hiliadon-euro-se-epiheiriseis-gia-authairetes-katalipseis-aigialou/?utm_source=rss",
+      "title": "Αυστηροί έλεγχοι στις παραλίες: Έπεσαν τσουχτερά πρόστιμα άνω των 390.000 ευρώ, σφράγισαν καντίνες σε Ρόδο, Καβάλα, Σκιάθο και Κέρκυρα",
+      "normalized_title": "ΑΥΣΤΗΡΟΙ ΕΛΕΓΧΟΙ ΣΤΙΣ ΠΑΡΑΛΙΕΣ: ΕΠΕΣΑΝ ΤΣΟΥΧΤΕΡΑ ΠΡΟΣΤΙΜΑ ΑΝΩ ΤΩΝ 390.000 ΕΥΡΩ, ΣΦΡΑΓΙΣΑΝ ΚΑΝΤΙΝΕΣ ΣΕ ΡΟΔΟ, ΚΑΒΑΛΑ, ΣΚΙΑΘΟ ΚΑΙ ΚΕΡΚΥΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869940/edopistikan-alepoudes-stis-egatastaseis-tou-oaka-odigies-se-athlites-athloumenous-kai-episkeptes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869963/prostima-hiliadon-euro-se-epiheiriseis-gia-authairetes-katalipseis-aigialou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869962/kupseli-stous-tehnikous-sumvoulous-ton-katoikon-ta-stoiheia-tis-elliniko-metro-gia-tis-zimies/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T16:51:23.580136+00:00"
+      "seen_at_utc": "2026-08-26T17:51:14.232608+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454929/pempti-imera-kaysona-sta-ypsi-o-ydrargyros-pano-apo-41c-i-megisti-thermokrasia/",
-      "title": "Πέμπτη ημέρα καύσωνα: Στα ύψη ο υδράργυρος, πάνω από 41°C η μέγιστη θερμοκρασία",
-      "normalized_title": "ΠΕΜΠΤΗ ΗΜΕΡΑ ΚΑΥΣΩΝΑ: ΣΤΑ ΥΨΗ Ο ΥΔΡΑΡΓΥΡΟΣ, ΠΑΝΩ ΑΠΟ 41°C Η ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1454932/elegktiko-synedrio-o-v-papageorgopoylos-kaleitai-na-katavalei-82-ekat-eyro-gia-to-elleimma-ston-dimo-thessalonikis/",
+      "title": "Ελεγκτικό Συνέδριο: Ο Β. Παπαγεωργόπουλος καλείται να καταβάλει 8,2 εκατ. ευρώ για το έλλειμμα στον δήμο Θεσσαλονίκης",
+      "normalized_title": "ΕΛΕΓΚΤΙΚΟ ΣΥΝΕΔΡΙΟ: Ο Β. ΠΑΠΑΓΕΩΡΓΟΠΟΥΛΟΣ ΚΑΛΕΙΤΑΙ ΝΑ ΚΑΤΑΒΑΛΕΙ 8,2 ΕΚΑΤ. ΕΥΡΩ ΓΙΑ ΤΟ ΕΛΛΕΙΜΜΑ ΣΤΟΝ ΔΗΜΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454929/pempti-imera-kaysona-sta-ypsi-o-ydrargyros-pano-apo-41c-i-megisti-thermokrasia/"
+        "https://www.efsyn.gr/ellada/1454932/elegktiko-synedrio-o-v-papageorgopoylos-kaleitai-na-katavalei-82-ekat-eyro-gia-to-elleimma-ston-dimo-thessalonikis/",
+        "https://www.efsyn.gr/politiki/1454933/niotho-dikaiomeni-gia-to-parasimo-i-akrita-apanta-gia-tin-arnisi-tis-nd-na-ti-stirixei/"
       ],
-      "seen_at_utc": "2026-08-26T17:29:58.138552+00:00"
+      "seen_at_utc": "2026-08-26T17:51:14.232564+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/go-fun/fizz/mixalis-xatzigiannis-pethane-i-agapimeni-skylitsa-tou-to-sygkinitiko-minyma-tou/",
-      "title": "Μιχάλης Χατζηγιάννης: Πέθανε η αγαπημένη σκυλίτσα του - Το συγκινητικό μήνυμα του",
-      "normalized_title": "ΜΙΧΑΛΗΣ ΧΑΤΖΗΓΙΑΝΝΗΣ: ΠΕΘΑΝΕ Η ΑΓΑΠΗΜΕΝΗ ΣΚΥΛΙΤΣΑ ΤΟΥ - ΤΟ ΣΥΓΚΙΝΗΤΙΚΟ ΜΗΝΥΜΑ ΤΟΥ",
+      "url": "https://www.in.gr/2026/08/26/go-fun/fizz/trannos-diakopes-stin-paro-kai-nea-mousika-sxedia-i-synantisi-me-ton-n-n-n/",
+      "title": "Trannos: Διακοπές στην Πάρο και νέα μουσικά σχέδια – Η συνάντηση με τον N.N.N.",
+      "normalized_title": "TRANNOS: ΔΙΑΚΟΠΕΣ ΣΤΗΝ ΠΑΡΟ ΚΑΙ ΝΕΑ ΜΟΥΣΙΚΑ ΣΧΕΔΙΑ – Η ΣΥΝΑΝΤΗΣΗ ΜΕ ΤΟΝ N.N.N.",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/go-fun/fizz/mixalis-xatzigiannis-pethane-i-agapimeni-skylitsa-tou-to-sygkinitiko-minyma-tou/"
+        "https://www.in.gr/2026/08/26/go-fun/fizz/trannos-diakopes-stin-paro-kai-nea-mousika-sxedia-i-synantisi-me-ton-n-n-n/",
+        "https://www.in.gr/2026/08/26/greece/gynaikoktonia-sti-rodopi-tin-skotose-mia-mera-prin-tin-aitisi-diazygiou-farmakeytiki-agogi-lamvane-o-53xronos/",
+        "https://www.in.gr/2026/08/26/world/vinteo-sok-apo-to-nepal-xeimarros-katapinei-se-3-deyterolepta-dekades-anthropous-fovoi-gia-xiliades-nekrous/",
+        "https://www.in.gr/2026/08/26/sports/football/nistroup-tha-kerdisoume-an-ftasoume-sto-epipedo-mas/",
+        "https://www.in.gr/2026/08/26/world/vivliki-katastrofi-sto-nepal-egine-mesa-se-5-lepta-leei-ellinas-pou-zei-ekei/",
+        "https://www.in.gr/2026/08/26/sports/football/olympiakos-kapnos-ta-eisitiria-gia-tripoli/"
       ],
-      "seen_at_utc": "2026-08-26T17:29:58.138509+00:00"
+      "seen_at_utc": "2026-08-26T17:51:14.232507+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T17:29:58.138627+00:00"
+  "updated_at_utc": "2026-08-26T17:51:14.232681+00:00"
 }
