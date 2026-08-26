@@ -1,21 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564414631/doyreioi-ippoi-stin-e-e/",
-      "title": "Δούρειοι ίπποι στην Ε.Ε.",
-      "normalized_title": "ΔΟΥΡΕΙΟΙ ΙΠΠΟΙ ΣΤΗΝ Ε.Ε.",
+      "url": "https://www.kathimerini.gr/culture/agenda/564421495/exodos-stin-athina-kai-ektos-tin-tetarti-26-8-buzz-kull-kai-andreas-polyzogopoylos/",
+      "title": "Εξοδος στην Αθήνα (και εκτός) την Τετάρτη 26/8: Buzz Kull και Ανδρέας Πολυζωγόπουλος",
+      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ (ΚΑΙ ΕΚΤΟΣ) ΤΗΝ ΤΕΤΑΡΤΗ 26/8: BUZZ KULL ΚΑΙ ΑΝΔΡΕΑΣ ΠΟΛΥΖΩΓΟΠΟΥΛΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564414631/doyreioi-ippoi-stin-e-e/",
-        "https://www.kathimerini.gr/opinion/564420493/vizes-ochi-pia-chryses/",
-        "https://www.kathimerini.gr/k/gastronomos/564420286/klasika-gemista-i-syntagi-poy-kanoyme-oloi-ston-gastronomo/",
-        "https://www.kathimerini.gr/opinion/564420487/na-min-tempeliasei-to-myalo-mas/",
-        "https://www.kathimerini.gr/opinion/564420901/mia-pliktiki-politiki-panigyris/",
-        "https://www.kathimerini.gr/opinion/564420898/tom-mparak-parka/",
-        "https://www.kathimerini.gr/opinion/564420742/mantona-sose-mas/",
-        "https://www.kathimerini.gr/world/564421435/exafanisi-ispanoy-epicheirimatia-einai-poly-dyskolo-alla-echoyme-elpida-leei-o-gios-toy/",
-        "https://www.kathimerini.gr/opinion/564421441/i-mantona-mas-agapaei-emeis-ti-agapame/"
+        "https://www.kathimerini.gr/culture/agenda/564421495/exodos-stin-athina-kai-ektos-tin-tetarti-26-8-buzz-kull-kai-andreas-polyzogopoylos/",
+        "https://www.kathimerini.gr/politics/564421486/syriza-i-elena-akrita-sti-thesi-tis-antiproedroy-tis-voylis/"
       ],
-      "seen_at_utc": "2026-08-26T10:17:06.413333+00:00"
+      "seen_at_utc": "2026-08-26T10:30:11.865083+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,37 +1260,32 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869735/hania-andras-autopurovolithike-mesa-sto-autokinito-tou-metaferthike-sto-nosokomeio/?utm_source=rss",
-      "title": "Χανιά: Άνδρας αυτοπυροβολήθηκε μέσα στο αυτοκίνητό του, μεταφέρθηκε στο Νοσοκομείο",
-      "normalized_title": "ΧΑΝΙΑ: ΑΝΔΡΑΣ ΑΥΤΟΠΥΡΟΒΟΛΗΘΗΚΕ ΜΕΣΑ ΣΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ, ΜΕΤΑΦΕΡΘΗΚΕ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1869744/neodioristoi-ekpaideutikoi-pou-vriskoun-spiti-poso-plironoun-kai-poioi-dimoi-tous-voithoun/?utm_source=rss",
+      "title": "Νεοδιόριστοι εκπαιδευτικοί: Πού βρίσκουν σπίτι, πόσο πληρώνουν και ποιοι Δήμοι τους βοηθούν",
+      "normalized_title": "ΝΕΟΔΙΟΡΙΣΤΟΙ ΕΚΠΑΙΔΕΥΤΙΚΟΙ: ΠΟΥ ΒΡΙΣΚΟΥΝ ΣΠΙΤΙ, ΠΟΣΟ ΠΛΗΡΩΝΟΥΝ ΚΑΙ ΠΟΙΟΙ ΔΗΜΟΙ ΤΟΥΣ ΒΟΗΘΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869735/hania-andras-autopurovolithike-mesa-sto-autokinito-tou-metaferthike-sto-nosokomeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869744/neodioristoi-ekpaideutikoi-pou-vriskoun-spiti-poso-plironoun-kai-poioi-dimoi-tous-voithoun/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T10:17:06.413431+00:00"
+      "seen_at_utc": "2026-08-26T10:30:11.865193+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1454667/sholiki-stegi/",
-      "title": "Σχολική Στέγη",
-      "normalized_title": "ΣΧΟΛΙΚΗ ΣΤΕΓΗ",
+      "url": "https://www.efsyn.gr/politiki/1454677/elas-gia-anartisi-mitsotaki-anthrakes-o-thisayros-gia-tis-syntaxeis-hireias/",
+      "title": "ΕΛΑΣ για ανάρτηση Μητσοτάκη: Άνθρακες ο θησαυρός για τις συντάξεις χηρείας",
+      "normalized_title": "ΕΛΑΣ ΓΙΑ ΑΝΑΡΤΗΣΗ ΜΗΤΣΟΤΑΚΗ: ΑΝΘΡΑΚΕΣ Ο ΘΗΣΑΥΡΟΣ ΓΙΑ ΤΙΣ ΣΥΝΤΑΞΕΙΣ ΧΗΡΕΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1454667/sholiki-stegi/",
-        "https://www.efsyn.gr/kosmos/1454658/sti-mosha-o-dieythyntis-tis-cia-tzon-ratklif-den-synantise-ton-poytin-leei-to-kremlino/"
+        "https://www.efsyn.gr/politiki/1454677/elas-gia-anartisi-mitsotaki-anthrakes-o-thisayros-gia-tis-syntaxeis-hireias/"
       ],
-      "seen_at_utc": "2026-08-26T10:17:06.413395+00:00"
+      "seen_at_utc": "2026-08-26T10:30:11.865171+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/greece/xania-fouskoti-varka-me-dyo-efivous-parasyrthike-sti-thalassa/",
-      "title": "Φουσκωτή βάρκα με δύο εφήβους παρασύρθηκε στη θάλασσα",
-      "normalized_title": "ΦΟΥΣΚΩΤΗ ΒΑΡΚΑ ΜΕ ΔΥΟ ΕΦΗΒΟΥΣ ΠΑΡΑΣΥΡΘΗΚΕ ΣΤΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.in.gr/2026/08/26/politics/kke-o-mitsotakis-exei-to-thrasos-na-parousiazei-os-paroxi-ti-mi-perikopi-ki-ayto-en-merei-ton-syntakseon-xireias/",
+      "title": "ΚΚΕ: Ο Μητσοτάκης έχει το θράσος να παρουσιάζει ως «παροχή» τη μη περικοπή – κι αυτό εν μέρει – των συντάξεων χηρείας",
+      "normalized_title": "ΚΚΕ: Ο ΜΗΤΣΟΤΑΚΗΣ ΕΧΕΙ ΤΟ ΘΡΑΣΟΣ ΝΑ ΠΑΡΟΥΣΙΑΖΕΙ ΩΣ «ΠΑΡΟΧΗ» ΤΗ ΜΗ ΠΕΡΙΚΟΠΗ – ΚΙ ΑΥΤΟ ΕΝ ΜΕΡΕΙ – ΤΩΝ ΣΥΝΤΑΞΕΩΝ ΧΗΡΕΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/greece/xania-fouskoti-varka-me-dyo-efivous-parasyrthike-sti-thalassa/",
-        "https://www.in.gr/2026/08/26/politics/aftodioikisi/paremvasi-tou-dimou-agrafon-gia-tin-prostasia-ton-elatodason-tis-eyrytanias/",
-        "https://www.in.gr/2026/08/26/sports/football/stravose-me-postekoglou-o-kristiano-ronalnto-allagi-sto-imixrono-kai-xeironomies-vid/",
-        "https://www.in.gr/2026/08/26/life/woman/gkislein-maksgouel-asynartiti-i-prosfygi-tis-kata-tis-katadikis-paramenei-sti-fylaki/",
-        "https://www.in.gr/2026/08/26/greece/neos-kosmos-agrio-epeisodio-se-synergeio-aytokiniton/"
+        "https://www.in.gr/2026/08/26/politics/kke-o-mitsotakis-exei-to-thrasos-na-parousiazei-os-paroxi-ti-mi-perikopi-ki-ayto-en-merei-ton-syntakseon-xireias/"
       ],
-      "seen_at_utc": "2026-08-26T10:17:06.413371+00:00"
+      "seen_at_utc": "2026-08-26T10:30:11.865143+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T10:17:06.413495+00:00"
+  "updated_at_utc": "2026-08-26T10:30:11.865263+00:00"
 }
