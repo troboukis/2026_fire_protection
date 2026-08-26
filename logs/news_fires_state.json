@@ -1,17 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564420727/treis-fotografies/",
-      "title": "Τρεις φωτογραφίες",
-      "normalized_title": "ΤΡΕΙΣ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.kathimerini.gr/society/564421210/fotia-se-diamerisma-sti-sparti-enoikoi-egklovistikan-stoys-kapnoys/",
+      "title": "Φωτιά σε διαμέρισμα στη Σπάρτη – Ενοικοι εγκλωβίστηκαν στους καπνούς",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗ ΣΠΑΡΤΗ – ΕΝΟΙΚΟΙ ΕΓΚΛΩΒΙΣΤΗΚΑΝ ΣΤΟΥΣ ΚΑΠΝΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564420727/treis-fotografies/",
-        "https://www.kathimerini.gr/opinion/564420724/i-grammi-poy-tremoyn-oles-oi-kyverniseis/",
-        "https://www.kathimerini.gr/opinion/564420739/gynaikoktonies-sti-siopi/",
-        "https://www.kathimerini.gr/opinion/564420538/me-feidia-gia-karystianoy/",
-        "https://www.kathimerini.gr/society/564421180/prosopikos-voithos-anoigoyn-simera-oi-aitiseis-oi-dikaioychoi-kai-ta-posa/"
+        "https://www.kathimerini.gr/society/564421210/fotia-se-diamerisma-sti-sparti-enoikoi-egklovistikan-stoys-kapnoys/",
+        "https://www.kathimerini.gr/politics/564420583/entos-kai-ektos-oi-scheseis-me-tin-oyasigkton-sto-proskinio/",
+        "https://www.kathimerini.gr/society/564421192/dyschereia-ston-kifiso-logo-anatropis-dikykloy-traymatistike-o-odigos/",
+        "https://www.kathimerini.gr/world/564421183/notia-korea-synagermos-meta-tin-eisodo-rosikon-aeroskafon-sti-zoni-aeramynas/",
+        "https://www.kathimerini.gr/columns/564420163/to-megalo-xekatharisma-sto-dimosio-o-anonymos-symvoylos-i-panakrivi-priza-kai-poioi-gyrisan-tin-plati-ston-eot/",
+        "https://www.kathimerini.gr/opinion/564420700/ta-paliopaida-t-atithasa-2/"
       ],
-      "seen_at_utc": "2026-08-26T05:30:06.356368+00:00"
+      "seen_at_utc": "2026-08-26T05:51:10.689410+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,26 +1274,28 @@
       "seen_at_utc": "2026-08-26T05:17:05.271643+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1454439/deth-oikonomikes-proties-stis-teleytaies-theseis/",
-      "title": "ΔΕΘ: Οικονομικές «πρωτιές» στις τελευταίες θέσεις",
-      "normalized_title": "ΔΕΘ: ΟΙΚΟΝΟΜΙΚΕΣ «ΠΡΩΤΙΕΣ» ΣΤΙΣ ΤΕΛΕΥΤΑΙΕΣ ΘΕΣΕΙΣ",
+      "url": "https://www.efsyn.gr/ellada/1454443/agios-panteleimonas-empristiki-epithesi-se-kafe-petaxan-dyo-molotof-kai-exafanistikan/",
+      "title": "Άγιος Παντελεήμονας: Εμπρηστική επίθεση σε καφέ – Πέταξαν δύο μολότοφ και εξαφανίστηκαν",
+      "normalized_title": "ΑΓΙΟΣ ΠΑΝΤΕΛΕΗΜΟΝΑΣ: ΕΜΠΡΗΣΤΙΚΗ ΕΠΙΘΕΣΗ ΣΕ ΚΑΦΕ – ΠΕΤΑΞΑΝ ΔΥΟ ΜΟΛΟΤΟΦ ΚΑΙ ΕΞΑΦΑΝΙΣΤΗΚΑΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1454439/deth-oikonomikes-proties-stis-teleytaies-theseis/",
-        "https://www.efsyn.gr/life/1454419/ntoli-parton-den-tha-yparxei-pote-alli-san-esena-apo-ton-elton-tzon-mehri-ton-eminem-tin-apohairetoyn/"
+        "https://www.efsyn.gr/ellada/1454443/agios-panteleimonas-empristiki-epithesi-se-kafe-petaxan-dyo-molotof-kai-exafanistikan/",
+        "https://www.efsyn.gr/ellada/1454449/thanatiforo-trohaio-sto-koropi-nekros-27hronos-motosikletistis-synelifthi-34hroni/",
+        "https://www.efsyn.gr/politiki/1454431/sto-foyl-oi-mihanes-toy-syriza-eimaste-parontes/"
       ],
-      "seen_at_utc": "2026-08-26T05:30:06.356463+00:00"
+      "seen_at_utc": "2026-08-26T05:51:10.689501+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/economy/oikonomikes-eidiseis/tropopoiitikes-diloseis-pote-ligei-i-prothesmia-se-ti-aforoun-poioi-kindyneyoun-me-prostima/",
-      "title": "Πότε λήγει η προθεσμία για τις τροποποιητικές δηλώσεις - Σε τι αφορούν, ποιοι κινδυνεύουν με πρόστιμα",
-      "normalized_title": "ΠΟΤΕ ΛΗΓΕΙ Η ΠΡΟΘΕΣΜΙΑ ΓΙΑ ΤΙΣ ΤΡΟΠΟΠΟΙΗΤΙΚΕΣ ΔΗΛΩΣΕΙΣ - ΣΕ ΤΙ ΑΦΟΡΟΥΝ, ΠΟΙΟΙ ΚΙΝΔΥΝΕΥΟΥΝ ΜΕ ΠΡΟΣΤΙΜΑ",
+      "url": "https://www.in.gr/2026/08/26/greece/sparti-fotia-se-diamerisma-enoikoi-egklovistikan-apo-tous-kapnous/",
+      "title": "Φωτιά σε διαμέρισμα - Ένοικοι εγκλωβίστηκαν από τους καπνούς",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ - ΕΝΟΙΚΟΙ ΕΓΚΛΩΒΙΣΤΗΚΑΝ ΑΠΟ ΤΟΥΣ ΚΑΠΝΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/economy/oikonomikes-eidiseis/tropopoiitikes-diloseis-pote-ligei-i-prothesmia-se-ti-aforoun-poioi-kindyneyoun-me-prostima/",
-        "https://www.in.gr/2026/08/26/world/ipa-andras-skotose-8-syggeneis-tou-se-oikogeneiako-deipno-kai-aytoktonise/",
-        "https://www.in.gr/2026/08/26/sports/othersports/o-giousein-mpolt-pantreyetai-i-protasi-gamou-sta-40a-genethlia-tou/"
+        "https://www.in.gr/2026/08/26/greece/sparti-fotia-se-diamerisma-enoikoi-egklovistikan-apo-tous-kapnous/",
+        "https://www.in.gr/2026/08/26/sports/football/trela-sto-meksiko-gia-to-myrmigki-paizoun-pantou-vinteo-me-olympiako-kai-gkonsales/",
+        "https://www.in.gr/2026/08/26/life/culture-live/dimitris-kokotas-dimosia-dapani-tou-agiou-dimitriou-i-kideia-tou-tragoudisti/",
+        "https://www.in.gr/2026/08/26/editorial/i-xora-xreiazetai-neo-afigima-kai-ayto-den-mporei-para-na-einai-proodeytiko/"
       ],
-      "seen_at_utc": "2026-08-26T05:30:06.356435+00:00"
+      "seen_at_utc": "2026-08-26T05:51:10.689460+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T05:30:06.356532+00:00"
+  "updated_at_utc": "2026-08-26T05:51:10.689579+00:00"
 }
