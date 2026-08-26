@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564398920/eortologio-poioi-giortazoyn-simera-26-aygoystoy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 26 Αυγούστου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 26 ΑΥΓΟΥΣΤΟΥ",
+      "url": "https://www.kathimerini.gr/society/564421102/kairos-kai-simera-stoys-39-vathmoys-o-ydrargyros-poy-anamenontai-vroches/",
+      "title": "Καιρός: Και σήμερα στους 39 βαθμούς ο υδράργυρος – Πού αναμένονται βροχές",
+      "normalized_title": "ΚΑΙΡΟΣ: ΚΑΙ ΣΗΜΕΡΑ ΣΤΟΥΣ 39 ΒΑΘΜΟΥΣ Ο ΥΔΡΑΡΓΥΡΟΣ – ΠΟΥ ΑΝΑΜΕΝΟΝΤΑΙ ΒΡΟΧΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564398920/eortologio-poioi-giortazoyn-simera-26-aygoystoy/"
+        "https://www.kathimerini.gr/society/564421102/kairos-kai-simera-stoys-39-vathmoys-o-ydrargyros-poy-anamenontai-vroches/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564420580/i-toyrkia-apaitei-na-dosei-adeia-gia-to-kalodio/"
       ],
-      "seen_at_utc": "2026-08-25T21:17:14.383092+00:00"
+      "seen_at_utc": "2026-08-26T04:17:22.539072+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,70 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869537/sunolika-39-agrotodasikes-purkagies-tin-triti-i-katastasi-sta-metopa/?utm_source=rss",
-      "title": "Συνολικά 39 αγροτοδασικές πυρκαγιές την Τρίτη, η κατάσταση στα μέτωπα",
-      "normalized_title": "ΣΥΝΟΛΙΚΑ 39 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΗΝ ΤΡΙΤΗ, Η ΚΑΤΑΣΤΑΣΗ ΣΤΑ ΜΕΤΩΠΑ",
+      "url": "https://www.protothema.gr/greece/article/1869558/mainetai-i-purkagia-sti-salamina-horis-energo-metopo-i-voiotia-veltiomeni-i-eikona-stin-pella/?utm_source=rss",
+      "title": "Μαίνεται η πυρκαγιά στη Σαλαμίνα, χωρίς ενεργό μέτωπο η Βοιωτία, βελτιωμένη η εικόνα στην Πέλλα",
+      "normalized_title": "ΜΑΙΝΕΤΑΙ Η ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΑΛΑΜΙΝΑ, ΧΩΡΙΣ ΕΝΕΡΓΟ ΜΕΤΩΠΟ Η ΒΟΙΩΤΙΑ, ΒΕΛΤΙΩΜΕΝΗ Η ΕΙΚΟΝΑ ΣΤΗΝ ΠΕΛΛΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869537/sunolika-39-agrotodasikes-purkagies-tin-triti-i-katastasi-sta-metopa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869535/omalopoieitai-i-sidirodromiki-kukloforia-ston-proastiako-sto-tmima-nea-peramos-ano-liosia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869558/mainetai-i-purkagia-sti-salamina-horis-energo-metopo-i-voiotia-veltiomeni-i-eikona-stin-pella/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869557/kairos-sto-kokkino-paramenei-o-udrarguros-me-39aria-pou-anamenodai-bores/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869546/epiheirisi-gia-ti-diasosi-71-metanaston-notia-tis-ierapetras/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-25T21:17:14.383218+00:00"
+      "seen_at_utc": "2026-08-26T04:17:22.539216+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1454346/champions-league-i-megali-proklisi-tis-aek-gia-ton-dromo-me-ta-asteria/",
-      "title": "Champions League: Η μεγάλη πρόκληση της ΑΕΚ στον… δρόμο για τα αστέρια",
-      "normalized_title": "CHAMPIONS LEAGUE: Η ΜΕΓΑΛΗ ΠΡΟΚΛΗΣΗ ΤΗΣ ΑΕΚ ΣΤΟΝ… ΔΡΟΜΟ ΓΙΑ ΤΑ ΑΣΤΕΡΙΑ",
+      "url": "https://www.efsyn.gr/tehnes/1454383/hristos-markidis-1954-2026-o-anahoritis-zografos-toy-anthropinoy-psyhismoy/",
+      "title": "Χρήστος Μαρκίδης (1954 – 2026): Ο «αναχωρητής» ζωγράφος του ανθρώπινου ψυχισμού",
+      "normalized_title": "ΧΡΗΣΤΟΣ ΜΑΡΚΙΔΗΣ (1954 – 2026): Ο «ΑΝΑΧΩΡΗΤΗΣ» ΖΩΓΡΑΦΟΣ ΤΟΥ ΑΝΘΡΩΠΙΝΟΥ ΨΥΧΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1454346/champions-league-i-megali-proklisi-tis-aek-gia-ton-dromo-me-ta-asteria/",
-        "https://www.efsyn.gr/kosmos/1454343/ipa-i-kyvernisi-tramp-etoimazetai-gia-rekor-anakliseon-vizas-se-aitoyntes-asylo-ta-mme-miloyn-gia-200-000-periptoseis/"
+        "https://www.efsyn.gr/tehnes/1454383/hristos-markidis-1954-2026-o-anahoritis-zografos-toy-anthropinoy-psyhismoy/",
+        "https://www.efsyn.gr/kosmos/1454375/dimioyrgiki-asafeia-me-to-d-day-apeiles-ton-ipa-kata-toy-iran-horis-shedio/",
+        "https://www.efsyn.gr/ellada/1454385/gynaikoktonia-sti-n-smyrni-o-48hronos-parakoloythoyse-tin-proin-syntrofo-toy-tis-eihe-steilei-fotografia-me-oplo/",
+        "https://www.efsyn.gr/ellada/1454365/kypseli-kairos-na-spasei-i-omerta-gia-ton-tromopontika-kryfa-stoiheia-kai-diafonies-gia-tin-epanekkinisi-toy-ergoy/",
+        "https://www.efsyn.gr/ellada/1454373/epimenei-o-kaysonas-stoys-39-vathmoys-simera-o-ydrargyros-peftei-i-thermokrasia-tin-pempti/",
+        "https://www.efsyn.gr/tehnes/1454360/dimitris-kokotas-ena-pikro-prooro-telos-pethane-meta-apo-25-hronia-sto-nosokomeio/",
+        "https://www.efsyn.gr/ellada/1454350/megali-kinitopoiisi-gia-ti-fotia-sti-salamina/",
+        "https://www.efsyn.gr/protoselida/matomena-yperpleonasmata/",
+        "https://www.efsyn.gr/nisides/1453131/sepinte-moafi-i-foni-poy-den-exoristike/",
+        "https://www.efsyn.gr/nisides/1453119/giannis-psyhopaidis-eikastiki-anagnosi-toy-ergoy-toy/",
+        "https://www.efsyn.gr/ellada/1454351/eortologio-poioi-giortazoyn-simera-26-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-25T21:17:14.383188+00:00"
+      "seen_at_utc": "2026-08-26T04:17:22.539170+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/world/kolomvia-entassei-oles-tis-enoples-omades-ston-katalogo-ton-tromokratikon-organoseon/",
-      "title": "Τρομοκρατικές όλες οι ένοπλες ομάδες για τον ακροδεξιό Εσπριέγια",
-      "normalized_title": "ΤΡΟΜΟΚΡΑΤΙΚΕΣ ΟΛΕΣ ΟΙ ΕΝΟΠΛΕΣ ΟΜΑΔΕΣ ΓΙΑ ΤΟΝ ΑΚΡΟΔΕΞΙΟ ΕΣΠΡΙΕΓΙΑ",
+      "url": "https://www.in.gr/2026/08/26/life/geysi/syntagi-garides-kai-ryzi/",
+      "title": "Συνταγή: Γαρίδες και ρύζι",
+      "normalized_title": "ΣΥΝΤΑΓΗ: ΓΑΡΙΔΕΣ ΚΑΙ ΡΥΖΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/world/kolomvia-entassei-oles-tis-enoples-omades-ston-katalogo-ton-tromokratikon-organoseon/"
+        "https://www.in.gr/2026/08/26/life/geysi/syntagi-garides-kai-ryzi/",
+        "https://www.in.gr/2026/08/26/health/poso-akougontai-oi-fones-ton-asthenon-stin-eyropi/",
+        "https://www.in.gr/2026/08/26/world/rosia-kai-i-oukrania-syzitoun-nea-antallagi-aixmaloton-polemou/",
+        "https://www.in.gr/2026/08/26/greece/se-red-code-ta-nisia-tou-ioniou-tin-tetarti-gia-poly-ypsilo-kindyno-pyrkagias/",
+        "https://www.in.gr/2026/08/26/plus/vita/poioi-einai-oi-kanones-gia-to-nero-sto-treksimo/",
+        "https://www.in.gr/2026/08/26/greece/kairos-synexizontai-ta-39aria-enisxyontai-ta-meltemia-mikri-anasa-tin-paraskeyi-kai-to-savvato/",
+        "https://www.in.gr/2026/08/26/life/culture-live/klimatiki-allagi-thelete-na-sosete-ton-planiti-kopste-tin-katastrofologia-lene-oi-epistimones/",
+        "https://www.in.gr/2026/08/26/plus/vita/pos-na-apolayseis-pragmatika-ti-single-zoi/",
+        "https://www.in.gr/2026/08/26/economy/diethnis-oikonomia/fysiko-aerio-senario-tromou-me-ektokseysi-tis-timis-agonas-dromou-gia-na-min-pagosei-i-eyropi/",
+        "https://www.in.gr/2026/08/26/go-fun/fizz/i-apolyti-epanekkinisi-to-entyposiako-safari-tis-rita-ora-stin-afriki/",
+        "https://www.in.gr/2026/08/26/world/ma-giati-oi-afrikanoi-neoi-na-latreyoun-ton-tramp/",
+        "https://www.in.gr/2026/08/26/world/teleiose-o-emfylios-sti-syria-me-tin-dialysi-ton-syriakon-dimokratikon-dynameon-ti-tha-symvei/",
+        "https://www.in.gr/2026/08/26/life/music/deka-tragoudia-pou-den-kserate-oti-egrapse-i-ntoli-parton-gia-allous-kallitexnes/",
+        "https://www.in.gr/2026/08/26/economy/ormouz-giati-to-argo-antekse-i-nea-apeili-gia-venzini-kai-ntizel/",
+        "https://www.in.gr/2026/08/26/economy/eforia-tesseris-foro-ekkremotites-se-antistrofi-metrisi/",
+        "https://www.in.gr/2026/08/26/world/skotadismos-misogynismos-ypositismos-o-efialtis-tou-afganistan-kai-i-synenoxi-tis-diethnous-koinotitas/",
+        "https://www.in.gr/2026/08/26/economy/syntakseis-xireias-poioi-xanoun-poioi-kerdizoun/",
+        "https://www.in.gr/2026/08/26/economy/diethnis-oikonomia/i-alvania-kataklyzetai-apo-ksenous-ergates-apo-india-kai-filippines-i-megalyteri-ayksisi-metanasteytikon-roon/",
+        "https://www.in.gr/2026/08/26/greece/koropi-thanatiforo-troxaio-sti-leoforo-athinon-souniou-me-thyma-47xrono-odigo-mixanis/",
+        "https://www.in.gr/2026/08/26/in-science/perivallon-b-science/el-ninio-se-kokkino-synagermo-to-el-salvador-logo-tis-ksirasias/",
+        "https://www.in.gr/2026/08/26/in-science/perivallon-b-science/perou-aytoxthonas-igetis-yperaspistis-tou-perivallontos-dolofoneitai-stin-amazonia/",
+        "https://www.in.gr/2026/08/26/world/venezouela-leitourgei-ksana-apo-1is-septemvriou-to-diethnes-aerodromio-sto-karakas/",
+        "https://www.in.gr/2026/08/26/world/aiti-o-gkouteres-katadikazei-ti-dolofonia-dekadon-anthropon-apo-symmoria/",
+        "https://www.in.gr/2026/08/26/world/o-tramp-ypevale-sto-kogkreso-tin-symfonia-me-ti-saoudiki-aravia-gia-ta-pyrinika-poia-einai-i-diadikasia/",
+        "https://www.in.gr/2026/08/26/world/ria-novosti-ipa-kai-iran-symfonisan-stin-eleytheri-naysiploia-sta-stena-tou-ormouz/",
+        "https://www.in.gr/2026/08/26/world/o-tramp-apeilei-me-katedafisi-to-kentro-kenenti-ean-den-mpei-ksana-to-onoma-tou-stin-prosopsi/",
+        "https://www.in.gr/2026/08/26/world/iran-kai-oman-syzitoun-gia-enan-prosorino-diadromo-naysiploias-sta-stena-tou-ormouz-kai-gia-aponarkothetisi/"
       ],
-      "seen_at_utc": "2026-08-25T22:51:12.976134+00:00"
+      "seen_at_utc": "2026-08-26T04:17:22.539124+00:00"
     }
   },
-  "updated_at_utc": "2026-08-25T22:51:12.976224+00:00"
+  "updated_at_utc": "2026-08-26T04:17:22.539314+00:00"
 }
