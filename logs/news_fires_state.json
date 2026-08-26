@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/theater/564420769/krisi-axion-se-kampingk/",
-      "title": "Κρίση αξιών σε κάμπινγκ",
-      "normalized_title": "ΚΡΙΣΗ ΑΞΙΩΝ ΣΕ ΚΑΜΠΙΝΓΚ",
+      "url": "https://www.kathimerini.gr/politics/564422107/i-apantisi-toy-themistokleoys-ston-polaki-gia-to-esy/",
+      "title": "Η απάντηση του Θεμιστοκλέους στον Πολάκη για το ΕΣΥ",
+      "normalized_title": "Η ΑΠΑΝΤΗΣΗ ΤΟΥ ΘΕΜΙΣΤΟΚΛΕΟΥΣ ΣΤΟΝ ΠΟΛΑΚΗ ΓΙΑ ΤΟ ΕΣΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/theater/564420769/krisi-axion-se-kampingk/",
-        "https://www.kathimerini.gr/economy/local/564420934/apo-tin-aiova-sti-thessalia/",
-        "https://www.kathimerini.gr/world/564422077/i-toyrkia-ypegrapse-me-etaireia-lompi-me-stocho-ta-f-35/"
+        "https://www.kathimerini.gr/politics/564422107/i-apantisi-toy-themistokleoys-ston-polaki-gia-to-esy/",
+        "https://www.kathimerini.gr/world/564420643/anameixi-toy-leykoy-oikoystin-eklogi-g-g-toy-oie/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564420592/tha-epistrafoyn-oi-adeies-ton-trion-mi-kratikon-aei/",
+        "https://www.kathimerini.gr/culture/564420760/ntoli-parton-apo-mia-ftochi-agrotiki-oikogeneia-vasilissa-tis-kantri/",
+        "https://www.kathimerini.gr/society/564421984/gynaikoktonia-sti-rodopi-i-44chroni-skopeye-na-katathesei-aitisi-diazygioy/",
+        "https://www.kathimerini.gr/istoria/564420730/90-chronia-prin-22-9-1936-2/"
       ],
-      "seen_at_utc": "2026-08-26T18:30:02.494749+00:00"
+      "seen_at_utc": "2026-08-26T18:51:15.943436+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1273,29 @@
       "seen_at_utc": "2026-08-26T18:30:02.494828+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1454662/tramp-o-alogomoyris-proedros-oi-ependyseis-sti-spacex-kai-ta-polemika-kerdi-apo-petrelaikes-etaireies/",
-      "title": "Τραμπ: ο… αλογομούρης πρόεδρος: Οι επενδύσεις στη SpaceX και τα «πολεμικά» κέρδη από πετρελαϊκές εταιρείες",
-      "normalized_title": "ΤΡΑΜΠ: Ο… ΑΛΟΓΟΜΟΥΡΗΣ ΠΡΟΕΔΡΟΣ: ΟΙ ΕΠΕΝΔΥΣΕΙΣ ΣΤΗ SPACEX ΚΑΙ ΤΑ «ΠΟΛΕΜΙΚΑ» ΚΕΡΔΗ ΑΠΟ ΠΕΤΡΕΛΑΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+      "url": "https://www.efsyn.gr/epistimi/1454949/karkinos-sto-pagkreas-egkrithike-apo-ton-fda-to-protoporiako-farmako-poy-diplasiazei-ton-hrono-epiviosis/",
+      "title": "Καρκίνος στο πάγκρεας: Εγκρίθηκε από τον FDA το πρωτοποριακό φάρμακο που διπλασιάζει τον χρόνο επιβίωσης",
+      "normalized_title": "ΚΑΡΚΙΝΟΣ ΣΤΟ ΠΑΓΚΡΕΑΣ: ΕΓΚΡΙΘΗΚΕ ΑΠΟ ΤΟΝ FDA ΤΟ ΠΡΩΤΟΠΟΡΙΑΚΟ ΦΑΡΜΑΚΟ ΠΟΥ ΔΙΠΛΑΣΙΑΖΕΙ ΤΟΝ ΧΡΟΝΟ ΕΠΙΒΙΩΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1454662/tramp-o-alogomoyris-proedros-oi-ependyseis-sti-spacex-kai-ta-polemika-kerdi-apo-petrelaikes-etaireies/",
-        "https://www.efsyn.gr/ellada/1454941/kriti-lemvos-me-60-metanastes-anoihta-ton-kalon-limenon/",
-        "https://www.efsyn.gr/athlitismos/1454937/o-kontis-zita-sygkentrosi-apo-toys-paiktes-toy-ofi-pleonektima-to-3-0-alla-den-mas-dinei-tin-prokrisi/"
+        "https://www.efsyn.gr/epistimi/1454949/karkinos-sto-pagkreas-egkrithike-apo-ton-fda-to-protoporiako-farmako-poy-diplasiazei-ton-hrono-epiviosis/",
+        "https://www.efsyn.gr/ellada/1454944/gynaikoktonia-sti-rodopi-anektise-tis-aisthiseis-toy-o-drastis-i-pathologiki-zilia-toy-gia-tin-44hroni/"
       ],
-      "seen_at_utc": "2026-08-26T18:17:04.654705+00:00"
+      "seen_at_utc": "2026-08-26T18:51:15.943509+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/politics/epikairotita/syriza-to-programma-sti-deth-gia-to-diastima-5-11-septemvriou-kai-i-synenteyksi-typou-stis-11-9/",
-      "title": "ΣΥΡΙΖΑ: Το πρόγραμμα στη ΔΕΘ για το διάστημα 5-11 Σεπτεμβρίου και η συνέντευξη Τύπου στις 11/9",
-      "normalized_title": "ΣΥΡΙΖΑ: ΤΟ ΠΡΟΓΡΑΜΜΑ ΣΤΗ ΔΕΘ ΓΙΑ ΤΟ ΔΙΑΣΤΗΜΑ 5-11 ΣΕΠΤΕΜΒΡΙΟΥ ΚΑΙ Η ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΣΤΙΣ 11/9",
+      "url": "https://www.in.gr/matchcenter/5987807/",
+      "title": "LIVE: Βίκινγκ – Ντιναμό Ζάγκρεμπ",
+      "normalized_title": "LIVE: ΒΙΚΙΝΓΚ – ΝΤΙΝΑΜΟ ΖΑΓΚΡΕΜΠ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/politics/epikairotita/syriza-to-programma-sti-deth-gia-to-diastima-5-11-septemvriou-kai-i-synenteyksi-typou-stis-11-9/",
-        "https://www.in.gr/2026/08/26/world/mpari-katasxethikan-treis-antiarmatikoi-pyrayloi-akeron-se-van-apo-tin-ellada-synelifthi-enas-gallos/",
-        "https://www.in.gr/2026/08/26/go-fun/xari-kai-megkan-prosgeiothikan-sti-vretania-ta-eksoda-to-xasma-kai-i-aporripsi-apo-tous-vretanous/",
-        "https://www.in.gr/2026/08/26/sports/on-field/den-petyxan-oute-tis-faneles/"
+        "https://www.in.gr/matchcenter/5987807/",
+        "https://www.in.gr/matchcenter/5987808/",
+        "https://www.in.gr/matchcenter/5987810/",
+        "https://www.in.gr/2026/08/26/world/o-poutin-proxora-se-klimakosi-tou-polemou-stin-oukrania-meta-to-adieksodo-stis-diapragmateyseis/",
+        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/elas-pros-kyvernisi-na-anakoinothei-sti-deth-ektakti-forologisi-sta-yperkerdi-15-dis-ton-diylistirion/",
+        "https://www.in.gr/matchcenter/5987805/"
       ],
-      "seen_at_utc": "2026-08-26T18:30:02.494791+00:00"
+      "seen_at_utc": "2026-08-26T18:51:15.943473+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T18:30:02.494898+00:00"
+  "updated_at_utc": "2026-08-26T18:51:15.943609+00:00"
 }
