@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564421360/dyskoleyomai-na-fantasto-ton-kosmo-choris-tin-ntoli/",
-      "title": "«Δυσκολεύομαι να φανταστώ τον κόσμο χωρίς την Ντόλι»",
-      "normalized_title": "«ΔΥΣΚΟΛΕΥΟΜΑΙ ΝΑ ΦΑΝΤΑΣΤΩ ΤΟΝ ΚΟΣΜΟ ΧΩΡΙΣ ΤΗΝ ΝΤΟΛΙ»",
+      "url": "https://www.kathimerini.gr/columns/564421444/pos-o-valntas-ntampraoyskas-egine-podosfairikos-ekatommyrioychos/",
+      "title": "Πώς ο Βάλντας Νταμπράουσκας έγινε (ποδοσφαιρικός) εκατομμυριούχος",
+      "normalized_title": "ΠΩΣ Ο ΒΑΛΝΤΑΣ ΝΤΑΜΠΡΑΟΥΣΚΑΣ ΕΓΙΝΕ (ΠΟΔΟΣΦΑΙΡΙΚΟΣ) ΕΚΑΤΟΜΜΥΡΙΟΥΧΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564421360/dyskoleyomai-na-fantasto-ton-kosmo-choris-tin-ntoli/",
-        "https://www.kathimerini.gr/society/564421411/dimitris-kokotas-dimosia-dapani-i-kideia-toy-mesisties-simaies-ston-dimo-agias-varvaras/"
+        "https://www.kathimerini.gr/columns/564421444/pos-o-valntas-ntampraoyskas-egine-podosfairikos-ekatommyrioychos/",
+        "https://www.kathimerini.gr/society/564421429/epicheirisi-diasosis-gia-61chroni-poy-ekane-pezoporia-sta-chania/"
       ],
-      "seen_at_utc": "2026-08-26T09:29:57.721532+00:00"
+      "seen_at_utc": "2026-08-26T09:51:11.050234+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869714/agios-dimitrios-methusmenos-odigos-taxi-htupise-34hrono-se-motosikleta/?utm_source=rss",
-      "title": "Αγιος Δημήτριος: Μεθυσμένος οδηγός ταξί χτύπησε 34χρονο σε μοτοσικλέτα",
-      "normalized_title": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ: ΜΕΘΥΣΜΕΝΟΣ ΟΔΗΓΟΣ ΤΑΞΙ ΧΤΥΠΗΣΕ 34ΧΡΟΝΟ ΣΕ ΜΟΤΟΣΙΚΛΕΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1869728/sunelifthi-katazitoumenos-pou-ekane-epitheseis-se-nuhterina-kedra-stin-patra-vrethikan-opla-kai-mahairia-sto-krisfugeto/?utm_source=rss",
+      "title": "Συνελήφθη καταζητούμενος που έκανε επιθέσεις σε νυχτερινά κέντρα στην Πάτρα, βρέθηκαν όπλα και μαχαίρια στο κρησφύγετό του",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΚΑΤΑΖΗΤΟΥΜΕΝΟΣ ΠΟΥ ΕΚΑΝΕ ΕΠΙΘΕΣΕΙΣ ΣΕ ΝΥΧΤΕΡΙΝΑ ΚΕΝΤΡΑ ΣΤΗΝ ΠΑΤΡΑ, ΒΡΕΘΗΚΑΝ ΟΠΛΑ ΚΑΙ ΜΑΧΑΙΡΙΑ ΣΤΟ ΚΡΗΣΦΥΓΕΤΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869714/agios-dimitrios-methusmenos-odigos-taxi-htupise-34hrono-se-motosikleta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869728/sunelifthi-katazitoumenos-pou-ekane-epitheseis-se-nuhterina-kedra-stin-patra-vrethikan-opla-kai-mahairia-sto-krisfugeto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869724/tragodia-stin-kalumno-nekros-21hronos-omogenis-apo-tin-australia-se-trohaio-me-motosikleta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T09:29:57.721632+00:00"
+      "seen_at_utc": "2026-08-26T09:51:11.050367+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1454632/hronia-polla-aggele-moy-sygkinei-i-viktoria-della-animera-ton-genethlion-tis-gogos-mastrokosta/",
-      "title": "«Χρόνια πολλά, άγγελέ μου»: Συγκινεί η Βικτώρια Δέλλα ανήμερα των γενεθλίων της Γωγώς Μαστροκώστα",
-      "normalized_title": "«ΧΡΟΝΙΑ ΠΟΛΛΑ, ΑΓΓΕΛΕ ΜΟΥ»: ΣΥΓΚΙΝΕΙ Η ΒΙΚΤΩΡΙΑ ΔΕΛΛΑ ΑΝΗΜΕΡΑ ΤΩΝ ΓΕΝΕΘΛΙΩΝ ΤΗΣ ΓΩΓΩΣ ΜΑΣΤΡΟΚΩΣΤΑ",
+      "url": "https://www.efsyn.gr/politiki/1454649/kke-gia-syntaxeis-hireias-o-mitsotakis-ehei-to-thrasos-na-paroysiazei-os-parohi-ti-mi-perikopi/",
+      "title": "ΚΚΕ για συντάξεις χηρείας: Ο Μητσοτάκης έχει το θράσος να παρουσιάζει ως «παροχή» τη μη περικοπή",
+      "normalized_title": "ΚΚΕ ΓΙΑ ΣΥΝΤΑΞΕΙΣ ΧΗΡΕΙΑΣ: Ο ΜΗΤΣΟΤΑΚΗΣ ΕΧΕΙ ΤΟ ΘΡΑΣΟΣ ΝΑ ΠΑΡΟΥΣΙΑΖΕΙ ΩΣ «ΠΑΡΟΧΗ» ΤΗ ΜΗ ΠΕΡΙΚΟΠΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1454632/hronia-polla-aggele-moy-sygkinei-i-viktoria-della-animera-ton-genethlion-tis-gogos-mastrokosta/"
+        "https://www.efsyn.gr/politiki/1454649/kke-gia-syntaxeis-hireias-o-mitsotakis-ehei-to-thrasos-na-paroysiazei-os-parohi-ti-mi-perikopi/",
+        "https://www.efsyn.gr/ellada/1454643/rethymno-epikindyni-prosperasi-stin-eparhiaki-odo-spilioy-apo-tyhi-glitosame-to-moiraio-vinteo/",
+        "https://www.efsyn.gr/politiki/1454638/i-akrita-zita-apantiseis-apo-tin-karystianoy-eihe-kataggeilei-idiotikes-klinikes-gia-amvloseis-ston-7o-mina/",
+        "https://www.efsyn.gr/ellada/1454640/aigaleo-synelifthi-andras-gia-treis-esties-fotias-me-anaptira/"
       ],
-      "seen_at_utc": "2026-08-26T09:29:57.721606+00:00"
+      "seen_at_utc": "2026-08-26T09:51:11.050326+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/politics/aftodioikisi/allazei-opsi-i-kallitexnoupoli/",
-      "title": "Αλλάζει όψη η Καλλιτεχνούπολη",
-      "normalized_title": "ΑΛΛΑΖΕΙ ΟΨΗ Η ΚΑΛΛΙΤΕΧΝΟΥΠΟΛΗ",
+      "url": "https://www.in.gr/2026/08/26/politics/aftodioikisi/xrimatodotisi-1-450-000e-gia-tin-oloklirosi-tou-therapeytiriou-iteas/",
+      "title": "Χρηματοδότηση 1.450.000€ για την ολοκλήρωση του θεραπευτηρίου Ιτέας",
+      "normalized_title": "ΧΡΗΜΑΤΟΔΟΤΗΣΗ 1.450.000€ ΓΙΑ ΤΗΝ ΟΛΟΚΛΗΡΩΣΗ ΤΟΥ ΘΕΡΑΠΕΥΤΗΡΙΟΥ ΙΤΕΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/politics/aftodioikisi/allazei-opsi-i-kallitexnoupoli/"
+        "https://www.in.gr/2026/08/26/politics/aftodioikisi/xrimatodotisi-1-450-000e-gia-tin-oloklirosi-tou-therapeytiriou-iteas/",
+        "https://www.in.gr/2026/08/26/in-science/episthmes/dyo-thanatoi-apo-ilara-stis-ipa-en-meso-antiemvoliastikis-ekstrateias-tramp/",
+        "https://www.in.gr/2026/08/26/world/rosia-epivevaionei-to-kremlino-tin-episkepsi-tou-epikefalis-tis-cia-sti-mosxa/",
+        "https://www.in.gr/2026/08/26/sports/o-tsitsipas-antimetopizei-ton-kovasevits-stous-16-tou-gouinston-salem/",
+        "https://www.in.gr/2026/08/26/world/ipa-iran-polemos-fthoras-gia-ton-elegxo-ton-ormouz-to-themeliodes-lathos-tou-tramp-kai-o-drakos-pou-ksypna/"
       ],
-      "seen_at_utc": "2026-08-26T09:29:57.721564+00:00"
+      "seen_at_utc": "2026-08-26T09:51:11.050287+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T09:29:57.721718+00:00"
+  "updated_at_utc": "2026-08-26T09:51:11.050448+00:00"
 }
