@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564420790/nikos-desyllas-1943-2026-portretistas-mias-elladas-poy-chanetai/",
-      "title": "Νίκος Δεσύλλας (1943-2026): Πορτρετίστας μιας Ελλάδας που χάνεται",
-      "normalized_title": "ΝΙΚΟΣ ΔΕΣΥΛΛΑΣ (1943-2026): ΠΟΡΤΡΕΤΙΣΤΑΣ ΜΙΑΣ ΕΛΛΑΔΑΣ ΠΟΥ ΧΑΝΕΤΑΙ",
+      "url": "https://www.kathimerini.gr/economy/local/564420955/dyo-nea-programmata-apascholisis-gia-35-500-anergoys/",
+      "title": "Δύο νέα προγράμματα απασχόλησης για 35.500 ανέργους",
+      "normalized_title": "ΔΥΟ ΝΕΑ ΠΡΟΓΡΑΜΜΑΤΑ ΑΠΑΣΧΟΛΗΣΗΣ ΓΙΑ 35.500 ΑΝΕΡΓΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564420790/nikos-desyllas-1943-2026-portretistas-mias-elladas-poy-chanetai/",
-        "https://www.kathimerini.gr/world/564420673/i-epelasi-ton-rompot-stin-kina/"
+        "https://www.kathimerini.gr/economy/local/564420955/dyo-nea-programmata-apascholisis-gia-35-500-anergoys/",
+        "https://www.kathimerini.gr/athletics/564422158/i-katarameni-fanela-me-to-no9/",
+        "https://www.kathimerini.gr/world/564422113/chaos-sto-nepal-i-katarreysi-toy-pagetona-kai-to-senario-toy-seismoy-doryforikes-eikones/",
+        "https://www.kathimerini.gr/economy/564420952/montelo-i-ellada-gia-tin-epimikynsi-tis-toyristikis-sezon-leei-i-fitch/"
       ],
-      "seen_at_utc": "2026-08-26T19:30:14.937876+00:00"
+      "seen_at_utc": "2026-08-26T19:51:14.211443+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,25 +1271,30 @@
       "seen_at_utc": "2026-08-26T19:30:14.937990+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1454943/fonikes-plimmyres-sto-nepal-ores-agonias-gia-toys-ekatontades-agnooymenoys-ti-odigise-sti-vivliki-katastrofi/",
-      "title": "Φονικές πλημμύρες στο Νεπάλ: Ώρες αγωνίας για τους εκατοντάδες αγνοούμενους – Τι οδήγησε στη βιβλική καταστροφή",
-      "normalized_title": "ΦΟΝΙΚΕΣ ΠΛΗΜΜΥΡΕΣ ΣΤΟ ΝΕΠΑΛ: ΩΡΕΣ ΑΓΩΝΙΑΣ ΓΙΑ ΤΟΥΣ ΕΚΑΤΟΝΤΑΔΕΣ ΑΓΝΟΟΥΜΕΝΟΥΣ – ΤΙ ΟΔΗΓΗΣΕ ΣΤΗ ΒΙΒΛΙΚΗ ΚΑΤΑΣΤΡΟΦΗ",
+      "url": "https://www.efsyn.gr/athlitismos/1454967/panathinaikos-o-nistroyp-entopise-ta-lathi-toy-protoy-mats-kai-zita-ti-niki-prokrisi-stin-tsehia/",
+      "title": "Παναθηναϊκός: Ο Νίστρουπ εντόπισε τα λάθη του πρώτου ματς και ζητά τη νίκη-πρόκριση στην Τσεχία",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: Ο ΝΙΣΤΡΟΥΠ ΕΝΤΟΠΙΣΕ ΤΑ ΛΑΘΗ ΤΟΥ ΠΡΩΤΟΥ ΜΑΤΣ ΚΑΙ ΖΗΤΑ ΤΗ ΝΙΚΗ-ΠΡΟΚΡΙΣΗ ΣΤΗΝ ΤΣΕΧΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1454943/fonikes-plimmyres-sto-nepal-ores-agonias-gia-toys-ekatontades-agnooymenoys-ti-odigise-sti-vivliki-katastrofi/"
+        "https://www.efsyn.gr/athlitismos/1454967/panathinaikos-o-nistroyp-entopise-ta-lathi-toy-protoy-mats-kai-zita-ti-niki-prokrisi-stin-tsehia/",
+        "https://www.efsyn.gr/kosmos/1454665/volivia-sti-fylaki-o-gkoyroy-tis-akrodexias-gia-apopeira-gynaikoktonias/",
+        "https://www.efsyn.gr/ellada/1454966/traymatistike-heiristria-jet-ski-anoikta-toy-polygyroy-halkidikis/"
       ],
-      "seen_at_utc": "2026-08-26T19:30:14.937974+00:00"
+      "seen_at_utc": "2026-08-26T19:51:14.211544+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-giovits-kai-vargka-skoraroun-mesa-se-12-lepta-gia-to-2-0-tis-enosis-vids/",
-      "title": "Γιόβιτς και Βάργκα σκοράρουν μέσα σε 12 λεπτά για το 2-0 της AEK (vids)",
-      "normalized_title": "ΓΙΟΒΙΤΣ ΚΑΙ ΒΑΡΓΚΑ ΣΚΟΡΑΡΟΥΝ ΜΕΣΑ ΣΕ 12 ΛΕΠΤΑ ΓΙΑ ΤΟ 2-0 ΤΗΣ AEK (VIDS)",
+      "url": "https://www.in.gr/2026/08/26/politics/politiki-grammateia/androulakis-apostolaki-ti-den-mas-lene-gia-to-xreos-anyperaspisti-i-a-katoikia-iliggiodi-kerdi-gia-tis-trapezes/",
+      "title": "Ανδρουλάκης-Αποστολάκη: Τι δεν μας λένε για το χρέος – Ανυπεράσπιστη η α’ κατοικία, ιλιγγιώδη κέρδη για τις τράπεζες",
+      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ-ΑΠΟΣΤΟΛΑΚΗ: ΤΙ ΔΕΝ ΜΑΣ ΛΕΝΕ ΓΙΑ ΤΟ ΧΡΕΟΣ – ΑΝΥΠΕΡΑΣΠΙΣΤΗ Η Α’ ΚΑΤΟΙΚΙΑ, ΙΛΙΓΓΙΩΔΗ ΚΕΡΔΗ ΓΙΑ ΤΙΣ ΤΡΑΠΕΖΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-giovits-kai-vargka-skoraroun-mesa-se-12-lepta-gia-to-2-0-tis-enosis-vids/",
-        "https://www.in.gr/2026/08/26/sports/football/conference-league/lisi-me-ti-mpran-einai-telikos-eimaste-paok-kai-prepei-na-to-diaxeiristoume-ti-eipe-gia-ton-ougkresits/",
-        "https://www.in.gr/2026/08/26/go-fun/fizz/i-tzitzi-xantint-apokalyptei-se-ti-diaferei-o-mprantlei-kouper-apo-tis-proigoumenes-sxeseis-tis/"
+        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/androulakis-apostolaki-ti-den-mas-lene-gia-to-xreos-anyperaspisti-i-a-katoikia-iliggiodi-kerdi-gia-tis-trapezes/",
+        "https://www.in.gr/2026/08/26/world/ntoli-parton-pos-to-9-to-5-tin-ekane-ergasiako-kai-feministiko-eidolo-ti-eipan-ta-syndikata-gia-aytin/",
+        "https://www.in.gr/2026/08/26/world/i-kina-apeilei-me-antipoina-tis-ipa-gia-tis-kyroseis-enantion-kinezikon-etaireion-me-aformi-to-iran/",
+        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/pyra-elas-stin-kyvernisi-gia-tis-gynaikoktonies-kreitton-to-sigan-to-thrasos-den-ypokathista-tin-eythyni/",
+        "https://www.in.gr/2026/08/26/world/o-ploutos-stin-eksousia-pos-3-000-disekatommyriouxoi-diamorfonoun-tis-pagkosmies-apofaseis/",
+        "https://www.in.gr/2026/08/26/world/nepal-i-foniki-plimmyra-pithanos-proklithike-apo-katarreysi-pagetona/"
       ],
-      "seen_at_utc": "2026-08-26T19:30:14.937937+00:00"
+      "seen_at_utc": "2026-08-26T19:51:14.211506+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T19:30:14.938080+00:00"
+  "updated_at_utc": "2026-08-26T19:51:14.211655+00:00"
 }
