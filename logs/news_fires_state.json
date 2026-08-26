@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/dikastiko/564421633/elegktiko-synedrio-oristika-ypeythynos-o-v-papageorgopoylos-gia-to-elleimma-ton-8-2-ekat-eyro/",
-      "title": "Ελεγκτικό Συνέδριο: Οριστικά υπεύθυνος ο Β. Παπαγεωργόπουλος για το έλλειμμα των 8,2 εκατ. ευρώ",
-      "normalized_title": "ΕΛΕΓΚΤΙΚΟ ΣΥΝΕΔΡΙΟ: ΟΡΙΣΤΙΚΑ ΥΠΕΥΘΥΝΟΣ Ο Β. ΠΑΠΑΓΕΩΡΓΟΠΟΥΛΟΣ ΓΙΑ ΤΟ ΕΛΛΕΙΜΜΑ ΤΩΝ 8,2 ΕΚΑΤ. ΕΥΡΩ",
+      "url": "https://www.kathimerini.gr/society/564421702/fotia-sto-neochori-prevezas-minyma-112-gia-etoimotita/",
+      "title": "Φωτιά στο Νεοχώρι Πρέβεζας, μήνυμα 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΝΕΟΧΩΡΙ ΠΡΕΒΕΖΑΣ, ΜΗΝΥΜΑ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/dikastiko/564421633/elegktiko-synedrio-oristika-ypeythynos-o-v-papageorgopoylos-gia-to-elleimma-ton-8-2-ekat-eyro/"
+        "https://www.kathimerini.gr/society/564421702/fotia-sto-neochori-prevezas-minyma-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/k/gastronomos/564420325/sormpe-enantia-sti-zesti-5-extra-drosistikes-dieythynseis-stin-athina/",
+        "https://www.kathimerini.gr/world/564421627/nepal-ti-prokalese-tis-xafnikes-fonikes-plimmyres-agonia-gia-ekatontades-agnooymenoys/",
+        "https://www.kathimerini.gr/world/564421654/meta-symvivasmos-dis-stis-ipa-gia-tin-ypotheseis-ethismoy-kai-asfaleias-sta-social-media/"
       ],
-      "seen_at_utc": "2026-08-26T13:52:17.550150+00:00"
+      "seen_at_utc": "2026-08-26T14:17:51.679376+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1262,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869824/paraligo-tragodia-sto-argos-orestiko-travixe-oplo-otan-ton-katigorise-oti-tou-klevei-ta-kotopoula/?utm_source=rss",
-      "title": "Παραλίγο τραγωδία στο Άργος Ορεστικό: Τράβηξε όπλο όταν τον κατηγόρησε ότι του κλέβει τα κοτόπουλα",
-      "normalized_title": "ΠΑΡΑΛΙΓΟ ΤΡΑΓΩΔΙΑ ΣΤΟ ΑΡΓΟΣ ΟΡΕΣΤΙΚΟ: ΤΡΑΒΗΞΕ ΟΠΛΟ ΟΤΑΝ ΤΟΝ ΚΑΤΗΓΟΡΗΣΕ ΟΤΙ ΤΟΥ ΚΛΕΒΕΙ ΤΑ ΚΟΤΟΠΟΥΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1869846/fotia-sto-neohori-prevezas-estali-112-gia-etoimotita/?utm_source=rss",
+      "title": "Φωτιά στο Νεοχώρι Πρέβεζας, εστάλη 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΝΕΟΧΩΡΙ ΠΡΕΒΕΖΑΣ, ΕΣΤΑΛΗ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869824/paraligo-tragodia-sto-argos-orestiko-travixe-oplo-otan-ton-katigorise-oti-tou-klevei-ta-kotopoula/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869846/fotia-sto-neohori-prevezas-estali-112-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869845/sunelifthisan-exi-voulgaroi-sta-diodia-afidnon-kai-eleusinas-katashethikan-mahairia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869835/to-anoixame-gia-ena-kommati-psomi-leei-i-aderfi-tou-idioktiti-tis-kafeterias-ston-agio-padeleimona/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T13:30:01.411514+00:00"
+      "seen_at_utc": "2026-08-26T14:17:51.679541+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1454818/eyvoia-plota-fragmata-gia-medoyses-kai-tsoyhtres-anisyhoi-oi-epaggelmaties-tis-periohis-vinteo/",
-      "title": "Εύβοια: Πλωτά φράγματα για μέδουσες και τσούχτρες – Ανήσυχοι οι επαγγελματίες της περιοχής [βίντεο]",
-      "normalized_title": "ΕΥΒΟΙΑ: ΠΛΩΤΑ ΦΡΑΓΜΑΤΑ ΓΙΑ ΜΕΔΟΥΣΕΣ ΚΑΙ ΤΣΟΥΧΤΡΕΣ – ΑΝΗΣΥΧΟΙ ΟΙ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ΤΗΣ ΠΕΡΙΟΧΗΣ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1454837/pyrkagia-sto-neohori-prevezas-ihise-to-112-sikothikan-enaeria-mesa/",
+      "title": "Πυρκαγιά στο Νεοχώρι Πρέβεζας: Ήχησε το 112, σηκώθηκαν εναέρια μέσα",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΟ ΝΕΟΧΩΡΙ ΠΡΕΒΕΖΑΣ: ΗΧΗΣΕ ΤΟ 112, ΣΗΚΩΘΗΚΑΝ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1454818/eyvoia-plota-fragmata-gia-medoyses-kai-tsoyhtres-anisyhoi-oi-epaggelmaties-tis-periohis-vinteo/",
-        "https://www.efsyn.gr/kosmos/1454805/to-iran-dilose-oti-irthe-se-symfonia-me-to-oman-gia-ta-stena-toy-ormoyz/",
-        "https://www.efsyn.gr/ellada/1454800/pagkosmia-imera-skyloy-ti-kanoyme-se-periptosi-kindynoy-mathimata-proton-voitheion-sto-syntagma-vinteo/"
+        "https://www.efsyn.gr/ellada/1454837/pyrkagia-sto-neohori-prevezas-ihise-to-112-sikothikan-enaeria-mesa/",
+        "https://www.efsyn.gr/stiles/1454606/oi-trapezes-metetrepsan-kathe-kinisi-se-haratsi-me-ti-synenohi-toy-maximoy/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-26-08-2026/",
+        "https://www.efsyn.gr/stiles/1454588/tin-alitheia-re/",
+        "https://www.efsyn.gr/ellada/1454821/aek-opadoi-tis-lefski-erhontan-me-mahairia-kai-soygiades-gia-na-doyn-ton-agona-sti-nea-filadelfeia-eikones/",
+        "https://www.efsyn.gr/life/1454817/i-loatki-koinotita-thrinei-gia-ti-ntoli-parton-efyge-ena-indalma-tis/"
       ],
-      "seen_at_utc": "2026-08-26T13:52:17.550262+00:00"
+      "seen_at_utc": "2026-08-26T14:17:51.679516+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/greece/fotia-sti-deskati-grevenon-epixeiroun-5-enaeria-mesa/",
-      "title": "Φωτιά στη Δεσκάτη Γρεβενών – Επιχειρούν 5 εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΔΕΣΚΑΤΗ ΓΡΕΒΕΝΩΝ – ΕΠΙΧΕΙΡΟΥΝ 5 ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-i-astynomia-synelave-eksi-voulgarous-opadous-sta-diodia-katasxethikan-maxairia-pics/",
+      "title": "ΑΕΚ-Λέφσκι Σόφιας: Η αστυνομία συνέλαβε έξι Βούλγαρους οπαδούς στα διόδια, κατασχέθηκαν μαχαίρια (pics)",
+      "normalized_title": "ΑΕΚ-ΛΕΦΣΚΙ ΣΟΦΙΑΣ: Η ΑΣΤΥΝΟΜΙΑ ΣΥΝΕΛΑΒΕ ΕΞΙ ΒΟΥΛΓΑΡΟΥΣ ΟΠΑΔΟΥΣ ΣΤΑ ΔΙΟΔΙΑ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΜΑΧΑΙΡΙΑ (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/greece/fotia-sti-deskati-grevenon-epixeiroun-5-enaeria-mesa/",
-        "https://www.in.gr/2026/08/26/stories/smyrni-aygoustos-1922-to-kako-erxotane-epano-mas/",
-        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/pasok-oi-deiktes-tis-politikis-prostasias-einai-ergaleia-logodosias-oxi-kyvernitikis-aytodikaiosis/"
+        "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-i-astynomia-synelave-eksi-voulgarous-opadous-sta-diodia-katasxethikan-maxairia-pics/",
+        "https://www.in.gr/2026/08/26/sports/on-field/enthousiasmos-sto-renti-gia-gkonsales/",
+        "https://www.in.gr/2026/08/26/go-fun/misel-faifer-to-onlyfans-i-geloia-fimi-tis-syntaksiodotisis-kai-i-anagennisi-mias-yperoxis-gynaikas/",
+        "https://www.in.gr/2026/08/26/greece/fotia-sto-neoxori-prevezas-ixise-to-112/",
+        "https://www.in.gr/2026/08/26/world/o-prothypourgos-tou-kanada-tha-parastei-stin-omilia-gia-tin-katastasi-tis-eyropaikis-enosis-ton-septemvrio/",
+        "https://www.in.gr/2026/08/26/sports/basketball/peristeri-betsson-enisxysi-sta-gkarnt-me-ton-noa-fraintel/",
+        "https://www.in.gr/2026/08/26/sports/football/panathinaikos-toso-kostise-o-louza-toso-tha-kostisei-o-ounai/"
       ],
-      "seen_at_utc": "2026-08-26T13:52:17.550203+00:00"
+      "seen_at_utc": "2026-08-26T14:17:51.679470+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T13:52:17.550343+00:00"
+  "updated_at_utc": "2026-08-26T14:17:51.679647+00:00"
 }
