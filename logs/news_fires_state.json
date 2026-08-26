@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564421102/kairos-kai-simera-stoys-39-vathmoys-o-ydrargyros-poy-anamenontai-vroches/",
-      "title": "Καιρός: Και σήμερα στους 39 βαθμούς ο υδράργυρος – Πού αναμένονται βροχές",
-      "normalized_title": "ΚΑΙΡΟΣ: ΚΑΙ ΣΗΜΕΡΑ ΣΤΟΥΣ 39 ΒΑΘΜΟΥΣ Ο ΥΔΡΑΡΓΥΡΟΣ – ΠΟΥ ΑΝΑΜΕΝΟΝΤΑΙ ΒΡΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/society/564421126/voiotia-veltiomeni-i-eikona-tis-fotias-ston-agio-vlasio-ischyres-dynameis-paramenoyn-stin-periochi/",
+      "title": "Βοιωτία: Ισχυρές δυνάμεις στο σημείο – Βελτιωμένη η εικόνα της πυρκαγιάς στον Αγιο Βλάσιο",
+      "normalized_title": "ΒΟΙΩΤΙΑ: ΙΣΧΥΡΕΣ ΔΥΝΑΜΕΙΣ ΣΤΟ ΣΗΜΕΙΟ – ΒΕΛΤΙΩΜΕΝΗ Η ΕΙΚΟΝΑ ΤΗΣ ΠΥΡΚΑΓΙΑΣ ΣΤΟΝ ΑΓΙΟ ΒΛΑΣΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564421102/kairos-kai-simera-stoys-39-vathmoys-o-ydrargyros-poy-anamenontai-vroches/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564420580/i-toyrkia-apaitei-na-dosei-adeia-gia-to-kalodio/"
+        "https://www.kathimerini.gr/society/564421126/voiotia-veltiomeni-i-eikona-tis-fotias-ston-agio-vlasio-ischyres-dynameis-paramenoyn-stin-periochi/",
+        "https://www.kathimerini.gr/society/564421117/ag-panteleimonas-epithesi-me-molotof-se-en-leitoyrgia-katastima/"
       ],
-      "seen_at_utc": "2026-08-26T04:17:22.539072+00:00"
+      "seen_at_utc": "2026-08-26T04:30:33.696061+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1290,40 +1290,15 @@
       "seen_at_utc": "2026-08-26T04:17:22.539170+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/life/geysi/syntagi-garides-kai-ryzi/",
-      "title": "Συνταγή: Γαρίδες και ρύζι",
-      "normalized_title": "ΣΥΝΤΑΓΗ: ΓΑΡΙΔΕΣ ΚΑΙ ΡΥΖΙ",
+      "url": "https://www.in.gr/2026/08/26/greece/voiotia-xoris-energo-metopo-oi-foties-se-agio-vlasio-kai-stefani/",
+      "title": "Βοιωτία: Χωρίς ενεργό μέτωπο οι φωτιές σε Άγιο Βλάσιο και Στεφάνη",
+      "normalized_title": "ΒΟΙΩΤΙΑ: ΧΩΡΙΣ ΕΝΕΡΓΟ ΜΕΤΩΠΟ ΟΙ ΦΩΤΙΕΣ ΣΕ ΑΓΙΟ ΒΛΑΣΙΟ ΚΑΙ ΣΤΕΦΑΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/life/geysi/syntagi-garides-kai-ryzi/",
-        "https://www.in.gr/2026/08/26/health/poso-akougontai-oi-fones-ton-asthenon-stin-eyropi/",
-        "https://www.in.gr/2026/08/26/world/rosia-kai-i-oukrania-syzitoun-nea-antallagi-aixmaloton-polemou/",
-        "https://www.in.gr/2026/08/26/greece/se-red-code-ta-nisia-tou-ioniou-tin-tetarti-gia-poly-ypsilo-kindyno-pyrkagias/",
-        "https://www.in.gr/2026/08/26/plus/vita/poioi-einai-oi-kanones-gia-to-nero-sto-treksimo/",
-        "https://www.in.gr/2026/08/26/greece/kairos-synexizontai-ta-39aria-enisxyontai-ta-meltemia-mikri-anasa-tin-paraskeyi-kai-to-savvato/",
-        "https://www.in.gr/2026/08/26/life/culture-live/klimatiki-allagi-thelete-na-sosete-ton-planiti-kopste-tin-katastrofologia-lene-oi-epistimones/",
-        "https://www.in.gr/2026/08/26/plus/vita/pos-na-apolayseis-pragmatika-ti-single-zoi/",
-        "https://www.in.gr/2026/08/26/economy/diethnis-oikonomia/fysiko-aerio-senario-tromou-me-ektokseysi-tis-timis-agonas-dromou-gia-na-min-pagosei-i-eyropi/",
-        "https://www.in.gr/2026/08/26/go-fun/fizz/i-apolyti-epanekkinisi-to-entyposiako-safari-tis-rita-ora-stin-afriki/",
-        "https://www.in.gr/2026/08/26/world/ma-giati-oi-afrikanoi-neoi-na-latreyoun-ton-tramp/",
-        "https://www.in.gr/2026/08/26/world/teleiose-o-emfylios-sti-syria-me-tin-dialysi-ton-syriakon-dimokratikon-dynameon-ti-tha-symvei/",
-        "https://www.in.gr/2026/08/26/life/music/deka-tragoudia-pou-den-kserate-oti-egrapse-i-ntoli-parton-gia-allous-kallitexnes/",
-        "https://www.in.gr/2026/08/26/economy/ormouz-giati-to-argo-antekse-i-nea-apeili-gia-venzini-kai-ntizel/",
-        "https://www.in.gr/2026/08/26/economy/eforia-tesseris-foro-ekkremotites-se-antistrofi-metrisi/",
-        "https://www.in.gr/2026/08/26/world/skotadismos-misogynismos-ypositismos-o-efialtis-tou-afganistan-kai-i-synenoxi-tis-diethnous-koinotitas/",
-        "https://www.in.gr/2026/08/26/economy/syntakseis-xireias-poioi-xanoun-poioi-kerdizoun/",
-        "https://www.in.gr/2026/08/26/economy/diethnis-oikonomia/i-alvania-kataklyzetai-apo-ksenous-ergates-apo-india-kai-filippines-i-megalyteri-ayksisi-metanasteytikon-roon/",
-        "https://www.in.gr/2026/08/26/greece/koropi-thanatiforo-troxaio-sti-leoforo-athinon-souniou-me-thyma-47xrono-odigo-mixanis/",
-        "https://www.in.gr/2026/08/26/in-science/perivallon-b-science/el-ninio-se-kokkino-synagermo-to-el-salvador-logo-tis-ksirasias/",
-        "https://www.in.gr/2026/08/26/in-science/perivallon-b-science/perou-aytoxthonas-igetis-yperaspistis-tou-perivallontos-dolofoneitai-stin-amazonia/",
-        "https://www.in.gr/2026/08/26/world/venezouela-leitourgei-ksana-apo-1is-septemvriou-to-diethnes-aerodromio-sto-karakas/",
-        "https://www.in.gr/2026/08/26/world/aiti-o-gkouteres-katadikazei-ti-dolofonia-dekadon-anthropon-apo-symmoria/",
-        "https://www.in.gr/2026/08/26/world/o-tramp-ypevale-sto-kogkreso-tin-symfonia-me-ti-saoudiki-aravia-gia-ta-pyrinika-poia-einai-i-diadikasia/",
-        "https://www.in.gr/2026/08/26/world/ria-novosti-ipa-kai-iran-symfonisan-stin-eleytheri-naysiploia-sta-stena-tou-ormouz/",
-        "https://www.in.gr/2026/08/26/world/o-tramp-apeilei-me-katedafisi-to-kentro-kenenti-ean-den-mpei-ksana-to-onoma-tou-stin-prosopsi/",
-        "https://www.in.gr/2026/08/26/world/iran-kai-oman-syzitoun-gia-enan-prosorino-diadromo-naysiploias-sta-stena-tou-ormouz-kai-gia-aponarkothetisi/"
+        "https://www.in.gr/2026/08/26/greece/voiotia-xoris-energo-metopo-oi-foties-se-agio-vlasio-kai-stefani/",
+        "https://www.in.gr/2026/08/26/economy/to-sxedio-gia-foro-15-sta-crypto/"
       ],
-      "seen_at_utc": "2026-08-26T04:17:22.539124+00:00"
+      "seen_at_utc": "2026-08-26T04:30:33.696100+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T04:17:22.539314+00:00"
+  "updated_at_utc": "2026-08-26T04:30:33.696175+00:00"
 }
