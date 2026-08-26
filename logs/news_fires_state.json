@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564421030/freno-apo-lego-stin-techniti-noimosyni/",
-      "title": "«Φρένο» από Lego στην τεχνητή νοημοσύνη",
-      "normalized_title": "«ΦΡΕΝΟ» ΑΠΟ LEGO ΣΤΗΝ ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ",
+      "url": "https://www.kathimerini.gr/world/564421966/italia-orio-30-stoys-allodapoys-mathites-ana-taxi-proothei-i-kyvernisi-meloni/",
+      "title": "Ιταλία: Οριο 30% στους αλλοδαπούς μαθητές ανά τάξη προωθεί η κυβέρνηση Μελόνι",
+      "normalized_title": "ΙΤΑΛΙΑ: ΟΡΙΟ 30% ΣΤΟΥΣ ΑΛΛΟΔΑΠΟΥΣ ΜΑΘΗΤΕΣ ΑΝΑ ΤΑΞΗ ΠΡΟΩΘΕΙ Η ΚΥΒΕΡΝΗΣΗ ΜΕΛΟΝΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564421030/freno-apo-lego-stin-techniti-noimosyni/",
-        "https://www.kathimerini.gr/life/health/564422170/ios-dytikoy-neiloy-ragdaia-ayxisi-ton-kroysmaton-se-nosokomeia-73-astheneis/"
+        "https://www.kathimerini.gr/world/564421966/italia-orio-30-stoys-allodapoys-mathites-ana-taxi-proothei-i-kyvernisi-meloni/",
+        "https://www.kathimerini.gr/culture/tv/564421687/tote-kai-tora-tsoyvelas-kai-charalampoydi-epistrefoyn/",
+        "https://www.kathimerini.gr/world/564421861/ekkenothike-olokliri-synoikia-sto-verolino-meta-tin-anakalypsi-vomvas-toy-v-p-p/"
       ],
-      "seen_at_utc": "2026-08-26T20:30:01.503279+00:00"
+      "seen_at_utc": "2026-08-26T20:51:13.781299+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,23 +1270,26 @@
       "seen_at_utc": "2026-08-26T20:30:01.503385+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1454935/axios-o-symvivasmos-tis-meta-ypodilonei-tin-apotyhia-ton-ipa-na-parehoyn-paidiki-prostasia-sto-diadiktyo/",
-      "title": "Axios: Ο συμβιβασμός της Meta υποδηλώνει την αποτυχία των ΗΠΑ να παρέχουν παιδική προστασία στο διαδίκτυο",
-      "normalized_title": "AXIOS: Ο ΣΥΜΒΙΒΑΣΜΟΣ ΤΗΣ META ΥΠΟΔΗΛΩΝΕΙ ΤΗΝ ΑΠΟΤΥΧΙΑ ΤΩΝ ΗΠΑ ΝΑ ΠΑΡΕΧΟΥΝ ΠΑΙΔΙΚΗ ΠΡΟΣΤΑΣΙΑ ΣΤΟ ΔΙΑΔΙΚΤΥΟ",
+      "url": "https://www.efsyn.gr/politiki/1454962/elas-pros-kyvernisi-kre%e1%bf%96tton-t%e1%bd%b8-sig%e1%be%b6n-otan-oi-gynaikes-dolofonoyntai/",
+      "title": "ΕΛΑΣ προς κυβέρνηση: «Κρεῖττον τὸ σιγᾶν», όταν οι γυναίκες δολοφονούνται",
+      "normalized_title": "ΕΛΑΣ ΠΡΟΣ ΚΥΒΕΡΝΗΣΗ: «ΚΡΕΙΤΤΟΝ ΤΟ ΣΙΓΑΝ», ΟΤΑΝ ΟΙ ΓΥΝΑΙΚΕΣ ΔΟΛΟΦΟΝΟΥΝΤΑΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1454935/axios-o-symvivasmos-tis-meta-ypodilonei-tin-apotyhia-ton-ipa-na-parehoyn-paidiki-prostasia-sto-diadiktyo/"
+        "https://www.efsyn.gr/politiki/1454962/elas-pros-kyvernisi-kre%e1%bf%96tton-t%e1%bd%b8-sig%e1%be%b6n-otan-oi-gynaikes-dolofonoyntai/",
+        "https://www.efsyn.gr/athlitismos/1454984/pisti-ston-paok-gia-prokrisi-mesa-sti-norvigia/"
       ],
-      "seen_at_utc": "2026-08-26T20:30:01.503358+00:00"
+      "seen_at_utc": "2026-08-26T20:51:13.781376+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/go-fun/meta-to-momo-challenge-o-gatos-me-to-kapelo-o-neos-efialtis-sto-tiktok-ti-proeidopoiei-i-astynomia/",
-      "title": "Μετά το Momo Challenge o Γάτος με τo Καπέλο: Nέος εφιάλτης στο TikTok – Τι προειδοποιεί η αστυνομία",
-      "normalized_title": "ΜΕΤΑ ΤΟ MOMO CHALLENGE O ΓΑΤΟΣ ΜΕ ΤO ΚΑΠΕΛΟ: NΕΟΣ ΕΦΙΑΛΤΗΣ ΣΤΟ TIKTOK – ΤΙ ΠΡΟΕΙΔΟΠΟΙΕΙ Η ΑΣΤΥΝΟΜΙΑ",
+      "url": "https://www.in.gr/2026/08/26/greece/patra-aimatiri-symploki-stis-fylakes-agiou-stefanou-sto-nosokomeio-enas-kratoumenos/",
+      "title": "Πάτρα: Αιματηρή συμπλοκή στις φυλακές Αγίου Στεφάνου – Στο νοσοκομείο ένας κρατούμενος",
+      "normalized_title": "ΠΑΤΡΑ: ΑΙΜΑΤΗΡΗ ΣΥΜΠΛΟΚΗ ΣΤΙΣ ΦΥΛΑΚΕΣ ΑΓΙΟΥ ΣΤΕΦΑΝΟΥ – ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΕΝΑΣ ΚΡΑΤΟΥΜΕΝΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/go-fun/meta-to-momo-challenge-o-gatos-me-to-kapelo-o-neos-efialtis-sto-tiktok-ti-proeidopoiei-i-astynomia/"
+        "https://www.in.gr/2026/08/26/greece/patra-aimatiri-symploki-stis-fylakes-agiou-stefanou-sto-nosokomeio-enas-kratoumenos/",
+        "https://www.in.gr/2026/08/26/world/oi-ipa-katigoroun-tin-kina-gia-kyvernoepitheseis-sto-ypourgeio-dikaiosynis-ti-nasa-ti-fed-kai-ti-gerousia/",
+        "https://www.in.gr/2026/08/26/sports/football/aek-lefski-sofias-kai-tetarto-gkol-gia-tous-kitrinous-me-penalti-tou-marin-vids/"
       ],
-      "seen_at_utc": "2026-08-26T20:30:01.503324+00:00"
+      "seen_at_utc": "2026-08-26T20:51:13.781343+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T20:30:01.503460+00:00"
+  "updated_at_utc": "2026-08-26T20:51:13.781442+00:00"
 }
