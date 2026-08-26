@@ -1,13 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564421585/i-nea-dimokratia-den-tha-psifisei-tin-elena-akrita-gia-antiproedro-tis-voylis/",
-      "title": "Η Νέα Δημοκρατία δεν θα ψηφίσει την Ελενα Ακρίτα για αντιπρόεδρο της Βουλής",
-      "normalized_title": "Η ΝΕΑ ΔΗΜΟΚΡΑΤΙΑ ΔΕΝ ΘΑ ΨΗΦΙΣΕΙ ΤΗΝ ΕΛΕΝΑ ΑΚΡΙΤΑ ΓΙΑ ΑΝΤΙΠΡΟΕΔΡΟ ΤΗΣ ΒΟΥΛΗΣ",
+      "url": "https://www.kathimerini.gr/world/564421603/charti-ton-toyrkikon-thalassion-parkon-dimosieyse-to-anadolu/",
+      "title": "Τουρκία: Χάρτη των θαλάσσιων πάρκων δημοσίευσε το Anadolu",
+      "normalized_title": "ΤΟΥΡΚΙΑ: ΧΑΡΤΗ ΤΩΝ ΘΑΛΑΣΣΙΩΝ ΠΑΡΚΩΝ ΔΗΜΟΣΙΕΥΣΕ ΤΟ ANADOLU",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564421585/i-nea-dimokratia-den-tha-psifisei-tin-elena-akrita-gia-antiproedro-tis-voylis/"
+        "https://www.kathimerini.gr/world/564421603/charti-ton-toyrkikon-thalassion-parkon-dimosieyse-to-anadolu/",
+        "https://www.kathimerini.gr/opinion/readers/564420721/plithorismos-akriveia-kai-agorastiki-dynami/",
+        "https://www.kathimerini.gr/opinion/readers/564420715/eisagogikes-sta-aei-kai-o-foyrnos-toy-chotza/",
+        "https://www.kathimerini.gr/opinion/readers/564420709/to-istoriko-ktirio-toy-polemikoy-naytikoy/",
+        "https://www.kathimerini.gr/opinion/readers/564420706/paratiriseis-en-tachei/",
+        "https://www.kathimerini.gr/opinion/readers/564420718/ena-komma-poy-mpike-se-lathos-thesi/",
+        "https://www.kathimerini.gr/economy/business/564420997/ayxanontai-ragdaia-oi-syndeseis-optikis-inas-gia-grigoro-internet/"
       ],
-      "seen_at_utc": "2026-08-26T12:51:10.307485+00:00"
+      "seen_at_utc": "2026-08-26T13:17:00.829949+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1265,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869795/toulahiston-42-metanastes-sta-notia-tis-kritis-epiheirisi-tou-limenikou/?utm_source=rss",
-      "title": "Τουλάχιστον 42 μετανάστες στα νότια της Κρήτης, επιχείρηση του Λιμενικού",
-      "normalized_title": "ΤΟΥΛΑΧΙΣΤΟΝ 42 ΜΕΤΑΝΑΣΤΕΣ ΣΤΑ ΝΟΤΙΑ ΤΗΣ ΚΡΗΤΗΣ, ΕΠΙΧΕΙΡΗΣΗ ΤΟΥ ΛΙΜΕΝΙΚΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1869809/o-kosmos-fovotan-topothetisan-plota-fragmata-gia-na-prostateutoun-apo-tis-mov-medouses-stin-euvoia/?utm_source=rss",
+      "title": "«Ο κόσμος φοβόταν»: Τοποθέτησαν πλωτά φράγματα για να προστατευτούν από τις μωβ μέδουσες στην Εύβοια",
+      "normalized_title": "«Ο ΚΟΣΜΟΣ ΦΟΒΟΤΑΝ»: ΤΟΠΟΘΕΤΗΣΑΝ ΠΛΩΤΑ ΦΡΑΓΜΑΤΑ ΓΙΑ ΝΑ ΠΡΟΣΤΑΤΕΥΤΟΥΝ ΑΠΟ ΤΙΣ ΜΩΒ ΜΕΔΟΥΣΕΣ ΣΤΗΝ ΕΥΒΟΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869795/toulahiston-42-metanastes-sta-notia-tis-kritis-epiheirisi-tou-limenikou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869809/o-kosmos-fovotan-topothetisan-plota-fragmata-gia-na-prostateutoun-apo-tis-mov-medouses-stin-euvoia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T12:30:10.091799+00:00"
+      "seen_at_utc": "2026-08-26T13:17:00.830114+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1454745/polakis-kata-themistokleoys-oi-energeiakes-anavathmiseis-itan-sovantismata-me-ypertimologisi-sto-pentaplasio/",
-      "title": "Πολάκης κατά Θεμιστοκλέους: Οι ενεργειακές αναβαθμίσεις ήταν σοβαντίσματα με υπερτιμολόγηση στο πενταπλάσιο",
-      "normalized_title": "ΠΟΛΑΚΗΣ ΚΑΤΑ ΘΕΜΙΣΤΟΚΛΕΟΥΣ: ΟΙ ΕΝΕΡΓΕΙΑΚΕΣ ΑΝΑΒΑΘΜΙΣΕΙΣ ΗΤΑΝ ΣΟΒΑΝΤΙΣΜΑΤΑ ΜΕ ΥΠΕΡΤΙΜΟΛΟΓΗΣΗ ΣΤΟ ΠΕΝΤΑΠΛΑΣΙΟ",
+      "url": "https://www.efsyn.gr/politiki/1454797/kerameos-gia-syntaxeis-hireias-apo-simera-lamvanei-telos-mia-terastia-koinoniki-adikia/",
+      "title": "Κεραμέως για συντάξεις χηρείας: Από σήμερα λαμβάνει τέλος μια τεράστια κοινωνική αδικία",
+      "normalized_title": "ΚΕΡΑΜΕΩΣ ΓΙΑ ΣΥΝΤΑΞΕΙΣ ΧΗΡΕΙΑΣ: ΑΠΟ ΣΗΜΕΡΑ ΛΑΜΒΑΝΕΙ ΤΕΛΟΣ ΜΙΑ ΤΕΡΑΣΤΙΑ ΚΟΙΝΩΝΙΚΗ ΑΔΙΚΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1454745/polakis-kata-themistokleoys-oi-energeiakes-anavathmiseis-itan-sovantismata-me-ypertimologisi-sto-pentaplasio/"
+        "https://www.efsyn.gr/politiki/1454797/kerameos-gia-syntaxeis-hireias-apo-simera-lamvanei-telos-mia-terastia-koinoniki-adikia/",
+        "https://www.efsyn.gr/athlitismos/1454779/o-panathinaikos-ekleise-ton-27hrono-marokino-diethni-loyza-tis-goyotfornt/",
+        "https://www.efsyn.gr/nisides/1454777/kai-omos-kapoioi-protimoyn-voyno-to-kalokairi-ypsiles-plirotites-se-ipeiro-pilio-kai-oreini-arkadia/",
+        "https://www.efsyn.gr/ellada/1454769/i-ypsili-zesti-synehizetai-ta-meltemia-anamenetai-na-sosoyn-tin-katastasi/"
       ],
-      "seen_at_utc": "2026-08-26T12:51:10.307584+00:00"
+      "seen_at_utc": "2026-08-26T13:17:00.830088+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/in-science/episthmes/me-ton-dounavi-na-exei-sxedon-sterepsei-oi-voulgaroi-vgikan-gia-kynigi-apolithomaton/",
-      "title": "Με τον Δούναβη να έχει σχεδόν στερέψει, οι Βούλγαροι βγήκαν για κυνήγι απολιθωμάτων",
-      "normalized_title": "ΜΕ ΤΟΝ ΔΟΥΝΑΒΗ ΝΑ ΕΧΕΙ ΣΧΕΔΟΝ ΣΤΕΡΕΨΕΙ, ΟΙ ΒΟΥΛΓΑΡΟΙ ΒΓΗΚΑΝ ΓΙΑ ΚΥΝΗΓΙ ΑΠΟΛΙΘΩΜΑΤΩΝ",
+      "url": "https://www.in.gr/2026/08/26/in-science/technology/me-eksodikastiko-symvivasmo-glitose-i-meta-ti-simantikoteri-diki-tis-gia-vlaves-sta-paidia/",
+      "title": "Με εξωδικαστικό συμβιβασμό γλίτωσε η Meta τη σημαντικότερη δίκη της για βλάβες στα παιδιά",
+      "normalized_title": "ΜΕ ΕΞΩΔΙΚΑΣΤΙΚΟ ΣΥΜΒΙΒΑΣΜΟ ΓΛΙΤΩΣΕ Η META ΤΗ ΣΗΜΑΝΤΙΚΟΤΕΡΗ ΔΙΚΗ ΤΗΣ ΓΙΑ ΒΛΑΒΕΣ ΣΤΑ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/in-science/episthmes/me-ton-dounavi-na-exei-sxedon-sterepsei-oi-voulgaroi-vgikan-gia-kynigi-apolithomaton/",
-        "https://www.in.gr/2026/08/26/sports/football/to-mellon-tis-moiazei-lampro-i-arxaia-ellada-apotheonei-ti-sygxroni-genia-tou-ellinikou-podosfairou-pic/",
-        "https://www.in.gr/2026/08/26/politics/aftodioikisi/proliptiki-diakopi-leitourgias-sintrivanion-kai-texnitis-limnis/"
+        "https://www.in.gr/2026/08/26/in-science/technology/me-eksodikastiko-symvivasmo-glitose-i-meta-ti-simantikoteri-diki-tis-gia-vlaves-sta-paidia/",
+        "https://www.in.gr/2026/08/26/sports/football/anakoinothike-to-super-deal-paiktis-tis-mantsester-siti-o-mpouanti-vid-pics/",
+        "https://www.in.gr/2026/08/26/plus/medianews/vita-to-neo-teyxos-erxetai-ayti-tin-kyriaki-me-to-vima/",
+        "https://www.in.gr/2026/08/26/go-fun/style/shein-pos-o-gigantas-tis-fast-fashion-pire-tin-kato-volta/",
+        "https://www.in.gr/2026/08/26/economy/oikonomikes-eidiseis/elstat-sxedon-diplasioi-ilikiomenoi-apo-oti-paidia-stin-ellada-dimografiko-kampanaki-se-arithmous/",
+        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/pyra-katrini-stin-kyvernisi-meta-apo-7-xronia-anakalypse-tin-tourkiki-proklitikotita/",
+        "https://www.in.gr/2026/08/26/politics/politiki-grammateia/elas-gia-syntakseis-xireias-paraplanitikoi-oi-panigyrismoi-eksairountai-xiliades-piran-100-epistrefoun-1/"
       ],
-      "seen_at_utc": "2026-08-26T12:51:10.307537+00:00"
+      "seen_at_utc": "2026-08-26T13:17:00.830049+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T12:51:10.307658+00:00"
+  "updated_at_utc": "2026-08-26T13:17:00.830192+00:00"
 }
