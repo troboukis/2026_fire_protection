@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564421549/magnisia-pyrkagia-se-fortigo-ploio-mesa-se-naypigeio/",
-      "title": "Μαγνησία: Πυρκαγιά σε φορτηγό πλοίο μέσα σε ναυπηγείο",
-      "normalized_title": "ΜΑΓΝΗΣΙΑ: ΠΥΡΚΑΓΙΑ ΣΕ ΦΟΡΤΗΓΟ ΠΛΟΙΟ ΜΕΣΑ ΣΕ ΝΑΥΠΗΓΕΙΟ",
+      "url": "https://www.kathimerini.gr/world/564421564/prigkipas-chari-kai-megkan-markl-epistrefoyn-simera-sti-vretania/",
+      "title": "Πρίγκιπας Χάρι και Μέγκαν Μαρκλ επιστρέφουν σήμερα στη Βρετανία",
+      "normalized_title": "ΠΡΙΓΚΙΠΑΣ ΧΑΡΙ ΚΑΙ ΜΕΓΚΑΝ ΜΑΡΚΛ ΕΠΙΣΤΡΕΦΟΥΝ ΣΗΜΕΡΑ ΣΤΗ ΒΡΕΤΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564421549/magnisia-pyrkagia-se-fortigo-ploio-mesa-se-naypigeio/",
-        "https://www.kathimerini.gr/world/564421534/chaos-sto-nepal-toylachiston-17-nekroi-apo-plimmyres-ekatontades-agnooymenoi/",
-        "https://www.kathimerini.gr/politics/parties/564420559/fthinoporini-antepithesi-me-dyo-stathmoys-schediazei-to-pasok/"
+        "https://www.kathimerini.gr/world/564421564/prigkipas-chari-kai-megkan-markl-epistrefoyn-simera-sti-vretania/",
+        "https://www.kathimerini.gr/economy/564414979/arthro-toy-kosti-stampoli-stin-k-i-epitychia-ton-ellinikon-iliakon-thermikon-systimaton-k/",
+        "https://www.kathimerini.gr/world/564420676/i-afriki-dynamika-stin-koyrsa-toy-diastimatos/"
       ],
-      "seen_at_utc": "2026-08-26T11:30:00.624748+00:00"
+      "seen_at_utc": "2026-08-26T11:51:15.271598+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869764/metro-thessalonikis-se-leitourgia-apo-aurio-i-epektasi-pros-kalamaria-oi-pede-neoi-stathmoi-kai-to-orario-leitourgias/?utm_source=rss",
-      "title": "Μετρό Θεσσαλονίκης: Σε λειτουργία από αύριο η επέκταση προς Καλαμαριά, οι πέντε νέοι σταθμοί και το ωράριο λειτουργίας",
-      "normalized_title": "ΜΕΤΡΟ ΘΕΣΣΑΛΟΝΙΚΗΣ: ΣΕ ΛΕΙΤΟΥΡΓΙΑ ΑΠΟ ΑΥΡΙΟ Η ΕΠΕΚΤΑΣΗ ΠΡΟΣ ΚΑΛΑΜΑΡΙΑ, ΟΙ ΠΕΝΤΕ ΝΕΟΙ ΣΤΑΘΜΟΙ ΚΑΙ ΤΟ ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1869776/purkagia-se-fortigo-ploio-stin-amaliapoli-magnisias/?utm_source=rss",
+      "title": "Πυρκαγιά σε φορτηγό πλοίο εντός ιδιωτικού ναυπηγείου στην Αμαλιάπολη",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΦΟΡΤΗΓΟ ΠΛΟΙΟ ΕΝΤΟΣ ΙΔΙΩΤΙΚΟΥ ΝΑΥΠΗΓΕΙΟΥ ΣΤΗΝ ΑΜΑΛΙΑΠΟΛΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869764/metro-thessalonikis-se-leitourgia-apo-aurio-i-epektasi-pros-kalamaria-oi-pede-neoi-stathmoi-kai-to-orario-leitourgias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869755/xekinoun-aurio-oi-eggrafes-ton-protoeton-sta-aei-analutika-i-diadikasia-kai-i-prothesmia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869776/purkagia-se-fortigo-ploio-stin-amaliapoli-magnisias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T11:16:55.678637+00:00"
+      "seen_at_utc": "2026-08-26T11:51:15.271736+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1454626/prova-tzenerale/",
-      "title": "Πρόβα τζενεράλε",
-      "normalized_title": "ΠΡΟΒΑ ΤΖΕΝΕΡΑΛΕ",
+      "url": "https://www.efsyn.gr/oikonomia/1454721/georgiadis-asthenis-afise-me-diathiki-sto-ypoyrgeio-ygeias-mia-provlita-stis-ipa-terastia-i-akiniti-perioysia/",
+      "title": "Γεωργιάδης: Ασθενής άφησε με διαθήκη στο υπουργείο Υγείας μια προβλήτα στις ΗΠΑ – Τεράστια η ακίνητη περιουσία",
+      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ: ΑΣΘΕΝΗΣ ΑΦΗΣΕ ΜΕ ΔΙΑΘΗΚΗ ΣΤΟ ΥΠΟΥΡΓΕΙΟ ΥΓΕΙΑΣ ΜΙΑ ΠΡΟΒΛΗΤΑ ΣΤΙΣ ΗΠΑ – ΤΕΡΑΣΤΙΑ Η ΑΚΙΝΗΤΗ ΠΕΡΙΟΥΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1454626/prova-tzenerale/",
-        "https://www.efsyn.gr/stiles/1454620/pagovoyno-anaxiokratias-kai-eynoiokratias/",
-        "https://www.efsyn.gr/stiles/1454580/lesvos-viaii-allagi-oikonomikoy-monteloy/",
-        "https://www.efsyn.gr/athlitismos/1454712/mesogeiakoi-agones-istoriko-halkino-metallio-gia-ti-matina-sotirioy-sto-mpantminton/"
+        "https://www.efsyn.gr/oikonomia/1454721/georgiadis-asthenis-afise-me-diathiki-sto-ypoyrgeio-ygeias-mia-provlita-stis-ipa-terastia-i-akiniti-perioysia/",
+        "https://www.efsyn.gr/ellada/1454708/trohaio-dystyhima-stin-kalymno-nekros-21hronos-omogenis-apo-tin-aystralia/",
+        "https://www.efsyn.gr/politiki/1454715/minyma-marinaki-stin-toyrkia-to-kalodio-tha-prohorisei-kinoymaste-me-vasi-to-diethnes-dikaio/",
+        "https://www.efsyn.gr/life/1454717/simera-epistrefoyn-sti-vretania-o-prigkipas-hari-kai-i-megkan-markl/",
+        "https://www.efsyn.gr/ellada/1454716/magnisia-pyrkagia-se-fortigo-ploio-entos-naypigeioy-stin-amaliapoli/"
       ],
-      "seen_at_utc": "2026-08-26T11:30:00.624811+00:00"
+      "seen_at_utc": "2026-08-26T11:51:15.271714+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/world/germania-ergazomenos-sto-aerodromio-tis-frankfourtis-pethane-apo-elonosia/",
-      "title": "Εργαζόμενος πέθανε από ελονοσία στο αεροδρόμιο της Φρανκφούρτης",
-      "normalized_title": "ΕΡΓΑΖΟΜΕΝΟΣ ΠΕΘΑΝΕ ΑΠΟ ΕΛΟΝΟΣΙΑ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΦΡΑΝΚΦΟΥΡΤΗΣ",
+      "url": "https://www.in.gr/2026/08/26/in-science/ai/o-mpil-gkeits-proeidopoiei-i-ai-einai-pio-epikindyni-apo-oti-paradexontai-oi-megales-etaireies-texnologias/",
+      "title": "Ο Μπιλ Γκέιτς προειδοποιεί: Η AI είναι πιο επικίνδυνη από ό,τι παραδέχονται οι μεγάλες εταιρείες τεχνολογίας",
+      "normalized_title": "Ο ΜΠΙΛ ΓΚΕΙΤΣ ΠΡΟΕΙΔΟΠΟΙΕΙ: Η AI ΕΙΝΑΙ ΠΙΟ ΕΠΙΚΙΝΔΥΝΗ ΑΠΟ Ο,ΤΙ ΠΑΡΑΔΕΧΟΝΤΑΙ ΟΙ ΜΕΓΑΛΕΣ ΕΤΑΙΡΕΙΕΣ ΤΕΧΝΟΛΟΓΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/world/germania-ergazomenos-sto-aerodromio-tis-frankfourtis-pethane-apo-elonosia/",
-        "https://www.in.gr/2026/08/26/world/netaniaxou-apokalei-tous-iranous-agrious-kai-leei-oti-den-einai-dynati-kamia-symfonia/",
-        "https://www.in.gr/2026/08/26/in-science/technology/kinezika-rompot-katerripsan-4-pagkosmia-rekor-ston-stivo-kapoia-omos-traymatistikan/"
+        "https://www.in.gr/2026/08/26/in-science/ai/o-mpil-gkeits-proeidopoiei-i-ai-einai-pio-epikindyni-apo-oti-paradexontai-oi-megales-etaireies-texnologias/",
+        "https://www.in.gr/2026/08/26/world/h-oukrania-parasimoforise-ton-mask-gia-ti-voitheia-pou-prosefere-me-to-starlink/",
+        "https://www.in.gr/2026/08/26/greece/thessaloniki-stamatise-to-ix-tou-logo-adiathesias-kai-prosekrouse-pano-tou-allo-oxima-tesseris-traymaties/",
+        "https://www.in.gr/2026/08/26/politics/aftodioikisi/dimos-sifnou-miniaio-epidoma-sitisis-stous-ekpaideytikous/",
+        "https://www.in.gr/2026/08/26/sports/othersports/istoriko-proto-metallio-gia-to-elliniko-mpantminton-xalkini-i-matina-sotiriou-stous-mesogeiakous/"
       ],
-      "seen_at_utc": "2026-08-26T11:30:00.624797+00:00"
+      "seen_at_utc": "2026-08-26T11:51:15.271671+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T11:30:00.624892+00:00"
+  "updated_at_utc": "2026-08-26T11:51:15.271826+00:00"
 }
