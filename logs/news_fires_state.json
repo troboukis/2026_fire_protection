@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/agenda/564421495/exodos-stin-athina-kai-ektos-tin-tetarti-26-8-buzz-kull-kai-andreas-polyzogopoylos/",
-      "title": "Εξοδος στην Αθήνα (και εκτός) την Τετάρτη 26/8: Buzz Kull και Ανδρέας Πολυζωγόπουλος",
-      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ (ΚΑΙ ΕΚΤΟΣ) ΤΗΝ ΤΕΤΑΡΤΗ 26/8: BUZZ KULL ΚΑΙ ΑΝΔΡΕΑΣ ΠΟΛΥΖΩΓΟΠΟΥΛΟΣ",
+      "url": "https://www.kathimerini.gr/visual/video/564373192/o-teleytaios-laternatzis/",
+      "title": "Ο τελευταίος «λατερνατζής»",
+      "normalized_title": "Ο ΤΕΛΕΥΤΑΙΟΣ «ΛΑΤΕΡΝΑΤΖΗΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/agenda/564421495/exodos-stin-athina-kai-ektos-tin-tetarti-26-8-buzz-kull-kai-andreas-polyzogopoylos/",
-        "https://www.kathimerini.gr/politics/564421486/syriza-i-elena-akrita-sti-thesi-tis-antiproedroy-tis-voylis/"
+        "https://www.kathimerini.gr/visual/video/564373192/o-teleytaios-laternatzis/",
+        "https://www.kathimerini.gr/world/564421501/netaniachoy-gia-iran-amfivallo-oti-mporei-na-yparxei-symfonia-me-aytoys-toys-agrioys/",
+        "https://www.kathimerini.gr/society/564421504/santorini-sto-nosokomeio-aniliki-meta-apo-katanalosi-alkool-dyo-syllipseis/"
       ],
-      "seen_at_utc": "2026-08-26T10:30:11.865083+00:00"
+      "seen_at_utc": "2026-08-26T10:51:07.340924+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869744/neodioristoi-ekpaideutikoi-pou-vriskoun-spiti-poso-plironoun-kai-poioi-dimoi-tous-voithoun/?utm_source=rss",
-      "title": "Νεοδιόριστοι εκπαιδευτικοί: Πού βρίσκουν σπίτι, πόσο πληρώνουν και ποιοι Δήμοι τους βοηθούν",
-      "normalized_title": "ΝΕΟΔΙΟΡΙΣΤΟΙ ΕΚΠΑΙΔΕΥΤΙΚΟΙ: ΠΟΥ ΒΡΙΣΚΟΥΝ ΣΠΙΤΙ, ΠΟΣΟ ΠΛΗΡΩΝΟΥΝ ΚΑΙ ΠΟΙΟΙ ΔΗΜΟΙ ΤΟΥΣ ΒΟΗΘΟΥΝ",
+      "url": "https://www.protothema.gr/greece/article/1869747/thessaloniki-stamatise-to-ih-tou-logo-adiathesias-kai-prosekrouse-pano-tou-allo-ohima-tesseris-traumaties/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Σταμάτησε το ΙΧ του λόγω αδιαθεσίας και προσέκρουσε πάνω του άλλο όχημα, τέσσερις τραυματίες",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΑΜΑΤΗΣΕ ΤΟ ΙΧ ΤΟΥ ΛΟΓΩ ΑΔΙΑΘΕΣΙΑΣ ΚΑΙ ΠΡΟΣΕΚΡΟΥΣΕ ΠΑΝΩ ΤΟΥ ΑΛΛΟ ΟΧΗΜΑ, ΤΕΣΣΕΡΙΣ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869744/neodioristoi-ekpaideutikoi-pou-vriskoun-spiti-poso-plironoun-kai-poioi-dimoi-tous-voithoun/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869747/thessaloniki-stamatise-to-ih-tou-logo-adiathesias-kai-prosekrouse-pano-tou-allo-ohima-tesseris-traumaties/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T10:30:11.865193+00:00"
+      "seen_at_utc": "2026-08-26T10:51:07.341063+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1454677/elas-gia-anartisi-mitsotaki-anthrakes-o-thisayros-gia-tis-syntaxeis-hireias/",
-      "title": "ΕΛΑΣ για ανάρτηση Μητσοτάκη: Άνθρακες ο θησαυρός για τις συντάξεις χηρείας",
-      "normalized_title": "ΕΛΑΣ ΓΙΑ ΑΝΑΡΤΗΣΗ ΜΗΤΣΟΤΑΚΗ: ΑΝΘΡΑΚΕΣ Ο ΘΗΣΑΥΡΟΣ ΓΙΑ ΤΙΣ ΣΥΝΤΑΞΕΙΣ ΧΗΡΕΙΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1454565/metro-vs-oasth-tha-plironoyn-tessera-eisitiria-gia-ale-retoyr-kalamaria-thessaloniki/",
+      "title": "Μετρό vs ΟΑΣΘ: Θα πληρώνουν τέσσερα εισιτήρια για αλέ ρετούρ Καλαμαριά – Θεσσαλονίκη",
+      "normalized_title": "ΜΕΤΡΟ VS ΟΑΣΘ: ΘΑ ΠΛΗΡΩΝΟΥΝ ΤΕΣΣΕΡΑ ΕΙΣΙΤΗΡΙΑ ΓΙΑ ΑΛΕ ΡΕΤΟΥΡ ΚΑΛΑΜΑΡΙΑ – ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1454677/elas-gia-anartisi-mitsotaki-anthrakes-o-thisayros-gia-tis-syntaxeis-hireias/"
+        "https://www.efsyn.gr/ellada/1454565/metro-vs-oasth-tha-plironoyn-tessera-eisitiria-gia-ale-retoyr-kalamaria-thessaloniki/",
+        "https://www.efsyn.gr/politiki/1454636/protasi-kallianoy-gia-eidiki-eisfora-stin-golden-visa-oi-times-ton-akiniton-ehoyn-ayxithei-poly/",
+        "https://www.efsyn.gr/politiki/1454680/syriza-i-elena-akrita-sti-thesi-tis-antiproedroy-tis-voylis/"
       ],
-      "seen_at_utc": "2026-08-26T10:30:11.865171+00:00"
+      "seen_at_utc": "2026-08-26T10:51:07.341024+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/politics/kke-o-mitsotakis-exei-to-thrasos-na-parousiazei-os-paroxi-ti-mi-perikopi-ki-ayto-en-merei-ton-syntakseon-xireias/",
-      "title": "ΚΚΕ: Ο Μητσοτάκης έχει το θράσος να παρουσιάζει ως «παροχή» τη μη περικοπή – κι αυτό εν μέρει – των συντάξεων χηρείας",
-      "normalized_title": "ΚΚΕ: Ο ΜΗΤΣΟΤΑΚΗΣ ΕΧΕΙ ΤΟ ΘΡΑΣΟΣ ΝΑ ΠΑΡΟΥΣΙΑΖΕΙ ΩΣ «ΠΑΡΟΧΗ» ΤΗ ΜΗ ΠΕΡΙΚΟΠΗ – ΚΙ ΑΥΤΟ ΕΝ ΜΕΡΕΙ – ΤΩΝ ΣΥΝΤΑΞΕΩΝ ΧΗΡΕΙΑΣ",
+      "url": "https://www.in.gr/2026/08/26/plus/medianews/mega-gegonota-oi-rania-tzima-katerina-panagopoulou-kai-giannis-pretenteris-epistrefoun/",
+      "title": "MEGA Γεγονότα: Οι Ράνια Τζίμα, Κατερίνα Παναγοπούλου και Γιάννης Πρετεντέρης επιστρέφουν",
+      "normalized_title": "MEGA ΓΕΓΟΝΟΤΑ: ΟΙ ΡΑΝΙΑ ΤΖΙΜΑ, ΚΑΤΕΡΙΝΑ ΠΑΝΑΓΟΠΟΥΛΟΥ ΚΑΙ ΓΙΑΝΝΗΣ ΠΡΕΤΕΝΤΕΡΗΣ ΕΠΙΣΤΡΕΦΟΥΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/politics/kke-o-mitsotakis-exei-to-thrasos-na-parousiazei-os-paroxi-ti-mi-perikopi-ki-ayto-en-merei-ton-syntakseon-xireias/"
+        "https://www.in.gr/2026/08/26/plus/medianews/mega-gegonota-oi-rania-tzima-katerina-panagopoulou-kai-giannis-pretenteris-epistrefoun/",
+        "https://www.in.gr/2026/08/26/world/rosia-feidolo-to-kremlino-gia-episkepsi-tou-epikefalis-tis-cia-sti-mosxa-den-synantithike-me-ton-poutin/",
+        "https://www.in.gr/2026/08/26/sports/football/o-kalampria-stin-apostoli-tou-panathinaikou-me-tin-xrantets-feygei-gia-ti-gallia-o-toumpa/",
+        "https://www.in.gr/2026/08/26/greece/apo-ayrio-pempti-eos-tis-4-septemvriou-oi-eggrafes-epityxonton-sta-aei/",
+        "https://www.in.gr/2026/08/26/greece/xania-fouskoti-varka-me-dyo-efivous-parasyrthike-sti-thalassa/"
       ],
-      "seen_at_utc": "2026-08-26T10:30:11.865143+00:00"
+      "seen_at_utc": "2026-08-26T10:51:07.340978+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T10:30:11.865263+00:00"
+  "updated_at_utc": "2026-08-26T10:51:07.341149+00:00"
 }
