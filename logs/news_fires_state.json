@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564421789/tinos-kantina-sygkentrose-60-000-eyro-gia-to-kentro-ygeias/",
-      "title": "Τήνος: Καντίνα συγκέντρωσε 60.000 ευρώ για το Κέντρο Υγείας",
-      "normalized_title": "ΤΗΝΟΣ: ΚΑΝΤΙΝΑ ΣΥΓΚΕΝΤΡΩΣΕ 60.000 ΕΥΡΩ ΓΙΑ ΤΟ ΚΕΝΤΡΟ ΥΓΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/life/health/564421840/karkinos-sto-pagkreas-egkrithike-protoporiako-farmako-poy-diplasiazei-to-prosdokimo-zois-asthenon/",
+      "title": "Καρκίνος στο πάγκρεας: Εγκρίθηκε πρωτοποριακό φάρμακο που διπλασιάζει το προσδόκιμο ζωής ασθενών",
+      "normalized_title": "ΚΑΡΚΙΝΟΣ ΣΤΟ ΠΑΓΚΡΕΑΣ: ΕΓΚΡΙΘΗΚΕ ΠΡΩΤΟΠΟΡΙΑΚΟ ΦΑΡΜΑΚΟ ΠΟΥ ΔΙΠΛΑΣΙΑΖΕΙ ΤΟ ΠΡΟΣΔΟΚΙΜΟ ΖΩΗΣ ΑΣΘΕΝΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564421789/tinos-kantina-sygkentrose-60-000-eyro-gia-to-kentro-ygeias/",
-        "https://www.kathimerini.gr/society/564421828/metro-thessalonikis-5-neoi-stathmoi-apo-ayrio-egkainiazetai-i-epektasi-pros-kalamaria/",
-        "https://www.kathimerini.gr/k/gastronomos/564420340/patates-me-maratha-giachni-apo-tin-ikaria/",
-        "https://www.kathimerini.gr/society/564421834/agios-dimitrios-synelifthi-odigos-taxi-meta-ti-sygkroysi-me-dikyklo-vrethike-thetikos-sto-alkotest/"
+        "https://www.kathimerini.gr/life/health/564421840/karkinos-sto-pagkreas-egkrithike-protoporiako-farmako-poy-diplasiazei-to-prosdokimo-zois-asthenon/"
       ],
-      "seen_at_utc": "2026-08-26T16:16:58.642182+00:00"
+      "seen_at_utc": "2026-08-26T16:30:20.309746+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,40 +1259,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1869869/allagi-poreias-gia-to-kudon-palas-sto-limani-tis-kerkuras-gia-tin-apovivasi-4hronou/?utm_source=rss",
-      "title": "Αλλαγή πορείας για το Κύδων Παλάς: Στο λιμάνι της Κέρκυρας για την αποβίβαση 4χρονου",
-      "normalized_title": "ΑΛΛΑΓΗ ΠΟΡΕΙΑΣ ΓΙΑ ΤΟ ΚΥΔΩΝ ΠΑΛΑΣ: ΣΤΟ ΛΙΜΑΝΙ ΤΗΣ ΚΕΡΚΥΡΑΣ ΓΙΑ ΤΗΝ ΑΠΟΒΙΒΑΣΗ 4ΧΡΟΝΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1869936/fotia-se-agrotodasiki-periohi-sto-kilkis-sikothikan-3-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά σε αγροτοδασική περιοχή στο Κιλκίς, σηκώθηκαν 3 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΠΕΡΙΟΧΗ ΣΤΟ ΚΙΛΚΙΣ, ΣΗΚΩΘΗΚΑΝ 3 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1869869/allagi-poreias-gia-to-kudon-palas-sto-limani-tis-kerkuras-gia-tin-apovivasi-4hronou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869866/rodopi-gurise-apo-sezon-gia-ta-genethlia-tis-koris-tis-kai-dolofonithike-i-16hroni-itan-se-diplano-domatio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869863/sunelifthisan-duo-atoma-sti-sadorini-pou-katigoroudai-oti-edosan-alkool-se-aniliki-pou-metaferthike-sto-nosokomeio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1869862/fotia-tora-stin-kato-damasta-fthiotidas-sikothikan-duo-aeroskafi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1869936/fotia-se-agrotodasiki-periohi-sto-kilkis-sikothikan-3-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1869930/13-paraviaseis-tou-ethnikou-enaeriou-horou-apo-tourkika-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-26T14:51:19.988555+00:00"
+      "seen_at_utc": "2026-08-26T16:30:20.309910+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1454684/aek-i-pio-megali-ora-einai-tora/",
-      "title": "AEK: Η πιο μεγάλη ώρα είναι τώρα",
-      "normalized_title": "AEK: Η ΠΙΟ ΜΕΓΑΛΗ ΩΡΑ ΕΙΝΑΙ ΤΩΡΑ",
+      "url": "https://www.efsyn.gr/ellada/1454908/epeisodia-sti-sintiki-serron-enohoi-kai-oi-23-katigoroymenoi-2-hronia-fylakisi-horis-anastoli/",
+      "title": "Επεισόδια στη Σιντική Σερρών: Ένοχοι όλοι οι κατηγορούμενοι – 2 χρόνια φυλάκιση χωρίς αναστολή",
+      "normalized_title": "ΕΠΕΙΣΟΔΙΑ ΣΤΗ ΣΙΝΤΙΚΗ ΣΕΡΡΩΝ: ΕΝΟΧΟΙ ΟΛΟΙ ΟΙ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ – 2 ΧΡΟΝΙΑ ΦΥΛΑΚΙΣΗ ΧΩΡΙΣ ΑΝΑΣΤΟΛΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1454684/aek-i-pio-megali-ora-einai-tora/",
-        "https://www.efsyn.gr/tehnes/1454894/pethane-o-ithopoios-kai-tragoydistis/",
-        "https://www.efsyn.gr/ellada/1454887/alepoydes-entopistikan-gyro-apo-to-oaka-i-anakoinosi-tis-dioikisis-den-taizoyme-den-enohloyme/"
+        "https://www.efsyn.gr/ellada/1454908/epeisodia-sti-sintiki-serron-enohoi-kai-oi-23-katigoroymenoi-2-hronia-fylakisi-horis-anastoli/"
       ],
-      "seen_at_utc": "2026-08-26T16:16:58.642252+00:00"
+      "seen_at_utc": "2026-08-26T16:30:20.309876+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/26/life/ntoli-parton-karkinos-katathlipsi-ysterektomi-kai-i-idea-mias-aytoktonias-dekaeties-ponou-kai-oi-maxes-tis/",
-      "title": "Nτόλι Πάρτον: Καρκίνος, κατάθλιψη, υστερεκτομή και η ιδέα μιας αυτοκτονίας – Δεκαετίες πόνου και οι μάχες της",
-      "normalized_title": "NΤΟΛΙ ΠΑΡΤΟΝ: ΚΑΡΚΙΝΟΣ, ΚΑΤΑΘΛΙΨΗ, ΥΣΤΕΡΕΚΤΟΜΗ ΚΑΙ Η ΙΔΕΑ ΜΙΑΣ ΑΥΤΟΚΤΟΝΙΑΣ – ΔΕΚΑΕΤΙΕΣ ΠΟΝΟΥ ΚΑΙ ΟΙ ΜΑΧΕΣ ΤΗΣ",
+      "url": "https://www.in.gr/2026/08/26/sports/tentoglou-kai-karalis-exoun-rantevou-sti-zyrixi-prin-apo-ton-teliko-ton-vryksellon/",
+      "title": "Τεντόγλου και Καραλής έχουν… ραντεβού στη Ζυρίχη πριν από τον τελικό των Βρυξελλών",
+      "normalized_title": "ΤΕΝΤΟΓΛΟΥ ΚΑΙ ΚΑΡΑΛΗΣ ΕΧΟΥΝ… ΡΑΝΤΕΒΟΥ ΣΤΗ ΖΥΡΙΧΗ ΠΡΙΝ ΑΠΟ ΤΟΝ ΤΕΛΙΚΟ ΤΩΝ ΒΡΥΞΕΛΛΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/26/life/ntoli-parton-karkinos-katathlipsi-ysterektomi-kai-i-idea-mias-aytoktonias-dekaeties-ponou-kai-oi-maxes-tis/",
-        "https://www.in.gr/2026/08/26/world/pithanoi-stoxoi-exthrika-mme-kai-ergazomenoi-tous-gia-to-iran-ta-stirizoun-ksenes-mystikes-ypiresies-leei/",
-        "https://www.in.gr/2026/08/26/world/verolino-ekkenonetai-synoikia-meta-tin-anakalypsi-vomvas-tou-v-pp/",
-        "https://www.in.gr/2026/08/26/sports/on-field/sta-tyfla-kai-xoris-poines-oi-ksenoi-diaitites-tis-super-league/"
+        "https://www.in.gr/2026/08/26/sports/tentoglou-kai-karalis-exoun-rantevou-sti-zyrixi-prin-apo-ton-teliko-ton-vryksellon/",
+        "https://www.in.gr/2026/08/26/greece/fotia-ston-agio-antonio-kilkis-sikothikan-3-aeroskafi/"
       ],
-      "seen_at_utc": "2026-08-26T16:16:58.642228+00:00"
+      "seen_at_utc": "2026-08-26T16:30:20.309825+00:00"
     }
   },
-  "updated_at_utc": "2026-08-26T16:16:58.642325+00:00"
+  "updated_at_utc": "2026-08-26T16:30:20.310001+00:00"
 }
