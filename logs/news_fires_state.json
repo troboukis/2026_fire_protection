@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564422719/ayxiseis-gia-chiliades-syntaxioychoys-apo-to-2027/",
-      "title": "Αυξήσεις για χιλιάδες συνταξιούχους από το 2027",
-      "normalized_title": "ΑΥΞΗΣΕΙΣ ΓΙΑ ΧΙΛΙΑΔΕΣ ΣΥΝΤΑΞΙΟΥΧΟΥΣ ΑΠΟ ΤΟ 2027",
+      "url": "https://www.kathimerini.gr/society/564422359/me-symvoliko-enoikio-stis-foititikes-esties/",
+      "title": "Με συμβολικό ενοίκιο στις φοιτητικές εστίες",
+      "normalized_title": "ΜΕ ΣΥΜΒΟΛΙΚΟ ΕΝΟΙΚΙΟ ΣΤΙΣ ΦΟΙΤΗΤΙΚΕΣ ΕΣΤΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564422719/ayxiseis-gia-chiliades-syntaxioychoys-apo-to-2027/",
-        "https://www.kathimerini.gr/culture/cinema/564423760/pethane-o-piter-kalen-i-foni-toy-optimus-prime-stoys-transformers/",
-        "https://www.kathimerini.gr/society/564423733/exi-syllipseis-gia-narkotika-sto-lasithi-kataschethikan-koka-ni-kai-42-820-eyro/"
+        "https://www.kathimerini.gr/society/564422359/me-symvoliko-enoikio-stis-foititikes-esties/",
+        "https://www.kathimerini.gr/k/gastronomos/564421957/syka-psimena-se-glyko-krasi-servirismena-me-santigi/",
+        "https://www.kathimerini.gr/society/564423772/115-paravaseis-se-elegchoys-gia-ilektrika-patinia-9-odigoi-ypo-tin-epireia-alkool/",
+        "https://www.kathimerini.gr/life/564422440/mikra-trik-gia-na-min-paratas-ti-gymnastiki/"
       ],
-      "seen_at_utc": "2026-08-27T15:51:14.148463+00:00"
+      "seen_at_utc": "2026-08-27T16:18:51.432202+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,41 +1262,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870411/upourgeio-perivallodos-to-neo-eidiko-horotaxiko-plaisio-gia-ton-tourismo-enishuei-tin-perivallodiki-prostasia/?utm_source=rss",
-      "title": "Υπουργείο Περιβάλλοντος: Το νέο Ειδικό Χωροταξικό Πλαίσιο για τον Τουρισμό ενισχύει την περιβαλλοντική προστασία",
-      "normalized_title": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ: ΤΟ ΝΕΟ ΕΙΔΙΚΟ ΧΩΡΟΤΑΞΙΚΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΜΟ ΕΝΙΣΧΥΕΙ ΤΗΝ ΠΕΡΙΒΑΛΛΟΝΤΙΚΗ ΠΡΟΣΤΑΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1870419/ilektrika-patinia-115-paravaseis-se-mia-imera-stin-attiki-sunelifthi-methusmenos-odigos/?utm_source=rss",
+      "title": "Ηλεκτρικά πατίνια: 115 παραβάσεις σε μία ημέρα στην Αττική, συνελήφθη μεθυσμένος οδηγός",
+      "normalized_title": "ΗΛΕΚΤΡΙΚΑ ΠΑΤΙΝΙΑ: 115 ΠΑΡΑΒΑΣΕΙΣ ΣΕ ΜΙΑ ΗΜΕΡΑ ΣΤΗΝ ΑΤΤΙΚΗ, ΣΥΝΕΛΗΦΘΗ ΜΕΘΥΣΜΕΝΟΣ ΟΔΗΓΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870411/upourgeio-perivallodos-to-neo-eidiko-horotaxiko-plaisio-gia-ton-tourismo-enishuei-tin-perivallodiki-prostasia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870402/duo-sullipseis-kai-prostima-gia-tis-purkagies-se-euvoia-kai-hio-apo-tin-purosvestiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870396/katadikastike-endooikogeneiaki-apeili-astunomikos-thessaloniki-apagoreuetai-na-plisiasei-sta-100-metra-tin-51hroni-amea/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870419/ilektrika-patinia-115-paravaseis-se-mia-imera-stin-attiki-sunelifthi-methusmenos-odigos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T15:51:14.148614+00:00"
+      "seen_at_utc": "2026-08-27T16:18:51.432320+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1455567/nepal-ekatontades-nekroys-agnooymenoys-vivlikes-katastrofes-afise-piso-tis-i-foniki-orgi-ton-imalaion/",
-      "title": "Νεπάλ: Εκατοντάδες νεκρούς, αγνοούμενους, βιβλικές καταστροφές άφησε πίσω της η φονική οργή των Ιμαλαΐων",
-      "normalized_title": "ΝΕΠΑΛ: ΕΚΑΤΟΝΤΑΔΕΣ ΝΕΚΡΟΥΣ, ΑΓΝΟΟΥΜΕΝΟΥΣ, ΒΙΒΛΙΚΕΣ ΚΑΤΑΣΤΡΟΦΕΣ ΑΦΗΣΕ ΠΙΣΩ ΤΗΣ Η ΦΟΝΙΚΗ ΟΡΓΗ ΤΩΝ ΙΜΑΛΑΙΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1455621/eyvoia-to-nisos-aigina-proskroyse-sto-limani-toy-mantoydioy-apagoreytike-o-apoploys-toy-ploioy/",
+      "title": "Εύβοια: Το «Νήσος Αίγινα» πρόσκρουσε στο λιμάνι του Μαντουδίου – Απαγορεύτηκε ο απόπλους του πλοίου",
+      "normalized_title": "ΕΥΒΟΙΑ: ΤΟ «ΝΗΣΟΣ ΑΙΓΙΝΑ» ΠΡΟΣΚΡΟΥΣΕ ΣΤΟ ΛΙΜΑΝΙ ΤΟΥ ΜΑΝΤΟΥΔΙΟΥ – ΑΠΑΓΟΡΕΥΤΗΚΕ Ο ΑΠΟΠΛΟΥΣ ΤΟΥ ΠΛΟΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1455567/nepal-ekatontades-nekroys-agnooymenoys-vivlikes-katastrofes-afise-piso-tis-i-foniki-orgi-ton-imalaion/",
-        "https://www.efsyn.gr/athlitismos/1455592/pagkosmio-protathlima-kopilasias-hrysos-o-gkaidatzis-asimenies-oi-liolioy-moyratidoy-vinteo/",
-        "https://www.efsyn.gr/politiki/1455563/i-elas-amfisvitei-ton-hrysohoidi-gia-tis-epityhies-toy-ellinikoy-fbi-zita-na-dothoyn-sti-dimosiotita-ta-stoiheia/",
-        "https://www.efsyn.gr/athlitismos/1455384/istoriki-eykairia/",
-        "https://www.efsyn.gr/stiles/1455575/oi-polites-ehoyn-pathei-kai-ehoyn-mathei/"
+        "https://www.efsyn.gr/ellada/1455621/eyvoia-to-nisos-aigina-proskroyse-sto-limani-toy-mantoydioy-apagoreytike-o-apoploys-toy-ploioy/",
+        "https://www.efsyn.gr/politiki/1455557/live-i-omilia-androylaki-stin-ekdilosi-toy-pasok-gia-to-idiotiko-hreos/",
+        "https://www.efsyn.gr/ellada/1455616/thessaloniki-okto-mines-ston-48hrono-astynomiko-gia-endooikogeneiaki-apeili-katigoreitai-kai-gia-viasmo/",
+        "https://www.efsyn.gr/ellada/1455612/pyrkagies-dyo-syllipseis-se-eyvoia-kai-hio-ekanan-ergasies-me-troho-kai-hortokoptiko-mihanima/"
       ],
-      "seen_at_utc": "2026-08-27T15:51:14.148567+00:00"
+      "seen_at_utc": "2026-08-27T16:18:51.432297+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/sports/on-field/to-minyma-tou-kompani-gia-tin-katastasi-tou-mousiala/",
-      "title": "Το μήνυμα του Κομπανί για την κατάσταση του Μουσιάλα",
-      "normalized_title": "ΤΟ ΜΗΝΥΜΑ ΤΟΥ ΚΟΜΠΑΝΙ ΓΙΑ ΤΗΝ ΚΑΤΑΣΤΑΣΗ ΤΟΥ ΜΟΥΣΙΑΛΑ",
+      "url": "https://www.in.gr/2026/08/27/world/apo-to-keli-stin-douleia-kai-tin-politiki-pos-anagnorizoume-tous-psyxopatheis-pou-kryvontai-se-koini-thea/",
+      "title": "Από το κελί στην δουλειά και την πολιτική: Πώς αναγνωρίζουμε τους «ψυχοπαθείς» που κρύβονται σε κοινή θέα",
+      "normalized_title": "ΑΠΟ ΤΟ ΚΕΛΙ ΣΤΗΝ ΔΟΥΛΕΙΑ ΚΑΙ ΤΗΝ ΠΟΛΙΤΙΚΗ: ΠΩΣ ΑΝΑΓΝΩΡΙΖΟΥΜΕ ΤΟΥΣ «ΨΥΧΟΠΑΘΕΙΣ» ΠΟΥ ΚΡΥΒΟΝΤΑΙ ΣΕ ΚΟΙΝΗ ΘΕΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/sports/on-field/to-minyma-tou-kompani-gia-tin-katastasi-tou-mousiala/",
+        "https://www.in.gr/2026/08/27/world/apo-to-keli-stin-douleia-kai-tin-politiki-pos-anagnorizoume-tous-psyxopatheis-pou-kryvontai-se-koini-thea/",
+        "https://www.in.gr/2026/08/27/politics/epikairotita/antiparathesi-nd-me-pasok-gia-tin-ypopsifiotita-akrita-oi-plateies-tou-marinaki-kai-oi-xartopetsetes-tou-mantzou/",
+        "https://www.in.gr/2026/08/27/sports/football/ayti-einai-i-endekada-tou-paok-gia-ti-revans-me-tin-mpran-pic/",
+        "https://www.in.gr/2026/08/27/greece/lasithi-megali-astynomiki-epixeirisi-gia-diakinisi-narkotikon-6-syllipseis/",
+        "https://www.in.gr/2026/08/27/world/nepal-maxi-me-ton-xrono-gia-tous-agnooumenous-eno-katafthanei-diethnis-voitheia/",
+        "https://www.in.gr/2026/08/27/sports/football/panathinaikos-i-11ada-gia-ton-epanaliptiko-me-ti-xrantets-kralove/",
         "https://www.in.gr/2026/08/27/greece/ekselikseis-stin-ypothesi-eksafanisis-tis-kinezas-metafrastrias-i-katathesi-apo-ti-thessaloniki/",
-        "https://www.in.gr/2026/08/27/world/kyvernoepithesi-se-tria-vretanika-aerodromia-eklepsan-dedomena-87-ekatommyrion-pelaton/",
-        "https://www.in.gr/2026/08/27/politics/politiki-grammateia/tsipras-se-gsevee-kai-eea-koino-metopo-gia-tin-katargisi-tou-telous-epitideymatos-kai-ti-diaxeirisi-tou-idiotikou-xreous/"
+        "https://www.in.gr/2026/08/27/politics/epikairotita/anoigei-ton-dimosio-dialogo-gia-to-idiotiko-xreos-to-pasok-11-paremvaseis-pou-mporoun-na-efarmostoun-amesa/",
+        "https://www.in.gr/2026/08/27/sports/football/champions-league/live-streaming-i-klirosi-tis-aek-sti-league-phase-tou-champions-league/",
+        "https://www.in.gr/2026/08/27/life/culture-live/pethane-o-ithopoios-samiouel-monroe-tzounior-se-ilikia-52-eton/"
       ],
-      "seen_at_utc": "2026-08-27T15:51:14.148518+00:00"
+      "seen_at_utc": "2026-08-27T16:18:51.432266+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T15:51:14.148704+00:00"
+  "updated_at_utc": "2026-08-27T16:18:51.432403+00:00"
 }
