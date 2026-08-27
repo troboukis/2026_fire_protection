@@ -1,19 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564422494/i-toyrkia-i-kyvernisi-kai-i-antipoliteysi/",
-      "title": "Η Τουρκία, η κυβέρνηση και η αντιπολίτευση",
-      "normalized_title": "Η ΤΟΥΡΚΙΑ, Η ΚΥΒΕΡΝΗΣΗ ΚΑΙ Η ΑΝΤΙΠΟΛΙΤΕΥΣΗ",
+      "url": "https://www.kathimerini.gr/opinion/564422473/i-dioikisi-ton-allon/",
+      "title": "Η διοίκηση των άλλων",
+      "normalized_title": "Η ΔΙΟΙΚΗΣΗ ΤΩΝ ΑΛΛΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564422494/i-toyrkia-i-kyvernisi-kai-i-antipoliteysi/",
-        "https://www.kathimerini.gr/opinion/564422476/me-aroma-gynaikas-3/",
-        "https://www.kathimerini.gr/opinion/564422479/oi-akrotitestoy-woke-kai-to-wnba/",
-        "https://www.kathimerini.gr/opinion/564422497/vathmologikes-athlopaidies/",
-        "https://www.kathimerini.gr/opinion/564422293/koydoyneskai-koykles/",
-        "https://www.kathimerini.gr/politics/564422341/entos-kai-ektos-den-dinei-thetiki-psifo-gia-tin-akrita-i-n-d/",
-        "https://www.kathimerini.gr/politics/564422290/theoreio-enochlisi-stin-presveia/"
+        "https://www.kathimerini.gr/opinion/564422473/i-dioikisi-ton-allon/",
+        "https://www.kathimerini.gr/columns/564421951/o-nostradamos-tis-ai-i-kerkoporta-gia-chrysi-viza-41-56-ekat-sto-foyrnokai-ena-daneio-sto-mikroskopio/"
       ],
-      "seen_at_utc": "2026-08-27T05:29:59.782439+00:00"
+      "seen_at_utc": "2026-08-27T05:51:10.961740+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,34 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870045/erhetai-rapid-test-gia-ton-io-tou-dutikou-neilou-i-ellinida-epikefalis-mila-sto-ygeiamougr/?utm_source=rss",
-      "title": "Έρχεται rapid τεστ για τον ιό του Δυτικού Νείλου – Η Ελληνίδα επικεφαλής μιλά στο ygeiamou.gr",
-      "normalized_title": "ΕΡΧΕΤΑΙ RAPID ΤΕΣΤ ΓΙΑ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ – Η ΕΛΛΗΝΙΔΑ ΕΠΙΚΕΦΑΛΗΣ ΜΙΛΑ ΣΤΟ YGEIAMOU.GR",
+      "url": "https://www.protothema.gr/greece/article/1870053/1100000-monadikoi-hristes-enimerothikan-hthes-tetarti-26-augoustou-apo-to-protothemagr/?utm_source=rss",
+      "title": "1.100.000 μοναδικοί χρήστες ενημερώθηκαν χθες Τετάρτη 26 Αυγούστου από το protothema.gr",
+      "normalized_title": "1.100.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΤΕΤΑΡΤΗ 26 ΑΥΓΟΥΣΤΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870045/erhetai-rapid-test-gia-ton-io-tou-dutikou-neilou-i-ellinida-epikefalis-mila-sto-ygeiamougr/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870042/zitisan-apo-epivatida-ton-ktel-magnisias-na-valei-ti-gata-tis-sti-skala-apologoumaste-idi-zitoudai-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870053/1100000-monadikoi-hristes-enimerothikan-hthes-tetarti-26-augoustou-apo-to-protothemagr/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T05:17:10.393142+00:00"
+      "seen_at_utc": "2026-08-27T05:51:10.961860+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1455071/olympiakos-stratigika-dikos-toy-o-zota-silva/",
-      "title": "Ολυμπιακός: Στρατηγικά δικός του ο Ζότα Σίλβα",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΣΤΡΑΤΗΓΙΚΑ ΔΙΚΟΣ ΤΟΥ Ο ΖΟΤΑ ΣΙΛΒΑ",
+      "url": "https://www.efsyn.gr/politiki/1455097/sfodri-epithesi-konstantopoyloy-sti-nd-gia-to-ohi-stin-akrita/",
+      "title": "Σφοδρή επίθεση Κωνσταντοπούλου στη ΝΔ για το «όχι» στην Ακρίτα",
+      "normalized_title": "ΣΦΟΔΡΗ ΕΠΙΘΕΣΗ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ ΣΤΗ ΝΔ ΓΙΑ ΤΟ «ΟΧΙ» ΣΤΗΝ ΑΚΡΙΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1455071/olympiakos-stratigika-dikos-toy-o-zota-silva/",
-        "https://www.efsyn.gr/athlitismos/1455063/apofasismeni-sti-riga-i-ethniki-mpasket/"
+        "https://www.efsyn.gr/politiki/1455097/sfodri-epithesi-konstantopoyloy-sti-nd-gia-to-ohi-stin-akrita/",
+        "https://www.efsyn.gr/ellada/1455094/ktel-magnisias-kataggelia-epivatidas-poy-evalan-ti-gata-tis-stis-skales-ti-apantise-i-dioikisi/",
+        "https://www.efsyn.gr/politiki/1455100/ton-olympo-ton-efagan-oi-odigies-hrisis/"
       ],
-      "seen_at_utc": "2026-08-27T05:29:59.782517+00:00"
+      "seen_at_utc": "2026-08-27T05:51:10.961839+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/sports/othersports/prokrimatika-us-open-itta-stis-leptomereies-gia-tin-papamixail-0-2/",
-      "title": "Ήττα στις λεπτομέρειες για την Παπαμιχαήλ και αποκλεισμός (0-2)",
-      "normalized_title": "ΗΤΤΑ ΣΤΙΣ ΛΕΠΤΟΜΕΡΕΙΕΣ ΓΙΑ ΤΗΝ ΠΑΠΑΜΙΧΑΗΛ ΚΑΙ ΑΠΟΚΛΕΙΣΜΟΣ (0-2)",
+      "url": "https://www.in.gr/2026/08/27/greece/agios-dimitrios-methysmenos-odigos-taksi-prokalese-troxaio/",
+      "title": "Μεθυσμένος οδηγός ταξί προκάλεσε τροχαίο στον Άγιο Δημήτριο",
+      "normalized_title": "ΜΕΘΥΣΜΕΝΟΣ ΟΔΗΓΟΣ ΤΑΞΙ ΠΡΟΚΑΛΕΣΕ ΤΡΟΧΑΙΟ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/sports/othersports/prokrimatika-us-open-itta-stis-leptomereies-gia-tin-papamixail-0-2/"
+        "https://www.in.gr/2026/08/27/greece/agios-dimitrios-methysmenos-odigos-taksi-prokalese-troxaio/",
+        "https://www.in.gr/2026/08/27/sports/on-field/giagia-toure-ena-alma-apo-tin-mpratislava/",
+        "https://www.in.gr/2026/08/27/world/iran-kataggellei-tis-amerikanikes-kyroseis-os-oikonomiki-tromokratia-ston-oie/",
+        "https://www.in.gr/2026/08/27/editorial/oi-ekloges-den-tha-krithoun-apo-tin-mpakaliki-tis-kyvernisis-giati-o-psifoforos-anazita-poios-tha-ton-kyvernisei-oxi-poios-tha-ton-eksagorasei/",
+        "https://www.in.gr/2026/08/27/greece/ksekinoun-simera-oi-eggrafes-epityxonton-sta-aei-ilektronika-i-diadikasia/"
       ],
-      "seen_at_utc": "2026-08-27T05:29:59.782489+00:00"
+      "seen_at_utc": "2026-08-27T05:51:10.961802+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T05:29:59.782597+00:00"
+  "updated_at_utc": "2026-08-27T05:51:10.961925+00:00"
 }
