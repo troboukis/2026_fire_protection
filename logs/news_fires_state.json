@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564423727/ios-dytikoy-neiloy-ektakti-epicheirisi-psekasmoy-stin-anatoliki-attiki/",
-      "title": "Ιός Δυτικού Νείλου: Εκτακτη επιχείρηση ψεκασμού στην Ανατολική Αττική",
-      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΕΚΤΑΚΤΗ ΕΠΙΧΕΙΡΗΣΗ ΨΕΚΑΣΜΟΥ ΣΤΗΝ ΑΝΑΤΟΛΙΚΗ ΑΤΤΙΚΗ",
+      "url": "https://www.kathimerini.gr/economy/local/564422719/ayxiseis-gia-chiliades-syntaxioychoys-apo-to-2027/",
+      "title": "Αυξήσεις για χιλιάδες συνταξιούχους από το 2027",
+      "normalized_title": "ΑΥΞΗΣΕΙΣ ΓΙΑ ΧΙΛΙΑΔΕΣ ΣΥΝΤΑΞΙΟΥΧΟΥΣ ΑΠΟ ΤΟ 2027",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564423727/ios-dytikoy-neiloy-ektakti-epicheirisi-psekasmoy-stin-anatoliki-attiki/"
+        "https://www.kathimerini.gr/economy/local/564422719/ayxiseis-gia-chiliades-syntaxioychoys-apo-to-2027/",
+        "https://www.kathimerini.gr/culture/cinema/564423760/pethane-o-piter-kalen-i-foni-toy-optimus-prime-stoys-transformers/",
+        "https://www.kathimerini.gr/society/564423733/exi-syllipseis-gia-narkotika-sto-lasithi-kataschethikan-koka-ni-kai-42-820-eyro/"
       ],
-      "seen_at_utc": "2026-08-27T15:30:16.574556+00:00"
+      "seen_at_utc": "2026-08-27T15:51:14.148463+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870380/akraios-kindunos-purkagias-paraskeui-red-code-kriti-notio-aigaio-ionia-nisia-preveza-thesprotia-lesvo-hio-samo-ikaria/?utm_source=rss",
-      "title": "Ακραίος κίνδυνος πυρκαγιάς την Παρασκευή: Red Code σε Κρήτη, Νότιο Αιγαίο, Ιόνια Νησιά, Πρέβεζα, Θεσπρωτία, Λέσβο, Χίο, Σάμο και Ικαρία",
-      "normalized_title": "ΑΚΡΑΙΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗΝ ΠΑΡΑΣΚΕΥΗ: RED CODE ΣΕ ΚΡΗΤΗ, ΝΟΤΙΟ ΑΙΓΑΙΟ, ΙΟΝΙΑ ΝΗΣΙΑ, ΠΡΕΒΕΖΑ, ΘΕΣΠΡΩΤΙΑ, ΛΕΣΒΟ, ΧΙΟ, ΣΑΜΟ ΚΑΙ ΙΚΑΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1870411/upourgeio-perivallodos-to-neo-eidiko-horotaxiko-plaisio-gia-ton-tourismo-enishuei-tin-perivallodiki-prostasia/?utm_source=rss",
+      "title": "Υπουργείο Περιβάλλοντος: Το νέο Ειδικό Χωροταξικό Πλαίσιο για τον Τουρισμό ενισχύει την περιβαλλοντική προστασία",
+      "normalized_title": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ: ΤΟ ΝΕΟ ΕΙΔΙΚΟ ΧΩΡΟΤΑΞΙΚΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΟΝ ΤΟΥΡΙΣΜΟ ΕΝΙΣΧΥΕΙ ΤΗΝ ΠΕΡΙΒΑΛΛΟΝΤΙΚΗ ΠΡΟΣΤΑΣΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870380/akraios-kindunos-purkagias-paraskeui-red-code-kriti-notio-aigaio-ionia-nisia-preveza-thesprotia-lesvo-hio-samo-ikaria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870411/upourgeio-perivallodos-to-neo-eidiko-horotaxiko-plaisio-gia-ton-tourismo-enishuei-tin-perivallodiki-prostasia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870402/duo-sullipseis-kai-prostima-gia-tis-purkagies-se-euvoia-kai-hio-apo-tin-purosvestiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870396/katadikastike-endooikogeneiaki-apeili-astunomikos-thessaloniki-apagoreuetai-na-plisiasei-sta-100-metra-tin-51hroni-amea/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T15:30:16.574675+00:00"
+      "seen_at_utc": "2026-08-27T15:51:14.148614+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1455588/paok-desmeysi-mystakidi-gia-ti-euroleague-300-000-000-eyro-stin-pentaetia-gia-gipedo-kai-omada/",
-      "title": "ΠΑΟΚ: Δέσμευση Μυστακίδη για τη Euroleague: 300.000.000 ευρώ στην πενταετία για γήπεδο και ομάδα",
-      "normalized_title": "ΠΑΟΚ: ΔΕΣΜΕΥΣΗ ΜΥΣΤΑΚΙΔΗ ΓΙΑ ΤΗ EUROLEAGUE: 300.000.000 ΕΥΡΩ ΣΤΗΝ ΠΕΝΤΑΕΤΙΑ ΓΙΑ ΓΗΠΕΔΟ ΚΑΙ ΟΜΑΔΑ",
+      "url": "https://www.efsyn.gr/kosmos/1455567/nepal-ekatontades-nekroys-agnooymenoys-vivlikes-katastrofes-afise-piso-tis-i-foniki-orgi-ton-imalaion/",
+      "title": "Νεπάλ: Εκατοντάδες νεκρούς, αγνοούμενους, βιβλικές καταστροφές άφησε πίσω της η φονική οργή των Ιμαλαΐων",
+      "normalized_title": "ΝΕΠΑΛ: ΕΚΑΤΟΝΤΑΔΕΣ ΝΕΚΡΟΥΣ, ΑΓΝΟΟΥΜΕΝΟΥΣ, ΒΙΒΛΙΚΕΣ ΚΑΤΑΣΤΡΟΦΕΣ ΑΦΗΣΕ ΠΙΣΩ ΤΗΣ Η ΦΟΝΙΚΗ ΟΡΓΗ ΤΩΝ ΙΜΑΛΑΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1455588/paok-desmeysi-mystakidi-gia-ti-euroleague-300-000-000-eyro-stin-pentaetia-gia-gipedo-kai-omada/",
-        "https://www.efsyn.gr/ellada/1455572/metro-thessalonikis-paradothike-sto-epivatiko-koino-i-epektasi-pros-kalamaria-eikones-vinteo/"
+        "https://www.efsyn.gr/kosmos/1455567/nepal-ekatontades-nekroys-agnooymenoys-vivlikes-katastrofes-afise-piso-tis-i-foniki-orgi-ton-imalaion/",
+        "https://www.efsyn.gr/athlitismos/1455592/pagkosmio-protathlima-kopilasias-hrysos-o-gkaidatzis-asimenies-oi-liolioy-moyratidoy-vinteo/",
+        "https://www.efsyn.gr/politiki/1455563/i-elas-amfisvitei-ton-hrysohoidi-gia-tis-epityhies-toy-ellinikoy-fbi-zita-na-dothoyn-sti-dimosiotita-ta-stoiheia/",
+        "https://www.efsyn.gr/athlitismos/1455384/istoriki-eykairia/",
+        "https://www.efsyn.gr/stiles/1455575/oi-polites-ehoyn-pathei-kai-ehoyn-mathei/"
       ],
-      "seen_at_utc": "2026-08-27T15:30:16.574645+00:00"
+      "seen_at_utc": "2026-08-27T15:51:14.148567+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/world/mia-listeia-tessaron-lepton-eklapi-apo-ispaniko-mouseio-o-anektimitos-thisayros-tis-vigena/",
-      "title": "«Μία ληστεία τεσσάρων λεπτών»: Εκλάπη από ισπανικό μουσείο ο ανεκτίμητος «Θησαυρός της Βιγένα»",
-      "normalized_title": "«ΜΙΑ ΛΗΣΤΕΙΑ ΤΕΣΣΑΡΩΝ ΛΕΠΤΩΝ»: ΕΚΛΑΠΗ ΑΠΟ ΙΣΠΑΝΙΚΟ ΜΟΥΣΕΙΟ Ο ΑΝΕΚΤΙΜΗΤΟΣ «ΘΗΣΑΥΡΟΣ ΤΗΣ ΒΙΓΕΝΑ»",
+      "url": "https://www.in.gr/2026/08/27/sports/on-field/to-minyma-tou-kompani-gia-tin-katastasi-tou-mousiala/",
+      "title": "Το μήνυμα του Κομπανί για την κατάσταση του Μουσιάλα",
+      "normalized_title": "ΤΟ ΜΗΝΥΜΑ ΤΟΥ ΚΟΜΠΑΝΙ ΓΙΑ ΤΗΝ ΚΑΤΑΣΤΑΣΗ ΤΟΥ ΜΟΥΣΙΑΛΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/world/mia-listeia-tessaron-lepton-eklapi-apo-ispaniko-mouseio-o-anektimitos-thisayros-tis-vigena/",
-        "https://www.in.gr/2026/08/27/sports/oi-lioliou-mouratidou-katektisan-argyro-metallio-sto-pagkosmio-protathlima-vid/",
-        "https://www.in.gr/2026/08/27/politics/politiki-grammateia/kikilias-apo-rodo-nea-ploia-perissotera-stelexi-kai-enisxysi-tis-parousias-tou-limenikou-sto-aigaio/",
-        "https://www.in.gr/2026/08/27/world/germania-dyo-nekroi-epeita-apo-epithesi-se-sxoleio-sto-vrandemvourgo/"
+        "https://www.in.gr/2026/08/27/sports/on-field/to-minyma-tou-kompani-gia-tin-katastasi-tou-mousiala/",
+        "https://www.in.gr/2026/08/27/greece/ekselikseis-stin-ypothesi-eksafanisis-tis-kinezas-metafrastrias-i-katathesi-apo-ti-thessaloniki/",
+        "https://www.in.gr/2026/08/27/world/kyvernoepithesi-se-tria-vretanika-aerodromia-eklepsan-dedomena-87-ekatommyrion-pelaton/",
+        "https://www.in.gr/2026/08/27/politics/politiki-grammateia/tsipras-se-gsevee-kai-eea-koino-metopo-gia-tin-katargisi-tou-telous-epitideymatos-kai-ti-diaxeirisi-tou-idiotikou-xreous/"
       ],
-      "seen_at_utc": "2026-08-27T15:30:16.574618+00:00"
+      "seen_at_utc": "2026-08-27T15:51:14.148518+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T15:30:16.574799+00:00"
+  "updated_at_utc": "2026-08-27T15:51:14.148704+00:00"
 }
