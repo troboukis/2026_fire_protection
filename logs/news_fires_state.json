@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564424150/eyropi-telos-gia-ton-paok-apokleismos-sti-norvigia-me-penalti-sto-86/",
-      "title": "Ευρώπη τέλος για τον ΠΑΟΚ – Aποκλεισμός στη Νορβηγία με πέναλτι στο 86′",
-      "normalized_title": "ΕΥΡΩΠΗ ΤΕΛΟΣ ΓΙΑ ΤΟΝ ΠΑΟΚ – AΠΟΚΛΕΙΣΜΟΣ ΣΤΗ ΝΟΡΒΗΓΙΑ ΜΕ ΠΕΝΑΛΤΙ ΣΤΟ 86′",
+      "url": "https://www.kathimerini.gr/world/564422443/giati-emfanizontai-oi-kirsoi-kai-pos-mporoyn-na-antimetopistoyn/",
+      "title": "Γιατί εμφανίζονται οι κιρσοί και πώς μπορούν να αντιμετωπιστούν",
+      "normalized_title": "ΓΙΑΤΙ ΕΜΦΑΝΙΖΟΝΤΑΙ ΟΙ ΚΙΡΣΟΙ ΚΑΙ ΠΩΣ ΜΠΟΡΟΥΝ ΝΑ ΑΝΤΙΜΕΤΩΠΙΣΤΟΥΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564424150/eyropi-telos-gia-ton-paok-apokleismos-sti-norvigia-me-penalti-sto-86/"
+        "https://www.kathimerini.gr/world/564422443/giati-emfanizontai-oi-kirsoi-kai-pos-mporoyn-na-antimetopistoyn/",
+        "https://www.kathimerini.gr/world/564424156/rosia-politika-kinitra-piso-apo-ti-mi-apofylakisi-toy-mlantits/",
+        "https://www.kathimerini.gr/opinion/564422287/toy-aithera-kai-tis-thalassas-ekthesi-tis-venias-dimitrakopoyloy-stin-ydra/",
+        "https://www.kathimerini.gr/life/technology/564424102/meta-ti-symfonia-ipa-meta-o-oie-apaitei-kanones-gia-ola-ta-mesa-koinonikis-diktyosis/",
+        "https://www.kathimerini.gr/economy/local/564422746/epafes-gia-to-eniaio-eyropaiko-fasma-sychnotiton-kinitis/"
       ],
-      "seen_at_utc": "2026-08-27T19:30:00.263529+00:00"
+      "seen_at_utc": "2026-08-27T19:51:12.921189+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1263,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870487/efodos-tis-elas-se-oikous-anohis-stin-attiki-me-26-sullipseis/?utm_source=rss",
-      "title": "Έφοδος του Ελληνικού FBI σε οίκους ανοχής στην Αττική, 26 συλλήψεις",
-      "normalized_title": "ΕΦΟΔΟΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ FBI ΣΕ ΟΙΚΟΥΣ ΑΝΟΧΗΣ ΣΤΗΝ ΑΤΤΙΚΗ, 26 ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1870499/trohaio-sti-thessaloniki-astunomikos-traumatistike-meta-apo-katadioxi-motosikletisti-pou-den-stamatise-se-elegho/?utm_source=rss",
+      "title": "Τροχαίο στη Θεσσαλονίκη: Αστυνομικός τραυματίστηκε μετά από καταδίωξη μοτοσικλετιστή που δεν σταμάτησε σε έλεγχο",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΑΣΤΥΝΟΜΙΚΟΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΜΕΤΑ ΑΠΟ ΚΑΤΑΔΙΩΞΗ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗ ΠΟΥ ΔΕΝ ΣΤΑΜΑΤΗΣΕ ΣΕ ΕΛΕΓΧΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870487/efodos-tis-elas-se-oikous-anohis-stin-attiki-me-26-sullipseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870499/trohaio-sti-thessaloniki-astunomikos-traumatistike-meta-apo-katadioxi-motosikletisti-pou-den-stamatise-se-elegho/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T18:51:53.656347+00:00"
+      "seen_at_utc": "2026-08-27T19:51:12.921289+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1455699/paok-ittithike-sti-norvigia-kai-apohairetise-proora-tin-eyropi/",
-      "title": "ΠΑΟΚ: Ηττήθηκε στη Νορβηγία και αποχαιρέτισε πρόωρα την Ευρώπη",
-      "normalized_title": "ΠΑΟΚ: ΗΤΤΗΘΗΚΕ ΣΤΗ ΝΟΡΒΗΓΙΑ ΚΑΙ ΑΠΟΧΑΙΡΕΤΙΣΕ ΠΡΟΩΡΑ ΤΗΝ ΕΥΡΩΠΗ",
+      "url": "https://www.efsyn.gr/kosmos/1455693/o-symvivasmos-tis-meta-anoixe-ton-dromo-o-oie-apaitei-tora-kanones-gia-ola-ta-mesa-koinonikis-diktyosis/",
+      "title": "Ο συμβιβασμός της Meta άνοιξε τον δρόμο: Ο ΟΗΕ απαιτεί τώρα κανόνες για όλα τα μέσα κοινωνικής δικτύωσης",
+      "normalized_title": "Ο ΣΥΜΒΙΒΑΣΜΟΣ ΤΗΣ META ΑΝΟΙΞΕ ΤΟΝ ΔΡΟΜΟ: Ο ΟΗΕ ΑΠΑΙΤΕΙ ΤΩΡΑ ΚΑΝΟΝΕΣ ΓΙΑ ΟΛΑ ΤΑ ΜΕΣΑ ΚΟΙΝΩΝΙΚΗΣ ΔΙΚΤΥΩΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1455699/paok-ittithike-sti-norvigia-kai-apohairetise-proora-tin-eyropi/",
-        "https://www.efsyn.gr/athlitismos/1455701/mythiko-panellinio-rekor-apo-ton-karali-perase-ta-620-metra-sti-zyrihi-vinteo/",
-        "https://www.efsyn.gr/oikonomia/1455400/poso-symferoysa-einai-i-proori-apopliromi-toy-dimosioy-hreoys/"
+        "https://www.efsyn.gr/kosmos/1455693/o-symvivasmos-tis-meta-anoixe-ton-dromo-o-oie-apaitei-tora-kanones-gia-ola-ta-mesa-koinonikis-diktyosis/",
+        "https://www.efsyn.gr/ellada/1455700/syllipseis-se-oikoys-anohis-stin-athina-leitoyrgoysan-paranoma-eno-eihan-sfragistei/"
       ],
-      "seen_at_utc": "2026-08-27T19:17:05.270156+00:00"
+      "seen_at_utc": "2026-08-27T19:51:12.921269+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/go-fun/fizz/o-provlimatikos-gamos-tis-patsi-kenzit-me-ton-liam-gkalaxer/",
-      "title": "Ο προβληματικός γάμος της Πάτσι Κένζιτ με τον Λίαμ Γκάλαχερ - Και ο ρόλος του Νόελ",
-      "normalized_title": "Ο ΠΡΟΒΛΗΜΑΤΙΚΟΣ ΓΑΜΟΣ ΤΗΣ ΠΑΤΣΙ ΚΕΝΖΙΤ ΜΕ ΤΟΝ ΛΙΑΜ ΓΚΑΛΑΧΕΡ - ΚΑΙ Ο ΡΟΛΟΣ ΤΟΥ ΝΟΕΛ",
+      "url": "https://www.in.gr/2026/08/27/world/ipa-se-synomilies-i-kyvernisi-tramp-gia-na-parei-meridio-tou-petrelaiou-tis-venezouelas/",
+      "title": "ΗΠΑ: Σε συνομιλίες η κυβέρνηση Τραμπ για να πάρει μερίδιο του πετρελαίου της Βενεζουέλας",
+      "normalized_title": "ΗΠΑ: ΣΕ ΣΥΝΟΜΙΛΙΕΣ Η ΚΥΒΕΡΝΗΣΗ ΤΡΑΜΠ ΓΙΑ ΝΑ ΠΑΡΕΙ ΜΕΡΙΔΙΟ ΤΟΥ ΠΕΤΡΕΛΑΙΟΥ ΤΗΣ ΒΕΝΕΖΟΥΕΛΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/go-fun/fizz/o-provlimatikos-gamos-tis-patsi-kenzit-me-ton-liam-gkalaxer/",
-        "https://www.in.gr/2026/08/27/greece/elegxoi-tis-el-as-se-oikous-anoxis-stin-attiki-26-syllipseis/"
+        "https://www.in.gr/2026/08/27/world/ipa-se-synomilies-i-kyvernisi-tramp-gia-na-parei-meridio-tou-petrelaiou-tis-venezouelas/",
+        "https://www.in.gr/2026/08/27/sports/football/conference-league/xrantets-kralove-pao-1-2-o-ntesers-ediokse-tous-efialtes-kai-efere-ti-league-phase/",
+        "https://www.in.gr/2026/08/27/politics/epikairotita/glavinas-gia-kasidiari-i-egklimatiki-akrodeksia-den-exei-thesi-stin-elliniki-dimokratia-pliromeni-apantisi-ston-lazaridi-tis-nd/",
+        "https://www.in.gr/2026/08/27/world/o-ntonalnt-tramp-leei-pos-oi-ipa-den-synomiloun-me-to-iran-exoun-epikentrothei-ston-oikonomiko-polemo/"
       ],
-      "seen_at_utc": "2026-08-27T19:30:00.263581+00:00"
+      "seen_at_utc": "2026-08-27T19:51:12.921232+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T19:30:00.263658+00:00"
+  "updated_at_utc": "2026-08-27T19:51:12.921350+00:00"
 }
