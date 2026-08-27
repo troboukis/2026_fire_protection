@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564422473/i-dioikisi-ton-allon/",
-      "title": "Η διοίκηση των άλλων",
-      "normalized_title": "Η ΔΙΟΙΚΗΣΗ ΤΩΝ ΑΛΛΩΝ",
+      "url": "https://www.kathimerini.gr/society/564422974/patra-cheiropedes-se-49chrono-kathigiti-mathitria-katiggeile-oti-eichan-schesi-apo-ta-14/",
+      "title": "Πάτρα: Χειροπέδες σε 49χρονο καθηγητή – Μαθήτρια κατήγγειλε ότι είχαν σχέση από τα 14",
+      "normalized_title": "ΠΑΤΡΑ: ΧΕΙΡΟΠΕΔΕΣ ΣΕ 49ΧΡΟΝΟ ΚΑΘΗΓΗΤΗ – ΜΑΘΗΤΡΙΑ ΚΑΤΗΓΓΕΙΛΕ ΟΤΙ ΕΙΧΑΝ ΣΧΕΣΗ ΑΠΟ ΤΑ 14",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564422473/i-dioikisi-ton-allon/",
-        "https://www.kathimerini.gr/columns/564421951/o-nostradamos-tis-ai-i-kerkoporta-gia-chrysi-viza-41-56-ekat-sto-foyrnokai-ena-daneio-sto-mikroskopio/"
+        "https://www.kathimerini.gr/society/564422974/patra-cheiropedes-se-49chrono-kathigiti-mathitria-katiggeile-oti-eichan-schesi-apo-ta-14/",
+        "https://www.kathimerini.gr/world/564422959/alaska-mikro-aeroskafos-synetrivi-sti-thalassa-nekroi-kai-oi-tesseris-epivainontes/",
+        "https://www.kathimerini.gr/world/564422938/tha-einai-san-seismos-to-iran-apeilei-me-antipoina-stin-oikonomiki-d-day-toy-tramp/",
+        "https://www.kathimerini.gr/society/564422944/neos-kosmos-aimatiri-symploki-me-machairi-kai-levie-dyo-syllipseis/"
       ],
-      "seen_at_utc": "2026-08-27T05:51:10.961740+00:00"
+      "seen_at_utc": "2026-08-27T06:16:59.976646+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,29 +1271,25 @@
       "seen_at_utc": "2026-08-27T05:51:10.961860+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1455097/sfodri-epithesi-konstantopoyloy-sti-nd-gia-to-ohi-stin-akrita/",
-      "title": "Σφοδρή επίθεση Κωνσταντοπούλου στη ΝΔ για το «όχι» στην Ακρίτα",
-      "normalized_title": "ΣΦΟΔΡΗ ΕΠΙΘΕΣΗ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ ΣΤΗ ΝΔ ΓΙΑ ΤΟ «ΟΧΙ» ΣΤΗΝ ΑΚΡΙΤΑ",
+      "url": "https://www.efsyn.gr/kosmos/1455116/tragodia-stin-alaska-tesseris-nekroi-apo-syntrivi-mikroy-aeroskafoys/",
+      "title": "Τραγωδία στην Αλάσκα: Τέσσερις νεκροί από συντριβή μικρού αεροσκάφους",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΑΛΑΣΚΑ: ΤΕΣΣΕΡΙΣ ΝΕΚΡΟΙ ΑΠΟ ΣΥΝΤΡΙΒΗ ΜΙΚΡΟΥ ΑΕΡΟΣΚΑΦΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1455097/sfodri-epithesi-konstantopoyloy-sti-nd-gia-to-ohi-stin-akrita/",
-        "https://www.efsyn.gr/ellada/1455094/ktel-magnisias-kataggelia-epivatidas-poy-evalan-ti-gata-tis-stis-skales-ti-apantise-i-dioikisi/",
-        "https://www.efsyn.gr/politiki/1455100/ton-olympo-ton-efagan-oi-odigies-hrisis/"
+        "https://www.efsyn.gr/kosmos/1455116/tragodia-stin-alaska-tesseris-nekroi-apo-syntrivi-mikroy-aeroskafoys/"
       ],
-      "seen_at_utc": "2026-08-27T05:51:10.961839+00:00"
+      "seen_at_utc": "2026-08-27T06:16:59.976751+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/greece/agios-dimitrios-methysmenos-odigos-taksi-prokalese-troxaio/",
-      "title": "Μεθυσμένος οδηγός ταξί προκάλεσε τροχαίο στον Άγιο Δημήτριο",
-      "normalized_title": "ΜΕΘΥΣΜΕΝΟΣ ΟΔΗΓΟΣ ΤΑΞΙ ΠΡΟΚΑΛΕΣΕ ΤΡΟΧΑΙΟ ΣΤΟΝ ΑΓΙΟ ΔΗΜΗΤΡΙΟ",
+      "url": "https://www.in.gr/2026/08/27/world/amerikanika-mme-i-episkepsi-tou-dieythynti-tis-cia-sti-mosxa-eixe-stoxo-na-apotrepsei-ti-rosia-na-epitethei-sto-nato/",
+      "title": "Αμερικανικά ΜΜΕ: Η επίσκεψη του διευθυντή της CIA στη Μόσχα είχε στόχο να αποτρέψει τη Ρωσία να επιτεθεί στο ΝΑΤΟ",
+      "normalized_title": "ΑΜΕΡΙΚΑΝΙΚΑ ΜΜΕ: Η ΕΠΙΣΚΕΨΗ ΤΟΥ ΔΙΕΥΘΥΝΤΗ ΤΗΣ CIA ΣΤΗ ΜΟΣΧΑ ΕΙΧΕ ΣΤΟΧΟ ΝΑ ΑΠΟΤΡΕΨΕΙ ΤΗ ΡΩΣΙΑ ΝΑ ΕΠΙΤΕΘΕΙ ΣΤΟ ΝΑΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/greece/agios-dimitrios-methysmenos-odigos-taksi-prokalese-troxaio/",
-        "https://www.in.gr/2026/08/27/sports/on-field/giagia-toure-ena-alma-apo-tin-mpratislava/",
-        "https://www.in.gr/2026/08/27/world/iran-kataggellei-tis-amerikanikes-kyroseis-os-oikonomiki-tromokratia-ston-oie/",
-        "https://www.in.gr/2026/08/27/editorial/oi-ekloges-den-tha-krithoun-apo-tin-mpakaliki-tis-kyvernisis-giati-o-psifoforos-anazita-poios-tha-ton-kyvernisei-oxi-poios-tha-ton-eksagorasei/",
-        "https://www.in.gr/2026/08/27/greece/ksekinoun-simera-oi-eggrafes-epityxonton-sta-aei-ilektronika-i-diadikasia/"
+        "https://www.in.gr/2026/08/27/world/amerikanika-mme-i-episkepsi-tou-dieythynti-tis-cia-sti-mosxa-eixe-stoxo-na-apotrepsei-ti-rosia-na-epitethei-sto-nato/",
+        "https://www.in.gr/2026/08/27/sports/football/champions-league/ta-idiaitera-sygxaritiria-tis-noa-stin-aek-gia-tin-prokrisi-itan-pio-eykolo-xoris-emas-ston-dromo-sas/",
+        "https://www.in.gr/2026/08/27/life/rotzer-akelious-souidos-billionaire-kanei-dorea-80-ekat-gia-ta-paidia-sti-gaza-to-israil-kanei-genoktonia/"
       ],
-      "seen_at_utc": "2026-08-27T05:51:10.961802+00:00"
+      "seen_at_utc": "2026-08-27T06:16:59.976710+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T05:51:10.961925+00:00"
+  "updated_at_utc": "2026-08-27T06:16:59.976824+00:00"
 }
