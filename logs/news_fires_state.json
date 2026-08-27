@@ -1,17 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564422710/se-omologa-to-25-toy-energitikoy-ton-4-systimikon-trapezon/",
-      "title": "Σε ομόλογα το 25% του ενεργητικού των 4 συστημικών τραπεζών",
-      "normalized_title": "ΣΕ ΟΜΟΛΟΓΑ ΤΟ 25% ΤΟΥ ΕΝΕΡΓΗΤΙΚΟΥ ΤΩΝ 4 ΣΥΣΤΗΜΙΚΩΝ ΤΡΑΠΕΖΩΝ",
+      "url": "https://www.kathimerini.gr/society/564423385/chalkidiki-traymatistike-36chroni-apo-ti-servia-eno-ekane-jet-ski/",
+      "title": "Χαλκιδική: Τραυματίστηκε 36χρονη από τη Σερβία ενώ έκανε jet ski",
+      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΤΡΑΥΜΑΤΙΣΤΗΚΕ 36ΧΡΟΝΗ ΑΠΟ ΤΗ ΣΕΡΒΙΑ ΕΝΩ ΕΚΑΝΕ JET SKI",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564422710/se-omologa-to-25-toy-energitikoy-ton-4-systimikon-trapezon/",
-        "https://www.kathimerini.gr/culture/tv/564423370/emily-in-paris-protes-eikones-apo-tin-ekti-kai-teleytaia-sezon/",
-        "https://www.kathimerini.gr/world/564423355/komision-prasino-fos-gia-to-elliniko-koinoniko-klimatiko-schedio-ton-4-77-dis-eyro/",
-        "https://www.kathimerini.gr/society/564423346/akraios-kindynos-pyrkagias-tin-paraskeyi-28-08-se-kriti-notio-aigaio/",
-        "https://www.kathimerini.gr/world/564423334/germania-rekor-thanaton-poy-schetizontai-me-ti-zesti/"
+        "https://www.kathimerini.gr/society/564423385/chalkidiki-traymatistike-36chroni-apo-ti-servia-eno-ekane-jet-ski/",
+        "https://www.kathimerini.gr/opinion/sketches/564423331/skitso-toy-andrea-petroylaki-27-08-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564423322/skitso-toy-ilia-makri-27-08-26/",
+        "https://www.kathimerini.gr/culture/564415705/gynaika-kato-apo-mpaza/",
+        "https://www.kathimerini.gr/economy/564418702/i-voytia-tis-shein-tin-teleytaia-tetraetia/"
       ],
-      "seen_at_utc": "2026-08-27T10:51:25.112647+00:00"
+      "seen_at_utc": "2026-08-27T11:17:07.266019+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,42 +1263,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870217/pote-tha-paradothei-stin-kukloforia-i-pio-eduposiaki-gefura-stin-ellada/?utm_source=rss",
-      "title": "Πότε θα παραδοθεί στην κυκλοφορία η πιο εντυπωσιακή γέφυρα στην Ελλάδα",
-      "normalized_title": "ΠΟΤΕ ΘΑ ΠΑΡΑΔΟΘΕΙ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ Η ΠΙΟ ΕΝΤΥΠΩΣΙΑΚΗ ΓΕΦΥΡΑ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "url": "https://www.protothema.gr/greece/article/1870236/o-hristos-georgokostopoulos-grafei-istoria-o-protos-kofos-didaktoras-stis-theoritikes-epistimes-stin-ellada/?utm_source=rss",
+      "title": "Ο Χρήστος Γεωργοκωστόπουλος γράφει ιστορία: Ο πρώτος κωφός διδάκτορας στις Θεωρητικές Επιστήμες στην Ελλάδα",
+      "normalized_title": "Ο ΧΡΗΣΤΟΣ ΓΕΩΡΓΟΚΩΣΤΟΠΟΥΛΟΣ ΓΡΑΦΕΙ ΙΣΤΟΡΙΑ: Ο ΠΡΩΤΟΣ ΚΩΦΟΣ ΔΙΔΑΚΤΟΡΑΣ ΣΤΙΣ ΘΕΩΡΗΤΙΚΕΣ ΕΠΙΣΤΗΜΕΣ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870217/pote-tha-paradothei-stin-kukloforia-i-pio-eduposiaki-gefura-stin-ellada/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870214/oi-8-nees-paremvaseis-apo-touba-kai-apth-eos-parking-kai-ari-sti-thessaloniki-milame-me-erga-leei-o-hatzidakis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870236/o-hristos-georgokostopoulos-grafei-istoria-o-protos-kofos-didaktoras-stis-theoritikes-epistimes-stin-ellada/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870235/meso-epistimonikon-methodon-tautopoiithike-o-kalliergitis-futeias-me-890-dendrullia-kannavis-stin-korinthia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870230/omologise-ti-dolofonia-tis-suzugou-tou-o-53hronos-sti-rodopi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870227/exi-sullipseis-gia-ti-vomva-se-vila-sti-leukada-pou-anikei-se-epiheirimatia-pou-drastiriopoieitai-sti-nea-uorki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T10:51:25.112740+00:00"
+      "seen_at_utc": "2026-08-27T11:17:07.266155+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1455366/i-komision-enekrine-to-koinoniko-klimatiko-shedio-tis-elladas-poy-tha-kateythynthoyn-48-dis-eyro/",
-      "title": "Η Κομισιόν ενέκρινε το Κοινωνικό Κλιματικό Σχέδιο της Ελλάδας: Πού θα κατευθυνθούν 4,8 δισ. ευρώ",
-      "normalized_title": "Η ΚΟΜΙΣΙΟΝ ΕΝΕΚΡΙΝΕ ΤΟ ΚΟΙΝΩΝΙΚΟ ΚΛΙΜΑΤΙΚΟ ΣΧΕΔΙΟ ΤΗΣ ΕΛΛΑΔΑΣ: ΠΟΥ ΘΑ ΚΑΤΕΥΘΥΝΘΟΥΝ 4,8 ΔΙΣ. ΕΥΡΩ",
+      "url": "https://www.efsyn.gr/ellada/1455403/gynaikoktonia-sti-rodopi-omologise-o-53hronos-to-ekana-pano-sta-neyra-moy-tholosa/",
+      "title": "Γυναικοκτονία στη Ροδόπη: Ομολόγησε ο 53χρονος – «Το έκανα πάνω στα νεύρα μου, θόλωσα»",
+      "normalized_title": "ΓΥΝΑΙΚΟΚΤΟΝΙΑ ΣΤΗ ΡΟΔΟΠΗ: ΟΜΟΛΟΓΗΣΕ Ο 53ΧΡΟΝΟΣ – «ΤΟ ΕΚΑΝΑ ΠΑΝΩ ΣΤΑ ΝΕΥΡΑ ΜΟΥ, ΘΟΛΩΣΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1455366/i-komision-enekrine-to-koinoniko-klimatiko-shedio-tis-elladas-poy-tha-kateythynthoyn-48-dis-eyro/",
-        "https://www.efsyn.gr/politiki/1455174/oi-11-protaseis-toy-pasok-gia-mia-dikaii-lysi-sto-idiotiko-hreos/",
-        "https://www.efsyn.gr/ellada/1455350/exarhoy-to-metro-thessalonikis-to-pio-syghrono-stin-eyropi/",
-        "https://www.efsyn.gr/ellada/1455196/akatallila-ktiria-apo-ton-tromopontika-stin-kypseli-agonia-apo-ta-stoiheia-tis-meletis/",
-        "https://www.efsyn.gr/ellada/1455359/me-katanyxi-to-tama-ston-agio-fanoyrio-sto-nayplio-ekatontades-fanoyropites-sto-palamidi-vinteo/"
+        "https://www.efsyn.gr/ellada/1455403/gynaikoktonia-sti-rodopi-omologise-o-53hronos-to-ekana-pano-sta-neyra-moy-tholosa/",
+        "https://www.efsyn.gr/politiki/1455387/nikos-pappas-thesmiki-diolisthisi-apo-nd-sto-thema-tis-akrita-na-parei-thesi-kai-o-tsipras/",
+        "https://www.efsyn.gr/politiki/1455394/kampanaki-apo-ti-milena-apostolaki-gia-asfalistiko-systima-dyo-tahytiton/",
+        "https://www.efsyn.gr/politiki/1455395/pasok-gia-epektasi-metro-thessalonikis-na-apantisei-i-kyvernisi-gia-to-hronodiagramma-kai-to-kostos/",
+        "https://www.efsyn.gr/stiles/1455272/to-syghrono-panoptikon/",
+        "https://www.efsyn.gr/stiles/1455266/to-ehoyme-dei-to-ergo/",
+        "https://www.efsyn.gr/stiles/1455287/apo-to-ormoyz-stin-kaspia/",
+        "https://www.efsyn.gr/politiki/1455380/rena-doyroy-oyte-vima-piso-gia-tin-elena-akrita-ego-eimai-arvanitissa/"
       ],
-      "seen_at_utc": "2026-08-27T10:51:25.112720+00:00"
+      "seen_at_utc": "2026-08-27T11:17:07.266119+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/world/germania-rekor-thanaton-pou-sxetizontai-me-ti-zesti-pano-apo-15-800-nekroi/",
-      "title": "Γερμανία: Ρεκόρ θανάτων που σχετίζονται με τη ζέστη – Πάνω από 15.800 νεκροί",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΡΕΚΟΡ ΘΑΝΑΤΩΝ ΠΟΥ ΣΧΕΤΙΖΟΝΤΑΙ ΜΕ ΤΗ ΖΕΣΤΗ – ΠΑΝΩ ΑΠΟ 15.800 ΝΕΚΡΟΙ",
+      "url": "https://www.in.gr/2026/08/27/go-fun/fizz/elena-mponam-karter-i-volta-sto-londino-me-ton-kata-22-xronia-neotero-syntrofo-tis/",
+      "title": "Έλενα Μπόναμ Κάρτερ: Η βόλτα στο Λονδίνο με τον κατά 22 χρόνια νεότερο σύντροφο της",
+      "normalized_title": "ΕΛΕΝΑ ΜΠΟΝΑΜ ΚΑΡΤΕΡ: Η ΒΟΛΤΑ ΣΤΟ ΛΟΝΔΙΝΟ ΜΕ ΤΟΝ ΚΑΤΑ 22 ΧΡΟΝΙΑ ΝΕΟΤΕΡΟ ΣΥΝΤΡΟΦΟ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/world/germania-rekor-thanaton-pou-sxetizontai-me-ti-zesti-pano-apo-15-800-nekroi/",
-        "https://www.in.gr/2026/08/27/politics/aftodioikisi/ksekinise-i-synarmologisi-tis-pezogefyras-agiou-konstantinou/",
-        "https://www.in.gr/2026/08/27/world/nepal-sygklonizei-martyria-ellina-pou-zei-ekei-apo-ayrio-kai-meta-tha-arxisoun-na-mazeyoun-ptomata/",
-        "https://www.in.gr/2026/08/27/politics/agkyra-gia-rodo-an-ginei-vasi-uav-tha-vlapsei-tin-statherotita-kai-tin-eirini-sto-aigaio/",
-        "https://www.in.gr/2026/08/27/greece/syros-neo-vinteo-ntokoumento-gia-ti-dolofonia-tis-42xronis-diasostrias/",
-        "https://www.in.gr/2026/08/27/sports/football/super-league-ksenoi-diaitites-kai-goal-line-cameras-ston-proto-gyro/"
+        "https://www.in.gr/2026/08/27/go-fun/fizz/elena-mponam-karter-i-volta-sto-londino-me-ton-kata-22-xronia-neotero-syntrofo-tis/",
+        "https://www.in.gr/2026/08/27/world/gallia-dyo-nekroi-kai-10-traymaties-apo-ton-andra-pou-epese-skopima-me-to-aytokinito-tou-se-pezous/",
+        "https://www.in.gr/2026/08/27/sports/football/sti-mpartselona-o-livakovits-pic/"
       ],
-      "seen_at_utc": "2026-08-27T10:51:25.112691+00:00"
+      "seen_at_utc": "2026-08-27T11:17:07.266075+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T10:51:25.112820+00:00"
+  "updated_at_utc": "2026-08-27T11:17:07.266229+00:00"
 }
