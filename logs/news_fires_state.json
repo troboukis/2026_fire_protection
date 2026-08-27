@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564422743/ypiresies-diacheirisis-chartofylakioy-lansarei-i-snappi/",
-      "title": "Υπηρεσίες διαχείρισης χαρτοφυλακίου λανσάρει η Snappi",
-      "normalized_title": "ΥΠΗΡΕΣΙΕΣ ΔΙΑΧΕΙΡΙΣΗΣ ΧΑΡΤΟΦΥΛΑΚΙΟΥ ΛΑΝΣΑΡΕΙ Η SNAPPI",
+      "url": "https://www.kathimerini.gr/culture/564422539/apo-ti-galinotati-stoys-othomanoys-kai-sto-kentro-toy-kosmoy/",
+      "title": "Από τη Γαληνοτάτη στους Οθωμανούς και στο κέντρο του κόσμου",
+      "normalized_title": "ΑΠΟ ΤΗ ΓΑΛΗΝΟΤΑΤΗ ΣΤΟΥΣ ΟΘΩΜΑΝΟΥΣ ΚΑΙ ΣΤΟ ΚΕΝΤΡΟ ΤΟΥ ΚΟΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564422743/ypiresies-diacheirisis-chartofylakioy-lansarei-i-snappi/"
+        "https://www.kathimerini.gr/culture/564422539/apo-ti-galinotati-stoys-othomanoys-kai-sto-kentro-toy-kosmoy/",
+        "https://www.kathimerini.gr/culture/arts/564422521/o-kosmos-toy-oyiliam-kentritz-sto-emst/"
       ],
-      "seen_at_utc": "2026-08-27T20:30:00.226867+00:00"
+      "seen_at_utc": "2026-08-27T20:51:05.479351+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,25 +1269,27 @@
       "seen_at_utc": "2026-08-27T20:17:11.404635+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1455421/natali-harp-i-fylakas-tis-pliroforias-toy-tramp/",
-      "title": "Νάταλι Χαρπ: Η «φύλακας της πληροφορίας» του Τραμπ",
-      "normalized_title": "ΝΑΤΑΛΙ ΧΑΡΠ: Η «ΦΥΛΑΚΑΣ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ» ΤΟΥ ΤΡΑΜΠ",
+      "url": "https://www.efsyn.gr/kosmos/1455733/iran-thetei-oroys-gia-to-anoigma-ton-stenon-toy-ormoyz-symfonia-me-oman-gia-diadromo-naysiploias/",
+      "title": "Ιράν: Θέτει όρους για το άνοιγμα των Στενών του Ορμούζ – Συμφωνία με Ομάν για διάδρομο ναυσιπλοΐας",
+      "normalized_title": "ΙΡΑΝ: ΘΕΤΕΙ ΟΡΟΥΣ ΓΙΑ ΤΟ ΑΝΟΙΓΜΑ ΤΩΝ ΣΤΕΝΩΝ ΤΟΥ ΟΡΜΟΥΖ – ΣΥΜΦΩΝΙΑ ΜΕ ΟΜΑΝ ΓΙΑ ΔΙΑΔΡΟΜΟ ΝΑΥΣΙΠΛΟΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1455421/natali-harp-i-fylakas-tis-pliroforias-toy-tramp/"
+        "https://www.efsyn.gr/kosmos/1455733/iran-thetei-oroys-gia-to-anoigma-ton-stenon-toy-ormoyz-symfonia-me-oman-gia-diadromo-naysiploias/"
       ],
-      "seen_at_utc": "2026-08-27T20:30:00.226966+00:00"
+      "seen_at_utc": "2026-08-27T20:51:05.479460+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/sports/othersports/diamond-league-zyrixis-protos-kai-kalyteros-kai-pali-o-tentoglou-me-845-m-enati-seri-niki-vids/",
-      "title": "Πρώτος και στη Ζυρίχη ο Τεντόγλου με 8,45 μ. - Ένατη σερί νίκη (vids)",
-      "normalized_title": "ΠΡΩΤΟΣ ΚΑΙ ΣΤΗ ΖΥΡΙΧΗ Ο ΤΕΝΤΟΓΛΟΥ ΜΕ 8,45 Μ. - ΕΝΑΤΗ ΣΕΡΙ ΝΙΚΗ (VIDS)",
+      "url": "https://www.in.gr/2026/08/27/world/to-israil-esteile-epistoli-stis-ipa-akyrosis-tis-pilotikis-apoxorisis-apo-ta-katexomena-edafi-ston-livano/",
+      "title": "Το Ισραήλ έστειλε επιστολή στις ΗΠΑ ακύρωσης της «πιλοτικής αποχώρησης» από τα κατεχόμενα εδάφη στον Λίβανο",
+      "normalized_title": "ΤΟ ΙΣΡΑΗΛ ΕΣΤΕΙΛΕ ΕΠΙΣΤΟΛΗ ΣΤΙΣ ΗΠΑ ΑΚΥΡΩΣΗΣ ΤΗΣ «ΠΙΛΟΤΙΚΗΣ ΑΠΟΧΩΡΗΣΗΣ» ΑΠΟ ΤΑ ΚΑΤΕΧΟΜΕΝΑ ΕΔΑΦΗ ΣΤΟΝ ΛΙΒΑΝΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/sports/othersports/diamond-league-zyrixis-protos-kai-kalyteros-kai-pali-o-tentoglou-me-845-m-enati-seri-niki-vids/",
-        "https://www.in.gr/2026/08/27/sports/tromeros-o-karalis-pou-ekane-panellinio-rekor-me-620-m-alla-o-ntouplantis-nikise-ksana-vids/",
-        "https://www.in.gr/2026/08/27/life/culture-live/se-teliki-eytheia-to-sikouel-tou-once-upon-a-time-in-hollywood-me-ton-mprant-pit/"
+        "https://www.in.gr/2026/08/27/world/to-israil-esteile-epistoli-stis-ipa-akyrosis-tis-pilotikis-apoxorisis-apo-ta-katexomena-edafi-ston-livano/",
+        "https://www.in.gr/2026/08/27/sports/football/olympiakos-eftase-stin-athina-o-pentersen-anypomono-na-ksekiniso-vids/",
+        "https://www.in.gr/2026/08/27/sports/football/protagonistis-o-kostoulas-me-gkolara-kai-asist-kontra-stin-tromso-vid/",
+        "https://www.in.gr/2026/08/27/world/proti-katagegrammeni-xrisi-aytonomou-drone-apo-ti-rosia-me-xrisi-ai-kai-tsip-tis-nvidia/",
+        "https://www.in.gr/2026/08/27/world/ta-apothemata-pyraylon-patriot-ton-ipa-stin-eyropi-exoun-pesei-kato-apo-to-krisimo-orio/"
       ],
-      "seen_at_utc": "2026-08-27T20:30:00.226928+00:00"
+      "seen_at_utc": "2026-08-27T20:51:05.479412+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T20:30:00.227065+00:00"
+  "updated_at_utc": "2026-08-27T20:51:05.479532+00:00"
 }
