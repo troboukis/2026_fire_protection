@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564423835/thessaloniki-katadikastike-gia-endooikogeneiaki-apeili-48chronos-astynomikos-ti-ypostirixe-sto-dikastirio/",
-      "title": "Θεσσαλονίκη: Καταδικάστηκε για ενδοοικογενειακή απειλή 48χρονος αστυνομικός – Τι υποστήριξε στο δικαστήριο",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΚΑΤΑΔΙΚΑΣΤΗΚΕ ΓΙΑ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΗ ΑΠΕΙΛΗ 48ΧΡΟΝΟΣ ΑΣΤΥΝΟΜΙΚΟΣ – ΤΙ ΥΠΟΣΤΗΡΙΞΕ ΣΤΟ ΔΙΚΑΣΤΗΡΙΟ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564422344/etoimazoyn-formoyla-gia-to-kalodio/",
+      "title": "Ετοιμάζουν φόρμουλα για το καλώδιο",
+      "normalized_title": "ΕΤΟΙΜΑΖΟΥΝ ΦΟΡΜΟΥΛΑ ΓΙΑ ΤΟ ΚΑΛΩΔΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564423835/thessaloniki-katadikastike-gia-endooikogeneiaki-apeili-48chronos-astynomikos-ti-ypostirixe-sto-dikastirio/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564422344/etoimazoyn-formoyla-gia-to-kalodio/",
+        "https://www.kathimerini.gr/economy/local/564422740/anerchomeno-asteri-stin-kainotomia-i-athina/"
       ],
-      "seen_at_utc": "2026-08-27T16:30:26.906415+00:00"
+      "seen_at_utc": "2026-08-27T16:51:42.042319+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870419/ilektrika-patinia-115-paravaseis-se-mia-imera-stin-attiki-sunelifthi-methusmenos-odigos/?utm_source=rss",
-      "title": "Ηλεκτρικά πατίνια: 115 παραβάσεις σε μία ημέρα στην Αττική, συνελήφθη μεθυσμένος οδηγός",
-      "normalized_title": "ΗΛΕΚΤΡΙΚΑ ΠΑΤΙΝΙΑ: 115 ΠΑΡΑΒΑΣΕΙΣ ΣΕ ΜΙΑ ΗΜΕΡΑ ΣΤΗΝ ΑΤΤΙΚΗ, ΣΥΝΕΛΗΦΘΗ ΜΕΘΥΣΜΕΝΟΣ ΟΔΗΓΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1870428/exi-sullipseis-se-astunomiki-epiheirisi-sto-lasithi-katashethikan-kokaini-kai-42820-euro/?utm_source=rss",
+      "title": "Έξι συλλήψεις σε αστυνομική επιχείρηση στο Λασίθι, κατασχέθηκαν κοκαΐνη και 42.820 ευρώ",
+      "normalized_title": "ΕΞΙ ΣΥΛΛΗΨΕΙΣ ΣΕ ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΟ ΛΑΣΙΘΙ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΚΟΚΑΙΝΗ ΚΑΙ 42.820 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870419/ilektrika-patinia-115-paravaseis-se-mia-imera-stin-attiki-sunelifthi-methusmenos-odigos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870428/exi-sullipseis-se-astunomiki-epiheirisi-sto-lasithi-katashethikan-kokaini-kai-42820-euro/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870426/mesa-apo-ti-fulaki-edosan-tin-edoli-gia-ti-vomvistiki-epithesi-se-vila-sti-leukada-to-varu-poiniko-parelthon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T16:18:51.432320+00:00"
+      "seen_at_utc": "2026-08-27T16:51:42.042494+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455619/i-iera-synodos-tha-timisei-ton-proin-mitropoliti-aigialeias-amvrosio/",
-      "title": "Η Ιερά Σύνοδος θα τιμήσει τον πρώην μητροπολίτη Αιγιαλείας Αμβρόσιο",
-      "normalized_title": "Η ΙΕΡΑ ΣΥΝΟΔΟΣ ΘΑ ΤΙΜΗΣΕΙ ΤΟΝ ΠΡΩΗΝ ΜΗΤΡΟΠΟΛΙΤΗ ΑΙΓΙΑΛΕΙΑΣ ΑΜΒΡΟΣΙΟ",
+      "url": "https://www.efsyn.gr/ellada/1455634/doykas-ginetai-praxi-i-apofasi-mas-gia-katedafisi-toy-badminton-to-proto-vima-gia-to-mitropolitiko-parko/",
+      "title": "Δούκας: «Γίνεται πράξη η απόφασή μας για κατεδάφιση του Badminton – Το πρώτο βήμα για το Μητροπολιτικό πάρκο»",
+      "normalized_title": "ΔΟΥΚΑΣ: «ΓΙΝΕΤΑΙ ΠΡΑΞΗ Η ΑΠΟΦΑΣΗ ΜΑΣ ΓΙΑ ΚΑΤΕΔΑΦΙΣΗ ΤΟΥ BADMINTON – ΤΟ ΠΡΩΤΟ ΒΗΜΑ ΓΙΑ ΤΟ ΜΗΤΡΟΠΟΛΙΤΙΚΟ ΠΑΡΚΟ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455619/i-iera-synodos-tha-timisei-ton-proin-mitropoliti-aigialeias-amvrosio/"
+        "https://www.efsyn.gr/ellada/1455634/doykas-ginetai-praxi-i-apofasi-mas-gia-katedafisi-toy-badminton-to-proto-vima-gia-to-mitropolitiko-parko/",
+        "https://www.efsyn.gr/ellada/1455630/hardalias-gia-ton-io-dytikoy-neiloy-apopse-ektaktoi-psekasmoi-megalis-klimakas-stin-anatoliki-attiki/"
       ],
-      "seen_at_utc": "2026-08-27T16:30:26.906515+00:00"
+      "seen_at_utc": "2026-08-27T16:51:42.042449+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/world/tourkia-ereyna-tis-dikaiosynis-kata-vretanou-oikonomologou-gia-prosvoli-tou-erntogan-kai-as-anakalese/",
-      "title": "Τουρκία: Έρευνα της δικαιοσύνης κατά Βρετανού οικονομολόγου για «προσβολή» του Ερντογάν – Και ας ανακάλεσε",
-      "normalized_title": "ΤΟΥΡΚΙΑ: ΕΡΕΥΝΑ ΤΗΣ ΔΙΚΑΙΟΣΥΝΗΣ ΚΑΤΑ ΒΡΕΤΑΝΟΥ ΟΙΚΟΝΟΜΟΛΟΓΟΥ ΓΙΑ «ΠΡΟΣΒΟΛΗ» ΤΟΥ ΕΡΝΤΟΓΑΝ – ΚΑΙ ΑΣ ΑΝΑΚΑΛΕΣΕ",
+      "url": "https://www.in.gr/2026/08/27/life/culture-live/piter-kalen-apeviose-o-ithopoios-pou-xarise-ti-foni-tou-ston-optimus-prime/",
+      "title": "Πίτερ Κάλεν: Απεβίωσε ο ηθοποιός που χάρισε τη φωνή του στον Optimus Prime",
+      "normalized_title": "ΠΙΤΕΡ ΚΑΛΕΝ: ΑΠΕΒΙΩΣΕ Ο ΗΘΟΠΟΙΟΣ ΠΟΥ ΧΑΡΙΣΕ ΤΗ ΦΩΝΗ ΤΟΥ ΣΤΟΝ OPTIMUS PRIME",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/world/tourkia-ereyna-tis-dikaiosynis-kata-vretanou-oikonomologou-gia-prosvoli-tou-erntogan-kai-as-anakalese/",
-        "https://www.in.gr/2026/08/27/go-fun/fizz/thaymastes-zitoun-na-metonomastei-to-aerodromio-tou-nasvil-pros-timin-tis-ntoli-parton/"
+        "https://www.in.gr/2026/08/27/life/culture-live/piter-kalen-apeviose-o-ithopoios-pou-xarise-ti-foni-tou-ston-optimus-prime/",
+        "https://www.in.gr/2026/08/27/greece/ekti-imera-kaysona-se-poies-perioxes-kseperase-tous-40-vathmous-kelsiou-i-thermokrasia/",
+        "https://www.in.gr/2026/08/27/greece/erxetai-rapid-test-gia-ton-io-tou-dytikou-neilou/",
+        "https://www.in.gr/2026/08/27/sports/othersports/tsitsipas-i-floga-mesa-tou-akoma-sigokaiei-o-adianoitos-pontos-kontra-ston-kovasevits-vid/"
       ],
-      "seen_at_utc": "2026-08-27T16:30:26.906476+00:00"
+      "seen_at_utc": "2026-08-27T16:51:42.042368+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T16:30:26.906582+00:00"
+  "updated_at_utc": "2026-08-27T16:51:42.042571+00:00"
 }
