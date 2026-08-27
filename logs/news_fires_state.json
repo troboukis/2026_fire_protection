@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564422389/i-idiomorfi-sfyrichti-glossa-poy-epivionei-ston-antia-eyvoias/",
-      "title": "Η ιδιόμορφη σφυριχτή γλώσσα που επιβιώνει στον Αντιά Ευβοίας",
-      "normalized_title": "Η ΙΔΙΟΜΟΡΦΗ ΣΦΥΡΙΧΤΗ ΓΛΩΣΣΑ ΠΟΥ ΕΠΙΒΙΩΝΕΙ ΣΤΟΝ ΑΝΤΙΑ ΕΥΒΟΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564423952/se-oriako-simeio-i-aeramyna-tis-eyropis-logo-iran-oi-ipa-chrisimopoiisan-to-65-ton-patriot/",
+      "title": "Σε οριακό σημείο η αεράμυνα της Ευρώπης λόγω Ιράν – Οι ΗΠΑ χρησιμοποίησαν το 65% των Patriot",
+      "normalized_title": "ΣΕ ΟΡΙΑΚΟ ΣΗΜΕΙΟ Η ΑΕΡΑΜΥΝΑ ΤΗΣ ΕΥΡΩΠΗΣ ΛΟΓΩ ΙΡΑΝ – ΟΙ ΗΠΑ ΧΡΗΣΙΜΟΠΟΙΗΣΑΝ ΤΟ 65% ΤΩΝ PATRIOT",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564422389/i-idiomorfi-sfyrichti-glossa-poy-epivionei-ston-antia-eyvoias/"
+        "https://www.kathimerini.gr/world/564423952/se-oriako-simeio-i-aeramyna-tis-eyropis-logo-iran-oi-ipa-chrisimopoiisan-to-65-ton-patriot/",
+        "https://www.kathimerini.gr/society/564424123/veroia-choris-tis-aisthiseis-tis-anasyrthike-18chroni-apo-toys-katarraktes-dermata/",
+        "https://www.kathimerini.gr/world/564424093/se-trochia-litotitas-i-rosia-logo-toy-polemoy-stin-oykrania/",
+        "https://www.kathimerini.gr/world/564422401/symvivastikes-protaseis-apo-ton-tramp-sti-skia-ton-kyroseon/",
+        "https://www.kathimerini.gr/society/564424111/i-el-as-anazita-plirofories-gia-to-thanatiforo-trochaio-sti-nea-ionia/"
       ],
-      "seen_at_utc": "2026-08-27T18:29:57.753975+00:00"
+      "seen_at_utc": "2026-08-27T18:51:53.656232+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1263,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870478/apagoreusi-kukloforias-se-dasikes-periohes-sti-halkidiki-logo-upsilou-kindunou-ekdilosis-purkagias/?utm_source=rss",
-      "title": "Απαγόρευση κυκλοφορίας σε δασικές περιοχές στη Χαλκιδική λόγω υψηλού κινδύνου εκδήλωσης πυρκαγιάς",
-      "normalized_title": "ΑΠΑΓΟΡΕΥΣΗ ΚΥΚΛΟΦΟΡΙΑΣ ΣΕ ΔΑΣΙΚΕΣ ΠΕΡΙΟΧΕΣ ΣΤΗ ΧΑΛΚΙΔΙΚΗ ΛΟΓΩ ΥΨΗΛΟΥ ΚΙΝΔΥΝΟΥ ΕΚΔΗΛΩΣΗΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1870487/efodos-tis-elas-se-oikous-anohis-stin-attiki-me-26-sullipseis/?utm_source=rss",
+      "title": "Έφοδος του Ελληνικού FBI σε οίκους ανοχής στην Αττική, 26 συλλήψεις",
+      "normalized_title": "ΕΦΟΔΟΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ FBI ΣΕ ΟΙΚΟΥΣ ΑΝΟΧΗΣ ΣΤΗΝ ΑΤΤΙΚΗ, 26 ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870478/apagoreusi-kukloforias-se-dasikes-periohes-sti-halkidiki-logo-upsilou-kindunou-ekdilosis-purkagias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870487/efodos-tis-elas-se-oikous-anohis-stin-attiki-me-26-sullipseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T18:17:19.419183+00:00"
+      "seen_at_utc": "2026-08-27T18:51:53.656347+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455685/veroia-18hroni-anasyrthike-horis-tis-aisthiseis-tis-apo-toys-katarraktes-dermata/",
-      "title": "Βέροια: 18χρονη ανασύρθηκε χωρίς τις αισθήσεις της από τους Καταρράκτες Δερματά",
-      "normalized_title": "ΒΕΡΟΙΑ: 18ΧΡΟΝΗ ΑΝΑΣΥΡΘΗΚΕ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΗΣ ΑΠΟ ΤΟΥΣ ΚΑΤΑΡΡΑΚΤΕΣ ΔΕΡΜΑΤΑ",
+      "url": "https://www.efsyn.gr/politiki/1455669/pyr-omadon-kata-tis-kyvernisis-gia-to-mploko-stin-elena-akrita/",
+      "title": "Πυρ ομαδόν κατά της κυβέρνησης για το «μπλόκο» στην Έλενα Ακρίτα",
+      "normalized_title": "ΠΥΡ ΟΜΑΔΟΝ ΚΑΤΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ ΓΙΑ ΤΟ «ΜΠΛΟΚΟ» ΣΤΗΝ ΕΛΕΝΑ ΑΚΡΙΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455685/veroia-18hroni-anasyrthike-horis-tis-aisthiseis-tis-apo-toys-katarraktes-dermata/",
-        "https://www.efsyn.gr/kosmos/1455677/to-pe-kai-to-kane-o-tramp-me-diatagma-metonomase-ti-limni-ontario-se-limni-tis-amerikis/"
+        "https://www.efsyn.gr/politiki/1455669/pyr-omadon-kata-tis-kyvernisis-gia-to-mploko-stin-elena-akrita/",
+        "https://www.efsyn.gr/kosmos/1455691/oykraniko-tesseris-hores-tis-e-e-epimenoyn-sti-hrisi-ton-desmeymenon-rosikon-kefalaion/",
+        "https://www.efsyn.gr/kosmos/1455392/alli-mia-opsi-tis-kolasis-sti-gaza-i-diarkis-via-toy-thoryvoy/",
+        "https://www.efsyn.gr/politiki/1455684/elas-synedriasi-ton-organon-kai-synantisi-tsipra-me-epaggelmaties-viotehnes-enopsei-deth/"
       ],
-      "seen_at_utc": "2026-08-27T18:29:57.754089+00:00"
+      "seen_at_utc": "2026-08-27T18:51:53.656316+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/world/bloomberg-stereyei-apo-reysto-i-rosia-skliri-litotita-kai-perikopes-35-gia-na-sothei-i-polemiki-mixani/",
-      "title": "Bloomberg: Στερεύει από ρευστό η Ρωσία: Σκληρή λιτότητα και περικοπές 35% για να σωθεί η πολεμική μηχανή",
-      "normalized_title": "BLOOMBERG: ΣΤΕΡΕΥΕΙ ΑΠΟ ΡΕΥΣΤΟ Η ΡΩΣΙΑ: ΣΚΛΗΡΗ ΛΙΤΟΤΗΤΑ ΚΑΙ ΠΕΡΙΚΟΠΕΣ 35% ΓΙΑ ΝΑ ΣΩΘΕΙ Η ΠΟΛΕΜΙΚΗ ΜΗΧΑΝΗ",
+      "url": "https://www.in.gr/2026/08/27/sports/football/conference-league/anoikse-to-skor-o-panathinaikos-me-kefalia-tou-ntesers-vid/",
+      "title": "Άνοιξε το σκορ ο Παναθηναϊκός με κεφαλιά του Ντέσερς (vid)",
+      "normalized_title": "ΑΝΟΙΞΕ ΤΟ ΣΚΟΡ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ ΜΕ ΚΕΦΑΛΙΑ ΤΟΥ ΝΤΕΣΕΡΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/world/bloomberg-stereyei-apo-reysto-i-rosia-skliri-litotita-kai-perikopes-35-gia-na-sothei-i-polemiki-mixani/",
-        "https://www.in.gr/2026/08/27/life/culture-live/to-treiler-tou-unabomber-eksereyna-tin-polyplokotita-tou-tent-kazinski/"
+        "https://www.in.gr/2026/08/27/sports/football/conference-league/anoikse-to-skor-o-panathinaikos-me-kefalia-tou-ntesers-vid/",
+        "https://www.in.gr/2026/08/27/sports/football/conference-league/epistrefei-o-paok-entiage-kai-zafeiris-isofarizoun-se-2-2-vids/"
       ],
-      "seen_at_utc": "2026-08-27T18:29:57.754039+00:00"
+      "seen_at_utc": "2026-08-27T18:51:53.656277+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T18:29:57.754180+00:00"
+  "updated_at_utc": "2026-08-27T18:51:53.656423+00:00"
 }
