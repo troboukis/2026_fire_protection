@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564423550/n-mitarakis-i-k-akrita-ekfrazei-akraies-symperifores-den-tha-stirixoyme-tin-ypopsifiotita-tis/",
-      "title": "Ν. Μηταράκης: «Η κ. Ακρίτα εκφράζει ακραίες συμπεριφορές, δεν θα στηρίξουμε την υποψηφιότητά της»",
-      "normalized_title": "Ν. ΜΗΤΑΡΑΚΗΣ: «Η Κ. ΑΚΡΙΤΑ ΕΚΦΡΑΖΕΙ ΑΚΡΑΙΕΣ ΣΥΜΠΕΡΙΦΟΡΕΣ, ΔΕΝ ΘΑ ΣΤΗΡΙΞΟΥΜΕ ΤΗΝ ΥΠΟΨΗΦΙΟΤΗΤΑ ΤΗΣ»",
+      "url": "https://www.kathimerini.gr/politics/parties/564422323/oi-anapofasistoi-kai-oi-paroches-toy-septemvrioy/",
+      "title": "Οι αναποφάσιστοι και οι παροχές του Σεπτεμβρίου",
+      "normalized_title": "ΟΙ ΑΝΑΠΟΦΑΣΙΣΤΟΙ ΚΑΙ ΟΙ ΠΑΡΟΧΕΣ ΤΟΥ ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564423550/n-mitarakis-i-k-akrita-ekfrazei-akraies-symperifores-den-tha-stirixoyme-tin-ypopsifiotita-tis/",
-        "https://www.kathimerini.gr/k/gastronomos/564421948/myrtia-ena-estiatorio-kivotos-gnosis-stin-ithaki/",
-        "https://www.kathimerini.gr/life/health/564423544/i-dekalepti-synitheia-poy-xypna-ton-egkefalo-kai-anevazei-ti-diathesi/"
+        "https://www.kathimerini.gr/politics/parties/564422323/oi-anapofasistoi-kai-oi-paroches-toy-septemvrioy/",
+        "https://www.kathimerini.gr/society/564423577/metro-thessalonikis-xekinisan-oi-syrmoi-apo-kai-pros-tin-kalamaria-eikones-vinteo/",
+        "https://www.kathimerini.gr/world/564423547/ee-exi-krati-zitoyn-perikopes-ston-proypologismo-2028-2034/"
       ],
-      "seen_at_utc": "2026-08-27T14:17:06.642898+00:00"
+      "seen_at_utc": "2026-08-27T14:30:03.001003+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,42 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870343/proskrousi-epivatigou-ploiou-sto-limani-tou-madoudiou-apagoreutike-o-apoplous/?utm_source=rss",
-      "title": "Πρόσκρουση επιβατηγού πλοίου στο λιμάνι του Μαντουδίου, απαγορεύτηκε ο απόπλους",
-      "normalized_title": "ΠΡΟΣΚΡΟΥΣΗ ΕΠΙΒΑΤΗΓΟΥ ΠΛΟΙΟΥ ΣΤΟ ΛΙΜΑΝΙ ΤΟΥ ΜΑΝΤΟΥΔΙΟΥ, ΑΠΑΓΟΡΕΥΤΗΚΕ Ο ΑΠΟΠΛΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1870350/ios-dutikou-neilou-ektaktos-psekasmos-se-10000-stremmata-stin-anatoliki-attiki/?utm_source=rss",
+      "title": "Ιός Δυτικού Νείλου: Έκτακτος ψεκασμός σε 10.000 στρέμματα στην Ανατολική Αττική, σύσκεψη Χαρδαλιά με ΕΟΔΥ",
+      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΕΚΤΑΚΤΟΣ ΨΕΚΑΣΜΟΣ ΣΕ 10.000 ΣΤΡΕΜΜΑΤΑ ΣΤΗΝ ΑΝΑΤΟΛΙΚΗ ΑΤΤΙΚΗ, ΣΥΣΚΕΨΗ ΧΑΡΔΑΛΙΑ ΜΕ ΕΟΔΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870343/proskrousi-epivatigou-ploiou-sto-limani-tou-madoudiou-apagoreutike-o-apoplous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870350/ios-dutikou-neilou-ektaktos-psekasmos-se-10000-stremmata-stin-anatoliki-attiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870349/anoixe-gia-to-epivatiko-koino-i-epektasi-tou-metro-thessalonikis-stin-kalamaria-deite-video-kai-fotografies/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T14:17:06.643033+00:00"
+      "seen_at_utc": "2026-08-27T14:30:03.001163+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455526/rodos-nekros-73hronos-se-vrahodi-periohi-epese-se-gkremo-ypo-adieykrinistes-synthikes/",
-      "title": "Ρόδος: Νεκρός 73χρονος σε βραχώδη περιοχή – Έπεσε σε γκρεμό υπό αδιευκρίνιστες συνθήκες",
-      "normalized_title": "ΡΟΔΟΣ: ΝΕΚΡΟΣ 73ΧΡΟΝΟΣ ΣΕ ΒΡΑΧΩΔΗ ΠΕΡΙΟΧΗ – ΕΠΕΣΕ ΣΕ ΓΚΡΕΜΟ ΥΠΟ ΑΔΙΕΥΚΡΙΝΙΣΤΕΣ ΣΥΝΘΗΚΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1455528/aytoktonia-sti-larisa-den-itan-dynato-o-mihanodigos-na-apofygei-tin-parasyrsi-i-anakoinosi-tis-hellenic-train/",
+      "title": "Αυτοκτονία στη Λάρισα: «Δεν ήταν δυνατό ο μηχανοδηγός να αποφύγει την παράσυρση» – Η ανακοίνωση της Hellenic Train",
+      "normalized_title": "ΑΥΤΟΚΤΟΝΙΑ ΣΤΗ ΛΑΡΙΣΑ: «ΔΕΝ ΗΤΑΝ ΔΥΝΑΤΟ Ο ΜΗΧΑΝΟΔΗΓΟΣ ΝΑ ΑΠΟΦΥΓΕΙ ΤΗΝ ΠΑΡΑΣΥΡΣΗ» – Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ HELLENIC TRAIN",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455526/rodos-nekros-73hronos-se-vrahodi-periohi-epese-se-gkremo-ypo-adieykrinistes-synthikes/",
-        "https://www.efsyn.gr/politiki/1455518/i-ataka-mitsotaki-gia-konstantelia-akoysa-enan-nearo-na-leei-poio-metro-ferte-piso-ton-ntelia/",
-        "https://www.efsyn.gr/ellada/1455514/kriti-45hronos-espase-ton-ayhena-toy-kai-apektise-provlima-kinitikotitas-eno-epaize-sti-thalassa-me-to-anipsaki-toy/",
-        "https://www.efsyn.gr/periballon/1455345/neo-horotaxiko-gia-tis-ape-anoigei-o-askos-toy-aioloy-me-prosfyges-sto-ste/",
-        "https://www.efsyn.gr/athlitismos/1455355/na-meinei-eyropi/",
-        "https://www.efsyn.gr/ellada/1455489/xekinise-i-katedafisi-toy-badminton-sto-goydi-14-hronia-meta-tin-apofasi-toy-ste-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1455528/aytoktonia-sti-larisa-den-itan-dynato-o-mihanodigos-na-apofygei-tin-parasyrsi-i-anakoinosi-tis-hellenic-train/"
       ],
-      "seen_at_utc": "2026-08-27T14:17:06.642999+00:00"
+      "seen_at_utc": "2026-08-27T14:30:03.001124+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/sports/on-field/xamos-gia-ton-leao-kai-maxi-tis-galata-me-aston-vila/",
-      "title": "Χαμός για τον Λεάο και «μάχη» της Γαλατά με Άστον Βίλα",
-      "normalized_title": "ΧΑΜΟΣ ΓΙΑ ΤΟΝ ΛΕΑΟ ΚΑΙ «ΜΑΧΗ» ΤΗΣ ΓΑΛΑΤΑ ΜΕ ΑΣΤΟΝ ΒΙΛΑ",
+      "url": "https://www.in.gr/2026/08/27/greece/apokollithike-o-kados-pyrosvesis-se-pyrosvestiko-elikoptero-stin-konitsa-ekane-asfali-prosgeiosi/",
+      "title": "Αποκολλήθηκε ο κάδος πυρόσβεσης σε πυροσβεστικό ελικόπτερο στην Κόνιτσα – Έκανε ασφαλή προσγείωση",
+      "normalized_title": "ΑΠΟΚΟΛΛΗΘΗΚΕ Ο ΚΑΔΟΣ ΠΥΡΟΣΒΕΣΗΣ ΣΕ ΠΥΡΟΣΒΕΣΤΙΚΟ ΕΛΙΚΟΠΤΕΡΟ ΣΤΗΝ ΚΟΝΙΤΣΑ – ΕΚΑΝΕ ΑΣΦΑΛΗ ΠΡΟΣΓΕΙΩΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/sports/on-field/xamos-gia-ton-leao-kai-maxi-tis-galata-me-aston-vila/",
-        "https://www.in.gr/2026/08/27/plus/medianews/vimagazino-taksideysei-sto-londino-kai-apokalyptei-krymmenous-thisayrous/",
-        "https://www.in.gr/2026/08/27/in-science/technology/na-efarmostoun-kai-stin-ee-lene-oi-vrykselles-gia-tis-desmeyseis-tis-meta-stin-prostasia-ton-paidion/",
-        "https://www.in.gr/2026/08/27/world/norvigia-o-vasilias-xaralnt-se-poly-sovari-katastasi-i-oikogeneia-tou-sto-pleyro-tou/",
-        "https://www.in.gr/2026/08/27/greece/lesvos-epeisodiaki-synedriasi-gia-ton-afthodi-pyreto-ayto-pou-symvainei-einai-ntropi/",
-        "https://www.in.gr/2026/08/27/plus/medianews/bhma-erxetai-tin-kyriaki-me-synarpastikes-prosfores-2/"
+        "https://www.in.gr/2026/08/27/greece/apokollithike-o-kados-pyrosvesis-se-pyrosvestiko-elikoptero-stin-konitsa-ekane-asfali-prosgeiosi/",
+        "https://www.in.gr/2026/08/27/life/culture-live/49o-disff-gia-mia-evdomada-i-drama-metamorfonetai-se-proteyousa-ton-tainion-mikrou-mikous/",
+        "https://www.in.gr/2026/08/27/greece/ilektrika-patinia-me-odigous-xoris-kranos-kai-ypo-tin-epireia-alkool-dekades-paravaseis-vevaiose-i-troxaia/"
       ],
-      "seen_at_utc": "2026-08-27T14:17:06.642950+00:00"
+      "seen_at_utc": "2026-08-27T14:30:03.001068+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T14:17:06.643104+00:00"
+  "updated_at_utc": "2026-08-27T14:30:03.001253+00:00"
 }
