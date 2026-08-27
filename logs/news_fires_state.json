@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/explainers/564423541/meta-meleia-ti-allazei-gia-toys-efivoys-christes-meta-ton-symvivasmo-mamoyth/",
-      "title": "Meta-μέλεια: Τι αλλάζει για τους έφηβους χρήστες μετά τον συμβιβασμό-μαμούθ",
-      "normalized_title": "META-ΜΕΛΕΙΑ: ΤΙ ΑΛΛΑΖΕΙ ΓΙΑ ΤΟΥΣ ΕΦΗΒΟΥΣ ΧΡΗΣΤΕΣ ΜΕΤΑ ΤΟΝ ΣΥΜΒΙΒΑΣΜΟ-ΜΑΜΟΥΘ",
+      "url": "https://www.kathimerini.gr/world/564423865/ratko-mlantits-apo-to-seragevo-kai-ti-sremprenitsa-sto-edolio/",
+      "title": "Ράτκο Μλάντιτς: Από το Σεράγεβο και τη Σρεμπρένιτσα στο εδώλιο",
+      "normalized_title": "ΡΑΤΚΟ ΜΛΑΝΤΙΤΣ: ΑΠΟ ΤΟ ΣΕΡΑΓΕΒΟ ΚΑΙ ΤΗ ΣΡΕΜΠΡΕΝΙΤΣΑ ΣΤΟ ΕΔΩΛΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/explainers/564423541/meta-meleia-ti-allazei-gia-toys-efivoys-christes-meta-ton-symvivasmo-mamoyth/"
+        "https://www.kathimerini.gr/world/564423865/ratko-mlantits-apo-to-seragevo-kai-ti-sremprenitsa-sto-edolio/",
+        "https://www.kathimerini.gr/economy/564422689/o-plithorismos-oi-misthoi-kai-o-zolotas/",
+        "https://www.kathimerini.gr/society/564423901/tinos-oydepote-paroysiastike-os-drasi-tis-2is-y-pe-i-protovoylia-mas-leei-i-t2t/"
       ],
-      "seen_at_utc": "2026-08-27T17:29:57.126540+00:00"
+      "seen_at_utc": "2026-08-27T17:51:27.886526+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870453/sta-dikastiria-o-thanatos-36hronis-sto-nosokomeio-sta-hania-meta-ton-toketo/?utm_source=rss",
-      "title": "Στα δικαστήρια ο θάνατος 36χρονης στο νοσοκομείο στα Χανιά μετά τον τοκετό",
-      "normalized_title": "ΣΤΑ ΔΙΚΑΣΤΗΡΙΑ Ο ΘΑΝΑΤΟΣ 36ΧΡΟΝΗΣ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΣΤΑ ΧΑΝΙΑ ΜΕΤΑ ΤΟΝ ΤΟΚΕΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1870463/horis-tis-aisthiseis-tis-anasurthike-18hroni-apo-limni-stous-katarraktes-dermata-veroias/?utm_source=rss",
+      "title": "Χωρίς τις αισθήσεις της ανασύρθηκε 18χρονη από λίμνη στους Καταρράκτες Δερματά Βέροιας",
+      "normalized_title": "ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΗΣ ΑΝΑΣΥΡΘΗΚΕ 18ΧΡΟΝΗ ΑΠΟ ΛΙΜΝΗ ΣΤΟΥΣ ΚΑΤΑΡΡΑΚΤΕΣ ΔΕΡΜΑΤΑ ΒΕΡΟΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870453/sta-dikastiria-o-thanatos-36hronis-sto-nosokomeio-sta-hania-meta-ton-toketo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870463/horis-tis-aisthiseis-tis-anasurthike-18hroni-apo-limni-stous-katarraktes-dermata-veroias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870459/se-asfales-simeio-metaferthikan-peripatites-pou-ehasan-ton-prosanatolismo-tous-sti-thaso/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T17:18:15.816970+00:00"
+      "seen_at_utc": "2026-08-27T17:51:27.886649+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455645/afthodis-pyretos-sti-lesvo-hamos-sto-perifereiako-symvoylio-orgi-ktinotrofon-kai-ihires-paraitiseis/",
-      "title": "Αφθώδης πυρετός στη Λέσβο: Χαμός στο Περιφερειακό Συμβούλιο – Οργή κτηνοτρόφων και ηχηρές παραιτήσεις",
-      "normalized_title": "ΑΦΘΩΔΗΣ ΠΥΡΕΤΟΣ ΣΤΗ ΛΕΣΒΟ: ΧΑΜΟΣ ΣΤΟ ΠΕΡΙΦΕΡΕΙΑΚΟ ΣΥΜΒΟΥΛΙΟ – ΟΡΓΗ ΚΤΗΝΟΤΡΟΦΩΝ ΚΑΙ ΗΧΗΡΕΣ ΠΑΡΑΙΤΗΣΕΙΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1455663/champions-league-dyskoli-klirosi-gia-tin-aek-ta-megathiria-kai-oi-konstantelias-karetsas-koylierakis-kai-doyvikas/",
+      "title": "Champions League: Δύσκολη κλήρωση για την ΑΕΚ – Τα μεγαθήρια και οι Κωνσταντέλιας, Καρέτσας, Κουλιεράκης και Δουβίκας",
+      "normalized_title": "CHAMPIONS LEAGUE: ΔΥΣΚΟΛΗ ΚΛΗΡΩΣΗ ΓΙΑ ΤΗΝ ΑΕΚ – ΤΑ ΜΕΓΑΘΗΡΙΑ ΚΑΙ ΟΙ ΚΩΝΣΤΑΝΤΕΛΙΑΣ, ΚΑΡΕΤΣΑΣ, ΚΟΥΛΙΕΡΑΚΗΣ ΚΑΙ ΔΟΥΒΙΚΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455645/afthodis-pyretos-sti-lesvo-hamos-sto-perifereiako-symvoylio-orgi-ktinotrofon-kai-ihires-paraitiseis/"
+        "https://www.efsyn.gr/athlitismos/1455663/champions-league-dyskoli-klirosi-gia-tin-aek-ta-megathiria-kai-oi-konstantelias-karetsas-koylierakis-kai-doyvikas/",
+        "https://www.efsyn.gr/ellada/1455650/anavlithike-i-diki-toy-syzygoy-tis-gnostis-paroysiastrias-den-ypirxe-somatiki-vlavi-eipe-o-dikigoros-tis/"
       ],
-      "seen_at_utc": "2026-08-27T17:29:57.126642+00:00"
+      "seen_at_utc": "2026-08-27T17:51:27.886625+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/go-fun/fizz/o-ron-ouesli-epistrefei-sto-xogkouarts-o-roupert-gkrint-mpainei-ksana-ston-kosmo-tou-xari-poter/",
-      "title": "Ο Ρον Ουέσλι επιστρέφει στο Χόγκουαρτς - Ο Ρούπερτ Γκριντ μπαίνει ξανά στον κόσμο του Χάρι Πότερ κι αυτό δεν αρέσει σε πολλούς",
-      "normalized_title": "Ο ΡΟΝ ΟΥΕΣΛΙ ΕΠΙΣΤΡΕΦΕΙ ΣΤΟ ΧΟΓΚΟΥΑΡΤΣ - Ο ΡΟΥΠΕΡΤ ΓΚΡΙΝΤ ΜΠΑΙΝΕΙ ΞΑΝΑ ΣΤΟΝ ΚΟΣΜΟ ΤΟΥ ΧΑΡΙ ΠΟΤΕΡ ΚΙ ΑΥΤΟ ΔΕΝ ΑΡΕΣΕΙ ΣΕ ΠΟΛΛΟΥΣ",
+      "url": "https://www.in.gr/2026/08/27/in-science/technology/iphone-ultra-i-apple-mpainei-stin-agora-ton-anadiploumenon-syskeyon/",
+      "title": "Η Apple «μπαίνει» στην αγορά των αναδιπλούμενων συσκευών με το iPhone Ultra",
+      "normalized_title": "Η APPLE «ΜΠΑΙΝΕΙ» ΣΤΗΝ ΑΓΟΡΑ ΤΩΝ ΑΝΑΔΙΠΛΟΥΜΕΝΩΝ ΣΥΣΚΕΥΩΝ ΜΕ ΤΟ IPHONE ULTRA",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/go-fun/fizz/o-ron-ouesli-epistrefei-sto-xogkouarts-o-roupert-gkrint-mpainei-ksana-ston-kosmo-tou-xari-poter/",
-        "https://www.in.gr/2026/08/27/world/nepal-epistimones-eksigoun-sto-in-ti-prokalese-to-foniko-tsounami-laspis/"
+        "https://www.in.gr/2026/08/27/in-science/technology/iphone-ultra-i-apple-mpainei-stin-agora-ton-anadiploumenon-syskeyon/",
+        "https://www.in.gr/2026/08/27/life/texni/olympia-topia-o-kostas-ntais-epistrefei-stis-eikastikes-rizes-tou/",
+        "https://www.in.gr/2026/08/27/sports/football/champions-league/champions-league-oi-antipaloi-kai-ton-36-omadon-sti-league-phase/",
+        "https://www.in.gr/2026/08/27/economy/xamiles-ptiseis-kai-dysareskeia-gia-tin-kyvernisi-apo-tis-mikres-epixeiriseis-ti-zitane-enopsei-deth/",
+        "https://www.in.gr/2026/08/27/world/o-aksonas-tou-islamampant-kouveit-kai-pakistan-ypegrapsan-symfonia-koinis-amynas-kai-stratiotikis-synergasias/",
+        "https://www.in.gr/2026/08/27/greece/leykada-eksi-syllipseis-gia-ti-vomva-se-vila-epixeirimatia-ton-perasmeno-ianouario-mesa-apo-ti-fylaki-i-entoli/"
       ],
-      "seen_at_utc": "2026-08-27T17:29:57.126605+00:00"
+      "seen_at_utc": "2026-08-27T17:51:27.886572+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T17:29:57.126714+00:00"
+  "updated_at_utc": "2026-08-27T17:51:27.886718+00:00"
 }
