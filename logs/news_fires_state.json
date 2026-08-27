@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564423508/nepal-ekatomves-nekron-chiliades-agnooymenoi-kai-fovoi-gia-nees-plimmyres/",
-      "title": "Νεπάλ: Εκατόμβες νεκρών, χιλιάδες αγνοούμενοι και φόβοι για νέες πλημμύρες",
-      "normalized_title": "ΝΕΠΑΛ: ΕΚΑΤΟΜΒΕΣ ΝΕΚΡΩΝ, ΧΙΛΙΑΔΕΣ ΑΓΝΟΟΥΜΕΝΟΙ ΚΑΙ ΦΟΒΟΙ ΓΙΑ ΝΕΕΣ ΠΛΗΜΜΥΡΕΣ",
+      "url": "https://www.kathimerini.gr/politics/amyna/564423523/katedafizetai-to-ktirio-toy-badminton-sto-proin-olympiako-kentro-goydi-vinteo/",
+      "title": "Κατεδαφίζεται το κτίριο του Badminton στο πρώην Ολυμπιακό Κέντρο Γουδή (βίντεο)",
+      "normalized_title": "ΚΑΤΕΔΑΦΙΖΕΤΑΙ ΤΟ ΚΤΙΡΙΟ ΤΟΥ BADMINTON ΣΤΟ ΠΡΩΗΝ ΟΛΥΜΠΙΑΚΟ ΚΕΝΤΡΟ ΓΟΥΔΗ (ΒΙΝΤΕΟ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564423508/nepal-ekatomves-nekron-chiliades-agnooymenoi-kai-fovoi-gia-nees-plimmyres/"
+        "https://www.kathimerini.gr/politics/amyna/564423523/katedafizetai-to-ktirio-toy-badminton-sto-proin-olympiako-kentro-goydi-vinteo/"
       ],
-      "seen_at_utc": "2026-08-27T13:30:02.861270+00:00"
+      "seen_at_utc": "2026-08-27T13:51:55.132337+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1259,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870318/eihan-panikovlithei-nearos-stin-argolida-apsifise-ton-kinduno-kai-esose-ilikiomeno-zeugari-apo-tis-floges/?utm_source=rss",
-      "title": "«Είχαν πανικοβληθεί»: Νεαρός στην Αργολίδα αψήφησε τον κίνδυνο, μπήκε σε σπίτι που καιγόταν και έσωσε ηλικιωμένο ζευγάρι από τις φλόγες",
-      "normalized_title": "«ΕΙΧΑΝ ΠΑΝΙΚΟΒΛΗΘΕΙ»: ΝΕΑΡΟΣ ΣΤΗΝ ΑΡΓΟΛΙΔΑ ΑΨΗΦΗΣΕ ΤΟΝ ΚΙΝΔΥΝΟ, ΜΠΗΚΕ ΣΕ ΣΠΙΤΙ ΠΟΥ ΚΑΙΓΟΤΑΝ ΚΑΙ ΕΣΩΣΕ ΗΛΙΚΙΩΜΕΝΟ ΖΕΥΓΑΡΙ ΑΠΟ ΤΙΣ ΦΛΟΓΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1870332/fotia-se-diamerisma-stin-orestiada-86hroni-me-kinitika-provlimata-apomakrunthike-me-asfaleia/?utm_source=rss",
+      "title": "Φωτιά σε διαμέρισμα στην Ορεστιάδα, 86χρονη με κινητικά προβλήματα απομακρύνθηκε με ασφάλεια",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗΝ ΟΡΕΣΤΙΑΔΑ, 86ΧΡΟΝΗ ΜΕ ΚΙΝΗΤΙΚΑ ΠΡΟΒΛΗΜΑΤΑ ΑΠΟΜΑΚΡΥΝΘΗΚΕ ΜΕ ΑΣΦΑΛΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870318/eihan-panikovlithei-nearos-stin-argolida-apsifise-ton-kinduno-kai-esose-ilikiomeno-zeugari-apo-tis-floges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870313/adeiazan-fortigo-me-baza-stous-propodes-tis-parnithas-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870332/fotia-se-diamerisma-stin-orestiada-86hroni-me-kinitika-provlimata-apomakrunthike-me-asfaleia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870328/nekros-edopistike-73hronos-pou-agnooudan-sti-rodo-epese-apo-upsos-pede-metron/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870326/fotia-se-dasiki-ektasi-sto-hrusokastro-kavalas-epiheirei-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870321/poloudai-proin-kratitiria-tis-elas-enadi-180000-euro-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870319/me-edoli-dendia-xekinise-i-katedafisi-tou-badminton-sto-parko-goudi-deite-fotografies/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T13:30:02.861404+00:00"
+      "seen_at_utc": "2026-08-27T13:51:55.132449+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1455481/servia-pethane-o-hasapis-tis-vosnias-ratko-mlantits/",
-      "title": "Σερβία: Πέθανε ο «χασάπης» της Βοσνίας Ράτκο Μλάντιτς",
-      "normalized_title": "ΣΕΡΒΙΑ: ΠΕΘΑΝΕ Ο «ΧΑΣΑΠΗΣ» ΤΗΣ ΒΟΣΝΙΑΣ ΡΑΤΚΟ ΜΛΑΝΤΙΤΣ",
+      "url": "https://www.efsyn.gr/ellada/1455503/fotia-se-dasos-stin-kavala-epiheirei-elikoptero/",
+      "title": "Φωτιά σε δάσος στην Καβάλα – Επιχειρεί ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΟΣ ΣΤΗΝ ΚΑΒΑΛΑ – ΕΠΙΧΕΙΡΕΙ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1455481/servia-pethane-o-hasapis-tis-vosnias-ratko-mlantits/"
+        "https://www.efsyn.gr/ellada/1455503/fotia-se-dasos-stin-kavala-epiheirei-elikoptero/",
+        "https://www.efsyn.gr/kosmos/1455487/h-e-e-zita-metra-apo-ti-meta-meta-ton-symvivasmo-stis-ipa-ofeilei-na-prostateysei-kai-ta-dika-mas-paidia/",
+        "https://www.efsyn.gr/politiki/1455480/arvanitis-gia-akrita-mia-antidikia-me-tin-syzygo-toy-prothypoyrgoy-den-mporei-na-kathorizei-ti-leitoyrgia-tis-voylis/"
       ],
-      "seen_at_utc": "2026-08-27T13:30:02.861371+00:00"
+      "seen_at_utc": "2026-08-27T13:51:55.132420+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/economy/diethnis-oikonomia/ependyseis-deksiotites-kai-energeia-ayti-einai-i-syntagi-tis-anaptyksis-gia-tin-fon-nter-laien/",
-      "title": "Επενδύσεις, δεξιότητες και ενέργεια – Αυτή είναι η «συνταγή» της ανάπτυξης για την φον ντερ Λάιεν",
-      "normalized_title": "ΕΠΕΝΔΥΣΕΙΣ, ΔΕΞΙΟΤΗΤΕΣ ΚΑΙ ΕΝΕΡΓΕΙΑ – ΑΥΤΗ ΕΙΝΑΙ Η «ΣΥΝΤΑΓΗ» ΤΗΣ ΑΝΑΠΤΥΞΗΣ ΓΙΑ ΤΗΝ ΦΟΝ ΝΤΕΡ ΛΑΙΕΝ",
+      "url": "https://www.in.gr/2026/08/27/sports/football/ypografei-sti-liverpoul-o-mparkola-pics/",
+      "title": "«Υπογράφει στη Λίβερπουλ ο Μπαρκολά» (pics)",
+      "normalized_title": "«ΥΠΟΓΡΑΦΕΙ ΣΤΗ ΛΙΒΕΡΠΟΥΛ Ο ΜΠΑΡΚΟΛΑ» (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/economy/diethnis-oikonomia/ependyseis-deksiotites-kai-energeia-ayti-einai-i-syntagi-tis-anaptyksis-gia-tin-fon-nter-laien/",
-        "https://www.in.gr/2026/08/27/world/servia-pethane-o-xasapis-tis-vosnias-ratko-mlantits/",
-        "https://www.in.gr/2026/08/27/life/culture-live/rintlei-skot-o-tzeikomp-elornti-moiazei-me-agrotopaido/",
-        "https://www.in.gr/2026/08/27/sports/basketball/thanasis-antetokounmpo-na-eimaste-etoimoi-psyxika-pneymatika-kai-somatika/"
+        "https://www.in.gr/2026/08/27/sports/football/ypografei-sti-liverpoul-o-mparkola-pics/",
+        "https://www.in.gr/2026/08/27/greece/fotia-sto-xrysokastro-kavalas/",
+        "https://www.in.gr/2026/08/27/greece/katedafizetai-to-ktirio-tou-mpantminton-sto-goudi/",
+        "https://www.in.gr/2026/08/27/stories/smyrni-i-pnoi-tis-ionias-i-idytita-tis-zois/"
       ],
-      "seen_at_utc": "2026-08-27T13:30:02.861332+00:00"
+      "seen_at_utc": "2026-08-27T13:51:55.132391+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T13:30:02.861493+00:00"
+  "updated_at_utc": "2026-08-27T13:51:55.132547+00:00"
 }
