@@ -1,26 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564423259/i-aek-etoimazetai-na-paixei-stin-tachytita-toy-champions-league/",
-      "title": "Η ΑΕΚ ετοιμάζεται να παίξει στην ταχύτητα του Champions League",
-      "normalized_title": "Η ΑΕΚ ΕΤΟΙΜΑΖΕΤΑΙ ΝΑ ΠΑΙΞΕΙ ΣΤΗΝ ΤΑΧΥΤΗΤΑ ΤΟΥ CHAMPIONS LEAGUE",
+      "url": "https://www.kathimerini.gr/economy/local/564422710/se-omologa-to-25-toy-energitikoy-ton-4-systimikon-trapezon/",
+      "title": "Σε ομόλογα το 25% του ενεργητικού των 4 συστημικών τραπεζών",
+      "normalized_title": "ΣΕ ΟΜΟΛΟΓΑ ΤΟ 25% ΤΟΥ ΕΝΕΡΓΗΤΙΚΟΥ ΤΩΝ 4 ΣΥΣΤΗΜΙΚΩΝ ΤΡΑΠΕΖΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564423259/i-aek-etoimazetai-na-paixei-stin-tachytita-toy-champions-league/",
-        "https://www.kathimerini.gr/society/564423313/eyvoia-pyrkagia-se-chamili-vlastisi-stin-kato-monokarya-istiaias/",
-        "https://www.kathimerini.gr/culture/cinema/564423310/o-stingk-afigeitai-ti-zoi-toy-nino-rota/",
-        "https://www.kathimerini.gr/world/564423301/kremlino-gia-ta-peri-rosikis-epithesis-kata-toy-nato-istories-tromoy/",
-        "https://www.kathimerini.gr/columns/564421795/ta-krasia-poy-agapoyn-ta-thalassina/",
-        "https://www.kathimerini.gr/opinion/564422236/to-ypodeigma-toy-ste/",
-        "https://www.kathimerini.gr/k/gastronomos/564421900/toy-ai-lios-to-stafylaki-2/",
-        "https://www.kathimerini.gr/politics/government/564422326/periodeies-kai-exaggelies-enopsei-deth/",
-        "https://www.kathimerini.gr/opinion/564422653/den-sas-ikanopoiei-i-eyropi/",
-        "https://www.kathimerini.gr/opinion/564422656/ntoli-parton-stras/",
-        "https://www.kathimerini.gr/society/564423292/tinos-ti-leei-i-2i-ype-gia-ta-60-000-eyro-poy-sygkentrose-kantina-gia-yperichotomografo/",
-        "https://www.kathimerini.gr/opinion/564422230/i-periochi-se-anavrasmo/",
-        "https://www.kathimerini.gr/opinion/564422491/kalos-o-exotismos-alla-i-ypomoni-exantleitai/",
-        "https://www.kathimerini.gr/opinion/564423286/o-ti-kako-eiche-i-tileorasi-yparchei-pia-sto-diadiktyo-giati-tosa-vinteo-me-katastrofes/"
+        "https://www.kathimerini.gr/economy/local/564422710/se-omologa-to-25-toy-energitikoy-ton-4-systimikon-trapezon/",
+        "https://www.kathimerini.gr/culture/tv/564423370/emily-in-paris-protes-eikones-apo-tin-ekti-kai-teleytaia-sezon/",
+        "https://www.kathimerini.gr/world/564423355/komision-prasino-fos-gia-to-elliniko-koinoniko-klimatiko-schedio-ton-4-77-dis-eyro/",
+        "https://www.kathimerini.gr/society/564423346/akraios-kindynos-pyrkagias-tin-paraskeyi-28-08-se-kriti-notio-aigaio/",
+        "https://www.kathimerini.gr/world/564423334/germania-rekor-thanaton-poy-schetizontai-me-ti-zesti/"
       ],
-      "seen_at_utc": "2026-08-27T10:17:47.218037+00:00"
+      "seen_at_utc": "2026-08-27T10:51:25.112647+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,37 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870207/epidoma-300-euro-to-mina-stous-anaplirotes-gia-tin-kalupsi-ton-ekpaideutikon-kenon-stin-kuthno/?utm_source=rss",
-      "title": "Επίδομα 300 ευρώ το μήνα στους αναπληρωτές για την κάλυψη των εκπαιδευτικών κενών στην Κύθνο",
-      "normalized_title": "ΕΠΙΔΟΜΑ 300 ΕΥΡΩ ΤΟ ΜΗΝΑ ΣΤΟΥΣ ΑΝΑΠΛΗΡΩΤΕΣ ΓΙΑ ΤΗΝ ΚΑΛΥΨΗ ΤΩΝ ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΚΕΝΩΝ ΣΤΗΝ ΚΥΘΝΟ",
+      "url": "https://www.protothema.gr/greece/article/1870217/pote-tha-paradothei-stin-kukloforia-i-pio-eduposiaki-gefura-stin-ellada/?utm_source=rss",
+      "title": "Πότε θα παραδοθεί στην κυκλοφορία η πιο εντυπωσιακή γέφυρα στην Ελλάδα",
+      "normalized_title": "ΠΟΤΕ ΘΑ ΠΑΡΑΔΟΘΕΙ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ Η ΠΙΟ ΕΝΤΥΠΩΣΙΑΚΗ ΓΕΦΥΡΑ ΣΤΗΝ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870207/epidoma-300-euro-to-mina-stous-anaplirotes-gia-tin-kalupsi-ton-ekpaideutikon-kenon-stin-kuthno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870205/dimarhos-leipson-ekopse-ta-mallia-tis-kai-ta-harise-se-karkinopatheis-den-hreiazetai-na-ehoume-polla-gia-na-dosoume-leei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870217/pote-tha-paradothei-stin-kukloforia-i-pio-eduposiaki-gefura-stin-ellada/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870214/oi-8-nees-paremvaseis-apo-touba-kai-apth-eos-parking-kai-ari-sti-thessaloniki-milame-me-erga-leei-o-hatzidakis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T10:30:02.942739+00:00"
+      "seen_at_utc": "2026-08-27T10:51:25.112740+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455348/istoriki-stigmi-o-hristos-georgokostopoylos-ginetai-o-protos-kofos-didaktoras-sti-hora/",
-      "title": "Ιστορική στιγμή: Ο Χρήστος Γεωργοκωστόπουλος γίνεται ο πρώτος Κωφός διδάκτορας στη χώρα",
-      "normalized_title": "ΙΣΤΟΡΙΚΗ ΣΤΙΓΜΗ: Ο ΧΡΗΣΤΟΣ ΓΕΩΡΓΟΚΩΣΤΟΠΟΥΛΟΣ ΓΙΝΕΤΑΙ Ο ΠΡΩΤΟΣ ΚΩΦΟΣ ΔΙΔΑΚΤΟΡΑΣ ΣΤΗ ΧΩΡΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1455366/i-komision-enekrine-to-koinoniko-klimatiko-shedio-tis-elladas-poy-tha-kateythynthoyn-48-dis-eyro/",
+      "title": "Η Κομισιόν ενέκρινε το Κοινωνικό Κλιματικό Σχέδιο της Ελλάδας: Πού θα κατευθυνθούν 4,8 δισ. ευρώ",
+      "normalized_title": "Η ΚΟΜΙΣΙΟΝ ΕΝΕΚΡΙΝΕ ΤΟ ΚΟΙΝΩΝΙΚΟ ΚΛΙΜΑΤΙΚΟ ΣΧΕΔΙΟ ΤΗΣ ΕΛΛΑΔΑΣ: ΠΟΥ ΘΑ ΚΑΤΕΥΘΥΝΘΟΥΝ 4,8 ΔΙΣ. ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455348/istoriki-stigmi-o-hristos-georgokostopoylos-ginetai-o-protos-kofos-didaktoras-sti-hora/",
-        "https://www.efsyn.gr/ellada/1455334/pethane-o-radiofonikos-paragogos-vasilis-petrakis/",
-        "https://www.efsyn.gr/ellada/1455347/thessaloniki-17hronos-epese-sti-thalassa-sto-ypsos-toy-leykoy-pyrgoy/"
+        "https://www.efsyn.gr/oikonomia/1455366/i-komision-enekrine-to-koinoniko-klimatiko-shedio-tis-elladas-poy-tha-kateythynthoyn-48-dis-eyro/",
+        "https://www.efsyn.gr/politiki/1455174/oi-11-protaseis-toy-pasok-gia-mia-dikaii-lysi-sto-idiotiko-hreos/",
+        "https://www.efsyn.gr/ellada/1455350/exarhoy-to-metro-thessalonikis-to-pio-syghrono-stin-eyropi/",
+        "https://www.efsyn.gr/ellada/1455196/akatallila-ktiria-apo-ton-tromopontika-stin-kypseli-agonia-apo-ta-stoiheia-tis-meletis/",
+        "https://www.efsyn.gr/ellada/1455359/me-katanyxi-to-tama-ston-agio-fanoyrio-sto-nayplio-ekatontades-fanoyropites-sto-palamidi-vinteo/"
       ],
-      "seen_at_utc": "2026-08-27T10:30:02.942714+00:00"
+      "seen_at_utc": "2026-08-27T10:51:25.112720+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/plus/medianews/mega-stin-koryfi-tis-tiletheasis-me-ton-agona-aek-lefski/",
-      "title": "MEGA: Στην κορυφή της τηλεθέασης με τον αγώνα ΑΕΚ – Λέφσκι",
-      "normalized_title": "MEGA: ΣΤΗΝ ΚΟΡΥΦΗ ΤΗΣ ΤΗΛΕΘΕΑΣΗΣ ΜΕ ΤΟΝ ΑΓΩΝΑ ΑΕΚ – ΛΕΦΣΚΙ",
+      "url": "https://www.in.gr/2026/08/27/world/germania-rekor-thanaton-pou-sxetizontai-me-ti-zesti-pano-apo-15-800-nekroi/",
+      "title": "Γερμανία: Ρεκόρ θανάτων που σχετίζονται με τη ζέστη – Πάνω από 15.800 νεκροί",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΡΕΚΟΡ ΘΑΝΑΤΩΝ ΠΟΥ ΣΧΕΤΙΖΟΝΤΑΙ ΜΕ ΤΗ ΖΕΣΤΗ – ΠΑΝΩ ΑΠΟ 15.800 ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/plus/medianews/mega-stin-koryfi-tis-tiletheasis-me-ton-agona-aek-lefski/",
-        "https://www.in.gr/2026/08/27/politics/aftodioikisi/dimos-anastellei-ti-leitourgia-sxoleiou/",
-        "https://www.in.gr/2026/08/27/apopsi/na-ti-leme-me-to-onoma-tis-gynaikoktonia/"
+        "https://www.in.gr/2026/08/27/world/germania-rekor-thanaton-pou-sxetizontai-me-ti-zesti-pano-apo-15-800-nekroi/",
+        "https://www.in.gr/2026/08/27/politics/aftodioikisi/ksekinise-i-synarmologisi-tis-pezogefyras-agiou-konstantinou/",
+        "https://www.in.gr/2026/08/27/world/nepal-sygklonizei-martyria-ellina-pou-zei-ekei-apo-ayrio-kai-meta-tha-arxisoun-na-mazeyoun-ptomata/",
+        "https://www.in.gr/2026/08/27/politics/agkyra-gia-rodo-an-ginei-vasi-uav-tha-vlapsei-tin-statherotita-kai-tin-eirini-sto-aigaio/",
+        "https://www.in.gr/2026/08/27/greece/syros-neo-vinteo-ntokoumento-gia-ti-dolofonia-tis-42xronis-diasostrias/",
+        "https://www.in.gr/2026/08/27/sports/football/super-league-ksenoi-diaitites-kai-goal-line-cameras-ston-proto-gyro/"
       ],
-      "seen_at_utc": "2026-08-27T10:30:02.942679+00:00"
+      "seen_at_utc": "2026-08-27T10:51:25.112691+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T10:30:02.942800+00:00"
+  "updated_at_utc": "2026-08-27T10:51:25.112820+00:00"
 }
