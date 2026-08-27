@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564420646/ola-deichnoyn-melanson-enantion-lepen/",
-      "title": "Ολα δείχνουν Μελανσόν εναντίον Λεπέν",
-      "normalized_title": "ΟΛΑ ΔΕΙΧΝΟΥΝ ΜΕΛΑΝΣΟΝ ΕΝΑΝΤΙΟΝ ΛΕΠΕΝ",
+      "url": "https://www.kathimerini.gr/economy/564422782/elegchetai-to-daneio-gia-tin-agora-megaloy-oikoy-anochis-tis-germanias/",
+      "title": "Ελέγχεται το δάνειο για την αγορά μεγάλου οίκου ανοχής της Γερμανίας",
+      "normalized_title": "ΕΛΕΓΧΕΤΑΙ ΤΟ ΔΑΝΕΙΟ ΓΙΑ ΤΗΝ ΑΓΟΡΑ ΜΕΓΑΛΟΥ ΟΙΚΟΥ ΑΝΟΧΗΣ ΤΗΣ ΓΕΡΜΑΝΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564420646/ola-deichnoyn-melanson-enantion-lepen/"
+        "https://www.kathimerini.gr/economy/564422782/elegchetai-to-daneio-gia-tin-agora-megaloy-oikoy-anochis-tis-germanias/",
+        "https://www.kathimerini.gr/society/564423145/pyrkagia-tora-sti-chio-ischyri-dynami-sto-simeio-kai-pente-enaeria-sti-machi/",
+        "https://www.kathimerini.gr/world/564423133/norvigia-exairetika-sovari-i-katastasi-tis-ygeias-toy-vasilia-charalnt/"
       ],
-      "seen_at_utc": "2026-08-27T08:30:02.128702+00:00"
+      "seen_at_utc": "2026-08-27T08:51:32.157767+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,39 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870135/endooikogeneiakis-vias-i-44hroni-pou-dolofonithike-apo-ton-suzugo-tis-sti-rodopi-simera-tha-katethete-aitisi-diazugiou/?utm_source=rss",
-      "title": "Θύμα βίας επί χρόνια από τον σύζυγό της ήταν η 44χρονη στη Ροδόπη, σήμερα θα κατέθετε αίτηση διαζυγίου",
-      "normalized_title": "ΘΥΜΑ ΒΙΑΣ ΕΠΙ ΧΡΟΝΙΑ ΑΠΟ ΤΟΝ ΣΥΖΥΓΟ ΤΗΣ ΗΤΑΝ Η 44ΧΡΟΝΗ ΣΤΗ ΡΟΔΟΠΗ, ΣΗΜΕΡΑ ΘΑ ΚΑΤΕΘΕΤΕ ΑΙΤΗΣΗ ΔΙΑΖΥΓΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1870144/akurothike-to-podosfairiko-kab-tis-bartselona-sta-katehomena/?utm_source=rss",
+      "title": "Ακυρώθηκε το ποδοσφαιρικό καμπ της Μπαρτσελόνα στα Κατεχόμενα",
+      "normalized_title": "ΑΚΥΡΩΘΗΚΕ ΤΟ ΠΟΔΟΣΦΑΙΡΙΚΟ ΚΑΜΠ ΤΗΣ ΜΠΑΡΤΣΕΛΟΝΑ ΣΤΑ ΚΑΤΕΧΟΜΕΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870135/endooikogeneiakis-vias-i-44hroni-pou-dolofonithike-apo-ton-suzugo-tis-sti-rodopi-simera-tha-katethete-aitisi-diazugiou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870144/akurothike-to-podosfairiko-kab-tis-bartselona-sta-katehomena/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870140/fotia-se-dasiki-ektasi-sti-hio-epiheiroun-pede-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870137/megali-epiheirisi-diasosis-gia-akuvernito-kotero-me-tesseris-epivainodes-anoihta-ton-adipaxon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T08:30:02.128803+00:00"
+      "seen_at_utc": "2026-08-27T08:51:32.157916+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/?p=1455221",
-      "title": "Τίτλοι τέλους στην πολύκροτη δικαστική διαμάχη Μπλέικ Λάιβλι – Τζάστιν Μπαλντόνι: Αποζημίωση 400.000 δολαρίων",
-      "normalized_title": "ΤΙΤΛΟΙ ΤΕΛΟΥΣ ΣΤΗΝ ΠΟΛΥΚΡΟΤΗ ΔΙΚΑΣΤΙΚΗ ΔΙΑΜΑΧΗ ΜΠΛΕΙΚ ΛΑΙΒΛΙ – ΤΖΑΣΤΙΝ ΜΠΑΛΝΤΟΝΙ: ΑΠΟΖΗΜΙΩΣΗ 400.000 ΔΟΛΑΡΙΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1455246/praxi-allileggyis-i-dimarhos-leipson-ekopse-kai-dorise-ta-mallia-tis-oti-perisseyei-se-emas-einai-polytimo-se-alloys/",
+      "title": "Πράξη αλληλεγγύης: Η δήμαρχος Λειψών έκοψε και δώρισε τα μαλλιά της – «Ο,τι περισσεύει σε εμάς, είναι πολύτιμο σε άλλους»",
+      "normalized_title": "ΠΡΑΞΗ ΑΛΛΗΛΕΓΓΥΗΣ: Η ΔΗΜΑΡΧΟΣ ΛΕΙΨΩΝ ΕΚΟΨΕ ΚΑΙ ΔΩΡΙΣΕ ΤΑ ΜΑΛΛΙΑ ΤΗΣ – «Ο,ΤΙ ΠΕΡΙΣΣΕΥΕΙ ΣΕ ΕΜΑΣ, ΕΙΝΑΙ ΠΟΛΥΤΙΜΟ ΣΕ ΑΛΛΟΥΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/?p=1455221",
-        "https://www.efsyn.gr/stiles/1455218/idiotika-panepistimia-i-mipos-den-einai-etsi/",
-        "https://www.efsyn.gr/ellada/1455200/prosefyge-kai-o-spirtzis-sto-edda-gia-to-skandalo-ton-ypoklopon/",
-        "https://www.efsyn.gr/ellada/1455201/ta-egkainia-tis-epektasis-toy-metro-tis-thessalonikis-pros-kalamaria-i-omilia-mitsotaki/",
-        "https://www.efsyn.gr/ellada/1455192/trohaio-sti-skopelo-zeygari-metaferthike-sto-nosokomeio-voloy-me-pollapla-traymata/"
+        "https://www.efsyn.gr/ellada/1455246/praxi-allileggyis-i-dimarhos-leipson-ekopse-kai-dorise-ta-mallia-tis-oti-perisseyei-se-emas-einai-polytimo-se-alloys/",
+        "https://www.efsyn.gr/athlitismos/1455239/aek-i-ora-tis-megalis-klirosis-toy-champions-league-simera-gia-tin-enosi-oi-pithanoi-antipaloi/",
+        "https://www.efsyn.gr/ellada/1455243/foitites-apo-simera-oi-eggrafes-protoeton-sta-aei-apokleistika-ilektronika/"
       ],
-      "seen_at_utc": "2026-08-27T08:17:04.196935+00:00"
+      "seen_at_utc": "2026-08-27T08:51:32.157885+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/greece/axaia-sto-nosokomeio-14xronos-pou-epese-sto-keno-otan-ypoxorise-kagkelo/",
-      "title": "Στο νοσοκομείο 14χρονος που έπεσε στο κενό όταν υποχώρησε κάγκελο",
-      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ 14ΧΡΟΝΟΣ ΠΟΥ ΕΠΕΣΕ ΣΤΟ ΚΕΝΟ ΟΤΑΝ ΥΠΟΧΩΡΗΣΕ ΚΑΓΚΕΛΟ",
+      "url": "https://www.in.gr/2026/08/27/greece/synagermos-gia-fotia-sti-xio-epixeiroun-kai-pente-enaeria-mesa/",
+      "title": "Συναγερμός για φωτιά στη Χίο – Επιχειρούν και πέντε εναέρια μέσα",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΓΙΑ ΦΩΤΙΑ ΣΤΗ ΧΙΟ – ΕΠΙΧΕΙΡΟΥΝ ΚΑΙ ΠΕΝΤΕ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/greece/axaia-sto-nosokomeio-14xronos-pou-epese-sto-keno-otan-ypoxorise-kagkelo/",
-        "https://www.in.gr/2026/08/27/politics/aftodioikisi/xartina-staxtodoxeia-paralias-mias-xrisis-stous-stathmous-diodion-kalamatas/",
-        "https://www.in.gr/2026/08/27/in-science/episthmes/prasino-fos-se-xapi-orosimo-gia-ton-karkino-tou-pagkreatos/",
-        "https://www.in.gr/2026/08/27/sports/football/super-league-oi-diaitites-tis-2is-agonistikis/"
+        "https://www.in.gr/2026/08/27/greece/synagermos-gia-fotia-sti-xio-epixeiroun-kai-pente-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-27T08:30:02.128754+00:00"
+      "seen_at_utc": "2026-08-27T08:51:32.157829+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T08:30:02.128890+00:00"
+  "updated_at_utc": "2026-08-27T08:51:32.158055+00:00"
 }
