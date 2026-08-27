@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564422344/etoimazoyn-formoyla-gia-to-kalodio/",
-      "title": "Ετοιμάζουν φόρμουλα για το καλώδιο",
-      "normalized_title": "ΕΤΟΙΜΑΖΟΥΝ ΦΟΡΜΟΥΛΑ ΓΙΑ ΤΟ ΚΑΛΩΔΙΟ",
+      "url": "https://www.kathimerini.gr/athletics/564423928/champions-league-oi-8-antipaloi-tis-aek-sti-league-phase/",
+      "title": "Champions League: Οι 8 αντίπαλοι της ΑΕΚ στη League Phase",
+      "normalized_title": "CHAMPIONS LEAGUE: ΟΙ 8 ΑΝΤΙΠΑΛΟΙ ΤΗΣ ΑΕΚ ΣΤΗ LEAGUE PHASE",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564422344/etoimazoyn-formoyla-gia-to-kalodio/",
-        "https://www.kathimerini.gr/economy/local/564422740/anerchomeno-asteri-stin-kainotomia-i-athina/"
+        "https://www.kathimerini.gr/athletics/564423928/champions-league-oi-8-antipaloi-tis-aek-sti-league-phase/",
+        "https://www.kathimerini.gr/culture/564422518/toyristes-mono-gia-to-beat/",
+        "https://www.kathimerini.gr/society/564422368/kena-stin-psychiatriki-frontida-paidion-kai-efivon/",
+        "https://www.kathimerini.gr/world/564423787/vretania-chaker-eklepsan-stoicheia-ekatommyrion-epivaton-apo-3-aerodromia/",
+        "https://www.kathimerini.gr/columns/564423844/i-megali-melanthioy-kai-i-deyteri-zoi-toy-dos-agaves/"
       ],
-      "seen_at_utc": "2026-08-27T16:51:42.042319+00:00"
+      "seen_at_utc": "2026-08-27T17:18:15.816858+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870428/exi-sullipseis-se-astunomiki-epiheirisi-sto-lasithi-katashethikan-kokaini-kai-42820-euro/?utm_source=rss",
-      "title": "Έξι συλλήψεις σε αστυνομική επιχείρηση στο Λασίθι, κατασχέθηκαν κοκαΐνη και 42.820 ευρώ",
-      "normalized_title": "ΕΞΙ ΣΥΛΛΗΨΕΙΣ ΣΕ ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΟ ΛΑΣΙΘΙ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΚΟΚΑΙΝΗ ΚΑΙ 42.820 ΕΥΡΩ",
+      "url": "https://www.protothema.gr/greece/article/1870453/sta-dikastiria-o-thanatos-36hronis-sto-nosokomeio-sta-hania-meta-ton-toketo/?utm_source=rss",
+      "title": "Στα δικαστήρια ο θάνατος 36χρονης στο νοσοκομείο στα Χανιά μετά τον τοκετό",
+      "normalized_title": "ΣΤΑ ΔΙΚΑΣΤΗΡΙΑ Ο ΘΑΝΑΤΟΣ 36ΧΡΟΝΗΣ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΣΤΑ ΧΑΝΙΑ ΜΕΤΑ ΤΟΝ ΤΟΚΕΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870428/exi-sullipseis-se-astunomiki-epiheirisi-sto-lasithi-katashethikan-kokaini-kai-42820-euro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870426/mesa-apo-ti-fulaki-edosan-tin-edoli-gia-ti-vomvistiki-epithesi-se-vila-sti-leukada-to-varu-poiniko-parelthon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870453/sta-dikastiria-o-thanatos-36hronis-sto-nosokomeio-sta-hania-meta-ton-toketo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T16:51:42.042494+00:00"
+      "seen_at_utc": "2026-08-27T17:18:15.816970+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455634/doykas-ginetai-praxi-i-apofasi-mas-gia-katedafisi-toy-badminton-to-proto-vima-gia-to-mitropolitiko-parko/",
-      "title": "Δούκας: «Γίνεται πράξη η απόφασή μας για κατεδάφιση του Badminton – Το πρώτο βήμα για το Μητροπολιτικό πάρκο»",
-      "normalized_title": "ΔΟΥΚΑΣ: «ΓΙΝΕΤΑΙ ΠΡΑΞΗ Η ΑΠΟΦΑΣΗ ΜΑΣ ΓΙΑ ΚΑΤΕΔΑΦΙΣΗ ΤΟΥ BADMINTON – ΤΟ ΠΡΩΤΟ ΒΗΜΑ ΓΙΑ ΤΟ ΜΗΤΡΟΠΟΛΙΤΙΚΟ ΠΑΡΚΟ»",
+      "url": "https://www.efsyn.gr/kosmos/1455546/voreia-makedonia-exi-nekroi-kai-51-kroysmata-apo-ton-io-toy-dytikoy-neiloy/",
+      "title": "Βόρεια Μακεδονία: Έξι νεκροί και 51 κρούσματα από τον ιό του Δυτικού Νείλου",
+      "normalized_title": "ΒΟΡΕΙΑ ΜΑΚΕΔΟΝΙΑ: ΕΞΙ ΝΕΚΡΟΙ ΚΑΙ 51 ΚΡΟΥΣΜΑΤΑ ΑΠΟ ΤΟΝ ΙΟ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455634/doykas-ginetai-praxi-i-apofasi-mas-gia-katedafisi-toy-badminton-to-proto-vima-gia-to-mitropolitiko-parko/",
-        "https://www.efsyn.gr/ellada/1455630/hardalias-gia-ton-io-dytikoy-neiloy-apopse-ektaktoi-psekasmoi-megalis-klimakas-stin-anatoliki-attiki/"
+        "https://www.efsyn.gr/kosmos/1455546/voreia-makedonia-exi-nekroi-kai-51-kroysmata-apo-ton-io-toy-dytikoy-neiloy/",
+        "https://www.efsyn.gr/ellada/1455220/greek-mafia-o-aimatiros-polemos-me-toys-rosofonoys-nonoys-oi-entoles-apo-tin-fylaki-kai-to-xeplyma/",
+        "https://www.efsyn.gr/politiki/1455640/apantisi-pasok-stis-kyvernitikes-piges-o-k-marinakis-ekane-lathroheiria-gia-na-kalypsei-ta-atopimata-toy/"
       ],
-      "seen_at_utc": "2026-08-27T16:51:42.042449+00:00"
+      "seen_at_utc": "2026-08-27T17:18:15.816941+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/life/culture-live/piter-kalen-apeviose-o-ithopoios-pou-xarise-ti-foni-tou-ston-optimus-prime/",
-      "title": "Πίτερ Κάλεν: Απεβίωσε ο ηθοποιός που χάρισε τη φωνή του στον Optimus Prime",
-      "normalized_title": "ΠΙΤΕΡ ΚΑΛΕΝ: ΑΠΕΒΙΩΣΕ Ο ΗΘΟΠΟΙΟΣ ΠΟΥ ΧΑΡΙΣΕ ΤΗ ΦΩΝΗ ΤΟΥ ΣΤΟΝ OPTIMUS PRIME",
+      "url": "https://www.in.gr/2026/08/27/sports/football/i-11ada-tou-ofi-gia-ti-revans-me-tin-tsska-sofias/",
+      "title": "Η 11άδα του ΟΦΗ για τη ρεβάνς με την ΤΣΣΚΑ Σόφιας",
+      "normalized_title": "Η 11ΑΔΑ ΤΟΥ ΟΦΗ ΓΙΑ ΤΗ ΡΕΒΑΝΣ ΜΕ ΤΗΝ ΤΣΣΚΑ ΣΟΦΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/life/culture-live/piter-kalen-apeviose-o-ithopoios-pou-xarise-ti-foni-tou-ston-optimus-prime/",
-        "https://www.in.gr/2026/08/27/greece/ekti-imera-kaysona-se-poies-perioxes-kseperase-tous-40-vathmous-kelsiou-i-thermokrasia/",
-        "https://www.in.gr/2026/08/27/greece/erxetai-rapid-test-gia-ton-io-tou-dytikou-neilou/",
-        "https://www.in.gr/2026/08/27/sports/othersports/tsitsipas-i-floga-mesa-tou-akoma-sigokaiei-o-adianoitos-pontos-kontra-ston-kovasevits-vid/"
+        "https://www.in.gr/2026/08/27/sports/football/i-11ada-tou-ofi-gia-ti-revans-me-tin-tsska-sofias/",
+        "https://www.in.gr/2026/08/27/world/diarroi-epistolis-ton-epitropon-tis-valtikis-stin-komision-egeirei-fovous-rosikis-epithesis/",
+        "https://www.in.gr/2026/08/27/world/ratko-mlantits-i-sfagi-sti-sremprenitsa-kai-ta-alla-frixta-egklimata-tou-xasapi-tis-vosnias/",
+        "https://www.in.gr/2026/08/27/sports/on-field/toliso-eipa-ston-gkentouzi-pos-prepei-na-einai-tapeinos/",
+        "https://www.in.gr/2026/08/27/world/to-tsant-katigorei-to-soudan-gia-aeroporiki-epidromi-sto-edafos-tou-sto-ypsisto-epipedo-synagermou/",
+        "https://www.in.gr/2026/08/27/sports/football/champions-league/aek-oi-antipaloi-tis-enosis-sti-league-phase-tou-champions-league/"
       ],
-      "seen_at_utc": "2026-08-27T16:51:42.042368+00:00"
+      "seen_at_utc": "2026-08-27T17:18:15.816901+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T16:51:42.042571+00:00"
+  "updated_at_utc": "2026-08-27T17:18:15.817057+00:00"
 }
