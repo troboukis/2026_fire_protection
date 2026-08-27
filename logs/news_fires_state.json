@@ -1,13 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564422434/nepal-pano-apo-160-nekroi-kai-schedon-600-agnooymenoi-stoys-potamoys-laspis/",
-      "title": "Νεπάλ: Πάνω από 160 νεκροί και σχεδόν 600 αγνοούμενοι στους ποταμούς λάσπης",
-      "normalized_title": "ΝΕΠΑΛ: ΠΑΝΩ ΑΠΟ 160 ΝΕΚΡΟΙ ΚΑΙ ΣΧΕΔΟΝ 600 ΑΓΝΟΟΥΜΕΝΟΙ ΣΤΟΥΣ ΠΟΤΑΜΟΥΣ ΛΑΣΠΗΣ",
+      "url": "https://www.kathimerini.gr/economy/international/564422827/meta-ti-perilamvanei-o-symvivasmos-me-prostimo-17-dis/",
+      "title": "Meta: Τι περιλαμβάνει ο συμβιβασμός με πρόστιμο 17 δισ.",
+      "normalized_title": "META: ΤΙ ΠΕΡΙΛΑΜΒΑΝΕΙ Ο ΣΥΜΒΙΒΑΣΜΟΣ ΜΕ ΠΡΟΣΤΙΜΟ 17 ΔΙΣ.",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564422434/nepal-pano-apo-160-nekroi-kai-schedon-600-agnooymenoi-stoys-potamoys-laspis/"
+        "https://www.kathimerini.gr/economy/international/564422827/meta-ti-perilamvanei-o-symvivasmos-me-prostimo-17-dis/",
+        "https://www.kathimerini.gr/world/564422893/ipa-to-2028-i-diki-toy-feromenoy-os-egkefaloy-ton-epitheseon-tis-11is-septemvrioy/",
+        "https://www.kathimerini.gr/society/564422149/gynaikoktonia-sti-rodopi-to-istoriko-vias-kai-oi-kavgades-logo-zilias/",
+        "https://www.kathimerini.gr/society/564422386/to-metro-thessalonikis-epekteinetai/",
+        "https://www.kathimerini.gr/society/564422878/se-portokali-synagermo-gia-kindyno-pyrkagias-attiki-eyvoia-aigaio-kai-kriti-o-chartis-provlepsis-kindynoy/",
+        "https://www.kathimerini.gr/society/564422863/kairos-39aria-kai-topikes-vroches-sta-voreia-pote-peftei-i-thermokrasia/",
+        "https://www.kathimerini.gr/athletics/564422131/san-simera-27-aygoystoy-1922-syllamvanetai-o-mitropolitis-smyrnis-chrysostomos/"
       ],
-      "seen_at_utc": "2026-08-27T04:30:11.205243+00:00"
+      "seen_at_utc": "2026-08-27T04:51:32.274282+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1265,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870038/eos-39c-o-udrarguros-simera-pote-peftei-i-thermokrasia/?utm_source=rss",
-      "title": "Έως 39°C ο υδράργυρος σήμερα, πότε πέφτει η θερμοκρασία",
-      "normalized_title": "ΕΩΣ 39°C Ο ΥΔΡΑΡΓΥΡΟΣ ΣΗΜΕΡΑ, ΠΟΤΕ ΠΕΦΤΕΙ Η ΘΕΡΜΟΚΡΑΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1870040/polu-upsilos-kindunos-purkagias-simera-se-attiki-euvoia-kriti-kai-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς σήμερα σε Αττική, Εύβοια, Κρήτη και Αιγαίο, ποιες περιοχές είναι στο «πορτοκαλί»",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΕ ΑΤΤΙΚΗ, ΕΥΒΟΙΑ, ΚΡΗΤΗ ΚΑΙ ΑΙΓΑΙΟ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΤΟ «ΠΟΡΤΟΚΑΛΙ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870038/eos-39c-o-udrarguros-simera-pote-peftei-i-thermokrasia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870037/nea-purkagia-stis-egatastaseis-tou-radiofonikou-stathmou-athina-984-stin-tehnopoli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870040/polu-upsilos-kindunos-purkagias-simera-se-attiki-euvoia-kriti-kai-aigaio-poies-periohes-einai-sto-portokali/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-27T04:17:34.551953+00:00"
+      "seen_at_utc": "2026-08-27T04:51:32.274422+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455046/kairos-ekriktiko-kokteil-hot-dry-windy-apo-simera-poy-tha-ftasei-i-thermokrasia-toys-39-vathmoys/",
-      "title": "Καιρός: Εκρηκτικό κοκτέιλ «Hot, Dry, Windy» από σήμερα – Πού θα φτάσει η θερμοκρασία τους 39 βαθμούς",
-      "normalized_title": "ΚΑΙΡΟΣ: ΕΚΡΗΚΤΙΚΟ ΚΟΚΤΕΙΛ «HOT, DRY, WINDY» ΑΠΟ ΣΗΜΕΡΑ – ΠΟΥ ΘΑ ΦΤΑΣΕΙ Η ΘΕΡΜΟΚΡΑΣΙΑ ΤΟΥΣ 39 ΒΑΘΜΟΥΣ",
+      "url": "https://www.efsyn.gr/kosmos/1455059/nepal-efyge-olokliro-voyno-egine-nero-kai-pire-ta-panta-sygklonizei-ellinas-katoikos/",
+      "title": "Νεπάλ: «Έφυγε ολόκληρο βουνό, έγινε νερό και πήρε τα πάντα» – Συγκλονίζει Έλληνας κάτοικος",
+      "normalized_title": "ΝΕΠΑΛ: «ΕΦΥΓΕ ΟΛΟΚΛΗΡΟ ΒΟΥΝΟ, ΕΓΙΝΕ ΝΕΡΟ ΚΑΙ ΠΗΡΕ ΤΑ ΠΑΝΤΑ» – ΣΥΓΚΛΟΝΙΖΕΙ ΕΛΛΗΝΑΣ ΚΑΤΟΙΚΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455046/kairos-ekriktiko-kokteil-hot-dry-windy-apo-simera-poy-tha-ftasei-i-thermokrasia-toys-39-vathmoys/",
-        "https://www.efsyn.gr/politiki/1455035/tin-elena-akrita-gia-antiproedro-tis-voylis-proteinei-i-koymoyndoyroy/",
-        "https://www.efsyn.gr/kosmos/1455050/ploio-htypithike-apo-agnosto-vlima-sta-stena-toy-ormoyz-xespase-pyrkagia/"
+        "https://www.efsyn.gr/kosmos/1455059/nepal-efyge-olokliro-voyno-egine-nero-kai-pire-ta-panta-sygklonizei-ellinas-katoikos/"
       ],
-      "seen_at_utc": "2026-08-27T04:30:11.205322+00:00"
+      "seen_at_utc": "2026-08-27T04:51:32.274379+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/27/economy/me-dyo-taxytites-stis-diethneis-afikseis-o-tourismos-ti-deixnoun-ta-stoixeia/",
-      "title": "Με δύο ταχύτητες στις διεθνείς αφίξεις ο τουρισμός – Τι δείχνουν τα στοιχεία",
-      "normalized_title": "ΜΕ ΔΥΟ ΤΑΧΥΤΗΤΕΣ ΣΤΙΣ ΔΙΕΘΝΕΙΣ ΑΦΙΞΕΙΣ Ο ΤΟΥΡΙΣΜΟΣ – ΤΙ ΔΕΙΧΝΟΥΝ ΤΑ ΣΤΟΙΧΕΙΑ",
+      "url": "https://www.in.gr/2026/08/27/go-fun/social/arkas-i-kalimera-tis-pemptis-15/",
+      "title": "Αρκάς: Η καλημέρα της Πέμπτης",
+      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΠΕΜΠΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/27/economy/me-dyo-taxytites-stis-diethneis-afikseis-o-tourismos-ti-deixnoun-ta-stoixeia/"
+        "https://www.in.gr/2026/08/27/go-fun/social/arkas-i-kalimera-tis-pemptis-15/",
+        "https://www.in.gr/2026/08/27/world/ekatomvi-nekron-se-nepal-kai-thivet-meta-tin-plimmyra-pano-apo-1-000-agnooumenoi-xoria-thaftikan-sti-laspi/",
+        "https://www.in.gr/2026/08/27/greece/fotia-stin-texnopoli-sto-gkazi-stis-egkatastaseis-tou-athina-984/",
+        "https://www.in.gr/2026/08/27/plus/vita/diaita-keto-aspida-gia-ton-egkefalo-oso-megalonoume/"
       ],
-      "seen_at_utc": "2026-08-27T04:30:11.205290+00:00"
+      "seen_at_utc": "2026-08-27T04:51:32.274333+00:00"
     }
   },
-  "updated_at_utc": "2026-08-27T04:30:11.205402+00:00"
+  "updated_at_utc": "2026-08-27T04:51:32.274549+00:00"
 }
