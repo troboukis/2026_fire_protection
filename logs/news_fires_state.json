@@ -1,16 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564425581/akraios-kindynos-pyrkagias-ayrio-29-08-se-kriti-rodo-karpatho-sto-portokali-polles-perioches/",
-      "title": "Ακραίος κίνδυνος πυρκαγιάς αύριο (29/08) σε Κρήτη, Ρόδο, Κάρπαθο – Στο «πορτοκαλί» πολλές περιοχές",
-      "normalized_title": "ΑΚΡΑΙΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ (29/08) ΣΕ ΚΡΗΤΗ, ΡΟΔΟ, ΚΑΡΠΑΘΟ – ΣΤΟ «ΠΟΡΤΟΚΑΛΙ» ΠΟΛΛΕΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/k/oinoxoos/564410056/zitsa-to-terroir-tis-leykis-ipeiroy/",
+      "title": "Ζίτσα, το terroir της «λευκής» Ηπείρου",
+      "normalized_title": "ΖΙΤΣΑ, ΤΟ TERROIR ΤΗΣ «ΛΕΥΚΗΣ» ΗΠΕΙΡΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564425581/akraios-kindynos-pyrkagias-ayrio-29-08-se-kriti-rodo-karpatho-sto-portokali-polles-perioches/",
-        "https://www.kathimerini.gr/world/564424405/i-yperthermansi-toy-planiti-gennaei-aroyraioys/",
-        "https://www.kathimerini.gr/culture/tv/564425548/to-furious-ananeothike-gia-deyteri-sezon/",
-        "https://www.kathimerini.gr/society/564425542/thessaloniki-choris-tis-aisthiseis-toy-entopistike-ilikiomenos-se-pyrkagia-ston-eyosmo/"
+        "https://www.kathimerini.gr/k/oinoxoos/564410056/zitsa-to-terroir-tis-leykis-ipeiroy/",
+        "https://www.kathimerini.gr/culture/564425506/i-kathigitria-poy-metafrazei-tin-odysseia-deyteri-fora-apo-tin-archi/",
+        "https://www.kathimerini.gr/athletics/football/564425611/europa-league-oi-antipaloi-toy-ofi-sti-league-phase/",
+        "https://www.kathimerini.gr/k/k-magazine/564423790/ta-kalytera-live-vlepontai-apo-ton-kanape/",
+        "https://www.kathimerini.gr/world/564425554/chaakon-o-neos-vasilias-tis-norvigias-serf-moysiki-kai-enas-antisymvatikos-gamos/",
+        "https://www.kathimerini.gr/athletics/football/564425593/europea-league-apenanti-se-milan-kai-marseig-o-olympiakos/"
       ],
-      "seen_at_utc": "2026-08-28T11:51:44.511013+00:00"
+      "seen_at_utc": "2026-08-28T12:17:12.202525+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,39 +1264,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870770/sullipsi-38hronou-gia-klopi-kinitou-kai-ekdikitiki-pornografia-sti-sadorini/?utm_source=rss",
-      "title": "Σύλληψη 38χρονου για κλοπή κινητού και εκδικητική πορνογραφία στη Σαντορίνη",
-      "normalized_title": "ΣΥΛΛΗΨΗ 38ΧΡΟΝΟΥ ΓΙΑ ΚΛΟΠΗ ΚΙΝΗΤΟΥ ΚΑΙ ΕΚΔΙΚΗΤΙΚΗ ΠΟΡΝΟΓΡΑΦΙΑ ΣΤΗ ΣΑΝΤΟΡΙΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1870780/exarthrothike-summoria-diarrikton-stin-attiki-xeperna-ta-130000-euro-i-leia-tous/?utm_source=rss",
+      "title": "Εξαρθρώθηκε συμμορία διαρρηκτών στην Αττική, ξεπερνά τα 130.000 ευρώ η λεία τους",
+      "normalized_title": "ΕΞΑΡΘΡΩΘΗΚΕ ΣΥΜΜΟΡΙΑ ΔΙΑΡΡΗΚΤΩΝ ΣΤΗΝ ΑΤΤΙΚΗ, ΞΕΠΕΡΝΑ ΤΑ 130.000 ΕΥΡΩ Η ΛΕΙΑ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870770/sullipsi-38hronou-gia-klopi-kinitou-kai-ekdikitiki-pornografia-sti-sadorini/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870763/gia-viasmous-anilikon-athlitrion-kat-exakolouthisi-dioketai-o-proponitis-stin-kefalonia-sti-dimosiotita-ta-stoiheia-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870780/exarthrothike-summoria-diarrikton-stin-attiki-xeperna-ta-130000-euro-i-leia-tous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T11:51:44.511117+00:00"
+      "seen_at_utc": "2026-08-28T12:17:12.202651+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456102/veroia-apo-pnigmo-o-thanatos-tis-18hronis-stoys-katarraktes-to-hroniko-tis-tragodias/",
-      "title": "Βέροια: Από πνιγμό ο θάνατος της 18χρονης στους καταρράκτες – Το χρονικό της τραγωδίας",
-      "normalized_title": "ΒΕΡΟΙΑ: ΑΠΟ ΠΝΙΓΜΟ Ο ΘΑΝΑΤΟΣ ΤΗΣ 18ΧΡΟΝΗΣ ΣΤΟΥΣ ΚΑΤΑΡΡΑΚΤΕΣ – ΤΟ ΧΡΟΝΙΚΟ ΤΗΣ ΤΡΑΓΩΔΙΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1455977/ergo-adonidos-esteile-anaisthisiologo-apo-ton-agio-savva-sti-limno-kai-okto-karkinopatheis-emeinan-ston-aera/",
+      "title": "«Άγιος Σάββας»: Στον αέρα χειρουργεία καρκινοπαθών με υπογραφή Γεωργιάδη",
+      "normalized_title": "«ΑΓΙΟΣ ΣΑΒΒΑΣ»: ΣΤΟΝ ΑΕΡΑ ΧΕΙΡΟΥΡΓΕΙΑ ΚΑΡΚΙΝΟΠΑΘΩΝ ΜΕ ΥΠΟΓΡΑΦΗ ΓΕΩΡΓΙΑΔΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456102/veroia-apo-pnigmo-o-thanatos-tis-18hronis-stoys-katarraktes-to-hroniko-tis-tragodias/",
-        "https://www.efsyn.gr/athlitismos/1456101/europea-league-oi-antipaloi-toy-olympiakoy-kai-toy-ofi-gia-tin-leauge-phase-analytika-to-programma/",
-        "https://www.efsyn.gr/ellada/1456094/thessaloniki-horis-tis-aisthiseis-toy-ilikiomenos-meta-apo-pyrkagia-se-diamerisma/"
+        "https://www.efsyn.gr/ellada/1455977/ergo-adonidos-esteile-anaisthisiologo-apo-ton-agio-savva-sti-limno-kai-okto-karkinopatheis-emeinan-ston-aera/",
+        "https://www.efsyn.gr/ellada/1456110/synagermos-stin-mykono-pyrovolismoi-exo-apo-soypermarket/",
+        "https://www.efsyn.gr/ellada/1456105/dimitris-kokotas-sygklonise-i-syzygos-toy-katerina-ston-epikideio-i-psyhi-poy-agapisa-einai-mazi-mas/"
       ],
-      "seen_at_utc": "2026-08-28T11:51:44.511097+00:00"
+      "seen_at_utc": "2026-08-28T12:17:12.202618+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/veroia-pnigmo-edeikse-i-iatrodikastiki-eksetasi-gia-ti-18xroni-stous-katarraktes/",
-      "title": "Πνιγμό έδειξε η ιατροδικαστική εξέταση για τη 18χρονη στους καταρράκτες στη Βέροια",
-      "normalized_title": "ΠΝΙΓΜΟ ΕΔΕΙΞΕ Η ΙΑΤΡΟΔΙΚΑΣΤΙΚΗ ΕΞΕΤΑΣΗ ΓΙΑ ΤΗ 18ΧΡΟΝΗ ΣΤΟΥΣ ΚΑΤΑΡΡΑΚΤΕΣ ΣΤΗ ΒΕΡΟΙΑ",
+      "url": "https://www.in.gr/2026/08/28/greece/apopse-i-panselinos-tou-oksyrrygxou-anoigoun-dorean-oi-arxaiologikoi-xoroi/",
+      "title": "Απόψε η «Πανσέληνος του Οξύρρυγχου» – Ανοίγουν δωρεάν οι αρχαιολογικοί χώροι",
+      "normalized_title": "ΑΠΟΨΕ Η «ΠΑΝΣΕΛΗΝΟΣ ΤΟΥ ΟΞΥΡΡΥΓΧΟΥ» – ΑΝΟΙΓΟΥΝ ΔΩΡΕΑΝ ΟΙ ΑΡΧΑΙΟΛΟΓΙΚΟΙ ΧΩΡΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/veroia-pnigmo-edeikse-i-iatrodikastiki-eksetasi-gia-ti-18xroni-stous-katarraktes/",
-        "https://www.in.gr/2026/08/28/greece/kriti-fotia-ston-prinia-isxyres-dynameis-tis-pyrosvestikis-sto-simeio/",
-        "https://www.in.gr/2026/08/28/politics/aftodioikisi/ergo-antimetopisis-tis-diavrosis-sto-petalidi/",
-        "https://www.in.gr/2026/08/28/sports/football/europa-league/paylidis-kai-mpenfika-sto-dromo-tou-ofi-oi-antipaloi-ton-kritikon-sto-europa-league/",
-        "https://www.in.gr/2026/08/28/world/oi-italikes-arxes-stamatoun-tis-ereynes-gia-ton-ispano-epixeirimatia-pou-epese-sti-thalassa/"
+        "https://www.in.gr/2026/08/28/greece/apopse-i-panselinos-tou-oksyrrygxou-anoigoun-dorean-oi-arxaiologikoi-xoroi/",
+        "https://www.in.gr/2026/08/28/greece/mykonos-pyrovolismoi-ekso-apo-souper-market/",
+        "https://www.in.gr/2026/08/28/greece/tragodia-sti-thessaloniki-ilikiomenos-vrethike-nekros-meta-apo-fotia-se-diamerisma/",
+        "https://www.in.gr/2026/08/28/sports/football/conference-league/panathinaikos-me-tin-mpraiton-tou-kostoula-sto-conference-oi-eksi-antipaloi-ton-prasinon-sti-league-phase/"
       ],
-      "seen_at_utc": "2026-08-28T11:51:44.511057+00:00"
+      "seen_at_utc": "2026-08-28T12:17:12.202586+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T11:51:44.511205+00:00"
+  "updated_at_utc": "2026-08-28T12:17:12.202734+00:00"
 }
