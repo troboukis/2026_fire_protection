@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564424327/h-agkyra-epimenei-gia-ta-nisia/",
-      "title": "H Αγκυρα επιμένει για τα νησιά",
-      "normalized_title": "H ΑΓΚΥΡΑ ΕΠΙΜΕΝΕΙ ΓΙΑ ΤΑ ΝΗΣΙΑ",
+      "url": "https://www.kathimerini.gr/politics/government/564424294/metro-thessalonikis-i-ylopoiisi-kai-oi-exaggelies/",
+      "title": "Μετρό Θεσσαλονίκης: Η υλοποίηση και οι εξαγγελίες",
+      "normalized_title": "ΜΕΤΡΟ ΘΕΣΣΑΛΟΝΙΚΗΣ: Η ΥΛΟΠΟΙΗΣΗ ΚΑΙ ΟΙ ΕΞΑΓΓΕΛΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564424327/h-agkyra-epimenei-gia-ta-nisia/",
-        "https://www.kathimerini.gr/world/564424843/koina-gymnasia-notias-koreas-ipa-iaponias-ton-septemvrio/"
+        "https://www.kathimerini.gr/politics/government/564424294/metro-thessalonikis-i-ylopoiisi-kai-oi-exaggelies/",
+        "https://www.kathimerini.gr/world/564424873/ekatontades-nekroi-kai-pano-apo-1000-agnooymenoi-apo-tis-plimmyres-sta-synora-nepal-kinas/",
+        "https://www.kathimerini.gr/world/564424867/tramp-ypegrapse-to-diatagma-gia-na-ginei-i-limni-ontario-limni-ameriki-chreiazomaste-kai-enan-okeano/",
+        "https://www.kathimerini.gr/istoria/564424159/san-simera-28-aygoystoy-1859-gegonos-karingkton-to-voreio-selas-orato-mechri-tin-kentriki-ameriki/"
       ],
-      "seen_at_utc": "2026-08-28T04:30:05.374687+00:00"
+      "seen_at_utc": "2026-08-28T04:51:06.829526+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1262,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870565/kairos-epimenei-i-zesti-me-39aria-kai-ishurous-anemous-eos-kai-8-bofor/?utm_source=rss",
-      "title": "Καιρός: Επιμένει η ζέστη με 39άρια και ισχυρούς ανέμους έως και 8 μποφόρ",
-      "normalized_title": "ΚΑΙΡΟΣ: ΕΠΙΜΕΝΕΙ Η ΖΕΣΤΗ ΜΕ 39ΑΡΙΑ ΚΑΙ ΙΣΧΥΡΟΥΣ ΑΝΕΜΟΥΣ ΕΩΣ ΚΑΙ 8 ΜΠΟΦΟΡ",
+      "url": "https://www.protothema.gr/greece/article/1870570/pos-egine-i-tragodia-me-ti-18hroni-se-katarrakti-sti-veroia-to-ah-prin-pesei-sto-nero-kai-i/?utm_source=rss",
+      "title": "Πώς έγινε η τραγωδία με τη 18χρονη σε καταρράκτη στη Βέροια: Το «αχ» πριν πέσει στο νερό και η προσπάθεια του φίλου της να τη σώσει",
+      "normalized_title": "ΠΩΣ ΕΓΙΝΕ Η ΤΡΑΓΩΔΙΑ ΜΕ ΤΗ 18ΧΡΟΝΗ ΣΕ ΚΑΤΑΡΡΑΚΤΗ ΣΤΗ ΒΕΡΟΙΑ: ΤΟ «ΑΧ» ΠΡΙΝ ΠΕΣΕΙ ΣΤΟ ΝΕΡΟ ΚΑΙ Η ΠΡΟΣΠΑΘΕΙΑ ΤΟΥ ΦΙΛΟΥ ΤΗΣ ΝΑ ΤΗ ΣΩΣΕΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870565/kairos-epimenei-i-zesti-me-39aria-kai-ishurous-anemous-eos-kai-8-bofor/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870564/tragodia-stous-agious-anargurous-autokinito-paresure-kai-skotose-76hrono/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870570/pos-egine-i-tragodia-me-ti-18hroni-se-katarrakti-sti-veroia-to-ah-prin-pesei-sto-nero-kai-i/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T04:17:00.485386+00:00"
+      "seen_at_utc": "2026-08-28T04:51:06.829671+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455751/mplak-aoyt-stin-tilematiki-toy-oasa-sto-eleos-toy-kaysona-oi-epivates-fimes-gia-kyvernoepithesi/",
-      "title": "Μπλακ άουτ στην τηλεματική του ΟΑΣΑ: Στο έλεος του καύσωνα οι επιβάτες – Φήμες για κυβερνοεπίθεση",
-      "normalized_title": "ΜΠΛΑΚ ΑΟΥΤ ΣΤΗΝ ΤΗΛΕΜΑΤΙΚΗ ΤΟΥ ΟΑΣΑ: ΣΤΟ ΕΛΕΟΣ ΤΟΥ ΚΑΥΣΩΝΑ ΟΙ ΕΠΙΒΑΤΕΣ – ΦΗΜΕΣ ΓΙΑ ΚΥΒΕΡΝΟΕΠΙΘΕΣΗ",
+      "url": "https://www.efsyn.gr/oikonomia/1455768/therines-ekptoseis-2026-pote-oloklironontai-kai-ti-prepei-na-prosehoyn-oi-katanalotes/",
+      "title": "Θερινές εκπτώσεις 2026: Πότε ολοκληρώνονται και τι πρέπει να προσέχουν οι καταναλωτές",
+      "normalized_title": "ΘΕΡΙΝΕΣ ΕΚΠΤΩΣΕΙΣ 2026: ΠΟΤΕ ΟΛΟΚΛΗΡΩΝΟΝΤΑΙ ΚΑΙ ΤΙ ΠΡΕΠΕΙ ΝΑ ΠΡΟΣΕΧΟΥΝ ΟΙ ΚΑΤΑΝΑΛΩΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455751/mplak-aoyt-stin-tilematiki-toy-oasa-sto-eleos-toy-kaysona-oi-epivates-fimes-gia-kyvernoepithesi/",
-        "https://www.efsyn.gr/ellada/1455755/kairos-voriades-eos-8-mpofor-simera-se-katastasi-synagermoy-pente-periohes-gia-akraio-kindyno-pyrkagias/"
+        "https://www.efsyn.gr/oikonomia/1455768/therines-ekptoseis-2026-pote-oloklironontai-kai-ti-prepei-na-prosehoyn-oi-katanalotes/",
+        "https://www.efsyn.gr/athlitismos/1455765/o-theos-toy-podosfairoy-epivraveyei-tin-aek/",
+        "https://www.efsyn.gr/ellada/1455763/konitsa-anagkastiki-prosgeiosi-pyrosvestikoy-elikopteroy-ston-aoo-eihe-vlavi-ston-kado-pyrosvesis/"
       ],
-      "seen_at_utc": "2026-08-28T04:30:05.374764+00:00"
+      "seen_at_utc": "2026-08-28T04:51:06.829625+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/world/koina-stratiotika-gymnasia-notias-koreas-ipa-iaponias-ton-septemvrio/",
-      "title": "Κοινά στρατιωτικά γυμνάσια Νότιας Κορέας-ΗΠΑ-Ιαπωνίας τον Σεπτέμβριο",
-      "normalized_title": "ΚΟΙΝΑ ΣΤΡΑΤΙΩΤΙΚΑ ΓΥΜΝΑΣΙΑ ΝΟΤΙΑΣ ΚΟΡΕΑΣ-ΗΠΑ-ΙΑΠΩΝΙΑΣ ΤΟΝ ΣΕΠΤΕΜΒΡΙΟ",
+      "url": "https://www.in.gr/2026/08/28/greece/veroia-i-moiraia-volta-tis-18xronis-pou-katelikse-se-tragodia-ti-eksetazoun-oi-arxes/",
+      "title": "Η μοιραία βόλτα της 18χρονης σε καταρράκτη στη Βέροια που κατέληξε σε τραγωδία - Τι εξετάζουν οι Αρχές",
+      "normalized_title": "Η ΜΟΙΡΑΙΑ ΒΟΛΤΑ ΤΗΣ 18ΧΡΟΝΗΣ ΣΕ ΚΑΤΑΡΡΑΚΤΗ ΣΤΗ ΒΕΡΟΙΑ ΠΟΥ ΚΑΤΕΛΗΞΕ ΣΕ ΤΡΑΓΩΔΙΑ - ΤΙ ΕΞΕΤΑΖΟΥΝ ΟΙ ΑΡΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/world/koina-stratiotika-gymnasia-notias-koreas-ipa-iaponias-ton-septemvrio/"
+        "https://www.in.gr/2026/08/28/greece/veroia-i-moiraia-volta-tis-18xronis-pou-katelikse-se-tragodia-ti-eksetazoun-oi-arxes/",
+        "https://www.in.gr/2026/08/28/go-fun/social/arkas-i-kalimera-tis-paraskeyis-15/",
+        "https://www.in.gr/2026/08/28/world/nepal-anevainei-stous-469-o-apologismos-ton-nekron-kindynos-gia-nees-plimmyres-kai-agonia-gia-tous-agnooumenous/",
+        "https://www.in.gr/2026/08/28/plus/vita/treksimo-kai-kaysonas-ola-osa-prepei-na-prosekseis/"
       ],
-      "seen_at_utc": "2026-08-28T04:30:05.374734+00:00"
+      "seen_at_utc": "2026-08-28T04:51:06.829583+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T04:30:05.374838+00:00"
+  "updated_at_utc": "2026-08-28T04:51:06.829745+00:00"
 }
