@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564425944/mykonos-periptero-den-ekopse-apodeixeis-90-000-eyro-prostimo-kai-loyketo/",
-      "title": "Μύκονος: Περίπτερο δεν έκοψε αποδείξεις 90.000 ευρώ – Πρόστιμο και λουκέτο",
-      "normalized_title": "ΜΥΚΟΝΟΣ: ΠΕΡΙΠΤΕΡΟ ΔΕΝ ΕΚΟΨΕ ΑΠΟΔΕΙΞΕΙΣ 90.000 ΕΥΡΩ – ΠΡΟΣΤΙΜΟ ΚΑΙ ΛΟΥΚΕΤΟ",
+      "url": "https://www.kathimerini.gr/politics/564425992/kyr-mitsotakis-katotatos-misthos-pano-apo-950-eyro-prin-tis-ekloges/",
+      "title": "Κυρ. Μητσοτάκης: Κατώτατος μισθός πάνω από 950 ευρώ πριν από τις εκλογές",
+      "normalized_title": "ΚΥΡ. ΜΗΤΣΟΤΑΚΗΣ: ΚΑΤΩΤΑΤΟΣ ΜΙΣΘΟΣ ΠΑΝΩ ΑΠΟ 950 ΕΥΡΩ ΠΡΙΝ ΑΠΟ ΤΙΣ ΕΚΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564425944/mykonos-periptero-den-ekopse-apodeixeis-90-000-eyro-prostimo-kai-loyketo/",
-        "https://www.kathimerini.gr/world/564425950/chaos-sto-nepal-vinteo-apo-ti-stigmi-tis-apokollisis-pagetona/"
+        "https://www.kathimerini.gr/politics/564425992/kyr-mitsotakis-katotatos-misthos-pano-apo-950-eyro-prin-tis-ekloges/",
+        "https://www.kathimerini.gr/athletics/analysis/564425965/o-marinakis-ta-ylika-o-mentilimpar-to-mageirema/",
+        "https://www.kathimerini.gr/economy/564424711/to-2027-xekinaei-i-anakainisi-ktirion-15-foititikon-estion-se-oli-ti-chora/"
       ],
-      "seen_at_utc": "2026-08-28T17:17:12.114542+00:00"
+      "seen_at_utc": "2026-08-28T17:51:16.819487+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,17 +1279,16 @@
       "seen_at_utc": "2026-08-28T17:30:02.175418+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/politics/epikairotita/syriza-poses-zoes-prepei-na-xathoun-gia-na-yparksei-pragmatikos-elegxos-stous-xorous-ergasias/",
-      "title": "ΣΥΡΙΖΑ: Πόσες ζωές πρέπει να χαθούν για να υπάρξει πραγματικός έλεγχος στους χώρους εργασίας;",
-      "normalized_title": "ΣΥΡΙΖΑ: ΠΟΣΕΣ ΖΩΕΣ ΠΡΕΠΕΙ ΝΑ ΧΑΘΟΥΝ ΓΙΑ ΝΑ ΥΠΑΡΞΕΙ ΠΡΑΓΜΑΤΙΚΟΣ ΕΛΕΓΧΟΣ ΣΤΟΥΣ ΧΩΡΟΥΣ ΕΡΓΑΣΙΑΣ;",
+      "url": "https://www.in.gr/2026/08/28/greece/ileia-se-sovari-katastasi-8xronos-pou-paraligo-na-pnigei-sti-thalassa-sygklonizei-o-giatros-pou-tou-edose-tis-protes-voitheies/",
+      "title": "Ηλεία: Σε σοβαρή κατάσταση 8χρονος που παραλίγο να πνιγεί στη θάλασσα -Συγκλονίζει ο γιατρός που του έδωσε τις πρώτες βοήθειες",
+      "normalized_title": "ΗΛΕΙΑ: ΣΕ ΣΟΒΑΡΗ ΚΑΤΑΣΤΑΣΗ 8ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΑΛΙΓΟ ΝΑ ΠΝΙΓΕΙ ΣΤΗ ΘΑΛΑΣΣΑ -ΣΥΓΚΛΟΝΙΖΕΙ Ο ΓΙΑΤΡΟΣ ΠΟΥ ΤΟΥ ΕΔΩΣΕ ΤΙΣ ΠΡΩΤΕΣ ΒΟΗΘΕΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/politics/epikairotita/syriza-poses-zoes-prepei-na-xathoun-gia-na-yparksei-pragmatikos-elegxos-stous-xorous-ergasias/",
-        "https://www.in.gr/2026/08/28/go-fun/fizz/i-cardi-b-exei-mia-symvouli-gia-tous-neous-kallitexnes-makria-apo-narkotika/",
-        "https://www.in.gr/2026/08/28/sports/basketball/oukrania-ellada-ntorsei-thanasis-kai-kalathis-prosferoun-theama-vids/",
-        "https://www.in.gr/2026/08/28/world/bloomberg-eyropaioi-diapseydoun-pos-yparxoun-stoixeia-pos-i-rosia-etoimazei-epithesi-sto-nato-i-tin-valtiki/"
+        "https://www.in.gr/2026/08/28/greece/ileia-se-sovari-katastasi-8xronos-pou-paraligo-na-pnigei-sti-thalassa-sygklonizei-o-giatros-pou-tou-edose-tis-protes-voitheies/",
+        "https://www.in.gr/2026/08/28/world/israel-katz-to-telesigrafo-elikse-kathe-ektokseysi-xartaetou-apo-ti-gaza-apotelei-praksi-tromokratias/",
+        "https://www.in.gr/2026/08/28/economy/diethnis-oikonomia/fed-o-neos-dioikitis-proideazei-gia-ayksisi-epitokion-aitia-o-plithorismos-pou-epimenei/"
       ],
-      "seen_at_utc": "2026-08-28T17:30:02.175352+00:00"
+      "seen_at_utc": "2026-08-28T17:51:16.819554+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T17:30:02.175547+00:00"
+  "updated_at_utc": "2026-08-28T17:51:16.819638+00:00"
 }
