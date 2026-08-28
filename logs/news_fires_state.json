@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564424942/conference-league-ta-gkroyp-dynamikotitas-kai-oi-pithanoi-antipaloi-gia-ton-panathinaiko/",
-      "title": "Conference League: Τα γκρουπ δυναμικότητας και οι πιθανοί αντίπαλοι για τον Παναθηναϊκό",
-      "normalized_title": "CONFERENCE LEAGUE: ΤΑ ΓΚΡΟΥΠ ΔΥΝΑΜΙΚΟΤΗΤΑΣ ΚΑΙ ΟΙ ΠΙΘΑΝΟΙ ΑΝΤΙΠΑΛΟΙ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ",
+      "url": "https://www.kathimerini.gr/world/564424915/amerikanikes-mystikes-ypiresies-o-poytin-theorei-apodynamomenes-tis-ipa-logo-iran/",
+      "title": "Αμερικανικές μυστικές υπηρεσίες: Ο Πούτιν θεωρεί αποδυναμωμένες τις ΗΠΑ λόγω Ιράν",
+      "normalized_title": "ΑΜΕΡΙΚΑΝΙΚΕΣ ΜΥΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ: Ο ΠΟΥΤΙΝ ΘΕΩΡΕΙ ΑΠΟΔΥΝΑΜΩΜΕΝΕΣ ΤΙΣ ΗΠΑ ΛΟΓΩ ΙΡΑΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564424942/conference-league-ta-gkroyp-dynamikotitas-kai-oi-pithanoi-antipaloi-gia-ton-panathinaiko/",
-        "https://www.kathimerini.gr/society/564424924/oasa-synechizetai-to-mplak-aoyt-stin-tilematiki-gia-leoforeia-kai-trolei/",
-        "https://www.kathimerini.gr/opinion/564424432/ta-provlimata-ton-neon-aei/"
+        "https://www.kathimerini.gr/world/564424915/amerikanikes-mystikes-ypiresies-o-poytin-theorei-apodynamomenes-tis-ipa-logo-iran/",
+        "https://www.kathimerini.gr/politics/564424258/theoreio-den-tha-psifizan/",
+        "https://www.kathimerini.gr/athletics/football/564424945/europa-league-oi-pithanoi-antipaloi-gia-olympiako-kai-ofi/",
+        "https://www.kathimerini.gr/economy/local/564424684/eos-ti-deytera-oi-aitiseis-gia-to-programma-anakainisi-katoikias/",
+        "https://www.kathimerini.gr/world/564424939/mexiko-entopisan-liontaria-tigreis-kai-dekades-agria-zoa-sti-diarkeia-efodoy-gia-lathremporio-kaysimon/"
       ],
-      "seen_at_utc": "2026-08-28T05:51:06.914916+00:00"
+      "seen_at_utc": "2026-08-28T06:17:01.517271+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,35 +1272,28 @@
       "seen_at_utc": "2026-08-28T05:51:06.915034+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1455799/i-apantisi-tis-proedrias-tis-dimokratias-gia-to-epidoma-os-240-eyro-stoys-ypalliloys-tis/",
-      "title": "Η απάντηση της Προεδρίας της Δημοκρατίας για το επίδομα ως 240 ευρώ στους υπαλλήλους της",
-      "normalized_title": "Η ΑΠΑΝΤΗΣΗ ΤΗΣ ΠΡΟΕΔΡΙΑΣ ΤΗΣ ΔΗΜΟΚΡΑΤΙΑΣ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΩΣ 240 ΕΥΡΩ ΣΤΟΥΣ ΥΠΑΛΛΗΛΟΥΣ ΤΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1455811/i-synantisi-gkilfoil-me-dendia-paroysia-toy-amerikanoy-yfypoyrgoy-gia-tis-amyntikes-promitheies/",
+      "title": "Η συνάντηση Γκίλφοϊλ με Δένδια, παρουσία του Αμερικανού υφυπουργού για τις αμυντικές προμήθειες",
+      "normalized_title": "Η ΣΥΝΑΝΤΗΣΗ ΓΚΙΛΦΟΙΛ ΜΕ ΔΕΝΔΙΑ, ΠΑΡΟΥΣΙΑ ΤΟΥ ΑΜΕΡΙΚΑΝΟΥ ΥΦΥΠΟΥΡΓΟΥ ΓΙΑ ΤΙΣ ΑΜΥΝΤΙΚΕΣ ΠΡΟΜΗΘΕΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1455799/i-apantisi-tis-proedrias-tis-dimokratias-gia-to-epidoma-os-240-eyro-stoys-ypalliloys-tis/",
-        "https://www.efsyn.gr/ellada/1455795/thessaloniki-synelifthi-30hronos-motosikletistis-gia-18-paravaseis-toy-epivlithike-prostimo-18-590-eyro/",
-        "https://www.efsyn.gr/politiki/1455800/mathimata-apo-koytofragkoys-den-dehomaste/",
-        "https://www.efsyn.gr/politiki/1455790/symvolaio-timis-me-ton-elliniko-lao-anakoinose-to-pasok/",
-        "https://www.efsyn.gr/stiles/1455792/giati-me-tin-elas-toy-alexi-tsipra/",
-        "https://www.efsyn.gr/politiki/1455775/to-pasok-metakomizei-kriti-prasinizei-to-nisi-logo-3is-septemvri/",
-        "https://www.efsyn.gr/kosmos/1455776/o-doynavis-stereyei-i-xirasia-apeilei-energeia-ydreysi-kai-georgia-giati-oi-hores-katafeygoyn-se-akraia-metra/",
-        "https://www.efsyn.gr/kosmos/1455779/ipa-iran-exi-mines-mia-trypa-sto-nero-oi-stratigikoi-stohoi-tramp-kai-netaniahoy-apetyhan-patagodos/",
-        "https://www.efsyn.gr/kosmos/1454513/italia-o-akrodexios-vanatsi-stohopoiei-gynaikes-kai-omofylofiloys/",
-        "https://www.efsyn.gr/stiles/1455157/o-oikonomikos-polemos-sto-iran/",
-        "https://www.efsyn.gr/oikonomia/1455782/oi-131-protaseis-toy-vea-ston-prothypoyrgo-enopsei-deth/"
+        "https://www.efsyn.gr/politiki/1455811/i-synantisi-gkilfoil-me-dendia-paroysia-toy-amerikanoy-yfypoyrgoy-gia-tis-amyntikes-promitheies/",
+        "https://www.efsyn.gr/ellada/1455809/thessaloniki-skylos-epese-se-trypa-vathoys-3-metron-epiheirisi-diasosis-apo-tin-pyrosvestiki/",
+        "https://www.efsyn.gr/athlitismos/1455808/lampsi-kai-proklisi-sto-champions-league-sta-asteria-me-real-siti-kai-ntortmoynt-i-aek/",
+        "https://www.efsyn.gr/politiki/1455797/panos-kammenos-apohaireto-ton-filo-moy-stratigo-mlantits-itan-orthodoxos-patriotis-pote-hasapis/"
       ],
-      "seen_at_utc": "2026-08-28T05:51:06.915004+00:00"
+      "seen_at_utc": "2026-08-28T06:17:01.517331+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/sports/football/ofi-xamos-apo-ton-kosmo-tou-sto-irakleio-vid-pics/",
-      "title": "ΟΦΗ: Χαμός από τον κόσμο του στο Ηράκλειο (vid, pics)",
-      "normalized_title": "ΟΦΗ: ΧΑΜΟΣ ΑΠΟ ΤΟΝ ΚΟΣΜΟ ΤΟΥ ΣΤΟ ΗΡΑΚΛΕΙΟ (VID, PICS)",
+      "url": "https://www.in.gr/2026/08/28/sports/thelei-ton-mpakaseta-i-omonoia/",
+      "title": "Θέλει τον Μπακασέτα η Ομόνοια",
+      "normalized_title": "ΘΕΛΕΙ ΤΟΝ ΜΠΑΚΑΣΕΤΑ Η ΟΜΟΝΟΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/sports/football/ofi-xamos-apo-ton-kosmo-tou-sto-irakleio-vid-pics/",
-        "https://www.in.gr/2026/08/28/world/nepal-100-ergates-egklovismenoi-se-siragga-meta-ti-foniki-katolisthisi/",
-        "https://www.in.gr/2026/08/28/greece/mmm-gia-deyteri-mera-ektos-leitourgias-i-tilematiki-tou-oasa-logo-vlavis/"
+        "https://www.in.gr/2026/08/28/sports/thelei-ton-mpakaseta-i-omonoia/",
+        "https://www.in.gr/2026/08/28/life/culture-live/poios-einai-o-tzak-mparton-pou-oi-aggloi-vlepoun-os-ton-epomeno-tzeims-mpont/",
+        "https://www.in.gr/2026/08/28/world/nepal-100-ergates-egklovismenoi-se-siragga-meta-ti-foniki-katolisthisi/"
       ],
-      "seen_at_utc": "2026-08-28T05:51:06.914958+00:00"
+      "seen_at_utc": "2026-08-28T06:17:01.517304+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T05:51:06.915121+00:00"
+  "updated_at_utc": "2026-08-28T06:17:01.517399+00:00"
 }
