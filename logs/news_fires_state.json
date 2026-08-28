@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564425425/kairos-agrieyei-to-meltemi-ripes-eos-120-chlm-tin-ora-poies-perioches-tha-chtypisei/",
-      "title": "Καιρός: «Αγριεύει» το μελτέμι – Ριπές έως 120 χλμ. την ώρα, ποιες περιοχές θα χτυπήσει",
-      "normalized_title": "ΚΑΙΡΟΣ: «ΑΓΡΙΕΥΕΙ» ΤΟ ΜΕΛΤΕΜΙ – ΡΙΠΕΣ ΕΩΣ 120 ΧΛΜ. ΤΗΝ ΩΡΑ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΧΤΥΠΗΣΕΙ",
+      "url": "https://www.kathimerini.gr/politics/564425452/episkepsi-mitsotaki-sti-dytiki-makedonia-vriskomaste-dipla-se-oles-tis-paragogikes-ependyseis/",
+      "title": "Επίσκεψη Μητσοτάκη στη Δυτική Μακεδονία – «Βρισκόμαστε δίπλα σε όλες τις παραγωγικές επενδύσεις»",
+      "normalized_title": "ΕΠΙΣΚΕΨΗ ΜΗΤΣΟΤΑΚΗ ΣΤΗ ΔΥΤΙΚΗ ΜΑΚΕΔΟΝΙΑ – «ΒΡΙΣΚΟΜΑΣΤΕ ΔΙΠΛΑ ΣΕ ΟΛΕΣ ΤΙΣ ΠΑΡΑΓΩΓΙΚΕΣ ΕΠΕΝΔΥΣΕΙΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564425425/kairos-agrieyei-to-meltemi-ripes-eos-120-chlm-tin-ora-poies-perioches-tha-chtypisei/"
+        "https://www.kathimerini.gr/politics/564425452/episkepsi-mitsotaki-sti-dytiki-makedonia-vriskomaste-dipla-se-oles-tis-paragogikes-ependyseis/",
+        "https://www.kathimerini.gr/society/564425449/rodos-eisaggeliki-ereyna-gia-ta-lymata-sti-thalassa/",
+        "https://www.kathimerini.gr/opinion/interviews/564424378/dr-ampntoylaziz-sagker-stin-k-i-symfonia-tis-mekkas-den-einai-islamiko-nato/"
       ],
-      "seen_at_utc": "2026-08-28T10:29:59.302632+00:00"
+      "seen_at_utc": "2026-08-28T10:51:08.629453+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870719/sullipsi-diakiniti-stis-serres-sto-ohima-tou-edopistikan-9-allodapoi/?utm_source=rss",
-      "title": "Σύλληψη διακινητή στις Σέρρες, στο όχημά του εντοπίστηκαν 9 αλλοδαποί",
-      "normalized_title": "ΣΥΛΛΗΨΗ ΔΙΑΚΙΝΗΤΗ ΣΤΙΣ ΣΕΡΡΕΣ, ΣΤΟ ΟΧΗΜΑ ΤΟΥ ΕΝΤΟΠΙΣΤΗΚΑΝ 9 ΑΛΛΟΔΑΠΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1870732/eklevan-ilektronika-magazia-diamorfomeni-sakoula-gia-na-min-energopoioudai-ta-adikleptika-duo-sullipseis-sti-metamorfosi/?utm_source=rss",
+      "title": "Έκλεβαν ηλεκτρονικά είδη από μαγαζιά με ειδικά διαμορφωμένη σακούλα για να μην ενεργοποιούνται τα αντικλεπτικά, δύο συλλήψεις στη Μεταμόρφωση",
+      "normalized_title": "ΕΚΛΕΒΑΝ ΗΛΕΚΤΡΟΝΙΚΑ ΕΙΔΗ ΑΠΟ ΜΑΓΑΖΙΑ ΜΕ ΕΙΔΙΚΑ ΔΙΑΜΟΡΦΩΜΕΝΗ ΣΑΚΟΥΛΑ ΓΙΑ ΝΑ ΜΗΝ ΕΝΕΡΓΟΠΟΙΟΥΝΤΑΙ ΤΑ ΑΝΤΙΚΛΕΠΤΙΚΑ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΣΤΗ ΜΕΤΑΜΟΡΦΩΣΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870719/sullipsi-diakiniti-stis-serres-sto-ohima-tou-edopistikan-9-allodapoi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870715/ti-deutera-sto-tel-aviv-oi-upografes-elladas-israil-gia-tin-aspida-tou-ahillea/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870732/eklevan-ilektronika-magazia-diamorfomeni-sakoula-gia-na-min-energopoioudai-ta-adikleptika-duo-sullipseis-sti-metamorfosi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T10:17:08.781577+00:00"
+      "seen_at_utc": "2026-08-28T10:51:08.629608+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456032/syriza-gia-marinaki-sykofantika-pseydi-kata-tis-elenas-akrita/",
-      "title": "ΣΥΡΙΖΑ για Μαρινάκη: Συκοφαντικά ψεύδη κατά της Έλενας Ακρίτα",
-      "normalized_title": "ΣΥΡΙΖΑ ΓΙΑ ΜΑΡΙΝΑΚΗ: ΣΥΚΟΦΑΝΤΙΚΑ ΨΕΥΔΗ ΚΑΤΑ ΤΗΣ ΕΛΕΝΑΣ ΑΚΡΙΤΑ",
+      "url": "https://www.efsyn.gr/kosmos/1456019/norvigia-aytos-einai-o-neos-vasilias-enas-anthropos-hamilon-tonon-latris-toy-serf-kai-tis-moysiki/",
+      "title": "Νορβηγία: Αυτός είναι ο νέος βασιλιάς – Ένας άνθρωπος χαμηλών τόνων, λάτρης του σερφ και της μουσική",
+      "normalized_title": "ΝΟΡΒΗΓΙΑ: ΑΥΤΟΣ ΕΙΝΑΙ Ο ΝΕΟΣ ΒΑΣΙΛΙΑΣ – ΕΝΑΣ ΑΝΘΡΩΠΟΣ ΧΑΜΗΛΩΝ ΤΟΝΩΝ, ΛΑΤΡΗΣ ΤΟΥ ΣΕΡΦ ΚΑΙ ΤΗΣ ΜΟΥΣΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456032/syriza-gia-marinaki-sykofantika-pseydi-kata-tis-elenas-akrita/"
+        "https://www.efsyn.gr/kosmos/1456019/norvigia-aytos-einai-o-neos-vasilias-enas-anthropos-hamilon-tonon-latris-toy-serf-kai-tis-moysiki/"
       ],
-      "seen_at_utc": "2026-08-28T10:29:59.302745+00:00"
+      "seen_at_utc": "2026-08-28T10:51:08.629561+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/politics/aftodioikisi/glyfada-allazei-o-istorikos-stivos-sto-6o-dimotiko-stadio-sti-zerva/",
-      "title": "Γλυφάδα: Αλλάζει ο «ιστορικός» στίβος στο 6ο Δημοτικό Στάδιο, στη Ζέρβα",
-      "normalized_title": "ΓΛΥΦΑΔΑ: ΑΛΛΑΖΕΙ Ο «ΙΣΤΟΡΙΚΟΣ» ΣΤΙΒΟΣ ΣΤΟ 6Ο ΔΗΜΟΤΙΚΟ ΣΤΑΔΙΟ, ΣΤΗ ΖΕΡΒΑ",
+      "url": "https://www.in.gr/2026/08/28/greece/athina-tha-einai-ta-kalytera-sou-xronia-mas-elegan-apo-to-spiti-mexri-ta-eksoda-i-odysseia-mias-22xronis-foititrias/",
+      "title": "«Θα είναι τα καλύτερά σου χρόνια... μας έλεγαν» - Από το σπίτι μέχρι τα έξοδα η «Οδύσσεια» μιας 22χρονης φοιτήτριας",
+      "normalized_title": "«ΘΑ ΕΙΝΑΙ ΤΑ ΚΑΛΥΤΕΡΑ ΣΟΥ ΧΡΟΝΙΑ... ΜΑΣ ΕΛΕΓΑΝ» - ΑΠΟ ΤΟ ΣΠΙΤΙ ΜΕΧΡΙ ΤΑ ΕΞΟΔΑ Η «ΟΔΥΣΣΕΙΑ» ΜΙΑΣ 22ΧΡΟΝΗΣ ΦΟΙΤΗΤΡΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/politics/aftodioikisi/glyfada-allazei-o-istorikos-stivos-sto-6o-dimotiko-stadio-sti-zerva/"
+        "https://www.in.gr/2026/08/28/greece/athina-tha-einai-ta-kalytera-sou-xronia-mas-elegan-apo-to-spiti-mexri-ta-eksoda-i-odysseia-mias-22xronis-foititrias/",
+        "https://www.in.gr/2026/08/28/politics/politiki-grammateia/kyvernisi-deth-me-kordeles-periodeies-kai-epikoinonia-gia-anaktisi-xamenon-psifoforon/",
+        "https://www.in.gr/2026/08/28/sports/football/live-oi-kliroseis-ton-ellinikon-omadon-se-europa-kai-conference-olympiakos-ofi-kai-panathinaikos-mathainoun-antipalous/",
+        "https://www.in.gr/2026/08/28/politics/aftodioikisi/ksekinoun-1i-septemvriou-oi-eggrafes-sto-protypo-mousiko-kentro-peiraia-gia-to-didaktiko-etos-2026-2027/"
       ],
-      "seen_at_utc": "2026-08-28T10:29:59.302703+00:00"
+      "seen_at_utc": "2026-08-28T10:51:08.629514+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T10:29:59.302822+00:00"
+  "updated_at_utc": "2026-08-28T10:51:08.629688+00:00"
 }
