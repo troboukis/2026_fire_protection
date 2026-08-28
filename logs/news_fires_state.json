@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564424972/thessaloniki-mpike-sto-antitheto-reyma-prokalese-trochaio-kai-epitethike-se-astynomikoys/",
-      "title": "Θεσσαλονίκη: Μπήκε στο αντίθετο ρεύμα, προκάλεσε τροχαίο και επιτέθηκε σε αστυνομικούς",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΜΠΗΚΕ ΣΤΟ ΑΝΤΙΘΕΤΟ ΡΕΥΜΑ, ΠΡΟΚΑΛΕΣΕ ΤΡΟΧΑΙΟ ΚΑΙ ΕΠΙΤΕΘΗΚΕ ΣΕ ΑΣΤΥΝΟΜΙΚΟΥΣ",
+      "url": "https://www.kathimerini.gr/world/564425011/norvigia-pethane-o-vasilias-charalnt-se-ilikia-89-eton-nosileyotan-sto-oslo/",
+      "title": "Νορβηγία: Πέθανε ο βασιλιάς Χάραλντ σε ηλικία 89 ετών – Νοσηλευόταν στο Οσλο",
+      "normalized_title": "ΝΟΡΒΗΓΙΑ: ΠΕΘΑΝΕ Ο ΒΑΣΙΛΙΑΣ ΧΑΡΑΛΝΤ ΣΕ ΗΛΙΚΙΑ 89 ΕΤΩΝ – ΝΟΣΗΛΕΥΟΤΑΝ ΣΤΟ ΟΣΛΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564424972/thessaloniki-mpike-sto-antitheto-reyma-prokalese-trochaio-kai-epitethike-se-astynomikoys/"
+        "https://www.kathimerini.gr/world/564425011/norvigia-pethane-o-vasilias-charalnt-se-ilikia-89-eton-nosileyotan-sto-oslo/",
+        "https://www.kathimerini.gr/world/564424975/islandia-ena-mikro-dimopsifisma-me-megalo-diakyveyma-gia-tin-eyropi/",
+        "https://www.kathimerini.gr/world/564424987/nea-entasi-sti-theoyta-katoikoi-epicheirisan-na-empodisoyn-voitheia-toy-erythroy-stayroy-se-metanastes/"
       ],
-      "seen_at_utc": "2026-08-28T06:29:58.768300+00:00"
+      "seen_at_utc": "2026-08-28T06:51:08.337427+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,25 +1270,26 @@
       "seen_at_utc": "2026-08-28T06:29:58.768481+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455830/panselinos-aygoystoy-mia-ventalia-ekdiloseis-kato-ap%ce%84to-feggari/",
-      "title": "Πανσέληνος Αυγούστου: Μια βεντάλια εκδηλώσεις κάτω απ΄το φεγγάρι",
-      "normalized_title": "ΠΑΝΣΕΛΗΝΟΣ ΑΥΓΟΥΣΤΟΥ: ΜΙΑ ΒΕΝΤΑΛΙΑ ΕΚΔΗΛΩΣΕΙΣ ΚΑΤΩ ΑΠ΄ΤΟ ΦΕΓΓΑΡΙ",
+      "url": "https://www.efsyn.gr/kosmos/1455827/nepal-472-nekroi-1-400-agnooymenoi-stamatoyn-oi-epiheiriseis-diasosis-logo-neas-apeilis-apo-yperheilisi-limnis/",
+      "title": "Νεπάλ: 472 νεκροί, 1.400 αγνοούμενοι – Σταματούν οι επιχειρήσεις διάσωσης λόγω υπερχείλισης λίμνης",
+      "normalized_title": "ΝΕΠΑΛ: 472 ΝΕΚΡΟΙ, 1.400 ΑΓΝΟΟΥΜΕΝΟΙ – ΣΤΑΜΑΤΟΥΝ ΟΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΔΙΑΣΩΣΗΣ ΛΟΓΩ ΥΠΕΡΧΕΙΛΙΣΗΣ ΛΙΜΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455830/panselinos-aygoystoy-mia-ventalia-ekdiloseis-kato-ap%ce%84to-feggari/",
-        "https://www.efsyn.gr/politiki/1455820/elas-sto-foyl-oi-mihanes-gia-ti-thessaloniki/"
+        "https://www.efsyn.gr/kosmos/1455827/nepal-472-nekroi-1-400-agnooymenoi-stamatoyn-oi-epiheiriseis-diasosis-logo-neas-apeilis-apo-yperheilisi-limnis/",
+        "https://www.efsyn.gr/ellada/1455832/megali-niki-ton-ktinotrofon-sti-lesvo-pagonoyn-oi-mazikes-thanatoseis-kopadion/",
+        "https://www.efsyn.gr/politiki/1455824/ta-gyrnaei-o-antiperifereiarhis-poy-proteine-ti-metonomasia-ton-eptanison-se-nisia-toy-odyssea/"
       ],
-      "seen_at_utc": "2026-08-28T06:29:58.768410+00:00"
+      "seen_at_utc": "2026-08-28T06:51:08.337506+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/thessaloniki-synelifthi-30xronos-gia-epikindyni-odigisi-kai-proklisi-troxaiou-paraviaze-synexeia-kokkina/",
-      "title": "Συνελήφθη 30χρονος για επικίνδυνη οδήγηση - Παραβίαζε «κόκκινα», έμπαινε στο αντίθετο ρεύμα, μέχρι που τράκαρε",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 30ΧΡΟΝΟΣ ΓΙΑ ΕΠΙΚΙΝΔΥΝΗ ΟΔΗΓΗΣΗ - ΠΑΡΑΒΙΑΖΕ «ΚΟΚΚΙΝΑ», ΕΜΠΑΙΝΕ ΣΤΟ ΑΝΤΙΘΕΤΟ ΡΕΥΜΑ, ΜΕΧΡΙ ΠΟΥ ΤΡΑΚΑΡΕ",
+      "url": "https://www.in.gr/2026/08/28/sports/football/europa-league/ora-kliroseon-se-europa-kai-conference-league-olympiakos-ofi-kai-panathinaikos-mathainoun-antipalous/",
+      "title": "Ώρα κληρώσεων σε Europa και Conference League: Ολυμπιακός, ΟΦΗ και Παναθηναϊκός μαθαίνουν αντιπάλους",
+      "normalized_title": "ΩΡΑ ΚΛΗΡΩΣΕΩΝ ΣΕ EUROPA ΚΑΙ CONFERENCE LEAGUE: ΟΛΥΜΠΙΑΚΟΣ, ΟΦΗ ΚΑΙ ΠΑΝΑΘΗΝΑΙΚΟΣ ΜΑΘΑΙΝΟΥΝ ΑΝΤΙΠΑΛΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/thessaloniki-synelifthi-30xronos-gia-epikindyni-odigisi-kai-proklisi-troxaiou-paraviaze-synexeia-kokkina/",
-        "https://www.in.gr/2026/08/28/greece/thessaloniki-skylos-epese-se-trypa-3-metron-i-diasosi-tou-apo-tin-pyrosvestiki/"
+        "https://www.in.gr/2026/08/28/sports/football/europa-league/ora-kliroseon-se-europa-kai-conference-league-olympiakos-ofi-kai-panathinaikos-mathainoun-antipalous/",
+        "https://www.in.gr/2026/08/28/english-edition/karalis-clears-6-20m-pushes-duplantis-to-another-record-level-battle/"
       ],
-      "seen_at_utc": "2026-08-28T06:29:58.768365+00:00"
+      "seen_at_utc": "2026-08-28T06:51:08.337476+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T06:29:58.768558+00:00"
+  "updated_at_utc": "2026-08-28T06:51:08.337568+00:00"
 }
