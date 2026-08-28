@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564425752/kriti-freno-apo-tin-archi-gia-to-xeplyma-sta-152-000-eyro-poy-ekanan-ftera-apo-tin-perifereia/",
-      "title": "Κρήτη: Φρένο από την Αρχή για το Ξέπλυμα στις 152.000 ευρώ που έκαναν φτερά από την Περιφέρεια",
-      "normalized_title": "ΚΡΗΤΗ: ΦΡΕΝΟ ΑΠΟ ΤΗΝ ΑΡΧΗ ΓΙΑ ΤΟ ΞΕΠΛΥΜΑ ΣΤΙΣ 152.000 ΕΥΡΩ ΠΟΥ ΕΚΑΝΑΝ ΦΤΕΡΑ ΑΠΟ ΤΗΝ ΠΕΡΙΦΕΡΕΙΑ",
+      "url": "https://www.kathimerini.gr/istoria/564414781/20-aiones-exorias-sto-aigaio/",
+      "title": "20 αιώνες εξορίας στο Αιγαίο",
+      "normalized_title": "20 ΑΙΩΝΕΣ ΕΞΟΡΙΑΣ ΣΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564425752/kriti-freno-apo-tin-archi-gia-to-xeplyma-sta-152-000-eyro-poy-ekanan-ftera-apo-tin-perifereia/"
+        "https://www.kathimerini.gr/istoria/564414781/20-aiones-exorias-sto-aigaio/",
+        "https://www.kathimerini.gr/economy/business/564424708/schedio-toy-olp-gia-epektasi-drastiriotiton-ektos-peiraia/"
       ],
-      "seen_at_utc": "2026-08-28T14:30:02.266076+00:00"
+      "seen_at_utc": "2026-08-28T14:51:14.540572+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870867/sunelifthi-psuhologos-ston-peiraia-gia-diakinisi-narkotikon-sti-dikografia-laiki-tragoudistria-os-pelatissa/?utm_source=rss",
-      "title": "Συνελήφθη ψυχολόγος στον Πειραιά για διακίνηση ναρκωτικών, στη δικογραφία λαϊκή τραγουδίστρια ως πελάτισσα",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΨΥΧΟΛΟΓΟΣ ΣΤΟΝ ΠΕΙΡΑΙΑ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ, ΣΤΗ ΔΙΚΟΓΡΑΦΙΑ ΛΑΙΚΗ ΤΡΑΓΟΥΔΙΣΤΡΙΑ ΩΣ ΠΕΛΑΤΙΣΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1870881/mustirio-me-ton-thanato-arava-tourista-stin-psarrou-to-dimosieuma-tou-gulf-news-gia-ishura-thalassia-reumata/?utm_source=rss",
+      "title": "Μυστήριο με τον θάνατο Άραβα τουρίστα στην Ψαρρού: Το δημοσίευμα του Gulf News για «ισχυρά θαλάσσια ρεύματα» και οι περί του αντιθέτου μαρτυρίες",
+      "normalized_title": "ΜΥΣΤΗΡΙΟ ΜΕ ΤΟΝ ΘΑΝΑΤΟ ΑΡΑΒΑ ΤΟΥΡΙΣΤΑ ΣΤΗΝ ΨΑΡΡΟΥ: ΤΟ ΔΗΜΟΣΙΕΥΜΑ ΤΟΥ GULF NEWS ΓΙΑ «ΙΣΧΥΡΑ ΘΑΛΑΣΣΙΑ ΡΕΥΜΑΤΑ» ΚΑΙ ΟΙ ΠΕΡΙ ΤΟΥ ΑΝΤΙΘΕΤΟΥ ΜΑΡΤΥΡΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870867/sunelifthi-psuhologos-ston-peiraia-gia-diakinisi-narkotikon-sti-dikografia-laiki-tragoudistria-os-pelatissa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870881/mustirio-me-ton-thanato-arava-tourista-stin-psarrou-to-dimosieuma-tou-gulf-news-gia-ishura-thalassia-reumata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T14:30:02.266197+00:00"
+      "seen_at_utc": "2026-08-28T14:51:14.540746+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456185/marathonas-ohia-dagkose-dyo-paidia-mesa-stin-ayli-toy-spitioy-toys-stin-entatiki-moro-18-minon/",
-      "title": "Μαραθώνας: Οχιά δάγκωσε δύο παιδιά μέσα στην αυλή του σπιτιού τους – Στην εντατική μωρό 18 μηνών",
-      "normalized_title": "ΜΑΡΑΘΩΝΑΣ: ΟΧΙΑ ΔΑΓΚΩΣΕ ΔΥΟ ΠΑΙΔΙΑ ΜΕΣΑ ΣΤΗΝ ΑΥΛΗ ΤΟΥ ΣΠΙΤΙΟΥ ΤΟΥΣ – ΣΤΗΝ ΕΝΤΑΤΙΚΗ ΜΩΡΟ 18 ΜΗΝΩΝ",
+      "url": "https://www.efsyn.gr/athlitismos/1456197/vaggelis-marinakis-plirosame-16-ekatommyria-gia-ton-poyerta-kai-aytos-den-erhetai-ti-allo-na-kaneis/",
+      "title": "Βαγγέλης Μαρινάκης: «Πληρώσαμε 16 εκατομμύρια για τον Πουέρτα και αυτός δεν έρχεται… τι άλλο να κάνεις;»",
+      "normalized_title": "ΒΑΓΓΕΛΗΣ ΜΑΡΙΝΑΚΗΣ: «ΠΛΗΡΩΣΑΜΕ 16 ΕΚΑΤΟΜΜΥΡΙΑ ΓΙΑ ΤΟΝ ΠΟΥΕΡΤΑ ΚΑΙ ΑΥΤΟΣ ΔΕΝ ΕΡΧΕΤΑΙ… ΤΙ ΑΛΛΟ ΝΑ ΚΑΝΕΙΣ;»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456185/marathonas-ohia-dagkose-dyo-paidia-mesa-stin-ayli-toy-spitioy-toys-stin-entatiki-moro-18-minon/"
+        "https://www.efsyn.gr/athlitismos/1456197/vaggelis-marinakis-plirosame-16-ekatommyria-gia-ton-poyerta-kai-aytos-den-erhetai-ti-allo-na-kaneis/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-kostas-grigoriadis-28-08-2026/"
       ],
-      "seen_at_utc": "2026-08-28T14:30:02.266171+00:00"
+      "seen_at_utc": "2026-08-28T14:51:14.540691+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/dyo-syllipseis-gia-klopes-ilektronikon-syskeyon-apo-katastimata-i-eidiki-sakoula-pou-xrisimopoiousan/",
-      "title": "Δύο συλλήψεις για κλοπές ηλεκτρονικών συσκευών από καταστήματα – Η ειδική σακούλα που χρησιμοποιούσαν",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΚΛΟΠΕΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΣΥΣΚΕΥΩΝ ΑΠΟ ΚΑΤΑΣΤΗΜΑΤΑ – Η ΕΙΔΙΚΗ ΣΑΚΟΥΛΑ ΠΟΥ ΧΡΗΣΙΜΟΠΟΙΟΥΣΑΝ",
+      "url": "https://www.in.gr/2026/08/28/greece/nea-ntokoumenta-kai-kataggelies-gia-etairies-taxymetaforon-klotsoskoufi-ta-demata-kamia-apozimiosi-stous-pelates/",
+      "title": "Νέα ντοκουμέντα και καταγγελίες για εταιρίες ταχυμεταφορών – «Κλωτσοσκούφι» τα δέματα, καμία αποζημίωση στους πελάτες",
+      "normalized_title": "ΝΕΑ ΝΤΟΚΟΥΜΕΝΤΑ ΚΑΙ ΚΑΤΑΓΓΕΛΙΕΣ ΓΙΑ ΕΤΑΙΡΙΕΣ ΤΑΧΥΜΕΤΑΦΟΡΩΝ – «ΚΛΩΤΣΟΣΚΟΥΦΙ» ΤΑ ΔΕΜΑΤΑ, ΚΑΜΙΑ ΑΠΟΖΗΜΙΩΣΗ ΣΤΟΥΣ ΠΕΛΑΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/dyo-syllipseis-gia-klopes-ilektronikon-syskeyon-apo-katastimata-i-eidiki-sakoula-pou-xrisimopoiousan/",
-        "https://www.in.gr/2026/08/28/stories/apo-ena-tilepaixnidi-sta-asteria-tou-tsampions-ligk-i-omorfi-istoria-tou-valntas-ntampraouskas/",
-        "https://www.in.gr/2026/08/28/world/i-mosxa-proeidopoiei-to-nato-prepei-na-ayksisoume-ton-dialogo-giati-yparxei-kindynos-tyxaiou-polemou/"
+        "https://www.in.gr/2026/08/28/greece/nea-ntokoumenta-kai-kataggelies-gia-etairies-taxymetaforon-klotsoskoufi-ta-demata-kamia-apozimiosi-stous-pelates/",
+        "https://www.in.gr/2026/08/28/in-science/technology/ta-rompot-theloun-to-aima-sas-prasino-fos-gia-aytonomo-systima-aimolipsias/",
+        "https://www.in.gr/2026/08/28/world/glypta-tou-parthenona-kanei-piso-o-mpernam-apo-to-xoris-orous-sto-einai-thema-tou-vretanikou-mouseiou/"
       ],
-      "seen_at_utc": "2026-08-28T14:30:02.266132+00:00"
+      "seen_at_utc": "2026-08-28T14:51:14.540636+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T14:30:02.266273+00:00"
+  "updated_at_utc": "2026-08-28T14:51:14.540830+00:00"
 }
