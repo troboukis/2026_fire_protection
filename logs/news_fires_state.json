@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564425755/oi-mempsimoiroi-ton-kliroseon-kai-oi-alithines-prokliseis/",
-      "title": "Οι μεμψίμοιροι των κληρώσεων και οι αληθινές προκλήσεις",
-      "normalized_title": "ΟΙ ΜΕΜΨΙΜΟΙΡΟΙ ΤΩΝ ΚΛΗΡΩΣΕΩΝ ΚΑΙ ΟΙ ΑΛΗΘΙΝΕΣ ΠΡΟΚΛΗΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/politics/564425863/to-archigeio-tis-el-as-apanta-sto-komma-tsipra-metrisima-ta-apotelesmata-kata-toy-organomenoy-egklimatos/",
+      "title": "Το αρχηγείο της ΕΛ.ΑΣ. απαντά στο κόμμα Τσίπρα για τη μάχη με το οργανωμένο έγκλημα",
+      "normalized_title": "ΤΟ ΑΡΧΗΓΕΙΟ ΤΗΣ ΕΛ.ΑΣ. ΑΠΑΝΤΑ ΣΤΟ ΚΟΜΜΑ ΤΣΙΠΡΑ ΓΙΑ ΤΗ ΜΑΧΗ ΜΕ ΤΟ ΟΡΓΑΝΩΜΕΝΟ ΕΓΚΛΗΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564425755/oi-mempsimoiroi-ton-kliroseon-kai-oi-alithines-prokliseis/",
-        "https://www.kathimerini.gr/k/k-magazine/564423880/ola-osa-den-xerate-gia-to-karpoyzi/"
+        "https://www.kathimerini.gr/politics/564425863/to-archigeio-tis-el-as-apanta-sto-komma-tsipra-metrisima-ta-apotelesmata-kata-toy-organomenoy-egklimatos/",
+        "https://www.kathimerini.gr/economy/564424666/i-provlimatiki-architektoniki-ton-tekmirion/",
+        "https://www.kathimerini.gr/k/gastronomos/564424084/oi-kariotines-poy-mazeyan-agriochorta-kai-sto-misigkan/",
+        "https://www.kathimerini.gr/world/564425848/proedros-fed-anoichto-to-endechomeno-ayxisis-ton-epitokion/"
       ],
-      "seen_at_utc": "2026-08-28T15:51:11.657100+00:00"
+      "seen_at_utc": "2026-08-28T16:18:22.979018+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1262,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870931/nea-selida-gia-to-dimokriteio-panepistimio-thrakis-me-700-nees-theseis-foititikis-stegasis-kai-ishuro-anaptuxiako-shedio/?utm_source=rss",
-      "title": "Νέα σελίδα για το Δημοκρίτειο Πανεπιστήμιο Θράκης με 700 νέες θέσεις φοιτητικής στέγασης και ισχυρό αναπτυξιακό σχέδιο",
-      "normalized_title": "ΝΕΑ ΣΕΛΙΔΑ ΓΙΑ ΤΟ ΔΗΜΟΚΡΙΤΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΡΑΚΗΣ ΜΕ 700 ΝΕΕΣ ΘΕΣΕΙΣ ΦΟΙΤΗΤΙΚΗΣ ΣΤΕΓΑΣΗΣ ΚΑΙ ΙΣΧΥΡΟ ΑΝΑΠΤΥΞΙΑΚΟ ΣΧΕΔΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1870932/pethane-se-ilikia-103-eton-o-kuriakos-kazakos-makroviotero-melos-tis-esiea-kai-tou-edoeap/?utm_source=rss",
+      "title": "Πέθανε σε ηλικία 103 ετών ο Κυριάκος Καζάκος, μακροβιότερο μέλος της ΕΣΗΕΑ και του ΕΔΟΕΑΠ",
+      "normalized_title": "ΠΕΘΑΝΕ ΣΕ ΗΛΙΚΙΑ 103 ΕΤΩΝ Ο ΚΥΡΙΑΚΟΣ ΚΑΖΑΚΟΣ, ΜΑΚΡΟΒΙΟΤΕΡΟ ΜΕΛΟΣ ΤΗΣ ΕΣΗΕΑ ΚΑΙ ΤΟΥ ΕΔΟΕΑΠ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870931/nea-selida-gia-to-dimokriteio-panepistimio-thrakis-me-700-nees-theseis-foititikis-stegasis-kai-ishuro-anaptuxiako-shedio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870926/fidi-dagose-14hrono-kai-moro-18-minon-ston-marathona-metaferthikan-sto-nosokomeio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870932/pethane-se-ilikia-103-eton-o-kuriakos-kazakos-makroviotero-melos-tis-esiea-kai-tou-edoeap/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T15:51:11.657187+00:00"
+      "seen_at_utc": "2026-08-28T16:18:22.979151+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1456248/toyrismos-gia-oloys-ta-apotelesmata-tis-a-fasis-anartontai-simera-paraskeyi/",
-      "title": "Τουρισμός για όλους: Τα αποτελέσματα της α’ φάσης αναρτώνται σήμερα Παρασκευή",
-      "normalized_title": "ΤΟΥΡΙΣΜΟΣ ΓΙΑ ΟΛΟΥΣ: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΤΗΣ Α’ ΦΑΣΗΣ ΑΝΑΡΤΩΝΤΑΙ ΣΗΜΕΡΑ ΠΑΡΑΣΚΕΥΗ",
+      "url": "https://www.efsyn.gr/ellada/1456251/salamina-pente-atoma-sto-nosokomeio-meta-apo-mpanio-stin-pisina-paidotopoy-anamesa-toys-tria-paidia/",
+      "title": "Σαλαμίνα: Πέντε άτομα στο νοσοκομείο μετά από μπάνιο στην πισίνα παιδότοπου – Αναμεσά τους τρία παιδιά",
+      "normalized_title": "ΣΑΛΑΜΙΝΑ: ΠΕΝΤΕ ΑΤΟΜΑ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΜΕΤΑ ΑΠΟ ΜΠΑΝΙΟ ΣΤΗΝ ΠΙΣΙΝΑ ΠΑΙΔΟΤΟΠΟΥ – ΑΝΑΜΕΣΑ ΤΟΥΣ ΤΡΙΑ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1456248/toyrismos-gia-oloys-ta-apotelesmata-tis-a-fasis-anartontai-simera-paraskeyi/",
-        "https://www.efsyn.gr/ellada/1456246/treis-syllipseis-gia-diakinisi-narkotikon-to-stathero-pelatologio-kai-o-psyhologos-poy-promitheye-oysies-kai-hapia/",
-        "https://www.efsyn.gr/oikonomia/1456089/ishyres-apohroses-endeixeis-skandaloy-sti-dypa-oi-ergazomenoi-prosefygan-stin-eyropaiki-eisaggelia/"
+        "https://www.efsyn.gr/ellada/1456251/salamina-pente-atoma-sto-nosokomeio-meta-apo-mpanio-stin-pisina-paidotopoy-anamesa-toys-tria-paidia/",
+        "https://www.efsyn.gr/politiki/1456265/maniatis-pros-komision-kyroseis-gia-toyrkikes-paraviaseis-stin-alexandroypoli/",
+        "https://www.efsyn.gr/athlitismos/1456254/antidrasi-olympiakoy-gia-to-thema-toy-fal-fotografiki-egkyklios-gia-ton-paikti-toy-panathinaikoy/"
       ],
-      "seen_at_utc": "2026-08-28T15:51:11.657160+00:00"
+      "seen_at_utc": "2026-08-28T16:18:22.979126+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/sports/basketball/live-oukrania-ellada/",
-      "title": "LIVE: Ουκρανία – Ελλάδα",
-      "normalized_title": "LIVE: ΟΥΚΡΑΝΙΑ – ΕΛΛΑΔΑ",
+      "url": "https://www.in.gr/2026/08/28/uncategorized/nepal-oi-nekroi-eftasan-tous-584-oi-agnooumenoi-tous-1-924-oi-pligentes-tis-plimmyras-ksepernoun-tis-93-000/",
+      "title": "Νεπάλ: Οι νεκροί έφτασαν τους 584, οι αγνοούμενοι τους 1.924 – Οι πληγέντες της πλημμύρας ξεπερνούν τις 93.000",
+      "normalized_title": "ΝΕΠΑΛ: ΟΙ ΝΕΚΡΟΙ ΕΦΤΑΣΑΝ ΤΟΥΣ 584, ΟΙ ΑΓΝΟΟΥΜΕΝΟΙ ΤΟΥΣ 1.924 – ΟΙ ΠΛΗΓΕΝΤΕΣ ΤΗΣ ΠΛΗΜΜΥΡΑΣ ΞΕΠΕΡΝΟΥΝ ΤΙΣ 93.000",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/sports/basketball/live-oukrania-ellada/",
-        "https://www.in.gr/2026/08/28/greece/nea-stoixeia-kai-anapantita-erotimata-gia-ti-dolofonia-tis-diasostrias-sti-syro-ti-lene-oi-goneis-tis/"
+        "https://www.in.gr/2026/08/28/uncategorized/nepal-oi-nekroi-eftasan-tous-584-oi-agnooumenoi-tous-1-924-oi-pligentes-tis-plimmyras-ksepernoun-tis-93-000/",
+        "https://www.in.gr/2026/08/28/greece/se-synagermo-i-politiki-prostasia-gia-ton-kindyno-pyrkagion-poies-perioxes-mpainoun-se-katastasi-red-code/",
+        "https://www.in.gr/2026/08/28/greece/vinteo-ntokoumento-apo-tin-katadioksi-sti-thessaloniki-pos-synelifthi-o-30xronos-odigos/",
+        "https://www.in.gr/2026/08/28/sports/mountial-2026/sto-cas-i-argentini-gia-varies-poines-se-paredes-kai-molina-sto-mountial/",
+        "https://www.in.gr/2026/08/28/go-fun/fizz/eleni-petroulaki-i-entyposiaki-emfanisi-sti-mykono/",
+        "https://www.in.gr/2026/08/28/world/synagermos-sti-vienni-listes-arpaksan-vasiliko-kolie-me-673-diamantia-mesa-apo-mouseio/"
       ],
-      "seen_at_utc": "2026-08-28T15:51:11.657129+00:00"
+      "seen_at_utc": "2026-08-28T16:18:22.979087+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T15:51:11.657260+00:00"
+  "updated_at_utc": "2026-08-28T16:18:22.979227+00:00"
 }
