@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564424360/ekkremeis-apallotrioseis-apo-to-1939/",
-      "title": "Εκκρεμείς απαλλοτριώσεις από το 1939",
-      "normalized_title": "ΕΚΚΡΕΜΕΙΣ ΑΠΑΛΛΟΤΡΙΩΣΕΙΣ ΑΠΟ ΤΟ 1939",
+      "url": "https://www.kathimerini.gr/economy/564424744/oi-exi-mines-toy-polemoy-poy-allaxan-tis-agores/",
+      "title": "Οι έξι μήνες του πολέμου που άλλαξαν τις αγορές",
+      "normalized_title": "ΟΙ ΕΞΙ ΜΗΝΕΣ ΤΟΥ ΠΟΛΕΜΟΥ ΠΟΥ ΑΛΛΑΞΑΝ ΤΙΣ ΑΓΟΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564424360/ekkremeis-apallotrioseis-apo-to-1939/",
-        "https://www.kathimerini.gr/world/564425116/ploio-katevale-poso-rekor-5-3-ekat-dolarion-gia-na-perasei-apo-ti-dioryga-toy-panama/"
+        "https://www.kathimerini.gr/economy/564424744/oi-exi-mines-toy-polemoy-poy-allaxan-tis-agores/",
+        "https://www.kathimerini.gr/society/564425131/to-ystato-chaire-ston-dimitri-kokota-ayti-tin-ora-i-kideia-toy-stin-agia-varvara/"
       ],
-      "seen_at_utc": "2026-08-28T08:29:57.811677+00:00"
+      "seen_at_utc": "2026-08-28T08:51:11.715749+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,25 +1271,28 @@
       "seen_at_utc": "2026-08-28T08:17:03.461562+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1455894/katataktiries-exetaseis-pos-kovesai-eno-eheis-pano-apo-30-monades-to-paradeigma-apo-to-panepistimio-patron/",
-      "title": "Κατατακτήριες εξετάσεις: Πώς «κόβεσαι» ενώ έχεις πάνω από 30 μονάδες – Το παράδειγμα από το Πανεπιστήμιο Πατρών",
-      "normalized_title": "ΚΑΤΑΤΑΚΤΗΡΙΕΣ ΕΞΕΤΑΣΕΙΣ: ΠΩΣ «ΚΟΒΕΣΑΙ» ΕΝΩ ΕΧΕΙΣ ΠΑΝΩ ΑΠΟ 30 ΜΟΝΑΔΕΣ – ΤΟ ΠΑΡΑΔΕΙΓΜΑ ΑΠΟ ΤΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ",
+      "url": "https://www.efsyn.gr/oikonomia/1455888/eforia-ti-prepei-na-plirothei-eos-tis-31-aygoystoy-ti-na-prosexete-stoys-koinoys-logariasmoys/",
+      "title": "Εφορία: Τι πρέπει να πληρωθεί έως τις 31 Αυγούστου – Τι να προσέξετε στους κοινούς λογαριασμούς",
+      "normalized_title": "ΕΦΟΡΙΑ: ΤΙ ΠΡΕΠΕΙ ΝΑ ΠΛΗΡΩΘΕΙ ΕΩΣ ΤΙΣ 31 ΑΥΓΟΥΣΤΟΥ – ΤΙ ΝΑ ΠΡΟΣΕΞΕΤΕ ΣΤΟΥΣ ΚΟΙΝΟΥΣ ΛΟΓΑΡΙΑΣΜΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1455894/katataktiries-exetaseis-pos-kovesai-eno-eheis-pano-apo-30-monades-to-paradeigma-apo-to-panepistimio-patron/",
-        "https://www.efsyn.gr/ellada/1455890/dimitris-kokotas-stin-agia-varvara-to-teleytaio-antio-ston-agapimeno-tragoydisti-eikones-vinteo/"
+        "https://www.efsyn.gr/oikonomia/1455888/eforia-ti-prepei-na-plirothei-eos-tis-31-aygoystoy-ti-na-prosexete-stoys-koinoys-logariasmoys/",
+        "https://www.efsyn.gr/athlitismos/1455920/titanomahies-me-to-kalimera-stin-league-phase-toy-tsampions-ligk/",
+        "https://www.efsyn.gr/athlitismos/1455913/karalis-kai-tentogloy-to-diaskedasan-meta-to-diamond-league-tis-zyrihis/",
+        "https://www.efsyn.gr/politiki/1455915/ti-deytera-sto-tel-aviv-oi-ypografes-gia-ton-siderenio-tholo-toy-aigaioy-4-symvaseis-axias-31-dis-eyro/"
       ],
-      "seen_at_utc": "2026-08-28T08:29:57.811819+00:00"
+      "seen_at_utc": "2026-08-28T08:51:11.715947+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/sports/basketball/olympiakos-parousiazetai-sti-deth-to-neo-gipedo-ti-anaferei-i-anakoinosi-tis-dioikisis-tou-sef/",
-      "title": "Ολυμπιακός: Παρουσιάζεται στη ΔΕΘ το νέο γήπεδο – Τι αναφέρει η ανακοίνωση της διοίκησης του ΣΕΦ",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΠΑΡΟΥΣΙΑΖΕΤΑΙ ΣΤΗ ΔΕΘ ΤΟ ΝΕΟ ΓΗΠΕΔΟ – ΤΙ ΑΝΑΦΕΡΕΙ Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΔΙΟΙΚΗΣΗΣ ΤΟΥ ΣΕΦ",
+      "url": "https://www.in.gr/2026/08/28/in-science/technology/anisyxia-kai-stin-eyropi-gia-tis-kryfes-xeirolaves-tis-tesla/",
+      "title": "Ανησυχία και στην Ευρώπη για τις «κρυφές» χειρολαβές της Tesla",
+      "normalized_title": "ΑΝΗΣΥΧΙΑ ΚΑΙ ΣΤΗΝ ΕΥΡΩΠΗ ΓΙΑ ΤΙΣ «ΚΡΥΦΕΣ» ΧΕΙΡΟΛΑΒΕΣ ΤΗΣ TESLA",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/sports/basketball/olympiakos-parousiazetai-sti-deth-to-neo-gipedo-ti-anaferei-i-anakoinosi-tis-dioikisis-tou-sef/",
-        "https://www.in.gr/2026/08/28/greece/kriti-stigmes-tromou-gia-12xrono-pou-dextike-epithesi-apo-skylo-synelifthi-28xroni/"
+        "https://www.in.gr/2026/08/28/in-science/technology/anisyxia-kai-stin-eyropi-gia-tis-kryfes-xeirolaves-tis-tesla/",
+        "https://www.in.gr/2026/08/28/greece/dimitris-kokotas-sygkinisi-sto-teleytaio-antio-gia-ton-agapimeno-tragoudisti/",
+        "https://www.in.gr/2026/08/28/politics/epikairotita/koutsoumpas-mas-endiaferei-ti-dikaioutai-o-laos-oxi-ti-antexoun-ta-kerdi-tous/"
       ],
-      "seen_at_utc": "2026-08-28T08:29:57.811762+00:00"
+      "seen_at_utc": "2026-08-28T08:51:11.715898+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T08:29:57.811896+00:00"
+  "updated_at_utc": "2026-08-28T08:51:11.716018+00:00"
 }
