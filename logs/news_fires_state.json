@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564425452/episkepsi-mitsotaki-sti-dytiki-makedonia-vriskomaste-dipla-se-oles-tis-paragogikes-ependyseis/",
-      "title": "Επίσκεψη Μητσοτάκη στη Δυτική Μακεδονία – «Βρισκόμαστε δίπλα σε όλες τις παραγωγικές επενδύσεις»",
-      "normalized_title": "ΕΠΙΣΚΕΨΗ ΜΗΤΣΟΤΑΚΗ ΣΤΗ ΔΥΤΙΚΗ ΜΑΚΕΔΟΝΙΑ – «ΒΡΙΣΚΟΜΑΣΤΕ ΔΙΠΛΑ ΣΕ ΟΛΕΣ ΤΙΣ ΠΑΡΑΓΩΓΙΚΕΣ ΕΠΕΝΔΥΣΕΙΣ»",
+      "url": "https://www.kathimerini.gr/society/564425515/pyrkagia-sto-ploytochori-ileias-ichise-to-112-gia-etoimotita/",
+      "title": "Πυρκαγιά στο Πλουτοχώρι Ηλείας – Ηχησε το 112 για ετοιμότητα",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΟ ΠΛΟΥΤΟΧΩΡΙ ΗΛΕΙΑΣ – ΗΧΗΣΕ ΤΟ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564425452/episkepsi-mitsotaki-sti-dytiki-makedonia-vriskomaste-dipla-se-oles-tis-paragogikes-ependyseis/",
-        "https://www.kathimerini.gr/society/564425449/rodos-eisaggeliki-ereyna-gia-ta-lymata-sti-thalassa/",
-        "https://www.kathimerini.gr/opinion/interviews/564424378/dr-ampntoylaziz-sagker-stin-k-i-symfonia-tis-mekkas-den-einai-islamiko-nato/"
+        "https://www.kathimerini.gr/society/564425515/pyrkagia-sto-ploytochori-ileias-ichise-to-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/world/564425491/nepal-vivliki-katastrofi-ayxanetai-o-arithmos-ton-thymaton/",
+        "https://www.kathimerini.gr/society/564425494/fotia-sto-irakleio-kritis-kaiei-agrotodasiki-ektasi-sti-thesi-perdikokoryfi/",
+        "https://www.kathimerini.gr/opinion/sketches/564425431/skitso-toy-andrea-petroylaki-28-08-26/",
+        "https://www.kathimerini.gr/world/564425482/ny-times-i-mystiki-apostoli-toy-archigoy-tis-cia-sti-moscha-kai-to-zofero-minyma-pros-to-kremlino/"
       ],
-      "seen_at_utc": "2026-08-28T10:51:08.629453+00:00"
+      "seen_at_utc": "2026-08-28T11:18:14.285645+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1263,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870732/eklevan-ilektronika-magazia-diamorfomeni-sakoula-gia-na-min-energopoioudai-ta-adikleptika-duo-sullipseis-sti-metamorfosi/?utm_source=rss",
-      "title": "Έκλεβαν ηλεκτρονικά είδη από μαγαζιά με ειδικά διαμορφωμένη σακούλα για να μην ενεργοποιούνται τα αντικλεπτικά, δύο συλλήψεις στη Μεταμόρφωση",
-      "normalized_title": "ΕΚΛΕΒΑΝ ΗΛΕΚΤΡΟΝΙΚΑ ΕΙΔΗ ΑΠΟ ΜΑΓΑΖΙΑ ΜΕ ΕΙΔΙΚΑ ΔΙΑΜΟΡΦΩΜΕΝΗ ΣΑΚΟΥΛΑ ΓΙΑ ΝΑ ΜΗΝ ΕΝΕΡΓΟΠΟΙΟΥΝΤΑΙ ΤΑ ΑΝΤΙΚΛΕΠΤΙΚΑ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΣΤΗ ΜΕΤΑΜΟΡΦΩΣΗ",
+      "url": "https://www.protothema.gr/greece/article/1870740/fotia-sto-ploutohori-ileias-epiheiroun-tria-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά στο Πλουτοχώρι Ηλείας, 112 για ετοιμότητα στο Νέο Χωριό",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΠΛΟΥΤΟΧΩΡΙ ΗΛΕΙΑΣ, 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ ΣΤΟ ΝΕΟ ΧΩΡΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870732/eklevan-ilektronika-magazia-diamorfomeni-sakoula-gia-na-min-energopoioudai-ta-adikleptika-duo-sullipseis-sti-metamorfosi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870740/fotia-sto-ploutohori-ileias-epiheiroun-tria-aeroskafi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T10:51:08.629608+00:00"
+      "seen_at_utc": "2026-08-28T11:18:14.285753+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1456019/norvigia-aytos-einai-o-neos-vasilias-enas-anthropos-hamilon-tonon-latris-toy-serf-kai-tis-moysiki/",
-      "title": "Νορβηγία: Αυτός είναι ο νέος βασιλιάς – Ένας άνθρωπος χαμηλών τόνων, λάτρης του σερφ και της μουσική",
-      "normalized_title": "ΝΟΡΒΗΓΙΑ: ΑΥΤΟΣ ΕΙΝΑΙ Ο ΝΕΟΣ ΒΑΣΙΛΙΑΣ – ΕΝΑΣ ΑΝΘΡΩΠΟΣ ΧΑΜΗΛΩΝ ΤΟΝΩΝ, ΛΑΤΡΗΣ ΤΟΥ ΣΕΡΦ ΚΑΙ ΤΗΣ ΜΟΥΣΙΚΗ",
+      "url": "https://www.efsyn.gr/tehnes/1456079/i-oykrania-epitithetai-sto-festival-venetias/",
+      "title": "Η Ουκρανία «επιτίθεται» στο Φεστιβάλ Βενετίας",
+      "normalized_title": "Η ΟΥΚΡΑΝΙΑ «ΕΠΙΤΙΘΕΤΑΙ» ΣΤΟ ΦΕΣΤΙΒΑΛ ΒΕΝΕΤΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1456019/norvigia-aytos-einai-o-neos-vasilias-enas-anthropos-hamilon-tonon-latris-toy-serf-kai-tis-moysiki/"
+        "https://www.efsyn.gr/tehnes/1456079/i-oykrania-epitithetai-sto-festival-venetias/",
+        "https://www.efsyn.gr/ellada/1456074/fotia-sto-ploytohori-ileias-epiheiroyn-tria-enaeria/",
+        "https://www.efsyn.gr/politiki/1456025/syriza-exoflithikan-pliros-oi-ergazomenoi-se-aygi-kai-kokkino-mia-desmeysi-egine-praxi/"
       ],
-      "seen_at_utc": "2026-08-28T10:51:08.629561+00:00"
+      "seen_at_utc": "2026-08-28T11:18:14.285734+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/athina-tha-einai-ta-kalytera-sou-xronia-mas-elegan-apo-to-spiti-mexri-ta-eksoda-i-odysseia-mias-22xronis-foititrias/",
-      "title": "«Θα είναι τα καλύτερά σου χρόνια... μας έλεγαν» - Από το σπίτι μέχρι τα έξοδα η «Οδύσσεια» μιας 22χρονης φοιτήτριας",
-      "normalized_title": "«ΘΑ ΕΙΝΑΙ ΤΑ ΚΑΛΥΤΕΡΑ ΣΟΥ ΧΡΟΝΙΑ... ΜΑΣ ΕΛΕΓΑΝ» - ΑΠΟ ΤΟ ΣΠΙΤΙ ΜΕΧΡΙ ΤΑ ΕΞΟΔΑ Η «ΟΔΥΣΣΕΙΑ» ΜΙΑΣ 22ΧΡΟΝΗΣ ΦΟΙΤΗΤΡΙΑΣ",
+      "url": "https://www.in.gr/2026/08/28/go-fun/music-stage/thodoris-ferris-apotheosi-apo-20-000-kosmou-sti-synaylia-tou-sti-thessaloniki/",
+      "title": "Θοδωρής Φέρρης: Αποθέωση από 20.000 κόσμου στη συναυλία του στη Θεσσαλονίκη",
+      "normalized_title": "ΘΟΔΩΡΗΣ ΦΕΡΡΗΣ: ΑΠΟΘΕΩΣΗ ΑΠΟ 20.000 ΚΟΣΜΟΥ ΣΤΗ ΣΥΝΑΥΛΙΑ ΤΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/athina-tha-einai-ta-kalytera-sou-xronia-mas-elegan-apo-to-spiti-mexri-ta-eksoda-i-odysseia-mias-22xronis-foititrias/",
-        "https://www.in.gr/2026/08/28/politics/politiki-grammateia/kyvernisi-deth-me-kordeles-periodeies-kai-epikoinonia-gia-anaktisi-xamenon-psifoforon/",
-        "https://www.in.gr/2026/08/28/sports/football/live-oi-kliroseis-ton-ellinikon-omadon-se-europa-kai-conference-olympiakos-ofi-kai-panathinaikos-mathainoun-antipalous/",
-        "https://www.in.gr/2026/08/28/politics/aftodioikisi/ksekinoun-1i-septemvriou-oi-eggrafes-sto-protypo-mousiko-kentro-peiraia-gia-to-didaktiko-etos-2026-2027/"
+        "https://www.in.gr/2026/08/28/go-fun/music-stage/thodoris-ferris-apotheosi-apo-20-000-kosmou-sti-synaylia-tou-sti-thessaloniki/",
+        "https://www.in.gr/2026/08/28/greece/dyo-syllipseis-gia-emprismo-kai-apopeira-proklisis-pyrkagias-se-athina-kai-kalamata/",
+        "https://www.in.gr/2026/08/28/economy/diethnis-oikonomia/oi-douleies-tou-mellontos-ta-12-epaggelmata-pou-tha-gnorisoun-ti-megalyteri-anodo-eos-to-2035/",
+        "https://www.in.gr/2026/08/28/politics/aftodioikisi/i-apokentromeni-dioikisi-makedonias-thrakis-epikefalis-etairos-eyropaikou-ergou/",
+        "https://www.in.gr/2026/08/28/sports/football/europa-league/ofi-pairnei-ton-kontro-diepseysan-gia-mpakaseta-oi-kritikoi/",
+        "https://www.in.gr/2026/08/28/economy/diethnis-oikonomia/venezouela-epi-tapitos-to-endexomeno-na-apoxorisei-apo-ton-opek/",
+        "https://www.in.gr/2026/08/28/politics/aftodioikisi/entaksi-sto-espa-tou-ergou-prostasias-stin-palia-ilektriki-kai-ton-kolpo-tou-dermata-sto-irakleio/",
+        "https://www.in.gr/2026/08/28/greece/fotia-stin-ileia-sikothikan-tria-enaeria/",
+        "https://www.in.gr/2026/08/28/greece/dimitris-kokotas-sygklonizoun-oi-epikideioi-tis-syzygou-tou-kai-tis-aderfis-tou/",
+        "https://www.in.gr/2026/08/28/greece/akraios-kindynos-pyrkagias-to-savvato-se-treis-perioxes-se-portokali-synagermo-pente-perifereies/"
       ],
-      "seen_at_utc": "2026-08-28T10:51:08.629514+00:00"
+      "seen_at_utc": "2026-08-28T11:18:14.285711+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T10:51:08.629688+00:00"
+  "updated_at_utc": "2026-08-28T11:18:14.285854+00:00"
 }
