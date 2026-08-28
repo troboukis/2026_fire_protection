@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564424321/sto-stochastro-dyo-ellines-gia-to-diktyo-shipoil/",
-      "title": "Στο στόχαστρο δύο Ελληνες για το δίκτυο Shipoil",
-      "normalized_title": "ΣΤΟ ΣΤΟΧΑΣΤΡΟ ΔΥΟ ΕΛΛΗΝΕΣ ΓΙΑ ΤΟ ΔΙΚΤΥΟ SHIPOIL",
+      "url": "https://www.kathimerini.gr/culture/564413707/mechri-ta-30/",
+      "title": "Μέχρι τα 30",
+      "normalized_title": "ΜΕΧΡΙ ΤΑ 30",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564424321/sto-stochastro-dyo-ellines-gia-to-diktyo-shipoil/",
-        "https://www.kathimerini.gr/athletics/564426721/ethniki-mpasket-kaki-emfanisi-sti-riga-dyskolepse-i-prokrisi-sto-pagkosmio-kypello/",
-        "https://www.kathimerini.gr/world/564424381/ena-efaltirio-gia-tin-akrodexia/",
-        "https://www.kathimerini.gr/world/564426046/zelenski-entoli-gia-epitheseis-me-1-000-drones-sti-rosia-tin-imera/"
+        "https://www.kathimerini.gr/culture/564413707/mechri-ta-30/",
+        "https://www.kathimerini.gr/culture/tv/564425731/to-soi-soy-epistrefei-me-nea-stigmiotypa-apo-ta-gyrismata/",
+        "https://www.kathimerini.gr/economy/564424726/sto-rantar-ependyton-ellinikes-startups-amyntikis-technologias/"
       ],
-      "seen_at_utc": "2026-08-28T18:30:01.559169+00:00"
+      "seen_at_utc": "2026-08-28T18:51:29.825280+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,33 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870995/klirosi-eurojackpot-2882026-ta-apotelesmata-kai-oi-arithmoi-pou-kerdizoun/?utm_source=rss",
-      "title": "Κλήρωση Eurojackpot 28/8/2026: Τα αποτελέσματα και οι αριθμοί που κερδίζουν",
-      "normalized_title": "ΚΛΗΡΩΣΗ EUROJACKPOT 28/8/2026: ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΚΑΙ ΟΙ ΑΡΙΘΜΟΙ ΠΟΥ ΚΕΡΔΙΖΟΥΝ",
+      "url": "https://www.protothema.gr/greece/article/1871003/sunolika-38-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-se-poies-periohes-tha-ishusei-code-red-to-savvato/?utm_source=rss",
+      "title": "Συνολικά 38 αγροτοδασικές πυρκαγιές το τελευταίο 24ωρο στην Ελλάδα, σε ποιες περιοχές θα ισχύσει Code Red το Σάββατο",
+      "normalized_title": "ΣΥΝΟΛΙΚΑ 38 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ ΣΤΗΝ ΕΛΛΑΔΑ, ΣΕ ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΙΣΧΥΣΕΙ CODE RED ΤΟ ΣΑΒΒΑΤΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870995/klirosi-eurojackpot-2882026-ta-apotelesmata-kai-oi-arithmoi-pou-kerdizoun/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871003/sunolika-38-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-se-poies-periohes-tha-ishusei-code-red-to-savvato/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871002/sunelifthisan-tria-atoma-gia-apati-se-varos-88hronou-ston-agio-dimitrio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T18:30:01.559304+00:00"
+      "seen_at_utc": "2026-08-28T18:51:29.825544+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1456342/odyniri-itta-gia-tin-ethniki-mpasket-dyskolepse-i-prokrisi-sto-moyntompasket/",
-      "title": "Οδυνηρή ήττα για την εθνική μπάσκετ – Δυσκόλεψε η πρόκριση στο Μουντομπάσκετ",
-      "normalized_title": "ΟΔΥΝΗΡΗ ΗΤΤΑ ΓΙΑ ΤΗΝ ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ – ΔΥΣΚΟΛΕΨΕ Η ΠΡΟΚΡΙΣΗ ΣΤΟ ΜΟΥΝΤΟΜΠΑΣΚΕΤ",
+      "url": "https://www.efsyn.gr/ellada/1456356/idiotika-panepistimia-nea-adeia-leitoyrgias-horigise-se-dyo-apo-ta-nomika-prosopa-poy-eihe-akyrosei-to-ste/",
+      "title": "Ιδιωτικά Πανεπιστήμια: Νέα άδεια λειτουργίας χορήγησε σε δύο από τα νομικά πρόσωπα που είχε ακυρώσει το ΣτΕ",
+      "normalized_title": "ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΝΕΑ ΑΔΕΙΑ ΛΕΙΤΟΥΡΓΙΑΣ ΧΟΡΗΓΗΣΕ ΣΕ ΔΥΟ ΑΠΟ ΤΑ ΝΟΜΙΚΑ ΠΡΟΣΩΠΑ ΠΟΥ ΕΙΧΕ ΑΚΥΡΩΣΕΙ ΤΟ ΣΤΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1456342/odyniri-itta-gia-tin-ethniki-mpasket-dyskolepse-i-prokrisi-sto-moyntompasket/"
+        "https://www.efsyn.gr/ellada/1456356/idiotika-panepistimia-nea-adeia-leitoyrgias-horigise-se-dyo-apo-ta-nomika-prosopa-poy-eihe-akyrosei-to-ste/"
       ],
-      "seen_at_utc": "2026-08-28T18:30:01.559272+00:00"
+      "seen_at_utc": "2026-08-28T18:51:29.825470+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/oxia-epikindynotita-kai-odigies-prostasias-i-katastasi-tis-ygeias-ton-paidion-pou-dagkothikan-ston-marathona/",
-      "title": "Οχιά: Επικινδυνότητα και οδηγίες προστασίας – Η κατάσταση της υγείας των παιδιών που δαγκώθηκαν στον Μαραθώνα",
-      "normalized_title": "ΟΧΙΑ: ΕΠΙΚΙΝΔΥΝΟΤΗΤΑ ΚΑΙ ΟΔΗΓΙΕΣ ΠΡΟΣΤΑΣΙΑΣ – Η ΚΑΤΑΣΤΑΣΗ ΤΗΣ ΥΓΕΙΑΣ ΤΩΝ ΠΑΙΔΙΩΝ ΠΟΥ ΔΑΓΚΩΘΗΚΑΝ ΣΤΟΝ ΜΑΡΑΘΩΝΑ",
+      "url": "https://www.in.gr/2026/08/28/sports/basketball/ethniki-mpasket-tote-paizei-to-epomeno-mats-me-tin-ispania/",
+      "title": "Εθνική μπάσκετ: Τότε παίζει το επόμενο ματς με την Ισπανία",
+      "normalized_title": "ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ: ΤΟΤΕ ΠΑΙΖΕΙ ΤΟ ΕΠΟΜΕΝΟ ΜΑΤΣ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/oxia-epikindynotita-kai-odigies-prostasias-i-katastasi-tis-ygeias-ton-paidion-pou-dagkothikan-ston-marathona/",
-        "https://www.in.gr/2026/08/28/life/culture-live/o-kris-xansen-enoxlithike-apo-to-primetime-me-ton-rompert-patinson/"
+        "https://www.in.gr/2026/08/28/sports/basketball/ethniki-mpasket-tote-paizei-to-epomeno-mats-me-tin-ispania/",
+        "https://www.in.gr/2026/08/28/greece/enteinontai-oi-psekasmoi-gia-tin-antimetopisi-tou-iou-tou-dytikou-neilou-pote-anamenetai-apoklimakosi-ton-krousmaton/",
+        "https://www.in.gr/matchcenter/5749650/",
+        "https://www.in.gr/2026/08/28/sports/basketball/mono-me-thayma-i-vathmologia-ston-omilo-tis-ethnikis-meta-tin-oukrania/",
+        "https://www.in.gr/2026/08/28/world/motztampa-xamenei-o-anotatos-igetis-tou-iran-apagoreyei-energeies-pou-vlaptoun-tin-koinoniki-synoxi/"
       ],
-      "seen_at_utc": "2026-08-28T18:30:01.559228+00:00"
+      "seen_at_utc": "2026-08-28T18:51:29.825390+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T18:30:01.559386+00:00"
+  "updated_at_utc": "2026-08-28T18:51:29.825633+00:00"
 }
