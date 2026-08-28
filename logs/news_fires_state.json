@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564424690/700-000-amerikanoi-toyristes-sto-7mino/",
-      "title": "700.000 Αμερικανοί τουρίστες στο 7μηνο",
-      "normalized_title": "700.000 ΑΜΕΡΙΚΑΝΟΙ ΤΟΥΡΙΣΤΕΣ ΣΤΟ 7ΜΗΝΟ",
+      "url": "https://www.kathimerini.gr/society/564424336/xana-sti-machi-gia-eyresi-katoikias-oi-ekpaideytikoi/",
+      "title": "Ξανά στη μάχη για εύρεση κατοικίας οι εκπαιδευτικοί",
+      "normalized_title": "ΞΑΝΑ ΣΤΗ ΜΑΧΗ ΓΙΑ ΕΥΡΕΣΗ ΚΑΤΟΙΚΙΑΣ ΟΙ ΕΚΠΑΙΔΕΥΤΙΚΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564424690/700-000-amerikanoi-toyristes-sto-7mino/"
+        "https://www.kathimerini.gr/society/564424336/xana-sti-machi-gia-eyresi-katoikias-oi-ekpaideytikoi/",
+        "https://www.kathimerini.gr/economy/564425065/ti-allazei-me-to-neo-eidiko-chorotaxiko-plaisio-gia-ti-viomichania-13-erotapantiseis/",
+        "https://www.kathimerini.gr/world/564425074/glypta-toy-parthenona-kanei-piso-o-mpernam-ti-apegine-to-steilte-ta-piso-choris-oroys/",
+        "https://www.kathimerini.gr/columns/564425020/to-zesto-chrima-tis-asfaltoy-o-xechasiaris-teiresias-to-teleytaio-tameio-sta-chayteia-kai-neos-rolos-gia-to-ypertameio/"
       ],
-      "seen_at_utc": "2026-08-28T07:30:04.725266+00:00"
+      "seen_at_utc": "2026-08-28T07:51:15.632894+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1870639/kissamos-pige-methusmenos-na-parei-filo-tou-gia-kunigi-kai-telika-ton-purovolise-sta-podia/?utm_source=rss",
-      "title": "Κίσσαμος: Πήγε μεθυσμένος να πάρει φίλο του για κυνήγι και τελικά τον πυροβόλησε στα πόδια",
-      "normalized_title": "ΚΙΣΣΑΜΟΣ: ΠΗΓΕ ΜΕΘΥΣΜΕΝΟΣ ΝΑ ΠΑΡΕΙ ΦΙΛΟ ΤΟΥ ΓΙΑ ΚΥΝΗΓΙ ΚΑΙ ΤΕΛΙΚΑ ΤΟΝ ΠΥΡΟΒΟΛΗΣΕ ΣΤΑ ΠΟΔΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1870652/se-leitourgia-to-neo-ergostasio-tis-violada-sta-trikala/?utm_source=rss",
+      "title": "Σε λειτουργία το νέο εργοστάσιο της Βιολάντα στα Τρίκαλα",
+      "normalized_title": "ΣΕ ΛΕΙΤΟΥΡΓΙΑ ΤΟ ΝΕΟ ΕΡΓΟΣΤΑΣΙΟ ΤΗΣ ΒΙΟΛΑΝΤΑ ΣΤΑ ΤΡΙΚΑΛΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1870639/kissamos-pige-methusmenos-na-parei-filo-tou-gia-kunigi-kai-telika-ton-purovolise-sta-podia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870637/purgos-70hronos-edopistike-nekros-sto-pigadi-tou-spitiou-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1870629/tritokosmikes-katastaseis-autokinita-uparhoun-ohi-omos-pinakides/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1870652/se-leitourgia-to-neo-ergostasio-tis-violada-sta-trikala/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870649/megali-epiheirisi-gia-22hroni-touristria-sto-pilio-kalese-to-112-kai-diasothike-apo-to-simeio-pou-ekane-pezoporia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1870645/duo-neoi-graptoi-diagonismoi-asep-gia-proslipseis-kai-theseis-euthunis-sto-dimosio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T07:16:58.330387+00:00"
+      "seen_at_utc": "2026-08-28T07:51:15.633013+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1455858/kai-i-elas-stirizei-akrita-einai-enas-para-poly-axiologos-anthropos/",
-      "title": "Και η ΕΛΑΣ στηρίζει Ακρίτα: «Είναι ένας πάρα πολύ αξιόλογος άνθρωπος»",
-      "normalized_title": "ΚΑΙ Η ΕΛΑΣ ΣΤΗΡΙΖΕΙ ΑΚΡΙΤΑ: «ΕΙΝΑΙ ΕΝΑΣ ΠΑΡΑ ΠΟΛΥ ΑΞΙΟΛΟΓΟΣ ΑΝΘΡΩΠΟΣ»",
+      "url": "https://www.efsyn.gr/life/1455866/rompert-nte-niro-gia-patrotita-den-glitoneis-apo-tis-enohes-otan-leipeis-os-pateras/",
+      "title": "Ρόμπερτ Ντε Νίρο για πατρότητα: «Δεν γλιτώνεις από τις ενοχές όταν λείπεις ως πατέρας»",
+      "normalized_title": "ΡΟΜΠΕΡΤ ΝΤΕ ΝΙΡΟ ΓΙΑ ΠΑΤΡΟΤΗΤΑ: «ΔΕΝ ΓΛΙΤΩΝΕΙΣ ΑΠΟ ΤΙΣ ΕΝΟΧΕΣ ΟΤΑΝ ΛΕΙΠΕΙΣ ΩΣ ΠΑΤΕΡΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1455858/kai-i-elas-stirizei-akrita-einai-enas-para-poly-axiologos-anthropos/",
-        "https://www.efsyn.gr/kosmos/1455842/ratko-mlantits-ta-frikta-egklimata-toy-hasapi-tis-vosnias-apo-tin-poliorkia-toy-saragevo-sti-sermprenitsa/"
+        "https://www.efsyn.gr/life/1455866/rompert-nte-niro-gia-patrotita-den-glitoneis-apo-tis-enohes-otan-leipeis-os-pateras/",
+        "https://www.efsyn.gr/stiles/1455871/otan-o-mpil-gkeits-anisyhei-gia-tin-ai/",
+        "https://www.efsyn.gr/stiles/1455868/ora-na-kanei-o-laos-tis-dikes-toy-exaggelies/",
+        "https://www.efsyn.gr/media/1455862/press-point-anagkastika-to-maximoy-katafeygei-stis-stimenes-dimoskopiseis/",
+        "https://www.efsyn.gr/politiki/1455857/apantisi-ypoik-se-pasok-gia-to-idiotiko-hreos-neo-shedio-me-palies-syntages/"
       ],
-      "seen_at_utc": "2026-08-28T07:30:04.725393+00:00"
+      "seen_at_utc": "2026-08-28T07:51:15.632992+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/greece/therines-ekptoseis-antistrofi-metrisi-gia-ti-liksi-tous-mexri-pote-isxyoun-oi-meiomenes-times/",
-      "title": "Αντίστροφη μέτρηση για τη λήξη των θερινών εκπτώσεων - Μέχρι πότε ισχύουν οι μειωμένες τιμές",
-      "normalized_title": "ΑΝΤΙΣΤΡΟΦΗ ΜΕΤΡΗΣΗ ΓΙΑ ΤΗ ΛΗΞΗ ΤΩΝ ΘΕΡΙΝΩΝ ΕΚΠΤΩΣΕΩΝ - ΜΕΧΡΙ ΠΟΤΕ ΙΣΧΥΟΥΝ ΟΙ ΜΕΙΩΜΕΝΕΣ ΤΙΜΕΣ",
+      "url": "https://www.in.gr/2026/08/28/greece/pyrgos-ilikiomenos-evale-telos-sti-zoi-tou-mesa-se-pigadi/",
+      "title": "Τραγωδία: Ηλικιωμένος έβαλε τέλος στη ζωή του μέσα σε πηγάδι",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ: ΗΛΙΚΙΩΜΕΝΟΣ ΕΒΑΛΕ ΤΕΛΟΣ ΣΤΗ ΖΩΗ ΤΟΥ ΜΕΣΑ ΣΕ ΠΗΓΑΔΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/greece/therines-ekptoseis-antistrofi-metrisi-gia-ti-liksi-tous-mexri-pote-isxyoun-oi-meiomenes-times/",
-        "https://www.in.gr/2026/08/28/world/nepal-yperxeilise-limni-pou-dimiourgithike-meta-ti-foniki-katolisthisi-anestalisan-oi-epixeiriseis-diasosis/",
-        "https://www.in.gr/2026/08/28/in-science/ai/i-anthropic-dikaiothike-stin-kontra-me-ton-tramp-vgainei-apo-ti-mayri-lista/"
+        "https://www.in.gr/2026/08/28/greece/pyrgos-ilikiomenos-evale-telos-sti-zoi-tou-mesa-se-pigadi/",
+        "https://www.in.gr/2026/08/28/politics/katepeigousa-erotisi-eyrovouleyton-tou-kke-gia-tis-elleipseis-ekpaideytikon/",
+        "https://www.in.gr/2026/08/28/sports/football/oi-athlitikes-metadoseis-tis-imeras-28-8-drasi-me-kliroseis-sto-podosfairo-kai-ethniki-mpasket/"
       ],
-      "seen_at_utc": "2026-08-28T07:30:04.725348+00:00"
+      "seen_at_utc": "2026-08-28T07:51:15.632943+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T07:30:04.725469+00:00"
+  "updated_at_utc": "2026-08-28T07:51:15.633095+00:00"
 }
