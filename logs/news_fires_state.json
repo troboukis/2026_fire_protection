@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564415696/poiimata-stin-kolasi-toy-glossikoy-kramatos/",
-      "title": "Ποιήματα στην κόλαση του γλωσσικού κράματος",
-      "normalized_title": "ΠΟΙΗΜΑΤΑ ΣΤΗΝ ΚΟΛΑΣΗ ΤΟΥ ΓΛΩΣΣΙΚΟΥ ΚΡΑΜΑΤΟΣ",
+      "url": "https://www.kathimerini.gr/culture/564424513/ta-gkrafiti-istoroyn-ti-thessaloniki/",
+      "title": "Τα γκραφίτι ιστορούν τη Θεσσαλονίκη",
+      "normalized_title": "ΤΑ ΓΚΡΑΦΙΤΙ ΙΣΤΟΡΟΥΝ ΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564415696/poiimata-stin-kolasi-toy-glossikoy-kramatos/",
-        "https://www.kathimerini.gr/istoria/564414793/dimotikes-ekloges-1986-oi-kalpes-poy-proaniggeilan-tin-anatropi/"
+        "https://www.kathimerini.gr/culture/564424513/ta-gkrafiti-istoroyn-ti-thessaloniki/",
+        "https://www.kathimerini.gr/society/564426754/oi-dialogoi-tis-speiras-narkotikon-me-ton-psychologo-kai-tin-tragoydistria/",
+        "https://www.kathimerini.gr/economy/international/564424810/i-ora-tis-krisis-gia-tin-oyasigkton-tha-erthei/",
+        "https://www.kathimerini.gr/world/564426769/ketseli-kamia-synepeia-gia-tin-toyrkia-apo-to-eidiko-chorotaxiko-plaisio-tis-elladas/",
+        "https://www.kathimerini.gr/economy/564426760/o-chartis-ton-pliromon-apo-ton-e-efka-kai-ti-dypa-eos-tis-4-septemvrioy/",
+        "https://www.kathimerini.gr/politics/parties/564424282/desmi-protaseon-apo-to-pasok-gia-to-idiotiko-chreos/"
       ],
-      "seen_at_utc": "2026-08-28T19:51:19.509411+00:00"
+      "seen_at_utc": "2026-08-28T20:17:12.926467+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1264,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871003/sunolika-38-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-se-poies-periohes-tha-ishusei-code-red-to-savvato/?utm_source=rss",
-      "title": "Συνολικά 38 αγροτοδασικές πυρκαγιές το τελευταίο 24ωρο στην Ελλάδα, σε ποιες περιοχές θα ισχύσει Code Red το Σάββατο",
-      "normalized_title": "ΣΥΝΟΛΙΚΑ 38 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ ΣΤΗΝ ΕΛΛΑΔΑ, ΣΕ ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΙΣΧΥΣΕΙ CODE RED ΤΟ ΣΑΒΒΑΤΟ",
+      "url": "https://www.protothema.gr/greece/article/1871019/skulos-ormixe-kai-katasparaxe-12hrono-sto-irakleio-me-pollapla-traumata-to-paidi-sunelifthi-i-28hroni/?utm_source=rss",
+      "title": "Σκύλος όρμηξε και κατασπάραξε 12χρονο στο Ηράκλειο, με πολλαπλά τραύματα το παιδί - Συνελήφθη 28χρονη που είχε βγάλει βόλτα το ζώο",
+      "normalized_title": "ΣΚΥΛΟΣ ΟΡΜΗΞΕ ΚΑΙ ΚΑΤΑΣΠΑΡΑΞΕ 12ΧΡΟΝΟ ΣΤΟ ΗΡΑΚΛΕΙΟ, ΜΕ ΠΟΛΛΑΠΛΑ ΤΡΑΥΜΑΤΑ ΤΟ ΠΑΙΔΙ - ΣΥΝΕΛΗΦΘΗ 28ΧΡΟΝΗ ΠΟΥ ΕΙΧΕ ΒΓΑΛΕΙ ΒΟΛΤΑ ΤΟ ΖΩΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871003/sunolika-38-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-se-poies-periohes-tha-ishusei-code-red-to-savvato/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871002/sunelifthisan-tria-atoma-gia-apati-se-varos-88hronou-ston-agio-dimitrio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871019/skulos-ormixe-kai-katasparaxe-12hrono-sto-irakleio-me-pollapla-traumata-to-paidi-sunelifthi-i-28hroni/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-28T18:51:29.825544+00:00"
+      "seen_at_utc": "2026-08-28T20:17:12.926592+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456332/hios-timitiki-diakrisi-ston-dimitri-melissanidi-gia-tin-prosfora-toy-ston-pontiako-ellinismo-kai-tin-orthodoxia/",
-      "title": "Χίος: Τιμητική διάκριση στον Δημήτρη Μελισσανίδη για την προσφορά του στον Ποντιακό Ελληνισμό και την Ορθοδοξία",
-      "normalized_title": "ΧΙΟΣ: ΤΙΜΗΤΙΚΗ ΔΙΑΚΡΙΣΗ ΣΤΟΝ ΔΗΜΗΤΡΗ ΜΕΛΙΣΣΑΝΙΔΗ ΓΙΑ ΤΗΝ ΠΡΟΣΦΟΡΑ ΤΟΥ ΣΤΟΝ ΠΟΝΤΙΑΚΟ ΕΛΛΗΝΙΣΜΟ ΚΑΙ ΤΗΝ ΟΡΘΟΔΟΞΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1456369/elyses-to-provlima-tis-zois-soy-oi-kynikoi-dialogoi-diakiniti-kai-psyhologoy-gia-to-delivery-ton-narkotikon-vinteo/",
+      "title": "«Έλυσες το πρόβλημα της ζωής σου»: Οι κυνικοί διάλογοι διακινητή και ψυχολόγου για το delivery των ναρκωτικών [βίντεο]",
+      "normalized_title": "«ΕΛΥΣΕΣ ΤΟ ΠΡΟΒΛΗΜΑ ΤΗΣ ΖΩΗΣ ΣΟΥ»: ΟΙ ΚΥΝΙΚΟΙ ΔΙΑΛΟΓΟΙ ΔΙΑΚΙΝΗΤΗ ΚΑΙ ΨΥΧΟΛΟΓΟΥ ΓΙΑ ΤΟ DELIVERY ΤΩΝ ΝΑΡΚΩΤΙΚΩΝ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456332/hios-timitiki-diakrisi-ston-dimitri-melissanidi-gia-tin-prosfora-toy-ston-pontiako-ellinismo-kai-tin-orthodoxia/",
-        "https://www.efsyn.gr/kosmos/1456362/ipa-proto-htypima-meta-tis-nees-kyroseis-sto-iran-ektos-hrimatopistotikoy-systimatos-thygatriki-aigyptiakis-trapezas/"
+        "https://www.efsyn.gr/ellada/1456369/elyses-to-provlima-tis-zois-soy-oi-kynikoi-dialogoi-diakiniti-kai-psyhologoy-gia-to-delivery-ton-narkotikon-vinteo/",
+        "https://www.efsyn.gr/oikonomia/1456372/ypoyrgeio-ergasias-o-hartis-ton-pliromon-apo-ton-e-efka-kai-ti-dypa-eos-tis-4-septemvrioy/"
       ],
-      "seen_at_utc": "2026-08-28T19:51:19.509531+00:00"
+      "seen_at_utc": "2026-08-28T20:17:12.926568+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/economy/diethnis-oikonomia/se-enan-kosmo-xoris-kanones-o-monodromos-tis-eyropis-gia-na-apofygei-ti-viomixaniki-syntrivi/",
-      "title": "Σε έναν κόσμο χωρίς κανόνες: Ο μονόδρομος της Ευρώπης για να αποφύγει τη βιομηχανική συντριβή",
-      "normalized_title": "ΣΕ ΕΝΑΝ ΚΟΣΜΟ ΧΩΡΙΣ ΚΑΝΟΝΕΣ: Ο ΜΟΝΟΔΡΟΜΟΣ ΤΗΣ ΕΥΡΩΠΗΣ ΓΙΑ ΝΑ ΑΠΟΦΥΓΕΙ ΤΗ ΒΙΟΜΗΧΑΝΙΚΗ ΣΥΝΤΡΙΒΗ",
+      "url": "https://www.in.gr/2026/08/28/greece/speira-eixe-rimaksei-katoikies-stin-attiki-edinan-ta-klopimaia-se-enexyrodaneistirio-synelifthi-23xroni/",
+      "title": "Σπείρα είχε ρημάξει κατοικίες στην Αττική – Έδιναν τα κλοπιμαία σε ενεχυροδανειστήριο – Συνελήφθη 23χρονη",
+      "normalized_title": "ΣΠΕΙΡΑ ΕΙΧΕ ΡΗΜΑΞΕΙ ΚΑΤΟΙΚΙΕΣ ΣΤΗΝ ΑΤΤΙΚΗ – ΕΔΙΝΑΝ ΤΑ ΚΛΟΠΙΜΑΙΑ ΣΕ ΕΝΕΧΥΡΟΔΑΝΕΙΣΤΗΡΙΟ – ΣΥΝΕΛΗΦΘΗ 23ΧΡΟΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/economy/diethnis-oikonomia/se-enan-kosmo-xoris-kanones-o-monodromos-tis-eyropis-gia-na-apofygei-ti-viomixaniki-syntrivi/",
-        "https://www.in.gr/2026/08/28/sports/football/posa-pairnoun-oi-eksi-akrivopliromenoi-paiktes-tis-mpagern-kai-i-filodoksia-gia-ton-olise/",
-        "https://www.in.gr/2026/08/28/economy/institouto-bruegel-oi-amerikanoi-texno-disekatommyriouxoi-theloun-to-kalo-mas/"
+        "https://www.in.gr/2026/08/28/greece/speira-eixe-rimaksei-katoikies-stin-attiki-edinan-ta-klopimaia-se-enexyrodaneistirio-synelifthi-23xroni/"
       ],
-      "seen_at_utc": "2026-08-28T19:51:19.509473+00:00"
+      "seen_at_utc": "2026-08-28T20:17:12.926512+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T19:51:19.509617+00:00"
+  "updated_at_utc": "2026-08-28T20:17:12.926652+00:00"
 }
