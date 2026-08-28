@@ -1,24 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564425404/exafanisi-ispanoy-epicheirimatia-telos-stin-ereyna-gia-ton-entopismo-toy-vazei-i-italia/",
-      "title": "Εξαφάνιση Ισπανού επιχειρηματία: Τέλος στην έρευνα για τον εντοπισμό του βάζει η Ιταλία",
-      "normalized_title": "ΕΞΑΦΑΝΙΣΗ ΙΣΠΑΝΟΥ ΕΠΙΧΕΙΡΗΜΑΤΙΑ: ΤΕΛΟΣ ΣΤΗΝ ΕΡΕΥΝΑ ΓΙΑ ΤΟΝ ΕΝΤΟΠΙΣΜΟ ΤΟΥ ΒΑΖΕΙ Η ΙΤΑΛΙΑ",
+      "url": "https://www.kathimerini.gr/society/564425425/kairos-agrieyei-to-meltemi-ripes-eos-120-chlm-tin-ora-poies-perioches-tha-chtypisei/",
+      "title": "Καιρός: «Αγριεύει» το μελτέμι – Ριπές έως 120 χλμ. την ώρα, ποιες περιοχές θα χτυπήσει",
+      "normalized_title": "ΚΑΙΡΟΣ: «ΑΓΡΙΕΥΕΙ» ΤΟ ΜΕΛΤΕΜΙ – ΡΙΠΕΣ ΕΩΣ 120 ΧΛΜ. ΤΗΝ ΩΡΑ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΧΤΥΠΗΣΕΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564425404/exafanisi-ispanoy-epicheirimatia-telos-stin-ereyna-gia-ton-entopismo-toy-vazei-i-italia/",
-        "https://www.kathimerini.gr/world/564425401/sto-steit-ntipartment-o-elpidoforos-sto-epikentro-i-chalki-kai-i-prostasia-christianon-sti-mesi-anatoli/",
-        "https://www.kathimerini.gr/world/564425332/minyma-aragtsi-stis-ipa-gia-epanenarxi-tis-diplomatias-meta-tis-nees-kyroseis/",
-        "https://www.kathimerini.gr/opinion/564424210/apallotriosi-sta-tyfla/",
-        "https://www.kathimerini.gr/k/gastronomos/564423964/mpriam-me-syntagi-tis-eyis-voytsina/",
-        "https://www.kathimerini.gr/opinion/564424633/to-rebranding-kasidiari/",
-        "https://www.kathimerini.gr/k/sunday-edition/564425347/ti-mporoyn-na-mas-mathoyn-oi-petaloydes-sto-periodiko-k-tin-kyriaki-30-8-me-tin-kathimerini/",
-        "https://www.kathimerini.gr/opinion/564424630/mark-zoykermpergk-omiria/",
-        "https://www.kathimerini.gr/opinion/564424204/i-zoi-se-kathestos-klimatikis-krisis/",
-        "https://www.kathimerini.gr/world/564425341/oygkanta-pethane-o-vasilias-ogio-nimpa-se-ilikia-34-eton-eiche-stefthei-molis-3-eton/",
-        "https://www.kathimerini.gr/opinion/564424474/siopilos-martys-i-monaxia-toys/",
-        "https://www.kathimerini.gr/k/sunday-edition/564425338/o-pol-meskal-kai-i-istoria-toy-ichoy-sto-periodiko-k-tin-kyriaki-30-8-me-tin-kathimerini/"
+        "https://www.kathimerini.gr/society/564425425/kairos-agrieyei-to-meltemi-ripes-eos-120-chlm-tin-ora-poies-perioches-tha-chtypisei/"
       ],
-      "seen_at_utc": "2026-08-28T10:17:08.781456+00:00"
+      "seen_at_utc": "2026-08-28T10:29:59.302632+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1280,34 +1269,23 @@
       "seen_at_utc": "2026-08-28T10:17:08.781577+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1456013/apodeixi-anaxiopistias/",
-      "title": "Απόδειξη αναξιοπιστίας",
-      "normalized_title": "ΑΠΟΔΕΙΞΗ ΑΝΑΞΙΟΠΙΣΤΙΑΣ",
+      "url": "https://www.efsyn.gr/politiki/1456032/syriza-gia-marinaki-sykofantika-pseydi-kata-tis-elenas-akrita/",
+      "title": "ΣΥΡΙΖΑ για Μαρινάκη: Συκοφαντικά ψεύδη κατά της Έλενας Ακρίτα",
+      "normalized_title": "ΣΥΡΙΖΑ ΓΙΑ ΜΑΡΙΝΑΚΗ: ΣΥΚΟΦΑΝΤΙΚΑ ΨΕΥΔΗ ΚΑΤΑ ΤΗΣ ΕΛΕΝΑΣ ΑΚΡΙΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1456013/apodeixi-anaxiopistias/",
-        "https://www.efsyn.gr/politiki/1455981/live-i-eisigisi-toy-alexi-tsipra-sti-synedriasi-ton-tomearhon-tis-elas/",
-        "https://www.efsyn.gr/politiki/1455996/tsoykalas-i-protofanis-anadianomi-akinitis-perioysias-kai-o-afellinismos-tis-ehei-tin-sfragida-mitsotaki/",
-        "https://www.efsyn.gr/politiki/1455982/kalesma-koytsoympa-sti-deth-den-perimenoyme-sotires-oyte-exaggelies-kanoyme-ti-diki-mas-exaggelia/",
-        "https://www.efsyn.gr/politiki/1456003/farantoyris-to-pasok-den-distazei-na-ta-valei-me-ishyra-symferonta/",
-        "https://www.efsyn.gr/politiki/1455991/akrita-kata-marinaki-perimeno-na-anaskeyasei-to-sykofantiko-toy-pseydos-diaforetika-tha-kinitho-nomika/"
+        "https://www.efsyn.gr/politiki/1456032/syriza-gia-marinaki-sykofantika-pseydi-kata-tis-elenas-akrita/"
       ],
-      "seen_at_utc": "2026-08-28T10:17:08.781544+00:00"
+      "seen_at_utc": "2026-08-28T10:29:59.302745+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/life/music/to-doro-tis-ntoli-parton-stous-thaymastes-tis-to-teleytaio-tis-tragoudi-tha-kykloforisei-se-20-xronia/",
-      "title": "Το δώρο της Ντόλι Πάρτον στους θαυμαστές της: Το τελευταίο της τραγούδι θα κυκλοφορήσει σε 20 χρόνια",
-      "normalized_title": "ΤΟ ΔΩΡΟ ΤΗΣ ΝΤΟΛΙ ΠΑΡΤΟΝ ΣΤΟΥΣ ΘΑΥΜΑΣΤΕΣ ΤΗΣ: ΤΟ ΤΕΛΕΥΤΑΙΟ ΤΗΣ ΤΡΑΓΟΥΔΙ ΘΑ ΚΥΚΛΟΦΟΡΗΣΕΙ ΣΕ 20 ΧΡΟΝΙΑ",
+      "url": "https://www.in.gr/2026/08/28/politics/aftodioikisi/glyfada-allazei-o-istorikos-stivos-sto-6o-dimotiko-stadio-sti-zerva/",
+      "title": "Γλυφάδα: Αλλάζει ο «ιστορικός» στίβος στο 6ο Δημοτικό Στάδιο, στη Ζέρβα",
+      "normalized_title": "ΓΛΥΦΑΔΑ: ΑΛΛΑΖΕΙ Ο «ΙΣΤΟΡΙΚΟΣ» ΣΤΙΒΟΣ ΣΤΟ 6Ο ΔΗΜΟΤΙΚΟ ΣΤΑΔΙΟ, ΣΤΗ ΖΕΡΒΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/life/music/to-doro-tis-ntoli-parton-stous-thaymastes-tis-to-teleytaio-tis-tragoudi-tha-kykloforisei-se-20-xronia/",
-        "https://www.in.gr/2026/08/28/world/nepal-ksanarxisan-oi-diasoseis-meionetai-o-kindynos-yperxeilisis-limnis-pou-sximatistike-meta-tin-katolisthisi/",
-        "https://www.in.gr/2026/08/28/politics/aftodioikisi/kerkyra-proxoraei-to-neo-kleisto-proponitirio-stis-alykes/",
-        "https://www.in.gr/2026/08/28/politics/politiki-grammateia/aleksis-tsipras-eisigisi-sti-synedriasi-ton-tomearxon-foularoun-oi-mixanes-tis-elas-enopsei-deth/",
-        "https://www.in.gr/2026/08/28/world/aragtsi-yparxei-eykairia-gia-diplomatia-ean-oi-ipa-antilifthoun-oti-den-apodidei-i-piesi/",
-        "https://www.in.gr/2026/08/28/politics/pasok-i-kyvernisi-vaftizei-prostasia-tin-egkataleipsi-ofeileton-anerythriasta-lene-psemata-stous-polites/",
-        "https://www.in.gr/2026/08/28/plus/medianews/koinonia-ora-mega-premiera-ti-deytera-31-aygoustou-sto-mega/"
+        "https://www.in.gr/2026/08/28/politics/aftodioikisi/glyfada-allazei-o-istorikos-stivos-sto-6o-dimotiko-stadio-sti-zerva/"
       ],
-      "seen_at_utc": "2026-08-28T10:17:08.781517+00:00"
+      "seen_at_utc": "2026-08-28T10:29:59.302703+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T10:17:08.781683+00:00"
+  "updated_at_utc": "2026-08-28T10:29:59.302822+00:00"
 }
