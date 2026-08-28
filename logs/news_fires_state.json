@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564413707/mechri-ta-30/",
-      "title": "Μέχρι τα 30",
-      "normalized_title": "ΜΕΧΡΙ ΤΑ 30",
+      "url": "https://www.kathimerini.gr/economy/local/564424681/poroi-5-3-dis-gia-stegasi-energeia-kai-metafores/",
+      "title": "Πόροι 5,3 δισ. για στέγαση, ενέργεια και μεταφορές",
+      "normalized_title": "ΠΟΡΟΙ 5,3 ΔΙΣ. ΓΙΑ ΣΤΕΓΑΣΗ, ΕΝΕΡΓΕΙΑ ΚΑΙ ΜΕΤΑΦΟΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564413707/mechri-ta-30/",
-        "https://www.kathimerini.gr/culture/tv/564425731/to-soi-soy-epistrefei-me-nea-stigmiotypa-apo-ta-gyrismata/",
-        "https://www.kathimerini.gr/economy/564424726/sto-rantar-ependyton-ellinikes-startups-amyntikis-technologias/"
+        "https://www.kathimerini.gr/economy/local/564424681/poroi-5-3-dis-gia-stegasi-energeia-kai-metafores/",
+        "https://www.kathimerini.gr/k/k-magazine/564423940/oloi-agapoyn-tin-keitlin-klark/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564426358/yp-paideias-ek-neoy-oi-adeies-se-dyo-mi-kratika-panepistimia/",
+        "https://www.kathimerini.gr/society/564426733/marathonas-sti-meth-dyo-anilika-meta-apo-dagkoma-ochias/",
+        "https://www.kathimerini.gr/visual/infographics/564424357/klimatiki-krisi-kai-energeia-mpra-nte-fer-ipa-kinas-gia-tin-protia/",
+        "https://www.kathimerini.gr/k/k-magazine/564423934/ti-fovatai-pio-poly-o-sam-altman/"
       ],
-      "seen_at_utc": "2026-08-28T18:51:29.825280+00:00"
+      "seen_at_utc": "2026-08-28T19:17:06.830525+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,27 +1274,25 @@
       "seen_at_utc": "2026-08-28T18:51:29.825544+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456356/idiotika-panepistimia-nea-adeia-leitoyrgias-horigise-se-dyo-apo-ta-nomika-prosopa-poy-eihe-akyrosei-to-ste/",
-      "title": "Ιδιωτικά Πανεπιστήμια: Νέα άδεια λειτουργίας χορήγησε σε δύο από τα νομικά πρόσωπα που είχε ακυρώσει το ΣτΕ",
-      "normalized_title": "ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΝΕΑ ΑΔΕΙΑ ΛΕΙΤΟΥΡΓΙΑΣ ΧΟΡΗΓΗΣΕ ΣΕ ΔΥΟ ΑΠΟ ΤΑ ΝΟΜΙΚΑ ΠΡΟΣΩΠΑ ΠΟΥ ΕΙΧΕ ΑΚΥΡΩΣΕΙ ΤΟ ΣΤΕ",
+      "url": "https://www.efsyn.gr/oikonomia/1456200/i-katarreysi-toy-project-ot-tis-meta-mia-prosorini-anthropini-niki/",
+      "title": "Η κατάρρευση του «Project Ot» της Meta: Μια προσωρινή… ανθρώπινη νίκη",
+      "normalized_title": "Η ΚΑΤΑΡΡΕΥΣΗ ΤΟΥ «PROJECT OT» ΤΗΣ META: ΜΙΑ ΠΡΟΣΩΡΙΝΗ… ΑΝΘΡΩΠΙΝΗ ΝΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456356/idiotika-panepistimia-nea-adeia-leitoyrgias-horigise-se-dyo-apo-ta-nomika-prosopa-poy-eihe-akyrosei-to-ste/"
+        "https://www.efsyn.gr/oikonomia/1456200/i-katarreysi-toy-project-ot-tis-meta-mia-prosorini-anthropini-niki/"
       ],
-      "seen_at_utc": "2026-08-28T18:51:29.825470+00:00"
+      "seen_at_utc": "2026-08-28T19:17:06.830611+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/28/sports/basketball/ethniki-mpasket-tote-paizei-to-epomeno-mats-me-tin-ispania/",
-      "title": "Εθνική μπάσκετ: Τότε παίζει το επόμενο ματς με την Ισπανία",
-      "normalized_title": "ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ: ΤΟΤΕ ΠΑΙΖΕΙ ΤΟ ΕΠΟΜΕΝΟ ΜΑΤΣ ΜΕ ΤΗΝ ΙΣΠΑΝΙΑ",
+      "url": "https://www.in.gr/2026/08/28/sports/basketball/spanoulis-pirame-kakes-apofaseis-kai-mas-pligosan-vid/",
+      "title": "Σπανούλης: «Πήραμε κακές αποφάσεις και μας πλήγωσαν» (vid)",
+      "normalized_title": "ΣΠΑΝΟΥΛΗΣ: «ΠΗΡΑΜΕ ΚΑΚΕΣ ΑΠΟΦΑΣΕΙΣ ΚΑΙ ΜΑΣ ΠΛΗΓΩΣΑΝ» (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/28/sports/basketball/ethniki-mpasket-tote-paizei-to-epomeno-mats-me-tin-ispania/",
-        "https://www.in.gr/2026/08/28/greece/enteinontai-oi-psekasmoi-gia-tin-antimetopisi-tou-iou-tou-dytikou-neilou-pote-anamenetai-apoklimakosi-ton-krousmaton/",
-        "https://www.in.gr/matchcenter/5749650/",
-        "https://www.in.gr/2026/08/28/sports/basketball/mono-me-thayma-i-vathmologia-ston-omilo-tis-ethnikis-meta-tin-oukrania/",
-        "https://www.in.gr/2026/08/28/world/motztampa-xamenei-o-anotatos-igetis-tou-iran-apagoreyei-energeies-pou-vlaptoun-tin-koinoniki-synoxi/"
+        "https://www.in.gr/2026/08/28/sports/basketball/spanoulis-pirame-kakes-apofaseis-kai-mas-pligosan-vid/",
+        "https://www.in.gr/2026/08/28/greece/panselinos-aygoustou-yperoxo-to-feggari-tou-oksyrrygxou-mageytikes-eikones-apo-athina-thessaloniki-nayplio/",
+        "https://www.in.gr/2026/08/28/greece/idiotika-panepistimia-to-ypourgeio-paideias-edose-ek-neou-adeia-se-idrymata-pou-ekopse-to-ste/"
       ],
-      "seen_at_utc": "2026-08-28T18:51:29.825390+00:00"
+      "seen_at_utc": "2026-08-28T19:17:06.830573+00:00"
     }
   },
-  "updated_at_utc": "2026-08-28T18:51:29.825633+00:00"
+  "updated_at_utc": "2026-08-28T19:17:06.830690+00:00"
 }
