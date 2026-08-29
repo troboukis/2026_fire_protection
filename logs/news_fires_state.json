@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564426169/choris-antikrisma-oi-yposcheseis-tramp-stin-toyrkia-gia-f-35/",
-      "title": "Χωρίς αντίκρισμα οι υποσχέσεις Τραμπ στην Τουρκία για F-35",
-      "normalized_title": "ΧΩΡΙΣ ΑΝΤΙΚΡΙΣΜΑ ΟΙ ΥΠΟΣΧΕΣΕΙΣ ΤΡΑΜΠ ΣΤΗΝ ΤΟΥΡΚΙΑ ΓΙΑ F-35",
+      "url": "https://www.kathimerini.gr/society/564427816/nekros-vrethike-48chronos-anaisthisiologos-sto-nosokomeio-mesologgioy/",
+      "title": "Νεκρός βρέθηκε 48χρονος αναισθησιολόγος στο νοσοκομείο Μεσολογγίου",
+      "normalized_title": "ΝΕΚΡΟΣ ΒΡΕΘΗΚΕ 48ΧΡΟΝΟΣ ΑΝΑΙΣΘΗΣΙΟΛΟΓΟΣ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΜΕΣΟΛΟΓΓΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564426169/choris-antikrisma-oi-yposcheseis-tramp-stin-toyrkia-gia-f-35/",
-        "https://www.kathimerini.gr/society/564427774/ypo-elegcho-i-pyrkagia-se-ktirio-sto-kentro-tis-athinas-kanonika-i-kykloforia/"
+        "https://www.kathimerini.gr/society/564427816/nekros-vrethike-48chronos-anaisthisiologos-sto-nosokomeio-mesologgioy/",
+        "https://www.kathimerini.gr/world/564427801/synantisi-erntogan-kai-poytin-tin-1i-septemvrioy-sto-kirgistan-poy-tha-estiasoyn-oi-synomilies/"
       ],
-      "seen_at_utc": "2026-08-29T08:51:14.375389+00:00"
+      "seen_at_utc": "2026-08-29T09:16:59.953103+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,13 +1260,14 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871122/duo-hronia-fulakisi-horis-anastoli-gia-andra-pou-htupise-tin-eguo-sudrofo-tou-sti-larisa/?utm_source=rss",
-      "title": "Δύο χρόνια φυλάκιση χωρίς αναστολή για άνδρα που χτύπησε την έγκυο σύντροφό του στη Λάρισα",
-      "normalized_title": "ΔΥΟ ΧΡΟΝΙΑ ΦΥΛΑΚΙΣΗ ΧΩΡΙΣ ΑΝΑΣΤΟΛΗ ΓΙΑ ΑΝΔΡΑ ΠΟΥ ΧΤΥΠΗΣΕ ΤΗΝ ΕΓΚΥΟ ΣΥΝΤΡΟΦΟ ΤΟΥ ΣΤΗ ΛΑΡΙΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1871133/evros-sullipsi-allodapou-diakiniti-pou-metefere-exi-mi-nomimous-metanastes/?utm_source=rss",
+      "title": "Έβρος: Σύλληψη αλλοδαπού διακινητή που μετέφερε έξι μη νόμιμους μετανάστες",
+      "normalized_title": "ΕΒΡΟΣ: ΣΥΛΛΗΨΗ ΑΛΛΟΔΑΠΟΥ ΔΙΑΚΙΝΗΤΗ ΠΟΥ ΜΕΤΕΦΕΡΕ ΕΞΙ ΜΗ ΝΟΜΙΜΟΥΣ ΜΕΤΑΝΑΣΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871122/duo-hronia-fulakisi-horis-anastoli-gia-andra-pou-htupise-tin-eguo-sudrofo-tou-sti-larisa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871133/evros-sullipsi-allodapou-diakiniti-pou-metefere-exi-mi-nomimous-metanastes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871125/anaviose-kai-fetos-ston-agio-georgio-nileias-to-ethimo-tis-paradosiakis-favas-apo-koukia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T08:29:57.591095+00:00"
+      "seen_at_utc": "2026-08-29T09:16:59.953193+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/ellada/1456509/idiotika-panepistimia-o-panos-lazaratos-katigorei-to-ypoyrgeio-paideias-gia-paranomies/",
@@ -1279,15 +1280,18 @@
       "seen_at_utc": "2026-08-29T08:51:14.375473+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/basketball/ypoklisi-ataman-se-osman-einai-o-koryfaios-stin-eyropi/",
-      "title": "Υπόκλιση Αταμάν σε Οσμάν: «Είναι ο κορυφαίος στην Ευρώπη»",
-      "normalized_title": "ΥΠΟΚΛΙΣΗ ΑΤΑΜΑΝ ΣΕ ΟΣΜΑΝ: «ΕΙΝΑΙ Ο ΚΟΡΥΦΑΙΟΣ ΣΤΗΝ ΕΥΡΩΠΗ»",
+      "url": "https://www.in.gr/2026/08/29/sports/football/superbet-kypello-elladas-oi-diaitites-tis-premieras-tis-league-phase/",
+      "title": "Superbet Κύπελλο Ελλάδας: Οι διαιτητές της πρεμιέρας της League Phase",
+      "normalized_title": "SUPERBET ΚΥΠΕΛΛΟ ΕΛΛΑΔΑΣ: ΟΙ ΔΙΑΙΤΗΤΕΣ ΤΗΣ ΠΡΕΜΙΕΡΑΣ ΤΗΣ LEAGUE PHASE",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/basketball/ypoklisi-ataman-se-osman-einai-o-koryfaios-stin-eyropi/",
-        "https://www.in.gr/2026/08/29/economy/oikonomikes-eidiseis/aade-myagro-aplousteyseis-stin-ypovoli-tis-eniaias-aitisis-enisxysis/"
+        "https://www.in.gr/2026/08/29/sports/football/superbet-kypello-elladas-oi-diaitites-tis-premieras-tis-league-phase/",
+        "https://www.in.gr/2026/08/29/world/nepal-doryforikes-eikones-prin-kai-meta-ti-vivliki-katastrofi-neos-synagermos-logo-vroxoptoseon/",
+        "https://www.in.gr/2026/08/29/greece/i-anartisi-kolyda-gia-tis-allages-stin-prognosi-kairou-apo-tin-emy/",
+        "https://www.in.gr/2026/08/29/go-fun/fizz/miss-usa-mitera-2-paidion-apo-tin-virtzinia-i-nikitria/",
+        "https://www.in.gr/2026/08/29/world/tramp-xeiristis-tou-otokiou-xrisimopoiouse-tis-omilies-tou-gia-na-kerdizei-se-stoiximata/"
       ],
-      "seen_at_utc": "2026-08-29T08:51:14.375443+00:00"
+      "seen_at_utc": "2026-08-29T09:16:59.953149+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T08:51:14.375549+00:00"
+  "updated_at_utc": "2026-08-29T09:16:59.953264+00:00"
 }
