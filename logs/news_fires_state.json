@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/sunday-edition/564427930/diavaste-stin-kathimerini-tis-kyriakis-454/",
-      "title": "Διαβάστε στην «Καθημερινή της Κυριακής»",
-      "normalized_title": "ΔΙΑΒΑΣΤΕ ΣΤΗΝ «ΚΑΘΗΜΕΡΙΝΗ ΤΗΣ ΚΥΡΙΑΚΗΣ»",
+      "url": "https://www.kathimerini.gr/society/564428116/kozani-synelifthisan-enas-18chronos-kai-enas-anilikos-gia-apates-me-ti-methodo-tis-apascholisis/",
+      "title": "Κοζάνη: Συνελήφθησαν ένας 18χρονος και ένας ανήλικος για απάτες με τη μέθοδο της απασχόλησης",
+      "normalized_title": "ΚΟΖΑΝΗ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΕΝΑΣ 18ΧΡΟΝΟΣ ΚΑΙ ΕΝΑΣ ΑΝΗΛΙΚΟΣ ΓΙΑ ΑΠΑΤΕΣ ΜΕ ΤΗ ΜΕΘΟΔΟ ΤΗΣ ΑΠΑΣΧΟΛΗΣΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/sunday-edition/564427930/diavaste-stin-kathimerini-tis-kyriakis-454/"
+        "https://www.kathimerini.gr/society/564428116/kozani-synelifthisan-enas-18chronos-kai-enas-anilikos-gia-apates-me-ti-methodo-tis-apascholisis/",
+        "https://www.kathimerini.gr/society/564428104/poly-ypsilos-kindynos-pyrkagias-ayrio-poies-perioches-tithentai-se-red-code/"
       ],
-      "seen_at_utc": "2026-08-29T12:29:55.492805+00:00"
+      "seen_at_utc": "2026-08-29T12:51:43.608278+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871183/agios-padeleimonas-pigan-na-exapatisoun-99hroni-kai-sunelifthisan-ep-autoforo/?utm_source=rss",
-      "title": "Άγιος Παντελεήμονας: Πήγαν να εξαπατήσουν 99χρονη και συνελήφθησαν επ’ αυτοφώρω",
-      "normalized_title": "ΑΓΙΟΣ ΠΑΝΤΕΛΕΗΜΟΝΑΣ: ΠΗΓΑΝ ΝΑ ΕΞΑΠΑΤΗΣΟΥΝ 99ΧΡΟΝΗ ΚΑΙ ΣΥΝΕΛΗΦΘΗΣΑΝ ΕΠ’ ΑΥΤΟΦΩΡΩ",
+      "url": "https://www.protothema.gr/greece/article/1871193/seismos-4-rihter-se-thalassia-periohi-dutika-tis-halkis/?utm_source=rss",
+      "title": "Σεισμός 4 Ρίχτερ σε θαλάσσια περιοχή δυτικά της Χάλκης",
+      "normalized_title": "ΣΕΙΣΜΟΣ 4 ΡΙΧΤΕΡ ΣΕ ΘΑΛΑΣΣΙΑ ΠΕΡΙΟΧΗ ΔΥΤΙΚΑ ΤΗΣ ΧΑΛΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871183/agios-padeleimonas-pigan-na-exapatisoun-99hroni-kai-sunelifthisan-ep-autoforo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871179/fotia-tora-se-apothikeutiko-horo-exo-apo-purinelaiourgeiosto-kedri-ierapteras/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871193/seismos-4-rihter-se-thalassia-periohi-dutika-tis-halkis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871189/se-klima-vathias-odunis-to-teleutaio-adio-tis-18hronis-pou-pnigike-stous-katarraktes-dermata-sti-veroia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871188/polu-upsilos-kindunos-purkagias-aurio-se-kriti-kai-nisia-voreiou-kai-notiou-aigaiou-poies-periohes-tha-einai-se-red-code/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T12:17:08.722762+00:00"
+      "seen_at_utc": "2026-08-29T12:51:43.608384+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456592/koini-anakoinosi-parastatidi-katsika-adeies-idiotikon-panepistimion-i-paraggelia-exetelesthi/",
-      "title": "Κοινή ανακοίνωση Παραστατίδη – Κάτσικα: «Άδειες ιδιωτικών πανεπιστημίων – Η παραγγελιά εξετελέσθη»",
-      "normalized_title": "ΚΟΙΝΗ ΑΝΑΚΟΙΝΩΣΗ ΠΑΡΑΣΤΑΤΙΔΗ – ΚΑΤΣΙΚΑ: «ΑΔΕΙΕΣ ΙΔΙΩΤΙΚΩΝ ΠΑΝΕΠΙΣΤΗΜΙΩΝ – Η ΠΑΡΑΓΓΕΛΙΑ ΕΞΕΤΕΛΕΣΘΗ»",
+      "url": "https://www.efsyn.gr/stiles/1456438/oi-argyres-arenes-tis-trelas-mas/",
+      "title": "Οι αργυρές αρένες της τρέλας μας",
+      "normalized_title": "ΟΙ ΑΡΓΥΡΕΣ ΑΡΕΝΕΣ ΤΗΣ ΤΡΕΛΑΣ ΜΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456592/koini-anakoinosi-parastatidi-katsika-adeies-idiotikon-panepistimion-i-paraggelia-exetelesthi/"
+        "https://www.efsyn.gr/stiles/1456438/oi-argyres-arenes-tis-trelas-mas/",
+        "https://www.efsyn.gr/stiles/1456416/ti-tha-kanoyme-horis-ton-netaniahoy/",
+        "https://www.efsyn.gr/stiles/1456436/apostaseis-asfaleias/",
+        "https://www.efsyn.gr/stiles/1456428/o-tsoykalas-i-koinoniologia-kai-mia-parakatathiki-gia-toys-neoys/",
+        "https://www.efsyn.gr/ellada/1456594/poly-ypsilos-kindynos-pyrkagias-tin-kyriaki-poies-periohes-mpainoyn-se-red-code/",
+        "https://www.efsyn.gr/life/1456597/i-olga-kefalogianni-fotografithike-mesa-sta-iliotropia-eikona/"
       ],
-      "seen_at_utc": "2026-08-29T12:29:55.492925+00:00"
+      "seen_at_utc": "2026-08-29T12:51:43.608357+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/economy/oikonomikes-eidiseis/spane-ola-ta-rekor-ta-stegastika-daneia-to-2026/",
-      "title": "Σπάνε όλα τα ρεκόρ τα στεγαστικά δάνεια το 2026",
-      "normalized_title": "ΣΠΑΝΕ ΟΛΑ ΤΑ ΡΕΚΟΡ ΤΑ ΣΤΕΓΑΣΤΙΚΑ ΔΑΝΕΙΑ ΤΟ 2026",
+      "url": "https://www.in.gr/2026/08/29/greece/se-synagermo-kriti-kai-nisia-aigaiou-poly-ypsilos-kindynos-pyrkagias/",
+      "title": "Σε συναγερμό Κρήτη και νησιά Αιγαίου – Πολύ υψηλός κίνδυνος πυρκαγιάς",
+      "normalized_title": "ΣΕ ΣΥΝΑΓΕΡΜΟ ΚΡΗΤΗ ΚΑΙ ΝΗΣΙΑ ΑΙΓΑΙΟΥ – ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/economy/oikonomikes-eidiseis/spane-ola-ta-rekor-ta-stegastika-daneia-to-2026/",
-        "https://www.in.gr/2026/08/29/sports/football/apoxairetise-ton-ougkresits-i-partizan-eyxaristoume-gia-ola-pics/"
+        "https://www.in.gr/2026/08/29/greece/se-synagermo-kriti-kai-nisia-aigaiou-poly-ypsilos-kindynos-pyrkagias/",
+        "https://www.in.gr/2026/08/29/world/venezouela-me-to-pistoli-ston-krotafo-oi-ipa-vazoun-xeri-sto-petrelaio-tis-xoras-ti-kseroume-gia-ti-symfonia/",
+        "https://www.in.gr/2026/08/29/greece/kriti-fotia-se-apothikeytiko-xoro-pyrinelaiourgeiou-stin-ierapetra/",
+        "https://www.in.gr/2026/08/29/world/tha-ekoves-ena-aionovio-dentro-gia-na-xtiseis-ti-epeleksan-dyo-amerikanoi/"
       ],
-      "seen_at_utc": "2026-08-29T12:29:55.492869+00:00"
+      "seen_at_utc": "2026-08-29T12:51:43.608332+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T12:29:55.492996+00:00"
+  "updated_at_utc": "2026-08-29T12:51:43.608485+00:00"
 }
