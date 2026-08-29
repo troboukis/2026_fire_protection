@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564426586/epistrofi-dyo-enoikion-gia-ekpaideytikoys-ygeionomikoys/",
-      "title": "Επιστροφή δύο ενοικίων για εκπαιδευτικούς, υγειονομικούς",
-      "normalized_title": "ΕΠΙΣΤΡΟΦΗ ΔΥΟ ΕΝΟΙΚΙΩΝ ΓΙΑ ΕΚΠΑΙΔΕΥΤΙΚΟΥΣ, ΥΓΕΙΟΝΟΜΙΚΟΥΣ",
+      "url": "https://www.kathimerini.gr/economy/564426613/omologo-500-ekat-eyro-apo-tin-peiraios/",
+      "title": "Oμόλογο 500 εκατ. ευρώ από την Πειραιώς",
+      "normalized_title": "OΜΟΛΟΓΟ 500 ΕΚΑΤ. ΕΥΡΩ ΑΠΟ ΤΗΝ ΠΕΙΡΑΙΩΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564426586/epistrofi-dyo-enoikion-gia-ekpaideytikoys-ygeionomikoys/"
+        "https://www.kathimerini.gr/economy/564426613/omologo-500-ekat-eyro-apo-tin-peiraios/",
+        "https://www.kathimerini.gr/world/564428242/ipa-olo-kai-perissoteres-arkoydes-stis-poleis-gia-trofi/"
       ],
-      "seen_at_utc": "2026-08-29T15:51:19.988026+00:00"
+      "seen_at_utc": "2026-08-29T16:17:07.193921+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871241/sunolika-27-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-poies-periohes-einai-se-red-code-aurio/?utm_source=rss",
-      "title": "Συνολικά 27 αγροτοδασικές πυρκαγιές το τελευταίο 24ωρο στην Ελλάδα, ποιες περιοχές είναι σε Red Code αύριο",
-      "normalized_title": "ΣΥΝΟΛΙΚΑ 27 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ ΣΤΗΝ ΕΛΛΑΔΑ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΕ RED CODE ΑΥΡΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1871243/astunomikoi-kai-purosvestes-apeglovisan-paidaki-pou-kleidothike-se-autokinito-stin-patra/?utm_source=rss",
+      "title": "Αστυνομικοί και πυροσβέστες απεγκλώβισαν 2χρονο που κλειδώθηκε σε αυτοκίνητο στην Πάτρα",
+      "normalized_title": "ΑΣΤΥΝΟΜΙΚΟΙ ΚΑΙ ΠΥΡΟΣΒΕΣΤΕΣ ΑΠΕΓΚΛΩΒΙΣΑΝ 2ΧΡΟΝΟ ΠΟΥ ΚΛΕΙΔΩΘΗΚΕ ΣΕ ΑΥΤΟΚΙΝΗΤΟ ΣΤΗΝ ΠΑΤΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871241/sunolika-27-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-poies-periohes-einai-se-red-code-aurio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871240/irakleio-speira-xafrise-pano-apo-59000-euro-me-tilefonikes-apates-9-thumata-kai-30-apopeires/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871243/astunomikoi-kai-purosvestes-apeglovisan-paidaki-pou-kleidothike-se-autokinito-stin-patra/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T15:51:19.988185+00:00"
+      "seen_at_utc": "2026-08-29T16:17:07.194046+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1456639/milo-giannopoylos-poios-einai-o-omogenis-akrodexios-aktivistis-poy-kindyneyei-me-apelasi-apo-ton-tramp/",
-      "title": "Μίλο Γιαννόπουλος: Ποιος είναι ο ομογενής ακροδεξιός ακτιβιστής που κινδυνεύει με απέλαση από τον Τραμπ",
-      "normalized_title": "ΜΙΛΟ ΓΙΑΝΝΟΠΟΥΛΟΣ: ΠΟΙΟΣ ΕΙΝΑΙ Ο ΟΜΟΓΕΝΗΣ ΑΚΡΟΔΕΞΙΟΣ ΑΚΤΙΒΙΣΤΗΣ ΠΟΥ ΚΙΝΔΥΝΕΥΕΙ ΜΕ ΑΠΕΛΑΣΗ ΑΠΟ ΤΟΝ ΤΡΑΜΠ",
+      "url": "https://www.efsyn.gr/athlitismos/1456642/olympiakos-horis-rontinei-alla-me-gkonsales-stin-tripoli/",
+      "title": "Ολυμπιακός: Χωρίς Ροντινέι αλλά με Γκονσάλες στην Τρίπολη",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΧΩΡΙΣ ΡΟΝΤΙΝΕΙ ΑΛΛΑ ΜΕ ΓΚΟΝΣΑΛΕΣ ΣΤΗΝ ΤΡΙΠΟΛΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1456639/milo-giannopoylos-poios-einai-o-omogenis-akrodexios-aktivistis-poy-kindyneyei-me-apelasi-apo-ton-tramp/",
-        "https://www.efsyn.gr/politiki/1456635/o-noys-toy-mitsotaki-syneheia-sto-pasok-pos-to-prasino-ginetai-mple/"
+        "https://www.efsyn.gr/athlitismos/1456642/olympiakos-horis-rontinei-alla-me-gkonsales-stin-tripoli/"
       ],
-      "seen_at_utc": "2026-08-29T15:51:19.988139+00:00"
+      "seen_at_utc": "2026-08-29T16:17:07.194019+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/football/mourinio-den-mporeis-na-dineis-ti-xrysi-mpala-se-enan-paikti-epeidi-katektise-champions-league-i-mountial/",
-      "title": "Ο Ζοσέ Μουρίνιο για το ποιοι αξίζουν πραγματικά τη «Χρυσή μπάλα»",
-      "normalized_title": "Ο ΖΟΣΕ ΜΟΥΡΙΝΙΟ ΓΙΑ ΤΟ ΠΟΙΟΙ ΑΞΙΖΟΥΝ ΠΡΑΓΜΑΤΙΚΑ ΤΗ «ΧΡΥΣΗ ΜΠΑΛΑ»",
+      "url": "https://www.in.gr/2026/08/29/greece/fortigo-prokalese-fotia-stin-egnatia-odo-stin-aleksandreia-imathias-sikothike-ena-elikoptero/",
+      "title": "Φορτηγό προκάλεσε φωτιά στην Εγνατία Οδό στην Αλεξάνδρεια Ημαθίας – Σηκώθηκε ένα ελικόπτερο",
+      "normalized_title": "ΦΟΡΤΗΓΟ ΠΡΟΚΑΛΕΣΕ ΦΩΤΙΑ ΣΤΗΝ ΕΓΝΑΤΙΑ ΟΔΟ ΣΤΗΝ ΑΛΕΞΑΝΔΡΕΙΑ ΗΜΑΘΙΑΣ – ΣΗΚΩΘΗΚΕ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/football/mourinio-den-mporeis-na-dineis-ti-xrysi-mpala-se-enan-paikti-epeidi-katektise-champions-league-i-mountial/",
-        "https://www.in.gr/2026/08/29/world/germania-ektetamenes-kyroseis-se-varos-tis-mosxas-gia-tin-ypothesi-ton-drones-sto-aerodromio-tis-leipsias/",
-        "https://www.in.gr/2026/08/29/world/me-louloudia-kai-dakrya-i-norvigia-apoxaireta-ton-vasilia-xaralnt/"
+        "https://www.in.gr/2026/08/29/greece/fortigo-prokalese-fotia-stin-egnatia-odo-stin-aleksandreia-imathias-sikothike-ena-elikoptero/",
+        "https://www.in.gr/2026/08/29/world/akoma-mia-epithesi-israilinon-epoikon-sti-dytiki-oxthi-petres-kai-dakrygona-sta-spitia-palaistinion/",
+        "https://www.in.gr/2026/08/29/greece/patra-i-pyrosvestiki-apegklovise-koritsaki-2-eton-pou-kleidothike-se-ix/",
+        "https://www.in.gr/2026/08/29/greece/kriti-odigos-spaei-ta-kolonakia-kai-pernaei-sto-antitheto-reyma-gia-na-kanei-prosperasi-ston-voak-sokaristiko-vinteo/",
+        "https://www.in.gr/2026/08/29/life/diakopes/einai-oi-diakopes-gia-pezoporia-to-antidoto-gia-ton-ypertourismo-tis-eyropis/",
+        "https://www.in.gr/2026/08/29/life/music/o-tom-xarnti-afinei-tin-othoni-pianei-to-mic-kai-ftynei-rimes-me-tous-czarface/",
+        "https://www.in.gr/2026/08/29/sports/football/i-neofotisti-elversmpergk-sokare-tin-leverkouzen-2-3-aneti-niki-gia-tin-leipsia-3-0/"
       ],
-      "seen_at_utc": "2026-08-29T15:51:19.988092+00:00"
+      "seen_at_utc": "2026-08-29T16:17:07.193991+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T15:51:19.988286+00:00"
+  "updated_at_utc": "2026-08-29T16:17:07.194119+00:00"
 }
