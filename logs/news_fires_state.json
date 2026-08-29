@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564426652/ayxisi-plithorismoy-sto-4-5-stin-ispania-logo-energeias/",
-      "title": "Αύξηση πληθωρισμού στο 4,5% στην Ισπανία λόγω ενέργειας",
-      "normalized_title": "ΑΥΞΗΣΗ ΠΛΗΘΩΡΙΣΜΟΥ ΣΤΟ 4,5% ΣΤΗΝ ΙΣΠΑΝΙΑ ΛΟΓΩ ΕΝΕΡΓΕΙΑΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564416641/eortologio-poioi-giortazoyn-simera-30-aygoystoy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 30 Αυγούστου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 30 ΑΥΓΟΥΣΤΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564426652/ayxisi-plithorismoy-sto-4-5-stin-ispania-logo-energeias/"
+        "https://www.kathimerini.gr/eortologio/564416641/eortologio-poioi-giortazoyn-simera-30-aygoystoy/",
+        "https://www.kathimerini.gr/economy/international/564426649/i-techniti-noimosyni-stirizei-ti-diethni-oikonomia/"
       ],
-      "seen_at_utc": "2026-08-29T20:51:13.168016+00:00"
+      "seen_at_utc": "2026-08-29T21:17:00.057816+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,28 +1269,25 @@
       "seen_at_utc": "2026-08-29T20:51:13.168086+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456712/akis-skertsos-i-ellada-doyleyei-kai-sygklinei-me-tin-eyropi/",
-      "title": "Άκης Σκέρτσος: Η Ελλάδα δουλεύει και συγκλίνει με την Ευρώπη",
-      "normalized_title": "ΑΚΗΣ ΣΚΕΡΤΣΟΣ: Η ΕΛΛΑΔΑ ΔΟΥΛΕΥΕΙ ΚΑΙ ΣΥΓΚΛΙΝΕΙ ΜΕ ΤΗΝ ΕΥΡΩΠΗ",
+      "url": "https://www.efsyn.gr/kosmos/1456714/protofanes-o-netaniahoy-epikrinei-toys-israilinoys-epoikoys-gia-ta-pogkrom-sti-dytiki-ohthi/",
+      "title": "Πρωτοφανές: Ο Νετανιάχου επικρίνει τους Ισραηλινούς εποίκους για τα πογκρόμ στη Δυτική Όχθη",
+      "normalized_title": "ΠΡΩΤΟΦΑΝΕΣ: Ο ΝΕΤΑΝΙΑΧΟΥ ΕΠΙΚΡΙΝΕΙ ΤΟΥΣ ΙΣΡΑΗΛΙΝΟΥΣ ΕΠΟΙΚΟΥΣ ΓΙΑ ΤΑ ΠΟΓΚΡΟΜ ΣΤΗ ΔΥΤΙΚΗ ΟΧΘΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456712/akis-skertsos-i-ellada-doyleyei-kai-sygklinei-me-tin-eyropi/",
-        "https://www.efsyn.gr/ellada/1456708/katholiki-ekklisia-poios-einai-o-neos-episkopos-syroy-miloy-santorinis-poy-orise-o-papas-leon/"
+        "https://www.efsyn.gr/kosmos/1456714/protofanes-o-netaniahoy-epikrinei-toys-israilinoys-epoikoys-gia-ta-pogkrom-sti-dytiki-ohthi/"
       ],
-      "seen_at_utc": "2026-08-29T20:51:13.168072+00:00"
+      "seen_at_utc": "2026-08-29T21:17:00.057901+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/football/pentersen-oloi-gnorizoun-poios-einai-o-olympiakos-vid/",
-      "title": "Πέντερσεν: «Όλοι γνωρίζουν ποιος είναι ο Ολυμπιακός» (vid)",
-      "normalized_title": "ΠΕΝΤΕΡΣΕΝ: «ΟΛΟΙ ΓΝΩΡΙΖΟΥΝ ΠΟΙΟΣ ΕΙΝΑΙ Ο ΟΛΥΜΠΙΑΚΟΣ» (VID)",
+      "url": "https://www.in.gr/2026/08/30/greece/giorti-simera-30-aygoustou-poioi-giortazoun-eortologio/",
+      "title": "Γιορτή σήμερα 30 Αυγούστου - Ποιοι γιορτάζουν | Εορτολόγιο",
+      "normalized_title": "ΓΙΟΡΤΗ ΣΗΜΕΡΑ 30 ΑΥΓΟΥΣΤΟΥ - ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ | ΕΟΡΤΟΛΟΓΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/football/pentersen-oloi-gnorizoun-poios-einai-o-olympiakos-vid/",
-        "https://www.in.gr/2026/08/29/greece/thriler-stin-ierapetra-nekros-andras-se-proxorimeni-sipsi-entopistike-se-spiti/",
-        "https://www.in.gr/2026/08/29/sports/football/super-league-i-vathmologia-meta-ti-niki-tou-panaitolikou-kai-to-x-sto-panthessaliko-pic/",
-        "https://www.in.gr/2026/08/29/sports/football/panaitolikos-kalamata-2-0-i-omada-tou-agriniou-ekane-to-2x2/",
-        "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/pos-ta-pazaria-ipa-kanada-ekselixthikan-se-emporiko-polemo-xoris-telos/"
+        "https://www.in.gr/2026/08/30/greece/giorti-simera-30-aygoustou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/08/30/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-kyriaki-30-08-2026/",
+        "https://www.in.gr/2026/08/29/world/to-israil-xtypise-nosokomeio-tis-gazas-stoxeyse-enan-dioikiti-tis-xamas/"
       ],
-      "seen_at_utc": "2026-08-29T20:51:13.168050+00:00"
+      "seen_at_utc": "2026-08-29T21:17:00.057868+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T20:51:13.168144+00:00"
+  "updated_at_utc": "2026-08-29T21:17:00.057992+00:00"
 }
