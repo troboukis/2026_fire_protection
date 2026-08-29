@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564427729/pyrkagia-se-egkataleleimmeno-ktirio-stin-3is-septemvrioy-se-exelixi-kykloforiakes-rythmiseis/",
-      "title": "Πυρκαγιά σε εγκαταλελειμμένο κτίριο στην 3ης Σεπτεμβρίου – Σε εξέλιξη κυκλοφοριακές ρυθμίσεις",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗΝ 3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ – ΣΕ ΕΞΕΛΙΞΗ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/economy/local/564426580/den-anoigoyn-trapezikoys-logariasmoys-den-pairnoyn-syntaxi/",
+      "title": "Δεν ανοίγουν τραπεζικούς λογαριασμούς, δεν παίρνουν σύνταξη",
+      "normalized_title": "ΔΕΝ ΑΝΟΙΓΟΥΝ ΤΡΑΠΕΖΙΚΟΥΣ ΛΟΓΑΡΙΑΣΜΟΥΣ, ΔΕΝ ΠΑΙΡΝΟΥΝ ΣΥΝΤΑΞΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564427729/pyrkagia-se-egkataleleimmeno-ktirio-stin-3is-septemvrioy-se-exelixi-kykloforiakes-rythmiseis/",
-        "https://www.kathimerini.gr/society/564427720/irakleio-rekor-epivaton-apo-tin-proti-mera-toy-aygoystoy-sto-nikos-kazantzakis/"
+        "https://www.kathimerini.gr/economy/local/564426580/den-anoigoyn-trapezikoys-logariasmoys-den-pairnoyn-syntaxi/",
+        "https://www.kathimerini.gr/world/564426139/exi-pliges-epeita-apo-exi-mines-polemoy/"
       ],
-      "seen_at_utc": "2026-08-29T07:30:02.630793+00:00"
+      "seen_at_utc": "2026-08-29T07:51:17.671096+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1260,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871099/o-patriarhis-alexandreias-to-nisi-tis-mastihas-kai-i-axehasti-vradia/?utm_source=rss",
-      "title": "Ο Πατριάρχης Αλεξανδρείας, το νησί της μαστίχας και η αξέχαστη βραδιά",
-      "normalized_title": "Ο ΠΑΤΡΙΑΡΧΗΣ ΑΛΕΞΑΝΔΡΕΙΑΣ, ΤΟ ΝΗΣΙ ΤΗΣ ΜΑΣΤΙΧΑΣ ΚΑΙ Η ΑΞΕΧΑΣΤΗ ΒΡΑΔΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1871110/purkagia-se-egataleleimmeno-ktirio-sto-kedro-tis-athinas-pou-ehei-diakopei-i-kukloforia/?utm_source=rss",
+      "title": "Πυρκαγιά σε εγκαταλελειμμένο κτήριο στο κέντρο της Αθήνας, πού έχει διακοπεί η κυκλοφορία",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΗΡΙΟ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ, ΠΟΥ ΕΧΕΙ ΔΙΑΚΟΠΕΙ Η ΚΥΚΛΟΦΟΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871099/o-patriarhis-alexandreias-to-nisi-tis-mastihas-kai-i-axehasti-vradia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871098/trohaio-dustuhima-sta-megara-nekri-35hroni-odigos-motosikletas-meta-apo-sfodri-proskrousi-se-perifraxi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871110/purkagia-se-egataleleimmeno-ktirio-sto-kedro-tis-athinas-pou-ehei-diakopei-i-kukloforia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871105/nekros-edopistike-48hronos-anaisthisiologos-mesa-sto-nosokomeio-mesologgiou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T07:17:05.726286+00:00"
+      "seen_at_utc": "2026-08-29T07:51:17.671203+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1456395/panathinaikos-an-sovareytei-tote-pernaei/",
-      "title": "Παναθηναϊκός: Αν σοβαρευτεί, τότε περνάει",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΑΝ ΣΟΒΑΡΕΥΤΕΙ, ΤΟΤΕ ΠΕΡΝΑΕΙ",
+      "url": "https://www.efsyn.gr/stiles/1456405/i-krisimi-antifasi-tis-ellinikis-oikonomias/",
+      "title": "Η κρίσιμη αντίφαση της ελληνικής οικονομίας",
+      "normalized_title": "Η ΚΡΙΣΙΜΗ ΑΝΤΙΦΑΣΗ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΟΙΚΟΝΟΜΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1456395/panathinaikos-an-sovareytei-tote-pernaei/",
-        "https://www.efsyn.gr/athlitismos/1456392/o-olympiakos-koitaei-psila-arkei-na-einai-kanonikos/",
-        "https://www.efsyn.gr/ellada/1456480/fotia-se-ktirio-stin-3is-septemvrioy-kykloforiakes-rythmiseis-sto-simeio/"
+        "https://www.efsyn.gr/stiles/1456405/i-krisimi-antifasi-tis-ellinikis-oikonomias/",
+        "https://www.efsyn.gr/stiles/1456403/mi-mas-ta-zalizoyn-kiolas/",
+        "https://www.efsyn.gr/stiles/1456400/o-kalyteros-sponsoras-as-kerdisei/",
+        "https://www.efsyn.gr/stiles/1456398/pos-o-mitsotakis-asprise-ton-pleyri/",
+        "https://www.efsyn.gr/kosmos/1456487/nepal-anevainei-o-arithmos-ton-nekron-kai-ton-agnooymenon-anafores-oti-ptomata-parasyrthikan-mehri-tin-india/",
+        "https://www.efsyn.gr/ellada/1456488/thrinos-sto-nosokomeio-mesologgioy-48hronos-anaisthisiologos-entopistike-nekros-sto-domatio-efimerias/"
       ],
-      "seen_at_utc": "2026-08-29T07:30:02.630839+00:00"
+      "seen_at_utc": "2026-08-29T07:51:17.671164+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/pos-i-santorini-egine-pagkosmios-proorismos-ti-apokalyptei-touristikos-odigos-55-eton/",
-      "title": "Πώς η Σαντορίνη έγινε παγκόσμιος προορισμός – Τι αποκαλύπτει τουριστικός οδηγός 55 ετών",
-      "normalized_title": "ΠΩΣ Η ΣΑΝΤΟΡΙΝΗ ΕΓΙΝΕ ΠΑΓΚΟΣΜΙΟΣ ΠΡΟΟΡΙΣΜΟΣ – ΤΙ ΑΠΟΚΑΛΥΠΤΕΙ ΤΟΥΡΙΣΤΙΚΟΣ ΟΔΗΓΟΣ 55 ΕΤΩΝ",
+      "url": "https://www.in.gr/2026/08/29/sports/football/stin-ael-lemesou-o-giovetits/",
+      "title": "Στην ΑΕΛ Λεμεσού ο Γιόβετιτς",
+      "normalized_title": "ΣΤΗΝ ΑΕΛ ΛΕΜΕΣΟΥ Ο ΓΙΟΒΕΤΙΤΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/pos-i-santorini-egine-pagkosmios-proorismos-ti-apokalyptei-touristikos-odigos-55-eton/",
-        "https://www.in.gr/2026/08/29/sports/football/super-league-praksi-2i-ksekinima-se-volo-kai-agrinio/"
+        "https://www.in.gr/2026/08/29/sports/football/stin-ael-lemesou-o-giovetits/",
+        "https://www.in.gr/2026/08/29/greece/mandra-xoris-tis-aisthiseis-tou-anasyrthike-odigos-epeita-apo-troxaio/",
+        "https://www.in.gr/2026/08/29/greece/fotia-se-egkataleleimmeno-ktirio-stin-3is-septemvriou/",
+        "https://www.in.gr/2026/08/29/politics/paraskinio/stin-epidayro-gia-tin-parastasi-ion-o-nikos-androulakis/"
       ],
-      "seen_at_utc": "2026-08-29T07:30:02.630826+00:00"
+      "seen_at_utc": "2026-08-29T07:51:17.671136+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T07:30:02.630895+00:00"
+  "updated_at_utc": "2026-08-29T07:51:17.671287+00:00"
 }
