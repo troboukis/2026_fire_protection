@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428158/anisychia-gia-ton-cheimona-stin-eyropi-se-chamilo-13etias-ta-apothemata-fysikoy-aerioy/",
-      "title": "Ανησυχία για τον χειμώνα στην Ευρώπη – Σε χαμηλό 13ετίας τα αποθέματα φυσικού αερίου",
-      "normalized_title": "ΑΝΗΣΥΧΙΑ ΓΙΑ ΤΟΝ ΧΕΙΜΩΝΑ ΣΤΗΝ ΕΥΡΩΠΗ – ΣΕ ΧΑΜΗΛΟ 13ΕΤΙΑΣ ΤΑ ΑΠΟΘΕΜΑΤΑ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564428221/ypex-gia-eidiko-chorotaxiko-plaisio-to-kathestos-kyriarchias-sto-aigaio-vasizetai-stis-diethneis-synthikes/",
+      "title": "ΥΠΕΞ για Ειδικό Χωροταξικό Πλαίσιο: «Το καθεστώς κυριαρχίας στο Αιγαίο βασίζεται στις Διεθνείς Συνθήκες»",
+      "normalized_title": "ΥΠΕΞ ΓΙΑ ΕΙΔΙΚΟ ΧΩΡΟΤΑΞΙΚΟ ΠΛΑΙΣΙΟ: «ΤΟ ΚΑΘΕΣΤΩΣ ΚΥΡΙΑΡΧΙΑΣ ΣΤΟ ΑΙΓΑΙΟ ΒΑΣΙΖΕΤΑΙ ΣΤΙΣ ΔΙΕΘΝΕΙΣ ΣΥΝΘΗΚΕΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428158/anisychia-gia-ton-cheimona-stin-eyropi-se-chamilo-13etias-ta-apothemata-fysikoy-aerioy/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564428221/ypex-gia-eidiko-chorotaxiko-plaisio-to-kathestos-kyriarchias-sto-aigaio-vasizetai-stis-diethneis-synthikes/"
       ],
-      "seen_at_utc": "2026-08-29T14:29:54.728214+00:00"
+      "seen_at_utc": "2026-08-29T14:51:07.908565+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1259,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871217/me-trakter-ston-leuko-purgo-oi-agrotes-tin-imera-ton-egainion-tis-90is-deth/?utm_source=rss",
-      "title": "Με τρακτέρ στον Λευκό Πύργο οι αγρότες την ημέρα των εγκαινίων της 90ής ΔΕΘ",
-      "normalized_title": "ΜΕ ΤΡΑΚΤΕΡ ΣΤΟΝ ΛΕΥΚΟ ΠΥΡΓΟ ΟΙ ΑΓΡΟΤΕΣ ΤΗΝ ΗΜΕΡΑ ΤΩΝ ΕΓΚΑΙΝΙΩΝ ΤΗΣ 90ΗΣ ΔΕΘ",
+      "url": "https://www.protothema.gr/greece/article/1871226/gourouna-epese-se-haradra-sto-irakleio-duo-traumaties/?utm_source=rss",
+      "title": "Γουρούνα έπεσε σε χαράδρα στο Ηράκλειο, δύο τραυματίες",
+      "normalized_title": "ΓΟΥΡΟΥΝΑ ΕΠΕΣΕ ΣΕ ΧΑΡΑΔΡΑ ΣΤΟ ΗΡΑΚΛΕΙΟ, ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871217/me-trakter-ston-leuko-purgo-oi-agrotes-tin-imera-ton-egainion-tis-90is-deth/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871212/sfodri-kakokairia-saronei-tin-kupro-keraunos-htupise-45hrono/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871226/gourouna-epese-se-haradra-sto-irakleio-duo-traumaties/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T14:17:27.500447+00:00"
+      "seen_at_utc": "2026-08-29T14:51:07.908684+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1456467/ntoli-esy-soyper-star/",
-      "title": "Ντόλι, εσύ, σούπερ σταρ",
-      "normalized_title": "ΝΤΟΛΙ, ΕΣΥ, ΣΟΥΠΕΡ ΣΤΑΡ",
+      "url": "https://www.efsyn.gr/athlitismos/1456622/panathinaikos-thlasi-a-vathmoy-o-tsirivegia-kai-15-20-meres-off/",
+      "title": "Παναθηναϊκός: Θλάση α’ βαθμού ο Τσιριβέγια και 15-20 μέρες «off»",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΘΛΑΣΗ Α’ ΒΑΘΜΟΥ Ο ΤΣΙΡΙΒΕΓΙΑ ΚΑΙ 15-20 ΜΕΡΕΣ «OFF»",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1456467/ntoli-esy-soyper-star/"
+        "https://www.efsyn.gr/athlitismos/1456622/panathinaikos-thlasi-a-vathmoy-o-tsirivegia-kai-15-20-meres-off/",
+        "https://www.efsyn.gr/ellada/1456620/synelifthisan-18hronos-kai-anilikos-stin-kozani-gia-apati-me-ti-methodo-tis-apasholisis/"
       ],
-      "seen_at_utc": "2026-08-29T14:29:54.728280+00:00"
+      "seen_at_utc": "2026-08-29T14:51:07.908660+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/politics/politiki-grammateia/nea-aristera-kata-mitsotaki-thymithike-ton-koinoniko-rolo-tis-dei-afou-prota-tin-paredose-stous-idiotes/",
-      "title": "Νέα Αριστερά κατά Μητσοτάκη: «Θυμήθηκε τον κοινωνικό ρόλο της ΔΕΗ αφού πρώτα την παρέδωσε στους ιδιώτες»",
-      "normalized_title": "ΝΕΑ ΑΡΙΣΤΕΡΑ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: «ΘΥΜΗΘΗΚΕ ΤΟΝ ΚΟΙΝΩΝΙΚΟ ΡΟΛΟ ΤΗΣ ΔΕΗ ΑΦΟΥ ΠΡΩΤΑ ΤΗΝ ΠΑΡΕΔΩΣΕ ΣΤΟΥΣ ΙΔΙΩΤΕΣ»",
+      "url": "https://www.in.gr/2026/08/29/sports/football/mentilimpar-den-tha-einai-eykolo-to-paixnidi-stin-tripoli-poly-kali-i-proti-eikona-tou-gkonsales/",
+      "title": "Μεντιλίμπαρ: «Δεν θα είναι εύκολο το παιχνίδι στην Τρίπολη – Πολύ καλή η πρώτη εικόνα του Γκονσάλες»",
+      "normalized_title": "ΜΕΝΤΙΛΙΜΠΑΡ: «ΔΕΝ ΘΑ ΕΙΝΑΙ ΕΥΚΟΛΟ ΤΟ ΠΑΙΧΝΙΔΙ ΣΤΗΝ ΤΡΙΠΟΛΗ – ΠΟΛΥ ΚΑΛΗ Η ΠΡΩΤΗ ΕΙΚΟΝΑ ΤΟΥ ΓΚΟΝΣΑΛΕΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/politics/politiki-grammateia/nea-aristera-kata-mitsotaki-thymithike-ton-koinoniko-rolo-tis-dei-afou-prota-tin-paredose-stous-idiotes/"
+        "https://www.in.gr/2026/08/29/sports/football/mentilimpar-den-tha-einai-eykolo-to-paixnidi-stin-tripoli-poly-kali-i-proti-eikona-tou-gkonsales/",
+        "https://www.in.gr/2026/08/29/greece/fyteia-kannavis-me-267-dendryllia-entopistike-se-dasiki-ektasi-sti-messinia-dyo-syllipseis/",
+        "https://www.in.gr/2026/08/29/greece/lamia-30xronos-sti-meth-meta-apo-tsimpima-araxnis-eno-ergazotan-se-xorafi/",
+        "https://www.in.gr/2026/08/29/politics/politiki-grammateia/epithesi-xristidi-se-mitsotaki-gia-akrita-ntrapike-kai-i-ntropi-to-2015-psifizate-tin-konstantopoulou/"
       ],
-      "seen_at_utc": "2026-08-29T14:29:54.728260+00:00"
+      "seen_at_utc": "2026-08-29T14:51:07.908622+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T14:29:54.728356+00:00"
+  "updated_at_utc": "2026-08-29T14:51:07.908760+00:00"
 }
