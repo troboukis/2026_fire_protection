@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564428287/elliniko-eklepsan-optikes-ines-apo-egkatastaseis-tis-ypiresias-politikis-aeroporias/",
-      "title": "Ελληνικό: Εκλεψαν οπτικές ίνες από εγκαταστάσεις της Υπηρεσίας Πολιτικής Αεροπορίας",
-      "normalized_title": "ΕΛΛΗΝΙΚΟ: ΕΚΛΕΨΑΝ ΟΠΤΙΚΕΣ ΙΝΕΣ ΑΠΟ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΤΗΣ ΥΠΗΡΕΣΙΑΣ ΠΟΛΙΤΙΚΗΣ ΑΕΡΟΠΟΡΙΑΣ",
+      "url": "https://www.kathimerini.gr/athletics/564428317/mesogeiakoi-agones-chrysi-i-teltsidoy-sto-tzoynto/",
+      "title": "Μεσογειακοί Αγώνες: Χρυσή η Τελτσίδου στo τζούντο",
+      "normalized_title": "ΜΕΣΟΓΕΙΑΚΟΙ ΑΓΩΝΕΣ: ΧΡΥΣΗ Η ΤΕΛΤΣΙΔΟΥ ΣΤO ΤΖΟΥΝΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564428287/elliniko-eklepsan-optikes-ines-apo-egkatastaseis-tis-ypiresias-politikis-aeroporias/"
+        "https://www.kathimerini.gr/athletics/564428317/mesogeiakoi-agones-chrysi-i-teltsidoy-sto-tzoynto/",
+        "https://www.kathimerini.gr/economy/diktis/564426712/gallikes-fregates-made-in-greece/",
+        "https://www.kathimerini.gr/society/564428326/fotia-stin-egnatia-odo-xekinise-apo-fortigo-epektathike-se-vlastisi/"
       ],
-      "seen_at_utc": "2026-08-29T16:29:57.186914+00:00"
+      "seen_at_utc": "2026-08-29T17:17:04.845066+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1272,30 @@
       "seen_at_utc": "2026-08-29T16:51:25.246394+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456649/pyrkagia-stin-egnatia-odo-stin-alexandreia-imathias-xekinise-apo-fortigo-kai-epektathike-se-hamili-vlastisi/",
-      "title": "Πυρκαγιά στην Εγνατία Οδό στην Αλεξάνδρεια Ημαθίας – Ξεκίνησε από φορτηγό και επεκτάθηκε σε χαμηλή βλάστηση",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΕΓΝΑΤΙΑ ΟΔΟ ΣΤΗΝ ΑΛΕΞΑΝΔΡΕΙΑ ΗΜΑΘΙΑΣ – ΞΕΚΙΝΗΣΕ ΑΠΟ ΦΟΡΤΗΓΟ ΚΑΙ ΕΠΕΚΤΑΘΗΚΕ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ",
+      "url": "https://www.efsyn.gr/ellada/1456659/fir-athinon-eklepsan-apo-tin-ypa-ta-kalodia-gia-tin-egkatastasi-systimatos-epikoinonion-eihan-halko/",
+      "title": "FIR Αθηνών: Έκλεψαν από την ΥΠΑ τα καλώδια για την εγκατάσταση συστήματος επικοινωνιών- Είχαν χαλκό",
+      "normalized_title": "FIR ΑΘΗΝΩΝ: ΕΚΛΕΨΑΝ ΑΠΟ ΤΗΝ ΥΠΑ ΤΑ ΚΑΛΩΔΙΑ ΓΙΑ ΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΣΥΣΤΗΜΑΤΟΣ ΕΠΙΚΟΙΝΩΝΙΩΝ- ΕΙΧΑΝ ΧΑΛΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456649/pyrkagia-stin-egnatia-odo-stin-alexandreia-imathias-xekinise-apo-fortigo-kai-epektathike-se-hamili-vlastisi/"
+        "https://www.efsyn.gr/ellada/1456659/fir-athinon-eklepsan-apo-tin-ypa-ta-kalodia-gia-tin-egkatastasi-systimatos-epikoinonion-eihan-halko/",
+        "https://www.efsyn.gr/ellada/1456656/i-paradosiaki-giorti-tis-sardelas-tin-kyriaki-sto-limani-tis-prevezas/"
       ],
-      "seen_at_utc": "2026-08-29T16:51:25.246361+00:00"
+      "seen_at_utc": "2026-08-29T17:17:04.845158+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/football/koventri-xal-0-1-nea-spoudaia-emfanisi-tou-tzolaki-kai-2x2/",
-      "title": "Νέα σπουδαία εμφάνιση του Τζολάκη και 2Χ2!",
-      "normalized_title": "ΝΕΑ ΣΠΟΥΔΑΙΑ ΕΜΦΑΝΙΣΗ ΤΟΥ ΤΖΟΛΑΚΗ ΚΑΙ 2Χ2!",
+      "url": "https://www.in.gr/2026/08/29/in-science/perivallon-b-science/o-aoratos-polemos-pos-oi-sygkrouseis-dilitiriazoun-ton-planiti/",
+      "title": "Η «Αποκάλυψη» που καταπίνει δάση, δηλητηριάζει τον αέρα και μολύνει τους ωκεανούς μας",
+      "normalized_title": "Η «ΑΠΟΚΑΛΥΨΗ» ΠΟΥ ΚΑΤΑΠΙΝΕΙ ΔΑΣΗ, ΔΗΛΗΤΗΡΙΑΖΕΙ ΤΟΝ ΑΕΡΑ ΚΑΙ ΜΟΛΥΝΕΙ ΤΟΥΣ ΩΚΕΑΝΟΥΣ ΜΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/football/koventri-xal-0-1-nea-spoudaia-emfanisi-tou-tzolaki-kai-2x2/",
+        "https://www.in.gr/2026/08/29/in-science/perivallon-b-science/o-aoratos-polemos-pos-oi-sygkrouseis-dilitiriazoun-ton-planiti/",
+        "https://www.in.gr/2026/08/29/greece/diasolinomenos-paramenei-o-9xronos-pou-kindyneyse-me-pnigmo-stin-paralia-marathias/",
+        "https://www.in.gr/2026/08/29/world/kypros-foniki-thalassotaraxi-sto-kavo-gkreko-enas-nekros-kai-dyo-traymaties/",
         "https://www.in.gr/2026/08/29/life/diakopes/einai-oi-diakopes-gia-pezoporia-to-antidoto-gia-ton-ypertourismo-tis-eyropis/",
-        "https://www.in.gr/2026/08/29/greece/psyxiko-tromos-gia-16xrones-se-leoforeio-synelifthi-epivatis-pou-epedeikse-ta-gennitika-tou-organa-se-16xrones/",
-        "https://www.in.gr/matchcenter/5795434/",
-        "https://www.in.gr/matchcenter/5881145/"
+        "https://www.in.gr/2026/08/29/go-fun/fizz/ntoli-parton-zitise-peiramatikes-therapeies-gia-na-sosei-allous-karkinopatheis-leei-i-adelfi-tis/",
+        "https://www.in.gr/2026/08/29/world/xoris-ton-poutin-to-rosiko-sxedio-kai-to-paraskinio-tis-diadoxis-sti-skia-tou-polemou/",
+        "https://www.in.gr/2026/08/29/world/diplomatiko-epeisodio-agkyras-kievou-sto-ypourgeio-eksoterikon-o-oukranos-presvis-meta-ta-xtypimata-se-tourkika-ploia/"
       ],
-      "seen_at_utc": "2026-08-29T16:51:25.246295+00:00"
+      "seen_at_utc": "2026-08-29T17:17:04.845124+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T16:51:25.246483+00:00"
+  "updated_at_utc": "2026-08-29T17:17:04.845227+00:00"
 }
