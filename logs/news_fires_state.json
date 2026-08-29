@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564427708/isimerinos-pente-chronia-katheirxi-ston-proin-proedro-moreno-gia-diafthora/",
-      "title": "Ισημερινός: Πέντε χρόνια κάθειρξη στον πρώην πρόεδρο Μορένο για διαφθορά",
-      "normalized_title": "ΙΣΗΜΕΡΙΝΟΣ: ΠΕΝΤΕ ΧΡΟΝΙΑ ΚΑΘΕΙΡΞΗ ΣΤΟΝ ΠΡΩΗΝ ΠΡΟΕΔΡΟ ΜΟΡΕΝΟ ΓΙΑ ΔΙΑΦΘΟΡΑ",
+      "url": "https://www.kathimerini.gr/world/564426277/penthos-gia-ton-eksygchronisti-monarchi/",
+      "title": "Πένθος για τον εκσυγχρονιστή μονάρχη",
+      "normalized_title": "ΠΕΝΘΟΣ ΓΙΑ ΤΟΝ ΕΚΣΥΓΧΡΟΝΙΣΤΗ ΜΟΝΑΡΧΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564427708/isimerinos-pente-chronia-katheirxi-ston-proin-proedro-moreno-gia-diafthora/"
+        "https://www.kathimerini.gr/world/564426277/penthos-gia-ton-eksygchronisti-monarchi/",
+        "https://www.kathimerini.gr/world/564426298/to-taxidi-sto-sympan-xekinaei/",
+        "https://www.kathimerini.gr/society/564427711/dyo-thanatifora-trochaia-me-motosikletes-se-megara-kai-thessaloniki/"
       ],
-      "seen_at_utc": "2026-08-29T06:51:14.354445+00:00"
+      "seen_at_utc": "2026-08-29T07:17:05.726163+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871086/tragodia-sti-thessaloniki-nekros-se-trohaio-20hronos-odigos-mihanis-ston-hortiati/?utm_source=rss",
-      "title": "Τραγωδία στη Θεσσαλονίκη: Νεκρός σε τροχαίο 20χρονος οδηγός μηχανής στον Χορτιάτη",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΝΕΚΡΟΣ ΣΕ ΤΡΟΧΑΙΟ 20ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΜΗΧΑΝΗΣ ΣΤΟΝ ΧΟΡΤΙΑΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1871099/o-patriarhis-alexandreias-to-nisi-tis-mastihas-kai-i-axehasti-vradia/?utm_source=rss",
+      "title": "Ο Πατριάρχης Αλεξανδρείας, το νησί της μαστίχας και η αξέχαστη βραδιά",
+      "normalized_title": "Ο ΠΑΤΡΙΑΡΧΗΣ ΑΛΕΞΑΝΔΡΕΙΑΣ, ΤΟ ΝΗΣΙ ΤΗΣ ΜΑΣΤΙΧΑΣ ΚΑΙ Η ΑΞΕΧΑΣΤΗ ΒΡΑΔΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871086/tragodia-sti-thessaloniki-nekros-se-trohaio-20hronos-odigos-mihanis-ston-hortiati/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871099/o-patriarhis-alexandreias-to-nisi-tis-mastihas-kai-i-axehasti-vradia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871098/trohaio-dustuhima-sta-megara-nekri-35hroni-odigos-motosikletas-meta-apo-sfodri-proskrousi-se-perifraxi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T06:51:14.354561+00:00"
+      "seen_at_utc": "2026-08-29T07:17:05.726286+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456454/elas-enantion-hrysohoidi-gia-to-nomos-kai-taxi/",
-      "title": "ΕΛΑΣ εναντίον Χρυσοχοΐδη για το «νόμος και τάξη»",
-      "normalized_title": "ΕΛΑΣ ΕΝΑΝΤΙΟΝ ΧΡΥΣΟΧΟΙΔΗ ΓΙΑ ΤΟ «ΝΟΜΟΣ ΚΑΙ ΤΑΞΗ»",
+      "url": "https://www.efsyn.gr/politiki/1456472/stin-epidayro-me-ton-gio-toy-o-nikos-androylakis-eikones/",
+      "title": "Στην Επίδαυρο με τον γιο του ο Νίκος Ανδρουλάκης [εικόνες]",
+      "normalized_title": "ΣΤΗΝ ΕΠΙΔΑΥΡΟ ΜΕ ΤΟΝ ΓΙΟ ΤΟΥ Ο ΝΙΚΟΣ ΑΝΔΡΟΥΛΑΚΗΣ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456454/elas-enantion-hrysohoidi-gia-to-nomos-kai-taxi/",
-        "https://www.efsyn.gr/politiki/1456455/tha-paroyn-kai-vraveio-gia-to-mplak-aoyt-stin-tilematiki-toy-oasa/",
-        "https://www.efsyn.gr/politiki/1456450/grafeiokratiko-aristoyrgima/",
-        "https://www.efsyn.gr/politiki/1456452/proedrika-anagnosmata-me-fonto-to-aigaio-ti-diavase-o-kostas-tasoylas-sti-syro/"
+        "https://www.efsyn.gr/politiki/1456472/stin-epidayro-me-ton-gio-toy-o-nikos-androylakis-eikones/",
+        "https://www.efsyn.gr/politiki/1456461/mitsotakis-kata-androylaki-syntassetai-me-aytoys-poy-prin-apo-mia-10etia-pigan-na-katastrepsoyn-ti-hora/",
+        "https://www.efsyn.gr/kosmos/1456462/ipa-synelifthi-o-akrodexios-omogenis-milo-giannopoylos-apo-tin-ice/"
       ],
-      "seen_at_utc": "2026-08-29T06:51:14.354526+00:00"
+      "seen_at_utc": "2026-08-29T07:17:05.726254+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/i-metoxi-tis-nike-odeyei-pros-ti-xeiroteri-xronia-edo-kai-33-xronia/",
-      "title": "Η μετοχή της Nike οδεύει προς τη χειρότερη χρονιά εδώ και 33 χρόνια",
-      "normalized_title": "Η ΜΕΤΟΧΗ ΤΗΣ NIKE ΟΔΕΥΕΙ ΠΡΟΣ ΤΗ ΧΕΙΡΟΤΕΡΗ ΧΡΟΝΙΑ ΕΔΩ ΚΑΙ 33 ΧΡΟΝΙΑ",
+      "url": "https://www.in.gr/2026/08/29/greece/red-code-gia-akraio-kindyno-na-ksespasei-fotia-to-savvato-o-xartis-provlepsis-me-tis-perioxes/",
+      "title": "Red Code για ακραίο κίνδυνο πυρκαγιάς το Σάββατο - Ο χάρτης πρόβλεψης με τις περιοχές",
+      "normalized_title": "RED CODE ΓΙΑ ΑΚΡΑΙΟ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ ΤΟ ΣΑΒΒΑΤΟ - Ο ΧΑΡΤΗΣ ΠΡΟΒΛΕΨΗΣ ΜΕ ΤΙΣ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/i-metoxi-tis-nike-odeyei-pros-ti-xeiroteri-xronia-edo-kai-33-xronia/",
-        "https://www.in.gr/2026/08/29/sports/football/olympiakos-programma-fotia-ton-septemvrio-ena-mats-ana-triimero-se-treis-diorganoseis/",
-        "https://www.in.gr/2026/08/29/go-fun/fizz/mantona-oi-kalokairines-stigmes-tis-stin-ellada-se-ena-video/"
+        "https://www.in.gr/2026/08/29/greece/red-code-gia-akraio-kindyno-na-ksespasei-fotia-to-savvato-o-xartis-provlepsis-me-tis-perioxes/",
+        "https://www.in.gr/2026/08/29/english-edition/greece-israel-to-sign-achilles-shield-air-defense-deal-on-mon/",
+        "https://www.in.gr/2026/08/29/pet-stories/skylos-i-apaitoumeni-peripoiisi-tou-meta-tis-diakopes-oi-allages-sti-symperifora-tou/",
+        "https://www.in.gr/2026/08/29/life/culture-live/to-ntokimanter-naza-gyristike-se-taratses-tou-israil-ypo-akra-mystikotita/",
+        "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/fysiko-aerio-sto-xamilotero-epipedo-edo-kai-13-xronia-ta-apothemata-stin-eyropi/"
       ],
-      "seen_at_utc": "2026-08-29T06:51:14.354497+00:00"
+      "seen_at_utc": "2026-08-29T07:17:05.726223+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T06:51:14.354629+00:00"
+  "updated_at_utc": "2026-08-29T07:17:05.726357+00:00"
 }
