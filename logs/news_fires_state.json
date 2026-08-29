@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564426604/deals-1-2-dis-sta-epaggelmatika-akinita/",
-      "title": "Deals 1,2 δισ. στα επαγγελματικά ακίνητα",
-      "normalized_title": "DEALS 1,2 ΔΙΣ. ΣΤΑ ΕΠΑΓΓΕΛΜΑΤΙΚΑ ΑΚΙΝΗΤΑ",
+      "url": "https://www.kathimerini.gr/economy/local/564426586/epistrofi-dyo-enoikion-gia-ekpaideytikoys-ygeionomikoys/",
+      "title": "Επιστροφή δύο ενοικίων για εκπαιδευτικούς, υγειονομικούς",
+      "normalized_title": "ΕΠΙΣΤΡΟΦΗ ΔΥΟ ΕΝΟΙΚΙΩΝ ΓΙΑ ΕΚΠΑΙΔΕΥΤΙΚΟΥΣ, ΥΓΕΙΟΝΟΜΙΚΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564426604/deals-1-2-dis-sta-epaggelmatika-akinita/",
-        "https://www.kathimerini.gr/k/k-magazine/564375901/ti-schesi-echei-o-podilatis-fainomeno-tantei-pogkatsar-me-to-ntopingk/",
-        "https://www.kathimerini.gr/society/564428212/me-trakter-ston-leyko-pyrgo-oi-agrotes-tin-imera-egkainion-tis-deth/"
+        "https://www.kathimerini.gr/economy/local/564426586/epistrofi-dyo-enoikion-gia-ekpaideytikoys-ygeionomikoys/"
       ],
-      "seen_at_utc": "2026-08-29T15:17:04.587349+00:00"
+      "seen_at_utc": "2026-08-29T15:51:19.988026+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1259,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871230/klopi-kalodiou-optikon-inon-apo-egatastaseis-tis-upa-proorizotan-gia-to-sustima-epikoinonion-kai-katagrafis-fonis/?utm_source=rss",
-      "title": "«Μπούκαραν» σε εγκαταστάσεις της Υπηρεσίας Πολιτικής Αεροπορίας στο Ελληνικό και έκλεψαν καλώδια για το σύστημα τηλεπικοινωνιών",
-      "normalized_title": "«ΜΠΟΥΚΑΡΑΝ» ΣΕ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΤΗΣ ΥΠΗΡΕΣΙΑΣ ΠΟΛΙΤΙΚΗΣ ΑΕΡΟΠΟΡΙΑΣ ΣΤΟ ΕΛΛΗΝΙΚΟ ΚΑΙ ΕΚΛΕΨΑΝ ΚΑΛΩΔΙΑ ΓΙΑ ΤΟ ΣΥΣΤΗΜΑ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1871241/sunolika-27-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-poies-periohes-einai-se-red-code-aurio/?utm_source=rss",
+      "title": "Συνολικά 27 αγροτοδασικές πυρκαγιές το τελευταίο 24ωρο στην Ελλάδα, ποιες περιοχές είναι σε Red Code αύριο",
+      "normalized_title": "ΣΥΝΟΛΙΚΑ 27 ΑΓΡΟΤΟΔΑΣΙΚΕΣ ΠΥΡΚΑΓΙΕΣ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ ΣΤΗΝ ΕΛΛΑΔΑ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΕ RED CODE ΑΥΡΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871230/klopi-kalodiou-optikon-inon-apo-egatastaseis-tis-upa-proorizotan-gia-to-sustima-epikoinonion-kai-katagrafis-fonis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871241/sunolika-27-agrotodasikes-purkagies-to-teleutaio-24oro-stin-ellada-poies-periohes-einai-se-red-code-aurio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871240/irakleio-speira-xafrise-pano-apo-59000-euro-me-tilefonikes-apates-9-thumata-kai-30-apopeires/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T15:17:04.587483+00:00"
+      "seen_at_utc": "2026-08-29T15:51:19.988185+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456630/neo-ellinotoyrkiko-mpra-nte-fer-gia-to-viomihaniko-horotaxiko-plaisio-aparadektoi-oi-toyrkikoi-ishyrismoi/",
-      "title": "Απάντηση ΥΠΕΞ στην Τουρκία για το Χωροταξικό: «Απαράδεκτοι ισχυρισμοί χωρίς καμία υπόσταση»",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΥΠΕΞ ΣΤΗΝ ΤΟΥΡΚΙΑ ΓΙΑ ΤΟ ΧΩΡΟΤΑΞΙΚΟ: «ΑΠΑΡΑΔΕΚΤΟΙ ΙΣΧΥΡΙΣΜΟΙ ΧΩΡΙΣ ΚΑΜΙΑ ΥΠΟΣΤΑΣΗ»",
+      "url": "https://www.efsyn.gr/kosmos/1456639/milo-giannopoylos-poios-einai-o-omogenis-akrodexios-aktivistis-poy-kindyneyei-me-apelasi-apo-ton-tramp/",
+      "title": "Μίλο Γιαννόπουλος: Ποιος είναι ο ομογενής ακροδεξιός ακτιβιστής που κινδυνεύει με απέλαση από τον Τραμπ",
+      "normalized_title": "ΜΙΛΟ ΓΙΑΝΝΟΠΟΥΛΟΣ: ΠΟΙΟΣ ΕΙΝΑΙ Ο ΟΜΟΓΕΝΗΣ ΑΚΡΟΔΕΞΙΟΣ ΑΚΤΙΒΙΣΤΗΣ ΠΟΥ ΚΙΝΔΥΝΕΥΕΙ ΜΕ ΑΠΕΛΑΣΗ ΑΠΟ ΤΟΝ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456630/neo-ellinotoyrkiko-mpra-nte-fer-gia-to-viomihaniko-horotaxiko-plaisio-aparadektoi-oi-toyrkikoi-ishyrismoi/",
-        "https://www.efsyn.gr/ellada/1456625/ypo-tin-ypokroysi-ton-marsarismaton-ton-trakter-oi-exaggelies-mitsotaki-sti-deth/"
+        "https://www.efsyn.gr/kosmos/1456639/milo-giannopoylos-poios-einai-o-omogenis-akrodexios-aktivistis-poy-kindyneyei-me-apelasi-apo-ton-tramp/",
+        "https://www.efsyn.gr/politiki/1456635/o-noys-toy-mitsotaki-syneheia-sto-pasok-pos-to-prasino-ginetai-mple/"
       ],
-      "seen_at_utc": "2026-08-29T15:17:04.587448+00:00"
+      "seen_at_utc": "2026-08-29T15:51:19.988139+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/thessaloniki-synelifthi-70xronos-gia-to-thanatiforo-troxaio-me-thyma-20xrono/",
-      "title": "Θεσσαλονίκη: Συνελήφθη 70χρονος για θανατηφόρο τροχαίο με θύμα 20χρονο",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 70ΧΡΟΝΟΣ ΓΙΑ ΘΑΝΑΤΗΦΟΡΟ ΤΡΟΧΑΙΟ ΜΕ ΘΥΜΑ 20ΧΡΟΝΟ",
+      "url": "https://www.in.gr/2026/08/29/sports/football/mourinio-den-mporeis-na-dineis-ti-xrysi-mpala-se-enan-paikti-epeidi-katektise-champions-league-i-mountial/",
+      "title": "Ο Ζοσέ Μουρίνιο για το ποιοι αξίζουν πραγματικά τη «Χρυσή μπάλα»",
+      "normalized_title": "Ο ΖΟΣΕ ΜΟΥΡΙΝΙΟ ΓΙΑ ΤΟ ΠΟΙΟΙ ΑΞΙΖΟΥΝ ΠΡΑΓΜΑΤΙΚΑ ΤΗ «ΧΡΥΣΗ ΜΠΑΛΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/thessaloniki-synelifthi-70xronos-gia-to-thanatiforo-troxaio-me-thyma-20xrono/",
-        "https://www.in.gr/2026/08/29/world/oi-amerikanoi-apetyxan-stratiotika-sto-iran-oi-nees-kyroseis-den-tha-exoun-kalytera-apotelesmata/"
+        "https://www.in.gr/2026/08/29/sports/football/mourinio-den-mporeis-na-dineis-ti-xrysi-mpala-se-enan-paikti-epeidi-katektise-champions-league-i-mountial/",
+        "https://www.in.gr/2026/08/29/world/germania-ektetamenes-kyroseis-se-varos-tis-mosxas-gia-tin-ypothesi-ton-drones-sto-aerodromio-tis-leipsias/",
+        "https://www.in.gr/2026/08/29/world/me-louloudia-kai-dakrya-i-norvigia-apoxaireta-ton-vasilia-xaralnt/"
       ],
-      "seen_at_utc": "2026-08-29T15:30:00.492649+00:00"
+      "seen_at_utc": "2026-08-29T15:51:19.988092+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T15:30:00.492750+00:00"
+  "updated_at_utc": "2026-08-29T15:51:19.988286+00:00"
 }
