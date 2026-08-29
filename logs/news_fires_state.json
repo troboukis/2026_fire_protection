@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564426598/iplo-mploko-se-energeiakoys-toyristes/",
-      "title": "∆ιπλό μπλόκο σε ενεργειακούς «τουρίστες»",
-      "normalized_title": "∆ΙΠΛΟ ΜΠΛΟΚΟ ΣΕ ΕΝΕΡΓΕΙΑΚΟΥΣ «ΤΟΥΡΙΣΤΕΣ»",
+      "url": "https://www.kathimerini.gr/society/564426196/karpa-i-alysida-zois-xekinaei-apo-ton-diplano-mas/",
+      "title": "ΚΑΡΠΑ: Η αλυσίδα ζωής ξεκινάει από τον διπλανό μας",
+      "normalized_title": "ΚΑΡΠΑ: Η ΑΛΥΣΙΔΑ ΖΩΗΣ ΞΕΚΙΝΑΕΙ ΑΠΟ ΤΟΝ ΔΙΠΛΑΝΟ ΜΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564426598/iplo-mploko-se-energeiakoys-toyristes/",
-        "https://www.kathimerini.gr/society/564428140/thessaloniki-gkrafiti-ston-stathmo-aretsoy-toy-metro-liges-ores-meta-ta-egkainia/"
+        "https://www.kathimerini.gr/society/564426196/karpa-i-alysida-zois-xekinaei-apo-ton-diplano-mas/"
       ],
-      "seen_at_utc": "2026-08-29T13:30:02.663035+00:00"
+      "seen_at_utc": "2026-08-29T13:51:21.867601+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1259,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871199/sumvolaio-thanatou-gia-didumous-stin-kupro-i-pagida-astunomikou-sto-dark-web-pou-eftase-sta-ihni-ton-draston/?utm_source=rss",
-      "title": "Συμβόλαιο θανάτου για δίδυμους στην Κύπρο: Η παγίδα αστυνομικού στο dark web που έφτασε στα ίχνη των δραστών",
-      "normalized_title": "ΣΥΜΒΟΛΑΙΟ ΘΑΝΑΤΟΥ ΓΙΑ ΔΙΔΥΜΟΥΣ ΣΤΗΝ ΚΥΠΡΟ: Η ΠΑΓΙΔΑ ΑΣΤΥΝΟΜΙΚΟΥ ΣΤΟ DARK WEB ΠΟΥ ΕΦΤΑΣΕ ΣΤΑ ΙΧΝΗ ΤΩΝ ΔΡΑΣΤΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1871206/thessaloniki-grafiti-ston-neo-stathmo-aretsou-tou-metro-mia-imera-meta-tin-episimi-leitourgia-tou-deite-video/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Γκράφιτι στον νέο σταθμό «Αρετσού» του Μετρό μία ημέρα μετά την επίσημη λειτουργία του, δείτε βίντεο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΓΚΡΑΦΙΤΙ ΣΤΟΝ ΝΕΟ ΣΤΑΘΜΟ «ΑΡΕΤΣΟΥ» ΤΟΥ ΜΕΤΡΟ ΜΙΑ ΗΜΕΡΑ ΜΕΤΑ ΤΗΝ ΕΠΙΣΗΜΗ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871199/sumvolaio-thanatou-gia-didumous-stin-kupro-i-pagida-astunomikou-sto-dark-web-pou-eftase-sta-ihni-ton-draston/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871206/thessaloniki-grafiti-ston-neo-stathmo-aretsou-tou-metro-mia-imera-meta-tin-episimi-leitourgia-tou-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871202/sunelifthi-36hronos-pou-ekane-ilektrosugollisi-stin-ko-upsilos-o-kindunos-ekdilosis-purkagias-sto-nisi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T13:30:02.663148+00:00"
+      "seen_at_utc": "2026-08-29T13:51:21.867808+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456606/tragodia-stin-ionia-odo-nekros-22hronos-motosikletistis/",
-      "title": "Τραγωδία στην Ιόνια Οδό: Νεκρός 22χρονος μοτοσικλετιστής",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΙΟΝΙΑ ΟΔΟ: ΝΕΚΡΟΣ 22ΧΡΟΝΟΣ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1456611/heiroyrgeia-karkinopathon-ston-agio-savva-oi-pente-erotiseis-akrita-ston-georgiadi-gia-to-reportaz-tis-ef-syn/",
+      "title": "Χειρουργεία καρκινοπαθών στον «Άγιο Σάββα»: Οι πέντε ερωτήσεις Ακρίτα στον Γεωργιάδη για το ρεπορτάζ της «Εφ.Συν.»",
+      "normalized_title": "ΧΕΙΡΟΥΡΓΕΙΑ ΚΑΡΚΙΝΟΠΑΘΩΝ ΣΤΟΝ «ΑΓΙΟ ΣΑΒΒΑ»: ΟΙ ΠΕΝΤΕ ΕΡΩΤΗΣΕΙΣ ΑΚΡΙΤΑ ΣΤΟΝ ΓΕΩΡΓΙΑΔΗ ΓΙΑ ΤΟ ΡΕΠΟΡΤΑΖ ΤΗΣ «ΕΦ.ΣΥΝ.»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456606/tragodia-stin-ionia-odo-nekros-22hronos-motosikletistis/"
+        "https://www.efsyn.gr/politiki/1456611/heiroyrgeia-karkinopathon-ston-agio-savva-oi-pente-erotiseis-akrita-ston-georgiadi-gia-to-reportaz-tis-ef-syn/",
+        "https://www.efsyn.gr/ellada/1456608/kos-synelifthi-36hronos-gia-ilektrosygkollisi/"
       ],
-      "seen_at_utc": "2026-08-29T13:30:02.663121+00:00"
+      "seen_at_utc": "2026-08-29T13:51:21.867757+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/ftiakse-ena-kalo-me-afineis-etsi-oi-dialogoi-fotia-tis-tragoudistrias-me-ton-dealer/",
-      "title": "«Φτιάξε ένα καλό, με αφήνεις έτσι;» – Οι διάλογοι «φωτιά» της τραγουδίστριας με τον dealer",
-      "normalized_title": "«ΦΤΙΑΞΕ ΕΝΑ ΚΑΛΟ, ΜΕ ΑΦΗΝΕΙΣ ΕΤΣΙ;» – ΟΙ ΔΙΑΛΟΓΟΙ «ΦΩΤΙΑ» ΤΗΣ ΤΡΑΓΟΥΔΙΣΤΡΙΑΣ ΜΕ ΤΟΝ DEALER",
+      "url": "https://www.in.gr/2026/08/29/world/agries-kataigides-saronoun-tin-kypro-plimmyrise-i-lemesos-zimies-stin-pafo-keraynos-xtypise-andra/",
+      "title": "Άγριες καταιγίδες σαρώνουν την Κύπρο: Πλημμύρισε η Λεμεσός, ζημιές στην Πάφο – Κεραυνός χτύπησε άνδρα",
+      "normalized_title": "ΑΓΡΙΕΣ ΚΑΤΑΙΓΙΔΕΣ ΣΑΡΩΝΟΥΝ ΤΗΝ ΚΥΠΡΟ: ΠΛΗΜΜΥΡΙΣΕ Η ΛΕΜΕΣΟΣ, ΖΗΜΙΕΣ ΣΤΗΝ ΠΑΦΟ – ΚΕΡΑΥΝΟΣ ΧΤΥΠΗΣΕ ΑΝΔΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/ftiakse-ena-kalo-me-afineis-etsi-oi-dialogoi-fotia-tis-tragoudistrias-me-ton-dealer/"
+        "https://www.in.gr/2026/08/29/world/agries-kataigides-saronoun-tin-kypro-plimmyrise-i-lemesos-zimies-stin-pafo-keraynos-xtypise-andra/",
+        "https://www.in.gr/2026/08/29/sports/football/liverpoul-notigxam-forest-2-2-orthia-sto-anfilnt-sto-telos-ti-glitosan-oi-kokkinoi/",
+        "https://www.in.gr/2026/08/29/greece/epixeirise-na-perasei-narkotika-stis-fylakes-trikalon-ta-eixe-krypsei-se-kordonia-panteloniou/",
+        "https://www.in.gr/2026/08/29/sports/football/champions-league/champions-league-oloi-oi-agones-tis-league-phase-to-analytiko-programma/",
+        "https://www.in.gr/2026/08/29/greece/nekros-22xronos-motosikletistis-meta-apo-troxaio-stin-ionia-odo-sto-ypsos-tis-riganis/"
       ],
-      "seen_at_utc": "2026-08-29T13:30:02.663087+00:00"
+      "seen_at_utc": "2026-08-29T13:51:21.867693+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T13:30:02.663252+00:00"
+  "updated_at_utc": "2026-08-29T13:51:21.867902+00:00"
 }
