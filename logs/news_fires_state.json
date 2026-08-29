@@ -1,14 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564428116/kozani-synelifthisan-enas-18chronos-kai-enas-anilikos-gia-apates-me-ti-methodo-tis-apascholisis/",
-      "title": "Κοζάνη: Συνελήφθησαν ένας 18χρονος και ένας ανήλικος για απάτες με τη μέθοδο της απασχόλησης",
-      "normalized_title": "ΚΟΖΑΝΗ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΕΝΑΣ 18ΧΡΟΝΟΣ ΚΑΙ ΕΝΑΣ ΑΝΗΛΙΚΟΣ ΓΙΑ ΑΠΑΤΕΣ ΜΕ ΤΗ ΜΕΘΟΔΟ ΤΗΣ ΑΠΑΣΧΟΛΗΣΗΣ",
+      "url": "https://www.kathimerini.gr/world/564428026/islandia-stis-kalpes-gia-tin-epanenarxi-ton-entaxiakon-diapragmateyseon-me-tin-e-e/",
+      "title": "Ισλανδία: Στις κάλπες για την επανέναρξη των ενταξιακών διαπραγματεύσεων με την Ε.Ε.",
+      "normalized_title": "ΙΣΛΑΝΔΙΑ: ΣΤΙΣ ΚΑΛΠΕΣ ΓΙΑ ΤΗΝ ΕΠΑΝΕΝΑΡΞΗ ΤΩΝ ΕΝΤΑΞΙΑΚΩΝ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΩΝ ΜΕ ΤΗΝ Ε.Ε.",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564428116/kozani-synelifthisan-enas-18chronos-kai-enas-anilikos-gia-apates-me-ti-methodo-tis-apascholisis/",
-        "https://www.kathimerini.gr/society/564428104/poly-ypsilos-kindynos-pyrkagias-ayrio-poies-perioches-tithentai-se-red-code/"
+        "https://www.kathimerini.gr/world/564428026/islandia-stis-kalpes-gia-tin-epanenarxi-ton-entaxiakon-diapragmateyseon-me-tin-e-e/",
+        "https://www.kathimerini.gr/world/564428119/germania-schediazei-kyroseis-kata-tis-rosias-gia-ta-drones-sto-aerodromio-tis-leipsias/",
+        "https://www.kathimerini.gr/opinion/readers/564426226/i-genia-toy-megaloy-chalasmoy-i-lixi-toy-emfylioy-i-siopi-toy-grammoy-kai-ena-tsigaro/",
+        "https://www.kathimerini.gr/k/k-magazine/564423802/mia-xechasmeni-iroida/",
+        "https://www.kathimerini.gr/opinion/readers/564426229/i-theodora-i-opera-kai-o-prokopios/",
+        "https://www.kathimerini.gr/opinion/readers/564426220/glypta-opos-i-metopi-sto-moyseio-loyvroy/",
+        "https://www.kathimerini.gr/opinion/readers/564426223/kai-oi-sykies-thymata-tis-yperdomisis/",
+        "https://www.kathimerini.gr/opinion/readers/564426211/o-giatros-anton-o-koryfaios-tsechof/",
+        "https://www.kathimerini.gr/society/564428131/seismos-4-richter-anoichta-tis-chalkis/"
       ],
-      "seen_at_utc": "2026-08-29T12:51:43.608278+00:00"
+      "seen_at_utc": "2026-08-29T13:17:06.482474+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,42 +1267,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871193/seismos-4-rihter-se-thalassia-periohi-dutika-tis-halkis/?utm_source=rss",
-      "title": "Σεισμός 4 Ρίχτερ σε θαλάσσια περιοχή δυτικά της Χάλκης",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4 ΡΙΧΤΕΡ ΣΕ ΘΑΛΑΣΣΙΑ ΠΕΡΙΟΧΗ ΔΥΤΙΚΑ ΤΗΣ ΧΑΛΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1871197/nekros-22hronos-motosikletistis-meta-apo-trohaio-stin-ionia-odo-sto-upsos-tis-riganis/?utm_source=rss",
+      "title": "Νεκρός 22χρονος μοτοσικλετιστής μετά από τροχαίο στην Ιόνια Οδό στο ύψος της Ρίγανης",
+      "normalized_title": "ΝΕΚΡΟΣ 22ΧΡΟΝΟΣ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗΣ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΣΤΗΝ ΙΟΝΙΑ ΟΔΟ ΣΤΟ ΥΨΟΣ ΤΗΣ ΡΙΓΑΝΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871193/seismos-4-rihter-se-thalassia-periohi-dutika-tis-halkis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871189/se-klima-vathias-odunis-to-teleutaio-adio-tis-18hronis-pou-pnigike-stous-katarraktes-dermata-sti-veroia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871188/polu-upsilos-kindunos-purkagias-aurio-se-kriti-kai-nisia-voreiou-kai-notiou-aigaiou-poies-periohes-tha-einai-se-red-code/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871197/nekros-22hronos-motosikletistis-meta-apo-trohaio-stin-ionia-odo-sto-upsos-tis-riganis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T12:51:43.608384+00:00"
+      "seen_at_utc": "2026-08-29T13:17:06.482589+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1456438/oi-argyres-arenes-tis-trelas-mas/",
-      "title": "Οι αργυρές αρένες της τρέλας μας",
-      "normalized_title": "ΟΙ ΑΡΓΥΡΕΣ ΑΡΕΝΕΣ ΤΗΣ ΤΡΕΛΑΣ ΜΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1456603/vandalisan-me-to-kalimera-to-metro-tis-thessalonikis/",
+      "title": "Βανδάλισαν με το «καλημέρα» το μετρό της Θεσσαλονίκης",
+      "normalized_title": "ΒΑΝΔΑΛΙΣΑΝ ΜΕ ΤΟ «ΚΑΛΗΜΕΡΑ» ΤΟ ΜΕΤΡΟ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1456438/oi-argyres-arenes-tis-trelas-mas/",
-        "https://www.efsyn.gr/stiles/1456416/ti-tha-kanoyme-horis-ton-netaniahoy/",
-        "https://www.efsyn.gr/stiles/1456436/apostaseis-asfaleias/",
-        "https://www.efsyn.gr/stiles/1456428/o-tsoykalas-i-koinoniologia-kai-mia-parakatathiki-gia-toys-neoys/",
-        "https://www.efsyn.gr/ellada/1456594/poly-ypsilos-kindynos-pyrkagias-tin-kyriaki-poies-periohes-mpainoyn-se-red-code/",
-        "https://www.efsyn.gr/life/1456597/i-olga-kefalogianni-fotografithike-mesa-sta-iliotropia-eikona/"
+        "https://www.efsyn.gr/ellada/1456603/vandalisan-me-to-kalimera-to-metro-tis-thessalonikis/",
+        "https://www.efsyn.gr/gallery/o-mikros-koylis-9/",
+        "https://www.efsyn.gr/gallery/ennea-pente-9/",
+        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-tastra/",
+        "https://www.efsyn.gr/gallery/dolly-parton/"
       ],
-      "seen_at_utc": "2026-08-29T12:51:43.608357+00:00"
+      "seen_at_utc": "2026-08-29T13:17:06.482563+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/se-synagermo-kriti-kai-nisia-aigaiou-poly-ypsilos-kindynos-pyrkagias/",
-      "title": "Σε συναγερμό Κρήτη και νησιά Αιγαίου – Πολύ υψηλός κίνδυνος πυρκαγιάς",
-      "normalized_title": "ΣΕ ΣΥΝΑΓΕΡΜΟ ΚΡΗΤΗ ΚΑΙ ΝΗΣΙΑ ΑΙΓΑΙΟΥ – ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.in.gr/2026/08/29/world/nepal-kina-stous-683-oi-nekroi-tha-xreiastoun-polla-dis-gia-anoikodomisi/",
+      "title": "Στους 683 οι νεκροί σε Νεπάλ και Κίνα - «Θα χρειαστούν πολλά δισ. για ανοικοδόμηση»",
+      "normalized_title": "ΣΤΟΥΣ 683 ΟΙ ΝΕΚΡΟΙ ΣΕ ΝΕΠΑΛ ΚΑΙ ΚΙΝΑ - «ΘΑ ΧΡΕΙΑΣΤΟΥΝ ΠΟΛΛΑ ΔΙΣ. ΓΙΑ ΑΝΟΙΚΟΔΟΜΗΣΗ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/se-synagermo-kriti-kai-nisia-aigaiou-poly-ypsilos-kindynos-pyrkagias/",
-        "https://www.in.gr/2026/08/29/world/venezouela-me-to-pistoli-ston-krotafo-oi-ipa-vazoun-xeri-sto-petrelaio-tis-xoras-ti-kseroume-gia-ti-symfonia/",
-        "https://www.in.gr/2026/08/29/greece/kriti-fotia-se-apothikeytiko-xoro-pyrinelaiourgeiou-stin-ierapetra/",
-        "https://www.in.gr/2026/08/29/world/tha-ekoves-ena-aionovio-dentro-gia-na-xtiseis-ti-epeleksan-dyo-amerikanoi/"
+        "https://www.in.gr/2026/08/29/world/nepal-kina-stous-683-oi-nekroi-tha-xreiastoun-polla-dis-gia-anoikodomisi/",
+        "https://www.in.gr/2026/08/29/greece/seismos-4-vathmon-tis-klimakas-rixter-sti-xalki/",
+        "https://www.in.gr/2026/08/29/world/i-eyropi-kanei-to-megalo-peirama-rythmisis-tis-ai-oi-big-tech-mprosta-stous-neous-kanones/",
+        "https://www.in.gr/2026/08/29/go-fun/fizz/vanity-fair-o-papas-leon-id%ce%84-anamesa-stous-pio-kalontymenous-tou-2026/"
       ],
-      "seen_at_utc": "2026-08-29T12:51:43.608332+00:00"
+      "seen_at_utc": "2026-08-29T13:17:06.482535+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T12:51:43.608485+00:00"
+  "updated_at_utc": "2026-08-29T13:17:06.482667+00:00"
 }
