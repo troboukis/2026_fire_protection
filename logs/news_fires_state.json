@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564426349/nepal-opos-ai/",
-      "title": "Νεπάλ όπως ΑΙ",
-      "normalized_title": "ΝΕΠΑΛ ΟΠΩΣ ΑΙ",
+      "url": "https://www.kathimerini.gr/politics/564426172/entos-kai-ektos-sto-steit-ntipartment-i-scholi-tis-chalkis/",
+      "title": "Εντός και Εκτός: Στο Στέιτ Ντιπάρτμεντ η Σχολή της Χάλκης",
+      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΣΤΟ ΣΤΕΙΤ ΝΤΙΠΑΡΤΜΕΝΤ Η ΣΧΟΛΗ ΤΗΣ ΧΑΛΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564426349/nepal-opos-ai/",
-        "https://www.kathimerini.gr/opinion/564426343/kalodio-enimerosi-i-egkrisi/",
-        "https://www.kathimerini.gr/opinion/564426346/pleiodosia-yposcheseon-kai-kapelon/"
+        "https://www.kathimerini.gr/politics/564426172/entos-kai-ektos-sto-steit-ntipartment-i-scholi-tis-chalkis/",
+        "https://www.kathimerini.gr/politics/564426121/theoreio-ethnikistiki-dexia/",
+        "https://www.kathimerini.gr/world/564427678/nepal-stoys-633-oi-nekroi-tha-chreiastoyn-3-5-4-5-dis-eyro-gia-tin-anoikodomisi/",
+        "https://www.kathimerini.gr/opinion/564426340/meta-ton-glykero-symvivasmo/"
       ],
-      "seen_at_utc": "2026-08-29T05:29:57.614988+00:00"
+      "seen_at_utc": "2026-08-29T05:51:06.477786+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,25 +1272,29 @@
       "seen_at_utc": "2026-08-29T05:17:01.779275+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/anazitontas-ton-hameno-psifoforo/",
-      "title": "Αναζητώντας τον χαμένο ψηφοφόρο",
-      "normalized_title": "ΑΝΑΖΗΤΩΝΤΑΣ ΤΟΝ ΧΑΜΕΝΟ ΨΗΦΟΦΟΡΟ",
+      "url": "https://www.efsyn.gr/nisides/1456245/i-politistiki-atzenta-tis-evdomadas-29-08-05-09-26/",
+      "title": "Η πολιτιστική ατζέντα της εβδομάδας [29.08-05.09.26]",
+      "normalized_title": "Η ΠΟΛΙΤΙΣΤΙΚΗ ΑΤΖΕΝΤΑ ΤΗΣ ΕΒΔΟΜΑΔΑΣ [29.08-05.09.26]",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/anazitontas-ton-hameno-psifoforo/",
-        "https://www.efsyn.gr/ellada/1456409/eortologio-poioi-giortazoyn-simera-29-aygoystoy/"
+        "https://www.efsyn.gr/nisides/1456245/i-politistiki-atzenta-tis-evdomadas-29-08-05-09-26/",
+        "https://www.efsyn.gr/ellada/1456424/o-kairos-simera-thyellodeis-voriades-kai-ptosi-tis-thermokrasias-akraios-paramenei-o-kindynos-pyrkagias/",
+        "https://www.efsyn.gr/kosmos/1456420/o-tramp-anakoinose-istoriki-symfonia-gia-ton-elegho-toy-petrelaioy-tis-venezoyelas/",
+        "https://www.efsyn.gr/ellada/1456383/thriler-me-ton-afanismo-zoon-sti-lesvo-para-to-pagoma-synehizontai-oi-thanatoseis-kopadion/",
+        "https://www.efsyn.gr/kosmos/1456415/nepal-dramatiki-ayxisi-ton-agnooymenon-metaxy-ayton-517-xenoi-vinteo-apo-tin-katarreysi-toy-pagetona/"
       ],
-      "seen_at_utc": "2026-08-29T05:29:57.615067+00:00"
+      "seen_at_utc": "2026-08-29T05:51:06.477849+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/football/pos-o-mourinio-allakse-rolo-ston-vinisious/",
-      "title": "Πως ο Μουρίνιο άλλαξε ρόλο στον Βινίσιους",
-      "normalized_title": "ΠΩΣ Ο ΜΟΥΡΙΝΙΟ ΑΛΛΑΞΕ ΡΟΛΟ ΣΤΟΝ ΒΙΝΙΣΙΟΥΣ",
+      "url": "https://www.in.gr/2026/08/29/sports/basketball/ekneyristike-kai-apoxorise-apo-ti-synenteyksi-typou-o-spanoulis-ti-rotas-tora-eimaste-omada-mpasket-vid/",
+      "title": "Εκνευρίστηκε και αποχώρησε από τη συνέντευξη Τύπου ο Σπανούλης: «Τι ρωτάς τώρα; Είμαστε ομάδα μπάσκετ…» (vid)",
+      "normalized_title": "ΕΚΝΕΥΡΙΣΤΗΚΕ ΚΑΙ ΑΠΟΧΩΡΗΣΕ ΑΠΟ ΤΗ ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ Ο ΣΠΑΝΟΥΛΗΣ: «ΤΙ ΡΩΤΑΣ ΤΩΡΑ; ΕΙΜΑΣΤΕ ΟΜΑΔΑ ΜΠΑΣΚΕΤ…» (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/football/pos-o-mourinio-allakse-rolo-ston-vinisious/",
-        "https://www.in.gr/2026/08/29/life/music/pyks-laks-to-neo-rantevou-tous-sto-katrakeio-theatro-nikaias/"
+        "https://www.in.gr/2026/08/29/sports/basketball/ekneyristike-kai-apoxorise-apo-ti-synenteyksi-typou-o-spanoulis-ti-rotas-tora-eimaste-omada-mpasket-vid/",
+        "https://www.in.gr/2026/08/29/go-fun/social/arkas-i-kalimera-tou-savvatou-13/",
+        "https://www.in.gr/2026/08/29/plus/vita/kalyteri-ki-apo-ton-kafe-einai-i-askisi-to-antidoto-sto-ksenyxti/"
       ],
-      "seen_at_utc": "2026-08-29T05:29:57.615033+00:00"
+      "seen_at_utc": "2026-08-29T05:51:06.477834+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T05:29:57.615153+00:00"
+  "updated_at_utc": "2026-08-29T05:51:06.477912+00:00"
 }
