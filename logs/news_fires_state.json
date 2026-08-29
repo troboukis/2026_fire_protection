@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428332/kakokairia-stin-kypro-enas-nekros-apo-vythisi-skafoys/",
-      "title": "Κακοκαιρία στην Κύπρο: Ενας νεκρός και δύο τραυματίες – Καταστράφηκαν σκάφη",
-      "normalized_title": "ΚΑΚΟΚΑΙΡΙΑ ΣΤΗΝ ΚΥΠΡΟ: ΕΝΑΣ ΝΕΚΡΟΣ ΚΑΙ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ – ΚΑΤΑΣΤΡΑΦΗΚΑΝ ΣΚΑΦΗ",
+      "url": "https://www.kathimerini.gr/society/564426187/ti-provlepei-to-neo-chorotaxiko-plaisio-gia-ti-viomichania/",
+      "title": "Τι προβλέπει το νέο χωροταξικό πλαίσιο για τη βιομηχανία",
+      "normalized_title": "ΤΙ ΠΡΟΒΛΕΠΕΙ ΤΟ ΝΕΟ ΧΩΡΟΤΑΞΙΚΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΗ ΒΙΟΜΗΧΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428332/kakokairia-stin-kypro-enas-nekros-apo-vythisi-skafoys/"
+        "https://www.kathimerini.gr/society/564426187/ti-provlepei-to-neo-chorotaxiko-plaisio-gia-ti-viomichania/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564426118/i-aneggichti-paros-mesa-apo-ta-matia-toy-spyroy-papaloyka-kai-toy-syllekti-toy/"
       ],
-      "seen_at_utc": "2026-08-29T17:29:53.908975+00:00"
+      "seen_at_utc": "2026-08-29T17:51:14.722747+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1271,28 @@
       "seen_at_utc": "2026-08-29T16:51:25.246394+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456659/fir-athinon-eklepsan-apo-tin-ypa-ta-kalodia-gia-tin-egkatastasi-systimatos-epikoinonion-eihan-halko/",
-      "title": "FIR Αθηνών: Έκλεψαν από την ΥΠΑ τα καλώδια για την εγκατάσταση συστήματος επικοινωνιών- Είχαν χαλκό",
-      "normalized_title": "FIR ΑΘΗΝΩΝ: ΕΚΛΕΨΑΝ ΑΠΟ ΤΗΝ ΥΠΑ ΤΑ ΚΑΛΩΔΙΑ ΓΙΑ ΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΣΥΣΤΗΜΑΤΟΣ ΕΠΙΚΟΙΝΩΝΙΩΝ- ΕΙΧΑΝ ΧΑΛΚΟ",
+      "url": "https://www.efsyn.gr/athlitismos/1456661/paok-thlasi-o-loyse-kai-ektos-apostolis-gia-to-peristeri/",
+      "title": "ΠΑΟΚ: Θλάση ο Λουσέ και εκτός αποστολής για το Περιστέρι",
+      "normalized_title": "ΠΑΟΚ: ΘΛΑΣΗ Ο ΛΟΥΣΕ ΚΑΙ ΕΚΤΟΣ ΑΠΟΣΤΟΛΗΣ ΓΙΑ ΤΟ ΠΕΡΙΣΤΕΡΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456659/fir-athinon-eklepsan-apo-tin-ypa-ta-kalodia-gia-tin-egkatastasi-systimatos-epikoinonion-eihan-halko/",
-        "https://www.efsyn.gr/ellada/1456656/i-paradosiaki-giorti-tis-sardelas-tin-kyriaki-sto-limani-tis-prevezas/"
+        "https://www.efsyn.gr/athlitismos/1456661/paok-thlasi-o-loyse-kai-ektos-apostolis-gia-to-peristeri/",
+        "https://www.efsyn.gr/oikonomia/1456458/stin-amyna-pontaroyn-oi-etaireies-tehnologias/"
       ],
-      "seen_at_utc": "2026-08-29T17:17:04.845158+00:00"
+      "seen_at_utc": "2026-08-29T17:51:14.722846+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/sports/football/anakoinothike-apo-ton-olympiako-o-pentersen-sta-erythroleyka-o-norvigos-mpak-pic/",
-      "title": "Ανακοινώθηκε από τον Ολυμπιακό ο Πέντερσεν – Στα ερυθρόλευκα ο Νορβηγός μπακ (pic)",
-      "normalized_title": "ΑΝΑΚΟΙΝΩΘΗΚΕ ΑΠΟ ΤΟΝ ΟΛΥΜΠΙΑΚΟ Ο ΠΕΝΤΕΡΣΕΝ – ΣΤΑ ΕΡΥΘΡΟΛΕΥΚΑ Ο ΝΟΡΒΗΓΟΣ ΜΠΑΚ (PIC)",
+      "url": "https://www.in.gr/2026/08/29/greece/fotia-se-spiti-sti-mytilini-apegklovistike-zeygari-ilikiomenon/",
+      "title": "Φωτιά σε σπίτι στη Μυτιλήνη – Απεγκλωβίστηκε ζευγάρι ηλικιωμένων",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΣΠΙΤΙ ΣΤΗ ΜΥΤΙΛΗΝΗ – ΑΠΕΓΚΛΩΒΙΣΤΗΚΕ ΖΕΥΓΑΡΙ ΗΛΙΚΙΩΜΕΝΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/sports/football/anakoinothike-apo-ton-olympiako-o-pentersen-sta-erythroleyka-o-norvigos-mpak-pic/",
-        "https://www.in.gr/2026/08/29/world/diplomatiko-epeisodio-agkyras-kievou-sto-ypourgeio-eksoterikon-o-oukranos-presvis-meta-ta-xtypimata-se-tourkika-ploia/"
+        "https://www.in.gr/2026/08/29/greece/fotia-se-spiti-sti-mytilini-apegklovistike-zeygari-ilikiomenon/",
+        "https://www.in.gr/2026/08/29/in-science/perivallon-b-science/o-aoratos-polemos-pos-oi-sygkrouseis-dilitiriazoun-ton-planiti/",
+        "https://www.in.gr/2026/08/29/sports/football/ntortmount-amvourgo-proto-gkol-o-konstantelias-asist-o-karetsas-sto-1-0-vids/",
+        "https://www.in.gr/2026/08/29/greece/mpores-express-apopse-me-vroxes-kai-kataigides-poies-perioxes-tha-epireastoun/",
+        "https://www.in.gr/2026/08/29/politics/diplomatia/einai-o-dialogos-me-tin-tourkia-deigma-ypoxoritikotitas-kai-kateynasmou/"
       ],
-      "seen_at_utc": "2026-08-29T17:29:53.909028+00:00"
+      "seen_at_utc": "2026-08-29T17:51:14.722813+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T17:29:53.909116+00:00"
+  "updated_at_utc": "2026-08-29T17:51:14.722929+00:00"
 }
