@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564426277/penthos-gia-ton-eksygchronisti-monarchi/",
-      "title": "Πένθος για τον εκσυγχρονιστή μονάρχη",
-      "normalized_title": "ΠΕΝΘΟΣ ΓΙΑ ΤΟΝ ΕΚΣΥΓΧΡΟΝΙΣΤΗ ΜΟΝΑΡΧΗ",
+      "url": "https://www.kathimerini.gr/society/564427729/pyrkagia-se-egkataleleimmeno-ktirio-stin-3is-septemvrioy-se-exelixi-kykloforiakes-rythmiseis/",
+      "title": "Πυρκαγιά σε εγκαταλελειμμένο κτίριο στην 3ης Σεπτεμβρίου – Σε εξέλιξη κυκλοφοριακές ρυθμίσεις",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΕΓΚΑΤΑΛΕΛΕΙΜΜΕΝΟ ΚΤΙΡΙΟ ΣΤΗΝ 3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ – ΣΕ ΕΞΕΛΙΞΗ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564426277/penthos-gia-ton-eksygchronisti-monarchi/",
-        "https://www.kathimerini.gr/world/564426298/to-taxidi-sto-sympan-xekinaei/",
-        "https://www.kathimerini.gr/society/564427711/dyo-thanatifora-trochaia-me-motosikletes-se-megara-kai-thessaloniki/"
+        "https://www.kathimerini.gr/society/564427729/pyrkagia-se-egkataleleimmeno-ktirio-stin-3is-septemvrioy-se-exelixi-kykloforiakes-rythmiseis/",
+        "https://www.kathimerini.gr/society/564427720/irakleio-rekor-epivaton-apo-tin-proti-mera-toy-aygoystoy-sto-nikos-kazantzakis/"
       ],
-      "seen_at_utc": "2026-08-29T07:17:05.726163+00:00"
+      "seen_at_utc": "2026-08-29T07:30:02.630793+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,29 +1270,26 @@
       "seen_at_utc": "2026-08-29T07:17:05.726286+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456472/stin-epidayro-me-ton-gio-toy-o-nikos-androylakis-eikones/",
-      "title": "Στην Επίδαυρο με τον γιο του ο Νίκος Ανδρουλάκης [εικόνες]",
-      "normalized_title": "ΣΤΗΝ ΕΠΙΔΑΥΡΟ ΜΕ ΤΟΝ ΓΙΟ ΤΟΥ Ο ΝΙΚΟΣ ΑΝΔΡΟΥΛΑΚΗΣ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/athlitismos/1456395/panathinaikos-an-sovareytei-tote-pernaei/",
+      "title": "Παναθηναϊκός: Αν σοβαρευτεί, τότε περνάει",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΑΝ ΣΟΒΑΡΕΥΤΕΙ, ΤΟΤΕ ΠΕΡΝΑΕΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456472/stin-epidayro-me-ton-gio-toy-o-nikos-androylakis-eikones/",
-        "https://www.efsyn.gr/politiki/1456461/mitsotakis-kata-androylaki-syntassetai-me-aytoys-poy-prin-apo-mia-10etia-pigan-na-katastrepsoyn-ti-hora/",
-        "https://www.efsyn.gr/kosmos/1456462/ipa-synelifthi-o-akrodexios-omogenis-milo-giannopoylos-apo-tin-ice/"
+        "https://www.efsyn.gr/athlitismos/1456395/panathinaikos-an-sovareytei-tote-pernaei/",
+        "https://www.efsyn.gr/athlitismos/1456392/o-olympiakos-koitaei-psila-arkei-na-einai-kanonikos/",
+        "https://www.efsyn.gr/ellada/1456480/fotia-se-ktirio-stin-3is-septemvrioy-kykloforiakes-rythmiseis-sto-simeio/"
       ],
-      "seen_at_utc": "2026-08-29T07:17:05.726254+00:00"
+      "seen_at_utc": "2026-08-29T07:30:02.630839+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/red-code-gia-akraio-kindyno-na-ksespasei-fotia-to-savvato-o-xartis-provlepsis-me-tis-perioxes/",
-      "title": "Red Code για ακραίο κίνδυνο πυρκαγιάς το Σάββατο - Ο χάρτης πρόβλεψης με τις περιοχές",
-      "normalized_title": "RED CODE ΓΙΑ ΑΚΡΑΙΟ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ ΤΟ ΣΑΒΒΑΤΟ - Ο ΧΑΡΤΗΣ ΠΡΟΒΛΕΨΗΣ ΜΕ ΤΙΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.in.gr/2026/08/29/greece/pos-i-santorini-egine-pagkosmios-proorismos-ti-apokalyptei-touristikos-odigos-55-eton/",
+      "title": "Πώς η Σαντορίνη έγινε παγκόσμιος προορισμός – Τι αποκαλύπτει τουριστικός οδηγός 55 ετών",
+      "normalized_title": "ΠΩΣ Η ΣΑΝΤΟΡΙΝΗ ΕΓΙΝΕ ΠΑΓΚΟΣΜΙΟΣ ΠΡΟΟΡΙΣΜΟΣ – ΤΙ ΑΠΟΚΑΛΥΠΤΕΙ ΤΟΥΡΙΣΤΙΚΟΣ ΟΔΗΓΟΣ 55 ΕΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/red-code-gia-akraio-kindyno-na-ksespasei-fotia-to-savvato-o-xartis-provlepsis-me-tis-perioxes/",
-        "https://www.in.gr/2026/08/29/english-edition/greece-israel-to-sign-achilles-shield-air-defense-deal-on-mon/",
-        "https://www.in.gr/2026/08/29/pet-stories/skylos-i-apaitoumeni-peripoiisi-tou-meta-tis-diakopes-oi-allages-sti-symperifora-tou/",
-        "https://www.in.gr/2026/08/29/life/culture-live/to-ntokimanter-naza-gyristike-se-taratses-tou-israil-ypo-akra-mystikotita/",
-        "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/fysiko-aerio-sto-xamilotero-epipedo-edo-kai-13-xronia-ta-apothemata-stin-eyropi/"
+        "https://www.in.gr/2026/08/29/greece/pos-i-santorini-egine-pagkosmios-proorismos-ti-apokalyptei-touristikos-odigos-55-eton/",
+        "https://www.in.gr/2026/08/29/sports/football/super-league-praksi-2i-ksekinima-se-volo-kai-agrinio/"
       ],
-      "seen_at_utc": "2026-08-29T07:17:05.726223+00:00"
+      "seen_at_utc": "2026-08-29T07:30:02.630826+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T07:17:05.726357+00:00"
+  "updated_at_utc": "2026-08-29T07:30:02.630895+00:00"
 }
