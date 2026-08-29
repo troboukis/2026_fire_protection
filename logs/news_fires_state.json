@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564427648/oi-ipa-kai-i-venezoyela-anakoinosan-istoriki-petrelaiki-symfonia/",
-      "title": "Οι ΗΠΑ και η Βενεζουέλα ανακοίνωσαν «ιστορική» πετρελαϊκή συμφωνία",
-      "normalized_title": "ΟΙ ΗΠΑ ΚΑΙ Η ΒΕΝΕΖΟΥΕΛΑ ΑΝΑΚΟΙΝΩΣΑΝ «ΙΣΤΟΡΙΚΗ» ΠΕΤΡΕΛΑΙΚΗ ΣΥΜΦΩΝΙΑ",
+      "url": "https://www.kathimerini.gr/society/564427660/thyellodeis-anemoi-eos-kai-8-mpofor-akraios-kindynos-pyrkagias-se-dyo-perifereies/",
+      "title": "Θυελλώδεις άνεμοι έως και 8 μποφόρ – Ακραίος κίνδυνος πυρκαγιάς σε δύο περιφέρειες",
+      "normalized_title": "ΘΥΕΛΛΩΔΕΙΣ ΑΝΕΜΟΙ ΕΩΣ ΚΑΙ 8 ΜΠΟΦΟΡ – ΑΚΡΑΙΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΕ ΔΥΟ ΠΕΡΙΦΕΡΕΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564427648/oi-ipa-kai-i-venezoyela-anakoinosan-istoriki-petrelaiki-symfonia/",
-        "https://www.kathimerini.gr/politics/564426154/perifereies-varometro-gia-n-d/",
-        "https://www.kathimerini.gr/istoria/564426727/san-simera-29-aygoystoy-1915-kai-1982-gennietai-kai-pethainei-i-ingkrint-mpergkman/"
+        "https://www.kathimerini.gr/society/564427660/thyellodeis-anemoi-eos-kai-8-mpofor-akraios-kindynos-pyrkagias-se-dyo-perifereies/",
+        "https://www.kathimerini.gr/visual/photography/564426451/as-to-paradechtoyme/"
       ],
-      "seen_at_utc": "2026-08-29T04:51:18.411517+00:00"
+      "seen_at_utc": "2026-08-29T05:17:01.779223+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,13 +1260,14 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871052/seismos-45-rihter-stin-arkadia-sto-astros-to-epikedro/?utm_source=rss",
-      "title": "Σεισμός 4,5 Ρίχτερ στην Αρκαδία, στο Άστρος το επίκεντρο",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4,5 ΡΙΧΤΕΡ ΣΤΗΝ ΑΡΚΑΔΙΑ, ΣΤΟ ΑΣΤΡΟΣ ΤΟ ΕΠΙΚΕΝΤΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1871061/puknonoun-ta-dromologia-sto-tram-apo-7-septemvriou-mikroteres-anamones-se-sudagma-pikrodafni-kai-voula-sef/?utm_source=rss",
+      "title": "Πυκνώνουν τα δρομολόγια στο τραμ, μικρότερες αναμονές σε Σύνταγμα-Πικροδάφνη και Βούλα-ΣΕΦ",
+      "normalized_title": "ΠΥΚΝΩΝΟΥΝ ΤΑ ΔΡΟΜΟΛΟΓΙΑ ΣΤΟ ΤΡΑΜ, ΜΙΚΡΟΤΕΡΕΣ ΑΝΑΜΟΝΕΣ ΣΕ ΣΥΝΤΑΓΜΑ-ΠΙΚΡΟΔΑΦΝΗ ΚΑΙ ΒΟΥΛΑ-ΣΕΦ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871052/seismos-45-rihter-stin-arkadia-sto-astros-to-epikedro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871061/puknonoun-ta-dromologia-sto-tram-apo-7-septemvriou-mikroteres-anamones-se-sudagma-pikrodafni-kai-voula-sef/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871056/kairos-eos-38-vathmous-i-thermokrasia-kataigides-sta-voreia-kai-8-bofor-sto-aigaio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T04:17:02.452030+00:00"
+      "seen_at_utc": "2026-08-29T05:17:01.779275+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/athlitismos/1456366/panathinaikos-prasinos-kai-episima-o-loyza-ypegrapse-symvolaio-trion-eton/",
@@ -1279,36 +1279,19 @@
       "seen_at_utc": "2026-08-28T21:17:02.820993+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/life/music/tessera-skatharia-ligos-magkrit-kai-to-londino-i-anatomia-tis-fotografias-ton-fotografion/",
-      "title": "Τέσσερα «Σκαθάρια», λίγος Μαγκρίτ και το Λονδίνο: Η ανατομία της φωτογραφίας των φωτογραφιών",
-      "normalized_title": "ΤΕΣΣΕΡΑ «ΣΚΑΘΑΡΙΑ», ΛΙΓΟΣ ΜΑΓΚΡΙΤ ΚΑΙ ΤΟ ΛΟΝΔΙΝΟ: Η ΑΝΑΤΟΜΙΑ ΤΗΣ ΦΩΤΟΓΡΑΦΙΑΣ ΤΩΝ ΦΩΤΟΓΡΑΦΙΩΝ",
+      "url": "https://www.in.gr/2026/08/29/greece/kairos-voriades-eos-8-mpofor-kai-ptosi-tis-thermokrasias-to-savvato/",
+      "title": "Βοριάδες έως 8 μποφόρ και πτώση της θερμοκρασίας το Σάββατο",
+      "normalized_title": "ΒΟΡΙΑΔΕΣ ΕΩΣ 8 ΜΠΟΦΟΡ ΚΑΙ ΠΤΩΣΗ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΤΟ ΣΑΒΒΑΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/life/music/tessera-skatharia-ligos-magkrit-kai-to-londino-i-anatomia-tis-fotografias-ton-fotografion/",
-        "https://www.in.gr/2026/08/29/plus/vita/ti-einai-o-kanonas-ton-630-kai-pos-voithaei-na-adeiasoume-to-myalo-mas/",
-        "https://www.in.gr/2026/08/29/in-science/ai/texniti-noimosyni-den-exei-simasia-an-kryvetai-piso-apo-ena-keimeno-alla-an-oi-anthropoi-eksakolouthoun-na-skeftontai/",
-        "https://www.in.gr/2026/08/29/go-fun/fizz/rompert-nte-niro-den-kryvei-tis-enoxes-tou-gia-ton-syndyasmo-patrotitas-karieras/",
-        "https://www.in.gr/2026/08/29/greece/programma-prolamvano-gia-paxysarkia-parakalo-perimenete/",
-        "https://www.in.gr/2026/08/29/world/i-arktiki-o-tramp-kai-to-eyropaiko-dilimma-gia-tin-apomakri-islandia/",
-        "https://www.in.gr/2026/08/29/world/o-tramp-moirazei-ti-livyi-alla-poios-einai-o-ksenodoxos/",
-        "https://www.in.gr/2026/08/29/in-science/perivallon-b-science/okeanoi-sta-akra-to-el-ninio-egine-sxedon-40-isxyrotero-mesa-se-40-xronia/",
-        "https://www.in.gr/2026/08/29/greece/oi-10-allages-kleidia-sto-klironomiko-dikaio/",
-        "https://www.in.gr/2026/08/29/economy/syntaksiouxoi-douleia-meta-ti-syntaksi-me-mponous/",
-        "https://www.in.gr/2026/08/29/economy/paketo-53-dis-eyro-gia-energeia-stegi-metakiniseis/",
-        "https://www.in.gr/2026/08/29/go-fun/social/social-media-alitheyei-i-theoria-tis-tritis-romis-tou-megalou-israil-kai-tou-diamelismou-tis-tourkias/",
-        "https://www.in.gr/2026/08/29/uncategorized/seismos-45-rixter-stin-arkadia-me-epikentro-sto-astros-kynourias/",
-        "https://www.in.gr/2026/08/29/politics/epikairotita/katexomena-paremvasi-erxiourman-me-epistoles-se-gkouteres-fon-nter-laien-kai-mpartselona/",
-        "https://www.in.gr/2026/08/29/world/oukrania-espeysmeni-apomakrynsi-katoikon-epeita-apo-rosiko-pligma-se-apothiki-ekriktikon/",
-        "https://www.in.gr/2026/08/29/world/kolomvia-i-nea-akrodeksia-kyvernisi-anoigei-ton-dromo-gia-aeropsekasmous-me-glyfosati/",
-        "https://www.in.gr/2026/08/29/world/oukrania-o-fentorof-analamvanei-rolo-symvoulou-sto-ypourgeio-amynas-tis-italias/",
-        "https://www.in.gr/2026/08/29/economy/diethnis-oikonomia/o-tramp-anakoinonei-megali-ypo-tin-patronia-tou-petrelaiki-symfonia-me-ti-venezouela/",
-        "https://www.in.gr/2026/08/29/world/ougkanta-apostratos-ekdidetai-stis-ipa-katigoroumenos-gia-polisi-oplon-se-meksikanika-kartel/",
-        "https://www.in.gr/2026/08/29/world/isimerinos-o-proin-proedros-moreno-krinetai-enoxos-gia-dorolipsia-apo-kineziko-kataskeyastiko-omilo/",
-        "https://www.in.gr/2026/08/29/world/livanos-i-xezmpolax-aporriptei-ti-nea-symfonia-tou-me-to-israil-kai-arneitai-na-paradothei/",
-        "https://www.in.gr/2026/08/29/world/i-paragogi-venzinis-tis-rosias-meiothike-sto-70-tis-egxorias-zitisis-sta-teli-aygoustou/",
-        "https://www.in.gr/2026/08/29/plus/medianews/sta-nea-savvatokyriako-enimerosi-oxi-adeia/"
+        "https://www.in.gr/2026/08/29/greece/kairos-voriades-eos-8-mpofor-kai-ptosi-tis-thermokrasias-to-savvato/",
+        "https://www.in.gr/2026/08/29/life/geysi/syntages-dyo-pagota-gia-to-telos-tou-kalokairiou/",
+        "https://www.in.gr/2026/08/29/politics/politiki-grammateia/tsipras-antipalos-o-mitsotakis-stoxos-i-diakyvernisi-pairnoun-mprosta-oi-kommatikes-organoseis-tis-elas/",
+        "https://www.in.gr/2026/08/29/editorial/sovara-tora-mono-i-nd-mporei-na-eggyithei-statherotita-kai-prokopi/",
+        "https://www.in.gr/2026/08/29/world/nepal-kseperasan-tous-600-oi-nekroi-apo-tis-fonikes-plimmyres-2-500-oi-agnooumenoi/",
+        "https://www.in.gr/2026/08/29/plus/vita/proino-i-synitheia-einai-pio-simantiki-apo-oso-nomizeis/"
       ],
-      "seen_at_utc": "2026-08-29T04:17:02.451989+00:00"
+      "seen_at_utc": "2026-08-29T05:17:01.779255+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T04:51:18.411598+00:00"
+  "updated_at_utc": "2026-08-29T05:17:01.779330+00:00"
 }
