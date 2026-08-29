@@ -1,15 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564427837/oykrania-toylachiston-27-nekroi-se-rosiki-aeroporiki-epidromi-stin-perifereia-toy-kievoy/",
-      "title": "Ουκρανία: Τουλάχιστον 27 νεκροί σε ρωσική αεροπορική επιδρομή στην περιφέρεια του Κιέβου",
-      "normalized_title": "ΟΥΚΡΑΝΙΑ: ΤΟΥΛΑΧΙΣΤΟΝ 27 ΝΕΚΡΟΙ ΣΕ ΡΩΣΙΚΗ ΑΕΡΟΠΟΡΙΚΗ ΕΠΙΔΡΟΜΗ ΣΤΗΝ ΠΕΡΙΦΕΡΕΙΑ ΤΟΥ ΚΙΕΒΟΥ",
+      "url": "https://www.kathimerini.gr/society/564427864/serres-synelifthisan-treis-anilikoi-gia-klopes-dikyklon-kai-diarrixeis/",
+      "title": "Σέρρες: Συνελήφθησαν τρεις ανήλικοι για κλοπές δικύκλων και διαρρήξεις",
+      "normalized_title": "ΣΕΡΡΕΣ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΤΡΕΙΣ ΑΝΗΛΙΚΟΙ ΓΙΑ ΚΛΟΠΕΣ ΔΙΚΥΚΛΩΝ ΚΑΙ ΔΙΑΡΡΗΞΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564427837/oykrania-toylachiston-27-nekroi-se-rosiki-aeroporiki-epidromi-stin-perifereia-toy-kievoy/",
-        "https://www.kathimerini.gr/society/564427861/apodothike-stin-topiki-koinonia-meta-ta-erga-stereosis-kai-syntirisis-o-enetikos-limenas-naypaktoy/",
-        "https://www.kathimerini.gr/life/hours/564427858/frontizontas-toys-okeanoys/"
+        "https://www.kathimerini.gr/society/564427864/serres-synelifthisan-treis-anilikoi-gia-klopes-dikyklon-kai-diarrixeis/",
+        "https://www.kathimerini.gr/opinion/564426076/i-stegi-ton-leitoyrgon/",
+        "https://www.kathimerini.gr/k/k-magazine/564423766/ena-thriler-gia-tin-emfyli-via/",
+        "https://www.kathimerini.gr/opinion/564426532/to-kratos-echei-panta-dikio/",
+        "https://www.kathimerini.gr/opinion/564426526/to-makry-eyropaiko-kalokairi/",
+        "https://www.kathimerini.gr/opinion/564426070/prolipsi-i-synthikologisi-me-tin-katastrofi/",
+        "https://www.kathimerini.gr/opinion/564426157/i-apeyktaia-epistrofi/",
+        "https://www.kathimerini.gr/opinion/564426367/to-mathima-tis-ntoli/"
       ],
-      "seen_at_utc": "2026-08-29T09:51:13.733833+00:00"
+      "seen_at_utc": "2026-08-29T10:17:04.214084+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1266,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871143/sunelifthi-70hronos-gia-to-thanatiforo-trohaio-ston-hortiati-me-thuma-20hrono-motosikletisti/?utm_source=rss",
-      "title": "Συνελήφθη 70χρονος για το θανατηφόρο τροχαίο στον Χορτιάτη με θύμα 20χρονο μοτοσικλετιστή",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 70ΧΡΟΝΟΣ ΓΙΑ ΤΟ ΘΑΝΑΤΗΦΟΡΟ ΤΡΟΧΑΙΟ ΣΤΟΝ ΧΟΡΤΙΑΤΗ ΜΕ ΘΥΜΑ 20ΧΡΟΝΟ ΜΟΤΟΣΙΚΛΕΤΙΣΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1871152/sunelifthisan-treis-anilikoi-gia-klopes-dikuklon-kai-diarrixeis-stis-serres/?utm_source=rss",
+      "title": "Συνελήφθησαν τρεις ανήλικοι για κλοπές δικύκλων και διαρρήξεις στις Σέρρες",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗΣΑΝ ΤΡΕΙΣ ΑΝΗΛΙΚΟΙ ΓΙΑ ΚΛΟΠΕΣ ΔΙΚΥΚΛΩΝ ΚΑΙ ΔΙΑΡΡΗΞΕΙΣ ΣΤΙΣ ΣΕΡΡΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871143/sunelifthi-70hronos-gia-to-thanatiforo-trohaio-ston-hortiati-me-thuma-20hrono-motosikletisti/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871152/sunelifthisan-treis-anilikoi-gia-klopes-dikuklon-kai-diarrixeis-stis-serres/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T09:29:56.941635+00:00"
+      "seen_at_utc": "2026-08-29T10:17:04.214171+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456535/thlipsi-sti-veroia-gia-ti-18hroni-katerina-poy-pnigike-stoys-katarraktes-ti-katethese-o-filos-tis-gia-ti-moiraia-voytia/",
-      "title": "Βέροια: Σήμερα η κηδεία της 18χρονης που πνίγηκε στους καταρράκτες – Τι κατέθεσε ο φίλος της για τη μοιραία βουτιά",
-      "normalized_title": "ΒΕΡΟΙΑ: ΣΗΜΕΡΑ Η ΚΗΔΕΙΑ ΤΗΣ 18ΧΡΟΝΗΣ ΠΟΥ ΠΝΙΓΗΚΕ ΣΤΟΥΣ ΚΑΤΑΡΡΑΚΤΕΣ – ΤΙ ΚΑΤΕΘΕΣΕ Ο ΦΙΛΟΣ ΤΗΣ ΓΙΑ ΤΗ ΜΟΙΡΑΙΑ ΒΟΥΤΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1456544/epistrefoyn-stin-athina-oi-ekdromeis-toy-aygoystoy-ayximeni-i-kinisi-sta-limania/",
+      "title": "Επιστρέφουν στην Αθήνα οι εκδρομείς του Αυγούστου: Αυξημένη η κίνηση στα λιμάνια",
+      "normalized_title": "ΕΠΙΣΤΡΕΦΟΥΝ ΣΤΗΝ ΑΘΗΝΑ ΟΙ ΕΚΔΡΟΜΕΙΣ ΤΟΥ ΑΥΓΟΥΣΤΟΥ: ΑΥΞΗΜΕΝΗ Η ΚΙΝΗΣΗ ΣΤΑ ΛΙΜΑΝΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456535/thlipsi-sti-veroia-gia-ti-18hroni-katerina-poy-pnigike-stoys-katarraktes-ti-katethese-o-filos-tis-gia-ti-moiraia-voytia/",
-        "https://www.efsyn.gr/politiki/1456530/marinakis-emfasi-sti-mesaia-taxi-tis-mme-toys-synepeis-kai-tis-oikogeneies-to-stigma-ton-exaggelion-sti-deth/"
+        "https://www.efsyn.gr/ellada/1456544/epistrefoyn-stin-athina-oi-ekdromeis-toy-aygoystoy-ayximeni-i-kinisi-sta-limania/"
       ],
-      "seen_at_utc": "2026-08-29T09:51:13.733910+00:00"
+      "seen_at_utc": "2026-08-29T10:17:04.214141+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/economy/oikonomikes-eidiseis/gouors-se-fed-exoume-douleia-na-kanoume-an-o-plithorismos-den-pesei-sto-2/",
-      "title": "Fed: Σήμα Γουόρς για αύξηση επιτοκίων εάν δεν υποχωρήσει ο πληθωρισμός",
-      "normalized_title": "FED: ΣΗΜΑ ΓΟΥΟΡΣ ΓΙΑ ΑΥΞΗΣΗ ΕΠΙΤΟΚΙΩΝ ΕΑΝ ΔΕΝ ΥΠΟΧΩΡΗΣΕΙ Ο ΠΛΗΘΩΡΙΣΜΟΣ",
+      "url": "https://www.in.gr/2026/08/29/sports/football/ston-ofi-o-kenan-kontro-pic/",
+      "title": "Στον ΟΦΗ ο Κενάν Κόντρο (pic)",
+      "normalized_title": "ΣΤΟΝ ΟΦΗ Ο ΚΕΝΑΝ ΚΟΝΤΡΟ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/economy/oikonomikes-eidiseis/gouors-se-fed-exoume-douleia-na-kanoume-an-o-plithorismos-den-pesei-sto-2/",
-        "https://www.in.gr/2026/08/29/sports/football/olympiakos-i-apostoli-gia-to-mats-me-ton-astera-mesa-o-gkonsales/",
-        "https://www.in.gr/2026/08/29/politics/politiki-grammateia/afthodis-pyretos-i-katastasi-sti-lesvo-einai-ekriktiki-lene-oi-eyrovouleytes-tou-kke/"
+        "https://www.in.gr/2026/08/29/sports/football/ston-ofi-o-kenan-kontro-pic/",
+        "https://www.in.gr/2026/08/29/world/pezeskian-kalei-tous-iranous-na-apodexthoun-tis-epiptoseis-ton-amerikanikon-kyroseon/",
+        "https://www.in.gr/2026/08/29/world/islandia-stis-kalpes-gia-tin-epanenarksi-ton-entaksiakon-diapragmateyseon-me-tin-eyropaiki-enosi/",
+        "https://www.in.gr/2026/08/29/go-fun/fizz/tzenifer-lopez-mantona-i-mpritnei-proin-paragogos-tou-bbc-apokalyptei-tis-megalyteres-ntives-tou-theamatos/"
       ],
-      "seen_at_utc": "2026-08-29T09:51:13.733872+00:00"
+      "seen_at_utc": "2026-08-29T10:17:04.214114+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T09:51:13.733963+00:00"
+  "updated_at_utc": "2026-08-29T10:17:04.214233+00:00"
 }
