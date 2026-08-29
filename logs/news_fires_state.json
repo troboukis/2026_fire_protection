@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564427660/thyellodeis-anemoi-eos-kai-8-mpofor-akraios-kindynos-pyrkagias-se-dyo-perifereies/",
-      "title": "Θυελλώδεις άνεμοι έως και 8 μποφόρ – Ακραίος κίνδυνος πυρκαγιάς σε δύο περιφέρειες",
-      "normalized_title": "ΘΥΕΛΛΩΔΕΙΣ ΑΝΕΜΟΙ ΕΩΣ ΚΑΙ 8 ΜΠΟΦΟΡ – ΑΚΡΑΙΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΕ ΔΥΟ ΠΕΡΙΦΕΡΕΙΕΣ",
+      "url": "https://www.kathimerini.gr/opinion/564426349/nepal-opos-ai/",
+      "title": "Νεπάλ όπως ΑΙ",
+      "normalized_title": "ΝΕΠΑΛ ΟΠΩΣ ΑΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564427660/thyellodeis-anemoi-eos-kai-8-mpofor-akraios-kindynos-pyrkagias-se-dyo-perifereies/",
-        "https://www.kathimerini.gr/visual/photography/564426451/as-to-paradechtoyme/"
+        "https://www.kathimerini.gr/opinion/564426349/nepal-opos-ai/",
+        "https://www.kathimerini.gr/opinion/564426343/kalodio-enimerosi-i-egkrisi/",
+        "https://www.kathimerini.gr/opinion/564426346/pleiodosia-yposcheseon-kai-kapelon/"
       ],
-      "seen_at_utc": "2026-08-29T05:17:01.779223+00:00"
+      "seen_at_utc": "2026-08-29T05:29:57.614988+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1271,25 @@
       "seen_at_utc": "2026-08-29T05:17:01.779275+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1456366/panathinaikos-prasinos-kai-episima-o-loyza-ypegrapse-symvolaio-trion-eton/",
-      "title": "Παναθηναϊκός: «Πράσινος» και επίσημα ο Λούζα – Υπέγραψε συμβόλαιο τριών ετών",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: «ΠΡΑΣΙΝΟΣ» ΚΑΙ ΕΠΙΣΗΜΑ Ο ΛΟΥΖΑ – ΥΠΕΓΡΑΨΕ ΣΥΜΒΟΛΑΙΟ ΤΡΙΩΝ ΕΤΩΝ",
+      "url": "https://www.efsyn.gr/protoselida/anazitontas-ton-hameno-psifoforo/",
+      "title": "Αναζητώντας τον χαμένο ψηφοφόρο",
+      "normalized_title": "ΑΝΑΖΗΤΩΝΤΑΣ ΤΟΝ ΧΑΜΕΝΟ ΨΗΦΟΦΟΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1456366/panathinaikos-prasinos-kai-episima-o-loyza-ypegrapse-symvolaio-trion-eton/"
+        "https://www.efsyn.gr/protoselida/anazitontas-ton-hameno-psifoforo/",
+        "https://www.efsyn.gr/ellada/1456409/eortologio-poioi-giortazoyn-simera-29-aygoystoy/"
       ],
-      "seen_at_utc": "2026-08-28T21:17:02.820993+00:00"
+      "seen_at_utc": "2026-08-29T05:29:57.615067+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/29/greece/kairos-voriades-eos-8-mpofor-kai-ptosi-tis-thermokrasias-to-savvato/",
-      "title": "Βοριάδες έως 8 μποφόρ και πτώση της θερμοκρασίας το Σάββατο",
-      "normalized_title": "ΒΟΡΙΑΔΕΣ ΕΩΣ 8 ΜΠΟΦΟΡ ΚΑΙ ΠΤΩΣΗ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΤΟ ΣΑΒΒΑΤΟ",
+      "url": "https://www.in.gr/2026/08/29/sports/football/pos-o-mourinio-allakse-rolo-ston-vinisious/",
+      "title": "Πως ο Μουρίνιο άλλαξε ρόλο στον Βινίσιους",
+      "normalized_title": "ΠΩΣ Ο ΜΟΥΡΙΝΙΟ ΑΛΛΑΞΕ ΡΟΛΟ ΣΤΟΝ ΒΙΝΙΣΙΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/29/greece/kairos-voriades-eos-8-mpofor-kai-ptosi-tis-thermokrasias-to-savvato/",
-        "https://www.in.gr/2026/08/29/life/geysi/syntages-dyo-pagota-gia-to-telos-tou-kalokairiou/",
-        "https://www.in.gr/2026/08/29/politics/politiki-grammateia/tsipras-antipalos-o-mitsotakis-stoxos-i-diakyvernisi-pairnoun-mprosta-oi-kommatikes-organoseis-tis-elas/",
-        "https://www.in.gr/2026/08/29/editorial/sovara-tora-mono-i-nd-mporei-na-eggyithei-statherotita-kai-prokopi/",
-        "https://www.in.gr/2026/08/29/world/nepal-kseperasan-tous-600-oi-nekroi-apo-tis-fonikes-plimmyres-2-500-oi-agnooumenoi/",
-        "https://www.in.gr/2026/08/29/plus/vita/proino-i-synitheia-einai-pio-simantiki-apo-oso-nomizeis/"
+        "https://www.in.gr/2026/08/29/sports/football/pos-o-mourinio-allakse-rolo-ston-vinisious/",
+        "https://www.in.gr/2026/08/29/life/music/pyks-laks-to-neo-rantevou-tous-sto-katrakeio-theatro-nikaias/"
       ],
-      "seen_at_utc": "2026-08-29T05:17:01.779255+00:00"
+      "seen_at_utc": "2026-08-29T05:29:57.615033+00:00"
     }
   },
-  "updated_at_utc": "2026-08-29T05:17:01.779330+00:00"
+  "updated_at_utc": "2026-08-29T05:29:57.615153+00:00"
 }
