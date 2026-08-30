@@ -1,14 +1,32 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428818/nayagio-stin-keryneia-vinteo-apo-ti-stigmi-poy-mpainoyn-nera-sto-ploio/",
-      "title": "Ναυάγιο στην Κερύνεια: Βίντεο από τη στιγμή που μπαίνουν νερά στο πλοίο",
-      "normalized_title": "ΝΑΥΑΓΙΟ ΣΤΗΝ ΚΕΡΥΝΕΙΑ: ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΣΤΙΓΜΗ ΠΟΥ ΜΠΑΙΝΟΥΝ ΝΕΡΑ ΣΤΟ ΠΛΟΙΟ",
+      "url": "https://www.kathimerini.gr/opinion/564426802/toyrismos-kai-aytorrythmisi/",
+      "title": "Τουρισμός και αυτορρύθμιση",
+      "normalized_title": "ΤΟΥΡΙΣΜΟΣ ΚΑΙ ΑΥΤΟΡΡΥΘΜΙΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428818/nayagio-stin-keryneia-vinteo-apo-ti-stigmi-poy-mpainoyn-nera-sto-ploio/",
-        "https://www.kathimerini.gr/world/564428842/minyma-toy-madoyro-apo-ti-fylaki-i-venezoyela-tha-anagennithei-nees-fotografies/"
+        "https://www.kathimerini.gr/opinion/564426802/toyrismos-kai-aytorrythmisi/",
+        "https://www.kathimerini.gr/opinion/564427147/kaloi-oi-exoplismoi-alla/",
+        "https://www.kathimerini.gr/opinion/564427153/o-agonas-gia-ta-marmara/",
+        "https://www.kathimerini.gr/opinion/564426862/pernontas-to-fiord/",
+        "https://www.kathimerini.gr/opinion/564427150/kentra-kai-arktos/",
+        "https://www.kathimerini.gr/opinion/564427183/to-alithes-dimosionomiko-freno/",
+        "https://www.kathimerini.gr/opinion/564426988/gynaikoktonies-xana/",
+        "https://www.kathimerini.gr/opinion/564427144/xegelontas-to-systima/",
+        "https://www.kathimerini.gr/opinion/564427180/ta-polla-prosopa-ton-therinon-diakopon/",
+        "https://www.kathimerini.gr/opinion/564427192/oi-diakopes-ton-igeton/",
+        "https://www.kathimerini.gr/opinion/564427189/to-kalo-kai-to-kako-senario/",
+        "https://www.kathimerini.gr/opinion/564427285/exi-dis-etisios-pos/",
+        "https://www.kathimerini.gr/opinion/564426985/i-alitheia-mias-optasias-i-monadiki-ntoli-parton/",
+        "https://www.kathimerini.gr/opinion/sketches/564428767/skitso-toy-dimitri-chantzopoyloy-30-08-26/",
+        "https://www.kathimerini.gr/opinion/564427168/to-chreos-toy-politikoy-systimatos/",
+        "https://www.kathimerini.gr/opinion/sketches/564428770/skitso-toy-andrea-petroylaki-30-08-26/",
+        "https://www.kathimerini.gr/opinion/564427162/dianoeisthe-ti-einai-o-dianooymenos/",
+        "https://www.kathimerini.gr/opinion/564427177/ti-mathame-apo-to-tameio-anakampsis/",
+        "https://www.kathimerini.gr/opinion/564427195/syneisferontas-sto-mellon-tis-eyropis/",
+        "https://www.kathimerini.gr/opinion/564427186/o-parrisiastis-stefanos-manos/"
       ],
-      "seen_at_utc": "2026-08-30T16:51:06.969523+00:00"
+      "seen_at_utc": "2026-08-30T17:17:06.003461+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,28 +1287,30 @@
       "seen_at_utc": "2026-08-30T16:51:06.969703+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456912/o-oikonomikos-symvoylos-toy-mitsotaki-diapseydei-oti-o-misthos-teleionei-stis-15-toy-mina/",
-      "title": "Ο οικονομικός σύμβουλος του Μητσοτάκη διαψεύδει ότι ο μισθός τελειώνει στις 15 του μήνα",
-      "normalized_title": "Ο ΟΙΚΟΝΟΜΙΚΟΣ ΣΥΜΒΟΥΛΟΣ ΤΟΥ ΜΗΤΣΟΤΑΚΗ ΔΙΑΨΕΥΔΕΙ ΟΤΙ Ο ΜΙΣΘΟΣ ΤΕΛΕΙΩΝΕΙ ΣΤΙΣ 15 ΤΟΥ ΜΗΝΑ",
+      "url": "https://www.efsyn.gr/kosmos/1456922/anikoysta-pragmata-stis-ipa-to-amerikaniko-google-maps-vaftise-ti-limni-ontario-se-limni-tis-amerikis/",
+      "title": "Ανήκουστα πράγματα στις ΗΠΑ: Το αμερικανικό Google Maps βάφτισε τη λίμνη Οντάριο σε λίμνη της Αμερικής",
+      "normalized_title": "ΑΝΗΚΟΥΣΤΑ ΠΡΑΓΜΑΤΑ ΣΤΙΣ ΗΠΑ: ΤΟ ΑΜΕΡΙΚΑΝΙΚΟ GOOGLE MAPS ΒΑΦΤΙΣΕ ΤΗ ΛΙΜΝΗ ΟΝΤΑΡΙΟ ΣΕ ΛΙΜΝΗ ΤΗΣ ΑΜΕΡΙΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456912/o-oikonomikos-symvoylos-toy-mitsotaki-diapseydei-oti-o-misthos-teleionei-stis-15-toy-mina/",
-        "https://www.efsyn.gr/ellada/1456910/prosfeygei-sti-dikaiosyni-i-ypa-gia-tin-klopi-ton-kalodion-den-epireazetai-to-ergo-toy-vcrs/"
+        "https://www.efsyn.gr/kosmos/1456922/anikoysta-pragmata-stis-ipa-to-amerikaniko-google-maps-vaftise-ti-limni-ontario-se-limni-tis-amerikis/",
+        "https://www.efsyn.gr/kosmos/1456915/nayagio-katamaran-stin-keryneia-synelifthi-o-kapetanios-kai-7-meli-toy-pliromatos-stoys-8-oi-nekroi/"
       ],
-      "seen_at_utc": "2026-08-30T16:51:06.969659+00:00"
+      "seen_at_utc": "2026-08-30T17:17:06.003585+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/greece/apisteyto-peristatiko-sta-eksarxeia-diarriktes-kai-astynomikoi-egklovistikan-se-spiti-kai-tous-apegklovise-i-pyrosvestiki/",
-      "title": "Απίστευτο περιστατικό στα Εξάρχεια: Διαρρήκτες και αστυνομικοί εγκλωβίστηκαν σε σπίτι και τους… απεγκλώβισε η Πυροσβεστική",
-      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΠΕΡΙΣΤΑΤΙΚΟ ΣΤΑ ΕΞΑΡΧΕΙΑ: ΔΙΑΡΡΗΚΤΕΣ ΚΑΙ ΑΣΤΥΝΟΜΙΚΟΙ ΕΓΚΛΩΒΙΣΤΗΚΑΝ ΣΕ ΣΠΙΤΙ ΚΑΙ ΤΟΥΣ… ΑΠΕΓΚΛΩΒΙΣΕ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
+      "url": "https://www.in.gr/2026/08/30/world/fygadeytike-espeysmena-apo-tis-ipa-o-gios-tou-netaniaxou-oi-arxes-entopisan-sovari-apeili-kata-tis-zois-tou/",
+      "title": "Φυγαδεύτηκε εσπευσμένα από τις ΗΠΑ ο γιος του Νετανιάχου – Οι αρχές εντόπισαν «σοβαρή απειλή κατά της ζωής του»",
+      "normalized_title": "ΦΥΓΑΔΕΥΤΗΚΕ ΕΣΠΕΥΣΜΕΝΑ ΑΠΟ ΤΙΣ ΗΠΑ Ο ΓΙΟΣ ΤΟΥ ΝΕΤΑΝΙΑΧΟΥ – ΟΙ ΑΡΧΕΣ ΕΝΤΟΠΙΣΑΝ «ΣΟΒΑΡΗ ΑΠΕΙΛΗ ΚΑΤΑ ΤΗΣ ΖΩΗΣ ΤΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/greece/apisteyto-peristatiko-sta-eksarxeia-diarriktes-kai-astynomikoi-egklovistikan-se-spiti-kai-tous-apegklovise-i-pyrosvestiki/",
-        "https://www.in.gr/2026/08/30/sports/football/atromitos-paok-me-teilor-sta-xaf-oi-thessalonikeis-ksekina-kai-o-taxa-ali-pic/",
-        "https://www.in.gr/2026/08/30/go-fun/fizz/to-teleytaio-savvatokyriako-tou-aygoustou-vrike-katamesti-ti-mykono-xamos-sta-matogiannia/",
-        "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/ypsila-enoikia-elleipsi-spition-kai-sto-vathos-airbnb-metra-tis-ee-gia-na-frenarei-tis-enoikiaseis-apo-touristes/",
-        "https://www.in.gr/2026/08/30/sports/football/tzolakis-ti-apisteyto-ksekinima-stin-premier-league-pics/"
+        "https://www.in.gr/2026/08/30/world/fygadeytike-espeysmena-apo-tis-ipa-o-gios-tou-netaniaxou-oi-arxes-entopisan-sovari-apeili-kata-tis-zois-tou/",
+        "https://www.in.gr/2026/08/30/sports/football/aek-oi-11-tou-nikolits-gia-to-mats-me-tin-kifisia-pic/",
+        "https://www.in.gr/2026/08/30/greece/plisiase-tous-38c-i-thermokrasia-erxontai-vroxes-kai-afrikaniki-skoni/",
+        "https://www.in.gr/2026/08/30/sports/football/olympiakos-i-11ada-gia-to-paixnidi-me-ton-astera-stin-tripoli-pic/",
+        "https://www.in.gr/matchcenter/5943234/",
+        "https://www.in.gr/2026/08/30/world/nayagio-stin-keryneia-xeiropedes-ston-kapetanio-tou-katamaran-kai-to-pliroma/",
+        "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/ypsila-enoikia-elleipsi-spition-kai-sto-vathos-airbnb-metra-tis-ee-gia-na-frenarei-tis-enoikiaseis-apo-touristes/"
       ],
-      "seen_at_utc": "2026-08-30T16:51:06.969584+00:00"
+      "seen_at_utc": "2026-08-30T17:17:06.003532+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T16:51:06.969775+00:00"
+  "updated_at_utc": "2026-08-30T17:17:06.003667+00:00"
 }
