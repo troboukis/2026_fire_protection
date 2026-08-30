@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564427366/arthro-toy-alexandroy-vasilikoy-stin-k-anagki-stirixis-mikron-xenodocheion/",
-      "title": "Αρθρο του Αλέξανδρου Βασιλικού στην «Κ»: Ανάγκη στήριξης μικρών ξενοδοχείων",
-      "normalized_title": "ΑΡΘΡΟ ΤΟΥ ΑΛΕΞΑΝΔΡΟΥ ΒΑΣΙΛΙΚΟΥ ΣΤΗΝ «Κ»: ΑΝΑΓΚΗ ΣΤΗΡΙΞΗΣ ΜΙΚΡΩΝ ΞΕΝΟΔΟΧΕΙΩΝ",
+      "url": "https://www.kathimerini.gr/culture/564425938/ntoyente-i-metamorfosi-tis-fonis-mesa-mas/",
+      "title": "«Ντουέντε», η μεταμόρφωση της φωνής (μέσα μας)",
+      "normalized_title": "«ΝΤΟΥΕΝΤΕ», Η ΜΕΤΑΜΟΡΦΩΣΗ ΤΗΣ ΦΩΝΗΣ (ΜΕΣΑ ΜΑΣ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564427366/arthro-toy-alexandroy-vasilikoy-stin-k-anagki-stirixis-mikron-xenodocheion/"
+        "https://www.kathimerini.gr/culture/564425938/ntoyente-i-metamorfosi-tis-fonis-mesa-mas/",
+        "https://www.kathimerini.gr/economy/564427345/se-ischy-apo-ayrio-i-symfonia-gia-meiosi-timon/",
+        "https://www.kathimerini.gr/world/564428896/pyra-netaniachoy-kata-e-e-gia-ti-dytiki-ochthi/"
       ],
-      "seen_at_utc": "2026-08-30T17:29:58.433668+00:00"
+      "seen_at_utc": "2026-08-30T18:16:58.855961+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871530/i-kathimerini-sunitheia-sto-timoni-ehei-prostimo-4000-euro/?utm_source=rss",
-      "title": "Η καθημερινή συνήθεια στο τιμόνι έχει πρόστιμο 4.000 ευρώ",
-      "normalized_title": "Η ΚΑΘΗΜΕΡΙΝΗ ΣΥΝΗΘΕΙΑ ΣΤΟ ΤΙΜΟΝΙ ΕΧΕΙ ΠΡΟΣΤΙΜΟ 4.000 ΕΥΡΩ",
+      "url": "https://www.protothema.gr/greece/article/1871534/autokinito-tulihthike-stis-floges-meta-ta-diodia-tou-elaiona-stin-patron-korinthou-sto-reuma-pros-korintho-deite-video/?utm_source=rss",
+      "title": "Αυτοκίνητο τυλίχθηκε στις φλόγες στην Πατρών-Κορίνθου στο ρεύμα προς Κόρινθο, δείτε βίντεο",
+      "normalized_title": "ΑΥΤΟΚΙΝΗΤΟ ΤΥΛΙΧΘΗΚΕ ΣΤΙΣ ΦΛΟΓΕΣ ΣΤΗΝ ΠΑΤΡΩΝ-ΚΟΡΙΝΘΟΥ ΣΤΟ ΡΕΥΜΑ ΠΡΟΣ ΚΟΡΙΝΘΟ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871530/i-kathimerini-sunitheia-sto-timoni-ehei-prostimo-4000-euro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871529/o-anthropotheos-katastrefei-ti-gi-leei-o-patriarhis-vartholomaios-gia-tin-klimatiki-allagi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871534/autokinito-tulihthike-stis-floges-meta-ta-diodia-tou-elaiona-stin-patron-korinthou-sto-reuma-pros-korintho-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871532/friki-stin-kupseli-vrethike-nekros-vrefos-mesa-se-doheio-pou-itan-krummeno-se-valitsa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T17:51:15.127092+00:00"
+      "seen_at_utc": "2026-08-30T18:16:58.856112+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1456927/arhiepiskopos-amerikis-elpidoforos-ofeiloyme-na-diasfalisoyme-tin-prostasia-tis-thriskeytikis-latreias-sti-hora/",
-      "title": "Αρχιεπίσκοπος Αμερικής Ελπιδοφόρος: Οφείλουμε να διασφαλίσουμε την προστασία της θρησκευτικής λατρείας στη χώρα",
-      "normalized_title": "ΑΡΧΙΕΠΙΣΚΟΠΟΣ ΑΜΕΡΙΚΗΣ ΕΛΠΙΔΟΦΟΡΟΣ: ΟΦΕΙΛΟΥΜΕ ΝΑ ΔΙΑΣΦΑΛΙΣΟΥΜΕ ΤΗΝ ΠΡΟΣΤΑΣΙΑ ΤΗΣ ΘΡΗΣΚΕΥΤΙΚΗΣ ΛΑΤΡΕΙΑΣ ΣΤΗ ΧΩΡΑ",
+      "url": "https://www.efsyn.gr/kosmos/1456934/o-gios-toy-netaniahoy-epestrepse-espeysmena-sto-israil-apo-tis-ipa-kindyneye-i-zoi-toy/",
+      "title": "Ο γιος του Νετανιάχου επέστρεψε εσπευσμένα στο Ισραήλ από τις ΗΠΑ – Κινδύνευε η ζωή του",
+      "normalized_title": "Ο ΓΙΟΣ ΤΟΥ ΝΕΤΑΝΙΑΧΟΥ ΕΠΕΣΤΡΕΨΕ ΕΣΠΕΥΣΜΕΝΑ ΣΤΟ ΙΣΡΑΗΛ ΑΠΟ ΤΙΣ ΗΠΑ – ΚΙΝΔΥΝΕΥΕ Η ΖΩΗ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1456927/arhiepiskopos-amerikis-elpidoforos-ofeiloyme-na-diasfalisoyme-tin-prostasia-tis-thriskeytikis-latreias-sti-hora/"
+        "https://www.efsyn.gr/kosmos/1456934/o-gios-toy-netaniahoy-epestrepse-espeysmena-sto-israil-apo-tis-ipa-kindyneye-i-zoi-toy/",
+        "https://www.efsyn.gr/politiki/1456932/synantisi-tsipra-me-paragogikoys-foreis-ti-deytera-sti-thessaloniki/",
+        "https://www.efsyn.gr/stiles/1456929/mitsotakis-sti-deth-ti-tha-elege-ean-ekane-aytokritiki/"
       ],
-      "seen_at_utc": "2026-08-30T17:51:15.127068+00:00"
+      "seen_at_utc": "2026-08-30T18:16:58.856070+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/world/fotografies-tou-mesa-apo-ti-fylaki-dimosieyse-o-madouro/",
-      "title": "Φωτογραφίες του μέσα από τη φυλακή δημοσίευσε ο Μαδούρο",
-      "normalized_title": "ΦΩΤΟΓΡΑΦΙΕΣ ΤΟΥ ΜΕΣΑ ΑΠΟ ΤΗ ΦΥΛΑΚΗ ΔΗΜΟΣΙΕΥΣΕ Ο ΜΑΔΟΥΡΟ",
+      "url": "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/i-eyropi-extise-tin-oikonomia-tis-pano-stin-pagkosmiopoiisi-ti-tha-symvei-otan-ekeini-katarreysei/",
+      "title": "Η Ευρώπη έχτισε την οικονομία της πάνω στην παγκοσμιοποίηση – Τι θα συμβεί όταν εκείνη καταρρεύσει;",
+      "normalized_title": "Η ΕΥΡΩΠΗ ΕΧΤΙΣΕ ΤΗΝ ΟΙΚΟΝΟΜΙΑ ΤΗΣ ΠΑΝΩ ΣΤΗΝ ΠΑΓΚΟΣΜΙΟΠΟΙΗΣΗ – ΤΙ ΘΑ ΣΥΜΒΕΙ ΟΤΑΝ ΕΚΕΙΝΗ ΚΑΤΑΡΡΕΥΣΕΙ;",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/world/fotografies-tou-mesa-apo-ti-fylaki-dimosieyse-o-madouro/",
-        "https://www.in.gr/2026/08/30/life/culture-live/the-whisper-man-i-allios-to-neo-astynomiko-thriler-me-ton-rompert-nte-niro/"
+        "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/i-eyropi-extise-tin-oikonomia-tis-pano-stin-pagkosmiopoiisi-ti-tha-symvei-otan-ekeini-katarreysei/",
+        "https://www.in.gr/2026/08/30/world/keryneia-skines-arxaias-tragodias-sto-limani-entasi-kai-thrinos-gia-tous-nekrous/",
+        "https://www.in.gr/2026/08/30/sports/on-field/spaei-rekor-tiletheasis-to-tileoptiko-protzekt-tou-maikl-oouen/",
+        "https://www.in.gr/2026/08/30/world/tramp-vs-si-i-synantisi-tous-plisiazei-i-apeksartisi-apo-tis-spanies-gaies-tou-pekinou-pote-erxetai/"
       ],
-      "seen_at_utc": "2026-08-30T17:51:15.127019+00:00"
+      "seen_at_utc": "2026-08-30T18:16:58.856023+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T17:51:15.127176+00:00"
+  "updated_at_utc": "2026-08-30T18:16:58.856184+00:00"
 }
