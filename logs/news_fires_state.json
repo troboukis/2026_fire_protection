@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/gastronomos/564428725/rodakina-gemista-me-santigi-kai-servirismena-me-pagoto/",
-      "title": "Ροδάκινα γεμιστά με σαντιγί και σερβιρισμένα με παγωτό",
-      "normalized_title": "ΡΟΔΑΚΙΝΑ ΓΕΜΙΣΤΑ ΜΕ ΣΑΝΤΙΓΙ ΚΑΙ ΣΕΡΒΙΡΙΣΜΕΝΑ ΜΕ ΠΑΓΩΤΟ",
+      "url": "https://www.kathimerini.gr/politics/amyna/564428947/ellada-kai-israil-ypografoyn-tin-aspida-toy-achillea/",
+      "title": "Ελλάδα και Ισραήλ υπογράφουν την «Ασπίδα του Αχιλλέα»",
+      "normalized_title": "ΕΛΛΑΔΑ ΚΑΙ ΙΣΡΑΗΛ ΥΠΟΓΡΑΦΟΥΝ ΤΗΝ «ΑΣΠΙΔΑ ΤΟΥ ΑΧΙΛΛΕΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/gastronomos/564428725/rodakina-gemista-me-santigi-kai-servirismena-me-pagoto/"
+        "https://www.kathimerini.gr/politics/amyna/564428947/ellada-kai-israil-ypografoyn-tin-aspida-toy-achillea/"
       ],
-      "seen_at_utc": "2026-08-30T20:29:55.950166+00:00"
+      "seen_at_utc": "2026-08-30T20:51:13.928136+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871562/tesseris-sullipseis-gia-purkagies-se-hania-kai-aitoloakarnania-pano-apo-10000-euro-ta-prostima/?utm_source=rss",
-      "title": "Τέσσερις συλλήψεις για πυρκαγιές σε Χανιά και Αιτωλοακαρνανία - Πάνω από 10.000 ευρώ τα πρόστιμα",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ ΣΕ ΧΑΝΙΑ ΚΑΙ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑ - ΠΑΝΩ ΑΠΟ 10.000 ΕΥΡΩ ΤΑ ΠΡΟΣΤΙΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1871574/sunelifthi-odigos-pou-den-stamatise-se-sima-astunomikon-sti-lesvo/?utm_source=rss",
+      "title": "Συνελήφθη οδηγός που δεν σταμάτησε σε σήμα αστυνομικών στη Λέσβο",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΟΔΗΓΟΣ ΠΟΥ ΔΕΝ ΣΤΑΜΑΤΗΣΕ ΣΕ ΣΗΜΑ ΑΣΤΥΝΟΜΙΚΩΝ ΣΤΗ ΛΕΣΒΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871562/tesseris-sullipseis-gia-purkagies-se-hania-kai-aitoloakarnania-pano-apo-10000-euro-ta-prostima/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871560/akuvernito-istioforo-sta-anoihta-tis-rodou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871574/sunelifthi-odigos-pou-den-stamatise-se-sima-astunomikon-sti-lesvo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T19:51:08.942122+00:00"
+      "seen_at_utc": "2026-08-30T20:51:13.928255+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456976/sfodri-apantisi-pasok-se-ypoik-i-kyvernisi-syntirei-tin-kerdoskopia-tis-polisis-ton-daneion/",
-      "title": "Σφοδρή απάντηση ΠΑΣΟΚ σε ΥΠΟΙΚ: Η κυβέρνηση συντηρεί την κερδοσκοπία της πώλησης των δανείων",
-      "normalized_title": "ΣΦΟΔΡΗ ΑΠΑΝΤΗΣΗ ΠΑΣΟΚ ΣΕ ΥΠΟΙΚ: Η ΚΥΒΕΡΝΗΣΗ ΣΥΝΤΗΡΕΙ ΤΗΝ ΚΕΡΔΟΣΚΟΠΙΑ ΤΗΣ ΠΩΛΗΣΗΣ ΤΩΝ ΔΑΝΕΙΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1456978/vartholomaios-o-anthropotheos-katastrefei-ti-gi-ihiro-minyma-gia-tin-oikologiki-krisi/",
+      "title": "Βαρθολομαίος: «Ο ανθρωποθεός» καταστρέφει τη Γη – Ηχηρό μήνυμα για την οικολογική κρίση",
+      "normalized_title": "ΒΑΡΘΟΛΟΜΑΙΟΣ: «Ο ΑΝΘΡΩΠΟΘΕΟΣ» ΚΑΤΑΣΤΡΕΦΕΙ ΤΗ ΓΗ – ΗΧΗΡΟ ΜΗΝΥΜΑ ΓΙΑ ΤΗΝ ΟΙΚΟΛΟΓΙΚΗ ΚΡΙΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456976/sfodri-apantisi-pasok-se-ypoik-i-kyvernisi-syntirei-tin-kerdoskopia-tis-polisis-ton-daneion/",
-        "https://www.efsyn.gr/politiki/1456967/elas-gia-to-tsekoyri-260-ekat-eyro-se-erga-toy-tameioy-anakampsis-gia-eyalotoys-plithysmoys/"
+        "https://www.efsyn.gr/ellada/1456978/vartholomaios-o-anthropotheos-katastrefei-ti-gi-ihiro-minyma-gia-tin-oikologiki-krisi/",
+        "https://www.efsyn.gr/athlitismos/1456973/alose-tin-tripoli-me-zota-silva-o-olympiakos/",
+        "https://www.efsyn.gr/athlitismos/1456969/me-anatropi-kerdise-o-paok-ton-atromito-me-fanela-perastika-konstantelia-panigyrise-o-pelkas/"
       ],
-      "seen_at_utc": "2026-08-30T20:29:55.950286+00:00"
+      "seen_at_utc": "2026-08-30T20:51:13.928223+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/sports/football/mentilimpar-mporousame-perissotera-gkol/",
-      "title": "Μεντιλίμπαρ: «Μπορούσαμε περισσότερα γκολ»",
-      "normalized_title": "ΜΕΝΤΙΛΙΜΠΑΡ: «ΜΠΟΡΟΥΣΑΜΕ ΠΕΡΙΣΣΟΤΕΡΑ ΓΚΟΛ»",
+      "url": "https://www.in.gr/2026/08/30/sports/on-field/enas-for-piso-apo-ton-senter-for/",
+      "title": "Ένας φορ πίσω από τον… σέντερ φορ",
+      "normalized_title": "ΕΝΑΣ ΦΟΡ ΠΙΣΩ ΑΠΟ ΤΟΝ… ΣΕΝΤΕΡ ΦΟΡ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/sports/football/mentilimpar-mporousame-perissotera-gkol/",
-        "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/sta-40-tris-dolaria-to-xreos-ton-ipa-den-tromazei-akomi-tis-agores/"
+        "https://www.in.gr/2026/08/30/sports/on-field/enas-for-piso-apo-ton-senter-for/",
+        "https://www.in.gr/2026/08/30/sports/football/panathinaikos-o-ounai-pire-tin-protasi-kai-apofasizei/",
+        "https://www.in.gr/2026/08/30/world/tourkia-syllypitiria-erntogan-stis-oikogeneies-ton-thymaton-parakolouthei-stena-tis-ereynes-gia-tous-agnooumenous/",
+        "https://www.in.gr/2026/08/30/go-fun/fizz/o-tzeimi-foks-gia-to-egkefaliko-epeisodio-pou-paraligo-na-tou-stoixisei-ti-zoi/"
       ],
-      "seen_at_utc": "2026-08-30T20:29:55.950235+00:00"
+      "seen_at_utc": "2026-08-30T20:51:13.928173+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T20:29:55.950373+00:00"
+  "updated_at_utc": "2026-08-30T20:51:13.928331+00:00"
 }
