@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564427141/zoyme-pio-poly-alla-ochi-ygieis/",
-      "title": "Ζούμε πιο πολύ, αλλά όχι υγιείς",
-      "normalized_title": "ΖΟΥΜΕ ΠΙΟ ΠΟΛΥ, ΑΛΛΑ ΟΧΙ ΥΓΙΕΙΣ",
+      "url": "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/",
+      "title": "ΑΕΚ και ΟΦΗ παραδείγματα για «αιωνίους» και ΠΑΟΚ",
+      "normalized_title": "ΑΕΚ ΚΑΙ ΟΦΗ ΠΑΡΑΔΕΙΓΜΑΤΑ ΓΙΑ «ΑΙΩΝΙΟΥΣ» ΚΑΙ ΠΑΟΚ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564427141/zoyme-pio-poly-alla-ochi-ygieis/"
+        "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/"
       ],
-      "seen_at_utc": "2026-08-30T14:17:15.953373+00:00"
+      "seen_at_utc": "2026-08-30T14:30:04.510246+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1269,24 @@
       "seen_at_utc": "2026-08-30T14:17:15.953490+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456552/ellinotoyrkika-prominyetai-heimonas-me-foyrtoynes-sto-aigaio/",
-      "title": "Ελληνοτουρκικά: Προμηνύεται χειμώνας με… φουρτούνες στο Αιγαίο",
-      "normalized_title": "ΕΛΛΗΝΟΤΟΥΡΚΙΚΑ: ΠΡΟΜΗΝΥΕΤΑΙ ΧΕΙΜΩΝΑΣ ΜΕ… ΦΟΥΡΤΟΥΝΕΣ ΣΤΟ ΑΙΓΑΙΟ",
+      "url": "https://www.efsyn.gr/ellada/1456864/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-epiheiroyn-4-enaeria-mesa/",
+      "title": "Πυρκαγιά σε δασική έκταση στο Μαρκόπουλο Ωρωπού: Επιχειρούν 6 εναέρια μέσα – Ήχησε το 112",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ ΩΡΩΠΟΥ: ΕΠΙΧΕΙΡΟΥΝ 6 ΕΝΑΕΡΙΑ ΜΕΣΑ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456552/ellinotoyrkika-prominyetai-heimonas-me-foyrtoynes-sto-aigaio/",
-        "https://www.efsyn.gr/politiki/1456848/kke-gia-anartisi-mitsotaki-o-laos-tha-toys-dosei-tin-apantisi-sto-panelladiko-syllalitirio-sti-deth/"
+        "https://www.efsyn.gr/ellada/1456864/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-epiheiroyn-4-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1456861/pyrkagia-ston-agio-georgio-kerkyras-sikothikan-exi-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-08-30T14:17:15.953464+00:00"
+      "seen_at_utc": "2026-08-30T14:30:04.510318+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/greece/fotia-se-dasiki-ektasi-stin-kerkyra-epixeiroun-eksi-aeroskafi/",
-      "title": "Φωτιά σε δασική έκταση στην Κέρκυρα – Επιχειρούν έξι αεροσκάφη",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΚΕΡΚΥΡΑ – ΕΠΙΧΕΙΡΟΥΝ ΕΞΙ ΑΕΡΟΣΚΑΦΗ",
+      "url": "https://www.in.gr/2026/08/30/auto/meinate-me-to-ix-sto-dromo-pos-tha-to-metakinisete-monoi-sas-xrisimopoiontas-ti-zoni-asfaleias/",
+      "title": "Μείνατε με το ΙΧ στο δρόμο; Πώς θα το μετακινήσετε μόνοι σας χρησιμοποιώντας τη ζώνη ασφαλείας",
+      "normalized_title": "ΜΕΙΝΑΤΕ ΜΕ ΤΟ ΙΧ ΣΤΟ ΔΡΟΜΟ; ΠΩΣ ΘΑ ΤΟ ΜΕΤΑΚΙΝΗΣΕΤΕ ΜΟΝΟΙ ΣΑΣ ΧΡΗΣΙΜΟΠΟΙΩΝΤΑΣ ΤΗ ΖΩΝΗ ΑΣΦΑΛΕΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/greece/fotia-se-dasiki-ektasi-stin-kerkyra-epixeiroun-eksi-aeroskafi/",
-        "https://www.in.gr/2026/08/30/sports/on-field/o-iraola-zitaei-pente-metagrafes/",
-        "https://www.in.gr/2026/08/30/greece/marathias-ileias-ores-agonias-gia-ton-9xrono-sti-meth-se-vathia-katastoli-me-egkefaliko-oidima/",
-        "https://www.in.gr/2026/08/30/greece/2026-27-aytos-einai-o-egkekrimenos-katalogos-proionton-gia-ta-sxolika-kylikeia-to-neo-plaisio-gia-to-neo-sxoliko-etos/"
+        "https://www.in.gr/2026/08/30/auto/meinate-me-to-ix-sto-dromo-pos-tha-to-metakinisete-monoi-sas-xrisimopoiontas-ti-zoni-asfaleias/"
       ],
-      "seen_at_utc": "2026-08-30T14:17:15.953439+00:00"
+      "seen_at_utc": "2026-08-30T14:30:04.510290+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T14:17:15.953580+00:00"
+  "updated_at_utc": "2026-08-30T14:30:04.510400+00:00"
 }
