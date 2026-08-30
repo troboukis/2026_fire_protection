@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/",
-      "title": "ΑΕΚ και ΟΦΗ παραδείγματα για «αιωνίους» και ΠΑΟΚ",
-      "normalized_title": "ΑΕΚ ΚΑΙ ΟΦΗ ΠΑΡΑΔΕΙΓΜΑΤΑ ΓΙΑ «ΑΙΩΝΙΟΥΣ» ΚΑΙ ΠΑΟΚ",
+      "url": "https://www.kathimerini.gr/society/564428743/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-ichise-to-112/",
+      "title": "Πυρκαγιά σε δασική έκταση στο Μαρκόπουλο Ωρωπού – Ηχησε το 112",
+      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ ΩΡΩΠΟΥ – ΗΧΗΣΕ ΤΟ 112",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/"
+        "https://www.kathimerini.gr/society/564428743/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-ichise-to-112/",
+        "https://www.kathimerini.gr/society/564428734/kerkyra-fotia-se-dasiki-ektasi-ston-agio-georgio-exi-aeroskafi-sti-machi/",
+        "https://www.kathimerini.gr/world/564428716/enas-gigantios-chalkinos-promitheas-ypsonetai-dipla-sti-starbase-toy-elon-mask/"
       ],
-      "seen_at_utc": "2026-08-30T14:30:04.510246+00:00"
+      "seen_at_utc": "2026-08-30T14:51:26.114012+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871479/fotia-tora-se-dasos-ston-agio-georgio-kerkuras-sikothikan-6-aeroskafi/?utm_source=rss",
-      "title": "Φωτιά τώρα σε δάσος στον Άγιο Γεώργιο Κέρκυρας, σηκώθηκαν 6 αεροσκάφη",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΟΝ ΑΓΙΟ ΓΕΩΡΓΙΟ ΚΕΡΚΥΡΑΣ, ΣΗΚΩΘΗΚΑΝ 6 ΑΕΡΟΣΚΑΦΗ",
+      "url": "https://www.protothema.gr/greece/article/1871486/panikos-kai-agonia-sto-katamaran-tin-ora-pou-vuthizotan-sta-anoihta-tis-katehomenis-keruneias-deite-video/?utm_source=rss",
+      "title": "Πανικός και αγωνία μέσα στο καταμαράν την ώρα που άρχισε να βυθίζεται στα ανοιχτά της κατεχόμενης Κερύνειας, δείτε βίντεο",
+      "normalized_title": "ΠΑΝΙΚΟΣ ΚΑΙ ΑΓΩΝΙΑ ΜΕΣΑ ΣΤΟ ΚΑΤΑΜΑΡΑΝ ΤΗΝ ΩΡΑ ΠΟΥ ΑΡΧΙΣΕ ΝΑ ΒΥΘΙΖΕΤΑΙ ΣΤΑ ΑΝΟΙΧΤΑ ΤΗΣ ΚΑΤΕΧΟΜΕΝΗΣ ΚΕΡΥΝΕΙΑΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871479/fotia-tora-se-dasos-ston-agio-georgio-kerkuras-sikothikan-6-aeroskafi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871476/plasta-50eura-stin-alexandroupoli-treis-sullipseis-katashethikan-182-hartonomismata/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871486/panikos-kai-agonia-sto-katamaran-tin-ora-pou-vuthizotan-sta-anoihta-tis-katehomenis-keruneias-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871483/fotia-tora-stin-periohi-markopoulo-oropou-epiheiroun-tessera-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T14:17:15.953490+00:00"
+      "seen_at_utc": "2026-08-30T14:51:26.114147+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456864/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-epiheiroyn-4-enaeria-mesa/",
-      "title": "Πυρκαγιά σε δασική έκταση στο Μαρκόπουλο Ωρωπού: Επιχειρούν 6 εναέρια μέσα – Ήχησε το 112",
-      "normalized_title": "ΠΥΡΚΑΓΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ ΩΡΩΠΟΥ: ΕΠΙΧΕΙΡΟΥΝ 6 ΕΝΑΕΡΙΑ ΜΕΣΑ – ΗΧΗΣΕ ΤΟ 112",
+      "url": "https://www.efsyn.gr/kosmos/1456870/nayagio-katamaran-me-267-epivates-stin-keryneia-toylahiston-7-nekroi-anazitoyntai-23-atoma-vinteo/",
+      "title": "Ναυάγιο καταμαράν με 267 επιβαίνοντες στην Κερύνεια: Τουλάχιστον 7 νεκροί, αναζητούνται 23 άτομα [βίντεο]",
+      "normalized_title": "ΝΑΥΑΓΙΟ ΚΑΤΑΜΑΡΑΝ ΜΕ 267 ΕΠΙΒΑΙΝΟΝΤΕΣ ΣΤΗΝ ΚΕΡΥΝΕΙΑ: ΤΟΥΛΑΧΙΣΤΟΝ 7 ΝΕΚΡΟΙ, ΑΝΑΖΗΤΟΥΝΤΑΙ 23 ΑΤΟΜΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456864/pyrkagia-se-dasiki-ektasi-sto-markopoylo-oropoy-epiheiroyn-4-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1456861/pyrkagia-ston-agio-georgio-kerkyras-sikothikan-exi-enaeria-mesa/"
+        "https://www.efsyn.gr/kosmos/1456870/nayagio-katamaran-me-267-epivates-stin-keryneia-toylahiston-7-nekroi-anazitoyntai-23-atoma-vinteo/"
       ],
-      "seen_at_utc": "2026-08-30T14:30:04.510318+00:00"
+      "seen_at_utc": "2026-08-30T14:51:26.114107+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/auto/meinate-me-to-ix-sto-dromo-pos-tha-to-metakinisete-monoi-sas-xrisimopoiontas-ti-zoni-asfaleias/",
-      "title": "Μείνατε με το ΙΧ στο δρόμο; Πώς θα το μετακινήσετε μόνοι σας χρησιμοποιώντας τη ζώνη ασφαλείας",
-      "normalized_title": "ΜΕΙΝΑΤΕ ΜΕ ΤΟ ΙΧ ΣΤΟ ΔΡΟΜΟ; ΠΩΣ ΘΑ ΤΟ ΜΕΤΑΚΙΝΗΣΕΤΕ ΜΟΝΟΙ ΣΑΣ ΧΡΗΣΙΜΟΠΟΙΩΝΤΑΣ ΤΗ ΖΩΝΗ ΑΣΦΑΛΕΙΑΣ",
+      "url": "https://www.in.gr/2026/08/30/world/islandia-niki-gia-ti-dimokratia-to-apotelesma-tou-dimopsifismatos-leei-i-prothypourgos/",
+      "title": "Ισλανδία: «Νίκη για τη δημοκρατία» το αποτέλεσμα του δημοψηφίσματος, λέει η πρωθυπουργός",
+      "normalized_title": "ΙΣΛΑΝΔΙΑ: «ΝΙΚΗ ΓΙΑ ΤΗ ΔΗΜΟΚΡΑΤΙΑ» ΤΟ ΑΠΟΤΕΛΕΣΜΑ ΤΟΥ ΔΗΜΟΨΗΦΙΣΜΑΤΟΣ, ΛΕΕΙ Η ΠΡΩΘΥΠΟΥΡΓΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/auto/meinate-me-to-ix-sto-dromo-pos-tha-to-metakinisete-monoi-sas-xrisimopoiontas-ti-zoni-asfaleias/"
+        "https://www.in.gr/2026/08/30/world/islandia-niki-gia-ti-dimokratia-to-apotelesma-tou-dimopsifismatos-leei-i-prothypourgos/",
+        "https://www.in.gr/2026/08/30/sports/football/ekpliksi-apo-ti-mpartselona-pairnei-gkampriel-zesous-gia-tin-epithesi-pic/",
+        "https://www.in.gr/2026/08/30/greece/dasiki-pyrkagia-sto-markopoulo-minyma-tou-112-gia-etoimotita/",
+        "https://www.in.gr/2026/08/30/life/culture-live/h-ekriktiki-ximeia-ton-ntempora-forman-kai-nikolas-keitz/"
       ],
-      "seen_at_utc": "2026-08-30T14:30:04.510290+00:00"
+      "seen_at_utc": "2026-08-30T14:51:26.114071+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T14:30:04.510400+00:00"
+  "updated_at_utc": "2026-08-30T14:51:26.114241+00:00"
 }
