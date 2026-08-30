@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564428515/kypros-poios-itan-o-epicheirimatias-poy-vrike-tragiko-thanato-sto-kavo-gkreko/",
-      "title": "Κύπρος: Ποιος ήταν ο επιχειρηματίας που βρήκε τραγικό θάνατο στο Κάβο Γκρέκο",
-      "normalized_title": "ΚΥΠΡΟΣ: ΠΟΙΟΣ ΗΤΑΝ Ο ΕΠΙΧΕΙΡΗΜΑΤΙΑΣ ΠΟΥ ΒΡΗΚΕ ΤΡΑΓΙΚΟ ΘΑΝΑΤΟ ΣΤΟ ΚΑΒΟ ΓΚΡΕΚΟ",
+      "url": "https://www.kathimerini.gr/economy/564427300/anazitoyn-ergazomenoys-se-domes/",
+      "title": "Αναζητούν εργαζομένους σε δομές",
+      "normalized_title": "ΑΝΑΖΗΤΟΥΝ ΕΡΓΑΖΟΜΕΝΟΥΣ ΣΕ ΔΟΜΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564428515/kypros-poios-itan-o-epicheirimatias-poy-vrike-tragiko-thanato-sto-kavo-gkreko/",
-        "https://www.kathimerini.gr/society/564428512/gnostos-klarinistas-synelifthi-gia-odigisi-ypo-tin-epireia-alkool/"
+        "https://www.kathimerini.gr/economy/564427300/anazitoyn-ergazomenoys-se-domes/",
+        "https://www.kathimerini.gr/society/564428536/vrilissia-odigos-esproxe-75chroni-epeita-apo-paratirisi-gia-ypervoliki-tachytita/",
+        "https://www.kathimerini.gr/world/564428527/enopli-epithesi-stin-elvetia-megali-astynomiki-epicheirisi-gia-ton-entopismo-ton-draston-nekri-22chroni/"
       ],
-      "seen_at_utc": "2026-08-30T09:29:52.787858+00:00"
+      "seen_at_utc": "2026-08-30T09:51:14.900114+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871405/aris-mougopetros-sto-autoforo-meta-apo-alkotest-prostimo-1375-euro-kai-afairesi-diplomatos-gia-250-meres/?utm_source=rss",
-      "title": "Σε πανηγύρι στη Λαμία ήταν ο Άρης Μουγκοπέτρος, πρόστιμο 1.375 ευρώ και αφαίρεση διπλώματος για 250 μέρες μετά το ακλοτέστ",
-      "normalized_title": "ΣΕ ΠΑΝΗΓΥΡΙ ΣΤΗ ΛΑΜΙΑ ΗΤΑΝ Ο ΑΡΗΣ ΜΟΥΓΚΟΠΕΤΡΟΣ, ΠΡΟΣΤΙΜΟ 1.375 ΕΥΡΩ ΚΑΙ ΑΦΑΙΡΕΣΗ ΔΙΠΛΩΜΑΤΟΣ ΓΙΑ 250 ΜΕΡΕΣ ΜΕΤΑ ΤΟ ΑΚΛΟΤΕΣΤ",
+      "url": "https://www.protothema.gr/greece/article/1871415/sunagermos-sti-rodo-aeroskafos-tis-olympic-air-gurise-sto-aerodromio-diagoras-meta-apo-endeixi-vlavis/?utm_source=rss",
+      "title": "Συναγερμός στη Ρόδο: Αεροσκάφος της Olympic Air γύρισε στο αεροδρόμιο «Διαγόρας» μετά από ένδειξη βλάβης",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΗ ΡΟΔΟ: ΑΕΡΟΣΚΑΦΟΣ ΤΗΣ OLYMPIC AIR ΓΥΡΙΣΕ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ «ΔΙΑΓΟΡΑΣ» ΜΕΤΑ ΑΠΟ ΕΝΔΕΙΞΗ ΒΛΑΒΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871405/aris-mougopetros-sto-autoforo-meta-apo-alkotest-prostimo-1375-euro-kai-afairesi-diplomatos-gia-250-meres/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871415/sunagermos-sti-rodo-aeroskafos-tis-olympic-air-gurise-sto-aerodromio-diagoras-meta-apo-endeixi-vlavis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871412/touristria-traumatistike-meta-apo-apokollisi-vrahon-sto-kleftiko-tis-milou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871409/i-ellada-paredose-neo-stratiotiko-uliko-stis-enoples-dunameis-tou-livanou-deite-fotografies/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T09:29:52.787983+00:00"
+      "seen_at_utc": "2026-08-30T09:51:14.900257+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456773/ios-dytikoy-neiloy-perissotera-ta-molysmena-koynoypia-poioi-kindyneyoyn-ola-ta-metra-prostasias/",
-      "title": "Ιός Δυτικού Νείλου: Περισσότερα τα μολυσμένα κουνούπια – Ποιοι κινδυνεύουν, όλα τα μέτρα προστασίας",
-      "normalized_title": "ΙΟΣ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ: ΠΕΡΙΣΣΟΤΕΡΑ ΤΑ ΜΟΛΥΣΜΕΝΑ ΚΟΥΝΟΥΠΙΑ – ΠΟΙΟΙ ΚΙΝΔΥΝΕΥΟΥΝ, ΟΛΑ ΤΑ ΜΕΤΡΑ ΠΡΟΣΤΑΣΙΑΣ",
+      "url": "https://www.efsyn.gr/tehnes/1456532/harizoyn-se-idiotes-ta-simeia-polisis-sta-moyseia-to-hrysoryheio-tis-akropolis-kai-26-akoma-spoydaia-mnimeia/",
+      "title": "Χαρίζουν σε ιδιώτες τα σημεία πώλησης στα μουσεία: Το «χρυσωρυχείο» της Ακρόπολης και 26 ακόμα σπουδαία μνημεία",
+      "normalized_title": "ΧΑΡΙΖΟΥΝ ΣΕ ΙΔΙΩΤΕΣ ΤΑ ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ ΣΤΑ ΜΟΥΣΕΙΑ: ΤΟ «ΧΡΥΣΩΡΥΧΕΙΟ» ΤΗΣ ΑΚΡΟΠΟΛΗΣ ΚΑΙ 26 ΑΚΟΜΑ ΣΠΟΥΔΑΙΑ ΜΝΗΜΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456773/ios-dytikoy-neiloy-perissotera-ta-molysmena-koynoypia-poioi-kindyneyoyn-ola-ta-metra-prostasias/"
+        "https://www.efsyn.gr/tehnes/1456532/harizoyn-se-idiotes-ta-simeia-polisis-sta-moyseia-to-hrysoryheio-tis-akropolis-kai-26-akoma-spoydaia-mnimeia/",
+        "https://www.efsyn.gr/politiki/1456775/tsoykalas-gia-kyriakatiki-anartisi-mitsotaki-na-apantisei-an-i-nd-elege-psemata-to-2018/"
       ],
-      "seen_at_utc": "2026-08-30T09:29:52.787931+00:00"
+      "seen_at_utc": "2026-08-30T09:51:14.900218+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/world/axios-i-cia-proteinei-trimeri-synantisi-tramp-poutin-kai-zelenski/",
-      "title": "Axios: Η CIA προτείνει τριμερή συνάντηση Τραμπ, Πούτιν και Ζελένσκι",
-      "normalized_title": "AXIOS: Η CIA ΠΡΟΤΕΙΝΕΙ ΤΡΙΜΕΡΗ ΣΥΝΑΝΤΗΣΗ ΤΡΑΜΠ, ΠΟΥΤΙΝ ΚΑΙ ΖΕΛΕΝΣΚΙ",
+      "url": "https://www.in.gr/2026/08/30/greece/egklimatiki-omada-sto-irakleio-kritis-ksafrise-sxedon-60-000-eyro-me-tilefonikes-apates/",
+      "title": "Εγκληματική ομάδα στο Ηράκλειο Κρήτης ξάφρισε σχεδόν 60.000 ευρώ με τηλεφωνικές απάτες",
+      "normalized_title": "ΕΓΚΛΗΜΑΤΙΚΗ ΟΜΑΔΑ ΣΤΟ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ ΞΑΦΡΙΣΕ ΣΧΕΔΟΝ 60.000 ΕΥΡΩ ΜΕ ΤΗΛΕΦΩΝΙΚΕΣ ΑΠΑΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/world/axios-i-cia-proteinei-trimeri-synantisi-tramp-poutin-kai-zelenski/",
-        "https://www.in.gr/2026/08/30/sports/football/i-premier-league-gia-ti-nikitiria-epemvasi-tou-tzolaki-pos-to-esose-ayto-vids/",
-        "https://www.in.gr/2026/08/30/world/kypros-tou-fonazame-na-vgei-sygklonistiki-martyria-gia-tin-tragodia-me-ton-76xrono-epixeirimatia-sto-kavo-gkreko/"
+        "https://www.in.gr/2026/08/30/greece/egklimatiki-omada-sto-irakleio-kritis-ksafrise-sxedon-60-000-eyro-me-tilefonikes-apates/",
+        "https://www.in.gr/2026/08/30/world/rosia-oukrania-klimakosi-ton-ekaterothen-epitheseon-rosikes-apeiles-gia-mazika-pligmata-se-energeiakes-ypodomes/"
       ],
-      "seen_at_utc": "2026-08-30T09:29:52.787893+00:00"
+      "seen_at_utc": "2026-08-30T09:51:14.900166+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T09:29:52.788043+00:00"
+  "updated_at_utc": "2026-08-30T09:51:14.900334+00:00"
 }
