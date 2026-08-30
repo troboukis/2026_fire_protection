@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428695/nayagio-epivatigoy-ploioy-anoikta-tis-keryneias-7-nekroi-kai-23-agnooymenoi/",
-      "title": "Ναυάγιο επιβατηγού πλοίου ανοικτά της Κερύνειας: 7 νεκροί και 23 αγνοούμενοι",
-      "normalized_title": "ΝΑΥΑΓΙΟ ΕΠΙΒΑΤΗΓΟΥ ΠΛΟΙΟΥ ΑΝΟΙΚΤΑ ΤΗΣ ΚΕΡΥΝΕΙΑΣ: 7 ΝΕΚΡΟΙ ΚΑΙ 23 ΑΓΝΟΟΥΜΕΝΟΙ",
+      "url": "https://www.kathimerini.gr/life/health/564427141/zoyme-pio-poly-alla-ochi-ygieis/",
+      "title": "Ζούμε πιο πολύ, αλλά όχι υγιείς",
+      "normalized_title": "ΖΟΥΜΕ ΠΙΟ ΠΟΛΥ, ΑΛΛΑ ΟΧΙ ΥΓΙΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428695/nayagio-epivatigoy-ploioy-anoikta-tis-keryneias-7-nekroi-kai-23-agnooymenoi/",
-        "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/",
-        "https://www.kathimerini.gr/economy/564426634/arthro-toy-antoni-kontoleontos-stin-k-i-asfaleia-dikaioy-dokimazetai-stin-efarmogi/"
+        "https://www.kathimerini.gr/life/health/564427141/zoyme-pio-poly-alla-ochi-ygieis/"
       ],
-      "seen_at_utc": "2026-08-30T13:51:11.012756+00:00"
+      "seen_at_utc": "2026-08-30T14:17:15.953373+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871467/tragodia-sta-hania-nekri-11hroni-se-pisina-xenodoheiou/?utm_source=rss",
-      "title": "Τραγωδία στα Χανιά: Νεκρή 11χρονη σε πισίνα ξενοδοχείου",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΑ ΧΑΝΙΑ: ΝΕΚΡΗ 11ΧΡΟΝΗ ΣΕ ΠΙΣΙΝΑ ΞΕΝΟΔΟΧΕΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1871479/fotia-tora-se-dasos-ston-agio-georgio-kerkuras-sikothikan-6-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά τώρα σε δάσος στον Άγιο Γεώργιο Κέρκυρας, σηκώθηκαν 6 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΟΝ ΑΓΙΟ ΓΕΩΡΓΙΟ ΚΕΡΚΥΡΑΣ, ΣΗΚΩΘΗΚΑΝ 6 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871467/tragodia-sta-hania-nekri-11hroni-se-pisina-xenodoheiou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871479/fotia-tora-se-dasos-ston-agio-georgio-kerkuras-sikothikan-6-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871476/plasta-50eura-stin-alexandroupoli-treis-sullipseis-katashethikan-182-hartonomismata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T13:29:57.761292+00:00"
+      "seen_at_utc": "2026-08-30T14:17:15.953490+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456846/tragodia-ston-platania-hanion-nekri-11hroni-se-pisina-xenodoheioy/",
-      "title": "Τραγωδία στον Πλατανιά Χανίων: Νεκρή 11χρονη σε πισίνα ξενοδοχείου",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟΝ ΠΛΑΤΑΝΙΑ ΧΑΝΙΩΝ: ΝΕΚΡΗ 11ΧΡΟΝΗ ΣΕ ΠΙΣΙΝΑ ΞΕΝΟΔΟΧΕΙΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1456552/ellinotoyrkika-prominyetai-heimonas-me-foyrtoynes-sto-aigaio/",
+      "title": "Ελληνοτουρκικά: Προμηνύεται χειμώνας με… φουρτούνες στο Αιγαίο",
+      "normalized_title": "ΕΛΛΗΝΟΤΟΥΡΚΙΚΑ: ΠΡΟΜΗΝΥΕΤΑΙ ΧΕΙΜΩΝΑΣ ΜΕ… ΦΟΥΡΤΟΥΝΕΣ ΣΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456846/tragodia-ston-platania-hanion-nekri-11hroni-se-pisina-xenodoheioy/",
-        "https://www.efsyn.gr/ellada/1456844/agrio-epeisodio-xylodarmoy-sta-giannitsa-nosileyetai-sto-nosokomeio-27hronos-kakoyrgimatiki-dioxi-se-26hrono/"
+        "https://www.efsyn.gr/politiki/1456552/ellinotoyrkika-prominyetai-heimonas-me-foyrtoynes-sto-aigaio/",
+        "https://www.efsyn.gr/politiki/1456848/kke-gia-anartisi-mitsotaki-o-laos-tha-toys-dosei-tin-apantisi-sto-panelladiko-syllalitirio-sti-deth/"
       ],
-      "seen_at_utc": "2026-08-30T13:51:11.012844+00:00"
+      "seen_at_utc": "2026-08-30T14:17:15.953464+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/greece/apisteyto-skiniko-sta-xania-fortose-olokliro-dentro-sto-mixanaki/",
-      "title": "Απίστευτο σκηνικό στα Χανιά: Φόρτωσε ολόκληρο δέντρο στο… μηχανάκι",
-      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΣΚΗΝΙΚΟ ΣΤΑ ΧΑΝΙΑ: ΦΟΡΤΩΣΕ ΟΛΟΚΛΗΡΟ ΔΕΝΤΡΟ ΣΤΟ… ΜΗΧΑΝΑΚΙ",
+      "url": "https://www.in.gr/2026/08/30/greece/fotia-se-dasiki-ektasi-stin-kerkyra-epixeiroun-eksi-aeroskafi/",
+      "title": "Φωτιά σε δασική έκταση στην Κέρκυρα – Επιχειρούν έξι αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΚΕΡΚΥΡΑ – ΕΠΙΧΕΙΡΟΥΝ ΕΞΙ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/greece/apisteyto-skiniko-sta-xania-fortose-olokliro-dentro-sto-mixanaki/",
-        "https://www.in.gr/2026/08/30/sports/on-field/taktiki-xoris-logiki-tou-lanoua-stous-orismous-diaititon/",
-        "https://www.in.gr/2026/08/30/in-science/space/sto-diastima-to-nancy-grace-roman-to-neo-tileskopio-tis-nasa/",
-        "https://www.in.gr/2026/08/30/stories/pethane-sta-34-tou-o-neoteros-vasilias-ston-kosmo-anevike-ston-throno-otan-itan-molis-trion/"
+        "https://www.in.gr/2026/08/30/greece/fotia-se-dasiki-ektasi-stin-kerkyra-epixeiroun-eksi-aeroskafi/",
+        "https://www.in.gr/2026/08/30/sports/on-field/o-iraola-zitaei-pente-metagrafes/",
+        "https://www.in.gr/2026/08/30/greece/marathias-ileias-ores-agonias-gia-ton-9xrono-sti-meth-se-vathia-katastoli-me-egkefaliko-oidima/",
+        "https://www.in.gr/2026/08/30/greece/2026-27-aytos-einai-o-egkekrimenos-katalogos-proionton-gia-ta-sxolika-kylikeia-to-neo-plaisio-gia-to-neo-sxoliko-etos/"
       ],
-      "seen_at_utc": "2026-08-30T13:51:11.012803+00:00"
+      "seen_at_utc": "2026-08-30T14:17:15.953439+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T13:51:11.012915+00:00"
+  "updated_at_utc": "2026-08-30T14:17:15.953580+00:00"
 }
