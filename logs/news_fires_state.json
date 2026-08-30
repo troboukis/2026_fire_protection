@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428380/ipa-i-oyasingkton-apelase-ton-vretano-akrodexio-mailo-giannopoylos/",
-      "title": "ΗΠΑ: Η Ουάσινγκτον απέλασε τον Βρετανό ακροδεξιό Μάιλο Γιαννόπουλος",
-      "normalized_title": "ΗΠΑ: Η ΟΥΑΣΙΝΓΚΤΟΝ ΑΠΕΛΑΣΕ ΤΟΝ ΒΡΕΤΑΝΟ ΑΚΡΟΔΕΞΙΟ ΜΑΙΛΟ ΓΙΑΝΝΟΠΟΥΛΟΣ",
+      "url": "https://www.kathimerini.gr/life/people/564426364/stefanos-manos-adogmatista-fileleytheros-thesmikos-michanikos/",
+      "title": "Στέφανος Μάνος: Αδογμάτιστα φιλελεύθερος θεσμικός μηχανικός",
+      "normalized_title": "ΣΤΕΦΑΝΟΣ ΜΑΝΟΣ: ΑΔΟΓΜΑΤΙΣΤΑ ΦΙΛΕΛΕΥΘΕΡΟΣ ΘΕΣΜΙΚΟΣ ΜΗΧΑΝΙΚΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428380/ipa-i-oyasingkton-apelase-ton-vretano-akrodexio-mailo-giannopoylos/"
+        "https://www.kathimerini.gr/life/people/564426364/stefanos-manos-adogmatista-fileleytheros-thesmikos-michanikos/",
+        "https://www.kathimerini.gr/world/564428389/nepal-xeperasan-toys-730-oi-nekroi-met-empodion-i-parochi-voitheias/",
+        "https://www.kathimerini.gr/economy/international/564426664/ta-apomeinaria-tis-zara-chtypoyn-shein-kai-primark/",
+        "https://www.kathimerini.gr/istoria/564426739/san-simera-30-aygoystoy-1914-i-machi-toy-tanenmpergk/"
       ],
-      "seen_at_utc": "2026-08-30T04:29:54.907188+00:00"
+      "seen_at_utc": "2026-08-30T04:51:10.049686+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,13 +1262,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871302/nekros-ilikiomenos-stin-kruopigi-tis-halkidikis-kataplakothike-apo-to-autokinito-tou/?utm_source=rss",
-      "title": "Νεκρός ηλικιωμένος στην Κρυοπηγή της Χαλκιδικής, καταπλακώθηκε από το αυτοκίνητό του",
-      "normalized_title": "ΝΕΚΡΟΣ ΗΛΙΚΙΩΜΕΝΟΣ ΣΤΗΝ ΚΡΥΟΠΗΓΗ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ, ΚΑΤΑΠΛΑΚΩΘΗΚΕ ΑΠΟ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1871320/kairos-mikri-anodos-tis-thermokrasias-me-37aria-vrohes-kai-kataigides-sta-voreia/?utm_source=rss",
+      "title": "Καιρός: Μικρή άνοδος της θερμοκρασίας με 37άρια – Βροχές και καταιγίδες στα βόρεια",
+      "normalized_title": "ΚΑΙΡΟΣ: ΜΙΚΡΗ ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΜΕ 37ΑΡΙΑ – ΒΡΟΧΕΣ ΚΑΙ ΚΑΤΑΙΓΙΔΕΣ ΣΤΑ ΒΟΡΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871302/nekros-ilikiomenos-stin-kruopigi-tis-halkidikis-kataplakothike-apo-to-autokinito-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871320/kairos-mikri-anodos-tis-thermokrasias-me-37aria-vrohes-kai-kataigides-sta-voreia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-29T21:30:02.612298+00:00"
+      "seen_at_utc": "2026-08-30T04:51:10.049724+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/kosmos/1456714/protofanes-o-netaniahoy-epikrinei-toys-israilinoys-epoikoys-gia-ta-pogkrom-sti-dytiki-ohthi/",
@@ -1296,5 +1299,5 @@
       "seen_at_utc": "2026-08-30T04:17:06.397453+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T04:29:54.907296+00:00"
+  "updated_at_utc": "2026-08-30T04:51:10.049806+00:00"
 }
