@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564426886/narkopedio-gia-dyo-i-syria/",
-      "title": "Ναρκοπέδιο για δύο η Συρία",
-      "normalized_title": "ΝΑΡΚΟΠΕΔΙΟ ΓΙΑ ΔΥΟ Η ΣΥΡΙΑ",
+      "url": "https://www.kathimerini.gr/society/564428509/i-ellada-paredose-stratiotiko-yliko-stis-enoples-dynameis-toy-livanoy/",
+      "title": "Η Ελλάδα παρέδωσε στρατιωτικό υλικό στις ένοπλες δυνάμεις του Λιβάνου",
+      "normalized_title": "Η ΕΛΛΑΔΑ ΠΑΡΕΔΩΣΕ ΣΤΡΑΤΙΩΤΙΚΟ ΥΛΙΚΟ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ ΤΟΥ ΛΙΒΑΝΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564426886/narkopedio-gia-dyo-i-syria/",
-        "https://www.kathimerini.gr/economy/564426628/arthro-toy-giorgoy-psaraki-stin-k-oi-allages-ston-exodikastiko-michanismo/"
+        "https://www.kathimerini.gr/society/564428509/i-ellada-paredose-stratiotiko-yliko-stis-enoples-dynameis-toy-livanoy/",
+        "https://www.kathimerini.gr/k/gastronomos/564428488/epine-i-panagia-chymo-vatomoyroy-ki-alles-laikes-doxasies-kai-synitheies-peri-froyton/"
       ],
-      "seen_at_utc": "2026-08-30T08:30:06.315911+00:00"
+      "seen_at_utc": "2026-08-30T09:17:03.022536+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871396/sunadisi-tou-oikoumenikou-patriarhi-vartholomaiou-me-ton-prutani-tou-ekpa-sto-fanari/?utm_source=rss",
-      "title": "Συνάντηση του Οικουμενικού Πατριάρχη Βαρθολομαίου με τον Πρύτανη του ΕΚΠΑ στο Φανάρι",
-      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΤΟΥ ΟΙΚΟΥΜΕΝΙΚΟΥ ΠΑΤΡΙΑΡΧΗ ΒΑΡΘΟΛΟΜΑΙΟΥ ΜΕ ΤΟΝ ΠΡΥΤΑΝΗ ΤΟΥ ΕΚΠΑ ΣΤΟ ΦΑΝΑΡΙ",
+      "url": "https://www.protothema.gr/greece/article/1871401/nea-exegersi-sti-domi-metanaston-sto-kleidi-serron-petaxan-petres-kata-astunomikon-kai-prokalesan-zimies-se-egatastaseis/?utm_source=rss",
+      "title": "Νέα εξέγερση στη δομή μεταναστών στο Κλειδί Σερρών, πέταξαν πέτρες κατά αστυνομικών και προκάλεσαν ζημιές σε εγκαταστάσεις",
+      "normalized_title": "ΝΕΑ ΕΞΕΓΕΡΣΗ ΣΤΗ ΔΟΜΗ ΜΕΤΑΝΑΣΤΩΝ ΣΤΟ ΚΛΕΙΔΙ ΣΕΡΡΩΝ, ΠΕΤΑΞΑΝ ΠΕΤΡΕΣ ΚΑΤΑ ΑΣΤΥΝΟΜΙΚΩΝ ΚΑΙ ΠΡΟΚΑΛΕΣΑΝ ΖΗΜΙΕΣ ΣΕ ΕΓΚΑΤΑΣΤΑΣΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871396/sunadisi-tou-oikoumenikou-patriarhi-vartholomaiou-me-ton-prutani-tou-ekpa-sto-fanari/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871401/nea-exegersi-sti-domi-metanaston-sto-kleidi-serron-petaxan-petres-kata-astunomikon-kai-prokalesan-zimies-se-egatastaseis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T08:51:10.424948+00:00"
+      "seen_at_utc": "2026-08-30T09:17:03.022660+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456767/syriza-gia-anartisi-mitsotaki-oi-epikoinoniakoi-apologismoi-toy-megaroy-maximoy-den-aforoyn-toys-polites/",
-      "title": "ΣΥΡΙΖΑ για ανάρτηση Μητσοτάκη: Οι επικοινωνιακοί απολογισμοί του Μεγάρου Μαξίμου δεν αφορούν τους πολίτες",
-      "normalized_title": "ΣΥΡΙΖΑ ΓΙΑ ΑΝΑΡΤΗΣΗ ΜΗΤΣΟΤΑΚΗ: ΟΙ ΕΠΙΚΟΙΝΩΝΙΑΚΟΙ ΑΠΟΛΟΓΙΣΜΟΙ ΤΟΥ ΜΕΓΑΡΟΥ ΜΑΞΙΜΟΥ ΔΕΝ ΑΦΟΡΟΥΝ ΤΟΥΣ ΠΟΛΙΤΕΣ",
+      "url": "https://www.efsyn.gr/politiki/1456519/i-aktinografia-tis-apohis-oi-dynatotites-samara-to-stoihima-tsipra-kai-i-dyskolia-toy-pasok/",
+      "title": "Η ακτινογραφία της αποχής: Οι δυνατότητες Σαμαρά, το στοίχημα Τσίπρα και η δυσκολία του ΠΑΣΟΚ",
+      "normalized_title": "Η ΑΚΤΙΝΟΓΡΑΦΙΑ ΤΗΣ ΑΠΟΧΗΣ: ΟΙ ΔΥΝΑΤΟΤΗΤΕΣ ΣΑΜΑΡΑ, ΤΟ ΣΤΟΙΧΗΜΑ ΤΣΙΠΡΑ ΚΑΙ Η ΔΥΣΚΟΛΙΑ ΤΟΥ ΠΑΣΟΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456767/syriza-gia-anartisi-mitsotaki-oi-epikoinoniakoi-apologismoi-toy-megaroy-maximoy-den-aforoyn-toys-polites/"
+        "https://www.efsyn.gr/politiki/1456519/i-aktinografia-tis-apohis-oi-dynatotites-samara-to-stoihima-tsipra-kai-i-dyskolia-toy-pasok/"
       ],
-      "seen_at_utc": "2026-08-30T08:51:10.424903+00:00"
+      "seen_at_utc": "2026-08-30T09:17:03.022630+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/world/mystirio-sti-sikelia-pos-egine-i-klopi-anagennisiakis-texnis-apo-mouseio-mume-anaydoi-oi-ereynites/",
-      "title": "Μυστήριο στη Σικελία: Πώς έγινε η κλοπή αναγεννησιακής τέχνης από το μουσείο MuMe - Άναυδοι οι ερευνητές",
-      "normalized_title": "ΜΥΣΤΗΡΙΟ ΣΤΗ ΣΙΚΕΛΙΑ: ΠΩΣ ΕΓΙΝΕ Η ΚΛΟΠΗ ΑΝΑΓΕΝΝΗΣΙΑΚΗΣ ΤΕΧΝΗΣ ΑΠΟ ΤΟ ΜΟΥΣΕΙΟ MUME - ΑΝΑΥΔΟΙ ΟΙ ΕΡΕΥΝΗΤΕΣ",
+      "url": "https://www.in.gr/2026/08/30/go-fun/despoina-vandi-agapo-to-simera-mou-oi-agkalies-me-ton-vasili-mpismpiki-kai-i-mitrotita/",
+      "title": "Δέσποινα Βανδή: «Αγαπώ το σήμερά μου» – Οι αγκαλιές με τον Βασίλη Μπισμπίκη και η μητρότητα",
+      "normalized_title": "ΔΕΣΠΟΙΝΑ ΒΑΝΔΗ: «ΑΓΑΠΩ ΤΟ ΣΗΜΕΡΑ ΜΟΥ» – ΟΙ ΑΓΚΑΛΙΕΣ ΜΕ ΤΟΝ ΒΑΣΙΛΗ ΜΠΙΣΜΠΙΚΗ ΚΑΙ Η ΜΗΤΡΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/world/mystirio-sti-sikelia-pos-egine-i-klopi-anagennisiakis-texnis-apo-mouseio-mume-anaydoi-oi-ereynites/"
+        "https://www.in.gr/2026/08/30/go-fun/despoina-vandi-agapo-to-simera-mou-oi-agkalies-me-ton-vasili-mpismpiki-kai-i-mitrotita/",
+        "https://www.in.gr/2026/08/30/life/avengers-endgame-encore-to-treiler-ton-rekor-me-77-ekatommyria-provoles-se-molis-24-ores/",
+        "https://www.in.gr/2026/08/30/world/i-viomixania-ton-synoron-i-skoteini-oikonomia-piso-apo-tin-eyropaiki-politiki-metanasteysis/",
+        "https://www.in.gr/2026/08/30/economy/plithorismos-xondrikis-alma-118-ton-ioulio-prominyei-ayksiseis-rafia/",
+        "https://www.in.gr/2026/08/30/health/ios-dytikou-neilou-oi-treis-paragontes-pou-kathorizoun-tin-eksarsi-ta-metra-profylaksis/"
       ],
-      "seen_at_utc": "2026-08-30T08:51:10.424845+00:00"
+      "seen_at_utc": "2026-08-30T09:17:03.022589+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T08:51:10.425018+00:00"
+  "updated_at_utc": "2026-08-30T09:17:03.022725+00:00"
 }
