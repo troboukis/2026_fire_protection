@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564426388/glypta-toy-parthenona-apo-to-choris-oroys-sto-zitima-toy-vretanikoy-moyseioy/",
-      "title": "Γλυπτά του Παρθενώνα: Από το «χωρίς όρους» στο «ζήτημα του Βρετανικού Μουσείου»",
-      "normalized_title": "ΓΛΥΠΤΑ ΤΟΥ ΠΑΡΘΕΝΩΝΑ: ΑΠΟ ΤΟ «ΧΩΡΙΣ ΟΡΟΥΣ» ΣΤΟ «ΖΗΤΗΜΑ ΤΟΥ ΒΡΕΤΑΝΙΚΟΥ ΜΟΥΣΕΙΟΥ»",
+      "url": "https://www.kathimerini.gr/world/564428695/nayagio-epivatigoy-ploioy-anoikta-tis-keryneias-7-nekroi-kai-23-agnooymenoi/",
+      "title": "Ναυάγιο επιβατηγού πλοίου ανοικτά της Κερύνειας: 7 νεκροί και 23 αγνοούμενοι",
+      "normalized_title": "ΝΑΥΑΓΙΟ ΕΠΙΒΑΤΗΓΟΥ ΠΛΟΙΟΥ ΑΝΟΙΚΤΑ ΤΗΣ ΚΕΡΥΝΕΙΑΣ: 7 ΝΕΚΡΟΙ ΚΑΙ 23 ΑΓΝΟΟΥΜΕΝΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564426388/glypta-toy-parthenona-apo-to-choris-oroys-sto-zitima-toy-vretanikoy-moyseioy/"
+        "https://www.kathimerini.gr/world/564428695/nayagio-epivatigoy-ploioy-anoikta-tis-keryneias-7-nekroi-kai-23-agnooymenoi/",
+        "https://www.kathimerini.gr/athletics/564426475/aek-kai-ofi-paradeigmata-gia-aionioys-kai-paok/",
+        "https://www.kathimerini.gr/economy/564426634/arthro-toy-antoni-kontoleontos-stin-k-i-asfaleia-dikaioy-dokimazetai-stin-efarmogi/"
       ],
-      "seen_at_utc": "2026-08-30T13:29:57.761178+00:00"
+      "seen_at_utc": "2026-08-30T13:51:11.012756+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1270,27 @@
       "seen_at_utc": "2026-08-30T13:29:57.761292+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456838/epeisodio-me-pyrovolismoys-sti-thessaloniki-40hronos-me-karampina-o-drastis-eihe-proigithei-diapliktismos/",
-      "title": "Επεισόδιο με πυροβολισμούς στη Θεσσαλονίκη: 40χρονος με καραμπίνα ο δράστης – Είχε προηγηθεί διαπληκτισμός",
-      "normalized_title": "ΕΠΕΙΣΟΔΙΟ ΜΕ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: 40ΧΡΟΝΟΣ ΜΕ ΚΑΡΑΜΠΙΝΑ Ο ΔΡΑΣΤΗΣ – ΕΙΧΕ ΠΡΟΗΓΗΘΕΙ ΔΙΑΠΛΗΚΤΙΣΜΟΣ",
+      "url": "https://www.efsyn.gr/ellada/1456846/tragodia-ston-platania-hanion-nekri-11hroni-se-pisina-xenodoheioy/",
+      "title": "Τραγωδία στον Πλατανιά Χανίων: Νεκρή 11χρονη σε πισίνα ξενοδοχείου",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟΝ ΠΛΑΤΑΝΙΑ ΧΑΝΙΩΝ: ΝΕΚΡΗ 11ΧΡΟΝΗ ΣΕ ΠΙΣΙΝΑ ΞΕΝΟΔΟΧΕΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456838/epeisodio-me-pyrovolismoys-sti-thessaloniki-40hronos-me-karampina-o-drastis-eihe-proigithei-diapliktismos/"
+        "https://www.efsyn.gr/ellada/1456846/tragodia-ston-platania-hanion-nekri-11hroni-se-pisina-xenodoheioy/",
+        "https://www.efsyn.gr/ellada/1456844/agrio-epeisodio-xylodarmoy-sta-giannitsa-nosileyetai-sto-nosokomeio-27hronos-kakoyrgimatiki-dioxi-se-26hrono/"
       ],
-      "seen_at_utc": "2026-08-30T13:29:57.761274+00:00"
+      "seen_at_utc": "2026-08-30T13:51:11.012844+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/sports/basketball/olympiakos-promitheas-77-63-proto-anepisimo-filiko-gia-tous-erythroleykous/",
-      "title": "Ολυμπιακός – Προμηθέας 77-63: Πρώτο ανεπίσημο φιλικό για τους «ερυθρόλευκους»",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ – ΠΡΟΜΗΘΕΑΣ 77-63: ΠΡΩΤΟ ΑΝΕΠΙΣΗΜΟ ΦΙΛΙΚΟ ΓΙΑ ΤΟΥΣ «ΕΡΥΘΡΟΛΕΥΚΟΥΣ»",
+      "url": "https://www.in.gr/2026/08/30/greece/apisteyto-skiniko-sta-xania-fortose-olokliro-dentro-sto-mixanaki/",
+      "title": "Απίστευτο σκηνικό στα Χανιά: Φόρτωσε ολόκληρο δέντρο στο… μηχανάκι",
+      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΣΚΗΝΙΚΟ ΣΤΑ ΧΑΝΙΑ: ΦΟΡΤΩΣΕ ΟΛΟΚΛΗΡΟ ΔΕΝΤΡΟ ΣΤΟ… ΜΗΧΑΝΑΚΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/sports/basketball/olympiakos-promitheas-77-63-proto-anepisimo-filiko-gia-tous-erythroleykous/",
-        "https://www.in.gr/2026/08/30/greece/tragodia-sta-xania-me-nekro-11xrono-koritsi-anasyrthike-xoris-tis-aisthiseis-tou-apo-pisina-ksenodoxeiou/"
+        "https://www.in.gr/2026/08/30/greece/apisteyto-skiniko-sta-xania-fortose-olokliro-dentro-sto-mixanaki/",
+        "https://www.in.gr/2026/08/30/sports/on-field/taktiki-xoris-logiki-tou-lanoua-stous-orismous-diaititon/",
+        "https://www.in.gr/2026/08/30/in-science/space/sto-diastima-to-nancy-grace-roman-to-neo-tileskopio-tis-nasa/",
+        "https://www.in.gr/2026/08/30/stories/pethane-sta-34-tou-o-neoteros-vasilias-ston-kosmo-anevike-ston-throno-otan-itan-molis-trion/"
       ],
-      "seen_at_utc": "2026-08-30T13:29:57.761225+00:00"
+      "seen_at_utc": "2026-08-30T13:51:11.012803+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T13:29:57.761365+00:00"
+  "updated_at_utc": "2026-08-30T13:51:11.012915+00:00"
 }
