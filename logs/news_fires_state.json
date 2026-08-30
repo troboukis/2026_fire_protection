@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428563/rosia-proanaggellei-mazikes-epitheseis-stis-energeiakes-ypodomes-tis-oykranias/",
-      "title": "Ρωσία: Προαναγγέλλει «μαζικές επιθέσεις» στις ενεργειακές υποδομές της Ουκρανίας",
-      "normalized_title": "ΡΩΣΙΑ: ΠΡΟΑΝΑΓΓΕΛΛΕΙ «ΜΑΖΙΚΕΣ ΕΠΙΘΕΣΕΙΣ» ΣΤΙΣ ΕΝΕΡΓΕΙΑΚΕΣ ΥΠΟΔΟΜΕΣ ΤΗΣ ΟΥΚΡΑΝΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/564428584/thesssaloniki-exichniastike-tilefoniki-apati-me-leia-15-000-eyro/",
+      "title": "Θεσσσαλονίκη: Εξιχνιάστηκε τηλεφωνική απάτη με λεία 15.000 ευρώ",
+      "normalized_title": "ΘΕΣΣΣΑΛΟΝΙΚΗ: ΕΞΙΧΝΙΑΣΤΗΚΕ ΤΗΛΕΦΩΝΙΚΗ ΑΠΑΤΗ ΜΕ ΛΕΙΑ 15.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428563/rosia-proanaggellei-mazikes-epitheseis-stis-energeiakes-ypodomes-tis-oykranias/"
+        "https://www.kathimerini.gr/society/564428584/thesssaloniki-exichniastike-tilefoniki-apati-me-leia-15-000-eyro/",
+        "https://www.kathimerini.gr/society/564428569/i-anakoinosi-tis-aegean-gia-tin-ptisi-rodos-karpathos/",
+        "https://www.kathimerini.gr/society/564428581/i-moiraia-strofi-prin-to-skafos-toy-ntimi-mayropoyloy-pesei-sta-vrachia-toy-fonazan-na-katevei/"
       ],
-      "seen_at_utc": "2026-08-30T10:30:03.933404+00:00"
+      "seen_at_utc": "2026-08-30T11:16:56.658456+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871427/nuhterinoi-psekasmoi-me-tourbines-stin-anatoliki-attiki-ta-eidika-ohimata-kai-ta-stasima-nera-sti-loutsa/?utm_source=rss",
-      "title": "Νυχτερινοί ψεκασμοί με «τουρμπίνες» στην Ανατολική Αττική - Τα ειδικά οχήματα και τα στάσιμα νερά στη Λούτσα",
-      "normalized_title": "ΝΥΧΤΕΡΙΝΟΙ ΨΕΚΑΣΜΟΙ ΜΕ «ΤΟΥΡΜΠΙΝΕΣ» ΣΤΗΝ ΑΝΑΤΟΛΙΚΗ ΑΤΤΙΚΗ - ΤΑ ΕΙΔΙΚΑ ΟΧΗΜΑΤΑ ΚΑΙ ΤΑ ΣΤΑΣΙΜΑ ΝΕΡΑ ΣΤΗ ΛΟΥΤΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1871433/vuthistike-skafos-me-279-epivainodes-stin-katehomeni-keruneia/?utm_source=rss",
+      "title": "Βυθίστηκε σκάφος με 279 επιβαίνοντες στην κατεχόμενη Κερύνεια",
+      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΣΚΑΦΟΣ ΜΕ 279 ΕΠΙΒΑΙΝΟΝΤΕΣ ΣΤΗΝ ΚΑΤΕΧΟΜΕΝΗ ΚΕΡΥΝΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871427/nuhterinoi-psekasmoi-me-tourbines-stin-anatoliki-attiki-ta-eidika-ohimata-kai-ta-stasima-nera-sti-loutsa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871433/vuthistike-skafos-me-279-epivainodes-stin-katehomeni-keruneia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871432/halkidiki-60hronos-paraligo-na-pnigei-me-fagito-sto-paniguri-tou-agiou-mama-sotiria-paremvasi-ethelodon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T10:51:15.368939+00:00"
+      "seen_at_utc": "2026-08-30T11:16:56.658591+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1456789/koyfonikolakoy-olokliromenes-protaseis-gia-ton-protogeni-tomea-kai-tin-antimetopisi-tis-stegastikis-krisis/",
-      "title": "Κουφονικολάκου: Ολοκληρωμένες προτάσεις για τον πρωτογενή τομέα και την αντιμετώπιση της στεγαστικής κρίσης",
-      "normalized_title": "ΚΟΥΦΟΝΙΚΟΛΑΚΟΥ: ΟΛΟΚΛΗΡΩΜΕΝΕΣ ΠΡΟΤΑΣΕΙΣ ΓΙΑ ΤΟΝ ΠΡΩΤΟΓΕΝΗ ΤΟΜΕΑ ΚΑΙ ΤΗΝ ΑΝΤΙΜΕΤΩΠΙΣΗ ΤΗΣ ΣΤΕΓΑΣΤΙΚΗΣ ΚΡΙΣΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1456542/pasok-to-15nthimero-tis-prasinis-antepithesis/",
+      "title": "ΠΑΣΟΚ: Το 15νθήμερο της «πράσινης» αντεπίθεσης",
+      "normalized_title": "ΠΑΣΟΚ: ΤΟ 15ΝΘΗΜΕΡΟ ΤΗΣ «ΠΡΑΣΙΝΗΣ» ΑΝΤΕΠΙΘΕΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1456789/koyfonikolakoy-olokliromenes-protaseis-gia-ton-protogeni-tomea-kai-tin-antimetopisi-tis-stegastikis-krisis/"
+        "https://www.efsyn.gr/politiki/1456542/pasok-to-15nthimero-tis-prasinis-antepithesis/",
+        "https://www.efsyn.gr/ellada/1456793/i-anakoinosi-tis-aegean-gia-to-aeroskafos-poy-ekane-anagkastiki-prosgeiosi-sti-rodo/",
+        "https://www.efsyn.gr/politiki/1456791/ellas-to-organotiko-grafeio-kai-oi-syntonistes-perifereion-analytika-ola-ta-onomata/"
       ],
-      "seen_at_utc": "2026-08-30T10:51:15.368887+00:00"
+      "seen_at_utc": "2026-08-30T11:16:56.658558+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/sports/football/anakoinose-ton-martines-i-tselsi-vid/",
-      "title": "Ανακοίνωσε τον Μαρτίνες η Τσέλσι (vid)",
-      "normalized_title": "ΑΝΑΚΟΙΝΩΣΕ ΤΟΝ ΜΑΡΤΙΝΕΣ Η ΤΣΕΛΣΙ (VID)",
+      "url": "https://www.in.gr/2026/08/30/sports/on-field/olympiakos-epistrofi-stin-tripoli-7-mines-meta-me-to-50/",
+      "title": "Ολυμπιακός: Επιστροφή στην Τρίπολη 7 μήνες μετά με το… 50%",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΕΠΙΣΤΡΟΦΗ ΣΤΗΝ ΤΡΙΠΟΛΗ 7 ΜΗΝΕΣ ΜΕΤΑ ΜΕ ΤΟ… 50%",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/sports/football/anakoinose-ton-martines-i-tselsi-vid/",
-        "https://www.in.gr/2026/08/30/politics/politiki-grammateia/syriza-se-mitsotaki-pou-pigan-ta-dis-tou-tameiou-anakampsis-kai-poiou-allaksan-pragmatika-ti-zoi/",
-        "https://www.in.gr/2026/08/30/pet-stories/allergia-sti-gata-oi-praktikes-lyseis-gia-na-meinete-mazi-xoris-risko/",
-        "https://www.in.gr/2026/08/30/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-30-08-05-09-2026/",
-        "https://www.in.gr/2026/08/30/politics/politiki-grammateia/tsoukalas-i-kyvernisi-mitsotaki-eksypiretei-ta-symferonta-ton-funds-sigi-asyrmatou-gia-to-idiotiko-xreos/",
-        "https://www.in.gr/2026/08/30/greece/rodos-aeroskafos-epestrepse-sto-aerodromio-logo-pithanis-mixanikis-vlavis/"
+        "https://www.in.gr/2026/08/30/sports/on-field/olympiakos-epistrofi-stin-tripoli-7-mines-meta-me-to-50/",
+        "https://www.in.gr/2026/08/30/plus/kid/xartziliki-mathainontas-apo-noris-sta-paidia-tin-aksia-tis-sostis-oikonomikis-diaxeirisis/",
+        "https://www.in.gr/2026/08/30/world/elvetia-anthropokynigito-gia-ton-drasti-tis-enoplis-epithesis-nekri-22xroni/",
+        "https://www.in.gr/2026/08/30/world/keryneia-vythistike-skafos-me-279-epivainontes-anoixta-ton-katexomenon/",
+        "https://www.in.gr/2026/08/30/politics/kke-gia-mitsotaki-o-laos-tha-dosei-tin-apantisi-pou-tous-xrostaei-sto-panelladiko-syllalitirio-sti-deth/",
+        "https://www.in.gr/2026/08/30/politics/politiki-grammateia/ayto-einai-to-organotiko-grafeio-kai-oi-syntonistes-perifereion-tis-elas-poioi-analamvanoun-tomeis-eythynis/",
+        "https://www.in.gr/2026/08/30/greece/stin-eyelpidon-o-aris-mougkopetros-prostimo-1-375-eyro-kai-afairesi-diplomatos-gia-250-meres/"
       ],
-      "seen_at_utc": "2026-08-30T10:51:15.368825+00:00"
+      "seen_at_utc": "2026-08-30T11:16:56.658519+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T10:51:15.369020+00:00"
+  "updated_at_utc": "2026-08-30T11:16:56.658662+00:00"
 }
