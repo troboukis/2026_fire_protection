@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564428659/alexandroypoli-treis-syllipseis-gia-kykloforia-plaston-chartonomismaton/",
-      "title": "Αλεξανδρούπολη: Τρεις συλλήψεις για κυκλοφορία πλαστών χαρτονομισμάτων",
-      "normalized_title": "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗ: ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΚΥΚΛΟΦΟΡΙΑ ΠΛΑΣΤΩΝ ΧΑΡΤΟΝΟΜΙΣΜΑΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/564428677/chania-11chroni-anasyrthike-choris-tis-aisthiseis-tis-apo-pisina-nosileyetai-se-krisimi-katastasi/",
+      "title": "Χανιά: 11χρονη ανασύρθηκε χωρίς τις αισθήσεις της από πισίνα – Νοσηλεύεται σε κρίσιμη κατάσταση",
+      "normalized_title": "ΧΑΝΙΑ: 11ΧΡΟΝΗ ΑΝΑΣΥΡΘΗΚΕ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΗΣ ΑΠΟ ΠΙΣΙΝΑ – ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΚΡΙΣΙΜΗ ΚΑΤΑΣΤΑΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564428659/alexandroypoli-treis-syllipseis-gia-kykloforia-plaston-chartonomismaton/"
+        "https://www.kathimerini.gr/society/564428677/chania-11chroni-anasyrthike-choris-tis-aisthiseis-tis-apo-pisina-nosileyetai-se-krisimi-katastasi/",
+        "https://www.kathimerini.gr/society/564428668/thessaloniki-pyrovolismoi-se-kafeteria-synelifthi-40chronos/"
       ],
-      "seen_at_utc": "2026-08-30T12:51:13.402870+00:00"
+      "seen_at_utc": "2026-08-30T13:17:09.248944+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871455/polu-upsilos-kindunos-purkagias-aurio-se-kriti-karpatho-kai-kaso-poies-periohes-tithedai-se-red-code/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο σε Κρήτη, Κάρπαθο και Κάσο, ποιες περιοχές τίθενται σε «Red Code»",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ ΣΕ ΚΡΗΤΗ, ΚΑΡΠΑΘΟ ΚΑΙ ΚΑΣΟ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΤΙΘΕΝΤΑΙ ΣΕ «RED CODE»",
+      "url": "https://www.protothema.gr/greece/article/1871460/purovolismoi-se-katastima-sto-kedro-tis-thessalonikis-40hronos-anoixe-pur-me-karabina/?utm_source=rss",
+      "title": "Πυροβολισμοί σε κατάστημα στο κέντρο της Θεσσαλονίκης, 40χρονος άνοιξε πυρ με καραμπίνα",
+      "normalized_title": "ΠΥΡΟΒΟΛΙΣΜΟΙ ΣΕ ΚΑΤΑΣΤΗΜΑ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ, 40ΧΡΟΝΟΣ ΑΝΟΙΞΕ ΠΥΡ ΜΕ ΚΑΡΑΜΠΙΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871455/polu-upsilos-kindunos-purkagias-aurio-se-kriti-karpatho-kai-kaso-poies-periohes-tithedai-se-red-code/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871452/fotia-tora-se-dasos-stin-koritiani-igoumenitsas-sikothike-ena-aeroskafos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871460/purovolismoi-se-katastima-sto-kedro-tis-thessalonikis-40hronos-anoixe-pur-me-karabina/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-30T12:30:31.374170+00:00"
+      "seen_at_utc": "2026-08-30T13:17:09.249068+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1456823/serres-nea-entasi-sti-domi-tis-sintikis-proklithikan-fthores-stis-egkatastaseis/",
-      "title": "Σέρρες: Νέα ένταση στη δομή της Σιντικής – Προκλήθηκαν φθορές στις εγκαταστάσεις",
-      "normalized_title": "ΣΕΡΡΕΣ: ΝΕΑ ΕΝΤΑΣΗ ΣΤΗ ΔΟΜΗ ΤΗΣ ΣΙΝΤΙΚΗΣ – ΠΡΟΚΛΗΘΗΚΑΝ ΦΘΟΡΕΣ ΣΤΙΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ",
+      "url": "https://www.efsyn.gr/politiki/1456829/nea-dorea-stratiotikoy-ylikoy-apo-tin-ellada-stis-enoples-dynameis-toy-livanoy-eikones/",
+      "title": "Νέα δωρεά στρατιωτικού υλικού από την Ελλάδα στις ένοπλες δυνάμεις του Λιβάνου [εικόνες]",
+      "normalized_title": "ΝΕΑ ΔΩΡΕΑ ΣΤΡΑΤΙΩΤΙΚΟΥ ΥΛΙΚΟΥ ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ ΤΟΥ ΛΙΒΑΝΟΥ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1456823/serres-nea-entasi-sti-domi-tis-sintikis-proklithikan-fthores-stis-egkatastaseis/"
+        "https://www.efsyn.gr/politiki/1456829/nea-dorea-stratiotikoy-ylikoy-apo-tin-ellada-stis-enoples-dynameis-toy-livanoy-eikones/",
+        "https://www.efsyn.gr/politiki/1456822/skliri-kontra-sti-nd-meta-tis-diloseis-tsioytsia-oi-diloseis-toy-prosvaloyn-ton-idio-ton-samara-apanta-o-adonis/"
       ],
-      "seen_at_utc": "2026-08-30T12:51:13.402966+00:00"
+      "seen_at_utc": "2026-08-30T13:17:09.249040+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/greece/serres-nea-entasi-sti-domi-metanaston-tis-sintikis-katerreyse-tmima-tis-perifraksis/",
-      "title": "Νέα ένταση στη δομή μεταναστών της Σιντικής - Κατέρρευσε τμήμα της περίφραξης",
-      "normalized_title": "ΝΕΑ ΕΝΤΑΣΗ ΣΤΗ ΔΟΜΗ ΜΕΤΑΝΑΣΤΩΝ ΤΗΣ ΣΙΝΤΙΚΗΣ - ΚΑΤΕΡΡΕΥΣΕ ΤΜΗΜΑ ΤΗΣ ΠΕΡΙΦΡΑΞΗΣ",
+      "url": "https://www.in.gr/2026/08/30/greece/12xroni-apo-ti-nea-yorki-diagnostike-me-ogko-kai-xeirourgithike-sto-paidon-agia-sofia/",
+      "title": "12χρονη από τη Νέα Υόρκη διαγνώστηκε με όγκο και χειρουργήθηκε στο Παίδων «Αγία Σοφία»",
+      "normalized_title": "12ΧΡΟΝΗ ΑΠΟ ΤΗ ΝΕΑ ΥΟΡΚΗ ΔΙΑΓΝΩΣΤΗΚΕ ΜΕ ΟΓΚΟ ΚΑΙ ΧΕΙΡΟΥΡΓΗΘΗΚΕ ΣΤΟ ΠΑΙΔΩΝ «ΑΓΙΑ ΣΟΦΙΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/greece/serres-nea-entasi-sti-domi-metanaston-tis-sintikis-katerreyse-tmima-tis-perifraksis/",
-        "https://www.in.gr/2026/08/30/sports/football/mpraiton-ksekina-vasikos-o-kostoulas-kontra-stin-tselsi/",
-        "https://www.in.gr/2026/08/30/politics/o-stolos-tou-2030-i-megali-allagi-sto-polemiko-naytiko-exei-idi-arxisei/",
-        "https://www.in.gr/2026/08/30/life/tom-krouz-ksana-sto-nascar-me-to-days-of-thunder-2-synodigos-meta-ti-nikol-kintman-i-an-xathagouei/"
+        "https://www.in.gr/2026/08/30/greece/12xroni-apo-ti-nea-yorki-diagnostike-me-ogko-kai-xeirourgithike-sto-paidon-agia-sofia/",
+        "https://www.in.gr/2026/08/30/go-fun/kalokairakides-vs-xeimonakides-eseis-me-poious-eiste/",
+        "https://www.in.gr/matchcenter/5795427/",
+        "https://www.in.gr/2026/08/30/greece/thessaloniki-epeisodio-me-pyrovolismous-sto-kentro-tis-polis-mia-syllipsi-meta-apo-kavga/",
+        "https://www.in.gr/2026/08/30/world/nepal-h-stigmi-pou-i-5xroni-manisa-vgainei-zontani-meta-apo-60-ores-thammeni-sti-laspi/"
       ],
-      "seen_at_utc": "2026-08-30T12:51:13.402919+00:00"
+      "seen_at_utc": "2026-08-30T13:17:09.248999+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T12:51:13.403039+00:00"
+  "updated_at_utc": "2026-08-30T13:17:09.249138+00:00"
 }
