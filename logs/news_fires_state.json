@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564428422/nekros-76chronos-epicheirimatias-apo-tin-kakokairia-stin-kypro-to-skafos-toy-dialythike-sta-vrachia/",
-      "title": "76χρονος επιχειρηματίας ο νεκρός από την κακοκαιρία στην Κύπρο – Το σκάφος του διαλύθηκε στα βράχια",
-      "normalized_title": "76ΧΡΟΝΟΣ ΕΠΙΧΕΙΡΗΜΑΤΙΑΣ Ο ΝΕΚΡΟΣ ΑΠΟ ΤΗΝ ΚΑΚΟΚΑΙΡΙΑ ΣΤΗΝ ΚΥΠΡΟ – ΤΟ ΣΚΑΦΟΣ ΤΟΥ ΔΙΑΛΥΘΗΚΕ ΣΤΑ ΒΡΑΧΙΑ",
+      "url": "https://www.kathimerini.gr/politics/parties/564426148/monos-antipalos-o-mitsotakis-leei-o-tsipras/",
+      "title": "Μόνος αντίπαλος ο Μητσοτάκης, λέει ο Τσίπρας",
+      "normalized_title": "ΜΟΝΟΣ ΑΝΤΙΠΑΛΟΣ Ο ΜΗΤΣΟΤΑΚΗΣ, ΛΕΕΙ Ο ΤΣΙΠΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564428422/nekros-76chronos-epicheirimatias-apo-tin-kakokairia-stin-kypro-to-skafos-toy-dialythike-sta-vrachia/",
-        "https://www.kathimerini.gr/world/564426301/to-geyma-me-parea-ofelei-tin-ygeia/",
-        "https://www.kathimerini.gr/world/564428413/pyrovolismoi-se-rave-party-stin-elvetia/"
+        "https://www.kathimerini.gr/politics/parties/564426148/monos-antipalos-o-mitsotakis-leei-o-tsipras/",
+        "https://www.kathimerini.gr/world/564428431/islandia-oriako-provadisma-toy-ochi-sto-dimopsifisma-gia-tis-entaxiakes-synomilies-me-tin-e-e/",
+        "https://www.kathimerini.gr/culture/564425119/500-lexeis-me-ti-foteini-konstantopoyloy/"
       ],
-      "seen_at_utc": "2026-08-30T05:51:13.917053+00:00"
+      "seen_at_utc": "2026-08-30T06:17:04.794959+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,26 +1271,33 @@
       "seen_at_utc": "2026-08-30T05:51:13.917243+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1456475/ta-psemata-hatzidaki-gia-toys-eleytheroys-epaggelmaties-ti-elege-apo-ton-noemvrio-toy-2020-i-perifimi-ekthesi-pissaridi/",
-      "title": "Τα ψέματα Χατζηδάκη για τους ελεύθερους επαγγελματίες: Τι έλεγε από τον Νοέμβριο του 2020 η περίφημη «έκθεση Πισσαρίδη»",
-      "normalized_title": "ΤΑ ΨΕΜΑΤΑ ΧΑΤΖΗΔΑΚΗ ΓΙΑ ΤΟΥΣ ΕΛΕΥΘΕΡΟΥΣ ΕΠΑΓΓΕΛΜΑΤΙΕΣ: ΤΙ ΕΛΕΓΕ ΑΠΟ ΤΟΝ ΝΟΕΜΒΡΙΟ ΤΟΥ 2020 Η ΠΕΡΙΦΗΜΗ «ΕΚΘΕΣΗ ΠΙΣΣΑΡΙΔΗ»",
+      "url": "https://www.efsyn.gr/stiles/1456498/to-vasiko-provlima/",
+      "title": "Το βασικό πρόβλημα",
+      "normalized_title": "ΤΟ ΒΑΣΙΚΟ ΠΡΟΒΛΗΜΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1456475/ta-psemata-hatzidaki-gia-toys-eleytheroys-epaggelmaties-ti-elege-apo-ton-noemvrio-toy-2020-i-perifimi-ekthesi-pissaridi/"
+        "https://www.efsyn.gr/stiles/1456498/to-vasiko-provlima/",
+        "https://www.efsyn.gr/kosmos/1456742/symfonia-me-tis-ipa-i-venezoyela-diatirei-tin-idioktisia-kai-tin-kyriarhia-toy-petrelaioy-tis/",
+        "https://www.efsyn.gr/kosmos/1456721/elvetia-pyrovolismoi-se-rave-party-anafores-gia-polla-thymata/",
+        "https://www.efsyn.gr/athlitismos/1456732/traymatistike-sovara-o-konstantelias-proto-thema-ston-germaniko-typo-agonia-gia-ta-apotelesmata-ton-exetaseon/"
       ],
-      "seen_at_utc": "2026-08-30T05:51:13.917175+00:00"
+      "seen_at_utc": "2026-08-30T06:17:04.795058+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/30/economy/oikonomikes-eidiseis/deth-ta-epta-paketa-metron-sto-kalathi/",
-      "title": "Τι θα μπει στο «καλάθι» της ΔΕΘ - Ποια μέτρα κλειδώνουν",
-      "normalized_title": "ΤΙ ΘΑ ΜΠΕΙ ΣΤΟ «ΚΑΛΑΘΙ» ΤΗΣ ΔΕΘ - ΠΟΙΑ ΜΕΤΡΑ ΚΛΕΙΔΩΝΟΥΝ",
+      "url": "https://www.in.gr/2026/08/30/world/thriler-sto-dimopsifisma-tis-islandias-gia-tin-ee-synexizetai-i-katametrisi/",
+      "title": "Θρίλερ στο δημοψήφισμα της Ισλανδίας για την ΕΕ – Συνεχίζεται η καταμέτρηση",
+      "normalized_title": "ΘΡΙΛΕΡ ΣΤΟ ΔΗΜΟΨΗΦΙΣΜΑ ΤΗΣ ΙΣΛΑΝΔΙΑΣ ΓΙΑ ΤΗΝ ΕΕ – ΣΥΝΕΧΙΖΕΤΑΙ Η ΚΑΤΑΜΕΤΡΗΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/30/economy/oikonomikes-eidiseis/deth-ta-epta-paketa-metron-sto-kalathi/",
-        "https://www.in.gr/2026/08/30/sports/football/konstantis-tzolakis-to-tromero-rekor-tou-meta-apo-molis-dyo-mats-stin-premier-league-pic/",
-        "https://www.in.gr/2026/08/30/life/culture-live/o-tik-kai-i-tela-ston-votaniko-kipo-diomidous/",
-        "https://www.in.gr/2026/08/30/world/ipa-kanadas-polemos-pinakidon-gia-ti-limni-ontario-i-apantisi-fornt-stin-proklisi-tramp/"
+        "https://www.in.gr/2026/08/30/world/thriler-sto-dimopsifisma-tis-islandias-gia-tin-ee-synexizetai-i-katametrisi/",
+        "https://www.in.gr/2026/08/30/economy/oikonomikes-eidiseis/mikromesaies-epixeiriseis-me-liksiprothesmes-ofeiles-treis-stis-deka-syssoreyoun-xrei-adynamia-apopliromis/",
+        "https://www.in.gr/2026/08/30/sports/football/arrosti-emfanisi-tou-mesi-me-tessera-gkol-kai-mia-asist-vids/",
+        "https://www.in.gr/2026/08/30/world/elvetia-pyrovolismoi-me-polla-thymata-se-techno-party-nomizame-oti-itan-pyrotexnimata/",
+        "https://www.in.gr/2026/08/30/economy/diethnis-oikonomia/to-fainomeno-philip-morris-thorakizei-ti-meta/",
+        "https://www.in.gr/2026/08/30/world/i-nea-naytiki-koursa-tis-eyropis-poioi-xtizoun-tous-neous-stolous-o-komvikos-rolos-tis-elladas/",
+        "https://www.in.gr/2026/08/30/plus/vita/bird-dog-mia-askisi-gia-olo-to-soma/",
+        "https://www.in.gr/2026/08/30/greece/giati-mas-leipoun-toso-ta-kalokairia-ton-80s-kai-90s/"
       ],
-      "seen_at_utc": "2026-08-30T05:51:13.917134+00:00"
+      "seen_at_utc": "2026-08-30T06:17:04.795029+00:00"
     }
   },
-  "updated_at_utc": "2026-08-30T05:51:13.917321+00:00"
+  "updated_at_utc": "2026-08-30T06:17:04.795132+00:00"
 }
