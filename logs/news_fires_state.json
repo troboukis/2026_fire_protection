@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564429445/iran-dyo-nekroi-apo-tin-amerikaniki-epithesi-sto-nisi-larak/",
-      "title": "Ιράν: Δύο νεκροί από την αμερικανική επίθεση στο νησί Λαράκ",
-      "normalized_title": "ΙΡΑΝ: ΔΥΟ ΝΕΚΡΟΙ ΑΠΟ ΤΗΝ ΑΜΕΡΙΚΑΝΙΚΗ ΕΠΙΘΕΣΗ ΣΤΟ ΝΗΣΙ ΛΑΡΑΚ",
+      "url": "https://www.kathimerini.gr/economy/564427324/ktiria-me-parelthon-apoktoyn-mellon/",
+      "title": "Κτίρια με παρελθόν αποκτούν μέλλον",
+      "normalized_title": "ΚΤΙΡΙΑ ΜΕ ΠΑΡΕΛΘΟΝ ΑΠΟΚΤΟΥΝ ΜΕΛΛΟΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564429445/iran-dyo-nekroi-apo-tin-amerikaniki-epithesi-sto-nisi-larak/"
+        "https://www.kathimerini.gr/economy/564427324/ktiria-me-parelthon-apoktoyn-mellon/",
+        "https://www.kathimerini.gr/world/564429466/fintan-etoimazetai-odikos-chartis-gia-entaxi-ki-allon-kraton-sti-symfonia-tis-mekkas/",
+        "https://www.kathimerini.gr/society/564429502/neos-kosmos-soros-anasyrthike-apo-diamerisma-meta-apo-fotia/",
+        "https://www.kathimerini.gr/society/564429460/kypseli-machairosan-to-vrefos-pano-apo-10-fores-ti-entopise-o-iatrodikastis/",
+        "https://www.kathimerini.gr/society/564429454/thessaloniki-sti-fylaki-37chronos-poy-chtypise-ti-syzygo-toy-mprosta-sto-paidi-toys/"
       ],
-      "seen_at_utc": "2026-08-31T12:29:57.298654+00:00"
+      "seen_at_utc": "2026-08-31T12:51:36.195171+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,28 +1272,31 @@
       "seen_at_utc": "2026-08-31T12:29:57.298781+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1457153/metro-thessalonikis-to-megalytero-leftodentro-tis-eptaetias-mitsotaki/",
-      "title": "Μετρό Θεσσαλονίκης: Το μεγαλύτερο λεφτόδεντρο της επταετίας Μητσοτάκη",
-      "normalized_title": "ΜΕΤΡΟ ΘΕΣΣΑΛΟΝΙΚΗΣ: ΤΟ ΜΕΓΑΛΥΤΕΡΟ ΛΕΦΤΟΔΕΝΤΡΟ ΤΗΣ ΕΠΤΑΕΤΙΑΣ ΜΗΤΣΟΤΑΚΗ",
+      "url": "https://www.efsyn.gr/kosmos/1457400/nayagio-stin-keryneia-elege-min-m-afiseis-kai-glistroyse-sygklonistiki-martyria-miteras-gia-tin-kori-tis/",
+      "title": "Ναυάγιο στην Κερύνεια: «Έλεγε μην μ’ αφήσεις και γλιστρούσε» – Συγκλονιστική μαρτυρία μητέρας για την κόρη της",
+      "normalized_title": "ΝΑΥΑΓΙΟ ΣΤΗΝ ΚΕΡΥΝΕΙΑ: «ΕΛΕΓΕ ΜΗΝ Μ’ ΑΦΗΣΕΙΣ ΚΑΙ ΓΛΙΣΤΡΟΥΣΕ» – ΣΥΓΚΛΟΝΙΣΤΙΚΗ ΜΑΡΤΥΡΙΑ ΜΗΤΕΡΑΣ ΓΙΑ ΤΗΝ ΚΟΡΗ ΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1457153/metro-thessalonikis-to-megalytero-leftodentro-tis-eptaetias-mitsotaki/",
-        "https://www.efsyn.gr/politiki/1457392/vinteo-mitsotaki-me-tehniti-noimosyni-gia-tin-oloklirosi-toy-tameioy-anakampsis-vinteo/"
+        "https://www.efsyn.gr/kosmos/1457400/nayagio-stin-keryneia-elege-min-m-afiseis-kai-glistroyse-sygklonistiki-martyria-miteras-gia-tin-kori-tis/",
+        "https://www.efsyn.gr/politiki/1457404/marinakis-gia-tsioytsia-den-nomizo-oti-ayta-poy-eipe-apihoyn-tis-apopseis-samara/",
+        "https://www.efsyn.gr/ellada/1457405/kypseli-pano-apo-deka-fores-eihan-mahairosei-to-vrefos-ti-edeixe-i-iatrodikastiki-exetasi/",
+        "https://www.efsyn.gr/ellada/1457407/fotia-se-diamerisma-sto-neo-kosmo-sti-mahi-12-pyrosvestes-me-4-ohimata/"
       ],
-      "seen_at_utc": "2026-08-31T12:29:57.298741+00:00"
+      "seen_at_utc": "2026-08-31T12:51:36.195265+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/greece/dust-devil-ti-einai-o-thermikos-strovilos-pou-emfanistike-sto-oaka/",
-      "title": "Dust Devil: Τι είναι ο θερμικός στρόβιλος που εμφανίστηκε στο ΟΑΚΑ",
-      "normalized_title": "DUST DEVIL: ΤΙ ΕΙΝΑΙ Ο ΘΕΡΜΙΚΟΣ ΣΤΡΟΒΙΛΟΣ ΠΟΥ ΕΜΦΑΝΙΣΤΗΚΕ ΣΤΟ ΟΑΚΑ",
+      "url": "https://www.in.gr/2026/08/31/politics/politiki-grammateia/marinakis-epithesi-se-pasok-mpixtes-gia-samara-kai-aoristes-sygkratimenes-yposxeseis-enopsei-deth/",
+      "title": "Επίθεση Μαρινάκη σε ΠΑΣΟΚ, μπηχτές για Σαμαρά και αόριστες «συγκρατημένες» υποσχέσεις ενόψει ΔΕΘ",
+      "normalized_title": "ΕΠΙΘΕΣΗ ΜΑΡΙΝΑΚΗ ΣΕ ΠΑΣΟΚ, ΜΠΗΧΤΕΣ ΓΙΑ ΣΑΜΑΡΑ ΚΑΙ ΑΟΡΙΣΤΕΣ «ΣΥΓΚΡΑΤΗΜΕΝΕΣ» ΥΠΟΣΧΕΣΕΙΣ ΕΝΟΨΕΙ ΔΕΘ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/greece/dust-devil-ti-einai-o-thermikos-strovilos-pou-emfanistike-sto-oaka/",
-        "https://www.in.gr/2026/08/31/life/to-babylon-berlin-einai-san-ton-titaniko-kai-to-pagovouno-einai-o-xitler-antio-stin-profitiki-seira-ton-kairon-mas/",
-        "https://www.in.gr/2026/08/31/world/elvetia-synelavan-43xrono-gia-ti-foniki-enopli-epithesi-sto-rave-parti/",
-        "https://www.in.gr/2026/08/31/sports/football/panathinaikos-ti-dilose-o-proponitis-tou-agiaks-gia-metagrafes-kai-ton-ounai/",
-        "https://www.in.gr/2026/08/31/sports/football/ola-ta-dedomena-skliri-i-maxi-me-tin-tsexia-gia-tin-10i-thesi-tis-uefa/"
+        "https://www.in.gr/2026/08/31/politics/politiki-grammateia/marinakis-epithesi-se-pasok-mpixtes-gia-samara-kai-aoristes-sygkratimenes-yposxeseis-enopsei-deth/",
+        "https://www.in.gr/2026/08/31/world/lavrof-oi-energeies-tou-nato-stin-arktiki-apoteloun-amesi-apeili-gia-ti-rosia/",
+        "https://www.in.gr/2026/08/31/sports/football/h-everton-evale-sto-mati-ton-mpalogkan-kai-dinei-18-ekat-eyro/",
+        "https://www.in.gr/2026/08/31/greece/egklimatiki-energeia-o-thanatos-tou-vrefous-stin-kypseli-to-maxairosan-pano-apo-10-fores/",
+        "https://www.in.gr/2026/08/31/politics/kke-gia-tin-aspida-tou-axillea-oi-stratigikes-sxeseis-me-to-israil-rixnoun-ladi-sti-fotia/",
+        "https://www.in.gr/2026/08/31/greece/fotia-se-diamerisma-ston-neo-kosmo/"
       ],
-      "seen_at_utc": "2026-08-31T12:29:57.298700+00:00"
+      "seen_at_utc": "2026-08-31T12:51:36.195230+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T12:29:57.298851+00:00"
+  "updated_at_utc": "2026-08-31T12:51:36.195346+00:00"
 }
