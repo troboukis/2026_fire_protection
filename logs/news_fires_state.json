@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564429832/ntortmoynt-gia-konstantelia-itan-entelos-syntetrimmenos-tha-ton-stirixoyme/",
-      "title": "Ντόρτμουντ για Κωνσταντέλια: «Ηταν εντελώς συντετριμμένος, θα τον στηρίξουμε»",
-      "normalized_title": "ΝΤΟΡΤΜΟΥΝΤ ΓΙΑ ΚΩΝΣΤΑΝΤΕΛΙΑ: «ΗΤΑΝ ΕΝΤΕΛΩΣ ΣΥΝΤΕΤΡΙΜΜΕΝΟΣ, ΘΑ ΤΟΝ ΣΤΗΡΙΞΟΥΜΕ»",
+      "url": "https://www.kathimerini.gr/culture/564429880/moysikoi-tis-elson-oi-vradinoi-episkeptes-tis-akropolis/",
+      "title": "Μουσικοί της ΕΛΣΟΝ οι βραδινοί επισκέπτες της Ακρόπολης",
+      "normalized_title": "ΜΟΥΣΙΚΟΙ ΤΗΣ ΕΛΣΟΝ ΟΙ ΒΡΑΔΙΝΟΙ ΕΠΙΣΚΕΠΤΕΣ ΤΗΣ ΑΚΡΟΠΟΛΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564429832/ntortmoynt-gia-konstantelia-itan-entelos-syntetrimmenos-tha-ton-stirixoyme/",
-        "https://www.kathimerini.gr/politics/564429847/v-kikilias-leipei-i-anagkaia-diathesi-eyelixias-gia-tin-apanthrakopoiisi-tis-naytilias/",
-        "https://www.kathimerini.gr/society/564429868/thessaloniki-katadikastike-o-vretanos-poy-prokalese-anagkastiki-prosgeiosi-imoyn-poly-methysmenos/"
+        "https://www.kathimerini.gr/culture/564429880/moysikoi-tis-elson-oi-vradinoi-episkeptes-tis-akropolis/",
+        "https://www.kathimerini.gr/economy/local/564429898/reimagine-tourism-in-greece-o-koryfaios-thesmos-dialogoy-gia-ton-toyrismo-gia-proti-fora-sti-thessaloniki/",
+        "https://www.kathimerini.gr/world/564427000/poios-foraei-ti-thilia-2/"
       ],
-      "seen_at_utc": "2026-08-31T16:30:00.504306+00:00"
+      "seen_at_utc": "2026-08-31T16:51:08.709793+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,23 +1271,26 @@
       "seen_at_utc": "2026-08-31T16:30:00.504417+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1457565/thessaloniki-synelifthi-o-diorganotis-toy-event-me-ta-pantilikia-sto-plakostroto-tis-neas-paralias/",
-      "title": "Θεσσαλονίκη: Συνελήφθη ο διοργανωτής του event με τα «παντιλίκια» στο πλακόστρωτο της Νέας Παραλίας",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ Ο ΔΙΟΡΓΑΝΩΤΗΣ ΤΟΥ EVENT ΜΕ ΤΑ «ΠΑΝΤΙΛΙΚΙΑ» ΣΤΟ ΠΛΑΚΟΣΤΡΩΤΟ ΤΗΣ ΝΕΑΣ ΠΑΡΑΛΙΑΣ",
+      "url": "https://www.efsyn.gr/kosmos/1457566/nayagio-stin-keryneia-sygklonistiko-vinteo-tin-ora-poy-mpainoyn-nera-sto-ploio-i-agonia-kai-oi-krayges/",
+      "title": "Ναυάγιο στην Κερύνεια: Συγκλονιστικό βίντεο την ώρα που μπαίνουν νερά στο πλοίο – Η αγωνία και οι κραυγές",
+      "normalized_title": "ΝΑΥΑΓΙΟ ΣΤΗΝ ΚΕΡΥΝΕΙΑ: ΣΥΓΚΛΟΝΙΣΤΙΚΟ ΒΙΝΤΕΟ ΤΗΝ ΩΡΑ ΠΟΥ ΜΠΑΙΝΟΥΝ ΝΕΡΑ ΣΤΟ ΠΛΟΙΟ – Η ΑΓΩΝΙΑ ΚΑΙ ΟΙ ΚΡΑΥΓΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1457565/thessaloniki-synelifthi-o-diorganotis-toy-event-me-ta-pantilikia-sto-plakostroto-tis-neas-paralias/"
+        "https://www.efsyn.gr/kosmos/1457566/nayagio-stin-keryneia-sygklonistiko-vinteo-tin-ora-poy-mpainoyn-nera-sto-ploio-i-agonia-kai-oi-krayges/",
+        "https://www.efsyn.gr/oikonomia/1457569/dimos-keratsinioy-drapetsonas-sto-mikroskopio-173-ekat-eyro-se-apeytheias-anatheseis/",
+        "https://www.efsyn.gr/ellada/1457570/thessaloniki-katadikastike-o-42hronos-vretanos-poy-prokalese-anagkastiki-prosgeiosi-imoyn-poly-methysmenos/"
       ],
-      "seen_at_utc": "2026-08-31T16:30:00.504383+00:00"
+      "seen_at_utc": "2026-08-31T16:51:08.709899+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/go-fun/style/to-met-akyrose-tin-ekthesi-tou-tzon-gkaliano/",
-      "title": "Το Met ακύρωσε την έκθεση του Τζον Γκαλιάνο - Οι παλιές ρατσιστικές δηλώσεις στο κάδρο",
-      "normalized_title": "ΤΟ MET ΑΚΥΡΩΣΕ ΤΗΝ ΕΚΘΕΣΗ ΤΟΥ ΤΖΟΝ ΓΚΑΛΙΑΝΟ - ΟΙ ΠΑΛΙΕΣ ΡΑΤΣΙΣΤΙΚΕΣ ΔΗΛΩΣΕΙΣ ΣΤΟ ΚΑΔΡΟ",
+      "url": "https://www.in.gr/2026/08/31/greece/thessaloniki-synelifthi-24xronos-pou-diorganose-event-me-supercars-kai-ekanan-epikindynous-eligmous/",
+      "title": "Θεσσαλονίκη: Συνελήφθη 24χρονος που διοργάνωσε event με supercars και έκαναν επικίνδυνους ελιγμούς",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ 24ΧΡΟΝΟΣ ΠΟΥ ΔΙΟΡΓΑΝΩΣΕ EVENT ΜΕ SUPERCARS ΚΑΙ ΕΚΑΝΑΝ ΕΠΙΚΙΝΔΥΝΟΥΣ ΕΛΙΓΜΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/go-fun/style/to-met-akyrose-tin-ekthesi-tou-tzon-gkaliano/"
+        "https://www.in.gr/2026/08/31/greece/thessaloniki-synelifthi-24xronos-pou-diorganose-event-me-supercars-kai-ekanan-epikindynous-eligmous/",
+        "https://www.in.gr/2026/08/31/world/polonia-rosiko-anagnoristiko-aeroskafos-anaxaitistike-apo-polonika-maxitika/"
       ],
-      "seen_at_utc": "2026-08-31T16:30:00.504346+00:00"
+      "seen_at_utc": "2026-08-31T16:51:08.709848+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T16:30:00.504480+00:00"
+  "updated_at_utc": "2026-08-31T16:51:08.709974+00:00"
 }
