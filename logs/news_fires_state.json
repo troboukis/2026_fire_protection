@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564429703/oi-exomologiseis-mas-sta-chatbot-den-einai-toso-idiotikes-oso-nomizoyme/",
-      "title": "Οι «εξομολογήσεις» μας στα chatbots δεν είναι τόσο ιδιωτικές όσο νομίζουμε",
-      "normalized_title": "ΟΙ «ΕΞΟΜΟΛΟΓΗΣΕΙΣ» ΜΑΣ ΣΤΑ CHATBOTS ΔΕΝ ΕΙΝΑΙ ΤΟΣΟ ΙΔΙΩΤΙΚΕΣ ΟΣΟ ΝΟΜΙΖΟΥΜΕ",
+      "url": "https://www.kathimerini.gr/society/dikastiko/564429757/mpoygas-i-komision-katagrafei-proodo-tis-elladas-sto-kratos-dikaioy/",
+      "title": "Μπούγας: Η Κομισιόν καταγράφει πρόοδο της Ελλάδας στο κράτος δικαίου",
+      "normalized_title": "ΜΠΟΥΓΑΣ: Η ΚΟΜΙΣΙΟΝ ΚΑΤΑΓΡΑΦΕΙ ΠΡΟΟΔΟ ΤΗΣ ΕΛΛΑΔΑΣ ΣΤΟ ΚΡΑΤΟΣ ΔΙΚΑΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564429703/oi-exomologiseis-mas-sta-chatbot-den-einai-toso-idiotikes-oso-nomizoyme/",
-        "https://www.kathimerini.gr/world/564429742/minysi-dis-dolarion-kata-tis-anthropic-gia-klopi-dekadon-chiliadon-tragoydion/"
+        "https://www.kathimerini.gr/society/dikastiko/564429757/mpoygas-i-komision-katagrafei-proodo-tis-elladas-sto-kratos-dikaioy/",
+        "https://www.kathimerini.gr/world/564429769/nepal-kina-pano-apo-4-700-agnooymenoi-agonia-gia-ekatontades-egklovismenoys-se-toynel/",
+        "https://www.kathimerini.gr/columns/564429790/to-neo-melodrama-ton-leikers-einai-kati-poy-to-nva-thelei-kai-den-thelei/"
       ],
-      "seen_at_utc": "2026-08-31T14:51:14.264463+00:00"
+      "seen_at_utc": "2026-08-31T15:19:04.240172+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871940/sunelifthi-oikiaki-voithos-pou-eklepse-kosmimata-axias-40000-apo-spitia-se-ekali-kai-agia-paraskeui/?utm_source=rss",
-      "title": "Συνελήφθη οικιακή βοηθός που έκλεψε κοσμήματα αξίας 40.000€ από σπίτια σε Εκάλη και Αγία Παρασκευή",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΟΙΚΙΑΚΗ ΒΟΗΘΟΣ ΠΟΥ ΕΚΛΕΨΕ ΚΟΣΜΗΜΑΤΑ ΑΞΙΑΣ 40.000€ ΑΠΟ ΣΠΙΤΙΑ ΣΕ ΕΚΑΛΗ ΚΑΙ ΑΓΙΑ ΠΑΡΑΣΚΕΥΗ",
+      "url": "https://www.protothema.gr/greece/article/1871949/fotia-tora-sto-theodoreio-serron-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά τώρα στο Θεοδώρειο Σερρών, κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΘΕΟΔΩΡΕΙΟ ΣΕΡΡΩΝ, ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871940/sunelifthi-oikiaki-voithos-pou-eklepse-kosmimata-axias-40000-apo-spitia-se-ekali-kai-agia-paraskeui/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1871934/thessaloniki-dosane-apo-8000-euro-gia-na-kanoun-padilikia-sto-plakostroto-tis-paralias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871949/fotia-tora-sto-theodoreio-serron-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871947/diasothikan-treis-heiristes-sup-pou-vrethikan-se-kinduno-sti-thalassa-sto-kruoneri-aitoloakarnanias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T14:51:14.264611+00:00"
+      "seen_at_utc": "2026-08-31T15:19:04.240322+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1457485/apokalyptiki-ereyna-gia-to-eisodima-ton-dimosion-ypallilon-meiosi-30-tis-agorastikis-dynamis-apo-to-2009/",
-      "title": "Αποκαλυπτική έρευνα για το εισόδημα των δημοσίων υπαλλήλων: Μείωση 30% της αγοραστικής δύναμης από το 2009",
-      "normalized_title": "ΑΠΟΚΑΛΥΠΤΙΚΗ ΕΡΕΥΝΑ ΓΙΑ ΤΟ ΕΙΣΟΔΗΜΑ ΤΩΝ ΔΗΜΟΣΙΩΝ ΥΠΑΛΛΗΛΩΝ: ΜΕΙΩΣΗ 30% ΤΗΣ ΑΓΟΡΑΣΤΙΚΗΣ ΔΥΝΑΜΗΣ ΑΠΟ ΤΟ 2009",
+      "url": "https://www.efsyn.gr/politiki/1457512/kasselakis-kata-kyranaki-me-apaxiotiko-yfos-epitethike-se-gynaika-dimosiografo-poy-apla-kanei-ti-doyleia-tis/",
+      "title": "Κασσελάκης κατά Κυρανάκη: Με απαξιωτικό ύφος επιτέθηκε σε γυναίκα δημοσιογράφο που απλά κάνει τη δουλειά της",
+      "normalized_title": "ΚΑΣΣΕΛΑΚΗΣ ΚΑΤΑ ΚΥΡΑΝΑΚΗ: ΜΕ ΑΠΑΞΙΩΤΙΚΟ ΥΦΟΣ ΕΠΙΤΕΘΗΚΕ ΣΕ ΓΥΝΑΙΚΑ ΔΗΜΟΣΙΟΓΡΑΦΟ ΠΟΥ ΑΠΛΑ ΚΑΝΕΙ ΤΗ ΔΟΥΛΕΙΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1457485/apokalyptiki-ereyna-gia-to-eisodima-ton-dimosion-ypallilon-meiosi-30-tis-agorastikis-dynamis-apo-to-2009/"
+        "https://www.efsyn.gr/politiki/1457512/kasselakis-kata-kyranaki-me-apaxiotiko-yfos-epitethike-se-gynaika-dimosiografo-poy-apla-kanei-ti-doyleia-tis/",
+        "https://www.efsyn.gr/kosmos/1457503/nepal-plisiazoyn-toys-1-000-oi-nekroi-apo-tis-plimmyres-pos-enas-dieythyntis-sholeioy-esose-900-mathites/",
+        "https://www.efsyn.gr/oikonomia/1457309/anaptyxiakos-nomos-31-dis-ependyseis-kai-to-kynigi-ton-480-ekat/",
+        "https://www.efsyn.gr/ellada/1457511/fotia-se-hamili-vlastisi-sto-theodoreio-serron/",
+        "https://www.efsyn.gr/politiki/1457505/papadopoyloy-o-k-kyranakis-einai-metr-sta-psemata-to-ects-sta-trena-den-leitoyrgei-opos-eihe-yposhethei/"
       ],
-      "seen_at_utc": "2026-08-31T14:51:14.264573+00:00"
+      "seen_at_utc": "2026-08-31T15:19:04.240298+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/life/lgbtqi/oi-trans-anthropoi-apsifoun-ti-viologia-lene-oi-epikrites-nea-ereyna-tous-diapseydei/",
-      "title": "«Οι τρανς άνθρωποι αψηφούν τη βιολογία» λένε οι επικριτές – Νέα έρευνα τους διαψεύδει",
-      "normalized_title": "«ΟΙ ΤΡΑΝΣ ΑΝΘΡΩΠΟΙ ΑΨΗΦΟΥΝ ΤΗ ΒΙΟΛΟΓΙΑ» ΛΕΝΕ ΟΙ ΕΠΙΚΡΙΤΕΣ – ΝΕΑ ΕΡΕΥΝΑ ΤΟΥΣ ΔΙΑΨΕΥΔΕΙ",
+      "url": "https://www.in.gr/2026/08/31/plus/i-eygeneia-den-kostizei-tipota-apo-poia-xora-erxontai-oi-touristes-me-tous-pio-kalous-tropous/",
+      "title": "Η ευγένεια δεν κοστίζει τίποτα: Από ποια χώρα έρχονται οι τουρίστες με τους πιο καλούς τρόπους",
+      "normalized_title": "Η ΕΥΓΕΝΕΙΑ ΔΕΝ ΚΟΣΤΙΖΕΙ ΤΙΠΟΤΑ: ΑΠΟ ΠΟΙΑ ΧΩΡΑ ΕΡΧΟΝΤΑΙ ΟΙ ΤΟΥΡΙΣΤΕΣ ΜΕ ΤΟΥΣ ΠΙΟ ΚΑΛΟΥΣ ΤΡΟΠΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/life/lgbtqi/oi-trans-anthropoi-apsifoun-ti-viologia-lene-oi-epikrites-nea-ereyna-tous-diapseydei/",
-        "https://www.in.gr/2026/08/31/greece/kypseli-seksoualika-voithimata-narkotika-kai-kameres-vrethikan-sto-diamerisma-tis-frikis-anatrixiastika-eyrimata/",
-        "https://www.in.gr/2026/08/31/sports/basketball/ethniki-elladas-mpasket-i-12ada-gia-to-paixnidi-me-tin-ispania/",
-        "https://www.in.gr/2026/08/31/greece/aris-mougkopetros-anavlithike-i-diki-tou-mousikou-tha-mporouse-na-symvei-ston-kathena-leei-o-dikigoros-tou/",
-        "https://www.in.gr/2026/08/31/politics/mpikan-oi-ypografes-gia-tin-aspida-tou-axillea-ti-perilamvanei-i-megalyteri-symfonia-stin-istoria-ton-sxeseon-israil-elladas/"
+        "https://www.in.gr/2026/08/31/plus/i-eygeneia-den-kostizei-tipota-apo-poia-xora-erxontai-oi-touristes-me-tous-pio-kalous-tropous/",
+        "https://www.in.gr/2026/08/31/politics/politiki-grammateia/vouli-kontra-voultepsi-konstantopoulou-kai-karfia-doudoni-se-gerapetriti-gia-to-mploko-stin-eklogi-akrita/",
+        "https://www.in.gr/2026/08/31/politics/epikairotita/kontaroxtypiountai-kyvernisi-pasok-sta-opla-i-xarilaou-trikoupi-me-eytheies-voles-se-marinaki/",
+        "https://www.in.gr/2026/08/31/sports/on-field/megali-ypothesi-to-2x2-kai-o-smailovits/",
+        "https://www.in.gr/2026/08/31/world/ypogennitikotita-o-plithysmos-stin-italia-tha-meiothei-kata-4-ekatommyria-eos-to-2050/"
       ],
-      "seen_at_utc": "2026-08-31T14:51:14.264524+00:00"
+      "seen_at_utc": "2026-08-31T15:19:04.240234+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T14:51:14.264701+00:00"
+  "updated_at_utc": "2026-08-31T15:19:04.240408+00:00"
 }
