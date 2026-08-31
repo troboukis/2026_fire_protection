@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564429724/oi-olympionikes-takis-mantis-kai-paylos-kagialis-thriamveysan-stin-andro/",
-      "title": "Οι Ολυμπιονίκες Τάκης Μάντης και Παύλος Καγιαλής θριάμβευσαν στην Ανδρο",
-      "normalized_title": "ΟΙ ΟΛΥΜΠΙΟΝΙΚΕΣ ΤΑΚΗΣ ΜΑΝΤΗΣ ΚΑΙ ΠΑΥΛΟΣ ΚΑΓΙΑΛΗΣ ΘΡΙΑΜΒΕΥΣΑΝ ΣΤΗΝ ΑΝΔΡΟ",
+      "url": "https://www.kathimerini.gr/society/564429760/messinia-60chronos-synelifthi-gia-dyo-neoys-emprismoys-dikografia-gia-tesseris-pyrkagies-se-pente-meres/",
+      "title": "Μεσσηνία: 60χρονος συνελήφθη για δύο εμπρησμούς – Δικογραφία για τέσσερις πυρκαγιές σε πέντε μέρες",
+      "normalized_title": "ΜΕΣΣΗΝΙΑ: 60ΧΡΟΝΟΣ ΣΥΝΕΛΗΦΘΗ ΓΙΑ ΔΥΟ ΕΜΠΡΗΣΜΟΥΣ – ΔΙΚΟΓΡΑΦΙΑ ΓΙΑ ΤΕΣΣΕΡΙΣ ΠΥΡΚΑΓΙΕΣ ΣΕ ΠΕΝΤΕ ΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564429724/oi-olympionikes-takis-mantis-kai-paylos-kagialis-thriamveysan-stin-andro/"
+        "https://www.kathimerini.gr/society/564429760/messinia-60chronos-synelifthi-gia-dyo-neoys-emprismoys-dikografia-gia-tesseris-pyrkagies-se-pente-meres/",
+        "https://www.kathimerini.gr/economy/564427384/anti-tis-lamda-kai-tis-peiraios-10-stin-kae-aek/",
+        "https://www.kathimerini.gr/economy/564429736/ekptoseis-mikroteros-kyklos-ergasion-gia-6-stis-10-epicheiriseis-fetos/"
       ],
-      "seen_at_utc": "2026-08-31T14:17:09.729480+00:00"
+      "seen_at_utc": "2026-08-31T14:30:06.197631+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,29 +1272,28 @@
       "seen_at_utc": "2026-08-31T14:17:09.729621+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457476/analysi-economist-strimogmenos-o-poytin-kanei-shedia-gia-klimakosi-toy-oykranikoy-polemoy/",
-      "title": "Ανάλυση Economist: Στριμωγμένος ο Πούτιν, κάνει σχέδια για κλιμάκωση του ουκρανικού πολέμου",
-      "normalized_title": "ΑΝΑΛΥΣΗ ECONOMIST: ΣΤΡΙΜΩΓΜΕΝΟΣ Ο ΠΟΥΤΙΝ, ΚΑΝΕΙ ΣΧΕΔΙΑ ΓΙΑ ΚΛΙΜΑΚΩΣΗ ΤΟΥ ΟΥΚΡΑΝΙΚΟΥ ΠΟΛΕΜΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1457492/anavoli-pire-o-aris-moygkopetros-issonos-simasias-adikima-tha-mporoyse-na-symvei-ston-kathena-eipe-o-dikigoros-toy/",
+      "title": "Αναβολή πήρε ο Άρης Μουγκοπέτρος: «Ήσσονος σημασίας αδίκημα, θα μπορούσε να συμβεί στον καθένα» είπε ο δικηγόρος του",
+      "normalized_title": "ΑΝΑΒΟΛΗ ΠΗΡΕ Ο ΑΡΗΣ ΜΟΥΓΚΟΠΕΤΡΟΣ: «ΗΣΣΟΝΟΣ ΣΗΜΑΣΙΑΣ ΑΔΙΚΗΜΑ, ΘΑ ΜΠΟΡΟΥΣΕ ΝΑ ΣΥΜΒΕΙ ΣΤΟΝ ΚΑΘΕΝΑ» ΕΙΠΕ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457476/analysi-economist-strimogmenos-o-poytin-kanei-shedia-gia-klimakosi-toy-oykranikoy-polemoy/",
-        "https://www.efsyn.gr/kosmos/1457473/komision-me-g20-gia-ton-oikonomiko-apokleismo-toy-iran/",
-        "https://www.efsyn.gr/oikonomia/1457479/lavete-meros-sti-megali-ereyna-tis-ef-syn-gia-ta-eyropaika-kondylia/",
-        "https://www.efsyn.gr/athlitismos/1457273/premiera-se-prasino-fonto/",
-        "https://www.efsyn.gr/politiki/1457465/i-proodeytiki-antipoliteysi-sto-pleyro-ton-epohikon-pyrosveston/"
+        "https://www.efsyn.gr/ellada/1457492/anavoli-pire-o-aris-moygkopetros-issonos-simasias-adikima-tha-mporoyse-na-symvei-ston-kathena-eipe-o-dikigoros-toy/",
+        "https://www.efsyn.gr/kosmos/1457490/o-iranos-ypoyrgos-exoterikon-apokalese-ton-netaniahoy-fidi/"
       ],
-      "seen_at_utc": "2026-08-31T14:17:09.729585+00:00"
+      "seen_at_utc": "2026-08-31T14:30:06.197730+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/greece/tragodia-stin-ileia-troxaio-me-nekro-65xrono-pou-exase-ton-elegxo-tou-ix-kai-epese-se-ardeytiko-kanali/",
-      "title": "Τραγωδία στην Ηλεία – Τροχαίο με νεκρό 65χρονο που έχασε τον έλεγχο του ΙΧ και έπεσε σε αρδευτικό κανάλι",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΗΛΕΙΑ – ΤΡΟΧΑΙΟ ΜΕ ΝΕΚΡΟ 65ΧΡΟΝΟ ΠΟΥ ΕΧΑΣΕ ΤΟΝ ΕΛΕΓΧΟ ΤΟΥ ΙΧ ΚΑΙ ΕΠΕΣΕ ΣΕ ΑΡΔΕΥΤΙΚΟ ΚΑΝΑΛΙ",
+      "url": "https://www.in.gr/2026/08/31/stories/kapote-eroteymenoi-ma-pia-xorismenoi-oi-avoles-synergasies-sto-plato/",
+      "title": "Κάποτε ερωτευμένοι, μα πια χωρισμένοι – Οι άβολες συνεργασίες στο πλατό",
+      "normalized_title": "ΚΑΠΟΤΕ ΕΡΩΤΕΥΜΕΝΟΙ, ΜΑ ΠΙΑ ΧΩΡΙΣΜΕΝΟΙ – ΟΙ ΑΒΟΛΕΣ ΣΥΝΕΡΓΑΣΙΕΣ ΣΤΟ ΠΛΑΤΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/greece/tragodia-stin-ileia-troxaio-me-nekro-65xrono-pou-exase-ton-elegxo-tou-ix-kai-epese-se-ardeytiko-kanali/",
-        "https://www.in.gr/2026/08/31/go-fun/fizz/pasxalis-pantreytike-i-kori-tou-zina-o-xoros-tous-meta-ton-gamo/",
-        "https://www.in.gr/2026/08/31/economy/oikonomikes-eidiseis/kafes-i-fouska-ton-vryksellon-to-elliniko-success-story-kai-to-italiko-katestimeno/"
+        "https://www.in.gr/2026/08/31/stories/kapote-eroteymenoi-ma-pia-xorismenoi-oi-avoles-synergasies-sto-plato/",
+        "https://www.in.gr/2026/08/31/economy/oikonomikes-eidiseis/kikilias-anisyxia-gia-ti-stasi-tis-eyropis-prin-ton-imo/",
+        "https://www.in.gr/2026/08/31/sports/football/uefa-peitharxiki-dioksi-kata-tou-erythrou-astera-gia-to-pano-yper-tou-ratko-mlantits/",
+        "https://www.in.gr/2026/08/31/greece/messinia-synelifthi-60xronos-gia-dyo-emprismous-apo-prothesi-eixe-syllifthei-kai-prin-dyo-imeres/",
+        "https://www.in.gr/2026/08/31/world/o-tramp-kanei-polemo-sto-iran-meso-truth-social-kai-i-texerani-epimenei-oti-epidiokei-ti-diplomatia/"
       ],
-      "seen_at_utc": "2026-08-31T14:17:09.729538+00:00"
+      "seen_at_utc": "2026-08-31T14:30:06.197689+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T14:17:09.729691+00:00"
+  "updated_at_utc": "2026-08-31T14:30:06.197808+00:00"
 }
