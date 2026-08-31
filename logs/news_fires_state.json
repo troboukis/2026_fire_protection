@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564429172/algeria-o-proedros-tempoyn-zita-tin-epivoli-tis-thanatikis-poinis-gia-toys-empristes-dason/",
-      "title": "Αλγερία: Ο πρόεδρος Τεμπούν ζητά την επιβολή της θανατικής ποινής για τους εμπρηστές δασών",
-      "normalized_title": "ΑΛΓΕΡΙΑ: Ο ΠΡΟΕΔΡΟΣ ΤΕΜΠΟΥΝ ΖΗΤΑ ΤΗΝ ΕΠΙΒΟΛΗ ΤΗΣ ΘΑΝΑΤΙΚΗΣ ΠΟΙΝΗΣ ΓΙΑ ΤΟΥΣ ΕΜΠΡΗΣΤΕΣ ΔΑΣΩΝ",
+      "url": "https://www.kathimerini.gr/society/564429187/konstantinos-kyranakis-me-100-tiledioikisi-apo-aytin-tin-evdomada-to-athina-thessaloniki/",
+      "title": "Κωνσταντίνος Κυρανάκης: Με 100% τηλεδιοίκηση από αυτήν την εβδομάδα το Αθήνα–Θεσσαλονίκη",
+      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΥΡΑΝΑΚΗΣ: ΜΕ 100% ΤΗΛΕΔΙΟΙΚΗΣΗ ΑΠΟ ΑΥΤΗΝ ΤΗΝ ΕΒΔΟΜΑΔΑ ΤΟ ΑΘΗΝΑ–ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564429172/algeria-o-proedros-tempoyn-zita-tin-epivoli-tis-thanatikis-poinis-gia-toys-empristes-dason/",
-        "https://www.kathimerini.gr/world/564429070/islandia-to-ochi-stin-e-e-kai-to-minyma-pros-tis-vryxelles/",
-        "https://www.kathimerini.gr/athletics/564429130/us-open-talaiporimenos-o-tzokovits-apokleistike-me-to-kalimera/",
-        "https://www.kathimerini.gr/society/564429127/proetoimasia-gia-ti-nea-antiplimmyriki-periodo-odigies-tis-ggpp-se-perifereies-kai-dimoys/"
+        "https://www.kathimerini.gr/society/564429187/konstantinos-kyranakis-me-100-tiledioikisi-apo-aytin-tin-evdomada-to-athina-thessaloniki/",
+        "https://www.kathimerini.gr/society/564429181/chania-pente-syllipseis-gia-ton-thanato-tis-11chronis-se-pisina-xenodocheioy/",
+        "https://www.kathimerini.gr/athletics/564429166/to-zein-epikindynos-ton-epaggelmationn-athliton/"
       ],
-      "seen_at_utc": "2026-08-31T07:17:18.876321+00:00"
+      "seen_at_utc": "2026-08-31T07:29:57.841884+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,39 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871682/kuranakis-apo-autin-tin-evdomada-to-athinathessaloniki-tha-leitourgei-me-100-tiledioikisi/?utm_source=rss",
-      "title": "Κυρανάκης: Από αυτήν την εβδομάδα το Αθήνα–Θεσσαλονίκη θα λειτουργεί με 100% τηλεδιοίκηση",
-      "normalized_title": "ΚΥΡΑΝΑΚΗΣ: ΑΠΟ ΑΥΤΗΝ ΤΗΝ ΕΒΔΟΜΑΔΑ ΤΟ ΑΘΗΝΑ–ΘΕΣΣΑΛΟΝΙΚΗ ΘΑ ΛΕΙΤΟΥΡΓΕΙ ΜΕ 100% ΤΗΛΕΔΙΟΙΚΗΣΗ",
+      "url": "https://www.protothema.gr/greece/article/1871689/korinthia-anatinaxan-atm-stin-perahora-kai-arpaxan-pano-apo-90000-euro/?utm_source=rss",
+      "title": "Κορινθία: Ανατίναξαν ΑΤΜ στην Περαχώρα και άρπαξαν πάνω από 90.000 ευρώ",
+      "normalized_title": "ΚΟΡΙΝΘΙΑ: ΑΝΑΤΙΝΑΞΑΝ ΑΤΜ ΣΤΗΝ ΠΕΡΑΧΩΡΑ ΚΑΙ ΑΡΠΑΞΑΝ ΠΑΝΩ ΑΠΟ 90.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871682/kuranakis-apo-autin-tin-evdomada-to-athinathessaloniki-tha-leitourgei-me-100-tiledioikisi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871689/korinthia-anatinaxan-atm-stin-perahora-kai-arpaxan-pano-apo-90000-euro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T07:17:18.876454+00:00"
+      "seen_at_utc": "2026-08-31T07:29:57.841948+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1457121/kypseli-to-hroniko-tis-frikis-den-to-pisteya-itan-sokaristiko-leei-o-diaheiristis-toy-katalymatos/",
-      "title": "Κυψέλη: Το χρονικό της φρίκης – «Δεν το πίστευα, ήταν σοκαριστικό», λέει ο διαχειριστής του καταλύματος",
-      "normalized_title": "ΚΥΨΕΛΗ: ΤΟ ΧΡΟΝΙΚΟ ΤΗΣ ΦΡΙΚΗΣ – «ΔΕΝ ΤΟ ΠΙΣΤΕΥΑ, ΗΤΑΝ ΣΟΚΑΡΙΣΤΙΚΟ», ΛΕΕΙ Ο ΔΙΑΧΕΙΡΙΣΤΗΣ ΤΟΥ ΚΑΤΑΛΥΜΑΤΟΣ",
+      "url": "https://www.efsyn.gr/stiles/1457119/ypoklopi-ton-syllogikon-gnoseon-hthes-kai-simera/",
+      "title": "Υποκλοπή των συλλογικών γνώσεων, χθες και σήμερα",
+      "normalized_title": "ΥΠΟΚΛΟΠΗ ΤΩΝ ΣΥΛΛΟΓΙΚΩΝ ΓΝΩΣΕΩΝ, ΧΘΕΣ ΚΑΙ ΣΗΜΕΡΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1457121/kypseli-to-hroniko-tis-frikis-den-to-pisteya-itan-sokaristiko-leei-o-diaheiristis-toy-katalymatos/",
-        "https://www.efsyn.gr/politiki/1457137/th-pleyris-seira-fake-news-gia-to-metanasteytiko-skines-apo-ti-theoyta-paroysiazontai-os-eikones-apo-tin-kriti/"
+        "https://www.efsyn.gr/stiles/1457119/ypoklopi-ton-syllogikon-gnoseon-hthes-kai-simera/",
+        "https://www.efsyn.gr/stiles/1457116/simeia-stixis/",
+        "https://www.efsyn.gr/stiles/1457107/skepseis-gia-ti-mastiga-tis-akriveias/",
+        "https://www.efsyn.gr/media/1457099/press-point-re-mpas-kai-ennoei-ton-hrysohoidi-kai-tin-agapidaki/"
       ],
-      "seen_at_utc": "2026-08-31T07:17:18.876432+00:00"
+      "seen_at_utc": "2026-08-31T07:29:57.841933+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/world/g20-synantisi-ton-ypourgon-oikonomikon-stis-ipa-i-ouasigkton-epidiokei-stiriksi-gia-tis-kyroseis-sto-iran/",
-      "title": "Συνάντηση των υπουργών Οικονομικών της G20 στις ΗΠΑ - Η Ουάσιγκτον επιδιώκει στήριξη για τις κυρώσεις στο Ιράν",
-      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΤΩΝ ΥΠΟΥΡΓΩΝ ΟΙΚΟΝΟΜΙΚΩΝ ΤΗΣ G20 ΣΤΙΣ ΗΠΑ - Η ΟΥΑΣΙΓΚΤΟΝ ΕΠΙΔΙΩΚΕΙ ΣΤΗΡΙΞΗ ΓΙΑ ΤΙΣ ΚΥΡΩΣΕΙΣ ΣΤΟ ΙΡΑΝ",
+      "url": "https://www.in.gr/2026/08/31/greece/odigies-tis-ggpp-pros-perifereies-kai-dimous-gia-tin-antiplimmyriki-periodo-2026-2027/",
+      "title": "Οδηγίες της ΓΓΠΠ προς περιφέρειες και δήμους για την αντιπλημμυρική περίοδο 2026-2027",
+      "normalized_title": "ΟΔΗΓΙΕΣ ΤΗΣ ΓΓΠΠ ΠΡΟΣ ΠΕΡΙΦΕΡΕΙΕΣ ΚΑΙ ΔΗΜΟΥΣ ΓΙΑ ΤΗΝ ΑΝΤΙΠΛΗΜΜΥΡΙΚΗ ΠΕΡΙΟΔΟ 2026-2027",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/world/g20-synantisi-ton-ypourgon-oikonomikon-stis-ipa-i-ouasigkton-epidiokei-stiriksi-gia-tis-kyroseis-sto-iran/",
-        "https://www.in.gr/2026/08/31/greece/ios-tou-dytikou-neilou-kampanaki-apo-ton-eody-oi-systaseis-ton-eidikon-kai-ta-symptomata/",
-        "https://www.in.gr/2026/08/31/sports/on-field/super-league-oi-kakes-synitheies-ton-diaititon-tou-lanoua/",
-        "https://www.in.gr/2026/08/31/go-fun/konstantina-spyropoulou-to-atyxima-apo-ftharmena-lastixa-sto-aytokinito-kai-o-gios-tis/",
-        "https://www.in.gr/2026/08/31/world/tramp-vs-epistolikis-psifou-skiniko-xaos-enopsei-ton-endiameson-eklogon-stis-ipa/",
-        "https://www.in.gr/2026/08/31/pet-stories/kardiologikos-elegxos-ston-skylo-kai-sti-gata-i-simasia-tis-prolipsis/",
-        "https://www.in.gr/2026/08/31/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-z/"
+        "https://www.in.gr/2026/08/31/greece/odigies-tis-ggpp-pros-perifereies-kai-dimous-gia-tin-antiplimmyriki-periodo-2026-2027/"
       ],
-      "seen_at_utc": "2026-08-31T07:17:18.876396+00:00"
+      "seen_at_utc": "2026-08-31T07:29:57.841913+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T07:17:18.876541+00:00"
+  "updated_at_utc": "2026-08-31T07:29:57.842006+00:00"
 }
