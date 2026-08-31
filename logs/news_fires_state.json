@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564429022/san-na-paleya-me-deinosayro-pos-i-34chroni-lia-stioyart-epezise-apo-epithesi-karcharia/",
-      "title": "«Σαν να πάλευα με δεινόσαυρο» – Πώς η 34χρονη Λία Στιούαρτ επέζησε από επίθεση καρχαρία",
-      "normalized_title": "«ΣΑΝ ΝΑ ΠΑΛΕΥΑ ΜΕ ΔΕΙΝΟΣΑΥΡΟ» – ΠΩΣ Η 34ΧΡΟΝΗ ΛΙΑ ΣΤΙΟΥΑΡΤ ΕΠΕΖΗΣΕ ΑΠΟ ΕΠΙΘΕΣΗ ΚΑΡΧΑΡΙΑ",
+      "url": "https://www.kathimerini.gr/columns/564429016/poios-kanei-avant-premiere-poio-kratiko-ai-project-mpainei-stin-priza-oi-ntomates-toy-theodoropoyloy-kai-ti-symvainei-me-to-cloud-toy-dimosioy/",
+      "title": "Ποιος κάνει avant-première, ποιο κρατικό AI project μπαίνει στην πρίζα, οι ντομάτες του Θεοδωρόπουλου και τι συμβαίνει με το cloud του Δημοσίου",
+      "normalized_title": "ΠΟΙΟΣ ΚΑΝΕΙ AVANT-PREMIERE, ΠΟΙΟ ΚΡΑΤΙΚΟ AI PROJECT ΜΠΑΙΝΕΙ ΣΤΗΝ ΠΡΙΖΑ, ΟΙ ΝΤΟΜΑΤΕΣ ΤΟΥ ΘΕΟΔΩΡΟΠΟΥΛΟΥ ΚΑΙ ΤΙ ΣΥΜΒΑΙΝΕΙ ΜΕ ΤΟ CLOUD ΤΟΥ ΔΗΜΟΣΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564429022/san-na-paleya-me-deinosayro-pos-i-34chroni-lia-stioyart-epezise-apo-epithesi-karcharia/"
+        "https://www.kathimerini.gr/columns/564429016/poios-kanei-avant-premiere-poio-kratiko-ai-project-mpainei-stin-priza-oi-ntomates-toy-theodoropoyloy-kai-ti-symvainei-me-to-cloud-toy-dimosioy/",
+        "https://www.kathimerini.gr/world/564429034/rosia-toylachiston-dyo-nekroi-apo-oykraniki-pyrayliki-epithesi-sto-mpelgkoront/",
+        "https://www.kathimerini.gr/world/564429040/nayagio-stin-keryneia-agonia-gia-toys-18-agnooymenoys-synechizontai-oi-ereynes/"
       ],
-      "seen_at_utc": "2026-08-31T05:30:05.450889+00:00"
+      "seen_at_utc": "2026-08-31T05:51:14.985366+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871625/mustirio-me-to-vrefos-pou-vrethike-nekro-mesa-se-doheio-krummeno-se-valitsa-anamenodai-apadiseis-apo-ton-iatrodikasti/?utm_source=rss",
-      "title": "Μυστήριο με το βρέφος που βρέθηκε νεκρό μέσα σε δοχείο κρυμμένο σε βαλίτσα, αναμένονται απαντήσεις από τον ιατροδικαστή",
-      "normalized_title": "ΜΥΣΤΗΡΙΟ ΜΕ ΤΟ ΒΡΕΦΟΣ ΠΟΥ ΒΡΕΘΗΚΕ ΝΕΚΡΟ ΜΕΣΑ ΣΕ ΔΟΧΕΙΟ ΚΡΥΜΜΕΝΟ ΣΕ ΒΑΛΙΤΣΑ, ΑΝΑΜΕΝΟΝΤΑΙ ΑΠΑΝΤΗΣΕΙΣ ΑΠΟ ΤΟΝ ΙΑΤΡΟΔΙΚΑΣΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1871641/epikinduna-adallaktika-stin-agora-thanatoi-kai-ekatodades-traumatismoi/?utm_source=rss",
+      "title": "Επικίνδυνα ανταλλακτικά στην αγορά - Θάνατοι και εκατοντάδες τραυματισμοί",
+      "normalized_title": "ΕΠΙΚΙΝΔΥΝΑ ΑΝΤΑΛΛΑΚΤΙΚΑ ΣΤΗΝ ΑΓΟΡΑ - ΘΑΝΑΤΟΙ ΚΑΙ ΕΚΑΤΟΝΤΑΔΕΣ ΤΡΑΥΜΑΤΙΣΜΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871625/mustirio-me-to-vrefos-pou-vrethike-nekro-mesa-se-doheio-krummeno-se-valitsa-anamenodai-apadiseis-apo-ton-iatrodikasti/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871641/epikinduna-adallaktika-stin-agora-thanatoi-kai-ekatodades-traumatismoi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871638/epeisodiaki-ptisi-apo-hania-pros-thessaloniki-meta-apo-5-ores-kathusterisi-epivates-zitisan-na-apovivastoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871631/prolamvano-dorean-exetaseis-gia-4-nosous-apo-ton-septemvrio-tha-staloun-53-ekat-parapebtika/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T05:30:05.451035+00:00"
+      "seen_at_utc": "2026-08-31T05:51:14.985498+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457043/o-tramp-anartise-ai-vinteo-kai-apeilei-to-iran-to-nisi-hargk-anatinazetai-se-hilia-kommatia/",
-      "title": "Ο Τραμπ ανάρτησε ΑΙ βίντεο και απειλεί το Ιράν: «Το νησί Χαργκ ανατινάζεται σε χίλια κομμάτια»",
-      "normalized_title": "Ο ΤΡΑΜΠ ΑΝΑΡΤΗΣΕ ΑΙ ΒΙΝΤΕΟ ΚΑΙ ΑΠΕΙΛΕΙ ΤΟ ΙΡΑΝ: «ΤΟ ΝΗΣΙ ΧΑΡΓΚ ΑΝΑΤΙΝΑΖΕΤΑΙ ΣΕ ΧΙΛΙΑ ΚΟΜΜΑΤΙΑ»",
+      "url": "https://www.efsyn.gr/ellada/1457057/viral-vinteo-apo-ton-mpalo-hanion-stoivagmenoi-o-enas-pano-ston-allon-voyliaxe-i-paralia/",
+      "title": "Viral βίντεο από τον Μπάλο Χανίων: Στοιβαγμένοι ο ένας πάνω στον άλλον, βούλιαξε η παραλία",
+      "normalized_title": "VIRAL ΒΙΝΤΕΟ ΑΠΟ ΤΟΝ ΜΠΑΛΟ ΧΑΝΙΩΝ: ΣΤΟΙΒΑΓΜΕΝΟΙ Ο ΕΝΑΣ ΠΑΝΩ ΣΤΟΝ ΑΛΛΟΝ, ΒΟΥΛΙΑΞΕ Η ΠΑΡΑΛΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457043/o-tramp-anartise-ai-vinteo-kai-apeilei-to-iran-to-nisi-hargk-anatinazetai-se-hilia-kommatia/",
-        "https://www.efsyn.gr/politiki/1457032/ithelan-stratodikeia-kai-toys-ftaiei-tora-i-akrita/"
+        "https://www.efsyn.gr/ellada/1457057/viral-vinteo-apo-ton-mpalo-hanion-stoivagmenoi-o-enas-pano-ston-allon-voyliaxe-i-paralia/",
+        "https://www.efsyn.gr/athlitismos/1457040/peripatos-gia-ti-real/",
+        "https://www.efsyn.gr/ellada/1457033/the-chios-festival-2026-timitiki-diakrisi-gia-ton-dimitri-melissanidi/",
+        "https://www.efsyn.gr/ellada/1457026/diarrixi-stis-egkatastaseis-tis-ypa-fiasko-diarkeias-kai-ethnikis-anasfaleias/",
+        "https://www.efsyn.gr/politiki/1457017/elas-sygkrotithike-i-omada-kroysis-gia-tis-ekloges/",
+        "https://www.efsyn.gr/politiki/1457053/neo-galazio-htypima-apo-ton-thanasi-skorda-den-hreiazetai-na-efeyroyme-enan-samara-ton-ehoyme/",
+        "https://www.efsyn.gr/politiki/1457067/i-aek-i-kitrinomayri-hios-kai-i-timitiki-diakrisi-ston-d-melissanidi/",
+        "https://www.efsyn.gr/ellada/1457048/patisia-viaii-ratsistiki-epithesi-se-varos-metanaston-ergaton-apo-to-pakistan/"
       ],
-      "seen_at_utc": "2026-08-31T05:30:05.450999+00:00"
+      "seen_at_utc": "2026-08-31T05:51:14.985464+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/economy/telos-xronou-gia-to-anakainizo-eos-31-aygoustou-i-vevaiosi-epileksimotitas-gia-ta-kleista-akinita/",
-      "title": "Τέλος χρόνου για το «Ανακαινίζω» – Έως 31 Αυγούστου η Βεβαίωση Επιλεξιμότητας για τα κλειστά ακίνητα",
-      "normalized_title": "ΤΕΛΟΣ ΧΡΟΝΟΥ ΓΙΑ ΤΟ «ΑΝΑΚΑΙΝΙΖΩ» – ΕΩΣ 31 ΑΥΓΟΥΣΤΟΥ Η ΒΕΒΑΙΩΣΗ ΕΠΙΛΕΞΙΜΟΤΗΤΑΣ ΓΙΑ ΤΑ ΚΛΕΙΣΤΑ ΑΚΙΝΗΤΑ",
+      "url": "https://www.in.gr/2026/08/31/world/nea-klimakosi-sti-mesi-anatoli-antipoina-tou-iran-gia-ta-pligmata-ton-ipa-sto-nisi-larak/",
+      "title": "Νέα κλιμάκωση στη Μέση Ανατολή – Αντίποινα του Ιράν για τα πλήγματα των ΗΠΑ στο νησί Λαράκ",
+      "normalized_title": "ΝΕΑ ΚΛΙΜΑΚΩΣΗ ΣΤΗ ΜΕΣΗ ΑΝΑΤΟΛΗ – ΑΝΤΙΠΟΙΝΑ ΤΟΥ ΙΡΑΝ ΓΙΑ ΤΑ ΠΛΗΓΜΑΤΑ ΤΩΝ ΗΠΑ ΣΤΟ ΝΗΣΙ ΛΑΡΑΚ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/economy/telos-xronou-gia-to-anakainizo-eos-31-aygoustou-i-vevaiosi-epileksimotitas-gia-ta-kleista-akinita/",
-        "https://www.in.gr/2026/08/31/sports/football/i-fifa-plironei-27-ekat-eyro-gia-tin-eikona-tou-infantino-sta-social-media/"
+        "https://www.in.gr/2026/08/31/world/nea-klimakosi-sti-mesi-anatoli-antipoina-tou-iran-gia-ta-pligmata-ton-ipa-sto-nisi-larak/",
+        "https://www.in.gr/2026/08/31/go-fun/fizz/nikos-kouris-foititis-pleon-o-gios-tou-se-poia-sxoli-perase/",
+        "https://www.in.gr/2026/08/31/world/nepal-kseperasan-tous-900-oi-nekroi-pano-apo-4-000-oi-agnooumenoi/"
       ],
-      "seen_at_utc": "2026-08-31T05:30:05.450953+00:00"
+      "seen_at_utc": "2026-08-31T05:51:14.985419+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T05:30:05.451113+00:00"
+  "updated_at_utc": "2026-08-31T05:51:14.985569+00:00"
 }
