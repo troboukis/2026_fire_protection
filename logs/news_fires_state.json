@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564429970/kypseli-mas-edosan-lathos-moro-sto-maieytirio-pethane-apo-provlima-sto-stomachi-ti-ischyristike-o-pateras/",
-      "title": "Κυψέλη: «Μας έδωσαν λάθος μωρό στο μαιευτήριο, πέθανε από πρόβλημα στο στομάχι» – Τι ισχυρίστηκε ο πατέρας",
-      "normalized_title": "ΚΥΨΕΛΗ: «ΜΑΣ ΕΔΩΣΑΝ ΛΑΘΟΣ ΜΩΡΟ ΣΤΟ ΜΑΙΕΥΤΗΡΙΟ, ΠΕΘΑΝΕ ΑΠΟ ΠΡΟΒΛΗΜΑ ΣΤΟ ΣΤΟΜΑΧΙ» – ΤΙ ΙΣΧΥΡΙΣΤΗΚΕ Ο ΠΑΤΕΡΑΣ",
+      "url": "https://www.kathimerini.gr/world/564430000/i-italia-prospathei-na-valei-taxi-se-12-000-idiotikes-paralies/",
+      "title": "Η Ιταλία προσπαθεί να βάλει τάξη σε 12.000 ιδιωτικές παραλίες",
+      "normalized_title": "Η ΙΤΑΛΙΑ ΠΡΟΣΠΑΘΕΙ ΝΑ ΒΑΛΕΙ ΤΑΞΗ ΣΕ 12.000 ΙΔΙΩΤΙΚΕΣ ΠΑΡΑΛΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564429970/kypseli-mas-edosan-lathos-moro-sto-maieytirio-pethane-apo-provlima-sto-stomachi-ti-ischyristike-o-pateras/",
-        "https://www.kathimerini.gr/life/science/564429670/demeno-me-ton-ilio-kai-ti-selini-o-astronomos-poy-eide-sto-stooynchentz-enan-proistoriko-ypologisti/",
-        "https://www.kathimerini.gr/economy/564427438/i-proti-eisprattei-i-deyteri-plironei/"
+        "https://www.kathimerini.gr/world/564430000/i-italia-prospathei-na-valei-taxi-se-12-000-idiotikes-paralies/",
+        "https://www.kathimerini.gr/athletics/basketball/564429997/zontani-gia-to-pagkosmio-i-ethniki-lygise-tin-ispania-stin-paratasi/"
       ],
-      "seen_at_utc": "2026-08-31T18:30:03.397357+00:00"
+      "seen_at_utc": "2026-08-31T18:51:17.881821+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872037/tromaktiko-trohaio-sta-hania-odigos-hanei-ton-elegho-bainei-sto-aditheto-reuma-kai-sugrouetai-me-taxi-deite-video/?utm_source=rss",
-      "title": "Τρομακτικό τροχαίο στα Χανιά: Οδηγός χάνει τον έλεγχο, μπαίνει στο αντίθετο ρεύμα και συγκρούεται με ταξί, δείτε βίντεο",
-      "normalized_title": "ΤΡΟΜΑΚΤΙΚΟ ΤΡΟΧΑΙΟ ΣΤΑ ΧΑΝΙΑ: ΟΔΗΓΟΣ ΧΑΝΕΙ ΤΟΝ ΕΛΕΓΧΟ, ΜΠΑΙΝΕΙ ΣΤΟ ΑΝΤΙΘΕΤΟ ΡΕΥΜΑ ΚΑΙ ΣΥΓΚΡΟΥΕΤΑΙ ΜΕ ΤΑΞΙ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1872045/thessaloniki-ptoma-andra-edopistike-se-kabing-tis-asprovaltas/?utm_source=rss",
+      "title": "Πτώμα άνδρα εντοπίστηκε σε κάμπινγκ της Ασπροβάλτας στη Θεσσαλονίκη",
+      "normalized_title": "ΠΤΩΜΑ ΑΝΔΡΑ ΕΝΤΟΠΙΣΤΗΚΕ ΣΕ ΚΑΜΠΙΝΓΚ ΤΗΣ ΑΣΠΡΟΒΑΛΤΑΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872037/tromaktiko-trohaio-sta-hania-odigos-hanei-ton-elegho-bainei-sto-aditheto-reuma-kai-sugrouetai-me-taxi-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872045/thessaloniki-ptoma-andra-edopistike-se-kabing-tis-asprovaltas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872040/nea-epohi-stin-trohaia-stin-attiki-me-ai-138-astunomikous-235-kameres-kai-10-drones-gia-to-kukloforiako/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T18:17:02.457362+00:00"
+      "seen_at_utc": "2026-08-31T18:51:17.881941+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1457622/ileia-nekros-metanastis-ergatis-gis-se-ardeytiko-kanali-epese-to-aytokinito-poy-odigoyse-eikones/",
-      "title": "Ηλεία: Νεκρός μετανάστης εργάτης γης – Σε αρδευτικό κανάλι έπεσε το αυτοκίνητo που οδηγούσε [εικόνες]",
-      "normalized_title": "ΗΛΕΙΑ: ΝΕΚΡΟΣ ΜΕΤΑΝΑΣΤΗΣ ΕΡΓΑΤΗΣ ΓΗΣ – ΣΕ ΑΡΔΕΥΤΙΚΟ ΚΑΝΑΛΙ ΕΠΕΣΕ ΤΟ ΑΥΤΟΚΙΝΗΤO ΠΟΥ ΟΔΗΓΟΥΣΕ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/ellada/1457633/synelifthi-46hronos-fygopoinos-stin-kriti-eihe-katadikastei-gia-plastografia/",
+      "title": "Συνελήφθη 46χρονος φυγόποινος στην Κρήτη – Είχε καταδικαστεί για πλαστογραφία",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 46ΧΡΟΝΟΣ ΦΥΓΟΠΟΙΝΟΣ ΣΤΗΝ ΚΡΗΤΗ – ΕΙΧΕ ΚΑΤΑΔΙΚΑΣΤΕΙ ΓΙΑ ΠΛΑΣΤΟΓΡΑΦΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1457622/ileia-nekros-metanastis-ergatis-gis-se-ardeytiko-kanali-epese-to-aytokinito-poy-odigoyse-eikones/",
-        "https://www.efsyn.gr/athlitismos/1457623/mesogeiakoi-agones-dyo-asimenia-metallia-gia-ti-stratoydaki-stin-arsi-varon/"
+        "https://www.efsyn.gr/ellada/1457633/synelifthi-46hronos-fygopoinos-stin-kriti-eihe-katadikastei-gia-plastografia/",
+        "https://www.efsyn.gr/athlitismos/1457630/zontani-i-ethniki-gia-to-moyntompasket-ypetaxe-tin-ispania-se-mats-thriler/",
+        "https://www.efsyn.gr/tehnes/1457343/festival-kinimatografoy-venetias-na-kymatisei-i-simaia-tis-palaistinis-sto-linto-zitoyn-200-prosopikotites/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-31-08-2026/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-31-08-2026/"
       ],
-      "seen_at_utc": "2026-08-31T18:30:03.397465+00:00"
+      "seen_at_utc": "2026-08-31T18:51:17.881914+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/sports/football/levadeiakos-panathinaikos-0-2-aneto-perasma-gia-tous-prasinous-apo-ti-livadeia/",
-      "title": "Άνετο πέρασμα για τον Παναθηναϊκό από τη Λιβαδειά (0-2)",
-      "normalized_title": "ΑΝΕΤΟ ΠΕΡΑΣΜΑ ΓΙΑ ΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ ΑΠΟ ΤΗ ΛΙΒΑΔΕΙΑ (0-2)",
+      "url": "https://www.in.gr/2026/08/31/sports/football/super-league-i-vathmologia-meta-to-telos-tis-2is-agonistikis-pic/",
+      "title": "Super League: Η βαθμολογία μετά το τέλος της 2ης αγωνιστικής (pic)",
+      "normalized_title": "SUPER LEAGUE: Η ΒΑΘΜΟΛΟΓΙΑ ΜΕΤΑ ΤΟ ΤΕΛΟΣ ΤΗΣ 2ΗΣ ΑΓΩΝΙΣΤΙΚΗΣ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/sports/football/levadeiakos-panathinaikos-0-2-aneto-perasma-gia-tous-prasinous-apo-ti-livadeia/",
-        "https://www.in.gr/2026/08/31/politics/epikairotita/dipla-stous-epoxikous-pyrosvestes-i-elas-protasi-thesmikou-stelexiakou-kai-organotikou-eksygxronismou/",
-        "https://www.in.gr/2026/08/31/go-fun/perierga/i-viral-tasi-pheromone-maxxing-kai-i-aplysia-prin-to-proto-rantevou/",
-        "https://www.in.gr/2026/08/31/world/nepal-pos-to-prasino-spiti-paremeine-orthio-en-meso-ton-katastrofikon-plimmyron-pou-paresyran-ta-panta/"
+        "https://www.in.gr/2026/08/31/sports/football/super-league-i-vathmologia-meta-to-telos-tis-2is-agonistikis-pic/",
+        "https://www.in.gr/2026/08/31/sports/basketball/ellada-ispania-108-106-par-86-86-k-d-emeine-zontani-me-katathesi-psyxis-i-ethnikis/",
+        "https://www.in.gr/2026/08/31/greece/paraligo-tragodia-sta-xania-ix-ksefyge-apo-tin-poreia-tou-kai-epese-pano-se-taksi-vinteo/"
       ],
-      "seen_at_utc": "2026-08-31T18:30:03.397409+00:00"
+      "seen_at_utc": "2026-08-31T18:51:17.881871+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T18:30:03.397562+00:00"
+  "updated_at_utc": "2026-08-31T18:51:17.882021+00:00"
 }
