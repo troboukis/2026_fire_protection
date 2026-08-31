@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564427297/to-pistopoiitiko-forologikis-katoikias/",
-      "title": "To πιστοποιητικό φορολογικής κατοικίας",
-      "normalized_title": "TO ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΦΟΡΟΛΟΓΙΚΗΣ ΚΑΤΟΙΚΙΑΣ",
+      "url": "https://www.kathimerini.gr/culture/tv/564429673/mpampa-s-agapo-i-mairi-epistrefei-allagmeni/",
+      "title": "«Μπαμπά, σ’ αγαπώ»: Η Μαίρη επιστρέφει αλλαγμένη",
+      "normalized_title": "«ΜΠΑΜΠΑ, Σ’ ΑΓΑΠΩ»: Η ΜΑΙΡΗ ΕΠΙΣΤΡΕΦΕΙ ΑΛΛΑΓΜΕΝΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564427297/to-pistopoiitiko-forologikis-katoikias/",
-        "https://www.kathimerini.gr/world/564429739/toyrkia-schedio-gia-asfali-exagogi-sitiron-meso-tis-mayris-thalassas/",
-        "https://www.kathimerini.gr/world/564430063/polonia-pyrkagia-se-ergostasio-kataskeyis-machitikon-drones/"
+        "https://www.kathimerini.gr/culture/tv/564429673/mpampa-s-agapo-i-mairi-epistrefei-allagmeni/",
+        "https://www.kathimerini.gr/world/564429652/gallia-telos-ta-kinita-sta-lykeia-choris-schedio-gia-ta-scholika-apps-poy-chrisimopoioysan-oi-mathites/"
       ],
-      "seen_at_utc": "2026-08-31T20:17:07.796191+00:00"
+      "seen_at_utc": "2026-08-31T20:30:00.590359+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,29 +1269,27 @@
       "seen_at_utc": "2026-08-31T20:17:07.796330+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457665/i-oykrania-ypoferei-apo-tis-rosikes-epitheseis-me-jet-drones-pano-apo-800-htypimata-molis-se-4-imeres/",
-      "title": "Η Ουκρανία υποφέρει από τις ρωσικές επιθέσεις με jet drones: Πάνω από 800 χτυπήματα μόλις σε 4 ημέρες",
-      "normalized_title": "Η ΟΥΚΡΑΝΙΑ ΥΠΟΦΕΡΕΙ ΑΠΟ ΤΙΣ ΡΩΣΙΚΕΣ ΕΠΙΘΕΣΕΙΣ ΜΕ JET DRONES: ΠΑΝΩ ΑΠΟ 800 ΧΤΥΠΗΜΑΤΑ ΜΟΛΙΣ ΣΕ 4 ΗΜΕΡΕΣ",
+      "url": "https://www.efsyn.gr/kosmos/1457681/germania-gynaika-exapatoyse-kosmo-legontas-pos-to-paidi-tis-ehei-karkino-eihe-mazepsei-350-000-eyro/",
+      "title": "Γερμανία: Γυναίκα εξαπατούσε κόσμο λέγοντας πως το παιδί της έχει καρκίνο – Είχε μαζέψει 350.000 ευρώ",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΓΥΝΑΙΚΑ ΕΞΑΠΑΤΟΥΣΕ ΚΟΣΜΟ ΛΕΓΟΝΤΑΣ ΠΩΣ ΤΟ ΠΑΙΔΙ ΤΗΣ ΕΧΕΙ ΚΑΡΚΙΝΟ – ΕΙΧΕ ΜΑΖΕΨΕΙ 350.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457665/i-oykrania-ypoferei-apo-tis-rosikes-epitheseis-me-jet-drones-pano-apo-800-htypimata-molis-se-4-imeres/",
-        "https://www.efsyn.gr/epistimi/1457674/yperanthropo-ergaleio-tehnitis-noimosynis-entopizei-kardiakes-pathiseis-se-ligotero-apo-dyo-deyterolepta/",
-        "https://www.efsyn.gr/kosmos/1457301/ta-adianoita-poy-ginontai-pragmatikotita/"
+        "https://www.efsyn.gr/kosmos/1457681/germania-gynaika-exapatoyse-kosmo-legontas-pos-to-paidi-tis-ehei-karkino-eihe-mazepsei-350-000-eyro/"
       ],
-      "seen_at_utc": "2026-08-31T20:17:07.796297+00:00"
+      "seen_at_utc": "2026-08-31T20:30:00.590443+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/sports/basketball/spanoulis-xreiazetai-megali-kardia-gia-na-kerdiseis-tetoia-mats-ena-terastio-eyxaristo-ston-kosmo/",
-      "title": "Σπανούλης: «Χρειάζεται μεγάλη καρδιά για να κερδίσεις τέτοια ματς – Ένα τεράστιο ευχαριστώ στον κόσμο»",
-      "normalized_title": "ΣΠΑΝΟΥΛΗΣ: «ΧΡΕΙΑΖΕΤΑΙ ΜΕΓΑΛΗ ΚΑΡΔΙΑ ΓΙΑ ΝΑ ΚΕΡΔΙΣΕΙΣ ΤΕΤΟΙΑ ΜΑΤΣ – ΕΝΑ ΤΕΡΑΣΤΙΟ ΕΥΧΑΡΙΣΤΩ ΣΤΟΝ ΚΟΣΜΟ»",
+      "url": "https://www.in.gr/2026/08/31/sports/basketball/konta-stin-ethniki-mpasket-o-vasilis-kikilias-pics/",
+      "title": "Κοντά στην Εθνική μπάσκετ ο Βασίλης Κικίλιας (pics)",
+      "normalized_title": "ΚΟΝΤΑ ΣΤΗΝ ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ Ο ΒΑΣΙΛΗΣ ΚΙΚΙΛΙΑΣ (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/sports/basketball/spanoulis-xreiazetai-megali-kardia-gia-na-kerdiseis-tetoia-mats-ena-terastio-eyxaristo-ston-kosmo/",
-        "https://www.in.gr/2026/08/31/world/netaniaxou-gia-tin-aspida-tou-axillea-mia-apo-tis-megalyteres-symfonies-gia-to-israil/",
-        "https://www.in.gr/2026/08/31/sports/on-field/petaei-foties-o-malen/",
-        "https://www.in.gr/2026/08/31/sports/on-field/ntesers-stimena-kerdismenos-xronos-ta-kerdi-tou-panathinaikou-sti-livadeia/",
-        "https://www.in.gr/2026/08/31/politics/epikairotita/elas-oi-treis-pylones-tou-tetraetous-programmatos-h-skliri-douleia-pou-exei-to-komma-mprosta/"
+        "https://www.in.gr/2026/08/31/sports/basketball/konta-stin-ethniki-mpasket-o-vasilis-kikilias-pics/",
+        "https://www.in.gr/2026/08/31/greece/symi-akyvernito-istioforo-me-dyo-epivainontes-entopise-to-limeniko/",
+        "https://www.in.gr/2026/08/31/sports/othersports/to-vrady-pou-o-stefanos-tsitsipas-egine-greek-warrior-vids/",
+        "https://www.in.gr/2026/08/31/go-fun/fizz/to-monadiko-tatouaz-tis-eya-mentes-einai-gia-ton-raian-gkoslingk/",
+        "https://www.in.gr/2026/08/31/economy/oikonomikes-eidiseis/ilektrika-aytokinita-katheti-ptosi-tis-timis-ton-metaxeirismenon/"
       ],
-      "seen_at_utc": "2026-08-31T20:17:07.796251+00:00"
+      "seen_at_utc": "2026-08-31T20:30:00.590407+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T20:17:07.796403+00:00"
+  "updated_at_utc": "2026-08-31T20:30:00.590519+00:00"
 }
