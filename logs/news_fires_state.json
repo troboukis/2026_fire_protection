@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564429187/konstantinos-kyranakis-me-100-tiledioikisi-apo-aytin-tin-evdomada-to-athina-thessaloniki/",
-      "title": "Κωνσταντίνος Κυρανάκης: Με 100% τηλεδιοίκηση από αυτήν την εβδομάδα το Αθήνα–Θεσσαλονίκη",
-      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΥΡΑΝΑΚΗΣ: ΜΕ 100% ΤΗΛΕΔΙΟΙΚΗΣΗ ΑΠΟ ΑΥΤΗΝ ΤΗΝ ΕΒΔΟΜΑΔΑ ΤΟ ΑΘΗΝΑ–ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.kathimerini.gr/society/564429184/komotini-pethane-kanontas-tzokingk-proin-fysiotherapeytis-toy-panthrakikoy/",
+      "title": "Κομοτηνή: Πέθανε κάνοντας τζόκινγκ πρώην φυσιοθεραπευτής του Πανθρακικού",
+      "normalized_title": "ΚΟΜΟΤΗΝΗ: ΠΕΘΑΝΕ ΚΑΝΟΝΤΑΣ ΤΖΟΚΙΝΓΚ ΠΡΩΗΝ ΦΥΣΙΟΘΕΡΑΠΕΥΤΗΣ ΤΟΥ ΠΑΝΘΡΑΚΙΚΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564429187/konstantinos-kyranakis-me-100-tiledioikisi-apo-aytin-tin-evdomada-to-athina-thessaloniki/",
-        "https://www.kathimerini.gr/society/564429181/chania-pente-syllipseis-gia-ton-thanato-tis-11chronis-se-pisina-xenodocheioy/",
-        "https://www.kathimerini.gr/athletics/564429166/to-zein-epikindynos-ton-epaggelmationn-athliton/"
+        "https://www.kathimerini.gr/society/564429184/komotini-pethane-kanontas-tzokingk-proin-fysiotherapeytis-toy-panthrakikoy/",
+        "https://www.kathimerini.gr/world/564429061/ipa-iran-me-ai-vinteo-oi-nees-apeiles-tramp-i-nisos-chargk-ginetai-syntrimmia/",
+        "https://www.kathimerini.gr/society/564429199/chania-pente-ores-egklovismenoi-se-aeroskafos-logo-vlavis-fones-lipothymia-kai-krisi-panikoy/"
       ],
-      "seen_at_utc": "2026-08-31T07:29:57.841884+00:00"
+      "seen_at_utc": "2026-08-31T07:51:17.277415+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1871689/korinthia-anatinaxan-atm-stin-perahora-kai-arpaxan-pano-apo-90000-euro/?utm_source=rss",
-      "title": "Κορινθία: Ανατίναξαν ΑΤΜ στην Περαχώρα και άρπαξαν πάνω από 90.000 ευρώ",
-      "normalized_title": "ΚΟΡΙΝΘΙΑ: ΑΝΑΤΙΝΑΞΑΝ ΑΤΜ ΣΤΗΝ ΠΕΡΑΧΩΡΑ ΚΑΙ ΑΡΠΑΞΑΝ ΠΑΝΩ ΑΠΟ 90.000 ΕΥΡΩ",
+      "url": "https://www.protothema.gr/greece/article/1871703/kriti-pede-sullipseis-gia-ton-thanato-tis-11hronis-stin-pisina/?utm_source=rss",
+      "title": "Κρήτη: Πέντε συλλήψεις για τον θάνατο της 11χρονης στην πισίνα",
+      "normalized_title": "ΚΡΗΤΗ: ΠΕΝΤΕ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΗΣ 11ΧΡΟΝΗΣ ΣΤΗΝ ΠΙΣΙΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1871689/korinthia-anatinaxan-atm-stin-perahora-kai-arpaxan-pano-apo-90000-euro/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1871703/kriti-pede-sullipseis-gia-ton-thanato-tis-11hronis-stin-pisina/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1871692/nauagio-stin-keruneia-apagoreusan-ton-apoplou-sto-filo-jet-logo-kairou-kai-mia-ora-meta-efuge-poios-edose-tin-adeia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T07:29:57.841948+00:00"
+      "seen_at_utc": "2026-08-31T07:51:17.277579+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1457119/ypoklopi-ton-syllogikon-gnoseon-hthes-kai-simera/",
-      "title": "Υποκλοπή των συλλογικών γνώσεων, χθες και σήμερα",
-      "normalized_title": "ΥΠΟΚΛΟΠΗ ΤΩΝ ΣΥΛΛΟΓΙΚΩΝ ΓΝΩΣΕΩΝ, ΧΘΕΣ ΚΑΙ ΣΗΜΕΡΑ",
+      "url": "https://www.efsyn.gr/media/1457136/apohorise-kai-i-lina-papadaki-apo-ti-dioikisi-toy-skai/",
+      "title": "Αποχώρησε και η Λίνα Παπαδάκη από τη διοίκηση του ΣΚΑΙ",
+      "normalized_title": "ΑΠΟΧΩΡΗΣΕ ΚΑΙ Η ΛΙΝΑ ΠΑΠΑΔΑΚΗ ΑΠΟ ΤΗ ΔΙΟΙΚΗΣΗ ΤΟΥ ΣΚΑΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1457119/ypoklopi-ton-syllogikon-gnoseon-hthes-kai-simera/",
-        "https://www.efsyn.gr/stiles/1457116/simeia-stixis/",
-        "https://www.efsyn.gr/stiles/1457107/skepseis-gia-ti-mastiga-tis-akriveias/",
-        "https://www.efsyn.gr/media/1457099/press-point-re-mpas-kai-ennoei-ton-hrysohoidi-kai-tin-agapidaki/"
+        "https://www.efsyn.gr/media/1457136/apohorise-kai-i-lina-papadaki-apo-ti-dioikisi-toy-skai/",
+        "https://www.efsyn.gr/ellada/1457155/korinthia-anatinaxan-atm-stin-perahora-kai-arpaxan-91-000-eyro-eikones/",
+        "https://www.efsyn.gr/stiles/1457158/o-algorithmos-ton-hrisimon-ilithion-toy-kasidiari/",
+        "https://www.efsyn.gr/politiki/1457148/floridis-gia-komma-samara-kindyneyei-na-ginei-to-pio-syntomo-anekdoto-elpizoyn-na-kopsei-pososta-apo-ti-nd/"
       ],
-      "seen_at_utc": "2026-08-31T07:29:57.841933+00:00"
+      "seen_at_utc": "2026-08-31T07:51:17.277560+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/greece/odigies-tis-ggpp-pros-perifereies-kai-dimous-gia-tin-antiplimmyriki-periodo-2026-2027/",
-      "title": "Οδηγίες της ΓΓΠΠ προς περιφέρειες και δήμους για την αντιπλημμυρική περίοδο 2026-2027",
-      "normalized_title": "ΟΔΗΓΙΕΣ ΤΗΣ ΓΓΠΠ ΠΡΟΣ ΠΕΡΙΦΕΡΕΙΕΣ ΚΑΙ ΔΗΜΟΥΣ ΓΙΑ ΤΗΝ ΑΝΤΙΠΛΗΜΜΥΡΙΚΗ ΠΕΡΙΟΔΟ 2026-2027",
+      "url": "https://www.in.gr/2026/08/31/world/iae-antimetopisan-drone-proerxomeno-apo-to-iran-diapseydoun-oti-i-vasi-al-minxant-egine-stoxos-epithesis/",
+      "title": "Αντιμετώπισαν drone προερχόμενο από το Ιράν τα ΗΑΕ - Διαψεύδουν ότι η βάση αλ Μινχάντ έγινε στόχος επίθεσης",
+      "normalized_title": "ΑΝΤΙΜΕΤΩΠΙΣΑΝ DRONE ΠΡΟΕΡΧΟΜΕΝΟ ΑΠΟ ΤΟ ΙΡΑΝ ΤΑ ΗΑΕ - ΔΙΑΨΕΥΔΟΥΝ ΟΤΙ Η ΒΑΣΗ ΑΛ ΜΙΝΧΑΝΤ ΕΓΙΝΕ ΣΤΟΧΟΣ ΕΠΙΘΕΣΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/greece/odigies-tis-ggpp-pros-perifereies-kai-dimous-gia-tin-antiplimmyriki-periodo-2026-2027/"
+        "https://www.in.gr/2026/08/31/world/iae-antimetopisan-drone-proerxomeno-apo-to-iran-diapseydoun-oti-i-vasi-al-minxant-egine-stoxos-epithesis/",
+        "https://www.in.gr/2026/08/31/english-edition/greece-cuts-prices-on-1660-supermarket-products/",
+        "https://www.in.gr/2026/08/31/sports/football/to-apolyto-ksekinima-tou-alonso-me-tin-tselsi-kai-i-proti-megali-proklisi-me-tin-arsenal/"
       ],
-      "seen_at_utc": "2026-08-31T07:29:57.841913+00:00"
+      "seen_at_utc": "2026-08-31T07:51:17.277530+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T07:29:57.842006+00:00"
+  "updated_at_utc": "2026-08-31T07:51:17.277652+00:00"
 }
