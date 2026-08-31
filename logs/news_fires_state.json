@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564429673/mpampa-s-agapo-i-mairi-epistrefei-allagmeni/",
-      "title": "«Μπαμπά, σ’ αγαπώ»: Η Μαίρη επιστρέφει αλλαγμένη",
-      "normalized_title": "«ΜΠΑΜΠΑ, Σ’ ΑΓΑΠΩ»: Η ΜΑΙΡΗ ΕΠΙΣΤΡΕΦΕΙ ΑΛΛΑΓΜΕΝΗ",
+      "url": "https://www.kathimerini.gr/world/564429802/to-met-akyrose-ekthesi-toy-tzon-gkaliano-logo-palioteron-ratsistikon-scholion/",
+      "title": "Το Met ακύρωσε έκθεση του Τζον Γκαλιάνο λόγω παλιότερων ρατσιστικών σχολίων",
+      "normalized_title": "ΤΟ MET ΑΚΥΡΩΣΕ ΕΚΘΕΣΗ ΤΟΥ ΤΖΟΝ ΓΚΑΛΙΑΝΟ ΛΟΓΩ ΠΑΛΙΟΤΕΡΩΝ ΡΑΤΣΙΣΤΙΚΩΝ ΣΧΟΛΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564429673/mpampa-s-agapo-i-mairi-epistrefei-allagmeni/",
-        "https://www.kathimerini.gr/world/564429652/gallia-telos-ta-kinita-sta-lykeia-choris-schedio-gia-ta-scholika-apps-poy-chrisimopoioysan-oi-mathites/"
+        "https://www.kathimerini.gr/world/564429802/to-met-akyrose-ekthesi-toy-tzon-gkaliano-logo-palioteron-ratsistikon-scholion/",
+        "https://www.kathimerini.gr/world/564429796/anotatoi-axiomatikoi-proeidopoioyn-ton-chegkseth-na-min-dieyrynei-tis-epicheiriseis-sto-iran/",
+        "https://www.kathimerini.gr/society/564430072/premiera-ayrio-gia-tin-komvos-tis-el-as-me-drones-kameres-kai-ai-i-diacheirisi-tis-kykloforias/"
       ],
-      "seen_at_utc": "2026-08-31T20:30:00.590359+00:00"
+      "seen_at_utc": "2026-08-31T20:51:11.554054+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,25 @@
       "seen_at_utc": "2026-08-31T20:17:07.796330+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457681/germania-gynaika-exapatoyse-kosmo-legontas-pos-to-paidi-tis-ehei-karkino-eihe-mazepsei-350-000-eyro/",
-      "title": "Γερμανία: Γυναίκα εξαπατούσε κόσμο λέγοντας πως το παιδί της έχει καρκίνο – Είχε μαζέψει 350.000 ευρώ",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΓΥΝΑΙΚΑ ΕΞΑΠΑΤΟΥΣΕ ΚΟΣΜΟ ΛΕΓΟΝΤΑΣ ΠΩΣ ΤΟ ΠΑΙΔΙ ΤΗΣ ΕΧΕΙ ΚΑΡΚΙΝΟ – ΕΙΧΕ ΜΑΖΕΨΕΙ 350.000 ΕΥΡΩ",
+      "url": "https://www.efsyn.gr/athlitismos/1457684/megali-niki-me-anatropi-toy-tsitsipa-sto-us-open-epikratise-toy-artoyr-fis-no11-ston-kosmo/",
+      "title": "Μεγάλη νίκη με ανατροπή του Τσιτσιπά στο US Open: Επικράτησε του Αρτούρ Φις, Νο11 στον κόσμο",
+      "normalized_title": "ΜΕΓΑΛΗ ΝΙΚΗ ΜΕ ΑΝΑΤΡΟΠΗ ΤΟΥ ΤΣΙΤΣΙΠΑ ΣΤΟ US OPEN: ΕΠΙΚΡΑΤΗΣΕ ΤΟΥ ΑΡΤΟΥΡ ΦΙΣ, ΝΟ11 ΣΤΟΝ ΚΟΣΜΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457681/germania-gynaika-exapatoyse-kosmo-legontas-pos-to-paidi-tis-ehei-karkino-eihe-mazepsei-350-000-eyro/"
+        "https://www.efsyn.gr/athlitismos/1457684/megali-niki-me-anatropi-toy-tsitsipa-sto-us-open-epikratise-toy-artoyr-fis-no11-ston-kosmo/"
       ],
-      "seen_at_utc": "2026-08-31T20:30:00.590443+00:00"
+      "seen_at_utc": "2026-08-31T20:51:11.554130+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/sports/basketball/konta-stin-ethniki-mpasket-o-vasilis-kikilias-pics/",
-      "title": "Κοντά στην Εθνική μπάσκετ ο Βασίλης Κικίλιας (pics)",
-      "normalized_title": "ΚΟΝΤΑ ΣΤΗΝ ΕΘΝΙΚΗ ΜΠΑΣΚΕΤ Ο ΒΑΣΙΛΗΣ ΚΙΚΙΛΙΑΣ (PICS)",
+      "url": "https://www.in.gr/2026/08/31/world/mitera-sti-germania-plastografise-diagnosi-karkinou-tou-giou-tis-kai-apespase-358-000-eyro/",
+      "title": "Μητέρα στη Γερμανία πλαστογράφησε διάγνωση καρκίνου του γιου της και απέσπασε 358.000 ευρώ",
+      "normalized_title": "ΜΗΤΕΡΑ ΣΤΗ ΓΕΡΜΑΝΙΑ ΠΛΑΣΤΟΓΡΑΦΗΣΕ ΔΙΑΓΝΩΣΗ ΚΑΡΚΙΝΟΥ ΤΟΥ ΓΙΟΥ ΤΗΣ ΚΑΙ ΑΠΕΣΠΑΣΕ 358.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/sports/basketball/konta-stin-ethniki-mpasket-o-vasilis-kikilias-pics/",
-        "https://www.in.gr/2026/08/31/greece/symi-akyvernito-istioforo-me-dyo-epivainontes-entopise-to-limeniko/",
-        "https://www.in.gr/2026/08/31/sports/othersports/to-vrady-pou-o-stefanos-tsitsipas-egine-greek-warrior-vids/",
-        "https://www.in.gr/2026/08/31/go-fun/fizz/to-monadiko-tatouaz-tis-eya-mentes-einai-gia-ton-raian-gkoslingk/",
-        "https://www.in.gr/2026/08/31/economy/oikonomikes-eidiseis/ilektrika-aytokinita-katheti-ptosi-tis-timis-ton-metaxeirismenon/"
+        "https://www.in.gr/2026/08/31/world/mitera-sti-germania-plastografise-diagnosi-karkinou-tou-giou-tis-kai-apespase-358-000-eyro/",
+        "https://www.in.gr/2026/08/31/economy/agro-in/mercosur-allazoun-oi-isorropies-sti-symfonia-me-tin-ee/",
+        "https://www.in.gr/2026/08/31/world/o-tramp-eksetazei-pligmata-sto-ormouz-kathe-epilogi-einai-sto-trapezi-leei-gia-to-iran-o-leykos-oikos/"
       ],
-      "seen_at_utc": "2026-08-31T20:30:00.590407+00:00"
+      "seen_at_utc": "2026-08-31T20:51:11.554097+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T20:30:00.590519+00:00"
+  "updated_at_utc": "2026-08-31T20:51:11.554206+00:00"
 }
