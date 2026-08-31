@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564429820/telos-epochis-o-lionel-mesi-krema-ta-papoytsia-tis-ethnikis-argentinis/",
-      "title": "Τέλος εποχής: Ο Λιονέλ Μέσι «κρεμά» τα παπούτσια της εθνικής Αργεντινής",
-      "normalized_title": "ΤΕΛΟΣ ΕΠΟΧΗΣ: Ο ΛΙΟΝΕΛ ΜΕΣΙ «ΚΡΕΜΑ» ΤΑ ΠΑΠΟΥΤΣΙΑ ΤΗΣ ΕΘΝΙΚΗΣ ΑΡΓΕΝΤΙΝΗΣ",
+      "url": "https://www.kathimerini.gr/society/564429841/ekali-synelifthi-32chroni-oikiaki-voithos-gia-klopes-kosmimaton-axias-40-000-eyro/",
+      "title": "Εκάλη: Συνελήφθη 32χρονη οικιακή βοηθός για κλοπές κοσμημάτων αξίας 40.000 ευρώ",
+      "normalized_title": "ΕΚΑΛΗ: ΣΥΝΕΛΗΦΘΗ 32ΧΡΟΝΗ ΟΙΚΙΑΚΗ ΒΟΗΘΟΣ ΓΙΑ ΚΛΟΠΕΣ ΚΟΣΜΗΜΑΤΩΝ ΑΞΙΑΣ 40.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564429820/telos-epochis-o-lionel-mesi-krema-ta-papoytsia-tis-ethnikis-argentinis/",
-        "https://www.kathimerini.gr/politics/564426907/sto-mplokaki-toy-2027/"
+        "https://www.kathimerini.gr/society/564429841/ekali-synelifthi-32chroni-oikiaki-voithos-gia-klopes-kosmimaton-axias-40-000-eyro/"
       ],
-      "seen_at_utc": "2026-08-31T15:29:59.394110+00:00"
+      "seen_at_utc": "2026-08-31T15:51:22.789080+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,27 +1269,30 @@
       "seen_at_utc": "2026-08-31T15:29:59.394257+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1457523/elas-hatzigiannakis-ta-oligopolia-strimohnoyn-tis-mikres-etairies-shedon-se-kathe-klado/",
-      "title": "ΕΛΑΣ – Χατζηγιαννάκης: Τα ολιγοπώλια στριμώχνουν τις μικρές εταιρίες, σχεδόν σε κάθε κλάδο",
-      "normalized_title": "ΕΛΑΣ – ΧΑΤΖΗΓΙΑΝΝΑΚΗΣ: ΤΑ ΟΛΙΓΟΠΩΛΙΑ ΣΤΡΙΜΩΧΝΟΥΝ ΤΙΣ ΜΙΚΡΕΣ ΕΤΑΙΡΙΕΣ, ΣΧΕΔΟΝ ΣΕ ΚΑΘΕ ΚΛΑΔΟ",
+      "url": "https://www.efsyn.gr/oikonomia/1457280/tameio-anakampsis-anthrakes-o-thisayros-ton-36-dis-eyro-epese-exo-to-ellada-2-0/",
+      "title": "Ταμείο Ανάκαμψης: «Ανθρακες ο θησαυρός» των 36 δισ. ευρώ – Επεσε έξω το Ellada 2.0",
+      "normalized_title": "ΤΑΜΕΙΟ ΑΝΑΚΑΜΨΗΣ: «ΑΝΘΡΑΚΕΣ Ο ΘΗΣΑΥΡΟΣ» ΤΩΝ 36 ΔΙΣ. ΕΥΡΩ – ΕΠΕΣΕ ΕΞΩ ΤΟ ELLADA 2.0",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1457523/elas-hatzigiannakis-ta-oligopolia-strimohnoyn-tis-mikres-etairies-shedon-se-kathe-klado/",
-        "https://www.efsyn.gr/politiki/1457529/kontra-konstantopoyloy-voyltepsi-kai-mas-psifisate-kai-me-heirokrotoysate-kaikame-kai-fysame-kai-to-giaoyrti/",
-        "https://www.efsyn.gr/athlitismos/1457533/o-mesi-anakoinose-tin-apohorisi-toy-apo-tin-ethniki-argentinis/"
+        "https://www.efsyn.gr/oikonomia/1457280/tameio-anakampsis-anthrakes-o-thisayros-ton-36-dis-eyro-epese-exo-to-ellada-2-0/",
+        "https://www.efsyn.gr/ellada/1457539/i-meiomeni-asfalistiki-kalypsi-karkinopathon-se-katanalotika-daneia-periorizetai-sta-5-hronia-meta-ti-therapeia/",
+        "https://www.efsyn.gr/kosmos/1457547/o-santseth-katigorise-israil-kai-rosia-gia-tin-metanasteytiki-krisi-sti-theoyta-entoni-i-antidrasi-toy-israil/"
       ],
-      "seen_at_utc": "2026-08-31T15:29:59.394222+00:00"
+      "seen_at_utc": "2026-08-31T15:51:22.789181+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/08/31/greece/allazei-to-skiniko-tou-kairou-proskairi-epideinosi-me-mpores-kai-kataigides-pou-tha-xtypisoun/",
-      "title": "Αλλάζει το σκηνικό του καιρού: Πρόσκαιρη επιδείνωση με μπόρες και καταιγίδες – Πού θα χτυπήσουν",
-      "normalized_title": "ΑΛΛΑΖΕΙ ΤΟ ΣΚΗΝΙΚΟ ΤΟΥ ΚΑΙΡΟΥ: ΠΡΟΣΚΑΙΡΗ ΕΠΙΔΕΙΝΩΣΗ ΜΕ ΜΠΟΡΕΣ ΚΑΙ ΚΑΤΑΙΓΙΔΕΣ – ΠΟΥ ΘΑ ΧΤΥΠΗΣΟΥΝ",
+      "url": "https://www.in.gr/2026/08/31/greece/fotia-stin-trapezitsa-konitsas-sikothikan-dyo-elikoptera/",
+      "title": "Φωτιά στην Τραπεζίτσα Κόνιτσας – Σηκώθηκαν δύο ελικόπτερα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΤΡΑΠΕΖΙΤΣΑ ΚΟΝΙΤΣΑΣ – ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/08/31/greece/allazei-to-skiniko-tou-kairou-proskairi-epideinosi-me-mpores-kai-kataigides-pou-tha-xtypisoun/",
-        "https://www.in.gr/2026/08/31/stories/poioi-dolofonisan-tin-ntaiana-o-tzefri-epstain-se-nea-theoria-synomosias-kai-to-stoixeioma/",
-        "https://www.in.gr/2026/08/31/sports/football/telos-epoxis-gia-tin-argentini-o-lionel-mesi-anakoinose-tin-aposyrsi-tou-apo-tin-ethniki/"
+        "https://www.in.gr/2026/08/31/greece/fotia-stin-trapezitsa-konitsas-sikothikan-dyo-elikoptera/",
+        "https://www.in.gr/2026/08/31/sports/football/panathinaikos-i-11ada-gia-to-ektos-edras-paixnidi-me-ton-levadeiako-pic/",
+        "https://www.in.gr/2026/08/31/sports/basketball/live-ellada-ispania-6/",
+        "https://www.in.gr/2026/08/31/world/apisteyto-symvan-i-anoixti-porta-tou-leoforeiou-pou-esose-motosikletisti-meta-apo-sfodri-sygkrousi/",
+        "https://www.in.gr/2026/08/31/greece/syros-sygklonizoun-oi-goneis-tis-42xronis-gnorizontan-thyma-kai-katigoroumenos-ti-katethesan-oi-proin-syzygoi-tous/",
+        "https://www.in.gr/2026/08/31/world/sok-stin-tailandi-tis-ksyrisan-to-kefali-gia-apliroto-logariasmo-1-800-dolarion-vinteo/"
       ],
-      "seen_at_utc": "2026-08-31T15:29:59.394174+00:00"
+      "seen_at_utc": "2026-08-31T15:51:22.789137+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T15:29:59.394327+00:00"
+  "updated_at_utc": "2026-08-31T15:51:22.789283+00:00"
 }
