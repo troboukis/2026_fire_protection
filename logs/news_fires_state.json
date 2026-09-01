@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564431173/chania-fotia-stin-periochi-moyzoyras-kinitopoiisi-tis-pyrosvestikis/",
-      "title": "Χανιά: Φωτιά στην περιοχή Μουζουράς – Κινητοποίηση της Πυροσβεστικής",
-      "normalized_title": "ΧΑΝΙΑ: ΦΩΤΙΑ ΣΤΗΝ ΠΕΡΙΟΧΗ ΜΟΥΖΟΥΡΑΣ – ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/society/564431215/opekepe-enochi-kai-ton-22-katigoroymenon-zitise-o-eyropaios-eisaggeleas/",
+      "title": "ΟΠΕΚΕΠΕ: Ενοχή και των 22 κατηγορουμένων ζήτησε ο Ευρωπαίος Εισαγγελέας",
+      "normalized_title": "ΟΠΕΚΕΠΕ: ΕΝΟΧΗ ΚΑΙ ΤΩΝ 22 ΚΑΤΗΓΟΡΟΥΜΕΝΩΝ ΖΗΤΗΣΕ Ο ΕΥΡΩΠΑΙΟΣ ΕΙΣΑΓΓΕΛΕΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564431173/chania-fotia-stin-periochi-moyzoyras-kinitopoiisi-tis-pyrosvestikis/",
-        "https://www.kathimerini.gr/world/564431158/ispania-perissoteroi-apo-5-000-thanatoi-apo-tin-1i-ioynioy-apodidontai-sti-zesti/"
+        "https://www.kathimerini.gr/society/564431215/opekepe-enochi-kai-ton-22-katigoroymenon-zitise-o-eyropaios-eisaggeleas/",
+        "https://www.kathimerini.gr/opinion/564430108/eykairia-9/",
+        "https://www.kathimerini.gr/opinion/564430510/giati-einai-provlima-to-dimografiko/",
+        "https://www.kathimerini.gr/opinion/564430105/to-mayrisma-os-tekmirio-eymareias/",
+        "https://www.kathimerini.gr/opinion/564430507/antonis-samaras-telos/",
+        "https://www.kathimerini.gr/world/564431197/apo-ti-sfentona-ston-pyraylo-to-entyposiako-vinteo-tis-rafael-gia-tin-aspida-toy-achillea/",
+        "https://www.kathimerini.gr/society/564431167/thessaloniki-sto-aytoforo-24chronos-poy-ekane-tetake-kai-ochtarakia-sti-leoforo-m-alexandroy/"
       ],
-      "seen_at_utc": "2026-09-01T09:51:37.357592+00:00"
+      "seen_at_utc": "2026-09-01T10:17:34.971482+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,43 +1265,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872287/ekpa-190-hronia-istorias-kai-ena-neo-stoihima-diethnous-protagonistikou-rolou/?utm_source=rss",
-      "title": "ΕΚΠΑ: 190 χρόνια ιστορίας και ένα νέο στοίχημα διεθνούς πρωταγωνιστικού ρόλου",
-      "normalized_title": "ΕΚΠΑ: 190 ΧΡΟΝΙΑ ΙΣΤΟΡΙΑΣ ΚΑΙ ΕΝΑ ΝΕΟ ΣΤΟΙΧΗΜΑ ΔΙΕΘΝΟΥΣ ΠΡΩΤΑΓΩΝΙΣΤΙΚΟΥ ΡΟΛΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1872296/fotia-se-leoforeio-stin-athinon-souniou-katastrafike-olosheros-to-ohima-deite-video/?utm_source=rss",
+      "title": "Φωτιά σε λεωφορείο στην Αθηνών - Σουνίου: Καταστράφηκε ολοσχερώς το όχημα, δείτε βίντεο",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΛΕΩΦΟΡΕΙΟ ΣΤΗΝ ΑΘΗΝΩΝ - ΣΟΥΝΙΟΥ: ΚΑΤΑΣΤΡΑΦΗΚΕ ΟΛΟΣΧΕΡΩΣ ΤΟ ΟΧΗΜΑ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872287/ekpa-190-hronia-istorias-kai-ena-neo-stoihima-diethnous-protagonistikou-rolou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872286/sto-autoforo-o-24hronos-pou-ekane-drift-sto-kedro-tis-thessalonikis-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872282/opekepe-enohi-gia-22-katigoroumenous-se-megali-upothesi-paranomon-epidotiseon-stin-kriti-proteine-o-eisaggeleas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872280/pio-suhna-dromologia-kai-mikroteri-anamoni-sto-tram-apo-7-septemvriou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872296/fotia-se-leoforeio-stin-athinon-souniou-katastrafike-olosheros-to-ohima-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872295/enishuthikan-oi-dunameis-sti-megali-fotia-stin-trapezitsa-stin-konitsa-epiheiroun-7-elikoptera/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872294/to-suginitiko-euharisto-tou-patera-tis-12hronis-pou-diagnostike-me-ogo-eno-ekane-diakopes-stin-ellada/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-01T09:51:37.357716+00:00"
+      "seen_at_utc": "2026-09-01T10:17:34.971661+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1457979/o-mel-gkimpson-zitise-syggnomi-gia-to-vinteo-poy-ton-deihnei-na-koroideyei-dierminea-aperiskepti-anoisia/",
-      "title": "Ο Μελ Γκίμπσον ζήτησε συγγνώμη για το βίντεο που τον δείχνει να κοροϊδεύει διερμηνέα – «Απερίσκεπτη ανοησία»",
-      "normalized_title": "Ο ΜΕΛ ΓΚΙΜΠΣΟΝ ΖΗΤΗΣΕ ΣΥΓΓΝΩΜΗ ΓΙΑ ΤΟ ΒΙΝΤΕΟ ΠΟΥ ΤΟΝ ΔΕΙΧΝΕΙ ΝΑ ΚΟΡΟΙΔΕΥΕΙ ΔΙΕΡΜΗΝΕΑ – «ΑΠΕΡΙΣΚΕΠΤΗ ΑΝΟΗΣΙΑ»",
+      "url": "https://www.efsyn.gr/politiki/1458030/kostas-arvanitis-i-aristera-einai-edo-kai-einai-aparaititi/",
+      "title": "Κώστας Αρβανίτης: «Η Αριστερά είναι εδώ. Και είναι απαραίτητη»",
+      "normalized_title": "ΚΩΣΤΑΣ ΑΡΒΑΝΙΤΗΣ: «Η ΑΡΙΣΤΕΡΑ ΕΙΝΑΙ ΕΔΩ. ΚΑΙ ΕΙΝΑΙ ΑΠΑΡΑΙΤΗΤΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1457979/o-mel-gkimpson-zitise-syggnomi-gia-to-vinteo-poy-ton-deihnei-na-koroideyei-dierminea-aperiskepti-anoisia/",
-        "https://www.efsyn.gr/stiles/1457986/deth-propaganda-stin-ypo-dialysi-v-ellada/",
-        "https://www.efsyn.gr/tehnes/1457912/koinovoyleytiki-erotisi-tis-kyriakis-malama-gia-ta-politiria-ton-moyseion/",
-        "https://www.efsyn.gr/ellada/1457977/synigoros-germanidas-gia-to-nekro-vrefos-stin-kypseli-tragiko-peristatiko-leei-oti-itan-diko-tis-to-paidi/"
+        "https://www.efsyn.gr/politiki/1458030/kostas-arvanitis-i-aristera-einai-edo-kai-einai-aparaititi/",
+        "https://www.efsyn.gr/ellada/1458025/fotia-se-sholiko-leoforeio-sto-ribas-katastrafike-olosheros-to-ohima-sooi-odigos-kai-synodigos-vinteo/",
+        "https://www.efsyn.gr/politiki/1457946/analysi-al-jazeera-gia-tin-aspida-toy-ahillea-giati-ypegrafi-tora-kai-ti-simainei-gia-ellada-israil-kai-toyrkia/",
+        "https://www.efsyn.gr/kosmos/1458002/pethane-o-entoyar-mpalantyr-proin-prothypoyrgos-tis-gallias-se-ilikia-97-eton/",
+        "https://www.efsyn.gr/politiki/1458000/skordas-gia-samara-mporei-na-igithei-kyvernisis-synergasias-den-exairo-kamia-politiki-dynami/",
+        "https://www.efsyn.gr/politiki/1457973/o-kathigitis-gerapetritis-adeiazei-ton-kyriako-mitsotaki-gia-to-galazio-mploko-stin-akrita/"
       ],
-      "seen_at_utc": "2026-09-01T09:51:37.357688+00:00"
+      "seen_at_utc": "2026-09-01T10:17:34.971602+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/greece/ypothesi-opekepe-katapeltis-o-eisaggeleas-gia-22-katigoroumenous-se-ypothesi-paranomon-epidotiseon/",
-      "title": "Υπόθεση ΟΠΕΚΕΠΕ: Καταπέλτης ο εισαγγελέας για 22 κατηγορούμενους σε υπόθεση παράνομων επιδοτήσεων",
-      "normalized_title": "ΥΠΟΘΕΣΗ ΟΠΕΚΕΠΕ: ΚΑΤΑΠΕΛΤΗΣ Ο ΕΙΣΑΓΓΕΛΕΑΣ ΓΙΑ 22 ΚΑΤΗΓΟΡΟΥΜΕΝΟΥΣ ΣΕ ΥΠΟΘΕΣΗ ΠΑΡΑΝΟΜΩΝ ΕΠΙΔΟΤΗΣΕΩΝ",
+      "url": "https://www.in.gr/2026/09/01/politics/aftodioikisi/ksekina-meta-tis-15-septemvriou-i-anaplasi-tou-paraliakou-metopou-tis-limnis-eyvoias/",
+      "title": "Ξεκινά μετά τις 15 Σεπτεμβρίου η ανάπλαση του παραλιακού μετώπου της Λίμνης Ευβοίας",
+      "normalized_title": "ΞΕΚΙΝΑ ΜΕΤΑ ΤΙΣ 15 ΣΕΠΤΕΜΒΡΙΟΥ Η ΑΝΑΠΛΑΣΗ ΤΟΥ ΠΑΡΑΛΙΑΚΟΥ ΜΕΤΩΠΟΥ ΤΗΣ ΛΙΜΝΗΣ ΕΥΒΟΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/greece/ypothesi-opekepe-katapeltis-o-eisaggeleas-gia-22-katigoroumenous-se-ypothesi-paranomon-epidotiseon/",
-        "https://www.in.gr/2026/09/01/go-fun/fizz/mel-gkimpson-zita-syggnomi-gia-tin-aythormiti-vlakeia-tou-xleyase-dierminea-tis-noimatikis-glossas/",
-        "https://www.in.gr/2026/09/01/greece/fotia-ston-mouzoura-xanion/",
-        "https://www.in.gr/2026/09/01/sports/basketball/episimo-ektos-eurocup-i-monako-poia-omada-tha-parei-ti-thesi-tis-pic/",
-        "https://www.in.gr/2026/09/01/world/rosikes-mystikes-ypiresies-piso-apo-ta-drones-sti-leipsia-vlepei-to-verolino-entos-tis-imeras-oi-anakoinoseis/",
-        "https://www.in.gr/2026/09/01/plus/kid/sxoliki-tsanta-ti-prepei-na-perilamvanei-o-symmaxos-ton-paidion-ektos-apo-vivlia-kai-grafiki-yli/"
+        "https://www.in.gr/2026/09/01/politics/aftodioikisi/ksekina-meta-tis-15-septemvriou-i-anaplasi-tou-paraliakou-metopou-tis-limnis-eyvoias/",
+        "https://www.in.gr/2026/09/01/world/gaza-mparaz-israilinon-epitheseon-entoles-ekkenosis-se-nosokomeio-anafores-gia-thymata/",
+        "https://www.in.gr/2026/09/01/greece/pyrkagia-se-sxoliko-leoforeio-stin-athinon-souniou/",
+        "https://www.in.gr/2026/09/01/economy/oikonomikes-eidiseis/eurostat-alma-sto-37-ekane-o-plithorismos-ton-aygousto-stin-ellada/"
       ],
-      "seen_at_utc": "2026-09-01T09:51:37.357646+00:00"
+      "seen_at_utc": "2026-09-01T10:17:34.971555+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T09:51:37.357789+00:00"
+  "updated_at_utc": "2026-09-01T10:17:34.971790+00:00"
 }
