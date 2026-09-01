@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/columns/564429202/amoivaia-antipatheia/",
-      "title": "Αμοιβαία αντιπάθεια",
-      "normalized_title": "ΑΜΟΙΒΑΙΑ ΑΝΤΙΠΑΘΕΙΑ",
+      "url": "https://www.kathimerini.gr/society/564430240/se-thesi-amynas-gia-ti-gastrenteritida/",
+      "title": "Σε θέση άμυνας για τη γαστρεντερίτιδα",
+      "normalized_title": "ΣΕ ΘΕΣΗ ΑΜΥΝΑΣ ΓΙΑ ΤΗ ΓΑΣΤΡΕΝΤΕΡΙΤΙΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/columns/564429202/amoivaia-antipatheia/",
-        "https://www.kathimerini.gr/economy/564430633/i-toyrkia-ginetai-akrivi-gia-toys-toyristes/",
-        "https://www.kathimerini.gr/athletics/564431827/miltos-tentogloy-to-parkoyr-to-league-of-legends-kai-i-poliorkia-toy-pagkosmioy-rekor/",
-        "https://www.kathimerini.gr/world/564431830/nees-amerikanikes-epitheseis-kata-stochon-sto-iran/"
+        "https://www.kathimerini.gr/society/564430240/se-thesi-amynas-gia-ti-gastrenteritida/"
       ],
-      "seen_at_utc": "2026-09-01T17:17:06.100302+00:00"
+      "seen_at_utc": "2026-09-01T17:30:02.974224+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,28 +1269,26 @@
       "seen_at_utc": "2026-09-01T17:17:06.100422+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1458283/proti-antidrasi-moshas-tha-apantisoyme-stis-antirosikes-energeies-tis-germanias/",
-      "title": "Πρώτη αντίδραση Μόσχας: Θα απαντήσουμε στις «αντιρωσικές ενέργειες» της Γερμανίας",
-      "normalized_title": "ΠΡΩΤΗ ΑΝΤΙΔΡΑΣΗ ΜΟΣΧΑΣ: ΘΑ ΑΠΑΝΤΗΣΟΥΜΕ ΣΤΙΣ «ΑΝΤΙΡΩΣΙΚΕΣ ΕΝΕΡΓΕΙΕΣ» ΤΗΣ ΓΕΡΜΑΝΙΑΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1458288/syrriknonetai-i-volkswagen-sto-trapezi-to-kleisimo-tessaron-ergostasion-sti-germania/",
+      "title": "Συρρικνώνεται η Volkswagen: Στο τραπέζι το κλείσιμο τεσσάρων εργοστασίων στη Γερμανία",
+      "normalized_title": "ΣΥΡΡΙΚΝΩΝΕΤΑΙ Η VOLKSWAGEN: ΣΤΟ ΤΡΑΠΕΖΙ ΤΟ ΚΛΕΙΣΙΜΟ ΤΕΣΣΑΡΩΝ ΕΡΓΟΣΤΑΣΙΩΝ ΣΤΗ ΓΕΡΜΑΝΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1458283/proti-antidrasi-moshas-tha-apantisoyme-stis-antirosikes-energeies-tis-germanias/",
-        "https://www.efsyn.gr/kosmos/1458277/oi-ipa-htypoyn-stohoys-sto-iran-akoystikan-ekrixeis-apo-to-nisi-kesm-kai-sta-stena-toy-ormoyz/"
+        "https://www.efsyn.gr/oikonomia/1458288/syrriknonetai-i-volkswagen-sto-trapezi-to-kleisimo-tessaron-ergostasion-sti-germania/",
+        "https://www.efsyn.gr/kosmos/1458278/nea-yorki-i-antiproedros-tis-bank-of-america-einai-ena-apo-ta-2-thymata-tis-epithesis-me-mahairi/",
+        "https://www.efsyn.gr/athlitismos/1458287/kypello-volos-kai-kalamata-moirastikan-toys-vathmoys-sto-panthessaliko-vinteo/"
       ],
-      "seen_at_utc": "2026-09-01T17:17:06.100376+00:00"
+      "seen_at_utc": "2026-09-01T17:30:02.974315+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/sports/football/volos-kalamata-2-2-eklepsan-ton-vathmo-sto-finale-oi-thessaloi/",
-      "title": "Βόλος – Καλαμάτα 2-2: «Έκλεψαν» τον βαθμό στο φινάλε οι Θεσσαλοί",
-      "normalized_title": "ΒΟΛΟΣ – ΚΑΛΑΜΑΤΑ 2-2: «ΕΚΛΕΨΑΝ» ΤΟΝ ΒΑΘΜΟ ΣΤΟ ΦΙΝΑΛΕ ΟΙ ΘΕΣΣΑΛΟΙ",
+      "url": "https://www.in.gr/2026/09/01/world/ipa-xtypisan-iranikous-stoxous-konta-sta-stena-tou-ormouz/",
+      "title": "ΗΠΑ: Χτύπησαν ιρανικούς στόχους κοντά στα Στενά του Ορμούζ",
+      "normalized_title": "ΗΠΑ: ΧΤΥΠΗΣΑΝ ΙΡΑΝΙΚΟΥΣ ΣΤΟΧΟΥΣ ΚΟΝΤΑ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/sports/football/volos-kalamata-2-2-eklepsan-ton-vathmo-sto-finale-oi-thessaloi/",
-        "https://www.in.gr/2026/09/01/economy/diethnis-oikonomia/capital-tankers-isxyro-b%ce%84-trimino-me-kathara-kerdi-ypsous-929-ekat-dolarion-energos-stolos-15-deksamenoploion/",
-        "https://www.in.gr/2026/09/01/politics/epikairotita/elas-i-politeia-ofeilei-na-prostateyei-ta-paidia-prin-ginoun-eidisi/",
-        "https://www.in.gr/2026/09/01/world/mapquest-i-efarmogi-pou-apsifise-to-diatagma-tramp-gia-ti-limni-ontario-ektokseytike-stin-proti-thesi-tou-app-store/",
-        "https://www.in.gr/2026/09/01/world/ipa-i-diki-pou-dixazei-tous-enorkous-den-mporoun-na-apofasisoun-gia-tin-lintsei-klansi-pou-straggalise-ta-paidia-tis/"
+        "https://www.in.gr/2026/09/01/world/ipa-xtypisan-iranikous-stoxous-konta-sta-stena-tou-ormouz/",
+        "https://www.in.gr/2026/09/01/sports/on-field/oi-arithmoi-den-lene-panta-tin-alitheia/"
       ],
-      "seen_at_utc": "2026-09-01T17:17:06.100336+00:00"
+      "seen_at_utc": "2026-09-01T17:30:02.974268+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T17:17:06.100494+00:00"
+  "updated_at_utc": "2026-09-01T17:30:02.974389+00:00"
 }
