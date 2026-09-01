@@ -1,17 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564432109/anaplirotes-ekpaideytikoi-anakoinothikan-oi-proslipseis-analytikoi-pinakes/",
-      "title": "Αναπληρωτές εκπαιδευτικοί: Ανακοινώθηκαν οι προσλήψεις – Αναλυτικοί πίνακες",
-      "normalized_title": "ΑΝΑΠΛΗΡΩΤΕΣ ΕΚΠΑΙΔΕΥΤΙΚΟΙ: ΑΝΑΚΟΙΝΩΘΗΚΑΝ ΟΙ ΠΡΟΣΛΗΨΕΙΣ – ΑΝΑΛΥΤΙΚΟΙ ΠΙΝΑΚΕΣ",
+      "url": "https://www.kathimerini.gr/world/564430282/strofi-ton-foititon-makria-apo-vretania-kai-ipa/",
+      "title": "«Στροφή» των φοιτητών μακριά από Βρετανία και ΗΠΑ",
+      "normalized_title": "«ΣΤΡΟΦΗ» ΤΩΝ ΦΟΙΤΗΤΩΝ ΜΑΚΡΙΑ ΑΠΟ ΒΡΕΤΑΝΙΑ ΚΑΙ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564432109/anaplirotes-ekpaideytikoi-anakoinothikan-oi-proslipseis-analytikoi-pinakes/",
-        "https://www.kathimerini.gr/economy/564430603/oloklironetai-sto-epomeno-4mino-to-tameio-anakampsis/",
-        "https://www.kathimerini.gr/world/564432118/plimmyres-sto-nepal-niotho-oti-i-zoi-echase-to-noima-tis-to-na-epivioneis-einai-martyrio/",
-        "https://www.kathimerini.gr/athletics/basketball/564432142/ston-ari-o-thanasis-antetokoynmpo/",
-        "https://www.kathimerini.gr/politics/564430183/stratigiki-ypsilon-tonon-sta-ellinotoyrkika-apo-tin-agkyra/"
+        "https://www.kathimerini.gr/world/564430282/strofi-ton-foititon-makria-apo-vretania-kai-ipa/",
+        "https://www.kathimerini.gr/culture/564430390/i-politiki-epistrefei-ta-stoyntio-feygoyn/",
+        "https://www.kathimerini.gr/world/564430285/o-zaploytos-epicheirimatias-tilman-fertita-dichazei-ti-romi/",
+        "https://www.kathimerini.gr/politics/564432145/p-marinakis-thlivomai-gia-ti-dilosi-samara-zisame-ton-tsipra-na-kanei-egkainia-me-moysamades/",
+        "https://www.kathimerini.gr/economy/local/564430573/oi-ofeiletes-agnooyn-ti-rythmisi-72-doseon/",
+        "https://www.kathimerini.gr/society/564432157/thriler-stin-kypseli-ta-paidia-nosileyontan-kai-apomakrynontas-kryfa-apo-to-nosokomeio/"
       ],
-      "seen_at_utc": "2026-09-01T19:30:01.769493+00:00"
+      "seen_at_utc": "2026-09-01T20:17:03.364168+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,39 +1264,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872568/anakoinothikan-oi-proslipseis-anapliroton-ekpaideutikon-deite-tous-pinakes/?utm_source=rss",
-      "title": "Ανακοινώθηκαν οι προσλήψεις αναπληρωτών εκπαιδευτικών, δείτε τους πίνακες",
-      "normalized_title": "ΑΝΑΚΟΙΝΩΘΗΚΑΝ ΟΙ ΠΡΟΣΛΗΨΕΙΣ ΑΝΑΠΛΗΡΩΤΩΝ ΕΚΠΑΙΔΕΥΤΙΚΩΝ, ΔΕΙΤΕ ΤΟΥΣ ΠΙΝΑΚΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1872582/thessaloniki-purovolisan-30hrono-ston-dendropotamo-anazitoudai-oi-drastes/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Πυροβόλησαν 30χρονο στον Δενδροπόταμο, αναζητούνται οι δράστες",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΥΡΟΒΟΛΗΣΑΝ 30ΧΡΟΝΟ ΣΤΟΝ ΔΕΝΔΡΟΠΟΤΑΜΟ, ΑΝΑΖΗΤΟΥΝΤΑΙ ΟΙ ΔΡΑΣΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872568/anakoinothikan-oi-proslipseis-anapliroton-ekpaideutikon-deite-tous-pinakes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872558/agonia-gia-ton-67hrono-windsurfer-pou-agnoeitai-sto-irakleio-tis-kritis-vrethike-i-sanida-tou-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872582/thessaloniki-purovolisan-30hrono-ston-dendropotamo-anazitoudai-oi-drastes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-01T18:51:11.921380+00:00"
+      "seen_at_utc": "2026-09-01T20:17:03.364305+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458347/thessaloniki-dyo-atoma-pyrovolisan-30hrono-metaferthike-traymatismenos-sto-nosokomeio/",
-      "title": "Θεσσαλονίκη: Δύο άτομα πυροβόλησαν 30χρονο – Μεταφέρθηκε τραυματισμένος στο νοσοκομείο",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΥΟ ΑΤΟΜΑ ΠΥΡΟΒΟΛΗΣΑΝ 30ΧΡΟΝΟ – ΜΕΤΑΦΕΡΘΗΚΕ ΤΡΑΥΜΑΤΙΣΜΕΝΟΣ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ",
+      "url": "https://www.efsyn.gr/kosmos/1458350/iran-me-drones-kai-pyrayloys-apanta-sta-amerikanika-htypimata-sto-epikentro-panta-to-ormoyz/",
+      "title": "Ιράν: Με drones και πυραύλους απαντά στα αμερικανικά χτυπήματα – Στο επίκεντρο πάντα το Ορμούζ",
+      "normalized_title": "ΙΡΑΝ: ΜΕ DRONES ΚΑΙ ΠΥΡΑΥΛΟΥΣ ΑΠΑΝΤΑ ΣΤΑ ΑΜΕΡΙΚΑΝΙΚΑ ΧΤΥΠΗΜΑΤΑ – ΣΤΟ ΕΠΙΚΕΝΤΡΟ ΠΑΝΤΑ ΤΟ ΟΡΜΟΥΖ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458347/thessaloniki-dyo-atoma-pyrovolisan-30hrono-metaferthike-traymatismenos-sto-nosokomeio/",
-        "https://www.efsyn.gr/oikonomia/1458339/opeka-anoixe-i-platforma-gia-tin-enishysi-se-katoikoys-oreinon-kai-meionektikon-periohon/",
-        "https://www.efsyn.gr/politiki/1458334/i-elas-apanta-ston-skertso-gia-osa-eipe-stin-ef-syn-ti-hreiazontai-oi-mikres-epiheiriseis-kai-ti-den-ekane-i-kyvernisi-gia-aytes/"
+        "https://www.efsyn.gr/kosmos/1458350/iran-me-drones-kai-pyrayloys-apanta-sta-amerikanika-htypimata-sto-epikentro-panta-to-ormoyz/",
+        "https://www.efsyn.gr/ellada/1458349/thessaloniki-fylakisi-6-minon-se-andra-gia-epideixi-ton-gennitikon-toy-organon-se-psyhologo-mesa-sto-grafeio-tis/"
       ],
-      "seen_at_utc": "2026-09-01T19:51:24.251543+00:00"
+      "seen_at_utc": "2026-09-01T20:17:03.364272+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/sports/on-field/to-espn-apotheonei-ton-pouerta/",
-      "title": "Το ESPN αποθεώνει τον Πουέρτα",
-      "normalized_title": "ΤΟ ESPN ΑΠΟΘΕΩΝΕΙ ΤΟΝ ΠΟΥΕΡΤΑ",
+      "url": "https://www.in.gr/2026/09/01/economy/oikonomikes-eidiseis/fysiko-aerio-ektokseysi-tis-timis-sto-ypsilotero-epipedo-ton-teleytaion-35-eton/",
+      "title": "Εκτόξευση της τιμής του φυσικού αερίου - Στο υψηλότερο επίπεδο των τελευταίων 3,5 ετών",
+      "normalized_title": "ΕΚΤΟΞΕΥΣΗ ΤΗΣ ΤΙΜΗΣ ΤΟΥ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ - ΣΤΟ ΥΨΗΛΟΤΕΡΟ ΕΠΙΠΕΔΟ ΤΩΝ ΤΕΛΕΥΤΑΙΩΝ 3,5 ΕΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/sports/on-field/to-espn-apotheonei-ton-pouerta/",
-        "https://www.in.gr/2026/09/01/economy/oikonomikes-eidiseis/souper-market-prin-kai-meta-tin-ethelontiki-meiosi-timon-stagona-ston-okeano-tis-akriveias/",
-        "https://www.in.gr/2026/09/01/greece/aimatiro-epeisodio-me-pyrovolismous-sti-thessaloniki-enas-traymatias/",
-        "https://www.in.gr/2026/09/01/life/i-lytrosi-tou-xanimpal-o-ser-antoni-xopkins-stin-koryfi-ton-tsarts-klasikis-mousikis-proti-agapi/",
-        "https://www.in.gr/2026/09/01/sports/football/aytos-einai-o-antikatastatis-tou-konstantelia-sti-ntortmount-vid-pic/"
+        "https://www.in.gr/2026/09/01/economy/oikonomikes-eidiseis/fysiko-aerio-ektokseysi-tis-timis-sto-ypsilotero-epipedo-ton-teleytaion-35-eton/",
+        "https://www.in.gr/2026/09/01/politics/politiki-grammateia/elas-oi-mikres-epixeiriseis-xreiazontai-reystotita-kai-prostasia-apo-ta-oligopolia/",
+        "https://www.in.gr/2026/09/01/world/pros-anafleksi-i-mesi-anatoli-iranika-pligmata-se-amerikanikous-stoxous-meta-tis-epitheseis-ton-ipa/"
       ],
-      "seen_at_utc": "2026-09-01T19:51:24.251490+00:00"
+      "seen_at_utc": "2026-09-01T20:17:03.364222+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T19:51:24.251622+00:00"
+  "updated_at_utc": "2026-09-01T20:17:03.364379+00:00"
 }
