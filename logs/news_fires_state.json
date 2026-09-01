@@ -1,20 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564431479/eopyy-ti-apanta-gia-ton-prosdiorismo-fyloy-stin-platforma-fyk-kat-oikon/",
-      "title": "ΕΟΠΥΥ: Τι απαντά για τον προσδιορισμό φύλου στην πλατφόρμα «ΦΥΚ κατ’ οίκον»",
-      "normalized_title": "ΕΟΠΥΥ: ΤΙ ΑΠΑΝΤΑ ΓΙΑ ΤΟΝ ΠΡΟΣΔΙΟΡΙΣΜΟ ΦΥΛΟΥ ΣΤΗΝ ΠΛΑΤΦΟΡΜΑ «ΦΥΚ ΚΑΤ’ ΟΙΚΟΝ»",
+      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564430153/polina-sapoyna-ellis-proskynima-kai-empneysi-apo-tin-ierotita-tis-kritis/",
+      "title": "Πολίνα Σαπουνά Ελλις. Προσκύνημα και έμπνευση από την ιερότητα της Κρήτης",
+      "normalized_title": "ΠΟΛΙΝΑ ΣΑΠΟΥΝΑ ΕΛΛΙΣ. ΠΡΟΣΚΥΝΗΜΑ ΚΑΙ ΕΜΠΝΕΥΣΗ ΑΠΟ ΤΗΝ ΙΕΡΟΤΗΤΑ ΤΗΣ ΚΡΗΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564431479/eopyy-ti-apanta-gia-ton-prosdiorismo-fyloy-stin-platforma-fyk-kat-oikon/",
-        "https://www.kathimerini.gr/culture/564431503/thessaloniki-to-epivlitiko-alkazar-apokalyfthike-kai-etoimazetai-na-anoixei-tis-pyles-toy/",
-        "https://www.kathimerini.gr/world/564431413/rekor-zestis-stin-india-o-thermoteros-aygoystos-apo-to-1901/",
-        "https://www.kathimerini.gr/opinion/readers/564430330/i-steisi-toy-toronto-i-stasia-toy-22/",
-        "https://www.kathimerini.gr/society/564431440/ioannina-machi-gia-ti-zoi-tis-dinei-24chroni-synelifthi-o-syntrofos-tis/",
-        "https://www.kathimerini.gr/opinion/readers/564430318/ta-grevena-o-e65-kai-o-ymnos-sti-fysi/",
-        "https://www.kathimerini.gr/opinion/readers/564430327/foititikes-esties-diamoni-kai-chrisi/",
-        "https://www.kathimerini.gr/opinion/readers/564430321/oi-odigoi-zoon-o-kok-oi-poines/"
+        "https://www.kathimerini.gr/culture/athinaika-plus/564430153/polina-sapoyna-ellis-proskynima-kai-empneysi-apo-tin-ierotita-tis-kritis/",
+        "https://www.kathimerini.gr/world/564431458/mantsester-sto-edolio-andras-poy-katigoreitai-oti-viaze-ti-syzygo-toy-epi-20-chronia/",
+        "https://www.kathimerini.gr/athletics/football/564431512/ithan-noyaneri-o-19chronos-poy-tha-prepei-na-ginei-konstantelias/"
       ],
-      "seen_at_utc": "2026-09-01T13:17:11.219161+00:00"
+      "seen_at_utc": "2026-09-01T13:51:04.882659+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1275,25 +1270,27 @@
       "seen_at_utc": "2026-09-01T13:30:01.700572+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1458140/to-teaser-tis-elas-gia-tin-omilia-toy-alexi-tsipra-sti-thessaloniki-vinteo/",
-      "title": "Το… teaser της ΕΛΑΣ για την ομιλία του Αλέξη Τσίπρα στη Θεσσαλονίκη [βίντεο]",
-      "normalized_title": "ΤΟ… TEASER ΤΗΣ ΕΛΑΣ ΓΙΑ ΤΗΝ ΟΜΙΛΙΑ ΤΟΥ ΑΛΕΞΗ ΤΣΙΠΡΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-01-09-2026/",
+      "title": "Σκίτσο της Εφ.Συν. [Κ.Γρηγοριάδης 01.09.2026]",
+      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Κ.ΓΡΗΓΟΡΙΑΔΗΣ 01.09.2026]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1458140/to-teaser-tis-elas-gia-tin-omilia-toy-alexi-tsipra-sti-thessaloniki-vinteo/",
-        "https://www.efsyn.gr/ellada/1458141/synagermos-stin-kriti-agnoeitai-andras-poy-ekane-istiosanida/"
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-01-09-2026/",
+        "https://www.efsyn.gr/tehnes/1458144/marianne/"
       ],
-      "seen_at_utc": "2026-09-01T13:30:01.700544+00:00"
+      "seen_at_utc": "2026-09-01T13:51:04.882724+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/sports/othersports/i-myrodia-kannavis-pou-enoxlei-tous-tenistes-sto-us-open/",
-      "title": "Η μυρωδιά κάνναβης που ενοχλεί τους τενίστες στο US Open",
-      "normalized_title": "Η ΜΥΡΩΔΙΑ ΚΑΝΝΑΒΗΣ ΠΟΥ ΕΝΟΧΛΕΙ ΤΟΥΣ ΤΕΝΙΣΤΕΣ ΣΤΟ US OPEN",
+      "url": "https://www.in.gr/2026/09/01/sports/othersports/olympiakos-stin-ellada-o-elnter-spens-pic/",
+      "title": "Ολυμπιακός: Στην Ελλάδα ο Έλντερ Σπενς (pic)",
+      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: ΣΤΗΝ ΕΛΛΑΔΑ Ο ΕΛΝΤΕΡ ΣΠΕΝΣ (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/sports/othersports/i-myrodia-kannavis-pou-enoxlei-tous-tenistes-sto-us-open/",
-        "https://www.in.gr/2026/09/01/in-science/episthmes/pos-o-ouranos-stin-kina-vaftike-roz-ligo-prin-apo-tis-kataigides/"
+        "https://www.in.gr/2026/09/01/sports/othersports/olympiakos-stin-ellada-o-elnter-spens-pic/",
+        "https://www.in.gr/2026/09/01/politics/aftodioikisi/dimos-kaisarianis-to-polypatho-sxoleio-roza-imvrioti-epelekse-o-mitsotakis-na-eyxaristisei-tous-trapezites/",
+        "https://www.in.gr/2026/09/01/politics/me-anti-navtex-apanta-i-ellada-stin-tourkia-monos-armodios-gia-tin-perioxi-o-stathmos-tou-irakleiou/",
+        "https://www.in.gr/2026/09/01/life/culture-live/burning-man-i-skoteini-pleyra-tis-outopias-stin-erimo/"
       ],
-      "seen_at_utc": "2026-09-01T13:30:01.700508+00:00"
+      "seen_at_utc": "2026-09-01T13:51:04.882700+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T13:30:01.700646+00:00"
+  "updated_at_utc": "2026-09-01T13:51:04.882799+00:00"
 }
