@@ -1,21 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564430816/paraitithike-o-ypoyrgos-stratoy-ton-ipa-en-meso-entaseon-me-ton-chegkseth/",
-      "title": "Παραιτήθηκε ο υπουργός Στρατού των ΗΠΑ εν μέσω εντάσεων με τον Χέγκσεθ",
-      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ Ο ΥΠΟΥΡΓΟΣ ΣΤΡΑΤΟΥ ΤΩΝ ΗΠΑ ΕΝ ΜΕΣΩ ΕΝΤΑΣΕΩΝ ΜΕ ΤΟΝ ΧΕΓΚΣΕΘ",
+      "url": "https://www.kathimerini.gr/society/564427132/enas-armos-tis-polis-me-tin-istoria-tis/",
+      "title": "Ενας αρμός της πόλης με την ιστορία της",
+      "normalized_title": "ΕΝΑΣ ΑΡΜΟΣ ΤΗΣ ΠΟΛΗΣ ΜΕ ΤΗΝ ΙΣΤΟΡΙΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564430816/paraitithike-o-ypoyrgos-stratoy-ton-ipa-en-meso-entaseon-me-ton-chegkseth/",
-        "https://www.kathimerini.gr/opinion/564430312/ta-en-ypnosei-data-centers/",
-        "https://www.kathimerini.gr/opinion/564430345/to-roloi-tis-apokalypsis-kai-i-1i-septemvrioy/",
-        "https://www.kathimerini.gr/opinion/564430336/oi-laikoi-stratoi-toy-1942/",
-        "https://www.kathimerini.gr/opinion/564430333/kalos-irthe-an-kai-argise/",
-        "https://www.kathimerini.gr/opinion/564430348/poreia-pros-to-agnosto-3/",
-        "https://www.kathimerini.gr/opinion/564430351/kineziki-arithmitiki/",
-        "https://www.kathimerini.gr/world/564430759/kievo-vrochi-pyraylon-kai-drones-me-toylachiston-ennea-nekroys/",
-        "https://www.kathimerini.gr/politics/564430207/entos-kai-ektos-stenoteres-epafes-elladas-livanoy/"
+        "https://www.kathimerini.gr/society/564427132/enas-armos-tis-polis-me-tin-istoria-tis/",
+        "https://www.kathimerini.gr/society/564430822/rethymno-nekros-76chronos-toyristas-anasyrthike-choris-tis-aisthiseis-toy-apo-thalassa-periochi/",
+        "https://www.kathimerini.gr/world/564430813/kolomvia-20-antartes-nekroi-se-kyvernitikoys-vomvardismoys/",
+        "https://www.kathimerini.gr/world/564430756/ipa-enochos-gia-ti-dolofonia-toy-toypak-30-chronia-meta/"
       ],
-      "seen_at_utc": "2026-09-01T05:32:16.538250+00:00"
+      "seen_at_utc": "2026-09-01T05:51:10.543585+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1277,31 +1272,27 @@
       "seen_at_utc": "2026-09-01T05:18:50.030735+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457766/tupac-dikaiosi-meta-apo-30-hronia-gia-ton-thryliko-raper-enohos-o-ntoyein-nteivis-gia-ti-dolofonia-toy/",
-      "title": "Tupac: Δικαίωση μετά από 30 χρόνια για τον θρυλικό ράπερ – Ένοχος ο Ντουέιν Ντέιβις για τη δολοφονία του",
-      "normalized_title": "TUPAC: ΔΙΚΑΙΩΣΗ ΜΕΤΑ ΑΠΟ 30 ΧΡΟΝΙΑ ΓΙΑ ΤΟΝ ΘΡΥΛΙΚΟ ΡΑΠΕΡ – ΕΝΟΧΟΣ Ο ΝΤΟΥΕΙΝ ΝΤΕΙΒΙΣ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ",
+      "url": "https://www.efsyn.gr/nisides/1457792/to-nisi-poy-einai-to-aythentiko-diamanti-toy-aigaioy-gia-toys-vretanoys/",
+      "title": "Το νησί που είναι το αυθεντικό «διαμάντι» του Αιγαίου για τους Βρετανούς",
+      "normalized_title": "ΤΟ ΝΗΣΙ ΠΟΥ ΕΙΝΑΙ ΤΟ ΑΥΘΕΝΤΙΚΟ «ΔΙΑΜΑΝΤΙ» ΤΟΥ ΑΙΓΑΙΟΥ ΓΙΑ ΤΟΥΣ ΒΡΕΤΑΝΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457766/tupac-dikaiosi-meta-apo-30-hronia-gia-ton-thryliko-raper-enohos-o-ntoyein-nteivis-gia-ti-dolofonia-toy/",
-        "https://www.efsyn.gr/ellada/1409405/e-learning-ekpa-25-hronia-igetis-sti-dia-vioy-mathisi/",
-        "https://www.efsyn.gr/politiki/1457772/sto-riant-o-giorgos-papandreoy-didaskei-gia-tin-olympiaki-ekeheiria/",
-        "https://www.efsyn.gr/politiki/1457749/kke-koroidia-ta-metra-gia-tin-akriveia/",
-        "https://www.efsyn.gr/kosmos/1457760/to-ohi-tis-islandias-pligonei-tin-e-e/"
+        "https://www.efsyn.gr/nisides/1457792/to-nisi-poy-einai-to-aythentiko-diamanti-toy-aigaioy-gia-toys-vretanoys/",
+        "https://www.efsyn.gr/politiki/1457779/zakynthos-neos-prosorinos-dioikitis-toy-nosokomeioy-o-anastasios-liaskos-i-anakoinosi-georgiadi/",
+        "https://www.efsyn.gr/politiki/1457789/meta-tin-panepistimiaki-kai-ti-dikastiki-erhetai-kai-i-kykloforiaki-astynomia/",
+        "https://www.efsyn.gr/politiki/1457783/oi-epiheirimaties-tis-thessalonikis-eidan-ton-tsipra-kai-vgikan-pio-haroymenoi-ap-oti-mpikan/",
+        "https://www.efsyn.gr/politiki/1457777/to-xehoristo-doro-toy-tasoyla-ston-proedro-toy-livanoy/"
       ],
-      "seen_at_utc": "2026-09-01T05:32:16.538323+00:00"
+      "seen_at_utc": "2026-09-01T05:51:10.543671+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/sports/othersports/nadal-ela-ekso-tora/",
-      "title": "«Ναδάλ, έλα έξω τώρα!»",
-      "normalized_title": "«ΝΑΔΑΛ, ΕΛΑ ΕΞΩ ΤΩΡΑ!»",
+      "url": "https://www.in.gr/2026/09/01/english-edition/greeces-unemployment-rate-down-to-7-9-in-july-2026/",
+      "title": "Greece’s Unemployment Rate Down to 7.9% in July 2026",
+      "normalized_title": "GREECE’S UNEMPLOYMENT RATE DOWN TO 7.9% IN JULY 2026",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/sports/othersports/nadal-ela-ekso-tora/",
-        "https://www.in.gr/2026/09/01/life/music/toupak-sakour-enoxos-gia-ti-dolofonia-tou-o-keffe-d-sxedon-30-xronia-meta/",
-        "https://www.in.gr/2026/09/01/greece/premiera-simera-gia-ti-nea-omada-komvos-tis-el-as-me-ai-drones-kameres-i-diaxeirisi-tis-kykloforias/",
-        "https://www.in.gr/2026/09/01/sports/othersports/sok-sti-sagkai-o-songk-giantongk-esvise-ton-oumar-nourmagkomentof/",
-        "https://www.in.gr/2026/09/01/greece/kypseli-ekryvan-gia-dyo-xronia-ti-soro-tou-vrefous-stin-katapsyksi-tin-tetarti-apologountai-oi-3-syllifthentes/"
+        "https://www.in.gr/2026/09/01/english-edition/greeces-unemployment-rate-down-to-7-9-in-july-2026/"
       ],
-      "seen_at_utc": "2026-09-01T05:32:16.538284+00:00"
+      "seen_at_utc": "2026-09-01T05:51:10.543636+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T05:32:16.538395+00:00"
+  "updated_at_utc": "2026-09-01T05:51:10.543741+00:00"
 }
