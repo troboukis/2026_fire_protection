@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564431056/giati-o-rintlei-skot-stravose-me-ton-pol-meskal/",
-      "title": "Γιατί ο Ρίντλεϊ Σκοτ «στράβωσε» με τον Πολ Μεσκάλ;",
-      "normalized_title": "ΓΙΑΤΙ Ο ΡΙΝΤΛΕΙ ΣΚΟΤ «ΣΤΡΑΒΩΣΕ» ΜΕ ΤΟΝ ΠΟΛ ΜΕΣΚΑΛ;",
+      "url": "https://www.kathimerini.gr/world/564431110/bild-i-germania-tha-epirripsei-tin-eythyni-sti-moscha-gia-to-peristatiko-me-to-drone-sto-aerodromio/",
+      "title": "Bild: Η Γερμανία θα επιρρίψει την ευθύνη στη Μόσχα για το περιστατικό με το drone στο αεροδρόμιο",
+      "normalized_title": "BILD: Η ΓΕΡΜΑΝΙΑ ΘΑ ΕΠΙΡΡΙΨΕΙ ΤΗΝ ΕΥΘΥΝΗ ΣΤΗ ΜΟΣΧΑ ΓΙΑ ΤΟ ΠΕΡΙΣΤΑΤΙΚΟ ΜΕ ΤΟ DRONE ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564431056/giati-o-rintlei-skot-stravose-me-ton-pol-meskal/",
-        "https://www.kathimerini.gr/world/564431074/vasilissa-rania-neo-portreto-gia-ta-56a-genethlia-tis/"
+        "https://www.kathimerini.gr/world/564431110/bild-i-germania-tha-epirripsei-tin-eythyni-sti-moscha-gia-to-peristatiko-me-to-drone-sto-aerodromio/",
+        "https://www.kathimerini.gr/world/564431071/kagia-kalas-oi-chores-me-pyrayloys-anachaitisis-poy-ligoyn-na-toys-metaferoyn-stin-oykrania/",
+        "https://www.kathimerini.gr/society/564431092/mainetai-i-pyrkagia-stin-trapezitsa-konitsas-epicheiroyn-pente-enaeria/"
       ],
-      "seen_at_utc": "2026-09-01T08:29:56.245831+00:00"
+      "seen_at_utc": "2026-09-01T08:51:24.582848+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872227/athoos-o-suzugos-tis-parousiastrias-gia-to-endooikogeneiako-epeisodio-eho-metanoisei-tha-koitaxoume-na-mi-xanasumvei/?utm_source=rss",
-      "title": "Αθώος ο σύζυγος της παρουσιάστριας για το ενδοοικογενειακό επεισόδιο: «Έχω μετανοήσει, θα κοιτάξουμε να μη ξανασυμβεί»",
-      "normalized_title": "ΑΘΩΟΣ Ο ΣΥΖΥΓΟΣ ΤΗΣ ΠΑΡΟΥΣΙΑΣΤΡΙΑΣ ΓΙΑ ΤΟ ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΟ ΕΠΕΙΣΟΔΙΟ: «ΕΧΩ ΜΕΤΑΝΟΗΣΕΙ, ΘΑ ΚΟΙΤΑΞΟΥΜΕ ΝΑ ΜΗ ΞΑΝΑΣΥΜΒΕΙ»",
+      "url": "https://www.protothema.gr/greece/article/1872244/mitropolitis-n-ionias-gavriil-anoigei-tis-pules-tou-to-ioniko-kedro-ston-perisso/?utm_source=rss",
+      "title": "Μητροπολίτης Ν. Ιωνίας Γαβριήλ: Ανοίγει τις πύλες του το «Ιωνικό Κέντρο» στον Περισσό",
+      "normalized_title": "ΜΗΤΡΟΠΟΛΙΤΗΣ Ν. ΙΩΝΙΑΣ ΓΑΒΡΙΗΛ: ΑΝΟΙΓΕΙ ΤΙΣ ΠΥΛΕΣ ΤΟΥ ΤΟ «ΙΩΝΙΚΟ ΚΕΝΤΡΟ» ΣΤΟΝ ΠΕΡΙΣΣΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872227/athoos-o-suzugos-tis-parousiastrias-gia-to-endooikogeneiako-epeisodio-eho-metanoisei-tha-koitaxoume-na-mi-xanasumvei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872244/mitropolitis-n-ionias-gavriil-anoigei-tis-pules-tou-to-ioniko-kedro-ston-perisso/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-01T08:29:56.245993+00:00"
+      "seen_at_utc": "2026-09-01T08:51:24.582978+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1457902/androylakis-sti-deth-tha-anakoinoso-tis-leptomereies-enos-mihanismoy-forologisis-ton-yperkerdon-ton-oligopolion/",
-      "title": "Ανδρουλάκης: «Στη ΔΕΘ θα ανακοινώσω τις λεπτομέρειες ενός μηχανισμού φορολόγησης των υπερκερδών των ολιγοπωλίων»",
-      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: «ΣΤΗ ΔΕΘ ΘΑ ΑΝΑΚΟΙΝΩΣΩ ΤΙΣ ΛΕΠΤΟΜΕΡΕΙΕΣ ΕΝΟΣ ΜΗΧΑΝΙΣΜΟΥ ΦΟΡΟΛΟΓΗΣΗΣ ΤΩΝ ΥΠΕΡΚΕΡΔΩΝ ΤΩΝ ΟΛΙΓΟΠΩΛΙΩΝ»",
+      "url": "https://www.efsyn.gr/ellada/1457919/kypseli-peripoy-ennea-minon-to-vrefos-poy-vrethike-nekro-ta-anapantita-erotimata-poy-apasholoyn-tis-arhes/",
+      "title": "Κυψέλη: Περίπου εννέα μηνών το βρέφος που βρέθηκε νεκρό – Τα αναπάντητα ερωτήματα που απασχολούν τις αρχές",
+      "normalized_title": "ΚΥΨΕΛΗ: ΠΕΡΙΠΟΥ ΕΝΝΕΑ ΜΗΝΩΝ ΤΟ ΒΡΕΦΟΣ ΠΟΥ ΒΡΕΘΗΚΕ ΝΕΚΡΟ – ΤΑ ΑΝΑΠΑΝΤΗΤΑ ΕΡΩΤΗΜΑΤΑ ΠΟΥ ΑΠΑΣΧΟΛΟΥΝ ΤΙΣ ΑΡΧΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1457902/androylakis-sti-deth-tha-anakoinoso-tis-leptomereies-enos-mihanismoy-forologisis-ton-yperkerdon-ton-oligopolion/",
-        "https://www.efsyn.gr/ellada/1457891/foyrna-eyrytanias-apohorei-apo-to-horio-i-polytekni-oikogeneia-i-sygkinitiki-anartisi-tis-miteras/"
+        "https://www.efsyn.gr/ellada/1457919/kypseli-peripoy-ennea-minon-to-vrefos-poy-vrethike-nekro-ta-anapantita-erotimata-poy-apasholoyn-tis-arhes/",
+        "https://www.efsyn.gr/athlitismos/1457889/o-pelkas-vgike-mprosta-tin-krisimi-stigmi/",
+        "https://www.efsyn.gr/politiki/1457872/voles-maximoy-kata-pasok-gia-akriveia-kai-kokkina-daneia/",
+        "https://www.efsyn.gr/stiles/1457864/ta-hania-ekpempoyn-sos/",
+        "https://www.efsyn.gr/ellada/1457910/trohaio-dystyhima-sti-thiva-56hronos-skotothike-se-sfodri-sygkroysi-agrotikoy-me-fortigo-eikones/"
       ],
-      "seen_at_utc": "2026-09-01T08:29:56.245944+00:00"
+      "seen_at_utc": "2026-09-01T08:51:24.582945+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/politics/diplomatia/dendias-i-atzenta-2030-kai-i-aspida-tou-axillea-einai-i-proti-eyropaiki-olistiki-prospatheia-antimetopisis-apeilon/",
-      "title": "Δένδιας: Η «Ατζέντα 2030» και η «Ασπίδα του Αχιλλέα» είναι η πρώτη ευρωπαϊκή ολιστική προσπάθεια αντιμετώπισης απειλών",
-      "normalized_title": "ΔΕΝΔΙΑΣ: Η «ΑΤΖΕΝΤΑ 2030» ΚΑΙ Η «ΑΣΠΙΔΑ ΤΟΥ ΑΧΙΛΛΕΑ» ΕΙΝΑΙ Η ΠΡΩΤΗ ΕΥΡΩΠΑΙΚΗ ΟΛΙΣΤΙΚΗ ΠΡΟΣΠΑΘΕΙΑ ΑΝΤΙΜΕΤΩΠΙΣΗΣ ΑΠΕΙΛΩΝ",
+      "url": "https://www.in.gr/2026/09/01/sports/basketball/ntorsei-tin-agapo-ayti-ti-xora-pics-vid/",
+      "title": "Ντόρσεϊ: «Την αγαπώ αυτή τη χώρα» (pics, vid)",
+      "normalized_title": "ΝΤΟΡΣΕΙ: «ΤΗΝ ΑΓΑΠΩ ΑΥΤΗ ΤΗ ΧΩΡΑ» (PICS, VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/politics/diplomatia/dendias-i-atzenta-2030-kai-i-aspida-tou-axillea-einai-i-proti-eyropaiki-olistiki-prospatheia-antimetopisis-apeilon/",
-        "https://www.in.gr/2026/09/01/world/israil-i-syzygos-tou-netaniaxou-epitethike-se-antipalo-tou-stis-ekloges-anaparagontas-theories-synomosias/"
+        "https://www.in.gr/2026/09/01/sports/basketball/ntorsei-tin-agapo-ayti-ti-xora-pics-vid/",
+        "https://www.in.gr/2026/09/01/economy/pos-teleytaia-stoixeia-gia-tin-touristiki-kinisi-i-thesi-tis-elladas/",
+        "https://www.in.gr/2026/09/01/go-fun/fizz/roula-koromila-anevaste-oti-goustarete-sta-social-media/",
+        "https://www.in.gr/2026/09/01/sports/on-field/i-eksigisi-tis-trelas-gia-gkonsales-sto-meksiko/"
       ],
-      "seen_at_utc": "2026-09-01T08:29:56.245891+00:00"
+      "seen_at_utc": "2026-09-01T08:51:24.582901+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T08:29:56.246065+00:00"
+  "updated_at_utc": "2026-09-01T08:51:24.583060+00:00"
 }
