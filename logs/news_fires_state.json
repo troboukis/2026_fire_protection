@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564416650/eortologio-poioi-giortazoyn-simera-1-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 1 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 1 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/istoria/564427207/zak-ntelor-protomastoras-tis-eyropaikis-enopoiisis/",
+      "title": "Ζακ Ντελόρ: Πρωτομάστορας της ευρωπαϊκής ενοποίησης",
+      "normalized_title": "ΖΑΚ ΝΤΕΛΟΡ: ΠΡΩΤΟΜΑΣΤΟΡΑΣ ΤΗΣ ΕΥΡΩΠΑΙΚΗΣ ΕΝΟΠΟΙΗΣΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564416650/eortologio-poioi-giortazoyn-simera-1-septemvrioy/",
-        "https://www.kathimerini.gr/culture/564427624/o-ch-eipe-o-portofolas-kai-i-timi-tis-efimeridas/"
+        "https://www.kathimerini.gr/istoria/564427207/zak-ntelor-protomastoras-tis-eyropaikis-enopoiisis/",
+        "https://www.kathimerini.gr/economy/564430687/daneizomaste-fthinotera-apo-gallia-kai-italia/",
+        "https://www.kathimerini.gr/world/564430711/nea-yorki-dyo-gynaikes-nekres-se-epeisodio-me-machairi-stin-times-square/",
+        "https://www.kathimerini.gr/world/564427045/to-tampoy-trizei-stin-anatoli/",
+        "https://www.kathimerini.gr/world/564430270/fovoi-gia-klimakosi-ston-kolpo/",
+        "https://www.kathimerini.gr/economy/local/564430558/1-740-proionta-stin-ethniki-protovoylia-meiosis-timon/"
       ],
-      "seen_at_utc": "2026-08-31T21:17:03.889665+00:00"
+      "seen_at_utc": "2026-09-01T04:17:06.666405+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1264,64 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872071/epiheirisi-tou-limenikou-gia-akuvernito-istioforo-me-duo-allodapous-sti-sumi/?utm_source=rss",
-      "title": "Επιχείρηση του Λιμενικού για ακυβέρνητο ιστιοφόρο με δύο αλλοδαπούς στη Σύμη",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ ΤΟΥ ΛΙΜΕΝΙΚΟΥ ΓΙΑ ΑΚΥΒΕΡΝΗΤΟ ΙΣΤΙΟΦΟΡΟ ΜΕ ΔΥΟ ΑΛΛΟΔΑΠΟΥΣ ΣΤΗ ΣΥΜΗ",
+      "url": "https://www.protothema.gr/greece/article/1872115/1100000-monadikoi-hristes-enimerothikan-hthes-deutera-31-augoustou-apo-to-protothemagr/?utm_source=rss",
+      "title": "1.100.000 μοναδικοί χρήστες ενημερώθηκαν χθες Δευτέρα 31 Αυγούστου από το protothema.gr",
+      "normalized_title": "1.100.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΔΕΥΤΕΡΑ 31 ΑΥΓΟΥΣΤΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872071/epiheirisi-tou-limenikou-gia-akuvernito-istioforo-me-duo-allodapous-sti-sumi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872115/1100000-monadikoi-hristes-enimerothikan-hthes-deutera-31-augoustou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872113/tragodia-sto-kedro-tis-athinas-treis-nekroi-se-trohaio-me-duo-motosikletes-sti-leoforo-alexandras/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-08-31T20:17:07.796330+00:00"
+      "seen_at_utc": "2026-09-01T04:17:06.666535+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1457683/axios-o-tramp-exetazei-shedio-periorismenon-htypimaton-kata-toy-iran-stohos-na-apotrapoyn-oi-epitheseis-sto-ormoyz/",
-      "title": "Axios: Ο Τραμπ εξετάζει σχέδιο περιορισμένων χτυπημάτων κατά του Ιράν – Στόχος να αποτραπούν οι επιθέσεις στο Ορμούζ",
-      "normalized_title": "AXIOS: Ο ΤΡΑΜΠ ΕΞΕΤΑΖΕΙ ΣΧΕΔΙΟ ΠΕΡΙΟΡΙΣΜΕΝΩΝ ΧΤΥΠΗΜΑΤΩΝ ΚΑΤΑ ΤΟΥ ΙΡΑΝ – ΣΤΟΧΟΣ ΝΑ ΑΠΟΤΡΑΠΟΥΝ ΟΙ ΕΠΙΘΕΣΕΙΣ ΣΤΟ ΟΡΜΟΥΖ",
+      "url": "https://www.efsyn.gr/kosmos/1457722/gallia-kai-germania-ypovathmizoyn-tin-ypiresia-exoterikis-drasis/",
+      "title": "Γαλλία και Γερμανία υποβαθμίζουν την Υπηρεσία Εξωτερικής Δράσης",
+      "normalized_title": "ΓΑΛΛΙΑ ΚΑΙ ΓΕΡΜΑΝΙΑ ΥΠΟΒΑΘΜΙΖΟΥΝ ΤΗΝ ΥΠΗΡΕΣΙΑ ΕΞΩΤΕΡΙΚΗΣ ΔΡΑΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1457683/axios-o-tramp-exetazei-shedio-periorismenon-htypimaton-kata-toy-iran-stohos-na-apotrapoyn-oi-epitheseis-sto-ormoyz/"
+        "https://www.efsyn.gr/kosmos/1457722/gallia-kai-germania-ypovathmizoyn-tin-ypiresia-exoterikis-drasis/",
+        "https://www.efsyn.gr/ellada/1457725/sholeia-antistrofi-metrisi-gia-to-proto-koydoyni-ola-osa-prepei-na-gnorizoyn-mathites-kai-goneis/",
+        "https://www.efsyn.gr/politiki/1457718/syriza-protasi-nomoy-gia-to-idiotiko-hreos-kokkina-daneia-stin-anaptyxiaki-trapeza/",
+        "https://www.efsyn.gr/ellada/1457710/friki-me-tis-apokalypseis-stin-kypseli-poios-mahairose-mehri-thanatoy-to-vrefos-sto-mikroskopio-i-prostasia-ton-paidion/",
+        "https://www.efsyn.gr/oikonomia/1457699/stagona-ston-okeano-ta-kyvernitika-metra-me-toys-1-700-kodikoys-sta-soyper-market/",
+        "https://www.efsyn.gr/politiki/1457696/epiheirisi-apodomisis-samara-apo-galazioys-ypoyrgoys-ypotimitikos-o-adonis-drimeia-epithesi-floridi/",
+        "https://www.efsyn.gr/kosmos/1457707/ipa-iran-tha-toys-plixoyme-dynata-leei-o-tramp-me-sklira-antipoina-apeilei-i-teherani/",
+        "https://www.efsyn.gr/protoselida/mpoyrini-ayxiseon-se-kaysima-kai-trofima/",
+        "https://www.efsyn.gr/nisides/1457690/the-beatles-tessera-skatharia-xana-stin-abbey-road/",
+        "https://www.efsyn.gr/nisides/1457687/rodrigo-rei-rosa-stis-nisides-sti-latiniki-ameriki-i-via-epistrefei-panta-kyklika/",
+        "https://www.efsyn.gr/ellada/1457701/eortologio-poioi-giortazoyn-simera-1-septemvrioy-ola-ta-onomata/"
       ],
-      "seen_at_utc": "2026-08-31T21:17:03.889743+00:00"
+      "seen_at_utc": "2026-09-01T04:17:06.666498+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/world/to-kievo-endexetai-na-theorithei-polis-protis-grammis-ton-septemvri-logo-tou-eyrous-ton-epitheseon/",
-      "title": "Το Κίεβο ενδέχεται να θεωρηθεί «πόλης πρώτης γραμμής» τον Σεπτέμβρη λόγω του εύρους των επιθέσεων",
-      "normalized_title": "ΤΟ ΚΙΕΒΟ ΕΝΔΕΧΕΤΑΙ ΝΑ ΘΕΩΡΗΘΕΙ «ΠΟΛΗΣ ΠΡΩΤΗΣ ΓΡΑΜΜΗΣ» ΤΟΝ ΣΕΠΤΕΜΒΡΗ ΛΟΓΩ ΤΟΥ ΕΥΡΟΥΣ ΤΩΝ ΕΠΙΘΕΣΕΩΝ",
+      "url": "https://www.in.gr/2026/09/01/life/geysi/syntagi-pagoto-cranberry-ruby/",
+      "title": "Συνταγή: Παγωτό cranberry ruby",
+      "normalized_title": "ΣΥΝΤΑΓΗ: ΠΑΓΩΤΟ CRANBERRY RUBY",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/world/to-kievo-endexetai-na-theorithei-polis-protis-grammis-ton-septemvri-logo-tou-eyrous-ton-epitheseon/"
+        "https://www.in.gr/2026/09/01/life/geysi/syntagi-pagoto-cranberry-ruby/",
+        "https://www.in.gr/2026/09/01/economy/stin-kopsi-tou-ksyrafiou-akomi-kai-oi-yparxouses-therapeies-gia-tous-astheneis/",
+        "https://www.in.gr/2026/09/01/world/nea-yorki-katelikse-ena-apo-ta-thymata-tis-epithesis-me-maxairi-nekri-kai-i-drastria-apo-pyra-astynomikon/",
+        "https://www.in.gr/2026/09/01/plus/vita/mporei-o-thoryvos-na-epireazei-ton-tropo-pou-trome/",
+        "https://www.in.gr/2026/09/01/greece/kairos-anemoi-eos-6-mpofor-kai-thermokrasies-mexri-26-vathmous-pou-tha-vreksei/",
+        "https://www.in.gr/2026/09/01/life/diakopes/zei-edo-kai-tria-xronia-se-krouazieroploia-i-zoi-xoris-plyntiria-kai-logariasmous/",
+        "https://www.in.gr/2026/09/01/plus/vita/to-na-min-prospathoume-gia-ola-einai-tempelia-i-eksypni-epilogi/",
+        "https://www.in.gr/2026/09/01/economy/diethnis-oikonomia/einai-i-gen-z-aproetoimasti-gia-ton-xoro-ergasias-i-einai-oi-epixeiriseis-pou-den-einai-etoimes-gia-tous-neous/",
+        "https://www.in.gr/2026/09/01/in-science/ai/h-texniti-noimosyni-einai-pleon-i-megalyteri-apeili-gia-tin-oikonomiki-statherotita/",
+        "https://www.in.gr/2026/09/01/life/culture-live/lanto-noris-prasino-fos-se-seira-ntokimanter-gia-ton-protathliti-tis-formula-1/",
+        "https://www.in.gr/2026/09/01/greece/meta-ta-anasfalista-oximata-elegxoi-kai-gia-kteo/",
+        "https://www.in.gr/2026/09/01/greece/dikastikes-vomves-ston-dromo-pros-tis-ekloges/",
+        "https://www.in.gr/2026/09/01/economy/diethnis-oikonomia/texniti-noimosyni-giati-menoun-ektos-oi-gynaikes-ta-tria-empodia-pou-tis-kratoun-piso-stin-agora-ergasias/",
+        "https://www.in.gr/2026/09/01/world/iran-tanker-xtypithike-apo-tria-agnosta-vlimata-sta-stena-tou-ormouz/",
+        "https://www.in.gr/2026/09/01/world/paraitithike-o-ypourgos-stratou-ntan-ntriskol-en-meso-entaseon-me-ton-ypourgo-amynas-xegkseth/",
+        "https://www.in.gr/2026/09/01/world/oukrania-nees-kata-kymata-aimatires-epitheseis-tis-rosias-sto-kievo/",
+        "https://www.in.gr/2026/09/01/world/iran-2-gynaikes-katadikastikan-se-thanato-gia-symmetoxi-stis-antikyvernitikes-diadiloseis-symfona-me-mko/",
+        "https://www.in.gr/2026/09/01/world/ipa-to-anotato-dikastirio-epitrepei-na-synexistoun-oi-ergasies-anegersis-aithousas-xorou-ston-leyko-oiko/",
+        "https://www.in.gr/2026/09/01/world/polonia-ypopsies-gia-tromokratiki-energeia-se-ergostasio-kataskeyis-maxitikon-drones/",
+        "https://www.in.gr/2026/09/01/world/dimoskopisi-kolafos-gia-ton-tramp-enopsei-endiameson-eklogon/",
+        "https://www.in.gr/2026/09/01/world/syria-i-dania-anoikse-ksana-tin-presveia-tis-sti-damasko/",
+        "https://www.in.gr/2026/09/01/world/iran-o-tramp-rotithike-ean-skopeyei-na-xrisimopoiisei-pyrinika-opla/"
       ],
-      "seen_at_utc": "2026-08-31T22:51:14.910057+00:00"
+      "seen_at_utc": "2026-09-01T04:17:06.666446+00:00"
     }
   },
-  "updated_at_utc": "2026-08-31T22:51:14.910157+00:00"
+  "updated_at_utc": "2026-09-01T04:17:06.666617+00:00"
 }
