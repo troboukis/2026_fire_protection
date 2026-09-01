@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/government/564430204/pyra-maximoy-kata-toy-pasok/",
-      "title": "Πυρά Μαξίμου κατά του ΠΑΣΟΚ",
-      "normalized_title": "ΠΥΡΑ ΜΑΞΙΜΟΥ ΚΑΤΑ ΤΟΥ ΠΑΣΟΚ",
+      "url": "https://www.kathimerini.gr/economy/564427357/arthro-toy-giorgoy-stoympoy-stin-k-tesseris-erotiseis-zitoyn-apantisi/",
+      "title": "Αρθρο του Γιώργου Στούμπου στην «Κ»: Τέσσερις ερωτήσεις ζητούν απάντηση",
+      "normalized_title": "ΑΡΘΡΟ ΤΟΥ ΓΙΩΡΓΟΥ ΣΤΟΥΜΠΟΥ ΣΤΗΝ «Κ»: ΤΕΣΣΕΡΙΣ ΕΡΩΤΗΣΕΙΣ ΖΗΤΟΥΝ ΑΠΑΝΤΗΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/government/564430204/pyra-maximoy-kata-toy-pasok/",
-        "https://www.kathimerini.gr/world/564427021/aytomatos-thanatos/"
+        "https://www.kathimerini.gr/economy/564427357/arthro-toy-giorgoy-stoympoy-stin-k-tesseris-erotiseis-zitoyn-apantisi/",
+        "https://www.kathimerini.gr/society/564430747/drapetsona-nekros-34chronos-odigos-motosikletas-se-trochaio-stin-perifereiaki/",
+        "https://www.kathimerini.gr/world/564430726/stena-toy-ormoyz-ploio-chtypithike-apo-tria-agnosta-vlimata/",
+        "https://www.kathimerini.gr/society/564430738/tragodia-stin-asfalto-treis-nekroi-se-sygkroysi-dyo-motosikleton-sti-leoforo-alexandras/",
+        "https://www.kathimerini.gr/istoria/564430012/san-simera-1-septemvrioy-1969-to-praxikopima-poy-efere-ton-kantafi-stin-exoysia/"
       ],
-      "seen_at_utc": "2026-09-01T04:29:51.947909+00:00"
+      "seen_at_utc": "2026-09-01T04:51:13.405603+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1273,28 @@
       "seen_at_utc": "2026-09-01T04:17:06.666535+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1457732/leoforos-alexandras-treis-nekroi-se-trohaio-dystyhima-apo-sygkroysi-dyo-motosikleton/",
-      "title": "Τραγωδία στη Λεωφόρο Αλεξάνδρας: Τρεις νεκροί από τη σύγκρουση δύο μοτοσικλετών",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΛΕΩΦΟΡΟ ΑΛΕΞΑΝΔΡΑΣ: ΤΡΕΙΣ ΝΕΚΡΟΙ ΑΠΟ ΤΗ ΣΥΓΚΡΟΥΣΗ ΔΥΟ ΜΟΤΟΣΙΚΛΕΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1457731/diavimata-stin-agkyra-kai-enimerosi-eyropaion-etairon/",
+      "title": "Διαβήματα στην Αγκυρα και ενημέρωση Ευρωπαίων εταίρων",
+      "normalized_title": "ΔΙΑΒΗΜΑΤΑ ΣΤΗΝ ΑΓΚΥΡΑ ΚΑΙ ΕΝΗΜΕΡΩΣΗ ΕΥΡΩΠΑΙΩΝ ΕΤΑΙΡΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1457732/leoforos-alexandras-treis-nekroi-se-trohaio-dystyhima-apo-sygkroysi-dyo-motosikleton/"
+        "https://www.efsyn.gr/politiki/1457731/diavimata-stin-agkyra-kai-enimerosi-eyropaion-etairon/",
+        "https://www.efsyn.gr/oikonomia/1457737/aade-neos-kyklos-pleistiriasmon-akiniton-apo-tis-16-septemvrioy/",
+        "https://www.efsyn.gr/athlitismos/1457727/mesi-ponaei-i-psyhi-moy-alla-eftase-i-stigmi/"
       ],
-      "seen_at_utc": "2026-09-01T04:29:51.947987+00:00"
+      "seen_at_utc": "2026-09-01T04:51:13.405675+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/01/economy/i-megali-anatropi-me-tin-golden-visa-poia-ktiria-mpainoun-sto-paixnidi/",
-      "title": "Η μεγάλη ανατροπή με την Golden Visa – Ποια κτίρια μπαίνουν στο «παιχνίδι»",
-      "normalized_title": "Η ΜΕΓΑΛΗ ΑΝΑΤΡΟΠΗ ΜΕ ΤΗΝ GOLDEN VISA – ΠΟΙΑ ΚΤΙΡΙΑ ΜΠΑΙΝΟΥΝ ΣΤΟ «ΠΑΙΧΝΙΔΙ»",
+      "url": "https://www.in.gr/2026/09/01/go-fun/social/arkas-i-proti-kalimera-tou-septemvri/",
+      "title": "Αρκάς: Η πρώτη «καλημέρα» του Σεπτέμβρη",
+      "normalized_title": "ΑΡΚΑΣ: Η ΠΡΩΤΗ «ΚΑΛΗΜΕΡΑ» ΤΟΥ ΣΕΠΤΕΜΒΡΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/01/economy/i-megali-anatropi-me-tin-golden-visa-poia-ktiria-mpainoun-sto-paixnidi/"
+        "https://www.in.gr/2026/09/01/go-fun/social/arkas-i-proti-kalimera-tou-septemvri/",
+        "https://www.in.gr/2026/09/01/economy/neo-xorotaksiko-ape-i-andros-sikonei-to-ganti-kai-anoigei-proti-to-dikastiko-metopo/",
+        "https://www.in.gr/2026/09/01/plus/vita/pos-i-askisi-epireazei-ti-skepsi-mas/",
+        "https://www.in.gr/2026/09/01/greece/troxaio-me-treis-nekrous-sti-leoforo-aleksandras/"
       ],
-      "seen_at_utc": "2026-09-01T04:29:51.947953+00:00"
+      "seen_at_utc": "2026-09-01T04:51:13.405640+00:00"
     }
   },
-  "updated_at_utc": "2026-09-01T04:29:51.948050+00:00"
+  "updated_at_utc": "2026-09-01T04:51:13.405744+00:00"
 }
