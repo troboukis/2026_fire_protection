@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564432256/i-dioxi-gia-anthropoktonia-kai-to-parelthon-toy-43chronoy/",
-      "title": "Κυψέλη: Η δίωξη για ανθρωποκτονία και το παρελθόν του 43χρονου",
-      "normalized_title": "ΚΥΨΕΛΗ: Η ΔΙΩΞΗ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΚΑΙ ΤΟ ΠΑΡΕΛΘΟΝ ΤΟΥ 43ΧΡΟΝΟΥ",
+      "url": "https://www.kathimerini.gr/society/564432892/thessaloniki-pyrkagia-se-doma-polykatoikias-apomakrynthikan-egkairos-oi-enoikoi/",
+      "title": "Θεσσαλονίκη: Πυρκαγιά σε δώμα πολυκατοικίας – Απομακρύνθηκαν εγκαίρως οι ένοικοι",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΥΡΚΑΓΙΑ ΣΕ ΔΩΜΑ ΠΟΛΥΚΑΤΟΙΚΙΑΣ – ΑΠΟΜΑΚΡΥΝΘΗΚΑΝ ΕΓΚΑΙΡΩΣ ΟΙ ΕΝΟΙΚΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564432256/i-dioxi-gia-anthropoktonia-kai-to-parelthon-toy-43chronoy/",
-        "https://www.kathimerini.gr/economy/local/564432697/energeia-dyskolos-cheimonas-gia-toys-katanalotes/"
+        "https://www.kathimerini.gr/society/564432892/thessaloniki-pyrkagia-se-doma-polykatoikias-apomakrynthikan-egkairos-oi-enoikoi/",
+        "https://www.kathimerini.gr/world/564432880/nikaragoya-to-koinovoylio-mplokarei-ti-symmetochi-tis-antipoliteysis-stis-ekloges/",
+        "https://www.kathimerini.gr/istoria/564432133/san-simera-2-septemvrioy-1792-oi-sfages-toy-septemvrioy-sto-parisi/"
       ],
-      "seen_at_utc": "2026-09-02T04:30:05.573696+00:00"
+      "seen_at_utc": "2026-09-02T04:51:18.334685+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,58 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872591/fotia-se-diamerisma-4ou-orofou-sti-thessaloniki-den-kinduneusan-enoikoi/?utm_source=rss",
-      "title": "Φωτιά σε διαμέρισμα 4ου ορόφου στη Θεσσαλονίκη, δεν κινδύνευσαν ένοικοι",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ 4ΟΥ ΟΡΟΦΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΔΕΝ ΚΙΝΔΥΝΕΥΣΑΝ ΕΝΟΙΚΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1872624/apo-ti-fourna-eurutanias-sti-naxo-i-istoria-tis-poluteknis-oikogeneias-pou-egine-sumvolo-tis-epistrofis-sta-xoria/?utm_source=rss",
+      "title": "Από τη Φουρνά στη Νάξο: Η ιστορία της πολύτεκνης οικογένειας που έγινε σύμβολο του κινήματος της επιστροφής στα χωριά",
+      "normalized_title": "ΑΠΟ ΤΗ ΦΟΥΡΝΑ ΣΤΗ ΝΑΞΟ: Η ΙΣΤΟΡΙΑ ΤΗΣ ΠΟΛΥΤΕΚΝΗΣ ΟΙΚΟΓΕΝΕΙΑΣ ΠΟΥ ΕΓΙΝΕ ΣΥΜΒΟΛΟ ΤΟΥ ΚΙΝΗΜΑΤΟΣ ΤΗΣ ΕΠΙΣΤΡΟΦΗΣ ΣΤΑ ΧΩΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872591/fotia-se-diamerisma-4ou-orofou-sti-thessaloniki-den-kinduneusan-enoikoi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872624/apo-ti-fourna-eurutanias-sti-naxo-i-istoria-tis-poluteknis-oikogeneias-pou-egine-sumvolo-tis-epistrofis-sta-xoria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-01T21:30:11.510954+00:00"
+      "seen_at_utc": "2026-09-02T04:51:18.334842+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1458394/xekatharo-ohi-se-apeiles-kai-kyroseis-apo-tis-ipa/",
-      "title": "Ξεκάθαρο «όχι» σε απειλές και κυρώσεις από τις ΗΠΑ",
-      "normalized_title": "ΞΕΚΑΘΑΡΟ «ΟΧΙ» ΣΕ ΑΠΕΙΛΕΣ ΚΑΙ ΚΥΡΩΣΕΙΣ ΑΠΟ ΤΙΣ ΗΠΑ",
+      "url": "https://www.efsyn.gr/kosmos/1458395/nees-kyroseis-kata-tis-rosias-meta-tin-epithesi-me-drone-sti-leipsia-den-eimaste-se-polemo-leei-i-germania/",
+      "title": "Νέες κυρώσεις κατά της Ρωσίας μετά την επίθεση με drone στη Λειψία – «Δεν είμαστε σε πόλεμο», λέει η Γερμανία",
+      "normalized_title": "ΝΕΕΣ ΚΥΡΩΣΕΙΣ ΚΑΤΑ ΤΗΣ ΡΩΣΙΑΣ ΜΕΤΑ ΤΗΝ ΕΠΙΘΕΣΗ ΜΕ DRONE ΣΤΗ ΛΕΙΨΙΑ – «ΔΕΝ ΕΙΜΑΣΤΕ ΣΕ ΠΟΛΕΜΟ», ΛΕΕΙ Η ΓΕΡΜΑΝΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1458394/xekatharo-ohi-se-apeiles-kai-kyroseis-apo-tis-ipa/"
+        "https://www.efsyn.gr/kosmos/1458395/nees-kyroseis-kata-tis-rosias-meta-tin-epithesi-me-drone-sti-leipsia-den-eimaste-se-polemo-leei-i-germania/",
+        "https://www.efsyn.gr/athlitismos/1458399/mia-anasa-apo-ton-panathinaiko-o-oynai/"
       ],
-      "seen_at_utc": "2026-09-02T04:30:05.573736+00:00"
+      "seen_at_utc": "2026-09-02T04:51:18.334793+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/in-science/ai/nomizete-oti-oi-eksomologiseis-sas-sta-chatbot-einai-idiotikes-ksanaskefteite-to/",
-      "title": "Νομίζετε ότι οι εξομολογήσεις σας στα chatbot είναι ιδιωτικές; Ξανασκεφτείτε το",
-      "normalized_title": "ΝΟΜΙΖΕΤΕ ΟΤΙ ΟΙ ΕΞΟΜΟΛΟΓΗΣΕΙΣ ΣΑΣ ΣΤΑ CHATBOT ΕΙΝΑΙ ΙΔΙΩΤΙΚΕΣ; ΞΑΝΑΣΚΕΦΤΕΙΤΕ ΤΟ",
+      "url": "https://www.in.gr/2026/09/02/go-fun/social/arkas-i-kalimera-tis-tetartis-14/",
+      "title": "Αρκάς: Η καλημέρα της Τετάρτης",
+      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΤΕΤΑΡΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/in-science/ai/nomizete-oti-oi-eksomologiseis-sas-sta-chatbot-einai-idiotikes-ksanaskefteite-to/",
-        "https://www.in.gr/2026/09/02/life/geysi/syntagi-ntolmadakia-gialantzi-me-dressing-giaourtiou/",
-        "https://www.in.gr/2026/09/02/greece/sti-dikaiosyni-strefoun-to-vlemma-tous-oi-giatroi-gia-tin-topothetimeni-dioikisi-ston-pis/",
-        "https://www.in.gr/2026/09/02/greece/simera-oi-apologies-tou-zeygariou-tis-kypselis-ti-lene-gia-to-thanato-tou-vrefous/",
-        "https://www.in.gr/2026/09/02/plus/vita/einai-oi-ksiroi-karpoi-aspida-gia-tin-kardia/",
-        "https://www.in.gr/2026/09/02/world/sto-dikastirio-odigeitai-o-feromenos-os-dolofonos-tou-tsarli-kerk/",
-        "https://www.in.gr/2026/09/02/greece/kairos-ypsiles-gia-tin-epoxi-thermokrasies-afrikaniki-skoni-kai-anemoi-eos-6-mpofor-pou-tha-exei-vroxes-kai-kataigides/",
-        "https://www.in.gr/2026/09/02/life/culture-live/sto-myalo-kai-ti-zoi-tou-nino-rota-sti-venetia-kanei-premiera-to-ntokimanter-gia-ton-megalo-italo-syntheti/",
-        "https://www.in.gr/2026/09/02/plus/vita/allazoume-ton-tropo-pou-milame-eksaitias-tis-texnitis-noimosynis/",
-        "https://www.in.gr/2026/09/02/economy/diethnis-oikonomia/poia-ilikiaki-omada-kyriarxei-oikonomika-se-eyropi-kai-ipa-poia-einai-i-antistoixi-genia-stin-ellada/",
-        "https://www.in.gr/2026/09/02/world/i-saksonia-anxalt-exei-ekloges-kai-i-afd-exei-etoima-sxedia-na-tin-kataktisei-mazi-me-ti-germania/",
-        "https://www.in.gr/2026/09/02/greece/dimografiko-proto-koudouni-me-ligoterous-mathites-i-arithmitiki-tis-syrriknosis/",
-        "https://www.in.gr/2026/09/02/economy/tesseris-paremvaseis-gia-tous-syntaksiouxous/",
-        "https://www.in.gr/2026/09/02/economy/neo-kyma-pleistiriasmon-akiniton-gia-xrei-stin-eforia/",
-        "https://www.in.gr/2026/09/02/greece/ta-pollapla-sms-tis-apatis/",
-        "https://www.in.gr/2026/09/02/apopsi/ena-lampaki-led-pou-tremopaizei-me-ta-oria-tis-idiotikotitas/",
-        "https://www.in.gr/2026/09/02/life/culture-live/gallia-paranomi-krithike-i-aposyrsi-fotografias-apo-ti-gaza-se-festival-tis-ntovil/",
-        "https://www.in.gr/2026/09/02/world/rosia-oukrania-diapragmateyseis-me-tromokrates-den-mporei-na-yparksoun-dilonei-o-poutin-gia-ton-zelenski/",
-        "https://www.in.gr/2026/09/02/economy/diethnis-oikonomia/analytes-to-xrima-kostizei-olo-kai-pio-akriva-gia-ta-noikokyria-kai-ta-krati/",
-        "https://www.in.gr/2026/09/02/world/rosia-o-neos-efialtis-mystirio-onomazetai-oreshnik-2-kai-tha-einai-isxyroteros-apo-ton-gnosto-oresnik/",
-        "https://www.in.gr/2026/09/02/world/volivia-epiasan-ton-arxigo-epifovis-symmorias-pou-allazei-prosopa-me-plastikes-epemvaseis-kai-dra-sto-perou/",
-        "https://www.in.gr/2026/09/02/world/iran-anisyxei-o-doae-gia-to-pyriniko-yliko-stis-iranikes-egkatastaseis/",
-        "https://www.in.gr/2026/09/02/economy/diethnis-oikonomia/germania-gia-skliroteri-stasi-enanti-tis-kinas-kanei-logo-o-ypourgos-oikonomikon/",
-        "https://www.in.gr/2026/09/02/world/ondoura-akyronetai-oristika-i-diki-tou-proin-proedrou-ernantes-gia-ypothesi-diafthoras/",
-        "https://www.in.gr/2026/09/02/sports/football/anakoinothike-apo-tin-xal-o-xristos-mouzakitis-pic/",
-        "https://www.in.gr/2026/09/02/world/o-tramp-gia-to-endexomeno-o-xegkseth-na-einai-ypopsifios-gia-tin-proedria-ton-ipa-kanei-fantastiki-douleia/",
-        "https://www.in.gr/2026/09/02/greece/thessaloniki-ypo-meriko-elegxo-i-pyrkagia-se-diamerisma-stin-agia-triada/"
+        "https://www.in.gr/2026/09/02/go-fun/social/arkas-i-kalimera-tis-tetartis-14/",
+        "https://www.in.gr/2026/09/02/world/italia-asyllipti-oikogeneiaki-tragodia-goneis-skotosan-tin-5xroni-anapiri-kori-tous-kai-aytoktonisan/",
+        "https://www.in.gr/2026/09/02/plus/vita/thymizei-burnout-alla-den-einai-ti-prepei-na-ksereis-gia-to-rust-out/",
+        "https://www.in.gr/2026/09/02/world/flegetai-ksana-i-mesi-anatoli-me-epitheseis-se-amerikanikes-vaseis-se-4-xores-apanta-to-iran-stis-epidromes-ton-ipa/"
       ],
-      "seen_at_utc": "2026-09-02T04:17:01.233177+00:00"
+      "seen_at_utc": "2026-09-02T04:51:18.334734+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T04:30:05.573815+00:00"
+  "updated_at_utc": "2026-09-02T04:51:18.334923+00:00"
 }
