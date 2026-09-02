@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564432961/pethane-o-viktor-miler-senariografos-toy-thrylikoy-paraskeyi-kai-13/",
-      "title": "Πέθανε ο Βίκτορ Μίλερ, σεναριογράφος του θρυλικού «Παρασκευή και 13»",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΒΙΚΤΟΡ ΜΙΛΕΡ, ΣΕΝΑΡΙΟΓΡΑΦΟΣ ΤΟΥ ΘΡΥΛΙΚΟΥ «ΠΑΡΑΣΚΕΥΗ ΚΑΙ 13»",
+      "url": "https://www.kathimerini.gr/visual/podcasts/564432994/expoze-o-ellinas-eskompar/",
+      "title": "ΕΞΠΟΖÉ: Ο «Ελληνας Εσκομπάρ» και οι 4,5 τόνοι κοκαΐνης στα αμπάρια του «Ουρανία»",
+      "normalized_title": "ΕΞΠΟΖE: Ο «ΕΛΛΗΝΑΣ ΕΣΚΟΜΠΑΡ» ΚΑΙ ΟΙ 4,5 ΤΟΝΟΙ ΚΟΚΑΙΝΗΣ ΣΤΑ ΑΜΠΑΡΙΑ ΤΟΥ «ΟΥΡΑΝΙΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564432961/pethane-o-viktor-miler-senariografos-toy-thrylikoy-paraskeyi-kai-13/",
-        "https://www.kathimerini.gr/opinion/564432436/i-antidrasi-sta-data-centers/"
+        "https://www.kathimerini.gr/visual/podcasts/564432994/expoze-o-ellinas-eskompar/",
+        "https://www.kathimerini.gr/athletics/564432988/argentini-sygklonistikes-apokalypseis-sti-diki-gia-ton-thanato-toy-marantona/",
+        "https://www.kathimerini.gr/world/564432991/tragodia-sto-sina-tis-aigyptoy-16-nekroi-kai-28-traymaties-se-trochaio-me-leoforeio/",
+        "https://www.kathimerini.gr/world/564432946/mexiko-diakopi-podosfairikoy-agona-logo-eisvolis-ageladon-poios-tis-edioxe-vinteo/",
+        "https://www.kathimerini.gr/world/564432979/germania-nea-apopeira-doliofthoras-sto-diktyo-ilektrikis-energeias/"
       ],
-      "seen_at_utc": "2026-09-02T05:51:08.406372+00:00"
+      "seen_at_utc": "2026-09-02T06:17:10.200782+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872657/to-htupisa-me-mahairi-gia-na-spasei-o-pagos-sokarei-o-ishurismos-tou-43hronou-gia-ton-thanato-tou-vrefous-stin-kupseli/?utm_source=rss",
-      "title": "«Το χτύπησα με μαχαίρι για να σπάσει ο πάγος»: Σοκάρει ο ισχυρισμός του 43χρονου για τον θάνατο του βρέφους στην Κυψέλη",
-      "normalized_title": "«ΤΟ ΧΤΥΠΗΣΑ ΜΕ ΜΑΧΑΙΡΙ ΓΙΑ ΝΑ ΣΠΑΣΕΙ Ο ΠΑΓΟΣ»: ΣΟΚΑΡΕΙ Ο ΙΣΧΥΡΙΣΜΟΣ ΤΟΥ 43ΧΡΟΝΟΥ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΒΡΕΦΟΥΣ ΣΤΗΝ ΚΥΨΕΛΗ",
+      "url": "https://www.protothema.gr/greece/article/1872676/kos-ennea-diamerismata-gia-ti-stegasi-giatron-tou-nosokomeiou-apo-tin-perifereia-notiou-aigaiou/?utm_source=rss",
+      "title": "Κως: Εννέα διαμερίσματα για τη στέγαση γιατρών του νοσοκομείου από την Περιφέρεια Νοτίου Αιγαίου",
+      "normalized_title": "ΚΩΣ: ΕΝΝΕΑ ΔΙΑΜΕΡΙΣΜΑΤΑ ΓΙΑ ΤΗ ΣΤΕΓΑΣΗ ΓΙΑΤΡΩΝ ΤΟΥ ΝΟΣΟΚΟΜΕΙΟΥ ΑΠΟ ΤΗΝ ΠΕΡΙΦΕΡΕΙΑ ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872657/to-htupisa-me-mahairi-gia-na-spasei-o-pagos-sokarei-o-ishurismos-tou-43hronou-gia-ton-thanato-tou-vrefous-stin-kupseli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872676/kos-ennea-diamerismata-gia-ti-stegasi-giatron-tou-nosokomeiou-apo-tin-perifereia-notiou-aigaiou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872673/suvota-skafos-stolise-gia-ta-hristougenna-me-to-pou-bike-o-septemvrios-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872671/sullipsi-68hronou-stin-komotini-pou-eihe-ton-titlo-vor-v-zakone-tis-rosikis-mafias-vrikan-pistoli-kai-heirovomvida/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872669/90hronos-odigouse-anapoda-stin-attiki-odo-kai-me-diploma-ligmeno/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872665/ti-apada-o-proin-dimarhos-patmou-gia-to-gavgiste-ki-allo-stin-proedro-tou-dimotikou-sumvouliou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T05:51:08.406498+00:00"
+      "seen_at_utc": "2026-09-02T06:17:10.200930+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1458446/o-adonis-thelei-kai-tetarti-tetraetia-mitsotaki/",
-      "title": "Ο Άδωνις θέλει και… τέταρτη τετραετία Μητσοτάκη",
-      "normalized_title": "Ο ΑΔΩΝΙΣ ΘΕΛΕΙ ΚΑΙ… ΤΕΤΑΡΤΗ ΤΕΤΡΑΕΤΙΑ ΜΗΤΣΟΤΑΚΗ",
+      "url": "https://www.efsyn.gr/ellada/1458448/den-itan-politiki-epilogi-leei-i-dimarhos-pentelis-gia-tin-apomakrynsi-tis-anubis/",
+      "title": "«Δεν ήταν πολιτική επιλογή» λέει η δήμαρχος Πεντέλης για την απομάκρυνση της Anubis",
+      "normalized_title": "«ΔΕΝ ΗΤΑΝ ΠΟΛΙΤΙΚΗ ΕΠΙΛΟΓΗ» ΛΕΕΙ Η ΔΗΜΑΡΧΟΣ ΠΕΝΤΕΛΗΣ ΓΙΑ ΤΗΝ ΑΠΟΜΑΚΡΥΝΣΗ ΤΗΣ ANUBIS",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1458446/o-adonis-thelei-kai-tetarti-tetraetia-mitsotaki/",
-        "https://www.efsyn.gr/politiki/1458441/einai-kostologimeni-i-omilia-mitsotaki-sti-deth/"
+        "https://www.efsyn.gr/ellada/1458448/den-itan-politiki-epilogi-leei-i-dimarhos-pentelis-gia-tin-apomakrynsi-tis-anubis/",
+        "https://www.efsyn.gr/politiki/1458458/o-alexis-tsipras-paroysiazei-to-shedio-gia-tin-ellada-tis-epomenis-dekaetias-metra-739-dis-eyro/",
+        "https://www.efsyn.gr/athlitismos/1458428/anagki-gia-enishysi-i-aek/",
+        "https://www.efsyn.gr/tehnes/1458422/sto-mikroskopio-oi-symvaseis-ergasias-toy-odap-me-idiotes/"
       ],
-      "seen_at_utc": "2026-09-02T05:51:08.406467+00:00"
+      "seen_at_utc": "2026-09-02T06:17:10.200889+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/sports/football/superbet-kypello-elladas-rixnontai-sti-maxi-olympiakos-kai-aek-remake-tou-persinou-telikou-stin-toumpa/",
-      "title": "Superbet Κύπελλο Ελλάδας: Ρίχνονται στη «μάχη» Ολυμπιακός και ΑΕΚ – «Remake» του περσινού τελικού στην Τούμπα",
-      "normalized_title": "SUPERBET ΚΥΠΕΛΛΟ ΕΛΛΑΔΑΣ: ΡΙΧΝΟΝΤΑΙ ΣΤΗ «ΜΑΧΗ» ΟΛΥΜΠΙΑΚΟΣ ΚΑΙ ΑΕΚ – «REMAKE» ΤΟΥ ΠΕΡΣΙΝΟΥ ΤΕΛΙΚΟΥ ΣΤΗΝ ΤΟΥΜΠΑ",
+      "url": "https://www.in.gr/2026/09/02/greece/lamia-synelifthi-66xronos-fygopoinos-ekkremousan-eis-varos-tou-synolikes-poines-120-eton/",
+      "title": "Συνελήφθη 66χρονος φυγόποινος - Εκκρεμούσαν εις βάρος του συνολικές ποινές 120 ετών",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 66ΧΡΟΝΟΣ ΦΥΓΟΠΟΙΝΟΣ - ΕΚΚΡΕΜΟΥΣΑΝ ΕΙΣ ΒΑΡΟΣ ΤΟΥ ΣΥΝΟΛΙΚΕΣ ΠΟΙΝΕΣ 120 ΕΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/sports/football/superbet-kypello-elladas-rixnontai-sti-maxi-olympiakos-kai-aek-remake-tou-persinou-telikou-stin-toumpa/",
-        "https://www.in.gr/2026/09/02/economy/akinita-ayksisi-stis-dorees-kai-tis-gonikes-paroxes-frenaroun-oi-agorapolisies/",
-        "https://www.in.gr/2026/09/02/greece/to-paidi-mas-dextike-bullying-giati-efyge-apo-ta-fourna-i-polytekni-oikogeneia-me-ta-eksi-paidia/",
-        "https://www.in.gr/2026/09/02/go-fun/fizz/danai-mparka-egkyos-sto-proto-paidi-tis-pos-to-anakoinose/",
-        "https://www.in.gr/2026/09/02/sports/football/anypomono-na-paikso-mprosta-sas-o-mouzakitis-esteile-to-proto-tou-minyma-stous-filous-tis-xal-vid/",
-        "https://www.in.gr/2026/09/02/world/kremlino-poutin-tramp-kai-si-endexetai-na-synantithoun-stin-epomeni-synodo-tis-apec-ton-noemvrio/"
+        "https://www.in.gr/2026/09/02/greece/lamia-synelifthi-66xronos-fygopoinos-ekkremousan-eis-varos-tou-synolikes-poines-120-eton/",
+        "https://www.in.gr/2026/09/02/greece/kefalonia-pyrovoloun-aloga-pou-anazitoun-trofi-se-katoikimenes-perioxes/",
+        "https://www.in.gr/2026/09/02/go-fun/anna-gouintour-mporei-to-fiasko-tou-met-me-ton-gkaliano-na-skotosei-tin-igemonia-tis/",
+        "https://www.in.gr/2026/09/02/world/poutin-provokatsia-o-germanikos-isxyrismos-gia-ti-leipsia-proelaynoume-stin-oukrania/"
       ],
-      "seen_at_utc": "2026-09-02T05:51:08.406431+00:00"
+      "seen_at_utc": "2026-09-02T06:17:10.200842+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T05:51:08.406572+00:00"
+  "updated_at_utc": "2026-09-02T06:17:10.201017+00:00"
 }
