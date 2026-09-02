@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564432496/florina-nea-selida-gia-to-diethnes/",
-      "title": "Φλώρινα: Νέα σελίδα για το «Διεθνές»",
-      "normalized_title": "ΦΛΩΡΙΝΑ: ΝΕΑ ΣΕΛΙΔΑ ΓΙΑ ΤΟ «ΔΙΕΘΝΕΣ»",
+      "url": "https://www.kathimerini.gr/politics/564434275/alexis-tsipras-live-i-paroysiasi-toy-oikonomikoy-programmatos-tis-elas/",
+      "title": "Αλέξης Τσίπρας: Live η παρουσίαση του οικονομικού προγράμματος της ΕΛΑΣ",
+      "normalized_title": "ΑΛΕΞΗΣ ΤΣΙΠΡΑΣ: LIVE Η ΠΑΡΟΥΣΙΑΣΗ ΤΟΥ ΟΙΚΟΝΟΜΙΚΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ ΤΗΣ ΕΛΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564432496/florina-nea-selida-gia-to-diethnes/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564434191/episkepsi-kalin-stin-athina-ti-syzitise-me-ton-dioikiti-tis-eyp/",
-        "https://www.kathimerini.gr/athletics/football/564434200/prasinos-o-oyna-eos-to-2030/"
+        "https://www.kathimerini.gr/politics/564434275/alexis-tsipras-live-i-paroysiasi-toy-oikonomikoy-programmatos-tis-elas/",
+        "https://www.kathimerini.gr/society/564434164/palaio-faliro-entopistike-kroysma-ioy-dytikoy-neiloy-ektaktoi-psekasmoi/",
+        "https://www.kathimerini.gr/economy/564432673/to-peirama-feidia/",
+        "https://www.kathimerini.gr/society/564434188/ta-35-grammaria-koka-nis-apokalypsan-950-000-eyro-syllipseis-se-peiraia-kai-rodo/",
+        "https://www.kathimerini.gr/politics/564434173/stayros-mpenos-paraitoymai-gia-logoys-prosopikis-axioprepeias/",
+        "https://www.kathimerini.gr/culture/arts/564432517/to-fantastiko-vasileio-tis-sesili-mpraoyn/",
+        "https://www.kathimerini.gr/culture/tv/564434089/harry-potter-kykloforise-to-neo-treiler-tis-seiras-toy-hbo/"
       ],
-      "seen_at_utc": "2026-09-02T17:30:04.737223+00:00"
+      "seen_at_utc": "2026-09-02T17:51:13.890842+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,40 +1265,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873095/neos-kok-pote-oi-odigoi-xanadinoun-exetaseis-gia-to-diploma/?utm_source=rss",
-      "title": "Νέος ΚΟΚ: Πότε οι οδηγοί ξαναδίνουν εξετάσεις για το δίπλωμα",
-      "normalized_title": "ΝΕΟΣ ΚΟΚ: ΠΟΤΕ ΟΙ ΟΔΗΓΟΙ ΞΑΝΑΔΙΝΟΥΝ ΕΞΕΤΑΣΕΙΣ ΓΙΑ ΤΟ ΔΙΠΛΩΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1873100/roma-blokaran-leoforeio-kai-propulakisan-odigo-stin-akti-miaouli-itan-ektos-orion/?utm_source=rss",
+      "title": "Ρομά μπλόκαραν λεωφορείο και προπυλάκισαν οδηγό στην Ακτή Μιαούλη: «Ήταν εκτός ορίων»",
+      "normalized_title": "ΡΟΜΑ ΜΠΛΟΚΑΡΑΝ ΛΕΩΦΟΡΕΙΟ ΚΑΙ ΠΡΟΠΥΛΑΚΙΣΑΝ ΟΔΗΓΟ ΣΤΗΝ ΑΚΤΗ ΜΙΑΟΥΛΗ: «ΗΤΑΝ ΕΚΤΟΣ ΟΡΙΩΝ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873095/neos-kok-pote-oi-odigoi-xanadinoun-exetaseis-gia-to-diploma/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873092/duo-sullipseis-gia-diakinisi-narkotikon-se-peiraia-kai-rodo-katashethikan-shedon-1-ekat-euro-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873090/auti-tin-kuriaki-me-to-proto-thema/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873100/roma-blokaran-leoforeio-kai-propulakisan-odigo-stin-akti-miaouli-itan-ektos-orion/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T17:30:04.737311+00:00"
+      "seen_at_utc": "2026-09-02T17:51:13.890937+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1459041/telos-epohis-gia-rontinei-ston-olympiako-synehizei-tin-kariera-toy-stin-santos/",
-      "title": "Τέλος εποχής για Ροντινέι στον Ολυμπιακό: Συνεχίζει την καριέρα του στην Σάντος",
-      "normalized_title": "ΤΕΛΟΣ ΕΠΟΧΗΣ ΓΙΑ ΡΟΝΤΙΝΕΙ ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ: ΣΥΝΕΧΙΖΕΙ ΤΗΝ ΚΑΡΙΕΡΑ ΤΟΥ ΣΤΗΝ ΣΑΝΤΟΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1459066/sok-sti-gallia-me-shedio-apagogis-toy-empape-synelifthi-18hronos-os-o-egkefalos/",
+      "title": "Σοκ στη Γαλλία με σχέδιο απαγωγής του Εμπαπέ: Συνελήφθη 18χρονος ως ο «εγκέφαλος»",
+      "normalized_title": "ΣΟΚ ΣΤΗ ΓΑΛΛΙΑ ΜΕ ΣΧΕΔΙΟ ΑΠΑΓΩΓΗΣ ΤΟΥ ΕΜΠΑΠΕ: ΣΥΝΕΛΗΦΘΗ 18ΧΡΟΝΟΣ ΩΣ Ο «ΕΓΚΕΦΑΛΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1459041/telos-epohis-gia-rontinei-ston-olympiako-synehizei-tin-kariera-toy-stin-santos/",
-        "https://www.efsyn.gr/kosmos/1459039/nayagio-stin-keryneia-anasyrthike-kai-9i-soros-paraitithike-o-ypoyrgos-metaforon-ton-katehomenon/",
-        "https://www.efsyn.gr/kosmos/1459033/o-tramp-proteinei-na-metonomastoyn-ta-stena-toy-ormoyz-se-stena-tramp/"
+        "https://www.efsyn.gr/athlitismos/1459066/sok-sti-gallia-me-shedio-apagogis-toy-empape-synelifthi-18hronos-os-o-egkefalos/",
+        "https://www.efsyn.gr/politiki/1458949/live-i-paroysiasi-toy-oikonomikoy-programmatos-tis-elas-apo-ton-alexi-tsipra/"
       ],
-      "seen_at_utc": "2026-09-02T17:30:04.737276+00:00"
+      "seen_at_utc": "2026-09-02T17:51:13.890914+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/politics/epikairotita/o-aleksis-tsipras-parousiazei-sxedio-diakyvernisis-gia-tin-ellada-pou-oramatizomaste-nea-ethniki-stratigiki-gia-anaptyksi-asfaleia-entimotita/",
-      "title": "Ο Αλέξης Τσίπρας παρουσιάζει σχέδιο διακυβέρνησης για «την Ελλάδα που οραματιζόμαστε» – Νέα εθνική στρατηγική για ανάπτυξη, ασφάλεια, εντιμότητα",
-      "normalized_title": "Ο ΑΛΕΞΗΣ ΤΣΙΠΡΑΣ ΠΑΡΟΥΣΙΑΖΕΙ ΣΧΕΔΙΟ ΔΙΑΚΥΒΕΡΝΗΣΗΣ ΓΙΑ «ΤΗΝ ΕΛΛΑΔΑ ΠΟΥ ΟΡΑΜΑΤΙΖΟΜΑΣΤΕ» – ΝΕΑ ΕΘΝΙΚΗ ΣΤΡΑΤΗΓΙΚΗ ΓΙΑ ΑΝΑΠΤΥΞΗ, ΑΣΦΑΛΕΙΑ, ΕΝΤΙΜΟΤΗΤΑ",
+      "url": "https://www.in.gr/2026/09/02/world/maxi-metaksy-oukranon-praktoron-me-aytous-tis-sbu-na-anoigoun-pyr-enantion-synadelfon-tous-tis-gur-vinteo/",
+      "title": "Μάχη μεταξύ Ουκρανών πρακτόρων, με αυτούς της SBU να ανοίγουν πυρ εναντίον συναδέλφων τους της GUR",
+      "normalized_title": "ΜΑΧΗ ΜΕΤΑΞΥ ΟΥΚΡΑΝΩΝ ΠΡΑΚΤΟΡΩΝ, ΜΕ ΑΥΤΟΥΣ ΤΗΣ SBU ΝΑ ΑΝΟΙΓΟΥΝ ΠΥΡ ΕΝΑΝΤΙΟΝ ΣΥΝΑΔΕΛΦΩΝ ΤΟΥΣ ΤΗΣ GUR",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/politics/epikairotita/o-aleksis-tsipras-parousiazei-sxedio-diakyvernisis-gia-tin-ellada-pou-oramatizomaste-nea-ethniki-stratigiki-gia-anaptyksi-asfaleia-entimotita/",
-        "https://www.in.gr/2026/09/02/sports/on-field/to-plano-tis-giounaitent-gia-tesseris-megales-metagrafes-tou-2027/",
-        "https://www.in.gr/2026/09/02/politics/epikairotita/yparxei-allos-dromos-me-vinteo-sto-tiktok-apantaei-o-koutsoumpas-ston-mitsotaki-gia-tin-ellada-2030/",
-        "https://www.in.gr/2026/09/02/sports/football/marko-kifisia-2-2-xortastiki-isopalia-me-tessera-gkol-sti-premiera-tou-kypellou-vid/",
-        "https://www.in.gr/matchcenter/6106044/"
+        "https://www.in.gr/2026/09/02/world/maxi-metaksy-oukranon-praktoron-me-aytous-tis-sbu-na-anoigoun-pyr-enantion-synadelfon-tous-tis-gur-vinteo/",
+        "https://www.in.gr/2026/09/02/world/anasyrthike-9os-nekros-apo-to-nayagio-stin-keryneia-apomakrynthike-o-ypourgos-metaforon-tou-pseydokratous/",
+        "https://www.in.gr/2026/09/02/world/klimakonei-epikindyna-o-zelenski-apagoreymeni-zoni-o-rosikos-enaerios-xoros/",
+        "https://www.in.gr/2026/09/02/world/kagia-kalas-polles-xores-tis-ee-tha-steiloun-antiaeroporika-sto-kievo-periorismoi-stis-theoriseis-gia-rosous/",
+        "https://www.in.gr/2026/09/02/sports/football/kai-typika-sti-santos-o-rontinei-pic/",
+        "https://www.in.gr/2026/09/02/life/lgbtqi/eimai-485-gkei-o-xanter-mpainten-gia-to-stigma-ton-ethismo-kai-tin-kryfi-mafia-misous-tis-ouasingkton/"
       ],
-      "seen_at_utc": "2026-09-02T17:17:04.136811+00:00"
+      "seen_at_utc": "2026-09-02T17:51:13.890883+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T17:30:04.737389+00:00"
+  "updated_at_utc": "2026-09-02T17:51:13.891009+00:00"
 }
