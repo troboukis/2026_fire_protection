@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564433942/antidraseis-stin-kina-gia-gynaika-poy-patise-se-kavoyki-zontanis-chelonas/",
-      "title": "Αντιδράσεις στην Κίνα για γυναίκα που πάτησε σε καβούκι ζωντανής χελώνας",
-      "normalized_title": "ΑΝΤΙΔΡΑΣΕΙΣ ΣΤΗΝ ΚΙΝΑ ΓΙΑ ΓΥΝΑΙΚΑ ΠΟΥ ΠΑΤΗΣΕ ΣΕ ΚΑΒΟΥΚΙ ΖΩΝΤΑΝΗΣ ΧΕΛΩΝΑΣ",
+      "url": "https://www.kathimerini.gr/world/564432373/stin-patagia-tis-tailandis-to-koyrasmeno-aeroplanoforo-lincoln/",
+      "title": "Στην Πατάγια της Ταϊλάνδης το «κουρασμένο» αεροπλανοφόρο «Lincoln»",
+      "normalized_title": "ΣΤΗΝ ΠΑΤΑΓΙΑ ΤΗΣ ΤΑΙΛΑΝΔΗΣ ΤΟ «ΚΟΥΡΑΣΜΕΝΟ» ΑΕΡΟΠΛΑΝΟΦΟΡΟ «LINCOLN»",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564433942/antidraseis-stin-kina-gia-gynaika-poy-patise-se-kavoyki-zontanis-chelonas/",
-        "https://www.kathimerini.gr/society/564432310/mylos-me-ta-spitakia-anakyklosis-kai-tis-chrimatodotiseis/",
-        "https://www.kathimerini.gr/society/564433771/kypseli-se-dorea-organon-prochoroyn-oi-goneis-toy-15chronoy-poy-echase-ti-zoi-toy-me-patini/",
-        "https://www.kathimerini.gr/world/564434389/steit-ntipartment-oi-ipa-epidiokoyn-na-prostateysoyn-ti-moni-sina/"
+        "https://www.kathimerini.gr/world/564432373/stin-patagia-tis-tailandis-to-koyrasmeno-aeroplanoforo-lincoln/",
+        "https://www.kathimerini.gr/culture/theater/564432502/se-akoyo-kai-se-siopo/",
+        "https://www.kathimerini.gr/politics/564434446/piges-ypoik-ta-metra-toy-tsipra-paraviazoyn-kathe-eyropaiko-kanona-i-kostologisi-toys/",
+        "https://www.kathimerini.gr/politics/564434431/pasok-o-tsipras-ekane-copy-paste-to-80-toy-programmatos-mas/",
+        "https://www.kathimerini.gr/world/564433615/den-ton-peirazei-na-ploytizei-apo-mia-tyrannia-o-foykoygiama-gia-ton-tramp-ti-dimokratia-kai-to-telos-tis-istorias/"
       ],
-      "seen_at_utc": "2026-09-02T19:17:16.643948+00:00"
+      "seen_at_utc": "2026-09-02T19:51:09.441366+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,24 +1273,29 @@
       "seen_at_utc": "2026-09-02T18:51:59.938846+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1459157/pasok-kata-tsipra-copy-paste-to-80-toy-programmatos-mas-epestrepse-ston-topo-toy-egklimatos-me-nees-aytapates/",
-      "title": "ΠΑΣΟΚ για ομιλία Τσίπρα: «Έκανε copy paste το 80% του προγράμματός μας, ενώ μας επιτίθεται με μανία»",
-      "normalized_title": "ΠΑΣΟΚ ΓΙΑ ΟΜΙΛΙΑ ΤΣΙΠΡΑ: «ΕΚΑΝΕ COPY PASTE ΤΟ 80% ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ ΜΑΣ, ΕΝΩ ΜΑΣ ΕΠΙΤΙΘΕΤΑΙ ΜΕ ΜΑΝΙΑ»",
+      "url": "https://www.efsyn.gr/athlitismos/1459178/ael-olympiakos-aneti-epikratisi-ton-erythroleykon-sti-larisa/",
+      "title": "ΑΕΛ – Ολυμπιακός: Άνετη επικράτηση των ερυθρόλευκων στη Λάρισα",
+      "normalized_title": "ΑΕΛ – ΟΛΥΜΠΙΑΚΟΣ: ΑΝΕΤΗ ΕΠΙΚΡΑΤΗΣΗ ΤΩΝ ΕΡΥΘΡΟΛΕΥΚΩΝ ΣΤΗ ΛΑΡΙΣΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1459157/pasok-kata-tsipra-copy-paste-to-80-toy-programmatos-mas-epestrepse-ston-topo-toy-egklimatos-me-nees-aytapates/",
-        "https://www.efsyn.gr/politiki/1459156/marinakis-gia-tsipra-paramenei-idios-ki-aparallahtos-kalpikes-yposheseis-kai-akostologites-parohes/"
+        "https://www.efsyn.gr/athlitismos/1459178/ael-olympiakos-aneti-epikratisi-ton-erythroleykon-sti-larisa/",
+        "https://www.efsyn.gr/oikonomia/1458571/aigaleo-ypo-exosi-oikogeneia-apo-pleistiriasmo-poy-den-eprepe-na-ginei/",
+        "https://www.efsyn.gr/ellada/1458717/iky-ekatontades-ypotrofoi-enan-hrono-horis-pliromi/",
+        "https://www.efsyn.gr/ellada/1459154/dyo-syllipseis-gia-ti-fotia-ston-mytika-thivas-xekinise-apo-katharismoys-se-fotovoltaiko-parko/",
+        "https://www.efsyn.gr/politiki/1459161/to-ypoyrgeio-oikonomikon-kostologise-sta-13-dis-eyro-to-programma-tis-elas-poy-anakoinose-o-alexis-tsipras/"
       ],
-      "seen_at_utc": "2026-09-02T19:30:07.736781+00:00"
+      "seen_at_utc": "2026-09-02T19:51:09.441438+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/greece/dyo-syllipseis-gia-tin-megali-fotia-sti-thiva-ekanan-ergasies-se-fotovoltaiko-parko/",
-      "title": "Δύο συλλήψεις για την μεγάλη φωτιά στη Θήβα – Έκαναν εργασίες σε φωτοβολταϊκό πάρκο",
-      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΗΝ ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗ ΘΗΒΑ – ΕΚΑΝΑΝ ΕΡΓΑΣΙΕΣ ΣΕ ΦΩΤΟΒΟΛΤΑΙΚΟ ΠΑΡΚΟ",
+      "url": "https://www.in.gr/2026/09/02/world/ypothesi-lintsei-klansi-gia-5i-imera-oi-enorkoi-den-kateliksan-se-apofasi-gia-tin-tripli-paidoktonia/",
+      "title": "Υπόθεση Λίντσεϊ Κλάνσι: Για 5η ημέρα οι ένορκοι δεν κατέληξαν σε απόφαση για την τριπλή παιδοκτονία",
+      "normalized_title": "ΥΠΟΘΕΣΗ ΛΙΝΤΣΕΙ ΚΛΑΝΣΙ: ΓΙΑ 5Η ΗΜΕΡΑ ΟΙ ΕΝΟΡΚΟΙ ΔΕΝ ΚΑΤΕΛΗΞΑΝ ΣΕ ΑΠΟΦΑΣΗ ΓΙΑ ΤΗΝ ΤΡΙΠΛΗ ΠΑΙΔΟΚΤΟΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/greece/dyo-syllipseis-gia-tin-megali-fotia-sti-thiva-ekanan-ergasies-se-fotovoltaiko-parko/"
+        "https://www.in.gr/2026/09/02/world/ypothesi-lintsei-klansi-gia-5i-imera-oi-enorkoi-den-kateliksan-se-apofasi-gia-tin-tripli-paidoktonia/",
+        "https://www.in.gr/2026/09/02/sports/on-field/o-gkolsales-ekane-tin-diafora/",
+        "https://www.in.gr/2026/09/02/go-fun/i-lizi-velasketh-prepei-na-pethanei-mathimata-ensynaisthisis-apo-tin-pio-gennaia-gynaika-ston-kosmo/"
       ],
-      "seen_at_utc": "2026-09-02T19:30:07.736712+00:00"
+      "seen_at_utc": "2026-09-02T19:51:09.441417+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T19:30:07.736857+00:00"
+  "updated_at_utc": "2026-09-02T19:51:09.441513+00:00"
 }
