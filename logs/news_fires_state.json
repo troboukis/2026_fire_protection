@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564433765/kai-pali-kasidiaris/",
-      "title": "Και πάλι Κασιδιάρης…",
-      "normalized_title": "ΚΑΙ ΠΑΛΙ ΚΑΣΙΔΙΑΡΗΣ…",
+      "url": "https://www.kathimerini.gr/society/reportaz/564431128/aygoystos-sta-epeigonta-13-500-peristatika-se-5-nisia/",
+      "title": "Αύγουστος στα επείγοντα: 13.500 περιστατικά σε 5 νησιά",
+      "normalized_title": "ΑΥΓΟΥΣΤΟΣ ΣΤΑ ΕΠΕΙΓΟΝΤΑ: 13.500 ΠΕΡΙΣΤΑΤΙΚΑ ΣΕ 5 ΝΗΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564433765/kai-pali-kasidiaris/",
-        "https://www.kathimerini.gr/society/564433780/kypseli-ithela-na-echo-panta-to-paidi-mazi-moy-i-apologia-tis-germanidas/"
+        "https://www.kathimerini.gr/society/reportaz/564431128/aygoystos-sta-epeigonta-13-500-peristatika-se-5-nisia/",
+        "https://www.kathimerini.gr/politics/564433828/geyma-mitsotaki-me-ton-megistana-ton-media-roypert-merntoch/",
+        "https://www.kathimerini.gr/society/564433819/fotia-ston-mytika-thivas-enischythikan-oi-dynameis-14-enaeria-sti-machi/",
+        "https://www.kathimerini.gr/life/city/564433678/xana-stin-agora-modiano-oi-thessalonikeis-vinteo-amp-eikones/",
+        "https://www.kathimerini.gr/culture/tv/564433810/anatolika-tis-edem-i-florens-pioy-sto-neo-megalo-stoichima-toy-netflix-treiler/"
       ],
-      "seen_at_utc": "2026-09-02T14:30:05.498794+00:00"
+      "seen_at_utc": "2026-09-02T14:51:20.556970+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1263,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872990/kupseli-profulakisteoi-oi-treis-katigoroumenoi-ti-upostirixan-stin-anakritria-narkotikon/?utm_source=rss",
-      "title": "Προφυλακίστηκαν οι τρεις της Κυψέλης: Αποκαλύψεις για τον 43χρονο σε νέα υπόθεση μαστροπείας και βιασμού - Δίωξη για τη δολοφονία του βρέφους",
-      "normalized_title": "ΠΡΟΦΥΛΑΚΙΣΤΗΚΑΝ ΟΙ ΤΡΕΙΣ ΤΗΣ ΚΥΨΕΛΗΣ: ΑΠΟΚΑΛΥΨΕΙΣ ΓΙΑ ΤΟΝ 43ΧΡΟΝΟ ΣΕ ΝΕΑ ΥΠΟΘΕΣΗ ΜΑΣΤΡΟΠΕΙΑΣ ΚΑΙ ΒΙΑΣΜΟΥ - ΔΙΩΞΗ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΒΡΕΦΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1872996/vrethike-i-15hroni-pou-eihe-exafanistei-sto-agrinio/?utm_source=rss",
+      "title": "Βρέθηκε η 15χρονη που είχε εξαφανιστεί στο Αγρίνιο",
+      "normalized_title": "ΒΡΕΘΗΚΕ Η 15ΧΡΟΝΗ ΠΟΥ ΕΙΧΕ ΕΞΑΦΑΝΙΣΤΕΙ ΣΤΟ ΑΓΡΙΝΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872990/kupseli-profulakisteoi-oi-treis-katigoroumenoi-ti-upostirixan-stin-anakritria-narkotikon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872982/omofona-enohos-o-58hronos-kathigitis-pou-aselgise-se-16hroni-mathitria-sti-larisa-poini-katheirxis-ennea-eton/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872996/vrethike-i-15hroni-pou-eihe-exafanistei-sto-agrinio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T14:30:05.498891+00:00"
+      "seen_at_utc": "2026-09-02T14:51:20.557075+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458905/nekro-vrefos-stin-kypseli-sti-fylaki-oi-treis-katigoroymenoi/",
-      "title": "Νεκρό βρέφος στην Κυψέλη: Στη φυλακή οι τρεις κατηγορούμενοι",
-      "normalized_title": "ΝΕΚΡΟ ΒΡΕΦΟΣ ΣΤΗΝ ΚΥΨΕΛΗ: ΣΤΗ ΦΥΛΑΚΗ ΟΙ ΤΡΕΙΣ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ",
+      "url": "https://www.efsyn.gr/politiki/1458920/o-dioikitis-ton-toyrkikon-mystikon-ypiresion-eihe-mystiki-synantisi-stin-athina-me-poia-atzenta-irthe-rota-o-syriza/",
+      "title": "Ο διοικητής των τουρκικών μυστικών υπηρεσιών είχε μυστική συνάντηση στην Αθήνα – Με ποια ατζέντα ήρθε, ρωτά ο ΣΥΡΙΖΑ",
+      "normalized_title": "Ο ΔΙΟΙΚΗΤΗΣ ΤΩΝ ΤΟΥΡΚΙΚΩΝ ΜΥΣΤΙΚΩΝ ΥΠΗΡΕΣΙΩΝ ΕΙΧΕ ΜΥΣΤΙΚΗ ΣΥΝΑΝΤΗΣΗ ΣΤΗΝ ΑΘΗΝΑ – ΜΕ ΠΟΙΑ ΑΤΖΕΝΤΑ ΗΡΘΕ, ΡΩΤΑ Ο ΣΥΡΙΖΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458905/nekro-vrefos-stin-kypseli-sti-fylaki-oi-treis-katigoroymenoi/"
+        "https://www.efsyn.gr/politiki/1458920/o-dioikitis-ton-toyrkikon-mystikon-ypiresion-eihe-mystiki-synantisi-stin-athina-me-poia-atzenta-irthe-rota-o-syriza/",
+        "https://www.efsyn.gr/oikonomia/1458740/mayri-trypa-to-emporio-e-e-kinas/",
+        "https://www.efsyn.gr/oikonomia/1458918/arhi-prostasias-katanaloti-sta-39-eyro-ton-mina-i-exoikonomisi-apo-ti-meiosi-timon-sta-soyper-market/",
+        "https://www.efsyn.gr/oikonomia/1458906/ti-thespizei-gia-tin-kratiki-arogi-thymaton-fysikon-katastrofon-to-neo-nomoshedio-toy-ypoyrgeioy-klimatikis-krisis/"
       ],
-      "seen_at_utc": "2026-09-02T14:30:05.498865+00:00"
+      "seen_at_utc": "2026-09-02T14:51:20.557059+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/poioi-mporoun-na-lavoun-enisxysi-eos-600-eyro-apo-ton-opeka/",
-      "title": "Ποιοι μπορούν να λάβουν ενίσχυση έως 600 ευρώ από τον ΟΠΕΚΑ",
-      "normalized_title": "ΠΟΙΟΙ ΜΠΟΡΟΥΝ ΝΑ ΛΑΒΟΥΝ ΕΝΙΣΧΥΣΗ ΕΩΣ 600 ΕΥΡΩ ΑΠΟ ΤΟΝ ΟΠΕΚΑ",
+      "url": "https://www.in.gr/2026/09/02/greece/evros-paraitithike-o-mpenos-apo-tin-epitropi-anasygkrotisis-me-varies-aixmes-gia-tin-ylopoiisi-tou-masterplan/",
+      "title": "Παραιτήθηκε ο Μπένος από την Επιτροπή Ανασυγκρότησης του Έβρου με βαριές αιχμές για την υλοποίηση του Masterplan",
+      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ Ο ΜΠΕΝΟΣ ΑΠΟ ΤΗΝ ΕΠΙΤΡΟΠΗ ΑΝΑΣΥΓΚΡΟΤΗΣΗΣ ΤΟΥ ΕΒΡΟΥ ΜΕ ΒΑΡΙΕΣ ΑΙΧΜΕΣ ΓΙΑ ΤΗΝ ΥΛΟΠΟΙΗΣΗ ΤΟΥ MASTERPLAN",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/poioi-mporoun-na-lavoun-enisxysi-eos-600-eyro-apo-ton-opeka/",
-        "https://www.in.gr/2026/09/02/sports/football/o-panathinaikos-kleinei-ton-ounai-me-16-ek-eyro/",
-        "https://www.in.gr/2026/09/02/sports/on-field/i-elliniki-grafi-ton-lanoua-valeri-alonso-kai-i-sentra/",
-        "https://www.in.gr/2026/09/02/stories/liopetri-ammoxostou-i-maxi-tou-axyrona/"
+        "https://www.in.gr/2026/09/02/greece/evros-paraitithike-o-mpenos-apo-tin-epitropi-anasygkrotisis-me-varies-aixmes-gia-tin-ylopoiisi-tou-masterplan/",
+        "https://www.in.gr/2026/09/02/politics/epikairotita/syriza-me-poia-atzenta-irthe-o-arxigos-tis-mit-stin-ellada/",
+        "https://www.in.gr/2026/09/02/greece/kypseli-profylakisteoi-to-zeygari-kai-o-26xronos-meta-tis-apologies-tous-ti-ypostiriksan/",
+        "https://www.in.gr/2026/09/02/go-fun/fizz/i-tzenifer-gkarner-moirazetai-mia-palia-fotografia-apo-ton-xoro-apofoitisis-tis/",
+        "https://www.in.gr/2026/09/02/greece/nekro-vrefos-stin-kypseli-den-trypisame-to-moro-ton-pago-xtypaga-sokaroun-oi-kynikes-perigrafes-tou-43xronou/",
+        "https://www.in.gr/matchcenter/6106042/"
       ],
-      "seen_at_utc": "2026-09-02T14:30:05.498840+00:00"
+      "seen_at_utc": "2026-09-02T14:51:20.557028+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T14:30:05.498961+00:00"
+  "updated_at_utc": "2026-09-02T14:51:20.557164+00:00"
 }
