@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564433261/theories-synomosias-xana-gia-to-matia-ermitika-kleista-toy-kioymprik/",
-      "title": "Θεωρίες συνωμοσίας (ξανά) για το «Μάτια Ερμητικά Κλειστά» του Κιούμπρικ",
-      "normalized_title": "ΘΕΩΡΙΕΣ ΣΥΝΩΜΟΣΙΑΣ (ΞΑΝΑ) ΓΙΑ ΤΟ «ΜΑΤΙΑ ΕΡΜΗΤΙΚΑ ΚΛΕΙΣΤΑ» ΤΟΥ ΚΙΟΥΜΠΡΙΚ",
+      "url": "https://www.kathimerini.gr/society/564433420/poly-ypsilos-kindynos-pyrkagias-kai-ayrio-03-09-se-portokali-synagermo-arketes-perioches/",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς και αύριο (03/09) – Σε «πορτοκαλί συναγερμό» αρκετές περιοχές",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΚΑΙ ΑΥΡΙΟ (03/09) – ΣΕ «ΠΟΡΤΟΚΑΛΙ ΣΥΝΑΓΕΡΜΟ» ΑΡΚΕΤΕΣ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564433261/theories-synomosias-xana-gia-to-matia-ermitika-kleista-toy-kioymprik/",
-        "https://www.kathimerini.gr/world/564433369/erntogan-i-ellada-na-egkataleipsei-ti-stratiotikopoiisi-ton-nision/"
+        "https://www.kathimerini.gr/society/564433420/poly-ypsilos-kindynos-pyrkagias-kai-ayrio-03-09-se-portokali-synagermo-arketes-perioches/",
+        "https://www.kathimerini.gr/society/564433396/rodos-anilikoi-zoysan-se-athlies-synthikes-synelifthisan-oi-goneis-toys/"
       ],
-      "seen_at_utc": "2026-09-02T10:30:07.466679+00:00"
+      "seen_at_utc": "2026-09-02T10:51:33.922200+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872848/polu-upsilos-kindunos-purkagias-aurio-gia-tin-attiki-kai-alles-epta-periohes-deite-ton-harti/?utm_source=rss",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο για την Αττική και άλλες επτά περιοχές, δείτε τον χάρτη",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ ΓΙΑ ΤΗΝ ΑΤΤΙΚΗ ΚΑΙ ΑΛΛΕΣ ΕΠΤΑ ΠΕΡΙΟΧΕΣ, ΔΕΙΤΕ ΤΟΝ ΧΑΡΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1872863/thessaloniki-sti-fulaki-o-38hronos-pou-purovolise-me-karabina-mesa-se-psilikatzidiko/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Στη φυλακή ο 38χρονος που πυροβόλησε με καραμπίνα μέσα σε ψιλικατζίδικο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΗ ΦΥΛΑΚΗ Ο 38ΧΡΟΝΟΣ ΠΟΥ ΠΥΡΟΒΟΛΗΣΕ ΜΕ ΚΑΡΑΜΠΙΝΑ ΜΕΣΑ ΣΕ ΨΙΛΙΚΑΤΖΙΔΙΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872848/polu-upsilos-kindunos-purkagias-aurio-gia-tin-attiki-kai-alles-epta-periohes-deite-ton-harti/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872863/thessaloniki-sti-fulaki-o-38hronos-pou-purovolise-me-karabina-mesa-se-psilikatzidiko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872853/sunelifthisan-duo-nearoi-gia-narkotika-sto-rethumno-katashethikan-kokaini-metrita-kai-ih/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T10:30:07.466776+00:00"
+      "seen_at_utc": "2026-09-02T10:51:33.922293+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458711/ypopto-antikeimeno-stin-filellinon-kleistoi-dromoi/",
-      "title": "Ύποπτο αντικείμενο στην Φιλελλήνων – Κλειστοί δρόμοι",
-      "normalized_title": "ΥΠΟΠΤΟ ΑΝΤΙΚΕΙΜΕΝΟ ΣΤΗΝ ΦΙΛΕΛΛΗΝΩΝ – ΚΛΕΙΣΤΟΙ ΔΡΟΜΟΙ",
+      "url": "https://www.efsyn.gr/politiki/1458731/voyli-i-nd-mplokare-tin-eklogi-akrita-gia-tin-antiproedria-169-paron-kai-119-yper/",
+      "title": "Βουλή: Η ΝΔ μπλόκαρε την εκλογή Ακρίτα στην αντιπροεδρία – 169 παρών και 119 υπέρ",
+      "normalized_title": "ΒΟΥΛΗ: Η ΝΔ ΜΠΛΟΚΑΡΕ ΤΗΝ ΕΚΛΟΓΗ ΑΚΡΙΤΑ ΣΤΗΝ ΑΝΤΙΠΡΟΕΔΡΙΑ – 169 ΠΑΡΩΝ ΚΑΙ 119 ΥΠΕΡ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458711/ypopto-antikeimeno-stin-filellinon-kleistoi-dromoi/",
-        "https://www.efsyn.gr/ellada/1458699/kriti-ilektroniki-apati-mamoyth-me-leia-500-000-eyro-idio-motivo-me-palioteri-ypothesi/"
+        "https://www.efsyn.gr/politiki/1458731/voyli-i-nd-mplokare-tin-eklogi-akrita-gia-tin-antiproedria-169-paron-kai-119-yper/",
+        "https://www.efsyn.gr/politiki/1458700/proklitikos-erntogan-i-ellada-prepei-na-egkataleipsei-ton-lathos-dromo-toy-exoplismoy-ton-nision/"
       ],
-      "seen_at_utc": "2026-09-02T10:30:07.466752+00:00"
+      "seen_at_utc": "2026-09-02T10:51:33.922271+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/greece/vrethike-i-15xroni-pou-eixe-eksafanistei-apo-to-spiti-tis-sto-agrinio/",
-      "title": "Βρέθηκε η 15χρονη που είχε εξαφανιστεί από το σπίτι της στο Αγρίνιο",
-      "normalized_title": "ΒΡΕΘΗΚΕ Η 15ΧΡΟΝΗ ΠΟΥ ΕΙΧΕ ΕΞΑΦΑΝΙΣΤΕΙ ΑΠΟ ΤΟ ΣΠΙΤΙ ΤΗΣ ΣΤΟ ΑΓΡΙΝΙΟ",
+      "url": "https://www.in.gr/2026/09/02/greece/poly-ypsilos-kindynos-pyrkagias-tin-pempti-se-attiki-nisia-aigaiou-kai-eyvoia/",
+      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς την Πέμπτη σε Αττική, νησιά Αιγαίου και Εύβοια",
+      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗΝ ΠΕΜΠΤΗ ΣΕ ΑΤΤΙΚΗ, ΝΗΣΙΑ ΑΙΓΑΙΟΥ ΚΑΙ ΕΥΒΟΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/greece/vrethike-i-15xroni-pou-eixe-eksafanistei-apo-to-spiti-tis-sto-agrinio/",
-        "https://www.in.gr/2026/09/02/greece/synagermos-stis-arxes-entopistike-ypopto-antikeimeno-stin-filellinon/",
-        "https://www.in.gr/2026/09/02/greece/apofylakizetai-o-nikos-maziotis-apofylakizomai-me-liksi-poinis/",
-        "https://www.in.gr/2026/09/02/world/germania-i-kyvernisi-ependysei-stis-rosikes-yvridikes-apeiles-os-pedio-syspeirosis/"
+        "https://www.in.gr/2026/09/02/greece/poly-ypsilos-kindynos-pyrkagias-tin-pempti-se-attiki-nisia-aigaiou-kai-eyvoia/",
+        "https://www.in.gr/2026/09/02/politics/diplomatia/proklitikos-erntogan-zita-na-egkataleipsei-i-ellada-ti-stratiotikopoiisi-ton-nision/",
+        "https://www.in.gr/2026/09/02/sports/football/sti-siti-o-entso-fernantes-isofarise-to-rekor-tis-akrivoteris-metagrafis-vid-pic/",
+        "https://www.in.gr/2026/09/02/plus/kid/mageia-ton-vivlion-pos-tha-entharrynoume-ta-paidia-na-agapisoun-tin-anagnosi/",
+        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/koutsoumpas-to-kke-stirizei-ton-dikaio-agona-gia-monimopoiisi-olon-ton-pyrosveston/"
       ],
-      "seen_at_utc": "2026-09-02T10:30:07.466734+00:00"
+      "seen_at_utc": "2026-09-02T10:51:33.922242+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T10:30:07.466878+00:00"
+  "updated_at_utc": "2026-09-02T10:51:33.922376+00:00"
 }
