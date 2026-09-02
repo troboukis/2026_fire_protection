@@ -1,23 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564432895/poytin-kata-zelenski-me-tromokrates-den-syndialegomai-sfodri-epithesi-stin-odisso/",
-      "title": "Πούτιν κατά Ζελένσκι: Με τρομοκράτες δεν συνδιαλέγομαι – Σφοδρή επίθεση στην Οδησσό",
-      "normalized_title": "ΠΟΥΤΙΝ ΚΑΤΑ ΖΕΛΕΝΣΚΙ: ΜΕ ΤΡΟΜΟΚΡΑΤΕΣ ΔΕΝ ΣΥΝΔΙΑΛΕΓΟΜΑΙ – ΣΦΟΔΡΗ ΕΠΙΘΕΣΗ ΣΤΗΝ ΟΔΗΣΣΟ",
+      "url": "https://www.kathimerini.gr/opinion/564432463/allo-athina-allo-eparchia/",
+      "title": "Αλλο Αθήνα, άλλο επαρχία",
+      "normalized_title": "ΑΛΛΟ ΑΘΗΝΑ, ΑΛΛΟ ΕΠΑΡΧΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564432895/poytin-kata-zelenski-me-tromokrates-den-syndialegomai-sfodri-epithesi-stin-odisso/",
-        "https://www.kathimerini.gr/politics/564432274/me-kostologimenes-paroches-sti-thessaloniki-o-alexis-tsipras/",
-        "https://www.kathimerini.gr/society/564427105/imporei-na-ploytisi-ton-topon-mas/",
-        "https://www.kathimerini.gr/athletics/sports/564432922/sti-chal-o-christos-moyzakitis-sympaiktis-xana-me-ton-konstanti-tzolaki/",
-        "https://www.kathimerini.gr/world/564432913/konstantinoypoli-sygkroysi-dyo-emporikon-ploion-sti-thalassa-toy-marmara/",
-        "https://www.kathimerini.gr/k/travel/564409018/oyranoypoli-enas-topos-anamesa-se-dyo-kosmoys/",
-        "https://www.kathimerini.gr/visual/photography/564432079/ta-filodorimata-dyskolepsan-poly/",
-        "https://www.kathimerini.gr/k/gastronomos/564431899/ta-stafidopsoma-toy-patera-pa-sioy/",
-        "https://www.kathimerini.gr/istoria/564425290/i-nychta-poy-i-athina-kerdise-toys-olympiakoys-agones-toy-2004-to-thriler-ton-psifoforion-kai-ta-panigyria-sto-zappeio/",
-        "https://www.kathimerini.gr/culture/564417328/i-moni-fora-poy-o-antonis-vardis-zitise-apo-tragoydisti-na-ermineysei-tragoydi-toy/",
-        "https://www.kathimerini.gr/world/564432907/ipa-prosagogi-se-diki-toy-feromenoy-os-dolofonoy-toy-tsarli-kerk/"
+        "https://www.kathimerini.gr/opinion/564432463/allo-athina-allo-eparchia/",
+        "https://www.kathimerini.gr/opinion/564432460/antiparathesi-me-politiko-logo/",
+        "https://www.kathimerini.gr/opinion/564432475/o-gordios-desmos-ton-pollon-aytokiniton/",
+        "https://www.kathimerini.gr/opinion/564432481/tyfles-opseis-aschimes-taratses/",
+        "https://www.kathimerini.gr/opinion/564432247/theoreio-i-siopi-toy-voridi/",
+        "https://www.kathimerini.gr/society/564432943/lamia-synelifthi-66chronos-me-katadikes-120-eton-pos-entopistike/"
       ],
-      "seen_at_utc": "2026-09-02T05:16:58.945164+00:00"
+      "seen_at_utc": "2026-09-02T05:29:58.803776+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,28 +1273,30 @@
       "seen_at_utc": "2026-09-02T05:16:58.945266+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1458410/o-plithorismos-pire-fora-ton-aygoysto/",
-      "title": "Ο πληθωρισμός πήρε… φόρα τον Αύγουστο",
-      "normalized_title": "Ο ΠΛΗΘΩΡΙΣΜΟΣ ΠΗΡΕ… ΦΟΡΑ ΤΟΝ ΑΥΓΟΥΣΤΟ",
+      "url": "https://www.efsyn.gr/ellada/1458419/foyrna-eyrytanias-feygoyme-giati-to-paidi-mas-dehthike-bullying-zoysame-se-spiti-me-pontikia/",
+      "title": "Φουρνά Ευρυτανίας: «Φεύγουμε γιατί το παιδί μας δέχθηκε bullying – Ζούσαμε σε σπίτι με ποντίκια»",
+      "normalized_title": "ΦΟΥΡΝΑ ΕΥΡΥΤΑΝΙΑΣ: «ΦΕΥΓΟΥΜΕ ΓΙΑΤΙ ΤΟ ΠΑΙΔΙ ΜΑΣ ΔΕΧΘΗΚΕ BULLYING – ΖΟΥΣΑΜΕ ΣΕ ΣΠΙΤΙ ΜΕ ΠΟΝΤΙΚΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1458410/o-plithorismos-pire-fora-ton-aygoysto/",
-        "https://www.efsyn.gr/ellada/1458412/kairos-ekriktiko-kokteil-zestis-me-vrohes-kataigides-kai-afrikaniki-skoni-oi-periohes-poy-tha-pligoyn/"
+        "https://www.efsyn.gr/ellada/1458419/foyrna-eyrytanias-feygoyme-giati-to-paidi-mas-dehthike-bullying-zoysame-se-spiti-me-pontikia/",
+        "https://www.efsyn.gr/politiki/1458432/oportoynistis-pliroys-apasholisis/",
+        "https://www.efsyn.gr/kosmos/1458427/sygkroysi-dyo-emporikon-ploion-me-toyrkiki-simaia-anoihta-tis-konstantinoypolis/",
+        "https://www.efsyn.gr/athlitismos/1458417/rekor-stin-premier-league-sta-146-ekat-eyro-i-metagrafi-toy-fernantes-sti-siti/",
+        "https://www.efsyn.gr/politiki/1458405/pyra-doyroy-me-polloys-apodektes/",
+        "https://www.efsyn.gr/ellada/1458424/penthos-gia-ton-ahillea-mpeo-pethane-i-adelfi-toy/"
       ],
-      "seen_at_utc": "2026-09-02T05:16:58.945235+00:00"
+      "seen_at_utc": "2026-09-02T05:29:58.803855+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/politics/politiki-grammateia/pasok-oi-mpalothies-kata-mitsotaki-kai-tsipra-gia-to-idiotiko-xreos-oi-kritikes-lyres-kai-ta-proeortia-tis-deth/",
-      "title": "ΠΑΣΟΚ: Οι «μπαλωθιές» κατά Μητσοτάκη και Τσίπρα για το ιδιωτικό χρέος, οι κρητικές λύρες και τα «προεόρτια» της ΔΕΘ",
-      "normalized_title": "ΠΑΣΟΚ: ΟΙ «ΜΠΑΛΩΘΙΕΣ» ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ ΚΑΙ ΤΣΙΠΡΑ ΓΙΑ ΤΟ ΙΔΙΩΤΙΚΟ ΧΡΕΟΣ, ΟΙ ΚΡΗΤΙΚΕΣ ΛΥΡΕΣ ΚΑΙ ΤΑ «ΠΡΟΕΟΡΤΙΑ» ΤΗΣ ΔΕΘ",
+      "url": "https://www.in.gr/2026/09/02/greece/attiki-odos-apo-to-2018-eixe-liksei-to-diploma-tou-90xronou-pou-odigouse-anapoda/",
+      "title": "Από το 2018 είχε λήξει το δίπλωμα του 90χρονου που οδηγούσε ανάποδα στην Αττική Οδό",
+      "normalized_title": "ΑΠΟ ΤΟ 2018 ΕΙΧΕ ΛΗΞΕΙ ΤΟ ΔΙΠΛΩΜΑ ΤΟΥ 90ΧΡΟΝΟΥ ΠΟΥ ΟΔΗΓΟΥΣΕ ΑΝΑΠΟΔΑ ΣΤΗΝ ΑΤΤΙΚΗ ΟΔΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/pasok-oi-mpalothies-kata-mitsotaki-kai-tsipra-gia-to-idiotiko-xreos-oi-kritikes-lyres-kai-ta-proeortia-tis-deth/",
-        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/tsipras-to-kyvernitiko-sxedio-gia-to-2027-2030-oi-eksaggelies-ton-74-dis-eyro-kai-o-kanonas-tis-monimis-pigis-xrimatodotisis/",
-        "https://www.in.gr/2026/09/02/world/apo-to-kirgistan-mexri-tis-ipa-i-diplomatiki-antepithesi-tou-si-tzinpingk/",
-        "https://www.in.gr/2026/09/02/world/senaria-polemou-israil-tourkias-poion-tha-epelegan-oi-ipa-ti-tha-ekane-to-nato-pou-vrisketai-i-ellada/",
-        "https://www.in.gr/2026/09/02/life/music/cilia-katrali-kai-savina-gia-proti-fora-mazi-sti-skini/"
+        "https://www.in.gr/2026/09/02/greece/attiki-odos-apo-to-2018-eixe-liksei-to-diploma-tou-90xronou-pou-odigouse-anapoda/",
+        "https://www.in.gr/2026/09/02/world/sygkrousi-dyo-emporikon-ploion-anoikta-tis-konstantinoupolis/",
+        "https://www.in.gr/2026/09/02/sports/basketball/i-fiba-airei-tous-periorismous-gia-rosous-kai-leykorosous-athlites/"
       ],
-      "seen_at_utc": "2026-09-02T05:16:58.945211+00:00"
+      "seen_at_utc": "2026-09-02T05:29:58.803818+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T05:16:58.945353+00:00"
+  "updated_at_utc": "2026-09-02T05:29:58.803927+00:00"
 }
