@@ -1,14 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564433420/poly-ypsilos-kindynos-pyrkagias-kai-ayrio-03-09-se-portokali-synagermo-arketes-perioches/",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς και αύριο (03/09) – Σε «πορτοκαλί συναγερμό» αρκετές περιοχές",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΚΑΙ ΑΥΡΙΟ (03/09) – ΣΕ «ΠΟΡΤΟΚΑΛΙ ΣΥΝΑΓΕΡΜΟ» ΑΡΚΕΤΕΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/culture/agenda/564433450/exodos-stin-athina-kai-ektos-tin-tetarti-2-9-la-coka-nostra-kai-vakches/",
+      "title": "Εξοδος στην Αθήνα (και εκτός) την Τετάρτη 2/9: La Coka Nostra και Βακχες",
+      "normalized_title": "ΕΞΟΔΟΣ ΣΤΗΝ ΑΘΗΝΑ (ΚΑΙ ΕΚΤΟΣ) ΤΗΝ ΤΕΤΑΡΤΗ 2/9: LA COKA NOSTRA ΚΑΙ ΒΑΚΧΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564433420/poly-ypsilos-kindynos-pyrkagias-kai-ayrio-03-09-se-portokali-synagermo-arketes-perioches/",
-        "https://www.kathimerini.gr/society/564433396/rodos-anilikoi-zoysan-se-athlies-synthikes-synelifthisan-oi-goneis-toys/"
+        "https://www.kathimerini.gr/culture/agenda/564433450/exodos-stin-athina-kai-ektos-tin-tetarti-2-9-la-coka-nostra-kai-vakches/",
+        "https://www.kathimerini.gr/world/564433453/pethane-o-zan-pol-rapeno-skinothetis-toy-syrano-nte-mperzerak/",
+        "https://www.kathimerini.gr/k/k-magazine/564431671/pol-meskal-pos-akoygetai-enas-erotas/",
+        "https://www.kathimerini.gr/economy/international/564432778/to-aperol-spritz-nikise-ti-sampania/",
+        "https://www.kathimerini.gr/opinion/sketches/564433393/skitso-toy-dimitri-chantzopoyloy-02-09-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564433387/skitso-toy-andrea-petroylaki-02-09-26/",
+        "https://www.kathimerini.gr/world/564433435/o-zelenski-antikatestise-ton-dioikiti-ton-chersaion-dynameon-tis-oykranias/",
+        "https://www.kathimerini.gr/politics/parliament/564433408/voyli-entasi-stin-psifoforia-gia-akrita-den-exelegi-sti-thesi-tis-antiproedroy/",
+        "https://www.kathimerini.gr/world/564433423/katolisthisi-sto-nepal-eimaste-vevaioi-oti-yparchoyn-akomi-zontanoi/"
       ],
-      "seen_at_utc": "2026-09-02T10:51:33.922200+00:00"
+      "seen_at_utc": "2026-09-02T11:17:10.340477+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1267,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872863/thessaloniki-sti-fulaki-o-38hronos-pou-purovolise-me-karabina-mesa-se-psilikatzidiko/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Στη φυλακή ο 38χρονος που πυροβόλησε με καραμπίνα μέσα σε ψιλικατζίδικο",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΗ ΦΥΛΑΚΗ Ο 38ΧΡΟΝΟΣ ΠΟΥ ΠΥΡΟΒΟΛΗΣΕ ΜΕ ΚΑΡΑΜΠΙΝΑ ΜΕΣΑ ΣΕ ΨΙΛΙΚΑΤΖΙΔΙΚΟ",
+      "url": "https://www.protothema.gr/greece/article/1872875/nea-epeisodia-sti-domi-metanaston-sto-kleidi-serron-petaxan-petres-se-astunomikous-kai-prokalesan-fthores-se-peripoliko/?utm_source=rss",
+      "title": "Νέα επεισόδια στη δομή μεταναστών στο Κλειδί Σερρών, πέταξαν πέτρες σε αστυνομικούς και προκάλεσαν φθορές σε περιπολικό",
+      "normalized_title": "ΝΕΑ ΕΠΕΙΣΟΔΙΑ ΣΤΗ ΔΟΜΗ ΜΕΤΑΝΑΣΤΩΝ ΣΤΟ ΚΛΕΙΔΙ ΣΕΡΡΩΝ, ΠΕΤΑΞΑΝ ΠΕΤΡΕΣ ΣΕ ΑΣΤΥΝΟΜΙΚΟΥΣ ΚΑΙ ΠΡΟΚΑΛΕΣΑΝ ΦΘΟΡΕΣ ΣΕ ΠΕΡΙΠΟΛΙΚΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872863/thessaloniki-sti-fulaki-o-38hronos-pou-purovolise-me-karabina-mesa-se-psilikatzidiko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872853/sunelifthisan-duo-nearoi-gia-narkotika-sto-rethumno-katashethikan-kokaini-metrita-kai-ih/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872875/nea-epeisodia-sti-domi-metanaston-sto-kleidi-serron-petaxan-petres-se-astunomikous-kai-prokalesan-fthores-se-peripoliko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872870/i-mclaren-racing-erhetai-athina-to-allwyn-x-mclaren-racing-live-in-athens-anevazei-strofes-stis-3-oktovriou-sto-oaka/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T10:51:33.922293+00:00"
+      "seen_at_utc": "2026-09-02T11:17:10.340621+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1458731/voyli-i-nd-mplokare-tin-eklogi-akrita-gia-tin-antiproedria-169-paron-kai-119-yper/",
-      "title": "Βουλή: Η ΝΔ μπλόκαρε την εκλογή Ακρίτα στην αντιπροεδρία – 169 παρών και 119 υπέρ",
-      "normalized_title": "ΒΟΥΛΗ: Η ΝΔ ΜΠΛΟΚΑΡΕ ΤΗΝ ΕΚΛΟΓΗ ΑΚΡΙΤΑ ΣΤΗΝ ΑΝΤΙΠΡΟΕΔΡΙΑ – 169 ΠΑΡΩΝ ΚΑΙ 119 ΥΠΕΡ",
+      "url": "https://www.efsyn.gr/ellada/1458732/tragodia-stin-eyvoia-nekra-dyo-vrefi-epeita-apo-aifnidio-toketo/",
+      "title": "Τραγωδία στην Εύβοια: Νεκρά δύο βρέφη έπειτα από αιφνίδιο τοκετό",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΕΥΒΟΙΑ: ΝΕΚΡΑ ΔΥΟ ΒΡΕΦΗ ΕΠΕΙΤΑ ΑΠΟ ΑΙΦΝΙΔΙΟ ΤΟΚΕΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1458731/voyli-i-nd-mplokare-tin-eklogi-akrita-gia-tin-antiproedria-169-paron-kai-119-yper/",
-        "https://www.efsyn.gr/politiki/1458700/proklitikos-erntogan-i-ellada-prepei-na-egkataleipsei-ton-lathos-dromo-toy-exoplismoy-ton-nision/"
+        "https://www.efsyn.gr/ellada/1458732/tragodia-stin-eyvoia-nekra-dyo-vrefi-epeita-apo-aifnidio-toketo/",
+        "https://www.efsyn.gr/stiles/1458631/tha-taraxei-ta-limnazonta-nera-toy-kentrooy-pasok/",
+        "https://www.efsyn.gr/stiles/1458624/kynigontas-himaires/",
+        "https://www.efsyn.gr/ellada/1458753/larisa-efesi-kata-tis-apofasis-apofylakisis-toy-idioktiti-tis-violanta-apo-syggeneis-ton-thymaton/",
+        "https://www.efsyn.gr/tehnes/1458750/zan-pol-rapeno-pethane-se-ilikia-94-eton-o-skinothetis-toy-syrano-nte-mperzerak/",
+        "https://www.efsyn.gr/life/1458706/maria-anastasopoyloy-gia-tin-katapsyxi-oarion-itan-mia-poly-monahiki-diadikasia-itan-protognoro/",
+        "https://www.efsyn.gr/ellada/1458743/lixi-synagermoy-gia-to-ypopto-antikeimeno-exo-apo-trapeza-sti-filellinon-egine-eleghomeni-ekrixi/"
       ],
-      "seen_at_utc": "2026-09-02T10:51:33.922271+00:00"
+      "seen_at_utc": "2026-09-02T11:17:10.340576+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/greece/poly-ypsilos-kindynos-pyrkagias-tin-pempti-se-attiki-nisia-aigaiou-kai-eyvoia/",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς την Πέμπτη σε Αττική, νησιά Αιγαίου και Εύβοια",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗΝ ΠΕΜΠΤΗ ΣΕ ΑΤΤΙΚΗ, ΝΗΣΙΑ ΑΙΓΑΙΟΥ ΚΑΙ ΕΥΒΟΙΑ",
+      "url": "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/se-ypsilo-trietias-oi-times-tou-fysikou-aeriou-fovoi-gia-ton-xeimona/",
+      "title": "Σε υψηλό τριετίας οι τιμές του φυσικού αερίου – Φόβοι για τον χειμώνα",
+      "normalized_title": "ΣΕ ΥΨΗΛΟ ΤΡΙΕΤΙΑΣ ΟΙ ΤΙΜΕΣ ΤΟΥ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ – ΦΟΒΟΙ ΓΙΑ ΤΟΝ ΧΕΙΜΩΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/greece/poly-ypsilos-kindynos-pyrkagias-tin-pempti-se-attiki-nisia-aigaiou-kai-eyvoia/",
-        "https://www.in.gr/2026/09/02/politics/diplomatia/proklitikos-erntogan-zita-na-egkataleipsei-i-ellada-ti-stratiotikopoiisi-ton-nision/",
-        "https://www.in.gr/2026/09/02/sports/football/sti-siti-o-entso-fernantes-isofarise-to-rekor-tis-akrivoteris-metagrafis-vid-pic/",
-        "https://www.in.gr/2026/09/02/plus/kid/mageia-ton-vivlion-pos-tha-entharrynoume-ta-paidia-na-agapisoun-tin-anagnosi/",
-        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/koutsoumpas-to-kke-stirizei-ton-dikaio-agona-gia-monimopoiisi-olon-ton-pyrosveston/"
+        "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/se-ypsilo-trietias-oi-times-tou-fysikou-aeriou-fovoi-gia-ton-xeimona/",
+        "https://www.in.gr/2026/09/02/go-fun/fizz/ithele-ta-kai-epathe-ta-to-alt-right-ferefono-mailo-giannopoulos-tora-metanionei-pou-stirikse-ton-tramp/",
+        "https://www.in.gr/2026/09/02/plus/medianews/vavoura-erxetai-ayto-to-savvato-mazi-me-ta-nea-3/",
+        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/oxi-tis-nd-stin-eklogi-akrita-sti-thesi-antiproedrou-tis-voulis-pyr-omadon-apo-tin-antipoliteysi/",
+        "https://www.in.gr/2026/09/02/greece/tragodia-sti-xalkida-nekra-dyo-neogennita-metaferthikan-xoris-tis-aisthiseis-tous-sto-nosokomeio/",
+        "https://www.in.gr/2026/09/02/in-science/perivallon-b-science/h-periptosi-tou-plotou-dasous-pou-kanei-krouaziera-se-limni/",
+        "https://www.in.gr/2026/09/02/politics/aftodioikisi/vandalistike-systima-aytonomis-prosvasis-sti-thalassa/",
+        "https://www.in.gr/2026/09/02/sports/football/super-league-oristike-to-eks-anavolis-panathinaikos-kifisia/"
       ],
-      "seen_at_utc": "2026-09-02T10:51:33.922242+00:00"
+      "seen_at_utc": "2026-09-02T11:17:10.340535+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T10:51:33.922376+00:00"
+  "updated_at_utc": "2026-09-02T11:17:10.340712+00:00"
 }
