@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564434068/ektos-leitoyrgias-fanaria-sto-kentro-tis-athinas-logo-diakopis-reymatos/",
-      "title": "Εκτός λειτουργίας φανάρια στην Αθήνα λόγω προβλήματος στην ηλεκτροδότηση",
-      "normalized_title": "ΕΚΤΟΣ ΛΕΙΤΟΥΡΓΙΑΣ ΦΑΝΑΡΙΑ ΣΤΗΝ ΑΘΗΝΑ ΛΟΓΩ ΠΡΟΒΛΗΜΑΤΟΣ ΣΤΗΝ ΗΛΕΚΤΡΟΔΟΤΗΣΗ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564432295/i-symfonia-me-to-israil-apascholei-entona-tin-agkyra/",
+      "title": "Η συμφωνία με το Ισραήλ απασχολεί έντονα την Αγκυρα",
+      "normalized_title": "Η ΣΥΜΦΩΝΙΑ ΜΕ ΤΟ ΙΣΡΑΗΛ ΑΠΑΣΧΟΛΕΙ ΕΝΤΟΝΑ ΤΗΝ ΑΓΚΥΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564434068/ektos-leitoyrgias-fanaria-sto-kentro-tis-athinas-logo-diakopis-reymatos/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564432295/i-symfonia-me-to-israil-apascholei-entona-tin-agkyra/",
+        "https://www.kathimerini.gr/culture/tv/564429259/microdramas-pos-oi-seires-toy-enos-leptoy-kerdizoyn-ti-machi-tis-prosochis/"
       ],
-      "seen_at_utc": "2026-09-02T16:30:02.653948+00:00"
+      "seen_at_utc": "2026-09-02T16:51:03.845628+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873044/fotia-tora-se-dasos-stin-krustallopigi-florinas-sikothikan-duo-aeroskafi/?utm_source=rss",
-      "title": "Φωτιά τώρα σε δάσος στην Κρυσταλλοπηγή Φλώρινας, σηκώθηκαν δύο αεροσκάφη",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΗΝ ΚΡΥΣΤΑΛΛΟΠΗΓΗ ΦΛΩΡΙΝΑΣ, ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΑΕΡΟΣΚΑΦΗ",
+      "url": "https://www.protothema.gr/greece/article/1873075/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-elenas-adoniou-stin-teleutaia-strofi/?utm_source=rss",
+      "title": "Αυτή την Κυριακή με το ΘΕMA, το συναρπαστικό μυθιστόρημα της Έλενας Αντωνίου «Στην τελευταία στροφή»",
+      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ ΜΕ ΤΟ ΘΕMA, ΤΟ ΣΥΝΑΡΠΑΣΤΙΚΟ ΜΥΘΙΣΤΟΡΗΜΑ ΤΗΣ ΕΛΕΝΑΣ ΑΝΤΩΝΙΟΥ «ΣΤΗΝ ΤΕΛΕΥΤΑΙΑ ΣΤΡΟΦΗ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873044/fotia-tora-se-dasos-stin-krustallopigi-florinas-sikothikan-duo-aeroskafi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873075/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-elenas-adoniou-stin-teleutaia-strofi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873068/den-to-esfaxa-ton-pago-htupaga-anatrihiastikes-oi-perigrafes-tou-43hronou-gia-to-vrefos-stin-kupseli/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T15:51:37.451548+00:00"
+      "seen_at_utc": "2026-09-02T16:51:03.845758+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1459002/mitsotakis-gia-stathero-timologio-tis-dei-katafernoyme-kai-kratame-tis-times-hamila/",
-      "title": "Μητσοτάκης για σταθερό τιμολόγιο της ΔΕΗ: «Καταφέρνουμε και κρατάμε τις τιμές χαμηλά»",
-      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΓΙΑ ΣΤΑΘΕΡΟ ΤΙΜΟΛΟΓΙΟ ΤΗΣ ΔΕΗ: «ΚΑΤΑΦΕΡΝΟΥΜΕ ΚΑΙ ΚΡΑΤΑΜΕ ΤΙΣ ΤΙΜΕΣ ΧΑΜΗΛΑ»",
+      "url": "https://www.efsyn.gr/ellada/1459011/o-aristotelis-hantzis-nikise-epistrefei-sta-prosfygika-meta-apo-73-imeres-nosileias/",
+      "title": "Ο Αριστοτέλης Χαντζής επιστρέφει στα Προσφυγικά μετά από 73 ημέρες νοσηλείας",
+      "normalized_title": "Ο ΑΡΙΣΤΟΤΕΛΗΣ ΧΑΝΤΖΗΣ ΕΠΙΣΤΡΕΦΕΙ ΣΤΑ ΠΡΟΣΦΥΓΙΚΑ ΜΕΤΑ ΑΠΟ 73 ΗΜΕΡΕΣ ΝΟΣΗΛΕΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1459002/mitsotakis-gia-stathero-timologio-tis-dei-katafernoyme-kai-kratame-tis-times-hamila/",
-        "https://www.efsyn.gr/oikonomia/1459001/i-uber-apolyei-to-10-ton-ypallilon-tis-kai-apohorei-apo-ti-nigiria-kai-tin-oygkanta/",
-        "https://www.efsyn.gr/ellada/1458980/syllipseis-gia-narkotika-se-peiraia-kai-rodo-katashethikan-pano-apo-950-hil-eyro/"
+        "https://www.efsyn.gr/ellada/1459011/o-aristotelis-hantzis-nikise-epistrefei-sta-prosfygika-meta-apo-73-imeres-nosileias/",
+        "https://www.efsyn.gr/politiki/1458531/pasok-ta-proeortia-tis-3is-toy-septemvri-kai-i-ekdilosi-sto-irakleio-tis-kritis/",
+        "https://www.efsyn.gr/athlitismos/1459013/ethniki-volei-o-odyniros-traymatismos-tis-aggelopoyloy-poy-pagose-to-gipedo-vinteo/",
+        "https://www.efsyn.gr/ellada/1459014/larisa-katheirxi-ennea-eton-se-58hrono-ekpaideytiko-poy-aselgise-se-mathitria/"
       ],
-      "seen_at_utc": "2026-09-02T16:30:02.654052+00:00"
+      "seen_at_utc": "2026-09-02T16:51:03.845732+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/uncategorized/pogedy-i-epivoli-tou-stratiotikou-nomou-stin-ktinotrofia-apotelei-mia-epikindyni-ektropi/",
-      "title": "ΠΟΓΕΔΥ: Η επιβολή του στρατιωτικού νόμου στην κτηνοτροφία αποτελεί μια επικίνδυνη εκτροπή",
-      "normalized_title": "ΠΟΓΕΔΥ: Η ΕΠΙΒΟΛΗ ΤΟΥ ΣΤΡΑΤΙΩΤΙΚΟΥ ΝΟΜΟΥ ΣΤΗΝ ΚΤΗΝΟΤΡΟΦΙΑ ΑΠΟΤΕΛΕΙ ΜΙΑ ΕΠΙΚΙΝΔΥΝΗ ΕΚΤΡΟΠΗ",
+      "url": "https://www.in.gr/2026/09/02/greece/synagermos-sti-naksou-meta-apo-kataggelies-gia-klopes-se-spitia-agnostos-xtypa-koudounia-kai-zita-tilefono-i-nero/",
+      "title": "Συναγερμός στη Νάξου μετά από καταγγελίες για κλοπές σε σπίτια – Άγνωστος χτυπά κουδούνια και ζητά τηλέφωνο ή νερό",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΗ ΝΑΞΟΥ ΜΕΤΑ ΑΠΟ ΚΑΤΑΓΓΕΛΙΕΣ ΓΙΑ ΚΛΟΠΕΣ ΣΕ ΣΠΙΤΙΑ – ΑΓΝΩΣΤΟΣ ΧΤΥΠΑ ΚΟΥΔΟΥΝΙΑ ΚΑΙ ΖΗΤΑ ΤΗΛΕΦΩΝΟ Η ΝΕΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/uncategorized/pogedy-i-epivoli-tou-stratiotikou-nomou-stin-ktinotrofia-apotelei-mia-epikindyni-ektropi/",
-        "https://www.in.gr/2026/09/02/greece/argies-2026-pote-einai-i-epomeni-kai-poses-apomenoun-mexri-to-telos-tou-etous/"
+        "https://www.in.gr/2026/09/02/greece/synagermos-sti-naksou-meta-apo-kataggelies-gia-klopes-se-spitia-agnostos-xtypa-koudounia-kai-zita-tilefono-i-nero/",
+        "https://www.in.gr/matchcenter/6106040/",
+        "https://www.in.gr/2026/09/02/sports/football/posa-xrimata-pairnoun-oi-diaitites-tou-mls-kai-posa-ton-allon-protathlimaton-pic/",
+        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/koutsoumpas-tha-steilete-ta-leopard-sti-lesvo-na-ektelesoun-apolymanseis-kai-tous-katadromeis-na-kanoun-ixnilatisi-sta-kopadia/",
+        "https://www.in.gr/2026/09/02/life/culture-live/o-tom-krouz-theorei-oti-i-sygxoneysi-paramount-warner-bros-tha-gennisei-eykairies/"
       ],
-      "seen_at_utc": "2026-09-02T16:30:02.654004+00:00"
+      "seen_at_utc": "2026-09-02T16:51:03.845698+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T16:30:02.654124+00:00"
+  "updated_at_utc": "2026-09-02T16:51:03.845830+00:00"
 }
