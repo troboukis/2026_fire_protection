@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564433078/eloynta-ptosi-2chronoy-paidioy-apo-mpalkoni-nosileyetai-diasolinomeno/",
-      "title": "Ελούντα: Πτώση 2χρονου παιδιού από μπαλκόνι – Νοσηλεύεται διασωληνωμένο",
-      "normalized_title": "ΕΛΟΥΝΤΑ: ΠΤΩΣΗ 2ΧΡΟΝΟΥ ΠΑΙΔΙΟΥ ΑΠΟ ΜΠΑΛΚΟΝΙ – ΝΟΣΗΛΕΥΕΤΑΙ ΔΙΑΣΩΛΗΝΩΜΕΝΟ",
+      "url": "https://www.kathimerini.gr/politics/564433141/diakoinosi-tis-agkyras-me-apeiles-gia-to-aigaio/",
+      "title": "Διακοίνωση της Άγκυρας με απειλές για το Αιγαίο",
+      "normalized_title": "ΔΙΑΚΟΙΝΩΣΗ ΤΗΣ ΑΓΚΥΡΑΣ ΜΕ ΑΠΕΙΛΕΣ ΓΙΑ ΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564433078/eloynta-ptosi-2chronoy-paidioy-apo-mpalkoni-nosileyetai-diasolinomeno/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564432331/to-kalokairi-egine-oliko-liftingk-se-238-monades/"
+        "https://www.kathimerini.gr/politics/564433141/diakoinosi-tis-agkyras-me-apeiles-gia-to-aigaio/",
+        "https://www.kathimerini.gr/politics/amyna/564432298/toyrkika-paichnidia-me-ta-parka/",
+        "https://www.kathimerini.gr/society/564433138/acha-a-skotose-adespoto-skylo-kai-prospathise-na-diafygei/",
+        "https://www.kathimerini.gr/world/564433096/tailandi-to-aeroplanoforo-abraham-lincoln-edese-stin-patagia-meta-apo-250-imeres-sti-thalassa/"
       ],
-      "seen_at_utc": "2026-09-02T07:30:01.880739+00:00"
+      "seen_at_utc": "2026-09-02T07:51:12.640966+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872742/ktinodia-stin-ahaia-skotose-adespoto-skulo-me-kunigetiki-karabina/?utm_source=rss",
-      "title": "Κτηνωδία στην Αχαΐα: Σκότωσε αδέσποτο σκύλο με κυνηγετική καραμπίνα",
-      "normalized_title": "ΚΤΗΝΩΔΙΑ ΣΤΗΝ ΑΧΑΙΑ: ΣΚΟΤΩΣΕ ΑΔΕΣΠΟΤΟ ΣΚΥΛΟ ΜΕ ΚΥΝΗΓΕΤΙΚΗ ΚΑΡΑΜΠΙΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1872743/deth-2026-kukloforiakes-ruthmiseis-sto-kedro-tis-thessalonikis-poioi-dromoi-tha-kleisoun/?utm_source=rss",
+      "title": "ΔΕΘ 2026: Κυκλοφοριακές ρυθμίσεις στο κέντρο της Θεσσαλονίκης, ποιοι δρόμοι θα κλείσουν",
+      "normalized_title": "ΔΕΘ 2026: ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΠΟΙΟΙ ΔΡΟΜΟΙ ΘΑ ΚΛΕΙΣΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872742/ktinodia-stin-ahaia-skotose-adespoto-skulo-me-kunigetiki-karabina/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872743/deth-2026-kukloforiakes-ruthmiseis-sto-kedro-tis-thessalonikis-poioi-dromoi-tha-kleisoun/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T07:30:01.880864+00:00"
+      "seen_at_utc": "2026-09-02T07:51:12.641085+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458529/sifnos-vythistike-rymoylkoymeno-ploio-kala-stin-ygeia-toys-oi-dyo-epivainontes/",
-      "title": "Σίφνος: Βυθίστηκε ρυμουλκούμενο πλοίο – Καλά στην υγεία τους οι δύο επιβαίνοντες",
-      "normalized_title": "ΣΙΦΝΟΣ: ΒΥΘΙΣΤΗΚΕ ΡΥΜΟΥΛΚΟΥΜΕΝΟ ΠΛΟΙΟ – ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥΣ ΟΙ ΔΥΟ ΕΠΙΒΑΙΝΟΝΤΕΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1458538/poyerta-in-moyzakitis-out/",
+      "title": "Πουέρτα in, Μουζακίτης out",
+      "normalized_title": "ΠΟΥΕΡΤΑ IN, ΜΟΥΖΑΚΙΤΗΣ OUT",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458529/sifnos-vythistike-rymoylkoymeno-ploio-kala-stin-ygeia-toys-oi-dyo-epivainontes/"
+        "https://www.efsyn.gr/athlitismos/1458538/poyerta-in-moyzakitis-out/",
+        "https://www.efsyn.gr/stiles/1458524/tha-mas-pane-se-polemo/",
+        "https://www.efsyn.gr/tehnes/1458472/anenohliti-performance-filathlon/",
+        "https://www.efsyn.gr/nisides/1458543/to-peykofyto-nisaki-toy-saronikoy-poy-einai-idaniko-gia-monoimeri-ekdromi-i-ena-halaro-diimero/",
+        "https://www.efsyn.gr/ellada/1458527/igoymenitsa-mahi-gia-ti-zoi-tis-dinei-i-24hroni-patise-gkazi-o-syntrofos-tis-eno-itan-sto-kapo-toy-ih/",
+        "https://www.efsyn.gr/kosmos/1458535/aigyptos-dekaexi-nekroi-kai-28-traymaties-se-trohaio-me-leoforeio-sto-notio-sina/"
       ],
-      "seen_at_utc": "2026-09-02T07:30:01.880832+00:00"
+      "seen_at_utc": "2026-09-02T07:51:12.641047+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/greece/sifnos-vythistike-rymoulkoumeno-ploio-ekso-apo-ti-sifno-perisynelegisan-dyo-epivainontes/",
-      "title": "Βυθίστηκε ρυμουλκούμενο πλοίο έξω από τη Σίφνο - Περισυνελέγησαν δύο επιβαίνοντες",
-      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΡΥΜΟΥΛΚΟΥΜΕΝΟ ΠΛΟΙΟ ΕΞΩ ΑΠΟ ΤΗ ΣΙΦΝΟ - ΠΕΡΙΣΥΝΕΛΕΓΗΣΑΝ ΔΥΟ ΕΠΙΒΑΙΝΟΝΤΕΣ",
+      "url": "https://www.in.gr/2026/09/02/world/tourkia-vythistike-to-fortigo-ploio-meta-ti-sygkrousi-sti-thalassa-tou-marmara-agnoountai-10-naytikoi/",
+      "title": "Βυθίστηκε το φορτηγό πλοίο μετά τη σύγκρουση στη Θάλασσα του Μαρμαρά - Αγνοούνται 10 ναυτικοί",
+      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΤΟ ΦΟΡΤΗΓΟ ΠΛΟΙΟ ΜΕΤΑ ΤΗ ΣΥΓΚΡΟΥΣΗ ΣΤΗ ΘΑΛΑΣΣΑ ΤΟΥ ΜΑΡΜΑΡΑ - ΑΓΝΟΟΥΝΤΑΙ 10 ΝΑΥΤΙΚΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/greece/sifnos-vythistike-rymoulkoumeno-ploio-ekso-apo-ti-sifno-perisynelegisan-dyo-epivainontes/",
-        "https://www.in.gr/2026/09/02/sports/football/ena-erythroleyko-roster-stin-premier-league-ta-mega-deals-apo-ton-olympiako-stin-agglia/"
+        "https://www.in.gr/2026/09/02/world/tourkia-vythistike-to-fortigo-ploio-meta-ti-sygkrousi-sti-thalassa-tou-marmara-agnoountai-10-naytikoi/",
+        "https://www.in.gr/2026/09/02/economy/i-ellada-kategrapse-dimosionomiki-proodo-alla-einai-amfivolo-an-tha-ti-diatirisei-ti-leei-meleti-tou-kefim/",
+        "https://www.in.gr/2026/09/02/politics/aftodioikisi/me-aisthitires-kinisis-diavaseis-stin-aleksandroupoli/",
+        "https://www.in.gr/2026/09/02/sports/football/niko-pas-deixnei-o-skaloni-gia-ti-fanela-me-to-10-meta-ton-mesi/"
       ],
-      "seen_at_utc": "2026-09-02T07:30:01.880787+00:00"
+      "seen_at_utc": "2026-09-02T07:51:12.641019+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T07:30:01.880935+00:00"
+  "updated_at_utc": "2026-09-02T07:51:12.641158+00:00"
 }
