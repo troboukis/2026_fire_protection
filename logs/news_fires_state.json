@@ -1,18 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564432259/ta-asygchorita-kena-stin-prostasia-ton-paidion/",
-      "title": "Τα ασυγχώρητα κενά στην προστασία των παιδιών",
-      "normalized_title": "ΤΑ ΑΣΥΓΧΩΡΗΤΑ ΚΕΝΑ ΣΤΗΝ ΠΡΟΣΤΑΣΙΑ ΤΩΝ ΠΑΙΔΙΩΝ",
+      "url": "https://www.kathimerini.gr/society/564433078/eloynta-ptosi-2chronoy-paidioy-apo-mpalkoni-nosileyetai-diasolinomeno/",
+      "title": "Ελούντα: Πτώση 2χρονου παιδιού από μπαλκόνι – Νοσηλεύεται διασωληνωμένο",
+      "normalized_title": "ΕΛΟΥΝΤΑ: ΠΤΩΣΗ 2ΧΡΟΝΟΥ ΠΑΙΔΙΟΥ ΑΠΟ ΜΠΑΛΚΟΝΙ – ΝΟΣΗΛΕΥΕΤΑΙ ΔΙΑΣΩΛΗΝΩΜΕΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564432259/ta-asygchorita-kena-stin-prostasia-ton-paidion/",
-        "https://www.kathimerini.gr/society/564433066/irakleio-40chronos-epicheirise-na-parasyrei-me-to-aytokinito-tin-en-diastasei-syzygo-toy/",
-        "https://www.kathimerini.gr/world/564432406/erntogan-poytin-choris-toys-s-400-stin-atzenta/",
-        "https://www.kathimerini.gr/world/564433018/germania-rosia-o-yvridikos-polemos-kai-to-stoichima-tis-apotropis/",
-        "https://www.kathimerini.gr/k/gastronomos/564431935/agios-petros-i-taverna-paradeisos-tis-skyroy/",
-        "https://www.kathimerini.gr/economy/diktis/564432829/aisiodoxi-i-moody-s-gia-tin-elliniki-oikonomia/"
+        "https://www.kathimerini.gr/society/564433078/eloynta-ptosi-2chronoy-paidioy-apo-mpalkoni-nosileyetai-diasolinomeno/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564432331/to-kalokairi-egine-oliko-liftingk-se-238-monades/"
       ],
-      "seen_at_utc": "2026-09-02T07:17:04.374320+00:00"
+      "seen_at_utc": "2026-09-02T07:30:01.880739+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,47 +1260,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872736/agonia-gia-tin-15hroni-panagiota-pou-exafanistike-sto-agrinio-ekdothike-missing-alert/?utm_source=rss",
-      "title": "Αγωνία για την 15χρονη Παναγιώτα που εξαφανίστηκε στο Αγρίνιο, εκδόθηκε missing alert",
-      "normalized_title": "ΑΓΩΝΙΑ ΓΙΑ ΤΗΝ 15ΧΡΟΝΗ ΠΑΝΑΓΙΩΤΑ ΠΟΥ ΕΞΑΦΑΝΙΣΤΗΚΕ ΣΤΟ ΑΓΡΙΝΙΟ, ΕΚΔΟΘΗΚΕ MISSING ALERT",
+      "url": "https://www.protothema.gr/greece/article/1872742/ktinodia-stin-ahaia-skotose-adespoto-skulo-me-kunigetiki-karabina/?utm_source=rss",
+      "title": "Κτηνωδία στην Αχαΐα: Σκότωσε αδέσποτο σκύλο με κυνηγετική καραμπίνα",
+      "normalized_title": "ΚΤΗΝΩΔΙΑ ΣΤΗΝ ΑΧΑΙΑ: ΣΚΟΤΩΣΕ ΑΔΕΣΠΟΤΟ ΣΚΥΛΟ ΜΕ ΚΥΝΗΓΕΤΙΚΗ ΚΑΡΑΜΠΙΝΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872736/agonia-gia-tin-15hroni-panagiota-pou-exafanistike-sto-agrinio-ekdothike-missing-alert/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872731/sunelifthi-22hronos-afganos-sti-thessaloniki-suneurethike-erotika-me-28hroni-kai-meta-tin-listepse/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872720/pede-14hronoi-edosan-radevou-gia-xulo-se-sholeio-sto-irakleio-me-katagma-sti-muti-o-enas-sunelifthisan-oi-goneis-tous/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872742/ktinodia-stin-ahaia-skotose-adespoto-skulo-me-kunigetiki-karabina/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T07:17:04.374477+00:00"
+      "seen_at_utc": "2026-09-02T07:30:01.880864+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458523/irakleio-symploki-pente-14hronon-se-sholeio-sto-nosokomeio-anilikos-me-katagma-synelifthisan-oi-goneis/",
-      "title": "Ηράκλειο: Συμπλοκή πέντε 14χρονων σε σχολείο – Στο νοσοκομείο ανήλικος με κάταγμα, συνελήφθησαν οι γονείς",
-      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΣΥΜΠΛΟΚΗ ΠΕΝΤΕ 14ΧΡΟΝΩΝ ΣΕ ΣΧΟΛΕΙΟ – ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΑΝΗΛΙΚΟΣ ΜΕ ΚΑΤΑΓΜΑ, ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΓΟΝΕΙΣ",
+      "url": "https://www.efsyn.gr/ellada/1458529/sifnos-vythistike-rymoylkoymeno-ploio-kala-stin-ygeia-toys-oi-dyo-epivainontes/",
+      "title": "Σίφνος: Βυθίστηκε ρυμουλκούμενο πλοίο – Καλά στην υγεία τους οι δύο επιβαίνοντες",
+      "normalized_title": "ΣΙΦΝΟΣ: ΒΥΘΙΣΤΗΚΕ ΡΥΜΟΥΛΚΟΥΜΕΝΟ ΠΛΟΙΟ – ΚΑΛΑ ΣΤΗΝ ΥΓΕΙΑ ΤΟΥΣ ΟΙ ΔΥΟ ΕΠΙΒΑΙΝΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458523/irakleio-symploki-pente-14hronon-se-sholeio-sto-nosokomeio-anilikos-me-katagma-synelifthisan-oi-goneis/",
-        "https://www.efsyn.gr/stiles/1458512/ston-imo-i-ellada-ehei-deyteri-eykairia/",
-        "https://www.efsyn.gr/stiles/1458505/i-esperanto-toy-penthoys/",
-        "https://www.efsyn.gr/stiles/1458498/peri-thanatikis-poinis/",
-        "https://www.efsyn.gr/stiles/1458488/enas-filos-toy-sokrati/",
-        "https://www.efsyn.gr/kosmos/1458517/konstantinoypoli-vythistike-to-tugberg-imamoglu-meta-ti-sygkroysi-me-allo-ploio-deka-agnooymenoi/",
-        "https://www.efsyn.gr/ellada/1458507/leoforos-alexandras-i-kinisi-poy-prokalese-tin-foniki-sygkroysi-ton-motosikleton-ti-exetazoyn-oi-arhes/",
-        "https://www.efsyn.gr/ellada/1458510/rodos-toyristas-anevike-skalopatia-me-goyroyna-stin-palia-poli-anamesa-se-pezoys/"
+        "https://www.efsyn.gr/ellada/1458529/sifnos-vythistike-rymoylkoymeno-ploio-kala-stin-ygeia-toys-oi-dyo-epivainontes/"
       ],
-      "seen_at_utc": "2026-09-02T07:17:04.374444+00:00"
+      "seen_at_utc": "2026-09-02T07:30:01.880832+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/prasino-fos-apo-tin-komision-gia-erga-23-dis-eyro-oi-katigories-ton-paremvaseon-pou-egkrithikan/",
-      "title": "Πράσινο φως από την Κομισιόν για έργα 2,3 δισ. ευρώ - Οι κατηγορίες των παρεμβάσεων που εγκρίθηκαν",
-      "normalized_title": "ΠΡΑΣΙΝΟ ΦΩΣ ΑΠΟ ΤΗΝ ΚΟΜΙΣΙΟΝ ΓΙΑ ΕΡΓΑ 2,3 ΔΙΣ. ΕΥΡΩ - ΟΙ ΚΑΤΗΓΟΡΙΕΣ ΤΩΝ ΠΑΡΕΜΒΑΣΕΩΝ ΠΟΥ ΕΓΚΡΙΘΗΚΑΝ",
+      "url": "https://www.in.gr/2026/09/02/greece/sifnos-vythistike-rymoulkoumeno-ploio-ekso-apo-ti-sifno-perisynelegisan-dyo-epivainontes/",
+      "title": "Βυθίστηκε ρυμουλκούμενο πλοίο έξω από τη Σίφνο - Περισυνελέγησαν δύο επιβαίνοντες",
+      "normalized_title": "ΒΥΘΙΣΤΗΚΕ ΡΥΜΟΥΛΚΟΥΜΕΝΟ ΠΛΟΙΟ ΕΞΩ ΑΠΟ ΤΗ ΣΙΦΝΟ - ΠΕΡΙΣΥΝΕΛΕΓΗΣΑΝ ΔΥΟ ΕΠΙΒΑΙΝΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/economy/oikonomikes-eidiseis/prasino-fos-apo-tin-komision-gia-erga-23-dis-eyro-oi-katigories-ton-paremvaseon-pou-egkrithikan/",
-        "https://www.in.gr/2026/09/02/go-fun/fizz/giorgos-konstantinou-to-oneiro-pou-eide-mia-mera-prin-pethanei-i-maro-kontou/",
-        "https://www.in.gr/2026/09/02/world/nepal-tous-1-130-eftasan-oi-nekroi-ligosteyoun-oi-elpides-gia-tous-4-462-anthropous-pou-na-agnoountai/",
-        "https://www.in.gr/2026/09/02/pet-stories/o-mythos-tou-fylou-stis-synantiseis-ton-skylon/",
-        "https://www.in.gr/2026/09/02/sports/basketball/o-frantsesko-toti-sto-mpasket-i-romi-anoigei-neo-metopo/",
-        "https://www.in.gr/2026/09/02/greece/kypseli-sokarei-o-isxyrismos-tou-43xronou-gia-ton-thanato-tou-vrefous-oi-ypoptes-fotografies-me-ta-mora/",
-        "https://www.in.gr/2026/09/02/world/iran-amerikaniki-epithesi-se-gamilia-giorti-pente-nekroi/"
+        "https://www.in.gr/2026/09/02/greece/sifnos-vythistike-rymoulkoumeno-ploio-ekso-apo-ti-sifno-perisynelegisan-dyo-epivainontes/",
+        "https://www.in.gr/2026/09/02/sports/football/ena-erythroleyko-roster-stin-premier-league-ta-mega-deals-apo-ton-olympiako-stin-agglia/"
       ],
-      "seen_at_utc": "2026-09-02T07:17:04.374378+00:00"
+      "seen_at_utc": "2026-09-02T07:30:01.880787+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T07:17:04.374555+00:00"
+  "updated_at_utc": "2026-09-02T07:30:01.880935+00:00"
 }
