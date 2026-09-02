@@ -1,15 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564432892/thessaloniki-pyrkagia-se-doma-polykatoikias-apomakrynthikan-egkairos-oi-enoikoi/",
-      "title": "Θεσσαλονίκη: Πυρκαγιά σε δώμα πολυκατοικίας – Απομακρύνθηκαν εγκαίρως οι ένοικοι",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΥΡΚΑΓΙΑ ΣΕ ΔΩΜΑ ΠΟΛΥΚΑΤΟΙΚΙΑΣ – ΑΠΟΜΑΚΡΥΝΘΗΚΑΝ ΕΓΚΑΙΡΩΣ ΟΙ ΕΝΟΙΚΟΙ",
+      "url": "https://www.kathimerini.gr/world/564432895/poytin-kata-zelenski-me-tromokrates-den-syndialegomai-sfodri-epithesi-stin-odisso/",
+      "title": "Πούτιν κατά Ζελένσκι: Με τρομοκράτες δεν συνδιαλέγομαι – Σφοδρή επίθεση στην Οδησσό",
+      "normalized_title": "ΠΟΥΤΙΝ ΚΑΤΑ ΖΕΛΕΝΣΚΙ: ΜΕ ΤΡΟΜΟΚΡΑΤΕΣ ΔΕΝ ΣΥΝΔΙΑΛΕΓΟΜΑΙ – ΣΦΟΔΡΗ ΕΠΙΘΕΣΗ ΣΤΗΝ ΟΔΗΣΣΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564432892/thessaloniki-pyrkagia-se-doma-polykatoikias-apomakrynthikan-egkairos-oi-enoikoi/",
-        "https://www.kathimerini.gr/world/564432880/nikaragoya-to-koinovoylio-mplokarei-ti-symmetochi-tis-antipoliteysis-stis-ekloges/",
-        "https://www.kathimerini.gr/istoria/564432133/san-simera-2-septemvrioy-1792-oi-sfages-toy-septemvrioy-sto-parisi/"
+        "https://www.kathimerini.gr/world/564432895/poytin-kata-zelenski-me-tromokrates-den-syndialegomai-sfodri-epithesi-stin-odisso/",
+        "https://www.kathimerini.gr/politics/564432274/me-kostologimenes-paroches-sti-thessaloniki-o-alexis-tsipras/",
+        "https://www.kathimerini.gr/society/564427105/imporei-na-ploytisi-ton-topon-mas/",
+        "https://www.kathimerini.gr/athletics/sports/564432922/sti-chal-o-christos-moyzakitis-sympaiktis-xana-me-ton-konstanti-tzolaki/",
+        "https://www.kathimerini.gr/world/564432913/konstantinoypoli-sygkroysi-dyo-emporikon-ploion-sti-thalassa-toy-marmara/",
+        "https://www.kathimerini.gr/k/travel/564409018/oyranoypoli-enas-topos-anamesa-se-dyo-kosmoys/",
+        "https://www.kathimerini.gr/visual/photography/564432079/ta-filodorimata-dyskolepsan-poly/",
+        "https://www.kathimerini.gr/k/gastronomos/564431899/ta-stafidopsoma-toy-patera-pa-sioy/",
+        "https://www.kathimerini.gr/istoria/564425290/i-nychta-poy-i-athina-kerdise-toys-olympiakoys-agones-toy-2004-to-thriler-ton-psifoforion-kai-ta-panigyria-sto-zappeio/",
+        "https://www.kathimerini.gr/culture/564417328/i-moni-fora-poy-o-antonis-vardis-zitise-apo-tragoydisti-na-ermineysei-tragoydi-toy/",
+        "https://www.kathimerini.gr/world/564432907/ipa-prosagogi-se-diki-toy-feromenoy-os-dolofonoy-toy-tsarli-kerk/"
       ],
-      "seen_at_utc": "2026-09-02T04:51:18.334685+00:00"
+      "seen_at_utc": "2026-09-02T05:16:58.945164+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1269,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872624/apo-ti-fourna-eurutanias-sti-naxo-i-istoria-tis-poluteknis-oikogeneias-pou-egine-sumvolo-tis-epistrofis-sta-xoria/?utm_source=rss",
-      "title": "Από τη Φουρνά στη Νάξο: Η ιστορία της πολύτεκνης οικογένειας που έγινε σύμβολο του κινήματος της επιστροφής στα χωριά",
-      "normalized_title": "ΑΠΟ ΤΗ ΦΟΥΡΝΑ ΣΤΗ ΝΑΞΟ: Η ΙΣΤΟΡΙΑ ΤΗΣ ΠΟΛΥΤΕΚΝΗΣ ΟΙΚΟΓΕΝΕΙΑΣ ΠΟΥ ΕΓΙΝΕ ΣΥΜΒΟΛΟ ΤΟΥ ΚΙΝΗΜΑΤΟΣ ΤΗΣ ΕΠΙΣΤΡΟΦΗΣ ΣΤΑ ΧΩΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1872639/to-paidi-mas-dehtike-bullying-zousame-me-ta-podikia-leei-i-oikogeneia-pou-efuge-apo-tin-fourna/?utm_source=rss",
+      "title": "«Το παιδί μας δέχτηκε bullying, ζούσαμε με τους αρουραίους», λέει η οικογένεια που έφυγε από την Φουρνά μετά από δύο χρόνια",
+      "normalized_title": "«ΤΟ ΠΑΙΔΙ ΜΑΣ ΔΕΧΤΗΚΕ BULLYING, ΖΟΥΣΑΜΕ ΜΕ ΤΟΥΣ ΑΡΟΥΡΑΙΟΥΣ», ΛΕΕΙ Η ΟΙΚΟΓΕΝΕΙΑ ΠΟΥ ΕΦΥΓΕ ΑΠΟ ΤΗΝ ΦΟΥΡΝΑ ΜΕΤΑ ΑΠΟ ΔΥΟ ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872624/apo-ti-fourna-eurutanias-sti-naxo-i-istoria-tis-poluteknis-oikogeneias-pou-egine-sumvolo-tis-epistrofis-sta-xoria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872639/to-paidi-mas-dehtike-bullying-zousame-me-ta-podikia-leei-i-oikogeneia-pou-efuge-apo-tin-fourna/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T04:51:18.334842+00:00"
+      "seen_at_utc": "2026-09-02T05:16:58.945266+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1458395/nees-kyroseis-kata-tis-rosias-meta-tin-epithesi-me-drone-sti-leipsia-den-eimaste-se-polemo-leei-i-germania/",
-      "title": "Νέες κυρώσεις κατά της Ρωσίας μετά την επίθεση με drone στη Λειψία – «Δεν είμαστε σε πόλεμο», λέει η Γερμανία",
-      "normalized_title": "ΝΕΕΣ ΚΥΡΩΣΕΙΣ ΚΑΤΑ ΤΗΣ ΡΩΣΙΑΣ ΜΕΤΑ ΤΗΝ ΕΠΙΘΕΣΗ ΜΕ DRONE ΣΤΗ ΛΕΙΨΙΑ – «ΔΕΝ ΕΙΜΑΣΤΕ ΣΕ ΠΟΛΕΜΟ», ΛΕΕΙ Η ΓΕΡΜΑΝΙΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1458410/o-plithorismos-pire-fora-ton-aygoysto/",
+      "title": "Ο πληθωρισμός πήρε… φόρα τον Αύγουστο",
+      "normalized_title": "Ο ΠΛΗΘΩΡΙΣΜΟΣ ΠΗΡΕ… ΦΟΡΑ ΤΟΝ ΑΥΓΟΥΣΤΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1458395/nees-kyroseis-kata-tis-rosias-meta-tin-epithesi-me-drone-sti-leipsia-den-eimaste-se-polemo-leei-i-germania/",
-        "https://www.efsyn.gr/athlitismos/1458399/mia-anasa-apo-ton-panathinaiko-o-oynai/"
+        "https://www.efsyn.gr/oikonomia/1458410/o-plithorismos-pire-fora-ton-aygoysto/",
+        "https://www.efsyn.gr/ellada/1458412/kairos-ekriktiko-kokteil-zestis-me-vrohes-kataigides-kai-afrikaniki-skoni-oi-periohes-poy-tha-pligoyn/"
       ],
-      "seen_at_utc": "2026-09-02T04:51:18.334793+00:00"
+      "seen_at_utc": "2026-09-02T05:16:58.945235+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/go-fun/social/arkas-i-kalimera-tis-tetartis-14/",
-      "title": "Αρκάς: Η καλημέρα της Τετάρτης",
-      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΤΕΤΑΡΤΗΣ",
+      "url": "https://www.in.gr/2026/09/02/politics/politiki-grammateia/pasok-oi-mpalothies-kata-mitsotaki-kai-tsipra-gia-to-idiotiko-xreos-oi-kritikes-lyres-kai-ta-proeortia-tis-deth/",
+      "title": "ΠΑΣΟΚ: Οι «μπαλωθιές» κατά Μητσοτάκη και Τσίπρα για το ιδιωτικό χρέος, οι κρητικές λύρες και τα «προεόρτια» της ΔΕΘ",
+      "normalized_title": "ΠΑΣΟΚ: ΟΙ «ΜΠΑΛΩΘΙΕΣ» ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ ΚΑΙ ΤΣΙΠΡΑ ΓΙΑ ΤΟ ΙΔΙΩΤΙΚΟ ΧΡΕΟΣ, ΟΙ ΚΡΗΤΙΚΕΣ ΛΥΡΕΣ ΚΑΙ ΤΑ «ΠΡΟΕΟΡΤΙΑ» ΤΗΣ ΔΕΘ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/go-fun/social/arkas-i-kalimera-tis-tetartis-14/",
-        "https://www.in.gr/2026/09/02/world/italia-asyllipti-oikogeneiaki-tragodia-goneis-skotosan-tin-5xroni-anapiri-kori-tous-kai-aytoktonisan/",
-        "https://www.in.gr/2026/09/02/plus/vita/thymizei-burnout-alla-den-einai-ti-prepei-na-ksereis-gia-to-rust-out/",
-        "https://www.in.gr/2026/09/02/world/flegetai-ksana-i-mesi-anatoli-me-epitheseis-se-amerikanikes-vaseis-se-4-xores-apanta-to-iran-stis-epidromes-ton-ipa/"
+        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/pasok-oi-mpalothies-kata-mitsotaki-kai-tsipra-gia-to-idiotiko-xreos-oi-kritikes-lyres-kai-ta-proeortia-tis-deth/",
+        "https://www.in.gr/2026/09/02/politics/politiki-grammateia/tsipras-to-kyvernitiko-sxedio-gia-to-2027-2030-oi-eksaggelies-ton-74-dis-eyro-kai-o-kanonas-tis-monimis-pigis-xrimatodotisis/",
+        "https://www.in.gr/2026/09/02/world/apo-to-kirgistan-mexri-tis-ipa-i-diplomatiki-antepithesi-tou-si-tzinpingk/",
+        "https://www.in.gr/2026/09/02/world/senaria-polemou-israil-tourkias-poion-tha-epelegan-oi-ipa-ti-tha-ekane-to-nato-pou-vrisketai-i-ellada/",
+        "https://www.in.gr/2026/09/02/life/music/cilia-katrali-kai-savina-gia-proti-fora-mazi-sti-skini/"
       ],
-      "seen_at_utc": "2026-09-02T04:51:18.334734+00:00"
+      "seen_at_utc": "2026-09-02T05:16:58.945211+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T04:51:18.334923+00:00"
+  "updated_at_utc": "2026-09-02T05:16:58.945353+00:00"
 }
