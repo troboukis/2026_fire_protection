@@ -1,13 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564433573/germania-taytopoiithikan-dyo-atoma-gia-to-rosiko-drone-sti-leipsia/",
-      "title": "Γερμανία: Ταυτοποιήθηκαν δύο άτομα για το «ρωσικό drone» με εκρηκτικά στη Λειψία",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΤΑΥΤΟΠΟΙΗΘΗΚΑΝ ΔΥΟ ΑΤΟΜΑ ΓΙΑ ΤΟ «ΡΩΣΙΚΟ DRONE» ΜΕ ΕΚΡΗΚΤΙΚΑ ΣΤΗ ΛΕΙΨΙΑ",
+      "url": "https://www.kathimerini.gr/economy/business/564433636/intracom-defense-neos-dieythynon-symvoylos-o-lykoyrgos-antonopoylos/",
+      "title": "Intracom Defense: Νέος διευθύνων σύμβουλος ο Λυκούργος Αντωνόπουλος",
+      "normalized_title": "INTRACOM DEFENSE: ΝΕΟΣ ΔΙΕΥΘΥΝΩΝ ΣΥΜΒΟΥΛΟΣ Ο ΛΥΚΟΥΡΓΟΣ ΑΝΤΩΝΟΠΟΥΛΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564433573/germania-taytopoiithikan-dyo-atoma-gia-to-rosiko-drone-sti-leipsia/"
+        "https://www.kathimerini.gr/economy/business/564433636/intracom-defense-neos-dieythynon-symvoylos-o-lykoyrgos-antonopoylos/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564433582/si-i-exoteriki-anameixi-sti-mesi-anatoli-prepei-na-apokroystei/",
+        "https://www.kathimerini.gr/opinion/readers/564432457/i-grammi-platamona-na-xana-leitoyrgisei/",
+        "https://www.kathimerini.gr/opinion/readers/564432454/epiteliko-kratos-kai-ena-thermokipio/",
+        "https://www.kathimerini.gr/society/564433606/thriler-stin-kypseli-dioxi-gia-anthropoktonia-apo-prothesi-ston-43chrono-kai-ti-germanida/",
+        "https://www.kathimerini.gr/opinion/readers/564432445/o-odikos-axonas-dramas-amfipolis/",
+        "https://www.kathimerini.gr/culture/theater/564433576/keit-mplanset-kai-nina-chos-paizoyn-kathe-vrady-korona-grammata-me-to-koino-sto-londino/"
       ],
-      "seen_at_utc": "2026-09-02T12:51:49.580040+00:00"
+      "seen_at_utc": "2026-09-02T13:17:14.562666+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1265,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872922/fotia-se-hamili-vlastisi-stin-paiania-epiheiroun-duo-elikoptera/?utm_source=rss",
-      "title": "Φωτιά σε χαμηλή βλάστηση στην Παιανία, επιχειρούν δύο ελικόπτερα",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΗΝ ΠΑΙΑΝΙΑ, ΕΠΙΧΕΙΡΟΥΝ ΔΥΟ ΕΛΙΚΟΠΤΕΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1872944/paratasi-kai-anastoli-forologikon-upohreoseon-gia-tous-pligedes-apo-ton-afthodi-pureto-sti-lesvo/?utm_source=rss",
+      "title": "Παράταση και αναστολή φορολογικών υποχρεώσεων για τους πληγέντες από τον αφθώδη πυρετό στη Λέσβο",
+      "normalized_title": "ΠΑΡΑΤΑΣΗ ΚΑΙ ΑΝΑΣΤΟΛΗ ΦΟΡΟΛΟΓΙΚΩΝ ΥΠΟΧΡΕΩΣΕΩΝ ΓΙΑ ΤΟΥΣ ΠΛΗΓΕΝΤΕΣ ΑΠΟ ΤΟΝ ΑΦΘΩΔΗ ΠΥΡΕΤΟ ΣΤΗ ΛΕΣΒΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872922/fotia-se-hamili-vlastisi-stin-paiania-epiheiroun-duo-elikoptera/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872944/paratasi-kai-anastoli-forologikon-upohreoseon-gia-tous-pligedes-apo-ton-afthodi-pureto-sti-lesvo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872938/sunelifthisan-2-atoma-gia-diakinisi-narkotikon-katohi-apothikeusi-kai-polisi-oplon-sti-zakuntho/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872936/dioxi-anthropoktonia-apo-prothesi-ston-43hrono-kai-tin-germanida-sudrofo-tou-gia-to-nekro-vrefos-se-valitsa-stin-kupseli/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872935/kokkinos-sunagermos-aurio-se-attiki-euvoia-kai-nisia-tou-aigaiou-logo-polu-upsilou-kindunou-purkagias/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T12:30:29.312798+00:00"
+      "seen_at_utc": "2026-09-02T13:17:14.562848+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1458838/mainetai-i-fotia-ston-mytika-thivas-enishythikan-oi-dynameis-epiheiroyn-12-aeroskafi-kai-dyo-elikoptera-vinteo/",
-      "title": "Μαίνεται η φωτιά στον Μύτικα Θήβας: Ενισχύθηκαν οι δυνάμεις, επιχειρούν 12 αεροσκάφη και δύο ελικόπτερα [βίντεο]",
-      "normalized_title": "ΜΑΙΝΕΤΑΙ Η ΦΩΤΙΑ ΣΤΟΝ ΜΥΤΙΚΑ ΘΗΒΑΣ: ΕΝΙΣΧΥΘΗΚΑΝ ΟΙ ΔΥΝΑΜΕΙΣ, ΕΠΙΧΕΙΡΟΥΝ 12 ΑΕΡΟΣΚΑΦΗ ΚΑΙ ΔΥΟ ΕΛΙΚΟΠΤΕΡΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/ellada/1458863/kypseli-dioxi-gia-anthropoktonia-apo-prothesi-ston-43hrono-kai-tin-syzygo-toy-gia-to-dolofonimeno-vrefos/",
+      "title": "Κυψέλη: Δίωξη για ανθρωποκτονία από πρόθεση στον 43χρονο και την σύντροφό του για το δολοφονημένο βρέφος",
+      "normalized_title": "ΚΥΨΕΛΗ: ΔΙΩΞΗ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΑΠΟ ΠΡΟΘΕΣΗ ΣΤΟΝ 43ΧΡΟΝΟ ΚΑΙ ΤΗΝ ΣΥΝΤΡΟΦΟ ΤΟΥ ΓΙΑ ΤΟ ΔΟΛΟΦΟΝΗΜΕΝΟ ΒΡΕΦΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1458838/mainetai-i-fotia-ston-mytika-thivas-enishythikan-oi-dynameis-epiheiroyn-12-aeroskafi-kai-dyo-elikoptera-vinteo/",
-        "https://www.efsyn.gr/politiki/1458834/i-konstantopoyloy-amfisvitei-to-apotelesma-tis-psifoforias-gia-akrita-oi-141-psifoi-itan-epistolikes/",
-        "https://www.efsyn.gr/ellada/1458824/fotia-stin-paiania-kinitopoiithikan-dyo-elikoptera/",
-        "https://www.efsyn.gr/ellada/1458817/fotia-stin-karysto-anexelegkti-i-katastasi-me-tria-pyrina-metopa-neo-112-gia-ekkenosi-oikismon/"
+        "https://www.efsyn.gr/ellada/1458863/kypseli-dioxi-gia-anthropoktonia-apo-prothesi-ston-43hrono-kai-tin-syzygo-toy-gia-to-dolofonimeno-vrefos/",
+        "https://www.efsyn.gr/oikonomia/1458858/paratasi-kai-anastoli-forologikon-ypohreoseon-gia-toys-pligentes-apo-ton-afthodi-pyreto-sti-lesvo/",
+        "https://www.efsyn.gr/kosmos/1458844/germania-taytopoiithikan-dyo-ypoptoi-gia-tin-apopeira-epithesis-sto-aerodromio-tis-leipsias/"
       ],
-      "seen_at_utc": "2026-09-02T12:51:49.580110+00:00"
+      "seen_at_utc": "2026-09-02T13:17:14.562804+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/world/kypros-egklovismenoi-sto-ploio-oi-20-agnooumenoi-to-pio-pithano-senario-lene-oi-arxes-tou-pseydokratous/",
-      "title": "Εγκλωβισμένοι στο πλοίο οι 20 αγνοούμενοι το πιο πιθανό σενάριο, λένε οι αρχές του ψευδοκράτους",
-      "normalized_title": "ΕΓΚΛΩΒΙΣΜΕΝΟΙ ΣΤΟ ΠΛΟΙΟ ΟΙ 20 ΑΓΝΟΟΥΜΕΝΟΙ ΤΟ ΠΙΟ ΠΙΘΑΝΟ ΣΕΝΑΡΙΟ, ΛΕΝΕ ΟΙ ΑΡΧΕΣ ΤΟΥ ΨΕΥΔΟΚΡΑΤΟΥΣ",
+      "url": "https://www.in.gr/2026/09/02/greece/se-klima-vathias-sygkinisis-to-etisio-mnimosyno-tou-miki-theodoraki-sta-xania/",
+      "title": "Σε κλίμα βαθιάς συγκίνησης το ετήσιο μνημόσυνο του Μίκη Θεοδωράκη στα Χανιά",
+      "normalized_title": "ΣΕ ΚΛΙΜΑ ΒΑΘΙΑΣ ΣΥΓΚΙΝΗΣΗΣ ΤΟ ΕΤΗΣΙΟ ΜΝΗΜΟΣΥΝΟ ΤΟΥ ΜΙΚΗ ΘΕΟΔΩΡΑΚΗ ΣΤΑ ΧΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/world/kypros-egklovismenoi-sto-ploio-oi-20-agnooumenoi-to-pio-pithano-senario-lene-oi-arxes-tou-pseydokratous/",
-        "https://www.in.gr/2026/09/02/world/germania-taytopoiise-dyo-ypoptous-gia-tin-epithesi-me-drone-sti-leipsia-exoun-sxeseis-me-ti-rosia/",
-        "https://www.in.gr/2026/09/02/sports/football/feygei-o-koutesa-apo-tin-aek-ayti-einai-i-symfonia-me-ti-servet/",
-        "https://www.in.gr/2026/09/02/go-fun/fizz/prigkipissa-ingkrint-aleksandra-poia-einai-i-proti-vasilissa-tis-norvigias-meta-apo-600-xronia/"
+        "https://www.in.gr/2026/09/02/greece/se-klima-vathias-sygkinisis-to-etisio-mnimosyno-tou-miki-theodoraki-sta-xania/",
+        "https://www.in.gr/2026/09/02/sports/football/sok-sti-gallia-o-empape-vriskotan-sto-stoxastro-sxediou-apagogis-apo-18xrono/",
+        "https://www.in.gr/2026/09/02/greece/afthodis-pyretos-analamvanei-o-stratos-ti-diaxeirisi-omologia-apotyxias-kai-methodologia-stratiotikou-nomou/",
+        "https://www.in.gr/2026/09/02/politics/prova-kalpis-i-deth-o-mitsotakis-amynetai-o-tsipras-epistrefei-kai-o-androulakis-paleyei-na-min-egklovistei/",
+        "https://www.in.gr/2026/09/02/greece/nekro-vrefos-stin-kypseli-dioksi-gia-anthropoktonia-apo-prothesi-ston-43xrono-kai-tin-germanida-syntrofo-tou/"
       ],
-      "seen_at_utc": "2026-09-02T12:51:49.580081+00:00"
+      "seen_at_utc": "2026-09-02T13:17:14.562753+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T12:51:49.580208+00:00"
+  "updated_at_utc": "2026-09-02T13:17:14.562939+00:00"
 }
