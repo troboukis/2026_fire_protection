@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564433186/voyli-simera-i-psifoforia-gia-ti-thesi-antiproedroy-antiparathesi-me-fonto-tin-ypopsifiotita-akrita/",
-      "title": "Βουλή: Σήμερα η ψηφοφορία για τη θέση αντιπροέδρου – Αντιπαράθεση με φόντο την υποψηφιότητα Ακρίτα",
-      "normalized_title": "ΒΟΥΛΗ: ΣΗΜΕΡΑ Η ΨΗΦΟΦΟΡΙΑ ΓΙΑ ΤΗ ΘΕΣΗ ΑΝΤΙΠΡΟΕΔΡΟΥ – ΑΝΤΙΠΑΡΑΘΕΣΗ ΜΕ ΦΟΝΤΟ ΤΗΝ ΥΠΟΨΗΦΙΟΤΗΤΑ ΑΚΡΙΤΑ",
+      "url": "https://www.kathimerini.gr/world/564433075/osa-den-gnorizoyme-gia-ti-symfonia-ipa-venezoyelas/",
+      "title": "Οσα δεν γνωρίζουμε για τη συμφωνία ΗΠΑ – Βενεζουέλας",
+      "normalized_title": "ΟΣΑ ΔΕΝ ΓΝΩΡΙΖΟΥΜΕ ΓΙΑ ΤΗ ΣΥΜΦΩΝΙΑ ΗΠΑ – ΒΕΝΕΖΟΥΕΛΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564433186/voyli-simera-i-psifoforia-gia-ti-thesi-antiproedroy-antiparathesi-me-fonto-tin-ypopsifiotita-akrita/",
-        "https://www.kathimerini.gr/world/564433195/empola-xeperasan-toys-3-000-oi-nekroi-sti-ld-kongko-i-pio-foniki-epidimia-stin-istoria-tis-choras/",
-        "https://www.kathimerini.gr/world/564433183/ischyres-ekrixeis-sygklonisan-to-kentro-toy-kievoy/",
-        "https://www.kathimerini.gr/politics/564432277/kinitopoiisi-pasok-stin-kriti-enopsei-tis-3is-toy-septemvri/"
+        "https://www.kathimerini.gr/world/564433075/osa-den-gnorizoyme-gia-ti-symfonia-ipa-venezoyelas/",
+        "https://www.kathimerini.gr/world/564433198/israil-oi-idf-anakoinosan-ton-thanato-dioikiti-tis-chamas-sti-gaza/",
+        "https://www.kathimerini.gr/world/564433201/ft-i-rosia-voitha-mystika-to-iran-stin-anaptyxi-yperichitikon-pyraylon/"
       ],
-      "seen_at_utc": "2026-09-02T08:29:59.188511+00:00"
+      "seen_at_utc": "2026-09-02T08:51:24.639878+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,37 +1261,50 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1872773/igoumenitsa-ston-eisaggelea-o-29hronos-pou-paresure-me-ih-ti-sudrofo-tou-meta-apo-kavga/?utm_source=rss",
-      "title": "Ηγουμενίτσα: Στον εισαγγελέα ο 29χρονος που παρέσυρε με ΙΧ τη σύντροφό του μετά από καβγά",
-      "normalized_title": "ΗΓΟΥΜΕΝΙΤΣΑ: ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ Ο 29ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΕΣΥΡΕ ΜΕ ΙΧ ΤΗ ΣΥΝΤΡΟΦΟ ΤΟΥ ΜΕΤΑ ΑΠΟ ΚΑΒΓΑ",
+      "url": "https://www.protothema.gr/greece/article/1872796/fotia-tora-stin-karusto-estali-minuma-apo-to-112/?utm_source=rss",
+      "title": "Φωτιά τώρα στην Κάρυστο, εστάλη μήνυμα από το 112",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΚΑΡΥΣΤΟ, ΕΣΤΑΛΗ ΜΗΝΥΜΑ ΑΠΟ ΤΟ 112",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1872773/igoumenitsa-ston-eisaggelea-o-29hronos-pou-paresure-me-ih-ti-sudrofo-tou-meta-apo-kavga/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872763/kai-auti-tin-kuriaki-me-to-car-ola-sta-heria-sas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872756/diasolinomeno-sto-pagni-2hrono-agoraki-pou-epese-apo-balkoni/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1872753/ston-anakriti-gia-na-apologithoun-gia-ta-narkotika-oi-3-apo-tin-upothesi-tou-vrefous-stin-kupseli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1872796/fotia-tora-stin-karusto-estali-minuma-apo-to-112/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872795/pis-oi-arhairesies-tha-diexahthoun-sumfona-me-ton-nomo-kai-tin-provlepomeni-diadikasia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872788/elliniki-simaia-korufi-tou-kosmou-pagosmio-protathlitria-sto-tango-i-naima-gerasopoulou-me-ton-argedino-partener-tis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872782/1200000-monadikoi-hristes-enimerothikan-hthes-triti-1-septemvriou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1872780/mehri-tin-paraskeui-oi-eggrafes-ton-protoeton-sta-aei/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T08:17:03.073203+00:00"
+      "seen_at_utc": "2026-09-02T08:51:24.639987+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1458581/voyli-stis-1230-i-psifoforia-gia-tin-elena-akrita-i-antiparathesi-syriza-kai-nd/",
-      "title": "Βουλή: Στις 12:30 η ψηφοφορία για την Έλενα Ακρίτα – Η αντιπαράθεση ΣΥΡΙΖΑ και ΝΔ",
-      "normalized_title": "ΒΟΥΛΗ: ΣΤΙΣ 12:30 Η ΨΗΦΟΦΟΡΙΑ ΓΙΑ ΤΗΝ ΕΛΕΝΑ ΑΚΡΙΤΑ – Η ΑΝΤΙΠΑΡΑΘΕΣΗ ΣΥΡΙΖΑ ΚΑΙ ΝΔ",
+      "url": "https://www.efsyn.gr/ellada/1458612/lasithi-2hrono-agori-epese-apo-mpalkoni-nosileyetai-se-krisimi-katastasi-sto-pagni/",
+      "title": "Λασίθι: 2χρονο αγόρι έπεσε από μπαλκόνι – Νοσηλεύεται σε κρίσιμη κατάσταση στο ΠΑΓΝΗ",
+      "normalized_title": "ΛΑΣΙΘΙ: 2ΧΡΟΝΟ ΑΓΟΡΙ ΕΠΕΣΕ ΑΠΟ ΜΠΑΛΚΟΝΙ – ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΚΡΙΣΙΜΗ ΚΑΤΑΣΤΑΣΗ ΣΤΟ ΠΑΓΝΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1458581/voyli-stis-1230-i-psifoforia-gia-tin-elena-akrita-i-antiparathesi-syriza-kai-nd/",
-        "https://www.efsyn.gr/athlitismos/1458560/o-paol-thelei-na-enishysei-ton-axona/"
+        "https://www.efsyn.gr/ellada/1458612/lasithi-2hrono-agori-epese-apo-mpalkoni-nosileyetai-se-krisimi-katastasi-sto-pagni/",
+        "https://www.efsyn.gr/politiki/1458610/akrita-teleytaia-mera-poy-tha-asholithoyme-me-tin-hameni-timi-tis-antiproedrias-sti-voyli/",
+        "https://www.efsyn.gr/ellada/1458594/kypseli-to-htypisa-me-mahairi-gia-na-spasei-o-pagos-sokarei-o-ishyrismos-toy-43hronoy-gia-to-nekro-vrefos/",
+        "https://www.efsyn.gr/kosmos/1458597/konstantinoypoli-to-hroniko-tis-sygkroysis-ton-ploion-kai-to-senario-t-bone-ereynes-gia-toys-10-agnooymenoys/",
+        "https://www.efsyn.gr/politiki/1458601/vryxelles-synedrio-me-protovoylia-maniati-kai-eyropaion-sosialiston-gia-ti-mesi-anatoli/"
       ],
-      "seen_at_utc": "2026-09-02T08:29:59.188595+00:00"
+      "seen_at_utc": "2026-09-02T08:51:24.639968+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/02/greece/syvota-ti-septemvris-ti-dekemvris-stolisan-skafos-me-girlantes-kai-xristougenniatiko-dentro/",
-      "title": "Τι Σεπτέμβρης, τι Δεκέμβρης - Στόλισαν σκάφος με γιρλάντες και χριστουγεννιάτικο δέντρο",
-      "normalized_title": "ΤΙ ΣΕΠΤΕΜΒΡΗΣ, ΤΙ ΔΕΚΕΜΒΡΗΣ - ΣΤΟΛΙΣΑΝ ΣΚΑΦΟΣ ΜΕ ΓΙΡΛΑΝΤΕΣ ΚΑΙ ΧΡΙΣΤΟΥΓΕΝΝΙΑΤΙΚΟ ΔΕΝΤΡΟ",
+      "url": "https://www.in.gr/2026/09/02/istoriko-arxeio/mikis-theodorakis-oloi-gnorizomaste-metaksy-mas/",
+      "title": "Μίκης Θεοδωράκης: Η συνάντηση",
+      "normalized_title": "ΜΙΚΗΣ ΘΕΟΔΩΡΑΚΗΣ: Η ΣΥΝΑΝΤΗΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/02/greece/syvota-ti-septemvris-ti-dekemvris-stolisan-skafos-me-girlantes-kai-xristougenniatiko-dentro/",
-        "https://www.in.gr/2026/09/02/greece/kriti-diasolinomeno-sto-pagni-2xrono-agoraki-pou-epese-apo-mpalkoni/"
+        "https://www.in.gr/2026/09/02/istoriko-arxeio/mikis-theodorakis-oloi-gnorizomaste-metaksy-mas/",
+        "https://www.in.gr/2026/09/02/plus/ena-spiti-treis-sygkatoikoi-kai-ena-psygeio/",
+        "https://www.in.gr/2026/09/02/plus/i-foititiki-zoi-se-15-antikeimena/",
+        "https://www.in.gr/2026/09/02/plus/poios-plironei-ton-kafe-o-agrafos-kodikas-tou-foititikou-dating/",
+        "https://www.in.gr/2026/09/02/plus/kid/omali-epistrofi-sti-sxoliki-kathimerinotita-ti-kanoume/",
+        "https://www.in.gr/2026/09/02/plus/kid/to-idaniko-sxoliko-kolatsio-gia-kathe-ilikia/",
+        "https://www.in.gr/2026/09/02/plus/kid/poso-kinito-einai-poly/",
+        "https://www.in.gr/2026/09/02/in-science/technology/xaker-alonizan-se-xiliades-logariasmous-sto-dropbox-katevasan-arxeia-xriston/",
+        "https://www.in.gr/2026/09/02/greece/igoumenitsa-ston-eisaggelea-o-29xronos-pou-paresyre-me-ix-ti-syntrofo-tou-meta-apo-kavga/",
+        "https://www.in.gr/2026/09/02/politics/diplomatia/tourkia-rimatiki-diakoinosi-se-athina-den-epitrepoume-drastiriotites-pou-allazoun-to-status-quo-sto-aigaio/",
+        "https://www.in.gr/2026/09/02/sports/football/xalase-o-daneismos-tou-pantovits-sti-giagkelonia-epistrefei-stin-ellada/"
       ],
-      "seen_at_utc": "2026-09-02T08:29:59.188563+00:00"
+      "seen_at_utc": "2026-09-02T08:51:24.639941+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T08:29:59.188667+00:00"
+  "updated_at_utc": "2026-09-02T08:51:24.640085+00:00"
 }
