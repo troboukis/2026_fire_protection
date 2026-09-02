@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/reportaz/564431659/selin-gkosner-stin-k-perimenoyme-perissotera-kroysmata-toy-dytikoy-neiloy/",
-      "title": "Σελίν Γκόσνερ στην «Κ»: «Περιμένουμε περισσότερα κρούσματα του Δυτικού Νείλου»",
-      "normalized_title": "ΣΕΛΙΝ ΓΚΟΣΝΕΡ ΣΤΗΝ «Κ»: «ΠΕΡΙΜΕΝΟΥΜΕ ΠΕΡΙΣΣΟΤΕΡΑ ΚΡΟΥΣΜΑΤΑ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ»",
+      "url": "https://www.kathimerini.gr/culture/564432496/florina-nea-selida-gia-to-diethnes/",
+      "title": "Φλώρινα: Νέα σελίδα για το «Διεθνές»",
+      "normalized_title": "ΦΛΩΡΙΝΑ: ΝΕΑ ΣΕΛΙΔΑ ΓΙΑ ΤΟ «ΔΙΕΘΝΕΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/reportaz/564431659/selin-gkosner-stin-k-perimenoyme-perissotera-kroysmata-toy-dytikoy-neiloy/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564432334/i-ayli-ginetai-taxi-i-fysi-daskala/",
-        "https://www.kathimerini.gr/society/564432328/antistrofi-metrisi-gia-80-000-aionioys-foitites/",
-        "https://www.kathimerini.gr/athletics/564434140/i-ispaniki-omospondia-podosfairoy-chrimatodotei-tin-katapsyxi-oarion-gia-tis-gynaikes-tis-ethnikis/",
-        "https://www.kathimerini.gr/k/k-magazine/564431641/giati-oi-eyropaikes-omades-psachnoyn-talenta-stin-ellada/"
+        "https://www.kathimerini.gr/culture/564432496/florina-nea-selida-gia-to-diethnes/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564434191/episkepsi-kalin-stin-athina-ti-syzitise-me-ton-dioikiti-tis-eyp/",
+        "https://www.kathimerini.gr/athletics/football/564434200/prasinos-o-oyna-eos-to-2030/"
       ],
-      "seen_at_utc": "2026-09-02T17:17:04.136762+00:00"
+      "seen_at_utc": "2026-09-02T17:30:04.737223+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,26 +1261,26 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873075/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-elenas-adoniou-stin-teleutaia-strofi/?utm_source=rss",
-      "title": "Αυτή την Κυριακή με το ΘΕMA, το συναρπαστικό μυθιστόρημα της Έλενας Αντωνίου «Στην τελευταία στροφή»",
-      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ ΜΕ ΤΟ ΘΕMA, ΤΟ ΣΥΝΑΡΠΑΣΤΙΚΟ ΜΥΘΙΣΤΟΡΗΜΑ ΤΗΣ ΕΛΕΝΑΣ ΑΝΤΩΝΙΟΥ «ΣΤΗΝ ΤΕΛΕΥΤΑΙΑ ΣΤΡΟΦΗ»",
+      "url": "https://www.protothema.gr/greece/article/1873095/neos-kok-pote-oi-odigoi-xanadinoun-exetaseis-gia-to-diploma/?utm_source=rss",
+      "title": "Νέος ΚΟΚ: Πότε οι οδηγοί ξαναδίνουν εξετάσεις για το δίπλωμα",
+      "normalized_title": "ΝΕΟΣ ΚΟΚ: ΠΟΤΕ ΟΙ ΟΔΗΓΟΙ ΞΑΝΑΔΙΝΟΥΝ ΕΞΕΤΑΣΕΙΣ ΓΙΑ ΤΟ ΔΙΠΛΩΜΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873075/auti-tin-kuriaki-me-to-thema-to-sunarpastiko-muthistorima-tis-elenas-adoniou-stin-teleutaia-strofi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873068/den-to-esfaxa-ton-pago-htupaga-anatrihiastikes-oi-perigrafes-tou-43hronou-gia-to-vrefos-stin-kupseli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873095/neos-kok-pote-oi-odigoi-xanadinoun-exetaseis-gia-to-diploma/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873092/duo-sullipseis-gia-diakinisi-narkotikon-se-peiraia-kai-rodo-katashethikan-shedon-1-ekat-euro-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873090/auti-tin-kuriaki-me-to-proto-thema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-02T16:51:03.845758+00:00"
+      "seen_at_utc": "2026-09-02T17:30:04.737311+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1459025/minyma-doyka-gia-tin-3i-septemvri-me-gkanti-loyther-kingk-eleytherio-venizelo-kai-andrea-papandreoy-vinteo/",
-      "title": "Μήνυμα Δούκα για την 3η Σεπτέμβρη με Γκάντι, Λούθερ Κινγκ, Ελευθέριο Βενιζέλο και Ανδρέα Παπανδρέου [βίντεο]",
-      "normalized_title": "ΜΗΝΥΜΑ ΔΟΥΚΑ ΓΙΑ ΤΗΝ 3Η ΣΕΠΤΕΜΒΡΗ ΜΕ ΓΚΑΝΤΙ, ΛΟΥΘΕΡ ΚΙΝΓΚ, ΕΛΕΥΘΕΡΙΟ ΒΕΝΙΖΕΛΟ ΚΑΙ ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/athlitismos/1459041/telos-epohis-gia-rontinei-ston-olympiako-synehizei-tin-kariera-toy-stin-santos/",
+      "title": "Τέλος εποχής για Ροντινέι στον Ολυμπιακό: Συνεχίζει την καριέρα του στην Σάντος",
+      "normalized_title": "ΤΕΛΟΣ ΕΠΟΧΗΣ ΓΙΑ ΡΟΝΤΙΝΕΙ ΣΤΟΝ ΟΛΥΜΠΙΑΚΟ: ΣΥΝΕΧΙΖΕΙ ΤΗΝ ΚΑΡΙΕΡΑ ΤΟΥ ΣΤΗΝ ΣΑΝΤΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1459025/minyma-doyka-gia-tin-3i-septemvri-me-gkanti-loyther-kingk-eleytherio-venizelo-kai-andrea-papandreoy-vinteo/",
-        "https://www.efsyn.gr/athlitismos/1459034/aneti-premiera-gia-aek-stin-hrysoypoli/",
-        "https://www.efsyn.gr/stiles/1459029/pasok-i-dynami-tis-allagis-epistrefei-kai-pali-tin-3i-septemvri/",
-        "https://www.efsyn.gr/kosmos/1458771/ti-katafere-o-tramp-stin-karaiviki/"
+        "https://www.efsyn.gr/athlitismos/1459041/telos-epohis-gia-rontinei-ston-olympiako-synehizei-tin-kariera-toy-stin-santos/",
+        "https://www.efsyn.gr/kosmos/1459039/nayagio-stin-keryneia-anasyrthike-kai-9i-soros-paraitithike-o-ypoyrgos-metaforon-ton-katehomenon/",
+        "https://www.efsyn.gr/kosmos/1459033/o-tramp-proteinei-na-metonomastoyn-ta-stena-toy-ormoyz-se-stena-tramp/"
       ],
-      "seen_at_utc": "2026-09-02T17:17:04.136847+00:00"
+      "seen_at_utc": "2026-09-02T17:30:04.737276+00:00"
     },
     "in_gr": {
       "url": "https://www.in.gr/2026/09/02/politics/epikairotita/o-aleksis-tsipras-parousiazei-sxedio-diakyvernisis-gia-tin-ellada-pou-oramatizomaste-nea-ethniki-stratigiki-gia-anaptyksi-asfaleia-entimotita/",
@@ -1298,5 +1296,5 @@
       "seen_at_utc": "2026-09-02T17:17:04.136811+00:00"
     }
   },
-  "updated_at_utc": "2026-09-02T17:17:04.136921+00:00"
+  "updated_at_utc": "2026-09-02T17:30:04.737389+00:00"
 }
