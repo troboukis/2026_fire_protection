@@ -2406,3 +2406,5 @@ run_started_at_utc,reference_number,organization_value,title,status,inserted_row
 2026-09-03T06:06:50.016989+00:00,26SYMV019710619,,«Μίσθωση μηχανημάτων για εργασίες αποψίλωσης αγροτικών δρόμων στην Δ.Ε Κασσωπαίων»,success,1,
 2026-09-03T06:06:50.016989+00:00,26SYMV019711918,,ΤΜΗΜΑ 1: ΥΔΡΟΦΟΡΟ ΠΥΡΟΣΒΕΣΤΙΚΟ ΟΧΗΜΑ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
 2026-09-03T06:06:50.016989+00:00,26SYMV019715132,ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,Σύμβαση για την αγορά υλικών  για την αντιπυρική προστασία των φυλακίων,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-03T09:06:45.509082+00:00,26SYMV019711918,,ΤΜΗΜΑ 1: ΥΔΡΟΦΟΡΟ ΠΥΡΟΣΒΕΣΤΙΚΟ ΟΧΗΜΑ,no_findings,0,
+2026-09-03T09:06:45.509082+00:00,26SYMV019715132,ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,Σύμβαση για την αγορά υλικών  για την αντιπυρική προστασία των φυλακίων,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
