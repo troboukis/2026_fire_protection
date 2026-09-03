@@ -1,14 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564434623/pos-tha-dimioyrgithei-to-neo-toposimo-prasinoy-kai-anapsychis/",
-      "title": "Πώς θα δημιουργηθεί το νέο τοπόσημο πρασίνου και αναψυχής",
-      "normalized_title": "ΠΩΣ ΘΑ ΔΗΜΙΟΥΡΓΗΘΕΙ ΤΟ ΝΕΟ ΤΟΠΟΣΗΜΟ ΠΡΑΣΙΝΟΥ ΚΑΙ ΑΝΑΨΥΧΗΣ",
+      "url": "https://www.kathimerini.gr/world/564435157/el-ninio-treis-kyklones-taytochrona-ston-eiriniko/",
+      "title": "Ελ Νίνιο: Τρεις κυκλώνες ταυτόχρονα στον Ειρηνικό",
+      "normalized_title": "ΕΛ ΝΙΝΙΟ: ΤΡΕΙΣ ΚΥΚΛΩΝΕΣ ΤΑΥΤΟΧΡΟΝΑ ΣΤΟΝ ΕΙΡΗΝΙΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564434623/pos-tha-dimioyrgithei-to-neo-toposimo-prasinoy-kai-anapsychis/",
-        "https://www.kathimerini.gr/politics/parliament/564434572/voyli-ektos-proedreioy-i-akrita/"
+        "https://www.kathimerini.gr/world/564435157/el-ninio-treis-kyklones-taytochrona-ston-eiriniko/",
+        "https://www.kathimerini.gr/politics/564434593/entos-kai-ektos-ellas-israil-germania-symmachia/",
+        "https://www.kathimerini.gr/world/564435178/venezoyela-symfonies-me-energeiakoys-kolossoys-ypo-tin-aigida-ton-ipa/",
+        "https://www.kathimerini.gr/economy/international/564435037/paidi-tis-apple-o-neos-ceo-tis-koryfaias-technologikis-etaireias/",
+        "https://www.kathimerini.gr/politics/amyna/564434587/psila-stin-atzenta-i-ananeosi-tis-symfonias-me-ipa/",
+        "https://www.kathimerini.gr/society/564435169/florina-olonychtia-machi-me-tis-floges-stin-krystallopigi-ichise-to-112/",
+        "https://www.kathimerini.gr/istoria/564434425/san-simera-3-septemvrioy-1971-anexartitopoieitai-to-katar/"
       ],
-      "seen_at_utc": "2026-09-03T04:29:54.159489+00:00"
+      "seen_at_utc": "2026-09-03T04:51:12.614081+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,61 +1265,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873205/1150000-monadikoi-hristes-enimerothikan-hthes-tetarti-2-septemvriou-apo-to-protothemagr/?utm_source=rss",
-      "title": "1.150.000 μοναδικοί χρήστες ενημερώθηκαν χθες Τετάρτη 2 Σεπτεμβρίου από το protothema.gr",
-      "normalized_title": "1.150.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΤΕΤΑΡΤΗ 2 ΣΕΠΤΕΜΒΡΙΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
+      "url": "https://www.protothema.gr/greece/article/1873209/andras-parasurthike-apo-surmo-tou-proastiakou-stin-arhaia-korintho-anasurthike-horis-tis-aisthiseis-tou/?utm_source=rss",
+      "title": "Άνδρας παρασύρθηκε από συρμό του προαστιακού στην Αρχαία Κόρινθο, ανασύρθηκε χωρίς τις αισθήσεις του",
+      "normalized_title": "ΑΝΔΡΑΣ ΠΑΡΑΣΥΡΘΗΚΕ ΑΠΟ ΣΥΡΜΟ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΣΤΗΝ ΑΡΧΑΙΑ ΚΟΡΙΝΘΟ, ΑΝΑΣΥΡΘΗΚΕ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873205/1150000-monadikoi-hristes-enimerothikan-hthes-tetarti-2-septemvriou-apo-to-protothemagr/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873209/andras-parasurthike-apo-surmo-tou-proastiakou-stin-arhaia-korintho-anasurthike-horis-tis-aisthiseis-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T04:29:54.159570+00:00"
+      "seen_at_utc": "2026-09-03T04:51:12.614221+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1459289/neo-montelo-tsipra-me-shedio-kai-arithmoys-1-000-eyro-o-katotatos-misthos-kai-50-000-nees-prosites-katoikies/",
-      "title": "Νέο μοντέλο Τσίπρα με σχέδιο και αριθμούς: 1.000 ευρώ ο κατώτατος μισθός και 50.000 νέες προσιτές κατοικίες",
-      "normalized_title": "ΝΕΟ ΜΟΝΤΕΛΟ ΤΣΙΠΡΑ ΜΕ ΣΧΕΔΙΟ ΚΑΙ ΑΡΙΘΜΟΥΣ: 1.000 ΕΥΡΩ Ο ΚΑΤΩΤΑΤΟΣ ΜΙΣΘΟΣ ΚΑΙ 50.000 ΝΕΕΣ ΠΡΟΣΙΤΕΣ ΚΑΤΟΙΚΙΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1459307/afthodis-pyretos-o-stratos-analamvanei-ti-diaheirisi-tis-krisis-sti-lesvo/",
+      "title": "Αφθώδης πυρετός: Ο στρατός αναλαμβάνει τη διαχείριση της κρίσης στη Λέσβο",
+      "normalized_title": "ΑΦΘΩΔΗΣ ΠΥΡΕΤΟΣ: Ο ΣΤΡΑΤΟΣ ΑΝΑΛΑΜΒΑΝΕΙ ΤΗ ΔΙΑΧΕΙΡΙΣΗ ΤΗΣ ΚΡΙΣΗΣ ΣΤΗ ΛΕΣΒΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1459289/neo-montelo-tsipra-me-shedio-kai-arithmoys-1-000-eyro-o-katotatos-misthos-kai-50-000-nees-prosites-katoikies/",
-        "https://www.efsyn.gr/ellada/1459295/kairos-mikri-ptosi-tis-thermokrasias-poy-anamenontai-vrohes-kai-kataigides-ishyroi-anemoi-sto-aigaio/"
+        "https://www.efsyn.gr/ellada/1459307/afthodis-pyretos-o-stratos-analamvanei-ti-diaheirisi-tis-krisis-sti-lesvo/",
+        "https://www.efsyn.gr/ellada/1459300/fiesta-gia-tin-anaplasi-toy-falirikoy-ormoy-apo-mpazotopo-se-horo-anapsyhis/",
+        "https://www.efsyn.gr/ellada/1459306/dolofonia-41hronis-sti-syro-tin-akinitopoiise-to-dexi-toy-heri-itan-gemato-aimata-leei-aytoptis-martyras/"
       ],
-      "seen_at_utc": "2026-09-03T04:29:54.159536+00:00"
+      "seen_at_utc": "2026-09-03T04:51:12.614180+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/world/ipa-anakoinosan-oti-skotosan-227-anthropous-se-enan-xrono-pou-ferontai-na-diakinousan-narkotika/",
-      "title": "Οι ΗΠΑ ανακοίνωσαν ότι σκότωσαν 227 ανθρώπους σε έναν χρόνο που φέρονται να διακινούσαν ναρκωτικά",
-      "normalized_title": "ΟΙ ΗΠΑ ΑΝΑΚΟΙΝΩΣΑΝ ΟΤΙ ΣΚΟΤΩΣΑΝ 227 ΑΝΘΡΩΠΟΥΣ ΣΕ ΕΝΑΝ ΧΡΟΝΟ ΠΟΥ ΦΕΡΟΝΤΑΙ ΝΑ ΔΙΑΚΙΝΟΥΣΑΝ ΝΑΡΚΩΤΙΚΑ",
+      "url": "https://www.in.gr/2026/09/03/greece/proastiakos-andras-anasyrthike-xoris-tis-aisthiseis-tou-apo-syrmo-sto-ypsos-tis-arxaias-korinthou/",
+      "title": "Άνδρας ανασύρθηκε χωρίς τις αισθήσεις του από συρμό του προαστιακού στο ύψος της Αρχαίας Κορίνθου",
+      "normalized_title": "ΑΝΔΡΑΣ ΑΝΑΣΥΡΘΗΚΕ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ ΑΠΟ ΣΥΡΜΟ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΣΤΟ ΥΨΟΣ ΤΗΣ ΑΡΧΑΙΑΣ ΚΟΡΙΝΘΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/world/ipa-anakoinosan-oti-skotosan-227-anthropous-se-enan-xrono-pou-ferontai-na-diakinousan-narkotika/",
-        "https://www.in.gr/2026/09/03/world/santers-kata-tramp-gia-ta-stena-tou-ormouz-eiste-o-proedros-oxi-enas-trelos-vasilias/",
-        "https://www.in.gr/2026/09/03/politics/tsipras-sti-deth-me-programma-diakyvernisis-kai-stoxo-to-kentro-pos-ton-antimetopizoun-nd-kai-pasok/",
-        "https://www.in.gr/2026/09/03/economy/protovathmia-perithalpsi-vomva-pou-tha-ekragei-sta-xeria-aytis-i-tis-epomenis-kyvernisis/",
-        "https://www.in.gr/2026/09/03/world/i-ksexasmeni-aytokratoria-otan-i-rosia-apoikise-tin-kalifornia/",
-        "https://www.in.gr/2026/09/03/life/geysi/syntagi-ekmek-me-krema-mastixas-kai-tsoureki/",
-        "https://www.in.gr/2026/09/03/greece/anevazei-to-thermometro-i-prosorini-dioikisi-tou-pis/",
-        "https://www.in.gr/2026/09/03/greece/kairos-allazei-o-kairos-me-vroxes-kai-kataigides-se-arketes-perioxes-anemoi-eos-6-mpofor-sta-pelagi/",
-        "https://www.in.gr/2026/09/03/plus/vita/ola-osa-aksizei-na-ksereis-gia-ti-diaita-dash/",
-        "https://www.in.gr/2026/09/03/economy/oikonomikes-eidiseis/epaggelmatiki-asfalisi-pos-xtizetai-mia-deyteri-syntaksi/",
-        "https://www.in.gr/2026/09/03/greece/pano-apo-2-300-troxaia-me-mixanes-stin-attiki-to-8mino-tou-2026/",
-        "https://www.in.gr/2026/09/03/in-science/perivallon-b-science/klimatiki-krisi-aypnies-thermis-kalokairinis-nyktos/",
-        "https://www.in.gr/2026/09/03/life/culture-live/rosia-kai-politismos-sta-xarakomata-i-maxi-gia-to-rosiko-periptero-pou-dixazei-ti-venetia/",
-        "https://www.in.gr/2026/09/03/plus/vita/psyxraima-epta-kiniseis-gia-na-min-ksefygei-o-kavgas/",
-        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/kyvernisi-ston-polemo-kata-samara-kai-o-voridis/",
-        "https://www.in.gr/2026/09/03/life/culture-live/festival-santa-mparmpara-stin-emili-mplant-to-vraveio-kerk-ntagklas/",
-        "https://www.in.gr/2026/09/03/world/i-rosia-dokimazei-tin-ikanotita-tou-nato-na-apofygei-thermo-polemo-poso-tha-mporei-na-to-kanei/",
-        "https://www.in.gr/2026/09/03/greece/dyo-mythoi-gia-tis-pyrkagies/",
-        "https://www.in.gr/2026/09/03/world/nyt-to-iraniko-xtypima-pou-diekopse-tin-efodiastiki-alysida-tou-stolou-ton-ipa/",
-        "https://www.in.gr/2026/09/03/economy/diethnis-oikonomia/agora-ergasias-oi-gigantes-tis-viomixanias-prokaloun-trigmous-akyronontas-ergatikes-kataktiseis-dekaetion/",
-        "https://www.in.gr/2026/09/03/world/to-kouveit-anakoinonei-oti-dexetai-epithesi-tou-iran/",
-        "https://www.in.gr/2026/09/03/stories/keryneia-thysiastike-gia-tin-kori-tis-edose-to-sosivio-tis-kai-eipe-stin-adelfi-tis-sou-tin-empisteyomai/",
-        "https://www.in.gr/2026/09/03/world/venezouela-i-rontrigkes-eyxaristei-ton-tramp-gia-tin-eymareia-pou-tha-ferei-sti-xora-i-petrelaiki-symfonia/",
-        "https://www.in.gr/2026/09/03/world/dytiki-oxthi-nekroi-2-palaistinioi-efivoi-se-efodo-epoikon-kai-israilinon-stratioton/",
-        "https://www.in.gr/2026/09/03/world/oukrania-katasxethike-ploio-tis-rosias-sti-norvigia-katopin-aitimatos-tou-kievou/",
-        "https://www.in.gr/2026/09/03/world/feromenos-varonos-ton-narkotikon-dolofonithike-stis-mpaxames-vinteo/",
-        "https://www.in.gr/2026/09/03/world/pyrovolismoi-sti-mineapoli-ton-ipa-toulaxiston-enas-nekros-kai-eksi-traymaties/",
-        "https://www.in.gr/2026/09/03/in-science/perivallon-b-science/el-ninio-spanio-fainomeno-me-treis-kyklones-taytoxrona-ston-eiriniko-okeano/",
-        "https://www.in.gr/2026/09/03/world/ti-gnorizoume-gia-tin-apoxorisi-ton-ipa-apo-to-irak-meta-apo-20-xronia/"
+        "https://www.in.gr/2026/09/03/greece/proastiakos-andras-anasyrthike-xoris-tis-aisthiseis-tou-apo-syrmo-sto-ypsos-tis-arxaias-korinthou/",
+        "https://www.in.gr/2026/09/03/go-fun/fizz/ioanna-triantafyllidou-ta-prota-genethlia-tou-giou-tis/",
+        "https://www.in.gr/2026/09/03/world/venezouela-ypegrapse-energeiakes-symfonies-me-polyethnikes-ypo-tin-aigida-ton-ipa/",
+        "https://www.in.gr/2026/09/03/plus/vita/septemvrios-pos-mpainoume-ksana-sto-sosto-programma-ypnou/"
       ],
-      "seen_at_utc": "2026-09-03T04:17:23.966751+00:00"
+      "seen_at_utc": "2026-09-03T04:51:12.614136+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T04:29:54.159631+00:00"
+  "updated_at_utc": "2026-09-03T04:51:12.614290+00:00"
 }
