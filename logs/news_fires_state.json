@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/astynomiko/564435949/nea-makri-omologise-oti-ethapse-ti-mitera-tis-stin-ayli-gia-na-eisprattei-ti-syntaxi-tis-tin-katiggeile-i-kori-tis/",
-      "title": "Νέα Μάκρη: Ομολόγησε ότι έθαψε τη μητέρα της στην αυλή για να εισπράττει τη σύνταξή της – Την κατήγγειλε η κόρη της",
-      "normalized_title": "ΝΕΑ ΜΑΚΡΗ: ΟΜΟΛΟΓΗΣΕ ΟΤΙ ΕΘΑΨΕ ΤΗ ΜΗΤΕΡΑ ΤΗΣ ΣΤΗΝ ΑΥΛΗ ΓΙΑ ΝΑ ΕΙΣΠΡΑΤΤΕΙ ΤΗ ΣΥΝΤΑΞΗ ΤΗΣ – ΤΗΝ ΚΑΤΗΓΓΕΙΛΕ Η ΚΟΡΗ ΤΗΣ",
+      "url": "https://www.kathimerini.gr/politics/564436039/elliniko-diavima-stin-agkyra-gia-toyrkikes-anakoinoseis-kai-thalassia-parka/",
+      "title": "Ελληνικό διάβημα στην Αγκυρα για τουρκικές ανακοινώσεις και θαλάσσια πάρκα",
+      "normalized_title": "ΕΛΛΗΝΙΚΟ ΔΙΑΒΗΜΑ ΣΤΗΝ ΑΓΚΥΡΑ ΓΙΑ ΤΟΥΡΚΙΚΕΣ ΑΝΑΚΟΙΝΩΣΕΙΣ ΚΑΙ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/astynomiko/564435949/nea-makri-omologise-oti-ethapse-ti-mitera-tis-stin-ayli-gia-na-eisprattei-ti-syntaxi-tis-tin-katiggeile-i-kori-tis/",
-        "https://www.kathimerini.gr/culture/tv/564435895/happy-traveller-i-12i-sezon-erchetai-ston-skai/",
-        "https://www.kathimerini.gr/politics/564435910/dieykriniseis-elas-gia-tin-patriotiki-eisfora-den-tha-vasistei-sta-kosmimata-ton-ploysion-kyrion/"
+        "https://www.kathimerini.gr/politics/564436039/elliniko-diavima-stin-agkyra-gia-toyrkikes-anakoinoseis-kai-thalassia-parka/",
+        "https://www.kathimerini.gr/world/564436042/moysiki-diplomatia-oi-prothypoyrgoi-tailandis-kai-sigkapoyris-tragoydisan-beatles-se-episimo-deipno/",
+        "https://www.kathimerini.gr/society/564436033/proastiakos-akinitopoiithike-amaxostoichia-me-170-epivates-ston-stathmo-aspropyrgoy/",
+        "https://www.kathimerini.gr/world/564436009/simera-anamenetai-na-ftasei-sti-servia-i-soros-toy-egklimatia-polemoy-ratko-mlantits/",
+        "https://www.kathimerini.gr/opinion/readers/564434716/ta-teretismata-ton-dianooymenon/",
+        "https://www.kathimerini.gr/opinion/readers/564434707/strateysi-gynaikon-kai-dimografiko/",
+        "https://www.kathimerini.gr/opinion/readers/564434713/oi-kathares-poleis-choron-valtikis/"
       ],
-      "seen_at_utc": "2026-09-03T12:51:22.484135+00:00"
+      "seen_at_utc": "2026-09-03T13:17:11.310923+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,29 +1275,31 @@
       "seen_at_utc": "2026-09-03T12:51:22.484271+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1459759/elas-prostima-350-000-eyro-se-yp-koinonikis-synohis-kai-eetaa-gia-ta-prosopika-dedomena-eos-kai-25-ekat-politon/",
-      "title": "ΕΛΑΣ: Πρόστιμα 350.000 ευρώ σε Υπ. Κοινωνικής Συνοχής και ΕΕΤΑΑ για τα προσωπικά δεδομένα έως και 2,5 εκατ. πολιτών",
-      "normalized_title": "ΕΛΑΣ: ΠΡΟΣΤΙΜΑ 350.000 ΕΥΡΩ ΣΕ ΥΠ. ΚΟΙΝΩΝΙΚΗΣ ΣΥΝΟΧΗΣ ΚΑΙ ΕΕΤΑΑ ΓΙΑ ΤΑ ΠΡΟΣΩΠΙΚΑ ΔΕΔΟΜΕΝΑ ΕΩΣ ΚΑΙ 2,5 ΕΚΑΤ. ΠΟΛΙΤΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1459792/akinitopoiithike-syrmos-toy-proastiakoy-ston-aspropyrgo-kathysteriseis-sta-epomena-dromologia/",
+      "title": "Ακινητοποιήθηκε συρμός του προαστιακού στον Ασπρόπυργο – Καθυστερήσεις στα επόμενα δρομολόγια",
+      "normalized_title": "ΑΚΙΝΗΤΟΠΟΙΗΘΗΚΕ ΣΥΡΜΟΣ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΣΤΟΝ ΑΣΠΡΟΠΥΡΓΟ – ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΑ ΕΠΟΜΕΝΑ ΔΡΟΜΟΛΟΓΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1459759/elas-prostima-350-000-eyro-se-yp-koinonikis-synohis-kai-eetaa-gia-ta-prosopika-dedomena-eos-kai-25-ekat-politon/",
-        "https://www.efsyn.gr/politiki/1459781/nea-aristera-gia-programma-elas-o-tsipras-den-ehei-stoho-na-htypisei-apofasistika-tis-anisotites/"
+        "https://www.efsyn.gr/ellada/1459792/akinitopoiithike-syrmos-toy-proastiakoy-ston-aspropyrgo-kathysteriseis-sta-epomena-dromologia/",
+        "https://www.efsyn.gr/ellada/1459789/marathonas-omologise-oti-ethapse-ti-mitera-tis-stin-ayli-gia-na-pairnei-ti-syntaxi-i-kataggelia-poy-xekleidose-tin-ypothesi/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-john-antono-03-09-2026/",
+        "https://www.efsyn.gr/oikonomia/1459590/apanthrakopoiisi-tis-naytilias-realistiko-plaisio-zitoyn-kyvernisi-kai-efoplistes/"
       ],
-      "seen_at_utc": "2026-09-03T12:51:22.484244+00:00"
+      "seen_at_utc": "2026-09-03T13:17:11.311017+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/politics/politiki-grammateia/sta-ypo-anegersi-stratiotika-oikimata-aksiomatikon-sto-didymoteixo-o-nikos-dendias/",
-      "title": "Στα υπό ανέγερση Στρατιωτικά Οικήματα Αξιωματικών στο Διδυμότειχο ο Νίκος Δένδιας",
-      "normalized_title": "ΣΤΑ ΥΠΟ ΑΝΕΓΕΡΣΗ ΣΤΡΑΤΙΩΤΙΚΑ ΟΙΚΗΜΑΤΑ ΑΞΙΩΜΑΤΙΚΩΝ ΣΤΟ ΔΙΔΥΜΟΤΕΙΧΟ Ο ΝΙΚΟΣ ΔΕΝΔΙΑΣ",
+      "url": "https://www.in.gr/2026/09/03/sports/basketball/i-proti-ton-osman-kai-kalathi-ston-paok-pics/",
+      "title": "Η «πρώτη» των Οσμάν και Καλάθη στον ΠΑΟΚ (pics)",
+      "normalized_title": "Η «ΠΡΩΤΗ» ΤΩΝ ΟΣΜΑΝ ΚΑΙ ΚΑΛΑΘΗ ΣΤΟΝ ΠΑΟΚ (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/sta-ypo-anegersi-stratiotika-oikimata-aksiomatikon-sto-didymoteixo-o-nikos-dendias/",
-        "https://www.in.gr/2026/09/03/sports/basketball/gkrant-yparxei-enthousiasmos-gia-ton-omprantovits/",
-        "https://www.in.gr/2026/09/03/in-science/ai/i-openai-prosthetei-kokkino-koumpi-meta-tis-anisyxitikes-apodraseis-montelon-tis/",
-        "https://www.in.gr/2026/09/03/greece/thriler-ston-marathona-ilikiomeni-vrethike-nekri-thammeni-se-ayli-spitiou/",
-        "https://www.in.gr/2026/09/03/plus/medianews/to-vima-kykloforei-ayti-tin-kyriaki-me-synarpastikes-prosfores/",
-        "https://www.in.gr/2026/09/03/world/tha-tous-gyrisoume-stin-epoxi-tou-lithou-o-israel-katz-apeilei-me-antipoina-an-to-iran-epitethei-sto-israil/"
+        "https://www.in.gr/2026/09/03/sports/basketball/i-proti-ton-osman-kai-kalathi-ston-paok-pics/",
+        "https://www.in.gr/2026/09/03/economy/dimosioi-ypalliloi-se-synthikes-ftoxopoiisis-poso-meiothike-o-pragmatikos-misthos-ereyna-kai-martyries/",
+        "https://www.in.gr/2026/09/03/go-fun/fizz/oloi-prepei-na-niothoun-oti-mporoun-na-ta-kanoun-skta-i-elen-miren-tha-stirizei-panta-ton-tom-xarnti/",
+        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/venizelos-gia-3i-septemvri-ena-isxyro-pasok-einai-kai-pali-anagkaio/",
+        "https://www.in.gr/2026/09/03/world/nepal-i-sygklonistiki-istoria-epiviosis-apo-mia-plimmyrismeni-siragga-sto-nepal/",
+        "https://www.in.gr/2026/09/03/plus/medianews/vimagazino-oi-profites-tis-texnitis-noimosynis/"
       ],
-      "seen_at_utc": "2026-09-03T12:51:22.484188+00:00"
+      "seen_at_utc": "2026-09-03T13:17:11.310967+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T12:51:22.484364+00:00"
+  "updated_at_utc": "2026-09-03T13:17:11.311091+00:00"
 }
