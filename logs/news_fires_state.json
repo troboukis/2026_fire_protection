@@ -1,13 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564434605/kypseli-anavoli-gia-ton-43chrono-ayrio-ston-anakriti-kai-oi-treis-gia-to-nekro-vrefos/",
-      "title": "Κυψέλη: Αναβολή για τον 43χρονο – Αύριο στον ανακριτή και οι τρεις για το νεκρό βρέφος",
-      "normalized_title": "ΚΥΨΕΛΗ: ΑΝΑΒΟΛΗ ΓΙΑ ΤΟΝ 43ΧΡΟΝΟ – ΑΥΡΙΟ ΣΤΟΝ ΑΝΑΚΡΙΤΗ ΚΑΙ ΟΙ ΤΡΕΙΣ ΓΙΑ ΤΟ ΝΕΚΡΟ ΒΡΕΦΟΣ",
+      "url": "https://www.kathimerini.gr/world/564435679/toyrkia-ereyna-kata-toy-achmet-ntavoytogloy-gia-exyvrisi-toy-erntogan/",
+      "title": "Τουρκία: Ερευνα κατά του Αχμέτ Νταβούτογλου για εξύβριση του Ερντογάν",
+      "normalized_title": "ΤΟΥΡΚΙΑ: ΕΡΕΥΝΑ ΚΑΤΑ ΤΟΥ ΑΧΜΕΤ ΝΤΑΒΟΥΤΟΓΛΟΥ ΓΙΑ ΕΞΥΒΡΙΣΗ ΤΟΥ ΕΡΝΤΟΓΑΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564434605/kypseli-anavoli-gia-ton-43chrono-ayrio-ston-anakriti-kai-oi-treis-gia-to-nekro-vrefos/"
+        "https://www.kathimerini.gr/world/564435679/toyrkia-ereyna-kata-toy-achmet-ntavoytogloy-gia-exyvrisi-toy-erntogan/",
+        "https://www.kathimerini.gr/economy/local/564434938/to-pleonektima/",
+        "https://www.kathimerini.gr/world/564435664/komision-i-e-e-den-einai-akomi-etoimi-na-desmeytei-gia-stirixi-tis-ispanias-sti-theoyta/",
+        "https://www.kathimerini.gr/visual/infographics/564434989/toyrismos-kalokairi-eos-kai-ton-oktovrio/",
+        "https://www.kathimerini.gr/society/564435625/fotia-tora-sti-chalkida-epicheiroyn-pente-enaeria-mesa/",
+        "https://www.kathimerini.gr/world/564435613/lisavona-enas-chronos-apo-tin-tragodia-sto-istoriko-teleferik-osa-den-echoyn-ginei/"
       ],
-      "seen_at_utc": "2026-09-03T10:30:17.130711+00:00"
+      "seen_at_utc": "2026-09-03T10:51:17.473039+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1264,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873398/sunelifthi-60hronos-sto-irakleio-me-kalasnikof-peristrofo-kai-869-fusiggia-sto-spiti-tou/?utm_source=rss",
-      "title": "Οπλοστάσιο σε σπίτι 60χρονου στα Βορίζια, κατασχέθηκαν καλάσνικοφ και 869 φυσίγγια",
-      "normalized_title": "ΟΠΛΟΣΤΑΣΙΟ ΣΕ ΣΠΙΤΙ 60ΧΡΟΝΟΥ ΣΤΑ ΒΟΡΙΖΙΑ, ΚΑΤΑΣΧΕΘΗΚΑΝ ΚΑΛΑΣΝΙΚΟΦ ΚΑΙ 869 ΦΥΣΙΓΓΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1873411/katadioxi-me-purovolismous-sti-lemeso-sunelifthisan-duo-tourkokuprioi/?utm_source=rss",
+      "title": "Καταδίωξη με πυροβολισμούς στη Λεμεσό: Συνελήφθησαν δύο Τουρκοκύπριοι, δείτε βίντεο",
+      "normalized_title": "ΚΑΤΑΔΙΩΞΗ ΜΕ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΤΗ ΛΕΜΕΣΟ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΔΥΟ ΤΟΥΡΚΟΚΥΠΡΙΟΙ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873398/sunelifthi-60hronos-sto-irakleio-me-kalasnikof-peristrofo-kai-869-fusiggia-sto-spiti-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873411/katadioxi-me-purovolismous-sti-lemeso-sunelifthisan-duo-tourkokuprioi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873407/methusmenos-odigos-sti-thessaloniki-paresure-pezi-meta-apo-proskrousi-se-autokinito/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T10:30:17.130808+00:00"
+      "seen_at_utc": "2026-09-03T10:51:17.473125+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1459656/kypseli-stin-eyelpidon-xana-o-43hronos-meta-apo-kavga-poy-eihe-me-astynomikoys-sta-kratitiria/",
-      "title": "Κυψέλη: Στην Ευελπίδων ξανά ο 43χρονος μετά από καβγά που είχε με αστυνομικούς στα κρατητήρια",
-      "normalized_title": "ΚΥΨΕΛΗ: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ ΞΑΝΑ Ο 43ΧΡΟΝΟΣ ΜΕΤΑ ΑΠΟ ΚΑΒΓΑ ΠΟΥ ΕΙΧΕ ΜΕ ΑΣΤΥΝΟΜΙΚΟΥΣ ΣΤΑ ΚΡΑΤΗΤΗΡΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1459519/sidirodromoi-systima-aytomatoy-frenarismatos-alla-horis-kalypsi-kindynon/",
+      "title": "Σιδηρόδρομοι: Σύστημα αυτόματου φρεναρίσματος αλλά… χωρίς κάλυψη κινδύνων",
+      "normalized_title": "ΣΙΔΗΡΟΔΡΟΜΟΙ: ΣΥΣΤΗΜΑ ΑΥΤΟΜΑΤΟΥ ΦΡΕΝΑΡΙΣΜΑΤΟΣ ΑΛΛΑ… ΧΩΡΙΣ ΚΑΛΥΨΗ ΚΙΝΔΥΝΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1459656/kypseli-stin-eyelpidon-xana-o-43hronos-meta-apo-kavga-poy-eihe-me-astynomikoys-sta-kratitiria/",
-        "https://www.efsyn.gr/ellada/1459657/fotia-stin-plora-irakleioy-epiheirei-ena-elikoptero/",
-        "https://www.efsyn.gr/politiki/1459626/androylakis-to-pasok-den-einai-androylakis-and-friends-opos-i-nd-kai-to-komma-toy-k-tsipra/"
+        "https://www.efsyn.gr/ellada/1459519/sidirodromoi-systima-aytomatoy-frenarismatos-alla-horis-kalypsi-kindynon/",
+        "https://www.efsyn.gr/ellada/1459658/nea-smyrni-protofaneis-vandalismoi-sto-3o-nipiagogeio-katestrepsan-ypologistes-kai-exoplismo-eikones/",
+        "https://www.efsyn.gr/politiki/1459677/fotoniata-i-aristera-poy-thelei-na-kyvernisei-metatrepei-tin-koinoniki-dikaiosyni-apo-aitima-se-praxi/"
       ],
-      "seen_at_utc": "2026-09-03T10:30:17.130787+00:00"
+      "seen_at_utc": "2026-09-03T10:51:17.473104+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/greece/dyskoles-oi-pyrometeorologikes-synthikes-gia-to-epomeno-10imero-apo-ameleia-ennea-stis-deka-foties/",
-      "title": "Δύσκολες οι πυρομετεωρολογικές συνθήκες για το επόμενο 10ήμερο - Από αμέλεια εννέα στις δέκα φωτιές",
-      "normalized_title": "ΔΥΣΚΟΛΕΣ ΟΙ ΠΥΡΟΜΕΤΕΩΡΟΛΟΓΙΚΕΣ ΣΥΝΘΗΚΕΣ ΓΙΑ ΤΟ ΕΠΟΜΕΝΟ 10ΗΜΕΡΟ - ΑΠΟ ΑΜΕΛΕΙΑ ΕΝΝΕΑ ΣΤΙΣ ΔΕΚΑ ΦΩΤΙΕΣ",
+      "url": "https://www.in.gr/2026/09/03/world/soudan-i-stratologisi-ksenon-maxiton-trofodotei-ton-polemo-kataggellei-apostoli-tou-oie/",
+      "title": "Η στρατολόγηση ξένων μαχητών τροφοδοτεί τον πόλεμο στο Σουδάν, καταγγέλλει αποστολή του ΟΗΕ",
+      "normalized_title": "Η ΣΤΡΑΤΟΛΟΓΗΣΗ ΞΕΝΩΝ ΜΑΧΗΤΩΝ ΤΡΟΦΟΔΟΤΕΙ ΤΟΝ ΠΟΛΕΜΟ ΣΤΟ ΣΟΥΔΑΝ, ΚΑΤΑΓΓΕΛΛΕΙ ΑΠΟΣΤΟΛΗ ΤΟΥ ΟΗΕ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/greece/dyskoles-oi-pyrometeorologikes-synthikes-gia-to-epomeno-10imero-apo-ameleia-ennea-stis-deka-foties/",
-        "https://www.in.gr/2026/09/03/in-science/technology/dixasmeni-i-komision-gia-to-ean-prepei-na-anoiksei-logariasmo-sto-tiktok/",
-        "https://www.in.gr/2026/09/03/greece/kriti-fotia-se-agrotodasiki-ektasi-sto-irakleio-sikothike-ena-elikoptero/"
+        "https://www.in.gr/2026/09/03/world/soudan-i-stratologisi-ksenon-maxiton-trofodotei-ton-polemo-kataggellei-apostoli-tou-oie/",
+        "https://www.in.gr/2026/09/03/world/gallia-pateras-skotose-ta-paidia-tou-kai-tin-proin-pethera-tou-kai-meta-aytoktonise/",
+        "https://www.in.gr/2026/09/03/sports/football/tzolis-stoxos-mou-itan-na-paikso-ston-paok-aytoi-oi-paiktes-voithoun-poly-sta-apodytiria-tis-arsenal/"
       ],
-      "seen_at_utc": "2026-09-03T10:30:17.130759+00:00"
+      "seen_at_utc": "2026-09-03T10:51:17.473082+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T10:30:17.130885+00:00"
+  "updated_at_utc": "2026-09-03T10:51:17.473199+00:00"
 }
