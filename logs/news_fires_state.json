@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564435034/pontarei-stin-ilektriki-odontovoyrtsa-ton-430-eyro-poy-leitoyrgei-me-ai/",
-      "title": "«Ποντάρει» στην ηλεκτρική οδοντόβουρτσα των 430 ευρώ που λειτουργεί με AI",
-      "normalized_title": "«ΠΟΝΤΑΡΕΙ» ΣΤΗΝ ΗΛΕΚΤΡΙΚΗ ΟΔΟΝΤΟΒΟΥΡΤΣΑ ΤΩΝ 430 ΕΥΡΩ ΠΟΥ ΛΕΙΤΟΥΡΓΕΙ ΜΕ AI",
+      "url": "https://www.kathimerini.gr/economy/local/564434950/nai-apo-e-e-sto-tameio-apanthrakopoiisis-ton-ellinikon-nision/",
+      "title": "«Ναι» από Ε.Ε. στο Ταμείο Απανθρακοποίησης των ελληνικών νησιών",
+      "normalized_title": "«ΝΑΙ» ΑΠΟ Ε.Ε. ΣΤΟ ΤΑΜΕΙΟ ΑΠΑΝΘΡΑΚΟΠΟΙΗΣΗΣ ΤΩΝ ΕΛΛΗΝΙΚΩΝ ΝΗΣΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564435034/pontarei-stin-ilektriki-odontovoyrtsa-ton-430-eyro-poy-leitoyrgei-me-ai/",
-        "https://www.kathimerini.gr/society/564435262/kypseli-enopion-toy-anakriti-ek-neoy-oi-treis-katigoroymenoi/",
-        "https://www.kathimerini.gr/society/564435265/deth-kykloforiakes-rythmiseis-sto-kentro-tis-thessalonikis/",
-        "https://www.kathimerini.gr/culture/cinema/564434782/83o-festival-venetias-enarxi-me-kakistokratia-kai-enan-aneto-tzortz-kloynei/",
-        "https://www.kathimerini.gr/politics/564435235/mythiki-dimosiotita-kai-ntostogiefski/",
-        "https://www.kathimerini.gr/opinion/564434740/i-epirroi-samara-kai-oi-xenoi/"
+        "https://www.kathimerini.gr/economy/local/564434950/nai-apo-e-e-sto-tameio-apanthrakopoiisis-ton-ellinikon-nision/",
+        "https://www.kathimerini.gr/world/564435286/pos-ta-iae-diekopsan-tis-synallages-me-to-iran-i-mystiki-synantisi-me-goyitkof/",
+        "https://www.kathimerini.gr/economy/business/564435001/ayxisi-kerdon-kai-poliseon-gia-attika-polykatastimata-to-a-examino/",
+        "https://www.kathimerini.gr/world/564435259/ipa-anapofeykti-mia-triti-prospatheia-parapompis-toy-tramp-meta-ton-noemvrio/"
       ],
-      "seen_at_utc": "2026-09-03T05:51:22.360446+00:00"
+      "seen_at_utc": "2026-09-03T06:17:14.026637+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,36 +1262,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873228/kerdise-ti-mahi-o-10hronos-thodoris-pou-kinduneuse-na-pnigei-stin-ileia-i-videoklisi-me-nauagosostria-kai-to-kokoretsi/?utm_source=rss",
-      "title": "Κέρδισε τη μάχη ο 10χρονος Θοδωρής που κινδύνευσε να πνιγεί στην Ηλεία: Η βιντεοκλήση με τη ναυαγοσώστρια που τον έσωσε και η επιθυμία του για... κοκορέτσι",
-      "normalized_title": "ΚΕΡΔΙΣΕ ΤΗ ΜΑΧΗ Ο 10ΧΡΟΝΟΣ ΘΟΔΩΡΗΣ ΠΟΥ ΚΙΝΔΥΝΕΥΣΕ ΝΑ ΠΝΙΓΕΙ ΣΤΗΝ ΗΛΕΙΑ: Η ΒΙΝΤΕΟΚΛΗΣΗ ΜΕ ΤΗ ΝΑΥΑΓΟΣΩΣΤΡΙΑ ΠΟΥ ΤΟΝ ΕΣΩΣΕ ΚΑΙ Η ΕΠΙΘΥΜΙΑ ΤΟΥ ΓΙΑ... ΚΟΚΟΡΕΤΣΙ",
+      "url": "https://www.protothema.gr/greece/article/1873235/anastatosi-sti-thessaloniki-stis-floges-tria-ohimata-stin-pulaia-deite-eikones-kai-video/?utm_source=rss",
+      "title": "Αναστάτωση στη Θεσσαλονίκη: Στις φλόγες τρία οχήματα στην Πυλαία, δείτε εικόνες και βίντεο",
+      "normalized_title": "ΑΝΑΣΤΑΤΩΣΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΙΣ ΦΛΟΓΕΣ ΤΡΙΑ ΟΧΗΜΑΤΑ ΣΤΗΝ ΠΥΛΑΙΑ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ ΚΑΙ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873228/kerdise-ti-mahi-o-10hronos-thodoris-pou-kinduneuse-na-pnigei-stin-ileia-i-videoklisi-me-nauagosostria-kai-to-kokoretsi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873235/anastatosi-sti-thessaloniki-stis-floges-tria-ohimata-stin-pulaia-deite-eikones-kai-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873232/fotia-se-fortigo-ston-perifereiako-thessalonikis-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T05:51:22.360546+00:00"
+      "seen_at_utc": "2026-09-03T06:17:14.026766+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1459339/zan-pol-rapeno-1932-2026-antio-ston-prytani-toy-gallikoy-sinema/",
-      "title": "Ζαν-Πολ Ραπενό (1932-2026): Αντίο στον «πρύτανη» του γαλλικού σινεμά",
-      "normalized_title": "ΖΑΝ-ΠΟΛ ΡΑΠΕΝΟ (1932-2026): ΑΝΤΙΟ ΣΤΟΝ «ΠΡΥΤΑΝΗ» ΤΟΥ ΓΑΛΛΙΚΟΥ ΣΙΝΕΜΑ",
+      "url": "https://www.efsyn.gr/tehnes/1459374/to-tragoydi-tis-imeras-de-thymomoyn-pos-einai-n-agapo/",
+      "title": "Το Τραγούδι της Ημέρας: Δε θυμόμουν πώς είναι ν’ αγαπώ",
+      "normalized_title": "ΤΟ ΤΡΑΓΟΥΔΙ ΤΗΣ ΗΜΕΡΑΣ: ΔΕ ΘΥΜΟΜΟΥΝ ΠΩΣ ΕΙΝΑΙ Ν’ ΑΓΑΠΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1459339/zan-pol-rapeno-1932-2026-antio-ston-prytani-toy-gallikoy-sinema/",
-        "https://www.efsyn.gr/ellada/1459334/rezili-ton-skylion-kai-tis-ryanair-neo-mplakaoyt-sta-systimata-aeronaytilias/",
-        "https://www.efsyn.gr/kosmos/1459347/isimerinos-oi-ipa-vythisan-ploio-poy-feretai-na-anefodiaze-me-kaysima-ti-symmoria-narkotikon-los-tsoneros-vinteo/",
-        "https://www.efsyn.gr/ellada/1459353/pyrkagia-sto-syneti-androy-epiheiroyn-dyo-aeroskafi/"
+        "https://www.efsyn.gr/tehnes/1459374/to-tragoydi-tis-imeras-de-thymomoyn-pos-einai-n-agapo/",
+        "https://www.efsyn.gr/ellada/1459370/aposolinothike-o-10hronos-poy-kindyneyse-na-pnigei-sti-marathia-i-zoi-nikise-ton-thanato-eimaste-poly-haroymenoi/",
+        "https://www.efsyn.gr/athlitismos/1459343/i-metagrafi-toy-kalokairioy-o-panathinaikos-apektise-sto-para-ena-ton-azentin-oynai/",
+        "https://www.efsyn.gr/politiki/1459321/ellino-amerikanikes-epafes-stin-athina-i-yfypoyrgos-ton-ipa-alison-hoyker/"
       ],
-      "seen_at_utc": "2026-09-03T05:51:22.360511+00:00"
+      "seen_at_utc": "2026-09-03T06:17:14.026731+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/economy/diethnis-oikonomia/petrelaio-diakymanseis-pano-apo-ta-95-dol/",
-      "title": "Διακυμάνσεις πάνω από τα 95 δολ. στο πετρέλαιο",
-      "normalized_title": "ΔΙΑΚΥΜΑΝΣΕΙΣ ΠΑΝΩ ΑΠΟ ΤΑ 95 ΔΟΛ. ΣΤΟ ΠΕΤΡΕΛΑΙΟ",
+      "url": "https://www.in.gr/2026/09/03/sports/othersports/xaris-tsitsipas-1-3-nea-anatropi-kai-prokrisi-stous-32-tou-us-open/",
+      "title": "Χάρις – Τσιτσιπάς 1-3: Νέα ανατροπή και πρόκριση στους «32» του US Open",
+      "normalized_title": "ΧΑΡΙΣ – ΤΣΙΤΣΙΠΑΣ 1-3: ΝΕΑ ΑΝΑΤΡΟΠΗ ΚΑΙ ΠΡΟΚΡΙΣΗ ΣΤΟΥΣ «32» ΤΟΥ US OPEN",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/economy/diethnis-oikonomia/petrelaio-diakymanseis-pano-apo-ta-95-dol/",
-        "https://www.in.gr/2026/09/03/sports/football/h-aston-vila-apoxairetise-ton-mpeili-pic/"
+        "https://www.in.gr/2026/09/03/sports/othersports/xaris-tsitsipas-1-3-nea-anatropi-kai-prokrisi-stous-32-tou-us-open/",
+        "https://www.in.gr/2026/09/03/greece/to-savvato-ta-egkainia-tis-deth-astakos-i-thessaloniki-me-3-500-astynomikous-kai-dekades-drones/",
+        "https://www.in.gr/2026/09/03/greece/nea-apati-me-ai-tis-pire-100-eyro-meso-iris-ypodyomenos-ton-kristiano-ronalnto/",
+        "https://www.in.gr/2026/09/03/world/mplak-aout-elleipseis-akriveia-kai-ftoxeia-o-kloios-tou-tramp-sfiggei-tin-kouva/",
+        "https://www.in.gr/2026/09/03/life/paraskeyi-kai-13-pethane-o-pateras-tou-tzeison-vorxes-epinoise-to-emvlimatiko-gemato-aima-slasher-ton-80s/",
+        "https://www.in.gr/2026/09/03/sports/football/europa-league/o-ofi-dilose-tin-eyropaiki-lista-poies-einai-oi-epiloges-tou-konti/"
       ],
-      "seen_at_utc": "2026-09-03T05:51:22.360488+00:00"
+      "seen_at_utc": "2026-09-03T06:17:14.026707+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T05:51:22.360627+00:00"
+  "updated_at_utc": "2026-09-03T06:17:14.026873+00:00"
 }
