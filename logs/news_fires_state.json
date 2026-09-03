@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564436723/milame-ligotero-koitazomaste-perissotero-to-gen-z-stare-den-einai-apla-mia-tasi-sto-tiktok/",
-      "title": "Μιλάμε λιγότερο, κοιταζόμαστε περισσότερο: Το «Gen Z stare» δεν είναι απλά μια τάση στο TikTok",
-      "normalized_title": "ΜΙΛΑΜΕ ΛΙΓΟΤΕΡΟ, ΚΟΙΤΑΖΟΜΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΟ: ΤΟ «GEN Z STARE» ΔΕΝ ΕΙΝΑΙ ΑΠΛΑ ΜΙΑ ΤΑΣΗ ΣΤΟ TIKTOK",
+      "url": "https://www.kathimerini.gr/life/auto/564435928/volkswagen-antimetopos-me-to-ypsilo-kostos-kai-toys-ergazomenoys-o-ceo-toy-omiloy/",
+      "title": "Volkswagen: Αντιμέτωπος με το υψηλό κόστος και τους εργαζομένους ο CEO του ομίλου",
+      "normalized_title": "VOLKSWAGEN: ΑΝΤΙΜΕΤΩΠΟΣ ΜΕ ΤΟ ΥΨΗΛΟ ΚΟΣΤΟΣ ΚΑΙ ΤΟΥΣ ΕΡΓΑΖΟΜΕΝΟΥΣ Ο CEO ΤΟΥ ΟΜΙΛΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564436723/milame-ligotero-koitazomaste-perissotero-to-gen-z-stare-den-einai-apla-mia-tasi-sto-tiktok/",
-        "https://www.kathimerini.gr/politics/564436768/n-androylakis-i-ellada-den-antechei-alli-thiteia-nd-exapatisi-to-programma-tsipra/"
+        "https://www.kathimerini.gr/life/auto/564435928/volkswagen-antimetopos-me-to-ypsilo-kostos-kai-toys-ergazomenoys-o-ceo-toy-omiloy/",
+        "https://www.kathimerini.gr/world/564434692/ta-symptomata-kai-oi-tropoi-antimetopisis-tis-naytias/",
+        "https://www.kathimerini.gr/world/564436777/vans-schedon-sta-propolemika-epipeda-i-roi-petrelaioy-apo-ta-stena-toy-ormoyz/",
+        "https://www.kathimerini.gr/athletics/564436783/kypello-elladas-premiera-me-niki-gia-ton-panathinaiko/"
       ],
-      "seen_at_utc": "2026-09-03T19:51:11.625248+00:00"
+      "seen_at_utc": "2026-09-03T20:17:02.373357+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1262,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873676/tragodia-sto-irakleio-tis-kritis-ston-71hrono-windsurfer-anikei-i-soros-pou-edopistike-sti-thalassa-stis-gouves/?utm_source=rss",
-      "title": "Τραγωδία στο Ηράκλειο της Κρήτης: Στον 71χρονο windsurfer ανήκει η σορός που εντοπίστηκε στη θάλασσα στις Γούβες",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟ ΗΡΑΚΛΕΙΟ ΤΗΣ ΚΡΗΤΗΣ: ΣΤΟΝ 71ΧΡΟΝΟ WINDSURFER ΑΝΗΚΕΙ Η ΣΟΡΟΣ ΠΟΥ ΕΝΤΟΠΙΣΤΗΚΕ ΣΤΗ ΘΑΛΑΣΣΑ ΣΤΙΣ ΓΟΥΒΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1873684/tragodia-ston-dimo-arhanon-asterousion-nekros-proin-adidimarhos-ferei-trauma-apo-oplo/?utm_source=rss",
+      "title": "Τραγωδία στον Δήμο Αρχανών - Αστερουσίων: Νεκρός πρώην Αντιδήμαρχος, φέρει τραύμα από όπλο",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟΝ ΔΗΜΟ ΑΡΧΑΝΩΝ - ΑΣΤΕΡΟΥΣΙΩΝ: ΝΕΚΡΟΣ ΠΡΩΗΝ ΑΝΤΙΔΗΜΑΡΧΟΣ, ΦΕΡΕΙ ΤΡΑΥΜΑ ΑΠΟ ΟΠΛΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873676/tragodia-sto-irakleio-tis-kritis-ston-71hrono-windsurfer-anikei-i-soros-pou-edopistike-sti-thalassa-stis-gouves/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873684/tragodia-ston-dimo-arhanon-asterousion-nekros-proin-adidimarhos-ferei-trauma-apo-oplo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T19:51:11.625364+00:00"
+      "seen_at_utc": "2026-09-03T20:17:02.373500+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460017/kataggelia-famelloy-idrysan-prin-5-hronia-to-ypoyrgeio-politikis-prostasias-kai-akoma-den-toy-eftiaxan-organogramma/",
-      "title": "Καταγγελία Φάμελλου: Ίδρυσαν πριν 5 χρόνια το υπουργείο Πολιτικής Προστασίας και ακόμα δεν του έφτιαξαν οργανόγραμμα",
-      "normalized_title": "ΚΑΤΑΓΓΕΛΙΑ ΦΑΜΕΛΛΟΥ: ΙΔΡΥΣΑΝ ΠΡΙΝ 5 ΧΡΟΝΙΑ ΤΟ ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ ΚΑΙ ΑΚΟΜΑ ΔΕΝ ΤΟΥ ΕΦΤΙΑΞΑΝ ΟΡΓΑΝΟΓΡΑΜΜΑ",
+      "url": "https://www.efsyn.gr/ellada/1460028/gemise-nera-o-stathmos-metro-panepistimia-sti-thessaloniki-eikones-vinteo/",
+      "title": "Γέμισε νερά ο σταθμός μετρό «Πανεπιστήμια» στη Θεσσαλονίκη [εικόνες – βίντεο]",
+      "normalized_title": "ΓΕΜΙΣΕ ΝΕΡΑ Ο ΣΤΑΘΜΟΣ ΜΕΤΡΟ «ΠΑΝΕΠΙΣΤΗΜΙΑ» ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460017/kataggelia-famelloy-idrysan-prin-5-hronia-to-ypoyrgeio-politikis-prostasias-kai-akoma-den-toy-eftiaxan-organogramma/",
-        "https://www.efsyn.gr/kosmos/1460018/o-mamntani-apagoreyei-tin-tehniti-noimosyni-gia-toys-mathites-eos-13-eton/"
+        "https://www.efsyn.gr/ellada/1460028/gemise-nera-o-stathmos-metro-panepistimia-sti-thessaloniki-eikones-vinteo/",
+        "https://www.efsyn.gr/life/1460022/dekades-evraioi-kallitehnes-kai-epistimones-sto-pleyro-toy-rafalo-anypostates-oi-katigories-gia-antisimitismo/",
+        "https://www.efsyn.gr/ellada/1460024/tragikos-epilogos-nekros-anasyrthike-o-71hronos-serfer-poy-agnoeito-stin-kriti/"
       ],
-      "seen_at_utc": "2026-09-03T19:51:11.625332+00:00"
+      "seen_at_utc": "2026-09-03T20:17:02.373460+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/sports/football/omonoia-pafos-0-1-o-lele-ypegrapse-to-proto-souper-kap-stin-istoria-tis-vid/",
-      "title": "Ομόνοια – Πάφος 0-1: Ο Λελέ υπέγραψε το πρώτο Σούπερ Καπ στην ιστορία της (vid)",
-      "normalized_title": "ΟΜΟΝΟΙΑ – ΠΑΦΟΣ 0-1: Ο ΛΕΛΕ ΥΠΕΓΡΑΨΕ ΤΟ ΠΡΩΤΟ ΣΟΥΠΕΡ ΚΑΠ ΣΤΗΝ ΙΣΤΟΡΙΑ ΤΗΣ (VID)",
+      "url": "https://www.in.gr/2026/09/03/sports/football/ayti-einai-vathmologia-tis-league-phase-tou-kypellou-meta-ti-niki-tou-panathinaikou/",
+      "title": "Αυτή είναι βαθμολογία της League Phase του Κυπέλλου μετά τη νίκη του Παναθηναϊκού",
+      "normalized_title": "ΑΥΤΗ ΕΙΝΑΙ ΒΑΘΜΟΛΟΓΙΑ ΤΗΣ LEAGUE PHASE ΤΟΥ ΚΥΠΕΛΛΟΥ ΜΕΤΑ ΤΗ ΝΙΚΗ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/sports/football/omonoia-pafos-0-1-o-lele-ypegrapse-to-proto-souper-kap-stin-istoria-tis-vid/",
-        "https://www.in.gr/2026/09/03/sports/football/o-sentrik-mpakampou-pire-metagrafi-sto-mls-pic/",
-        "https://www.in.gr/2026/09/03/world/kyroseis-apo-tis-ipa-se-varos-eggonou-tou-proin-proedrou-tis-kouvas-raoul-kastro/"
+        "https://www.in.gr/2026/09/03/sports/football/ayti-einai-vathmologia-tis-league-phase-tou-kypellou-meta-ti-niki-tou-panathinaikou/",
+        "https://www.in.gr/2026/09/03/greece/marathonas-ti-giagia-tin-kserame-exoume-na-ti-doume-xronia-mas-elege-oti-tin-eixe-paei-se-girokomeio/",
+        "https://www.in.gr/2026/09/03/world/oukrania-i-stigmi-pou-praktores-tis-sbu-anoigoun-pyr-traymatizontas-kai-skotonontas-praktores-tis-gru-vinteo/",
+        "https://www.in.gr/2026/09/03/sports/football/panathinaikos-niki-volou-1-0-o-tamporda-katharise-parousia-tou-ounai/",
+        "https://www.in.gr/2026/09/03/politics/paraskinio/kai-me-ti-voula-oi-metagrafes-teligioridou-avramaki-sto-pasok-sto-pleyro-tou-androulaki-sto-irakleio/"
       ],
-      "seen_at_utc": "2026-09-03T19:51:11.625292+00:00"
+      "seen_at_utc": "2026-09-03T20:17:02.373412+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T19:51:11.625432+00:00"
+  "updated_at_utc": "2026-09-03T20:17:02.373592+00:00"
 }
