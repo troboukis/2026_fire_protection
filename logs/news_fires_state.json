@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/museums/564434755/parthenonas-giati-to-kas-arnithike-daneismo-thraysmaton/",
-      "title": "Παρθενώνας: Γιατί το ΚΑΣ αρνήθηκε δανεισμό θραυσμάτων",
-      "normalized_title": "ΠΑΡΘΕΝΩΝΑΣ: ΓΙΑΤΙ ΤΟ ΚΑΣ ΑΡΝΗΘΗΚΕ ΔΑΝΕΙΣΜΟ ΘΡΑΥΣΜΑΤΩΝ",
+      "url": "https://www.kathimerini.gr/society/564436426/pyrosvestiki-dyo-syllipseis-gia-proklisi-pyrkagias-se-nayplio-kai-chalkida/",
+      "title": "Πυροσβεστική: Δύο συλλήψεις για πρόκληση πυρκαγιάς σε Ναύπλιο και Χαλκίδα",
+      "normalized_title": "ΠΥΡΟΣΒΕΣΤΙΚΗ: ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΡΟΚΛΗΣΗ ΠΥΡΚΑΓΙΑΣ ΣΕ ΝΑΥΠΛΙΟ ΚΑΙ ΧΑΛΚΙΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/museums/564434755/parthenonas-giati-to-kas-arnithike-daneismo-thraysmaton/",
-        "https://www.kathimerini.gr/society/564436360/fotia-stin-xanthi-enischyontai-oi-dynameis-sto-petrochori-epicheiroyn-9-enaeria/"
+        "https://www.kathimerini.gr/society/564436426/pyrosvestiki-dyo-syllipseis-gia-proklisi-pyrkagias-se-nayplio-kai-chalkida/",
+        "https://www.kathimerini.gr/society/564436378/chania-cheiropedes-se-24chrono-poy-apeilise-kai-dagkose-ti-mitera-toy/",
+        "https://www.kathimerini.gr/k/gastronomos/564434101/oi-syntages-poy-mageirepse-i-omada-toy-gastronomoy-ton-aygoysto-3/",
+        "https://www.kathimerini.gr/world/564436393/toyrkiko-ypex-kata-eyrokoinovoylioy-metatrepetai-se-ergaleio-ellinokypriakis-propagandas/"
       ],
-      "seen_at_utc": "2026-09-03T15:51:19.494581+00:00"
+      "seen_at_utc": "2026-09-03T16:17:26.198150+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1262,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873570/almuros-xulokopise-tin-22hroni-sudrofo-tou-meta-apo-kavga-ton-katiggeile-geitonissa/?utm_source=rss",
-      "title": "Αλμυρός: Ξυλοκόπησε την 22χρονη έγκυο σύντροφό του μετά από καβγά, τον κατήγγειλε γειτόνισσα",
-      "normalized_title": "ΑΛΜΥΡΟΣ: ΞΥΛΟΚΟΠΗΣΕ ΤΗΝ 22ΧΡΟΝΗ ΕΓΚΥΟ ΣΥΝΤΡΟΦΟ ΤΟΥ ΜΕΤΑ ΑΠΟ ΚΑΒΓΑ, ΤΟΝ ΚΑΤΗΓΓΕΙΛΕ ΓΕΙΤΟΝΙΣΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1873585/nekros-andras-edopistike-sti-thalassa-stis-gouves-exetazetai-an-einai-o-agnooumenos-serfer/?utm_source=rss",
+      "title": "Νεκρός άνδρας εντοπίστηκε στη θάλασσα στις Γούβες, εξετάζεται αν είναι ο αγνοούμενος σέρφερ",
+      "normalized_title": "ΝΕΚΡΟΣ ΑΝΔΡΑΣ ΕΝΤΟΠΙΣΤΗΚΕ ΣΤΗ ΘΑΛΑΣΣΑ ΣΤΙΣ ΓΟΥΒΕΣ, ΕΞΕΤΑΖΕΤΑΙ ΑΝ ΕΙΝΑΙ Ο ΑΓΝΟΟΥΜΕΝΟΣ ΣΕΡΦΕΡ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873570/almuros-xulokopise-tin-22hroni-sudrofo-tou-meta-apo-kavga-ton-katiggeile-geitonissa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873585/nekros-andras-edopistike-sti-thalassa-stis-gouves-exetazetai-an-einai-o-agnooumenos-serfer/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873583/sto-nosokomeio-42hronos-meta-apo-dagoma-ohias-sti-naupakto/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873582/fotia-tora-ston-psilo-stalo-soufliou-evrou-sikothike-ena-elikoptero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T15:51:19.494685+00:00"
+      "seen_at_utc": "2026-09-03T16:17:26.198322+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1459896/i-norvigia-katashese-rosiko-ploio-stin-arktiki-zita-apozimiosi-422-dis-dolarion-gia-oykraniki-energeiaki-etaireia/",
-      "title": "Η Νορβηγία κατάσχεσε ρωσικό πλοίο στην Αρκτική – Ζητά αποζημίωση 4,22 δισ. δολαρίων για ουκρανική ενεργειακή εταιρεία",
-      "normalized_title": "Η ΝΟΡΒΗΓΙΑ ΚΑΤΑΣΧΕΣΕ ΡΩΣΙΚΟ ΠΛΟΙΟ ΣΤΗΝ ΑΡΚΤΙΚΗ – ΖΗΤΑ ΑΠΟΖΗΜΙΩΣΗ 4,22 ΔΙΣ. ΔΟΛΑΡΙΩΝ ΓΙΑ ΟΥΚΡΑΝΙΚΗ ΕΝΕΡΓΕΙΑΚΗ ΕΤΑΙΡΕΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1459907/evros-fotia-sto-soyfli-epiheirei-kai-ena-elikoptero/",
+      "title": "Έβρος: Φωτιά στο Σουφλί – Επιχειρεί και ένα ελικόπτερο",
+      "normalized_title": "ΕΒΡΟΣ: ΦΩΤΙΑ ΣΤΟ ΣΟΥΦΛΙ – ΕΠΙΧΕΙΡΕΙ ΚΑΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1459896/i-norvigia-katashese-rosiko-ploio-stin-arktiki-zita-apozimiosi-422-dis-dolarion-gia-oykraniki-energeiaki-etaireia/",
-        "https://www.efsyn.gr/ellada/1459883/synehizetai-to-thriler-sto-marathona-den-eihan-epafi-me-kanenan-evgainan-mono-to-vrady-lene-oi-geitones-vinteo/",
-        "https://www.efsyn.gr/politiki/1459864/o-galazios-voyleytis-poy-zitise-na-mathei-sti-voyli-giati-oi-papades-den-mporoyn-na-ehoyn-opla/",
-        "https://www.efsyn.gr/kosmos/1459882/skandalo-parakoloythiseon-stin-servia-dekades-episyndeseis-se-foitites-kai-voyleytes-prin-tis-dimotikes-ekloges/",
-        "https://www.efsyn.gr/ellada/1459666/deth-syllalitiria-poy-tha-thymizoyn-ta-prota-hronia-ton-mnimonion/"
+        "https://www.efsyn.gr/ellada/1459907/evros-fotia-sto-soyfli-epiheirei-kai-ena-elikoptero/",
+        "https://www.efsyn.gr/politiki/1459899/venizelos-gia-epeteio-tis-3is-septemvri-i-elliniki-koinonia-se-megalo-vathmo-ofeilei-ti-diamorfosi-tis-sto-pasok/",
+        "https://www.efsyn.gr/ellada/1459891/skyros-mia-prosagogi-gia-ti-fotia-sti-hartsa-exetazetai-syndesi-me-tin-pyrkagia-toy-dekapentaygoystoy/"
       ],
-      "seen_at_utc": "2026-09-03T15:51:19.494661+00:00"
+      "seen_at_utc": "2026-09-03T16:17:26.198271+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/greece/syllipsi-61xronis-kai-50xronou-gia-katoxi-kai-diakinisi-kokainis-se-peristeri-kai-ilion/",
-      "title": "Σύλληψη 61χρονης και 50χρονου για κατοχή και διακίνηση κοκαΐνης σε Περιστέρι και Ίλιον",
-      "normalized_title": "ΣΥΛΛΗΨΗ 61ΧΡΟΝΗΣ ΚΑΙ 50ΧΡΟΝΟΥ ΓΙΑ ΚΑΤΟΧΗ ΚΑΙ ΔΙΑΚΙΝΗΣΗ ΚΟΚΑΙΝΗΣ ΣΕ ΠΕΡΙΣΤΕΡΙ ΚΑΙ ΙΛΙΟΝ",
+      "url": "https://www.in.gr/2026/09/03/greece/kypseli-anatrixiastiki-perigrafi-tis-38xronis-maxairosame-to-moro-eno-itan-pagomeno-mprosta-sta-paidia-mou/",
+      "title": "Κυψέλη: Ανατριχιαστική περιγραφή της 38χρονης – «Μαχαιρώσαμε το μωρό ενώ ήταν παγωμένο, μπροστά στα παιδιά μου»",
+      "normalized_title": "ΚΥΨΕΛΗ: ΑΝΑΤΡΙΧΙΑΣΤΙΚΗ ΠΕΡΙΓΡΑΦΗ ΤΗΣ 38ΧΡΟΝΗΣ – «ΜΑΧΑΙΡΩΣΑΜΕ ΤΟ ΜΩΡΟ ΕΝΩ ΗΤΑΝ ΠΑΓΩΜΕΝΟ, ΜΠΡΟΣΤΑ ΣΤΑ ΠΑΙΔΙΑ ΜΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/greece/syllipsi-61xronis-kai-50xronou-gia-katoxi-kai-diakinisi-kokainis-se-peristeri-kai-ilion/",
-        "https://www.in.gr/2026/09/03/sports/football/paok-ayrio-4-9-sti-thessaloniki-o-ntiegko-kosta/",
-        "https://www.in.gr/2026/09/03/world/germania-maziki-paragogi-maxitikon-drones-gia-tin-oukrania-ksekinise-se-ergostasio-sto-monaxo/"
+        "https://www.in.gr/2026/09/03/greece/kypseli-anatrixiastiki-perigrafi-tis-38xronis-maxairosame-to-moro-eno-itan-pagomeno-mprosta-sta-paidia-mou/",
+        "https://www.in.gr/2026/09/03/sports/on-field/leon-mpeili-apo-tous-dromous-tis-tzamaika-ston-dromo-tou-thrylou-vids/",
+        "https://www.in.gr/2026/09/03/greece/thriler-ston-marathona-itan-mia-apomonomeni-oikogeneia-kykloforousan-tin-nyxta-ti-apokalyptoun-oi-geitones/",
+        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/pasok-gia-times-reymatos-o-empaigmos-den-kryvetai-o-logariasmos-stis-kalpes-tha-einai-varys-gia-tin-kyvernisi/",
+        "https://www.in.gr/2026/09/03/in-science/technology/blackout-stin-ai-epesan-chatgpt-claude-grok-gemini-provlimata-kai-stin-ellada/",
+        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/koufonikolakou-i-elas-tha-elafrynei-forologika-tin-oikogeneia-ti-misthoti-ergasia-tin-epixeirisi/"
       ],
-      "seen_at_utc": "2026-09-03T15:51:19.494629+00:00"
+      "seen_at_utc": "2026-09-03T16:17:26.198231+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T15:51:19.494768+00:00"
+  "updated_at_utc": "2026-09-03T16:17:26.198415+00:00"
 }
