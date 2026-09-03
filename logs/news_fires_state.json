@@ -1,18 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564435019/fovoi-gia-epanalipsi-tis-asiatikis-krisis-toy-1997/",
-      "title": "Φόβοι για επανάληψη της ασιατικής κρίσης του 1997",
-      "normalized_title": "ΦΟΒΟΙ ΓΙΑ ΕΠΑΝΑΛΗΨΗ ΤΗΣ ΑΣΙΑΤΙΚΗΣ ΚΡΙΣΗΣ ΤΟΥ 1997",
+      "url": "https://www.kathimerini.gr/world/564435340/kasantra-goyilson-pethane-sta-70-tis-i-thryliki-kallitechnida-tis-tzaz/",
+      "title": "Κασάντρα Γουίλσον: Πέθανε στα 70 της η θρυλική καλλιτέχνιδα της τζαζ",
+      "normalized_title": "ΚΑΣΑΝΤΡΑ ΓΟΥΙΛΣΟΝ: ΠΕΘΑΝΕ ΣΤΑ 70 ΤΗΣ Η ΘΡΥΛΙΚΗ ΚΑΛΛΙΤΕΧΝΙΔΑ ΤΗΣ ΤΖΑΖ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564435019/fovoi-gia-epanalipsi-tis-asiatikis-krisis-toy-1997/",
-        "https://www.kathimerini.gr/economy/business/564435004/poy-pontarei-i-trade-estate-gia-peraitero-enischysi-toy-tziroy/",
-        "https://www.kathimerini.gr/k/gastronomos/564433897/choirini-panseta-foyrnoy-me-stafylia-petimezi-kai-thymari/",
-        "https://www.kathimerini.gr/world/564435334/giati-oi-ipa-parateinoyn-ti-stratiotiki-toys-paroysia-sti-mesi-anatoli/",
-        "https://www.kathimerini.gr/society/564435337/thessaloniki-stis-floges-tria-aytokinita-stin-pylaia-kai-fortigo-stin-perifereiaki/",
-        "https://www.kathimerini.gr/istoria/564434728/90-chronia-prin-3-9-1936/"
+        "https://www.kathimerini.gr/world/564435340/kasantra-goyilson-pethane-sta-70-tis-i-thryliki-kallitechnida-tis-tzaz/"
       ],
-      "seen_at_utc": "2026-09-03T07:18:17.123855+00:00"
+      "seen_at_utc": "2026-09-03T07:30:06.999293+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,45 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873287/apadiseis-apo-tin-15hroni-kori-tou-zeugariou-perimenoun-oi-arhes-gia-to-nekro-vrefos-stin-kupseli/?utm_source=rss",
-      "title": "Τα παιδιά γνώριζαν ότι υπήρχε το νεκρό βρέφος στην κατάψυξη, στο μικροσκόπιο η 15χρονη κόρη του ζευγαριού της Κυψέλης",
-      "normalized_title": "ΤΑ ΠΑΙΔΙΑ ΓΝΩΡΙΖΑΝ ΟΤΙ ΥΠΗΡΧΕ ΤΟ ΝΕΚΡΟ ΒΡΕΦΟΣ ΣΤΗΝ ΚΑΤΑΨΥΞΗ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ Η 15ΧΡΟΝΗ ΚΟΡΗ ΤΟΥ ΖΕΥΓΑΡΙΟΥ ΤΗΣ ΚΥΨΕΛΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1873302/gunaika-apo-tin-patra-epese-thuma-apatis-me-doloma-ton-kristiano-ronaldo-pou-tis-zitise-100-euro/?utm_source=rss",
+      "title": "Γυναίκα από την Πάτρα έπεσε θύμα απάτης με δόλωμα τον... Κριστιάνο Ρονάλντο που της ζήτησε 100 ευρώ!",
+      "normalized_title": "ΓΥΝΑΙΚΑ ΑΠΟ ΤΗΝ ΠΑΤΡΑ ΕΠΕΣΕ ΘΥΜΑ ΑΠΑΤΗΣ ΜΕ ΔΟΛΩΜΑ ΤΟΝ... ΚΡΙΣΤΙΑΝΟ ΡΟΝΑΛΝΤΟ ΠΟΥ ΤΗΣ ΖΗΤΗΣΕ 100 ΕΥΡΩ!",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873287/apadiseis-apo-tin-15hroni-kori-tou-zeugariou-perimenoun-oi-arhes-gia-to-nekro-vrefos-stin-kupseli/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873302/gunaika-apo-tin-patra-epese-thuma-apatis-me-doloma-ton-kristiano-ronaldo-pou-tis-zitise-100-euro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T07:18:17.124000+00:00"
+      "seen_at_utc": "2026-09-03T07:30:06.999392+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1459442/patra-eide-ton-ronalnto-na-milaei-ellinika-kai-toy-esteile-lefta-pos-egine-i-apati-me-a-i-vinteo/",
-      "title": "Πάτρα: Είδε τον «Ρονάλντο» να μιλάει ελληνικά και του έστειλε λεφτά – Πώς έγινε η απάτη με A.I. [βίντεο]",
-      "normalized_title": "ΠΑΤΡΑ: ΕΙΔΕ ΤΟΝ «ΡΟΝΑΛΝΤΟ» ΝΑ ΜΙΛΑΕΙ ΕΛΛΗΝΙΚΑ ΚΑΙ ΤΟΥ ΕΣΤΕΙΛΕ ΛΕΦΤΑ – ΠΩΣ ΕΓΙΝΕ Η ΑΠΑΤΗ ΜΕ A.I. [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1459431/andreas-papandreoy-diokomenos-kai-meta-tin-3i-toy-septemvri-agnosta-ntokoymenta-apo-ton-fakelo-toy-stin-asfaleia/",
+      "title": "Ανδρέας Παπανδρέου: Διωκόμενος και μετά την 3η του Σεπτέμβρη – Αγνωστα ντοκουμέντα από τον φάκελό του στην Ασφάλεια",
+      "normalized_title": "ΑΝΔΡΕΑΣ ΠΑΠΑΝΔΡΕΟΥ: ΔΙΩΚΟΜΕΝΟΣ ΚΑΙ ΜΕΤΑ ΤΗΝ 3Η ΤΟΥ ΣΕΠΤΕΜΒΡΗ – ΑΓΝΩΣΤΑ ΝΤΟΚΟΥΜΕΝΤΑ ΑΠΟ ΤΟΝ ΦΑΚΕΛΟ ΤΟΥ ΣΤΗΝ ΑΣΦΑΛΕΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1459442/patra-eide-ton-ronalnto-na-milaei-ellinika-kai-toy-esteile-lefta-pos-egine-i-apati-me-a-i-vinteo/",
-        "https://www.efsyn.gr/stiles/1459419/o-antisionistikos-aktivismos-den-emperiehei-ratsistiki-diakrisi/",
-        "https://www.efsyn.gr/tehnes/1459218/oi-tainies-tis-evdomadas-taxidi-se-mia-diairemeni-germania/",
-        "https://www.efsyn.gr/politiki/1459426/tsoykalas-gia-tin-epeteio-tis-3is-septemvri-to-pasok-mprosta-gia-tin-ellada-toy-mellontos/",
-        "https://www.efsyn.gr/politiki/1459397/dimoskopisi-interview-263-i-nd-137-i-elas-kai-119-to-pasok-stin-ekti-thesi-i-karystianoy/",
-        "https://www.efsyn.gr/stiles/1459405/dianoisi-kai-pseydodianoisi/",
-        "https://www.efsyn.gr/stiles/1459400/politika-ithi-ton-kairon/",
-        "https://www.efsyn.gr/stiles/1459395/to-orama-toy-andrea/",
-        "https://www.efsyn.gr/stiles/1459386/thermokrasia-metria-ypsili/"
+        "https://www.efsyn.gr/politiki/1459431/andreas-papandreoy-diokomenos-kai-meta-tin-3i-toy-septemvri-agnosta-ntokoymenta-apo-ton-fakelo-toy-stin-asfaleia/",
+        "https://www.efsyn.gr/ellada/1459429/agrinio-i-15hroni-poy-eihe-exafanistei-katiggeile-arpagi-kai-viasmo-apo-dyo-andres/"
       ],
-      "seen_at_utc": "2026-09-03T07:18:17.123959+00:00"
+      "seen_at_utc": "2026-09-03T07:30:06.999372+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/sports/football/super-league-o-tsvaier-oristike-sto-panathinaikos-paok-o-tzilos-sfyrizei-ston-volo/",
-      "title": "Ο Τσβάιερ ορίστηκε στο Παναθηναϊκός - ΠΑΟΚ, ο Τζήλος σφυρίζει στον Βόλο",
-      "normalized_title": "Ο ΤΣΒΑΙΕΡ ΟΡΙΣΤΗΚΕ ΣΤΟ ΠΑΝΑΘΗΝΑΙΚΟΣ - ΠΑΟΚ, Ο ΤΖΗΛΟΣ ΣΦΥΡΙΖΕΙ ΣΤΟΝ ΒΟΛΟ",
+      "url": "https://www.in.gr/2026/09/03/politics/geroulanos-to-spot-gia-ta-genethlia-tou-pasok-einai-afieromeno-ston-lao-tis-kritis/",
+      "title": "Το σποτ του Γερουλάνου για τα γενέθλια του ΠΑΣΟΚ - «Είναι αφιερωμένο στον λαό της Κρήτης»",
+      "normalized_title": "ΤΟ ΣΠΟΤ ΤΟΥ ΓΕΡΟΥΛΑΝΟΥ ΓΙΑ ΤΑ ΓΕΝΕΘΛΙΑ ΤΟΥ ΠΑΣΟΚ - «ΕΙΝΑΙ ΑΦΙΕΡΩΜΕΝΟ ΣΤΟΝ ΛΑΟ ΤΗΣ ΚΡΗΤΗΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/sports/football/super-league-o-tsvaier-oristike-sto-panathinaikos-paok-o-tzilos-sfyrizei-ston-volo/",
-        "https://www.in.gr/2026/09/03/world/iran-nea-epithesi-ston-kolpo-se-antipoina-gia-tous-vomvardismous-ton-ipa/",
-        "https://www.in.gr/2026/09/03/pet-stories/ios-tou-dytikou-neilou-kai-katoikidia-poia-zoa-kindyneyoun-pragmatika/",
-        "https://www.in.gr/2026/09/03/pet-stories/mazi-mporoume-na-prosferoume-sta-talaiporimena-aloga-ti-zoi-pou-tous-aksizei/",
-        "https://www.in.gr/2026/09/03/life/music/kasantra-gouilson-pethane-mia-apo-tis-spoudaioteres-fones-tis-sygxronis-tzaz/",
-        "https://www.in.gr/2026/09/03/sports/football/tsimikas-se-mpeili-kalosorises-aderfe-pic/"
+        "https://www.in.gr/2026/09/03/politics/geroulanos-to-spot-gia-ta-genethlia-tou-pasok-einai-afieromeno-ston-lao-tis-kritis/",
+        "https://www.in.gr/2026/09/03/greece/kolydas-proimo-fthinoporo-pou-simeiothikan-oi-xamiloteres-thermokrasies/",
+        "https://www.in.gr/2026/09/03/greece/agrinio-arpagi-kai-viasmo-kataggellei-i-15xroni-pou-agnoountan-synelifthisan-dyo-andres/"
       ],
-      "seen_at_utc": "2026-09-03T07:18:17.123907+00:00"
+      "seen_at_utc": "2026-09-03T07:30:06.999339+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T07:18:17.124079+00:00"
+  "updated_at_utc": "2026-09-03T07:30:06.999466+00:00"
 }
