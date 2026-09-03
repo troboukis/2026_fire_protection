@@ -1,17 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564434608/tropologia-gia-ton-afthodi-pyreto-oi-enoples-dynameis-se-rolo-syntonisti/",
-      "title": "Αφθώδης πυρετός: Οι Ενοπλες Δυνάμεις σε ρόλο συντονιστή",
-      "normalized_title": "ΑΦΘΩΔΗΣ ΠΥΡΕΤΟΣ: ΟΙ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ ΣΕ ΡΟΛΟ ΣΥΝΤΟΝΙΣΤΗ",
+      "url": "https://www.kathimerini.gr/economy/international/564435019/fovoi-gia-epanalipsi-tis-asiatikis-krisis-toy-1997/",
+      "title": "Φόβοι για επανάληψη της ασιατικής κρίσης του 1997",
+      "normalized_title": "ΦΟΒΟΙ ΓΙΑ ΕΠΑΝΑΛΗΨΗ ΤΗΣ ΑΣΙΑΤΙΚΗΣ ΚΡΙΣΗΣ ΤΟΥ 1997",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564434608/tropologia-gia-ton-afthodi-pyreto-oi-enoples-dynameis-se-rolo-syntonisti/",
-        "https://www.kathimerini.gr/k/k-magazine/564420160/to-alyto-ainigma-toy-ivan-remprof-toy-varytonoy-poy-agapise-ti-skopelo/",
-        "https://www.kathimerini.gr/k/travel/564434458/5-tropoi-gia-na-xeperasete-ti-melagcholia-meta-tis-diakopes/",
-        "https://www.kathimerini.gr/society/564434611/stayros-mpenos-ametanoito-vathy-kratos/",
-        "https://www.kathimerini.gr/society/564435316/agrinio-15chroni-poy-agnooyntan-kataggellei-arpagi-kai-viasmo-synelifthisan-dyo-andres/"
+        "https://www.kathimerini.gr/economy/international/564435019/fovoi-gia-epanalipsi-tis-asiatikis-krisis-toy-1997/",
+        "https://www.kathimerini.gr/economy/business/564435004/poy-pontarei-i-trade-estate-gia-peraitero-enischysi-toy-tziroy/",
+        "https://www.kathimerini.gr/k/gastronomos/564433897/choirini-panseta-foyrnoy-me-stafylia-petimezi-kai-thymari/",
+        "https://www.kathimerini.gr/world/564435334/giati-oi-ipa-parateinoyn-ti-stratiotiki-toys-paroysia-sti-mesi-anatoli/",
+        "https://www.kathimerini.gr/society/564435337/thessaloniki-stis-floges-tria-aytokinita-stin-pylaia-kai-fortigo-stin-perifereiaki/",
+        "https://www.kathimerini.gr/istoria/564434728/90-chronia-prin-3-9-1936/"
       ],
-      "seen_at_utc": "2026-09-03T06:51:10.249714+00:00"
+      "seen_at_utc": "2026-09-03T07:18:17.123855+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,35 +1264,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873266/georgiadis-egainiase-ta-nea-tep-stin-xanthi-anakainismena-kedra-ugeias-kai-nea-domi-gia-astheneis-me-anoia-sti-drama/?utm_source=rss",
-      "title": "Γεωργιάδης: Εγκαινίασε τα νέα ΤΕΠ στην Ξάνθη, ανακαινισμένα Κέντρα Υγείας και νέα δομή για ασθενείς με άνοια στη Δράμα",
-      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ: ΕΓΚΑΙΝΙΑΣΕ ΤΑ ΝΕΑ ΤΕΠ ΣΤΗΝ ΞΑΝΘΗ, ΑΝΑΚΑΙΝΙΣΜΕΝΑ ΚΕΝΤΡΑ ΥΓΕΙΑΣ ΚΑΙ ΝΕΑ ΔΟΜΗ ΓΙΑ ΑΣΘΕΝΕΙΣ ΜΕ ΑΝΟΙΑ ΣΤΗ ΔΡΑΜΑ",
+      "url": "https://www.protothema.gr/greece/article/1873287/apadiseis-apo-tin-15hroni-kori-tou-zeugariou-perimenoun-oi-arhes-gia-to-nekro-vrefos-stin-kupseli/?utm_source=rss",
+      "title": "Τα παιδιά γνώριζαν ότι υπήρχε το νεκρό βρέφος στην κατάψυξη, στο μικροσκόπιο η 15χρονη κόρη του ζευγαριού της Κυψέλης",
+      "normalized_title": "ΤΑ ΠΑΙΔΙΑ ΓΝΩΡΙΖΑΝ ΟΤΙ ΥΠΗΡΧΕ ΤΟ ΝΕΚΡΟ ΒΡΕΦΟΣ ΣΤΗΝ ΚΑΤΑΨΥΞΗ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ Η 15ΧΡΟΝΗ ΚΟΡΗ ΤΟΥ ΖΕΥΓΑΡΙΟΥ ΤΗΣ ΚΥΨΕΛΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873266/georgiadis-egainiase-ta-nea-tep-stin-xanthi-anakainismena-kedra-ugeias-kai-nea-domi-gia-astheneis-me-anoia-sti-drama/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873263/apisteuto-trohaio-stin-athinon-lamias-ih-sugroustike-me-tahuploo-deite-eikones/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873287/apadiseis-apo-tin-15hroni-kori-tou-zeugariou-perimenoun-oi-arhes-gia-to-nekro-vrefos-stin-kupseli/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T06:51:10.249823+00:00"
+      "seen_at_utc": "2026-09-03T07:18:17.124000+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1459396/mesi-anatoli-nea-iranika-antipoina-kata-ton-ipa-ston-kolpo-o-tramp-kanei-asteia-gia-to-ormoyz-en-meso-adiexodoy/",
-      "title": "Μέση Ανατολή: Νέα ιρανικά αντίποινα κατά των ΗΠΑ στον Κόλπο – Ο Τραμπ κάνει «αστεία» για το Ορμούζ εν μέσω αδιεξόδου",
-      "normalized_title": "ΜΕΣΗ ΑΝΑΤΟΛΗ: ΝΕΑ ΙΡΑΝΙΚΑ ΑΝΤΙΠΟΙΝΑ ΚΑΤΑ ΤΩΝ ΗΠΑ ΣΤΟΝ ΚΟΛΠΟ – Ο ΤΡΑΜΠ ΚΑΝΕΙ «ΑΣΤΕΙΑ» ΓΙΑ ΤΟ ΟΡΜΟΥΖ ΕΝ ΜΕΣΩ ΑΔΙΕΞΟΔΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1459442/patra-eide-ton-ronalnto-na-milaei-ellinika-kai-toy-esteile-lefta-pos-egine-i-apati-me-a-i-vinteo/",
+      "title": "Πάτρα: Είδε τον «Ρονάλντο» να μιλάει ελληνικά και του έστειλε λεφτά – Πώς έγινε η απάτη με A.I. [βίντεο]",
+      "normalized_title": "ΠΑΤΡΑ: ΕΙΔΕ ΤΟΝ «ΡΟΝΑΛΝΤΟ» ΝΑ ΜΙΛΑΕΙ ΕΛΛΗΝΙΚΑ ΚΑΙ ΤΟΥ ΕΣΤΕΙΛΕ ΛΕΦΤΑ – ΠΩΣ ΕΓΙΝΕ Η ΑΠΑΤΗ ΜΕ A.I. [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1459396/mesi-anatoli-nea-iranika-antipoina-kata-ton-ipa-ston-kolpo-o-tramp-kanei-asteia-gia-to-ormoyz-en-meso-adiexodoy/",
-        "https://www.efsyn.gr/athlitismos/1459372/aek-niki-sti-hrysoypoli-kai-epistrofi-zoao-mario/"
+        "https://www.efsyn.gr/ellada/1459442/patra-eide-ton-ronalnto-na-milaei-ellinika-kai-toy-esteile-lefta-pos-egine-i-apati-me-a-i-vinteo/",
+        "https://www.efsyn.gr/stiles/1459419/o-antisionistikos-aktivismos-den-emperiehei-ratsistiki-diakrisi/",
+        "https://www.efsyn.gr/tehnes/1459218/oi-tainies-tis-evdomadas-taxidi-se-mia-diairemeni-germania/",
+        "https://www.efsyn.gr/politiki/1459426/tsoykalas-gia-tin-epeteio-tis-3is-septemvri-to-pasok-mprosta-gia-tin-ellada-toy-mellontos/",
+        "https://www.efsyn.gr/politiki/1459397/dimoskopisi-interview-263-i-nd-137-i-elas-kai-119-to-pasok-stin-ekti-thesi-i-karystianoy/",
+        "https://www.efsyn.gr/stiles/1459405/dianoisi-kai-pseydodianoisi/",
+        "https://www.efsyn.gr/stiles/1459400/politika-ithi-ton-kairon/",
+        "https://www.efsyn.gr/stiles/1459395/to-orama-toy-andrea/",
+        "https://www.efsyn.gr/stiles/1459386/thermokrasia-metria-ypsili/"
       ],
-      "seen_at_utc": "2026-09-03T06:51:10.249794+00:00"
+      "seen_at_utc": "2026-09-03T07:18:17.123959+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/greece/ios-tou-dytikou-neilou-synexizetai-i-eksarsi-58-nea-egxoria-krousmata/",
-      "title": "Συνεχίζεται η έξαρση του ιού του Δυτικού Νείλου - 58 νέα εγχώρια κρούσματα",
-      "normalized_title": "ΣΥΝΕΧΙΖΕΤΑΙ Η ΕΞΑΡΣΗ ΤΟΥ ΙΟΥ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ - 58 ΝΕΑ ΕΓΧΩΡΙΑ ΚΡΟΥΣΜΑΤΑ",
+      "url": "https://www.in.gr/2026/09/03/sports/football/super-league-o-tsvaier-oristike-sto-panathinaikos-paok-o-tzilos-sfyrizei-ston-volo/",
+      "title": "Ο Τσβάιερ ορίστηκε στο Παναθηναϊκός - ΠΑΟΚ, ο Τζήλος σφυρίζει στον Βόλο",
+      "normalized_title": "Ο ΤΣΒΑΙΕΡ ΟΡΙΣΤΗΚΕ ΣΤΟ ΠΑΝΑΘΗΝΑΙΚΟΣ - ΠΑΟΚ, Ο ΤΖΗΛΟΣ ΣΦΥΡΙΖΕΙ ΣΤΟΝ ΒΟΛΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/greece/ios-tou-dytikou-neilou-synexizetai-i-eksarsi-58-nea-egxoria-krousmata/",
-        "https://www.in.gr/2026/09/03/sports/football/i-argentini-timaei-ton-mesi-oloi-oi-agones-stis-egxories-diorganoseis-tha-exoun-diakopi-sto-10o-lepto/"
+        "https://www.in.gr/2026/09/03/sports/football/super-league-o-tsvaier-oristike-sto-panathinaikos-paok-o-tzilos-sfyrizei-ston-volo/",
+        "https://www.in.gr/2026/09/03/world/iran-nea-epithesi-ston-kolpo-se-antipoina-gia-tous-vomvardismous-ton-ipa/",
+        "https://www.in.gr/2026/09/03/pet-stories/ios-tou-dytikou-neilou-kai-katoikidia-poia-zoa-kindyneyoun-pragmatika/",
+        "https://www.in.gr/2026/09/03/pet-stories/mazi-mporoume-na-prosferoume-sta-talaiporimena-aloga-ti-zoi-pou-tous-aksizei/",
+        "https://www.in.gr/2026/09/03/life/music/kasantra-gouilson-pethane-mia-apo-tis-spoudaioteres-fones-tis-sygxronis-tzaz/",
+        "https://www.in.gr/2026/09/03/sports/football/tsimikas-se-mpeili-kalosorises-aderfe-pic/"
       ],
-      "seen_at_utc": "2026-09-03T06:51:10.249755+00:00"
+      "seen_at_utc": "2026-09-03T07:18:17.123907+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T06:51:10.249904+00:00"
+  "updated_at_utc": "2026-09-03T07:18:17.124079+00:00"
 }
