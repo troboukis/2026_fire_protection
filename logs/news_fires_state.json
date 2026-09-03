@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564435529/vretania-o-igetis-ton-prasinon-diekdikei-tin-edra-toy-kir-starmer/",
-      "title": "Βρετανία: Ο ηγέτης των Πρασίνων διεκδικεί την έδρα του Κιρ Στάρμερ",
-      "normalized_title": "ΒΡΕΤΑΝΙΑ: Ο ΗΓΕΤΗΣ ΤΩΝ ΠΡΑΣΙΝΩΝ ΔΙΕΚΔΙΚΕΙ ΤΗΝ ΕΔΡΑ ΤΟΥ ΚΙΡ ΣΤΑΡΜΕΡ",
+      "url": "https://www.kathimerini.gr/economy/564435007/chreiazetai-anavathmisi-prin-kan-leitoyrgisei/",
+      "title": "Χρειάζεται αναβάθμιση πριν καν λειτουργήσει",
+      "normalized_title": "ΧΡΕΙΑΖΕΤΑΙ ΑΝΑΒΑΘΜΙΣΗ ΠΡΙΝ ΚΑΝ ΛΕΙΤΟΥΡΓΗΣΕΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564435529/vretania-o-igetis-ton-prasinon-diekdikei-tin-edra-toy-kir-starmer/",
-        "https://www.kathimerini.gr/world/564435541/velgio-peripoy-3-000-ypervallontes-thanatoi-apo-tin-akraia-zesti-to-kalokairi/"
+        "https://www.kathimerini.gr/economy/564435007/chreiazetai-anavathmisi-prin-kan-leitoyrgisei/",
+        "https://www.kathimerini.gr/economy/local/564434968/pos-tha-meiothei-to-tekmarto-eisodima-gia-synepeis-epaggelmaties/",
+        "https://www.kathimerini.gr/politics/564435559/samaras-kata-tsipra-megala-logia-thessaloniki-aytapates-sto-idio-ergo-theates/",
+        "https://www.kathimerini.gr/economy/business/564432730/ayxisi-poliseon-23-kai-leitoyrgikon-kerdon31-gia-ti-nova-greece/",
+        "https://www.kathimerini.gr/world/564435520/lemesos-katadioxi-me-pyrovolismoys-odigos-van-agnoise-astynomiko-elegcho/"
       ],
-      "seen_at_utc": "2026-09-03T09:30:07.721245+00:00"
+      "seen_at_utc": "2026-09-03T09:51:23.206231+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1263,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873370/endooikogeneiako-epeisodio-sta-hania-nearos-epitethike-stin-mitera-tou-ekruve-narkotika-sto-spiti/?utm_source=rss",
-      "title": "Ενδοοικογενειακό επεισόδιο στα Χανιά: Νεαρός που έκρυβε ναρκωτικά στο σπίτι επιτέθηκε στη μητέρα του",
-      "normalized_title": "ΕΝΔΟΟΙΚΟΓΕΝΕΙΑΚΟ ΕΠΕΙΣΟΔΙΟ ΣΤΑ ΧΑΝΙΑ: ΝΕΑΡΟΣ ΠΟΥ ΕΚΡΥΒΕ ΝΑΡΚΩΤΙΚΑ ΣΤΟ ΣΠΙΤΙ ΕΠΙΤΕΘΗΚΕ ΣΤΗ ΜΗΤΕΡΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1873382/o-hartis-enoikion-se-poies-periohes-ektoxeutikan-oi-times-oi-protathlites-se-athina-thessaloniki-kai-nisia/?utm_source=rss",
+      "title": "Ο χάρτης ενοικίων για το 2026: Σε ποιες περιοχές εκτοξεύτηκαν οι τιμές, οι πρωταθλητές σε Αθήνα, Θεσσαλονίκη και νησιά",
+      "normalized_title": "Ο ΧΑΡΤΗΣ ΕΝΟΙΚΙΩΝ ΓΙΑ ΤΟ 2026: ΣΕ ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΚΤΟΞΕΥΤΗΚΑΝ ΟΙ ΤΙΜΕΣ, ΟΙ ΠΡΩΤΑΘΛΗΤΕΣ ΣΕ ΑΘΗΝΑ, ΘΕΣΣΑΛΟΝΙΚΗ ΚΑΙ ΝΗΣΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873370/endooikogeneiako-epeisodio-sta-hania-nearos-epitethike-stin-mitera-tou-ekruve-narkotika-sto-spiti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873357/thessaloniki-pigan-na-klepsoun-kosmimatopoleio-apenadi-apo-astunomiko-tmima-purovolismos-enadion-astunomikou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873382/o-hartis-enoikion-se-poies-periohes-ektoxeutikan-oi-times-oi-protathlites-se-athina-thessaloniki-kai-nisia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873380/fotia-stin-halkida-epiheiroun-pede-enaeria-mesa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T09:17:08.129339+00:00"
+      "seen_at_utc": "2026-09-03T09:51:23.206466+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1459580/fotia-sto-kalohori-halkidas-kinitopoiithikan-pente-enaeria-mesa/",
-      "title": "Φωτιά στο Καλοχώρι Χαλκίδας – Κινητοποιήθηκαν πέντε εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΚΑΛΟΧΩΡΙ ΧΑΛΚΙΔΑΣ – ΚΙΝΗΤΟΠΟΙΗΘΗΚΑΝ ΠΕΝΤΕ ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.efsyn.gr/politiki/1459579/georgiadis-gia-exaggelies-tsipra-xanagyrname-stin-epohi-tis-anoisias/",
+      "title": "Γεωργιάδης για εξαγγελίες Τσίπρα: «Ξαναγυρνάμε στην εποχή της ανοησίας»",
+      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ ΓΙΑ ΕΞΑΓΓΕΛΙΕΣ ΤΣΙΠΡΑ: «ΞΑΝΑΓΥΡΝΑΜΕ ΣΤΗΝ ΕΠΟΧΗ ΤΗΣ ΑΝΟΗΣΙΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1459580/fotia-sto-kalohori-halkidas-kinitopoiithikan-pente-enaeria-mesa/"
+        "https://www.efsyn.gr/politiki/1459579/georgiadis-gia-exaggelies-tsipra-xanagyrname-stin-epohi-tis-anoisias/",
+        "https://www.efsyn.gr/kosmos/1459585/poytin-yparhei-mia-eykairia-gia-symfonia-eirinis-stin-oykrania-etoimes-na-stirixoyn-mia-dieythetisi-ipa-kai-kina/",
+        "https://www.efsyn.gr/politiki/1459472/me-to-vlemma-sta-programmata-ton-antipalon-i-nd-to-vasiko-kyvernitiko-afigima/"
       ],
-      "seen_at_utc": "2026-09-03T09:30:07.721309+00:00"
+      "seen_at_utc": "2026-09-03T09:51:23.206380+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/in-science/perivallon-b-science/gigantonetai-mprosta-sta-matia-mas-o-oie-proeidopoiei-gia-akraio-kai-katastrofiko-el-ninio-me-pagkosmies-synepeies/",
-      "title": "«Γιγαντώνεται μπροστά στα μάτια μας» – Ο ΟΗΕ προειδοποιεί για ακραίο και καταστροφικό Ελ Νίνιο",
-      "normalized_title": "«ΓΙΓΑΝΤΩΝΕΤΑΙ ΜΠΡΟΣΤΑ ΣΤΑ ΜΑΤΙΑ ΜΑΣ» – Ο ΟΗΕ ΠΡΟΕΙΔΟΠΟΙΕΙ ΓΙΑ ΑΚΡΑΙΟ ΚΑΙ ΚΑΤΑΣΤΡΟΦΙΚΟ ΕΛ ΝΙΝΙΟ",
+      "url": "https://www.in.gr/2026/09/03/greece/preveza-tria-paidia-sto-nosokomeio-meta-apo-eisaggeliki-entoli-gia-paramelisi-kai-ypositismo/",
+      "title": "Τρία παιδιά στο νοσοκομείο Πρέβεζας μετά από εισαγγελική εντολή για παραμέληση και υποσιτισμό",
+      "normalized_title": "ΤΡΙΑ ΠΑΙΔΙΑ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΠΡΕΒΕΖΑΣ ΜΕΤΑ ΑΠΟ ΕΙΣΑΓΓΕΛΙΚΗ ΕΝΤΟΛΗ ΓΙΑ ΠΑΡΑΜΕΛΗΣΗ ΚΑΙ ΥΠΟΣΙΤΙΣΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/in-science/perivallon-b-science/gigantonetai-mprosta-sta-matia-mas-o-oie-proeidopoiei-gia-akraio-kai-katastrofiko-el-ninio-me-pagkosmies-synepeies/",
-        "https://www.in.gr/2026/09/03/world/poutin-yparxei-pithanotita-epiteyksis-symfonias-gia-tin-oukrania/",
-        "https://www.in.gr/2026/09/03/politics/aftodioikisi/ksekinaei-ergo-anavathmisis-odikou-aksona-stin-eyrytania/",
-        "https://www.in.gr/2026/09/03/greece/fotia-sti-xalkida-sikothikan-5-enaeria-mesa/"
+        "https://www.in.gr/2026/09/03/greece/preveza-tria-paidia-sto-nosokomeio-meta-apo-eisaggeliki-entoli-gia-paramelisi-kai-ypositismo/",
+        "https://www.in.gr/2026/09/03/greece/diarriksi-se-kosmimatopoleio-konta-sto-at-lagkada-evgalan-karampina-se-astynomiko/",
+        "https://www.in.gr/2026/09/03/world/dania-katigorei-ti-rosia-oti-stratologei-polites-tis-kai-sxediazei-sampotaz/",
+        "https://www.in.gr/2026/09/03/politics/aftodioikisi/glyfada-se-ligous-mines-oloklironetai-ergo-orosimo-gia-tin-attiki/",
+        "https://www.in.gr/2026/09/03/sports/football/o-laoutaro-apantise-stis-fimes-gia-tin-protasi-tis-mpartselona/",
+        "https://www.in.gr/2026/09/03/greece/kypseli-ta-tria-anilika-paidia-tis-oikogeneias-ikseran-oti-to-vrefos-itan-nekro-stin-katapsyksi/",
+        "https://www.in.gr/2026/09/03/sports/football/europa-league/olympiakos-i-eyropaiki-lista-gia-ti-league-phase-tou-europa-league/"
       ],
-      "seen_at_utc": "2026-09-03T09:30:07.721288+00:00"
+      "seen_at_utc": "2026-09-03T09:51:23.206330+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T09:30:07.721403+00:00"
+  "updated_at_utc": "2026-09-03T09:51:23.206581+00:00"
 }
