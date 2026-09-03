@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564435022/epivradynetai-i-sygklisi-toy-notoy-me-ton-meso-oro-tis-e-e/",
-      "title": "Επιβραδύνεται η σύγκλιση του Νότου με τον μέσο όρο της Ε.Ε.",
-      "normalized_title": "ΕΠΙΒΡΑΔΥΝΕΤΑΙ Η ΣΥΓΚΛΙΣΗ ΤΟΥ ΝΟΤΟΥ ΜΕ ΤΟΝ ΜΕΣΟ ΟΡΟ ΤΗΣ Ε.Ε.",
+      "url": "https://www.kathimerini.gr/world/564435484/seismos-5-richter-eplixe-to-thivet/",
+      "title": "Σεισμός 5 Ρίχτερ έπληξε το Θιβέτ",
+      "normalized_title": "ΣΕΙΣΜΟΣ 5 ΡΙΧΤΕΡ ΕΠΛΗΞΕ ΤΟ ΘΙΒΕΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564435022/epivradynetai-i-sygklisi-toy-notoy-me-ton-meso-oro-tis-e-e/",
-        "https://www.kathimerini.gr/world/564435460/poytin-yparchei-pithanotita-eirineytikis-symfonias-gia-tin-oykrania/",
-        "https://www.kathimerini.gr/world/564435430/tailandi-oi-amerikanoi-naytes-toy-uss-abraham-lincoln-vgikan-gia-psonia-stin-patagia/",
-        "https://www.kathimerini.gr/economy/564434962/efapax-epivarynsi-gia-toys-ergodotes/",
-        "https://www.kathimerini.gr/politics/564435451/vinteo-androylaki-gia-tin-3i-septemvrioy-eimaste-edo-gia-na-proetoimasoyme-tin-epomeni-allagi/"
+        "https://www.kathimerini.gr/world/564435484/seismos-5-richter-eplixe-to-thivet/",
+        "https://www.kathimerini.gr/culture/cinema/564434785/oi-nees-tainies-tis-evdomadas-epistrefontas-se-mia-agnosti-patrida/",
+        "https://www.kathimerini.gr/economy/local/564435439/spiti-moy-ii-pano-apo-14-000-dikaioychoi-ofelithikan-apo-to-programma/"
       ],
-      "seen_at_utc": "2026-09-03T08:30:35.719793+00:00"
+      "seen_at_utc": "2026-09-03T08:51:10.862226+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1273,24 +1271,31 @@
       "seen_at_utc": "2026-09-03T08:30:35.719924+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1459480/halkidiki-vandalismos-sto-lykeio-kassandras-evalan-fotia-sto-proaylio-eikones/",
-      "title": "Χαλκιδική: Βανδαλισμός στο Λύκειο Κασσάνδρας – Έβαλαν φωτιά στο προαύλιο [εικόνες]",
-      "normalized_title": "ΧΑΛΚΙΔΙΚΗ: ΒΑΝΔΑΛΙΣΜΟΣ ΣΤΟ ΛΥΚΕΙΟ ΚΑΣΣΑΝΔΡΑΣ – ΕΒΑΛΑΝ ΦΩΤΙΑ ΣΤΟ ΠΡΟΑΥΛΙΟ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/athlitismos/1459506/premier-ligk-espase-to-fragma-ton-4-dis-eyro-stis-metagrafes/",
+      "title": "Πρέμιερ Λιγκ: Εσπασε το φράγμα των 4 δισ. ευρώ στις μεταγραφές",
+      "normalized_title": "ΠΡΕΜΙΕΡ ΛΙΓΚ: ΕΣΠΑΣΕ ΤΟ ΦΡΑΓΜΑ ΤΩΝ 4 ΔΙΣ. ΕΥΡΩ ΣΤΙΣ ΜΕΤΑΓΡΑΦΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1459480/halkidiki-vandalismos-sto-lykeio-kassandras-evalan-fotia-sto-proaylio-eikones/",
-        "https://www.efsyn.gr/athlitismos/1459458/niki-toy-olympiakoy-mesa-sti-larisa-me-0-4/"
+        "https://www.efsyn.gr/athlitismos/1459506/premier-ligk-espase-to-fragma-ton-4-dis-eyro-stis-metagrafes/",
+        "https://www.efsyn.gr/athlitismos/1459489/se-nees-peripeteies-i-gbl-kataggelia-liolioy-gia-pithanes-paranomes-hrimatodotiseis-ekatontadon-hiliadon-eyro/",
+        "https://www.efsyn.gr/athlitismos/1459478/metagrafikos-pyretos-ston-olympiako-erhetai-amesa-o-mpeili-ton-heimona-o-noys/",
+        "https://www.efsyn.gr/oikonomia/1459494/dekaetis-symfonia-metlen-kai-coca-cola-tria-epsilon-gia-prasini-energeia/",
+        "https://www.efsyn.gr/politiki/1459520/poy-tha-stegastoyn-ta-grafeia-toy-kommatos-samara-i-protimisi-toy-gia-to-onoma-kai-ta-prosopa-poy-syzitoyntai/",
+        "https://www.efsyn.gr/ellada/1459515/skertsos-giati-o-neos-patriotikos-foros-toy-tsipra-einai-alli-mia-nea-aytapati/"
       ],
-      "seen_at_utc": "2026-09-03T08:30:35.719893+00:00"
+      "seen_at_utc": "2026-09-03T08:51:10.862295+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/economy/oikonomikes-eidiseis/telos-sto-spiti-mou-2-posa-noikokyria-apektisan-katoikia-telika/",
-      "title": "Τέλος στο «Σπίτι μου 2» – Πόσα νοικοκυριά απέκτησαν κατοικία τελικά",
-      "normalized_title": "ΤΕΛΟΣ ΣΤΟ «ΣΠΙΤΙ ΜΟΥ 2» – ΠΟΣΑ ΝΟΙΚΟΚΥΡΙΑ ΑΠΕΚΤΗΣΑΝ ΚΑΤΟΙΚΙΑ ΤΕΛΙΚΑ",
+      "url": "https://www.in.gr/2026/09/03/world/i-ee-anoigei-tin-porta-polles-xores-theloun-na-mpoun-alla-oxi-oi-pio-plousies/",
+      "title": "Η ΕΕ ανοίγει την πόρτα: Πολλές χώρες θέλουν να μπουν, αλλά όχι οι πιο πλούσιες",
+      "normalized_title": "Η ΕΕ ΑΝΟΙΓΕΙ ΤΗΝ ΠΟΡΤΑ: ΠΟΛΛΕΣ ΧΩΡΕΣ ΘΕΛΟΥΝ ΝΑ ΜΠΟΥΝ, ΑΛΛΑ ΟΧΙ ΟΙ ΠΙΟ ΠΛΟΥΣΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/economy/oikonomikes-eidiseis/telos-sto-spiti-mou-2-posa-noikokyria-apektisan-katoikia-telika/"
+        "https://www.in.gr/2026/09/03/world/i-ee-anoigei-tin-porta-polles-xores-theloun-na-mpoun-alla-oxi-oi-pio-plousies/",
+        "https://www.in.gr/2026/09/03/world/nepal-tous-1-243-eftasan-oi-nekroi-pano-apo-4-700-agnooumenoi-20-000-katoikies-xreiazontai-anoikodomisi/",
+        "https://www.in.gr/2026/09/03/sports/football/i-ypoklisi-tou-fampregkas-ston-douvika-exei-ekselixthei-para-poly/",
+        "https://www.in.gr/2026/09/03/world/rosia-xaraktirise-peirateia-tin-katasxesi-ploiou-tis-apo-ti-norvigia/"
       ],
-      "seen_at_utc": "2026-09-03T08:30:35.719852+00:00"
+      "seen_at_utc": "2026-09-03T08:51:10.862267+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T08:30:35.719984+00:00"
+  "updated_at_utc": "2026-09-03T08:51:10.862356+00:00"
 }
