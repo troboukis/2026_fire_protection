@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564436024/nea-yorki-mploko-enos-etoys-sti-chrisi-ai-apo-mathites-sta-dimosia-scholeia/",
-      "title": "Νέα Υόρκη: Μπλόκο ενός έτους στη χρήση AI από μαθητές στα δημόσια σχολεία",
-      "normalized_title": "ΝΕΑ ΥΟΡΚΗ: ΜΠΛΟΚΟ ΕΝΟΣ ΕΤΟΥΣ ΣΤΗ ΧΡΗΣΗ AI ΑΠΟ ΜΑΘΗΤΕΣ ΣΤΑ ΔΗΜΟΣΙΑ ΣΧΟΛΕΙΑ",
+      "url": "https://www.kathimerini.gr/culture/tv/564435997/antonios-amp-kleopatra-aytoi-einai-oi-iroes-tis-neas-kathimerinis-seiras-toy-skai/",
+      "title": "«Αντώνιος & Κλεοπάτρα»: Αυτοί είναι οι ήρωες της νέας καθημερινής σειράς του ΣΚΑΪ",
+      "normalized_title": "«ΑΝΤΩΝΙΟΣ & ΚΛΕΟΠΑΤΡΑ»: ΑΥΤΟΙ ΕΙΝΑΙ ΟΙ ΗΡΩΕΣ ΤΗΣ ΝΕΑΣ ΚΑΘΗΜΕΡΙΝΗΣ ΣΕΙΡΑΣ ΤΟΥ ΣΚΑΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564436024/nea-yorki-mploko-enos-etoys-sti-chrisi-ai-apo-mathites-sta-dimosia-scholeia/",
-        "https://www.kathimerini.gr/athletics/analysis/564436063/yparchei-katharo-favori-gia-ton-titlo/"
+        "https://www.kathimerini.gr/culture/tv/564435997/antonios-amp-kleopatra-aytoi-einai-oi-iroes-tis-neas-kathimerinis-seiras-toy-skai/",
+        "https://www.kathimerini.gr/life/techniti-noimosyni/564435973/nvidia-symfonia-mamoyth-13-dis-dolarion-gia-tin-exagora-tis-hugging-face/",
+        "https://www.kathimerini.gr/culture/music/564433708/to-sygkinitiko-antio-tis-ariana-gkrante-sto-londino/"
       ],
-      "seen_at_utc": "2026-09-03T13:30:01.333951+00:00"
+      "seen_at_utc": "2026-09-03T13:51:26.131081+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873489/nekri-55hroni-pou-kataplakothike-apo-trakter-sta-grevena/?utm_source=rss",
-      "title": "Νεκρή 55χρονη που καταπλακώθηκε από τρακτέρ στα Γρεβενά",
-      "normalized_title": "ΝΕΚΡΗ 55ΧΡΟΝΗ ΠΟΥ ΚΑΤΑΠΛΑΚΩΘΗΚΕ ΑΠΟ ΤΡΑΚΤΕΡ ΣΤΑ ΓΡΕΒΕΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1873500/red-code-aurio-gia-okto-periohes-polu-upsilos-kindunos-purkagias-tin-paraskeui/?utm_source=rss",
+      "title": "Red Code σε Αττική, Λέσβο, Χίο, Σάμο, Ικαρία, Κυκλάδες, Εύβοια και Κρήτη, πολύ υψηλός κίνδυνος πυρκαγιάς την Παρασκευή",
+      "normalized_title": "RED CODE ΣΕ ΑΤΤΙΚΗ, ΛΕΣΒΟ, ΧΙΟ, ΣΑΜΟ, ΙΚΑΡΙΑ, ΚΥΚΛΑΔΕΣ, ΕΥΒΟΙΑ ΚΑΙ ΚΡΗΤΗ, ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΤΗΝ ΠΑΡΑΣΚΕΥΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873489/nekri-55hroni-pou-kataplakothike-apo-trakter-sta-grevena/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873500/red-code-aurio-gia-okto-periohes-polu-upsilos-kindunos-purkagias-tin-paraskeui/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-03T13:30:01.334044+00:00"
+      "seen_at_utc": "2026-09-03T13:51:26.131258+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1459792/akinitopoiithike-syrmos-toy-proastiakoy-ston-aspropyrgo-kathysteriseis-sta-epomena-dromologia/",
-      "title": "Ακινητοποιήθηκε συρμός του προαστιακού στον Ασπρόπυργο – Καθυστερήσεις στα επόμενα δρομολόγια",
-      "normalized_title": "ΑΚΙΝΗΤΟΠΟΙΗΘΗΚΕ ΣΥΡΜΟΣ ΤΟΥ ΠΡΟΑΣΤΙΑΚΟΥ ΣΤΟΝ ΑΣΠΡΟΠΥΡΓΟ – ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΑ ΕΠΟΜΕΝΑ ΔΡΟΜΟΛΟΓΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1459785/o-tsipras-sikonei-to-ganti-kai-stelnei-gia-kostologisi-to-programma-tis-elas-skliri-sygkroysi-me-tin-kyvernisi/",
+      "title": "Ο Τσίπρας σηκώνει το γάντι και στέλνει για κοστολόγηση το πρόγραμμα της ΕΛΑΣ – Σκληρή σύγκρουση με την κυβέρνηση",
+      "normalized_title": "Ο ΤΣΙΠΡΑΣ ΣΗΚΩΝΕΙ ΤΟ ΓΑΝΤΙ ΚΑΙ ΣΤΕΛΝΕΙ ΓΙΑ ΚΟΣΤΟΛΟΓΗΣΗ ΤΟ ΠΡΟΓΡΑΜΜΑ ΤΗΣ ΕΛΑΣ – ΣΚΛΗΡΗ ΣΥΓΚΡΟΥΣΗ ΜΕ ΤΗΝ ΚΥΒΕΡΝΗΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1459792/akinitopoiithike-syrmos-toy-proastiakoy-ston-aspropyrgo-kathysteriseis-sta-epomena-dromologia/",
-        "https://www.efsyn.gr/ellada/1459789/marathonas-omologise-oti-ethapse-ti-mitera-tis-stin-ayli-gia-na-pairnei-ti-syntaxi-i-kataggelia-poy-xekleidose-tin-ypothesi/",
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-john-antono-03-09-2026/",
-        "https://www.efsyn.gr/oikonomia/1459590/apanthrakopoiisi-tis-naytilias-realistiko-plaisio-zitoyn-kyvernisi-kai-efoplistes/"
+        "https://www.efsyn.gr/politiki/1459785/o-tsipras-sikonei-to-ganti-kai-stelnei-gia-kostologisi-to-programma-tis-elas-skliri-sygkroysi-me-tin-kyvernisi/",
+        "https://www.efsyn.gr/kosmos/1459811/tzei-nti-vans-epitelo-ergo-theoy-den-tha-me-exeplitte-an-o-antihristos-vriskotan-anamesa-mas/",
+        "https://www.efsyn.gr/oikonomia/1459812/o-ollandia-metefere-86-tonoys-hrysoy-apo-tis-ipa-kai-ton-kanada-sti-vretania/",
+        "https://www.efsyn.gr/ellada/1459805/ios-dytikoy-neiloy-psekasmoi-sto-palaio-faliro-to-kroysma-proklithike-kai-alloy-tiroyme-omos-to-protokollo/"
       ],
-      "seen_at_utc": "2026-09-03T13:17:11.311017+00:00"
+      "seen_at_utc": "2026-09-03T13:51:26.131211+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/world/galliki-epithesi-agapis-sti-vretania-i-geopolitiki-anagki-piso-apo-to-diplomatiko-eidyllio/",
-      "title": "Γαλλική «επίθεση αγάπης» στη Βρετανία – Η γεωπολιτική ανάγκη πίσω από το διπλωματικό ειδύλλιο",
-      "normalized_title": "ΓΑΛΛΙΚΗ «ΕΠΙΘΕΣΗ ΑΓΑΠΗΣ» ΣΤΗ ΒΡΕΤΑΝΙΑ – Η ΓΕΩΠΟΛΙΤΙΚΗ ΑΝΑΓΚΗ ΠΙΣΩ ΑΠΟ ΤΟ ΔΙΠΛΩΜΑΤΙΚΟ ΕΙΔΥΛΛΙΟ",
+      "url": "https://www.in.gr/2026/09/03/politics/diplomatia/aystiro-diavima-tis-athinas-stin-agkyra-anypostatoi-oi-tourkikoi-isxyrismoi-gia-ta-thalassia-parka/",
+      "title": "Αυστηρό διάβημα της Αθήνας στην Άγκυρα: «Ανυπόστατοι οι τουρκικοί ισχυρισμοί για τα θαλάσσια πάρκα»",
+      "normalized_title": "ΑΥΣΤΗΡΟ ΔΙΑΒΗΜΑ ΤΗΣ ΑΘΗΝΑΣ ΣΤΗΝ ΑΓΚΥΡΑ: «ΑΝΥΠΟΣΤΑΤΟΙ ΟΙ ΤΟΥΡΚΙΚΟΙ ΙΣΧΥΡΙΣΜΟΙ ΓΙΑ ΤΑ ΘΑΛΑΣΣΙΑ ΠΑΡΚΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/world/galliki-epithesi-agapis-sti-vretania-i-geopolitiki-anagki-piso-apo-to-diplomatiko-eidyllio/"
+        "https://www.in.gr/2026/09/03/politics/diplomatia/aystiro-diavima-tis-athinas-stin-agkyra-anypostatoi-oi-tourkikoi-isxyrismoi-gia-ta-thalassia-parka/",
+        "https://www.in.gr/2026/09/03/sports/football/apotheose-mesi-o-mourinio-kai-pire-thesi-gia-tin-kontra-tis-atletiko-me-tin-mpartselona-gia-alvares-vid/",
+        "https://www.in.gr/2026/09/03/politics/epikairotita/elas-sikonei-to-ganti-stin-propaganda-peri-akostologiton-metron-kai-paei-sto-ethniko-dimosionomiko-symvoulio/",
+        "https://www.in.gr/2026/09/03/politics/politiki-grammateia/androulakis-to-pasok-den-einai-androulakis-and-friends-opos-einai-i-nd-kai-to-komma-tsipra/"
       ],
-      "seen_at_utc": "2026-09-03T13:30:01.334011+00:00"
+      "seen_at_utc": "2026-09-03T13:51:26.131160+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T13:30:01.334121+00:00"
+  "updated_at_utc": "2026-09-03T13:51:26.131354+00:00"
 }
