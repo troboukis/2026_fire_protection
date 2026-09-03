@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564435946/oi-kores-tis-aretis-nees-eikones-apo-ta-gyrismata/",
-      "title": "«Οι κόρες της Αρετής»: Νέες εικόνες από τα γυρίσματα",
-      "normalized_title": "«ΟΙ ΚΟΡΕΣ ΤΗΣ ΑΡΕΤΗΣ»: ΝΕΕΣ ΕΙΚΟΝΕΣ ΑΠΟ ΤΑ ΓΥΡΙΣΜΑΤΑ",
+      "url": "https://www.kathimerini.gr/culture/arts/564434764/antikatoptrismoi-mnimis/",
+      "title": "Αντικατοπτρισμοί μνήμης",
+      "normalized_title": "ΑΝΤΙΚΑΤΟΠΤΡΙΣΜΟΙ ΜΝΗΜΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564435946/oi-kores-tis-aretis-nees-eikones-apo-ta-gyrismata/",
-        "https://www.kathimerini.gr/society/564436789/kriti-nekros-me-trayma-apo-oplo-proin-antidimarchos/"
+        "https://www.kathimerini.gr/culture/arts/564434764/antikatoptrismoi-mnimis/",
+        "https://www.kathimerini.gr/society/564436420/agrinio-sfodri-kataigida-me-chalazoptosi-kai-thyellodeis-anemoys/"
       ],
-      "seen_at_utc": "2026-09-03T20:30:07.250203+00:00"
+      "seen_at_utc": "2026-09-03T20:51:09.003829+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,24 +1270,27 @@
       "seen_at_utc": "2026-09-03T20:30:07.250360+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1460037/vretanos-diplomatis-epi-timi-o-mpler-ethese-oro-stin-palaistiniaki-arhi-na-allaxei-onoma-mesa-sta-sholika-tis-vivlia/",
-      "title": "Βρετανός διπλωμάτης επί τιμή: Ο Μπλερ έθεσε όρο στην Παλαιστινιακή Αρχή να… αλλάξει όνομα, μέσα στα σχολικά της βιβλία",
-      "normalized_title": "ΒΡΕΤΑΝΟΣ ΔΙΠΛΩΜΑΤΗΣ ΕΠΙ ΤΙΜΗ: Ο ΜΠΛΕΡ ΕΘΕΣΕ ΟΡΟ ΣΤΗΝ ΠΑΛΑΙΣΤΙΝΙΑΚΗ ΑΡΧΗ ΝΑ… ΑΛΛΑΞΕΙ ΟΝΟΜΑ, ΜΕΣΑ ΣΤΑ ΣΧΟΛΙΚΑ ΤΗΣ ΒΙΒΛΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1460045/sintiki-serron-erotisi-papadaki-stin-eyrovoyli-gia-tis-synthikes-diaviosis/",
+      "title": "Σιντική: Ερώτηση Παπαδάκη στην Ευρωβουλή για τις συνθήκες διαβίωσης των προσφύγων",
+      "normalized_title": "ΣΙΝΤΙΚΗ: ΕΡΩΤΗΣΗ ΠΑΠΑΔΑΚΗ ΣΤΗΝ ΕΥΡΩΒΟΥΛΗ ΓΙΑ ΤΙΣ ΣΥΝΘΗΚΕΣ ΔΙΑΒΙΩΣΗΣ ΤΩΝ ΠΡΟΣΦΥΓΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1460037/vretanos-diplomatis-epi-timi-o-mpler-ethese-oro-stin-palaistiniaki-arhi-na-allaxei-onoma-mesa-sta-sholika-tis-vivlia/"
+        "https://www.efsyn.gr/politiki/1460045/sintiki-serron-erotisi-papadaki-stin-eyrovoyli-gia-tis-synthikes-diaviosis/",
+        "https://www.efsyn.gr/athlitismos/1460042/nikiforo-podariko-toy-panathinaikoy-stin-league-phase/",
+        "https://www.efsyn.gr/athlitismos/1460040/sf-paok-thyra-4-se-savvidi-orise-mia-logiki-timi-polisis-gia-tin-pae-kai-fyge-san-filos/"
       ],
-      "seen_at_utc": "2026-09-03T20:30:07.250329+00:00"
+      "seen_at_utc": "2026-09-03T20:51:09.003935+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/03/go-fun/rintlei-skot-xreose-ontos-to-fiasko-tou-gladiator-2-ston-oxi-arketa-arrenopo-pol-meskal/",
-      "title": "Ρίντλεϊ Σκοτ: Χρέωσε όντως το φιάσκο του Gladiator 2 στον «όχι αρκετά αρρενωπό» Πολ Μέσκαλ;",
-      "normalized_title": "ΡΙΝΤΛΕΙ ΣΚΟΤ: ΧΡΕΩΣΕ ΟΝΤΩΣ ΤΟ ΦΙΑΣΚΟ ΤΟΥ GLADIATOR 2 ΣΤΟΝ «ΟΧΙ ΑΡΚΕΤΑ ΑΡΡΕΝΩΠΟ» ΠΟΛ ΜΕΣΚΑΛ;",
+      "url": "https://www.in.gr/2026/09/03/sports/basketball/apotheosi-gia-mpartzoka-kai-tomits-stin-taytoxroni-afiksi-olympiakou-kai-erythrou-astera-stin-kriti/",
+      "title": "Αποθέωση για Μπαρτζώκα και Τόμιτς στην ταυτόχρονη άφιξη Ολυμπιακού και Ερυθρού Αστέρα στην Κρήτη",
+      "normalized_title": "ΑΠΟΘΕΩΣΗ ΓΙΑ ΜΠΑΡΤΖΩΚΑ ΚΑΙ ΤΟΜΙΤΣ ΣΤΗΝ ΤΑΥΤΟΧΡΟΝΗ ΑΦΙΞΗ ΟΛΥΜΠΙΑΚΟΥ ΚΑΙ ΕΡΥΘΡΟΥ ΑΣΤΕΡΑ ΣΤΗΝ ΚΡΗΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/03/go-fun/rintlei-skot-xreose-ontos-to-fiasko-tou-gladiator-2-ston-oxi-arketa-arrenopo-pol-meskal/",
-        "https://www.in.gr/2026/09/03/sports/football/thyra-4-se-savvidi-irthe-i-ora-na-fygeis-san-filos-pic/"
+        "https://www.in.gr/2026/09/03/sports/basketball/apotheosi-gia-mpartzoka-kai-tomits-stin-taytoxroni-afiksi-olympiakou-kai-erythrou-astera-stin-kriti/",
+        "https://www.in.gr/2026/09/03/world/i-paradoksi-symmaxia-uber-syndikaton-apenanti-sta-robotaxi/",
+        "https://www.in.gr/2026/09/03/world/ipa-kokkino-xali-gia-ton-si-mikro-kalathi-oi-kinezoi/"
       ],
-      "seen_at_utc": "2026-09-03T20:30:07.250270+00:00"
+      "seen_at_utc": "2026-09-03T20:51:09.003891+00:00"
     }
   },
-  "updated_at_utc": "2026-09-03T20:30:07.250449+00:00"
+  "updated_at_utc": "2026-09-03T20:51:09.004008+00:00"
 }
