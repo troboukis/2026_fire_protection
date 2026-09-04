@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564438343/to-megalytero-kratiko-ependytiko-tameio-schediazei-na-xefortothei-amerikanika-omologa/",
-      "title": "Το μεγαλύτερο κρατικό επενδυτικό ταμείο σχεδιάζει να «ξεφορτωθεί» αμερικανικά ομόλογα",
-      "normalized_title": "ΤΟ ΜΕΓΑΛΥΤΕΡΟ ΚΡΑΤΙΚΟ ΕΠΕΝΔΥΤΙΚΟ ΤΑΜΕΙΟ ΣΧΕΔΙΑΖΕΙ ΝΑ «ΞΕΦΟΡΤΩΘΕΙ» ΑΜΕΡΙΚΑΝΙΚΑ ΟΜΟΛΟΓΑ",
+      "url": "https://www.kathimerini.gr/society/564438469/fotia-tora-stoys-pentagioys-fokidas/",
+      "title": "Φωτιά τώρα στους Πενταγιούς Φωκίδας",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟΥΣ ΠΕΝΤΑΓΙΟΥΣ ΦΩΚΙΔΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564438343/to-megalytero-kratiko-ependytiko-tameio-schediazei-na-xefortothei-amerikanika-omologa/"
+        "https://www.kathimerini.gr/society/564438469/fotia-tora-stoys-pentagioys-fokidas/",
+        "https://www.kathimerini.gr/visual/podcasts/564438388/filia-pyra-ta-didagmata-ton-polemon-se-oykrania-kai-mesi-anatoli/",
+        "https://www.kathimerini.gr/society/564438409/fotia-sto-xiromero-aitoloakarnanias-sti-machi-7-enaeria/"
       ],
-      "seen_at_utc": "2026-09-04T12:30:31.529508+00:00"
+      "seen_at_utc": "2026-09-04T12:51:31.196007+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874023/fotia-tora-stous-pedagious-fokidas-sikothikan-duo-enaeria/?utm_source=rss",
-      "title": "Φωτιά τώρα στους Πενταγιούς Φωκίδας, σηκώθηκαν δύο εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟΥΣ ΠΕΝΤΑΓΙΟΥΣ ΦΩΚΙΔΑΣ, ΣΗΚΩΘΗΚΑΝ ΔΥΟ ΕΝΑΕΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1874027/koini-askisi-ereunas-kai-diasosis-elladas-kuprou-stin-kupriaki-aoz/?utm_source=rss",
+      "title": "Κοινή άσκηση έρευνας και διάσωσης Ελλάδας - Κύπρου στην κυπριακή ΑΟΖ",
+      "normalized_title": "ΚΟΙΝΗ ΑΣΚΗΣΗ ΕΡΕΥΝΑΣ ΚΑΙ ΔΙΑΣΩΣΗΣ ΕΛΛΑΔΑΣ - ΚΥΠΡΟΥ ΣΤΗΝ ΚΥΠΡΙΑΚΗ ΑΟΖ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874023/fotia-tora-stous-pedagious-fokidas-sikothikan-duo-enaeria/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874027/koini-askisi-ereunas-kai-diasosis-elladas-kuprou-stin-kupriaki-aoz/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874025/pethane-i-mitera-tis-euis-gatidou-pou-dolofonithike-me-104-mahairies-to-1997/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T12:30:31.529649+00:00"
+      "seen_at_utc": "2026-09-04T12:51:31.196161+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460332/fotia-se-agrotodasiki-ektasi-sto-vartholomio-ileias-epiheirei-ena-elikoptero/",
-      "title": "Φωτιά σε αγροτοδασική έκταση στο Βαρθολομιό Ηλείας – Επιχειρεί ένα ελικόπτερο",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΒΑΡΘΟΛΟΜΙΟ ΗΛΕΙΑΣ – ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
+      "url": "https://www.efsyn.gr/epistimi/1460344/sminos-anexelegkton-praktoron-tis-openai-katelave-germaniki-istoselida-kai-ti-metetrepse-se-pinaka-anakoinoseon/",
+      "title": "Σμήνος ανεξέλεγκτων πρακτόρων της OpenAI κατέλαβε γερμανική ιστοσελίδα και τη μετέτρεψε σε «πίνακα ανακοινώσεων»",
+      "normalized_title": "ΣΜΗΝΟΣ ΑΝΕΞΕΛΕΓΚΤΩΝ ΠΡΑΚΤΟΡΩΝ ΤΗΣ OPENAI ΚΑΤΕΛΑΒΕ ΓΕΡΜΑΝΙΚΗ ΙΣΤΟΣΕΛΙΔΑ ΚΑΙ ΤΗ ΜΕΤΕΤΡΕΨΕ ΣΕ «ΠΙΝΑΚΑ ΑΝΑΚΟΙΝΩΣΕΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460332/fotia-se-agrotodasiki-ektasi-sto-vartholomio-ileias-epiheirei-ena-elikoptero/",
-        "https://www.efsyn.gr/ellada/1460318/sfodro-trohaio-stin-ilioypoli-paraviase-stop-kai-esteile-to-taxi-stin-ayli-diamerismatos-eikones/",
-        "https://www.efsyn.gr/ellada/1460322/pyrkagia-sto-xiromero-aitoloakarnanias-epiheiroyn-epta-enaeria-mesa/"
+        "https://www.efsyn.gr/epistimi/1460344/sminos-anexelegkton-praktoron-tis-openai-katelave-germaniki-istoselida-kai-ti-metetrepse-se-pinaka-anakoinoseon/",
+        "https://www.efsyn.gr/oikonomia/1460347/alexandros-exarhoy-ethniko-zitima-o-kathetos-diadromos/",
+        "https://www.efsyn.gr/politiki/1460341/m-salmas-sti-naytemporiki-vathia-politikes-oi-syzitiseis-mas-me-ant-samara-symfonoyme-sto-90/"
       ],
-      "seen_at_utc": "2026-09-04T12:30:31.529624+00:00"
+      "seen_at_utc": "2026-09-04T12:51:31.196126+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/in-science/ai/o-tramp-etoimazei-rythmistiko-plaisio-gia-tin-ai-o-zakermpergk-antidra/",
-      "title": "Ο Τραμπ ετοιμάζει ρυθμιστικό πλαίσιο για την ΑΙ, ο Ζάκερμπεργκ αντιδρά",
-      "normalized_title": "Ο ΤΡΑΜΠ ΕΤΟΙΜΑΖΕΙ ΡΥΘΜΙΣΤΙΚΟ ΠΛΑΙΣΙΟ ΓΙΑ ΤΗΝ ΑΙ, Ο ΖΑΚΕΡΜΠΕΡΓΚ ΑΝΤΙΔΡΑ",
+      "url": "https://www.in.gr/2026/09/04/world/taksideyete-stin-eyropi-oi-synoriakoi-elegxoi-allazoun-apo-tis-6-septemvriou/",
+      "title": "Ταξιδεύετε στην Ευρώπη; Οι συνοριακοί έλεγχοι αλλάζουν από τις 6 Σεπτεμβρίου",
+      "normalized_title": "ΤΑΞΙΔΕΥΕΤΕ ΣΤΗΝ ΕΥΡΩΠΗ; ΟΙ ΣΥΝΟΡΙΑΚΟΙ ΕΛΕΓΧΟΙ ΑΛΛΑΖΟΥΝ ΑΠΟ ΤΙΣ 6 ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/in-science/ai/o-tramp-etoimazei-rythmistiko-plaisio-gia-tin-ai-o-zakermpergk-antidra/",
-        "https://www.in.gr/2026/09/04/sports/football/nations-league-sto-panthessaliko-to-ellada-servia/"
+        "https://www.in.gr/2026/09/04/world/taksideyete-stin-eyropi-oi-synoriakoi-elegxoi-allazoun-apo-tis-6-septemvriou/",
+        "https://www.in.gr/2026/09/04/politics/diplomatia/ot-forum-90i-deth-i-ellada-eksoplizetai-eksypna-leei-o-gerapetritis/",
+        "https://www.in.gr/2026/09/04/life/music/giannis-malamas-nerom-mia-mousiki-synergasia-me-oraia-lathi/",
+        "https://www.in.gr/2026/09/04/in-science/perivallon-b-science/pyrkagies-eyropi-apo-tin-ellada-mexri-to-velgio-pano-apo-5-ekat-stremmata-eginan-staxti-to-fetino-kalokairi/"
       ],
-      "seen_at_utc": "2026-09-04T12:30:31.529586+00:00"
+      "seen_at_utc": "2026-09-04T12:51:31.196054+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T12:30:31.529756+00:00"
+  "updated_at_utc": "2026-09-04T12:51:31.196234+00:00"
 }
