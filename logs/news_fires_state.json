@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564439834/tramp-i-rosia-den-skopeyei-na-epitethei-sto-nato/",
-      "title": "Τραμπ: Η Ρωσία δεν σκοπεύει να επιτεθεί στο ΝΑΤΟ",
-      "normalized_title": "ΤΡΑΜΠ: Η ΡΩΣΙΑ ΔΕΝ ΣΚΟΠΕΥΕΙ ΝΑ ΕΠΙΤΕΘΕΙ ΣΤΟ ΝΑΤΟ",
+      "url": "https://www.kathimerini.gr/world/564438979/reuters-i-ellada-kai-alles-4-chores-schediazoyn-kentra-apelaseon-ektos-e-e/",
+      "title": "Reuters: Η Ελλάδα και άλλες 4 χώρες «σχεδιάζουν» κέντρα απελάσεων εκτός E.E.",
+      "normalized_title": "REUTERS: Η ΕΛΛΑΔΑ ΚΑΙ ΑΛΛΕΣ 4 ΧΩΡΕΣ «ΣΧΕΔΙΑΖΟΥΝ» ΚΕΝΤΡΑ ΑΠΕΛΑΣΕΩΝ ΕΚΤΟΣ E.E.",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564439834/tramp-i-rosia-den-skopeyei-na-epitethei-sto-nato/",
-        "https://www.kathimerini.gr/society/564436948/eyalota-paidia-se-adranes-kratos/"
+        "https://www.kathimerini.gr/world/564438979/reuters-i-ellada-kai-alles-4-chores-schediazoyn-kentra-apelaseon-ektos-e-e/",
+        "https://www.kathimerini.gr/athletics/564439855/o-karalis-katektise-to-proto-diamanti-tis-karieras-toy/",
+        "https://www.kathimerini.gr/world/564438847/rogmes-sto-germaniko-anachoma-apenanti-stin-akrodexia/"
       ],
-      "seen_at_utc": "2026-09-04T19:30:01.924978+00:00"
+      "seen_at_utc": "2026-09-04T19:51:07.811506+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874209/sunelifthi-38hroni-gia-tin-purkagia-sti-saronida-xekinise-apo-anaflexi-autokinitou/?utm_source=rss",
-      "title": "Συνελήφθη 38χρονη για την πυρκαγιά στη Σαρωνίδα, ξεκίνησε από ανάφλεξη αυτοκινήτου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 38ΧΡΟΝΗ ΓΙΑ ΤΗΝ ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΑΡΩΝΙΔΑ, ΞΕΚΙΝΗΣΕ ΑΠΟ ΑΝΑΦΛΕΞΗ ΑΥΤΟΚΙΝΗΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1874226/tragodia-ston-dionuso-autoktonise-psaltis-mesa-se-kodeiner-se-auli-ekklisias/?utm_source=rss",
+      "title": "Τραγωδία στον Διόνυσο: Αυτοκτόνησε ψάλτης μέσα σε κοντέινερ σε αυλή εκκλησίας",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΟΝ ΔΙΟΝΥΣΟ: ΑΥΤΟΚΤΟΝΗΣΕ ΨΑΛΤΗΣ ΜΕΣΑ ΣΕ ΚΟΝΤΕΙΝΕΡ ΣΕ ΑΥΛΗ ΕΚΚΛΗΣΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874209/sunelifthi-38hroni-gia-tin-purkagia-sti-saronida-xekinise-apo-anaflexi-autokinitou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874226/tragodia-ston-dionuso-autoktonise-psaltis-mesa-se-kodeiner-se-auli-ekklisias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874222/tragodia-sti-kaso-nekri-65hroni-pou-epese-me-to-autokinito-tis-sti-thalassa-o-suzugos-tis-anasurthike-zodanos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T18:51:13.899706+00:00"
+      "seen_at_utc": "2026-09-04T19:51:07.811646+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460679/o-mitsotakis-stirizei-zaharaki-ston-galazio-emfylio-gia-to-anyparkto-woke-thema-se-vivlia-dimotikoy/",
-      "title": "Ο Μητσοτάκης στηρίζει… Ζαχαράκη στον «γαλάζιο» εμφύλιο για το ανύπαρκτο «woke» θέμα σε βιβλία δημοτικού",
-      "normalized_title": "Ο ΜΗΤΣΟΤΑΚΗΣ ΣΤΗΡΙΖΕΙ… ΖΑΧΑΡΑΚΗ ΣΤΟΝ «ΓΑΛΑΖΙΟ» ΕΜΦΥΛΙΟ ΓΙΑ ΤΟ ΑΝΥΠΑΡΚΤΟ «WOKE» ΘΕΜΑ ΣΕ ΒΙΒΛΙΑ ΔΗΜΟΤΙΚΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1460691/kimperli-gkilfoil-o-marko-roympio-tha-erthei-stin-ellada-tis-epomenes-evdomades/",
+      "title": "Κίμπερλι Γκίλφοϊλ: Ο Μάρκο Ρούμπιο θα έρθει στην Ελλάδα τις επόμενες εβδομάδες",
+      "normalized_title": "ΚΙΜΠΕΡΛΙ ΓΚΙΛΦΟΙΛ: Ο ΜΑΡΚΟ ΡΟΥΜΠΙΟ ΘΑ ΕΡΘΕΙ ΣΤΗΝ ΕΛΛΑΔΑ ΤΙΣ ΕΠΟΜΕΝΕΣ ΕΒΔΟΜΑΔΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460679/o-mitsotakis-stirizei-zaharaki-ston-galazio-emfylio-gia-to-anyparkto-woke-thema-se-vivlia-dimotikoy/"
+        "https://www.efsyn.gr/politiki/1460691/kimperli-gkilfoil-o-marko-roympio-tha-erthei-stin-ellada-tis-epomenes-evdomades/",
+        "https://www.efsyn.gr/politiki/1460692/mitsotakis-den-eho-apofasisei-akomi-tin-akrivi-imerominia-ton-eklogon/"
       ],
-      "seen_at_utc": "2026-09-04T19:30:01.925047+00:00"
+      "seen_at_utc": "2026-09-04T19:51:07.811612+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/sports/othersports/diamond-league-vryksellon-o-karalis-katektise-to-proto-tou-diamanti-den-agonistike-o-ntouplantis-vids/",
-      "title": "Ο Καραλής κατέκτησε το πρώτο του «διαμάντι» στις Βρυξέλλες! - Δεν αγωνίστηκε ο Ντουπλάντις (vids)",
-      "normalized_title": "Ο ΚΑΡΑΛΗΣ ΚΑΤΕΚΤΗΣΕ ΤΟ ΠΡΩΤΟ ΤΟΥ «ΔΙΑΜΑΝΤΙ» ΣΤΙΣ ΒΡΥΞΕΛΛΕΣ! - ΔΕΝ ΑΓΩΝΙΣΤΗΚΕ Ο ΝΤΟΥΠΛΑΝΤΙΣ (VIDS)",
+      "url": "https://www.in.gr/2026/09/04/world/panigyrizei-gia-tin-apodoxi-apo-ton-kosmo-i-meloni-gia-xronia-mas-apokalousan-ekstremistes/",
+      "title": "Πανηγυρίζει «για την αποδοχή» από τον κόσμο η Μελόνι – «Για χρόνια μας αποκαλούσαν εξτρεμιστές»",
+      "normalized_title": "ΠΑΝΗΓΥΡΙΖΕΙ «ΓΙΑ ΤΗΝ ΑΠΟΔΟΧΗ» ΑΠΟ ΤΟΝ ΚΟΣΜΟ Η ΜΕΛΟΝΙ – «ΓΙΑ ΧΡΟΝΙΑ ΜΑΣ ΑΠΟΚΑΛΟΥΣΑΝ ΕΞΤΡΕΜΙΣΤΕΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/sports/othersports/diamond-league-vryksellon-o-karalis-katektise-to-proto-tou-diamanti-den-agonistike-o-ntouplantis-vids/",
-        "https://www.in.gr/2026/09/04/sports/football/smailovits-enopsei-volou-tha-einai-ena-skliro-paixnidi-na-paroume-tous-treis-vathmous/",
-        "https://www.in.gr/2026/09/04/go-fun/fizz/den-ton-enoiaze-i-gnomi-ton-allon-o-mpraian-ostin-gkrin-apokalyptei-agnostes-istories-me-ton-louk-peri/"
+        "https://www.in.gr/2026/09/04/world/panigyrizei-gia-tin-apodoxi-apo-ton-kosmo-i-meloni-gia-xronia-mas-apokalousan-ekstremistes/",
+        "https://www.in.gr/2026/09/04/world/ekthesi-tou-oie-kanei-logo-gia-pliri-ektopismo-33-000-palaistinion-apo-ti-dytiki-oxthi/",
+        "https://www.in.gr/2026/09/04/world/i-norvigia-tha-voithisei-tous-rosous-egklovismenous-meta-tin-katasxesi-enos-krouazieroploiou/"
       ],
-      "seen_at_utc": "2026-09-04T19:30:01.925016+00:00"
+      "seen_at_utc": "2026-09-04T19:51:07.811568+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T19:30:01.925106+00:00"
+  "updated_at_utc": "2026-09-04T19:51:07.811725+00:00"
 }
