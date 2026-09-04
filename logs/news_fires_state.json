@@ -1,19 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564437476/nepal-dyo-anthropoi-anasyrthikan-zontanoi-ennea-imeres-meta-tis-fonikes-plimmyres/",
-      "title": "Νεπάλ: Δύο άνθρωποι ανασύρθηκαν ζωντανοί εννέα ημέρες μετά τις φονικές πλημμύρες",
-      "normalized_title": "ΝΕΠΑΛ: ΔΥΟ ΑΝΘΡΩΠΟΙ ΑΝΑΣΥΡΘΗΚΑΝ ΖΩΝΤΑΝΟΙ ΕΝΝΕΑ ΗΜΕΡΕΣ ΜΕΤΑ ΤΙΣ ΦΟΝΙΚΕΣ ΠΛΗΜΜΥΡΕΣ",
+      "url": "https://www.kathimerini.gr/society/564437497/kairos-voriades-eos-7-mpofor-kai-red-code-gia-foties-poy-tha-vrexei-simera/",
+      "title": "Καιρός: Βοριάδες έως 7 μποφόρ και Red Code για φωτιές – Πού θα βρέξει σήμερα",
+      "normalized_title": "ΚΑΙΡΟΣ: ΒΟΡΙΑΔΕΣ ΕΩΣ 7 ΜΠΟΦΟΡ ΚΑΙ RED CODE ΓΙΑ ΦΩΤΙΕΣ – ΠΟΥ ΘΑ ΒΡΕΞΕΙ ΣΗΜΕΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564437476/nepal-dyo-anthropoi-anasyrthikan-zontanoi-ennea-imeres-meta-tis-fonikes-plimmyres/",
-        "https://www.kathimerini.gr/politics/parties/564436924/pasok-dimetopos-apo-androylaki/",
-        "https://www.kathimerini.gr/world/564436975/skoyriase-meta-10-mines-sti-thalassa/",
-        "https://www.kathimerini.gr/world/564437017/synagermos-gia-to-soyper-el-ninio/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564436921/aystiro-diavima-pros-tin-agkyra-gia-ta-parka/",
-        "https://www.kathimerini.gr/society/564436945/kypseli-sto-katofli-toy-anakriti-oi-treis-katigoroymenoi/",
-        "https://www.kathimerini.gr/visual/infographics/564436981/dimoskopiseis-kolafos-gia-tramp/"
+        "https://www.kathimerini.gr/society/564437497/kairos-voriades-eos-7-mpofor-kai-red-code-gia-foties-poy-tha-vrexei-simera/",
+        "https://www.kathimerini.gr/economy/international/564437383/mia-teleytaia-ayxisi-epitokion-apo-ekt-vlepoyn-oikonomologoi/",
+        "https://www.kathimerini.gr/economy/international/564437380/i-eyropi-odigei-se-rali-tis-times-toy-aerioy/",
+        "https://www.kathimerini.gr/world/564437449/tramp-esosa-ti-vretania-apo-pyriniki-epithesi-me-ton-polemo-vans-den-einai-polemos-i-sygkroysi-sto-iran/"
       ],
-      "seen_at_utc": "2026-09-04T04:17:09.333117+00:00"
+      "seen_at_utc": "2026-09-04T04:30:13.790334+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1274,54 +1271,24 @@
       "seen_at_utc": "2026-09-03T21:20:12.407902+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1460070/vathainei-ki-allo-i-krisi-metaxy-germanias-rosias-sto-epikentro-i-epithesi-me-drone-sti-lipsia-kai-ta-antipoina/",
-      "title": "Βαθαίνει κι άλλο η κρίση μεταξύ Γερμανίας – Ρωσίας: Στο επίκεντρο η επίθεση με drone στη Λιψία και τα αντίποινα",
-      "normalized_title": "ΒΑΘΑΙΝΕΙ ΚΙ ΑΛΛΟ Η ΚΡΙΣΗ ΜΕΤΑΞΥ ΓΕΡΜΑΝΙΑΣ – ΡΩΣΙΑΣ: ΣΤΟ ΕΠΙΚΕΝΤΡΟ Η ΕΠΙΘΕΣΗ ΜΕ DRONE ΣΤΗ ΛΙΨΙΑ ΚΑΙ ΤΑ ΑΝΤΙΠΟΙΝΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1460075/ti-den-eide-o-oynai-varys-o-panathinaikos-lygise-me-1-0-ti-niki-voloy-sto-oaka/",
+      "title": "Τι (δεν) είδε ο Ουναΐ: Βαρύς ο Παναθηναϊκός, λύγισε με 1-0 τη Νίκη Βόλου στο ΟΑΚΑ",
+      "normalized_title": "ΤΙ (ΔΕΝ) ΕΙΔΕ Ο ΟΥΝΑΙ: ΒΑΡΥΣ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ, ΛΥΓΙΣΕ ΜΕ 1-0 ΤΗ ΝΙΚΗ ΒΟΛΟΥ ΣΤΟ ΟΑΚΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1460070/vathainei-ki-allo-i-krisi-metaxy-germanias-rosias-sto-epikentro-i-epithesi-me-drone-sti-lipsia-kai-ta-antipoina/",
-        "https://www.efsyn.gr/politiki/1460065/diavima-gia-tis-toyrkikes-kiniseis-sto-aigaio-pos-epireazei-to-klima-sta-ellinotoyrkika-i-episkepsi-kalin-stin-athina/",
-        "https://www.efsyn.gr/ellada/1460063/kypseli-oi-antifaseis-ton-goneon-ligo-prin-ton-anakriti-ti-edeixe-to-dna-gia-to-nekro-vrefos/",
-        "https://www.efsyn.gr/politiki/1460060/pasok-minyma-politikis-allagis-me-epithesi-se-mitsotaki-kai-tsipra/",
-        "https://www.efsyn.gr/protoselida/poso-kostizei-poioi-ofeloyntai-pos-tha-ylopoiithei/",
-        "https://www.efsyn.gr/nisides/1460031/diakopi-stin-akri-toy-kosmoy/",
-        "https://www.efsyn.gr/nisides/1460026/ypo-skian-stoma-almyro/",
-        "https://www.efsyn.gr/ellada/1460054/eortologio-poioi-giortazoyn-simera-4-septemvrioy/"
+        "https://www.efsyn.gr/athlitismos/1460075/ti-den-eide-o-oynai-varys-o-panathinaikos-lygise-me-1-0-ti-niki-voloy-sto-oaka/",
+        "https://www.efsyn.gr/ellada/1460073/den-tha-hasoyn-oyte-eyro-apanta-to-iky-meta-ton-salo-gia-toys-aplirotoys-ypotrofoys/"
       ],
-      "seen_at_utc": "2026-09-04T04:17:09.333262+00:00"
+      "seen_at_utc": "2026-09-04T04:30:13.790396+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/world/argentini-o-milei-anakoinonei-pio-sklira-metra-gia-tis-malvines-nisous-pataei-sta-prosfata-legomena-tramp/",
-      "title": "Ο Μιλέι ανακοινώνει πιο σκληρά μέτρα για τις Μαλβίνες νήσους - «Πατάει» στα πρόσφατα λεγόμενα Τραμπ",
-      "normalized_title": "Ο ΜΙΛΕΙ ΑΝΑΚΟΙΝΩΝΕΙ ΠΙΟ ΣΚΛΗΡΑ ΜΕΤΡΑ ΓΙΑ ΤΙΣ ΜΑΛΒΙΝΕΣ ΝΗΣΟΥΣ - «ΠΑΤΑΕΙ» ΣΤΑ ΠΡΟΣΦΑΤΑ ΛΕΓΟΜΕΝΑ ΤΡΑΜΠ",
+      "url": "https://www.in.gr/2026/09/04/economy/o-xronos-tou-ergasiakou-viou-stin-ellada-travaei-tin-anifora-poso-ayksithike-ta-teleytaia-deka-eti/",
+      "title": "Ο χρόνος του εργασιακού βίου στην Ελλάδα τραβάει την… ανηφόρα – Πόσο αυξήθηκε τα τελευταία δέκα έτη",
+      "normalized_title": "Ο ΧΡΟΝΟΣ ΤΟΥ ΕΡΓΑΣΙΑΚΟΥ ΒΙΟΥ ΣΤΗΝ ΕΛΛΑΔΑ ΤΡΑΒΑΕΙ ΤΗΝ… ΑΝΗΦΟΡΑ – ΠΟΣΟ ΑΥΞΗΘΗΚΕ ΤΑ ΤΕΛΕΥΤΑΙΑ ΔΕΚΑ ΕΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/world/argentini-o-milei-anakoinonei-pio-sklira-metra-gia-tis-malvines-nisous-pataei-sta-prosfata-legomena-tramp/",
-        "https://www.in.gr/2026/09/04/health/meiomeni-xrimatodotisi-kai-perissoteres-apoxoriseis-apo-proslipseis-sto-esy/",
-        "https://www.in.gr/2026/09/04/world/i-pagkosmia-katataksi-tis-gennaiodorias-poioi-vazoun-pio-vathia-to-xeri-stin-tsepi/",
-        "https://www.in.gr/2026/09/04/life/geysi/syntagi-gemistes-piperies/",
-        "https://www.in.gr/2026/09/04/world/ipa-o-tramp-diorise-ypiresiako-antikatastati-tou-yfypourgou-armodiou-gia-ton-strato-ksiras/",
-        "https://www.in.gr/2026/09/04/plus/vita/askisi-to-mystiko-gia-na-min-pareis-ksana-ta-kila-pou-exases/",
-        "https://www.in.gr/2026/09/04/greece/kairos-pou-tha-xreiastoume-omprela-oi-thermokrasies-paramenoun-ypsiles-eos-6-mpofor-sto-aigaio/",
-        "https://www.in.gr/2026/09/04/go-fun/fizz/filippos-nte-gkres-nina-flor-goneis-gia-proti-fora-meso-parenthetis-miteras-o-erotas-o-gamos-kai-i-tiara/",
-        "https://www.in.gr/2026/09/04/plus/vita/exei-ginei-to-kinito-proektasi-tou-xeriou-mas-mia-meleti-leei-tin-alitheia/",
-        "https://www.in.gr/2026/09/04/world/eyropi-rosia-ta-xaraktiristika-tou-neou-psyxrou-polemou/",
-        "https://www.in.gr/2026/09/04/economy/oikonomikes-eidiseis/ereyna-energeia-kaysima-kai-protes-yles-pyrodotoun-anatimiseis/",
-        "https://www.in.gr/2026/09/04/world/poios-einai-o-kalyteros-amerikanos-proedros-olon-ton-epoxon-gia-ton-tramp-einai-o-tramp/",
-        "https://www.in.gr/2026/09/04/economy/oikonomikes-eidiseis/asfalistikes-eisfores-to-sxedio-gia-to-neo-psalidi-apo-to-2027/",
-        "https://www.in.gr/2026/09/04/health/i-epoxiki-gripi-i-i-covid-19-mas-apeilei-perissotero/",
-        "https://www.in.gr/2026/09/04/in-science/ai/h-megali-omogenopoiisi-mipos-i-ai-mas-kanei-na-skeftomaste-oloi-to-idio/",
-        "https://www.in.gr/2026/09/04/go-fun/fizz/tzortz-maikl-poia-kithara-tou-poleitai-se-dimoprasia/",
-        "https://www.in.gr/2026/09/04/world/diafthora-stin-kyvernisi-ton-ipa-to-provlima-exei-perasei-se-alli-pista-dimoskopiseis-katapeltis-gia-tramp/",
-        "https://www.in.gr/2026/09/04/world/o-tramp-sozei-ti-vretania-apo-ta-pyrinika-tou-iran-kai-epitithetai-ston-ryparo-kan/",
-        "https://www.in.gr/2026/09/04/world/vrazilia-meionetai-to-dimoskopiko-provadisma-tou-loula-enanti-tou-giou-mpolsonaro/",
-        "https://www.in.gr/2026/09/04/world/iran-den-yparxei-polemos-leei-o-vans-oute-vlepei-idiaitera-provlimata-sta-stena-tou-ormouz/",
-        "https://www.in.gr/2026/09/04/world/kykloforise-kai-eksantlithike-o-xrysos-tramp-tou-enos-dolariou/",
-        "https://www.in.gr/2026/09/04/world/xili-o-akrodeksios-proedros-tis-argentinis-zitaei-na-organothoun-gia-tin-antimetopisi-tis-aristeras/",
-        "https://www.in.gr/2026/09/04/world/kolomvia-dikastirio-apagoreyei-tous-vomvardismous-kata-ton-antarton-an-einai-parontes-anilikoi/",
-        "https://www.in.gr/2026/09/04/world/i-kyvernisi-tramp-zita-apo-to-anotato-dikastirio-tin-eksousia-gia-aystirotero-elegxo-ton-epistolikon-psifon/",
-        "https://www.in.gr/2026/09/04/world/giati-i-kina-den-fovatai-tis-ipa-gia-tis-deyterogeneis-kyroseis-sto-iran-o-asos-sto-maniki/"
+        "https://www.in.gr/2026/09/04/economy/o-xronos-tou-ergasiakou-viou-stin-ellada-travaei-tin-anifora-poso-ayksithike-ta-teleytaia-deka-eti/"
       ],
-      "seen_at_utc": "2026-09-04T04:17:09.333186+00:00"
+      "seen_at_utc": "2026-09-04T04:30:13.790377+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T04:17:09.333357+00:00"
+  "updated_at_utc": "2026-09-04T04:30:13.790463+00:00"
 }
