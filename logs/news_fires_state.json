@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564438178/keryneia-anasyrthikan-akomi-dyo-soroi-apo-to-nayagio-stoys-12-anerchontai-oi-nekroi/",
-      "title": "Κερύνεια: Ανασύρθηκαν ακόμη δύο σοροί από το ναυάγιο – Στους 12 ανέρχονται οι νεκροί",
-      "normalized_title": "ΚΕΡΥΝΕΙΑ: ΑΝΑΣΥΡΘΗΚΑΝ ΑΚΟΜΗ ΔΥΟ ΣΟΡΟΙ ΑΠΟ ΤΟ ΝΑΥΑΓΙΟ – ΣΤΟΥΣ 12 ΑΝΕΡΧΟΝΤΑΙ ΟΙ ΝΕΚΡΟΙ",
+      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564436870/anargyreios-kai-korgialeneios-scholi-enas-aionas-zois-poy-xypna-mesa-apo-tin-techni/",
+      "title": "Αναργύρειος και Κοργιαλένειος Σχολή. Ενας αιώνας ζωής που ξυπνά μέσα από την τέχνη",
+      "normalized_title": "ΑΝΑΡΓΥΡΕΙΟΣ ΚΑΙ ΚΟΡΓΙΑΛΕΝΕΙΟΣ ΣΧΟΛΗ. ΕΝΑΣ ΑΙΩΝΑΣ ΖΩΗΣ ΠΟΥ ΞΥΠΝΑ ΜΕΣΑ ΑΠΟ ΤΗΝ ΤΕΧΝΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564438178/keryneia-anasyrthikan-akomi-dyo-soroi-apo-to-nayagio-stoys-12-anerchontai-oi-nekroi/",
-        "https://www.kathimerini.gr/economy/local/564437266/choris-logariasmo/"
+        "https://www.kathimerini.gr/culture/athinaika-plus/564436870/anargyreios-kai-korgialeneios-scholi-enas-aionas-zois-poy-xypna-mesa-apo-tin-techni/",
+        "https://www.kathimerini.gr/culture/agenda/564438223/exodos-stin-athina-kai-ektos-tin-paraskeyi-4-9-afrojack-kai-phaxe/",
+        "https://www.kathimerini.gr/society/564438217/opeka-apo-deytera-07-09-i-anadianomi-ton-adiatheton-deltion-koinonikoy-iamatikoy-ekdromikoy-toyrismoy/"
       ],
-      "seen_at_utc": "2026-09-04T10:30:05.587753+00:00"
+      "seen_at_utc": "2026-09-04T10:51:13.975707+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873928/fotia-tora-se-hamili-vlastisi-stin-euvoia-stin-periohi-agios-athanasios/?utm_source=rss",
-      "title": "Φωτιά τώρα σε χαμηλή βλάστηση στην Εύβοια, στην περιοχή Άγιος Αθανάσιος",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΧΑΜΗΛΗ ΒΛΑΣΤΗΣΗ ΣΤΗΝ ΕΥΒΟΙΑ, ΣΤΗΝ ΠΕΡΙΟΧΗ ΑΓΙΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1873939/sto-tmima-i-kori-kai-o-eggonos-tis-90hronis-pou-vrethike-tuligmeni-se-nailon-se-upogeio-spitiou-ston-marathona/?utm_source=rss",
+      "title": "Στο Τμήμα για να συλληφθούν η κόρη και ο εγγονός της 90χρονης στον Μαραθώνα - Η σορός βρέθηκε τυλιγμένη σε νάιλον στο υπόγειο",
+      "normalized_title": "ΣΤΟ ΤΜΗΜΑ ΓΙΑ ΝΑ ΣΥΛΛΗΦΘΟΥΝ Η ΚΟΡΗ ΚΑΙ Ο ΕΓΓΟΝΟΣ ΤΗΣ 90ΧΡΟΝΗΣ ΣΤΟΝ ΜΑΡΑΘΩΝΑ - Η ΣΟΡΟΣ ΒΡΕΘΗΚΕ ΤΥΛΙΓΜΕΝΗ ΣΕ ΝΑΙΛΟΝ ΣΤΟ ΥΠΟΓΕΙΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873928/fotia-tora-se-hamili-vlastisi-stin-euvoia-stin-periohi-agios-athanasios/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873939/sto-tmima-i-kori-kai-o-eggonos-tis-90hronis-pou-vrethike-tuligmeni-se-nailon-se-upogeio-spitiou-ston-marathona/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T10:17:36.755970+00:00"
+      "seen_at_utc": "2026-09-04T10:51:13.975809+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1460241/kremlino-paramenei-pithani-mia-dieythetisi-gia-tin-oykrania-den-epivevaionei-tin-episkepsi-goyitkof-kai-koysner/",
-      "title": "Κρεμλίνο: «Παραμένει πιθανή» μια διευθέτηση για την Ουκρανία – Δεν επιβεβαιώνει την επίσκεψη Γουίτκοφ και Κούσνερ",
-      "normalized_title": "ΚΡΕΜΛΙΝΟ: «ΠΑΡΑΜΕΝΕΙ ΠΙΘΑΝΗ» ΜΙΑ ΔΙΕΥΘΕΤΗΣΗ ΓΙΑ ΤΗΝ ΟΥΚΡΑΝΙΑ – ΔΕΝ ΕΠΙΒΕΒΑΙΩΝΕΙ ΤΗΝ ΕΠΙΣΚΕΨΗ ΓΟΥΙΤΚΟΦ ΚΑΙ ΚΟΥΣΝΕΡ",
+      "url": "https://www.efsyn.gr/ellada/1460252/ypodohi-tis-fregatas-kimon-me-ydatini-apsida-sto-limani-tis-soydas-vinteo-eikones/",
+      "title": "Υποδοχή της φρεγάτας Κίμων με «υδάτινη αψίδα» στο λιμάνι της Σούδας [βίντεο – εικόνες]",
+      "normalized_title": "ΥΠΟΔΟΧΗ ΤΗΣ ΦΡΕΓΑΤΑΣ ΚΙΜΩΝ ΜΕ «ΥΔΑΤΙΝΗ ΑΨΙΔΑ» ΣΤΟ ΛΙΜΑΝΙ ΤΗΣ ΣΟΥΔΑΣ [ΒΙΝΤΕΟ – ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1460241/kremlino-paramenei-pithani-mia-dieythetisi-gia-tin-oykrania-den-epivevaionei-tin-episkepsi-goyitkof-kai-koysner/",
-        "https://www.efsyn.gr/politiki/1460231/tsoykalas-nd-elliniki-aristeri-symparataxi-ehoyn-koini-politiki-se-megala-koinonika-zitimata/"
+        "https://www.efsyn.gr/ellada/1460252/ypodohi-tis-fregatas-kimon-me-ydatini-apsida-sto-limani-tis-soydas-vinteo-eikones/",
+        "https://www.efsyn.gr/ellada/1460244/eyvoia-dyo-foties-meta-apo-ptosi-keraynoy-ston-dimo-dirfyon-messapion/",
+        "https://www.efsyn.gr/kosmos/1460239/nayagio-stin-keryneia-anasyrthikan-akomi-dyo-soroi-stoys-12-oi-nekroi/"
       ],
-      "seen_at_utc": "2026-09-04T10:30:05.587854+00:00"
+      "seen_at_utc": "2026-09-04T10:51:13.975783+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/greece/panepistimio-patron-kathigitis-apagoreyei-gyalia-kata-tin-eksetastiki-an-den-proskomistei-iatriki-vevaiosi/",
-      "title": "Καθηγητής πανεπιστημίου απαγορεύει γυαλιά κατά την εξεταστική, αν δεν προσκομιστεί ιατρική βεβαίωση",
-      "normalized_title": "ΚΑΘΗΓΗΤΗΣ ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΑΠΑΓΟΡΕΥΕΙ ΓΥΑΛΙΑ ΚΑΤΑ ΤΗΝ ΕΞΕΤΑΣΤΙΚΗ, ΑΝ ΔΕΝ ΠΡΟΣΚΟΜΙΣΤΕΙ ΙΑΤΡΙΚΗ ΒΕΒΑΙΩΣΗ",
+      "url": "https://www.in.gr/2026/09/04/greece/igoumenitsa-apologeitai-o-29xronos-pou-paresyre-me-ix-ti-syntrofo-tou-meta-apo-kavga/",
+      "title": "Απολογείται ο 29χρονος που παρέσυρε με ΙΧ τη σύντροφό του μετά από καβγά",
+      "normalized_title": "ΑΠΟΛΟΓΕΙΤΑΙ Ο 29ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΕΣΥΡΕ ΜΕ ΙΧ ΤΗ ΣΥΝΤΡΟΦΟ ΤΟΥ ΜΕΤΑ ΑΠΟ ΚΑΒΓΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/greece/panepistimio-patron-kathigitis-apagoreyei-gyalia-kata-tin-eksetastiki-an-den-proskomistei-iatriki-vevaiosi/"
+        "https://www.in.gr/2026/09/04/greece/igoumenitsa-apologeitai-o-29xronos-pou-paresyre-me-ix-ti-syntrofo-tou-meta-apo-kavga/",
+        "https://www.in.gr/2026/09/04/politics/aftodioikisi/dimos-athinaion-savvato-5-septemvriou-syllegoume-sxolika-eidi-gia-osa-paidia-to-exoun-anagki/",
+        "https://www.in.gr/2026/09/04/sports/on-field/ena-thryliko-roster-etoimo-gia-megala-pragmata/",
+        "https://www.in.gr/2026/09/04/go-fun/san-nompel-alla-me-xioumor-aytoi-einai-nikites-ton-vraveion-ig-nobel/",
+        "https://www.in.gr/2026/09/04/world/israil-dilonei-oti-edraiose-ti-zoni-asfaleias-ston-notio-livano-me-tin-katalipsi-stratigikis-thesis/"
       ],
-      "seen_at_utc": "2026-09-04T10:30:05.587811+00:00"
+      "seen_at_utc": "2026-09-04T10:51:13.975756+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T10:30:05.587930+00:00"
+  "updated_at_utc": "2026-09-04T10:51:13.975896+00:00"
 }
