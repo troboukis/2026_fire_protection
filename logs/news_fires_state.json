@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564438793/ntoyplantis-karalis-apopse-i-monomachia-sta-ypsi/",
-      "title": "Ντουπλάντις – Καραλής: Απόψε η μονομαχία στα ύψη",
-      "normalized_title": "ΝΤΟΥΠΛΑΝΤΙΣ – ΚΑΡΑΛΗΣ: ΑΠΟΨΕ Η ΜΟΝΟΜΑΧΙΑ ΣΤΑ ΥΨΗ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564435763/to-spiti-toy-g-papanikolaoy-anoigei-tis-portes-toy-stin-k/",
+      "title": "Το σπίτι του Γ. Παπανικολάου ανοίγει τις πόρτες του στην «Κ»",
+      "normalized_title": "ΤΟ ΣΠΙΤΙ ΤΟΥ Γ. ΠΑΠΑΝΙΚΟΛΑΟΥ ΑΝΟΙΓΕΙ ΤΙΣ ΠΟΡΤΕΣ ΤΟΥ ΣΤΗΝ «Κ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564438793/ntoyplantis-karalis-apopse-i-monomachia-sta-ypsi/"
+        "https://www.kathimerini.gr/society/reportaz/564435763/to-spiti-toy-g-papanikolaoy-anoigei-tis-portes-toy-stin-k/",
+        "https://www.kathimerini.gr/economy/local/564437308/akinita-dimosioy-afantoi-oi-katapatites/",
+        "https://www.kathimerini.gr/society/564438829/pyrkagia-stin-ano-peraia-minyma-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/society/564438763/chania-anilikoi-xylokopisan-13chrono-toy-eichan-stisei-enedra/"
       ],
-      "seen_at_utc": "2026-09-04T15:30:12.693927+00:00"
+      "seen_at_utc": "2026-09-04T15:51:25.063819+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1273,28 @@
       "seen_at_utc": "2026-09-04T15:17:21.042486+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-kostas-grigoriadis-4-09-2026/",
-      "title": "Σκίτσο της Εφ.Συν. [Κ. Γρηγοριάδης, 4.09.2026]",
-      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Κ. ΓΡΗΓΟΡΙΑΔΗΣ, 4.09.2026]",
+      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-4-09-2026/",
+      "title": "Σκίτσο της Εφ.Συν. [Π. Ζερβός 4.09.2026]",
+      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Π. ΖΕΡΒΟΣ 4.09.2026]",
       "seen_urls": [
-        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-kostas-grigoriadis-4-09-2026/",
-        "https://www.efsyn.gr/ellada/1460484/fotia-stin-ano-peraia-thessalonikis-kaiei-konta-se-spitia-ihise-to-112/",
-        "https://www.efsyn.gr/stiles/1460482/to-pyrofani/"
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-4-09-2026/",
+        "https://www.efsyn.gr/life/1460496/kriti-sygkinei-i-helen-galerakis-tha-anevei-30-fores-ta-leyka-ori-gia-na-stirixei-karkinopathi-fili-tis/",
+        "https://www.efsyn.gr/ellada/1460498/hania-thyma-xylodarmoy-14hronos-apo-synomiliko-toy-deka-anilikoi-vinteoskopoysan-to-symvan/"
       ],
-      "seen_at_utc": "2026-09-04T15:30:12.693987+00:00"
+      "seen_at_utc": "2026-09-04T15:51:25.063895+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/go-fun/fizz/i-tromaktiki-metamorfosi-tou-nteiv-mpatista-gia-to-god-of-war/",
-      "title": "Την ιδρώνει τη φανέλα: Η τρομακτική «μεταμόρφωση» του Ντέιβ Μπατίστα για το God of War",
-      "normalized_title": "ΤΗΝ ΙΔΡΩΝΕΙ ΤΗ ΦΑΝΕΛΑ: Η ΤΡΟΜΑΚΤΙΚΗ «ΜΕΤΑΜΟΡΦΩΣΗ» ΤΟΥ ΝΤΕΙΒ ΜΠΑΤΙΣΤΑ ΓΙΑ ΤΟ GOD OF WAR",
+      "url": "https://www.in.gr/2026/09/04/greece/at-mandras-me-psyxologika-provlimata-o-drastis-tis-epithesis-rikse-mou-fonaze-stous-astynomikous-sokaroun-oi-martyries/",
+      "title": "ΑΤ Μάνδρας: Με ψυχολογικά προβλήματα ο δράστης της επίθεσης – «Ρίξε μου» φώναζε στους αστυνομικούς – Σοκάρουν οι μαρτυρίες",
+      "normalized_title": "ΑΤ ΜΑΝΔΡΑΣ: ΜΕ ΨΥΧΟΛΟΓΙΚΑ ΠΡΟΒΛΗΜΑΤΑ Ο ΔΡΑΣΤΗΣ ΤΗΣ ΕΠΙΘΕΣΗΣ – «ΡΙΞΕ ΜΟΥ» ΦΩΝΑΖΕ ΣΤΟΥΣ ΑΣΤΥΝΟΜΙΚΟΥΣ – ΣΟΚΑΡΟΥΝ ΟΙ ΜΑΡΤΥΡΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/go-fun/fizz/i-tromaktiki-metamorfosi-tou-nteiv-mpatista-gia-to-god-of-war/"
+        "https://www.in.gr/2026/09/04/greece/at-mandras-me-psyxologika-provlimata-o-drastis-tis-epithesis-rikse-mou-fonaze-stous-astynomikous-sokaroun-oi-martyries/",
+        "https://www.in.gr/2026/09/04/go-fun/fizz/i-eggoni-tou-tramp-ksespa-se-klamata-prin-fygei-gia-to-panepistimio-dyskoleyomai-poly/",
+        "https://www.in.gr/2026/09/04/sports/basketball/oi-fysiotherapeytes-tis-aek-esosan-gynaika-pou-eixe-xasei-tis-aisthiseis-tis-sto-el-venizelos/",
+        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/kanena-thema-paraitisis-zaxaraki-apo-to-yp-paideias-gia-ta-vivlia-me-anafores-se-oikogeneies-omofylon-zeygarion/"
       ],
-      "seen_at_utc": "2026-09-04T15:30:12.693973+00:00"
+      "seen_at_utc": "2026-09-04T15:51:25.063878+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T15:30:12.694063+00:00"
+  "updated_at_utc": "2026-09-04T15:51:25.063985+00:00"
 }
