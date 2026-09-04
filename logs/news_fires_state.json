@@ -1,13 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564430882/poios-fovatai-tin-ariana-gkrante/",
-      "title": "Ποιος φοβάται την Αριάνα Γκράντε;",
-      "normalized_title": "ΠΟΙΟΣ ΦΟΒΑΤΑΙ ΤΗΝ ΑΡΙΑΝΑ ΓΚΡΑΝΤΕ;",
+      "url": "https://www.kathimerini.gr/society/564438877/orkistikan-oi-dyo-protes-gynaikes-stratonomoi-ston-elliniko-strato/",
+      "title": "Ορκίστηκαν οι δύο πρώτες γυναίκες στρατονόμοι στον ελληνικό στρατό",
+      "normalized_title": "ΟΡΚΙΣΤΗΚΑΝ ΟΙ ΔΥΟ ΠΡΩΤΕΣ ΓΥΝΑΙΚΕΣ ΣΤΡΑΤΟΝΟΜΟΙ ΣΤΟΝ ΕΛΛΗΝΙΚΟ ΣΤΡΑΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564430882/poios-fovatai-tin-ariana-gkrante/"
+        "https://www.kathimerini.gr/society/564438877/orkistikan-oi-dyo-protes-gynaikes-stratonomoi-ston-elliniko-strato/",
+        "https://www.kathimerini.gr/world/564438286/gallia-dekades-atoma-molynthikan-me-salmonela-apo-kolokythosporoys/",
+        "https://www.kathimerini.gr/athletics/564439483/deyteros-sto-diamond-league-o-tentogloy/",
+        "https://www.kathimerini.gr/politics/564439135/deth-plirofories-gia-katotato-mistho-sta-1-000-eyro-metaxy-ton-metron/"
       ],
-      "seen_at_utc": "2026-09-04T18:30:05.114182+00:00"
+      "seen_at_utc": "2026-09-04T18:51:13.899589+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1262,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874175/xekinise-i-poreia-ton-enstolon-thessaloniki/?utm_source=rss",
-      "title": "Πορεία των ενστόλων στη Θεσσαλονίκη εν όψει ΔΕΘ, δείτε φωτογραφίες",
-      "normalized_title": "ΠΟΡΕΙΑ ΤΩΝ ΕΝΣΤΟΛΩΝ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΕΝ ΟΨΕΙ ΔΕΘ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874209/sunelifthi-38hroni-gia-tin-purkagia-sti-saronida-xekinise-apo-anaflexi-autokinitou/?utm_source=rss",
+      "title": "Συνελήφθη 38χρονη για την πυρκαγιά στη Σαρωνίδα, ξεκίνησε από ανάφλεξη αυτοκινήτου",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 38ΧΡΟΝΗ ΓΙΑ ΤΗΝ ΠΥΡΚΑΓΙΑ ΣΤΗ ΣΑΡΩΝΙΔΑ, ΞΕΚΙΝΗΣΕ ΑΠΟ ΑΝΑΦΛΕΞΗ ΑΥΤΟΚΙΝΗΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874175/xekinise-i-poreia-ton-enstolon-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874174/sta-heria-tis-astunomias-treis-anilikoi-gia-klopes-dikuklon-exihniastikan-14-upotheseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874170/georgia-xanthopoulou-i-epistoli-mias-gunaikas-me-leuhaimia-pros-ton-kuriako-mitsotaki-sas-euharisto/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874209/sunelifthi-38hroni-gia-tin-purkagia-sti-saronida-xekinise-apo-anaflexi-autokinitou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T18:17:05.086802+00:00"
+      "seen_at_utc": "2026-09-04T18:51:13.899706+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460629/o-mitsotakis-egkainiase-ti-nea-aimatologiki-kliniki-sto-papanikolaoy-einai-i-pio-syghroni-sta-valkania/",
-      "title": "Ο Μητσοτάκης εγκαινίασε τη νέα αιματολογική κλινική στο «Παπανικολάου»: Είναι η πιο σύγχρονη στα Βαλκάνια",
-      "normalized_title": "Ο ΜΗΤΣΟΤΑΚΗΣ ΕΓΚΑΙΝΙΑΣΕ ΤΗ ΝΕΑ ΑΙΜΑΤΟΛΟΓΙΚΗ ΚΛΙΝΙΚΗ ΣΤΟ «ΠΑΠΑΝΙΚΟΛΑΟΥ»: ΕΙΝΑΙ Η ΠΙΟ ΣΥΓΧΡΟΝΗ ΣΤΑ ΒΑΛΚΑΝΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1460663/exarthrothike-egklimatiki-organosi-me-tilefoniko-kentro-sto-zefyri/",
+      "title": "Εξαρθρώθηκε εγκληματική οργάνωση με «τηλεφωνικό κέντρο» στο Ζεφύρι",
+      "normalized_title": "ΕΞΑΡΘΡΩΘΗΚΕ ΕΓΚΛΗΜΑΤΙΚΗ ΟΡΓΑΝΩΣΗ ΜΕ «ΤΗΛΕΦΩΝΙΚΟ ΚΕΝΤΡΟ» ΣΤΟ ΖΕΦΥΡΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460629/o-mitsotakis-egkainiase-ti-nea-aimatologiki-kliniki-sto-papanikolaoy-einai-i-pio-syghroni-sta-valkania/"
+        "https://www.efsyn.gr/ellada/1460663/exarthrothike-egklimatiki-organosi-me-tilefoniko-kentro-sto-zefyri/",
+        "https://www.efsyn.gr/athlitismos/1460648/asimenios-o-tentogloy-2os-sto-diamond-league-stis-vryxelles-vinteo/",
+        "https://www.efsyn.gr/stiles/1460641/to-farmako-os-kathreftis-ena-systima-poy-den-vlepei-ton-astheni/"
       ],
-      "seen_at_utc": "2026-09-04T18:30:05.114296+00:00"
+      "seen_at_utc": "2026-09-04T18:51:13.899661+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/sports/othersports/diamond-league-vryksellon-ektos-telikou-o-ntouplantis-favori-gia-to-diamanti-o-karalis/",
-      "title": "Εκτός τελικού ο Ντουπλάντις λόγω ενοχλήσεων, φαβορί για το «διαμάντι» ο Καραλής",
-      "normalized_title": "ΕΚΤΟΣ ΤΕΛΙΚΟΥ Ο ΝΤΟΥΠΛΑΝΤΙΣ ΛΟΓΩ ΕΝΟΧΛΗΣΕΩΝ, ΦΑΒΟΡΙ ΓΙΑ ΤΟ «ΔΙΑΜΑΝΤΙ» Ο ΚΑΡΑΛΗΣ",
+      "url": "https://www.in.gr/matchcenter/5795441/",
+      "title": "Live: Ίπσουιτς – Λίβερπουλ",
+      "normalized_title": "LIVE: ΙΠΣΟΥΙΤΣ – ΛΙΒΕΡΠΟΥΛ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/sports/othersports/diamond-league-vryksellon-ektos-telikou-o-ntouplantis-favori-gia-to-diamanti-o-karalis/",
-        "https://www.in.gr/2026/09/04/greece/eksarthrothike-alli-mia-speira-pou-ekane-apates-me-to-prosxima-tou-logisti-i-ypallilou-deddie-150-000-eyro-i-leia-se-mia-periptosi/",
-        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/i-elas-ksilonei-leksi-leksi-ta-epixeirimata-tou-maksimou-peri-13-dis-kostologeite-ti-fantasia-sas/"
+        "https://www.in.gr/matchcenter/5795441/",
+        "https://www.in.gr/matchcenter/5868043/",
+        "https://www.in.gr/2026/09/04/greece/istorikos-athlos-o-spyros-xrysikopoulos-kolympise-apo-tin-ellada-stin-italia/",
+        "https://www.in.gr/2026/09/04/economy/telika-eimaste-i-niothoume-ftoxoi-sto-672-i-ypokeimeniki-ftoxeia-sto-196-i-antikeimeniki/",
+        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/elas-entyposiaki-kyvistisi-tis-kyvernisis-mesa-se-24-ores-gia-to-programma-pou-katethese-o-aleksis-tsipras/"
       ],
-      "seen_at_utc": "2026-09-04T18:30:05.114243+00:00"
+      "seen_at_utc": "2026-09-04T18:51:13.899630+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T18:30:05.114377+00:00"
+  "updated_at_utc": "2026-09-04T18:51:13.899793+00:00"
 }
