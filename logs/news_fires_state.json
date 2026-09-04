@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564438802/kriti-epicheirisi-diasosis-35-metanaston-notiodytika-ton-kalon-limenon/",
-      "title": "Κρήτη: Επιχείρηση διάσωσης 35 μεταναστών νοτιοδυτικά των Καλών Λιμένων",
-      "normalized_title": "ΚΡΗΤΗ: ΕΠΙΧΕΙΡΗΣΗ ΔΙΑΣΩΣΗΣ 35 ΜΕΤΑΝΑΣΤΩΝ ΝΟΤΙΟΔΥΤΙΚΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ",
+      "url": "https://www.kathimerini.gr/athletics/564438793/ntoyplantis-karalis-apopse-i-monomachia-sta-ypsi/",
+      "title": "Ντουπλάντις – Καραλής: Απόψε η μονομαχία στα ύψη",
+      "normalized_title": "ΝΤΟΥΠΛΑΝΤΙΣ – ΚΑΡΑΛΗΣ: ΑΠΟΨΕ Η ΜΟΝΟΜΑΧΙΑ ΣΤΑ ΥΨΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564438802/kriti-epicheirisi-diasosis-35-metanaston-notiodytika-ton-kalon-limenon/",
-        "https://www.kathimerini.gr/world/564438652/100-ypermarathonioi-se-100-imeres-to-taxidi-zois-enos-proin-traymatia/"
+        "https://www.kathimerini.gr/athletics/564438793/ntoyplantis-karalis-apopse-i-monomachia-sta-ypsi/"
       ],
-      "seen_at_utc": "2026-09-04T15:17:21.042303+00:00"
+      "seen_at_utc": "2026-09-04T15:30:12.693927+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,33 +1270,25 @@
       "seen_at_utc": "2026-09-04T15:17:21.042486+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460481/fotoniata-treis-oi-kathares-proteraiotites-tis-elas-eisodima-dikoi-foroi-ishyro-koinoniko-kratos/",
-      "title": "Φωτονιάτα: «Τρεις οι καθαρές προτεραιότητες της ΕΛΑΣ – Εισόδημα, δίκαιοι φόροι, κοινωνικό κράτος»",
-      "normalized_title": "ΦΩΤΟΝΙΑΤΑ: «ΤΡΕΙΣ ΟΙ ΚΑΘΑΡΕΣ ΠΡΟΤΕΡΑΙΟΤΗΤΕΣ ΤΗΣ ΕΛΑΣ – ΕΙΣΟΔΗΜΑ, ΔΙΚΑΙΟΙ ΦΟΡΟΙ, ΚΟΙΝΩΝΙΚΟ ΚΡΑΤΟΣ»",
+      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-kostas-grigoriadis-4-09-2026/",
+      "title": "Σκίτσο της Εφ.Συν. [Κ. Γρηγοριάδης, 4.09.2026]",
+      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Κ. ΓΡΗΓΟΡΙΑΔΗΣ, 4.09.2026]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460481/fotoniata-treis-oi-kathares-proteraiotites-tis-elas-eisodima-dikoi-foroi-ishyro-koinoniko-kratos/",
-        "https://www.efsyn.gr/politiki/1460470/koyfonikolakoy-apotelesmatikotita-entimotita-antapodotikotita-ta-haraktiristika-toy-programmatos-mas/",
-        "https://www.efsyn.gr/stiles/1460477/deth-eseis-den-emeis-kyrie-prothypoyrge/",
-        "https://www.efsyn.gr/kosmos/1460461/oykrania-epithesi-rosikon-drones-stis-mystikes-ypiresies-eho-idi-diataxei-apantisi-leei-o-zelenski/",
-        "https://www.efsyn.gr/stiles/1460473/to-pragmatiko-zitima/",
-        "https://www.efsyn.gr/ellada/1460443/enith-psyhiatriki-metarrythmisi-poy-thymizei-lero/",
-        "https://www.efsyn.gr/politiki/1460467/kyvernitikes-piges-alla-eipe-o-tsipras-stin-omilia-toy-alla-paroysiasan-sto-grapto-keimeno/",
-        "https://www.efsyn.gr/oikonomia/1460458/i-nvidia-exagorazei-gia-13-dis-dolaria-ti-hugging-face-poy-eihe-hakaristei-apo-praktores-tis-openai/"
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-kostas-grigoriadis-4-09-2026/",
+        "https://www.efsyn.gr/ellada/1460484/fotia-stin-ano-peraia-thessalonikis-kaiei-konta-se-spitia-ihise-to-112/",
+        "https://www.efsyn.gr/stiles/1460482/to-pyrofani/"
       ],
-      "seen_at_utc": "2026-09-04T15:17:21.042447+00:00"
+      "seen_at_utc": "2026-09-04T15:30:12.693987+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/sports/football/asteras-tripolis-pairnei-ti-thesi-tou-levadeiakou-sti-league-phase-tou-superbet-kypellou-elladas/",
-      "title": "Δικαίωση για τον Αστέρα στην Εφέσων παίρνει τη θέση του Λεβαδειακού στη League Phase του Κυπέλλου",
-      "normalized_title": "ΔΙΚΑΙΩΣΗ ΓΙΑ ΤΟΝ ΑΣΤΕΡΑ ΣΤΗΝ ΕΦΕΣΩΝ ΠΑΙΡΝΕΙ ΤΗ ΘΕΣΗ ΤΟΥ ΛΕΒΑΔΕΙΑΚΟΥ ΣΤΗ LEAGUE PHASE ΤΟΥ ΚΥΠΕΛΛΟΥ",
+      "url": "https://www.in.gr/2026/09/04/go-fun/fizz/i-tromaktiki-metamorfosi-tou-nteiv-mpatista-gia-to-god-of-war/",
+      "title": "Την ιδρώνει τη φανέλα: Η τρομακτική «μεταμόρφωση» του Ντέιβ Μπατίστα για το God of War",
+      "normalized_title": "ΤΗΝ ΙΔΡΩΝΕΙ ΤΗ ΦΑΝΕΛΑ: Η ΤΡΟΜΑΚΤΙΚΗ «ΜΕΤΑΜΟΡΦΩΣΗ» ΤΟΥ ΝΤΕΙΒ ΜΠΑΤΙΣΤΑ ΓΙΑ ΤΟ GOD OF WAR",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/sports/football/asteras-tripolis-pairnei-ti-thesi-tou-levadeiakou-sti-league-phase-tou-superbet-kypellou-elladas/",
-        "https://www.in.gr/2026/09/04/greece/kypseli-eixe-steritiko-syndromo-to-9-minon-vrefos-ti-lene-oi-eidikoi/",
-        "https://www.in.gr/2026/09/04/greece/gsee-ayksisi-misthon-meiosi-tou-xronou-ergasias-stis-375-ores-kai-anavathmisi-ton-sse/",
-        "https://www.in.gr/2026/09/04/greece/fotia-stin-peraia-thessalonikis-konta-se-spitia-sikothikan-3-enaeria-mesa/"
+        "https://www.in.gr/2026/09/04/go-fun/fizz/i-tromaktiki-metamorfosi-tou-nteiv-mpatista-gia-to-god-of-war/"
       ],
-      "seen_at_utc": "2026-09-04T15:17:21.042405+00:00"
+      "seen_at_utc": "2026-09-04T15:30:12.693973+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T15:17:21.042588+00:00"
+  "updated_at_utc": "2026-09-04T15:30:12.694063+00:00"
 }
