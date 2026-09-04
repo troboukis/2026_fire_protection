@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/athinaika-plus/564436870/anargyreios-kai-korgialeneios-scholi-enas-aionas-zois-poy-xypna-mesa-apo-tin-techni/",
-      "title": "Αναργύρειος και Κοργιαλένειος Σχολή. Ενας αιώνας ζωής που ξυπνά μέσα από την τέχνη",
-      "normalized_title": "ΑΝΑΡΓΥΡΕΙΟΣ ΚΑΙ ΚΟΡΓΙΑΛΕΝΕΙΟΣ ΣΧΟΛΗ. ΕΝΑΣ ΑΙΩΝΑΣ ΖΩΗΣ ΠΟΥ ΞΥΠΝΑ ΜΕΣΑ ΑΠΟ ΤΗΝ ΤΕΧΝΗ",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564438265/evros-entasi-me-tin-toyrkia-prokalei-i-epektasi-toy-frachti/",
+      "title": "Εβρος: Ενταση με την Τουρκία προκαλεί η επέκταση του φράχτη",
+      "normalized_title": "ΕΒΡΟΣ: ΕΝΤΑΣΗ ΜΕ ΤΗΝ ΤΟΥΡΚΙΑ ΠΡΟΚΑΛΕΙ Η ΕΠΕΚΤΑΣΗ ΤΟΥ ΦΡΑΧΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/athinaika-plus/564436870/anargyreios-kai-korgialeneios-scholi-enas-aionas-zois-poy-xypna-mesa-apo-tin-techni/",
-        "https://www.kathimerini.gr/culture/agenda/564438223/exodos-stin-athina-kai-ektos-tin-paraskeyi-4-9-afrojack-kai-phaxe/",
-        "https://www.kathimerini.gr/society/564438217/opeka-apo-deytera-07-09-i-anadianomi-ton-adiatheton-deltion-koinonikoy-iamatikoy-ekdromikoy-toyrismoy/"
+        "https://www.kathimerini.gr/society/astynomiko/564438265/evros-entasi-me-tin-toyrkia-prokalei-i-epektasi-toy-frachti/",
+        "https://www.kathimerini.gr/opinion/sketches/564438136/skitso-toy-andrea-petroylaki-04-09-26/",
+        "https://www.kathimerini.gr/world/564438235/paremvasi-zelenski-meta-tin-antallagi-pyron-metaxy-praktoron-sto-kievo/",
+        "https://www.kathimerini.gr/k/sunday-edition/564429082/tin-kyriaki-6-9-me-tin-k-omiroy-iliada-4trochoi-periodiko-k-kai-othoni/"
       ],
-      "seen_at_utc": "2026-09-04T10:51:13.975707+00:00"
+      "seen_at_utc": "2026-09-04T11:17:01.389829+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1262,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1873939/sto-tmima-i-kori-kai-o-eggonos-tis-90hronis-pou-vrethike-tuligmeni-se-nailon-se-upogeio-spitiou-ston-marathona/?utm_source=rss",
-      "title": "Στο Τμήμα για να συλληφθούν η κόρη και ο εγγονός της 90χρονης στον Μαραθώνα - Η σορός βρέθηκε τυλιγμένη σε νάιλον στο υπόγειο",
-      "normalized_title": "ΣΤΟ ΤΜΗΜΑ ΓΙΑ ΝΑ ΣΥΛΛΗΦΘΟΥΝ Η ΚΟΡΗ ΚΑΙ Ο ΕΓΓΟΝΟΣ ΤΗΣ 90ΧΡΟΝΗΣ ΣΤΟΝ ΜΑΡΑΘΩΝΑ - Η ΣΟΡΟΣ ΒΡΕΘΗΚΕ ΤΥΛΙΓΜΕΝΗ ΣΕ ΝΑΙΛΟΝ ΣΤΟ ΥΠΟΓΕΙΟ",
+      "url": "https://www.protothema.gr/greece/article/1873978/edopistikan-47-metanastes-se-lemvo-notia-tis-gaudou-metaferodai-sta-hania/?utm_source=rss",
+      "title": "Εντοπίστηκαν 47 μετανάστες σε λέμβο νότια της Γαύδου, μεταφέρονται στα Χανιά",
+      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΑΝ 47 ΜΕΤΑΝΑΣΤΕΣ ΣΕ ΛΕΜΒΟ ΝΟΤΙΑ ΤΗΣ ΓΑΥΔΟΥ, ΜΕΤΑΦΕΡΟΝΤΑΙ ΣΤΑ ΧΑΝΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1873939/sto-tmima-i-kori-kai-o-eggonos-tis-90hronis-pou-vrethike-tuligmeni-se-nailon-se-upogeio-spitiou-ston-marathona/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1873978/edopistikan-47-metanastes-se-lemvo-notia-tis-gaudou-metaferodai-sta-hania/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1873974/red-code-aurio-se-attiki-euvoia-kriti-kuklades-hio-psara-kai-ikaria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T10:51:13.975809+00:00"
+      "seen_at_utc": "2026-09-04T11:17:01.389924+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460252/ypodohi-tis-fregatas-kimon-me-ydatini-apsida-sto-limani-tis-soydas-vinteo-eikones/",
-      "title": "Υποδοχή της φρεγάτας Κίμων με «υδάτινη αψίδα» στο λιμάνι της Σούδας [βίντεο – εικόνες]",
-      "normalized_title": "ΥΠΟΔΟΧΗ ΤΗΣ ΦΡΕΓΑΤΑΣ ΚΙΜΩΝ ΜΕ «ΥΔΑΤΙΝΗ ΑΨΙΔΑ» ΣΤΟ ΛΙΜΑΝΙ ΤΗΣ ΣΟΥΔΑΣ [ΒΙΝΤΕΟ – ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/ellada/1460267/igoymenitsa-ston-anakriti-o-29hronos-poy-paresyre-me-ih-tin-23hroni-syntrofo-toy/",
+      "title": "Ηγουμενίτσα: Στον ανακριτή ο 29χρονος που παρέσυρε με ΙΧ την 23χρονη σύντροφό του",
+      "normalized_title": "ΗΓΟΥΜΕΝΙΤΣΑ: ΣΤΟΝ ΑΝΑΚΡΙΤΗ Ο 29ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΕΣΥΡΕ ΜΕ ΙΧ ΤΗΝ 23ΧΡΟΝΗ ΣΥΝΤΡΟΦΟ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460252/ypodohi-tis-fregatas-kimon-me-ydatini-apsida-sto-limani-tis-soydas-vinteo-eikones/",
-        "https://www.efsyn.gr/ellada/1460244/eyvoia-dyo-foties-meta-apo-ptosi-keraynoy-ston-dimo-dirfyon-messapion/",
-        "https://www.efsyn.gr/kosmos/1460239/nayagio-stin-keryneia-anasyrthikan-akomi-dyo-soroi-stoys-12-oi-nekroi/"
+        "https://www.efsyn.gr/ellada/1460267/igoymenitsa-ston-anakriti-o-29hronos-poy-paresyre-me-ih-tin-23hroni-syntrofo-toy/",
+        "https://www.efsyn.gr/kosmos/1460270/xespasma-salmonelas-sti-gallia-ti-to-prokalese-stis-81-oi-molynseis-oi-exi-sto-nosokomeio/",
+        "https://www.efsyn.gr/politiki/1460243/pasok-to-orthodoxo-se-prasino-trakter-oi-voyleytes-simaies-kornes-kai-rakes-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-09-04T10:51:13.975783+00:00"
+      "seen_at_utc": "2026-09-04T11:17:01.389902+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/greece/igoumenitsa-apologeitai-o-29xronos-pou-paresyre-me-ix-ti-syntrofo-tou-meta-apo-kavga/",
-      "title": "Απολογείται ο 29χρονος που παρέσυρε με ΙΧ τη σύντροφό του μετά από καβγά",
-      "normalized_title": "ΑΠΟΛΟΓΕΙΤΑΙ Ο 29ΧΡΟΝΟΣ ΠΟΥ ΠΑΡΕΣΥΡΕ ΜΕ ΙΧ ΤΗ ΣΥΝΤΡΟΦΟ ΤΟΥ ΜΕΤΑ ΑΠΟ ΚΑΒΓΑ",
+      "url": "https://www.in.gr/2026/09/04/politics/politiki-grammateia/monometopos-apenanti-sti-nd-o-agonas-tou-pasok-leei-o-tsoukalas-alla-synexizei-na-taytizei-tsipra-kai-mitsotaki/",
+      "title": "«Μονομέτωπος απέναντι στη ΝΔ» ο αγώνας του ΠΑΣΟΚ, λέει ο Τσουκαλάς, αλλά συνεχίζει να ταυτίζει Τσίπρα και Μητσοτάκη",
+      "normalized_title": "«ΜΟΝΟΜΕΤΩΠΟΣ ΑΠΕΝΑΝΤΙ ΣΤΗ ΝΔ» Ο ΑΓΩΝΑΣ ΤΟΥ ΠΑΣΟΚ, ΛΕΕΙ Ο ΤΣΟΥΚΑΛΑΣ, ΑΛΛΑ ΣΥΝΕΧΙΖΕΙ ΝΑ ΤΑΥΤΙΖΕΙ ΤΣΙΠΡΑ ΚΑΙ ΜΗΤΣΟΤΑΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/greece/igoumenitsa-apologeitai-o-29xronos-pou-paresyre-me-ix-ti-syntrofo-tou-meta-apo-kavga/",
-        "https://www.in.gr/2026/09/04/politics/aftodioikisi/dimos-athinaion-savvato-5-septemvriou-syllegoume-sxolika-eidi-gia-osa-paidia-to-exoun-anagki/",
-        "https://www.in.gr/2026/09/04/sports/on-field/ena-thryliko-roster-etoimo-gia-megala-pragmata/",
-        "https://www.in.gr/2026/09/04/go-fun/san-nompel-alla-me-xioumor-aytoi-einai-nikites-ton-vraveion-ig-nobel/",
-        "https://www.in.gr/2026/09/04/world/israil-dilonei-oti-edraiose-ti-zoni-asfaleias-ston-notio-livano-me-tin-katalipsi-stratigikis-thesis/"
+        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/monometopos-apenanti-sti-nd-o-agonas-tou-pasok-leei-o-tsoukalas-alla-synexizei-na-taytizei-tsipra-kai-mitsotaki/",
+        "https://www.in.gr/2026/09/04/politics/aftodioikisi/to-spiti-tou-giatrou-sti-xalki/",
+        "https://www.in.gr/2026/09/04/health/epistrofi-sto-sxoleio-oi-paidiatroi-kaloun-tous-goneis-na-valoun-tin-ygeia-ton-paidion-se-proteraiotita/",
+        "https://www.in.gr/2026/09/04/life/woman/antriou-teit-nees-katigories-sti-roumania-sto-kadro-trafficking-anilikon-seks-me-aniliko-kseplyma-xrimatos/",
+        "https://www.in.gr/2026/09/04/world/gallia-toulaxiston-7-000-nekroi-apo-tous-kaysones-den-einai-o-telikos-apologismos/",
+        "https://www.in.gr/2026/09/04/world/kousner-gouitkof-episkeptontai-oukrania-kai-rosia-to-savvatokyriako/",
+        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/sto-epikentro-tis-politikis-atzentas-to-programma-tsipra-koinoniko-kratos-i-proteraiotita-tis-elas-pos-apantoun-nd-kai-pasok/"
       ],
-      "seen_at_utc": "2026-09-04T10:51:13.975756+00:00"
+      "seen_at_utc": "2026-09-04T11:17:01.389872+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T10:51:13.975896+00:00"
+  "updated_at_utc": "2026-09-04T11:17:01.390012+00:00"
 }
