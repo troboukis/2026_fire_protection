@@ -1,23 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564438166/livanos-to-israil-ekkatharise-stratigiki-koryfogrammi-apo-machites-tis-chezmpolach/",
-      "title": "Λίβανος: Το Ισραήλ «εκκαθάρισε στρατηγική κορυφογραμμή» από μαχητές της Χεζμπολάχ",
-      "normalized_title": "ΛΙΒΑΝΟΣ: ΤΟ ΙΣΡΑΗΛ «ΕΚΚΑΘΑΡΙΣΕ ΣΤΡΑΤΗΓΙΚΗ ΚΟΡΥΦΟΓΡΑΜΜΗ» ΑΠΟ ΜΑΧΗΤΕΣ ΤΗΣ ΧΕΖΜΠΟΛΑΧ",
+      "url": "https://www.kathimerini.gr/world/564438178/keryneia-anasyrthikan-akomi-dyo-soroi-apo-to-nayagio-stoys-12-anerchontai-oi-nekroi/",
+      "title": "Κερύνεια: Ανασύρθηκαν ακόμη δύο σοροί από το ναυάγιο – Στους 12 ανέρχονται οι νεκροί",
+      "normalized_title": "ΚΕΡΥΝΕΙΑ: ΑΝΑΣΥΡΘΗΚΑΝ ΑΚΟΜΗ ΔΥΟ ΣΟΡΟΙ ΑΠΟ ΤΟ ΝΑΥΑΓΙΟ – ΣΤΟΥΣ 12 ΑΝΕΡΧΟΝΤΑΙ ΟΙ ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564438166/livanos-to-israil-ekkatharise-stratigiki-koryfogrammi-apo-machites-tis-chezmpolach/",
-        "https://www.kathimerini.gr/society/564438181/pyrkagia-ston-agio-athanasio-eyvoias-ena-elikoptero-sti-machi/",
-        "https://www.kathimerini.gr/society/564437920/rodos-cheiropedes-se-25chrono-gia-katochi-303-narkotikon-diskion-kai-kannavis/",
-        "https://www.kathimerini.gr/opinion/564436822/stoichima-axiopistias/",
-        "https://www.kathimerini.gr/k/gastronomos/564436540/mpakaliaros-se-koyrkoytopita-kai-skordalia-apo-tin-eyi-voytsina/",
-        "https://www.kathimerini.gr/opinion/564437233/pasokiko-retro/",
-        "https://www.kathimerini.gr/opinion/564436819/i-eyropi-ston-aytomato/",
-        "https://www.kathimerini.gr/opinion/564437071/oi-synarmodioi-katopin-dramaton/",
-        "https://www.kathimerini.gr/world/564438031/goyitkof-kai-koysner-se-rosia-kai-oykrania-to-savvatokyriako/",
-        "https://www.kathimerini.gr/opinion/564437035/i-politiki-gia-toys-aionioys/",
-        "https://www.kathimerini.gr/society/564438130/thessaloniki-dyo-syllipseis-gia-pyrkagies-apo-ameleia-se-chalkidiki-kai-evro/"
+        "https://www.kathimerini.gr/world/564438178/keryneia-anasyrthikan-akomi-dyo-soroi-apo-to-nayagio-stoys-12-anerchontai-oi-nekroi/",
+        "https://www.kathimerini.gr/economy/local/564437266/choris-logariasmo/"
       ],
-      "seen_at_utc": "2026-09-04T10:17:36.755800+00:00"
+      "seen_at_utc": "2026-09-04T10:30:05.587753+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,32 +1269,24 @@
       "seen_at_utc": "2026-09-04T10:17:36.755970+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460191/galazio-vrahykykloma-me-marinaki-mitaraki-zaharaki-i-anafora-se-goneis-idioy-fyloy-se-vivlia-dimotikoy/",
-      "title": "«Γαλάζιο βραχυκύκλωμα» με Μαρινάκη, Μηταράκη, Ζαχαράκη: Η αναφορά σε «γονείς ίδιου φύλου» σε βιβλία δημοτικού",
-      "normalized_title": "«ΓΑΛΑΖΙΟ ΒΡΑΧΥΚΥΚΛΩΜΑ» ΜΕ ΜΑΡΙΝΑΚΗ, ΜΗΤΑΡΑΚΗ, ΖΑΧΑΡΑΚΗ: Η ΑΝΑΦΟΡΑ ΣΕ «ΓΟΝΕΙΣ ΙΔΙΟΥ ΦΥΛΟΥ» ΣΕ ΒΙΒΛΙΑ ΔΗΜΟΤΙΚΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1460241/kremlino-paramenei-pithani-mia-dieythetisi-gia-tin-oykrania-den-epivevaionei-tin-episkepsi-goyitkof-kai-koysner/",
+      "title": "Κρεμλίνο: «Παραμένει πιθανή» μια διευθέτηση για την Ουκρανία – Δεν επιβεβαιώνει την επίσκεψη Γουίτκοφ και Κούσνερ",
+      "normalized_title": "ΚΡΕΜΛΙΝΟ: «ΠΑΡΑΜΕΝΕΙ ΠΙΘΑΝΗ» ΜΙΑ ΔΙΕΥΘΕΤΗΣΗ ΓΙΑ ΤΗΝ ΟΥΚΡΑΝΙΑ – ΔΕΝ ΕΠΙΒΕΒΑΙΩΝΕΙ ΤΗΝ ΕΠΙΣΚΕΨΗ ΓΟΥΙΤΚΟΦ ΚΑΙ ΚΟΥΣΝΕΡ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460191/galazio-vrahykykloma-me-marinaki-mitaraki-zaharaki-i-anafora-se-goneis-idioy-fyloy-se-vivlia-dimotikoy/",
-        "https://www.efsyn.gr/politiki/1460216/o-siakantaris-apanta-stin-anastasioy-gia-ta-vrahiolia-tis-giagias-tis-tha-erthei-ki-o-koytsoympas-na-mas-parei-ta-spitia/",
-        "https://www.efsyn.gr/nisides/1460223/to-elliniko-nisi-me-tis-idiaiteres-geyseis-poy-kerdise-diethni-platforma-gastronomias/",
-        "https://www.efsyn.gr/kosmos/1460225/oi-apestalmenoi-ton-ipa-koysner-kai-goyitkof-tha-metavoyn-se-rosia-kai-oykrania-to-savvatokyriako/"
+        "https://www.efsyn.gr/kosmos/1460241/kremlino-paramenei-pithani-mia-dieythetisi-gia-tin-oykrania-den-epivevaionei-tin-episkepsi-goyitkof-kai-koysner/",
+        "https://www.efsyn.gr/politiki/1460231/tsoykalas-nd-elliniki-aristeri-symparataxi-ehoyn-koini-politiki-se-megala-koinonika-zitimata/"
       ],
-      "seen_at_utc": "2026-09-04T10:17:36.755942+00:00"
+      "seen_at_utc": "2026-09-04T10:30:05.587854+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/world/tha-diarragei-to-teixos-prostasias-apenanti-stin-afd-sti-saksonia-anxalt-ti-elpizoun-rosia-kai-oukrania/",
-      "title": "Θα διαρραγεί το «τείχος προστασίας» απέναντι στην AfD στη Σαξονία-Άνχαλτ; Τι ελπίζουν Ρωσία και Ουκρανία",
-      "normalized_title": "ΘΑ ΔΙΑΡΡΑΓΕΙ ΤΟ «ΤΕΙΧΟΣ ΠΡΟΣΤΑΣΙΑΣ» ΑΠΕΝΑΝΤΙ ΣΤΗΝ AFD ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ; ΤΙ ΕΛΠΙΖΟΥΝ ΡΩΣΙΑ ΚΑΙ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.in.gr/2026/09/04/greece/panepistimio-patron-kathigitis-apagoreyei-gyalia-kata-tin-eksetastiki-an-den-proskomistei-iatriki-vevaiosi/",
+      "title": "Καθηγητής πανεπιστημίου απαγορεύει γυαλιά κατά την εξεταστική, αν δεν προσκομιστεί ιατρική βεβαίωση",
+      "normalized_title": "ΚΑΘΗΓΗΤΗΣ ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΑΠΑΓΟΡΕΥΕΙ ΓΥΑΛΙΑ ΚΑΤΑ ΤΗΝ ΕΞΕΤΑΣΤΙΚΗ, ΑΝ ΔΕΝ ΠΡΟΣΚΟΜΙΣΤΕΙ ΙΑΤΡΙΚΗ ΒΕΒΑΙΩΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/world/tha-diarragei-to-teixos-prostasias-apenanti-stin-afd-sti-saksonia-anxalt-ti-elpizoun-rosia-kai-oukrania/",
-        "https://www.in.gr/2026/09/04/greece/fotia-se-xamili-vlastisi-stin-eyvoia/",
-        "https://www.in.gr/2026/09/04/in-science/space/space-wars-o-tramp-piese-amerikanikes-etaireies-na-aposyrthoun-apo-ti-synodo-makron-gia-to-diastima/",
-        "https://www.in.gr/2026/09/04/language-books/o-giorgos-mertikas-os-stoxastis-enos-metamonternou-leviathan/",
-        "https://www.in.gr/2026/09/04/go-fun/fizz/maria-kanellopoulou-agonia-gia-tin-ygeia-tis-i-ainigmatiki-anartisi-tis/",
-        "https://www.in.gr/2026/09/04/politics/epikairotita/elas-deyteri-eykairia-se-daneioliptes-i-eggyites-pou-exasan-tin-periousia-tous-tin-periodo-tis-krisis/",
-        "https://www.in.gr/2026/09/04/sports/football/olympiakos-i-apostoli-gia-to-mats-me-ton-volo-mesa-o-pouerta/"
+        "https://www.in.gr/2026/09/04/greece/panepistimio-patron-kathigitis-apagoreyei-gyalia-kata-tin-eksetastiki-an-den-proskomistei-iatriki-vevaiosi/"
       ],
-      "seen_at_utc": "2026-09-04T10:17:36.755892+00:00"
+      "seen_at_utc": "2026-09-04T10:30:05.587811+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T10:17:36.756076+00:00"
+  "updated_at_utc": "2026-09-04T10:30:05.587930+00:00"
 }
