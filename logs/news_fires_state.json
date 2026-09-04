@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564438979/reuters-i-ellada-kai-alles-4-chores-schediazoyn-kentra-apelaseon-ektos-e-e/",
-      "title": "Reuters: Η Ελλάδα και άλλες 4 χώρες «σχεδιάζουν» κέντρα απελάσεων εκτός E.E.",
-      "normalized_title": "REUTERS: Η ΕΛΛΑΔΑ ΚΑΙ ΑΛΛΕΣ 4 ΧΩΡΕΣ «ΣΧΕΔΙΑΖΟΥΝ» ΚΕΝΤΡΑ ΑΠΕΛΑΣΕΩΝ ΕΚΤΟΣ E.E.",
+      "url": "https://www.kathimerini.gr/world/564438613/israil-o-mpen-gkvir-proteinei-ethelontiki-metanasteysi-ekatommyrion-palaistinion/",
+      "title": "Ισραήλ: Ο Μπεν-Γκβιρ προτείνει «εθελοντική μετανάστευση» εκατομμυρίων Παλαιστινίων",
+      "normalized_title": "ΙΣΡΑΗΛ: Ο ΜΠΕΝ-ΓΚΒΙΡ ΠΡΟΤΕΙΝΕΙ «ΕΘΕΛΟΝΤΙΚΗ ΜΕΤΑΝΑΣΤΕΥΣΗ» ΕΚΑΤΟΜΜΥΡΙΩΝ ΠΑΛΑΙΣΤΙΝΙΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564438979/reuters-i-ellada-kai-alles-4-chores-schediazoyn-kentra-apelaseon-ektos-e-e/",
-        "https://www.kathimerini.gr/athletics/564439855/o-karalis-katektise-to-proto-diamanti-tis-karieras-toy/",
-        "https://www.kathimerini.gr/world/564438847/rogmes-sto-germaniko-anachoma-apenanti-stin-akrodexia/"
+        "https://www.kathimerini.gr/world/564438613/israil-o-mpen-gkvir-proteinei-ethelontiki-metanasteysi-ekatommyrion-palaistinion/",
+        "https://www.kathimerini.gr/life/science/564439084/i-spania-morfi-proimis-anoias-kai-ta-symptomata-poy-paravlepontai/",
+        "https://www.kathimerini.gr/culture/cinema/564439021/83o-festival-kinimatografoy-venetias-mia-apokalyptiki-matia-ston-polemo-toy-vietnam/"
       ],
-      "seen_at_utc": "2026-09-04T19:51:07.811506+00:00"
+      "seen_at_utc": "2026-09-04T20:30:07.398682+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,27 +1271,24 @@
       "seen_at_utc": "2026-09-04T19:51:07.811646+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1460698/aygatizei-to-kalathi-tis-deth-katotatos-misthos-1-000e-epidoma-400e-se-dimosio-kai-syntaxioyhoys/",
-      "title": "«Αυγατίζει» το καλάθι της ΔΕΘ; – Κατώτατος μισθός 1.000€, επίδομα 400€ σε δημόσιο και συνταξιούχους",
-      "normalized_title": "«ΑΥΓΑΤΙΖΕΙ» ΤΟ ΚΑΛΑΘΙ ΤΗΣ ΔΕΘ; – ΚΑΤΩΤΑΤΟΣ ΜΙΣΘΟΣ 1.000€, ΕΠΙΔΟΜΑ 400€ ΣΕ ΔΗΜΟΣΙΟ ΚΑΙ ΣΥΝΤΑΞΙΟΥΧΟΥΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1460711/egrapse-istoria-o-karalis-pire-to-proto-toy-diamanti-stis-vryxelles-vinteo/",
+      "title": "Έγραψε ιστορία ο Καραλής: Πήρε το πρώτο του «διαμάντι» στις Βρυξέλλες [βίντεο]",
+      "normalized_title": "ΕΓΡΑΨΕ ΙΣΤΟΡΙΑ Ο ΚΑΡΑΛΗΣ: ΠΗΡΕ ΤΟ ΠΡΩΤΟ ΤΟΥ «ΔΙΑΜΑΝΤΙ» ΣΤΙΣ ΒΡΥΞΕΛΛΕΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1460698/aygatizei-to-kalathi-tis-deth-katotatos-misthos-1-000e-epidoma-400e-se-dimosio-kai-syntaxioyhoys/",
-        "https://www.efsyn.gr/media/1460705/me-tin-ef-syn-savvatokyriako-to-vivlio-epta-thalassines-istories-se-proti-ekdosi/"
+        "https://www.efsyn.gr/athlitismos/1460711/egrapse-istoria-o-karalis-pire-to-proto-toy-diamanti-stis-vryxelles-vinteo/"
       ],
-      "seen_at_utc": "2026-09-04T20:17:06.382399+00:00"
+      "seen_at_utc": "2026-09-04T20:30:07.398808+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/sports/basketball/olympiakos-fenermpaxtse-82-77-nikitis-me-souper-fournie-kai-ntorsei/",
-      "title": "Ολυμπιακός – Φενερμπαχτσέ 82-77: Νικητής με σούπερ Φουρνιέ και Ντόρσεϊ",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ – ΦΕΝΕΡΜΠΑΧΤΣΕ 82-77: ΝΙΚΗΤΗΣ ΜΕ ΣΟΥΠΕΡ ΦΟΥΡΝΙΕ ΚΑΙ ΝΤΟΡΣΕΙ",
+      "url": "https://www.in.gr/2026/09/04/world/ipa-i-rosia-den-skopeyei-na-epitethei-sto-nato-leei-o-proedros-tramp/",
+      "title": "Η Ρωσία δεν σκοπεύει να επιτεθεί στο ΝΑΤΟ, λέει ο Τραμπ",
+      "normalized_title": "Η ΡΩΣΙΑ ΔΕΝ ΣΚΟΠΕΥΕΙ ΝΑ ΕΠΙΤΕΘΕΙ ΣΤΟ ΝΑΤΟ, ΛΕΕΙ Ο ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/sports/basketball/olympiakos-fenermpaxtse-82-77-nikitis-me-souper-fournie-kai-ntorsei/",
-        "https://www.in.gr/2026/09/04/world/o-oie-yiothetise-neo-pagkosmio-xarti-pou-parousiazei-tin-afriki-sto-pragmatiko-tis-megethos/",
-        "https://www.in.gr/2026/09/04/sports/othersports/diamond-league-vryksellon-o-karalis-panigyrizei-to-diamanti-kai-to-rekor-mitingk-vids/",
-        "https://www.in.gr/2026/09/04/world/xakers-dimosieysan-dedomena-pou-eklepsan-apo-ti-dimotiki-arxi-tou-verolinou/"
+        "https://www.in.gr/2026/09/04/world/ipa-i-rosia-den-skopeyei-na-epitethei-sto-nato-leei-o-proedros-tramp/",
+        "https://www.in.gr/2026/09/04/sports/othersports/i-sampalenka-paraponethike-gia-myrodia-marixouanas-kapniste-oti-thelete-alla-oxi-dipla-sto-gipedo-vid/"
       ],
-      "seen_at_utc": "2026-09-04T20:17:06.382358+00:00"
+      "seen_at_utc": "2026-09-04T20:30:07.398726+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T20:17:06.382478+00:00"
+  "updated_at_utc": "2026-09-04T20:30:07.398889+00:00"
 }
