@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564437317/ayxithikan-kata-64-oi-toyristes-stin-attiki/",
-      "title": "Αυξήθηκαν κατά 64% οι τουρίστες στην Αττική",
-      "normalized_title": "ΑΥΞΗΘΗΚΑΝ ΚΑΤΑ 64% ΟΙ ΤΟΥΡΙΣΤΕΣ ΣΤΗΝ ΑΤΤΙΚΗ",
+      "url": "https://www.kathimerini.gr/k/sunday-edition/564438379/ta-nea-apo-tin-pompiia-sto-periodiko-k-tin-kyriaki-6-9-me-tin-kathimerini/",
+      "title": "Τα νέα από την Πομπηία – Στο περιοδικό «Κ», την Κυριακή 6/9 με την «Καθημερινή»",
+      "normalized_title": "ΤΑ ΝΕΑ ΑΠΟ ΤΗΝ ΠΟΜΠΗΙΑ – ΣΤΟ ΠΕΡΙΟΔΙΚΟ «Κ», ΤΗΝ ΚΥΡΙΑΚΗ 6/9 ΜΕ ΤΗΝ «ΚΑΘΗΜΕΡΙΝΗ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564437317/ayxithikan-kata-64-oi-toyristes-stin-attiki/",
-        "https://www.kathimerini.gr/society/564438325/to-vretaniko-moyseio-daneizei-thraysmata-toy-parthenona-gia-ekthesi-sti-germania/",
-        "https://www.kathimerini.gr/society/564438319/ypsilos-o-kindynos-pyrkagias-gia-ayrio-se-red-code-pente-perifereies/",
-        "https://www.kathimerini.gr/k/oinoxoos/564431602/to-elliniko-krasi-sto-londino-me-40-oinopoieia-kai-perissotera-apo-240-krasia/"
+        "https://www.kathimerini.gr/k/sunday-edition/564438379/ta-nea-apo-tin-pompiia-sto-periodiko-k-tin-kyriaki-6-9-me-tin-kathimerini/",
+        "https://www.kathimerini.gr/k/sunday-edition/564438370/i-epanekkinisi-toy-septemvrioy-sto-periodiko-k-tin-kyriaki-6-9-me-tin-kathimerini/",
+        "https://www.kathimerini.gr/life/environment/564438340/eyropi-stachti-pano-apo-5-ekat-stremmata-to-kalokairi-meta-apo-1-000-kai-pleon-pyrkagies/",
+        "https://www.kathimerini.gr/k/k-magazine/564436345/i-goiteia-tis-oikeiotitas/",
+        "https://www.kathimerini.gr/society/564436966/ktimatologio-pagides-stis-metavoles-ton-akiniton/"
       ],
-      "seen_at_utc": "2026-09-04T11:51:35.463993+00:00"
+      "seen_at_utc": "2026-09-04T12:17:37.712429+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,41 +1263,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874001/fotia-sto-xiromero-aitoloakarnanias-sikothikan-7-enaeria-mesa/?utm_source=rss",
-      "title": "Φωτιά στο Ξηρόμερο Αιτωλοακαρνανίας, σηκώθηκαν 7 εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΞΗΡΟΜΕΡΟ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ, ΣΗΚΩΘΗΚΑΝ 7 ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.protothema.gr/greece/article/1874021/i-adeia-leitourgias-anaktithike-to-plano-mas-sunehizetai-leei-i-proedros-tou-panepistimiou-keele/?utm_source=rss",
+      "title": "«Η άδεια λειτουργίας ανακτήθηκε, το πλάνο μας συνεχίζεται», λέει η πρόεδρος του Πανεπιστημίου Keele",
+      "normalized_title": "«Η ΑΔΕΙΑ ΛΕΙΤΟΥΡΓΙΑΣ ΑΝΑΚΤΗΘΗΚΕ, ΤΟ ΠΛΑΝΟ ΜΑΣ ΣΥΝΕΧΙΖΕΤΑΙ», ΛΕΕΙ Η ΠΡΟΕΔΡΟΣ ΤΟΥ ΠΑΝΕΠΙΣΤΗΜΙΟΥ KEELE",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874001/fotia-sto-xiromero-aitoloakarnanias-sikothikan-7-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1873994/trohaio-me-klemmeno-ih-stin-ilioupoli-paraviase-stop-sugroustike-me-taxi-kai-egateleipse-to-simeio-pezos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874021/i-adeia-leitourgias-anaktithike-to-plano-mas-sunehizetai-leei-i-proedros-tou-panepistimiou-keele/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874020/fotia-tora-sto-asprohoma-messinias-epiheirei-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874017/sti-vouli-to-mnimonio-elladaspatriarheiou-ierosolumon-gia-tin-prostasia-tis-politistikis-klironomias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874015/fotia-tora-sto-vartholomio-ileias-sikothike-ena-elikotpero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T11:51:35.464088+00:00"
+      "seen_at_utc": "2026-09-04T12:17:37.712591+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1460290/ypotagi-stin-polemiki-oikonomia-i-mprosta-oi-anagkes-toy-laoy/",
-      "title": "Υποταγή στην «πολεμική οικονομία» ή «μπροστά οι ανάγκες του λαού»;",
-      "normalized_title": "ΥΠΟΤΑΓΗ ΣΤΗΝ «ΠΟΛΕΜΙΚΗ ΟΙΚΟΝΟΜΙΑ» Η «ΜΠΡΟΣΤΑ ΟΙ ΑΝΑΓΚΕΣ ΤΟΥ ΛΑΟΥ»;",
+      "url": "https://www.efsyn.gr/ellada/1460312/kampanaki-gia-nea-ilektroniki-apati-me-dithen-email-toy-e-efka-ti-prepei-na-prosehoyn-oi-polites/",
+      "title": "«Καμπανάκι» για νέα ηλεκτρονική απάτη με δήθεν email του e-ΕΦΚΑ – Τι πρέπει να προσέχουν οι πολίτες",
+      "normalized_title": "«ΚΑΜΠΑΝΑΚΙ» ΓΙΑ ΝΕΑ ΗΛΕΚΤΡΟΝΙΚΗ ΑΠΑΤΗ ΜΕ ΔΗΘΕΝ EMAIL ΤΟΥ E-ΕΦΚΑ – ΤΙ ΠΡΕΠΕΙ ΝΑ ΠΡΟΣΕΧΟΥΝ ΟΙ ΠΟΛΙΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1460290/ypotagi-stin-polemiki-oikonomia-i-mprosta-oi-anagkes-toy-laoy/",
-        "https://www.efsyn.gr/ellada/1460287/marathonas-synelifthisan-i-kori-kai-o-eggonos-tis-ilikiomenis-sto-ypogeio-kai-tyligmeni-me-nailon-i-soros/",
-        "https://www.efsyn.gr/ellada/1460275/eftase-kolympontas-stin-italia-o-yperkolymvitis-spyros-hrysikopoylos-dienyse-914-hlm-se-31-ores/",
-        "https://www.efsyn.gr/kosmos/1460272/toyrkia-vinteo-deihnei-ton-antiproedro-toy-chp-na-htypaei-ti-syntrofo-toy-entones-antidraseis/",
-        "https://www.efsyn.gr/politiki/1460103/ta-mystika-toy-programmatos-tis-elas-poso-kostizei-poioi-ofeloyntai-pos-tha-ylopoiithei/"
+        "https://www.efsyn.gr/ellada/1460312/kampanaki-gia-nea-ilektroniki-apati-me-dithen-email-toy-e-efka-ti-prepei-na-prosehoyn-oi-polites/",
+        "https://www.efsyn.gr/politiki/1460291/me-dyo-metra-ekplixi-to-paketo-mitsotaki-sti-deth-ypsoys-dyo-dis-eyro-oi-teleytaies-plirofories/",
+        "https://www.efsyn.gr/stiles/1460308/ohi-ston-tehnofasismo/",
+        "https://www.efsyn.gr/stiles/1460296/trehoyn-pio-grigora-ta-rompot/",
+        "https://www.efsyn.gr/kosmos/1460297/pyrkagies-perissotera-apo-54-ekat-stremmata-eginan-stahti-stin-ee/",
+        "https://www.efsyn.gr/ellada/1460300/pyrkagies-se-red-code-to-savvato-attiki-eyvoia-kriti-hios-ikaria-kai-kyklades-hartis/",
+        "https://www.efsyn.gr/stiles/1460284/patriotiko-ravaisi/"
       ],
-      "seen_at_utc": "2026-09-04T11:51:35.464070+00:00"
+      "seen_at_utc": "2026-09-04T12:17:37.712559+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/greece/fotia-stin-aitoloakarnania-sikothikan-7-enaeria-mesa/",
-      "title": "Φωτιά στην Αιτωλοακαρνανία - Σηκώθηκαν 7 εναέρια μέσα",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑ - ΣΗΚΩΘΗΚΑΝ 7 ΕΝΑΕΡΙΑ ΜΕΣΑ",
+      "url": "https://www.in.gr/2026/09/04/world/emfylios-ton-ypiresion-asfaleias-stin-oukrania-ereyna-gia-tin-antallagi-pyrovolismon-anakoinose-o-zelenski/",
+      "title": "«Εμφύλιος» των υπηρεσιών ασφαλείας στην Ουκρανία – Έρευνα για την ανταλλαγή πυροβολισμών ανακοίνωσε ο Ζελένσκι",
+      "normalized_title": "«ΕΜΦΥΛΙΟΣ» ΤΩΝ ΥΠΗΡΕΣΙΩΝ ΑΣΦΑΛΕΙΑΣ ΣΤΗΝ ΟΥΚΡΑΝΙΑ – ΕΡΕΥΝΑ ΓΙΑ ΤΗΝ ΑΝΤΑΛΛΑΓΗ ΠΥΡΟΒΟΛΙΣΜΩΝ ΑΝΑΚΟΙΝΩΣΕ Ο ΖΕΛΕΝΣΚΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/greece/fotia-stin-aitoloakarnania-sikothikan-7-enaeria-mesa/",
-        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/liakouli-egkataleimmeni-i-thessalia-tria-xronia-meta-tis-theominies-protofanis-empaigmos-apo-tin-kyvernisi/",
-        "https://www.in.gr/2026/09/04/sports/basketball/euroleague/i-yposxesi-tou-valantsiounas-tha-ksyriso-to-kefali-mou-an-i-zalgkiris-kataktisei-ti-euroleague/",
-        "https://www.in.gr/2026/09/04/in-science/perivallon-b-science/mallines-kouvertes-kratoun-drosero-pagetona-ton-alpeon-kathos-i-thermokrasia-anevainei/",
-        "https://www.in.gr/2026/09/04/greece/ios-dytikou-neilou-proeidopoiisi-isa-i-diaspora-tha-synexistei-kai-ton-septemvrio/"
+        "https://www.in.gr/2026/09/04/world/emfylios-ton-ypiresion-asfaleias-stin-oukrania-ereyna-gia-tin-antallagi-pyrovolismon-anakoinose-o-zelenski/",
+        "https://www.in.gr/2026/09/04/life/culture-live/glypta-tou-parthenona-to-vretaniko-mouseio-ta-daneizei-sti-germania-kai-i-ellada-arneitai-katigorimatika/",
+        "https://www.in.gr/2026/09/04/economy/katapatimena-gyrizoun-tin-plati-stin-eksagora-para-tis-ekptoseis-kai-tis-atokes-doseis/",
+        "https://www.in.gr/2026/09/04/plus/medianews/ekselikseis-tora-premiera-to-savvato-5-septemvriou/"
       ],
-      "seen_at_utc": "2026-09-04T11:51:35.464043+00:00"
+      "seen_at_utc": "2026-09-04T12:17:37.712520+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T11:51:35.464194+00:00"
+  "updated_at_utc": "2026-09-04T12:17:37.712679+00:00"
 }
