@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/environment/564438610/andaloysia-toys-45-7-vathmoys-eftase-o-ydrargyros-istoriko-rekor-gia-ton-mina-septemvrio/",
-      "title": "Ανδαλουσία: Τους 45,7 βαθμούς έφτασε ο υδράργυρος – Ιστορικό ρεκόρ για τον μήνα Σεπτέμβριο",
-      "normalized_title": "ΑΝΔΑΛΟΥΣΙΑ: ΤΟΥΣ 45,7 ΒΑΘΜΟΥΣ ΕΦΤΑΣΕ Ο ΥΔΡΑΡΓΥΡΟΣ – ΙΣΤΟΡΙΚΟ ΡΕΚΟΡ ΓΙΑ ΤΟΝ ΜΗΝΑ ΣΕΠΤΕΜΒΡΙΟ",
+      "url": "https://www.kathimerini.gr/culture/564438382/viktoria-chislop-poly-proklitikos-o-daneismos-thraysmaton-ton-glypton-toy-parthenona/",
+      "title": "Βικτόρια Χίσλοπ: «Πολύ προκλητικός» ο δανεισμός θραυσμάτων των Γλυπτών του Παρθενώνα",
+      "normalized_title": "ΒΙΚΤΟΡΙΑ ΧΙΣΛΟΠ: «ΠΟΛΥ ΠΡΟΚΛΗΤΙΚΟΣ» Ο ΔΑΝΕΙΣΜΟΣ ΘΡΑΥΣΜΑΤΩΝ ΤΩΝ ΓΛΥΠΤΩΝ ΤΟΥ ΠΑΡΘΕΝΩΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/environment/564438610/andaloysia-toys-45-7-vathmoys-eftase-o-ydrargyros-istoriko-rekor-gia-ton-mina-septemvrio/",
-        "https://www.kathimerini.gr/society/564438436/kalamata-profylakisteos-60chronos-gia-4-emprismoys-sti-messini/",
-        "https://www.kathimerini.gr/economy/international/564438568/ipa-se-istoriko-ypsilo-timi-ntizel/"
+        "https://www.kathimerini.gr/culture/564438382/viktoria-chislop-poly-proklitikos-o-daneismos-thraysmaton-ton-glypton-toy-parthenona/",
+        "https://www.kathimerini.gr/athletics/564438634/oyna-ematha-gia-tin-pio-akrivi-metagrafi-toy-panathinaikoy-na-paroyme-to-21o-protathlima/",
+        "https://www.kathimerini.gr/politics/564436909/dialogoi-stin-k-o-antagonismos-i-deyteri-thesi-kai-oi-meteklogikes-synergasies/",
+        "https://www.kathimerini.gr/k/gastronomos/564436591/imam-mpailnti-11-syntages-me-melitzanes-gia-na-lipothymisei-o-imamis/",
+        "https://www.kathimerini.gr/world/564438553/rosia-kindynos-na-xespasei-polemos-megalis-klimakas-stin-eyrasia/"
       ],
-      "seen_at_utc": "2026-09-04T13:51:10.196821+00:00"
+      "seen_at_utc": "2026-09-04T14:17:28.644025+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1263,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874065/ti-einai-to-el-ninio-kai-poso-borei-na-epireasei-ton-heimona-stin-ellada-i-analusi-tsatrafullia/?utm_source=rss",
-      "title": "Τι είναι το Ελ Νίνιο και πόσο μπορεί να επηρεάσει τον χειμώνα στην Ελλάδα, 10 ερωτήσεις και απαντήσεις",
-      "normalized_title": "ΤΙ ΕΙΝΑΙ ΤΟ ΕΛ ΝΙΝΙΟ ΚΑΙ ΠΟΣΟ ΜΠΟΡΕΙ ΝΑ ΕΠΗΡΕΑΣΕΙ ΤΟΝ ΧΕΙΜΩΝΑ ΣΤΗΝ ΕΛΛΑΔΑ, 10 ΕΡΩΤΗΣΕΙΣ ΚΑΙ ΑΠΑΝΤΗΣΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1874072/fotia-tora-se-dasos-sto-gomati-halkidikis-epiheirei-ena-elikoptero/?utm_source=rss",
+      "title": "Φωτιά τώρα σε δάσος στο Γομάτι Χαλκιδικής, επιχειρεί ένα ελικόπτερο",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΟΣ ΣΤΟ ΓΟΜΑΤΙ ΧΑΛΚΙΔΙΚΗΣ, ΕΠΙΧΕΙΡΕΙ ΕΝΑ ΕΛΙΚΟΠΤΕΡΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874065/ti-einai-to-el-ninio-kai-poso-borei-na-epireasei-ton-heimona-stin-ellada-i-analusi-tsatrafullia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874055/tautopoiithike-andras-gia-sukofadikes-anartiseis-se-varos-tis-vasos-tsarouha/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874054/andras-eisevale-sto-at-mandras-kai-traumatise-astunomiko-me-mahairi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874072/fotia-tora-se-dasos-sto-gomati-halkidikis-epiheirei-ena-elikoptero/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874070/fotia-tora-sti-stin-anavusso-attikis-epiheiroun-4-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874069/profulakistike-o-29hronos-pou-paresure-me-to-autokinito-ti-sudrofo-tou-stin-igoumenitsa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874068/fotia-tora-sto-distomo-voiotias-sikothikan-tessera-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874067/edalma-sullipsis-gia-ton-50hrono-gia-tis-duo-purkagies-se-klouthro-kai-hartsa-stin-skuro/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-04T13:51:10.196918+00:00"
+      "seen_at_utc": "2026-09-04T14:17:28.644139+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1460376/glypta-parthenona-to-vretaniko-moyseio-daneizei-dyo-thraysmata-sti-germania-to-kas-eipe-ohi/",
-      "title": "Γλυπτά Παρθενώνα: Το Βρετανικό Μουσείο δανείζει δύο θραύσματα στη Γερμανία – Το ΚΑΣ είπε «όχι»",
-      "normalized_title": "ΓΛΥΠΤΑ ΠΑΡΘΕΝΩΝΑ: ΤΟ ΒΡΕΤΑΝΙΚΟ ΜΟΥΣΕΙΟ ΔΑΝΕΙΖΕΙ ΔΥΟ ΘΡΑΥΣΜΑΤΑ ΣΤΗ ΓΕΡΜΑΝΙΑ – ΤΟ ΚΑΣ ΕΙΠΕ «ΟΧΙ»",
+      "url": "https://www.efsyn.gr/stiles/1460320/i-thesi-toy-mpoyharin-stin-istoria/",
+      "title": "Η θέση του Μπουχάριν στην Ιστορία",
+      "normalized_title": "Η ΘΕΣΗ ΤΟΥ ΜΠΟΥΧΑΡΙΝ ΣΤΗΝ ΙΣΤΟΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1460376/glypta-parthenona-to-vretaniko-moyseio-daneizei-dyo-thraysmata-sti-germania-to-kas-eipe-ohi/",
-        "https://www.efsyn.gr/ellada/1460385/epeisodio-sto-at-mandras-31hronos-epitethike-me-mahairi-se-dyo-astynomikoys-ton-pyrovolisan-kai-ton-traymatisan/",
-        "https://www.efsyn.gr/politiki/1460383/i-akrita-karfonei-neodimokrates-kai-portosalte-ta-fyla-den-horane-se-dyo-koytakia/"
+        "https://www.efsyn.gr/stiles/1460320/i-thesi-toy-mpoyharin-stin-istoria/",
+        "https://www.efsyn.gr/stiles/1460311/enas-sionistikos-dialogos-peri-antisimitismoy/",
+        "https://www.efsyn.gr/stiles/1460330/i-entimotita-den-einai-synthima/",
+        "https://www.efsyn.gr/ellada/1460410/dikografia-se-varos-56hronoy-gia-sykofantikes-anartiseis-kata-gnostis-diaititi-mpasket/",
+        "https://www.efsyn.gr/politiki/1460382/dimos-keratsinioy-drapetsonas-nees-apokalypseis-gia-apeytheias-anatheseis-173-ekat-eyro/"
       ],
-      "seen_at_utc": "2026-09-04T13:51:10.196892+00:00"
+      "seen_at_utc": "2026-09-04T14:17:28.644118+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/04/greece/apisteyto-troxaio-me-klemmeno-ix-stin-ilioupoli-paraviase-stop-xtypise-taksi-kai-eksafanistike/",
-      "title": "Απίστευτο τροχαίο με κλεμμένο ΙΧ στην Ηλιούπολη: Παραβίασε STOP, χτύπησε ταξί και…εξαφανίστηκε",
-      "normalized_title": "ΑΠΙΣΤΕΥΤΟ ΤΡΟΧΑΙΟ ΜΕ ΚΛΕΜΜΕΝΟ ΙΧ ΣΤΗΝ ΗΛΙΟΥΠΟΛΗ: ΠΑΡΑΒΙΑΣΕ STOP, ΧΤΥΠΗΣΕ ΤΑΞΙ ΚΑΙ…ΕΞΑΦΑΝΙΣΤΗΚΕ",
+      "url": "https://www.in.gr/2026/09/04/politics/politiki-grammateia/koufonikolakou-i-eisfora-tou-1-afora-mono-ta-ypsilotera-eisodimata-den-einai-ekdikitiki-den-theloume-tin-aplistia/",
+      "title": "Κουφονικολάκου: Η εισφορά του 1% αφορά μόνο τα υψηλότερα εισοδήματα – Δεν είναι εκδικητική, δεν θέλουμε την απληστία",
+      "normalized_title": "ΚΟΥΦΟΝΙΚΟΛΑΚΟΥ: Η ΕΙΣΦΟΡΑ ΤΟΥ 1% ΑΦΟΡΑ ΜΟΝΟ ΤΑ ΥΨΗΛΟΤΕΡΑ ΕΙΣΟΔΗΜΑΤΑ – ΔΕΝ ΕΙΝΑΙ ΕΚΔΙΚΗΤΙΚΗ, ΔΕΝ ΘΕΛΟΥΜΕ ΤΗΝ ΑΠΛΗΣΤΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/04/greece/apisteyto-troxaio-me-klemmeno-ix-stin-ilioupoli-paraviase-stop-xtypise-taksi-kai-eksafanistike/",
-        "https://www.in.gr/2026/09/04/world/zelenski-rosiki-epithesi-me-drone-sta-grafeia-tis-sbu-sto-kievo-stoxos-o-epikefalis-tis-ypiresias-asfaleias/"
+        "https://www.in.gr/2026/09/04/politics/politiki-grammateia/koufonikolakou-i-eisfora-tou-1-afora-mono-ta-ypsilotera-eisodimata-den-einai-ekdikitiki-den-theloume-tin-aplistia/",
+        "https://www.in.gr/2026/09/04/world/ispania-espase-rekor-i-thermokrasia-stin-andalousia-pano-apo-45-vathmous-kelsiou/",
+        "https://www.in.gr/2026/09/04/sports/football/ounai-eimai-poly-xaroumenos-pou-epestrepsa/",
+        "https://www.in.gr/2026/09/04/economy/diethnis-oikonomia/ipa-se-istoriko-ypsilo-i-timi-ntizel/",
+        "https://www.in.gr/2026/09/04/greece/vinteo-ntokoumenta-apo-tin-igoumenitsa-i-stigmi-pou-o-29xronos-parasyrei-tin-24xroni/",
+        "https://www.in.gr/2026/09/04/greece/fota-stin-anavysso-synagermos-stin-pyrovestiki/"
       ],
-      "seen_at_utc": "2026-09-04T13:51:10.196865+00:00"
+      "seen_at_utc": "2026-09-04T14:17:28.644099+00:00"
     }
   },
-  "updated_at_utc": "2026-09-04T13:51:10.196989+00:00"
+  "updated_at_utc": "2026-09-04T14:17:28.644249+00:00"
 }
