@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564440803/fotia-se-oinopoieio-stin-patra-megali-kinitopoiisi-tis-pyrosvestikis/",
-      "title": "Φωτιά σε οινοποιείο στην Πάτρα – Μεγάλη κινητοποίηση της Πυροσβεστικής",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΟΙΝΟΠΟΙΕΙΟ ΣΤΗΝ ΠΑΤΡΑ – ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/world/564440821/oykrania-tesseris-nekroi-epeita-apo-rosiki-epithesi/",
+      "title": "Ουκρανία: Τέσσερις νεκροί έπειτα από ρωσική επίθεση",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: ΤΕΣΣΕΡΙΣ ΝΕΚΡΟΙ ΕΠΕΙΤΑ ΑΠΟ ΡΩΣΙΚΗ ΕΠΙΘΕΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564440803/fotia-se-oinopoieio-stin-patra-megali-kinitopoiisi-tis-pyrosvestikis/",
-        "https://www.kathimerini.gr/society/564439351/adilotoi-thanatoi-ilikiomenon-kai-energes-syntaxeis/"
+        "https://www.kathimerini.gr/world/564440821/oykrania-tesseris-nekroi-epeita-apo-rosiki-epithesi/",
+        "https://www.kathimerini.gr/politics/564439279/entos-kai-ektos-oyte-diethnis-oyte-ekthesi/",
+        "https://www.kathimerini.gr/economy/international/564439729/i-binance-synechizei-na-leitoyrgei-stin-e-e-choris-adeia/",
+        "https://www.kathimerini.gr/istoria/564439825/san-simera-5-septemvrioy-1698-o-megalos-petros-tis-rosias-epivallei-foro-sti-geneiada/"
       ],
-      "seen_at_utc": "2026-09-05T04:30:00.565645+00:00"
+      "seen_at_utc": "2026-09-05T04:51:23.317578+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,35 +1280,16 @@
       "seen_at_utc": "2026-09-04T21:51:11.667195+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/health/chikungunya-i-nea-eksotiki-apeili-pou-eferan-ta-kounoupia/",
-      "title": "Chikungunya: Η νέα… εξωτική απειλή που έφεραν τα κουνούπια",
-      "normalized_title": "CHIKUNGUNYA: Η ΝΕΑ… ΕΞΩΤΙΚΗ ΑΠΕΙΛΗ ΠΟΥ ΕΦΕΡΑΝ ΤΑ ΚΟΥΝΟΥΠΙΑ",
+      "url": "https://www.in.gr/2026/09/05/greece/red-code-gia-kindyno-pyrkagias-to-savvato-se-eksi-perioxes/",
+      "title": "Red Code για κίνδυνο πυρκαγιάς το Σάββατο σε έξι περιοχές",
+      "normalized_title": "RED CODE ΓΙΑ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ ΤΟ ΣΑΒΒΑΤΟ ΣΕ ΕΞΙ ΠΕΡΙΟΧΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/health/chikungunya-i-nea-eksotiki-apeili-pou-eferan-ta-kounoupia/",
-        "https://www.in.gr/2026/09/05/greece/sidirodromos-ena-etcs-den-fernei-tin-anoiksi/",
-        "https://www.in.gr/2026/09/05/world/katexomeni-keryneia-ena-nayagio-polles-apories/",
-        "https://www.in.gr/2026/09/05/life/texni/i-mpanana-ton-6-ekat-dolarion-giati-to-pio-paralogo-ergo-texnis-den-itan-telika-toso-rizospastiko/",
-        "https://www.in.gr/2026/09/05/plus/vita/polles-fotografies-liges-anamniseis-i-epistimi-mas-leei-na-zisoume-ti-stigmi/",
-        "https://www.in.gr/2026/09/05/health/se-ektakti-eisagogi-apo-to-ifet-30-akomi-monadika-farmaka-se-elleipsi/",
-        "https://www.in.gr/2026/09/05/go-fun/exeis-ti-zoi-sou-ypo-elegxo-ayta-einai-ta-eksi-simadia-enilikiosis-to-2026/",
-        "https://www.in.gr/2026/09/05/life/culture-live/santra-xouler-tha-ypodythei-ton-syggrafea-volfgkangk-xerntorf-sto-film-work-and-structure/",
-        "https://www.in.gr/2026/09/05/politics/prokalei-i-voultepsi-pairnoume-anaplirotes-giati-tin-1i-mera-tou-sxoleiou-emfanizontai-oi-mises-egkymonouses/",
-        "https://www.in.gr/2026/09/05/greece/koinoniki-kai-politiki-agogi-gia-agoria-pou-mastoreyoun-kai-koritsia-pou-mageireyoun/",
-        "https://www.in.gr/2026/09/05/world/giati-to-iran-den-tha-ypoxorisei-apenanti-stis-ipa/",
-        "https://www.in.gr/2026/09/05/world/tourkia-giati-o-erntogan-kindyneyei-apo-tis-diplomatikes-epityxies-tou/",
-        "https://www.in.gr/2026/09/05/world/i-notia-korea-eksetazei-to-endexomeno-na-emplakei-sto-ormouz-dixasmeno-to-kyvernitiko-stratopedo/",
-        "https://www.in.gr/2026/09/05/greece/patra-megali-fotia-kai-ekrikseis-stin-achaia-clauss-maxi-na-min-epektathei-sto-dasos/",
-        "https://www.in.gr/2026/09/05/world/volivia-toulaxiston-2-nekroi-apo-ekrikseis-se-stratiotiki-vasi-konta-stin-proteyousa/",
-        "https://www.in.gr/2026/09/05/politics/epikairotita/kypros-epistrefei-stis-10-septemvriou-i-olgkin-pithanon-komizei-eggrafo-tou-oie-gia-tis-sygkliseis/",
-        "https://www.in.gr/2026/09/05/world/o-isimerinos-yperamynetai-ton-amerikanikon-epixeiriseon-pou-odigisan-sti-vythisi-trion-ploion/",
-        "https://www.in.gr/2026/09/05/world/i-tetris-pairnei-apostaseis-apo-amfilegomeno-vinteopaixnidi-tou-leykou-oikou-me-zompi-metanastes/",
-        "https://www.in.gr/2026/09/05/economy/oikonomikes-eidiseis/dbrs-diatirise-sto-bbb-tin-aksiologisi-gia-ellada-anavathmise-se-thetikes-tis-prooptikes/",
-        "https://www.in.gr/2026/09/05/world/alvania-flegetai-i-ximara-avoithitoi-oi-katoikoi-sto-eleos-tis-fotias/",
-        "https://www.in.gr/2026/09/05/world/iran-o-tramp-epixeirei-na-ypovathmisei-ton-antiktypo-tou-polemou-gia-ti-xora-tou/",
-        "https://www.in.gr/2026/09/05/world/mnimonio-faratz-mparntela-gia-to-metanasteytiko-se-periptosi-pou-eklegoun/"
+        "https://www.in.gr/2026/09/05/greece/red-code-gia-kindyno-pyrkagias-to-savvato-se-eksi-perioxes/",
+        "https://www.in.gr/2026/09/05/greece/aithrios-o-kairos-to-savvato-eos-tous-36-vathmous-i-thermokrasia/",
+        "https://www.in.gr/2026/09/05/plus/vita/proino-tria-rofimata-pou-xarizoun-energeia/"
       ],
-      "seen_at_utc": "2026-09-05T04:17:12.679982+00:00"
+      "seen_at_utc": "2026-09-05T04:51:23.317627+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T04:30:00.565790+00:00"
+  "updated_at_utc": "2026-09-05T04:51:23.317704+00:00"
 }
