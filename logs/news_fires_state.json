@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564440833/aystralia-asynithista-ypsiles-thermokrasies-gia-tin-epochi-sto-sidnei/",
-      "title": "Αυστραλία: Ασυνήθιστα υψηλές θερμοκρασίες για την εποχή στο Σίδνεϊ",
-      "normalized_title": "ΑΥΣΤΡΑΛΙΑ: ΑΣΥΝΗΘΙΣΤΑ ΥΨΗΛΕΣ ΘΕΡΜΟΚΡΑΣΙΕΣ ΓΙΑ ΤΗΝ ΕΠΟΧΗ ΣΤΟ ΣΙΔΝΕΙ",
+      "url": "https://www.kathimerini.gr/opinion/564439441/den-milame-pia/",
+      "title": "Δεν μιλάμε πια",
+      "normalized_title": "ΔΕΝ ΜΙΛΑΜΕ ΠΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564440833/aystralia-asynithista-ypsiles-thermokrasies-gia-tin-epochi-sto-sidnei/",
-        "https://www.kathimerini.gr/economy/diktis/564439777/kato-apo-8-ypochorise-i-anergia/",
-        "https://www.kathimerini.gr/visual/photography/564439126/na-etoimazomaste/",
-        "https://www.kathimerini.gr/politics/564439237/theoreio-to-2030-sti-markiza/"
+        "https://www.kathimerini.gr/opinion/564439441/den-milame-pia/",
+        "https://www.kathimerini.gr/opinion/564439420/to-pasok-tote-kai-tora/",
+        "https://www.kathimerini.gr/opinion/564439603/stayros-mpenos-monaxia/",
+        "https://www.kathimerini.gr/opinion/564439423/aggeloi-kai-daimones-2/",
+        "https://www.kathimerini.gr/economy/business/564439696/prosorinos-anadochos-se-dyo-odika-erga-sdit-i-gek-terna/"
       ],
-      "seen_at_utc": "2026-09-05T05:17:05.807025+00:00"
+      "seen_at_utc": "2026-09-05T05:30:04.062038+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1263,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874266/to-diesel-arhizei-na-exafanizetai-apo-ta-pratiria/?utm_source=rss",
-      "title": "Το diesel αρχίζει να εξαφανίζεται από τα πρατήρια",
-      "normalized_title": "ΤΟ DIESEL ΑΡΧΙΖΕΙ ΝΑ ΕΞΑΦΑΝΙΖΕΤΑΙ ΑΠΟ ΤΑ ΠΡΑΤΗΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1874274/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
+      "title": "Tα κυριακάτικα πρωινά, γίνονται καλύτερα με efood market και Πρώτο Θέμα!",
+      "normalized_title": "TΑ ΚΥΡΙΑΚΑΤΙΚΑ ΠΡΩΙΝΑ, ΓΙΝΟΝΤΑΙ ΚΑΛΥΤΕΡΑ ΜΕ EFOOD MARKET ΚΑΙ ΠΡΩΤΟ ΘΕΜΑ!",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874266/to-diesel-arhizei-na-exafanizetai-apo-ta-pratiria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874263/apokalupsi-sta-parking-ton-souper-market-i-lusi-gia-ti-fortisi-stis-geitonies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874274/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T05:17:05.807099+00:00"
+      "seen_at_utc": "2026-09-05T05:30:04.062159+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460751/o-kairos-simera-zesti-anemoi-eos-7-mpofor-kai-skoni/",
-      "title": "Ο καιρός σήμερα: Ζέστη, άνεμοι έως 7 μποφόρ και σκόνη",
-      "normalized_title": "Ο ΚΑΙΡΟΣ ΣΗΜΕΡΑ: ΖΕΣΤΗ, ΑΝΕΜΟΙ ΕΩΣ 7 ΜΠΟΦΟΡ ΚΑΙ ΣΚΟΝΗ",
+      "url": "https://www.efsyn.gr/oikonomia/1460726/neo-energeiako-sok-pro-ton-pylon-ektoxeythike-i-timi-toy-fysikoy-aerioy/",
+      "title": "Νέο ενεργειακό σοκ προ των πυλών – Εκτοξεύθηκε η τιμή του φυσικού αερίου",
+      "normalized_title": "ΝΕΟ ΕΝΕΡΓΕΙΑΚΟ ΣΟΚ ΠΡΟ ΤΩΝ ΠΥΛΩΝ – ΕΚΤΟΞΕΥΘΗΚΕ Η ΤΙΜΗ ΤΟΥ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460751/o-kairos-simera-zesti-anemoi-eos-7-mpofor-kai-skoni/",
-        "https://www.efsyn.gr/ellada/1460746/eortologio-poioi-giortazoyn-simera-5-septemvrioy/"
+        "https://www.efsyn.gr/oikonomia/1460726/neo-energeiako-sok-pro-ton-pylon-ektoxeythike-i-timi-toy-fysikoy-aerioy/",
+        "https://www.efsyn.gr/politiki/1460723/kleinei-pliges-sti-deth-kai-ston-orizonta-ekloges-ta-dyo-metra-ekplixi-sto-paketo-mitsotaki/"
       ],
-      "seen_at_utc": "2026-09-05T05:17:05.807065+00:00"
+      "seen_at_utc": "2026-09-05T05:30:04.062128+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/greece/red-code-gia-kindyno-pyrkagias-to-savvato-se-eksi-perioxes/",
-      "title": "Red Code για κίνδυνο πυρκαγιάς το Σάββατο σε έξι περιοχές",
-      "normalized_title": "RED CODE ΓΙΑ ΚΙΝΔΥΝΟ ΠΥΡΚΑΓΙΑΣ ΤΟ ΣΑΒΒΑΤΟ ΣΕ ΕΞΙ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.in.gr/2026/09/05/greece/kriti-diasothikan-50-metanastes-anoixta-ton-kalon-limenon-entopistikan-apo-tin-frontex/",
+      "title": "Διασώθηκαν 50 μετανάστες ανοιχτά των Καλών Λιμένων - Εντοπίστηκαν από την Frontex",
+      "normalized_title": "ΔΙΑΣΩΘΗΚΑΝ 50 ΜΕΤΑΝΑΣΤΕΣ ΑΝΟΙΧΤΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ - ΕΝΤΟΠΙΣΤΗΚΑΝ ΑΠΟ ΤΗΝ FRONTEX",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/greece/red-code-gia-kindyno-pyrkagias-to-savvato-se-eksi-perioxes/",
-        "https://www.in.gr/2026/09/05/greece/aithrios-o-kairos-to-savvato-eos-tous-36-vathmous-i-thermokrasia/",
-        "https://www.in.gr/2026/09/05/plus/vita/proino-tria-rofimata-pou-xarizoun-energeia/"
+        "https://www.in.gr/2026/09/05/greece/kriti-diasothikan-50-metanastes-anoixta-ton-kalon-limenon-entopistikan-apo-tin-frontex/",
+        "https://www.in.gr/2026/09/05/sports/othersports/o-emmanouil-karalis-koimithike-me-to-diamanti-tou-diamond-league-pics/",
+        "https://www.in.gr/2026/09/05/life/culture-live/momix-alice-oi-magoi-tou-xorou-epistrefoun-se-athina-kai-thessaloniki/",
+        "https://www.in.gr/2026/09/05/world/aystralia-asynithistes-gia-tin-epoxi-ypsiles-thermokrasies-sto-sidnei-kindynos-pyrkagion/",
+        "https://www.in.gr/2026/09/05/life/geysi/syntagi-mosxaraki-kokkinisto-me-poure-ogkraten/"
       ],
-      "seen_at_utc": "2026-09-05T04:51:23.317627+00:00"
+      "seen_at_utc": "2026-09-05T05:30:04.062095+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T05:17:05.807164+00:00"
+  "updated_at_utc": "2026-09-05T05:30:04.062233+00:00"
 }
