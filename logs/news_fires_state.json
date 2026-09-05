@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564439657/i-eyropaiki-enopoiisi-se-oikonomia-kai-amyna-prepei-na-epitachynthei/",
-      "title": "Η ευρωπαϊκή ενοποίηση σε οικονομία και άμυνα πρέπει να επιταχυνθεί",
-      "normalized_title": "Η ΕΥΡΩΠΑΙΚΗ ΕΝΟΠΟΙΗΣΗ ΣΕ ΟΙΚΟΝΟΜΙΑ ΚΑΙ ΑΜΥΝΑ ΠΡΕΠΕΙ ΝΑ ΕΠΙΤΑΧΥΝΘΕΙ",
+      "url": "https://www.kathimerini.gr/society/564440851/thessaloniki-sovaros-traymatismos-33chronoy-se-trochaio/",
+      "title": "Θεσσαλονίκη: Σοβαρός τραυματισμός 33χρονου σε τροχαίο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΟΒΑΡΟΣ ΤΡΑΥΜΑΤΙΣΜΟΣ 33ΧΡΟΝΟΥ ΣΕ ΤΡΟΧΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564439657/i-eyropaiki-enopoiisi-se-oikonomia-kai-amyna-prepei-na-epitachynthei/",
-        "https://www.kathimerini.gr/economy/business/564439687/nea-monada-paragogis-schediazei-i-mparmpa-stathis/",
-        "https://www.kathimerini.gr/opinion/564439426/o-psilos-o-kontos-kai-i-aspida/"
+        "https://www.kathimerini.gr/society/564440851/thessaloniki-sovaros-traymatismos-33chronoy-se-trochaio/",
+        "https://www.kathimerini.gr/economy/international/564439780/to-ependytiko-fund-tis-norvigias-meionei-tin-ekthesi-sta-omologa/",
+        "https://www.kathimerini.gr/columns/564438205/i-saltsa-ntomatas-toy-apokalokairoy/"
       ],
-      "seen_at_utc": "2026-09-05T05:51:42.005793+00:00"
+      "seen_at_utc": "2026-09-05T06:16:56.649954+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874279/mauri-thalassa-htupima-drone-sto-ellinika-diaheirizomeno-suezmax-siren/?utm_source=rss",
-      "title": "Μαύρη Θάλασσα: Χτύπημα drone στο ελληνικά διαχειριζόμενο Suezmax «Siren»",
-      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ: ΧΤΥΠΗΜΑ DRONE ΣΤΟ ΕΛΛΗΝΙΚΑ ΔΙΑΧΕΙΡΙΖΟΜΕΝΟ SUEZMAX «SIREN»",
+      "url": "https://www.protothema.gr/greece/article/1874294/1100000-monadikoi-hristes-enimerothikan-hthes-paraskeui-4-septemvriou-apo-to-protothemagr/?utm_source=rss",
+      "title": "1.100.000 μοναδικοί χρήστες ενημερώθηκαν χθες Παρασκευή 4 Σεπτεμβρίου από το protothema.gr",
+      "normalized_title": "1.100.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΠΑΡΑΣΚΕΥΗ 4 ΣΕΠΤΕΜΒΡΙΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874279/mauri-thalassa-htupima-drone-sto-ellinika-diaheirizomeno-suezmax-siren/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874294/1100000-monadikoi-hristes-enimerothikan-hthes-paraskeui-4-septemvriou-apo-to-protothemagr/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T05:51:42.005922+00:00"
+      "seen_at_utc": "2026-09-05T06:16:56.650039+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460771/fotia-se-oinopoieio-stin-patra-akoystikan-ekrixeis-megali-kinitopoiisi-vinteo/",
-      "title": "Φωτιά σε οινοποιείο στην Πάτρα: Ακούστηκαν εκρήξεις, μεγάλη κινητοποίηση [εικόνες-βίντεο]",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΟΙΝΟΠΟΙΕΙΟ ΣΤΗΝ ΠΑΤΡΑ: ΑΚΟΥΣΤΗΚΑΝ ΕΚΡΗΞΕΙΣ, ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/gallery/profiteia-proeidopoiisi-i-tromaktiki-symptosi/",
+      "title": "Προφητεία, προειδοποίηση ή τρομακτική σύμπτωση;",
+      "normalized_title": "ΠΡΟΦΗΤΕΙΑ, ΠΡΟΕΙΔΟΠΟΙΗΣΗ Η ΤΡΟΜΑΚΤΙΚΗ ΣΥΜΠΤΩΣΗ;",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460771/fotia-se-oinopoieio-stin-patra-akoystikan-ekrixeis-megali-kinitopoiisi-vinteo/"
+        "https://www.efsyn.gr/gallery/profiteia-proeidopoiisi-i-tromaktiki-symptosi/",
+        "https://www.efsyn.gr/gallery/oi-didymoi-pyrgoi-toy-skroytz-mak-ntak/",
+        "https://www.efsyn.gr/nisides/1460525/patrida-moy-i-tinos/",
+        "https://www.efsyn.gr/nisides/1460501/i-politistiki-atzenta-tis-evdomadas-05-09-12-09-26/",
+        "https://www.efsyn.gr/kosmos/1460546/o-kanadas-gyrnaei-tin-plati-stis-ipa-logo-tramp-meionei-tis-apostaseis-se-ee/",
+        "https://www.efsyn.gr/ellada/1460460/proto-koydoyni-me-21-000-kena-sta-sholeia-ekpaideytikoi-me-mia-valitsa-sto-heri-kai-enoikia-fotia/",
+        "https://www.efsyn.gr/protoselida/7-deth-7-apotyhies/"
       ],
-      "seen_at_utc": "2026-09-05T05:51:42.005901+00:00"
+      "seen_at_utc": "2026-09-05T06:16:56.650022+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/sports/football/sto-panthessaliko-me-stoxo-to-3-3-o-olympiakos-kontraretai-entos-edras-me-ton-ari-i-aek/",
-      "title": "Στο Πανθεσσαλικό με στόχο το 3/3 ο Ολυμπιακός – Κοντράρεται εντός έδρας με τον Άρη η ΑΕΚ",
-      "normalized_title": "ΣΤΟ ΠΑΝΘΕΣΣΑΛΙΚΟ ΜΕ ΣΤΟΧΟ ΤΟ 3/3 Ο ΟΛΥΜΠΙΑΚΟΣ – ΚΟΝΤΡΑΡΕΤΑΙ ΕΝΤΟΣ ΕΔΡΑΣ ΜΕ ΤΟΝ ΑΡΗ Η ΑΕΚ",
+      "url": "https://www.in.gr/2026/09/05/greece/kypseli-eksetasi-apo-psyxiatro-sto-zeygari-zita-o-dikigoros-tous-apo-to-2020-oi-protes-kataggelies-gia-tin-oikogeneia-tis-frikis/",
+      "title": "Κυψέλη: Εξέταση από ψυχίατρο στο ζευγάρι ζητά ο δικηγόρος τους – Από το 2020 οι πρώτες καταγγελίες για την οικογένεια της φρίκης",
+      "normalized_title": "ΚΥΨΕΛΗ: ΕΞΕΤΑΣΗ ΑΠΟ ΨΥΧΙΑΤΡΟ ΣΤΟ ΖΕΥΓΑΡΙ ΖΗΤΑ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥΣ – ΑΠΟ ΤΟ 2020 ΟΙ ΠΡΩΤΕΣ ΚΑΤΑΓΓΕΛΙΕΣ ΓΙΑ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΤΗΣ ΦΡΙΚΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/sports/football/sto-panthessaliko-me-stoxo-to-3-3-o-olympiakos-kontraretai-entos-edras-me-ton-ari-i-aek/",
-        "https://www.in.gr/2026/09/05/greece/galatsi-anilikoi-pou-petousan-krotides-prokalesan-fotia-sto-alsos-veikou-vinteo/",
-        "https://www.in.gr/2026/09/05/sports/othersports/lexetska-tsitsipas-1-3-apo-anatropi-se-anatropi-kai-gia-proti-fora-stous-16-tou-us-open/",
-        "https://www.in.gr/2026/09/05/plus/vita/yparxei-mystiki-syntagi-gia-mia-eytyxismeni-sxesi/",
-        "https://www.in.gr/2026/09/05/economy/e-efka-dypa-poioi-pane-tameio-eos-11-septemvriou/"
+        "https://www.in.gr/2026/09/05/greece/kypseli-eksetasi-apo-psyxiatro-sto-zeygari-zita-o-dikigoros-tous-apo-to-2020-oi-protes-kataggelies-gia-tin-oikogeneia-tis-frikis/",
+        "https://www.in.gr/2026/09/05/greece/kykloforiakes-rythmiseis-sto-metro-logo-ergon-poioi-stathmoi-tha-kleinoun-kai-pote/",
+        "https://www.in.gr/2026/09/05/greece/deth-sygkentroseis-kai-poreies-simera-drakonteia-metra-kykloforiakes-rythmiseis-kleistoi-stathmoi-metro/"
       ],
-      "seen_at_utc": "2026-09-05T05:51:42.005870+00:00"
+      "seen_at_utc": "2026-09-05T06:16:56.650008+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T05:51:42.006012+00:00"
+  "updated_at_utc": "2026-09-05T06:16:56.650106+00:00"
 }
