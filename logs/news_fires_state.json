@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/amyna/564441301/nekroi-oi-dyo-pilotoi-toy-phantom-poy-synetrivi-stin-tanagra/",
-      "title": "Νεκροί οι δύο πιλότοι του Phantom που συνετρίβη στην Τανάγρα",
-      "normalized_title": "ΝΕΚΡΟΙ ΟΙ ΔΥΟ ΠΙΛΟΤΟΙ ΤΟΥ PHANTOM ΠΟΥ ΣΥΝΕΤΡΙΒΗ ΣΤΗΝ ΤΑΝΑΓΡΑ",
+      "url": "https://www.kathimerini.gr/society/564441373/syntrivi-phantom-kiryxi-triimeroy-penthoys-stis-enoples-dynameis/",
+      "title": "Συντριβή Phantom: Κήρυξη τριήμερου πένθους στις Ενοπλες Δυνάμεις",
+      "normalized_title": "ΣΥΝΤΡΙΒΗ PHANTOM: ΚΗΡΥΞΗ ΤΡΙΗΜΕΡΟΥ ΠΕΝΘΟΥΣ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/amyna/564441301/nekroi-oi-dyo-pilotoi-toy-phantom-poy-synetrivi-stin-tanagra/"
+        "https://www.kathimerini.gr/society/564441373/syntrivi-phantom-kiryxi-triimeroy-penthoys-stis-enoples-dynameis/",
+        "https://www.kathimerini.gr/politics/amyna/564441376/anakoinosi-gea-gia-tin-ptosi-toy-phantom-stin-tanagra/"
       ],
-      "seen_at_utc": "2026-09-05T15:51:05.426890+00:00"
+      "seen_at_utc": "2026-09-05T16:16:56.274230+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874454/poreies-sti-thessaloniki-enopsei-tis-omilias-mitsotaki-sti-deth-auximena-ta-metra-tis-elas-deite-eikones/?utm_source=rss",
-      "title": "Πορείες στη Θεσσαλονίκη ενόψει της ομιλίας Μητσοτάκη στη ΔΕΘ, αυξημένα τα μέτρα της ΕΛΑΣ, δείτε εικόνες",
-      "normalized_title": "ΠΟΡΕΙΕΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΕΝΟΨΕΙ ΤΗΣ ΟΜΙΛΙΑΣ ΜΗΤΣΟΤΑΚΗ ΣΤΗ ΔΕΘ, ΑΥΞΗΜΕΝΑ ΤΑ ΜΕΤΡΑ ΤΗΣ ΕΛΑΣ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874461/i-anakoinosi-tou-gea-gia-tin-ptosi-tou-phantom-stin-tanagra-triimero-penthos-stis-enoples-dunameis/?utm_source=rss",
+      "title": "Η ανακοίνωση του ΓΕΑ για την πτώση του Phantom στην Τανάγρα, τριήμερο πένθος στις Ένοπλες Δυνάμεις",
+      "normalized_title": "Η ΑΝΑΚΟΙΝΩΣΗ ΤΟΥ ΓΕΑ ΓΙΑ ΤΗΝ ΠΤΩΣΗ ΤΟΥ PHANTOM ΣΤΗΝ ΤΑΝΑΓΡΑ, ΤΡΙΗΜΕΡΟ ΠΕΝΘΟΣ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874454/poreies-sti-thessaloniki-enopsei-tis-omilias-mitsotaki-sti-deth-auximena-ta-metra-tis-elas-deite-eikones/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874461/i-anakoinosi-tou-gea-gia-tin-ptosi-tou-phantom-stin-tanagra-triimero-penthos-stis-enoples-dunameis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T15:17:14.948567+00:00"
+      "seen_at_utc": "2026-09-05T16:16:56.274290+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461076/tanagra-oi-teleytaies-stigmes-toy-moiraioy-phantom-eikones-prin-kai-meta-tin-ptosi-vinteo/",
-      "title": "Τανάγρα: Οι τελευταίες στιγμές του μοιραίου Phantom – Εικόνες πριν και μετά την πτώση [βίντεο]",
-      "normalized_title": "ΤΑΝΑΓΡΑ: ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΣΤΙΓΜΕΣ ΤΟΥ ΜΟΙΡΑΙΟΥ PHANTOM – ΕΙΚΟΝΕΣ ΠΡΙΝ ΚΑΙ ΜΕΤΑ ΤΗΝ ΠΤΩΣΗ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1461085/dendias-gia-ti-syntrivi-toy-phantom-vathytati-thlipsi-gia-tin-apoleia-tis-zois-ton-dyo-piloton/",
+      "title": "Δένδιας για τη συντριβή του Phantom: Βαθύτατη θλίψη για την απώλεια της ζωής των δύο πιλότων",
+      "normalized_title": "ΔΕΝΔΙΑΣ ΓΙΑ ΤΗ ΣΥΝΤΡΙΒΗ ΤΟΥ PHANTOM: ΒΑΘΥΤΑΤΗ ΘΛΙΨΗ ΓΙΑ ΤΗΝ ΑΠΩΛΕΙΑ ΤΗΣ ΖΩΗΣ ΤΩΝ ΔΥΟ ΠΙΛΟΤΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461076/tanagra-oi-teleytaies-stigmes-toy-moiraioy-phantom-eikones-prin-kai-meta-tin-ptosi-vinteo/",
-        "https://www.efsyn.gr/ellada/1461070/thessaloniki-nekri-30hroni-se-trohaio-stin-periohi-toy-eyosmoy/"
+        "https://www.efsyn.gr/politiki/1461085/dendias-gia-ti-syntrivi-toy-phantom-vathytati-thlipsi-gia-tin-apoleia-tis-zois-ton-dyo-piloton/",
+        "https://www.efsyn.gr/athlitismos/1460840/super-league-boytia-sto-hrysafi/",
+        "https://www.efsyn.gr/politiki/1461081/doyroy-gia-syntrivi-phantom-stin-tanagra-i-5i-septemvrioy-apotelei-mayri-imera-gia-ti-megali-oikogeneia-tis-pa/"
       ],
-      "seen_at_utc": "2026-09-05T15:51:05.426974+00:00"
+      "seen_at_utc": "2026-09-05T16:16:56.274276+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/greece/dyo-polites-traymatistikan-apo-ta-thraysmata-tou-moiraiou-phantom/",
-      "title": "Δύο πολίτες τραυματίστηκαν από τα θραύσματα του μοιραίου Phantom",
-      "normalized_title": "ΔΥΟ ΠΟΛΙΤΕΣ ΤΡΑΥΜΑΤΙΣΤΗΚΑΝ ΑΠΟ ΤΑ ΘΡΑΥΣΜΑΤΑ ΤΟΥ ΜΟΙΡΑΙΟΥ PHANTOM",
+      "url": "https://www.in.gr/2026/09/05/politics/epikairotita/kke-na-dothoun-amesa-oles-oi-apantiseis-gia-ta-aitia-tis-syntrivis-polemikou-aeroskafous-stin-tanagra/",
+      "title": "ΚΚΕ: Να δοθούν άμεσα όλες οι απαντήσεις για τα αίτια της συντριβής πολεμικού αεροσκάφους στην Τανάγρα",
+      "normalized_title": "ΚΚΕ: ΝΑ ΔΟΘΟΥΝ ΑΜΕΣΑ ΟΛΕΣ ΟΙ ΑΠΑΝΤΗΣΕΙΣ ΓΙΑ ΤΑ ΑΙΤΙΑ ΤΗΣ ΣΥΝΤΡΙΒΗΣ ΠΟΛΕΜΙΚΟΥ ΑΕΡΟΣΚΑΦΟΥΣ ΣΤΗΝ ΤΑΝΑΓΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/greece/dyo-polites-traymatistikan-apo-ta-thraysmata-tou-moiraiou-phantom/",
-        "https://www.in.gr/matchcenter/5943245/",
-        "https://www.in.gr/2026/09/05/greece/antipterarxos-e-a-gia-tin-tragodia-stin-tanagra-to-aeroskafos-exase-tin-isxy-tou-oi-pilotoi-palepsan-na-to-sosoun/",
-        "https://www.in.gr/2026/09/05/sports/football/i-tselsi-tha-apozimiosei-tous-opadous-tis-pou-agorasan-fanela-tou-martines-me-to-26-meta-tin-allagi-arithmou/"
+        "https://www.in.gr/2026/09/05/politics/epikairotita/kke-na-dothoun-amesa-oles-oi-apantiseis-gia-ta-aitia-tis-syntrivis-polemikou-aeroskafous-stin-tanagra/",
+        "https://www.in.gr/2026/09/05/politics/epikairotita/dendias-gia-tanagra-vathytati-i-thlipsi-mas-triimero-penthos-stis-enoples-dynameis/",
+        "https://www.in.gr/2026/09/05/sports/football/mantsester-siti-koventri-1-0-me-ypografi-xaalant-to-3x3/",
+        "https://www.in.gr/2026/09/05/politics/epikairotita/elas-na-diereynithoun-se-vathos-ta-aitia-tou-dystyximatos-stin-tanagra-gia-tin-apofygi-paromoion-symvanton/",
+        "https://www.in.gr/2026/09/05/life/culture-live/o-rompert-patinson-exei-mia-epithymia-na-aresei-ston-kris-xansen-to-primetime/",
+        "https://www.in.gr/2026/09/05/politics/politiki-grammateia/koufonikolakou-pali-se-kathestos-sygxysis-vriskontai-stin-nd-i-a-sdoukou-proponeitai-apo-tora-gia-tin-antipoliteysi/",
+        "https://www.in.gr/matchcenter/5749666/",
+        "https://www.in.gr/2026/09/05/greece/sovaro-troxaio-sti-lamia-ix-trakare-stathmeymena-oximata-kai-sygkroustike-metopika-me-allo-aytokinito/"
       ],
-      "seen_at_utc": "2026-09-05T15:51:05.426940+00:00"
+      "seen_at_utc": "2026-09-05T16:16:56.274256+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T15:51:05.427050+00:00"
+  "updated_at_utc": "2026-09-05T16:16:56.274346+00:00"
 }
