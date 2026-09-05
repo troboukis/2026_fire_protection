@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564441544/scope-pos-tha-katalavete-oti-to-xepoylima-ton-omologon-einai-krisi/",
-      "title": "Scope: Πώς θα καταλάβετε ότι το ξεπούλημα των ομολόγων είναι κρίση",
-      "normalized_title": "SCOPE: ΠΩΣ ΘΑ ΚΑΤΑΛΑΒΕΤΕ ΟΤΙ ΤΟ ΞΕΠΟΥΛΗΜΑ ΤΩΝ ΟΜΟΛΟΓΩΝ ΕΙΝΑΙ ΚΡΙΣΗ",
+      "url": "https://www.kathimerini.gr/eortologio/564422008/eortologio-poioi-giortazoyn-simera-6-septemvrioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 6 Σεπτεμβρίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 6 ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564441544/scope-pos-tha-katalavete-oti-to-xepoylima-ton-omologon-einai-krisi/",
-        "https://www.kathimerini.gr/culture/564439438/giagioi-koysama-1929-2026-airetiki-gennaia-megalofyis-kai-anti-ego/"
+        "https://www.kathimerini.gr/eortologio/564422008/eortologio-poioi-giortazoyn-simera-6-septemvrioy/",
+        "https://www.kathimerini.gr/culture/564439480/afairontas-ta-peritta-tis-athinas/"
       ],
-      "seen_at_utc": "2026-09-05T20:51:04.486000+00:00"
+      "seen_at_utc": "2026-09-05T21:17:05.037312+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874525/eklepsan-40000-euro-apo-spiti-stis-spetses-kai-to-eskasan-me-thalassio-taxi-tous-sunelavan-stin-argolida/?utm_source=rss",
-      "title": "Έκλεψαν 40.000 ευρώ από σπίτι στις Σπέτσες και το έσκασαν με θαλάσσιο ταξί, τους συνέλαβαν στην Αργολίδα",
-      "normalized_title": "ΕΚΛΕΨΑΝ 40.000 ΕΥΡΩ ΑΠΟ ΣΠΙΤΙ ΣΤΙΣ ΣΠΕΤΣΕΣ ΚΑΙ ΤΟ ΕΣΚΑΣΑΝ ΜΕ ΘΑΛΑΣΣΙΟ ΤΑΞΙ, ΤΟΥΣ ΣΥΝΕΛΑΒΑΝ ΣΤΗΝ ΑΡΓΟΛΙΔΑ",
+      "url": "https://www.protothema.gr/greece/article/1874539/tragodia-sta-isthmia-korinthias-nekros-psaras-meta-ti-sugrousi-fortigou-ploiou-me-lemvo/?utm_source=rss",
+      "title": "Τραγωδία στα Ίσθμια Κορινθίας: Νεκρός ψαράς μετά τη σύγκρουση θαλαμηγού με λέμβο",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΑ ΙΣΘΜΙΑ ΚΟΡΙΝΘΙΑΣ: ΝΕΚΡΟΣ ΨΑΡΑΣ ΜΕΤΑ ΤΗ ΣΥΓΚΡΟΥΣΗ ΘΑΛΑΜΗΓΟΥ ΜΕ ΛΕΜΒΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874525/eklepsan-40000-euro-apo-spiti-stis-spetses-kai-to-eskasan-me-thalassio-taxi-tous-sunelavan-stin-argolida/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874539/tragodia-sta-isthmia-korinthias-nekros-psaras-meta-ti-sugrousi-fortigou-ploiou-me-lemvo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T19:51:08.909261+00:00"
+      "seen_at_utc": "2026-09-05T21:17:05.037435+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1461209/panathinaikos-minyma-stirixis-pros-ton-agioymp-el-kaampi-meta-ton-sokaristiko-traymatismo-toy/",
-      "title": "Παναθηναϊκός: Μήνυμα στήριξης προς τον Αγιούμπ Ελ Κααμπί μετά τον σοκαριστικό τραυματισμό του",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΜΗΝΥΜΑ ΣΤΗΡΙΞΗΣ ΠΡΟΣ ΤΟΝ ΑΓΙΟΥΜΠ ΕΛ ΚΑΑΜΠΙ ΜΕΤΑ ΤΟΝ ΣΟΚΑΡΙΣΤΙΚΟ ΤΡΑΥΜΑΤΙΣΜΟ ΤΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1461221/antallagi-pligmaton-sto-ormoyz-iranika-antipoina-se-petrelaiofora-poy-syndeontan-me-tis-ipa/",
+      "title": "Ανταλλαγή πληγμάτων στο Ορμούζ: Ιρανικά αντίποινα σε πετρελαιοφόρα που συνδέονταν με τις ΗΠΑ",
+      "normalized_title": "ΑΝΤΑΛΛΑΓΗ ΠΛΗΓΜΑΤΩΝ ΣΤΟ ΟΡΜΟΥΖ: ΙΡΑΝΙΚΑ ΑΝΤΙΠΟΙΝΑ ΣΕ ΠΕΤΡΕΛΑΙΟΦΟΡΑ ΠΟΥ ΣΥΝΔΕΟΝΤΑΝ ΜΕ ΤΙΣ ΗΠΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1461209/panathinaikos-minyma-stirixis-pros-ton-agioymp-el-kaampi-meta-ton-sokaristiko-traymatismo-toy/",
-        "https://www.efsyn.gr/podcast/afylakti-diavasi-i-eisvoli-ton-nazi-stin-polonia/"
+        "https://www.efsyn.gr/kosmos/1461221/antallagi-pligmaton-sto-ormoyz-iranika-antipoina-se-petrelaiofora-poy-syndeontan-me-tis-ipa/",
+        "https://www.efsyn.gr/politiki/1461219/kke-o-orizontas-gia-tin-ellada-toy-2030-toy-k-mitsotaki-gia-ton-lao-tha-ehei-mono-anasfaleia-kai-avevaiotita/",
+        "https://www.efsyn.gr/kosmos/1461214/rosika-mme-teleiose-i-synantisi-poytin-me-goyitkof-kai-koysner-meta-apo-treis-ores/",
+        "https://www.efsyn.gr/ellada/1461212/sygkroysi-thalamigoy-me-lemvo-sta-isthmia-horis-tis-aisthiseis-toy-ena-atomo/"
       ],
-      "seen_at_utc": "2026-09-05T20:51:04.486116+00:00"
+      "seen_at_utc": "2026-09-05T21:17:05.037411+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/sports/football/roma-atalanta-2-1-ekane-to-3x3-me-apisteyti-anatropi-kai-gkol-sto-89-kai-sto-93/",
-      "title": "Ρόμα-Αταλάντα 2-1: ‘Εκανε το 3Χ3 με απίστευτη ανατροπή και γκολ στο 89′ και στο 93’",
-      "normalized_title": "ΡΟΜΑ-ΑΤΑΛΑΝΤΑ 2-1: ‘ΕΚΑΝΕ ΤΟ 3Χ3 ΜΕ ΑΠΙΣΤΕΥΤΗ ΑΝΑΤΡΟΠΗ ΚΑΙ ΓΚΟΛ ΣΤΟ 89′ ΚΑΙ ΣΤΟ 93’",
+      "url": "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/to-proto-containership-diepleyse-tin-arktiki-allazei-o-xartis-ton-diadromon/",
+      "title": "Το πρώτο containership διέπλευσε την Αρκτική – Αλλάζει ο χάρτης των διαδρομών",
+      "normalized_title": "ΤΟ ΠΡΩΤΟ CONTAINERSHIP ΔΙΕΠΛΕΥΣΕ ΤΗΝ ΑΡΚΤΙΚΗ – ΑΛΛΑΖΕΙ Ο ΧΑΡΤΗΣ ΤΩΝ ΔΙΑΔΡΟΜΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/sports/football/roma-atalanta-2-1-ekane-to-3x3-me-apisteyti-anatropi-kai-gkol-sto-89-kai-sto-93/",
-        "https://www.in.gr/2026/09/05/politics/politiki-grammateia/elas-gia-mitsotaki-prospathise-simera-na-emfanistei-os-o-sotiras-apo-tis-synepeies-tis-eptaetous-politikis-tou/",
-        "https://www.in.gr/2026/09/05/world/mporei-i-skia-ton-dentron-na-nikisei-tous-kaysones-pou-mastizoun-tin-eyropi/"
+        "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/to-proto-containership-diepleyse-tin-arktiki-allazei-o-xartis-ton-diadromon/",
+        "https://www.in.gr/2026/09/06/greece/enas-nekros-se-sygkrousi-thalamigou-me-lemvo-ston-kolpo-ton-kegxreon/",
+        "https://www.in.gr/2026/09/06/greece/giorti-simera-6-septemvriou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/09/06/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-kyriaki-06-09-2026/",
+        "https://www.in.gr/2026/09/05/politics/epikairotita/pasok-i-nd-zita-nea-tetraetia-gia-na-kanei-osa-den-ekane-prospathei-me-imimetra-na-eksapatisei-gia-na-kratithei-stin-eksousia/"
       ],
-      "seen_at_utc": "2026-09-05T20:51:04.486055+00:00"
+      "seen_at_utc": "2026-09-05T21:17:05.037363+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T20:51:04.486188+00:00"
+  "updated_at_utc": "2026-09-05T21:17:05.037509+00:00"
 }
