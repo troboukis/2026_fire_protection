@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564439666/metra-21-2-dis-eyro-se-epta-deth-tis-n-d-apo-to-2019-eos-to-2025/",
-      "title": "Μέτρα 21,2 δισ. ευρώ σε επτά ΔΕΘ της Ν.Δ. από το 2019 έως το 2025",
-      "normalized_title": "ΜΕΤΡΑ 21,2 ΔΙΣ. ΕΥΡΩ ΣΕ ΕΠΤΑ ΔΕΘ ΤΗΣ Ν.Δ. ΑΠΟ ΤΟ 2019 ΕΩΣ ΤΟ 2025",
+      "url": "https://www.kathimerini.gr/society/564441115/l-pentelis-vinteo-apo-ti-stigmi-poy-21chronos-odigos-paraviazei-to-kokkino-kindynepse-pezos/",
+      "title": "Λ. Πεντέλης: Βίντεο από τη στιγμή που 21χρονος οδηγός παραβιάζει το «κόκκινο» – Κινδύνεψε πεζός",
+      "normalized_title": "Λ. ΠΕΝΤΕΛΗΣ: ΒΙΝΤΕΟ ΑΠΟ ΤΗ ΣΤΙΓΜΗ ΠΟΥ 21ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΠΑΡΑΒΙΑΖΕΙ ΤΟ «ΚΟΚΚΙΝΟ» – ΚΙΝΔΥΝΕΨΕ ΠΕΖΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564439666/metra-21-2-dis-eyro-se-epta-deth-tis-n-d-apo-to-2019-eos-to-2025/",
-        "https://www.kathimerini.gr/politics/564441097/i-epelasi-ton-woke/",
-        "https://www.kathimerini.gr/opinion/sketches/564441043/skitso-toy-andrea-petroylaki-05-09-26/"
+        "https://www.kathimerini.gr/society/564441115/l-pentelis-vinteo-apo-ti-stigmi-poy-21chronos-odigos-paraviazei-to-kokkino-kindynepse-pezos/"
       ],
-      "seen_at_utc": "2026-09-05T11:17:05.702316+00:00"
+      "seen_at_utc": "2026-09-05T11:30:04.263904+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1259,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874401/messinia-anatinaxan-atm-sti-stoupa-kai-piran-pano-200000-euro-deite-fotografies/?utm_source=rss",
-      "title": "Μεσσηνία: Ανατίναξαν ATM στη Στούπα και πήραν πάνω 200.000 ευρώ, δείτε φωτογραφίες",
-      "normalized_title": "ΜΕΣΣΗΝΙΑ: ΑΝΑΤΙΝΑΞΑΝ ATM ΣΤΗ ΣΤΟΥΠΑ ΚΑΙ ΠΗΡΑΝ ΠΑΝΩ 200.000 ΕΥΡΩ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874403/fotia-tora-sto-kato-samiko-ileias-kaiei-xera-horta/?utm_source=rss",
+      "title": "Φωτιά στο Κάτω Σαμικό Ηλείας, καίει ξερά χόρτα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΚΑΤΩ ΣΑΜΙΚΟ ΗΛΕΙΑΣ, ΚΑΙΕΙ ΞΕΡΑ ΧΟΡΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874401/messinia-anatinaxan-atm-sti-stoupa-kai-piran-pano-200000-euro-deite-fotografies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874403/fotia-tora-sto-kato-samiko-ileias-kaiei-xera-horta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T11:17:05.702445+00:00"
+      "seen_at_utc": "2026-09-05T11:30:04.264018+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1460748/deth-epta-hronia-koyfion-yposheseon-oi-statistikes-diapseydoyn-to-orama-mitsotaki/",
-      "title": "ΔΕΘ: Επτά χρόνια κούφιων υποσχέσεων – Οι στατιστικές διαψεύδουν το «όραμα» Μητσοτάκη",
-      "normalized_title": "ΔΕΘ: ΕΠΤΑ ΧΡΟΝΙΑ ΚΟΥΦΙΩΝ ΥΠΟΣΧΕΣΕΩΝ – ΟΙ ΣΤΑΤΙΣΤΙΚΕΣ ΔΙΑΨΕΥΔΟΥΝ ΤΟ «ΟΡΑΜΑ» ΜΗΤΣΟΤΑΚΗ",
+      "url": "https://www.efsyn.gr/politiki/1460965/i-voyltepsi-vrike-ti-ftaiei-gia-ta-kena-sta-sholeia-oi-mises-emfanizontai-egkymonoyses-pyra-apo-pasok/",
+      "title": "Η Βούλτεψη βρήκε τι φταίει για τα κενά στα σχολεία: «Οι μισές εμφανίζονται εγκυμονούσες» – Πυρά από ΠΑΣΟΚ και ΕΛΑΣ",
+      "normalized_title": "Η ΒΟΥΛΤΕΨΗ ΒΡΗΚΕ ΤΙ ΦΤΑΙΕΙ ΓΙΑ ΤΑ ΚΕΝΑ ΣΤΑ ΣΧΟΛΕΙΑ: «ΟΙ ΜΙΣΕΣ ΕΜΦΑΝΙΖΟΝΤΑΙ ΕΓΚΥΜΟΝΟΥΣΕΣ» – ΠΥΡΑ ΑΠΟ ΠΑΣΟΚ ΚΑΙ ΕΛΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1460748/deth-epta-hronia-koyfion-yposheseon-oi-statistikes-diapseydoyn-to-orama-mitsotaki/"
+        "https://www.efsyn.gr/politiki/1460965/i-voyltepsi-vrike-ti-ftaiei-gia-ta-kena-sta-sholeia-oi-mises-emfanizontai-egkymonoyses-pyra-apo-pasok/"
       ],
-      "seen_at_utc": "2026-09-05T11:17:05.702409+00:00"
+      "seen_at_utc": "2026-09-05T11:30:04.263997+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/politics/epikairotita/vidcast-pasok-ara-on-air-dynati-ellada-kai-stin-eyropi/",
-      "title": "Vidcast «ΠΑΣΟΚ… άρα on air»: Δυνατή Ελλάδα και στην Ευρώπη",
-      "normalized_title": "VIDCAST «ΠΑΣΟΚ… ΑΡΑ ON AIR»: ΔΥΝΑΤΗ ΕΛΛΑΔΑ ΚΑΙ ΣΤΗΝ ΕΥΡΩΠΗ",
+      "url": "https://www.in.gr/matchcenter/5795443/",
+      "title": "LIVE: Νιούκαστλ – Μπόρνμουθ",
+      "normalized_title": "LIVE: ΝΙΟΥΚΑΣΤΛ – ΜΠΟΡΝΜΟΥΘ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/politics/epikairotita/vidcast-pasok-ara-on-air-dynati-ellada-kai-stin-eyropi/",
-        "https://www.in.gr/2026/09/05/world/rosia-sti-mosxa-eftasan-gouitkof-kai-kousner-gia-ton-neo-gyro-synomilion/",
-        "https://www.in.gr/2026/09/05/sports/on-field/to-gkol-stin-tripoli-deixnei-ton-dromo-ston-olympiako/",
-        "https://www.in.gr/2026/09/05/life/music/ntoli-parton-antikatastathike-to-asteri-sto-xoligount-pou-vandalistike/",
-        "https://www.in.gr/2026/09/05/world/rosia-oukrania-synexizontai-oi-ekaterothen-epitheseis-toulaxiston-10-nekroi/"
+        "https://www.in.gr/matchcenter/5795443/",
+        "https://www.in.gr/2026/09/05/politics/politiki-grammateia/pasok-kata-voultepsi-ta-kena-sta-sxoleia-ta-egkymonei-i-kyvernitiki-aneparkeia/",
+        "https://www.in.gr/2026/09/05/greece/santorini-epithesi-se-aktivistries-tis-peta-diamartyrontan-gia-ti-xrisi-gaidourion-sti-metafora-touriston/"
       ],
-      "seen_at_utc": "2026-09-05T11:17:05.702363+00:00"
+      "seen_at_utc": "2026-09-05T11:30:04.263947+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T11:17:05.702515+00:00"
+  "updated_at_utc": "2026-09-05T11:30:04.264099+00:00"
 }
