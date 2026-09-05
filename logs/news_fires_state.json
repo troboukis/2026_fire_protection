@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564441070/poros-traymatismos-aystraloy-loyomenoy-apo-tachyploo/",
-      "title": "Πόρος: Τραυματισμός Αυστραλού λουόμενου από ταχύπλοο",
-      "normalized_title": "ΠΟΡΟΣ: ΤΡΑΥΜΑΤΙΣΜΟΣ ΑΥΣΤΡΑΛΟΥ ΛΟΥΟΜΕΝΟΥ ΑΠΟ ΤΑΧΥΠΛΟΟ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564439249/i-odysseia-tis-stathmeysis-stin-athina/",
+      "title": "Η οδύσσεια της στάθμευσης στην Αθήνα",
+      "normalized_title": "Η ΟΔΥΣΣΕΙΑ ΤΗΣ ΣΤΑΘΜΕΥΣΗΣ ΣΤΗΝ ΑΘΗΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564441070/poros-traymatismos-aystraloy-loyomenoy-apo-tachyploo/"
+        "https://www.kathimerini.gr/society/reportaz/564439249/i-odysseia-tis-stathmeysis-stin-athina/",
+        "https://www.kathimerini.gr/culture/564439486/to-deltio-ton-media-platforma-kai-me-paichnidia/",
+        "https://www.kathimerini.gr/society/564441082/achaia-clauss-to-lavomeno-ktirio-tha-xanaftiachtei/"
       ],
-      "seen_at_utc": "2026-09-05T10:29:49.189535+00:00"
+      "seen_at_utc": "2026-09-05T10:51:05.836007+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874378/poros-tahuploo-traumatise-australo-louomeno-sto-podi-metaferthike-sto-nosokomeio-naupliou/?utm_source=rss",
-      "title": "Πόρος: Ταχύπλοο τραυμάτισε Αυστραλό λουόμενο στο πόδι, μεταφέρθηκε στο νοσοκομείο Ναυπλίου",
-      "normalized_title": "ΠΟΡΟΣ: ΤΑΧΥΠΛΟΟ ΤΡΑΥΜΑΤΙΣΕ ΑΥΣΤΡΑΛΟ ΛΟΥΟΜΕΝΟ ΣΤΟ ΠΟΔΙ, ΜΕΤΑΦΕΡΘΗΚΕ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΝΑΥΠΛΙΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1874396/epithesi-se-aktivistries-sti-sadorini-pou-diamarturodan-gia-ti-hrisi-gaidourion-sti-metafora-touriston-deite-video/?utm_source=rss",
+      "title": "Επίθεση σε ακτιβίστριες στη Σαντορίνη που διαμαρτύρονταν για τη χρήση γαϊδουριών στη μεταφορά τουριστών, δείτε βίντεο",
+      "normalized_title": "ΕΠΙΘΕΣΗ ΣΕ ΑΚΤΙΒΙΣΤΡΙΕΣ ΣΤΗ ΣΑΝΤΟΡΙΝΗ ΠΟΥ ΔΙΑΜΑΡΤΥΡΟΝΤΑΝ ΓΙΑ ΤΗ ΧΡΗΣΗ ΓΑΙΔΟΥΡΙΩΝ ΣΤΗ ΜΕΤΑΦΟΡΑ ΤΟΥΡΙΣΤΩΝ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874378/poros-tahuploo-traumatise-australo-louomeno-sto-podi-metaferthike-sto-nosokomeio-naupliou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874396/epithesi-se-aktivistries-sti-sadorini-pou-diamarturodan-gia-ti-hrisi-gaidourion-sti-metafora-touriston-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T10:29:49.189642+00:00"
+      "seen_at_utc": "2026-09-05T10:51:05.836113+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460940/orlando-lgbt-gia-ta-dyo-fyla-ergaleiopoiisi-ton-koyir-zoon-gia-ti-syspeirosi-toy-syntiritikoy-koinoy/",
-      "title": "Orlando LGBT+ για «τα δύο φύλα»: Εργαλειοποίηση των κουήρ ζωών για τη συσπείρωση του συντηρητικού κοινού",
-      "normalized_title": "ORLANDO LGBT+ ΓΙΑ «ΤΑ ΔΥΟ ΦΥΛΑ»: ΕΡΓΑΛΕΙΟΠΟΙΗΣΗ ΤΩΝ ΚΟΥΗΡ ΖΩΩΝ ΓΙΑ ΤΗ ΣΥΣΠΕΙΡΩΣΗ ΤΟΥ ΣΥΝΤΗΡΗΤΙΚΟΥ ΚΟΙΝΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1460954/papadopoyloy-gia-patriotiki-eisfora-i-kyvernisi-ektithetai-me-ta-mathimatika-toy-zikoy-kai-tin-anotati-mpakaliki/",
+      "title": "Παπαδοπούλου για πατριωτική εισφορά: « Η κυβέρνηση εκτίθεται με τα μαθηματικά του Ζήκου και την ανωτάτη μπακαλική»",
+      "normalized_title": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΓΙΑ ΠΑΤΡΙΩΤΙΚΗ ΕΙΣΦΟΡΑ: « Η ΚΥΒΕΡΝΗΣΗ ΕΚΤΙΘΕΤΑΙ ΜΕ ΤΑ ΜΑΘΗΜΑΤΙΚΑ ΤΟΥ ΖΗΚΟΥ ΚΑΙ ΤΗΝ ΑΝΩΤΑΤΗ ΜΠΑΚΑΛΙΚΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460940/orlando-lgbt-gia-ta-dyo-fyla-ergaleiopoiisi-ton-koyir-zoon-gia-ti-syspeirosi-toy-syntiritikoy-koinoy/"
+        "https://www.efsyn.gr/politiki/1460954/papadopoyloy-gia-patriotiki-eisfora-i-kyvernisi-ektithetai-me-ta-mathimatika-toy-zikoy-kai-tin-anotati-mpakaliki/",
+        "https://www.efsyn.gr/ellada/1460946/marathonas-stin-eyelpidon-i-68hroni-kai-o-eggonos-gia-tin-ypothesi-me-ta-osta-tis-ilikiomenis/"
       ],
-      "seen_at_utc": "2026-09-05T10:29:49.189624+00:00"
+      "seen_at_utc": "2026-09-05T10:51:05.836082+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/greece/marathonas-stin-eyelpidon-kori-kai-eggonos-gia-tin-ypothesi-me-ta-osta-tis-ilikiomenis-i-kataggelia-kai-oi-analipseis-tis-syntaksis/",
-      "title": "Μαραθώνας: Στην Ευελπίδων κόρη και εγγονός για την υπόθεση με τα οστά της ηλικιωμένης – Η καταγγελία και οι αναλήψεις της σύνταξης",
-      "normalized_title": "ΜΑΡΑΘΩΝΑΣ: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ ΚΟΡΗ ΚΑΙ ΕΓΓΟΝΟΣ ΓΙΑ ΤΗΝ ΥΠΟΘΕΣΗ ΜΕ ΤΑ ΟΣΤΑ ΤΗΣ ΗΛΙΚΙΩΜΕΝΗΣ – Η ΚΑΤΑΓΓΕΛΙΑ ΚΑΙ ΟΙ ΑΝΑΛΗΨΕΙΣ ΤΗΣ ΣΥΝΤΑΞΗΣ",
+      "url": "https://www.in.gr/2026/09/05/sports/basketball/ntorsei-den-eimaste-katholou-konta-se-symfonia-me-ton-olympiako/",
+      "title": "Ντόρσεϊ: «Δεν είμαστε καθόλου κοντά σε συμφωνία με τον Ολυμπιακό»",
+      "normalized_title": "ΝΤΟΡΣΕΙ: «ΔΕΝ ΕΙΜΑΣΤΕ ΚΑΘΟΛΟΥ ΚΟΝΤΑ ΣΕ ΣΥΜΦΩΝΙΑ ΜΕ ΤΟΝ ΟΛΥΜΠΙΑΚΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/greece/marathonas-stin-eyelpidon-kori-kai-eggonos-gia-tin-ypothesi-me-ta-osta-tis-ilikiomenis-i-kataggelia-kai-oi-analipseis-tis-syntaksis/",
-        "https://www.in.gr/2026/09/05/world/oi-amerikanikes-kyroseis-den-stoxeyoun-tin-tourkia-i-to-trapeziko-tis-systima-leei-o-presvis-ton-ipa-sti-xora/"
+        "https://www.in.gr/2026/09/05/sports/basketball/ntorsei-den-eimaste-katholou-konta-se-symfonia-me-ton-olympiako/",
+        "https://www.in.gr/2026/09/05/greece/dionysos-o-psaltis-epasxe-apo-psyxologika-provlimata-dystyxos-den-antekse/",
+        "https://www.in.gr/2026/09/05/economy/ot-forum/90i-deth-ot-forum-kikilias-sygkratisame-gia-deyteri-xronia-tis-times-sta-aktoploika/",
+        "https://www.in.gr/2026/09/05/sports/on-field/zota-silva-o-xrysos-sougias-tou-gkontomar/",
+        "https://www.in.gr/2026/09/05/greece/poros-traymatismos-aystralou-louomenou-apo-taxyploo/"
       ],
-      "seen_at_utc": "2026-09-05T10:29:49.189587+00:00"
+      "seen_at_utc": "2026-09-05T10:51:05.836043+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T10:29:49.189704+00:00"
+  "updated_at_utc": "2026-09-05T10:51:05.836174+00:00"
 }
