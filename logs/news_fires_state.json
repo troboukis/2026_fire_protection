@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564441286/fotia-ston-neo-koyvara-attikis-megali-kinitopoiisi-tis-pyrosvestikis/",
-      "title": "Νέος Κουβαράς: Απανθρακωμένη σορός σε αυτοκίνητο – Η φωτιά επεκτάθηκε σε δασική έκταση",
-      "normalized_title": "ΝΕΟΣ ΚΟΥΒΑΡΑΣ: ΑΠΑΝΘΡΑΚΩΜΕΝΗ ΣΟΡΟΣ ΣΕ ΑΥΤΟΚΙΝΗΤΟ – Η ΦΩΤΙΑ ΕΠΕΚΤΑΘΗΚΕ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ",
+      "url": "https://www.kathimerini.gr/society/564441346/thessaloniki-nekri-30chroni-se-trochaio-me-ilektriko-motopodilato/",
+      "title": "Θεσσαλονίκη: Νεκρή 30χρονη σε τροχαίο με ηλεκτρικό μοτοποδήλατο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΝΕΚΡΗ 30ΧΡΟΝΗ ΣΕ ΤΡΟΧΑΙΟ ΜΕ ΗΛΕΚΤΡΙΚΟ ΜΟΤΟΠΟΔΗΛΑΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564441286/fotia-ston-neo-koyvara-attikis-megali-kinitopoiisi-tis-pyrosvestikis/"
+        "https://www.kathimerini.gr/society/564441346/thessaloniki-nekri-30chroni-se-trochaio-me-ilektriko-motopodilato/",
+        "https://www.kathimerini.gr/k/sunday-edition/564441340/diavaste-stin-kathimerini-tis-kyriakis-455/",
+        "https://www.kathimerini.gr/world/564441328/oi-ipa-eplixan-tria-iranika-tanker/"
       ],
-      "seen_at_utc": "2026-09-05T14:51:49.136192+00:00"
+      "seen_at_utc": "2026-09-05T15:17:14.948480+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,40 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874448/duo-traumaties-apo-ta-thrausmata-tou-moiraiou-phantom-pou-sunetrivi-eksfendonistikan-se-megali-apostasi/?utm_source=rss",
-      "title": "Δύο άνθρωποι τραυματίστηκαν από τα συντρίμμια του μοιραίου Phantom, δείτε φωτογραφίες",
-      "normalized_title": "ΔΥΟ ΑΝΘΡΩΠΟΙ ΤΡΑΥΜΑΤΙΣΤΗΚΑΝ ΑΠΟ ΤΑ ΣΥΝΤΡΙΜΜΙΑ ΤΟΥ ΜΟΙΡΑΙΟΥ PHANTOM, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874454/poreies-sti-thessaloniki-enopsei-tis-omilias-mitsotaki-sti-deth-auximena-ta-metra-tis-elas-deite-eikones/?utm_source=rss",
+      "title": "Πορείες στη Θεσσαλονίκη ενόψει της ομιλίας Μητσοτάκη στη ΔΕΘ, αυξημένα τα μέτρα της ΕΛΑΣ, δείτε εικόνες",
+      "normalized_title": "ΠΟΡΕΙΕΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΕΝΟΨΕΙ ΤΗΣ ΟΜΙΛΙΑΣ ΜΗΤΣΟΤΑΚΗ ΣΤΗ ΔΕΘ, ΑΥΞΗΜΕΝΑ ΤΑ ΜΕΤΡΑ ΤΗΣ ΕΛΑΣ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874448/duo-traumaties-apo-ta-thrausmata-tou-moiraiou-phantom-pou-sunetrivi-eksfendonistikan-se-megali-apostasi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874447/fotia-ston-neo-kouvara-attikis-kinitopoiithikan-kai-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874445/treli-poreia-ih-sti-lamia-prosekrouse-se-stathmeumena-autokinita-kai-sugroustike-metopika-me-allo-ohima/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874454/poreies-sti-thessaloniki-enopsei-tis-omilias-mitsotaki-sti-deth-auximena-ta-metra-tis-elas-deite-eikones/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T14:51:49.136328+00:00"
+      "seen_at_utc": "2026-09-05T15:17:14.948567+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1461058/katrinis-vathia-thlipsi-gia-tin-apoleia-ton-dyo-heiriston-toy-phantom-ta-aitia-tis-tragodias-na-diereynithoyn-amesa/",
-      "title": "Κατρίνης: Βαθιά θλίψη για την απώλεια των δύο χειριστών του Phantom – Τα αίτια της τραγωδίας να διερευνηθούν άμεσα",
-      "normalized_title": "ΚΑΤΡΙΝΗΣ: ΒΑΘΙΑ ΘΛΙΨΗ ΓΙΑ ΤΗΝ ΑΠΩΛΕΙΑ ΤΩΝ ΔΥΟ ΧΕΙΡΙΣΤΩΝ ΤΟΥ PHANTOM – ΤΑ ΑΙΤΙΑ ΤΗΣ ΤΡΑΓΩΔΙΑΣ ΝΑ ΔΙΕΡΕΥΝΗΘΟΥΝ ΑΜΕΣΑ",
+      "url": "https://www.efsyn.gr/athlitismos/1460840/super-league-boytia-sto-hrysafi/",
+      "title": "Super League: Bουτιά στο χρυσάφι",
+      "normalized_title": "SUPER LEAGUE: BΟΥΤΙΑ ΣΤΟ ΧΡΥΣΑΦΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1461058/katrinis-vathia-thlipsi-gia-tin-apoleia-ton-dyo-heiriston-toy-phantom-ta-aitia-tis-tragodias-na-diereynithoyn-amesa/",
-        "https://www.efsyn.gr/politiki/1460789/tarahi-gia-samara-sto-maximoy/",
-        "https://www.efsyn.gr/stiles/1460783/o-poy-akloythaei-gaidaro-myrizei-tis-pordes-toy/",
-        "https://www.efsyn.gr/stiles/1460776/olotahos-pros-tin-apolyti-kataigida/",
-        "https://www.efsyn.gr/ellada/1461054/pyrkagia-ston-koyvara-attikis-epiheiroyn-tessera-enaeria-mesa/"
+        "https://www.efsyn.gr/athlitismos/1460840/super-league-boytia-sto-hrysafi/",
+        "https://www.efsyn.gr/ellada/1461063/ypo-elegho-i-pyrkagia-ston-neo-koyvara-attikis-entopistike-soros-entos-ih-kata-tin-katasvesi/",
+        "https://www.efsyn.gr/kosmos/1460818/i-germania-mprosta-se-istoriki-kampi/",
+        "https://www.efsyn.gr/politiki/1461060/volta-mitsotaki-sta-periptera-tis-deth-to-kokteil-me-retsina-ta-rompot-kai-i-tyhaia-synantisi-me-tin-ntora-vinteo/"
       ],
-      "seen_at_utc": "2026-09-05T14:51:49.136299+00:00"
+      "seen_at_utc": "2026-09-05T15:17:14.948541+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/greece/fotia-ston-kouvara-enas-nekros-sto-ix-pou-tylixthike-stis-floges/",
-      "title": "Φωτιά στον Κουβαρά – Ένας νεκρός στο ΙΧ που τυλίχθηκε στις φλόγες",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟΝ ΚΟΥΒΑΡΑ – ΕΝΑΣ ΝΕΚΡΟΣ ΣΤΟ ΙΧ ΠΟΥ ΤΥΛΙΧΘΗΚΕ ΣΤΙΣ ΦΛΟΓΕΣ",
+      "url": "https://www.in.gr/2026/09/05/politics/politiki-grammateia/dourou-to-nero-den-idiotikopoieitai-leme-oxi-sta-sxedia-tis-kyvernisis/",
+      "title": "Δούρου: Το νερό δεν ιδιωτικοποιείται, λέμε «όχι» στα σχέδια της κυβέρνησης",
+      "normalized_title": "ΔΟΥΡΟΥ: ΤΟ ΝΕΡΟ ΔΕΝ ΙΔΙΩΤΙΚΟΠΟΙΕΙΤΑΙ, ΛΕΜΕ «ΟΧΙ» ΣΤΑ ΣΧΕΔΙΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/greece/fotia-ston-kouvara-enas-nekros-sto-ix-pou-tylixthike-stis-floges/",
-        "https://www.in.gr/2026/09/05/sports/on-field/oratotita-miden-kai-polla-paradoksa-sti-diaitisia-tis-epoxis-tou-lanoua/",
-        "https://www.in.gr/2026/09/05/politics/epikairotita/katrinis-vathia-thlipsi-gia-tin-apoleia-ton-dyo-xeiriston-tou-phantom-apaitountai-amesi-diereynisi-kai-safeis-apantiseis/"
+        "https://www.in.gr/2026/09/05/politics/politiki-grammateia/dourou-to-nero-den-idiotikopoieitai-leme-oxi-sta-sxedia-tis-kyvernisis/",
+        "https://www.in.gr/2026/09/05/life/culture-live/oi-skines-tou-tzortz-klounei-sto-the-thin-red-line-eginan-kapnos/",
+        "https://www.in.gr/2026/09/05/sports/football/olympiakos-h-11ada-gia-to-paixnidi-me-ton-volo-sto-panthessaliko-pic/",
+        "https://www.in.gr/2026/09/05/world/ipa-xtypisame-tria-iranika-petrelaiofora-gia-kathe-dyo-ploia-mas-katastrefoume-perissotera-dika-sas/"
       ],
-      "seen_at_utc": "2026-09-05T14:51:49.136252+00:00"
+      "seen_at_utc": "2026-09-05T15:17:14.948524+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T14:51:49.136445+00:00"
+  "updated_at_utc": "2026-09-05T15:17:14.948636+00:00"
 }
