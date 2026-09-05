@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564439441/den-milame-pia/",
-      "title": "Δεν μιλάμε πια",
-      "normalized_title": "ΔΕΝ ΜΙΛΑΜΕ ΠΙΑ",
+      "url": "https://www.kathimerini.gr/economy/international/564439657/i-eyropaiki-enopoiisi-se-oikonomia-kai-amyna-prepei-na-epitachynthei/",
+      "title": "Η ευρωπαϊκή ενοποίηση σε οικονομία και άμυνα πρέπει να επιταχυνθεί",
+      "normalized_title": "Η ΕΥΡΩΠΑΙΚΗ ΕΝΟΠΟΙΗΣΗ ΣΕ ΟΙΚΟΝΟΜΙΑ ΚΑΙ ΑΜΥΝΑ ΠΡΕΠΕΙ ΝΑ ΕΠΙΤΑΧΥΝΘΕΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564439441/den-milame-pia/",
-        "https://www.kathimerini.gr/opinion/564439420/to-pasok-tote-kai-tora/",
-        "https://www.kathimerini.gr/opinion/564439603/stayros-mpenos-monaxia/",
-        "https://www.kathimerini.gr/opinion/564439423/aggeloi-kai-daimones-2/",
-        "https://www.kathimerini.gr/economy/business/564439696/prosorinos-anadochos-se-dyo-odika-erga-sdit-i-gek-terna/"
+        "https://www.kathimerini.gr/economy/international/564439657/i-eyropaiki-enopoiisi-se-oikonomia-kai-amyna-prepei-na-epitachynthei/",
+        "https://www.kathimerini.gr/economy/business/564439687/nea-monada-paragogis-schediazei-i-mparmpa-stathis/",
+        "https://www.kathimerini.gr/opinion/564439426/o-psilos-o-kontos-kai-i-aspida/"
       ],
-      "seen_at_utc": "2026-09-05T05:30:04.062038+00:00"
+      "seen_at_utc": "2026-09-05T05:51:42.005793+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,37 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874274/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
-      "title": "Tα κυριακάτικα πρωινά, γίνονται καλύτερα με efood market και Πρώτο Θέμα!",
-      "normalized_title": "TΑ ΚΥΡΙΑΚΑΤΙΚΑ ΠΡΩΙΝΑ, ΓΙΝΟΝΤΑΙ ΚΑΛΥΤΕΡΑ ΜΕ EFOOD MARKET ΚΑΙ ΠΡΩΤΟ ΘΕΜΑ!",
+      "url": "https://www.protothema.gr/greece/article/1874279/mauri-thalassa-htupima-drone-sto-ellinika-diaheirizomeno-suezmax-siren/?utm_source=rss",
+      "title": "Μαύρη Θάλασσα: Χτύπημα drone στο ελληνικά διαχειριζόμενο Suezmax «Siren»",
+      "normalized_title": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ: ΧΤΥΠΗΜΑ DRONE ΣΤΟ ΕΛΛΗΝΙΚΑ ΔΙΑΧΕΙΡΙΖΟΜΕΝΟ SUEZMAX «SIREN»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874274/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874279/mauri-thalassa-htupima-drone-sto-ellinika-diaheirizomeno-suezmax-siren/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T05:30:04.062159+00:00"
+      "seen_at_utc": "2026-09-05T05:51:42.005922+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1460726/neo-energeiako-sok-pro-ton-pylon-ektoxeythike-i-timi-toy-fysikoy-aerioy/",
-      "title": "Νέο ενεργειακό σοκ προ των πυλών – Εκτοξεύθηκε η τιμή του φυσικού αερίου",
-      "normalized_title": "ΝΕΟ ΕΝΕΡΓΕΙΑΚΟ ΣΟΚ ΠΡΟ ΤΩΝ ΠΥΛΩΝ – ΕΚΤΟΞΕΥΘΗΚΕ Η ΤΙΜΗ ΤΟΥ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1460771/fotia-se-oinopoieio-stin-patra-akoystikan-ekrixeis-megali-kinitopoiisi-vinteo/",
+      "title": "Φωτιά σε οινοποιείο στην Πάτρα: Ακούστηκαν εκρήξεις, μεγάλη κινητοποίηση [εικόνες-βίντεο]",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΟΙΝΟΠΟΙΕΙΟ ΣΤΗΝ ΠΑΤΡΑ: ΑΚΟΥΣΤΗΚΑΝ ΕΚΡΗΞΕΙΣ, ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1460726/neo-energeiako-sok-pro-ton-pylon-ektoxeythike-i-timi-toy-fysikoy-aerioy/",
-        "https://www.efsyn.gr/politiki/1460723/kleinei-pliges-sti-deth-kai-ston-orizonta-ekloges-ta-dyo-metra-ekplixi-sto-paketo-mitsotaki/"
+        "https://www.efsyn.gr/ellada/1460771/fotia-se-oinopoieio-stin-patra-akoystikan-ekrixeis-megali-kinitopoiisi-vinteo/"
       ],
-      "seen_at_utc": "2026-09-05T05:30:04.062128+00:00"
+      "seen_at_utc": "2026-09-05T05:51:42.005901+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/greece/kriti-diasothikan-50-metanastes-anoixta-ton-kalon-limenon-entopistikan-apo-tin-frontex/",
-      "title": "Διασώθηκαν 50 μετανάστες ανοιχτά των Καλών Λιμένων - Εντοπίστηκαν από την Frontex",
-      "normalized_title": "ΔΙΑΣΩΘΗΚΑΝ 50 ΜΕΤΑΝΑΣΤΕΣ ΑΝΟΙΧΤΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ - ΕΝΤΟΠΙΣΤΗΚΑΝ ΑΠΟ ΤΗΝ FRONTEX",
+      "url": "https://www.in.gr/2026/09/05/sports/football/sto-panthessaliko-me-stoxo-to-3-3-o-olympiakos-kontraretai-entos-edras-me-ton-ari-i-aek/",
+      "title": "Στο Πανθεσσαλικό με στόχο το 3/3 ο Ολυμπιακός – Κοντράρεται εντός έδρας με τον Άρη η ΑΕΚ",
+      "normalized_title": "ΣΤΟ ΠΑΝΘΕΣΣΑΛΙΚΟ ΜΕ ΣΤΟΧΟ ΤΟ 3/3 Ο ΟΛΥΜΠΙΑΚΟΣ – ΚΟΝΤΡΑΡΕΤΑΙ ΕΝΤΟΣ ΕΔΡΑΣ ΜΕ ΤΟΝ ΑΡΗ Η ΑΕΚ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/greece/kriti-diasothikan-50-metanastes-anoixta-ton-kalon-limenon-entopistikan-apo-tin-frontex/",
-        "https://www.in.gr/2026/09/05/sports/othersports/o-emmanouil-karalis-koimithike-me-to-diamanti-tou-diamond-league-pics/",
-        "https://www.in.gr/2026/09/05/life/culture-live/momix-alice-oi-magoi-tou-xorou-epistrefoun-se-athina-kai-thessaloniki/",
-        "https://www.in.gr/2026/09/05/world/aystralia-asynithistes-gia-tin-epoxi-ypsiles-thermokrasies-sto-sidnei-kindynos-pyrkagion/",
-        "https://www.in.gr/2026/09/05/life/geysi/syntagi-mosxaraki-kokkinisto-me-poure-ogkraten/"
+        "https://www.in.gr/2026/09/05/sports/football/sto-panthessaliko-me-stoxo-to-3-3-o-olympiakos-kontraretai-entos-edras-me-ton-ari-i-aek/",
+        "https://www.in.gr/2026/09/05/greece/galatsi-anilikoi-pou-petousan-krotides-prokalesan-fotia-sto-alsos-veikou-vinteo/",
+        "https://www.in.gr/2026/09/05/sports/othersports/lexetska-tsitsipas-1-3-apo-anatropi-se-anatropi-kai-gia-proti-fora-stous-16-tou-us-open/",
+        "https://www.in.gr/2026/09/05/plus/vita/yparxei-mystiki-syntagi-gia-mia-eytyxismeni-sxesi/",
+        "https://www.in.gr/2026/09/05/economy/e-efka-dypa-poioi-pane-tameio-eos-11-septemvriou/"
       ],
-      "seen_at_utc": "2026-09-05T05:30:04.062095+00:00"
+      "seen_at_utc": "2026-09-05T05:51:42.005870+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T05:30:04.062233+00:00"
+  "updated_at_utc": "2026-09-05T05:51:42.006012+00:00"
 }
