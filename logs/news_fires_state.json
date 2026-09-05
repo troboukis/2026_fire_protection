@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564439699/eisroes-stis-ellinikes-trapezes-vlepei-i-deutsche-bank/",
-      "title": "Εισροές στις ελληνικές τράπεζες «βλέπει» η Deutsche Bank",
-      "normalized_title": "ΕΙΣΡΟΕΣ ΣΤΙΣ ΕΛΛΗΝΙΚΕΣ ΤΡΑΠΕΖΕΣ «ΒΛΕΠΕΙ» Η DEUTSCHE BANK",
+      "url": "https://www.kathimerini.gr/politics/amyna/564439282/toyrkika-drones-orgonoyn-to-aigaio/",
+      "title": "Τουρκικά drones οργώνουν το Αιγαίο",
+      "normalized_title": "ΤΟΥΡΚΙΚΑ DRONES ΟΡΓΩΝΟΥΝ ΤΟ ΑΙΓΑΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564439699/eisroes-stis-ellinikes-trapezes-vlepei-i-deutsche-bank/",
-        "https://www.kathimerini.gr/politics/564440950/mitsotakis-oramatiko-to-schedio-anaplasis-tis-deth-kai-dimioyrgias-mitropolitikoy-parkoy/"
+        "https://www.kathimerini.gr/politics/amyna/564439282/toyrkika-drones-orgonoyn-to-aigaio/",
+        "https://www.kathimerini.gr/visual/infographics/564439660/i-fetini-deth-fernei-pio-konta-tin-ellada-me-tin-iaponia/",
+        "https://www.kathimerini.gr/society/564440959/achaia-clauss-megales-katastrofes-sto-petrino-ktirio-tis-kavas-daniilidos-eikones/"
       ],
-      "seen_at_utc": "2026-09-05T08:29:57.896068+00:00"
+      "seen_at_utc": "2026-09-05T08:51:06.058413+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1261,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874339/thessaloniki-diasolinomenos-sto-ahepa-33hronos-meta-apo-trohaio-sto-retziki/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Διασωληνωμένος στο ΑΧΕΠΑ 33χρονος μετά από τροχαίο στο Ρετζίκι",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΙΑΣΩΛΗΝΩΜΕΝΟΣ ΣΤΟ ΑΧΕΠΑ 33ΧΡΟΝΟΣ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΣΤΟ ΡΕΤΖΙΚΙ",
+      "url": "https://www.protothema.gr/greece/article/1874352/mitsotakis-anoigoume-to-kefalaio-tis-deth-tou-epomenou-aiona-me-ti-dimiourgias-mitropolitikou-parkou/?utm_source=rss",
+      "title": "Μητσοτάκης: Ανοίγουμε το κεφάλαιο της ΔΕΘ του επόμενου αιώνα με τη δημιουργίας μητροπολιτικού πάρκου",
+      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ: ΑΝΟΙΓΟΥΜΕ ΤΟ ΚΕΦΑΛΑΙΟ ΤΗΣ ΔΕΘ ΤΟΥ ΕΠΟΜΕΝΟΥ ΑΙΩΝΑ ΜΕ ΤΗ ΔΗΜΙΟΥΡΓΙΑΣ ΜΗΤΡΟΠΟΛΙΤΙΚΟΥ ΠΑΡΚΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874339/thessaloniki-diasolinomenos-sto-ahepa-33hronos-meta-apo-trohaio-sto-retziki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874352/mitsotakis-anoigoume-to-kefalaio-tis-deth-tou-epomenou-aiona-me-ti-dimiourgias-mitropolitikou-parkou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T07:51:08.550916+00:00"
+      "seen_at_utc": "2026-09-05T08:51:06.058522+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1460883/kypseli-to-sholeio-poy-egine-ergo-tehnis-i-idea-mias-kathigitrias-metamorfose-olo-to-ktirio-eikones/",
-      "title": "Κυψέλη: Το σχολείο που έγινε… έργο τέχνης – Η ιδέα μιας καθηγήτριας μεταμόρφωσε όλο το κτίριο [εικόνες]",
-      "normalized_title": "ΚΥΨΕΛΗ: ΤΟ ΣΧΟΛΕΙΟ ΠΟΥ ΕΓΙΝΕ… ΕΡΓΟ ΤΕΧΝΗΣ – Η ΙΔΕΑ ΜΙΑΣ ΚΑΘΗΓΗΤΡΙΑΣ ΜΕΤΑΜΟΡΦΩΣΕ ΟΛΟ ΤΟ ΚΤΙΡΙΟ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/stiles/1460892/deth-hrysafi-gia-ta-kartel-mizeria-gia-toys-polloys/",
+      "title": "ΔΕΘ: Χρυσάφι για τα καρτέλ, μιζέρια για τους πολλούς!",
+      "normalized_title": "ΔΕΘ: ΧΡΥΣΑΦΙ ΓΙΑ ΤΑ ΚΑΡΤΕΛ, ΜΙΖΕΡΙΑ ΓΙΑ ΤΟΥΣ ΠΟΛΛΟΥΣ!",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1460883/kypseli-to-sholeio-poy-egine-ergo-tehnis-i-idea-mias-kathigitrias-metamorfose-olo-to-ktirio-eikones/"
+        "https://www.efsyn.gr/stiles/1460892/deth-hrysafi-gia-ta-kartel-mizeria-gia-toys-polloys/"
       ],
-      "seen_at_utc": "2026-09-05T08:29:57.896159+00:00"
+      "seen_at_utc": "2026-09-05T08:51:06.058486+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/05/politics/sta-egkainia-tis-90is-deth-o-mitsotakis/",
-      "title": "Στα εγκαίνια της 90ής ΔΕΘ ο Μητσοτάκης",
-      "normalized_title": "ΣΤΑ ΕΓΚΑΙΝΙΑ ΤΗΣ 90ΗΣ ΔΕΘ Ο ΜΗΤΣΟΤΑΚΗΣ",
+      "url": "https://www.in.gr/2026/09/05/greece/thessaloniki-diasolinomenos-sto-axepa-33xronos-meta-apo-troxaio/",
+      "title": "Διασωληνωμένος στο ΑΧΕΠΑ 33χρονος μετά από τροχαίο στο Ρετζίκι",
+      "normalized_title": "ΔΙΑΣΩΛΗΝΩΜΕΝΟΣ ΣΤΟ ΑΧΕΠΑ 33ΧΡΟΝΟΣ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΣΤΟ ΡΕΤΖΙΚΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/05/politics/sta-egkainia-tis-90is-deth-o-mitsotakis/"
+        "https://www.in.gr/2026/09/05/greece/thessaloniki-diasolinomenos-sto-axepa-33xronos-meta-apo-troxaio/",
+        "https://www.in.gr/2026/09/05/sports/football/mpetis-real-madritis-giati-den-epanalifthike-to-penalti-tou-empape-eno-o-mpartra-itan-mesa-sti-perioxi/",
+        "https://www.in.gr/2026/09/05/world/rosia-oukrania-se-mosxa-kai-kievo-oi-apestalmenoi-tou-tramp-nea-protasi-gia-ton-termatismo-tou-polemou/"
       ],
-      "seen_at_utc": "2026-09-05T08:29:57.896105+00:00"
+      "seen_at_utc": "2026-09-05T08:51:06.058453+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T08:29:57.896239+00:00"
+  "updated_at_utc": "2026-09-05T08:51:06.058594+00:00"
 }
