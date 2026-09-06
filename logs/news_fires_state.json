@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564441622/serres-cheiropedes-se-dyo-gynaikes-gia-exapatisi-70chronis-me-ti-methodo-toy-logisti/",
-      "title": "Σέρρες: Χειροπέδες σε δύο γυναίκες για εξαπάτηση 70χρονης με τη μέθοδο του «λογιστή»",
-      "normalized_title": "ΣΕΡΡΕΣ: ΧΕΙΡΟΠΕΔΕΣ ΣΕ ΔΥΟ ΓΥΝΑΙΚΕΣ ΓΙΑ ΕΞΑΠΑΤΗΣΗ 70ΧΡΟΝΗΣ ΜΕ ΤΗ ΜΕΘΟΔΟ ΤΟΥ «ΛΟΓΙΣΤΗ»",
+      "url": "https://www.kathimerini.gr/istoria/564439081/90-chronia-prin-6-9-1936/",
+      "title": "90 Χρόνια πριν… 6-9-1936",
+      "normalized_title": "90 ΧΡΟΝΙΑ ΠΡΙΝ… 6-9-1936",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564441622/serres-cheiropedes-se-dyo-gynaikes-gia-exapatisi-70chronis-me-ti-methodo-toy-logisti/"
+        "https://www.kathimerini.gr/istoria/564439081/90-chronia-prin-6-9-1936/",
+        "https://www.kathimerini.gr/society/564441628/trochaio-me-ilektriko-patini-sta-glyka-nera-16chronos-parasyrthike-apo-i-ch-kai-nosileyetai-sto-kat/"
       ],
-      "seen_at_utc": "2026-09-06T06:51:09.688050+00:00"
+      "seen_at_utc": "2026-09-06T07:17:11.897334+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874603/1150000-monadikoi-hristes-enimerothikan-hthes-savvato-5-septemvriou-apo-to-protothemagr/?utm_source=rss",
-      "title": "1.150.000 μοναδικοί χρήστες ενημερώθηκαν χθες Σάββατο 5 Σεπτεμβρίου από το protothema.gr",
-      "normalized_title": "1.150.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΣΑΒΒΑΤΟ 5 ΣΕΠΤΕΜΒΡΙΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
+      "url": "https://www.protothema.gr/greece/article/1874618/den-stamatise-se-sima-tis-astunomias-kai-tou-irthe-logariasmos-5975-euro/?utm_source=rss",
+      "title": "Δεν σταμάτησε σε σήμα της Αστυνομίας και του ήρθε λογαριασμός 5.975 ευρώ",
+      "normalized_title": "ΔΕΝ ΣΤΑΜΑΤΗΣΕ ΣΕ ΣΗΜΑ ΤΗΣ ΑΣΤΥΝΟΜΙΑΣ ΚΑΙ ΤΟΥ ΗΡΘΕ ΛΟΓΑΡΙΑΣΜΟΣ 5.975 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874603/1150000-monadikoi-hristes-enimerothikan-hthes-savvato-5-septemvriou-apo-to-protothemagr/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874618/den-stamatise-se-sima-tis-astunomias-kai-tou-irthe-logariasmos-5975-euro/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874617/pagrati-agrios-kavgas-mesa-se-leoforeio-tis-grammis-203-duo-nearoi-piastikan-sta-heria-brosta-stous-epivates/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T06:51:09.688166+00:00"
+      "seen_at_utc": "2026-09-06T07:17:11.897439+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461254/mainetai-gia-5i-mera-i-fotia-stin-trapezitsa-tis-konitsas-ihise-to-112/",
-      "title": "Μαίνεται για 5η μέρα η φωτιά στην Τραπεζίτσα της Κόνιτσας – Καίγεται δάσος [εικόνες-βίντεο]",
-      "normalized_title": "ΜΑΙΝΕΤΑΙ ΓΙΑ 5Η ΜΕΡΑ Η ΦΩΤΙΑ ΣΤΗΝ ΤΡΑΠΕΖΙΤΣΑ ΤΗΣ ΚΟΝΙΤΣΑΣ – ΚΑΙΓΕΤΑΙ ΔΑΣΟΣ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/stiles/1460877/mia-trypa-sto-nero/",
+      "title": "Μια τρύπα στο νερό",
+      "normalized_title": "ΜΙΑ ΤΡΥΠΑ ΣΤΟ ΝΕΡΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461254/mainetai-gia-5i-mera-i-fotia-stin-trapezitsa-tis-konitsas-ihise-to-112/",
-        "https://www.efsyn.gr/kosmos/1461250/kremlino-oi-amerikanoi-apestalmenoi-paroysiasan-ston-poytin-arketes-idees-gia-ton-termatismo-toy-polemoy/"
+        "https://www.efsyn.gr/stiles/1460877/mia-trypa-sto-nero/",
+        "https://www.efsyn.gr/politiki/1461265/i-omilia-karamanli-gia-ton-antoni-ton-psilo-tin-ora-poy-miloyse-o-mitsotakis-sti-deth/",
+        "https://www.efsyn.gr/ellada/1461260/antistrofi-metrisi-gia-to-proto-koydoyni-tis-neas-sholikis-hronias-premiera-gia-to-diethnes-apolytirio/",
+        "https://www.efsyn.gr/oikonomia/1449303/ta-erga-poy-veltionoyn-ti-leitoyrgia-toy-kratoys-kai-dieykolynoyn-tin-kathimerinotita-toy-politi/"
       ],
-      "seen_at_utc": "2026-09-06T06:51:09.688129+00:00"
+      "seen_at_utc": "2026-09-06T07:17:11.897418+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/greece/syntrivi-phantom-stin-tanagra-sto-mikroskopio-oi-synomilies-me-ton-pyrgo-elegxou-to-krisimo-erotima/",
-      "title": "Συντριβή Phantom στην Τανάγρα: Στο μικροσκόπιο οι συνομιλίες με τον Πύργο Ελέγχου – Το κρίσιμο ερώτημα",
-      "normalized_title": "ΣΥΝΤΡΙΒΗ PHANTOM ΣΤΗΝ ΤΑΝΑΓΡΑ: ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΟΙ ΣΥΝΟΜΙΛΙΕΣ ΜΕ ΤΟΝ ΠΥΡΓΟ ΕΛΕΓΧΟΥ – ΤΟ ΚΡΙΣΙΜΟ ΕΡΩΤΗΜΑ",
+      "url": "https://www.in.gr/2026/09/06/greece/konitsa-mainetai-i-fotia-kaiei-se-pykno-peykodasos-isxyres-epigeies-dynameis-12-enaeria-ixise-112/",
+      "title": "Μαίνεται η φωτιά στην Κόνιτσα, σε πυκνό πευκοδάσος - Ισχυρές επίγειες δυνάμεις, 12 εναέρια, ήχησε 112",
+      "normalized_title": "ΜΑΙΝΕΤΑΙ Η ΦΩΤΙΑ ΣΤΗΝ ΚΟΝΙΤΣΑ, ΣΕ ΠΥΚΝΟ ΠΕΥΚΟΔΑΣΟΣ - ΙΣΧΥΡΕΣ ΕΠΙΓΕΙΕΣ ΔΥΝΑΜΕΙΣ, 12 ΕΝΑΕΡΙΑ, ΗΧΗΣΕ 112",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/greece/syntrivi-phantom-stin-tanagra-sto-mikroskopio-oi-synomilies-me-ton-pyrgo-elegxou-to-krisimo-erotima/",
-        "https://www.in.gr/2026/09/06/sports/football/stoiximan-super-league-ksexorizei-to-ntermpi-panathinaikos-paok-pic/"
+        "https://www.in.gr/2026/09/06/greece/konitsa-mainetai-i-fotia-kaiei-se-pykno-peykodasos-isxyres-epigeies-dynameis-12-enaeria-ixise-112/",
+        "https://www.in.gr/2026/09/06/go-fun/fizz/o-verner-xertzogk-aporriptei-ton-symperiliptiko-logo-me-tromazei-thelo-na-kryfto-kato-apo-to-trapezi/",
+        "https://www.in.gr/2026/09/06/sports/basketball/o-olympiakos-kontra-ston-erythro-astera-ston-teliko-tou-ibt-crete/",
+        "https://www.in.gr/2026/09/06/greece/kozani-thanatiforo-troxaio-me-thyma-75xrono-stin-kaisareia/",
+        "https://www.in.gr/2026/09/06/economy/90i-deth-i-triti-imera-kai-i-apotimisi-ton-metron-sto-ot-forum/"
       ],
-      "seen_at_utc": "2026-09-06T06:51:09.688102+00:00"
+      "seen_at_utc": "2026-09-06T07:17:11.897401+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T06:51:09.688244+00:00"
+  "updated_at_utc": "2026-09-06T07:17:11.897513+00:00"
 }
