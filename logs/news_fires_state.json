@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564422008/eortologio-poioi-giortazoyn-simera-6-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 6 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 6 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/world/564441547/indonisia-to-aerodromio-tis-tzakarta-anastellei-prosorina-ti-leitoyrgia-toy-logo-ifaisteiakis-tefras/",
+      "title": "Ινδονησία: Το αεροδρόμιο της Τζακάρτα αναστέλλει προσωρινά τη λειτουργία του λόγω ηφαιστειακής τέφρας",
+      "normalized_title": "ΙΝΔΟΝΗΣΙΑ: ΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΤΖΑΚΑΡΤΑ ΑΝΑΣΤΕΛΛΕΙ ΠΡΟΣΩΡΙΝΑ ΤΗ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥ ΛΟΓΩ ΗΦΑΙΣΤΕΙΑΚΗΣ ΤΕΦΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564422008/eortologio-poioi-giortazoyn-simera-6-septemvrioy/",
-        "https://www.kathimerini.gr/culture/564439480/afairontas-ta-peritta-tis-athinas/"
+        "https://www.kathimerini.gr/world/564441547/indonisia-to-aerodromio-tis-tzakarta-anastellei-prosorina-ti-leitoyrgia-toy-logo-ifaisteiakis-tefras/"
       ],
-      "seen_at_utc": "2026-09-05T21:17:05.037312+00:00"
+      "seen_at_utc": "2026-09-06T04:17:07.363839+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,13 +1259,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874541/apokatastathike-i-vlavi-ston-katapelti-kai-apepleuse-to-nisos-rodos-apo-ton-peiraia/?utm_source=rss",
-      "title": "Αποκαταστάθηκε η βλάβη στον καταπέλτη και απέπλευσε το «Νήσος Ρόδος» από τον Πειραιά",
-      "normalized_title": "ΑΠΟΚΑΤΑΣΤΑΘΗΚΕ Η ΒΛΑΒΗ ΣΤΟΝ ΚΑΤΑΠΕΛΤΗ ΚΑΙ ΑΠΕΠΛΕΥΣΕ ΤΟ «ΝΗΣΟΣ ΡΟΔΟΣ» ΑΠΟ ΤΟΝ ΠΕΙΡΑΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1874557/upsilos-kindunos-purkagias-simera-se-attiki-kai-nisia-poies-periohes-vriskodai-se-epifulaki/?utm_source=rss",
+      "title": "Υψηλός κίνδυνος πυρκαγιάς σήμερα σε Αττική και νησιά – Ποιες περιοχές βρίσκονται σε επιφυλακή",
+      "normalized_title": "ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΣΗΜΕΡΑ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΝΗΣΙΑ – ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΒΡΙΣΚΟΝΤΑΙ ΣΕ ΕΠΙΦΥΛΑΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874541/apokatastathike-i-vlavi-ston-katapelti-kai-apepleuse-to-nisos-rodos-apo-ton-peiraia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874557/upsilos-kindunos-purkagias-simera-se-attiki-kai-nisia-poies-periohes-vriskodai-se-epifulaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-05T22:30:06.738003+00:00"
+      "seen_at_utc": "2026-09-06T04:17:07.363988+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/kosmos/1461221/antallagi-pligmaton-sto-ormoyz-iranika-antipoina-se-petrelaiofora-poy-syndeontan-me-tis-ipa/",
@@ -1281,14 +1280,25 @@
       "seen_at_utc": "2026-09-05T21:17:05.037411+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/world/iran-oi-frouroi-tis-epanastasis-dimosieysan-epitheseis-se-ploia-proskeimena-stis-ipa-vinteo/",
-      "title": "Ιράν: Οι Φρουροί της Επανάστασης δημοσίευσαν επιθέσεις σε «πλοία προσκείμενα στις ΗΠΑ»",
-      "normalized_title": "ΙΡΑΝ: ΟΙ ΦΡΟΥΡΟΙ ΤΗΣ ΕΠΑΝΑΣΤΑΣΗΣ ΔΗΜΟΣΙΕΥΣΑΝ ΕΠΙΘΕΣΕΙΣ ΣΕ «ΠΛΟΙΑ ΠΡΟΣΚΕΙΜΕΝΑ ΣΤΙΣ ΗΠΑ»",
+      "url": "https://www.in.gr/2026/09/06/world/o-parousiastis-tou-amerikanikou-troxou-tis-tyxis-apolythike-giati-ton-epiasan-se-tsat-gia-paidofilous/",
+      "title": "Ο παρουσιαστής του αμερικανικού Τροχού της Τύχης απολύθηκε γιατί τον «έπιασαν» σε τσατ για παιδόφιλους",
+      "normalized_title": "Ο ΠΑΡΟΥΣΙΑΣΤΗΣ ΤΟΥ ΑΜΕΡΙΚΑΝΙΚΟΥ ΤΡΟΧΟΥ ΤΗΣ ΤΥΧΗΣ ΑΠΟΛΥΘΗΚΕ ΓΙΑΤΙ ΤΟΝ «ΕΠΙΑΣΑΝ» ΣΕ ΤΣΑΤ ΓΙΑ ΠΑΙΔΟΦΙΛΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/world/iran-oi-frouroi-tis-epanastasis-dimosieysan-epitheseis-se-ploia-proskeimena-stis-ipa-vinteo/"
+        "https://www.in.gr/2026/09/06/world/o-parousiastis-tou-amerikanikou-troxou-tis-tyxis-apolythike-giati-ton-epiasan-se-tsat-gia-paidofilous/",
+        "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/ponokefalos-stin-pagkosmia-oikonomia-apo-to-akrivo-xrima/",
+        "https://www.in.gr/2026/09/06/in-science/ai/openai-anagnorizei-to-peristatiko-me-to-wiki-kai-tin-anagki-gia-megalyteri-diafaneia/",
+        "https://www.in.gr/2026/09/06/economy/giati-oi-eyropaikes-xores-metaferoun-to-xryso-tous-ektos-voreias-amerikis/",
+        "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/i-netcompany-analamvanei-stratigiko-ergo-ygeias-sto-inomeno-vasileio/",
+        "https://www.in.gr/2026/09/06/in-science/ai/i-check-point-ensomatonei-ta-montela-openai-daybreak/",
+        "https://www.in.gr/2026/09/06/world/apopeira-listeias-kosmimatopoleiou-eriksan-tin-vitrina-me-fortigaki-kratontas-spathi-vinteo/",
+        "https://www.in.gr/2026/09/06/world/to-iran-isxyrizetai-pos-xtypise-aeroplanoforo-kai-antitorpiliko-ton-ipa/",
+        "https://www.in.gr/2026/09/06/world/kremlino-oi-amerikanoi-apestalmenoi-parousiasan-ston-poutin-arketes-idees-gia-ton-termatismo-tou-polemou/",
+        "https://www.in.gr/2026/09/06/world/kolomvia-treis-stratiotes-skotothikan-se-epidromi-drones-enantion-stratopedou/",
+        "https://www.in.gr/2026/09/06/politics/kke-o-orizontas-gia-tin-ellada-tou-2030-tou-k-mitsotaki-gia-to-lao-tha-exei-mono-anasfaleia-kai-avevaiotita/",
+        "https://www.in.gr/2026/09/06/world/o-ntmitrief-kseprovodise-tous-gouitkof-kousner-kanontas-logo-gia-simantiki-eirineytiki-episkepsi/"
       ],
-      "seen_at_utc": "2026-09-05T22:17:08.480287+00:00"
+      "seen_at_utc": "2026-09-06T04:17:07.363936+00:00"
     }
   },
-  "updated_at_utc": "2026-09-05T22:51:00.097462+00:00"
+  "updated_at_utc": "2026-09-06T04:17:07.364097+00:00"
 }
