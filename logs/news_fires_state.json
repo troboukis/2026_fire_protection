@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564439042/kanontas-tameio-stin-epidayro/",
-      "title": "Κάνοντας «ταμείο» στην Επίδαυρο",
-      "normalized_title": "ΚΑΝΟΝΤΑΣ «ΤΑΜΕΙΟ» ΣΤΗΝ ΕΠΙΔΑΥΡΟ",
+      "url": "https://www.kathimerini.gr/culture/564439075/ena-fiord-sti-friki-tis-kypselis/",
+      "title": "Ενα φιορδ στη φρίκη της Κυψέλης",
+      "normalized_title": "ΕΝΑ ΦΙΟΡΔ ΣΤΗ ΦΡΙΚΗ ΤΗΣ ΚΥΨΕΛΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564439042/kanontas-tameio-stin-epidayro/"
+        "https://www.kathimerini.gr/culture/564439075/ena-fiord-sti-friki-tis-kypselis/",
+        "https://www.kathimerini.gr/culture/564439069/oi-ayloportes-tis-athinas/"
       ],
-      "seen_at_utc": "2026-09-06T18:30:00.727245+00:00"
+      "seen_at_utc": "2026-09-06T18:51:20.338656+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874784/parakalousa-ton-theo-na-min-einai-o-giannis-sudetrimmenoi-filoi-tou-pilotou-phantom-pou-sunetrivi-stin-tanagra/?utm_source=rss",
-      "title": "«Παρακαλούσα τον Θεό να μην είναι ο Γιάννης»: Συντετριμμένοι οι φίλοι του 40χρονου πιλότου του Phantom που συνετρίβη στην Τανάγρα",
-      "normalized_title": "«ΠΑΡΑΚΑΛΟΥΣΑ ΤΟΝ ΘΕΟ ΝΑ ΜΗΝ ΕΙΝΑΙ Ο ΓΙΑΝΝΗΣ»: ΣΥΝΤΕΤΡΙΜΜΕΝΟΙ ΟΙ ΦΙΛΟΙ ΤΟΥ 40ΧΡΟΝΟΥ ΠΙΛΟΤΟΥ ΤΟΥ PHANTOM ΠΟΥ ΣΥΝΕΤΡΙΒΗ ΣΤΗΝ ΤΑΝΑΓΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1874803/diasothikan-duo-pezoporoi-pou-hathikan-sto-spilaio-panos-stin-parnitha/?utm_source=rss",
+      "title": "Διασώθηκαν δύο πεζοπόροι που χάθηκαν στο Σπήλαιο Πανός στην Πάρνηθα",
+      "normalized_title": "ΔΙΑΣΩΘΗΚΑΝ ΔΥΟ ΠΕΖΟΠΟΡΟΙ ΠΟΥ ΧΑΘΗΚΑΝ ΣΤΟ ΣΠΗΛΑΙΟ ΠΑΝΟΣ ΣΤΗΝ ΠΑΡΝΗΘΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874784/parakalousa-ton-theo-na-min-einai-o-giannis-sudetrimmenoi-filoi-tou-pilotou-phantom-pou-sunetrivi-stin-tanagra/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874803/diasothikan-duo-pezoporoi-pou-hathikan-sto-spilaio-panos-stin-parnitha/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T16:17:04.194202+00:00"
+      "seen_at_utc": "2026-09-06T18:51:20.338742+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1461518/panigyrizei-i-akrodexia-afd-gia-to-445-sti-saxonia-anhalt-asafes-ean-shimatizei-kyvernisi-vinteo-eikones/",
-      "title": "Πανηγυρίζει η ακροδεξιά AfD για το 44,5% στη Σαξονία-Άνχαλτ – Ασαφές εάν σχηματίζει κυβέρνηση [βίντεο – εικόνες]",
-      "normalized_title": "ΠΑΝΗΓΥΡΙΖΕΙ Η ΑΚΡΟΔΕΞΙΑ AFD ΓΙΑ ΤΟ 44,5% ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ – ΑΣΑΦΕΣ ΕΑΝ ΣΧΗΜΑΤΙΖΕΙ ΚΥΒΕΡΝΗΣΗ [ΒΙΝΤΕΟ – ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/ellada/1461529/horis-energo-metopo-i-fotia-tin-periohi-petsakoi-ahaias/",
+      "title": "Χωρίς ενεργό μέτωπο η φωτιά την περιοχή Πετσάκοι Αχαΐας",
+      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΟ ΜΕΤΩΠΟ Η ΦΩΤΙΑ ΤΗΝ ΠΕΡΙΟΧΗ ΠΕΤΣΑΚΟΙ ΑΧΑΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1461518/panigyrizei-i-akrodexia-afd-gia-to-445-sti-saxonia-anhalt-asafes-ean-shimatizei-kyvernisi-vinteo-eikones/"
+        "https://www.efsyn.gr/ellada/1461529/horis-energo-metopo-i-fotia-tin-periohi-petsakoi-ahaias/",
+        "https://www.efsyn.gr/kosmos/1461526/zelenski-vlepei-synehisi-toy-polemoy-ton-heimona-para-tis-thetikes-synomilies-me-goyitkof-kai-koysner/"
       ],
-      "seen_at_utc": "2026-09-06T18:30:00.727360+00:00"
+      "seen_at_utc": "2026-09-06T18:51:20.338723+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/greece/parnitha-aisio-telos-stin-peripeteia-dyo-pezoporon-sto-spilaio-panos/",
-      "title": "Πάρνηθα: Αίσιο τέλος στην περιπέτεια δύο πεζοπόρων στο Σπήλαιο Πανός",
-      "normalized_title": "ΠΑΡΝΗΘΑ: ΑΙΣΙΟ ΤΕΛΟΣ ΣΤΗΝ ΠΕΡΙΠΕΤΕΙΑ ΔΥΟ ΠΕΖΟΠΟΡΩΝ ΣΤΟ ΣΠΗΛΑΙΟ ΠΑΝΟΣ",
+      "url": "https://www.in.gr/2026/09/06/sports/football/oi-orismoi-kypellou-kai-i-epivevaiosi-tis-opisthodromisis-me-ton-tzilo/",
+      "title": "Οι ορισμοί Κυπέλλου και η επιβεβαίωση της οπισθοδρόμησης με τον Τζήλο",
+      "normalized_title": "ΟΙ ΟΡΙΣΜΟΙ ΚΥΠΕΛΛΟΥ ΚΑΙ Η ΕΠΙΒΕΒΑΙΩΣΗ ΤΗΣ ΟΠΙΣΘΟΔΡΟΜΗΣΗΣ ΜΕ ΤΟΝ ΤΖΗΛΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/greece/parnitha-aisio-telos-stin-peripeteia-dyo-pezoporon-sto-spilaio-panos/",
-        "https://www.in.gr/2026/09/06/life/culture-live/i-souzan-saranton-xanei-akomi-rolous-logo-allileggyis-stin-palaistini/",
-        "https://www.in.gr/matchcenter/5943244/"
+        "https://www.in.gr/2026/09/06/sports/football/oi-orismoi-kypellou-kai-i-epivevaiosi-tis-opisthodromisis-me-ton-tzilo/",
+        "https://www.in.gr/2026/09/06/greece/sovaro-troxaio-stin-patra-xoris-tis-aisthiseis-tou-31xronos-odigos-motosikletas/",
+        "https://www.in.gr/2026/09/06/sports/football/ofi-kifisia-2-0-nea-niki-gia-tous-kritikous-me-protagonistes-androutso-kai-mpouxalaki/",
+        "https://www.in.gr/matchcenter/5749667/",
+        "https://www.in.gr/2026/09/06/in-science/technology/quishing-pos-to-phishing-meso-qr-code-plittei-tis-epixeiriseis/",
+        "https://www.in.gr/2026/09/06/world/mpyres-xoris-alkool-ti-kryvetai-piso-apo-to-0/"
       ],
-      "seen_at_utc": "2026-09-06T18:30:00.727298+00:00"
+      "seen_at_utc": "2026-09-06T18:51:20.338701+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T18:30:00.727443+00:00"
+  "updated_at_utc": "2026-09-06T18:51:20.338815+00:00"
 }
