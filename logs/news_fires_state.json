@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564438889/eskypse-sto-ayti-tis-kai-eipe-zestasia-moy/",
-      "title": "«Εσκυψε στο αυτί της και είπε/ Ζεστασιά μου»",
-      "normalized_title": "«ΕΣΚΥΨΕ ΣΤΟ ΑΥΤΙ ΤΗΣ ΚΑΙ ΕΙΠΕ/ ΖΕΣΤΑΣΙΑ ΜΟΥ»",
+      "url": "https://www.kathimerini.gr/culture/564439042/kanontas-tameio-stin-epidayro/",
+      "title": "Κάνοντας «ταμείο» στην Επίδαυρο",
+      "normalized_title": "ΚΑΝΟΝΤΑΣ «ΤΑΜΕΙΟ» ΣΤΗΝ ΕΠΙΔΑΥΡΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564438889/eskypse-sto-ayti-tis-kai-eipe-zestasia-moy/",
-        "https://www.kathimerini.gr/world/564441994/syntrivi-gia-to-cdu-istoriki-niki-gia-to-afd-poy-kynigaei-tin-aytodynamia/",
-        "https://www.kathimerini.gr/politics/564440029/tessera-orosima-meta-ti-deth/"
+        "https://www.kathimerini.gr/culture/564439042/kanontas-tameio-stin-epidayro/"
       ],
-      "seen_at_utc": "2026-09-06T18:16:59.068190+00:00"
+      "seen_at_utc": "2026-09-06T18:30:00.727245+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1268,25 @@
       "seen_at_utc": "2026-09-06T16:17:04.194202+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1460763/synenohoi-alosis/",
-      "title": "Συνένοχοι άλωσης…",
-      "normalized_title": "ΣΥΝΕΝΟΧΟΙ ΑΛΩΣΗΣ…",
+      "url": "https://www.efsyn.gr/kosmos/1461518/panigyrizei-i-akrodexia-afd-gia-to-445-sti-saxonia-anhalt-asafes-ean-shimatizei-kyvernisi-vinteo-eikones/",
+      "title": "Πανηγυρίζει η ακροδεξιά AfD για το 44,5% στη Σαξονία-Άνχαλτ – Ασαφές εάν σχηματίζει κυβέρνηση [βίντεο – εικόνες]",
+      "normalized_title": "ΠΑΝΗΓΥΡΙΖΕΙ Η ΑΚΡΟΔΕΞΙΑ AFD ΓΙΑ ΤΟ 44,5% ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ – ΑΣΑΦΕΣ ΕΑΝ ΣΧΗΜΑΤΙΖΕΙ ΚΥΒΕΡΝΗΣΗ [ΒΙΝΤΕΟ – ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1460763/synenohoi-alosis/",
-        "https://www.efsyn.gr/ellada/1461516/pyrosvestiki-synolika-42-agrotodasikes-pyrkagies-to-teleytaio-24oro/",
-        "https://www.efsyn.gr/ellada/1461512/parnitha-aisio-telos-stin-peripeteia-dyo-pezoporon-sto-spilaio-panos/"
+        "https://www.efsyn.gr/kosmos/1461518/panigyrizei-i-akrodexia-afd-gia-to-445-sti-saxonia-anhalt-asafes-ean-shimatizei-kyvernisi-vinteo-eikones/"
       ],
-      "seen_at_utc": "2026-09-06T17:51:15.535739+00:00"
+      "seen_at_utc": "2026-09-06T18:30:00.727360+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/sports/on-field/ola-ta-fota-ston-tzoli-nea-apotheosi-tou-ellina-asou-meta-to-ntermpi-tou-londinou/",
-      "title": "Όλα τα φώτα στον Τζόλη – Νέα αποθέωση του Έλληνα άσου, μετά το ντέρμπι του Λονδίνου",
-      "normalized_title": "ΟΛΑ ΤΑ ΦΩΤΑ ΣΤΟΝ ΤΖΟΛΗ – ΝΕΑ ΑΠΟΘΕΩΣΗ ΤΟΥ ΕΛΛΗΝΑ ΑΣΟΥ, ΜΕΤΑ ΤΟ ΝΤΕΡΜΠΙ ΤΟΥ ΛΟΝΔΙΝΟΥ",
+      "url": "https://www.in.gr/2026/09/06/greece/parnitha-aisio-telos-stin-peripeteia-dyo-pezoporon-sto-spilaio-panos/",
+      "title": "Πάρνηθα: Αίσιο τέλος στην περιπέτεια δύο πεζοπόρων στο Σπήλαιο Πανός",
+      "normalized_title": "ΠΑΡΝΗΘΑ: ΑΙΣΙΟ ΤΕΛΟΣ ΣΤΗΝ ΠΕΡΙΠΕΤΕΙΑ ΔΥΟ ΠΕΖΟΠΟΡΩΝ ΣΤΟ ΣΠΗΛΑΙΟ ΠΑΝΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/sports/on-field/ola-ta-fota-ston-tzoli-nea-apotheosi-tou-ellina-asou-meta-to-ntermpi-tou-londinou/",
-        "https://www.in.gr/2026/09/06/in-science/technology/ereyna-kaspersky-oi-xristes-frontizoun-perissotero-ta-smartphones-apo-tous-i-y/",
-        "https://www.in.gr/2026/09/06/sports/football/atromitos-kalamata-1-1-i-mayri-thyella-kratise-ton-vathmo-me-deka-paiktes-apo-to-73%ce%84/",
-        "https://www.in.gr/2026/09/06/sports/football/sok-sto-mats-tis-piza-me-ton-mpozinof-katerreyse-kai-metaferthike-sto-nosokomeio-pic/"
+        "https://www.in.gr/2026/09/06/greece/parnitha-aisio-telos-stin-peripeteia-dyo-pezoporon-sto-spilaio-panos/",
+        "https://www.in.gr/2026/09/06/life/culture-live/i-souzan-saranton-xanei-akomi-rolous-logo-allileggyis-stin-palaistini/",
+        "https://www.in.gr/matchcenter/5943244/"
       ],
-      "seen_at_utc": "2026-09-06T18:16:59.068249+00:00"
+      "seen_at_utc": "2026-09-06T18:30:00.727298+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T18:16:59.068332+00:00"
+  "updated_at_utc": "2026-09-06T18:30:00.727443+00:00"
 }
