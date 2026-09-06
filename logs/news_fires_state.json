@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564440470/gioakim-raiter-psifiaki-pyli-trion-ipeiron-i-ellada/",
-      "title": "Γιόακιμ Ράιτερ: Ψηφιακή πύλη τριών ηπείρων η Ελλάδα",
-      "normalized_title": "ΓΙΟΑΚΙΜ ΡΑΙΤΕΡ: ΨΗΦΙΑΚΗ ΠΥΛΗ ΤΡΙΩΝ ΗΠΕΙΡΩΝ Η ΕΛΛΑΔΑ",
+      "url": "https://www.kathimerini.gr/culture/564440698/aytosarkasmos-made-in-greece/",
+      "title": "Αυτοσαρκασμός «made in Greece»",
+      "normalized_title": "ΑΥΤΟΣΑΡΚΑΣΜΟΣ «MADE IN GREECE»",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564440470/gioakim-raiter-psifiaki-pyli-trion-ipeiron-i-ellada/"
+        "https://www.kathimerini.gr/culture/564440698/aytosarkasmos-made-in-greece/",
+        "https://www.kathimerini.gr/world/564442036/germania-to-teichos-prostasias-trizei-to-mellon-avevaio/"
       ],
-      "seen_at_utc": "2026-09-06T19:51:11.149398+00:00"
+      "seen_at_utc": "2026-09-06T20:16:57.681319+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874808/oi-tuheroi-arithmoi-gia-ta-pano-apo-67-ekat-euro-sto-tzoker/?utm_source=rss",
-      "title": "Οι τυχεροί αριθμοί για τα πάνω από 6,7 εκατ. ευρώ στο Τζόκερ",
-      "normalized_title": "ΟΙ ΤΥΧΕΡΟΙ ΑΡΙΘΜΟΙ ΓΙΑ ΤΑ ΠΑΝΩ ΑΠΟ 6,7 ΕΚΑΤ. ΕΥΡΩ ΣΤΟ ΤΖΟΚΕΡ",
+      "url": "https://www.protothema.gr/greece/article/1874816/i-anartisi-tis-marevas-mitsotaki-gia-ton-filo-kai-mahiti-giorgo-mulonaki/?utm_source=rss",
+      "title": "Η ανάρτηση της Μαρέβας Μητσοτάκη για τον «φίλο και μαχητή» Γιώργο Μυλωνάκη",
+      "normalized_title": "Η ΑΝΑΡΤΗΣΗ ΤΗΣ ΜΑΡΕΒΑΣ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΟΝ «ΦΙΛΟ ΚΑΙ ΜΑΧΗΤΗ» ΓΙΩΡΓΟ ΜΥΛΩΝΑΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874808/oi-tuheroi-arithmoi-gia-ta-pano-apo-67-ekat-euro-sto-tzoker/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874805/sto-oaka-gia-to-panathinaikos-paok-o-alexis-tsipras-mazi-me-ti-suzugo-tou-dimitri-pelka-kuveli-marda/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874816/i-anartisi-tis-marevas-mitsotaki-gia-ton-filo-kai-mahiti-giorgo-mulonaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T19:17:13.285261+00:00"
+      "seen_at_utc": "2026-09-06T20:16:57.681439+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1461540/oykrania-goyitkof-kai-koysner-paroysiasan-nees-pio-apotelesmatikes-protaseis/",
-      "title": "Ουκρανία: Γουίτκοφ και Κούσνερ παρουσίασαν «νέες, πιο αποτελεσματικές» προτάσεις",
-      "normalized_title": "ΟΥΚΡΑΝΙΑ: ΓΟΥΙΤΚΟΦ ΚΑΙ ΚΟΥΣΝΕΡ ΠΑΡΟΥΣΙΑΣΑΝ «ΝΕΕΣ, ΠΙΟ ΑΠΟΤΕΛΕΣΜΑΤΙΚΕΣ» ΠΡΟΤΑΣΕΙΣ",
+      "url": "https://www.efsyn.gr/kosmos/1461545/to-iran-tha-kiryxei-zoni-apagoreysis-konta-sta-stena-toy-ormoyz-tis-epomenes-imeres/",
+      "title": "Το Ιράν θα κηρύξει «ζώνη απαγόρευσης» κοντά στα Στενά του Ορμούζ τις επόμενες ημέρες",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΘΑ ΚΗΡΥΞΕΙ «ΖΩΝΗ ΑΠΑΓΟΡΕΥΣΗΣ» ΚΟΝΤΑ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ ΤΙΣ ΕΠΟΜΕΝΕΣ ΗΜΕΡΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1461540/oykrania-goyitkof-kai-koysner-paroysiasan-nees-pio-apotelesmatikes-protaseis/"
+        "https://www.efsyn.gr/kosmos/1461545/to-iran-tha-kiryxei-zoni-apagoreysis-konta-sta-stena-toy-ormoyz-tis-epomenes-imeres/"
       ],
-      "seen_at_utc": "2026-09-06T19:51:11.149500+00:00"
+      "seen_at_utc": "2026-09-06T20:16:57.681405+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/pos-i-texniti-noimosyni-strefei-tous-ependytes-se-athlitismo-kazino-kai-tourismo/",
-      "title": "Πώς η τεχνητή νοημοσύνη στρέφει τους επενδυτές σε αθλητισμό, καζίνο και τουρισμό",
-      "normalized_title": "ΠΩΣ Η ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ ΣΤΡΕΦΕΙ ΤΟΥΣ ΕΠΕΝΔΥΤΕΣ ΣΕ ΑΘΛΗΤΙΣΜΟ, ΚΑΖΙΝΟ ΚΑΙ ΤΟΥΡΙΣΜΟ",
+      "url": "https://www.in.gr/2026/09/06/greece/pos-tha-deite-me-ena-klik-an-exete-apliroti-klisi/",
+      "title": "Πώς θα δείτε με ένα… κλικ αν έχετε απλήρωτη κλήση",
+      "normalized_title": "ΠΩΣ ΘΑ ΔΕΙΤΕ ΜΕ ΕΝΑ… ΚΛΙΚ ΑΝ ΕΧΕΤΕ ΑΠΛΗΡΩΤΗ ΚΛΗΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/pos-i-texniti-noimosyni-strefei-tous-ependytes-se-athlitismo-kazino-kai-tourismo/",
-        "https://www.in.gr/2026/09/06/in-science/technology/tiktok-parousiazei-ta-fonitika-sxolia-kai-yposxetai-mia-nea-empeiria-stous-xristes-tis-platformas/",
-        "https://www.in.gr/2026/09/06/sports/basketball/erythros-asteras-olympiakos-77-87-me-souper-entiai-kai-dipsifio-montero-katektise-to-ibt-crete/",
-        "https://www.in.gr/2026/09/06/sports/football/gkol-apo-tamporda-kai-tettei-kai-2-0-o-panathinaikos-ton-paok-vids/"
+        "https://www.in.gr/2026/09/06/greece/pos-tha-deite-me-ena-klik-an-exete-apliroti-klisi/",
+        "https://www.in.gr/2026/09/06/economy/diethnis-oikonomia/mayri-thalassa-o-aneleitos-naytikos-polemos-to-xrysafi-pou-sapizei-kai-to-fantasma-enos-episitistikou-sok/",
+        "https://www.in.gr/2026/09/06/world/syntrivi-aeroskafous-tis-amazon-sto-aerodromio-tou-maiami/"
       ],
-      "seen_at_utc": "2026-09-06T19:51:11.149454+00:00"
+      "seen_at_utc": "2026-09-06T20:16:57.681359+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T19:51:11.149581+00:00"
+  "updated_at_utc": "2026-09-06T20:16:57.681507+00:00"
 }
