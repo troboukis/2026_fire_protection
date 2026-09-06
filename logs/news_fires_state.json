@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564440311/akrivo-moy-protathlima/",
-      "title": "Ακριβό μου πρωτάθλημα",
-      "normalized_title": "ΑΚΡΙΒΟ ΜΟΥ ΠΡΩΤΑΘΛΗΜΑ",
+      "url": "https://www.kathimerini.gr/society/564441757/voiotia-fotia-se-agrotodasiki-ektasi-sto-kleidi-tanagras/",
+      "title": "Βοιωτία: Φωτιά σε αγροτοδασική έκταση στο Κλειδί Τανάγρας",
+      "normalized_title": "ΒΟΙΩΤΙΑ: ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΚΛΕΙΔΙ ΤΑΝΑΓΡΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564440311/akrivo-moy-protathlima/",
-        "https://www.kathimerini.gr/world/564441688/ekrixi-ifaisteioy-stin-indonisia-exi-aerodromia-kleista-egklovismenoi-pano-apo-150-000-epivates/"
+        "https://www.kathimerini.gr/society/564441757/voiotia-fotia-se-agrotodasiki-ektasi-sto-kleidi-tanagras/",
+        "https://www.kathimerini.gr/society/564441748/afidnes-choris-energo-metopo-i-pyrkagia-stin-drosopigi/",
+        "https://www.kathimerini.gr/athletics/564441724/olympiakos-cheiroyrgithike-o-el-kaampi/"
       ],
-      "seen_at_utc": "2026-09-06T10:51:10.992862+00:00"
+      "seen_at_utc": "2026-09-06T11:17:38.174409+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,36 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874696/stigmes-tromou-stin-ethniki-athinon-lamias-eskasan-duo-lastiha-se-poulman-me-50-epivates-deite-video/?utm_source=rss",
-      "title": "Στιγμές τρόμου στην Εθνική Αθηνών-Λαμίας: Έσκασαν δύο λάστιχα σε πούλμαν με 50 επιβάτες",
-      "normalized_title": "ΣΤΙΓΜΕΣ ΤΡΟΜΟΥ ΣΤΗΝ ΕΘΝΙΚΗ ΑΘΗΝΩΝ-ΛΑΜΙΑΣ: ΕΣΚΑΣΑΝ ΔΥΟ ΛΑΣΤΙΧΑ ΣΕ ΠΟΥΛΜΑΝ ΜΕ 50 ΕΠΙΒΑΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874703/fotia-tora-sto-kleidi-voiotias-epiheiroun-pano-apo-50-purosvestes-kai-tessera-enaeria-mesa/?utm_source=rss",
+      "title": "Φωτιά τώρα στο Κλειδί Βοιωτίας, επιχειρούν πάνω από 50 πυροσβέστες και τέσσερα εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΚΛΕΙΔΙ ΒΟΙΩΤΙΑΣ, ΕΠΙΧΕΙΡΟΥΝ ΠΑΝΩ ΑΠΟ 50 ΠΥΡΟΣΒΕΣΤΕΣ ΚΑΙ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874696/stigmes-tromou-stin-ethniki-athinon-lamias-eskasan-duo-lastiha-se-poulman-me-50-epivates-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874703/fotia-tora-sto-kleidi-voiotias-epiheiroun-pano-apo-50-purosvestes-kai-tessera-enaeria-mesa/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T10:51:10.992977+00:00"
+      "seen_at_utc": "2026-09-06T11:17:38.174589+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1461339/enohlisi-mitsotaki-gia-samara-ehei-tehnognosia-pos-na-vlapsei-tin-parataxi-i-nd-ehei-arhigo/",
-      "title": "Ενόχληση Μητσοτάκη για Σαμαρά: «Εχει τεχνογνωσία πώς να βλάψει την παράταξη – Η ΝΔ έχει αρχηγό»",
-      "normalized_title": "ΕΝΟΧΛΗΣΗ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΣΑΜΑΡΑ: «ΕΧΕΙ ΤΕΧΝΟΓΝΩΣΙΑ ΠΩΣ ΝΑ ΒΛΑΨΕΙ ΤΗΝ ΠΑΡΑΤΑΞΗ – Η ΝΔ ΕΧΕΙ ΑΡΧΗΓΟ»",
+      "url": "https://www.efsyn.gr/politiki/1461360/mitsotakis-se-erotisi-tis-ef-syn-gia-tis-ypoklopes-den-tha-mpo-se-dimosia-syzitisi-me-ton-tal-ntilian/",
+      "title": "Μητσοτάκης σε ερώτηση της «Εφ.Συν.» για τις υποκλοπές: Δεν θα μπω σε δημόσια συζήτηση με τον Ταλ Ντίλιαν",
+      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΣΕ ΕΡΩΤΗΣΗ ΤΗΣ «ΕΦ.ΣΥΝ.» ΓΙΑ ΤΙΣ ΥΠΟΚΛΟΠΕΣ: ΔΕΝ ΘΑ ΜΠΩ ΣΕ ΔΗΜΟΣΙΑ ΣΥΖΗΤΗΣΗ ΜΕ ΤΟΝ ΤΑΛ ΝΤΙΛΙΑΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1461339/enohlisi-mitsotaki-gia-samara-ehei-tehnognosia-pos-na-vlapsei-tin-parataxi-i-nd-ehei-arhigo/",
-        "https://www.efsyn.gr/politiki/1460911/o-fragkiskos-koytentakis-stin-ef-syn-ligoteroi-foroi-gia-ergasia-kai-oikogeneia/"
+        "https://www.efsyn.gr/politiki/1461360/mitsotakis-se-erotisi-tis-ef-syn-gia-tis-ypoklopes-den-tha-mpo-se-dimosia-syzitisi-me-ton-tal-ntilian/",
+        "https://www.efsyn.gr/politiki/1461349/mitsotakis-gia-idiotika-aei-kaneis-foititis-den-tha-meinei-xekremastos-to-ste-episimane-dioikitikes-astohies/",
+        "https://www.efsyn.gr/politiki/1461347/mitsotakis-gia-to-zitima-me-vivlia-dimotikoy-den-yparhei-woke-atzenta-an-yparhei-sfalma-tha-to-diorthosoyme/",
+        "https://www.efsyn.gr/politiki/1461341/mitsotakis-gia-tsipra-kai-pasok-diagkonizontai-gia-tin-patrotita-enos-programmatos-politikis-exapatisis/"
       ],
-      "seen_at_utc": "2026-09-06T10:51:10.992955+00:00"
+      "seen_at_utc": "2026-09-06T11:17:38.174554+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/world/volivia-agonia-gia-tous-agnooumenos-meta-tis-ekrikseis-se-stratiotiki-vasi-toulaxiston-treis-nekroi/",
-      "title": "Βολιβία: Αγωνία για τους αγνοούμενος μετά τις εκρήξεις σε στρατιωτική βάση – Τουλάχιστον τρεις νεκροί",
-      "normalized_title": "ΒΟΛΙΒΙΑ: ΑΓΩΝΙΑ ΓΙΑ ΤΟΥΣ ΑΓΝΟΟΥΜΕΝΟΣ ΜΕΤΑ ΤΙΣ ΕΚΡΗΞΕΙΣ ΣΕ ΣΤΡΑΤΙΩΤΙΚΗ ΒΑΣΗ – ΤΟΥΛΑΧΙΣΤΟΝ ΤΡΕΙΣ ΝΕΚΡΟΙ",
+      "url": "https://www.in.gr/2026/09/06/greece/lakonia-aytokinito-epese-se-prostateytikes-mpares-kai-pire-fotia-ypekypse-sta-traymata-tou-o-42xronos-odigos/",
+      "title": "Αυτοκίνητο έπεσε σε προστατευτικές μπάρες και πήρε φωτιά - Υπέκυψε στα τραύματά του ο 42χρονος οδηγός",
+      "normalized_title": "ΑΥΤΟΚΙΝΗΤΟ ΕΠΕΣΕ ΣΕ ΠΡΟΣΤΑΤΕΥΤΙΚΕΣ ΜΠΑΡΕΣ ΚΑΙ ΠΗΡΕ ΦΩΤΙΑ - ΥΠΕΚΥΨΕ ΣΤΑ ΤΡΑΥΜΑΤΑ ΤΟΥ Ο 42ΧΡΟΝΟΣ ΟΔΗΓΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/world/volivia-agonia-gia-tous-agnooumenos-meta-tis-ekrikseis-se-stratiotiki-vasi-toulaxiston-treis-nekroi/",
-        "https://www.in.gr/2026/09/06/sports/football/olympiakos-den-ksereis-apo-pou-na-ksekiniseis/",
-        "https://www.in.gr/2026/09/06/greece/tanagra-neo-vinteo-apo-ti-syntrivi-tou-phantom-ta-epikratestera-senaria-gia-ta-aitia-pou-estiazoun-oi-ereynes/",
-        "https://www.in.gr/2026/09/06/greece/isthmia-toksikologikes-eksetaseis-ston-kyverniti-tis-thalamigou-meta-ti-sygkrousi-opou-exase-ti-zoi-tou-enas-74xronos/"
+        "https://www.in.gr/2026/09/06/greece/lakonia-aytokinito-epese-se-prostateytikes-mpares-kai-pire-fotia-ypekypse-sta-traymata-tou-o-42xronos-odigos/",
+        "https://www.in.gr/2026/09/06/sports/basketball/itoudis-i-epistrofi-tou-omprantovits-einai-yperoxi-gia-to-eyropaiko-mpasket/",
+        "https://www.in.gr/2026/09/06/greece/fotia-sto-kleidi-voiotias-epixeiroun-4-enaeria-mesa/",
+        "https://www.in.gr/2026/09/06/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-06-09-12-09-2026/",
+        "https://www.in.gr/2026/09/06/greece/thlipsi-sti-zaxaro-58xronos-pethane-mprosta-sta-matia-tou-paidiou-tou/"
       ],
-      "seen_at_utc": "2026-09-06T10:51:10.992920+00:00"
+      "seen_at_utc": "2026-09-06T11:17:38.174504+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T10:51:10.993071+00:00"
+  "updated_at_utc": "2026-09-06T11:17:38.174700+00:00"
 }
