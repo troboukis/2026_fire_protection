@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564439075/ena-fiord-sti-friki-tis-kypselis/",
-      "title": "Ενα φιορδ στη φρίκη της Κυψέλης",
-      "normalized_title": "ΕΝΑ ΦΙΟΡΔ ΣΤΗ ΦΡΙΚΗ ΤΗΣ ΚΥΨΕΛΗΣ",
+      "url": "https://www.kathimerini.gr/k/k-magazine/564375883/3-tropoi-gia-sosti-apotamieysi-analoga-me-tis-anagkes-sas/",
+      "title": "3 τρόποι για σωστή αποταμίευση, ανάλογα με τις ανάγκες σας",
+      "normalized_title": "3 ΤΡΟΠΟΙ ΓΙΑ ΣΩΣΤΗ ΑΠΟΤΑΜΙΕΥΣΗ, ΑΝΑΛΟΓΑ ΜΕ ΤΙΣ ΑΝΑΓΚΕΣ ΣΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564439075/ena-fiord-sti-friki-tis-kypselis/",
-        "https://www.kathimerini.gr/culture/564439069/oi-ayloportes-tis-athinas/"
+        "https://www.kathimerini.gr/k/k-magazine/564375883/3-tropoi-gia-sosti-apotamieysi-analoga-me-tis-anagkes-sas/",
+        "https://www.kathimerini.gr/society/564442018/dasiki-pyrkagia-stin-konitsa-ioanninon-ichise-to-112/",
+        "https://www.kathimerini.gr/world/564442015/zelenski-o-polemos-fainetai-pos-tha-synechistei-kai-ayton-ton-cheimona/"
       ],
-      "seen_at_utc": "2026-09-06T18:51:20.338656+00:00"
+      "seen_at_utc": "2026-09-06T19:17:13.285139+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874803/diasothikan-duo-pezoporoi-pou-hathikan-sto-spilaio-panos-stin-parnitha/?utm_source=rss",
-      "title": "Διασώθηκαν δύο πεζοπόροι που χάθηκαν στο Σπήλαιο Πανός στην Πάρνηθα",
-      "normalized_title": "ΔΙΑΣΩΘΗΚΑΝ ΔΥΟ ΠΕΖΟΠΟΡΟΙ ΠΟΥ ΧΑΘΗΚΑΝ ΣΤΟ ΣΠΗΛΑΙΟ ΠΑΝΟΣ ΣΤΗΝ ΠΑΡΝΗΘΑ",
+      "url": "https://www.protothema.gr/greece/article/1874808/oi-tuheroi-arithmoi-gia-ta-pano-apo-67-ekat-euro-sto-tzoker/?utm_source=rss",
+      "title": "Οι τυχεροί αριθμοί για τα πάνω από 6,7 εκατ. ευρώ στο Τζόκερ",
+      "normalized_title": "ΟΙ ΤΥΧΕΡΟΙ ΑΡΙΘΜΟΙ ΓΙΑ ΤΑ ΠΑΝΩ ΑΠΟ 6,7 ΕΚΑΤ. ΕΥΡΩ ΣΤΟ ΤΖΟΚΕΡ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874803/diasothikan-duo-pezoporoi-pou-hathikan-sto-spilaio-panos-stin-parnitha/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874808/oi-tuheroi-arithmoi-gia-ta-pano-apo-67-ekat-euro-sto-tzoker/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874805/sto-oaka-gia-to-panathinaikos-paok-o-alexis-tsipras-mazi-me-ti-suzugo-tou-dimitri-pelka-kuveli-marda/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T18:51:20.338742+00:00"
+      "seen_at_utc": "2026-09-06T19:17:13.285261+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461529/horis-energo-metopo-i-fotia-tin-periohi-petsakoi-ahaias/",
-      "title": "Χωρίς ενεργό μέτωπο η φωτιά την περιοχή Πετσάκοι Αχαΐας",
-      "normalized_title": "ΧΩΡΙΣ ΕΝΕΡΓΟ ΜΕΤΩΠΟ Η ΦΩΤΙΑ ΤΗΝ ΠΕΡΙΟΧΗ ΠΕΤΣΑΚΟΙ ΑΧΑΙΑΣ",
+      "url": "https://www.efsyn.gr/politiki/1461533/elas-ektheti-i-kyvernisi-gia-ton-elegho-tis-aspidas-toy-ahillea-i-hora-kathistatai-omiros/",
+      "title": "ΕΛΑΣ: Έκθετη η κυβέρνηση για τον έλεγχο της Ασπίδας του Αχιλλέα – Η χώρα καθίσταται «όμηρος»",
+      "normalized_title": "ΕΛΑΣ: ΕΚΘΕΤΗ Η ΚΥΒΕΡΝΗΣΗ ΓΙΑ ΤΟΝ ΕΛΕΓΧΟ ΤΗΣ ΑΣΠΙΔΑΣ ΤΟΥ ΑΧΙΛΛΕΑ – Η ΧΩΡΑ ΚΑΘΙΣΤΑΤΑΙ «ΟΜΗΡΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461529/horis-energo-metopo-i-fotia-tin-periohi-petsakoi-ahaias/",
-        "https://www.efsyn.gr/kosmos/1461526/zelenski-vlepei-synehisi-toy-polemoy-ton-heimona-para-tis-thetikes-synomilies-me-goyitkof-kai-koysner/"
+        "https://www.efsyn.gr/politiki/1461533/elas-ektheti-i-kyvernisi-gia-ton-elegho-tis-aspidas-toy-ahillea-i-hora-kathistatai-omiros/"
       ],
-      "seen_at_utc": "2026-09-06T18:51:20.338723+00:00"
+      "seen_at_utc": "2026-09-06T19:17:13.285234+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/sports/football/oi-orismoi-kypellou-kai-i-epivevaiosi-tis-opisthodromisis-me-ton-tzilo/",
-      "title": "Οι ορισμοί Κυπέλλου και η επιβεβαίωση της οπισθοδρόμησης με τον Τζήλο",
-      "normalized_title": "ΟΙ ΟΡΙΣΜΟΙ ΚΥΠΕΛΛΟΥ ΚΑΙ Η ΕΠΙΒΕΒΑΙΩΣΗ ΤΗΣ ΟΠΙΣΘΟΔΡΟΜΗΣΗΣ ΜΕ ΤΟΝ ΤΖΗΛΟ",
+      "url": "https://www.in.gr/2026/09/06/world/to-sxedio-pou-xreiazetai-i-eyropi-gia-tin-epomeni-mera-tou-polemou/",
+      "title": "Το σχέδιο που χρειάζεται η Ευρώπη για την επόμενη μέρα του πολέμου",
+      "normalized_title": "ΤΟ ΣΧΕΔΙΟ ΠΟΥ ΧΡΕΙΑΖΕΤΑΙ Η ΕΥΡΩΠΗ ΓΙΑ ΤΗΝ ΕΠΟΜΕΝΗ ΜΕΡΑ ΤΟΥ ΠΟΛΕΜΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/sports/football/oi-orismoi-kypellou-kai-i-epivevaiosi-tis-opisthodromisis-me-ton-tzilo/",
-        "https://www.in.gr/2026/09/06/greece/sovaro-troxaio-stin-patra-xoris-tis-aisthiseis-tou-31xronos-odigos-motosikletas/",
-        "https://www.in.gr/2026/09/06/sports/football/ofi-kifisia-2-0-nea-niki-gia-tous-kritikous-me-protagonistes-androutso-kai-mpouxalaki/",
-        "https://www.in.gr/matchcenter/5749667/",
-        "https://www.in.gr/2026/09/06/in-science/technology/quishing-pos-to-phishing-meso-qr-code-plittei-tis-epixeiriseis/",
-        "https://www.in.gr/2026/09/06/world/mpyres-xoris-alkool-ti-kryvetai-piso-apo-to-0/"
+        "https://www.in.gr/2026/09/06/world/to-sxedio-pou-xreiazetai-i-eyropi-gia-tin-epomeni-mera-tou-polemou/",
+        "https://www.in.gr/2026/09/06/world/germania-epideiksi-dynamis-tis-akrodeksias-afd-pou-diekdikei-aytodynamia-stis-krisimes-ekloges-tis-saksonias-anxalt/",
+        "https://www.in.gr/2026/09/06/sports/football/levadeiakos-panaitolikos-0-2-fantastikos-opokou-kai-3x3/",
+        "https://www.in.gr/2026/09/06/in-science/space/istoriki-protia-eyropaikos-pyraylos-mpike-se-troxia-ekkinontas-tin-ipeiro-mas-ellinas-o-epikefalis-mixanikos-tou-programmatos/"
       ],
-      "seen_at_utc": "2026-09-06T18:51:20.338701+00:00"
+      "seen_at_utc": "2026-09-06T19:17:13.285194+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T18:51:20.338815+00:00"
+  "updated_at_utc": "2026-09-06T19:17:13.285341+00:00"
 }
