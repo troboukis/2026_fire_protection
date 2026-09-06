@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564441661/thessaloniki-cheiropedes-se-37chrono-sti-deth-mpike-stis-toyaletes-kai-kategrafe-gynaikes-me-to-kinito-toy/",
-      "title": "Θεσσαλονίκη: Χειροπέδες σε 37χρονο στη ΔΕΘ – Μπήκε στις τουαλέτες και κατέγραφε γυναίκες με το κινητό του",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΧΕΙΡΟΠΕΔΕΣ ΣΕ 37ΧΡΟΝΟ ΣΤΗ ΔΕΘ – ΜΠΗΚΕ ΣΤΙΣ ΤΟΥΑΛΕΤΕΣ ΚΑΙ ΚΑΤΕΓΡΑΦΕ ΓΥΝΑΙΚΕΣ ΜΕ ΤΟ ΚΙΝΗΤΟ ΤΟΥ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564439981/diavima-me-minyma-gia-ta-12-milia-k/",
+      "title": "Διάβημα με μήνυμα για τα 12 μίλια",
+      "normalized_title": "ΔΙΑΒΗΜΑ ΜΕ ΜΗΝΥΜΑ ΓΙΑ ΤΑ 12 ΜΙΛΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564441661/thessaloniki-cheiropedes-se-37chrono-sti-deth-mpike-stis-toyaletes-kai-kategrafe-gynaikes-me-to-kinito-toy/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564439981/diavima-me-minyma-gia-ta-12-milia-k/",
+        "https://www.kathimerini.gr/politics/564441589/live-i-synenteyxi-typoy-toy-kyriakoy-mitsotaki-sti-deth-2/",
+        "https://www.kathimerini.gr/society/564441664/thanatiforo-trochaio-stin-e-o-thessalonikis-kavalas-nekros-54chronos-motosikletistis/"
       ],
-      "seen_at_utc": "2026-09-06T08:51:10.144898+00:00"
+      "seen_at_utc": "2026-09-06T09:16:55.879181+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874655/video-listes-me-matsetes-epesan-me-4x4-se-kosmimatopoleio-sto-inomeno-vasileio-o-idioktitis-tous-pire-sto-kunigi/?utm_source=rss",
-      "title": "Βίντεο: Ληστές με ματσέτες έπεσαν με αγροτικό σε κοσμηματοπωλείο στο Ηνωμένο Βασίλειο, ο ιδιοκτήτης τους πήρε στο κυνήγι με ρόπαλο",
-      "normalized_title": "ΒΙΝΤΕΟ: ΛΗΣΤΕΣ ΜΕ ΜΑΤΣΕΤΕΣ ΕΠΕΣΑΝ ΜΕ ΑΓΡΟΤΙΚΟ ΣΕ ΚΟΣΜΗΜΑΤΟΠΩΛΕΙΟ ΣΤΟ ΗΝΩΜΕΝΟ ΒΑΣΙΛΕΙΟ, Ο ΙΔΙΟΚΤΗΤΗΣ ΤΟΥΣ ΠΗΡΕ ΣΤΟ ΚΥΝΗΓΙ ΜΕ ΡΟΠΑΛΟ",
+      "url": "https://www.protothema.gr/greece/article/1874669/prostima-3540-euro-se-17hrono-pou-odigouse-epikinduna-motosukleta-exo-apo-paidiki-hara-stin-thessaloniki/?utm_source=rss",
+      "title": "Πρόστιμα 3.540 ευρώ σε 17χρονο που οδηγούσε επικίνδυνα μοτοσυκλέτα έξω από παιδική χαρά στην Θεσσαλονίκη",
+      "normalized_title": "ΠΡΟΣΤΙΜΑ 3.540 ΕΥΡΩ ΣΕ 17ΧΡΟΝΟ ΠΟΥ ΟΔΗΓΟΥΣΕ ΕΠΙΚΙΝΔΥΝΑ ΜΟΤΟΣΥΚΛΕΤΑ ΕΞΩ ΑΠΟ ΠΑΙΔΙΚΗ ΧΑΡΑ ΣΤΗΝ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874655/video-listes-me-matsetes-epesan-me-4x4-se-kosmimatopoleio-sto-inomeno-vasileio-o-idioktitis-tous-pire-sto-kunigi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874652/nekros-54hronos-motosikletistis-se-trohaio-stin-ethniki-odo-thessalonikis-kavalas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874651/thessaloniki-15hroni-evale-tous-filous-tis-na-deiroun-14hrono-gia-logous-erotikis-adizilias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874669/prostima-3540-euro-se-17hrono-pou-odigouse-epikinduna-motosukleta-exo-apo-paidiki-hara-stin-thessaloniki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874664/tehnika-elegmeno-to-moiraio-phantom-stin-tanagra-ta-duo-senaria-pou-exetazodai-gia-ta-aitia-tis-ptosis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874662/padreutike-me-thriskeutiko-gamo-sta-hania-o-adonis-tsapatakis-deite-fotografies/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874657/epiheirisi-diasosis-44-allodapon-notioanatolika-ton-kalon-limenon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T08:51:10.145084+00:00"
+      "seen_at_utc": "2026-09-06T09:16:55.879322+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1460979/o-ellinikos-toyrismos-sta-social-media-ti-kerdizei-toys-toyristes-poy-vazoyn-hamilotero-vathmo/",
-      "title": "Ο ελληνικός τουρισμός στα social media: Τι κερδίζει τους τουρίστες, πού βάζουν χαμηλότερο βαθμό",
-      "normalized_title": "Ο ΕΛΛΗΝΙΚΟΣ ΤΟΥΡΙΣΜΟΣ ΣΤΑ SOCIAL MEDIA: ΤΙ ΚΕΡΔΙΖΕΙ ΤΟΥΣ ΤΟΥΡΙΣΤΕΣ, ΠΟΥ ΒΑΖΟΥΝ ΧΑΜΗΛΟΤΕΡΟ ΒΑΘΜΟ",
+      "url": "https://www.efsyn.gr/politiki/1461294/live-i-synenteyxi-typoy-toy-kyriakoy-mitsotaki-sti-deth/",
+      "title": "Live η συνέντευξη Τύπου του Κυριάκου Μητσοτάκη στη ΔΕΘ: «Εφικτός στόχος η αυτοδυναμία»",
+      "normalized_title": "LIVE Η ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΤΟΥ ΚΥΡΙΑΚΟΥ ΜΗΤΣΟΤΑΚΗ ΣΤΗ ΔΕΘ: «ΕΦΙΚΤΟΣ ΣΤΟΧΟΣ Η ΑΥΤΟΔΥΝΑΜΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1460979/o-ellinikos-toyrismos-sta-social-media-ti-kerdizei-toys-toyristes-poy-vazoyn-hamilotero-vathmo/"
+        "https://www.efsyn.gr/politiki/1461294/live-i-synenteyxi-typoy-toy-kyriakoy-mitsotaki-sti-deth/",
+        "https://www.efsyn.gr/life/1461299/gennise-i-natali-portman-irthe-ston-kosmo-to-trito-tis-paidi/"
       ],
-      "seen_at_utc": "2026-09-06T08:51:10.145033+00:00"
+      "seen_at_utc": "2026-09-06T09:16:55.879277+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/sports/on-field/to-faltso-tou-lanoua-me-ton-syntopiti-paratiriti-tou-tzilou-kai-o-seri-orismos-tou/",
-      "title": "Το φάλτσο του Λανουά με τον συντοπίτη παρατηρητή του Τζήλου και ο σερί ορισμός του",
-      "normalized_title": "ΤΟ ΦΑΛΤΣΟ ΤΟΥ ΛΑΝΟΥΑ ΜΕ ΤΟΝ ΣΥΝΤΟΠΙΤΗ ΠΑΡΑΤΗΡΗΤΗ ΤΟΥ ΤΖΗΛΟΥ ΚΑΙ Ο ΣΕΡΙ ΟΡΙΣΜΟΣ ΤΟΥ",
+      "url": "https://www.in.gr/2026/09/06/sports/football/orismoi-kypellou-o-vergetis-tha-sfyriksei-olympiakos-volos/",
+      "title": "Ορισμοί Κυπέλλου: Ο Βεργέτης θα σφυρίξει Ολυμπιακός-Βόλος",
+      "normalized_title": "ΟΡΙΣΜΟΙ ΚΥΠΕΛΛΟΥ: Ο ΒΕΡΓΕΤΗΣ ΘΑ ΣΦΥΡΙΞΕΙ ΟΛΥΜΠΙΑΚΟΣ-ΒΟΛΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/sports/on-field/to-faltso-tou-lanoua-me-ton-syntopiti-paratiriti-tou-tzilou-kai-o-seri-orismos-tou/",
-        "https://www.in.gr/2026/09/06/politics/pyr-omadon-apo-tin-antipoliteysi-gia-tis-eksaggelies-mitsotaki-imimetra-anti-gia-monimes-paremvaseis/"
+        "https://www.in.gr/2026/09/06/sports/football/orismoi-kypellou-o-vergetis-tha-sfyriksei-olympiakos-volos/",
+        "https://www.in.gr/2026/09/06/greece/thessaloniki-15xroni-evale-filous-tis-na-xtypisoun-14xrono-gia-logous-erotikis-antizilias/",
+        "https://www.in.gr/2026/09/06/politics/politiki-grammateia/live-i-synenteyksi-typou-tou-kyriakou-mitsotaki-sti-deth/",
+        "https://www.in.gr/2026/09/06/go-fun/fizz/i-kori-tou-antoni-vardi-kallisto-einai-egkyos-sto-proto-tis-paidi-to-fylo-tou-morou/",
+        "https://www.in.gr/2026/09/06/greece/deth-synelifthi-37xronos-mpike-stis-toualetes-kai-kategrafe-gynaikes-me-to-kinito-tou/"
       ],
-      "seen_at_utc": "2026-09-06T08:51:10.144954+00:00"
+      "seen_at_utc": "2026-09-06T09:16:55.879227+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T08:51:10.145171+00:00"
+  "updated_at_utc": "2026-09-06T09:16:55.879388+00:00"
 }
