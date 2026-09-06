@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564440506/giati-ochi-kai-foros-ependyseon/",
-      "title": "Γιατί όχι και φόρος επενδύσεων",
-      "normalized_title": "ΓΙΑΤΙ ΟΧΙ ΚΑΙ ΦΟΡΟΣ ΕΠΕΝΔΥΣΕΩΝ",
+      "url": "https://www.kathimerini.gr/politics/564441904/deth-2026-o-chartis-ton-foroelafrynseon-poioys-aforoyn-ta-metra/",
+      "title": "ΔΕΘ 2026: Ο χάρτης των φοροελαφρύνσεων – Ποιους αφορούν τα μέτρα",
+      "normalized_title": "ΔΕΘ 2026: Ο ΧΑΡΤΗΣ ΤΩΝ ΦΟΡΟΕΛΑΦΡΥΝΣΕΩΝ – ΠΟΙΟΥΣ ΑΦΟΡΟΥΝ ΤΑ ΜΕΤΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564440506/giati-ochi-kai-foros-ependyseon/"
+        "https://www.kathimerini.gr/politics/564441904/deth-2026-o-chartis-ton-foroelafrynseon-poioys-aforoyn-ta-metra/",
+        "https://www.kathimerini.gr/society/564441913/fotia-sti-skilloyntia-ileias-sti-machi-katasvesis-10-enaeria-ichise-to-112-gia-etoimotita/",
+        "https://www.kathimerini.gr/economy/564440437/arthro-toy-anastasioy-tosioy-stin-k-nero-apo-ti-stratigiki-stin-efarmogi/"
       ],
-      "seen_at_utc": "2026-09-06T15:30:14.634535+00:00"
+      "seen_at_utc": "2026-09-06T15:51:41.175331+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,38 +1261,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874773/nekros-42hronos-se-trohaio-sti-sparti-to-ih-tou-prosekrouse-se-bares-vgike-apo-ton-dromo-kai-tulihthike-stis-floges/?utm_source=rss",
-      "title": "Νεκρός 42χρονος σε τροχαίο στη Σπάρτη: Το ΙΧ του προσέκρουσε σε μπάρες, βγήκε από τον δρόμο και τυλίχθηκε στις φλόγες",
-      "normalized_title": "ΝΕΚΡΟΣ 42ΧΡΟΝΟΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗ ΣΠΑΡΤΗ: ΤΟ ΙΧ ΤΟΥ ΠΡΟΣΕΚΡΟΥΣΕ ΣΕ ΜΠΑΡΕΣ, ΒΓΗΚΕ ΑΠΟ ΤΟΝ ΔΡΟΜΟ ΚΑΙ ΤΥΛΙΧΘΗΚΕ ΣΤΙΣ ΦΛΟΓΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874777/soros-se-prohorimeni-sipsi-edopistike-koda-se-moni-sti-kozani/?utm_source=rss",
+      "title": "Σορός σε προχωρημένη σήψη εντοπίστηκε κοντά σε μονή στη Κοζάνη",
+      "normalized_title": "ΣΟΡΟΣ ΣΕ ΠΡΟΧΩΡΗΜΕΝΗ ΣΗΨΗ ΕΝΤΟΠΙΣΤΗΚΕ ΚΟΝΤΑ ΣΕ ΜΟΝΗ ΣΤΗ ΚΟΖΑΝΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874773/nekros-42hronos-se-trohaio-sti-sparti-to-ih-tou-prosekrouse-se-bares-vgike-apo-ton-dromo-kai-tulihthike-stis-floges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874772/karabola-me-exi-ohimata-stin-athinon-korinthou-exo-apo-ta-megara-oures-hiliometron-sto-reuma-pros-athina/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874765/suglonizei-o-theios-tou-37hronou-pilotou-tou-phantom-se-liges-imeres-tha-vaftize-to-pede-minon-koritsaki-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874777/soros-se-prohorimeni-sipsi-edopistike-koda-se-moni-sti-kozani/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T15:17:09.015085+00:00"
+      "seen_at_utc": "2026-09-06T15:51:41.175401+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1461460/i-konti-mnimi-toy-kyriakoy-mitsotaki/",
-      "title": "Η κοντή μνήμη του Κυριάκου Μητσοτάκη",
-      "normalized_title": "Η ΚΟΝΤΗ ΜΝΗΜΗ ΤΟΥ ΚΥΡΙΑΚΟΥ ΜΗΤΣΟΤΑΚΗ",
+      "url": "https://www.efsyn.gr/podcast/anagoges-koyventes-oraia-poy-ta-les-ma-ela-poy-se-xero/",
+      "title": "Ανάγωγες Κουβέντες: Ωραία που τα λες, μα έλα που σε ξέρω",
+      "normalized_title": "ΑΝΑΓΩΓΕΣ ΚΟΥΒΕΝΤΕΣ: ΩΡΑΙΑ ΠΟΥ ΤΑ ΛΕΣ, ΜΑ ΕΛΑ ΠΟΥ ΣΕ ΞΕΡΩ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1461460/i-konti-mnimi-toy-kyriakoy-mitsotaki/"
+        "https://www.efsyn.gr/podcast/anagoges-koyventes-oraia-poy-ta-les-ma-ela-poy-se-xero/",
+        "https://www.efsyn.gr/ellada/1461467/fotia-stin-pineia-ileias-epiheiroyn-exi-aeroskafi/",
+        "https://www.efsyn.gr/kosmos/1461463/germania-agonia-gia-to-pososto-tis-akrodexias-stis-ekloges-tis-saxonias-anhalt-ta-vasika-diakyveymata/"
       ],
-      "seen_at_utc": "2026-09-06T15:30:14.634656+00:00"
+      "seen_at_utc": "2026-09-06T15:51:41.175387+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/life/culture-live/entouarnt-ferlongk-o-arnolnt-svartsenegker-itan-o-orismos-tou-epaggelmatia/",
-      "title": "Έντουαρντ Φέρλονγκ: «Ο Άρνολντ Σβαρτσενέγκερ ήταν ο ορισμός του επαγγελματία»",
-      "normalized_title": "ΕΝΤΟΥΑΡΝΤ ΦΕΡΛΟΝΓΚ: «Ο ΑΡΝΟΛΝΤ ΣΒΑΡΤΣΕΝΕΓΚΕΡ ΗΤΑΝ Ο ΟΡΙΣΜΟΣ ΤΟΥ ΕΠΑΓΓΕΛΜΑΤΙΑ»",
+      "url": "https://www.in.gr/2026/09/06/greece/tromos-stin-artemida-agnostos-evale-fotia-se-kipo-monokatoikias-eno-i-oikogeneia-koimotan/",
+      "title": "Τρόμος στην Αρτέμιδα: Άγνωστος έβαλε φωτιά σε κήπο μονοκατοικίας ενώ η οικογένεια κοιμόταν",
+      "normalized_title": "ΤΡΟΜΟΣ ΣΤΗΝ ΑΡΤΕΜΙΔΑ: ΑΓΝΩΣΤΟΣ ΕΒΑΛΕ ΦΩΤΙΑ ΣΕ ΚΗΠΟ ΜΟΝΟΚΑΤΟΙΚΙΑΣ ΕΝΩ Η ΟΙΚΟΓΕΝΕΙΑ ΚΟΙΜΟΤΑΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/life/culture-live/entouarnt-ferlongk-o-arnolnt-svartsenegker-itan-o-orismos-tou-epaggelmatia/",
-        "https://www.in.gr/2026/09/06/greece/karampola-eksi-oximaton-sta-megara-stin-athinon-korinthou-mpotiliarisma-xiliometron-pros-athina/",
-        "https://www.in.gr/matchcenter/5795435/",
-        "https://www.in.gr/2026/09/06/greece/xalkidiki-apagoreysi-kykloforias-se-perioxes-logo-poly-ypsilou-kindynou-ekdilosis-dasikis-pyrkagias/",
-        "https://www.in.gr/2026/09/06/greece/pente-syllipseis-gia-pyrkagies-se-nea-makri-preveza-eyvoia-xio-kai-agion-oros/"
+        "https://www.in.gr/2026/09/06/greece/tromos-stin-artemida-agnostos-evale-fotia-se-kipo-monokatoikias-eno-i-oikogeneia-koimotan/",
+        "https://www.in.gr/2026/09/06/sports/football/i-mpartselona-saronei-ti-valenthia-kai-to-mestagia-vrazei-syllalitirio-kata-omadas-kai-dioikisis-vids/",
+        "https://www.in.gr/2026/09/06/sports/othersports/mythiki-epistrofi-tou-antoneli-apo-ti-19i-thesi-kai-terastia-niki-sti-montsa-pic/"
       ],
-      "seen_at_utc": "2026-09-06T15:30:14.634628+00:00"
+      "seen_at_utc": "2026-09-06T15:51:41.175371+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T15:30:14.634762+00:00"
+  "updated_at_utc": "2026-09-06T15:51:41.175482+00:00"
 }
