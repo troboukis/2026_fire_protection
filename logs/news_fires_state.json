@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564441904/deth-2026-o-chartis-ton-foroelafrynseon-poioys-aforoyn-ta-metra/",
-      "title": "ΔΕΘ 2026: Ο χάρτης των φοροελαφρύνσεων – Ποιους αφορούν τα μέτρα",
-      "normalized_title": "ΔΕΘ 2026: Ο ΧΑΡΤΗΣ ΤΩΝ ΦΟΡΟΕΛΑΦΡΥΝΣΕΩΝ – ΠΟΙΟΥΣ ΑΦΟΡΟΥΝ ΤΑ ΜΕΤΡΑ",
+      "url": "https://www.kathimerini.gr/world/564441931/saxonia-anchalt-sarotiki-protia-toy-akrodexioy-afd-me-44-5-deichnoyn-ta-exit-polls/",
+      "title": "Σαξονία – Aνχαλτ: Σαρωτική πρωτιά του ακροδεξιού AfD με 44,5% δείχνουν τα exit polls",
+      "normalized_title": "ΣΑΞΟΝΙΑ – AΝΧΑΛΤ: ΣΑΡΩΤΙΚΗ ΠΡΩΤΙΑ ΤΟΥ ΑΚΡΟΔΕΞΙΟΥ AFD ΜΕ 44,5% ΔΕΙΧΝΟΥΝ ΤΑ EXIT POLLS",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564441904/deth-2026-o-chartis-ton-foroelafrynseon-poioys-aforoyn-ta-metra/",
-        "https://www.kathimerini.gr/society/564441913/fotia-sti-skilloyntia-ileias-sti-machi-katasvesis-10-enaeria-ichise-to-112-gia-etoimotita/",
-        "https://www.kathimerini.gr/economy/564440437/arthro-toy-anastasioy-tosioy-stin-k-nero-apo-ti-stratigiki-stin-efarmogi/"
+        "https://www.kathimerini.gr/world/564441931/saxonia-anchalt-sarotiki-protia-toy-akrodexioy-afd-me-44-5-deichnoyn-ta-exit-polls/",
+        "https://www.kathimerini.gr/k/k-magazine/564436366/ena-filoxeno-trapezi-stin-argolida/",
+        "https://www.kathimerini.gr/politics/564440044/anevainei-sti-deth-me-stocho-tin-anodo-sta-gkalop/"
       ],
-      "seen_at_utc": "2026-09-06T15:51:41.175331+00:00"
+      "seen_at_utc": "2026-09-06T16:17:04.194071+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1261,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874777/soros-se-prohorimeni-sipsi-edopistike-koda-se-moni-sti-kozani/?utm_source=rss",
-      "title": "Σορός σε προχωρημένη σήψη εντοπίστηκε κοντά σε μονή στη Κοζάνη",
-      "normalized_title": "ΣΟΡΟΣ ΣΕ ΠΡΟΧΩΡΗΜΕΝΗ ΣΗΨΗ ΕΝΤΟΠΙΣΤΗΚΕ ΚΟΝΤΑ ΣΕ ΜΟΝΗ ΣΤΗ ΚΟΖΑΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1874784/parakalousa-ton-theo-na-min-einai-o-giannis-sudetrimmenoi-filoi-tou-pilotou-phantom-pou-sunetrivi-stin-tanagra/?utm_source=rss",
+      "title": "«Παρακαλούσα τον Θεό να μην είναι ο Γιάννης»: Συντετριμμένοι οι φίλοι του 40χρονου πιλότου του Phantom που συνετρίβη στην Τανάγρα",
+      "normalized_title": "«ΠΑΡΑΚΑΛΟΥΣΑ ΤΟΝ ΘΕΟ ΝΑ ΜΗΝ ΕΙΝΑΙ Ο ΓΙΑΝΝΗΣ»: ΣΥΝΤΕΤΡΙΜΜΕΝΟΙ ΟΙ ΦΙΛΟΙ ΤΟΥ 40ΧΡΟΝΟΥ ΠΙΛΟΤΟΥ ΤΟΥ PHANTOM ΠΟΥ ΣΥΝΕΤΡΙΒΗ ΣΤΗΝ ΤΑΝΑΓΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874777/soros-se-prohorimeni-sipsi-edopistike-koda-se-moni-sti-kozani/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874784/parakalousa-ton-theo-na-min-einai-o-giannis-sudetrimmenoi-filoi-tou-pilotou-phantom-pou-sunetrivi-stin-tanagra/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T15:51:41.175401+00:00"
+      "seen_at_utc": "2026-09-06T16:17:04.194202+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/podcast/anagoges-koyventes-oraia-poy-ta-les-ma-ela-poy-se-xero/",
-      "title": "Ανάγωγες Κουβέντες: Ωραία που τα λες, μα έλα που σε ξέρω",
-      "normalized_title": "ΑΝΑΓΩΓΕΣ ΚΟΥΒΕΝΤΕΣ: ΩΡΑΙΑ ΠΟΥ ΤΑ ΛΕΣ, ΜΑ ΕΛΑ ΠΟΥ ΣΕ ΞΕΡΩ",
+      "url": "https://www.efsyn.gr/kosmos/1461478/germania-sto-445-i-afd-sti-saxonia-anhalt-symfona-me-ta-prota-exit-poll/",
+      "title": "Γερμανία: Στο 44,5% η ακροδεξιά ΑfD στη Σαξονία-Άνχαλτ, σύμφωνα με τα πρώτα exit poll",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΣΤΟ 44,5% Η ΑΚΡΟΔΕΞΙΑ ΑFD ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ, ΣΥΜΦΩΝΑ ΜΕ ΤΑ ΠΡΩΤΑ EXIT POLL",
       "seen_urls": [
-        "https://www.efsyn.gr/podcast/anagoges-koyventes-oraia-poy-ta-les-ma-ela-poy-se-xero/",
-        "https://www.efsyn.gr/ellada/1461467/fotia-stin-pineia-ileias-epiheiroyn-exi-aeroskafi/",
-        "https://www.efsyn.gr/kosmos/1461463/germania-agonia-gia-to-pososto-tis-akrodexias-stis-ekloges-tis-saxonias-anhalt-ta-vasika-diakyveymata/"
+        "https://www.efsyn.gr/kosmos/1461478/germania-sto-445-i-afd-sti-saxonia-anhalt-symfona-me-ta-prota-exit-poll/",
+        "https://www.efsyn.gr/politiki/1461477/kke-volikes-gia-ton-k-mitsotaki-oi-sygkriseis-me-to-amartolo-parelthon-toy-pasok-kai-toy-tsipra/",
+        "https://www.efsyn.gr/themata/1460959/infowar-exodos-apo-to-magazaki-toy-moyseioy/",
+        "https://www.efsyn.gr/tehnes/1460944/nanoyrismata-vlahiki-polyfonia-senmpergk-kai-rihter/",
+        "https://www.efsyn.gr/oikonomia/1461470/papastayroy-sto-n-deth-forum-o-odikos-hartis-gia-30-fthinotero-reyma-ti-perimenoyme-apo-tis-geotriseis-sto-ionio/"
       ],
-      "seen_at_utc": "2026-09-06T15:51:41.175387+00:00"
+      "seen_at_utc": "2026-09-06T16:17:04.194164+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/greece/tromos-stin-artemida-agnostos-evale-fotia-se-kipo-monokatoikias-eno-i-oikogeneia-koimotan/",
-      "title": "Τρόμος στην Αρτέμιδα: Άγνωστος έβαλε φωτιά σε κήπο μονοκατοικίας ενώ η οικογένεια κοιμόταν",
-      "normalized_title": "ΤΡΟΜΟΣ ΣΤΗΝ ΑΡΤΕΜΙΔΑ: ΑΓΝΩΣΤΟΣ ΕΒΑΛΕ ΦΩΤΙΑ ΣΕ ΚΗΠΟ ΜΟΝΟΚΑΤΟΙΚΙΑΣ ΕΝΩ Η ΟΙΚΟΓΕΝΕΙΑ ΚΟΙΜΟΤΑΝ",
+      "url": "https://www.in.gr/2026/09/06/greece/kozani-sta-azitita-o-nekros-pou-vrethike-se-proxorimeni-sipsi-eixe-pethanei-ton-ioulio/",
+      "title": "Κοζάνη: Στα αζήτητα ο νεκρός που βρέθηκε σε προχωρημένη σήψη – Είχε πεθάνει τον Ιούλιο",
+      "normalized_title": "ΚΟΖΑΝΗ: ΣΤΑ ΑΖΗΤΗΤΑ Ο ΝΕΚΡΟΣ ΠΟΥ ΒΡΕΘΗΚΕ ΣΕ ΠΡΟΧΩΡΗΜΕΝΗ ΣΗΨΗ – ΕΙΧΕ ΠΕΘΑΝΕΙ ΤΟΝ ΙΟΥΛΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/greece/tromos-stin-artemida-agnostos-evale-fotia-se-kipo-monokatoikias-eno-i-oikogeneia-koimotan/",
-        "https://www.in.gr/2026/09/06/sports/football/i-mpartselona-saronei-ti-valenthia-kai-to-mestagia-vrazei-syllalitirio-kata-omadas-kai-dioikisis-vids/",
-        "https://www.in.gr/2026/09/06/sports/othersports/mythiki-epistrofi-tou-antoneli-apo-ti-19i-thesi-kai-terastia-niki-sti-montsa-pic/"
+        "https://www.in.gr/2026/09/06/greece/kozani-sta-azitita-o-nekros-pou-vrethike-se-proxorimeni-sipsi-eixe-pethanei-ton-ioulio/",
+        "https://www.in.gr/2026/09/06/world/sarotiko-provadisma-tis-afd-deixnei-to-exit-poll-sti-saksonia-anxal/",
+        "https://www.in.gr/2026/09/06/greece/kypseli-erotimata-gia-tin-plousia-zoi-ton-protagoniston-tou-thriler-me-to-dolofonimeno-vrefos/",
+        "https://www.in.gr/2026/09/06/economy/oikonomikes-eidiseis/deth-2026-o-koumparas-mitsotaki-kai-oi-omoiotites-me-ta-trump-accounts/",
+        "https://www.in.gr/2026/09/06/sports/football/kyma-agapis-gia-ton-el-kaampi-agioump-grigora-konta-mas-ola-ta-minymata-ston-marokino-pics/",
+        "https://www.in.gr/2026/09/06/world/reuters-o-netaniaxou-dietakse-ti-dialysi-paranomon-prokexorimenon-oikismon-epoikon-sti-dytiki-oxthi/",
+        "https://www.in.gr/matchcenter/5943240/"
       ],
-      "seen_at_utc": "2026-09-06T15:51:41.175371+00:00"
+      "seen_at_utc": "2026-09-06T16:17:04.194122+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T15:51:41.175482+00:00"
+  "updated_at_utc": "2026-09-06T16:17:04.194274+00:00"
 }
