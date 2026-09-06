@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564441796/thessaloniki-katelixe-o-27chronos-poy-eiche-xylokopithei-agria-se-kavga-sta-giannitsa/",
-      "title": "Γιαννιτσά: Κατέληξε ο 27χρονος που είχε ξυλοκοπηθεί άγρια σε καβγά",
-      "normalized_title": "ΓΙΑΝΝΙΤΣΑ: ΚΑΤΕΛΗΞΕ Ο 27ΧΡΟΝΟΣ ΠΟΥ ΕΙΧΕ ΞΥΛΟΚΟΠΗΘΕΙ ΑΓΡΙΑ ΣΕ ΚΑΒΓΑ",
+      "url": "https://www.kathimerini.gr/society/564441820/acha-a-fotia-se-agrotodasiki-ektasi-stoys-petsakoys-epicheiroyn-7-enaeria/",
+      "title": "Αχαΐα: Φωτιά σε αγροτοδασική έκταση στους Πετσακούς – Επιχειρούν 7 εναέρια",
+      "normalized_title": "ΑΧΑΙΑ: ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟΥΣ ΠΕΤΣΑΚΟΥΣ – ΕΠΙΧΕΙΡΟΥΝ 7 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564441796/thessaloniki-katelixe-o-27chronos-poy-eiche-xylokopithei-agria-se-kavga-sta-giannitsa/"
+        "https://www.kathimerini.gr/society/564441820/acha-a-fotia-se-agrotodasiki-ektasi-stoys-petsakoys-epicheiroyn-7-enaeria/",
+        "https://www.kathimerini.gr/world/564441814/lavrof-enarxi-enos-pragmatikoy-polemoy-oi-katigories-tis-germanias-gia-to-drone-sti-leipsia/"
       ],
-      "seen_at_utc": "2026-09-06T12:30:00.109102+00:00"
+      "seen_at_utc": "2026-09-06T12:51:20.071860+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874721/den-tithetai-thema-palaiotitas-gia-to-phantom-stin-tanagra-lene-stratiotikes-piges/?utm_source=rss",
-      "title": "Δεν τίθεται θέμα «παλαιότητας» για το Phantom στην Τανάγρα, λένε στρατιωτικές πηγές",
-      "normalized_title": "ΔΕΝ ΤΙΘΕΤΑΙ ΘΕΜΑ «ΠΑΛΑΙΟΤΗΤΑΣ» ΓΙΑ ΤΟ PHANTOM ΣΤΗΝ ΤΑΝΑΓΡΑ, ΛΕΝΕ ΣΤΡΑΤΙΩΤΙΚΕΣ ΠΗΓΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1874739/trohaio-dustuhima-stin-komotini-nekros-22hronos-odigos-motosikleta/?utm_source=rss",
+      "title": "Τροχαίο δυστύχημα στην Κομοτηνή: Νεκρός 22χρονος οδηγός μοτοσικλέτας",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΔΥΣΤΥΧΗΜΑ ΣΤΗΝ ΚΟΜΟΤΗΝΗ: ΝΕΚΡΟΣ 22ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΜΟΤΟΣΙΚΛΕΤΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874721/den-tithetai-thema-palaiotitas-gia-to-phantom-stin-tanagra-lene-stratiotikes-piges/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874719/katelixe-o-27hronos-pou-xulokopithike-sta-giannitsa-meta-apo-kavga-se-bar/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874739/trohaio-dustuhima-stin-komotini-nekros-22hronos-odigos-motosikleta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T11:51:08.669499+00:00"
+      "seen_at_utc": "2026-09-06T12:51:20.071943+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1461380/apantisi-samara-se-mitsotaki-tha-meinei-stin-istoria-os-o-prothypoyrgos-tis-akriveias-kai-tis-diafthoras/",
-      "title": "Απάντηση Σαμαρά σε Μητσοτάκη: ««Θα μείνει στην ιστορία ως ο πρωθυπουργός της ακρίβειας και της διαφθοράς»",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΣΑΜΑΡΑ ΣΕ ΜΗΤΣΟΤΑΚΗ: ««ΘΑ ΜΕΙΝΕΙ ΣΤΗΝ ΙΣΤΟΡΙΑ ΩΣ Ο ΠΡΩΘΥΠΟΥΡΓΟΣ ΤΗΣ ΑΚΡΙΒΕΙΑΣ ΚΑΙ ΤΗΣ ΔΙΑΦΘΟΡΑΣ»",
+      "url": "https://www.efsyn.gr/politiki/1461390/mitsotakis-sti-deth-thelei-aytodynamia-kai-triti-thiteia-prothypoyrgoy-den-thelei-samara-tsipra-kai-pasok/",
+      "title": "Μητσοτάκης στη ΔΕΘ: Θέλει αυτοδυναμία και νέα πρωθυπουργία – Δεν θέλει Σαμαρά, Τσίπρα και ΠΑΣΟΚ",
+      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΣΤΗ ΔΕΘ: ΘΕΛΕΙ ΑΥΤΟΔΥΝΑΜΙΑ ΚΑΙ ΝΕΑ ΠΡΩΘΥΠΟΥΡΓΙΑ – ΔΕΝ ΘΕΛΕΙ ΣΑΜΑΡΑ, ΤΣΙΠΡΑ ΚΑΙ ΠΑΣΟΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1461380/apantisi-samara-se-mitsotaki-tha-meinei-stin-istoria-os-o-prothypoyrgos-tis-akriveias-kai-tis-diafthoras/"
+        "https://www.efsyn.gr/politiki/1461390/mitsotakis-sti-deth-thelei-aytodynamia-kai-triti-thiteia-prothypoyrgoy-den-thelei-samara-tsipra-kai-pasok/",
+        "https://www.efsyn.gr/ellada/1461393/anazopyrothike-i-fotia-stin-konitsa-kapnoi-ehoyn-kalypsei-tin-periohi/",
+        "https://www.efsyn.gr/ellada/1461373/katelixe-o-27hronos-poy-xylokopithike-exo-apo-mpar-sta-giannitsa-meta-apo-kavga/"
       ],
-      "seen_at_utc": "2026-09-06T12:17:06.058047+00:00"
+      "seen_at_utc": "2026-09-06T12:51:20.071928+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/06/greece/giannitsa-pethane-o-27xronos-meta-ton-agrio-ksylodarmo-se-klamp-profylakismenos-o-26xronos/",
-      "title": "Γιαννιτσά: Πέθανε ο 27χρονος μετά τον άγριο ξυλοδαρμό σε κλαμπ – Προφυλακισμένος ο 26χρονος",
-      "normalized_title": "ΓΙΑΝΝΙΤΣΑ: ΠΕΘΑΝΕ Ο 27ΧΡΟΝΟΣ ΜΕΤΑ ΤΟΝ ΑΓΡΙΟ ΞΥΛΟΔΑΡΜΟ ΣΕ ΚΛΑΜΠ – ΠΡΟΦΥΛΑΚΙΣΜΕΝΟΣ Ο 26ΧΡΟΝΟΣ",
+      "url": "https://www.in.gr/2026/09/06/greece/tragodia-stin-tanagra-trisagio-apo-ton-arxiepiskopo-ieronymo-den-yparxoun-logia-mprosta-se-enan-tetoio-pono/",
+      "title": "Τραγωδία στην Τανάγρα: Τρισάγιο από τον Αρχιεπίσκοπο Ιερώνυμο – «Δεν υπάρχουν λόγια μπροστά σε έναν τέτοιο πόνο»",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗΝ ΤΑΝΑΓΡΑ: ΤΡΙΣΑΓΙΟ ΑΠΟ ΤΟΝ ΑΡΧΙΕΠΙΣΚΟΠΟ ΙΕΡΩΝΥΜΟ – «ΔΕΝ ΥΠΑΡΧΟΥΝ ΛΟΓΙΑ ΜΠΡΟΣΤΑ ΣΕ ΕΝΑΝ ΤΕΤΟΙΟ ΠΟΝΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/06/greece/giannitsa-pethane-o-27xronos-meta-ton-agrio-ksylodarmo-se-klamp-profylakismenos-o-26xronos/",
-        "https://www.in.gr/2026/09/06/sports/football/paiktis-tis-mpastia-simeiose-aytogkol-me-teleioma-pou-tha-zileye-ki-o-ronalnto-vid/",
-        "https://www.in.gr/2026/09/06/politics/politiki-grammateia/metra-gia-na-antexoume-i-metra-gia-na-zoume-kalytera-i-elas-sygkrinei-tis-eksaggelies-mitsotaki-kai-tis-protaseis-tis/"
+        "https://www.in.gr/2026/09/06/greece/tragodia-stin-tanagra-trisagio-apo-ton-arxiepiskopo-ieronymo-den-yparxoun-logia-mprosta-se-enan-tetoio-pono/",
+        "https://www.in.gr/2026/09/06/politics/epikairotita/syriza-o-mitsotakis-theorei-akatanoito-to-provadisma-ton-anthropon-enanti-ton-arithmon-ntropi-kai-mono/",
+        "https://www.in.gr/2026/09/06/greece/peripeteia-stin-ethniki-odo-gia-50-epivates-eskasan-dyo-lastixa-se-poulman/",
+        "https://www.in.gr/2026/09/06/politics/politiki-grammateia/pasok-anaksiopistia-alazoneia-kai-eksapatisi-to-triptyxo-mitsotaki-sti-synenteyksi-typou/"
       ],
-      "seen_at_utc": "2026-09-06T12:30:00.109150+00:00"
+      "seen_at_utc": "2026-09-06T12:51:20.071907+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T12:30:00.109277+00:00"
+  "updated_at_utc": "2026-09-06T12:51:20.072015+00:00"
 }
