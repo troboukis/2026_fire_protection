@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/basketball/564443374/zigioy-zangk-o-pyrgos-ypsoys-2-23-m-tis-kinas/",
-      "title": "Ζιγιού Ζανγκ: Ο πύργος ύψους 2,23 μ. της Κίνας",
-      "normalized_title": "ΖΙΓΙΟΥ ΖΑΝΓΚ: Ο ΠΥΡΓΟΣ ΥΨΟΥΣ 2,23 Μ. ΤΗΣ ΚΙΝΑΣ",
+      "url": "https://www.kathimerini.gr/society/564440173/ta-chamena-eisaggelika-paidia/",
+      "title": "Τα χαμένα «εισαγγελικά παιδιά»",
+      "normalized_title": "ΤΑ ΧΑΜΕΝΑ «ΕΙΣΑΓΓΕΛΙΚΑ ΠΑΙΔΙΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/basketball/564443374/zigioy-zangk-o-pyrgos-ypsoys-2-23-m-tis-kinas/",
-        "https://www.kathimerini.gr/society/dikastiko/564443344/tempi-ti-katethese-i-oikogeneia-toy-michanodigoy-tis-epivatikis-amaxostoichias/",
-        "https://www.kathimerini.gr/culture/564443317/spasmeni-fleva-h-episimi-ypopsifiotita-tis-elladas-sta-oscar/",
-        "https://www.kathimerini.gr/politics/564440071/oi-klironomoi-tis-kalpis/",
-        "https://www.kathimerini.gr/politics/564443263/den-echoyn-thesi-stin-e-e-i-antidrasi-toy-ekprosopoy-tis-komision-gia-tis-times-ston-mlantits/"
+        "https://www.kathimerini.gr/society/564440173/ta-chamena-eisaggelika-paidia/",
+        "https://www.kathimerini.gr/columns/564442918/i-lepti-grammi-tis-dimosias-kritikis-toy-trinkieri-ston-mpazina/",
+        "https://www.kathimerini.gr/world/564443419/diplomatikos-polemos-germanias-rosias-loyketo-se-proxeneia-kai-institoyto-gkete/",
+        "https://www.kathimerini.gr/world/564443305/o-diethnis-organismos-atomikis-energeias-kalei-to-iran-se-dialogo/"
       ],
-      "seen_at_utc": "2026-09-07T14:51:18.502500+00:00"
+      "seen_at_utc": "2026-09-07T15:17:02.882026+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,39 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875233/fotia-se-autokinito-sto-kedro-tis-athinas-kathusteriseis-stin-kukloforia/?utm_source=rss",
-      "title": "Φωτιά σε αυτοκίνητο στο κέντρο της Αθήνας, καθυστερήσεις στην κυκλοφορία",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΥΤΟΚΙΝΗΤΟ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ, ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1875255/nuhterini-exormisi-tis-trohaias-stin-attiki-me-40-sullipseis-odigon-oi-17-eihan-piei/?utm_source=rss",
+      "title": "Νυχτερινή εξόρμηση της Τροχαίας στην Αττική με 40 συλλήψεις οδηγών, οι 17 είχαν πιει",
+      "normalized_title": "ΝΥΧΤΕΡΙΝΗ ΕΞΟΡΜΗΣΗ ΤΗΣ ΤΡΟΧΑΙΑΣ ΣΤΗΝ ΑΤΤΙΚΗ ΜΕ 40 ΣΥΛΛΗΨΕΙΣ ΟΔΗΓΩΝ, ΟΙ 17 ΕΙΧΑΝ ΠΙΕΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875233/fotia-se-autokinito-sto-kedro-tis-athinas-kathusteriseis-stin-kukloforia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875255/nuhterini-exormisi-tis-trohaias-stin-attiki-me-40-sullipseis-odigon-oi-17-eihan-piei/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T14:51:18.502601+00:00"
+      "seen_at_utc": "2026-09-07T15:17:02.882180+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1462283/marathonas-antikroyomena-afigimata-apo-tin-68hroni-kai-ton-38hrono-gio-tis-den-thymamai-itan-halia/",
-      "title": "Μαραθώνας: Αντικρουόμενα αφηγήματα από την 68χρονη και τον 38χρονο γιο της: «Δεν θυμάμαι, ήταν χάλια»",
-      "normalized_title": "ΜΑΡΑΘΩΝΑΣ: ΑΝΤΙΚΡΟΥΟΜΕΝΑ ΑΦΗΓΗΜΑΤΑ ΑΠΟ ΤΗΝ 68ΧΡΟΝΗ ΚΑΙ ΤΟΝ 38ΧΡΟΝΟ ΓΙΟ ΤΗΣ: «ΔΕΝ ΘΥΜΑΜΑΙ, ΗΤΑΝ ΧΑΛΙΑ»",
+      "url": "https://www.efsyn.gr/kosmos/1462050/zeite-se-prasini-poli-o-ollandikos-kanonas-poy-deihnei-an-mia-geitonia-einai-ygiis/",
+      "title": "Ζείτε σε πράσινη πόλη; Ο ολλανδικός κανόνας που δείχνει αν μια γειτονιά είναι υγιής",
+      "normalized_title": "ΖΕΙΤΕ ΣΕ ΠΡΑΣΙΝΗ ΠΟΛΗ; Ο ΟΛΛΑΝΔΙΚΟΣ ΚΑΝΟΝΑΣ ΠΟΥ ΔΕΙΧΝΕΙ ΑΝ ΜΙΑ ΓΕΙΤΟΝΙΑ ΕΙΝΑΙ ΥΓΙΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1462283/marathonas-antikroyomena-afigimata-apo-tin-68hroni-kai-ton-38hrono-gio-tis-den-thymamai-itan-halia/",
-        "https://www.efsyn.gr/kosmos/1462274/anoigei-o-dromos-gia-proores-ekloges-stin-servia-zitise-ti-dialysi-tis-voylis-i-kyvernisi/",
-        "https://www.efsyn.gr/tehnes/1462272/to-minyma-ton-dub-inc-ligo-prin-ti-synaylia-toys-stin-athina/"
+        "https://www.efsyn.gr/kosmos/1462050/zeite-se-prasini-poli-o-ollandikos-kanonas-poy-deihnei-an-mia-geitonia-einai-ygiis/",
+        "https://www.efsyn.gr/kosmos/1462301/antipoina-tis-rosias-sti-germania-kleinei-to-proxeneio-stin-agia-petroypoli-loyketo-kai-sto-institoyto-gkete/",
+        "https://www.efsyn.gr/ellada/1462273/isthmia-synelifthi-o-kyvernitis-tis-thalamigoy-poy-sygkroystike-me-to-alieytiko-skotonontas-74hrono/"
       ],
-      "seen_at_utc": "2026-09-07T14:51:18.502581+00:00"
+      "seen_at_utc": "2026-09-07T15:17:02.882147+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/go-fun/tv/kampingk-ayto-einai-to-proto-megalo-trailer-tis-neas-seiras/",
-      "title": "Κάμπινγκ: Αυτό είναι το πρώτο μεγάλο trailer της νέας σειράς",
-      "normalized_title": "ΚΑΜΠΙΝΓΚ: ΑΥΤΟ ΕΙΝΑΙ ΤΟ ΠΡΩΤΟ ΜΕΓΑΛΟ TRAILER ΤΗΣ ΝΕΑΣ ΣΕΙΡΑΣ",
+      "url": "https://www.in.gr/2026/09/07/sports/football/italos-dimosiografos-xarise-ston-mourinio-potistiko-mpek-poios-itan-o-logos-vid/",
+      "title": "Ιταλός δημοσιογράφος χάρισε στον Μουρίνιο ποτιστικό μπεκ! Ποιος ήταν ο λόγος (vid)",
+      "normalized_title": "ΙΤΑΛΟΣ ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΧΑΡΙΣΕ ΣΤΟΝ ΜΟΥΡΙΝΙΟ ΠΟΤΙΣΤΙΚΟ ΜΠΕΚ! ΠΟΙΟΣ ΗΤΑΝ Ο ΛΟΓΟΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/go-fun/tv/kampingk-ayto-einai-to-proto-megalo-trailer-tis-neas-seiras/",
-        "https://www.in.gr/2026/09/07/politics/epikairotita/o-syriza-zitaei-na-vgoun-apo-to-arxeio-ta-adieykrinista-posa-georgiadi-i-apantisi-tou-ypourgou-stin-koumoundourou/",
-        "https://www.in.gr/2026/09/07/greece/anavoli-sti-diki-gia-tin-ypothesi-tou-marathona-psyxiatriki-pragmatognomosyni-zitise-o-dikigoros-tis-68xronis/",
-        "https://www.in.gr/2026/09/07/sports/football/epistoli-paok-stin-ked-zitei-dialogous-var-se-fasi-pou-theorei-penalti-ston-entiage/",
-        "https://www.in.gr/2026/09/07/greece/ta-pithana-aitia-tis-tragodias-stin-tanagra-kai-to-symvan-me-ena-mirage-liga-24ora-prin/",
-        "https://www.in.gr/2026/09/07/greece/protagonistis-se-erotikes-tainies-synelifthi-gia-mastropeia-o-33xronos-katigoreitai-oti-eksedide-dyo-16xrones/"
+        "https://www.in.gr/2026/09/07/sports/football/italos-dimosiografos-xarise-ston-mourinio-potistiko-mpek-poios-itan-o-logos-vid/",
+        "https://www.in.gr/2026/09/07/greece/troxaia-synelifthisan-40-odigoi-gia-paravaseis-stin-attiki-se-mia-evdomada-oi-17-eixan-katanalosei-alkool/",
+        "https://www.in.gr/2026/09/07/stories/rompin-morgkan-pethane-i-arxitektonas-tou-sygxronou-feminismou-apo-paidi-thayma-tis-tileorasis-amfiseksoualiki-pyrini-aktivistria/",
+        "https://www.in.gr/2026/09/07/world/i-istoria-kai-i-anodos-tis-afd-apo-komma-diamartyrias-se-akrodeksia-politiki-dynami/",
+        "https://www.in.gr/2026/09/07/politics/epikairotita/m-katrinis-anikei-stin-ellada-o-pigaios-kodikas-tis-aspidas-tou-axillea/",
+        "https://www.in.gr/2026/09/07/politics/epikairotita/maxairia-mantzou-ston-mitsotaki-gia-tin-apodoxi-tou-gr-dimitriadi-sti-nd-pou-mazi-me-ton-ntilian-ekviazoun-ton-prothypourgo/",
+        "https://www.in.gr/matchcenter/5943351/"
       ],
-      "seen_at_utc": "2026-09-07T14:51:18.502550+00:00"
+      "seen_at_utc": "2026-09-07T15:17:02.882098+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T14:51:18.502701+00:00"
+  "updated_at_utc": "2026-09-07T15:17:02.882244+00:00"
 }
