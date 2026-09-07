@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564422023/eortologio-poioi-giortazoyn-simera-7-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 7 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 7 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564442078/pyrovolismoi-ta-ximeromata-sta-patisia-enas-traymatias/",
+      "title": "Πυροβολισμοί τα ξημερώματα στα Πατήσια – Ενας τραυματίας",
+      "normalized_title": "ΠΥΡΟΒΟΛΙΣΜΟΙ ΤΑ ΞΗΜΕΡΩΜΑΤΑ ΣΤΑ ΠΑΤΗΣΙΑ – ΕΝΑΣ ΤΡΑΥΜΑΤΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564422023/eortologio-poioi-giortazoyn-simera-7-septemvrioy/",
-        "https://www.kathimerini.gr/culture/564439027/antam-koen-i-ellada-itan-magiko-meros-gia-tin-oikogeneia-moy/"
+        "https://www.kathimerini.gr/society/astynomiko/564442078/pyrovolismoi-ta-ximeromata-sta-patisia-enas-traymatias/",
+        "https://www.kathimerini.gr/society/dikastiko/564442063/diki-gia-ta-tempi-enarxi-tis-apodeiktikis-diadikasias-poioi-tha-exetastoyn/",
+        "https://www.kathimerini.gr/society/564442057/tram-se-efarmogi-apo-simera-to-anadiamorfomeno-programma-dromologion/"
       ],
-      "seen_at_utc": "2026-09-06T21:17:05.306529+00:00"
+      "seen_at_utc": "2026-09-07T04:17:10.692824+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1261,65 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874816/i-anartisi-tis-marevas-mitsotaki-gia-ton-filo-kai-mahiti-giorgo-mulonaki/?utm_source=rss",
-      "title": "Η ανάρτηση της Μαρέβας Μητσοτάκη για τον «φίλο και μαχητή» Γιώργο Μυλωνάκη",
-      "normalized_title": "Η ΑΝΑΡΤΗΣΗ ΤΗΣ ΜΑΡΕΒΑΣ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΟΝ «ΦΙΛΟ ΚΑΙ ΜΑΧΗΤΗ» ΓΙΩΡΓΟ ΜΥΛΩΝΑΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1874863/ogdoi-imera-mahis-me-ti-megali-fotia-stin-konitsa-kaiei-pukno-dasos-sikothikan-ta-enaeria-mesa/?utm_source=rss",
+      "title": "Όγδοη ημέρα μάχης με τη μεγάλη φωτιά στην Κόνιτσα, καίει πυκνό δάσος, σηκώθηκαν τα εναέρια μέσα",
+      "normalized_title": "ΟΓΔΟΗ ΗΜΕΡΑ ΜΑΧΗΣ ΜΕ ΤΗ ΜΕΓΑΛΗ ΦΩΤΙΑ ΣΤΗΝ ΚΟΝΙΤΣΑ, ΚΑΙΕΙ ΠΥΚΝΟ ΔΑΣΟΣ, ΣΗΚΩΘΗΚΑΝ ΤΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874816/i-anartisi-tis-marevas-mitsotaki-gia-ton-filo-kai-mahiti-giorgo-mulonaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874863/ogdoi-imera-mahis-me-ti-megali-fotia-stin-konitsa-kaiei-pukno-dasos-sikothikan-ta-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874859/me-neo-programma-dromologion-apo-simera-to-tram-oi-surmoi-tha-pernoun-pio-suhna-mikroteri-anamoni-gia-tous-epivates/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874857/purovolismoi-sta-patisia-traumatistike-55hronos-sta-podia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-06T20:16:57.681439+00:00"
+      "seen_at_utc": "2026-09-07T04:17:10.693035+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1461554/i-koyventa-toy-alexi-tsipra-kai-tis-kyvelis-marda-stis-kerkides-toy-panathinaikos-paok/",
-      "title": "Η κουβέντα του Αλέξη Τσίπρα και της Κυβέλης Μάρδα στις κερκίδες του Παναθηναϊκός – ΠΑΟΚ",
-      "normalized_title": "Η ΚΟΥΒΕΝΤΑ ΤΟΥ ΑΛΕΞΗ ΤΣΙΠΡΑ ΚΑΙ ΤΗΣ ΚΥΒΕΛΗΣ ΜΑΡΔΑ ΣΤΙΣ ΚΕΡΚΙΔΕΣ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΣ – ΠΑΟΚ",
+      "url": "https://www.efsyn.gr/politiki/1461560/o-mitsotakis-epimenei-na-min-apanta-gia-tin-promitheia-toy-predator/",
+      "title": "Ο Μητσοτάκης επιμένει να μην απαντά για την προμήθεια του Predator",
+      "normalized_title": "Ο ΜΗΤΣΟΤΑΚΗΣ ΕΠΙΜΕΝΕΙ ΝΑ ΜΗΝ ΑΠΑΝΤΑ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΤΟΥ PREDATOR",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1461554/i-koyventa-toy-alexi-tsipra-kai-tis-kyvelis-marda-stis-kerkides-toy-panathinaikos-paok/"
+        "https://www.efsyn.gr/politiki/1461560/o-mitsotakis-epimenei-na-min-apanta-gia-tin-promitheia-toy-predator/",
+        "https://www.efsyn.gr/ellada/1461590/pyrovolismoi-sta-patisia-sto-nosokomeio-55hronos/",
+        "https://www.efsyn.gr/kosmos/1461570/se-epikindyna-monopatia-i-germania-syntriptiki-niki-gia-tin-akrodexia-sti-saxonia-anhalt-hastoyki-stin-kyvernisi-merts/",
+        "https://www.efsyn.gr/ellada/1461563/tanagra-ta-dyo-senaria-gia-ti-syntrivi-toy-phantom-ti-exetazoyn-oi-empeirognomones-tis-polemikis-aeroporias/",
+        "https://www.efsyn.gr/protoselida/kalpiko-paketo/",
+        "https://www.efsyn.gr/kosmos/1461566/tragodia-sto-aerodromio-toy-maiami-aeroskafos-tis-amazon-vgike-ektos-diadromoy-kai-sygkroystike-me-ohimata-pente-nekroi/",
+        "https://www.efsyn.gr/ellada/1461564/eortologio-poioi-giortazoyn-simera-7-septemvrioy/"
       ],
-      "seen_at_utc": "2026-09-06T20:51:20.169831+00:00"
+      "seen_at_utc": "2026-09-07T04:17:10.692965+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/plus/medianews/sta-nea-tis-deyteras-ksilonontas-kai-ravontas/",
-      "title": "Στα «ΝΕΑ» της Δευτέρας: Ξηλώνοντας… και ράβοντας",
-      "normalized_title": "ΣΤΑ «ΝΕΑ» ΤΗΣ ΔΕΥΤΕΡΑΣ: ΞΗΛΩΝΟΝΤΑΣ… ΚΑΙ ΡΑΒΟΝΤΑΣ",
+      "url": "https://www.in.gr/2026/09/07/greece/aimatiro-epeisodio-me-pyrovolismous-sta-patisia-traymatistike-55xronos-sta-podia/",
+      "title": "Αιματηρό επεισόδιο με πυροβολισμούς στα Πατήσια – Τραυματίστηκε 55χρονος στα πόδια",
+      "normalized_title": "ΑΙΜΑΤΗΡΟ ΕΠΕΙΣΟΔΙΟ ΜΕ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΤΑ ΠΑΤΗΣΙΑ – ΤΡΑΥΜΑΤΙΣΤΗΚΕ 55ΧΡΟΝΟΣ ΣΤΑ ΠΟΔΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/plus/medianews/sta-nea-tis-deyteras-ksilonontas-kai-ravontas/"
+        "https://www.in.gr/2026/09/07/greece/aimatiro-epeisodio-me-pyrovolismous-sta-patisia-traymatistike-55xronos-sta-podia/",
+        "https://www.in.gr/2026/09/07/plus/i-gen-x-ektopizetai-apo-tin-agora-ergasias-i-stratigiki-gia-ena-epaggelmatiko-restart-meta-ta-50/",
+        "https://www.in.gr/2026/09/07/life/geysi/syntagi-xaloumi-me-psita-laxanika-kai-vasiliko/",
+        "https://www.in.gr/2026/09/07/greece/se-efarmogi-apo-simera-to-anadiamorfomeno-programma-dromologion-tou-tram/",
+        "https://www.in.gr/2026/09/07/plus/vita/perpatima-pente-tips-pou-to-apogeionoun/",
+        "https://www.in.gr/2026/09/07/greece/genika-aithrios-kairos-me-thermokrasies-eos-38-vathmous-kai-anemous-eos-7-mpofor-sto-aigaio/",
+        "https://www.in.gr/2026/09/07/go-fun/fizz/i-gkouen-stefani-apoxairetise-gia-panta-ti-skylitsa-tis-i-glykia-mas-mpeti-pige-ston-paradeiso/",
+        "https://www.in.gr/2026/09/07/plus/vita/sxesi-ti-ginetai-otan-teleionei-o-erotas/",
+        "https://www.in.gr/2026/09/07/interviews/pier-vouns-eimaste-mia-koinonia-xamilou-kindynou-kai-xamilis-apodosis/",
+        "https://www.in.gr/2026/09/07/in-science/ai/ai-ginontai-pragmatikotita-oi-proeidopoiiseis-gia-mia-anekselegkti-texniti-noimosyni/",
+        "https://www.in.gr/2026/09/07/greece/epanekkinei-i-diki-gia-ta-tempi-poioi-tha-eksetastoun-os-protoi-martyres/",
+        "https://www.in.gr/2026/09/07/politics/politiki-grammateia/deth-pos-epi-ena-diimero-o-kyriakos-mitsotakis-evale-to-pistoli-tis-asfaleias-ston-krotafo-ton-psifoforon/",
+        "https://www.in.gr/2026/09/07/world/eklogikos-grifos-araviko-ainigma-sto-israil-mia-vathia-systimiki-anatropi-kata-tou-netaniaxou/",
+        "https://www.in.gr/2026/09/07/economy/oikonomikes-eidiseis/pansypo-to-miso-eisodima-gia-stegi-fthinei-i-idiokatoikisi-ti-deixnoun-oi-arithmoi-piso-apo-to-spiti-mou-2/",
+        "https://www.in.gr/2026/09/07/life/culture-live/glypta-tou-parthenona-giati-o-epanapatrismos-den-pernaei-apo-tin-mpage/",
+        "https://www.in.gr/2026/09/07/life/culture-live/i-ntoli-parton-ithele-ta-paidia-olou-tou-kosmou-na-diavazoun/",
+        "https://www.in.gr/2026/09/07/apopsi/i-synexis-apeili-kai-i-lipsi-apofaseon/",
+        "https://www.in.gr/2026/09/07/world/kouva-nea-dimosia-emfanisi-tou-raoul-kastro-katagrafoun-reportaz-stin-kratiki-tileorasi/",
+        "https://www.in.gr/2026/09/07/world/o-tramp-anarta-grafima-pou-apotyponei-tin-eklogiki-niki-tis-afd/",
+        "https://www.in.gr/2026/09/07/world/livanos-oi-israilines-dynameis-diatassoun-katoikous-na-apomakrynthoun-espeysmena-enopsei-vomvardismon/",
+        "https://www.in.gr/2026/09/07/world/oukrania-fainetai-oti-o-polemos-tha-synexistei-ayton-ton-xeimona-dilonei-o-zelenski/",
+        "https://www.in.gr/2026/09/07/world/polonia-mono-ilithioi-kai-prodotes-giortazoun-ti-niki-tis-afd-leei-o-tousk/",
+        "https://www.in.gr/2026/09/07/world/voreia-makedonia-entoni-anisyxia-prokalei-o-arithmos-ton-nekron-apo-ton-io-tou-dytikou-neilou/",
+        "https://www.in.gr/2026/09/07/world/yemeni-pano-apo-300-nekroi-se-epidromi-ton-xouthi-oikogeneies-trapikan-se-fygi/",
+        "https://www.in.gr/2026/09/07/world/maiami-toulaxiston-5-nekroi-sti-syntrivi-emporeymatikou-aeroskafous-tis-amazon/",
+        "https://www.in.gr/2026/09/07/world/meksiko-toulaxiston-10-nekroi-apo-ekriksi-se-apothiki-ekklisias-me-pyrotexnimata/"
       ],
-      "seen_at_utc": "2026-09-06T22:17:02.979858+00:00"
+      "seen_at_utc": "2026-09-07T04:17:10.692916+00:00"
     }
   },
-  "updated_at_utc": "2026-09-06T22:51:07.331426+00:00"
+  "updated_at_utc": "2026-09-07T04:17:10.693140+00:00"
 }
