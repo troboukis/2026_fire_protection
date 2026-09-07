@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564443329/marathonas-ti-ischyristikan-mitera-kai-gios-gia-ti-giagia-poy-vrethike-thammeni-ston-kipo/",
-      "title": "Μαραθώνας: Τι ισχυρίστηκαν μητέρα και γιος για τη γιαγιά που βρέθηκε θαμμένη στον κήπο",
-      "normalized_title": "ΜΑΡΑΘΩΝΑΣ: ΤΙ ΙΣΧΥΡΙΣΤΗΚΑΝ ΜΗΤΕΡΑ ΚΑΙ ΓΙΟΣ ΓΙΑ ΤΗ ΓΙΑΓΙΑ ΠΟΥ ΒΡΕΘΗΚΕ ΘΑΜΜΕΝΗ ΣΤΟΝ ΚΗΠΟ",
+      "url": "https://www.kathimerini.gr/athletics/basketball/564443374/zigioy-zangk-o-pyrgos-ypsoys-2-23-m-tis-kinas/",
+      "title": "Ζιγιού Ζανγκ: Ο πύργος ύψους 2,23 μ. της Κίνας",
+      "normalized_title": "ΖΙΓΙΟΥ ΖΑΝΓΚ: Ο ΠΥΡΓΟΣ ΥΨΟΥΣ 2,23 Μ. ΤΗΣ ΚΙΝΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564443329/marathonas-ti-ischyristikan-mitera-kai-gios-gia-ti-giagia-poy-vrethike-thammeni-ston-kipo/"
+        "https://www.kathimerini.gr/athletics/basketball/564443374/zigioy-zangk-o-pyrgos-ypsoys-2-23-m-tis-kinas/",
+        "https://www.kathimerini.gr/society/dikastiko/564443344/tempi-ti-katethese-i-oikogeneia-toy-michanodigoy-tis-epivatikis-amaxostoichias/",
+        "https://www.kathimerini.gr/culture/564443317/spasmeni-fleva-h-episimi-ypopsifiotita-tis-elladas-sta-oscar/",
+        "https://www.kathimerini.gr/politics/564440071/oi-klironomoi-tis-kalpis/",
+        "https://www.kathimerini.gr/politics/564443263/den-echoyn-thesi-stin-e-e-i-antidrasi-toy-ekprosopoy-tis-komision-gia-tis-times-ston-mlantits/"
       ],
-      "seen_at_utc": "2026-09-07T14:30:03.117524+00:00"
+      "seen_at_utc": "2026-09-07T14:51:18.502500+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875220/anavlithike-i-diki-tis-koris-kai-tou-eggonou-gia-ti-thammeni-soro-tis-90hronis-ston-marathona/?utm_source=rss",
-      "title": "Αναβλήθηκε για τις 10 Σεπτεμβρίου η δίκη της κόρης και του εγγονού για τη θαμμένη σορό της 90χρονης στον Μαραθώνα",
-      "normalized_title": "ΑΝΑΒΛΗΘΗΚΕ ΓΙΑ ΤΙΣ 10 ΣΕΠΤΕΜΒΡΙΟΥ Η ΔΙΚΗ ΤΗΣ ΚΟΡΗΣ ΚΑΙ ΤΟΥ ΕΓΓΟΝΟΥ ΓΙΑ ΤΗ ΘΑΜΜΕΝΗ ΣΟΡΟ ΤΗΣ 90ΧΡΟΝΗΣ ΣΤΟΝ ΜΑΡΑΘΩΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1875233/fotia-se-autokinito-sto-kedro-tis-athinas-kathusteriseis-stin-kukloforia/?utm_source=rss",
+      "title": "Φωτιά σε αυτοκίνητο στο κέντρο της Αθήνας, καθυστερήσεις στην κυκλοφορία",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΥΤΟΚΙΝΗΤΟ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ, ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875220/anavlithike-i-diki-tis-koris-kai-tou-eggonou-gia-ti-thammeni-soro-tis-90hronis-ston-marathona/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875214/i-teda-esose-ti-zoi-tis-13hronis-pou-epese-apo-ton-5o-orofo-xenodoheiou-sti-thessaloniki-dikografia-se-varos-allodapou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875233/fotia-se-autokinito-sto-kedro-tis-athinas-kathusteriseis-stin-kukloforia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T14:30:03.117648+00:00"
+      "seen_at_utc": "2026-09-07T14:51:18.502601+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1462247/pano-apo-5-dis-eyro-oi-ellinikes-exagoges-gia-4o-synehomeno-mina-ayxisi-159-ton-ioylio/",
-      "title": "Πάνω από 5 δισ. ευρώ οι ελληνικές εξαγωγές για 4ο συνεχόμενο μήνα – Αύξηση 15,9% τον Ιούλιο",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 5 ΔΙΣ. ΕΥΡΩ ΟΙ ΕΛΛΗΝΙΚΕΣ ΕΞΑΓΩΓΕΣ ΓΙΑ 4Ο ΣΥΝΕΧΟΜΕΝΟ ΜΗΝΑ – ΑΥΞΗΣΗ 15,9% ΤΟΝ ΙΟΥΛΙΟ",
+      "url": "https://www.efsyn.gr/ellada/1462283/marathonas-antikroyomena-afigimata-apo-tin-68hroni-kai-ton-38hrono-gio-tis-den-thymamai-itan-halia/",
+      "title": "Μαραθώνας: Αντικρουόμενα αφηγήματα από την 68χρονη και τον 38χρονο γιο της: «Δεν θυμάμαι, ήταν χάλια»",
+      "normalized_title": "ΜΑΡΑΘΩΝΑΣ: ΑΝΤΙΚΡΟΥΟΜΕΝΑ ΑΦΗΓΗΜΑΤΑ ΑΠΟ ΤΗΝ 68ΧΡΟΝΗ ΚΑΙ ΤΟΝ 38ΧΡΟΝΟ ΓΙΟ ΤΗΣ: «ΔΕΝ ΘΥΜΑΜΑΙ, ΗΤΑΝ ΧΑΛΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1462247/pano-apo-5-dis-eyro-oi-ellinikes-exagoges-gia-4o-synehomeno-mina-ayxisi-159-ton-ioylio/",
-        "https://www.efsyn.gr/ellada/1462254/ptosi-13hronis-apo-xenodoheio-stin-thessaloniki-dioxi-gia-ekthesi-sto-nearo-poy-ti-synodeye/",
-        "https://www.efsyn.gr/tehnes/1462250/oskar-2027-i-spasmeni-fleva-toy-gianni-oikonomidi-episimi-ypopsifiotita-tis-elladas/"
+        "https://www.efsyn.gr/ellada/1462283/marathonas-antikroyomena-afigimata-apo-tin-68hroni-kai-ton-38hrono-gio-tis-den-thymamai-itan-halia/",
+        "https://www.efsyn.gr/kosmos/1462274/anoigei-o-dromos-gia-proores-ekloges-stin-servia-zitise-ti-dialysi-tis-voylis-i-kyvernisi/",
+        "https://www.efsyn.gr/tehnes/1462272/to-minyma-ton-dub-inc-ligo-prin-ti-synaylia-toys-stin-athina/"
       ],
-      "seen_at_utc": "2026-09-07T14:30:03.117619+00:00"
+      "seen_at_utc": "2026-09-07T14:51:18.502581+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/world/etoimaze-o-asant-pyrinika-opla-nea-stoixeia-gia-ton-mystiko-antidrastira-sti-syria/",
-      "title": "Ετοίμαζε ο Άσαντ πυρηνικά όπλα; – Νέα στοιχεία για τον μυστικό αντιδραστήρα στη Συρία",
-      "normalized_title": "ΕΤΟΙΜΑΖΕ Ο ΑΣΑΝΤ ΠΥΡΗΝΙΚΑ ΟΠΛΑ; – ΝΕΑ ΣΤΟΙΧΕΙΑ ΓΙΑ ΤΟΝ ΜΥΣΤΙΚΟ ΑΝΤΙΔΡΑΣΤΗΡΑ ΣΤΗ ΣΥΡΙΑ",
+      "url": "https://www.in.gr/2026/09/07/go-fun/tv/kampingk-ayto-einai-to-proto-megalo-trailer-tis-neas-seiras/",
+      "title": "Κάμπινγκ: Αυτό είναι το πρώτο μεγάλο trailer της νέας σειράς",
+      "normalized_title": "ΚΑΜΠΙΝΓΚ: ΑΥΤΟ ΕΙΝΑΙ ΤΟ ΠΡΩΤΟ ΜΕΓΑΛΟ TRAILER ΤΗΣ ΝΕΑΣ ΣΕΙΡΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/world/etoimaze-o-asant-pyrinika-opla-nea-stoixeia-gia-ton-mystiko-antidrastira-sti-syria/",
-        "https://www.in.gr/2026/09/07/life/culture-live/o-romp-rainer-kerdizei-metathanatio-vraveio-emmy-gia-ti-seira-the-bear/"
+        "https://www.in.gr/2026/09/07/go-fun/tv/kampingk-ayto-einai-to-proto-megalo-trailer-tis-neas-seiras/",
+        "https://www.in.gr/2026/09/07/politics/epikairotita/o-syriza-zitaei-na-vgoun-apo-to-arxeio-ta-adieykrinista-posa-georgiadi-i-apantisi-tou-ypourgou-stin-koumoundourou/",
+        "https://www.in.gr/2026/09/07/greece/anavoli-sti-diki-gia-tin-ypothesi-tou-marathona-psyxiatriki-pragmatognomosyni-zitise-o-dikigoros-tis-68xronis/",
+        "https://www.in.gr/2026/09/07/sports/football/epistoli-paok-stin-ked-zitei-dialogous-var-se-fasi-pou-theorei-penalti-ston-entiage/",
+        "https://www.in.gr/2026/09/07/greece/ta-pithana-aitia-tis-tragodias-stin-tanagra-kai-to-symvan-me-ena-mirage-liga-24ora-prin/",
+        "https://www.in.gr/2026/09/07/greece/protagonistis-se-erotikes-tainies-synelifthi-gia-mastropeia-o-33xronos-katigoreitai-oti-eksedide-dyo-16xrones/"
       ],
-      "seen_at_utc": "2026-09-07T14:30:03.117575+00:00"
+      "seen_at_utc": "2026-09-07T14:51:18.502550+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T14:30:03.117719+00:00"
+  "updated_at_utc": "2026-09-07T14:51:18.502701+00:00"
 }
