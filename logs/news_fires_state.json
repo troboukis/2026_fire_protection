@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564442177/ipa-o-tramp-proteinei-na-metonomastei-to-neo-mexiko-se-nea-ameriki/",
-      "title": "ΗΠΑ: Ο Τραμπ προτείνει να μετονομαστεί το Νέο Μεξικό σε… «Νέα Αμερική»",
-      "normalized_title": "ΗΠΑ: Ο ΤΡΑΜΠ ΠΡΟΤΕΙΝΕΙ ΝΑ ΜΕΤΟΝΟΜΑΣΤΕΙ ΤΟ ΝΕΟ ΜΕΞΙΚΟ ΣΕ… «ΝΕΑ ΑΜΕΡΙΚΗ»",
+      "url": "https://www.kathimerini.gr/society/564442201/metro-elaionas-kerameikos-kai-monastiraki-tha-kleinoyn-stis-21-40-apo-simera-pote-ligei-to-metro/",
+      "title": "Μετρό: «Ελαιώνας», «Κεραμεικός» και «Μοναστηράκι» θα κλείνουν στις 21:40 από σήμερα – Πότε λήγει το μέτρο",
+      "normalized_title": "ΜΕΤΡΟ: «ΕΛΑΙΩΝΑΣ», «ΚΕΡΑΜΕΙΚΟΣ» ΚΑΙ «ΜΟΝΑΣΤΗΡΑΚΙ» ΘΑ ΚΛΕΙΝΟΥΝ ΣΤΙΣ 21:40 ΑΠΟ ΣΗΜΕΡΑ – ΠΟΤΕ ΛΗΓΕΙ ΤΟ ΜΕΤΡΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564442177/ipa-o-tramp-proteinei-na-metonomastei-to-neo-mexiko-se-nea-ameriki/",
-        "https://www.kathimerini.gr/society/564442198/thessaloniki-13chroni-epese-apo-mpalkoni-nosileyetai-varia-traymatismeni/"
+        "https://www.kathimerini.gr/society/564442201/metro-elaionas-kerameikos-kai-monastiraki-tha-kleinoyn-stis-21-40-apo-simera-pote-ligei-to-metro/",
+        "https://www.kathimerini.gr/culture/cinema/564442204/o-mel-gkimpson-anazitei-tis-rizes-toy-satana/",
+        "https://www.kathimerini.gr/world/564442213/oie-pyrkagies-kai-kaysones-apeiloyn-tin-poiotita-toy-aera/"
       ],
-      "seen_at_utc": "2026-09-07T05:30:04.526413+00:00"
+      "seen_at_utc": "2026-09-07T05:51:14.181853+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874885/sovara-traumatismeni-vrethike-13hroni-se-prasia-xenodoheiou-sti-thessaloniki-anazitoudai-duo-atoma-pou-itan-mazi-tis/?utm_source=rss",
-      "title": "Σοβαρά τραυματισμένη βρέθηκε 13χρονη σε πρασιά ξενοδοχείου στη Θεσσαλονίκη, αναζητούνται δύο άτομα που ήταν μαζί της",
-      "normalized_title": "ΣΟΒΑΡΑ ΤΡΑΥΜΑΤΙΣΜΕΝΗ ΒΡΕΘΗΚΕ 13ΧΡΟΝΗ ΣΕ ΠΡΑΣΙΑ ΞΕΝΟΔΟΧΕΙΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΑΝΑΖΗΤΟΥΝΤΑΙ ΔΥΟ ΑΤΟΜΑ ΠΟΥ ΗΤΑΝ ΜΑΖΙ ΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1874892/iapones-horepsan-podiaka-tragoudisan-kai-epaixan-lura-brosta-ston-leuko-purgo-deite-video/?utm_source=rss",
+      "title": "Ιάπωνες χόρεψαν ποντιακά, τραγούδησαν και έπαιξαν λύρα μπροστά στον Λευκό Πύργο, δείτε βίντεο",
+      "normalized_title": "ΙΑΠΩΝΕΣ ΧΟΡΕΨΑΝ ΠΟΝΤΙΑΚΑ, ΤΡΑΓΟΥΔΗΣΑΝ ΚΑΙ ΕΠΑΙΞΑΝ ΛΥΡΑ ΜΠΡΟΣΤΑ ΣΤΟΝ ΛΕΥΚΟ ΠΥΡΓΟ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874885/sovara-traumatismeni-vrethike-13hroni-se-prasia-xenodoheiou-sti-thessaloniki-anazitoudai-duo-atoma-pou-itan-mazi-tis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1874883/sunomilies-piloton-video-apo-sudrivi-kai-sudrimmia-tha-dosoun-apadiseis-gia-tin-ptosi-tou-phantom-stin-tanagra/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874892/iapones-horepsan-podiaka-tragoudisan-kai-epaixan-lura-brosta-ston-leuko-purgo-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T05:30:04.526560+00:00"
+      "seen_at_utc": "2026-09-07T05:51:14.181995+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461649/metro-poioi-stathmoi-tha-kleinoyn-noritera-mehri-tin-pempti-logo-ergon/",
-      "title": "Μετρό: Ποιοι σταθμοί θα κλείνουν νωρίτερα μέχρι την Πέμπτη λόγω έργων",
-      "normalized_title": "ΜΕΤΡΟ: ΠΟΙΟΙ ΣΤΑΘΜΟΙ ΘΑ ΚΛΕΙΝΟΥΝ ΝΩΡΙΤΕΡΑ ΜΕΧΡΙ ΤΗΝ ΠΕΜΠΤΗ ΛΟΓΩ ΕΡΓΩΝ",
+      "url": "https://www.efsyn.gr/athlitismos/1461641/enos-kakoy-myria-epontai-isopalia-me-ton-volo-o-olympiakos-meta-ton-traymatismo-toy-el-kaampi/",
+      "title": "Ενός κακού μύρια έπονται: Ισοπαλία με τον Βόλο ο Ολυμπιακός μετά τον τραυματισμό του Ελ Κααμπί",
+      "normalized_title": "ΕΝΟΣ ΚΑΚΟΥ ΜΥΡΙΑ ΕΠΟΝΤΑΙ: ΙΣΟΠΑΛΙΑ ΜΕ ΤΟΝ ΒΟΛΟ Ο ΟΛΥΜΠΙΑΚΟΣ ΜΕΤΑ ΤΟΝ ΤΡΑΥΜΑΤΙΣΜΟ ΤΟΥ ΕΛ ΚΑΑΜΠΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461649/metro-poioi-stathmoi-tha-kleinoyn-noritera-mehri-tin-pempti-logo-ergon/",
-        "https://www.efsyn.gr/ellada/1461651/1461651/"
+        "https://www.efsyn.gr/athlitismos/1461641/enos-kakoy-myria-epontai-isopalia-me-ton-volo-o-olympiakos-meta-ton-traymatismo-toy-el-kaampi/",
+        "https://www.efsyn.gr/tehnes/1461666/proti-parastasi-meta-apo-aiones-siopis-sto-arhaio-theatro-stratoy/",
+        "https://www.efsyn.gr/politiki/1461673/el-a-s-gia-ti-niki-toy-afd-kampanaki-kindynoy-gia-olokliri-tin-eyropi/",
+        "https://www.efsyn.gr/ellada/1461660/thessaloniki-13hroni-epese-apo-mpalkoni-nosileyetai-varia-traymatismeni/",
+        "https://www.efsyn.gr/kosmos/1461654/tramp-meta-apo-mia-limni-ena-steno-kai-enan-kolpo-thelei-na-xanavaftisei-kai-to-neo-mexiko/",
+        "https://www.efsyn.gr/oikonomia/1459558/epistrofi-stin-taxi-me-ta-public-ola-osa-hreiazontai-mathites-kai-goneis-2/"
       ],
-      "seen_at_utc": "2026-09-07T05:30:04.526518+00:00"
+      "seen_at_utc": "2026-09-07T05:51:14.181952+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/world/tramp-metonomasion-synexeia-proteinei-to-onoma-nea-ameriki-gia-tin-politeia-tou-neou-meksikou/",
-      "title": "Μετονομασιών συνέχεια - Ο Τραμπ προτείνει το όνομα «Νέα Αμερική» για την πολιτεία του Νέου Μεξικού",
-      "normalized_title": "ΜΕΤΟΝΟΜΑΣΙΩΝ ΣΥΝΕΧΕΙΑ - Ο ΤΡΑΜΠ ΠΡΟΤΕΙΝΕΙ ΤΟ ΟΝΟΜΑ «ΝΕΑ ΑΜΕΡΙΚΗ» ΓΙΑ ΤΗΝ ΠΟΛΙΤΕΙΑ ΤΟΥ ΝΕΟΥ ΜΕΞΙΚΟΥ",
+      "url": "https://www.in.gr/2026/09/07/economy/diethnis-oikonomia/jaguar-land-rover-epivevaionei-tis-programmatismenes-perikopes-theseon-ergasias/",
+      "title": "Επιβεβαιώνει τις προγραμματισμένες περικοπές θέσεων εργασίας η Jaguar Land Rover",
+      "normalized_title": "ΕΠΙΒΕΒΑΙΩΝΕΙ ΤΙΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΕΝΕΣ ΠΕΡΙΚΟΠΕΣ ΘΕΣΕΩΝ ΕΡΓΑΣΙΑΣ Η JAGUAR LAND ROVER",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/world/tramp-metonomasion-synexeia-proteinei-to-onoma-nea-ameriki-gia-tin-politeia-tou-neou-meksikou/",
-        "https://www.in.gr/2026/09/07/sports/football/oi-ixires-apousies-apo-tis-eyropaikes-listes/"
+        "https://www.in.gr/2026/09/07/economy/diethnis-oikonomia/jaguar-land-rover-epivevaionei-tis-programmatismenes-perikopes-theseon-ergasias/",
+        "https://www.in.gr/2026/09/07/world/maiami-h-stigmi-pou-to-aeroskafos-tis-amazon-vgainei-ektos-diadromou-5-nekroi/",
+        "https://www.in.gr/2026/09/07/sports/football/o-safonof-kindyneyei-na-xasei-ti-thesi-tou-stin-pari-apo-ton-sevalie/",
+        "https://www.in.gr/2026/09/07/life/culture-live/emmy-2026-oi-megaloi-nikites-prin-apo-tin-kentriki-aponomi-poioi-sarosan-ta-vraveia/"
       ],
-      "seen_at_utc": "2026-09-07T05:30:04.526476+00:00"
+      "seen_at_utc": "2026-09-07T05:51:14.181908+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T05:30:04.526631+00:00"
+  "updated_at_utc": "2026-09-07T05:51:14.182071+00:00"
 }
