@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564443521/germania-anisychia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saxonia-anchalt/",
-      "title": "Γερμανία: Ανησυχία στις κοινότητες των μεταναστών μετά τη νίκη της AfD στη Σαξονία-Aνχαλτ",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΑΝΗΣΥΧΙΑ ΣΤΙΣ ΚΟΙΝΟΤΗΤΕΣ ΤΩΝ ΜΕΤΑΝΑΣΤΩΝ ΜΕΤΑ ΤΗ ΝΙΚΗ ΤΗΣ AFD ΣΤΗ ΣΑΞΟΝΙΑ-AΝΧΑΛΤ",
+      "url": "https://www.kathimerini.gr/athletics/analysis/564443407/i-empistosyni-tha-einai-o-x-factor-toy-olympiakoy/",
+      "title": "Η εμπιστοσύνη θα είναι ο X Factor του Ολυμπιακού",
+      "normalized_title": "Η ΕΜΠΙΣΤΟΣΥΝΗ ΘΑ ΕΙΝΑΙ Ο X FACTOR ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564443521/germania-anisychia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saxonia-anchalt/"
+        "https://www.kathimerini.gr/athletics/analysis/564443407/i-empistosyni-tha-einai-o-x-factor-toy-olympiakoy/",
+        "https://www.kathimerini.gr/politics/amyna/564443533/ora-ypografon-gia-tis-bergamini/",
+        "https://www.kathimerini.gr/society/564443536/lamia-67chronos-estise-pagida-stoys-apateones-anti-gia-lires-toys-edose-petres/",
+        "https://www.kathimerini.gr/life/health/564443494/ligoyres-san-steritiko-iroinis-ti-symvainei-otan-ta-farmaka-adynatismatos-den-leitoyrgoyn/",
+        "https://www.kathimerini.gr/k/k-magazine/564436693/ta-mystika-tis-pompiias-xana-sto-fos/"
       ],
-      "seen_at_utc": "2026-09-07T16:51:17.324738+00:00"
+      "seen_at_utc": "2026-09-07T17:17:19.968000+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1273,32 @@
       "seen_at_utc": "2026-09-07T16:29:58.013710+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1462346/stamatiste-tin-koroidia-se-varos-ton-syntaxioyhon/",
-      "title": "Σταματήστε την κοροϊδία σε βάρος των συνταξιούχων",
-      "normalized_title": "ΣΤΑΜΑΤΗΣΤΕ ΤΗΝ ΚΟΡΟΙΔΙΑ ΣΕ ΒΑΡΟΣ ΤΩΝ ΣΥΝΤΑΞΙΟΥΧΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1462358/nantia-valavani-o-k-portosalte-epanelave-ti-gnosti-teratodi-sykofantia-apo-to-2015/",
+      "title": "Νάντια Βαλαβάνη: Ο κ. Πορτοσάλτε επανέλαβε τη γνωστή τερατώδη συκοφαντία από το 2015",
+      "normalized_title": "ΝΑΝΤΙΑ ΒΑΛΑΒΑΝΗ: Ο Κ. ΠΟΡΤΟΣΑΛΤΕ ΕΠΑΝΕΛΑΒΕ ΤΗ ΓΝΩΣΤΗ ΤΕΡΑΤΩΔΗ ΣΥΚΟΦΑΝΤΙΑ ΑΠΟ ΤΟ 2015",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1462346/stamatiste-tin-koroidia-se-varos-ton-syntaxioyhon/",
-        "https://www.efsyn.gr/politiki/1461990/kyvernisi-vs-elas-oi-10-diafores-anamesa-sta-dyo-programmata-meta-tis-anakoinoseis-mitsotaki-tsipra-apo-ti-thessaloniki/"
+        "https://www.efsyn.gr/ellada/1462358/nantia-valavani-o-k-portosalte-epanelave-ti-gnosti-teratodi-sykofantia-apo-to-2015/",
+        "https://www.efsyn.gr/ellada/1462356/eyvoia-kalyteri-eikona-sti-fotia-stin-makrykapa-i-mahi-synehizetai/",
+        "https://www.efsyn.gr/ellada/1462351/pyrovolismoi-sta-patisia-prospathise-na-moy-klepsei-ti-mihani-katethese-o-55hronos/",
+        "https://www.efsyn.gr/life/1462355/o-vasilias-karolos-xekatharizei-poios-tha-einai-o-rolos-toy-hari-kai-tis-megkan/"
       ],
-      "seen_at_utc": "2026-09-07T16:51:17.324830+00:00"
+      "seen_at_utc": "2026-09-07T17:17:19.968076+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/greece/kriti-taytopoiithike-kai-synelifthi-17xronos-odigos-pou-espase-ta-kolonakia-gia-na-kanei-paranomi-prosperasi/",
-      "title": "Κρήτη: Ταυτοποιήθηκε και συνελήφθη 17χρονος οδηγός που έσπασε τα κολωνάκια για να κάνει παράνομη προσπέραση",
-      "normalized_title": "ΚΡΗΤΗ: ΤΑΥΤΟΠΟΙΗΘΗΚΕ ΚΑΙ ΣΥΝΕΛΗΦΘΗ 17ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΠΟΥ ΕΣΠΑΣΕ ΤΑ ΚΟΛΩΝΑΚΙΑ ΓΙΑ ΝΑ ΚΑΝΕΙ ΠΑΡΑΝΟΜΗ ΠΡΟΣΠΕΡΑΣΗ",
+      "url": "https://www.in.gr/2026/09/07/go-fun/fizz/dimiourgos-tou-fauda-gia-rafalo-adais-kai-anoitos-epeidi-mila-gia-genoktonia-sti-gaza/",
+      "title": "Δημιουργός του «Fauda» για Ράφαλο: «Αδαής και ανόητος» επειδή μιλά για γενοκτονία στη Γάζα",
+      "normalized_title": "ΔΗΜΙΟΥΡΓΟΣ ΤΟΥ «FAUDA» ΓΙΑ ΡΑΦΑΛΟ: «ΑΔΑΗΣ ΚΑΙ ΑΝΟΗΤΟΣ» ΕΠΕΙΔΗ ΜΙΛΑ ΓΙΑ ΓΕΝΟΚΤΟΝΙΑ ΣΤΗ ΓΑΖΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/greece/kriti-taytopoiithike-kai-synelifthi-17xronos-odigos-pou-espase-ta-kolonakia-gia-na-kanei-paranomi-prosperasi/",
-        "https://www.in.gr/2026/09/07/go-fun/fizz/i-sygklonistiki-omilia-tis-pamela-anterson-apo-ti-venetia/",
-        "https://www.in.gr/2026/09/07/world/germania-anisyxia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saksonia-anxalt/",
-        "https://www.in.gr/2026/09/07/life/oskar-2027-i-spasmeni-fleva-tou-gianni-oikonomidi-ekprosopei-tin-ellada-sta-99a-vraveia/"
+        "https://www.in.gr/2026/09/07/go-fun/fizz/dimiourgos-tou-fauda-gia-rafalo-adais-kai-anoitos-epeidi-mila-gia-genoktonia-sti-gaza/",
+        "https://www.in.gr/2026/09/07/greece/se-yfesi-i-fotia-stin-eyvoia-xoris-energo-metopo-zimies-se-poimniostasia-kaikan-apothikes/",
+        "https://www.in.gr/2026/09/07/world/tragodia-sto-parisi-pateras-kai-gios-nekroi-se-frikto-troxaio-me-lamborghini/",
+        "https://www.in.gr/2026/09/07/sports/football/asteras-tripolis-iraklis-0-2-o-giraios-pire-proti-niki/",
+        "https://www.in.gr/2026/09/07/in-science/perivallon-b-science/pos-i-klimatiki-allagi-kai-i-episitistiki-anasfaleia-mporoun-na-pyrodotisoun-sygkrouseis/",
+        "https://www.in.gr/2026/09/07/world/finlandia-to-elsinki-egkainiase-fraxti-mikous-200-xlm-pou-extise-sta-synora-me-ti-rosia/",
+        "https://www.in.gr/2026/09/07/sports/basketball/gouokap-den-itan-prothesi-mou-na-prokaleso-apogoiteysi-timi-na-agonizomai-ston-olympiako/"
       ],
-      "seen_at_utc": "2026-09-07T16:51:17.324794+00:00"
+      "seen_at_utc": "2026-09-07T17:17:19.968050+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T16:51:17.324924+00:00"
+  "updated_at_utc": "2026-09-07T17:17:19.968163+00:00"
 }
