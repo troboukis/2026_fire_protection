@@ -1,16 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564440173/ta-chamena-eisaggelika-paidia/",
-      "title": "Τα χαμένα «εισαγγελικά παιδιά»",
-      "normalized_title": "ΤΑ ΧΑΜΕΝΑ «ΕΙΣΑΓΓΕΛΙΚΑ ΠΑΙΔΙΑ»",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564443404/servia-ti-dialysi-tis-voylis-proteinei-i-kyvernisi-anoigei-o-dromos-gia-tis-ekloges/",
+      "title": "Σερβία: Τη διάλυση της Βουλής προτείνει η κυβέρνηση – Ανοίγει ο δρόμος για τις εκλογές",
+      "normalized_title": "ΣΕΡΒΙΑ: ΤΗ ΔΙΑΛΥΣΗ ΤΗΣ ΒΟΥΛΗΣ ΠΡΟΤΕΙΝΕΙ Η ΚΥΒΕΡΝΗΣΗ – ΑΝΟΙΓΕΙ Ο ΔΡΟΜΟΣ ΓΙΑ ΤΙΣ ΕΚΛΟΓΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564440173/ta-chamena-eisaggelika-paidia/",
-        "https://www.kathimerini.gr/columns/564442918/i-lepti-grammi-tis-dimosias-kritikis-toy-trinkieri-ston-mpazina/",
-        "https://www.kathimerini.gr/world/564443419/diplomatikos-polemos-germanias-rosias-loyketo-se-proxeneia-kai-institoyto-gkete/",
-        "https://www.kathimerini.gr/world/564443305/o-diethnis-organismos-atomikis-energeias-kalei-to-iran-se-dialogo/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564443404/servia-ti-dialysi-tis-voylis-proteinei-i-kyvernisi-anoigei-o-dromos-gia-tis-ekloges/",
+        "https://www.kathimerini.gr/world/564443428/vretania-epestrepsan-chari-kai-megkan-alla-ochi-kai-ta-vasilika-toys-pronomia/"
       ],
-      "seen_at_utc": "2026-09-07T15:17:02.882026+00:00"
+      "seen_at_utc": "2026-09-07T15:30:06.387128+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,13 +1260,13 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875255/nuhterini-exormisi-tis-trohaias-stin-attiki-me-40-sullipseis-odigon-oi-17-eihan-piei/?utm_source=rss",
-      "title": "Νυχτερινή εξόρμηση της Τροχαίας στην Αττική με 40 συλλήψεις οδηγών, οι 17 είχαν πιει",
-      "normalized_title": "ΝΥΧΤΕΡΙΝΗ ΕΞΟΡΜΗΣΗ ΤΗΣ ΤΡΟΧΑΙΑΣ ΣΤΗΝ ΑΤΤΙΚΗ ΜΕ 40 ΣΥΛΛΗΨΕΙΣ ΟΔΗΓΩΝ, ΟΙ 17 ΕΙΧΑΝ ΠΙΕΙ",
+      "url": "https://www.protothema.gr/greece/article/1875264/gnostos-kommotis-tis-tileorasis-eklepse-gualia-iliou-kai-fulahto-apo-magazi-sti-mukono-ton-katiggeile-i-idioktitria/?utm_source=rss",
+      "title": "Γνωστός κομμωτής με παρουσία στην τηλεόραση έκλεψε γυαλιά ηλίου και φυλαχτό από μαγαζί στη Μύκονο, τον κατήγγειλε η ιδιοκτήτρια",
+      "normalized_title": "ΓΝΩΣΤΟΣ ΚΟΜΜΩΤΗΣ ΜΕ ΠΑΡΟΥΣΙΑ ΣΤΗΝ ΤΗΛΕΟΡΑΣΗ ΕΚΛΕΨΕ ΓΥΑΛΙΑ ΗΛΙΟΥ ΚΑΙ ΦΥΛΑΧΤΟ ΑΠΟ ΜΑΓΑΖΙ ΣΤΗ ΜΥΚΟΝΟ, ΤΟΝ ΚΑΤΗΓΓΕΙΛΕ Η ΙΔΙΟΚΤΗΤΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875255/nuhterini-exormisi-tis-trohaias-stin-attiki-me-40-sullipseis-odigon-oi-17-eihan-piei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875264/gnostos-kommotis-tis-tileorasis-eklepse-gualia-iliou-kai-fulahto-apo-magazi-sti-mukono-ton-katiggeile-i-idioktitria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T15:17:02.882180+00:00"
+      "seen_at_utc": "2026-09-07T15:30:06.387215+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/kosmos/1462050/zeite-se-prasini-poli-o-ollandikos-kanonas-poy-deihnei-an-mia-geitonia-einai-ygiis/",
@@ -1282,20 +1280,14 @@
       "seen_at_utc": "2026-09-07T15:17:02.882147+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/sports/football/italos-dimosiografos-xarise-ston-mourinio-potistiko-mpek-poios-itan-o-logos-vid/",
-      "title": "Ιταλός δημοσιογράφος χάρισε στον Μουρίνιο ποτιστικό μπεκ! Ποιος ήταν ο λόγος (vid)",
-      "normalized_title": "ΙΤΑΛΟΣ ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΧΑΡΙΣΕ ΣΤΟΝ ΜΟΥΡΙΝΙΟ ΠΟΤΙΣΤΙΚΟ ΜΠΕΚ! ΠΟΙΟΣ ΗΤΑΝ Ο ΛΟΓΟΣ (VID)",
+      "url": "https://www.in.gr/2026/09/07/greece/thessaloniki-dikografia-gia-kakourgima-meta-tin-ptosi-tis-13xronis-apo-ksenodoxeio/",
+      "title": "Θεσσαλονίκη: Δικογραφία για κακούργημα μετά την πτώση της 13χρονης από ξενοδοχείο",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΔΙΚΟΓΡΑΦΙΑ ΓΙΑ ΚΑΚΟΥΡΓΗΜΑ ΜΕΤΑ ΤΗΝ ΠΤΩΣΗ ΤΗΣ 13ΧΡΟΝΗΣ ΑΠΟ ΞΕΝΟΔΟΧΕΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/sports/football/italos-dimosiografos-xarise-ston-mourinio-potistiko-mpek-poios-itan-o-logos-vid/",
-        "https://www.in.gr/2026/09/07/greece/troxaia-synelifthisan-40-odigoi-gia-paravaseis-stin-attiki-se-mia-evdomada-oi-17-eixan-katanalosei-alkool/",
-        "https://www.in.gr/2026/09/07/stories/rompin-morgkan-pethane-i-arxitektonas-tou-sygxronou-feminismou-apo-paidi-thayma-tis-tileorasis-amfiseksoualiki-pyrini-aktivistria/",
-        "https://www.in.gr/2026/09/07/world/i-istoria-kai-i-anodos-tis-afd-apo-komma-diamartyrias-se-akrodeksia-politiki-dynami/",
-        "https://www.in.gr/2026/09/07/politics/epikairotita/m-katrinis-anikei-stin-ellada-o-pigaios-kodikas-tis-aspidas-tou-axillea/",
-        "https://www.in.gr/2026/09/07/politics/epikairotita/maxairia-mantzou-ston-mitsotaki-gia-tin-apodoxi-tou-gr-dimitriadi-sti-nd-pou-mazi-me-ton-ntilian-ekviazoun-ton-prothypourgo/",
-        "https://www.in.gr/matchcenter/5943351/"
+        "https://www.in.gr/2026/09/07/greece/thessaloniki-dikografia-gia-kakourgima-meta-tin-ptosi-tis-13xronis-apo-ksenodoxeio/"
       ],
-      "seen_at_utc": "2026-09-07T15:17:02.882098+00:00"
+      "seen_at_utc": "2026-09-07T15:30:06.387180+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T15:17:02.882244+00:00"
+  "updated_at_utc": "2026-09-07T15:30:06.387297+00:00"
 }
