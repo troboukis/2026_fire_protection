@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564443653/grindr-symvivasmos-30-ekat-eyro-me-chiliades-christes-gia-dedomena-hiv/",
-      "title": "Grindr: Συμβιβασμός 30 εκατ. ευρώ με χιλιάδες χρήστες για δεδομένα HIV",
-      "normalized_title": "GRINDR: ΣΥΜΒΙΒΑΣΜΟΣ 30 ΕΚΑΤ. ΕΥΡΩ ΜΕ ΧΙΛΙΑΔΕΣ ΧΡΗΣΤΕΣ ΓΙΑ ΔΕΔΟΜΕΝΑ HIV",
+      "url": "https://www.kathimerini.gr/istoria/564440290/o-termatofylakas-poy-nikise-tin-mpartselona/",
+      "title": "Ο τερματοφύλακας που νίκησε την Μπαρτσελόνα",
+      "normalized_title": "Ο ΤΕΡΜΑΤΟΦΥΛΑΚΑΣ ΠΟΥ ΝΙΚΗΣΕ ΤΗΝ ΜΠΑΡΤΣΕΛΟΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564443653/grindr-symvivasmos-30-ekat-eyro-me-chiliades-christes-gia-dedomena-hiv/"
+        "https://www.kathimerini.gr/istoria/564440290/o-termatofylakas-poy-nikise-tin-mpartselona/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564443368/rosia-i-moscha-antidra-stin-apostoli-pyraylikoy-systimatos-apo-tis-ipa-sti-norvigia/"
       ],
-      "seen_at_utc": "2026-09-07T19:29:57.860371+00:00"
+      "seen_at_utc": "2026-09-07T19:51:12.648551+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,25 +1269,27 @@
       "seen_at_utc": "2026-09-07T19:17:25.417383+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1462420/poese-aorati-i-estiasi-sta-metra-tis-deth-zita-stoheymenes-paremvaseis-gia-ti-viosimotita-toy-kladoy/",
-      "title": "ΠΟΕΣΕ: «Αόρατη» η εστίαση στα μέτρα της ΔΕΘ – Ζητά στοχευμένες παρεμβάσεις για τη βιωσιμότητα του κλάδου",
-      "normalized_title": "ΠΟΕΣΕ: «ΑΟΡΑΤΗ» Η ΕΣΤΙΑΣΗ ΣΤΑ ΜΕΤΡΑ ΤΗΣ ΔΕΘ – ΖΗΤΑ ΣΤΟΧΕΥΜΕΝΕΣ ΠΑΡΕΜΒΑΣΕΙΣ ΓΙΑ ΤΗ ΒΙΩΣΙΜΟΤΗΤΑ ΤΟΥ ΚΛΑΔΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1462428/kakokairia-daniel-se-diki-gia-anthropoktonia-apo-ameleia-o-kostas-agorastos-kai-alloi-17-airetoi-kai-ypiresiakoi-paragontes/",
+      "title": "Κακοκαιρία Daniel: Σε δίκη για ανθρωποκτονία από αμέλεια ο Κώστας Αγοραστός και άλλοι 17 αιρετοί και υπηρεσιακοί παράγοντες",
+      "normalized_title": "ΚΑΚΟΚΑΙΡΙΑ DANIEL: ΣΕ ΔΙΚΗ ΓΙΑ ΑΝΘΡΩΠΟΚΤΟΝΙΑ ΑΠΟ ΑΜΕΛΕΙΑ Ο ΚΩΣΤΑΣ ΑΓΟΡΑΣΤΟΣ ΚΑΙ ΑΛΛΟΙ 17 ΑΙΡΕΤΟΙ ΚΑΙ ΥΠΗΡΕΣΙΑΚΟΙ ΠΑΡΑΓΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1462420/poese-aorati-i-estiasi-sta-metra-tis-deth-zita-stoheymenes-paremvaseis-gia-ti-viosimotita-toy-kladoy/",
-        "https://www.efsyn.gr/athlitismos/1462412/pos-apohairetise-o-goyokap-ton-olympiako-den-eiha-prothesi-na-prokaleso-apogoiteysi-se-kanenan/"
+        "https://www.efsyn.gr/ellada/1462428/kakokairia-daniel-se-diki-gia-anthropoktonia-apo-ameleia-o-kostas-agorastos-kai-alloi-17-airetoi-kai-ypiresiakoi-paragontes/",
+        "https://www.efsyn.gr/kosmos/1462419/kyroseis-ton-ipa-kata-trapezikoy-omiloy-tis-toyrkias-gia-dieykolynsi-emporioy-metaxy-kinas-kai-iran/",
+        "https://www.efsyn.gr/kosmos/1462424/farmaki-i-episkepsi-toy-papa-sti-gallia-i-ekklisia-zita-dorees-ypsoys-27-ekatommyrion-eyro/"
       ],
-      "seen_at_utc": "2026-09-07T19:29:57.860457+00:00"
+      "seen_at_utc": "2026-09-07T19:51:12.648677+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/greece/kakokairia-daniel-sto-edolio-18-atoma-gia-ton-thanato-9-anthropon/",
-      "title": "Κακοκαιρία Daniel: Στο εδώλιο 18 άτομα για τον θάνατο 9 ανθρώπων",
-      "normalized_title": "ΚΑΚΟΚΑΙΡΙΑ DANIEL: ΣΤΟ ΕΔΩΛΙΟ 18 ΑΤΟΜΑ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ 9 ΑΝΘΡΩΠΩΝ",
+      "url": "https://www.in.gr/2026/09/07/sports/football/i-mpartselona-espase-to-fragma-tou-1-dis-eyro-sta-esoda-alla-to-espai-barca-paramenei-vary-fortio/",
+      "title": "Η Μπαρτσελόνα έσπασε το φράγμα του 1 δισ. ευρώ στα έσοδα, αλλά το Espai Barca παραμένει βαρύ φορτίο",
+      "normalized_title": "Η ΜΠΑΡΤΣΕΛΟΝΑ ΕΣΠΑΣΕ ΤΟ ΦΡΑΓΜΑ ΤΟΥ 1 ΔΙΣ. ΕΥΡΩ ΣΤΑ ΕΣΟΔΑ, ΑΛΛΑ ΤΟ ESPAI BARCA ΠΑΡΑΜΕΝΕΙ ΒΑΡΥ ΦΟΡΤΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/greece/kakokairia-daniel-sto-edolio-18-atoma-gia-ton-thanato-9-anthropon/",
-        "https://www.in.gr/2026/09/07/life/schumacher-94-thriamvos-mania-kai-i-siopi-enos-mythou-premiera-sto-netflix-tou-ntokimanter-gia-ton-mikael-soumaxer/"
+        "https://www.in.gr/2026/09/07/sports/football/i-mpartselona-espase-to-fragma-tou-1-dis-eyro-sta-esoda-alla-to-espai-barca-paramenei-vary-fortio/",
+        "https://www.in.gr/2026/09/07/economy/oikonomikes-eidiseis/freno-sta-airbnb-kai-to-2027-oi-neoi-koftes/",
+        "https://www.in.gr/2026/09/07/economy/diethnis-oikonomia/oi-eyropaioi-kanoun-oikonomia-alla-den-sterountai-tin-diaskedasi/"
       ],
-      "seen_at_utc": "2026-09-07T19:29:57.860416+00:00"
+      "seen_at_utc": "2026-09-07T19:51:12.648615+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T19:29:57.860530+00:00"
+  "updated_at_utc": "2026-09-07T19:51:12.648757+00:00"
 }
