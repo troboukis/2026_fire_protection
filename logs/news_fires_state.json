@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564443491/stin-ellada-metaferei-ti-forologiki-toy-katoikia-o-disekatommyrioychos-kris-rokos/",
-      "title": "Στην Ελλάδα μεταφέρει τη φορολογική του κατοικία ο δισεκατομμυριούχος Κρις Ρόκος",
-      "normalized_title": "ΣΤΗΝ ΕΛΛΑΔΑ ΜΕΤΑΦΕΡΕΙ ΤΗ ΦΟΡΟΛΟΓΙΚΗ ΤΟΥ ΚΑΤΟΙΚΙΑ Ο ΔΙΣΕΚΑΤΟΜΜΥΡΙΟΥΧΟΣ ΚΡΙΣ ΡΟΚΟΣ",
+      "url": "https://www.kathimerini.gr/world/564443521/germania-anisychia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saxonia-anchalt/",
+      "title": "Γερμανία: Ανησυχία στις κοινότητες των μεταναστών μετά τη νίκη της AfD στη Σαξονία-Aνχαλτ",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΑΝΗΣΥΧΙΑ ΣΤΙΣ ΚΟΙΝΟΤΗΤΕΣ ΤΩΝ ΜΕΤΑΝΑΣΤΩΝ ΜΕΤΑ ΤΗ ΝΙΚΗ ΤΗΣ AFD ΣΤΗ ΣΑΞΟΝΙΑ-AΝΧΑΛΤ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564443491/stin-ellada-metaferei-ti-forologiki-toy-katoikia-o-disekatommyrioychos-kris-rokos/"
+        "https://www.kathimerini.gr/world/564443521/germania-anisychia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saxonia-anchalt/"
       ],
-      "seen_at_utc": "2026-09-07T16:29:58.013589+00:00"
+      "seen_at_utc": "2026-09-07T16:51:17.324738+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,24 +1269,27 @@
       "seen_at_utc": "2026-09-07T16:29:58.013710+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1462342/kke-gia-afd-i-akrodexia-einai-hrisimi-se-synthikes-polemikis-proetoimasias/",
-      "title": "ΚΚΕ για AfD: Η ακροδεξιά είναι χρήσιμη σε συνθήκες πολεμικής προετοιμασίας",
-      "normalized_title": "ΚΚΕ ΓΙΑ AFD: Η ΑΚΡΟΔΕΞΙΑ ΕΙΝΑΙ ΧΡΗΣΙΜΗ ΣΕ ΣΥΝΘΗΚΕΣ ΠΟΛΕΜΙΚΗΣ ΠΡΟΕΤΟΙΜΑΣΙΑΣ",
+      "url": "https://www.efsyn.gr/stiles/1462346/stamatiste-tin-koroidia-se-varos-ton-syntaxioyhon/",
+      "title": "Σταματήστε την κοροϊδία σε βάρος των συνταξιούχων",
+      "normalized_title": "ΣΤΑΜΑΤΗΣΤΕ ΤΗΝ ΚΟΡΟΙΔΙΑ ΣΕ ΒΑΡΟΣ ΤΩΝ ΣΥΝΤΑΞΙΟΥΧΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1462342/kke-gia-afd-i-akrodexia-einai-hrisimi-se-synthikes-polemikis-proetoimasias/",
-        "https://www.efsyn.gr/politiki/1462338/htypima-salma-se-mitsotaki-to-pote-teleionei-i-kariera-toy-kathenos-den-to-kathorizei-o-k-mitsotakis/"
+        "https://www.efsyn.gr/stiles/1462346/stamatiste-tin-koroidia-se-varos-ton-syntaxioyhon/",
+        "https://www.efsyn.gr/politiki/1461990/kyvernisi-vs-elas-oi-10-diafores-anamesa-sta-dyo-programmata-meta-tis-anakoinoseis-mitsotaki-tsipra-apo-ti-thessaloniki/"
       ],
-      "seen_at_utc": "2026-09-07T16:29:58.013677+00:00"
+      "seen_at_utc": "2026-09-07T16:51:17.324830+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/sports/football/marko-panserraikos-1-0-niki-stin-premiera-me-gkol-tou-el-arampi-vid/",
-      "title": "Μαρκό – Πανσερραϊκός 1-0: Νίκη στην πρεμιέρα με γκολ του Ελ Αραμπί (vid)",
-      "normalized_title": "ΜΑΡΚΟ – ΠΑΝΣΕΡΡΑΙΚΟΣ 1-0: ΝΙΚΗ ΣΤΗΝ ΠΡΕΜΙΕΡΑ ΜΕ ΓΚΟΛ ΤΟΥ ΕΛ ΑΡΑΜΠΙ (VID)",
+      "url": "https://www.in.gr/2026/09/07/greece/kriti-taytopoiithike-kai-synelifthi-17xronos-odigos-pou-espase-ta-kolonakia-gia-na-kanei-paranomi-prosperasi/",
+      "title": "Κρήτη: Ταυτοποιήθηκε και συνελήφθη 17χρονος οδηγός που έσπασε τα κολωνάκια για να κάνει παράνομη προσπέραση",
+      "normalized_title": "ΚΡΗΤΗ: ΤΑΥΤΟΠΟΙΗΘΗΚΕ ΚΑΙ ΣΥΝΕΛΗΦΘΗ 17ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΠΟΥ ΕΣΠΑΣΕ ΤΑ ΚΟΛΩΝΑΚΙΑ ΓΙΑ ΝΑ ΚΑΝΕΙ ΠΑΡΑΝΟΜΗ ΠΡΟΣΠΕΡΑΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/sports/football/marko-panserraikos-1-0-niki-stin-premiera-me-gkol-tou-el-arampi-vid/"
+        "https://www.in.gr/2026/09/07/greece/kriti-taytopoiithike-kai-synelifthi-17xronos-odigos-pou-espase-ta-kolonakia-gia-na-kanei-paranomi-prosperasi/",
+        "https://www.in.gr/2026/09/07/go-fun/fizz/i-sygklonistiki-omilia-tis-pamela-anterson-apo-ti-venetia/",
+        "https://www.in.gr/2026/09/07/world/germania-anisyxia-stis-koinotites-ton-metanaston-meta-ti-niki-tis-afd-sti-saksonia-anxalt/",
+        "https://www.in.gr/2026/09/07/life/oskar-2027-i-spasmeni-fleva-tou-gianni-oikonomidi-ekprosopei-tin-ellada-sta-99a-vraveia/"
       ],
-      "seen_at_utc": "2026-09-07T16:29:58.013638+00:00"
+      "seen_at_utc": "2026-09-07T16:51:17.324794+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T16:29:58.013808+00:00"
+  "updated_at_utc": "2026-09-07T16:51:17.324924+00:00"
 }
