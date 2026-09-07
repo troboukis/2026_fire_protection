@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564440482/i-epomeni-mera-meta-to-tameio-anakampsis/",
-      "title": "Η επόμενη μέρα μετά το Ταμείο Ανάκαμψης",
-      "normalized_title": "Η ΕΠΟΜΕΝΗ ΜΕΡΑ ΜΕΤΑ ΤΟ ΤΑΜΕΙΟ ΑΝΑΚΑΜΨΗΣ",
+      "url": "https://www.kathimerini.gr/visual/podcasts/564442912/ligo-ilios-ligo-thalassa-kai-to-tsimento-moy/",
+      "title": "«Λίγο ήλιος, λίγο θάλασσα και το τσιμέντο μου»",
+      "normalized_title": "«ΛΙΓΟ ΗΛΙΟΣ, ΛΙΓΟ ΘΑΛΑΣΣΑ ΚΑΙ ΤΟ ΤΣΙΜΕΝΤΟ ΜΟΥ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564440482/i-epomeni-mera-meta-to-tameio-anakampsis/",
-        "https://www.kathimerini.gr/society/564442876/schedon-1-000-paravaseis-toy-kok-imerisios-synelifthisan-40-odigoi/",
-        "https://www.kathimerini.gr/world/564442807/kats-apeilei-tin-palaistiniaki-archi-me-oloklirotiko-polemo-se-periptosi-epithesis-se-evraikoys-oikismoys/"
+        "https://www.kathimerini.gr/visual/podcasts/564442912/ligo-ilios-ligo-thalassa-kai-to-tsimento-moy/",
+        "https://www.kathimerini.gr/athletics/analysis/564442909/panathinaikos-kerdise-perissotera-apo-treis-vathmoys/"
       ],
-      "seen_at_utc": "2026-09-07T12:17:42.851060+00:00"
+      "seen_at_utc": "2026-09-07T12:30:02.874362+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,31 +1271,26 @@
       "seen_at_utc": "2026-09-07T12:17:42.851199+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1462103/o-georgiadis-epikalestike-to-chatgpt-gia-ton-tziro-ton-estiatorion-ki-ayto-ton-evgale-pseyti-vinteo/",
-      "title": "Ο Γεωργιάδης επικαλέστηκε το ChatGPT για τον τζίρο των εστιατορίων κι αυτό τον έβγαλε… ψεύτη [βίντεο]",
-      "normalized_title": "Ο ΓΕΩΡΓΙΑΔΗΣ ΕΠΙΚΑΛΕΣΤΗΚΕ ΤΟ CHATGPT ΓΙΑ ΤΟΝ ΤΖΙΡΟ ΤΩΝ ΕΣΤΙΑΤΟΡΙΩΝ ΚΙ ΑΥΤΟ ΤΟΝ ΕΒΓΑΛΕ… ΨΕΥΤΗ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/oikonomia/1462137/gsee-gia-exaggelies-mitsotaki-den-kalyptoyn-ti-megali-apostasi-anamesa-stoys-misthoys-kai-sto-kostos-zois/",
+      "title": "ΓΣΕΕ για εξαγγελίες Μητσοτάκη: Δεν καλύπτουν τη μεγάλη απόσταση ανάμεσα στους μισθούς και στο κόστος ζωής",
+      "normalized_title": "ΓΣΕΕ ΓΙΑ ΕΞΑΓΓΕΛΙΕΣ ΜΗΤΣΟΤΑΚΗ: ΔΕΝ ΚΑΛΥΠΤΟΥΝ ΤΗ ΜΕΓΑΛΗ ΑΠΟΣΤΑΣΗ ΑΝΑΜΕΣΑ ΣΤΟΥΣ ΜΙΣΘΟΥΣ ΚΑΙ ΣΤΟ ΚΟΣΤΟΣ ΖΩΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1462103/o-georgiadis-epikalestike-to-chatgpt-gia-ton-tziro-ton-estiatorion-ki-ayto-ton-evgale-pseyti-vinteo/",
-        "https://www.efsyn.gr/ellada/1462122/pyrkagia-se-dasiki-ektasi-sti-makrykapa-eyvoias-ihise-to-112-sikothikan-5-enaeria-mesa/",
-        "https://www.efsyn.gr/athlitismos/1462110/telos-o-goyokap-apo-ton-olympiako-petaei-gia-ntoympai/"
+        "https://www.efsyn.gr/oikonomia/1462137/gsee-gia-exaggelies-mitsotaki-den-kalyptoyn-ti-megali-apostasi-anamesa-stoys-misthoys-kai-sto-kostos-zois/",
+        "https://www.efsyn.gr/politiki/1462123/o-adonis-apantaei-se-polaki-gia-novartis-anti-gia-syggnomi-zitane-kai-ta-resta/",
+        "https://www.efsyn.gr/stiles/1462129/ekloges-me-ena-ego-horis-emeis/",
+        "https://www.efsyn.gr/kosmos/1462127/rosia-to-kremlino-den-apokleiei-tin-epanenarxi-ton-eirineytikon-synomilion-me-oykrania-kai-ipa/"
       ],
-      "seen_at_utc": "2026-09-07T12:17:42.851164+00:00"
+      "seen_at_utc": "2026-09-07T12:30:02.874458+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/greece/fotia-sti-makrykapa-eyvoias-sikothikan-pente-enaeria-mesa-ixise-to-112/",
-      "title": "Φωτιά στη Μακρυκάπα Εύβοιας – Σηκώθηκαν πέντε εναέρια μέσα, ήχησε το 112",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗ ΜΑΚΡΥΚΑΠΑ ΕΥΒΟΙΑΣ – ΣΗΚΩΘΗΚΑΝ ΠΕΝΤΕ ΕΝΑΕΡΙΑ ΜΕΣΑ, ΗΧΗΣΕ ΤΟ 112",
+      "url": "https://www.in.gr/2026/09/07/sports/football/roman-giaremtsouk-tora-i-mpala-einai-sta-podia-tou/",
+      "title": "Ρόμαν Γιάρεμτσουκ: Τώρα η μπάλα είναι στα πόδια του…",
+      "normalized_title": "ΡΟΜΑΝ ΓΙΑΡΕΜΤΣΟΥΚ: ΤΩΡΑ Η ΜΠΑΛΑ ΕΙΝΑΙ ΣΤΑ ΠΟΔΙΑ ΤΟΥ…",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/greece/fotia-sti-makrykapa-eyvoias-sikothikan-pente-enaeria-mesa-ixise-to-112/",
-        "https://www.in.gr/2026/09/07/economy/eyropi-o-fovos-ton-kriseon-to-kit-ton-72-oron-kai-ta-aparaitita-metrita-se-apothema/",
-        "https://www.in.gr/2026/09/07/sports/basketball/euroleague/i-ntoumpai-anakoinose-ton-gouokap-eyxaristoume-ton-olympiako-gia-ti-synergasia-pic/",
-        "https://www.in.gr/2026/09/07/greece/poly-ypsilos-kindynos-pyrkagias-tin-triti-se-eksi-perifereies/",
-        "https://www.in.gr/2026/09/07/world/merts-tektoniki-anataraxi-pou-klonise-sythemela-to-cdu-i-niki-tis-afd-stin-saksonia-anxalt/",
-        "https://www.in.gr/2026/09/07/politics/politiki-grammateia/syntonismena-galazia-pyra-kata-samara-gia-ginati-pou-pligonei-ti-psyxi-tis-parataksis-mila-i-mpakogianni/",
-        "https://www.in.gr/2026/09/07/in-science/ai/oie-i-texniti-noimosyni-tha-mporouse-na-apotelesei-yparksiako-kindyno-gia-tin-anthropotita/"
+        "https://www.in.gr/2026/09/07/sports/football/roman-giaremtsouk-tora-i-mpala-einai-sta-podia-tou/"
       ],
-      "seen_at_utc": "2026-09-07T12:17:42.851122+00:00"
+      "seen_at_utc": "2026-09-07T12:30:02.874404+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T12:17:42.851297+00:00"
+  "updated_at_utc": "2026-09-07T12:30:02.874527+00:00"
 }
