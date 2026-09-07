@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564442384/fotia-sto-elaiochori-kavalas-epicheiroyn-enaeria-mesa/",
-      "title": "Φωτιά στο Ελαιοχώρι Καβάλας – Επιχειρούν εναέρια μέσα, ήχησε το «112»",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΕΛΑΙΟΧΩΡΙ ΚΑΒΑΛΑΣ – ΕΠΙΧΕΙΡΟΥΝ ΕΝΑΕΡΙΑ ΜΕΣΑ, ΗΧΗΣΕ ΤΟ «112»",
+      "url": "https://www.kathimerini.gr/world/564442390/livanos-ennea-nekroi-apo-israilines-epitheseis-sta-notia/",
+      "title": "Λίβανος: Εννέα νεκροί από ισραηλινές επιθέσεις στα νότια",
+      "normalized_title": "ΛΙΒΑΝΟΣ: ΕΝΝΕΑ ΝΕΚΡΟΙ ΑΠΟ ΙΣΡΑΗΛΙΝΕΣ ΕΠΙΘΕΣΕΙΣ ΣΤΑ ΝΟΤΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564442384/fotia-sto-elaiochori-kavalas-epicheiroyn-enaeria-mesa/",
-        "https://www.kathimerini.gr/world/564442375/katar-o-polemos-sto-iran-deichnei-oti-i-stratigiki-symmachia-me-tis-ipa-den-arkei/"
+        "https://www.kathimerini.gr/world/564442390/livanos-ennea-nekroi-apo-israilines-epitheseis-sta-notia/",
+        "https://www.kathimerini.gr/world/564442411/rosia-toylachiston-11-nekroi-apo-chionostivada-ston-voreio-kaykaso-agnooyntai-exi-oreivates/",
+        "https://www.kathimerini.gr/world/564442360/ormpan-gia-niki-afd-prosdetheite-ayto-einai-mono-i-archi/",
+        "https://www.kathimerini.gr/world/564440113/anthrakes-o-thisayros-tis-venezoyelas/"
       ],
-      "seen_at_utc": "2026-09-07T07:30:13.704485+00:00"
+      "seen_at_utc": "2026-09-07T07:51:15.503840+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1874969/sti-meth-31hronos-kameraman-tou-tileoptikou-stathmou-ionian-epeita-apo-sovaro-trohaio-me-motosikleta/?utm_source=rss",
-      "title": "Στη ΜΕΘ 31χρονος καμεραμάν του τηλεοπτικού σταθμού ΙΟΝΙΑΝ έπειτα από σοβαρό τροχαίο με μοτοσικλέτα στην Πάτρα",
-      "normalized_title": "ΣΤΗ ΜΕΘ 31ΧΡΟΝΟΣ ΚΑΜΕΡΑΜΑΝ ΤΟΥ ΤΗΛΕΟΠΤΙΚΟΥ ΣΤΑΘΜΟΥ ΙΟΝΙΑΝ ΕΠΕΙΤΑ ΑΠΟ ΣΟΒΑΡΟ ΤΡΟΧΑΙΟ ΜΕ ΜΟΤΟΣΙΚΛΕΤΑ ΣΤΗΝ ΠΑΤΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1874992/proslipseis-ston-elga-mehri-simera-oi-aitiseis-oi-eidikotites/?utm_source=rss",
+      "title": "Προσλήψεις στον ΕΛΓΑ: Μέχρι σήμερα οι αιτήσεις, οι ειδικότητες",
+      "normalized_title": "ΠΡΟΣΛΗΨΕΙΣ ΣΤΟΝ ΕΛΓΑ: ΜΕΧΡΙ ΣΗΜΕΡΑ ΟΙ ΑΙΤΗΣΕΙΣ, ΟΙ ΕΙΔΙΚΟΤΗΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1874969/sti-meth-31hronos-kameraman-tou-tileoptikou-stathmou-ionian-epeita-apo-sovaro-trohaio-me-motosikleta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1874992/proslipseis-ston-elga-mehri-simera-oi-aitiseis-oi-eidikotites/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874978/sunelifthi-melos-speiras-me-leia-ano-ton-50000-apo-toulahiston-10-klopes-se-spitia-kai-ohimata-stin-ileia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1874975/soos-edopistike-o-anilikos-pou-agnooudan-me-sup-sto-irakleio/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T07:30:13.704581+00:00"
+      "seen_at_utc": "2026-09-07T07:51:15.503986+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461751/kriti-neodioristi-ekpaideytikos-emene-me-tin-4hroni-kori-tis-se-skini-den-evriske-spiti-na-meinei/",
-      "title": "Κρήτη: Νεοδιόριστη εκπαιδευτικός έμενε με την 4χρονη κόρη της σε σκηνή – Δεν έβρισκε σπίτι να μείνει",
-      "normalized_title": "ΚΡΗΤΗ: ΝΕΟΔΙΟΡΙΣΤΗ ΕΚΠΑΙΔΕΥΤΙΚΟΣ ΕΜΕΝΕ ΜΕ ΤΗΝ 4ΧΡΟΝΗ ΚΟΡΗ ΤΗΣ ΣΕ ΣΚΗΝΗ – ΔΕΝ ΕΒΡΙΣΚΕ ΣΠΙΤΙ ΝΑ ΜΕΙΝΕΙ",
+      "url": "https://www.efsyn.gr/politiki/1461772/georgiadis-gia-to-asthenoforo-30etias-sti-mani-den-eho-tin-valitsa-toy-sport-billy-ypirhan-dyo-epiloges/",
+      "title": "Γεωργιάδης για το ασθενοφόρο 30ετίας στη Μάνη: «Δεν έχω την βαλίτσα του Sport Billy – Υπήρχαν δύο επιλογές»",
+      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ ΓΙΑ ΤΟ ΑΣΘΕΝΟΦΟΡΟ 30ΕΤΙΑΣ ΣΤΗ ΜΑΝΗ: «ΔΕΝ ΕΧΩ ΤΗΝ ΒΑΛΙΤΣΑ ΤΟΥ SPORT BILLY – ΥΠΗΡΧΑΝ ΔΥΟ ΕΠΙΛΟΓΕΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461751/kriti-neodioristi-ekpaideytikos-emene-me-tin-4hroni-kori-tis-se-skini-den-evriske-spiti-na-meinei/",
-        "https://www.efsyn.gr/ellada/1461755/fotia-se-dasiki-ektasi-sto-elaiohori-kavalas-ihise-to-112-epiheiroyn-tria-enaeria/",
-        "https://www.efsyn.gr/stiles/1461742/otan-i-amfisvitisi-ginetai-paraptoma/"
+        "https://www.efsyn.gr/politiki/1461772/georgiadis-gia-to-asthenoforo-30etias-sti-mani-den-eho-tin-valitsa-toy-sport-billy-ypirhan-dyo-epiloges/",
+        "https://www.efsyn.gr/ellada/1461780/syntrivi-phantom-stin-tanagra-vary-to-penthos-stin-ipeiro-gia-ton-sminago-dimitri-petroy-ayrio-to-teleytaio-antio/",
+        "https://www.efsyn.gr/athlitismos/1461769/oi-servoi-ston-agona-erythros-asteras-partizan-timisan-ton-mlantits-me-enos-leptoy-sigi-vinteo/",
+        "https://www.efsyn.gr/ellada/1461775/patra-mahi-gia-ti-zoi-toy-sti-meth-dinei-31hronos-kameraman-toy-ioniantv-meta-apo-trohaio/",
+        "https://www.efsyn.gr/ellada/1461753/serifos-kareta-kareta-vrethike-egklovismeni-se-plastiko-tsoyvali-kai-akrotiriastike/",
+        "https://www.efsyn.gr/kosmos/1461764/germanika-mme-gia-niki-afd-sti-saxonia-anhalt-panolethria-gia-ton-merts-na-papsei-na-koroideyei-ton-eayto-toy/"
       ],
-      "seen_at_utc": "2026-09-07T07:30:13.704554+00:00"
+      "seen_at_utc": "2026-09-07T07:51:15.503964+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/greece/kriti-entopistike-o-anilikos-pou-agnoountan-me-sup/",
-      "title": "Εντοπίστηκε ο ανήλικος που αγνοούνταν με SUP στο Ηράκλειο Κρήτης",
-      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΕ Ο ΑΝΗΛΙΚΟΣ ΠΟΥ ΑΓΝΟΟΥΝΤΑΝ ΜΕ SUP ΣΤΟ ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ",
+      "url": "https://www.in.gr/2026/09/07/politics/pasok-o-agrotikos-kosmos-exei-etoimi-kokkini-karta-k-mitsotaki-zitate-sygxoroxarti-gia-na-eksapatisete-pali/",
+      "title": "ΠΑΣΟΚ: Ο αγροτικός κόσμος έχει έτοιμη κόκκινη κάρτα κ. Μητσοτάκη – Ζητάτε συγχωροχάρτι για να εξαπατήσετε πάλι",
+      "normalized_title": "ΠΑΣΟΚ: Ο ΑΓΡΟΤΙΚΟΣ ΚΟΣΜΟΣ ΕΧΕΙ ΕΤΟΙΜΗ ΚΟΚΚΙΝΗ ΚΑΡΤΑ Κ. ΜΗΤΣΟΤΑΚΗ – ΖΗΤΑΤΕ ΣΥΓΧΩΡΟΧΑΡΤΙ ΓΙΑ ΝΑ ΕΞΑΠΑΤΗΣΕΤΕ ΠΑΛΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/greece/kriti-entopistike-o-anilikos-pou-agnoountan-me-sup/",
-        "https://www.in.gr/2026/09/07/world/finlandia-ksekinise-i-diki-tou-andra-pou-katigoreitai-gia-kakopoiisi-361-paidion-sto-diadiktyo/"
+        "https://www.in.gr/2026/09/07/politics/pasok-o-agrotikos-kosmos-exei-etoimi-kokkini-karta-k-mitsotaki-zitate-sygxoroxarti-gia-na-eksapatisete-pali/",
+        "https://www.in.gr/2026/09/07/greece/fotia-sto-elaioxori-kavalas-epixeiroun-tria-enaeria/",
+        "https://www.in.gr/2026/09/07/go-fun/fizz/den-tha-eimai-pote-i-kalyteri-tous-fili-i-sxesi-tis-nikol-kintman-me-tis-kores-tis/",
+        "https://www.in.gr/2026/09/07/sports/football/pagkosmio-rekor-metagrafon-12-575-symfonies-kai-dapanes-989-dis-dolarion/"
       ],
-      "seen_at_utc": "2026-09-07T07:30:13.704525+00:00"
+      "seen_at_utc": "2026-09-07T07:51:15.503920+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T07:30:13.704674+00:00"
+  "updated_at_utc": "2026-09-07T07:51:15.504061+00:00"
 }
