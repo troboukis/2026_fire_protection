@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564442402/ileia-cheiropedes-se-diarrikti-gia-deka-klopes-50-000-eyro-i-leia/",
-      "title": "Ηλεία: Χειροπέδες σε διαρρήκτη για δέκα κλοπές – 50.000 ευρώ η λεία",
-      "normalized_title": "ΗΛΕΙΑ: ΧΕΙΡΟΠΕΔΕΣ ΣΕ ΔΙΑΡΡΗΚΤΗ ΓΙΑ ΔΕΚΑ ΚΛΟΠΕΣ – 50.000 ΕΥΡΩ Η ΛΕΙΑ",
+      "url": "https://www.kathimerini.gr/world/564442687/to-iran-tha-anakoinosei-nea-zoni-apokleismoy-ston-persiko-entos-imeron/",
+      "title": "Το Ιράν θα ανακοινώσει νέα «ζώνη αποκλεισμού» στον Περσικό εντός ημερών",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΘΑ ΑΝΑΚΟΙΝΩΣΕΙ ΝΕΑ «ΖΩΝΗ ΑΠΟΚΛΕΙΣΜΟΥ» ΣΤΟΝ ΠΕΡΣΙΚΟ ΕΝΤΟΣ ΗΜΕΡΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564442402/ileia-cheiropedes-se-diarrikti-gia-deka-klopes-50-000-eyro-i-leia/",
-        "https://www.kathimerini.gr/society/564442624/pyrkagia-se-dasiki-ektasi-stin-periochi-moyriki-acha-as/",
-        "https://www.kathimerini.gr/world/564442612/aystria-proto-test-gia-tin-apagoreysi-tis-mantilas-se-mathitries/",
-        "https://www.kathimerini.gr/life/health/564442591/mikroplastika-elliniki-meleti-vrike-megalytero-fortio-stoys-pneymones-asthenon-me-karkino/"
+        "https://www.kathimerini.gr/world/564442687/to-iran-tha-anakoinosei-nea-zoni-apokleismoy-ston-persiko-entos-imeron/",
+        "https://www.kathimerini.gr/society/564442678/to-epimelitirio-acha-as-sto-pleyro-tis-achaia-clauss-gia-tin-apokatastasi-ton-zimion/",
+        "https://www.kathimerini.gr/athletics/564442669/tsitsipas-giati-o-apokleismos-toy-apo-to-us-open-echei-istoriko-charaktira/",
+        "https://www.kathimerini.gr/k/k-magazine/564436390/syka-fthinoporina/",
+        "https://www.kathimerini.gr/society/564440107/mpalaki-oi-eythynes-gia-tin-psatha/"
       ],
-      "seen_at_utc": "2026-09-07T09:51:19.182218+00:00"
+      "seen_at_utc": "2026-09-07T10:16:58.551691+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,42 +1263,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875047/sunelifthi-40hronos-katazitoumenos-gia-apopeira-apoplanisis-kai-viasmou-anilikis-stin-korinthia/?utm_source=rss",
-      "title": "Συνελήφθη 40χρονος καταζητούμενος για απόπειρα αποπλάνησης και βιασμού ανήλικης στην Κορινθία",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΚΑΤΑΖΗΤΟΥΜΕΝΟΣ ΓΙΑ ΑΠΟΠΕΙΡΑ ΑΠΟΠΛΑΝΗΣΗΣ ΚΑΙ ΒΙΑΣΜΟΥ ΑΝΗΛΙΚΗΣ ΣΤΗΝ ΚΟΡΙΝΘΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1875051/mi-kratika-panepistimia-nea-paremvasi-ton-dikigorikon-sullogon-zitoun-pliri-summorfosi-me-tis-apofaseis-tou-ste/?utm_source=rss",
+      "title": "Μη κρατικά πανεπιστήμια: Παρέμβαση των δικηγορικών συλλόγων, ζητούν συμμόρφωση με τις αποφάσεις του ΣτΕ",
+      "normalized_title": "ΜΗ ΚΡΑΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ: ΠΑΡΕΜΒΑΣΗ ΤΩΝ ΔΙΚΗΓΟΡΙΚΩΝ ΣΥΛΛΟΓΩΝ, ΖΗΤΟΥΝ ΣΥΜΜΟΡΦΩΣΗ ΜΕ ΤΙΣ ΑΠΟΦΑΣΕΙΣ ΤΟΥ ΣΤΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875047/sunelifthi-40hronos-katazitoumenos-gia-apopeira-apoplanisis-kai-viasmou-anilikis-stin-korinthia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875051/mi-kratika-panepistimia-nea-paremvasi-ton-dikigorikon-sullogon-zitoun-pliri-summorfosi-me-tis-apofaseis-tou-ste/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T09:51:19.182303+00:00"
+      "seen_at_utc": "2026-09-07T10:16:58.551829+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1461933/elstat-ayxisi-19-toy-aep-sto-v-trimino-toy-2026/",
-      "title": "ΕΛΣΤΑΤ: Αύξηση 1,9% του ΑΕΠ στο β’ τρίμηνο του 2026",
-      "normalized_title": "ΕΛΣΤΑΤ: ΑΥΞΗΣΗ 1,9% ΤΟΥ ΑΕΠ ΣΤΟ Β’ ΤΡΙΜΗΝΟ ΤΟΥ 2026",
+      "url": "https://www.efsyn.gr/oikonomia/1461960/elstat-ayxisi-32-sto-elleimma-toy-emporikoy-isozygioy-ton-ioylio-toy-2026/",
+      "title": "ΕΛΣΤΑΤ: Αύξηση 3,2% στο έλλειμμα του εμπορικού ισοζυγίου τον Ιούλιο του 2026",
+      "normalized_title": "ΕΛΣΤΑΤ: ΑΥΞΗΣΗ 3,2% ΣΤΟ ΕΛΛΕΙΜΜΑ ΤΟΥ ΕΜΠΟΡΙΚΟΥ ΙΣΟΖΥΓΙΟΥ ΤΟΝ ΙΟΥΛΙΟ ΤΟΥ 2026",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1461933/elstat-ayxisi-19-toy-aep-sto-v-trimino-toy-2026/",
-        "https://www.efsyn.gr/politiki/1461929/tsoykalas-o-mitsotakis-den-ehei-pia-kamia-shesi-me-to-kentro-i-tha-ehoyme-kyvernisi-nd-i-me-kormo-pasok/",
-        "https://www.efsyn.gr/oikonomia/1461921/syntaxioyhoi-gia-exaggelies-mitsotaki-to-epidoma-antistoihei-se-109-eyro-tin-imera-apokleiontai-300-000-dikaioyhoi/",
-        "https://www.efsyn.gr/kosmos/1461922/gallia-pligma-stin-paragogi-oinoy-apo-ton-kaysona-i-fetini-hronia-itan-apo-tis-heiroteres-ton-teleytaion-30-eton/",
-        "https://www.efsyn.gr/ellada/1461918/rodos-79-helonakia-kareta-kareta-vgikan-mesa-apo-folia-kato-apo-xaplostra-sta-kolympia-eikones-vinteo/"
+        "https://www.efsyn.gr/oikonomia/1461960/elstat-ayxisi-32-sto-elleimma-toy-emporikoy-isozygioy-ton-ioylio-toy-2026/",
+        "https://www.efsyn.gr/ellada/1461936/mesologgi-15hronos-mahairose-synomiliko-toy-sto-heri-dikografia-shimatistike-kai-se-varos-ton-goneon-toy/"
       ],
-      "seen_at_utc": "2026-09-07T09:51:19.182279+00:00"
+      "seen_at_utc": "2026-09-07T10:16:58.551788+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/sports/on-field/ena-omorfo-vrady-sto-oaka-kai-xoris-agonia/",
-      "title": "Ένα όμορφο βράδυ στο ΟΑΚΑ και χωρίς αγώνια",
-      "normalized_title": "ΕΝΑ ΟΜΟΡΦΟ ΒΡΑΔΥ ΣΤΟ ΟΑΚΑ ΚΑΙ ΧΩΡΙΣ ΑΓΩΝΙΑ",
+      "url": "https://www.in.gr/2026/09/07/go-fun/fizz/odos-ithopoiou-kaitis-konstantinou-dromos-sti-geneteira-tis-spoudaias-ithopoiou-pire-to-onoma-tis/",
+      "title": "«Οδός Ηθοποιού Καίτης Κωνσταντίνου» : Δρόμος στη γενέτειρα της σπουδαίας ηθοποιού πήρε το όνομά της",
+      "normalized_title": "«ΟΔΟΣ ΗΘΟΠΟΙΟΥ ΚΑΙΤΗΣ ΚΩΝΣΤΑΝΤΙΝΟΥ» : ΔΡΟΜΟΣ ΣΤΗ ΓΕΝΕΤΕΙΡΑ ΤΗΣ ΣΠΟΥΔΑΙΑΣ ΗΘΟΠΟΙΟΥ ΠΗΡΕ ΤΟ ΟΝΟΜΑ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/sports/on-field/ena-omorfo-vrady-sto-oaka-kai-xoris-agonia/",
-        "https://www.in.gr/2026/09/07/politics/aftodioikisi/dimos-kallitheas-1-000e-gia-kathe-neo-paidi/",
-        "https://www.in.gr/2026/09/07/politics/elas-kata-kyvernisis-h-psifiaki-kyriarxia-den-oikodomeitai-me-allagi-leksilogiou-krinetai-stis-politikes-epiloges/",
-        "https://www.in.gr/2026/09/07/greece/dyo-pyrina-metopa-se-axaia-kai-magnisia/",
-        "https://www.in.gr/2026/09/07/politics/aftodioikisi/antiplimmyrikes-paremvaseis-se-kartero-kai-gournes/",
-        "https://www.in.gr/2026/09/07/greece/patisia-vinteo-ntokoumento-ligo-meta-tin-enopli-epithesi-se-55xrono/",
-        "https://www.in.gr/2026/09/07/politics/aftodioikisi/proedros-kede-isxyroi-dimoi-dynates-topikes-koinonies-dynati-ellada/"
+        "https://www.in.gr/2026/09/07/go-fun/fizz/odos-ithopoiou-kaitis-konstantinou-dromos-sti-geneteira-tis-spoudaias-ithopoiou-pire-to-onoma-tis/",
+        "https://www.in.gr/2026/09/07/plus/medianews/koinonia-ora-mega-stin-koryfi-tis-tiletheasis/",
+        "https://www.in.gr/2026/09/07/greece/gsee-oi-eksaggelies-den-arkoun-gia-na-kalyfthei-i-megali-apostasi-anamesa-stous-misthous-kai-sto-kostos-zois/"
       ],
-      "seen_at_utc": "2026-09-07T09:51:19.182260+00:00"
+      "seen_at_utc": "2026-09-07T10:16:58.551746+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T09:51:19.182382+00:00"
+  "updated_at_utc": "2026-09-07T10:16:58.551925+00:00"
 }
