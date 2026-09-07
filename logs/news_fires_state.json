@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564440047/sprint-antochis-eos-tis-ekloges/",
-      "title": "Σπριντ… αντοχής έως τις εκλογές",
-      "normalized_title": "ΣΠΡΙΝΤ… ΑΝΤΟΧΗΣ ΕΩΣ ΤΙΣ ΕΚΛΟΓΕΣ",
+      "url": "https://www.kathimerini.gr/opinion/interviews/564440020/kris-papas-stin-k-i-polisi-f-35-stin-toyrkia-den-symferei-tis-ipa/",
+      "title": "Κρις Πάπας στην «Κ»: Η πώληση F-35 στην Τουρκία δεν συμφέρει τις ΗΠΑ",
+      "normalized_title": "ΚΡΙΣ ΠΑΠΑΣ ΣΤΗΝ «Κ»: Η ΠΩΛΗΣΗ F-35 ΣΤΗΝ ΤΟΥΡΚΙΑ ΔΕΝ ΣΥΜΦΕΡΕΙ ΤΙΣ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564440047/sprint-antochis-eos-tis-ekloges/",
-        "https://www.kathimerini.gr/world/564443398/i-tzamaika-zita-apo-ton-vasilia-karolo-voitheia-gia-apozimioseis-doyleias-ochi-apo-ti-vretaniki-kyvernisi/"
+        "https://www.kathimerini.gr/opinion/interviews/564440020/kris-papas-stin-k-i-polisi-f-35-stin-toyrkia-den-symferei-tis-ipa/",
+        "https://www.kathimerini.gr/culture/564443434/ntoli-parton-i-adelfi-tis-antidra-sta-ai-skoypidia-me-ton-thrylo-tis-kantri/",
+        "https://www.kathimerini.gr/society/564443452/makrykapa-eyvoias-sti-machi-14-enaeria-ichise-to-112-gia-ekkenosi-fotografies-amp-vinteo/",
+        "https://www.kathimerini.gr/world/564443455/aggelos-tsakopoylos-to-kleidi-tis-polis-toy-sakramento-ston-omogeni-epicheirimatia/",
+        "https://www.kathimerini.gr/k/k-magazine/564436651/pos-tha-kanete-ti-zoi-sas-ligo-kalyteri-fetos-ton-septemvrio/"
       ],
-      "seen_at_utc": "2026-09-07T15:53:24.614709+00:00"
+      "seen_at_utc": "2026-09-07T16:17:22.501830+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1368,29 +1371,29 @@
       "seen_at_utc": "2026-09-07T15:53:24.614861+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1462298/new-york-times-skandalo-disekatommyrion-stin-kyvernisi-zelenski-elattomatika-vlimata-kai-yperkostologiseis/",
-      "title": "New York Times: Σκάνδαλο δισεκατομμυρίων στην κυβέρνηση Ζελένσκι – Ελαττωματικά βλήματα και υπερκοστολογήσεις",
-      "normalized_title": "NEW YORK TIMES: ΣΚΑΝΔΑΛΟ ΔΙΣΕΚΑΤΟΜΜΥΡΙΩΝ ΣΤΗΝ ΚΥΒΕΡΝΗΣΗ ΖΕΛΕΝΣΚΙ – ΕΛΑΤΤΩΜΑΤΙΚΑ ΒΛΗΜΑΤΑ ΚΑΙ ΥΠΕΡΚΟΣΤΟΛΟΓΗΣΕΙΣ",
+      "url": "https://www.efsyn.gr/ellada/1462323/oikonomiki-enishysi-1-000-eyro-gia-kathe-neo-paidi-se-oikogeneies-apo-ton-dimo-kallitheas-poia-einai-ta-kritiria/",
+      "title": "Οικονομική ενίσχυση 1.000 ευρώ για κάθε νέο παιδί σε οικογένειες από τον Δήμο Καλλιθέας – Ποια είναι τα κριτήρια",
+      "normalized_title": "ΟΙΚΟΝΟΜΙΚΗ ΕΝΙΣΧΥΣΗ 1.000 ΕΥΡΩ ΓΙΑ ΚΑΘΕ ΝΕΟ ΠΑΙΔΙ ΣΕ ΟΙΚΟΓΕΝΕΙΕΣ ΑΠΟ ΤΟΝ ΔΗΜΟ ΚΑΛΛΙΘΕΑΣ – ΠΟΙΑ ΕΙΝΑΙ ΤΑ ΚΡΙΤΗΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1462298/new-york-times-skandalo-disekatommyrion-stin-kyvernisi-zelenski-elattomatika-vlimata-kai-yperkostologiseis/",
-        "https://www.efsyn.gr/kosmos/1462302/vretania-pogkrom-akrodexion-sto-portsmoyth-mplokaran-leoforeia-me-140-aitoyntes-asylo/",
-        "https://www.efsyn.gr/oikonomia/1462306/metra-deth-ti-allazei-gia-syntaxioyhoys-kai-misthotoys-analytika-paradeigmata/"
+        "https://www.efsyn.gr/ellada/1462323/oikonomiki-enishysi-1-000-eyro-gia-kathe-neo-paidi-se-oikogeneies-apo-ton-dimo-kallitheas-poia-einai-ta-kritiria/",
+        "https://www.efsyn.gr/ellada/1462314/anexelegkti-i-fotia-stin-eyvoia-zimies-se-kalliergeies-kai-egkatastaseis-enishythikan-oi-dynameis-eikones-vinteo/",
+        "https://www.efsyn.gr/periballon/1461969/perissoteres-ihthyokalliergeies-me-adeies-thalasses-pos-anoigei-o-dromos-gia-alieia-ekatommyrion-tonon-agrion-psarion/"
       ],
-      "seen_at_utc": "2026-09-07T15:53:24.614816+00:00"
+      "seen_at_utc": "2026-09-07T16:17:22.501909+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/uncategorized/pasok-i-konitsa-kaigetai-gia-ogdoi-imera-amesos-elegxos-tis-pyrkagias-na-dothoun-safeis-apantiseis/",
-      "title": "ΠΑΣΟΚ: Η Κόνιτσα καίγεται για όγδοη ημέρα – Άμεσος έλεγχος της πυρκαγιάς, να δοθούν σαφείς απαντήσεις",
-      "normalized_title": "ΠΑΣΟΚ: Η ΚΟΝΙΤΣΑ ΚΑΙΓΕΤΑΙ ΓΙΑ ΟΓΔΟΗ ΗΜΕΡΑ – ΑΜΕΣΟΣ ΕΛΕΓΧΟΣ ΤΗΣ ΠΥΡΚΑΓΙΑΣ, ΝΑ ΔΟΘΟΥΝ ΣΑΦΕΙΣ ΑΠΑΝΤΗΣΕΙΣ",
+      "url": "https://www.in.gr/2026/09/07/politics/politiki-grammateia/elas-yposxetikes-politikis-alazoneias-kai-paraplanisis-gia-to-mellon-oi-eksaggelies-mitsotaki/",
+      "title": "ΕΛΑΣ: «Υποσχετικές» πολιτικής αλαζονείας και παραπλάνησης για το μέλλον οι εξαγγελίες Μητσοτάκη",
+      "normalized_title": "ΕΛΑΣ: «ΥΠΟΣΧΕΤΙΚΕΣ» ΠΟΛΙΤΙΚΗΣ ΑΛΑΖΟΝΕΙΑΣ ΚΑΙ ΠΑΡΑΠΛΑΝΗΣΗΣ ΓΙΑ ΤΟ ΜΕΛΛΟΝ ΟΙ ΕΞΑΓΓΕΛΙΕΣ ΜΗΤΣΟΤΑΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/uncategorized/pasok-i-konitsa-kaigetai-gia-ogdoi-imera-amesos-elegxos-tis-pyrkagias-na-dothoun-safeis-apantiseis/",
-        "https://www.in.gr/2026/09/07/politics/paraskinio/sti-symmoria-tis-mizerias-kai-to-chatgpt-otan-to-ai-diapseydei-ton-adoni-gia-ton-tziro-stin-estiasi/",
-        "https://www.in.gr/2026/09/07/greece/kypseli-sto-mikroskopio-o-26xronos-afganos-zouse-mazi-mas-otan-pethane-to-moro-isxyrizetai-to-zeygari/",
-        "https://www.in.gr/2026/09/07/sports/football/apon-o-strakosia-apo-tin-teleytaia-proponisi-tis-aek-pics/",
-        "https://www.in.gr/2026/09/07/greece/megali-fotia-stin-eyvoia-enisxyontai-oi-dynameis-14-enaeria-mesa-kinitopoiithike-kai-to-geetha/"
+        "https://www.in.gr/2026/09/07/politics/politiki-grammateia/elas-yposxetikes-politikis-alazoneias-kai-paraplanisis-gia-to-mellon-oi-eksaggelies-mitsotaki/",
+        "https://www.in.gr/2026/09/07/greece/drosia-i-proin-gynaika-tou-thymatos-synelifthi-os-ithiki-aytourgos-tis-apopeiras-dolofonias/",
+        "https://www.in.gr/2026/09/07/go-fun/style/doulepse-sklira-den-endiaferei-kanenan-poso-kalos-isoun-kapote-o-sxediastis-modas-paul-smith-sta-80-tou/",
+        "https://www.in.gr/2026/09/07/sports/othersports/european-athletics-ypopsifios-gia-athlitis-tou-mina-o-miltow-tentoglou/",
+        "https://www.in.gr/2026/09/07/world/texniti-noimosyni-sta-thrania-oi-mathites-grafoun-kalytera-alla-mathainoun-ligotera/"
       ],
-      "seen_at_utc": "2026-09-07T15:53:24.614781+00:00"
+      "seen_at_utc": "2026-09-07T16:17:22.501876+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T15:53:24.614961+00:00"
+  "updated_at_utc": "2026-09-07T16:17:22.501987+00:00"
 }
