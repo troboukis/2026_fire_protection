@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/cinema/564443524/echoyn-idi-dialexei-ton-neo-tzeims-mpont-leei-o-gkari-olntman/",
-      "title": "«Εχουν ήδη διαλέξει τον νέο Τζέιμς Μποντ», λέει ο Γκάρι Ολντμαν",
-      "normalized_title": "«ΕΧΟΥΝ ΗΔΗ ΔΙΑΛΕΞΕΙ ΤΟΝ ΝΕΟ ΤΖΕΙΜΣ ΜΠΟΝΤ», ΛΕΕΙ Ο ΓΚΑΡΙ ΟΛΝΤΜΑΝ",
+      "url": "https://www.kathimerini.gr/society/564443527/fotia-stin-konitsa-to-dasos-ayto-den-eiche-kaei-apo-to-40/",
+      "title": "Φωτιά στην Κόνιτσα: «Το δάσος αυτό δεν είχε καεί από το ’40»",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΚΟΝΙΤΣΑ: «ΤΟ ΔΑΣΟΣ ΑΥΤΟ ΔΕΝ ΕΙΧΕ ΚΑΕΙ ΑΠΟ ΤΟ ’40»",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/cinema/564443524/echoyn-idi-dialexei-ton-neo-tzeims-mpont-leei-o-gkari-olntman/"
+        "https://www.kathimerini.gr/society/564443527/fotia-stin-konitsa-to-dasos-ayto-den-eiche-kaei-apo-to-40/",
+        "https://www.kathimerini.gr/society/564443572/tinos-diasolinomeni-14chroni-meta-apo-trochaio-me-ilektriko-patini/",
+        "https://www.kathimerini.gr/athletics/basketball/564443560/goyokap-den-itan-prothesi-moy-na-apogoiteyso-toys-filoys-toy-olympiakoy/"
       ],
-      "seen_at_utc": "2026-09-07T17:30:02.733265+00:00"
+      "seen_at_utc": "2026-09-07T17:51:25.847683+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875290/tesseris-paraviaseis-apo-tourkika-uav-kai-mia-ebloki-me-elliniko-aeroskafos-epifulakis/?utm_source=rss",
-      "title": "Τέσσερις παραβιάσεις από τουρκικά UAV και μια εμπλοκή με ελληνικό αεροσκάφος επιφυλακής",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΠΑΡΑΒΙΑΣΕΙΣ ΑΠΟ ΤΟΥΡΚΙΚΑ UAV ΚΑΙ ΜΙΑ ΕΜΠΛΟΚΗ ΜΕ ΕΛΛΗΝΙΚΟ ΑΕΡΟΣΚΑΦΟΣ ΕΠΙΦΥΛΑΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1875310/diasolinomeni-14hroni-meta-apo-trohaio-me-ilektriko-patini-stin-tino/?utm_source=rss",
+      "title": "Διασωληνωμένη 14χρονη μετά από τροχαίο με ηλεκτρικό πατίνι στην Τήνο, ήταν συνεπιβάτης και υπέστη σοβαρές κρανιοεγκεφαλικές κακώσεις",
+      "normalized_title": "ΔΙΑΣΩΛΗΝΩΜΕΝΗ 14ΧΡΟΝΗ ΜΕΤΑ ΑΠΟ ΤΡΟΧΑΙΟ ΜΕ ΗΛΕΚΤΡΙΚΟ ΠΑΤΙΝΙ ΣΤΗΝ ΤΗΝΟ, ΗΤΑΝ ΣΥΝΕΠΙΒΑΤΗΣ ΚΑΙ ΥΠΕΣΤΗ ΣΟΒΑΡΕΣ ΚΡΑΝΙΟΕΓΚΕΦΑΛΙΚΕΣ ΚΑΚΩΣΕΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875290/tesseris-paraviaseis-apo-tourkika-uav-kai-mia-ebloki-me-elliniko-aeroskafos-epifulakis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875285/adi-gia-lires-tous-edose-petres-kai-kalabokia-67hronos-sti-lamia-estise-dipli-pagida-sti-speira-ton-logiston/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875310/diasolinomeni-14hroni-meta-apo-trohaio-me-ilektriko-patini-stin-tino/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T16:29:58.013710+00:00"
+      "seen_at_utc": "2026-09-07T17:51:25.847815+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1462363/tinos-diasolinomeni-14hroni-meta-apo-atyhima-me-ilektriko-patini-nosileyetai-se-krisimi-katastasi/",
-      "title": "Τήνος: Διασωληνωμένη 14χρονη μετά από ατύχημα με ηλεκτρικό πατίνι – Νοσηλεύεται σε κρίσιμη κατάσταση",
-      "normalized_title": "ΤΗΝΟΣ: ΔΙΑΣΩΛΗΝΩΜΕΝΗ 14ΧΡΟΝΗ ΜΕΤΑ ΑΠΟ ΑΤΥΧΗΜΑ ΜΕ ΗΛΕΚΤΡΙΚΟ ΠΑΤΙΝΙ – ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΚΡΙΣΙΜΗ ΚΑΤΑΣΤΑΣΗ",
+      "url": "https://www.efsyn.gr/kosmos/1462370/germania-oi-metanastes-anisyhoyn-meta-ti-niki-toy-afd-sti-saxonia-i-kardia-moy-espase/",
+      "title": "Γερμανία: Οι μετανάστες ανησυχούν μετά τη νίκη του AfD στη Σαξονία – «Η καρδιά μου έσπασε»",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΟΙ ΜΕΤΑΝΑΣΤΕΣ ΑΝΗΣΥΧΟΥΝ ΜΕΤΑ ΤΗ ΝΙΚΗ ΤΟΥ AFD ΣΤΗ ΣΑΞΟΝΙΑ – «Η ΚΑΡΔΙΑ ΜΟΥ ΕΣΠΑΣΕ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1462363/tinos-diasolinomeni-14hroni-meta-apo-atyhima-me-ilektriko-patini-nosileyetai-se-krisimi-katastasi/",
-        "https://www.efsyn.gr/politiki/1462361/erntogan-den-tha-adranisoyme-se-ehthrikes-energeies-oi-filoi-mas-tha-kerdisoyn-oi-ehthroi-tha-hasoyn/"
+        "https://www.efsyn.gr/kosmos/1462370/germania-oi-metanastes-anisyhoyn-meta-ti-niki-toy-afd-sti-saxonia-i-kardia-moy-espase/",
+        "https://www.efsyn.gr/stiles/1462379/oikonomiki-politiki-rekor-apokliseon-flyaria-sygklisis/",
+        "https://www.efsyn.gr/tehnes/1462368/efyge-apo-ti-zoi-o-kinimatografikos-paragogos-thanos-lampropoylos/"
       ],
-      "seen_at_utc": "2026-09-07T17:30:02.733335+00:00"
+      "seen_at_utc": "2026-09-07T17:51:25.847769+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/in-science/ai/rompot-stin-polonia-diadilonoun-kata-tis-texnitis-noimosynis/",
-      "title": "Ρομπότ στην Πολωνία διαδηλώνουν… κατά της Τεχνητής Νοημοσύνης",
-      "normalized_title": "ΡΟΜΠΟΤ ΣΤΗΝ ΠΟΛΩΝΙΑ ΔΙΑΔΗΛΩΝΟΥΝ… ΚΑΤΑ ΤΗΣ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ",
+      "url": "https://www.in.gr/2026/09/07/sports/football/mouzakitis-na-matho-ta-panta-gia-to-podosfairo-kai-na-gino-kalyteros-perifanos-gia-ton-olympiako/",
+      "title": "Μουζακίτης: «Να δουλέψω για μια θέση στη Χαλ – Περήφανος για τον Ολυμπιακό»",
+      "normalized_title": "ΜΟΥΖΑΚΙΤΗΣ: «ΝΑ ΔΟΥΛΕΨΩ ΓΙΑ ΜΙΑ ΘΕΣΗ ΣΤΗ ΧΑΛ – ΠΕΡΗΦΑΝΟΣ ΓΙΑ ΤΟΝ ΟΛΥΜΠΙΑΚΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/in-science/ai/rompot-stin-polonia-diadilonoun-kata-tis-texnitis-noimosynis/",
-        "https://www.in.gr/2026/09/07/sports/football/stoiximan-super-league-i-vathmologia-meta-tin-oloklirosi-tis-3is-agonistikis/",
-        "https://www.in.gr/2026/09/07/world/parisi-proin-melos-akrodeksias-organosis-omologei-ti-dolofonia-argentinou-astera-tou-ragkmpi/",
-        "https://www.in.gr/2026/09/07/greece/marathonas-o-gios-mou-den-kserei-tipota-ti-eipe-i-68xroni-pou-apekrypse-to-thanato-tis-miteras-tis/"
+        "https://www.in.gr/2026/09/07/sports/football/mouzakitis-na-matho-ta-panta-gia-to-podosfairo-kai-na-gino-kalyteros-perifanos-gia-ton-olympiako/",
+        "https://www.in.gr/2026/09/07/greece/taxiaos-gia-tis-zimies-stin-kypseli-apo-ti-grammi-4-kanenas-den-tha-xreothei-tin-apokatastasi/",
+        "https://www.in.gr/2026/09/07/politics/epikairotita/to-pasok-gia-tis-yposxeseis-mitsotaki-meiosis-ton-timon-sti-xondriki-tou-reymatos-poios-ton-empodise-na-to-kanei-epi-7-xronia/",
+        "https://www.in.gr/2026/09/07/life/tzaklin-smith-filia-apeiles-egkymosynes-me-tilepatheia-diavaste-apospasma-apo-ta-apomnimoneymata-tou-aggelou-tou-tsarli/",
+        "https://www.in.gr/2026/09/07/greece/mykonos-gnostos-kommotis-kataggelthike-gia-klopi-antikeimenon-aksias-1-000-eyro/",
+        "https://www.in.gr/2026/09/07/politics/epikairotita/elas-nyfoudis-o-k-mitsotakis-den-asxolithike-katholou-me-ti-mikromesaia-epixeirimatikotita/",
+        "https://www.in.gr/2026/09/07/economy/oikonomikes-eidiseis/deth-2026-ta-psila-grammata-ton-eksaggelion-mitsotaki-ta-aneparki-metra-kai-o-koumparas-me-risko-apodosis/"
       ],
-      "seen_at_utc": "2026-09-07T17:30:02.733304+00:00"
+      "seen_at_utc": "2026-09-07T17:51:25.847736+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T17:30:02.733415+00:00"
+  "updated_at_utc": "2026-09-07T17:51:25.847928+00:00"
 }
