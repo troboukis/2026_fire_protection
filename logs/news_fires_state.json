@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564442387/yeni-safak-ta-minymata-toy-kalin-stin-athina/",
-      "title": "Yeni Safak: Τα μηνύματα του Καλίν στην Αθήνα",
-      "normalized_title": "YENI SAFAK: ΤΑ ΜΗΝΥΜΑΤΑ ΤΟΥ ΚΑΛΙΝ ΣΤΗΝ ΑΘΗΝΑ",
+      "url": "https://www.kathimerini.gr/world/564442519/germania-sok-sta-politika-kommata-meta-ti-megali-niki-toy-akrodexioy-afd/",
+      "title": "Γερμανία: Σοκ στα πολιτικά κόμματα μετά τη νίκη του ακροδεξιού AfD",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: ΣΟΚ ΣΤΑ ΠΟΛΙΤΙΚΑ ΚΟΜΜΑΤΑ ΜΕΤΑ ΤΗ ΝΙΚΗ ΤΟΥ ΑΚΡΟΔΕΞΙΟΥ AFD",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564442387/yeni-safak-ta-minymata-toy-kalin-stin-athina/",
-        "https://www.kathimerini.gr/society/564442489/tesseris-thanatoi-chthes-stis-ellinikes-thalasses/",
-        "https://www.kathimerini.gr/world/564442456/indonisia-toylachiston-11-nekroi-apo-pyrkagia-se-agora-anamesa-toys-exi-paidia/",
-        "https://www.kathimerini.gr/world/564442480/servia-se-laiko-proskynima-i-soros-toy-ratko-mlantits-orgi-stin-ee-gia-tis-times-ston-chasapi-tis-sremprenitsa/"
+        "https://www.kathimerini.gr/world/564442519/germania-sok-sta-politika-kommata-meta-ti-megali-niki-toy-akrodexioy-afd/",
+        "https://www.kathimerini.gr/world/564442483/finlandia-enopion-dikastirioy-andras-poy-katigoreitai-gia-sexoyalika-egklimata-se-varos-361-paidion/",
+        "https://www.kathimerini.gr/culture/564442498/aytoprosopografia-toy-van-gkogk-xana-se-dimosia-thea-meta-apo-36-chronia/"
       ],
-      "seen_at_utc": "2026-09-07T08:30:17.989720+00:00"
+      "seen_at_utc": "2026-09-07T08:51:08.040765+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,37 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875003/ekpa-i-nea-eikona-ton-koinohriston-horon-eduposiazei-kai-xafniazei-tous-foitites-deite-video/?utm_source=rss",
-      "title": "ΕΚΠΑ: Η νέα εικόνα των κοινόχρηστων χώρων του Πανεπιστημίου, δείτε το πριν το και το μετά",
-      "normalized_title": "ΕΚΠΑ: Η ΝΕΑ ΕΙΚΟΝΑ ΤΩΝ ΚΟΙΝΟΧΡΗΣΤΩΝ ΧΩΡΩΝ ΤΟΥ ΠΑΝΕΠΙΣΤΗΜΙΟΥ, ΔΕΙΤΕ ΤΟ ΠΡΙΝ ΤΟ ΚΑΙ ΤΟ ΜΕΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1875015/sto-edolio-andras-gia-sexoualiki-kakopoiisi-361-agorion-ilikias-9-eos-15-eton-sti-finlandia-ta-pagideue-meso-snapchat/?utm_source=rss",
+      "title": "Στο εδώλιο άνδρας για σεξουαλική κακοποίηση 361 αγοριών ηλικίας 9 έως 15 ετών στη Φινλανδία, τα «παγίδευε» μέσω Snapchat",
+      "normalized_title": "ΣΤΟ ΕΔΩΛΙΟ ΑΝΔΡΑΣ ΓΙΑ ΣΕΞΟΥΑΛΙΚΗ ΚΑΚΟΠΟΙΗΣΗ 361 ΑΓΟΡΙΩΝ ΗΛΙΚΙΑΣ 9 ΕΩΣ 15 ΕΤΩΝ ΣΤΗ ΦΙΝΛΑΝΔΙΑ, ΤΑ «ΠΑΓΙΔΕΥΕ» ΜΕΣΩ SNAPCHAT",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875003/ekpa-i-nea-eikona-ton-koinohriston-horon-eduposiazei-kai-xafniazei-tous-foitites-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875015/sto-edolio-andras-gia-sexoualiki-kakopoiisi-361-agorion-ilikias-9-eos-15-eton-sti-finlandia-ta-pagideue-meso-snapchat/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875014/i-suginitiki-istoria-tis-georgia-xanthopoulou-i-diagnosi-me-oxeia-leuhaimia-i-epistoli-ston-mitsotaki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875013/video-meta-tin-enopli-epithesi-sta-patisia-sto-odostroma-traumatismenos-o-55hronos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875007/poioi-dikaioudai-epidoma-enoikiou-eos-kai-tis-25-septemvriou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T08:30:17.989832+00:00"
+      "seen_at_utc": "2026-09-07T08:51:08.040971+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1461812/xekinise-i-diki-gia-tin-tragodia-ton-tempon-sti-larisa-para-tis-prospatheies-na-thaftei-i-alitheia-tha-lampsei/",
-      "title": "Ξεκίνησε η δίκη για την τραγωδία των Τεμπών στη Λάρισα: «Παρά τις προσπάθειες να θαφτεί, η αλήθεια θα λάμψει»",
-      "normalized_title": "ΞΕΚΙΝΗΣΕ Η ΔΙΚΗ ΓΙΑ ΤΗΝ ΤΡΑΓΩΔΙΑ ΤΩΝ ΤΕΜΠΩΝ ΣΤΗ ΛΑΡΙΣΑ: «ΠΑΡΑ ΤΙΣ ΠΡΟΣΠΑΘΕΙΕΣ ΝΑ ΘΑΦΤΕΙ, Η ΑΛΗΘΕΙΑ ΘΑ ΛΑΜΨΕΙ»",
+      "url": "https://www.efsyn.gr/stiles/1461826/agapa-to-keli-soy/",
+      "title": "Αγάπα το κελί σου",
+      "normalized_title": "ΑΓΑΠΑ ΤΟ ΚΕΛΙ ΣΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1461812/xekinise-i-diki-gia-tin-tragodia-ton-tempon-sti-larisa-para-tis-prospatheies-na-thaftei-i-alitheia-tha-lampsei/",
-        "https://www.efsyn.gr/politiki/1461804/kyveli-marda-enimerothika-oti-tha-prologiso-ton-tsipra-stis-11-to-vrady-den-mporoysa-na-koimitho/",
-        "https://www.efsyn.gr/athlitismos/1461763/antidrasi-protathlitrias-para-to-gkol-apo-ta-apodytiria-i-arsenal-epikratise-tis-tselsi/"
+        "https://www.efsyn.gr/stiles/1461826/agapa-to-keli-soy/",
+        "https://www.efsyn.gr/kosmos/1461838/synelifthi-52hronos-sto-velgio-gia-kataskopeia-yper-tis-kinas-edine-plirofories-gia-proigmenoys-imiagogoys/",
+        "https://www.efsyn.gr/politiki/1461801/o-adonis-ta-vazei-me-osoys-dimosiografoys-den-exymnoyn-ton-mitsotaki-ohi-alli-mirla-den-ntrepeste-ligo-oloi/",
+        "https://www.efsyn.gr/kosmos/1461835/rosia-11-nekroi-apo-hionostivada-poy-kataplakose-omada-oreivaton-ston-kaykaso-vinteo/",
+        "https://www.efsyn.gr/politiki/1461819/otan-o-mitsotakis-paradehtike-dimosia-to-fiasko-tis-panepistimiakis-astynomias-itan-ahreiasti/",
+        "https://www.efsyn.gr/tehnes/1461793/sta-kagkela-oi-thessalonikeis-gia-ton-poliorkimeno-megalexandro-apo-tis-skalosies-toy-remoy/"
       ],
-      "seen_at_utc": "2026-09-07T08:30:17.989807+00:00"
+      "seen_at_utc": "2026-09-07T08:51:08.040913+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/07/politics/politiki-grammateia/live-i-synenteyksi-typou-tou-gavriil-sakellaridi-sti-deth/",
-      "title": "Live η συνέντευξη Τύπου του Γαβριήλ Σακελλαρίδη στη ΔΕΘ",
-      "normalized_title": "LIVE Η ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΤΟΥ ΓΑΒΡΙΗΛ ΣΑΚΕΛΛΑΡΙΔΗ ΣΤΗ ΔΕΘ",
+      "url": "https://www.in.gr/2026/09/07/sports/basketball/i-imerominia-kleidi-sto-symvolaio-tou-xezonia-me-tous-kavaliers/",
+      "title": "Η ημερομηνία-κλειδί στο συμβόλαιο του Χεζόνια με τους Καβαλίερς",
+      "normalized_title": "Η ΗΜΕΡΟΜΗΝΙΑ-ΚΛΕΙΔΙ ΣΤΟ ΣΥΜΒΟΛΑΙΟ ΤΟΥ ΧΕΖΟΝΙΑ ΜΕ ΤΟΥΣ ΚΑΒΑΛΙΕΡΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/07/politics/politiki-grammateia/live-i-synenteyksi-typou-tou-gavriil-sakellaridi-sti-deth/",
-        "https://www.in.gr/2026/09/07/greece/artopoios-sto-in-plotes-deksamenes-gia-tin-pyrkagia-pou-kaiei-8-meres-komvoi-pyrosveston-stin-konitsa/",
-        "https://www.in.gr/2026/09/07/sports/football/epos-o-gios-tou-kouman-skorare-dyo-gkol-me-penalti-agonizomenos-os-termatofylakas-pic-vid/",
-        "https://www.in.gr/2026/09/07/life/music/macklemore-fonakse-leyteria-stin-palaistini-se-synaylia-tou-ed-sheeran-antidra-israilini-organosi/"
+        "https://www.in.gr/2026/09/07/sports/basketball/i-imerominia-kleidi-sto-symvolaio-tou-xezonia-me-tous-kavaliers/",
+        "https://www.in.gr/2026/09/07/greece/diki-gia-ta-tempi-arnithikan-tis-katigories-kai-oi-36-katigoroumenoi-antistrofi-metrisi-gia-tous-protous-martyres/",
+        "https://www.in.gr/2026/09/07/politics/syntrivi-phantom-stin-tanagra-syllypitiria-apo-ton-gg-tou-nato-kai-eyropaious-ypourgous-amynas/",
+        "https://www.in.gr/2026/09/07/world/pos-i-niki-tis-akrodeksias-afd-sti-saksonia-anxalt-epireazei-to-politiko-kai-eklogiko-skiniko-stin-eyropi/"
       ],
-      "seen_at_utc": "2026-09-07T08:30:17.989772+00:00"
+      "seen_at_utc": "2026-09-07T08:51:08.040810+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T08:30:17.989914+00:00"
+  "updated_at_utc": "2026-09-07T08:51:08.041053+00:00"
 }
