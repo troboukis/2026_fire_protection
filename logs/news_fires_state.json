@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564445843/ereyna-lathraio-1-sta-10-tsigara-entos-e-e-sta-13-dis-oi-apoleies-esodon/",
-      "title": "Ερευνα: Λαθραίο 1 στα 10 τσιγάρα εντός Ε.Ε. – Στα 13 δισ. οι απώλειες εσόδων",
-      "normalized_title": "ΕΡΕΥΝΑ: ΛΑΘΡΑΙΟ 1 ΣΤΑ 10 ΤΣΙΓΑΡΑ ΕΝΤΟΣ Ε.Ε. – ΣΤΑ 13 ΔΙΣ. ΟΙ ΑΠΩΛΕΙΕΣ ΕΣΟΔΩΝ",
+      "url": "https://www.kathimerini.gr/columns/564442393/tragoydia-laika/",
+      "title": "Τραγούδια λαϊκά",
+      "normalized_title": "ΤΡΑΓΟΥΔΙΑ ΛΑΙΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564445843/ereyna-lathraio-1-sta-10-tsigara-entos-e-e-sta-13-dis-oi-apoleies-esodon/",
-        "https://www.kathimerini.gr/world/564445897/ipa-sti-mayri-lista-oles-oi-iranikes-aeroporikes-etaireies/"
+        "https://www.kathimerini.gr/columns/564442393/tragoydia-laika/",
+        "https://www.kathimerini.gr/culture/museums/564436888/chryso-kai-diamantia-protimoyn-oi-listes-moyseion/",
+        "https://www.kathimerini.gr/politics/564440038/zygizontas-enan-politiko-marathonio/",
+        "https://www.kathimerini.gr/economy/564440392/sta-rafia-ton-soyper-market-i-pio-dyskoli-machi/",
+        "https://www.kathimerini.gr/athletics/analysis/564445942/o-paok-sto-simeio-miden/",
+        "https://www.kathimerini.gr/istoria/564432466/90-chronia-prin-02-9-1936/"
       ],
-      "seen_at_utc": "2026-09-08T16:51:16.921546+00:00"
+      "seen_at_utc": "2026-09-08T17:17:07.425696+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1264,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875804/marina-stauraki-kata-giorgou-patouli-pou-na-kateveis-vre-kakomoiri/?utm_source=rss",
-      "title": "Μαρίνα Σταυράκη κατά Γιώργου Πατούλη: «Πού να κατέβεις βρε κακομοίρη;»",
-      "normalized_title": "ΜΑΡΙΝΑ ΣΤΑΥΡΑΚΗ ΚΑΤΑ ΓΙΩΡΓΟΥ ΠΑΤΟΥΛΗ: «ΠΟΥ ΝΑ ΚΑΤΕΒΕΙΣ ΒΡΕ ΚΑΚΟΜΟΙΡΗ;»",
+      "url": "https://www.protothema.gr/greece/article/1875808/sunelifthi-53hronos-pou-epitethike-kai-traumatise-duo-astunomikous-stin-ptolemaida/?utm_source=rss",
+      "title": "Συνελήφθη 53χρονος που επιτέθηκε και τραυμάτισε δύο αστυνομικούς στην Πτολεμαΐδα",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 53ΧΡΟΝΟΣ ΠΟΥ ΕΠΙΤΕΘΗΚΕ ΚΑΙ ΤΡΑΥΜΑΤΙΣΕ ΔΥΟ ΑΣΤΥΝΟΜΙΚΟΥΣ ΣΤΗΝ ΠΤΟΛΕΜΑΙΔΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875804/marina-stauraki-kata-giorgou-patouli-pou-na-kateveis-vre-kakomoiri/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875808/sunelifthi-53hronos-pou-epitethike-kai-traumatise-duo-astunomikous-stin-ptolemaida/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T16:51:16.921687+00:00"
+      "seen_at_utc": "2026-09-08T17:17:07.425829+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463097/mani-460-000-hlm-ehei-to-neo-asthenoforo-me-to-opoio-o-adonis-antikatestise-to-saravalo-eikones/",
-      "title": "Μάνη: Σαράβαλο και το «νέο» ασθενοφόρο – Έχει 460.000 χλμ. [εικόνες]",
-      "normalized_title": "ΜΑΝΗ: ΣΑΡΑΒΑΛΟ ΚΑΙ ΤΟ «ΝΕΟ» ΑΣΘΕΝΟΦΟΡΟ – ΕΧΕΙ 460.000 ΧΛΜ. [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/politiki/1463112/nees-dieykriniseis-apo-to-israil-i-aspida-toy-ahillea-tha-ehei-elliniko-pigaio-kodika/",
+      "title": "Νέες διευκρινίσεις από το Ισραήλ: Η «Ασπίδα του Αχιλλέα» θα έχει ελληνικό πηγαίο κώδικα",
+      "normalized_title": "ΝΕΕΣ ΔΙΕΥΚΡΙΝΙΣΕΙΣ ΑΠΟ ΤΟ ΙΣΡΑΗΛ: Η «ΑΣΠΙΔΑ ΤΟΥ ΑΧΙΛΛΕΑ» ΘΑ ΕΧΕΙ ΕΛΛΗΝΙΚΟ ΠΗΓΑΙΟ ΚΩΔΙΚΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463097/mani-460-000-hlm-ehei-to-neo-asthenoforo-me-to-opoio-o-adonis-antikatestise-to-saravalo-eikones/",
-        "https://www.efsyn.gr/nisides/1463090/v-eyvoia-rovies-ilia-idanikos-kai-oikonomikos-proorismos-gia-ta-s-k-toy-septemvri/",
-        "https://www.efsyn.gr/kosmos/1463084/11i-septemvrioy-sti-dimosiotita-apokalyptika-eggrafa-apo-ton-mamntani-ti-apekrypsan-oi-arhes-gia-ton-toxiko-aera/"
+        "https://www.efsyn.gr/politiki/1463112/nees-dieykriniseis-apo-to-israil-i-aspida-toy-ahillea-tha-ehei-elliniko-pigaio-kodika/",
+        "https://www.efsyn.gr/ellada/1462806/o-dimitris-kaliampakos-stin-ef-syn-makari-na-mporoysa-na-po-stoys-katoikoys-oti-den-kindyneyoyn/"
       ],
-      "seen_at_utc": "2026-09-08T16:51:16.921639+00:00"
+      "seen_at_utc": "2026-09-08T17:17:07.425795+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/world/synelifthi-sti-germania-o-ypoptos-gia-sampotaz-ntaniel-v-pou-stoxeye-to-ilektriko-diktyo/",
-      "title": "Συνελήφθη στη Γερμανία ο ύποπτος για σαμποτάζ Ντάνιελ Β. που στόχευε το ηλεκτρικό δίκτυο",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΓΕΡΜΑΝΙΑ Ο ΥΠΟΠΤΟΣ ΓΙΑ ΣΑΜΠΟΤΑΖ ΝΤΑΝΙΕΛ Β. ΠΟΥ ΣΤΟΧΕΥΕ ΤΟ ΗΛΕΚΤΡΙΚΟ ΔΙΚΤΥΟ",
+      "url": "https://www.in.gr/2026/09/08/greece/kypseli-profylakisteoi-kai-gia-ton-thanato-tou-vrefous-o-43xronos-kai-i-38xroni/",
+      "title": "Κυψέλη: Προφυλακιστέοι και για τον θάνατο του βρέφους ο 43χρονος και η 38χρονη",
+      "normalized_title": "ΚΥΨΕΛΗ: ΠΡΟΦΥΛΑΚΙΣΤΕΟΙ ΚΑΙ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΒΡΕΦΟΥΣ Ο 43ΧΡΟΝΟΣ ΚΑΙ Η 38ΧΡΟΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/world/synelifthi-sti-germania-o-ypoptos-gia-sampotaz-ntaniel-v-pou-stoxeye-to-ilektriko-diktyo/",
-        "https://www.in.gr/matchcenter/6106295/",
-        "https://www.in.gr/2026/09/08/world/matonei-i-kardia-mou-leei-i-merkel-gia-tin-anodo-tis-afd-stin-saksonia-kai-katigorei-ton-merts/",
-        "https://www.in.gr/2026/09/08/greece/epixeirisi-diasosis-74xronou-pou-traymatistike-stous-katarraktes-tis-nedas-stin-ileia/",
-        "https://www.in.gr/2026/09/08/go-fun/fizz/ti-40-ti-50-ti-60-i-salma-xagiek-exei-vrei-to-mystiko-tis-neotitas/",
-        "https://www.in.gr/2026/09/08/greece/panos-lazaratos-nees-aitiseis-akyrosis-gia-tis-adeies-ton-keele-kai-york/"
+        "https://www.in.gr/2026/09/08/greece/kypseli-profylakisteoi-kai-gia-ton-thanato-tou-vrefous-o-43xronos-kai-i-38xroni/",
+        "https://www.in.gr/2026/09/08/world/sxedon-mia-ora-ston-dromo-gia-ti-douleia-ayti-einai-i-xora-tis-eyropis-pou-vrisketai-stin-koryfi/",
+        "https://www.in.gr/2026/09/08/go-fun/style/o-tzon-malkovits-sto-kokkino-xali-tis-venetias-didakse-pos-na-forane-oi-andres-dior-polloi-den-to-epiasan/",
+        "https://www.in.gr/2026/09/08/world/sta-akra-oi-sxeseis-vretanias-israil-antipoina-tou-tel-aviv-sto-londino/"
       ],
-      "seen_at_utc": "2026-09-08T16:51:16.921598+00:00"
+      "seen_at_utc": "2026-09-08T17:17:07.425747+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T16:51:16.921758+00:00"
+  "updated_at_utc": "2026-09-08T17:17:07.425903+00:00"
 }
