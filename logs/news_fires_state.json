@@ -1,15 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564445696/chaos-sta-vretanika-aerodromia-logo-vlavis-sta-systimata-enaerias-kykloforias/",
-      "title": "Χάος στα βρετανικά αεροδρόμια λόγω βλάβης στα συστήματα εναέριας κυκλοφορίας",
-      "normalized_title": "ΧΑΟΣ ΣΤΑ ΒΡΕΤΑΝΙΚΑ ΑΕΡΟΔΡΟΜΙΑ ΛΟΓΩ ΒΛΑΒΗΣ ΣΤΑ ΣΥΣΤΗΜΑΤΑ ΕΝΑΕΡΙΑΣ ΚΥΚΛΟΦΟΡΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564445753/to-israil-kleinei-to-proxeneio-tis-vretanias-stin-ieroysalim/",
+      "title": "Το Ισραήλ κλείνει το προξενείο της Βρετανίας στην Ιερουσαλήμ",
+      "normalized_title": "ΤΟ ΙΣΡΑΗΛ ΚΛΕΙΝΕΙ ΤΟ ΠΡΟΞΕΝΕΙΟ ΤΗΣ ΒΡΕΤΑΝΙΑΣ ΣΤΗΝ ΙΕΡΟΥΣΑΛΗΜ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564445696/chaos-sta-vretanika-aerodromia-logo-vlavis-sta-systimata-enaerias-kykloforias/",
-        "https://www.kathimerini.gr/world/564445663/kina-agori-5-eton-kremotan-apo-ta-kagkela-6oy-orofoy-sothike-apo-ton-epistati/",
-        "https://www.kathimerini.gr/society/564445681/karystos-syllipsi-andra-gia-fotia-poy-proklithike-apo-skaptiko-michanima/"
+        "https://www.kathimerini.gr/world/564445753/to-israil-kleinei-to-proxeneio-tis-vretanias-stin-ieroysalim/",
+        "https://www.kathimerini.gr/athletics/564445744/i-koyrdiki-amentspor-sto-toyrkiko-kazani/",
+        "https://www.kathimerini.gr/world/564445708/i-oykrania-tha-promitheythei-peripoy-1-000-pyrayloys-patriot-apo-toys-symmachoys/",
+        "https://www.kathimerini.gr/istoria/564440305/ta-moiraia-lathi-sto-metopo-to-1922/",
+        "https://www.kathimerini.gr/politics/564441013/theoreio-tin-alli-kyriaki-sto-kastellorizo-o-mitsotakis/",
+        "https://www.kathimerini.gr/world/564445570/italia-vrethike-kefali-krokodeiloy-se-aposkeyi-sto-aerodromio-toy-torino/"
       ],
-      "seen_at_utc": "2026-09-08T14:51:13.239929+00:00"
+      "seen_at_utc": "2026-09-08T15:17:01.416907+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1264,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875717/xespa-o-pateras-tis-kuriakis-griva-kata-ton-astunomikon-prepei-na-timorithoun-ehasan-mesa-apo-ta-heria-tous-/?utm_source=rss",
-      "title": "Ξεσπά ο πατέρας της Κυριακής Γρίβα: «Πρέπει να τιμωρηθούν οι αστυνομικοί, έχασαν μέσα από τα χέρια τους μια αθώα ψυχή»",
-      "normalized_title": "ΞΕΣΠΑ Ο ΠΑΤΕΡΑΣ ΤΗΣ ΚΥΡΙΑΚΗΣ ΓΡΙΒΑ: «ΠΡΕΠΕΙ ΝΑ ΤΙΜΩΡΗΘΟΥΝ ΟΙ ΑΣΤΥΝΟΜΙΚΟΙ, ΕΧΑΣΑΝ ΜΕΣΑ ΑΠΟ ΤΑ ΧΕΡΙΑ ΤΟΥΣ ΜΙΑ ΑΘΩΑ ΨΥΧΗ»",
+      "url": "https://www.protothema.gr/greece/article/1875742/diakopi-reumatos-sto-marousi-pote-anamenetai-i-apokatastasi/?utm_source=rss",
+      "title": "Διακοπή ρεύματος στο Μαρούσι, πότε αναμένεται η αποκατάσταση",
+      "normalized_title": "ΔΙΑΚΟΠΗ ΡΕΥΜΑΤΟΣ ΣΤΟ ΜΑΡΟΥΣΙ, ΠΟΤΕ ΑΝΑΜΕΝΕΤΑΙ Η ΑΠΟΚΑΤΑΣΤΑΣΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875717/xespa-o-pateras-tis-kuriakis-griva-kata-ton-astunomikon-prepei-na-timorithoun-ehasan-mesa-apo-ta-heria-tous-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875742/diakopi-reumatos-sto-marousi-pote-anamenetai-i-apokatastasi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875738/sunelifthi-sto-thiseio-andras-meta-apo-elegho-tis-astunomias-eihe-stin-katohi-tou-mahairia-kai-aerovolo-oplo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875719/apisteuti-apati-ston-kalamo-paristane-ton-paulo-de-gres-kai-epiheirise-na-apospasei-hrimata-apo-ilikiomeni/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T14:51:13.240049+00:00"
+      "seen_at_utc": "2026-09-08T15:17:01.417055+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463017/irakleio-anilikoi-xylokopisan-15hrono-kato-apo-to-spiti-toy-toy-eihan-stisei-enedra/",
-      "title": "Ηράκλειο: Ανήλικοι ξυλοκόπησαν 15χρονο κάτω από το σπίτι του – Του είχαν στήσει ενέδρα",
-      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΑΝΗΛΙΚΟΙ ΞΥΛΟΚΟΠΗΣΑΝ 15ΧΡΟΝΟ ΚΑΤΩ ΑΠΟ ΤΟ ΣΠΙΤΙ ΤΟΥ – ΤΟΥ ΕΙΧΑΝ ΣΤΗΣΕΙ ΕΝΕΔΡΑ",
+      "url": "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-v-papavasileioy-08-09-2026/",
+      "title": "Σκίτσο της Εφ.Συν. [Β.Παπαβασιλείου 08.09.2026]",
+      "normalized_title": "ΣΚΙΤΣΟ ΤΗΣ ΕΦ.ΣΥΝ. [Β.ΠΑΠΑΒΑΣΙΛΕΙΟΥ 08.09.2026]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463017/irakleio-anilikoi-xylokopisan-15hrono-kato-apo-to-spiti-toy-toy-eihan-stisei-enedra/",
-        "https://www.efsyn.gr/kosmos/1463028/tilefoniki-epikoinonia-tramp-poytin-gia-to-oykraniko/"
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-v-papavasileioy-08-09-2026/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-08-09-2026/",
+        "https://www.efsyn.gr/kosmos/1463037/antipoina-apo-to-israil-kleinei-to-vretaniko-proxeneio-stin-ieroysalim/",
+        "https://www.efsyn.gr/kosmos/1463012/vretania-anestalisan-oi-apogeioseis-se-hithrooy-kai-gkatgoyik-vlavi-sto-systima-enaerias-kykloforias/",
+        "https://www.efsyn.gr/kosmos/1462860/to-italiko-afd-thelei-na-ginei-i-velona-tis-zygarias/",
+        "https://www.efsyn.gr/kosmos/1463018/katarreysi-ktirioy-sto-neo-delhi-stoys-7-oi-nekroi-foititis-sothike-me-ena-vinteo-11-deyterolepton/",
+        "https://www.efsyn.gr/stiles/1462723/to-mayro-poy-moiazei-gkrizo/",
+        "https://www.efsyn.gr/stiles/1462738/systimika-fasistika-morfomata/",
+        "https://www.efsyn.gr/stiles/1462761/o-feretzes-enos-fonoy/"
       ],
-      "seen_at_utc": "2026-09-08T14:51:13.240025+00:00"
+      "seen_at_utc": "2026-09-08T15:17:01.417007+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/greece/peitharxikes-poines-xadi-stous-4-astynomikous-kataggellei-i-oikogeneia-tis-kyriakis-griva/",
-      "title": "Πειθαρχικές ποινές «χάδι» στους 4 αστυνομικούς καταγγέλλει η οικογένεια της Κυριακής Γρίβα",
-      "normalized_title": "ΠΕΙΘΑΡΧΙΚΕΣ ΠΟΙΝΕΣ «ΧΑΔΙ» ΣΤΟΥΣ 4 ΑΣΤΥΝΟΜΙΚΟΥΣ ΚΑΤΑΓΓΕΛΛΕΙ Η ΟΙΚΟΓΕΝΕΙΑ ΤΗΣ ΚΥΡΙΑΚΗΣ ΓΡΙΒΑ",
+      "url": "https://www.in.gr/2026/09/08/go-fun/poly-noris-pethane-sta-22-tis-i-miss-austria-loutsia-sisits-edine-maxi-me-sovara-provlimata-ygeias-apo-ti-gennisi-tis/",
+      "title": "«Πολύ νωρίς»: Πέθανε στα 22 της η Miss Austria, Λουτσία Σίσιτς – Έδινε μάχη με σοβαρά προβλήματα υγείας από τη γέννησή της",
+      "normalized_title": "«ΠΟΛΥ ΝΩΡΙΣ»: ΠΕΘΑΝΕ ΣΤΑ 22 ΤΗΣ Η MISS AUSTRIA, ΛΟΥΤΣΙΑ ΣΙΣΙΤΣ – ΕΔΙΝΕ ΜΑΧΗ ΜΕ ΣΟΒΑΡΑ ΠΡΟΒΛΗΜΑΤΑ ΥΓΕΙΑΣ ΑΠΟ ΤΗ ΓΕΝΝΗΣΗ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/greece/peitharxikes-poines-xadi-stous-4-astynomikous-kataggellei-i-oikogeneia-tis-kyriakis-griva/",
-        "https://www.in.gr/2026/09/08/world/kremlino-o-tramp-tilefonise-ston-poutin-meta-tin-episkepsi-ton-apestalmenon-tou-se-mosxa-kai-kievo/",
-        "https://www.in.gr/2026/09/08/sports/football/olympiakos-apo-tetarti-9-9-ta-eisitiria-gia-giagkelonia/"
+        "https://www.in.gr/2026/09/08/go-fun/poly-noris-pethane-sta-22-tis-i-miss-austria-loutsia-sisits-edine-maxi-me-sovara-provlimata-ygeias-apo-ti-gennisi-tis/",
+        "https://www.in.gr/2026/09/08/sports/football/gkatouzo-apo-to-nadir-me-tin-ethniki-italias-stin-koryfi-tis-serie-a-me-tin-latsio-vids/",
+        "https://www.in.gr/2026/09/08/greece/thriler-stin-ypothesi-tis-kinezas-metafrastrias-to-diavatirio-o-katastrofeas-eggrafon-kai-ta-nea-eyrimata/"
       ],
-      "seen_at_utc": "2026-09-08T14:51:13.240001+00:00"
+      "seen_at_utc": "2026-09-08T15:17:01.416977+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T14:51:13.240122+00:00"
+  "updated_at_utc": "2026-09-08T15:17:01.417118+00:00"
 }
