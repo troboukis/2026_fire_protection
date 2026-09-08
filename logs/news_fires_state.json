@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/foreign-policy/564445906/11i-septemvrioy-ixeran-gia-ton-toxiko-aera-170-000-selides-dimosiopoiei-o-mamntani/",
-      "title": "11η Σεπτεμβρίου: «Ηξεραν για τον τοξικό αέρα» – 170.000 σελίδες δημοσιοποιεί ο Μαμντάνι",
-      "normalized_title": "11Η ΣΕΠΤΕΜΒΡΙΟΥ: «ΗΞΕΡΑΝ ΓΙΑ ΤΟΝ ΤΟΞΙΚΟ ΑΕΡΑ» – 170.000 ΣΕΛΙΔΕΣ ΔΗΜΟΣΙΟΠΟΙΕΙ Ο ΜΑΜΝΤΑΝΙ",
+      "url": "https://www.kathimerini.gr/economy/564446158/eniaia-toyristiki-taytotita-synergasia-kai-ypodomes-apoteloyn-to-stoichima-gia-to-epomeno-toyristiko-vima-tis-thessalonikis/",
+      "title": "Ενιαία τουριστική ταυτότητα, συνεργασία και υποδομές αποτελούν το στοίχημα για το επόμενο τουριστικό βήμα της Θεσσαλονίκης",
+      "normalized_title": "ΕΝΙΑΙΑ ΤΟΥΡΙΣΤΙΚΗ ΤΑΥΤΟΤΗΤΑ, ΣΥΝΕΡΓΑΣΙΑ ΚΑΙ ΥΠΟΔΟΜΕΣ ΑΠΟΤΕΛΟΥΝ ΤΟ ΣΤΟΙΧΗΜΑ ΓΙΑ ΤΟ ΕΠΟΜΕΝΟ ΤΟΥΡΙΣΤΙΚΟ ΒΗΜΑ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/foreign-policy/564445906/11i-septemvrioy-ixeran-gia-ton-toxiko-aera-170-000-selides-dimosiopoiei-o-mamntani/",
-        "https://www.kathimerini.gr/world/564446032/soydan-toylachiston-13-nekroi-apo-epithesi-me-drone/"
+        "https://www.kathimerini.gr/economy/564446158/eniaia-toyristiki-taytotita-synergasia-kai-ypodomes-apoteloyn-to-stoichima-gia-to-epomeno-toyristiko-vima-tis-thessalonikis/",
+        "https://www.kathimerini.gr/eortologio/564422038/eortologio-poioi-giortazoyn-simera-9-septemvrioy/",
+        "https://www.kathimerini.gr/world/564446074/aigyptos-o-tafos-enos-vasilikoy-dikasti-tis-pemptis-dynasteias-vrethike-sti-sakara/"
       ],
-      "seen_at_utc": "2026-09-08T20:51:18.132042+00:00"
+      "seen_at_utc": "2026-09-08T21:17:07.221544+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,31 @@
       "seen_at_utc": "2026-09-08T20:51:18.132166+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1463213/aneto-3-2-toy-olympiakoy-kata-toy-voloy-mesa-sto-karaiskakis/",
-      "title": "Άνετο 3-2 του Ολυμπιακού κατά του Βόλου μέσα στο «Καραϊσκάκης»",
-      "normalized_title": "ΑΝΕΤΟ 3-2 ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΚΑΤΑ ΤΟΥ ΒΟΛΟΥ ΜΕΣΑ ΣΤΟ «ΚΑΡΑΙΣΚΑΚΗΣ»",
+      "url": "https://www.efsyn.gr/ellada/1463218/stratos-xiras-orkistikan-oi-protes-gynaikes-dea-stratonomoi-kai-eidikodynamitisses-eikones/",
+      "title": "Στρατός Ξηράς: Ορκίστηκαν οι πρώτες γυναίκες ΔΕΑ, στρατονόμοι και ειδικοδυναμίτισσες [εικόνες]",
+      "normalized_title": "ΣΤΡΑΤΟΣ ΞΗΡΑΣ: ΟΡΚΙΣΤΗΚΑΝ ΟΙ ΠΡΩΤΕΣ ΓΥΝΑΙΚΕΣ ΔΕΑ, ΣΤΡΑΤΟΝΟΜΟΙ ΚΑΙ ΕΙΔΙΚΟΔΥΝΑΜΙΤΙΣΣΕΣ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1463213/aneto-3-2-toy-olympiakoy-kata-toy-voloy-mesa-sto-karaiskakis/"
+        "https://www.efsyn.gr/ellada/1463218/stratos-xiras-orkistikan-oi-protes-gynaikes-dea-stratonomoi-kai-eidikodynamitisses-eikones/"
       ],
-      "seen_at_utc": "2026-09-08T20:51:18.132115+00:00"
+      "seen_at_utc": "2026-09-08T21:17:07.221647+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/world/perissoteres-apo-1-000-oi-ptiseis-pou-akyrothikan-sti-megali-vretania/",
-      "title": "Περισσότερες από 1.000 οι πτήσεις που ακυρώθηκαν στη Μεγάλη Βρετανία",
-      "normalized_title": "ΠΕΡΙΣΣΟΤΕΡΕΣ ΑΠΟ 1.000 ΟΙ ΠΤΗΣΕΙΣ ΠΟΥ ΑΚΥΡΩΘΗΚΑΝ ΣΤΗ ΜΕΓΑΛΗ ΒΡΕΤΑΝΙΑ",
+      "url": "https://www.in.gr/2026/09/09/world/gallia-kai-notia-korea-epidiokoun-na-synergastoun-gia-tin-asfaleia-ton-stenon-tou-ormouz/",
+      "title": "Γαλλία και Νότια Κορέα επιδιώκουν να συνεργαστούν για την ασφάλεια των Στενών του Ορμούζ",
+      "normalized_title": "ΓΑΛΛΙΑ ΚΑΙ ΝΟΤΙΑ ΚΟΡΕΑ ΕΠΙΔΙΩΚΟΥΝ ΝΑ ΣΥΝΕΡΓΑΣΤΟΥΝ ΓΙΑ ΤΗΝ ΑΣΦΑΛΕΙΑ ΤΩΝ ΣΤΕΝΩΝ ΤΟΥ ΟΡΜΟΥΖ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/world/perissoteres-apo-1-000-oi-ptiseis-pou-akyrothikan-sti-megali-vretania/",
-        "https://www.in.gr/2026/09/08/sports/football/olympiakos-volos-3-2-latin-parti-kai-meta-siesta/",
-        "https://www.in.gr/2026/09/08/world/nees-taraxes-stin-alvania-logo-tis-ependysis-kousner/",
-        "https://www.in.gr/2026/09/08/world/to-iran-kalei-ta-pliromata-ploion-se-mpaxrein-kai-kouveit-na-egkataleipsoun-ta-ploia-tous/",
-        "https://www.in.gr/2026/09/08/life/culture-live/i-penelope-krouz-kai-o-xavie-mpardem-gia-tin-politiki-tous-stasi/"
+        "https://www.in.gr/2026/09/09/world/gallia-kai-notia-korea-epidiokoun-na-synergastoun-gia-tin-asfaleia-ton-stenon-tou-ormouz/",
+        "https://www.in.gr/2026/09/09/sports/football/champions-league/ayti-einai-i-vathmologia-tis-league-phase-tou-champions-league-pic/",
+        "https://www.in.gr/2026/09/09/sports/football/champions-league/porto-mantsester-siti-0-2-aneti-niki-gia-tous-polites-me-ntopieta-tou-xaalant/",
+        "https://www.in.gr/2026/09/09/greece/giorti-simera-9-septemvriou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/09/09/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-tetarti-09-09-2026/",
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/me-gkirasi-i-ntortmount-agonia-gia-ton-karetsa/",
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/lil-mpetis-2-3-oi-ispanoi-ekanan-anatropi-me-sarotiko-ksekinima-sto-deytero-imixrono/",
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/real-madritis-inter-2-1-empape-kai-valverde-katharisan-gia-tous-merenxes/",
+        "https://www.in.gr/2026/09/08/sports/football/superbet-kypello-ellados-i-vathmologia-tis-league-phase-meta-ti-niki-tou-olympiakou-pic/"
       ],
-      "seen_at_utc": "2026-09-08T20:51:18.132085+00:00"
+      "seen_at_utc": "2026-09-08T21:17:07.221602+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T20:51:18.132241+00:00"
+  "updated_at_utc": "2026-09-08T21:17:07.221729+00:00"
 }
