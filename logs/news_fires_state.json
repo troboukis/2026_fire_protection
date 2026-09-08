@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564444847/sympaiktes-ton-dekemvrio-o-mesi-kai-o-kristiano-ronalnto/",
-      "title": "Συμπαίκτες τον Δεκέμβριο ο Μέσι και ο Κριστιάνο Ρονάλντο",
-      "normalized_title": "ΣΥΜΠΑΙΚΤΕΣ ΤΟΝ ΔΕΚΕΜΒΡΙΟ Ο ΜΕΣΙ ΚΑΙ Ο ΚΡΙΣΤΙΑΝΟ ΡΟΝΑΛΝΤΟ",
+      "url": "https://www.kathimerini.gr/economy/local/564444544/reimagine-tourism-in-greece-live-apo-ti-thessaloniki/",
+      "title": "Reimagine Tourism in Greece: Live από τη Θεσσαλονίκη",
+      "normalized_title": "REIMAGINE TOURISM IN GREECE: LIVE ΑΠΟ ΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564444847/sympaiktes-ton-dekemvrio-o-mesi-kai-o-kristiano-ronalnto/",
-        "https://www.kathimerini.gr/society/564444850/dolofonia-kyriakis-griva-sto-edolio-tesseris-astynomikoi-gia-thanatifora-ekthesi-ti-toys-apodidei-to-voyleyma/"
+        "https://www.kathimerini.gr/economy/local/564444544/reimagine-tourism-in-greece-live-apo-ti-thessaloniki/",
+        "https://www.kathimerini.gr/society/564444853/ileia-apati-me-thyma-87chroni-edose-11-000-eyro-cheri-me-cheri/",
+        "https://www.kathimerini.gr/economy/international/564444352/makrytero-kai-akrivotero-pleon-to-taxidi-toy-petrelaioy/",
+        "https://www.kathimerini.gr/world/564444820/haaretz-o-netaniachoy-gnorize-gia-epithesi-tis-chamas-prin-tis-7-oktovrioy-apolyto-psema-apanta/",
+        "https://www.kathimerini.gr/society/564444844/ekptoseis-se-aktoploika-eisitiria-gia-toys-anaplirotes-ekpaideytikoys/"
       ],
-      "seen_at_utc": "2026-09-08T08:30:02.878197+00:00"
+      "seen_at_utc": "2026-09-08T08:51:15.654238+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1263,48 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875537/seismos-44-rihter-sto-aitoliko/?utm_source=rss",
-      "title": "Σεισμός 4,4 Ρίχτερ στο Αιτωλικό, «δεν υπάρχει λόγος ανησυχίας» λέει ο Λέκκας",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4,4 ΡΙΧΤΕΡ ΣΤΟ ΑΙΤΩΛΙΚΟ, «ΔΕΝ ΥΠΑΡΧΕΙ ΛΟΓΟΣ ΑΝΗΣΥΧΙΑΣ» ΛΕΕΙ Ο ΛΕΚΚΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1875573/gunaika-epese-se-spilaio-vathous-pede-metron-sti-serifo-tin-apeglovise-i-purosvestiki/?utm_source=rss",
+      "title": "Γυναίκα έπεσε σε σπήλαιο βάθους πέντε μέτρων στη Σέριφο, την απεγκλώβισε η πυροσβεστική",
+      "normalized_title": "ΓΥΝΑΙΚΑ ΕΠΕΣΕ ΣΕ ΣΠΗΛΑΙΟ ΒΑΘΟΥΣ ΠΕΝΤΕ ΜΕΤΡΩΝ ΣΤΗ ΣΕΡΙΦΟ, ΤΗΝ ΑΠΕΓΚΛΩΒΙΣΕ Η ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875537/seismos-44-rihter-sto-aitoliko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875534/fotia-ston-aeto-karustou-minuma-apo-to-112-gia-etoimotita/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875573/gunaika-epese-se-spilaio-vathous-pede-metron-sti-serifo-tin-apeglovise-i-purosvestiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875572/o-dsa-prosfeugei-sti-dikaiosuni-gia-tis-adeies-ton-mi-kratikon-nomikon-sholon-zita-summorfosi-me-tis-apofaseis-tou-ste/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875570/sta-dikastiria-oi-goneis-tou-nekrou-morou-sti-kupseli-kai-o-afganos-video-apo-ti-metagogi-tous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875567/trohaio-stin-attiki-odo-pros-aerodromio-sto-upsos-tis-fulis-kleisti-i-dexia-lorida/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875563/heiropedes-se-duo-tourkous-apo-to-elliniko-fbi-itan-meli-eglimatikon-organoseon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875561/anaplirotes-ekpaideutikoi-ekptoseis-sta-aktoploika-eisitiria-gia-ti-metavasi-stin-periohi-topothetisis-tous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875553/sto-edolio-tesseris-astunomikoi-gia-ti-dolofonia-tis-kuriakis-griva-afisan-avoithito-ena-prosopo-pou-eihan-stin/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T08:17:24.251633+00:00"
+      "seen_at_utc": "2026-09-08T08:51:15.654350+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1462686/epithesi-me-molotof-kai-petra-se-foyrno-tis-kallitheas/",
-      "title": "Επίθεση με μολότοφ και πέτρα σε φούρνο της Καλλιθέας",
-      "normalized_title": "ΕΠΙΘΕΣΗ ΜΕ ΜΟΛΟΤΟΦ ΚΑΙ ΠΕΤΡΑ ΣΕ ΦΟΥΡΝΟ ΤΗΣ ΚΑΛΛΙΘΕΑΣ",
+      "url": "https://www.efsyn.gr/stiles/1462622/i-hameni-goiteia-tis-entaxis-stin-e-e/",
+      "title": "Η χαμένη γοητεία της ένταξης στην Ε.Ε.",
+      "normalized_title": "Η ΧΑΜΕΝΗ ΓΟΗΤΕΙΑ ΤΗΣ ΕΝΤΑΞΗΣ ΣΤΗΝ Ε.Ε.",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1462686/epithesi-me-molotof-kai-petra-se-foyrno-tis-kallitheas/",
-        "https://www.efsyn.gr/kosmos/1462673/vomva-tis-isralinis-haaretz-gia-netaniahoy-gnorize-gia-tin-epithesi-tis-hamas-tin-7i-oktovrioy-kai-den-enimerose/"
+        "https://www.efsyn.gr/stiles/1462622/i-hameni-goiteia-tis-entaxis-stin-e-e/",
+        "https://www.efsyn.gr/ellada/1462687/thessaloniki-i-stigmi-poy-pyrosvestes-apegklovizoyn-tin-13hroni-poy-epese-apo-5o-orofo-xenodoheioy-vinteo/",
+        "https://www.efsyn.gr/politiki/1462694/papaioannoy-gia-katastrofes-se-foititikes-esties-toy-apth-den-einai-politiki-paremvasi-einai-vandalismos/",
+        "https://www.efsyn.gr/ellada/1462691/gynaikoktonia-kyriakis-griva-sto-skamni-kai-oi-tesseris-astynomikoi-gia-kakoyrgima/",
+        "https://www.efsyn.gr/kosmos/1462690/e-e-sokaristikes-oi-eikones-apo-tin-kideia-toy-mlantits-vathia-lypiri-i-paroysia-servon-axiomatoyhon/"
       ],
-      "seen_at_utc": "2026-09-08T08:30:02.878295+00:00"
+      "seen_at_utc": "2026-09-08T08:51:15.654310+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/greece/ekptoseis-se-aktoploika-eisitiria-gia-ti-metavasi-anapliroton-ekpaideytikon-stin-perioxi-topothetisis-tous/",
-      "title": "Εκπτώσεις σε ακτοπλοϊκά εισιτήρια για τη μετάβαση αναπληρωτών εκπαιδευτικών στην περιοχή τοποθέτησής τους",
-      "normalized_title": "ΕΚΠΤΩΣΕΙΣ ΣΕ ΑΚΤΟΠΛΟΙΚΑ ΕΙΣΙΤΗΡΙΑ ΓΙΑ ΤΗ ΜΕΤΑΒΑΣΗ ΑΝΑΠΛΗΡΩΤΩΝ ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΣΤΗΝ ΠΕΡΙΟΧΗ ΤΟΠΟΘΕΤΗΣΗΣ ΤΟΥΣ",
+      "url": "https://www.in.gr/2026/09/08/apopsi/me-aformi-tin-ypothesi-tis-kypselis-pos-prepei-na-metarrythmistei-i-paidiki-prostasia-meros-a%ce%84/",
+      "title": "Με αφορμή την υπόθεση της Κυψέλης: Πώς πρέπει να μεταρρυθμιστεί η παιδική προστασία; (Μέρος Α΄)",
+      "normalized_title": "ΜΕ ΑΦΟΡΜΗ ΤΗΝ ΥΠΟΘΕΣΗ ΤΗΣ ΚΥΨΕΛΗΣ: ΠΩΣ ΠΡΕΠΕΙ ΝΑ ΜΕΤΑΡΡΥΘΜΙΣΤΕΙ Η ΠΑΙΔΙΚΗ ΠΡΟΣΤΑΣΙΑ; (ΜΕΡΟΣ Α΄)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/greece/ekptoseis-se-aktoploika-eisitiria-gia-ti-metavasi-anapliroton-ekpaideytikon-stin-perioxi-topothetisis-tous/",
-        "https://www.in.gr/2026/09/08/greece/ios-dytikou-neilou-kai-anoigma-sxoleion-prepei-na-anisyxoume-ti-leei-o-proedros-tou-eody/"
+        "https://www.in.gr/2026/09/08/apopsi/me-aformi-tin-ypothesi-tis-kypselis-pos-prepei-na-metarrythmistei-i-paidiki-prostasia-meros-a%ce%84/",
+        "https://www.in.gr/2026/09/08/greece/serifos-apegklovismos-gynaikas-pou-epese-apo-ypsos-se-spilaio/",
+        "https://www.in.gr/2026/09/08/greece/kyriaki-griva-se-diki-gia-kakourgima-parapempontai-kai-oi-tesseris-astynomikoi/",
+        "https://www.in.gr/2026/09/08/greece/diki-gia-ta-tempi-mas-ferane-ton-mpampa-se-ena-kleisto-feretro-den-ton-apoxairetisame-opos-eprepe/",
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/aek-to-plano-tou-nikolits-gia-ti-lintser/",
+        "https://www.in.gr/2026/09/08/world/alli-mia-klopi-ergon-texnis-diarriktes-arpaksan-treis-pinakes-apo-to-mouseio-renouar-sti-galliki-riviera/",
+        "https://www.in.gr/2026/09/08/life/woman/epstain-pos-allaze-tin-emfanisi-ton-koritsion-gia-na-deixnoun-mikrotera-oi-odigies-ston-kommoti-ton-star/"
       ],
-      "seen_at_utc": "2026-09-08T08:30:02.878257+00:00"
+      "seen_at_utc": "2026-09-08T08:51:15.654274+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T08:30:02.878371+00:00"
+  "updated_at_utc": "2026-09-08T08:51:15.654419+00:00"
 }
