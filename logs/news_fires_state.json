@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564445993/kypseli-profylakisteoi-oi-treis-katigoroymenoi-ti-ypostirixe-o-26chronos-afganos/",
-      "title": "Κυψέλη: Προφυλακιστέοι οι τρεις κατηγορούμενοι – Τι υποστήριξε ο 26χρονος Αφγανός",
-      "normalized_title": "ΚΥΨΕΛΗ: ΠΡΟΦΥΛΑΚΙΣΤΕΟΙ ΟΙ ΤΡΕΙΣ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ – ΤΙ ΥΠΟΣΤΗΡΙΞΕ Ο 26ΧΡΟΝΟΣ ΑΦΓΑΝΟΣ",
+      "url": "https://www.kathimerini.gr/world/564445987/ypothesi-lintsei-klansi-o-synigoros-tis-zita-proedriki-chari-apo-ton-ntonalnt-tramp/",
+      "title": "Υπόθεση Λίντσεϊ Κλάνσι: Ο συνήγορός της ζητά προεδρική χάρη από τον Ντόναλντ Τραμπ",
+      "normalized_title": "ΥΠΟΘΕΣΗ ΛΙΝΤΣΕΙ ΚΛΑΝΣΙ: Ο ΣΥΝΗΓΟΡΟΣ ΤΗΣ ΖΗΤΑ ΠΡΟΕΔΡΙΚΗ ΧΑΡΗ ΑΠΟ ΤΟΝ ΝΤΟΝΑΛΝΤ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564445993/kypseli-profylakisteoi-oi-treis-katigoroymenoi-ti-ypostirixe-o-26chronos-afganos/",
-        "https://www.kathimerini.gr/opinion/interviews/564443902/piso-apo-kathe-kako-paidi-yparchei-mia-olokliri-omada/"
+        "https://www.kathimerini.gr/world/564445987/ypothesi-lintsei-klansi-o-synigoros-tis-zita-proedriki-chari-apo-ton-ntonalnt-tramp/",
+        "https://www.kathimerini.gr/k/k-magazine/564438811/enas-kafes-me-tin-niko-a-manti/",
+        "https://www.kathimerini.gr/visual/infographics/564443920/nea-kyttara-gia-ta-skoypidia/",
+        "https://www.kathimerini.gr/society/reportaz/564443905/omerta-gyro-apo-ti-via-ton-anilikon/"
       ],
-      "seen_at_utc": "2026-09-08T17:30:01.579948+00:00"
+      "seen_at_utc": "2026-09-08T17:51:13.162276+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1272,26 @@
       "seen_at_utc": "2026-09-08T17:30:01.580081+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463121/kypseli-profylakisteoi-kai-oi-treis-katigoroymenoi-oi-dyo-gia-dolofonia-toy-vrefoys/",
-      "title": "Κυψέλη: Προφυλακιστέοι και οι τρεις κατηγορούμενοι – Οι δύο για δολοφονία του βρέφους",
-      "normalized_title": "ΚΥΨΕΛΗ: ΠΡΟΦΥΛΑΚΙΣΤΕΟΙ ΚΑΙ ΟΙ ΤΡΕΙΣ ΚΑΤΗΓΟΡΟΥΜΕΝΟΙ – ΟΙ ΔΥΟ ΓΙΑ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΒΡΕΦΟΥΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1463115/hrysi-mpala-oles-oi-ypopsifiotites-gia-ta-vraveia-toy-france-football-2026-xana-ypopsifios-o-mesi/",
+      "title": "«Χρυσή Μπάλα» – Όλες οι υποψηφιότητες για τα βραβεία του France Football 2026 – Ξανά υποψήφιος ο Μέσι",
+      "normalized_title": "«ΧΡΥΣΗ ΜΠΑΛΑ» – ΟΛΕΣ ΟΙ ΥΠΟΨΗΦΙΟΤΗΤΕΣ ΓΙΑ ΤΑ ΒΡΑΒΕΙΑ ΤΟΥ FRANCE FOOTBALL 2026 – ΞΑΝΑ ΥΠΟΨΗΦΙΟΣ Ο ΜΕΣΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463121/kypseli-profylakisteoi-kai-oi-treis-katigoroymenoi-oi-dyo-gia-dolofonia-toy-vrefoys/",
-        "https://www.efsyn.gr/kosmos/1463110/iran-katarrifthikan-ypovryhio-kai-enaerio-drone-ton-ipa-mesa-kai-pano-sta-stena-toy-ormoyz/",
-        "https://www.efsyn.gr/politiki/1463108/georgiadis-katantia-i-aitisi-toy-polaki-gia-anasyrsi-tis-dikografias-a-re-paylo-krima/"
+        "https://www.efsyn.gr/athlitismos/1463115/hrysi-mpala-oles-oi-ypopsifiotites-gia-ta-vraveia-toy-france-football-2026-xana-ypopsifios-o-mesi/",
+        "https://www.efsyn.gr/tehnes/1463129/frenzee-akoyste-to-jack-of-all-trades-to-deytero-single-apo-to-runnin-amok/"
       ],
-      "seen_at_utc": "2026-09-08T17:30:01.580046+00:00"
+      "seen_at_utc": "2026-09-08T17:51:13.162397+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/greece/patra-efodos-tis-astynomias-se-nyxterino-kentro-synelifthi-enas-andras-oplismenos-me-gemato-oplo-kai-narkotika/",
-      "title": "Πάτρα: Έφοδος της Αστυνομίας σε νυχτερινό κέντρο – Συνελήφθη ένας άνδρας οπλισμένος με γεμάτο όπλο και ναρκωτικά",
-      "normalized_title": "ΠΑΤΡΑ: ΕΦΟΔΟΣ ΤΗΣ ΑΣΤΥΝΟΜΙΑΣ ΣΕ ΝΥΧΤΕΡΙΝΟ ΚΕΝΤΡΟ – ΣΥΝΕΛΗΦΘΗ ΕΝΑΣ ΑΝΔΡΑΣ ΟΠΛΙΣΜΕΝΟΣ ΜΕ ΓΕΜΑΤΟ ΟΠΛΟ ΚΑΙ ΝΑΡΚΩΤΙΚΑ",
+      "url": "https://www.in.gr/2026/09/08/world/i-lintsei-klansi-pou-katigoreitai-gia-ti-dolofonia-ton-trion-paidion-tis-zitise-apo-ton-tramp-na-tis-aponeimei-xari/",
+      "title": "Η Λίντσεϊ Κλάνσι που κατηγορείται για τη δολοφονία των τριών παιδιών της ζήτησε από τον Τραμπ να της απονείμει χάρη",
+      "normalized_title": "Η ΛΙΝΤΣΕΙ ΚΛΑΝΣΙ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΩΝ ΤΡΙΩΝ ΠΑΙΔΙΩΝ ΤΗΣ ΖΗΤΗΣΕ ΑΠΟ ΤΟΝ ΤΡΑΜΠ ΝΑ ΤΗΣ ΑΠΟΝΕΙΜΕΙ ΧΑΡΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/greece/patra-efodos-tis-astynomias-se-nyxterino-kentro-synelifthi-enas-andras-oplismenos-me-gemato-oplo-kai-narkotika/",
-        "https://www.in.gr/2026/09/08/sports/football/champions-league/tromero-faoul-tou-marin-kai-1-0-gia-tin-aek-vid/",
-        "https://www.in.gr/2026/09/08/sports/on-field/o-makalister-esteile-minyma-stin-liverpoul/",
-        "https://www.in.gr/2026/09/08/politics/aftodioikisi/doukas-leme-oxi-sti-xreokopia-ton-dimon/"
+        "https://www.in.gr/2026/09/08/world/i-lintsei-klansi-pou-katigoreitai-gia-ti-dolofonia-ton-trion-paidion-tis-zitise-apo-ton-tramp-na-tis-aponeimei-xari/",
+        "https://www.in.gr/2026/09/08/stories/i-riana-einai-o-diavolos-i-skoteini-diadromi-tis-gynaikas-pou-thelise-na-gazosei-thanasima-ti-star/",
+        "https://www.in.gr/2026/09/08/world/koino-metopo-gallias-vretanias-kai-kanada-apenanti-sto-israil-gia-ti-lysi-ton-dyo-kraton/"
       ],
-      "seen_at_utc": "2026-09-08T17:30:01.580013+00:00"
+      "seen_at_utc": "2026-09-08T17:51:13.162344+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T17:30:01.580146+00:00"
+  "updated_at_utc": "2026-09-08T17:51:13.162494+00:00"
 }
