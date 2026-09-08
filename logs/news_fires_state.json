@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564440758/ligi-apo-tin-energeia-ton-pulp-sti-skini/",
-      "title": "Λίγη από την ενέργεια των Pulp στη σκηνή",
-      "normalized_title": "ΛΙΓΗ ΑΠΟ ΤΗΝ ΕΝΕΡΓΕΙΑ ΤΩΝ PULP ΣΤΗ ΣΚΗΝΗ",
+      "url": "https://www.kathimerini.gr/society/564445975/o-dsa-prosfeygei-kata-tis-adeiodotisis-ton-mi-kratikon-nomikon-scholon/",
+      "title": "Ο ΔΣΑ προσφεύγει κατά της αδειοδότησης των μη κρατικών Νομικών Σχολών",
+      "normalized_title": "Ο ΔΣΑ ΠΡΟΣΦΕΥΓΕΙ ΚΑΤΑ ΤΗΣ ΑΔΕΙΟΔΟΤΗΣΗΣ ΤΩΝ ΜΗ ΚΡΑΤΙΚΩΝ ΝΟΜΙΚΩΝ ΣΧΟΛΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564440758/ligi-apo-tin-energeia-ton-pulp-sti-skini/",
-        "https://www.kathimerini.gr/society/564445936/allou-fun-park-titloi-teloys-epeita-apo-23-chronia-eikones/"
+        "https://www.kathimerini.gr/society/564445975/o-dsa-prosfeygei-kata-tis-adeiodotisis-ton-mi-kratikon-nomikon-scholon/",
+        "https://www.kathimerini.gr/economy/564440380/h-forologiki-katoikia-stin-ellada-i-sto-exoteriko/"
       ],
-      "seen_at_utc": "2026-09-08T19:17:07.757452+00:00"
+      "seen_at_utc": "2026-09-08T19:30:01.217079+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875869/pethane-o-proin-proedros-tis-gsee-giorgos-rautopoulos-sullupitiria-apo-ti-sunomospondia-kai-to-pasok/?utm_source=rss",
-      "title": "Πέθανε ο πρώην πρόεδρος της ΓΣΕΕ, Γιώργος Ραυτόπουλος - Συλλυπητήρια από τη Συνομοσπονδία και το ΠΑΣΟΚ",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΠΡΩΗΝ ΠΡΟΕΔΡΟΣ ΤΗΣ ΓΣΕΕ, ΓΙΩΡΓΟΣ ΡΑΥΤΟΠΟΥΛΟΣ - ΣΥΛΛΥΠΗΤΗΡΙΑ ΑΠΟ ΤΗ ΣΥΝΟΜΟΣΠΟΝΔΙΑ ΚΑΙ ΤΟ ΠΑΣΟΚ",
+      "url": "https://www.protothema.gr/greece/article/1875882/oi-tuheroi-arithmoi-gia-ta-pano-apo-7-ekat-euro-sto-tzoker/?utm_source=rss",
+      "title": "Οι τυχεροί αριθμοί για τα πάνω από 7 εκατ. ευρώ στο Τζόκερ",
+      "normalized_title": "ΟΙ ΤΥΧΕΡΟΙ ΑΡΙΘΜΟΙ ΓΙΑ ΤΑ ΠΑΝΩ ΑΠΟ 7 ΕΚΑΤ. ΕΥΡΩ ΣΤΟ ΤΖΟΚΕΡ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875869/pethane-o-proin-proedros-tis-gsee-giorgos-rautopoulos-sullupitiria-apo-ti-sunomospondia-kai-to-pasok/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875867/haos-se-aerodromia-tis-vretanias-me-pano-apo-600-ptiseis-pou-akurothikan-logo-vlavis-stin-enaeria-kukloforia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875882/oi-tuheroi-arithmoi-gia-ta-pano-apo-7-ekat-euro-sto-tzoker/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T19:17:07.757591+00:00"
+      "seen_at_utc": "2026-09-08T19:30:01.217183+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463147/kypseli-oi-marathonies-apologies-ton-katigoroymenon-to-moro-pethane-apo-pathologika-aitia-epemeinan/",
-      "title": "Θάνατος βρέφους στην Κυψέλη: Οι μαραθώνιες απολογίες των κατηγορουμένων – «Το μωρό πέθανε από παθολογικά αίτια»",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΒΡΕΦΟΥΣ ΣΤΗΝ ΚΥΨΕΛΗ: ΟΙ ΜΑΡΑΘΩΝΙΕΣ ΑΠΟΛΟΓΙΕΣ ΤΩΝ ΚΑΤΗΓΟΡΟΥΜΕΝΩΝ – «ΤΟ ΜΩΡΟ ΠΕΘΑΝΕ ΑΠΟ ΠΑΘΟΛΟΓΙΚΑ ΑΙΤΙΑ»",
+      "url": "https://www.efsyn.gr/athlitismos/1463178/sygkinisi-sto-karaiskakis-me-fanela-toy-el-kaampi-stin-paroysiasi-o-fortoynis/",
+      "title": "Συγκίνηση στο «Καραϊσκάκης»: Με φανέλα του Ελ Κααμπί στην παρουσίαση ο Φορτούνης",
+      "normalized_title": "ΣΥΓΚΙΝΗΣΗ ΣΤΟ «ΚΑΡΑΙΣΚΑΚΗΣ»: ΜΕ ΦΑΝΕΛΑ ΤΟΥ ΕΛ ΚΑΑΜΠΙ ΣΤΗΝ ΠΑΡΟΥΣΙΑΣΗ Ο ΦΟΡΤΟΥΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463147/kypseli-oi-marathonies-apologies-ton-katigoroymenon-to-moro-pethane-apo-pathologika-aitia-epemeinan/"
+        "https://www.efsyn.gr/athlitismos/1463178/sygkinisi-sto-karaiskakis-me-fanela-toy-el-kaampi-stin-paroysiasi-o-fortoynis/",
+        "https://www.efsyn.gr/kosmos/1463177/ta-emirata-arnithikan-na-sholiasoyn-to-dimosieyma-oti-eihan-eidopoiisei-ton-netaniahoy-prin-tis-7-oktovrioy/"
       ],
-      "seen_at_utc": "2026-09-08T19:17:07.757557+00:00"
+      "seen_at_utc": "2026-09-08T19:30:01.217166+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/world/ipa-apokalyptika-eggrafa-gia-tin-11i-septemvriou-ti-apekrypsan-oi-arxes-gia-ton-toksiko-aera/",
-      "title": "Αποκαλυπτικά έγγραφα για την 11η Σεπτεμβρίου - Τι απέκρυψαν οι Αρχές για τον τοξικό αέρα",
-      "normalized_title": "ΑΠΟΚΑΛΥΠΤΙΚΑ ΕΓΓΡΑΦΑ ΓΙΑ ΤΗΝ 11Η ΣΕΠΤΕΜΒΡΙΟΥ - ΤΙ ΑΠΕΚΡΥΨΑΝ ΟΙ ΑΡΧΕΣ ΓΙΑ ΤΟΝ ΤΟΞΙΚΟ ΑΕΡΑ",
+      "url": "https://www.in.gr/2026/09/08/sports/football/champions-league/nikolits-poly-orimi-emfanisi-synexizoume/",
+      "title": "Νίκολιτς: «Πολύ ώριμη εμφάνιση, συνεχίζουμε…»",
+      "normalized_title": "ΝΙΚΟΛΙΤΣ: «ΠΟΛΥ ΩΡΙΜΗ ΕΜΦΑΝΙΣΗ, ΣΥΝΕΧΙΖΟΥΜΕ…»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/world/ipa-apokalyptika-eggrafa-gia-tin-11i-septemvriou-ti-apekrypsan-oi-arxes-gia-ton-toksiko-aera/",
-        "https://www.in.gr/2026/09/08/greece/sta-skaria-neo-112-gia-tin-prostasia-ilikiomenon-apo-apates/",
-        "https://www.in.gr/matchcenter/6106272/",
-        "https://www.in.gr/matchcenter/6106286/",
-        "https://www.in.gr/matchcenter/6106311/",
-        "https://www.in.gr/matchcenter/6106242/"
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/nikolits-poly-orimi-emfanisi-synexizoume/",
+        "https://www.in.gr/2026/09/08/politics/pethane-o-giorgos-raytopoulos-idrytiko-stelexos-tou-pasok-kai-proin-proedros-tis-gsee/"
       ],
-      "seen_at_utc": "2026-09-08T19:17:07.757506+00:00"
+      "seen_at_utc": "2026-09-08T19:30:01.217126+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T19:17:07.757680+00:00"
+  "updated_at_utc": "2026-09-08T19:30:01.217255+00:00"
 }
