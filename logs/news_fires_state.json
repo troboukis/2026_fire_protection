@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564445975/o-dsa-prosfeygei-kata-tis-adeiodotisis-ton-mi-kratikon-nomikon-scholon/",
-      "title": "Ο ΔΣΑ προσφεύγει κατά της αδειοδότησης των μη κρατικών Νομικών Σχολών",
-      "normalized_title": "Ο ΔΣΑ ΠΡΟΣΦΕΥΓΕΙ ΚΑΤΑ ΤΗΣ ΑΔΕΙΟΔΟΤΗΣΗΣ ΤΩΝ ΜΗ ΚΡΑΤΙΚΩΝ ΝΟΜΙΚΩΝ ΣΧΟΛΩΝ",
+      "url": "https://www.kathimerini.gr/world/564446089/o-tramp-anartise-montarismeno-vinteo-me-ton-vasilia-karolo/",
+      "title": "Ο Τραμπ ανάρτησε μονταρισμένο βίντεο με τον βασιλιά Κάρολο",
+      "normalized_title": "Ο ΤΡΑΜΠ ΑΝΑΡΤΗΣΕ ΜΟΝΤΑΡΙΣΜΕΝΟ ΒΙΝΤΕΟ ΜΕ ΤΟΝ ΒΑΣΙΛΙΑ ΚΑΡΟΛΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564445975/o-dsa-prosfeygei-kata-tis-adeiodotisis-ton-mi-kratikon-nomikon-scholon/",
-        "https://www.kathimerini.gr/economy/564440380/h-forologiki-katoikia-stin-ellada-i-sto-exoteriko/"
+        "https://www.kathimerini.gr/world/564446089/o-tramp-anartise-montarismeno-vinteo-me-ton-vasilia-karolo/",
+        "https://www.kathimerini.gr/athletics/football/564446131/matia-ermitika-kleista-6/",
+        "https://www.kathimerini.gr/world/564446086/o-loni-mpants-apochorei-apo-to-smithsonian-meta-apo-mines-kontras-me-ton-tramp/"
       ],
-      "seen_at_utc": "2026-09-08T19:30:01.217079+00:00"
+      "seen_at_utc": "2026-09-08T19:51:17.230184+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,25 +1270,31 @@
       "seen_at_utc": "2026-09-08T19:30:01.217183+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1463178/sygkinisi-sto-karaiskakis-me-fanela-toy-el-kaampi-stin-paroysiasi-o-fortoynis/",
-      "title": "Συγκίνηση στο «Καραϊσκάκης»: Με φανέλα του Ελ Κααμπί στην παρουσίαση ο Φορτούνης",
-      "normalized_title": "ΣΥΓΚΙΝΗΣΗ ΣΤΟ «ΚΑΡΑΙΣΚΑΚΗΣ»: ΜΕ ΦΑΝΕΛΑ ΤΟΥ ΕΛ ΚΑΑΜΠΙ ΣΤΗΝ ΠΑΡΟΥΣΙΑΣΗ Ο ΦΟΡΤΟΥΝΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1463192/lintsei-klansi-o-synigoros-tis-36hronis-poy-katigoreitai-oti-dolofonise-ta-tria-paidia-tis-zita-hari-apo-ton-tramp/",
+      "title": "Λίντσεϊ Κλάνσι: Ο συνήγορος της 36χρονης που κατηγορείται ότι δολοφόνησε τα τρία παιδιά της ζητά χάρη από τον Τραμπ",
+      "normalized_title": "ΛΙΝΤΣΕΙ ΚΛΑΝΣΙ: Ο ΣΥΝΗΓΟΡΟΣ ΤΗΣ 36ΧΡΟΝΗΣ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΟΤΙ ΔΟΛΟΦΟΝΗΣΕ ΤΑ ΤΡΙΑ ΠΑΙΔΙΑ ΤΗΣ ΖΗΤΑ ΧΑΡΗ ΑΠΟ ΤΟΝ ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1463178/sygkinisi-sto-karaiskakis-me-fanela-toy-el-kaampi-stin-paroysiasi-o-fortoynis/",
-        "https://www.efsyn.gr/kosmos/1463177/ta-emirata-arnithikan-na-sholiasoyn-to-dimosieyma-oti-eihan-eidopoiisei-ton-netaniahoy-prin-tis-7-oktovrioy/"
+        "https://www.efsyn.gr/kosmos/1463192/lintsei-klansi-o-synigoros-tis-36hronis-poy-katigoreitai-oti-dolofonise-ta-tria-paidia-tis-zita-hari-apo-ton-tramp/",
+        "https://www.efsyn.gr/kosmos/1463176/i-krisi-sti-mesi-anatoli-epekteinetai-anaflexi-anamesa-se-hoythi-kai-saoydiki-aravia/",
+        "https://www.efsyn.gr/ellada/1463180/varka-me-40-metanastes-entopistike-stin-kriti-diasothikan-apo-to-limeniko/"
       ],
-      "seen_at_utc": "2026-09-08T19:30:01.217166+00:00"
+      "seen_at_utc": "2026-09-08T19:51:17.230276+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/sports/football/champions-league/nikolits-poly-orimi-emfanisi-synexizoume/",
-      "title": "Νίκολιτς: «Πολύ ώριμη εμφάνιση, συνεχίζουμε…»",
-      "normalized_title": "ΝΙΚΟΛΙΤΣ: «ΠΟΛΥ ΩΡΙΜΗ ΕΜΦΑΝΙΣΗ, ΣΥΝΕΧΙΖΟΥΜΕ…»",
+      "url": "https://www.in.gr/2026/09/08/sports/football/oi-paiktes-tou-olympiakou-esteilan-minyma-stiriksis-ston-agioump-el-kaampi/",
+      "title": "Οι παίκτες του Ολυμπιακού έστειλαν μήνυμα στήριξης στον Αγιούμπ Ελ Κααμπί",
+      "normalized_title": "ΟΙ ΠΑΙΚΤΕΣ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ ΕΣΤΕΙΛΑΝ ΜΗΝΥΜΑ ΣΤΗΡΙΞΗΣ ΣΤΟΝ ΑΓΙΟΥΜΠ ΕΛ ΚΑΑΜΠΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/sports/football/champions-league/nikolits-poly-orimi-emfanisi-synexizoume/",
-        "https://www.in.gr/2026/09/08/politics/pethane-o-giorgos-raytopoulos-idrytiko-stelexos-tou-pasok-kai-proin-proedros-tis-gsee/"
+        "https://www.in.gr/2026/09/08/sports/football/oi-paiktes-tou-olympiakou-esteilan-minyma-stiriksis-ston-agioump-el-kaampi/",
+        "https://www.in.gr/2026/09/08/world/ekrikseis-sto-nisi-xargk-tou-iran-tha-pliksoume-amerikanikes-vaseis-an-xtypithoun-deksamenoploia-leei-i-texerani/",
+        "https://www.in.gr/2026/09/08/politics/politiki-grammateia/koutentakis-sti-sfaira-tis-anaptyksiakis-metafysikis-oi-desmeyseis-mitsotaki-apolytos-kostologimeno-to-programma-tis-elas/",
+        "https://www.in.gr/2026/09/08/world/aspida-tou-axillea-i-sygxysi-me-ton-pigaio-kodika-kai-oi-dieykriniseis-tou-israil/",
+        "https://www.in.gr/2026/09/08/politics/yiothetei-tin-protasi-tis-elas-gia-periousiologio-i-nd-i-apantisi-einai-nai/",
+        "https://www.in.gr/2026/09/08/life/new-york-times-oi-25-fotografies-pou-allaksan-gia-panta-ti-moda-ta-pio-epidrastika-klik-tou-aiona/",
+        "https://www.in.gr/2026/09/08/greece/i-einap-kataggellei-epikindynes-kai-aparadektes-synthikes-stin-psyxiatriki-kliniki-tou-sotiria/"
       ],
-      "seen_at_utc": "2026-09-08T19:30:01.217126+00:00"
+      "seen_at_utc": "2026-09-08T19:51:17.230235+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T19:30:01.217255+00:00"
+  "updated_at_utc": "2026-09-08T19:51:17.230392+00:00"
 }
