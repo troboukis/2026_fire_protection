@@ -1,21 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564444472/kanadas-se-ischy-oi-antapodotikoi-dasmoi-se-amerikanika-proionta-en-meso-fovon-gia-peraitero-klimakosi/",
-      "title": "Καναδάς: Σε ισχύ οι ανταποδοτικοί δασμοί σε αμερικανικά προϊόντα -Εν μέσω φόβων για περαιτέρω κλιμάκωση",
-      "normalized_title": "ΚΑΝΑΔΑΣ: ΣΕ ΙΣΧΥ ΟΙ ΑΝΤΑΠΟΔΟΤΙΚΟΙ ΔΑΣΜΟΙ ΣΕ ΑΜΕΡΙΚΑΝΙΚΑ ΠΡΟΙΟΝΤΑ -ΕΝ ΜΕΣΩ ΦΟΒΩΝ ΓΙΑ ΠΕΡΑΙΤΕΡΩ ΚΛΙΜΑΚΩΣΗ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564444355/oi-proeidopoiiseis-toy-g-stoyrnara/",
+      "title": "Οι προειδοποιήσεις του Γ. Στουρνάρα",
+      "normalized_title": "ΟΙ ΠΡΟΕΙΔΟΠΟΙΗΣΕΙΣ ΤΟΥ Γ. ΣΤΟΥΡΝΑΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564444472/kanadas-se-ischy-oi-antapodotikoi-dasmoi-se-amerikanika-proionta-en-meso-fovon-gia-peraitero-klimakosi/",
-        "https://www.kathimerini.gr/society/564444457/ti-allazei-stin-ekdosi-ton-pinakidon-kykloforias-se-diavoyleysi-to-neo-systima/",
-        "https://www.kathimerini.gr/politics/564443878/entos-kai-ektos-ligo-prin-apo-ti-lysi-gia-ti-moni-sina/",
-        "https://www.kathimerini.gr/society/564444463/pyrkagia-se-agrotodasiki-ektasi-sto-platy-messinias/",
-        "https://www.kathimerini.gr/society/564444451/kairos-eos-35-vathmoys-simera-poly-ypsilos-kindynos-pyrkagias-kai-red-code/",
-        "https://www.kathimerini.gr/politics/parties/564443887/rogmes-sti-syllogiki-igesia-toy-syriza/",
-        "https://www.kathimerini.gr/world/564444406/stena-toy-ormoyz-meiosi-kinisis-en-meso-ekaterothen-apeilon/",
-        "https://www.kathimerini.gr/world/564444433/polemos-stin-oykrania-apoklimakosi-ton-cheimona-vlepei-o-zelenski/",
-        "https://www.kathimerini.gr/istoria/564443734/san-simera-8-septemvrioy-1888-entopizetai-to-deytero-thyma-toy-tzak-toy-anterovgalti/"
+        "https://www.kathimerini.gr/economy/diktis/564444355/oi-proeidopoiiseis-toy-g-stoyrnara/",
+        "https://www.kathimerini.gr/world/564444523/apergia-ston-pyrgo-toy-aifel-apomakrynan-ergazomenes-logo-thriskeytikis-episkepsis/",
+        "https://www.kathimerini.gr/world/564444514/o-neos-iroas-toy-diadiktyoy-i-stigmi-poy-agnostos-sozei-nipio-klasmata-protoy-to-chtypisei-aytokinito/",
+        "https://www.kathimerini.gr/world/564444469/yemeni-antepithesi-ton-kyvernitikon-kata-ton-choythi-me-stocho-tin-proteyoysa/",
+        "https://www.kathimerini.gr/world/564444490/maiami-anaktithikan-ta-mayra-koytia-toy-aeroskafoys-tis-amazon-poy-prosekroyse-se-ochimata/",
+        "https://www.kathimerini.gr/istoria/564442333/apo-ton-kaveiro-kai-ta-dimitria-sti-deth-i-thessaloniki-os-poli-ektheseon-kai-emporikon-synathroiseon-epi-dyo-chilieties/",
+        "https://www.kathimerini.gr/visual/photography/564443638/pagkosmia-imera-exaleipsis-toy-analfavitismoy/",
+        "https://www.kathimerini.gr/politics/564443827/theoreio-samaras-kalei-mpeno/"
       ],
-      "seen_at_utc": "2026-09-08T04:51:46.722314+00:00"
+      "seen_at_utc": "2026-09-08T05:17:00.190752+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,38 +1266,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875414/allazei-i-ekdosi-pinakidon-kukloforias-psifiaka-oi-aitiseis-me-dunatotita-epilogis-arithmou/?utm_source=rss",
-      "title": "Αλλάζει η έκδοση πινακίδων κυκλοφορίας: Ψηφιακά οι αιτήσεις με δυνατότητα επιλογής αριθμού",
-      "normalized_title": "ΑΛΛΑΖΕΙ Η ΕΚΔΟΣΗ ΠΙΝΑΚΙΔΩΝ ΚΥΚΛΟΦΟΡΙΑΣ: ΨΗΦΙΑΚΑ ΟΙ ΑΙΤΗΣΕΙΣ ΜΕ ΔΥΝΑΤΟΤΗΤΑ ΕΠΙΛΟΓΗΣ ΑΡΙΘΜΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1875425/megalose-theamatika-i-zitisi-gia-akriva-farmaka-kat-oikon-kai-apo-farmakeia-oi-dimofileis-katigories/?utm_source=rss",
+      "title": "Μεγάλωσε θεαματικά η ζήτηση για ακριβά φάρμακα κατ' οίκον και από φαρμακεία, οι δημοφιλείς κατηγορίες",
+      "normalized_title": "ΜΕΓΑΛΩΣΕ ΘΕΑΜΑΤΙΚΑ Η ΖΗΤΗΣΗ ΓΙΑ ΑΚΡΙΒΑ ΦΑΡΜΑΚΑ ΚΑΤ' ΟΙΚΟΝ ΚΑΙ ΑΠΟ ΦΑΡΜΑΚΕΙΑ, ΟΙ ΔΗΜΟΦΙΛΕΙΣ ΚΑΤΗΓΟΡΙΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875414/allazei-i-ekdosi-pinakidon-kukloforias-psifiaka-oi-aitiseis-me-dunatotita-epilogis-arithmou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875412/fotia-se-agrotodasiki-ektasi-sto-plati-messinias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875408/mahi-gia-ti-zoi-tous-dinoun-16hronos-kai-14hroni-meta-apo-atuhimata-me-patini-neo-safari-eleghon-apo-tin-trohaia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875425/megalose-theamatika-i-zitisi-gia-akriva-farmaka-kat-oikon-kai-apo-farmakeia-oi-dimofileis-katigories/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T04:30:10.154752+00:00"
+      "seen_at_utc": "2026-09-08T05:17:00.190902+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1462504/trikala-visonas-eisevale-se-ayli-spitioy-ekane-ti-volta-toy-kai-apohorise-vinteo/",
-      "title": "Τρίκαλα: Βίσονας «εισέβαλε» σε αυλή σπιτιού, έκανε τη βόλτα του και αποχώρησε [βίντεο]",
-      "normalized_title": "ΤΡΙΚΑΛΑ: ΒΙΣΟΝΑΣ «ΕΙΣΕΒΑΛΕ» ΣΕ ΑΥΛΗ ΣΠΙΤΙΟΥ, ΕΚΑΝΕ ΤΗ ΒΟΛΤΑ ΤΟΥ ΚΑΙ ΑΠΟΧΩΡΗΣΕ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1462511/andreas-drymiotis-o-samaras-einai-enas-mnimoniakos-kolotoympas-o-tsipras-kanei-proodoys-o-androylakis-lathi/",
+      "title": "Με πάθος υπέρ του Μητσοτάκη ο Δρυμιώτης: «Θα είναι αυτοδύναμος» – Απαξιώνει Σαμαρά και Ανδρουλάκη",
+      "normalized_title": "ΜΕ ΠΑΘΟΣ ΥΠΕΡ ΤΟΥ ΜΗΤΣΟΤΑΚΗ Ο ΔΡΥΜΙΩΤΗΣ: «ΘΑ ΕΙΝΑΙ ΑΥΤΟΔΥΝΑΜΟΣ» – ΑΠΑΞΙΩΝΕΙ ΣΑΜΑΡΑ ΚΑΙ ΑΝΔΡΟΥΛΑΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1462504/trikala-visonas-eisevale-se-ayli-spitioy-ekane-ti-volta-toy-kai-apohorise-vinteo/",
-        "https://www.efsyn.gr/ellada/1462496/kairos-erhetai-ptosi-tis-thermokrasias-eos-kai-7-vathmoys-i-prognosi-kolyda-gia-tis-epomenes-imeres/",
-        "https://www.efsyn.gr/politiki/1462486/simera-oi-ypografes-gia-tis-bergamini-i-atzenta-dendia-kroseto/"
+        "https://www.efsyn.gr/politiki/1462511/andreas-drymiotis-o-samaras-einai-enas-mnimoniakos-kolotoympas-o-tsipras-kanei-proodoys-o-androylakis-lathi/",
+        "https://www.efsyn.gr/ellada/1462495/diki-gia-ta-tempi-ti-synevi-me-ta-enteka-lepta-poy-den-ehei-katagrafei-synomilia/",
+        "https://www.efsyn.gr/tehnes/1462502/mia-dikaiosi-gia-ton-gianni-oikonomidi-i-spasmeni-fleva-einai-i-episimi-ypopsifiotita-tis-elladas-sta-oskar/",
+        "https://www.efsyn.gr/politiki/1462507/pasok-plano-diakyvernisis-me-stoheymenes-protaseis-sti-deth/"
       ],
-      "seen_at_utc": "2026-09-08T04:51:46.722391+00:00"
+      "seen_at_utc": "2026-09-08T05:17:00.190861+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/go-fun/social/arkas-i-kalimera-tis-tritis-13/",
-      "title": "Αρκάς: Η καλημέρα της Τρίτης",
-      "normalized_title": "ΑΡΚΑΣ: Η ΚΑΛΗΜΕΡΑ ΤΗΣ ΤΡΙΤΗΣ",
+      "url": "https://www.in.gr/2026/09/08/politics/tsipras-epixeirisi-aksiopistia-2-sti-thessaloniki-to-pleonektima-edras-apenanti-ston-mitsotaki/",
+      "title": "Τσίπρας: Επιχείρηση «αξιοπιστία 2» στη Θεσσαλονίκη – Το πλεονέκτημα… έδρας απέναντι στον Μητσοτάκη",
+      "normalized_title": "ΤΣΙΠΡΑΣ: ΕΠΙΧΕΙΡΗΣΗ «ΑΞΙΟΠΙΣΤΙΑ 2» ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ – ΤΟ ΠΛΕΟΝΕΚΤΗΜΑ… ΕΔΡΑΣ ΑΠΕΝΑΝΤΙ ΣΤΟΝ ΜΗΤΣΟΤΑΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/go-fun/social/arkas-i-kalimera-tis-tritis-13/",
-        "https://www.in.gr/2026/09/08/greece/fotia-se-agrotodasiki-ektasi-sti-messinia/",
-        "https://www.in.gr/2026/09/08/plus/vita/dynami-kai-statherotita-pente-askiseis-gia-gera-gonata/"
+        "https://www.in.gr/2026/09/08/politics/tsipras-epixeirisi-aksiopistia-2-sti-thessaloniki-to-pleonektima-edras-apenanti-ston-mitsotaki/",
+        "https://www.in.gr/2026/09/08/life/culture-live/o-tinderas-mia-ksekardistiki-komodia-sto-theatro-alkmini/",
+        "https://www.in.gr/2026/09/08/economy/diethnis-oikonomia/to-paradokso-tis-gen-z-perissotera-ptyxia-ligoteri-ergasiaki-asfaleia/",
+        "https://www.in.gr/2026/09/08/editorial/gia-na-min-erthei-i-akrodeksia-sta-pragmata-tha-prepei-na-stamatisoun-oi-politikes-pou-tis-stronoun-to-dromo/",
+        "https://www.in.gr/2026/09/08/economy/neo-pligma-gia-tin-xrysi-viza-to-ekstra-xaratsi/"
       ],
-      "seen_at_utc": "2026-09-08T04:51:46.722348+00:00"
+      "seen_at_utc": "2026-09-08T05:17:00.190810+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T04:51:46.722463+00:00"
+  "updated_at_utc": "2026-09-08T05:17:00.190973+00:00"
 }
