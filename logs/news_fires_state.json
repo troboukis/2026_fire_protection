@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564440077/tha-antexoyn-ta-thesmika-teichi-k/",
-      "title": "Θα αντέξουν τα θεσμικά τείχη;",
-      "normalized_title": "ΘΑ ΑΝΤΕΞΟΥΝ ΤΑ ΘΕΣΜΙΚΑ ΤΕΙΧΗ;",
+      "url": "https://www.kathimerini.gr/culture/tv/564445639/to-soi-soy-premiera-me-diplo-epeisodio/",
+      "title": "«Το Σόι σου»: Πρεμιέρα με διπλό επεισόδιο",
+      "normalized_title": "«ΤΟ ΣΟΙ ΣΟΥ»: ΠΡΕΜΙΕΡΑ ΜΕ ΔΙΠΛΟ ΕΠΕΙΣΟΔΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564440077/tha-antexoyn-ta-thesmika-teichi-k/",
-        "https://www.kathimerini.gr/world/564446023/h-openai-ypostirizei-oti-elyse-ena-apo-ta-provlimata-tis-chilietias-sta-mathimatika/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564445876/emporikos-polemos-poso-tha-kostisoyn-oi-dasmoi-se-kanadoys-kai-amerikanoys/"
+        "https://www.kathimerini.gr/culture/tv/564445639/to-soi-soy-premiera-me-diplo-epeisodio/",
+        "https://www.kathimerini.gr/world/564440119/o-neos-axonas-toy-kakoy/"
       ],
-      "seen_at_utc": "2026-09-08T18:17:08.046998+00:00"
+      "seen_at_utc": "2026-09-08T18:30:06.763628+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,32 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875828/nea-profulakisi-gia-tous-treis-katigoroumenous-gia-tin-upothesi-tou-nekrou-vrefous-stin-kuoeli/?utm_source=rss",
-      "title": "Νέα προφυλάκιση για τους τρεις κατηγορούμενους για την υπόθεση του νεκρού βρέφους στην Κυψέλη, οι γονείς αρνούνται ότι το δολοφόνησαν",
-      "normalized_title": "ΝΕΑ ΠΡΟΦΥΛΑΚΙΣΗ ΓΙΑ ΤΟΥΣ ΤΡΕΙΣ ΚΑΤΗΓΟΡΟΥΜΕΝΟΥΣ ΓΙΑ ΤΗΝ ΥΠΟΘΕΣΗ ΤΟΥ ΝΕΚΡΟΥ ΒΡΕΦΟΥΣ ΣΤΗΝ ΚΥΨΕΛΗ, ΟΙ ΓΟΝΕΙΣ ΑΡΝΟΥΝΤΑΙ ΟΤΙ ΤΟ ΔΟΛΟΦΟΝΗΣΑΝ",
+      "url": "https://www.protothema.gr/greece/article/1875852/autokinito-boukare-se-farmakeio-sti-nea-makri-den-upirxan-traumatismoi-deite-video/?utm_source=rss",
+      "title": "Αυτοκίνητο «μπούκαρε» σε φαρμακείο στη Νέα Μάκρη, δεν υπήρξαν τραυματισμοί, δείτε βίντεο",
+      "normalized_title": "ΑΥΤΟΚΙΝΗΤΟ «ΜΠΟΥΚΑΡΕ» ΣΕ ΦΑΡΜΑΚΕΙΟ ΣΤΗ ΝΕΑ ΜΑΚΡΗ, ΔΕΝ ΥΠΗΡΞΑΝ ΤΡΑΥΜΑΤΙΣΜΟΙ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875828/nea-profulakisi-gia-tous-treis-katigoroumenous-gia-tin-upothesi-tou-nekrou-vrefous-stin-kuoeli/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875816/touristas-sta-hania-zitise-apozimiosi-apo-to-xenodoheio-giati-ton-tsibisan-ta-kounoupia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875852/autokinito-boukare-se-farmakeio-sti-nea-makri-den-upirxan-traumatismoi-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T17:30:01.580081+00:00"
+      "seen_at_utc": "2026-09-08T18:30:06.763732+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1463139/kke-sto-tiktok-gia-ton-afthodi-ta-kopadia-apodekatistikan-i-kyvernitiki-geloiotita-pali-ohi/",
-      "title": "ΚΚΕ στο TikTok για τον αφθώδη: «Τα κοπάδια αποδεκατίστηκαν – η κυβερνητική γελοιότητα πάλι, όχι!»",
-      "normalized_title": "ΚΚΕ ΣΤΟ TIKTOK ΓΙΑ ΤΟΝ ΑΦΘΩΔΗ: «ΤΑ ΚΟΠΑΔΙΑ ΑΠΟΔΕΚΑΤΙΣΤΗΚΑΝ – Η ΚΥΒΕΡΝΗΤΙΚΗ ΓΕΛΟΙΟΤΗΤΑ ΠΑΛΙ, ΟΧΙ!»",
+      "url": "https://www.efsyn.gr/life/1463140/antonis-remos-moy-dothike-i-adeia-apo-ton-dimarho-apanta-gia-ti-synaylia-sti-thessaloniki/",
+      "title": "Αντώνης Ρέμος: «Μου δόθηκε η άδεια από τον Δήμαρχο» απαντά για τη συναυλία στη Θεσσαλονίκη",
+      "normalized_title": "ΑΝΤΩΝΗΣ ΡΕΜΟΣ: «ΜΟΥ ΔΟΘΗΚΕ Η ΑΔΕΙΑ ΑΠΟ ΤΟΝ ΔΗΜΑΡΧΟ» ΑΠΑΝΤΑ ΓΙΑ ΤΗ ΣΥΝΑΥΛΙΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1463139/kke-sto-tiktok-gia-ton-afthodi-ta-kopadia-apodekatistikan-i-kyvernitiki-geloiotita-pali-ohi/",
-        "https://www.efsyn.gr/kosmos/1463128/skandalo-dubai-bank-pos-exarthrothike-i-trapeza-poy-xeplene-ta-disekatommyria-ton-kartel-tis-kokainis/"
+        "https://www.efsyn.gr/life/1463140/antonis-remos-moy-dothike-i-adeia-apo-ton-dimarho-apanta-gia-ti-synaylia-sti-thessaloniki/"
       ],
-      "seen_at_utc": "2026-09-08T18:17:08.047074+00:00"
+      "seen_at_utc": "2026-09-08T18:30:06.763708+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/world/i-anodos-tis-afd-sti-germania-apokalyptei-ton-vathy-dixasmo-tis-italikis-deksias/",
-      "title": "Η άνοδος της AfD στη Γερμανία αποκαλύπτει τον βαθύ διχασμό της ιταλικής Δεξιάς",
-      "normalized_title": "Η ΑΝΟΔΟΣ ΤΗΣ AFD ΣΤΗ ΓΕΡΜΑΝΙΑ ΑΠΟΚΑΛΥΠΤΕΙ ΤΟΝ ΒΑΘΥ ΔΙΧΑΣΜΟ ΤΗΣ ΙΤΑΛΙΚΗΣ ΔΕΞΙΑΣ",
+      "url": "https://www.in.gr/matchcenter/6106050/",
+      "title": "LIVE: Ολυμπιακός – Βόλος",
+      "normalized_title": "LIVE: ΟΛΥΜΠΙΑΚΟΣ – ΒΟΛΟΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/world/i-anodos-tis-afd-sti-germania-apokalyptei-ton-vathy-dixasmo-tis-italikis-deksias/",
-        "https://www.in.gr/2026/09/08/sports/football/i-endekada-tou-olympiakou-kontra-ston-volo-vasikos-o-pouerta-pic/",
-        "https://www.in.gr/2026/09/08/politics/politiki-grammateia/epesan-oi-ypografes-gia-tis-dyo-italikes-fregates-bergamini-i-koini-geografia-dimiourgei-kai-mia-koini-eythyni-leei-o-dendias/",
-        "https://www.in.gr/2026/09/08/greece/apo-tis-fylakes-i-entoli-gia-tis-dyo-xeirovomvides-ti-eksetazetai-gia-tis-epitheseis-se-axarnon-kai-pl-amerikis/"
+        "https://www.in.gr/matchcenter/6106050/"
       ],
-      "seen_at_utc": "2026-09-08T18:17:08.047039+00:00"
+      "seen_at_utc": "2026-09-08T18:30:06.763661+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T18:17:08.047150+00:00"
+  "updated_at_utc": "2026-09-08T18:30:06.763821+00:00"
 }
