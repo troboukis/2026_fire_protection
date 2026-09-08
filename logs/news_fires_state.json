@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564445528/al-sisi-ergo-orosimo-i-ilektriki-diasyndesi-elladas-aigyptoy/",
-      "title": "Αλ Σίσι: «Εργο-ορόσημο» η ηλεκτρική διασύνδεση Ελλάδας-Αιγύπτου",
-      "normalized_title": "ΑΛ ΣΙΣΙ: «ΕΡΓΟ-ΟΡΟΣΗΜΟ» Η ΗΛΕΚΤΡΙΚΗ ΔΙΑΣΥΝΔΕΣΗ ΕΛΛΑΔΑΣ-ΑΙΓΥΠΤΟΥ",
+      "url": "https://www.kathimerini.gr/politics/564445561/sto-pasok-dyo-proin-voyleytes-toy-syriza/",
+      "title": "Στο ΠΑΣΟΚ δύο πρώην βουλευτές του ΣΥΡΙΖΑ",
+      "normalized_title": "ΣΤΟ ΠΑΣΟΚ ΔΥΟ ΠΡΩΗΝ ΒΟΥΛΕΥΤΕΣ ΤΟΥ ΣΥΡΙΖΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564445528/al-sisi-ergo-orosimo-i-ilektriki-diasyndesi-elladas-aigyptoy/",
-        "https://www.kathimerini.gr/society/564445531/chania-estiatorio-evale-neossoys-thalassias-chelonas-se-diakosmitiki-dexameni-i-kataggelia/",
-        "https://www.kathimerini.gr/economy/564445525/g-retsos-i-thessaloniki-echei-mprosta-tis-kalyteres-imeres-veltionontai-oi-ypodomes-kai-ayxanetai-to-ependytiko-endiaferon/"
+        "https://www.kathimerini.gr/politics/564445561/sto-pasok-dyo-proin-voyleytes-toy-syriza/",
+        "https://www.kathimerini.gr/politics/564445543/ta-erotimata-poy-den-apantithikan/"
       ],
-      "seen_at_utc": "2026-09-08T13:30:04.870278+00:00"
+      "seen_at_utc": "2026-09-08T13:51:39.907271+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875686/katadikastike-polonos-stin-thessaloniki-pou-ekane-barbekiou-kai-evale-fotia-de-me-noiazei-an-katadikasto-eipe/?utm_source=rss",
-      "title": "Καταδικάστηκε Πολωνός στην Θεσσαλονίκη που έκανε μπάρμπεκιου και έβαλε φωτιά - «Δε με νοιάζει αν καταδικαστώ», είπε",
-      "normalized_title": "ΚΑΤΑΔΙΚΑΣΤΗΚΕ ΠΟΛΩΝΟΣ ΣΤΗΝ ΘΕΣΣΑΛΟΝΙΚΗ ΠΟΥ ΕΚΑΝΕ ΜΠΑΡΜΠΕΚΙΟΥ ΚΑΙ ΕΒΑΛΕ ΦΩΤΙΑ - «ΔΕ ΜΕ ΝΟΙΑΖΕΙ ΑΝ ΚΑΤΑΔΙΚΑΣΤΩ», ΕΙΠΕ",
+      "url": "https://www.protothema.gr/greece/article/1875705/fotia-tora-sto-kandili-megaron-sikothikan-6-enaeria/?utm_source=rss",
+      "title": "Φωτιά τώρα στο Κανδήλι Μεγάρων, σηκώθηκαν 6 εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΟ ΚΑΝΔΗΛΙ ΜΕΓΑΡΩΝ, ΣΗΚΩΘΗΚΑΝ 6 ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875686/katadikastike-polonos-stin-thessaloniki-pou-ekane-barbekiou-kai-evale-fotia-de-me-noiazei-an-katadikasto-eipe/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875685/ena-astoho-sout-apokalupse-anthropina-osta-stin-kupseli-ti-leei-o-anthropos-pou-ta-edopise/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875681/anthropokunigito-miamisis-oras-gia-listeies-stin-patra/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875705/fotia-tora-sto-kandili-megaron-sikothikan-6-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T13:17:40.012771+00:00"
+      "seen_at_utc": "2026-09-08T13:51:39.907385+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1462944/telos-o-kovasevits-apo-ton-olympiako/",
-      "title": "Τέλος ο Κοβάσεβιτς από τον Ολυμπιακό",
-      "normalized_title": "ΤΕΛΟΣ Ο ΚΟΒΑΣΕΒΙΤΣ ΑΠΟ ΤΟΝ ΟΛΥΜΠΙΑΚΟ",
+      "url": "https://www.efsyn.gr/nisides/1462816/pos-o-loyi-altoyser-dolofonise-ti-syzygo-toy-i-gynaikoktonia-tis-elen-ritman-legkotien/",
+      "title": "Πώς ο Λουί Αλτουσέρ δολοφόνησε τη σύζυγό του – Η γυναικοκτονία της Ελέν Ρίτμαν Λεγκοτιέν",
+      "normalized_title": "ΠΩΣ Ο ΛΟΥΙ ΑΛΤΟΥΣΕΡ ΔΟΛΟΦΟΝΗΣΕ ΤΗ ΣΥΖΥΓΟ ΤΟΥ – Η ΓΥΝΑΙΚΟΚΤΟΝΙΑ ΤΗΣ ΕΛΕΝ ΡΙΤΜΑΝ ΛΕΓΚΟΤΙΕΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1462944/telos-o-kovasevits-apo-ton-olympiako/",
-        "https://www.efsyn.gr/ellada/1462939/ti-leei-o-anthropos-poy-entopise-ta-osta-stin-kypseli-epese-to-mati-moy-se-kati-poy-emoiaze-me-leipsano-vinteo/",
-        "https://www.efsyn.gr/ellada/1462934/se-red-code-ayrio-attiki-kai-eyvoia-poly-ypsilos-kindynos-pyrkagias-hartis/"
+        "https://www.efsyn.gr/nisides/1462816/pos-o-loyi-altoyser-dolofonise-ti-syzygo-toy-i-gynaikoktonia-tis-elen-ritman-legkotien/",
+        "https://www.efsyn.gr/ellada/1462972/pyrkagia-se-dasiki-ektasi-sti-mandra-konta-stis-kataskinoseis-meletaki-sikothikan-6-enaeria-mesa/",
+        "https://www.efsyn.gr/politiki/1462953/energeia-asfaleia-kai-ilektriki-diasyndesi-sto-epikentro-tis-synantisi-mitsotaki-sisi-hristodoylidi/",
+        "https://www.efsyn.gr/politiki/1462960/kai-episima-sto-pasok-i-olympia-teligioridoy-kai-o-leyteris-avramakis/",
+        "https://www.efsyn.gr/ellada/1462940/exafanisi-gioy-tingk-stin-artemida-vrethike-kommeno-to-diavatirio-tis-sto-alsos-galatsioy/",
+        "https://www.efsyn.gr/oikonomia/1462766/treis-protaseis-gia-ton-metashimatismo-ton-limanion/"
       ],
-      "seen_at_utc": "2026-09-08T13:17:40.012728+00:00"
+      "seen_at_utc": "2026-09-08T13:51:39.907364+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/greece/kypseli-kynigontas-mia-mpala-entopisa-ti-sakoula-me-ta-osta-proekseixe-kati-sa-leipsano-i-perigrafi-tou-proponiti/",
-      "title": "Κυψέλη: «Κυνηγώντας μια μπάλα εντόπισα τη σακούλα με τα οστά – Προεξείχε κάτι σα λείψανο» – Η περιγραφή του προπονητή",
-      "normalized_title": "ΚΥΨΕΛΗ: «ΚΥΝΗΓΩΝΤΑΣ ΜΙΑ ΜΠΑΛΑ ΕΝΤΟΠΙΣΑ ΤΗ ΣΑΚΟΥΛΑ ΜΕ ΤΑ ΟΣΤΑ – ΠΡΟΕΞΕΙΧΕ ΚΑΤΙ ΣΑ ΛΕΙΨΑΝΟ» – Η ΠΕΡΙΓΡΑΦΗ ΤΟΥ ΠΡΟΠΟΝΗΤΗ",
+      "url": "https://www.in.gr/2026/09/08/greece/fotia-sta-megara-megali-kinitopoiisi-tis-pyrosvestikis/",
+      "title": "Φωτιά στα Μέγαρα – Μεγάλη κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΑ ΜΕΓΑΡΑ – ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/greece/kypseli-kynigontas-mia-mpala-entopisa-ti-sakoula-me-ta-osta-proekseixe-kati-sa-leipsano-i-perigrafi-tou-proponiti/",
-        "https://www.in.gr/2026/09/08/sports/basketball/euroleague/piters-o-olympiakos-itan-i-pio-simantiki-apofasi-tis-zois-mou/"
+        "https://www.in.gr/2026/09/08/greece/fotia-sta-megara-megali-kinitopoiisi-tis-pyrosvestikis/",
+        "https://www.in.gr/2026/09/08/greece/mia-syllipsi-gia-ti-fotia-stin-karysto-ekane-ergasies-me-skaptiko-mixanima/",
+        "https://www.in.gr/2026/09/08/life/culture-live/o-elon-mask-moiazei-me-xaraktira-tis-marvel/"
       ],
-      "seen_at_utc": "2026-09-08T13:30:04.870343+00:00"
+      "seen_at_utc": "2026-09-08T13:51:39.907323+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T13:30:04.870432+00:00"
+  "updated_at_utc": "2026-09-08T13:51:39.907485+00:00"
 }
