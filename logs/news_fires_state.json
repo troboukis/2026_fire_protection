@@ -1,18 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564444700/aade-i-eygenia-to-proto-psifiako-avatar-toy-ellinikoy-dimosioy-stin-90i-deth/",
-      "title": "ΑΑΔΕ: Η Ευγενία, το πρώτο ψηφιακό avatar του ελληνικού Δημοσίου στην 90η ΔΕΘ",
-      "normalized_title": "ΑΑΔΕ: Η ΕΥΓΕΝΙΑ, ΤΟ ΠΡΩΤΟ ΨΗΦΙΑΚΟ AVATAR ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΔΗΜΟΣΙΟΥ ΣΤΗΝ 90Η ΔΕΘ",
+      "url": "https://www.kathimerini.gr/culture/music/564444079/ti-tha-akoysoyme-sto-megaro-moysikis-thessalonikis/",
+      "title": "Τι θα ακούσουμε στο Μέγαρο Μουσικής Θεσσαλονίκης",
+      "normalized_title": "ΤΙ ΘΑ ΑΚΟΥΣΟΥΜΕ ΣΤΟ ΜΕΓΑΡΟ ΜΟΥΣΙΚΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564444700/aade-i-eygenia-to-proto-psifiako-avatar-toy-ellinikoy-dimosioy-stin-90i-deth/",
-        "https://www.kathimerini.gr/economy/local/564444262/o-dyskolos-stochos-meiosis-energeiakoy-kostoys-kata-30-eos-to-2029/",
-        "https://www.kathimerini.gr/society/564444703/trikala-diasolinomenos-sti-meth-65chronos-meta-apo-pnigmo-apo-trofi/",
-        "https://www.kathimerini.gr/istoria/564444022/90-chronia-prin-8-9-1936/",
-        "https://www.kathimerini.gr/world/564444694/vretaniko-empargko-sta-proionta-ton-israilinon-epoikismon-tis-dytikis-ochthis/",
-        "https://www.kathimerini.gr/world/564444676/edesan-me-monotiki-epivati-se-amok-liges-imeres-meta-echase-ti-doyleia-toy/"
+        "https://www.kathimerini.gr/culture/music/564444079/ti-tha-akoysoyme-sto-megaro-moysikis-thessalonikis/",
+        "https://www.kathimerini.gr/world/564444742/orgi-stin-islandia-gia-anartisi-toy-tramp/",
+        "https://www.kathimerini.gr/society/564444709/dystychima-stin-tanagra-anavlithike-i-kideia-toy-sminagoy-dimitri-petroy/"
       ],
-      "seen_at_utc": "2026-09-08T07:16:58.369420+00:00"
+      "seen_at_utc": "2026-09-08T07:30:03.375460+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1275,28 +1272,31 @@
       "seen_at_utc": "2026-09-08T07:16:58.369548+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1462612/akrita-gia-tin-kataggelia-viasmoy-se-zitimata-sexoyalikis-vias-den-yparhoyn-dikoi-sas-kai-dikoi-mas/",
-      "title": "Ακρίτα για την καταγγελία βιασμού: «Σε ζητήματα σεξουαλικής βίας δεν υπάρχουν “δικοί σας” και “δικοί μας”»",
-      "normalized_title": "ΑΚΡΙΤΑ ΓΙΑ ΤΗΝ ΚΑΤΑΓΓΕΛΙΑ ΒΙΑΣΜΟΥ: «ΣΕ ΖΗΤΗΜΑΤΑ ΣΕΞΟΥΑΛΙΚΗΣ ΒΙΑΣ ΔΕΝ ΥΠΑΡΧΟΥΝ “ΔΙΚΟΙ ΣΑΣ” ΚΑΙ “ΔΙΚΟΙ ΜΑΣ”»",
+      "url": "https://www.efsyn.gr/epistimi/1462625/h-proti-psifiaki-symvoylos-toy-ellinikoy-dimosioy-legetai-eygenia-eikones/",
+      "title": "H πρώτη ψηφιακή σύμβουλος του ελληνικού δημοσίου λέγεται Ευγενία [εικόνες]",
+      "normalized_title": "H ΠΡΩΤΗ ΨΗΦΙΑΚΗ ΣΥΜΒΟΥΛΟΣ ΤΟΥ ΕΛΛΗΝΙΚΟΥ ΔΗΜΟΣΙΟΥ ΛΕΓΕΤΑΙ ΕΥΓΕΝΙΑ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1462612/akrita-gia-tin-kataggelia-viasmoy-se-zitimata-sexoyalikis-vias-den-yparhoyn-dikoi-sas-kai-dikoi-mas/",
-        "https://www.efsyn.gr/kosmos/1462613/vretania-pros-epivoli-kyroseon-stoys-oikismoys-toy-israil-sti-dytiki-ohthi-epikoinonia-mpernam-me-tramp/"
+        "https://www.efsyn.gr/epistimi/1462625/h-proti-psifiaki-symvoylos-toy-ellinikoy-dimosioy-legetai-eygenia-eikones/",
+        "https://www.efsyn.gr/politiki/1462623/g-maniatis-se-komision-perikopes-kai-arnitikes-times-energeias-apeiloyn-amesa-ti-viosimotita-mikromesaion-ergon-ape/",
+        "https://www.efsyn.gr/stiles/1462604/igetes-alloy/",
+        "https://www.efsyn.gr/stiles/1462595/oi-skies-ton-megalon/",
+        "https://www.efsyn.gr/stiles/1462586/otan-i-kyvernisi-apofasizei-posa-einai-ta-fyla/",
+        "https://www.efsyn.gr/stiles/1462570/to-nomotypo-nikaei-ton-nomo/"
       ],
-      "seen_at_utc": "2026-09-08T07:16:58.369515+00:00"
+      "seen_at_utc": "2026-09-08T07:30:03.375547+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/sports/football/champions-league/sentra-sti-league-phase-tou-champions-league-oi-omades-oi-allages-stous-kanonismous-kai-to-programma/",
-      "title": "Σέντρα στη League Phase του Champions League: Οι ομάδες, οι αλλαγές στους κανονισμούς και το πρόγραμμα",
-      "normalized_title": "ΣΕΝΤΡΑ ΣΤΗ LEAGUE PHASE ΤΟΥ CHAMPIONS LEAGUE: ΟΙ ΟΜΑΔΕΣ, ΟΙ ΑΛΛΑΓΕΣ ΣΤΟΥΣ ΚΑΝΟΝΙΣΜΟΥΣ ΚΑΙ ΤΟ ΠΡΟΓΡΑΜΜΑ",
+      "url": "https://www.in.gr/2026/09/08/sports/football/vinisious-se-diaititi-katevase-ta-xeria-sou-vids/",
+      "title": "Βινίσιους σε διαιτητή: «Κατέβασε τα χέρια σου!» (vids)",
+      "normalized_title": "ΒΙΝΙΣΙΟΥΣ ΣΕ ΔΙΑΙΤΗΤΗ: «ΚΑΤΕΒΑΣΕ ΤΑ ΧΕΡΙΑ ΣΟΥ!» (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/sports/football/champions-league/sentra-sti-league-phase-tou-champions-league-oi-omades-oi-allages-stous-kanonismous-kai-to-programma/",
-        "https://www.in.gr/2026/09/08/plus/medianews/neoelliniki-orthografia-ayti-tin-kyriaki-mazi-me-to-vima/",
-        "https://www.in.gr/2026/09/08/economy/pos-tha-leitourgei-o-koumparas-gia-ti-nea-genia/",
-        "https://www.in.gr/2026/09/08/politics/aftodioikisi/o-dimos-rodou-steketai-sto-pleyro-giatron-pou-tha-apofasisoun-na-ergastoun-sti-rodo/",
-        "https://www.in.gr/2026/09/08/life/culture-live/vrethike-o-epomenos-tzeims-mpont-o-gkari-olntman-leei-nai/"
+        "https://www.in.gr/2026/09/08/sports/football/vinisious-se-diaititi-katevase-ta-xeria-sou-vids/",
+        "https://www.in.gr/2026/09/08/greece/sti-dikaiosyni-prosfeygei-o-dikigorikos-syllogos-athinon-gia-tis-mi-kratikes-nomikes-sxoles/",
+        "https://www.in.gr/2026/09/08/world/vretania-aleksiptotistria-lipothymise-sta-3-500-metra-epefte-xoris-aleksiptoto-kai-sothike-apo-ena-dentro-vinteo/",
+        "https://www.in.gr/2026/09/08/greece/ekrikseis-se-omonoia-kai-plateia-amerikis-treis-drastes-katagrafikan-se-vinteo-ta-nea-stoixeia/"
       ],
-      "seen_at_utc": "2026-09-08T07:16:58.369473+00:00"
+      "seen_at_utc": "2026-09-08T07:30:03.375504+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T07:16:58.369615+00:00"
+  "updated_at_utc": "2026-09-08T07:30:03.375620+00:00"
 }
