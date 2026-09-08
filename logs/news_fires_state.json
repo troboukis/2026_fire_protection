@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564445423/ypen-o-odikos-chartis-gia-fthinotero-reyma-30-stin-trietia-10-vasika-metra/",
-      "title": "ΥΠΕΝ: Ο οδικός χάρτης για φθηνότερο ρεύμα 30% στην τριετία – 10 βασικά μέτρα",
-      "normalized_title": "ΥΠΕΝ: Ο ΟΔΙΚΟΣ ΧΑΡΤΗΣ ΓΙΑ ΦΘΗΝΟΤΕΡΟ ΡΕΥΜΑ 30% ΣΤΗΝ ΤΡΙΕΤΙΑ – 10 ΒΑΣΙΚΑ ΜΕΤΡΑ",
+      "url": "https://www.kathimerini.gr/politics/564445441/live-oi-diloseis-mitsotaki-sisi-stin-aigypto/",
+      "title": "Live οι δηλώσεις Μητσοτάκη – Σίσι στην Αίγυπτο",
+      "normalized_title": "LIVE ΟΙ ΔΗΛΩΣΕΙΣ ΜΗΤΣΟΤΑΚΗ – ΣΙΣΙ ΣΤΗΝ ΑΙΓΥΠΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564445423/ypen-o-odikos-chartis-gia-fthinotero-reyma-30-stin-trietia-10-vasika-metra/"
+        "https://www.kathimerini.gr/politics/564445441/live-oi-diloseis-mitsotaki-sisi-stin-aigypto/",
+        "https://www.kathimerini.gr/society/564445447/thessaloniki-ekane-mparmpekioy-kai-prokalese-pyrkagia-katadikastike-polonos-toyristas/"
       ],
-      "seen_at_utc": "2026-09-08T12:30:25.642465+00:00"
+      "seen_at_utc": "2026-09-08T12:51:24.496069+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1260,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875665/se-red-code-attiki-kai-euvoia-tin-tetarti-polu-upsilos-kindunos-purkagias/?utm_source=rss",
-      "title": "Σε Red Code Αττική και Εύβοια την Τετάρτη, πολύ υψηλός κίνδυνος πυρκαγιάς",
-      "normalized_title": "ΣΕ RED CODE ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ ΤΗΝ ΤΕΤΑΡΤΗ, ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1875675/psaropoulos-sti-diki-gia-ta-tebi-i-purosfaira-apotelese-aitia-thanatou-tis-koris-mou-kai-toulahiston-allon-25-thumaton/?utm_source=rss",
+      "title": "Ψαρόπουλος στη δίκη για τα Τέμπη: Η πυρόσφαιρα αποτέλεσε αιτία θανάτου της κόρης μου και τουλάχιστον άλλων 25 θυμάτων",
+      "normalized_title": "ΨΑΡΟΠΟΥΛΟΣ ΣΤΗ ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ: Η ΠΥΡΟΣΦΑΙΡΑ ΑΠΟΤΕΛΕΣΕ ΑΙΤΙΑ ΘΑΝΑΤΟΥ ΤΗΣ ΚΟΡΗΣ ΜΟΥ ΚΑΙ ΤΟΥΛΑΧΙΣΤΟΝ ΑΛΛΩΝ 25 ΘΥΜΑΤΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875665/se-red-code-attiki-kai-euvoia-tin-tetarti-polu-upsilos-kindunos-purkagias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1875662/agrios-xulodarmos-15hronou-exo-apo-to-spiti-sto-irakleio-tou-apo-duo-sunomilikous-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875675/psaropoulos-sti-diki-gia-ta-tebi-i-purosfaira-apotelese-aitia-thanatou-tis-koris-mou-kai-toulahiston-allon-25-thumaton/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T12:17:11.000752+00:00"
+      "seen_at_utc": "2026-09-08T12:51:24.496157+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1462910/oi-italikes-arhes-vrikan-kefali-krokodeiloy-se-aposkeyi-sto-aerodromio-toy-torino/",
-      "title": "Οι ιταλικές αρχές βρήκαν κεφάλι κροκόδειλου σε αποσκευή στο αεροδρόμιο του Τορίνο",
-      "normalized_title": "ΟΙ ΙΤΑΛΙΚΕΣ ΑΡΧΕΣ ΒΡΗΚΑΝ ΚΕΦΑΛΙ ΚΡΟΚΟΔΕΙΛΟΥ ΣΕ ΑΠΟΣΚΕΥΗ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΟΥ ΤΟΡΙΝΟ",
+      "url": "https://www.efsyn.gr/kosmos/1462929/oie-oi-epiheiriseis-toy-israil-sti-syria-endehetai-na-synistoyn-egklimata-polemoy/",
+      "title": "ΟΗΕ: Οι επιχειρήσεις του Ισραήλ στη Συρία ενδέχεται να συνιστούν «εγκλήματα πολέμου»",
+      "normalized_title": "ΟΗΕ: ΟΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΤΟΥ ΙΣΡΑΗΛ ΣΤΗ ΣΥΡΙΑ ΕΝΔΕΧΕΤΑΙ ΝΑ ΣΥΝΙΣΤΟΥΝ «ΕΓΚΛΗΜΑΤΑ ΠΟΛΕΜΟΥ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1462910/oi-italikes-arhes-vrikan-kefali-krokodeiloy-se-aposkeyi-sto-aerodromio-toy-torino/"
+        "https://www.efsyn.gr/kosmos/1462929/oie-oi-epiheiriseis-toy-israil-sti-syria-endehetai-na-synistoyn-egklimata-polemoy/",
+        "https://www.efsyn.gr/politiki/1462924/live-i-trimeris-synantisi-mitsotaki-sisi-hristodoylidi-stin-aigypto/",
+        "https://www.efsyn.gr/ellada/1462915/voak-17hronos-o-odigos-me-tin-epikindyni-prosperasi-poy-xilose-kolonakia-eihan-petaxei-to-amaxi-sti-thalassa/",
+        "https://www.efsyn.gr/kosmos/1462917/patriot-anoigei-o-dromos-gia-agora-apo-hores-ektos-e-e-pros-meiosi-tis-piesis-se-ellada-kai-ispania/",
+        "https://www.efsyn.gr/tehnes/1462779/synaylia-remoy-sti-thessaloniki-poios-tha-tolmisei-na-sosei-to-agalma-toy-megaloy-alexandroy/",
+        "https://www.efsyn.gr/ellada/1462908/hania-estiatorio-evale-neogennita-thalassia-helonakia-se-diakosmitiki-dexameni-i-kataggelia-vinteo/"
       ],
-      "seen_at_utc": "2026-09-08T12:30:25.642552+00:00"
+      "seen_at_utc": "2026-09-08T12:51:24.496114+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/greece/pyrkagies-red-code-gia-attiki-kai-eyvoia-tin-tetarti-9-septemvriou/",
-      "title": "Πολύ υψηλός κίνδυνος πυρκαγιάς αύριο σε Αττική και Εύβοια - Σε «Red Code» οι συγκεκριμένες περιοχές",
-      "normalized_title": "ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ ΑΥΡΙΟ ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ - ΣΕ «RED CODE» ΟΙ ΣΥΓΚΕΚΡΙΜΕΝΕΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.in.gr/2026/09/08/sports/basketball/euroleague/o-gouokap-proponithike-gia-proti-fora-me-tin-ntoumpai-vid/",
+      "title": "Ο Γουόκαπ προπονήθηκε για πρώτη φορά με την Ντουμπάι (vid)",
+      "normalized_title": "Ο ΓΟΥΟΚΑΠ ΠΡΟΠΟΝΗΘΗΚΕ ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ ΜΕ ΤΗΝ ΝΤΟΥΜΠΑΙ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/greece/pyrkagies-red-code-gia-attiki-kai-eyvoia-tin-tetarti-9-septemvriou/",
-        "https://www.in.gr/2026/09/08/greece/kypseli-ena-astoxo-sout-se-paixnidi-i-aitia-pou-apokalyfthikan-ta-anthropina-osta-nea-plana-vinteo/"
+        "https://www.in.gr/2026/09/08/sports/basketball/euroleague/o-gouokap-proponithike-gia-proti-fora-me-tin-ntoumpai-vid/",
+        "https://www.in.gr/2026/09/08/politics/politiki-grammateia/live-oi-diloseis-mitsotaki-kai-sisi-meta-tin-synantisi-tous-stin-aigypto-kai-tin-trimeri-me-tin-kypro/",
+        "https://www.in.gr/2026/09/08/politics/pasok-to-mono-pou-apemeine-ston-mitsotaki-einai-na-periorisei-tin-eklogiki-fthora/",
+        "https://www.in.gr/2026/09/08/greece/diki-gia-ta-tempi-meizon-zitima-diereynisis-i-pyrkagia-anagkastikame-na-zitisoume-ektafes-katethese-o-psaropoulos/",
+        "https://www.in.gr/2026/09/08/go-fun/ekpliksi-gia-to-prigkipa-xari-kai-ti-megkan-i-epistoli-sfaliara-tou-vasilia-karolou-einai-idiotes/"
       ],
-      "seen_at_utc": "2026-09-08T12:30:25.642526+00:00"
+      "seen_at_utc": "2026-09-08T12:51:24.496094+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T12:30:25.642616+00:00"
+  "updated_at_utc": "2026-09-08T12:51:24.496235+00:00"
 }
