@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564445639/to-soi-soy-premiera-me-diplo-epeisodio/",
-      "title": "«Το Σόι σου»: Πρεμιέρα με διπλό επεισόδιο",
-      "normalized_title": "«ΤΟ ΣΟΙ ΣΟΥ»: ΠΡΕΜΙΕΡΑ ΜΕ ΔΙΠΛΟ ΕΠΕΙΣΟΔΙΟ",
+      "url": "https://www.kathimerini.gr/athletics/564446092/premiera-me-to-dexi-gia-tin-aek-stin-istoriki-epistrofi-tis-sto-champions-league/",
+      "title": "Πρεμιέρα με το δεξί για την ΑΕΚ στην ιστορική επιστροφή της στο Champions League",
+      "normalized_title": "ΠΡΕΜΙΕΡΑ ΜΕ ΤΟ ΔΕΞΙ ΓΙΑ ΤΗΝ ΑΕΚ ΣΤΗΝ ΙΣΤΟΡΙΚΗ ΕΠΙΣΤΡΟΦΗ ΤΗΣ ΣΤΟ CHAMPIONS LEAGUE",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564445639/to-soi-soy-premiera-me-diplo-epeisodio/",
-        "https://www.kathimerini.gr/world/564440119/o-neos-axonas-toy-kakoy/"
+        "https://www.kathimerini.gr/athletics/564446092/premiera-me-to-dexi-gia-tin-aek-stin-istoriki-epistrofi-tis-sto-champions-league/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564439972/to-apolaystiko-triimero-toy-prigkipa-alvertoy-toy-monako-sti-naxo/",
+        "https://www.kathimerini.gr/society/564440203/giati-i-vlastisi-skarfalonei-sta-voyna/"
       ],
-      "seen_at_utc": "2026-09-08T18:30:06.763628+00:00"
+      "seen_at_utc": "2026-09-08T18:51:15.721929+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,23 +1270,31 @@
       "seen_at_utc": "2026-09-08T18:30:06.763732+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1463140/antonis-remos-moy-dothike-i-adeia-apo-ton-dimarho-apanta-gia-ti-synaylia-sti-thessaloniki/",
-      "title": "Αντώνης Ρέμος: «Μου δόθηκε η άδεια από τον Δήμαρχο» απαντά για τη συναυλία στη Θεσσαλονίκη",
-      "normalized_title": "ΑΝΤΩΝΗΣ ΡΕΜΟΣ: «ΜΟΥ ΔΟΘΗΚΕ Η ΑΔΕΙΑ ΑΠΟ ΤΟΝ ΔΗΜΑΡΧΟ» ΑΠΑΝΤΑ ΓΙΑ ΤΗ ΣΥΝΑΥΛΙΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.efsyn.gr/kosmos/1463160/indonisia-agnooyntai-pente-dimosiografoi-poy-pigan-na-kalypsoyn-tin-ekrixi-toy-ifaisteioy-krakatoa/",
+      "title": "Ινδονησία: Αγνοούνται πέντε δημοσιογράφοι που πήγαν να καλύψουν την έκρηξη του ηφαιστείου Κρακατόα",
+      "normalized_title": "ΙΝΔΟΝΗΣΙΑ: ΑΓΝΟΟΥΝΤΑΙ ΠΕΝΤΕ ΔΗΜΟΣΙΟΓΡΑΦΟΙ ΠΟΥ ΠΗΓΑΝ ΝΑ ΚΑΛΥΨΟΥΝ ΤΗΝ ΕΚΡΗΞΗ ΤΟΥ ΗΦΑΙΣΤΕΙΟΥ ΚΡΑΚΑΤΟΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1463140/antonis-remos-moy-dothike-i-adeia-apo-ton-dimarho-apanta-gia-ti-synaylia-sti-thessaloniki/"
+        "https://www.efsyn.gr/kosmos/1463160/indonisia-agnooyntai-pente-dimosiografoi-poy-pigan-na-kalypsoyn-tin-ekrixi-toy-ifaisteioy-krakatoa/",
+        "https://www.efsyn.gr/ellada/1463148/pethane-o-syndikalistis-kai-proin-proedros-tis-gsee-giorgos-raytopoylos/",
+        "https://www.efsyn.gr/kosmos/1463151/ollandia-i-kyvernisi-anakalei-tin-adeia-tileoptikoy-stathmoy-meta-apo-diloseis-yper-toy-hitler/",
+        "https://www.efsyn.gr/athlitismos/1463159/champions-league-epistrofi-me-to-dexi-gia-tin-aek-niki-stin-allwyn-arena-epi-tis-lintser/",
+        "https://www.efsyn.gr/politiki/1463142/elas-kata-ypen-gia-to-kostos-reymatos-anagkastikan-meta-apo-7-hronia-na-paradehthoyn-ayto-poy-arnoyntai/"
       ],
-      "seen_at_utc": "2026-09-08T18:30:06.763708+00:00"
+      "seen_at_utc": "2026-09-08T18:51:15.722004+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/6106050/",
-      "title": "LIVE: Ολυμπιακός – Βόλος",
-      "normalized_title": "LIVE: ΟΛΥΜΠΙΑΚΟΣ – ΒΟΛΟΣ",
+      "url": "https://www.in.gr/2026/09/08/world/xavai-sarotiko-to-perasma-tou-kyklona-looul-megales-zimies-apo-plimmyres-kai-anemous/",
+      "title": "Σαρωτικό το πέρασμα του κυκλώνα Λόουλ από τη Χαβάη – Μεγάλες ζημιές από πλημμύρες και ανέμους",
+      "normalized_title": "ΣΑΡΩΤΙΚΟ ΤΟ ΠΕΡΑΣΜΑ ΤΟΥ ΚΥΚΛΩΝΑ ΛΟΟΥΛ ΑΠΟ ΤΗ ΧΑΒΑΗ – ΜΕΓΑΛΕΣ ΖΗΜΙΕΣ ΑΠΟ ΠΛΗΜΜΥΡΕΣ ΚΑΙ ΑΝΕΜΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/6106050/"
+        "https://www.in.gr/2026/09/08/world/xavai-sarotiko-to-perasma-tou-kyklona-looul-megales-zimies-apo-plimmyres-kai-anemous/",
+        "https://www.in.gr/2026/09/08/sports/football/aek-lintser-1-0-me-to-deksi-i-enosi-sti-league-phase/",
+        "https://www.in.gr/2026/09/08/sports/football/champions-league/mpriz-aston-vila-2-3-diplo-gia-tous-xoriates-sto-velgio/",
+        "https://www.in.gr/2026/09/08/greece/tanagra-sygklonizoun-ta-nea-vinteo-apo-ti-syntrivi-tou-phantom-ti-kategrapsan-oi-kameres-ton-ergostasion/",
+        "https://www.in.gr/2026/09/08/life/culture-live/i-santra-mpoulok-kai-oi-genies-magisson-tou-practical-magic/"
       ],
-      "seen_at_utc": "2026-09-08T18:30:06.763661+00:00"
+      "seen_at_utc": "2026-09-08T18:51:15.721972+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T18:30:06.763821+00:00"
+  "updated_at_utc": "2026-09-08T18:51:15.722097+00:00"
 }
