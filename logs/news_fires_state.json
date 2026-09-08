@@ -1,14 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564422032/eortologio-poioi-giortazoyn-simera-8-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 8 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 8 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/society/564444397/dyo-epitheseis-me-ekriktika-se-katastimata-sto-kentro-tis-athinas/",
+      "title": "Δύο επιθέσεις με εκρηκτικά σε καταστήματα στο κέντρο της Αθήνας",
+      "normalized_title": "ΔΥΟ ΕΠΙΘΕΣΕΙΣ ΜΕ ΕΚΡΗΚΤΙΚΑ ΣΕ ΚΑΤΑΣΤΗΜΑΤΑ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564422032/eortologio-poioi-giortazoyn-simera-8-septemvrioy/",
-        "https://www.kathimerini.gr/economy/564440401/forodoxies-gnorizete-oti-464/"
+        "https://www.kathimerini.gr/society/564444397/dyo-epitheseis-me-ekriktika-se-katastimata-sto-kentro-tis-athinas/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564443875/i-toyrkia-ayxanei-kata-229-tis-dapanes-gia-tin-amyna/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564443872/epistrofi-stis-paraviaseis-apo-tin-agkyra/",
+        "https://www.kathimerini.gr/world/564444376/kievo-epanenarxi-ton-rosikon-pligmaton-epeita-apo-treis-imeres-anastolis-toylachiston-dyo-nekroi/",
+        "https://www.kathimerini.gr/economy/local/564444253/oi-meioseis-foron-gia-epaggelmaties-kai-epicheiriseis/",
+        "https://www.kathimerini.gr/visual/infographics/564444241/pos-moirazetai-to-paketo-ton-2-2-dis-eyro-tis-fetinis-deth/",
+        "https://www.kathimerini.gr/economy/564440476/toyristiko-alma-gia-ti-thessaloniki/",
+        "https://www.kathimerini.gr/economy/564440383/ena-aep-to-kokkino-idiotiko-chreos/",
+        "https://www.kathimerini.gr/visual/infographics/564443848/anisychitikoi-oionoi-apo-ti-germania-i-epomeni-imera-meta-ton-thriamvo-tis-afd/"
       ],
-      "seen_at_utc": "2026-09-07T21:17:05.639594+00:00"
+      "seen_at_utc": "2026-09-08T04:17:05.535514+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1267,67 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875369/sok-sti-lamia-dikigoros-vrethike-nekros-mesa-sto-diamerisma-tou-ton-anazitousan-pede-meres-oi-dikoi-tou/?utm_source=rss",
-      "title": "Σοκ στη Λαμία: Δικηγόρος βρέθηκε νεκρός μέσα στο διαμέρισμά του, τον αναζητούσαν πέντε μέρες οι δικοί του",
-      "normalized_title": "ΣΟΚ ΣΤΗ ΛΑΜΙΑ: ΔΙΚΗΓΟΡΟΣ ΒΡΕΘΗΚΕ ΝΕΚΡΟΣ ΜΕΣΑ ΣΤΟ ΔΙΑΜΕΡΙΣΜΑ ΤΟΥ, ΤΟΝ ΑΝΑΖΗΤΟΥΣΑΝ ΠΕΝΤΕ ΜΕΡΕΣ ΟΙ ΔΙΚΟΙ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1875405/22hronos-xulokopise-ti-18hroni-sudrofo-tou-sti-thessaloniki-kai-sto-dikastirio-dilose-oti-ego-etroga-sunithos-xulo/?utm_source=rss",
+      "title": "22χρονος ξυλοκόπησε τη 18χρονη σύντροφό του στη Θεσσαλονίκη και στο δικαστήριο δήλωσε ότι «εγώ έτρωγα συνήθως ξύλο»",
+      "normalized_title": "22ΧΡΟΝΟΣ ΞΥΛΟΚΟΠΗΣΕ ΤΗ 18ΧΡΟΝΗ ΣΥΝΤΡΟΦΟ ΤΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΚΑΙ ΣΤΟ ΔΙΚΑΣΤΗΡΙΟ ΔΗΛΩΣΕ ΟΤΙ «ΕΓΩ ΕΤΡΩΓΑ ΣΥΝΗΘΩΣ ΞΥΛΟ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875369/sok-sti-lamia-dikigoros-vrethike-nekros-mesa-sto-diamerisma-tou-ton-anazitousan-pede-meres-oi-dikoi-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875405/22hronos-xulokopise-ti-18hroni-sudrofo-tou-sti-thessaloniki-kai-sto-dikastirio-dilose-oti-ego-etroga-sunithos-xulo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875403/1200000-monadikoi-hristes-enimerothikan-hthes-deutera-7-septemvriou-apo-to-protothemagr/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875397/autoshedios-ekriktikos-mihanismos-se-katastima-ston-agio-padeleimona-egine-eleghomeni-ekrixi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-07T21:17:05.639751+00:00"
+      "seen_at_utc": "2026-09-08T04:17:05.535672+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1462441/kypseli-allazoyn-katathesi-oi-goneis-gia-ton-26hrono-emene-mazi-toys-kai-sto-allo-spiti-eipe-o-dikigoros-toys/",
-      "title": "Κυψέλη: Αλλάζουν κατάθεση οι γονείς για τον 26χρονο – «Εμενε μαζί τους και στο άλλο σπίτι» είπε ο δικηγόρος τους",
-      "normalized_title": "ΚΥΨΕΛΗ: ΑΛΛΑΖΟΥΝ ΚΑΤΑΘΕΣΗ ΟΙ ΓΟΝΕΙΣ ΓΙΑ ΤΟΝ 26ΧΡΟΝΟ – «ΕΜΕΝΕ ΜΑΖΙ ΤΟΥΣ ΚΑΙ ΣΤΟ ΑΛΛΟ ΣΠΙΤΙ» ΕΙΠΕ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥΣ",
+      "url": "https://www.efsyn.gr/ellada/1462482/synagermos-sto-kentro-tis-athinas-dyo-ekrixeis-se-katastimata-stin-omonoia-kai-ton-agio-panteleimona/",
+      "title": "Συναγερμός στο κέντρο της Αθήνας: Δύο εκρήξεις σε καταστήματα στην Ομόνοια και τον Άγιο Παντελεήμονα",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ: ΔΥΟ ΕΚΡΗΞΕΙΣ ΣΕ ΚΑΤΑΣΤΗΜΑΤΑ ΣΤΗΝ ΟΜΟΝΟΙΑ ΚΑΙ ΤΟΝ ΑΓΙΟ ΠΑΝΤΕΛΕΗΜΟΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1462441/kypseli-allazoyn-katathesi-oi-goneis-gia-ton-26hrono-emene-mazi-toys-kai-sto-allo-spiti-eipe-o-dikigoros-toys/",
-        "https://www.efsyn.gr/ellada/1462439/alexandros-giotopoylos-dimosia-ekklisi-me-125-ypografes-gia-tin-apofylakisi-toy/"
+        "https://www.efsyn.gr/ellada/1462482/synagermos-sto-kentro-tis-athinas-dyo-ekrixeis-se-katastimata-stin-omonoia-kai-ton-agio-panteleimona/",
+        "https://www.efsyn.gr/oikonomia/1462479/oi-syntaxioyhoi-zitoyn-epidoma-horis-ilikiakoys-apokleismoys/",
+        "https://www.efsyn.gr/politiki/1462473/elas-ayxiseis-se-misthotoys-kai-syntaxioyhoys-merimna-gia-amea/",
+        "https://www.efsyn.gr/ellada/1462463/dimosioi-ypalliloi-proeklogiki-omiria-me-epidomata-psihoyla/",
+        "https://www.efsyn.gr/tehnes/1462468/thanos-lampropoylos-pethane-xafnika-o-gnostos-paragogos-o-anthropos-poy-tolmise-dinontas-diarkeia-sti-mnimi/",
+        "https://www.efsyn.gr/oikonomia/1462455/stegastiki-krisi-nea-metra-palies-syntages-kai-ta-enoikia-sta-ypsi/",
+        "https://www.efsyn.gr/politiki/1462448/poly-liga-kai-poly-arga-se-dyskoli-thesi-i-nd-meta-tis-exaggelies-sti-deth-kai-to-neo-htypima-samara/",
+        "https://www.efsyn.gr/protoselida/akrodexia-anatrihila-stin-eyropi/",
+        "https://www.efsyn.gr/kosmos/1462456/mazikes-apelaseis-kai-xehorista-sholeia-gia-prosfyges-i-nea-germania-poy-oramatizetai-i-akrodexia-afd/",
+        "https://www.efsyn.gr/ellada/1462449/eortologio-poioi-giortazoyn-simera-8-septemvrioy/"
       ],
-      "seen_at_utc": "2026-09-07T21:17:05.639714+00:00"
+      "seen_at_utc": "2026-09-08T04:17:05.535630+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/economy/diethnis-oikonomia/tourkia-os-to-telos-tou-2026-i-proti-ilektriki-energeia-apo-ton-pyriniko-stathmo-sto-akougiou-grafei-i-sampax/",
-      "title": "Ηλεκτρική ενέργεια από τον πυρηνικό σταθμό στο Ακούγιου ως το τέλος του 2026",
-      "normalized_title": "ΗΛΕΚΤΡΙΚΗ ΕΝΕΡΓΕΙΑ ΑΠΟ ΤΟΝ ΠΥΡΗΝΙΚΟ ΣΤΑΘΜΟ ΣΤΟ ΑΚΟΥΓΙΟΥ ΩΣ ΤΟ ΤΕΛΟΣ ΤΟΥ 2026",
+      "url": "https://www.in.gr/2026/09/08/economy/epidoma-xristougennon-pos-apo-ta-500-eyro-tis-eksaggelias-tha-mpoun-molis-eos-kai-257-eyro-stin-tsepi/",
+      "title": "Επίδομα Χριστουγέννων: Πώς από τα 500 ευρώ της εξαγγελίας θα μπουν μόλις έως και 257 ευρώ στην τσέπη",
+      "normalized_title": "ΕΠΙΔΟΜΑ ΧΡΙΣΤΟΥΓΕΝΝΩΝ: ΠΩΣ ΑΠΟ ΤΑ 500 ΕΥΡΩ ΤΗΣ ΕΞΑΓΓΕΛΙΑΣ ΘΑ ΜΠΟΥΝ ΜΟΛΙΣ ΕΩΣ ΚΑΙ 257 ΕΥΡΩ ΣΤΗΝ ΤΣΕΠΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/economy/diethnis-oikonomia/tourkia-os-to-telos-tou-2026-i-proti-ilektriki-energeia-apo-ton-pyriniko-stathmo-sto-akougiou-grafei-i-sampax/"
+        "https://www.in.gr/2026/09/08/economy/epidoma-xristougennon-pos-apo-ta-500-eyro-tis-eksaggelias-tha-mpoun-molis-eos-kai-257-eyro-stin-tsepi/",
+        "https://www.in.gr/2026/09/08/health/enas-stous-treis-enilikes-den-kineitai-oso-xreiazetai/",
+        "https://www.in.gr/2026/09/08/life/geysi/syntagi-kaseropita-soufle-me-kapnisti-galopoula/",
+        "https://www.in.gr/2026/09/08/greece/pano-apo-50-ekat-to-kostos-ton-farmakon-kata-tis-paxysarkias/",
+        "https://www.in.gr/2026/09/08/greece/ekrikseis-se-dyo-katastimata-se-omonoia-kai-plateia-amerikis-agnostoi-petaksan-xeirovomvides/",
+        "https://www.in.gr/2026/09/08/greece/se-portokali-synagermo-6-perifereies-gia-kindyno-ekdilosis-pyrkagias-deite-xarti/",
+        "https://www.in.gr/2026/09/08/world/souidia-genikes-ekloges-ntermpi-tin-kyriaki-tha-exoume-saspens/",
+        "https://www.in.gr/2026/09/08/plus/vita/idou-i-aporia-giati-trome-eno-den-peiname/",
+        "https://www.in.gr/2026/09/08/greece/kairos-mikri-ptosi-tis-thermokrasias-kai-voriades-eos-7-mpofor-sto-aigaio-pou-anamenontai-vroxes/",
+        "https://www.in.gr/2026/09/08/go-fun/fizz/o-tzortz-loukas-gia-to-egxeirima-pou-paraligo-na-ton-kanei-na-ta-paratisei/",
+        "https://www.in.gr/2026/09/08/plus/vita/pos-ksepername-ti-melagxolia-meta-tis-diakopes/",
+        "https://www.in.gr/2026/09/08/economy/akinita-o-xartis-me-ola-ta-programmata-epidomata-kai-forokinitra/",
+        "https://www.in.gr/2026/09/08/go-fun/perierga/to-estiatorio-pou-apagoreyei-ta-kinita-i-nea-polyteleia-pou-kostizei-650-eyro/",
+        "https://www.in.gr/2026/09/08/economy/oikonomikes-eidiseis/mikromesaioi-kata-mitsotaki-meta-tin-psyxrolousia-tis-deth-o-prothypourgos-kanei-pos-den-katalavainei/",
+        "https://www.in.gr/2026/09/08/greece/dixazei-i-nekranastasi-tis-efarmogis-safe-bus/",
+        "https://www.in.gr/2026/09/08/world/germania-mporei-i-afd-na-sximatisei-kyvernisi-sti-saksonia-anxalt/",
+        "https://www.in.gr/2026/09/08/health/psyxiki-ygeia-kai-ergasia-stin-eyropi-otan-i-douleia-sou-se-arrostainei-ti-symvainei-stin-ellada/",
+        "https://www.in.gr/2026/09/08/go-fun/fizz/ciara-egkyos-sto-pempto-tis-paidi-me-ton-rasel-gouilson-tou-nfl/",
+        "https://www.in.gr/2026/09/08/world/o-netaniaxou-den-mporei-na-dikaiologisei-tis-protes-krisimes-ores-tis-7is-oktovriou-katigorei-ton-strato/",
+        "https://www.in.gr/2026/09/08/world/yemeni-oi-xouthi-anakoinonoun-pos-epliksan-stoxous-sti-saoudiki-aravia/",
+        "https://www.in.gr/2026/09/08/world/aiti-oi-symmories-eksaplonontai-stis-eparxies-yiothetontas-nees-taktikes/",
+        "https://www.in.gr/2026/09/08/world/oukrania-nea-pligmata-tis-rosias-kata-tou-kievou-epeita-apo-tin-triimeri-anastoli/",
+        "https://www.in.gr/2026/09/08/world/kolomvia-katafere-na-ksefygei-apo-tous-antartes-apaxtheis-ypaksiomatikos-tis-legeonas-ton-ksenon/",
+        "https://www.in.gr/2026/09/08/world/algeria-10-nekroi-se-karampola-me-fortigo-rymoulkoumeno-kai-alla-10-oximata/",
+        "https://www.in.gr/2026/09/08/world/ergostasio-tis-volkswagen-sti-germania-metatrepetai-se-polemiko-ergostasio-tis-rafael/"
       ],
-      "seen_at_utc": "2026-09-07T22:51:09.498164+00:00"
+      "seen_at_utc": "2026-09-08T04:17:05.535590+00:00"
     }
   },
-  "updated_at_utc": "2026-09-07T22:51:09.498250+00:00"
+  "updated_at_utc": "2026-09-08T04:17:05.535777+00:00"
 }
