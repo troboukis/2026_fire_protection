@@ -1,19 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564445288/reimagine-tourism-gr-st-aggeloydis-xekina-epithesi-stis-agores-tis-germanias-agglias-kai-gallias-gia-toyristiki-provoli-tis-thessalonikis-paleyoyme-tin-apeytheias-ptisi-me-tis-ipa/",
-      "title": "Στ. Αγγελούδης: «Ξεκινά επίθεση στις αγορές της Γερμανίας, Αγγλίας και Γαλλίας για τουριστική προβολή της Θεσσαλονίκης – Παλεύουμε την απευθείας πτήση με τις ΗΠΑ»",
-      "normalized_title": "ΣΤ. ΑΓΓΕΛΟΥΔΗΣ: «ΞΕΚΙΝΑ ΕΠΙΘΕΣΗ ΣΤΙΣ ΑΓΟΡΕΣ ΤΗΣ ΓΕΡΜΑΝΙΑΣ, ΑΓΓΛΙΑΣ ΚΑΙ ΓΑΛΛΙΑΣ ΓΙΑ ΤΟΥΡΙΣΤΙΚΗ ΠΡΟΒΟΛΗ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ – ΠΑΛΕΥΟΥΜΕ ΤΗΝ ΑΠΕΥΘΕΙΑΣ ΠΤΗΣΗ ΜΕ ΤΙΣ ΗΠΑ»",
+      "url": "https://www.kathimerini.gr/world/564445297/oykrania-o-zelenski-elpizei-na-synantithei-me-ton-tramp-mesa-ston-septemvrio/",
+      "title": "Ουκρανία: Ο Ζελένσκι ελπίζει να συναντηθεί με τον Τραμπ μέσα στον Σεπτέμβριο",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: Ο ΖΕΛΕΝΣΚΙ ΕΛΠΙΖΕΙ ΝΑ ΣΥΝΑΝΤΗΘΕΙ ΜΕ ΤΟΝ ΤΡΑΜΠ ΜΕΣΑ ΣΤΟΝ ΣΕΠΤΕΜΒΡΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564445288/reimagine-tourism-gr-st-aggeloydis-xekina-epithesi-stis-agores-tis-germanias-agglias-kai-gallias-gia-toyristiki-provoli-tis-thessalonikis-paleyoyme-tin-apeytheias-ptisi-me-tis-ipa/",
-        "https://www.kathimerini.gr/economy/564440410/ta-aorata-akinita-ton-dimon/",
-        "https://www.kathimerini.gr/world/564443845/i-niki-tis-afd-dinei-othisi-se-akraies-dynameis-stin-eyropi/",
-        "https://www.kathimerini.gr/opinion/sketches/564445096/skitso-toy-ilia-makri-08-09-26/",
-        "https://www.kathimerini.gr/society/564445264/poly-ypsilos-kindynos-pyrkagias-tin-tetarti-se-attiki-kai-eyvoia/",
-        "https://www.kathimerini.gr/world/564445252/germania-synelifthi-ypoptos-gia-doliofthores-sto-energeiako-diktyo/",
-        "https://www.kathimerini.gr/politics/564445261/stin-aigypto-o-prothypoyrgos-se-exelixi-i-synantisi-me-sisi/"
+        "https://www.kathimerini.gr/world/564445297/oykrania-o-zelenski-elpizei-na-synantithei-me-ton-tramp-mesa-ston-septemvrio/",
+        "https://www.kathimerini.gr/society/564445276/serres-synelifthi-26chronos-gia-apates-prospoioymenos-ton-logisti/"
       ],
-      "seen_at_utc": "2026-09-08T11:17:18.174820+00:00"
+      "seen_at_utc": "2026-09-08T11:30:03.612996+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,45 +1260,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875645/diki-gia-ta-tebi-xekinise-i-katathesi-tou-adoni-psaropoulou-aitima-na-eleghthei-to-kinito-tou-stathmarhi/?utm_source=rss",
-      "title": "Δίκη για τα Τέμπη: Κατέθεσε ο Αντώνης Ψαρόπουλος - Αίτημα να ελεγχθεί το κινητό του σταθμάρχη",
-      "normalized_title": "ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ: ΚΑΤΕΘΕΣΕ Ο ΑΝΤΩΝΗΣ ΨΑΡΟΠΟΥΛΟΣ - ΑΙΤΗΜΑ ΝΑ ΕΛΕΓΧΘΕΙ ΤΟ ΚΙΝΗΤΟ ΤΟΥ ΣΤΑΘΜΑΡΧΗ",
+      "url": "https://www.protothema.gr/greece/article/1875646/pisa-2025-mikri-anakampsi-gia-tin-ellada-alla-shedon-1-stous-2-mathites-kato-apo-to-vasiko-epipedo-sta-mathimatika/?utm_source=rss",
+      "title": "PISA 2025: Μικρή ανάκαμψη για την Ελλάδα, αλλά σχεδόν 1 στους 2 μαθητές κάτω από το βασικό επίπεδο στα Μαθηματικά",
+      "normalized_title": "PISA 2025: ΜΙΚΡΗ ΑΝΑΚΑΜΨΗ ΓΙΑ ΤΗΝ ΕΛΛΑΔΑ, ΑΛΛΑ ΣΧΕΔΟΝ 1 ΣΤΟΥΣ 2 ΜΑΘΗΤΕΣ ΚΑΤΩ ΑΠΟ ΤΟ ΒΑΣΙΚΟ ΕΠΙΠΕΔΟ ΣΤΑ ΜΑΘΗΜΑΤΙΚΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875645/diki-gia-ta-tebi-xekinise-i-katathesi-tou-adoni-psaropoulou-aitima-na-eleghthei-to-kinito-tou-stathmarhi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875646/pisa-2025-mikri-anakampsi-gia-tin-ellada-alla-shedon-1-stous-2-mathites-kato-apo-to-vasiko-epipedo-sta-mathimatika/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T11:17:18.174909+00:00"
+      "seen_at_utc": "2026-09-08T11:30:03.613126+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1462820/eftase-stin-aigypto-o-kyriakos-mitsotakis-se-exelixi-i-synantisi-me-al-sisi/",
-      "title": "Στην Αίγυπτο ο Κυριάκος Μητσοτάκης – Σε εξέλιξη η συνάντηση με τον Αμπντέλ Φατάχ αλ-Σίσι",
-      "normalized_title": "ΣΤΗΝ ΑΙΓΥΠΤΟ Ο ΚΥΡΙΑΚΟΣ ΜΗΤΣΟΤΑΚΗΣ – ΣΕ ΕΞΕΛΙΞΗ Η ΣΥΝΑΝΤΗΣΗ ΜΕ ΤΟΝ ΑΜΠΝΤΕΛ ΦΑΤΑΧ ΑΛ-ΣΙΣΙ",
+      "url": "https://www.efsyn.gr/kosmos/1462839/ekpliktoi-o-hari-kai-i-megkan-apo-tin-epistoli-toy-vasilia-karoloy-shetika-me-to-kathestos-toys/",
+      "title": "Έκπληκτοι ο Χάρι και η Μέγκαν από την επιστολή του βασιλιά Καρόλου σχετικά με το καθεστώς τους",
+      "normalized_title": "ΕΚΠΛΗΚΤΟΙ Ο ΧΑΡΙ ΚΑΙ Η ΜΕΓΚΑΝ ΑΠΟ ΤΗΝ ΕΠΙΣΤΟΛΗ ΤΟΥ ΒΑΣΙΛΙΑ ΚΑΡΟΛΟΥ ΣΧΕΤΙΚΑ ΜΕ ΤΟ ΚΑΘΕΣΤΩΣ ΤΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1462820/eftase-stin-aigypto-o-kyriakos-mitsotakis-se-exelixi-i-synantisi-me-al-sisi/",
-        "https://www.efsyn.gr/oikonomia/1462799/ihiri-paremvasi-17-naytiliakon-dynameon-kai-tis-elladas-oi-pagkosmioi-kanones-naytilias-katarreoyn/",
-        "https://www.efsyn.gr/kosmos/1462813/i-theoyta-einai-mia-hytra-tahytitas-poy-mporei-na-ekragei-kathe-lepto-leei-o-dimarhos-tis-polis/",
-        "https://www.efsyn.gr/stiles/1462750/o-adonis-oi-mizeroi-oi-arhaiotites-kai-oi-ahreiotites/",
-        "https://www.efsyn.gr/stiles/1462697/pasok-oraia-hronia/",
-        "https://www.efsyn.gr/stiles/1462714/opoios-prospathei-na-fovisei-toys-polloys/",
-        "https://www.efsyn.gr/stiles/1462758/skoteini-ipeiros/"
+        "https://www.efsyn.gr/kosmos/1462839/ekpliktoi-o-hari-kai-i-megkan-apo-tin-epistoli-toy-vasilia-karoloy-shetika-me-to-kathestos-toys/",
+        "https://www.efsyn.gr/politiki/1462801/zaharaki-gia-to-anyparkto-woke-thema-se-vivlia-dimotikoy-den-eimai-edo-na-logokrino/",
+        "https://www.efsyn.gr/politiki/1462829/fotoniata-gia-kyvernisi-epta-hronia-meta-megethynsi-stoys-arithmoys-ypohorisi-stin-pragmatiki-zoi/"
       ],
-      "seen_at_utc": "2026-09-08T11:17:18.174890+00:00"
+      "seen_at_utc": "2026-09-08T11:30:03.613091+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/sports/basketball/euroleague/oi-timpergoulvs-eksetasan-tin-periptosi-tou-vezenkof-ti-apantise-o-mvp-tis-euroleague/",
-      "title": "«Οι Τίμπεργουλβς εξέτασαν την περίπτωση του Βεζένκοφ» – Τι απάντησε ο MVP της Euroleague",
-      "normalized_title": "«ΟΙ ΤΙΜΠΕΡΓΟΥΛΒΣ ΕΞΕΤΑΣΑΝ ΤΗΝ ΠΕΡΙΠΤΩΣΗ ΤΟΥ ΒΕΖΕΝΚΟΦ» – ΤΙ ΑΠΑΝΤΗΣΕ Ο MVP ΤΗΣ EUROLEAGUE",
+      "url": "https://www.in.gr/2026/09/08/world/nepal-ayksithike-o-arithmos-ton-agnooumenon-stous-1-357-eftasan-oi-nekroi/",
+      "title": "Νεπάλ: Αυξήθηκε ο αριθμός των αγνοούμενων – Στους 1.357 έφτασαν οι νεκροί",
+      "normalized_title": "ΝΕΠΑΛ: ΑΥΞΗΘΗΚΕ Ο ΑΡΙΘΜΟΣ ΤΩΝ ΑΓΝΟΟΥΜΕΝΩΝ – ΣΤΟΥΣ 1.357 ΕΦΤΑΣΑΝ ΟΙ ΝΕΚΡΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/sports/basketball/euroleague/oi-timpergoulvs-eksetasan-tin-periptosi-tou-vezenkof-ti-apantise-o-mvp-tis-euroleague/",
-        "https://www.in.gr/2026/09/08/politics/aftodioikisi/allazei-opsi-plateia-tis-kastorias/",
-        "https://www.in.gr/2026/09/08/politics/politiki-grammateia/androulakis-exoume-orama-kai-makroprothesmo-sxedio-gia-tin-patrida-den-sxediazoume-me-to-vlemma-stin-kalpi/",
-        "https://www.in.gr/2026/09/08/world/o-tramp-paizei-me-tis-kokkines-grammes-tou-iran-pos-sproxnei-tin-texerani-sti-stratiotiki-klimakosi/",
-        "https://www.in.gr/2026/09/08/stories/o-alitis-pou-egine-tzentleman-i-anekselegkti-zoi-tou-vini-tzoouns/",
-        "https://www.in.gr/2026/09/08/politics/aftodioikisi/foul-tis-anagnosis-sti-dimotiki-vivliothiki-kavalas/",
-        "https://www.in.gr/2026/09/08/politics/politiki-grammateia/koufonikolakou-stoxos-tis-elas-einai-na-stiriksei-tin-koinonia-kai-na-katapolemisei-ti-diafthora/",
-        "https://www.in.gr/2026/09/08/sports/football/champions-league/oi-opadoi-theloun-tin-epanafora-tou-paliou-ymnou-tou-champions-league-vids/"
+        "https://www.in.gr/2026/09/08/world/nepal-ayksithike-o-arithmos-ton-agnooumenon-stous-1-357-eftasan-oi-nekroi/"
       ],
-      "seen_at_utc": "2026-09-08T11:17:18.174868+00:00"
+      "seen_at_utc": "2026-09-08T11:30:03.613036+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T11:17:18.174971+00:00"
+  "updated_at_utc": "2026-09-08T11:30:03.613189+00:00"
 }
