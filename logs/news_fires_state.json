@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564445366/germania-i-afd-prepei-na-kyvernisei-sti-saxonia-anchalt-dilonoyn-exi-stoys-deka/",
-      "title": "Γερμανία: Η AfD πρέπει να κυβερνήσει στη Σαξονία-Ανχαλτ, δηλώνουν έξι στους δέκα",
-      "normalized_title": "ΓΕΡΜΑΝΙΑ: Η AFD ΠΡΕΠΕΙ ΝΑ ΚΥΒΕΡΝΗΣΕΙ ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ, ΔΗΛΩΝΟΥΝ ΕΞΙ ΣΤΟΥΣ ΔΕΚΑ",
+      "url": "https://www.kathimerini.gr/economy/564445384/oinotoyrismos-kai-politismos-denoyn-ti-thessaloniki-me-ti-voreia-ellada/",
+      "title": "Οινοτουρισμός και πολιτισμός «δένουν» τη Θεσσαλονίκη με τη Βόρεια Ελλάδα",
+      "normalized_title": "ΟΙΝΟΤΟΥΡΙΣΜΟΣ ΚΑΙ ΠΟΛΙΤΙΣΜΟΣ «ΔΕΝΟΥΝ» ΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΜΕ ΤΗ ΒΟΡΕΙΑ ΕΛΛΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564445366/germania-i-afd-prepei-na-kyvernisei-sti-saxonia-anchalt-dilonoyn-exi-stoys-deka/",
-        "https://www.kathimerini.gr/world/564445351/gallia-sto-edolio-14-andres-gia-to-pio-polynekro-nayagio-mikroy-skafoys-sti-magchi/",
-        "https://www.kathimerini.gr/world/564445333/eurostar-kathysteriseis-sta-dromologia-meta-apo-parasyrsi-atomoy-stis-rages/",
-        "https://www.kathimerini.gr/world/564445336/kontra-rosias-iaponias-gia-neo-mnimeio-toy-v-pagkosmioy-polemoy/",
-        "https://www.kathimerini.gr/world/564445312/to-tokio-vazei-freno-sta-airbnb-sto-stochastro-2-000-katalymata/",
-        "https://www.kathimerini.gr/columns/564445324/o-paok-ekane-ti-dyskoli-archi-akomi-dyskoloteri/"
+        "https://www.kathimerini.gr/economy/564445384/oinotoyrismos-kai-politismos-denoyn-ti-thessaloniki-me-ti-voreia-ellada/",
+        "https://www.kathimerini.gr/culture/agenda/564445402/exodos-stin-athina-tin-triti-8-9-cha-nides-kai-k-pop/",
+        "https://www.kathimerini.gr/world/564445372/i-theoyta-deichnei-to-maroko-os-ypeythyno-gia-ti-metanasteytiki-krisi/",
+        "https://www.kathimerini.gr/world/564445363/nepal-stoys-5-326-oi-agnooymenoi-meta-ti-foniki-katolisthisi-1-357-oi-nekroi/"
       ],
-      "seen_at_utc": "2026-09-08T11:51:14.148588+00:00"
+      "seen_at_utc": "2026-09-08T12:17:11.000625+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875650/tautopoiithike-o-17hronos-pou-xerizose-ta-kolonakia-ston-voak-erixe-to-autokinito-se-gremo-gia-na-exafanisei-ta-ihni/?utm_source=rss",
-      "title": "Ταυτοποιήθηκε ο 17χρονος που ξερίζωσε τα κολονάκια στον ΒΟΑΚ, έριξε το αυτοκίνητο σε γκρεμό για να εξαφανίσει τα ίχνη",
-      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ Ο 17ΧΡΟΝΟΣ ΠΟΥ ΞΕΡΙΖΩΣΕ ΤΑ ΚΟΛΟΝΑΚΙΑ ΣΤΟΝ ΒΟΑΚ, ΕΡΙΞΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΣΕ ΓΚΡΕΜΟ ΓΙΑ ΝΑ ΕΞΑΦΑΝΙΣΕΙ ΤΑ ΙΧΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1875665/se-red-code-attiki-kai-euvoia-tin-tetarti-polu-upsilos-kindunos-purkagias/?utm_source=rss",
+      "title": "Σε Red Code Αττική και Εύβοια την Τετάρτη, πολύ υψηλός κίνδυνος πυρκαγιάς",
+      "normalized_title": "ΣΕ RED CODE ΑΤΤΙΚΗ ΚΑΙ ΕΥΒΟΙΑ ΤΗΝ ΤΕΤΑΡΤΗ, ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ ΠΥΡΚΑΓΙΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875650/tautopoiithike-o-17hronos-pou-xerizose-ta-kolonakia-ston-voak-erixe-to-autokinito-se-gremo-gia-na-exafanisei-ta-ihni/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875665/se-red-code-attiki-kai-euvoia-tin-tetarti-polu-upsilos-kindunos-purkagias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875662/agrios-xulodarmos-15hronou-exo-apo-to-spiti-sto-irakleio-tou-apo-duo-sunomilikous-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T11:51:14.148739+00:00"
+      "seen_at_utc": "2026-09-08T12:17:11.000752+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1462862/dasmoi-o-kanadas-etoimazetai-gia-makrohronio-emporiko-polemo-me-tis-ipa-horis-symfonia-ston-orizonta/",
-      "title": "Δασμοί: Ο Καναδάς ετοιμάζεται για μακροχρόνιο εμπορικό πόλεμο με τις ΗΠΑ – Χωρίς συμφωνία στον ορίζοντα",
-      "normalized_title": "ΔΑΣΜΟΙ: Ο ΚΑΝΑΔΑΣ ΕΤΟΙΜΑΖΕΤΑΙ ΓΙΑ ΜΑΚΡΟΧΡΟΝΙΟ ΕΜΠΟΡΙΚΟ ΠΟΛΕΜΟ ΜΕ ΤΙΣ ΗΠΑ – ΧΩΡΙΣ ΣΥΜΦΩΝΙΑ ΣΤΟΝ ΟΡΙΖΟΝΤΑ",
+      "url": "https://www.efsyn.gr/ellada/1462897/i-oikogeneia-tis-kyriakis-gia-tin-parapompi-ton-astynomikon-vimata-alitheias-kai-apodosis-eythynon/",
+      "title": "Η οικογένεια της Κυριακής για την παραπομπή των αστυνομικών: «Βήματα αλήθειας και απόδοσης ευθυνών»",
+      "normalized_title": "Η ΟΙΚΟΓΕΝΕΙΑ ΤΗΣ ΚΥΡΙΑΚΗΣ ΓΙΑ ΤΗΝ ΠΑΡΑΠΟΜΠΗ ΤΩΝ ΑΣΤΥΝΟΜΙΚΩΝ: «ΒΗΜΑΤΑ ΑΛΗΘΕΙΑΣ ΚΑΙ ΑΠΟΔΟΣΗΣ ΕΥΘΥΝΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1462862/dasmoi-o-kanadas-etoimazetai-gia-makrohronio-emporiko-polemo-me-tis-ipa-horis-symfonia-ston-orizonta/",
-        "https://www.efsyn.gr/politiki/1462852/o-polakis-tha-einai-sti-deth-leei-o-nikos-pappas-min-anazitate-foyrtoynes-ekei-poy-yparhei-mpoynatsa/"
+        "https://www.efsyn.gr/ellada/1462897/i-oikogeneia-tis-kyriakis-gia-tin-parapompi-ton-astynomikon-vimata-alitheias-kai-apodosis-eythynon/",
+        "https://www.efsyn.gr/politiki/1462876/i-gkilfoil-haraktirise-tin-v-ellada-os-silicon-valley-sto-apogeio-tis-akmi-tis/",
+        "https://www.efsyn.gr/politiki/1462875/o-polakis-ston-oikonomiko-eisaggelea-gia-tin-ypothesi-novartis-kai-ta-adieykrinista-toy-georgiadi-vinteo/",
+        "https://www.efsyn.gr/ellada/1462851/diki-tempon-o-psaropoylos-zita-dieyrynsi-ton-dioxeon-gia-hellenic-train-aitima-kai-gia-elegho-toy-kinitoy-toy-stathmarhi/",
+        "https://www.efsyn.gr/ellada/1462874/neo-thriler-stin-kypseli-pos-ena-astoho-soyt-odigise-ston-entopismo-tis-sakoylas-me-ta-anthropina-osta-vinteo/",
+        "https://www.efsyn.gr/politiki/1462866/tsoykalas-gia-georgiadi-den-einai-kalos-ypoyrgos-alla-einai-megalo-ypokritiko-talento-sti-komodia/"
       ],
-      "seen_at_utc": "2026-09-08T11:51:14.148690+00:00"
+      "seen_at_utc": "2026-09-08T12:17:11.000728+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/08/go-fun/fizz/to-south-park-xleyazei-ton-tramp-epitelous-pires-to-emmy-sou/",
-      "title": "Το South Park χλευάζει τον Τραμπ: «Επιτέλους πήρες το Emmy σου!»",
-      "normalized_title": "ΤΟ SOUTH PARK ΧΛΕΥΑΖΕΙ ΤΟΝ ΤΡΑΜΠ: «ΕΠΙΤΕΛΟΥΣ ΠΗΡΕΣ ΤΟ EMMY ΣΟΥ!»",
+      "url": "https://www.in.gr/2026/09/08/inview/inshorts/taytopoiithike-o-17xronos-pou-ksilose-ta-kolonakia-ston-voak-erikse-to-aytokinito-sti-thalassa-gia-na-svisei-ta-ixni/",
+      "title": "Ταυτοποιήθηκε ο 17χρονος που ξήλωσε τα κολωνάκια στον ΒΟΑΚ – Έριξε το αυτοκίνητο στη θάλασσα για να σβήσει τα ίχνη",
+      "normalized_title": "ΤΑΥΤΟΠΟΙΗΘΗΚΕ Ο 17ΧΡΟΝΟΣ ΠΟΥ ΞΗΛΩΣΕ ΤΑ ΚΟΛΩΝΑΚΙΑ ΣΤΟΝ ΒΟΑΚ – ΕΡΙΞΕ ΤΟ ΑΥΤΟΚΙΝΗΤΟ ΣΤΗ ΘΑΛΑΣΣΑ ΓΙΑ ΝΑ ΣΒΗΣΕΙ ΤΑ ΙΧΝΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/08/go-fun/fizz/to-south-park-xleyazei-ton-tramp-epitelous-pires-to-emmy-sou/",
-        "https://www.in.gr/2026/09/08/sports/football/aek-lask-0-0-eleipse-to-gkol-gia-tin-enosi-stin-premiera-tou-youth-league/",
-        "https://www.in.gr/2026/09/08/world/i-nikaragoua-kataggellei-oti-oi-germanikes-eksagoges-oplon-pros-to-israil-paraviazoun-to-diethnes-dikaio/"
+        "https://www.in.gr/2026/09/08/inview/inshorts/taytopoiithike-o-17xronos-pou-ksilose-ta-kolonakia-ston-voak-erikse-to-aytokinito-sti-thalassa-gia-na-svisei-ta-ixni/",
+        "https://www.in.gr/2026/09/08/world/ipa-to-fovountai-oi-amerikanoi-25-xronia-meta-tin-11i-septemvriou/",
+        "https://www.in.gr/2026/09/08/sports/football/ntiegko-kosta-anypomono-na-paikso-stin-toumpa-pic/"
       ],
-      "seen_at_utc": "2026-09-08T11:51:14.148636+00:00"
+      "seen_at_utc": "2026-09-08T12:17:11.000696+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T11:51:14.148823+00:00"
+  "updated_at_utc": "2026-09-08T12:17:11.000878+00:00"
 }
