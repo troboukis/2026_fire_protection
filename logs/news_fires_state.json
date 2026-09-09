@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564447715/dypa-anoigei-ayrio-i-platforma-gia-to-eidiko-epochiko-voithima-2026/",
-      "title": "ΔΥΠΑ: Ανοίγει αύριο η πλατφόρμα για το ειδικό εποχικό βοήθημα 2026",
-      "normalized_title": "ΔΥΠΑ: ΑΝΟΙΓΕΙ ΑΥΡΙΟ Η ΠΛΑΤΦΟΡΜΑ ΓΙΑ ΤΟ ΕΙΔΙΚΟ ΕΠΟΧΙΚΟ ΒΟΗΘΗΜΑ 2026",
+      "url": "https://www.kathimerini.gr/world/564447718/i-norvigia-apochaireta-ton-vasilia-charalnt-e/",
+      "title": "Η Νορβηγία αποχαιρετά τον βασιλιά Χάραλντ Ε΄",
+      "normalized_title": "Η ΝΟΡΒΗΓΙΑ ΑΠΟΧΑΙΡΕΤΑ ΤΟΝ ΒΑΣΙΛΙΑ ΧΑΡΑΛΝΤ Ε΄",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564447715/dypa-anoigei-ayrio-i-platforma-gia-to-eidiko-epochiko-voithima-2026/",
-        "https://www.kathimerini.gr/society/564447706/pyrkagia-se-exoteriko-choro-epicheirisis-sto-oraiokastro/"
+        "https://www.kathimerini.gr/world/564447718/i-norvigia-apochaireta-ton-vasilia-charalnt-e/",
+        "https://www.kathimerini.gr/society/ekpaideysi/564447658/scholeia-poia-proionta-menoyn-ektos-kylikeion-oi-neoi-kanones-toy-eody/",
+        "https://www.kathimerini.gr/world/564447703/polemos-sto-iran-ta-stena-toy-ormoyz-metatrepontai-se-perivallontiki-pyritidapothiki/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564447739/pos-diavazoyn-ta-toyrkika-mme-tis-synantiseis-mitsotaki-me-sisi-kai-makron/"
       ],
-      "seen_at_utc": "2026-09-09T12:30:23.754792+00:00"
+      "seen_at_utc": "2026-09-09T12:51:12.558755+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876234/sunelifthi-anilikos-pou-paresure-pezo-me-motosikleta-stin-ko/?utm_source=rss",
-      "title": "Συνελήφθη ανήλικος που παρέσυρε πεζό με μοτοσικλέτα στην Κω",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΑΝΗΛΙΚΟΣ ΠΟΥ ΠΑΡΕΣΥΡΕ ΠΕΖΟ ΜΕ ΜΟΤΟΣΙΚΛΕΤΑ ΣΤΗΝ ΚΩ",
+      "url": "https://www.protothema.gr/greece/article/1876245/sti-fulaki-o-33hronos-protagonistis-erotikon-tainion-pou-katigoreitai-oti-exedide-anilikes/?utm_source=rss",
+      "title": "Στη φυλακή ο 33χρονος πρωταγωνιστής ερωτικών ταινιών που κατηγορείται ότι εξέδιδε ανήλικες – Τι ισχυρίστηκε στην απολογία του",
+      "normalized_title": "ΣΤΗ ΦΥΛΑΚΗ Ο 33ΧΡΟΝΟΣ ΠΡΩΤΑΓΩΝΙΣΤΗΣ ΕΡΩΤΙΚΩΝ ΤΑΙΝΙΩΝ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΟΤΙ ΕΞΕΔΙΔΕ ΑΝΗΛΙΚΕΣ – ΤΙ ΙΣΧΥΡΙΣΤΗΚΕ ΣΤΗΝ ΑΠΟΛΟΓΙΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876234/sunelifthi-anilikos-pou-paresure-pezo-me-motosikleta-stin-ko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876245/sti-fulaki-o-33hronos-protagonistis-erotikon-tainion-pou-katigoreitai-oti-exedide-anilikes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T12:30:23.754880+00:00"
+      "seen_at_utc": "2026-09-09T12:51:12.558880+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463695/apati-mamoyth-ypsoys-40-ekat-eyro-kata-toy-dimosioy-sto-mikroskopio-46-prosopa-kai-152-etaireies/",
-      "title": "Απάτη μαμούθ ύψους 40 εκατ. ευρώ κατά του Δημοσίου: Στο μικροσκόπιο 46 πρόσωπα και 152 εταιρείες",
-      "normalized_title": "ΑΠΑΤΗ ΜΑΜΟΥΘ ΥΨΟΥΣ 40 ΕΚΑΤ. ΕΥΡΩ ΚΑΤΑ ΤΟΥ ΔΗΜΟΣΙΟΥ: ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ 46 ΠΡΟΣΩΠΑ ΚΑΙ 152 ΕΤΑΙΡΕΙΕΣ",
+      "url": "https://www.efsyn.gr/politiki/1463714/doyroy-dosame-idi-ena-proto-deigma-grafis-gia-ti-deth-proteinoyme-mia-megali-allagi-me-ton-efka/",
+      "title": "Δούρου: Δώσαμε ήδη ένα πρώτο δείγμα γραφής για τη ΔΕΘ – Προτείνουμε μια μεγάλη αλλαγή με τον ΕΦΚΑ",
+      "normalized_title": "ΔΟΥΡΟΥ: ΔΩΣΑΜΕ ΗΔΗ ΕΝΑ ΠΡΩΤΟ ΔΕΙΓΜΑ ΓΡΑΦΗΣ ΓΙΑ ΤΗ ΔΕΘ – ΠΡΟΤΕΙΝΟΥΜΕ ΜΙΑ ΜΕΓΑΛΗ ΑΛΛΑΓΗ ΜΕ ΤΟΝ ΕΦΚΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463695/apati-mamoyth-ypsoys-40-ekat-eyro-kata-toy-dimosioy-sto-mikroskopio-46-prosopa-kai-152-etaireies/",
-        "https://www.efsyn.gr/ellada/1463698/thessaloniki-pyrkagia-se-exoteriko-horo-epiheirisis-sto-oraiokastro/",
-        "https://www.efsyn.gr/oikonomia/1463512/toyrismos-kai-trofima-dinoyn-othisi-sta-soypermarket/",
-        "https://www.efsyn.gr/kosmos/1463694/o-netaniahoy-minyei-ti-haaretz-gia-sykofantiki-dysfimisi-meta-tin-apokalypsi-pos-ixere-gia-tin-epithesi-tis-hamas/"
+        "https://www.efsyn.gr/politiki/1463714/doyroy-dosame-idi-ena-proto-deigma-grafis-gia-ti-deth-proteinoyme-mia-megali-allagi-me-ton-efka/",
+        "https://www.efsyn.gr/kosmos/1463709/to-eyropaiko-dikastirio-aperripse-tin-prosfygi-ampramovits-kata-ton-kyroseon-tis-ee/",
+        "https://www.efsyn.gr/kosmos/1463708/o-kyvos-errifthi-stin-servia-stis-25-oktovrioy-oi-voyleytikes-ekloges/",
+        "https://www.efsyn.gr/politiki/1463707/pappas-efka-kai-anaptyxiaki-trapeza-apenanti-sta-funds-prepei-na-agorastoyn-piso-ta-mpoyketa-ton-akiniton/",
+        "https://www.efsyn.gr/oikonomia/1463524/kaysima-fotia-stis-tsepes-mas-me-tin-kyvernisi-apoysa-apogeionetai-i-timi-se-amolyvdi-kai-petrelaio-kinisis/"
       ],
-      "seen_at_utc": "2026-09-09T12:30:23.754863+00:00"
+      "seen_at_utc": "2026-09-09T12:51:12.558845+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/politics/aftodioikisi/istoriki-adelfopoiisi-tis-arxaias-olympias-me-to-gold-coast-tis-aystralias/",
-      "title": "Ιστορική αδελφοποίηση της Αρχαίας Ολυμπίας με το Gold Coast της Αυστραλίας",
-      "normalized_title": "ΙΣΤΟΡΙΚΗ ΑΔΕΛΦΟΠΟΙΗΣΗ ΤΗΣ ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ ΜΕ ΤΟ GOLD COAST ΤΗΣ ΑΥΣΤΡΑΛΙΑΣ",
+      "url": "https://www.in.gr/2026/09/09/go-fun/music-stage/antonis-remos-30-xronia-oli-i-thessaloniki-mia-megali-giorti/",
+      "title": "Αντώνης Ρέμος – 30 χρόνια: Όλη η Θεσσαλονίκη μια μεγάλη γιορτή",
+      "normalized_title": "ΑΝΤΩΝΗΣ ΡΕΜΟΣ – 30 ΧΡΟΝΙΑ: ΟΛΗ Η ΘΕΣΣΑΛΟΝΙΚΗ ΜΙΑ ΜΕΓΑΛΗ ΓΙΟΡΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/politics/aftodioikisi/istoriki-adelfopoiisi-tis-arxaias-olympias-me-to-gold-coast-tis-aystralias/",
-        "https://www.in.gr/2026/09/09/sports/football/ntortmount-ola-kala-me-karetsa-ti-edeiksan-oi-eksetaseis-pic/",
-        "https://www.in.gr/2026/09/09/life/culture-live/anakalyfthike-kala-diatirimenos-tafos-tis-pemptis-dynasteias-farao-konta-sti-sakara/",
-        "https://www.in.gr/2026/09/09/greece/apisteyto-peristatiko-stou-renti-34xronos-ollandos-eklepse-taksi-kai-paresyre-ton-odigo/"
+        "https://www.in.gr/2026/09/09/go-fun/music-stage/antonis-remos-30-xronia-oli-i-thessaloniki-mia-megali-giorti/",
+        "https://www.in.gr/2026/09/09/sports/basketball/episimo-metakomizei-sti-sunel-arena-o-olympiakos-i-anakoinosi-tis-kae-pic/",
+        "https://www.in.gr/2026/09/09/world/sok-me-nea-ypothesi-peliko-stin-aystria-nekri-39xroni-o-syzygos-tis-tin-narkone-kai-tin-eksedide/",
+        "https://www.in.gr/2026/09/09/greece/mamouth-forologiki-apati-46-prosopa-kai-152-etaireies-sto-stoxastro/",
+        "https://www.in.gr/2026/09/09/greece/ypsilos-kindynos-gia-fotia-tin-pempti-deite-ton-xarti-me-tis-perioxes/"
       ],
-      "seen_at_utc": "2026-09-09T12:30:23.754833+00:00"
+      "seen_at_utc": "2026-09-09T12:51:12.558808+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T12:30:23.754954+00:00"
+  "updated_at_utc": "2026-09-09T12:51:12.558952+00:00"
 }
