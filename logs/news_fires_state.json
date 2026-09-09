@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564447160/paizoyn-me-tis-zoes-mas-paraitithike-ereynitis-tis-anthropic-logo-anisychion-gia-tin-ai/",
-      "title": "«Παίζουν με τις ζωές μας»: Παραιτήθηκε ερευνητής της Anthropic λόγω ανησυχιών για την AI",
-      "normalized_title": "«ΠΑΙΖΟΥΝ ΜΕ ΤΙΣ ΖΩΕΣ ΜΑΣ»: ΠΑΡΑΙΤΗΘΗΚΕ ΕΡΕΥΝΗΤΗΣ ΤΗΣ ANTHROPIC ΛΟΓΩ ΑΝΗΣΥΧΙΩΝ ΓΙΑ ΤΗΝ AI",
+      "url": "https://www.kathimerini.gr/society/564447409/nea-makri-aytokinito-eisevale-se-farmakeio-mesa-vriskontan-ergazomenes-kai-ena-paidi/",
+      "title": "Νέα Μάκρη: Αυτοκίνητο εισέβαλε σε φαρμακείο – Μέσα βρίσκονταν εργαζόμενες και ένα παιδί",
+      "normalized_title": "ΝΕΑ ΜΑΚΡΗ: ΑΥΤΟΚΙΝΗΤΟ ΕΙΣΕΒΑΛΕ ΣΕ ΦΑΡΜΑΚΕΙΟ – ΜΕΣΑ ΒΡΙΣΚΟΝΤΑΝ ΕΡΓΑΖΟΜΕΝΕΣ ΚΑΙ ΕΝΑ ΠΑΙΔΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564447160/paizoyn-me-tis-zoes-mas-paraitithike-ereynitis-tis-anthropic-logo-anisychion-gia-tin-ai/",
-        "https://www.kathimerini.gr/world/564447379/pisa-2025-o-oosa-diapistonei-genikeymeni-ptosi-toy-epipedoy-ton-mathiton-entonoteri-sti-dysi/",
-        "https://www.kathimerini.gr/society/564447349/diki-gia-ta-tempi-ntropi-soy-les-psemata-entasi-metaxy-antoni-psaropoyloy-kai-panagioti-voylgari-patera-michanodigoy/",
-        "https://www.kathimerini.gr/society/564447352/chalkidiki-ekanan-skoypidotopo-ton-archaiologiko-choro-olynthoy/",
-        "https://www.kathimerini.gr/world/564447235/50-chronia-apo-ton-thanato-toy-mao-tsetoyngk-ena-fantasma-pano-apo-to-pekino/"
+        "https://www.kathimerini.gr/society/564447409/nea-makri-aytokinito-eisevale-se-farmakeio-mesa-vriskontan-ergazomenes-kai-ena-paidi/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564446230/to-mazi-gia-to-paidi-ginetai-gefyra-tis-perifereias-me-tin-elliniki-omogeneia/",
+        "https://www.kathimerini.gr/athletics/analysis/564447325/to-trik-toy-nikolits-efere-ti-niki-kai-sto-champions-league/"
       ],
-      "seen_at_utc": "2026-09-09T09:17:07.910514+00:00"
+      "seen_at_utc": "2026-09-09T09:30:02.583914+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1276,32 +1274,29 @@
       "seen_at_utc": "2026-09-09T09:17:07.910662+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1463414/kampanaki-gia-ti-naysiploia-oyte-ena-elliniko-nayagosostiko-se-etoimotita/",
-      "title": "Καμπανάκι για τη ναυσιπλοΐα: Ούτε ένα ελληνικό ναυαγοσωστικό σε ετοιμότητα",
-      "normalized_title": "ΚΑΜΠΑΝΑΚΙ ΓΙΑ ΤΗ ΝΑΥΣΙΠΛΟΙΑ: ΟΥΤΕ ΕΝΑ ΕΛΛΗΝΙΚΟ ΝΑΥΑΓΟΣΩΣΤΙΚΟ ΣΕ ΕΤΟΙΜΟΤΗΤΑ",
+      "url": "https://www.efsyn.gr/ellada/1463486/eurostat-patos-stin-ee-i-ellada-sti-diastayrosi-pliroforion-sto-diadiktyo-i-katataxi-ton-horon/",
+      "title": "Eurostat: Πάτος στην ΕΕ η Ελλάδα στη διασταύρωση πληροφοριών στο διαδίκτυο – Η κατάταξη των χωρών",
+      "normalized_title": "EUROSTAT: ΠΑΤΟΣ ΣΤΗΝ ΕΕ Η ΕΛΛΑΔΑ ΣΤΗ ΔΙΑΣΤΑΥΡΩΣΗ ΠΛΗΡΟΦΟΡΙΩΝ ΣΤΟ ΔΙΑΔΙΚΤΥΟ – Η ΚΑΤΑΤΑΞΗ ΤΩΝ ΧΩΡΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1463414/kampanaki-gia-ti-naysiploia-oyte-ena-elliniko-nayagosostiko-se-etoimotita/",
-        "https://www.efsyn.gr/ellada/1463483/halkidiki-skoypidia-kai-epikindynes-syskeyasies-fytofarmakon-konta-ston-arhaiologiko-horo-olynthoy-eikones/",
-        "https://www.efsyn.gr/politiki/1463468/georgiadis-kata-samara-an-valei-sto-psifodeltio-ton-salma-to-mono-poy-menei-einai-na-valei-tin-toyloypaki-sto-epikrateias/",
-        "https://www.efsyn.gr/ellada/1463464/istoriko-iatriko-epiteygma-moro-gennithike-stin-athina-apo-emvryo-poy-eihe-kryosyntirithei-to-2004/",
-        "https://www.efsyn.gr/politiki/1463455/dieykriniseis-siakantari-gia-ta-peri-sygkyvernisis-den-miloysa-gia-symmahia-elas-pasok-me-nd/"
+        "https://www.efsyn.gr/ellada/1463486/eurostat-patos-stin-ee-i-ellada-sti-diastayrosi-pliroforion-sto-diadiktyo-i-katataxi-ton-horon/",
+        "https://www.efsyn.gr/ellada/1463491/diki-gia-ta-tempi-epeisodio-anamesa-se-syggeneis-thymaton-les-psemata-to-ekana-gia-na-sas-prostateyso/",
+        "https://www.efsyn.gr/periballon/1463495/i-thessalia-kindyneyei-na-ginei-sahara-tis-epomenes-dekaeties-anisyhitikes-ektimiseis-gia-tin-xirasia/",
+        "https://www.efsyn.gr/athlitismos/1463417/champions-league-i-ora-ton-favori/"
       ],
-      "seen_at_utc": "2026-09-09T09:17:07.910629+00:00"
+      "seen_at_utc": "2026-09-09T09:30:02.584017+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/sports/football/ntortmount-kathisyxastika-ta-prota-nea-gia-karetsa-tha-ypovlithei-se-nees-eksetaseis/",
-      "title": "Ντόρτμουντ: Καθησυχαστικά τα πρώτα νέα για Καρέτσα – Θα υποβληθεί σε νέες εξετάσεις",
-      "normalized_title": "ΝΤΟΡΤΜΟΥΝΤ: ΚΑΘΗΣΥΧΑΣΤΙΚΑ ΤΑ ΠΡΩΤΑ ΝΕΑ ΓΙΑ ΚΑΡΕΤΣΑ – ΘΑ ΥΠΟΒΛΗΘΕΙ ΣΕ ΝΕΕΣ ΕΞΕΤΑΣΕΙΣ",
+      "url": "https://www.in.gr/2026/09/09/politics/apasfalise-o-floridis-ntou-apo-apenanti-se-periptosi-akyvernisias-katiforos-xoris-telos-leei-to-pasok/",
+      "title": "Απασφάλισε ο Φλωρίδης: Ντου από απέναντι, σε περίπτωση ακυβερνησίας – Κατήφορος χωρίς τέλος, λέει το ΠΑΣΟΚ",
+      "normalized_title": "ΑΠΑΣΦΑΛΙΣΕ Ο ΦΛΩΡΙΔΗΣ: ΝΤΟΥ ΑΠΟ ΑΠΕΝΑΝΤΙ, ΣΕ ΠΕΡΙΠΤΩΣΗ ΑΚΥΒΕΡΝΗΣΙΑΣ – ΚΑΤΗΦΟΡΟΣ ΧΩΡΙΣ ΤΕΛΟΣ, ΛΕΕΙ ΤΟ ΠΑΣΟΚ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/sports/football/ntortmount-kathisyxastika-ta-prota-nea-gia-karetsa-tha-ypovlithei-se-nees-eksetaseis/",
-        "https://www.in.gr/2026/09/09/politics/aftodioikisi/ksekina-i-kataskeyi-neou-dimotikou-sxoleiou/",
-        "https://www.in.gr/2026/09/09/greece/megali-entasi-sti-diki-gia-ta-tempi-metaksy-syggenon-thymaton-tous-xorise-i-astynomia/",
-        "https://www.in.gr/2026/09/09/world/mazikes-apelaseis-sxoleia-mono-gia-prosfyges-kai-logokrisia-stin-texni-poia-germania-oneireyetai-i-afd/",
-        "https://www.in.gr/2026/09/09/uncategorized/5-ai-ergaleia-pou-se-voithoun-pragmatika-na-diaxeiristeis-to-xaos-tis-meletis/",
-        "https://www.in.gr/2026/09/09/sports/on-field/gkoustavo-pouerta-mia-gemati-emfanisi-me-to-kalimera-vid/"
+        "https://www.in.gr/2026/09/09/politics/apasfalise-o-floridis-ntou-apo-apenanti-se-periptosi-akyvernisias-katiforos-xoris-telos-leei-to-pasok/",
+        "https://www.in.gr/2026/09/09/politics/vouli-stis-16-septemvri-i-deyteri-psifoforia-gia-tin-syntagmatiki-anatheorisi-ti-ginetai-me-tin-arsi-asylias-avramopoulou-gia-to-qatargate/",
+        "https://www.in.gr/2026/09/09/stories/manolis-glezos-mnimi-ton-afanon/",
+        "https://www.in.gr/2026/09/09/go-fun/fizz/eniosa-ntropi-i-gkouineth-paltroou-milise-gia-ton-xorismo-tis-apo-ton-mprant-pit-sta-90s/"
       ],
-      "seen_at_utc": "2026-09-09T09:17:07.910573+00:00"
+      "seen_at_utc": "2026-09-09T09:30:02.583970+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T09:17:07.910750+00:00"
+  "updated_at_utc": "2026-09-09T09:30:02.584090+00:00"
 }
