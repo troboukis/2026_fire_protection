@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564448222/giorgos-mazonakis-1972-2024-to-agori-poy-ixere-pos-tha-ginei-star/",
-      "title": "Γιώργος Μαζωνάκης (1972-2024): Το αγόρι που ήξερε πως θα γίνει σταρ",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ (1972-2024): ΤΟ ΑΓΟΡΙ ΠΟΥ ΗΞΕΡΕ ΠΩΣ ΘΑ ΓΙΝΕΙ ΣΤΑΡ",
+      "url": "https://www.kathimerini.gr/world/564447988/poios-gnorize-gia-tis-epitheseis-tis-7is-oktovrioy/",
+      "title": "Ποιος γνώριζε για τις επιθέσεις της 7ης Οκτωβρίου;",
+      "normalized_title": "ΠΟΙΟΣ ΓΝΩΡΙΖΕ ΓΙΑ ΤΙΣ ΕΠΙΘΕΣΕΙΣ ΤΗΣ 7ΗΣ ΟΚΤΩΒΡΙΟΥ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564448222/giorgos-mazonakis-1972-2024-to-agori-poy-ixere-pos-tha-ginei-star/"
+        "https://www.kathimerini.gr/world/564447988/poios-gnorize-gia-tis-epitheseis-tis-7is-oktovrioy/",
+        "https://www.kathimerini.gr/columns/564448129/i-aytognosia-toy-mpen-selton-apaitoyse-mia-ypervasi/"
       ],
-      "seen_at_utc": "2026-09-09T17:30:13.790007+00:00"
+      "seen_at_utc": "2026-09-09T17:51:20.103995+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,26 +1269,27 @@
       "seen_at_utc": "2026-09-09T17:30:13.790128+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463920/giorgos-mazonakis-i-aderfi-toy-maria-eftase-syntetrimmeni-sto-elpis/",
-      "title": "Γιώργος Μαζωνάκης: Η αδερφή του, Μαρία, συντετριμμένη στο «Ελπίς»",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: Η ΑΔΕΡΦΗ ΤΟΥ, ΜΑΡΙΑ, ΣΥΝΤΕΤΡΙΜΜΕΝΗ ΣΤΟ «ΕΛΠΙΣ»",
+      "url": "https://www.efsyn.gr/politiki/1463936/tsipras-gia-siakantari-den-einai-melos-tis-elas-pasok-molis-arhise-na-martyraei-den-ton-xeroyn/",
+      "title": "Τσίπρας για Σιακαντάρη: «Δεν είναι μέλος της ΕΛΑΣ» – ΠΑΣΟΚ: «Μόλις άρχισε να μαρτυράει, δεν τον ξέρουν»",
+      "normalized_title": "ΤΣΙΠΡΑΣ ΓΙΑ ΣΙΑΚΑΝΤΑΡΗ: «ΔΕΝ ΕΙΝΑΙ ΜΕΛΟΣ ΤΗΣ ΕΛΑΣ» – ΠΑΣΟΚ: «ΜΟΛΙΣ ΑΡΧΙΣΕ ΝΑ ΜΑΡΤΥΡΑΕΙ, ΔΕΝ ΤΟΝ ΞΕΡΟΥΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463920/giorgos-mazonakis-i-aderfi-toy-maria-eftase-syntetrimmeni-sto-elpis/",
-        "https://www.efsyn.gr/politiki/1463914/diethnis-diaskepsi-gia-to-diastima-sto-parisi-o-mitsotakis-paroysiase-ton-proto-ellina-astronayti-poy-paei-sto-diastima/"
+        "https://www.efsyn.gr/politiki/1463936/tsipras-gia-siakantari-den-einai-melos-tis-elas-pasok-molis-arhise-na-martyraei-den-ton-xeroyn/",
+        "https://www.efsyn.gr/ellada/1463854/giorgos-mazonakis-tragoydistes-dimosiografoi-eponymoi-apohairetoyn-ton-megalo-kallitehni/"
       ],
-      "seen_at_utc": "2026-09-09T17:30:13.790103+00:00"
+      "seen_at_utc": "2026-09-09T17:51:20.104137+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/world/i-rosia-parousiase-pyraylous-drone-stin-aigypto-kai-to-su-57-gia-proti-fora-stin-afrikaniki-ipeiro-vinteo/",
-      "title": "Η Ρωσία παρουσίασε πυραύλους - drone στην Αίγυπτο και το Su-57 για πρώτη φορά στην αφρικανική ήπειρο",
-      "normalized_title": "Η ΡΩΣΙΑ ΠΑΡΟΥΣΙΑΣΕ ΠΥΡΑΥΛΟΥΣ - DRONE ΣΤΗΝ ΑΙΓΥΠΤΟ ΚΑΙ ΤΟ SU-57 ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ ΣΤΗΝ ΑΦΡΙΚΑΝΙΚΗ ΗΠΕΙΡΟ",
+      "url": "https://www.in.gr/2026/09/09/life/music/o-giogos-mazonakis-anikei-pleon-se-ayton-kai-sta-oneira-tou/",
+      "title": "Ο Γιώγος Μαζωνάκης ανήκει πλέον σε αυτόν και στα όνειρά του",
+      "normalized_title": "Ο ΓΙΩΓΟΣ ΜΑΖΩΝΑΚΗΣ ΑΝΗΚΕΙ ΠΛΕΟΝ ΣΕ ΑΥΤΟΝ ΚΑΙ ΣΤΑ ΟΝΕΙΡΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/world/i-rosia-parousiase-pyraylous-drone-stin-aigypto-kai-to-su-57-gia-proti-fora-stin-afrikaniki-ipeiro-vinteo/",
-        "https://www.in.gr/2026/09/09/greece/giorgos-mazonakis-ti-synevi-ligo-prin-apo-ti-moiraia-anakopi-to-xroniko-apo-tin-kliniki-eos-to-nosokomeio-elpis/",
-        "https://www.in.gr/2026/09/09/world/i-ee-xorigei-voitheia-115-ekat-eyro-stin-ispania-gia-tin-theouta/"
+        "https://www.in.gr/2026/09/09/life/music/o-giogos-mazonakis-anikei-pleon-se-ayton-kai-sta-oneira-tou/",
+        "https://www.in.gr/2026/09/09/greece/mazonakis-stin-asfaleia-o-giatros-tis-idiotiki-klinikis-se-ekseliksi-oi-ereynes-tis-astynomias/",
+        "https://www.in.gr/2026/09/09/politics/politiki-grammateia/tsipras-akoma-ki-an-foras-ta-gyalia-tou-georgiadi-den-mporeis-na-deis-ta-pragmata-kala-ston-tomea-tis-ygeias/",
+        "https://www.in.gr/2026/09/09/world/o-ypourgos-amynas-tou-israil-leei-pos-tha-synexistei-i-katoxi-edafon-sti-notia-syria/"
       ],
-      "seen_at_utc": "2026-09-09T17:30:13.790070+00:00"
+      "seen_at_utc": "2026-09-09T17:51:20.104047+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T17:30:13.790206+00:00"
+  "updated_at_utc": "2026-09-09T17:51:20.104242+00:00"
 }
