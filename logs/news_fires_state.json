@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564448357/giorgos-mazonakis-i-anartisi-georgiadi-gia-tin-kliniki-sto-kolonaki/",
-      "title": "Γιώργος Μαζωνάκης: Η ανάρτηση Γεωργιάδη για την κλινική στο Κολωνάκι",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: Η ΑΝΑΡΤΗΣΗ ΓΕΩΡΓΙΑΔΗ ΓΙΑ ΤΗΝ ΚΛΙΝΙΚΗ ΣΤΟ ΚΟΛΩΝΑΚΙ",
+      "url": "https://www.kathimerini.gr/culture/564438997/yparchei-orio-sti-mythoplasia/",
+      "title": "Υπάρχει όριο στη μυθοπλασία;",
+      "normalized_title": "ΥΠΑΡΧΕΙ ΟΡΙΟ ΣΤΗ ΜΥΘΟΠΛΑΣΙΑ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564448357/giorgos-mazonakis-i-anartisi-georgiadi-gia-tin-kliniki-sto-kolonaki/"
+        "https://www.kathimerini.gr/culture/564438997/yparchei-orio-sti-mythoplasia/",
+        "https://www.kathimerini.gr/culture/564438946/kanarini-se-ydatino-orycheio/",
+        "https://www.kathimerini.gr/k/k-magazine/564445864/giati-o-nikos-aliagas-foraei-t-armata/"
       ],
-      "seen_at_utc": "2026-09-09T18:30:03.571200+00:00"
+      "seen_at_utc": "2026-09-09T18:51:26.095077+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876438/vgike-apo-to-heirourgeio-i-21hroni-traumatias-apo-to-trohaio-me-ta-leoforeia-sti-thessaloniki/?utm_source=rss",
-      "title": "Βγήκε από το χειρουργείο η 21χρονη τραυματίας από το τροχαίο με τα λεωφορεία στη Θεσσαλονίκη",
-      "normalized_title": "ΒΓΗΚΕ ΑΠΟ ΤΟ ΧΕΙΡΟΥΡΓΕΙΟ Η 21ΧΡΟΝΗ ΤΡΑΥΜΑΤΙΑΣ ΑΠΟ ΤΟ ΤΡΟΧΑΙΟ ΜΕ ΤΑ ΛΕΩΦΟΡΕΙΑ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1876444/sunelifthisan-stin-athina-3-atoma-me-434-plasta-hartonomismata-ton-100-dolarion/?utm_source=rss",
+      "title": "Συνελήφθησαν στην Αθήνα 3 άτομα με 434 πλαστά χαρτονομίσματα των 100 δολαρίων",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗΣΑΝ ΣΤΗΝ ΑΘΗΝΑ 3 ΑΤΟΜΑ ΜΕ 434 ΠΛΑΣΤΑ ΧΑΡΤΟΝΟΜΙΣΜΑΤΑ ΤΩΝ 100 ΔΟΛΑΡΙΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876438/vgike-apo-to-heirourgeio-i-21hroni-traumatias-apo-to-trohaio-me-ta-leoforeia-sti-thessaloniki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876444/sunelifthisan-stin-athina-3-atoma-me-434-plasta-hartonomismata-ton-100-dolarion/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T18:30:03.571382+00:00"
+      "seen_at_utc": "2026-09-09T18:51:26.095169+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1463960/dimoskopisi-gpo-provadisma-nd-me-258-sto-135-i-elas-katarreysi-karystianoy-sto-3/",
-      "title": "Δημοσκόπηση GPO: Προβάδισμα ΝΔ με 25,8%, στο 13,5% η ΕΛΑΣ – Κατάρρευση Καρυστιανού στο 3%",
-      "normalized_title": "ΔΗΜΟΣΚΟΠΗΣΗ GPO: ΠΡΟΒΑΔΙΣΜΑ ΝΔ ΜΕ 25,8%, ΣΤΟ 13,5% Η ΕΛΑΣ – ΚΑΤΑΡΡΕΥΣΗ ΚΑΡΥΣΤΙΑΝΟΥ ΣΤΟ 3%",
+      "url": "https://www.efsyn.gr/kosmos/1463988/vasilias-norvigias-paraligo-na-htypithei-apo-drone-to-aeroskafos-poy-metefere-ton-zelenski/",
+      "title": "Πρωθυπουργός Νορβηγίας: «Παραλίγο να χτυπηθεί» από drone το αεροσκάφος που μετέφερε τον Ζελένσκι",
+      "normalized_title": "ΠΡΩΘΥΠΟΥΡΓΟΣ ΝΟΡΒΗΓΙΑΣ: «ΠΑΡΑΛΙΓΟ ΝΑ ΧΤΥΠΗΘΕΙ» ΑΠΟ DRONE ΤΟ ΑΕΡΟΣΚΑΦΟΣ ΠΟΥ ΜΕΤΕΦΕΡΕ ΤΟΝ ΖΕΛΕΝΣΚΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1463960/dimoskopisi-gpo-provadisma-nd-me-258-sto-135-i-elas-katarreysi-karystianoy-sto-3/",
-        "https://www.efsyn.gr/ellada/1463967/plasmafairesi-se-iatreio-ekane-o-mazonakis-tin-ora-tis-anakopis-katathetei-stin-asfaleia-o-giatros/"
+        "https://www.efsyn.gr/kosmos/1463988/vasilias-norvigias-paraligo-na-htypithei-apo-drone-to-aeroskafos-poy-metefere-ton-zelenski/",
+        "https://www.efsyn.gr/ellada/1463975/ptosi-leoforeioy-se-stasi-sti-thessaloniki-oloklirothike-to-heiroyrgeio-tis-21hronis/"
       ],
-      "seen_at_utc": "2026-09-09T18:30:03.571343+00:00"
+      "seen_at_utc": "2026-09-09T18:51:26.095149+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/politics/epikairotita/georgiadis-gia-tin-kliniki-opou-ypesti-anakopi-o-mazonakis-den-eixe-adeia-gia-plasmafairesi-zitisa-ereyna-apo-ton-isa/",
-      "title": "Γεωργιάδης για την κλινική όπου υπέστη ανακοπή ο Μαζωνάκης: Δεν είχε άδεια για πλασμαφαίρεση, ζήτησα έρευνα από τον ΙΣΑ",
-      "normalized_title": "ΓΕΩΡΓΙΑΔΗΣ ΓΙΑ ΤΗΝ ΚΛΙΝΙΚΗ ΟΠΟΥ ΥΠΕΣΤΗ ΑΝΑΚΟΠΗ Ο ΜΑΖΩΝΑΚΗΣ: ΔΕΝ ΕΙΧΕ ΑΔΕΙΑ ΓΙΑ ΠΛΑΣΜΑΦΑΙΡΕΣΗ, ΖΗΤΗΣΑ ΕΡΕΥΝΑ ΑΠΟ ΤΟΝ ΙΣΑ",
+      "url": "https://www.in.gr/matchcenter/6106318/",
+      "title": "LIVE: Νάπολι – Άρσεναλ",
+      "normalized_title": "LIVE: ΝΑΠΟΛΙ – ΑΡΣΕΝΑΛ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/politics/epikairotita/georgiadis-gia-tin-kliniki-opou-ypesti-anakopi-o-mazonakis-den-eixe-adeia-gia-plasmafairesi-zitisa-ereyna-apo-ton-isa/",
-        "https://www.in.gr/2026/09/09/go-fun/music-stage/katerina-lioliou-ekriktiki-sto-video-clip-gia-to-tragoudi-pagkosmia-imera-pseyti/",
-        "https://www.in.gr/2026/09/09/sports/basketball/euroleague/nea-topothetisi-tou-gkrigkonis-osa-eipa-aforousan-tis-dyskolies-pou-antimetopisa-tyxeros-pou-imoun-ston-panathinaiko/"
+        "https://www.in.gr/matchcenter/6106318/",
+        "https://www.in.gr/2026/09/09/sports/football/champions-league/stoutgkardi-vikingk-3-1-o-ntemirovits-katharise-tous-norvigous-me-xat-trik-se-12-lepta/",
+        "https://www.in.gr/2026/09/09/greece/synelifthisan-tria-atoma-me-434-plasta-xartonomismata-ton-100-dolarion/",
+        "https://www.in.gr/2026/09/09/life/culture-live/love-of-your-life-i-margkaret-koualei-eroteyetai-ksana/",
+        "https://www.in.gr/2026/09/09/sports/football/champions-league/mpartselona-fegenornt-5-1-thriamvos-tis-mpartsa-me-magika-kolpa-tou-rafinia/"
       ],
-      "seen_at_utc": "2026-09-09T18:30:03.571291+00:00"
+      "seen_at_utc": "2026-09-09T18:51:26.095113+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T18:30:03.571510+00:00"
+  "updated_at_utc": "2026-09-09T18:51:26.095242+00:00"
 }
