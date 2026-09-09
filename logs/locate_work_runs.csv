@@ -2532,3 +2532,6 @@ run_started_at_utc,reference_number,organization_value,title,status,inserted_row
 2026-09-09T06:06:46.203554+00:00,26SYMV019743218,,Σύμβαση για διάθεση Μ.Ε και υδροφόρων στο Π.Σ από 24-08-2026 στο Βόρειο Τομέα Αθηνών.,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
 2026-09-09T06:06:46.203554+00:00,26SYMV019744378,,"ΣΥΜΒΑΣΗ ΓΙΑ ΤΗΝ ΣΥΝΤΗΡΗΣΗ ΑΓΡΟΤΟΔΑΣΙΚΩΝ ΔΡΟΜΩΝ ΤΗΣ Δ.Ε. ΑΝΘΕΜΟΥΝΤΑ, ΖΕΡΒΟΧΩΡΙΩΝ ΚΑΙ ΟΡΜΥΛΙΑΣ",no_findings,0,
 2026-09-09T06:06:46.203554+00:00,26SYMV019744977,,Διάθεση Μ.Ε και υδροφόρων στο Π.Σ από 24-08-2026 σε περιοχές του Βόρειου Τομέα Αθηνών.,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-09T09:06:23.577091+00:00,26SYMV019742064,,Σύμβαση για διάθεση υδροφόρων στο Π.Σ από 13-08-2026 σε πάρκα της Περιφέρειας Αττικής.,success,2,
+2026-09-09T09:06:23.577091+00:00,26SYMV019743218,,Σύμβαση για διάθεση Μ.Ε και υδροφόρων στο Π.Σ από 24-08-2026 στο Βόρειο Τομέα Αθηνών.,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-09T09:06:23.577091+00:00,26SYMV019744977,,Διάθεση Μ.Ε και υδροφόρων στο Π.Σ από 24-08-2026 σε περιοχές του Βόρειου Τομέα Αθηνών.,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
