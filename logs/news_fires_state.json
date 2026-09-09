@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564440773/varyfortomeni-skiniki-anagnosi/",
-      "title": "Βαρυφορτωμένη σκηνική ανάγνωση",
-      "normalized_title": "ΒΑΡΥΦΟΡΤΩΜΕΝΗ ΣΚΗΝΙΚΗ ΑΝΑΓΝΩΣΗ",
+      "url": "https://www.kathimerini.gr/eortologio/564422047/eortologio-poioi-giortazoyn-simera-10-septemvrioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 10 Σεπτεμβρίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 10 ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564440773/varyfortomeni-skiniki-anagnosi/"
+        "https://www.kathimerini.gr/eortologio/564422047/eortologio-poioi-giortazoyn-simera-10-septemvrioy/",
+        "https://www.kathimerini.gr/economy/564440524/oi-timoroi-ton-omologon-paramoneyoyn/",
+        "https://www.kathimerini.gr/life/technology/564448477/i-apple-paroysiase-to-proto-anadiploymeno-iphone/"
       ],
-      "seen_at_utc": "2026-09-09T20:51:11.745842+00:00"
+      "seen_at_utc": "2026-09-09T21:17:14.082871+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1261,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876467/den-eiha-kamia-ebloki-sto-peristatiko-ishuristike-o-giatros-tis-klinikis-opou-upesti-anakopi-o-giorgos-mazonakis/?utm_source=rss",
-      "title": "Η γυναίκα μου διαχειριζόταν το ιατρείο, εγώ δεν είχα καμία εμπλοκή, ισχυρίστηκε ο ιδιοκτήτης της Stem Cell όπου υπέστη ανακοπή ο Γιώργος Μαζωνάκης",
-      "normalized_title": "Η ΓΥΝΑΙΚΑ ΜΟΥ ΔΙΑΧΕΙΡΙΖΟΤΑΝ ΤΟ ΙΑΤΡΕΙΟ, ΕΓΩ ΔΕΝ ΕΙΧΑ ΚΑΜΙΑ ΕΜΠΛΟΚΗ, ΙΣΧΥΡΙΣΤΗΚΕ Ο ΙΔΙΟΚΤΗΤΗΣ ΤΗΣ STEM CELL ΟΠΟΥ ΥΠΕΣΤΗ ΑΝΑΚΟΠΗ Ο ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1876488/duo-louomenes-ehasan-ti-zoi-tous-se-paralies-tis-pierias-kai-tis-halkidikis/?utm_source=rss",
+      "title": "Δύο λουόμενες έχασαν τη ζωή τους σε παραλίες της Πιερίας και της Χαλκιδικής",
+      "normalized_title": "ΔΥΟ ΛΟΥΟΜΕΝΕΣ ΕΧΑΣΑΝ ΤΗ ΖΩΗ ΤΟΥΣ ΣΕ ΠΑΡΑΛΙΕΣ ΤΗΣ ΠΙΕΡΙΑΣ ΚΑΙ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876467/den-eiha-kamia-ebloki-sto-peristatiko-ishuristike-o-giatros-tis-klinikis-opou-upesti-anakopi-o-giorgos-mazonakis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876488/duo-louomenes-ehasan-ti-zoi-tous-se-paralies-tis-pierias-kai-tis-halkidikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T19:51:36.396660+00:00"
+      "seen_at_utc": "2026-09-09T21:17:14.083010+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1464030/stin-athina-i-proedros-ton-sosialiston-tis-eyrovoylis-iratse-gkarsia-peres/",
-      "title": "Στην Αθήνα η πρόεδρος των Σοσιαλιστών της Ευρωβουλής, Ιράτσε Γκαρσία-Περές",
-      "normalized_title": "ΣΤΗΝ ΑΘΗΝΑ Η ΠΡΟΕΔΡΟΣ ΤΩΝ ΣΟΣΙΑΛΙΣΤΩΝ ΤΗΣ ΕΥΡΩΒΟΥΛΗΣ, ΙΡΑΤΣΕ ΓΚΑΡΣΙΑ-ΠΕΡΕΣ",
+      "url": "https://www.efsyn.gr/ellada/1464042/grifos-i-aitia-thanatoy-toy-mazonaki-itan-asthenis-tis-syzygoy-toy-leei-o-dikigoros-toy-giatroy-vinteo/",
+      "title": "Γρίφος η αιτία θανάτου του Μαζωνάκη: «Ήταν ασθενής της συζύγου του», λέει ο δικηγόρος του γιατρού [βίντεο]",
+      "normalized_title": "ΓΡΙΦΟΣ Η ΑΙΤΙΑ ΘΑΝΑΤΟΥ ΤΟΥ ΜΑΖΩΝΑΚΗ: «ΗΤΑΝ ΑΣΘΕΝΗΣ ΤΗΣ ΣΥΖΥΓΟΥ ΤΟΥ», ΛΕΕΙ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥ ΓΙΑΤΡΟΥ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1464030/stin-athina-i-proedros-ton-sosialiston-tis-eyrovoylis-iratse-gkarsia-peres/"
+        "https://www.efsyn.gr/ellada/1464042/grifos-i-aitia-thanatoy-toy-mazonaki-itan-asthenis-tis-syzygoy-toy-leei-o-dikigoros-toy-giatroy-vinteo/"
       ],
-      "seen_at_utc": "2026-09-09T20:51:11.745926+00:00"
+      "seen_at_utc": "2026-09-09T21:17:14.082982+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/greece/mazonakis-i-gynaika-mou-ekane-tis-therapeies-leei-o-giatros-tis-klinikis-katethesan-kai-oi-dyo-stin-asfaleia/",
-      "title": "Μαζωνάκης: «Η γυναίκα μου έκανε τις θεραπείες» λέει ο γιατρός της κλινικής – Κατέθεσαν και οι δύο στην Ασφάλεια",
-      "normalized_title": "ΜΑΖΩΝΑΚΗΣ: «Η ΓΥΝΑΙΚΑ ΜΟΥ ΕΚΑΝΕ ΤΙΣ ΘΕΡΑΠΕΙΕΣ» ΛΕΕΙ Ο ΓΙΑΤΡΟΣ ΤΗΣ ΚΛΙΝΙΚΗΣ – ΚΑΤΕΘΕΣΑΝ ΚΑΙ ΟΙ ΔΥΟ ΣΤΗΝ ΑΣΦΑΛΕΙΑ",
+      "url": "https://www.in.gr/2026/09/10/world/oi-oukranikes-eidikes-dynameis-dilonoun-oti-epliksan-dyo-rosikes-egkatastaseis-fysikou-aeriou-sti-siviria/",
+      "title": "Οι ουκρανικές ειδικές δυνάμεις δηλώνουν ότι έπληξαν δύο ρωσικές εγκαταστάσεις φυσικού αερίου στη Σιβηρία",
+      "normalized_title": "ΟΙ ΟΥΚΡΑΝΙΚΕΣ ΕΙΔΙΚΕΣ ΔΥΝΑΜΕΙΣ ΔΗΛΩΝΟΥΝ ΟΤΙ ΕΠΛΗΞΑΝ ΔΥΟ ΡΩΣΙΚΕΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ ΣΤΗ ΣΙΒΗΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/greece/mazonakis-i-gynaika-mou-ekane-tis-therapeies-leei-o-giatros-tis-klinikis-katethesan-kai-oi-dyo-stin-asfaleia/",
-        "https://www.in.gr/2026/09/09/sports/basketball/euroleague/best-one-team-ambassador-tis-sezon-sti-euroleague-o-vezenkof-pic/",
-        "https://www.in.gr/2026/09/09/economy/vietnam-rosia-symmaxia-dimiourgoun-stratigiko-apothema-petrelaiou/",
-        "https://www.in.gr/2026/09/09/go-fun/fizz/i-proin-syzygos-tou-elon-mask-tzastin-apokalyptei-ematha-ti-esti-gaslighting/"
+        "https://www.in.gr/2026/09/10/world/oi-oukranikes-eidikes-dynameis-dilonoun-oti-epliksan-dyo-rosikes-egkatastaseis-fysikou-aeriou-sti-siviria/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/i-vathmologia-tis-league-phase-tou-champions-league-pic-2/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/sportingk-galatasarai-3-1-ta-liontaria-to-gyrisan-kai-ksekinisan-me-to-deksi/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/pari-sen-zermen-slovan-mpratislavas-6-1-ekkinisi-me-eksara-gia-tous-protathlites/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/90i-deth-me-programma-gia-tis-anagkes-ton-pollon-o-tsipras-kai-minyma-nikis-akoma-kai-apo-tin-proti-kalpi/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/napoli-arsenal-0-1-edose-asist-kai-diplo-o-tzolis-stous-kanonierides/",
+        "https://www.in.gr/2026/09/10/greece/giorti-simera-10-septemvriou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/09/10/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-pempti-10-09-2026/",
+        "https://www.in.gr/2026/09/09/economy/mahan-air-poia-einai-i-aeroporiki-etaireia-tou-iran-pou-apsifa-tis-kyroseis-ton-ipa/",
+        "https://www.in.gr/2026/09/09/sports/football/champions-league/liverpoul-atletiko-madritis-2-1-megali-niki-me-anatropi-gia-tous-reds/"
       ],
-      "seen_at_utc": "2026-09-09T20:51:11.745894+00:00"
+      "seen_at_utc": "2026-09-09T21:17:14.082929+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T20:51:11.746002+00:00"
+  "updated_at_utc": "2026-09-09T21:17:14.083068+00:00"
 }
