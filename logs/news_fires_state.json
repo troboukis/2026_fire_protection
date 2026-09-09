@@ -1,18 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564446647/paratasi-enos-etoys-gia-exagora-katapatimenon-dimosion-ektaseon/",
-      "title": "Παράταση ενός έτους για εξαγορά καταπατημένων δημόσιων εκτάσεων",
-      "normalized_title": "ΠΑΡΑΤΑΣΗ ΕΝΟΣ ΕΤΟΥΣ ΓΙΑ ΕΞΑΓΟΡΑ ΚΑΤΑΠΑΤΗΜΕΝΩΝ ΔΗΜΟΣΙΩΝ ΕΚΤΑΣΕΩΝ",
+      "url": "https://www.kathimerini.gr/economy/local/564446674/to-toyristiko-stoichima-tis-thessalonikis/",
+      "title": "Το τουριστικό στοίχημα της Θεσσαλονίκης",
+      "normalized_title": "ΤΟ ΤΟΥΡΙΣΤΙΚΟ ΣΤΟΙΧΗΜΑ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564446647/paratasi-enos-etoys-gia-exagora-katapatimenon-dimosion-ektaseon/",
-        "https://www.kathimerini.gr/athletics/basketball/564446530/eok-proteinei-nea-diaitisia-kai-perimenei-tin-eea/",
-        "https://www.kathimerini.gr/world/564446980/lintsei-klansi-imastan-etoimoi-na-tin-athoosoyme-ti-apokalypsan-oi-enorkoi-meta-tin-kakodikia/",
-        "https://www.kathimerini.gr/istoria/564444889/1934-to-iaponiko-dogma-monroe-stin-anatoliki-asia-poy-anoixe-ton-dromo-gia-ton-polemo-me-tin-kina/",
-        "https://www.kathimerini.gr/opinion/564446410/mipos-xechasame-ti-chreokopia/",
-        "https://www.kathimerini.gr/columns/564446062/poios-vlepei-11-dis-ependyseis-poso-kanoyn-39-t-m-isogeio-sti-stadioy-kai-ti-apokalyptei-to-dimosiografiko-ton-epicheiriseon/"
+        "https://www.kathimerini.gr/economy/local/564446674/to-toyristiko-stoichima-tis-thessalonikis/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564446977/sto-parisi-o-kyriakos-mitsotakis-gia-ti-diethni-synantisi-koryfis-gia-to-diastima/",
+        "https://www.kathimerini.gr/world/564446983/ipa-o-kris-papas-ypopsifios-ton-dimokratikon-sto-nioy-chamsair-gia-ti-geroysia/",
+        "https://www.kathimerini.gr/economy/local/564446644/paramenoyn-chamiles-oi-idiotikes-ependyseis/"
       ],
-      "seen_at_utc": "2026-09-09T05:51:15.867308+00:00"
+      "seen_at_utc": "2026-09-09T06:16:58.605275+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,41 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875991/live-i-kinisi-tora-stous-dromous-botiliarismenos-o-kifisos-kathusteriseis-se-kifisias-kai-attiki-odo/?utm_source=rss",
-      "title": "Live η κίνηση τώρα στους δρόμους: Μποτιλιαρισμένος ο Κηφισός, καθυστερήσεις σε Κηφισίας και Αττική Οδό",
-      "normalized_title": "LIVE Η ΚΙΝΗΣΗ ΤΩΡΑ ΣΤΟΥΣ ΔΡΟΜΟΥΣ: ΜΠΟΤΙΛΙΑΡΙΣΜΕΝΟΣ Ο ΚΗΦΙΣΟΣ, ΚΑΘΥΣΤΕΡΗΣΕΙΣ ΣΕ ΚΗΦΙΣΙΑΣ ΚΑΙ ΑΤΤΙΚΗ ΟΔΟ",
+      "url": "https://www.protothema.gr/greece/article/1876015/sunelifthi-40hronos-stin-thessaloniki-pou-pige-na-anoixei-xana-psugeio-peripterou-gia-na-klepsei-pagota/?utm_source=rss",
+      "title": "Συνελήφθη 40χρονος στην Θεσσαλονίκη που πήγε να «ανοίξει» ξανά ψυγείο περιπτέρου για να κλέψει παγωτά",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΣΤΗΝ ΘΕΣΣΑΛΟΝΙΚΗ ΠΟΥ ΠΗΓΕ ΝΑ «ΑΝΟΙΞΕΙ» ΞΑΝΑ ΨΥΓΕΙΟ ΠΕΡΙΠΤΕΡΟΥ ΓΙΑ ΝΑ ΚΛΕΨΕΙ ΠΑΓΩΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875991/live-i-kinisi-tora-stous-dromous-botiliarismenos-o-kifisos-kathusteriseis-se-kifisias-kai-attiki-odo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876015/sunelifthi-40hronos-stin-thessaloniki-pou-pige-na-anoixei-xana-psugeio-peripterou-gia-na-klepsei-pagota/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876014/exormisi-tis-trohaias-gia-ta-ilektrika-patinia-meta-ta-atuhimata-me-tous-duo-anilikous-stis-3700-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876009/579-autoktonies-stin-ellada-to-2025-ta-siopila-simadia-kai-o-muthos-gia-tin-proseggisi-enos-atomou-se-krisi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876007/thessaloniki-41hroni-afairouse-trofima-kai-sedonia-apo-nosokomeio-gia-15-hronia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875998/i-thessalia-kinduneuei-na-ginei-sahara-mehri-to-2100-klimatiki-allagi-leipsudria-kai-piesi-sta-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T05:51:15.867441+00:00"
+      "seen_at_utc": "2026-09-09T06:16:58.605332+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1463322/to-kratos-dikaioy-stin-prometopida-toy-kommatos-karystianoy/",
-      "title": "Το κράτος δικαίου στην προμετωπίδα του κόμματος Καρυστιανού",
-      "normalized_title": "ΤΟ ΚΡΑΤΟΣ ΔΙΚΑΙΟΥ ΣΤΗΝ ΠΡΟΜΕΤΩΠΙΔΑ ΤΟΥ ΚΟΜΜΑΤΟΣ ΚΑΡΥΣΤΙΑΝΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1463296/i-toyni-apantaei-me-skorda-ston-mitsotaki-antio-apo-emena/",
+      "title": "Η Τούνη απαντάει με… σκόρδα στον Μητσοτάκη: «Αντίο από εμένα…»",
+      "normalized_title": "Η ΤΟΥΝΗ ΑΠΑΝΤΑΕΙ ΜΕ… ΣΚΟΡΔΑ ΣΤΟΝ ΜΗΤΣΟΤΑΚΗ: «ΑΝΤΙΟ ΑΠΟ ΕΜΕΝΑ…»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1463322/to-kratos-dikaioy-stin-prometopida-toy-kommatos-karystianoy/",
-        "https://www.efsyn.gr/oikonomia/1463274/korkidis-evep-proteraiotita-i-paragogiki-antagonistikotita/",
-        "https://www.efsyn.gr/athlitismos/1463289/stoheyei-se-anakampsi-o-paok/",
-        "https://www.efsyn.gr/politiki/1463319/apokroystikoi-eyfimismoi/",
-        "https://www.efsyn.gr/stiles/1463297/gia-ton-kataggellomeno-viasmo-kamia-sygkalypsi-kamia-siopi-kamia-asylia/",
-        "https://www.efsyn.gr/ellada/1463300/diki-gia-ton-sifi-valyraki-simera-to-dia-tayta-tis-protasis-toy-eisaggelea-gia-enohi-i-athoosi-ton-psaradon/",
-        "https://www.efsyn.gr/kosmos/1463294/iran-vrohi-pyraylon-stin-iordania-se-antipoina-gia-ta-pligmata-ton-ipa-se-tanker-ta-100-dolaria-aggixe-to-brent/"
+        "https://www.efsyn.gr/politiki/1463296/i-toyni-apantaei-me-skorda-ston-mitsotaki-antio-apo-emena/",
+        "https://www.efsyn.gr/politiki/1463328/o-tasoylas-sto-marxistiko-vivliopoleio/"
       ],
-      "seen_at_utc": "2026-09-09T05:51:15.867398+00:00"
+      "seen_at_utc": "2026-09-09T06:16:58.605318+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/economy/oikonomikes-eidiseis/pos-aksiologoun-tin-empeiria-tous-apo-tin-ellada-oi-ksenoi-touristes/",
-      "title": "Πώς αξιολογούν την εμπειρία τους από την Ελλάδα οι ξένοι τουρίστες",
-      "normalized_title": "ΠΩΣ ΑΞΙΟΛΟΓΟΥΝ ΤΗΝ ΕΜΠΕΙΡΙΑ ΤΟΥΣ ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ ΟΙ ΞΕΝΟΙ ΤΟΥΡΙΣΤΕΣ",
+      "url": "https://www.in.gr/2026/09/09/sports/football/to-antio-tou-mpakaseta-ston-panathinaiko-den-stamatisa-stigmi-na-prospatho-gia-to-kalytero-pic/",
+      "title": "Το «αντίο» του Μπακασέτα στον Παναθηναϊκό: «Δεν σταμάτησα στιγμή να προσπαθώ για το καλύτερο» (pic)",
+      "normalized_title": "ΤΟ «ΑΝΤΙΟ» ΤΟΥ ΜΠΑΚΑΣΕΤΑ ΣΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ: «ΔΕΝ ΣΤΑΜΑΤΗΣΑ ΣΤΙΓΜΗ ΝΑ ΠΡΟΣΠΑΘΩ ΓΙΑ ΤΟ ΚΑΛΥΤΕΡΟ» (PIC)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/economy/oikonomikes-eidiseis/pos-aksiologoun-tin-empeiria-tous-apo-tin-ellada-oi-ksenoi-touristes/",
-        "https://www.in.gr/2026/09/09/sports/football/oi-athlitikes-metadoseis-tis-imeras-9-9-eksi-paixnidia-champions-league-kai-paok-v-olympiakos-v/",
-        "https://www.in.gr/2026/09/09/go-fun/fizz/antonis-remos-ti-apanta-stis-antidraseis-gia-ti-synaylia-tou-sti-thessaloniki/",
-        "https://www.in.gr/2026/09/09/politics/diplomatia/sto-parisi-o-mitsotakis-gia-ti-diethni-diaskepsi-koryfis-gia-to-diastima-synantisi-me-makron/"
+        "https://www.in.gr/2026/09/09/sports/football/to-antio-tou-mpakaseta-ston-panathinaiko-den-stamatisa-stigmi-na-prospatho-gia-to-kalytero-pic/",
+        "https://www.in.gr/2026/09/09/economy/i-agora-ergasias-stin-ellada-oi-kladoi-kai-oi-epixeiriseis-me-tis-isxyroteres-proptikes-apasxolisis/",
+        "https://www.in.gr/2026/09/09/apopsi/telika-meta-ti-gynaikoktonia-tis-kyriakis-griva-egine-pio-pithano-na-prostateytei-mia-gynaika-pou-kindyneyei/",
+        "https://www.in.gr/2026/09/09/life/oi-pet-shop-boys-timoun-ton-alan-touringk-se-synergasia-me-to-viografo-tou-to-neo-almpoum-a-man-from-the-future/",
+        "https://www.in.gr/2026/09/09/greece/o-yfypourgos-agrotikis-anaptyksis-episkeptetai-simera-ti-lesvo-se-anavrasmo-oi-ktinotrofoi/",
+        "https://www.in.gr/2026/09/09/greece/diki-valyraki-oloklironetai-simera-i-agoreysi-tou-eisaggelea/"
       ],
-      "seen_at_utc": "2026-09-09T05:51:15.867358+00:00"
+      "seen_at_utc": "2026-09-09T06:16:58.605301+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T05:51:15.867513+00:00"
+  "updated_at_utc": "2026-09-09T06:16:58.605379+00:00"
 }
