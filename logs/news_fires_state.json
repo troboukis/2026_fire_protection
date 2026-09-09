@@ -1,25 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564447532/nekros-soynitis-koyrdos-klirikos-sto-voreiodytiko-iran-oi-froyroi-tis-epanastasis-katigoroyn-aytonomistes/",
-      "title": "Νεκρός σουνίτης Κούρδος κληρικός στο βορειοδυτικό Ιράν – Οι Φρουροί της Επανάστασης κατηγορούν «αυτονομιστές»",
-      "normalized_title": "ΝΕΚΡΟΣ ΣΟΥΝΙΤΗΣ ΚΟΥΡΔΟΣ ΚΛΗΡΙΚΟΣ ΣΤΟ ΒΟΡΕΙΟΔΥΤΙΚΟ ΙΡΑΝ – ΟΙ ΦΡΟΥΡΟΙ ΤΗΣ ΕΠΑΝΑΣΤΑΣΗΣ ΚΑΤΗΓΟΡΟΥΝ «ΑΥΤΟΝΟΜΙΣΤΕΣ»",
+      "url": "https://www.kathimerini.gr/world/564447559/nikolas-keitz-terastia-kathizisi-katapie-tin-eisodo-toy-spitioy-toy-sto-malimpoy/",
+      "title": "Νίκολας Κέιτζ: Τεράστια καθίζηση «κατάπιε» την είσοδο του σπιτιού του στο Μαλιμπού",
+      "normalized_title": "ΝΙΚΟΛΑΣ ΚΕΙΤΖ: ΤΕΡΑΣΤΙΑ ΚΑΘΙΖΗΣΗ «ΚΑΤΑΠΙΕ» ΤΗΝ ΕΙΣΟΔΟ ΤΟΥ ΣΠΙΤΙΟΥ ΤΟΥ ΣΤΟ ΜΑΛΙΜΠΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564447532/nekros-soynitis-koyrdos-klirikos-sto-voreiodytiko-iran-oi-froyroi-tis-epanastasis-katigoroyn-aytonomistes/",
-        "https://www.kathimerini.gr/economy/564447493/sto-3-8-ayxithike-o-plithorismos-ton-aygoysto-sta-ypsi-energeia-kai-stegasi/",
-        "https://www.kathimerini.gr/society/564447517/serres-nea-entasi-sti-fylassomeni-kleisti-domi-tis-sintikis/",
-        "https://www.kathimerini.gr/opinion/564446191/i-anadeixi/",
-        "https://www.kathimerini.gr/opinion/564446188/i-pagida-tis-ypervolikis-ekthesis/",
-        "https://www.kathimerini.gr/opinion/564446590/oramata-kai-thamata-sti-deth/",
-        "https://www.kathimerini.gr/opinion/564446587/kyriakos-pierrakakis-aychenes/",
-        "https://www.kathimerini.gr/world/564447502/ekrixi-se-ydroilektriko-stathmo-stin-elvetia-anafores-gia-polloys-traymaties/",
-        "https://www.kathimerini.gr/opinion/564446422/paidia-choris-paidiki-ilikia/",
-        "https://www.kathimerini.gr/opinion/564446404/o-lysenko-stin-ekti-dimotikoy/",
-        "https://www.kathimerini.gr/society/564447487/chrysocho-dis-ilektroniko-vrachiolaki-se-katigoroymenoys-gia-endooikogeneiaki-via/",
-        "https://www.kathimerini.gr/opinion/564447475/elleimma-fantasias/",
-        "https://www.kathimerini.gr/society/564447472/kos-synelifthi-anilikos-poy-paresyre-pezo-me-motosikleta/"
+        "https://www.kathimerini.gr/world/564447559/nikolas-keitz-terastia-kathizisi-katapie-tin-eisodo-toy-spitioy-toy-sto-malimpoy/",
+        "https://www.kathimerini.gr/visual/infographics/564446242/to-el-ninio-vazei-fotia-stis-times-ton-trofimon-oi-allages-ston-agrotiko-charti/",
+        "https://www.kathimerini.gr/world/564447556/servia-o-proedros-voytsits-dielyse-to-koinovoylio-enopsei-prooron-eklogon/"
       ],
-      "seen_at_utc": "2026-09-09T10:17:10.237808+00:00"
+      "seen_at_utc": "2026-09-09T10:30:19.945712+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,41 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876178/tin-pebti-stin-ileia-i-kideia-tou-heiristi-tou-phantom-gianni-blesia-pou-skotothike-stin-tanagra/?utm_source=rss",
-      "title": "Την Πέμπτη στην Ηλεία η κηδεία του χειριστή του Phantom Γιάννη Μπλέσια που σκοτώθηκε στην Τανάγρα",
-      "normalized_title": "ΤΗΝ ΠΕΜΠΤΗ ΣΤΗΝ ΗΛΕΙΑ Η ΚΗΔΕΙΑ ΤΟΥ ΧΕΙΡΙΣΤΗ ΤΟΥ PHANTOM ΓΙΑΝΝΗ ΜΠΛΕΣΙΑ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΤΗΝ ΤΑΝΑΓΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1876182/to-kke-zita-na-erthei-amesa-sti-vouli-i-sumvasi-gia-tin-aspida-tou-ahillea/?utm_source=rss",
+      "title": "Το ΚΚΕ ζητά να έρθει άμεσα στη Βουλή η σύμβαση για την «Ασπίδα του Αχιλλέα»",
+      "normalized_title": "ΤΟ ΚΚΕ ΖΗΤΑ ΝΑ ΕΡΘΕΙ ΑΜΕΣΑ ΣΤΗ ΒΟΥΛΗ Η ΣΥΜΒΑΣΗ ΓΙΑ ΤΗΝ «ΑΣΠΙΔΑ ΤΟΥ ΑΧΙΛΛΕΑ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876178/tin-pebti-stin-ileia-i-kideia-tou-heiristi-tou-phantom-gianni-blesia-pou-skotothike-stin-tanagra/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876173/o-patoulis-apada-sto-pou-na-kateveis-vre-kakomoiri-tis-stauraki-den-eho-kamia-shesi-mazi-tis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876182/to-kke-zita-na-erthei-amesa-sti-vouli-i-sumvasi-gia-tin-aspida-tou-ahillea/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T10:17:10.237943+00:00"
+      "seen_at_utc": "2026-09-09T10:30:19.945977+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1463548/tanagra-i-voyli-yiothetei-ta-paidia-ton-dyo-adikohamenon-piloton-toy-phantom/",
-      "title": "Τανάγρα: Η Βουλή υιοθετεί τα παιδιά των δύο αδικοχαμένων πιλότων του Phantom",
-      "normalized_title": "ΤΑΝΑΓΡΑ: Η ΒΟΥΛΗ ΥΙΟΘΕΤΕΙ ΤΑ ΠΑΙΔΙΑ ΤΩΝ ΔΥΟ ΑΔΙΚΟΧΑΜΕΝΩΝ ΠΙΛΟΤΩΝ ΤΟΥ PHANTOM",
+      "url": "https://www.efsyn.gr/politiki/1463567/qatargate-stis-17-septemvrioy-i-psifoforia-sti-voyli-gia-tin-arsi-asylias-toy-dimitri-avramopoyloy/",
+      "title": "Qatargate: Στις 17 Σεπτεμβρίου η ψηφοφορία στη Βουλή για την άρση ασυλίας του Δημήτρη Αβραμόπουλου",
+      "normalized_title": "QATARGATE: ΣΤΙΣ 17 ΣΕΠΤΕΜΒΡΙΟΥ Η ΨΗΦΟΦΟΡΙΑ ΣΤΗ ΒΟΥΛΗ ΓΙΑ ΤΗΝ ΑΡΣΗ ΑΣΥΛΙΑΣ ΤΟΥ ΔΗΜΗΤΡΗ ΑΒΡΑΜΟΠΟΥΛΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1463548/tanagra-i-voyli-yiothetei-ta-paidia-ton-dyo-adikohamenon-piloton-toy-phantom/",
-        "https://www.efsyn.gr/kosmos/1463544/elvetia-ekrixi-se-ydroilektriko-stathmo-anafores-gia-traymaties/",
-        "https://www.efsyn.gr/politiki/1463528/otan-o-yfypoyrgos-fotilas-kamaronei-gia-ti-selfie-me-makron-kai-kloynei-eikones/",
-        "https://www.efsyn.gr/ellada/1463536/serres-nea-entasi-sti-domi-tis-sintikis-petaxan-petres-se-astynomikoys/"
+        "https://www.efsyn.gr/politiki/1463567/qatargate-stis-17-septemvrioy-i-psifoforia-sti-voyli-gia-tin-arsi-asylias-toy-dimitri-avramopoyloy/",
+        "https://www.efsyn.gr/oikonomia/1463439/eyropaika-ergaleia-kata-tis-vrahyhronias-misthosis/",
+        "https://www.efsyn.gr/tehnes/1463427/ta-mystika-giannena-toy-nikoy-hoyliara-tora-pia-fysaei-monaha-mes-stis-lexeis/",
+        "https://www.efsyn.gr/politiki/1463563/paremvasi-kke-sti-diaskepsi-ton-proedron-tis-voylis-gia-tin-aspida-toy-ahillea-na-erthei-stin-olomeleia-i-symvasi/"
       ],
-      "seen_at_utc": "2026-09-09T10:17:10.237900+00:00"
+      "seen_at_utc": "2026-09-09T10:30:19.945942+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/greece/kriti-i-protasi-gamou-pou-katelikse-se-thriler-33xronos-vrethike-anaisthitos-sti-thalassa/",
-      "title": "Η πρόταση γάμου που κατέληξε σε θρίλερ - 33χρονος βρέθηκε αναίσθητος στη θάλασσα",
-      "normalized_title": "Η ΠΡΟΤΑΣΗ ΓΑΜΟΥ ΠΟΥ ΚΑΤΕΛΗΞΕ ΣΕ ΘΡΙΛΕΡ - 33ΧΡΟΝΟΣ ΒΡΕΘΗΚΕ ΑΝΑΙΣΘΗΤΟΣ ΣΤΗ ΘΑΛΑΣΣΑ",
+      "url": "https://www.in.gr/2026/09/09/greece/oi-200-tis-kaisarianis-zontaneyoun-sto-52o-festival-kne-odigiti/",
+      "title": "Oι 200 της Καισαριανής «ζωντανεύουν» στο 52ο Φεστιβάλ ΚΝΕ-Οδηγητή",
+      "normalized_title": "OΙ 200 ΤΗΣ ΚΑΙΣΑΡΙΑΝΗΣ «ΖΩΝΤΑΝΕΥΟΥΝ» ΣΤΟ 52Ο ΦΕΣΤΙΒΑΛ ΚΝΕ-ΟΔΗΓΗΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/greece/kriti-i-protasi-gamou-pou-katelikse-se-thriler-33xronos-vrethike-anaisthitos-sti-thalassa/",
-        "https://www.in.gr/2026/09/09/sports/football/football-meets-data-oi-pithanotites-prokrisis-tis-aek-meta-ti-niki-apenanti-sti-lintser-pic/",
-        "https://www.in.gr/2026/09/09/greece/xania-touristas-zitise-apozimiosi-apo-ksenodoxeio-giati-ton-tsimpisan-kounoupia/",
-        "https://www.in.gr/2026/09/09/world/ekriksi-se-ydroilektriko-stathmo-stin-elvetia-anafores-gia-traymaties/",
-        "https://www.in.gr/2026/09/09/world/lypira-kai-epivlavi-xaraktirise-to-londino-ta-metra-pou-anakoinose-to-israil-eis-varos-tou/",
-        "https://www.in.gr/2026/09/09/go-fun/perierga/tha-exoun-panta-to-parisi-kyriakos-mitsotakis-kai-ioanna-touni-sto-pio-krintz-interaction-sta-social/"
+        "https://www.in.gr/2026/09/09/greece/oi-200-tis-kaisarianis-zontaneyoun-sto-52o-festival-kne-odigiti/",
+        "https://www.in.gr/2026/09/09/sports/football/popovits-xaroumenos-pou-irtha-se-enan-toso-megalo-syllogo-tha-matho-polla-apo-ton-ortegka/",
+        "https://www.in.gr/2026/09/09/politics/aftodioikisi/7i-diaperifereiaki-synantisi-sto-dimo-prevezas/"
       ],
-      "seen_at_utc": "2026-09-09T10:17:10.237858+00:00"
+      "seen_at_utc": "2026-09-09T10:30:19.945833+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T10:17:10.238019+00:00"
+  "updated_at_utc": "2026-09-09T10:30:19.946049+00:00"
 }
