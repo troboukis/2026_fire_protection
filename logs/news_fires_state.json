@@ -1,15 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564447211/kriti-tetarto-kroysma-ioy-toy-dytikoy-neiloy-34chronos-nosileyetai-sto-pagni/",
-      "title": "Κρήτη: Τέταρτο κρούσμα ιού του Δυτικού Νείλου – 34χρονος νοσηλεύεται στο ΠΑΓΝΗ",
-      "normalized_title": "ΚΡΗΤΗ: ΤΕΤΑΡΤΟ ΚΡΟΥΣΜΑ ΙΟΥ ΤΟΥ ΔΥΤΙΚΟΥ ΝΕΙΛΟΥ – 34ΧΡΟΝΟΣ ΝΟΣΗΛΕΥΕΤΑΙ ΣΤΟ ΠΑΓΝΗ",
+      "url": "https://www.kathimerini.gr/athletics/564447316/ispania-o-mesi-agorazei-omada-tis-v-katigorias/",
+      "title": "Ισπανία: Ο Μέσι αγοράζει ομάδα της β’ κατηγορίας",
+      "normalized_title": "ΙΣΠΑΝΙΑ: Ο ΜΕΣΙ ΑΓΟΡΑΖΕΙ ΟΜΑΔΑ ΤΗΣ Β’ ΚΑΤΗΓΟΡΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564447211/kriti-tetarto-kroysma-ioy-toy-dytikoy-neiloy-34chronos-nosileyetai-sto-pagni/",
-        "https://www.kathimerini.gr/economy/business/564446683/se-thesi-machis-oi-tileoptikes-syndromitikes-platformes/",
-        "https://www.kathimerini.gr/society/564447232/pagkosmia-protia-gia-tin-ellada-gennisi-paidioy-apo-emvryo-poy-eiche-kryosyntirithei-prin-apo-22-chronia/"
+        "https://www.kathimerini.gr/athletics/564447316/ispania-o-mesi-agorazei-omada-tis-v-katigorias/",
+        "https://www.kathimerini.gr/world/564447229/israil-salos-meta-to-dimosieyma-gia-tin-7i-oktovrioy-me-minysi-sti-haaretz-apanta-o-netaniachoy/",
+        "https://www.kathimerini.gr/economy/international/564446752/to-epikindyno-adiexodo-sta-stena-toy-ormoyz/",
+        "https://www.kathimerini.gr/politics/amyna/564440005/pantelis-tzortzakis-stin-k-giati-kathysterei-i-anaptyxi-ton-exoplismon/",
+        "https://www.kathimerini.gr/world/564447298/tailandi-astynomikos-skotose-ti-nipiagogo-syzygo-toy-mesa-sto-nipiagogeio/",
+        "https://www.kathimerini.gr/world/564447304/apolithomena-ayga-gigantion-deinosayron-entopistikan-se-anapantecho-simeio-to-kolpo-poy-ta-kratoyse-zesta/",
+        "https://www.kathimerini.gr/society/564447292/nees-sygkoinoniakes-grammes-se-anatoliki-kai-dytiki-attiki-apo-tis-18-septemvrioy/",
+        "https://www.kathimerini.gr/world/564447286/merts-apetrapi-sto-para-pente-katastrofi-sto-aerodromio-tis-leipsias/"
       ],
-      "seen_at_utc": "2026-09-09T08:30:01.278019+00:00"
+      "seen_at_utc": "2026-09-09T08:51:15.467313+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,46 +1266,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876095/katapeltis-o-eisaggeleas-sti-diki-valuraki-zita-enohi-ton-duo-psaradon-ton-htupisan-me-kodari/?utm_source=rss",
-      "title": "Καταπέλτης ο εισαγγελέας στη δίκη για τον θάνατο Βαλυράκη, ζητά την ενοχή των δύο ψαράδων: «Τον χτύπησαν με κοντάρι και τον εγκατέλειψαν αβοήθητο στη θάλασσα»",
-      "normalized_title": "ΚΑΤΑΠΕΛΤΗΣ Ο ΕΙΣΑΓΓΕΛΕΑΣ ΣΤΗ ΔΙΚΗ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΒΑΛΥΡΑΚΗ, ΖΗΤΑ ΤΗΝ ΕΝΟΧΗ ΤΩΝ ΔΥΟ ΨΑΡΑΔΩΝ: «ΤΟΝ ΧΤΥΠΗΣΑΝ ΜΕ ΚΟΝΤΑΡΙ ΚΑΙ ΤΟΝ ΕΓΚΑΤΕΛΕΙΨΑΝ ΑΒΟΗΘΗΤΟ ΣΤΗ ΘΑΛΑΣΣΑ»",
+      "url": "https://www.protothema.gr/greece/article/1876118/neo-lukeio-kai-ethniko-apolutirio-i-megali-allagi-pou-anoigei-sti-vouli-pote-anamenetai-na-efarmostei-to-neo-modelo/?utm_source=rss",
+      "title": "Νέο Λύκειο και Εθνικό Απολυτήριο: Η μεγάλη αλλαγή που ανοίγει στη Βουλή, πότε αναμένεται να εφαρμοστεί το νέο μοντέλο",
+      "normalized_title": "ΝΕΟ ΛΥΚΕΙΟ ΚΑΙ ΕΘΝΙΚΟ ΑΠΟΛΥΤΗΡΙΟ: Η ΜΕΓΑΛΗ ΑΛΛΑΓΗ ΠΟΥ ΑΝΟΙΓΕΙ ΣΤΗ ΒΟΥΛΗ, ΠΟΤΕ ΑΝΑΜΕΝΕΤΑΙ ΝΑ ΕΦΑΡΜΟΣΤΕΙ ΤΟ ΝΕΟ ΜΟΝΤΕΛΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876095/katapeltis-o-eisaggeleas-sti-diki-valuraki-zita-enohi-ton-duo-psaradon-ton-htupisan-me-kodari/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876094/simadiko-iatriko-epiteugma-stin-athina-moro-gennithike-apo-emvruo-pou-eihe-kruosudirithei-gia-22-hronia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876092/konitsa-10i-imera-mahi-me-tis-floges-stin-trapezitsa-perioristikan-oi-esties-alla-paramenei-o-kindunos-anazopuroseon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876083/thasos-sunelifthi-40hronos-gia-tis-diarrixeis-se-tria-ekdotiria-nautiliakon-etaireion/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876079/i-vouli-episkeuazei-duo-spitia-sto-kastellorizo-gia-na-meinoun-giatroi-kai-daskaloi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876076/dimoglidou-gia-dolofonia-kuriakis-griva-edelos-diaforetiki-pleon-i-adimetopisi-tis-endooikogeneiakis-vias-apo-tin-elas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876071/aposolinothike-i-14hroni-pou-traumatistike-sovara-se-trohaio-me-ilektriko-patini-stin-tino/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876118/neo-lukeio-kai-ethniko-apolutirio-i-megali-allagi-pou-anoigei-sti-vouli-pote-anamenetai-na-efarmostei-to-neo-modelo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876115/perissotera-mikroplastika-stous-pneumones-asthenon-me-karkino-edopise-elliniki-meleti/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T08:17:10.290714+00:00"
+      "seen_at_utc": "2026-09-09T08:51:15.467463+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1463389/theoyta-parakalei-vryxelles/",
-      "title": "Θέουτα (παρα)καλεί… Βρυξέλλες",
-      "normalized_title": "ΘΕΟΥΤΑ (ΠΑΡΑ)ΚΑΛΕΙ… ΒΡΥΞΕΛΛΕΣ",
+      "url": "https://www.efsyn.gr/politiki/1463446/gerapetritis-opoios-fonazei-den-einai-panta-o-pio-ishyros-i-ellada-etoimi-gia-ola-ta-senaria/",
+      "title": "Γεραπετρίτης: «Όποιος φωνάζει δεν είναι πάντα ο πιο ισχυρός – Η Ελλάδα έτοιμη για όλα τα σενάρια»",
+      "normalized_title": "ΓΕΡΑΠΕΤΡΙΤΗΣ: «ΟΠΟΙΟΣ ΦΩΝΑΖΕΙ ΔΕΝ ΕΙΝΑΙ ΠΑΝΤΑ Ο ΠΙΟ ΙΣΧΥΡΟΣ – Η ΕΛΛΑΔΑ ΕΤΟΙΜΗ ΓΙΑ ΟΛΑ ΤΑ ΣΕΝΑΡΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1463389/theoyta-parakalei-vryxelles/",
-        "https://www.efsyn.gr/politiki/1463437/arvanitis-kai-koyntoyra-zitoyn-apo-tin-komision-eggyimeni-hrimatodotisi-gia-toys-melissokomoys-kai-meta-to-2027/",
-        "https://www.efsyn.gr/ellada/1463434/diki-sifi-valyraki-tin-enohi-ton-dyo-katigoroymenon-psaradon-zitise-o-eisaggeleas/"
+        "https://www.efsyn.gr/politiki/1463446/gerapetritis-opoios-fonazei-den-einai-panta-o-pio-ishyros-i-ellada-etoimi-gia-ola-ta-senaria/",
+        "https://www.efsyn.gr/politiki/1463456/hrysohoidis-vrahiolaki-se-oloys-toys-ypodikoys-gia-endooikogeneiaki-via-poy-tithentai-ypo-perioristikoys-oroys/",
+        "https://www.efsyn.gr/life/1463440/maria-kanellopoyloy-den-apanto-ohi-apo-ageneia-alla-apo-animporia-to-neo-minyma-meta-to-trohaio/",
+        "https://www.efsyn.gr/oikonomia/1463403/ta-perierga-mathimatika-gia-to-ilektriko-reyma-pos-i-meiosi-50-ton-hreoseon-kataligei-se-ofelos-molis-15/"
       ],
-      "seen_at_utc": "2026-09-09T08:30:01.278107+00:00"
+      "seen_at_utc": "2026-09-09T08:51:15.467419+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/go-fun/fizz/smaragda-karydi-exo-sygxorisei-apistia-alla-kai-exo-xasei-douleia-gia-erota/",
-      "title": "Σμαράγδα Καρύδη: «Έχω συγχωρήσει απιστία αλλά και έχω χάσει δουλειά για έρωτα»",
-      "normalized_title": "ΣΜΑΡΑΓΔΑ ΚΑΡΥΔΗ: «ΕΧΩ ΣΥΓΧΩΡΗΣΕΙ ΑΠΙΣΤΙΑ ΑΛΛΑ ΚΑΙ ΕΧΩ ΧΑΣΕΙ ΔΟΥΛΕΙΑ ΓΙΑ ΕΡΩΤΑ»",
+      "url": "https://www.in.gr/2026/09/09/greece/athina-gennithike-paidi-apo-emvryo-pou-eixe-kryosyntirithei-prin-apo-22-xronia/",
+      "title": "Αθήνα: Γεννήθηκε παιδί από έμβρυο που είχε κρυοσυντηρηθεί πριν από 22 χρόνια",
+      "normalized_title": "ΑΘΗΝΑ: ΓΕΝΝΗΘΗΚΕ ΠΑΙΔΙ ΑΠΟ ΕΜΒΡΥΟ ΠΟΥ ΕΙΧΕ ΚΡΥΟΣΥΝΤΗΡΗΘΕΙ ΠΡΙΝ ΑΠΟ 22 ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/go-fun/fizz/smaragda-karydi-exo-sygxorisei-apistia-alla-kai-exo-xasei-douleia-gia-erota/",
-        "https://www.in.gr/2026/09/09/sports/football/oi-diaitites-tis-4is-agonistikis-tis-super-league-o-kolompo-sto-paok-aris-o-fotias-sto-olympiakos-ofi/",
-        "https://www.in.gr/2026/09/09/politics/pasok-epixeirisi-voreia-ellada-me-to-vlemma-stis-kalpes/",
-        "https://www.in.gr/2026/09/09/politics/aftodioikisi/anekselegkti-aporripsi-aporrimmaton-konta-ston-arxaiologiko-xoro-olynthou/",
-        "https://www.in.gr/2026/09/09/greece/antidraseis-gia-to-vivlio-glossas-tis-v-dimotikou-skopimes-oi-parermineies-ton-eikonografiseon-lene-oi-dimiourgoi/",
-        "https://www.in.gr/2026/09/09/plus/medianews/drasi-to-3o-teyxos-erxetai-ayto-to-savvato-me-ta-nea/",
-        "https://www.in.gr/2026/09/09/greece/farmakeia-kleista-stin-attiki-stis-14-septemvriou-pos-tha-eksypiretithoun-oi-polites/"
+        "https://www.in.gr/2026/09/09/greece/athina-gennithike-paidi-apo-emvryo-pou-eixe-kryosyntirithei-prin-apo-22-xronia/",
+        "https://www.in.gr/2026/09/09/greece/diki-tempon-viosame-ton-thanato-polles-fores-i-katathesi-tis-oikogeneias-tou-mixanodigou-massali/"
       ],
-      "seen_at_utc": "2026-09-09T08:30:01.278085+00:00"
+      "seen_at_utc": "2026-09-09T08:51:15.467366+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T08:30:01.278199+00:00"
+  "updated_at_utc": "2026-09-09T08:51:15.467555+00:00"
 }
