@@ -1,15 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564446158/eniaia-toyristiki-taytotita-synergasia-kai-ypodomes-apoteloyn-to-stoichima-gia-to-epomeno-toyristiko-vima-tis-thessalonikis/",
-      "title": "Ενιαία τουριστική ταυτότητα, συνεργασία και υποδομές αποτελούν το στοίχημα για το επόμενο τουριστικό βήμα της Θεσσαλονίκης",
-      "normalized_title": "ΕΝΙΑΙΑ ΤΟΥΡΙΣΤΙΚΗ ΤΑΥΤΟΤΗΤΑ, ΣΥΝΕΡΓΑΣΙΑ ΚΑΙ ΥΠΟΔΟΜΕΣ ΑΠΟΤΕΛΟΥΝ ΤΟ ΣΤΟΙΧΗΜΑ ΓΙΑ ΤΟ ΕΠΟΜΕΝΟ ΤΟΥΡΙΣΤΙΚΟ ΒΗΜΑ ΤΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "url": "https://www.kathimerini.gr/world/564446773/ipa-iran-ekaterothen-pligmata-kata-ploion-anevazoyn-xana-tin-entasi/",
+      "title": "ΗΠΑ-Ιράν: Εκατέρωθεν πλήγματα κατά πλοίων ανεβάζουν ξανά την ένταση",
+      "normalized_title": "ΗΠΑ-ΙΡΑΝ: ΕΚΑΤΕΡΩΘΕΝ ΠΛΗΓΜΑΤΑ ΚΑΤΑ ΠΛΟΙΩΝ ΑΝΕΒΑΖΟΥΝ ΞΑΝΑ ΤΗΝ ΕΝΤΑΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564446158/eniaia-toyristiki-taytotita-synergasia-kai-ypodomes-apoteloyn-to-stoichima-gia-to-epomeno-toyristiko-vima-tis-thessalonikis/",
-        "https://www.kathimerini.gr/eortologio/564422038/eortologio-poioi-giortazoyn-simera-9-septemvrioy/",
-        "https://www.kathimerini.gr/world/564446074/aigyptos-o-tafos-enos-vasilikoy-dikasti-tis-pemptis-dynasteias-vrethike-sti-sakara/"
+        "https://www.kathimerini.gr/world/564446773/ipa-iran-ekaterothen-pligmata-kata-ploion-anevazoyn-xana-tin-entasi/",
+        "https://www.kathimerini.gr/society/564446803/peiraias-megali-fotia-se-palaiopoleio-katastrafike-oloscheros/",
+        "https://www.kathimerini.gr/world/564446335/germania-oi-stratigikes-ton-kommaton-prin-apo-tis-epomenes-kalpes/",
+        "https://www.kathimerini.gr/world/564446791/i-koyva-den-tha-xanaginei-pote-apoikia-apanta-o-proedros-tis-ston-tramp/",
+        "https://www.kathimerini.gr/society/564446314/karkinos-toy-dermatos-exetaseis-se-katoikoys-dysprositon-periochon/",
+        "https://www.kathimerini.gr/economy/international/564446758/epitokio-4-apo-tin-ekt-sta-teli-toy-2027-vlepei-i-agora/",
+        "https://www.kathimerini.gr/economy/local/564446635/ta-kleidia-gia-meiosi-tis-timis-toy-reymatos-kata-30/",
+        "https://www.kathimerini.gr/visual/infographics/564446305/ellines-mathites-choris-vasikes-dexiotites/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564446275/paramenei-stratigiki-i-schesi-athinas-ka-roy/"
       ],
-      "seen_at_utc": "2026-09-08T21:17:07.221544+00:00"
+      "seen_at_utc": "2026-09-09T04:17:28.707260+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,32 +1267,61 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1875907/diasostes-epaneferan-andra-pou-eihe-anasurthei-horis-aisthiseis-se-paralia-tis-halkidikis-tou-ekanan-karpa-gia-45-lepta/?utm_source=rss",
-      "title": "Διασώστες επανέφεραν άνδρα που είχε ανασυρθεί χωρίς αισθήσεις σε παραλία της Χαλκιδικής, του έκαναν ΚΑΡΠΑ για 45 λεπτά",
-      "normalized_title": "ΔΙΑΣΩΣΤΕΣ ΕΠΑΝΕΦΕΡΑΝ ΑΝΔΡΑ ΠΟΥ ΕΙΧΕ ΑΝΑΣΥΡΘΕΙ ΧΩΡΙΣ ΑΙΣΘΗΣΕΙΣ ΣΕ ΠΑΡΑΛΙΑ ΤΗΣ ΧΑΛΚΙΔΙΚΗΣ, ΤΟΥ ΕΚΑΝΑΝ ΚΑΡΠΑ ΓΙΑ 45 ΛΕΠΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1875950/thessaloniki-sti-fulaki-59hronos-pou-xulokopise-tin-31hroni-sudrofo-tou-kata-ti-diarkeia-tis-erotikis-praxis/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Στη φυλακή 59χρονος που ξυλοκόπησε την 31χρονη σύντροφό του κατά τη διάρκεια της ερωτικής πράξης",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΤΗ ΦΥΛΑΚΗ 59ΧΡΟΝΟΣ ΠΟΥ ΞΥΛΟΚΟΠΗΣΕ ΤΗΝ 31ΧΡΟΝΗ ΣΥΝΤΡΟΦΟ ΤΟΥ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΤΗΣ ΕΡΩΤΙΚΗΣ ΠΡΑΞΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1875907/diasostes-epaneferan-andra-pou-eihe-anasurthei-horis-aisthiseis-se-paralia-tis-halkidikis-tou-ekanan-karpa-gia-45-lepta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1875950/thessaloniki-sti-fulaki-59hronos-pou-xulokopise-tin-31hroni-sudrofo-tou-kata-ti-diarkeia-tis-erotikis-praxis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1875925/megali-fotia-se-palaiopoleio-kai-katastima-me-ufasmata-ston-peiraia-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-08T20:51:18.132166+00:00"
+      "seen_at_utc": "2026-09-09T04:17:28.707374+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1463218/stratos-xiras-orkistikan-oi-protes-gynaikes-dea-stratonomoi-kai-eidikodynamitisses-eikones/",
-      "title": "Στρατός Ξηράς: Ορκίστηκαν οι πρώτες γυναίκες ΔΕΑ, στρατονόμοι και ειδικοδυναμίτισσες [εικόνες]",
-      "normalized_title": "ΣΤΡΑΤΟΣ ΞΗΡΑΣ: ΟΡΚΙΣΤΗΚΑΝ ΟΙ ΠΡΩΤΕΣ ΓΥΝΑΙΚΕΣ ΔΕΑ, ΣΤΡΑΤΟΝΟΜΟΙ ΚΑΙ ΕΙΔΙΚΟΔΥΝΑΜΙΤΙΣΣΕΣ [ΕΙΚΟΝΕΣ]",
+      "url": "https://www.efsyn.gr/politiki/1463231/nea-anoigmata-androylaki-sto-pasok-teligioridoy-kai-avramakis/",
+      "title": "Νέα ανοίγματα Ανδρουλάκη: Στο ΠΑΣΟΚ Τελιγιορίδου και Αβραμάκης",
+      "normalized_title": "ΝΕΑ ΑΝΟΙΓΜΑΤΑ ΑΝΔΡΟΥΛΑΚΗ: ΣΤΟ ΠΑΣΟΚ ΤΕΛΙΓΙΟΡΙΔΟΥ ΚΑΙ ΑΒΡΑΜΑΚΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1463218/stratos-xiras-orkistikan-oi-protes-gynaikes-dea-stratonomoi-kai-eidikodynamitisses-eikones/"
+        "https://www.efsyn.gr/politiki/1463231/nea-anoigmata-androylaki-sto-pasok-teligioridoy-kai-avramakis/",
+        "https://www.efsyn.gr/politiki/1463228/minyma-mitsotaki-stin-agkyra-statherotita-den-simainei-anohi/",
+        "https://www.efsyn.gr/ellada/1463225/kyriaki-griva-tha-plirosoyn-oi-astynomikoi-poy-tin-afisan-na-dolofonithei/",
+        "https://www.efsyn.gr/protoselida/fotia-sta-kaysima-metra-aspirines/",
+        "https://www.efsyn.gr/ellada/1463234/peiraias-megali-fotia-se-katastima-yfasmaton-olosheris-katastrofi-vinteo/",
+        "https://www.efsyn.gr/ellada/1463232/eortologio-poioi-giortazoyn-simera-9-septemvrioy/"
       ],
-      "seen_at_utc": "2026-09-08T21:17:07.221647+00:00"
+      "seen_at_utc": "2026-09-09T04:17:28.707334+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/world/ipa-efeteio-apagoreyei-stin-eforia-na-metavivazei-prosopika-stoixeia-metanaston-stin-ice/",
-      "title": "Εφετείο μπλοκάρει τη μεταβίβαση από την εφορία στοιχείων μεταναστών στην ICE",
-      "normalized_title": "ΕΦΕΤΕΙΟ ΜΠΛΟΚΑΡΕΙ ΤΗ ΜΕΤΑΒΙΒΑΣΗ ΑΠΟ ΤΗΝ ΕΦΟΡΙΑ ΣΤΟΙΧΕΙΩΝ ΜΕΤΑΝΑΣΤΩΝ ΣΤΗΝ ICE",
+      "url": "https://www.in.gr/2026/09/09/economy/h-ellada-emeine-ksana-piso-apo-tin-eyropi-ston-tomea-ton-ependyseon-apokalyptika-stoixeia/",
+      "title": "H Ελλάδα έμεινε ξανά πίσω από την Ευρώπη στον τομέα των επενδύσεων – Αποκαλυπτικά στοιχεία",
+      "normalized_title": "H ΕΛΛΑΔΑ ΕΜΕΙΝΕ ΞΑΝΑ ΠΙΣΩ ΑΠΟ ΤΗΝ ΕΥΡΩΠΗ ΣΤΟΝ ΤΟΜΕΑ ΤΩΝ ΕΠΕΝΔΥΣΕΩΝ – ΑΠΟΚΑΛΥΠΤΙΚΑ ΣΤΟΙΧΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/world/ipa-efeteio-apagoreyei-stin-eforia-na-metavivazei-prosopika-stoixeia-metanaston-stin-ice/"
+        "https://www.in.gr/2026/09/09/economy/h-ellada-emeine-ksana-piso-apo-tin-eyropi-ston-tomea-ton-ependyseon-apokalyptika-stoixeia/",
+        "https://www.in.gr/2026/09/09/life/geysi/syntagi-rigkatoni-ala-mousaka/",
+        "https://www.in.gr/2026/09/09/world/ipa-o-ypourgos-metaforon-ntafi-epikrinei-tin-aytokinitoviomixania-ford-gia-tis-sxeseis-tis-me-tin-kina/",
+        "https://www.in.gr/2026/09/09/greece/poly-ypsilos-kindynos-pyrkagias-se-attiki-kai-eyvoia-tin-tetarti/",
+        "https://www.in.gr/2026/09/09/plus/vita/syko-ena-frouto-me-syntheto-kai-plousio-profil/",
+        "https://www.in.gr/2026/09/09/greece/kairos-isxyroi-voriades-sto-aigaio-kai-thermokrasies-eos-33-vathmous-pou-tha-exei-vroxes-kai-kataigides/",
+        "https://www.in.gr/2026/09/09/life/culture-live/kathrin-zeta-tzoouns-protagonistei-sto-atmosfairiko-thriler-kill-jackie/",
+        "https://www.in.gr/2026/09/09/plus/vita/oi-dyo-diaforetikes-antidraseis-sto-stres/",
+        "https://www.in.gr/2026/09/09/economy/diethnis-oikonomia/coast-fi-giati-oi-neoi-strefontai-se-enan-aplo-mathimatiko-typo-gia-na-eksasfalisoun-to-mellon-tous/",
+        "https://www.in.gr/2026/09/09/greece/skandalo-ypoklopon-i-nea-minysi-kai-i-epomeni-mera/",
+        "https://www.in.gr/2026/09/09/greece/efarmogi-112-aspida-kata-ton-apateonon/",
+        "https://www.in.gr/2026/09/09/greece/anefiktes-diadromes-ta-dromologia-den-vgainoun-kataggelloun-odigoi-leoforeion/",
+        "https://www.in.gr/2026/09/09/life/culture-live/o-ntomnal-gklison-dyskoleytike-na-dextei-ta-komplimenta-tou-kilian-merfi/",
+        "https://www.in.gr/2026/09/09/world/den-prokeitai-mono-gia-ti-saksonia-anxalt-3-1-logoi-gia-tin-akrodeksia-epelasi-tou-afd-sti-germania/",
+        "https://www.in.gr/2026/09/09/politics/paraskinio/tourkia-apopeira-kyvernoepithesis-se-kinita-ypourgon-ypopsies-gia-ellada-kai-israil/",
+        "https://www.in.gr/2026/09/09/world/o-zelenski-dilonei-etoimos-gia-symvivasmo-me-tin-rosia-oste-na-stamatisoun-oi-aeroporikes-epitheseis/",
+        "https://www.in.gr/2026/09/09/world/el-alamein-o-sisi-proskalese-mono-ton-xristodoulidi-oi-tourkoi-enoxlithikan-kai-adeiasan-to-periptero-tous/",
+        "https://www.in.gr/2026/09/09/go-fun/fizz/sarkazontas-ton-tramp-i-satiriki-seira-south-park-metonomazetai-se-south-america/",
+        "https://www.in.gr/2026/09/09/economy/diethnis-oikonomia/to-petrelaio-aggizei-ksana-ta-100-dolaria-to-vareli-meta-tis-nees-antallages-pligmaton-sti-mesi-anatoli/",
+        "https://www.in.gr/2026/09/09/world/o-tramp-eksairei-ti-niki-tis-afd-tonizontas-to-mgga-make-germany-great-again/",
+        "https://www.in.gr/2026/09/09/greece/peiraias-megali-pyrkagia-se-ktirio-me-epaggelmatikous-xorous-pou-kaigetai-olosxeros/",
+        "https://www.in.gr/2026/09/09/greece/aktivistes-kai-eidikoi-zitoun-apo-tin-komision-aystiroteres-rythmiseis-gia-tis-platformes-koinonikis-diktyosis/",
+        "https://www.in.gr/2026/09/09/world/kolomvia-gia-ti-veltiosi-ton-sxeseon-me-tis-ipa-diavevaionei-o-roumpio/",
+        "https://www.in.gr/2026/09/09/world/tramp-amfilegomeni-prosopiki-istoria-se-ekdilosi-mnimis-gia-tin-11i-septemvriou/"
       ],
-      "seen_at_utc": "2026-09-08T22:51:08.869429+00:00"
+      "seen_at_utc": "2026-09-09T04:17:28.707314+00:00"
     }
   },
-  "updated_at_utc": "2026-09-08T22:51:08.869508+00:00"
+  "updated_at_utc": "2026-09-09T04:17:28.707467+00:00"
 }
