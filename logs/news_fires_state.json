@@ -1,18 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564446992/o-tramp-den-enantiothike-stis-vretanikes-kyroseis-kata-ton-israilinon-epoikismon/",
-      "title": "Ο Τραμπ δεν εναντιώθηκε στις βρετανικές κυρώσεις κατά των ισραηλινών εποικισμών",
-      "normalized_title": "Ο ΤΡΑΜΠ ΔΕΝ ΕΝΑΝΤΙΩΘΗΚΕ ΣΤΙΣ ΒΡΕΤΑΝΙΚΕΣ ΚΥΡΩΣΕΙΣ ΚΑΤΑ ΤΩΝ ΙΣΡΑΗΛΙΝΩΝ ΕΠΟΙΚΙΣΜΩΝ",
+      "url": "https://www.kathimerini.gr/economy/international/564446701/to-dystheorito-varos-ton-tokon-toy-amerikanikoy-chreoys/",
+      "title": "Το δυσθεώρητο βάρος των τόκων του αμερικανικού χρέους",
+      "normalized_title": "ΤΟ ΔΥΣΘΕΩΡΗΤΟ ΒΑΡΟΣ ΤΩΝ ΤΟΚΩΝ ΤΟΥ ΑΜΕΡΙΚΑΝΙΚΟΥ ΧΡΕΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564446992/o-tramp-den-enantiothike-stis-vretanikes-kyroseis-kata-ton-israilinon-epoikismon/",
-        "https://www.kathimerini.gr/culture/cinema/564446446/83o-festival-kinimatografoy-venetias-oikogeneiako-drama-me-politikes-aichmes-gyro-apo-to-chrima/",
-        "https://www.kathimerini.gr/society/564447043/thessaloniki-xanachtypise-to-idio-periptero-gia-pagota/",
-        "https://www.kathimerini.gr/culture/cinema/564447025/to-mellon-einai-anapofeykto-o-antrioy-gkarflint-einai-o-sam-altman-sto-proto-treiler-toy-artificial/",
-        "https://www.kathimerini.gr/world/564447022/rosia-tesseris-nekroi-apo-oykraniko-drone-sto-novorosisk/",
-        "https://www.kathimerini.gr/economy/business/564446686/oi-ellinikes-startups-etaireies-antlisan-416-ekat-dol-to-2026/"
+        "https://www.kathimerini.gr/economy/international/564446701/to-dystheorito-varos-ton-tokon-toy-amerikanikoy-chreoys/",
+        "https://www.kathimerini.gr/world/564447079/apati-mamoyth-me-leia-240-ekat-se-kryptonomismata-ferrari-epayleis-kai-ena-moiraio-lathos/",
+        "https://www.kathimerini.gr/life/hours/564447070/tessera-monadika-rolex-daytona-se-dimoprasia-ayton-ton-mina-pros-ofelos-ton-idrymaton-federer-kai-re-wild/",
+        "https://www.kathimerini.gr/world/564447073/krisi-empistosynis-stin-eyropi-dimioyrgei-edafos-gia-tin-akrodexia-nea-ereyna-gia-toys-psifoforoys/",
+        "https://www.kathimerini.gr/society/564447040/epicheiriseis-diasosis-97-metanaston-notia-tis-kritis/"
       ],
-      "seen_at_utc": "2026-09-09T06:30:01.572659+00:00"
+      "seen_at_utc": "2026-09-09T06:51:13.231208+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,37 +1263,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876022/upothesi-valuraki-i-ora-tis-krisimis-protasis-tou-eisaggelea-gia-tous-duo-katigoroumenous-psarades/?utm_source=rss",
-      "title": "Δίκη για θάνατο του Σήφη Βαλυράκη: Η ώρα της κρίσιμης πρότασης του Εισαγγελέα για τους δύο κατηγορούμενους ψαράδες",
-      "normalized_title": "ΔΙΚΗ ΓΙΑ ΘΑΝΑΤΟ ΤΟΥ ΣΗΦΗ ΒΑΛΥΡΑΚΗ: Η ΩΡΑ ΤΗΣ ΚΡΙΣΙΜΗΣ ΠΡΟΤΑΣΗΣ ΤΟΥ ΕΙΣΑΓΓΕΛΕΑ ΓΙΑ ΤΟΥΣ ΔΥΟ ΚΑΤΗΓΟΡΟΥΜΕΝΟΥΣ ΨΑΡΑΔΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1876034/sunelifthi-53hronos-diakinitis-sti-thessaloniki-metefere-metanastes-krummenous-se-portbagaz/?utm_source=rss",
+      "title": "Συνελήφθη 53χρονος διακινητής στη Θεσσαλονίκη, μετέφερε μετανάστες κρυμμένους σε πορτμπαγκάζ",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 53ΧΡΟΝΟΣ ΔΙΑΚΙΝΗΤΗΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΜΕΤΕΦΕΡΕ ΜΕΤΑΝΑΣΤΕΣ ΚΡΥΜΜΕΝΟΥΣ ΣΕ ΠΟΡΤΜΠΑΓΚΑΖ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876022/upothesi-valuraki-i-ora-tis-krisimis-protasis-tou-eisaggelea-gia-tous-duo-katigoroumenous-psarades/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876034/sunelifthi-53hronos-diakinitis-sti-thessaloniki-metefere-metanastes-krummenous-se-portbagaz/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876026/thessaloniki-kleistos-kai-sta-duo-reumata-simera-to-vradu-o-perifereiakos-logo-flyover/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876024/kleista-ta-farmakeia-tis-attikis-stis-14-septemvriou-pos-tha-exupiretithoun-oi-polites/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-09T06:30:01.572815+00:00"
+      "seen_at_utc": "2026-09-09T06:51:13.231305+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1463340/marina-stayraki-to-aihmiro-sholio-ston-proin-syzygo-tis-giorgo-patoyli-poy-na-kateveis-vre-kakomoiri/",
-      "title": "Μαρίνα Σταυράκη: Το αιχμηρό σχόλιο στον πρώην σύζυγό της, Γιώργο Πατούλη – «Πού να κατέβεις βρε κακομοίρη;»",
-      "normalized_title": "ΜΑΡΙΝΑ ΣΤΑΥΡΑΚΗ: ΤΟ ΑΙΧΜΗΡΟ ΣΧΟΛΙΟ ΣΤΟΝ ΠΡΩΗΝ ΣΥΖΥΓΟ ΤΗΣ, ΓΙΩΡΓΟ ΠΑΤΟΥΛΗ – «ΠΟΥ ΝΑ ΚΑΤΕΒΕΙΣ ΒΡΕ ΚΑΚΟΜΟΙΡΗ;»",
+      "url": "https://www.efsyn.gr/kosmos/1463364/i-ikea-prosfeygei-sti-dikaiosyni-kata-velgikoy-akrodexioy-kommatos-hrisimopoioyse-to-brand-gia-kampanies/",
+      "title": "Η ΙΚΕΑ προσφεύγει στη δικαιοσύνη κατά βέλγικου ακροδεξιού κόμματος: Χρησιμοποιούσε το brand για καμπάνιες",
+      "normalized_title": "Η ΙΚΕΑ ΠΡΟΣΦΕΥΓΕΙ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ ΚΑΤΑ ΒΕΛΓΙΚΟΥ ΑΚΡΟΔΕΞΙΟΥ ΚΟΜΜΑΤΟΣ: ΧΡΗΣΙΜΟΠΟΙΟΥΣΕ ΤΟ BRAND ΓΙΑ ΚΑΜΠΑΝΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1463340/marina-stayraki-to-aihmiro-sholio-ston-proin-syzygo-tis-giorgo-patoyli-poy-na-kateveis-vre-kakomoiri/",
-        "https://www.efsyn.gr/nisides/1463293/i-margarita-petrova-stin-ef-syn-forame-ta-stereotypa-san-deytero-derma/",
-        "https://www.efsyn.gr/nisides/1463318/enas-kosmos-anthropinis-axioprepeias/",
-        "https://www.efsyn.gr/oikonomia/1463339/o-skertsos-epimenei-oti-i-ellada-den-ehei-ginei-voylgaria-stoys-misthoys/"
+        "https://www.efsyn.gr/kosmos/1463364/i-ikea-prosfeygei-sti-dikaiosyni-kata-velgikoy-akrodexioy-kommatos-hrisimopoioyse-to-brand-gia-kampanies/",
+        "https://www.efsyn.gr/stiles/1463362/o-mao-tse-toyngk-kai-i-simerini-kina/",
+        "https://www.efsyn.gr/ellada/1463357/dimoglidoy-gia-ypothesi-kyriakis-griva-efyge-avoithiti-kai-ehase-ti-zoi-tis/",
+        "https://www.efsyn.gr/stiles/1463350/alexis-tsipras-yparhei-ki-allos-dromos/",
+        "https://www.efsyn.gr/stiles/1463347/ntoitslant-oymper-ales/",
+        "https://www.efsyn.gr/media/1463338/press-point-mathainoyme-apo-toys-xenoys-osa-mas-kryvoyn-oi-ellines-i-kyvernisi-mitsotaki-diladi/",
+        "https://www.efsyn.gr/politiki/1463363/diethnis-synantisi-koryfis-gia-to-diastima-sto-parisi-me-symmetohi-toy-kyr-mitsotaki-tria-themata-sto-epikentro/",
+        "https://www.efsyn.gr/tehnes/1463359/to-tragoydi-tis-imeras-lost-weekend/"
       ],
-      "seen_at_utc": "2026-09-09T06:30:01.572773+00:00"
+      "seen_at_utc": "2026-09-09T06:51:13.231282+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/09/in-science/perivallon-b-science/thessalia-kindynos-erimopoiisis-tou-kampou-tis-epomenes-dekaeties-ti-deixnoun-ta-stoixeia/",
-      "title": "Κίνδυνος ερημοποίησης του Θεσσαλικού Κάμπου τις επόμενες δεκαετίες - Τι δείχνουν τα στοιχεία",
-      "normalized_title": "ΚΙΝΔΥΝΟΣ ΕΡΗΜΟΠΟΙΗΣΗΣ ΤΟΥ ΘΕΣΣΑΛΙΚΟΥ ΚΑΜΠΟΥ ΤΙΣ ΕΠΟΜΕΝΕΣ ΔΕΚΑΕΤΙΕΣ - ΤΙ ΔΕΙΧΝΟΥΝ ΤΑ ΣΤΟΙΧΕΙΑ",
+      "url": "https://www.in.gr/2026/09/09/go-fun/fizz/maria-kanellopoulou-ti-leei-gia-tin-katastasi-tis-ygeias-tis-meta-to-troxaio/",
+      "title": "Μαρία Κανελλοπούλου: Τι λέει για την κατάσταση της υγείας της μετά το τροχαίο",
+      "normalized_title": "ΜΑΡΙΑ ΚΑΝΕΛΛΟΠΟΥΛΟΥ: ΤΙ ΛΕΕΙ ΓΙΑ ΤΗΝ ΚΑΤΑΣΤΑΣΗ ΤΗΣ ΥΓΕΙΑΣ ΤΗΣ ΜΕΤΑ ΤΟ ΤΡΟΧΑΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/09/in-science/perivallon-b-science/thessalia-kindynos-erimopoiisis-tou-kampou-tis-epomenes-dekaeties-ti-deixnoun-ta-stoixeia/",
-        "https://www.in.gr/2026/09/09/sports/football/mpartselona-liverpoul-kai-arsenal-rixnontai-sti-maxi-tou-champions-league-pic/",
-        "https://www.in.gr/2026/09/09/greece/thessaloniki-katharistria-sto-papanikolaou-ekleve-gia-15-xronia-sentonia-kai-trofima-apo-to-nosokomeio/"
+        "https://www.in.gr/2026/09/09/go-fun/fizz/maria-kanellopoulou-ti-leei-gia-tin-katastasi-tis-ygeias-tis-meta-to-troxaio/",
+        "https://www.in.gr/2026/09/09/sports/football/o-mesi-agorazei-tin-elntense-kai-ependyei-sto-ispaniko-podosfairo/",
+        "https://www.in.gr/2026/09/09/world/to-israil-dinei-dioria-30-imeron-gia-na-kleisei-to-vretaniko-prokseneio-stin-anatoliki-ierousalim-giati-vathainei-i-riksi/",
+        "https://www.in.gr/2026/09/09/economy/times-reymatos-i-dyskoli-eksisosi-apo-ta-237-sta-166-lepta/"
       ],
-      "seen_at_utc": "2026-09-09T06:30:01.572716+00:00"
+      "seen_at_utc": "2026-09-09T06:51:13.231248+00:00"
     }
   },
-  "updated_at_utc": "2026-09-09T06:30:01.572898+00:00"
+  "updated_at_utc": "2026-09-09T06:51:13.231377+00:00"
 }
