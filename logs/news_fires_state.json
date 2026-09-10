@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564450454/nterti-i-nea-seira-toy-ant1-mas-taxideyei-stin-patra-toy-80-premiera-me-diplo-epeisodio/",
-      "title": "«Ντέρτι»: Η νέα σειρά του ΑΝΤ1 μας ταξιδεύει στην Πάτρα του ’80 – Πρεμιέρα με διπλό επεισόδιο",
-      "normalized_title": "«ΝΤΕΡΤΙ»: Η ΝΕΑ ΣΕΙΡΑ ΤΟΥ ΑΝΤ1 ΜΑΣ ΤΑΞΙΔΕΥΕΙ ΣΤΗΝ ΠΑΤΡΑ ΤΟΥ ’80 – ΠΡΕΜΙΕΡΑ ΜΕ ΔΙΠΛΟ ΕΠΕΙΣΟΔΙΟ",
+      "url": "https://www.kathimerini.gr/world/564450964/germania-i-akriveia-ektoxeyei-to-grigoro-fagito/",
+      "title": "Γερμανία: Η ακρίβεια εκτοξεύει το γρήγορο φαγητό",
+      "normalized_title": "ΓΕΡΜΑΝΙΑ: Η ΑΚΡΙΒΕΙΑ ΕΚΤΟΞΕΥΕΙ ΤΟ ΓΡΗΓΟΡΟ ΦΑΓΗΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564450454/nterti-i-nea-seira-toy-ant1-mas-taxideyei-stin-patra-toy-80-premiera-me-diplo-epeisodio/",
-        "https://www.kathimerini.gr/world/564450334/i-iaponia-diafonei-me-ton-neo-pagkosmio-charti-toy-oie/"
+        "https://www.kathimerini.gr/world/564450964/germania-i-akriveia-ektoxeyei-to-grigoro-fagito/",
+        "https://www.kathimerini.gr/world/564450757/iordania-zimies-se-amerikanika-aeroskafi-apo-toys-iranikoys-vomvardismoys/",
+        "https://www.kathimerini.gr/athletics/564451057/super-league-ekane-to-3ch3-o-panathinaikos-kai-patise-koryfi/"
       ],
-      "seen_at_utc": "2026-09-10T20:30:07.586562+00:00"
+      "seen_at_utc": "2026-09-10T20:51:59.674965+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877021/giorgos-mazonakis-vrikan-sudages-tis-ioannas-gaka-se-farmakeio-ergostasio-anavolikon/?utm_source=rss",
-      "title": "Γιώργος Μαζωνάκης: Συνταγές της Ιωάννας Γάκα είχαν εντοπιστεί σε φαρμακείο «εργοστάσιο αναβολικών»",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΥΝΤΑΓΕΣ ΤΗΣ ΙΩΑΝΝΑΣ ΓΑΚΑ ΕΙΧΑΝ ΕΝΤΟΠΙΣΤΕΙ ΣΕ ΦΑΡΜΑΚΕΙΟ «ΕΡΓΟΣΤΑΣΙΟ ΑΝΑΒΟΛΙΚΩΝ»",
+      "url": "https://www.protothema.gr/greece/article/1877036/fotia-tora-se-dasiki-ektasi-sto-kilkis-amesi-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά τώρα σε δασική έκταση στο Κιλκίς, άμεση κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΚΙΛΚΙΣ, ΑΜΕΣΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877021/giorgos-mazonakis-vrikan-sudages-tis-ioannas-gaka-se-farmakeio-ergostasio-anavolikon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877036/fotia-tora-se-dasiki-ektasi-sto-kilkis-amesi-kinitopoiisi-tis-purosvestikis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T20:16:52.002429+00:00"
+      "seen_at_utc": "2026-09-10T20:51:59.675077+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1464821/pethane-o-alekos-kalyvis-simantiki-morfi-tis-aristeras-kai-toy-syndikalistikoy-kinimatos/",
-      "title": "Πέθανε ο Αλέκος Καλύβης, σημαντική μορφή της Αριστεράς και του συνδικαλιστικού κινήματος",
-      "normalized_title": "ΠΕΘΑΝΕ Ο ΑΛΕΚΟΣ ΚΑΛΥΒΗΣ, ΣΗΜΑΝΤΙΚΗ ΜΟΡΦΗ ΤΗΣ ΑΡΙΣΤΕΡΑΣ ΚΑΙ ΤΟΥ ΣΥΝΔΙΚΑΛΙΣΤΙΚΟΥ ΚΙΝΗΜΑΤΟΣ",
+      "url": "https://www.efsyn.gr/athlitismos/1464829/fifa-para-ton-salo-o-infantino-odeyei-pros-epaneklogi-stin-proedria-tis-pagkosmias-omospondias/",
+      "title": "FIFA: Παρά τον σάλο, ο Ινφαντίνο οδεύει προς επανεκλογή στην προεδρία της Παγκόσμιας Ομοσπονδίας",
+      "normalized_title": "FIFA: ΠΑΡΑ ΤΟΝ ΣΑΛΟ, Ο ΙΝΦΑΝΤΙΝΟ ΟΔΕΥΕΙ ΠΡΟΣ ΕΠΑΝΕΚΛΟΓΗ ΣΤΗΝ ΠΡΟΕΔΡΙΑ ΤΗΣ ΠΑΓΚΟΣΜΙΑΣ ΟΜΟΣΠΟΝΔΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1464821/pethane-o-alekos-kalyvis-simantiki-morfi-tis-aristeras-kai-toy-syndikalistikoy-kinimatos/"
+        "https://www.efsyn.gr/athlitismos/1464829/fifa-para-ton-salo-o-infantino-odeyei-pros-epaneklogi-stin-proedria-tis-pagkosmias-omospondias/",
+        "https://www.efsyn.gr/athlitismos/1464824/stin-koryfi-tis-super-league-o-panathinaikos-me-triara-kai-3-sta-3/"
       ],
-      "seen_at_utc": "2026-09-10T20:30:07.586651+00:00"
+      "seen_at_utc": "2026-09-10T20:51:59.675058+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/fotia-stin-plagia-sto-kilkis/",
-      "title": "Φωτιά στην Πλαγιά στο Κιλκίς",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΛΑΓΙΑ ΣΤΟ ΚΙΛΚΙΣ",
+      "url": "https://www.in.gr/2026/09/10/politics/epikairotita/monomeris-dilosi-prosxorisis-tou-proin-spartiati-xalkia-stin-elliniki-lysi/",
+      "title": "Μονομερής",
+      "normalized_title": "ΜΟΝΟΜΕΡΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/fotia-stin-plagia-sto-kilkis/",
-        "https://www.in.gr/2026/09/10/world/synodos-koryfis-sto-parisi-gia-ti-forologisi-ton-plousion-o-zoukman-kalese-santers-okasio-kortes-mamntani/",
-        "https://www.in.gr/2026/09/10/sports/football/panathinaikos-kifisia-3-1-agxotiki-niki-sto-oaka-gia-tous-prasinous/"
+        "https://www.in.gr/2026/09/10/politics/epikairotita/monomeris-dilosi-prosxorisis-tou-proin-spartiati-xalkia-stin-elliniki-lysi/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/to-antio-tou-aleksi-tsipra-ston-agonisti-tis-aristeras-aleko-kalyvi/",
+        "https://www.in.gr/2026/09/10/world/italia-foniko-perasma-tis-kakokairias-dyo-gynaikes-exasan-ti-zoi-tous/",
+        "https://www.in.gr/2026/09/10/sports/football/super-league-i-vathmologia-meta-ti-niki-tou-panathinaikou-pic/",
+        "https://www.in.gr/2026/09/10/go-fun/style/to-perifimo-revenge-dress-tis-ntaiana-vgainei-se-dimoprasia/"
       ],
-      "seen_at_utc": "2026-09-10T20:30:07.586613+00:00"
+      "seen_at_utc": "2026-09-10T20:51:59.675023+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T20:30:07.586737+00:00"
+  "updated_at_utc": "2026-09-10T20:51:59.675182+00:00"
 }
