@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564451006/germania-safes-provadisma-tis-afd-sto-meklemvoyrgo-dytiki-pomerania-deichnoyn-oi-dimoskopiseis/",
-      "title": "AfD: Προβάδισμα στο Μεκλεμβούργο-Δυτική Πομερανία δείχνουν οι δημοσκοπήσεις",
-      "normalized_title": "AFD: ΠΡΟΒΑΔΙΣΜΑ ΣΤΟ ΜΕΚΛΕΜΒΟΥΡΓΟ-ΔΥΤΙΚΗ ΠΟΜΕΡΑΝΙΑ ΔΕΙΧΝΟΥΝ ΟΙ ΔΗΜΟΣΚΟΠΗΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/world/564450988/11i-septemvrioy-chiliades-drones-ypsosan-toys-didymoys-pyrgoys-sti-nea-yorki-vinteo/",
+      "title": "11η Σεπτεμβρίου: Χιλιάδες drones «ύψωσαν» τους Δίδυμους Πύργους στη Νέα Υόρκη (βίντεο)",
+      "normalized_title": "11Η ΣΕΠΤΕΜΒΡΙΟΥ: ΧΙΛΙΑΔΕΣ DRONES «ΥΨΩΣΑΝ» ΤΟΥΣ ΔΙΔΥΜΟΥΣ ΠΥΡΓΟΥΣ ΣΤΗ ΝΕΑ ΥΟΡΚΗ (ΒΙΝΤΕΟ)",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564451006/germania-safes-provadisma-tis-afd-sto-meklemvoyrgo-dytiki-pomerania-deichnoyn-oi-dimoskopiseis/"
+        "https://www.kathimerini.gr/world/564450988/11i-septemvrioy-chiliades-drones-ypsosan-toys-didymoys-pyrgoys-sti-nea-yorki-vinteo/",
+        "https://www.kathimerini.gr/world/564451030/ta-iae-tha-ependysoyn-40-dis-eyro-sti-germania/",
+        "https://www.kathimerini.gr/world/564451018/elvetia-anatrapike-toyristiko-leoforeio-plirofories-gia-arketoys-nekroys/"
       ],
-      "seen_at_utc": "2026-09-10T19:29:59.283941+00:00"
+      "seen_at_utc": "2026-09-10T19:51:12.149516+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1270,30 @@
       "seen_at_utc": "2026-09-10T17:51:23.100403+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1464796/italia-dyo-gynaikes-ehasan-ti-zoi-toys-apo-to-kyma-kakokairias/",
-      "title": "Ιταλία: Δύο γυναίκες έχασαν τη ζωή τους από το κύμα κακοκαιρίας",
-      "normalized_title": "ΙΤΑΛΙΑ: ΔΥΟ ΓΥΝΑΙΚΕΣ ΕΧΑΣΑΝ ΤΗ ΖΩΗ ΤΟΥΣ ΑΠΟ ΤΟ ΚΥΜΑ ΚΑΚΟΚΑΙΡΙΑΣ",
+      "url": "https://www.efsyn.gr/politiki/1464806/htypima-polaki-gia-ton-thanato-mazonaki-ayta-poy-mathaino-gia-tis-synthikes-einai-apo-exorgistika-eos-trisathlia/",
+      "title": "Έκρηξη Πολάκη για το θάνατο του Γιώργου Μαζωνάκη: «Δύο άσχετοι πουλούσαν μαγικά φίλτρα και ελιξήρια νεότητας»",
+      "normalized_title": "ΕΚΡΗΞΗ ΠΟΛΑΚΗ ΓΙΑ ΤΟ ΘΑΝΑΤΟ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ: «ΔΥΟ ΑΣΧΕΤΟΙ ΠΟΥΛΟΥΣΑΝ ΜΑΓΙΚΑ ΦΙΛΤΡΑ ΚΑΙ ΕΛΙΞΗΡΙΑ ΝΕΟΤΗΤΑΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1464796/italia-dyo-gynaikes-ehasan-ti-zoi-toys-apo-to-kyma-kakokairias/"
+        "https://www.efsyn.gr/politiki/1464806/htypima-polaki-gia-ton-thanato-mazonaki-ayta-poy-mathaino-gia-tis-synthikes-einai-apo-exorgistika-eos-trisathlia/",
+        "https://www.efsyn.gr/ellada/1464799/diamartyria-daskalon-gia-xafniki-egkyklio-poy-fernei-allages-sta-kathikonta-ton-dieythynton-nipiagogeion/",
+        "https://www.efsyn.gr/ellada/1464793/giorgos-mazonakis-oi-antifaseis-poy-ekapsan-toys-dyo-giatroys-to-mihanima-plasmafairesis-leitoyrgoyse-45-lepta/"
       ],
-      "seen_at_utc": "2026-09-10T19:29:59.284025+00:00"
+      "seen_at_utc": "2026-09-10T19:51:12.149585+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/i-eyropi-mpainei-ston-xeimona-me-ligotero-aerio/",
-      "title": "Η Ευρώπη μπαίνει στον χειμώνα με λιγότερο αέριο",
-      "normalized_title": "Η ΕΥΡΩΠΗ ΜΠΑΙΝΕΙ ΣΤΟΝ ΧΕΙΜΩΝΑ ΜΕ ΛΙΓΟΤΕΡΟ ΑΕΡΙΟ",
+      "url": "https://www.in.gr/2026/09/10/world/synantisi-tramp-zelenski-sti-nea-yorki-sta-teli-septemvriou/",
+      "title": "Συνάντηση Τραμπ-Ζελένσκι στη Νέα Υόρκη στα τέλη Σεπτεμβρίου",
+      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΤΡΑΜΠ-ΖΕΛΕΝΣΚΙ ΣΤΗ ΝΕΑ ΥΟΡΚΗ ΣΤΑ ΤΕΛΗ ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/i-eyropi-mpainei-ston-xeimona-me-ligotero-aerio/",
-        "https://www.in.gr/2026/09/10/in-science/ai/texniti-noimosyni-i-kalifornia-sxediazei-to-koinoniko-kratos-eno-i-eyropi-plironei-ta-kalodia/"
+        "https://www.in.gr/2026/09/10/world/synantisi-tramp-zelenski-sti-nea-yorki-sta-teli-septemvriou/",
+        "https://www.in.gr/2026/09/10/greece/mpakogiannis-dimotiko-symvoulio-xoris-pragmatiki-atzenta-tis-athinas-thetoume-ta-zitimata-kai-zitame-apantiseis/",
+        "https://www.in.gr/2026/09/10/greece/genz-theloun-diki-tous-epixeirisi-skontaftoun-stin-afragkia-kai-psifizoun-eksoteriko/",
+        "https://www.in.gr/2026/09/10/sports/basketball/euroleague/olympiakos-i-anartisi-tou-montero-enopsei-tis-neas-sezon-pics/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/fagomara-sti-nea-dimokratia-sto-stoxastro-tou-makariou-lazaridi-o-dieythyntis-tou-nikou-dendia/",
+        "https://www.in.gr/2026/09/10/go-fun/fizz/i-nikol-kintman-otan-pire-oskar-eniothe-apisteyta-moni/"
       ],
-      "seen_at_utc": "2026-09-10T19:29:59.283987+00:00"
+      "seen_at_utc": "2026-09-10T19:51:12.149550+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T19:29:59.284104+00:00"
+  "updated_at_utc": "2026-09-10T19:51:12.149662+00:00"
 }
