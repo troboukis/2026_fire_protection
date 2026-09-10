@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564449866/o-kianoy-rivs-epistrefei-sti-drasi/",
-      "title": "Ο Κιάνου Ριβς επιστρέφει στη δράση",
-      "normalized_title": "Ο ΚΙΑΝΟΥ ΡΙΒΣ ΕΠΙΣΤΡΕΦΕΙ ΣΤΗ ΔΡΑΣΗ",
+      "url": "https://www.kathimerini.gr/world/564449902/i-nea-foyrnia-ploysion-poly-chrima-alla-den-echoyn-idea-pos-na-to-xodepsoyn/",
+      "title": "Η νέα «φουρνιά» πλουσίων: Πολύ χρήμα, αλλά δεν έχουν ιδέα πώς να το ξοδέψουν",
+      "normalized_title": "Η ΝΕΑ «ΦΟΥΡΝΙΑ» ΠΛΟΥΣΙΩΝ: ΠΟΛΥ ΧΡΗΜΑ, ΑΛΛΑ ΔΕΝ ΕΧΟΥΝ ΙΔΕΑ ΠΩΣ ΝΑ ΤΟ ΞΟΔΕΨΟΥΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564449866/o-kianoy-rivs-epistrefei-sti-drasi/",
-        "https://www.kathimerini.gr/world/564449485/ny-times-i-oykrania-leei-oti-chreiazetai-akomi-27-dis-dolaria-i-eyropi-thelei-na-mathei-to-giati/",
-        "https://www.kathimerini.gr/society/564449851/karpathos-dyo-syllipseis-nearon-gia-apati-se-varos-anilikoy/",
-        "https://www.kathimerini.gr/society/564449812/thanatos-mazonaki-dyo-michanimata-plasmafairesis-vrethikan-sto-iatreio/"
+        "https://www.kathimerini.gr/world/564449902/i-nea-foyrnia-ploysion-poly-chrima-alla-den-echoyn-idea-pos-na-to-xodepsoyn/",
+        "https://www.kathimerini.gr/economy/local/564448939/toys-theloyme/",
+        "https://www.kathimerini.gr/world/564449899/kina-pyrkagia-se-fortigo-ploio-anafores-gia-polla-thymata/"
       ],
-      "seen_at_utc": "2026-09-10T10:29:58.977112+00:00"
+      "seen_at_utc": "2026-09-10T10:51:50.632645+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,40 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876718/to-elliniko-fbi-kanei-fullo-kai-ftero-to-iatreio-sto-kolonaki-pou-epathe-anakopi-o-giorgos-mazonakis-deite-video/?utm_source=rss",
-      "title": "Το ελληνικό FBI κάνει «φύλλο και φτερό» το ιατρείο στο Κολωνάκι που έπαθε ανακοπή ο Γιώργος Μαζωνάκης, δείτε βίντεο",
-      "normalized_title": "ΤΟ ΕΛΛΗΝΙΚΟ FBI ΚΑΝΕΙ «ΦΥΛΛΟ ΚΑΙ ΦΤΕΡΟ» ΤΟ ΙΑΤΡΕΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ ΠΟΥ ΕΠΑΘΕ ΑΝΑΚΟΠΗ Ο ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1876728/tehniko-sumvoulo-orizei-i-oikogeneia-tou-giorgou-mazonaki-aurio-i-nekropsia-nekrotomi/?utm_source=rss",
+      "title": "Τεχνικό σύμβουλο ορίζει η οικογένεια του Γιώργου Μαζωνάκη, αύριο η νεκροψία-νεκροτομή",
+      "normalized_title": "ΤΕΧΝΙΚΟ ΣΥΜΒΟΥΛΟ ΟΡΙΖΕΙ Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ, ΑΥΡΙΟ Η ΝΕΚΡΟΨΙΑ-ΝΕΚΡΟΤΟΜΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876718/to-elliniko-fbi-kanei-fullo-kai-ftero-to-iatreio-sto-kolonaki-pou-epathe-anakopi-o-giorgos-mazonakis-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876728/tehniko-sumvoulo-orizei-i-oikogeneia-tou-giorgou-mazonaki-aurio-i-nekropsia-nekrotomi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876727/nekri-42hroni-se-trohaio-sti-naxo-to-ih-tis-sugroustike-me-enoikiazomeno-ohima/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T10:29:58.977191+00:00"
+      "seen_at_utc": "2026-09-10T10:51:50.632763+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1464462/mendoni-gia-mazonaki-xehoristos-performer-ta-tragoydia-toy-aggizan-hiliades-anthropoys/",
-      "title": "Μενδώνη για Μαζωνάκη: «Ξεχωριστός περφόρμερ – Τα τραγούδια του άγγιζαν χιλιάδες ανθρώπους»",
-      "normalized_title": "ΜΕΝΔΩΝΗ ΓΙΑ ΜΑΖΩΝΑΚΗ: «ΞΕΧΩΡΙΣΤΟΣ ΠΕΡΦΟΡΜΕΡ – ΤΑ ΤΡΑΓΟΥΔΙΑ ΤΟΥ ΑΓΓΙΖΑΝ ΧΙΛΙΑΔΕΣ ΑΝΘΡΩΠΟΥΣ»",
+      "url": "https://www.efsyn.gr/ellada/1464453/sygkroysi-leoforeion-sti-thessaloniki-exakoloythei-na-nosileyetai-i-21hroni-ti-leei-o-odigos-toy-ktel/",
+      "title": "Σύγκρουση λεωφορείων στη Θεσσαλονίκη: Εξακολουθεί να νοσηλεύεται η 21χρονη – Τι λέει ο οδηγός του ΚΤΕΛ",
+      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΛΕΩΦΟΡΕΙΩΝ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΕΞΑΚΟΛΟΥΘΕΙ ΝΑ ΝΟΣΗΛΕΥΕΤΑΙ Η 21ΧΡΟΝΗ – ΤΙ ΛΕΕΙ Ο ΟΔΗΓΟΣ ΤΟΥ ΚΤΕΛ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1464462/mendoni-gia-mazonaki-xehoristos-performer-ta-tragoydia-toy-aggizan-hiliades-anthropoys/",
-        "https://www.efsyn.gr/stiles/1464336/mi-kratika-panepistimia-mia-metarrythmisi-poy-tha-gyrisei-piso/",
-        "https://www.efsyn.gr/stiles/1464319/poy-ofeiletai-o-katakermatismos-sto-kommatiko-systima/",
-        "https://www.efsyn.gr/media/1464282/press-point-ta-neotera-apo-to-komma-samara/",
-        "https://www.efsyn.gr/stiles/1464429/eyropi-sta-kerdi-ellada-stoys-misthoys/",
-        "https://www.efsyn.gr/politiki/1464418/marinakis-gia-pasok-i-moni-politiki-dynami-me-tin-opoia-tha-mporoysame-na-katsoyme-sto-idio-trapezi/",
-        "https://www.efsyn.gr/politiki/1464446/kontra-ypoik-elas-gia-to-programma-tsipra-i-kyvernisi-ehei-efesi-stis-yperkostologiseis/",
-        "https://www.efsyn.gr/politiki/1464436/mitsotakis-apo-spata-ayta-ta-opoia-oramatizomoyn-gia-ti-hora-prin-apo-polla-hronia-tora-ginontai-praxi/"
+        "https://www.efsyn.gr/ellada/1464453/sygkroysi-leoforeion-sti-thessaloniki-exakoloythei-na-nosileyetai-i-21hroni-ti-leei-o-odigos-toy-ktel/",
+        "https://www.efsyn.gr/ellada/1464470/marathonas-nea-anavoli-sti-diki-tis-68hronis-kai-toy-gioy-tis-gia-ti-nekri-90hroni-sto-ypogeio/"
       ],
-      "seen_at_utc": "2026-09-10T10:17:09.604200+00:00"
+      "seen_at_utc": "2026-09-10T10:51:50.632742+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/politics/aftodioikisi/dimos-epixeirei-na-aksiopoiisei-tous-fysikous-tou-porous/",
-      "title": "Δήμος επιχειρεί να αξιοποιήσει τους φυσικούς του πόρους",
-      "normalized_title": "ΔΗΜΟΣ ΕΠΙΧΕΙΡΕΙ ΝΑ ΑΞΙΟΠΟΙΗΣΕΙ ΤΟΥΣ ΦΥΣΙΚΟΥΣ ΤΟΥ ΠΟΡΟΥΣ",
+      "url": "https://www.in.gr/2026/09/10/economy/oikonomikes-eidiseis/adedy-ayksiseis-stous-misthous-kathos-kai-epanafora-tou-13ou-kai-tou-14ou-misthou/",
+      "title": "Αυξήσεις στους μισθούς, καθώς και επαναφορά του 13ου και 14ου μισθού, διεκδικεί η ΑΔΕΔΥ",
+      "normalized_title": "ΑΥΞΗΣΕΙΣ ΣΤΟΥΣ ΜΙΣΘΟΥΣ, ΚΑΘΩΣ ΚΑΙ ΕΠΑΝΑΦΟΡΑ ΤΟΥ 13ΟΥ ΚΑΙ 14ΟΥ ΜΙΣΘΟΥ, ΔΙΕΚΔΙΚΕΙ Η ΑΔΕΔΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/politics/aftodioikisi/dimos-epixeirei-na-aksiopoiisei-tous-fysikous-tou-porous/",
-        "https://www.in.gr/2026/09/10/economy/akriveia-pos-troei-ta-metra-tis-deth-prin-efarmostoun/"
+        "https://www.in.gr/2026/09/10/economy/oikonomikes-eidiseis/adedy-ayksiseis-stous-misthous-kathos-kai-epanafora-tou-13ou-kai-tou-14ou-misthou/",
+        "https://www.in.gr/2026/09/10/istoriko-arxeio/marios-ploritis-i-glossiki-vanaysotita-i-laikizousa-agrammatosyni/",
+        "https://www.in.gr/2026/09/10/greece/marathonas-nea-anavoli-sti-diki-gia-tin-ypothesi-tis-68xronis-pou-feretai-na-ethapse-ti-mitera-tis/",
+        "https://www.in.gr/2026/09/10/life/texni/i-megaloprepis-fysi-mia-idiaiteri-ekthesi-stin-pinakothiki-kykladon-tis-syrou/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/tsoukalas-an-o-p-marinakis-psaxnei-synetairous-sti-diatirisi-tis-mizerias-kai-tis-parakmis-na-koitaksei-allou/",
+        "https://www.in.gr/2026/09/10/sports/football/egine-dekti-i-efesi-tou-panathinaikou-meiothike-i-poini-tou-ntesers/"
       ],
-      "seen_at_utc": "2026-09-10T10:29:58.977149+00:00"
+      "seen_at_utc": "2026-09-10T10:51:50.632704+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T10:29:58.977249+00:00"
+  "updated_at_utc": "2026-09-10T10:51:50.632953+00:00"
 }
