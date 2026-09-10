@@ -1,19 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/government/564448573/kyvernisi-apostaseis-apo-ta-senaria-krisis-me-tin-toyrkia/",
-      "title": "Κυβέρνηση: Αποστάσεις από τα σενάρια κρίσης με την Τουρκία",
-      "normalized_title": "ΚΥΒΕΡΝΗΣΗ: ΑΠΟΣΤΑΣΕΙΣ ΑΠΟ ΤΑ ΣΕΝΑΡΙΑ ΚΡΙΣΗΣ ΜΕ ΤΗΝ ΤΟΥΡΚΙΑ",
+      "url": "https://www.kathimerini.gr/economy/local/564448999/pos-ayxithike-sta-2-2-dis-eyro-to-paketo-tis-deth/",
+      "title": "Πώς αυξήθηκε στα 2,2 δισ. ευρώ το πακέτο της ΔΕΘ",
+      "normalized_title": "ΠΩΣ ΑΥΞΗΘΗΚΕ ΣΤΑ 2,2 ΔΙΣ. ΕΥΡΩ ΤΟ ΠΑΚΕΤΟ ΤΗΣ ΔΕΘ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/government/564448573/kyvernisi-apostaseis-apo-ta-senaria-krisis-me-tin-toyrkia/",
-        "https://www.kathimerini.gr/society/564449287/metro-mechri-simera-oi-kykloforiakes-rythmiseis-sti-grammi-3-poioi-stathmoi-kleinoyn-noritera/",
-        "https://www.kathimerini.gr/economy/local/564448996/apo-symvolo-krisis-ergaleio-anaptyxis/",
-        "https://www.kathimerini.gr/world/564449281/ipa-diakommatikes-antidraseis-kata-ton-etaireion-ai-meta-to-kampanaki-ereyniton/",
-        "https://www.kathimerini.gr/columns/564448348/i-megali-niki-tis-ikea-ti-etoimazei-i-safe-bulkers-kai-poios-akomi-epilegei-tin-athina/",
-        "https://www.kathimerini.gr/opinion/564448756/elliniki-foni-se-geroysia-kai-voyli/",
-        "https://www.kathimerini.gr/istoria/564445156/poios-travixe-ti-fotografia-toy-mpelogianni-me-to-garyfallo-o-pikaso-sokarismenos-tin-apotypose-se-skitso/"
+        "https://www.kathimerini.gr/economy/local/564448999/pos-ayxithike-sta-2-2-dis-eyro-to-paketo-tis-deth/",
+        "https://www.kathimerini.gr/world/564449278/aystria-nekri-40chroni-meta-apo-viasmo-apo-ton-syzygo-tis-exetazetai-nea-ypothesi-peliko/",
+        "https://www.kathimerini.gr/world/564449290/oxfam-to-dnt-epivallei-akomi-skliroteri-litotita-stis-chores-poy-daneizei/",
+        "https://www.kathimerini.gr/economy/business/564449008/ayxisi-tziroy-kata-16-2-gia-farma-koykaki-to-2025/"
       ],
-      "seen_at_utc": "2026-09-10T05:51:16.082673+00:00"
+      "seen_at_utc": "2026-09-10T06:17:00.526778+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,40 +1262,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876561/metro-mehri-simera-oi-kukloforiakes-ruthmiseis-sti-grammi-3-logo-ergasion-poioi-stathmoi-tha-kleisoun-noritera/?utm_source=rss",
-      "title": "Μετρό: Μέχρι σήμερα οι κυκλοφοριακές ρυθμίσεις στη Γραμμή 3 λόγω εργασιών, ποιοι σταθμοί θα κλείσουν νωρίτερα",
-      "normalized_title": "ΜΕΤΡΟ: ΜΕΧΡΙ ΣΗΜΕΡΑ ΟΙ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗ ΓΡΑΜΜΗ 3 ΛΟΓΩ ΕΡΓΑΣΙΩΝ, ΠΟΙΟΙ ΣΤΑΘΜΟΙ ΘΑ ΚΛΕΙΣΟΥΝ ΝΩΡΙΤΕΡΑ",
+      "url": "https://www.protothema.gr/greece/article/1876573/den-eihe-kanena-provlima-ugeias-tha-ertho-simera-se-epafi-me-tin-oikogeneia-tou-leei-o-dikigoros-tou-giorgou-mazonaki/?utm_source=rss",
+      "title": "«Δεν είχε κανένα πρόβλημα υγείας, θα έρθω σήμερα σε επαφή με την οικογένειά του», λέει ο δικηγόρος του Γιώργου Μαζωνάκη",
+      "normalized_title": "«ΔΕΝ ΕΙΧΕ ΚΑΝΕΝΑ ΠΡΟΒΛΗΜΑ ΥΓΕΙΑΣ, ΘΑ ΕΡΘΩ ΣΗΜΕΡΑ ΣΕ ΕΠΑΦΗ ΜΕ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ», ΛΕΕΙ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876561/metro-mehri-simera-oi-kukloforiakes-ruthmiseis-sti-grammi-3-logo-ergasion-poioi-stathmoi-tha-kleisoun-noritera/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876559/aurio-o-agiasmos-sta-sholeia-ti-allazei-me-ti-nea-hronia-i-adeia-gia-tous-goneis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876573/den-eihe-kanena-provlima-ugeias-tha-ertho-simera-se-epafi-me-tin-oikogeneia-tou-leei-o-dikigoros-tou-giorgou-mazonaki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876565/kinisi-tora-botiliarisma-ston-kifiso-45leptes-kathusteriseis-stin-attiki-odo/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T05:51:16.082818+00:00"
+      "seen_at_utc": "2026-09-10T06:17:00.526926+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1464105/oi-tainies-tis-evdomadas-hope-i-nea-tainia-toy-na-hongk-tzin/",
-      "title": "Οι ταινίες της εβδομάδας: Hope, η νέα ταινία του Να Χονγκ-τζιν",
-      "normalized_title": "ΟΙ ΤΑΙΝΙΕΣ ΤΗΣ ΕΒΔΟΜΑΔΑΣ: HOPE, Η ΝΕΑ ΤΑΙΝΙΑ ΤΟΥ ΝΑ ΧΟΝΓΚ-ΤΖΙΝ",
+      "url": "https://www.efsyn.gr/tehnes/1464151/to-tragoydi-tis-imeras-aniko-se-mena/",
+      "title": "Το Τραγούδι της Ημέρας: Ανήκω σε μένα",
+      "normalized_title": "ΤΟ ΤΡΑΓΟΥΔΙ ΤΗΣ ΗΜΕΡΑΣ: ΑΝΗΚΩ ΣΕ ΜΕΝΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1464105/oi-tainies-tis-evdomadas-hope-i-nea-tainia-toy-na-hongk-tzin/",
-        "https://www.efsyn.gr/athlitismos/1464135/o-panathinaikos-den-thelei-ena-pisogyrisma/",
-        "https://www.efsyn.gr/ellada/1464133/kraoynakis-gia-mazonaki-milagame-prin-dyo-meres-gelagame-san-paidia/",
-        "https://www.efsyn.gr/oikonomia/1464089/omilos-fourlis-ta-epomena-shedia-gia-ikea-intersport-kai-foot-locker/"
+        "https://www.efsyn.gr/tehnes/1464151/to-tragoydi-tis-imeras-aniko-se-mena/",
+        "https://www.efsyn.gr/politiki/1464142/pasok-kryvoyn-tin-anodo-stis-dimoskopiseis-kai-ti-vaftizoyn-stasimotita/"
       ],
-      "seen_at_utc": "2026-09-10T05:51:16.082775+00:00"
+      "seen_at_utc": "2026-09-10T06:17:00.526862+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/patoulis-gia-mazonaki-i-kliniki-eixe-adeia-pathologikou-iatreiou-den-mporouse-na-ginei-plasmafairesi/",
-      "title": "Πατούλης για Μαζωνάκη: Η κλινική είχε άδεια παθολογικού ιατρείου, δεν μπορούσε να γίνει πλασμαφαίρεση",
-      "normalized_title": "ΠΑΤΟΥΛΗΣ ΓΙΑ ΜΑΖΩΝΑΚΗ: Η ΚΛΙΝΙΚΗ ΕΙΧΕ ΑΔΕΙΑ ΠΑΘΟΛΟΓΙΚΟΥ ΙΑΤΡΕΙΟΥ, ΔΕΝ ΜΠΟΡΟΥΣΕ ΝΑ ΓΙΝΕΙ ΠΛΑΣΜΑΦΑΙΡΕΣΗ",
+      "url": "https://www.in.gr/2026/09/10/greece/metro-teleytaia-mera-kykloforiakon-rythmiseon-logo-ergon-oi-stathmoi-pou-kleinoun/",
+      "title": "Τελευταία ημέρα κυκλοφοριακών ρυθμίσεων στο Μετρό λόγω έργων - Οι σταθμοί που κλείνουν",
+      "normalized_title": "ΤΕΛΕΥΤΑΙΑ ΗΜΕΡΑ ΚΥΚΛΟΦΟΡΙΑΚΩΝ ΡΥΘΜΙΣΕΩΝ ΣΤΟ ΜΕΤΡΟ ΛΟΓΩ ΕΡΓΩΝ - ΟΙ ΣΤΑΘΜΟΙ ΠΟΥ ΚΛΕΙΝΟΥΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/patoulis-gia-mazonaki-i-kliniki-eixe-adeia-pathologikou-iatreiou-den-mporouse-na-ginei-plasmafairesi/",
-        "https://www.in.gr/2026/09/10/go-fun/fizz/giorgos-mazonakis-oi-kalokairines-anartiseis-i-synaylia-pou-perimene/",
-        "https://www.in.gr/2026/09/10/sports/football/champions-league/ksespasma-koke-afiste-ton-alvares-isyxo-oloi-eimaste-kourasmenoi-apo-ayto/",
-        "https://www.in.gr/2026/09/10/greece/kriti-diasosi-49-metanaston-stous-kalous-limenes-i-lemvos-tous-entopistike-apo-drone-tis-frontex/",
-        "https://www.in.gr/2026/09/10/sports/basketball/euroleague/to-nba-eksetazei-tin-eksagora-tis-euroleague/"
+        "https://www.in.gr/2026/09/10/greece/metro-teleytaia-mera-kykloforiakon-rythmiseon-logo-ergon-oi-stathmoi-pou-kleinoun/",
+        "https://www.in.gr/2026/09/10/world/i-germania-to-teixos-prostasias-kata-tou-afd-kai-o-rolos-kleidi-tis-sara-vagkenknext/",
+        "https://www.in.gr/2026/09/10/go-fun/style/i-ekthesi-tou-tzon-gkaliano-sto-met-gala-akyrothike-alla-i-epirroi-tou-sti-moda-de-mporei-na-diagrafei/",
+        "https://www.in.gr/2026/09/10/health/opou-fygei-fygei-apo-to-esy-gia-giatrous-kai-ygeionomikous/",
+        "https://www.in.gr/2026/09/10/sports/football/o-rontinei-ekane-ntempouto-me-niki-sti-santos-vids/",
+        "https://www.in.gr/2026/09/10/economy/reyma-alma-sti-zitisi-logo-data-centers-viomixanias-kai-limanion/"
       ],
-      "seen_at_utc": "2026-09-10T05:51:16.082736+00:00"
+      "seen_at_utc": "2026-09-10T06:17:00.526830+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T05:51:16.082888+00:00"
+  "updated_at_utc": "2026-09-10T06:17:00.527002+00:00"
 }
