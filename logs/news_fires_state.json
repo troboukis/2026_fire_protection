@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564449902/i-nea-foyrnia-ploysion-poly-chrima-alla-den-echoyn-idea-pos-na-to-xodepsoyn/",
-      "title": "Η νέα «φουρνιά» πλουσίων: Πολύ χρήμα, αλλά δεν έχουν ιδέα πώς να το ξοδέψουν",
-      "normalized_title": "Η ΝΕΑ «ΦΟΥΡΝΙΑ» ΠΛΟΥΣΙΩΝ: ΠΟΛΥ ΧΡΗΜΑ, ΑΛΛΑ ΔΕΝ ΕΧΟΥΝ ΙΔΕΑ ΠΩΣ ΝΑ ΤΟ ΞΟΔΕΨΟΥΝ",
+      "url": "https://www.kathimerini.gr/life/technology/564449941/iphone-duo-i-anadiploymeni-othoni-oi-leitoyrgies-ai-kai-to-kostos/",
+      "title": "iPhone Duo: Η αναδιπλούμενη οθόνη, οι λειτουργίες ΑΙ και το κόστος",
+      "normalized_title": "IPHONE DUO: Η ΑΝΑΔΙΠΛΟΥΜΕΝΗ ΟΘΟΝΗ, ΟΙ ΛΕΙΤΟΥΡΓΙΕΣ ΑΙ ΚΑΙ ΤΟ ΚΟΣΤΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564449902/i-nea-foyrnia-ploysion-poly-chrima-alla-den-echoyn-idea-pos-na-to-xodepsoyn/",
-        "https://www.kathimerini.gr/economy/local/564448939/toys-theloyme/",
-        "https://www.kathimerini.gr/world/564449899/kina-pyrkagia-se-fortigo-ploio-anafores-gia-polla-thymata/"
+        "https://www.kathimerini.gr/life/technology/564449941/iphone-duo-i-anadiploymeni-othoni-oi-leitoyrgies-ai-kai-to-kostos/",
+        "https://www.kathimerini.gr/world/564449965/soyidia-dimopsifisma-gia-ti-symmetochi-akrodexion-dimokraton-stin-kyvernisi-oi-voyleytikes-ekloges/",
+        "https://www.kathimerini.gr/world/564449956/iran-anastoli-tis-chreosis-naylon-gia-ploia-poy-metaferoyn-energeiaka-proionta/",
+        "https://www.kathimerini.gr/opinion/sketches/564449776/skitso-toy-ilia-makri-10-09-26/",
+        "https://www.kathimerini.gr/world/564449917/ee-meiosi-ton-aitiseon-asyloy-to-proto-examino-toy-2026/",
+        "https://www.kathimerini.gr/world/564449299/perim-ena-mikro-nisi-tis-yemenis-stratigiko-epathlo-ston-polemo-me-to-iran/",
+        "https://www.kathimerini.gr/world/564449929/i-algeria-diakoptei-tis-diplomatikes-scheseis-me-ta-inomena-aravika-emirata/"
       ],
-      "seen_at_utc": "2026-09-10T10:51:50.632645+00:00"
+      "seen_at_utc": "2026-09-10T11:17:10.449028+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,29 +1275,31 @@
       "seen_at_utc": "2026-09-10T10:51:50.632763+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464453/sygkroysi-leoforeion-sti-thessaloniki-exakoloythei-na-nosileyetai-i-21hroni-ti-leei-o-odigos-toy-ktel/",
-      "title": "Σύγκρουση λεωφορείων στη Θεσσαλονίκη: Εξακολουθεί να νοσηλεύεται η 21χρονη – Τι λέει ο οδηγός του ΚΤΕΛ",
-      "normalized_title": "ΣΥΓΚΡΟΥΣΗ ΛΕΩΦΟΡΕΙΩΝ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΕΞΑΚΟΛΟΥΘΕΙ ΝΑ ΝΟΣΗΛΕΥΕΤΑΙ Η 21ΧΡΟΝΗ – ΤΙ ΛΕΕΙ Ο ΟΔΗΓΟΣ ΤΟΥ ΚΤΕΛ",
+      "url": "https://www.efsyn.gr/oikonomia/1464360/omologa-antarsia-apenanti-ston-mpesent/",
+      "title": "Ομόλογα: «Ανταρσία» απέναντι στον Μπέσεντ",
+      "normalized_title": "ΟΜΟΛΟΓΑ: «ΑΝΤΑΡΣΙΑ» ΑΠΕΝΑΝΤΙ ΣΤΟΝ ΜΠΕΣΕΝΤ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464453/sygkroysi-leoforeion-sti-thessaloniki-exakoloythei-na-nosileyetai-i-21hroni-ti-leei-o-odigos-toy-ktel/",
-        "https://www.efsyn.gr/ellada/1464470/marathonas-nea-anavoli-sti-diki-tis-68hronis-kai-toy-gioy-tis-gia-ti-nekri-90hroni-sto-ypogeio/"
+        "https://www.efsyn.gr/oikonomia/1464360/omologa-antarsia-apenanti-ston-mpesent/",
+        "https://www.efsyn.gr/ellada/1464473/thanatos-mazonaki-ti-katethese-i-giatros-gia-to-epeisodio-sto-iatreio-den-ehei-eidikotita-leei-o-patoylis/",
+        "https://www.efsyn.gr/life/1464477/vinteo-me-ton-18hrono-giorgo-mazonaki-na-tragoydaei-etsi-tha-se-thymomaste-emeis-oi-symmathites-soy/",
+        "https://www.efsyn.gr/politiki/1464476/i-apantisi-kammenoy-ston-tsipra-meta-to-karfi-gia-ton-mlantits/",
+        "https://www.efsyn.gr/ellada/1464468/parte-piso-tin-katargisi-tis-grammis-kalamarias-6-toy-oasth/"
       ],
-      "seen_at_utc": "2026-09-10T10:51:50.632742+00:00"
+      "seen_at_utc": "2026-09-10T11:17:10.449124+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/economy/oikonomikes-eidiseis/adedy-ayksiseis-stous-misthous-kathos-kai-epanafora-tou-13ou-kai-tou-14ou-misthou/",
-      "title": "Αυξήσεις στους μισθούς, καθώς και επαναφορά του 13ου και 14ου μισθού, διεκδικεί η ΑΔΕΔΥ",
-      "normalized_title": "ΑΥΞΗΣΕΙΣ ΣΤΟΥΣ ΜΙΣΘΟΥΣ, ΚΑΘΩΣ ΚΑΙ ΕΠΑΝΑΦΟΡΑ ΤΟΥ 13ΟΥ ΚΑΙ 14ΟΥ ΜΙΣΘΟΥ, ΔΙΕΚΔΙΚΕΙ Η ΑΔΕΔΥ",
+      "url": "https://www.in.gr/2026/09/10/politics/aftodioikisi/dimos-vrilission-dorean-grafiki-yli-kai-analosima-gia-ola-ta-paidia-sta-dimosia-nipiagogeia-tis-polis/",
+      "title": "Δήμος Βριλησσίων: Δωρεάν γραφική ύλη και αναλώσιμα για όλα τα παιδιά στα Δημόσια Νηπιαγωγεία της πόλης",
+      "normalized_title": "ΔΗΜΟΣ ΒΡΙΛΗΣΣΙΩΝ: ΔΩΡΕΑΝ ΓΡΑΦΙΚΗ ΥΛΗ ΚΑΙ ΑΝΑΛΩΣΙΜΑ ΓΙΑ ΟΛΑ ΤΑ ΠΑΙΔΙΑ ΣΤΑ ΔΗΜΟΣΙΑ ΝΗΠΙΑΓΩΓΕΙΑ ΤΗΣ ΠΟΛΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/economy/oikonomikes-eidiseis/adedy-ayksiseis-stous-misthous-kathos-kai-epanafora-tou-13ou-kai-tou-14ou-misthou/",
-        "https://www.in.gr/2026/09/10/istoriko-arxeio/marios-ploritis-i-glossiki-vanaysotita-i-laikizousa-agrammatosyni/",
-        "https://www.in.gr/2026/09/10/greece/marathonas-nea-anavoli-sti-diki-gia-tin-ypothesi-tis-68xronis-pou-feretai-na-ethapse-ti-mitera-tis/",
-        "https://www.in.gr/2026/09/10/life/texni/i-megaloprepis-fysi-mia-idiaiteri-ekthesi-stin-pinakothiki-kykladon-tis-syrou/",
-        "https://www.in.gr/2026/09/10/politics/epikairotita/tsoukalas-an-o-p-marinakis-psaxnei-synetairous-sti-diatirisi-tis-mizerias-kai-tis-parakmis-na-koitaksei-allou/",
-        "https://www.in.gr/2026/09/10/sports/football/egine-dekti-i-efesi-tou-panathinaikou-meiothike-i-poini-tou-ntesers/"
+        "https://www.in.gr/2026/09/10/politics/aftodioikisi/dimos-vrilission-dorean-grafiki-yli-kai-analosima-gia-ola-ta-paidia-sta-dimosia-nipiagogeia-tis-polis/",
+        "https://www.in.gr/2026/09/10/go-fun/fizz/giorgos-mazonakis-otan-se-sxoliki-giorti-tragoudise-gianni-pario/",
+        "https://www.in.gr/2026/09/10/greece/tragodia-sti-nakso-nekri-se-troxaio-42xroni-odigos-to-ix-tis-sygkroustike-me-enoikiazomeno-oxima/",
+        "https://www.in.gr/2026/09/10/plus/medianews/dyo-mayra-poukamisa-mia-proti-matia-stous-treis-protagonistes/",
+        "https://www.in.gr/2026/09/10/greece/synantisi-tasoula-me-tin-amal-alamountin-sto-proedriko-megaro/"
       ],
-      "seen_at_utc": "2026-09-10T10:51:50.632704+00:00"
+      "seen_at_utc": "2026-09-10T11:17:10.449090+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T10:51:50.632953+00:00"
+  "updated_at_utc": "2026-09-10T11:17:10.449208+00:00"
 }
