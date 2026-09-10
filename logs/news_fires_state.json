@@ -1,14 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564449143/el-venizelos-prospathisan-na-perasoyn-100-kila-koka-nis-krymmena-se-triantafylla/",
-      "title": "«Ελ. Βενιζέλος»: Προσπάθησαν να περάσουν 100 κιλά κοκαΐνης κρυμμένα σε τριαντάφυλλα",
-      "normalized_title": "«ΕΛ. ΒΕΝΙΖΕΛΟΣ»: ΠΡΟΣΠΑΘΗΣΑΝ ΝΑ ΠΕΡΑΣΟΥΝ 100 ΚΙΛΑ ΚΟΚΑΙΝΗΣ ΚΡΥΜΜΕΝΑ ΣΕ ΤΡΙΑΝΤΑΦΥΛΛΑ",
+      "url": "https://www.kathimerini.gr/world/564449212/antallagi-pligmaton-ston-kolpo-ti-gnorizoyme/",
+      "title": "Ανταλλαγή πληγμάτων στον Κόλπο – Τι γνωρίζουμε",
+      "normalized_title": "ΑΝΤΑΛΛΑΓΗ ΠΛΗΓΜΑΤΩΝ ΣΤΟΝ ΚΟΛΠΟ – ΤΙ ΓΝΩΡΙΖΟΥΜΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564449143/el-venizelos-prospathisan-na-perasoyn-100-kila-koka-nis-krymmena-se-triantafylla/",
-        "https://www.kathimerini.gr/world/564449140/aygoystos-2026-o-thermoteros-minas-sta-pagkosmia-chronika/"
+        "https://www.kathimerini.gr/world/564449212/antallagi-pligmaton-ston-kolpo-ti-gnorizoyme/",
+        "https://www.kathimerini.gr/politics/564448600/entos-kai-ektos-o-zacharoychos-k-androylakis/",
+        "https://www.kathimerini.gr/society/reportaz/564447955/konitsa-i-fotia-poy-den-tin-esvise-oyte-i-vrochi/",
+        "https://www.kathimerini.gr/economy/564448957/neoi-kanones-gia-tis-dimosies-symvaseis-me-eyropaiki-protimisi/",
+        "https://www.kathimerini.gr/world/564449167/filippines-pente-nekroi-kai-pano-apo-80-agnooymenoi-apo-fotia-se-ploio/",
+        "https://www.kathimerini.gr/society/564449146/kairos-mikri-anodos-tis-thermokrasias-exasthenisi-toy-meltemioy-vroches-sta-oreina/",
+        "https://www.kathimerini.gr/world/564449161/karaiviki-treis-nekroi-se-neo-amerikaniko-pligma-kata-narkotromokraton/",
+        "https://www.kathimerini.gr/istoria/564446128/san-simera-10-septemvrioy-1919-ypografetai-i-synthiki-toy-agioy-germanoy/"
       ],
-      "seen_at_utc": "2026-09-10T04:30:09.024502+00:00"
+      "seen_at_utc": "2026-09-10T04:51:27.106370+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,49 +1276,26 @@
       "seen_at_utc": "2026-09-10T04:17:52.247574+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1464080/giorgos-mazonakis-i-xehoristi-synaylia-stis-gynaikeies-fylakes-korydalloy-animera-toy-agioy-valentinoy/",
-      "title": "Γιώργος Μαζωνάκης: Η ξεχωριστή συναυλία στις γυναικείες φυλακές Κορυδαλλού ανήμερα του Αγίου Βαλεντίνου",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: Η ΞΕΧΩΡΙΣΤΗ ΣΥΝΑΥΛΙΑ ΣΤΙΣ ΓΥΝΑΙΚΕΙΕΣ ΦΥΛΑΚΕΣ ΚΟΡΥΔΑΛΛΟΥ ΑΝΗΜΕΡΑ ΤΟΥ ΑΓΙΟΥ ΒΑΛΕΝΤΙΝΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1464096/to-iran-klimakonei-tis-epitheseis-sta-stena-toy-ormoyz-kai-apeilei-me-nea-apagoreymeni-zoni/",
+      "title": "Το Ιράν κλιμακώνει τις επιθέσεις στα Στενά του Ορμούζ και απειλεί με νέα «απαγορευμένη ζώνη»",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΚΛΙΜΑΚΩΝΕΙ ΤΙΣ ΕΠΙΘΕΣΕΙΣ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ ΚΑΙ ΑΠΕΙΛΕΙ ΜΕ ΝΕΑ «ΑΠΑΓΟΡΕΥΜΕΝΗ ΖΩΝΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1464080/giorgos-mazonakis-i-xehoristi-synaylia-stis-gynaikeies-fylakes-korydalloy-animera-toy-agioy-valentinoy/",
-        "https://www.efsyn.gr/ellada/1464071/diki-gia-ta-tempi-megali-entasi-metaxy-syggenon-aitimata-gia-to-kinito-toy-stathmarhi-kai-tis-ihitikes-katagrafes/"
+        "https://www.efsyn.gr/kosmos/1464096/to-iran-klimakonei-tis-epitheseis-sta-stena-toy-ormoyz-kai-apeilei-me-nea-apagoreymeni-zoni/",
+        "https://www.efsyn.gr/oikonomia/1464079/nea-ergaleia-apo-tin-komision-gia-ti-stegastiki-krisi-ti-allazei-gia-tis-vrahyhronies-misthoseis/",
+        "https://www.efsyn.gr/ellada/1464091/kolydas-erhontai-vrohes-kai-ptosi-thermokrasias-apo-kyriaki-to-fthinoporo-htypa-tin-porta/"
       ],
-      "seen_at_utc": "2026-09-10T04:30:09.024567+00:00"
+      "seen_at_utc": "2026-09-10T04:51:27.106462+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/economy/efka-molis-12-000-aitimata-apo-ofeiletes-gia-rythmisi-xreous-kai-apodosi-syntaksis/",
-      "title": "ΕΦΚΑ: Μόλις 12.000 αιτήματα από οφειλέτες για ρύθμιση χρέους και απόδοση σύνταξης",
-      "normalized_title": "ΕΦΚΑ: ΜΟΛΙΣ 12.000 ΑΙΤΗΜΑΤΑ ΑΠΟ ΟΦΕΙΛΕΤΕΣ ΓΙΑ ΡΥΘΜΙΣΗ ΧΡΕΟΥΣ ΚΑΙ ΑΠΟΔΟΣΗ ΣΥΝΤΑΞΗΣ",
+      "url": "https://www.in.gr/2026/09/10/politics/ipa-i-synergasia-elladas-kai-israil-proothei-koinous-stoxous-asfaleias/",
+      "title": "ΗΠΑ: Η συνεργασία Ελλάδας και Ισραήλ προωθεί κοινούς στόχους ασφάλειας",
+      "normalized_title": "ΗΠΑ: Η ΣΥΝΕΡΓΑΣΙΑ ΕΛΛΑΔΑΣ ΚΑΙ ΙΣΡΑΗΛ ΠΡΟΩΘΕΙ ΚΟΙΝΟΥΣ ΣΤΟΧΟΥΣ ΑΣΦΑΛΕΙΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/economy/efka-molis-12-000-aitimata-apo-ofeiletes-gia-rythmisi-xreous-kai-apodosi-syntaksis/",
-        "https://www.in.gr/2026/09/10/life/geysi/syntagi-laxanoryzo-me-kima-kai-laxanika/",
-        "https://www.in.gr/2026/09/10/economy/pos-to-farmako-gia-ton-karkino-tou-mastou-allazei-tin-aksiologisi-tis-kainotomias/",
-        "https://www.in.gr/2026/09/10/world/proeklogiko-soou-tramp-etakse-5-000-dolaria-se-kathe-amerikano-an-oi-repoumplikanoi-diatirisoun-ton-elegxo-tou-kogkresou/",
-        "https://www.in.gr/2026/09/10/in-science/technology/copernicus-o-aygoustos-tou-2026-itan-o-thermoteros-minas-sta-pagkosmia-xronika/",
-        "https://www.in.gr/2026/09/10/plus/vita/i-askisi-ton-15-lepton-pou-mas-ftiaxnei-ti-mera/",
-        "https://www.in.gr/2026/09/10/greece/kairos-vroxes-kai-kataigides-sta-ipeirotika-anemoi-eos-6-mpofor-sto-aigaio/",
-        "https://www.in.gr/2026/09/10/economy/oikonomikes-eidiseis/akinita-i-allagi-xrisis-gia-katoikia-kai-poious-afora/",
-        "https://www.in.gr/2026/09/10/greece/zimia-enos-aiona-apo-ti-fotia-stin-konitsa/",
-        "https://www.in.gr/2026/09/10/greece/psatha-to-elikoptero-eprepe-na-vrisketai-se-alli-perioxi-katathesi-kleidi-gia-ti-moiraia-ptosi/",
-        "https://www.in.gr/2026/09/10/life/music/o-giorgos-mazonakis-den-epapse-pote-na-agapa-i-teleytaia-synenteyksi-tou-megalou-mazo/",
-        "https://www.in.gr/2026/09/10/plus/vita/ti-kserei-i-epistimi-gia-ti-single-zoi/",
-        "https://www.in.gr/2026/09/10/politics/politiki-grammateia/rapisma-gia-tin-kyvernisi-to-657-apodokimazei-ta-metra-tis-deth-proti-i-elas-stin-pataksi-tis-diafthoras-to-koinoniko-kratos-kai-ti-mesaia-taksi/",
-        "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/i-ai-mpainei-dynamika-stis-synenteykseis-ergasias-ti-perimenoun-na-akousoun-oi-ergodotes/",
-        "https://www.in.gr/2026/09/10/life/culture-live/tzoulia-romperts-me-rolo-prosklisi-sti-skini-tou-mprontgouei-meta-apo-20-xronia/",
-        "https://www.in.gr/2026/09/10/world/otan-oi-megaloi-igetes-epapsan-na-fovountai-ton-pyriniko-polemo-o-kosmos-egine-akoma-pio-epikindynos/",
-        "https://www.in.gr/2026/09/10/world/meionetai-o-mesos-oros-ton-paidion-sta-dimotika-sxoleia-tis-eyropis-pou-vrisketai-i-ellada/",
-        "https://www.in.gr/2026/09/10/politics/epikairotita/tourkia-pos-fantazetai-i-athina-enan-ellinotourkiko-polemo/",
-        "https://www.in.gr/2026/09/10/world/volivia-o-deksios-proedros-pas-kanei-logo-gia-pithani-epithesi-anaferomenos-stis-ekrikseis-se-stratiotiki-vasi/",
-        "https://www.in.gr/2026/09/10/politics/epikairotita/90i-deth-me-programma-gia-tis-anagkes-ton-pollon-o-tsipras-kai-minyma-nikis-akoma-kai-apo-tin-proti-kalpi/",
-        "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/meksiko-sxedio-ayksisis-ton-esodon-xoris-epipleon-forous-gia-to-2026/",
-        "https://www.in.gr/2026/09/10/uncategorized/filippines-5-nekroi-kai-87-agnooumenoi-apo-pyrkagia-se-porthmeio/",
-        "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/to-petrelaio-spaei-to-fragma-ton-100-dolarion-meta-tin-antallagi-pligmaton-ston-kolpo/",
-        "https://www.in.gr/2026/09/10/world/to-pakistan-kalei-to-iran-na-sygkratisei-tous-xouthi-den-einai-ypo-ton-elegxo-mas-apanta-i-texerani/",
-        "https://www.in.gr/2026/09/10/world/isimerinos-tromokratiki-organosi-xaraktirizoun-oi-ipa-tin-egklimatiki-symmoria-los-tiguerones/",
-        "https://www.in.gr/2026/09/10/world/i-nikaragoua-kleinei-tin-presveia-tis-sti-dominikani-dimokratia/"
+        "https://www.in.gr/2026/09/10/politics/ipa-i-synergasia-elladas-kai-israil-proothei-koinous-stoxous-asfaleias/",
+        "https://www.in.gr/2026/09/10/plus/vita/pos-na-petakseis-apo-pano-sou-ta-kila-ton-diakopon/"
       ],
-      "seen_at_utc": "2026-09-10T04:17:52.247526+00:00"
+      "seen_at_utc": "2026-09-10T04:51:27.106418+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T04:30:09.024661+00:00"
+  "updated_at_utc": "2026-09-10T04:51:27.106537+00:00"
 }
