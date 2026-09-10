@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/visual/infographics/564449002/sta-34-dis-eyro-i-agora-amoivaion-kefalaion/",
-      "title": "Στα 34 δισ. ευρώ η αγορά αμοιβαίων κεφαλαίων",
-      "normalized_title": "ΣΤΑ 34 ΔΙΣ. ΕΥΡΩ Η ΑΓΟΡΑ ΑΜΟΙΒΑΙΩΝ ΚΕΦΑΛΑΙΩΝ",
+      "url": "https://www.kathimerini.gr/economy/international/564449026/tziros-19-7-dis-eyro-gia-inditex-sto-examino/",
+      "title": "Τζίρος 19,7 δισ. ευρώ για Inditex στο εξάμηνο",
+      "normalized_title": "ΤΖΙΡΟΣ 19,7 ΔΙΣ. ΕΥΡΩ ΓΙΑ INDITEX ΣΤΟ ΕΞΑΜΗΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/visual/infographics/564449002/sta-34-dis-eyro-i-agora-amoivaion-kefalaion/",
-        "https://www.kathimerini.gr/culture/564449332/athina-andreadi-akoygontas-me-kleista-ta-matia/"
+        "https://www.kathimerini.gr/economy/international/564449026/tziros-19-7-dis-eyro-gia-inditex-sto-examino/",
+        "https://www.kathimerini.gr/world/564449365/giati-oi-ipa-tiroyn-prosektiki-stasi-apenanti-stis-kyroseis-symmachon-kata-ton-israilinon-epoikismon/",
+        "https://www.kathimerini.gr/economy/564448954/to-oriaio-kostos-ergasias-ayxithike-kata-6-5-stin-ellada-to-a-trimino/",
+        "https://www.kathimerini.gr/society/564449356/tin-paraskeyi-to-proto-koydoyni-gia-ti-nea-scholiki-chronia/",
+        "https://www.kathimerini.gr/society/564449347/thessaloniki-anagkastiki-prosgeiosi-aeroskafoys-logo-tis-epithetikis-symperiforas-epivaton/",
+        "https://www.kathimerini.gr/society/564449338/thanatos-mazonaki-astynomia-eisaggeleis-kai-isa-stin-idiotiki-kliniki/"
       ],
-      "seen_at_utc": "2026-09-10T06:30:08.706841+00:00"
+      "seen_at_utc": "2026-09-10T06:51:26.688812+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1264,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876583/edopistikan-80-kila-narkotikon-sta-mesogeia-koda-sto-eleutherios-venizelos/?utm_source=rss",
-      "title": "Εντοπίστηκαν 80 κιλά ναρκωτικών στα Μεσόγεια κοντά στο «Ελευθέριος Βενιζέλος»",
-      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΑΝ 80 ΚΙΛΑ ΝΑΡΚΩΤΙΚΩΝ ΣΤΑ ΜΕΣΟΓΕΙΑ ΚΟΝΤΑ ΣΤΟ «ΕΛΕΥΘΕΡΙΟΣ ΒΕΝΙΖΕΛΟΣ»",
+      "url": "https://www.protothema.gr/greece/article/1876603/sunelifthi-55hronos-pou-thopeuse-14hroni-sti-thessaloniki/?utm_source=rss",
+      "title": "Συνελήφθη 55χρονος που θώπευσε 14χρονη στη Θεσσαλονίκη",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 55ΧΡΟΝΟΣ ΠΟΥ ΘΩΠΕΥΣΕ 14ΧΡΟΝΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876583/edopistikan-80-kila-narkotikon-sta-mesogeia-koda-sto-eleutherios-venizelos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876603/sunelifthi-55hronos-pou-thopeuse-14hroni-sti-thessaloniki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876599/epidoma-3000-euro-gia-kathe-paidi-pou-gennietai-sti-nisuro-dinei-o-dimos-tou-nisiou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876597/pano-apo-9000-prostima-se-molis-mia-evdomada-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876595/pio-koda-to-fthinoporo-allazei-o-kairos-apo-tin-kuriaki-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876593/anagastiki-prosgeiosi-thessaloniki-ptisi-rodo-epivates-prosopiko-ekanan-fasaria-kai-kapnizan-stin-toualeta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T06:30:08.706942+00:00"
+      "seen_at_utc": "2026-09-10T06:51:26.688894+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464159/ti-einai-kai-pote-efarmozetai-i-plasmafairesi-ti-lene-oi-eidikoi-me-aformi-to-thanato-toy-giorgoy-mazonaki/",
-      "title": "Τι είναι και πότε εφαρμόζεται η πλασμαφαίρεση – Τι λένε οι ειδικοί με αφορμή το θάνατο του Γιώργου Μαζωνάκη",
-      "normalized_title": "ΤΙ ΕΙΝΑΙ ΚΑΙ ΠΟΤΕ ΕΦΑΡΜΟΖΕΤΑΙ Η ΠΛΑΣΜΑΦΑΙΡΕΣΗ – ΤΙ ΛΕΝΕ ΟΙ ΕΙΔΙΚΟΙ ΜΕ ΑΦΟΡΜΗ ΤΟ ΘΑΝΑΤΟ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ",
+      "url": "https://www.efsyn.gr/oikonomia/1464174/epithesi-oxfam-se-dnt-apaitei-tetraplasies-perikopes-dapanon-mnimes-therapeias-toy-sok-apo-to-1980/",
+      "title": "Επίθεση Oxfam σε ΔΝΤ: Απαιτεί τετραπλάσιες περικοπές δαπανών – Mνήμες «θεραπείας του σοκ» από το 1980",
+      "normalized_title": "ΕΠΙΘΕΣΗ OXFAM ΣΕ ΔΝΤ: ΑΠΑΙΤΕΙ ΤΕΤΡΑΠΛΑΣΙΕΣ ΠΕΡΙΚΟΠΕΣ ΔΑΠΑΝΩΝ – MΝΗΜΕΣ «ΘΕΡΑΠΕΙΑΣ ΤΟΥ ΣΟΚ» ΑΠΟ ΤΟ 1980",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464159/ti-einai-kai-pote-efarmozetai-i-plasmafairesi-ti-lene-oi-eidikoi-me-aformi-to-thanato-toy-giorgoy-mazonaki/",
-        "https://www.efsyn.gr/ellada/1464158/ayrio-to-proto-koydoyni-sta-sholeia-oles-oi-argies-tis-neas-sholikis-hronias/"
+        "https://www.efsyn.gr/oikonomia/1464174/epithesi-oxfam-se-dnt-apaitei-tetraplasies-perikopes-dapanon-mnimes-therapeias-toy-sok-apo-to-1980/",
+        "https://www.efsyn.gr/ellada/1464170/giorgos-mazonakis-ereyna-paroysia-eisaggelea-kai-isa-sto-iatreio-stem-cell-eikones-vinteo/",
+        "https://www.efsyn.gr/life/1464152/giannis-antetokoynmpo-agorase-epayli-135-ekat-dolarion-sto-maiami/"
       ],
-      "seen_at_utc": "2026-09-10T06:30:08.706924+00:00"
+      "seen_at_utc": "2026-09-10T06:51:26.688881+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/sports/football/panathinaikos-kifisia-psaxnei-to-apolyto-to-trifylli-kontra-stin-omada-tou-leto/",
-      "title": "Παναθηναϊκός – Κηφισιά: Ψάχνει το απόλυτο το τριφύλλι κόντρα στην ομάδα του Λέτο",
-      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ – ΚΗΦΙΣΙΑ: ΨΑΧΝΕΙ ΤΟ ΑΠΟΛΥΤΟ ΤΟ ΤΡΙΦΥΛΛΙ ΚΟΝΤΡΑ ΣΤΗΝ ΟΜΑΔΑ ΤΟΥ ΛΕΤΟ",
+      "url": "https://www.in.gr/2026/09/10/greece/marathonas-simera-i-ekdikasi-tis-ypothesis-tis-68xronis-pou-ekrypse-ti-nekri-mitera-tis-sto-ypogeio/",
+      "title": "Σήμερα η εκδίκαση της υπόθεσης της 68χρονης που έκρυψε τη νεκρή μητέρα της στο υπόγειο",
+      "normalized_title": "ΣΗΜΕΡΑ Η ΕΚΔΙΚΑΣΗ ΤΗΣ ΥΠΟΘΕΣΗΣ ΤΗΣ 68ΧΡΟΝΗΣ ΠΟΥ ΕΚΡΥΨΕ ΤΗ ΝΕΚΡΗ ΜΗΤΕΡΑ ΤΗΣ ΣΤΟ ΥΠΟΓΕΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/sports/football/panathinaikos-kifisia-psaxnei-to-apolyto-to-trifylli-kontra-stin-omada-tou-leto/",
-        "https://www.in.gr/2026/09/10/english-edition/govt-unveils-plan-to-cut-power-costs-by-30/",
-        "https://www.in.gr/2026/09/10/sports/football/champions-league/i-apokalypsi-tou-proedrou-tis-mpriz-gia-ton-tzoli-ti-paikti-mas-dosate/"
+        "https://www.in.gr/2026/09/10/greece/marathonas-simera-i-ekdikasi-tis-ypothesis-tis-68xronis-pou-ekrypse-ti-nekri-mitera-tis-sto-ypogeio/",
+        "https://www.in.gr/2026/09/10/politics/pasok-anevazei-tous-tonous-apenanti-ston-tsipra-maxi-xarakomaton-me-fonto-ti-deth-kai-tous-psifoforous-tis-kentroaristeras/"
       ],
-      "seen_at_utc": "2026-09-10T06:30:08.706886+00:00"
+      "seen_at_utc": "2026-09-10T06:51:26.688850+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T06:30:08.707012+00:00"
+  "updated_at_utc": "2026-09-10T06:51:26.688960+00:00"
 }
