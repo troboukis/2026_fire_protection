@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/astynomiko/564450661/thanatos-mazonaki-synelifthisan-oi-dyo-giatroi-to-keno-trion-oron-kai-ta-eyrimata-apo-to-iatreio/",
-      "title": "Θάνατος Μαζωνάκη: Συνελήφθησαν οι δύο γιατροί – Το «κενό» τριών ωρών και τα ευρήματα από το ιατρείο",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ – ΤΟ «ΚΕΝΟ» ΤΡΙΩΝ ΩΡΩΝ ΚΑΙ ΤΑ ΕΥΡΗΜΑΤΑ ΑΠΟ ΤΟ ΙΑΤΡΕΙΟ",
+      "url": "https://www.kathimerini.gr/k/k-magazine/564445963/o-syggrafeas-poy-gemizei-stadia/",
+      "title": "Ο συγγραφέας που γεμίζει στάδια",
+      "normalized_title": "Ο ΣΥΓΓΡΑΦΕΑΣ ΠΟΥ ΓΕΜΙΖΕΙ ΣΤΑΔΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/astynomiko/564450661/thanatos-mazonaki-synelifthisan-oi-dyo-giatroi-to-keno-trion-oron-kai-ta-eyrimata-apo-to-iatreio/",
-        "https://www.kathimerini.gr/society/reportaz/564448636/chreiazontai-oi-poleis-mas-odofragmata/"
+        "https://www.kathimerini.gr/k/k-magazine/564445963/o-syggrafeas-poy-gemizei-stadia/"
       ],
-      "seen_at_utc": "2026-09-10T16:30:04.071898+00:00"
+      "seen_at_utc": "2026-09-10T16:51:16.835980+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876922/marios-lolos-diasuromai-sta-social-os-viastis-kakopoiitis-me-anonumi-kataggelia-prosfeugo-sti-dikaiosuni/?utm_source=rss",
-      "title": "Μάριος Λώλος: Διασύρομαι στα social ως βιαστής - κακοποιητής με ανώνυμη καταγγελία, προσφεύγω στη δικαιοσύνη, λέει ο φωτορεπόρτερ",
-      "normalized_title": "ΜΑΡΙΟΣ ΛΩΛΟΣ: ΔΙΑΣΥΡΟΜΑΙ ΣΤΑ SOCIAL ΩΣ ΒΙΑΣΤΗΣ - ΚΑΚΟΠΟΙΗΤΗΣ ΜΕ ΑΝΩΝΥΜΗ ΚΑΤΑΓΓΕΛΙΑ, ΠΡΟΣΦΕΥΓΩ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ, ΛΕΕΙ Ο ΦΩΤΟΡΕΠΟΡΤΕΡ",
+      "url": "https://www.protothema.gr/greece/article/1876931/eduposiakes-eikones-apo-tin-ormi-226-tou-polemikou-nautikou-tahuploa-kai-mh-60r-se-drasi/?utm_source=rss",
+      "title": "Εντυπωσιακές εικόνες από την «ΟΡΜΗ 2/26» του Πολεμικού Ναυτικού, ταχύπλοα και MH-60R σε δράση",
+      "normalized_title": "ΕΝΤΥΠΩΣΙΑΚΕΣ ΕΙΚΟΝΕΣ ΑΠΟ ΤΗΝ «ΟΡΜΗ 2/26» ΤΟΥ ΠΟΛΕΜΙΚΟΥ ΝΑΥΤΙΚΟΥ, ΤΑΧΥΠΛΟΑ ΚΑΙ MH-60R ΣΕ ΔΡΑΣΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876922/marios-lolos-diasuromai-sta-social-os-viastis-kakopoiitis-me-anonumi-kataggelia-prosfeugo-sti-dikaiosuni/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876921/sunelifthisan-oi-duo-giatroi-gia-ton-thanato-tou-giorgou-mazonaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876931/eduposiakes-eikones-apo-tin-ormi-226-tou-polemikou-nautikou-tahuploa-kai-mh-60r-se-drasi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T16:30:04.071988+00:00"
+      "seen_at_utc": "2026-09-10T16:51:16.836106+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464708/giorgos-mazonakis-synelifthisan-oi-dyo-giatroi-gia-thanatifora-ekthesi/",
-      "title": "Γιώργος Μαζωνάκης: Συνελήφθησαν οι δύο γιατροί για θανατηφόρα έκθεση",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ ΓΙΑ ΘΑΝΑΤΗΦΟΡΑ ΕΚΘΕΣΗ",
+      "url": "https://www.efsyn.gr/politiki/1464725/vinteo-mitsotaki-gia-tis-yposheseis-sti-deth-symfonia-proodoy-kai-eyimerias-me-orizonta-tin-ellada-toy-2030/",
+      "title": "Βίντεο Μητσοτάκη για τις υποσχέσεις στη ΔΕΘ: «Συμφωνία Προόδου και Ευημερίας με ορίζοντα την Ελλάδα του 2030»",
+      "normalized_title": "ΒΙΝΤΕΟ ΜΗΤΣΟΤΑΚΗ ΓΙΑ ΤΙΣ ΥΠΟΣΧΕΣΕΙΣ ΣΤΗ ΔΕΘ: «ΣΥΜΦΩΝΙΑ ΠΡΟΟΔΟΥ ΚΑΙ ΕΥΗΜΕΡΙΑΣ ΜΕ ΟΡΙΖΟΝΤΑ ΤΗΝ ΕΛΛΑΔΑ ΤΟΥ 2030»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464708/giorgos-mazonakis-synelifthisan-oi-dyo-giatroi-gia-thanatifora-ekthesi/",
-        "https://www.efsyn.gr/politiki/1464707/ta-tria-dora-poy-ekane-o-apollonas-kalamarias-ston-tsipra-eikones/"
+        "https://www.efsyn.gr/politiki/1464725/vinteo-mitsotaki-gia-tis-yposheseis-sti-deth-symfonia-proodoy-kai-eyimerias-me-orizonta-tin-ellada-toy-2030/",
+        "https://www.efsyn.gr/tehnes/1464486/william-kentridge-ellinikes-times-se-treis-praxeis/",
+        "https://www.efsyn.gr/ellada/1464721/thanatos-mazonaki-kata-ton-dyo-giatron-strefetai-i-oikogeneia-zita-arsi-toy-tilefonikoy-aporritoy/",
+        "https://www.efsyn.gr/kosmos/1464712/ryanair-o-61hronos-epivatis-den-vgike-apo-to-aeroskafos-ti-ypostirizei-i-etaireia-gia-tin-ptisi-tromoy/"
       ],
-      "seen_at_utc": "2026-09-10T16:30:04.071967+00:00"
+      "seen_at_utc": "2026-09-10T16:51:16.836076+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/world/zelenski-o-kanadas-tha-parasxei-stin-oukrania-ena-megalo-paketo-ston-tomea-tis-antiaeroporikis-amynas/",
-      "title": "Ζελένσκι: Ο Καναδάς θα παράσχει στην Ουκρανία ένα μεγάλο πακέτο στον τομέα της αντιαεροπορικής άμυνας",
-      "normalized_title": "ΖΕΛΕΝΣΚΙ: Ο ΚΑΝΑΔΑΣ ΘΑ ΠΑΡΑΣΧΕΙ ΣΤΗΝ ΟΥΚΡΑΝΙΑ ΕΝΑ ΜΕΓΑΛΟ ΠΑΚΕΤΟ ΣΤΟΝ ΤΟΜΕΑ ΤΗΣ ΑΝΤΙΑΕΡΟΠΟΡΙΚΗΣ ΑΜΥΝΑΣ",
+      "url": "https://www.in.gr/2026/09/10/go-fun/fizz/h-souki-gouoterxaouz-den-exei-provlima-me-ton-nepotismo/",
+      "title": "H Σούκι Γουότερχαουζ δεν έχει πρόβλημα με τον νεποτισμό",
+      "normalized_title": "H ΣΟΥΚΙ ΓΟΥΟΤΕΡΧΑΟΥΖ ΔΕΝ ΕΧΕΙ ΠΡΟΒΛΗΜΑ ΜΕ ΤΟΝ ΝΕΠΟΤΙΣΜΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/world/zelenski-o-kanadas-tha-parasxei-stin-oukrania-ena-megalo-paketo-ston-tomea-tis-antiaeroporikis-amynas/",
-        "https://www.in.gr/2026/09/10/politics/paraskinio/ti-symvainei-me-ton-andrea-papandreou-ton-neotero/",
-        "https://www.in.gr/2026/09/10/greece/mazonakis-gia-thanatifora-ekthesi-se-kindyno-synelifthisan-oi-dyo-giatroi/",
-        "https://www.in.gr/2026/09/10/sports/football/o-vaggelis-marinakis-parousiase-ton-imanol-stin-omada-tairiazei-sti-nootropia-mas-sto-pneyma-tou-nikiti/",
-        "https://www.in.gr/2026/09/10/greece/me-times-iroon-to-teleytaio-antio-stous-dyo-pilotous-tou-phantom-tis-polemikis-aeroporias-thrinos-se-pyrgo-kai-ioannina/"
+        "https://www.in.gr/2026/09/10/go-fun/fizz/h-souki-gouoterxaouz-den-exei-provlima-me-ton-nepotismo/",
+        "https://www.in.gr/matchcenter/6106304/",
+        "https://www.in.gr/matchcenter/6106331/"
       ],
-      "seen_at_utc": "2026-09-10T16:30:04.071942+00:00"
+      "seen_at_utc": "2026-09-10T16:51:16.836022+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T16:30:04.072054+00:00"
+  "updated_at_utc": "2026-09-10T16:51:16.836173+00:00"
 }
