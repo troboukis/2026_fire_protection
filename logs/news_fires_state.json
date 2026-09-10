@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564450457/thessaloniki-entoni-osmi-aerioy-se-polles-perioches-ti-apanta-i-etaireia-dianomis/",
-      "title": "Θεσσαλονίκη: Eντονη οσμή αερίου σε πολλές περιοχές – Τι απαντά η εταιρεία διανομής",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: EΝΤΟΝΗ ΟΣΜΗ ΑΕΡΙΟΥ ΣΕ ΠΟΛΛΕΣ ΠΕΡΙΟΧΕΣ – ΤΙ ΑΠΑΝΤΑ Η ΕΤΑΙΡΕΙΑ ΔΙΑΝΟΜΗΣ",
+      "url": "https://www.kathimerini.gr/society/564450646/fotia-stin-platania-dramas-epicheiroyn-tessera-enaeria-mesa/",
+      "title": "Φωτιά στην Πλατανιά Δράμας – Επιχειρούν τέσσερα εναέρια μέσα",
+      "normalized_title": "ΦΩΤΙΑ ΣΤΗΝ ΠΛΑΤΑΝΙΑ ΔΡΑΜΑΣ – ΕΠΙΧΕΙΡΟΥΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ ΜΕΣΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564450457/thessaloniki-entoni-osmi-aerioy-se-polles-perioches-ti-apanta-i-etaireia-dianomis/",
-        "https://www.kathimerini.gr/columns/564449491/to-estiatorio-opoy-oloi-trone-to-idio-piato/"
+        "https://www.kathimerini.gr/society/564450646/fotia-stin-platania-dramas-epicheiroyn-tessera-enaeria-mesa/",
+        "https://www.kathimerini.gr/world/564450481/i-elvetia-thelei-na-xanakanei-agamoys-toys-diazeygmenoys/",
+        "https://www.kathimerini.gr/culture/tv/564450445/dyo-mayra-poykamisa-mpismpikis-myriagkos-kai-kimoyli-se-ena-erotiko-trigono-poy-tha-taraxei-tis-isorropies/"
       ],
-      "seen_at_utc": "2026-09-10T15:30:19.854767+00:00"
+      "seen_at_utc": "2026-09-10T15:51:24.103283+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876882/sto-nosokomeio-volou-43hronos-pou-ton-edeire-agria-o-gios-tou-ton-htupise-me-passalo-kai-grothies/?utm_source=rss",
-      "title": "Στο νοσοκομείο Βόλου 43χρονος που τον έδειρε άγρια ο γιος του, τον χτύπησε με πάσσαλο και γροθιές",
-      "normalized_title": "ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ ΒΟΛΟΥ 43ΧΡΟΝΟΣ ΠΟΥ ΤΟΝ ΕΔΕΙΡΕ ΑΓΡΙΑ Ο ΓΙΟΣ ΤΟΥ, ΤΟΝ ΧΤΥΠΗΣΕ ΜΕ ΠΑΣΣΑΛΟ ΚΑΙ ΓΡΟΘΙΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1876890/anatropi-stin-upothesi-mazonaki-eihe-xekinisei-i-plasmafairesi-otan-epathe-tin-anakopi-vrike-i-elas/?utm_source=rss",
+      "title": "Ανατροπή στην υπόθεση Μαζωνάκη: Είχε ξεκινήσει η πλασμαφαίρεση όταν έπαθε την ανακοπή, τι βρήκε η ΕΛΑΣ",
+      "normalized_title": "ΑΝΑΤΡΟΠΗ ΣΤΗΝ ΥΠΟΘΕΣΗ ΜΑΖΩΝΑΚΗ: ΕΙΧΕ ΞΕΚΙΝΗΣΕΙ Η ΠΛΑΣΜΑΦΑΙΡΕΣΗ ΟΤΑΝ ΕΠΑΘΕ ΤΗΝ ΑΝΑΚΟΠΗ, ΤΙ ΒΡΗΚΕ Η ΕΛΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876882/sto-nosokomeio-volou-43hronos-pou-ton-edeire-agria-o-gios-tou-ton-htupise-me-passalo-kai-grothies/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876890/anatropi-stin-upothesi-mazonaki-eihe-xekinisei-i-plasmafairesi-otan-epathe-tin-anakopi-vrike-i-elas/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T15:30:19.854870+00:00"
+      "seen_at_utc": "2026-09-10T15:51:24.103390+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1464689/poiisi-sto-pedion-toy-areos/",
-      "title": "Ποίηση στο Πεδίον του Άρεως",
-      "normalized_title": "ΠΟΙΗΣΗ ΣΤΟ ΠΕΔΙΟΝ ΤΟΥ ΑΡΕΩΣ",
+      "url": "https://www.efsyn.gr/ellada/1464694/marios-lolos-diasyromai-os-viastis-me-mia-anonymi-kataggelia-monos-tropos-antimetopisis-i-dikastikis-odos/",
+      "title": "Μάριος Λώλος: Διασύρομαι ως βιαστής με μια ανώνυμη καταγγελία – Μόνος τρόπος αντιμετώπισης η δικαστική οδός",
+      "normalized_title": "ΜΑΡΙΟΣ ΛΩΛΟΣ: ΔΙΑΣΥΡΟΜΑΙ ΩΣ ΒΙΑΣΤΗΣ ΜΕ ΜΙΑ ΑΝΩΝΥΜΗ ΚΑΤΑΓΓΕΛΙΑ – ΜΟΝΟΣ ΤΡΟΠΟΣ ΑΝΤΙΜΕΤΩΠΙΣΗΣ Η ΔΙΚΑΣΤΙΚΗ ΟΔΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1464689/poiisi-sto-pedion-toy-areos/",
-        "https://www.efsyn.gr/ellada/1464672/fotia-stin-platania-dramas-kinitopoiithikan-tessera-aeroskafi/",
-        "https://www.efsyn.gr/athlitismos/1464677/paok-symfonise-ki-erhetai-gia-tin-epithesi-o-mpanza/"
+        "https://www.efsyn.gr/ellada/1464694/marios-lolos-diasyromai-os-viastis-me-mia-anonymi-kataggelia-monos-tropos-antimetopisis-i-dikastikis-odos/",
+        "https://www.efsyn.gr/oikonomia/1464693/kampanakia-meta-tin-ayxisi-epitokion-apo-ekt-kindynoys-vlepei-i-lagkarnt-anatheoroyntai-oi-provlepseis/"
       ],
-      "seen_at_utc": "2026-09-10T15:30:19.854844+00:00"
+      "seen_at_utc": "2026-09-10T15:51:24.103369+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-vinteo-ntokoumento-asthenous-apo-plasmafairesi-pou-egine-sto-iatreio-sto-kolonaki-opou-ksepsyxise-o-tragoudistis/",
-      "title": "Γιώργος Μαζωνάκης: Βίντεο ντοκουμέντο ασθενούς από πλασμαφαίρεση που έγινε στο ιατρείο στο Κολωνάκι όπου ξεψύχησε ο τραγουδιστής",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ ΑΣΘΕΝΟΥΣ ΑΠΟ ΠΛΑΣΜΑΦΑΙΡΕΣΗ ΠΟΥ ΕΓΙΝΕ ΣΤΟ ΙΑΤΡΕΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ ΟΠΟΥ ΞΕΨΥΧΗΣΕ Ο ΤΡΑΓΟΥΔΙΣΤΗΣ",
+      "url": "https://www.in.gr/2026/09/10/apopsi/i-anasynthesi-tis-kentrodeksias-pera-apo-prosopa/",
+      "title": "Η ανασύνθεση της κεντροδεξιάς πέρα από πρόσωπα",
+      "normalized_title": "Η ΑΝΑΣΥΝΘΕΣΗ ΤΗΣ ΚΕΝΤΡΟΔΕΞΙΑΣ ΠΕΡΑ ΑΠΟ ΠΡΟΣΩΠΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-vinteo-ntokoumento-asthenous-apo-plasmafairesi-pou-egine-sto-iatreio-sto-kolonaki-opou-ksepsyxise-o-tragoudistis/"
+        "https://www.in.gr/2026/09/10/apopsi/i-anasynthesi-tis-kentrodeksias-pera-apo-prosopa/",
+        "https://www.in.gr/2026/09/10/world/i-ryanair-tha-amfisvitisei-to-symvan-me-to-spasmeno-parathyro-o-epivatis-den-vgike-ektos-aeroskafous/",
+        "https://www.in.gr/2026/09/10/world/oi-xouthi-katelavan-stratigiko-limani-stin-erythra-thalassa-me-pleonektima-ston-elegxo-tis-naysiploias/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/i-elas-gia-tous-kryfous-kindynous-sto-programma-mitsotaki-i-krisimi-afetiria/",
+        "https://www.in.gr/2026/09/10/sports/ananeose-me-ti-real-madritis-o-gkiouler/"
       ],
-      "seen_at_utc": "2026-09-10T15:30:19.854826+00:00"
+      "seen_at_utc": "2026-09-10T15:51:24.103342+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T15:30:19.854954+00:00"
+  "updated_at_utc": "2026-09-10T15:51:24.103454+00:00"
 }
