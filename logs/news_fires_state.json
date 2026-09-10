@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564450262/i-ryanair-amfisvitei-oti-epivatis-vgike-apo-to-parathyro/",
-      "title": "Η Ryanair αμφισβητεί ότι επιβάτης βγήκε από το παράθυρο",
-      "normalized_title": "Η RYANAIR ΑΜΦΙΣΒΗΤΕΙ ΟΤΙ ΕΠΙΒΑΤΗΣ ΒΓΗΚΕ ΑΠΟ ΤΟ ΠΑΡΑΘΥΡΟ",
+      "url": "https://www.kathimerini.gr/athletics/football/564450328/fifa-i-gallia-aposyrei-ti-stirixi-tis-stin-ypopsifiotita-toy-tziani-infantino/",
+      "title": "FIFA: Η Γαλλία αποσύρει τη στήριξή της στην υποψηφιότητα του Τζιάνι Ινφαντίνο",
+      "normalized_title": "FIFA: Η ΓΑΛΛΙΑ ΑΠΟΣΥΡΕΙ ΤΗ ΣΤΗΡΙΞΗ ΤΗΣ ΣΤΗΝ ΥΠΟΨΗΦΙΟΤΗΤΑ ΤΟΥ ΤΖΙΑΝΙ ΙΝΦΑΝΤΙΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564450262/i-ryanair-amfisvitei-oti-epivatis-vgike-apo-to-parathyro/",
-        "https://www.kathimerini.gr/world/564450271/vretanos-katigoreitai-oti-edose-sti-rosia-plirofories-gia-ergostasia-drones/"
+        "https://www.kathimerini.gr/athletics/football/564450328/fifa-i-gallia-aposyrei-ti-stirixi-tis-stin-ypopsifiotita-toy-tziani-infantino/",
+        "https://www.kathimerini.gr/society/564450307/ypsilos-kindynos-pyrkagias-tin-paraskeyi-se-22-perioches-tis-choras/",
+        "https://www.kathimerini.gr/world/564449686/politico-oi-ipa-piezoyn-toys-symmachoys-sto-nato-na-gyrisoyn-tin-plati-sto-diethnes-poiniko-dikastirio/"
       ],
-      "seen_at_utc": "2026-09-10T13:30:17.873147+00:00"
+      "seen_at_utc": "2026-09-10T13:51:15.695458+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876800/fotia-sto-nisi-ioanninon-me-ta-karavakia-tis-limnis-i-purosvestiki/?utm_source=rss",
-      "title": "Φωτιά στο Νησί της λίμνης Παμβώτιδας, επιστρατεύτηκαν καραβάκια για την Πυροσβεστική",
-      "normalized_title": "ΦΩΤΙΑ ΣΤΟ ΝΗΣΙ ΤΗΣ ΛΙΜΝΗΣ ΠΑΜΒΩΤΙΔΑΣ, ΕΠΙΣΤΡΑΤΕΥΤΗΚΑΝ ΚΑΡΑΒΑΚΙΑ ΓΙΑ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1876827/tesseris-fakelous-kai-mia-sakoula-me-stoiheia-piran-apo-tin-kliniki-sto-kolonaki-oi-astunomikoi-tou-ellinikou-fbi/?utm_source=rss",
+      "title": "Τέσσερις φακέλους και μία σακούλα με στοιχεία πήραν από την κλινική στο Κολωνάκι οι αστυνομικοί του ελληνικού «FBI»",
+      "normalized_title": "ΤΕΣΣΕΡΙΣ ΦΑΚΕΛΟΥΣ ΚΑΙ ΜΙΑ ΣΑΚΟΥΛΑ ΜΕ ΣΤΟΙΧΕΙΑ ΠΗΡΑΝ ΑΠΟ ΤΗΝ ΚΛΙΝΙΚΗ ΣΤΟ ΚΟΛΩΝΑΚΙ ΟΙ ΑΣΤΥΝΟΜΙΚΟΙ ΤΟΥ ΕΛΛΗΝΙΚΟΥ «FBI»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876800/fotia-sto-nisi-ioanninon-me-ta-karavakia-tis-limnis-i-purosvestiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876827/tesseris-fakelous-kai-mia-sakoula-me-stoiheia-piran-apo-tin-kliniki-sto-kolonaki-oi-astunomikoi-tou-ellinikou-fbi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876820/treis-sullipseis-gia-katohi-kai-diakinisi-narkotikon-sto-lasithi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T13:30:17.873278+00:00"
+      "seen_at_utc": "2026-09-10T13:51:15.695611+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464423/nea-exegersi-sto-kolastirio-tis-sintikis-se-athlies-synthikes-oi-350-kratoymenoi-metanastes-ametakinitos-o-pleyris/",
-      "title": "Νέα εξέγερση στο κολαστήριο της Σιντικής: Σε άθλιες συνθήκες οι 350 κρατούμενοι μετανάστες – Αμετακίνητος ο Πλεύρης",
-      "normalized_title": "ΝΕΑ ΕΞΕΓΕΡΣΗ ΣΤΟ ΚΟΛΑΣΤΗΡΙΟ ΤΗΣ ΣΙΝΤΙΚΗΣ: ΣΕ ΑΘΛΙΕΣ ΣΥΝΘΗΚΕΣ ΟΙ 350 ΚΡΑΤΟΥΜΕΝΟΙ ΜΕΤΑΝΑΣΤΕΣ – ΑΜΕΤΑΚΙΝΗΤΟΣ Ο ΠΛΕΥΡΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1464622/to-iran-anastellei-tis-hreoseis-10-epi-ton-naylon-gia-xena-ploia-ti-simainei-gia-to-kostos-metaforas-petrelaioy-kai-fysikoy-aerioy/",
+      "title": "Το Ιράν αναστέλλει τις χρεώσεις 10% επί των ναύλων για ξένα πλοία – Τι σημαίνει για το κόστος μεταφοράς πετρελαίου και φυσικού αερίου",
+      "normalized_title": "ΤΟ ΙΡΑΝ ΑΝΑΣΤΕΛΛΕΙ ΤΙΣ ΧΡΕΩΣΕΙΣ 10% ΕΠΙ ΤΩΝ ΝΑΥΛΩΝ ΓΙΑ ΞΕΝΑ ΠΛΟΙΑ – ΤΙ ΣΗΜΑΙΝΕΙ ΓΙΑ ΤΟ ΚΟΣΤΟΣ ΜΕΤΑΦΟΡΑΣ ΠΕΤΡΕΛΑΙΟΥ ΚΑΙ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464423/nea-exegersi-sto-kolastirio-tis-sintikis-se-athlies-synthikes-oi-350-kratoymenoi-metanastes-ametakinitos-o-pleyris/",
-        "https://www.efsyn.gr/politiki/1464603/i-konstantopoyloy-sti-deth-den-paizoyme-vromika-opos-alloi-aristera-kai-dexia-i-pleysi-eleytherias-einai-i-lysi/",
-        "https://www.efsyn.gr/ellada/1464599/pyrkagia-sti-larisa-sikothikan-enaeria-mesa/"
+        "https://www.efsyn.gr/kosmos/1464622/to-iran-anastellei-tis-hreoseis-10-epi-ton-naylon-gia-xena-ploia-ti-simainei-gia-to-kostos-metaforas-petrelaioy-kai-fysikoy-aerioy/",
+        "https://www.efsyn.gr/athlitismos/1464615/rekor-esodon-ano-ton-40-dis-eyro-gia-to-eyropaiko-podosfairo-to-2024-25/"
       ],
-      "seen_at_utc": "2026-09-10T13:30:17.873254+00:00"
+      "seen_at_utc": "2026-09-10T13:51:15.695580+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/plus/medianews/bhmagazino-kimi-antoneli-kai-tzon-gkaliano-sto-eksofyllo-o-super-star-tis-f1-kai-o-diasimos-fashion-designer-dimiourgoun-pagkosmio-thoryvo/",
-      "title": "BHMAGAZINO: Κίμι Αντονέλι και Τζον Γκαλιάνο στο εξώφυλλο – Ο super star της F1 και ο διάσημος fashion designer δημιουργούν παγκόσμιο θόρυβο",
-      "normalized_title": "BHMAGAZINO: ΚΙΜΙ ΑΝΤΟΝΕΛΙ ΚΑΙ ΤΖΟΝ ΓΚΑΛΙΑΝΟ ΣΤΟ ΕΞΩΦΥΛΛΟ – Ο SUPER STAR ΤΗΣ F1 ΚΑΙ Ο ΔΙΑΣΗΜΟΣ FASHION DESIGNER ΔΗΜΙΟΥΡΓΟΥΝ ΠΑΓΚΟΣΜΙΟ ΘΟΡΥΒΟ",
+      "url": "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-pente-fakelous-kai-sakoules-me-stoixeia-syneleksan-apo-tin-kliniki-sto-kolonaki-astynomikoi-tou-ellinikou-fbi/",
+      "title": "Γιώργος Μαζωνάκης: Πέντε φακέλους και σακούλες με στοιχεία συνέλεξαν από την κλινική στο Κολωνάκι αστυνομικοί του ελληνικού FBI",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΠΕΝΤΕ ΦΑΚΕΛΟΥΣ ΚΑΙ ΣΑΚΟΥΛΕΣ ΜΕ ΣΤΟΙΧΕΙΑ ΣΥΝΕΛΕΞΑΝ ΑΠΟ ΤΗΝ ΚΛΙΝΙΚΗ ΣΤΟ ΚΟΛΩΝΑΚΙ ΑΣΤΥΝΟΜΙΚΟΙ ΤΟΥ ΕΛΛΗΝΙΚΟΥ FBI",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/plus/medianews/bhmagazino-kimi-antoneli-kai-tzon-gkaliano-sto-eksofyllo-o-super-star-tis-f1-kai-o-diasimos-fashion-designer-dimiourgoun-pagkosmio-thoryvo/"
+        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-pente-fakelous-kai-sakoules-me-stoixeia-syneleksan-apo-tin-kliniki-sto-kolonaki-astynomikoi-tou-ellinikou-fbi/",
+        "https://www.in.gr/2026/09/10/world/vretania-sto-dikastirio-vretanos-pou-katigoreitai-oti-pareixe-plirofories-gia-ergostasia-kataskeyis-drones-sti-rosia/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/arteta-o-tzolis-kai-o-entegkarnt-katalavainoun-o-enas-ton-allon-apolyta-kai-i-ximeia-tous-einai-eksairetiki-vid/",
+        "https://www.in.gr/2026/09/10/life/culture-live/star-trek-pos-i-seira-epistimonikis-fantasias-enepneyse-ti-nasa-kai-tous-astronaytes-tis/",
+        "https://www.in.gr/2026/09/10/politics/politiki-grammateia/aleksis-tsipras-treis-maxes-eos-to-maksimou-enas-stoxos-kai-to-dyskolo-toso-oso-me-to-pasok/"
       ],
-      "seen_at_utc": "2026-09-10T13:30:17.873220+00:00"
+      "seen_at_utc": "2026-09-10T13:51:15.695526+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T13:30:17.873368+00:00"
+  "updated_at_utc": "2026-09-10T13:51:15.695676+00:00"
 }
