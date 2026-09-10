@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/football/564450328/fifa-i-gallia-aposyrei-ti-stirixi-tis-stin-ypopsifiotita-toy-tziani-infantino/",
-      "title": "FIFA: Η Γαλλία αποσύρει τη στήριξή της στην υποψηφιότητα του Τζιάνι Ινφαντίνο",
-      "normalized_title": "FIFA: Η ΓΑΛΛΙΑ ΑΠΟΣΥΡΕΙ ΤΗ ΣΤΗΡΙΞΗ ΤΗΣ ΣΤΗΝ ΥΠΟΨΗΦΙΟΤΗΤΑ ΤΟΥ ΤΖΙΑΝΙ ΙΝΦΑΝΤΙΝΟ",
+      "url": "https://www.kathimerini.gr/society/reportaz/564450031/thanatos-mazonaki-ta-anapantita-erotimata-gia-to-iatreio-sto-kolonaki/",
+      "title": "Θάνατος Μαζωνάκη: Τα αναπάντητα ερωτήματα για το ιατρείο στο Κολωνάκι",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: ΤΑ ΑΝΑΠΑΝΤΗΤΑ ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΟ ΙΑΤΡΕΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/football/564450328/fifa-i-gallia-aposyrei-ti-stirixi-tis-stin-ypopsifiotita-toy-tziani-infantino/",
-        "https://www.kathimerini.gr/society/564450307/ypsilos-kindynos-pyrkagias-tin-paraskeyi-se-22-perioches-tis-choras/",
-        "https://www.kathimerini.gr/world/564449686/politico-oi-ipa-piezoyn-toys-symmachoys-sto-nato-na-gyrisoyn-tin-plati-sto-diethnes-poiniko-dikastirio/"
+        "https://www.kathimerini.gr/society/reportaz/564450031/thanatos-mazonaki-ta-anapantita-erotimata-gia-to-iatreio-sto-kolonaki/",
+        "https://www.kathimerini.gr/k/disney/564450379/miky-maoys-639-dyskolo-senario/",
+        "https://www.kathimerini.gr/society/564450343/zakynthos-listepsan-toyristes-me-machairia-treis-syllipseis/",
+        "https://www.kathimerini.gr/politics/564450352/synantisi-toy-kyriakoy-mitsotaki-me-tin-amal-kloynei-sto-megaro-maximoy/",
+        "https://www.kathimerini.gr/k/gastronomos/564448300/ayga-me-ntomata-kai-loykaniko/"
       ],
-      "seen_at_utc": "2026-09-10T13:51:15.695458+00:00"
+      "seen_at_utc": "2026-09-10T14:17:25.032376+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,38 +1263,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876827/tesseris-fakelous-kai-mia-sakoula-me-stoiheia-piran-apo-tin-kliniki-sto-kolonaki-oi-astunomikoi-tou-ellinikou-fbi/?utm_source=rss",
-      "title": "Τέσσερις φακέλους και μία σακούλα με στοιχεία πήραν από την κλινική στο Κολωνάκι οι αστυνομικοί του ελληνικού «FBI»",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΦΑΚΕΛΟΥΣ ΚΑΙ ΜΙΑ ΣΑΚΟΥΛΑ ΜΕ ΣΤΟΙΧΕΙΑ ΠΗΡΑΝ ΑΠΟ ΤΗΝ ΚΛΙΝΙΚΗ ΣΤΟ ΚΟΛΩΝΑΚΙ ΟΙ ΑΣΤΥΝΟΜΙΚΟΙ ΤΟΥ ΕΛΛΗΝΙΚΟΥ «FBI»",
+      "url": "https://www.protothema.gr/greece/article/1876841/sunelifthisan-treis-allodapoi-pou-xafrizan-touristes-sto-kedro-tis-athinas/?utm_source=rss",
+      "title": "Συνελήφθησαν τρεις αλλοδαποί που ξάφριζαν τουρίστες στο κέντρο της Αθήνας",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗΣΑΝ ΤΡΕΙΣ ΑΛΛΟΔΑΠΟΙ ΠΟΥ ΞΑΦΡΙΖΑΝ ΤΟΥΡΙΣΤΕΣ ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΑΘΗΝΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876827/tesseris-fakelous-kai-mia-sakoula-me-stoiheia-piran-apo-tin-kliniki-sto-kolonaki-oi-astunomikoi-tou-ellinikou-fbi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876820/treis-sullipseis-gia-katohi-kai-diakinisi-narkotikon-sto-lasithi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876841/sunelifthisan-treis-allodapoi-pou-xafrizan-touristes-sto-kedro-tis-athinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876839/ekklisia-tis-ellados-anaklithike-i-timitiki-diakrisi-ston-proin-kalavruton-amvrosio/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876832/fotia-se-hamili-vlastisi-sti-velina-korinthias-sikothikan-duo-aeroplana/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876831/prokuriseis-gia-350-nees-theseis-epop-sto-polemiko-nautiko-kai-nea-kabania-me-minuma-haraxe-poreia-gia-to-mellon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876830/to-gala-to-diethnes-lifestyle-periodiko-auti-tin-kuriaki-dorean-me-to-thema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T13:51:15.695611+00:00"
+      "seen_at_utc": "2026-09-10T14:17:25.032516+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1464622/to-iran-anastellei-tis-hreoseis-10-epi-ton-naylon-gia-xena-ploia-ti-simainei-gia-to-kostos-metaforas-petrelaioy-kai-fysikoy-aerioy/",
-      "title": "Το Ιράν αναστέλλει τις χρεώσεις 10% επί των ναύλων για ξένα πλοία – Τι σημαίνει για το κόστος μεταφοράς πετρελαίου και φυσικού αερίου",
-      "normalized_title": "ΤΟ ΙΡΑΝ ΑΝΑΣΤΕΛΛΕΙ ΤΙΣ ΧΡΕΩΣΕΙΣ 10% ΕΠΙ ΤΩΝ ΝΑΥΛΩΝ ΓΙΑ ΞΕΝΑ ΠΛΟΙΑ – ΤΙ ΣΗΜΑΙΝΕΙ ΓΙΑ ΤΟ ΚΟΣΤΟΣ ΜΕΤΑΦΟΡΑΣ ΠΕΤΡΕΛΑΙΟΥ ΚΑΙ ΦΥΣΙΚΟΥ ΑΕΡΙΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1464619/epikindyni-klimakosi-stin-erythra-thalassa-oi-hoythi-katelavan-stratigiki-poli-kai-limani/",
+      "title": "Επικίνδυνη κλιμάκωση στην Ερυθρά Θάλασσα: Οι Χούθι κατέλαβαν στρατηγική πόλη και λιμάνι",
+      "normalized_title": "ΕΠΙΚΙΝΔΥΝΗ ΚΛΙΜΑΚΩΣΗ ΣΤΗΝ ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ: ΟΙ ΧΟΥΘΙ ΚΑΤΕΛΑΒΑΝ ΣΤΡΑΤΗΓΙΚΗ ΠΟΛΗ ΚΑΙ ΛΙΜΑΝΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1464622/to-iran-anastellei-tis-hreoseis-10-epi-ton-naylon-gia-xena-ploia-ti-simainei-gia-to-kostos-metaforas-petrelaioy-kai-fysikoy-aerioy/",
-        "https://www.efsyn.gr/athlitismos/1464615/rekor-esodon-ano-ton-40-dis-eyro-gia-to-eyropaiko-podosfairo-to-2024-25/"
+        "https://www.efsyn.gr/kosmos/1464619/epikindyni-klimakosi-stin-erythra-thalassa-oi-hoythi-katelavan-stratigiki-poli-kai-limani/",
+        "https://www.efsyn.gr/ellada/1464604/giorgos-mazonakis-poia-einai-i-giatros-poy-anelave-ti-therapeia-plasmafairesis/",
+        "https://www.efsyn.gr/ellada/1464605/thanatos-mazonaki-fyllo-kai-ftero-apo-to-elliniko-fbi-to-iatreio-vrethikan-dyo-mihanimata-plasmafairesis/",
+        "https://www.efsyn.gr/ellada/1464623/pyrkagia-se-hamili-vlastisi-stin-velina-korinthias-sikothikan-dyo-aeroskafi/"
       ],
-      "seen_at_utc": "2026-09-10T13:51:15.695580+00:00"
+      "seen_at_utc": "2026-09-10T14:17:25.032490+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-pente-fakelous-kai-sakoules-me-stoixeia-syneleksan-apo-tin-kliniki-sto-kolonaki-astynomikoi-tou-ellinikou-fbi/",
-      "title": "Γιώργος Μαζωνάκης: Πέντε φακέλους και σακούλες με στοιχεία συνέλεξαν από την κλινική στο Κολωνάκι αστυνομικοί του ελληνικού FBI",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΠΕΝΤΕ ΦΑΚΕΛΟΥΣ ΚΑΙ ΣΑΚΟΥΛΕΣ ΜΕ ΣΤΟΙΧΕΙΑ ΣΥΝΕΛΕΞΑΝ ΑΠΟ ΤΗΝ ΚΛΙΝΙΚΗ ΣΤΟ ΚΟΛΩΝΑΚΙ ΑΣΤΥΝΟΜΙΚΟΙ ΤΟΥ ΕΛΛΗΝΙΚΟΥ FBI",
+      "url": "https://www.in.gr/2026/09/10/world/diadiktyo-sta-social-to-60-tis-seksoualikis-ekmetalleysis-paidion-kataggelletai-1-ton-peristatikon/",
+      "title": "Στα social το 60% της σεξουαλικής εκμετάλλευσης παιδιών - Μόλις 1% των περιστατικών καταγγέλλεται",
+      "normalized_title": "ΣΤΑ SOCIAL ΤΟ 60% ΤΗΣ ΣΕΞΟΥΑΛΙΚΗΣ ΕΚΜΕΤΑΛΛΕΥΣΗΣ ΠΑΙΔΙΩΝ - ΜΟΛΙΣ 1% ΤΩΝ ΠΕΡΙΣΤΑΤΙΚΩΝ ΚΑΤΑΓΓΕΛΛΕΤΑΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-pente-fakelous-kai-sakoules-me-stoixeia-syneleksan-apo-tin-kliniki-sto-kolonaki-astynomikoi-tou-ellinikou-fbi/",
-        "https://www.in.gr/2026/09/10/world/vretania-sto-dikastirio-vretanos-pou-katigoreitai-oti-pareixe-plirofories-gia-ergostasia-kataskeyis-drones-sti-rosia/",
-        "https://www.in.gr/2026/09/10/sports/football/champions-league/arteta-o-tzolis-kai-o-entegkarnt-katalavainoun-o-enas-ton-allon-apolyta-kai-i-ximeia-tous-einai-eksairetiki-vid/",
-        "https://www.in.gr/2026/09/10/life/culture-live/star-trek-pos-i-seira-epistimonikis-fantasias-enepneyse-ti-nasa-kai-tous-astronaytes-tis/",
-        "https://www.in.gr/2026/09/10/politics/politiki-grammateia/aleksis-tsipras-treis-maxes-eos-to-maksimou-enas-stoxos-kai-to-dyskolo-toso-oso-me-to-pasok/"
+        "https://www.in.gr/2026/09/10/world/diadiktyo-sta-social-to-60-tis-seksoualikis-ekmetalleysis-paidion-kataggelletai-1-ton-peristatikon/",
+        "https://www.in.gr/2026/09/10/sports/basketball/o-tzoouns-ypovlithike-se-epemvasi-afairesis-kystis-xanei-to-tournoua-tis-kyprou/",
+        "https://www.in.gr/2026/09/10/english-edition/imanol-the-great-offensive-football-praise-from-mourinho-luis-enrique-simeone/",
+        "https://www.in.gr/2026/09/10/greece/fotia-sti-velina-korinthias-sikothikan-dyo-aeroskafi/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/marinakis-megaloprepes-adeiasma-se-floridi-gia-to-ntou-tis-tourkias-den-yparxei-kindynos-prosoxi-sti-diatyposi-theseon/",
+        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-to-symvan-prin-liges-imeres-se-estiatorio-kai-osa-synevisan-sto-iatreio-tou-kolonakiou/"
       ],
-      "seen_at_utc": "2026-09-10T13:51:15.695526+00:00"
+      "seen_at_utc": "2026-09-10T14:17:25.032457+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T13:51:15.695676+00:00"
+  "updated_at_utc": "2026-09-10T14:17:25.032622+00:00"
 }
