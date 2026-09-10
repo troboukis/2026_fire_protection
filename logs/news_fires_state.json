@@ -1,14 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564451000/tselik-i-symmachia-tis-elladas-me-to-israil-mporei-na-tis-prokalesei-megali-zimia/",
-      "title": "Τσελίκ: Η συμμαχία της Ελλάδας με το Ισραήλ μπορεί να της προκαλέσει μεγάλη ζημιά",
-      "normalized_title": "ΤΣΕΛΙΚ: Η ΣΥΜΜΑΧΙΑ ΤΗΣ ΕΛΛΑΔΑΣ ΜΕ ΤΟ ΙΣΡΑΗΛ ΜΠΟΡΕΙ ΝΑ ΤΗΣ ΠΡΟΚΑΛΕΣΕΙ ΜΕΓΑΛΗ ΖΗΜΙΑ",
+      "url": "https://www.kathimerini.gr/world/564451006/germania-safes-provadisma-tis-afd-sto-meklemvoyrgo-dytiki-pomerania-deichnoyn-oi-dimoskopiseis/",
+      "title": "AfD: Προβάδισμα στο Μεκλεμβούργο-Δυτική Πομερανία δείχνουν οι δημοσκοπήσεις",
+      "normalized_title": "AFD: ΠΡΟΒΑΔΙΣΜΑ ΣΤΟ ΜΕΚΛΕΜΒΟΥΡΓΟ-ΔΥΤΙΚΗ ΠΟΜΕΡΑΝΙΑ ΔΕΙΧΝΟΥΝ ΟΙ ΔΗΜΟΣΚΟΠΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564451000/tselik-i-symmachia-tis-elladas-me-to-israil-mporei-na-tis-prokalesei-megali-zimia/",
-        "https://www.kathimerini.gr/society/564450892/treis-syllipseis-gia-pyrkagies-apo-ameleia-se-layrio-kai-trikala/"
+        "https://www.kathimerini.gr/world/564451006/germania-safes-provadisma-tis-afd-sto-meklemvoyrgo-dytiki-pomerania-deichnoyn-oi-dimoskopiseis/"
       ],
-      "seen_at_utc": "2026-09-10T19:16:59.032942+00:00"
+      "seen_at_utc": "2026-09-10T19:29:59.283941+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,28 +1268,24 @@
       "seen_at_utc": "2026-09-10T17:51:23.100403+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1464782/koytsoympas-apo-ti-deth-i-dynami-poy-dinei-o-laos-sto-kke-den-metallassetai-oyte-pazareyetai/",
-      "title": "Κουτσούμπας από τη ΔΕΘ: «Η δύναμη που δίνει ο λαός στο ΚΚΕ δεν μεταλλάσσεται, ούτε παζαρεύεται»",
-      "normalized_title": "ΚΟΥΤΣΟΥΜΠΑΣ ΑΠΟ ΤΗ ΔΕΘ: «Η ΔΥΝΑΜΗ ΠΟΥ ΔΙΝΕΙ Ο ΛΑΟΣ ΣΤΟ ΚΚΕ ΔΕΝ ΜΕΤΑΛΛΑΣΣΕΤΑΙ, ΟΥΤΕ ΠΑΖΑΡΕΥΕΤΑΙ»",
+      "url": "https://www.efsyn.gr/kosmos/1464796/italia-dyo-gynaikes-ehasan-ti-zoi-toys-apo-to-kyma-kakokairias/",
+      "title": "Ιταλία: Δύο γυναίκες έχασαν τη ζωή τους από το κύμα κακοκαιρίας",
+      "normalized_title": "ΙΤΑΛΙΑ: ΔΥΟ ΓΥΝΑΙΚΕΣ ΕΧΑΣΑΝ ΤΗ ΖΩΗ ΤΟΥΣ ΑΠΟ ΤΟ ΚΥΜΑ ΚΑΚΟΚΑΙΡΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1464782/koytsoympas-apo-ti-deth-i-dynami-poy-dinei-o-laos-sto-kke-den-metallassetai-oyte-pazareyetai/",
-        "https://www.efsyn.gr/kosmos/1464783/polynekro-trohaio-stin-elvetia-anatrapike-toyristiko-leoforeio-me-dekades-epivainontes/"
+        "https://www.efsyn.gr/kosmos/1464796/italia-dyo-gynaikes-ehasan-ti-zoi-toys-apo-to-kyma-kakokairias/"
       ],
-      "seen_at_utc": "2026-09-10T19:16:59.033057+00:00"
+      "seen_at_utc": "2026-09-10T19:29:59.284025+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/go-fun/fizz/otan-o-giorgos-mazonakis-ta-evale-me-ti-xrysi-aygi-eimai-kata-ton-anthropon-pou-kryvontai-piso-apo-mia-koukoula/",
-      "title": "Όταν ο Γιώργος Μαζωνάκης τα έβαλε με τη Χρυσή Αυγή: Είμαι κατά των ανθρώπων που κρύβονται πίσω από μια κουκούλα",
-      "normalized_title": "ΟΤΑΝ Ο ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ ΤΑ ΕΒΑΛΕ ΜΕ ΤΗ ΧΡΥΣΗ ΑΥΓΗ: ΕΙΜΑΙ ΚΑΤΑ ΤΩΝ ΑΝΘΡΩΠΩΝ ΠΟΥ ΚΡΥΒΟΝΤΑΙ ΠΙΣΩ ΑΠΟ ΜΙΑ ΚΟΥΚΟΥΛΑ",
+      "url": "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/i-eyropi-mpainei-ston-xeimona-me-ligotero-aerio/",
+      "title": "Η Ευρώπη μπαίνει στον χειμώνα με λιγότερο αέριο",
+      "normalized_title": "Η ΕΥΡΩΠΗ ΜΠΑΙΝΕΙ ΣΤΟΝ ΧΕΙΜΩΝΑ ΜΕ ΛΙΓΟΤΕΡΟ ΑΕΡΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/go-fun/fizz/otan-o-giorgos-mazonakis-ta-evale-me-ti-xrysi-aygi-eimai-kata-ton-anthropon-pou-kryvontai-piso-apo-mia-koukoula/",
-        "https://www.in.gr/2026/09/10/in-science/ai/texniti-noimosyni-i-kalifornia-sxediazei-to-koinoniko-kratos-eno-i-eyropi-plironei-ta-kalodia/",
-        "https://www.in.gr/2026/09/10/politics/epikairotita/deth-2026-me-minyma-gia-katharsi-kai-logodosia-sti-deth-i-maria-karystianou/",
-        "https://www.in.gr/2026/09/10/sports/football/champions-league/fenermpaxtse-roma-1-1-moirasia-stin-konstantinoupoli-vid/",
-        "https://www.in.gr/2026/09/10/greece/sto-g-nekrotafeio-i-kideia-tou-giorgou-mazonaki/"
+        "https://www.in.gr/2026/09/10/economy/diethnis-oikonomia/i-eyropi-mpainei-ston-xeimona-me-ligotero-aerio/",
+        "https://www.in.gr/2026/09/10/in-science/ai/texniti-noimosyni-i-kalifornia-sxediazei-to-koinoniko-kratos-eno-i-eyropi-plironei-ta-kalodia/"
       ],
-      "seen_at_utc": "2026-09-10T19:16:59.033014+00:00"
+      "seen_at_utc": "2026-09-10T19:29:59.283987+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T19:16:59.033139+00:00"
+  "updated_at_utc": "2026-09-10T19:29:59.284104+00:00"
 }
