@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564450952/dafni-erixan-aporrypantiko-plyntirioy-se-geyma-paidikoy-stathmoy/",
-      "title": "Δάφνη: Εριξαν απορρυπαντικό πλυντηρίου σε γεύμα παιδικού σταθμού",
-      "normalized_title": "ΔΑΦΝΗ: ΕΡΙΞΑΝ ΑΠΟΡΡΥΠΑΝΤΙΚΟ ΠΛΥΝΤΗΡΙΟΥ ΣΕ ΓΕΥΜΑ ΠΑΙΔΙΚΟΥ ΣΤΑΘΜΟΥ",
+      "url": "https://www.kathimerini.gr/politics/564450970/sto-kastellorizo-o-kyriakos-mitsotakis/",
+      "title": "Στο Καστελλόριζο ο Κυριάκος Μητσοτάκης",
+      "normalized_title": "ΣΤΟ ΚΑΣΤΕΛΛΟΡΙΖΟ Ο ΚΥΡΙΑΚΟΣ ΜΗΤΣΟΤΑΚΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564450952/dafni-erixan-aporrypantiko-plyntirioy-se-geyma-paidikoy-stathmoy/",
-        "https://www.kathimerini.gr/world/564448708/mporei-na-einai-to-stomatiko-dialyma-epivlaves-gia-tin-ygeia/",
-        "https://www.kathimerini.gr/society/564450943/allazei-to-skiniko-toy-kairoy-ptosi-thermokrasias-kai-kataigides-apo-to-savvato/"
+        "https://www.kathimerini.gr/politics/564450970/sto-kastellorizo-o-kyriakos-mitsotakis/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564450736/zelenski-symfonia-me-ton-kanada-gia-megalo-paketo-aeramynas/",
+        "https://www.kathimerini.gr/life/techniti-noimosyni/564450919/anthropic-epistimonas-zitise-voitheia-apo-to-claude-gia-na-kataskeyasei-epithetiko-io/"
       ],
-      "seen_at_utc": "2026-09-10T18:29:59.270718+00:00"
+      "seen_at_utc": "2026-09-10T18:51:10.551006+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,25 +1270,34 @@
       "seen_at_utc": "2026-09-10T17:51:23.100403+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1464766/synantisi-androylaki-me-tis-epikefalis-tis-eyroomadas-sosialiston-sto-epikentro-i-anodos-tis-akrodexias/",
-      "title": "Συνάντηση Ανδρουλάκη με της επικεφαλής της ευρωομάδας Σοσιαλιστών: Στο επίκεντρο η άνοδος της Ακροδεξιάς",
-      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΑΝΔΡΟΥΛΑΚΗ ΜΕ ΤΗΣ ΕΠΙΚΕΦΑΛΗΣ ΤΗΣ ΕΥΡΩΟΜΑΔΑΣ ΣΟΣΙΑΛΙΣΤΩΝ: ΣΤΟ ΕΠΙΚΕΝΤΡΟ Η ΑΝΟΔΟΣ ΤΗΣ ΑΚΡΟΔΕΞΙΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1464777/giorgos-mazonakis-sto-g-nekrotafeio-sti-nikaia-i-kideia-toy-pote-tha-ginei-i-nekropsia/",
+      "title": "Γιώργος Μαζωνάκης: Στο Γ’ Νεκροταφείο στη Νίκαια η κηδεία του – Πότε θα γίνει η νεκροψία",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΤΟ Γ’ ΝΕΚΡΟΤΑΦΕΙΟ ΣΤΗ ΝΙΚΑΙΑ Η ΚΗΔΕΙΑ ΤΟΥ – ΠΟΤΕ ΘΑ ΓΙΝΕΙ Η ΝΕΚΡΟΨΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1464766/synantisi-androylaki-me-tis-epikefalis-tis-eyroomadas-sosialiston-sto-epikentro-i-anodos-tis-akrodexias/",
-        "https://www.efsyn.gr/ellada/1464765/myrizei-fthinoporo-apo-to-savvato-me-vrohes-kai-ptosi-thermokrasias-i-anartisi-kolyda/"
+        "https://www.efsyn.gr/ellada/1464777/giorgos-mazonakis-sto-g-nekrotafeio-sti-nikaia-i-kideia-toy-pote-tha-ginei-i-nekropsia/",
+        "https://www.efsyn.gr/kosmos/1464771/polemos-sto-iran-poio-einai-to-mikro-nisi-anoihta-tis-yemenis-poy-exelissetai-se-stratigiko-epathlo/",
+        "https://www.efsyn.gr/politiki/1464772/i-karystianoy-paroysiase-to-programma-tis-apo-ti-deth-katharsi-kai-logodosia-to-kentriko-minyma/",
+        "https://www.efsyn.gr/ellada/1464775/sok-stin-kerkyra-51hronos-katigoreitai-oti-viaze-tin-8hroni-eggoni-toy/"
       ],
-      "seen_at_utc": "2026-09-10T18:17:03.334240+00:00"
+      "seen_at_utc": "2026-09-10T18:51:10.551105+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/economy/telika-giname-voulgaria-i-oxi-akoma-apokalyptiki-ereyna/",
-      "title": "Τελικά γίναμε Βουλγαρία ή όχι ακόμα; Αποκαλυπτική έρευνα",
-      "normalized_title": "ΤΕΛΙΚΑ ΓΙΝΑΜΕ ΒΟΥΛΓΑΡΙΑ Η ΟΧΙ ΑΚΟΜΑ; ΑΠΟΚΑΛΥΠΤΙΚΗ ΕΡΕΥΝΑ",
+      "url": "https://www.in.gr/2026/09/10/greece/i-nea-apokalypsi-gia-to-mixanima-plasmafairesis-pou-ypesti-anakopi-o-mazonakis-kai-i-sygklonistiki-martyria-synergati-tou-giatrou/",
+      "title": "Η νέα αποκάλυψη για το μηχάνημα πλασμαφαίρεσης που υπέστη ανακοπή ο Μαζωνάκης και η συγκλονιστική μαρτυρία συνεργάτη του γιατρού",
+      "normalized_title": "Η ΝΕΑ ΑΠΟΚΑΛΥΨΗ ΓΙΑ ΤΟ ΜΗΧΑΝΗΜΑ ΠΛΑΣΜΑΦΑΙΡΕΣΗΣ ΠΟΥ ΥΠΕΣΤΗ ΑΝΑΚΟΠΗ Ο ΜΑΖΩΝΑΚΗΣ ΚΑΙ Η ΣΥΓΚΛΟΝΙΣΤΙΚΗ ΜΑΡΤΥΡΙΑ ΣΥΝΕΡΓΑΤΗ ΤΟΥ ΓΙΑΤΡΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/economy/telika-giname-voulgaria-i-oxi-akoma-apokalyptiki-ereyna/",
-        "https://www.in.gr/2026/09/10/world/meta-ti-niki-sti-saksonia-anxalt-provadisma-gia-tin-akrodeksia-afd-sto-meklemvourgo-dytiki-pomerania/"
+        "https://www.in.gr/2026/09/10/greece/i-nea-apokalypsi-gia-to-mixanima-plasmafairesis-pou-ypesti-anakopi-o-mazonakis-kai-i-sygklonistiki-martyria-synergati-tou-giatrou/",
+        "https://www.in.gr/2026/09/10/world/polynekro-troxaio-stin-elvetia-me-leoforeio/",
+        "https://www.in.gr/matchcenter/6106392/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/aintxofen-saxtar-1-1-piran-ton-vathmo-oi-oukranoi-prin-to-mats-me-tin-aek/",
+        "https://www.in.gr/matchcenter/6106411/",
+        "https://www.in.gr/matchcenter/6106293/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/androulakis-xreiazontai-eyropaikes-politikes-allileggyis-gia-tin-antimetopisi-tis-akrodeksias-stin-eyropi/",
+        "https://www.in.gr/matchcenter/6106240/",
+        "https://www.in.gr/2026/09/10/go-fun/fizz/oi-spice-girls-anevasan-mia-mystiriodi-aggelia-gia-tous-thaymastes-tous/"
       ],
-      "seen_at_utc": "2026-09-10T18:29:59.270749+00:00"
+      "seen_at_utc": "2026-09-10T18:51:10.551068+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T18:29:59.270831+00:00"
+  "updated_at_utc": "2026-09-10T18:51:10.551176+00:00"
 }
