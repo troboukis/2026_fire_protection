@@ -1,17 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564448705/entopizontas-ton-algorithmo-tis-makrozoias/",
-      "title": "Εντοπίζοντας τον αλγόριθμο της μακροζωίας",
-      "normalized_title": "ΕΝΤΟΠΙΖΟΝΤΑΣ ΤΟΝ ΑΛΓΟΡΙΘΜΟ ΤΗΣ ΜΑΚΡΟΖΩΙΑΣ",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564450661/thanatos-mazonaki-synelifthisan-oi-dyo-giatroi-to-keno-trion-oron-kai-ta-eyrimata-apo-to-iatreio/",
+      "title": "Θάνατος Μαζωνάκη: Συνελήφθησαν οι δύο γιατροί – Το «κενό» τριών ωρών και τα ευρήματα από το ιατρείο",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ – ΤΟ «ΚΕΝΟ» ΤΡΙΩΝ ΩΡΩΝ ΚΑΙ ΤΑ ΕΥΡΗΜΑΤΑ ΑΠΟ ΤΟ ΙΑΤΡΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564448705/entopizontas-ton-algorithmo-tis-makrozoias/",
-        "https://www.kathimerini.gr/world/564450559/epistimonas-fan-tis-teilor-soyift-vaftise-entoma-me-to-onoma-tis/",
-        "https://www.kathimerini.gr/columns/564450634/giati-na-menei-aoratos-o-choros-ekatommyrion-stin-eyroligka/",
-        "https://www.kathimerini.gr/k/gastronomos/564448306/moscharisio-fileto-me-etoimi-glykia-saltsa-tsili-kai-polysporo-psomi/",
-        "https://www.kathimerini.gr/world/564450580/sto-fos-aporritos-fakelos-gia-ton-aggelo-toy-thanatoy-ton-nazi/"
+        "https://www.kathimerini.gr/society/astynomiko/564450661/thanatos-mazonaki-synelifthisan-oi-dyo-giatroi-to-keno-trion-oron-kai-ta-eyrimata-apo-to-iatreio/",
+        "https://www.kathimerini.gr/society/reportaz/564448636/chreiazontai-oi-poleis-mas-odofragmata/"
       ],
-      "seen_at_utc": "2026-09-10T16:17:07.425949+00:00"
+      "seen_at_utc": "2026-09-10T16:30:04.071898+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,36 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876907/treis-sullipseis-gia-purkagies-apo-ameleia-se-laurio-kai-trikala/?utm_source=rss",
-      "title": "Τρεις συλλήψεις για πυρκαγιές από αμέλεια σε Λαύριο και Τρίκαλα",
-      "normalized_title": "ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΠΥΡΚΑΓΙΕΣ ΑΠΟ ΑΜΕΛΕΙΑ ΣΕ ΛΑΥΡΙΟ ΚΑΙ ΤΡΙΚΑΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1876922/marios-lolos-diasuromai-sta-social-os-viastis-kakopoiitis-me-anonumi-kataggelia-prosfeugo-sti-dikaiosuni/?utm_source=rss",
+      "title": "Μάριος Λώλος: Διασύρομαι στα social ως βιαστής - κακοποιητής με ανώνυμη καταγγελία, προσφεύγω στη δικαιοσύνη, λέει ο φωτορεπόρτερ",
+      "normalized_title": "ΜΑΡΙΟΣ ΛΩΛΟΣ: ΔΙΑΣΥΡΟΜΑΙ ΣΤΑ SOCIAL ΩΣ ΒΙΑΣΤΗΣ - ΚΑΚΟΠΟΙΗΤΗΣ ΜΕ ΑΝΩΝΥΜΗ ΚΑΤΑΓΓΕΛΙΑ, ΠΡΟΣΦΕΥΓΩ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ, ΛΕΕΙ Ο ΦΩΤΟΡΕΠΟΡΤΕΡ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876907/treis-sullipseis-gia-purkagies-apo-ameleia-se-laurio-kai-trikala/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876922/marios-lolos-diasuromai-sta-social-os-viastis-kakopoiitis-me-anonumi-kataggelia-prosfeugo-sti-dikaiosuni/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876921/sunelifthisan-oi-duo-giatroi-gia-ton-thanato-tou-giorgou-mazonaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T16:17:07.426035+00:00"
+      "seen_at_utc": "2026-09-10T16:30:04.071988+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464702/safari-tis-trohaias-gia-ta-ilektrika-patinia-stin-athina-495-paravaseis-se-689-eleghoys/",
-      "title": "«Σαφάρι» της Τροχαίας για τα ηλεκτρικά πατίνια στην Αθήνα: 495 παραβάσεις σε 689 ελέγχους",
-      "normalized_title": "«ΣΑΦΑΡΙ» ΤΗΣ ΤΡΟΧΑΙΑΣ ΓΙΑ ΤΑ ΗΛΕΚΤΡΙΚΑ ΠΑΤΙΝΙΑ ΣΤΗΝ ΑΘΗΝΑ: 495 ΠΑΡΑΒΑΣΕΙΣ ΣΕ 689 ΕΛΕΓΧΟΥΣ",
+      "url": "https://www.efsyn.gr/ellada/1464708/giorgos-mazonakis-synelifthisan-oi-dyo-giatroi-gia-thanatifora-ekthesi/",
+      "title": "Γιώργος Μαζωνάκης: Συνελήφθησαν οι δύο γιατροί για θανατηφόρα έκθεση",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΥΝΕΛΗΦΘΗΣΑΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ ΓΙΑ ΘΑΝΑΤΗΦΟΡΑ ΕΚΘΕΣΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464702/safari-tis-trohaias-gia-ta-ilektrika-patinia-stin-athina-495-paravaseis-se-689-eleghoys/",
-        "https://www.efsyn.gr/oikonomia/1464438/proeortia-krisis-stis-agores-apo-tis-times-toy-petrelaioy-kai-tis-ayxiseis-sto-eyropaiko-fysiko-aerio/"
+        "https://www.efsyn.gr/ellada/1464708/giorgos-mazonakis-synelifthisan-oi-dyo-giatroi-gia-thanatifora-ekthesi/",
+        "https://www.efsyn.gr/politiki/1464707/ta-tria-dora-poy-ekane-o-apollonas-kalamarias-ston-tsipra-eikones/"
       ],
-      "seen_at_utc": "2026-09-10T16:17:07.426019+00:00"
+      "seen_at_utc": "2026-09-10T16:30:04.071967+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/sports/football/sto-maroko-o-telikos-tou-mountial-2030/",
-      "title": "«Στο Μαρόκο ο τελικός του Μουντιάλ 2030»",
-      "normalized_title": "«ΣΤΟ ΜΑΡΟΚΟ Ο ΤΕΛΙΚΟΣ ΤΟΥ ΜΟΥΝΤΙΑΛ 2030»",
+      "url": "https://www.in.gr/2026/09/10/world/zelenski-o-kanadas-tha-parasxei-stin-oukrania-ena-megalo-paketo-ston-tomea-tis-antiaeroporikis-amynas/",
+      "title": "Ζελένσκι: Ο Καναδάς θα παράσχει στην Ουκρανία ένα μεγάλο πακέτο στον τομέα της αντιαεροπορικής άμυνας",
+      "normalized_title": "ΖΕΛΕΝΣΚΙ: Ο ΚΑΝΑΔΑΣ ΘΑ ΠΑΡΑΣΧΕΙ ΣΤΗΝ ΟΥΚΡΑΝΙΑ ΕΝΑ ΜΕΓΑΛΟ ΠΑΚΕΤΟ ΣΤΟΝ ΤΟΜΕΑ ΤΗΣ ΑΝΤΙΑΕΡΟΠΟΡΙΚΗΣ ΑΜΥΝΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/sports/football/sto-maroko-o-telikos-tou-mountial-2030/",
-        "https://www.in.gr/2026/09/10/greece/xoris-mathites-fetos-to-nipiagogeio-kai-dimotiko-sxoleio-gaydou/",
-        "https://www.in.gr/2026/09/10/life/culture-live/o-sartr-prin-ginei-sartr-ta-tetradia-enos-mathiti-tou-megalou-yparksisti-apo-to-katexomeno-parisi/",
-        "https://www.in.gr/2026/09/10/economy/parko-viotexnologias-sta-spata-apo-tin-elpen/"
+        "https://www.in.gr/2026/09/10/world/zelenski-o-kanadas-tha-parasxei-stin-oukrania-ena-megalo-paketo-ston-tomea-tis-antiaeroporikis-amynas/",
+        "https://www.in.gr/2026/09/10/politics/paraskinio/ti-symvainei-me-ton-andrea-papandreou-ton-neotero/",
+        "https://www.in.gr/2026/09/10/greece/mazonakis-gia-thanatifora-ekthesi-se-kindyno-synelifthisan-oi-dyo-giatroi/",
+        "https://www.in.gr/2026/09/10/sports/football/o-vaggelis-marinakis-parousiase-ton-imanol-stin-omada-tairiazei-sti-nootropia-mas-sto-pneyma-tou-nikiti/",
+        "https://www.in.gr/2026/09/10/greece/me-times-iroon-to-teleytaio-antio-stous-dyo-pilotous-tou-phantom-tis-polemikis-aeroporias-thrinos-se-pyrgo-kai-ioannina/"
       ],
-      "seen_at_utc": "2026-09-10T16:17:07.425998+00:00"
+      "seen_at_utc": "2026-09-10T16:30:04.071942+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T16:17:07.426107+00:00"
+  "updated_at_utc": "2026-09-10T16:30:04.072054+00:00"
 }
