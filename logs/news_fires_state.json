@@ -1,14 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564450007/thanatos-mazonaki-to-proi-tis-paraskeyis-i-nekrotomi-techniko-symvoylo-diorizei-i-oikogeneia/",
-      "title": "Θάνατος Μαζωνάκη: To πρωί της Παρασκευής η νεκροτομή – Τεχνικό σύμβουλο διορίζει η οικογένεια",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: TO ΠΡΩΙ ΤΗΣ ΠΑΡΑΣΚΕΥΗΣ Η ΝΕΚΡΟΤΟΜΗ – ΤΕΧΝΙΚΟ ΣΥΜΒΟΥΛΟ ΔΙΟΡΙΖΕΙ Η ΟΙΚΟΓΕΝΕΙΑ",
+      "url": "https://www.kathimerini.gr/world/564450091/paroxysmos-gia-tin-tapiseri-tis-mpagie-sto-londino-egkainiastike-i-ekthesi/",
+      "title": "Παροξυσμός για την Ταπισερί της Μπαγιέ στο Λονδίνο – Εγκαινιάστηκε η έκθεση",
+      "normalized_title": "ΠΑΡΟΞΥΣΜΟΣ ΓΙΑ ΤΗΝ ΤΑΠΙΣΕΡΙ ΤΗΣ ΜΠΑΓΙΕ ΣΤΟ ΛΟΝΔΙΝΟ – ΕΓΚΑΙΝΙΑΣΤΗΚΕ Η ΕΚΘΕΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564450007/thanatos-mazonaki-to-proi-tis-paraskeyis-i-nekrotomi-techniko-symvoylo-diorizei-i-oikogeneia/",
-        "https://www.kathimerini.gr/society/564449995/naxos-sfodro-trochaio-me-metopiki-dyo-ochimaton-mia-nekri-kai-mia-polytraymatias/"
+        "https://www.kathimerini.gr/world/564450091/paroxysmos-gia-tin-tapiseri-tis-mpagie-sto-londino-egkainiastike-i-ekthesi/",
+        "https://www.kathimerini.gr/society/astynomiko/564450037/kamatero-exarthrothike-egklimatiki-organosi-me-maimoy-ypalliloys-reymatos-enas-16chronos-stoys-syllifthentes/",
+        "https://www.kathimerini.gr/world/564450049/to-forema-ekdikisis-tis-ntaiana-se-dimoprasia-schedon-300-000-dol-i-ektimisi/",
+        "https://www.kathimerini.gr/world/564449815/giati-o-polemos-sto-iran-mporei-na-synechistei-kai-meta-to-2029/",
+        "https://www.kathimerini.gr/world/564449875/synagermos-gia-tin-anthropistiki-voitheia-64-ekat-ligoteroi-anthropoi-elavan-stirixi-to-2025/",
+        "https://www.kathimerini.gr/society/564450025/dimos-athinaion-se-leitoyrgia-to-proto-koinoniko-kentro-akois-stin-ellada/",
+        "https://www.kathimerini.gr/society/564450028/fotia-sto-agiofyllo-trikalon/",
+        "https://www.kathimerini.gr/culture/agenda/564449998/exodos-stin-athina-tin-pempti-10-9-nteiv-siman-kai-vassilina/"
       ],
-      "seen_at_utc": "2026-09-10T11:29:52.389167+00:00"
+      "seen_at_utc": "2026-09-10T11:51:49.141436+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1266,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876738/exi-sullipseis-gia-ta-84-kila-kokainis-pou-itan-krummena-se-pseutika-triadafulla/?utm_source=rss",
-      "title": "Εξι συλλήψεις για τα 84 κιλά κοκαϊνης που ήταν κρυμμένα σε ψεύτικα τριαντάφυλλα",
-      "normalized_title": "ΕΞΙ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΑ 84 ΚΙΛΑ ΚΟΚΑΙΝΗΣ ΠΟΥ ΗΤΑΝ ΚΡΥΜΜΕΝΑ ΣΕ ΨΕΥΤΙΚΑ ΤΡΙΑΝΤΑΦΥΛΛΑ",
+      "url": "https://www.protothema.gr/greece/article/1876751/anakoinothikan-ta-apotelesmata-eisagogis-tritovathmia-ekpaideusi-ton-upopsifion-pou-epligisan-sto-dustuhima-ton-tebon/?utm_source=rss",
+      "title": "Ανακοινώθηκαν τα αποτελέσματα εισαγωγής στην Τριτοβάθμια Εκπαίδευση των υποψηφίων που επλήγησαν στο δυστύχημα των Τεμπών",
+      "normalized_title": "ΑΝΑΚΟΙΝΩΘΗΚΑΝ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΙΣΑΓΩΓΗΣ ΣΤΗΝ ΤΡΙΤΟΒΑΘΜΙΑ ΕΚΠΑΙΔΕΥΣΗ ΤΩΝ ΥΠΟΨΗΦΙΩΝ ΠΟΥ ΕΠΛΗΓΗΣΑΝ ΣΤΟ ΔΥΣΤΥΧΗΜΑ ΤΩΝ ΤΕΜΠΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876738/exi-sullipseis-gia-ta-84-kila-kokainis-pou-itan-krummena-se-pseutika-triadafulla/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876751/anakoinothikan-ta-apotelesmata-eisagogis-tritovathmia-ekpaideusi-ton-upopsifion-pou-epligisan-sto-dustuhima-ton-tebon/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876749/fotia-sto-poludameio-larisas-epiheiroun-tessera-enaeria-mesa/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876743/i-astunomia-kanei-dou-sta-ilektrika-patinia-hiliades-oi-paravaseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876741/fotia-sto-agiofullo-trikalon-epiheirei-kai-elikoptero/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T11:29:52.389235+00:00"
+      "seen_at_utc": "2026-09-10T11:51:49.141598+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1464511/apantisi-tsoykala-se-marinaki-an-psahnei-synetairoys-sti-diatirisi-tis-mizerias-kai-tis-parakmis-na-koitaxei-alloy/",
-      "title": "Απάντηση Τσουκαλά σε Μαρινάκη: Αν ψάχνει συνεταίρους στη διατήρηση της μιζέριας και της παρακμής, να κοιτάξει αλλού",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΤΣΟΥΚΑΛΑ ΣΕ ΜΑΡΙΝΑΚΗ: ΑΝ ΨΑΧΝΕΙ ΣΥΝΕΤΑΙΡΟΥΣ ΣΤΗ ΔΙΑΤΗΡΗΣΗ ΤΗΣ ΜΙΖΕΡΙΑΣ ΚΑΙ ΤΗΣ ΠΑΡΑΚΜΗΣ, ΝΑ ΚΟΙΤΑΞΕΙ ΑΛΛΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1464513/neo-adeiasma-marinaki-se-floridi-gia-to-ntoy-tis-toyrkias-den-yparhei-kindynos-thelei-prosohi-i-diatyposi-theseon/",
+      "title": "Νέο άδειασμα Μαρινάκη σε Φλωρίδη για το «ντου της Τουρκίας»: «Δεν υπάρχει κίνδυνος, θέλει προσοχή η διατύπωση θέσεων»",
+      "normalized_title": "ΝΕΟ ΑΔΕΙΑΣΜΑ ΜΑΡΙΝΑΚΗ ΣΕ ΦΛΩΡΙΔΗ ΓΙΑ ΤΟ «ΝΤΟΥ ΤΗΣ ΤΟΥΡΚΙΑΣ»: «ΔΕΝ ΥΠΑΡΧΕΙ ΚΙΝΔΥΝΟΣ, ΘΕΛΕΙ ΠΡΟΣΟΧΗ Η ΔΙΑΤΥΠΩΣΗ ΘΕΣΕΩΝ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1464511/apantisi-tsoykala-se-marinaki-an-psahnei-synetairoys-sti-diatirisi-tis-mizerias-kai-tis-parakmis-na-koitaxei-alloy/",
-        "https://www.efsyn.gr/ellada/1464508/anavalletai-gia-ayrio-paraskeyi-i-nekropsia-mazonaki-i-oikogeneia-tha-diorisei-tehniko-symvoylo/",
-        "https://www.efsyn.gr/ellada/1464382/panepistimio-dytikis-attikis-kataggelia-gia-provokatoriki-epithesi-se-foititria-syndikalistria/"
+        "https://www.efsyn.gr/politiki/1464513/neo-adeiasma-marinaki-se-floridi-gia-to-ntoy-tis-toyrkias-den-yparhei-kindynos-thelei-prosohi-i-diatyposi-theseon/",
+        "https://www.efsyn.gr/life/1464521/giorgooo-vgaineis-i-teleytaia-anartisi-toy-giorgoy-mazonaki/"
       ],
-      "seen_at_utc": "2026-09-10T11:29:52.389222+00:00"
+      "seen_at_utc": "2026-09-10T11:51:49.141558+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/troxaio-me-leoforeio-sti-thessaloniki-eksitirio-gia-tin-62xroni-paramenei-sto-nosokomeio-i-21xroni/",
-      "title": "Τροχαίο με λεωφορείο: Εξιτήριο για την 62χρονη - Παραμένει στο νοσοκομείο η 21χρονη",
-      "normalized_title": "ΤΡΟΧΑΙΟ ΜΕ ΛΕΩΦΟΡΕΙΟ: ΕΞΙΤΗΡΙΟ ΓΙΑ ΤΗΝ 62ΧΡΟΝΗ - ΠΑΡΑΜΕΝΕΙ ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ Η 21ΧΡΟΝΗ",
+      "url": "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-anavlithike-gia-ayrio-i-nekropsia-sti-soro-tou-texniko-symvoulo-orizei-i-oikogeneia/",
+      "title": "Αναβλήθηκε για αύριο η νεκροψία στη σορό του Γιώργου Μαζωνάκη - Τεχνικό σύμβουλο ορίζει η οικογένεια",
+      "normalized_title": "ΑΝΑΒΛΗΘΗΚΕ ΓΙΑ ΑΥΡΙΟ Η ΝΕΚΡΟΨΙΑ ΣΤΗ ΣΟΡΟ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ - ΤΕΧΝΙΚΟ ΣΥΜΒΟΥΛΟ ΟΡΙΖΕΙ Η ΟΙΚΟΓΕΝΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/troxaio-me-leoforeio-sti-thessaloniki-eksitirio-gia-tin-62xroni-paramenei-sto-nosokomeio-i-21xroni/",
-        "https://www.in.gr/2026/09/10/world/sto-eleos-tis-kakokairias-i-italia-nekri-gynaika-pou-egklovistike-sto-oxima-tis/"
+        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-anavlithike-gia-ayrio-i-nekropsia-sti-soro-tou-texniko-symvoulo-orizei-i-oikogeneia/",
+        "https://www.in.gr/2026/09/10/politics/farantouris-epikindynes-oi-diloseis-floridi-gia-tin-tourkia-einai-lipasma-stis-apeiles-erntogan/",
+        "https://www.in.gr/2026/09/10/sports/football/ayto-einai-to-programma-tis-super-league-apo-tin-5i-eos-ti-16i-agonistiki/",
+        "https://www.in.gr/2026/09/10/sports/football/super-league-erxetai-synantisi-ton-idioktiton-gia-tin-kentriki-diaxeirisi-sta-tileoptika/",
+        "https://www.in.gr/2026/09/10/world/souidia-giati-oi-ekloges-theorountai-dimopsifisma-gia-ti-symmetoxi-ton-akrodeksion-dimokraton-stin-kyvernisi/",
+        "https://www.in.gr/2026/09/10/politics/epikairotita/elas-apo-ta-18-dis-sta-13-kai-simera-sta-40-dis-i-kyvernisi-exei-efesi-stis-yperkostologiseis/",
+        "https://www.in.gr/2026/09/10/plus/medianews/vima-tis-kyriakis-erxetai-me-synarpastikes-prosfores-4/",
+        "https://www.in.gr/2026/09/10/sports/basketball/perase-apo-ton-esake-i-protasi-gia-7-ksenous-sti-stoiximan-gbl-ti-sezon-2027-28-menei-i-egkrisi-tis-eok/"
       ],
-      "seen_at_utc": "2026-09-10T11:29:52.389199+00:00"
+      "seen_at_utc": "2026-09-10T11:51:49.141508+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T11:29:52.389295+00:00"
+  "updated_at_utc": "2026-09-10T11:51:49.141698+00:00"
 }
