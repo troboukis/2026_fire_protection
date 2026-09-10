@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564449737/telos-epochis-stin-islandia-apagoreyei-ti-falainothiria-poies-dyo-chores-tha-synechisoyn/",
-      "title": "Τέλος εποχής στην Ισλανδία: Απαγορεύει τη φαλαινοθηρία – Ποιες δύο χώρες θα συνεχίσουν",
-      "normalized_title": "ΤΕΛΟΣ ΕΠΟΧΗΣ ΣΤΗΝ ΙΣΛΑΝΔΙΑ: ΑΠΑΓΟΡΕΥΕΙ ΤΗ ΦΑΛΑΙΝΟΘΗΡΙΑ – ΠΟΙΕΣ ΔΥΟ ΧΩΡΕΣ ΘΑ ΣΥΝΕΧΙΣΟΥΝ",
+      "url": "https://www.kathimerini.gr/society/ekpaideysi/564448615/poso-sygchrono-einai-to-scholeio/",
+      "title": "Πόσο σύγχρονο είναι το σχολείο;",
+      "normalized_title": "ΠΟΣΟ ΣΥΓΧΡΟΝΟ ΕΙΝΑΙ ΤΟ ΣΧΟΛΕΙΟ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564449737/telos-epochis-stin-islandia-apagoreyei-ti-falainothiria-poies-dyo-chores-tha-synechisoyn/",
-        "https://www.kathimerini.gr/world/564449701/voreia-korea-peplo-mystirioy-gyro-apo-ton-arithmo-ton-paidion-toy-kim-giongk-oyn/",
-        "https://www.kathimerini.gr/society/564449698/thanatos-mazonaki-i-therapeia-den-prolave-na-xekinisei-ti-katethese-i-giatros/"
+        "https://www.kathimerini.gr/society/ekpaideysi/564448615/poso-sygchrono-einai-to-scholeio/",
+        "https://www.kathimerini.gr/society/564449731/thanatos-mazonaki-ti-einai-i-therapeytiki-plasmafairesi/",
+        "https://www.kathimerini.gr/world/564449755/rosia-kalpes-sti-skia-toy-polemoy/",
+        "https://www.kathimerini.gr/society/564449743/thessaloniki-ergazomeni-se-kentro-ygeias-ekleve-tin-proistameni-tis/",
+        "https://www.kathimerini.gr/world/564449734/kakokairia-stin-italia-nekri-gynaika-poy-egklovistike-se-anisopedi-diavasi/"
       ],
-      "seen_at_utc": "2026-09-10T09:29:58.572466+00:00"
+      "seen_at_utc": "2026-09-10T09:51:14.351241+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1263,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876678/megali-kinitopoiisi-stin-elouda-gia-eisroi-udaton-se-touristiko-skafos-topothetithikan-adirrupadika-fragmata/?utm_source=rss",
-      "title": "Μεγάλη κινητοποίηση στην Ελούντα για εισροή υδάτων σε τουριστικό σκάφος, τοποθετήθηκαν αντιρρυπαντικά φράγματα",
-      "normalized_title": "ΜΕΓΑΛΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΣΤΗΝ ΕΛΟΥΝΤΑ ΓΙΑ ΕΙΣΡΟΗ ΥΔΑΤΩΝ ΣΕ ΤΟΥΡΙΣΤΙΚΟ ΣΚΑΦΟΣ, ΤΟΠΟΘΕΤΗΘΗΚΑΝ ΑΝΤΙΡΡΥΠΑΝΤΙΚΑ ΦΡΑΓΜΑΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1876698/14hronos-me-motosikleta-paresure-mitera-me-ta-duo-paidia-tis-kai-tous-egateleipse/?utm_source=rss",
+      "title": "14χρονος με μοτοσικλέτα στο Μεσολόγγι παρέσυρε μητέρα με τα δύο παιδιά της και τους εγκατέλειψε",
+      "normalized_title": "14ΧΡΟΝΟΣ ΜΕ ΜΟΤΟΣΙΚΛΕΤΑ ΣΤΟ ΜΕΣΟΛΟΓΓΙ ΠΑΡΕΣΥΡΕ ΜΗΤΕΡΑ ΜΕ ΤΑ ΔΥΟ ΠΑΙΔΙΑ ΤΗΣ ΚΑΙ ΤΟΥΣ ΕΓΚΑΤΕΛΕΙΨΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876678/megali-kinitopoiisi-stin-elouda-gia-eisroi-udaton-se-touristiko-skafos-topothetithikan-adirrupadika-fragmata/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876698/14hronos-me-motosikleta-paresure-mitera-me-ta-duo-paidia-tis-kai-tous-egateleipse/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876692/karpathos-duo-sullipseis-gia-apati-se-varos-anilikou-ton-epeisan-na-tous-paradosei-hrimata-kai-timalfi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T09:29:58.572560+00:00"
+      "seen_at_utc": "2026-09-10T09:51:14.351345+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1464298/ta-eidika-kathikonta-kai-i-systimatiki-apaxiosi-ton-nosileyton/",
-      "title": "Τα «Ειδικά Καθήκοντα» και η συστηματική απαξίωση των νοσηλευτών",
-      "normalized_title": "ΤΑ «ΕΙΔΙΚΑ ΚΑΘΗΚΟΝΤΑ» ΚΑΙ Η ΣΥΣΤΗΜΑΤΙΚΗ ΑΠΑΞΙΩΣΗ ΤΩΝ ΝΟΣΗΛΕΥΤΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1464426/diki-gia-tempi-ton-noemvrio-i-diki-gia-tin-diaheirisi-toy-vinteoliptikoy-ylikoy-tis-emporikis-amaxostoihias/",
+      "title": "Δίκη για Τέμπη: Τον Νοέμβριο η δίκη για την διαχείριση του βιντεοληπτικού υλικού της εμπορικής αμαξοστοιχίας",
+      "normalized_title": "ΔΙΚΗ ΓΙΑ ΤΕΜΠΗ: ΤΟΝ ΝΟΕΜΒΡΙΟ Η ΔΙΚΗ ΓΙΑ ΤΗΝ ΔΙΑΧΕΙΡΙΣΗ ΤΟΥ ΒΙΝΤΕΟΛΗΠΤΙΚΟΥ ΥΛΙΚΟΥ ΤΗΣ ΕΜΠΟΡΙΚΗΣ ΑΜΑΞΟΣΤΟΙΧΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1464298/ta-eidika-kathikonta-kai-i-systimatiki-apaxiosi-ton-nosileyton/",
-        "https://www.efsyn.gr/politiki/1464397/sto-proedriko-megaro-i-amal-alamoyntin-synantithike-me-ton-tasoyla-eikones/",
-        "https://www.efsyn.gr/ellada/1464392/kriti-ih-mpike-sto-antitheto-reyma-kai-prosperase-vytioforo-kai-ntalika-mesa-se-toynel-vinteo/",
-        "https://www.efsyn.gr/ellada/1464338/mesologgi-14hronos-paresyre-me-mihani-mitera-kai-ta-anilika-paidia-tis-kai-egkateleipse-to-simeio/"
+        "https://www.efsyn.gr/ellada/1464426/diki-gia-tempi-ton-noemvrio-i-diki-gia-tin-diaheirisi-toy-vinteoliptikoy-ylikoy-tis-emporikis-amaxostoihias/",
+        "https://www.efsyn.gr/life/1464396/ti-elege-o-mazonakis-gia-ti-hrysi-aygi-to-2013-eimai-ergatis-kai-kata-ton-anthropon-poy-forane-koykoyla/",
+        "https://www.efsyn.gr/kosmos/1464260/rosia-oykrania-neo-telesigrafo-enopsei-tis-synodoy-koryfis-ton-brics/"
       ],
-      "seen_at_utc": "2026-09-10T09:29:58.572534+00:00"
+      "seen_at_utc": "2026-09-10T09:51:14.351320+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/greece/ti-isxyei-gia-tis-adeies-sxolikis-parakolouthisis-osa-prepei-na-gnorizoun-oi-ergazomenoi-goneis/",
-      "title": "Τι ισχύει για τις άδειες σχολικής παρακολούθησης - Όσα πρέπει να γνωρίζουν οι εργαζόμενοι γονείς",
-      "normalized_title": "ΤΙ ΙΣΧΥΕΙ ΓΙΑ ΤΙΣ ΑΔΕΙΕΣ ΣΧΟΛΙΚΗΣ ΠΑΡΑΚΟΛΟΥΘΗΣΗΣ - ΟΣΑ ΠΡΕΠΕΙ ΝΑ ΓΝΩΡΙΖΟΥΝ ΟΙ ΕΡΓΑΖΟΜΕΝΟΙ ΓΟΝΕΙΣ",
+      "url": "https://www.in.gr/2026/09/10/greece/ksexoristi-diasosi-stin-korintho-pyrosvestes-apegklovisan-peristeri-kai-ton-neosso-tou-deite-fotografies/",
+      "title": "Ξεχωριστή διάσωση στην Κόρινθο: Πυροσβέστες απεγκλώβισαν περιστέρι και τον νεοσσό του – Δείτε φωτογραφίες",
+      "normalized_title": "ΞΕΧΩΡΙΣΤΗ ΔΙΑΣΩΣΗ ΣΤΗΝ ΚΟΡΙΝΘΟ: ΠΥΡΟΣΒΕΣΤΕΣ ΑΠΕΓΚΛΩΒΙΣΑΝ ΠΕΡΙΣΤΕΡΙ ΚΑΙ ΤΟΝ ΝΕΟΣΣΟ ΤΟΥ – ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/greece/ti-isxyei-gia-tis-adeies-sxolikis-parakolouthisis-osa-prepei-na-gnorizoun-oi-ergazomenoi-goneis/",
-        "https://www.in.gr/2026/09/10/go-fun/fizz/min-me-kanete-na-ti-filiso-den-mporo-o-ithopoios-pou-den-antexe-ti-saron-stooun/",
-        "https://www.in.gr/2026/09/10/politics/aftodioikisi/o-ellinas-dimarxos-tis-aystralias-pou-episkeftike-ton-dimo-leykadas/"
+        "https://www.in.gr/2026/09/10/greece/ksexoristi-diasosi-stin-korintho-pyrosvestes-apegklovisan-peristeri-kai-ton-neosso-tou-deite-fotografies/",
+        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-vinteo-ntokoumento-apo-ti-stigmi-pou-to-asthenoforo-ftanei-stin-kliniki-tou-kolonakiou/"
       ],
-      "seen_at_utc": "2026-09-10T09:29:58.572507+00:00"
+      "seen_at_utc": "2026-09-10T09:51:14.351286+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T09:29:58.572632+00:00"
+  "updated_at_utc": "2026-09-10T09:51:14.351418+00:00"
 }
