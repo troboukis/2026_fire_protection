@@ -1,18 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564448744/pos-ftasame-se-ayto-to-simeio/",
-      "title": "Πώς φτάσαμε σε αυτό το σημείο;",
-      "normalized_title": "ΠΩΣ ΦΤΑΣΑΜΕ ΣΕ ΑΥΤΟ ΤΟ ΣΗΜΕΙΟ;",
+      "url": "https://www.kathimerini.gr/politics/government/564448573/kyvernisi-apostaseis-apo-ta-senaria-krisis-me-tin-toyrkia/",
+      "title": "Κυβέρνηση: Αποστάσεις από τα σενάρια κρίσης με την Τουρκία",
+      "normalized_title": "ΚΥΒΕΡΝΗΣΗ: ΑΠΟΣΤΑΣΕΙΣ ΑΠΟ ΤΑ ΣΕΝΑΡΙΑ ΚΡΙΣΗΣ ΜΕ ΤΗΝ ΤΟΥΡΚΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564448744/pos-ftasame-se-ayto-to-simeio/",
-        "https://www.kathimerini.gr/world/564449251/cbs-zimies-se-polla-aeroskafi-ton-ipa-apo-tis-iranikes-epitheseis-stin-iordania/",
-        "https://www.kathimerini.gr/opinion/564448741/kai-poios-sas-esteile-s-emena/",
-        "https://www.kathimerini.gr/opinion/564448762/poios-a-tha-lysei-tin-exisosi-tis-pisa/",
-        "https://www.kathimerini.gr/opinion/564448558/i-epistrofi-toy-moysama/",
-        "https://www.kathimerini.gr/economy/business/564449011/mataionetai-o-diagonismos-giatin-epektasi-toy-el-venizelos/"
+        "https://www.kathimerini.gr/politics/government/564448573/kyvernisi-apostaseis-apo-ta-senaria-krisis-me-tin-toyrkia/",
+        "https://www.kathimerini.gr/society/564449287/metro-mechri-simera-oi-kykloforiakes-rythmiseis-sti-grammi-3-poioi-stathmoi-kleinoyn-noritera/",
+        "https://www.kathimerini.gr/economy/local/564448996/apo-symvolo-krisis-ergaleio-anaptyxis/",
+        "https://www.kathimerini.gr/world/564449281/ipa-diakommatikes-antidraseis-kata-ton-etaireion-ai-meta-to-kampanaki-ereyniton/",
+        "https://www.kathimerini.gr/columns/564448348/i-megali-niki-tis-ikea-ti-etoimazei-i-safe-bulkers-kai-poios-akomi-epilegei-tin-athina/",
+        "https://www.kathimerini.gr/opinion/564448756/elliniki-foni-se-geroysia-kai-voyli/",
+        "https://www.kathimerini.gr/istoria/564445156/poios-travixe-ti-fotografia-toy-mpelogianni-me-to-garyfallo-o-pikaso-sokarismenos-tin-apotypose-se-skitso/"
       ],
-      "seen_at_utc": "2026-09-10T05:29:55.078263+00:00"
+      "seen_at_utc": "2026-09-10T05:51:16.082673+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,39 +1265,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1876547/1600000-monadikoi-hristes-enimerothikan-hthes-tetarti-9-septemvriou-apo-to-protothemagr/?utm_source=rss",
-      "title": "1.600.000 μοναδικοί χρήστες ενημερώθηκαν χθες Τετάρτη 9 Σεπτεμβρίου από το protothema.gr",
-      "normalized_title": "1.600.000 ΜΟΝΑΔΙΚΟΙ ΧΡΗΣΤΕΣ ΕΝΗΜΕΡΩΘΗΚΑΝ ΧΘΕΣ ΤΕΤΑΡΤΗ 9 ΣΕΠΤΕΜΒΡΙΟΥ ΑΠΟ ΤΟ PROTOTHEMA.GR",
+      "url": "https://www.protothema.gr/greece/article/1876561/metro-mehri-simera-oi-kukloforiakes-ruthmiseis-sti-grammi-3-logo-ergasion-poioi-stathmoi-tha-kleisoun-noritera/?utm_source=rss",
+      "title": "Μετρό: Μέχρι σήμερα οι κυκλοφοριακές ρυθμίσεις στη Γραμμή 3 λόγω εργασιών, ποιοι σταθμοί θα κλείσουν νωρίτερα",
+      "normalized_title": "ΜΕΤΡΟ: ΜΕΧΡΙ ΣΗΜΕΡΑ ΟΙ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΣΤΗ ΓΡΑΜΜΗ 3 ΛΟΓΩ ΕΡΓΑΣΙΩΝ, ΠΟΙΟΙ ΣΤΑΘΜΟΙ ΘΑ ΚΛΕΙΣΟΥΝ ΝΩΡΙΤΕΡΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1876547/1600000-monadikoi-hristes-enimerothikan-hthes-tetarti-9-septemvriou-apo-to-protothemagr/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876544/oi-enoples-sugrouseis-molunoun-ton-aera-to-nero-kai-to-edafos-enas-kathigitis-mila-gia-irak-gaza-kai-oukrania/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1876537/kataggelia-gia-ton-mitropoliti-kozanis-eipe-eisai-san-koritsi-min-se-xanado-etsi-se-11hrono-epeidi-eihe-makria-mallia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1876561/metro-mehri-simera-oi-kukloforiakes-ruthmiseis-sti-grammi-3-logo-ergasion-poioi-stathmoi-tha-kleisoun-noritera/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1876559/aurio-o-agiasmos-sta-sholeia-ti-allazei-me-ti-nea-hronia-i-adeia-gia-tous-goneis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T05:17:08.610514+00:00"
+      "seen_at_utc": "2026-09-10T05:51:16.082818+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464119/giati-to-epaggelma-toy-ekpaideytikoy-den-einai-pia-elkystiko-kenes-oi-mises-theseis-mathimatikon/",
-      "title": "Γιατί το επάγγελμα του εκπαιδευτικού δεν είναι πια ελκυστικό – Κενές οι μισές θέσεις μαθηματικών",
-      "normalized_title": "ΓΙΑΤΙ ΤΟ ΕΠΑΓΓΕΛΜΑ ΤΟΥ ΕΚΠΑΙΔΕΥΤΙΚΟΥ ΔΕΝ ΕΙΝΑΙ ΠΙΑ ΕΛΚΥΣΤΙΚΟ – ΚΕΝΕΣ ΟΙ ΜΙΣΕΣ ΘΕΣΕΙΣ ΜΑΘΗΜΑΤΙΚΩΝ",
+      "url": "https://www.efsyn.gr/tehnes/1464105/oi-tainies-tis-evdomadas-hope-i-nea-tainia-toy-na-hongk-tzin/",
+      "title": "Οι ταινίες της εβδομάδας: Hope, η νέα ταινία του Να Χονγκ-τζιν",
+      "normalized_title": "ΟΙ ΤΑΙΝΙΕΣ ΤΗΣ ΕΒΔΟΜΑΔΑΣ: HOPE, Η ΝΕΑ ΤΑΙΝΙΑ ΤΟΥ ΝΑ ΧΟΝΓΚ-ΤΖΙΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464119/giati-to-epaggelma-toy-ekpaideytikoy-den-einai-pia-elkystiko-kenes-oi-mises-theseis-mathimatikon/"
+        "https://www.efsyn.gr/tehnes/1464105/oi-tainies-tis-evdomadas-hope-i-nea-tainia-toy-na-hongk-tzin/",
+        "https://www.efsyn.gr/athlitismos/1464135/o-panathinaikos-den-thelei-ena-pisogyrisma/",
+        "https://www.efsyn.gr/ellada/1464133/kraoynakis-gia-mazonaki-milagame-prin-dyo-meres-gelagame-san-paidia/",
+        "https://www.efsyn.gr/oikonomia/1464089/omilos-fourlis-ta-epomena-shedia-gia-ikea-intersport-kai-foot-locker/"
       ],
-      "seen_at_utc": "2026-09-10T05:29:55.078309+00:00"
+      "seen_at_utc": "2026-09-10T05:51:16.082775+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/10/editorial/oi-ekloges-tha-krithoun-kai-os-pros-to-ean-tha-dothoun-eggyiseis-gia-ena-neo-yfos-kai-ithos-diakyvernisis/",
-      "title": "Οι εκλογές θα κριθούν και ως προς το εάν θα δοθούν εγγυήσεις για ένα νέο ύφος και ήθος διακυβέρνησης",
-      "normalized_title": "ΟΙ ΕΚΛΟΓΕΣ ΘΑ ΚΡΙΘΟΥΝ ΚΑΙ ΩΣ ΠΡΟΣ ΤΟ ΕΑΝ ΘΑ ΔΟΘΟΥΝ ΕΓΓΥΗΣΕΙΣ ΓΙΑ ΕΝΑ ΝΕΟ ΥΦΟΣ ΚΑΙ ΗΘΟΣ ΔΙΑΚΥΒΕΡΝΗΣΗΣ",
+      "url": "https://www.in.gr/2026/09/10/greece/patoulis-gia-mazonaki-i-kliniki-eixe-adeia-pathologikou-iatreiou-den-mporouse-na-ginei-plasmafairesi/",
+      "title": "Πατούλης για Μαζωνάκη: Η κλινική είχε άδεια παθολογικού ιατρείου, δεν μπορούσε να γίνει πλασμαφαίρεση",
+      "normalized_title": "ΠΑΤΟΥΛΗΣ ΓΙΑ ΜΑΖΩΝΑΚΗ: Η ΚΛΙΝΙΚΗ ΕΙΧΕ ΑΔΕΙΑ ΠΑΘΟΛΟΓΙΚΟΥ ΙΑΤΡΕΙΟΥ, ΔΕΝ ΜΠΟΡΟΥΣΕ ΝΑ ΓΙΝΕΙ ΠΛΑΣΜΑΦΑΙΡΕΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/10/editorial/oi-ekloges-tha-krithoun-kai-os-pros-to-ean-tha-dothoun-eggyiseis-gia-ena-neo-yfos-kai-ithos-diakyvernisis/",
+        "https://www.in.gr/2026/09/10/greece/patoulis-gia-mazonaki-i-kliniki-eixe-adeia-pathologikou-iatreiou-den-mporouse-na-ginei-plasmafairesi/",
+        "https://www.in.gr/2026/09/10/go-fun/fizz/giorgos-mazonakis-oi-kalokairines-anartiseis-i-synaylia-pou-perimene/",
+        "https://www.in.gr/2026/09/10/sports/football/champions-league/ksespasma-koke-afiste-ton-alvares-isyxo-oloi-eimaste-kourasmenoi-apo-ayto/",
         "https://www.in.gr/2026/09/10/greece/kriti-diasosi-49-metanaston-stous-kalous-limenes-i-lemvos-tous-entopistike-apo-drone-tis-frontex/",
-        "https://www.in.gr/2026/09/10/life/culture-live/syrano-o-vasilis-xaralampopoulos-epistrefei-m-enan-rolo-stathmo/",
-        "https://www.in.gr/2026/09/10/greece/giorgos-mazonakis-se-ekseliksi-i-ereyna-gia-tis-synthikes-thanatou-tou-sto-mikroskopio-i-kliniki-sto-kolonaki/",
-        "https://www.in.gr/2026/09/10/world/oxaio-dikigoros-evgale-oplo-gia-na-skotosei-tin-proin-syzygo-tou-ton-stamatise-servitoros/",
-        "https://www.in.gr/2026/09/10/go-fun/fizz/nikos-oikonomopoulos-anavalei-tin-apopsini-synaylia-tou-meta-tin-eidisi-thanatou-tou-mazonaki/"
+        "https://www.in.gr/2026/09/10/sports/basketball/euroleague/to-nba-eksetazei-tin-eksagora-tis-euroleague/"
       ],
-      "seen_at_utc": "2026-09-10T05:17:08.610426+00:00"
+      "seen_at_utc": "2026-09-10T05:51:16.082736+00:00"
     }
   },
-  "updated_at_utc": "2026-09-10T05:29:55.078387+00:00"
+  "updated_at_utc": "2026-09-10T05:51:16.082888+00:00"
 }
