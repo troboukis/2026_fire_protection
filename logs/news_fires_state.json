@@ -1,16 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564451306/to-choma-kanei-kalo-stin-ygeia/",
-      "title": "Το χώμα κάνει καλό στην υγεία",
-      "normalized_title": "ΤΟ ΧΩΜΑ ΚΑΝΕΙ ΚΑΛΟ ΣΤΗΝ ΥΓΕΙΑ",
+      "url": "https://www.kathimerini.gr/world/564452707/oykrania-6-1-dis-apo-tin-e-e-gia-tin-amyna-agonas-dromoy-gia-toys-patriot/",
+      "title": "Ουκρανία: 6,1 δισ. από την Ε.Ε. για την άμυνα – Αγώνας δρόμου για τους Patriot",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: 6,1 ΔΙΣ. ΑΠΟ ΤΗΝ Ε.Ε. ΓΙΑ ΤΗΝ ΑΜΥΝΑ – ΑΓΩΝΑΣ ΔΡΟΜΟΥ ΓΙΑ ΤΟΥΣ PATRIOT",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564451306/to-choma-kanei-kalo-stin-ygeia/",
-        "https://www.kathimerini.gr/society/564452689/pyrkagia-se-dasiki-ektasi-sto-aliveri-eyvoias-exi-aeroskafi-kai-dyo-elikoptera-sti-machi/",
-        "https://www.kathimerini.gr/society/564452686/vari-synelifthi-19chronos-poy-ekane-soyzes/",
-        "https://www.kathimerini.gr/world/564452401/yemeni-giati-i-katalipsi-tis-mocha-apotelei-stratigiko-pleonektima-gia-toys-choythi/"
+        "https://www.kathimerini.gr/world/564452707/oykrania-6-1-dis-apo-tin-e-e-gia-tin-amyna-agonas-dromoy-gia-toys-patriot/",
+        "https://www.kathimerini.gr/world/564452713/yemeni-toylachiston-46-000-ektopismenoi-apo-tis-sygkroyseis-sto-notiodytika/",
+        "https://www.kathimerini.gr/culture/agenda/564452692/exodos-stin-athina-tin-paraskeyi-11-9-kai-to-savvato-12-9-massano-kai-oliver-ho/"
       ],
-      "seen_at_utc": "2026-09-11T11:30:12.181030+00:00"
+      "seen_at_utc": "2026-09-11T11:52:05.335202+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,35 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877294/elliniki-aimatologiki-etaireia-kindunoi-apo-mi-tekmiriomenes-therapeies-ti-anaferei-gia-tin-plasmafairesi/?utm_source=rss",
-      "title": "Ελληνική Αιματολογική Εταιρεία: Κίνδυνοι από μη τεκμηριωμένες θεραπείες, τι αναφέρει για την πλασμαφαίρεση",
-      "normalized_title": "ΕΛΛΗΝΙΚΗ ΑΙΜΑΤΟΛΟΓΙΚΗ ΕΤΑΙΡΕΙΑ: ΚΙΝΔΥΝΟΙ ΑΠΟ ΜΗ ΤΕΚΜΗΡΙΩΜΕΝΕΣ ΘΕΡΑΠΕΙΕΣ, ΤΙ ΑΝΑΦΕΡΕΙ ΓΙΑ ΤΗΝ ΠΛΑΣΜΑΦΑΙΡΕΣΗ",
+      "url": "https://www.protothema.gr/greece/article/1877310/fotia-se-dasiki-ektasi-stin-euvoia-ihise-112-gia-etoimotita/?utm_source=rss",
+      "title": "Φωτιά σε δασική έκταση στην Εύβοια, ήχησε 112 για ετοιμότητα",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΕΥΒΟΙΑ, ΗΧΗΣΕ 112 ΓΙΑ ΕΤΟΙΜΟΤΗΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877294/elliniki-aimatologiki-etaireia-kindunoi-apo-mi-tekmiriomenes-therapeies-ti-anaferei-gia-tin-plasmafairesi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877310/fotia-se-dasiki-ektasi-stin-euvoia-ihise-112-gia-etoimotita/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T11:30:12.181151+00:00"
+      "seen_at_utc": "2026-09-11T11:52:05.335319+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1465117/provlepoyn-dyskolo-kai-akrivo-heimona-se-trofima-kai-energeia/",
-      "title": "Προβλέπουν δύσκολο και ακριβό χειμώνα σε τρόφιμα και ενέργεια",
-      "normalized_title": "ΠΡΟΒΛΕΠΟΥΝ ΔΥΣΚΟΛΟ ΚΑΙ ΑΚΡΙΒΟ ΧΕΙΜΩΝΑ ΣΕ ΤΡΟΦΙΜΑ ΚΑΙ ΕΝΕΡΓΕΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1465130/synantisi-mitsotaki-me-ton-dieythynti-tis-unesco-ta-glypta-toy-parthenona-kai-o-olympos-stin-atzenta/",
+      "title": "Συνάντηση Μητσοτάκη με τον Διευθυντή της UNESCO: Τα Γλυπτά του Παρθενώνα και ο Όλυμπος στην ατζέντα",
+      "normalized_title": "ΣΥΝΑΝΤΗΣΗ ΜΗΤΣΟΤΑΚΗ ΜΕ ΤΟΝ ΔΙΕΥΘΥΝΤΗ ΤΗΣ UNESCO: ΤΑ ΓΛΥΠΤΑ ΤΟΥ ΠΑΡΘΕΝΩΝΑ ΚΑΙ Ο ΟΛΥΜΠΟΣ ΣΤΗΝ ΑΤΖΕΝΤΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1465117/provlepoyn-dyskolo-kai-akrivo-heimona-se-trofima-kai-energeia/",
-        "https://www.efsyn.gr/politiki/1465113/tsoykalas-gia-epidoma-anergias-o-marinakis-apokalypse-tin-kryfi-atzenta-tis-neas-dimokratias/",
-        "https://www.efsyn.gr/ellada/1465106/elliniki-aimatologiki-etaireia-oi-kindynoi-tis-plasmafairesis-kai-ton-enallaktikon-therapeion/"
+        "https://www.efsyn.gr/politiki/1465130/synantisi-mitsotaki-me-ton-dieythynti-tis-unesco-ta-glypta-toy-parthenona-kai-o-olympos-stin-atzenta/",
+        "https://www.efsyn.gr/ellada/1465131/fotia-ston-palaiokipo-lesvoy-ihise-to-112/",
+        "https://www.efsyn.gr/ellada/1465123/hios-horis-sholika-dromologia-209-mathites/",
+        "https://www.efsyn.gr/politiki/1465122/prasinoi-oikologia-sti-deth-i-oikologia-frontizei-gia-tin-tsepi-mas-fthinoteri-zoi-asfalis-hora-katharo-mellon/"
       ],
-      "seen_at_utc": "2026-09-11T11:30:12.181112+00:00"
+      "seen_at_utc": "2026-09-11T11:52:05.335296+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/greece/zakynthos-kleinei-sxoleio-logo-epithesis-psyllon-kata-tin-ora-tou-agiasmou/",
-      "title": "Κλείνει σχολείο λόγω επίθεσης... ψύλλων κατά την ώρα του αγιασμού",
-      "normalized_title": "ΚΛΕΙΝΕΙ ΣΧΟΛΕΙΟ ΛΟΓΩ ΕΠΙΘΕΣΗΣ... ΨΥΛΛΩΝ ΚΑΤΑ ΤΗΝ ΩΡΑ ΤΟΥ ΑΓΙΑΣΜΟΥ",
+      "url": "https://www.in.gr/2026/09/11/politics/koutentakis-i-xora-xreiazetai-stratigiki-kai-oxi-eyxes-kai-metafysikes-provlepseis/",
+      "title": "Κουτεντάκης: Η χώρα χρειάζεται στρατηγική και όχι ευχές και «μεταφυσικές προβλέψεις»",
+      "normalized_title": "ΚΟΥΤΕΝΤΑΚΗΣ: Η ΧΩΡΑ ΧΡΕΙΑΖΕΤΑΙ ΣΤΡΑΤΗΓΙΚΗ ΚΑΙ ΟΧΙ ΕΥΧΕΣ ΚΑΙ «ΜΕΤΑΦΥΣΙΚΕΣ ΠΡΟΒΛΕΨΕΙΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/greece/zakynthos-kleinei-sxoleio-logo-epithesis-psyllon-kata-tin-ora-tou-agiasmou/",
-        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-kynikos-kai-koinonika-analgitos-o-paylos-marinakis-ti-mas-epifylassei-mia-triti-thiteia-mitsotaki/"
+        "https://www.in.gr/2026/09/11/politics/koutentakis-i-xora-xreiazetai-stratigiki-kai-oxi-eyxes-kai-metafysikes-provlepseis/",
+        "https://www.in.gr/2026/09/11/greece/fotia-stin-eyvoia-sikothikan-8-enaeria-ixise-to-112/",
+        "https://www.in.gr/2026/09/11/greece/kriti-synagermos-gia-fotia-sta-xania-sikothike-ena-elikoptero/",
+        "https://www.in.gr/2026/09/11/greece/mytilini-nekros-andras-pou-epese-sto-keno-eno-ekane-ergasies-sto-spiti-tou/",
+        "https://www.in.gr/2026/09/11/sports/basketball/to-vinteo-tis-kae-olympiakos-apo-tin-proponisi-stin-kypro-vid/"
       ],
-      "seen_at_utc": "2026-09-11T11:30:12.181081+00:00"
+      "seen_at_utc": "2026-09-11T11:52:05.335259+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T11:30:12.181225+00:00"
+  "updated_at_utc": "2026-09-11T11:52:05.335415+00:00"
 }
