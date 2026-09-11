@@ -2562,3 +2562,9 @@ run_started_at_utc,reference_number,organization_value,title,status,inserted_row
 2026-09-11T04:05:39.288881+00:00,26SYMV019762627,,ΕΡΓΑΣΙΑ ΕΝΙΣΧΥΣΗΣ ΠΥΡΟΠΡΟΣΤΑΣΙΑΣ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ - ΣΥΜΠΛΗΡΩΜΑΤΙΚΕΣ,success,1,
 2026-09-11T04:05:39.288881+00:00,26SYMV019762997,ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ,Προμήθεια εξοπλισμού πυρανίχνευσης για την κάλυψη των αναγκών Πυροπροστασίας Διοίκησης ΔΥΠΑ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
 2026-09-11T04:05:39.288881+00:00,26SYMV019764257,ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,ΣΥΜΒΑΣΗ,success,2,
+2026-09-11T06:06:00.999305+00:00,26SYMV019755624,ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,Σύμβαση Πυροσβεστικών 109 ΛΜΕΘ,no_findings,0,
+2026-09-11T06:06:00.999305+00:00,26SYMV019760381,ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΕΩΣ ΚΑΙ ΑΠΟΧΕΤΕΥΣΕΩΣ ΧΑΛΚΙΔΟΣ,ΣΥΜΦΩΝΗΤΙΚΟ 6148/10-9-2026,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-11T06:06:00.999305+00:00,26SYMV019760519,ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,ΑΓΟΡΑ ΥΛΙΚΩΝ ΓΙΑ ΤΗΝ ΠΥΡΟΠΡΟΣΤΑΣΙΑ 2 ΣΤΡΑΤΟΠΕΔΩΝ ΤΗΣ 387 ΠΑΠ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-11T06:06:00.999305+00:00,26SYMV019761783,,Σύμβαση για την προμήθεια δεξαμενών για τις ανάγκες πολιτικής προστασίας,no_findings,0,
+2026-09-11T06:06:00.999305+00:00,26SYMV019762283,,ΑΠΟΚΛΑΔΩΣΗ ΔΑΣΙΚΟΥ ΟΔΙΚΟΥ ΔΙΚΤΥΟΥ ΣΤΗ ΔΚ ΔΡΥΜΑΙΑΣ & ΔΚ ΞΥΛΙΚΩΝ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
+2026-09-11T06:06:00.999305+00:00,26SYMV019762997,ΔΗΜΟΣΙΑ ΥΠΗΡΕΣΙΑ ΑΠΑΣΧΟΛΗΣΗΣ,Προμήθεια εξοπλισμού πυρανίχνευσης για την κάλυψη των αναγκών Πυροπροστασίας Διοίκησης ΔΥΠΑ,error,0,"HTTPSConnectionPool(host='cerpp.eprocurement.gov.gr', port=443): Read timed out. (read timeout=60)"
