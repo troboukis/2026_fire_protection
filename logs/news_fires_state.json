@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/health/564453319/anoia-ena-proimo-simadi-mporei-na-kryvetai-sti-foni/",
-      "title": "Ανοια: Eνα πρώιμο σημάδι μπορεί να κρύβεται στη φωνή",
-      "normalized_title": "ΑΝΟΙΑ: EΝΑ ΠΡΩΙΜΟ ΣΗΜΑΔΙ ΜΠΟΡΕΙ ΝΑ ΚΡΥΒΕΤΑΙ ΣΤΗ ΦΩΝΗ",
+      "url": "https://www.kathimerini.gr/culture/564454141/selin-ntion-i-megali-epistrofi-sti-skini-meta-apo-exi-chronia/",
+      "title": "Σελίν Ντιόν: Η μεγάλη επιστροφή στη σκηνή μετά από έξι χρόνια",
+      "normalized_title": "ΣΕΛΙΝ ΝΤΙΟΝ: Η ΜΕΓΑΛΗ ΕΠΙΣΤΡΟΦΗ ΣΤΗ ΣΚΗΝΗ ΜΕΤΑ ΑΠΟ ΕΞΙ ΧΡΟΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/health/564453319/anoia-ena-proimo-simadi-mporei-na-kryvetai-sti-foni/"
+        "https://www.kathimerini.gr/culture/564454141/selin-ntion-i-megali-epistrofi-sti-skini-meta-apo-exi-chronia/",
+        "https://www.kathimerini.gr/world/564454150/ipa-i-cia-apocharaktirise-aporrita-eggrafa-gia-tin-al-kainta/"
       ],
-      "seen_at_utc": "2026-09-11T19:30:02.860176+00:00"
+      "seen_at_utc": "2026-09-11T19:51:15.701808+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1269,27 @@
       "seen_at_utc": "2026-09-11T19:30:02.860253+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465403/sok-sti-vretania-52hronos-omologise-oti-entharryne-sexoyalikes-ypotheseis-enantion-anaisthiton-gynaikon/",
-      "title": "Σοκ στη Βρετανία: 52χρονος ομολόγησε ότι ενθάρρυνε σεξουαλικές υποθέσεις εναντίον αναίσθητων γυναικών",
-      "normalized_title": "ΣΟΚ ΣΤΗ ΒΡΕΤΑΝΙΑ: 52ΧΡΟΝΟΣ ΟΜΟΛΟΓΗΣΕ ΟΤΙ ΕΝΘΑΡΡΥΝΕ ΣΕΞΟΥΑΛΙΚΕΣ ΥΠΟΘΕΣΕΙΣ ΕΝΑΝΤΙΟΝ ΑΝΑΙΣΘΗΤΩΝ ΓΥΝΑΙΚΩΝ",
+      "url": "https://www.efsyn.gr/athlitismos/1465410/entyposiaki-i-premiera-toy-panathinaikoy-kontra-stin-aek/",
+      "title": "Εντυπωσιακή η πρεμιέρα του Παναθηναϊκού κόντρα στην ΑΕΚ",
+      "normalized_title": "ΕΝΤΥΠΩΣΙΑΚΗ Η ΠΡΕΜΙΕΡΑ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΚΟΝΤΡΑ ΣΤΗΝ ΑΕΚ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465403/sok-sti-vretania-52hronos-omologise-oti-entharryne-sexoyalikes-ypotheseis-enantion-anaisthiton-gynaikon/"
+        "https://www.efsyn.gr/athlitismos/1465410/entyposiaki-i-premiera-toy-panathinaikoy-kontra-stin-aek/",
+        "https://www.efsyn.gr/kosmos/1465402/saoydiki-aravia-diakoptei-ti-leitoyrgia-krisimoy-petrelaioagogoy-aitia-oi-epitheseis-ton-hoythi/",
+        "https://www.efsyn.gr/kosmos/1465405/megali-epiheirisi-tis-europol-gia-diktyo-emporias-paranomoy-kreatos-estelnan-se-sfageia-hiliades-aloga-koyrsas/"
       ],
-      "seen_at_utc": "2026-09-11T19:30:02.860231+00:00"
+      "seen_at_utc": "2026-09-11T19:51:15.701896+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/sports/othersports/to-veligradi-ginetai-ksana-i-eyropaiki-proteyousa-tou-polo/",
-      "title": "Το Βελιγράδι γίνεται ξανά η ευρωπαϊκή πρωτεύουσα του πόλο",
-      "normalized_title": "ΤΟ ΒΕΛΙΓΡΑΔΙ ΓΙΝΕΤΑΙ ΞΑΝΑ Η ΕΥΡΩΠΑΙΚΗ ΠΡΩΤΕΥΟΥΣΑ ΤΟΥ ΠΟΛΟ",
+      "url": "https://www.in.gr/2026/09/11/greece/oi-4-antifaseis-ton-giatron-tou-giorgou-mazonaki-kai-osa-eginan-sto-iatreio-meta-tin-anakopi-tou-tragoudisti/",
+      "title": "Οι 4 αντιφάσεις των γιατρών του Γιώργου Μαζωνάκη και όσα έγιναν στο ιατρείο μετά την ανακοπή του τραγουδιστή",
+      "normalized_title": "ΟΙ 4 ΑΝΤΙΦΑΣΕΙΣ ΤΩΝ ΓΙΑΤΡΩΝ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ ΚΑΙ ΟΣΑ ΕΓΙΝΑΝ ΣΤΟ ΙΑΤΡΕΙΟ ΜΕΤΑ ΤΗΝ ΑΝΑΚΟΠΗ ΤΟΥ ΤΡΑΓΟΥΔΙΣΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/sports/othersports/to-veligradi-ginetai-ksana-i-eyropaiki-proteyousa-tou-polo/",
-        "https://www.in.gr/2026/09/11/world/ekleise-o-agogos-anatolis-dysis-sti-saoudiki-aravia-eksaitias-xtypimaton-pliris-katastrofi-egkatastaseon/"
+        "https://www.in.gr/2026/09/11/greece/oi-4-antifaseis-ton-giatron-tou-giorgou-mazonaki-kai-osa-eginan-sto-iatreio-meta-tin-anakopi-tou-tragoudisti/",
+        "https://www.in.gr/2026/09/11/sports/basketball/omprantovits-yparxoun-polla-pragmata-pou-prepei-na-diorthosoume/",
+        "https://www.in.gr/2026/09/11/life/music/i-foni-tis-ntoli-parton-akougetai-ksana-to-proto-tragoudi-pou-kykloforei-meta-ton-thanato-tis/"
       ],
-      "seen_at_utc": "2026-09-11T19:30:02.860204+00:00"
+      "seen_at_utc": "2026-09-11T19:51:15.701864+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T19:30:02.860323+00:00"
+  "updated_at_utc": "2026-09-11T19:51:15.701965+00:00"
 }
