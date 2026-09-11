@@ -1,21 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564451660/poy-dimioyrgoyntai-nees-monades-agogoi-kai-ypodomes-gia-fysiko-aerio/",
-      "title": "Πού δημιουργούνται νέες μονάδες, αγωγοί και υποδομές για φυσικό αέριο",
-      "normalized_title": "ΠΟΥ ΔΗΜΙΟΥΡΓΟΥΝΤΑΙ ΝΕΕΣ ΜΟΝΑΔΕΣ, ΑΓΩΓΟΙ ΚΑΙ ΥΠΟΔΟΜΕΣ ΓΙΑ ΦΥΣΙΚΟ ΑΕΡΙΟ",
+      "url": "https://www.kathimerini.gr/economy/business/564451633/sta-spata-to-proto-parko-viotechnologias-sti-na-eyropi/",
+      "title": "Στα Σπάτα το πρώτο πάρκο βιοτεχνολογίας στη ΝΑ Ευρώπη",
+      "normalized_title": "ΣΤΑ ΣΠΑΤΑ ΤΟ ΠΡΩΤΟ ΠΑΡΚΟ ΒΙΟΤΕΧΝΟΛΟΓΙΑΣ ΣΤΗ ΝΑ ΕΥΡΩΠΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564451660/poy-dimioyrgoyntai-nees-monades-agogoi-kai-ypodomes-gia-fysiko-aerio/",
-        "https://www.kathimerini.gr/culture/564426016/ta-kalokairia-myrizan-kapno/",
-        "https://www.kathimerini.gr/economy/business/564451621/h-fourlis-mpainei-stin-agora-farmakeion-meso-tis-drp-group/",
-        "https://www.kathimerini.gr/society/564451891/thessaloniki-24ori-leitoyrgia-sto-metro-logo-deth/",
-        "https://www.kathimerini.gr/k/sunday-edition/564451894/to-proto-koydoyni-i-savina-giannatoy-kai-ta-metalleia-tis-serifoy-sto-periodiko-k-tin-kyriaki-13-9-me-tin-kathimerini/",
-        "https://www.kathimerini.gr/world/564451843/axios-o-tramp-aperripse-aitima-toy-mpin-salman-gia-epitheseis-kata-ton-choythi/",
-        "https://www.kathimerini.gr/columns/564450991/to-deal-toy-15-to-chakarisma-ton-2-5-ekat-afm-to-proto-parko-biotech-kai-poio-ochyro-epese/",
-        "https://www.kathimerini.gr/opinion/564451342/mitsotakis-i-ntoy/",
-        "https://www.kathimerini.gr/world/564451882/aitima-apofylakisis-gia-logoys-ygeias-katethese-i-syzygos-toy-nikolas-madoyro/"
+        "https://www.kathimerini.gr/economy/business/564451633/sta-spata-to-proto-parko-viotechnologias-sti-na-eyropi/",
+        "https://www.kathimerini.gr/world/564451915/stena-toy-ormoyz-monopsifios-o-arithmos-ton-dieleyseon-ploion/",
+        "https://www.kathimerini.gr/economy/business/564451618/meiosi-esodon-ayxisi-kerdon-sto-proto-6mino-gia-tin-briq-properties/"
       ],
-      "seen_at_utc": "2026-09-11T05:51:26.667001+00:00"
+      "seen_at_utc": "2026-09-11T06:17:04.506145+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,35 +1261,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877113/thessaloniki-se-24ori-leitourgia-to-metro-gia-ti-deth-poies-imeres-ishuei-to-metro/?utm_source=rss",
-      "title": "Θεσσαλονίκη: Σε 24ωρη λειτουργία το Μετρό για τη ΔΕΘ, ποιες ημέρες ισχύει το μέτρο",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΕ 24ΩΡΗ ΛΕΙΤΟΥΡΓΙΑ ΤΟ ΜΕΤΡΟ ΓΙΑ ΤΗ ΔΕΘ, ΠΟΙΕΣ ΗΜΕΡΕΣ ΙΣΧΥΕΙ ΤΟ ΜΕΤΡΟ",
+      "url": "https://www.protothema.gr/greece/article/1877128/video-austiroi-eleghoi-tis-trohaias-attikis-prin-apo-tin-proti-diadromi-ton-mathiton-gia-fetos-ti-exetazoun/?utm_source=rss",
+      "title": "Βίντεο: Αυστηροί έλεγχοι της Τροχαίας Αττικής πριν από την πρώτη διαδρομή των μαθητών για φέτος, τι εξετάζουν",
+      "normalized_title": "ΒΙΝΤΕΟ: ΑΥΣΤΗΡΟΙ ΕΛΕΓΧΟΙ ΤΗΣ ΤΡΟΧΑΙΑΣ ΑΤΤΙΚΗΣ ΠΡΙΝ ΑΠΟ ΤΗΝ ΠΡΩΤΗ ΔΙΑΔΡΟΜΗ ΤΩΝ ΜΑΘΗΤΩΝ ΓΙΑ ΦΕΤΟΣ, ΤΙ ΕΞΕΤΑΖΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877113/thessaloniki-se-24ori-leitourgia-to-metro-gia-ti-deth-poies-imeres-ishuei-to-metro/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877112/apokalupsi-stin-ellada-ta-krufa-radar-pou-den-xerei-oute-to-waze-ta-saronoun-ola/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877109/live-i-kinisi-tora-stous-dromous-botiliarisma-se-kifiso-kai-leoforo-athinon-20leptes-kathusteriseis-stin-attiki-odo/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877128/video-austiroi-eleghoi-tis-trohaias-attikis-prin-apo-tin-proti-diadromi-ton-mathiton-gia-fetos-ti-exetazoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877127/subloki-pede-atomon-stin-patra-traumatistikan-tria-atoma/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877123/thanatos-mazonaki-oi-katatheseis-eidikon-stin-elas-gia-plasmafairesi-simera-ston-eisaggelea-oi-giatroi-tis-klinikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877121/apo-ton-omiro-mehri-to-aperado-galazio-i-le-figaro-apokaluptei-ti-diaforetiki-io/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877120/proslipseis-stin-purosvestiki-ligei-simera-i-prothesmia-ti-prepei-na-elegxete-stin-aitisi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T05:51:26.667155+00:00"
+      "seen_at_utc": "2026-09-11T06:17:04.506298+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1464876/i-algeria-diakoptei-tis-diplomatikes-sheseis-tis-me-ta-emirata-to-hroniko-toy-epeisodioy/",
-      "title": "Η Αλγερία διακόπτει τις διπλωματικές σχέσεις της με τα Εμιράτα – Το χρονικό του επεισοδίου",
-      "normalized_title": "Η ΑΛΓΕΡΙΑ ΔΙΑΚΟΠΤΕΙ ΤΙΣ ΔΙΠΛΩΜΑΤΙΚΕΣ ΣΧΕΣΕΙΣ ΤΗΣ ΜΕ ΤΑ ΕΜΙΡΑΤΑ – ΤΟ ΧΡΟΝΙΚΟ ΤΟΥ ΕΠΕΙΣΟΔΙΟΥ",
+      "url": "https://www.efsyn.gr/politiki/1464893/se-rythmoys-deth-to-pasok-to-shedio-gia-tin-epomeni-imera-kai-i-epithesi-sto-systima-mitsotaki/",
+      "title": "Σε ρυθμούς ΔΕΘ το ΠΑΣΟΚ: Το σχέδιο για την «επόμενη ημέρα» και η επίθεση στο «σύστημα Μητσοτάκη»",
+      "normalized_title": "ΣΕ ΡΥΘΜΟΥΣ ΔΕΘ ΤΟ ΠΑΣΟΚ: ΤΟ ΣΧΕΔΙΟ ΓΙΑ ΤΗΝ «ΕΠΟΜΕΝΗ ΗΜΕΡΑ» ΚΑΙ Η ΕΠΙΘΕΣΗ ΣΤΟ «ΣΥΣΤΗΜΑ ΜΗΤΣΟΤΑΚΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1464876/i-algeria-diakoptei-tis-diplomatikes-sheseis-tis-me-ta-emirata-to-hroniko-toy-epeisodioy/"
+        "https://www.efsyn.gr/politiki/1464893/se-rythmoys-deth-to-pasok-to-shedio-gia-tin-epomeni-imera-kai-i-epithesi-sto-systima-mitsotaki/",
+        "https://www.efsyn.gr/tehnes/1464895/synaylia-remoy-sti-thessaloniki-prosfeygei-sti-dikaiosyni-i-oikogeneia-toy-glypti-toy-megaloy-alexandroy/",
+        "https://www.efsyn.gr/ellada/1464872/kavgas-metaxy-odigon-stin-petroy-ralli-katelixe-se-agria-katadioxi-enas-traymatias-pente-prosagoges/",
+        "https://www.efsyn.gr/ellada/1464875/i-ekklisia-den-tha-timisei-ton-amvrosio-giati-prosvlithike/",
+        "https://www.efsyn.gr/ellada/1464885/ston-aera-hiliades-mathites-me-anapiria-strefontai-stin-idiotiki-agora-gia-ekpaideytikoys-parallilis-stirixis/"
       ],
-      "seen_at_utc": "2026-09-11T05:51:26.667112+00:00"
+      "seen_at_utc": "2026-09-11T06:17:04.506258+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/sports/football/champions-league/meksikanos-dimosiografos-rotise-ton-tzoli-gia-gkonsales-ta-stantar-einai-ypsila-kai-tha-yparxei-piesi/",
-      "title": "Μεξικανός δημοσιογράφος ρώτησε τον Τζόλη για Γκονσάλες: «Τα στάνταρ είναι υψηλά και θα υπάρχει πίεση»",
-      "normalized_title": "ΜΕΞΙΚΑΝΟΣ ΔΗΜΟΣΙΟΓΡΑΦΟΣ ΡΩΤΗΣΕ ΤΟΝ ΤΖΟΛΗ ΓΙΑ ΓΚΟΝΣΑΛΕΣ: «ΤΑ ΣΤΑΝΤΑΡ ΕΙΝΑΙ ΥΨΗΛΑ ΚΑΙ ΘΑ ΥΠΑΡΧΕΙ ΠΙΕΣΗ»",
+      "url": "https://www.in.gr/2026/09/11/sports/football/giovanovits-aytos-einai-o-stoxos-tis-ethnikis-omadas-sto-nations-league/",
+      "title": "Γιοβάνοβιτς: «Αυτός είναι ο στόχος της Εθνικής ομάδας στο Nations League»",
+      "normalized_title": "ΓΙΟΒΑΝΟΒΙΤΣ: «ΑΥΤΟΣ ΕΙΝΑΙ Ο ΣΤΟΧΟΣ ΤΗΣ ΕΘΝΙΚΗΣ ΟΜΑΔΑΣ ΣΤΟ NATIONS LEAGUE»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/sports/football/champions-league/meksikanos-dimosiografos-rotise-ton-tzoli-gia-gkonsales-ta-stantar-einai-ypsila-kai-tha-yparxei-piesi/",
-        "https://www.in.gr/2026/09/11/go-fun/fizz/duran-duran-ta-vretanika-taxydromeia-tous-timoun-tous-me-mia-syllektiki-seira-grammatosimon/"
+        "https://www.in.gr/2026/09/11/sports/football/giovanovits-aytos-einai-o-stoxos-tis-ethnikis-omadas-sto-nations-league/",
+        "https://www.in.gr/2026/09/11/world/pare-kosme-i-eksagora-psifon-giati-ta-5-000-dolaria-pou-yposxetai-o-tramp-mallon-den-tha-ta-dosei/",
+        "https://www.in.gr/2026/09/11/health/etaireia-anagennitikis-iatrikis-den-einai-egkekrimenes-oles-oi-therapeies-pou-diafimizontai/",
+        "https://www.in.gr/2026/09/11/go-fun/fizz/11i-septemvriou-o-skylos-odigos-enos-tyflou-andra-voithise-na-sothoun-katevainontas-78-orofous/",
+        "https://www.in.gr/2026/09/11/economy/oikonomikes-eidiseis/kleinei-prosorina-i-platforma-tou-opeka-gia-to-epidoma-paidiou-o-logos/",
+        "https://www.in.gr/2026/09/11/sports/basketball/euroleague/oi-athlitikes-metadoseis-11-9-pou-tha-deite-ton-olympiako-se-tournoua-stin-kypro-kai-ton-karali/",
+        "https://www.in.gr/2026/09/11/english-edition/greek-public-workers-demand-pay-raises/"
       ],
-      "seen_at_utc": "2026-09-11T05:51:26.667064+00:00"
+      "seen_at_utc": "2026-09-11T06:17:04.506222+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T05:51:26.667240+00:00"
+  "updated_at_utc": "2026-09-11T06:17:04.506389+00:00"
 }
