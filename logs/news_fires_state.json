@@ -1,18 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564452515/anthropic-oi-choythi-chrisimopoiisan-to-claude-gia-tin-anaptyxi-vallistikon-pyraylon/",
-      "title": "Anthropic: Οι Χούθι χρησιμοποίησαν το Claude για την ανάπτυξη βαλλιστικών πυραύλων",
-      "normalized_title": "ANTHROPIC: ΟΙ ΧΟΥΘΙ ΧΡΗΣΙΜΟΠΟΙΗΣΑΝ ΤΟ CLAUDE ΓΙΑ ΤΗΝ ΑΝΑΠΤΥΞΗ ΒΑΛΛΙΣΤΙΚΩΝ ΠΥΡΑΥΛΩΝ",
+      "url": "https://www.kathimerini.gr/world/564451297/monimi-katoikia-gia-chiliades-kalifornezoys-to-i-ch-toys/",
+      "title": "Μόνιμη κατοικία για χιλιάδες Καλιφορνέζους τo Ι.Χ. τους",
+      "normalized_title": "ΜΟΝΙΜΗ ΚΑΤΟΙΚΙΑ ΓΙΑ ΧΙΛΙΑΔΕΣ ΚΑΛΙΦΟΡΝΕΖΟΥΣ ΤO Ι.Χ. ΤΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564452515/anthropic-oi-choythi-chrisimopoiisan-to-claude-gia-tin-anaptyxi-vallistikon-pyraylon/",
-        "https://www.kathimerini.gr/economy/international/564451555/paizoyme-xana-me-ta-spirta/",
-        "https://www.kathimerini.gr/culture/564426232/poiimata-me-mystika/",
-        "https://www.kathimerini.gr/economy/local/564451591/oi-exagoges-reymatos-kostizoyn-akriva-stoys-ellines-katanalotes/",
-        "https://www.kathimerini.gr/world/564452539/volkswagen-sta-16-dis-eyro-to-kostos-gia-perikopes-theseon-kai-kleisimo-ergostasion/",
-        "https://www.kathimerini.gr/society/564452548/zakynthos-anestali-i-leitoyrgia-dimotikoy-scholeioy-logo-psyllon/"
+        "https://www.kathimerini.gr/world/564451297/monimi-katoikia-gia-chiliades-kalifornezoys-to-i-ch-toys/",
+        "https://www.kathimerini.gr/society/564452593/thanatos-mazonaki-i-oikogeneia-zita-anavathmisi-tis-katigorias-se-anthropoktonia-me-endechomeno-dolo/",
+        "https://www.kathimerini.gr/society/564452653/athoothikan-oi-dyo-vretanoi-poy-prokalesan-anagkastiki-prosgeiosi-aeroskafoys-sto-makedonia/",
+        "https://www.kathimerini.gr/k/sunday-edition/564442255/tin-kyriaki-13-9-me-tin-k-omiroy-odysseia-gastronomos-periodiko-k-kai-othoni/",
+        "https://www.kathimerini.gr/world/564452605/saoydiki-aravia-kapnos-konta-ston-agogo-petrelaioy-anatolis-dysis/",
+        "https://www.kathimerini.gr/economy/business/564451576/machi-trapezon-gia-tis-enallaktikes-ependyseis/",
+        "https://www.kathimerini.gr/world/564452632/ispania-tha-epiviosei-o-pedro-santseth-apo-tin-krisi-tis-theoyta/",
+        "https://www.kathimerini.gr/society/564452623/fotia-ston-palaiokipo-lesvoy-hchise-to-112/",
+        "https://www.kathimerini.gr/opinion/sketches/564452425/skitso-toy-dimitri-chantzopoyloy-10-09-26/",
+        "https://www.kathimerini.gr/opinion/sketches/564452413/skitso-toy-ilia-makri-11-09-26/",
+        "https://www.kathimerini.gr/society/564452596/mazonakis-dioxi-gia-thanatifora-ekthesi-kata-synaytoyrgia-sto-zeygari-giatron/"
       ],
-      "seen_at_utc": "2026-09-11T10:51:24.243275+00:00"
+      "seen_at_utc": "2026-09-11T11:17:32.701208+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,39 +1269,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877273/tragodia-sti-mutilini-nekros-andras-pou-epese-sto-keno-eno-ekane-ergasies-sto-spiti-tou/?utm_source=rss",
-      "title": "Τραγωδία στη Μυτιλήνη: Νεκρός άνδρας που έπεσε στο κενό ενώ έκανε εργασίες στο σπίτι του",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΜΥΤΙΛΗΝΗ: ΝΕΚΡΟΣ ΑΝΔΡΑΣ ΠΟΥ ΕΠΕΣΕ ΣΤΟ ΚΕΝΟ ΕΝΩ ΕΚΑΝΕ ΕΡΓΑΣΙΕΣ ΣΤΟ ΣΠΙΤΙ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1877289/athoothikan-vretanoi-sunelifthisan-anagastiki-prosgeiosi-aeroskafous-thessaloniki-zitousan-alkool-kai-den-tous-edinan/?utm_source=rss",
+      "title": "Αθωώθηκαν οι Βρετανοί που συνελήφθησαν μετά την αναγκαστική προσγείωση αεροσκάφους στη Θεσσαλονίκη: Ζητούσαν αλκοόλ και δεν τους έδιναν",
+      "normalized_title": "ΑΘΩΩΘΗΚΑΝ ΟΙ ΒΡΕΤΑΝΟΙ ΠΟΥ ΣΥΝΕΛΗΦΘΗΣΑΝ ΜΕΤΑ ΤΗΝ ΑΝΑΓΚΑΣΤΙΚΗ ΠΡΟΣΓΕΙΩΣΗ ΑΕΡΟΣΚΑΦΟΥΣ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: ΖΗΤΟΥΣΑΝ ΑΛΚΟΟΛ ΚΑΙ ΔΕΝ ΤΟΥΣ ΕΔΙΝΑΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877273/tragodia-sti-mutilini-nekros-andras-pou-epese-sto-keno-eno-ekane-ergasies-sto-spiti-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877271/kleinei-dimotiko-sholeio-sti-zakuntho-logo-psullon-mathites-kai-ekpaideutikoi-dehthikan-epithesi-kata-ton-agiasmo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877268/prostimo-700-euro-gia-adeia-kukloforias-poious-odigous-afora/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877289/athoothikan-vretanoi-sunelifthisan-anagastiki-prosgeiosi-aeroskafous-thessaloniki-zitousan-alkool-kai-den-tous-edinan/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877284/etoimazetai-o-megaluteros-pezodromos-tis-athinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877282/fotia-ston-palaiokipo-lesvou-ihise-to-112-gia-etoimotita/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877280/kakourgimatiki-dioxi-stous-duo-giatrous-gia-ton-thanato-tou-giorgou-mazonaki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877274/thanatos-mazonaki-aitima-gia-anavathmisi-tou-katigoritiriou-eis-varos-ton-giatron/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T10:51:24.243356+00:00"
+      "seen_at_utc": "2026-09-11T11:17:32.701415+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1465071/agrotes-agonas-gia-epiviosi-kai-paragogi/",
-      "title": "Αγρότες: Αγώνας για επιβίωση και παραγωγή",
-      "normalized_title": "ΑΓΡΟΤΕΣ: ΑΓΩΝΑΣ ΓΙΑ ΕΠΙΒΙΩΣΗ ΚΑΙ ΠΑΡΑΓΩΓΗ",
+      "url": "https://www.efsyn.gr/politiki/1465109/fotoniata-otan-ta-dis-anevokatevainoyn-kathe-mera-to-provlima-axiopistias-den-einai-diko-mas/",
+      "title": "Φωτονιάτα: Όταν τα δισ. ανεβοκατεβαίνουν κάθε μέρα, το πρόβλημα αξιοπιστίας δεν είναι δικό μας",
+      "normalized_title": "ΦΩΤΟΝΙΑΤΑ: ΟΤΑΝ ΤΑ ΔΙΣ. ΑΝΕΒΟΚΑΤΕΒΑΙΝΟΥΝ ΚΑΘΕ ΜΕΡΑ, ΤΟ ΠΡΟΒΛΗΜΑ ΑΞΙΟΠΙΣΤΙΑΣ ΔΕΝ ΕΙΝΑΙ ΔΙΚΟ ΜΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1465071/agrotes-agonas-gia-epiviosi-kai-paragogi/"
+        "https://www.efsyn.gr/politiki/1465109/fotoniata-otan-ta-dis-anevokatevainoyn-kathe-mera-to-provlima-axiopistias-den-einai-diko-mas/",
+        "https://www.efsyn.gr/ellada/1465085/giorgos-mazonakis-kakoyrgimatiki-dioxi-stoys-dyo-giatroys-gia-ton-thanato-toy/",
+        "https://www.efsyn.gr/ellada/1465070/mazonakis-o-dikigoros-tis-oikogeneias-zita-anavathmisi-tis-katigorias-se-anthropoktonia-me-endehomeno-dolo/"
       ],
-      "seen_at_utc": "2026-09-11T10:51:24.243337+00:00"
+      "seen_at_utc": "2026-09-11T11:17:32.701348+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/life/music/ixos-texnologia-fos-oi-grandbrothers-sto-f-hill-sessions/",
-      "title": "Ήχος, τεχνολογία, φως: Οι Grandbrothers στο Φ hill Sessions",
-      "normalized_title": "ΗΧΟΣ, ΤΕΧΝΟΛΟΓΙΑ, ΦΩΣ: ΟΙ GRANDBROTHERS ΣΤΟ Φ HILL SESSIONS",
+      "url": "https://www.in.gr/2026/09/11/go-fun/fizz/mixalis-kouinelis-i-apokalypsi-gia-to-teleytaio-tragoudi-tou-mazonaki-me-titlo-epiptoseis/",
+      "title": "Μιχάλης Κουϊνέλης: Η αποκάλυψη για το τελευταίο τραγούδι του Μαζωνάκη, με τίτλο «Επιπτώσεις»",
+      "normalized_title": "ΜΙΧΑΛΗΣ ΚΟΥΙΝΕΛΗΣ: Η ΑΠΟΚΑΛΥΨΗ ΓΙΑ ΤΟ ΤΕΛΕΥΤΑΙΟ ΤΡΑΓΟΥΔΙ ΤΟΥ ΜΑΖΩΝΑΚΗ, ΜΕ ΤΙΤΛΟ «ΕΠΙΠΤΩΣΕΙΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/life/music/ixos-texnologia-fos-oi-grandbrothers-sto-f-hill-sessions/",
-        "https://www.in.gr/2026/09/11/greece/ypsilos-kindynos-gia-fotia-to-savvato-deite-tis-perioxes-ston-xarti-provlepsis-tis-politikis-prostasias/",
-        "https://www.in.gr/2026/09/11/greece/fotia-sto-markopoulo-sikothikan-dyo-enaeria/",
-        "https://www.in.gr/2026/09/11/sports/basketball/euroleague/katas-simantika-test-me-dynatous-antipalous-opos-o-aris-kai-o-olympiakos/",
-        "https://www.in.gr/2026/09/11/politics/tsoukalas-an-o-kosmos-thelei-na-ittithei-i-nd-exei-mia-epilogi-to-pasok/",
-        "https://www.in.gr/2026/09/11/politics/aftodioikisi/dimos-larisaion-proeidopoiei-gia-apopeira-apatis-me-dithen-prostima-apo-tin-poleodomia/"
+        "https://www.in.gr/2026/09/11/go-fun/fizz/mixalis-kouinelis-i-apokalypsi-gia-to-teleytaio-tragoudi-tou-mazonaki-me-titlo-epiptoseis/",
+        "https://www.in.gr/2026/09/11/politics/aftodioikisi/synantisi-ton-grammateon-ton-epta-apokentromenon-dioikiseon-me-ton-ypourgo-esoterikon-thodori-livanio/",
+        "https://www.in.gr/2026/09/11/sports/basketball/euroleague/mpartzokas-otan-pigame-na-paroume-ton-montero-mpikan-omades-me-trela-xrimata-kai-leykes-epitages/",
+        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-kakourgimatiki-dioksi-gia-thanatifora-ekthesi-kata-synaytourgia-stous-dyo-giatrous/",
+        "https://www.in.gr/2026/09/11/world/oukrania-i-nea-protovoulia-tou-tramp-akomi-ki-an-itan-gnisia-exei-idi-kseperastei-apo-ta-gegonota/",
+        "https://www.in.gr/2026/09/11/politics/aftodioikisi/dromous-synergasias-gia-zitimata-koinonikis-allileggyis-kai-isotitas-ton-fylon-apo-ton-dimo-ioanniton/"
       ],
-      "seen_at_utc": "2026-09-11T10:51:24.243322+00:00"
+      "seen_at_utc": "2026-09-11T11:17:32.701294+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T10:51:24.243427+00:00"
+  "updated_at_utc": "2026-09-11T11:17:32.701524+00:00"
 }
