@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564454141/selin-ntion-i-megali-epistrofi-sti-skini-meta-apo-exi-chronia/",
-      "title": "Σελίν Ντιόν: Η μεγάλη επιστροφή στη σκηνή μετά από έξι χρόνια",
-      "normalized_title": "ΣΕΛΙΝ ΝΤΙΟΝ: Η ΜΕΓΑΛΗ ΕΠΙΣΤΡΟΦΗ ΣΤΗ ΣΚΗΝΗ ΜΕΤΑ ΑΠΟ ΕΞΙ ΧΡΟΝΙΑ",
+      "url": "https://www.kathimerini.gr/culture/tv/564453091/ntanta-tis-geitonias-xekinisan-ta-gyrismata-tis-neas-komikis-seiras-toy-mega/",
+      "title": "«Νταντά της Γειτονιάς»: Ξεκίνησαν τα γυρίσματα της νέας κωμικής σειράς του MEGA",
+      "normalized_title": "«ΝΤΑΝΤΑ ΤΗΣ ΓΕΙΤΟΝΙΑΣ»: ΞΕΚΙΝΗΣΑΝ ΤΑ ΓΥΡΙΣΜΑΤΑ ΤΗΣ ΝΕΑΣ ΚΩΜΙΚΗΣ ΣΕΙΡΑΣ ΤΟΥ MEGA",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564454141/selin-ntion-i-megali-epistrofi-sti-skini-meta-apo-exi-chronia/",
-        "https://www.kathimerini.gr/world/564454150/ipa-i-cia-apocharaktirise-aporrita-eggrafa-gia-tin-al-kainta/"
+        "https://www.kathimerini.gr/culture/tv/564453091/ntanta-tis-geitonias-xekinisan-ta-gyrismata-tis-neas-komikis-seiras-toy-mega/",
+        "https://www.kathimerini.gr/society/564452935/thessaloniki-kartes-dorean-metakiniseon-se-4-000-mathites/",
+        "https://www.kathimerini.gr/athletics/564454159/deyteros-sti-voydapesti-o-karalis/",
+        "https://www.kathimerini.gr/life/techniti-noimosyni/564454108/ipa-i-anthropic-katigorei-ta-iae-oti-chrisimopoiisan-ai-agents-enantion-empeirognomonon-toy-oie/"
       ],
-      "seen_at_utc": "2026-09-11T19:51:15.701808+00:00"
+      "seen_at_utc": "2026-09-11T20:17:03.182019+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1271,26 @@
       "seen_at_utc": "2026-09-11T19:30:02.860253+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1465410/entyposiaki-i-premiera-toy-panathinaikoy-kontra-stin-aek/",
-      "title": "Εντυπωσιακή η πρεμιέρα του Παναθηναϊκού κόντρα στην ΑΕΚ",
-      "normalized_title": "ΕΝΤΥΠΩΣΙΑΚΗ Η ΠΡΕΜΙΕΡΑ ΤΟΥ ΠΑΝΑΘΗΝΑΙΚΟΥ ΚΟΝΤΡΑ ΣΤΗΝ ΑΕΚ",
+      "url": "https://www.efsyn.gr/athlitismos/1465414/karalis-koitaxe-xana-sta-matia-ton-ntoyplantis-katektise-ti-deyteri-thesi-sto-ultimate-championship-vinteo/",
+      "title": "Καραλής: Κοίταξε ξανά στα μάτια τον Ντουπλάντις – Κατέκτησε τη δεύτερη θέση στο Ultimate Championship [βίντεο]",
+      "normalized_title": "ΚΑΡΑΛΗΣ: ΚΟΙΤΑΞΕ ΞΑΝΑ ΣΤΑ ΜΑΤΙΑ ΤΟΝ ΝΤΟΥΠΛΑΝΤΙΣ – ΚΑΤΕΚΤΗΣΕ ΤΗ ΔΕΥΤΕΡΗ ΘΕΣΗ ΣΤΟ ULTIMATE CHAMPIONSHIP [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1465410/entyposiaki-i-premiera-toy-panathinaikoy-kontra-stin-aek/",
-        "https://www.efsyn.gr/kosmos/1465402/saoydiki-aravia-diakoptei-ti-leitoyrgia-krisimoy-petrelaioagogoy-aitia-oi-epitheseis-ton-hoythi/",
-        "https://www.efsyn.gr/kosmos/1465405/megali-epiheirisi-tis-europol-gia-diktyo-emporias-paranomoy-kreatos-estelnan-se-sfageia-hiliades-aloga-koyrsas/"
+        "https://www.efsyn.gr/athlitismos/1465414/karalis-koitaxe-xana-sta-matia-ton-ntoyplantis-katektise-ti-deyteri-thesi-sto-ultimate-championship-vinteo/"
       ],
-      "seen_at_utc": "2026-09-11T19:51:15.701896+00:00"
+      "seen_at_utc": "2026-09-11T20:17:03.182095+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/greece/oi-4-antifaseis-ton-giatron-tou-giorgou-mazonaki-kai-osa-eginan-sto-iatreio-meta-tin-anakopi-tou-tragoudisti/",
-      "title": "Οι 4 αντιφάσεις των γιατρών του Γιώργου Μαζωνάκη και όσα έγιναν στο ιατρείο μετά την ανακοπή του τραγουδιστή",
-      "normalized_title": "ΟΙ 4 ΑΝΤΙΦΑΣΕΙΣ ΤΩΝ ΓΙΑΤΡΩΝ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ ΚΑΙ ΟΣΑ ΕΓΙΝΑΝ ΣΤΟ ΙΑΤΡΕΙΟ ΜΕΤΑ ΤΗΝ ΑΝΑΚΟΠΗ ΤΟΥ ΤΡΑΓΟΥΔΙΣΤΗ",
+      "url": "https://www.in.gr/2026/09/11/world/treno-me-200-epivainontes-ektroxiastike-sti-gallia-yparxoun-traymaties/",
+      "title": "Τρένο με 200 επιβαίνοντες εκτροχιάστηκε στη Γαλλία – Υπάρχουν τραυματίες",
+      "normalized_title": "ΤΡΕΝΟ ΜΕ 200 ΕΠΙΒΑΙΝΟΝΤΕΣ ΕΚΤΡΟΧΙΑΣΤΗΚΕ ΣΤΗ ΓΑΛΛΙΑ – ΥΠΑΡΧΟΥΝ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/greece/oi-4-antifaseis-ton-giatron-tou-giorgou-mazonaki-kai-osa-eginan-sto-iatreio-meta-tin-anakopi-tou-tragoudisti/",
-        "https://www.in.gr/2026/09/11/sports/basketball/omprantovits-yparxoun-polla-pragmata-pou-prepei-na-diorthosoume/",
-        "https://www.in.gr/2026/09/11/life/music/i-foni-tis-ntoli-parton-akougetai-ksana-to-proto-tragoudi-pou-kykloforei-meta-ton-thanato-tis/"
+        "https://www.in.gr/2026/09/11/world/treno-me-200-epivainontes-ektroxiastike-sti-gallia-yparxoun-traymaties/",
+        "https://www.in.gr/2026/09/11/world/mentventef-i-lithouania-tha-eksafanistei-apo-ton-xarti-an-topothetisei-pyrinika-enantion-tis-rosias/",
+        "https://www.in.gr/2026/09/11/sports/basketball/olympiakos-erythros-asteras-89-87-vezenkof-kai-montero-ekanan-ti-diafora/",
+        "https://www.in.gr/2026/09/11/sports/othersports/nea-spoudaia-emfanisi-apo-ton-karali-deyteros-sto-ultimate-championship-me-alma-sta-6-15m-vids/"
       ],
-      "seen_at_utc": "2026-09-11T19:51:15.701864+00:00"
+      "seen_at_utc": "2026-09-11T20:17:03.182058+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T19:51:15.701965+00:00"
+  "updated_at_utc": "2026-09-11T20:17:03.182172+00:00"
 }
