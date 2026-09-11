@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564448051/parenochloyse-tin-proin-toy-peirazontas-to-tesla-tis-ex-apostaseos/",
-      "title": "Παρενοχλούσε την πρώην του «πειράζοντας» το Tesla της εξ αποστάσεως",
-      "normalized_title": "ΠΑΡΕΝΟΧΛΟΥΣΕ ΤΗΝ ΠΡΩΗΝ ΤΟΥ «ΠΕΙΡΑΖΟΝΤΑΣ» ΤΟ TESLA ΤΗΣ ΕΞ ΑΠΟΣΤΑΣΕΩΣ",
+      "url": "https://www.kathimerini.gr/world/564453403/vretania-aporrifthike-to-nomoschedio-gia-tin-ypovoithoymeni-aytoktonia/",
+      "title": "Βρετανία: Απορρίφθηκε το νομοσχέδιο για την υποβοηθούμενη αυτοκτονία",
+      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΑΠΟΡΡΙΦΘΗΚΕ ΤΟ ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΤΗΝ ΥΠΟΒΟΗΘΟΥΜΕΝΗ ΑΥΤΟΚΤΟΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564448051/parenochloyse-tin-proin-toy-peirazontas-to-tesla-tis-ex-apostaseos/"
+        "https://www.kathimerini.gr/world/564453403/vretania-aporrifthike-to-nomoschedio-gia-tin-ypovoithoymeni-aytoktonia/",
+        "https://www.kathimerini.gr/society/564453379/dikigoros-mazonaki-itan-gia-miamisi-ora-choris-tis-aisthiseis-toy-prin-kalesoyn-to-ekav/"
       ],
-      "seen_at_utc": "2026-09-11T17:30:04.973992+00:00"
+      "seen_at_utc": "2026-09-11T17:51:08.756888+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877489/peripeteia-gia-26hrono-kai-24hroni-sti-samothraki-traumatistikan-kata-ti-diarkeia-pezoporias/?utm_source=rss",
-      "title": "Περιπέτεια για 26χρονο και 24χρονη στη Σαμοθράκη, τραυματίστηκαν κατά τη διάρκεια πεζοπορίας",
-      "normalized_title": "ΠΕΡΙΠΕΤΕΙΑ ΓΙΑ 26ΧΡΟΝΟ ΚΑΙ 24ΧΡΟΝΗ ΣΤΗ ΣΑΜΟΘΡΑΚΗ, ΤΡΑΥΜΑΤΙΣΤΗΚΑΝ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΠΕΖΟΠΟΡΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1877492/horis-aisthiseis-anasurthike-apo-ardeutiko-kanali-40hronos-stous-sofades-karditsas/?utm_source=rss",
+      "title": "Χωρίς αισθήσεις ανασύρθηκε 40χρονος από αρδευτικό κανάλι στους Σοφάδες Καρδιτσας",
+      "normalized_title": "ΧΩΡΙΣ ΑΙΣΘΗΣΕΙΣ ΑΝΑΣΥΡΘΗΚΕ 40ΧΡΟΝΟΣ ΑΠΟ ΑΡΔΕΥΤΙΚΟ ΚΑΝΑΛΙ ΣΤΟΥΣ ΣΟΦΑΔΕΣ ΚΑΡΔΙΤΣΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877489/peripeteia-gia-26hrono-kai-24hroni-sti-samothraki-traumatistikan-kata-ti-diarkeia-pezoporias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877488/ti-deutera-stis-1300-sti-nikaia-i-kideia-tou-giorgou-mazonaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877492/horis-aisthiseis-anasurthike-apo-ardeutiko-kanali-40hronos-stous-sofades-karditsas/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T17:30:04.974123+00:00"
+      "seen_at_utc": "2026-09-11T17:51:08.756952+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1465362/pyra-apo-voyleyti-tis-n-d-ston-paylo-marinaki-gia-to-epidoma-anergias-den-einai-pronomio-oyte-doro-tis-politeias/",
-      "title": "Πυρά από βουλευτή της Ν.Δ. στον Παύλο Μαρινάκη για το επίδομα ανεργίας: «Δεν είναι προνόμιο ούτε “δώρο” της Πολιτείας»",
-      "normalized_title": "ΠΥΡΑ ΑΠΟ ΒΟΥΛΕΥΤΗ ΤΗΣ Ν.Δ. ΣΤΟΝ ΠΑΥΛΟ ΜΑΡΙΝΑΚΗ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ: «ΔΕΝ ΕΙΝΑΙ ΠΡΟΝΟΜΙΟ ΟΥΤΕ “ΔΩΡΟ” ΤΗΣ ΠΟΛΙΤΕΙΑΣ»",
+      "url": "https://www.efsyn.gr/kosmos/1465377/vretania-to-koinovoylio-aperripse-to-nomoshedio-gia-nomimopoiisi-tis-eythanasias/",
+      "title": "Βρετανία: Το κοινοβούλιο απέρριψε το νομοσχέδιο για νομιμοποίηση της ευθανασίας",
+      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΤΟ ΚΟΙΝΟΒΟΥΛΙΟ ΑΠΕΡΡΙΨΕ ΤΟ ΝΟΜΟΣΧΕΔΙΟ ΓΙΑ ΝΟΜΙΜΟΠΟΙΗΣΗ ΤΗΣ ΕΥΘΑΝΑΣΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1465362/pyra-apo-voyleyti-tis-n-d-ston-paylo-marinaki-gia-to-epidoma-anergias-den-einai-pronomio-oyte-doro-tis-politeias/",
-        "https://www.efsyn.gr/ellada/1465363/lesvos-antras-epese-apo-ton-trito-orofo-spitioy-eno-evapse-to-parathyro/"
+        "https://www.efsyn.gr/kosmos/1465377/vretania-to-koinovoylio-aperripse-to-nomoshedio-gia-nomimopoiisi-tis-eythanasias/",
+        "https://www.efsyn.gr/ellada/1465367/thessaloniki-mitera-kai-paidi-traymatistikan-apo-ptosi-dentroy-se-parko/"
       ],
-      "seen_at_utc": "2026-09-11T17:30:04.974097+00:00"
+      "seen_at_utc": "2026-09-11T17:51:08.756936+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/politics/politiki-grammateia/koutsoumpas-apo-atalanti-eimaste-sto-pleyro-tis-agrotias-o-agonas-tis-einai-dikaios/",
-      "title": "Κουτσούμπας από Αταλάντη: «Είμαστε στο πλευρό της αγροτιάς, ο αγώνας της είναι δίκαιος»",
-      "normalized_title": "ΚΟΥΤΣΟΥΜΠΑΣ ΑΠΟ ΑΤΑΛΑΝΤΗ: «ΕΙΜΑΣΤΕ ΣΤΟ ΠΛΕΥΡΟ ΤΗΣ ΑΓΡΟΤΙΑΣ, Ο ΑΓΩΝΑΣ ΤΗΣ ΕΙΝΑΙ ΔΙΚΑΙΟΣ»",
+      "url": "https://www.in.gr/2026/09/11/sports/basketball/live-olympiakos-erythros-asteras-10/",
+      "title": "LIVE: Ολυμπιακός – Ερυθρός Αστέρας",
+      "normalized_title": "LIVE: ΟΛΥΜΠΙΑΚΟΣ – ΕΡΥΘΡΟΣ ΑΣΤΕΡΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/koutsoumpas-apo-atalanti-eimaste-sto-pleyro-tis-agrotias-o-agonas-tis-einai-dikaios/",
-        "https://www.in.gr/2026/09/11/greece/thessaloniki-mitera-kai-paidi-traymatistikan-apo-tin-ptosi-dentrou-sti-kalamaria/"
+        "https://www.in.gr/2026/09/11/sports/basketball/live-olympiakos-erythros-asteras-10/",
+        "https://www.in.gr/2026/09/11/greece/ta-psemata-ton-giatron-i-fotografia-tou-giorgou-mazonaki-stin-karekla-tis-plasmafairesis-kai-i-anazitisi-sto-ai/",
+        "https://www.in.gr/2026/09/11/world/oxi-tis-vretanikis-voulis-stin-eythanasia/",
+        "https://www.in.gr/2026/09/11/politics/paraskinio/oi-xalares-stigmes-tsipra-sti-deth-ta-athlitika-pigadakia-ta-rompot-ton-foititon-kai-i-fanela-tou-apollona-kalamarias/",
+        "https://www.in.gr/2026/09/11/sports/olympiakos-den-paizoun-kontra-ston-erythro-astera-oi-ntorsei-kai-papanikolaou/",
+        "https://www.in.gr/2026/09/11/life/culture-live/christmas-theater-mia-sezon-gemati-mousiki-theatro-kai-theama/"
       ],
-      "seen_at_utc": "2026-09-11T17:30:04.974043+00:00"
+      "seen_at_utc": "2026-09-11T17:51:08.756914+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T17:30:04.974196+00:00"
+  "updated_at_utc": "2026-09-11T17:51:08.757010+00:00"
 }
