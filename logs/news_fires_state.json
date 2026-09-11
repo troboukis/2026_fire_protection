@@ -1,16 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564451612/alkotest-kai-ptosi-stin-estiasi-eplixan-tin-athinaiki-zythopoiia/",
-      "title": "Αλκοτέστ και πτώση στην εστίαση έπληξαν την Αθηναϊκή Ζυθοποιία",
-      "normalized_title": "ΑΛΚΟΤΕΣΤ ΚΑΙ ΠΤΩΣΗ ΣΤΗΝ ΕΣΤΙΑΣΗ ΕΠΛΗΞΑΝ ΤΗΝ ΑΘΗΝΑΙΚΗ ΖΥΘΟΠΟΙΙΑ",
+      "url": "https://www.kathimerini.gr/society/564452038/rethymno-65chronos-nomize-oti-ependyei-se-xenes-trapezes-kai-echase-40-000-eyro/",
+      "title": "Ρέθυμνο: 65χρονος νόμιζε ότι επενδύει σε ξένες τράπεζες και έχασε 40.000 ευρώ",
+      "normalized_title": "ΡΕΘΥΜΝΟ: 65ΧΡΟΝΟΣ ΝΟΜΙΖΕ ΟΤΙ ΕΠΕΝΔΥΕΙ ΣΕ ΞΕΝΕΣ ΤΡΑΠΕΖΕΣ ΚΑΙ ΕΧΑΣΕ 40.000 ΕΥΡΩ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564451612/alkotest-kai-ptosi-stin-estiasi-eplixan-tin-athinaiki-zythopoiia/",
-        "https://www.kathimerini.gr/politics/564452059/sti-thessaloniki-gia-ton-scholiko-agiasmo-o-nikos-androylakis-na-enischysoyme-ti-dimosia-paideia-kai-na-stirixoyme-tin-oikogeneia/",
-        "https://www.kathimerini.gr/world/564452068/o-kim-giongk-oyn-thelei-oi-voreiokoreates-na-pernoyn-kala-arkei-na-to-egkrinei-to-kratos/",
-        "https://www.kathimerini.gr/culture/museums/564451387/i-epistrofi-tis-mpagie-oyres-sto-vretaniko-moyseio/"
+        "https://www.kathimerini.gr/society/564452038/rethymno-65chronos-nomize-oti-ependyei-se-xenes-trapezes-kai-echase-40-000-eyro/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564452125/ypex-gia-11i-septemvrioy-25-chronia-meta-stekomaste-enomenoi-apenanti-stin-tromokratia/",
+        "https://www.kathimerini.gr/economy/564451615/anevazei-tachytita-i-energean-se-israil-ellada-kai-aigypto/",
+        "https://www.kathimerini.gr/society/564452119/naypaktos-odigos-mpike-sto-antitheto-reyma-kai-prokalese-atychima/",
+        "https://www.kathimerini.gr/world/564452074/milano-ekkenothike-aeroplano-traymatistikan-dyo-atoma-kai-ekleise-aerodromio-apo-anaflexi-power-bank/",
+        "https://www.kathimerini.gr/world/564452056/synedrio-repoymplikanon-tessera-symperasmata-kai-i-proedriki-emfanisi-vans/",
+        "https://www.kathimerini.gr/society/564452104/epicheirisi-diasosis-peripoy-98-metanaston-notia-tis-kritis/",
+        "https://www.kathimerini.gr/society/reportaz/564451159/i-skoteini-agora-tis-technitis-eyexias/"
       ],
-      "seen_at_utc": "2026-09-11T07:30:03.210366+00:00"
+      "seen_at_utc": "2026-09-11T07:51:13.482437+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,36 +1266,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877168/ilikiomenos-odigos-bike-anapoda-se-monodromo-sti-naupakto-kai-pire-svarna-oti-evriske-brosta-tou/?utm_source=rss",
-      "title": "Ηλικιωμένος οδηγός μπήκε ανάποδα σε μονόδρομο στη Ναύπακτο και πήρε σβάρνα ό,τι βρήκε μπροστά του",
-      "normalized_title": "ΗΛΙΚΙΩΜΕΝΟΣ ΟΔΗΓΟΣ ΜΠΗΚΕ ΑΝΑΠΟΔΑ ΣΕ ΜΟΝΟΔΡΟΜΟ ΣΤΗ ΝΑΥΠΑΚΤΟ ΚΑΙ ΠΗΡΕ ΣΒΑΡΝΑ Ο,ΤΙ ΒΡΗΚΕ ΜΠΡΟΣΤΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1877177/volos-sunelifthi-upoptos-gia-sexoualiki-kakopoiisi-9hronis-i-kataggelia-pou-apokalupse-ton-efialti/?utm_source=rss",
+      "title": "Βόλος: Συνελήφθη ύποπτος για σεξουαλική κακοποίηση 9χρονης, η καταγγελία που αποκάλυψε τον εφιάλτη",
+      "normalized_title": "ΒΟΛΟΣ: ΣΥΝΕΛΗΦΘΗ ΥΠΟΠΤΟΣ ΓΙΑ ΣΕΞΟΥΑΛΙΚΗ ΚΑΚΟΠΟΙΗΣΗ 9ΧΡΟΝΗΣ, Η ΚΑΤΑΓΓΕΛΙΑ ΠΟΥ ΑΠΟΚΑΛΥΨΕ ΤΟΝ ΕΦΙΑΛΤΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877168/ilikiomenos-odigos-bike-anapoda-se-monodromo-sti-naupakto-kai-pire-svarna-oti-evriske-brosta-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877177/volos-sunelifthi-upoptos-gia-sexoualiki-kakopoiisi-9hronis-i-kataggelia-pou-apokalupse-ton-efialti/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T07:30:03.210504+00:00"
+      "seen_at_utc": "2026-09-11T07:51:13.482586+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1464925/trikala-agiasmos-sto-proto-dimotiko-sholeio-poy-leitoyrgei-mesa-se-fylaki/",
-      "title": "Τρίκαλα: Αγιασμός στο πρώτο δημοτικό σχολείο που λειτουργεί μέσα σε φυλακή",
-      "normalized_title": "ΤΡΙΚΑΛΑ: ΑΓΙΑΣΜΟΣ ΣΤΟ ΠΡΩΤΟ ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ ΠΟΥ ΛΕΙΤΟΥΡΓΕΙ ΜΕΣΑ ΣΕ ΦΥΛΑΚΗ",
+      "url": "https://www.efsyn.gr/life/1464957/kavgas-patoyli-danika-gia-iatreio-ehete-kapoio-provlima-mazi-moy-aneheste-emporio-san-iatrikos-syllogos/",
+      "title": "Καβγάς Πατούλη – Δανίκα για ιατρείο: «Έχετε κάποιο πρόβλημα μαζί μου;» – «Ανέχεστε εμπόριο σαν Ιατρικός Σύλλογος»",
+      "normalized_title": "ΚΑΒΓΑΣ ΠΑΤΟΥΛΗ – ΔΑΝΙΚΑ ΓΙΑ ΙΑΤΡΕΙΟ: «ΕΧΕΤΕ ΚΑΠΟΙΟ ΠΡΟΒΛΗΜΑ ΜΑΖΙ ΜΟΥ;» – «ΑΝΕΧΕΣΤΕ ΕΜΠΟΡΙΟ ΣΑΝ ΙΑΤΡΙΚΟΣ ΣΥΛΛΟΓΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1464925/trikala-agiasmos-sto-proto-dimotiko-sholeio-poy-leitoyrgei-mesa-se-fylaki/",
-        "https://www.efsyn.gr/ellada/1464930/ekpa-neo-kylikeio-kai-anakainismenoi-horoi-sti-sholi-thetikon-epistimon-o-stohos-gia-to-2030/",
-        "https://www.efsyn.gr/life/1464941/efyge-to-poylaki-mas-to-sygkinitiko-antio-toy-sokrati-malama-ston-giorgo-mazonaki-vinteo/",
-        "https://www.efsyn.gr/nisides/1464943/ta-vivlia-poy-den-teleiosame/"
+        "https://www.efsyn.gr/life/1464957/kavgas-patoyli-danika-gia-iatreio-ehete-kapoio-provlima-mazi-moy-aneheste-emporio-san-iatrikos-syllogos/",
+        "https://www.efsyn.gr/politiki/1464971/to-ntoy-tsipra-sti-deth-kai-o-ypainigmos-me-to-26/",
+        "https://www.efsyn.gr/politiki/1464966/pote-min-les-pote/",
+        "https://www.efsyn.gr/politiki/1464939/androylakis-ean-theloyme-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enishysoyme-ti-dimosia-paideia/",
+        "https://www.efsyn.gr/politiki/1464954/kai-pasok-kai-krintz-o-androylakis-einai-san-to-zaharoyho-gala-einai-poly-glykos/"
       ],
-      "seen_at_utc": "2026-09-11T07:30:03.210463+00:00"
+      "seen_at_utc": "2026-09-11T07:51:13.482545+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/politics/androulakis-ean-theloume-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enisxysoume-ti-dimosia-paideia/",
-      "title": "Ανδρουλάκης: Εάν θέλουμε ένα καλύτερο μέλλον για τα παιδιά μας, πρέπει να ενισχύσουμε τη δημόσια παιδεία",
-      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: ΕΑΝ ΘΕΛΟΥΜΕ ΕΝΑ ΚΑΛΥΤΕΡΟ ΜΕΛΛΟΝ ΓΙΑ ΤΑ ΠΑΙΔΙΑ ΜΑΣ, ΠΡΕΠΕΙ ΝΑ ΕΝΙΣΧΥΣΟΥΜΕ ΤΗ ΔΗΜΟΣΙΑ ΠΑΙΔΕΙΑ",
+      "url": "https://www.in.gr/2026/09/11/go-fun/fizz/manolis-kontaros-gia-mazonaki-enas-kalos-kritikos-itan-perifanos-gia-tin-katagogi-tou/",
+      "title": "Μανώλης Κονταρός για Μαζωνάκη: «Ένας καλός Κρητικός, ήτανε περήφανος για την καταγωγή του»",
+      "normalized_title": "ΜΑΝΩΛΗΣ ΚΟΝΤΑΡΟΣ ΓΙΑ ΜΑΖΩΝΑΚΗ: «ΕΝΑΣ ΚΑΛΟΣ ΚΡΗΤΙΚΟΣ, ΗΤΑΝΕ ΠΕΡΗΦΑΝΟΣ ΓΙΑ ΤΗΝ ΚΑΤΑΓΩΓΗ ΤΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/politics/androulakis-ean-theloume-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enisxysoume-ti-dimosia-paideia/",
-        "https://www.in.gr/2026/09/11/sports/basketball/anevazei-rythmous-o-kinan-evans-i-nea-poly-kali-emfanisi-me-tous-lonton-laions/"
+        "https://www.in.gr/2026/09/11/go-fun/fizz/manolis-kontaros-gia-mazonaki-enas-kalos-kritikos-itan-perifanos-gia-tin-katagogi-tou/",
+        "https://www.in.gr/2026/09/11/politics/epikairotita/anakainismeno-sxoleio-epelekse-na-episkefthei-o-mitsotakis-tin-proti-imera-tis-sxolikis-xronias/",
+        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-krisimo-na-gnorizoume-poia-texniki-plasmafairesis-xrisimopoiithike-kleidi-ta-apotelesmata-tis-nekropsiass/"
       ],
-      "seen_at_utc": "2026-09-11T07:30:03.210421+00:00"
+      "seen_at_utc": "2026-09-11T07:51:13.482489+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T07:30:03.210572+00:00"
+  "updated_at_utc": "2026-09-11T07:51:13.482658+00:00"
 }
