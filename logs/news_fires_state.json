@@ -1,23 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564452221/vretaniki-ypiresia-antikataskopeias-i-epomeni-11i-septemvrioy-mporei-idi-na-proetoimazetai-ekei-poy-den-koitame/",
-      "title": "Βρετανική υπηρεσία αντικατασκοπείας: Η επόμενη «11η Σεπτεμβρίου» μπορεί ήδη να προετοιμάζεται εκεί που δεν κοιτάμε",
-      "normalized_title": "ΒΡΕΤΑΝΙΚΗ ΥΠΗΡΕΣΙΑ ΑΝΤΙΚΑΤΑΣΚΟΠΕΙΑΣ: Η ΕΠΟΜΕΝΗ «11Η ΣΕΠΤΕΜΒΡΙΟΥ» ΜΠΟΡΕΙ ΗΔΗ ΝΑ ΠΡΟΕΤΟΙΜΑΖΕΤΑΙ ΕΚΕΙ ΠΟΥ ΔΕΝ ΚΟΙΤΑΜΕ",
+      "url": "https://www.kathimerini.gr/society/564452533/megali-astynomiki-epicheirisi-sti-fyli-14-syllipseis-gia-reymatoklopes-vinteo/",
+      "title": "Μεγάλη αστυνομική επιχείρηση στη Φυλή – 14 συλλήψεις για ρευματοκλοπές [βίντεο]",
+      "normalized_title": "ΜΕΓΑΛΗ ΑΣΤΥΝΟΜΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΣΤΗ ΦΥΛΗ – 14 ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΡΕΥΜΑΤΟΚΛΟΠΕΣ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564452221/vretaniki-ypiresia-antikataskopeias-i-epomeni-11i-septemvrioy-mporei-idi-na-proetoimazetai-ekei-poy-den-koitame/",
-        "https://www.kathimerini.gr/world/564451309/molysmena-nera-se-limania-sfoyggaria-kata-tis-rypansis/",
-        "https://www.kathimerini.gr/politics/564452485/voyli-antikatastasi-lazaridi-meta-ta-pyra-ston-dieythynti-toy-dendia/",
-        "https://www.kathimerini.gr/society/564452494/fotia-stin-kerkyra-kaiei-agrotodasiki-ektasi-sta-ano-korakiana/",
-        "https://www.kathimerini.gr/world/564452431/i-vasilissa-tis-sixth-avenue-i-makrovioteri-elliniki-kantina-sti-nea-yorki/",
-        "https://www.kathimerini.gr/opinion/564451102/emporio-elpidas/",
-        "https://www.kathimerini.gr/opinion/564451519/itan-kiryxi-polemoy-i-11i-septemvrioy/",
-        "https://www.kathimerini.gr/opinion/564451522/giorgos-mazonakis-skorpismata/",
-        "https://www.kathimerini.gr/opinion/564451093/i-11i-septemvrioy-kai-oi-foties-simera/",
-        "https://www.kathimerini.gr/economy/564452470/exodikastikos-michanismos-schedon-70-000-rythmiseis-ti-allazei-apo-21-septemvrioy/",
-        "https://www.kathimerini.gr/opinion/564451366/oi-kerkoportes-mias-asthenoys-eyropis/"
+        "https://www.kathimerini.gr/society/564452533/megali-astynomiki-epicheirisi-sti-fyli-14-syllipseis-gia-reymatoklopes-vinteo/",
+        "https://www.kathimerini.gr/society/564452518/fotia-sti-samo-kinitopoiithike-elikoptero/",
+        "https://www.kathimerini.gr/society/564452524/pyrkagia-sto-markopoylo-attikis-ischyri-dynami-sto-simeio/",
+        "https://www.kathimerini.gr/politics/564452503/synantisi-kyr-mitsotaki-me-ton-geniko-dieythynti-tis-unesco/"
       ],
-      "seen_at_utc": "2026-09-11T10:18:14.902428+00:00"
+      "seen_at_utc": "2026-09-11T10:31:42.022211+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,40 +1262,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877262/o-hristodoulidis-upodehthike-sto-proedriko-megaro-tin-omada-basket-tou-olubiakou-eimai-perifanos-gauros-eipe/?utm_source=rss",
-      "title": "Ο Χριστοδουλίδης υποδέχθηκε στο Προεδρικό Μέγαρο την ομάδα μπάσκετ του Ολυμπιακού - «Είμαι περήφανος γαύρος», είπε",
-      "normalized_title": "Ο ΧΡΙΣΤΟΔΟΥΛΙΔΗΣ ΥΠΟΔΕΧΘΗΚΕ ΣΤΟ ΠΡΟΕΔΡΙΚΟ ΜΕΓΑΡΟ ΤΗΝ ΟΜΑΔΑ ΜΠΑΣΚΕΤ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ - «ΕΙΜΑΙ ΠΕΡΗΦΑΝΟΣ ΓΑΥΡΟΣ», ΕΙΠΕ",
+      "url": "https://www.protothema.gr/greece/article/1877266/venzini-ton-heimona-ta-2-euro-tha-mas-fainodai-fthina/?utm_source=rss",
+      "title": "Βενζίνη: «Τον χειμώνα τα 2 ευρώ θα μας φαίνονται φθηνά»",
+      "normalized_title": "ΒΕΝΖΙΝΗ: «ΤΟΝ ΧΕΙΜΩΝΑ ΤΑ 2 ΕΥΡΩ ΘΑ ΜΑΣ ΦΑΙΝΟΝΤΑΙ ΦΘΗΝΑ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877262/o-hristodoulidis-upodehthike-sto-proedriko-megaro-tin-omada-basket-tou-olubiakou-eimai-perifanos-gauros-eipe/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877266/venzini-ton-heimona-ta-2-euro-tha-mas-fainodai-fthina/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877265/fotia-sto-markopoulo-attikis-sti-mahi-duo-elikoptera/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T10:18:14.902519+00:00"
+      "seen_at_utc": "2026-09-11T10:31:42.022386+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1465034/tsoykalas-an-o-kosmos-thelei-na-ittithei-i-nd-ehei-mia-epilogi-to-pasok/",
-      "title": "Τσουκαλάς: «Αν ο κόσμος θέλει να ηττηθεί η ΝΔ έχει μία επιλογή, το ΠΑΣΟΚ»",
-      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: «ΑΝ Ο ΚΟΣΜΟΣ ΘΕΛΕΙ ΝΑ ΗΤΤΗΘΕΙ Η ΝΔ ΕΧΕΙ ΜΙΑ ΕΠΙΛΟΓΗ, ΤΟ ΠΑΣΟΚ»",
+      "url": "https://www.efsyn.gr/ellada/1465068/giorgos-mazonakis-ti-deytera-i-kideia-toy-sto-g-nekrotafeio-nikaias/",
+      "title": "Γιώργος Μαζωνάκης: Τη Δευτέρα η κηδεία του στο Γ’ Νεκροταφείο Νίκαιας",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΤΗ ΔΕΥΤΕΡΑ Η ΚΗΔΕΙΑ ΤΟΥ ΣΤΟ Γ’ ΝΕΚΡΟΤΑΦΕΙΟ ΝΙΚΑΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1465034/tsoykalas-an-o-kosmos-thelei-na-ittithei-i-nd-ehei-mia-epilogi-to-pasok/",
-        "https://www.efsyn.gr/life/1465051/i-afierosi-ton-hatzifragketa-ston-giorgo-mazonaki-tragoydisan-to-eisai-to-lathos-moy-to-teleytaio/",
-        "https://www.efsyn.gr/politiki/1465037/galazios-emfylios-antikatastathike-o-lazaridis-apo-eisigitis-meta-tin-epithesi-se-synergati-toy-dendia/",
-        "https://www.efsyn.gr/ellada/1465031/fotia-stin-kerkyra-se-agrotodasiki-ektasi-stin-ano-korakiana-epiheiroyn-dyo-enaeria/"
+        "https://www.efsyn.gr/ellada/1465068/giorgos-mazonakis-ti-deytera-i-kideia-toy-sto-g-nekrotafeio-nikaias/",
+        "https://www.efsyn.gr/ellada/1465065/fotia-sto-markopoylo-sikothikan-dyo-elikoptera/",
+        "https://www.efsyn.gr/stiles/1465047/aspida-toy-ahillea-den-ypirhan-alloi-promitheytes/",
+        "https://www.efsyn.gr/stiles/1465061/akrodexia-apeili/",
+        "https://www.efsyn.gr/stiles/1465042/anodos-toy-afd-to-thema-kai-to-teihos/",
+        "https://www.efsyn.gr/kosmos/1465058/synagermos-sto-aerodromio-larnakas-ekkenothike-aeroskafos-meta-apo-apeili-gia-vomva/"
       ],
-      "seen_at_utc": "2026-09-11T10:18:14.902491+00:00"
+      "seen_at_utc": "2026-09-11T10:31:42.022342+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/greece/fotia-se-agrotodasiki-ektasi-sti-lesvo-epixeiroun-tessera-enaeria/",
-      "title": "Φωτιά σε αγροτοδασική έκταση στη Λέσβο - Επιχειρούν τέσσερα εναέρια",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗ ΛΕΣΒΟ - ΕΠΙΧΕΙΡΟΥΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ",
+      "url": "https://www.in.gr/2026/09/11/in-science/technology/nasa-sygxaritiria-stin-ellada-gia-tin-apostoli-tou-protou-ellina-astronayti-sto-diastima/",
+      "title": "Συγχαρητήρια NASA στην Ελλάδα για τον πρώτο Έλληνα αστροναύτη στο Διάστημα",
+      "normalized_title": "ΣΥΓΧΑΡΗΤΗΡΙΑ NASA ΣΤΗΝ ΕΛΛΑΔΑ ΓΙΑ ΤΟΝ ΠΡΩΤΟ ΕΛΛΗΝΑ ΑΣΤΡΟΝΑΥΤΗ ΣΤΟ ΔΙΑΣΤΗΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/greece/fotia-se-agrotodasiki-ektasi-sti-lesvo-epixeiroun-tessera-enaeria/",
-        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/live-i-synenteyksi-typou-tou-grammatea-tou-syriza-ps-nikou-pappa-stin-90i-deth/",
-        "https://www.in.gr/2026/09/11/plus/medianews/kampingk-gnoriste-tous-xaraktires-tis-neas-seiras-tou-mega/",
-        "https://www.in.gr/2026/09/11/greece/kerkyra-fotia-se-agrotodasiki-ektasi-sikothikan-dyo-enaeria/",
-        "https://www.in.gr/2026/09/11/sports/basketball/euroleague/miloutinof-den-me-proseggise-kanenas-gia-elliniko-diavatirio/",
-        "https://www.in.gr/2026/09/11/istoriko-arxeio/epidayros-i-proti-parastasi-arxaias-tragodias-stin-istoria-tis-sygxronis-elladas/"
+        "https://www.in.gr/2026/09/11/in-science/technology/nasa-sygxaritiria-stin-ellada-gia-tin-apostoli-tou-protou-ellina-astronayti-sto-diastima/",
+        "https://www.in.gr/2026/09/11/greece/melos-tis-epitropis-parakolouthiseon-tou-symvouliou-dikigorikon-syllogon-tis-eyropis-o-zaxarias-kesses/",
+        "https://www.in.gr/2026/09/11/plus/medianews/live-news-me-ton-niko-eyaggelato-rekor-tetraetias-stin-tiletheasi/",
+        "https://www.in.gr/2026/09/11/go-fun/fizz/pleon-den-yparxei-mono-mia-teilor-souift-epistimones-edosan-to-onoma-tis-pop-star-se-tessera-nea-eidi-entomon/",
+        "https://www.in.gr/2026/09/11/politics/vouli-anathema-lazaridi-se-synergati-dendia-kai-antikatastasi-tou-se-nomosxediou-tou-amynas/",
+        "https://www.in.gr/2026/09/11/greece/fotia-sta-skouraiika-samou/",
+        "https://www.in.gr/2026/09/11/politics/aftodioikisi/enarksi-leitourgias-tou-kallitexnikou-gymnasiou-naousas/",
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-i-ereyna-den-antexei-alles-kyvernitikes-proxeirotites-kai-methodeyseis/"
       ],
-      "seen_at_utc": "2026-09-11T10:18:14.902466+00:00"
+      "seen_at_utc": "2026-09-11T10:31:42.022285+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T10:18:14.902601+00:00"
+  "updated_at_utc": "2026-09-11T10:31:42.022485+00:00"
 }
