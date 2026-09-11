@@ -1,19 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564451588/o-plithorismos-rokanizei-tis-katatheseis/",
-      "title": "Ο πληθωρισμός ροκανίζει τις καταθέσεις",
-      "normalized_title": "Ο ΠΛΗΘΩΡΙΣΜΟΣ ΡΟΚΑΝΙΖΕΙ ΤΙΣ ΚΑΤΑΘΕΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/world/564452221/vretaniki-ypiresia-antikataskopeias-i-epomeni-11i-septemvrioy-mporei-idi-na-proetoimazetai-ekei-poy-den-koitame/",
+      "title": "Βρετανική υπηρεσία αντικατασκοπείας: Η επόμενη «11η Σεπτεμβρίου» μπορεί ήδη να προετοιμάζεται εκεί που δεν κοιτάμε",
+      "normalized_title": "ΒΡΕΤΑΝΙΚΗ ΥΠΗΡΕΣΙΑ ΑΝΤΙΚΑΤΑΣΚΟΠΕΙΑΣ: Η ΕΠΟΜΕΝΗ «11Η ΣΕΠΤΕΜΒΡΙΟΥ» ΜΠΟΡΕΙ ΗΔΗ ΝΑ ΠΡΟΕΤΟΙΜΑΖΕΤΑΙ ΕΚΕΙ ΠΟΥ ΔΕΝ ΚΟΙΤΑΜΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564451588/o-plithorismos-rokanizei-tis-katatheseis/",
-        "https://www.kathimerini.gr/society/564452113/pyrgos-ilikiomeni-pagideyse-apateona-poy-pige-na-tin-exapatisei/",
-        "https://www.kathimerini.gr/world/564452419/poyloysan-se-sfageia-paroplismena-aloga-ippodromoy-epicheirisi-tis-europol-se-4-chores/",
-        "https://www.kathimerini.gr/society/564452407/thanatos-mazonaki-stin-eyelpidon-oi-dyo-giatroi-odigoyntai-enopion-toy-eisaggelea/",
-        "https://www.kathimerini.gr/economy/international/564451714/den-vlepoyn-na-svinei-i-fotia-sti-mesi-anatoli/",
-        "https://www.kathimerini.gr/world/564452371/o-erntogan-epaixe-mpasket-me-ton-impraim-kalin-vinteo/",
-        "https://www.kathimerini.gr/politics/parties/564451198/oi-monomachoi-ton-n-d-pasok-elas-sta-kanalia/"
+        "https://www.kathimerini.gr/world/564452221/vretaniki-ypiresia-antikataskopeias-i-epomeni-11i-septemvrioy-mporei-idi-na-proetoimazetai-ekei-poy-den-koitame/",
+        "https://www.kathimerini.gr/world/564451309/molysmena-nera-se-limania-sfoyggaria-kata-tis-rypansis/",
+        "https://www.kathimerini.gr/politics/564452485/voyli-antikatastasi-lazaridi-meta-ta-pyra-ston-dieythynti-toy-dendia/",
+        "https://www.kathimerini.gr/society/564452494/fotia-stin-kerkyra-kaiei-agrotodasiki-ektasi-sta-ano-korakiana/",
+        "https://www.kathimerini.gr/world/564452431/i-vasilissa-tis-sixth-avenue-i-makrovioteri-elliniki-kantina-sti-nea-yorki/",
+        "https://www.kathimerini.gr/opinion/564451102/emporio-elpidas/",
+        "https://www.kathimerini.gr/opinion/564451519/itan-kiryxi-polemoy-i-11i-septemvrioy/",
+        "https://www.kathimerini.gr/opinion/564451522/giorgos-mazonakis-skorpismata/",
+        "https://www.kathimerini.gr/opinion/564451093/i-11i-septemvrioy-kai-oi-foties-simera/",
+        "https://www.kathimerini.gr/economy/564452470/exodikastikos-michanismos-schedon-70-000-rythmiseis-ti-allazei-apo-21-septemvrioy/",
+        "https://www.kathimerini.gr/opinion/564451366/oi-kerkoportes-mias-asthenoys-eyropis/"
       ],
-      "seen_at_utc": "2026-09-11T09:51:31.912500+00:00"
+      "seen_at_utc": "2026-09-11T10:18:14.902428+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1265,38 +1269,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877250/fotia-tora-stin-kerkura-kaigetai-agrotodasiki-ektasi-sta-ano-korakiana/?utm_source=rss",
-      "title": "Φωτιά τώρα στην Κέρκυρα, καίγεται αγροτοδασική έκταση στα Άνω Κορακιανά",
-      "normalized_title": "ΦΩΤΙΑ ΤΩΡΑ ΣΤΗΝ ΚΕΡΚΥΡΑ, ΚΑΙΓΕΤΑΙ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΑ ΑΝΩ ΚΟΡΑΚΙΑΝΑ",
+      "url": "https://www.protothema.gr/greece/article/1877262/o-hristodoulidis-upodehthike-sto-proedriko-megaro-tin-omada-basket-tou-olubiakou-eimai-perifanos-gauros-eipe/?utm_source=rss",
+      "title": "Ο Χριστοδουλίδης υποδέχθηκε στο Προεδρικό Μέγαρο την ομάδα μπάσκετ του Ολυμπιακού - «Είμαι περήφανος γαύρος», είπε",
+      "normalized_title": "Ο ΧΡΙΣΤΟΔΟΥΛΙΔΗΣ ΥΠΟΔΕΧΘΗΚΕ ΣΤΟ ΠΡΟΕΔΡΙΚΟ ΜΕΓΑΡΟ ΤΗΝ ΟΜΑΔΑ ΜΠΑΣΚΕΤ ΤΟΥ ΟΛΥΜΠΙΑΚΟΥ - «ΕΙΜΑΙ ΠΕΡΗΦΑΝΟΣ ΓΑΥΡΟΣ», ΕΙΠΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877250/fotia-tora-stin-kerkura-kaigetai-agrotodasiki-ektasi-sta-ano-korakiana/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877249/fotia-se-hamili-vlastisi-sta-skouraiika-samou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877241/me-heiropedes-stin-euelpidon-oi-giatroi-gaka-kai-theodoropoulos-tis-klinikis-sto-kolonaki-opou-pethane-o-mazonakis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877262/o-hristodoulidis-upodehthike-sto-proedriko-megaro-tin-omada-basket-tou-olubiakou-eimai-perifanos-gauros-eipe/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T09:51:31.912695+00:00"
+      "seen_at_utc": "2026-09-11T10:18:14.902519+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465025/giorgos-mazonakis-stin-eyelpidon-eftasan-oi-dyo-giatroi-odigoyntai-ston-eisaggelea-vinteo/",
-      "title": "Γιώργος Μαζωνάκης: Στην Ευελπίδων έφτασαν οι δύο γιατροί – Οδηγούνται στον εισαγγελέα [βίντεο]",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ ΕΦΤΑΣΑΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ – ΟΔΗΓΟΥΝΤΑΙ ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1465034/tsoykalas-an-o-kosmos-thelei-na-ittithei-i-nd-ehei-mia-epilogi-to-pasok/",
+      "title": "Τσουκαλάς: «Αν ο κόσμος θέλει να ηττηθεί η ΝΔ έχει μία επιλογή, το ΠΑΣΟΚ»",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: «ΑΝ Ο ΚΟΣΜΟΣ ΘΕΛΕΙ ΝΑ ΗΤΤΗΘΕΙ Η ΝΔ ΕΧΕΙ ΜΙΑ ΕΠΙΛΟΓΗ, ΤΟ ΠΑΣΟΚ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465025/giorgos-mazonakis-stin-eyelpidon-eftasan-oi-dyo-giatroi-odigoyntai-ston-eisaggelea-vinteo/",
-        "https://www.efsyn.gr/stiles/1465024/tsipras-anahoma-stin-politiki-ektropi/",
-        "https://www.efsyn.gr/politiki/1465020/georgiadis-proaniggeile-epitropi-poy-tha-kathorizei-pos-doyleyoyn-kentra-opos-ayto-poy-episkefthike-o-mazonakis/",
-        "https://www.efsyn.gr/stiles/1465021/meta-ti-deth-i-oikonomiki-apotimisi-tis-eptaetias-2019-26/"
+        "https://www.efsyn.gr/politiki/1465034/tsoykalas-an-o-kosmos-thelei-na-ittithei-i-nd-ehei-mia-epilogi-to-pasok/",
+        "https://www.efsyn.gr/life/1465051/i-afierosi-ton-hatzifragketa-ston-giorgo-mazonaki-tragoydisan-to-eisai-to-lathos-moy-to-teleytaio/",
+        "https://www.efsyn.gr/politiki/1465037/galazios-emfylios-antikatastathike-o-lazaridis-apo-eisigitis-meta-tin-epithesi-se-synergati-toy-dendia/",
+        "https://www.efsyn.gr/ellada/1465031/fotia-stin-kerkyra-se-agrotodasiki-ektasi-stin-ano-korakiana-epiheiroyn-dyo-enaeria/"
       ],
-      "seen_at_utc": "2026-09-11T09:51:31.912642+00:00"
+      "seen_at_utc": "2026-09-11T10:18:14.902491+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-stin-eyelpidon-oi-dyo-giatroi-gia-ton-thanato-tou-tragoudisti/",
-      "title": "Γιώργος Μαζωνάκης: Στην Ευελπίδων οι δύο γιατροί για τον θάνατο του τραγουδιστή",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΤΡΑΓΟΥΔΙΣΤΗ",
+      "url": "https://www.in.gr/2026/09/11/greece/fotia-se-agrotodasiki-ektasi-sti-lesvo-epixeiroun-tessera-enaeria/",
+      "title": "Φωτιά σε αγροτοδασική έκταση στη Λέσβο - Επιχειρούν τέσσερα εναέρια",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗ ΛΕΣΒΟ - ΕΠΙΧΕΙΡΟΥΝ ΤΕΣΣΕΡΑ ΕΝΑΕΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-stin-eyelpidon-oi-dyo-giatroi-gia-ton-thanato-tou-tragoudisti/",
-        "https://www.in.gr/2026/09/11/go-fun/style/ligo-prin-ta-vraxia-pos-i-viktoria-mpekam-anekampse-tin-poreia-tou-brand-tis-kai-to-ekane-kerdoforo/"
+        "https://www.in.gr/2026/09/11/greece/fotia-se-agrotodasiki-ektasi-sti-lesvo-epixeiroun-tessera-enaeria/",
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/live-i-synenteyksi-typou-tou-grammatea-tou-syriza-ps-nikou-pappa-stin-90i-deth/",
+        "https://www.in.gr/2026/09/11/plus/medianews/kampingk-gnoriste-tous-xaraktires-tis-neas-seiras-tou-mega/",
+        "https://www.in.gr/2026/09/11/greece/kerkyra-fotia-se-agrotodasiki-ektasi-sikothikan-dyo-enaeria/",
+        "https://www.in.gr/2026/09/11/sports/basketball/euroleague/miloutinof-den-me-proseggise-kanenas-gia-elliniko-diavatirio/",
+        "https://www.in.gr/2026/09/11/istoriko-arxeio/epidayros-i-proti-parastasi-arxaias-tragodias-stin-istoria-tis-sygxronis-elladas/"
       ],
-      "seen_at_utc": "2026-09-11T09:51:31.912579+00:00"
+      "seen_at_utc": "2026-09-11T10:18:14.902466+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T09:51:31.912804+00:00"
+  "updated_at_utc": "2026-09-11T10:18:14.902601+00:00"
 }
