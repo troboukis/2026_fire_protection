@@ -1,20 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564452359/apofylakizetai-tin-triti-o-kasidiaris-sigoyri-i-kathodos-toy-stis-ekloges/",
-      "title": "Αποφυλακίζεται την Τρίτη ο Κασιδιάρης – «Σίγουρη η κάθοδός του στις εκλογές»",
-      "normalized_title": "ΑΠΟΦΥΛΑΚΙΖΕΤΑΙ ΤΗΝ ΤΡΙΤΗ Ο ΚΑΣΙΔΙΑΡΗΣ – «ΣΙΓΟΥΡΗ Η ΚΑΘΟΔΟΣ ΤΟΥ ΣΤΙΣ ΕΚΛΟΓΕΣ»",
+      "url": "https://www.kathimerini.gr/economy/564451579/pieseis-idioktiton-gia-anavoli-pliromon-enoikion-meso-trapezas/",
+      "title": "Πιέσεις ιδιοκτητών για αναβολή πληρωμών ενοικίων μέσω τράπεζας",
+      "normalized_title": "ΠΙΕΣΕΙΣ ΙΔΙΟΚΤΗΤΩΝ ΓΙΑ ΑΝΑΒΟΛΗ ΠΛΗΡΩΜΩΝ ΕΝΟΙΚΙΩΝ ΜΕΣΩ ΤΡΑΠΕΖΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564452359/apofylakizetai-tin-triti-o-kasidiaris-sigoyri-i-kathodos-toy-stis-ekloges/",
-        "https://www.kathimerini.gr/world/564452341/kievo-dyo-nekroi-kai-tesseris-traymaties-apo-rosikes-epitheseis-kata-pratirion-kaysimon/",
-        "https://www.kathimerini.gr/economy/international/564451672/fesi-540-000-eyro-apo-se-chi-sto-dorchester-toy-londinoy/",
-        "https://www.kathimerini.gr/world/564452332/erntogan-plisiazoyn-ekloges-pisteyo-oti-tha-echoyme-epitychia/",
-        "https://www.kathimerini.gr/society/564452260/enas-chronos-24oris-leitoyrgias-ton-mmm-pano-apo-2-ekat-metakiniseis-epivaton-ta-savvata/",
-        "https://www.kathimerini.gr/society/564452317/aprosdioristi-i-aitia-thanatoy-toy-giorgoy-mazonaki/",
-        "https://www.kathimerini.gr/world/564452314/filippines-mpikan-sto-apanthrakomeno-feri-oi-pyrosvestes-agonia-gia-84-agnooymenoys/",
-        "https://www.kathimerini.gr/society/reportaz/564452245/georgiadis-stin-k-apagoreysi-diafimiseon-kai-eidiki-epitropi-gia-ta-kentra-eyexias/"
+        "https://www.kathimerini.gr/economy/564451579/pieseis-idioktiton-gia-anavoli-pliromon-enoikion-meso-trapezas/",
+        "https://www.kathimerini.gr/world/564452374/ipa-i-timi-toy-ntizel-xeperase-gia-proti-fora-ta-6-dolaria-to-galoni/",
+        "https://www.kathimerini.gr/economy/local/564451573/apo-257-eos-389-eyro-kathara-to-neo-epidoma-ton-dimosion-ypallilon/"
       ],
-      "seen_at_utc": "2026-09-11T09:17:00.171323+00:00"
+      "seen_at_utc": "2026-09-11T09:29:59.811928+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,36 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877222/sunagermos-sto-aerodromio-larnakas-meta-apo-apeili-gia-vomva-se-aeroskafos/?utm_source=rss",
-      "title": "Κύπρος: Συναγερμός στο αεροδρόμιο Λάρνακας μετά από απειλή για βόμβα σε αεροσκάφος",
-      "normalized_title": "ΚΥΠΡΟΣ: ΣΥΝΑΓΕΡΜΟΣ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΛΑΡΝΑΚΑΣ ΜΕΤΑ ΑΠΟ ΑΠΕΙΛΗ ΓΙΑ ΒΟΜΒΑ ΣΕ ΑΕΡΟΣΚΑΦΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1877235/aitiseis-asulou-stin-europi-proti-i-ellada-me-1-ana-444-katoikous-poies-ethnikotites-piran-perissoteres-egriseis/?utm_source=rss",
+      "title": "Ο χάρτης των αιτήσεων ασύλου στην Ευρώπη: Πρώτη η Ελλάδα με 1 ανά 444 κατοίκους - Ποιες εθνικότητες πήραν τις περισσότερες εγκρίσεων",
+      "normalized_title": "Ο ΧΑΡΤΗΣ ΤΩΝ ΑΙΤΗΣΕΩΝ ΑΣΥΛΟΥ ΣΤΗΝ ΕΥΡΩΠΗ: ΠΡΩΤΗ Η ΕΛΛΑΔΑ ΜΕ 1 ΑΝΑ 444 ΚΑΤΟΙΚΟΥΣ - ΠΟΙΕΣ ΕΘΝΙΚΟΤΗΤΕΣ ΠΗΡΑΝ ΤΙΣ ΠΕΡΙΣΣΟΤΕΡΕΣ ΕΓΚΡΙΣΕΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877222/sunagermos-sto-aerodromio-larnakas-meta-apo-apeili-gia-vomva-se-aeroskafos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877235/aitiseis-asulou-stin-europi-proti-i-ellada-me-1-ana-444-katoikous-poies-ethnikotites-piran-perissoteres-egriseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877234/mihailidou-perissoteres-theseis-prosholikis-frodidas-auxanoume-ta-eisodimatika-oria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877232/apofulakizetai-stis-15-septemvriou-o-kasidiaris-tha-katevei-stis-ekloges-leei-i-dikigoros-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T09:17:00.171436+00:00"
+      "seen_at_utc": "2026-09-11T09:29:59.812079+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465013/afthodis-pyretos-mylos-sti-lesvo-gia-tin-eythyni-ton-sfagon/",
-      "title": "Αφθώδης πυρετός: «Μύλος» στη Λέσβο για την ευθύνη των σφαγών",
-      "normalized_title": "ΑΦΘΩΔΗΣ ΠΥΡΕΤΟΣ: «ΜΥΛΟΣ» ΣΤΗ ΛΕΣΒΟ ΓΙΑ ΤΗΝ ΕΥΘΥΝΗ ΤΩΝ ΣΦΑΓΩΝ",
+      "url": "https://www.efsyn.gr/ellada/1465016/ilias-kasidiaris-apofylakizetai-stis-15-septemvrioy-sigoyri-i-kathodos-toy-stis-ekloges/",
+      "title": "Ηλίας Κασιδιάρης: Αποφυλακίζεται στις 15 Σεπτεμβρίου – «Σίγουρη η κάθοδός του στις εκλογές»",
+      "normalized_title": "ΗΛΙΑΣ ΚΑΣΙΔΙΑΡΗΣ: ΑΠΟΦΥΛΑΚΙΖΕΤΑΙ ΣΤΙΣ 15 ΣΕΠΤΕΜΒΡΙΟΥ – «ΣΙΓΟΥΡΗ Η ΚΑΘΟΔΟΣ ΤΟΥ ΣΤΙΣ ΕΚΛΟΓΕΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465013/afthodis-pyretos-mylos-sti-lesvo-gia-tin-eythyni-ton-sfagon/",
-        "https://www.efsyn.gr/ellada/1465001/giorgos-mazonakis-aprosdioristi-i-aitia-thanatoy-en-anamoni-gia-toxikologikes-kai-istologikes/"
+        "https://www.efsyn.gr/ellada/1465016/ilias-kasidiaris-apofylakizetai-stis-15-septemvrioy-sigoyri-i-kathodos-toy-stis-ekloges/",
+        "https://www.efsyn.gr/politiki/1465010/se-politiko-adiexodo-to-maximoy-epitheseis-kata-panton-epeidi-den-toy-vgainei-tipota/",
+        "https://www.efsyn.gr/politiki/1465012/elas-se-marinaki-gia-epidoma-anergias-ektos-apo-kynikos-einai-kai-koinonika-analgitos/"
       ],
-      "seen_at_utc": "2026-09-11T09:17:00.171410+00:00"
+      "seen_at_utc": "2026-09-11T09:29:59.812031+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-posi-gkriza-iatriki-askeitai-simera-anekselegkta-stin-ellada/",
-      "title": "ΕΛΑΣ: Πόση «γκρίζα Ιατρική» ασκείται σήμερα ανεξέλεγκτα στην Ελλάδα;",
-      "normalized_title": "ΕΛΑΣ: ΠΟΣΗ «ΓΚΡΙΖΑ ΙΑΤΡΙΚΗ» ΑΣΚΕΙΤΑΙ ΣΗΜΕΡΑ ΑΝΕΞΕΛΕΓΚΤΑ ΣΤΗΝ ΕΛΛΑΔΑ;",
+      "url": "https://www.in.gr/2026/09/11/greece/rethymno-thyma-diadiktyakis-apatis-epese-65xronos-exase-40-000-eyro-perimenontas-ypsiles-apodoseis/",
+      "title": "Διαδικτυακή απάτη στο Ρέθυμνο - Έχασε 40.000 ευρώ περιμένοντας... υψηλές αποδόσεις",
+      "normalized_title": "ΔΙΑΔΙΚΤΥΑΚΗ ΑΠΑΤΗ ΣΤΟ ΡΕΘΥΜΝΟ - ΕΧΑΣΕ 40.000 ΕΥΡΩ ΠΕΡΙΜΕΝΟΝΤΑΣ... ΥΨΗΛΕΣ ΑΠΟΔΟΣΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-posi-gkriza-iatriki-askeitai-simera-anekselegkta-stin-ellada/",
-        "https://www.in.gr/2026/09/11/greece/thessaloniki-gia-ekdikitiki-pornografia-eis-varos-anilikis-katigoreitai-30xronos/",
-        "https://www.in.gr/2026/09/11/apopsi/woke-atzenta-mipos-tin-exoume-anagki-perissotero-apo-oso-theloume-na-paradextoume/",
-        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-oloklirothike-i-nekropsia-nekrotomi/"
+        "https://www.in.gr/2026/09/11/greece/rethymno-thyma-diadiktyakis-apatis-epese-65xronos-exase-40-000-eyro-perimenontas-ypsiles-apodoseis/",
+        "https://www.in.gr/2026/09/11/sports/football/i-fifa-allazei-to-arthro-17-gia-tis-lyseis-symvolaion-telos-stis-yperogkes-ritres-pou-mporoun-na-mplokaroun-enan-paikti/",
+        "https://www.in.gr/2026/09/11/greece/apofylakizetai-o-xrysaygitis-kasidiaris-stis-15-septemvriou/"
       ],
-      "seen_at_utc": "2026-09-11T09:17:00.171370+00:00"
+      "seen_at_utc": "2026-09-11T09:29:59.811983+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T09:17:00.171499+00:00"
+  "updated_at_utc": "2026-09-11T09:29:59.812202+00:00"
 }
