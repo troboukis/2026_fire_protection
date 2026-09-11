@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564453124/lesvos-syllipsi-44chronoy-gia-proklisi-pyrkagias-apo-ameleia-ston-palaiokipo/",
-      "title": "Λέσβος: Σύλληψη 44χρονου για πρόκληση πυρκαγιάς από αμέλεια στον Παλαιόκηπο",
-      "normalized_title": "ΛΕΣΒΟΣ: ΣΥΛΛΗΨΗ 44ΧΡΟΝΟΥ ΓΙΑ ΠΡΟΚΛΗΣΗ ΠΥΡΚΑΓΙΑΣ ΑΠΟ ΑΜΕΛΕΙΑ ΣΤΟΝ ΠΑΛΑΙΟΚΗΠΟ",
+      "url": "https://www.kathimerini.gr/visual/infographics/564451594/efialtis-i-thermansi-ton-fetino-cheimona/",
+      "title": "Εφιάλτης η θέρμανση τον φετινό χειμώνα",
+      "normalized_title": "ΕΦΙΑΛΤΗΣ Η ΘΕΡΜΑΝΣΗ ΤΟΝ ΦΕΤΙΝΟ ΧΕΙΜΩΝΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564453124/lesvos-syllipsi-44chronoy-gia-proklisi-pyrkagias-apo-ameleia-ston-palaiokipo/",
-        "https://www.kathimerini.gr/politics/564453076/kerameos-gia-marinaki-kai-epidoma-anergias-aystira-prosopiki-toy-thesi-ochi-tis-kyvernisis/"
+        "https://www.kathimerini.gr/visual/infographics/564451594/efialtis-i-thermansi-ton-fetino-cheimona/",
+        "https://www.kathimerini.gr/k/k-magazine/564450889/pos-tha-gemisei-pio-eykola-o-koymparas-toy-neogennitoy/",
+        "https://www.kathimerini.gr/columns/564453037/i-anthektikotita-kai-i-ypomoni-toy-sisyfoy-rafinia/",
+        "https://www.kathimerini.gr/culture/tv/564453121/krino-amp-agkathi-premiera-me-diplo-epeisodio/"
       ],
-      "seen_at_utc": "2026-09-11T14:51:27.955442+00:00"
+      "seen_at_utc": "2026-09-11T15:17:21.146950+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877397/duo-eneseis-adrenalinis-horigise-ston-giorgo-mazonaki-o-ilias-theodoropoulos/?utm_source=rss",
-      "title": "Δύο ενέσεις αδρεναλίνης χορήγησε στον Γιώργο Μαζωνάκη ο Ηλίας Θεοδωρόπουλος",
-      "normalized_title": "ΔΥΟ ΕΝΕΣΕΙΣ ΑΔΡΕΝΑΛΙΝΗΣ ΧΟΡΗΓΗΣΕ ΣΤΟΝ ΓΙΩΡΓΟ ΜΑΖΩΝΑΚΗ Ο ΗΛΙΑΣ ΘΕΟΔΩΡΟΠΟΥΛΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1877434/astunomikos-ektos-upiresias-sti-dafni-katadioxe-kai-sunelave-duo-anilikous-gia-listeia/?utm_source=rss",
+      "title": "Αστυνομικός εκτός υπηρεσίας στη Δάφνη καταδίωξε και συνέλαβε δύο ανήλικους για ληστεία",
+      "normalized_title": "ΑΣΤΥΝΟΜΙΚΟΣ ΕΚΤΟΣ ΥΠΗΡΕΣΙΑΣ ΣΤΗ ΔΑΦΝΗ ΚΑΤΑΔΙΩΞΕ ΚΑΙ ΣΥΝΕΛΑΒΕ ΔΥΟ ΑΝΗΛΙΚΟΥΣ ΓΙΑ ΛΗΣΤΕΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877397/duo-eneseis-adrenalinis-horigise-ston-giorgo-mazonaki-o-ilias-theodoropoulos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877434/astunomikos-ektos-upiresias-sti-dafni-katadioxe-kai-sunelave-duo-anilikous-gia-listeia/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877433/hardalias-ependuoume-713-ekat-euro-gia-30-nea-sholeia-apo-tous-europaikous-porous-tis-perifereias/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877428/mazonakis-oi-4-adifaseis-apo-theodoropoulo-kai-gaka-i-ora-afixis-ta-45-lepta-sti-therapeia-kai-o-halasmenos-apinidotis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877421/fotia-tora-sta-fragoulaiika-aitoloakarnanias-sikothikan-5-enaeria/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T14:51:27.955576+00:00"
+      "seen_at_utc": "2026-09-11T15:17:21.147105+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465262/ihiri-paraitisi-prytani-idiotikoy-panepistimioy-i-igesia-toy-ypoyrgeioy-paideias-yponomeyse-to-ergo-mas/",
-      "title": "Ηχηρή παραίτηση πρύτανη ιδιωτικού πανεπιστημίου: «Η ηγεσία του υπουργείου Παιδείας υπονόμευσε το έργο μας»",
-      "normalized_title": "ΗΧΗΡΗ ΠΑΡΑΙΤΗΣΗ ΠΡΥΤΑΝΗ ΙΔΙΩΤΙΚΟΥ ΠΑΝΕΠΙΣΤΗΜΙΟΥ: «Η ΗΓΕΣΙΑ ΤΟΥ ΥΠΟΥΡΓΕΙΟΥ ΠΑΙΔΕΙΑΣ ΥΠΟΝΟΜΕΥΣΕ ΤΟ ΕΡΓΟ ΜΑΣ»",
+      "url": "https://www.efsyn.gr/ellada/1465282/giorgos-mazonakis-ta-kayta-erotimata-gia-toys-dyo-katigoroymenoys-eiha-paei-gia-fagito-ypostirixe-o-giatros/",
+      "title": "Γιώργος Μαζωνάκης: Τα τρία «καυτά» ερωτήματα για τους δύο κατηγορούμενους – «Είχα πάει για φαγητό» υποστήριξε ο γιατρός",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΤΑ ΤΡΙΑ «ΚΑΥΤΑ» ΕΡΩΤΗΜΑΤΑ ΓΙΑ ΤΟΥΣ ΔΥΟ ΚΑΤΗΓΟΡΟΥΜΕΝΟΥΣ – «ΕΙΧΑ ΠΑΕΙ ΓΙΑ ΦΑΓΗΤΟ» ΥΠΟΣΤΗΡΙΞΕ Ο ΓΙΑΤΡΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465262/ihiri-paraitisi-prytani-idiotikoy-panepistimioy-i-igesia-toy-ypoyrgeioy-paideias-yponomeyse-to-ergo-mas/",
-        "https://www.efsyn.gr/ellada/1465265/nikos-hardalias-ependyoyme-713-ekat-eyro-gia-30-nea-sholeia-apo-toys-eyropaikoys-poroys-tis-perifereias/"
+        "https://www.efsyn.gr/ellada/1465282/giorgos-mazonakis-ta-kayta-erotimata-gia-toys-dyo-katigoroymenoys-eiha-paei-gia-fagito-ypostirixe-o-giatros/",
+        "https://www.efsyn.gr/kosmos/1465274/epafes-iran-me-hores-toy-kolpoy-ti-deytera-sto-epikentro-ta-stratigikis-simasias-stena-toy-ormoyz/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-k-grigoriadis-11-09-2026/",
+        "https://www.efsyn.gr/gallery/skitso-tis-ef-syn-p-zervos-11-09-2026/"
       ],
-      "seen_at_utc": "2026-09-11T14:51:27.955543+00:00"
+      "seen_at_utc": "2026-09-11T15:17:21.147053+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/life/texni/tzon-mpertzer-o-marksistis-pou-allakse-mia-gia-panta-ton-tropo-pou-vlepoume-tin-texni/",
-      "title": "Τζον Μπέρτζερ: Ο μαρξιστής που άλλαξε μια για πάντα τον τρόπο που βλέπουμε την τέχνη",
-      "normalized_title": "ΤΖΟΝ ΜΠΕΡΤΖΕΡ: Ο ΜΑΡΞΙΣΤΗΣ ΠΟΥ ΑΛΛΑΞΕ ΜΙΑ ΓΙΑ ΠΑΝΤΑ ΤΟΝ ΤΡΟΠΟ ΠΟΥ ΒΛΕΠΟΥΜΕ ΤΗΝ ΤΕΧΝΗ",
+      "url": "https://www.in.gr/2026/09/11/politics/politiki-grammateia/adeiazei-i-kerameos-ton-marinaki-gia-to-epidoma-anergias-aystira-prosopiki-tou-thesi/",
+      "title": "Αδειάζει η Κεραμέως τον Μαρινάκη για το επίδομα ανεργίας – «Αυστηρά προσωπική του θέση»",
+      "normalized_title": "ΑΔΕΙΑΖΕΙ Η ΚΕΡΑΜΕΩΣ ΤΟΝ ΜΑΡΙΝΑΚΗ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ – «ΑΥΣΤΗΡΑ ΠΡΟΣΩΠΙΚΗ ΤΟΥ ΘΕΣΗ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/life/texni/tzon-mpertzer-o-marksistis-pou-allakse-mia-gia-panta-ton-tropo-pou-vlepoume-tin-texni/",
-        "https://www.in.gr/2026/09/11/greece/tempi-den-ypoxoroume-den-ksexname-lene-oi-syggeneis-gia-tin-epanenarksi-tis-dikis/"
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/adeiazei-i-kerameos-ton-marinaki-gia-to-epidoma-anergias-aystira-prosopiki-tou-thesi/",
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/anna-papadopoulou-elas-gia-epidoma-anergias-den-einai-kratiki-eleimosyni-to-exoun-plirosei-oi-ergazomenoi/",
+        "https://www.in.gr/2026/09/11/world/ipa-25-xronia-meta-tin-11i-septemvriou-i-ameriki-plironei-akomi-to-timima/",
+        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-proskomistike-sto-nosokomeio-xoris-sfygmo-leei-o-dioikitis-tou-elpis-ereyna-gia-to-ean-xorigithike-orthos-i-oxi-i-adrenalini-ston-tragoudisti/",
+        "https://www.in.gr/2026/09/11/sports/football/superbet-kypello-elladas-to-programma-tis-3is-agonistikis-tis-league-phase/"
       ],
-      "seen_at_utc": "2026-09-11T14:51:27.955497+00:00"
+      "seen_at_utc": "2026-09-11T15:17:21.147020+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T14:51:27.955646+00:00"
+  "updated_at_utc": "2026-09-11T15:17:21.147197+00:00"
 }
