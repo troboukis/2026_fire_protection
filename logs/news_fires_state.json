@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/science/564453142/adrianos-golemis-o-ellinas-astronaytis-mila-gia-oneiro-poy-ginetai-pragmatikotita/",
-      "title": "Αδριανός Γολέμης: Ο Ελληνας αστροναύτης μιλά για όνειρο που γίνεται πραγματικότητα",
-      "normalized_title": "ΑΔΡΙΑΝΟΣ ΓΟΛΕΜΗΣ: Ο ΕΛΛΗΝΑΣ ΑΣΤΡΟΝΑΥΤΗΣ ΜΙΛΑ ΓΙΑ ΟΝΕΙΡΟ ΠΟΥ ΓΙΝΕΤΑΙ ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ",
+      "url": "https://www.kathimerini.gr/politics/amyna/564453259/deka-paraviaseis-kai-dyo-emplokes-sto-aigaio-apo-toyrkika-machitika/",
+      "title": "Δέκα παραβιάσεις και δύο εμπλοκές στο Αιγαίο από τουρκικά μαχητικά",
+      "normalized_title": "ΔΕΚΑ ΠΑΡΑΒΙΑΣΕΙΣ ΚΑΙ ΔΥΟ ΕΜΠΛΟΚΕΣ ΣΤΟ ΑΙΓΑΙΟ ΑΠΟ ΤΟΥΡΚΙΚΑ ΜΑΧΗΤΙΚΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/science/564453142/adrianos-golemis-o-ellinas-astronaytis-mila-gia-oneiro-poy-ginetai-pragmatikotita/",
-        "https://www.kathimerini.gr/society/564453196/chania-agrios-xylodarmos-mathitrias-apo-synomilikes-tis-kategrafan-tin-epithesi-se-vinteo/"
+        "https://www.kathimerini.gr/politics/amyna/564453259/deka-paraviaseis-kai-dyo-emplokes-sto-aigaio-apo-toyrkika-machitika/",
+        "https://www.kathimerini.gr/politics/564453265/pasok-kata-marinaki-oi-kyvernitikoi-ekprosopoi-den-ekfrazoyn-prosopikes-apopseis/"
       ],
-      "seen_at_utc": "2026-09-11T16:29:59.695702+00:00"
+      "seen_at_utc": "2026-09-11T16:51:06.180874+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877457/pano-apo-2000-eleghoi-se-sholika-leoforeia-apo-tin-trohaia-se-mia-imera-457-paravaseis/?utm_source=rss",
-      "title": "Πάνω από 2.000 έλεγχοι σε σχολικά λεωφορεία από την Τροχαία σε μία ημέρα, περισσότερες από 400 οι παραβάσεις",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 2.000 ΕΛΕΓΧΟΙ ΣΕ ΣΧΟΛΙΚΑ ΛΕΩΦΟΡΕΙΑ ΑΠΟ ΤΗΝ ΤΡΟΧΑΙΑ ΣΕ ΜΙΑ ΗΜΕΡΑ, ΠΕΡΙΣΣΟΤΕΡΕΣ ΑΠΟ 400 ΟΙ ΠΑΡΑΒΑΣΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1877479/o-mazonakis-itan-gia-miamisi-ora-horis-tis-aisthiseis-tou-prin-kalesoun-to-ekav-leei-o-dikigoros-tou/?utm_source=rss",
+      "title": "Ο Μαζωνάκης ήταν για μιάμιση ώρα χωρίς τις αισθήσεις του πριν καλέσουν το ΕΚΑΒ, λέει ο δικηγόρος του",
+      "normalized_title": "Ο ΜΑΖΩΝΑΚΗΣ ΗΤΑΝ ΓΙΑ ΜΙΑΜΙΣΗ ΩΡΑ ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ ΠΡΙΝ ΚΑΛΕΣΟΥΝ ΤΟ ΕΚΑΒ, ΛΕΕΙ Ο ΔΙΚΗΓΟΡΟΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877457/pano-apo-2000-eleghoi-se-sholika-leoforeia-apo-tin-trohaia-se-mia-imera-457-paravaseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877479/o-mazonakis-itan-gia-miamisi-ora-horis-tis-aisthiseis-tou-prin-kalesoun-to-ekav-leei-o-dikigoros-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877475/dedro-epese-se-paidiki-hara-stin-kalamaria-traumaties-mitera-kai-paidi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877467/duo-eblokes-me-oplismena-f-16-pano-apo-to-aigaio-kai-10-paraviaseis-tou-enaeriou-horou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877461/agrio-xulo-metaxu-anilikon-mathitrion-sta-hania-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T16:29:59.695866+00:00"
+      "seen_at_utc": "2026-09-11T16:51:06.181038+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1465330/ipa-aerodromio-stin-koitida-tis-kantri-moysikis-metonomazetai-pros-timi-tis-ntoli-parton/",
-      "title": "ΗΠΑ: Αεροδρόμιο στην κοιτίδα της κάντρι μουσικής μετονομάζεται προς τιμή της Ντόλι Πάρτον",
-      "normalized_title": "ΗΠΑ: ΑΕΡΟΔΡΟΜΙΟ ΣΤΗΝ ΚΟΙΤΙΔΑ ΤΗΣ ΚΑΝΤΡΙ ΜΟΥΣΙΚΗΣ ΜΕΤΟΝΟΜΑΖΕΤΑΙ ΠΡΟΣ ΤΙΜΗ ΤΗΣ ΝΤΟΛΙ ΠΑΡΤΟΝ",
+      "url": "https://www.efsyn.gr/oikonomia/1465345/thanatos-mazonaki-kai-diexodikos-forologikos-eleghos-sto-iatreio-toy-kolonakioy/",
+      "title": "Θάνατος Μαζωνάκη: Και διεξοδικός φορολογικός έλεγχος στο ιατρείο του Κολωνακίου",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: ΚΑΙ ΔΙΕΞΟΔΙΚΟΣ ΦΟΡΟΛΟΓΙΚΟΣ ΕΛΕΓΧΟΣ ΣΤΟ ΙΑΤΡΕΙΟ ΤΟΥ ΚΟΛΩΝΑΚΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1465330/ipa-aerodromio-stin-koitida-tis-kantri-moysikis-metonomazetai-pros-timi-tis-ntoli-parton/"
+        "https://www.efsyn.gr/oikonomia/1465345/thanatos-mazonaki-kai-diexodikos-forologikos-eleghos-sto-iatreio-toy-kolonakioy/",
+        "https://www.efsyn.gr/politiki/1465335/to-elliniko-yp-ex-katadikazei-tis-epitheseis-ton-hoythi-aparadektes-energeies-prepei-na-termatistoyn-amesa/",
+        "https://www.efsyn.gr/ellada/1465331/nea-stoiheia-gia-ton-giorgo-mazonaki-oi-giatroi-epsahnan-sto-ai-pos-na-ton-epanaferoyn-prospathisan-na-svisoyn-stoiheia/",
+        "https://www.efsyn.gr/politiki/1465332/eftase-sto-kastelorizo-o-prothypoyrgos-kyriakos-mitsotakis-symvoliki-episkepsi-mehri-tin-kyriaki/"
       ],
-      "seen_at_utc": "2026-09-11T16:29:59.695822+00:00"
+      "seen_at_utc": "2026-09-11T16:51:06.180995+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/sports/basketball/kae-olympiakos-ayta-tha-einai-ta-eisitiria-diarkeias-gia-to-neo-sef/",
-      "title": "ΚΑΕ Ολυμπιακός: Αυτά θα είναι τα εισιτήρια διαρκείας για το νέο ΣΕΦ",
-      "normalized_title": "ΚΑΕ ΟΛΥΜΠΙΑΚΟΣ: ΑΥΤΑ ΘΑ ΕΙΝΑΙ ΤΑ ΕΙΣΙΤΗΡΙΑ ΔΙΑΡΚΕΙΑΣ ΓΙΑ ΤΟ ΝΕΟ ΣΕΦ",
+      "url": "https://www.in.gr/2026/09/11/sports/othersports/ethniki-volei-itta-stin-premiera-tou-eurovolley-vids/",
+      "title": "Εθνική βόλεϊ: Ήττα στην πρεμιέρα του Eurovolley (vids)",
+      "normalized_title": "ΕΘΝΙΚΗ ΒΟΛΕΙ: ΗΤΤΑ ΣΤΗΝ ΠΡΕΜΙΕΡΑ ΤΟΥ EUROVOLLEY (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/sports/basketball/kae-olympiakos-ayta-tha-einai-ta-eisitiria-diarkeias-gia-to-neo-sef/",
-        "https://www.in.gr/2026/09/11/politics/epikairotita/arvanitis-i-kyvernisi-timorei-tin-anergia-yper-tis-ergodosias/",
-        "https://www.in.gr/2026/09/11/go-fun/fizz/maria-korinthiou-pos-ezise-tin-11i-septemviou-eno-spoudaze-se-amerikaniko-panepistimio/"
+        "https://www.in.gr/2026/09/11/sports/othersports/ethniki-volei-itta-stin-premiera-tou-eurovolley-vids/",
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/live-i-omilia-tis-renas-dourou-stin-politiki-ekdilosi-tou-syriza-sti-deth/",
+        "https://www.in.gr/2026/09/11/world/nayagio-stin-keryneia-sygklonizei-sygklonistiko-vinteo-pou-kategrapse-agnooumenos-kai-to-esteile-stin-oikogeneia-tou/"
       ],
-      "seen_at_utc": "2026-09-11T16:29:59.695774+00:00"
+      "seen_at_utc": "2026-09-11T16:51:06.180948+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T16:29:59.695956+00:00"
+  "updated_at_utc": "2026-09-11T16:51:06.181106+00:00"
 }
