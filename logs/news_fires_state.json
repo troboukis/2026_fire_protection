@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564453229/dafni-astynomikos-ektos-ypiresias-synelave-anilikoys-gia-listeia/",
-      "title": "Δάφνη: Αστυνομικός εκτός υπηρεσίας συνέλαβε ανήλικους για ληστεία",
-      "normalized_title": "ΔΑΦΝΗ: ΑΣΤΥΝΟΜΙΚΟΣ ΕΚΤΟΣ ΥΠΗΡΕΣΙΑΣ ΣΥΝΕΛΑΒΕ ΑΝΗΛΙΚΟΥΣ ΓΙΑ ΛΗΣΤΕΙΑ",
+      "url": "https://www.kathimerini.gr/culture/564452788/i-fcc-vazei-freno-ston-tzimi-kimel-sto-youtube-i-synenteyxi-me-dimokratiko-ypopsifio/",
+      "title": "Η FCC «βάζει φρένο» στον Τζίμι Κίμελ – Στο YouTube η συνέντευξη με Δημοκρατικό υποψήφιο",
+      "normalized_title": "Η FCC «ΒΑΖΕΙ ΦΡΕΝΟ» ΣΤΟΝ ΤΖΙΜΙ ΚΙΜΕΛ – ΣΤΟ YOUTUBE Η ΣΥΝΕΝΤΕΥΞΗ ΜΕ ΔΗΜΟΚΡΑΤΙΚΟ ΥΠΟΨΗΦΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564453229/dafni-astynomikos-ektos-ypiresias-synelave-anilikoys-gia-listeia/"
+        "https://www.kathimerini.gr/culture/564452788/i-fcc-vazei-freno-ston-tzimi-kimel-sto-youtube-i-synenteyxi-me-dimokratiko-ypopsifio/",
+        "https://www.kathimerini.gr/world/564453112/11i-septemvrioy-syggeneis-thymaton-zitoyn-apo-ton-tramp-na-anoixei-toys-fakeloys-gia-ti-saoydiki-aravia/"
       ],
-      "seen_at_utc": "2026-09-11T20:30:02.003948+00:00"
+      "seen_at_utc": "2026-09-11T20:51:11.334169+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1268,24 +1269,25 @@
       "seen_at_utc": "2026-09-11T20:30:02.004087+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465425/gallia-ektrohiastike-treno-dekades-oi-traymaties/",
-      "title": "Γαλλία: Εκτροχιάστηκε τρένο, δεκάδες οι τραυματίες",
-      "normalized_title": "ΓΑΛΛΙΑ: ΕΚΤΡΟΧΙΑΣΤΗΚΕ ΤΡΕΝΟ, ΔΕΚΑΔΕΣ ΟΙ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.efsyn.gr/kosmos/1465437/ipa-sto-fos-aporrita-eggrafa-gia-tin-al-kainta-prin-tin-11i-septemvrioy-mporei-na-rixei-aeroplano-me-ekriktika-se-poli/",
+      "title": "ΗΠΑ: Στο φως απόρρητα έγγραφα για την Αλ Κάιντα πριν την 11η Σεπτεμβρίου – «Μπορεί να ρίξει αεροπλάνο με εκρηκτικά σε πόλη»",
+      "normalized_title": "ΗΠΑ: ΣΤΟ ΦΩΣ ΑΠΟΡΡΗΤΑ ΕΓΓΡΑΦΑ ΓΙΑ ΤΗΝ ΑΛ ΚΑΙΝΤΑ ΠΡΙΝ ΤΗΝ 11Η ΣΕΠΤΕΜΒΡΙΟΥ – «ΜΠΟΡΕΙ ΝΑ ΡΙΞΕΙ ΑΕΡΟΠΛΑΝΟ ΜΕ ΕΚΡΗΚΤΙΚΑ ΣΕ ΠΟΛΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465425/gallia-ektrohiastike-treno-dekades-oi-traymaties/"
+        "https://www.efsyn.gr/kosmos/1465437/ipa-sto-fos-aporrita-eggrafa-gia-tin-al-kainta-prin-tin-11i-septemvrioy-mporei-na-rixei-aeroplano-me-ekriktika-se-poli/"
       ],
-      "seen_at_utc": "2026-09-11T20:30:02.004035+00:00"
+      "seen_at_utc": "2026-09-11T20:51:11.334266+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/sports/basketball/mpartzokas-den-eimaste-etoimoi-exoume-polla-na-veltiosoume-se-epithesi-kai-amyna/",
-      "title": "Μπαρτζώκας: «Δεν είμαστε έτοιμοι, έχουμε πολλά να βελτιώσουμε σε επίθεση και άμυνα»",
-      "normalized_title": "ΜΠΑΡΤΖΩΚΑΣ: «ΔΕΝ ΕΙΜΑΣΤΕ ΕΤΟΙΜΟΙ, ΕΧΟΥΜΕ ΠΟΛΛΑ ΝΑ ΒΕΛΤΙΩΣΟΥΜΕ ΣΕ ΕΠΙΘΕΣΗ ΚΑΙ ΑΜΥΝΑ»",
+      "url": "https://www.in.gr/2026/09/11/world/leykos-oikos-rosos-aksiomatouxos-tha-metasxei-sti-synodo-tis-g20-gia-tin-energeia-sto-xiouston/",
+      "title": "Λευκός Οίκος: Ρώσος αξιωματούχος θα μετάσχει στη σύνοδο της G20 για την ενέργεια στο Χιούστον",
+      "normalized_title": "ΛΕΥΚΟΣ ΟΙΚΟΣ: ΡΩΣΟΣ ΑΞΙΩΜΑΤΟΥΧΟΣ ΘΑ ΜΕΤΑΣΧΕΙ ΣΤΗ ΣΥΝΟΔΟ ΤΗΣ G20 ΓΙΑ ΤΗΝ ΕΝΕΡΓΕΙΑ ΣΤΟ ΧΙΟΥΣΤΟΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/sports/basketball/mpartzokas-den-eimaste-etoimoi-exoume-polla-na-veltiosoume-se-epithesi-kai-amyna/",
-        "https://www.in.gr/2026/09/11/world/mentventef-i-lithouania-tha-eksafanistei-apo-ton-xarti-an-topothetisei-pyrinika-enantion-tis-rosias/"
+        "https://www.in.gr/2026/09/11/world/leykos-oikos-rosos-aksiomatouxos-tha-metasxei-sti-synodo-tis-g20-gia-tin-energeia-sto-xiouston/",
+        "https://www.in.gr/2026/09/11/world/ipa-i-cia-apoxaraktirise-aporrita-eggrafa-gia-tin-al-kainta-prin-apo-tis-epitheseis-tis-11is-septemvriou-2001/",
+        "https://www.in.gr/2026/09/11/stories/giorgos-mazonakis-i-istoria-pou-den-graftike-akoma/"
       ],
-      "seen_at_utc": "2026-09-11T20:30:02.003999+00:00"
+      "seen_at_utc": "2026-09-11T20:51:11.334222+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T20:30:02.004183+00:00"
+  "updated_at_utc": "2026-09-11T20:51:11.334338+00:00"
 }
