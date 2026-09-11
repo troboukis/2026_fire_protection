@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564453091/ntanta-tis-geitonias-xekinisan-ta-gyrismata-tis-neas-komikis-seiras-toy-mega/",
-      "title": "«Νταντά της Γειτονιάς»: Ξεκίνησαν τα γυρίσματα της νέας κωμικής σειράς του MEGA",
-      "normalized_title": "«ΝΤΑΝΤΑ ΤΗΣ ΓΕΙΤΟΝΙΑΣ»: ΞΕΚΙΝΗΣΑΝ ΤΑ ΓΥΡΙΣΜΑΤΑ ΤΗΣ ΝΕΑΣ ΚΩΜΙΚΗΣ ΣΕΙΡΑΣ ΤΟΥ MEGA",
+      "url": "https://www.kathimerini.gr/society/564453229/dafni-astynomikos-ektos-ypiresias-synelave-anilikoys-gia-listeia/",
+      "title": "Δάφνη: Αστυνομικός εκτός υπηρεσίας συνέλαβε ανήλικους για ληστεία",
+      "normalized_title": "ΔΑΦΝΗ: ΑΣΤΥΝΟΜΙΚΟΣ ΕΚΤΟΣ ΥΠΗΡΕΣΙΑΣ ΣΥΝΕΛΑΒΕ ΑΝΗΛΙΚΟΥΣ ΓΙΑ ΛΗΣΤΕΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564453091/ntanta-tis-geitonias-xekinisan-ta-gyrismata-tis-neas-komikis-seiras-toy-mega/",
-        "https://www.kathimerini.gr/society/564452935/thessaloniki-kartes-dorean-metakiniseon-se-4-000-mathites/",
-        "https://www.kathimerini.gr/athletics/564454159/deyteros-sti-voydapesti-o-karalis/",
-        "https://www.kathimerini.gr/life/techniti-noimosyni/564454108/ipa-i-anthropic-katigorei-ta-iae-oti-chrisimopoiisan-ai-agents-enantion-empeirognomonon-toy-oie/"
+        "https://www.kathimerini.gr/society/564453229/dafni-astynomikos-ektos-ypiresias-synelave-anilikoys-gia-listeia/"
       ],
-      "seen_at_utc": "2026-09-11T20:17:03.182019+00:00"
+      "seen_at_utc": "2026-09-11T20:30:02.003948+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,35 +1259,33 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877531/deite-fotografies-dokoumeda-o-giatros-theodoropoulos-se-estiatorio-sto-kolonaki/?utm_source=rss",
-      "title": "Γιώργος Μαζωνάκης: Ο Ηλίας Θεοδωρόπουλος σε εστιατόριο στο Κολωνάκι, τα ντοκουμέντα που καίνε το άλλοθι που επικαλέστηκε",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: Ο ΗΛΙΑΣ ΘΕΟΔΩΡΟΠΟΥΛΟΣ ΣΕ ΕΣΤΙΑΤΟΡΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ, ΤΑ ΝΤΟΚΟΥΜΕΝΤΑ ΠΟΥ ΚΑΙΝΕ ΤΟ ΑΛΛΟΘΙ ΠΟΥ ΕΠΙΚΑΛΕΣΤΗΚΕ",
+      "url": "https://www.protothema.gr/greece/article/1877553/efialtis-gia-mitera-sti-suro-kataggellei-oti-omada-efivon-tin-apeilise-brosta-sto-paidi-tis-anagastike-na-trapei-se-fugi/?utm_source=rss",
+      "title": "Εφιάλτης για μητέρα στη Σύρο, καταγγέλλει ότι ομάδα εφήβων την απείλησε μπροστά στο παιδί της, αναγκάστηκε να τραπεί σε φυγή",
+      "normalized_title": "ΕΦΙΑΛΤΗΣ ΓΙΑ ΜΗΤΕΡΑ ΣΤΗ ΣΥΡΟ, ΚΑΤΑΓΓΕΛΛΕΙ ΟΤΙ ΟΜΑΔΑ ΕΦΗΒΩΝ ΤΗΝ ΑΠΕΙΛΗΣΕ ΜΠΡΟΣΤΑ ΣΤΟ ΠΑΙΔΙ ΤΗΣ, ΑΝΑΓΚΑΣΤΗΚΕ ΝΑ ΤΡΑΠΕΙ ΣΕ ΦΥΓΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877531/deite-fotografies-dokoumeda-o-giatros-theodoropoulos-se-estiatorio-sto-kolonaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877553/efialtis-gia-mitera-sti-suro-kataggellei-oti-omada-efivon-tin-apeilise-brosta-sto-paidi-tis-anagastike-na-trapei-se-fugi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T19:30:02.860253+00:00"
+      "seen_at_utc": "2026-09-11T20:30:02.004087+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/athlitismos/1465414/karalis-koitaxe-xana-sta-matia-ton-ntoyplantis-katektise-ti-deyteri-thesi-sto-ultimate-championship-vinteo/",
-      "title": "Καραλής: Κοίταξε ξανά στα μάτια τον Ντουπλάντις – Κατέκτησε τη δεύτερη θέση στο Ultimate Championship [βίντεο]",
-      "normalized_title": "ΚΑΡΑΛΗΣ: ΚΟΙΤΑΞΕ ΞΑΝΑ ΣΤΑ ΜΑΤΙΑ ΤΟΝ ΝΤΟΥΠΛΑΝΤΙΣ – ΚΑΤΕΚΤΗΣΕ ΤΗ ΔΕΥΤΕΡΗ ΘΕΣΗ ΣΤΟ ULTIMATE CHAMPIONSHIP [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1465425/gallia-ektrohiastike-treno-dekades-oi-traymaties/",
+      "title": "Γαλλία: Εκτροχιάστηκε τρένο, δεκάδες οι τραυματίες",
+      "normalized_title": "ΓΑΛΛΙΑ: ΕΚΤΡΟΧΙΑΣΤΗΚΕ ΤΡΕΝΟ, ΔΕΚΑΔΕΣ ΟΙ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/athlitismos/1465414/karalis-koitaxe-xana-sta-matia-ton-ntoyplantis-katektise-ti-deyteri-thesi-sto-ultimate-championship-vinteo/"
+        "https://www.efsyn.gr/kosmos/1465425/gallia-ektrohiastike-treno-dekades-oi-traymaties/"
       ],
-      "seen_at_utc": "2026-09-11T20:17:03.182095+00:00"
+      "seen_at_utc": "2026-09-11T20:30:02.004035+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/world/treno-me-200-epivainontes-ektroxiastike-sti-gallia-yparxoun-traymaties/",
-      "title": "Τρένο με 200 επιβαίνοντες εκτροχιάστηκε στη Γαλλία – Υπάρχουν τραυματίες",
-      "normalized_title": "ΤΡΕΝΟ ΜΕ 200 ΕΠΙΒΑΙΝΟΝΤΕΣ ΕΚΤΡΟΧΙΑΣΤΗΚΕ ΣΤΗ ΓΑΛΛΙΑ – ΥΠΑΡΧΟΥΝ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.in.gr/2026/09/11/sports/basketball/mpartzokas-den-eimaste-etoimoi-exoume-polla-na-veltiosoume-se-epithesi-kai-amyna/",
+      "title": "Μπαρτζώκας: «Δεν είμαστε έτοιμοι, έχουμε πολλά να βελτιώσουμε σε επίθεση και άμυνα»",
+      "normalized_title": "ΜΠΑΡΤΖΩΚΑΣ: «ΔΕΝ ΕΙΜΑΣΤΕ ΕΤΟΙΜΟΙ, ΕΧΟΥΜΕ ΠΟΛΛΑ ΝΑ ΒΕΛΤΙΩΣΟΥΜΕ ΣΕ ΕΠΙΘΕΣΗ ΚΑΙ ΑΜΥΝΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/world/treno-me-200-epivainontes-ektroxiastike-sti-gallia-yparxoun-traymaties/",
-        "https://www.in.gr/2026/09/11/world/mentventef-i-lithouania-tha-eksafanistei-apo-ton-xarti-an-topothetisei-pyrinika-enantion-tis-rosias/",
-        "https://www.in.gr/2026/09/11/sports/basketball/olympiakos-erythros-asteras-89-87-vezenkof-kai-montero-ekanan-ti-diafora/",
-        "https://www.in.gr/2026/09/11/sports/othersports/nea-spoudaia-emfanisi-apo-ton-karali-deyteros-sto-ultimate-championship-me-alma-sta-6-15m-vids/"
+        "https://www.in.gr/2026/09/11/sports/basketball/mpartzokas-den-eimaste-etoimoi-exoume-polla-na-veltiosoume-se-epithesi-kai-amyna/",
+        "https://www.in.gr/2026/09/11/world/mentventef-i-lithouania-tha-eksafanistei-apo-ton-xarti-an-topothetisei-pyrinika-enantion-tis-rosias/"
       ],
-      "seen_at_utc": "2026-09-11T20:17:03.182058+00:00"
+      "seen_at_utc": "2026-09-11T20:30:02.003999+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T20:17:03.182172+00:00"
+  "updated_at_utc": "2026-09-11T20:30:02.004183+00:00"
 }
