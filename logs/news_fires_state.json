@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/astynomiko/564451231/loyloydia-me-koka-ni-apo-tin-kolomvia/",
-      "title": "Λουλούδια με κοκαΐνη από την Κολομβία",
-      "normalized_title": "ΛΟΥΛΟΥΔΙΑ ΜΕ ΚΟΚΑΙΝΗ ΑΠΟ ΤΗΝ ΚΟΛΟΜΒΙΑ",
+      "url": "https://www.kathimerini.gr/society/564451765/antiproedros-vans-kata-dimokratikon-to-komma-toy-misoys/",
+      "title": "Αντιπρόεδρος Βανς κατά Δημοκρατικών: Το «κόμμα του μίσους»",
+      "normalized_title": "ΑΝΤΙΠΡΟΕΔΡΟΣ ΒΑΝΣ ΚΑΤΑ ΔΗΜΟΚΡΑΤΙΚΩΝ: ΤΟ «ΚΟΜΜΑ ΤΟΥ ΜΙΣΟΥΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/astynomiko/564451231/loyloydia-me-koka-ni-apo-tin-kolomvia/",
-        "https://www.kathimerini.gr/society/564451747/messinia-60chronos-kataplakothike-apo-trakter-anasyrthike-choris-tis-aisthiseis-toy/",
-        "https://www.kathimerini.gr/society/564451255/amal-kloynei-otan-ertho-xana-elpizo-ta-glypta-na-einai-edo/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564451210/oi-ipa-chairetizoyn-ti-symfonia-gia-tin-aspida-toy-achillea/",
-        "https://www.kathimerini.gr/society/ekpaideysi/564451732/enarxi-tis-scholikis-chronias-me-ton-kathieromeno-agiasmo-sta-scholeia/",
-        "https://www.kathimerini.gr/economy/international/564451720/ekt-eyteri-ayxisi-epitokion-kai-epontai-kai-alles/",
-        "https://www.kathimerini.gr/society/reportaz/564451153/thanatos-mazonaki-ta-eyrimata-poy-odigisan-sti-syllipsi-ton-dyo-giatron/",
-        "https://www.kathimerini.gr/world/564451300/tramp-vaftise-merisma-tin-exagora-psifoy/"
+        "https://www.kathimerini.gr/society/564451765/antiproedros-vans-kata-dimokratikon-to-komma-toy-misoys/",
+        "https://www.kathimerini.gr/politics/parties/564451228/epithesi-koytsoympa-se-tsipra-apo-ti-deth/",
+        "https://www.kathimerini.gr/society/564451768/petroy-ralli-trochaio-me-epeisodiaki-katalixi-pente-prosagoges/",
+        "https://www.kathimerini.gr/world/564451741/stena-toy-ormoyz-pithani-diarroi-ydrogonanthrakon-apo-ta-pligmata-se-pente-iranika-tanker/"
       ],
-      "seen_at_utc": "2026-09-11T04:17:10.465597+00:00"
+      "seen_at_utc": "2026-09-11T04:30:15.041584+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,13 +1262,14 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877051/horis-tis-aisthiseis-tou-apeglovistike-60hronos-pou-kataplakothike-apo-trakter-sti-messinia/?utm_source=rss",
-      "title": "Χωρίς τις αισθήσεις του απεγκλωβίστηκε 60χρονος που καταπλακώθηκε από τρακτέρ στη Μεσσηνία",
-      "normalized_title": "ΧΩΡΙΣ ΤΙΣ ΑΙΣΘΗΣΕΙΣ ΤΟΥ ΑΠΕΓΚΛΩΒΙΣΤΗΚΕ 60ΧΡΟΝΟΣ ΠΟΥ ΚΑΤΑΠΛΑΚΩΘΗΚΕ ΑΠΟ ΤΡΑΚΤΕΡ ΣΤΗ ΜΕΣΣΗΝΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1877082/se-ufesi-horis-energes-esties-i-purkagia-plagia-sto-kilkis/?utm_source=rss",
+      "title": "Σε ύφεση, χωρίς ενεργές εστίες, η πυρκαγιά Πλαγιά στο Κιλκίς",
+      "normalized_title": "ΣΕ ΥΦΕΣΗ, ΧΩΡΙΣ ΕΝΕΡΓΕΣ ΕΣΤΙΕΣ, Η ΠΥΡΚΑΓΙΑ ΠΛΑΓΙΑ ΣΤΟ ΚΙΛΚΙΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877051/horis-tis-aisthiseis-tou-apeglovistike-60hronos-pou-kataplakothike-apo-trakter-sti-messinia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877082/se-ufesi-horis-energes-esties-i-purkagia-plagia-sto-kilkis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877069/simera-ston-eisaggelea-oi-duo-giatroi-gia-ton-thanato-tou-mazonaki-oi-adifaseis-oi-kameres-kai-i-plasmafairesi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-10T22:17:02.396395+00:00"
+      "seen_at_utc": "2026-09-11T04:30:15.041707+00:00"
     },
     "efsyn": {
       "url": "https://www.efsyn.gr/kosmos/1464845/11i-septemvrioy-25-hronia-meta-psemata-kai-antifaseis-to-neo-afigima-toy-tramp-gia-na-kerdisei-pontoys/",
@@ -1289,39 +1286,14 @@
       "seen_at_utc": "2026-09-11T04:17:10.465715+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/world/to-iran-sklirainei-ton-tono-prin-apo-tis-endiameses-ekloges-stis-ipa-nees-epitheseis-sta-stena-tou-ormouz/",
-      "title": "Το Ιράν σκληραίνει τον τόνο πριν από τις ενδιάμεσες εκλογές στις ΗΠΑ – Νέες επιθέσεις στα Στενά του Ορμούζ",
-      "normalized_title": "ΤΟ ΙΡΑΝ ΣΚΛΗΡΑΙΝΕΙ ΤΟΝ ΤΟΝΟ ΠΡΙΝ ΑΠΟ ΤΙΣ ΕΝΔΙΑΜΕΣΕΣ ΕΚΛΟΓΕΣ ΣΤΙΣ ΗΠΑ – ΝΕΕΣ ΕΠΙΘΕΣΕΙΣ ΣΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ",
+      "url": "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-sto-epikentro-to-krisimo-trioro-stin-kliniki-prin-tin-anakopi-simera-i-nekropsia-ston-eisaggelea-oi-giatroi/",
+      "title": "Στο μικροσκόπιο το κρίσιμο τρίωρο στην κλινική πριν από την ανακοπή του Μαζωνάκη - Σήμερα η νεκροψία, στον εισαγγελέα οι γιατροί",
+      "normalized_title": "ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΤΟ ΚΡΙΣΙΜΟ ΤΡΙΩΡΟ ΣΤΗΝ ΚΛΙΝΙΚΗ ΠΡΙΝ ΑΠΟ ΤΗΝ ΑΝΑΚΟΠΗ ΤΟΥ ΜΑΖΩΝΑΚΗ - ΣΗΜΕΡΑ Η ΝΕΚΡΟΨΙΑ, ΣΤΟΝ ΕΙΣΑΓΓΕΛΕΑ ΟΙ ΓΙΑΤΡΟΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/world/to-iran-sklirainei-ton-tono-prin-apo-tis-endiameses-ekloges-stis-ipa-nees-epitheseis-sta-stena-tou-ormouz/",
-        "https://www.in.gr/2026/09/11/health/ependysi-i-ygeia-me-xrimatodotisi-tis-kainotomias/",
-        "https://www.in.gr/2026/09/11/life/geysi/syntagi-froutosalata-me-giaourti/",
-        "https://www.in.gr/2026/09/11/politics/pasok-i-xarilaou-trikoupi-kleinei-tin-porta-kai-ston-marinaki-meta-ton-tsipra/",
-        "https://www.in.gr/2026/09/11/greece/proto-koudouni-me-elleipseis-sta-sxoleia-etoimazoun-kinitopoiiseis-oi-ekpaideytikoi/",
-        "https://www.in.gr/2026/09/11/plus/vita/ereyna-to-skaki-mas-kanei-pio-eksypnous/",
-        "https://www.in.gr/2026/09/11/greece/aithrios-o-kairos-simera-paraskeyi-pou-tha-simeiothoun-topikes-mpores/",
-        "https://www.in.gr/2026/09/11/go-fun/perierga/i-sintnei-souini-stin-pio-provokatoriki-diafimisi-tis-eos-tora/",
-        "https://www.in.gr/2026/09/11/plus/vita/giati-to-myalo-mas-kollaei-sto-xeirotero-senario/",
-        "https://www.in.gr/2026/09/11/in-science/technology/teinei-na-ksefygei-ektos-anthropinou-elegxou-i-texniti-noimosyni/",
-        "https://www.in.gr/2026/09/11/in-science/ai/epikefalis-tis-openai-proeidopoiei-pos-kaneis-den-einai-proetoimasmenos-gia-tis-synepeies-tis-texnitis-noimosynis/",
-        "https://www.in.gr/2026/09/11/economy/diethnis-oikonomia/airbnb-eyropaiko-freno-sti-vraxyxronia-misthosi-ti-tha-ginei-stin-ellada/",
-        "https://www.in.gr/2026/09/11/economy/o-neos-xartis-misthon-se-dimosio-kai-idiotiko-tomea/",
-        "https://www.in.gr/2026/09/11/health/aytoktonia-kai-prolipsi-ta-aorata-simadia-pou-den-prepei-na-agnooume/",
-        "https://www.in.gr/2026/09/11/economy/oikonomikes-eidiseis/to-petrelaio-vazei-fotia-se-times-kai-plithorismo/",
-        "https://www.in.gr/2026/09/11/world/meta-tin-11i-septemvriou-oi-ipa-enisxysan-ton-antitromokratiko-mixanismo-o-tramp-ton-estrepse-sto-esoteriko/",
-        "https://www.in.gr/2026/09/11/life/culture-live/to-ntokimanter-naza-katerripse-rekor-sti-venetia-me-ovacion-245-lepton/",
-        "https://www.in.gr/2026/09/11/economy/diethnis-oikonomia/xamiloi-misthoi-apiasto-oneiro-i-agora-spitiou-75-t-m-gia-7-stous-stous-10-eyropaious-oi-ellines-anamesa-tous/",
-        "https://www.in.gr/2026/09/11/politics/epikairotita/tourkia-pos-fantazetai-to-tel-aviv-enan-tourko-israilino-polemo/",
-        "https://www.in.gr/2026/09/11/politics/paraskinio/tourkia-tourkika-maxitika-pano-apo-tis-pyramides-tis-gkizas-ti-mera-tis-trimerous-elladas-aigyptou-kyprou/",
-        "https://www.in.gr/2026/09/11/politics/epikairotita/israil-safes-minyma-pros-tin-touria-to-aigyptiako-agima-stin-kypro-grafei-i-maariv/",
-        "https://www.in.gr/2026/09/11/world/ipa-i-syzygos-tou-madouro-zita-tin-apofylakisi-tis-gia-logous-ygeias/",
-        "https://www.in.gr/2026/09/11/world/11i-septemvriou-i-nea-yorki-tima-ta-thymata-25-xronia-apo-tis-tromokratikes-epitheseis/",
-        "https://www.in.gr/2026/09/11/in-science/perivallon-b-science/stena-tou-ormouz-pithanes-diarroes-ydrogonanthrakon-orates-apo-doryforous-meta-tous-vomvardismous-ton-ipa/",
-        "https://www.in.gr/2026/09/11/in-science/technology/ee-i-fon-nter-laien-parousiazei-tin-protasi-tis-gia-tin-prosvasi-ton-anilikon-stis-platformes/",
-        "https://www.in.gr/2026/09/11/world/i-algeria-diakoptei-tis-diplomatikes-sxeseis-tis-me-ta-iae-me-katigories-gia-proklitikes-energeies/"
+        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-sto-epikentro-to-krisimo-trioro-stin-kliniki-prin-tin-anakopi-simera-i-nekropsia-ston-eisaggelea-oi-giatroi/"
       ],
-      "seen_at_utc": "2026-09-11T04:17:10.465673+00:00"
+      "seen_at_utc": "2026-09-11T04:30:15.041673+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T04:17:10.465793+00:00"
+  "updated_at_utc": "2026-09-11T04:30:15.041820+00:00"
 }
