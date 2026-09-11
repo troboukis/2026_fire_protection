@@ -1,20 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564452038/rethymno-65chronos-nomize-oti-ependyei-se-xenes-trapezes-kai-echase-40-000-eyro/",
-      "title": "Ρέθυμνο: 65χρονος νόμιζε ότι επενδύει σε ξένες τράπεζες και έχασε 40.000 ευρώ",
-      "normalized_title": "ΡΕΘΥΜΝΟ: 65ΧΡΟΝΟΣ ΝΟΜΙΖΕ ΟΤΙ ΕΠΕΝΔΥΕΙ ΣΕ ΞΕΝΕΣ ΤΡΑΠΕΖΕΣ ΚΑΙ ΕΧΑΣΕ 40.000 ΕΥΡΩ",
+      "url": "https://www.kathimerini.gr/world/564452146/enteinetai-to-dimografiko-stin-iaponia-pano-apo-to-30-ton-agamon-neon-den-thelei-paidia/",
+      "title": "Εντείνεται το δημογραφικό στην Ιαπωνία: Πάνω από το 30% των άγαμων νέων δεν θέλει παιδιά",
+      "normalized_title": "ΕΝΤΕΙΝΕΤΑΙ ΤΟ ΔΗΜΟΓΡΑΦΙΚΟ ΣΤΗΝ ΙΑΠΩΝΙΑ: ΠΑΝΩ ΑΠΟ ΤΟ 30% ΤΩΝ ΑΓΑΜΩΝ ΝΕΩΝ ΔΕΝ ΘΕΛΕΙ ΠΑΙΔΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564452038/rethymno-65chronos-nomize-oti-ependyei-se-xenes-trapezes-kai-echase-40-000-eyro/",
-        "https://www.kathimerini.gr/politics/foreign-policy/564452125/ypex-gia-11i-septemvrioy-25-chronia-meta-stekomaste-enomenoi-apenanti-stin-tromokratia/",
-        "https://www.kathimerini.gr/economy/564451615/anevazei-tachytita-i-energean-se-israil-ellada-kai-aigypto/",
-        "https://www.kathimerini.gr/society/564452119/naypaktos-odigos-mpike-sto-antitheto-reyma-kai-prokalese-atychima/",
-        "https://www.kathimerini.gr/world/564452074/milano-ekkenothike-aeroplano-traymatistikan-dyo-atoma-kai-ekleise-aerodromio-apo-anaflexi-power-bank/",
-        "https://www.kathimerini.gr/world/564452056/synedrio-repoymplikanon-tessera-symperasmata-kai-i-proedriki-emfanisi-vans/",
-        "https://www.kathimerini.gr/society/564452104/epicheirisi-diasosis-peripoy-98-metanaston-notia-tis-kritis/",
-        "https://www.kathimerini.gr/society/reportaz/564451159/i-skoteini-agora-tis-technitis-eyexias/"
+        "https://www.kathimerini.gr/world/564452146/enteinetai-to-dimografiko-stin-iaponia-pano-apo-to-30-ton-agamon-neon-den-thelei-paidia/",
+        "https://www.kathimerini.gr/culture/564451405/to-schedio-gia-ton-agnosto-stratioti/",
+        "https://www.kathimerini.gr/world/564452170/elvetia-pente-nekroi-apo-tin-anatropi-toy-toyristikoy-leoforeioy/",
+        "https://www.kathimerini.gr/world/564452143/soyidia-eklogiko-thriler-me-to-vlemma-stis-vryxelles/",
+        "https://www.kathimerini.gr/world/564452137/chongk-kongk-aktivistes-yper-tis-dimokratias-katadikastikan-se-katheirxi-eos-7-eton/",
+        "https://www.kathimerini.gr/society/564452140/drama-cheiropedes-se-59chrono-gia-tin-pyrkagia-stin-platania-xekinise-apo-pyraktomena-karvoyna/"
       ],
-      "seen_at_utc": "2026-09-11T07:51:13.482437+00:00"
+      "seen_at_utc": "2026-09-11T08:17:56.302462+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,38 +1264,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877177/volos-sunelifthi-upoptos-gia-sexoualiki-kakopoiisi-9hronis-i-kataggelia-pou-apokalupse-ton-efialti/?utm_source=rss",
-      "title": "Βόλος: Συνελήφθη ύποπτος για σεξουαλική κακοποίηση 9χρονης, η καταγγελία που αποκάλυψε τον εφιάλτη",
-      "normalized_title": "ΒΟΛΟΣ: ΣΥΝΕΛΗΦΘΗ ΥΠΟΠΤΟΣ ΓΙΑ ΣΕΞΟΥΑΛΙΚΗ ΚΑΚΟΠΟΙΗΣΗ 9ΧΡΟΝΗΣ, Η ΚΑΤΑΓΓΕΛΙΑ ΠΟΥ ΑΠΟΚΑΛΥΨΕ ΤΟΝ ΕΦΙΑΛΤΗ",
+      "url": "https://www.protothema.gr/greece/article/1877195/dikigoros-oikogeneias-mazonaki-tha-zitisoume-arsi-tou-aporritou-ton-epikoinonion-na-mathoume-ti-egine/?utm_source=rss",
+      "title": "Δικηγόρος οικογένειας Μαζωνάκη: Θα ζητήσουμε άρση του απορρήτου των επικοινωνιών, να μάθουμε τι έγινε εκείνες τις κρίσιμες ώρες",
+      "normalized_title": "ΔΙΚΗΓΟΡΟΣ ΟΙΚΟΓΕΝΕΙΑΣ ΜΑΖΩΝΑΚΗ: ΘΑ ΖΗΤΗΣΟΥΜΕ ΑΡΣΗ ΤΟΥ ΑΠΟΡΡΗΤΟΥ ΤΩΝ ΕΠΙΚΟΙΝΩΝΙΩΝ, ΝΑ ΜΑΘΟΥΜΕ ΤΙ ΕΓΙΝΕ ΕΚΕΙΝΕΣ ΤΙΣ ΚΡΙΣΙΜΕΣ ΩΡΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877177/volos-sunelifthi-upoptos-gia-sexoualiki-kakopoiisi-9hronis-i-kataggelia-pou-apokalupse-ton-efialti/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877195/dikigoros-oikogeneias-mazonaki-tha-zitisoume-arsi-tou-aporritou-ton-epikoinonion-na-mathoume-ti-egine/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877190/30hronos-sti-thessaloniki-katigoreitai-gia-revenge-porn-se-varos-17hronis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877181/drama-sunelifthi-59hronos-gia-dasiki-purkagia-pou-xekinise-apo-puraktomena-karvouna/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T07:51:13.482586+00:00"
+      "seen_at_utc": "2026-09-11T08:17:56.302660+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1464957/kavgas-patoyli-danika-gia-iatreio-ehete-kapoio-provlima-mazi-moy-aneheste-emporio-san-iatrikos-syllogos/",
-      "title": "Καβγάς Πατούλη – Δανίκα για ιατρείο: «Έχετε κάποιο πρόβλημα μαζί μου;» – «Ανέχεστε εμπόριο σαν Ιατρικός Σύλλογος»",
-      "normalized_title": "ΚΑΒΓΑΣ ΠΑΤΟΥΛΗ – ΔΑΝΙΚΑ ΓΙΑ ΙΑΤΡΕΙΟ: «ΕΧΕΤΕ ΚΑΠΟΙΟ ΠΡΟΒΛΗΜΑ ΜΑΖΙ ΜΟΥ;» – «ΑΝΕΧΕΣΤΕ ΕΜΠΟΡΙΟ ΣΑΝ ΙΑΤΡΙΚΟΣ ΣΥΛΛΟΓΟΣ»",
+      "url": "https://www.efsyn.gr/ellada/1464986/giorgos-mazonakis-i-stigmi-poy-to-asthenoforo-ftanei-sto-iatreio-gia-na-paralavei-ton-tragoydisti-vinteo/",
+      "title": "Γιώργος Μαζωνάκης: Η στιγμή που το ασθενόφορο φτάνει στο ιατρείο για να παραλάβει τον τραγουδιστή [βίντεο]",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: Η ΣΤΙΓΜΗ ΠΟΥ ΤΟ ΑΣΘΕΝΟΦΟΡΟ ΦΤΑΝΕΙ ΣΤΟ ΙΑΤΡΕΙΟ ΓΙΑ ΝΑ ΠΑΡΑΛΑΒΕΙ ΤΟΝ ΤΡΑΓΟΥΔΙΣΤΗ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1464957/kavgas-patoyli-danika-gia-iatreio-ehete-kapoio-provlima-mazi-moy-aneheste-emporio-san-iatrikos-syllogos/",
-        "https://www.efsyn.gr/politiki/1464971/to-ntoy-tsipra-sti-deth-kai-o-ypainigmos-me-to-26/",
-        "https://www.efsyn.gr/politiki/1464966/pote-min-les-pote/",
-        "https://www.efsyn.gr/politiki/1464939/androylakis-ean-theloyme-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enishysoyme-ti-dimosia-paideia/",
-        "https://www.efsyn.gr/politiki/1464954/kai-pasok-kai-krintz-o-androylakis-einai-san-to-zaharoyho-gala-einai-poly-glykos/"
+        "https://www.efsyn.gr/ellada/1464986/giorgos-mazonakis-i-stigmi-poy-to-asthenoforo-ftanei-sto-iatreio-gia-na-paralavei-ton-tragoydisti-vinteo/",
+        "https://www.efsyn.gr/nisides/1464996/i-le-figaro-anakalyptei-ta-vimata-toy-omiroy-sto-aprosmeno-nisi-ton-kykladon/",
+        "https://www.efsyn.gr/politiki/1464976/proklisi-payloy-marinaki-den-prepei-na-yparhei-epidoma-anergias-pano-apo-dyo-mines/",
+        "https://www.efsyn.gr/athlitismos/1464988/mpasket-epimenoyn-stoys-epta-xenoys/",
+        "https://www.efsyn.gr/politiki/1464981/elas-i-stirixi-tis-ekpaideysis-einai-ependysi-sta-paidia-mas-kai-sto-mellon-tis-horas-mas/",
+        "https://www.efsyn.gr/politiki/1464979/apantisi-ypoik-ston-koytentaki-gia-na-forologiseis-ton-ployto-prepei-prota-na-ton-fereis-stin-ellada/",
+        "https://www.efsyn.gr/politiki/1464975/to-samariko-karfi-gia-ti-methi-exoysias-toy-k-mitsotaki/"
       ],
-      "seen_at_utc": "2026-09-11T07:51:13.482545+00:00"
+      "seen_at_utc": "2026-09-11T08:17:56.302609+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/go-fun/fizz/manolis-kontaros-gia-mazonaki-enas-kalos-kritikos-itan-perifanos-gia-tin-katagogi-tou/",
-      "title": "Μανώλης Κονταρός για Μαζωνάκη: «Ένας καλός Κρητικός, ήτανε περήφανος για την καταγωγή του»",
-      "normalized_title": "ΜΑΝΩΛΗΣ ΚΟΝΤΑΡΟΣ ΓΙΑ ΜΑΖΩΝΑΚΗ: «ΕΝΑΣ ΚΑΛΟΣ ΚΡΗΤΙΚΟΣ, ΗΤΑΝΕ ΠΕΡΗΦΑΝΟΣ ΓΙΑ ΤΗΝ ΚΑΤΑΓΩΓΗ ΤΟΥ»",
+      "url": "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-i-stiriksi-tis-ekpaideysis-einai-ependysi-sta-paidia-mas-kai-sto-mellon-tis-xoras-mas/",
+      "title": "ΕΛΑΣ: Η στήριξη της εκπαίδευσης είναι επένδυση στα παιδιά μας και στο μέλλον της χώρας μας",
+      "normalized_title": "ΕΛΑΣ: Η ΣΤΗΡΙΞΗ ΤΗΣ ΕΚΠΑΙΔΕΥΣΗΣ ΕΙΝΑΙ ΕΠΕΝΔΥΣΗ ΣΤΑ ΠΑΙΔΙΑ ΜΑΣ ΚΑΙ ΣΤΟ ΜΕΛΛΟΝ ΤΗΣ ΧΩΡΑΣ ΜΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/go-fun/fizz/manolis-kontaros-gia-mazonaki-enas-kalos-kritikos-itan-perifanos-gia-tin-katagogi-tou/",
-        "https://www.in.gr/2026/09/11/politics/epikairotita/anakainismeno-sxoleio-epelekse-na-episkefthei-o-mitsotakis-tin-proti-imera-tis-sxolikis-xronias/",
-        "https://www.in.gr/2026/09/11/greece/giorgos-mazonakis-krisimo-na-gnorizoume-poia-texniki-plasmafairesis-xrisimopoiithike-kleidi-ta-apotelesmata-tis-nekropsiass/"
+        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/elas-i-stiriksi-tis-ekpaideysis-einai-ependysi-sta-paidia-mas-kai-sto-mellon-tis-xoras-mas/",
+        "https://www.in.gr/2026/09/11/life/diakopes/ios-agria-omorfia-kai-ammodeis-paralies-i-le-figaro-eksymnei-to-kykladitiko-nisi/",
+        "https://www.in.gr/2026/09/11/sports/football/apokalypsi-sok-gia-ton-thanato-tou-marantona-den-pethane-apo-ta-psyxotropa-farmaka/",
+        "https://www.in.gr/2026/09/11/politics/dourou-gia-nea-sxoliki-xronia-diekdikoume-dimosia-symperiliptiki-kai-xoris-diakriseis-paideia/"
       ],
-      "seen_at_utc": "2026-09-11T07:51:13.482489+00:00"
+      "seen_at_utc": "2026-09-11T08:17:56.302528+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T07:51:13.482658+00:00"
+  "updated_at_utc": "2026-09-11T08:17:56.302765+00:00"
 }
