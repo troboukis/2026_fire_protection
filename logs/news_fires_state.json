@@ -1,20 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564452023/rimpakina-vs-sampalenka-o-apolytos-telikos-sto-us-open/",
-      "title": "Ριμπάκινα vs Σαμπαλένκα, ο «απόλυτος τελικός» στο US Open",
-      "normalized_title": "ΡΙΜΠΑΚΙΝΑ VS ΣΑΜΠΑΛΕΝΚΑ, Ο «ΑΠΟΛΥΤΟΣ ΤΕΛΙΚΟΣ» ΣΤΟ US OPEN",
+      "url": "https://www.kathimerini.gr/economy/business/564451612/alkotest-kai-ptosi-stin-estiasi-eplixan-tin-athinaiki-zythopoiia/",
+      "title": "Αλκοτέστ και πτώση στην εστίαση έπληξαν την Αθηναϊκή Ζυθοποιία",
+      "normalized_title": "ΑΛΚΟΤΕΣΤ ΚΑΙ ΠΤΩΣΗ ΣΤΗΝ ΕΣΤΙΑΣΗ ΕΠΛΗΞΑΝ ΤΗΝ ΑΘΗΝΑΙΚΗ ΖΥΘΟΠΟΙΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564452023/rimpakina-vs-sampalenka-o-apolytos-telikos-sto-us-open/",
-        "https://www.kathimerini.gr/society/564451957/asylo-proti-i-ellada-me-23-000-aitiseis-to-a-examino-ptosi-17-stin-eyropi/",
-        "https://www.kathimerini.gr/politics/564452017/kyr-mitsotakis-sto-2o-dimotiko-ano-liosion-gia-ton-agiasmo-tis-neas-scholikis-chronias/",
-        "https://www.kathimerini.gr/world/564451954/11is-septemvrioy-to-smithsonian-tima-tin-25i-epeteio-me-mia-ekthesi-spanion-ekthematon/",
-        "https://www.kathimerini.gr/society/564451951/olme-panelladikes-staseis-ergasias-apo-simera-eos-tis-2-oktovrioy/",
-        "https://www.kathimerini.gr/k/gastronomos/564450916/one-pan-pasta-i-allios-makaronia-me-kima-se-ena-tigani/",
-        "https://www.kathimerini.gr/world/564451960/yemeni-oi-choythi-katelavan-to-krisimo-limani-tis-mocha/",
-        "https://www.kathimerini.gr/istoria/564451351/90-chronia-prin-11-9-1936/"
+        "https://www.kathimerini.gr/economy/business/564451612/alkotest-kai-ptosi-stin-estiasi-eplixan-tin-athinaiki-zythopoiia/",
+        "https://www.kathimerini.gr/politics/564452059/sti-thessaloniki-gia-ton-scholiko-agiasmo-o-nikos-androylakis-na-enischysoyme-ti-dimosia-paideia-kai-na-stirixoyme-tin-oikogeneia/",
+        "https://www.kathimerini.gr/world/564452068/o-kim-giongk-oyn-thelei-oi-voreiokoreates-na-pernoyn-kala-arkei-na-to-egkrinei-to-kratos/",
+        "https://www.kathimerini.gr/culture/museums/564451387/i-epistrofi-tis-mpagie-oyres-sto-vretaniko-moyseio/"
       ],
-      "seen_at_utc": "2026-09-11T07:17:05.889839+00:00"
+      "seen_at_utc": "2026-09-11T07:30:03.210366+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1266,44 +1262,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877158/epiheirimatias-apo-to-rethumno-ehase-40000-euro-apo-dithen-diadiktuaki-ependutiki-etaireia-katalave-tin-apati/?utm_source=rss",
-      "title": "Επιχειρηματίας από το Ρέθυμνο έχασε 40.000 ευρώ από δήθεν διαδικτυακή επενδυτική εταιρεία, κατάλαβε την απάτη όταν ζήτησε τα χρήματά του πίσω",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΜΑΤΙΑΣ ΑΠΟ ΤΟ ΡΕΘΥΜΝΟ ΕΧΑΣΕ 40.000 ΕΥΡΩ ΑΠΟ ΔΗΘΕΝ ΔΙΑΔΙΚΤΥΑΚΗ ΕΠΕΝΔΥΤΙΚΗ ΕΤΑΙΡΕΙΑ, ΚΑΤΑΛΑΒΕ ΤΗΝ ΑΠΑΤΗ ΟΤΑΝ ΖΗΤΗΣΕ ΤΑ ΧΡΗΜΑΤΑ ΤΟΥ ΠΙΣΩ",
+      "url": "https://www.protothema.gr/greece/article/1877168/ilikiomenos-odigos-bike-anapoda-se-monodromo-sti-naupakto-kai-pire-svarna-oti-evriske-brosta-tou/?utm_source=rss",
+      "title": "Ηλικιωμένος οδηγός μπήκε ανάποδα σε μονόδρομο στη Ναύπακτο και πήρε σβάρνα ό,τι βρήκε μπροστά του",
+      "normalized_title": "ΗΛΙΚΙΩΜΕΝΟΣ ΟΔΗΓΟΣ ΜΠΗΚΕ ΑΝΑΠΟΔΑ ΣΕ ΜΟΝΟΔΡΟΜΟ ΣΤΗ ΝΑΥΠΑΚΤΟ ΚΑΙ ΠΗΡΕ ΣΒΑΡΝΑ Ο,ΤΙ ΒΡΗΚΕ ΜΠΡΟΣΤΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877158/epiheirimatias-apo-to-rethumno-ehase-40000-euro-apo-dithen-diadiktuaki-ependutiki-etaireia-katalave-tin-apati/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877168/ilikiomenos-odigos-bike-anapoda-se-monodromo-sti-naupakto-kai-pire-svarna-oti-evriske-brosta-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T07:17:05.889947+00:00"
+      "seen_at_utc": "2026-09-11T07:30:03.210504+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1464926/o-mitsotakis-sto-2o-dimotiko-ano-liosion-gia-ton-agiasmo-kai-toy-hronoy-me-perissotera-anakainismena-sholeia/",
-      "title": "Ο Μητσοτάκης στο 2ο Δημοτικό Άνω Λιοσίων για τον αγιασμό: «Και του χρόνου με περισσότερα ανακαινισμένα σχολεία»",
-      "normalized_title": "Ο ΜΗΤΣΟΤΑΚΗΣ ΣΤΟ 2Ο ΔΗΜΟΤΙΚΟ ΑΝΩ ΛΙΟΣΙΩΝ ΓΙΑ ΤΟΝ ΑΓΙΑΣΜΟ: «ΚΑΙ ΤΟΥ ΧΡΟΝΟΥ ΜΕ ΠΕΡΙΣΣΟΤΕΡΑ ΑΝΑΚΑΙΝΙΣΜΕΝΑ ΣΧΟΛΕΙΑ»",
+      "url": "https://www.efsyn.gr/ellada/1464925/trikala-agiasmos-sto-proto-dimotiko-sholeio-poy-leitoyrgei-mesa-se-fylaki/",
+      "title": "Τρίκαλα: Αγιασμός στο πρώτο δημοτικό σχολείο που λειτουργεί μέσα σε φυλακή",
+      "normalized_title": "ΤΡΙΚΑΛΑ: ΑΓΙΑΣΜΟΣ ΣΤΟ ΠΡΩΤΟ ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ ΠΟΥ ΛΕΙΤΟΥΡΓΕΙ ΜΕΣΑ ΣΕ ΦΥΛΑΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1464926/o-mitsotakis-sto-2o-dimotiko-ano-liosion-gia-ton-agiasmo-kai-toy-hronoy-me-perissotera-anakainismena-sholeia/",
-        "https://www.efsyn.gr/nisides/1464928/ypo-skian-ego-kai-o-klaydios/",
-        "https://www.efsyn.gr/athlitismos/1464927/prota-to-protathlima-o-marinakis-paroysiase-ton-imanol-algoyathil-stoys-paiktes-toy-olympiakoy/",
-        "https://www.efsyn.gr/oikonomia/1464919/therapeytiki-diaita-sto-diktyo-tis-fourlis/",
-        "https://www.efsyn.gr/stiles/1464917/o-galatas/",
-        "https://www.efsyn.gr/oikonomia/1464914/kleidi-gia-ependyseis-i-polisi-tis-acs/",
-        "https://www.efsyn.gr/stiles/1464912/poy-to-heis-dei-grammeno-k-dimarhe/",
-        "https://www.efsyn.gr/kosmos/1464894/axios-o-tramp-aperripse-to-aitima-toy-prigkipa-tis-saoydikis-aravias-gia-amerikanika-pligmata-stoys-hoythi/",
-        "https://www.efsyn.gr/stiles/1464907/kathe-persi-kai-kalytera/"
+        "https://www.efsyn.gr/ellada/1464925/trikala-agiasmos-sto-proto-dimotiko-sholeio-poy-leitoyrgei-mesa-se-fylaki/",
+        "https://www.efsyn.gr/ellada/1464930/ekpa-neo-kylikeio-kai-anakainismenoi-horoi-sti-sholi-thetikon-epistimon-o-stohos-gia-to-2030/",
+        "https://www.efsyn.gr/life/1464941/efyge-to-poylaki-mas-to-sygkinitiko-antio-toy-sokrati-malama-ston-giorgo-mazonaki-vinteo/",
+        "https://www.efsyn.gr/nisides/1464943/ta-vivlia-poy-den-teleiosame/"
       ],
-      "seen_at_utc": "2026-09-11T07:17:05.889913+00:00"
+      "seen_at_utc": "2026-09-11T07:30:03.210463+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/11/sports/football/pire-eksitirio-o-karetsas-ta-logia-tis-miteras-tou/",
-      "title": "Πήρε εξιτήριο ο Καρέτσας – Τα λόγια της μητέρας του",
-      "normalized_title": "ΠΗΡΕ ΕΞΙΤΗΡΙΟ Ο ΚΑΡΕΤΣΑΣ – ΤΑ ΛΟΓΙΑ ΤΗΣ ΜΗΤΕΡΑΣ ΤΟΥ",
+      "url": "https://www.in.gr/2026/09/11/politics/androulakis-ean-theloume-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enisxysoume-ti-dimosia-paideia/",
+      "title": "Ανδρουλάκης: Εάν θέλουμε ένα καλύτερο μέλλον για τα παιδιά μας, πρέπει να ενισχύσουμε τη δημόσια παιδεία",
+      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: ΕΑΝ ΘΕΛΟΥΜΕ ΕΝΑ ΚΑΛΥΤΕΡΟ ΜΕΛΛΟΝ ΓΙΑ ΤΑ ΠΑΙΔΙΑ ΜΑΣ, ΠΡΕΠΕΙ ΝΑ ΕΝΙΣΧΥΣΟΥΜΕ ΤΗ ΔΗΜΟΣΙΑ ΠΑΙΔΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/11/sports/football/pire-eksitirio-o-karetsas-ta-logia-tis-miteras-tou/",
-        "https://www.in.gr/2026/09/11/greece/katadioksi-kai-agrio-ksylo-metaksy-odigon-stin-petrou-ralli-vinteo-ntokoumento/",
-        "https://www.in.gr/2026/09/11/politics/politiki-grammateia/o-doudonis-ekthetei-tin-kyvernisi-gia-ton-afthodi-yparxei-lysi-tonizei-o-kathigitis-ktiniatrikis-arsenos/",
-        "https://www.in.gr/2026/09/11/pet-stories/pote-apaiteitai-yperixos-ano-kai-kato-koilias-se-skylo-kai-gata-kai-pote-aksoniki-i-magnitiki-tomografia/",
-        "https://www.in.gr/2026/09/11/sports/football/episimo-tou-xatzigiovani-ston-ofi/"
+        "https://www.in.gr/2026/09/11/politics/androulakis-ean-theloume-ena-kalytero-mellon-gia-ta-paidia-mas-prepei-na-enisxysoume-ti-dimosia-paideia/",
+        "https://www.in.gr/2026/09/11/sports/basketball/anevazei-rythmous-o-kinan-evans-i-nea-poly-kali-emfanisi-me-tous-lonton-laions/"
       ],
-      "seen_at_utc": "2026-09-11T07:17:05.889876+00:00"
+      "seen_at_utc": "2026-09-11T07:30:03.210421+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T07:17:05.890019+00:00"
+  "updated_at_utc": "2026-09-11T07:30:03.210572+00:00"
 }
