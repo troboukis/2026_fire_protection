@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/diktis/564454096/to-megalytero-agkathi-tis-oikonomias/",
-      "title": "Το μεγαλύτερο «αγκάθι» της οικονομίας",
-      "normalized_title": "ΤΟ ΜΕΓΑΛΥΤΕΡΟ «ΑΓΚΑΘΙ» ΤΗΣ ΟΙΚΟΝΟΜΙΑΣ",
+      "url": "https://www.kathimerini.gr/opinion/564453784/otan-xypnisei-o-skynet/",
+      "title": "Οταν ξυπνήσει ο Skynet",
+      "normalized_title": "ΟΤΑΝ ΞΥΠΝΗΣΕΙ Ο SKYNET",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/diktis/564454096/to-megalytero-agkathi-tis-oikonomias/",
-        "https://www.kathimerini.gr/society/564455194/kinimatografiki-apodrasi-kratoymenoy-apo-to-nosokomeio-serron-oi-synergoi-toy-itan-ntymenoi-astynomikoi/",
-        "https://www.kathimerini.gr/visual/photography/564453475/oi-axiomatoychoi-kai-oi-tsantes/",
-        "https://www.kathimerini.gr/politics/564453568/theoreio-prosopiki-apopsi/"
+        "https://www.kathimerini.gr/opinion/564453784/otan-xypnisei-o-skynet/",
+        "https://www.kathimerini.gr/opinion/564453766/yposcheseis-kai-kathreftakia-ston-dromo-pros-tis-kalpes/",
+        "https://www.kathimerini.gr/opinion/564453763/kapoy-pera-apo-tin-iatriki/",
+        "https://www.kathimerini.gr/opinion/564453931/den-fthanei-to-metro/",
+        "https://www.kathimerini.gr/economy/local/564453991/sta-20-5-dis-oi-rythmiseis-meso-exodikastikoy/"
       ],
-      "seen_at_utc": "2026-09-12T05:16:58.213799+00:00"
+      "seen_at_utc": "2026-09-12T05:30:00.790167+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,38 +1263,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877555/ti-katethesan-gia-tin-eikona-tou-giorgou-mazonaki-otan-eftase-sto-iatreio-eihe-ena-paraxeno-viha/?utm_source=rss",
-      "title": "Τι κατέθεσαν για την εικόνα του Γιώργου Μαζωνάκη όταν έφτασε στο ιατρείο: Είχε ένα παράξενο βήχα, μου φάνηκε κάπως στον κόσμο του",
-      "normalized_title": "ΤΙ ΚΑΤΕΘΕΣΑΝ ΓΙΑ ΤΗΝ ΕΙΚΟΝΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ ΟΤΑΝ ΕΦΤΑΣΕ ΣΤΟ ΙΑΤΡΕΙΟ: ΕΙΧΕ ΕΝΑ ΠΑΡΑΞΕΝΟ ΒΗΧΑ, ΜΟΥ ΦΑΝΗΚΕ ΚΑΠΩΣ ΣΤΟΝ ΚΟΣΜΟ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1877590/kriti-edopistikan-37-allodapoi-se-lemvo-42-nautika-milia-notioanatolika-ton-kalon-limenon/?utm_source=rss",
+      "title": "Κρήτη: Εντοπίστηκαν 37 αλλοδαποί σε λέμβο 42 ναυτικά μίλια νοτιοανατολικά των Καλών Λιμένων",
+      "normalized_title": "ΚΡΗΤΗ: ΕΝΤΟΠΙΣΤΗΚΑΝ 37 ΑΛΛΟΔΑΠΟΙ ΣΕ ΛΕΜΒΟ 42 ΝΑΥΤΙΚΑ ΜΙΛΙΑ ΝΟΤΙΟΑΝΑΤΟΛΙΚΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877555/ti-katethesan-gia-tin-eikona-tou-giorgou-mazonaki-otan-eftase-sto-iatreio-eihe-ena-paraxeno-viha/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877590/kriti-edopistikan-37-allodapoi-se-lemvo-42-nautika-milia-notioanatolika-ton-kalon-limenon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-11T21:17:01.189603+00:00"
+      "seen_at_utc": "2026-09-12T05:30:00.790254+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465488/allazei-to-skiniko-toy-kairoy-poy-tha-simeiothoyn-vrohes-kai-kataigides/",
-      "title": "Αλλάζει το σκηνικό του καιρού: Πού θα σημειωθούν βροχές και καταιγίδες",
-      "normalized_title": "ΑΛΛΑΖΕΙ ΤΟ ΣΚΗΝΙΚΟ ΤΟΥ ΚΑΙΡΟΥ: ΠΟΥ ΘΑ ΣΗΜΕΙΩΘΟΥΝ ΒΡΟΧΕΣ ΚΑΙ ΚΑΤΑΙΓΙΔΕΣ",
+      "url": "https://www.efsyn.gr/protoselida/i-pleiopsifia-zita-kyvernitiki-allagi/",
+      "title": "Η πλειοψηφία ζητά κυβερνητική αλλαγή",
+      "normalized_title": "Η ΠΛΕΙΟΨΗΦΙΑ ΖΗΤΑ ΚΥΒΕΡΝΗΤΙΚΗ ΑΛΛΑΓΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465488/allazei-to-skiniko-toy-kairoy-poy-tha-simeiothoyn-vrohes-kai-kataigides/",
-        "https://www.efsyn.gr/ellada/1465486/eortologio-poioi-giortazoyn-simera-12-septemvrioy/"
+        "https://www.efsyn.gr/protoselida/i-pleiopsifia-zita-kyvernitiki-allagi/",
+        "https://www.efsyn.gr/ellada/1465460/giorgos-mazonakis-sto-fos-sovares-kataggelies-asthenon-gia-to-iatreio-toy-kolonakioy-oi-antifaseis-ton-giatron/"
       ],
-      "seen_at_utc": "2026-09-12T05:16:58.213859+00:00"
+      "seen_at_utc": "2026-09-12T05:30:00.790232+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/poutin-syndeei-tin-epityxia-tis-afd-stis-ekloges-se-saksonia-anxalt-me-lathi-tis-dysis/",
-      "title": "Πούτιν: Συνδέει την επιτυχία της AfD στις εκλογές σε Σαξονία-Άνχαλτ με λάθη της Δύσης",
-      "normalized_title": "ΠΟΥΤΙΝ: ΣΥΝΔΕΕΙ ΤΗΝ ΕΠΙΤΥΧΙΑ ΤΗΣ AFD ΣΤΙΣ ΕΚΛΟΓΕΣ ΣΕ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ ΜΕ ΛΑΘΗ ΤΗΣ ΔΥΣΗΣ",
+      "url": "https://www.in.gr/2026/09/12/greece/kairos-peraitero-anodos-tis-thermokrasias-kai-afrikaniki-skoni-se-poies-perioxes-tha-vreksei/",
+      "title": "Περαιτέρω άνοδος της θερμοκρασίας και αφρικανική σκόνη - Σε ποιες περιοχές θα βρέξει",
+      "normalized_title": "ΠΕΡΑΙΤΕΡΩ ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΚΑΙ ΑΦΡΙΚΑΝΙΚΗ ΣΚΟΝΗ - ΣΕ ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΒΡΕΞΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/poutin-syndeei-tin-epityxia-tis-afd-stis-ekloges-se-saksonia-anxalt-me-lathi-tis-dysis/",
-        "https://www.in.gr/2026/09/12/life/geysi/syntagi-mosxari-lemonato-me-ryzi/",
-        "https://www.in.gr/2026/09/12/world/stratigiki-i-rigma-to-akrodeksio-didymo-lepen-mparntela-se-proeklogika-thola-nera/",
-        "https://www.in.gr/2026/09/12/world/i-eyropi-tis-theouta-kai-ton-xorafion-otan-o-exthros-ginetai-aparaititos-ergatis/",
-        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/foititikes-katoikies-ektos-elegxou-ta-enoikia-ayksisi-164-se-mia-10etia-pinakas/",
-        "https://www.in.gr/2026/09/12/plus/vita/ti-sxesi-mporei-na-exei-to-aktinidio-me-ton-ypno/"
+        "https://www.in.gr/2026/09/12/greece/kairos-peraitero-anodos-tis-thermokrasias-kai-afrikaniki-skoni-se-poies-perioxes-tha-vreksei/",
+        "https://www.in.gr/2026/09/12/sports/football/o-mark-ofermars-egkataleipei-amesa-to-podosfairo-logo-sovaron-provlimaton-ygeias/",
+        "https://www.in.gr/2026/09/12/life/culture-live/nees-tainies-mporoun-ta-magika-filtra-na-riksoun-ton-spider-man-apo-tin-koryfi/"
       ],
-      "seen_at_utc": "2026-09-12T05:16:58.213835+00:00"
+      "seen_at_utc": "2026-09-12T05:30:00.790209+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T05:16:58.213911+00:00"
+  "updated_at_utc": "2026-09-12T05:30:00.790329+00:00"
 }
