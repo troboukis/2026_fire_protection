@@ -1,21 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564455416/tin-deytera-i-kideia-toy-giorgoy-mazonaki/",
-      "title": "Την Δευτέρα η κηδεία του Γιώργου Μαζωνάκη",
-      "normalized_title": "ΤΗΝ ΔΕΥΤΕΡΑ Η ΚΗΔΕΙΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ",
+      "url": "https://www.kathimerini.gr/politics/564455437/ad-georgiadis-15-chronia-leitoyrgoyse-to-iatreio-sto-kolonaki-tha-apagoreyso-tis-paraplanitikes-diafimiseis/",
+      "title": "Αδ. Γεωργιάδης: «15 χρόνια λειτουργούσε το ιατρείο στο Κολωνάκι, θα απαγορεύσω τις παραπλανητικές διαφημίσεις»",
+      "normalized_title": "ΑΔ. ΓΕΩΡΓΙΑΔΗΣ: «15 ΧΡΟΝΙΑ ΛΕΙΤΟΥΡΓΟΥΣΕ ΤΟ ΙΑΤΡΕΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ, ΘΑ ΑΠΑΓΟΡΕΥΣΩ ΤΙΣ ΠΑΡΑΠΛΑΝΗΤΙΚΕΣ ΔΙΑΦΗΜΙΣΕΙΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564455416/tin-deytera-i-kideia-toy-giorgoy-mazonaki/",
-        "https://www.kathimerini.gr/k/sunday-edition/564455404/diavaste-stin-kathimerini-tis-kyriakis-456/",
-        "https://www.kathimerini.gr/opinion/564453523/to-neo-kratos-pronoias/",
-        "https://www.kathimerini.gr/k/k-magazine/564450754/poly-stil-ligo-synaisthima/",
-        "https://www.kathimerini.gr/opinion/564453934/den-mas-chreiazetai-i-pisa/",
-        "https://www.kathimerini.gr/culture/tv/564453811/to-deltio-ton-media-gyrismata-stin-ellada-2/",
-        "https://www.kathimerini.gr/opinion/564453760/i-niki-tis-al-kainta/",
-        "https://www.kathimerini.gr/opinion/564453520/viomichanies-thaymaton/",
-        "https://www.kathimerini.gr/opinion/564453601/kinimatiki-kakopoiisi/"
+        "https://www.kathimerini.gr/politics/564455437/ad-georgiadis-15-chronia-leitoyrgoyse-to-iatreio-sto-kolonaki-tha-apagoreyso-tis-paraplanitikes-diafimiseis/",
+        "https://www.kathimerini.gr/visual/infographics/564453643/ena-ekatommyrio-alkotest-ekopsan-to-poto-stoys-odigoys/"
       ],
-      "seen_at_utc": "2026-09-12T10:17:14.549428+00:00"
+      "seen_at_utc": "2026-09-12T10:51:10.936256+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,34 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877723/pano-apo-3000-heirourgoi-sto-28o-sunedrio-eacmfs-tin-triti-sto-megaro-mousikis/?utm_source=rss",
-      "title": "Πάνω από 3.000 χειρουργοί στο 28ο Συνέδριο EACMFS την Τρίτη στο Μέγαρο Μουσικής",
-      "normalized_title": "ΠΑΝΩ ΑΠΟ 3.000 ΧΕΙΡΟΥΡΓΟΙ ΣΤΟ 28Ο ΣΥΝΕΔΡΙΟ EACMFS ΤΗΝ ΤΡΙΤΗ ΣΤΟ ΜΕΓΑΡΟ ΜΟΥΣΙΚΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1877732/paranomo-kazino-edopistike-stin-athina-deite-fotografies-kai-video/?utm_source=rss",
+      "title": "Παράνομο καζίνο εντοπίστηκε στην Αθήνα, δείτε φωτογραφίες και βίντεο",
+      "normalized_title": "ΠΑΡΑΝΟΜΟ ΚΑΖΙΝΟ ΕΝΤΟΠΙΣΤΗΚΕ ΣΤΗΝ ΑΘΗΝΑ, ΔΕΙΤΕ ΦΩΤΟΓΡΑΦΙΕΣ ΚΑΙ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877723/pano-apo-3000-heirourgoi-sto-28o-sunedrio-eacmfs-tin-triti-sto-megaro-mousikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877732/paranomo-kazino-edopistike-stin-athina-deite-fotografies-kai-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877730/kleinei-ti-deutera-ti-nuhta-tmima-tis-perifereiakis-odou-pros-dutika-sti-thessaloniki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T10:30:19.484649+00:00"
+      "seen_at_utc": "2026-09-12T10:51:10.936392+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1465696/se-ro-kai-stroggyli-o-mitsotakis-episkepsi-sta-akritika-fylakia-kai-minyma-stirixis-stis-enoples-dynameis/",
-      "title": "Σε Ρω και Στρογγύλη ο Μητσοτάκης: Επίσκεψη στα ακριτικά φυλάκια και μήνυμα στήριξης στις Ένοπλες Δυνάμεις",
-      "normalized_title": "ΣΕ ΡΩ ΚΑΙ ΣΤΡΟΓΓΥΛΗ Ο ΜΗΤΣΟΤΑΚΗΣ: ΕΠΙΣΚΕΨΗ ΣΤΑ ΑΚΡΙΤΙΚΑ ΦΥΛΑΚΙΑ ΚΑΙ ΜΗΝΥΜΑ ΣΤΗΡΙΞΗΣ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ",
+      "url": "https://www.efsyn.gr/kosmos/1465713/o-tramp-anavei-foties-apo-to-doyvlino-tha-latreya-na-do-mia-enomeni-irlandia/",
+      "title": "Ο Τραμπ «ανάβει φωτιές» από το Δουβλίνο: «Θα λάτρευα να δω μια ενωμένη Ιρλανδία»",
+      "normalized_title": "Ο ΤΡΑΜΠ «ΑΝΑΒΕΙ ΦΩΤΙΕΣ» ΑΠΟ ΤΟ ΔΟΥΒΛΙΝΟ: «ΘΑ ΛΑΤΡΕΥΑ ΝΑ ΔΩ ΜΙΑ ΕΝΩΜΕΝΗ ΙΡΛΑΝΔΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1465696/se-ro-kai-stroggyli-o-mitsotakis-episkepsi-sta-akritika-fylakia-kai-minyma-stirixis-stis-enoples-dynameis/",
-        "https://www.efsyn.gr/ellada/1465694/halkidiki-pyrkagia-se-agrotodasiki-ektasi-ihise-to-112/"
+        "https://www.efsyn.gr/kosmos/1465713/o-tramp-anavei-foties-apo-to-doyvlino-tha-latreya-na-do-mia-enomeni-irlandia/",
+        "https://www.efsyn.gr/kosmos/1465708/pos-oi-hoythi-egklovizoyn-ti-saoydiki-aravia-kai-to-petrelaio-i-proelasi-stin-erythra-thalassa-mesa-se-liga-24ora/",
+        "https://www.efsyn.gr/politiki/1465521/oli-i-dimoskopisi-tis-prorata-gia-tin-ef-syn-kyvernitiki-allagi-zita-i-pleiopsifia-i-akriveia-to-megalytero-provlima/"
       ],
-      "seen_at_utc": "2026-09-12T10:30:19.484625+00:00"
+      "seen_at_utc": "2026-09-12T10:51:10.936361+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/greece/giorgos-mazonakis-ta-42-lepta-sto-mixanima-plasmafairesis-kai-to-krisimo-keno-vinteo-ntoukoumento-me-ton-giatro-na-epistrefei-sto-iatreio/",
-      "title": "Γιώργος Μαζωνάκης: Τα 42 λεπτά στο μηχάνημα πλασμαφαίρεσης και το κρίσιμο κενό – Βίντεο ντοκουμέντο με τον γιατρό να επιστρέφει στο ιατρείο",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΤΑ 42 ΛΕΠΤΑ ΣΤΟ ΜΗΧΑΝΗΜΑ ΠΛΑΣΜΑΦΑΙΡΕΣΗΣ ΚΑΙ ΤΟ ΚΡΙΣΙΜΟ ΚΕΝΟ – ΒΙΝΤΕΟ ΝΤΟΚΟΥΜΕΝΤΟ ΜΕ ΤΟΝ ΓΙΑΤΡΟ ΝΑ ΕΠΙΣΤΡΕΦΕΙ ΣΤΟ ΙΑΤΡΕΙΟ",
+      "url": "https://www.in.gr/2026/09/12/world/zelenski-dilonei-etoimos-na-synantithei-me-ton-poutin-sti-diarkeia-tis-synodou-koryfis-tis-g20/",
+      "title": "Ο Ζελένσκι δηλώνει έτοιμος να συναντηθεί με τον Πούτιν στη διάρκεια της συνόδου κορυφής της G20",
+      "normalized_title": "Ο ΖΕΛΕΝΣΚΙ ΔΗΛΩΝΕΙ ΕΤΟΙΜΟΣ ΝΑ ΣΥΝΑΝΤΗΘΕΙ ΜΕ ΤΟΝ ΠΟΥΤΙΝ ΣΤΗ ΔΙΑΡΚΕΙΑ ΤΗΣ ΣΥΝΟΔΟΥ ΚΟΡΥΦΗΣ ΤΗΣ G20",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/greece/giorgos-mazonakis-ta-42-lepta-sto-mixanima-plasmafairesis-kai-to-krisimo-keno-vinteo-ntoukoumento-me-ton-giatro-na-epistrefei-sto-iatreio/",
-        "https://www.in.gr/2026/09/12/greece/xalkidiki-synagermos-gia-fotia-sti-skala-epixeiroun-tria-enaeria-ixise-to-112/"
+        "https://www.in.gr/2026/09/12/world/zelenski-dilonei-etoimos-na-synantithei-me-ton-poutin-sti-diarkeia-tis-synodou-koryfis-tis-g20/",
+        "https://www.in.gr/2026/09/12/sports/basketball/euroleague/euroleague-kanonika-tha-dieksaxthei-to-super-cup-i-anakoinosi-tis-diorganotrias-arxis-pic/",
+        "https://www.in.gr/2026/09/12/go-fun/fizz/andromaxi-giorgos-livanis-agkaliasmenoi-fotografizontai-meta-tis-fimes-gia-oristiko-xorismo/"
       ],
-      "seen_at_utc": "2026-09-12T10:30:19.484578+00:00"
+      "seen_at_utc": "2026-09-12T10:51:10.936323+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T10:30:19.484733+00:00"
+  "updated_at_utc": "2026-09-12T10:51:10.936479+00:00"
 }
