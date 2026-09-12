@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564455881/r-doyroy-h-aristera-einai-anagkaiotita-kai-prepei-na-antapokrithei-stis-megales-prokliseis/",
-      "title": "Ρ. Δούρου: H Αριστερά είναι αναγκαιότητα και πρέπει να ανταποκριθεί στις μεγάλες προκλήσεις",
-      "normalized_title": "Ρ. ΔΟΥΡΟΥ: H ΑΡΙΣΤΕΡΑ ΕΙΝΑΙ ΑΝΑΓΚΑΙΟΤΗΤΑ ΚΑΙ ΠΡΕΠΕΙ ΝΑ ΑΝΤΑΠΟΚΡΙΘΕΙ ΣΤΙΣ ΜΕΓΑΛΕΣ ΠΡΟΚΛΗΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564434152/eortologio-poioi-giortazoyn-simera-13-septemvrioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 13 Σεπτεμβρίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 13 ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564455881/r-doyroy-h-aristera-einai-anagkaiotita-kai-prepei-na-antapokrithei-stis-megales-prokliseis/",
-        "https://www.kathimerini.gr/politics/564455848/paylos-marinakis-gia-omilia-androylaki-kanena-realistiko-kai-kostologimeno-schedio/"
+        "https://www.kathimerini.gr/eortologio/564434152/eortologio-poioi-giortazoyn-simera-13-septemvrioy/",
+        "https://www.kathimerini.gr/economy/564455887/openai-o-altman-vazei-ston-pago-to-ipo-gia-to-2026-proechei-i-asfaleia-tis-ai/"
       ],
-      "seen_at_utc": "2026-09-12T20:51:06.650367+00:00"
+      "seen_at_utc": "2026-09-12T21:17:02.567312+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877900/kataigida-kai-katolisthisi-prokalesan-provlimata-sto-ultra-trail-stin-oiti-se-kaluves-8-dromeis/?utm_source=rss",
-      "title": "Καταιγίδα και κατολίσθηση προκάλεσαν προβλήματα στο Ultra Trail στην Οίτη, σε καλύβες 8 δρομείς",
-      "normalized_title": "ΚΑΤΑΙΓΙΔΑ ΚΑΙ ΚΑΤΟΛΙΣΘΗΣΗ ΠΡΟΚΑΛΕΣΑΝ ΠΡΟΒΛΗΜΑΤΑ ΣΤΟ ULTRA TRAIL ΣΤΗΝ ΟΙΤΗ, ΣΕ ΚΑΛΥΒΕΣ 8 ΔΡΟΜΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1877908/soudanos-pige-na-to-skasei-gia-italia-apo-tin-patra-me-taxidiotiko-eggrafo-allou-htupise-kokkino-stin-interpol/?utm_source=rss",
+      "title": "Σουδανός πήγε να το σκάσει για Ιταλία από την Πάτρα με ταξιδιωτικό έγγραφο άλλου, χτύπησε κόκκινο στην Interpol",
+      "normalized_title": "ΣΟΥΔΑΝΟΣ ΠΗΓΕ ΝΑ ΤΟ ΣΚΑΣΕΙ ΓΙΑ ΙΤΑΛΙΑ ΑΠΟ ΤΗΝ ΠΑΤΡΑ ΜΕ ΤΑΞΙΔΙΩΤΙΚΟ ΕΓΓΡΑΦΟ ΑΛΛΟΥ, ΧΤΥΠΗΣΕ ΚΟΚΚΙΝΟ ΣΤΗΝ INTERPOL",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877900/kataigida-kai-katolisthisi-prokalesan-provlimata-sto-ultra-trail-stin-oiti-se-kaluves-8-dromeis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877893/giorgos-mazonakis-ta-84-lepta-apo-ti-diakopi-tis-plasmafairesis-mehri-tin-klisi-sto-ekav-ti-sunevi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877908/soudanos-pige-na-to-skasei-gia-italia-apo-tin-patra-me-taxidiotiko-eggrafo-allou-htupise-kokkino-stin-interpol/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T20:19:54.304754+00:00"
+      "seen_at_utc": "2026-09-12T21:17:02.567450+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465933/nekro-4hrono-paidi-stin-kypro-epese-apo-6o-orofo-ktirioy/",
-      "title": "Νεκρό 4χρονο παιδί στην Κύπρο – Έπεσε από 6ο όροφο κτηρίου",
-      "normalized_title": "ΝΕΚΡΟ 4ΧΡΟΝΟ ΠΑΙΔΙ ΣΤΗΝ ΚΥΠΡΟ – ΕΠΕΣΕ ΑΠΟ 6Ο ΟΡΟΦΟ ΚΤΗΡΙΟΥ",
+      "url": "https://www.efsyn.gr/ellada/1465940/serres-entopistikan-ta-ohimata-tis-kinimatografikis-apodrasis-pos-egine-i-organomeni-efodos/",
+      "title": "Σέρρες: Εντοπίστηκαν τα οχήματα της κινηματογραφικής απόδρασης – Πώς έγινε η οργανωμένη έφοδος",
+      "normalized_title": "ΣΕΡΡΕΣ: ΕΝΤΟΠΙΣΤΗΚΑΝ ΤΑ ΟΧΗΜΑΤΑ ΤΗΣ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗΣ ΑΠΟΔΡΑΣΗΣ – ΠΩΣ ΕΓΙΝΕ Η ΟΡΓΑΝΩΜΕΝΗ ΕΦΟΔΟΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465933/nekro-4hrono-paidi-stin-kypro-epese-apo-6o-orofo-ktirioy/"
+        "https://www.efsyn.gr/ellada/1465940/serres-entopistikan-ta-ohimata-tis-kinimatografikis-apodrasis-pos-egine-i-organomeni-efodos/",
+        "https://www.efsyn.gr/ellada/1465936/prota-o-theos-kai-meta-ego-oi-kataggelies-gia-toys-giatroys-toy-giorgoy-mazonaki-kai-ta-stoiheia-poy-ereynoyn-oi-arhes/"
       ],
-      "seen_at_utc": "2026-09-12T20:51:06.650462+00:00"
+      "seen_at_utc": "2026-09-12T21:17:02.567406+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/to-stoixima-tis-ee-mporei-mia-apagoreysi-na-prostateysei-ta-paidia-apo-ta-social-media/",
-      "title": "Το στοίχημα της ΕΕ: Μπορεί μια απαγόρευση να προστατεύσει τα παιδιά από τα social media;",
-      "normalized_title": "ΤΟ ΣΤΟΙΧΗΜΑ ΤΗΣ ΕΕ: ΜΠΟΡΕΙ ΜΙΑ ΑΠΑΓΟΡΕΥΣΗ ΝΑ ΠΡΟΣΤΑΤΕΥΣΕΙ ΤΑ ΠΑΙΔΙΑ ΑΠΟ ΤΑ SOCIAL MEDIA;",
+      "url": "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/mpafet-poia-einai-i-provlimatiki-ependysi-pou-apodidei-tora-karpous/",
+      "title": "Μπάφετ: Ποια είναι η προβληματική επένδυση που αποδίδει τώρα καρπούς",
+      "normalized_title": "ΜΠΑΦΕΤ: ΠΟΙΑ ΕΙΝΑΙ Η ΠΡΟΒΛΗΜΑΤΙΚΗ ΕΠΕΝΔΥΣΗ ΠΟΥ ΑΠΟΔΙΔΕΙ ΤΩΡΑ ΚΑΡΠΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/to-stoixima-tis-ee-mporei-mia-apagoreysi-na-prostateysei-ta-paidia-apo-ta-social-media/",
-        "https://www.in.gr/2026/09/12/plus/i-texni-tou-na-lete-oxi-i-simasia-ton-orion-ston-xoro-ergasias/",
-        "https://www.in.gr/2026/09/12/sports/othersports/grand-prix-madritis-o-noris-pire-tin-pole-position-sygklonistiko-finale-pics/"
+        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/mpafet-poia-einai-i-provlimatiki-ependysi-pou-apodidei-tora-karpous/",
+        "https://www.in.gr/2026/09/13/sports/football/santerlant-arsenal-0-2-tetarti-seri-niki-gia-tous-kanonierides-vasikos-kai-pai-o-tzolis/",
+        "https://www.in.gr/2026/09/13/go-fun/ta-ntoueta-tou-antoni-remou-oi-palies-epityxies-me-manto-kaiti-garmpi-kai-giorgo-theofanous/",
+        "https://www.in.gr/2026/09/13/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-kyriaki-13-09-2026/",
+        "https://www.in.gr/2026/09/13/greece/giorti-simera-13-septemvriou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/09/12/sports/football/atalanta-kaliari-1-2-diplo-sto-mpergkamo-kai-tetrada-pic/"
       ],
-      "seen_at_utc": "2026-09-12T20:51:06.650421+00:00"
+      "seen_at_utc": "2026-09-12T21:17:02.567356+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T20:51:06.650534+00:00"
+  "updated_at_utc": "2026-09-12T21:17:02.567541+00:00"
 }
