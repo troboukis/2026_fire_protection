@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564453616/entos-kai-ektos-oloi-enantion-olon-gia-to-epidoma-anergias/",
-      "title": "Εντός και Εκτός: Ολοι εναντίον όλων για το επίδομα ανεργίας",
-      "normalized_title": "ΕΝΤΟΣ ΚΑΙ ΕΚΤΟΣ: ΟΛΟΙ ΕΝΑΝΤΙΟΝ ΟΛΩΝ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ",
+      "url": "https://www.kathimerini.gr/economy/diktis/564454096/to-megalytero-agkathi-tis-oikonomias/",
+      "title": "Το μεγαλύτερο «αγκάθι» της οικονομίας",
+      "normalized_title": "ΤΟ ΜΕΓΑΛΥΤΕΡΟ «ΑΓΚΑΘΙ» ΤΗΣ ΟΙΚΟΝΟΜΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564453616/entos-kai-ektos-oloi-enantion-olon-gia-to-epidoma-anergias/",
-        "https://www.kathimerini.gr/economy/local/564453997/akinita-anavallontai-gia-meta-to-2030-dyo-foroi/",
-        "https://www.kathimerini.gr/economy/local/564453994/to-2034-tha-epistrepsei-to-elliniko-aep-sta-pro-krisis-epipeda/",
-        "https://www.kathimerini.gr/world/564455167/poytin-ta-lathi-tis-dysis-odigisan-stin-anodo-tis-afd/",
-        "https://www.kathimerini.gr/istoria/564451015/san-simera-12-septemvrioy-1923-i-notia-rodesia-simerini-zimpampoye-anakiryssetai-aytodioikoymeni-apoikia/"
+        "https://www.kathimerini.gr/economy/diktis/564454096/to-megalytero-agkathi-tis-oikonomias/",
+        "https://www.kathimerini.gr/society/564455194/kinimatografiki-apodrasi-kratoymenoy-apo-to-nosokomeio-serron-oi-synergoi-toy-itan-ntymenoi-astynomikoi/",
+        "https://www.kathimerini.gr/visual/photography/564453475/oi-axiomatoychoi-kai-oi-tsantes/",
+        "https://www.kathimerini.gr/politics/564453568/theoreio-prosopiki-apopsi/"
       ],
-      "seen_at_utc": "2026-09-12T04:51:11.307419+00:00"
+      "seen_at_utc": "2026-09-12T05:16:58.213799+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1272,23 +1271,29 @@
       "seen_at_utc": "2026-09-11T21:17:01.189603+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465440/o-poytin-proeidopoiei-toys-eyropaioys-i-anaptyxi-strateymaton-stin-oykrania-isodynamei-me-polemo/",
-      "title": "Ο Πούτιν προειδοποιεί τους Ευρωπαίους: Η ανάπτυξη στρατευμάτων στην Ουκρανία ισοδυναμεί με πόλεμο",
-      "normalized_title": "Ο ΠΟΥΤΙΝ ΠΡΟΕΙΔΟΠΟΙΕΙ ΤΟΥΣ ΕΥΡΩΠΑΙΟΥΣ: Η ΑΝΑΠΤΥΞΗ ΣΤΡΑΤΕΥΜΑΤΩΝ ΣΤΗΝ ΟΥΚΡΑΝΙΑ ΙΣΟΔΥΝΑΜΕΙ ΜΕ ΠΟΛΕΜΟ",
+      "url": "https://www.efsyn.gr/ellada/1465488/allazei-to-skiniko-toy-kairoy-poy-tha-simeiothoyn-vrohes-kai-kataigides/",
+      "title": "Αλλάζει το σκηνικό του καιρού: Πού θα σημειωθούν βροχές και καταιγίδες",
+      "normalized_title": "ΑΛΛΑΖΕΙ ΤΟ ΣΚΗΝΙΚΟ ΤΟΥ ΚΑΙΡΟΥ: ΠΟΥ ΘΑ ΣΗΜΕΙΩΘΟΥΝ ΒΡΟΧΕΣ ΚΑΙ ΚΑΤΑΙΓΙΔΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465440/o-poytin-proeidopoiei-toys-eyropaioys-i-anaptyxi-strateymaton-stin-oykrania-isodynamei-me-polemo/"
+        "https://www.efsyn.gr/ellada/1465488/allazei-to-skiniko-toy-kairoy-poy-tha-simeiothoyn-vrohes-kai-kataigides/",
+        "https://www.efsyn.gr/ellada/1465486/eortologio-poioi-giortazoyn-simera-12-septemvrioy/"
       ],
-      "seen_at_utc": "2026-09-11T21:17:01.189552+00:00"
+      "seen_at_utc": "2026-09-12T05:16:58.213859+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/to-amerikaniko-oneiro-ypothikeyetai-i-stegastiki-krisi-egklovizei-tis-ipa/",
-      "title": "Το αμερικανικό όνειρο υποθηκεύεται: Η στεγαστική κρίση εγκλωβίζει τις ΗΠΑ",
-      "normalized_title": "ΤΟ ΑΜΕΡΙΚΑΝΙΚΟ ΟΝΕΙΡΟ ΥΠΟΘΗΚΕΥΕΤΑΙ: Η ΣΤΕΓΑΣΤΙΚΗ ΚΡΙΣΗ ΕΓΚΛΩΒΙΖΕΙ ΤΙΣ ΗΠΑ",
+      "url": "https://www.in.gr/2026/09/12/world/poutin-syndeei-tin-epityxia-tis-afd-stis-ekloges-se-saksonia-anxalt-me-lathi-tis-dysis/",
+      "title": "Πούτιν: Συνδέει την επιτυχία της AfD στις εκλογές σε Σαξονία-Άνχαλτ με λάθη της Δύσης",
+      "normalized_title": "ΠΟΥΤΙΝ: ΣΥΝΔΕΕΙ ΤΗΝ ΕΠΙΤΥΧΙΑ ΤΗΣ AFD ΣΤΙΣ ΕΚΛΟΓΕΣ ΣΕ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ ΜΕ ΛΑΘΗ ΤΗΣ ΔΥΣΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/to-amerikaniko-oneiro-ypothikeyetai-i-stegastiki-krisi-egklovizei-tis-ipa/"
+        "https://www.in.gr/2026/09/12/world/poutin-syndeei-tin-epityxia-tis-afd-stis-ekloges-se-saksonia-anxalt-me-lathi-tis-dysis/",
+        "https://www.in.gr/2026/09/12/life/geysi/syntagi-mosxari-lemonato-me-ryzi/",
+        "https://www.in.gr/2026/09/12/world/stratigiki-i-rigma-to-akrodeksio-didymo-lepen-mparntela-se-proeklogika-thola-nera/",
+        "https://www.in.gr/2026/09/12/world/i-eyropi-tis-theouta-kai-ton-xorafion-otan-o-exthros-ginetai-aparaititos-ergatis/",
+        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/foititikes-katoikies-ektos-elegxou-ta-enoikia-ayksisi-164-se-mia-10etia-pinakas/",
+        "https://www.in.gr/2026/09/12/plus/vita/ti-sxesi-mporei-na-exei-to-aktinidio-me-ton-ypno/"
       ],
-      "seen_at_utc": "2026-09-12T04:51:11.307464+00:00"
+      "seen_at_utc": "2026-09-12T05:16:58.213835+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T04:51:11.307541+00:00"
+  "updated_at_utc": "2026-09-12T05:16:58.213911+00:00"
 }
