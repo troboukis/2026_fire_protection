@@ -71,6 +71,7 @@ export default defineConfig(({ command }) => ({
     rollupOptions: {
       input: [
         resolve(appRoot, 'index.html'),
+        resolve(appRoot, 'analysis/index.html'),
         resolve(appRoot, 'analysis/statistics/index.html'),
         resolve(appRoot, 'analysis/antinero-west-attica/index.html'),
       ],
