@@ -1,17 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564453784/otan-xypnisei-o-skynet/",
-      "title": "Οταν ξυπνήσει ο Skynet",
-      "normalized_title": "ΟΤΑΝ ΞΥΠΝΗΣΕΙ Ο SKYNET",
+      "url": "https://www.kathimerini.gr/culture/564453802/83o-festival-kinimatografoy-venetias-chrysos-leon-me-to-vlemma-sta-oskar/",
+      "title": "83ο Φεστιβάλ Κινηματογράφου Βενετίας: Χρυσός Λέων με το βλέμμα στα Οσκαρ",
+      "normalized_title": "83Ο ΦΕΣΤΙΒΑΛ ΚΙΝΗΜΑΤΟΓΡΑΦΟΥ ΒΕΝΕΤΙΑΣ: ΧΡΥΣΟΣ ΛΕΩΝ ΜΕ ΤΟ ΒΛΕΜΜΑ ΣΤΑ ΟΣΚΑΡ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564453784/otan-xypnisei-o-skynet/",
-        "https://www.kathimerini.gr/opinion/564453766/yposcheseis-kai-kathreftakia-ston-dromo-pros-tis-kalpes/",
-        "https://www.kathimerini.gr/opinion/564453763/kapoy-pera-apo-tin-iatriki/",
-        "https://www.kathimerini.gr/opinion/564453931/den-fthanei-to-metro/",
-        "https://www.kathimerini.gr/economy/local/564453991/sta-20-5-dis-oi-rythmiseis-meso-exodikastikoy/"
+        "https://www.kathimerini.gr/culture/564453802/83o-festival-kinimatografoy-venetias-chrysos-leon-me-to-vlemma-sta-oskar/",
+        "https://www.kathimerini.gr/athletics/football/564453889/super-league-1-ayxanetai-to-endiaferon/",
+        "https://www.kathimerini.gr/opinion/564453769/oi-siragges-tis-gazas-kai-i-fauda/"
       ],
-      "seen_at_utc": "2026-09-12T05:30:00.790167+00:00"
+      "seen_at_utc": "2026-09-12T05:51:14.242850+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,35 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877590/kriti-edopistikan-37-allodapoi-se-lemvo-42-nautika-milia-notioanatolika-ton-kalon-limenon/?utm_source=rss",
-      "title": "Κρήτη: Εντοπίστηκαν 37 αλλοδαποί σε λέμβο 42 ναυτικά μίλια νοτιοανατολικά των Καλών Λιμένων",
-      "normalized_title": "ΚΡΗΤΗ: ΕΝΤΟΠΙΣΤΗΚΑΝ 37 ΑΛΛΟΔΑΠΟΙ ΣΕ ΛΕΜΒΟ 42 ΝΑΥΤΙΚΑ ΜΙΛΙΑ ΝΟΤΙΟΑΝΑΤΟΛΙΚΑ ΤΩΝ ΚΑΛΩΝ ΛΙΜΕΝΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1877622/etoimo-fagito-apo-to-souper-market-epilegoun-olo-kai-perissoteroi-ellines-xodeuoun-770-euro-to-hrono/?utm_source=rss",
+      "title": "Έτοιμο φαγητό από το σούπερ μάρκετ επιλέγουν όλο και περισσότεροι Έλληνες, ξοδεύουν 770 ευρώ το χρόνο",
+      "normalized_title": "ΕΤΟΙΜΟ ΦΑΓΗΤΟ ΑΠΟ ΤΟ ΣΟΥΠΕΡ ΜΑΡΚΕΤ ΕΠΙΛΕΓΟΥΝ ΟΛΟ ΚΑΙ ΠΕΡΙΣΣΟΤΕΡΟΙ ΕΛΛΗΝΕΣ, ΞΟΔΕΥΟΥΝ 770 ΕΥΡΩ ΤΟ ΧΡΟΝΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877590/kriti-edopistikan-37-allodapoi-se-lemvo-42-nautika-milia-notioanatolika-ton-kalon-limenon/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877622/etoimo-fagito-apo-to-souper-market-epilegoun-olo-kai-perissoteroi-ellines-xodeuoun-770-euro-to-hrono/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877616/ta-kuriakatika-proina-ginodai-kalutera-me-efood-market-kai-proto-thema/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877602/apo-giatros-ton-astronauton-astronautis-o-idios-i-megali-stigmi-tou-adrianou-golemi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T05:30:00.790254+00:00"
+      "seen_at_utc": "2026-09-12T05:51:14.242978+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/protoselida/i-pleiopsifia-zita-kyvernitiki-allagi/",
-      "title": "Η πλειοψηφία ζητά κυβερνητική αλλαγή",
-      "normalized_title": "Η ΠΛΕΙΟΨΗΦΙΑ ΖΗΤΑ ΚΥΒΕΡΝΗΤΙΚΗ ΑΛΛΑΓΗ",
+      "url": "https://www.efsyn.gr/ellada/1465505/serres-kinimatografiki-apodrasi-kratoymenoy-enedra-apo-enoploys-ntymenoys-os-astynomikoys/",
+      "title": "Σέρρες: Κινηματογραφική απόδραση κρατουμένου – Ενέδρα από ενόπλους, ντυμένους ως αστυνομικούς",
+      "normalized_title": "ΣΕΡΡΕΣ: ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΑΠΟΔΡΑΣΗ ΚΡΑΤΟΥΜΕΝΟΥ – ΕΝΕΔΡΑ ΑΠΟ ΕΝΟΠΛΟΥΣ, ΝΤΥΜΕΝΟΥΣ ΩΣ ΑΣΤΥΝΟΜΙΚΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/protoselida/i-pleiopsifia-zita-kyvernitiki-allagi/",
-        "https://www.efsyn.gr/ellada/1465460/giorgos-mazonakis-sto-fos-sovares-kataggelies-asthenon-gia-to-iatreio-toy-kolonakioy-oi-antifaseis-ton-giatron/"
+        "https://www.efsyn.gr/ellada/1465505/serres-kinimatografiki-apodrasi-kratoymenoy-enedra-apo-enoploys-ntymenoys-os-astynomikoys/",
+        "https://www.efsyn.gr/kosmos/1465463/yemeni-i-mitera-ton-mahon-i-xafniki-antepithesi-ton-hoythi-i-epelasi-kai-to-htypima-ston-komviko-agogo-east-west/",
+        "https://www.efsyn.gr/kosmos/1465501/ektrohiasmos-trenoy-sti-gallia-44-traymaties-18hroni-se-poly-sovari-katastasi/",
+        "https://www.efsyn.gr/oikonomia/1465457/epidoma-anergias-eytheia-epithesi-sta-ergasiaka-dikaiomata-i-proklisi-marinaki/"
       ],
-      "seen_at_utc": "2026-09-12T05:30:00.790232+00:00"
+      "seen_at_utc": "2026-09-12T05:51:14.242941+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/greece/kairos-peraitero-anodos-tis-thermokrasias-kai-afrikaniki-skoni-se-poies-perioxes-tha-vreksei/",
-      "title": "Περαιτέρω άνοδος της θερμοκρασίας και αφρικανική σκόνη - Σε ποιες περιοχές θα βρέξει",
-      "normalized_title": "ΠΕΡΑΙΤΕΡΩ ΑΝΟΔΟΣ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΚΑΙ ΑΦΡΙΚΑΝΙΚΗ ΣΚΟΝΗ - ΣΕ ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΒΡΕΞΕΙ",
+      "url": "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/kaysima-to-ntizel-pano-apo-ta-2-eyro-vazei-fotia-sto-kostos-ton-epixeiriseon/",
+      "title": "Πάνω από τα 2 ευρώ το ντίζελ – «Φωτιά» στο κόστος των επιχειρήσεων",
+      "normalized_title": "ΠΑΝΩ ΑΠΟ ΤΑ 2 ΕΥΡΩ ΤΟ ΝΤΙΖΕΛ – «ΦΩΤΙΑ» ΣΤΟ ΚΟΣΤΟΣ ΤΩΝ ΕΠΙΧΕΙΡΗΣΕΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/greece/kairos-peraitero-anodos-tis-thermokrasias-kai-afrikaniki-skoni-se-poies-perioxes-tha-vreksei/",
-        "https://www.in.gr/2026/09/12/sports/football/o-mark-ofermars-egkataleipei-amesa-to-podosfairo-logo-sovaron-provlimaton-ygeias/",
-        "https://www.in.gr/2026/09/12/life/culture-live/nees-tainies-mporoun-ta-magika-filtra-na-riksoun-ton-spider-man-apo-tin-koryfi/"
+        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/kaysima-to-ntizel-pano-apo-ta-2-eyro-vazei-fotia-sto-kostos-ton-epixeiriseon/",
+        "https://www.in.gr/2026/09/12/go-fun/social/arkas-i-kalimera-tou-savvatou-15/",
+        "https://www.in.gr/2026/09/12/plus/vita/askisi-i-simasia-tis-prothermansis/",
+        "https://www.in.gr/2026/09/12/in-science/ai/ta-manifesta-tis-silikon-valei-oi-ceos-pou-milane-gia-ta-panta/"
       ],
-      "seen_at_utc": "2026-09-12T05:30:00.790209+00:00"
+      "seen_at_utc": "2026-09-12T05:51:14.242904+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T05:30:00.790329+00:00"
+  "updated_at_utc": "2026-09-12T05:51:14.243055+00:00"
 }
