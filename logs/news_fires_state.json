@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564455704/thanatos-mazonaki-oi-fotografies-apo-to-iatreio-o-katharismos-toy-choroy-kai-ta-eyrimata-ton-astynomikon/",
-      "title": "Θάνατος Μαζωνάκη: Οι φωτογραφίες από το ιατρείο, ο καθαρισμός του χώρου και τα ευρήματα των αστυνομικών",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΜΑΖΩΝΑΚΗ: ΟΙ ΦΩΤΟΓΡΑΦΙΕΣ ΑΠΟ ΤΟ ΙΑΤΡΕΙΟ, Ο ΚΑΘΑΡΙΣΜΟΣ ΤΟΥ ΧΩΡΟΥ ΚΑΙ ΤΑ ΕΥΡΗΜΑΤΑ ΤΩΝ ΑΣΤΥΝΟΜΙΚΩΝ",
+      "url": "https://www.kathimerini.gr/politics/564455731/live-i-omilia-toy-nikoy-androylaki-sti-deth/",
+      "title": "Live η ομιλία του Νίκου Ανδρουλάκη στη ΔΕΘ",
+      "normalized_title": "LIVE Η ΟΜΙΛΙΑ ΤΟΥ ΝΙΚΟΥ ΑΝΔΡΟΥΛΑΚΗ ΣΤΗ ΔΕΘ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564455704/thanatos-mazonaki-oi-fotografies-apo-to-iatreio-o-katharismos-toy-choroy-kai-ta-eyrimata-ton-astynomikon/",
-        "https://www.kathimerini.gr/world/564455710/ipa-wsj-kinezikes-etaireies-pareichan-sto-iran-eikones-amerikanikis-vasis/"
+        "https://www.kathimerini.gr/politics/564455731/live-i-omilia-toy-nikoy-androylaki-sti-deth/",
+        "https://www.kathimerini.gr/athletics/564455725/to-periergo-goyri-toy-antoni-iraola/",
+        "https://www.kathimerini.gr/society/564455716/se-laiki-agrypnia-apo-to-apogeyma-tis-kyriakis-i-soros-toy-giorgoy-mazonaki/"
       ],
-      "seen_at_utc": "2026-09-12T16:29:56.700128+00:00"
+      "seen_at_utc": "2026-09-12T16:51:14.507330+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,28 @@
       "seen_at_utc": "2026-09-12T16:17:02.129060+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1465613/vaptisma-pyros-prin-nyhtosei/",
-      "title": "Βάπτισμα πυρός πριν νυχτώσει…",
-      "normalized_title": "ΒΑΠΤΙΣΜΑ ΠΥΡΟΣ ΠΡΙΝ ΝΥΧΤΩΣΕΙ…",
+      "url": "https://www.efsyn.gr/ellada/1465862/giorgos-mazonakis-se-laiki-agrypnia-i-soros-toy-stin-ag-triada-tis-nikaias-i-anakoinosi-tis-oikogeneias/",
+      "title": "Γιώργος Μαζωνάκης: Σε λαϊκή αγρυπνία η σορός του στην Αγ. Τριάδα της Νίκαιας – Η ανακοίνωση της οικογένειας",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΕ ΛΑΙΚΗ ΑΓΡΥΠΝΙΑ Η ΣΟΡΟΣ ΤΟΥ ΣΤΗΝ ΑΓ. ΤΡΙΑΔΑ ΤΗΣ ΝΙΚΑΙΑΣ – Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1465613/vaptisma-pyros-prin-nyhtosei/",
-        "https://www.efsyn.gr/politiki/1465855/to-minyma-koyfonikolakoy-gia-georgiadi-floridi-marinaki-oso-kindynologoyn-i-kyvernisi-adranei-anenohliti/"
+        "https://www.efsyn.gr/ellada/1465862/giorgos-mazonakis-se-laiki-agrypnia-i-soros-toy-stin-ag-triada-tis-nikaias-i-anakoinosi-tis-oikogeneias/"
       ],
-      "seen_at_utc": "2026-09-12T16:29:56.700195+00:00"
+      "seen_at_utc": "2026-09-12T16:51:14.507444+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/5795454/",
-      "title": "LIVE: Τότεναμ – Έβερτον",
-      "normalized_title": "LIVE: ΤΟΤΕΝΑΜ – ΕΒΕΡΤΟΝ",
+      "url": "https://www.in.gr/2026/09/12/politics/politiki-grammateia/sto-vima-tis-deth-o-nikos-androulakis-parousiazei-to-kyvernitiko-programma-tou-pasok/",
+      "title": "Στο βήμα της ΔΕΘ ο Νίκος Ανδρουλάκης, παρουσιάζει το κυβερνητικό πρόγραμμα του ΠΑΣΟΚ",
+      "normalized_title": "ΣΤΟ ΒΗΜΑ ΤΗΣ ΔΕΘ Ο ΝΙΚΟΣ ΑΝΔΡΟΥΛΑΚΗΣ, ΠΑΡΟΥΣΙΑΖΕΙ ΤΟ ΚΥΒΕΡΝΗΤΙΚΟ ΠΡΟΓΡΑΜΜΑ ΤΟΥ ΠΑΣΟΚ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/5795454/",
-        "https://www.in.gr/2026/09/12/politics/paraskinio/pasok-oi-aneksartitoi-vouleytes-apostolakis-kai-aylonitis-stin-omilia-androulaki/",
-        "https://www.in.gr/2026/09/12/sports/football/aston-vila-notigxam-forest-1-2-ntelap-kai-zesous-ypegrapsan-to-megalo-diplo-ton-reds/",
-        "https://www.in.gr/2026/09/12/sports/football/kali-eykairia-gia-olympiako-me-pouerta-vid/"
+        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/sto-vima-tis-deth-o-nikos-androulakis-parousiazei-to-kyvernitiko-programma-tou-pasok/",
+        "https://www.in.gr/2026/09/12/sports/football/premier-league-exase-vathmous-me-foulam-i-liverpoul-0-0-spoudaia-isopalia-me-tselsi-i-xal-tou-tzolaki-2-2/",
+        "https://www.in.gr/2026/09/12/world/tragodia-sti-xili-toulaxiston-16-ilikiomenoi-apanthrakothikan-se-oiko-eygirias/",
+        "https://www.in.gr/2026/09/12/sports/basketball/monako-ypovivazetai-stin-pempti-katigoria-tis-gallias-pic/",
+        "https://www.in.gr/2026/09/12/sports/football/apeilise-o-olympiakos-me-kefalia-tou-pirola-vid/",
+        "https://www.in.gr/2026/09/12/life/mnimes-grigoropoulou-kai-gaza-diakrisi-sti-venetia-gia-to-mia-mera-sti-zoi-tis-tzo-kefalaio-faidra-tis-zaklin-lentzou-kai-to-naza/"
       ],
-      "seen_at_utc": "2026-09-12T16:29:56.700165+00:00"
+      "seen_at_utc": "2026-09-12T16:51:14.507384+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T16:29:56.700271+00:00"
+  "updated_at_utc": "2026-09-12T16:51:14.507522+00:00"
 }
