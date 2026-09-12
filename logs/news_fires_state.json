@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564455731/live-i-omilia-toy-nikoy-androylaki-sti-deth/",
-      "title": "Live η ομιλία του Νίκου Ανδρουλάκη στη ΔΕΘ",
-      "normalized_title": "LIVE Η ΟΜΙΛΙΑ ΤΟΥ ΝΙΚΟΥ ΑΝΔΡΟΥΛΑΚΗ ΣΤΗ ΔΕΘ",
+      "url": "https://www.kathimerini.gr/world/564455737/megisti-aytosygkratisi-sti-mesi-anatoli-zitoyn-oi-igetes-tis-brics/",
+      "title": "«Μέγιστη αυτοσυγκράτηση» στη Μέση Ανατολή ζητούν οι ηγέτες της BRICS",
+      "normalized_title": "«ΜΕΓΙΣΤΗ ΑΥΤΟΣΥΓΚΡΑΤΗΣΗ» ΣΤΗ ΜΕΣΗ ΑΝΑΤΟΛΗ ΖΗΤΟΥΝ ΟΙ ΗΓΕΤΕΣ ΤΗΣ BRICS",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564455731/live-i-omilia-toy-nikoy-androylaki-sti-deth/",
-        "https://www.kathimerini.gr/athletics/564455725/to-periergo-goyri-toy-antoni-iraola/",
-        "https://www.kathimerini.gr/society/564455716/se-laiki-agrypnia-apo-to-apogeyma-tis-kyriakis-i-soros-toy-giorgoy-mazonaki/"
+        "https://www.kathimerini.gr/world/564455737/megisti-aytosygkratisi-sti-mesi-anatoli-zitoyn-oi-igetes-tis-brics/"
       ],
-      "seen_at_utc": "2026-09-12T16:51:14.507330+00:00"
+      "seen_at_utc": "2026-09-12T17:16:58.409539+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,28 +1268,28 @@
       "seen_at_utc": "2026-09-12T16:17:02.129060+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465862/giorgos-mazonakis-se-laiki-agrypnia-i-soros-toy-stin-ag-triada-tis-nikaias-i-anakoinosi-tis-oikogeneias/",
-      "title": "Γιώργος Μαζωνάκης: Σε λαϊκή αγρυπνία η σορός του στην Αγ. Τριάδα της Νίκαιας – Η ανακοίνωση της οικογένειας",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΕ ΛΑΙΚΗ ΑΓΡΥΠΝΙΑ Η ΣΟΡΟΣ ΤΟΥ ΣΤΗΝ ΑΓ. ΤΡΙΑΔΑ ΤΗΣ ΝΙΚΑΙΑΣ – Η ΑΝΑΚΟΙΝΩΣΗ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ",
+      "url": "https://www.efsyn.gr/stiles/1465622/o-akrodexios-me-to-dikyklo/",
+      "title": "Ούλριχ Ζίγκμουντ, ηγέτης της AfD στη Σαξονία-Άνχαλτ: Ο ακροδεξιός με το δίκυκλο",
+      "normalized_title": "ΟΥΛΡΙΧ ΖΙΓΚΜΟΥΝΤ, ΗΓΕΤΗΣ ΤΗΣ AFD ΣΤΗ ΣΑΞΟΝΙΑ-ΑΝΧΑΛΤ: Ο ΑΚΡΟΔΕΞΙΟΣ ΜΕ ΤΟ ΔΙΚΥΚΛΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465862/giorgos-mazonakis-se-laiki-agrypnia-i-soros-toy-stin-ag-triada-tis-nikaias-i-anakoinosi-tis-oikogeneias/"
+        "https://www.efsyn.gr/stiles/1465622/o-akrodexios-me-to-dikyklo/",
+        "https://www.efsyn.gr/politiki/1465852/live-i-omilia-toy-nikoy-androylaki-stin-deth/",
+        "https://www.efsyn.gr/kosmos/1465864/o-epikefalis-tis-anthropic-proeidopoiei-as-halarosei-ligo-i-anaptyxi-ton-montelon-ai-symfonei-o-ilon-mask/"
       ],
-      "seen_at_utc": "2026-09-12T16:51:14.507444+00:00"
+      "seen_at_utc": "2026-09-12T17:16:58.409630+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/politics/politiki-grammateia/sto-vima-tis-deth-o-nikos-androulakis-parousiazei-to-kyvernitiko-programma-tou-pasok/",
-      "title": "Στο βήμα της ΔΕΘ ο Νίκος Ανδρουλάκης, παρουσιάζει το κυβερνητικό πρόγραμμα του ΠΑΣΟΚ",
-      "normalized_title": "ΣΤΟ ΒΗΜΑ ΤΗΣ ΔΕΘ Ο ΝΙΚΟΣ ΑΝΔΡΟΥΛΑΚΗΣ, ΠΑΡΟΥΣΙΑΖΕΙ ΤΟ ΚΥΒΕΡΝΗΤΙΚΟ ΠΡΟΓΡΑΜΜΑ ΤΟΥ ΠΑΣΟΚ",
+      "url": "https://www.in.gr/2026/09/12/sports/basketball/panathinaikos-spartak-soumpotitsa-77-59-ekane-ta-2-2-sti-rodo-me-fransisko-kai-giampousele-vid/",
+      "title": "Έκανε τα 2/2 στη Ρόδο ο Παναθηναϊκός με Φρανσίσκο και Γιαμπουσέλε (vid)",
+      "normalized_title": "ΕΚΑΝΕ ΤΑ 2/2 ΣΤΗ ΡΟΔΟ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ ΜΕ ΦΡΑΝΣΙΣΚΟ ΚΑΙ ΓΙΑΜΠΟΥΣΕΛΕ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/sto-vima-tis-deth-o-nikos-androulakis-parousiazei-to-kyvernitiko-programma-tou-pasok/",
-        "https://www.in.gr/2026/09/12/sports/football/premier-league-exase-vathmous-me-foulam-i-liverpoul-0-0-spoudaia-isopalia-me-tselsi-i-xal-tou-tzolaki-2-2/",
-        "https://www.in.gr/2026/09/12/world/tragodia-sti-xili-toulaxiston-16-ilikiomenoi-apanthrakothikan-se-oiko-eygirias/",
-        "https://www.in.gr/2026/09/12/sports/basketball/monako-ypovivazetai-stin-pempti-katigoria-tis-gallias-pic/",
-        "https://www.in.gr/2026/09/12/sports/football/apeilise-o-olympiakos-me-kefalia-tou-pirola-vid/",
-        "https://www.in.gr/2026/09/12/life/mnimes-grigoropoulou-kai-gaza-diakrisi-sti-venetia-gia-to-mia-mera-sti-zoi-tis-tzo-kefalaio-faidra-tis-zaklin-lentzou-kai-to-naza/"
+        "https://www.in.gr/2026/09/12/sports/basketball/panathinaikos-spartak-soumpotitsa-77-59-ekane-ta-2-2-sti-rodo-me-fransisko-kai-giampousele-vid/",
+        "https://www.in.gr/2026/09/12/world/o-kosmos-vlepei-tis-ipa-allios-kai-ayto-tha-tis-stoixisei/",
+        "https://www.in.gr/2026/09/12/politics/epikairotita/syllypitiria-tis-elas-gia-ton-thanato-tou-istorikou-stelexous-tou-kke-spyrou-xalvatzi/",
+        "https://www.in.gr/2026/09/12/sports/football/dokari-gia-ton-ofi-vid/"
       ],
-      "seen_at_utc": "2026-09-12T16:51:14.507384+00:00"
+      "seen_at_utc": "2026-09-12T17:16:58.409587+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T16:51:14.507522+00:00"
+  "updated_at_utc": "2026-09-12T17:16:58.409703+00:00"
 }
