@@ -1,14 +1,20 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564434137/eortologio-poioi-giortazoyn-simera-12-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 12 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 12 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/world/564455137/ektrochiasmos-trenoy-sti-gallia-44-traymaties-18chroni-se-poly-sovari-katastasi/",
+      "title": "Εκτροχιασμός τρένου στη Γαλλία: 44 τραυματίες, 18χρονη σε πολύ σοβαρή κατάσταση",
+      "normalized_title": "ΕΚΤΡΟΧΙΑΣΜΟΣ ΤΡΕΝΟΥ ΣΤΗ ΓΑΛΛΙΑ: 44 ΤΡΑΥΜΑΤΙΕΣ, 18ΧΡΟΝΗ ΣΕ ΠΟΛΥ ΣΟΒΑΡΗ ΚΑΤΑΣΤΑΣΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564434137/eortologio-poioi-giortazoyn-simera-12-septemvrioy/",
-        "https://www.kathimerini.gr/world/564454129/ipa-prostimo-se-dikigoro-poy-chrisimopoiise-pseytikoys-martyres-meso-chatgpt/"
+        "https://www.kathimerini.gr/world/564455137/ektrochiasmos-trenoy-sti-gallia-44-traymaties-18chroni-se-poly-sovari-katastasi/",
+        "https://www.kathimerini.gr/economy/local/564453982/sta-32-eyro-i-kathari-miniaia-ayxisi-toy-katotatoy-misthoy/",
+        "https://www.kathimerini.gr/society/564455128/thanatos-mazonaki-kare-kare-ta-krisima-42-lepta-oi-apokliseis-kai-ta-anapantita-erotimata/",
+        "https://www.kathimerini.gr/politics/parties/564453613/eykairies-gia-oloys-ti-tha-pei-sti-deth-o-androylakis/",
+        "https://www.kathimerini.gr/economy/international/564454099/ta-tria-senaria-tis-ekt-gia-kostos-energeias-kai-plithorismo/",
+        "https://www.kathimerini.gr/politics/foreign-policy/564453619/kastelorizo-minyma-apo-mitsotaki/",
+        "https://www.kathimerini.gr/visual/infographics/564453742/poso-allaxan-oi-ipa-25-chronia-meta-tis-11-9/",
+        "https://www.kathimerini.gr/world/564453733/proelaynoyn-oi-choythi-sto-metopo-tis-erythras/"
       ],
-      "seen_at_utc": "2026-09-11T21:17:01.189442+00:00"
+      "seen_at_utc": "2026-09-12T04:17:03.609672+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1278,14 +1284,38 @@
       "seen_at_utc": "2026-09-11T21:17:01.189552+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/synelifthi-o-souleiman-al-asant-ston-livano-i-syria-zita-tin-ekdosi-tou-gia-egklimata-polemou/",
-      "title": "Συνελήφθη ο Σουλεϊμάν αλ Άσαντ στον Λίβανο – Η Συρία ζητά την έκδοσή του για εγκλήματα πολέμου",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ Ο ΣΟΥΛΕΙΜΑΝ ΑΛ ΑΣΑΝΤ ΣΤΟΝ ΛΙΒΑΝΟ – Η ΣΥΡΙΑ ΖΗΤΑ ΤΗΝ ΕΚΔΟΣΗ ΤΟΥ ΓΙΑ ΕΓΚΛΗΜΑΤΑ ΠΟΛΕΜΟΥ",
+      "url": "https://www.in.gr/2026/09/12/life/woman/i-amerikaniki-deksia-thelei-ksafnika-na-einai-seksi-apo-ti-sintnei-souini-sta-esorouxa-tou-maga/",
+      "title": "Η αμερικανική Δεξιά θέλει ξαφνικά να είναι «σέξι» – Από τη Σίντνεϊ Σουίνι στα εσώρουχα του MAGA",
+      "normalized_title": "Η ΑΜΕΡΙΚΑΝΙΚΗ ΔΕΞΙΑ ΘΕΛΕΙ ΞΑΦΝΙΚΑ ΝΑ ΕΙΝΑΙ «ΣΕΞΙ» – ΑΠΟ ΤΗ ΣΙΝΤΝΕΙ ΣΟΥΙΝΙ ΣΤΑ ΕΣΩΡΟΥΧΑ ΤΟΥ MAGA",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/synelifthi-o-souleiman-al-asant-ston-livano-i-syria-zita-tin-ekdosi-tou-gia-egklimata-polemou/"
+        "https://www.in.gr/2026/09/12/life/woman/i-amerikaniki-deksia-thelei-ksafnika-na-einai-seksi-apo-ti-sintnei-souini-sta-esorouxa-tou-maga/",
+        "https://www.in.gr/2026/09/12/plus/vita/giati-o-septemvrios-mas-melagxolei/",
+        "https://www.in.gr/2026/09/12/economy/diethnis-oikonomia/texniti-noimosyni-nea-meleti-apokalyptei-oti-mporei-na-othei-tous-ilikiomenous-na-xasoun-tis-douleies-tous/",
+        "https://www.in.gr/2026/09/12/health/aimatologoi-epikindynes-oi-anagennitikes-therapeies-xoris-tekmiriosi/",
+        "https://www.in.gr/2026/09/12/in-science/perivallon-b-science/klimatiki-allagi-i-kathari-energeia-i-koini-politiki-ton-xoron-kai-5-stoxoi/",
+        "https://www.in.gr/2026/09/12/greece/eggrafo-vomva-gia-tin-asfaleia-sta-trena/",
+        "https://www.in.gr/2026/09/12/in-science/technology/pos-na-parakolouthisete-tis-kameres-pou-sas-parakolouthoun/",
+        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/anapirika-epidomata-ayksanontai-se-218-000-dikaiouxous-apo-to-2027/",
+        "https://www.in.gr/2026/09/12/economy/akinita-apo-tin-apli-katagrafi-stin-epoxi-tis-diastayrosis/",
+        "https://www.in.gr/2026/09/12/world/o-neos-dromos-tou-arktikou-kyklou-allazei-tous-xartes-tis-oikonomias-kai-tis-geopolitikis/",
+        "https://www.in.gr/2026/09/12/world/neos-makarthismos-stis-ipa-apo-psifisma-gia-katadiki-tou-sosialismou-se-platforma-entopismou-aristeron/",
+        "https://www.in.gr/2026/09/12/greece/mazonakis-i-katagrafi-tou-giatrou-apo-kameres-ektos-iatreiou-oi-isxyrismoi-gia-paroxi-karpa-kai-i-katathesi-tou-ekav-gia-mi-leitourgiko-apinidoti/",
+        "https://www.in.gr/2026/09/12/go-fun/fizz/zizel-pos-vionei-tin-kathimerinotita-me-3-paidia-ena-apo-ta-pio-akrivopliromena-montela/",
+        "https://www.in.gr/2026/09/12/in-science/rantevou-apps-drones-kai-viologika-opla-pos-prospathisan-na-xrisimopoiisoun-to-claude-tis-anthropic/",
+        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/tourkia-to-krisimo-stoixeio-pou-tha-krinei-tin-antiparathesi-me-tin-ellada/",
+        "https://www.in.gr/2026/09/12/world/voreia-korea-nees-dokimastikes-ektokseyseis-pollaplon-vallistikon-pyraylon/",
+        "https://www.in.gr/2026/09/12/world/kanadas-o-proin-prothypourgos-tzastin-trinto-idryei-etaireia-paragogis-me-to-onoma-elpida-kai-skliri-douleia/",
+        "https://www.in.gr/2026/09/12/world/ipa-dikigoros-katethese-efesi-me-katatheseis-martyron-epinoimenon-apo-to-chatgpt/",
+        "https://www.in.gr/2026/09/12/world/gallia-44-traymaties-se-ektroxiasmo-trenou-18xroni-se-poly-sovari-katastasi/",
+        "https://www.in.gr/2026/09/12/world/israil-livanos-anavallontai-oi-synomilies-sti-romi-gia-ton-oktovrio/",
+        "https://www.in.gr/2026/09/12/world/tragodia-sti-ld-kongko-26-paidia-nekra-apo-pyrkagia-kai-podopatima-se-sxoleio/",
+        "https://www.in.gr/2026/09/12/world/17-noemvri-anafora-ton-ipa-sto-symvoulio-asfaleias-gia-tis-epitheseis-tis-tromokratikis-organosis/",
+        "https://www.in.gr/2026/09/12/world/ragdaies-ekselikseis-sti-mesi-anatoli-oi-xouthi-katelavan-to-stratigiko-steno-mpamp-el-mantemp/",
+        "https://www.in.gr/2026/09/12/world/poutin-i-anaptyksi-eyropaikon-strateymaton-stin-oukrania-isodynamei-me-polemo-enantion-tis-rosias/",
+        "https://www.in.gr/2026/09/12/plus/medianews/sta-nea-savvatokyriako-i-ellada-apagoreyei-tis-ptiseis-drones/"
       ],
-      "seen_at_utc": "2026-09-11T22:51:13.488379+00:00"
+      "seen_at_utc": "2026-09-12T04:17:03.609757+00:00"
     }
   },
-  "updated_at_utc": "2026-09-11T22:51:13.488461+00:00"
+  "updated_at_utc": "2026-09-12T04:17:03.609847+00:00"
 }
