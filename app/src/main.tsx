@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App'
 import Layout from './components/Layout'
+import LegacyReportsRedirect from './features/analysis/LegacyReportsRedirect'
 import { trackPageView } from './analytics'
 import { initCookieConsent } from './cookieConsent'
 import './index.css'
@@ -21,7 +22,9 @@ function RouteTracker() {
   return null
 }
 
-const AnalysisPage = lazy(() => import('./pages/AnalysisPage'))
+const AntineroPage = lazy(() => import('./features/analysis/antinero/AntineroPage'))
+const AnalysisPage = lazy(() => import('./features/analysis/catalog/AnalysisPage'))
+const StatisticalAnalysisPage = lazy(() => import('./features/analysis/statistics/StatisticalAnalysisPage'))
 const ContractsPage = lazy(() => import('./pages/ContractsPage'))
 const DiavgeiaPage = lazy(() => import('./pages/DiavgeiaPage'))
 const EnvironmentMinistryPage = lazy(() => import('./pages/EnvironmentMinistryPage'))
@@ -39,6 +42,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route element={<Layout />}>
           <Route path="/" element={<App />} />
           <Route path="/analysis" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AnalysisPage /></Suspense>} />
+          <Route path="/analysis/statistics" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><StatisticalAnalysisPage /></Suspense>} />
+          <Route path="/analysis/antinero-west-attica" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AntineroPage /></Suspense>} />
+          <Route path="/reports/*" element={<LegacyReportsRedirect />} />
           <Route path="/contracts" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><ContractsPage /></Suspense>} />
           <Route path="/diavgeia" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><DiavgeiaPage /></Suspense>} />
           <Route path="/environment-ministry" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><EnvironmentMinistryPage /></Suspense>} />

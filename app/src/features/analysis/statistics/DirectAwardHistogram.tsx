@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import * as d3 from 'd3'
-import { isAbortError } from '../lib/isAbortError'
-import { supabase } from '../lib/supabase'
-import ComponentTag from './ComponentTag'
-import DataLoadingCard from './DataLoadingCard'
+import { isAbortError } from '../../../lib/isAbortError'
+import { supabase } from '../../../lib/supabase'
+import ComponentTag from '../../../components/ComponentTag'
+import DataLoadingCard from '../../../components/DataLoadingCard'
 
 type HistoBin = { bin_lo: number; bin_hi: number; cnt: number | string; total_count?: number | string | null }
 

@@ -1,7 +1,11 @@
 import { execSync } from 'node:child_process'
+import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { getCompanyUrlByAfm, normalizeAfm } from './server/gemiCompanyUrl.js'
+
+const appRoot = fileURLToPath(new URL('.', import.meta.url))
 
 function getLastCommitIso(): string {
   try {
@@ -57,9 +61,6 @@ export default defineConfig(({ command }) => ({
   define: {
     __LAST_COMMIT_ISO__: JSON.stringify(getLastCommitIso()),
   },
-  optimizeDeps: {
-    exclude: ['maplibre-gl'],
-  },
   esbuild: command === 'build'
     ? {
         drop: ['console', 'debugger'],
@@ -68,6 +69,11 @@ export default defineConfig(({ command }) => ({
     : undefined,
   build: {
     rollupOptions: {
+      input: [
+        resolve(appRoot, 'index.html'),
+        resolve(appRoot, 'analysis/statistics/index.html'),
+        resolve(appRoot, 'analysis/antinero-west-attica/index.html'),
+      ],
       output: {
         manualChunks(id) {
           if (!id.includes('node_modules')) return

@@ -36,6 +36,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.fire-watch-app.gr/analysis/statistics</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/analysis/antinero-west-attica</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.fire-watch-app.gr/terms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
