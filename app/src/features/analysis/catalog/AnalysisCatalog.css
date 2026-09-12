@@ -1,0 +1,14 @@
+.analysis-catalog {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.analysis-catalog .analysis-card {
+  max-width: none;
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .analysis-catalog {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

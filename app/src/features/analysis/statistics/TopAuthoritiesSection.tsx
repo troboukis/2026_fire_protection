@@ -1,5 +1,5 @@
-import ComponentTag from './ComponentTag'
-import DataLoadingCard from './DataLoadingCard'
+import ComponentTag from '../../../components/ComponentTag'
+import DataLoadingCard from '../../../components/DataLoadingCard'
 
 type TopAuthorityItem = {
   name: string

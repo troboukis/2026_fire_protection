@@ -1,0 +1,1264 @@
+{
+  "review_date": "2026-09-07",
+  "method": "Manual comparison of report paragraphs with archived primary-document extracted texts. Whole-document citations; no visual PDF or live registry validation. Status applies with the stated notes. Publication wording requires editorial integration.",
+  "reviews": [
+    {
+      "finding_id": "report-block-55",
+      "original_text_sha256": "8970c8579ed4612583d98fd3a619a6f2d189faafef8a9e4046fd2b36da9dbc2d",
+      "status": "qualified",
+      "notes": "Article 5 confirms EUR 799,483.29 / 991,359.28. The larger figure is the financing budget. The discrepancy concerns archived metadata; current database contents were not checked.",
+      "evidence": [
+        {
+          "document_id": "24SYMV015170089",
+          "path": "antinero_west_attica/contracts_text/24SYMV015170089.txt",
+          "sha256": "3d2489ff21b7b144fddd27fa787471bde3eb2cba972c747893d7e4edaeea7e15",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015170089",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-58",
+      "original_text_sha256": "6c8d7d0862c82d7502561ae167b1586e0553cbb091fa2ce0f625c03826296221",
+      "status": "supported",
+      "notes": "Articles 3 and 6.1 establish the study and schedule submission requirements.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014192335",
+          "path": "antinero_west_attica/contracts_text/24SYMV014192335.txt",
+          "sha256": "12fcbf8ce88319a204f27632459acce4207c14e599f2c77d7d807b957af6439c",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014192335",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-59",
+      "original_text_sha256": "bb3c87630ac835fd528e414bd280dd49eb73d8cd54eb9a96cd691f4ba23491e0",
+      "status": "supported",
+      "notes": "Distinguish the five-day start requirement, installation on 1 April and the officially recorded 4 July deadline.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014192335",
+          "path": "antinero_west_attica/contracts_text/24SYMV014192335.txt",
+          "sha256": "12fcbf8ce88319a204f27632459acce4207c14e599f2c77d7d807b957af6439c",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014192335",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "99Ζ24653Π8-Α17",
+          "path": "antinero_west_attica/text/diavgeia/99Ζ24653Π8-Α17.txt",
+          "sha256": "fced9e4f9b2cc109d04cc94abe126606ebada84fdaeec14154b30e6c3e3cf105",
+          "url": "https://diavgeia.gov.gr/doc/99Ζ24653Π8-Α17",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-60",
+      "original_text_sha256": "bb757297bef2dc1671a08f616ea21db0bf8940617ff1fcf79a8b1aaaf28680a0",
+      "status": "supported",
+      "notes": "Extensions distinguish planting from other works; the decision records completion of other works on 11 October 2024.",
+      "evidence": [
+        {
+          "document_id": "99Ζ24653Π8-Α17",
+          "path": "antinero_west_attica/text/diavgeia/99Ζ24653Π8-Α17.txt",
+          "sha256": "fced9e4f9b2cc109d04cc94abe126606ebada84fdaeec14154b30e6c3e3cf105",
+          "url": "https://diavgeia.gov.gr/doc/99Ζ24653Π8-Α17",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9Κ2Η4653Π8-ΟΩΨ",
+          "path": "antinero_west_attica/text/diavgeia/9Κ2Η4653Π8-ΟΩΨ.txt",
+          "sha256": "a46e0676b7ba813db35a426a3e810e23da34d7b8980f6316ff8948c686c56e93",
+          "url": "https://diavgeia.gov.gr/doc/9Κ2Η4653Π8-ΟΩΨ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΑ5Υ4653Π8-8ΦΖ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΑ5Υ4653Π8-8ΦΖ.txt",
+          "sha256": "aae390914c6bd9bc0fd82a88b5724f322b145c56c10d13e363479854b08b5faa",
+          "url": "https://diavgeia.gov.gr/doc/ΨΑ5Υ4653Π8-8ΦΖ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-61",
+      "original_text_sha256": "53493afcb16bd72e5eec55a7aca18746cf1abeca752aaa727266bedce4ac734e",
+      "status": "corrected",
+      "notes": "11 July 2025 is approval of PARTIAL acceptance excluding planting, not acceptance of the entire project. Later documents record planting maintenance ending 30 March 2026.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014192335",
+          "path": "antinero_west_attica/contracts_text/24SYMV014192335.txt",
+          "sha256": "12fcbf8ce88319a204f27632459acce4207c14e599f2c77d7d807b957af6439c",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014192335",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΩ5Π4653Π8-Ο4Χ",
+          "path": "antinero_west_attica/text/diavgeia/ΡΩ5Π4653Π8-Ο4Χ.txt",
+          "sha256": "5d97ffcd84b033d8dbfa9e4f20856e46525464b30ae40bacb6e1d1eb04e03996",
+          "url": "https://diavgeia.gov.gr/doc/ΡΩ5Π4653Π8-Ο4Χ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ψ9ΙΓ4653Π8-04Ω",
+          "path": "antinero_west_attica/text/diavgeia/Ψ9ΙΓ4653Π8-04Ω.txt",
+          "sha256": "b8a8972f09f3ad24235fcf4c8039bcf31bd65ffaa282700c6409179f552b993f",
+          "url": "https://diavgeia.gov.gr/doc/Ψ9ΙΓ4653Π8-04Ω",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΖΡΕ4653Π8-Β9Ω",
+          "path": "antinero_west_attica/text/diavgeia/ΨΖΡΕ4653Π8-Β9Ω.txt",
+          "sha256": "b7c31e632ca03ef908a35b56f3600bc31156593b8dcc5b13bef9fc60125bbcff",
+          "url": "https://diavgeia.gov.gr/doc/ΨΖΡΕ4653Π8-Β9Ω",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false,
+      "replacement_text_draft": "Η σύμβαση προβλέπει 15 μήνες συντήρησης για τα νεοεγκατεστημένα πλατύφυλλα, μετά την τρίμηνη προθεσμία εργασιών. Στις 11.07.2025 εγκρίθηκε μερική παραλαβή, με εξαίρεση τις φυτεύσεις (ΡΩ5Π4653Π8-Ο4Χ). Μεταγενέστερες πράξεις αναφέρουν λήξη της συντήρησης των φυτεύσεων στις 30.03.2026."
+    },
+    {
+      "finding_id": "report-block-63",
+      "original_text_sha256": "166a268970596d04e28bbe583347edcb2b75dd8395a4dd3accfba4e1d70155c1",
+      "status": "qualified",
+      "notes": "Ten-month study stages and schedule submission are contractual. 22 May 2025 is a calculated baseline from signature, not an independently verified completion deadline; stage extensions are possible.",
+      "evidence": [
+        {
+          "document_id": "24SYMV015170089",
+          "path": "antinero_west_attica/contracts_text/24SYMV015170089.txt",
+          "sha256": "3d2489ff21b7b144fddd27fa787471bde3eb2cba972c747893d7e4edaeea7e15",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015170089",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-64",
+      "original_text_sha256": "71f83ee2909784447e505cafc122de9f13a07f16e02d71feb12d0b9bcaff7561",
+      "status": "qualified",
+      "notes": "Preliminary-study extension to 20 December is supported. Preserve the decision wording με αναθεώρηση; do not infer a guarantee of no price adjustment.",
+      "evidence": [
+        {
+          "document_id": "9ΥΟΕ4653Π8-ΠΘ7",
+          "path": "antinero_west_attica/text/diavgeia/9ΥΟΕ4653Π8-ΠΘ7.txt",
+          "sha256": "8c60a1b2d9eb08ae78f41f2fb30cd70417d0c6b6fcade1b642626d1f7c1d4c3a",
+          "url": "https://diavgeia.gov.gr/doc/9ΥΟΕ4653Π8-ΠΘ7",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-65",
+      "original_text_sha256": "aad2bfa02e741bff9580faaf609d1bb264e2380d5d5ff32970ed376b87f9e28d",
+      "status": "supported",
+      "notes": "Approval of the Megara study on 30 June 2025 is supported; study approval does not establish implementation of protection works.",
+      "evidence": [
+        {
+          "document_id": "636Ο4653Π8-Ο9Υ",
+          "path": "antinero_west_attica/text/diavgeia/636Ο4653Π8-Ο9Υ.txt",
+          "sha256": "46b4cc62ac6db75d3da1b6cdf190bf35151ce90f4620edd2ae16c47685de56eb",
+          "url": "https://diavgeia.gov.gr/doc/636Ο4653Π8-Ο9Υ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-66",
+      "original_text_sha256": "ebed780de848c1f06c60c01589a45c6308871f3e49067d578e5be9d707e819a4",
+      "status": "qualified",
+      "notes": "Study deliverables and annual planning are supported. No numbered maintenance obligation was identified in this agreement; this is not proof that no obligation exists in every incorporated document.",
+      "evidence": [
+        {
+          "document_id": "24SYMV015170089",
+          "path": "antinero_west_attica/contracts_text/24SYMV015170089.txt",
+          "sha256": "3d2489ff21b7b144fddd27fa787471bde3eb2cba972c747893d7e4edaeea7e15",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015170089",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "636Ο4653Π8-Ο9Υ",
+          "path": "antinero_west_attica/text/diavgeia/636Ο4653Π8-Ο9Υ.txt",
+          "sha256": "46b4cc62ac6db75d3da1b6cdf190bf35151ce90f4620edd2ae16c47685de56eb",
+          "url": "https://diavgeia.gov.gr/doc/636Ο4653Π8-Ο9Υ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-68",
+      "original_text_sha256": "79727899ee3017d00dcc60583906f5546319c721ae271c11e221405d3c79ce31",
+      "status": "qualified",
+      "notes": "Ten-month stages and schedule requirement are supported. 13 October 2025 is a calculated baseline, subject to contractual extensions.",
+      "evidence": [
+        {
+          "document_id": "24SYMV016017961",
+          "path": "antinero_west_attica/contracts_text/24SYMV016017961.txt",
+          "sha256": "079aab3860b6aa0e2b0902e53271631fbbdc0855065d897bec057af48d3d71fd",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV016017961",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-69",
+      "original_text_sha256": "24904b98eb7452a7b071fc283054cf1e6271c189a7590b7e2da0811ecee293b5",
+      "status": "qualified",
+      "notes": "Preliminary completion, final submission and approval dates are supported. No separate extension was identified in the seven archived matching decisions; this is a search limitation.",
+      "evidence": [
+        {
+          "document_id": "ΨΛ1Β4653Π8-Φ9Δ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΛ1Β4653Π8-Φ9Δ.txt",
+          "sha256": "65af808ad40de12da87c655b67ab6d93f6984967087fcfe0669d2d2974ee7038",
+          "url": "https://diavgeia.gov.gr/doc/ΨΛ1Β4653Π8-Φ9Δ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΝΥΝ4653Π8-9ΩΞ",
+          "path": "antinero_west_attica/text/diavgeia/9ΝΥΝ4653Π8-9ΩΞ.txt",
+          "sha256": "169ff9c012853818d8b2ca492b70c3acaa9ba43057a1283369bc6e3386005006",
+          "url": "https://diavgeia.gov.gr/doc/9ΝΥΝ4653Π8-9ΩΞ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-70",
+      "original_text_sha256": "95f85399d0b3253b213d8f656d01fc1993cac0aee25192dfc7e370f3973832fe",
+      "status": "qualified",
+      "notes": "Annual planning obligations are supported. Absence of a numbered maintenance period is limited to the agreement reviewed.",
+      "evidence": [
+        {
+          "document_id": "24SYMV016017961",
+          "path": "antinero_west_attica/contracts_text/24SYMV016017961.txt",
+          "sha256": "079aab3860b6aa0e2b0902e53271631fbbdc0855065d897bec057af48d3d71fd",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV016017961",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΛ1Β4653Π8-Φ9Δ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΛ1Β4653Π8-Φ9Δ.txt",
+          "sha256": "65af808ad40de12da87c655b67ab6d93f6984967087fcfe0669d2d2974ee7038",
+          "url": "https://diavgeia.gov.gr/doc/ΨΛ1Β4653Π8-Φ9Δ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-72",
+      "original_text_sha256": "afa5b4f30cfc3a8f85d1015f9140960808e813483d8916c3c9367740e6ddd95a",
+      "status": "supported",
+      "notes": "Study submission, three-month execution period and five-day written-order rule are contractual.",
+      "evidence": [
+        {
+          "document_id": "25SYMV016570021",
+          "path": "antinero_west_attica/contracts_text/25SYMV016570021.txt",
+          "sha256": "d0f61d08dca1fc7159e7b6455b6861cb5b1da81ab7894f8b1a0bec3e231f66cc",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016570021",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-73",
+      "original_text_sha256": "237b9392f39248788836444a2f20c607364429b41009c39bf7ff94579eaa3e9e",
+      "status": "qualified",
+      "notes": "Installation dates are documented. Initial August/September deadlines calculated by adding three calendar months must be labelled derived, not official dates.",
+      "evidence": [
+        {
+          "document_id": "62ΞΧ4653Π8-ΝΡ3",
+          "path": "antinero_west_attica/text/diavgeia/62ΞΧ4653Π8-ΝΡ3.txt",
+          "sha256": "edbe263452b911a25797d657539724f66917674115b7abc0233e36a43e008d26",
+          "url": "https://diavgeia.gov.gr/doc/62ΞΧ4653Π8-ΝΡ3",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ψ5Ξ64653Π8-ΖΑΩ",
+          "path": "antinero_west_attica/text/diavgeia/Ψ5Ξ64653Π8-ΖΑΩ.txt",
+          "sha256": "e64e4e64f1b49434736aa91b1be5e9c06e0eab84408614b266711901ccc0119c",
+          "url": "https://diavgeia.gov.gr/doc/Ψ5Ξ64653Π8-ΖΑΩ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "25SYMV016570021",
+          "path": "antinero_west_attica/contracts_text/25SYMV016570021.txt",
+          "sha256": "d0f61d08dca1fc7159e7b6455b6861cb5b1da81ab7894f8b1a0bec3e231f66cc",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016570021",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-74",
+      "original_text_sha256": "fd5881672596b757112e68f5864fac7040c30940fa19af206a955ad959a58d82",
+      "status": "qualified",
+      "notes": "Office-specific operative deadlines support the report. Latest means latest identified in the 12 August 2026 snapshot; distinguish the requested 31 July from the approved 22 July.",
+      "evidence": [
+        {
+          "document_id": "91ΥΑ4653Π8-ΛΤΜ",
+          "path": "antinero_west_attica/text/diavgeia/91ΥΑ4653Π8-ΛΤΜ.txt",
+          "sha256": "081e963621d1eda59bebb4f7847d8ea7b8af21c53dba68f9f9332eddfc2d91c5",
+          "url": "https://diavgeia.gov.gr/doc/91ΥΑ4653Π8-ΛΤΜ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΕ584653Π8-3Ψ8",
+          "path": "antinero_west_attica/text/diavgeia/ΨΕ584653Π8-3Ψ8.txt",
+          "sha256": "6fff126b925c6a02453b2e76cf1780c00c250a000587afb92f28be6f4bc12cc7",
+          "url": "https://diavgeia.gov.gr/doc/ΨΕ584653Π8-3Ψ8",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "68ΘΔ4653Π8-ΟΕ7",
+          "path": "antinero_west_attica/text/diavgeia/68ΘΔ4653Π8-ΟΕ7.txt",
+          "sha256": "b9622db8b91804710744aeb7aebb457d2b091f91a547a13593502b0c8ef19d54",
+          "url": "https://diavgeia.gov.gr/doc/68ΘΔ4653Π8-ΟΕ7",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-75",
+      "original_text_sha256": "6195137f14c86202ca8cc659dcb4310a8142621ca3e9711854e5bc3f19d97c59",
+      "status": "qualified",
+      "notes": "Weather, access problems, additional works and APE processing are reasons stated by the authorities. They have not been independently verified as physical conditions or contractor fault findings.",
+      "evidence": [
+        {
+          "document_id": "Ψ5Ξ14653Π8-Δ89",
+          "path": "antinero_west_attica/text/diavgeia/Ψ5Ξ14653Π8-Δ89.txt",
+          "sha256": "01afa9cf621ad88d1d4c1ddf81dbfc10e6603353c9f5031068efbfc231c80007",
+          "url": "https://diavgeia.gov.gr/doc/Ψ5Ξ14653Π8-Δ89",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ψ40Κ4653Π8-4ΑΒ",
+          "path": "antinero_west_attica/text/diavgeia/Ψ40Κ4653Π8-4ΑΒ.txt",
+          "sha256": "389992df4bdb554eb2c4ac13059f522838be179c7df91f4030667d720baa672c",
+          "url": "https://diavgeia.gov.gr/doc/Ψ40Κ4653Π8-4ΑΒ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΕ584653Π8-3Ψ8",
+          "path": "antinero_west_attica/text/diavgeia/ΨΕ584653Π8-3Ψ8.txt",
+          "sha256": "6fff126b925c6a02453b2e76cf1780c00c250a000587afb92f28be6f4bc12cc7",
+          "url": "https://diavgeia.gov.gr/doc/ΨΕ584653Π8-3Ψ8",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "91ΥΑ4653Π8-ΛΤΜ",
+          "path": "antinero_west_attica/text/diavgeia/91ΥΑ4653Π8-ΛΤΜ.txt",
+          "sha256": "081e963621d1eda59bebb4f7847d8ea7b8af21c53dba68f9f9332eddfc2d91c5",
+          "url": "https://diavgeia.gov.gr/doc/91ΥΑ4653Π8-ΛΤΜ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-76",
+      "original_text_sha256": "ce6f155fe295f76e64b3436856d315af3b9df73718550cf201fa6e0e2ea47514",
+      "status": "corrected",
+      "notes": "Article 6.7 also contains an exception: works that by their nature need no maintenance are accepted within one month of the completion certificate. Do not apply the 15-month period universally.",
+      "evidence": [
+        {
+          "document_id": "25SYMV016570021",
+          "path": "antinero_west_attica/contracts_text/25SYMV016570021.txt",
+          "sha256": "d0f61d08dca1fc7159e7b6455b6861cb5b1da81ab7894f8b1a0bec3e231f66cc",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016570021",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false,
+      "replacement_text_draft": "Η σύμβαση προβλέπει 15 μήνες υποχρεωτικής συντήρησης και παραλαβή εντός τριμήνου μετά τη λήξη της. Το άρθρο 6.7 προβλέπει εξαίρεση για εργασίες που λόγω της φύσης τους δεν απαιτούν υποχρεωτική συντήρηση: παραλαβή εντός ενός μήνα από τη βεβαίωση περάτωσης ή την τεκμαιρόμενη έκδοσή της."
+    },
+    {
+      "finding_id": "report-block-78",
+      "original_text_sha256": "86c3a127e145b45ff7d9e3f0bcc2f1ba9e80d873aa7314a4802d7928c44be282",
+      "status": "supported",
+      "notes": "Article 3.3 places execution timing in individual written work orders; no single universal start/end date follows.",
+      "evidence": [
+        {
+          "document_id": "25SYMV017345053",
+          "path": "antinero_west_attica/contracts_text/25SYMV017345053.txt",
+          "sha256": "c29a3ef38b79a982624051d2b200ddcabf3b7f1b64aa2c11eb185d3669d6f594",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017345053",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-79",
+      "original_text_sha256": "51430e86f5ae33ce0e8ff57148df42855e183f429a509d591a41c2c582d7ad98",
+      "status": "qualified",
+      "notes": "The approved study proposes 12 Megara zones / 15.45 km and eight Aigaleo zones / 16.12 km. Positions may change and execution requires orders; these are not measured completed works.",
+      "evidence": [
+        {
+          "document_id": "Ρ79Ι4653Π8-ΟΥΕ",
+          "path": "antinero_west_attica/text/diavgeia/Ρ79Ι4653Π8-ΟΥΕ.txt",
+          "sha256": "16519f6c4fae56b1a03ff0dbf653760f9ed7760986d453756a363e99ef5f9c2c",
+          "url": "https://diavgeia.gov.gr/doc/Ρ79Ι4653Π8-ΟΥΕ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-80",
+      "original_text_sha256": "45ce9d47e2ba41349fe3c4f2b0120220b7c88cd9cbd2768d71b27381ee6defc7",
+      "status": "qualified",
+      "notes": "Generic maintenance-cost language is present. No quantified post-work maintenance period was identified in this agreement; incorporated documents were not exhaustively audited.",
+      "evidence": [
+        {
+          "document_id": "25SYMV017345053",
+          "path": "antinero_west_attica/contracts_text/25SYMV017345053.txt",
+          "sha256": "c29a3ef38b79a982624051d2b200ddcabf3b7f1b64aa2c11eb185d3669d6f594",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017345053",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-81",
+      "original_text_sha256": "c8e286a295aa1caa46d298761545187300cef3be8fc3bd82a7cd5eed885ddc14",
+      "status": "qualified",
+      "notes": "The archived attachment is an approval decision for the Chalkida supplement, not independently verified evidence of a signed supplementary agreement. It states 20 May 2026 and 13 days from signing the present act.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018978343",
+          "path": "antinero_west_attica/contracts_text/26SYMV018978343.txt",
+          "sha256": "7b68905c542bf9b5f4d7f3f030a48cba191224e23a4dc10492b827951d2e2639",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018978343",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "6Ν464653Π8-Ω6Ρ",
+          "path": "antinero_west_attica/text/diavgeia/6Ν464653Π8-Ω6Ρ.txt",
+          "sha256": "55eaa679357d533a57729f3699f8441852cf6fe14657b725f063994e393438b9",
+          "url": "https://diavgeia.gov.gr/doc/6Ν464653Π8-Ω6Ρ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-82",
+      "original_text_sha256": "9dbf4284860e5861b8b869337e2425268ca14c7bf72887c782cbf088da624024",
+      "status": "qualified",
+      "notes": "The reasoning contains inconsistent contractor/location references (Kafetzis/Kavala versus the operative Karali/Chalkida). A copying error is an editorial inference, not an established explanation.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018978343",
+          "path": "antinero_west_attica/contracts_text/26SYMV018978343.txt",
+          "sha256": "7b68905c542bf9b5f4d7f3f030a48cba191224e23a4dc10492b827951d2e2639",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018978343",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-84",
+      "original_text_sha256": "3a8dbbf0265be78d9d25d45c11e04a78a7a65482812e18df18d707fd05e1ff3e",
+      "status": "supported",
+      "notes": "Agreement supports study within ten days, schedule within fifteen days and three-month works/five-day start terms.",
+      "evidence": [
+        {
+          "document_id": "25SYMV017471439",
+          "path": "antinero_west_attica/contracts_text/25SYMV017471439.txt",
+          "sha256": "e9e633611eab4c9513461ef1790f3da4837494e6a7a8637cfdd2174afe0caec4",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017471439",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-85",
+      "original_text_sha256": "98fbdf447b3636c1dcf044ca9086762c01a5aac0a76ce7893390a01629e4c4ba",
+      "status": "qualified",
+      "notes": "Installation, suspensions and office-specific extensions are documented. February baseline dates are calculated, and the listed extensions are not an exhaustive sequence.",
+      "evidence": [
+        {
+          "document_id": "25SYMV017471439",
+          "path": "antinero_west_attica/contracts_text/25SYMV017471439.txt",
+          "sha256": "e9e633611eab4c9513461ef1790f3da4837494e6a7a8637cfdd2174afe0caec4",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017471439",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΕΧΞΝ4653Π8-ΦΝ9",
+          "path": "antinero_west_attica/text/diavgeia/ΕΧΞΝ4653Π8-ΦΝ9.txt",
+          "sha256": "f46a2815bc25d3439a08a793baa76ba67e287a010701b92f7c9d0dcb4254155e",
+          "url": "https://diavgeia.gov.gr/doc/ΕΧΞΝ4653Π8-ΦΝ9",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΤΖ74653Π8-ΛΙ5",
+          "path": "antinero_west_attica/text/diavgeia/9ΤΖ74653Π8-ΛΙ5.txt",
+          "sha256": "604f477dc1ef0bc5779972056e9ee813eb88a50917bc07319694d48d4accb8fd",
+          "url": "https://diavgeia.gov.gr/doc/9ΤΖ74653Π8-ΛΙ5",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΓΩΖ4653Π8-Ο7Μ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΓΩΖ4653Π8-Ο7Μ.txt",
+          "sha256": "fc53eb4369088a64b69d9ce694c6847fd589a029ccf36376250e67a34144354c",
+          "url": "https://diavgeia.gov.gr/doc/ΨΓΩΖ4653Π8-Ο7Μ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-86",
+      "original_text_sha256": "46fc7d8c19316e17ee5e6acc46e4484ff025fb29dc914e59fefb0db4151a612b",
+      "status": "qualified",
+      "notes": "Supplement attachment is an approval decision; distinguish its twenty-day term from independently verified signing/execution. Final-measurement approval does not establish payment or final acceptance.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018936694",
+          "path": "antinero_west_attica/contracts_text/26SYMV018936694.txt",
+          "sha256": "f6e19614d5eea91769a208ad9d65239491c1a987a22ca5a8855f79453834dbcf",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018936694",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "65ΕΔ4653Π8-ΝΜΕ",
+          "path": "antinero_west_attica/text/diavgeia/65ΕΔ4653Π8-ΝΜΕ.txt",
+          "sha256": "5fa7e12ce8564494a87693a641daf78e6737506fa009f0a37d8a728f5f01614c",
+          "url": "https://diavgeia.gov.gr/doc/65ΕΔ4653Π8-ΝΜΕ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΩΘΩ4653Π8-ΒΚΧ",
+          "path": "antinero_west_attica/text/diavgeia/9ΩΘΩ4653Π8-ΒΚΧ.txt",
+          "sha256": "4766f65b542b654a315681860a61170b17a83083b4016ec035a829eb7846c579",
+          "url": "https://diavgeia.gov.gr/doc/9ΩΘΩ4653Π8-ΒΚΧ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΗ534653Π8-ΜΧ0",
+          "path": "antinero_west_attica/text/diavgeia/ΨΗ534653Π8-ΜΧ0.txt",
+          "sha256": "68fac6ac45f26b8b96897663285beeab4c37b1ff412f9edbcb552dbc7747794b",
+          "url": "https://diavgeia.gov.gr/doc/ΨΗ534653Π8-ΜΧ0",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-87",
+      "original_text_sha256": "ba2cf7dd671ea266a5b78e85dda0108600111da3011bdd7b759dfc1110353514",
+      "status": "qualified",
+      "notes": "Agreement ends with acceptance and final account. No numbered post-work maintenance period was identified in this agreement alone.",
+      "evidence": [
+        {
+          "document_id": "25SYMV017471439",
+          "path": "antinero_west_attica/contracts_text/25SYMV017471439.txt",
+          "sha256": "e9e633611eab4c9513461ef1790f3da4837494e6a7a8637cfdd2174afe0caec4",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017471439",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-89",
+      "original_text_sha256": "67faafc1e0b9be7447c6f50fb4d5eb08c6b207bf6e6fdb9977e09f642400f975",
+      "status": "qualified",
+      "notes": "Contractual submission/start rules are supported. The 10 March notification is referenced in a later official decision, not independently reviewed service evidence or actual commencement.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018599431",
+          "path": "antinero_west_attica/contracts_text/26SYMV018599431.txt",
+          "sha256": "c5ef1a41985549ff2d49baf24274a3e82adf6cf7b7e9b007875134a2195dbb0a",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018599431",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "656Ι4653Π8-3ΗΩ",
+          "path": "antinero_west_attica/text/diavgeia/656Ι4653Π8-3ΗΩ.txt",
+          "sha256": "0aaa2ccc3a8e209c4d48ba9fa052257c833c789e5efa6e2799d2173d146e3d00",
+          "url": "https://diavgeia.gov.gr/doc/656Ι4653Π8-3ΗΩ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-90",
+      "original_text_sha256": "975075400e2a6fa52a1007b4084af8c0db4bedb56848bfd2165c218ab33921ee",
+      "status": "qualified",
+      "notes": "Contract sets three months with a 30 June programme constraint unless extended. July 20 extension and stated reasons are documented, not independently observed site conditions.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018599431",
+          "path": "antinero_west_attica/contracts_text/26SYMV018599431.txt",
+          "sha256": "c5ef1a41985549ff2d49baf24274a3e82adf6cf7b7e9b007875134a2195dbb0a",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018599431",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ψ7Ψ34653Π8-Ε5Ι",
+          "path": "antinero_west_attica/text/diavgeia/Ψ7Ψ34653Π8-Ε5Ι.txt",
+          "sha256": "1e35e9693e4cce9d8f2c900e961505822bb02c16a2a8a26b7bdbc8b3be3aa3c0",
+          "url": "https://diavgeia.gov.gr/doc/Ψ7Ψ34653Π8-Ε5Ι",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-91",
+      "original_text_sha256": "7911df22f4dfa1eb22c4422f80a92817460ef54b43c4ac22ba517d6a195a65d3",
+      "status": "qualified",
+      "notes": "Biomass handling is contractual. No numbered maintenance period identified in the agreement; referenced maintenance duties prevent interpreting this as absence of all maintenance obligations.",
+      "evidence": [
+        {
+          "document_id": "26SYMV018599431",
+          "path": "antinero_west_attica/contracts_text/26SYMV018599431.txt",
+          "sha256": "c5ef1a41985549ff2d49baf24274a3e82adf6cf7b7e9b007875134a2195dbb0a",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018599431",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-172",
+      "original_text_sha256": "640ba4ec15e5d7c32c55928d5c58bf2e53f38e8a8734ddf0e2dee57896b00533",
+      "status": "supported",
+      "notes": "Correction concerns the 5% guarantee, EUR 1,943.91; other terms remain unchanged, not additional project expenditure.",
+      "evidence": [
+        {
+          "document_id": "23SYMV013154974",
+          "path": "antinero_west_attica/contracts_text/23SYMV013154974.txt",
+          "sha256": "67a30ea8c4154ae6445a10bc999f411a087662c0cc8abb234289f2b8f8d37b0b",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV013154974",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-173",
+      "original_text_sha256": "2afdb0e4e268009dbcd4ac0f9159e0de1f61e30df95f8ab08006f426b44bffcc",
+      "status": "supported",
+      "notes": "EUR 8,781.22 revision provision was already within the EUR 957,028.33 total; amendment does not create a new contract price.",
+      "evidence": [
+        {
+          "document_id": "23SYMV013156865",
+          "path": "antinero_west_attica/contracts_text/23SYMV013156865.txt",
+          "sha256": "790c8d11ebb4a4fb99e405184934f1bfb15f8415c2b609246af7d696dbe7fe3a",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV013156865",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-175",
+      "original_text_sha256": "4ca7c0b0bd9821a9f17638d657da8ca6f485db1adaf226b3464eddbedb964928",
+      "status": "qualified",
+      "notes": "Three months from signature is the contractual baseline, not actual work commencement. No separate fifteen-month period identified in this agreement.",
+      "evidence": [
+        {
+          "document_id": "22SYMV011593395",
+          "path": "antinero_west_attica/contracts_text/22SYMV011593395.txt",
+          "sha256": "a34bec74b3ec17639a9ae66de175f32f81e306c89143bbc9e379d846cfc249a1",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/22SYMV011593395",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-176",
+      "original_text_sha256": "274c97fa9c16ccdaea310d4bfe8672ba549b640de09d555c0b09159d7c5f21a0",
+      "status": "qualified",
+      "notes": "Article 5 terms support three months from commencement, installation/order conditions and acceptance/final-account duration. Absence of a separate fifteen-month period is limited to reviewed agreements.",
+      "evidence": [
+        {
+          "document_id": "23SYMV012820428",
+          "path": "antinero_west_attica/contracts_text/23SYMV012820428.txt",
+          "sha256": "e7b2a521f3149ccd64b6b86595e3bc0380bf4e33deef057a6a423cfbb5f68e78",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012820428",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "23SYMV012964096",
+          "path": "antinero_west_attica/contracts_text/23SYMV012964096.txt",
+          "sha256": "7674ed8b09b8d44abc177eba10d00b599d4447a6ba126f504556e22594eda0bc",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012964096",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "23SYMV012963827",
+          "path": "antinero_west_attica/contracts_text/23SYMV012963827.txt",
+          "sha256": "5208a55605438ac31b81d58e285bf07efa9a916eecdae6db2bf3eb8868dd5f7d",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012963827",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "23SYMV012992150",
+          "path": "antinero_west_attica/contracts_text/23SYMV012992150.txt",
+          "sha256": "04c985e2bbe5670dde5b808652a7b1e14bbf24c4cefd81d752fcaaed0607a095",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012992150",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-177",
+      "original_text_sha256": "3f11dbbc1a34b97f88aed57aa6e152fc762824005f202eda81f5b93ea3f47e8b",
+      "status": "qualified",
+      "notes": "Three-month execution and fifteen-month maintenance clauses are present but differ in scope (including planting-specific wording). Do not treat every maintenance/risk obligation as identical across the three agreements.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014217833",
+          "path": "antinero_west_attica/contracts_text/24SYMV014217833.txt",
+          "sha256": "9a0c635232128be84ac5a185cdf6b3cbb3b666a5e3e28e9d6c1de28e8a04e9c7",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014217833",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "24SYMV014223991",
+          "path": "antinero_west_attica/contracts_text/24SYMV014223991.txt",
+          "sha256": "97c3ab682610e3a6d2b07cfdd828532e57dc62e90b63c5d2a412e6b3d4eb0be4",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014223991",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "24SYMV014447969",
+          "path": "antinero_west_attica/contracts_text/24SYMV014447969.txt",
+          "sha256": "552e04ecb52cce7b4d91c0fd90a0c3ed24915d0b45b63f34c794c29b705f634b",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014447969",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-178",
+      "original_text_sha256": "788d4d5fdae516092df9815da1e9affefa070195b084ff4af3ec7b3fcfd8efd9",
+      "status": "qualified",
+      "notes": "These are management studies, with seven-month overall/four-month study and fifteen-day schedule terms. They are not themselves contracts proving cleaning execution.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014662191",
+          "path": "antinero_west_attica/contracts_text/24SYMV014662191.txt",
+          "sha256": "aef568ca157571c480291855f151edbc446924116938b1955a338a9b4bfc07fd",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014662191",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "24SYMV014662244",
+          "path": "antinero_west_attica/contracts_text/24SYMV014662244.txt",
+          "sha256": "28828313f568f2e4b56adbdcb46b544f853423fdeaa82107c2adcb5a66059a5d",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014662244",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΡΚΣ4653Π8-ΗΨ9",
+          "path": "antinero_west_attica/text/diavgeia/ΡΡΚΣ4653Π8-ΗΨ9.txt",
+          "sha256": "df1590f61f66fbd496b1b7d9e253779fd7dcd6e80ff6fd8e88b99d28b09a230b",
+          "url": "https://diavgeia.gov.gr/doc/ΡΡΚΣ4653Π8-ΗΨ9",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-189",
+      "original_text_sha256": "66271bfaf56c094890ef2ac05fdfac0b0a0a8d48d6e36cc81fe435b1466be7c7",
+      "status": "qualified",
+      "notes": "May 25 extension concerns Aigaleo. January 3 approval concerns a December 15 protocol. February 13 bonus approval is not evidence of payment.",
+      "evidence": [
+        {
+          "document_id": "97ΧΡ4653Π8-1Λ9",
+          "path": "antinero_west_attica/text/diavgeia/97ΧΡ4653Π8-1Λ9.txt",
+          "sha256": "a74066c89c06ac9222b95e610bf1c9eb8792f272b98a660a766f32a6d446be67",
+          "url": "https://diavgeia.gov.gr/doc/97ΧΡ4653Π8-1Λ9",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ρ1ΤΞ4653Π8-ΤΕΛ",
+          "path": "antinero_west_attica/text/diavgeia/Ρ1ΤΞ4653Π8-ΤΕΛ.txt",
+          "sha256": "226772e244d1c8ec92fb116e16d874ae23658879bd3df61f69ed3ba64da7aa67",
+          "url": "https://diavgeia.gov.gr/doc/Ρ1ΤΞ4653Π8-ΤΕΛ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΙΑ84653Π8-8ΧΓ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΙΑ84653Π8-8ΧΓ.txt",
+          "sha256": "2cdc5601546b34499a15c9785374d976737db2d2c62446897f291cae786d651f",
+          "url": "https://diavgeia.gov.gr/doc/ΨΙΑ84653Π8-8ΧΓ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9Β6Δ4653Π8-ΤΩΚ",
+          "path": "antinero_west_attica/text/diavgeia/9Β6Δ4653Π8-ΤΩΚ.txt",
+          "sha256": "fa95d4eb4e4253b24540b2e1d1fb16b6dc2cfca8d121983144d21dd3b9852bac",
+          "url": "https://diavgeia.gov.gr/doc/9Β6Δ4653Π8-ΤΩΚ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-191",
+      "original_text_sha256": "43d7cffdafe75d1379643c0ecb6d38984058e41276d464b6815fb5c7eee2aae4",
+      "status": "corrected",
+      "notes": "Acceptance protocol is dated 24 November 2023; 11 December 2023 is its approval date. Extension and final-measurement dates are supported.",
+      "evidence": [
+        {
+          "document_id": "6Μ6Φ4653Π8-86Β",
+          "path": "antinero_west_attica/text/diavgeia/6Μ6Φ4653Π8-86Β.txt",
+          "sha256": "fcfe42f2f51b73aec64ada0329a78ebf1104b82c5d30858e8f9de4441c147de2",
+          "url": "https://diavgeia.gov.gr/doc/6Μ6Φ4653Π8-86Β",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "6ΩΩΙ4653Π8-8Δ8",
+          "path": "antinero_west_attica/text/diavgeia/6ΩΩΙ4653Π8-8Δ8.txt",
+          "sha256": "7a39efbb09324291c54d6b4e54d1fbf421c934f4b92adb0d7861052564b31c0d",
+          "url": "https://diavgeia.gov.gr/doc/6ΩΩΙ4653Π8-8Δ8",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "64Ξ64653Π8-Φ6Λ",
+          "path": "antinero_west_attica/text/diavgeia/64Ξ64653Π8-Φ6Λ.txt",
+          "sha256": "f7d030bcd32bc7e68761e08a96049527d27ee310b3073a75ce3757d7f8fd2443",
+          "url": "https://diavgeia.gov.gr/doc/64Ξ64653Π8-Φ6Λ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false,
+      "replacement_text_draft": "Η αρχική προθεσμία 27.09.2023 παρατάθηκε έως 31.10.2023, με επίκληση καθυστερήσεων λόγω καύσωνα. Η τελική επιμέτρηση εγκρίθηκε στις 10.11.2023. Το πρωτόκολλο παραλαβής συντάχθηκε στις 24.11.2023 και εγκρίθηκε στις 11.12.2023 (64Ξ64653Π8-Φ6Λ)."
+    },
+    {
+      "finding_id": "report-block-193",
+      "original_text_sha256": "298b8f2c1c162ff44edb051ef11f540c9f69eadcab009ba6eb2460e5b5bd8ff5",
+      "status": "qualified",
+      "notes": "Zero results is confirmed only for this archived reference search. Parent decisions cannot automatically be attributed to the amendment, and absence of hits is not absence of activity.",
+      "evidence": [
+        {
+          "document_id": "search:23SYMV013154974",
+          "path": "antinero_west_attica/diavgeia/search_23SYMV013154974.json",
+          "sha256": "56a0b9bb80a23f7b89fb5528097b8f6b151d7cabaa12b028294e0010a3d222b7",
+          "url": null,
+          "kind": "archived_search",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-195",
+      "original_text_sha256": "c3f935afa2fbbd85f715475dd0eb073bb4fbd242a7c6c836ed95670279feaf16",
+      "status": "qualified",
+      "notes": "Study/install/completion and February 16 protocol approved March 13 are supported. No extension identified among the eight archived matches is a bounded search result.",
+      "evidence": [
+        {
+          "document_id": "6ΣΓΤ4653Π8-ΧΔΗ",
+          "path": "antinero_west_attica/text/diavgeia/6ΣΓΤ4653Π8-ΧΔΗ.txt",
+          "sha256": "8ffaed45b0a0db0a981de5945e6a759f18ca38b1932ae899047cd0aead1cf9da",
+          "url": "https://diavgeia.gov.gr/doc/6ΣΓΤ4653Π8-ΧΔΗ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "6ΡΔ14653Π8-ΔΝΘ",
+          "path": "antinero_west_attica/text/diavgeia/6ΡΔ14653Π8-ΔΝΘ.txt",
+          "sha256": "f4aa266006568458ca9917bd8929c44ffda075dcfd3b7ad647dafc79207a3901",
+          "url": "https://diavgeia.gov.gr/doc/6ΡΔ14653Π8-ΔΝΘ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "6ΛΑΚ4653Π8-ΜΞ6",
+          "path": "antinero_west_attica/text/diavgeia/6ΛΑΚ4653Π8-ΜΞ6.txt",
+          "sha256": "0f8eb95e2d63ad694111a9070ea57fdfabcb83f95555bc18960d07aede5ccdb7",
+          "url": "https://diavgeia.gov.gr/doc/6ΛΑΚ4653Π8-ΜΞ6",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-197",
+      "original_text_sha256": "8cd555276f08d8d4674498c96bcbb30af3652d6eb8668925552bafc155f64c09",
+      "status": "qualified",
+      "notes": "Zero results is confirmed only for this archived reference search; it does not establish no administrative activity.",
+      "evidence": [
+        {
+          "document_id": "search:23SYMV013156865",
+          "path": "antinero_west_attica/diavgeia/search_23SYMV013156865.json",
+          "sha256": "3d9a3e97222202d13f29979b3db1ce2b365fcde549cbf71e33054c4311127c85",
+          "url": null,
+          "kind": "archived_search",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-199",
+      "original_text_sha256": "d9c49ca2ad5b7c4dfcaaf7b6b8dd3b5123da9bb074819731cfc378e341b5e534",
+      "status": "supported",
+      "notes": "December extension and March 21 protocol approved April 18 are supported. Weather/access explanations are those stated in the decision.",
+      "evidence": [
+        {
+          "document_id": "ΨΖΟ94653Π8-ΗΕ3",
+          "path": "antinero_west_attica/text/diavgeia/ΨΖΟ94653Π8-ΗΕ3.txt",
+          "sha256": "d03b60ee1e6434beceacadc693e8034e608b4c56dd66c32eca765b30b25a1056",
+          "url": "https://diavgeia.gov.gr/doc/ΨΖΟ94653Π8-ΗΕ3",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΝΟ04653Π8-ΨΗΣ",
+          "path": "antinero_west_attica/text/diavgeia/ΡΝΟ04653Π8-ΨΗΣ.txt",
+          "sha256": "310703e75e183a75b4b424e2ee56d0b277d5334956bfe5b228d264d68f6bcafa",
+          "url": "https://diavgeia.gov.gr/doc/ΡΝΟ04653Π8-ΨΗΣ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-201",
+      "original_text_sha256": "d14a8fd6be8ff2ea5c10317d440c67c10865685998c006bab9046ea247b70e4c",
+      "status": "qualified",
+      "notes": "Megara dates are supported. December 21 extension applies to Kapandriti/Lavrio and must not be assigned to Megara.",
+      "evidence": [
+        {
+          "document_id": "ΨΞΠΝ4653Π8-ΤΣΧ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΞΠΝ4653Π8-ΤΣΧ.txt",
+          "sha256": "b3bb01d537522123726719b9c228a86bfc3664564e0111f3553a66c67c0fe971",
+          "url": "https://diavgeia.gov.gr/doc/ΨΞΠΝ4653Π8-ΤΣΧ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ψ8Δ84653Π8-4ΔΚ",
+          "path": "antinero_west_attica/text/diavgeia/Ψ8Δ84653Π8-4ΔΚ.txt",
+          "sha256": "3515356fb24042c724671d8a05dc6f803907fb727938d0ec94e8bf05a047a1ac",
+          "url": "https://diavgeia.gov.gr/doc/Ψ8Δ84653Π8-4ΔΚ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-203",
+      "original_text_sha256": "238f33286dea18ac211d4f38d999dd2da531bd3c189f9bdd4b699ef33a8ea8bb",
+      "status": "unresolved",
+      "notes": "Installation and November 30 2025 completion are recorded. Compatibility with fifteen-month maintenance is an inference, not an established causal explanation. The certificate also gives a contract date inconsistent with the agreement. The alias search must remain separate from proof of execution.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014217833",
+          "path": "antinero_west_attica/contracts_text/24SYMV014217833.txt",
+          "sha256": "9a0c635232128be84ac5a185cdf6b3cbb3b666a5e3e28e9d6c1de28e8a04e9c7",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014217833",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΗΨΜ4653Π8-3ΜΠ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΗΨΜ4653Π8-3ΜΠ.txt",
+          "sha256": "e3b9c0ed09a5c843bf1209f8f689454c80e59e1c11e9a22afe29edd732b71f0c",
+          "url": "https://diavgeia.gov.gr/doc/ΨΗΨΜ4653Π8-3ΜΠ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΒΧ24653Π8-ΛΦ2",
+          "path": "antinero_west_attica/text/diavgeia/ΨΒΧ24653Π8-ΛΦ2.txt",
+          "sha256": "f52fa2f0d7873fb29df6df36daa230cb73f15e6d13833a79403585b64cecb08e",
+          "url": "https://diavgeia.gov.gr/doc/ΨΒΧ24653Π8-ΛΦ2",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "search:24SYMV014217833",
+          "path": "antinero_west_attica/diavgeia/search_24SYMV014217833.json",
+          "sha256": "0234fdfb0634725c4af542dfee34104e12cce9118c92461aa75efed07d4de5c2",
+          "url": null,
+          "kind": "archived_search",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-205",
+      "original_text_sha256": "61d645e302339039f65d3aa1ce080b54c69b1b525bbaddfafda598968a69459e",
+      "status": "qualified",
+      "notes": "March 17/20 2025 partial protocols were approved April 3. Later final approval on May 12 2026 references Aigaleo December 19 2025 protocol after maintenance; keep protocol and approval dates separate.",
+      "evidence": [
+        {
+          "document_id": "ΨΦΣΦ4653Π8-ΤΡΗ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΦΣΦ4653Π8-ΤΡΗ.txt",
+          "sha256": "bd49373aff42213ec4cb045fc2102c05421560dc74735422662b5f713f3c5314",
+          "url": "https://diavgeia.gov.gr/doc/ΨΦΣΦ4653Π8-ΤΡΗ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "6ΤΑΨ4653Π8-9ΓΝ",
+          "path": "antinero_west_attica/text/diavgeia/6ΤΑΨ4653Π8-9ΓΝ.txt",
+          "sha256": "b58a4a07a3c14fc493e94964dd2787209da5cb0d98078f92759de29d396ace68",
+          "url": "https://diavgeia.gov.gr/doc/6ΤΑΨ4653Π8-9ΓΝ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΙ804653Π8-ΝΨΦ",
+          "path": "antinero_west_attica/text/diavgeia/ΡΙ804653Π8-ΝΨΦ.txt",
+          "sha256": "554eff4f28de018dc76ffd252afcbe89d2a8c85042fb5314ca6adf5e8b543794",
+          "url": "https://diavgeia.gov.gr/doc/ΡΙ804653Π8-ΝΨΦ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-207",
+      "original_text_sha256": "174a9240e2cff6a7c1b9bdb8f2d118b59d52452a14fc6b69232336a540654518",
+      "status": "unresolved",
+      "notes": "Megara July 15 2024 protocol was approved July 29. Its early acceptance needs reconciliation with the agreement fifteen-month maintenance provision; the reviewed record does not explain applicability or an exception. No breach is inferred.",
+      "evidence": [
+        {
+          "document_id": "24SYMV014447969",
+          "path": "antinero_west_attica/contracts_text/24SYMV014447969.txt",
+          "sha256": "552e04ecb52cce7b4d91c0fd90a0c3ed24915d0b45b63f34c794c29b705f634b",
+          "url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014447969",
+          "kind": "contract_attachment",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "67ΔΚ4653Π8-6ΑΑ",
+          "path": "antinero_west_attica/text/diavgeia/67ΔΚ4653Π8-6ΑΑ.txt",
+          "sha256": "882ebf5e78ee0f4e1373bbb40c3febcdbb9310468c2a9d51e9c57965e95dd435",
+          "url": "https://diavgeia.gov.gr/doc/67ΔΚ4653Π8-6ΑΑ",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-209",
+      "original_text_sha256": "93b45a18631eaff0a6acf786adcfd5e21b5ff6136d9ac9dd9c198f098af50361",
+      "status": "qualified",
+      "notes": "Work-order, extensions and study approvals are documented. Causes are official stated reasons. Approval of a study is distinct from executing its proposed works.",
+      "evidence": [
+        {
+          "document_id": "6Σ2Τ4653Π8-Ξ6Η",
+          "path": "antinero_west_attica/text/diavgeia/6Σ2Τ4653Π8-Ξ6Η.txt",
+          "sha256": "5cbd84d352c4da9d359ac406a47262b0a2a900ad889795475f6ed54a24759874",
+          "url": "https://diavgeia.gov.gr/doc/6Σ2Τ4653Π8-Ξ6Η",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΡΚΣ4653Π8-ΗΨ9",
+          "path": "antinero_west_attica/text/diavgeia/ΡΡΚΣ4653Π8-ΗΨ9.txt",
+          "sha256": "df1590f61f66fbd496b1b7d9e253779fd7dcd6e80ff6fd8e88b99d28b09a230b",
+          "url": "https://diavgeia.gov.gr/doc/ΡΡΚΣ4653Π8-ΗΨ9",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΛΘ64653Π8-ΚΝΣ",
+          "path": "antinero_west_attica/text/diavgeia/9ΛΘ64653Π8-ΚΝΣ.txt",
+          "sha256": "e66b613402d639a83a8fbdf16b20be5eed8bacbd4034400ff3e31d832557c884",
+          "url": "https://diavgeia.gov.gr/doc/9ΛΘ64653Π8-ΚΝΣ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΖΚΙ4653Π8-1ΥΠ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΖΚΙ4653Π8-1ΥΠ.txt",
+          "sha256": "dae567405e4897db6d4345b42182d099bcfbf440cd9817e68822620eff27eb7a",
+          "url": "https://diavgeia.gov.gr/doc/ΨΖΚΙ4653Π8-1ΥΠ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ρ7ΔΓ4653Π8-Ξ5Α",
+          "path": "antinero_west_attica/text/diavgeia/Ρ7ΔΓ4653Π8-Ξ5Α.txt",
+          "sha256": "5d197c1274d3b676c5cd94c1ae0f9cb69cb6e0c8a27fab8f6c12687668ff6b95",
+          "url": "https://diavgeia.gov.gr/doc/Ρ7ΔΓ4653Π8-Ξ5Α",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΗΑΥ4653Π8-ΚΛ1",
+          "path": "antinero_west_attica/text/diavgeia/9ΗΑΥ4653Π8-ΚΛ1.txt",
+          "sha256": "5dd4ff621742599f62b0baafa44d84201ff7244deb84a14e4d8264ad24e3c18d",
+          "url": "https://diavgeia.gov.gr/doc/9ΗΑΥ4653Π8-ΚΛ1",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    },
+    {
+      "finding_id": "report-block-211",
+      "original_text_sha256": "890f5a3618eb363b9e6357be5244b2ec2c77ed49f2b4f86be6e5ba4934849bdb",
+      "status": "qualified",
+      "notes": "Order, extensions, April study approvals and July first-account approval are supported. Account approval is not proof of payment.",
+      "evidence": [
+        {
+          "document_id": "6Μ8Φ4653Π8-1Υ2",
+          "path": "antinero_west_attica/text/diavgeia/6Μ8Φ4653Π8-1Υ2.txt",
+          "sha256": "d9026495f0b8a277b51cc7de17d33e518b22e5b6700475177c36db169185bccc",
+          "url": "https://diavgeia.gov.gr/doc/6Μ8Φ4653Π8-1Υ2",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΡΚΣ4653Π8-ΗΨ9",
+          "path": "antinero_west_attica/text/diavgeia/ΡΡΚΣ4653Π8-ΗΨ9.txt",
+          "sha256": "df1590f61f66fbd496b1b7d9e253779fd7dcd6e80ff6fd8e88b99d28b09a230b",
+          "url": "https://diavgeia.gov.gr/doc/ΡΡΚΣ4653Π8-ΗΨ9",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "9ΛΘ64653Π8-ΚΝΣ",
+          "path": "antinero_west_attica/text/diavgeia/9ΛΘ64653Π8-ΚΝΣ.txt",
+          "sha256": "e66b613402d639a83a8fbdf16b20be5eed8bacbd4034400ff3e31d832557c884",
+          "url": "https://diavgeia.gov.gr/doc/9ΛΘ64653Π8-ΚΝΣ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΨΡΗΥ4653Π8-0ΩΧ",
+          "path": "antinero_west_attica/text/diavgeia/ΨΡΗΥ4653Π8-0ΩΧ.txt",
+          "sha256": "0e6ae49f7cca9dd87a0b668d0f81921e06189a165286253460857dcf8caa8867",
+          "url": "https://diavgeia.gov.gr/doc/ΨΡΗΥ4653Π8-0ΩΧ",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "Ρ9ΒΓ4653Π8-Λ30",
+          "path": "antinero_west_attica/text/diavgeia/Ρ9ΒΓ4653Π8-Λ30.txt",
+          "sha256": "14235cfd7451b308bd5c952c0a90743b197d7ea3937f9833f6e6689ac24ee2ba",
+          "url": "https://diavgeia.gov.gr/doc/Ρ9ΒΓ4653Π8-Λ30",
+          "kind": "decision",
+          "locator": "whole_document"
+        },
+        {
+          "document_id": "ΡΠΟ64653Π8-Π20",
+          "path": "antinero_west_attica/text/diavgeia/ΡΠΟ64653Π8-Π20.txt",
+          "sha256": "db4674fdf2f7ba4806a42f9011afa62340141c42085805a82aa36d43bef91089",
+          "url": "https://diavgeia.gov.gr/doc/ΡΠΟ64653Π8-Π20",
+          "kind": "decision",
+          "locator": "whole_document"
+        }
+      ],
+      "publication_ready": false
+    }
+  ]
+}

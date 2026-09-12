@@ -83,6 +83,23 @@ const radioShows: MediaItem[] = [
     date: '4 Ιουλίου 2026',
     href: 'https://www.mixcloud.com/%CE%91%CE%98%CE%97%CE%9D%CE%91984/%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BC%CE%B5-%CE%B1%CE%B8%CE%AE%CE%BD%CE%B1-04-07-2026/',
   },
+  {
+    title: 'Παρέα με τη Μαρία Δουρουδή',
+    source: 'ΣΚΑΪ',
+    date: 'Δευτέρα, 3 Αυγούστου 2026',
+    href: 'https://www.skairadio.gr/parea-me-ti-maria-douroudi/episode-2026-08-03',
+  },
+  {
+    title: 'Ω τι κόσμος με τον Κώστα Ράπτη',
+    source: 'Αθήνα 984',
+    date: '4 Αυγούστου 2026',
+    href: 'https://athina984.gr/radio_shows/o-ti-kosmos/',
+  },
+  {
+    title: 'Μαγκαζίνο με τον Γιάννη Λαβράνο',
+    source: 'Αθήνα 984',
+    date: '10 Αυγούστου 2026',
+  },
 ]
 
 const televisionShows: MediaItem[] = [
@@ -96,6 +113,20 @@ const televisionShows: MediaItem[] = [
     source: 'MEGA',
     date: '1 Ιουλίου 2026',
     href: 'https://www.megatv.com/etvshows/2422339/01-07-26-4/',
+  },
+  {
+    title: 'Online',
+    source: 'ΣΚΑΪ',
+    date: 'Κυριακή, 09:20',
+  },
+]
+
+const podcasts: MediaItem[] = [
+  {
+    title: "Europe's infernal summer: Record heat, wildfires, and migration",
+    source: 'The Greek Current',
+    date: '8 Αυγούστου 2026',
+    href: 'https://thegreekcurrent.simplecast.com/episodes/europes-infernal-summer',
   },
 ]
 
@@ -137,20 +168,23 @@ function ArticleCard({ item }: { item: MediaItem }) {
   )
 }
 
-function BroadcastVisual({ kind, station }: { kind: 'radio' | 'tv'; station: string }) {
+function BroadcastVisual({ kind, station }: { kind: 'radio' | 'tv' | 'podcast'; station: string }) {
+  const kindLabel = kind === 'radio' ? 'ON AIR' : kind === 'tv' ? 'TV' : 'PODCAST'
+  const frequencyLabel = kind === 'radio' ? 'FM / AUDIO' : kind === 'tv' ? 'LIVE / NEWS' : 'AUDIO / ON DEMAND'
+
   return (
     <div className={`media-broadcast-visual media-broadcast-visual--${kind}`} aria-hidden="true">
       <div className="media-broadcast-visual__signal">
         {Array.from({ length: 17 }, (_, index) => <i key={index} />)}
       </div>
-      <span className="media-broadcast-visual__kind">{kind === 'radio' ? 'ON AIR' : 'TV'}</span>
+      <span className="media-broadcast-visual__kind">{kindLabel}</span>
       <strong>{station}</strong>
-      <span className="media-broadcast-visual__frequency">{kind === 'radio' ? 'FM / AUDIO' : 'LIVE / NEWS'}</span>
+      <span className="media-broadcast-visual__frequency">{frequencyLabel}</span>
     </div>
   )
 }
 
-function BroadcastCard({ item, kind }: { item: MediaItem; kind: 'radio' | 'tv' }) {
+function BroadcastCard({ item, kind }: { item: MediaItem; kind: 'radio' | 'tv' | 'podcast' }) {
   return (
     <CardShell item={item} className={`media-card media-card--broadcast${item.href ? '' : ' media-card--static'}`}>
       <BroadcastVisual kind={kind} station={item.source} />
@@ -199,6 +233,15 @@ export default function MediaPage() {
         </header>
         <div className="media-grid">
           {televisionShows.map((item) => <BroadcastCard key={`${item.source}-${item.title}`} item={item} kind="tv" />)}
+        </div>
+      </section>
+
+      <section className="media-section section-rule" aria-label="Podcast">
+        <header className="media-section__header">
+          <div className="eyebrow">04 / Podcast</div>
+        </header>
+        <div className="media-grid">
+          {podcasts.map((item) => <BroadcastCard key={`${item.source}-${item.title}`} item={item} kind="podcast" />)}
         </div>
       </section>
     </main>
