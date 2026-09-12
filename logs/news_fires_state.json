@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564455779/koysner-nea-stadia-stis-synomilies-gia-tin-oykrania-mesa-stis-epomenes-evdomades/",
-      "title": "Κούσνερ: «Νέα στάδια» στις συνομιλίες για την Ουκρανία μέσα στις επόμενες εβδομάδες",
-      "normalized_title": "ΚΟΥΣΝΕΡ: «ΝΕΑ ΣΤΑΔΙΑ» ΣΤΙΣ ΣΥΝΟΜΙΛΙΕΣ ΓΙΑ ΤΗΝ ΟΥΚΡΑΝΙΑ ΜΕΣΑ ΣΤΙΣ ΕΠΟΜΕΝΕΣ ΕΒΔΟΜΑΔΕΣ",
+      "url": "https://www.kathimerini.gr/politics/564455881/r-doyroy-h-aristera-einai-anagkaiotita-kai-prepei-na-antapokrithei-stis-megales-prokliseis/",
+      "title": "Ρ. Δούρου: H Αριστερά είναι αναγκαιότητα και πρέπει να ανταποκριθεί στις μεγάλες προκλήσεις",
+      "normalized_title": "Ρ. ΔΟΥΡΟΥ: H ΑΡΙΣΤΕΡΑ ΕΙΝΑΙ ΑΝΑΓΚΑΙΟΤΗΤΑ ΚΑΙ ΠΡΕΠΕΙ ΝΑ ΑΝΤΑΠΟΚΡΙΘΕΙ ΣΤΙΣ ΜΕΓΑΛΕΣ ΠΡΟΚΛΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564455779/koysner-nea-stadia-stis-synomilies-gia-tin-oykrania-mesa-stis-epomenes-evdomades/"
+        "https://www.kathimerini.gr/politics/564455881/r-doyroy-h-aristera-einai-anagkaiotita-kai-prepei-na-antapokrithei-stis-megales-prokliseis/",
+        "https://www.kathimerini.gr/politics/564455848/paylos-marinakis-gia-omilia-androylaki-kanena-realistiko-kai-kostologimeno-schedio/"
       ],
-      "seen_at_utc": "2026-09-12T20:29:57.436161+00:00"
+      "seen_at_utc": "2026-09-12T20:51:06.650367+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,24 +1270,25 @@
       "seen_at_utc": "2026-09-12T20:19:54.304754+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1465921/synaylia-remoy-sti-thessaloniki-panta-ta-katafernoyme-afiste-toys-na-lene-to-antio-ston-mazonaki/",
-      "title": "Συναυλία Ρέμου στη Θεσσαλονίκη: «Πάντα τα καταφέρνουμε, αφήστε τους να λένε» – Το αντίο στον Μαζωνάκη",
-      "normalized_title": "ΣΥΝΑΥΛΙΑ ΡΕΜΟΥ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ: «ΠΑΝΤΑ ΤΑ ΚΑΤΑΦΕΡΝΟΥΜΕ, ΑΦΗΣΤΕ ΤΟΥΣ ΝΑ ΛΕΝΕ» – ΤΟ ΑΝΤΙΟ ΣΤΟΝ ΜΑΖΩΝΑΚΗ",
+      "url": "https://www.efsyn.gr/kosmos/1465933/nekro-4hrono-paidi-stin-kypro-epese-apo-6o-orofo-ktirioy/",
+      "title": "Νεκρό 4χρονο παιδί στην Κύπρο – Έπεσε από 6ο όροφο κτηρίου",
+      "normalized_title": "ΝΕΚΡΟ 4ΧΡΟΝΟ ΠΑΙΔΙ ΣΤΗΝ ΚΥΠΡΟ – ΕΠΕΣΕ ΑΠΟ 6Ο ΟΡΟΦΟ ΚΤΗΡΙΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1465921/synaylia-remoy-sti-thessaloniki-panta-ta-katafernoyme-afiste-toys-na-lene-to-antio-ston-mazonaki/"
+        "https://www.efsyn.gr/kosmos/1465933/nekro-4hrono-paidi-stin-kypro-epese-apo-6o-orofo-ktirioy/"
       ],
-      "seen_at_utc": "2026-09-12T20:29:57.436248+00:00"
+      "seen_at_utc": "2026-09-12T20:51:06.650462+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/in-science/ai/kampanaki-kindynou-apo-ton-idryti-tis-anthropic-giati-zita-na-epivradynthei-o-rythmos-anaptyksis-tis-ai/",
-      "title": "Καμπανάκι κινδύνου από τον ιδρυτή της Anthropic – Γιατί ζητά να επιβραδυνθεί ο ρυθμός ανάπτυξης της AI",
-      "normalized_title": "ΚΑΜΠΑΝΑΚΙ ΚΙΝΔΥΝΟΥ ΑΠΟ ΤΟΝ ΙΔΡΥΤΗ ΤΗΣ ANTHROPIC – ΓΙΑΤΙ ΖΗΤΑ ΝΑ ΕΠΙΒΡΑΔΥΝΘΕΙ Ο ΡΥΘΜΟΣ ΑΝΑΠΤΥΞΗΣ ΤΗΣ AI",
+      "url": "https://www.in.gr/2026/09/12/world/to-stoixima-tis-ee-mporei-mia-apagoreysi-na-prostateysei-ta-paidia-apo-ta-social-media/",
+      "title": "Το στοίχημα της ΕΕ: Μπορεί μια απαγόρευση να προστατεύσει τα παιδιά από τα social media;",
+      "normalized_title": "ΤΟ ΣΤΟΙΧΗΜΑ ΤΗΣ ΕΕ: ΜΠΟΡΕΙ ΜΙΑ ΑΠΑΓΟΡΕΥΣΗ ΝΑ ΠΡΟΣΤΑΤΕΥΣΕΙ ΤΑ ΠΑΙΔΙΑ ΑΠΟ ΤΑ SOCIAL MEDIA;",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/in-science/ai/kampanaki-kindynou-apo-ton-idryti-tis-anthropic-giati-zita-na-epivradynthei-o-rythmos-anaptyksis-tis-ai/",
-        "https://www.in.gr/2026/09/12/go-fun/music-stage/laothalassa-kai-sygkinisi-vouliakse-i-thessaloniki-sti-megali-synaylia-tou-antoni-remou/"
+        "https://www.in.gr/2026/09/12/world/to-stoixima-tis-ee-mporei-mia-apagoreysi-na-prostateysei-ta-paidia-apo-ta-social-media/",
+        "https://www.in.gr/2026/09/12/plus/i-texni-tou-na-lete-oxi-i-simasia-ton-orion-ston-xoro-ergasias/",
+        "https://www.in.gr/2026/09/12/sports/othersports/grand-prix-madritis-o-noris-pire-tin-pole-position-sygklonistiko-finale-pics/"
       ],
-      "seen_at_utc": "2026-09-12T20:29:57.436204+00:00"
+      "seen_at_utc": "2026-09-12T20:51:06.650421+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T20:29:57.436349+00:00"
+  "updated_at_utc": "2026-09-12T20:51:06.650534+00:00"
 }
