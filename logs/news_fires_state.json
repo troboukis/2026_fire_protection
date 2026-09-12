@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564455617/thyella-antidraseon-gia-ti-dilosi-tramp-peri-enomenis-irlandias/",
-      "title": "Θύελλα αντιδράσεων για τη δήλωση Τραμπ περί «ενωμένης Ιρλανδίας»",
-      "normalized_title": "ΘΥΕΛΛΑ ΑΝΤΙΔΡΑΣΕΩΝ ΓΙΑ ΤΗ ΔΗΛΩΣΗ ΤΡΑΜΠ ΠΕΡΙ «ΕΝΩΜΕΝΗΣ ΙΡΛΑΝΔΙΑΣ»",
+      "url": "https://www.kathimerini.gr/society/564455641/dikigoros-mazonaki-mia-alliloychia-sfalmaton-kai-paranomon-praxeon-ton-odigisan-sto-thanato/",
+      "title": "Δικηγόρος Μαζωνάκη: Μια αλληλουχία σφαλμάτων και παράνομων πράξεων τον οδήγησαν στο θάνατο",
+      "normalized_title": "ΔΙΚΗΓΟΡΟΣ ΜΑΖΩΝΑΚΗ: ΜΙΑ ΑΛΛΗΛΟΥΧΙΑ ΣΦΑΛΜΑΤΩΝ ΚΑΙ ΠΑΡΑΝΟΜΩΝ ΠΡΑΞΕΩΝ ΤΟΝ ΟΔΗΓΗΣΑΝ ΣΤΟ ΘΑΝΑΤΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564455617/thyella-antidraseon-gia-ti-dilosi-tramp-peri-enomenis-irlandias/"
+        "https://www.kathimerini.gr/society/564455641/dikigoros-mazonaki-mia-alliloychia-sfalmaton-kai-paranomon-praxeon-ton-odigisan-sto-thanato/",
+        "https://www.kathimerini.gr/society/564455632/paros-enischyontai-oi-dynameis-gia-tin-antimetopisi-tis-fotias-pyrosvestes-apo-syro-kai-naxo/"
       ],
-      "seen_at_utc": "2026-09-12T14:30:01.508965+00:00"
+      "seen_at_utc": "2026-09-12T14:51:23.075435+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877799/den-eho-kamia-shesi-me-ton-thanato-tou-giorgou-mazonaki-leei-o-dioikiti-tis-6is-upe-ilias-theodoropoulos/?utm_source=rss",
-      "title": "«Δεν έχω καμία σχέση με τον θάνατο του Γιώργου Μαζωνάκη» λέει ο Διοικητής της 6ης ΥΠΕ, Ηλίας Θεοδωρόπουλος",
-      "normalized_title": "«ΔΕΝ ΕΧΩ ΚΑΜΙΑ ΣΧΕΣΗ ΜΕ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ» ΛΕΕΙ Ο ΔΙΟΙΚΗΤΗΣ ΤΗΣ 6ΗΣ ΥΠΕ, ΗΛΙΑΣ ΘΕΟΔΩΡΟΠΟΥΛΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1877812/fotia-agrotodasiki-ektasi-sto-heimadio-ileias-sikothikan-3-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά αγροτοδασική έκταση στο Χειμαδιό Ηλείας, σηκώθηκαν 3 αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΑΓΡΟΤΟΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΟ ΧΕΙΜΑΔΙΟ ΗΛΕΙΑΣ, ΣΗΚΩΘΗΚΑΝ 3 ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877799/den-eho-kamia-shesi-me-ton-thanato-tou-giorgou-mazonaki-leei-o-dioikiti-tis-6is-upe-ilias-theodoropoulos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877812/fotia-agrotodasiki-ektasi-sto-heimadio-ileias-sikothikan-3-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877808/se-krisimi-katastasi-sto-nosokomeio-4hrono-agori-meta-apo-peristatiko-se-pisina-xenodoheiou-stin-anavusso/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T14:30:01.509049+00:00"
+      "seen_at_utc": "2026-09-12T14:51:23.075561+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465841/paraitithike-o-proedros-tis-elliniko-metro-hristos-karadimas-meta-tis-rogmes-se-spitia-tis-kypselis/",
-      "title": "Παραιτήθηκε ο πρόεδρος της «Ελληνικό Μετρό» Χρήστος Καραδήμας μετά τις ρωγμές σε σπίτια της Κυψέλης",
-      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ Ο ΠΡΟΕΔΡΟΣ ΤΗΣ «ΕΛΛΗΝΙΚΟ ΜΕΤΡΟ» ΧΡΗΣΤΟΣ ΚΑΡΑΔΗΜΑΣ ΜΕΤΑ ΤΙΣ ΡΩΓΜΕΣ ΣΕ ΣΠΙΤΙΑ ΤΗΣ ΚΥΨΕΛΗΣ",
+      "url": "https://www.efsyn.gr/politiki/1465840/gerapetritis-den-yparhoyn-proypotheseis-gia-synyposhetiko-me-toyrkia-ektos-syzitisis-zitimata-kyriarhias/",
+      "title": "Γεραπετρίτης: Δεν υπάρχουν προϋποθέσεις για συνυποσχετικό με Τουρκία – Εκτός συζήτησης ζητήματα κυριαρχίας",
+      "normalized_title": "ΓΕΡΑΠΕΤΡΙΤΗΣ: ΔΕΝ ΥΠΑΡΧΟΥΝ ΠΡΟΥΠΟΘΕΣΕΙΣ ΓΙΑ ΣΥΝΥΠΟΣΧΕΤΙΚΟ ΜΕ ΤΟΥΡΚΙΑ – ΕΚΤΟΣ ΣΥΖΗΤΗΣΗΣ ΖΗΤΗΜΑΤΑ ΚΥΡΙΑΡΧΙΑΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465841/paraitithike-o-proedros-tis-elliniko-metro-hristos-karadimas-meta-tis-rogmes-se-spitia-tis-kypselis/"
+        "https://www.efsyn.gr/politiki/1465840/gerapetritis-den-yparhoyn-proypotheseis-gia-synyposhetiko-me-toyrkia-ektos-syzitisis-zitimata-kyriarhias/"
       ],
-      "seen_at_utc": "2026-09-12T14:30:01.509011+00:00"
+      "seen_at_utc": "2026-09-12T14:51:23.075537+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/sports/othersports/wimbledon-ta-akrivotera-eisitiria-tis-istorias-tou-kai-porta-stous-influencers/",
-      "title": "Wimbledon: Τα ακριβότερα εισιτήρια της ιστορίας του και «πόρτα» στους influencers",
-      "normalized_title": "WIMBLEDON: ΤΑ ΑΚΡΙΒΟΤΕΡΑ ΕΙΣΙΤΗΡΙΑ ΤΗΣ ΙΣΤΟΡΙΑΣ ΤΟΥ ΚΑΙ «ΠΟΡΤΑ» ΣΤΟΥΣ INFLUENCERS",
+      "url": "https://www.in.gr/2026/09/12/sports/on-field/empape-prepei-na-paro-tin-xrysi-mpala-kaneis-den-itan-kalyteros-apo-mena/",
+      "title": "Εμπαπέ: «Πρέπει να πάρω την χρυσή μπάλα – Κανείς δεν ήταν καλύτερος από μένα»",
+      "normalized_title": "ΕΜΠΑΠΕ: «ΠΡΕΠΕΙ ΝΑ ΠΑΡΩ ΤΗΝ ΧΡΥΣΗ ΜΠΑΛΑ – ΚΑΝΕΙΣ ΔΕΝ ΗΤΑΝ ΚΑΛΥΤΕΡΟΣ ΑΠΟ ΜΕΝΑ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/sports/othersports/wimbledon-ta-akrivotera-eisitiria-tis-istorias-tou-kai-porta-stous-influencers/",
-        "https://www.in.gr/2026/09/12/greece/thanatos-mazonaki-fotografies-ntokoumenta-apo-to-esoteriko-tou-iatreiou-to-eyrima-pou-diapseydei-ti-giatro/",
-        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/90i-deth-ot-forum-o-mitsotakis-vlepei-tous-arithmous-kai-oxi-ton-anthropo-tonizei-o-geroulanos/",
-        "https://www.in.gr/2026/09/12/greece/enisxyontai-oi-dynameis-gia-tin-antimetopisi-tis-fotias-stin-paro-pyrosvestes-apo-syro-kai-nakso-sto-nisi/",
-        "https://www.in.gr/matchcenter/5795451/"
+        "https://www.in.gr/2026/09/12/sports/on-field/empape-prepei-na-paro-tin-xrysi-mpala-kaneis-den-itan-kalyteros-apo-mena/",
+        "https://www.in.gr/2026/09/12/greece/oi-katatheseis-pou-kaine-tous-giatrous-tou-giorgou-mazonaki/",
+        "https://www.in.gr/2026/09/12/world/rosia-o-poutin-den-exei-lavei-apofasi-gia-ti-symmetoxi-tou-stin-g20-aporriptei-tin-protasi-zelenski-gia-synantisi/",
+        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/ot-forum-90i-deth-stoxos-i-proti-thesi-gia-to-pasok-leei-o-xristodoulakis-ta-tria-meteklogika-senaria-pou-provlepei/",
+        "https://www.in.gr/2026/09/12/go-fun/tzaki-kenenti-ta-panta-gia-to-nyfiko-ampazour-metaksi-kontra-kai-mia-ksexasmeni-mayri-sxediastria/"
       ],
-      "seen_at_utc": "2026-09-12T14:17:20.358495+00:00"
+      "seen_at_utc": "2026-09-12T14:51:23.075502+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T14:30:01.509113+00:00"
+  "updated_at_utc": "2026-09-12T14:51:23.075669+00:00"
 }
