@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564453979/meiosi-paradoseon-petrelaioeidon-kata-5-3-sto-proto-examino/",
-      "title": "Μείωση παραδόσεων πετρελαιοειδών κατά 5,3% στο πρώτο εξάμηνο",
-      "normalized_title": "ΜΕΙΩΣΗ ΠΑΡΑΔΟΣΕΩΝ ΠΕΤΡΕΛΑΙΟΕΙΔΩΝ ΚΑΤΑ 5,3% ΣΤΟ ΠΡΩΤΟ ΕΞΑΜΗΝΟ",
+      "url": "https://www.kathimerini.gr/society/564455227/thessaloniki-synelifthi-odigos-poy-etreche-me-188-chlm-ora-stin-pathe/",
+      "title": "Θεσσαλονίκη: Συνελήφθη οδηγός που έτρεχε με 188 χλμ./ώρα στην ΠΑΘΕ",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ ΟΔΗΓΟΣ ΠΟΥ ΕΤΡΕΧΕ ΜΕ 188 ΧΛΜ./ΩΡΑ ΣΤΗΝ ΠΑΘΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564453979/meiosi-paradoseon-petrelaioeidon-kata-5-3-sto-proto-examino/",
-        "https://www.kathimerini.gr/economy/international/564454045/sos-apo-11-koryfaioys-trapezites-tis-eyropis/"
+        "https://www.kathimerini.gr/society/564455227/thessaloniki-synelifthi-odigos-poy-etreche-me-188-chlm-ora-stin-pathe/",
+        "https://www.kathimerini.gr/culture/museums/564453826/oi-diapolitismikes-rizes-ton-ellinon-se-ekthesi-toy-met/",
+        "https://www.kathimerini.gr/istoria/564453772/90-chronia-prin-12-9-1936/"
       ],
-      "seen_at_utc": "2026-09-12T06:51:08.795766+00:00"
+      "seen_at_utc": "2026-09-12T07:17:02.871603+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1261,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877647/thanatos-giorgou-mazonaki-egine-prospatheia-na-diagrafoun-stoiheia-leei-i-dimoglidou/?utm_source=rss",
-      "title": "«Έγινε προσπάθεια να διαγραφούν στοιχεία» λέει η Δημογλίδου για τον θάνατο του Μαζωνάκη στο ιατρείο στο Κολωνάκι",
-      "normalized_title": "«ΕΓΙΝΕ ΠΡΟΣΠΑΘΕΙΑ ΝΑ ΔΙΑΓΡΑΦΟΥΝ ΣΤΟΙΧΕΙΑ» ΛΕΕΙ Η ΔΗΜΟΓΛΙΔΟΥ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΜΑΖΩΝΑΚΗ ΣΤΟ ΙΑΤΡΕΙΟ ΣΤΟ ΚΟΛΩΝΑΚΙ",
+      "url": "https://www.protothema.gr/greece/article/1877666/thessaloniki-sunelifthi-odigos-pou-etrehe-me-188-hlmora-stin-pathe/?utm_source=rss",
+      "title": "Θεσσαλονίκη: Συνελήφθη οδηγός που έτρεχε με 188 χλμ/ώρα στην ΠΑΘΕ",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ ΟΔΗΓΟΣ ΠΟΥ ΕΤΡΕΧΕ ΜΕ 188 ΧΛΜ/ΩΡΑ ΣΤΗΝ ΠΑΘΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877647/thanatos-giorgou-mazonaki-egine-prospatheia-na-diagrafoun-stoiheia-leei-i-dimoglidou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877666/thessaloniki-sunelifthi-odigos-pou-etrehe-me-188-hlmora-stin-pathe/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877661/19hroni-skotothike-se-trohaio-me-mihanaki-sta-hania/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877655/suginitiki-stigmi-sto-metro-tou-sudagmatos-nearos-paizei-sto-piano-to-mikres-stigmes-tou-mazonaki-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877653/enstoloi-poioi-kerdizoun-apo-to-neo-misthologio-kai-poso-auxanodai-oi-apodohes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877651/to-dorean-proliptiko-screening-gia-ton-karkino-tou-dermatos-tha-ftanei-se-oli-ti-hora-pos-tha-ginetai-o-eleghos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T06:51:08.795870+00:00"
+      "seen_at_utc": "2026-09-12T07:17:02.871721+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1465468/syriza-ti-apantise-o-nikos-pappas-stin-ef-syn-gia-tis-symmahies-toys-oikologoys-prasinoys-ton-kotzia-kai-ti-nea-aristera/",
-      "title": "ΣΥΡΙΖΑ: Τι απάντησε ο Νίκος Παππάς στην «Εφ.Συν.» για τις συμμαχίες, τους Οικολόγους Πράσινους, τον Κοτζιά και τη Νέα Αριστερά",
-      "normalized_title": "ΣΥΡΙΖΑ: ΤΙ ΑΠΑΝΤΗΣΕ Ο ΝΙΚΟΣ ΠΑΠΠΑΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.» ΓΙΑ ΤΙΣ ΣΥΜΜΑΧΙΕΣ, ΤΟΥΣ ΟΙΚΟΛΟΓΟΥΣ ΠΡΑΣΙΝΟΥΣ, ΤΟΝ ΚΟΤΖΙΑ ΚΑΙ ΤΗ ΝΕΑ ΑΡΙΣΤΕΡΑ",
+      "url": "https://www.efsyn.gr/nisides/1465411/i-politistiki-atzenta-tis-evdomadas-13-09-19-09-26/",
+      "title": "Η πολιτιστική ατζέντα της εβδομάδας [13.09-19.09.26]",
+      "normalized_title": "Η ΠΟΛΙΤΙΣΤΙΚΗ ΑΤΖΕΝΤΑ ΤΗΣ ΕΒΔΟΜΑΔΑΣ [13.09-19.09.26]",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1465468/syriza-ti-apantise-o-nikos-pappas-stin-ef-syn-gia-tis-symmahies-toys-oikologoys-prasinoys-ton-kotzia-kai-ti-nea-aristera/",
-        "https://www.efsyn.gr/politiki/1465556/tha-mas-sfaxoyn-oloi-an-den-ton-psifisoyme/",
-        "https://www.efsyn.gr/politiki/1465544/thessaloniki-i-halari-koyventa-androylaki-me-dimosiografoys-to-sholio-gia-tsipra-kai-i-provlepsi-gia-ton-panathinaiko/",
-        "https://www.efsyn.gr/kosmos/1465516/poytin-i-epityhia-toy-afd-ofeiletai-sta-lathi-tis-dysis/"
+        "https://www.efsyn.gr/nisides/1465411/i-politistiki-atzenta-tis-evdomadas-13-09-19-09-26/",
+        "https://www.efsyn.gr/politiki/1465581/paylos-hristidis-gia-dimino-epidoma-anergias-o-k-mitsotakis-ti-leei/",
+        "https://www.efsyn.gr/life/1465582/goneis-gia-proti-fora-i-lady-gaga-kai-o-maikl-polanski/",
+        "https://www.efsyn.gr/kosmos/1465565/megalonei-i-tragodia-sto-kongko-dekades-nekra-paidia-apo-pyrkagia-kai-podopatima-se-sholeio-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-09-12T06:51:08.795850+00:00"
+      "seen_at_utc": "2026-09-12T07:17:02.871695+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/gallia-petagontan-gyalia-xalikia-akoma-tremo-sygklonistikes-martyries-apo-ton-ektroxiasmo-tou-trenou/",
-      "title": "«Πετάγονταν γυαλιά, χαλίκια, ακόμα τρέμω» - Συγκλονιστικές μαρτυρίες από τον εκτροχιασμό του τρένου στη Γαλλία",
-      "normalized_title": "«ΠΕΤΑΓΟΝΤΑΝ ΓΥΑΛΙΑ, ΧΑΛΙΚΙΑ, ΑΚΟΜΑ ΤΡΕΜΩ» - ΣΥΓΚΛΟΝΙΣΤΙΚΕΣ ΜΑΡΤΥΡΙΕΣ ΑΠΟ ΤΟΝ ΕΚΤΡΟΧΙΑΣΜΟ ΤΟΥ ΤΡΕΝΟΥ ΣΤΗ ΓΑΛΛΙΑ",
+      "url": "https://www.in.gr/2026/09/12/world/voulgaria-ekriksi-kai-fotia-se-apothiki-oplon-poios-einai-o-idioktitis-i-sxesi-me-ton-polemo-stin-oukrania/",
+      "title": "Έκρηξη και φωτιά σε αποθήκη όπλων στη Βουλγαρία - Ποιος ο ιδιοκτήτης, η σχέση με τον πόλεμο στην Ουκρανία",
+      "normalized_title": "ΕΚΡΗΞΗ ΚΑΙ ΦΩΤΙΑ ΣΕ ΑΠΟΘΗΚΗ ΟΠΛΩΝ ΣΤΗ ΒΟΥΛΓΑΡΙΑ - ΠΟΙΟΣ Ο ΙΔΙΟΚΤΗΤΗΣ, Η ΣΧΕΣΗ ΜΕ ΤΟΝ ΠΟΛΕΜΟ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/gallia-petagontan-gyalia-xalikia-akoma-tremo-sygklonistikes-martyries-apo-ton-ektroxiasmo-tou-trenou/",
-        "https://www.in.gr/2026/09/12/sports/basketball/euroleague/panathinaikos-psaxnei-gia-psilo-o-omprantovits/",
-        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/ta-prota-efta-nomosxedia-tou-pasok-tha-parousiasei-o-androulakis-sti-deth-stoxos-i-ayksisi-tis-paragogis/",
-        "https://www.in.gr/2026/09/12/in-science/perivallon-b-science/enisxyetai-simantika-o-klimatikos-kindynos-tou-kaysona-stin-attiki-eos-to-2060-oi-trotes-perioxes/",
-        "https://www.in.gr/2026/09/12/go-fun/fizz/lady-gaga-gennise-to-proto-paidi-tis-xoris-na-to-mathei-kaneis/"
+        "https://www.in.gr/2026/09/12/world/voulgaria-ekriksi-kai-fotia-se-apothiki-oplon-poios-einai-o-idioktitis-i-sxesi-me-ton-polemo-stin-oukrania/",
+        "https://www.in.gr/2026/09/12/economy/diethnis-oikonomia/erxetai-zoferos-xeimonas-stin-eyropi-i-krisi-efodiasmou-othei-ta-ergostasia-sta-oria-tous/",
+        "https://www.in.gr/2026/09/12/world/kanadas-lythike-to-mystirio-me-to-nisi-fantasma-stin-axani-texniti-limni-williston/",
+        "https://www.in.gr/2026/09/12/life/pethane-o-tzei-meizel-mails-nteivis-elingkton-kai-fitzeralnt-anamesa-sta-portreta-tou-4-ekat-lipseis/",
+        "https://www.in.gr/2026/09/12/pet-stories/poia-antikeimena-pou-yparxoun-idi-sto-spiti-mporoun-na-kratisoun-ton-skylo-mas-apasxolimeno/",
+        "https://www.in.gr/2026/09/12/sports/football/kineitai-gia-salax-entin-o-panathinaikos-gia-daneismo-me-ypoxreotiki-opsion-grafoun-oi-italoi/",
+        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/kataggelies-apo-ton-oktovrio-to-mykataggelies-enisxyontai-oi-psifiakoi-elegxoi/"
       ],
-      "seen_at_utc": "2026-09-12T06:51:08.795817+00:00"
+      "seen_at_utc": "2026-09-12T07:17:02.871668+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T06:51:08.795948+00:00"
+  "updated_at_utc": "2026-09-12T07:17:02.871805+00:00"
 }
