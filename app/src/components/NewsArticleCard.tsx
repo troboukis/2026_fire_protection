@@ -62,7 +62,7 @@ export default function NewsArticleCard({ item, priority = false }: Props) {
             height="180"
             alt=""
             loading={priority ? 'eager' : 'lazy'}
-            fetchpriority={priority ? 'high' : 'auto'}
+            fetchPriority={priority ? 'high' : 'auto'}
             decoding="async"
           />
         </div>
