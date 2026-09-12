@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564454033/ti-kryvoyn-oi-ypokatigories-poy-synthetoyn-ton-rythmo-plithorismoy/",
-      "title": "Tι «κρύβουν» οι υποκατηγορίες που συνθέτουν τον ρυθμό πληθωρισμού",
-      "normalized_title": "TΙ «ΚΡΥΒΟΥΝ» ΟΙ ΥΠΟΚΑΤΗΓΟΡΙΕΣ ΠΟΥ ΣΥΝΘΕΤΟΥΝ ΤΟΝ ΡΥΘΜΟ ΠΛΗΘΩΡΙΣΜΟΥ",
+      "url": "https://www.kathimerini.gr/world/564455293/gallia-oi-arches-vlepoyn-doliofthora-gia-ton-ektrochiasmo-toy-trenoy/",
+      "title": "Γαλλία: Οι Αρχές «βλέπουν» δολιοφθορά για τον εκτροχιασμό του τρένου",
+      "normalized_title": "ΓΑΛΛΙΑ: ΟΙ ΑΡΧΕΣ «ΒΛΕΠΟΥΝ» ΔΟΛΙΟΦΘΟΡΑ ΓΙΑ ΤΟΝ ΕΚΤΡΟΧΙΑΣΜΟ ΤΟΥ ΤΡΕΝΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564454033/ti-kryvoyn-oi-ypokatigories-poy-synthetoyn-ton-rythmo-plithorismoy/"
+        "https://www.kathimerini.gr/world/564455293/gallia-oi-arches-vlepoyn-doliofthora-gia-ton-ektrochiasmo-toy-trenoy/",
+        "https://www.kathimerini.gr/society/564455287/dystychima-stin-kriti-ekane-opisthen-me-to-agrotiko-kai-paresyre-tin-87chroni-mitera-toy/"
       ],
-      "seen_at_utc": "2026-09-12T08:29:58.065483+00:00"
+      "seen_at_utc": "2026-09-12T08:50:57.469226+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,37 +1260,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877690/tragodia-sti-messara-55hronos-paresure-kata-lathos-me-to-agrotiko-tin-87hroni-mitera-tou/?utm_source=rss",
-      "title": "Τραγωδία στη Μεσσαρά: 55χρονος παρέσυρε κατά λάθος με το αγροτικό την 87χρονη μητέρα του",
-      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΜΕΣΣΑΡΑ: 55ΧΡΟΝΟΣ ΠΑΡΕΣΥΡΕ ΚΑΤΑ ΛΑΘΟΣ ΜΕ ΤΟ ΑΓΡΟΤΙΚΟ ΤΗΝ 87ΧΡΟΝΗ ΜΗΤΕΡΑ ΤΟΥ",
+      "url": "https://www.protothema.gr/greece/article/1877699/pethane-o-dimarhos-adiparou-anastasios-faroupos/?utm_source=rss",
+      "title": "Πέθανε ο δήμαρχος Αντιπάρου, Αναστάσιος Φαρούπος",
+      "normalized_title": "ΠΕΘΑΝΕ Ο ΔΗΜΑΡΧΟΣ ΑΝΤΙΠΑΡΟΥ, ΑΝΑΣΤΑΣΙΟΣ ΦΑΡΟΥΠΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877690/tragodia-sti-messara-55hronos-paresure-kata-lathos-me-to-agrotiko-tin-87hroni-mitera-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877699/pethane-o-dimarhos-adiparou-anastasios-faroupos/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T08:29:58.065592+00:00"
+      "seen_at_utc": "2026-09-12T08:50:57.469277+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1465485/peri-akrodexias-kai-allon-daimonion/",
-      "title": "Περι Ακροδεξιάς και άλλων δαιμονίων",
-      "normalized_title": "ΠΕΡΙ ΑΚΡΟΔΕΞΙΑΣ ΚΑΙ ΑΛΛΩΝ ΔΑΙΜΟΝΙΩΝ",
+      "url": "https://www.efsyn.gr/gallery/to-lexiko-tis-krisis-13/",
+      "title": "Το λεξικό της κρίσης",
+      "normalized_title": "ΤΟ ΛΕΞΙΚΟ ΤΗΣ ΚΡΙΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1465485/peri-akrodexias-kai-allon-daimonion/",
-        "https://www.efsyn.gr/tehnes/1465471/diskokritiki-the-odyssey-ost-mastodon-russian-circles-phoebe-bridgers/",
-        "https://www.efsyn.gr/stiles/1465628/o-diethnis-diagonismos-kai-to-adilo-mellon-toy-ellinikoy-sholeioy/",
-        "https://www.efsyn.gr/stiles/1465506/i-ithaki-tis-ethnikis-synennoisis/"
+        "https://www.efsyn.gr/gallery/to-lexiko-tis-krisis-13/",
+        "https://www.efsyn.gr/gallery/ena-arkoydi-metraei-tastra-12-09-2026/",
+        "https://www.efsyn.gr/gallery/ennea-pente-12-09-2026/",
+        "https://www.efsyn.gr/gallery/o-mikros-koylis-12-09-2026/",
+        "https://www.efsyn.gr/gallery/pos-einai-apo-mesa-12-09-2026/",
+        "https://www.efsyn.gr/gallery/h-eis-ton-ps-12-09-2026/",
+        "https://www.efsyn.gr/athlitismos/1465630/o-panathinaikos-paei-gia-salah-entin-pos-katelixe-ston-mpak-tis-roma/"
       ],
-      "seen_at_utc": "2026-09-12T08:29:58.065550+00:00"
+      "seen_at_utc": "2026-09-12T08:50:57.469266+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/sports/football/plisiazei-ston-ari-o-mprouma/",
-      "title": "Πλησιάζει στον Άρη ο Μπρούμα",
-      "normalized_title": "ΠΛΗΣΙΑΖΕΙ ΣΤΟΝ ΑΡΗ Ο ΜΠΡΟΥΜΑ",
+      "url": "https://www.in.gr/2026/09/12/sports/basketball/volta-tou-antetokounmpo-me-to-skafos-tou-kapetan-klei-pics/",
+      "title": "Βόλτα του Αντετοκούνμπο με το σκάφος του… καπετάν Κλέι (pics)",
+      "normalized_title": "ΒΟΛΤΑ ΤΟΥ ΑΝΤΕΤΟΚΟΥΝΜΠΟ ΜΕ ΤΟ ΣΚΑΦΟΣ ΤΟΥ… ΚΑΠΕΤΑΝ ΚΛΕΙ (PICS)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/sports/football/plisiazei-ston-ari-o-mprouma/",
-        "https://www.in.gr/2026/09/12/greece/irakleio-diasolinomeni-sti-meth-23xroni-odigos-mixanis-pou-sygkroustike-me-ix-sti-mesara/",
-        "https://www.in.gr/2026/09/12/greece/thessaloniki-xeiropedes-se-78xrono-pou-aynanizotan-mprosta-se-parea-gynaikon-sto-kentro/"
+        "https://www.in.gr/2026/09/12/sports/basketball/volta-tou-antetokounmpo-me-to-skafos-tou-kapetan-klei-pics/",
+        "https://www.in.gr/2026/09/12/go-fun/fizz/anna-vissi-gia-mazonaki-sygkinimeni-tragouda-to-aniko-se-mena/",
+        "https://www.in.gr/2026/09/12/politics/politiki-grammateia/dimoskopisi-2-stous-3-zitoun-politiki-allagi-enisxyetai-i-elas-monopsifia-i-diafora-me-ti-nd/"
       ],
-      "seen_at_utc": "2026-09-12T08:29:58.065518+00:00"
+      "seen_at_utc": "2026-09-12T08:50:57.469252+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T08:29:58.065673+00:00"
+  "updated_at_utc": "2026-09-12T08:50:57.469341+00:00"
 }
