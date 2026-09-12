@@ -7,6 +7,7 @@ The `/analysis` section is organized by published analysis so page copy, UI, dat
 - `catalog/AnalysisPage.tsx`: cards shown at `/analysis`.
 - `catalog/AnalysisCard.tsx`: shared catalog card, including the image slot.
 - `catalog/AnalysisCatalog.css` and `catalog/AnalysisCard.css`: catalog layout and card styling.
+- `app/analysis/index.html`: prerendered shell for `/analysis` with SEO meta tags and a crawlable summary (search engines and LLM crawlers) listing every published analysis, including AntiNERO. Registered as a Vite build input (`vite.config.ts`) and a Vercel rewrite (`vercel.json`), same as the statistics and AntiNERO pages below. Update it whenever an analysis is added to or removed from the catalog.
 
 ## Statistical analysis
 
