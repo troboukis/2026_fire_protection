@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564455227/thessaloniki-synelifthi-odigos-poy-etreche-me-188-chlm-ora-stin-pathe/",
-      "title": "Θεσσαλονίκη: Συνελήφθη οδηγός που έτρεχε με 188 χλμ./ώρα στην ΠΑΘΕ",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΝΕΛΗΦΘΗ ΟΔΗΓΟΣ ΠΟΥ ΕΤΡΕΧΕ ΜΕ 188 ΧΛΜ./ΩΡΑ ΣΤΗΝ ΠΑΘΕ",
+      "url": "https://www.kathimerini.gr/culture/tv/564450652/oles-oi-ellinikes-seires-poy-tha-doyme-ti-sezon-2026-2027/",
+      "title": "Ολες οι ελληνικές σειρές που θα δούμε τη σεζόν 2026-2027",
+      "normalized_title": "ΟΛΕΣ ΟΙ ΕΛΛΗΝΙΚΕΣ ΣΕΙΡΕΣ ΠΟΥ ΘΑ ΔΟΥΜΕ ΤΗ ΣΕΖΟΝ 2026-2027",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564455227/thessaloniki-synelifthi-odigos-poy-etreche-me-188-chlm-ora-stin-pathe/",
-        "https://www.kathimerini.gr/culture/museums/564453826/oi-diapolitismikes-rizes-ton-ellinon-se-ekthesi-toy-met/",
-        "https://www.kathimerini.gr/istoria/564453772/90-chronia-prin-12-9-1936/"
+        "https://www.kathimerini.gr/culture/tv/564450652/oles-oi-ellinikes-seires-poy-tha-doyme-ti-sezon-2026-2027/"
       ],
-      "seen_at_utc": "2026-09-12T07:17:02.871603+00:00"
+      "seen_at_utc": "2026-09-12T07:29:57.326310+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1274,32 +1272,25 @@
       "seen_at_utc": "2026-09-12T07:17:02.871721+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/nisides/1465411/i-politistiki-atzenta-tis-evdomadas-13-09-19-09-26/",
-      "title": "Η πολιτιστική ατζέντα της εβδομάδας [13.09-19.09.26]",
-      "normalized_title": "Η ΠΟΛΙΤΙΣΤΙΚΗ ΑΤΖΕΝΤΑ ΤΗΣ ΕΒΔΟΜΑΔΑΣ [13.09-19.09.26]",
+      "url": "https://www.efsyn.gr/politiki/1465588/o-georgiadis-kataggellei-tin-toxikotita-meta-apo-anartisi-thee-moy-giati-ton-mazonaki-kai-ohi-ton-adoni/",
+      "title": "Ο Γεωργιάδης καταγγέλλει την τοξικότητα μετά από ανάρτηση «Θεέ μου, γιατί τον Μαζωνάκη και όχι τον Άδωνι;»",
+      "normalized_title": "Ο ΓΕΩΡΓΙΑΔΗΣ ΚΑΤΑΓΓΕΛΛΕΙ ΤΗΝ ΤΟΞΙΚΟΤΗΤΑ ΜΕΤΑ ΑΠΟ ΑΝΑΡΤΗΣΗ «ΘΕΕ ΜΟΥ, ΓΙΑΤΙ ΤΟΝ ΜΑΖΩΝΑΚΗ ΚΑΙ ΟΧΙ ΤΟΝ ΑΔΩΝΙ;»",
       "seen_urls": [
-        "https://www.efsyn.gr/nisides/1465411/i-politistiki-atzenta-tis-evdomadas-13-09-19-09-26/",
-        "https://www.efsyn.gr/politiki/1465581/paylos-hristidis-gia-dimino-epidoma-anergias-o-k-mitsotakis-ti-leei/",
-        "https://www.efsyn.gr/life/1465582/goneis-gia-proti-fora-i-lady-gaga-kai-o-maikl-polanski/",
-        "https://www.efsyn.gr/kosmos/1465565/megalonei-i-tragodia-sto-kongko-dekades-nekra-paidia-apo-pyrkagia-kai-podopatima-se-sholeio-eikones-vinteo/"
+        "https://www.efsyn.gr/politiki/1465588/o-georgiadis-kataggellei-tin-toxikotita-meta-apo-anartisi-thee-moy-giati-ton-mazonaki-kai-ohi-ton-adoni/"
       ],
-      "seen_at_utc": "2026-09-12T07:17:02.871695+00:00"
+      "seen_at_utc": "2026-09-12T07:29:57.326399+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/voulgaria-ekriksi-kai-fotia-se-apothiki-oplon-poios-einai-o-idioktitis-i-sxesi-me-ton-polemo-stin-oukrania/",
-      "title": "Έκρηξη και φωτιά σε αποθήκη όπλων στη Βουλγαρία - Ποιος ο ιδιοκτήτης, η σχέση με τον πόλεμο στην Ουκρανία",
-      "normalized_title": "ΕΚΡΗΞΗ ΚΑΙ ΦΩΤΙΑ ΣΕ ΑΠΟΘΗΚΗ ΟΠΛΩΝ ΣΤΗ ΒΟΥΛΓΑΡΙΑ - ΠΟΙΟΣ Ο ΙΔΙΟΚΤΗΤΗΣ, Η ΣΧΕΣΗ ΜΕ ΤΟΝ ΠΟΛΕΜΟ ΣΤΗΝ ΟΥΚΡΑΝΙΑ",
+      "url": "https://www.in.gr/2026/09/12/sports/basketball/panathinaikos-neo-filiko-sti-rodo-apenanti-sti-spartak-soumpotitsa/",
+      "title": "Παναθηναϊκός: Νέο φιλικό στη Ρόδο απέναντι στη Σπαρτάκ Σουμπότιτσα",
+      "normalized_title": "ΠΑΝΑΘΗΝΑΙΚΟΣ: ΝΕΟ ΦΙΛΙΚΟ ΣΤΗ ΡΟΔΟ ΑΠΕΝΑΝΤΙ ΣΤΗ ΣΠΑΡΤΑΚ ΣΟΥΜΠΟΤΙΤΣΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/voulgaria-ekriksi-kai-fotia-se-apothiki-oplon-poios-einai-o-idioktitis-i-sxesi-me-ton-polemo-stin-oukrania/",
-        "https://www.in.gr/2026/09/12/economy/diethnis-oikonomia/erxetai-zoferos-xeimonas-stin-eyropi-i-krisi-efodiasmou-othei-ta-ergostasia-sta-oria-tous/",
-        "https://www.in.gr/2026/09/12/world/kanadas-lythike-to-mystirio-me-to-nisi-fantasma-stin-axani-texniti-limni-williston/",
-        "https://www.in.gr/2026/09/12/life/pethane-o-tzei-meizel-mails-nteivis-elingkton-kai-fitzeralnt-anamesa-sta-portreta-tou-4-ekat-lipseis/",
-        "https://www.in.gr/2026/09/12/pet-stories/poia-antikeimena-pou-yparxoun-idi-sto-spiti-mporoun-na-kratisoun-ton-skylo-mas-apasxolimeno/",
-        "https://www.in.gr/2026/09/12/sports/football/kineitai-gia-salax-entin-o-panathinaikos-gia-daneismo-me-ypoxreotiki-opsion-grafoun-oi-italoi/",
-        "https://www.in.gr/2026/09/12/economy/oikonomikes-eidiseis/kataggelies-apo-ton-oktovrio-to-mykataggelies-enisxyontai-oi-psifiakoi-elegxoi/"
+        "https://www.in.gr/2026/09/12/sports/basketball/panathinaikos-neo-filiko-sti-rodo-apenanti-sti-spartak-soumpotitsa/",
+        "https://www.in.gr/2026/09/12/greece/giorgos-mazonakis-prospathisan-na-diagrapsoun-simantika-stoixeia-ti-apokalypse-i-dimoglidou/",
+        "https://www.in.gr/2026/09/12/world/nea-yorki-orgi-stin-teleti-tis-11is-septemvriou-giatta-gelia-tou-zoran-mamntani-kata-tin-anagnosi-ton-onomaton-ton-thymaton/"
       ],
-      "seen_at_utc": "2026-09-12T07:17:02.871668+00:00"
+      "seen_at_utc": "2026-09-12T07:29:57.326358+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T07:17:02.871805+00:00"
+  "updated_at_utc": "2026-09-12T07:29:57.326475+00:00"
 }
