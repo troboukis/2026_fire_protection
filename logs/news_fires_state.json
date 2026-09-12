@@ -1,16 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564455269/marinakis-o-koytentakis-adeiase-ton-tsipra-ta-7-5-dis-einai-etisies-dapanes/",
-      "title": "Μαρινάκης: Ο Κουτεντάκης «άδειασε» τον Τσίπρα – «Τα 7,5 δισ. είναι ετήσιες δαπάνες»",
-      "normalized_title": "ΜΑΡΙΝΑΚΗΣ: Ο ΚΟΥΤΕΝΤΑΚΗΣ «ΑΔΕΙΑΣΕ» ΤΟΝ ΤΣΙΠΡΑ – «ΤΑ 7,5 ΔΙΣ. ΕΙΝΑΙ ΕΤΗΣΙΕΣ ΔΑΠΑΝΕΣ»",
+      "url": "https://www.kathimerini.gr/economy/local/564454033/ti-kryvoyn-oi-ypokatigories-poy-synthetoyn-ton-rythmo-plithorismoy/",
+      "title": "Tι «κρύβουν» οι υποκατηγορίες που συνθέτουν τον ρυθμό πληθωρισμού",
+      "normalized_title": "TΙ «ΚΡΥΒΟΥΝ» ΟΙ ΥΠΟΚΑΤΗΓΟΡΙΕΣ ΠΟΥ ΣΥΝΘΕΤΟΥΝ ΤΟΝ ΡΥΘΜΟ ΠΛΗΘΩΡΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564455269/marinakis-o-koytentakis-adeiase-ton-tsipra-ta-7-5-dis-einai-etisies-dapanes/",
-        "https://www.kathimerini.gr/culture/athinaika-plus/564453565/to-sakramento-timise-ton-omogeni-antzelo-tsakopoylos-me-to-kleidi-tis-polis/",
-        "https://www.kathimerini.gr/visual/podcasts/564455248/o-andreas-andreadis-apokodikopoiei-ton-elliniko-toyrismo/",
-        "https://www.kathimerini.gr/society/reportaz/564453640/kleidi-i-diarkis-ekpaideysi-ton-odigon-sta-mesa-metaforas/"
+        "https://www.kathimerini.gr/economy/local/564454033/ti-kryvoyn-oi-ypokatigories-poy-synthetoyn-ton-rythmo-plithorismoy/"
       ],
-      "seen_at_utc": "2026-09-12T08:16:58.818820+00:00"
+      "seen_at_utc": "2026-09-12T08:29:58.065483+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877685/i-a-nefrologiki-kliniki-apth-xekatharizei-i-plasmafairesi-den-einai-authimeron-diadikasia-oute-methodos-euexias/?utm_source=rss",
-      "title": "Η Α’ Νεφρολογική Κλινική ΑΠΘ ξεκαθαρίζει: Η πλασμαφαίρεση δεν είναι αυθημερόν διαδικασία, ούτε μέθοδος «ευεξίας»",
-      "normalized_title": "Η Α’ ΝΕΦΡΟΛΟΓΙΚΗ ΚΛΙΝΙΚΗ ΑΠΘ ΞΕΚΑΘΑΡΙΖΕΙ: Η ΠΛΑΣΜΑΦΑΙΡΕΣΗ ΔΕΝ ΕΙΝΑΙ ΑΥΘΗΜΕΡΟΝ ΔΙΑΔΙΚΑΣΙΑ, ΟΥΤΕ ΜΕΘΟΔΟΣ «ΕΥΕΞΙΑΣ»",
+      "url": "https://www.protothema.gr/greece/article/1877690/tragodia-sti-messara-55hronos-paresure-kata-lathos-me-to-agrotiko-tin-87hroni-mitera-tou/?utm_source=rss",
+      "title": "Τραγωδία στη Μεσσαρά: 55χρονος παρέσυρε κατά λάθος με το αγροτικό την 87χρονη μητέρα του",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΜΕΣΣΑΡΑ: 55ΧΡΟΝΟΣ ΠΑΡΕΣΥΡΕ ΚΑΤΑ ΛΑΘΟΣ ΜΕ ΤΟ ΑΓΡΟΤΙΚΟ ΤΗΝ 87ΧΡΟΝΗ ΜΗΤΕΡΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877685/i-a-nefrologiki-kliniki-apth-xekatharizei-i-plasmafairesi-den-einai-authimeron-diadikasia-oute-methodos-euexias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1877683/stelios-kubouropoulos-gia-mazonaki-i-gnorimia-se-monastiri-kai-i-teleutaia-tous-sunadisi/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877690/tragodia-sti-messara-55hronos-paresure-kata-lathos-me-to-agrotiko-tin-87hroni-mitera-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T08:16:58.818963+00:00"
+      "seen_at_utc": "2026-09-12T08:29:58.065592+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465615/thanatos-giorgoy-mazonaki-i-prospatheia-ton-giatron-na-diagrapsoyn-simantika-stoiheia-kai-oi-antifaseis/",
-      "title": "Θάνατος Γιώργου Μαζωνάκη: Προσπάθησαν να διαγράψουν σημαντικά στοιχεία – Τι αποκαλύπτει η εκπρόσωπος της ΕΛ.ΑΣ.",
-      "normalized_title": "ΘΑΝΑΤΟΣ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ: ΠΡΟΣΠΑΘΗΣΑΝ ΝΑ ΔΙΑΓΡΑΨΟΥΝ ΣΗΜΑΝΤΙΚΑ ΣΤΟΙΧΕΙΑ – ΤΙ ΑΠΟΚΑΛΥΠΤΕΙ Η ΕΚΠΡΟΣΩΠΟΣ ΤΗΣ ΕΛ.ΑΣ.",
+      "url": "https://www.efsyn.gr/stiles/1465485/peri-akrodexias-kai-allon-daimonion/",
+      "title": "Περι Ακροδεξιάς και άλλων δαιμονίων",
+      "normalized_title": "ΠΕΡΙ ΑΚΡΟΔΕΞΙΑΣ ΚΑΙ ΑΛΛΩΝ ΔΑΙΜΟΝΙΩΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465615/thanatos-giorgoy-mazonaki-i-prospatheia-ton-giatron-na-diagrapsoyn-simantika-stoiheia-kai-oi-antifaseis/",
-        "https://www.efsyn.gr/ellada/1465608/tragodia-sta-hania-nekri-19hroni-se-trohaio-me-mihanaki/"
+        "https://www.efsyn.gr/stiles/1465485/peri-akrodexias-kai-allon-daimonion/",
+        "https://www.efsyn.gr/tehnes/1465471/diskokritiki-the-odyssey-ost-mastodon-russian-circles-phoebe-bridgers/",
+        "https://www.efsyn.gr/stiles/1465628/o-diethnis-diagonismos-kai-to-adilo-mellon-toy-ellinikoy-sholeioy/",
+        "https://www.efsyn.gr/stiles/1465506/i-ithaki-tis-ethnikis-synennoisis/"
       ],
-      "seen_at_utc": "2026-09-12T08:16:58.818918+00:00"
+      "seen_at_utc": "2026-09-12T08:29:58.065550+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/greece/thessaloniki-synelifthi-43xronos-odigos-pou-odigouse-epikindyna-me-188-xlm-stin-pathe/",
-      "title": "Συνελήφθη 43χρονος οδηγός που οδηγούσε επικίνδυνα με 188 χλμ. στην ΠΑΘΕ",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 43ΧΡΟΝΟΣ ΟΔΗΓΟΣ ΠΟΥ ΟΔΗΓΟΥΣΕ ΕΠΙΚΙΝΔΥΝΑ ΜΕ 188 ΧΛΜ. ΣΤΗΝ ΠΑΘΕ",
+      "url": "https://www.in.gr/2026/09/12/sports/football/plisiazei-ston-ari-o-mprouma/",
+      "title": "Πλησιάζει στον Άρη ο Μπρούμα",
+      "normalized_title": "ΠΛΗΣΙΑΖΕΙ ΣΤΟΝ ΑΡΗ Ο ΜΠΡΟΥΜΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/greece/thessaloniki-synelifthi-43xronos-odigos-pou-odigouse-epikindyna-me-188-xlm-stin-pathe/"
+        "https://www.in.gr/2026/09/12/sports/football/plisiazei-ston-ari-o-mprouma/",
+        "https://www.in.gr/2026/09/12/greece/irakleio-diasolinomeni-sti-meth-23xroni-odigos-mixanis-pou-sygkroustike-me-ix-sti-mesara/",
+        "https://www.in.gr/2026/09/12/greece/thessaloniki-xeiropedes-se-78xrono-pou-aynanizotan-mprosta-se-parea-gynaikon-sto-kentro/"
       ],
-      "seen_at_utc": "2026-09-12T08:16:58.818864+00:00"
+      "seen_at_utc": "2026-09-12T08:29:58.065518+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T08:16:58.819040+00:00"
+  "updated_at_utc": "2026-09-12T08:29:58.065673+00:00"
 }
