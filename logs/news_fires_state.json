@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564455776/oriothetithike-i-fotia-stin-paro-se-epifylaki-gia-anazopyroseis/",
-      "title": "Οριοθετήθηκε η φωτιά στην Πάρο – Σε επιφυλακή για αναζωπυρώσεις",
-      "normalized_title": "ΟΡΙΟΘΕΤΗΘΗΚΕ Η ΦΩΤΙΑ ΣΤΗΝ ΠΑΡΟ – ΣΕ ΕΠΙΦΥΛΑΚΗ ΓΙΑ ΑΝΑΖΩΠΥΡΩΣΕΙΣ",
+      "url": "https://www.kathimerini.gr/society/564455791/seismos-4-9-richter-anoichta-tis-kefalonias/",
+      "title": "Σεισμός 4,9 Ρίχτερ ανοιχτά της Κεφαλονιάς",
+      "normalized_title": "ΣΕΙΣΜΟΣ 4,9 ΡΙΧΤΕΡ ΑΝΟΙΧΤΑ ΤΗΣ ΚΕΦΑΛΟΝΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564455776/oriothetithike-i-fotia-stin-paro-se-epifylaki-gia-anazopyroseis/",
-        "https://www.kathimerini.gr/society/reportaz/564453583/athina-i-paraitisi-tis-polis-egine-kanonikotita/"
+        "https://www.kathimerini.gr/society/564455791/seismos-4-9-richter-anoichta-tis-kefalonias/",
+        "https://www.kathimerini.gr/athletics/564455800/ultimate-championship-proti-thesi-o-miltos-tentogloy-me-8-35m/"
       ],
-      "seen_at_utc": "2026-09-12T18:51:13.616824+00:00"
+      "seen_at_utc": "2026-09-12T19:17:04.106742+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,35 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877865/seismos-48-rihter-anoihta-tis-kefalonias/?utm_source=rss",
-      "title": "Σεισμός 4,9 Ρίχτερ ανοιχτά της Κεφαλονιάς",
-      "normalized_title": "ΣΕΙΣΜΟΣ 4,9 ΡΙΧΤΕΡ ΑΝΟΙΧΤΑ ΤΗΣ ΚΕΦΑΛΟΝΙΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1877886/sovaro-epeisodio-sto-rethumno-30hronos-traumatistike-sto-kefali-meta-apo-epithesi-anaziteitai-o-drastis/?utm_source=rss",
+      "title": "Σοβαρό επεισόδιο στο Ρέθυμνο, 30χρονος τραυματίστηκε στο κεφάλι μετά από επίθεση, αναζητείται ο δράστης",
+      "normalized_title": "ΣΟΒΑΡΟ ΕΠΕΙΣΟΔΙΟ ΣΤΟ ΡΕΘΥΜΝΟ, 30ΧΡΟΝΟΣ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΤΟ ΚΕΦΑΛΙ ΜΕΤΑ ΑΠΟ ΕΠΙΘΕΣΗ, ΑΝΑΖΗΤΕΙΤΑΙ Ο ΔΡΑΣΤΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877865/seismos-48-rihter-anoihta-tis-kefalonias/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877886/sovaro-epeisodio-sto-rethumno-30hronos-traumatistike-sto-kefali-meta-apo-epithesi-anaziteitai-o-drastis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877879/tragodia-stin-kupro-nekros-4hrono-pou-epese-apo-ton-6o-orofo-polukatoikias-stin-egomi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T18:17:00.355165+00:00"
+      "seen_at_utc": "2026-09-12T19:17:04.106905+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465899/ishyros-seismos-47-rihter-stin-kefalonia/",
-      "title": "Ισχυρός σεισμός 4,9 ρίχτερ στην Κεφαλονιά",
-      "normalized_title": "ΙΣΧΥΡΟΣ ΣΕΙΣΜΟΣ 4,9 ΡΙΧΤΕΡ ΣΤΗΝ ΚΕΦΑΛΟΝΙΑ",
+      "url": "https://www.efsyn.gr/politiki/1465894/nd-vs-koytentaki-gia-kostologisi-ton-metron-elas-to-epomeno-nompel-oikonomias-kai-oi-mathiteyomenoi-kostologoi/",
+      "title": "ΝΔ vs Κουτεντάκη για κοστολόγηση των μέτρων ΕΛΑΣ: Το «επόμενο Νόμπελ οικονομίας» και οι «μαθητευόμενοι κοστολόγοι»",
+      "normalized_title": "ΝΔ VS ΚΟΥΤΕΝΤΑΚΗ ΓΙΑ ΚΟΣΤΟΛΟΓΗΣΗ ΤΩΝ ΜΕΤΡΩΝ ΕΛΑΣ: ΤΟ «ΕΠΟΜΕΝΟ ΝΟΜΠΕΛ ΟΙΚΟΝΟΜΙΑΣ» ΚΑΙ ΟΙ «ΜΑΘΗΤΕΥΟΜΕΝΟΙ ΚΟΣΤΟΛΟΓΟΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465899/ishyros-seismos-47-rihter-stin-kefalonia/"
+        "https://www.efsyn.gr/politiki/1465894/nd-vs-koytentaki-gia-kostologisi-ton-metron-elas-to-epomeno-nompel-oikonomias-kai-oi-mathiteyomenoi-kostologoi/"
       ],
-      "seen_at_utc": "2026-09-12T18:51:13.616892+00:00"
+      "seen_at_utc": "2026-09-12T19:17:04.106868+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/12/world/velgio-drone-prokalese-diakopi-tis-enaerias-kykloforias-sto-aerodromio-ton-vryksellon/",
-      "title": "Βέλγιο: Drone προκάλεσε διακοπή της εναέριας κυκλοφορίας στο αεροδρόμιο των Βρυξελλών",
-      "normalized_title": "ΒΕΛΓΙΟ: DRONE ΠΡΟΚΑΛΕΣΕ ΔΙΑΚΟΠΗ ΤΗΣ ΕΝΑΕΡΙΑΣ ΚΥΚΛΟΦΟΡΙΑΣ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΩΝ ΒΡΥΞΕΛΛΩΝ",
+      "url": "https://www.in.gr/2026/09/12/life/festival-venetias-sti-moni-gynaika-tou-diagonistikou-mei-el-toukxi-o-xrysos-leontas-lentzou-naza-malkovits-kai-oloi-oi-nikites/",
+      "title": "Φεστιβάλ Βενετίας: Στη μόνη γυναίκα του Διαγωνιστικού Μέι Ελ-Τουκχί ο Χρυσός Λέοντας – Λέντζου, NAZA, Μάλκοβιτς και όλοι οι νικητές",
+      "normalized_title": "ΦΕΣΤΙΒΑΛ ΒΕΝΕΤΙΑΣ: ΣΤΗ ΜΟΝΗ ΓΥΝΑΙΚΑ ΤΟΥ ΔΙΑΓΩΝΙΣΤΙΚΟΥ ΜΕΙ ΕΛ-ΤΟΥΚΧΙ Ο ΧΡΥΣΟΣ ΛΕΟΝΤΑΣ – ΛΕΝΤΖΟΥ, NAZA, ΜΑΛΚΟΒΙΤΣ ΚΑΙ ΟΛΟΙ ΟΙ ΝΙΚΗΤΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/12/world/velgio-drone-prokalese-diakopi-tis-enaerias-kykloforias-sto-aerodromio-ton-vryksellon/",
-        "https://www.in.gr/2026/09/12/sports/othersports/ultimate-championship-o-miltos-tentoglou-katektise-tin-protia-vid/",
-        "https://www.in.gr/2026/09/12/politics/epikairotita/oi-7-tomes-tou-pasok-to-proto-eksamino-ta-metra-tou-nikou-androulaki/",
-        "https://www.in.gr/2026/09/12/go-fun/fizz/giorgos-mazonakis-erotimata-gia-ton-thanato-tou-sto-paris-match-den-yparxoun-kanones-gia-tis-therapeies-antigiransis-stin-ellada/"
+        "https://www.in.gr/2026/09/12/life/festival-venetias-sti-moni-gynaika-tou-diagonistikou-mei-el-toukxi-o-xrysos-leontas-lentzou-naza-malkovits-kai-oloi-oi-nikites/",
+        "https://www.in.gr/2026/09/12/world/odeyontas-sti-nea-epoxi-tou-ritora-kai-stin-aporripsi-tis-logika-sygkrotimenis-skepsis/",
+        "https://www.in.gr/2026/09/12/world/kypros-nekro-4xrono-agori-pou-epese-apo-ton-6o-orofo-polykatoikias/",
+        "https://www.in.gr/matchcenter/5868057/",
+        "https://www.in.gr/matchcenter/5795453/",
+        "https://www.in.gr/2026/09/12/sports/football/imanol-den-yparxoun-dikaiologies/",
+        "https://www.in.gr/2026/09/12/go-fun/music-stage/30-xronia-antonis-remos-laothalassa-sti-thessaloniki-gia-ti-megali-synaylia/"
       ],
-      "seen_at_utc": "2026-09-12T18:51:13.616876+00:00"
+      "seen_at_utc": "2026-09-12T19:17:04.106815+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T18:51:13.616978+00:00"
+  "updated_at_utc": "2026-09-12T19:17:04.106992+00:00"
 }
