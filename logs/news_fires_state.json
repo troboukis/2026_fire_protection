@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564455959/mitsotakis-apo-kastellorizo-i-epidioxi-statherotitas-stin-periochi-den-simainei-ypochoritikotita/",
-      "title": "Μητσοτάκης από Καστελλόριζο: Η επιδίωξη σταθερότητας στην περιοχή δεν σημαίνει υποχωρητικότητα",
-      "normalized_title": "ΜΗΤΣΟΤΑΚΗΣ ΑΠΟ ΚΑΣΤΕΛΛΟΡΙΖΟ: Η ΕΠΙΔΙΩΞΗ ΣΤΑΘΕΡΟΤΗΤΑΣ ΣΤΗΝ ΠΕΡΙΟΧΗ ΔΕΝ ΣΗΜΑΙΝΕΙ ΥΠΟΧΩΡΗΤΙΚΟΤΗΤΑ",
+      "url": "https://www.kathimerini.gr/world/564454426/to-rigma-apo-to-magdevoyrgo-mechri-to-parisi/",
+      "title": "Το ρήγμα από το Μαγδεβούργο μέχρι το Παρίσι",
+      "normalized_title": "ΤΟ ΡΗΓΜΑ ΑΠΟ ΤΟ ΜΑΓΔΕΒΟΥΡΓΟ ΜΕΧΡΙ ΤΟ ΠΑΡΙΣΙ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564455959/mitsotakis-apo-kastellorizo-i-epidioxi-statherotitas-stin-periochi-den-simainei-ypochoritikotita/"
+        "https://www.kathimerini.gr/world/564454426/to-rigma-apo-to-magdevoyrgo-mechri-to-parisi/",
+        "https://www.kathimerini.gr/athletics/football/564454621/i-goiteia-ton-syntheton-chaf/",
+        "https://www.kathimerini.gr/world/564455971/kremlino-gia-oykraniko-si-kai-monti-prosferthikan-na-symvaloyn-gia-eirineytikes-synomilies/"
       ],
-      "seen_at_utc": "2026-09-13T07:29:56.378183+00:00"
+      "seen_at_utc": "2026-09-13T08:17:00.557290+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1271,27 @@
       "seen_at_utc": "2026-09-13T06:51:08.283963+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465991/panikos-sto-aera-se-ptisi-tis-turkish-airlines-tha-pethanoyme-vinteo/",
-      "title": "Πανικός στο αέρα σε πτήση της Turkish Airlines: «Θα πεθάνουμε» [βίντεο]",
-      "normalized_title": "ΠΑΝΙΚΟΣ ΣΤΟ ΑΕΡΑ ΣΕ ΠΤΗΣΗ ΤΗΣ TURKISH AIRLINES: «ΘΑ ΠΕΘΑΝΟΥΜΕ» [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/tehnes/1466005/to-tragoydi-tis-imeras-siga-tis-mahairies-siga-vinteo/",
+      "title": "Το Τραγούδι της Ημέρας: Σιγά τις μαχαιριές σιγά [βίντεο]",
+      "normalized_title": "ΤΟ ΤΡΑΓΟΥΔΙ ΤΗΣ ΗΜΕΡΑΣ: ΣΙΓΑ ΤΙΣ ΜΑΧΑΙΡΙΕΣ ΣΙΓΑ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465991/panikos-sto-aera-se-ptisi-tis-turkish-airlines-tha-pethanoyme-vinteo/",
-        "https://www.efsyn.gr/nisides/1465686/the-chios-festival-stayrodromi-politismoy-mnimis-epistimis-kai-ideon/"
+        "https://www.efsyn.gr/tehnes/1466005/to-tragoydi-tis-imeras-siga-tis-mahairies-siga-vinteo/",
+        "https://www.efsyn.gr/politiki/1466002/kypseli-synantisi-doyka-me-metropliktoys-erhontai-nees-protovoylies-apo-ton-dimo-athinaion/",
+        "https://www.efsyn.gr/nisides/1465671/o-aris-veloyhiotis-oi-fylakes-tis-aiginas-kai-kinimatografikes-drapeteyseis/"
       ],
-      "seen_at_utc": "2026-09-13T07:51:14.432445+00:00"
+      "seen_at_utc": "2026-09-13T08:17:00.557359+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/greece/fthiotida-apegklovistikan-epta-dromeis-apo-tin-oiti-meta-ti-diakopi-agona-logo-katolisthiseon/",
-      "title": "Απεγκλωβίστηκαν επτά δρομείς από την Οίτη, μετά τη διακοπή αγώνα λόγω κατολισθήσεων",
-      "normalized_title": "ΑΠΕΓΚΛΩΒΙΣΤΗΚΑΝ ΕΠΤΑ ΔΡΟΜΕΙΣ ΑΠΟ ΤΗΝ ΟΙΤΗ, ΜΕΤΑ ΤΗ ΔΙΑΚΟΠΗ ΑΓΩΝΑ ΛΟΓΩ ΚΑΤΟΛΙΣΘΗΣΕΩΝ",
+      "url": "https://www.in.gr/2026/09/13/world/i-rosia-katigorei-tin-oukrania-gia-pligma-se-vytiofora-dipla-ston-pyriniko-stathmo-sti-zaporizia/",
+      "title": "Η Ρωσία κατηγορεί την Ουκρανία για πλήγμα σε βυτιοφόρα δίπλα στον πυρηνικό σταθμό στη Ζαπορίζια",
+      "normalized_title": "Η ΡΩΣΙΑ ΚΑΤΗΓΟΡΕΙ ΤΗΝ ΟΥΚΡΑΝΙΑ ΓΙΑ ΠΛΗΓΜΑ ΣΕ ΒΥΤΙΟΦΟΡΑ ΔΙΠΛΑ ΣΤΟΝ ΠΥΡΗΝΙΚΟ ΣΤΑΘΜΟ ΣΤΗ ΖΑΠΟΡΙΖΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/greece/fthiotida-apegklovistikan-epta-dromeis-apo-tin-oiti-meta-ti-diakopi-agona-logo-katolisthiseon/",
-        "https://www.in.gr/2026/09/13/sports/football/sti-thessaloniki-gia-logariasmo-tou-ari-o-mprouma/",
-        "https://www.in.gr/2026/09/13/greece/kriti-entopismos-kai-diasosi-114-metanaston-notia-tou-nisiou-metaferontai-stous-kalous-limenes/"
+        "https://www.in.gr/2026/09/13/world/i-rosia-katigorei-tin-oukrania-gia-pligma-se-vytiofora-dipla-ston-pyriniko-stathmo-sti-zaporizia/",
+        "https://www.in.gr/2026/09/13/stories/to-golden-girl-tis-silikon-valei-itan-mia-megali-fouska-sto-myalo-tis-elizampeth-xolms/",
+        "https://www.in.gr/2026/09/13/greece/xania-thlipsi-gia-to-thanatiforo-troxaio-19xronis-pos-i-mixani-tis-karfothike-se-fanari/"
       ],
-      "seen_at_utc": "2026-09-13T07:51:14.432410+00:00"
+      "seen_at_utc": "2026-09-13T08:17:00.557332+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T07:51:14.432526+00:00"
+  "updated_at_utc": "2026-09-13T08:17:00.557434+00:00"
 }
