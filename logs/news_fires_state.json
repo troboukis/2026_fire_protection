@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564454999/apomeinaria-enos-alloy-kosmoy/",
-      "title": "Απομεινάρια ενός άλλου κόσμου",
-      "normalized_title": "ΑΠΟΜΕΙΝΑΡΙΑ ΕΝΟΣ ΑΛΛΟΥ ΚΟΣΜΟΥ",
+      "url": "https://www.kathimerini.gr/world/564454423/michalis-vasileiadis-stin-k-giati-oi-ergates-stirizoyn-tin-afd/",
+      "title": "Μιχάλης Βασιλειάδης στην «Κ»: Γιατί οι εργάτες στηρίζουν την AfD",
+      "normalized_title": "ΜΙΧΑΛΗΣ ΒΑΣΙΛΕΙΑΔΗΣ ΣΤΗΝ «Κ»: ΓΙΑΤΙ ΟΙ ΕΡΓΑΤΕΣ ΣΤΗΡΙΖΟΥΝ ΤΗΝ AFD",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564454999/apomeinaria-enos-alloy-kosmoy/",
-        "https://www.kathimerini.gr/world/564456262/soyidia-proigeitai-i-kentroaristeri-antipoliteysi-ypochorei-i-akrodexia/",
-        "https://www.kathimerini.gr/culture/564454987/anamniseis-stin-athinaiki-endochora/"
+        "https://www.kathimerini.gr/world/564454423/michalis-vasileiadis-stin-k-giati-oi-ergates-stirizoyn-tin-afd/"
       ],
-      "seen_at_utc": "2026-09-13T18:51:55.960290+00:00"
+      "seen_at_utc": "2026-09-13T19:17:30.140581+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1259,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878223/tesseris-traumaties-se-trohaio-stin-exohi-thessalonikis-apeglovistikan-apo-tin-purosvestiki/?utm_source=rss",
-      "title": "Τέσσερις τραυματίες σε τροχαίο στην Εξοχή Θεσσαλονίκης, απεγκλωβίστηκαν από την Πυροσβεστική",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΤΡΑΥΜΑΤΙΕΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗΝ ΕΞΟΧΗ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΑΠΕΓΚΛΩΒΙΣΤΗΚΑΝ ΑΠΟ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1878228/ego-ekana-auto-pou-eprepe-leei-o-taxitzis-pou-metefere-ton-giorgo-mazonaki-sto-iatreio-tis-karneadou/?utm_source=rss",
+      "title": "«Εγώ έκανα αυτό που έπρεπε, να πω τη δική μου αλήθεια» λέει ο ταξιτζής που μετέφερε τον Γιώργο Μαζωνάκη στο ιατρείο της Καρνεάδου",
+      "normalized_title": "«ΕΓΩ ΕΚΑΝΑ ΑΥΤΟ ΠΟΥ ΕΠΡΕΠΕ, ΝΑ ΠΩ ΤΗ ΔΙΚΗ ΜΟΥ ΑΛΗΘΕΙΑ» ΛΕΕΙ Ο ΤΑΞΙΤΖΗΣ ΠΟΥ ΜΕΤΕΦΕΡΕ ΤΟΝ ΓΙΩΡΓΟ ΜΑΖΩΝΑΚΗ ΣΤΟ ΙΑΤΡΕΙΟ ΤΗΣ ΚΑΡΝΕΑΔΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878223/tesseris-traumaties-se-trohaio-stin-exohi-thessalonikis-apeglovistikan-apo-tin-purosvestiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878228/ego-ekana-auto-pou-eprepe-leei-o-taxitzis-pou-metefere-ton-giorgo-mazonaki-sto-iatreio-tis-karneadou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878224/se-exelixi-epiheirisi-ereunas-kai-diasosis-gia-lemvo-me-77-metanastes-stin-gaudo-agnooudai-25-atoma/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T18:51:55.960449+00:00"
+      "seen_at_utc": "2026-09-13T19:17:30.140707+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1466201/anti-logos-ypallilon-yp-ergasias-to-neo-nomoshedio-toy-ypes-fernei-poinologio-aytarhismo-aythairesia/",
-      "title": "«Αντί-λογος» Υπαλλήλων Υπ. Εργασίας: Το νέο νομοσχέδιο του ΥΠΕΣ φέρνει ποινολόγιο, αυταρχισμό, αυθαιρεσία",
-      "normalized_title": "«ΑΝΤΙ-ΛΟΓΟΣ» ΥΠΑΛΛΗΛΩΝ ΥΠ. ΕΡΓΑΣΙΑΣ: ΤΟ ΝΕΟ ΝΟΜΟΣΧΕΔΙΟ ΤΟΥ ΥΠΕΣ ΦΕΡΝΕΙ ΠΟΙΝΟΛΟΓΙΟ, ΑΥΤΑΡΧΙΣΜΟ, ΑΥΘΑΙΡΕΣΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1466205/ileia-xylodarmos-36hronis-kai-toy-patera-tis-me-ropalo-apo-ton-proin-syntrofo-tis/",
+      "title": "Ηλεία: Ξυλοδαρμός 36χρονης και του πατέρα της με ρόπαλο από τον πρώην σύντροφό της",
+      "normalized_title": "ΗΛΕΙΑ: ΞΥΛΟΔΑΡΜΟΣ 36ΧΡΟΝΗΣ ΚΑΙ ΤΟΥ ΠΑΤΕΡΑ ΤΗΣ ΜΕ ΡΟΠΑΛΟ ΑΠΟ ΤΟΝ ΠΡΩΗΝ ΣΥΝΤΡΟΦΟ ΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1466201/anti-logos-ypallilon-yp-ergasias-to-neo-nomoshedio-toy-ypes-fernei-poinologio-aytarhismo-aythairesia/",
-        "https://www.efsyn.gr/stiles/1466198/dyo-oi-dromoi-mprosta-mas-syneheia-tis-nd-i-pragmatiki-allagi-me-pasok/"
+        "https://www.efsyn.gr/ellada/1466205/ileia-xylodarmos-36hronis-kai-toy-patera-tis-me-ropalo-apo-ton-proin-syntrofo-tis/",
+        "https://www.efsyn.gr/ellada/1466206/synagermos-stin-gaydo-anatrapike-varka-me-77-metanastes-1-horis-tis-aisthiseis-toy-dekades-agnooymenoi-15-diasothikan/"
       ],
-      "seen_at_utc": "2026-09-13T18:51:55.960407+00:00"
+      "seen_at_utc": "2026-09-13T19:17:30.140660+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/greece/ypo-elegxo-i-pyrkagia-stin-pelasgia-fthiotidas/",
-      "title": "Υπό έλεγχο η πυρκαγιά στην Πελασγία Φθιώτιδας",
-      "normalized_title": "ΥΠΟ ΕΛΕΓΧΟ Η ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΠΕΛΑΣΓΙΑ ΦΘΙΩΤΙΔΑΣ",
+      "url": "https://www.in.gr/2026/09/13/sports/football/nikolits-eimaste-apogoiteymenoi-aksize-ton-vathmo-o-asteras/",
+      "title": "Νίκολιτς: «Είμαστε απογοητευμένοι – Άξιζε τον βαθμό ο Αστέρας»",
+      "normalized_title": "ΝΙΚΟΛΙΤΣ: «ΕΙΜΑΣΤΕ ΑΠΟΓΟΗΤΕΥΜΕΝΟΙ – ΑΞΙΖΕ ΤΟΝ ΒΑΘΜΟ Ο ΑΣΤΕΡΑΣ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/greece/ypo-elegxo-i-pyrkagia-stin-pelasgia-fthiotidas/",
-        "https://www.in.gr/2026/09/13/greece/fotia-se-dasiki-ektasi-stin-kato-lippa-ioanninon/",
-        "https://www.in.gr/2026/09/13/go-fun/fizz/tha-vro-therapeia-gia-ti-noso-parkinson-maikl-tz-foks-kai-xarison-fornt-sti-gennaia-maxi/",
-        "https://www.in.gr/2026/09/13/in-science/ai/mporei-i-texniti-noimosyni-na-afanisei-tin-anthropotita/",
-        "https://www.in.gr/2026/09/13/sports/football/elfensmpergk-mpagern-monaxou-1-2-dyskoli-niki-gia-tous-vayarous/"
+        "https://www.in.gr/2026/09/13/sports/football/nikolits-eimaste-apogoiteymenoi-aksize-ton-vathmo-o-asteras/",
+        "https://www.in.gr/2026/09/13/world/ispania-dasiki-pyrkagia-konta-stin-kosta-del-sol-dyo-traymaties/",
+        "https://www.in.gr/2026/09/13/greece/fotia-sta-athyra-pellas-kinitopoiisi-apo-pyrosvestiki-kai-ethelontes/",
+        "https://www.in.gr/2026/09/13/world/giati-oi-efivoi-exoun-xeiroteres-epidoseis-sto-sxoleio/",
+        "https://www.in.gr/2026/09/13/sports/basketball/mpartzokas-tha-ithela-akoma-20-meres-proetoimasias/"
       ],
-      "seen_at_utc": "2026-09-13T18:51:55.960335+00:00"
+      "seen_at_utc": "2026-09-13T19:17:30.140624+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T18:51:55.960527+00:00"
+  "updated_at_utc": "2026-09-13T19:17:30.140783+00:00"
 }
