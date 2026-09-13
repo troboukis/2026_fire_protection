@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564453781/dimitris-papoylias-1939-2026-o-semnos-technopolitikos-toy-eksygchronismoy/",
-      "title": "Δημήτρης Παπούλιας (1939-2026): Ο σεμνός τεχνοπολιτικός του εκσυγχρονισμού",
-      "normalized_title": "ΔΗΜΗΤΡΗΣ ΠΑΠΟΥΛΙΑΣ (1939-2026): Ο ΣΕΜΝΟΣ ΤΕΧΝΟΠΟΛΙΤΙΚΟΣ ΤΟΥ ΕΚΣΥΓΧΡΟΝΙΣΜΟΥ",
+      "url": "https://www.kathimerini.gr/athletics/564456049/i-proti-alitheia-poy-emathe-o-algoyathil-gia-ton-olympiako/",
+      "title": "Η πρώτη αλήθεια που έμαθε ο Αλγουαθίλ για τον Ολυμπιακό",
+      "normalized_title": "Η ΠΡΩΤΗ ΑΛΗΘΕΙΑ ΠΟΥ ΕΜΑΘΕ Ο ΑΛΓΟΥΑΘΙΛ ΓΙΑ ΤΟΝ ΟΛΥΜΠΙΑΚΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564453781/dimitris-papoylias-1939-2026-o-semnos-technopolitikos-toy-eksygchronismoy/"
+        "https://www.kathimerini.gr/athletics/564456049/i-proti-alitheia-poy-emathe-o-algoyathil-gia-ton-olympiako/"
       ],
-      "seen_at_utc": "2026-09-13T09:51:07.222807+00:00"
+      "seen_at_utc": "2026-09-13T10:17:20.899876+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1259,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878061/zestos-septemvrios-pio-vroheros-oktovrios-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss",
-      "title": "Ζεστός Σεπτέμβριος, πιο βροχερός Οκτώβριος: Η πρόγνωση Τσατραφύλλια στο protothema",
-      "normalized_title": "ΖΕΣΤΟΣ ΣΕΠΤΕΜΒΡΙΟΣ, ΠΙΟ ΒΡΟΧΕΡΟΣ ΟΚΤΩΒΡΙΟΣ: Η ΠΡΟΓΝΩΣΗ ΤΣΑΤΡΑΦΥΛΛΙΑ ΣΤΟ PROTOTHEMA",
+      "url": "https://www.protothema.gr/greece/article/1878072/purgos-proin-sudrofos-36hronis-epitethike-me-ropala-se-ekeini-kai-ton-patera-tis-anazitoudai-duo-26hronoi/?utm_source=rss",
+      "title": "Πύργος: Πρώην σύντροφος 36χρονης επιτέθηκε με ρόπαλα σε εκείνη και τον πατέρα της, αναζητούνται δύο 26χρονοι",
+      "normalized_title": "ΠΥΡΓΟΣ: ΠΡΩΗΝ ΣΥΝΤΡΟΦΟΣ 36ΧΡΟΝΗΣ ΕΠΙΤΕΘΗΚΕ ΜΕ ΡΟΠΑΛΑ ΣΕ ΕΚΕΙΝΗ ΚΑΙ ΤΟΝ ΠΑΤΕΡΑ ΤΗΣ, ΑΝΑΖΗΤΟΥΝΤΑΙ ΔΥΟ 26ΧΡΟΝΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878061/zestos-septemvrios-pio-vroheros-oktovrios-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878072/purgos-proin-sudrofos-36hronis-epitethike-me-ropala-se-ekeini-kai-ton-patera-tis-anazitoudai-duo-26hronoi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878069/tautopoiithike-o-odigos-tou-autokinitou-pou-bike-anapoda-stin-paraliaki-sti-voula-deite-to-tromaktiko-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T09:51:07.222889+00:00"
+      "seen_at_utc": "2026-09-13T10:17:20.900035+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465982/cnn-gia-erythra-thalassa-epiko-fiasko-gia-ipa-kai-saoydiki-aravia-to-paraskinio-kai-to-blame-game/",
-      "title": "CNN για Ερυθρά Θάλασσα: Επικό φιάσκο για ΗΠΑ και Σαουδική Αραβία – Το παρασκήνιο και το blame game",
-      "normalized_title": "CNN ΓΙΑ ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ: ΕΠΙΚΟ ΦΙΑΣΚΟ ΓΙΑ ΗΠΑ ΚΑΙ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ – ΤΟ ΠΑΡΑΣΚΗΝΙΟ ΚΑΙ ΤΟ BLAME GAME",
+      "url": "https://www.efsyn.gr/politiki/1466046/i-elas-epimenei-gia-to-epidoma-anergias-ehoyn-perasei-treis-imeres-kai-o-kyvernitikos-ekprosopos-paramenei-sti-thesi-toy-vinteo/",
+      "title": "Η ΕΛΑΣ επιμένει για το επίδομα ανεργίας: Έχουν περάσει τρεις ημέρες και ο κυβερνητικός εκπρόσωπος παραμένει στη θέση του [βίντεο]",
+      "normalized_title": "Η ΕΛΑΣ ΕΠΙΜΕΝΕΙ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ: ΕΧΟΥΝ ΠΕΡΑΣΕΙ ΤΡΕΙΣ ΗΜΕΡΕΣ ΚΑΙ Ο ΚΥΒΕΡΝΗΤΙΚΟΣ ΕΚΠΡΟΣΩΠΟΣ ΠΑΡΑΜΕΝΕΙ ΣΤΗ ΘΕΣΗ ΤΟΥ [ΒΙΝΤΕΟ]",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465982/cnn-gia-erythra-thalassa-epiko-fiasko-gia-ipa-kai-saoydiki-aravia-to-paraskinio-kai-to-blame-game/",
-        "https://www.efsyn.gr/stiles/1465693/o-efialtis-ginetai-kanonikotita/",
-        "https://www.efsyn.gr/podcast/anagoges-koyventes-apo-ton-mazonaki-ston-mitsotaki/"
+        "https://www.efsyn.gr/politiki/1466046/i-elas-epimenei-gia-to-epidoma-anergias-ehoyn-perasei-treis-imeres-kai-o-kyvernitikos-ekprosopos-paramenei-sti-thesi-toy-vinteo/",
+        "https://www.efsyn.gr/ellada/1466044/tragodia-sto-irakleio-nekros-22ronos-se-trohaio-kai-motosikleta/",
+        "https://www.efsyn.gr/politiki/1466041/i-ataka-androylaki-gia-to-ntoy-ton-toyrkon-to-mitsotakis-i-erntogan-einai-apokalypsi-tis-faidrotitas/"
       ],
-      "seen_at_utc": "2026-09-13T09:51:07.222872+00:00"
+      "seen_at_utc": "2026-09-13T10:17:20.899993+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/politics/sfodri-antiparathesi-gia-to-epidoma-anergias-kryfi-atzenta-tis-kyvernisis-kataggellei-i-antipoliteysi/",
-      "title": "Σφοδρή αντιπαράθεση για το επίδομα ανεργίας – Κρυφή ατζέντα της κυβέρνησης καταγγέλλει η αντιπολίτευση",
-      "normalized_title": "ΣΦΟΔΡΗ ΑΝΤΙΠΑΡΑΘΕΣΗ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ – ΚΡΥΦΗ ΑΤΖΕΝΤΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ ΚΑΤΑΓΓΕΛΛΕΙ Η ΑΝΤΙΠΟΛΙΤΕΥΣΗ",
+      "url": "https://www.in.gr/2026/09/13/greece/thanatos-giorgou-mazonaki-pos-oi-giatroi-sxediazan-na-kanoun-plasmafairesi-se-ksenodoxeia-ton-kykladon/",
+      "title": "Θάνατος Γιώργου Μαζωνάκη: Πώς οι γιατροί σχεδίαζαν να κάνουν πλασμαφαίρεση σε ξενοδοχεία των Κυκλάδων",
+      "normalized_title": "ΘΑΝΑΤΟΣ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ: ΠΩΣ ΟΙ ΓΙΑΤΡΟΙ ΣΧΕΔΙΑΖΑΝ ΝΑ ΚΑΝΟΥΝ ΠΛΑΣΜΑΦΑΙΡΕΣΗ ΣΕ ΞΕΝΟΔΟΧΕΙΑ ΤΩΝ ΚΥΚΛΑΔΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/politics/sfodri-antiparathesi-gia-to-epidoma-anergias-kryfi-atzenta-tis-kyvernisis-kataggellei-i-antipoliteysi/",
-        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/androulakis-stoxos-tou-pasok-i-proti-thesi-aksiaki-i-apofasi-mas-na-min-synergasoume-me-ti-nd/"
+        "https://www.in.gr/2026/09/13/greece/thanatos-giorgou-mazonaki-pos-oi-giatroi-sxediazan-na-kanoun-plasmafairesi-se-ksenodoxeia-ton-kykladon/",
+        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/mitsotakis-apo-kastelorizo-proeklogikes-yposxeseis-gia-kinitra-egkatastasis-5-000-eyro-to-xrono-to-minyma-se-tourkia/",
+        "https://www.in.gr/2026/09/13/go-fun/stars/evdomadiaia/akros-zodiako-ta-dos-kai-ta-donts-tis-evdomadas-13-09-19-09-2026/",
+        "https://www.in.gr/2026/09/13/world/anamesa-stous-xartes-kai-tis-kalpes-i-eyropi-mprosta-se-mia-nea-istoriki-strofi/",
+        "https://www.in.gr/2026/09/13/go-fun/music-stage/antonis-remos-katerripse-to-rekor-olon-ton-epoxon-sti-thessaloniki-oloi-oi-kallitexnes-sti-skini-kai-i-sygkinisi-gia-ton-mazonaki/",
+        "https://www.in.gr/2026/09/13/sports/othersports/us-open-zveref-kai-selton-se-mia-kontra-gia-tin-istoria/"
       ],
-      "seen_at_utc": "2026-09-13T09:51:07.222844+00:00"
+      "seen_at_utc": "2026-09-13T10:17:20.899933+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T09:51:07.222956+00:00"
+  "updated_at_utc": "2026-09-13T10:17:20.900112+00:00"
 }
