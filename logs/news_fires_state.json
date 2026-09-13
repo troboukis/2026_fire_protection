@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564456220/thessaloniki-syllipseis-gia-diakinisi-vareos-oplismoy-me-fonto-tin-toyrkiki-symmoria-ton-daltons/",
-      "title": "Θεσσαλονίκη: Συλλήψεις για διακίνηση βαρέως οπλισμού με φόντο την τουρκική συμμορία των «Daltons»",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΒΑΡΕΩΣ ΟΠΛΙΣΜΟΥ ΜΕ ΦΟΝΤΟ ΤΗΝ ΤΟΥΡΚΙΚΗ ΣΥΜΜΟΡΙΑ ΤΩΝ «DALTONS»",
+      "url": "https://www.kathimerini.gr/opinion/564454330/i-toyrkia-kai-to-syndromo-ton-sevron/",
+      "title": "Η Τουρκία και το σύνδρομο των Σεβρών",
+      "normalized_title": "Η ΤΟΥΡΚΙΑ ΚΑΙ ΤΟ ΣΥΝΔΡΟΜΟ ΤΩΝ ΣΕΒΡΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564456220/thessaloniki-syllipseis-gia-diakinisi-vareos-oplismoy-me-fonto-tin-toyrkiki-symmoria-ton-daltons/"
+        "https://www.kathimerini.gr/opinion/564454330/i-toyrkia-kai-to-syndromo-ton-sevron/",
+        "https://www.kathimerini.gr/opinion/564454471/pisa-2025-apo-ti-diagnosi-sti-metarrythmisi/",
+        "https://www.kathimerini.gr/world/564456217/oykrania-rosiki-epithesi-konta-sto-treno-toy-mporis-tzonson/",
+        "https://www.kathimerini.gr/opinion/564454507/mazo-i-nomimopoiisi-tis-pistas/",
+        "https://www.kathimerini.gr/world/564456232/fintan-to-israil-epidiokei-na-apostatheropoiisei-ti-syria/"
       ],
-      "seen_at_utc": "2026-09-13T16:29:59.473887+00:00"
+      "seen_at_utc": "2026-09-13T16:51:14.095993+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1263,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878185/vrethike-varus-oplismos-pou-proorizotan-gia-tourkiki-eglimatiki-organosi-sti-thessaloniki-duo-sullipseis/?utm_source=rss",
-      "title": "Βρέθηκε βαρύς οπλισμός που προοριζόταν για τουρκική εγκληματική οργάνωση στη Θεσσαλονίκη, δύο συλλήψεις",
-      "normalized_title": "ΒΡΕΘΗΚΕ ΒΑΡΥΣ ΟΠΛΙΣΜΟΣ ΠΟΥ ΠΡΟΟΡΙΖΟΤΑΝ ΓΙΑ ΤΟΥΡΚΙΚΗ ΕΓΚΛΗΜΑΤΙΚΗ ΟΡΓΑΝΩΣΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1878197/i-oikogeneia-tou-giorgou-mazonaki-eftase-stin-agia-triada-sti-nikaia-deite-video/?utm_source=rss",
+      "title": "Η οικογένεια του Γιώργου Μαζωνάκη στην Αγία Τριάδα στη Νίκαια, βίντεο",
+      "normalized_title": "Η ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ ΣΤΗΝ ΑΓΙΑ ΤΡΙΑΔΑ ΣΤΗ ΝΙΚΑΙΑ, ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878185/vrethike-varus-oplismos-pou-proorizotan-gia-tourkiki-eglimatiki-organosi-sti-thessaloniki-duo-sullipseis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878197/i-oikogeneia-tou-giorgou-mazonaki-eftase-stin-agia-triada-sti-nikaia-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878193/thrinos-gia-ton-giorgo-mazonaki-sti-nikaia-irtha-apo-tin-amaliada-me-ta-paidia-mou-ehoume-sokaristei/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T16:17:00.594742+00:00"
+      "seen_at_utc": "2026-09-13T16:51:14.096075+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466154/lykovrysi-nekros-entopistike-andras-dipla-sto-amaxi-toy-sti-gefyra-tis-ethnikis/",
-      "title": "Λυκόβρυση: Νεκρός εντοπίστηκε άνδρας δίπλα στο αμάξι του στη γέφυρα της Εθνικής",
-      "normalized_title": "ΛΥΚΟΒΡΥΣΗ: ΝΕΚΡΟΣ ΕΝΤΟΠΙΣΤΗΚΕ ΑΝΔΡΑΣ ΔΙΠΛΑ ΣΤΟ ΑΜΑΞΙ ΤΟΥ ΣΤΗ ΓΕΦΥΡΑ ΤΗΣ ΕΘΝΙΚΗΣ",
+      "url": "https://www.efsyn.gr/ellada/1466152/i-syzygos-toy-kosti-hatzidaki-gia-mazonaki-kai-lifestyle-medicine-me-hydaio-tsoyvaliasma-theloyn-na-mas-plixoyn/",
+      "title": "Η σύζυγος του Κωστή Χατζηδάκη για Μαζωνάκη και «LifeStyle Medicine»: Με χυδαίο τσουβάλιασμα θέλουν να μας πλήξουν",
+      "normalized_title": "Η ΣΥΖΥΓΟΣ ΤΟΥ ΚΩΣΤΗ ΧΑΤΖΗΔΑΚΗ ΓΙΑ ΜΑΖΩΝΑΚΗ ΚΑΙ «LIFESTYLE MEDICINE»: ΜΕ ΧΥΔΑΙΟ ΤΣΟΥΒΑΛΙΑΣΜΑ ΘΕΛΟΥΝ ΝΑ ΜΑΣ ΠΛΗΞΟΥΝ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466154/lykovrysi-nekros-entopistike-andras-dipla-sto-amaxi-toy-sti-gefyra-tis-ethnikis/"
+        "https://www.efsyn.gr/ellada/1466152/i-syzygos-toy-kosti-hatzidaki-gia-mazonaki-kai-lifestyle-medicine-me-hydaio-tsoyvaliasma-theloyn-na-mas-plixoyn/"
       ],
-      "seen_at_utc": "2026-09-13T16:17:00.594699+00:00"
+      "seen_at_utc": "2026-09-13T16:51:14.096056+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/greece/andras-entopistike-nekros-apo-pyrovolismo-sti-lykovrysi-oplo-vrethike-dipla-tou/",
-      "title": "Άνδρας εντοπίστηκε νεκρός από πυροβολισμό στη Λυκόβρυση – Όπλο βρέθηκε δίπλα του",
-      "normalized_title": "ΑΝΔΡΑΣ ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΟΣ ΑΠΟ ΠΥΡΟΒΟΛΙΣΜΟ ΣΤΗ ΛΥΚΟΒΡΥΣΗ – ΟΠΛΟ ΒΡΕΘΗΚΕ ΔΙΠΛΑ ΤΟΥ",
+      "url": "https://www.in.gr/2026/09/13/greece/thessaloniki-varys-oplismos-gia-tourkiki-egklimatiki-organosi-dyo-syllipseis/",
+      "title": "Θεσσαλονίκη: Βαρύς οπλισμός για τουρκική εγκληματική οργάνωση – Δύο συλλήψεις",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΒΑΡΥΣ ΟΠΛΙΣΜΟΣ ΓΙΑ ΤΟΥΡΚΙΚΗ ΕΓΚΛΗΜΑΤΙΚΗ ΟΡΓΑΝΩΣΗ – ΔΥΟ ΣΥΛΛΗΨΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/greece/andras-entopistike-nekros-apo-pyrovolismo-sti-lykovrysi-oplo-vrethike-dipla-tou/",
-        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/freno-openai-se-ipo-entos-2026-oi-eksigiseis-tou-altman/"
+        "https://www.in.gr/2026/09/13/greece/thessaloniki-varys-oplismos-gia-tourkiki-egklimatiki-organosi-dyo-syllipseis/",
+        "https://www.in.gr/2026/09/13/sports/basketball/spanoulis-gia-tin-epoxi-vriskomaste-se-ena-kalo-epipedo/",
+        "https://www.in.gr/2026/09/13/life/apo-tin-ellada-tou-41-sti-maxi-gia-tous-prosfyges-o-teo-tzeims-timaei-ton-pappou-tou-nikola-taptikli/"
       ],
-      "seen_at_utc": "2026-09-13T16:29:59.473925+00:00"
+      "seen_at_utc": "2026-09-13T16:51:14.096022+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T16:29:59.474003+00:00"
+  "updated_at_utc": "2026-09-13T16:51:14.096140+00:00"
 }
