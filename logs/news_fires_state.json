@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/564456190/formoyla-1-nikise-sti-madriti-kai-ayxise-ti-diafora-stin-koryfi-o-antoneli/",
-      "title": "Φόρμουλα 1: Νίκησε στη Μαδρίτη και αύξησε τη διαφορά στην κορυφή ο Αντονέλι",
-      "normalized_title": "ΦΟΡΜΟΥΛΑ 1: ΝΙΚΗΣΕ ΣΤΗ ΜΑΔΡΙΤΗ ΚΑΙ ΑΥΞΗΣΕ ΤΗ ΔΙΑΦΟΡΑ ΣΤΗΝ ΚΟΡΥΦΗ Ο ΑΝΤΟΝΕΛΙ",
+      "url": "https://www.kathimerini.gr/society/564456202/samos-syllipsi-diakiniti-metanaston-meta-apo-katadioxi/",
+      "title": "Σάμος: Σύλληψη διακινητή μεταναστών μετά από καταδίωξη",
+      "normalized_title": "ΣΑΜΟΣ: ΣΥΛΛΗΨΗ ΔΙΑΚΙΝΗΤΗ ΜΕΤΑΝΑΣΤΩΝ ΜΕΤΑ ΑΠΟ ΚΑΤΑΔΙΩΞΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/564456190/formoyla-1-nikise-sti-madriti-kai-ayxise-ti-diafora-stin-koryfi-o-antoneli/",
-        "https://www.kathimerini.gr/society/564456193/kleista-ta-farmakeia-tis-attikis-stis-14-septemvrioy-pos-tha-exypiretithoyn-oi-polites/"
+        "https://www.kathimerini.gr/society/564456202/samos-syllipsi-diakiniti-metanaston-meta-apo-katadioxi/",
+        "https://www.kathimerini.gr/society/564453631/enas-thanatos-poy-gemizei-tis-othones-mas/"
       ],
-      "seen_at_utc": "2026-09-13T15:29:56.704496+00:00"
+      "seen_at_utc": "2026-09-13T15:51:14.091505+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,37 +1260,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878174/sunelifthi-43hronos-me-3994-lathraia-kapnika-kai-7090-euro-sti-nikaia/?utm_source=rss",
-      "title": "Συνελήφθη 43χρονος με 3.994 λαθραία καπνικά και 7.090 ευρώ στη Νίκαια",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 43ΧΡΟΝΟΣ ΜΕ 3.994 ΛΑΘΡΑΙΑ ΚΑΠΝΙΚΑ ΚΑΙ 7.090 ΕΥΡΩ ΣΤΗ ΝΙΚΑΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1878178/andras-edopistike-nekros-me-pistoli-sto-heri-kato-apo-autokinito-sti-lukovrusi/?utm_source=rss",
+      "title": "Άνδρας εντοπίστηκε νεκρός με πιστόλι στο χέρι, κάτω από αυτοκίνητο στη Λυκόβρυση",
+      "normalized_title": "ΑΝΔΡΑΣ ΕΝΤΟΠΙΣΤΗΚΕ ΝΕΚΡΟΣ ΜΕ ΠΙΣΤΟΛΙ ΣΤΟ ΧΕΡΙ, ΚΑΤΩ ΑΠΟ ΑΥΤΟΚΙΝΗΤΟ ΣΤΗ ΛΥΚΟΒΡΥΣΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878174/sunelifthi-43hronos-me-3994-lathraia-kapnika-kai-7090-euro-sti-nikaia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878178/andras-edopistike-nekros-me-pistoli-sto-heri-kato-apo-autokinito-sti-lukovrusi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T15:29:56.704606+00:00"
+      "seen_at_utc": "2026-09-13T15:51:14.091643+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1465979/posa-xodeyoyn-online-oi-ellines-se-soyper-market-kai-delivery/",
-      "title": "Πόσα ξοδεύουν online οι Έλληνες σε σούπερ μάρκετ και delivery",
-      "normalized_title": "ΠΟΣΑ ΞΟΔΕΥΟΥΝ ONLINE ΟΙ ΕΛΛΗΝΕΣ ΣΕ ΣΟΥΠΕΡ ΜΑΡΚΕΤ ΚΑΙ DELIVERY",
+      "url": "https://www.efsyn.gr/kosmos/1466146/oykrania-stohos-rosikoy-drone-treno-poy-metefere-stin-polonia-ton-mporis-tzonson-kai-eyropaioys-axiomatoyhoys/",
+      "title": "Ουκρανία: Στόχος ρωσικού drone τρένο που μετέφερε στην Πολωνία τον Μπόρις Τζόνσον και Ευρωπαίους αξιωματούχους",
+      "normalized_title": "ΟΥΚΡΑΝΙΑ: ΣΤΟΧΟΣ ΡΩΣΙΚΟΥ DRONE ΤΡΕΝΟ ΠΟΥ ΜΕΤΕΦΕΡΕ ΣΤΗΝ ΠΟΛΩΝΙΑ ΤΟΝ ΜΠΟΡΙΣ ΤΖΟΝΣΟΝ ΚΑΙ ΕΥΡΩΠΑΙΟΥΣ ΑΞΙΩΜΑΤΟΥΧΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1465979/posa-xodeyoyn-online-oi-ellines-se-soyper-market-kai-delivery/"
+        "https://www.efsyn.gr/kosmos/1466146/oykrania-stohos-rosikoy-drone-treno-poy-metefere-stin-polonia-ton-mporis-tzonson-kai-eyropaioys-axiomatoyhoys/"
       ],
-      "seen_at_utc": "2026-09-13T15:29:56.704574+00:00"
+      "seen_at_utc": "2026-09-13T15:51:14.091617+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/5881163/",
-      "title": "LIVE: Έλφενσμπεργκ – Μπάγερν Μονάχου",
-      "normalized_title": "LIVE: ΕΛΦΕΝΣΜΠΕΡΓΚ – ΜΠΑΓΕΡΝ ΜΟΝΑΧΟΥ",
+      "url": "https://www.in.gr/matchcenter/5943246/",
+      "title": "LIVE: Αστέρας Τρίπολης – ΑΕΚ",
+      "normalized_title": "LIVE: ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ – ΑΕΚ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/5881163/",
-        "https://www.in.gr/matchcenter/5795452/",
-        "https://www.in.gr/2026/09/13/sports/basketball/aris-erythros-asteras-98-74-eikona-apo-to-mellon/",
-        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/tsoukalas-ston-marinaki-sas-afinoume-na-paiksete-monoi-sas-sto-gipedo-tou-pseydous-tis-diastrevlosis-kai-tis-toksikotitas/",
-        "https://www.in.gr/2026/09/13/greece/o-giorgos-mazonakis-epistrefei-stin-palia-tou-geitonia-plithos-kosmou-sto-laiko-proskynima-sti-nikaia/",
-        "https://www.in.gr/2026/09/13/sports/football/aek-i-11ada-gia-to-paixnidi-me-ton-astera-stin-tripoli-pic/"
+        "https://www.in.gr/matchcenter/5943246/",
+        "https://www.in.gr/2026/09/13/life/culture-live/etoimasteite-o-stiven-gkraxam-tha-protagonistisei-sto-heat-2/",
+        "https://www.in.gr/2026/09/13/world/oukrania-rosiko-drone-eplikse-treno-stin-idia-perioxi-itan-o-mporis-tzonson-kai-alloi-aksiomatouxoi-tis-ee/",
+        "https://www.in.gr/2026/09/13/world/o-tramp-zitise-apo-ton-zelenski-na-stamatisei-na-plittei-ta-diylistiria-rosikou-petrelaiou/"
       ],
-      "seen_at_utc": "2026-09-13T15:29:56.704535+00:00"
+      "seen_at_utc": "2026-09-13T15:51:14.091542+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T15:29:56.704677+00:00"
+  "updated_at_utc": "2026-09-13T15:51:14.091706+00:00"
 }
