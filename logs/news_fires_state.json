@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564456133/marinakis-gia-synenteyxi-androylaki-etaxe-metra-disekatommyrion-telos-ta-daneika-lefta/",
-      "title": "Μαρινάκης για συνέντευξη Ανδρουλάκη: «Εταξε μέτρα δισεκατομμυρίων, τέλος τα δανεικά λεφτά»",
-      "normalized_title": "ΜΑΡΙΝΑΚΗΣ ΓΙΑ ΣΥΝΕΝΤΕΥΞΗ ΑΝΔΡΟΥΛΑΚΗ: «ΕΤΑΞΕ ΜΕΤΡΑ ΔΙΣΕΚΑΤΟΜΜΥΡΙΩΝ, ΤΕΛΟΣ ΤΑ ΔΑΝΕΙΚΑ ΛΕΦΤΑ»",
+      "url": "https://www.kathimerini.gr/economy/local/564454036/tesseris-prothypoyrgoi-sto-mati-toy-kyklona/",
+      "title": "Τέσσερις πρωθυπουργοί στο «μάτι του κυκλώνα»",
+      "normalized_title": "ΤΕΣΣΕΡΙΣ ΠΡΩΘΥΠΟΥΡΓΟΙ ΣΤΟ «ΜΑΤΙ ΤΟΥ ΚΥΚΛΩΝΑ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564456133/marinakis-gia-synenteyxi-androylaki-etaxe-metra-disekatommyrion-telos-ta-daneika-lefta/"
+        "https://www.kathimerini.gr/economy/local/564454036/tesseris-prothypoyrgoi-sto-mati-toy-kyklona/",
+        "https://www.kathimerini.gr/life/science/564456142/sfakia-ereyna-sto-spilaiovarathro-ton-sternon/",
+        "https://www.kathimerini.gr/economy/international/564456139/s-aravia-stereyoyn-oi-exagoges-petrelaioy-oso-menei-kleistos-o-agogos-pros-tin-erythra-thalassa/"
       ],
-      "seen_at_utc": "2026-09-13T13:51:05.726781+00:00"
+      "seen_at_utc": "2026-09-13T14:17:05.462268+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,36 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878134/nekros-43hronos-se-trohaio-sto-koropi/?utm_source=rss",
-      "title": "Νεκρός 43χρονος σε τροχαίο στο Κορωπί",
-      "normalized_title": "ΝΕΚΡΟΣ 43ΧΡΟΝΟΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΟ ΚΟΡΩΠΙ",
+      "url": "https://www.protothema.gr/greece/article/1878152/aproopto-sti-naupaktia-autokinito-katelixe-sti-thalassa-epiheirisi-gia-tin-anasursi-tou-video/?utm_source=rss",
+      "title": "Απρόοπτο στη Ναυπακτία, αυτοκίνητο κατέληξε στη θάλασσα, επιχείρηση για την ανάσυρσή του, βίντεο",
+      "normalized_title": "ΑΠΡΟΟΠΤΟ ΣΤΗ ΝΑΥΠΑΚΤΙΑ, ΑΥΤΟΚΙΝΗΤΟ ΚΑΤΕΛΗΞΕ ΣΤΗ ΘΑΛΑΣΣΑ, ΕΠΙΧΕΙΡΗΣΗ ΓΙΑ ΤΗΝ ΑΝΑΣΥΡΣΗ ΤΟΥ, ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878134/nekros-43hronos-se-trohaio-sto-koropi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878127/the-stemcell-clinic/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878152/aproopto-sti-naupaktia-autokinito-katelixe-sti-thalassa-epiheirisi-gia-tin-anasursi-tou-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878150/nekri-65hroni-stin-paralia-klima-stin-aigina-louomenoi-tis-ekanan-karpa-epi-50-lepta/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T13:17:02.190898+00:00"
+      "seen_at_utc": "2026-09-13T14:17:05.462361+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1465758/giorgos-mazonakis-eihe-sto-aima-toy-to-vivere-pericolosamente/",
-      "title": "Γιώργος Μαζωνάκης: Είχε στο αίμα του το vivere pericolosamente",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΕΙΧΕ ΣΤΟ ΑΙΜΑ ΤΟΥ ΤΟ VIVERE PERICOLOSAMENTE",
+      "url": "https://www.efsyn.gr/ellada/1466120/enas-nekros-se-trohaio-sto-koropi-sfodri-proskroysi-ohimatos-se-vraho/",
+      "title": "Νεκρός 43χρονος σε τροχαίο στο Κορωπί – Σφοδρή πρόσκρουση οχήματος σε βράχο",
+      "normalized_title": "ΝΕΚΡΟΣ 43ΧΡΟΝΟΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΟ ΚΟΡΩΠΙ – ΣΦΟΔΡΗ ΠΡΟΣΚΡΟΥΣΗ ΟΧΗΜΑΤΟΣ ΣΕ ΒΡΑΧΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1465758/giorgos-mazonakis-eihe-sto-aima-toy-to-vivere-pericolosamente/"
+        "https://www.efsyn.gr/ellada/1466120/enas-nekros-se-trohaio-sto-koropi-sfodri-proskroysi-ohimatos-se-vraho/",
+        "https://www.efsyn.gr/ellada/1466117/aigina-gynaika-pethane-se-paralia-aytoptes-martyres-anaferoyn-megali-kathysterisi-toy-asthenoforoy/"
       ],
-      "seen_at_utc": "2026-09-13T13:51:05.726879+00:00"
+      "seen_at_utc": "2026-09-13T14:17:05.462333+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/world/se-kindyno-akomi-4-tis-pagkosmias-prosforas-petrelaiou-agonas-na-apokatastathei-o-agogos-sti-saoudiki-aravia/",
-      "title": "Σε κίνδυνο ακόμη 4% της παγκόσμιας προσφοράς πετρελαίου – Αγώνας να αποκατασταθεί ο αγωγός στη Σαουδική Αραβία",
-      "normalized_title": "ΣΕ ΚΙΝΔΥΝΟ ΑΚΟΜΗ 4% ΤΗΣ ΠΑΓΚΟΣΜΙΑΣ ΠΡΟΣΦΟΡΑΣ ΠΕΤΡΕΛΑΙΟΥ – ΑΓΩΝΑΣ ΝΑ ΑΠΟΚΑΤΑΣΤΑΘΕΙ Ο ΑΓΩΓΟΣ ΣΤΗ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ",
+      "url": "https://www.in.gr/2026/09/13/sports/football/karfose-tin-koventri-me-gkolara-o-kostoulas-vid/",
+      "title": "«Κάρφωσε» την Κόβεντρι με γκολάρα ο Κωστούλας (vid)",
+      "normalized_title": "«ΚΑΡΦΩΣΕ» ΤΗΝ ΚΟΒΕΝΤΡΙ ΜΕ ΓΚΟΛΑΡΑ Ο ΚΩΣΤΟΥΛΑΣ (VID)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/world/se-kindyno-akomi-4-tis-pagkosmias-prosforas-petrelaiou-agonas-na-apokatastathei-o-agogos-sti-saoudiki-aravia/",
-        "https://www.in.gr/2026/09/13/go-fun/fizz/kaiti-garmpi-nosiri-anthropofagia-aixmiri-apantisi-gia-ti-synaylia-tou-remou-kai-tin-prodosia-ston-mazonaki/",
-        "https://www.in.gr/2026/09/13/world/synagermos-sti-lithouania-ekleise-to-aerodromio-tou-vilnious-to-nato-apogeiose-toulaxiston-ena-maxitiko/",
-        "https://www.in.gr/matchcenter/5881168/"
+        "https://www.in.gr/2026/09/13/sports/football/karfose-tin-koventri-me-gkolara-o-kostoulas-vid/",
+        "https://www.in.gr/2026/09/13/sports/on-field/o-arteta-exei-ftiaksei-mia-anikiti-mixani/"
       ],
-      "seen_at_utc": "2026-09-13T13:51:05.726844+00:00"
+      "seen_at_utc": "2026-09-13T14:17:05.462300+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T13:51:05.726980+00:00"
+  "updated_at_utc": "2026-09-13T14:17:05.462421+00:00"
 }
