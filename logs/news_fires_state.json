@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564454036/tesseris-prothypoyrgoi-sto-mati-toy-kyklona/",
-      "title": "Τέσσερις πρωθυπουργοί στο «μάτι του κυκλώνα»",
-      "normalized_title": "ΤΕΣΣΕΡΙΣ ΠΡΩΘΥΠΟΥΡΓΟΙ ΣΤΟ «ΜΑΤΙ ΤΟΥ ΚΥΚΛΩΝΑ»",
+      "url": "https://www.kathimerini.gr/k/gastronomos/564456148/kolokythia-sto-tigani-me-staka-kai-dyosmo/",
+      "title": "Κολοκύθια στο τηγάνι με στάκα και δυόσμο",
+      "normalized_title": "ΚΟΛΟΚΥΘΙΑ ΣΤΟ ΤΗΓΑΝΙ ΜΕ ΣΤΑΚΑ ΚΑΙ ΔΥΟΣΜΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564454036/tesseris-prothypoyrgoi-sto-mati-toy-kyklona/",
-        "https://www.kathimerini.gr/life/science/564456142/sfakia-ereyna-sto-spilaiovarathro-ton-sternon/",
-        "https://www.kathimerini.gr/economy/international/564456139/s-aravia-stereyoyn-oi-exagoges-petrelaioy-oso-menei-kleistos-o-agogos-pros-tin-erythra-thalassa/"
+        "https://www.kathimerini.gr/k/gastronomos/564456148/kolokythia-sto-tigani-me-staka-kai-dyosmo/"
       ],
-      "seen_at_utc": "2026-09-13T14:17:05.462268+00:00"
+      "seen_at_utc": "2026-09-13T14:29:59.252151+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1259,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878152/aproopto-sti-naupaktia-autokinito-katelixe-sti-thalassa-epiheirisi-gia-tin-anasursi-tou-video/?utm_source=rss",
-      "title": "Απρόοπτο στη Ναυπακτία, αυτοκίνητο κατέληξε στη θάλασσα, επιχείρηση για την ανάσυρσή του, βίντεο",
-      "normalized_title": "ΑΠΡΟΟΠΤΟ ΣΤΗ ΝΑΥΠΑΚΤΙΑ, ΑΥΤΟΚΙΝΗΤΟ ΚΑΤΕΛΗΞΕ ΣΤΗ ΘΑΛΑΣΣΑ, ΕΠΙΧΕΙΡΗΣΗ ΓΙΑ ΤΗΝ ΑΝΑΣΥΡΣΗ ΤΟΥ, ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1878153/simera-stis-1930-i-laiki-agrupnia-sti-soro-tou-giorgou-mazonaki-sti-nikaia/?utm_source=rss",
+      "title": "Ο Γιώργος Μαζωνάκης επιστρέφει στην «παλιά του γειτονιά»: Δείτε live εικόνα από το λαϊκό προσκύνημα στη Νίκαια",
+      "normalized_title": "Ο ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ ΕΠΙΣΤΡΕΦΕΙ ΣΤΗΝ «ΠΑΛΙΑ ΤΟΥ ΓΕΙΤΟΝΙΑ»: ΔΕΙΤΕ LIVE ΕΙΚΟΝΑ ΑΠΟ ΤΟ ΛΑΙΚΟ ΠΡΟΣΚΥΝΗΜΑ ΣΤΗ ΝΙΚΑΙΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878152/aproopto-sti-naupaktia-autokinito-katelixe-sti-thalassa-epiheirisi-gia-tin-anasursi-tou-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878150/nekri-65hroni-stin-paralia-klima-stin-aigina-louomenoi-tis-ekanan-karpa-epi-50-lepta/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878153/simera-stis-1930-i-laiki-agrupnia-sti-soro-tou-giorgou-mazonaki-sti-nikaia/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T14:17:05.462361+00:00"
+      "seen_at_utc": "2026-09-13T14:29:59.252283+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466120/enas-nekros-se-trohaio-sto-koropi-sfodri-proskroysi-ohimatos-se-vraho/",
-      "title": "Νεκρός 43χρονος σε τροχαίο στο Κορωπί – Σφοδρή πρόσκρουση οχήματος σε βράχο",
-      "normalized_title": "ΝΕΚΡΟΣ 43ΧΡΟΝΟΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΟ ΚΟΡΩΠΙ – ΣΦΟΔΡΗ ΠΡΟΣΚΡΟΥΣΗ ΟΧΗΜΑΤΟΣ ΣΕ ΒΡΑΧΟ",
+      "url": "https://www.efsyn.gr/politiki/1466123/marinakis-kata-androylaki-gia-ti-synenteyxi-typoy-xehase-na-mas-pei-poios-tha-plirosei-ton-logariasmo/",
+      "title": "Μαρινάκης κατά Ανδρουλάκη για τη συνέντευξη Τύπου: «”Ξέχασε” να μας πει ποιος θα πληρώσει τον λογαριασμό»",
+      "normalized_title": "ΜΑΡΙΝΑΚΗΣ ΚΑΤΑ ΑΝΔΡΟΥΛΑΚΗ ΓΙΑ ΤΗ ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ: «”ΞΕΧΑΣΕ” ΝΑ ΜΑΣ ΠΕΙ ΠΟΙΟΣ ΘΑ ΠΛΗΡΩΣΕΙ ΤΟΝ ΛΟΓΑΡΙΑΣΜΟ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466120/enas-nekros-se-trohaio-sto-koropi-sfodri-proskroysi-ohimatos-se-vraho/",
-        "https://www.efsyn.gr/ellada/1466117/aigina-gynaika-pethane-se-paralia-aytoptes-martyres-anaferoyn-megali-kathysterisi-toy-asthenoforoy/"
+        "https://www.efsyn.gr/politiki/1466123/marinakis-kata-androylaki-gia-ti-synenteyxi-typoy-xehase-na-mas-pei-poios-tha-plirosei-ton-logariasmo/"
       ],
-      "seen_at_utc": "2026-09-13T14:17:05.462333+00:00"
+      "seen_at_utc": "2026-09-13T14:29:59.252254+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/sports/football/karfose-tin-koventri-me-gkolara-o-kostoulas-vid/",
-      "title": "«Κάρφωσε» την Κόβεντρι με γκολάρα ο Κωστούλας (vid)",
-      "normalized_title": "«ΚΑΡΦΩΣΕ» ΤΗΝ ΚΟΒΕΝΤΡΙ ΜΕ ΓΚΟΛΑΡΑ Ο ΚΩΣΤΟΥΛΑΣ (VID)",
+      "url": "https://www.in.gr/2026/09/13/world/i-apantisi-poutin-gia-synantisi-me-zelenski-stin-g20-apokleietai-alla-tha-paei-antiprosopeia/",
+      "title": "Η απάντηση Πούτιν για συνάντηση με Ζελένσκι στην G20: «Αποκλείεται» – Αλλά θα πάει αντιπροσωπεία",
+      "normalized_title": "Η ΑΠΑΝΤΗΣΗ ΠΟΥΤΙΝ ΓΙΑ ΣΥΝΑΝΤΗΣΗ ΜΕ ΖΕΛΕΝΣΚΙ ΣΤΗΝ G20: «ΑΠΟΚΛΕΙΕΤΑΙ» – ΑΛΛΑ ΘΑ ΠΑΕΙ ΑΝΤΙΠΡΟΣΩΠΕΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/sports/football/karfose-tin-koventri-me-gkolara-o-kostoulas-vid/",
-        "https://www.in.gr/2026/09/13/sports/on-field/o-arteta-exei-ftiaksei-mia-anikiti-mixani/"
+        "https://www.in.gr/2026/09/13/world/i-apantisi-poutin-gia-synantisi-me-zelenski-stin-g20-apokleietai-alla-tha-paei-antiprosopeia/",
+        "https://www.in.gr/2026/09/13/economy/agro-in/pos-allazei-o-agrotis-apo-to-ypsilo-kostos-kai-to-ayksimeno-risko/",
+        "https://www.in.gr/2026/09/13/greece/aytokinito-epese-sti-thalassa-sti-naypaktia-epixeirisi-gia-tin-anasyrsi-tou/",
+        "https://www.in.gr/2026/09/13/sports/basketball/nea-senaria-gia-mirotits-ti-eipe-o-proedros-tis-mpountoutsnost-gia-ton-mayrovounio-forgouornt/",
+        "https://www.in.gr/matchcenter/5868054/"
       ],
-      "seen_at_utc": "2026-09-13T14:17:05.462300+00:00"
+      "seen_at_utc": "2026-09-13T14:29:59.252203+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T14:17:05.462421+00:00"
+  "updated_at_utc": "2026-09-13T14:29:59.252350+00:00"
 }
