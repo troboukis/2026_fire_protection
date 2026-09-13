@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/government/564453595/zitoyn-allagi-toy-ekpaideytikoy-monteloy-dyo-voyleytes-tis-n-d/",
-      "title": "Βουλευτές της ΝΔ ζητούν με άρθρο στην «Κ» αλλαγή του εκπαιδευτικού μοντέλου",
-      "normalized_title": "ΒΟΥΛΕΥΤΕΣ ΤΗΣ ΝΔ ΖΗΤΟΥΝ ΜΕ ΑΡΘΡΟ ΣΤΗΝ «Κ» ΑΛΛΑΓΗ ΤΟΥ ΕΚΠΑΙΔΕΥΤΙΚΟΥ ΜΟΝΤΕΛΟΥ",
+      "url": "https://www.kathimerini.gr/athletics/564456304/pagkosmio-kypello-mpasket-gynaikon-pagkosmies-protathlitries-oi-ipa/",
+      "title": "Παγκόσμιο Κύπελλο Μπάσκετ Γυναικών: Παγκόσμιες πρωταθλήτριες οι ΗΠΑ",
+      "normalized_title": "ΠΑΓΚΟΣΜΙΟ ΚΥΠΕΛΛΟ ΜΠΑΣΚΕΤ ΓΥΝΑΙΚΩΝ: ΠΑΓΚΟΣΜΙΕΣ ΠΡΩΤΑΘΛΗΤΡΙΕΣ ΟΙ ΗΠΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/government/564453595/zitoyn-allagi-toy-ekpaideytikoy-monteloy-dyo-voyleytes-tis-n-d/"
+        "https://www.kathimerini.gr/athletics/564456304/pagkosmio-kypello-mpasket-gynaikon-pagkosmies-protathlitries-oi-ipa/"
       ],
-      "seen_at_utc": "2026-09-13T20:30:00.344188+00:00"
+      "seen_at_utc": "2026-09-13T20:51:18.943365+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,35 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878243/sunelifthi-51hronos-ston-agio-padeleimona-gia-diakinisi-narkotikon/?utm_source=rss",
-      "title": "Συνελήφθη 51χρονος στον Άγιο Παντελεήμονα για διακίνηση ναρκωτικών",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 51ΧΡΟΝΟΣ ΣΤΟΝ ΑΓΙΟ ΠΑΝΤΕΛΕΗΜΟΝΑ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1878248/fotia-tora-sti-dodoni-ioanninon-amesi-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+      "title": "Φωτιά σε δασική έκταση στην Κάτω Λίππα Ιωαννίνων, άμεση κινητοποίηση της Πυροσβεστικής",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΚΑΤΩ ΛΙΠΠΑ ΙΩΑΝΝΙΝΩΝ, ΑΜΕΣΗ ΚΙΝΗΤΟΠΟΙΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878243/sunelifthi-51hronos-ston-agio-padeleimona-gia-diakinisi-narkotikon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878239/nauagosostis-esose-paidi-pou-parasurthike-apo-to-reuma-sto-irakleio/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878248/fotia-tora-sti-dodoni-ioanninon-amesi-kinitopoiisi-tis-purosvestikis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878245/rakos-i-adzela-dimitriou-sti-laiki-agrupnia-gia-ton-giorgo-mazonaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T20:17:10.210267+00:00"
+      "seen_at_utc": "2026-09-13T20:51:18.943482+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1466247/ekloges-sti-soyidia-niki-toy-kentroaristeroy-mplok-vlepoyn-ta-exit-polls-ptosi-tis-akrodexias/",
-      "title": "Εκλογές στη Σουηδία: Νίκη του Κεντροαριστερού μπλοκ «βλέπουν» τα exit polls – Πτώση της ακροδεξιάς",
-      "normalized_title": "ΕΚΛΟΓΕΣ ΣΤΗ ΣΟΥΗΔΙΑ: ΝΙΚΗ ΤΟΥ ΚΕΝΤΡΟΑΡΙΣΤΕΡΟΥ ΜΠΛΟΚ «ΒΛΕΠΟΥΝ» ΤΑ EXIT POLLS – ΠΤΩΣΗ ΤΗΣ ΑΚΡΟΔΕΞΙΑΣ",
+      "url": "https://www.efsyn.gr/ellada/1466253/o-rizai-synergos-toy-palaiokosta-eneplaki-se-pyrovolismoys-eno-itan-se-adeia-apo-tis-fylakes/",
+      "title": "Ο Ριζάι, συνεργός του Παλαιοκώστα, ενεπλάκη σε πυροβολισμούς ενώ ήταν σε άδεια από τις φυλακές",
+      "normalized_title": "Ο ΡΙΖΑΙ, ΣΥΝΕΡΓΟΣ ΤΟΥ ΠΑΛΑΙΟΚΩΣΤΑ, ΕΝΕΠΛΑΚΗ ΣΕ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΕΝΩ ΗΤΑΝ ΣΕ ΑΔΕΙΑ ΑΠΟ ΤΙΣ ΦΥΛΑΚΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1466247/ekloges-sti-soyidia-niki-toy-kentroaristeroy-mplok-vlepoyn-ta-exit-polls-ptosi-tis-akrodexias/",
-        "https://www.efsyn.gr/ellada/1466219/giorgos-mazonakis-i-nikaia-xenyhta-tragoydontas-gia-ton-agapimeno-tis-kallitehni-eikones-vinteo/"
+        "https://www.efsyn.gr/ellada/1466253/o-rizai-synergos-toy-palaiokosta-eneplaki-se-pyrovolismoys-eno-itan-se-adeia-apo-tis-fylakes/",
+        "https://www.efsyn.gr/ellada/1466251/synenteyxi-typoy-apo-ta-prosfygika-alexandras-tha-milisei-o-aristotelis-hantzis/"
       ],
-      "seen_at_utc": "2026-09-13T20:17:10.210236+00:00"
+      "seen_at_utc": "2026-09-13T20:51:18.943454+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/sports/football/panathinaikos-panaitolikos-3-0-o-ounai-efere-ayra-kai-koryfi-sto-oaka/",
-      "title": "Ο Ουναΐ έφερε αύρα και κορυφή στον Παναθηναϊκό (3-0)",
-      "normalized_title": "Ο ΟΥΝΑΙ ΕΦΕΡΕ ΑΥΡΑ ΚΑΙ ΚΟΡΥΦΗ ΣΤΟΝ ΠΑΝΑΘΗΝΑΙΚΟ (3-0)",
+      "url": "https://www.in.gr/2026/09/13/sports/football/ola-ta-gkol-tis-4is-agonistikis-tis-super-league-vids/",
+      "title": "Όλα τα γκολ της 4ης αγωνιστικής της Super League (vids)",
+      "normalized_title": "ΟΛΑ ΤΑ ΓΚΟΛ ΤΗΣ 4ΗΣ ΑΓΩΝΙΣΤΙΚΗΣ ΤΗΣ SUPER LEAGUE (VIDS)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/sports/football/panathinaikos-panaitolikos-3-0-o-ounai-efere-ayra-kai-koryfi-sto-oaka/",
-        "https://www.in.gr/2026/09/13/world/poion-rolo-kalountai-na-paiksoun-oi-epixeiriseis-stin-epoxi-tis-dyspistias/"
+        "https://www.in.gr/2026/09/13/sports/football/ola-ta-gkol-tis-4is-agonistikis-tis-super-league-vids/",
+        "https://www.in.gr/2026/09/13/world/polla-logia-liges-prakseis-oi-eyropaioi-theloun-mia-enomeni-eyropi-alla-i-ee-exei-xasei-tin-aksiopistia-tis/",
+        "https://www.in.gr/2026/09/13/sports/football/super-league-i-vathmologia-meta-tin-oloklirosi-tis-4is-agonistikis-pic/",
+        "https://www.in.gr/2026/09/13/life/xrysi-selin-ntion-to-colpo-grosso-tou-1-dis-kai-to-oikonomiko-apotypoma-tis-neas-epelasis/"
       ],
-      "seen_at_utc": "2026-09-13T20:30:00.344223+00:00"
+      "seen_at_utc": "2026-09-13T20:51:18.943420+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T20:30:00.344299+00:00"
+  "updated_at_utc": "2026-09-13T20:51:18.943593+00:00"
 }
