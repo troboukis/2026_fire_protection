@@ -1,15 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/564455980/live-h-synenteyxi-typoy-toy-nikoy-androylaki-sti-deth/",
-      "title": "Live: H συνέντευξη Τύπου του Νίκου Ανδρουλάκη στη ΔΕΘ",
-      "normalized_title": "LIVE: H ΣΥΝΕΝΤΕΥΞΗ ΤΥΠΟΥ ΤΟΥ ΝΙΚΟΥ ΑΝΔΡΟΥΛΑΚΗ ΣΤΗ ΔΕΘ",
+      "url": "https://www.kathimerini.gr/society/564453781/dimitris-papoylias-1939-2026-o-semnos-technopolitikos-toy-eksygchronismoy/",
+      "title": "Δημήτρης Παπούλιας (1939-2026): Ο σεμνός τεχνοπολιτικός του εκσυγχρονισμού",
+      "normalized_title": "ΔΗΜΗΤΡΗΣ ΠΑΠΟΥΛΙΑΣ (1939-2026): Ο ΣΕΜΝΟΣ ΤΕΧΝΟΠΟΛΙΤΙΚΟΣ ΤΟΥ ΕΚΣΥΓΧΡΟΝΙΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/564455980/live-h-synenteyxi-typoy-toy-nikoy-androylaki-sti-deth/",
-        "https://www.kathimerini.gr/politics/564456010/mitsotakis-apo-kastellorizo-kinitra-egkatastasis-5-000-eyro-etisios-den-dechomaste-apeiles-to-minyma-pros-agkyra/",
-        "https://www.kathimerini.gr/visual/infographics/564454003/meiothikan-ta-airbnb-sto-kentro-tis-athinas/"
+        "https://www.kathimerini.gr/society/564453781/dimitris-papoylias-1939-2026-o-semnos-technopolitikos-toy-eksygchronismoy/"
       ],
-      "seen_at_utc": "2026-09-13T09:32:04.225904+00:00"
+      "seen_at_utc": "2026-09-13T09:51:07.222807+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,44 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878052/nees-kataggelies-stin-upothesi-mazonaki-i-ioanna-gaka-eipe-sti-suzugo-mou-oti-eihe-karkino-en/?utm_source=rss",
-      "title": "Νέες καταγγελίες στην υπόθεση Μαζωνάκη: «Η Ιωάννα Γάκα είπε στη σύζυγό μου ότι είχε καρκίνο, ενώ δεν είχε», στον ανακριτή αύριο οι δύο γιατροί",
-      "normalized_title": "ΝΕΕΣ ΚΑΤΑΓΓΕΛΙΕΣ ΣΤΗΝ ΥΠΟΘΕΣΗ ΜΑΖΩΝΑΚΗ: «Η ΙΩΑΝΝΑ ΓΑΚΑ ΕΙΠΕ ΣΤΗ ΣΥΖΥΓΟ ΜΟΥ ΟΤΙ ΕΙΧΕ ΚΑΡΚΙΝΟ, ΕΝΩ ΔΕΝ ΕΙΧΕ», ΣΤΟΝ ΑΝΑΚΡΙΤΗ ΑΥΡΙΟ ΟΙ ΔΥΟ ΓΙΑΤΡΟΙ",
+      "url": "https://www.protothema.gr/greece/article/1878061/zestos-septemvrios-pio-vroheros-oktovrios-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss",
+      "title": "Ζεστός Σεπτέμβριος, πιο βροχερός Οκτώβριος: Η πρόγνωση Τσατραφύλλια στο protothema",
+      "normalized_title": "ΖΕΣΤΟΣ ΣΕΠΤΕΜΒΡΙΟΣ, ΠΙΟ ΒΡΟΧΕΡΟΣ ΟΚΤΩΒΡΙΟΣ: Η ΠΡΟΓΝΩΣΗ ΤΣΑΤΡΑΦΥΛΛΙΑ ΣΤΟ PROTOTHEMA",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878052/nees-kataggelies-stin-upothesi-mazonaki-i-ioanna-gaka-eipe-sti-suzugo-mou-oti-eihe-karkino-en/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878061/zestos-septemvrios-pio-vroheros-oktovrios-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T09:32:04.226007+00:00"
+      "seen_at_utc": "2026-09-13T09:51:07.222889+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1465716/i-meta-ti-deth-epohi-gia-ton-mitsotaki-psyhroloysia-kai-sto-vathos-samaras/",
-      "title": "Η μετά τη ΔΕΘ «εποχή» για τον Μητσοτάκη: Ψυχρολουσία και στο βάθος… Σαμαράς",
-      "normalized_title": "Η ΜΕΤΑ ΤΗ ΔΕΘ «ΕΠΟΧΗ» ΓΙΑ ΤΟΝ ΜΗΤΣΟΤΑΚΗ: ΨΥΧΡΟΛΟΥΣΙΑ ΚΑΙ ΣΤΟ ΒΑΘΟΣ… ΣΑΜΑΡΑΣ",
+      "url": "https://www.efsyn.gr/kosmos/1465982/cnn-gia-erythra-thalassa-epiko-fiasko-gia-ipa-kai-saoydiki-aravia-to-paraskinio-kai-to-blame-game/",
+      "title": "CNN για Ερυθρά Θάλασσα: Επικό φιάσκο για ΗΠΑ και Σαουδική Αραβία – Το παρασκήνιο και το blame game",
+      "normalized_title": "CNN ΓΙΑ ΕΡΥΘΡΑ ΘΑΛΑΣΣΑ: ΕΠΙΚΟ ΦΙΑΣΚΟ ΓΙΑ ΗΠΑ ΚΑΙ ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ – ΤΟ ΠΑΡΑΣΚΗΝΙΟ ΚΑΙ ΤΟ BLAME GAME",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1465716/i-meta-ti-deth-epohi-gia-ton-mitsotaki-psyhroloysia-kai-sto-vathos-samaras/",
-        "https://www.efsyn.gr/politiki/1466024/mitsotakis-apo-kastelorizo-pros-toyrkia-den-apeiloyme-kanenan-alla-den-dehomaste-apeiles-i-ypodeixeis-apo-kanenan/",
-        "https://www.efsyn.gr/politiki/1465997/live-i-synenteyxi-typoy-toy-nikoy-androylaki-apo-ti-deth/",
-        "https://www.efsyn.gr/tehnes/1466014/i-tehni-toy-xyloy-treis-millennials-poy-kratoyn-zontani-tin-politistiki-mas-klironomia-eikones-vinteo/",
-        "https://www.efsyn.gr/politiki/1466012/o-syriza-apanta-ston-mitsotaki-i-epanalipsi-den-allazei-tin-pragmatikotita/"
+        "https://www.efsyn.gr/kosmos/1465982/cnn-gia-erythra-thalassa-epiko-fiasko-gia-ipa-kai-saoydiki-aravia-to-paraskinio-kai-to-blame-game/",
+        "https://www.efsyn.gr/stiles/1465693/o-efialtis-ginetai-kanonikotita/",
+        "https://www.efsyn.gr/podcast/anagoges-koyventes-apo-ton-mazonaki-ston-mitsotaki/"
       ],
-      "seen_at_utc": "2026-09-13T09:32:04.225971+00:00"
+      "seen_at_utc": "2026-09-13T09:51:07.222872+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/sports/basketball/o-etore-mesina-epistrefei-sto-nba-alla-oxi-os-proponitis-pic/",
-      "title": "Ο Έτορε Μεσίνα επιστρέφει στο NBA αλλά όχι ως προπονητής (pic)",
-      "normalized_title": "Ο ΕΤΟΡΕ ΜΕΣΙΝΑ ΕΠΙΣΤΡΕΦΕΙ ΣΤΟ NBA ΑΛΛΑ ΟΧΙ ΩΣ ΠΡΟΠΟΝΗΤΗΣ (PIC)",
+      "url": "https://www.in.gr/2026/09/13/politics/sfodri-antiparathesi-gia-to-epidoma-anergias-kryfi-atzenta-tis-kyvernisis-kataggellei-i-antipoliteysi/",
+      "title": "Σφοδρή αντιπαράθεση για το επίδομα ανεργίας – Κρυφή ατζέντα της κυβέρνησης καταγγέλλει η αντιπολίτευση",
+      "normalized_title": "ΣΦΟΔΡΗ ΑΝΤΙΠΑΡΑΘΕΣΗ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ – ΚΡΥΦΗ ΑΤΖΕΝΤΑ ΤΗΣ ΚΥΒΕΡΝΗΣΗΣ ΚΑΤΑΓΓΕΛΛΕΙ Η ΑΝΤΙΠΟΛΙΤΕΥΣΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/sports/basketball/o-etore-mesina-epistrefei-sto-nba-alla-oxi-os-proponitis-pic/",
-        "https://www.in.gr/2026/09/13/politics/epikairotita/syriza-kyrie-mitsotaki-i-epanalipsi-den-allazei-tin-pragmatikotita-oute-to-lege-lege-kati-tha-meinei/",
-        "https://www.in.gr/2026/09/13/life/diakopes/ntoli-parton-to-aerodromio-tou-nasvil-tha-parei-to-onoma-tis/",
-        "https://www.in.gr/2026/09/13/greece/fotia-se-agrotodasiki-ektasi-stis-serres-sikothike-ena-elikoptero/",
-        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/deite-live-ti-synenteyksi-typou-tou-nikou-androulaki-sti-deth/",
-        "https://www.in.gr/2026/09/13/sports/basketball/i-parakamera-tis-kae-olympiakos-apo-ti-filiki-niki-epi-tou-erythrou-astera-vid/",
-        "https://www.in.gr/2026/09/13/greece/pethane-o-ithopoios-xristos-fragkos-ayrio-i-kideia-tou/",
-        "https://www.in.gr/2026/09/13/greece/xalkidiki-sovaro-troxaio-me-ektropi-ix-dyo-traymaties-o-enas-sti-meth/",
-        "https://www.in.gr/2026/09/13/go-fun/fizz/efaga-mia-epiki-glistra-i-kaiti-garmpi-epese-sti-synaylia-tou-antoni-remou/"
+        "https://www.in.gr/2026/09/13/politics/sfodri-antiparathesi-gia-to-epidoma-anergias-kryfi-atzenta-tis-kyvernisis-kataggellei-i-antipoliteysi/",
+        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/androulakis-stoxos-tou-pasok-i-proti-thesi-aksiaki-i-apofasi-mas-na-min-synergasoume-me-ti-nd/"
       ],
-      "seen_at_utc": "2026-09-13T09:32:04.225946+00:00"
+      "seen_at_utc": "2026-09-13T09:51:07.222844+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T09:32:04.226081+00:00"
+  "updated_at_utc": "2026-09-13T09:51:07.222956+00:00"
 }
