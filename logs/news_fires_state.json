@@ -1,15 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564456166/pyrgos-chtypisan-me-ropala-36chroni-kai-ton-patera-tis-anazitoyntai-dyo-26chronoi/",
-      "title": "Πύργος: Χτύπησαν με ρόπαλα 36χρονη και τον πατέρα της – Αναζητούνται δύο 26χρονοι",
-      "normalized_title": "ΠΥΡΓΟΣ: ΧΤΥΠΗΣΑΝ ΜΕ ΡΟΠΑΛΑ 36ΧΡΟΝΗ ΚΑΙ ΤΟΝ ΠΑΤΕΡΑ ΤΗΣ – ΑΝΑΖΗΤΟΥΝΤΑΙ ΔΥΟ 26ΧΡΟΝΟΙ",
+      "url": "https://www.kathimerini.gr/politics/foreign-policy/564454363/tzon-tzortz-stin-k-perimename-dyo-dekaeties-na-anoixei-xana-to-proxeneio/",
+      "title": "Τζον Τζορτζ στην «Κ»: Περιμέναμε δύο δεκαετίες να ανοίξει ξανά το προξενείο",
+      "normalized_title": "ΤΖΟΝ ΤΖΟΡΤΖ ΣΤΗΝ «Κ»: ΠΕΡΙΜΕΝΑΜΕ ΔΥΟ ΔΕΚΑΕΤΙΕΣ ΝΑ ΑΝΟΙΞΕΙ ΞΑΝΑ ΤΟ ΠΡΟΞΕΝΕΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564456166/pyrgos-chtypisan-me-ropala-36chroni-kai-ton-patera-tis-anazitoyntai-dyo-26chronoi/",
-        "https://www.kathimerini.gr/world/564454441/poy-paei-i-aristera-stin-eyropi/",
-        "https://www.kathimerini.gr/world/564456157/tramp-i-timi-tis-venzinis-tha-katrakylisei-opos-enas-vrachos/"
+        "https://www.kathimerini.gr/politics/foreign-policy/564454363/tzon-tzortz-stin-k-perimename-dyo-dekaeties-na-anoixei-xana-to-proxeneio/",
+        "https://www.kathimerini.gr/society/564456178/se-laiko-proskynima-i-soros-toy-giorgoy-mazonaki-plithos-kosmoy-sti-nikaia/"
       ],
-      "seen_at_utc": "2026-09-13T14:51:12.976543+00:00"
+      "seen_at_utc": "2026-09-13T15:17:02.331726+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1260,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878163/kleista-ta-farmakeia-tis-attikis-aurio-deutera-pos-tha-exupiretithoun-oi-polites/?utm_source=rss",
-      "title": "Κλειστά τα φαρμακεία της Αττικής αύριο Δευτέρα, πώς θα εξυπηρετηθούν οι πολίτες",
-      "normalized_title": "ΚΛΕΙΣΤΑ ΤΑ ΦΑΡΜΑΚΕΙΑ ΤΗΣ ΑΤΤΙΚΗΣ ΑΥΡΙΟ ΔΕΥΤΕΡΑ, ΠΩΣ ΘΑ ΕΞΥΠΗΡΕΤΗΘΟΥΝ ΟΙ ΠΟΛΙΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1878173/lesvos-sunelifthi-allodapos-pou-odigouse-fortigo-upo-tin-epireia-alkool/?utm_source=rss",
+      "title": "Λέσβος: Συνελήφθη αλλοδαπός που οδηγούσε φορτηγό υπό την επήρεια αλκοόλ",
+      "normalized_title": "ΛΕΣΒΟΣ: ΣΥΝΕΛΗΦΘΗ ΑΛΛΟΔΑΠΟΣ ΠΟΥ ΟΔΗΓΟΥΣΕ ΦΟΡΤΗΓΟ ΥΠΟ ΤΗΝ ΕΠΗΡΕΙΑ ΑΛΚΟΟΛ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878163/kleista-ta-farmakeia-tis-attikis-aurio-deutera-pos-tha-exupiretithoun-oi-polites/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878162/limeniko-3391-sullipseis-metanaston-gia-paranomi-eisodo-stin-hora-ton-augousto/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878173/lesvos-sunelifthi-allodapos-pou-odigouse-fortigo-upo-tin-epireia-alkool/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878166/dr-kalliopi-kalaitzi-arketa-me-to-hudaio-tsouvaliasma-theloun-na-plixoun-emena-kai-ton-suzugo-mou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T14:51:12.976677+00:00"
+      "seen_at_utc": "2026-09-13T15:17:02.331805+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466125/giorgos-mazonakis-se-anoikto-kyklo-telika-i-kideia-plithos-kosmoy-sti-laiki-agrypnia-eikones-vinteo/",
-      "title": "Γιώργος Μαζωνάκης: Σε ανοικτό κύκλο τελικά η κηδεία – Πλήθος κόσμου στη λαϊκή αγρυπνία [εικόνες – βίντεο]",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΣΕ ΑΝΟΙΚΤΟ ΚΥΚΛΟ ΤΕΛΙΚΑ Η ΚΗΔΕΙΑ – ΠΛΗΘΟΣ ΚΟΣΜΟΥ ΣΤΗ ΛΑΙΚΗ ΑΓΡΥΠΝΙΑ [ΕΙΚΟΝΕΣ – ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1466137/tsoykalas-se-marinaki-oso-kyvernate-oi-polites-plironoyn-to-logariasmo-i-antistrofi-metrisi-arhise/",
+      "title": "Τσουκαλάς σε Μαρινάκη: «Όσο κυβερνάτε οι πολίτες πληρώνουν το λογαριασμό – Η αντίστροφη μέτρηση άρχισε»",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΣΕ ΜΑΡΙΝΑΚΗ: «ΟΣΟ ΚΥΒΕΡΝΑΤΕ ΟΙ ΠΟΛΙΤΕΣ ΠΛΗΡΩΝΟΥΝ ΤΟ ΛΟΓΑΡΙΑΣΜΟ – Η ΑΝΤΙΣΤΡΟΦΗ ΜΕΤΡΗΣΗ ΑΡΧΙΣΕ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466125/giorgos-mazonakis-se-anoikto-kyklo-telika-i-kideia-plithos-kosmoy-sti-laiki-agrypnia-eikones-vinteo/"
+        "https://www.efsyn.gr/politiki/1466137/tsoykalas-se-marinaki-oso-kyvernate-oi-polites-plironoyn-to-logariasmo-i-antistrofi-metrisi-arhise/"
       ],
-      "seen_at_utc": "2026-09-13T14:51:12.976646+00:00"
+      "seen_at_utc": "2026-09-13T15:17:02.331789+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/politics/politiki-grammateia/papandreou-kata-mitsotaki-stis-pio-krisimes-stigmes-gia-ton-ellinismo-itan-ekkofantika-apon/",
-      "title": "Παπανδρέου κατά Μητσοτάκη: Στις πιο κρίσιμες στιγμές για τον ελληνισμό ήταν εκκωφαντικά απών",
-      "normalized_title": "ΠΑΠΑΝΔΡΕΟΥ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: ΣΤΙΣ ΠΙΟ ΚΡΙΣΙΜΕΣ ΣΤΙΓΜΕΣ ΓΙΑ ΤΟΝ ΕΛΛΗΝΙΣΜΟ ΗΤΑΝ ΕΚΚΩΦΑΝΤΙΚΑ ΑΠΩΝ",
+      "url": "https://www.in.gr/2026/09/13/greece/g-mazonakis-oi-katatheseis-pou-pistopoioun-oti-to-iatreio-katharistike-prin-mpei-i-astynomia/",
+      "title": "Γ. Μαζωνάκης: Οι καταθέσεις που πιστοποιούν ότι το ιατρείο καθαρίστηκε πριν μπει η αστυνομία",
+      "normalized_title": "Γ. ΜΑΖΩΝΑΚΗΣ: ΟΙ ΚΑΤΑΘΕΣΕΙΣ ΠΟΥ ΠΙΣΤΟΠΟΙΟΥΝ ΟΤΙ ΤΟ ΙΑΤΡΕΙΟ ΚΑΘΑΡΙΣΤΗΚΕ ΠΡΙΝ ΜΠΕΙ Η ΑΣΤΥΝΟΜΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/papandreou-kata-mitsotaki-stis-pio-krisimes-stigmes-gia-ton-ellinismo-itan-ekkofantika-apon/",
-        "https://www.in.gr/2026/09/13/sports/basketball/live-olympiakos-makampi-tel-aviv-10/",
-        "https://www.in.gr/2026/09/13/go-fun/fizz/giati-o-prigkipas-ouiliam-tha-apousiazei-sta-genethlia-tou-adelfou-tou-xari/",
-        "https://www.in.gr/2026/09/13/sports/football/zouglis-kai-mpilal-fernoun-toumpa-to-mats-ston-volo-2-1-o-olympiakos-v-vids/"
+        "https://www.in.gr/2026/09/13/greece/g-mazonakis-oi-katatheseis-pou-pistopoioun-oti-to-iatreio-katharistike-prin-mpei-i-astynomia/",
+        "https://www.in.gr/2026/09/13/world/foul-tis-epanalipsis-apo-ton-tramp-idies-diloseis-gia-tin-irlandia-kai-gia-to-telos-tou-polemou-sto-iran/",
+        "https://www.in.gr/2026/09/13/sports/football/niki-volou-olympiakos-v-1-2-triponto-me-anatropi-gia-tous-erythroleykous/",
+        "https://www.in.gr/2026/09/13/world/pogkrom-kata-loatki-atomon-stin-tourkia-dekades-syllipseis-kai-efodoi-se-katoikies-kai-mpar/",
+        "https://www.in.gr/2026/09/13/sports/football/koventri-mpraiton-0-5-gkol-kai-gemati-emfanisi-apo-kostoula/",
+        "https://www.in.gr/matchcenter/5943248/",
+        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/marinakis-gia-androulaki-gyrise-ton-xrono-piso-stis-pseydaisthiseis-tou-lefta-yparxoun-me-aneksodes-yposxeseis-disekatommyrion/"
       ],
-      "seen_at_utc": "2026-09-13T14:51:12.976597+00:00"
+      "seen_at_utc": "2026-09-13T15:17:02.331761+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T14:51:12.976754+00:00"
+  "updated_at_utc": "2026-09-13T15:17:02.331864+00:00"
 }
