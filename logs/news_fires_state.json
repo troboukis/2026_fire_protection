@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/business/564454018/ta-ellinika-rompot-poy-theloyn-na-kataktisoyn-to-diastima/",
-      "title": "Τα ελληνικά ρομπότ που θέλουν να κατακτήσουν το Διάστημα",
-      "normalized_title": "ΤΑ ΕΛΛΗΝΙΚΑ ΡΟΜΠΟΤ ΠΟΥ ΘΕΛΟΥΝ ΝΑ ΚΑΤΑΚΤΗΣΟΥΝ ΤΟ ΔΙΑΣΤΗΜΑ",
+      "url": "https://www.kathimerini.gr/world/564454462/tzil-lepor-stin-k-ekchoroyme-stin-ai-tin-exoysia/",
+      "title": "Τζιλ Λεπόρ στην «Κ»: Εκχωρούμε στην ΑΙ την εξουσία",
+      "normalized_title": "ΤΖΙΛ ΛΕΠΟΡ ΣΤΗΝ «Κ»: ΕΚΧΩΡΟΥΜΕ ΣΤΗΝ ΑΙ ΤΗΝ ΕΞΟΥΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/business/564454018/ta-ellinika-rompot-poy-theloyn-na-kataktisoyn-to-diastima/"
+        "https://www.kathimerini.gr/world/564454462/tzil-lepor-stin-k-ekchoroyme-stin-ai-tin-exoysia/",
+        "https://www.kathimerini.gr/economy/564455953/epidoma-se-syntaxioychoys-orizontia-i-katavoli-apo-fetos-analytika-ta-posa/"
       ],
-      "seen_at_utc": "2026-09-13T06:51:08.283802+00:00"
+      "seen_at_utc": "2026-09-13T07:17:18.893968+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,27 +1270,29 @@
       "seen_at_utc": "2026-09-13T06:51:08.283963+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/epistimi/1465977/ai-oi-ishyroi-tis-tehnologias-symfonisan-prepei-na-epivradynthei-i-anaptyxi-tis-tehnitis-noimosynis/",
-      "title": "AI: Οι ισχυροί της τεχνολογίας συμφώνησαν – Πρέπει να επιβραδυνθεί η ανάπτυξη της Τεχνητής Νοημοσύνης",
-      "normalized_title": "AI: ΟΙ ΙΣΧΥΡΟΙ ΤΗΣ ΤΕΧΝΟΛΟΓΙΑΣ ΣΥΜΦΩΝΗΣΑΝ – ΠΡΕΠΕΙ ΝΑ ΕΠΙΒΡΑΔΥΝΘΕΙ Η ΑΝΑΠΤΥΞΗ ΤΗΣ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ",
+      "url": "https://www.efsyn.gr/epistimi/1465980/diethnis-meleti-me-elliniko-hroma-enas-stoys-pente-astheneis-me-karkino-kindyneyei-apo-thromvosi-to-8-apeileitai-me-emfragma-i-egkefaliko/",
+      "title": "Διεθνής μελέτη με ελληνικό χρώμα: Ένας στους πέντε ασθενείς με καρκίνο κινδυνεύει από θρόμβωση – Το 8% απειλείται με έμφραγμα ή εγκεφαλικό",
+      "normalized_title": "ΔΙΕΘΝΗΣ ΜΕΛΕΤΗ ΜΕ ΕΛΛΗΝΙΚΟ ΧΡΩΜΑ: ΕΝΑΣ ΣΤΟΥΣ ΠΕΝΤΕ ΑΣΘΕΝΕΙΣ ΜΕ ΚΑΡΚΙΝΟ ΚΙΝΔΥΝΕΥΕΙ ΑΠΟ ΘΡΟΜΒΩΣΗ – ΤΟ 8% ΑΠΕΙΛΕΙΤΑΙ ΜΕ ΕΜΦΡΑΓΜΑ Η ΕΓΚΕΦΑΛΙΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/epistimi/1465977/ai-oi-ishyroi-tis-tehnologias-symfonisan-prepei-na-epivradynthei-i-anaptyxi-tis-tehnitis-noimosynis/",
-        "https://www.efsyn.gr/nisides/1465658/dyo-horia-sto-anatoliko-pilio-me-oli-ti-galini-toy-aigaioy-se-mia-aperanti-paralia-kai-monopatia-se-katafyta-topia/",
-        "https://www.efsyn.gr/life/1465967/aproopto-gia-tin-kaiti-garmpi-sti-synaylia-toy-antoni-remoy-efaga-mia-epiki-glistra-vinteo/"
+        "https://www.efsyn.gr/epistimi/1465980/diethnis-meleti-me-elliniko-hroma-enas-stoys-pente-astheneis-me-karkino-kindyneyei-apo-thromvosi-to-8-apeileitai-me-emfragma-i-egkefaliko/"
       ],
-      "seen_at_utc": "2026-09-13T06:51:08.283930+00:00"
+      "seen_at_utc": "2026-09-13T07:17:18.894075+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/xoris-periousiaka-kai-eisodimatika-kritiria-to-epidoma-stous-syntaksiouxous/",
-      "title": "Χωρίς περιουσιακά και εισοδηματικά κριτήρια το επίδομα στους συνταξιούχους",
-      "normalized_title": "ΧΩΡΙΣ ΠΕΡΙΟΥΣΙΑΚΑ ΚΑΙ ΕΙΣΟΔΗΜΑΤΙΚΑ ΚΡΙΤΗΡΙΑ ΤΟ ΕΠΙΔΟΜΑ ΣΤΟΥΣ ΣΥΝΤΑΞΙΟΥΧΟΥΣ",
+      "url": "https://www.in.gr/2026/09/13/life/culture-live/i-politistiki-kai-symvoliki-aksia-tis-diasimotitas-to-top10-ton-akrivoteron-syllektikon-kommation/",
+      "title": "Η πολιτιστική και συμβολική αξία της διασημότητας - Το top10 των ακριβότερων συλλεκτικών κομματιών",
+      "normalized_title": "Η ΠΟΛΙΤΙΣΤΙΚΗ ΚΑΙ ΣΥΜΒΟΛΙΚΗ ΑΞΙΑ ΤΗΣ ΔΙΑΣΗΜΟΤΗΤΑΣ - ΤΟ TOP10 ΤΩΝ ΑΚΡΙΒΟΤΕΡΩΝ ΣΥΛΛΕΚΤΙΚΩΝ ΚΟΜΜΑΤΙΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/xoris-periousiaka-kai-eisodimatika-kritiria-to-epidoma-stous-syntaksiouxous/",
-        "https://www.in.gr/2026/09/13/sports/gia-proti-fora-nikitria-tou-us-open-i-elena-rimpakina-vids/",
-        "https://www.in.gr/2026/09/13/world/panikos-se-ptisi-tis-turkish-airlines-tromokratimenoi-oi-epivates-en-meso-isxyron-anatarakseon/"
+        "https://www.in.gr/2026/09/13/life/culture-live/i-politistiki-kai-symvoliki-aksia-tis-diasimotitas-to-top10-ton-akrivoteron-syllektikon-kommation/",
+        "https://www.in.gr/2026/09/13/sports/football/oi-athlitikes-metadoseis-tis-imeras-13-9-drasi-me-super-league-filika-sto-mpasket-kai-eyropaiko-podosfairo/",
+        "https://www.in.gr/2026/09/13/in-science/kaysones-pyrkagies-kai-loimokseis-apeiloun-tin-ygeia-ekatommyrion-eyropaion-tria-aparaitita-metra/",
+        "https://www.in.gr/2026/09/13/in-science/technology/texniti-noimosyni-giati-oi-dimiourgoi-tis-fovountai-pleon-to-xeirotero-senario/",
+        "https://www.in.gr/2026/09/13/pet-stories/poia-einai-i-gata-tou-aigaiou-i-emfanisi-i-prosopikotita-kai-i-monadiki-tis-ekseliksi/",
+        "https://www.in.gr/2026/09/13/life/culture-live/naomi-klain-o-ploutos-sxedon-anapofeykta-se-metatrepei-se-opado-tis-anoterotitas/",
+        "https://www.in.gr/2026/09/13/uncategorized/germania-i-afd-dieyrynei-to-provadisma-tis-enanti-ton-syntiritikon-tou-merts-se-panethniki-dimoskopisi/"
       ],
-      "seen_at_utc": "2026-09-13T06:51:08.283853+00:00"
+      "seen_at_utc": "2026-09-13T07:17:18.894037+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T06:51:08.284049+00:00"
+  "updated_at_utc": "2026-09-13T07:17:18.894172+00:00"
 }
