@@ -1,14 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/eortologio/564434152/eortologio-poioi-giortazoyn-simera-13-septemvrioy/",
-      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 13 Σεπτεμβρίου",
-      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 13 ΣΕΠΤΕΜΒΡΙΟΥ",
+      "url": "https://www.kathimerini.gr/culture/564455821/500-lexeis-me-tin-eirini-vardaki/",
+      "title": "500 λέξεις με την Ειρήνη Βαρδάκη",
+      "normalized_title": "500 ΛΕΞΕΙΣ ΜΕ ΤΗΝ ΕΙΡΗΝΗ ΒΑΡΔΑΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/eortologio/564434152/eortologio-poioi-giortazoyn-simera-13-septemvrioy/",
-        "https://www.kathimerini.gr/economy/564455887/openai-o-altman-vazei-ston-pago-to-ipo-gia-to-2026-proechei-i-asfaleia-tis-ai/"
+        "https://www.kathimerini.gr/culture/564455821/500-lexeis-me-tin-eirini-vardaki/",
+        "https://www.kathimerini.gr/world/564455950/ormoyz-iraniko-emporiko-ploio-epligi-sta-anoikta-toy-nisioy-kesm-enas-nekros-treis-traymaties/",
+        "https://www.kathimerini.gr/society/564455941/anavyssos-pyrovolismoi-exo-apo-mpits-mpar-vrethikan-kalykes-kai-ichni-aimatos/",
+        "https://www.kathimerini.gr/world/564455935/thriler-stin-indonisia-agnoeitai-i-tychi-epivatikoy-ploioy-me-243-epivainontes/",
+        "https://www.kathimerini.gr/economy/local/564454024/to-kostos-ton-xechasmenon-syndromon/",
+        "https://www.kathimerini.gr/world/564455926/krisimes-ekloges-sti-soyidia-gia-proti-fora-i-akrodexia-diekdikei-thesi-stin-kyvernisi/",
+        "https://www.kathimerini.gr/istoria/564453415/san-simera-13-septemvrioy-533-i-machi-sto-dekimon/",
+        "https://www.kathimerini.gr/society/564455914/kairos-peftei-i-thermokrasia-poy-tha-vrexei-simera-kyriaki/",
+        "https://www.kathimerini.gr/society/564455908/thanatos-mazonaki-psachnoyn-apantiseis-stis-arseis-aporritoy-erotimata-gia-tis-eikones-apo-to-katharismeno-iatreio/"
       ],
-      "seen_at_utc": "2026-09-12T21:17:02.567312+00:00"
+      "seen_at_utc": "2026-09-13T06:01:37.139406+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1267,79 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877908/soudanos-pige-na-to-skasei-gia-italia-apo-tin-patra-me-taxidiotiko-eggrafo-allou-htupise-kokkino-stin-interpol/?utm_source=rss",
-      "title": "Σουδανός πήγε να το σκάσει για Ιταλία από την Πάτρα με ταξιδιωτικό έγγραφο άλλου, χτύπησε κόκκινο στην Interpol",
-      "normalized_title": "ΣΟΥΔΑΝΟΣ ΠΗΓΕ ΝΑ ΤΟ ΣΚΑΣΕΙ ΓΙΑ ΙΤΑΛΙΑ ΑΠΟ ΤΗΝ ΠΑΤΡΑ ΜΕ ΤΑΞΙΔΙΩΤΙΚΟ ΕΓΓΡΑΦΟ ΑΛΛΟΥ, ΧΤΥΠΗΣΕ ΚΟΚΚΙΝΟ ΣΤΗΝ INTERPOL",
+      "url": "https://www.protothema.gr/greece/article/1877966/purovolismoi-exo-apo-beach-bar-stin-stin-anavusso-vrethikan-kalukes-kai-aimata/?utm_source=rss",
+      "title": "Πυροβολισμοί έξω από beach bar στην στην Ανάβυσσο, βρέθηκαν κάλυκες και αίματα",
+      "normalized_title": "ΠΥΡΟΒΟΛΙΣΜΟΙ ΕΞΩ ΑΠΟ BEACH BAR ΣΤΗΝ ΣΤΗΝ ΑΝΑΒΥΣΣΟ, ΒΡΕΘΗΚΑΝ ΚΑΛΥΚΕΣ ΚΑΙ ΑΙΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877908/soudanos-pige-na-to-skasei-gia-italia-apo-tin-patra-me-taxidiotiko-eggrafo-allou-htupise-kokkino-stin-interpol/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877966/purovolismoi-exo-apo-beach-bar-stin-stin-anavusso-vrethikan-kalukes-kai-aimata/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877961/pos-egine-to-thanatiforo-trohaio-sta-hania-me-tin-19hroni-renata-i-mihani-tis-karfothike-se-fanari/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877960/telos-ta-tourkika-drones-apo-ton-ourano-tis-elladas-ti-ishuei-apo-16-septemvriou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877959/simera-stis-1930-i-laiki-agrupnia-sti-soro-tou-giorgou-mazonaki-sti-nikaia-sto-mikroskopio-ta-/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877948/fthinoporinos-simera-o-kairos-me-aisthiti-ptosi-tis-thermokrasies-pou-tha-vrexei/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877942/70-allodapoi-edopistikan-se-lemvo-notia-tis-kritis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-12T21:17:02.567450+00:00"
+      "seen_at_utc": "2026-09-13T06:01:37.139543+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1465940/serres-entopistikan-ta-ohimata-tis-kinimatografikis-apodrasis-pos-egine-i-organomeni-efodos/",
-      "title": "Σέρρες: Εντοπίστηκαν τα οχήματα της κινηματογραφικής απόδρασης – Πώς έγινε η οργανωμένη έφοδος",
-      "normalized_title": "ΣΕΡΡΕΣ: ΕΝΤΟΠΙΣΤΗΚΑΝ ΤΑ ΟΧΗΜΑΤΑ ΤΗΣ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗΣ ΑΠΟΔΡΑΣΗΣ – ΠΩΣ ΕΓΙΝΕ Η ΟΡΓΑΝΩΜΕΝΗ ΕΦΟΔΟΣ",
+      "url": "https://www.efsyn.gr/nisides/1465650/aimilios-heilakis-stin-ef-syn-sta-56-moy-egina-proti-fora-melos-kommatos/",
+      "title": "Αιμίλιος Χειλάκης στην «Εφ.Συν.»: «Στα 56 μου έγινα πρώτη φορά μέλος κόμματος»",
+      "normalized_title": "ΑΙΜΙΛΙΟΣ ΧΕΙΛΑΚΗΣ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: «ΣΤΑ 56 ΜΟΥ ΕΓΙΝΑ ΠΡΩΤΗ ΦΟΡΑ ΜΕΛΟΣ ΚΟΜΜΑΤΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1465940/serres-entopistikan-ta-ohimata-tis-kinimatografikis-apodrasis-pos-egine-i-organomeni-efodos/",
-        "https://www.efsyn.gr/ellada/1465936/prota-o-theos-kai-meta-ego-oi-kataggelies-gia-toys-giatroys-toy-giorgoy-mazonaki-kai-ta-stoiheia-poy-ereynoyn-oi-arhes/"
+        "https://www.efsyn.gr/nisides/1465650/aimilios-heilakis-stin-ef-syn-sta-56-moy-egina-proti-fora-melos-kommatos/",
+        "https://www.efsyn.gr/oikonomia/1465961/pos-tha-dothei-to-epidoma-se-syntaxioyhoys-to-noemvrio-horis-eisodimatika-kritiria-i-katavoli/",
+        "https://www.efsyn.gr/kosmos/1465955/ekloges-sti-soyidia-koyrsa-stithos-me-stithos-kathos-i-akra-dexia-elpizei-na-mpei-stin-kyvernisi/",
+        "https://www.efsyn.gr/ellada/1465958/anavyssos-pyrovolismoi-exo-apo-beach-bar-entopistikan-kalykes-kai-ihni-aimatos/",
+        "https://www.efsyn.gr/ellada/1465636/thanatos-giorgoy-mazonaki-anexelegkti-i-agora-thaymatoyrgis-therapeias-ta-kena-epopteias-to-ypoyrgeio-kai-o-isa/",
+        "https://www.efsyn.gr/politiki/1465645/ellinotoyrkika-se-trohia-kalodioy-oi-sheseis-me-tin-agkyra/",
+        "https://www.efsyn.gr/kosmos/1465950/i-rosia-symfonei-gia-epanenarxi-synomilion-me-tin-oykrania-aporriptei-prosorini-katapaysi-pyros/",
+        "https://www.efsyn.gr/longform/germania-mia-hora-se-parakmi-strivei-akrodexia-kai-yperexoplizetai-anisyhia-stin-eyropi/",
+        "https://www.efsyn.gr/ellada/1465948/kairos-vrohes-kataigides-kai-ptosi-tis-thermokrasias/",
+        "https://www.efsyn.gr/ellada/1465945/eortologio-poioi-giortazoyn-simera-kyriaki-13-septemvrioy/"
       ],
-      "seen_at_utc": "2026-09-12T21:17:02.567406+00:00"
+      "seen_at_utc": "2026-09-13T06:01:37.139508+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/ntoumpai-o-polemos-ypoxreonei-se-sxediasmo-ypogeion-deksamenon-kaysimon-gia-to-neo-aerodromio/",
-      "title": "Ντουμπάι: Ο πόλεμος υποχρεώνει σε σχεδιασμό υπόγειων δεξαμενών καυσίμων για το νέο αεροδρόμιο",
-      "normalized_title": "ΝΤΟΥΜΠΑΙ: Ο ΠΟΛΕΜΟΣ ΥΠΟΧΡΕΩΝΕΙ ΣΕ ΣΧΕΔΙΑΣΜΟ ΥΠΟΓΕΙΩΝ ΔΕΞΑΜΕΝΩΝ ΚΑΥΣΙΜΩΝ ΓΙΑ ΤΟ ΝΕΟ ΑΕΡΟΔΡΟΜΙΟ",
+      "url": "https://www.in.gr/2026/09/13/life/music/lena-platonos-ta-skyladika-exoun-paiksei-poly-simantiko-rolo-sti-zoi-mou/",
+      "title": "Λένα Πλάτωνος: «Τα σκυλάδικα έχουν παίξει πολύ σημαντικό ρόλο στη ζωή μου»",
+      "normalized_title": "ΛΕΝΑ ΠΛΑΤΩΝΟΣ: «ΤΑ ΣΚΥΛΑΔΙΚΑ ΕΧΟΥΝ ΠΑΙΞΕΙ ΠΟΛΥ ΣΗΜΑΝΤΙΚΟ ΡΟΛΟ ΣΤΗ ΖΩΗ ΜΟΥ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/ntoumpai-o-polemos-ypoxreonei-se-sxediasmo-ypogeion-deksamenon-kaysimon-gia-to-neo-aerodromio/"
+        "https://www.in.gr/2026/09/13/life/music/lena-platonos-ta-skyladika-exoun-paiksei-poly-simantiko-rolo-sti-zoi-mou/",
+        "https://www.in.gr/2026/09/13/plus/vita/pos-i-askisi-epireazei-ton-egkefalo-mas/",
+        "https://www.in.gr/2026/09/13/life/woman/oi-gynaikes-den-niothoun-asfaleis-oute-online-otan-i-via-pernaei-stin-othoni/",
+        "https://www.in.gr/2026/09/13/go-fun/antonis-remos-osa-eginan-stin-epeteiaki-synaylia-sti-thessaloniki-drones-ypertheama-kai-sygkinitiko-antio-ston-mazonaki/",
+        "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/oosa-pros-syntaksiodotiki-kataigida-stin-ellada-perissoteroi-ilikiomenoi-ligoteroi-ergazomenoi/",
+        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/o-kanadas-enisxyei-tous-desmous-me-tin-ee-en-meso-emporikou-polemou-me-tis-ipa/",
+        "https://www.in.gr/2026/09/13/sports/football/super-league-ntermpi-sti-thessalonikis-kai-maxi-koryfis-sto-oaka/",
+        "https://www.in.gr/2026/09/13/politics/politiki-grammateia/pasok-ta-minymata-androulaki-sti-deth-i-prothypourgiki-omilia-oi-metagrafes-kai-ta-karfia/",
+        "https://www.in.gr/2026/09/13/life/music/selin-ntion-epestrepse-sti-skini-meta-apo-eksi-xronia-yposxethika-oti-den-tha-klapso/",
+        "https://www.in.gr/2026/09/13/greece/anavyssos-pyrovolismoi-ekso-apo-beach-bar-ta-ksimeromata/",
+        "https://www.in.gr/2026/09/13/world/nayagio-stin-indonisia-logo-kakokairias-enas-nekros-kai-140-agnooumenoi/",
+        "https://www.in.gr/2026/09/13/plus/vita/mayra-fasolia-to-osprio-pou-aksizei-mia-thesi-sti-diatrofi-mas/",
+        "https://www.in.gr/2026/09/13/life/culture-live/30-xronia-theatro-tou-neou-kosmou-oi-parastaseis-tis-neas-sezon/",
+        "https://www.in.gr/2026/09/13/sports/basketball/moneke-makari-na-emene-mazi-mas-o-makintair-alla-aksize-to-kalo-symvolaio-pou-pire-ston-olympiako/",
+        "https://www.in.gr/2026/09/13/greece/synnefia-kai-ptosi-tis-thermokrasias-tin-kyriaki-pou-anamenontai-vroxes-kai-kataigides/",
+        "https://www.in.gr/2026/09/13/go-fun/fizz/tzon-oliver-tha-einai-o-parousiastis-tou-comic-relief-live-2026/",
+        "https://www.in.gr/2026/09/13/plus/vita/des-ti-thetiki-pleyra-ola-osa-mas-mathainei-enas-xorismos/",
+        "https://www.in.gr/2026/09/13/economy/allagi-poreias-sti-stegastiki-politiki-zitoun-11-stegastikes-syllogikotites/",
+        "https://www.in.gr/2026/09/13/world/o-tramp-ylopoiei-tis-apelaseis-pou-yposxethike-proeklogika-kai-tou-gyrizei-mpoumerangk/",
+        "https://www.in.gr/2026/09/13/go-fun/fizz/o-rik-springkfilnt-skotose-kata-lathos-enan-andra-kata-ti-diarkeia-tou-polemou-sto-vietnam/",
+        "https://www.in.gr/2026/09/13/world/ee-to-diplomatiko-organo-exei-kseperastei-apo-tis-ekselikseis-mporei-i-enosi-na-vrei-mia-koini-foni/",
+        "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/thyrides-ti-kryvoun-ta-magika-koutia-sta-ypogeia-ton-trapezon/",
+        "https://www.in.gr/2026/09/13/greece/ilias-kasidiaris-ta-senaria-gia-tis-protheseis-tou-meta-tin-apofylakisi/",
+        "https://www.in.gr/2026/09/13/life/geysi/syntagi-gigantes-me-ntomata-kai-myrodika/",
+        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/ee-antisteketai-stin-therapeia-ntragki-gia-tin-antagonistikotita/",
+        "https://www.in.gr/2026/09/13/world/o-lavrof-kalese-ton-zelenski-sti-mosxa-mia-terastia-xeironomia-kalis-thelisis-ek-merous-mas-vinteo/",
+        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/oukrania-oi-rosikes-epitheseis-gonatisan-tin-oikonomia/",
+        "https://www.in.gr/2026/09/13/economy/diethnis-oikonomia/arktiki-rosia-india-kina-patane-gkazi-sti-voreia-thalassia-odo/",
+        "https://www.in.gr/2026/09/13/world/aeroporiki-epidromi-enantion-theseon-tou-islamikou-kratous-sto-irak/",
+        "https://www.in.gr/2026/09/13/world/i-livyi-diapseydei-oti-epetrepse-stin-oukrania-na-pliksei-deksamenoploia-tis-rosias-apo-to-edafos-tis/",
+        "https://www.in.gr/2026/09/13/world/isxyro-xtypima-ton-xouthi-se-stratopedo-tis-saoudikis-aravias/",
+        "https://www.in.gr/2026/09/13/world/i-ondoura-epiase-psaria-1-660-kilon-kokainis-se-alieytiko-skafos-stin-karaiviki/",
+        "https://www.in.gr/2026/09/13/world/gkouteres-kai-sisi-syzitisan-gia-tis-geopolitikes-ekselikseis-sti-synodo-ton-brics/",
+        "https://www.in.gr/2026/09/13/world/ougkanta-ekdothike-stis-ipa-apostratos-aksiomatikos-katigoroumenos-gia-emporia-oplon-se-meksikanika-kartel/"
       ],
-      "seen_at_utc": "2026-09-12T22:51:18.106849+00:00"
+      "seen_at_utc": "2026-09-13T06:01:37.139462+00:00"
     }
   },
-  "updated_at_utc": "2026-09-12T22:51:18.106931+00:00"
+  "updated_at_utc": "2026-09-13T06:01:37.139614+00:00"
 }
