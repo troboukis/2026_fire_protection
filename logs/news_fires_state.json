@@ -1,21 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564455821/500-lexeis-me-tin-eirini-vardaki/",
-      "title": "500 λέξεις με την Ειρήνη Βαρδάκη",
-      "normalized_title": "500 ΛΕΞΕΙΣ ΜΕ ΤΗΝ ΕΙΡΗΝΗ ΒΑΡΔΑΚΗ",
+      "url": "https://www.kathimerini.gr/economy/business/564454018/ta-ellinika-rompot-poy-theloyn-na-kataktisoyn-to-diastima/",
+      "title": "Τα ελληνικά ρομπότ που θέλουν να κατακτήσουν το Διάστημα",
+      "normalized_title": "ΤΑ ΕΛΛΗΝΙΚΑ ΡΟΜΠΟΤ ΠΟΥ ΘΕΛΟΥΝ ΝΑ ΚΑΤΑΚΤΗΣΟΥΝ ΤΟ ΔΙΑΣΤΗΜΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564455821/500-lexeis-me-tin-eirini-vardaki/",
-        "https://www.kathimerini.gr/world/564455950/ormoyz-iraniko-emporiko-ploio-epligi-sta-anoikta-toy-nisioy-kesm-enas-nekros-treis-traymaties/",
-        "https://www.kathimerini.gr/society/564455941/anavyssos-pyrovolismoi-exo-apo-mpits-mpar-vrethikan-kalykes-kai-ichni-aimatos/",
-        "https://www.kathimerini.gr/world/564455935/thriler-stin-indonisia-agnoeitai-i-tychi-epivatikoy-ploioy-me-243-epivainontes/",
-        "https://www.kathimerini.gr/economy/local/564454024/to-kostos-ton-xechasmenon-syndromon/",
-        "https://www.kathimerini.gr/world/564455926/krisimes-ekloges-sti-soyidia-gia-proti-fora-i-akrodexia-diekdikei-thesi-stin-kyvernisi/",
-        "https://www.kathimerini.gr/istoria/564453415/san-simera-13-septemvrioy-533-i-machi-sto-dekimon/",
-        "https://www.kathimerini.gr/society/564455914/kairos-peftei-i-thermokrasia-poy-tha-vrexei-simera-kyriaki/",
-        "https://www.kathimerini.gr/society/564455908/thanatos-mazonaki-psachnoyn-apantiseis-stis-arseis-aporritoy-erotimata-gia-tis-eikones-apo-to-katharismeno-iatreio/"
+        "https://www.kathimerini.gr/economy/business/564454018/ta-ellinika-rompot-poy-theloyn-na-kataktisoyn-to-diastima/"
       ],
-      "seen_at_utc": "2026-09-13T06:01:37.139406+00:00"
+      "seen_at_utc": "2026-09-13T06:51:08.283802+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1267,34 +1259,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1877972/sunolika-1394-paidia-filoxenoudai-dorean-stous-vrefonipiakous-stathmous-tis-dupa/?utm_source=rss",
-      "title": "Συνολικά 1.394 παιδιά φιλοξενούνται δωρεάν στους βρεφονηπιακούς σταθμούς της ΔΥΠΑ",
-      "normalized_title": "ΣΥΝΟΛΙΚΑ 1.394 ΠΑΙΔΙΑ ΦΙΛΟΞΕΝΟΥΝΤΑΙ ΔΩΡΕΑΝ ΣΤΟΥΣ ΒΡΕΦΟΝΗΠΙΑΚΟΥΣ ΣΤΑΘΜΟΥΣ ΤΗΣ ΔΥΠΑ",
+      "url": "https://www.protothema.gr/greece/article/1877993/trohaio-atuhima-me-duo-traumaties-stin-halkidiki-ih-exetrapi-tis-poreias-kai-vgike-ektos-odostromatos/?utm_source=rss",
+      "title": "Τροχαίο ατύχημα με δύο τραυματίες στην Χαλκιδική, ΙΧ εξετράπη της πορείας και βγήκε εκτός οδοστρώματος",
+      "normalized_title": "ΤΡΟΧΑΙΟ ΑΤΥΧΗΜΑ ΜΕ ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ, ΙΧ ΕΞΕΤΡΑΠΗ ΤΗΣ ΠΟΡΕΙΑΣ ΚΑΙ ΒΓΗΚΕ ΕΚΤΟΣ ΟΔΟΣΤΡΩΜΑΤΟΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1877972/sunolika-1394-paidia-filoxenoudai-dorean-stous-vrefonipiakous-stathmous-tis-dupa/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1877993/trohaio-atuhima-me-duo-traumaties-stin-halkidiki-ih-exetrapi-tis-poreias-kai-vgike-ektos-odostromatos/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1877988/prosohi-se-auta-ta-metaheirismena-58083-irthan-apo-to-exoteriko-i-megali-pagida-gia-tous-agorastes/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T06:17:08.120753+00:00"
+      "seen_at_utc": "2026-09-13T06:51:08.283963+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1465968/stena-toy-ormoyz-iraniko-emporiko-ploio-htypithike-sta-anoikta-toy-nisioy-kesm-enas-nekros-treis-traymaties/",
-      "title": "Στενά του Ορμούζ: Ιρανικό εμπορικό πλοίο χτυπήθηκε στα ανοικτά του νησιού Κεσμ- Ένας νεκρός, τρεις τραυματίες",
-      "normalized_title": "ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ: ΙΡΑΝΙΚΟ ΕΜΠΟΡΙΚΟ ΠΛΟΙΟ ΧΤΥΠΗΘΗΚΕ ΣΤΑ ΑΝΟΙΚΤΑ ΤΟΥ ΝΗΣΙΟΥ ΚΕΣΜ- ΕΝΑΣ ΝΕΚΡΟΣ, ΤΡΕΙΣ ΤΡΑΥΜΑΤΙΕΣ",
+      "url": "https://www.efsyn.gr/epistimi/1465977/ai-oi-ishyroi-tis-tehnologias-symfonisan-prepei-na-epivradynthei-i-anaptyxi-tis-tehnitis-noimosynis/",
+      "title": "AI: Οι ισχυροί της τεχνολογίας συμφώνησαν – Πρέπει να επιβραδυνθεί η ανάπτυξη της Τεχνητής Νοημοσύνης",
+      "normalized_title": "AI: ΟΙ ΙΣΧΥΡΟΙ ΤΗΣ ΤΕΧΝΟΛΟΓΙΑΣ ΣΥΜΦΩΝΗΣΑΝ – ΠΡΕΠΕΙ ΝΑ ΕΠΙΒΡΑΔΥΝΘΕΙ Η ΑΝΑΠΤΥΞΗ ΤΗΣ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1465968/stena-toy-ormoyz-iraniko-emporiko-ploio-htypithike-sta-anoikta-toy-nisioy-kesm-enas-nekros-treis-traymaties/"
+        "https://www.efsyn.gr/epistimi/1465977/ai-oi-ishyroi-tis-tehnologias-symfonisan-prepei-na-epivradynthei-i-anaptyxi-tis-tehnitis-noimosynis/",
+        "https://www.efsyn.gr/nisides/1465658/dyo-horia-sto-anatoliko-pilio-me-oli-ti-galini-toy-aigaioy-se-mia-aperanti-paralia-kai-monopatia-se-katafyta-topia/",
+        "https://www.efsyn.gr/life/1465967/aproopto-gia-tin-kaiti-garmpi-sti-synaylia-toy-antoni-remoy-efaga-mia-epiki-glistra-vinteo/"
       ],
-      "seen_at_utc": "2026-09-13T06:29:57.955532+00:00"
+      "seen_at_utc": "2026-09-13T06:51:08.283930+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/dikastiki-thyella-gia-to-neo-xorotaksiko-ape-anoixta-metopa-kai-prosfyges-sto-ste/",
-      "title": "Δικαστική θύελλα για το νέο χωροταξικό ΑΠΕ - Ανοιχτά μέτωπα και προσφυγές στο ΣτΕ",
-      "normalized_title": "ΔΙΚΑΣΤΙΚΗ ΘΥΕΛΛΑ ΓΙΑ ΤΟ ΝΕΟ ΧΩΡΟΤΑΞΙΚΟ ΑΠΕ - ΑΝΟΙΧΤΑ ΜΕΤΩΠΑ ΚΑΙ ΠΡΟΣΦΥΓΕΣ ΣΤΟ ΣΤΕ",
+      "url": "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/xoris-periousiaka-kai-eisodimatika-kritiria-to-epidoma-stous-syntaksiouxous/",
+      "title": "Χωρίς περιουσιακά και εισοδηματικά κριτήρια το επίδομα στους συνταξιούχους",
+      "normalized_title": "ΧΩΡΙΣ ΠΕΡΙΟΥΣΙΑΚΑ ΚΑΙ ΕΙΣΟΔΗΜΑΤΙΚΑ ΚΡΙΤΗΡΙΑ ΤΟ ΕΠΙΔΟΜΑ ΣΤΟΥΣ ΣΥΝΤΑΞΙΟΥΧΟΥΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/dikastiki-thyella-gia-to-neo-xorotaksiko-ape-anoixta-metopa-kai-prosfyges-sto-ste/",
-        "https://www.in.gr/2026/09/13/world/iraniko-emporiko-ploio-epligi-sta-anoikta-tou-nisiou-kesm-enas-nekros-treis-traymaties/",
-        "https://www.in.gr/2026/09/13/sports/basketball/olympiakos-deytero-filiko-stin-kypro-kontra-sti-makampi/"
+        "https://www.in.gr/2026/09/13/economy/oikonomikes-eidiseis/xoris-periousiaka-kai-eisodimatika-kritiria-to-epidoma-stous-syntaksiouxous/",
+        "https://www.in.gr/2026/09/13/sports/gia-proti-fora-nikitria-tou-us-open-i-elena-rimpakina-vids/",
+        "https://www.in.gr/2026/09/13/world/panikos-se-ptisi-tis-turkish-airlines-tromokratimenoi-oi-epivates-en-meso-isxyron-anatarakseon/"
       ],
-      "seen_at_utc": "2026-09-13T06:29:57.955473+00:00"
+      "seen_at_utc": "2026-09-13T06:51:08.283853+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T06:29:57.955614+00:00"
+  "updated_at_utc": "2026-09-13T06:51:08.284049+00:00"
 }
