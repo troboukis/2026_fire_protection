@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/astynomiko/564456268/anavyssos-emploki-toy-alket-rizai-sto-epeisodio-me-toys-pyrovolismoys/",
-      "title": "Ανάβυσσος: Εμπλοκή του Αλκέτ Ριζάι στο επεισόδιο με τους πυροβολισμούς",
-      "normalized_title": "ΑΝΑΒΥΣΣΟΣ: ΕΜΠΛΟΚΗ ΤΟΥ ΑΛΚΕΤ ΡΙΖΑΙ ΣΤΟ ΕΠΕΙΣΟΔΙΟ ΜΕ ΤΟΥΣ ΠΥΡΟΒΟΛΙΣΜΟΥΣ",
+      "url": "https://www.kathimerini.gr/culture/564454999/apomeinaria-enos-alloy-kosmoy/",
+      "title": "Απομεινάρια ενός άλλου κόσμου",
+      "normalized_title": "ΑΠΟΜΕΙΝΑΡΙΑ ΕΝΟΣ ΑΛΛΟΥ ΚΟΣΜΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/astynomiko/564456268/anavyssos-emploki-toy-alket-rizai-sto-epeisodio-me-toys-pyrovolismoys/",
-        "https://www.kathimerini.gr/culture/564454966/me-dedomeni-ti-siopi-ton-tragikon/"
+        "https://www.kathimerini.gr/culture/564454999/apomeinaria-enos-alloy-kosmoy/",
+        "https://www.kathimerini.gr/world/564456262/soyidia-proigeitai-i-kentroaristeri-antipoliteysi-ypochorei-i-akrodexia/",
+        "https://www.kathimerini.gr/culture/564454987/anamniseis-stin-athinaiki-endochora/"
       ],
-      "seen_at_utc": "2026-09-13T18:29:52.874761+00:00"
+      "seen_at_utc": "2026-09-13T18:51:55.960290+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1261,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878218/i-agnosti-istoria-tou-giorgou-mazonaki-me-auto-to-autokinito-tous-trelane-olous/?utm_source=rss",
-      "title": "Η άγνωστη ιστορία του Γιώργου Μαζωνάκη με αυτό το αυτοκίνητο - Τους τρέλανε όλους",
-      "normalized_title": "Η ΑΓΝΩΣΤΗ ΙΣΤΟΡΙΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ ΜΕ ΑΥΤΟ ΤΟ ΑΥΤΟΚΙΝΗΤΟ - ΤΟΥΣ ΤΡΕΛΑΝΕ ΟΛΟΥΣ",
+      "url": "https://www.protothema.gr/greece/article/1878223/tesseris-traumaties-se-trohaio-stin-exohi-thessalonikis-apeglovistikan-apo-tin-purosvestiki/?utm_source=rss",
+      "title": "Τέσσερις τραυματίες σε τροχαίο στην Εξοχή Θεσσαλονίκης, απεγκλωβίστηκαν από την Πυροσβεστική",
+      "normalized_title": "ΤΕΣΣΕΡΙΣ ΤΡΑΥΜΑΤΙΕΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗΝ ΕΞΟΧΗ ΘΕΣΣΑΛΟΝΙΚΗΣ, ΑΠΕΓΚΛΩΒΙΣΤΗΚΑΝ ΑΠΟ ΤΗΝ ΠΥΡΟΣΒΕΣΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878218/i-agnosti-istoria-tou-giorgou-mazonaki-me-auto-to-autokinito-tous-trelane-olous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878216/sunelifthi-16hronos-se-bar-ton-hanion-parapoiise-ta-stoiheia-tou-me-ai-gia-na-boresei-na-piei-alkool-heiropedes-kai-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878223/tesseris-traumaties-se-trohaio-stin-exohi-thessalonikis-apeglovistikan-apo-tin-purosvestiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-13T17:51:11.495299+00:00"
+      "seen_at_utc": "2026-09-13T18:51:55.960449+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466187/nea-kontra-patoyli-giamali-gia-toys-giatroys-mazonaki-oi-anafores-sto-oraio-hamogelo-kai-ston-syriza/",
-      "title": "Νέα κόντρα Πατούλη – Γιάμαλη για τους γιατρούς Μαζωνάκη: Οι αναφορές στο «ωραίο χαμόγελο» και στον… ΣΥΡΙΖΑ",
-      "normalized_title": "ΝΕΑ ΚΟΝΤΡΑ ΠΑΤΟΥΛΗ – ΓΙΑΜΑΛΗ ΓΙΑ ΤΟΥΣ ΓΙΑΤΡΟΥΣ ΜΑΖΩΝΑΚΗ: ΟΙ ΑΝΑΦΟΡΕΣ ΣΤΟ «ΩΡΑΙΟ ΧΑΜΟΓΕΛΟ» ΚΑΙ ΣΤΟΝ… ΣΥΡΙΖΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1466201/anti-logos-ypallilon-yp-ergasias-to-neo-nomoshedio-toy-ypes-fernei-poinologio-aytarhismo-aythairesia/",
+      "title": "«Αντί-λογος» Υπαλλήλων Υπ. Εργασίας: Το νέο νομοσχέδιο του ΥΠΕΣ φέρνει ποινολόγιο, αυταρχισμό, αυθαιρεσία",
+      "normalized_title": "«ΑΝΤΙ-ΛΟΓΟΣ» ΥΠΑΛΛΗΛΩΝ ΥΠ. ΕΡΓΑΣΙΑΣ: ΤΟ ΝΕΟ ΝΟΜΟΣΧΕΔΙΟ ΤΟΥ ΥΠΕΣ ΦΕΡΝΕΙ ΠΟΙΝΟΛΟΓΙΟ, ΑΥΤΑΡΧΙΣΜΟ, ΑΥΘΑΙΡΕΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466187/nea-kontra-patoyli-giamali-gia-toys-giatroys-mazonaki-oi-anafores-sto-oraio-hamogelo-kai-ston-syriza/"
+        "https://www.efsyn.gr/oikonomia/1466201/anti-logos-ypallilon-yp-ergasias-to-neo-nomoshedio-toy-ypes-fernei-poinologio-aytarhismo-aythairesia/",
+        "https://www.efsyn.gr/stiles/1466198/dyo-oi-dromoi-mprosta-mas-syneheia-tis-nd-i-pragmatiki-allagi-me-pasok/"
       ],
-      "seen_at_utc": "2026-09-13T18:29:52.874831+00:00"
+      "seen_at_utc": "2026-09-13T18:51:55.960407+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/13/greece/ola-osa-eginan-sto-iatreio-pou-ypesti-anakopi-o-mazonakis-o-iatrikos-fakelos-kai-i-fotografia-pou-diegrapsan/",
-      "title": "Όλα όσα έγιναν στο ιατρείο που υπέστη ανακοπή ο Μαζωνάκης – Ο ιατρικός φάκελος και η φωτογραφία που διέγραψαν",
-      "normalized_title": "ΟΛΑ ΟΣΑ ΕΓΙΝΑΝ ΣΤΟ ΙΑΤΡΕΙΟ ΠΟΥ ΥΠΕΣΤΗ ΑΝΑΚΟΠΗ Ο ΜΑΖΩΝΑΚΗΣ – Ο ΙΑΤΡΙΚΟΣ ΦΑΚΕΛΟΣ ΚΑΙ Η ΦΩΤΟΓΡΑΦΙΑ ΠΟΥ ΔΙΕΓΡΑΨΑΝ",
+      "url": "https://www.in.gr/2026/09/13/greece/ypo-elegxo-i-pyrkagia-stin-pelasgia-fthiotidas/",
+      "title": "Υπό έλεγχο η πυρκαγιά στην Πελασγία Φθιώτιδας",
+      "normalized_title": "ΥΠΟ ΕΛΕΓΧΟ Η ΠΥΡΚΑΓΙΑ ΣΤΗΝ ΠΕΛΑΣΓΙΑ ΦΘΙΩΤΙΔΑΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/13/greece/ola-osa-eginan-sto-iatreio-pou-ypesti-anakopi-o-mazonakis-o-iatrikos-fakelos-kai-i-fotografia-pou-diegrapsan/"
+        "https://www.in.gr/2026/09/13/greece/ypo-elegxo-i-pyrkagia-stin-pelasgia-fthiotidas/",
+        "https://www.in.gr/2026/09/13/greece/fotia-se-dasiki-ektasi-stin-kato-lippa-ioanninon/",
+        "https://www.in.gr/2026/09/13/go-fun/fizz/tha-vro-therapeia-gia-ti-noso-parkinson-maikl-tz-foks-kai-xarison-fornt-sti-gennaia-maxi/",
+        "https://www.in.gr/2026/09/13/in-science/ai/mporei-i-texniti-noimosyni-na-afanisei-tin-anthropotita/",
+        "https://www.in.gr/2026/09/13/sports/football/elfensmpergk-mpagern-monaxou-1-2-dyskoli-niki-gia-tous-vayarous/"
       ],
-      "seen_at_utc": "2026-09-13T18:29:52.874801+00:00"
+      "seen_at_utc": "2026-09-13T18:51:55.960335+00:00"
     }
   },
-  "updated_at_utc": "2026-09-13T18:29:52.874893+00:00"
+  "updated_at_utc": "2026-09-13T18:51:55.960527+00:00"
 }
