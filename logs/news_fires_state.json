@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564456460/enstaseis-stis-ekkliseis-gia-epivradynsi-stin-anaptyxi-tis-technitis-noimosynis/",
-      "title": "Ενστάσεις στις εκκλήσεις για επιβράδυνση στην ανάπτυξη της Τεχνητής Νοημοσύνης",
-      "normalized_title": "ΕΝΣΤΑΣΕΙΣ ΣΤΙΣ ΕΚΚΛΗΣΕΙΣ ΓΙΑ ΕΠΙΒΡΑΔΥΝΣΗ ΣΤΗΝ ΑΝΑΠΤΥΞΗ ΤΗΣ ΤΕΧΝΗΤΗΣ ΝΟΗΜΟΣΥΝΗΣ",
+      "url": "https://www.kathimerini.gr/society/564456532/pyrovolismoi-stin-anavysso-katazitoymenos-o-alket-rizai-den-epestrepse-stis-fylakes/",
+      "title": "Καταζητούμενος ο Αλκέτ Ριζάι – Δεν επέστρεψε στις φυλακές",
+      "normalized_title": "ΚΑΤΑΖΗΤΟΥΜΕΝΟΣ Ο ΑΛΚΕΤ ΡΙΖΑΙ – ΔΕΝ ΕΠΕΣΤΡΕΨΕ ΣΤΙΣ ΦΥΛΑΚΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564456460/enstaseis-stis-ekkliseis-gia-epivradynsi-stin-anaptyxi-tis-technitis-noimosynis/"
+        "https://www.kathimerini.gr/society/564456532/pyrovolismoi-stin-anavysso-katazitoymenos-o-alket-rizai-den-epestrepse-stis-fylakes/",
+        "https://www.kathimerini.gr/world/564456496/gallia-machi-tis-lepen-me-ton-melanson-deichnoyn-oi-dimoskopiseis/",
+        "https://www.kathimerini.gr/world/564456523/o-tramp-exire-ton-rolo-goyitkof-kai-koysner-den-yparchoyn-pleon-polles-maches-sti-gaza/",
+        "https://www.kathimerini.gr/athletics/564456511/thriamveytis-toy-us-open-o-alexanter-zveref/",
+        "https://www.kathimerini.gr/columns/564456448/mpra-nte-fer-sev-maximoy-ti-apokalyptei-i-cosco-gia-ton-peiraia-poios-ellinas-anelave-tin-tychi-tis-soyidikis-beijer-ref/"
       ],
-      "seen_at_utc": "2026-09-14T06:30:06.069207+00:00"
+      "seen_at_utc": "2026-09-14T06:51:12.836847+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,32 +1263,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878341/dimografiki-katarreusi-stin-ellada-oi-genniseis-meiothikan-kata-42-kai-oi-thanatoi-diplasiastikan-se-shesi-me-to-2009/?utm_source=rss",
-      "title": "Δημογραφική κατάρρευση στην Ελλάδα: Οι γεννήσεις μειώθηκαν κατά 42% και οι θάνατοι διπλασιάστηκαν σε σχέση με το 2009",
-      "normalized_title": "ΔΗΜΟΓΡΑΦΙΚΗ ΚΑΤΑΡΡΕΥΣΗ ΣΤΗΝ ΕΛΛΑΔΑ: ΟΙ ΓΕΝΝΗΣΕΙΣ ΜΕΙΩΘΗΚΑΝ ΚΑΤΑ 42% ΚΑΙ ΟΙ ΘΑΝΑΤΟΙ ΔΙΠΛΑΣΙΑΣΤΗΚΑΝ ΣΕ ΣΧΕΣΗ ΜΕ ΤΟ 2009",
+      "url": "https://www.protothema.gr/greece/article/1878354/bloko-se-megalo-fortio-akatallilou-konservopoiimenou-tonou-apo-tin-tourkia-deite-eikones/?utm_source=rss",
+      "title": "«Μπλόκο» σε μεγάλο φορτίο ακατάλληλου κονσερβοποιημένου τόνου από την Τουρκία, δείτε εικόνες",
+      "normalized_title": "«ΜΠΛΟΚΟ» ΣΕ ΜΕΓΑΛΟ ΦΟΡΤΙΟ ΑΚΑΤΑΛΛΗΛΟΥ ΚΟΝΣΕΡΒΟΠΟΙΗΜΕΝΟΥ ΤΟΝΟΥ ΑΠΟ ΤΗΝ ΤΟΥΡΚΙΑ, ΔΕΙΤΕ ΕΙΚΟΝΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878341/dimografiki-katarreusi-stin-ellada-oi-genniseis-meiothikan-kata-42-kai-oi-thanatoi-diplasiastikan-se-shesi-me-to-2009/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878354/bloko-se-megalo-fortio-akatallilou-konservopoiimenou-tonou-apo-tin-tourkia-deite-eikones/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878343/giorgos-mazonakis-sti-nikaia-simera-to-teleutaio-adio-live-to-laiko-proskunima-sti-geitonia-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878342/giorgos-mazonakis-apo-to-gucci-forema-sto-koboskoini-i-zoi-enos-star-pou-den-emoiaze-me-kanenan/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T06:30:06.069388+00:00"
+      "seen_at_utc": "2026-09-14T06:51:12.836976+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1466402/israil-apeiloyntai-me-afairesi-ithageneias-oi-dimioyrgoi-toy-ntokimanter-naza-poy-elave-25lepto-heirokrotima-sti-venetia/",
-      "title": "Ισραήλ: Απειλούνται με αφαίρεση ιθαγένειας οι δημιουργοί του ντοκιμαντέρ «NAZA» που έλαβε 25λεπτο χειροκρότημα στη Βενετία",
-      "normalized_title": "ΙΣΡΑΗΛ: ΑΠΕΙΛΟΥΝΤΑΙ ΜΕ ΑΦΑΙΡΕΣΗ ΙΘΑΓΕΝΕΙΑΣ ΟΙ ΔΗΜΙΟΥΡΓΟΙ ΤΟΥ ΝΤΟΚΙΜΑΝΤΕΡ «NAZA» ΠΟΥ ΕΛΑΒΕ 25ΛΕΠΤΟ ΧΕΙΡΟΚΡΟΤΗΜΑ ΣΤΗ ΒΕΝΕΤΙΑ",
+      "url": "https://www.efsyn.gr/nisides/1466364/animasyros-vasilis-karamitsanis-kathe-morfi-tehnis-einai-politikikathe-morfi-tehnis-einai-politiki/",
+      "title": "AnimaSyros – Βασίλης Καραμητσάνης: «Κάθε μορφή τέχνης είναι πολιτική,«Κάθε μορφή τέχνης είναι πολιτική»",
+      "normalized_title": "ANIMASYROS – ΒΑΣΙΛΗΣ ΚΑΡΑΜΗΤΣΑΝΗΣ: «ΚΑΘΕ ΜΟΡΦΗ ΤΕΧΝΗΣ ΕΙΝΑΙ ΠΟΛΙΤΙΚΗ,«ΚΑΘΕ ΜΟΡΦΗ ΤΕΧΝΗΣ ΕΙΝΑΙ ΠΟΛΙΤΙΚΗ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1466402/israil-apeiloyntai-me-afairesi-ithageneias-oi-dimioyrgoi-toy-ntokimanter-naza-poy-elave-25lepto-heirokrotima-sti-venetia/"
+        "https://www.efsyn.gr/nisides/1466364/animasyros-vasilis-karamitsanis-kathe-morfi-tehnis-einai-politikikathe-morfi-tehnis-einai-politiki/",
+        "https://www.efsyn.gr/nisides/1466375/i-istoria-mias-deyteris-arhaias-elladas/",
+        "https://www.efsyn.gr/oikonomia/1466344/forbes-ta-10-wonderkinds-kato-ton-30-poy-katelixan-se-skandala-fylaki-kai-epiheirimatika-fiasko/"
       ],
-      "seen_at_utc": "2026-09-14T06:30:06.069342+00:00"
+      "seen_at_utc": "2026-09-14T06:51:12.836940+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/sports/basketball/olympiakos-o-larentzakis-efyge-o-papas-erxetai/",
-      "title": "Ολυμπιακός: Ο Λαρεντζάκης έφυγε, ο Πάπας… έρχεται",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: Ο ΛΑΡΕΝΤΖΑΚΗΣ ΕΦΥΓΕ, Ο ΠΑΠΑΣ… ΕΡΧΕΤΑΙ",
+      "url": "https://www.in.gr/2026/09/14/world/ipa-neos-thanatos-apo-ilara-stin-pensilvania/",
+      "title": "ΗΠΑ: Νέος θάνατος από ιλαρά στην Πενσιλβάνια",
+      "normalized_title": "ΗΠΑ: ΝΕΟΣ ΘΑΝΑΤΟΣ ΑΠΟ ΙΛΑΡΑ ΣΤΗΝ ΠΕΝΣΙΛΒΑΝΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/sports/basketball/olympiakos-o-larentzakis-efyge-o-papas-erxetai/"
+        "https://www.in.gr/2026/09/14/world/ipa-neos-thanatos-apo-ilara-stin-pensilvania/",
+        "https://www.in.gr/2026/09/14/greece/adedy-sokaristiki-i-protasi-marinaki-gia-to-epidoma-anergias-i-koinoniki-prostasia-einai-dikaioma/",
+        "https://www.in.gr/2026/09/14/language-books/literature/dimosthenis-paraforo-pathos-kai-gnisia-tragikotita-meros-th/",
+        "https://www.in.gr/2026/09/14/sports/othersports/thriamveytis-sto-us-open-o-zveref-vids/",
+        "https://www.in.gr/2026/09/14/greece/giorgos-mazonakis-o-isa-eixe-vrei-mixanima-fygokentrisis-sto-iatreio-sto-kolonaki-zitisan-na-apomakrynthei-kai-to-antikatestisan/"
       ],
-      "seen_at_utc": "2026-09-14T06:30:06.069280+00:00"
+      "seen_at_utc": "2026-09-14T06:51:12.836894+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T06:30:06.069483+00:00"
+  "updated_at_utc": "2026-09-14T06:51:12.837055+00:00"
 }
