@@ -1,7 +1,8 @@
 {
   "rewrites": [
+    { "source": "/analysis/west-attica-fire-2026", "destination": "/analysis/west-attica-fire-2026/index.html" },
     { "source": "/analysis/statistics", "destination": "/analysis/statistics/index.html" },
     { "source": "/analysis/antinero-west-attica", "destination": "/analysis/antinero-west-attica/index.html" },
-    { "source": "/((?!api/|assets/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/|analysis/west-attica-fire-2026/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)", "destination": "/index.html" }
   ]
 }
