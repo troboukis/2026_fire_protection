@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/k-magazine/564453406/yparchei-to-teleio-scholeio/",
-      "title": "Υπάρχει το τέλειο σχολείο;",
-      "normalized_title": "ΥΠΑΡΧΕΙ ΤΟ ΤΕΛΕΙΟ ΣΧΟΛΕΙΟ;",
+      "url": "https://www.kathimerini.gr/athletics/analysis/564457381/o-tropos-toy-nistroyp/",
+      "title": "Ο τρόπος του Νίστρουπ",
+      "normalized_title": "Ο ΤΡΟΠΟΣ ΤΟΥ ΝΙΣΤΡΟΥΠ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/k-magazine/564453406/yparchei-to-teleio-scholeio/"
+        "https://www.kathimerini.gr/athletics/analysis/564457381/o-tropos-toy-nistroyp/",
+        "https://www.kathimerini.gr/society/564457393/chania-vrefos-me-varia-kranioegkefaliki-kakosi-synelifthi-i-18chroni-mitera/",
+        "https://www.kathimerini.gr/world/564457369/vretania-pethane-o-pateras-toy-anti-mpernam-epeita-apo-polyeti-machi-me-ti-noso-altschaimer/"
       ],
-      "seen_at_utc": "2026-09-14T13:30:01.969613+00:00"
+      "seen_at_utc": "2026-09-14T13:51:11.409771+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,43 +1261,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878571/prosorini-apagoreusi-apoplou-sto-super-express-logo-epakoumvisis-ston-limena-tis-rafinas/?utm_source=rss",
-      "title": "Προσωρινή απαγόρευση απόπλου στο «Super Express», λόγω επακούμβησης στον προβλήτα του λιμανιού της Ραφήνας",
-      "normalized_title": "ΠΡΟΣΩΡΙΝΗ ΑΠΑΓΟΡΕΥΣΗ ΑΠΟΠΛΟΥ ΣΤΟ «SUPER EXPRESS», ΛΟΓΩ ΕΠΑΚΟΥΜΒΗΣΗΣ ΣΤΟΝ ΠΡΟΒΛΗΤΑ ΤΟΥ ΛΙΜΑΝΙΟΥ ΤΗΣ ΡΑΦΗΝΑΣ",
+      "url": "https://www.protothema.gr/greece/article/1878592/treis-sullipseis-gia-diakinisi-narkotikon-stin-attiki/?utm_source=rss",
+      "title": "Τρεις συλλήψεις για διακίνηση ναρκωτικών στην Αττική",
+      "normalized_title": "ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ ΣΤΗΝ ΑΤΤΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878571/prosorini-apagoreusi-apoplou-sto-super-express-logo-epakoumvisis-ston-limena-tis-rafinas/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878553/fotia-tora-se-dasos-stin-elani-halkidikis-112-gia-etoimotita-epiheiroun-epta-enaeria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878552/sto-nosokomeio-hanion-vrefos-17-imeron-me-varia-kranioegefaliki-kakosi-sunelifthi-i-18hroni-mitera-tou/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878592/treis-sullipseis-gia-diakinisi-narkotikon-stin-attiki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T13:18:16.189489+00:00"
+      "seen_at_utc": "2026-09-14T13:51:11.409895+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1466864/trapeza-tis-ellados-sto-35-o-plithorismos-to-2026-ayxisi-16-se-shesi-me-to-2025/",
-      "title": "Τράπεζα της Ελλάδος: Στο 3,5% ο πληθωρισμός το 2026, αύξηση 1,6% σε σχέση με το 2025",
-      "normalized_title": "ΤΡΑΠΕΖΑ ΤΗΣ ΕΛΛΑΔΟΣ: ΣΤΟ 3,5% Ο ΠΛΗΘΩΡΙΣΜΟΣ ΤΟ 2026, ΑΥΞΗΣΗ 1,6% ΣΕ ΣΧΕΣΗ ΜΕ ΤΟ 2025",
+      "url": "https://www.efsyn.gr/ellada/1466554/vary-to-kryfo-kostos-tis-dimosias-paideias-apo-800-eos-6-000-eyro-ton-hrono-gia-ena-paidi/",
+      "title": "Βαρύ το «κρυφό κόστος» της δημόσιας Παιδείας: Από 800 έως 6.000 ευρώ τον χρόνο για ένα παιδί",
+      "normalized_title": "ΒΑΡΥ ΤΟ «ΚΡΥΦΟ ΚΟΣΤΟΣ» ΤΗΣ ΔΗΜΟΣΙΑΣ ΠΑΙΔΕΙΑΣ: ΑΠΟ 800 ΕΩΣ 6.000 ΕΥΡΩ ΤΟΝ ΧΡΟΝΟ ΓΙΑ ΕΝΑ ΠΑΙΔΙ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1466864/trapeza-tis-ellados-sto-35-o-plithorismos-to-2026-ayxisi-16-se-shesi-me-to-2025/",
-        "https://www.efsyn.gr/ellada/1466862/fotia-stin-elani-halkidikis-ihise-to-112-kinitopoiithikan-epta-enaeria-mesa/",
-        "https://www.efsyn.gr/politiki/1466861/doyroy-o-syriza-esteile-katharo-minyma-apo-ti-deth-einai-paron/",
-        "https://www.efsyn.gr/kosmos/1466859/thyella-antidraseon-gia-to-rosiko-pligma-se-treno-poy-pigaine-stin-polonia-apegnosmenos-o-poytin-leei-o-royte/",
-        "https://www.efsyn.gr/tehnes/1466547/taxidia-kai-diethneis-diakriseis-gia-ton-skinotheti-kosta-gaki/",
-        "https://www.efsyn.gr/ellada/1466825/stin-teleytaia-toy-katoikia-o-giorgos-mazonakis-tragoydia-kai-heirokrotimata-apo-plithos-kosmoy-vinteo-eikones/",
-        "https://www.efsyn.gr/ellada/1466853/fotia-sti-larisa-sikothikan-enaeria-mesa/",
-        "https://www.efsyn.gr/ellada/1466847/eyvoia-synelifthi-40hronos-gia-emprismo-apo-prothesi-omologise-kai-ypedeixe-tis-treis-esties/"
+        "https://www.efsyn.gr/ellada/1466554/vary-to-kryfo-kostos-tis-dimosias-paideias-apo-800-eos-6-000-eyro-ton-hrono-gia-ena-paidi/",
+        "https://www.efsyn.gr/politiki/1466869/hristidis-kata-marinaki-i-koptoraptiki-afora-to-pasok-i-tin-ypoyrgo-ergasias/"
       ],
-      "seen_at_utc": "2026-09-14T13:18:16.189459+00:00"
+      "seen_at_utc": "2026-09-14T13:51:11.409868+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/sports/football/edose-daneiko-ton-pantovits-o-panathinaikos/",
-      "title": "Έδωσε δανεικό τον Πάντοβιτς ο Παναθηναϊκός",
-      "normalized_title": "ΕΔΩΣΕ ΔΑΝΕΙΚΟ ΤΟΝ ΠΑΝΤΟΒΙΤΣ Ο ΠΑΝΑΘΗΝΑΙΚΟΣ",
+      "url": "https://www.in.gr/2026/09/14/stories/o-napoleon-vonapartis-sti-mosxa-aixmalotos-tou-pepromenou/",
+      "title": "Μέγας Ναπολέων για Μόσχα: «Ενικηθήκαμε από τον εαυτό μας!»",
+      "normalized_title": "ΜΕΓΑΣ ΝΑΠΟΛΕΩΝ ΓΙΑ ΜΟΣΧΑ: «ΕΝΙΚΗΘΗΚΑΜΕ ΑΠΟ ΤΟΝ ΕΑΥΤΟ ΜΑΣ!»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/sports/football/edose-daneiko-ton-pantovits-o-panathinaikos/",
-        "https://www.in.gr/2026/09/14/go-fun/fizz/klotsia-sto-prosopo-orgi-olympionikon-gia-ti-sintnei-souini-seksoualikopoiei-ton-gynaikeio-athlitismo/",
-        "https://www.in.gr/2026/09/14/world/ekthesi-ta-imalaia-plisiazoun-se-simeio-kampis-diakyveyontai-ta-mesa-diaviosis-ekatommyrion-anthropon/"
+        "https://www.in.gr/2026/09/14/stories/o-napoleon-vonapartis-sti-mosxa-aixmalotos-tou-pepromenou/",
+        "https://www.in.gr/2026/09/14/politics/epikairotita/anna-papadopoulou-elas-i-dilosi-marinaki-gia-to-epidoma-anergias-aggizei-ta-oria-tou-koinonikou-kanivalismou/",
+        "https://www.in.gr/2026/09/14/plus/medianews/koinonia-ora-mega-stin-proti-thesi-tis-tiletheasis-tin-perasmeni-evdomada/"
       ],
-      "seen_at_utc": "2026-09-14T13:30:01.969662+00:00"
+      "seen_at_utc": "2026-09-14T13:51:11.409819+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T13:30:01.969765+00:00"
+  "updated_at_utc": "2026-09-14T13:51:11.409973+00:00"
 }
