@@ -7,6 +7,7 @@ import '../AnalysisLayout.css'
 import './Antinero.css'
 
 const dateLabel = (date: string) => new Date(`${date}T12:00:00`).toLocaleDateString('el-GR')
+const latestDate = (dates: Array<string | null>) => dates.reduce<string | null>((latest, date) => date && (!latest || date > latest) ? date : latest, null)
 const money = (amount: string | null) => amount === null ? 'Δεν ορίζεται νέο τίμημα' : new Intl.NumberFormat('el-GR', { style: 'currency', currency: 'EUR' }).format(Number(amount))
 const amendmentLabel = (kind: string) => kind === 'supplement' ? 'Συμπληρωματική πράξη' : 'Διορθωτική τροποποίηση'
 const relationKinds = ['amendment', 'shared', 'beneficiary']
@@ -19,6 +20,8 @@ export default function AntineroPage() {
   const connectionTarget = selectedConnection && report.contracts.find(item => item.id === selectedConnection.target)
   const hasNodeSelection = !!params.get('node') && (!!decision || report.contracts.some(item => item.id === params.get('node') || (item.aliases as string[]).includes(params.get('node')!)))
   const originals = report.contracts.filter(item => !item.parentId)
+  const initialCompletionDate = latestDate(contract.completionDetails.map(item => item.initialDate))
+  const finalCompletionDate = latestDate(contract.completionDetails.map(item => item.finalDate))
 
   function select(id: string, context?: string) {
     const updated = new URLSearchParams(params)
@@ -48,7 +51,7 @@ export default function AntineroPage() {
     <nav aria-label="Πλοήγηση ανάλυσης"><Link className="analysis-back" to="/analysis">← Όλες οι αναλύσεις</Link></nav>
     <header className="section-rule section-head">
       <div className="eyebrow">Δίκτυο συμβάσεων</div>
-      <h2>AntiNERO στη Δυτική Αττική</h2>
+      <h2>Συμβάσεις AntiNERO στη Δυτική Αττική</h2>
       <p className="analysis-header-note">Το καλοκαίρι του 2026 σημαδεύτηκε από τη <a href="https://www.fire-watch-app.gr/municipalities?municipality=9230" target="_blank" rel="noopener noreferrer"> μεγάλη πυρκαγιά στη Δυτική Αττική</a>, η οποία κατέκαψε πάνω από 110.000 στρέμματα. Η χαρτογράφηση των δημοσίων συμβάσεων που αφορούν σε έργα αντιπυρικής προστασίας (AntiNero) στη Δυτική Αττική πραγματοποιείται στο πλαίσιο προώθησης της διαφάνειας και λογοδοσίας στα έργα αντιπυρικής προστασίας που υλοποιούνται στα δάση της χώρας. Το δίκτυο συμβάσεων που προκύπτει, καθώς και η σύνδεσή τους με τις αντίστοιχες αποφάσεις στη Διαύγεια, βοηθούν ώστε ευαισθητοποιημένοι πολίτες, οργανισμοί και ερευνητές να εμβαθύνουν και να αξιολογήσουν τις δημόσιες συμβάσεις που αφορούν τα έργα αυτά, αποκτώντας μια πληρέστερη εικόνα.</p>
       <div className="report-meta">Ανάλυση {originals.length} συμβάσεων (ΚΗΜΔΗΣ) και {report.decisions.length} εγγράφων (Διαύγεια) από το 2023 έως το 2026. <br />Ενδέχεται να λείπουν συμβάσεις από την ανάλυση.</div>
     </header>
@@ -96,7 +99,10 @@ export default function AntineroPage() {
         {decision ? <><p>Ημερομηνία έκδοσης: <time dateTime={decision.date}>{dateLabel(decision.date)}</time></p><p>Συνδεδεμένες συμβάσεις:</p>{decision.contractIds.map(id => <p key={id}><button className="report-inline" onClick={() => selectContract(id)}>{id}</button></p>)}</> : <>
           <p>{contract.description || contract.label}</p>
           <dl><dt>Πρόγραμμα</dt><dd>{contract.nodeContext.programme}</dd><dt>Δασική υπηρεσία</dt><dd>{contract.nodeContext.forestry}</dd><dt>Ανάδοχος</dt><dd>{contract.contractors.join(' / ')}</dd><dt>Αναθέτουσα αρχή</dt><dd>{contract.authority}</dd>
-            <dt>{contract.amountBasis === 'additional_amount' ? 'Πρόσθετο τίμημα χωρίς ΦΠΑ' : 'Συμβατικό τίμημα χωρίς ΦΠΑ'}</dt><dd>{contract.withoutVat === null ? 'Χωρίς νέο τίμημα στην τροποποίηση' : money(contract.withoutVat)}</dd></dl>
+            <dt>{contract.amountBasis === 'additional_amount' ? 'Πρόσθετο τίμημα χωρίς ΦΠΑ' : 'Συμβατικό τίμημα χωρίς ΦΠΑ'}</dt><dd>{contract.withoutVat === null ? 'Χωρίς νέο τίμημα στην τροποποίηση' : money(contract.withoutVat)}</dd>
+            <dt>Παράδοση έργου</dt><dd>{initialCompletionDate ? <time className="report-completion-value" dateTime={initialCompletionDate}>{dateLabel(initialCompletionDate)}</time> : 'Καθορίζεται ανά Εντολή Ανάθεσης'}</dd>
+            <dt>Τελική ημερομηνία παράδοσης έργου</dt><dd>{finalCompletionDate ? <time className="report-completion-value" dateTime={finalCompletionDate}>{dateLabel(finalCompletionDate)}</time> : 'Καθορίζεται ανά Εντολή Ανάθεσης'}</dd>
+          </dl>
           {contract.kind === 'supplement' && <p className="report-caveat">Το διαθέσιμο έγγραφο εγκρίνει τη συμπληρωματική σύμβαση· δεν τεκμηριώνει αυτοτελώς την υπογραφή της.{contract.id === '26SYMV018978343' ? ' Αφορά τη Χαλκίδα και διατηρείται για τη σύνδεσή του με την αρχική σύμβαση.' : ''}</p>}
         </>}
         {!decision && connections.filter(edge => edge.source === contract.id || edge.target === contract.id).map(edge => <p key={edge.id}><button className="report-inline" onClick={() => selectConnection(edge.id)}>{edge.kind === 'amendment' ? 'Τροποποίηση ή συμπλήρωση' : edge.kind === 'shared' ? 'Κοινές αποφάσεις' : 'Κοινός ανάδοχος'} · {edge.source === contract.id ? edge.target : edge.source} ↗</button></p>)}

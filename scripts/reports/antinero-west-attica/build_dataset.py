@@ -6,7 +6,7 @@ import hashlib
 import json
 import re
 import zipfile
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime
 from decimal import Decimal
 from pathlib import Path
@@ -40,6 +40,35 @@ def build():
     inventory_path = SOURCE / 'diavgeia_inventory.tsv'
     with inventory_path.open() as handle:
         inventory = list(csv.DictReader(handle, delimiter='\t'))
+    completion_path = OUTPUT.parent / 'contract_completion_details.csv'
+    with completion_path.open() as handle:
+        completion_rows = list(csv.DictReader(handle))
+    completion_by_contract = defaultdict(list)
+    for row in completion_rows:
+        assert row['initial_date_basis'] and row['final_date_basis'] and row['date_notes']
+        for field in ('initial_completion_date', 'final_completion_date', 'research_cutoff'):
+            if row[field]:
+                datetime.strptime(row[field], '%Y-%m-%d')
+        source_document_ids = [value.strip() for value in row['source_document_ids'].split('|')]
+        source_urls = [value.strip() for value in row['source_urls'].split('|')]
+        assert source_document_ids and len(source_document_ids) == len(source_urls)
+        completion_by_contract[row['reference_number']].append({
+            'scope': row['completion_scope'],
+            'initial_completion_date': row['initial_completion_date'] or None,
+            'initial_date_basis': row['initial_date_basis'],
+            'final_completion_date': row['final_completion_date'] or None,
+            'final_date_basis': row['final_date_basis'],
+            'notes': row['date_notes'],
+            'source_document_ids': source_document_ids,
+            'source_urls': source_urls,
+            'research_cutoff': row['research_cutoff'],
+        })
+    record_ids = {row['referenceNumber'] for row in records}
+    assert set(completion_by_contract) == record_ids
+    for row in completion_rows:
+        expected_parent, expected_kind = AMENDMENTS.get(row['reference_number'], ('', 'original'))
+        assert row['parent_reference_number'] == expected_parent
+        assert row['record_kind'] == expected_kind
     with (SOURCE / 'khmdhs_2022_plus/relevant_contracts.tsv').open() as handle:
         summaries = {r['reference_number']: r for r in csv.DictReader(handle, delimiter='\t')}
     report_path = SOURCE / 'Antinero_West_Attica_Report.docx'
@@ -148,6 +177,7 @@ def build():
             'reference_aliases': ['24SYMV0142117833'] if cid == '24SYMV014217833' else [],
             'metadata_chain': {'previous': raw.get('prevReferenceNo'), 'next': raw.get('nextRefNo')},
             'report_profile': profile,
+            'completion_details': completion_by_contract[cid],
             'finding_ids': [f['id'] for f in findings if cid in f['contract_ids']],
             'decision_ids': linked,
             'url': f'https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/{cid}',
@@ -157,8 +187,8 @@ def build():
     for child, (parent, kind) in AMENDMENTS.items():
         relationships.append({'id': f'amendment:{child}:{parent}', 'type': 'amends_contract',
             'source': child, 'target': parent, 'amendment_kind': kind, 'evidence': profiles[child]['source']})
-    sources = [ROOT / 'scripts/reports/antinero-west-attica/classify_decisions.py', metadata_path, inventory_path, report_path, SOURCE/'README.md', SOURCE/'KHMDHS_2022_PLUS.md', SOURCE/'khmdhs_2022_plus/relevant_contracts.tsv']
-    data = {'schema_version': '1.1.0', 'id': 'antinero-west-attica', 'research_cutoff': '2026-08-12',
+    sources = [ROOT / 'scripts/reports/antinero-west-attica/classify_decisions.py', metadata_path, inventory_path, completion_path, report_path, SOURCE/'README.md', SOURCE/'KHMDHS_2022_PLUS.md', SOURCE/'khmdhs_2022_plus/relevant_contracts.tsv']
+    data = {'schema_version': '1.2.0', 'id': 'antinero-west-attica', 'research_cutoff': '2026-08-12',
         'search_start': '2022-01-01', 'language': 'el',
         'editorial_status': 'primary_source_review_complete_editorial_integration_pending',
         'finding_review': {'date': review_bundle['review_date'], 'method': review_bundle['method'],
@@ -194,6 +224,10 @@ def validate(data):
     assert contracts['24SYMV015170089']['amount']['without_vat'] == '799483.29'
     assert contracts['26SYMV018978343']['amount']['basis'] == 'additional_amount'
     assert contracts['23SYMV013154974']['amount']['without_vat'] is None
+    assert all(c['completion_details'] for c in contracts.values())
+    assert all(d['research_cutoff'] == data['research_cutoff'] for c in contracts.values() for d in c['completion_details'])
+    assert all(source_id in contracts or source_id in decisions
+        for c in contracts.values() for d in c['completion_details'] for source_id in d['source_document_ids'])
     assert '24SYMV0142117833' not in contracts
     assert sum(len(d['contract_ids']) for d in decisions.values()) == 429
     for edge in data['relationships']:

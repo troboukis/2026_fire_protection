@@ -131,6 +131,19 @@ def build():
             'signedOn': c['signed_on_metadata'], 'offices': c['scope']['matched_research_offices'],
             'withoutVat': c['amount']['without_vat'], 'withVat': c['amount']['with_vat'],
             'amountBasis': c['amount']['basis'], 'url': c['url'], 'aliases': c['reference_aliases'],
+            'completionDetails': [{
+                'scope': detail['scope'],
+                'initialDate': detail['initial_completion_date'],
+                'initialDateBasis': detail['initial_date_basis'],
+                'finalDate': detail['final_completion_date'],
+                'finalDateBasis': detail['final_date_basis'],
+                'notes': detail['notes'],
+                'sources': [
+                    {'id': source_id, 'url': source_url}
+                    for source_id, source_url in zip(detail['source_document_ids'], detail['source_urls'])
+                ],
+                'researchCutoff': detail['research_cutoff'],
+            } for detail in c['completion_details']],
             'decisionIds': c['decision_ids'],
         })
     for d in decisions.values():

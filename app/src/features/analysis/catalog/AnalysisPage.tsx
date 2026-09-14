@@ -13,7 +13,7 @@ export default function AnalysisPage() {
       />
       <AnalysisCard
         to="/analysis/antinero-west-attica"
-        title="AntiNERO στη Δυτική Αττική"
+        title="Συμβάσεις AntiNERO στη Δυτική Αττική"
         description="Περιηγηθείτε στο «δίκτυο» των συμβάσεων και εγγράφων από τη Διαύγεια για τα έργα AntiNERO στη Δυτική Αττική. Δείτε τους αναδόχους, τα ποσά και το ιστορικό κάθε σύμβασης από την ανάθεση έως την παραλαβή του έργου."
         imageSrc={`${import.meta.env.BASE_URL}social/antinero-west-attica.png`}
         imageAlt="Δίκτυο συμβάσεων και αποφάσεων AntiNERO στη Δυτική Αττική"

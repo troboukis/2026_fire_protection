@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "id": "antinero-west-attica",
   "research_cutoff": "2026-08-12",
   "search_start": "2022-01-01",
@@ -27,6 +27,10 @@
     {
       "path": "antinero_west_attica/diavgeia_inventory.tsv",
       "sha256": "977e97d2f1d8f2d623ead211b68e34d7cb537c19188b1c0e7eae5c63446b0712"
+    },
+    {
+      "path": "data/reports/antinero-west-attica/contract_completion_details.csv",
+      "sha256": "dd6ae2b775246d62f86933d5deb70c40b873c5d17367b61454ef48a6dd70d2f8"
     },
     {
       "path": "antinero_west_attica/Antinero_West_Attica_Report.docx",
@@ -138,6 +142,25 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2023-02-11",
+          "initial_date_basis": "derived_from_signature_and_duration",
+          "final_completion_date": "2023-05-25",
+          "final_date_basis": "approved_extension",
+          "notes": "Η αρχική τρίμηνη προθεσμία υπολογίζεται από την υπογραφή της 11.11.2022. Η παράταση έως 25.05.2023 αφορά το τμήμα Αιγάλεω.",
+          "source_document_ids": [
+            "22SYMV011593395",
+            "Ρ1ΤΞ4653Π8-ΤΕΛ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/22SYMV011593395",
+            "https://diavgeia.gov.gr/doc/Ρ1ΤΞ4653Π8-ΤΕΛ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-175",
         "report-block-189"
@@ -235,6 +258,25 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2023-09-27",
+          "initial_date_basis": "explicit_in_extension_decision",
+          "final_completion_date": "2023-10-31",
+          "final_date_basis": "approved_extension",
+          "notes": "Η απόφαση καταγράφει ρητά την αρχική λήξη 27.09.2023 και εγκρίνει παράταση 34 ημερών έως 31.10.2023.",
+          "source_document_ids": [
+            "23SYMV012820428",
+            "6Μ6Φ4653Π8-86Β"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012820428",
+            "https://diavgeia.gov.gr/doc/6Μ6Φ4653Π8-86Β"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-172",
         "report-block-176",
@@ -351,6 +393,25 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2023-12-02",
+          "initial_date_basis": "explicit_in_extension_decision",
+          "final_completion_date": "2023-12-22",
+          "final_date_basis": "approved_extension",
+          "notes": "Η εγκατάσταση έγινε 04.09.2023. Η πράξη παράτασης αναφέρει αρχική λήξη 02.12.2023 και νέα λήξη 22.12.2023.",
+          "source_document_ids": [
+            "23SYMV012963827",
+            "ΨΖΟ94653Π8-ΗΕ3"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012963827",
+            "https://diavgeia.gov.gr/doc/ΨΖΟ94653Π8-ΗΕ3"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-176",
         "report-block-199"
@@ -454,6 +515,42 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω — πρωτόκολλο εγκατάστασης 04.09.2023",
+          "initial_completion_date": "2023-12-04",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2023-12-22",
+          "final_date_basis": "actual_completion_no_extension_found",
+          "notes": "Η τρίμηνη αρχική λήξη υπολογίζεται από το πρώτο πρωτόκολλο εγκατάστασης. Η 22.12.2023 είναι ημερομηνία βεβαίωσης περαίωσης· δεν εντοπίστηκε πράξη παράτασης στα οκτώ αρχειοθετημένα αποτελέσματα.",
+          "source_document_ids": [
+            "23SYMV012964096",
+            "6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012964096",
+            "https://diavgeia.gov.gr/doc/6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Αιγάλεω — πρωτόκολλο εγκατάστασης 11.09.2023",
+          "initial_completion_date": "2023-12-11",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2023-12-22",
+          "final_date_basis": "actual_completion_no_extension_found",
+          "notes": "Η τρίμηνη αρχική λήξη υπολογίζεται από το δεύτερο πρωτόκολλο εγκατάστασης. Η 22.12.2023 είναι ημερομηνία βεβαίωσης περαίωσης· δεν εντοπίστηκε πράξη παράτασης στα οκτώ αρχειοθετημένα αποτελέσματα.",
+          "source_document_ids": [
+            "23SYMV012964096",
+            "6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012964096",
+            "https://diavgeia.gov.gr/doc/6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-173",
         "report-block-176",
@@ -554,6 +651,27 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2023-12-13",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2024-01-25",
+          "final_date_basis": "actual_completion_no_extension_found",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από την εγκατάσταση της 13.09.2023. Η 25.01.2024 είναι βεβαίωση περαίωσης για το Αιγάλεω· η παράταση έως 21.12.2023 αφορούσε μόνο Καπανδρίτι και Λαύριο.",
+          "source_document_ids": [
+            "23SYMV012992150",
+            "ΨΞΠΝ4653Π8-ΤΣΧ",
+            "Ψ8Δ84653Π8-4ΔΚ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012992150",
+            "https://diavgeia.gov.gr/doc/ΨΞΠΝ4653Π8-ΤΣΧ",
+            "https://diavgeia.gov.gr/doc/Ψ8Δ84653Π8-4ΔΚ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-176",
         "report-block-201"
@@ -656,6 +774,27 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2023-09-27",
+          "initial_date_basis": "inherited_from_parent",
+          "final_completion_date": "2023-10-31",
+          "final_date_basis": "inherited_from_parent",
+          "notes": "Η διορθωτική πράξη αλλάζει μόνο την εγγύηση καλής εκτέλεσης και δεν αλλάζει το χρονοδιάγραμμα της 23SYMV012820428.",
+          "source_document_ids": [
+            "23SYMV013154974",
+            "23SYMV012820428",
+            "6Μ6Φ4653Π8-86Β"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV013154974",
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012820428",
+            "https://diavgeia.gov.gr/doc/6Μ6Φ4653Π8-86Β"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-172",
         "report-block-193"
@@ -745,6 +884,46 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω — πρωτόκολλο εγκατάστασης 04.09.2023",
+          "initial_completion_date": "2023-12-04",
+          "initial_date_basis": "inherited_from_parent",
+          "final_completion_date": "2023-12-22",
+          "final_date_basis": "inherited_from_parent",
+          "notes": "Η διορθωτική πράξη προσθέτει ανάλυση κονδυλίου αναθεώρησης χωρίς αλλαγή χρονοδιαγράμματος. Οι ημερομηνίες κληρονομούνται από την 23SYMV012964096.",
+          "source_document_ids": [
+            "23SYMV013156865",
+            "23SYMV012964096",
+            "6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV013156865",
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012964096",
+            "https://diavgeia.gov.gr/doc/6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Αιγάλεω — πρωτόκολλο εγκατάστασης 11.09.2023",
+          "initial_completion_date": "2023-12-11",
+          "initial_date_basis": "inherited_from_parent",
+          "final_completion_date": "2023-12-22",
+          "final_date_basis": "inherited_from_parent",
+          "notes": "Η διορθωτική πράξη προσθέτει ανάλυση κονδυλίου αναθεώρησης χωρίς αλλαγή χρονοδιαγράμματος. Οι ημερομηνίες κληρονομούνται από την 23SYMV012964096.",
+          "source_document_ids": [
+            "23SYMV013156865",
+            "23SYMV012964096",
+            "6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV013156865",
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/23SYMV012964096",
+            "https://diavgeia.gov.gr/doc/6ΛΑΚ4653Π8-ΜΞ6"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-173",
         "report-block-197"
@@ -835,6 +1014,44 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω — κύριες εργασίες εκτός φυτεύσεων",
+          "initial_completion_date": "2024-07-04",
+          "initial_date_basis": "explicit_in_extension_decision",
+          "final_completion_date": "2024-09-05",
+          "final_date_basis": "approved_extension",
+          "notes": "Η αρχική λήξη 04.07.2024 και η παράταση έως 05.09.2024 καταγράφονται στις πράξεις. Η βεβαίωση περαίωσης των λοιπών εργασιών είναι 11.10.2024.",
+          "source_document_ids": [
+            "24SYMV014192335",
+            "99Ζ24653Π8-Α17",
+            "9Κ2Η4653Π8-ΟΩΨ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014192335",
+            "https://diavgeia.gov.gr/doc/99Ζ24653Π8-Α17",
+            "https://diavgeia.gov.gr/doc/9Κ2Η4653Π8-ΟΩΨ"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Αιγάλεω — προμήθεια μεταφορά και φύτευση πλατύφυλλων",
+          "initial_completion_date": "2024-07-04",
+          "initial_date_basis": "explicit_in_extension_decision",
+          "final_completion_date": "2024-12-31",
+          "final_date_basis": "approved_extension",
+          "notes": "Η τελική παράταση έως 31.12.2024 αφορά μόνο την προμήθεια μεταφορά και φύτευση πλατύφυλλων. Η μεταγενέστερη συντήρηση των φυτεύσεων δεν αποτελεί παράταση εκτέλεσης αυτών των εργασιών.",
+          "source_document_ids": [
+            "24SYMV014192335",
+            "ΨΑ5Υ4653Π8-8ΦΖ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014192335",
+            "https://diavgeia.gov.gr/doc/ΨΑ5Υ4653Π8-8ΦΖ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-58",
         "report-block-59",
@@ -956,6 +1173,25 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2024-06-08",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2025-11-30",
+          "final_date_basis": "actual_completion_with_unresolved_deadline_chain",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από το πρωτόκολλο εγκατάστασης της 08.03.2024. Η βεβαίωση αναφέρει περάτωση 30.11.2025 εντός προθεσμίας αλλά δεν εντοπίστηκε πράξη που να τεκμηριώνει πλήρως τη μεταβολή της προθεσμίας. Η σύμβαση περιλαμβάνει και 15 μήνες συντήρησης πλατύφυλλων.",
+          "source_document_ids": [
+            "24SYMV014217833",
+            "ΨΗΨΜ4653Π8-3ΜΠ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014217833",
+            "https://diavgeia.gov.gr/doc/ΨΗΨΜ4653Π8-3ΜΠ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-177",
         "report-block-203"
@@ -1069,6 +1305,27 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχεία Αιγάλεω και Μεγάρων",
+          "initial_completion_date": "2024-06-22",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2024-07-30",
+          "final_date_basis": "actual_completion_no_extension_found",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από τα πρωτόκολλα εγκατάστασης της 22.03.2024. Η βεβαίωση περαίωσης είναι 30.07.2024· δεν εντοπίστηκε χωριστή πράξη παράτασης. Ακολούθησε υποχρεωτική συντήρηση και μεταγενέστερη παραλαβή.",
+          "source_document_ids": [
+            "24SYMV014223991",
+            "6ΣΧΡ4653Π8-ΤΜΒ",
+            "6ΤΑΨ4653Π8-9ΓΝ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014223991",
+            "https://diavgeia.gov.gr/doc/6ΣΧΡ4653Π8-ΤΜΒ",
+            "https://diavgeia.gov.gr/doc/6ΤΑΨ4653Π8-9ΓΝ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-177",
         "report-block-205"
@@ -1177,6 +1434,25 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2024-07-05",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2024-07-05",
+          "final_date_basis": "no_later_extension_identified",
+          "notes": "Η τρίμηνη λήξη υπολογίζεται από το πρωτόκολλο εγκατάστασης της 05.04.2024. Η τελική επιμέτρηση υποβλήθηκε 27.06.2024 και εγκρίθηκε 02.07.2024. Δεν εντοπίστηκε μεταγενέστερη παράταση για το τμήμα Μεγάρων.",
+          "source_document_ids": [
+            "24SYMV014447969",
+            "ΨΖ2Ε4653Π8-2ΤΘ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014447969",
+            "https://diavgeia.gov.gr/doc/ΨΖ2Ε4653Π8-2ΤΘ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-177",
         "report-block-207"
@@ -1314,6 +1590,29 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Σύμβαση ΔΜ-01 — Καπανδρίτι Πεντέλη και Αιγάλεω",
+          "initial_completion_date": "2024-11-23",
+          "initial_date_basis": "derived_from_signature_and_duration",
+          "final_completion_date": "2025-03-08",
+          "final_date_basis": "approved_contract_validity_extension",
+          "notes": "Η αρχική επτάμηνη διάρκεια έληγε 23.11.2024. Παρατάθηκε πρώτα έως 23.01.2025 και κατόπιν κατά 45 ημέρες έως 08.03.2025. Η ενδιάμεση προθεσμία υποβολής των μελετών είχε οριστεί 13.11.2024.",
+          "source_document_ids": [
+            "24SYMV014662191",
+            "6Σ2Τ4653Π8-Ξ6Η",
+            "ΡΡΚΣ4653Π8-ΗΨ9",
+            "9ΛΘ64653Π8-ΚΝΣ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014662191",
+            "https://diavgeia.gov.gr/doc/6Σ2Τ4653Π8-Ξ6Η",
+            "https://diavgeia.gov.gr/doc/ΡΡΚΣ4653Π8-ΗΨ9",
+            "https://diavgeia.gov.gr/doc/9ΛΘ64653Π8-ΚΝΣ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-178",
         "report-block-209"
@@ -1416,6 +1715,29 @@
           "section": "Μέρος Β — Νέα αναζήτηση ΚΗΜΔΗΣ από το 2022"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Σύμβαση ΔΜ-02 — Πάρνηθα και Μέγαρα",
+          "initial_completion_date": "2024-11-23",
+          "initial_date_basis": "derived_from_signature_and_duration",
+          "final_completion_date": "2025-03-08",
+          "final_date_basis": "approved_contract_validity_extension",
+          "notes": "Η αρχική επτάμηνη διάρκεια έληγε 23.11.2024. Παρατάθηκε πρώτα έως 23.01.2025 και κατόπιν κατά 45 ημέρες έως 08.03.2025. Η ενδιάμεση προθεσμία υποβολής των μελετών είχε οριστεί 13.11.2024.",
+          "source_document_ids": [
+            "24SYMV014662244",
+            "6Μ8Φ4653Π8-1Υ2",
+            "ΡΡΚΣ4653Π8-ΗΨ9",
+            "9ΛΘ64653Π8-ΚΝΣ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV014662244",
+            "https://diavgeia.gov.gr/doc/6Μ8Φ4653Π8-1Υ2",
+            "https://diavgeia.gov.gr/doc/ΡΡΚΣ4653Π8-ΗΨ9",
+            "https://diavgeia.gov.gr/doc/9ΛΘ64653Π8-ΚΝΣ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-178",
         "report-block-211"
@@ -1515,6 +1837,44 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Σύνολο σύμβασης σχεδίου αντιπυρικής προστασίας",
+          "initial_completion_date": "2025-05-22",
+          "initial_date_basis": "derived_from_signature_and_duration",
+          "final_completion_date": "2025-06-30",
+          "final_date_basis": "actual_approval_no_overall_extension_found",
+          "notes": "Η δεκάμηνη αρχική διάρκεια υπολογίζεται από την υπογραφή της 22.07.2024. Η προμελέτη παρατάθηκε από 22.10.2024 έως 20.12.2024. Δεν εντοπίστηκε παράταση της συνολικής διάρκειας· το σχέδιο εγκρίθηκε 30.06.2025.",
+          "source_document_ids": [
+            "24SYMV015170089",
+            "9ΥΟΕ4653Π8-ΠΘ7",
+            "636Ο4653Π8-Ο9Υ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015170089",
+            "https://diavgeia.gov.gr/doc/9ΥΟΕ4653Π8-ΠΘ7",
+            "https://diavgeia.gov.gr/doc/636Ο4653Π8-Ο9Υ"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Στάδιο προμελέτης",
+          "initial_completion_date": "2024-10-22",
+          "initial_date_basis": "explicit_contract_stage_deadline",
+          "final_completion_date": "2024-12-20",
+          "final_date_basis": "approved_partial_extension",
+          "notes": "Η παράταση αφορά το στάδιο της προμελέτης και όχι ρητή μεταβολή της συνολικής δεκάμηνης διάρκειας.",
+          "source_document_ids": [
+            "24SYMV015170089",
+            "9ΥΟΕ4653Π8-ΠΘ7"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015170089",
+            "https://diavgeia.gov.gr/doc/9ΥΟΕ4653Π8-ΠΘ7"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-55",
         "report-block-63",
@@ -1640,6 +2000,25 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Σύνολο σύμβασης σχεδίου αντιπυρικής προστασίας Αιγάλεω",
+          "initial_completion_date": "2025-10-13",
+          "initial_date_basis": "derived_from_signature_and_duration",
+          "final_completion_date": "2025-12-04",
+          "final_date_basis": "actual_approval_no_extension_found",
+          "notes": "Η δεκάμηνη αρχική διάρκεια υπολογίζεται από την υπογραφή της 13.12.2024. Δεν εντοπίστηκε πράξη παράτασης στα επτά αρχειοθετημένα αποτελέσματα. Η οριστική μελέτη υποβλήθηκε 11.07.2025 και εγκρίθηκε 04.12.2025.",
+          "source_document_ids": [
+            "24SYMV016017961",
+            "ΨΛ1Β4653Π8-Φ9Δ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV016017961",
+            "https://diavgeia.gov.gr/doc/ΨΛ1Β4653Π8-Φ9Δ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-68",
         "report-block-69",
@@ -1740,6 +2119,48 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2025-08-28",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2026-07-22",
+          "final_date_basis": "approved_extension",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από την εγκατάσταση της 28.05.2025. Με διαδοχικές παρατάσεις η τελευταία πράξη εγκρίνει 22.07.2026. Το αίτημα ανέφερε 31.07.2026 αλλά το διατακτικό ορίζει 22.07.2026.",
+          "source_document_ids": [
+            "25SYMV016570021",
+            "Ψ5Ξ64653Π8-ΖΑΩ",
+            "ΨΕ584653Π8-3Ψ8",
+            "68ΘΔ4653Π8-ΟΕ7"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016570021",
+            "https://diavgeia.gov.gr/doc/Ψ5Ξ64653Π8-ΖΑΩ",
+            "https://diavgeia.gov.gr/doc/ΨΕ584653Π8-3Ψ8",
+            "https://diavgeia.gov.gr/doc/68ΘΔ4653Π8-ΟΕ7"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2025-09-03",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2026-05-31",
+          "final_date_basis": "approved_extension",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από την εγκατάσταση της 03.06.2025. Η τελευταία ρητή εγκεκριμένη λήξη που εντοπίστηκε για τα Μέγαρα είναι 31.05.2026.",
+          "source_document_ids": [
+            "25SYMV016570021",
+            "Ψ5Ξ64653Π8-ΖΑΩ",
+            "91ΥΑ4653Π8-ΛΤΜ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016570021",
+            "https://diavgeia.gov.gr/doc/Ψ5Ξ64653Π8-ΖΑΩ",
+            "https://diavgeia.gov.gr/doc/91ΥΑ4653Π8-ΛΤΜ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-72",
         "report-block-73",
@@ -1902,6 +2323,23 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Αιγάλεω και Μέγαρα — εργασίες ανά Εντολή Ανάθεσης",
+          "initial_completion_date": null,
+          "initial_date_basis": "per_work_order_unknown",
+          "final_completion_date": null,
+          "final_date_basis": "per_work_order_unknown",
+          "notes": "Η σύμβαση δεν έχει μία ενιαία ημερομηνία λήξης. Κάθε εργασία ενεργοποιείται με χωριστή Εντολή Ανάθεσης που ορίζει τη δική της προθεσμία. Δεν τεκμηριώθηκε εντολή εκτέλεσης για Αιγάλεω ή Μέγαρα στο αρχειοθετημένο σύνολο.",
+          "source_document_ids": [
+            "25SYMV017345053"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017345053"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-78",
         "report-block-79",
@@ -2048,6 +2486,50 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2026-02-20",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2026-05-26",
+          "final_date_basis": "approved_updated_schedule",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από την εγκατάσταση της 20.11.2025. Μετά από αναστολές και παρατάσεις το τελευταίο εγκεκριμένο χρονοδιάγραμμα αναγράφει προβλεπόμενο πέρας 26.05.2026.",
+          "source_document_ids": [
+            "25SYMV017471439",
+            "9ΤΖ74653Π8-ΛΙ5",
+            "6ΧΖΟ4653Π8-3ΧΠ",
+            "65ΕΔ4653Π8-ΝΜΕ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017471439",
+            "https://diavgeia.gov.gr/doc/9ΤΖ74653Π8-ΛΙ5",
+            "https://diavgeia.gov.gr/doc/6ΧΖΟ4653Π8-3ΧΠ",
+            "https://diavgeia.gov.gr/doc/65ΕΔ4653Π8-ΝΜΕ"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2026-02-19",
+          "initial_date_basis": "derived_from_installation_and_duration",
+          "final_completion_date": "2026-05-26",
+          "final_date_basis": "approved_updated_schedule",
+          "notes": "Η αρχική λήξη υπολογίζεται ως τρεις μήνες από την εγκατάσταση της 19.11.2025. Μετά από αναστολές και παρατάσεις το τελευταίο εγκεκριμένο χρονοδιάγραμμα αναγράφει προβλεπόμενο πέρας 26.05.2026.",
+          "source_document_ids": [
+            "25SYMV017471439",
+            "9ΤΖ74653Π8-ΛΙ5",
+            "ΡΤΦ44653Π8-Υ2Β",
+            "65ΕΔ4653Π8-ΝΜΕ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017471439",
+            "https://diavgeia.gov.gr/doc/9ΤΖ74653Π8-ΛΙ5",
+            "https://diavgeia.gov.gr/doc/ΡΤΦ44653Π8-Υ2Β",
+            "https://diavgeia.gov.gr/doc/65ΕΔ4653Π8-ΝΜΕ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-84",
         "report-block-85",
@@ -2181,6 +2663,42 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Δασαρχείο Αιγάλεω",
+          "initial_completion_date": "2026-06-30",
+          "initial_date_basis": "explicit_contract_cap",
+          "final_completion_date": "2026-07-20",
+          "final_date_basis": "approved_extension",
+          "notes": "Η σύμβαση ορίζει αρχικό απώτατο όριο 30.06.2026. Η τμηματική παράταση για Αιγάλεω και Μέγαρα εγκρίθηκε έως 20.07.2026.",
+          "source_document_ids": [
+            "26SYMV018599431",
+            "Ψ7Ψ34653Π8-Ε5Ι"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018599431",
+            "https://diavgeia.gov.gr/doc/Ψ7Ψ34653Π8-Ε5Ι"
+          ],
+          "research_cutoff": "2026-08-12"
+        },
+        {
+          "scope": "Δασαρχείο Μεγάρων",
+          "initial_completion_date": "2026-06-30",
+          "initial_date_basis": "explicit_contract_cap",
+          "final_completion_date": "2026-07-20",
+          "final_date_basis": "approved_extension",
+          "notes": "Η σύμβαση ορίζει αρχικό απώτατο όριο 30.06.2026. Η τμηματική παράταση για Αιγάλεω και Μέγαρα εγκρίθηκε έως 20.07.2026.",
+          "source_document_ids": [
+            "26SYMV018599431",
+            "Ψ7Ψ34653Π8-Ε5Ι"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018599431",
+            "https://diavgeia.gov.gr/doc/Ψ7Ψ34653Π8-Ε5Ι"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-89",
         "report-block-90",
@@ -2309,6 +2827,29 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Συμπληρωματικές εργασίες Αιγάλεω και Μεγάρων",
+          "initial_completion_date": "2026-05-26",
+          "initial_date_basis": "explicit_supplement_deadline",
+          "final_completion_date": "2026-05-26",
+          "final_date_basis": "no_later_extension_identified",
+          "notes": "Η συμπληρωματική πράξη ορίζει 20 ημερολογιακές ημέρες από την υπογραφή. Τα εγκεκριμένα χρονοδιαγράμματα Αιγάλεω και Μεγάρων αναγράφουν πέρας 26.05.2026.",
+          "source_document_ids": [
+            "26SYMV018936694",
+            "65ΕΔ4653Π8-ΝΜΕ",
+            "6ΧΖΟ4653Π8-3ΧΠ",
+            "ΡΤΦ44653Π8-Υ2Β"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018936694",
+            "https://diavgeia.gov.gr/doc/65ΕΔ4653Π8-ΝΜΕ",
+            "https://diavgeia.gov.gr/doc/6ΧΖΟ4653Π8-3ΧΠ",
+            "https://diavgeia.gov.gr/doc/ΡΤΦ44653Π8-Υ2Β"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-86"
       ],
@@ -2401,6 +2942,25 @@
           "section": "Μέρος Α — Αρχική ανάλυση των εννέα συμβάσεων"
         }
       },
+      "completion_details": [
+        {
+          "scope": "Συμπληρωματικές εργασίες Δασαρχείου Χαλκίδας",
+          "initial_completion_date": "2026-05-20",
+          "initial_date_basis": "explicit_supplement_deadline",
+          "final_completion_date": "2026-05-20",
+          "final_date_basis": "no_later_extension_identified",
+          "notes": "Η πράξη ορίζει ρητά πέρας έως 20.05.2026 ή 13 ημέρες από την υπογραφή. Αφορά τη Χαλκίδα και διατηρείται στην ανάλυση μόνο ως σύνδεση με τη μητρική σύμβαση.",
+          "source_document_ids": [
+            "26SYMV018978343",
+            "6Ν464653Π8-Ω6Ρ"
+          ],
+          "source_urls": [
+            "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018978343",
+            "https://diavgeia.gov.gr/doc/6Ν464653Π8-Ω6Ρ"
+          ],
+          "research_cutoff": "2026-08-12"
+        }
+      ],
       "finding_ids": [
         "report-block-81"
       ],

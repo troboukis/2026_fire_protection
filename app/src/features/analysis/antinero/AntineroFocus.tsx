@@ -72,7 +72,7 @@ function FocusScene({ selectedId, selectedContractId, connectionId, relationKind
     right = report.categories.filter(item => allDocuments.some(doc => doc.categoryId === item.id)).map(item => categoryNeighbor(item.id, () => setCategoryId(item.id)))
   }
   const origins = left.map((item, index) => ({ ...item, y: (index + 1) / (left.length + 1) * 100 }))
-  const branchLabel = connection ? connection.kind === 'amendment' ? 'Τροποποίηση ή συμπλήρωση σύμβασης' : 'Συνδεδεμένη σύμβαση' : 'Συνδεόμενα έγγραφα στη Διαύγεια'
+  const branchLabel = connection ? connection.kind === 'amendment' ? 'Τροποποίηση ή συμπλήρωση σύμβασης' : 'Συνδεδεμένη σύμβαση' : 'Αποφάσεις στη Διαύγεια'
   const originLabel = category ? 'Σύμβαση προέλευσης' : decision ? 'Προέλευση εγγράφου' : connection ? 'Σύμβαση προέλευσης' : 'Συνδεδεμένες συμβάσεις'
 
   function neighborButton(item: Neighbor, side: 'left' | 'right', y?: number) {
@@ -85,7 +85,7 @@ function FocusScene({ selectedId, selectedContractId, connectionId, relationKind
   return <>
     <div className="report-focus-context">
       <div>{category ? <button className="report-focus-back" onClick={() => setCategoryId(null)}>← Πίσω στη σύμβαση</button> : decision ? <button className="report-focus-back" onClick={() => onCategorySelect(contract.id, decision.categoryId)}>← Στην κατηγορία εγγράφων</button> : <span>Επιλεγμένη σύμβασην &amp; έγγραφα από τη Διαύγεια</span>}</div>
-      <span>{category ? `${documents.length} έγγραφα από τη Διαύγεια που ανήκουν στην κατηγορία ${category.label}` : decision ? 'Έγγραφο της Διαύγειας' : `${left.length + right.length} συνδεδεμένοι κόμβοι`}</span>
+      <span>{category ? `${documents.length} έγγραφα από τη Διαύγεια που ανήκουν στην κατηγορία ${category.label}` : decision ? 'Έγγραφο της Διαύγειας' : ``}</span>
     </div>
     <div className="report-focus-stage" style={{ '--category-color': color } as CSSProperties}>
       <svg className="report-focus-lines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
