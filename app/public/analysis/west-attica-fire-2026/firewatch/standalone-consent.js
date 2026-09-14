@@ -1,46 +1,6 @@
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
-import { fileURLToPath } from 'node:url'
-import path from 'node:path'
-
-const scriptDir = path.dirname(fileURLToPath(import.meta.url))
-const repoRoot = path.resolve(scriptDir, '..')
-const sourceDir = path.resolve(repoRoot, '../mega_fire_2026/app/dist')
-const targetDir = path.resolve(repoRoot, 'app/public/analysis/west-attica-fire-2026')
-const appDir = path.resolve(repoRoot, 'app')
-const expectedBase = '/analysis/west-attica-fire-2026/'
-const publishedEventId = 'attica-boeotia-2026'
-
-function parseEnvValue(contents, key) {
-  for (const rawLine of contents.split(/\r?\n/)) {
-    const line = rawLine.trim()
-    if (!line || line.startsWith('#')) continue
-    const separator = line.indexOf('=')
-    if (separator === -1 || line.slice(0, separator).trim() !== key) continue
-    return line.slice(separator + 1).trim().replace(/^(["'])(.*)\1$/, '$2')
-  }
-  return null
-}
-
-async function readGoogleAnalyticsId() {
-  if (process.env.VITE_GA_MEASUREMENT_ID) return process.env.VITE_GA_MEASUREMENT_ID
-
-  for (const envName of ['.env.local', '.env']) {
-    try {
-      const contents = await readFile(path.join(appDir, envName), 'utf8')
-      const value = parseEnvValue(contents, 'VITE_GA_MEASUREMENT_ID')
-      if (value) return value
-    } catch (error) {
-      if (error?.code !== 'ENOENT') throw error
-    }
-  }
-
-  throw new Error('VITE_GA_MEASUREMENT_ID is required to publish the standalone map.')
-}
-
-function standaloneConsentScript(measurementId) {
-  return `(() => {
+(() => {
   const CookieConsent = window.CookieConsent;
-  const GA_ID = ${JSON.stringify(measurementId)};
+  const GA_ID = "G-P692F2LTH8";
   const GA_SCRIPT_ID = 'firewatch-google-analytics';
   const ANALYTICS_CATEGORY = 'analytics';
   const analyticsEnabled = new Set([
@@ -100,9 +60,9 @@ function standaloneConsentScript(measurementId) {
 
     const shell = document.createElement('div');
     shell.className = 'firewatch-footer-shell';
-    shell.innerHTML = \`<footer class="site-footer">
-      © \${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms">Όροι χρήσης</a> · <a href="/privacy">Απόρρητο &amp; cookies</a> · <button type="button">Ρυθμίσεις cookies</button>
-    </footer>\`;
+    shell.innerHTML = `<footer class="site-footer">
+      © ${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms">Όροι χρήσης</a> · <a href="/privacy">Απόρρητο &amp; cookies</a> · <button type="button">Ρυθμίσεις cookies</button>
+    </footer>`;
 
     shell.querySelector('button')?.addEventListener('click', () => {
       CookieConsent.showPreferences();
@@ -112,7 +72,7 @@ function standaloneConsentScript(measurementId) {
     const syncFooterHeight = () => {
       document.documentElement.style.setProperty(
         '--firewatch-footer-height',
-        \`\${shell.getBoundingClientRect().height}px\`,
+        `${shell.getBoundingClientRect().height}px`,
       );
     };
     syncFooterHeight();
@@ -225,143 +185,4 @@ function standaloneConsentScript(measurementId) {
       },
     },
   }).then(() => syncGoogleAnalytics(true));
-})();\n`
-}
-
-const standaloneFooterCss = `:root {
-  --firewatch-footer-height: 0px;
-}
-
-.wwf-page {
-  bottom: var(--firewatch-footer-height) !important;
-}
-
-.firewatch-footer-shell {
-  --paper: #f7f5ee;
-  --paper-2: #f1eee5;
-  --ink: #111111;
-  --ink-soft: #4d4d4d;
-  --ink-faint: #89857c;
-  --line: #cfc8bb;
-  --accent: #d3482d;
-  --font-sans: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, Menlo, monospace;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 6;
-  box-sizing: border-box;
-  padding: 0 max(1rem, env(safe-area-inset-right)) calc(0.55rem + env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
-  border-top: 1px solid var(--line);
-  background: #efede4;
-}
-
-.site-footer {
-  margin-top: 0;
-  padding: 0.35rem 0 0;
-  color: var(--ink-faint);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.site-footer a {
-  color: var(--ink-soft);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
-.site-footer button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--ink-soft);
-  font: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  cursor: pointer;
-}
-
-.site-footer a:hover,
-.site-footer a:focus-visible,
-.site-footer button:hover,
-.site-footer button:focus-visible {
-  color: var(--accent);
-  outline: none;
-}
-`
-
-async function syncDist() {
-  const sourceIndex = await readFile(path.join(sourceDir, 'index.html'), 'utf8')
-
-  if (!sourceIndex.includes(`${expectedBase}assets/`)) {
-    throw new Error(
-      `The mega_fire_2026 dist is not built for ${expectedBase}. Run npm run build in mega_fire_2026/app first.`,
-    )
-  }
-
-  const measurementId = await readGoogleAnalyticsId()
-
-  await rm(targetDir, { recursive: true, force: true })
-  await mkdir(targetDir, { recursive: true })
-  await cp(sourceDir, targetDir, {
-    recursive: true,
-    force: true,
-    filter: (source) => {
-      if (path.basename(source) === '.DS_Store') return false
-
-      const relativePath = path.relative(sourceDir, source)
-      const pathParts = relativePath.split(path.sep)
-      if (pathParts[0] === 'chalkidiki-2026') return false
-      if (pathParts[0] === 'assets' && path.basename(source).startsWith('chalkidiki2026-')) return false
-      if (pathParts[0] === 'data' && pathParts[1] && pathParts[1] !== publishedEventId) return false
-
-      return true
-    },
-  })
-
-  const vendorDir = path.join(targetDir, 'firewatch')
-  await mkdir(vendorDir, { recursive: true })
-  await cp(
-    path.join(appDir, 'node_modules/vanilla-cookieconsent/dist/cookieconsent.css'),
-    path.join(vendorDir, 'cookieconsent.css'),
-  )
-  await cp(
-    path.join(appDir, 'node_modules/vanilla-cookieconsent/dist/cookieconsent.umd.js'),
-    path.join(vendorDir, 'cookieconsent.umd.js'),
-  )
-  await writeFile(
-    path.join(vendorDir, 'standalone-consent.js'),
-    standaloneConsentScript(measurementId),
-    'utf8',
-  )
-  await writeFile(
-    path.join(vendorDir, 'standalone-footer.css'),
-    standaloneFooterCss,
-    'utf8',
-  )
-
-  const headMarkup = [
-    '    <meta name="description" content="Διαδραστικός χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική το 2026." />',
-    `    <link rel="canonical" href="https://www.fire-watch-app.gr${expectedBase}" />`,
-    `    <link rel="stylesheet" href="${expectedBase}firewatch/cookieconsent.css" />`,
-    `    <link rel="stylesheet" href="${expectedBase}firewatch/standalone-footer.css" />`,
-  ].join('\n')
-  const bodyMarkup = [
-    `    <script src="${expectedBase}firewatch/cookieconsent.umd.js"></script>`,
-    `    <script src="${expectedBase}firewatch/standalone-consent.js"></script>`,
-  ].join('\n')
-
-  const outputIndex = sourceIndex
-    .replace('  </head>', `${headMarkup}\n  </head>`)
-    .replace('  </body>', `${bodyMarkup}\n  </body>`)
-
-  await writeFile(path.join(targetDir, 'index.html'), outputIndex, 'utf8')
-}
-
-await syncDist()
-console.log(`Synced ${sourceDir} to ${targetDir}`)
+})();
