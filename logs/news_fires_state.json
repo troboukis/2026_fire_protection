@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564454483/to-peirama-gia-ena-alliotiko-scholeio-sto-chorio/",
-      "title": "Το πείραμα για ένα αλλιώτικο σχολείο στο χωριό",
-      "normalized_title": "ΤΟ ΠΕΙΡΑΜΑ ΓΙΑ ΕΝΑ ΑΛΛΙΩΤΙΚΟ ΣΧΟΛΕΙΟ ΣΤΟ ΧΩΡΙΟ",
+      "url": "https://www.kathimerini.gr/world/564454456/to-pazari-ton-kataskopon/",
+      "title": "Το παζάρι των κατασκόπων",
+      "normalized_title": "ΤΟ ΠΑΖΑΡΙ ΤΩΝ ΚΑΤΑΣΚΟΠΩΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564454483/to-peirama-gia-ena-alliotiko-scholeio-sto-chorio/",
-        "https://www.kathimerini.gr/society/564457705/thanatos-mazonaki-to-proto-alarm-kata-tin-plasmafairesi-kai-to-dioro-mechri-tin-klisi-sto-ekav/",
-        "https://www.kathimerini.gr/athletics/analysis/564457726/ti-kanete-more-var-istes-na-toyfekane-var-istes/",
-        "https://www.kathimerini.gr/economy/564454756/arthro-toy-p-varthaliti-pos-axiopoioyme-toys-poroys-toy-tameioy-synochis/"
+        "https://www.kathimerini.gr/world/564454456/to-pazari-ton-kataskopon/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564454258/synantisi-diethnoys-velinekoys-ton-presveon-kalis-theliseos-tis-unesco-stin-athina/",
+        "https://www.kathimerini.gr/politics/564454303/pasok-dimetopos-mechri-to-telos/",
+        "https://www.kathimerini.gr/economy/564454693/forologisi-eisodimaton-poy-apoktontai-stin-ellada/",
+        "https://www.kathimerini.gr/culture/564455092/me-ta-dyo-podia-s-ena-psilotakoyno/"
       ],
-      "seen_at_utc": "2026-09-14T17:30:02.979142+00:00"
+      "seen_at_utc": "2026-09-14T17:51:17.394561+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,34 +1263,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878759/epithesi-apo-tsakali-dehtike-mikro-paidi-stin-halkidiki/?utm_source=rss",
-      "title": "Επίθεση από τσακάλι δέχτηκε μικρό παιδί στην Χαλκιδική",
-      "normalized_title": "ΕΠΙΘΕΣΗ ΑΠΟ ΤΣΑΚΑΛΙ ΔΕΧΤΗΚΕ ΜΙΚΡΟ ΠΑΙΔΙ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1878766/hristodoulidis-sumfonisa-me-ton-mitsotaki-na-plirosoume-ta-25-ekat-gia-ton-gsi-molis-ekdothei-i-navtex/?utm_source=rss",
+      "title": "Χριστοδουλίδης: Συμφώνησα με τον Μητσοτάκη να πληρώσουμε τα €25 εκατ. για τον GSI μόλις εκδοθεί η NAVTEX για την πόντιση του καλωδίου",
+      "normalized_title": "ΧΡΙΣΤΟΔΟΥΛΙΔΗΣ: ΣΥΜΦΩΝΗΣΑ ΜΕ ΤΟΝ ΜΗΤΣΟΤΑΚΗ ΝΑ ΠΛΗΡΩΣΟΥΜΕ ΤΑ €25 ΕΚΑΤ. ΓΙΑ ΤΟΝ GSI ΜΟΛΙΣ ΕΚΔΟΘΕΙ Η NAVTEX ΓΙΑ ΤΗΝ ΠΟΝΤΙΣΗ ΤΟΥ ΚΑΛΩΔΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878759/epithesi-apo-tsakali-dehtike-mikro-paidi-stin-halkidiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878757/baraz-sullipseon-gia-paranoma-trapezokathismata-sti-halki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878766/hristodoulidis-sumfonisa-me-ton-mitsotaki-na-plirosoume-ta-25-ekat-gia-ton-gsi-molis-ekdothei-i-navtex/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T17:30:02.979303+00:00"
+      "seen_at_utc": "2026-09-14T17:51:17.394681+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1467011/nea-telesigrafa-tramp-to-iran-thelei-apegnosmena-mia-symfonia-ego-apofasizo/",
-      "title": "Νέα «τελεσίγραφα» Τραμπ: «Το Ιράν θέλει απεγνωσμένα μία συμφωνία – Εγώ αποφασίζω»",
-      "normalized_title": "ΝΕΑ «ΤΕΛΕΣΙΓΡΑΦΑ» ΤΡΑΜΠ: «ΤΟ ΙΡΑΝ ΘΕΛΕΙ ΑΠΕΓΝΩΣΜΕΝΑ ΜΙΑ ΣΥΜΦΩΝΙΑ – ΕΓΩ ΑΠΟΦΑΣΙΖΩ»",
+      "url": "https://www.efsyn.gr/kosmos/1467030/tragodia-sti-germania-treis-nekroi-meta-apo-syntrivi-idiotikoy-aeroskafoys/",
+      "title": "Τραγωδία στη Γερμανία: Τρεις νεκροί μετά από συντριβή ιδιωτικού αεροσκάφους",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΓΕΡΜΑΝΙΑ: ΤΡΕΙΣ ΝΕΚΡΟΙ ΜΕΤΑ ΑΠΟ ΣΥΝΤΡΙΒΗ ΙΔΙΩΤΙΚΟΥ ΑΕΡΟΣΚΑΦΟΥΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1467011/nea-telesigrafa-tramp-to-iran-thelei-apegnosmena-mia-symfonia-ego-apofasizo/",
-        "https://www.efsyn.gr/politiki/1467019/ergasiaki-diafora-piso-apo-to-aitima-gia-arsi-tis-asylias-toy-nikoy-papandreoy/"
+        "https://www.efsyn.gr/kosmos/1467030/tragodia-sti-germania-treis-nekroi-meta-apo-syntrivi-idiotikoy-aeroskafoys/",
+        "https://www.efsyn.gr/ellada/1467012/giorgos-mazonakis-to-mihanima-plasmafairesis-deihnei-thromvosi-sta-prota-10-lepta-fotografies-kai-vinteo-sta-arheia-poy-diegrapsan/",
+        "https://www.efsyn.gr/ellada/1467025/halkidiki-pentahrono-dehthike-epithesi-apo-agrio-zoo-sto-neo-marmara/",
+        "https://www.efsyn.gr/kosmos/1467013/epitheseis-se-ypodomes-energeias-o-tramp-anakoinose-oti-rosia-kai-oykrania-stamatoyn-o-zelenski-zita-desmeyseis/"
       ],
-      "seen_at_utc": "2026-09-14T17:30:02.979253+00:00"
+      "seen_at_utc": "2026-09-14T17:51:17.394643+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/life/to-stemma-xarassotan-sto-derma-ton-sklavon-me-kayto-metallo-i-vretaniki-monarxia-kai-to-doulemporio/",
-      "title": "Το στέμμα χαρασσόταν στο δέρμα των σκλάβων με καυτό μέταλλο - Η βρετανική μοναρχία και το δουλεμπόριο",
-      "normalized_title": "ΤΟ ΣΤΕΜΜΑ ΧΑΡΑΣΣΟΤΑΝ ΣΤΟ ΔΕΡΜΑ ΤΩΝ ΣΚΛΑΒΩΝ ΜΕ ΚΑΥΤΟ ΜΕΤΑΛΛΟ - Η ΒΡΕΤΑΝΙΚΗ ΜΟΝΑΡΧΙΑ ΚΑΙ ΤΟ ΔΟΥΛΕΜΠΟΡΙΟ",
+      "url": "https://www.in.gr/2026/09/14/world/tragodia-sti-notia-afriki-21-nekroi-se-karampola-trion-oximaton/",
+      "title": "Τραγωδία στη Νότια Αφρική: 21 νεκροί σε καραμπόλα τριών οχημάτων",
+      "normalized_title": "ΤΡΑΓΩΔΙΑ ΣΤΗ ΝΟΤΙΑ ΑΦΡΙΚΗ: 21 ΝΕΚΡΟΙ ΣΕ ΚΑΡΑΜΠΟΛΑ ΤΡΙΩΝ ΟΧΗΜΑΤΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/life/to-stemma-xarassotan-sto-derma-ton-sklavon-me-kayto-metallo-i-vretaniki-monarxia-kai-to-doulemporio/"
+        "https://www.in.gr/2026/09/14/world/tragodia-sti-notia-afriki-21-nekroi-se-karampola-trion-oximaton/",
+        "https://www.in.gr/2026/09/14/world/i-ee-pareteine-tis-rosikes-kyroseis-gia-mia-evdomada-aitia-diafonia-gia-diagrafi-rosou-oligarxi-apo-ti-lista/",
+        "https://www.in.gr/2026/09/14/sports/football/i-ataka-fotia-tou-giamal-gia-mesi-marantona-kai-ronalnto/",
+        "https://www.in.gr/2026/09/14/world/souidia-se-antithesi-me-oti-symvainei-stin-ypoloipi-eyropi-i-akrodeksia-exase-edafos/"
       ],
-      "seen_at_utc": "2026-09-14T17:30:02.979207+00:00"
+      "seen_at_utc": "2026-09-14T17:51:17.394614+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T17:30:02.979397+00:00"
+  "updated_at_utc": "2026-09-14T17:51:17.394749+00:00"
 }
