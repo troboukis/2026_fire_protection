@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564457756/pyra-netaniachoy-gia-to-ntokimanter-naza-paroysiazei-tis-dynameis-mas-san-egklimaties-polemoy/",
-      "title": "Πυρά Νετανιάχου για το ντοκιμαντέρ ΝΑΖΑ: «Παρουσιάζει τις δυνάμεις μας σαν εγκληματίες πολέμου»",
-      "normalized_title": "ΠΥΡΑ ΝΕΤΑΝΙΑΧΟΥ ΓΙΑ ΤΟ ΝΤΟΚΙΜΑΝΤΕΡ ΝΑΖΑ: «ΠΑΡΟΥΣΙΑΖΕΙ ΤΙΣ ΔΥΝΑΜΕΙΣ ΜΑΣ ΣΑΝ ΕΓΚΛΗΜΑΤΙΕΣ ΠΟΛΕΜΟΥ»",
+      "url": "https://www.kathimerini.gr/politics/564457645/kikilias-aparaititi-i-kleisti-domi-sto-irakleio-meiosi-60-stis-metanasteytikes-roes-apo-tin-toyrkia/",
+      "title": "Κικίλιας: «Απαραίτητη η κλειστή δομή στο Ηράκλειο» – Μείωση 60% στις μεταναστευτικές ροές από την Τουρκία",
+      "normalized_title": "ΚΙΚΙΛΙΑΣ: «ΑΠΑΡΑΙΤΗΤΗ Η ΚΛΕΙΣΤΗ ΔΟΜΗ ΣΤΟ ΗΡΑΚΛΕΙΟ» – ΜΕΙΩΣΗ 60% ΣΤΙΣ ΜΕΤΑΝΑΣΤΕΥΤΙΚΕΣ ΡΟΕΣ ΑΠΟ ΤΗΝ ΤΟΥΡΚΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564457756/pyra-netaniachoy-gia-to-ntokimanter-naza-paroysiazei-tis-dynameis-mas-san-egklimaties-polemoy/",
-        "https://www.kathimerini.gr/world/564457846/servia-oi-foitites-katevainoyn-stis-ekloges-me-diko-toys-psifodeltio/",
-        "https://www.kathimerini.gr/world/564457696/sigkapoyri-se-dimoprasia-ekatontades-luxury-tsantes-apo-ypothesi-xeplymatos-dyo-dis-eyro/"
+        "https://www.kathimerini.gr/politics/564457645/kikilias-aparaititi-i-kleisti-domi-sto-irakleio-meiosi-60-stis-metanasteytikes-roes-apo-tin-toyrkia/",
+        "https://www.kathimerini.gr/world/564457807/vretania-omologise-pos-narkone-kai-viaze-ti-syzygo-toy-epi-dyo-dekaeties/",
+        "https://www.kathimerini.gr/culture/564457603/festival-romis-timitiko-vraveio-ston-chavier-mpardem-gia-ti-synoliki-prosfora-toy/"
       ],
-      "seen_at_utc": "2026-09-14T19:30:05.089158+00:00"
+      "seen_at_utc": "2026-09-14T19:51:14.480126+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1270,23 +1270,29 @@
       "seen_at_utc": "2026-09-14T19:30:05.089283+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1467073/giati-i-diafimisi-tis-sintnei-soyini-exorgise-gynaikes-athlitries-kai-olympionikes-vinteo/",
-      "title": "Γιατί η διαφήμιση της Σίντνεϊ Σουίνι εξόργισε γυναίκες αθλήτριες και ολυμπιονίκες: [βίντεο]",
-      "normalized_title": "ΓΙΑΤΙ Η ΔΙΑΦΗΜΙΣΗ ΤΗΣ ΣΙΝΤΝΕΙ ΣΟΥΙΝΙ ΕΞΟΡΓΙΣΕ ΓΥΝΑΙΚΕΣ ΑΘΛΗΤΡΙΕΣ ΚΑΙ ΟΛΥΜΠΙΟΝΙΚΕΣ: [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1467083/konstantopoyloy-gia-giorgo-mazonaki-apohairetisame-simera-enan-megalo-kallitehni/",
+      "title": "Κωνσταντοπούλου για Γιώργο Μαζωνάκη: Αποχαιρετίσαμε σήμερα έναν μεγάλο καλλιτέχνη",
+      "normalized_title": "ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ ΓΙΑ ΓΙΩΡΓΟ ΜΑΖΩΝΑΚΗ: ΑΠΟΧΑΙΡΕΤΙΣΑΜΕ ΣΗΜΕΡΑ ΕΝΑΝ ΜΕΓΑΛΟ ΚΑΛΛΙΤΕΧΝΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1467073/giati-i-diafimisi-tis-sintnei-soyini-exorgise-gynaikes-athlitries-kai-olympionikes-vinteo/"
+        "https://www.efsyn.gr/politiki/1467083/konstantopoyloy-gia-giorgo-mazonaki-apohairetisame-simera-enan-megalo-kallitehni/",
+        "https://www.efsyn.gr/ellada/1467071/exi-martyries-gia-to-iatreio-poy-epathe-anakopi-o-mazonakis-o-metritis-ayras-o-diagnostikos-magnitis-kai-oi-kefales-samoyrai/",
+        "https://www.efsyn.gr/kosmos/1467077/oykrania-o-zelenski-apepempse-ton-geniko-eisaggelea-tis-horas-gia-diafthora-eno-eihe-idi-paraitithei/"
       ],
-      "seen_at_utc": "2026-09-14T19:30:05.089259+00:00"
+      "seen_at_utc": "2026-09-14T19:51:14.480220+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/go-fun/fizz/oi-aggeloi-tou-tsarli-i-prosklisi-se-trio-kai-i-protasi-tou-1-ekat-dolarion-gia-gymni-fotografisi/",
-      "title": "Οι Άγγελοι του Τσάρλι, η πρόσκληση σε «τρίο» και η πρόταση του 1 εκατ. δολαρίων για γυμνή φωτογράφιση",
-      "normalized_title": "ΟΙ ΑΓΓΕΛΟΙ ΤΟΥ ΤΣΑΡΛΙ, Η ΠΡΟΣΚΛΗΣΗ ΣΕ «ΤΡΙΟ» ΚΑΙ Η ΠΡΟΤΑΣΗ ΤΟΥ 1 ΕΚΑΤ. ΔΟΛΑΡΙΩΝ ΓΙΑ ΓΥΜΝΗ ΦΩΤΟΓΡΑΦΙΣΗ",
+      "url": "https://www.in.gr/2026/09/14/world/xouthi-i-saoudiki-aravia-eksapelyse-perissoteres-apo-50-aeroporikes-epidromes-pros-tin-yemeni-to-teleytaio-24oro/",
+      "title": "Χούθι: Η Σαουδική Αραβία εξαπέλυσε περισσότερες από 50 αεροπορικές επιδρομές προς την Υεμένη το τελευταίο 24ωρο",
+      "normalized_title": "ΧΟΥΘΙ: Η ΣΑΟΥΔΙΚΗ ΑΡΑΒΙΑ ΕΞΑΠΕΛΥΣΕ ΠΕΡΙΣΣΟΤΕΡΕΣ ΑΠΟ 50 ΑΕΡΟΠΟΡΙΚΕΣ ΕΠΙΔΡΟΜΕΣ ΠΡΟΣ ΤΗΝ ΥΕΜΕΝΗ ΤΟ ΤΕΛΕΥΤΑΙΟ 24ΩΡΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/go-fun/fizz/oi-aggeloi-tou-tsarli-i-prosklisi-se-trio-kai-i-protasi-tou-1-ekat-dolarion-gia-gymni-fotografisi/"
+        "https://www.in.gr/2026/09/14/world/xouthi-i-saoudiki-aravia-eksapelyse-perissoteres-apo-50-aeroporikes-epidromes-pros-tin-yemeni-to-teleytaio-24oro/",
+        "https://www.in.gr/2026/09/14/go-fun/fizz/afroditi-manou-gia-giorgo-mazonaki-den-ton-iksera-to-laiko-proskynima-einai-karfi-sto-feretro-ton-oneiron/",
+        "https://www.in.gr/2026/09/14/greece/synelifthi-17xronos-pou-epitethike-se-42xroni-gia-na-tis-listepsei-tin-alysida-laimou-ston-agio-panteleimona/",
+        "https://www.in.gr/2026/09/14/sports/football/panathinaikos-thlasi-v-vathmou-o-tamporda-poia-mats-tha-xasei/",
+        "https://www.in.gr/2026/09/14/economy/oikonomikes-eidiseis/gallia-den-perisseyei-oute-ena-eyro-epipleon-gia-tis-syntakseis/"
       ],
-      "seen_at_utc": "2026-09-14T19:30:05.089219+00:00"
+      "seen_at_utc": "2026-09-14T19:51:14.480184+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T19:30:05.089367+00:00"
+  "updated_at_utc": "2026-09-14T19:51:14.480291+00:00"
 }
