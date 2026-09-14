@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564457261/eyvoia-synelifthi-40chronos-gia-treis-emprismoys-eiche-katadikastei-kai-to-2018/",
-      "title": "Εύβοια: Συνελήφθη 40χρονος για τρεις εμπρησμούς – Είχε καταδικαστεί και το 2018",
-      "normalized_title": "ΕΥΒΟΙΑ: ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΓΙΑ ΤΡΕΙΣ ΕΜΠΡΗΣΜΟΥΣ – ΕΙΧΕ ΚΑΤΑΔΙΚΑΣΤΕΙ ΚΑΙ ΤΟ 2018",
+      "url": "https://www.kathimerini.gr/world/564457255/polonia-o-stratos-anesyre-rosiko-drone-apo-ti-valtiki-thalassa/",
+      "title": "Πολωνία: Ο στρατός ανέσυρε ρωσικό drone από τη Βαλτική Θάλασσα",
+      "normalized_title": "ΠΟΛΩΝΙΑ: Ο ΣΤΡΑΤΟΣ ΑΝΕΣΥΡΕ ΡΩΣΙΚΟ DRONE ΑΠΟ ΤΗ ΒΑΛΤΙΚΗ ΘΑΛΑΣΣΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564457261/eyvoia-synelifthi-40chronos-gia-treis-emprismoys-eiche-katadikastei-kai-to-2018/"
+        "https://www.kathimerini.gr/world/564457255/polonia-o-stratos-anesyre-rosiko-drone-apo-ti-valtiki-thalassa/",
+        "https://www.kathimerini.gr/culture/tv/564457327/dyo-mayra-poykamisa-gnoriste-toys-charaktires-tis-neas-seiras-toy-mega/",
+        "https://www.kathimerini.gr/society/564457324/chalkidiki-megali-fotia-stin-elani-epicheiroyn-epigeies-kai-enaeries-dynameis/",
+        "https://www.kathimerini.gr/politics/564457291/royte-i-epithesi-se-treno-stin-oykrania-deichnei-poso-apegnosmenos-einai-o-poytin/",
+        "https://www.kathimerini.gr/economy/564454729/spiti-moy-iii-me-ligotera-kai-akrivotera-spitia/"
       ],
-      "seen_at_utc": "2026-09-14T12:51:29.523055+00:00"
+      "seen_at_utc": "2026-09-14T13:18:16.189369+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,43 +1263,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878551/diki-tebon-i-eisaggeleas-zitise-arsi-aporritou-gia-to-kinito-tou-stathmarhi-sto-mikroskopio-kliseis-kai-minumata/?utm_source=rss",
-      "title": "Δίκη Τεμπών: Η εισαγγελέας ζήτησε άρση απορρήτου για το κινητό του σταθμάρχη, στο μικροσκόπιο κλήσεις και μηνύματα",
-      "normalized_title": "ΔΙΚΗ ΤΕΜΠΩΝ: Η ΕΙΣΑΓΓΕΛΕΑΣ ΖΗΤΗΣΕ ΑΡΣΗ ΑΠΟΡΡΗΤΟΥ ΓΙΑ ΤΟ ΚΙΝΗΤΟ ΤΟΥ ΣΤΑΘΜΑΡΧΗ, ΣΤΟ ΜΙΚΡΟΣΚΟΠΙΟ ΚΛΗΣΕΙΣ ΚΑΙ ΜΗΝΥΜΑΤΑ",
+      "url": "https://www.protothema.gr/greece/article/1878571/prosorini-apagoreusi-apoplou-sto-super-express-logo-epakoumvisis-ston-limena-tis-rafinas/?utm_source=rss",
+      "title": "Προσωρινή απαγόρευση απόπλου στο «Super Express», λόγω επακούμβησης στον προβλήτα του λιμανιού της Ραφήνας",
+      "normalized_title": "ΠΡΟΣΩΡΙΝΗ ΑΠΑΓΟΡΕΥΣΗ ΑΠΟΠΛΟΥ ΣΤΟ «SUPER EXPRESS», ΛΟΓΩ ΕΠΑΚΟΥΜΒΗΣΗΣ ΣΤΟΝ ΠΡΟΒΛΗΤΑ ΤΟΥ ΛΙΜΑΝΙΟΥ ΤΗΣ ΡΑΦΗΝΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878551/diki-tebon-i-eisaggeleas-zitise-arsi-aporritou-gia-to-kinito-tou-stathmarhi-sto-mikroskopio-kliseis-kai-minumata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878548/sto-nosokomeio-4hrono-koritsaki-meta-apo-epithesi-skulou-sto-rethumno-epithesi-dehthike-kai-i-28hroni-mitera-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878546/oi-tafoi-einai-anoihtoi-kai-zitoun-dikaiosuni-ragise-kardies-i-mitera-tis-hrusas-kai-tis-thomis-pou-skotothikan-sta-tebi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878542/fotia-tora-stin-anatoli-larisas-sikothikan-5-enaeria-mesa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878540/adianoiti-dipli-paranomi-prosperasi-pano-se-strofi-ston-perifereiako-apo-agio-petro-pros-palaia-pedeli-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878571/prosorini-apagoreusi-apoplou-sto-super-express-logo-epakoumvisis-ston-limena-tis-rafinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878553/fotia-tora-se-dasos-stin-elani-halkidikis-112-gia-etoimotita-epiheiroun-epta-enaeria/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878552/sto-nosokomeio-hanion-vrefos-17-imeron-me-varia-kranioegefaliki-kakosi-sunelifthi-i-18hroni-mitera-tou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T12:51:29.523200+00:00"
+      "seen_at_utc": "2026-09-14T13:18:16.189489+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1466836/epiheirisi-i-oikogeneia-moy-einai-asfalis-efodos-ton-toyrkikon-arhon-se-stekia-loatki-kai-16-profylakiseis/",
-      "title": "Επιχείρηση «η οικογένειά μου είναι ασφαλής»: Έφοδος των τουρκικών αρχών σε στέκια ΛΟΑΤΚΙ+ και 16 προφυλακίσεις",
-      "normalized_title": "ΕΠΙΧΕΙΡΗΣΗ «Η ΟΙΚΟΓΕΝΕΙΑ ΜΟΥ ΕΙΝΑΙ ΑΣΦΑΛΗΣ»: ΕΦΟΔΟΣ ΤΩΝ ΤΟΥΡΚΙΚΩΝ ΑΡΧΩΝ ΣΕ ΣΤΕΚΙΑ ΛΟΑΤΚΙ+ ΚΑΙ 16 ΠΡΟΦΥΛΑΚΙΣΕΙΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1466864/trapeza-tis-ellados-sto-35-o-plithorismos-to-2026-ayxisi-16-se-shesi-me-to-2025/",
+      "title": "Τράπεζα της Ελλάδος: Στο 3,5% ο πληθωρισμός το 2026, αύξηση 1,6% σε σχέση με το 2025",
+      "normalized_title": "ΤΡΑΠΕΖΑ ΤΗΣ ΕΛΛΑΔΟΣ: ΣΤΟ 3,5% Ο ΠΛΗΘΩΡΙΣΜΟΣ ΤΟ 2026, ΑΥΞΗΣΗ 1,6% ΣΕ ΣΧΕΣΗ ΜΕ ΤΟ 2025",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1466836/epiheirisi-i-oikogeneia-moy-einai-asfalis-efodos-ton-toyrkikon-arhon-se-stekia-loatki-kai-16-profylakiseis/",
-        "https://www.efsyn.gr/politiki/1466842/famellos-erotisi-ston-prothypoyrgo-gia-tin-akriveia-sta-kaysima-os-edo-me-to-parti-tis-aishrokerdeias/",
-        "https://www.efsyn.gr/tehnes/1466537/kinitopoiiseis-ergazomenon-sto-megaro-moysikis/",
-        "https://www.efsyn.gr/ellada/1466520/ston-aera-gia-pano-apo-30-hronia-gymnasio-sti-halkidiki/",
-        "https://www.efsyn.gr/ellada/1466832/panelladiki-stasi-ergasias-ton-dikastikon-ypallilon-tin-tetarti-16-septemvrioy/"
+        "https://www.efsyn.gr/oikonomia/1466864/trapeza-tis-ellados-sto-35-o-plithorismos-to-2026-ayxisi-16-se-shesi-me-to-2025/",
+        "https://www.efsyn.gr/ellada/1466862/fotia-stin-elani-halkidikis-ihise-to-112-kinitopoiithikan-epta-enaeria-mesa/",
+        "https://www.efsyn.gr/politiki/1466861/doyroy-o-syriza-esteile-katharo-minyma-apo-ti-deth-einai-paron/",
+        "https://www.efsyn.gr/kosmos/1466859/thyella-antidraseon-gia-to-rosiko-pligma-se-treno-poy-pigaine-stin-polonia-apegnosmenos-o-poytin-leei-o-royte/",
+        "https://www.efsyn.gr/tehnes/1466547/taxidia-kai-diethneis-diakriseis-gia-ton-skinotheti-kosta-gaki/",
+        "https://www.efsyn.gr/ellada/1466825/stin-teleytaia-toy-katoikia-o-giorgos-mazonakis-tragoydia-kai-heirokrotimata-apo-plithos-kosmoy-vinteo-eikones/",
+        "https://www.efsyn.gr/ellada/1466853/fotia-sti-larisa-sikothikan-enaeria-mesa/",
+        "https://www.efsyn.gr/ellada/1466847/eyvoia-synelifthi-40hronos-gia-emprismo-apo-prothesi-omologise-kai-ypedeixe-tis-treis-esties/"
       ],
-      "seen_at_utc": "2026-09-14T12:51:29.523168+00:00"
+      "seen_at_utc": "2026-09-14T13:18:16.189459+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/world/stena-tou-ormouz-i-iraniki-arxi-eksedose-epikairopoiimeno-katalogo-ploion-pou-ypokeintai-se-kyroseis/",
-      "title": "Η ιρανική αρχή για τα Στενά του Ορμούζ εξέδωσε επικαιροποιημένο κατάλογο πλοίων που υπόκεινται σε κυρώσεις",
-      "normalized_title": "Η ΙΡΑΝΙΚΗ ΑΡΧΗ ΓΙΑ ΤΑ ΣΤΕΝΑ ΤΟΥ ΟΡΜΟΥΖ ΕΞΕΔΩΣΕ ΕΠΙΚΑΙΡΟΠΟΙΗΜΕΝΟ ΚΑΤΑΛΟΓΟ ΠΛΟΙΩΝ ΠΟΥ ΥΠΟΚΕΙΝΤΑΙ ΣΕ ΚΥΡΩΣΕΙΣ",
+      "url": "https://www.in.gr/2026/09/14/politics/politiki-grammateia/den-einai-mono-o-p-marinakis-voridis-min-sproxnoume-anthropous-na-pairnoun-1-000-eyro-ton-mina-kai-na-kathontai/",
+      "title": "Δεν είναι μόνο ο Π. Μαρινάκης – Βορίδης: Μην σπρώχνουμε ανθρώπους να παίρνουν 1.000 ευρώ τον μήνα και να κάθονται",
+      "normalized_title": "ΔΕΝ ΕΙΝΑΙ ΜΟΝΟ Ο Π. ΜΑΡΙΝΑΚΗΣ – ΒΟΡΙΔΗΣ: ΜΗΝ ΣΠΡΩΧΝΟΥΜΕ ΑΝΘΡΩΠΟΥΣ ΝΑ ΠΑΙΡΝΟΥΝ 1.000 ΕΥΡΩ ΤΟΝ ΜΗΝΑ ΚΑΙ ΝΑ ΚΑΘΟΝΤΑΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/world/stena-tou-ormouz-i-iraniki-arxi-eksedose-epikairopoiimeno-katalogo-ploion-pou-ypokeintai-se-kyroseis/",
-        "https://www.in.gr/2026/09/14/world/205055447/",
-        "https://www.in.gr/2026/09/14/go-fun/fizz/giorgos-mazonakis-poioi-synadelfoi-kai-filoi-tou-ton-apoxairetisan-sto-teleytaio-antio/",
-        "https://www.in.gr/2026/09/14/sports/basketball/xol-einai-megali-i-sezon-tha-to-vroume/"
+        "https://www.in.gr/2026/09/14/politics/politiki-grammateia/den-einai-mono-o-p-marinakis-voridis-min-sproxnoume-anthropous-na-pairnoun-1-000-eyro-ton-mina-kai-na-kathontai/",
+        "https://www.in.gr/2026/09/14/greece/fotia-stin-kassandra-xalkidikis-sikothikan-eksi-enaeria/",
+        "https://www.in.gr/2026/09/14/sports/basketball/euroleague/panathinaikos-i-kae-parousiase-kai-tin-ektos-edras-fanela-tis-neas-sezon-pics/",
+        "https://www.in.gr/2026/09/14/economy/tte-sto-35-skarfalonei-o-plithorismos-to-2026/",
+        "https://www.in.gr/2026/09/14/greece/fotia-stin-anatoli-larisas-epixeiroun-5-enaeria-mesa/"
       ],
-      "seen_at_utc": "2026-09-14T12:51:29.523129+00:00"
+      "seen_at_utc": "2026-09-14T13:18:16.189429+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T12:51:29.523304+00:00"
+  "updated_at_utc": "2026-09-14T13:18:16.189593+00:00"
 }
