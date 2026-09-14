@@ -1,14 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564456811/toyrkia-sti-fylaki-16-atoma-meta-apo-efodoys-se-loatki-choroys/",
-      "title": "Τουρκία: Στη φυλακή 16 άτομα μετά από εφόδους σε ΛΟΑΤΚΙ+ χώρους",
-      "normalized_title": "ΤΟΥΡΚΙΑ: ΣΤΗ ΦΥΛΑΚΗ 16 ΑΤΟΜΑ ΜΕΤΑ ΑΠΟ ΕΦΟΔΟΥΣ ΣΕ ΛΟΑΤΚΙ+ ΧΩΡΟΥΣ",
+      "url": "https://www.kathimerini.gr/world/564456853/i-finlandia-tha-entachthei-stin-pyriniki-apotropi-toy-makron/",
+      "title": "Η Φινλανδία θα ενταχθεί στην πυρηνική αποτροπή του Μακρόν",
+      "normalized_title": "Η ΦΙΝΛΑΝΔΙΑ ΘΑ ΕΝΤΑΧΘΕΙ ΣΤΗΝ ΠΥΡΗΝΙΚΗ ΑΠΟΤΡΟΠΗ ΤΟΥ ΜΑΚΡΟΝ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564456811/toyrkia-sti-fylaki-16-atoma-meta-apo-efodoys-se-loatki-choroys/",
-        "https://www.kathimerini.gr/world/564456814/megkan-markl-to-tryfero-vinteo-me-tis-protes-oikogeneiakes-stigmes-sti-vretania/"
+        "https://www.kathimerini.gr/world/564456853/i-finlandia-tha-entachthei-stin-pyriniki-apotropi-toy-makron/",
+        "https://www.kathimerini.gr/politics/564456862/marinakis-gia-to-epidoma-anergias-koptoraptiki-provlithike-i-misi-thesi-moy/",
+        "https://www.kathimerini.gr/world/564456757/ai-kerdoforia-enantion-asfaleias-i-sygkroysi-poy-odigise-stin-protofani-krisi/"
       ],
-      "seen_at_utc": "2026-09-14T10:30:01.943168+00:00"
+      "seen_at_utc": "2026-09-14T10:51:12.934741+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,34 +1261,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878473/georgiadis-suggnomi-apo-tin-oikogeneia-mazonaki-pou-to-sustima-den-borese-na-ton-prostateusei-apo-kati-ashimo/?utm_source=rss",
-      "title": "Στο Γ' Νεκροταφείο ο Γεωργιάδης: Συγγνώμη από την οικογένεια Μαζωνάκη που το σύστημα δεν μπόρεσε να τον προστατεύσει από κάτι πάρα πολύ άσχημο",
-      "normalized_title": "ΣΤΟ Γ' ΝΕΚΡΟΤΑΦΕΙΟ Ο ΓΕΩΡΓΙΑΔΗΣ: ΣΥΓΓΝΩΜΗ ΑΠΟ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΜΑΖΩΝΑΚΗ ΠΟΥ ΤΟ ΣΥΣΤΗΜΑ ΔΕΝ ΜΠΟΡΕΣΕ ΝΑ ΤΟΝ ΠΡΟΣΤΑΤΕΥΣΕΙ ΑΠΟ ΚΑΤΙ ΠΑΡΑ ΠΟΛΥ ΑΣΧΗΜΟ",
+      "url": "https://www.protothema.gr/greece/article/1878487/stin-euelpidon-to-zeugos-giatron-pou-katigoreitai-gia-ton-thanato-tou-mazonaki-deite-video/?utm_source=rss",
+      "title": "Στην Ευελπίδων το ζεύγος γιατρών που κατηγορείται για τον θάνατο του Μαζωνάκη, δείτε βίντεο",
+      "normalized_title": "ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ ΤΟ ΖΕΥΓΟΣ ΓΙΑΤΡΩΝ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΜΑΖΩΝΑΚΗ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878473/georgiadis-suggnomi-apo-tin-oikogeneia-mazonaki-pou-to-sustima-den-borese-na-ton-prostateusei-apo-kati-ashimo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878461/vrohi-ta-350aria-gia-tahutita-pou-stinei-radar-i-trohaia-kai-pote-hanetai-to-diploma/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878456/to-mihanima-pou-hrisimopoiisan-theodoropoulos-kai-gaka-kategrapse-pote-stamatise-na-htupaei-i-kardia-tou-mazanaki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878487/stin-euelpidon-to-zeugos-giatron-pou-katigoreitai-gia-ton-thanato-tou-mazonaki-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T10:17:04.571264+00:00"
+      "seen_at_utc": "2026-09-14T10:51:12.934896+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466650/giorgos-mazonakis-me-ta-tragoydia-toy-to-teleytaio-antio-sti-nikaia-se-exelixi-i-exodios-akoloythia-eikones-vinteo/",
-      "title": "Γιώργος Μαζωνάκης: Με τα τραγούδια του το τελευταίο αντίο στη Νίκαια – Σε εξέλιξη η εξόδιος ακολουθία [εικόνες-βίντεο]",
-      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΜΕ ΤΑ ΤΡΑΓΟΥΔΙΑ ΤΟΥ ΤΟ ΤΕΛΕΥΤΑΙΟ ΑΝΤΙΟ ΣΤΗ ΝΙΚΑΙΑ – ΣΕ ΕΞΕΛΙΞΗ Η ΕΞΟΔΙΟΣ ΑΚΟΛΟΥΘΙΑ [ΕΙΚΟΝΕΣ-ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/politiki/1466720/ekdilosi-farantoyri-gia-ti-dolofonia-fyssa-theatrikos-monologos-me-ti-dora-hrysikoy/",
+      "title": "Εκδήλωση Φαραντούρη για τη δολοφονία Φύσσα: Θεατρικός μονόλογος με τη Δώρα Χρυσικού",
+      "normalized_title": "ΕΚΔΗΛΩΣΗ ΦΑΡΑΝΤΟΥΡΗ ΓΙΑ ΤΗ ΔΟΛΟΦΟΝΙΑ ΦΥΣΣΑ: ΘΕΑΤΡΙΚΟΣ ΜΟΝΟΛΟΓΟΣ ΜΕ ΤΗ ΔΩΡΑ ΧΡΥΣΙΚΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466650/giorgos-mazonakis-me-ta-tragoydia-toy-to-teleytaio-antio-sti-nikaia-se-exelixi-i-exodios-akoloythia-eikones-vinteo/"
+        "https://www.efsyn.gr/politiki/1466720/ekdilosi-farantoyri-gia-ti-dolofonia-fyssa-theatrikos-monologos-me-ti-dora-hrysikoy/",
+        "https://www.efsyn.gr/ellada/1466642/kideia-mazonaki-tragoydistes-ithopoioi-kai-politikoi-sti-nikaia-gia-na-apohairetisoyn-ton-kallitehni-eikones-vinteo/",
+        "https://www.efsyn.gr/politiki/1466712/tsoykalas-an-akoyge-i-thatser-tin-protasi-marinaki-gia-epidoma-anergias-tha-elege-einai-poly-prohorimeno-gia-mena/",
+        "https://www.efsyn.gr/politiki/1466700/o-proin-spartiatis-anexartitos-voyleytis-athanasios-halkias-proshorei-stin-elliniki-lysi/",
+        "https://www.efsyn.gr/politiki/1466505/theoni-koyfonikolakoy-gia-tetarti-mera-den-apantaei-o-prothypoyrgos-gia-to-epidoma-anergias/"
       ],
-      "seen_at_utc": "2026-09-14T10:30:01.943342+00:00"
+      "seen_at_utc": "2026-09-14T10:51:12.934853+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/politics/epikairotita/oloi-stis-ekdiloseis-tou-antifasistikou-septemvri-i-nea-aristera-gia-ta-13xronia-apo-ti-dolofonia-tou-paylou-fyssa/",
-      "title": "«Όλοι στις εκδηλώσεις του Αντιφασιστικού Σεπτέμβρη»: Η Νέα Αριστερά για τα 13χρόνια από τη δολοφονία του Παύλου Φύσσα",
-      "normalized_title": "«ΟΛΟΙ ΣΤΙΣ ΕΚΔΗΛΩΣΕΙΣ ΤΟΥ ΑΝΤΙΦΑΣΙΣΤΙΚΟΥ ΣΕΠΤΕΜΒΡΗ»: Η ΝΕΑ ΑΡΙΣΤΕΡΑ ΓΙΑ ΤΑ 13ΧΡΟΝΙΑ ΑΠΟ ΤΗ ΔΟΛΟΦΟΝΙΑ ΤΟΥ ΠΑΥΛΟΥ ΦΥΣΣΑ",
+      "url": "https://www.in.gr/2026/09/14/life/culture-live/the-perverts-guide-to-utopias-o-slavoi-zizek-anazita-tin-outopia-ekei-opou-kaneis-den-perimenei-na-ti-vrei/",
+      "title": "«The Pervert’s Guide to Utopias»: Ο Σλάβοϊ Ζίζεκ αναζητά την ουτοπία εκεί όπου κανείς δεν περιμένει να τη βρει",
+      "normalized_title": "«THE PERVERT’S GUIDE TO UTOPIAS»: Ο ΣΛΑΒΟΙ ΖΙΖΕΚ ΑΝΑΖΗΤΑ ΤΗΝ ΟΥΤΟΠΙΑ ΕΚΕΙ ΟΠΟΥ ΚΑΝΕΙΣ ΔΕΝ ΠΕΡΙΜΕΝΕΙ ΝΑ ΤΗ ΒΡΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/politics/epikairotita/oloi-stis-ekdiloseis-tou-antifasistikou-septemvri-i-nea-aristera-gia-ta-13xronia-apo-ti-dolofonia-tou-paylou-fyssa/"
+        "https://www.in.gr/2026/09/14/life/culture-live/the-perverts-guide-to-utopias-o-slavoi-zizek-anazita-tin-outopia-ekei-opou-kaneis-den-perimenei-na-ti-vrei/",
+        "https://www.in.gr/2026/09/14/politics/aftodioikisi/dimos-athinaion-i-odos-athinas-allazei-prosopo-gia-24-ores/",
+        "https://www.in.gr/2026/09/14/politics/politiki-grammateia/tsoukalas-gia-protasi-p-marinaki-gia-epidoma-anergias-i-thatser-tha-elege-einai-poly-proxorimeno-gia-mena/",
+        "https://www.in.gr/2026/09/14/sports/football/kostoulas-pisteyo-ston-eayto-mou-ta-pragmata-pane-kala/"
       ],
-      "seen_at_utc": "2026-09-14T10:30:01.943277+00:00"
+      "seen_at_utc": "2026-09-14T10:51:12.934809+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T10:30:01.943406+00:00"
+  "updated_at_utc": "2026-09-14T10:51:12.934974+00:00"
 }
