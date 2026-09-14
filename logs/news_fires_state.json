@@ -1,14 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/life/techniti-noimosyni/564457453/i-vivlos-tis-microsoft-gia-na-paramenei-i-a-i-ypo-anthropino-elegcho/",
-      "title": "Η «βίβλος» της Microsoft για να παραμένει η AI υπό ανθρώπινο έλεγχο",
-      "normalized_title": "Η «ΒΙΒΛΟΣ» ΤΗΣ MICROSOFT ΓΙΑ ΝΑ ΠΑΡΑΜΕΝΕΙ Η AI ΥΠΟ ΑΝΘΡΩΠΙΝΟ ΕΛΕΓΧΟ",
+      "url": "https://www.kathimerini.gr/society/564454483/to-peirama-gia-ena-alliotiko-scholeio-sto-chorio/",
+      "title": "Το πείραμα για ένα αλλιώτικο σχολείο στο χωριό",
+      "normalized_title": "ΤΟ ΠΕΙΡΑΜΑ ΓΙΑ ΕΝΑ ΑΛΛΙΩΤΙΚΟ ΣΧΟΛΕΙΟ ΣΤΟ ΧΩΡΙΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/life/techniti-noimosyni/564457453/i-vivlos-tis-microsoft-gia-na-paramenei-i-a-i-ypo-anthropino-elegcho/",
-        "https://www.kathimerini.gr/society/564457681/thanatos-mazonaki-i-anakoinosi-toy-isa-gia-toys-elegchoys-sta-iatreia/"
+        "https://www.kathimerini.gr/society/564454483/to-peirama-gia-ena-alliotiko-scholeio-sto-chorio/",
+        "https://www.kathimerini.gr/society/564457705/thanatos-mazonaki-to-proto-alarm-kata-tin-plasmafairesi-kai-to-dioro-mechri-tin-klisi-sto-ekav/",
+        "https://www.kathimerini.gr/athletics/analysis/564457726/ti-kanete-more-var-istes-na-toyfekane-var-istes/",
+        "https://www.kathimerini.gr/economy/564454756/arthro-toy-p-varthaliti-pos-axiopoioyme-toys-poroys-toy-tameioy-synochis/"
       ],
-      "seen_at_utc": "2026-09-14T17:17:14.062124+00:00"
+      "seen_at_utc": "2026-09-14T17:30:02.979142+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,39 +1262,34 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878751/fotia-se-diamerisma-stin-kupseli-epiheirisi-tis-purosvestikis/?utm_source=rss",
-      "title": "Φωτιά σε διαμέρισμα στην Κυψέλη, επιχείρηση της Πυροσβεστικής, δείτε βίντεο",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗΝ ΚΥΨΕΛΗ, ΕΠΙΧΕΙΡΗΣΗ ΤΗΣ ΠΥΡΟΣΒΕΣΤΙΚΗΣ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
+      "url": "https://www.protothema.gr/greece/article/1878759/epithesi-apo-tsakali-dehtike-mikro-paidi-stin-halkidiki/?utm_source=rss",
+      "title": "Επίθεση από τσακάλι δέχτηκε μικρό παιδί στην Χαλκιδική",
+      "normalized_title": "ΕΠΙΘΕΣΗ ΑΠΟ ΤΣΑΚΑΛΙ ΔΕΧΤΗΚΕ ΜΙΚΡΟ ΠΑΙΔΙ ΣΤΗΝ ΧΑΛΚΙΔΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878751/fotia-se-diamerisma-stin-kupseli-epiheirisi-tis-purosvestikis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878759/epithesi-apo-tsakali-dehtike-mikro-paidi-stin-halkidiki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878757/baraz-sullipseon-gia-paranoma-trapezokathismata-sti-halki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T17:17:14.062215+00:00"
+      "seen_at_utc": "2026-09-14T17:30:02.979303+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1467008/fotia-se-diamerisma-stin-kypseli/",
-      "title": "Φωτιά σε διαμέρισμα στην Κυψέλη",
-      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΙΑΜΕΡΙΣΜΑ ΣΤΗΝ ΚΥΨΕΛΗ",
+      "url": "https://www.efsyn.gr/kosmos/1467011/nea-telesigrafa-tramp-to-iran-thelei-apegnosmena-mia-symfonia-ego-apofasizo/",
+      "title": "Νέα «τελεσίγραφα» Τραμπ: «Το Ιράν θέλει απεγνωσμένα μία συμφωνία – Εγώ αποφασίζω»",
+      "normalized_title": "ΝΕΑ «ΤΕΛΕΣΙΓΡΑΦΑ» ΤΡΑΜΠ: «ΤΟ ΙΡΑΝ ΘΕΛΕΙ ΑΠΕΓΝΩΣΜΕΝΑ ΜΙΑ ΣΥΜΦΩΝΙΑ – ΕΓΩ ΑΠΟΦΑΣΙΖΩ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1467008/fotia-se-diamerisma-stin-kypseli/",
-        "https://www.efsyn.gr/oikonomia/1466954/aegean-78-ekat-epivates-to-a%ce%84-examino-ayxisi-3-tis-epivatikis-kinisis/",
-        "https://www.efsyn.gr/kosmos/1466999/dpd-sto-edolio-o-aggelos-toy-thanatoy-xekina-i-diki-toy-proin-dioikiti-fylakon-tis-livyis/"
+        "https://www.efsyn.gr/kosmos/1467011/nea-telesigrafa-tramp-to-iran-thelei-apegnosmena-mia-symfonia-ego-apofasizo/",
+        "https://www.efsyn.gr/politiki/1467019/ergasiaki-diafora-piso-apo-to-aitima-gia-arsi-tis-asylias-toy-nikoy-papandreoy/"
       ],
-      "seen_at_utc": "2026-09-14T17:17:14.062191+00:00"
+      "seen_at_utc": "2026-09-14T17:30:02.979253+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/politics/politiki-grammateia/kikilias-gia-metanasteytiko-aparaititi-i-dimiourgia-kleistis-domis-sto-irakleio/",
-      "title": "Κικίλιας για μεταναστευτικό: Απαραίτητη η δημιουργία κλειστής δομής στο Ηράκλειο",
-      "normalized_title": "ΚΙΚΙΛΙΑΣ ΓΙΑ ΜΕΤΑΝΑΣΤΕΥΤΙΚΟ: ΑΠΑΡΑΙΤΗΤΗ Η ΔΗΜΙΟΥΡΓΙΑ ΚΛΕΙΣΤΗΣ ΔΟΜΗΣ ΣΤΟ ΗΡΑΚΛΕΙΟ",
+      "url": "https://www.in.gr/2026/09/14/life/to-stemma-xarassotan-sto-derma-ton-sklavon-me-kayto-metallo-i-vretaniki-monarxia-kai-to-doulemporio/",
+      "title": "Το στέμμα χαρασσόταν στο δέρμα των σκλάβων με καυτό μέταλλο - Η βρετανική μοναρχία και το δουλεμπόριο",
+      "normalized_title": "ΤΟ ΣΤΕΜΜΑ ΧΑΡΑΣΣΟΤΑΝ ΣΤΟ ΔΕΡΜΑ ΤΩΝ ΣΚΛΑΒΩΝ ΜΕ ΚΑΥΤΟ ΜΕΤΑΛΛΟ - Η ΒΡΕΤΑΝΙΚΗ ΜΟΝΑΡΧΙΑ ΚΑΙ ΤΟ ΔΟΥΛΕΜΠΟΡΙΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/politics/politiki-grammateia/kikilias-gia-metanasteytiko-aparaititi-i-dimiourgia-kleistis-domis-sto-irakleio/",
-        "https://www.in.gr/2026/09/14/greece/kerkyra-sti-fylaki-o-51xronos-pou-katigoreitai-oti-aselgouse-systimatika-stin-8xroni-eggoni-tou/",
-        "https://www.in.gr/2026/09/14/in-science/ai/giati-o-tramp-den-tha-patisei-freno-stin-anaptyksi-tis-ai-apeilei-i-kina-tin-protokathedria-ton-ipa/",
-        "https://www.in.gr/2026/09/14/world/eggyiseis-asfaleias-zita-o-zelenski-gia-na-stamatisei-tis-epitheseis-se-energeiakes-egkatastaseis-tis-rosias/",
-        "https://www.in.gr/2026/09/14/sports/othersports/o-miltos-tentoglou-eftase-tous-51-titlous-stin-terastia-kariera-tou/",
-        "https://www.in.gr/2026/09/14/greece/fotia-se-diamerisma-stin-kypseli-synagermos-stin-pyrosvestiki/"
+        "https://www.in.gr/2026/09/14/life/to-stemma-xarassotan-sto-derma-ton-sklavon-me-kayto-metallo-i-vretaniki-monarxia-kai-to-doulemporio/"
       ],
-      "seen_at_utc": "2026-09-14T17:17:14.062172+00:00"
+      "seen_at_utc": "2026-09-14T17:30:02.979207+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T17:17:14.062293+00:00"
+  "updated_at_utc": "2026-09-14T17:30:02.979397+00:00"
 }
