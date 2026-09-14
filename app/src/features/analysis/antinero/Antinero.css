@@ -87,7 +87,7 @@
 .report-workspace--overview { grid-template-columns: minmax(0, 1fr); }
 .report-graph .report-connection { fill: none; stroke: #cedce1; stroke-opacity: .58; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
 .report-graph .report-connection--amendment { stroke: var(--accent); stroke-opacity: .62; stroke-width: 1.4; }
-.report-connection-arrow { fill: context-stroke; }
+.report-connection-arrow { fill: var(--accent); }
 .report-graph .report-connection--shared { stroke-dasharray: 6 5; }
 .report-graph .report-connection--beneficiary { stroke-dasharray: 2 5; }
 .report-graph .report-connection-hit { fill: none; stroke: rgba(0, 0, 0, .001); stroke-width: 24; pointer-events: stroke; cursor: pointer; vector-effect: non-scaling-stroke; }
@@ -127,7 +127,7 @@
 .report-focus-stage { position: relative; flex: 1; min-height: 0; }
 .report-focus-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .report-focus-lines path { fill: none; stroke-width: 1.5; stroke-opacity: .7; vector-effect: non-scaling-stroke; }
-.report-focus-lines .report-connection-arrow { fill: context-stroke; stroke: none; }
+.report-focus-lines .report-connection-arrow { fill: var(--accent); stroke: none; }
 .report-focus-lines .report-focus-line--amendment { stroke: var(--accent); stroke-width: 1.4; stroke-opacity: .62; }
 .report-focus-stage:has(.report-focus-neighbor--relation-amendment:hover) .report-focus-line--amendment,
 .report-focus-stage:has(.report-focus-neighbor--relation-amendment:focus-visible) .report-focus-line--amendment { stroke-width: 2; stroke-opacity: 1; }

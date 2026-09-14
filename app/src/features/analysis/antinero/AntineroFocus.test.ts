@@ -73,6 +73,7 @@ describe('focused AntiNERO neighborhood', () => {
     expect(html).toContain('Αρχική σύμβαση / Κοινός ανάδοχος · Αιγάλεω')
     expect(html).toContain('data-focus-node-id="23SYMV012964096"')
     expect(html).toContain('report-focus-line--amendment')
+    expect(html).toContain('class="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" fill="var(--accent)"')
     expect(html).toContain('marker-end="url(#report-focus-amendment-arrow)"')
     expect(focus('23SYMV012964096')).toContain('marker-start="url(#report-focus-amendment-arrow)"')
   })

@@ -103,7 +103,7 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
     }} onPointerUp={endDrag} onPointerCancel={endDrag} onLostPointerCapture={() => { drag.current = null }}>
       <defs>
         <marker id="report-amendment-arrow" markerWidth="6" markerHeight="6" refX="5.5" refY="3" orient="auto" markerUnits="strokeWidth">
-          <path className="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" />
+          <path className="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" fill="var(--accent)" />
         </marker>
       </defs>
       <g transform={`translate(${cx + camera.x},${cy + camera.y}) scale(${camera.k}) translate(${-cx},${-cy})`}>

@@ -3913,6 +3913,15 @@ main {
     grid-column: span 1;
   }
 
+  .top-nav [data-nav-item="analysis"] {
+    flex-direction: column;
+    gap: 0.12rem;
+  }
+
+  .top-nav [data-nav-item="analysis"] .top-nav__new {
+    font-size: 0.48rem;
+  }
+
   .top-nav [data-nav-item="home"],
   .top-nav [data-nav-item="contracts"] {
     border-left: 0;
