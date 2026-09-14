@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564457381/o-tropos-toy-nistroyp/",
-      "title": "Ο τρόπος του Νίστρουπ",
-      "normalized_title": "Ο ΤΡΟΠΟΣ ΤΟΥ ΝΙΣΤΡΟΥΠ",
+      "url": "https://www.kathimerini.gr/world/564457468/kagia-kalas-na-min-ekfovistoyme-meta-ti-rosiki-epithesi-se-treno-konta-stin-polonia/",
+      "title": "Κάγια Κάλας: «Να μη φοβηθεί η Ε.Ε.» μετά τη ρωσική επίθεση κοντά στην Πολωνία",
+      "normalized_title": "ΚΑΓΙΑ ΚΑΛΑΣ: «ΝΑ ΜΗ ΦΟΒΗΘΕΙ Η Ε.Ε.» ΜΕΤΑ ΤΗ ΡΩΣΙΚΗ ΕΠΙΘΕΣΗ ΚΟΝΤΑ ΣΤΗΝ ΠΟΛΩΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564457381/o-tropos-toy-nistroyp/",
-        "https://www.kathimerini.gr/society/564457393/chania-vrefos-me-varia-kranioegkefaliki-kakosi-synelifthi-i-18chroni-mitera/",
-        "https://www.kathimerini.gr/world/564457369/vretania-pethane-o-pateras-toy-anti-mpernam-epeita-apo-polyeti-machi-me-ti-noso-altschaimer/"
+        "https://www.kathimerini.gr/world/564457468/kagia-kalas-na-min-ekfovistoyme-meta-ti-rosiki-epithesi-se-treno-konta-stin-polonia/",
+        "https://www.kathimerini.gr/life/people/564456514/o-giorgos-poy-gnorisa/",
+        "https://www.kathimerini.gr/society/dikastiko/564457444/giorgos-mazonakis-anavathmistike-to-katigoritirio-gia-toys-giatroys/"
       ],
-      "seen_at_utc": "2026-09-14T13:51:11.409771+00:00"
+      "seen_at_utc": "2026-09-14T14:17:06.095050+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,35 +1261,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878592/treis-sullipseis-gia-diakinisi-narkotikon-stin-attiki/?utm_source=rss",
-      "title": "Τρεις συλλήψεις για διακίνηση ναρκωτικών στην Αττική",
-      "normalized_title": "ΤΡΕΙΣ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΔΙΑΚΙΝΗΣΗ ΝΑΡΚΩΤΙΚΩΝ ΣΤΗΝ ΑΤΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1878598/kare-kare-i-stigmi-pou-oi-listes-eisvalloun-me-tsekouri-kai-losto-se-venzinadiko-sti-thessaloniki-deite-video/?utm_source=rss",
+      "title": "Καρέ καρέ η στιγμή που οι τρεις ληστές εισβάλλουν με τσεκούρι και λοστό σε βενζινάδικο στη Θεσσαλονίκη, δείτε βίντεο",
+      "normalized_title": "ΚΑΡΕ ΚΑΡΕ Η ΣΤΙΓΜΗ ΠΟΥ ΟΙ ΤΡΕΙΣ ΛΗΣΤΕΣ ΕΙΣΒΑΛΛΟΥΝ ΜΕ ΤΣΕΚΟΥΡΙ ΚΑΙ ΛΟΣΤΟ ΣΕ ΒΕΝΖΙΝΑΔΙΚΟ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ, ΔΕΙΤΕ ΒΙΝΤΕΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878592/treis-sullipseis-gia-diakinisi-narkotikon-stin-attiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878598/kare-kare-i-stigmi-pou-oi-listes-eisvalloun-me-tsekouri-kai-losto-se-venzinadiko-sti-thessaloniki-deite-video/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878597/anthropoktonia-me-endehomeno-dolo-katigoroudai-oi-giatroi-theodoropoulos-kai-gaka-gia-ton-thanato-tou-giorgou-mazonaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T13:51:11.409895+00:00"
+      "seen_at_utc": "2026-09-14T14:17:06.095188+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466554/vary-to-kryfo-kostos-tis-dimosias-paideias-apo-800-eos-6-000-eyro-ton-hrono-gia-ena-paidi/",
-      "title": "Βαρύ το «κρυφό κόστος» της δημόσιας Παιδείας: Από 800 έως 6.000 ευρώ τον χρόνο για ένα παιδί",
-      "normalized_title": "ΒΑΡΥ ΤΟ «ΚΡΥΦΟ ΚΟΣΤΟΣ» ΤΗΣ ΔΗΜΟΣΙΑΣ ΠΑΙΔΕΙΑΣ: ΑΠΟ 800 ΕΩΣ 6.000 ΕΥΡΩ ΤΟΝ ΧΡΟΝΟ ΓΙΑ ΕΝΑ ΠΑΙΔΙ",
+      "url": "https://www.efsyn.gr/ellada/1466895/rafina-prosorini-apagoreysi-apoploy-sto-super-express/",
+      "title": "Ραφήνα: Προσωρινή απαγόρευση απόπλου στο «Super Express»",
+      "normalized_title": "ΡΑΦΗΝΑ: ΠΡΟΣΩΡΙΝΗ ΑΠΑΓΟΡΕΥΣΗ ΑΠΟΠΛΟΥ ΣΤΟ «SUPER EXPRESS»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466554/vary-to-kryfo-kostos-tis-dimosias-paideias-apo-800-eos-6-000-eyro-ton-hrono-gia-ena-paidi/",
-        "https://www.efsyn.gr/politiki/1466869/hristidis-kata-marinaki-i-koptoraptiki-afora-to-pasok-i-tin-ypoyrgo-ergasias/"
+        "https://www.efsyn.gr/ellada/1466895/rafina-prosorini-apagoreysi-apoploy-sto-super-express/",
+        "https://www.efsyn.gr/ellada/1466885/giorgos-mazonakis-anavathmistike-to-katigoritirio-gia-toys-giatroys-dioxi-gia-anthropoktonia-apo-prothesi/",
+        "https://www.efsyn.gr/ellada/1466870/diki-tempon-anoigei-to-kinito-toy-stathmarhi-einai-kratiki-dolofonia-skotosan-ta-paidia-mas-polles-fores/",
+        "https://www.efsyn.gr/ellada/1466877/hania-vrefos-17-imeron-sto-nosokomeio-me-kranioegkefaliki-kakosi-synelifthi-i-mitera-toy/",
+        "https://www.efsyn.gr/life/1466872/o-polakis-epiase-melanoyria-kai-kolohtypa-eno-vrike-kai-to-hameno-psarontoyfeko-toy-hamos-sta-sholia-eikones/"
       ],
-      "seen_at_utc": "2026-09-14T13:51:11.409868+00:00"
+      "seen_at_utc": "2026-09-14T14:17:06.095146+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/stories/o-napoleon-vonapartis-sti-mosxa-aixmalotos-tou-pepromenou/",
-      "title": "Μέγας Ναπολέων για Μόσχα: «Ενικηθήκαμε από τον εαυτό μας!»",
-      "normalized_title": "ΜΕΓΑΣ ΝΑΠΟΛΕΩΝ ΓΙΑ ΜΟΣΧΑ: «ΕΝΙΚΗΘΗΚΑΜΕ ΑΠΟ ΤΟΝ ΕΑΥΤΟ ΜΑΣ!»",
+      "url": "https://www.in.gr/2026/09/14/world/dodeka-eyropaikes-xores-kaloun-tin-ee-na-enisxysei-tin-parousia-tis-stin-arktiki-en-meso-ayksanomenon-apeilon/",
+      "title": "Δώδεκα ευρωπαϊκές χώρες καλούν την ΕΕ να ενισχύσει την παρουσία της στην Αρκτική εν μέσω αυξανόμενων απειλών",
+      "normalized_title": "ΔΩΔΕΚΑ ΕΥΡΩΠΑΙΚΕΣ ΧΩΡΕΣ ΚΑΛΟΥΝ ΤΗΝ ΕΕ ΝΑ ΕΝΙΣΧΥΣΕΙ ΤΗΝ ΠΑΡΟΥΣΙΑ ΤΗΣ ΣΤΗΝ ΑΡΚΤΙΚΗ ΕΝ ΜΕΣΩ ΑΥΞΑΝΟΜΕΝΩΝ ΑΠΕΙΛΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/stories/o-napoleon-vonapartis-sti-mosxa-aixmalotos-tou-pepromenou/",
-        "https://www.in.gr/2026/09/14/politics/epikairotita/anna-papadopoulou-elas-i-dilosi-marinaki-gia-to-epidoma-anergias-aggizei-ta-oria-tou-koinonikou-kanivalismou/",
-        "https://www.in.gr/2026/09/14/plus/medianews/koinonia-ora-mega-stin-proti-thesi-tis-tiletheasis-tin-perasmeni-evdomada/"
+        "https://www.in.gr/2026/09/14/world/dodeka-eyropaikes-xores-kaloun-tin-ee-na-enisxysei-tin-parousia-tis-stin-arktiki-en-meso-ayksanomenon-apeilon/",
+        "https://www.in.gr/2026/09/14/plus/medianews/ekselikseis-tora-stin-koryfi-tis-tiletheasis-to-savvatokyriako/",
+        "https://www.in.gr/2026/09/14/politics/epikairotita/synantisi-me-tin-omospondia-ypallilon-dypa-tha-exei-tin-triti-15-septemvriou-o-aleksis-tsipras/",
+        "https://www.in.gr/2026/09/14/sports/on-field/plouralismos-to-pio-isxyro-oplo-tou-nistroup/",
+        "https://www.in.gr/2026/09/14/greece/gia-anthropoktonia-me-endexomeno-dolo-katigorountai-pleon-oi-giatroi-gia-ton-thanato-tou-giorgou-mazonaki/",
+        "https://www.in.gr/2026/09/14/sports/basketball/trinkieri-exoume-kanei-proodo-alla-yparxoun-akoma-pragmata-pou-prepei-na-veltiosoume/",
+        "https://www.in.gr/2026/09/14/plus/medianews/mega-savvatokyriako-proto-stis-epiloges-ton-theaton/",
+        "https://www.in.gr/2026/09/14/greece/sto-nosokomeio-xanion-vrefos-17-imeron-me-varia-kranioegkefaliki-kakosi-synelifthi-i-18xroni-mitera-tou/"
       ],
-      "seen_at_utc": "2026-09-14T13:51:11.409819+00:00"
+      "seen_at_utc": "2026-09-14T14:17:06.095112+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T13:51:11.409973+00:00"
+  "updated_at_utc": "2026-09-14T14:17:06.095293+00:00"
 }
