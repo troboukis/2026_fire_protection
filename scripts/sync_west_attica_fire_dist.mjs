@@ -346,8 +346,23 @@ async function syncDist() {
   )
 
   const headMarkup = [
-    '    <meta name="description" content="Διαδραστικός χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική το 2026." />',
+    '    <meta name="description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
     `    <link rel="canonical" href="https://www.fire-watch-app.gr${expectedBase}" />`,
+
+    '    <meta property="og:type" content="website" />',
+    '    <meta property="og:title" content="Μεγάλη πυρκαγιά Δυτικής Αττικής – Βοιωτίας 2026" />',
+    '    <meta property="og:description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
+    `    <meta property="og:url" content="https://www.fire-watch-app.gr${expectedBase}" />`,
+    '    <meta property="og:image" content="https://www.fire-watch-app.gr/social/west-attica-fire-2026.png" />',
+    '    <meta property="og:image:width" content="1200" />',
+    '    <meta property="og:image:height" content="630" />',
+    '    <meta property="og:image:alt" content="Χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026" />',
+
+    '    <meta name="twitter:card" content="summary_large_image" />',
+    '    <meta name="twitter:title" content="Μεγάλη πυρκαγιά Δυτικής Αττικής – Βοιωτίας 2026" />',
+    '    <meta name="twitter:description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
+    '    <meta name="twitter:image" content="https://www.fire-watch-app.gr/social/west-attica-fire-2026.png" />',
+
     `    <link rel="stylesheet" href="${expectedBase}firewatch/cookieconsent.css" />`,
     `    <link rel="stylesheet" href="${expectedBase}firewatch/standalone-footer.css" />`,
   ].join('\n')
