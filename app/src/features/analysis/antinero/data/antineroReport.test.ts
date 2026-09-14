@@ -43,6 +43,18 @@ describe('AntiNERO report navigation and publication data', () => {
     expect(report.contracts.find(item => item.id === '26SYMV018936694')?.documentDate).toBe('2026-04-30')
   })
 
+  it('publishes sourced completion dates for every contract without flattening scope differences', () => {
+    for (const contract of report.contracts) expect(contract.completionDetails.length).toBeGreaterThan(0)
+    const multiOffice = report.contracts.find(item => item.id === '25SYMV016570021')!
+    expect(multiOffice.completionDetails.map(item => [item.scope, item.finalDate])).toEqual([
+      ['Δασαρχείο Αιγάλεω', '2026-07-22'],
+      ['Δασαρχείο Μεγάρων', '2026-05-31'],
+    ])
+    const workOrders = report.contracts.find(item => item.id === '25SYMV017345053')!
+    expect(workOrders.completionDetails[0].finalDate).toBeNull()
+    expect(workOrders.completionDetails[0].finalDateBasis).toBe('per_work_order_unknown')
+  })
+
   it('publishes the corrected acceptance wording with primary source links', () => {
     const finding = report.findings.find(item => item.id === 'report-block-61')!
     expect(finding.text).toContain('με εξαίρεση τις φυτεύσεις')

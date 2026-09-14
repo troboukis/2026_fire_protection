@@ -20,6 +20,7 @@
 .report-detail summary { cursor: pointer; padding-block: .5rem; }
 .report-source { display: inline-block; padding: .6rem 0; font-size: .8rem; font-weight: 600; text-decoration-color: var(--line-strong); text-underline-offset: .25em; }
 .report-source-note { font-size: .75rem; color: var(--ink-soft); }
+.report-completion-value { color: var(--accent); font-weight: 700; white-space: nowrap; }
 .report-findings { margin-top: 1rem; border-top: 1px solid var(--line-strong); }
 .report-findings article { padding-block: .75rem; border-top: 1px solid var(--line); }
 .report-findings h4 { margin-block: .85rem; font-size: .85rem; font-weight: 600; }

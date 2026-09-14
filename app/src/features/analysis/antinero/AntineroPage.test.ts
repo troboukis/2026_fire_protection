@@ -13,6 +13,7 @@ function overviewSvg(html: string) {
 describe('report initial view', () => {
   it('opens directly on the complete network without the removed controls', () => {
     const html = renderRoute('/analysis/antinero-west-attica')
+    expect(html).toContain('<h2>Συμβάσεις AntiNERO στη Δυτική Αττική</h2>')
     expect(html.match(/class="report-graph-contract /g)).toHaveLength(21)
     expect(html).not.toContain('report-controls')
     expect(html).not.toContain('report-toolbar')
@@ -84,6 +85,17 @@ describe('report initial view', () => {
     expect(html).not.toContain('Τα ποσά αφορούν το σύνολο')
     expect(html).not.toContain('Τι προκύπτει από τα έγγραφα')
     expect(html).not.toContain('Δεν έχει προστεθεί ξεχωριστό εύρημα')
+  })
+  it('shows the initial and final completion dates below the contract amount', () => {
+    const html = renderRoute('/analysis/antinero-west-attica?scope=25SYMV016570021&node=25SYMV016570021')
+
+    const amount = html.indexOf('Συμβατικό τίμημα χωρίς ΦΠΑ')
+    const initialDate = html.indexOf('<dt>Παράδοση έργου</dt>')
+    const finalDate = html.indexOf('<dt>Τελική ημερομηνία παράδοσης έργου</dt>')
+    expect(initialDate).toBeGreaterThan(amount)
+    expect(finalDate).toBeGreaterThan(initialDate)
+    expect(html).toContain('<time class="report-completion-value" dateTime="2025-09-03">3/9/2025</time>')
+    expect(html).toContain('<time class="report-completion-value" dateTime="2026-07-22">22/7/2026</time>')
   })
   it('uses the amendment document date instead of its parent contract date', () => {
     const html = renderRoute('/analysis/antinero-west-attica?scope=23SYMV013156865&node=23SYMV013156865')

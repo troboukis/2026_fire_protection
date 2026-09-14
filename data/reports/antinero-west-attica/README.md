@@ -11,6 +11,9 @@ write to Supabase. An audience-facing export now feeds the report page.
 - `relationships`: 429 decision-to-contract associations and 4 amendment-to-parent links.
 - `findings`: 47 verbatim research paragraphs from the actual Word document,
   including Part C. A paragraph can relate to several contracts.
+- `contract_completion_details.csv`: one row per contract scope or stage, with the
+  initial completion date, latest identified completion date, the basis of each date,
+  qualifications and primary-document links. All 21 contract records are covered.
 - `sources`: repository-relative source paths and SHA-256 hashes.
 
 The research source folder is intentionally gitignored. This dataset and its builder
@@ -48,6 +51,12 @@ Research decision summaries remain null. Classifications are automatic, with mat
 action, rule version and evidence provenance; they do not establish a decision's substantive effect. The dataset contains source links for all
 nodes, but it does not claim full primary-source verification of every narrative finding.
 
+Completion dates come from the signed contract, approved schedules and extensions, and
+completion or approval records in the archived Diavgeia set. `initial_date_basis` and
+`final_date_basis` distinguish explicit deadlines, calculated baselines, approved
+extensions and actual completion records. Blank dates are intentional where the contract
+sets a separate deadline in each work order and no applicable order was identified.
+
 ## Consumer rules
 
 - IDs are strings. Preserve Greek ADA characters and leading zeros in VAT numbers.
@@ -58,6 +67,9 @@ nodes, but it does not claim full primary-source verification of every narrative
   Unchanged amendments have null amounts; do not count their parent price again.
 - Keep `signed_on_metadata`, report signature/publication text and decision issue dates
   distinct. They are not actual work commencement/completion dates.
+- Do not collapse `completion_details` to one date when a contract has different office,
+  work-package or study-stage deadlines. An actual completion record is not by itself an
+  approved extension; read each date together with its basis and notes.
 - `matched_research_offices` is a search-selection aid, not exhaustive geographic scope.
   Multi-region prices are not West Attica allocations. The Chalkida supplement is
   retained for its contract relationship, not as West Attica expenditure.
@@ -76,11 +88,12 @@ From the repository root:
 python scripts/reports/antinero-west-attica/build_dataset.py
 ```
 
-The standard-library builder reads the DOCX ZIP/XML, KIMDIS metadata and inventory;
+The standard-library builder reads the completion CSV, DOCX ZIP/XML, KIMDIS metadata and inventory;
 it does not execute the Word-generation script or make network requests. It validates
 unique IDs, all edge endpoints, 21/426/429/4 cardinalities, source-file existence,
 research coverage for every contract, the corrected amount, unchanged amendments and
-the typo alias. Source hashes make the exact research inputs identifiable.
+the typo alias. It also validates ISO completion dates, the common research cutoff and
+completion coverage for every contract. Source hashes make the exact research inputs identifiable.
 
 The fixed counts deliberately make a future archive refresh fail for review rather
 than silently change this publication snapshot. Editorial integration, page-level citation refinement and event extraction remain
