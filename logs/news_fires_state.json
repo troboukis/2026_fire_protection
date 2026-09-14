@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564456379/kairos-synnefia-ptosi-tis-thermokrasias-kai-topikes-vroches/",
-      "title": "Καιρός: Συννεφιά, πτώση της θερμοκρασίας και τοπικές βροχές",
-      "normalized_title": "ΚΑΙΡΟΣ: ΣΥΝΝΕΦΙΑ, ΠΤΩΣΗ ΤΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ ΚΑΙ ΤΟΠΙΚΕΣ ΒΡΟΧΕΣ",
+      "url": "https://www.kathimerini.gr/society/564456403/kleista-simera-ta-farmakeia-stin-attiki/",
+      "title": "Κλειστά σήμερα τα φαρμακεία στην Αττική",
+      "normalized_title": "ΚΛΕΙΣΤΑ ΣΗΜΕΡΑ ΤΑ ΦΑΡΜΑΚΕΙΑ ΣΤΗΝ ΑΤΤΙΚΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564456379/kairos-synnefia-ptosi-tis-thermokrasias-kai-topikes-vroches/",
-        "https://www.kathimerini.gr/world/564456376/germania-i-cdu-odeyei-pros-niki-stin-kato-saxonia-i-afd-stin-triti-thesi/",
-        "https://www.kathimerini.gr/world/564456346/nayagio-ploioy-stin-indonisia-nees-ereynes-gia-toys-129-agnooymenoys/",
-        "https://www.kathimerini.gr/world/564456349/israil-oi-dimioyrgoi-toy-ntokimanter-naza-apeiloyntai-me-afairesi-ithageneias/",
-        "https://www.kathimerini.gr/istoria/564454117/san-simera-14-septemvrioy-1940-i-sfagi-sto-ip-tis-transylvanias/"
+        "https://www.kathimerini.gr/society/564456403/kleista-simera-ta-farmakeia-stin-attiki/",
+        "https://www.kathimerini.gr/k/travel/564451906/3-logoi-gia-na-taxidepsoyme-tora-sti-donoysa/",
+        "https://www.kathimerini.gr/society/564456400/se-exelixi-oi-ereynes-gia-25-agnooymenoys-anoichta-tis-gavdoy-meta-tin-anatropi-lemvoy/",
+        "https://www.kathimerini.gr/world/564456385/ipa-to-kentro-kenenti-vrisketai-sta-prothyra-ptocheysis/"
       ],
-      "seen_at_utc": "2026-09-14T04:51:19.323619+00:00"
+      "seen_at_utc": "2026-09-14T05:17:06.833478+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,37 +1262,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878289/apologoudai-simera-oi-giatroi-gia-ton-thanato-tou-mazonaki-oi-adifaseis-kai-i-fotografia-pou-/?utm_source=rss",
-      "title": "Απολογούνται σήμερα οι γιατροί για τον θάνατο του Μαζωνάκη, οι αντιφάσεις και η φωτογραφία που εξετάζουν καρέ-καρέ οι Αρχές",
-      "normalized_title": "ΑΠΟΛΟΓΟΥΝΤΑΙ ΣΗΜΕΡΑ ΟΙ ΓΙΑΤΡΟΙ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΟΥ ΜΑΖΩΝΑΚΗ, ΟΙ ΑΝΤΙΦΑΣΕΙΣ ΚΑΙ Η ΦΩΤΟΓΡΑΦΙΑ ΠΟΥ ΕΞΕΤΑΖΟΥΝ ΚΑΡΕ-ΚΑΡΕ ΟΙ ΑΡΧΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1878305/duo-sullipseis-gia-tous-purovolismous-sto-beach-bar-stin-anavusso-anaziteitai-o-varupoinitis-alket-rizai/?utm_source=rss",
+      "title": "Δύο συλλήψεις για τους πυροβολισμούς στο beach bar στην Ανάβυσσο, αναζητείται ο βαρυποινίτης Αλκέτ Ριζάι",
+      "normalized_title": "ΔΥΟ ΣΥΛΛΗΨΕΙΣ ΓΙΑ ΤΟΥΣ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΤΟ BEACH BAR ΣΤΗΝ ΑΝΑΒΥΣΣΟ, ΑΝΑΖΗΤΕΙΤΑΙ Ο ΒΑΡΥΠΟΙΝΙΤΗΣ ΑΛΚΕΤ ΡΙΖΑΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878289/apologoudai-simera-oi-giatroi-gia-ton-thanato-tou-mazonaki-oi-adifaseis-kai-i-fotografia-pou-/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878305/duo-sullipseis-gia-tous-purovolismous-sto-beach-bar-stin-anavusso-anaziteitai-o-varupoinitis-alket-rizai/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878299/erhodai-9000-proslipseis-sto-esu-ta-kinitra-gia-giatrous-kai-nosileutes/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878298/tebi-me-protasi-tis-eisaggeleos-epi-aitimatos-gia-ton-elegho-tou-kinitou-tou-stathmarhi-sunehizetai-simera-diki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878297/kleista-simera-ta-farmakeia-stin-attiki-pos-tha-exupiretithoun-oi-polites/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878291/ios-tou-dutikou-neilou-ta-krousmata-einai-mono-i-korufi-tou-pagovounou-i-proeidopoiisi-ellina-anosologou-apo-tin-oxfordi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T04:51:19.323776+00:00"
+      "seen_at_utc": "2026-09-14T05:17:06.833589+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466300/vlastokyttara-kai-antigiransi-epistimoniki-epanastasi-alla-kai-emporio-elpidas/",
-      "title": "Βλαστοκύτταρα και αντιγήρανση: Επιστημονική επανάσταση, αλλά και εμπόριο ελπίδας",
-      "normalized_title": "ΒΛΑΣΤΟΚΥΤΤΑΡΑ ΚΑΙ ΑΝΤΙΓΗΡΑΝΣΗ: ΕΠΙΣΤΗΜΟΝΙΚΗ ΕΠΑΝΑΣΤΑΣΗ, ΑΛΛΑ ΚΑΙ ΕΜΠΟΡΙΟ ΕΛΠΙΔΑΣ",
+      "url": "https://www.efsyn.gr/tehnes/1466308/83o-festival-venetias-o-hrysos-leontas-se-mia-leaina-poy-entyposiase-kai-sygkinise/",
+      "title": "83º Φεστιβάλ Βενετίας: Ο Χρυσός Λέοντας σε μια… λέαινα που εντυπωσίασε και συγκίνησε",
+      "normalized_title": "83º ΦΕΣΤΙΒΑΛ ΒΕΝΕΤΙΑΣ: Ο ΧΡΥΣΟΣ ΛΕΟΝΤΑΣ ΣΕ ΜΙΑ… ΛΕΑΙΝΑ ΠΟΥ ΕΝΤΥΠΩΣΙΑΣΕ ΚΑΙ ΣΥΓΚΙΝΗΣΕ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466300/vlastokyttara-kai-antigiransi-epistimoniki-epanastasi-alla-kai-emporio-elpidas/",
-        "https://www.efsyn.gr/politiki/1466294/elas-i-panstratia-kai-oi-proypotheseis-gia-tin-anatropi-kai-ti-niki/",
-        "https://www.efsyn.gr/ellada/1466304/gaydos-horis-apotelesma-oi-olonyhties-ereynes-meta-tin-anatropi-lemvoy-enas-nekros-25-agnooymenoi/"
+        "https://www.efsyn.gr/tehnes/1466308/83o-festival-venetias-o-hrysos-leontas-se-mia-leaina-poy-entyposiase-kai-sygkinise/",
+        "https://www.efsyn.gr/media/1466320/press-point-nikos-androylakis-i-antonis-remos/",
+        "https://www.efsyn.gr/ellada/1466311/aigina-ekanan-karpa-gia-55-lepta-sti-gynaika-poy-epathe-anakopi-o-apinidotis-irthe-gyro-sta-40-lepta-meta/"
       ],
-      "seen_at_utc": "2026-09-14T04:51:19.323734+00:00"
+      "seen_at_utc": "2026-09-14T05:17:06.833563+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/greece/laothalassa-stin-agrypnia-gia-ton-giorgo-mazonaki-sti-nikaia-to-mesimeri-i-kideia-tou-fotografies-vinteo/",
-      "title": "Λαοθάλασσα στην αγρυπνία για τον Γιώργο Μαζωνάκη στη Νίκαια – Το μεσημέρι η κηδεία του [φωτογραφίες – βίντεο]",
-      "normalized_title": "ΛΑΟΘΑΛΑΣΣΑ ΣΤΗΝ ΑΓΡΥΠΝΙΑ ΓΙΑ ΤΟΝ ΓΙΩΡΓΟ ΜΑΖΩΝΑΚΗ ΣΤΗ ΝΙΚΑΙΑ – ΤΟ ΜΕΣΗΜΕΡΙ Η ΚΗΔΕΙΑ ΤΟΥ [ΦΩΤΟΓΡΑΦΙΕΣ – ΒΙΝΤΕΟ]",
+      "url": "https://www.in.gr/2026/09/14/greece/me-ti-protasi-tis-eisaggeleos-epi-tou-aitimatos-gia-ton-elegxo-tou-kinitou-tou-stathmarxi-synexizetai-i-diki-gia-ta-tempi/",
+      "title": "Με τη πρόταση της εισαγγελέως επί του αιτήματος για τον έλεγχο του κινητού του σταθμάρχη συνεχίζεται η δίκη για τα Τέμπη",
+      "normalized_title": "ΜΕ ΤΗ ΠΡΟΤΑΣΗ ΤΗΣ ΕΙΣΑΓΓΕΛΕΩΣ ΕΠΙ ΤΟΥ ΑΙΤΗΜΑΤΟΣ ΓΙΑ ΤΟΝ ΕΛΕΓΧΟ ΤΟΥ ΚΙΝΗΤΟΥ ΤΟΥ ΣΤΑΘΜΑΡΧΗ ΣΥΝΕΧΙΖΕΤΑΙ Η ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/greece/laothalassa-stin-agrypnia-gia-ton-giorgo-mazonaki-sti-nikaia-to-mesimeri-i-kideia-tou-fotografies-vinteo/",
-        "https://www.in.gr/2026/09/14/go-fun/social/arkas-i-kalimera-tis-deyteras-9/",
-        "https://www.in.gr/2026/09/14/greece/thessaloniki-listes-mpoukaran-me-lostous-kai-tsekouri-se-venzinadiko-xtypisan-ton-ypallilo/",
-        "https://www.in.gr/2026/09/14/plus/vita/i-epistimi-milise-to-elliniko-giaourti-einai-to-kalytero-apo-ola/"
+        "https://www.in.gr/2026/09/14/greece/me-ti-protasi-tis-eisaggeleos-epi-tou-aitimatos-gia-ton-elegxo-tou-kinitou-tou-stathmarxi-synexizetai-i-diki-gia-ta-tempi/",
+        "https://www.in.gr/2026/09/14/world/ipa-aytes-einai-oi-ereynes-gia-ton-tramp-pou-sxediazoun-oi-dimokratikoi-se-periptosi-nikis-ton-noemvrio/",
+        "https://www.in.gr/2026/09/14/life/culture-live/gkolfo-apo-1i-oktovriou-kai-gia-periorismeno-arithmo-sto-dthp/",
+        "https://www.in.gr/2026/09/14/editorial/i-koinonia-den-xeirokrotise-to-paketo-deth-tou-prothypourgou-akrivos-epeidi-mporei-pia-na-krinei-tin-kyvernisi-tou/",
+        "https://www.in.gr/2026/09/14/greece/synexizontai-oi-ereynes-gia-to-nayagio-me-metanastes-sti-gaydo-enas-nekros-kai-25-agnooumenoi/"
       ],
-      "seen_at_utc": "2026-09-14T04:51:19.323692+00:00"
+      "seen_at_utc": "2026-09-14T05:17:06.833530+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T04:51:19.323878+00:00"
+  "updated_at_utc": "2026-09-14T05:17:06.833665+00:00"
 }
