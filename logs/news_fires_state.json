@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564456703/aek-den-thelei-kopo-thelei-plan-b/",
-      "title": "ΑΕΚ: Δεν θέλει κόπο. Θέλει plan b",
-      "normalized_title": "ΑΕΚ: ΔΕΝ ΘΕΛΕΙ ΚΟΠΟ. ΘΕΛΕΙ PLAN B",
+      "url": "https://www.kathimerini.gr/world/564456790/mpali-nekri-29chroni-poy-epese-apo-gkremo-sti-dimofili-paralia-toy-t-rex/",
+      "title": "Μπαλί: Νεκρή 29χρονη που έπεσε από γκρεμό στη δημοφιλή παραλία του «T-Rex»",
+      "normalized_title": "ΜΠΑΛΙ: ΝΕΚΡΗ 29ΧΡΟΝΗ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΓΚΡΕΜΟ ΣΤΗ ΔΗΜΟΦΙΛΗ ΠΑΡΑΛΙΑ ΤΟΥ «T-REX»",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564456703/aek-den-thelei-kopo-thelei-plan-b/",
-        "https://www.kathimerini.gr/opinion/interviews/564452905/ton-agapoysame-giati-itan-alithinos/",
-        "https://www.kathimerini.gr/world/564456715/gallia-episimi-episkepsi-makron-stin-ispania-stis-29-kai-30-septemvrioy/"
+        "https://www.kathimerini.gr/world/564456790/mpali-nekri-29chroni-poy-epese-apo-gkremo-sti-dimofili-paralia-toy-t-rex/",
+        "https://www.kathimerini.gr/society/564456784/to-teleytaio-antio-ston-giorgo-mazonaki/",
+        "https://www.kathimerini.gr/k/k-magazine/564450859/ta-kokkina-ton-voynon/",
+        "https://www.kathimerini.gr/world/564456658/katarripsi-f-15-sto-iran-o-agonas-epiviosis-toy-pilotoy-epi-50-ores-kai-o-rolos-tis-cia/"
       ],
-      "seen_at_utc": "2026-09-14T09:51:17.699893+00:00"
+      "seen_at_utc": "2026-09-14T10:17:04.571106+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1262,46 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878443/epitrapezia-elia-pro-ton-pulon-i-sugomidi-ton-prasinon-poikilion/?utm_source=rss",
-      "title": "Επιτραπέζια ελιά: «Προ των πυλών» η συγκομιδή των πράσινων ποικιλιών",
-      "normalized_title": "ΕΠΙΤΡΑΠΕΖΙΑ ΕΛΙΑ: «ΠΡΟ ΤΩΝ ΠΥΛΩΝ» Η ΣΥΓΚΟΜΙΔΗ ΤΩΝ ΠΡΑΣΙΝΩΝ ΠΟΙΚΙΛΙΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1878473/georgiadis-suggnomi-apo-tin-oikogeneia-mazonaki-pou-to-sustima-den-borese-na-ton-prostateusei-apo-kati-ashimo/?utm_source=rss",
+      "title": "Στο Γ' Νεκροταφείο ο Γεωργιάδης: Συγγνώμη από την οικογένεια Μαζωνάκη που το σύστημα δεν μπόρεσε να τον προστατεύσει από κάτι πάρα πολύ άσχημο",
+      "normalized_title": "ΣΤΟ Γ' ΝΕΚΡΟΤΑΦΕΙΟ Ο ΓΕΩΡΓΙΑΔΗΣ: ΣΥΓΓΝΩΜΗ ΑΠΟ ΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΜΑΖΩΝΑΚΗ ΠΟΥ ΤΟ ΣΥΣΤΗΜΑ ΔΕΝ ΜΠΟΡΕΣΕ ΝΑ ΤΟΝ ΠΡΟΣΤΑΤΕΥΣΕΙ ΑΠΟ ΚΑΤΙ ΠΑΡΑ ΠΟΛΥ ΑΣΧΗΜΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878443/epitrapezia-elia-pro-ton-pulon-i-sugomidi-ton-prasinon-poikilion/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878473/georgiadis-suggnomi-apo-tin-oikogeneia-mazonaki-pou-to-sustima-den-borese-na-ton-prostateusei-apo-kati-ashimo/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878461/vrohi-ta-350aria-gia-tahutita-pou-stinei-radar-i-trohaia-kai-pote-hanetai-to-diploma/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1878456/to-mihanima-pou-hrisimopoiisan-theodoropoulos-kai-gaka-kategrapse-pote-stamatise-na-htupaei-i-kardia-tou-mazanaki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T09:30:00.052715+00:00"
+      "seen_at_utc": "2026-09-14T10:17:04.571264+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1466602/kideia-mazonaki-kykloforiakes-rythmiseis-gyro-apo-tin-ekklisia-tis-agias-triadas-sti-nikaia/",
-      "title": "Κηδεία Μαζωνάκη: Κυκλοφοριακές ρυθμίσεις γύρω από την εκκλησία της Αγίας Τριάδας στη Νίκαια",
-      "normalized_title": "ΚΗΔΕΙΑ ΜΑΖΩΝΑΚΗ: ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ ΓΥΡΩ ΑΠΟ ΤΗΝ ΕΚΚΛΗΣΙΑ ΤΗΣ ΑΓΙΑΣ ΤΡΙΑΔΑΣ ΣΤΗ ΝΙΚΑΙΑ",
+      "url": "https://www.efsyn.gr/ellada/1466631/giorgos-mazonakis-thaymastes-toy-horepsan-zeimpekiko-exo-apo-tin-ekklisia-eikones/",
+      "title": "Γιώργος Μαζωνάκης: Θαυμαστές του χόρεψαν ζεϊμπέκικο έξω από την εκκλησία [εικόνες]",
+      "normalized_title": "ΓΙΩΡΓΟΣ ΜΑΖΩΝΑΚΗΣ: ΘΑΥΜΑΣΤΕΣ ΤΟΥ ΧΟΡΕΨΑΝ ΖΕΙΜΠΕΚΙΚΟ ΕΞΩ ΑΠΟ ΤΗΝ ΕΚΚΛΗΣΙΑ [ΕΙΚΟΝΕΣ]",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1466602/kideia-mazonaki-kykloforiakes-rythmiseis-gyro-apo-tin-ekklisia-tis-agias-triadas-sti-nikaia/",
-        "https://www.efsyn.gr/ellada/1466589/diki-gia-ta-tempi-itan-san-na-eskase-vomva-akoysa-mia-kopela-na-fonazei-fotia-fotia/"
+        "https://www.efsyn.gr/ellada/1466631/giorgos-mazonakis-thaymastes-toy-horepsan-zeimpekiko-exo-apo-tin-ekklisia-eikones/",
+        "https://www.efsyn.gr/stiles/1466475/otan-o-ploytos-forologeitai-ligotero-apo-tin-ergasia/",
+        "https://www.efsyn.gr/stiles/1466467/peri-vlakeias/",
+        "https://www.efsyn.gr/stiles/1466451/i-ypexairesi-tis-psifoy/",
+        "https://www.efsyn.gr/ellada/1466625/thessaloniki-varys-oplismos-feretai-na-proorizotan-gia-toyrkiki-egklimatiki-organosi-dyo-syllipseis/",
+        "https://www.efsyn.gr/ellada/1466618/safari-tis-trohaias-stin-attiki-38-098-alkotest-24-syllipseis-odigon/",
+        "https://www.efsyn.gr/kosmos/1466563/gallia-favori-i-lepen-stis-proedrikes-ekloges-lene-oi-dimoskopiseis-ftanei-sto-telos-tis-i-epohi-toy-makron/",
+        "https://www.efsyn.gr/ellada/1466608/serres-nea-epeisodia-sti-domi-tis-sintikis/",
+        "https://www.efsyn.gr/politiki/1466605/latinopoyloy-se-remo-an-legotan-roma-kings-tha-erhomoyn-min-mas-poyn-kai-ratsistes-vinteo/"
       ],
-      "seen_at_utc": "2026-09-14T09:51:17.699958+00:00"
+      "seen_at_utc": "2026-09-14T10:17:04.571210+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/go-fun/fizz/mprant-pit-ines-nte-ramon-i-emfanisi-tou-zeygariou-ston-teliko-andron-tou-us-open/",
-      "title": "Μπραντ Πιτ - Ινές ντε Ραμόν: Η εμφάνιση του ζευγαριού στον τελικό ανδρών του US Open",
-      "normalized_title": "ΜΠΡΑΝΤ ΠΙΤ - ΙΝΕΣ ΝΤΕ ΡΑΜΟΝ: Η ΕΜΦΑΝΙΣΗ ΤΟΥ ΖΕΥΓΑΡΙΟΥ ΣΤΟΝ ΤΕΛΙΚΟ ΑΝΔΡΩΝ ΤΟΥ US OPEN",
+      "url": "https://www.in.gr/2026/09/14/world/tourkia-dikastirio-dietakse-tin-profylakisi-16-anthropon-sti-smyrni-efodoi-se-xorous-tis-koinotitas-loatki/",
+      "title": "Δικαστήριο διέταξε την προφυλάκιση 16 ανθρώπων στη Σμύρνη - Έφοδοι σε χώρους της κοινότητας ΛΟΑΤΚΙ+",
+      "normalized_title": "ΔΙΚΑΣΤΗΡΙΟ ΔΙΕΤΑΞΕ ΤΗΝ ΠΡΟΦΥΛΑΚΙΣΗ 16 ΑΝΘΡΩΠΩΝ ΣΤΗ ΣΜΥΡΝΗ - ΕΦΟΔΟΙ ΣΕ ΧΩΡΟΥΣ ΤΗΣ ΚΟΙΝΟΤΗΤΑΣ ΛΟΑΤΚΙ+",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/go-fun/fizz/mprant-pit-ines-nte-ramon-i-emfanisi-tou-zeygariou-ston-teliko-andron-tou-us-open/",
-        "https://www.in.gr/2026/09/14/greece/entaksi-ton-stratiotikon-sxolon-stin-ypiresia-eydoksos-ypografi-programmatikis-symvasis-metaksy-ypetha-kai-edyte/",
-        "https://www.in.gr/2026/09/14/sports/football/i-nea-marathonia-diakopi-ton-ethnikon-omadon/",
-        "https://www.in.gr/2026/09/14/greece/kakourgimatiki-dioksi-stous-syllifthentes-gia-ton-vary-oplismo-pou-proorizotan-gia-tourkiki-egklimatiki-organosi/"
+        "https://www.in.gr/2026/09/14/world/tourkia-dikastirio-dietakse-tin-profylakisi-16-anthropon-sti-smyrni-efodoi-se-xorous-tis-koinotitas-loatki/",
+        "https://www.in.gr/2026/09/14/politics/epikairotita/milena-apostolaki-avevaiotita-gia-ofeiles-doseis-kai-tokous-xiliadon-daneiolipton-epikairi-erotisi-ston-pierrakaki/",
+        "https://www.in.gr/2026/09/14/greece/oso-zo-mazo-me-tragoudia-xoro-kai-minymata-agapis-to-antio-ston-giorgo-mazonaki/",
+        "https://www.in.gr/2026/09/14/sports/othersports/anodos-9-theseon-gia-ton-tsitsipa-stin-pagkosmia-katataksi/",
+        "https://www.in.gr/2026/09/14/economy/oikonomikes-eidiseis/safari-tis-aade-gia-adilota-eisodimata-apo-airbnb-ta-prostima/"
       ],
-      "seen_at_utc": "2026-09-14T09:51:17.699937+00:00"
+      "seen_at_utc": "2026-09-14T10:17:04.571164+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T09:51:17.700027+00:00"
+  "updated_at_utc": "2026-09-14T10:17:04.571336+00:00"
 }
