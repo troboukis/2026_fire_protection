@@ -91,7 +91,7 @@ function FocusScene({ selectedId, selectedContractId, connectionId, relationKind
       <svg className="report-focus-lines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
         <defs>
           <marker id="report-focus-amendment-arrow" markerWidth="6" markerHeight="6" refX="5.5" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth">
-            <path className="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" />
+            <path className="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" fill="var(--accent)" />
           </marker>
         </defs>
         {origins.map(item => <path key={item.id} className={item.relationKind ? `report-focus-line--${item.relationKind}` : undefined} d={`M 295 300 H 230 V ${item.y * 6} H 160`} style={{ stroke: item.relationKind === 'amendment' ? 'var(--accent)' : item.color }} markerStart={item.amendmentTarget === 'center' ? 'url(#report-focus-amendment-arrow)' : undefined} markerEnd={item.amendmentTarget === 'neighbor' ? 'url(#report-focus-amendment-arrow)' : undefined} />)}

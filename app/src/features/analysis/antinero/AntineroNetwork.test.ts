@@ -41,6 +41,7 @@ describe('AntiNERO all-contract network', () => {
     expect(initial.indexOf('aria-label="Υπόμνημα συνδέσεων"')).toBeGreaterThan(initial.indexOf('</svg>'))
     expect(initial).toContain('Τροποποιεί')
     expect(initial).not.toContain('→')
+    expect(initial).toContain('class="report-connection-arrow" d="M 0 0 L 6 3 L 0 6 Z" fill="var(--accent)"')
     expect(initial.match(/marker-end="url\(#report-amendment-arrow\)"/g)).toHaveLength(4)
     expect(initial).not.toContain('class="report-connection-tooltip')
     expect(initial).toContain('aria-label="Τροποποιεί:')
