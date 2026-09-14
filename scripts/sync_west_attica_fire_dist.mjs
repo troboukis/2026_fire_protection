@@ -170,7 +170,7 @@ function standaloneConsentScript(measurementId) {
         el: {
           consentModal: {
             title: 'Επιλογές απορρήτου',
-            description: 'Χρησιμοποιούμε προαιρετικά cookies του Google Analytics για να κατανοούμε τη χρήση του FireWatch. Με την «Αποδοχή όλων» ενεργοποιούνται τα στατιστικά cookies, ενώ με την «Απόρριψη όλων» παραμένουν απενεργοποιημένα.',
+            description: 'Χρησιμοποιούμε προαιρετικά cookies της υπηρεσίας Google Analytics, ώστε να κατανοούμε καλύτερα πώς χρησιμοποιείται το FireWatch. Επιλέγοντας «Αποδοχή όλων», ενεργοποιείτε την επιλογή «Στατιστικά». Επιλέγοντας «Απόρριψη όλων», η επιλογή «Στατιστικά» παραμένει απενεργοποιημένη.',
             acceptAllBtn: 'Αποδοχη ολων',
             acceptNecessaryBtn: 'Απορριψη ολων',
             showPreferencesBtn: 'Ρυθμισεις',
