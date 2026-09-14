@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564457522/tramp-gia-ton-elegcho-tis-ai-chreiazetai-enas-proedros-me-ypsilo-deikti-noimosynis-oi-ipa-ton-diathetoyn/",
-      "title": "Τραμπ: Για τον έλεγχο της AI χρειάζεται ένας πρόεδρος με υψηλό δείκτη νοημοσύνης – Οι ΗΠΑ τον διαθέτουν",
-      "normalized_title": "ΤΡΑΜΠ: ΓΙΑ ΤΟΝ ΕΛΕΓΧΟ ΤΗΣ AI ΧΡΕΙΑΖΕΤΑΙ ΕΝΑΣ ΠΡΟΕΔΡΟΣ ΜΕ ΥΨΗΛΟ ΔΕΙΚΤΗ ΝΟΗΜΟΣΥΝΗΣ – ΟΙ ΗΠΑ ΤΟΝ ΔΙΑΘΕΤΟΥΝ",
+      "url": "https://www.kathimerini.gr/economy/564454801/to-elliniko-giaoyrti-katakta-kai-tin-asia/",
+      "title": "Το ελληνικό γιαούρτι κατακτά και την Ασία",
+      "normalized_title": "ΤΟ ΕΛΛΗΝΙΚΟ ΓΙΑΟΥΡΤΙ ΚΑΤΑΚΤΑ ΚΑΙ ΤΗΝ ΑΣΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564457522/tramp-gia-ton-elegcho-tis-ai-chreiazetai-enas-proedros-me-ypsilo-deikti-noimosynis-oi-ipa-ton-diathetoyn/",
-        "https://www.kathimerini.gr/culture/cinema/564457513/otan-o-alan-rikman-proskaloyse-paidia-apo-nosokomeia-sta-gyrismata-toy-chari-poter/",
-        "https://www.kathimerini.gr/world/564457501/aerodromia-9-krati-meli-zitoyn-perissotero-chrono-gia-toys-neoys-elegchoys/"
+        "https://www.kathimerini.gr/economy/564454801/to-elliniko-giaoyrti-katakta-kai-tin-asia/",
+        "https://www.kathimerini.gr/politics/parties/564454315/fragkiskos-koytentakis-to-pazl-ton-neon-tsipranomics/",
+        "https://www.kathimerini.gr/world/564457471/vibra-signe-i-techniki-poy-dinei-rythmo-stoys-kofoys-choreytes-tis-mpoyrkina-faso/"
       ],
-      "seen_at_utc": "2026-09-14T14:51:20.871012+00:00"
+      "seen_at_utc": "2026-09-14T15:17:37.805906+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,40 +1261,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878606/o-augerinos-sholiazei-tis-eikones-sto-grafeio-theodoropoulou-me-to-vlemma-stin-karustianou-akomi-treho/?utm_source=rss",
-      "title": "Ο Αυγερινός σχολιάζει τις θρησκευτικές εικόνες στο ιατρείο όπου πέθανε ο Μαζωνάκης, με το βλέμμα στην Καρυστιανού: «Ακόμη τρέχω...»",
-      "normalized_title": "Ο ΑΥΓΕΡΙΝΟΣ ΣΧΟΛΙΑΖΕΙ ΤΙΣ ΘΡΗΣΚΕΥΤΙΚΕΣ ΕΙΚΟΝΕΣ ΣΤΟ ΙΑΤΡΕΙΟ ΟΠΟΥ ΠΕΘΑΝΕ Ο ΜΑΖΩΝΑΚΗΣ, ΜΕ ΤΟ ΒΛΕΜΜΑ ΣΤΗΝ ΚΑΡΥΣΤΙΑΝΟΥ: «ΑΚΟΜΗ ΤΡΕΧΩ...»",
+      "url": "https://www.protothema.gr/greece/article/1878654/sunelifthi-40hronos-gia-ebrismous-stin-euvoia-ton-eihan-sullavei-kai-to-2018/?utm_source=rss",
+      "title": "Συνελήφθη 40χρονος για εμπρησμούς στην Εύβοια, τον είχαν συλλάβει και το 2018",
+      "normalized_title": "ΣΥΝΕΛΗΦΘΗ 40ΧΡΟΝΟΣ ΓΙΑ ΕΜΠΡΗΣΜΟΥΣ ΣΤΗΝ ΕΥΒΟΙΑ, ΤΟΝ ΕΙΧΑΝ ΣΥΛΛΑΒΕΙ ΚΑΙ ΤΟ 2018",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878606/o-augerinos-sholiazei-tis-eikones-sto-grafeio-theodoropoulou-me-to-vlemma-stin-karustianou-akomi-treho/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878654/sunelifthi-40hronos-gia-ebrismous-stin-euvoia-ton-eihan-sullavei-kai-to-2018/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-14T14:51:20.871137+00:00"
+      "seen_at_utc": "2026-09-14T15:17:37.806062+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1466907/pasok-kata-voridi-kamia-amfivolia-i-kyvernisi-tha-meiosei-ton-hrono-katavolis-toy-epidomatos-anergias-an-epaneklegei/",
-      "title": "ΠΑΣΟΚ κατά Βορίδη: «Καμία αμφιβολία – Η κυβέρνηση θα μειώσει τον χρόνο καταβολής του επιδόματος ανεργίας αν επανεκλεγεί»",
-      "normalized_title": "ΠΑΣΟΚ ΚΑΤΑ ΒΟΡΙΔΗ: «ΚΑΜΙΑ ΑΜΦΙΒΟΛΙΑ – Η ΚΥΒΕΡΝΗΣΗ ΘΑ ΜΕΙΩΣΕΙ ΤΟΝ ΧΡΟΝΟ ΚΑΤΑΒΟΛΗΣ ΤΟΥ ΕΠΙΔΟΜΑΤΟΣ ΑΝΕΡΓΙΑΣ ΑΝ ΕΠΑΝΕΚΛΕΓΕΙ»",
+      "url": "https://www.efsyn.gr/athlitismos/1466928/volos-anakoinose-tin-apoktisi-toy-remi-kampela-apo-ton-olympiako/",
+      "title": "Βόλος: Ανακοίνωσε την απόκτηση του Ρεμί Καμπελά από τον Ολυμπιακό",
+      "normalized_title": "ΒΟΛΟΣ: ΑΝΑΚΟΙΝΩΣΕ ΤΗΝ ΑΠΟΚΤΗΣΗ ΤΟΥ ΡΕΜΙ ΚΑΜΠΕΛΑ ΑΠΟ ΤΟΝ ΟΛΥΜΠΙΑΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1466907/pasok-kata-voridi-kamia-amfivolia-i-kyvernisi-tha-meiosei-ton-hrono-katavolis-toy-epidomatos-anergias-an-epaneklegei/",
-        "https://www.efsyn.gr/ellada/1466909/antifasistikos-septemvris-oles-oi-ekdiloseis-gia-ta-13-hronia-apo-ti-dolofonia-toy-payloy-fyssa/",
-        "https://www.efsyn.gr/politiki/1466910/kke-gia-kostologisi-programmaton-kalpikos-kavgas-kyvernisis-pasok-kai-kommatos-tsipra/",
-        "https://www.efsyn.gr/stiles/1466651/oi-kryfes-alitheies-ton-harton/",
-        "https://www.efsyn.gr/stiles/1466617/gia-ton-spyro-halvatzi/",
-        "https://www.efsyn.gr/stiles/1466597/apyloti-kindynologia/"
+        "https://www.efsyn.gr/athlitismos/1466928/volos-anakoinose-tin-apoktisi-toy-remi-kampela-apo-ton-olympiako/",
+        "https://www.efsyn.gr/ellada/1466925/oi-ergazomenoi-ston-episitismo-kai-toyrismo-esteilan-anoihti-epistoli-ston-mitsotaki-meta-tis-diloseis-marinaki/",
+        "https://www.efsyn.gr/politiki/1466923/koyfonikolakoy-kata-voridi-marinaki-gia-to-epidoma-anergias-einai-stratigiki-toy-mitsotaki/",
+        "https://www.efsyn.gr/politiki/1466921/anna-papadopoyloy-kata-marinaki-sta-oria-toy-koinonikoy-kanivalismoy-i-dilosi-gia-dimino-epidoma-anergias/"
       ],
-      "seen_at_utc": "2026-09-14T14:51:20.871105+00:00"
+      "seen_at_utc": "2026-09-14T15:17:37.806036+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/world/germania-i-ypiresia-stratiotikis-antikataskopeias-proeidopoiei-gia-ayksanomeni-apeili-apo-rosia-kai-kina/",
-      "title": "Η γερμανική υπηρεσία στρατιωτικής αντικατασκοπείας προειδοποιεί για αυξανόμενη απειλή από Ρωσία και Κίνα",
-      "normalized_title": "Η ΓΕΡΜΑΝΙΚΗ ΥΠΗΡΕΣΙΑ ΣΤΡΑΤΙΩΤΙΚΗΣ ΑΝΤΙΚΑΤΑΣΚΟΠΕΙΑΣ ΠΡΟΕΙΔΟΠΟΙΕΙ ΓΙΑ ΑΥΞΑΝΟΜΕΝΗ ΑΠΕΙΛΗ ΑΠΟ ΡΩΣΙΑ ΚΑΙ ΚΙΝΑ",
+      "url": "https://www.in.gr/2026/09/14/greece/epathe-thromvosi-sta-deka-prota-lepta-tis-plasmafairesis-nea-stoixeia-gia-ti-moiraia-therapeia-tou-giorgou-mazonaki/",
+      "title": "Έπαθε θρόμβωση στα δέκα πρώτα λεπτά της πλασμαφαίρεσης – Νέα στοιχεία για τη μοιραία θεραπεία του Γιώργου Μαζωνάκη",
+      "normalized_title": "ΕΠΑΘΕ ΘΡΟΜΒΩΣΗ ΣΤΑ ΔΕΚΑ ΠΡΩΤΑ ΛΕΠΤΑ ΤΗΣ ΠΛΑΣΜΑΦΑΙΡΕΣΗΣ – ΝΕΑ ΣΤΟΙΧΕΙΑ ΓΙΑ ΤΗ ΜΟΙΡΑΙΑ ΘΕΡΑΠΕΙΑ ΤΟΥ ΓΙΩΡΓΟΥ ΜΑΖΩΝΑΚΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/world/germania-i-ypiresia-stratiotikis-antikataskopeias-proeidopoiei-gia-ayksanomeni-apeili-apo-rosia-kai-kina/",
-        "https://www.in.gr/2026/09/14/sports/football/volos-anakoinose-tin-apoktisi-tou-kampela/",
-        "https://www.in.gr/2026/09/14/politics/epikairotita/kampania-tis-neas-aristeras-gia-tin-krisi-enoikion-to-noiki-anevainei-i-zoi-den-vgainei/",
-        "https://www.in.gr/2026/09/14/life/stayros-ksarxakos-giorgos-mazonakis-to-teleytaio-laiko-eidolo/"
+        "https://www.in.gr/2026/09/14/greece/epathe-thromvosi-sta-deka-prota-lepta-tis-plasmafairesis-nea-stoixeia-gia-ti-moiraia-therapeia-tou-giorgou-mazonaki/",
+        "https://www.in.gr/2026/09/14/sports/football/pantovits-efyga-apo-ton-panathinaiko-giati-den-eixa-xrono-symmetoxis/",
+        "https://www.in.gr/2026/09/14/world/route-to-pligma-se-treno-stin-oukrania-deixnei-poso-apegnosmenos-einai-o-poutin/",
+        "https://www.in.gr/2026/09/14/greece/synelifthi-40xronos-gia-seira-emprismon-stin-eyvoia-eixe-syllifthei-kai-to-2018/",
+        "https://www.in.gr/2026/09/14/economy/oikonomikes-eidiseis/aep-to-makry-taksidi-tis-epistrofis-sta-pro-krisis-epipeda-i-epoulosi-ton-pligon-kai-to-makrino-2034/",
+        "https://www.in.gr/2026/09/14/in-science/technology/texniti-noimosyni-o-oie-kalei-se-epeigousa-drasi-apenanti-stous-protofaneis-kindynous-pou-egeirei-i-ai/"
       ],
-      "seen_at_utc": "2026-09-14T14:51:20.871063+00:00"
+      "seen_at_utc": "2026-09-14T15:17:37.806003+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T14:51:20.871233+00:00"
+  "updated_at_utc": "2026-09-14T15:17:37.806160+00:00"
 }
