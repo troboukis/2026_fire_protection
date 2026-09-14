@@ -1,14 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564457675/sikelia-xana-kleisto-to-aerodromio-tis-katanias-logo-toy-ifaisteioy-tis-aitnas/",
-      "title": "Σικελία: Ξανά κλειστό το αεροδρόμιο της Κατάνιας λόγω του ηφαιστείου της Αίτνας",
-      "normalized_title": "ΣΙΚΕΛΙΑ: ΞΑΝΑ ΚΛΕΙΣΤΟ ΤΟ ΑΕΡΟΔΡΟΜΙΟ ΤΗΣ ΚΑΤΑΝΙΑΣ ΛΟΓΩ ΤΟΥ ΗΦΑΙΣΤΕΙΟΥ ΤΗΣ ΑΙΤΝΑΣ",
+      "url": "https://www.kathimerini.gr/eortologio/564434209/eortologio-poioi-giortazoyn-simera-15-septemvrioy/",
+      "title": "Εορτολόγιο: Ποιοι γιορτάζουν σήμερα 15 Σεπτεμβρίου",
+      "normalized_title": "ΕΟΡΤΟΛΟΓΙΟ: ΠΟΙΟΙ ΓΙΟΡΤΑΖΟΥΝ ΣΗΜΕΡΑ 15 ΣΕΠΤΕΜΒΡΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564457675/sikelia-xana-kleisto-to-aerodromio-tis-katanias-logo-toy-ifaisteioy-tis-aitnas/",
-        "https://www.kathimerini.gr/society/564457033/kalamaria-eisaggeliki-ereyna-gia-ptosi-dentroy-poy-traymatise-mitera-kai-paidi-se-parko/"
+        "https://www.kathimerini.gr/eortologio/564434209/eortologio-poioi-giortazoyn-simera-15-septemvrioy/",
+        "https://www.kathimerini.gr/culture/564455071/mitera-aichmaloti-tis-patrikis-figoyras/"
       ],
-      "seen_at_utc": "2026-09-14T20:51:16.994729+00:00"
+      "seen_at_utc": "2026-09-14T21:17:05.290709+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1269,26 +1269,28 @@
       "seen_at_utc": "2026-09-14T20:29:54.196598+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1467088/thanos-pleyris-gnoriza-ton-giatro-toy-mazonaki-ton-eiha-symvoyleytei-to-2016/",
-      "title": "Θάνος Πλεύρης: Γνώριζα τον γιατρό του Μαζωνάκη – Τον είχα συμβουλευτεί το 2016 [βίντεο]",
-      "normalized_title": "ΘΑΝΟΣ ΠΛΕΥΡΗΣ: ΓΝΩΡΙΖΑ ΤΟΝ ΓΙΑΤΡΟ ΤΟΥ ΜΑΖΩΝΑΚΗ – ΤΟΝ ΕΙΧΑ ΣΥΜΒΟΥΛΕΥΤΕΙ ΤΟ 2016 [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/kosmos/1467092/dimosieyma-ponokefalos-gia-tramp-rosos-oligarhis-hrimatodotise-ti-gamilia-dexiosi-toy-tzoynior/",
+      "title": "Δημοσίευμα – πονοκέφαλος για Τραμπ: Ρώσος ολιγάρχης χρηματοδότησε τη γαμήλια δεξίωση του Τζούνιορ",
+      "normalized_title": "ΔΗΜΟΣΙΕΥΜΑ – ΠΟΝΟΚΕΦΑΛΟΣ ΓΙΑ ΤΡΑΜΠ: ΡΩΣΟΣ ΟΛΙΓΑΡΧΗΣ ΧΡΗΜΑΤΟΔΟΤΗΣΕ ΤΗ ΓΑΜΗΛΙΑ ΔΕΞΙΩΣΗ ΤΟΥ ΤΖΟΥΝΙΟΡ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1467088/thanos-pleyris-gnoriza-ton-giatro-toy-mazonaki-ton-eiha-symvoyleytei-to-2016/"
+        "https://www.efsyn.gr/kosmos/1467092/dimosieyma-ponokefalos-gia-tramp-rosos-oligarhis-hrimatodotise-ti-gamilia-dexiosi-toy-tzoynior/",
+        "https://www.efsyn.gr/ellada/1467091/kairos-poies-periohes-tha-ehoyn-tin-perissoteri-vrohi-tin-triti-kai-tin-tetarti-i-anartisi-kolyda/"
       ],
-      "seen_at_utc": "2026-09-14T20:51:16.994840+00:00"
+      "seen_at_utc": "2026-09-14T21:17:05.290822+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/14/greece/eksafanisi-17xronis-ston-kolono-i-anakoinosi-apo-to-xamogelo-tou-paidiou/",
-      "title": "Εξαφάνιση 17χρονης στον Κολωνό – Η ανακοίνωση από το Χαμόγελο του Παιδιού",
-      "normalized_title": "ΕΞΑΦΑΝΙΣΗ 17ΧΡΟΝΗΣ ΣΤΟΝ ΚΟΛΩΝΟ – Η ΑΝΑΚΟΙΝΩΣΗ ΑΠΟ ΤΟ ΧΑΜΟΓΕΛΟ ΤΟΥ ΠΑΙΔΙΟΥ",
+      "url": "https://www.in.gr/2026/09/15/world/rosos-oligarxis-kai-symmaxos-tou-poutin-xrimatodotise-ti-gamilia-deksiosi-tou-giou-tou-tramp-stis-mpaxames/",
+      "title": "Ρώσος ολιγάρχης και σύμμαχος του Πούτιν χρηματοδότησε τη γαμήλια δεξίωση του γιου του Τραμπ στις Μπαχάμες",
+      "normalized_title": "ΡΩΣΟΣ ΟΛΙΓΑΡΧΗΣ ΚΑΙ ΣΥΜΜΑΧΟΣ ΤΟΥ ΠΟΥΤΙΝ ΧΡΗΜΑΤΟΔΟΤΗΣΕ ΤΗ ΓΑΜΗΛΙΑ ΔΕΞΙΩΣΗ ΤΟΥ ΓΙΟΥ ΤΟΥ ΤΡΑΜΠ ΣΤΙΣ ΜΠΑΧΑΜΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/14/greece/eksafanisi-17xronis-ston-kolono-i-anakoinosi-apo-to-xamogelo-tou-paidiou/",
-        "https://www.in.gr/2026/09/14/sports/football/inter-ountineze-5-3-anatropi-pentara-kai-4-sta-4/",
-        "https://www.in.gr/2026/09/14/world/tanker-xtypise-narki-leei-to-iran-kai-kleinei-ta-stena-tou-ormouz-centcom-to-xtypisan-oi-iranoi/",
-        "https://www.in.gr/2026/09/14/world/deyterogeneis-kyroseis-sto-iran-oi-ipa-stoxeysan-ti-rosiki-trapeza-vtb-logo-desmon-me-tin-texerani/"
+        "https://www.in.gr/2026/09/15/world/rosos-oligarxis-kai-symmaxos-tou-poutin-xrimatodotise-ti-gamilia-deksiosi-tou-giou-tou-tramp-stis-mpaxames/",
+        "https://www.in.gr/2026/09/15/sports/football/lints-nioukastl-4-1-parti-kai-triada/",
+        "https://www.in.gr/2026/09/15/go-fun/stars/imerisia/akros-zodiako-ta-dos-kai-donts-sta-zodia-simera-triti-15-09-2026/",
+        "https://www.in.gr/2026/09/15/greece/giorti-simera-15-septemvriou-poioi-giortazoun-eortologio/",
+        "https://www.in.gr/2026/09/14/politics/me-logia-mazonaki-sti-vouli-o-doudonis-pire-perifani-stasi-yper-tis-dimokratias-kai-kata-ton-xrysaygiton/"
       ],
-      "seen_at_utc": "2026-09-14T20:51:16.994769+00:00"
+      "seen_at_utc": "2026-09-14T21:17:05.290771+00:00"
     }
   },
-  "updated_at_utc": "2026-09-14T20:51:16.994915+00:00"
+  "updated_at_utc": "2026-09-14T21:17:05.290918+00:00"
 }
