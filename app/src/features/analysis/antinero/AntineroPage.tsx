@@ -100,8 +100,8 @@ export default function AntineroPage() {
           <p>{contract.description || contract.label}</p>
           <dl><dt>Πρόγραμμα</dt><dd>{contract.nodeContext.programme}</dd><dt>Δασική υπηρεσία</dt><dd>{contract.nodeContext.forestry}</dd><dt>Ανάδοχος</dt><dd>{contract.contractors.join(' / ')}</dd><dt>Αναθέτουσα αρχή</dt><dd>{contract.authority}</dd>
             <dt>{contract.amountBasis === 'additional_amount' ? 'Πρόσθετο τίμημα χωρίς ΦΠΑ' : 'Συμβατικό τίμημα χωρίς ΦΠΑ'}</dt><dd>{contract.withoutVat === null ? 'Χωρίς νέο τίμημα στην τροποποίηση' : money(contract.withoutVat)}</dd>
-            <dt>Παράδοση έργου</dt><dd>{initialCompletionDate ? <time className="report-completion-value" dateTime={initialCompletionDate}>{dateLabel(initialCompletionDate)}</time> : 'Καθορίζεται ανά Εντολή Ανάθεσης'}</dd>
-            <dt>Τελική ημερομηνία παράδοσης έργου</dt><dd>{finalCompletionDate ? <time className="report-completion-value" dateTime={finalCompletionDate}>{dateLabel(finalCompletionDate)}</time> : 'Καθορίζεται ανά Εντολή Ανάθεσης'}</dd>
+            <dt>Παράδοση έργου</dt><dd>{initialCompletionDate ? <time className="report-completion-value" dateTime={initialCompletionDate}>{dateLabel(initialCompletionDate)}</time> : '—'}</dd>
+            <dt>Τελική ημερομηνία παράδοσης έργου</dt><dd>{finalCompletionDate ? <time className="report-completion-value" dateTime={finalCompletionDate}>{dateLabel(finalCompletionDate)}</time> : '—'}</dd>
           </dl>
           {contract.kind === 'supplement' && <p className="report-caveat">Το διαθέσιμο έγγραφο εγκρίνει τη συμπληρωματική σύμβαση· δεν τεκμηριώνει αυτοτελώς την υπογραφή της.{contract.id === '26SYMV018978343' ? ' Αφορά τη Χαλκίδα και διατηρείται για τη σύνδεσή του με την αρχική σύμβαση.' : ''}</p>}
         </>}

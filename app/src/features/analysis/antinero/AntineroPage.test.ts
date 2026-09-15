@@ -97,6 +97,14 @@ describe('report initial view', () => {
     expect(html).toContain('<time class="report-completion-value" dateTime="2025-09-03">3/9/2025</time>')
     expect(html).toContain('<time class="report-completion-value" dateTime="2026-07-22">22/7/2026</time>')
   })
+
+  it('shows a dash when completion dates are unavailable', () => {
+    const html = renderRoute('/analysis/antinero-west-attica?scope=25SYMV017345053&node=25SYMV017345053')
+
+    expect(html).toContain('<dt>Παράδοση έργου</dt><dd>—</dd>')
+    expect(html).toContain('<dt>Τελική ημερομηνία παράδοσης έργου</dt><dd>—</dd>')
+    expect(html).not.toContain('Καθορίζεται ανά Εντολή Ανάθεσης')
+  })
   it('uses the amendment document date instead of its parent contract date', () => {
     const html = renderRoute('/analysis/antinero-west-attica?scope=23SYMV013156865&node=23SYMV013156865')
 
