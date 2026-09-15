@@ -1,16 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564458437/i-ellada-pio-katallili-apo-pote-gia-paragogi-mangko/",
-      "title": "Η Ελλάδα πιο κατάλληλη από ποτέ για παραγωγή μάνγκο",
-      "normalized_title": "Η ΕΛΛΑΔΑ ΠΙΟ ΚΑΤΑΛΛΗΛΗ ΑΠΟ ΠΟΤΕ ΓΙΑ ΠΑΡΑΓΩΓΗ ΜΑΝΓΚΟ",
+      "url": "https://www.kathimerini.gr/economy/564458368/i-gnosi-kai-i-kainotomiaden-pernoyn-stin-agora/",
+      "title": "Η γνώση και η καινοτομία δεν περνούν στην αγορά",
+      "normalized_title": "Η ΓΝΩΣΗ ΚΑΙ Η ΚΑΙΝΟΤΟΜΙΑ ΔΕΝ ΠΕΡΝΟΥΝ ΣΤΗΝ ΑΓΟΡΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564458437/i-ellada-pio-katallili-apo-pote-gia-paragogi-mangko/",
-        "https://www.kathimerini.gr/culture/564458947/mpomp-maki-1939-2026-i-lamperi-goiteia-toy-schediasti-ton-star/",
-        "https://www.kathimerini.gr/world/564459019/israil-roi-pliroforion-sti-saoydiki-aravia-schetika-me-toys-choythi/",
-        "https://www.kathimerini.gr/culture/564454915/oyiliam-kentritz-stin-k-lynontas-to-ainigma-toy-orfea/"
+        "https://www.kathimerini.gr/economy/564458368/i-gnosi-kai-i-kainotomiaden-pernoyn-stin-agora/",
+        "https://www.kathimerini.gr/society/564459085/thessaloniki-nekros-anasyrthike-andras-apo-ton-thermaiko/",
+        "https://www.kathimerini.gr/culture/564455035/vlaptei-to-vivlio-i-chrysoskoni-toy-star-sistem/",
+        "https://www.kathimerini.gr/athletics/564459040/epistrofi-stis-proponiseis-gia-ton-karetsa/",
+        "https://www.kathimerini.gr/opinion/interviews/564450700/ino-mpantaniak-apo-tin-athina-sto-the-pitt/",
+        "https://www.kathimerini.gr/world/564459049/oyrsoyla-fon-nter-laien-ta-epta-kleidia-tis-etisias-omilias-tis/"
       ],
-      "seen_at_utc": "2026-09-15T08:51:13.602201+00:00"
+      "seen_at_utc": "2026-09-15T09:17:20.133800+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1262,38 +1264,47 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1879035/akinitopoiimeno-ohima-sti-leoforo-kifisou-dushereia-stin-kukloforia/?utm_source=rss",
-      "title": "Κίνηση τώρα: Ακινητοποιημένο ΙΧ στη Λεωφόρο Κηφισού, δυσχέρεια στην κυκλοφορία",
-      "normalized_title": "ΚΙΝΗΣΗ ΤΩΡΑ: ΑΚΙΝΗΤΟΠΟΙΗΜΕΝΟ ΙΧ ΣΤΗ ΛΕΩΦΟΡΟ ΚΗΦΙΣΟΥ, ΔΥΣΧΕΡΕΙΑ ΣΤΗΝ ΚΥΚΛΟΦΟΡΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1879068/apologeitai-i-18hroni-mitera-tou-vrefous-pou-nosileuetai-se-sovari-katastasi-sto-venizeleio-oi-duo-ekdohes-pou-edose/?utm_source=rss",
+      "title": "Απολογείται η 18χρονη μητέρα του βρέφους που νοσηλεύεται σε σοβαρή κατάσταση στο Βενιζέλειο, οι δύο εκδοχές που έδωσε",
+      "normalized_title": "ΑΠΟΛΟΓΕΙΤΑΙ Η 18ΧΡΟΝΗ ΜΗΤΕΡΑ ΤΟΥ ΒΡΕΦΟΥΣ ΠΟΥ ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΣΟΒΑΡΗ ΚΑΤΑΣΤΑΣΗ ΣΤΟ ΒΕΝΙΖΕΛΕΙΟ, ΟΙ ΔΥΟ ΕΚΔΟΧΕΣ ΠΟΥ ΕΔΩΣΕ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1879035/akinitopoiimeno-ohima-sti-leoforo-kifisou-dushereia-stin-kukloforia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1879068/apologeitai-i-18hroni-mitera-tou-vrefous-pou-nosileuetai-se-sovari-katastasi-sto-venizeleio-oi-duo-ekdohes-pou-edose/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879067/to-anuparkto-kvadiko-panepistimio-tis-havais-gia-gaka-i-anakoinosi-tis-enosis-fusikon-kai-to-minuma-georgiadi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879062/andras-anasurthike-nekros-apo-ton-thermaiko/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879060/apofulakistike-o-kasidiaris-ton-upodehthikan-upostiriktes-tou-epistrefo-stin-proti-grammi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879057/sunehizei-na-kaiei-edo-kai-duo-evdomades-i-fotia-stin-konitsa-mahi-me-nees-anazopuroseis/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879053/dikigoros-kasidiari-o-pelatis-mou-milaei-idi-me-anexartitous-vouleutes-apo-tous-spartiates-kai-ti-niki/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-15T08:51:13.602281+00:00"
+      "seen_at_utc": "2026-09-15T09:17:20.134004+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1467364/elliniki-aktinologiki-etaireia-poies-exetaseis-kai-epemvaseis-den-ginontai-nomima/",
-      "title": "Ελληνική Ακτινολογική Εταιρεία: Ποιες εξετάσεις και επεμβάσεις δεν γίνονται νόμιμα",
-      "normalized_title": "ΕΛΛΗΝΙΚΗ ΑΚΤΙΝΟΛΟΓΙΚΗ ΕΤΑΙΡΕΙΑ: ΠΟΙΕΣ ΕΞΕΤΑΣΕΙΣ ΚΑΙ ΕΠΕΜΒΑΣΕΙΣ ΔΕΝ ΓΙΝΟΝΤΑΙ ΝΟΜΙΜΑ",
+      "url": "https://www.efsyn.gr/oikonomia/1467283/420-proslipseis-sto-limeniko/",
+      "title": "420 προσλήψεις στο Λιμενικό",
+      "normalized_title": "420 ΠΡΟΣΛΗΨΕΙΣ ΣΤΟ ΛΙΜΕΝΙΚΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1467364/elliniki-aktinologiki-etaireia-poies-exetaseis-kai-epemvaseis-den-ginontai-nomima/",
-        "https://www.efsyn.gr/kosmos/1467334/steit-ntipartment-apagoreysi-eisodoy-stis-ipa-gia-ton-niko-mazioti/",
-        "https://www.efsyn.gr/ellada/1467340/zografoy-vinteo-ntokoymento-apo-tin-empristiki-epithesi-i-stigmi-poy-o-drastis-vazei-fotia-sto-aytokinito-antidimarhoy/"
+        "https://www.efsyn.gr/oikonomia/1467283/420-proslipseis-sto-limeniko/",
+        "https://www.efsyn.gr/ellada/1467271/sintiki-serron-den-antehetai-allo-ayto-to-kolastirio/",
+        "https://www.efsyn.gr/ellada/1467370/apofylakistike-o-ilias-kasidiaris-ypostiriktes-toy-exo-apo-tis-fylakes-domokoy/",
+        "https://www.efsyn.gr/ellada/1467356/mi-kratika-panepistimia-den-hanetai-o-hronos-spoydon-ton-foititon-ti-provlepei-i-tropologia/",
+        "https://www.efsyn.gr/oikonomia/1467326/ey-mytilinaios-stoys-ft-i-eyropi-kindyneyei-na-hasei-tin-koyrsa-gia-to-gallio/",
+        "https://www.efsyn.gr/politiki/1467322/i-dioikisi-tis-dypa-apagoreyse-anakoinosi-gia-ti-synantisi-me-ton-tsipra/"
       ],
-      "seen_at_utc": "2026-09-15T08:51:13.602264+00:00"
+      "seen_at_utc": "2026-09-15T09:17:20.133949+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/15/politics/politiki-grammateia/tsipras-apo-dypa-gia-to-epidoma-anergias-den-einai-prosopiki-apopsi-marinaki-alla-sxedio-mitsotaki/",
-      "title": "Τσίπρας από ΔΥΠΑ για το επίδομα ανεργίας: Δεν είναι προσωπική άποψη Μαρινάκη, αλλά σχέδιο Μητσοτάκη",
-      "normalized_title": "ΤΣΙΠΡΑΣ ΑΠΟ ΔΥΠΑ ΓΙΑ ΤΟ ΕΠΙΔΟΜΑ ΑΝΕΡΓΙΑΣ: ΔΕΝ ΕΙΝΑΙ ΠΡΟΣΩΠΙΚΗ ΑΠΟΨΗ ΜΑΡΙΝΑΚΗ, ΑΛΛΑ ΣΧΕΔΙΟ ΜΗΤΣΟΤΑΚΗ",
+      "url": "https://www.in.gr/2026/09/15/greece/kairos-erxetai-dyskolo-48oro-me-isxyres-kataigides-poies-perioxes-einai-sto-kokkino/",
+      "title": "Έρχεται δύσκολο 48ωρο με ισχυρές καταιγίδες - Ποιες περιοχές είναι στο «κόκκινο»",
+      "normalized_title": "ΕΡΧΕΤΑΙ ΔΥΣΚΟΛΟ 48ΩΡΟ ΜΕ ΙΣΧΥΡΕΣ ΚΑΤΑΙΓΙΔΕΣ - ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΤΟ «ΚΟΚΚΙΝΟ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/15/politics/politiki-grammateia/tsipras-apo-dypa-gia-to-epidoma-anergias-den-einai-prosopiki-apopsi-marinaki-alla-sxedio-mitsotaki/",
-        "https://www.in.gr/2026/09/15/greece/vinteo-ntokoumento-apo-ton-emprismo-stou-zografou-i-stigmi-pou-o-drastis-vazei-fotia-sto-oxima-tou-antidimarxou/",
-        "https://www.in.gr/2026/09/15/go-fun/perierga/perifanos-pateras-o-noel-gkalaxer-pou-o-15xronos-gios-tou-edeikse-to-mesaio-daxtylo-stous-opadous-tis-mantsester-giounaitent/",
-        "https://www.in.gr/2026/09/15/sports/basketball/to-plires-programma-kai-ta-ntermpi-tis-stoiximan-gbl-oi-imerominies-kai-ores/",
-        "https://www.in.gr/2026/09/15/politics/doudonis-gia-kasidiari-den-mporei-na-katevei-stis-ekloges-oute-os-afanis-arxigos-oute-os-ypopsifios-kommatos/"
+        "https://www.in.gr/2026/09/15/greece/kairos-erxetai-dyskolo-48oro-me-isxyres-kataigides-poies-perioxes-einai-sto-kokkino/",
+        "https://www.in.gr/2026/09/15/politics/aftodioikisi/o-dimos-irakleiou-stirizei-tous-foitites-tis-polis/",
+        "https://www.in.gr/2026/09/15/greece/thanatos-mazonaki-plithainoun-ta-stoixeia-pou-kaine-tous-giatrous-apologountai-simera-meta-tin-anavathmisi-tis-katigorias/",
+        "https://www.in.gr/2026/09/15/economy/ekpaideysi-enilikon-teleytaioi-stin-eyropi-oi-ellines-pou-pige-to-1-disek-tou-taa-gia-draseis-katartisis/",
+        "https://www.in.gr/2026/09/15/politics/politiki-grammateia/neo-minyma-ntilian-stin-kyvernisi-meso-kyprou-i-alitheia-den-synadei-me-to-afigima-pou-epeleksan-na-proothisoun-karfia-gia-osous-idi-gnorizoun/",
+        "https://www.in.gr/2026/09/15/sports/football/epistrefei-sti-drasi-o-karetsas-ti-anakoinose-i-ntortmount/"
       ],
-      "seen_at_utc": "2026-09-15T08:51:13.602243+00:00"
+      "seen_at_utc": "2026-09-15T09:17:20.133879+00:00"
     }
   },
-  "updated_at_utc": "2026-09-15T08:51:13.602349+00:00"
+  "updated_at_utc": "2026-09-15T09:17:20.134097+00:00"
 }
