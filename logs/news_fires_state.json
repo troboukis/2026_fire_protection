@@ -1,20 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/local/564458404/enischythikan-kata-43-4-oi-kratiseis-eisitirion-gia-ta-koyfonisia/",
-      "title": "Ενισχύθηκαν κατά 43,4% οι κρατήσεις εισιτηρίων για τα Κουφονήσια",
-      "normalized_title": "ΕΝΙΣΧΥΘΗΚΑΝ ΚΑΤΑ 43,4% ΟΙ ΚΡΑΤΗΣΕΙΣ ΕΙΣΙΤΗΡΙΩΝ ΓΙΑ ΤΑ ΚΟΥΦΟΝΗΣΙΑ",
+      "url": "https://www.kathimerini.gr/world/564459022/chari-kai-megkan-allazoyn-scholeio-sta-paidia-toys-meta-apo-molis-dyo-imeres-ti-toys-anisychise/",
+      "title": "Χάρι και Μέγκαν αλλάζουν σχολείο στα παιδιά τους μετά από μόλις δύο ημέρες – Τι τους ανησύχησε",
+      "normalized_title": "ΧΑΡΙ ΚΑΙ ΜΕΓΚΑΝ ΑΛΛΑΖΟΥΝ ΣΧΟΛΕΙΟ ΣΤΑ ΠΑΙΔΙΑ ΤΟΥΣ ΜΕΤΑ ΑΠΟ ΜΟΛΙΣ ΔΥΟ ΗΜΕΡΕΣ – ΤΙ ΤΟΥΣ ΑΝΗΣΥΧΗΣΕ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/local/564458404/enischythikan-kata-43-4-oi-kratiseis-eisitirion-gia-ta-koyfonisia/",
-        "https://www.kathimerini.gr/world/564458950/steit-ntipartment-apagoreysi-eisodoy-stis-ipa-gia-ton-niko-mazioti/",
-        "https://www.kathimerini.gr/politics/564458953/sti-germania-o-kyr-pierrakakis-tha-synantithei-me-merts-kai-klingkmpail/",
-        "https://www.kathimerini.gr/world/564458938/oyggaria-i-kyvernisi-katargei-toys-periorismoys-kata-tis-loatki-koinotitas/",
-        "https://www.kathimerini.gr/world/564458923/zelenski-stamatoyme-ta-pligmata-sti-rosia-an-i-moscha-papsei-na-plittei-tis-ypodomes-mas/",
-        "https://www.kathimerini.gr/society/564458929/kriti-epicheirisi-perisyllogis-74-metanaston-notiodytika-tis-gaydoy/",
-        "https://www.kathimerini.gr/culture/athinaika-plus/564457924/107-kerakia-gia-tin-k-viktoria-chislop-kai-gkonta-fan-stin-stelnoyn-tis-eyches-toys/",
-        "https://www.kathimerini.gr/world/564458926/chrysocho-dis-echoyme-strofi-pros-ti-via-kai-tin-akrodexia-den-erchontai-einai-edo/"
+        "https://www.kathimerini.gr/world/564459022/chari-kai-megkan-allazoyn-scholeio-sta-paidia-toys-meta-apo-molis-dyo-imeres-ti-toys-anisychise/",
+        "https://www.kathimerini.gr/economy/business/564458401/i-etaireia-doryforon-open-cosmos-antlise-300-ekat-eyro/",
+        "https://www.kathimerini.gr/politics/parliament/564458992/mi-kratika-aei-tropologia-gia-tin-anagnorisi-chronoy-spoydon-ton-foititon/"
       ],
-      "seen_at_utc": "2026-09-15T08:17:21.293952+00:00"
+      "seen_at_utc": "2026-09-15T08:30:05.614349+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1276,30 +1271,23 @@
       "seen_at_utc": "2026-09-15T08:17:21.294046+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1467324/apantisi-iran-se-tramp-kamia-synomilia-eos-otoy-ekplirothoyn-oi-oroi-toy-iran-teleia/",
-      "title": "Απάντηση Ιράν σε Τραμπ: «Καμία συνομιλία έως ότου εκπληρωθούν οι όροι του Ιράν. Τελεία!»",
-      "normalized_title": "ΑΠΑΝΤΗΣΗ ΙΡΑΝ ΣΕ ΤΡΑΜΠ: «ΚΑΜΙΑ ΣΥΝΟΜΙΛΙΑ ΕΩΣ ΟΤΟΥ ΕΚΠΛΗΡΩΘΟΥΝ ΟΙ ΟΡΟΙ ΤΟΥ ΙΡΑΝ. ΤΕΛΕΙΑ!»",
+      "url": "https://www.efsyn.gr/kosmos/1467329/fotovolides-apo-rosiki-fregata-kata-danikoy-elikopteroy-sti-valtiki-aperiskepti-energeia/",
+      "title": "Φωτοβολίδες από ρωσική φρεγάτα κατά δανικού ελικοπτέρου στη Βαλτική – «Απερίσκεπτη ενέργεια»",
+      "normalized_title": "ΦΩΤΟΒΟΛΙΔΕΣ ΑΠΟ ΡΩΣΙΚΗ ΦΡΕΓΑΤΑ ΚΑΤΑ ΔΑΝΙΚΟΥ ΕΛΙΚΟΠΤΕΡΟΥ ΣΤΗ ΒΑΛΤΙΚΗ – «ΑΠΕΡΙΣΚΕΠΤΗ ΕΝΕΡΓΕΙΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1467324/apantisi-iran-se-tramp-kamia-synomilia-eos-otoy-ekplirothoyn-oi-oroi-toy-iran-teleia/",
-        "https://www.efsyn.gr/politiki/1467264/thetikos-o-georgiadis-sto-na-ginontai-aimokatharseis-se-xenodoheia-vinteo/",
-        "https://www.efsyn.gr/ellada/1467303/zefyri-agnostos-anoixe-pyr-se-spiti-kai-aytokinito-entopistikan-7-kalykes/",
-        "https://www.efsyn.gr/politiki/1467310/simera-i-psifoforia-sto-eyrokoinovoylio-gia-tin-arsi-asylias-tis-latinopoyloy/"
+        "https://www.efsyn.gr/kosmos/1467329/fotovolides-apo-rosiki-fregata-kata-danikoy-elikopteroy-sti-valtiki-aperiskepti-energeia/"
       ],
-      "seen_at_utc": "2026-09-15T08:17:21.294022+00:00"
+      "seen_at_utc": "2026-09-15T08:30:05.614412+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/15/greece/alket-rizai-anthropokynigito-gia-ton-varypoiniti-drapeti-endexetai-na-einai-oplismenos-kai-epikindynos/",
-      "title": "Ανθρωποκυνηγητό για τον Αλκέτ Ριζάι - «Ενδέχεται να είναι οπλισμένος και επικίνδυνος»",
-      "normalized_title": "ΑΝΘΡΩΠΟΚΥΝΗΓΗΤΟ ΓΙΑ ΤΟΝ ΑΛΚΕΤ ΡΙΖΑΙ - «ΕΝΔΕΧΕΤΑΙ ΝΑ ΕΙΝΑΙ ΟΠΛΙΣΜΕΝΟΣ ΚΑΙ ΕΠΙΚΙΝΔΥΝΟΣ»",
+      "url": "https://www.in.gr/2026/09/15/world/rosia-protes-vouleytikes-ekloges-apo-tin-enarksi-tou-polemou-ta-4-simeia-pou-prepei-na-gnorizoume/",
+      "title": "Πρώτες βουλευτικές εκλογές στη Ρωσία από την έναρξη του πολέμου - Τα 4 σημεία που πρέπει να γνωρίζουμε, εκτός από το νικητή",
+      "normalized_title": "ΠΡΩΤΕΣ ΒΟΥΛΕΥΤΙΚΕΣ ΕΚΛΟΓΕΣ ΣΤΗ ΡΩΣΙΑ ΑΠΟ ΤΗΝ ΕΝΑΡΞΗ ΤΟΥ ΠΟΛΕΜΟΥ - ΤΑ 4 ΣΗΜΕΙΑ ΠΟΥ ΠΡΕΠΕΙ ΝΑ ΓΝΩΡΙΖΟΥΜΕ, ΕΚΤΟΣ ΑΠΟ ΤΟ ΝΙΚΗΤΗ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/15/greece/alket-rizai-anthropokynigito-gia-ton-varypoiniti-drapeti-endexetai-na-einai-oplismenos-kai-epikindynos/",
-        "https://www.in.gr/2026/09/15/politics/aftodioikisi/nea-aithousa-gia-mousikes-kai-politistikes-ekdiloseis-stin-karditsa/",
-        "https://www.in.gr/2026/09/15/sports/othersports/oi-athlitikes-metadoseis-tis-imeras-15-9-drasi-me-ethniki-volei-kai-prokrimatika-bcl/",
-        "https://www.in.gr/2026/09/15/greece/empristiki-epithesi-stou-zografou-kaike-aytokinito-antidimarxou-vrethike-mpitoni-me-venzini/",
-        "https://www.in.gr/2026/09/15/politics/aftodioikisi/paradothike-to-2o-nipiagogeio-aliveriou/"
+        "https://www.in.gr/2026/09/15/world/rosia-protes-vouleytikes-ekloges-apo-tin-enarksi-tou-polemou-ta-4-simeia-pou-prepei-na-gnorizoume/"
       ],
-      "seen_at_utc": "2026-09-15T08:17:21.293990+00:00"
+      "seen_at_utc": "2026-09-15T08:30:05.614388+00:00"
     }
   },
-  "updated_at_utc": "2026-09-15T08:17:21.294119+00:00"
+  "updated_at_utc": "2026-09-15T08:30:05.614468+00:00"
 }
