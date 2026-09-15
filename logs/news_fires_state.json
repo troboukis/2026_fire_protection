@@ -1,18 +1,23 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/564458368/i-gnosi-kai-i-kainotomiaden-pernoyn-stin-agora/",
-      "title": "Η γνώση και η καινοτομία δεν περνούν στην αγορά",
-      "normalized_title": "Η ΓΝΩΣΗ ΚΑΙ Η ΚΑΙΝΟΤΟΜΙΑ ΔΕΝ ΠΕΡΝΟΥΝ ΣΤΗΝ ΑΓΟΡΑ",
+      "url": "https://www.kathimerini.gr/society/564459154/konitsa-machi-me-tis-floges-gia-16i-imera-anazopyrosi-sti-charadra-toy-aooy/",
+      "title": "Κόνιτσα: Μάχη με τις φλόγες για 16η ημέρα – Αναζωπύρωση στη χαράδρα του Αώου",
+      "normalized_title": "ΚΟΝΙΤΣΑ: ΜΑΧΗ ΜΕ ΤΙΣ ΦΛΟΓΕΣ ΓΙΑ 16Η ΗΜΕΡΑ – ΑΝΑΖΩΠΥΡΩΣΗ ΣΤΗ ΧΑΡΑΔΡΑ ΤΟΥ ΑΩΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/564458368/i-gnosi-kai-i-kainotomiaden-pernoyn-stin-agora/",
-        "https://www.kathimerini.gr/society/564459085/thessaloniki-nekros-anasyrthike-andras-apo-ton-thermaiko/",
-        "https://www.kathimerini.gr/culture/564455035/vlaptei-to-vivlio-i-chrysoskoni-toy-star-sistem/",
-        "https://www.kathimerini.gr/athletics/564459040/epistrofi-stis-proponiseis-gia-ton-karetsa/",
-        "https://www.kathimerini.gr/opinion/interviews/564450700/ino-mpantaniak-apo-tin-athina-sto-the-pitt/",
-        "https://www.kathimerini.gr/world/564459049/oyrsoyla-fon-nter-laien-ta-epta-kleidia-tis-etisias-omilias-tis/"
+        "https://www.kathimerini.gr/society/564459154/konitsa-machi-me-tis-floges-gia-16i-imera-anazopyrosi-sti-charadra-toy-aooy/",
+        "https://www.kathimerini.gr/society/dikastiko/564459160/thelo-na-matho-pos-pethane-to-paidi-moy-ti-prokalese-ti-fotia-se-exelixi-oi-katatheseis-syggenon-thymaton/",
+        "https://www.kathimerini.gr/life/technology/564456799/i-agnosti-istoria-tis-etaireias-poy-exoplizei-toys-chrysothires-tis-ai/",
+        "https://www.kathimerini.gr/economy/international/564458488/kampanaki-gia-to-chreos-ton-ipa/",
+        "https://www.kathimerini.gr/visual/infographics/564458362/ypsili-i-oikonomiki-exartisi-ton-nision-tis-choras-apo-ton-toyrismo/",
+        "https://www.kathimerini.gr/world/564459148/o-tramp-vlepei-arrostimeni-synomosia-kata-tis-technitis-noimosynis/",
+        "https://www.kathimerini.gr/society/564459112/apeviose-o-giorgos-makropoylos-koryfaia-prosopikotita-sto-pagkosmio-skaki/",
+        "https://www.kathimerini.gr/society/reportaz/564457936/thanatos-mazonaki-doktor-me-ptychio-apo-ti-chonoloyloy/",
+        "https://www.kathimerini.gr/world/564459055/i-ai-tha-mporoyse-na-skotosei-oloys-toys-anthropoys-nea-proeidopoiisi-apo-epistimona/",
+        "https://www.kathimerini.gr/society/564459106/apofylakistike-o-ilias-kasidiaris-proaniggeile-komma/",
+        "https://www.kathimerini.gr/world/564459088/choythi-synedriazei-ektaktos-to-sa-toy-oie-gia-to-mpamp-el-mantemp/"
       ],
-      "seen_at_utc": "2026-09-15T09:17:20.133800+00:00"
+      "seen_at_utc": "2026-09-15T09:51:16.093038+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,47 +1269,44 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1879068/apologeitai-i-18hroni-mitera-tou-vrefous-pou-nosileuetai-se-sovari-katastasi-sto-venizeleio-oi-duo-ekdohes-pou-edose/?utm_source=rss",
-      "title": "Απολογείται η 18χρονη μητέρα του βρέφους που νοσηλεύεται σε σοβαρή κατάσταση στο Βενιζέλειο, οι δύο εκδοχές που έδωσε",
-      "normalized_title": "ΑΠΟΛΟΓΕΙΤΑΙ Η 18ΧΡΟΝΗ ΜΗΤΕΡΑ ΤΟΥ ΒΡΕΦΟΥΣ ΠΟΥ ΝΟΣΗΛΕΥΕΤΑΙ ΣΕ ΣΟΒΑΡΗ ΚΑΤΑΣΤΑΣΗ ΣΤΟ ΒΕΝΙΖΕΛΕΙΟ, ΟΙ ΔΥΟ ΕΚΔΟΧΕΣ ΠΟΥ ΕΔΩΣΕ",
+      "url": "https://www.protothema.gr/greece/article/1879084/aurio-i-kideia-tou-31hronou-pou-skotothike-se-trohaio-stin-patra-i-oikogeneia-dorise-ta-organa-tou/?utm_source=rss",
+      "title": "Αύριο η κηδεία του 31χρονου που σκοτώθηκε σε τροχαίο στην Πάτρα, η οικογένεια δώρισε τα όργανά του",
+      "normalized_title": "ΑΥΡΙΟ Η ΚΗΔΕΙΑ ΤΟΥ 31ΧΡΟΝΟΥ ΠΟΥ ΣΚΟΤΩΘΗΚΕ ΣΕ ΤΡΟΧΑΙΟ ΣΤΗΝ ΠΑΤΡΑ, Η ΟΙΚΟΓΕΝΕΙΑ ΔΩΡΙΣΕ ΤΑ ΟΡΓΑΝΑ ΤΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1879068/apologeitai-i-18hroni-mitera-tou-vrefous-pou-nosileuetai-se-sovari-katastasi-sto-venizeleio-oi-duo-ekdohes-pou-edose/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1879067/to-anuparkto-kvadiko-panepistimio-tis-havais-gia-gaka-i-anakoinosi-tis-enosis-fusikon-kai-to-minuma-georgiadi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1879062/andras-anasurthike-nekros-apo-ton-thermaiko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1879060/apofulakistike-o-kasidiaris-ton-upodehthikan-upostiriktes-tou-epistrefo-stin-proti-grammi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1879057/sunehizei-na-kaiei-edo-kai-duo-evdomades-i-fotia-stin-konitsa-mahi-me-nees-anazopuroseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1879053/dikigoros-kasidiari-o-pelatis-mou-milaei-idi-me-anexartitous-vouleutes-apo-tous-spartiates-kai-ti-niki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1879084/aurio-i-kideia-tou-31hronou-pou-skotothike-se-trohaio-stin-patra-i-oikogeneia-dorise-ta-organa-tou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879080/proedros-aimatologikis-etaireias-to-mihanima-pou-eihe-i-kliniki-gia-plasmafairesi-den-shesi-me-auta-pou-gnorizoume/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879079/28-nekres-thalassies-helones-mesa-se-ennia-mines-stin-kerkura/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1879070/sfodro-trohaio-atuhima-me-eglovismenous-kai-traumaties-sto-nauplio-deite-video/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-15T09:17:20.134004+00:00"
+      "seen_at_utc": "2026-09-15T09:51:16.093108+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/oikonomia/1467283/420-proslipseis-sto-limeniko/",
-      "title": "420 προσλήψεις στο Λιμενικό",
-      "normalized_title": "420 ΠΡΟΣΛΗΨΕΙΣ ΣΤΟ ΛΙΜΕΝΙΚΟ",
+      "url": "https://www.efsyn.gr/athlitismos/1467330/dikaiosi-katopin-eortis/",
+      "title": "Δικαίωση κατόπιν εορτής",
+      "normalized_title": "ΔΙΚΑΙΩΣΗ ΚΑΤΟΠΙΝ ΕΟΡΤΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/oikonomia/1467283/420-proslipseis-sto-limeniko/",
-        "https://www.efsyn.gr/ellada/1467271/sintiki-serron-den-antehetai-allo-ayto-to-kolastirio/",
-        "https://www.efsyn.gr/ellada/1467370/apofylakistike-o-ilias-kasidiaris-ypostiriktes-toy-exo-apo-tis-fylakes-domokoy/",
-        "https://www.efsyn.gr/ellada/1467356/mi-kratika-panepistimia-den-hanetai-o-hronos-spoydon-ton-foititon-ti-provlepei-i-tropologia/",
-        "https://www.efsyn.gr/oikonomia/1467326/ey-mytilinaios-stoys-ft-i-eyropi-kindyneyei-na-hasei-tin-koyrsa-gia-to-gallio/",
-        "https://www.efsyn.gr/politiki/1467322/i-dioikisi-tis-dypa-apagoreyse-anakoinosi-gia-ti-synantisi-me-ton-tsipra/"
+        "https://www.efsyn.gr/athlitismos/1467330/dikaiosi-katopin-eortis/",
+        "https://www.efsyn.gr/kosmos/1467301/yemeni-epiko-fiasko-kai-haristiki-voli/",
+        "https://www.efsyn.gr/athlitismos/1467294/olympiakos-anazitontas-to-giatriko/",
+        "https://www.efsyn.gr/ellada/1467395/nayplio-trohaio-atyhima-me-egklovismenoys-kai-traymaties-eytyhos-den-eihame-thymata-eikones-vinteo/",
+        "https://www.efsyn.gr/ellada/1467319/giorgos-mazonakis-i-fotografia-me-ta-matia-kleista-kai-ta-krisima-lepta-prin-to-alarm-toy-mihanimatos/",
+        "https://www.efsyn.gr/kosmos/1467399/theoyta-i-sanida-sotirias-toy-santseth-poy-egine-neos-politikos-ponokefalos/"
       ],
-      "seen_at_utc": "2026-09-15T09:17:20.133949+00:00"
+      "seen_at_utc": "2026-09-15T09:51:16.093087+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/15/greece/kairos-erxetai-dyskolo-48oro-me-isxyres-kataigides-poies-perioxes-einai-sto-kokkino/",
-      "title": "Έρχεται δύσκολο 48ωρο με ισχυρές καταιγίδες - Ποιες περιοχές είναι στο «κόκκινο»",
-      "normalized_title": "ΕΡΧΕΤΑΙ ΔΥΣΚΟΛΟ 48ΩΡΟ ΜΕ ΙΣΧΥΡΕΣ ΚΑΤΑΙΓΙΔΕΣ - ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΕΙΝΑΙ ΣΤΟ «ΚΟΚΚΙΝΟ»",
+      "url": "https://www.in.gr/2026/09/15/greece/steit-ntipartment-apagoreysi-eisodou-stis-ipa-gia-ton-niko-mazioti/",
+      "title": "Απαγόρευση εισόδου στις ΗΠΑ για τον Νίκο Μαζιώτη - Τι λέει το Στέιτ Ντιπάρτμεντ",
+      "normalized_title": "ΑΠΑΓΟΡΕΥΣΗ ΕΙΣΟΔΟΥ ΣΤΙΣ ΗΠΑ ΓΙΑ ΤΟΝ ΝΙΚΟ ΜΑΖΙΩΤΗ - ΤΙ ΛΕΕΙ ΤΟ ΣΤΕΙΤ ΝΤΙΠΑΡΤΜΕΝΤ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/15/greece/kairos-erxetai-dyskolo-48oro-me-isxyres-kataigides-poies-perioxes-einai-sto-kokkino/",
-        "https://www.in.gr/2026/09/15/politics/aftodioikisi/o-dimos-irakleiou-stirizei-tous-foitites-tis-polis/",
-        "https://www.in.gr/2026/09/15/greece/thanatos-mazonaki-plithainoun-ta-stoixeia-pou-kaine-tous-giatrous-apologountai-simera-meta-tin-anavathmisi-tis-katigorias/",
-        "https://www.in.gr/2026/09/15/economy/ekpaideysi-enilikon-teleytaioi-stin-eyropi-oi-ellines-pou-pige-to-1-disek-tou-taa-gia-draseis-katartisis/",
-        "https://www.in.gr/2026/09/15/politics/politiki-grammateia/neo-minyma-ntilian-stin-kyvernisi-meso-kyprou-i-alitheia-den-synadei-me-to-afigima-pou-epeleksan-na-proothisoun-karfia-gia-osous-idi-gnorizoun/",
-        "https://www.in.gr/2026/09/15/sports/football/epistrefei-sti-drasi-o-karetsas-ti-anakoinose-i-ntortmount/"
+        "https://www.in.gr/2026/09/15/greece/steit-ntipartment-apagoreysi-eisodou-stis-ipa-gia-ton-niko-mazioti/",
+        "https://www.in.gr/2026/09/15/politics/aftodioikisi/dimos-aigaleo-nea-leoforeiaki-grammi/",
+        "https://www.in.gr/2026/09/15/greece/xania-nea-prothesmia-gia-ti-mitera-tou-vrefous-pou-nosileyetai-varia-traymatismeno/",
+        "https://www.in.gr/2026/09/15/go-fun/style/kokkino-xali-ton-emmy-2026-oi-kalyteres-oi-xeiroteres-kai-oi-pio-adiafores-emfaniseis/",
+        "https://www.in.gr/2026/09/15/sports/basketball/ta-11-eftasan-ta-krousmata-gastrenteritidas-stin-aek/"
       ],
-      "seen_at_utc": "2026-09-15T09:17:20.133879+00:00"
+      "seen_at_utc": "2026-09-15T09:51:16.093077+00:00"
     }
   },
-  "updated_at_utc": "2026-09-15T09:17:20.134097+00:00"
+  "updated_at_utc": "2026-09-15T09:51:16.093193+00:00"
 }
