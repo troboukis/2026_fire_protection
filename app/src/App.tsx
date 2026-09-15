@@ -4,10 +4,8 @@ import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import ComponentTag from './components/ComponentTag'
 import DiavgeiaDecisionCard, { type DiavgeiaDecisionCardView } from './components/DiavgeiaDecisionCard'
-import FireNowTicker from './components/FireNowTicker'
 import LatestContractCardItem, { type LatestContractCardView } from './components/LatestContractCard'
 import MapTilerLogo from './components/MapTilerLogo'
-import NewsTicker from './components/NewsTicker'
 import type { OrganizationSectionData } from './components/OrganizationSection'
 import type { RegionSectionData } from './components/RegionSection'
 import DataLoadingCard from './components/DataLoadingCard'
@@ -20,9 +18,10 @@ import { isAbortError } from './lib/isAbortError'
 import { logError } from './lib/logger'
 import type { AuthorityScope } from './lib/latestContractCard'
 import { supabase } from './lib/supabase'
+import AnalysisPromo from './features/analysis/catalog/AnalysisPromo'
 
 const ContractModal = lazy(() => import('./components/ContractModal'))
-const SituationMap = lazy(() => import('./components/SituationMap'))
+const HistoricalMap = lazy(() => import('./components/HistoricalMap'))
 const FeaturedRecordsSection = lazy(() => import('./components/FeaturedRecordsSection'))
 const Funding = lazy(() => import('./components/Funding'))
 const OrganizationSection = lazy(() => import('./components/OrganizationSection'))
@@ -431,19 +430,19 @@ function useNearViewport(rootMargin = '400px 0px') {
   return { activationRef, shouldLoad }
 }
 
-function SituationMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivElement> }) {
+function HistoricalMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivElement> }) {
   return (
-    <section id="situationmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label="Φόρτωση Situation Map">
+    <section id="historicalmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label="Φόρτωση χάρτη καμμένων εκτάσεων">
       <div className="dev-tag-stack dev-tag-stack--right">
-        <ComponentTag name="SituationMap" />
+        <ComponentTag name="HistoricalMap" />
         <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
       </div>
       <div className="fire-copernicus__intro dev-tag-anchor">
         <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
-        <div className="eyebrow">Situation Map</div>
-        <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
+        <div className="eyebrow">Χάρτης</div>
+        <h2>Οι καμμένες εκτάσεις στην Ελλάδα από την αρχή του έτους μέχρι σήμερα.</h2>
         <p>
-          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές, δασικές πυρκαγιές και καμένες εκτάσεις από Copernicus EFFIS, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών από NASA FIRMS.
+          Ο χάρτης απεικονίζει τις καμμένες εκτάσεις στην επικράτεια όπως αυτές καταγράφονται από την ευρωπαίκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>.
         </p>
       </div>
       <div className="fire-copernicus__map-wrap dev-tag-anchor" ref={activationRef}>
@@ -454,15 +453,7 @@ function SituationMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivEl
         <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-hidden="true">
           <span className="fire-copernicus__legend-row">
             <span className="fire-copernicus__legend-dot" />
-            <span>Καταγεγραμμένη πυρκαγιά Copernicus EFFIS</span>
-          </span>
-          <span className="fire-copernicus__legend-row">
-            <span className="fire-copernicus__legend-dot fire-firms__legend-square" />
-            <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
-          </span>
-          <span className="fire-copernicus__legend-row">
-            <span className="fire-current__legend-icon" />
-            <span>Ενεργή πυρκαγιά</span>
+            <span>Καμένη έκταση Copernicus EFFIS</span>
           </span>
         </div>
       </div>
@@ -470,7 +461,7 @@ function SituationMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivEl
   )
 }
 
-function DeferredSituationMap() {
+function DeferredHistoricalMap() {
   const [shouldLoad, setShouldLoad] = useState(false)
   const activationRef = useRef<HTMLDivElement | null>(null)
 
@@ -494,11 +485,11 @@ function DeferredSituationMap() {
     return () => observer.disconnect()
   }, [shouldLoad])
 
-  if (!shouldLoad) return <SituationMapFallback activationRef={activationRef} />
+  if (!shouldLoad) return <HistoricalMapFallback activationRef={activationRef} />
 
   return (
-    <Suspense fallback={<SituationMapFallback />}>
-      <SituationMap />
+    <Suspense fallback={<HistoricalMapFallback />}>
+      <HistoricalMap />
     </Suspense>
   )
 }
@@ -1974,11 +1965,9 @@ export default function App() {
   return (
     <>
       <main>
-        <FireNowTicker />
+        <AnalysisPromo />
 
-        <NewsTicker />
-
-        <DeferredSituationMap />
+        <DeferredHistoricalMap />
 
         <section className="hero section-rule dev-tag-anchor">
           <div className="dev-tag-stack dev-tag-stack--right">
