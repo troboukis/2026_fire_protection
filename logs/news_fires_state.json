@@ -1,18 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564458155/oi-treis-megaloi-kai-o-avevaios-kosmos/",
-      "title": "Οι τρεις «μεγάλοι» και ο αβέβαιος κόσμος",
-      "normalized_title": "ΟΙ ΤΡΕΙΣ «ΜΕΓΑΛΟΙ» ΚΑΙ Ο ΑΒΕΒΑΙΟΣ ΚΟΣΜΟΣ",
+      "url": "https://www.kathimerini.gr/economy/local/564458365/oi-kodikoi-poy-prepei-na-prosexoyn-oi-enoikiastes-gia-tin-epistrofi-enoikioy/",
+      "title": "Οι κωδικοί που πρέπει να προσέξουν οι ενοικιαστές για την επιστροφή ενοικίου",
+      "normalized_title": "ΟΙ ΚΩΔΙΚΟΙ ΠΟΥ ΠΡΕΠΕΙ ΝΑ ΠΡΟΣΕΞΟΥΝ ΟΙ ΕΝΟΙΚΙΑΣΤΕΣ ΓΙΑ ΤΗΝ ΕΠΙΣΤΡΟΦΗ ΕΝΟΙΚΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564458155/oi-treis-megaloi-kai-o-avevaios-kosmos/",
-        "https://www.kathimerini.gr/world/564458656/ipa-epivevaiosan-gia-proti-fora-tin-anaptyxi-diastimikoy-oploy/",
-        "https://www.kathimerini.gr/world/564458689/el-salvador-i-proti-isovia-katadiki-gia-gynaikoktonia-tin-parenochloyse-prin-ti-skotosei/",
-        "https://www.kathimerini.gr/opinion/564458158/poios-tha-lygisei-protos/",
-        "https://www.kathimerini.gr/opinion/564457930/apochaireta-to-vyzantio/",
-        "https://www.kathimerini.gr/society/reportaz/564457990/metanasteytiko-synecheis-entaseis-sti-sintiki/"
+        "https://www.kathimerini.gr/economy/local/564458365/oi-kodikoi-poy-prepei-na-prosexoyn-oi-enoikiastes-gia-tin-epistrofi-enoikioy/",
+        "https://www.kathimerini.gr/society/564458677/thanatos-mazonaki-apologoyntai-simera-oi-dyo-katigoroymenoi-giatroi/",
+        "https://www.kathimerini.gr/politics/parties/564454300/koitaei-aristera-kai-voreia/",
+        "https://www.kathimerini.gr/columns/564458659/poios-mazepse-15-7-dis-ti-fernei-to-neo-deal-tis-metlen-task-force-gia-ependyseis-se-drones-kai-ai/",
+        "https://www.kathimerini.gr/economy/business/564458422/pentaetis-symfonia-metlen-me-petronas-gia-promitheia-lng/",
+        "https://www.kathimerini.gr/opinion/564458140/o-idioktitis-toy-kastellorizoy/",
+        "https://www.kathimerini.gr/opinion/564458137/giatros-kai-thriskeyomenos-2/"
       ],
-      "seen_at_utc": "2026-09-15T05:30:05.494348+00:00"
+      "seen_at_utc": "2026-09-15T05:51:21.858932+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1264,35 +1265,41 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878924/i-kinisi-tora-stous-dromous-botiliarisma-kai-sta-duo-reumata-tou-kifisou-pou-allou-uparhoun-kathusteriseis/?utm_source=rss",
-      "title": "Η κίνηση τώρα στους δρόμους: Μποτιλιάρισμα και στα δύο ρεύματα του Κηφισού, πού αλλού υπάρχουν καθυστερήσεις",
-      "normalized_title": "Η ΚΙΝΗΣΗ ΤΩΡΑ ΣΤΟΥΣ ΔΡΟΜΟΥΣ: ΜΠΟΤΙΛΙΑΡΙΣΜΑ ΚΑΙ ΣΤΑ ΔΥΟ ΡΕΥΜΑΤΑ ΤΟΥ ΚΗΦΙΣΟΥ, ΠΟΥ ΑΛΛΟΥ ΥΠΑΡΧΟΥΝ ΚΑΘΥΣΤΕΡΗΣΕΙΣ",
+      "url": "https://www.protothema.gr/greece/article/1878933/nees-proshoriseis-sto-pasok-se-attiki-kai-vouli-to-varos-tis-epomenis-mahis/?utm_source=rss",
+      "title": "Νέες προσχωρήσεις στο ΠΑΣΟΚ, σε Αττική και Βουλή το βάρος της επόμενης μάχης",
+      "normalized_title": "ΝΕΕΣ ΠΡΟΣΧΩΡΗΣΕΙΣ ΣΤΟ ΠΑΣΟΚ, ΣΕ ΑΤΤΙΚΗ ΚΑΙ ΒΟΥΛΗ ΤΟ ΒΑΡΟΣ ΤΗΣ ΕΠΟΜΕΝΗΣ ΜΑΧΗΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878924/i-kinisi-tora-stous-dromous-botiliarisma-kai-sta-duo-reumata-tou-kifisou-pou-allou-uparhoun-kathusteriseis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1878923/statheri-katastasi-vrefos-17-imeron-me-varia-egefaliki-kakosi-apo-ta-hania-epese-apo-upsos-ishuristike-i-mitera/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878933/nees-proshoriseis-sto-pasok-se-attiki-kai-vouli-to-varos-tis-epomenis-mahis/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-15T05:30:05.494441+00:00"
+      "seen_at_utc": "2026-09-15T05:51:21.859025+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1467178/ipa-to-pentagono-anagnorizei-elleipseis-pyromahikon-logo-toy-polemoy-me-to-iran/",
-      "title": "ΗΠΑ: Το Πεντάγωνο αναγνωρίζει «ελλείψεις» πυρομαχικών λόγω του πολέμου με το Ιράν",
-      "normalized_title": "ΗΠΑ: ΤΟ ΠΕΝΤΑΓΩΝΟ ΑΝΑΓΝΩΡΙΖΕΙ «ΕΛΛΕΙΨΕΙΣ» ΠΥΡΟΜΑΧΙΚΩΝ ΛΟΓΩ ΤΟΥ ΠΟΛΕΜΟΥ ΜΕ ΤΟ ΙΡΑΝ",
+      "url": "https://www.efsyn.gr/nisides/1467180/tzon-maxgoyel-koytsi-stin-ef-syn-i-dystyhia-kai-i-sygkroysi-einai-oi-mihanes-tis-afigisis/",
+      "title": "Τζον Μάξγουελ Κουτσί στην «Εφ.Συν.»: Η δυστυχία και η σύγκρουση είναι οι μηχανές της αφήγησης",
+      "normalized_title": "ΤΖΟΝ ΜΑΞΓΟΥΕΛ ΚΟΥΤΣΙ ΣΤΗΝ «ΕΦ.ΣΥΝ.»: Η ΔΥΣΤΥΧΙΑ ΚΑΙ Η ΣΥΓΚΡΟΥΣΗ ΕΙΝΑΙ ΟΙ ΜΗΧΑΝΕΣ ΤΗΣ ΑΦΗΓΗΣΗΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1467178/ipa-to-pentagono-anagnorizei-elleipseis-pyromahikon-logo-toy-polemoy-me-to-iran/",
-        "https://www.efsyn.gr/kosmos/1467157/ypostirizo-to-israil-pos-enas-komikos-me-mia-ataka-adeiase-oli-tin-aithoysa-vinteo/"
+        "https://www.efsyn.gr/nisides/1467180/tzon-maxgoyel-koytsi-stin-ef-syn-i-dystyhia-kai-i-sygkroysi-einai-oi-mihanes-tis-afigisis/",
+        "https://www.efsyn.gr/ellada/1467189/konitsa-gia-16i-imera-kaiei-i-fotia-stin-trapezitsa-epiheiroyn-ishyres-dynameis-tis-pyrosvestikis/",
+        "https://www.efsyn.gr/nisides/1467175/ypokofi-aisthisi-apeilis-kai-apoxenosis/",
+        "https://www.efsyn.gr/nisides/1467169/to-adiexodo-mias-genias/",
+        "https://www.efsyn.gr/nisides/1467158/atomiki-kai-syllogiki-anorthosi/",
+        "https://www.efsyn.gr/nisides/1467163/afanerota-ihni/",
+        "https://www.efsyn.gr/ellada/1467181/patra-doro-zois-apo-tin-oikogeneia-31hronoy-eikonolipti-toy-ionian-tv-meta-to-trohaio-dystyhima/"
       ],
-      "seen_at_utc": "2026-09-15T05:30:05.494414+00:00"
+      "seen_at_utc": "2026-09-15T05:51:21.859005+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/15/economy/fthinotero-reyma-me-mpataria-kai-fotovoltaiko-sto-mpalkoni-ti-allazei/",
-      "title": "Φθηνότερο ρεύμα με μπαταρία και φωτοβολταϊκό στο μπαλκόνι – Τι αλλάζει",
-      "normalized_title": "ΦΘΗΝΟΤΕΡΟ ΡΕΥΜΑ ΜΕ ΜΠΑΤΑΡΙΑ ΚΑΙ ΦΩΤΟΒΟΛΤΑΙΚΟ ΣΤΟ ΜΠΑΛΚΟΝΙ – ΤΙ ΑΛΛΑΖΕΙ",
+      "url": "https://www.in.gr/2026/09/15/editorial/poioi-den-theloun-to-periousiologio/",
+      "title": "Ποιοι δεν θέλουν το περιουσιολόγιο;",
+      "normalized_title": "ΠΟΙΟΙ ΔΕΝ ΘΕΛΟΥΝ ΤΟ ΠΕΡΙΟΥΣΙΟΛΟΓΙΟ;",
       "seen_urls": [
-        "https://www.in.gr/2026/09/15/economy/fthinotero-reyma-me-mpataria-kai-fotovoltaiko-sto-mpalkoni-ti-allazei/",
-        "https://www.in.gr/2026/09/15/sports/football/uefa-erxetai-to-champions-league-ton-ethnikon-omadon/"
+        "https://www.in.gr/2026/09/15/editorial/poioi-den-theloun-to-periousiologio/",
+        "https://www.in.gr/2026/09/15/english-edition/can-greece-deliver-on-its-e65-billion-investment-target/",
+        "https://www.in.gr/2026/09/15/greece/tragodia-stin-tanagra-tmimata-tou-phantom-tis-polemikis-aeroporias-vrethikan-ston-sako-metaforas-tis-mias-sorou/",
+        "https://www.in.gr/2026/09/15/life/culture-live/o-agrios-sporos-gia-2o-xrono-sto-theatro-mikro-xorn/"
       ],
-      "seen_at_utc": "2026-09-15T05:30:05.494384+00:00"
+      "seen_at_utc": "2026-09-15T05:51:21.858976+00:00"
     }
   },
-  "updated_at_utc": "2026-09-15T05:30:05.494514+00:00"
+  "updated_at_utc": "2026-09-15T05:51:21.859094+00:00"
 }
