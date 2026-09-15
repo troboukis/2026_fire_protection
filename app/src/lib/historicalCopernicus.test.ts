@@ -13,11 +13,11 @@ const query = vi.hoisted(() => ({
 
 vi.mock('./supabase', () => ({ supabase: query }))
 
-const start = '2025-01-01T00:00:00'
+const start = '2026-01-01T00:00:00'
 const end = '2026-09-15T23:59:59'
 const rows = (offset: number, length: number) => Array.from({ length }, (_, index) => ({
   copernicus_id: offset + index,
-  firedate: '2025-08-12T12:00:00',
+  firedate: '2026-08-12T12:00:00',
 }))
 
 beforeEach(() => {
@@ -28,6 +28,20 @@ beforeEach(() => {
 })
 
 describe('loadHistoricalCopernicus', () => {
+  it.each([
+    ['2026-01-01T00:00:00', '2026-09-15T23:59:59'],
+    ['2025-08-01T00:00:00', '2025-08-31T23:59:59'],
+    ['2024-01-01T00:00:00', '2024-12-31T23:59:59'],
+  ])('requests only the selected interval %s through %s', async (selectedStart, selectedEnd) => {
+    query.abortSignal.mockResolvedValueOnce({ data: [], error: null, count: 0 })
+
+    await loadHistoricalCopernicus(selectedStart, selectedEnd, new AbortController().signal)
+
+    expect(query.gte.mock.calls).toEqual([['firedate', selectedStart]])
+    expect(query.lte.mock.calls).toEqual([['firedate', selectedEnd]])
+    expect(query.abortSignal).toHaveBeenCalledTimes(1)
+  })
+
   it('loads the complete period across multiple pages with stable ordering', async () => {
     const allRows = rows(0, 1201)
     query.abortSignal

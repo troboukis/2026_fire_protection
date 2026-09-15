@@ -189,14 +189,6 @@ function addDays(input: Date, days: number): Date {
   return toDayStart(next)
 }
 
-function formatFiredateBoundary(date: Date, boundary: 'start' | 'end'): string {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  const time = boundary === 'start' ? '00:00:00' : '23:59:59'
-  return `${year}-${month}-${day}T${time}`
-}
-
 function formatDateInputValue(date: Date): string {
   const year = date.getFullYear()
   const month = String(date.getMonth() + 1).padStart(2, '0')
@@ -368,15 +360,19 @@ export default function HistoricalMap() {
   const navigate = useNavigate()
   const today = useMemo(() => toDayStart(new Date()), [])
   const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
-  const domainStart = useMemo(() => new Date(2025, 0, 1), [])
+  const domainStart = useMemo(() => new Date(2024, 0, 1), [])
   const totalDays = diffDays(domainStart, today)
   const [geojson, setGeojson] = useState<GeoData | null>(null)
-  const [allFires, setAllFires] = useState<CopernicusFirePoint[]>([])
+  const [fireResult, setFireResult] = useState<{
+    rangeKey: string
+    fires: CopernicusFirePoint[]
+    error: boolean
+  } | null>(null)
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [showCopernicusFires, setShowCopernicusFires] = useState(true)
   const [viewMode, setViewMode] = useState<'points' | 'shapes'>('shapes')
-  const [rangeStartDay, setRangeStartDay] = useState(0)
+  const [rangeStartDay, setRangeStartDay] = useState(() => diffDays(domainStart, new Date(2026, 0, 1)))
   const [rangeEndDay, setRangeEndDay] = useState(() => totalDays)
   const [hoveredFire, setHoveredFire] = useState<HoveredFireTooltip | null>(null)
   const [hoveredStackedTooltip, setHoveredStackedTooltip] = useState<HoveredStackedTooltip | null>(null)
@@ -409,6 +405,9 @@ export default function HistoricalMap() {
   const todayValue = formatDateInputValue(today)
   const rangeStartValue = formatDateInputValue(rangeStartDate)
   const rangeEndValue = formatDateInputValue(rangeEndDate)
+  const rangeKey = `${rangeStartValue}/${rangeEndValue}`
+  const isDateFilterLoading = fireResult?.rangeKey !== rangeKey
+  const hasDateFilterError = !isDateFilterLoading && fireResult?.error === true
 
   useEffect(() => {
     let cancelled = false
@@ -416,13 +415,8 @@ export default function HistoricalMap() {
 
     const load = async () => {
       try {
-        const [geoData, rows, latestUpdateRes] = await Promise.all([
+        const [geoData, latestUpdateRes] = await Promise.all([
           loadMunicipalitiesGeojson(),
-          loadHistoricalCopernicus(
-            formatFiredateBoundary(domainStart, 'start'),
-            formatFiredateBoundary(today, 'end'),
-            controller.signal,
-          ),
           supabase
             .from('copernicus')
             .select('updated_at')
@@ -434,15 +428,13 @@ export default function HistoricalMap() {
 
         if (!cancelled) {
           setGeojson(geoData)
-          setAllFires(mapCopernicusRows(rows))
           setLastUpdatedAt(!latestUpdateRes.error ? cleanText(latestUpdateRes.data?.updated_at) : null)
         }
       } catch (error) {
         if (isAbortError(error)) return
         if (!cancelled) {
-          console.error('HistoricalMap: failed to load burned areas', error)
+          console.error('HistoricalMap: failed to load map background', error)
           setGeojson(null)
-          setAllFires([])
           setLastUpdatedAt(null)
         }
       } finally {
@@ -455,7 +447,37 @@ export default function HistoricalMap() {
       cancelled = true
       controller.abort()
     }
-  }, [domainStart, today])
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    const controller = new AbortController()
+
+    const load = async () => {
+      try {
+        const rows = await loadHistoricalCopernicus(
+          `${rangeStartValue}T00:00:00`,
+          `${rangeEndValue}T23:59:59`,
+          controller.signal,
+        )
+        if (!cancelled) {
+          setFireResult({ rangeKey, fires: mapCopernicusRows(rows), error: false })
+        }
+      } catch (error) {
+        if (isAbortError(error)) return
+        if (!cancelled) {
+          console.error('HistoricalMap: failed to load selected date range', error)
+          setFireResult({ rangeKey, fires: [], error: true })
+        }
+      }
+    }
+
+    void load()
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
+  }, [rangeStartValue, rangeEndValue, rangeKey])
 
   useEffect(() => {
     setHoveredFire(null)
@@ -517,15 +539,8 @@ export default function HistoricalMap() {
   }, [geojson])
 
   const fires = useMemo(() => {
-    const startMs = rangeStartDate.getTime()
-    const endMs = addDays(rangeEndDate, 1).getTime() - 1
-    return allFires.filter((fire) => {
-      if (!fire.date) return false
-      const fireMs = new Date(fire.date).getTime()
-      if (Number.isNaN(fireMs)) return false
-      return fireMs >= startMs && fireMs <= endMs
-    })
-  }, [allFires, rangeStartDate, rangeEndDate])
+    return fireResult?.rangeKey === rangeKey ? fireResult.fires : []
+  }, [fireResult, rangeKey])
 
   const mapData = useMemo(() => {
     if (!geojson) return null
@@ -966,7 +981,7 @@ export default function HistoricalMap() {
           Ο χάρτης απεικονίζει τις καμμένες εκτάσεις στην επικράτεια όπως αυτές καταγράφονται από την ευρωπαίκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>.
         </p>
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
-        <div className="fire-copernicus__date-filter-selected">
+        <div className="fire-copernicus__date-filter-selected" aria-busy={isDateFilterLoading}>
           <span className="label">Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα</span>
           <div className="fire-copernicus__date-filter fire-copernicus__date-filter--pickers" aria-label="Φίλτρο ημερομηνιών Copernicus">
             <label className="fire-copernicus__date-picker">
@@ -1000,15 +1015,18 @@ export default function HistoricalMap() {
               />
             </label>
           </div>
+          {hasDateFilterError && (
+            <p role="alert">Δεν ήταν δυνατή η φόρτωση των καμμένων εκτάσεων για το επιλεγμένο διάστημα.</p>
+          )}
         </div>
         <div className="fire-copernicus__stats">
           <div>
             <span className="label">Συμβάντα</span>
-            <strong>{fires.length.toLocaleString('el-GR')}</strong>
+            <strong>{isDateFilterLoading || hasDateFilterError ? '—' : fires.length.toLocaleString('el-GR')}</strong>
           </div>
           <div>
             <span className="label">Καμένη Έκταση</span>
-            <strong>{formatStremmata(totalAreaHa)}</strong>
+            <strong>{isDateFilterLoading || hasDateFilterError ? '—' : formatStremmata(totalAreaHa)}</strong>
           </div>
           <div>
             <span className="label">Τελευταία Εγγραφή</span>
@@ -1032,11 +1050,20 @@ export default function HistoricalMap() {
           <div
             ref={mapRef}
             className="fire-copernicus__map fire-firms__map dev-tag-anchor"
+            aria-busy={isDateFilterLoading}
             onMouseLeave={() => {
               setHoveredFire(null)
               setHoveredStackedTooltip(null)
             }}
           >
+            {isDateFilterLoading && (
+              <DataLoadingCard
+                compact
+                className="fire-copernicus__date-loading-overlay"
+                title="Φόρτωση χάρτη"
+                message="Ανακτώνται οι καμμένες εκτάσεις για το επιλεγμένο διάστημα."
+              />
+            )}
             <ComponentTag
               name="fire-copernicus__map fire-firms__map"
               kind="CLASS"
