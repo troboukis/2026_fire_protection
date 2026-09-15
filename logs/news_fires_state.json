@@ -1,15 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564458725/h-chora-poy-plironei-toys-polites-tis-gia-na-diavazoyn/",
-      "title": "H χώρα που… πληρώνει τους πολίτες της για να διαβάζουν",
-      "normalized_title": "H ΧΩΡΑ ΠΟΥ… ΠΛΗΡΩΝΕΙ ΤΟΥΣ ΠΟΛΙΤΕΣ ΤΗΣ ΓΙΑ ΝΑ ΔΙΑΒΑΖΟΥΝ",
+      "url": "https://www.kathimerini.gr/society/564458788/kyllini-ereynes-gia-agnooymeno-cheiristi-tachyplooy-epeita-apo-anatropi-skafoys/",
+      "title": "Κυλλήνη: Ερευνες για αγνοούμενο χειριστή ταχύπλοου έπειτα από ανατροπή σκάφους",
+      "normalized_title": "ΚΥΛΛΗΝΗ: ΕΡΕΥΝΕΣ ΓΙΑ ΑΓΝΟΟΥΜΕΝΟ ΧΕΙΡΙΣΤΗ ΤΑΧΥΠΛΟΟΥ ΕΠΕΙΤΑ ΑΠΟ ΑΝΑΤΡΟΠΗ ΣΚΑΦΟΥΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564458725/h-chora-poy-plironei-toys-polites-tis-gia-na-diavazoyn/",
-        "https://www.kathimerini.gr/economy/international/564458434/se-krisimi-kampi-i-oikonomia-tis-kinas/",
-        "https://www.kathimerini.gr/politics/parties/564457957/paramenei-o-stochos-tis-protis-thesis-gia-to-pasok/"
+        "https://www.kathimerini.gr/society/564458788/kyllini-ereynes-gia-agnooymeno-cheiristi-tachyplooy-epeita-apo-anatropi-skafoys/",
+        "https://www.kathimerini.gr/world/564458749/mpil-gkeits-gia-ilara-i-exaleipsi-den-einai-pleon-efikti-logo-tis-distaktikotitas-enanti-ton-emvolion/",
+        "https://www.kathimerini.gr/world/564458776/protes-ekloges-sti-rosia-meta-tin-enarxi-toy-polemoy-4-vasika-simeia/",
+        "https://www.kathimerini.gr/visual/infographics/564458407/aegean-ayxisi-esodon-kai-epivatikis-kinisis-to-a-examino/",
+        "https://www.kathimerini.gr/society/564458755/zefyri-pyrovolismoi-ta-ximeromata-ti-exetazei-i-el-as/"
       ],
-      "seen_at_utc": "2026-09-15T06:30:00.220624+00:00"
+      "seen_at_utc": "2026-09-15T06:51:49.260562+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1263,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1878951/proseggisan-spiti-kai-gazosan-ena-autokinito-sto-zefuri-diafores-metaxu-suggenon-vlepoun-oi-arhes/?utm_source=rss",
-      "title": "Προσέγγισαν σπίτι και γάζωσαν ένα αυτοκίνητο στο Ζεφύρι, διαφορές μεταξύ συγγενών βλέπουν οι Αρχές",
-      "normalized_title": "ΠΡΟΣΕΓΓΙΣΑΝ ΣΠΙΤΙ ΚΑΙ ΓΑΖΩΣΑΝ ΕΝΑ ΑΥΤΟΚΙΝΗΤΟ ΣΤΟ ΖΕΦΥΡΙ, ΔΙΑΦΟΡΕΣ ΜΕΤΑΞΥ ΣΥΓΓΕΝΩΝ ΒΛΕΠΟΥΝ ΟΙ ΑΡΧΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1878960/me-ti-fotografia-tis-koris-tou-sta-heria-katethese-o-pateras-tis-fradzeskas-beza-sti-diki-gia-ta-/?utm_source=rss",
+      "title": "Με τη φωτογραφία της κόρης του στα χέρια κατέθεσε ο πατέρας της Φραντζέσκας Μπέζα στη δίκη για τα Τέμπη: «Εγώ έτσι σας την παρέδωσα»",
+      "normalized_title": "ΜΕ ΤΗ ΦΩΤΟΓΡΑΦΙΑ ΤΗΣ ΚΟΡΗΣ ΤΟΥ ΣΤΑ ΧΕΡΙΑ ΚΑΤΕΘΕΣΕ Ο ΠΑΤΕΡΑΣ ΤΗΣ ΦΡΑΝΤΖΕΣΚΑΣ ΜΠΕΖΑ ΣΤΗ ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ: «ΕΓΩ ΕΤΣΙ ΣΑΣ ΤΗΝ ΠΑΡΕΔΩΣΑ»",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1878951/proseggisan-spiti-kai-gazosan-ena-autokinito-sto-zefuri-diafores-metaxu-suggenon-vlepoun-oi-arhes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1878960/me-ti-fotografia-tis-koris-tou-sta-heria-katethese-o-pateras-tis-fradzeskas-beza-sti-diki-gia-ta-/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-15T06:30:00.220715+00:00"
+      "seen_at_utc": "2026-09-15T06:51:49.260709+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1467210/nomos-kai-taxi-me-dyo-apodraseis/",
-      "title": "«Νόμος και τάξη» με δύο αποδράσεις",
-      "normalized_title": "«ΝΟΜΟΣ ΚΑΙ ΤΑΞΗ» ΜΕ ΔΥΟ ΑΠΟΔΡΑΣΕΙΣ",
+      "url": "https://www.efsyn.gr/politiki/1467248/karfi-akrita-se-manoy-gia-kideia-mazonaki-o-fthonos-dyskola-kryvetai/",
+      "title": "Καρφί Ακρίτα σε Μάνου για κηδεία Μαζωνάκη: «Ο φθόνος δύσκολα κρύβεται»",
+      "normalized_title": "ΚΑΡΦΙ ΑΚΡΙΤΑ ΣΕ ΜΑΝΟΥ ΓΙΑ ΚΗΔΕΙΑ ΜΑΖΩΝΑΚΗ: «Ο ΦΘΟΝΟΣ ΔΥΣΚΟΛΑ ΚΡΥΒΕΤΑΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1467210/nomos-kai-taxi-me-dyo-apodraseis/",
-        "https://www.efsyn.gr/ellada/1467217/thessaloniki-apetrepsan-symvolaio-thanatoy-meloys-ton-ntaltons-vrethikan-uzi-kai-polemiko-tyfekio/"
+        "https://www.efsyn.gr/politiki/1467248/karfi-akrita-se-manoy-gia-kideia-mazonaki-o-fthonos-dyskola-kryvetai/",
+        "https://www.efsyn.gr/life/1467191/vraveia-emmy-sarose-to-widows-bay-me-14-vraveia-egrapse-istoria-o-mathioy-ris-kalytero-drama-to-the-pitt-vinteo/"
       ],
-      "seen_at_utc": "2026-09-15T06:30:00.220690+00:00"
+      "seen_at_utc": "2026-09-15T06:51:49.260655+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/15/world/o-gios-tou-tramp-epivevaiose-oti-rosos-oligarxis-xrimatodotise-ekdiloseis-meta-ton-gamo-tou/",
-      "title": "Ο γιος του Τραμπ επιβεβαίωσε ότι Ρώσος ολιγάρχης χρηματοδότησε εκδηλώσεις μετά τον γάμο του",
-      "normalized_title": "Ο ΓΙΟΣ ΤΟΥ ΤΡΑΜΠ ΕΠΙΒΕΒΑΙΩΣΕ ΟΤΙ ΡΩΣΟΣ ΟΛΙΓΑΡΧΗΣ ΧΡΗΜΑΤΟΔΟΤΗΣΕ ΕΚΔΗΛΩΣΕΙΣ ΜΕΤΑ ΤΟΝ ΓΑΜΟ ΤΟΥ",
+      "url": "https://www.in.gr/2026/09/15/language-books/glossa/i-elliniki-glossa-sto-diava-tou-xronou-i-ennoia-tou-ellinismou-meros-z/",
+      "title": "Η ελληνική γλώσσα στο διάβα του χρόνου: Η έννοια του ελληνισμού (Μέρος Ζ’)",
+      "normalized_title": "Η ΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ ΣΤΟ ΔΙΑΒΑ ΤΟΥ ΧΡΟΝΟΥ: Η ΕΝΝΟΙΑ ΤΟΥ ΕΛΛΗΝΙΣΜΟΥ (ΜΕΡΟΣ Ζ’)",
       "seen_urls": [
-        "https://www.in.gr/2026/09/15/world/o-gios-tou-tramp-epivevaiose-oti-rosos-oligarxis-xrimatodotise-ekdiloseis-meta-ton-gamo-tou/",
-        "https://www.in.gr/2026/09/15/world/vrazilia-mpalkoni-katerreyse-kataplakose-74xrono-kai-ton-skotose-vinteo-sok/"
+        "https://www.in.gr/2026/09/15/language-books/glossa/i-elliniki-glossa-sto-diava-tou-xronou-i-ennoia-tou-ellinismou-meros-z/",
+        "https://www.in.gr/2026/09/15/greece/zefyri-synagermos-gia-pyrovolismous-andras-gazose-aytokinito-ekso-apo-katoikia-ti-eksetazoun-oi-arxes/",
+        "https://www.in.gr/2026/09/15/sports/othersports/nea-maxi-gia-tin-ethniki-volei-kontra-sti-souidia/"
       ],
-      "seen_at_utc": "2026-09-15T06:30:00.220666+00:00"
+      "seen_at_utc": "2026-09-15T06:51:49.260614+00:00"
     }
   },
-  "updated_at_utc": "2026-09-15T06:30:00.220789+00:00"
+  "updated_at_utc": "2026-09-15T06:51:49.260789+00:00"
 }
