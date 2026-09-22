@@ -5,11 +5,20 @@ import './AnalysisPromo.css'
 
 const slides = [
   {
+    eyebrow: 'AntiNERO / Δυτική Αττική',
+    title: 'Πώς επηρέασαν τα AntiNERO έργα τη μεγάλη πυρκαγιά της Δυτικής Αττικής το 2026;',
+    detail: 'WWF, Flame και FireWatch παρουσιάζουν μία ανάλυση της μεγαλύτερης πυρκαγιάς του 2026.',
+    to: '/analysis/west-attica-fire-2026/',
+    visual: 'map',
+    reloadDocument: true,
+  },
+  {
     eyebrow: 'Στατιστική ανάλυση',
     title: 'Μία στις δύο συμβάσεις με Απευθείας Ανάθεση',
     detail: 'Η πλειονότητα των συμβάσεων έχει αξία που φτάνει στο νόμιμο όριο των απευθείας αναθέσεων, δηλαδή τις 30.000 ευρώ.',
     to: '/analysis/statistics',
     visual: 'statistics',
+    reloadDocument: false,
   },
   {
     eyebrow: 'Δυτική Αττική',
@@ -17,12 +26,13 @@ const slides = [
     detail: 'Πότε έπρεπε να ολοκληρωθεί κάθε έργο και πότε ολοκληρώθηκε στην πράξη, σύμφωνα με τα διαθέσιμα δημόσια έγγραφα στη Διαύγεια.',
     to: '/analysis/antinero-west-attica',
     visual: 'network',
+    reloadDocument: false,
   },
 ] as const
 
 const SLIDE_DURATION_MS = 6000
 
-// Decorative illustrations, not charts of research data.
+// Compact previews for the analysis slides.
 function PromoIllustration({ visual }: { visual: typeof slides[number]['visual'] }) {
   return (
     <svg className="analysis-promo__illustration" viewBox="0 0 560 140" aria-hidden="true" focusable="false">
@@ -40,6 +50,24 @@ function PromoIllustration({ visual }: { visual: typeof slides[number]['visual']
             />
           ))}
           <path className="analysis-promo__baseline" d="M24 135H540" />
+        </g>
+      ) : visual === 'map' ? (
+        <g>
+          <path className="analysis-promo__map-land" d="M28 108L55 86L47 63L84 44L124 51L151 27L202 36L230 56L281 47L317 25L363 36L391 63L436 54L472 73L520 67L541 94L515 121L470 116L434 130L390 114L350 123L312 102L270 118L225 103L184 126L143 108L105 121L72 106Z" />
+          <path className="analysis-promo__map-contour" d="M57 88C112 71 157 84 207 63S302 46 357 59S452 98 516 79" />
+          <path className="analysis-promo__map-contour" d="M76 105C133 90 166 105 224 84S330 68 387 83S454 111 499 103" />
+          <path className="analysis-promo__map-burn" d="M83 78C105 51 150 43 185 56C214 67 230 87 213 103C193 121 151 109 124 112C94 116 66 99 83 78Z" />
+          <path className="analysis-promo__map-route" pathLength="1" d="M70 98C130 72 174 89 231 69S340 48 397 72S468 88 521 78" />
+          {[[102, 77], [154, 92], [202, 68], [275, 60], [344, 58], [411, 78], [481, 82]].map(([cx, cy], index) => (
+            <circle
+              key={index}
+              className="analysis-promo__map-point"
+              cx={cx}
+              cy={cy}
+              r={index < 3 ? 6 : 4}
+              style={{ '--item-delay': `${index * 85}ms` } as CSSProperties}
+            />
+          ))}
         </g>
       ) : (
         <g>
@@ -128,8 +156,8 @@ export default function AnalysisPromo() {
           )}
         </div>
       </div>
-      <div aria-live={paused || focused || reducedMotion ? 'polite' : 'off'} aria-atomic="true">
-        <Link key={slide.to} className="analysis-promo__slide" to={slide.to}>
+      <div className="analysis-promo__viewport" aria-live={paused || focused || reducedMotion ? 'polite' : 'off'} aria-atomic="true">
+        <Link key={slide.to} className="analysis-promo__slide" to={slide.to} reloadDocument={slide.reloadDocument}>
           <div className="analysis-promo__copy">
             <h2>{slide.title}</h2>
             <p>{slide.detail}</p>

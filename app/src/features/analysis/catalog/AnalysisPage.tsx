@@ -5,6 +5,14 @@ export default function AnalysisPage() {
   return (
     <main className="analysis-catalog">
       <AnalysisCard
+        to="/analysis/west-attica-fire-2026/"
+        title="Πώς επηρέασαν τα AntiNERO έργα τη μεγάλη πυρκαγιά της Δυτικής Αττικής το 2026;"
+        description="WWF, Flame και FireWatch παρουσιάζουν μία ανάλυση της μεγαλύτερης πυρκαγιάς του 2026."
+        imageSrc={`${import.meta.env.BASE_URL}social/west-attica-fire-2026.png`}
+        imageAlt="Χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026"
+        reloadDocument
+      />
+      <AnalysisCard
         to="/analysis/statistics"
         title="Στατιστική Ανάλυση"
         description="Δείτε τη στατιστική εικόνα των δημόσιων συμβάσεων πυροπροστασίας από το 2024 έως σήμερα, με στοιχεία για τις δαπάνες, τις απευθείας αναθέσεις και τους αναδόχους."

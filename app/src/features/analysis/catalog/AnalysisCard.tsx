@@ -9,11 +9,12 @@ type AnalysisCardProps = {
   metadata?: ReactNode
   imageSrc?: string
   imageAlt?: string
+  reloadDocument?: boolean
 }
 
-export default function AnalysisCard({ to, title, description, metadata, imageSrc, imageAlt = '' }: AnalysisCardProps) {
+export default function AnalysisCard({ to, title, description, metadata, imageSrc, imageAlt = '', reloadDocument = false }: AnalysisCardProps) {
   return (
-    <Link className="analysis-card section-rule" to={to}>
+    <Link className="analysis-card section-rule" to={to} reloadDocument={reloadDocument}>
       <div className="analysis-card__body">
         <div className="analysis-card__media" aria-hidden={imageSrc ? undefined : true}>
           {imageSrc ? <img src={imageSrc} alt={imageAlt} /> : null}
