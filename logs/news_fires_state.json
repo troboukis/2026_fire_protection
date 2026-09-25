@@ -1,17 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564480556/finlandia-kai-soyidia-apogeiosan-machitika-aeroskafi-pano-apo-rosika-se-diethni-enaerio-choro/",
-      "title": "Φινλανδία και Σουηδία απογείωσαν μαχητικά αεροσκάφη πάνω από ρωσικά σε διεθνή εναέριο χώρο",
-      "normalized_title": "ΦΙΝΛΑΝΔΙΑ ΚΑΙ ΣΟΥΗΔΙΑ ΑΠΟΓΕΙΩΣΑΝ ΜΑΧΗΤΙΚΑ ΑΕΡΟΣΚΑΦΗ ΠΑΝΩ ΑΠΟ ΡΩΣΙΚΑ ΣΕ ΔΙΕΘΝΗ ΕΝΑΕΡΙΟ ΧΩΡΟ",
+      "url": "https://www.kathimerini.gr/world/564480562/mporei-to-megalo-kolpo-ton-choythi-na-gyrisei-mpoymerangk-gia-to-iran/",
+      "title": "Μπορεί το «μεγάλο κόλπο» των Χούθι να γυρίσει μπούμερανγκ για το Ιράν;",
+      "normalized_title": "ΜΠΟΡΕΙ ΤΟ «ΜΕΓΑΛΟ ΚΟΛΠΟ» ΤΩΝ ΧΟΥΘΙ ΝΑ ΓΥΡΙΣΕΙ ΜΠΟΥΜΕΡΑΝΓΚ ΓΙΑ ΤΟ ΙΡΑΝ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564480556/finlandia-kai-soyidia-apogeiosan-machitika-aeroskafi-pano-apo-rosika-se-diethni-enaerio-choro/",
-        "https://www.kathimerini.gr/economy/international/564479905/oi-kindynoi-tis-ai-kai-oi-nomoi-tis-agoras/",
-        "https://www.kathimerini.gr/world/564480430/i-ilikia-einai-enas-arithmos-kai-o-90chronos-polynikis-bodybuilder-to-apodeiknyei/",
-        "https://www.kathimerini.gr/society/564480553/patra-agnostos-drastis-apektise-prosvasi-sto-pliroforiako-systima-toy-dimoy/",
-        "https://www.kathimerini.gr/society/564480547/patra-anaziteitai-proin-astynomikos-gia-epithesi-stin-proin-syntrofo-toy/"
+        "https://www.kathimerini.gr/world/564480562/mporei-to-megalo-kolpo-ton-choythi-na-gyrisei-mpoymerangk-gia-to-iran/",
+        "https://www.kathimerini.gr/athletics/sports/564480619/thlipsi-sto-elliniko-mpasket-pethane-o-soylis-markopoylos/",
+        "https://www.kathimerini.gr/life/technology/564480583/i-kina-den-thelei-aplos-tin-pio-ischyri-techniti-noimosyni-thelei-na-ti-valei-pantoy/",
+        "https://www.kathimerini.gr/athletics/564480577/i-ellada-xerei-na-paizei-prepei-na-mathei-kai-na-kerdizei/"
       ],
-      "seen_at_utc": "2026-09-25T09:29:59.267515+00:00"
+      "seen_at_utc": "2026-09-25T09:51:19.224244+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1263,34 +1262,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1884530/stasu-auxisi-tou-ekteloumenou-metaforikou-ergou-ton-epikuroseon-kai-ton-eleghon-to-8mino-tou-2026/?utm_source=rss",
-      "title": "ΣΤΑΣΥ: Αύξηση του εκτελούμενου μεταφορικού έργου, των επικυρώσεων και των ελέγχων το 8μηνο του 2026",
-      "normalized_title": "ΣΤΑΣΥ: ΑΥΞΗΣΗ ΤΟΥ ΕΚΤΕΛΟΥΜΕΝΟΥ ΜΕΤΑΦΟΡΙΚΟΥ ΕΡΓΟΥ, ΤΩΝ ΕΠΙΚΥΡΩΣΕΩΝ ΚΑΙ ΤΩΝ ΕΛΕΓΧΩΝ ΤΟ 8ΜΗΝΟ ΤΟΥ 2026",
+      "url": "https://www.protothema.gr/greece/article/1884532/auti-tin-kuriaki-mi-hasete-to-proto-thema/?utm_source=rss",
+      "title": "Αυτή την Κυριακή, μη χάσετε το Πρώτο Θέμα",
+      "normalized_title": "ΑΥΤΗ ΤΗΝ ΚΥΡΙΑΚΗ, ΜΗ ΧΑΣΕΤΕ ΤΟ ΠΡΩΤΟ ΘΕΜΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1884530/stasu-auxisi-tou-ekteloumenou-metaforikou-ergou-ton-epikuroseon-kai-ton-eleghon-to-8mino-tou-2026/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1884529/trikala-ergazomenos-gronthokopise-ton-ergodoti-tou-epeidi-ton-apeluse/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1884532/auti-tin-kuriaki-mi-hasete-to-proto-thema/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-25T09:29:59.267710+00:00"
+      "seen_at_utc": "2026-09-25T09:51:19.224361+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/life/1474467/o-alexis-pappas-etoimos-gia-ta-psifodeltia-toy-antoni-samara-ehoyme-mia-filiki-shesi/",
-      "title": "Ο Αλέξης Παππάς έτοιμος για τα ψηφοδέλτια του Αντώνη Σαμαρά: «Έχουμε μια φιλική σχέση»",
-      "normalized_title": "Ο ΑΛΕΞΗΣ ΠΑΠΠΑΣ ΕΤΟΙΜΟΣ ΓΙΑ ΤΑ ΨΗΦΟΔΕΛΤΙΑ ΤΟΥ ΑΝΤΩΝΗ ΣΑΜΑΡΑ: «ΕΧΟΥΜΕ ΜΙΑ ΦΙΛΙΚΗ ΣΧΕΣΗ»",
+      "url": "https://www.efsyn.gr/politiki/1474484/syriza-gia-moni-sina-ti-gnorizei-i-kyvernisi-gia-tis-diapragmateyseis-kai-ti-diakyveyetai-gia-to-idioktisiako-kathestos/",
+      "title": "ΣΥΡΙΖΑ για Μονή Σινά: Τι γνωρίζει η κυβέρνηση για τις διαπραγματεύσεις και τι διακυβεύεται για το ιδιοκτησιακό καθεστώς;",
+      "normalized_title": "ΣΥΡΙΖΑ ΓΙΑ ΜΟΝΗ ΣΙΝΑ: ΤΙ ΓΝΩΡΙΖΕΙ Η ΚΥΒΕΡΝΗΣΗ ΓΙΑ ΤΙΣ ΔΙΑΠΡΑΓΜΑΤΕΥΣΕΙΣ ΚΑΙ ΤΙ ΔΙΑΚΥΒΕΥΕΤΑΙ ΓΙΑ ΤΟ ΙΔΙΟΚΤΗΣΙΑΚΟ ΚΑΘΕΣΤΩΣ;",
       "seen_urls": [
-        "https://www.efsyn.gr/life/1474467/o-alexis-pappas-etoimos-gia-ta-psifodeltia-toy-antoni-samara-ehoyme-mia-filiki-shesi/",
-        "https://www.efsyn.gr/ellada/1474471/ektakto-deltio-apo-tin-emy-triimeri-epideinosi-toy-kairoy-poy-tha-htypisoyn-ishyres-vrohes-kai-kataigides/"
+        "https://www.efsyn.gr/politiki/1474484/syriza-gia-moni-sina-ti-gnorizei-i-kyvernisi-gia-tis-diapragmateyseis-kai-ti-diakyveyetai-gia-to-idioktisiako-kathestos/",
+        "https://www.efsyn.gr/ellada/1474490/rodos-tis-arpaxe-pano-apo-15-400-eyro-kai-apeilise-na-dimosiopoiisei-gymnes-fotografies-tis/",
+        "https://www.efsyn.gr/athlitismos/1474486/pethane-o-proponitis-mpasket-soylis-markopoylos-se-ilikia-77-eton/",
+        "https://www.efsyn.gr/politiki/1474479/polakis-telos-stin-omerta-kai-to-kathestos-asylias-georgiadi-keelpno-eody-kai-ton-imeteron/",
+        "https://www.efsyn.gr/politiki/1474466/o-haris-doykas-tha-aponeinei-to-vraveio-dimokratias-ston-pedro-santseth/"
       ],
-      "seen_at_utc": "2026-09-25T09:29:59.267642+00:00"
+      "seen_at_utc": "2026-09-25T09:51:19.224346+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/25/greece/ektakto-deltio-epideinosis-tou-kairou-isxyres-kataigides-kai-xalazoptoseis-tis-epomenes-ores-oi-epikindynes-perioxes/",
-      "title": "Έκτακτο δελτίο επιδείνωσης του καιρού: Ισχυρές καταιγίδες και χαλαζοπτώσεις τις επόμενες ώρες – Οι επικίνδυνες περιοχές",
-      "normalized_title": "ΕΚΤΑΚΤΟ ΔΕΛΤΙΟ ΕΠΙΔΕΙΝΩΣΗΣ ΤΟΥ ΚΑΙΡΟΥ: ΙΣΧΥΡΕΣ ΚΑΤΑΙΓΙΔΕΣ ΚΑΙ ΧΑΛΑΖΟΠΤΩΣΕΙΣ ΤΙΣ ΕΠΟΜΕΝΕΣ ΩΡΕΣ – ΟΙ ΕΠΙΚΙΝΔΥΝΕΣ ΠΕΡΙΟΧΕΣ",
+      "url": "https://www.in.gr/2026/09/25/greece/dikigoros-mazonaki-pseydis-i-katathesi-tis-nosileytrias-ypoptos-o-xronos-pou-dothike/",
+      "title": "Δικηγόρος Μαζωνάκη: «Ψευδής η κατάθεση της νοσηλεύτριας – Ύποπτος ο χρόνος που δόθηκε»",
+      "normalized_title": "ΔΙΚΗΓΟΡΟΣ ΜΑΖΩΝΑΚΗ: «ΨΕΥΔΗΣ Η ΚΑΤΑΘΕΣΗ ΤΗΣ ΝΟΣΗΛΕΥΤΡΙΑΣ – ΥΠΟΠΤΟΣ Ο ΧΡΟΝΟΣ ΠΟΥ ΔΟΘΗΚΕ»",
       "seen_urls": [
-        "https://www.in.gr/2026/09/25/greece/ektakto-deltio-epideinosis-tou-kairou-isxyres-kataigides-kai-xalazoptoseis-tis-epomenes-ores-oi-epikindynes-perioxes/"
+        "https://www.in.gr/2026/09/25/greece/dikigoros-mazonaki-pseydis-i-katathesi-tis-nosileytrias-ypoptos-o-xronos-pou-dothike/",
+        "https://www.in.gr/2026/09/25/greece/dyo-syllipseis-gia-tilefonikes-apates-eksapatousan-polites-paristanontas-ypallilous-tilefonias/",
+        "https://www.in.gr/2026/09/25/sports/basketball/penthos-sto-elliniko-mpasket-pethane-o-soulis-markopoulos/",
+        "https://www.in.gr/2026/09/25/sports/basketball/thlipsi-sto-nba-efyge-o-mpomp-petit-vid/",
+        "https://www.in.gr/2026/09/25/go-fun/fizz/romp-loou-o-polypothitos-ergenis-ton-80s-itan-kalytera-apo-oti-tha-mporouses-na-oneireyteis/"
       ],
-      "seen_at_utc": "2026-09-25T09:29:59.267586+00:00"
+      "seen_at_utc": "2026-09-25T09:51:19.224300+00:00"
     }
   },
-  "updated_at_utc": "2026-09-25T09:29:59.267788+00:00"
+  "updated_at_utc": "2026-09-25T09:51:19.224436+00:00"
 }
