@@ -1,15 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564485548/vretania-epistrefei-se-kratiko-elegcho-i-vasiki-sidirodromiki-grammi-londinoy-skotias/",
-      "title": "Βρετανία: Επιστρέφει σε κρατικό έλεγχο η βασική σιδηροδρομική γραμμή Λονδίνου-Σκωτίας",
-      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΕΠΙΣΤΡΕΦΕΙ ΣΕ ΚΡΑΤΙΚΟ ΕΛΕΓΧΟ Η ΒΑΣΙΚΗ ΣΙΔΗΡΟΔΡΟΜΙΚΗ ΓΡΑΜΜΗ ΛΟΝΔΙΝΟΥ-ΣΚΩΤΙΑΣ",
+      "url": "https://www.kathimerini.gr/world/564485593/ford-o-ypallilos-toy-mina-legetai-kaoympoi-kai-einai-fterotos/",
+      "title": "Ford: Ο υπάλληλος του μήνα λέγεται «καουμπόι» και είναι φτερωτός",
+      "normalized_title": "FORD: Ο ΥΠΑΛΛΗΛΟΣ ΤΟΥ ΜΗΝΑ ΛΕΓΕΤΑΙ «ΚΑΟΥΜΠΟΙ» ΚΑΙ ΕΙΝΑΙ ΦΤΕΡΩΤΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564485548/vretania-epistrefei-se-kratiko-elegcho-i-vasiki-sidirodromiki-grammi-londinoy-skotias/",
-        "https://www.kathimerini.gr/society/564485557/thanatos-mazonaki-sto-mikroskopio-i-chorigisi-methis-katathetei-nosileytria/",
-        "https://www.kathimerini.gr/opinion/564482797/giati-einai-anoichti-i-machi-gia-ti-deyteri-thesi/"
+        "https://www.kathimerini.gr/world/564485593/ford-o-ypallilos-toy-mina-legetai-kaoympoi-kai-einai-fterotos/",
+        "https://www.kathimerini.gr/life/hours/564485635/happy-sport-the-first/",
+        "https://www.kathimerini.gr/society/564485563/thessaly-evros-pass-2026-ligei-simera-i-prothesmia-gia-tis-aitiseis-dikaioychoi-perioches-kai-posa/"
       ],
-      "seen_at_utc": "2026-09-28T09:30:08.460571+00:00"
+      "seen_at_utc": "2026-09-28T09:51:20.059182+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,36 +1261,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1885885/dorean-mathimata-se-dodekanisa-kai-kuklades-apo-protes-voitheies-eos-robotiki/?utm_source=rss",
-      "title": "Δωρεάν μαθήματα σε Δωδεκάνησα και Κυκλάδες, από πρώτες βοήθειες έως ρομποτική",
-      "normalized_title": "ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ ΣΕ ΔΩΔΕΚΑΝΗΣΑ ΚΑΙ ΚΥΚΛΑΔΕΣ, ΑΠΟ ΠΡΩΤΕΣ ΒΟΗΘΕΙΕΣ ΕΩΣ ΡΟΜΠΟΤΙΚΗ",
+      "url": "https://www.protothema.gr/greece/article/1885895/ethniko-apolutirio-pos-borei-na-allaxei-i-eisagogi-sta-aei-ta-senaria-pou-epexergazetai-i-epitropi-sofon/?utm_source=rss",
+      "title": "Εθνικό απολυτήριο: Πώς μπορεί να αλλάξει η εισαγωγή στα ΑΕΙ, τα σενάρια που επεξεργάζεται η Επιτροπή Σοφών",
+      "normalized_title": "ΕΘΝΙΚΟ ΑΠΟΛΥΤΗΡΙΟ: ΠΩΣ ΜΠΟΡΕΙ ΝΑ ΑΛΛΑΞΕΙ Η ΕΙΣΑΓΩΓΗ ΣΤΑ ΑΕΙ, ΤΑ ΣΕΝΑΡΙΑ ΠΟΥ ΕΠΕΞΕΡΓΑΖΕΤΑΙ Η ΕΠΙΤΡΟΠΗ ΣΟΦΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1885885/dorean-mathimata-se-dodekanisa-kai-kuklades-apo-protes-voitheies-eos-robotiki/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1885895/ethniko-apolutirio-pos-borei-na-allaxei-i-eisagogi-sta-aei-ta-senaria-pou-epexergazetai-i-epitropi-sofon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-28T09:30:08.460743+00:00"
+      "seen_at_utc": "2026-09-28T09:51:20.059340+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/kosmos/1476094/o-tramp-proteine-ston-si-na-toy-polisei-opla/",
-      "title": "Ο Τραμπ πρότεινε στον Σι να του πωλήσει όπλα",
-      "normalized_title": "Ο ΤΡΑΜΠ ΠΡΟΤΕΙΝΕ ΣΤΟΝ ΣΙ ΝΑ ΤΟΥ ΠΩΛΗΣΕΙ ΟΠΛΑ",
+      "url": "https://www.efsyn.gr/ellada/1476108/thessaloniki-oi-pervolarides-sozoyn-trofima-kai-mageireyoyn-gia-anthropoys-poy-ehoyn-anagki/",
+      "title": "Θεσσαλονίκη: Οι «Περβολάρηδες» σώζουν τρόφιμα και μαγειρεύουν για ανθρώπους που έχουν ανάγκη",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΟΙ «ΠΕΡΒΟΛΑΡΗΔΕΣ» ΣΩΖΟΥΝ ΤΡΟΦΙΜΑ ΚΑΙ ΜΑΓΕΙΡΕΥΟΥΝ ΓΙΑ ΑΝΘΡΩΠΟΥΣ ΠΟΥ ΕΧΟΥΝ ΑΝΑΓΚΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/kosmos/1476094/o-tramp-proteine-ston-si-na-toy-polisei-opla/",
-        "https://www.efsyn.gr/politiki/1476048/kontra-toy-ypoyrgeioy-ygeias-me-ton-psyhiatro-papadimitriadi-gia-tin-patrotita-toy-medwatch/",
-        "https://www.efsyn.gr/athlitismos/1475965/iggiken-i-ora-tis-dikastikis-krisis-gia-ti-mantsester-siti/",
-        "https://www.efsyn.gr/kosmos/1476084/vretania-anakrinontai-oi-pente-syllifthentes-gia-to-feromeno-shedio-epithesis-se-vasi-tis-raf/",
-        "https://www.efsyn.gr/ellada/1476055/syggeneis-filoi-kai-o-kosmos-toy-ellinikoy-mpasket-sto-teleytaio-antio-ston-soyli-markopoylo-eikones/"
+        "https://www.efsyn.gr/ellada/1476108/thessaloniki-oi-pervolarides-sozoyn-trofima-kai-mageireyoyn-gia-anthropoys-poy-ehoyn-anagki/",
+        "https://www.efsyn.gr/politiki/1476078/farantoyris-gia-sdoykoy-oti-eipa-ishyei-sto-akeraio-asholoymai-me-sovara-pragmata/",
+        "https://www.efsyn.gr/ellada/1476101/ypothesi-mazonaki-i-anakoinosi-ton-dikigoron-ton-dyo-katigoroymenon-giatron/",
+        "https://www.efsyn.gr/politiki/1476100/nd-epithesi-kai-sto-politiko-grafeio-toy-nikoy-papathanasi-gia-akoma-mia-fora-toys-leme-oti-mataioponoyn/",
+        "https://www.efsyn.gr/ellada/1475976/sintiki-serron-nea-exegersi-para-tin-aposymforisi-sti-domi-kolastirio/",
+        "https://www.efsyn.gr/politiki/1476087/tsoykalas-i-ayxisi-ton-esodon-toy-fpa-apo-tin-akriveia-sta-kaysima-na-epistrefei-os-elafrynsi-ston-efk/"
       ],
-      "seen_at_utc": "2026-09-28T09:30:08.460677+00:00"
+      "seen_at_utc": "2026-09-28T09:51:20.059313+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/28/world/texerani-para-tis-diloseis-tramp-den-yparxoun-programmatismenes-synomilies-metaksy-ipa-iran/",
-      "title": "Τεχεράνη: Παρά τις δηλώσεις Τραμπ, δεν υπάρχουν προγραμματισμένες συνομιλίες μεταξύ ΗΠΑ-Ιράν",
-      "normalized_title": "ΤΕΧΕΡΑΝΗ: ΠΑΡΑ ΤΙΣ ΔΗΛΩΣΕΙΣ ΤΡΑΜΠ, ΔΕΝ ΥΠΑΡΧΟΥΝ ΠΡΟΓΡΑΜΜΑΤΙΣΜΕΝΕΣ ΣΥΝΟΜΙΛΙΕΣ ΜΕΤΑΞΥ ΗΠΑ-ΙΡΑΝ",
+      "url": "https://www.in.gr/2026/09/28/life/texni/nteivint-xoknei-ergo-tou-vgainei-sto-sfyri-kai-anamenetai-na-aggiksei-ta-2-5-ekat-lires/",
+      "title": "Ντέιβιντ Χόκνεϊ: Ένας από τους πίνακες της σειράς Dog Series βγαίνει στο «σφυρί» και αναμένεται να αγγίξει τα 2.5 εκατ. λίρες",
+      "normalized_title": "ΝΤΕΙΒΙΝΤ ΧΟΚΝΕΙ: ΕΝΑΣ ΑΠΟ ΤΟΥΣ ΠΙΝΑΚΕΣ ΤΗΣ ΣΕΙΡΑΣ DOG SERIES ΒΓΑΙΝΕΙ ΣΤΟ «ΣΦΥΡΙ» ΚΑΙ ΑΝΑΜΕΝΕΤΑΙ ΝΑ ΑΓΓΙΞΕΙ ΤΑ 2.5 ΕΚΑΤ. ΛΙΡΕΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/28/world/texerani-para-tis-diloseis-tramp-den-yparxoun-programmatismenes-synomilies-metaksy-ipa-iran/"
+        "https://www.in.gr/2026/09/28/life/texni/nteivint-xoknei-ergo-tou-vgainei-sto-sfyri-kai-anamenetai-na-aggiksei-ta-2-5-ekat-lires/",
+        "https://www.in.gr/2026/09/28/politics/politiki-grammateia/tsoukalas-gia-mitsotaki-i-xora-den-xreiazetai-loudoviko-pos-mporei-na-ginei-i-meiosi-tou-efk/",
+        "https://www.in.gr/2026/09/28/greece/rafina-kare-kare-i-klopi-mixanis-megalou-kyvismou-deite-vinteo/",
+        "https://www.in.gr/2026/09/28/in-science/ai/praktores-tis-openai-evgalan-sti-fora-dedomena-xriston-i-etaireia-pasxizei-na-katalavei-ti-symperifora-tous/",
+        "https://www.in.gr/2026/09/28/politics/politiki-grammateia/parakolouthousan-ton-kouloglou-eno-itan-melos-tis-epitropis-pou-ereynouse-tis-ypoklopes-katethese-minysi/",
+        "https://www.in.gr/2026/09/28/health/energeiaka-pota-kai-anilikoi-i-grigori-energeia-pou-kryvei-pragmatikous-kindynous-ti-lene-oi-paidiatroi/",
+        "https://www.in.gr/2026/09/28/sports/basketball/euroleague/mpartzokas-nomizo-pos-den-tha-doume-ton-miloutinof-ayti-ti-vdomada/"
       ],
-      "seen_at_utc": "2026-09-28T09:30:08.460631+00:00"
+      "seen_at_utc": "2026-09-28T09:51:20.059273+00:00"
     }
   },
-  "updated_at_utc": "2026-09-28T09:30:08.460845+00:00"
+  "updated_at_utc": "2026-09-28T09:51:20.059409+00:00"
 }
