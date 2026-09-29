@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564488164/karpathos-exetazetai-apeytheias-aeroporiki-syndesi-me-tin-elvetia/",
-      "title": "Κάρπαθος: Εξετάζεται απευθείας αεροπορική σύνδεση με την Ελβετία",
-      "normalized_title": "ΚΑΡΠΑΘΟΣ: ΕΞΕΤΑΖΕΤΑΙ ΑΠΕΥΘΕΙΑΣ ΑΕΡΟΠΟΡΙΚΗ ΣΥΝΔΕΣΗ ΜΕ ΤΗΝ ΕΛΒΕΤΙΑ",
+      "url": "https://www.kathimerini.gr/society/564488242/violanta-ochi-eisaggelea-stin-apofylakisi-toy-tzortzioti/",
+      "title": "Βιολάντα: «Όχι» του εισαγγελέα σε έφεση κατά της αποφυλάκισης Τζωρτζιώτη",
+      "normalized_title": "ΒΙΟΛΑΝΤΑ: «ΟΧΙ» ΤΟΥ ΕΙΣΑΓΓΕΛΕΑ ΣΕ ΕΦΕΣΗ ΚΑΤΑ ΤΗΣ ΑΠΟΦΥΛΑΚΙΣΗΣ ΤΖΩΡΤΖΙΩΤΗ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564488164/karpathos-exetazetai-apeytheias-aeroporiki-syndesi-me-tin-elvetia/"
+        "https://www.kathimerini.gr/society/564488242/violanta-ochi-eisaggelea-stin-apofylakisi-toy-tzortzioti/",
+        "https://www.kathimerini.gr/athletics/analysis/564488236/o-romperto-karlos-kai-i-katara-tis-doxas/",
+        "https://www.kathimerini.gr/world/564488077/oyggaria-synelifthi-proin-ypoyrgos-toy-ormpan-gia-ypexairesi/",
+        "https://www.kathimerini.gr/columns/564488161/o-loris-karioys-apekroyse-to-adoxo-telos/",
+        "https://www.kathimerini.gr/world/564488194/oi-pio-charoymenes-poleis-gia-diakopes-ston-kosmo-se-poia-thesi-vrisketai-i-athina/"
       ],
-      "seen_at_utc": "2026-09-29T09:30:08.520972+00:00"
+      "seen_at_utc": "2026-09-29T09:51:19.355303+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1263,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1886509/peripou-6500-proslipseis-anapliroton-ekpaideutikon-simera-pote-analamvanoun-upiresia/?utm_source=rss",
-      "title": "Περίπου 6.500 προσλήψεις αναπληρωτών εκπαιδευτικών σήμερα, πότε αναλαμβάνουν υπηρεσία",
-      "normalized_title": "ΠΕΡΙΠΟΥ 6.500 ΠΡΟΣΛΗΨΕΙΣ ΑΝΑΠΛΗΡΩΤΩΝ ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΣΗΜΕΡΑ, ΠΟΤΕ ΑΝΑΛΑΜΒΑΝΟΥΝ ΥΠΗΡΕΣΙΑ",
+      "url": "https://www.protothema.gr/greece/article/1886514/traumatismos-mathiti-sto-marasleio-apo-thrausmata-tzamiou/?utm_source=rss",
+      "title": "Τραυματισμός μαθητή στο Μαράσλειο από θραύσματα τζαμιού",
+      "normalized_title": "ΤΡΑΥΜΑΤΙΣΜΟΣ ΜΑΘΗΤΗ ΣΤΟ ΜΑΡΑΣΛΕΙΟ ΑΠΟ ΘΡΑΥΣΜΑΤΑ ΤΖΑΜΙΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1886509/peripou-6500-proslipseis-anapliroton-ekpaideutikon-simera-pote-analamvanoun-upiresia/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1886514/traumatismos-mathiti-sto-marasleio-apo-thrausmata-tzamiou/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-09-29T09:30:08.521164+00:00"
+      "seen_at_utc": "2026-09-29T09:51:19.355405+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1476944/kke-meiosi-katanalosis-kai-apogeiomeni-akriveia-gia-to-lao-epidotiseis-gia-toys-energeiakoys-omiloys/",
-      "title": "ΚΚΕ: «Μείωση κατανάλωσης» και απογειωμένη ακρίβεια για το λαό, επιδοτήσεις για τους ενεργειακούς ομίλους",
-      "normalized_title": "ΚΚΕ: «ΜΕΙΩΣΗ ΚΑΤΑΝΑΛΩΣΗΣ» ΚΑΙ ΑΠΟΓΕΙΩΜΕΝΗ ΑΚΡΙΒΕΙΑ ΓΙΑ ΤΟ ΛΑΟ, ΕΠΙΔΟΤΗΣΕΙΣ ΓΙΑ ΤΟΥΣ ΕΝΕΡΓΕΙΑΚΟΥΣ ΟΜΙΛΟΥΣ",
+      "url": "https://www.efsyn.gr/epistimi/1476956/tehniti-noimosyni-h-anthropic-proeidopoiei-gia-yparxiakoys-kindynoys-gia-tin-anthropotita/",
+      "title": "Τεχνητή νοημοσύνη: H Anthropic προειδοποιεί για «υπαρξιακούς κινδύνους για την ανθρωπότητα»",
+      "normalized_title": "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ: H ANTHROPIC ΠΡΟΕΙΔΟΠΟΙΕΙ ΓΙΑ «ΥΠΑΡΞΙΑΚΟΥΣ ΚΙΝΔΥΝΟΥΣ ΓΙΑ ΤΗΝ ΑΝΘΡΩΠΟΤΗΤΑ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1476944/kke-meiosi-katanalosis-kai-apogeiomeni-akriveia-gia-to-lao-epidotiseis-gia-toys-energeiakoys-omiloys/",
-        "https://www.efsyn.gr/ellada/1476940/thanatos-mazonaki-arsi-tilefonikoy-aporritoy-gia-exi-kinita-zita-o-eisaggeleas-poioys-afora/"
+        "https://www.efsyn.gr/epistimi/1476956/tehniti-noimosyni-h-anthropic-proeidopoiei-gia-yparxiakoys-kindynoys-gia-tin-anthropotita/",
+        "https://www.efsyn.gr/politiki/1476953/syllypitirio-minyma-toy-alexi-tsipra-gia-ton-thanato-toy-16hronoy-podosfairisti-apo-tin-kavala/",
+        "https://www.efsyn.gr/athlitismos/1476807/me-tin-psyhi-sto-stoma/"
       ],
-      "seen_at_utc": "2026-09-29T09:30:08.521116+00:00"
+      "seen_at_utc": "2026-09-29T09:51:19.355386+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/09/29/greece/prasino-fos-stin-arsi-tilefonikou-aporritou-gia-to-thanato-mazonaki/",
-      "title": "«Πράσινο φως» στην άρση τηλεφωνικού απορρήτου για το θάνατο Μαζωνάκη",
-      "normalized_title": "«ΠΡΑΣΙΝΟ ΦΩΣ» ΣΤΗΝ ΑΡΣΗ ΤΗΛΕΦΩΝΙΚΟΥ ΑΠΟΡΡΗΤΟΥ ΓΙΑ ΤΟ ΘΑΝΑΤΟ ΜΑΖΩΝΑΚΗ",
+      "url": "https://www.in.gr/2026/09/29/world/panepistimio-kornel-anoigei-ksana-i-ypothesi-feromenou-omadikou-viasmou-ti-kataggellei-i-proin-foititria/",
+      "title": "Ανοίγει ξανά η υπόθεση φερόμενου ομαδικού βιασμού στο Πανεπιστήμιο Κορνέλ – Τι καταγγέλλει η πρώην φοιτήτρια",
+      "normalized_title": "ΑΝΟΙΓΕΙ ΞΑΝΑ Η ΥΠΟΘΕΣΗ ΦΕΡΟΜΕΝΟΥ ΟΜΑΔΙΚΟΥ ΒΙΑΣΜΟΥ ΣΤΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΚΟΡΝΕΛ – ΤΙ ΚΑΤΑΓΓΕΛΛΕΙ Η ΠΡΩΗΝ ΦΟΙΤΗΤΡΙΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/09/29/greece/prasino-fos-stin-arsi-tilefonikou-aporritou-gia-to-thanato-mazonaki/",
-        "https://www.in.gr/2026/09/29/politics/aftodioikisi/o-dimos-peiraia-enisxyei-tis-neyralgikes-tou-ypiresies-me-18-nea-oximata/"
+        "https://www.in.gr/2026/09/29/world/panepistimio-kornel-anoigei-ksana-i-ypothesi-feromenou-omadikou-viasmou-ti-kataggellei-i-proin-foititria/",
+        "https://www.in.gr/2026/09/29/plus/medianews/the-chase-rekor-premieras-ti-deytera-28-septemvriou/",
+        "https://www.in.gr/2026/09/29/sports/football/bild-o-karetsas-kai-i-odigia-tou-patera-tou-na-psaxnei-perissotero-tous-sympaiktes-tou-pic/",
+        "https://www.in.gr/2026/09/29/world/irak-oi-dynameis-ton-ipa-apoxoroun-apo-ti-xora-epeita-apo-dyo-dekaeties-to-iran-tha-ofelithei-stratigika/",
+        "https://www.in.gr/2026/09/29/politics/aftodioikisi/dimos-ioanniton-epafes-sti-frankfourti-gia-tin-aeroporiki-syndesi-kai-tin-eksostrefeia-ton-ioanninon/",
+        "https://www.in.gr/2026/09/29/plus/medianews/iello%ef%80%ba-stemma-kai-xoligount/"
       ],
-      "seen_at_utc": "2026-09-29T09:30:08.521027+00:00"
+      "seen_at_utc": "2026-09-29T09:51:19.355350+00:00"
     }
   },
-  "updated_at_utc": "2026-09-29T09:30:08.521239+00:00"
+  "updated_at_utc": "2026-09-29T09:51:19.355469+00:00"
 }
