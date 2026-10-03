@@ -1,0 +1,2 @@
+# Keep research notebooks out of GitHub's language percentages.
+*.ipynb linguist-detectable=false
