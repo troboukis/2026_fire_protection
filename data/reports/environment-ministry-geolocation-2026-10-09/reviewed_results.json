@@ -1,0 +1,2484 @@
+{
+  "run_date": "2026-10-09",
+  "year": 2026,
+  "organization_key": "100015996",
+  "before": {
+    "contracts": 67,
+    "geocoded_contracts": 40,
+    "map_points": 40
+  },
+  "accepted": [
+    {
+      "point_name_raw": "συστάδα 1α του δημοσίου δάσους Καρυών",
+      "point_name_canonical": "Δάσος Καρυών, περιοχή Καρυών Ζαγορίου (σημείο αναφοράς)",
+      "work": "υλοτομία και μετατόπιση καυσόξυλων δρυός",
+      "page": 2,
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "excerpt": "Το Δασαρχείο Ιωαννίνων θα δεσμεύσει και θα παραλάβει για λογαριασμό του, από τη συστάδα 1α του δημοσίου δάσους Καρυών τις παρακάτω ποσότητες καυσόξυλων: 210,00 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Ηλιοχωρίου την αμοιβή των 23,82 €/χ.κ.μ κατά μονάδα προϊόντος.\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019801470, σελίδα 2.\n\nΓεωεντοπισμός: Προσεγγιστικός γεωεντοπισμός σε επίπεδο δάσους/οικισμού Καρυών Ζαγορίου, όχι ακριβής θέση συστάδας 1α. Η διοικητική πηγή 19.11.18_diakiriksi_dasarxeio_ioa.pdf προσδιορίζει ρητά το δημόσιο δάσος Καρυών στον Δήμο Ζαγορίου, ώστε να αποκλειστούν οι Καρυές Ασφάκας/Μεταμόρφωση.",
+      "precision_note": "Προσεγγιστικός γεωεντοπισμός σε επίπεδο δάσους/οικισμού Καρυών Ζαγορίου, όχι ακριβής θέση συστάδας 1α. Η διοικητική πηγή 19.11.18_diakiriksi_dasarxeio_ioa.pdf προσδιορίζει ρητά το δημόσιο δάσος Καρυών στον Δήμο Ζαγορίου, ώστε να αποκλειστούν οι Καρυές Ασφάκας/Μεταμόρφωση.",
+      "geocode_queries": [
+        "Δημόσιο δάσος Καρυών, Ζαγόρι, Ιωάννινα",
+        "Καρυές, Δήμος Ζαγορίου, Ιωάννινα"
+      ],
+      "supporting_sources": [
+        "https://www.apdhp-dm.gov.gr/images/anakoinoseis/2018/19.11.18_diakiriksi_dasarxeio_ioa.pdf"
+      ],
+      "reference_number": "26SYMV019801470",
+      "lat": 39.733219,
+      "lon": 20.933615,
+      "formatted_address": "Karies 455 00, Greece",
+      "place_id": "ChIJ3YHyHJTcWxMR7AH8YVTefgE",
+      "geocode_query": "Καρυές Ζαγορίου, Ελλάδα",
+      "google": {
+        "lat": 39.7332189,
+        "lon": 20.9336147,
+        "formatted_address": "Karies 455 00, Greece",
+        "place_id": "ChIJ3YHyHJTcWxMR7AH8YVTefgE",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019801470",
+      "source_text_sha256": "21ae220f920631ef6bb65a992b899f3ca652f3efb9298e939c20f26e106fd564",
+      "evidence_page": 2,
+      "evidence_pages": [
+        2,
+        3,
+        4
+      ],
+      "document_excerpt": "Το Δασαρχείο Ιωαννίνων θα δεσμεύσει και θα παραλάβει για λογαριασμό του, από τη συστάδα 1α του δημοσίου δάσους Καρυών τις παρακάτω ποσότητες καυσόξυλων: 210,00 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Ηλιοχωρίου την αμοιβή των 23,82 €/χ.κ.μ κατά μονάδα προϊόντος."
+    },
+    {
+      "point_name_raw": "συστάδα 10γ (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασική περιοχή νότια Ζάζαρης, συστάδα 10γ (σημείο αναφοράς λίμνης)",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 10γ (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 527 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Τ.Κ. Βροντερού Δήμου Πρεσπών «Η Αγία Παρασκευή» την αμοιβή των 28,60 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός.\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019706675, σελίδα 3. Συμπληρωματική γεωγραφική τεκμηρίωση: https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf, σελίδα 171, σχήμα 2.2.5-2 (printed page 160) .\n\nΓεωεντοπισμός: Η σύμβαση προσδιορίζει τη συστάδα 10γ (υπόλοιπο) του δημοσίου δασικού συμπλέγματος Βαρικού–Λεχόβου. Ο επίσημος χάρτης της ΕΠΜ3, σχήμα 2.2.5-2, PDF σελίδα 171 / έντυπη 160, την αποτυπώνει νότια και νοτιοδυτικά της λίμνης Ζάζαρη. Το Google σημείο της λίμνης επιτρέπεται μόνο ως ευρύτερο προσεγγιστικό σημείο αναφοράς, όχι ως θέση ή κέντρο της συστάδας.",
+      "precision_note": "Η σύμβαση προσδιορίζει τη συστάδα 10γ (υπόλοιπο) του δημοσίου δασικού συμπλέγματος Βαρικού–Λεχόβου. Ο επίσημος χάρτης της ΕΠΜ3, σχήμα 2.2.5-2, PDF σελίδα 171 / έντυπη 160, την αποτυπώνει νότια και νοτιοδυτικά της λίμνης Ζάζαρη. Το Google σημείο της λίμνης επιτρέπεται μόνο ως ευρύτερο προσεγγιστικό σημείο αναφοράς, όχι ως θέση ή κέντρο της συστάδας.",
+      "geocode_queries": [
+        "Δασική περιοχή νότια της λίμνης Ζάζαρη, Φλώρινα",
+        "Λίμνη Ζάζαρη, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "source_url": "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf",
+      "source_page": 171,
+      "source_figure": "2.2.5-2 (printed page 160)",
+      "reference_number": "26SYMV019706675",
+      "lat": 40.629092,
+      "lon": 21.549811,
+      "formatted_address": "Limni Zazari, Aetos 530 75, Greece",
+      "place_id": "ChIJNfjGmWpmVxMRYHl9CIa6mUk",
+      "geocode_query": "Λίμνη Ζάζαρη, Φλώρινα, Ελλάδα",
+      "google": {
+        "lat": 40.6290916,
+        "lon": 21.5498112,
+        "formatted_address": "Limni Zazari, Aetos 530 75, Greece",
+        "place_id": "ChIJNfjGmWpmVxMRYHl9CIa6mUk",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "establishment",
+          "natural_feature"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019706675",
+      "source_text_sha256": "510f128bfc5b325b7e8ff5816d5dc9191848b189b53c2747118391b9bdf1a74c",
+      "evidence_page": 3,
+      "evidence_pages": [
+        1,
+        3,
+        4
+      ],
+      "document_excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 10γ (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 527 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Τ.Κ. Βροντερού Δήμου Πρεσπών «Η Αγία Παρασκευή» την αμοιβή των 28,60 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός."
+    },
+    {
+      "point_name_raw": "συστάδα 8ε (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασική περιοχή Σκλήθρου, συστάδα 8ε (σημείο αναφοράς Σκλήθρου)",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 8ε (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 900 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Τ.Κ. Πολυποτάμου Δήμου Φλώρινας «Οι Υλοτόμοι» την αμοιβή των 28,81 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός.\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019706552, σελίδα 3. Συμπληρωματική γεωγραφική τεκμηρίωση: https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf, σελίδα 171, σχήμα 2.2.5-2 (printed page 160) .\n\nΓεωεντοπισμός: Η σύμβαση προσδιορίζει τη συστάδα 8ε (υπόλοιπο) του δημοσίου δασικού συμπλέγματος Βαρικού–Λεχόβου. Ο επίσημος χάρτης της ΕΠΜ3, σχήμα 2.2.5-2, PDF σελίδα 171 / έντυπη 160, την αποτυπώνει ανατολικά και βορειοανατολικά του Σκλήθρου. Το Google σημείο του Σκλήθρου επιτρέπεται μόνο ως προσεγγιστικό σημείο αναφοράς της δασικής περιοχής, όχι ως θέση ή κέντρο της συστάδας.",
+      "precision_note": "Η σύμβαση προσδιορίζει τη συστάδα 8ε (υπόλοιπο) του δημοσίου δασικού συμπλέγματος Βαρικού–Λεχόβου. Ο επίσημος χάρτης της ΕΠΜ3, σχήμα 2.2.5-2, PDF σελίδα 171 / έντυπη 160, την αποτυπώνει ανατολικά και βορειοανατολικά του Σκλήθρου. Το Google σημείο του Σκλήθρου επιτρέπεται μόνο ως προσεγγιστικό σημείο αναφοράς της δασικής περιοχής, όχι ως θέση ή κέντρο της συστάδας.",
+      "geocode_queries": [
+        "Δασική περιοχή Σκλήθρου, Φλώρινα",
+        "Σκλήθρο, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "source_url": "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf",
+      "source_page": 171,
+      "source_figure": "2.2.5-2 (printed page 160)",
+      "reference_number": "26SYMV019706552",
+      "lat": 40.621697,
+      "lon": 21.50457,
+      "formatted_address": "Sklithro 530 75, Greece",
+      "place_id": "ChIJgemA7qNnVxMRWGuxEaW-Xws",
+      "geocode_query": "Σκλήθρο, Φλώρινα, Ελλάδα",
+      "google": {
+        "lat": 40.6216974,
+        "lon": 21.50457,
+        "formatted_address": "Sklithro 530 75, Greece",
+        "place_id": "ChIJgemA7qNnVxMRWGuxEaW-Xws",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019706552",
+      "source_text_sha256": "879c6c303b54f6591e07aff577dc398d3ad035ecd862621b2878b53e01f012b1",
+      "evidence_page": 3,
+      "evidence_pages": [
+        1,
+        3,
+        4
+      ],
+      "document_excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 8ε (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 900 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Τ.Κ. Πολυποτάμου Δήμου Φλώρινας «Οι Υλοτόμοι» την αμοιβή των 28,81 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός."
+    },
+    {
+      "point_name_raw": "συστάδα 8β του Δημοσίου δάσους Βιτσίου Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δάσος Βιτσίου (σημείο αναφοράς ορεινού όγκου)",
+      "work": "Υλοτομικές εργασίες, περισυλλογή και μεταφορά έως 2.073 χ.κ.μ. καυσόξυλων οξιάς στη συστάδα 8β",
+      "page": 3,
+      "pages": [
+        3
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019700801, σελίδα 3.\n\nΓεωεντοπισμός: Σημείο αναφοράς του δάσους/ορεινού όγκου Βιτσίου. Δεν αποτελεί ακριβές όριο ή κέντρο της συστάδας. Οι οικισμοί στην επωνυμία/έδρα του συνεταιρισμού δεν είναι περιοχές του έργου.",
+      "precision_note": "Σημείο αναφοράς του δάσους/ορεινού όγκου Βιτσίου. Δεν αποτελεί ακριβές όριο ή κέντρο της συστάδας. Οι οικισμοί στην επωνυμία/έδρα του συνεταιρισμού δεν είναι περιοχές του έργου.",
+      "reference_number": "26SYMV019700801",
+      "lat": 40.649167,
+      "lon": 21.385556,
+      "formatted_address": "Verno, Aetos 520 59, Greece",
+      "place_id": "ChIJh2Lmq5xcVxMRWA8cKSGCEFg",
+      "geocode_query": "Βίτσι, Φλώρινα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 40.649167,
+        "lon": 21.385556,
+        "formatted_address": "Verno, Aetos 520 59, Greece",
+        "place_id": "ChIJh2Lmq5xcVxMRWA8cKSGCEFg",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "establishment",
+          "natural_feature"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019700801",
+      "source_text_sha256": "77e876bd5b3566a33d5d60ce7aa258a5efc67a4e9c3f0a51c5ecff45c521cd64",
+      "evidence_page": 3,
+      "evidence_pages": [
+        3
+      ],
+      "document_excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα"
+    },
+    {
+      "point_name_raw": "συστάδα 8α του Δημοσίου δάσους Βιτσίου Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δάσος Βιτσίου (σημείο αναφοράς ορεινού όγκου)",
+      "work": "Υλοτομικές εργασίες, περισυλλογή και μεταφορά έως 1.293 χ.κ.μ. καυσόξυλων οξιάς στη συστάδα 8α",
+      "page": 3,
+      "pages": [
+        3
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019700779, σελίδα 3.\n\nΓεωεντοπισμός: Σημείο αναφοράς του δάσους/ορεινού όγκου Βιτσίου. Δεν αποτελεί ακριβές όριο ή κέντρο της συστάδας. Οι οικισμοί στην επωνυμία/έδρα του συνεταιρισμού δεν είναι περιοχές του έργου.",
+      "precision_note": "Σημείο αναφοράς του δάσους/ορεινού όγκου Βιτσίου. Δεν αποτελεί ακριβές όριο ή κέντρο της συστάδας. Οι οικισμοί στην επωνυμία/έδρα του συνεταιρισμού δεν είναι περιοχές του έργου.",
+      "reference_number": "26SYMV019700779",
+      "lat": 40.649167,
+      "lon": 21.385556,
+      "formatted_address": "Verno, Aetos 520 59, Greece",
+      "place_id": "ChIJh2Lmq5xcVxMRWA8cKSGCEFg",
+      "geocode_query": "Βίτσι, Φλώρινα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 40.649167,
+        "lon": 21.385556,
+        "formatted_address": "Verno, Aetos 520 59, Greece",
+        "place_id": "ChIJh2Lmq5xcVxMRWA8cKSGCEFg",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "establishment",
+          "natural_feature"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019700779",
+      "source_text_sha256": "b6792e08ee5ae02db8e423e03ce98ebe2d9b36a384ecf4c6ca33e67ced7d7e1c",
+      "evidence_page": 3,
+      "evidence_pages": [
+        3
+      ],
+      "document_excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα"
+    },
+    {
+      "point_name_raw": "ακίνητο στη θέση «Μάτι» της περιοχής Άγιος Ανδρέας ΠΕΟΝ της Δ. Κ. Νέας Μάκρης του Δήμου Μαραθώνα",
+      "point_name_canonical": "Ακίνητο ΠΕΟΝ, Μάτι (σημείο αναφοράς δυτικού ορίου, οδός Θράκης)",
+      "work": "Αναδασωτικές επεμβάσεις και φυτεύσεις στο ακίνητο ΠΕΟΝ εμβαδού 128.976 τ.μ., 1η συμπληρωματική σύμβαση",
+      "page": 4,
+      "pages": [
+        4
+      ],
+      "excerpt": "Στο δεύτερο των συμβαλλομένων Μαρία Φιλανταράκη του Ιωάννη, Εργολήπτρια Δημοσίων Έργων, καλούμενη εφεξής ΑΝΑΔΟΧΟ, την εκτέλεση των εργασιών του έργου «1η Αναθεώρηση Μελέτης αναβάθμισης δασικού οικοσυστήματος ακινήτου στη θέση «Μάτι» της περιοχής Άγιος Ανδρέας ΠΕΟΝ της Δ. Κ. Νέας Μάκρης του Δήμου Μαραθώνα Π. Ε. Ανατολικής Αττικής». Άρθρο 1 - Αντικείμενο της Σύμβασης Αντικείμενο της σύμβασης είναι η εκτέλεση του παραπάνω έργου που αφορά τις αναδασωτικές επεμβάσεις - φυτεύσεις, σύμφωνα με την μελέτη κατασκευής. Οι εργασίες θα πραγματοποιηθούν στo ακίνητο του υφιστάμενου χώρου ακινήτου συνολικού εμβαδού 128.976,00 τ.μ.\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV019233146, σελίδα 4. Συμπληρωματική τεκμηρίωση: https://amarysia.gr/wp-content/uploads/2022/12/EKTHESH-MELETHS-ANABATMISHS_NAT.pdf.\n\nΓεωεντοπισμός: Το Google εντοπίζει την οδό Θράκης στο δυτικό όριο του ακινήτου ΠΕΟΝ. Η θέση ελέγχθηκε με το περίγραμμα της μελέτης για το ίδιο ΚΑΕΚ και απέχει περίπου 3 μέτρα από το όριο. Σημείο αναφοράς ορίου, όχι κέντρο ή περίγραμμα του ακινήτου.",
+      "precision_note": "Το Google εντοπίζει την οδό Θράκης στο δυτικό όριο του ακινήτου ΠΕΟΝ. Η θέση ελέγχθηκε με το περίγραμμα της μελέτης για το ίδιο ΚΑΕΚ και απέχει περίπου 3 μέτρα από το όριο. Σημείο αναφοράς ορίου, όχι κέντρο ή περίγραμμα του ακινήτου.",
+      "additional_pages": [
+        1,
+        3
+      ],
+      "reference_number": "26SYMV019233146",
+      "lat": 38.050212,
+      "lon": 23.989101,
+      "formatted_address": "Thrakis, Nea Makri 190 05, Greece",
+      "place_id": "ChIJwadNKhuDoRQROIixvEIpXqE",
+      "geocode_query": "Θράκης, Άγιος Ανδρέας, Νέα Μάκρη, Αττική, Ελλάδα",
+      "google": {
+        "lat": 38.0502116,
+        "lon": 23.9891009,
+        "formatted_address": "Thrakis, Nea Makri 190 05, Greece",
+        "place_id": "ChIJwadNKhuDoRQROIixvEIpXqE",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 2
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "boundary_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019233146",
+      "supporting_sources": [
+        {
+          "url": "https://amarysia.gr/wp-content/uploads/2022/12/EKTHESH-MELETHS-ANABATMISHS_NAT.pdf",
+          "pdf_pages": [
+            6,
+            7,
+            9
+          ],
+          "role": "Documentary parcel boundary validation; Google coordinates were used for the database point."
+        }
+      ],
+      "boundary_distance_m": 3.070336,
+      "source_text_sha256": "7d4dbcd8e2486a8e46b3908371551d9acdca523f4db987901ae3184e153ea818",
+      "evidence_page": 4,
+      "evidence_pages": [
+        4
+      ],
+      "document_excerpt": "Στο δεύτερο των συμβαλλομένων Μαρία Φιλανταράκη του Ιωάννη, Εργολήπτρια Δημοσίων Έργων, καλούμενη εφεξής ΑΝΑΔΟΧΟ, την εκτέλεση των εργασιών του έργου «1η Αναθεώρηση Μελέτης αναβάθμισης δασικού οικοσυστήματος ακινήτου στη θέση «Μάτι» της περιοχής Άγιος Ανδρέας ΠΕΟΝ της Δ. Κ. Νέας Μάκρης του Δήμου Μαραθώνα Π. Ε. Ανατολικής Αττικής». Άρθρο 1 - Αντικείμενο της Σύμβασης Αντικείμενο της σύμβασης είναι η εκτέλεση του παραπάνω έργου που αφορά τις αναδασωτικές επεμβάσεις - φυτεύσεις, σύμφωνα με την μελέτη κατασκευής. Οι εργασίες θα πραγματοποιηθούν στo ακίνητο του υφιστάμενου χώρου ακινήτου συνολικού εμβαδού 128.976,00 τ.μ."
+    },
+    {
+      "point_name_raw": "παρυφές των βράχων των Μετεώρων",
+      "point_name_canonical": "Περιοχή βράχων Μετεώρων (σημείο αναφοράς)",
+      "work": "Υποστηρικτικές εργασίες για εκπόνηση μελέτης αντιπυρικής προστασίας: χαρτογράφηση, τεχνική περιγραφή και σχέδια έργων, προμέτρηση και τιμολόγιο εργασιών",
+      "page": null,
+      "pages": [],
+      "excerpt": "Οι Υποστηρικτικές εργασίες προκειμένου για την εκπόνηση μελέτης αντιπυρικής προστασίας στα περιαστικά Δάση Προφήτη Ηλία Τ.Κ. Καλαμπάκας και παρυφών των βράχων των Μετεώρων θα περιλαμβάνουν τις κάτωθι εργασίες:  Σύνταξη χάρτη περιοχής των εκτάσεων κλ. 1:20.000 με πλήρη καταγραφή των στοιχείων της περιοχής  Τεχνική περιγραφή των προτεινόμενων έργων αντιπυρικής προστασίας  Σχέδια έργων κλ. 1:100  Πίνακας προμέτρησης των εργασιών  Τιμολόγιο εργασιών\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018511510, σελίδα 11: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018511510\n\nΓεωεντοπισμός: Περιοχή μελέτης στις παρυφές των Μετεώρων. Το Google αποτέλεσμα είναι σημείο του συγκροτήματος βράχων και μοναστηριών, όχι ακριβής θέση εργασιών, όριο μελέτης ή μεμονωμένο αντιπυρικό έργο.",
+      "precision_note": "Περιοχή μελέτης στις παρυφές των Μετεώρων. Το Google αποτέλεσμα είναι σημείο του συγκροτήματος βράχων και μοναστηριών, όχι ακριβής θέση εργασιών, όριο μελέτης ή μεμονωμένο αντιπυρικό έργο.",
+      "source_ref": "26PROC018511510",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018511510",
+      "reference_number": "26SYMV018579344",
+      "lat": 39.721704,
+      "lon": 21.63059,
+      "formatted_address": "Kalabaka 422 00, Greece",
+      "place_id": "ChIJOX8y6K4PWRMR_zK82NStJ3E",
+      "geocode_query": "Meteora rock formations, Greece",
+      "google": {
+        "lat": 39.7217044,
+        "lon": 21.6305896,
+        "formatted_address": "Kalabaka 422 00, Greece",
+        "place_id": "ChIJOX8y6K4PWRMR_zK82NStJ3E",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "establishment",
+          "place_of_worship",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018579344",
+      "source_text_sha256": "d65dbe5edefd46667640dab12774d1c659eb8f03e6ef057cb0dab15401b618f8",
+      "evidence_page": 11,
+      "evidence_pages": [
+        11
+      ],
+      "document_excerpt": "Οι Υποστηρικτικές εργασίες προκειμένου για την εκπόνηση μελέτης αντιπυρικής προστασίας στα περιαστικά Δάση Προφήτη Ηλία Τ.Κ. Καλαμπάκας και παρυφών των βράχων των Μετεώρων θα περιλαμβάνουν τις κάτωθι εργασίες:  Σύνταξη χάρτη περιοχής των εκτάσεων κλ. 1:20.000 με πλήρη καταγραφή των στοιχείων της περιοχής  Τεχνική περιγραφή των προτεινόμενων έργων αντιπυρικής προστασίας  Σχέδια έργων κλ. 1:100  Πίνακας προμέτρησης των εργασιών  Τιμολόγιο εργασιών"
+    },
+    {
+      "point_name_raw": "Νέα Αρτάκη",
+      "point_name_canonical": "Νέα Αρτάκη, Χαλκιδέων, Εύβοια",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 38.514628,
+      "lon": 23.637344,
+      "formatted_address": "Nea Artaki, Greece",
+      "place_id": "ChIJrxVDjdI9oRQRsIa54iy9AAQ",
+      "geocode_query": "Νέα Αρτάκη, Χαλκιδέων, Εύβοια, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 38.5146276,
+        "lon": 23.6373443,
+        "formatted_address": "Nea Artaki, Greece",
+        "place_id": "ChIJrxVDjdI9oRQRsIa54iy9AAQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Αφράτι",
+      "point_name_canonical": "Αφράτι, Χαλκιδέων, Εύβοια",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 38.451202,
+      "lon": 23.688897,
+      "formatted_address": "Afrati 341 00, Greece",
+      "place_id": "ChIJdeihmsgVoRQRuhsB5eMD1eI",
+      "geocode_query": "Αφράτι, Χαλκιδέων, Εύβοια, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 38.4512023,
+        "lon": 23.6888973,
+        "formatted_address": "Afrati 341 00, Greece",
+        "place_id": "ChIJdeihmsgVoRQRuhsB5eMD1eI",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Τριάδα",
+      "point_name_canonical": "Τριάδα, Διρφύων Μεσσαπίων, Εύβοια",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 38.581725,
+      "lon": 23.712323,
+      "formatted_address": "Triada 344 00, Greece",
+      "place_id": "ChIJZzlNVhw5oRQRJe-KDe2BGDk",
+      "geocode_query": "Τριάδα, Διρφύων Μεσσαπίων, Εύβοια, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 38.5817253,
+        "lon": 23.7123231,
+        "formatted_address": "Triada 344 00, Greece",
+        "place_id": "ChIJZzlNVhw5oRQRJe-KDe2BGDk",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Πισσώνας",
+      "point_name_canonical": "Πισσώνας, Διρφύων Μεσσαπίων, Εύβοια",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 38.527065,
+      "lon": 23.718505,
+      "formatted_address": "Pissonas 340 14, Greece",
+      "place_id": "ChIJQWV3Ihw_oRQRRXvZv_IX2XA",
+      "geocode_query": "Πισσώνας, Διρφύων Μεσσαπίων, Εύβοια, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 38.5270652,
+        "lon": 23.7185051,
+        "formatted_address": "Pissonas 340 14, Greece",
+        "place_id": "ChIJQWV3Ihw_oRQRRXvZv_IX2XA",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Σαρωνίδα",
+      "point_name_canonical": "Σαρωνίδα, Σαρωνικός, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.74662,
+      "lon": 23.905574,
+      "formatted_address": "Saronida 190 13, Greece",
+      "place_id": "ChIJBwd0zAbtoRQRAH654iy9AAQ",
+      "geocode_query": "Σαρωνίδα, Σαρωνικός, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7466201,
+        "lon": 23.9055737,
+        "formatted_address": "Saronida 190 13, Greece",
+        "place_id": "ChIJBwd0zAbtoRQRAH654iy9AAQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Ανάβυσσος",
+      "point_name_canonical": "Ανάβυσσος, Σαρωνικός, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.735074,
+      "lon": 23.949874,
+      "formatted_address": "Anavyssos 190 13, Greece",
+      "place_id": "ChIJifDURY_toRQRtZWsz2ytxoc",
+      "geocode_query": "Ανάβυσσος, Σαρωνικός, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7350737,
+        "lon": 23.9498742,
+        "formatted_address": "Anavyssos 190 13, Greece",
+        "place_id": "ChIJifDURY_toRQRtZWsz2ytxoc",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Παλαιά Φώκαια",
+      "point_name_canonical": "Παλαιά Φώκαια, Σαρωνικός, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.717334,
+      "lon": 23.945743,
+      "formatted_address": "Palaia Fokaia 190 13, Greece",
+      "place_id": "ChIJ13fqPgLyoRQRwH254iy9AAQ",
+      "geocode_query": "Παλαιά Φώκαια, Σαρωνικός, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7173337,
+        "lon": 23.9457427,
+        "formatted_address": "Palaia Fokaia 190 13, Greece",
+        "place_id": "ChIJ13fqPgLyoRQRwH254iy9AAQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Θυμάρι",
+      "point_name_canonical": "Θυμάρι, Παλαιά Φώκαια, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.693892,
+      "lon": 23.93983,
+      "formatted_address": "Thimari 190 13, Greece",
+      "place_id": "ChIJ9WpXxhzuoRQR4PrCdC-9AAo",
+      "geocode_query": "Θυμάρι, Παλαιά Φώκαια, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.6938922,
+        "lon": 23.9398305,
+        "formatted_address": "Thimari 190 13, Greece",
+        "place_id": "ChIJ9WpXxhzuoRQR4PrCdC-9AAo",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Χάρακας",
+      "point_name_canonical": "Χάρακας, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.669762,
+      "lon": 23.9642,
+      "formatted_address": "Charakas 190 01, Greece",
+      "place_id": "ChIJmaa_3c_xoRQRyx8QGEHtrKo",
+      "geocode_query": "Χάρακας, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.6697616,
+        "lon": 23.9642001,
+        "formatted_address": "Charakas 190 01, Greece",
+        "place_id": "ChIJmaa_3c_xoRQRyx8QGEHtrKo",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Τριανταφυλλιά",
+      "point_name_canonical": "Τριανταφυλλιά, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.687143,
+      "lon": 23.967752,
+      "formatted_address": "Triantafillia, Greece",
+      "place_id": "ChIJn4YJyO7xoRQR5Z6_vsvmDF0",
+      "geocode_query": "Τριανταφυλλιά, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.6871425,
+        "lon": 23.9677519,
+        "formatted_address": "Triantafillia, Greece",
+        "place_id": "ChIJn4YJyO7xoRQR5Z6_vsvmDF0",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Λεγρενά",
+      "point_name_canonical": "Λεγρενά, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Λεγραινά, Λαυρεωτική, Αττική, Ελλάδα",
+        "Legrena, Greece"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.669719,
+      "lon": 23.996402,
+      "formatted_address": "Legrena 195 00, Greece",
+      "place_id": "ChIJd7Xd8KXxoRQRjFHq4h3e3cY",
+      "geocode_query": "Λεγρενά, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.6697186,
+        "lon": 23.9964019,
+        "formatted_address": "Legrena 195 00, Greece",
+        "place_id": "ChIJd7Xd8KXxoRQRjFHq4h3e3cY",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Μεγάλα Πεύκα",
+      "point_name_canonical": "Μεγάλα Πεύκα, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Μεγάλα Πεύκα, Κερατέα, Ελλάδα",
+        "Μετόχι Μεγάλα Πεύκα, Λαυρεωτική, Ελλάδα"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.694889,
+      "lon": 24.002081,
+      "formatted_address": "Megala Pefka, Greece",
+      "place_id": "ChIJebxkMoDxoRQRZHql6k6_rIw",
+      "geocode_query": "Μεγάλα Πεύκα, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.6948887,
+        "lon": 24.0020807,
+        "formatted_address": "Megala Pefka, Greece",
+        "place_id": "ChIJebxkMoDxoRQRZHql6k6_rIw",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Αγίασμα",
+      "point_name_canonical": "Αγίασμα, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Αγίασμα, Κερατέα 19001, Ελλάδα"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.73801,
+      "lon": 23.976317,
+      "formatted_address": "Agiasma, Greece",
+      "place_id": "ChIJWSiVY2DyoRQR0ZUCK4N_cKc",
+      "geocode_query": "Αγίασμα, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.73801040000001,
+        "lon": 23.9763168,
+        "formatted_address": "Agiasma, Greece",
+        "place_id": "ChIJWSiVY2DyoRQR0ZUCK4N_cKc",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Συντερίνα",
+      "point_name_canonical": "Συντερίνα, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.727748,
+      "lon": 23.989135,
+      "formatted_address": "Sinterina 190 01, Greece",
+      "place_id": "ChIJPz_CIFDyoRQRALFnKzAegpY",
+      "geocode_query": "Συντερίνα, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7277484,
+        "lon": 23.9891354,
+        "formatted_address": "Sinterina 190 01, Greece",
+        "place_id": "ChIJPz_CIFDyoRQRALFnKzAegpY",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Δημολάκι",
+      "point_name_canonical": "Δημολάκι, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Δημολάκι, Κερατέα 19001, Ελλάδα"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.742112,
+      "lon": 23.996462,
+      "formatted_address": "Dimolaki 190 01, Greece",
+      "place_id": "ChIJt2-1pP7yoRQRZerct1AYWwQ",
+      "geocode_query": "Δημολάκι, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7421117,
+        "lon": 23.996462,
+        "formatted_address": "Dimolaki 190 01, Greece",
+        "place_id": "ChIJt2-1pP7yoRQRZerct1AYWwQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Χάρβαλο",
+      "point_name_canonical": "Χάρβαλο, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Χάρβαλο, Κερατέα 19001, Ελλάδα",
+        "Charvalo, Keratea, Greece"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.76179,
+      "lon": 23.998648,
+      "formatted_address": "Charvalo 190 01, Greece",
+      "place_id": "ChIJGWTyJdnyoRQRGHC7Ztq8Kbs",
+      "geocode_query": "Χάρβαλο, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7617897,
+        "lon": 23.9986476,
+        "formatted_address": "Charvalo 190 01, Greece",
+        "place_id": "ChIJGWTyJdnyoRQRGHC7Ztq8Kbs",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Άγιος Κωνσταντίνος",
+      "point_name_canonical": "Άγιος Κωνσταντίνος, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.725377,
+      "lon": 24.012331,
+      "formatted_address": "Agios Konstantinos 195 00, Greece",
+      "place_id": "ChIJ_9dzJ9nzoRQRwHy54iy9AAQ",
+      "geocode_query": "Άγιος Κωνσταντίνος, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7253766,
+        "lon": 24.0123313,
+        "formatted_address": "Agios Konstantinos 195 00, Greece",
+        "place_id": "ChIJ_9dzJ9nzoRQRwHy54iy9AAQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Μανούτσο",
+      "point_name_canonical": "Μανούτσο, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "geocode_aliases": [
+        "Μανουτσό, Κερατέα, Αττική, Ελλάδα",
+        "Μανούτσο, Ανατολική Αττική, Ελλάδα"
+      ],
+      "reference_number": "26SYMV018489793",
+      "lat": 37.769476,
+      "lon": 24.001834,
+      "formatted_address": "Manoutso 190 01, Greece",
+      "place_id": "ChIJ-SQQASrzoRQRWECvmjen0ns",
+      "geocode_query": "Μανούτσο, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7694762,
+        "lon": 24.0018338,
+        "formatted_address": "Manoutso 190 01, Greece",
+        "place_id": "ChIJ-SQQASrzoRQRWECvmjen0ns",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Μαλιαστέκα",
+      "point_name_canonical": "Μαλιαστέκα, Κερατέα, Λαυρεωτική, Αττική",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": null,
+      "pages": [],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "reference_number": "26SYMV018489793",
+      "lat": 37.74011,
+      "lon": 23.983909,
+      "formatted_address": "Maliasteka 190 01, Greece",
+      "place_id": "ChIJ2V-e3PXyoRQRNXUHRTrfLVA",
+      "geocode_query": "Μαλιαστέκα, Κερατέα, Λαυρεωτική, Αττική, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 37.7401103,
+        "lon": 23.9839086,
+        "formatted_address": "Maliasteka 190 01, Greece",
+        "place_id": "ChIJ2V-e3PXyoRQRNXUHRTrfLVA",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018489793",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου"
+    },
+    {
+      "point_name_raw": "Άγιος Γεώργιος",
+      "point_name_canonical": "Άγιος Γεώργιος, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "geocode_aliases": [
+        "Άγιος Γεώργιος, Πρέβεζα, Ελλάδα"
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.267284,
+      "lon": 20.854875,
+      "formatted_address": "Ag. Georgios 482 00, Greece",
+      "place_id": "ChIJK48o-R8PXBMRxxdfYD5TOm4",
+      "geocode_query": "Άγιος Γεώργιος, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.267284,
+        "lon": 20.8548753,
+        "formatted_address": "Ag. Georgios 482 00, Greece",
+        "place_id": "ChIJK48o-R8PXBMRxxdfYD5TOm4",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Γοργόμυλος",
+      "point_name_canonical": "Γοργόμυλος, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.32257,
+      "lon": 20.943238,
+      "formatted_address": "Gorgomilos 482 00, Greece",
+      "place_id": "ChIJK8mgyKUHXBMRMJJXDfStHtk",
+      "geocode_query": "Γοργόμυλος, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.3225701,
+        "lon": 20.9432381,
+        "formatted_address": "Gorgomilos 482 00, Greece",
+        "place_id": "ChIJK8mgyKUHXBMRMJJXDfStHtk",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Δρυόφυτο",
+      "point_name_canonical": "Δρυόφυτο, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.269891,
+      "lon": 20.883854,
+      "formatted_address": "Driofito 482 00, Greece",
+      "place_id": "ChIJoVwnE0YPXBMRXeozDpuBD9w",
+      "geocode_query": "Δρυόφυτο, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2698907,
+        "lon": 20.8838538,
+        "formatted_address": "Driofito 482 00, Greece",
+        "place_id": "ChIJoVwnE0YPXBMRXeozDpuBD9w",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Κερασώνας",
+      "point_name_canonical": "Κερασώνας, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.306938,
+      "lon": 20.875683,
+      "formatted_address": "Kerasonas 482 00, Greece",
+      "place_id": "ChIJD9ItLOoIXBMRa1TBHyomGqQ",
+      "geocode_query": "Κερασώνας, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.3069383,
+        "lon": 20.8756832,
+        "formatted_address": "Kerasonas 482 00, Greece",
+        "place_id": "ChIJD9ItLOoIXBMRa1TBHyomGqQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Παναγιά",
+      "point_name_canonical": "Παναγιά, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "geocode_aliases": [
+        "Παναγιά, Φιλιππιάδα, Πρέβεζα, Ελλάδα"
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.347444,
+      "lon": 20.880098,
+      "formatted_address": "Panagia 482 00, Greece",
+      "place_id": "ChIJubj10xUIXBMR_DLU5RFSsKw",
+      "geocode_query": "Παναγιά, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.3474439,
+        "lon": 20.8800982,
+        "formatted_address": "Panagia 482 00, Greece",
+        "place_id": "ChIJubj10xUIXBMR_DLU5RFSsKw",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Ριζοβούνι",
+      "point_name_canonical": "Ριζοβούνι, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.262608,
+      "lon": 20.806575,
+      "formatted_address": "Rizovouni 483 00, Greece",
+      "place_id": "ChIJ62zN5YEOXBMRfo8FYhYScPM",
+      "geocode_query": "Ριζοβούνι, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2626078,
+        "lon": 20.8065746,
+        "formatted_address": "Rizovouni 483 00, Greece",
+        "place_id": "ChIJ62zN5YEOXBMRfo8FYhYScPM",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Ρωμιά",
+      "point_name_canonical": "Ρωμιά, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.218692,
+      "lon": 20.852189,
+      "formatted_address": "Romia 482 00, Greece",
+      "place_id": "ChIJxR6V9DIOXBMRl_r2u35ozXU",
+      "geocode_query": "Ρωμιά, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2186916,
+        "lon": 20.8521887,
+        "formatted_address": "Romia 482 00, Greece",
+        "place_id": "ChIJxR6V9DIOXBMRl_r2u35ozXU",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Τσαγκαρόπουλο",
+      "point_name_canonical": "Τσαγκαρόπουλο, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "geocode_aliases": [
+        "Τσαγκαροπούλου, Φιλιππιάδα, Πρέβεζα, Ελλάδα",
+        "Τσαγκαρόπουλο, Πρέβεζα, Ελλάδα"
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.341845,
+      "lon": 20.90782,
+      "formatted_address": "Tsagkaropoulo 482 00, Greece",
+      "place_id": "ChIJrdiSmeYHXBMR3YhY5Oi5oCQ",
+      "geocode_query": "Τσαγκαρόπουλο, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.3418445,
+        "lon": 20.9078203,
+        "formatted_address": "Tsagkaropoulo 482 00, Greece",
+        "place_id": "ChIJrdiSmeYHXBMR3YhY5Oi5oCQ",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Φιλιππιάδα",
+      "point_name_canonical": "Φιλιππιάδα, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.207667,
+      "lon": 20.880951,
+      "formatted_address": "Filippiada 482 00, Greece",
+      "place_id": "ChIJacxPE94PXBMRx0Xz6ru3RPI",
+      "geocode_query": "Φιλιππιάδα, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2076669,
+        "lon": 20.8809509,
+        "formatted_address": "Filippiada 482 00, Greece",
+        "place_id": "ChIJacxPE94PXBMRx0Xz6ru3RPI",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Γυμνότοπος",
+      "point_name_canonical": "Γυμνότοπος, Δήμος Ζηρού, Πρέβεζα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.289468,
+      "lon": 20.903932,
+      "formatted_address": "Gimnotopos 482 00, Greece",
+      "place_id": "ChIJXWsXbR0GXBMRlpx7u8lBwrs",
+      "geocode_query": "Γυμνότοπος, Δήμος Ζηρού, Πρέβεζα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2894685,
+        "lon": 20.9039321,
+        "formatted_address": "Gimnotopos 482 00, Greece",
+        "place_id": "ChIJXWsXbR0GXBMRlpx7u8lBwrs",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Καμπή",
+      "point_name_canonical": "Καμπή, Δήμος Αρταίων, Άρτα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.217676,
+      "lon": 20.901322,
+      "formatted_address": "Kampi Artas 482 00, Greece",
+      "place_id": "ChIJU-0Vk_QPXBMRuy8-Br2Dy8w",
+      "geocode_query": "Καμπή, Δήμος Αρταίων, Άρτα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2176756,
+        "lon": 20.9013218,
+        "formatted_address": "Kampi Artas 482 00, Greece",
+        "place_id": "ChIJU-0Vk_QPXBMRuy8-Br2Dy8w",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Αμμότοπος",
+      "point_name_canonical": "Αμμότοπος, Δήμος Αρταίων, Άρτα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.270857,
+      "lon": 20.94138,
+      "formatted_address": "Ammotopos 482 00, Greece",
+      "place_id": "ChIJLWefMNYFXBMRV514nGX3lpo",
+      "geocode_query": "Αμμότοπος, Δήμος Αρταίων, Άρτα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.27085719999999,
+        "lon": 20.94138,
+        "formatted_address": "Ammotopos 482 00, Greece",
+        "place_id": "ChIJLWefMNYFXBMRV514nGX3lpo",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "Παντάνασσα",
+      "point_name_canonical": "Παντάνασσα, Δήμος Αρταίων, Άρτα",
+      "work": "Αντιδιαβρωτικά και αντιπλημμυρικά έργα αποκατάστασης πυρόπληκτων εκτάσεων της 12/8/2025· 2η τμηματική παράταση αρχικής σύμβασης 26SYMV018489783",
+      "page": null,
+      "pages": [],
+      "excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας\n\nΠηγή τεκμηρίωσης: πρόσκληση ΚΗΜΔΗΣ 26PROC018350831, σελίδα 16: https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831\n\nΓεωεντοπισμός: Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "precision_note": "Geocoding της ονομασμένης κοινότητας ως σημείο αναφοράς, όχι ακριβές έργο/περίγραμμα. Η παράταση αφορά μόνο την περιοχή μελέτης Ζήρου–Αρταίων και οι 13 κοινότητες αναφέρονται στη συνδεδεμένη Πρόσκληση. Το αρχικό συμβατικό ΑΔΑΜ στο ίδιο το έγγραφο είναι 26SYMV018489783.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "target_document_pages": [
+        2,
+        3
+      ],
+      "reference_number": "26SYMV019488828",
+      "lat": 39.238436,
+      "lon": 20.8764,
+      "formatted_address": "Pantanassa 482 00, Greece",
+      "place_id": "ChIJCxgqmaEPXBMRRhr1Y43xeHU",
+      "geocode_query": "Παντάνασσα, Δήμος Αρταίων, Άρτα, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 39.2384362,
+        "lon": 20.8763995,
+        "formatted_address": "Pantanassa 482 00, Greece",
+        "place_id": "ChIJCxgqmaEPXBMRRhr1Y43xeHU",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019488828",
+      "source_text_sha256": "c88b5803c326008de96b575ba3af52c2e433851d8cea44c15c7b6c58e4c96b0f",
+      "evidence_page": 16,
+      "evidence_pages": [
+        16
+      ],
+      "document_excerpt": "3. στις Τ.Κ. Άγιου Γεωργίου, Γοργομύλου, Δρυοφύτου, Κερασώνα, Παναγιάς, Ριζοβουνίου, Ρωμιάς, Τσαγκαρόπουλου, Φιλιππιάδας, Γυμνοτόπου (Δ. Ζηρού) και στις Τ.Κ. Καμπής, Αμμοτόπου και Παντάνασσας (Δ. Αρταίων) για τις Δ/νση Δασών Πρέβεζας και Δ/νσης Δασών Άρτας"
+    },
+    {
+      "point_name_raw": "περιοχή Χρυσοσκαλίτισσας, φοινικόδασος LIFE Phoenix",
+      "point_name_canonical": "Άσπρη Λίμνη, Χρυσοσκαλίτισσα, Χανιά",
+      "work": "Αποκατάσταση και βελτίωση οικοτόπου προτεραιότητας 9370* Palm groves of Phoenix, εργασίες πρασίνου",
+      "page": 3,
+      "pages": [
+        3
+      ],
+      "excerpt": "H Διεύθυνση Δασών Χανίων, όπως εκπροσωπείται στην παρούσα σύμβαση, αναθέτει στον ανάδοχο, την εκτέλεση του δημόσιου έργου «ΑΠΟΚΑΤΑΣΤΑΣΗ ΚΑΙ ΒΕΛΤΙΩΣΗ ΟΙΚΟΤΟΠΩΝ ΠΡΟΤΕΡΑΙΟΤΗΤΑΣ 9370* ¨PALM GROVES OF PHOENIX” LIFE PHOENIX/101113584- LIFE22-NAT-ES-LIFE PHOENIX- ΕΡΓΑΣΙΕΣ ΠΡΑΣΙΝΟΥ» ΣΤΗΝ ΠΕΡΙΟΧΗ ΤΗΣ ΧΡΥΣΟΣΚΑΛΙΤΙΣΣΑΣ», όπως αυτό περιγράφεται αναλυτικά στα συμβατικά τεύχη και περιλαμβάνονται οι εργασίες όπως περιγράφονται στην εγκεκριμένη μελέτη.\n\nΠηγή τεκμηρίωσης: σύμβαση ΚΗΜΔΗΣ 26SYMV018470300, σελίδα 3. Συμπληρωματική τεκμηρίωση: https://lifephoenix.gesplan.es/el/node/167.\n\nΓεωεντοπισμός: Η σύμβαση ονομάζει Χρυσοσκαλίτισσα. Το επίσημο LIFE Phoenix ταυτοποιεί το τοπικό φοινικόδασος ως Άσπρη Λίμνη· χρησιμοποιείται η κατονομασμένη περιοχή οικοτόπου ως σημείο αναφοράς και όχι το ακριβές περίγραμμα των επεμβάσεων.",
+      "precision_note": "Η σύμβαση ονομάζει Χρυσοσκαλίτισσα. Το επίσημο LIFE Phoenix ταυτοποιεί το τοπικό φοινικόδασος ως Άσπρη Λίμνη· χρησιμοποιείται η κατονομασμένη περιοχή οικοτόπου ως σημείο αναφοράς και όχι το ακριβές περίγραμμα των επεμβάσεων.",
+      "supporting_sources": [
+        {
+          "url": "https://lifephoenix.gesplan.es/el/node/167",
+          "excerpt": "Η Άσπρη Λίμνη αποτελεί μία από τις σημαντικότερες περιοχές για τον ενδημικό Φοίνικα του Θεόφραστου, καθώς εκεί βρίσκεται η δυτικότερη εξάπλωσή του στην Κρήτη."
+        }
+      ],
+      "reference_number": "26SYMV018470300",
+      "lat": 35.309147,
+      "lon": 23.525092,
+      "formatted_address": "White Lake beach, Inachori 730 12, Greece",
+      "place_id": "ChIJeSAVWf_mnBQROcK7RiDj-pU",
+      "geocode_query": "Άσπρη Λίμνη, Χρυσοσκαλίτισσα, Χανιά, Ελλάδα, Ελλάδα",
+      "google": {
+        "lat": 35.3091467,
+        "lon": 23.5250923,
+        "formatted_address": "White Lake beach, Inachori 730 12, Greece",
+        "place_id": "ChIJeSAVWf_mnBQROcK7RiDj-pU",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "establishment",
+          "natural_feature"
+        ],
+        "result_count": 2
+      },
+      "coordinate_source": "Google Geocoding via src.locate_work.Document.geolocatePoint",
+      "spatial_role": "area_reference",
+      "review_status": "accepted",
+      "contract_source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV018470300",
+      "source_text_sha256": "daf795087c7c8cd2d137772c9453c56e868038363c9ab8ca0ca98b21539dd7ae",
+      "evidence_page": 3,
+      "evidence_pages": [
+        3
+      ],
+      "document_excerpt": "H Διεύθυνση Δασών Χανίων, όπως εκπροσωπείται στην παρούσα σύμβαση, αναθέτει στον ανάδοχο, την εκτέλεση του δημόσιου έργου «ΑΠΟΚΑΤΑΣΤΑΣΗ ΚΑΙ ΒΕΛΤΙΩΣΗ ΟΙΚΟΤΟΠΩΝ ΠΡΟΤΕΡΑΙΟΤΗΤΑΣ 9370* ¨PALM GROVES OF PHOENIX” LIFE PHOENIX/101113584- LIFE22-NAT-ES-LIFE PHOENIX- ΕΡΓΑΣΙΕΣ ΠΡΑΣΙΝΟΥ» ΣΤΗΝ ΠΕΡΙΟΧΗ ΤΗΣ ΧΡΥΣΟΣΚΑΛΙΤΙΣΣΑΣ», όπως αυτό περιγράφεται αναλυτικά στα συμβατικά τεύχη και περιλαμβάνονται οι εργασίες όπως περιγράφονται στην εγκεκριμένη μελέτη."
+    }
+  ],
+  "unresolved_locations": [
+    {
+      "point_name_raw": "συστάδα 12η του Δημοσίου Δάσους Βοϊου",
+      "point_name_canonical": "Δημόσιο Δάσος Βοΐου, Κοζάνη",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων οξιάς",
+      "page": 3,
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "excerpt": "Το Δασαρχείο Τσοτυλίου θα δεσμεύσει και θα παραλάβει για λογαριασμό του, από τη συστάδα 12η του Δημοσίου Δάσους Βοϊου τις παρακάτω ποσότητες καυσόξυλων: έως 300,00 χ.κ.μ. (*) καυσόξυλων Οξιάς θα καταβάλλει στον ΔΑ.Σ.Ε. ΠΕΝΤΑΛΟΦΟΥ ΖΩΝΗΣ την αμοιβή των €23,05/χ.κ.μ κατά μονάδα προϊόντος για τα καυσόξυλα Οξιάς.",
+      "precision_note": "Η σύμβαση προσδιορίζει τη συστάδα 12 του Δημοσίου Δάσους Βοΐου. Δεν περιέχει συντεταγμένες ή διαχειριστικό χάρτη. Επιτρέπεται μόνο τεκμηριωμένη προσεγγιστική θέση του δάσους, όχι του οικισμού Πενταλόφου ή του Δασαρχείου Τσοτυλίου· η έδρα του αναδόχου δεν προσδιορίζει τη συστάδα.",
+      "geocode_queries": [
+        "Δημόσιο Δάσος Βοΐου, Κοζάνη",
+        "Δάσος Βοΐου, Δασαρχείο Τσοτυλίου",
+        "Voio forest, Kozani, Greece"
+      ],
+      "reference_number": "26SYMV019816586",
+      "review_status": "unresolved",
+      "reason": "Το Google αναγνωρίζει δήμο ή όρος Βόιο, όχι το δημόσιο δάσος και τη συστάδα 12. Δεν τεκμηριώνεται αντίστοιχο ασφαλές σημείο περιοχής.",
+      "initial_google_query": "Δημόσιο Δάσος Βοΐου, Κοζάνη, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.3197723,
+        "lon": 21.4275888,
+        "formatted_address": "Voio Municipality, Greece",
+        "place_id": "ChIJiT9hRxrsWRMRRFPyC6JSViU",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "administrative_area_level_4",
+          "political"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "δασοφυλακίου στην περιοχή Ποριά του ΕΔΛΟ",
+      "point_name_canonical": "Δασοφυλάκιο Ποριά, Λευκά Όρη, Σαμαριά, Χανιά",
+      "work": "συντήρηση και επισκευή περίφραξης εκατέρωθεν δασοφυλακίου",
+      "page": 2,
+      "pages": [
+        1,
+        2
+      ],
+      "excerpt": "Αντικείμενο της σύμβασης είναι η εκτέλεση των εργασιών «Συντήρηση-Επισκευή περίφραξης εκατέρωθεν του δασοφυλακίου στην περιοχή Ποριά του ΕΔΛΟ» όπως αναλύονται στην τεχνική έκθεση",
+      "precision_note": "Σαφές τοπωνύμιο και δασοφυλάκιο στο βόρειο όριο του Εθνικού Δρυμού Λευκών Ορέων, ανατολικά Ομαλού. Google αποτέλεσμα για γενικά Λευκά Όρη/Σαμαριά ή Ομαλό δεν είναι η θέση του φυλακίου. Επίσημη πηγή samaria.gr επιβεβαιώνει ότι στα Ποριά υπάρχει φυλάκιο, όχι ακριβείς συντεταγμένες.",
+      "geocode_queries": [
+        "Poria, Chania, Crete",
+        "Ποριά, Λευκά Όρη, Χανιά",
+        "Ποριά, Ομαλός, Χανιά",
+        "Shepherds saddle, Poria, Crete"
+      ],
+      "supporting_sources": [
+        "https://api.openstreetmap.org/api/0.6/node/4102833535",
+        "https://www.samaria.gr/%CF%87%CE%B1%CE%BD%CE%B9%CF%89%CF%84%CE%B9%CE%BA%CE%B1-%CE%BD%CE%B5%CE%B1-%CF%81%CE%B5%CF%8D%CE%BC%CE%B1-%CE%B1%CF%80%CE%BF-%CF%84%CE%B7-%CF%86%CF%8D%CF%83%CE%B7-%CF%83%CF%84%CE%BF-%CF%86%CE%B1%CF%81/?lang=el"
+      ],
+      "reference_number": "26SYMV019774910",
+      "review_status": "unresolved",
+      "reason": "Το Google δεν αναγνωρίζει το δασοφυλάκιο Ποριά και επιστρέφει ευρύτερη Σαμαριά/Ομαλό/Λευκά Όρη ή ομώνυμο οικισμό αλλού.",
+      "initial_google_query": "Δασοφυλάκιο Ποριά, Λευκά Όρη, Σαμαριά, Χανιά, Ελλάδα",
+      "initial_google_result": {
+        "lat": 35.2911342,
+        "lon": 23.9593437,
+        "formatted_address": "Samaria 730 11, Greece",
+        "place_id": "ChIJsaZTbXmanBQRkOPCdC-9AAo",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 15β (μέρος) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 15β (μέρος) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 318 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Τ.Κ. Ακρίτα, Αλώνων, Φλαμπούρου Δήμου Φλώρινας την αμοιβή των 26,60 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός.",
+      "precision_note": "Η ακριβής συστάδα 15β (μέρος) βρίσκεται στο ενιαίο ονομαζόμενο δασικό σύμπλεγμα. Δεν τεκμηριώνεται σε ποιον από τους οκτώ οικισμούς βρίσκεται η συγκεκριμένη συστάδα. Επιτρέπεται μόνο θέση του ίδιου δασικού συμπλέγματος με σαφή προσεγγιστική ακρίβεια· όχι αυτόματη επιλογή του πρώτου χωριού ή της Φλώρινας. Οι οκτώ οικισμοί αποτελούν το συλλογικό όνομα, δεν είναι οκτώ διαφορετικά δηλωμένα σημεία εργασιών.",
+      "geocode_queries": [
+        "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+        "Δημόσιο δασικό σύμπλεγμα Βαρικού Λεχόβου Λιμνοχωρίου Σκλήθρου Αγραπιδιών Αετού Φανού Ξινού Νερού, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "reference_number": "26SYMV019707106",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6288802,
+        "lon": 21.556543,
+        "formatted_address": "Limnochori 530 75, Greece",
+        "place_id": "ChIJIR_aRxJmVxMR60yYCSmmciI",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "cemetery",
+          "establishment",
+          "point_of_interest"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 12β (μέρος) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 12β (μέρος) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 167 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Φλώρινας «Νέος» την αμοιβή των 25,49 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός.",
+      "precision_note": "Η ακριβής συστάδα 12β (μέρος) βρίσκεται στο ενιαίο ονομαζόμενο δασικό σύμπλεγμα. Δεν τεκμηριώνεται σε ποιον από τους οκτώ οικισμούς βρίσκεται η συγκεκριμένη συστάδα. Επιτρέπεται μόνο θέση του ίδιου δασικού συμπλέγματος με σαφή προσεγγιστική ακρίβεια· όχι αυτόματη επιλογή του πρώτου χωριού ή της Φλώρινας. Οι οκτώ οικισμοί αποτελούν το συλλογικό όνομα, δεν είναι οκτώ διαφορετικά δηλωμένα σημεία εργασιών.",
+      "geocode_queries": [
+        "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+        "Δημόσιο δασικό σύμπλεγμα Βαρικού Λεχόβου Λιμνοχωρίου Σκλήθρου Αγραπιδιών Αετού Φανού Ξινού Νερού, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "reference_number": "26SYMV019706870",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6288802,
+        "lon": 21.556543,
+        "formatted_address": "Limnochori 530 75, Greece",
+        "place_id": "ChIJIR_aRxJmVxMR60yYCSmmciI",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "cemetery",
+          "establishment",
+          "point_of_interest"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 3α (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων οξιάς",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 3α (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 1.265 χ.κ.μ. καυσόξυλων Οξυάς και θα καταβάλλει στον ΔΑ.Σ.Ε. Φλώρινας «Νέος» την αμοιβή των 27,79 €/χ.κ.μ κατά μονάδα προϊόντος Οξυάς.",
+      "precision_note": "Η ακριβής συστάδα 3α (υπόλ.) βρίσκεται στο ενιαίο ονομαζόμενο δασικό σύμπλεγμα. Δεν τεκμηριώνεται σε ποιον από τους οκτώ οικισμούς βρίσκεται η συγκεκριμένη συστάδα. Επιτρέπεται μόνο θέση του ίδιου δασικού συμπλέγματος με σαφή προσεγγιστική ακρίβεια· όχι αυτόματη επιλογή του πρώτου χωριού ή της Φλώρινας. Οι οκτώ οικισμοί αποτελούν το συλλογικό όνομα, δεν είναι οκτώ διαφορετικά δηλωμένα σημεία εργασιών.",
+      "geocode_queries": [
+        "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+        "Δημόσιο δασικό σύμπλεγμα Βαρικού Λεχόβου Λιμνοχωρίου Σκλήθρου Αγραπιδιών Αετού Φανού Ξινού Νερού, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "reference_number": "26SYMV019706205",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6288802,
+        "lon": 21.556543,
+        "formatted_address": "Limnochori 530 75, Greece",
+        "place_id": "ChIJIR_aRxJmVxMR60yYCSmmciI",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "cemetery",
+          "establishment",
+          "point_of_interest"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 1θ (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+      "work": "υλοτομία και συγκομιδή καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 1θ (υπόλ.) του Δημοσίου Δασικού Συμπλέγματος Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού Π.Ε. Φλώρινας τις παρακάτω ποσότητες καυσόξυλων: έως 942 χ.κ.μ. καυσόξυλων Δρυός και θα καταβάλλει στον ΔΑ.Σ.Ε. Φλώρινας «Νέος» την αμοιβή των 26,60 €/χ.κ.μ κατά μονάδα προϊόντος Δρυός.",
+      "precision_note": "Η ακριβής συστάδα 1θ (υπόλ.) βρίσκεται στο ενιαίο ονομαζόμενο δασικό σύμπλεγμα. Δεν τεκμηριώνεται σε ποιον από τους οκτώ οικισμούς βρίσκεται η συγκεκριμένη συστάδα. Επιτρέπεται μόνο θέση του ίδιου δασικού συμπλέγματος με σαφή προσεγγιστική ακρίβεια· όχι αυτόματη επιλογή του πρώτου χωριού ή της Φλώρινας. Οι οκτώ οικισμοί αποτελούν το συλλογικό όνομα, δεν είναι οκτώ διαφορετικά δηλωμένα σημεία εργασιών.",
+      "geocode_queries": [
+        "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα",
+        "Δημόσιο δασικό σύμπλεγμα Βαρικού Λεχόβου Λιμνοχωρίου Σκλήθρου Αγραπιδιών Αετού Φανού Ξινού Νερού, Φλώρινα"
+      ],
+      "supporting_sources": [
+        "https://ypen.gov.gr/diavouleusi/wp-content/uploads/2024/09/EPM-3_%CE%A4%CE%A4A_kef2.pdf"
+      ],
+      "reference_number": "26SYMV019705816",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δασικό σύμπλεγμα Βαρικού, Λεχόβου, Λιμνοχωρίου, Σκλήθρου, Αγραπιδιών, Αετού, Φανού, Ξινού Νερού, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6288802,
+        "lon": 21.556543,
+        "formatted_address": "Limnochori 530 75, Greece",
+        "place_id": "ChIJIR_aRxJmVxMR60yYCSmmciI",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "cemetery",
+          "establishment",
+          "point_of_interest"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 32α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 417,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 32α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 417,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Δυτικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Το κοινοτικό Δάσος Βροντερού είναι διαφορετικό δάσος· η έδρα του αναδόχου δεν τεκμηριώνει θέση εργασίας.",
+      "reference_number": "26SYMV019704728",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.8293505,
+        "lon": 21.0324103,
+        "formatted_address": "Πρεσπών, Psarades 530 77, Greece",
+        "place_id": "ChIJlZ-x6nC0UBMR7RnllLw0euE",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 27β του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 308,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 27β του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 308,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Δυτικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Το κοινοτικό Δάσος Βροντερού είναι διαφορετικό δάσος· η έδρα του αναδόχου δεν τεκμηριώνει θέση εργασίας.",
+      "reference_number": "26SYMV019704624",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.8293505,
+        "lon": 21.0324103,
+        "formatted_address": "Πρεσπών, Psarades 530 77, Greece",
+        "place_id": "ChIJlZ-x6nC0UBMR7RnllLw0euE",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 27α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 192,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 27α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 192,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Δυτικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Το κοινοτικό Δάσος Βροντερού είναι διαφορετικό δάσος· η έδρα του αναδόχου δεν τεκμηριώνει θέση εργασίας.",
+      "reference_number": "26SYMV019704516",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.8293505,
+        "lon": 21.0324103,
+        "formatted_address": "Πρεσπών, Psarades 530 77, Greece",
+        "place_id": "ChIJlZ-x6nC0UBMR7RnllLw0euE",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 26α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 467,00 χ.κ.μ. καυσόξυλων δρυός σε μίξη με άλλο είδος",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 26α του δημοσίου δάσους Πρεσπών – Δυτικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 467,00 χ.κ.μ. καυσόξυλων δρυός σε μίξη με άλλο είδος",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Δυτικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Το κοινοτικό Δάσος Βροντερού είναι διαφορετικό δάσος· η έδρα του αναδόχου δεν τεκμηριώνει θέση εργασίας.",
+      "reference_number": "26SYMV019704397",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Δυτικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.8293505,
+        "lon": 21.0324103,
+        "formatted_address": "Πρεσπών, Psarades 530 77, Greece",
+        "place_id": "ChIJlZ-x6nC0UBMR7RnllLw0euE",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 18β του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 667,00 χ.κ.μ. καυσόξυλων οξιάς",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 18β του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 667,00 χ.κ.μ. καυσόξυλων οξιάς",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Ανατολικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Έδρες αναδόχων Γαρέφι, Άλωνα ή Βροντερό δεν τεκμηριώνουν θέση εργασίας.",
+      "reference_number": "26SYMV019704271",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.7637355,
+        "lon": 21.1414226,
+        "formatted_address": "Prespes, Greece",
+        "place_id": "ChIJs9wMDuxMVxMRFbyegGj-HTY",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "administrative_area_level_5",
+          "political"
+        ],
+        "result_count": 3
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 18α του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 1.185,00 χ.κ.μ. καυσόξυλων οξιάς - δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 18α του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 1.185,00 χ.κ.μ. καυσόξυλων οξιάς - δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Ανατολικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Έδρες αναδόχων Γαρέφι, Άλωνα ή Βροντερό δεν τεκμηριώνουν θέση εργασίας.",
+      "reference_number": "26SYMV019704142",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.7637355,
+        "lon": 21.1414226,
+        "formatted_address": "Prespes, Greece",
+        "place_id": "ChIJs9wMDuxMVxMRFbyegGj-HTY",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "administrative_area_level_5",
+          "political"
+        ],
+        "result_count": 3
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 15γ του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 917,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 15γ του δημοσίου δάσους Πρεσπών – Ανατολικό Τμήμα τις παρακάτω ποσότητες καυσόξυλων: έως 917,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Το έγγραφο προσδιορίζει δημόσιο δάσος Πρεσπών – Ανατολικό Τμήμα και τον αριθμό συστάδας. Το Google geocoding επιτρέπεται μόνο ως αντιπροσωπευτικό σημείο της τεκμηριωμένης δασικής περιοχής, όχι ως συντεταγμένες της συστάδας. Έδρες αναδόχων Γαρέφι, Άλωνα ή Βροντερό δεν τεκμηριώνουν θέση εργασίας.",
+      "reference_number": "26SYMV019704033",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δασικό Σύμπλεγμα Ανατολικό Πρεσπών, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.7637355,
+        "lon": 21.1414226,
+        "formatted_address": "Prespes, Greece",
+        "place_id": "ChIJs9wMDuxMVxMRFbyegGj-HTY",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "administrative_area_level_5",
+          "political"
+        ],
+        "result_count": 3
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 15α (μέρος) του δημοσίου δάσους Κρυσταλλοπηγής-Βατοχωρίου-Κώττα- Πρασίνου-Ανταρτικού",
+      "point_name_canonical": "Δημόσιο Δάσος Κρυσταλλοπηγής Βατοχωρίου Κώττα Πρασίνου Ανταρτικού, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 183,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 15α (μέρος) του δημοσίου δάσους Κρυσταλλοπηγής-Βατοχωρίου-Κώττα- Πρασίνου-Ανταρτικού τις παρακάτω ποσότητες καυσόξυλων: έως 183,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Η σύνθετη ονομασία Κρυσταλλοπηγής–Βατοχωρίου–Κώττα–Πρασίνου–Ανταρτικού δηλώνει ένα δημόσιο δάσος· το έγγραφο ορίζει μία συστάδα, όχι πέντε ανεξάρτητες θέσεις εργασίας. Δεν τεκμηριώνεται ποιο από τα ομώνυμα χωριά είναι πλησιέστερο στη συστάδα. Το Google geocoding μπορεί να δώσει μόνο αντιπροσωπευτικό σημείο της δασικής περιοχής. Η έδρα του αναδόχου στην Άλωνα αποκλείεται.",
+      "reference_number": "26SYMV019703912",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δάσος Κρυσταλλοπηγής Βατοχωρίου Κώττα Πρασίνου Ανταρτικού, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.7247116,
+        "lon": 21.1975309,
+        "formatted_address": "Prasino 530 76, Greece",
+        "place_id": "ChIJJS_hbw9OVxMRll4nqHXF834",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 4
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 14δ του δημοσίου δάσους Κρυσταλλοπηγής-Βατοχωρίου-Κώττα-Πρασίνου- Ανταρτικού",
+      "point_name_canonical": "Δημόσιο Δάσος Κρυσταλλοπηγής Βατοχωρίου Κώττα Πρασίνου Ανταρτικού, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές και λοιπές εργασίες συγκομιδής/περισυλλογής ξυλείας για χορήγηση καυσόξυλων ατομικών αναγκών: έως 950,00 χ.κ.μ. καυσόξυλων δρυός",
+      "page": 3,
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα παραλάβει για λογαριασμό της, από τη συστάδα 14δ του δημοσίου δάσους Κρυσταλλοπηγής-Βατοχωρίου-Κώττα-Πρασίνου- Ανταρτικού τις παρακάτω ποσότητες καυσόξυλων: έως 950,00 χ.κ.μ. καυσόξυλων δρυός",
+      "precision_note": "Ακριβής δασική συστάδα άγνωστη. Η σύνθετη ονομασία Κρυσταλλοπηγής–Βατοχωρίου–Κώττα–Πρασίνου–Ανταρτικού δηλώνει ένα δημόσιο δάσος· το έγγραφο ορίζει μία συστάδα, όχι πέντε ανεξάρτητες θέσεις εργασίας. Δεν τεκμηριώνεται ποιο από τα ομώνυμα χωριά είναι πλησιέστερο στη συστάδα. Το Google geocoding μπορεί να δώσει μόνο αντιπροσωπευτικό σημείο της δασικής περιοχής. Η έδρα του αναδόχου στην Άλωνα αποκλείεται.",
+      "reference_number": "26SYMV019703746",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Δημόσιο Δάσος Κρυσταλλοπηγής Βατοχωρίου Κώττα Πρασίνου Ανταρτικού, Δήμος Πρεσπών, Φλώρινα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.7247116,
+        "lon": 21.1975309,
+        "formatted_address": "Prasino 530 76, Greece",
+        "place_id": "ChIJJS_hbw9OVxMRll4nqHXF834",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 4
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 10ζ (μέρος) του Δημοσίου Δασικού Συμπλέγματος Άνω Υδρούσας, Υδρούσας, Κολχικής, Σκοπιάς Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Άνω Υδρούσας, Υδρούσας, Κολχικής, Σκοπιάς, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές εργασίες, περισυλλογή και μεταφορά έως 337 χ.κ.μ. καυσόξυλων οξιάς στη συστάδα 10ζ (μέρος)",
+      "page": 3,
+      "pages": [
+        3
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα",
+      "precision_note": "Ονομασμένη δασική συστάδα χωρίς συντεταγμένες ορίων. Δεν τεκμηριώνεται σε ποιο από τα τέσσερα τμήματα/οικισμούς του συμπλέγματος ανήκει η συστάδα. Να μη χρησιμοποιηθεί αυτόματα το κέντρο του πρώτου οικισμού Άνω Υδρούσας ως θέση εργασιών. Να διατηρηθεί μη εντοπισμένη αν το Google δεν αναγνωρίζει το ίδιο το δασικό σύμπλεγμα.",
+      "needs_location_review": true,
+      "reference_number": "26SYMV019700814",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Άνω Υδρούσα, Φλώρινα, Ελλάδα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6999457,
+        "lon": 21.4755572,
+        "formatted_address": "Ano Idroussa 531 00, Greece",
+        "place_id": "ChIJQQzQXdVpVxMRR09xqMuAVtI",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "συστάδα 10ε (μέρος) του Δημοσίου Δασικού Συμπλέγματος Άνω Υδρούσας, Υδρούσας, Κολχικής, Σκοπιάς Π.Ε. Φλώρινας",
+      "point_name_canonical": "Δημόσιο Δασικό Σύμπλεγμα Άνω Υδρούσας, Υδρούσας, Κολχικής, Σκοπιάς, Φλώρινα, Ελλάδα",
+      "work": "Υλοτομικές εργασίες, περισυλλογή και μεταφορά έως 580 χ.κ.μ. καυσόξυλων οξιάς στη συστάδα 10ε (μέρος)",
+      "page": 3,
+      "pages": [
+        3
+      ],
+      "excerpt": "Η Δ/νση Δασών Φλώρινας θα δεσμεύσει και θα",
+      "precision_note": "Ονομασμένη δασική συστάδα χωρίς συντεταγμένες ορίων. Δεν τεκμηριώνεται σε ποιο από τα τέσσερα τμήματα/οικισμούς του συμπλέγματος ανήκει η συστάδα. Να μη χρησιμοποιηθεί αυτόματα το κέντρο του πρώτου οικισμού Άνω Υδρούσας ως θέση εργασιών. Να διατηρηθεί μη εντοπισμένη αν το Google δεν αναγνωρίζει το ίδιο το δασικό σύμπλεγμα.",
+      "needs_location_review": true,
+      "reference_number": "26SYMV019700807",
+      "review_status": "unresolved",
+      "reason": "Δεν αντιστοιχίζεται με ασφάλεια η συγκεκριμένη συστάδα στο ονομαζόμενο ενιαίο δασικό σύμπλεγμα. Οι Google αντιστοιχίσεις σε οδό, δήμο ή έναν τυχαίο οικισμό δεν προσδιορίζουν την περιοχή της συστάδας.",
+      "initial_google_query": "Άνω Υδρούσα, Φλώρινα, Ελλάδα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 40.6999457,
+        "lon": 21.4755572,
+        "formatted_address": "Ano Idroussa 531 00, Greece",
+        "place_id": "ChIJQQzQXdVpVxMRR09xqMuAVtI",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "locality",
+          "political"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "περιαστικό Δάσος Προφήτη Ηλία Τ.Κ. Καλαμπάκας",
+      "point_name_canonical": "Περιαστικό δάσος Προφήτη Ηλία, Καλαμπάκα, Τρίκαλα, Ελλάδα",
+      "work": "Υποστηρικτικές εργασίες για εκπόνηση μελέτης αντιπυρικής προστασίας: χαρτογράφηση, τεχνική περιγραφή και σχέδια έργων, προμέτρηση και τιμολόγιο εργασιών",
+      "page": 11,
+      "pages": [
+        11
+      ],
+      "excerpt": "Οι Υποστηρικτικές εργασίες προκειμένου για την εκπόνηση μελέτης αντιπυρικής προστασίας στα περιαστικά Δάση Προφήτη Ηλία Τ.Κ. Καλαμπάκας και παρυφών των βράχων των Μετεώρων θα περιλαμβάνουν τις κάτωθι εργασίες:  Σύνταξη χάρτη περιοχής των εκτάσεων κλ. 1:20.000 με πλήρη καταγραφή των στοιχείων της περιοχής  Τεχνική περιγραφή των προτεινόμενων έργων αντιπυρικής προστασίας  Σχέδια έργων κλ. 1:100  Πίνακας προμέτρησης των εργασιών  Τιμολόγιο εργασιών",
+      "precision_note": "Περιοχή μελέτης, όχι εκτελεσμένα κατασκευαστικά έργα. Το Google αποτέλεσμα χρειάζεται να αναγνωρίζει το περιαστικό δάσος/λόφο στην Τ.Κ. Καλαμπάκας. Υπάρχουν άλλα ομώνυμα τοπωνύμια στην Π.Ε. Τρικάλων και ομώνυμα ιερά έξω από την Καλαμπάκα. Να μη χρησιμοποιηθεί μη τεκμηριωμένος ναός ή γενικό κέντρο πόλης.",
+      "source_ref": "26PROC018511510",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018511510",
+      "geocode_aliases": [
+        "Άλσος Προφήτη Ηλία Καλαμπάκας, Τρίκαλα, Ελλάδα",
+        "Λόφος Προφήτη Ηλία, Καλαμπάκα, Τρίκαλα, Ελλάδα"
+      ],
+      "reference_number": "26SYMV018579344",
+      "review_status": "unresolved",
+      "reason": "Οι Google παραλλαγές για το περιαστικό δάσος Προφήτη Ηλία επέστρεψαν ομώνυμες οδούς, άσχετο λόφο ή γενικό δήμο. Δεν τεκμηριώνεται η συγκεκριμένη θέση του δάσους.",
+      "initial_google_query": "Προφήτης Ηλίας, Καλαμπάκα, Τρίκαλα, Ελλάδα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 39.7164513,
+        "lon": 21.6925774,
+        "formatted_address": "Προφήτη Ηλία, Kalampaka 422 00, Greece",
+        "place_id": "ChIJ8-37oQsFWRMRAbRY0o_uGtY",
+        "country": "GR",
+        "partial_match": false,
+        "location_type": "GEOMETRIC_CENTER",
+        "types": [
+          "route"
+        ],
+        "result_count": 1
+      }
+    },
+    {
+      "point_name_raw": "Παναγία",
+      "point_name_canonical": "Παναγία, Λαυρεωτική, Ανατολική Αττική, Ελλάδα",
+      "work": "Κατασκευή αντιδιαβρωτικών και αντιπλημμυρικών έργων σε καμένες εκτάσεις θερινών πυρκαγιών 2025, Τμήμα 2",
+      "page": 16,
+      "pages": [
+        16
+      ],
+      "excerpt": "5. τις Δ.Κ. Νέας Αρτάκης, Τ.Κ. Αφρατίου και Τ.Κ. Τριάδος, Τ.Κ. Πισσώνα για το Δασαρχείο Χαλκίδας 6. η Σαρωνίδα, η Ανάβυσσος, η Παλαιά Φώκαια, το Θυμάρι, η Παναγία, ο Χάρακας, η Τριανταφυλλιά, τα Λεγρενά, τα Μεγάλα Πεύκα, το Αγίασμα, η Συντερίνα, το Δημολάκι, το Χάρβαλο, ο Άγιος Κωνσταντίνος, το Μανούτσο και τη Μαλιαστέκα για το Δασαρχείο Λαυρίου",
+      "precision_note": "Ονομασμένη περιοχή χωροθέτησης στη συνδεδεμένη Πρόσκληση, Τμήμα 2. Geocoding κοινότητας/οικισμού ως σημείο αναφοράς, όχι ακριβής θέση φράγματος, ρέματος ή περίγραμμα καμένης έκτασης. Η Παναγία είναι αμφίσημο τοπωνύμιο: δεν βρέθηκε δημόσια τεκμηρίωση που να την ταυτοποιεί περαιτέρω. Να μην γίνει δεκτό αποτέλεσμα εκτός νότιας Ανατολικής Αττικής ή γενικό κέντρο δήμου.",
+      "source_ref": "26PROC018350831",
+      "source_url": "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice/attachment/26PROC018350831",
+      "needs_location_review": true,
+      "reference_number": "26SYMV018489793",
+      "review_status": "unresolved",
+      "reason": "Το Google δεν αναγνωρίζει την κατονομασμένη περιοχή Παναγία και επιστρέφει γενικό δήμο/άσχετο ναό.",
+      "initial_google_query": "Παναγία, Λαυρεωτική, Ανατολική Αττική, Ελλάδα, Ελλάδα",
+      "initial_google_result": {
+        "lat": 37.7497382,
+        "lon": 24.025014,
+        "formatted_address": "Lavreotiki, Greece",
+        "place_id": "ChIJv3DotRfzoRQRfisuZr1HYWI",
+        "country": "GR",
+        "partial_match": true,
+        "location_type": "APPROXIMATE",
+        "types": [
+          "administrative_area_level_4",
+          "political"
+        ],
+        "result_count": 2
+      }
+    }
+  ],
+  "missing_contracts_audited": [
+    "26SYMV019816586",
+    "26SYMV019801470",
+    "26SYMV019774910",
+    "26SYMV019707106",
+    "26SYMV019706870",
+    "26SYMV019706675",
+    "26SYMV019706552",
+    "26SYMV019706205",
+    "26SYMV019705816",
+    "26SYMV019704728",
+    "26SYMV019704624",
+    "26SYMV019704516",
+    "26SYMV019704397",
+    "26SYMV019704271",
+    "26SYMV019704142",
+    "26SYMV019704033",
+    "26SYMV019703912",
+    "26SYMV019703746",
+    "26SYMV019700814",
+    "26SYMV019700807",
+    "26SYMV019700801",
+    "26SYMV019700779",
+    "26SYMV019488828",
+    "26SYMV019233146",
+    "26SYMV018579344",
+    "26SYMV018489793",
+    "26SYMV018470300"
+  ],
+  "geocoding_routine": "src.locate_work.Document.geolocatePoint",
+  "precision_policy": "Google points represent documented localities/forests/mountain areas; they do not represent work footprints or exact forest compartments. Unrelated matches are rejected.",
+  "existing_geocoded_contracts_preserved": true,
+  "ministry_organization_keys": [
+    "100015996",
+    "org_d8e1808950646c30b21d"
+  ],
+  "after": {
+    "verified_at_utc": "2026-10-09T18:42:17.778913+00:00",
+    "signed_current_contracts": 67,
+    "geocoded_current_contracts": 50,
+    "unresolved_current_contracts": 17,
+    "new_geocoded_contracts": 10,
+    "new_work_points": 40,
+    "total_dashboard_work_points": 80,
+    "existing_work_rows_verified_unchanged": 40,
+    "inserted_rows_verified": 40,
+    "contracts_with_partial_new_location_coverage": [
+      "26SYMV018489793",
+      "26SYMV018579344"
+    ]
+  }
+}

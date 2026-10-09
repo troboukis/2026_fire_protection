@@ -50,6 +50,7 @@ load_dotenv()
 _kimdis_module = runpy.run_path(str(REPO / "src" / "fetch_kimdis_procurements.py"))
 DEFAULT_CPVS: dict[str, str] = _kimdis_module["DEFAULT_CPVS"]
 DEFAULT_EXCLUDE_KEYWORDS: list[str] = _kimdis_module["DEFAULT_EXCLUDE_KEYWORDS"]
+ROOT_EXCLUDE_TOKEN_RULES = _kimdis_module["ROOT_EXCLUDE_TOKEN_RULES"]
 
 RAW_CSV = REPO / "data" / "raw_procurements.csv"
 DIAV_CSV = REPO / "data" / "2026_diavgeia.csv"
@@ -1737,6 +1738,9 @@ def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -
         return f"REGEXP_REPLACE({base}, '[^[:alnum:]]+', ' ', 'g')"
 
     def _keyword_regex(tokens: tuple[str, ...]) -> str:
+        if tokens in ROOT_EXCLUDE_TOKEN_RULES:
+            gap = r"[[:alnum:]]*([[:space:]]+[[:alnum:]]+){0,2}[[:space:]]+"
+            return r"(^|[[:space:]])" + gap.join(tokens) + r"[[:alnum:]]*"
         return r"(^|[[:space:]])" + r"[[:alnum:]]*[[:space:]]+".join(tokens) + r"[[:alnum:]]*"
 
     columns = ("title", "short_descriptions")

@@ -1,0 +1,240 @@
+{
+  "verified_at_utc": "2026-10-09T19:40:33.884476+00:00",
+  "independent_connection": true,
+  "all_current_contract_count": 67,
+  "all_current_work_records": 207,
+  "all_current_map_points": 196,
+  "all_current_geocoded_contracts": 47,
+  "all_current_contracts_without_geocoded_point": [
+    "26SYMV019700756",
+    "26SYMV019700807",
+    "26SYMV019700814",
+    "26SYMV019703746",
+    "26SYMV019703912",
+    "26SYMV019704033",
+    "26SYMV019704142",
+    "26SYMV019704271",
+    "26SYMV019704397",
+    "26SYMV019704516",
+    "26SYMV019704624",
+    "26SYMV019704728",
+    "26SYMV019705816",
+    "26SYMV019706205",
+    "26SYMV019706870",
+    "26SYMV019707002",
+    "26SYMV019707106",
+    "26SYMV019707219",
+    "26SYMV019774910",
+    "26SYMV019816586"
+  ],
+  "initial_40_work_records": 167,
+  "initial_40_geocoded_records": 156,
+  "initial_40_geocoded_contracts": 37,
+  "initial_40_multi_location_contracts": 28,
+  "initial_40_multi_geocoded_contracts": 27,
+  "unresolved_named_location_records": 11,
+  "protected_previous_batch_unchanged": true,
+  "no_deletions": true,
+  "per_contract": [
+    {
+      "reference_number": "26SYMV018599431",
+      "location_records": 19,
+      "geocoded_records": 19
+    },
+    {
+      "reference_number": "26SYMV018599446",
+      "location_records": 6,
+      "geocoded_records": 6
+    },
+    {
+      "reference_number": "26SYMV018638816",
+      "location_records": 3,
+      "geocoded_records": 3
+    },
+    {
+      "reference_number": "26SYMV018639041",
+      "location_records": 11,
+      "geocoded_records": 11
+    },
+    {
+      "reference_number": "26SYMV018639407",
+      "location_records": 8,
+      "geocoded_records": 8
+    },
+    {
+      "reference_number": "26SYMV018642772",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV018661963",
+      "location_records": 9,
+      "geocoded_records": 9
+    },
+    {
+      "reference_number": "26SYMV018661994",
+      "location_records": 12,
+      "geocoded_records": 12
+    },
+    {
+      "reference_number": "26SYMV018670757",
+      "location_records": 7,
+      "geocoded_records": 7
+    },
+    {
+      "reference_number": "26SYMV018680228",
+      "location_records": 8,
+      "geocoded_records": 8
+    },
+    {
+      "reference_number": "26SYMV018689005",
+      "location_records": 5,
+      "geocoded_records": 4
+    },
+    {
+      "reference_number": "26SYMV018718889",
+      "location_records": 7,
+      "geocoded_records": 7
+    },
+    {
+      "reference_number": "26SYMV018725481",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV018739467",
+      "location_records": 3,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV018755812",
+      "location_records": 8,
+      "geocoded_records": 8
+    },
+    {
+      "reference_number": "26SYMV018756094",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV018779399",
+      "location_records": 5,
+      "geocoded_records": 5
+    },
+    {
+      "reference_number": "26SYMV019157406",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019200696",
+      "location_records": 3,
+      "geocoded_records": 3
+    },
+    {
+      "reference_number": "26SYMV019248773",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019250156",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019300735",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019323204",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019348528",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019348722",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019387652",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019423668",
+      "location_records": 9,
+      "geocoded_records": 4
+    },
+    {
+      "reference_number": "26SYMV019471687",
+      "location_records": 9,
+      "geocoded_records": 9
+    },
+    {
+      "reference_number": "26SYMV019474394",
+      "location_records": 3,
+      "geocoded_records": 3
+    },
+    {
+      "reference_number": "26SYMV019475058",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019525572",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019531529",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019598687",
+      "location_records": 2,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019612745",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019700756",
+      "location_records": 1,
+      "geocoded_records": 0
+    },
+    {
+      "reference_number": "26SYMV019707002",
+      "location_records": 1,
+      "geocoded_records": 0
+    },
+    {
+      "reference_number": "26SYMV019707219",
+      "location_records": 1,
+      "geocoded_records": 0
+    },
+    {
+      "reference_number": "26SYMV019787087",
+      "location_records": 1,
+      "geocoded_records": 1
+    },
+    {
+      "reference_number": "26SYMV019816239",
+      "location_records": 2,
+      "geocoded_records": 2
+    },
+    {
+      "reference_number": "26SYMV019848451",
+      "location_records": 1,
+      "geocoded_records": 1
+    }
+  ]
+}

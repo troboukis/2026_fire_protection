@@ -31,7 +31,7 @@ class Document:
     BASE_URL = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata"
     MAX_RETRIES = 8
     RETRY_SLEEP_SECONDS = 5
-    MAX_PAGES = 10
+    MAX_PAGES: int | None = None
 
     def __init__(self, ref_number: str, db_path: str | None = None, debug: bool = True):
         self.ref_number = ref_number.strip().upper()
@@ -140,7 +140,7 @@ class Document:
             self.getDocument()
     
         pdf = PDF(io.BytesIO(self.doc))
-        page_limit = min(len(pdf.pages), self.MAX_PAGES)
+        page_limit = len(pdf.pages) if self.MAX_PAGES is None else min(len(pdf.pages), self.MAX_PAGES)
         native_pages = {}
         ocr_needed = []
     
@@ -152,7 +152,8 @@ class Document:
     
             text = text.strip() if text else ""
     
-            if text:
+            # Scanned pages can expose only the KIMDIS stamp as native text.
+            if len(text) >= 100:
                 native_pages[i] = text
             else:
                 ocr_needed.append(i)
@@ -503,6 +504,8 @@ class Document:
        - δήμο
        - πόλη
        - περιφερειακή ενότητα
+       - δάσος ή δασικό σύμπλεγμα
+       - αναγνωριστικό δασικής συστάδας ή διαδρομής, όταν διακρίνει διαφορετική θέση εργασιών
     
     3. Στο point_name_canonical αφαίρεσε μη γεωγραφικά στοιχεία όπως:
        - "στις εγκαταστάσεις"
@@ -516,9 +519,11 @@ class Document:
     4. Αν το ίδιο σημείο εμφανίζεται με μικρές διαφορές διατύπωσης μέσα στο ίδιο chunk,
        επέστρεψε μόνο μία εγγραφή.
     
-    5. Αν υπάρχουν πολλές διευθύνσεις που ανήκουν στο ίδιο εύρημα,
-       κράτησέ τες μαζί στο ίδιο point_name_canonical και μην τις σπας σε πολλές εγγραφές,
-       εκτός αν το κείμενο περιγράφει σαφώς διαφορετικές εργασίες σε διαφορετικά σημεία.
+    5. Επέστρεψε ξεχωριστή εγγραφή για κάθε διαφορετική τοποθεσία εργασιών,
+       ακόμη και όταν η ίδια εργασία εκτελείται σε πολλές περιοχές.
+       Μην ενώνεις διαφορετικούς δήμους, οικισμούς, δάση ή διευθύνσεις σε ένα
+       point_name_canonical. Κράτησε μαζί μόνο τους γεωγραφικούς προσδιορισμούς
+       της ίδιας τοποθεσίας, όπως οικισμό, δήμο και περιφερειακή ενότητα.
     
     6. work:
        Σύντομη και σαφής περιγραφή της συγκεκριμένης εργασίας πυροπροστασίας.
@@ -542,9 +547,12 @@ class Document:
     5. Μην συμπεριλάβεις γενικές περιγραφές έργου χωρίς σαφή σύνδεση με συγκεκριμένο σημείο.
     6. Αν δεν υπάρχει σχετικό εύρημα με σαφές σημείο, επέστρεψε items: [].
     7. Το point_name_canonical πρέπει να γράφεται πάντα σε ενιαία μορφή.
-    8. Αν το ίδιο εύρημα περιλαμβάνει περισσότερους από έναν αριθμούς της ίδιας οδού, γράψε την οδό μία φορά και μετά όλους τους αριθμούς χωρισμένους με κόμμα.
-    9. Παράδειγμα σωστής μορφής: "Ασκληπιού 22, 24, Κρυονέρι, Αττική".
-    10. Μην χρησιμοποιείς εναλλάξ σύμβολα όπως "&", ";", "/" ή τη λέξη "και" για να ενώσεις διευθύνσεις στο point_name_canonical. Χρησιμοποίησε μόνο κόμμα.
+    8. Αν οι εργασίες αφορούν διαφορετικά ακίνητα ή διευθύνσεις της ίδιας οδού,
+       επέστρεψε ξεχωριστή εγγραφή ανά ακίνητο ή διεύθυνση.
+    9. Παράδειγμα: "Ασκληπιού 22, Κρυονέρι, Αττική" και
+       "Ασκληπιού 24, Κρυονέρι, Αττική" είναι δύο ξεχωριστές τοποθεσίες.
+    10. Χρησιμοποίησε κόμματα για τους γεωγραφικούς προσδιορισμούς της ίδιας
+       τοποθεσίας, όχι για τη συνένωση διαφορετικών τοποθεσιών εργασιών.
     11. Αν το ίδιο σημείο εμφανίζεται επανειλημμένα στο ίδιο ή σε διαφορετικά αποσπάσματα, χρησιμοποίησε ακριβώς την ίδια point_name_canonical μορφή κάθε φορά.
     12. Το work πρέπει να είναι σύντομη κανονικοποιημένη περιγραφή της εργασίας και όχι πλήρης αναλυτική πρόταση.
     13. Για όμοιες αναφορές χρησιμοποίησε σταθερές γενικές μορφές work όπως:
@@ -552,8 +560,17 @@ class Document:
     - "κλάδεμα"
     - "καθαρισμός οικοπέδου"
     - "διάνοιξη αντιπυρικής ζώνης"
-    14. Μην επιστρέφεις διαφορετικές εγγραφές μόνο και μόνο επειδή αλλάζει ελαφρά η διατύπωση του ίδιου σημείου ή της ίδιας εργασίας.
+    14. Μην επιστρέφεις διαφορετικές εγγραφές μόνο επειδή αλλάζει ελαφρά
+       η διατύπωση του ίδιου σημείου. Η ίδια εργασία σε διαφορετικά σημεία
+       πρέπει να παραμένει σε ξεχωριστές εγγραφές.
     15. Αν το ίδιο σημείο και η ίδια εργασία επαναλαμβάνονται, επέστρεψε μία μόνο εγγραφή ανά chunk.
+    16. Μια σύνθετη ονομασία ενός δάσους ή δασικού συμπλέγματος δεν σημαίνει
+       ότι η συγκεκριμένη συστάδα βρίσκεται σε όλους τους ομώνυμους οικισμούς.
+       Χώρισε τοποθεσίες μόνο όταν το κείμενο τις ορίζει ως τόπους εργασιών.
+       Για διαφορετικές συστάδες ή διαδρομές στο ίδιο δάσος, κράτησε το
+       αναγνωριστικό τους στο point_name_canonical ώστε να παραμείνουν χωριστές.
+    17. Μην εξάγεις διευθύνσεις αναδόχων, υπογραφής ή γραφείων υπηρεσιών
+       εκτός αν προσδιορίζονται ρητά ως τόποι των εργασιών.
     
     {source_context}
     
@@ -691,8 +708,7 @@ class Document:
                     point_name_canonical
                     and self._normalize_str(row.get("point_name_canonical")) == point_name_canonical
                 )
-                same_work = self._work_sets_overlap(row.get("work"), work)
-                if same_canonical or same_work:
+                if same_canonical:
                     existing = row
                     break
 
@@ -704,7 +720,7 @@ class Document:
                     "lat": self._normalize_coord(item.get("lat")),
                     "lon": self._normalize_coord(item.get("lon")),
                     "page": item.get("page"),
-                    "pages": [item.get("page")],
+                    "pages": list(item.get("pages") or []) + [item.get("page")],
                     "excerpt": item.get("excerpt"),
                     "formatted_address": self._normalize_str(item.get("formatted_address")),
                     "place_id": self._normalize_str(item.get("place_id")),
@@ -721,7 +737,12 @@ class Document:
         for idx, item in enumerate(findings):
             lat = self._normalize_coord(item.get("lat"))
             lon = self._normalize_coord(item.get("lon"))
-            key = ("coords", round(lat, 6), round(lon, 6)) if lat is not None and lon is not None else ("row", idx)
+            canonical = self._normalize_str(item.get("point_name_canonical"))
+            key = (
+                ("coords", round(lat, 6), round(lon, 6), canonical)
+                if lat is not None and lon is not None and canonical
+                else ("row", idx)
+            )
 
             if key not in grouped:
                 grouped[key] = {
@@ -731,7 +752,7 @@ class Document:
                     "lat": lat,
                     "lon": lon,
                     "page": item.get("page"),
-                    "pages": [item.get("page")],
+                    "pages": list(item.get("pages") or []) + [item.get("page")],
                     "excerpt": item.get("excerpt"),
                     "formatted_address": self._normalize_str(item.get("formatted_address")),
                     "place_id": self._normalize_str(item.get("place_id")),
@@ -746,8 +767,9 @@ class Document:
         point_name_canonical = self._normalize_str(item.get("point_name_canonical"))
         place_id = self._normalize_str(item.get("place_id"))
 
-        if item.get("page") not in existing["pages"]:
-            existing["pages"].append(item.get("page"))
+        for page in list(item.get("pages") or []) + [item.get("page")]:
+            if page not in existing["pages"]:
+                existing["pages"].append(page)
 
         if len(item.get("point_name_raw", "")) > len(existing.get("point_name_raw", "")):
             existing["point_name_raw"] = item.get("point_name_raw")

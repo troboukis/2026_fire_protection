@@ -36,6 +36,9 @@ app/.env.production.local
 fire-protection.vpp*
 data/raw_items_backup.json
 backupDB/
+# Local classification logs, batch snapshots, and manual review exports
+/logs/prevention-*
+/exports/
 antinero_west_attica/
 
 # Mapping review artifacts (local/manual workflow)

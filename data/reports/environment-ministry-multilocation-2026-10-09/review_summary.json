@@ -1,0 +1,16 @@
+{
+  "initial_contracts_reviewed": 40,
+  "initial_points": 40,
+  "known_location_records": 167,
+  "accepted_geocoded_records": 156,
+  "unresolved_named_locations": 11,
+  "contracts_with_multiple_recorded_locations": 28,
+  "contracts_with_multiple_geocoded_locations": 27,
+  "contracts_with_no_accepted_location": [
+    "26SYMV019700756",
+    "26SYMV019707002",
+    "26SYMV019707219"
+  ],
+  "municipality_polygon_checks": 106,
+  "limitations": "Municipality/regional points and named settlement/road anchors are representative; missing technical maps prevent claiming all individual work interventions are mapped."
+}

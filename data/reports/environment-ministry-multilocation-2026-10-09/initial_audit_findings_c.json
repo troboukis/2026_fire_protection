@@ -1,0 +1,104 @@
+{
+  "26SYMV019471687": {
+    "classification": "multiple_explicit_municipalities",
+    "expected_areas": 9,
+    "known_existing_problem": "Υπάρχει μόνο ένα σημείο Σάμου για τέσσερις δασικές υπηρεσίες και εννέα ρητά αναφερόμενους δήμους.",
+    "sources": [
+      "26SYMV018607958",
+      "26PROC018445264"
+    ],
+    "limitation": "Τεύχος3 περιέχει συγκεκριμένες περιοχές αλλά δεν περιλαμβάνεται στο PDF που επιστρέφει η πρόσκληση."
+  },
+  "26SYMV019474394": {
+    "classification": "multiple_explicit_municipal_units",
+    "expected_areas": 3,
+    "sources": [
+      "26SYMV019474394",
+      "26PROC019366544"
+    ],
+    "limitation": "Δεν διατίθενται ονομασίες επιμέρους δασικών δρόμων. Το Πύργος είναι μόνο μία από τρεις ενότητες."
+  },
+  "26SYMV019475058": {
+    "classification": "unspecified_sites_in_explicit_region",
+    "expected_areas": null,
+    "sources": [
+      "26SYMV019475058",
+      "26PROC019428366"
+    ],
+    "limitation": "Δεν τεκμηριώνεται ότι είναι πραγματικό singleton. Χρειάζεται εγκεκριμένη τεχνική μελέτη για πλήρη καταγραφή θέσεων."
+  },
+  "26SYMV019525572": {
+    "classification": "unspecified_sites_in_explicit_region",
+    "known_existing_problem": "Αποτέλεσμα Google Π.Μπακογιάννη, Chania73134 είναι αστικός δρόμος άσχετος με την τεκμηριωμένη έκταση. Η έδρα αναδόχου Βαρύπετρο δεν είναι θέση εργασιών.",
+    "expected_areas": null,
+    "missing_source": "Τεχνική έκθεση που εγκρίθηκε 288561/16-07-2026, ΑΔΑ ΨΥΕΗ4653Π8-Μ0Ζ."
+  },
+  "26SYMV019531529": {
+    "classification": "true_single_property",
+    "expected_areas": 1,
+    "limitation": "Γεωκωδικοποίηση οικισμού δεν ταυτίζεται με ακίνητο ΠΕΟΝ. Το ακίνητο είναι το ίδιο ΚΑΕΚ051015309025 που εξετάστηκε στην ομάδα27χωρίςσυντεταγμένες."
+  },
+  "26SYMV019598687": {
+    "classification": "multiple_explicit_forests",
+    "expected_areas": 2,
+    "known_existing_problem": "Το υπάρχον σημείο Dasos, Chaidari12462 στην Αθήνα βρίσκεται στο λάθος νησί/περιφέρεια.",
+    "sources": [
+      "26SYMV019598687",
+      "26PROC019512654"
+    ],
+    "support_url": "https://www.mytilene.gr/2025/06/10/apagorefsi-kykloforias-se-dasi-logo-y/"
+  },
+  "26SYMV019612745": {
+    "classification": "multiple_explicit_sites",
+    "expected_areas": 2,
+    "known_existing_problem": "Το Ισιαδάκι δεν καλύπτει το δεύτερο αναδασωμένο αλσύλλιο Ζηλευτού."
+  },
+  "26SYMV019700756": {
+    "classification": "true_single_compartment_unlocated",
+    "expected_areas": 1,
+    "known_existing_problem": "Υπάρχον αποτέλεσμα Google σε αυθαίρετα επιλεγμένο χωριό δεν τεκμηριώνει τη συγκεκριμένη συστάδα.",
+    "limitation": "Χρειάζεται διαχειριστικός χάρτης ή αναγνωρίσιμο Google αποτέλεσμα για το σύνολο του δασικού συμπλέγματος."
+  },
+  "26SYMV019707002": {
+    "classification": "true_single_compartment_unlocated",
+    "expected_areas": 1,
+    "known_existing_problem": "Υπάρχον αποτέλεσμα Google σε αυθαίρετα επιλεγμένο χωριό δεν τεκμηριώνει τη συγκεκριμένη συστάδα.",
+    "limitation": "Χρειάζεται διαχειριστικός χάρτης ή αναγνωρίσιμο Google αποτέλεσμα για το σύνολο του δασικού συμπλέγματος."
+  },
+  "26SYMV019707219": {
+    "classification": "true_single_compartment_unlocated",
+    "expected_areas": 1,
+    "known_existing_problem": "Υπάρχον αποτέλεσμα Google σε αυθαίρετα επιλεγμένο χωριό δεν τεκμηριώνει τη συγκεκριμένη συστάδα.",
+    "limitation": "Χρειάζεται διαχειριστικός χάρτης ή αναγνωρίσιμο Google αποτέλεσμα για το σύνολο του δασικού συμπλέγματος."
+  },
+  "26SYMV019787087": {
+    "classification": "event_dependent_contract_coverage",
+    "expected_areas": null,
+    "explicit_coverage_areas": 1,
+    "sources": [
+      "26SYMV019787087",
+      "26PROC019661008"
+    ],
+    "limitation": "Δεν επιβεβαιώνονται πραγματικές θέσεις εκτέλεσης από σύμβαση/πρόσκληση. Απαιτούνται μεταγενέστερες Εντολές Ανάθεσης· άγνωστες όμορες ενότητες δεν γεωεντοπίζονται."
+  },
+  "26SYMV019816239": {
+    "classification": "event_dependent_contract_coverage",
+    "expected_areas": null,
+    "explicit_coverage_areas": 2,
+    "sources": [
+      "26SYMV019816239",
+      "26PROC019661015"
+    ],
+    "limitation": "Δεν επιβεβαιώνονται πραγματικές θέσεις εκτέλεσης από σύμβαση/πρόσκληση. Απαιτούνται μεταγενέστερες Εντολές Ανάθεσης· άγνωστες όμορες ενότητες δεν γεωεντοπίζονται."
+  },
+  "26SYMV019848451": {
+    "classification": "named_road_unlocated",
+    "expected_areas": null,
+    "known_existing_problem": "Google Taxiarchou Markopoulou41, Iraklio71201 είναι αστική διεύθυνση άσχετη με δασικούς δρόμους. Βαχός Βιάννου είναι μόνο έδρα του αναδόχου.",
+    "sources": [
+      "26SYMV019848451",
+      "26PROC019756154"
+    ],
+    "limitation": "Πρωτολιτσά έχει ανεξάρτητη γεωγραφική μαρτυρία ως οροπέδιο πάνω από Κάτω/Άνω Σύμη, αλλά δεν τεκμηριώθηκε ακόμη ακριβής διαδρομή Κακός Λάκκος–Πρωτολιτσά."
+  }
+}

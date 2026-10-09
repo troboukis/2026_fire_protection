@@ -1,0 +1,58 @@
+{
+  "26SYMV018755812": {
+    "status": "expanded",
+    "locations": 8,
+    "existing_problem": "One combined name for all four Forest Directorates was geocoded to Heraklion city; actual contract expressly names eight municipalities across four regional units.",
+    "sources_checked": [
+      "26PROC018474617"
+    ]
+  },
+  "26SYMV018756094": {
+    "status": "expanded",
+    "locations": 2,
+    "existing_problem": "Combined two municipalities was geocoded solely to Zaharo Municipality; missing Andritsaina–Krestena.",
+    "sources_checked": [
+      "26PROC018521122"
+    ]
+  },
+  "26SYMV018779399": {
+    "status": "expanded",
+    "locations": 5,
+    "existing_problem": "Combined three service jurisdictions geocoded only to Pieria regional area, suppressing Pella/Chalkidiki and independent municipalities.",
+    "sources_checked": [
+      "26PROC018519540"
+    ]
+  },
+  "26SYMV019157406": {
+    "status": "singleton_delivery",
+    "locations": 1,
+    "existing_problem": "Office is explicitly contracted delivery point, so retain as supply/service location and correct work description if mislabeled as field prevention works.",
+    "sources_checked": [
+      "26PROC019037744"
+    ]
+  },
+  "26SYMV019248773": {
+    "status": "expanded",
+    "locations": 2,
+    "existing_problem": "Initial record combined two distinct municipal units into one geocode.",
+    "sources_checked": [
+      "26PROC019166558"
+    ]
+  },
+  "26SYMV019250156": {
+    "status": "expanded",
+    "locations": 2,
+    "existing_problem": "Initial record combined two distinct municipal units into one geocode.",
+    "sources_checked": [
+      "26PROC019166352"
+    ]
+  },
+  "26SYMV019387652": {
+    "status": "singleton_forest",
+    "locations": 1,
+    "existing_problem": "Existing coordinates represent Thesprotiko settlement, not demonstrated forest-work geometry; retain only with explicit broad-area precision.",
+    "sources_checked": [
+      "26PROC019304227"
+    ]
+  }
+}
