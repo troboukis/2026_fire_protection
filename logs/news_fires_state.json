@@ -1,15 +1,16 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/k/sunday-edition/564510844/ta-yfasmatadika-toy-kentroy-o-goyini-kai-o-arvo-pert-sto-periodiko-k-tin-kyriaki-11-10-me-tin-kathimerini/",
-      "title": "Τα υφασματάδικα του κέντρου, ο Γουίνι και ο Άρβο Περτ – Στο περιοδικό «Κ», την Κυριακή 11/10 με την «Καθημερινή»",
-      "normalized_title": "ΤΑ ΥΦΑΣΜΑΤΑΔΙΚΑ ΤΟΥ ΚΕΝΤΡΟΥ, Ο ΓΟΥΙΝΙ ΚΑΙ Ο ΑΡΒΟ ΠΕΡΤ – ΣΤΟ ΠΕΡΙΟΔΙΚΟ «Κ», ΤΗΝ ΚΥΡΙΑΚΗ 11/10 ΜΕ ΤΗΝ «ΚΑΘΗΜΕΡΙΝΗ»",
+      "url": "https://www.kathimerini.gr/world/564510850/o-chitler-moysolini-exelegi-dimarchos-peroyvianis-polis/",
+      "title": "Ο… Χίτλερ Μουσολίνι εξελέγη δήμαρχος περουβιανής πόλης",
+      "normalized_title": "Ο… ΧΙΤΛΕΡ ΜΟΥΣΟΛΙΝΙ ΕΞΕΛΕΓΗ ΔΗΜΑΡΧΟΣ ΠΕΡΟΥΒΙΑΝΗΣ ΠΟΛΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/k/sunday-edition/564510844/ta-yfasmatadika-toy-kentroy-o-goyini-kai-o-arvo-pert-sto-periodiko-k-tin-kyriaki-11-10-me-tin-kathimerini/",
-        "https://www.kathimerini.gr/politics/564510838/nea-dimokratia-o-fotografos-dimitris-skoylos-tha-einai-ypopsifios-voyleytis-sti-v-peiraios/",
-        "https://www.kathimerini.gr/world/564510496/saoydiki-aravia-treis-nekroi-apo-epitheseis-sto-aerodromio-toy-riant-katastrafike-aeroskafos/"
+        "https://www.kathimerini.gr/world/564510850/o-chitler-moysolini-exelegi-dimarchos-peroyvianis-polis/",
+        "https://www.kathimerini.gr/world/564510913/nyt-i-gallia-odeyei-pros-pithani-krisi-chreoys-proeidopoiisi-gia-olokliro-ton-kosmo/",
+        "https://www.kathimerini.gr/economy/international/564510880/i-e-e-chtizei-tin-apexartisi-tis-apo-tin-kina-tria-nea-stratigika-erga-stin-ellada/",
+        "https://www.kathimerini.gr/society/564510874/ekrixi-sti-motor-oil-stoys-agioys-theodoroys-pente-traymaties-oi-dyo-sovara/"
       ],
-      "seen_at_utc": "2026-10-09T09:30:19.168027+00:00"
+      "seen_at_utc": "2026-10-09T09:51:15.595415+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1262,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1892216/upothesi-mazonaki-diapseudei-oti-ehei-logariasmo-se-trapeza-sto-exoteriko-o-theodoropoulos/?utm_source=rss",
-      "title": "Υπόθεση Μαζωνάκη: Διαψεύδει ότι έχει λογαριασμό σε τράπεζα στο εξωτερικό ο Θεοδωρόπουλος",
-      "normalized_title": "ΥΠΟΘΕΣΗ ΜΑΖΩΝΑΚΗ: ΔΙΑΨΕΥΔΕΙ ΟΤΙ ΕΧΕΙ ΛΟΓΑΡΙΑΣΜΟ ΣΕ ΤΡΑΠΕΖΑ ΣΤΟ ΕΞΩΤΕΡΙΚΟ Ο ΘΕΟΔΩΡΟΠΟΥΛΟΣ",
+      "url": "https://www.protothema.gr/greece/article/1892220/ekrixi-stis-egatastaseis-tis-motor-oil-stous-agious-theodorous/?utm_source=rss",
+      "title": "Έκρηξη στις εγκαταστάσεις της Motor Oil στους Αγίους Θεοδώρους",
+      "normalized_title": "ΕΚΡΗΞΗ ΣΤΙΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΤΗΣ MOTOR OIL ΣΤΟΥΣ ΑΓΙΟΥΣ ΘΕΟΔΩΡΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1892216/upothesi-mazonaki-diapseudei-oti-ehei-logariasmo-se-trapeza-sto-exoteriko-o-theodoropoulos/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1892220/ekrixi-stis-egatastaseis-tis-motor-oil-stous-agious-theodorous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-09T09:30:19.168173+00:00"
+      "seen_at_utc": "2026-10-09T09:51:15.595486+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1484791/ypopsifios-me-ti-nd-sti-v%ce%84-peiraios-o-dimitris-skoylos/",
-      "title": "Υποψήφιος με τη ΝΔ στη Β΄ Πειραιώς ο Δημήτρης Σκουλός",
-      "normalized_title": "ΥΠΟΨΗΦΙΟΣ ΜΕ ΤΗ ΝΔ ΣΤΗ Β΄ ΠΕΙΡΑΙΩΣ Ο ΔΗΜΗΤΡΗΣ ΣΚΟΥΛΟΣ",
+      "url": "https://www.efsyn.gr/ellada/1484821/ekrixi-stis-egkatastaseis-tis-motor-oil-stoys-agioys-theodoroys-plirofories-gia-traymaties/",
+      "title": "Έκρηξη στις εγκαταστάσεις της Motor Oil στους Αγίους Θεοδώρους – Πληροφορίες για τραυματίες",
+      "normalized_title": "ΕΚΡΗΞΗ ΣΤΙΣ ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΤΗΣ MOTOR OIL ΣΤΟΥΣ ΑΓΙΟΥΣ ΘΕΟΔΩΡΟΥΣ – ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΡΑΥΜΑΤΙΕΣ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1484791/ypopsifios-me-ti-nd-sti-v%ce%84-peiraios-o-dimitris-skoylos/",
-        "https://www.efsyn.gr/ellada/1484780/paremvasi-tis-aade-gia-tin-kontra-vissi-karvela-fyllo-kai-ftero-i-synaylia-sto-oaka-kai-to-daneio-ton-500-000-eyro/"
+        "https://www.efsyn.gr/ellada/1484821/ekrixi-stis-egkatastaseis-tis-motor-oil-stoys-agioys-theodoroys-plirofories-gia-traymaties/",
+        "https://www.efsyn.gr/oikonomia/1484800/plithorismos-sto-5-skarfalose-ton-septemvrio-megales-ayxiseis-se-fysiko-aerio-kai-petrelaio-thermansis/",
+        "https://www.efsyn.gr/ellada/1484636/volos-nea-adeia-gia-tin-kaysi-skoypidion/",
+        "https://www.efsyn.gr/kosmos/1484692/nees-apokalypseis-gia-gkilfoil-soy-edosa-300-000-thelo-apotelesmata-eggrafo-fotia-toy-kogkresoy/",
+        "https://www.efsyn.gr/ellada/1484627/i-ellada-plironei-4-900-eyro-gia-ena-podilato/",
+        "https://www.efsyn.gr/athlitismos/1484620/fifa-enas-ypopsifios-apo-to-poythena/",
+        "https://www.efsyn.gr/politiki/1484786/tahiaos-se-iliopoylo-gia-tis-zimies-stin-kypseli-tin-eythyni-tin-ehei-i-etaireia-ohi-to-dimosio/"
       ],
-      "seen_at_utc": "2026-10-09T09:30:19.168128+00:00"
+      "seen_at_utc": "2026-10-09T09:51:15.595476+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/09/politics/aftodioikisi/ekpaideysi-80-ekpaideytikon-me-prosomoiosi-seismou-se-sxoliko-perivallon/",
-      "title": "Εκπαίδευση 80 εκπαιδευτικών με προσομοίωση σεισμού σε σχολικό περιβάλλον",
-      "normalized_title": "ΕΚΠΑΙΔΕΥΣΗ 80 ΕΚΠΑΙΔΕΥΤΙΚΩΝ ΜΕ ΠΡΟΣΟΜΟΙΩΣΗ ΣΕΙΣΜΟΥ ΣΕ ΣΧΟΛΙΚΟ ΠΕΡΙΒΑΛΛΟΝ",
+      "url": "https://www.in.gr/2026/10/09/greece/zakynthos-gynaika-epese-sti-thalassa-apo-krouazieroploio-se-ekseliksi-ereynes-gia-ton-entopismo-tis/",
+      "title": "Συναγερμός στη Ζάκυνθο: Γυναίκα έπεσε στη θάλασσα από κρουαζιερόπλοιο - Σε εξέλιξη έρευνες για τον εντοπισμό της",
+      "normalized_title": "ΣΥΝΑΓΕΡΜΟΣ ΣΤΗ ΖΑΚΥΝΘΟ: ΓΥΝΑΙΚΑ ΕΠΕΣΕ ΣΤΗ ΘΑΛΑΣΣΑ ΑΠΟ ΚΡΟΥΑΖΙΕΡΟΠΛΟΙΟ - ΣΕ ΕΞΕΛΙΞΗ ΕΡΕΥΝΕΣ ΓΙΑ ΤΟΝ ΕΝΤΟΠΙΣΜΟ ΤΗΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/09/politics/aftodioikisi/ekpaideysi-80-ekpaideytikon-me-prosomoiosi-seismou-se-sxoliko-perivallon/",
-        "https://www.in.gr/2026/10/09/greece/ypothesi-mazonaki-diapseydei-o-58xronos-giatros-oti-exei-katatheseis-sto-eksoteriko/"
+        "https://www.in.gr/2026/10/09/greece/zakynthos-gynaika-epese-sti-thalassa-apo-krouazieroploio-se-ekseliksi-ereynes-gia-ton-entopismo-tis/",
+        "https://www.in.gr/2026/10/09/economy/diethnis-oikonomia/eyropi-eksantlisi-ala-ellinika-i-lanthasmeni-syntagi-pou-vythizei-tin-antagonistikotita-sti-giraia-ipeiro/",
+        "https://www.in.gr/2026/10/09/world/polonia-synagermos-se-10-000-sxoleia-gia-matomeni-paraskeyi-syllipseis-mathiton-pou-apeilousan-me-epitheseis/",
+        "https://www.in.gr/2026/10/09/greece/pethane-sta-58-tou-o-arxaiologos-giannis-lolos-to-ergo-tou-stin-arxaia-sikyona/",
+        "https://www.in.gr/2026/10/09/sports/football/proponitis-mpraiton-tha-doume-enan-akomi-kalytero-tzima-pic/",
+        "https://www.in.gr/2026/10/09/go-fun/style/sti-chanel-kati-kainourgio-o-matthieu-blazy-dialekse-to-dyskolo-monopati/"
       ],
-      "seen_at_utc": "2026-10-09T09:30:19.168081+00:00"
+      "seen_at_utc": "2026-10-09T09:51:15.595459+00:00"
     }
   },
-  "updated_at_utc": "2026-10-09T09:30:19.168258+00:00"
+  "updated_at_utc": "2026-10-09T09:51:15.595553+00:00"
 }
