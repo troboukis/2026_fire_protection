@@ -1,13 +1,13 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/economy/international/564514786/e-e-ochi-apo-germania-ollandia-kai-soyidia-ston-neo-proypologismo/",
-      "title": "Ε.Ε.: «Οχι» από Γερμανία, Ολλανδία και Σουηδία στον νέο προϋπολογισμό",
-      "normalized_title": "Ε.Ε.: «ΟΧΙ» ΑΠΟ ΓΕΡΜΑΝΙΑ, ΟΛΛΑΝΔΙΑ ΚΑΙ ΣΟΥΗΔΙΑ ΣΤΟΝ ΝΕΟ ΠΡΟΥΠΟΛΟΓΙΣΜΟ",
+      "url": "https://www.kathimerini.gr/politics/government/564514792/antidraseis-gia-tin-exairesi-stelechon-toy-deddie-apo-aytoforo-gia-pyrkagies/",
+      "title": "Αντιδράσεις για την εξαίρεση στελεχών του ΔΕΔΔΗΕ από αυτόφωρο για πυρκαγιές",
+      "normalized_title": "ΑΝΤΙΔΡΑΣΕΙΣ ΓΙΑ ΤΗΝ ΕΞΑΙΡΕΣΗ ΣΤΕΛΕΧΩΝ ΤΟΥ ΔΕΔΔΗΕ ΑΠΟ ΑΥΤΟΦΩΡΟ ΓΙΑ ΠΥΡΚΑΓΙΕΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/economy/international/564514786/e-e-ochi-apo-germania-ollandia-kai-soyidia-ston-neo-proypologismo/"
+        "https://www.kathimerini.gr/politics/government/564514792/antidraseis-gia-tin-exairesi-stelechon-toy-deddie-apo-aytoforo-gia-pyrkagies/"
       ],
-      "seen_at_utc": "2026-10-11T09:29:58.121765+00:00"
+      "seen_at_utc": "2026-10-11T09:51:13.210950+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,79 +1259,35 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1892992/kare-kare-i-diasosi-tis-44hronis-touristrias-pou-epese-apo-krouazieroploio-sti-zakuntho/?utm_source=rss",
-      "title": "Καρέ-καρέ η διάσωση της 44χρονης τουρίστριας που έπεσε από κρουαζιερόπλοιο στη Ζάκυνθο",
-      "normalized_title": "ΚΑΡΕ-ΚΑΡΕ Η ΔΙΑΣΩΣΗ ΤΗΣ 44ΧΡΟΝΗΣ ΤΟΥΡΙΣΤΡΙΑΣ ΠΟΥ ΕΠΕΣΕ ΑΠΟ ΚΡΟΥΑΖΙΕΡΟΠΛΟΙΟ ΣΤΗ ΖΑΚΥΝΘΟ",
+      "url": "https://www.protothema.gr/greece/article/1893014/kakourgimatiki-dioxi-ston-20hrono-gia-ton-thanato-tis-filis-tou-meta-apo-hrisi-mdma-se-parti-sti-thessaloniki/?utm_source=rss",
+      "title": "Κακουργηματική δίωξη στον 20χρονο για τον θάνατο της φίλης του μετά από χρήση MDMA σε πάρτι στη Θεσσαλονίκη",
+      "normalized_title": "ΚΑΚΟΥΡΓΗΜΑΤΙΚΗ ΔΙΩΞΗ ΣΤΟΝ 20ΧΡΟΝΟ ΓΙΑ ΤΟΝ ΘΑΝΑΤΟ ΤΗΣ ΦΙΛΗΣ ΤΟΥ ΜΕΤΑ ΑΠΟ ΧΡΗΣΗ MDMA ΣΕ ΠΑΡΤΙ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1892992/kare-kare-i-diasosi-tis-44hronis-touristrias-pou-epese-apo-krouazieroploio-sti-zakuntho/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892982/stin-euelpidon-o-kabouris-i-suzugos-kai-9-katigoroumenoi-gia-tin-apati-ston-efka-gia-logistiko-lathos-mila-o-dikigoros/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892972/thessaloniki-22hronos-etrehe-me-166-hlmora-methusmenos-odigos-boukare-se-katastima-kai-traumatise-treis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892965/pano-apo-360-kila-kannavis-edopistikan-se-istioforo-anoihta-tis-hiou-xeperna-to-1-ekat-euro-i-axia-ton-narkotikon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892959/heiropedes-se-39hrono-meta-apo-katadioxi-metefere-treis-paranomous-metanastes-sto-ohima-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892952/me-parelthon-stin-greek-mafia-kai-tin-opadiki-via-o-nekros-sti-glufada-eihe-sullifthei-os-melos-tis-omadas-moshouri/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892938/pano-apo-12-kila-kannavis-vrethikan-se-apothiki-63hronou-stin-pella-itan-se-diadikasia-apoxiransis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892936/sta-farmakeia-idi-to-30-ton-emvolion-gia-ti-gripi-poioi-prepei-na-to-kanoun-protoi-pote-kai-ti-ishuei-gia-ta-paidia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892931/pethane-20hroni-sti-thessaloniki-meta-apo-hrisi-psuhotropou-narkotikou-sunelifthi-filos-tis-pou-pire-mazi-tis-tin-ousia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892920/stamatisan-taxi-stin-paralia-tou-volou-katevasan-tous-epivates-kai-tous-xulokopisan-agria-enas-traumatias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892917/se-erimiko-simeio-dipla-sto-ergotaxio-tou-ellinikou-vrethike-o-andras-pou-epese-nekros-apo-purovolismous-sti-glufada/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892915/spiti-mou-3-poioi-boroun-na-paroun-stegastiko-eos-230000-euro-ti-allazei-se-ilikies-kai-eisodimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892912/simera-apologoudai-o-filippos-kabouris-kai-i-suzugos-tou-gia-to-kukloma-apatis-ston-efka/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892909/aade-anna-vissi-den-dilothike-fpa-80000-gia-tis-sunaulies-sto-kallimarmaro-kai-50000-gia-tis-periodeies-sto-exoteriko/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892906/sto-skamni-oi-roma-pou-xulokopisan-dianomea-sto-argostoli-ton-htupisan-sto-kefali-epeidi-adedrase-ston-hleuasmo-tous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892905/epekteinetai-i-psifiaki-karta-ergasias-se-neous-kladous-apo-tis-12-oktovriou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892888/nekros-andras-apo-purovolismo-sti-glufada-pede-kalukes-vrethikan-sto-simeio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892886/seismos-4-rihter-anoihta-tis-kasou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892871/i-vouli-ton-ellinon-fotagogithike-gia-tin-pagosmia-imera-doreas-organon-kai-iston/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892859/epiheirisi-tis-elas-gia-ton-edopismo-ergastiriou-plaston-taxidiotikon-eggrafon-sto-aigaleo-sunelifthi-enas-/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892840/sovara-epeisodia-meta-apo-gledi-roma-stin-patra-ta-ekanan-gualia-karfia-ishures-astunomikes-dunameis-sta-pratsika/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892832/epeisodio-me-elegtes-tis-aade-sto-spiti-tou-nikou-karvela-pigan-na-tou-epidosoun-eggrafo-gia-forologikes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892830/epiheirisi-diasosis-54hronou-sto-faraggi-tou-gorgopotamou-esteile-sos-apo-smartwatch/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892821/tou-pire-i-trohaia-tis-pinakides-kai-sunehise-na-odigei-prostimo-kai-fulakisi-provlepei-o-kok/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892819/nekro-delfini-xevrastike-se-paralia-tis-sifnou-itan-blegmeno-se-dihtua/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892809/edopistikan-79-dendrullia-kannavis-sti-makrinitsa-anazitoudai-oi-drastes-deite-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892796/mahairia-siderogrothia-kai-koukoules-full-face-sta-spitia-ton-duo-katigoroumenon-gia-tin-apopeira-anthropoktonia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892795/tragodia-sta-hania-nekros-34hronos-se-trohaio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892787/sunelifthi-26hronos-tourkos-sto-kedro-tis-athinas-ekkremouse-se-varos-tou-diethnes-edalma-gia-anthropoktonia-/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892782/autokinito-exetrapi-tis-poreias-tou-kai-epese-pano-se-katastima-sto-galatsi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892775/i-stigmi-pou-astunomikoi-boukaroun-se-spiti-sto-zefuri-edopistikan-75-kila-iroinis-186-kokainis-axias-150000-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892768/epiheirisi-tis-purosvestikis-gia-68hroni-pou-traumatistike-kata-ti-diarkeia-pezoporias-sti-halkidiki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892766/dioxi-gia-apopeira-anthropoktonias-apo-prothesi-ston-22hrono-pou-sunelifthi-gia-tin-epithesi-me-mahairi-stin-eleusina/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892762/sto-nosokomeio-18hroni-pou-epese-apo-4o-orofo-polukatoikias-stous-abelokipous-thessalonikis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892757/katadioxi-stin-patra-meta-apo-diarrixi-ereunes-gia-ton-edopismo-ton-draston/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892753/elas-eftase-ihni-gunaikologou-sexoualiki-kakopoiisi-anilikon-enimerosi-ipa-kai-arheia-pou-vrethikan-se-iatreio-kai-spiti/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892742/duo-sullipseis-gia-klopes-ergon-tehnis-apo-ergastirio-gluptikis-sti-nea-ionia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892739/sunelifthi-15hronos-gia-pornografia-anilikon-stin-peuki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892735/treis-sullipseis-gia-to-dustuhima-stis-egatastaseis-tis-motor-oil-stous-agious-theodorous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892731/stis-spetses-i-26i-diethnis-diaskepsi-gia-ti-logiki-kai-tin-tehniti-noimosuni/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892722/sto-apotefrotirio-ritsonas-to-teleutaio-adio-stin-eugenia-daskalopoulou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892719/sunelifthi-52hronos-gunaikologos-gia-pornografia-anilikon-ekatodades-fotografies-kai-video-stis-suskeues-tou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892717/niki-kerameos-sto-74-i-anergia-peripou-600000-anthropoi-vrikan-douleia-ta-teleutaia-epta-hronia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892716/horis-tis-aisthiseis-tou-anasurthike-andras-meta-apo-fotia-se-diamerisma-sti-drama/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892710/fotia-sti-dutiki-thessaloniki-me-puknous-maurous-kapnous-oratous-apo-megali-apostasi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892709/exihniastike-tilefoniki-apati-stin-pella-me-ti-methodo-tou-logisti-arpaxan-pano-apo-8000-euro-apo-72hrono/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1892703/mi-hasete-to-thema-pou-kukloforei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1893014/kakourgimatiki-dioxi-ston-20hrono-gia-ton-thanato-tis-filis-tou-meta-apo-hrisi-mdma-se-parti-sti-thessaloniki/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1893005/ton-purovolisan-pisoplata-eno-odigouse-tin-mihani-tou-nea-stoiheia-gia-ton-andra-pou-vrethike-nekros-sti-glufada/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-11T09:19:12.299441+00:00"
+      "seen_at_utc": "2026-10-11T09:51:13.211060+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1485521/ypothesi-kampoyri-i-copy-paste-apati-o-k-gerakis-kai-oi-trypes-ston-e-efka/",
-      "title": "Υπόθεση Καμπούρη: Η copy paste απάτη, ο κ. Γεράκης και οι «τρύπες» στον e-ΕΦΚΑ",
-      "normalized_title": "ΥΠΟΘΕΣΗ ΚΑΜΠΟΥΡΗ: Η COPY PASTE ΑΠΑΤΗ, Ο Κ. ΓΕΡΑΚΗΣ ΚΑΙ ΟΙ «ΤΡΥΠΕΣ» ΣΤΟΝ E-ΕΦΚΑ",
+      "url": "https://www.efsyn.gr/politiki/1485871/marinakis-gia-kroysmata-alazoneias-sti-nd-ehei-poly-megali-simasia-kai-to-yfos/",
+      "title": "Μαρινάκης για τα «γαλάζια φάλτσα»: «Εχει πολύ μεγάλη σημασία και το ύφος»",
+      "normalized_title": "ΜΑΡΙΝΑΚΗΣ ΓΙΑ ΤΑ «ΓΑΛΑΖΙΑ ΦΑΛΤΣΑ»: «ΕΧΕΙ ΠΟΛΥ ΜΕΓΑΛΗ ΣΗΜΑΣΙΑ ΚΑΙ ΤΟ ΥΦΟΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1485521/ypothesi-kampoyri-i-copy-paste-apati-o-k-gerakis-kai-oi-trypes-ston-e-efka/"
+        "https://www.efsyn.gr/politiki/1485871/marinakis-gia-kroysmata-alazoneias-sti-nd-ehei-poly-megali-simasia-kai-to-yfos/"
       ],
-      "seen_at_utc": "2026-10-11T09:29:58.121841+00:00"
+      "seen_at_utc": "2026-10-11T09:51:13.211030+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/11/sports/basketball/euroleague/olympiakos-i-12ada-gia-to-mats-me-ton-kolosso-ektos-o-gouornt/",
-      "title": "Ολυμπιακός: Η 12άδα για το ματς με τον Κολοσσό – Εκτός Ντόρσεϊ και Γουόρντ",
-      "normalized_title": "ΟΛΥΜΠΙΑΚΟΣ: Η 12ΑΔΑ ΓΙΑ ΤΟ ΜΑΤΣ ΜΕ ΤΟΝ ΚΟΛΟΣΣΟ – ΕΚΤΟΣ ΝΤΟΡΣΕΙ ΚΑΙ ΓΟΥΟΡΝΤ",
+      "url": "https://www.in.gr/2026/10/11/greece/ektelesi-sti-glyfada-to-vary-poiniko-parelthon-tou-thymatos-i-greek-mafia-kai-to-symvolaio-thanatou/",
+      "title": "Ποιος ήταν ο «παπαγάλος» που εκτελέστηκε στη Γλυφάδα: Βαρύ ποινικό παρελθόν, Greek Mafia και συμβόλαιο θανάτου",
+      "normalized_title": "ΠΟΙΟΣ ΗΤΑΝ Ο «ΠΑΠΑΓΑΛΟΣ» ΠΟΥ ΕΚΤΕΛΕΣΤΗΚΕ ΣΤΗ ΓΛΥΦΑΔΑ: ΒΑΡΥ ΠΟΙΝΙΚΟ ΠΑΡΕΛΘΟΝ, GREEK MAFIA ΚΑΙ ΣΥΜΒΟΛΑΙΟ ΘΑΝΑΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/11/sports/basketball/euroleague/olympiakos-i-12ada-gia-to-mats-me-ton-kolosso-ektos-o-gouornt/",
-        "https://www.in.gr/2026/10/11/greece/anna-vissi-sto-mikroskopio-tis-aade-i-synaylia-sto-oaka/"
+        "https://www.in.gr/2026/10/11/greece/ektelesi-sti-glyfada-to-vary-poiniko-parelthon-tou-thymatos-i-greek-mafia-kai-to-symvolaio-thanatou/",
+        "https://www.in.gr/2026/10/11/politics/to-mitsotakis-i-xaos-epanaferei-o-prothypourgos-na-mi-xasoume-ton-dromo-leei-kai-thriamvologei-gia-tin-episkepsi-roumpio/",
+        "https://www.in.gr/2026/10/11/economy/diethnis-oikonomia/xenri-tz-xaints-pos-extise-tin-aytokratoria-tis-diasimis-ketsap-i-makrini-syggeneia-me-ton-proedro-tramp/"
       ],
-      "seen_at_utc": "2026-10-11T09:29:58.121805+00:00"
+      "seen_at_utc": "2026-10-11T09:51:13.211006+00:00"
     }
   },
-  "updated_at_utc": "2026-10-11T09:29:58.121905+00:00"
+  "updated_at_utc": "2026-10-11T09:51:13.211133+00:00"
 }
