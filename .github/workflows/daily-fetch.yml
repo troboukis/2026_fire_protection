@@ -103,6 +103,43 @@ jobs:
         continue-on-error: true
         run: python ingest/stage2_load_erd.py --tables "$ERD_TABLES"
 
+      - name: Extract missing Diavgeia payment amounts from PDFs
+        run: |
+          python scripts/extract_missing_diavgeia_payment_amounts.py \
+            --from-database \
+            --save-mapping \
+            --output "exports/diavgeia-payment-pdf-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+      - name: Fill missing Diavgeia payment amounts
+        run: |
+          python scripts/backfill_diavgeia_pdf_amounts.py \
+            --apply \
+            --backup "backupDB/diavgeia-payment-pdf-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-before.json"
+
+      - name: Link all Diavgeia document types to contracts through PDF references
+        run: |
+          python scripts/sync_diavgeia_contract_pdf_links.py \
+            --apply \
+            --output "exports/diavgeia-contract-pdf-links-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+            --backup "backupDB/diavgeia-contract-pdf-links-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-before.json"
+
+      - name: Preserve Diavgeia PDF evidence and database backups
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diavgeia-payment-amounts-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            exports/diavgeia-payment-pdf-*/inventory.json
+            exports/diavgeia-payment-pdf-*/extraction.json
+            exports/diavgeia-payment-pdf-*/amounts.csv
+            backupDB/diavgeia-payment-pdf-*-before.json
+            exports/diavgeia-contract-pdf-links-*/links.json
+            exports/diavgeia-contract-pdf-links-*/links.csv
+            exports/diavgeia-contract-pdf-links-*/summary.json
+            backupDB/diavgeia-contract-pdf-links-*-before.json
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Check whether new organizations were inserted
         id: organization_delta
         env:
@@ -150,10 +187,12 @@ jobs:
           git add \
             data/2026_diavgeia.csv \
             data/2026_diavgeia_filtered.csv \
+            data/mappings/diavgeia_payment_pdf_amounts.csv \
             data/fires/copernicus_latest.csv \
             data/raw_procurements.csv \
             state/kimdis_state.json \
             state/locate_work_state.json \
+            state/diavgeia_contract_pdf_links.json \
             state/state.json \
             logs/fetch_runs.csv \
             logs/locate_work_runs.csv \

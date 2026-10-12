@@ -1,7 +1,11 @@
-import type { ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import type { DiavgeiaDecisionCardView } from './DiavgeiaDecisionCard'
+import ContractModal, { type ContractModalContract } from './ContractModal'
+import { downloadContractDocument } from '../lib/contractDocument'
+import { loadContractModal } from '../lib/contractModal'
+import { supabase } from '../lib/supabase'
 
 type Props = {
   decision: DiavgeiaDecisionCardView
@@ -13,6 +17,69 @@ function isMunicipalityOrgType(value: string): boolean {
 }
 
 export default function DiavgeiaModal({ decision, onClose }: Props) {
+  const [linkedContracts, setLinkedContracts] = useState<Array<{ id: number; reference_number: string }>>([])
+  const [linksLoading, setLinksLoading] = useState(true)
+  const [linksFailed, setLinksFailed] = useState(false)
+  const [openingContractId, setOpeningContractId] = useState<number | null>(null)
+  const [contractFailed, setContractFailed] = useState(false)
+  const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
+  const requestVersion = useRef(0)
+
+  useEffect(() => {
+    let cancelled = false
+    setLinkedContracts([])
+    setLinksLoading(true)
+    setLinksFailed(false)
+    setSelectedContract(null)
+    setOpeningContractId(null)
+    setContractFailed(false)
+    const loadLinks = async () => {
+      try {
+        const decisionId = decision.id.replace(/^diavgeia-/, '')
+        const { data: links, error: linksError } = await supabase
+          .from('diavgeia_procurement')
+          .select('procurement_id')
+          .eq('diavgeia_id', decisionId)
+        if (linksError) throw linksError
+        const ids = [...new Set((links ?? []).map((link) => link.procurement_id))]
+        if (ids.length) {
+          const { data, error } = await supabase
+            .from('procurement')
+            .select('id, reference_number')
+            .in('id', ids)
+            .order('reference_number')
+          if (error) throw error
+          if (!cancelled) setLinkedContracts(data ?? [])
+        }
+      } catch (error) {
+        console.error('Failed to load linked contracts', error)
+        if (!cancelled) setLinksFailed(true)
+      } finally {
+        if (!cancelled) setLinksLoading(false)
+      }
+    }
+    void loadLinks()
+    return () => {
+      cancelled = true
+      requestVersion.current += 1
+    }
+  }, [decision.id])
+
+  const openContract = async (id: number) => {
+    const version = ++requestVersion.current
+    setOpeningContractId(id)
+    setContractFailed(false)
+    try {
+      const contract = await loadContractModal({ id })
+      if (requestVersion.current === version) setSelectedContract(contract)
+    } catch (error) {
+      console.error('Failed to load linked contract details', error)
+      if (requestVersion.current === version) setContractFailed(true)
+    } finally {
+      if (requestVersion.current === version) setOpeningContractId(null)
+    }
+  }
+
   const organization = [decision.orgType, decision.orgNameClean]
     .filter((part) => part && part !== '—')
     .join(' · ') || '—'
@@ -38,6 +105,41 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
     { label: 'ΑΦΜ', value: decision.spendingContractorsAfm ?? '—' },
     { label: 'Θεματικές κατηγορίες', value: decision.thematicCategories ?? '—' },
   ]
+
+  if (linksLoading || linksFailed || linkedContracts.length) {
+    gridItems.push({
+      label: linkedContracts.length === 1 ? 'Συνδεδεμένη σύμβαση' : 'Συνδεδεμένες συμβάσεις',
+      value: linksLoading ? 'Φόρτωση…' : linksFailed ? 'Δεν ήταν δυνατή η φόρτωση των συνδεδεμένων συμβάσεων.' : (
+        <>
+          {linkedContracts.map((contract) => (
+            <div key={contract.id}>
+              <button
+                type="button"
+                className="contract-modal__text-link"
+                disabled={openingContractId !== null}
+                aria-busy={openingContractId === contract.id}
+                onClick={() => { void openContract(contract.id) }}
+              >
+                {contract.reference_number}
+              </button>
+            </div>
+          ))}
+          {contractFailed && <span role="status">Δεν ήταν δυνατή η φόρτωση της σύμβασης. Δοκιμάστε ξανά.</span>}
+        </>
+      ),
+    })
+  }
+
+  if (selectedContract) {
+    return createPortal(
+      <ContractModal
+        contract={selectedContract}
+        onClose={() => setSelectedContract(null)}
+        onDownloadPdf={() => { void downloadContractDocument(selectedContract) }}
+      />,
+      document.body,
+    )
+  }
 
   const modal = (
     <div className="contract-modal-backdrop" onClick={onClose}>

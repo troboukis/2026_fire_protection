@@ -4120,6 +4120,50 @@ main {
   color: var(--ink-soft);
 }
 
+.contracts-header--amount-summary > :first-child {
+  min-width: 0;
+}
+
+.diavgeia-payment-summary {
+  flex-shrink: 0;
+  max-width: 100%;
+  align-self: center;
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+.diavgeia-payment-summary__amount {
+  color: var(--accent);
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.diavgeia-payment-summary__missing {
+  margin-top: 0.35rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.diavgeia-payment-summary__exclude {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.4rem;
+  max-width: 24rem;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.diavgeia-payment-summary__exclude input {
+  flex-shrink: 0;
+  margin: 0.15rem 0 0;
+  accent-color: var(--accent);
+}
+
 .contracts-back {
   text-decoration: none;
   border: 1px solid var(--line);
@@ -4159,7 +4203,25 @@ main {
 }
 
 .contracts-filters--diavgeia {
-  grid-template-columns: minmax(0, 2.4fr) repeat(2, minmax(8.5rem, 1fr)) repeat(2, auto);
+  grid-template-columns: minmax(0, 2.4fr) 14rem repeat(2, minmax(8.5rem, 1fr)) repeat(2, auto);
+}
+
+.contracts-filter--decision-type {
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+  .contracts-filters--diavgeia {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 14rem;
+  }
+
+  .contracts-filters--diavgeia .contracts-filter--search {
+    grid-column: span 3;
+  }
+
+  .contracts-filters--diavgeia .contracts-filter--decision-type {
+    grid-column: span 1;
+  }
 }
 
 .contracts-filter-button {
@@ -4240,6 +4302,19 @@ main {
 
 .contracts-status-legend__swatch--modified {
   background: rgba(37, 99, 235, 0.2);
+}
+
+.diavgeia-status-legend {
+  padding-inline: 0.5rem;
+}
+
+.diavgeia-status-legend > span {
+  min-width: 0;
+}
+
+.diavgeia-status-legend__swatch--linked {
+  flex-shrink: 0;
+  background: rgba(56, 189, 248, 0.2);
 }
 
 .contracts-table {
@@ -4347,6 +4422,11 @@ main {
 .contracts-table tr.contracts-row--modified td,
 .contracts-table tr.contracts-row--modified:hover td {
   background: rgba(37, 99, 235, 0.2);
+}
+
+.contracts-table tr.diavgeia-row--linked td,
+.contracts-table tr.diavgeia-row--linked:hover td {
+  background: rgba(56, 189, 248, 0.2);
 }
 
 .contracts-amount {
@@ -5263,7 +5343,8 @@ main {
     grid-template-columns: 1fr 1fr;
   }
 
-  .contracts-filter--search {
+  .contracts-filter--search,
+  .contracts-filter--decision-type {
     grid-column: 1 / -1;
     min-width: 0;
   }
@@ -5315,6 +5396,18 @@ main {
 @media (max-width: 760px) {
   .contracts-header {
     padding: 0.8rem 0.85rem;
+  }
+
+  .contracts-header--amount-summary {
+    flex-wrap: wrap;
+  }
+
+  .contracts-header--amount-summary > :first-child {
+    flex: 1 1 9rem;
+  }
+
+  .diavgeia-payment-summary {
+    margin-left: auto;
   }
 
   .contracts-page,
@@ -5382,6 +5475,7 @@ main {
     width: 100%;
     min-width: 0;
     max-width: 100%;
+    min-height: 2.75rem;
   }
 
   .diavgeia-page .contracts-filter-button {
@@ -5465,6 +5559,14 @@ main {
   }
 
   .contracts-header p {
+    font-size: 0.62rem;
+  }
+
+  .diavgeia-payment-summary__amount {
+    font-size: 1.2rem;
+  }
+
+  .diavgeia-payment-summary__missing {
     font-size: 0.62rem;
   }
 

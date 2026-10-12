@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import AmountSummary from '../components/AmountSummary'
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
 import DiavgeiaModal from '../components/DiavgeiaModal'
 import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
+import { parseDiavgeiaAmountCents, summarizeDiavgeiaAmounts } from '../lib/diavgeiaAmount'
 import { buildDiavgeiaDecisionCardView } from '../lib/diavgeiaDecision'
 import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
@@ -44,22 +46,10 @@ function fmtDate(iso: string | null): string {
   return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
 }
 
-function parseGreekAmount(value: string | null | undefined): number | null {
-  const text = clean(value)
-  if (!text) return null
-  const match = text.match(/\d[\d.,]*/)
-  if (!match) return null
-  const normalized = match[0].includes(',')
-    ? match[0].replace(/\./g, '').replace(',', '.')
-    : match[0]
-  const amount = Number(normalized)
-  return Number.isFinite(amount) && amount > 0 ? amount : null
-}
-
 function fmtEurFromText(value: string | null | undefined): string {
-  const amount = parseGreekAmount(value)
-  if (amount == null) return '—'
-  return amount.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
+  const cents = parseDiavgeiaAmountCents(value)
+  if (cents == null) return '—'
+  return (cents / 100).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 }
 
 function isoDateDaysAgo(days: number): string {
@@ -98,6 +88,23 @@ function truncateWords(value: string, maxWords: number): string {
   return `${words.slice(0, maxWords).join(' ')} ...`
 }
 
+async function loadContractLinkedDecisionIds(): Promise<Set<number>> {
+  const ids = new Set<number>()
+  const batchSize = 1000
+  // Read every link: the API limits each response to 1,000 rows.
+  for (let offset = 0; ; offset += batchSize) {
+    const { data, error } = await supabase
+      .from('diavgeia_procurement')
+      .select('diavgeia_id')
+      .order('diavgeia_id')
+      .order('procurement_id')
+      .range(offset, offset + batchSize - 1)
+    if (error) throw error
+    for (const row of data ?? []) ids.add(row.diavgeia_id)
+    if ((data ?? []).length < batchSize) return ids
+  }
+}
+
 export default function DiavgeiaPage() {
   const [searchParams] = useSearchParams()
   const defaultDateFrom = useMemo(() => isoDateDaysAgo(30), [])
@@ -110,9 +117,13 @@ export default function DiavgeiaPage() {
   const initialDateFrom = useMemo(() => initialAllDates ? '' : (initialDateFromParam || defaultDateFrom), [defaultDateFrom, initialAllDates, initialDateFromParam])
   const initialDateTo = useMemo(() => initialAllDates ? '' : (initialDateToParam || defaultDateTo), [defaultDateTo, initialAllDates, initialDateToParam])
   const [sourceRows, setSourceRows] = useState<DiavgeiaPageRow[]>([])
+  const [contractLinkedDecisionIds, setContractLinkedDecisionIds] = useState<Set<number>>(new Set())
   const [loading, setLoading] = useState(true)
+  const [loadFailed, setLoadFailed] = useState(false)
   const [selectedDecision, setSelectedDecision] = useState<DiavgeiaDecisionCardView | null>(null)
   const [q, setQ] = useState(initialQ)
+  const [decisionType, setDecisionType] = useState('')
+  const [excludeContractAmounts, setExcludeContractAmounts] = useState(false)
   const [dateFrom, setDateFrom] = useState(initialDateFrom)
   const [dateTo, setDateTo] = useState(initialDateTo)
   const [municipalityKey, setMunicipalityKey] = useState(initialMunicipalityKey)
@@ -122,6 +133,7 @@ export default function DiavgeiaPage() {
 
   useEffect(() => {
     setQ(initialQ)
+    setDecisionType('')
     setMunicipalityKey(initialMunicipalityKey)
     setDateFrom(initialDateFrom)
     setDateTo(initialDateTo)
@@ -158,24 +170,32 @@ export default function DiavgeiaPage() {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
+    setLoadFailed(false)
 
     const loadPage = async () => {
       try {
-        const { data, error } = await supabase.rpc('get_diavgeia_page_snapshot', {
-          p_date_from: clean(dateFrom) || null,
-          p_date_to: clean(dateTo) || null,
-          p_municipality_key: clean(municipalityKey) || null,
-        })
+        const [{ data, error }, linkedDecisionIds] = await Promise.all([
+          supabase.rpc('get_diavgeia_page_snapshot', {
+            p_date_from: clean(dateFrom) || null,
+            p_date_to: clean(dateTo) || null,
+            p_municipality_key: clean(municipalityKey) || null,
+          }),
+          loadContractLinkedDecisionIds(),
+        ])
         if (error) throw error
 
         if (cancelled) return
         const payload = (data ?? {}) as { rows?: DiavgeiaPageRow[] }
         const pageRows = Array.isArray(payload.rows) ? payload.rows : []
         setSourceRows(pageRows)
+        setContractLinkedDecisionIds(linkedDecisionIds)
         setLoading(false)
-      } catch {
+      } catch (error) {
         if (cancelled) return
+        console.error('Failed to load Diavgeia decisions', error)
         setSourceRows([])
+        setContractLinkedDecisionIds(new Set())
+        setLoadFailed(true)
         setLoading(false)
       }
     }
@@ -184,13 +204,34 @@ export default function DiavgeiaPage() {
     return () => { cancelled = true }
   }, [dateFrom, dateTo, municipalityKey])
 
-  const filteredRows = useMemo(() => sourceRows.filter((row) => matchesSearchQuery([
-    row.subject,
-    row.org_type,
-    row.org_name_clean,
-    row.ada,
-    row.diavgeia_document_type_decision_uid,
-  ].join(' '), q)), [sourceRows, q])
+  const decisionTypeOptions = useMemo(() => {
+    const types = new Set(sourceRows.map((row) => clean(row.diavgeia_document_type_decision_uid)).filter(Boolean))
+    // Keep the active choice visible even when the new date range has no matches.
+    if (decisionType) types.add(decisionType)
+    return [...types].sort((a, b) => a.localeCompare(b, 'el'))
+  }, [sourceRows, decisionType])
+
+  const filteredRows = useMemo(() => sourceRows.filter((row) => (
+    (!decisionType || clean(row.diavgeia_document_type_decision_uid) === decisionType)
+    && matchesSearchQuery([
+      row.subject,
+      row.org_type,
+      row.org_name_clean,
+      row.ada,
+      row.diavgeia_document_type_decision_uid,
+    ].join(' '), q)
+  )), [sourceRows, q, decisionType])
+  const paymentSummary = useMemo(() => {
+    if (decisionType !== 'ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ') return null
+    const summary = summarizeDiavgeiaAmounts(filteredRows)
+    if (excludeContractAmounts) {
+      const linkedSummary = summarizeDiavgeiaAmounts(
+        filteredRows.filter((row) => contractLinkedDecisionIds.has(row.id)),
+      )
+      summary.totalCents -= linkedSummary.totalCents
+    }
+    return summary
+  }, [decisionType, filteredRows, excludeContractAmounts, contractLinkedDecisionIds])
   const totalCount = filteredRows.length
   const rows = useMemo(() => {
     const pageStart = Math.max((page - 1) * pageSize, 0)
@@ -225,16 +266,35 @@ export default function DiavgeiaPage() {
     <div className={`contracts-page diavgeia-page${selectedDecision ? ' contracts-page--modal-open' : ''}`}>
       <DevViewToggle />
       <ComponentTag name="DiavgeiaPage" />
-      <header className="contracts-header section-rule">
+      <header className="contracts-header contracts-header--amount-summary section-rule">
         <div>
           <div className="eyebrow">ΑΝΑΖΗΤΗΣΗ</div>
           <h1>Διαύγεια</h1>
           <p>
             {loading
               ? 'Φόρτωση…'
-              : `${totalCount.toLocaleString('el-GR')} αποφάσεις · Περίοδος: ${visiblePeriodLabel}${municipalityLabel ? ` · ${municipalityLabel}` : ''}`}
+              : loadFailed
+                ? 'Δεν ήταν δυνατή η φόρτωση των αποφάσεων.'
+                : `${totalCount.toLocaleString('el-GR')} αποφάσεις · Περίοδος: ${visiblePeriodLabel}${municipalityLabel ? ` · ${municipalityLabel}` : ''}`}
           </p>
         </div>
+        {paymentSummary && (
+          <AmountSummary
+            {...paymentSummary}
+            loading={loading}
+            loadFailed={loadFailed}
+            ariaLabel="Σύνολο πληρωμών"
+          >
+            <label className="diavgeia-payment-summary__exclude">
+              <input
+                type="checkbox"
+                checked={excludeContractAmounts}
+                onChange={(event) => setExcludeContractAmounts(event.target.checked)}
+              />
+              <span>Εξαίρεση ποσών που προσμετρώνται στις συμβάσεις</span>
+            </label>
+          </AmountSummary>
+        )}
       </header>
 
       <section className="contracts-filters contracts-filters--diavgeia section-rule">
@@ -243,9 +303,19 @@ export default function DiavgeiaPage() {
           value={q}
           maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="π.χ. πυροπροστασία & προμήθεια !καύσιμα"
-          title="Χρησιμοποιήστε & για υποχρεωτικούς όρους και ! για εξαιρέσεις"
+          placeholder="π.χ. πυροπροστασία | πυρόσβεση"
+          title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
         />
+        <select
+          className="contracts-filter contracts-filter--decision-type"
+          value={decisionType}
+          onChange={(e) => { setDecisionType(e.target.value); setPage(1) }}
+          aria-label="Τύπος απόφασης"
+          title={decisionType || 'Όλοι οι τύποι απόφασης'}
+        >
+          <option value="">Όλοι οι τύποι απόφασης</option>
+          {decisionTypeOptions.map((type) => <option key={type} value={type}>{type}</option>)}
+        </select>
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-from"
           value={visibleDateFrom}
@@ -269,6 +339,9 @@ export default function DiavgeiaPage() {
       </section>
 
       <section className="contracts-table-wrap section-rule">
+        <div className="contracts-status-legend diavgeia-status-legend" aria-label="Υπόμνημα σύνδεσης αποφάσεων με συμβάσεις">
+          <span><i className="contracts-status-legend__swatch diavgeia-status-legend__swatch--linked" /><span>Συνδεδεμένη με σύμβαση</span></span>
+        </div>
         {loading ? (
           <DataLoadingCard message="Ανακτώνται οι αποφάσεις Διαύγειας για τη συγκεκριμένη σελίδα αποτελεσμάτων." />
         ) : (
@@ -298,7 +371,7 @@ export default function DiavgeiaPage() {
                   const href = clean(row.document_url) || (ada ? `https://diavgeia.gov.gr/doc/${ada}` : '')
                   const orgLabel = [clean(row.org_type), clean(row.org_name_clean)].filter(Boolean).join(' · ') || '—'
                   return (
-                    <tr key={row.id}>
+                    <tr key={row.id} className={contractLinkedDecisionIds.has(row.id) ? 'diavgeia-row--linked' : undefined}>
                       <td data-label="Ημερομηνία">{fmtDate(row.decision_date)}</td>
                       <td data-label="Φορέας">{orgLabel}</td>
                       <td data-label="Θέμα">
@@ -342,7 +415,9 @@ export default function DiavgeiaPage() {
             </table>
             {rows.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν αποφάσεις Διαύγειας για τα επιλεγμένα φίλτρα.</h2>
+                <h2>{loadFailed
+                  ? 'Δεν ήταν δυνατή η φόρτωση των αποφάσεων. Δοκιμάστε ξανά.'
+                  : 'Δεν βρέθηκαν αποφάσεις Διαύγειας για τα επιλεγμένα φίλτρα.'}</h2>
               </article>
             )}
             <div className="contracts-pagination">

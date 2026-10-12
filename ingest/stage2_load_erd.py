@@ -41,6 +41,7 @@ if str(REPO) not in sys.path:
 
 from municipality_normalization import normalizeMunicipality
 from src.diavgeia_amounts import resolve_diavgeia_amount_text
+from src.diavgeia_contract_links import CONTRACT_DIAVGEIA_LINKS_SELECT
 from src.diavgeia_relevance_rules import is_confirmed_irrelevant_decision
 from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
@@ -2612,15 +2613,15 @@ def main() -> None:
             conn.commit()
             log("fund insert committed")
 
-        # Bridge: diavgeia <-> procurement via ADA match.
+        # Exact ADA links declared in all three KIMDIS contract columns.
         if "diavgeia_procurement" in selected_tables:
             log("Building diavgeia_procurement bridge...")
             cur.execute(
                 """
                 INSERT INTO public.diavgeia_procurement (diavgeia_id, procurement_id)
-                SELECT d.id, p.id
-                FROM public.procurement p
-                JOIN public.diavgeia d ON d.ada = p.diavgeia_ada
+                """
+                + CONTRACT_DIAVGEIA_LINKS_SELECT
+                + """
                 ON CONFLICT DO NOTHING
                 """
             )

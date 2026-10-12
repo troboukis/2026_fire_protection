@@ -18,8 +18,26 @@ export function normalizeSearchText(value: unknown): string {
 }
 
 export function parseSearchQuery(query: string): SearchQueryTerm[] {
+  return parseSearchQueryGroups(query).flat()
+}
+
+function parseSearchQueryGroups(query: string): SearchQueryTerm[][] {
+  let remainingTerms = MAX_SEARCH_TERMS
   return query
     .slice(0, MAX_SEARCH_QUERY_LENGTH)
+    .split(/\s*\|\s*|\s+OR\s+/i)
+    .map((group) => {
+      const terms = parseSearchGroup(group).slice(0, remainingTerms)
+      remainingTerms -= terms.length
+      return terms
+    })
+    .filter((group) => group.length > 0)
+}
+
+function parseSearchGroup(group: string): SearchQueryTerm[] {
+  return group
+    .replace(/\s+AND(?=\s|$)/gi, '&')
+    .replace(/(^|[\s&])NOT(?=\s|$)/gi, '$1!')
     .replace(/\s*!\s*/g, '&!')
     .split(/\s*&\s*/)
     .map((part) => part.trim())
@@ -37,9 +55,11 @@ export function parseSearchQuery(query: string): SearchQueryTerm[] {
 
 export function matchesSearchQuery(haystack: unknown, query: string): boolean {
   const normalizedHaystack = normalizeSearchText(haystack)
-  return parseSearchQuery(query).every((term) => (
+  const groups = parseSearchQueryGroups(query)
+  // AND and exclusions bind within each OR alternative.
+  return groups.length === 0 || groups.some((group) => group.every((term) => (
     term.excluded
       ? !normalizedHaystack.includes(term.value)
       : normalizedHaystack.includes(term.value)
-  ))
+  )))
 }

@@ -1,4 +1,5 @@
 import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
+import { parseDiavgeiaAmountCents } from './diavgeiaAmount'
 
 export type MunicipalityDiavgeiaDecisionRpcRow = {
   diavgeia_id: number | string
@@ -32,22 +33,10 @@ export function formatDiavgeiaDecisionDate(value: string | null | undefined): st
   return dt.toLocaleDateString('el-GR', { day: '2-digit', month: 'short', year: 'numeric' })
 }
 
-function parseGreekAmount(value: string | null | undefined): number | null {
-  const text = cleanText(value)
-  if (!text) return null
-  const match = text.match(/\d[\d.,]*/)
-  if (!match) return null
-  const normalized = match[0].includes(',')
-    ? match[0].replace(/\./g, '').replace(',', '.')
-    : match[0]
-  const amount = Number(normalized)
-  return Number.isFinite(amount) && amount > 0 ? amount : null
-}
-
 function formatEur(value: string | null | undefined): string | null {
-  const amount = parseGreekAmount(value)
-  if (amount == null) return null
-  return amount.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
+  const cents = parseDiavgeiaAmountCents(value)
+  if (cents == null) return null
+  return (cents / 100).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 }
 
 export function buildDiavgeiaDecisionCardView(row: MunicipalityDiavgeiaDecisionRpcRow): DiavgeiaDecisionCardView {

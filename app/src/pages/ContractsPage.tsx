@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import AmountSummary from '../components/AmountSummary'
 import BeneficiaryLink from '../components/BeneficiaryLink'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
-import { buildContractAuthorityLabel, type ContractAuthorityScope } from '../lib/contractAuthority'
-import { buildDiavgeiaDocumentUrl, downloadContractDocument } from '../lib/contractDocument'
-import { summarizePaymentRows } from '../lib/paymentSummary'
+import { summarizeContractAmounts } from '../lib/contractAmount'
+import { downloadContractDocument } from '../lib/contractDocument'
+import { loadContractModal } from '../lib/contractModal'
 import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
@@ -91,22 +92,9 @@ function truncateWords(value: string, maxWords: number): string {
   return `${words.slice(0, maxWords).join(' ')} ...`
 }
 
-function fmtDateLabel(iso: string | null): string {
-  if (!iso) return '—'
-  const dt = new Date(iso)
-  if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
-}
-
 function cleanText(v: unknown): string | null {
   const s = clean(v)
   return s || null
-}
-
-function firstPipePart(v: unknown): string | null {
-  const s = cleanText(v)
-  if (!s) return null
-  return s.split('|').map((x) => x.trim()).filter(Boolean)[0] ?? null
 }
 
 type ContractsPageInitialFilters = {
@@ -651,6 +639,7 @@ export default function ContractsPage() {
     Boolean(initialFilters.municipalityKey)
   const [sourceRows, setSourceRows] = useState<ContractRow[]>([])
   const [loading, setLoading] = useState(true)
+  const [loadFailed, setLoadFailed] = useState(false)
   const [selectedContract, setSelectedContract] = useState<ContractModalContract | null>(null)
   const [openingContractId, setOpeningContractId] = useState<number | null>(null)
   const [q, setQ] = useState(initialFilters.q)
@@ -723,6 +712,7 @@ export default function ContractsPage() {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
+    setLoadFailed(false)
     const loadPage = async () => {
       try {
         if (hasScopedSource) {
@@ -747,9 +737,11 @@ export default function ContractsPage() {
         if (cancelled) return
         setSourceRows(loadedRows)
         setLoading(false)
-      } catch {
+      } catch (error) {
         if (cancelled) return
+        console.error('Failed to load contracts', error)
         setSourceRows([])
+        setLoadFailed(true)
         setLoading(false)
       }
     }
@@ -768,6 +760,7 @@ export default function ContractsPage() {
     return sortContractRows(searchedRows, sort)
   }, [sourceRows, q, procedure, minAmount, sort])
 
+  const amountSummary = useMemo(() => summarizeContractAmounts(filteredRows), [filteredRows])
   const totalCount = filteredRows.length
   const rows = useMemo(() => {
     const pageStart = Math.max((page - 1) * pageSize, 0)
@@ -783,174 +776,9 @@ export default function ContractsPage() {
   const openContractModal = async (row: ContractRow) => {
     setOpeningContractId(row.id)
     try {
-      const { data: procurement, error: procurementError } = await supabase
-        .from('procurement')
-        .select(`
-          id,
-          title,
-          submission_at,
-          short_descriptions,
-          procedure_type_value,
-          reference_number,
-          contract_number,
-          contract_signed_date,
-          start_date,
-          end_date,
-          municipality_key,
-          region_key,
-          canonical_owner_scope,
-          organization_vat_number,
-          organization_key,
-          assign_criteria,
-          contract_type,
-          award_procedure,
-          units_operator,
-          funding_details_cofund,
-          funding_details_self_fund,
-          funding_details_espa,
-          funding_details_regular_budget,
-          auction_ref_no,
-          contract_related_ada,
-          prev_reference_no,
-          next_ref_no,
-          budget,
-          contract_budget,
-          diavgeia_ada
-        `)
-        .eq('id', row.id)
-        .single()
-
-      if (procurementError || !procurement) return
-
-      const [
-        paymentsResult,
-        cpvResult,
-        organizationResult,
-        municipalityResult,
-        regionResult,
-      ] = await Promise.all([
-        supabase
-          .from('payment')
-          .select('beneficiary_name, beneficiary_vat_number, signers, payment_ref_no, amount_without_vat, amount_with_vat')
-          .eq('procurement_id', row.id),
-        supabase
-          .from('cpv')
-          .select('cpv_key, cpv_value')
-          .eq('procurement_id', row.id),
-        supabase
-          .from('organization')
-          .select('organization_normalized_value, organization_value, authority_scope')
-          .eq('organization_key', procurement.organization_key)
-          .limit(1),
-        procurement.municipality_key
-          ? supabase
-            .from('municipality')
-            .select('municipality_normalized_value, municipality_value')
-            .eq('municipality_key', procurement.municipality_key)
-            .limit(1)
-          : Promise.resolve({ data: [] }),
-        procurement.region_key
-          ? supabase
-            .from('region')
-            .select('region_normalized_value, region_value')
-            .eq('region_key', procurement.region_key)
-            .limit(1)
-          : Promise.resolve({ data: [] }),
-      ])
-
-      const paymentRows = (paymentsResult.data ?? []) as Array<{
-        beneficiary_name: string | null
-        beneficiary_vat_number: string | null
-        signers: string | null
-        payment_ref_no: string | null
-        amount_without_vat: number | null
-        amount_with_vat: number | null
-      }>
-      const paymentSummary = summarizePaymentRows(paymentRows)
-      const amountWithoutVat = paymentSummary.amount_without_vat ?? procurement.contract_budget ?? procurement.budget ?? null
-      const amountWithVat = paymentSummary.amount_with_vat
-
-      const cpvItems = ((cpvResult.data ?? []) as Array<{ cpv_key: string | null; cpv_value: string | null }>)
-        .map((item) => ({
-          code: clean(item.cpv_key) || '—',
-          label: clean(item.cpv_value) || '—',
-        }))
-        .filter((item) => item.code !== '—' || item.label !== '—')
-        .reduce<Array<{ code: string; label: string }>>((acc, current) => {
-          if (!acc.find((item) => item.code === current.code && item.label === current.label)) acc.push(current)
-          return acc
-        }, [])
-
-      const primaryCpv = cpvItems[0] ?? null
-      const organization = ((organizationResult.data ?? []) as Array<{
-        organization_normalized_value: string | null
-        organization_value: string | null
-        authority_scope: ContractAuthorityScope | null
-      }>)[0] ?? null
-      const municipality = ((municipalityResult.data ?? []) as Array<{
-        municipality_normalized_value: string | null
-        municipality_value: string | null
-      }>)[0] ?? null
-      const region = ((regionResult.data ?? []) as Array<{
-        region_normalized_value: string | null
-        region_value: string | null
-      }>)[0] ?? null
-      const beneficiary = paymentSummary.beneficiary_name ?? row.beneficiary_name
-      const whyText = firstPipePart(procurement.short_descriptions) ?? primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
-      const cpvLabel = primaryCpv?.label ?? clean(row.cpv_value) ?? '—'
-      const contractRelatedAda = clean(procurement.contract_related_ada)
-      const diavgeiaAda = clean(procurement.diavgeia_ada)
-      const organizationName = clean(organization?.organization_normalized_value) || clean(organization?.organization_value) || clean(row.organization_value) || '—'
-      const who = buildContractAuthorityLabel({
-        canonicalOwnerScope: clean(procurement.canonical_owner_scope),
-        organizationScope: clean(organization?.authority_scope),
-        organizationName,
-        municipalityLabel: clean(municipality?.municipality_normalized_value) || clean(municipality?.municipality_value),
-        regionLabel: clean(region?.region_normalized_value) || clean(region?.region_value),
-      })
-      const modal: ContractModalContract = {
-        id: String(procurement.id),
-        who,
-        what: clean(procurement.title) || clean(row.title) || '—',
-        when: fmtDateLabel(cleanText(procurement.submission_at)),
-        why: whyText,
-        beneficiary: clean(beneficiary) || '—',
-        contractType: clean(procurement.procedure_type_value) || clean(row.procedure_type_value) || '—',
-        howMuch: fmtEur(amountWithoutVat),
-        withoutVatAmount: fmtEur(amountWithoutVat),
-        withVatAmount: fmtEur(amountWithVat),
-        referenceNumber: clean(procurement.reference_number) || clean(row.reference_number) || '—',
-        contractNumber: clean(procurement.contract_number) || '—',
-        cpv: cpvLabel,
-        cpvCode: primaryCpv?.code ?? '—',
-        cpvItems,
-        signedAt: fmtDateLabel(cleanText(procurement.contract_signed_date)),
-        startDate: fmtDateLabel(cleanText(procurement.start_date)),
-        endDate: fmtDateLabel(cleanText(procurement.end_date)),
-        organizationVat: clean(procurement.organization_vat_number) || '—',
-        beneficiaryVat: clean(paymentSummary.beneficiary_vat_number) || '—',
-        beneficiaryGemi: clean(row.beneficiary_gemi) || null,
-        signers: clean(paymentSummary.signers) || '—',
-        assignCriteria: clean(procurement.assign_criteria) || '—',
-        contractKind: clean(procurement.contract_type) || '—',
-        awardProcedure: clean(procurement.award_procedure) || '—',
-        unitsOperator: clean(procurement.units_operator) || '—',
-        fundingCofund: clean(procurement.funding_details_cofund) || '—',
-        fundingSelf: clean(procurement.funding_details_self_fund) || '—',
-        fundingEspa: clean(procurement.funding_details_espa) || '—',
-        fundingRegular: clean(procurement.funding_details_regular_budget) || '—',
-        auctionRefNo: clean(procurement.auction_ref_no) || '—',
-        paymentRefNo: clean(paymentSummary.payment_ref_no) || '—',
-        shortDescription: firstPipePart(procurement.short_descriptions) ?? '—',
-        rawBudget: fmtEur(procurement.budget),
-        contractBudget: fmtEur(procurement.contract_budget),
-        contractRelatedAda: contractRelatedAda || '—',
-        previousReferenceNumber: clean(procurement.prev_reference_no) || '—',
-        nextReferenceNumber: clean(procurement.next_ref_no) || '—',
-        documentUrl: buildDiavgeiaDocumentUrl(contractRelatedAda, diavgeiaAda),
-      }
-
-      setSelectedContract(modal)
+      setSelectedContract(await loadContractModal(row))
+    } catch (error) {
+      console.error('Failed to load contract details', error)
     } finally {
       setOpeningContractId(null)
     }
@@ -960,16 +788,24 @@ export default function ContractsPage() {
     <div className={`contracts-page${selectedContract ? ' contracts-page--modal-open' : ''}`}>
       <DevViewToggle />
       <ComponentTag name="ContractsPage" />
-      <header className="contracts-header section-rule">
+      <header className="contracts-header contracts-header--amount-summary section-rule">
         <div>
           <div className="eyebrow">ΑΝΑΖΗΤΗΣΗ</div>
           <h1>Όλες οι Συμβάσεις</h1>
           <p>
             {loading
               ? 'Φόρτωση…'
-              : `${totalCount.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
+              : loadFailed
+                ? 'Δεν ήταν δυνατή η φόρτωση των συμβάσεων.'
+                : `${totalCount.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
           </p>
         </div>
+        <AmountSummary
+          {...amountSummary}
+          loading={loading}
+          loadFailed={loadFailed}
+          ariaLabel="Σύνολο συμβάσεων χωρίς ΦΠΑ"
+        />
       </header>
 
       <section className="contracts-filters section-rule">
@@ -978,8 +814,8 @@ export default function ContractsPage() {
           value={q}
           maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="π.χ. πυροπροστασία & προμήθεια !καύσιμα"
-          title="Χρησιμοποιήστε & για υποχρεωτικούς όρους και ! για εξαιρέσεις"
+          placeholder="π.χ. πυροπροστασία | πυρόσβεση"
+          title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
         />
         <select
           className="contracts-filter contracts-filter--procedure"
@@ -1114,6 +950,11 @@ export default function ContractsPage() {
                 })}
               </tbody>
             </table>
+            {loadFailed && (
+              <article className="wire-item">
+                <h2>Δεν ήταν δυνατή η φόρτωση των συμβάσεων. Δοκιμάστε ξανά.</h2>
+              </article>
+            )}
             <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
               <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
               <span>Σελίδα {page} / {totalPages}</span>

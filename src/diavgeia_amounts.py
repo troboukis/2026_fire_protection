@@ -9,6 +9,20 @@ from __future__ import annotations
 
 from collections.abc import Mapping
 from typing import Any
+import csv
+from functools import lru_cache
+from pathlib import Path
+
+PDF_PAYMENT_AMOUNTS_PATH = Path(__file__).resolve().parents[1] / 'data' / 'mappings' / 'diavgeia_payment_pdf_amounts.csv'
+
+
+@lru_cache(maxsize=1)
+def load_pdf_payment_amounts() -> dict[str, str]:
+    """PDF-derived fallback used only when API amount fields are absent."""
+    if not PDF_PAYMENT_AMOUNTS_PATH.exists():
+        return {}
+    with PDF_PAYMENT_AMOUNTS_PATH.open(encoding='utf-8', newline='') as handle:
+        return {row['ada']: row['amount'] for row in csv.DictReader(handle)}
 
 
 DIAVGEIA_AMOUNT_SOURCE_COLUMNS = (
@@ -44,4 +58,8 @@ def resolve_diavgeia_amount_text(row: Mapping[str, Any]) -> str | None:
         value = amount_text(row.get(column))
         if value is not None:
             return value
+    if row.get('decisionType') == 'ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ':
+        ada = amount_text(row.get('ada'))
+        if ada:
+            return load_pdf_payment_amounts().get(ada)
     return None
