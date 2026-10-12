@@ -1,15 +1,24 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/nytimes/564515908/nyt-pos-oi-talimpan-ergaleiopoioyn-ton-fovo-tis-eyropis-gia-toys-metanastes/",
-      "title": "ΝΥΤ: Πώς οι Ταλιμπάν εργαλειοποιούν τον φόβο της Ευρώπης για τους μετανάστες",
-      "normalized_title": "ΝΥΤ: ΠΩΣ ΟΙ ΤΑΛΙΜΠΑΝ ΕΡΓΑΛΕΙΟΠΟΙΟΥΝ ΤΟΝ ΦΟΒΟ ΤΗΣ ΕΥΡΩΠΗΣ ΓΙΑ ΤΟΥΣ ΜΕΤΑΝΑΣΤΕΣ",
+      "url": "https://www.kathimerini.gr/world/564515950/nompel-oikonomias-stoys-rompert-chol-kai-maikl-goyntfornt-gia-ta-themelia-tis-makrooikonomikis-statheropoiisis/",
+      "title": "Νόμπελ Οικονομίας: Στους Ρόμπερτ Χολ και Μάικλ Γούντφορντ «για τα θεμέλια της μακροοικονομικής σταθεροποίησης»",
+      "normalized_title": "ΝΟΜΠΕΛ ΟΙΚΟΝΟΜΙΑΣ: ΣΤΟΥΣ ΡΟΜΠΕΡΤ ΧΟΛ ΚΑΙ ΜΑΙΚΛ ΓΟΥΝΤΦΟΡΝΤ «ΓΙΑ ΤΑ ΘΕΜΕΛΙΑ ΤΗΣ ΜΑΚΡΟΟΙΚΟΝΟΜΙΚΗΣ ΣΤΑΘΕΡΟΠΟΙΗΣΗΣ»",
       "seen_urls": [
-        "https://www.kathimerini.gr/nytimes/564515908/nyt-pos-oi-talimpan-ergaleiopoioyn-ton-fovo-tis-eyropis-gia-toys-metanastes/",
-        "https://www.kathimerini.gr/society/564516028/social-media-apo-1i-ianoyarioy-o-koftis-gia-paidia-kato-ton-15-eton-ti-provlepetai/",
-        "https://www.kathimerini.gr/opinion/564512989/poioi-psifoforoi-mporoyn-na-epistrepsoyn-sti-n-d/"
+        "https://www.kathimerini.gr/world/564515950/nompel-oikonomias-stoys-rompert-chol-kai-maikl-goyntfornt-gia-ta-themelia-tis-makrooikonomikis-statheropoiisis/",
+        "https://www.kathimerini.gr/society/564516112/ektakto-deltio-emy-epideinosi-me-ischyres-vroches-kai-kataigides/",
+        "https://www.kathimerini.gr/world/564516106/to-iran-akomi-exetazei-tin-apantisi-stis-ipa-ti-leei-gia-choythi-kai-saoydaraves/",
+        "https://www.kathimerini.gr/culture/agenda/564516097/exodos-stin-athina-ti-deytera-12-10-enoikiazetai-kai-bijoux-de-kan/",
+        "https://www.kathimerini.gr/society/564516058/ston-anakriti-o-gynaikologos-poy-katigoreitai-gia-pornografia-anilikon/",
+        "https://www.kathimerini.gr/world/564516070/gallia-dyo-ekpaideytikoi-traymaties-apo-pyrovolismoys-se-scholeio-synelifthi-14chronos/",
+        "https://www.kathimerini.gr/society/564516040/diki-gia-ta-tempi-apantiseis-gia-ti-fotia-zitei-i-oikogeneia-toy-iordani-adamaki/",
+        "https://www.kathimerini.gr/world/564516067/india-chiliades-prosagoges-kai-nees-kinitopoiiseis-ton-katsaridon-gia-tin-klopi-psifon/",
+        "https://www.kathimerini.gr/society/564516025/prosvasi-anilikon-sta-social-media-28-erotapantiseis-gia-to-nomoschedio/",
+        "https://www.kathimerini.gr/visual/video/564515914/einai-ora-gia-rizospastikes-allages-stin-eyropaiki-agora-stegasis/",
+        "https://www.kathimerini.gr/world/564516046/e-e-mparaz-kyroseon-kata-tis-rosias-sti-skia-tis-symfonias-tramp-poytin/",
+        "https://www.kathimerini.gr/world/564516037/kampanaki-apo-ton-proedro-tis-microsoft-to-gala-kai-ta-plyntiria-roychon-ypokeintai-se-perissoteroys-kanones-apo-tin-ai/"
       ],
-      "seen_at_utc": "2026-10-12T09:30:05.966534+00:00"
+      "seen_at_utc": "2026-10-12T09:51:16.609208+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,106 +1270,45 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1893436/video-stin-euelpidon-o-52hronos-gunaikologos-pou-katigoreitai-gia-pornografia-anilikon/?utm_source=rss",
-      "title": "Βίντεο: Στην Ευελπίδων ο 52χρονος γυναικολόγος που κατηγορείται για πορνογραφία ανηλίκων",
-      "normalized_title": "ΒΙΝΤΕΟ: ΣΤΗΝ ΕΥΕΛΠΙΔΩΝ Ο 52ΧΡΟΝΟΣ ΓΥΝΑΙΚΟΛΟΓΟΣ ΠΟΥ ΚΑΤΗΓΟΡΕΙΤΑΙ ΓΙΑ ΠΟΡΝΟΓΡΑΦΙΑ ΑΝΗΛΙΚΩΝ",
+      "url": "https://www.protothema.gr/greece/article/1893450/ektakto-deltio-emu-ishures-kataigides-halazi-kai-anemoi-eos-9-bofor-to-epomeno-diimero-poies-periohes-tha-epireastoun/?utm_source=rss",
+      "title": "Έκτακτο δελτίο επιδείνωσης καιρού με βροχές και καταιγίδες Τρίτη και Τετάρτη, ποιες περιοχές θα επηρεαστούν",
+      "normalized_title": "ΕΚΤΑΚΤΟ ΔΕΛΤΙΟ ΕΠΙΔΕΙΝΩΣΗΣ ΚΑΙΡΟΥ ΜΕ ΒΡΟΧΕΣ ΚΑΙ ΚΑΤΑΙΓΙΔΕΣ ΤΡΙΤΗ ΚΑΙ ΤΕΤΑΡΤΗ, ΠΟΙΕΣ ΠΕΡΙΟΧΕΣ ΘΑ ΕΠΗΡΕΑΣΤΟΥΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1893436/video-stin-euelpidon-o-52hronos-gunaikologos-pou-katigoreitai-gia-pornografia-anilikon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893435/28-erotapadiseis-gia-to-bloko-sta-social-media-stous-kato-ton-15-ti-ishuei-gia-prostima-ka/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893406/pethane-o-omotimos-kathigitis-tou-ekpa-manolis-hairetakis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893398/mihailidou-apo-to-2019-meiosame-pano-apo-50-ton-arithmo-ton-paidion-pou-zoun-se-idrumata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893385/pos-tha-leitourgei-o-koftis-sta-social-media-gia-paidia-kato-ton-15-eton-live-i-parousiasi-ton-metron/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893379/louketo-simera-stin-kliniki-tis-thermis-pou-pragmatopoiouse-himeiotherapeies-horis-na-ehei-ti-shetiki-adeia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893374/den-peirazo-kanenan-oso-mauros-eimai-toso-aspra-einai-ta-hartia-mou-leei-o-paiteris-meta-ti-sullipsi-tou-gia-hrei/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893370/eisai-iroas-tou-spitiou-pos-i-summoria-me-tis-apates-prospathouse-na-apospasei-apo-anilikous-kosmimata-rologia-kai-lires/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893363/den-diapistothike-diarroi-aeriou-sti-grava-leei-o-dimos-athinaion-kleisto-mehri-na-exakrivothei-i-aitia-tis-osmis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893361/diki-gia-ta-tebi-den-eidame-pote-ti-mitera-mas-irthe-sfragismeno-to-feretro-katethese-i-kori-ergazomenis-sto-treno/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893360/eparsi-tis-ellinikis-simaias-stin-akropoli-gia-tin-82i-epeteio-apo-tin-apeleutherosi-tis-athinas-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893352/sto-autoforo-o-methusmenos-odigos-pou-boukare-me-to-autokinito-tou-se-taverna-gemati-pelates-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893348/i-diadromi-tou-filippou-kabouri-apo-tin-trash-tv-stin-arpagi-tou-laos-kai-tora-sti-fulaki-gia-tin-apati-ston-efka/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893338/pos-ellada-kai-kupros-esosan-tin-teleutaia-stigmi-to-oikopedo-tous-sto-diastima-i-istoria/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893330/kataggelia-tis-kuprou-ston-oie-659-paraviaseis-apo-tourkika-mahitika-drones-kai-polemika-ploia-se-duo-mines/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893323/sullipseis-21hronou-kai-22hronou-gia-epeisodio-me-epivates-taxi-ston-volo-katevasan-24hrono-kai-25hrono/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893308/pigan-na-exapatisoun-62hroni-sti-thessaloniki-prospoioumenoi-tous-logistes-alla-epesan-se-pagida/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893307/thanatiforo-trohaio-ston-voak-32hronos-parasurthike-apo-dierhomeno-autokinito/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893301/se-poious-neous-kladous-einai-upohreotiki-apo-simera-i-psifiaki-karta-ergasias/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893298/autokinito-tulihthike-stis-floges-en-kinisei-stin-egnatia-odo-diakopike-prosorina-i-kukloforia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893297/allagi-oras-pote-gurizoume-ta-rologia-mia-ora-piso/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893295/live-i-kinisi-stous-dromous-sto-kokkino-o-kifisos-45leptes-kathusteriseis-stin-attiki-odo-pou-allou-uparhoun-provlimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893283/o-62hronos-gios-tis-89hronis-o-vasikos-upoptos-gia-ton-thanato-tis-sto-menidi-marturies-oti-sto-parelthon-tin-kunigouse/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893278/sunehizodai-oi-metanasteutikes-roes-pano-apo-240-metanastes-diasothikan-notia-tis-ierapetras-kai-tis-gaudou/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893267/sti-fulaki-o-kabouris-kai-i-suzugos-tou-kai-alloi-tesseris-gia-tin-apati-ston-efka/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893264/otan-to-edafos-upohorei-oi-periohes-pou-epireazodai-apo-tin-siopili-apeili-tis-uperadlisis-ton-udaton-kathigitis-tou-eb/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893256/halaei-o-kairos-me-kataigides-kai-ptosi-tis-thermokrasias-i-prognosi-tsatrafullia-sto-protothema/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893251/telos-ta-social-media-gia-paidia-kato-ton-15-eton-simera-oi-anakoinoseis-gia-to-neo-plaisio/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893248/thriler-sto-menidi-nekri-89hroni-se-spiti-ehei-prosahthei-o-62hronos-gios-thanato-apo-asfuxia-vlepei-o-iatrodikastis/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893247/adistrofi-metrisi-gia-apadiseis-stin-aade-ta-850000-euro-tou-karvela-kai-ta-timologia-pou-eleghodai-gia-ti-vissi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893233/edopistikan-kai-diasothikan-peripou-77-metanastes-se-duo-lemvous-anoihta-tis-ierapetras/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893207/allazoun-ualokatharistires-horis-adeia-kai-apaitoun-hrimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893204/sunelifthi-39hronos-gia-paranomi-metafora-metanaston-sti-thessaloniki/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893202/atuhima-gia-ton-dimarho-anatolikis-manis-petro-andreako-diasolinothike-meta-apo-ptosi-apo-skalia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893199/sunelifthi-26hronos-pou-gronthokopise-astunomiko-sto-prosopo-kata-ti-diarkeia-podosfairikou-agona/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893191/sunelifthi-63hronos-sti-thessaloniki-gia-katohi-kannavis-varous-ano-ton-12-kilon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893186/prosaraxi-istioforou-me-treis-epivainodes-stin-patmo-eisroi-udaton-sto-skafos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893182/video-agrios-xulodarmos-anilikou-apo-omada-nearon-stin-kupro-ton-htupousan-me-klotsies-kai-grothies-sto-kefali/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893178/sunelifthi-22hronos-pou-odigouse-autokinito-sti-thessaloniki-me-tahutita-166-hlmora-se-simeio-me-orio-ta-90/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893172/apateones-kratisan-86hroni-stin-fthiotida-treis-ores-sto-tilefono-kai-tis-arpaxan-hrimata-kai-kosmimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893158/eimai-apo-ti-dei-elege-o-38hronos-pou-ekleve-kalummata-freation-ston-peiraia-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893157/prosaraxi-skafous-anapsuhis-me-duo-epivainodes-stin-aigina/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893150/tzoker-111026-ta-apotelesmata-tis-klirosis-ta-noumera-pou-kerdizoun/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893148/sunagermos-gia-tin-exafanisi-14hronou-sti-makrinitsa/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893136/proin-podosfairistis-tou-platania-o-34hronos-pou-skotothike-to-savvato-se-trohaio-sta-hania/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893129/plimmurise-dromos-sti-siviri-halkidikis-meta-apo-vrohoptosi-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893125/trohaio-me-duo-traumaties-stin-isthmou-epidaurou-autokinito-katelixe-stis-prostateutikes-bares/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893121/prosorini-diakopi-tileoptikou-kai-radiofonikou-simatos-tis-ert-sto-kedro-ekpobis-akarnanikon-logo-diakopis-reumatos/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893117/apati-ston-efka-se-exelixi-oi-apologies-allilokatigories-kabouri-kai-logiston/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893115/to-upex-kalei-tous-ellines-na-apofeugoun-ta-taxidia-sti-saoudiki-aravia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893114/epesan-99-hiliosta-vrohis-sto-menidi-aitoloakarnanias-hartis-me-tis-periohes-me-ta-megalutera-upsi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893106/purovolismoi-metaxu-roma-to-vradu-tou-savvatou-sti-lamia-egine-efodos-tis-astunomias-se-spitia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893099/erotiki-suneuresi-katelixe-se-aimatiro-kavga-sti-thessaloniki-trans-htupise-21hrono-me-touvlo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893096/kleista-tha-parameinoun-ta-sholeia-stin-grava-doukas-adiapragmateuto-to-thema-tis-asfaleias-mathiton-kai-ekpaideutikon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893092/sfodri-vrohoptosi-kai-halazi-ston-volo-plimmurisan-oi-dromoi-deite-video-kai-fotografies/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893082/aurio-oi-anakoinoseis-gia-to-orio-ilikias-gia-tous-anilikous-sta-social-media/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893080/nekros-kai-o-deuteros-traumatias-apo-to-dustuhima-stin-motor-oil/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893076/anartisi-patera-20hronis-pethane-mdma-sti-thessaloniki-den-uparhei-apohairetismos-gia-mia-agapi-pou-den-teleionei-pote/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893074/prosklisi-hristodoulidi-stin-tourkia-meta-to-bloko-tis-aguras/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893072/apisteuto-theama-ston-euvoiko-fokia-kai-20-delfinia-ekanan-volta-deite-video/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893071/maimou-upalliloi-tou-deddie-kai-logistes-exapatousan-polites-stin-attiki-pano-apo-800000-euro-i-leia/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893064/kleisto-aurio-gumnasio-vasilikon-thessaloniki-meta-tin-ptosi-sova-se-aithousa-nea-autopsia-apo-mihanikous/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893063/sunelifthi-33hronos-pou-listepse-venzinadiko-sto-palaio-faliro-me-pistoli-kai-kleidose-ton-upallilo/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893061/thlipsi-gia-tin-24hroni-fiori-apo-tin-aigina-kai-ton-28hrono-gianni-apo-fournous-korseon-skotothikan-trohaio-thivon/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893055/heiropedes-se-38hrono-ston-peiraia-pou-eihe-klepsei-toulahiston-150-kalummata-freation/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893053/sudaxiouhos-eihe-apothikeumeno-pikriko-oxu-sto-spiti-tou-stin-kozani-purotehnourgoi-to-apomakrunan-kai-to-exoudeterosan/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893051/fotia-se-hamili-vlastisi-stin-adissa-lesvou-kinitopoiithikan-12-purosvestes/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893039/kleinei-gia-duo-imeres-i-koilada-ton-tebon-poies-ores-tha-diakopei-i-kukloforia-kai-apo-pou-tha-pernoun-ta-ohimata/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893036/o-vasilis-paiteris-anevase-video-mesa-apo-to-kratitirio-de-hrostao-se-kanenan-den-eho-na-doso-logo-se-kanenan/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893029/attiki-etoimazetai-to-neo-terastio-parking/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1893025/kairos-sahariani-skoni-kai-laspovrohes-simera-se-polles-periohes-pou-tha-einai-edonotera-ta-fainomena/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1893450/ektakto-deltio-emu-ishures-kataigides-halazi-kai-anemoi-eos-9-bofor-to-epomeno-diimero-poies-periohes-tha-epireastoun/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1893441/foititiki-stegi-epidomata-eos-2500-euro-8600-nees-klines-kai-proti-estia-gia-tin-askt/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-12T09:19:39.072713+00:00"
+      "seen_at_utc": "2026-10-12T09:51:16.609300+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1486371/diki-gia-tempi-ehasa-ti-mama-moy-alla-kai-ti-fili-moy-den-ypirhe-ihnos-asfaleias-katethesan-syggeneis-thymaton/",
-      "title": "Δίκη για Τέμπη: «Έχασα τη μαμά μου αλλά και τη φίλη μου – Δεν υπήρχε ίχνος ασφάλειας», κατέθεσαν συγγενείς θυμάτων",
-      "normalized_title": "ΔΙΚΗ ΓΙΑ ΤΕΜΠΗ: «ΕΧΑΣΑ ΤΗ ΜΑΜΑ ΜΟΥ ΑΛΛΑ ΚΑΙ ΤΗ ΦΙΛΗ ΜΟΥ – ΔΕΝ ΥΠΗΡΧΕ ΙΧΝΟΣ ΑΣΦΑΛΕΙΑΣ», ΚΑΤΕΘΕΣΑΝ ΣΥΓΓΕΝΕΙΣ ΘΥΜΑΤΩΝ",
+      "url": "https://www.efsyn.gr/politiki/1486331/tsoykalas-o-mitsotakis-vazontas-ton-pihi-sto-25-omologei-tin-itta-kai-stelnei-minyma-stoys-esokommatikoys-antipaloys-toy/",
+      "title": "Τσουκαλάς: Ο Μητσοτάκης βάζοντας τον πήχη στο 25% ομολογεί την ήττα και στέλνει μήνυμα στους εσωκομματικούς αντιπάλους του",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: Ο ΜΗΤΣΟΤΑΚΗΣ ΒΑΖΟΝΤΑΣ ΤΟΝ ΠΗΧΗ ΣΤΟ 25% ΟΜΟΛΟΓΕΙ ΤΗΝ ΗΤΤΑ ΚΑΙ ΣΤΕΛΝΕΙ ΜΗΝΥΜΑ ΣΤΟΥΣ ΕΣΩΚΟΜΜΑΤΙΚΟΥΣ ΑΝΤΙΠΑΛΟΥΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1486371/diki-gia-tempi-ehasa-ti-mama-moy-alla-kai-ti-fili-moy-den-ypirhe-ihnos-asfaleias-katethesan-syggeneis-thymaton/",
-        "https://www.efsyn.gr/kosmos/1486362/zelenski-aifnidiastike-me-ta-peri-energeiakis-ekeheirias-toy-tramp-o-poytin-den-diavazei-to-truth-social/",
-        "https://www.efsyn.gr/ellada/1486277/thessaloniki-metrontas-provlimata-dihos-giatreia/",
-        "https://www.efsyn.gr/politiki/1486353/stin-elas-episima-o-vasilis-kokkalis-gnorizo-tis-dynatotites-toy-alexi-tsipra/"
+        "https://www.efsyn.gr/politiki/1486331/tsoykalas-o-mitsotakis-vazontas-ton-pihi-sto-25-omologei-tin-itta-kai-stelnei-minyma-stoys-esokommatikoys-antipaloys-toy/",
+        "https://www.efsyn.gr/politiki/1486367/akoys-ta-tragoydia-toys-akoy-kai-ti-foni-toys-tin-triti-i-ekdilosi-arvaniti-stin-eyrovoyli-gia-ta-dikaiomata-ton-kallitehnon/",
+        "https://www.efsyn.gr/ellada/1486412/ektakto-deltio-epideinosis-kairoy-xekina-tin-triti-i-48ori-kakokairia-pote-tha-htypisei-tin-attiki/",
+        "https://www.efsyn.gr/politiki/1486387/minysi-tis-papadopoyloy-kata-toy-konstantopoyloy-gia-exyvrisi-kai-apeili/",
+        "https://www.efsyn.gr/ellada/1486388/patra-xananoixe-to-6o-lykeio-12-imeres-meta-tin-ptosi-sovadon-se-aithoysa/",
+        "https://www.efsyn.gr/politiki/1486383/1486383/",
+        "https://www.efsyn.gr/kosmos/1486395/toyrkia-diplo-kampanaki-apo-eyropi-gia-to-systima-psyhikis-ygeias-kai-tis-synthikes-kratisis-sti-fylaki-imrali/",
+        "https://www.efsyn.gr/life/1486381/prokalei-xana-o-gonidis-gia-kasidiari-den-eimai-fasistas-eimai-artistas-an-gyriza-ton-hrono-piso-tha-ta-xanalega/"
       ],
-      "seen_at_utc": "2026-10-12T09:30:05.966665+00:00"
+      "seen_at_utc": "2026-10-12T09:51:16.609275+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/12/politics/androulakis-den-mporei-na-yparxei-isxyri-elliniki-oikonomia-xoris-stiriksi-stis-mikromesaies-epixeiriseis/",
-      "title": "Ανδρουλάκης: Δεν μπορεί να υπάρχει ισχυρή ελληνική οικονομία χωρίς στήριξη στις μικρομεσαίες επιχειρήσεις",
-      "normalized_title": "ΑΝΔΡΟΥΛΑΚΗΣ: ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΥΠΑΡΧΕΙ ΙΣΧΥΡΗ ΕΛΛΗΝΙΚΗ ΟΙΚΟΝΟΜΙΑ ΧΩΡΙΣ ΣΤΗΡΙΞΗ ΣΤΙΣ ΜΙΚΡΟΜΕΣΑΙΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ",
+      "url": "https://www.in.gr/2026/10/12/politics/aftodioikisi/parko-sto-nayplio-entaxthike-se-pagkosmio-diktyo/",
+      "title": "Πάρκο στο Ναύπλιο εντάχθηκε σε παγκόσμιο δίκτυο",
+      "normalized_title": "ΠΑΡΚΟ ΣΤΟ ΝΑΥΠΛΙΟ ΕΝΤΑΧΘΗΚΕ ΣΕ ΠΑΓΚΟΣΜΙΟ ΔΙΚΤΥΟ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/12/politics/androulakis-den-mporei-na-yparxei-isxyri-elliniki-oikonomia-xoris-stiriksi-stis-mikromesaies-epixeiriseis/",
-        "https://www.in.gr/2026/10/12/politics/ti-symporeysi-tou-me-tin-elas-anakoinose-o-vasilis-kokkalis/"
+        "https://www.in.gr/2026/10/12/politics/aftodioikisi/parko-sto-nayplio-entaxthike-se-pagkosmio-diktyo/",
+        "https://www.in.gr/2026/10/12/world/gallia-pyrovolismoi-se-sxoleio-konta-sti-masalia-traymatistikan-dyo-ekpaideytikoi/",
+        "https://www.in.gr/2026/10/12/greece/kairos-ektakto-deltio-epideinosis-apo-tin-emy-48ori-kakokairia-me-isxyres-kataigides/",
+        "https://www.in.gr/2026/10/12/world/polonia-perissoteroi-apo-20-000-astynomikoi-sta-sxoleia-meta-apo-treis-enoples-epitheseis-se-tesseris-imeres/",
+        "https://www.in.gr/2026/10/12/politics/epikairotita/papadopoulou-elas-katethese-egklisi-se-varos-tou-konstantopoulou-gia-eksyvrisi-kai-apeili-ti-zita/",
+        "https://www.in.gr/2026/10/12/sports/football/europa-league/neo-provlima-sti-marseig-enopsei-olympiakou/"
       ],
-      "seen_at_utc": "2026-10-12T09:30:05.966600+00:00"
+      "seen_at_utc": "2026-10-12T09:51:16.609245+00:00"
     }
   },
-  "updated_at_utc": "2026-10-12T09:30:05.966751+00:00"
+  "updated_at_utc": "2026-10-12T09:51:16.609380+00:00"
 }
