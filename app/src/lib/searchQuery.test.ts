@@ -4,10 +4,15 @@ import {
   MAX_SEARCH_TERM_LENGTH,
   MAX_SEARCH_TERMS,
   matchesSearchQuery,
+  normalizeSearchText,
   parseSearchQuery,
 } from './searchQuery'
 
 describe('search query syntax', () => {
+  it.each(['μάνδρα', 'μανδρα', 'ΜΑΝΔΡΑ', 'ΜάνΔρΑ', '  μάνδρα  '])('matches the Mandra organization label with query %s', (query) => {
+    expect(normalizeSearchText('ΔΗΜΟΣ · ΜΑΝΔΡΑΣ - ΕΙΔΥΛΛΙΑΣ').includes(normalizeSearchText(query))).toBe(true)
+  })
+
   it('keeps a plain query as one phrase for backwards compatibility', () => {
     expect(parseSearchQuery('δασική προστασία')).toEqual([
       { value: 'ΔΑΣΙΚΗ ΠΡΟΣΤΑΣΙΑ', excluded: false },

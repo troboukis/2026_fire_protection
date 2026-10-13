@@ -5,9 +5,11 @@ import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
 import DiavgeiaModal from '../components/DiavgeiaModal'
+import OrganizationFilter from '../components/OrganizationFilter'
 import type { DiavgeiaDecisionCardView } from '../components/DiavgeiaDecisionCard'
 import { parseDiavgeiaAmountCents, summarizeDiavgeiaAmounts } from '../lib/diavgeiaAmount'
 import { buildDiavgeiaDecisionCardView } from '../lib/diavgeiaDecision'
+import { sortDiavgeiaRows, type DiavgeiaSort } from '../lib/diavgeiaSort'
 import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
@@ -44,6 +46,30 @@ function fmtDate(iso: string | null): string {
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
   return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
+}
+
+function organizationLabel(row: Pick<DiavgeiaPageRow, 'org_type' | 'org_name_clean'>): string {
+  return [clean(row.org_type), clean(row.org_name_clean)].filter(Boolean).join(' · ')
+}
+
+async function loadOrganizationOptions(signal: AbortSignal): Promise<string[]> {
+  const organizations = new Set<string>()
+  const batchSize = 1000
+  // Options cover all dates, independently of the filtered document snapshot.
+  for (let offset = 0; ; offset += batchSize) {
+    const { data, error } = await supabase
+      .from('diavgeia')
+      .select('org_type, org_name_clean')
+      .order('id')
+      .range(offset, offset + batchSize - 1)
+      .abortSignal(signal)
+    if (error) throw error
+    for (const row of data ?? []) {
+      const label = organizationLabel(row)
+      if (label) organizations.add(label)
+    }
+    if ((data ?? []).length < batchSize) return [...organizations].sort((a, b) => a.localeCompare(b, 'el'))
+  }
 }
 
 function fmtEurFromText(value: string | null | undefined): string {
@@ -123,17 +149,43 @@ export default function DiavgeiaPage() {
   const [selectedDecision, setSelectedDecision] = useState<DiavgeiaDecisionCardView | null>(null)
   const [q, setQ] = useState(initialQ)
   const [decisionType, setDecisionType] = useState('')
+  const [organization, setOrganization] = useState('')
+  const [allOrganizations, setAllOrganizations] = useState<string[]>([])
+  const [organizationsLoading, setOrganizationsLoading] = useState(true)
+  const [organizationsFailed, setOrganizationsFailed] = useState(false)
   const [excludeContractAmounts, setExcludeContractAmounts] = useState(false)
   const [dateFrom, setDateFrom] = useState(initialDateFrom)
   const [dateTo, setDateTo] = useState(initialDateTo)
   const [municipalityKey, setMunicipalityKey] = useState(initialMunicipalityKey)
   const [municipalityLabel, setMunicipalityLabel] = useState('')
   const [page, setPage] = useState(1)
+  const [sort, setSort] = useState<DiavgeiaSort>('date_desc')
   const pageSize = 50
+
+  useEffect(() => {
+    let cancelled = false
+    const controller = new AbortController()
+    const load = async () => {
+      try {
+        const options = await loadOrganizationOptions(controller.signal)
+        if (!cancelled) setAllOrganizations(options)
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Failed to load organization options', error)
+          setOrganizationsFailed(true)
+        }
+      } finally {
+        if (!cancelled) setOrganizationsLoading(false)
+      }
+    }
+    void load()
+    return () => { cancelled = true; controller.abort() }
+  }, [])
 
   useEffect(() => {
     setQ(initialQ)
     setDecisionType('')
+    setOrganization('')
     setMunicipalityKey(initialMunicipalityKey)
     setDateFrom(initialDateFrom)
     setDateTo(initialDateTo)
@@ -211,8 +263,15 @@ export default function DiavgeiaPage() {
     return [...types].sort((a, b) => a.localeCompare(b, 'el'))
   }, [sourceRows, decisionType])
 
+  const organizationOptions = useMemo(() => {
+    const organizations = new Set([...allOrganizations, ...sourceRows.map(organizationLabel).filter(Boolean)])
+    if (organization) organizations.add(organization)
+    return [...organizations].sort((a, b) => a.localeCompare(b, 'el'))
+  }, [allOrganizations, sourceRows, organization])
+
   const filteredRows = useMemo(() => sourceRows.filter((row) => (
     (!decisionType || clean(row.diavgeia_document_type_decision_uid) === decisionType)
+    && (!organization || organizationLabel(row) === organization)
     && matchesSearchQuery([
       row.subject,
       row.org_type,
@@ -220,7 +279,7 @@ export default function DiavgeiaPage() {
       row.ada,
       row.diavgeia_document_type_decision_uid,
     ].join(' '), q)
-  )), [sourceRows, q, decisionType])
+  )), [sourceRows, q, decisionType, organization])
   const paymentSummary = useMemo(() => {
     if (decisionType !== 'ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ') return null
     const summary = summarizeDiavgeiaAmounts(filteredRows)
@@ -233,10 +292,11 @@ export default function DiavgeiaPage() {
     return summary
   }, [decisionType, filteredRows, excludeContractAmounts, contractLinkedDecisionIds])
   const totalCount = filteredRows.length
+  const sortedRows = useMemo(() => sortDiavgeiaRows(filteredRows, sort), [filteredRows, sort])
   const rows = useMemo(() => {
     const pageStart = Math.max((page - 1) * pageSize, 0)
-    return filteredRows.slice(pageStart, pageStart + pageSize)
-  }, [filteredRows, page])
+    return sortedRows.slice(pageStart, pageStart + pageSize)
+  }, [sortedRows, page])
   const minDecisionDate = sourceRows[0]?.min_decision_date ?? null
   const maxDecisionDate = sourceRows[0]?.max_decision_date ?? null
 
@@ -249,18 +309,6 @@ export default function DiavgeiaPage() {
   }, [dateFrom, dateTo, maxDecisionDate, minDecisionDate])
   const visibleDateFrom = dateFrom || isoDateInputValue(minDecisionDate)
   const visibleDateTo = dateTo || isoDateInputValue(maxDecisionDate)
-
-  const resetToLast30Days = () => {
-    setDateFrom(defaultDateFrom)
-    setDateTo(defaultDateTo)
-    setPage(1)
-  }
-
-  const showAllDates = () => {
-    setDateFrom('')
-    setDateTo('')
-    setPage(1)
-  }
 
   return (
     <div className={`contracts-page diavgeia-page${selectedDecision ? ' contracts-page--modal-open' : ''}`}>
@@ -306,6 +354,13 @@ export default function DiavgeiaPage() {
           placeholder="π.χ. πυροπροστασία | πυρόσβεση"
           title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
         />
+        <OrganizationFilter
+          options={organizationOptions}
+          loading={organizationsLoading}
+          failed={organizationsFailed}
+          value={organization}
+          onChange={(value) => { setOrganization(value); setPage(1) }}
+        />
         <select
           className="contracts-filter contracts-filter--decision-type"
           value={decisionType}
@@ -330,12 +385,6 @@ export default function DiavgeiaPage() {
           type="date"
           aria-label="Ημερομηνία έως"
         />
-        <button type="button" className="contracts-filter-button contracts-filter-button--recent" onClick={resetToLast30Days}>
-          Τελευταίες 30 ημέρες
-        </button>
-        <button type="button" className="contracts-filter-button contracts-filter-button--all" onClick={showAllDates}>
-          Όλο το διάστημα
-        </button>
       </section>
 
       <section className="contracts-table-wrap section-rule">
@@ -357,11 +406,41 @@ export default function DiavgeiaPage() {
               </colgroup>
               <thead>
                 <tr>
-                  <th>Ημερομηνία</th>
+                  <th aria-sort={sort.startsWith('date_') ? (sort === 'date_asc' ? 'ascending' : 'descending') : 'none'}>
+                    <button
+                      type="button"
+                      className={`contracts-sort-header${sort.startsWith('date_') ? ' contracts-sort-header--active' : ''}`}
+                      onClick={() => {
+                        setSort((current) => current === 'date_desc' ? 'date_asc' : 'date_desc')
+                        setPage(1)
+                      }}
+                      aria-label="Ταξινόμηση κατά ημερομηνία"
+                    >
+                      <span>Ημερομηνία</span>
+                      <span className="contracts-sort-header__icon">
+                        {sort.startsWith('date_') ? (sort === 'date_asc' ? '↑' : '↓') : '↕'}
+                      </span>
+                    </button>
+                  </th>
                   <th>Φορέας</th>
                   <th>Θέμα</th>
                   <th>Τύπος απόφασης</th>
-                  <th>Αξία</th>
+                  <th aria-sort={sort.startsWith('amount_') ? (sort === 'amount_asc' ? 'ascending' : 'descending') : 'none'}>
+                    <button
+                      type="button"
+                      className={`contracts-sort-header${sort.startsWith('amount_') ? ' contracts-sort-header--active' : ''}`}
+                      onClick={() => {
+                        setSort((current) => current === 'amount_desc' ? 'amount_asc' : 'amount_desc')
+                        setPage(1)
+                      }}
+                      aria-label="Ταξινόμηση κατά αξία"
+                    >
+                      <span>Αξία</span>
+                      <span className="contracts-sort-header__icon">
+                        {sort.startsWith('amount_') ? (sort === 'amount_asc' ? '↑' : '↓') : '↕'}
+                      </span>
+                    </button>
+                  </th>
                   <th>ΑΔΑ</th>
                 </tr>
               </thead>
@@ -369,7 +448,7 @@ export default function DiavgeiaPage() {
                 {rows.map((row) => {
                   const ada = clean(row.ada)
                   const href = clean(row.document_url) || (ada ? `https://diavgeia.gov.gr/doc/${ada}` : '')
-                  const orgLabel = [clean(row.org_type), clean(row.org_name_clean)].filter(Boolean).join(' · ') || '—'
+                  const orgLabel = organizationLabel(row) || '—'
                   return (
                     <tr key={row.id} className={contractLinkedDecisionIds.has(row.id) ? 'diavgeia-row--linked' : undefined}>
                       <td data-label="Ημερομηνία">{fmtDate(row.decision_date)}</td>

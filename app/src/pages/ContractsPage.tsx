@@ -6,10 +6,12 @@ import ContractModal, { type ContractModalContract } from '../components/Contrac
 import ComponentTag from '../components/ComponentTag'
 import DataLoadingCard from '../components/DataLoadingCard'
 import DevViewToggle from '../components/DevViewToggle'
+import SearchableSelectFilter from '../components/SearchableSelectFilter'
 import { attachBeneficiaryGemi } from '../lib/beneficiaryGemi'
 import { summarizeContractAmounts } from '../lib/contractAmount'
 import { downloadContractDocument } from '../lib/contractDocument'
 import { loadContractModal } from '../lib/contractModal'
+import { buildCpvFilterIndex, matchesContractCpv, type CpvFilterIndex, type CpvFilterRow } from '../lib/cpvFilter'
 import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
@@ -644,6 +646,10 @@ export default function ContractsPage() {
   const [openingContractId, setOpeningContractId] = useState<number | null>(null)
   const [q, setQ] = useState(initialFilters.q)
   const [procedure, setProcedure] = useState(initialFilters.procedure)
+  const [cpv, setCpv] = useState('')
+  const [cpvIndex, setCpvIndex] = useState<CpvFilterIndex>(new Map())
+  const [cpvLoading, setCpvLoading] = useState(true)
+  const [cpvFailed, setCpvFailed] = useState(false)
   const [procedureOptions, setProcedureOptions] = useState<string[]>([])
   const [municipalityNameTokens, setMunicipalityNameTokens] = useState<Set<string>>(new Set())
   const [dateFrom, setDateFrom] = useState(initialFilters.dateFrom)
@@ -659,6 +665,7 @@ export default function ContractsPage() {
   useEffect(() => {
     setQ(initialFilters.q)
     setProcedure(initialFilters.procedure)
+    setCpv('')
     setDateFrom(initialFilters.dateFrom)
     setDateTo(initialFilters.dateTo)
     setMinAmount(initialFilters.minAmount)
@@ -669,6 +676,38 @@ export default function ContractsPage() {
     setSelectedContract(null)
     setOpeningContractId(null)
   }, [initialFilters])
+
+  useEffect(() => {
+    let cancelled = false
+    const controller = new AbortController()
+    const loadCpv = async () => {
+      try {
+        const rows: CpvFilterRow[] = []
+        const batchSize = 1000
+        for (let offset = 0; ; offset += batchSize) {
+          const { data, error } = await supabase
+            .from('cpv')
+            .select('cpv_key, cpv_value, procurement_id')
+            .order('id')
+            .range(offset, offset + batchSize - 1)
+            .abortSignal(controller.signal)
+          if (error) throw error
+          rows.push(...(data ?? []))
+          if ((data ?? []).length < batchSize) break
+        }
+        if (!cancelled) setCpvIndex(buildCpvFilterIndex(rows))
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Failed to load CPV options', error)
+          setCpvFailed(true)
+        }
+      } finally {
+        if (!cancelled) setCpvLoading(false)
+      }
+    }
+    void loadCpv()
+    return () => { cancelled = true; controller.abort() }
+  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -749,16 +788,20 @@ export default function ContractsPage() {
     return () => { cancelled = true }
   }, [dateFrom, dateTo, organizationKeys, regionKey, municipalityKey, hasScopedSource])
 
+  const cpvOptions = useMemo(() => [...cpvIndex].map(([value, { label }]) => ({ value, label }))
+    .sort((a, b) => a.value.localeCompare(b.value)), [cpvIndex])
+
   const filteredRows = useMemo(() => {
     const min = minAmount ? Number(minAmount) : null
     const searchedRows = filterContractRowsByQuery(sourceRows, q)
       .filter((row) => !procedure || clean(row.procedure_type_value) === procedure)
+      .filter((row) => matchesContractCpv(row.id, cpv, cpvIndex))
       .filter((row) => {
         if (min == null || !Number.isFinite(min)) return true
         return Number(row.amount_without_vat ?? 0) >= min
       })
     return sortContractRows(searchedRows, sort)
-  }, [sourceRows, q, procedure, minAmount, sort])
+  }, [sourceRows, q, procedure, minAmount, sort, cpv, cpvIndex])
 
   const amountSummary = useMemo(() => summarizeContractAmounts(filteredRows), [filteredRows])
   const totalCount = filteredRows.length
@@ -808,7 +851,7 @@ export default function ContractsPage() {
         />
       </header>
 
-      <section className="contracts-filters section-rule">
+      <section className="contracts-filters contracts-filters--cpv section-rule">
         <input
           className="contracts-filter contracts-filter--search"
           value={q}
@@ -816,6 +859,19 @@ export default function ContractsPage() {
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
           placeholder="π.χ. πυροπροστασία | πυρόσβεση"
           title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
+        />
+        <SearchableSelectFilter
+          className="contracts-filter--cpv"
+          options={cpvOptions}
+          value={cpv}
+          onChange={(value) => { setCpv(value); setPage(1) }}
+          loading={cpvLoading}
+          failed={cpvFailed}
+          label="CPV"
+          allLabel="Όλα τα CPV"
+          loadingLabel="Φόρτωση CPV…"
+          failedLabel="Δεν ήταν δυνατή η φόρτωση των CPV."
+          emptyLabel="Δεν βρέθηκαν CPV."
         />
         <select
           className="contracts-filter contracts-filter--procedure"

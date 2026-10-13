@@ -16,7 +16,6 @@ import subprocess
 import tempfile
 import sys
 
-import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -73,7 +72,7 @@ def save_amount_mapping(results: list[dict], path: Path = PDF_PAYMENT_AMOUNTS_PA
     return len(extracted)
 
 
-def collect(row: dict, output: Path, *, extract_amount: bool = True, session=None, on_progress=None) -> dict:
+def collect(row: dict, output: Path, *, extract_amount: bool = True, download_pdf=None, on_progress=None) -> dict:
     ada = row['ada']
     pdf = ROOT / 'pdf' / f'{ada}.pdf'
     text_path = output / 'text' / f'{ada}.txt'
@@ -82,14 +81,11 @@ def collect(row: dict, output: Path, *, extract_amount: bool = True, session=Non
     try:
         if not pdf.exists():
             progress('Αίτημα λήψης PDF')
-            response = (session or requests).get(row['document_url'], timeout=(10, 60))
-            response.raise_for_status()
-            if not response.content.startswith(b'%PDF'):
-                raise ValueError('Response is not a PDF')
-            temporary_pdf = pdf.with_suffix('.pdf.part')
-            temporary_pdf.write_bytes(response.content)
-            temporary_pdf.replace(pdf)
-            progress(f'Αποθηκεύτηκαν {len(response.content):,} bytes')
+            if download_pdf is None:
+                from src.fetch_diavgeia import _download_pdf_to_path
+                download_pdf = _download_pdf_to_path
+            download_pdf(row['document_url'], pdf)
+            progress(f'Αποθηκεύτηκαν {pdf.stat().st_size:,} bytes')
         result['pdf_sha256'] = hashlib.sha256(pdf.read_bytes()).hexdigest()
         hash_path = text_path.with_suffix('.sha256')
         if text_path.exists() and hash_path.exists() and hash_path.read_text() == result['pdf_sha256']:

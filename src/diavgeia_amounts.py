@@ -15,6 +15,17 @@ from pathlib import Path
 
 PDF_PAYMENT_AMOUNTS_PATH = Path(__file__).resolve().parents[1] / 'data' / 'mappings' / 'diavgeia_payment_pdf_amounts.csv'
 
+# These decisions have incorrect API amounts. Their original PDFs
+# confirm the amounts below on pages 3 and 4. Apply the literal verified amount
+# before any API/CSV value so subsequent imports cannot restore the error.
+DIAVGEIA_AMOUNT_OVERRIDES = {
+    "61024653Π8-634": "779.140,14",
+    "6ΛΕΩ4653Π8-Ξ1Ξ": "146.519,72",
+    "Ρ1ΘΠ4653Π8-ΘΔΛ": "666.683,19",
+    "Ψ94Σ4653Π8-ΦΚΕ": "178.826,27",
+    "ΨΞΩΥ4653Π8-ΡΓΘ": "54.894,97",
+}
+
 
 @lru_cache(maxsize=1)
 def load_pdf_payment_amounts() -> dict[str, str]:
@@ -54,6 +65,9 @@ def resolve_diavgeia_amount_text(row: Mapping[str, Any]) -> str | None:
     Only one source column is expected for each decision type. Keeping an
     ordered fallback also makes older CSV snapshots safe to ingest.
     """
+    ada = amount_text(row.get("ada"))
+    if ada in DIAVGEIA_AMOUNT_OVERRIDES:
+        return DIAVGEIA_AMOUNT_OVERRIDES[ada]
     for column in DIAVGEIA_AMOUNT_SOURCE_COLUMNS:
         value = amount_text(row.get(column))
         if value is not None:

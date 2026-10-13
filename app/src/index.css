@@ -4203,24 +4203,119 @@ main {
 }
 
 .contracts-filters--diavgeia {
-  grid-template-columns: minmax(0, 2.4fr) 14rem repeat(2, minmax(8.5rem, 1fr)) repeat(2, auto);
+  grid-template-columns: minmax(0, 2.4fr) repeat(2, 14rem) repeat(2, minmax(8.5rem, 1fr));
 }
 
-.contracts-filter--decision-type {
+.contracts-filters--cpv {
+  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1.5fr) minmax(10rem, 1.2fr) repeat(2, minmax(8.5rem, 1fr)) minmax(12rem, 1.25fr);
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+  .contracts-filters--cpv {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .contracts-filters--cpv .contracts-filter--search,
+  .contracts-filters--cpv .contracts-filter--cpv {
+    grid-column: span 2;
+  }
+}
+
+.contracts-filter--decision-type,
+.contracts-filter--organization {
   text-overflow: ellipsis;
+}
+
+.searchable-select-filter {
+  position: relative;
+  min-width: 0;
+}
+
+/* The select supplies the field and arrow; the bounded list handles selection. */
+.contracts-filters .searchable-select-filter > .searchable-select-filter__search {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 2rem - 1px);
+  height: calc(100% - 2px);
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--ink);
+  outline: none;
+}
+
+.searchable-select-filter__search::placeholder {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.searchable-select-filter:has(.searchable-select-filter__search:focus-visible) {
+  outline: auto;
+}
+
+.searchable-select-filter__suggestions {
+  color-scheme: light dark;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 6;
+  min-width: 100%;
+  width: max-content;
+  max-width: min(40rem, calc(100vw - 2rem));
+  max-height: min(14rem, 40vh);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding: 0.25rem;
+  border: 1px solid ButtonBorder;
+  border-radius: 0.55rem;
+  background: Canvas;
+  color: CanvasText;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
+.searchable-select-filter__suggestions button {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  border: 0;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: inherit;
+  padding: 0.25rem 0.4rem;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.searchable-select-filter__suggestions button > span {
+  flex: 0 0 1rem;
+}
+
+.searchable-select-filter__suggestions button.is-active {
+  background: Highlight;
+  color: HighlightText;
+}
+
+.searchable-select-filter__empty {
+  padding: 0.3rem 0.5rem;
 }
 
 @media (min-width: 981px) and (max-width: 1200px) {
   .contracts-filters--diavgeia {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) 14rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .contracts-filters--diavgeia .contracts-filter--search {
-    grid-column: span 3;
+    grid-column: 1 / -1;
   }
 
-  .contracts-filters--diavgeia .contracts-filter--decision-type {
-    grid-column: span 1;
+  .contracts-filters--diavgeia .contracts-filter--organization,
+  .contracts-filters--diavgeia .contracts-filter--decision-type,
+  .contracts-filters--diavgeia .contracts-filter--date {
+    grid-column: span 2;
   }
 }
 
@@ -5343,7 +5438,13 @@ main {
     grid-template-columns: 1fr 1fr;
   }
 
+  .contracts-filters.contracts-filters--cpv {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contracts-filter--search,
+  .contracts-filter--cpv,
+  .diavgeia-page .contracts-filter--organization,
   .contracts-filter--decision-type {
     grid-column: 1 / -1;
     min-width: 0;
@@ -5478,6 +5579,10 @@ main {
     min-height: 2.75rem;
   }
 
+  .diavgeia-page .searchable-select-filter > select {
+    min-height: 2.75rem;
+  }
+
   .diavgeia-page .contracts-filter-button {
     inline-size: 100%;
     min-inline-size: 0;
@@ -5487,14 +5592,6 @@ main {
     white-space: normal;
     text-align: center;
     text-wrap: balance;
-  }
-
-  .diavgeia-page .contracts-filter-button--recent {
-    grid-column: 1;
-  }
-
-  .diavgeia-page .contracts-filter-button--all {
-    grid-column: 2;
   }
 
   .contracts-table-wrap {

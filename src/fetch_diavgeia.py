@@ -26,9 +26,11 @@ from IPython.display import clear_output  # noqa: F401 (safe to remove if not in
 try:
     from .pdf_pipeline import extract_document_code, parse_pdf_file_to_row
     from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from .keyword_exclusions import text_has_requested_exclusion
 except ImportError:  # script execution fallback: `python src/fetch_diavgeia.py`
     from pdf_pipeline import extract_document_code, parse_pdf_file_to_row
     from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from keyword_exclusions import text_has_requested_exclusion
 
 # ---------------------------------------------------------------------------
 # Config
@@ -436,7 +438,7 @@ def fetch_new_decisions(since: datetime | None) -> list[dict]:
                 excluded_in_batch = 0
                 filtered_batch = []
                 for rec in api_batch:
-                    if record_has_excluded_org(rec) or record_is_confirmed_irrelevant(rec):
+                    if record_has_excluded_org(rec) or record_is_confirmed_irrelevant(rec) or text_has_requested_exclusion(rec.get("subject")):
                         excluded_in_batch += 1
                         continue
                     filtered_batch.append(rec)
@@ -653,11 +655,15 @@ def is_excluded_org_name_clean(value) -> bool:
 
 
 def filter_excluded_org_rows(df: pd.DataFrame, *, context: str = "rows") -> pd.DataFrame:
-    """Drop rows whose org_name_clean is in the exclusion list (safety-net for persisted CSVs)."""
-    if "org_name_clean" not in df.columns or df.empty:
+    """Exclude organizations and subject roots, including rows from persisted CSVs."""
+    if df.empty:
         return df
 
-    mask = df["org_name_clean"].apply(is_excluded_org_name_clean)
+    mask = pd.Series(False, index=df.index)
+    if "org_name_clean" in df.columns:
+        mask |= df["org_name_clean"].apply(is_excluded_org_name_clean)
+    if "subject" in df.columns:
+        mask |= df["subject"].apply(text_has_requested_exclusion)
     dropped = int(mask.sum())
     if dropped:
         print(f"[org-filter] Dropped {dropped} excluded {context}.", flush=True)

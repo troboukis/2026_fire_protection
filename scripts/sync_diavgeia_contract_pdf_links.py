@@ -20,10 +20,7 @@ import sys
 import uuid
 import threading
 import time
-from email.utils import parsedate_to_datetime
-from urllib.parse import urlparse
 
-import requests
 from tqdm import tqdm
 
 import psycopg2
@@ -37,11 +34,9 @@ from src.map_copernicus_to_municipalities import resolve_database_url
 
 STATE = ROOT / 'state' / 'diavgeia_contract_pdf_links.json'
 ADA = re.compile(r'(?<![A-ZΑ-Ω0-9])[A-ZΑ-Ω0-9]+-[A-ZΑ-Ω0-9]+(?![A-ZΑ-Ω0-9])')
-CLIENT = threading.local()
 STOP = threading.Event()
 VERBOSE = False
 REQUEST_DELAY = 1.0
-MAX_RATE_WAIT = 60.0
 
 
 def report(message: str):
@@ -49,62 +44,43 @@ def report(message: str):
 
 
 class ServiceGate:
+    """Pace document starts; HTTP and retries belong to the existing downloaders."""
     def __init__(self):
         self.lock = threading.Lock()
         self.next_request = 0.0
-        self.retry_until = 0.0
+
+    def wait(self):
+        with self.lock:
+            while self.next_request > time.monotonic():
+                if STOP.wait(min(self.next_request-time.monotonic(), 1)):
+                    raise InterruptedError('Διακοπή από τον χρήστη')
+            if STOP.is_set():
+                raise InterruptedError('Διακοπή από τον χρήστη')
+            self.next_request = time.monotonic() + REQUEST_DELAY
 
 
 GATES = {'contract': ServiceGate(), 'diavgeia': ServiceGate()}
 SERVICE_NAMES = {'contract': 'ΚΗΜΔΗΣ', 'diavgeia': 'Διαύγεια'}
 
 
-class RateLimitPause(RuntimeError):
-    pass
-
-
-class ServiceSession:
-    """Independent start intervals for the two services, without locking I/O."""
-    def __init__(self, client, source_type):
-        self.client = client
-        self.source_type = source_type
-        self.gate = GATES[source_type]
-
-    def get(self, url, **kwargs):
-        gate = self.gate
-        with gate.lock:
-            remaining = gate.next_request - time.monotonic()
-            if remaining > MAX_RATE_WAIT:
-                raise RateLimitPause(f'{SERVICE_NAMES[self.source_type]}: αναμονή υπηρεσίας {remaining:.0f}s, αναβολή για επόμενη εκτέλεση')
-            announced = False
-            while gate.next_request > time.monotonic():
-                if STOP.is_set():
-                    raise InterruptedError('Διακοπή από τον χρήστη')
-                remaining = gate.next_request - time.monotonic()
-                if remaining > 2 and not announced:
-                    report(f'ΑΝΑΜΟΝΗ {SERVICE_NAMES[self.source_type]}: {remaining:.0f}s πριν από το επόμενο αίτημα')
-                    announced = True
-                time.sleep(min(remaining, 1))
-            if STOP.is_set():
-                raise InterruptedError('Διακοπή από τον χρήστη')
-            gate.next_request = time.monotonic() + REQUEST_DELAY
-        # Network work for one service must never hold up the other service.
-        response = self.client.get(url, **kwargs)
-        if response.status_code == 429:
-            delay = 60.0
-            retry_after = response.headers.get('Retry-After', '').strip()
-            try:
-                delay = max(1, float(retry_after))
-            except ValueError:
-                try:
-                    delay = max(1, (parsedate_to_datetime(retry_after)-datetime.now(timezone.utc)).total_seconds())
-                except (ValueError, TypeError):
-                    pass
-            with gate.lock:
-                gate.next_request = max(gate.next_request, time.monotonic()+delay)
-                gate.retry_until = max(gate.retry_until, time.time()+delay)
-            report(f'HTTP 429 — {SERVICE_NAMES[self.source_type]} ζητά αναμονή {delay:.0f}s. Δεν παρακάμπτεται το όριο.')
-        return response
+def download_document(document: dict, pdf_path: Path):
+    GATES[document['source_type']].wait()
+    if VERBOSE:
+        report(f'ΛΗΨΗ PDF {SERVICE_NAMES[document["source_type"]]}: {document["source_id"]}')
+    if document['source_type'] == 'diavgeia':
+        from src.fetch_diavgeia import _download_pdf_to_path
+        _download_pdf_to_path(document['document_url'], pdf_path)
+    else:
+        from src.locate_work import Document
+        contract = Document(document['source_id'], debug=VERBOSE)
+        contract.downloadContract()
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = pdf_path.with_suffix('.pdf.part')
+        try:
+            contract.saveLocalCopy(str(temporary))
+            temporary.replace(pdf_path)
+        finally:
+            temporary.unlink(missing_ok=True)
 
 
 def extract_references(text: str, source_type: str) -> list[dict]:
@@ -138,23 +114,16 @@ def read_document(document: dict, output: Path, refresh: bool = False) -> dict:
         (ROOT / 'pdf' / (document['source_id'] + '.pdf')).unlink(missing_ok=True)
     if STOP.is_set():
         return {'status': 'cancelled'}
-    if not hasattr(CLIENT, 'session'):
-        CLIENT.session = requests.Session()
-    client = ServiceSession(CLIENT.session, document['source_type'])
-    if VERBOSE:
-        action = 'ΤΟΠΙΚΟ PDF' if (ROOT / 'pdf' / (document['source_id']+'.pdf')).exists() else 'ΛΗΨΗ PDF'
-        report(f'{action} {SERVICE_NAMES[document["source_type"]]}: {document["source_id"]}')
+    if VERBOSE and (ROOT / 'pdf' / (document['source_id']+'.pdf')).exists():
+        report(f'ΤΟΠΙΚΟ PDF {SERVICE_NAMES[document["source_type"]]}: {document["source_id"]}')
     result = collect({'ada': document['source_id'], 'document_url': document['document_url']}, output,
-                     extract_amount=False, session=client,
+                     extract_amount=False, download_pdf=lambda url, path: download_document(document, path),
                      on_progress=(lambda message: report(f'{document["source_id"]}: {message}')) if VERBOSE else None)
     record = {'source_type': document['source_type'], 'source_id': document['source_id'],
               'fingerprint': fingerprint(document), 'checked_at': datetime.now(timezone.utc).isoformat()}
     if not result.get('text_path') or result.get('status') == 'error':
         if STOP.is_set():
             return {'status': 'cancelled'}
-        if '429 ' in result.get('error', '') or 'RateLimitPause:' in result.get('error', ''):
-            return {**record, 'status': 'deferred', 'error': result.get('error'),
-                    'retry_at': datetime.fromtimestamp(client.gate.retry_until, timezone.utc).isoformat()}
         return {**record, 'status': 'error', 'error': result.get('error', 'PDF text unavailable')}
     text = Path(result['text_path']).read_text()
     if not text.strip():
@@ -229,7 +198,7 @@ def commit_links(connection, pairs: set) -> set:
 
 
 def main():
-    global VERBOSE, REQUEST_DELAY, MAX_RATE_WAIT
+    global VERBOSE, REQUEST_DELAY
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--apply', action='store_true')
     parser.add_argument('--output', type=Path)
@@ -237,7 +206,6 @@ def main():
     parser.add_argument('--state', type=Path, default=STATE)
     parser.add_argument('--workers', type=int, default=1, help='Workers per service; the two services always run concurrently.')
     parser.add_argument('--request-delay', type=float, default=1.0, help='Minimum seconds between download starts per service.')
-    parser.add_argument('--max-rate-wait', type=float, default=60.0, help='Defer a service if it requests a longer wait.')
     parser.add_argument('--verbose', action='store_true', help='Print download, parsing, OCR and result messages.')
     parser.add_argument('--refresh', action='store_true')
     parser.add_argument('--max-new-pdfs', type=int, default=0, help='Optional per-run batch size; 0 reads all pending PDFs.')
@@ -246,10 +214,12 @@ def main():
     run_id = datetime.now().strftime('%Y%m%d-%H%M%S') + '-' + uuid.uuid4().hex[:6]
     args.output = args.output or ROOT / 'exports' / ('diavgeia-contract-pdf-links-' + run_id)
     args.backup = args.backup or ROOT / 'backupDB' / ('diavgeia-contract-pdf-links-' + run_id + '-before.json')
-    if args.workers < 1 or args.request_delay < 1 or args.max_rate_wait < 0:
-        parser.error('workers >= 1, request-delay >= 1, max-rate-wait >= 0')
-    VERBOSE, REQUEST_DELAY, MAX_RATE_WAIT = args.verbose, args.request_delay, args.max_rate_wait
+    if args.workers < 1 or args.request_delay < 1:
+        parser.error('workers >= 1, request-delay >= 1')
+    VERBOSE, REQUEST_DELAY = args.verbose, args.request_delay
     STOP.clear()
+    for source in GATES:
+        GATES[source] = ServiceGate()
     if args.max_new_pdfs < 0:
         parser.error('--max-new-pdfs must be nonnegative')
     if args.cached_only and args.refresh:
@@ -268,22 +238,11 @@ def main():
         connection.rollback()
         connection.close()
         documents = [dict(r, source_type='diavgeia', source_id=ada) for ada, r in decisions.items()]
-        for document in documents:
-            if urlparse(document.get('document_url') or '').hostname == 'static.old.diavgeia.gov.gr':
-                document['identity_document_url'] = document['document_url']
-                document['document_url'] = 'https://diavgeia.gov.gr/doc/' + document['source_id']
         documents += [{'source_type': 'contract', 'source_id': ref, 'subject': r['title'],
                        'status': str(r['cancelled']),
                        'document_url': 'https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/'+ref}
                       for ref, r in contracts.items()]
         records = json.loads(args.state.read_text())['documents'] if args.state.exists() else {}
-        for record in records.values():
-            if record.get('retry_at'):
-                remaining = datetime.fromisoformat(record['retry_at']).timestamp()-time.time()
-                if remaining > 0:
-                    gate = GATES[record['source_type']]
-                    gate.next_request = max(gate.next_request, time.monotonic()+remaining)
-                    gate.retry_until = max(gate.retry_until, time.time()+remaining)
         pending = []
         for document in documents:
             key = document['source_type'] + ':' + document['source_id']
@@ -291,10 +250,6 @@ def main():
             if needs_pdf_read(document, old, args.refresh):
                 pending.append(document)
         total_pending = len(pending)
-        paused = {source for source, gate in GATES.items() if gate.next_request-time.monotonic() > MAX_RATE_WAIT}
-        for source in paused:
-            report(f'{SERVICE_NAMES[source]}: αποθηκευμένη αναμονή {GATES[source].next_request-time.monotonic():.0f}s. Οι λήψεις αναβάλλονται.')
-        pending = [document for document in pending if document['source_type'] not in paused]
         if args.cached_only:
             pending = []
         elif args.max_new_pdfs:
@@ -322,12 +277,20 @@ def main():
         processed, failures, deferred, dirty = 0, 0, 0, 0
         service_counts = {source: {'αποτυχίες': 0, 'αναβολές': 0} for source in SERVICE_NAMES}
         checkpoint = heartbeat = time.monotonic()
+        queues = {source: iter([d for d in pending if d['source_type'] == source]) for source in SERVICE_NAMES}
+
+        def submit_next(source):
+            doc = next(queues[source], None)
+            if doc is None or STOP.is_set():
+                return
+            old = records.get(doc['source_type']+':'+doc['source_id'], {})
+            refresh = args.refresh or (old.get('status') == 'read' and old.get('fingerprint') != fingerprint(doc))
+            futures[pools[source].submit(read_document, doc, args.output, refresh)] = doc
+
         try:
-            for doc in pending:
-                old = records.get(doc['source_type']+':'+doc['source_id'], {})
-                refresh = args.refresh or (old.get('status') == 'read' and old.get('fingerprint') != fingerprint(doc))
-                future = pools[doc['source_type']].submit(read_document, doc, args.output, refresh)
-                futures[future] = doc
+            for source in SERVICE_NAMES:
+                for _ in range(args.workers):
+                    submit_next(source)
             while futures:
                 done, _ = wait(futures, timeout=1, return_when=FIRST_COMPLETED)
                 for future in done:
@@ -359,18 +322,14 @@ def main():
                         report(f'{SERVICE_NAMES[doc["source_type"]]} {doc["source_id"]}: {record.get("error")}')
                     elif VERBOSE:
                         report(f'OK {doc["source_id"]}: {len(record["references"])} αναφορές')
-                    if record['status'] == 'deferred' and GATES[doc['source_type']].next_request-time.monotonic() > MAX_RATE_WAIT:
-                        report(f'Αναβάλλονται οι υπόλοιπες λήψεις {SERVICE_NAMES[doc["source_type"]]}. Η άλλη υπηρεσία συνεχίζει.')
-                        for queued, queued_doc in list(futures.items()):
-                            if queued_doc['source_type'] == doc['source_type']:
-                                queued.cancel()
+                    submit_next(doc['source_type'])
                 if dirty and (dirty >= 25 or time.monotonic()-checkpoint >= 15):
                     save_state(records, state_path)
                     dirty = 0
                     checkpoint = time.monotonic()
                 if not done and time.monotonic()-heartbeat >= 30:
-                    waits = ', '.join(f'{SERVICE_NAMES[s]}: {max(0, g.next_request-time.monotonic()):.0f}s' for s, g in GATES.items())
-                    report(f'Ενεργό πρόγραμμα — ολοκληρώθηκαν {processed}/{len(pending)} PDF. Αναμονές: {waits}')
+                    active = ', '.join(sorted({SERVICE_NAMES[d['source_type']] for d in futures.values()}))
+                    report(f'Ενεργό πρόγραμμα — εξετάστηκαν {processed}/{len(pending)} PDF. Σε εξέλιξη: {active}.')
                     heartbeat = time.monotonic()
         except KeyboardInterrupt:
             STOP.set()
