@@ -201,6 +201,7 @@ CREATE TABLE IF NOT EXISTS public.diavgeia (
   spending_contractors_name   TEXT,
   spending_contractors_value  TEXT,
   diavgeia_document_type_decision_uid TEXT,
+  pdf_link_scan               JSONB,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
@@ -284,6 +285,7 @@ CREATE TABLE IF NOT EXISTS public.procurement (
   municipality_key            TEXT,
   canonical_owner_scope       TEXT,
   payment_id                  BIGINT,
+  pdf_link_scan               JSONB,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   CONSTRAINT uq_procurement_reference_number UNIQUE (reference_number)

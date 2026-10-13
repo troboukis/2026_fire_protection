@@ -145,6 +145,35 @@ This means values like `καθαρισμός`, `Καθαρισμος`, and `κα
 ## Local PDF pipeline
 
 PDFs are stored locally in `pdf/` (excluded from git via `.gitignore`).
+
+### PDF references between Diavgeia decisions and contracts
+
+`scripts/sync_diavgeia_contract_pdf_links.py` reads references in both directions.
+Its last successful extraction is stored in `diavgeia.pdf_link_scan` or
+`procurement.pdf_link_scan`; confirmed pairs remain in `diavgeia_procurement`.
+The runtime cache is not committed to Git. Apply `sql/066_add_pdf_link_scan.sql`
+(also included in `sql/900_frontend_api_setup.sql`) before using this script.
+
+```bash
+# Preview using database scans, without downloading or changing records.
+python scripts/sync_diavgeia_contract_pdf_links.py --cached-only
+
+# Process pending PDFs and atomically save each successful scan and its links.
+python scripts/sync_diavgeia_contract_pdf_links.py --apply
+```
+
+Scans are reused only when the source fingerprint and extractor version match.
+An empty reference list records a successful check without findings. References
+to documents not yet imported are retained for matching in later runs. Failed
+attempts are logged in the run's `exports/` directory and leave the previous
+successful scan intact. `--refresh` explicitly downloads and reprocesses PDFs.
+
+For a one-time migration from the former JSON cache, keep the local PDFs/text
+and run `scripts/migrate_diavgeia_pdf_link_scans.py` first in preview mode, then
+with `--apply`. It verifies text/PDF hashes, reextracts references, archives the
+entire JSON and database pre-state under `backupDB/`, and preserves all bridge
+links. Missing source documents remain in the archive. It refuses to overwrite
+existing scans. The former `state/diavgeia_contract_pdf_links.json` is ignored.
 Each filename is derived from `documentUrl` as the code after `/doc/`, with `.pdf` suffix.
 Example: `https://diavgeia.gov.gr/doc/9ΚΠΣΩ1Ε-ΕΑ0` -> `pdf/9ΚΠΣΩ1Ε-ΕΑ0.pdf`.
 

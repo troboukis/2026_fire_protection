@@ -1,7 +1,8 @@
 """Link contracts and all Diavgeia document types by exact PDF references.
 
 Contract PDFs: ADA -> Diavgeia document. Diavgeia PDFs: SYMV ADAM -> contract.
-Default is a preview; --apply persists the evidence cache and inserts links only.
+Default is a preview; --apply persists successful scans on their source rows
+and inserts links in the same transaction. Runtime state is never stored in Git.
 Already parsed PDFs are reused; --refresh rereads them. Unavailable PDFs are
 retried on the next run. References to absent records are retained and rematched
 on every run, so later database imports can complete their links.
@@ -24,7 +25,7 @@ import time
 from tqdm import tqdm
 
 import psycopg2
-from psycopg2.extras import RealDictCursor, execute_values
+from psycopg2.extras import Json, RealDictCursor, execute_values
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -32,8 +33,9 @@ from scripts.extract_missing_diavgeia_payment_amounts import collect
 from scripts.research_diavgeia_kimdis_payment_links import contract_references
 from src.map_copernicus_to_municipalities import resolve_database_url
 
-STATE = ROOT / 'state' / 'diavgeia_contract_pdf_links.json'
-ADA = re.compile(r'(?<![A-ZΑ-Ω0-9])[A-ZΑ-Ω0-9]+-[A-ZΑ-Ω0-9]+(?![A-ZΑ-Ω0-9])')
+STATE = ROOT / 'state' / 'diavgeia_contract_pdf_links.json'  # Legacy migration input only.
+EXTRACTOR_VERSION = 2
+ADA = re.compile(r'(?<![\w-])([A-ZΑ-Ω0-9]{4,12})\s*-\s*([A-ZΑ-Ω0-9]{3})(?!\w|-\S)')
 STOP = threading.Event()
 VERBOSE = False
 REQUEST_DELAY = 1.0
@@ -87,7 +89,8 @@ def extract_references(text: str, source_type: str) -> list[dict]:
     found = {}
     for page_number, page in enumerate(text.split('\f'), 1):
         if source_type == 'contract':
-            matches = [(m[0], m.start(), m.end()) for m in ADA.finditer(page.upper())]
+            matches = [(m[1] + '-' + m[2], m.start(), m.end()) for m in ADA.finditer(page.upper())
+                       if re.search(r'[A-ZΑ-Ω]', m[1])]
         else:
             matches = contract_references(page)
         for reference, start, end in matches:
@@ -105,7 +108,60 @@ def fingerprint(document: dict) -> str:
 
 def needs_pdf_read(document: dict, previous: dict, refresh: bool = False) -> bool:
     # A successful negative result is complete too; it need not be reread.
-    return refresh or previous.get('status') != 'read' or previous.get('fingerprint') != fingerprint(document)
+    return (refresh or previous.get('status') != 'read'
+            or previous.get('fingerprint') != fingerprint(document)
+            or previous.get('extractor_version') != EXTRACTOR_VERSION)
+
+
+def scan_payload(record: dict) -> dict:
+    """Only successful public-PDF evidence belongs in the source row."""
+    if record.get('status') != 'read':
+        raise ValueError('Only successful PDF scans can be persisted')
+    return {key: record[key] for key in
+            ('fingerprint', 'extractor_version', 'checked_at', 'pdf_sha256', 'references')}
+
+
+def contract_document(row: dict) -> dict:
+    return {'id': row['id'], 'source_type': 'contract', 'source_id': row['reference_number'],
+            'subject': row['title'], 'status': str(row['cancelled']),
+            'document_url': 'https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/'
+                            + row['reference_number']}
+
+
+def decision_document(row: dict) -> dict:
+    return {**{key: row[key] for key in ('id', 'ada', 'document_url', 'subject', 'status', 'version_comment')},
+            'source_type': 'diavgeia', 'source_id': row['ada']}
+
+
+def load_documents(connection) -> tuple[dict, dict, list[dict], dict]:
+    with connection.cursor(cursor_factory=RealDictCursor) as cursor:
+        cursor.execute('SELECT id,reference_number,title,cancelled,pdf_link_scan FROM public.procurement '
+                       'WHERE reference_number IS NOT NULL')
+        contracts = {row['reference_number']: dict(row) for row in cursor.fetchall()}
+        cursor.execute('SELECT id,ada,document_url,subject,status,version_comment,pdf_link_scan '
+                       'FROM public.diavgeia WHERE ada IS NOT NULL')
+        decisions = {row['ada']: dict(row) for row in cursor.fetchall()}
+    documents = [decision_document(row) for row in decisions.values()]
+    documents += [contract_document(row) for row in contracts.values()]
+    records = {}
+    for source_type, mapping in [('contract', contracts), ('diavgeia', decisions)]:
+        for source_id, row in mapping.items():
+            if row.get('pdf_link_scan') is not None:
+                records[source_type + ':' + source_id] = {
+                    **row['pdf_link_scan'], 'status': 'read',
+                    'source_type': source_type, 'source_id': source_id}
+    return contracts, decisions, documents, records
+
+
+def valid_cached_records(records: dict, documents: list[dict]) -> dict:
+    """Stale scans remain stored for evidence but must not create new links."""
+    valid = {}
+    for document in documents:
+        key = document['source_type'] + ':' + document['source_id']
+        record = records.get(key, {})
+        if not needs_pdf_read(document, record):
+            valid[key] = record
+    return valid
 
 
 def read_document(document: dict, output: Path, refresh: bool = False) -> dict:
@@ -120,7 +176,8 @@ def read_document(document: dict, output: Path, refresh: bool = False) -> dict:
                      extract_amount=False, download_pdf=lambda url, path: download_document(document, path),
                      on_progress=(lambda message: report(f'{document["source_id"]}: {message}')) if VERBOSE else None)
     record = {'source_type': document['source_type'], 'source_id': document['source_id'],
-              'fingerprint': fingerprint(document), 'checked_at': datetime.now(timezone.utc).isoformat()}
+              'fingerprint': fingerprint(document), 'checked_at': datetime.now(timezone.utc).isoformat(),
+              'extractor_version': EXTRACTOR_VERSION}
     if not result.get('text_path') or result.get('status') == 'error':
         if STOP.is_set():
             return {'status': 'cancelled'}
@@ -174,6 +231,47 @@ def backup_links(connection, backup: Path):
     connection.rollback()
 
 
+class SourceChangedError(RuntimeError):
+    """Retry if the source changed while its PDF was being read."""
+
+
+def persist_scan_and_links(connection, document: dict, record: dict,
+                           contracts: dict, decisions: dict) -> set:
+    payload = scan_payload(record)
+    if needs_pdf_read(document, record):
+        raise ValueError('Cannot persist an obsolete scan as current')
+    try:
+        with connection.cursor(cursor_factory=RealDictCursor) as cursor:
+            if document['source_type'] == 'contract':
+                cursor.execute('SELECT id,reference_number,title,cancelled FROM public.procurement '
+                               'WHERE id=%s FOR UPDATE', (document['id'],))
+                row = cursor.fetchone()
+                current = contract_document(row) if row else None
+                table = 'procurement'
+            else:
+                cursor.execute('SELECT id,ada,document_url,subject,status,version_comment '
+                               'FROM public.diavgeia WHERE id=%s FOR UPDATE', (document['id'],))
+                row = cursor.fetchone()
+                current = decision_document(row) if row else None
+                table = 'diavgeia'
+            if current is None or fingerprint(current) != record['fingerprint']:
+                raise SourceChangedError('Το έγγραφο άλλαξε ή αφαιρέθηκε κατά την ανάγνωση· θα ελεγχθεί ξανά.')
+            cursor.execute(f'UPDATE public.{table} SET pdf_link_scan=%s '
+                           'WHERE id=%s AND pdf_link_scan IS DISTINCT FROM %s::jsonb',
+                           (Json(payload), document['id'], Json(payload)))
+            links = match_links({'current': record}, contracts, decisions)
+            pairs = sorted({(r['diavgeia_id'], r['procurement_id']) for r in links})
+            added = execute_values(cursor, '''INSERT INTO public.diavgeia_procurement
+                (diavgeia_id,procurement_id) VALUES %s ON CONFLICT DO NOTHING
+                RETURNING diavgeia_id,procurement_id''', pairs, page_size=1000, fetch=True) if pairs else []
+        connection.commit()
+        return {(pair['diavgeia_id'], pair['procurement_id']) if isinstance(pair, dict) else tuple(pair)
+                for pair in added}
+    except BaseException:
+        connection.rollback()
+        raise
+
+
 def commit_links(connection, pairs: set) -> set:
     """Commit and verify each discovered document's links immediately."""
     if not pairs:
@@ -197,13 +295,51 @@ def commit_links(connection, pairs: set) -> set:
         raise
 
 
+def commit_cached_scans(connection, records: dict, documents: list[dict],
+                        contracts: dict, decisions: dict) -> set:
+    """Recheck cached source metadata under locks before creating any new pair."""
+    candidates = match_links(valid_cached_records(records, documents), contracts, decisions)
+    source_keys = {(r['source_type'], r['source_id']) for r in candidates}
+    current_records = {}
+    try:
+        with connection.cursor(cursor_factory=RealDictCursor) as cursor:
+            for source_type in ('contract', 'diavgeia'):
+                ids = sorted(d['id'] for d in documents
+                             if (source_type, d['source_id']) in source_keys
+                             and d['source_type'] == source_type)
+                if not ids:
+                    continue
+                if source_type == 'contract':
+                    cursor.execute('SELECT id,reference_number,title,cancelled,pdf_link_scan '
+                                   'FROM public.procurement WHERE id=ANY(%s) ORDER BY id FOR UPDATE', (ids,))
+                else:
+                    cursor.execute('SELECT id,ada,document_url,subject,status,version_comment,pdf_link_scan '
+                                   'FROM public.diavgeia WHERE id=ANY(%s) ORDER BY id FOR UPDATE', (ids,))
+                for row in cursor.fetchall():
+                    if row['pdf_link_scan'] is None:
+                        continue
+                    document = contract_document(row) if source_type == 'contract' else decision_document(row)
+                    record = {**row['pdf_link_scan'], 'status': 'read',
+                              'source_type': source_type, 'source_id': document['source_id']}
+                    if not needs_pdf_read(document, record):
+                        current_records[source_type + ':' + document['source_id']] = record
+        links = match_links(current_records, contracts, decisions)
+        pairs = {(r['diavgeia_id'], r['procurement_id']) for r in links}
+        if not pairs:
+            connection.rollback()  # Release source locks even when all cached results became stale.
+            return set()
+        return commit_links(connection, pairs)
+    except BaseException:
+        connection.rollback()
+        raise
+
+
 def main():
     global VERBOSE, REQUEST_DELAY
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--apply', action='store_true')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--backup', type=Path)
-    parser.add_argument('--state', type=Path, default=STATE)
     parser.add_argument('--workers', type=int, default=1, help='Workers per service; the two services always run concurrently.')
     parser.add_argument('--request-delay', type=float, default=1.0, help='Minimum seconds between download starts per service.')
     parser.add_argument('--verbose', action='store_true', help='Print download, parsing, OCR and result messages.')
@@ -229,20 +365,11 @@ def main():
     connection = psycopg2.connect(resolve_database_url(None), connect_timeout=15)
     connection.set_session(readonly=True)
     try:
-        with connection.cursor(cursor_factory=RealDictCursor) as cursor:
+        with connection.cursor() as cursor:
             cursor.execute("SET LOCAL statement_timeout='40s'")
-            cursor.execute('SELECT id,reference_number,title,cancelled FROM public.procurement WHERE reference_number IS NOT NULL')
-            contracts = {r['reference_number']: dict(r) for r in cursor.fetchall()}
-            cursor.execute('SELECT id,ada,document_url,subject,status,version_comment FROM public.diavgeia')
-            decisions = {r['ada']: dict(r) for r in cursor.fetchall()}
+        contracts, decisions, documents, records = load_documents(connection)
         connection.rollback()
         connection.close()
-        documents = [dict(r, source_type='diavgeia', source_id=ada) for ada, r in decisions.items()]
-        documents += [{'source_type': 'contract', 'source_id': ref, 'subject': r['title'],
-                       'status': str(r['cancelled']),
-                       'document_url': 'https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/'+ref}
-                      for ref, r in contracts.items()]
-        records = json.loads(args.state.read_text())['documents'] if args.state.exists() else {}
         pending = []
         for document in documents:
             key = document['source_type'] + ':' + document['source_id']
@@ -264,19 +391,16 @@ def main():
             connection.commit()
             backup_links(connection, args.backup)
             report(f'Αντίγραφο: {args.backup}. Κάθε νέα σύνδεση γράφεται αμέσως στη βάση.')
-            cached_links = match_links(records, contracts, decisions)
-            cached_pairs = {(r['diavgeia_id'], r['procurement_id']) for r in cached_links}
-            added += len(commit_links(connection, cached_pairs))
+            added += len(commit_cached_scans(connection, records, documents, contracts, decisions))
             report(f'Νέες συνδέσεις από αποθηκευμένα PDF: {added}')
-        state_path = args.state if args.apply else args.output / 'preview-state.json'
         pools = {source: ThreadPoolExecutor(max_workers=args.workers) for source in SERVICE_NAMES}
         bars = {source: tqdm(total=sum(d['source_type'] == source for d in pending),
                              desc=SERVICE_NAMES[source], unit='PDF', position=index, dynamic_ncols=True)
                 for index, source in enumerate(SERVICE_NAMES)}
         futures = {}
-        processed, failures, deferred, dirty = 0, 0, 0, 0
+        processed, failures, deferred = 0, 0, 0
         service_counts = {source: {'αποτυχίες': 0, 'αναβολές': 0} for source in SERVICE_NAMES}
-        checkpoint = heartbeat = time.monotonic()
+        heartbeat = time.monotonic()
         queues = {source: iter([d for d in pending if d['source_type'] == source]) for source in SERVICE_NAMES}
 
         def submit_next(source):
@@ -300,18 +424,25 @@ def main():
                     record = future.result()
                     if record['status'] == 'cancelled':
                         continue
-                    records[record['source_type']+':'+record['source_id']] = record
                     if args.apply and record['status'] == 'read':
                         found_links = match_links({'current': record}, contracts, decisions)
-                        found_pairs = {(r['diavgeia_id'], r['procurement_id']) for r in found_links}
-                        committed = commit_links(connection, found_pairs)
-                        added += len(committed)
-                        for link in found_links:
-                            if (link['diavgeia_id'], link['procurement_id']) in committed:
-                                report(f'ΓΡΑΦΤΗΚΕ ΣΤΗ ΒΑΣΗ: {link["ada"]} ↔ {link["contract_reference"]}')
-                                committed.remove((link['diavgeia_id'], link['procurement_id']))
+                        try:
+                            committed = persist_scan_and_links(connection, doc, record, contracts, decisions)
+                        except SourceChangedError as error:
+                            record = {**record, 'status': 'deferred', 'error': str(error)}
+                        else:
+                            added += len(committed)
+                            for link in found_links:
+                                if (link['diavgeia_id'], link['procurement_id']) in committed:
+                                    report(f'ΓΡΑΦΤΗΚΕ ΣΤΗ ΒΑΣΗ: {link["ada"]} ↔ {link["contract_reference"]}')
+                                    committed.remove((link['diavgeia_id'], link['procurement_id']))
+                    if record['status'] == 'read':
+                        records[record['source_type']+':'+record['source_id']] = record
+                    else:
+                        # Keep the last successful result; errors are operational logs only.
+                        with (args.output / 'errors.jsonl').open('a', encoding='utf-8') as handle:
+                            handle.write(json.dumps(record, ensure_ascii=False) + '\n')
                     processed += 1
-                    dirty += 1
                     failures += record['status'] == 'error'
                     deferred += record['status'] == 'deferred'
                     service_counts[doc['source_type']]['αποτυχίες'] += record['status'] == 'error'
@@ -323,33 +454,29 @@ def main():
                     elif VERBOSE:
                         report(f'OK {doc["source_id"]}: {len(record["references"])} αναφορές')
                     submit_next(doc['source_type'])
-                if dirty and (dirty >= 25 or time.monotonic()-checkpoint >= 15):
-                    save_state(records, state_path)
-                    dirty = 0
-                    checkpoint = time.monotonic()
                 if not done and time.monotonic()-heartbeat >= 30:
                     active = ', '.join(sorted({SERVICE_NAMES[d['source_type']] for d in futures.values()}))
                     report(f'Ενεργό πρόγραμμα — εξετάστηκαν {processed}/{len(pending)} PDF. Σε εξέλιξη: {active}.')
                     heartbeat = time.monotonic()
         except KeyboardInterrupt:
             STOP.set()
-            save_state(records, state_path)
+            if not args.apply:
+                save_state(records, args.output / 'preview-state.json')
             report('Διακόπηκε. Αποθηκεύτηκε η πρόοδος. Οι συνδέσεις που γράφτηκαν ήδη παραμένουν στη βάση.')
             return
         except BaseException:
             STOP.set()
-            save_state(records, state_path)
+            if not args.apply:
+                save_state(records, args.output / 'preview-state.json')
             raise
         finally:
             for pool in pools.values():
                 pool.shutdown(wait=not STOP.is_set(), cancel_futures=True)
             for bar in bars.values():
                 bar.close()
-        if args.apply:
-            save_state(records, args.state)
-        else:
+        if not args.apply:
             save_state(records, args.output / 'preview-state.json')
-        links = match_links(records, contracts, decisions)
+        links = match_links(valid_cached_records(records, documents), contracts, decisions)
         (args.output / 'links.json').write_text(json.dumps(links, ensure_ascii=False, indent=2))
         with (args.output / 'links.csv').open('w', encoding='utf-8-sig', newline='') as handle:
             fields = ['ada', 'contract_reference', 'source_type', 'source_id', 'page', 'evidence']
@@ -359,10 +486,11 @@ def main():
         pairs = {(r['diavgeia_id'], r['procurement_id']) for r in links}
         summary = {'diavgeia_documents': len(decisions), 'contracts': len(contracts),
                    'pdfs_processed_this_run': processed,
-                   'pdf_errors': sum(records.get(d['source_type']+':'+d['source_id'], {}).get('status') == 'error' for d in documents),
-                   'remaining_unprocessed': total_pending-processed,
-                   'rate_limited_this_run': deferred,
-                   'matched_pairs': len(pairs), 'added_links': added, 'database_changed': bool(added)}
+                   'pdf_errors': failures,
+                   'remaining_unprocessed': total_pending-processed+failures+deferred,
+                   'deferred_this_run': deferred,
+                   'matched_pairs': len(pairs), 'added_links': added,
+                   'database_changed': bool(args.apply and (added or processed-failures-deferred))}
         (args.output / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2))
         print(f'Τεκμηριωμένες συνδέσεις PDF: {len(pairs)}. Νέες συνδέσεις στη βάση: {added}.', flush=True)
         if summary['pdf_errors']:

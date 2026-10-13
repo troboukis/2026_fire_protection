@@ -136,6 +136,7 @@ jobs:
             exports/diavgeia-contract-pdf-links-*/links.json
             exports/diavgeia-contract-pdf-links-*/links.csv
             exports/diavgeia-contract-pdf-links-*/summary.json
+            exports/diavgeia-contract-pdf-links-*/errors.jsonl
             backupDB/diavgeia-contract-pdf-links-*-before.json
           if-no-files-found: ignore
           retention-days: 30
@@ -192,7 +193,6 @@ jobs:
             data/raw_procurements.csv \
             state/kimdis_state.json \
             state/locate_work_state.json \
-            state/diavgeia_contract_pdf_links.json \
             state/state.json \
             logs/fetch_runs.csv \
             logs/locate_work_runs.csv \
