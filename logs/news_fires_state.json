@@ -1,16 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564524212/konstantinoypoli-dyo-nekroi-kai-terasties-katastrofes-apo-ti-sfodri-kakokairia/",
-      "title": "Κωνσταντινούπολη: Δύο νεκροί και τεράστιες καταστροφές από τη σφοδρή κακοκαιρία",
-      "normalized_title": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΗ: ΔΥΟ ΝΕΚΡΟΙ ΚΑΙ ΤΕΡΑΣΤΙΕΣ ΚΑΤΑΣΤΡΟΦΕΣ ΑΠΟ ΤΗ ΣΦΟΔΡΗ ΚΑΚΟΚΑΙΡΙΑ",
+      "url": "https://www.kathimerini.gr/world/564524233/dnt-i-india-tha-xeperasei-tin-iaponia-kai-tha-ginei-i-tetarti-megalyteri-oikonomia-toy-kosmoy-to-2027/",
+      "title": "ΔΝΤ: Η Ινδία θα ξεπεράσει την Ιαπωνία και θα γίνει η τέταρτη μεγαλύτερη οικονομία του κόσμου το 2027",
+      "normalized_title": "ΔΝΤ: Η ΙΝΔΙΑ ΘΑ ΞΕΠΕΡΑΣΕΙ ΤΗΝ ΙΑΠΩΝΙΑ ΚΑΙ ΘΑ ΓΙΝΕΙ Η ΤΕΤΑΡΤΗ ΜΕΓΑΛΥΤΕΡΗ ΟΙΚΟΝΟΜΙΑ ΤΟΥ ΚΟΣΜΟΥ ΤΟ 2027",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564524212/konstantinoypoli-dyo-nekroi-kai-terasties-katastrofes-apo-ti-sfodri-kakokairia/",
-        "https://www.kathimerini.gr/society/564524209/michaniki-vlavi-se-ploio-poy-pigaine-aigina-epistrefei-sto-limani-toy-peiraia/",
-        "https://www.kathimerini.gr/world/564523909/neo-skandalo-ston-leyko-oiko-i-exafanismeni-dorea-5-6-ekat-dolarion-kai-o-emfylios-toy-maga/",
-        "https://www.kathimerini.gr/economy/international/564523288/dasmoi-giati-oi-times-stis-ipa-den-echoyn-pei-tin-teleytaia-toys-lexi/"
+        "https://www.kathimerini.gr/world/564524233/dnt-i-india-tha-xeperasei-tin-iaponia-kai-tha-ginei-i-tetarti-megalyteri-oikonomia-toy-kosmoy-to-2027/",
+        "https://www.kathimerini.gr/society/564524251/dystychima-tempon-xepagonoyn-oi-ektafes-me-tin-epilogi-toy-ollandikoy-ergastirioy/",
+        "https://www.kathimerini.gr/world/564524248/pros-anavoli-i-synodos-e-e-choron-toy-kolpoy-logo-anisychion-gia-tin-asfaleia/",
+        "https://www.kathimerini.gr/visual/infographics/564522955/metamoscheyseis-i-proodos-tis-iatrikis-synanta-ti-dynami-tis-agapis/",
+        "https://www.kathimerini.gr/columns/564524227/i-alitheia-toy-lisantro-martines-gia-tin-apogoiteytiki-gioynaitent/"
       ],
-      "seen_at_utc": "2026-10-15T09:30:03.068823+00:00"
+      "seen_at_utc": "2026-10-15T09:51:16.592577+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1271,26 +1272,31 @@
       "seen_at_utc": "2026-10-15T09:30:03.068994+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1488928/peiraias-vrethike-tmima-olmoy-kata-ti-diarkeia-ergasion-se-ishy-kykloforiakes-rythmiseis/",
-      "title": "Πειραιάς: Βρέθηκε τμήμα όλμου κατά τη διάρκεια εργασιών – Σε ισχύ κυκλοφοριακές ρυθμίσεις",
-      "normalized_title": "ΠΕΙΡΑΙΑΣ: ΒΡΕΘΗΚΕ ΤΜΗΜΑ ΟΛΜΟΥ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΕΡΓΑΣΙΩΝ – ΣΕ ΙΣΧΥ ΚΥΚΛΟΦΟΡΙΑΚΕΣ ΡΥΘΜΙΣΕΙΣ",
+      "url": "https://www.efsyn.gr/politiki/1488931/entasi-ston-aera-me-voylgari-kai-koyfonikolakoy-sas-rotao-kai-den-apantate-ti-prospatheite-na-ekmaieysete/",
+      "title": "Ένταση στον αέρα με Βούλγαρη και Κουφονικολάκου: «Σας ρωτάω και δεν απαντάτε» – «Τι προσπαθείτε να εκμαιεύσετε;»",
+      "normalized_title": "ΕΝΤΑΣΗ ΣΤΟΝ ΑΕΡΑ ΜΕ ΒΟΥΛΓΑΡΗ ΚΑΙ ΚΟΥΦΟΝΙΚΟΛΑΚΟΥ: «ΣΑΣ ΡΩΤΑΩ ΚΑΙ ΔΕΝ ΑΠΑΝΤΑΤΕ» – «ΤΙ ΠΡΟΣΠΑΘΕΙΤΕ ΝΑ ΕΚΜΑΙΕΥΣΕΤΕ;»",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1488928/peiraias-vrethike-tmima-olmoy-kata-ti-diarkeia-ergasion-se-ishy-kykloforiakes-rythmiseis/",
-        "https://www.efsyn.gr/ellada/1488889/provadisma-gia-ti-deth-o-aktor/",
-        "https://www.efsyn.gr/kosmos/1488873/germania-i-diki-poy-fernei-se-amihania-ton-merts/",
-        "https://www.efsyn.gr/athlitismos/1488868/me-ti-gnosti-syntagi-o-ofi-apenanti-sti-ren/"
+        "https://www.efsyn.gr/politiki/1488931/entasi-ston-aera-me-voylgari-kai-koyfonikolakoy-sas-rotao-kai-den-apantate-ti-prospatheite-na-ekmaieysete/",
+        "https://www.efsyn.gr/nisides/1488918/to-ntivani-tis-imeras-giati-katanalonoyme-adiakopa-eidiseis-typoy-kontra-vissi-karvela/",
+        "https://www.efsyn.gr/ellada/1488932/mihaniki-vlavi-se-delfini-epestrepse-me-asfaleia-sto-limani-toy-peiraia/",
+        "https://www.efsyn.gr/kosmos/1488929/mpra-nte-fer-gia-ton-proypologismo-tis-e-e-den-eimaste-ikanopoiimenoi-me-tin-irlandiki-protasi-leei-o-mitsotakis/"
       ],
-      "seen_at_utc": "2026-10-15T09:30:03.068947+00:00"
+      "seen_at_utc": "2026-10-15T09:51:16.592672+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/15/sports/football/europa-league/ta-ntou-ton-opadon-tis-marseig-se-ksenodoxeia-dikaionoun-tin-apofasi-tis-pae-olympiakos-vid/",
-      "title": "Τα «ντου» των οπαδών της Μαρσέιγ σε ξενοδοχεία δικαιώνουν την απόφαση της ΠΑΕ Ολυμπιακός (vid)",
-      "normalized_title": "ΤΑ «ΝΤΟΥ» ΤΩΝ ΟΠΑΔΩΝ ΤΗΣ ΜΑΡΣΕΙΓ ΣΕ ΞΕΝΟΔΟΧΕΙΑ ΔΙΚΑΙΩΝΟΥΝ ΤΗΝ ΑΠΟΦΑΣΗ ΤΗΣ ΠΑΕ ΟΛΥΜΠΙΑΚΟΣ (VID)",
+      "url": "https://www.in.gr/2026/10/15/plus/medianews/mega-stories-premiera-apopse-stis-23-40/",
+      "title": "MEGA Stories: Πρεμιέρα απόψε στις 23.40",
+      "normalized_title": "MEGA STORIES: ΠΡΕΜΙΕΡΑ ΑΠΟΨΕ ΣΤΙΣ 23.40",
       "seen_urls": [
-        "https://www.in.gr/2026/10/15/sports/football/europa-league/ta-ntou-ton-opadon-tis-marseig-se-ksenodoxeia-dikaionoun-tin-apofasi-tis-pae-olympiakos-vid/"
+        "https://www.in.gr/2026/10/15/plus/medianews/mega-stories-premiera-apopse-stis-23-40/",
+        "https://www.in.gr/2026/10/15/plus/medianews/uefa-champions-league-stin-koryfi-tis-tiletheasis-to-mega-me-ti-metadssi-tou-saxtar-aek/",
+        "https://www.in.gr/2026/10/15/life/culture-live/ektos-agoras-ta-vivlia-tis-sali-rounei-sto-inomeno-vasileio-eksaitias-tis-stiriksis-tis-stin-palestine-action/",
+        "https://www.in.gr/2026/10/15/greece/nea-apokalypsi-to-deipno-ton-1-586-eyro-tis-kimperli-gkilfoil-kai-i-apopeira-logokrisias/",
+        "https://www.in.gr/2026/10/15/politics/aftodioikisi/i-protasi-tou-dimou-xalandriou-se-eyropaiko-programma-gia-ti-dimiourgia-anthektikon-oikosystimaton-dentron/",
+        "https://www.in.gr/2026/10/15/greece/mixaniki-vlavi-sto-ydropterygo-athina-me-proorismo-aigina-kai-agkistri-talaiporia-gia-27-epivates/"
       ],
-      "seen_at_utc": "2026-10-15T09:30:03.068886+00:00"
+      "seen_at_utc": "2026-10-15T09:51:16.592614+00:00"
     }
   },
-  "updated_at_utc": "2026-10-15T09:30:03.069070+00:00"
+  "updated_at_utc": "2026-10-15T09:51:16.592742+00:00"
 }
