@@ -1,13 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564526891/o-infantino-zitise-syggnomi-apo-to-symvoylio-tis-fifa/",
-      "title": "Ο Ινφαντίνο ζήτησε συγγνώμη από το Συμβούλιο της FIFA",
-      "normalized_title": "Ο ΙΝΦΑΝΤΙΝΟ ΖΗΤΗΣΕ ΣΥΓΓΝΩΜΗ ΑΠΟ ΤΟ ΣΥΜΒΟΥΛΙΟ ΤΗΣ FIFA",
+      "url": "https://www.kathimerini.gr/world/564526948/konta-se-symfonia-gallia-germania-gia-tis-ekpompes-rypon-ton-aytokiniton-eidiko-kathestos-gia-vretania/",
+      "title": "Κοντά σε συμφωνία Γαλλία-Γερμανία για τις εκπομπές ρύπων των αυτοκινήτων – Ειδικό καθεστώς για Βρετανία",
+      "normalized_title": "ΚΟΝΤΑ ΣΕ ΣΥΜΦΩΝΙΑ ΓΑΛΛΙΑ-ΓΕΡΜΑΝΙΑ ΓΙΑ ΤΙΣ ΕΚΠΟΜΠΕΣ ΡΥΠΩΝ ΤΩΝ ΑΥΤΟΚΙΝΗΤΩΝ – ΕΙΔΙΚΟ ΚΑΘΕΣΤΩΣ ΓΙΑ ΒΡΕΤΑΝΙΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564526891/o-infantino-zitise-syggnomi-apo-to-symvoylio-tis-fifa/"
+        "https://www.kathimerini.gr/world/564526948/konta-se-symfonia-gallia-germania-gia-tis-ekpompes-rypon-ton-aytokiniton-eidiko-kathestos-gia-vretania/",
+        "https://www.kathimerini.gr/world/564526912/israilinoi-epoikoi-pyrpolisan-elaiona-kai-traymatisan-dimosiografo-sti-dytiki-ochthi/",
+        "https://www.kathimerini.gr/economy/564525844/kalyteri-morfi-kratoys-pronoias-mia-kala-ameivomeni-thesi-ergasias/",
+        "https://www.kathimerini.gr/world/564526927/giati-o-tramp-sygkroyetai-xana-me-ton-zelenski-o-rolos-toy-mask-kai-i-symfonia-me-ton-poytin/",
+        "https://www.kathimerini.gr/columns/564526816/i-simasia-tis-dekatis-thesis-gia-tin-ellada/"
       ],
-      "seen_at_utc": "2026-10-16T09:30:05.257980+00:00"
+      "seen_at_utc": "2026-10-16T09:51:14.270221+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1263,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1895934/diarrixi-me-skaptiko-mihanima-stin-aulida-gremisan-ti-vitrina-kosmimatopoleiou-kai-diefugan-me-ih/?utm_source=rss",
-      "title": "Διάρρηξη με... σκαπτικό μηχάνημα στην Αυλίδα: Γκρέμισαν τη βιτρίνα κοσμηματοπωλείου και διέφυγαν με ΙΧ",
-      "normalized_title": "ΔΙΑΡΡΗΞΗ ΜΕ... ΣΚΑΠΤΙΚΟ ΜΗΧΑΝΗΜΑ ΣΤΗΝ ΑΥΛΙΔΑ: ΓΚΡΕΜΙΣΑΝ ΤΗ ΒΙΤΡΙΝΑ ΚΟΣΜΗΜΑΤΟΠΩΛΕΙΟΥ ΚΑΙ ΔΙΕΦΥΓΑΝ ΜΕ ΙΧ",
+      "url": "https://www.protothema.gr/greece/article/1895946/dihasmeni-i-koini-gnomi-gia-to-poios-ehei-dikio-stin-kodra-vissi-karvela-ti-edeixe-dimoskopisi-tis-marc/?utm_source=rss",
+      "title": "Έγινε δημοσκόπηση για την κόντρα Βίσση - Καρβέλα: Πού δίνουν δίκιο οι συμμετέχοντες",
+      "normalized_title": "ΕΓΙΝΕ ΔΗΜΟΣΚΟΠΗΣΗ ΓΙΑ ΤΗΝ ΚΟΝΤΡΑ ΒΙΣΣΗ - ΚΑΡΒΕΛΑ: ΠΟΥ ΔΙΝΟΥΝ ΔΙΚΙΟ ΟΙ ΣΥΜΜΕΤΕΧΟΝΤΕΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1895934/diarrixi-me-skaptiko-mihanima-stin-aulida-gremisan-ti-vitrina-kosmimatopoleiou-kai-diefugan-me-ih/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1895946/dihasmeni-i-koini-gnomi-gia-to-poios-ehei-dikio-stin-kodra-vissi-karvela-ti-edeixe-dimoskopisi-tis-marc/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-16T09:30:05.258128+00:00"
+      "seen_at_utc": "2026-10-16T09:51:14.270332+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1489782/gerapetritis-i-athina-apodokimazei-tis-amerikanikes-kyroseis-kata-toy-diethnoys-poinikoy-dikastirioy/",
-      "title": "Γεραπετρίτης: Η Αθήνα αποδοκιμάζει τις αμερικανικές κυρώσεις κατά του Διεθνούς Ποινικού Δικαστηρίου",
-      "normalized_title": "ΓΕΡΑΠΕΤΡΙΤΗΣ: Η ΑΘΗΝΑ ΑΠΟΔΟΚΙΜΑΖΕΙ ΤΙΣ ΑΜΕΡΙΚΑΝΙΚΕΣ ΚΥΡΩΣΕΙΣ ΚΑΤΑ ΤΟΥ ΔΙΕΘΝΟΥΣ ΠΟΙΝΙΚΟΥ ΔΙΚΑΣΤΗΡΙΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1489771/ehase-ton-elegho-tis-aithoysas-oi-heirismoi-kosta-sti-synodo-tis-ee-prokaloyn-antidraseis-i-analysi-politico/",
+      "title": "«Έχασε τον έλεγχο της αίθουσας»: Οι χειρισμοί Κόστα στη σύνοδο της ΕΕ προκαλούν αντιδράσεις – Η ανάλυση Politico",
+      "normalized_title": "«ΕΧΑΣΕ ΤΟΝ ΕΛΕΓΧΟ ΤΗΣ ΑΙΘΟΥΣΑΣ»: ΟΙ ΧΕΙΡΙΣΜΟΙ ΚΟΣΤΑ ΣΤΗ ΣΥΝΟΔΟ ΤΗΣ ΕΕ ΠΡΟΚΑΛΟΥΝ ΑΝΤΙΔΡΑΣΕΙΣ – Η ΑΝΑΛΥΣΗ POLITICO",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1489782/gerapetritis-i-athina-apodokimazei-tis-amerikanikes-kyroseis-kata-toy-diethnoys-poinikoy-dikastirioy/"
+        "https://www.efsyn.gr/kosmos/1489771/ehase-ton-elegho-tis-aithoysas-oi-heirismoi-kosta-sti-synodo-tis-ee-prokaloyn-antidraseis-i-analysi-politico/",
+        "https://www.efsyn.gr/politiki/1489796/eheis-erotiseis-ehoyme-lyseis-qa-apo-ton-niko-androylaki-sto-tiktok-gia-to-idiotiko-hreos/",
+        "https://www.efsyn.gr/media/1489794/o-aris-panagiotidis-neos-prosorinos-dieythynon-symvoylos-tis-ert/",
+        "https://www.efsyn.gr/politiki/1489793/syriza-ta-sholeia-den-einai-asfali-kampanaki-gia-tis-epikindynes-ypodomes-kai-tin-ypohrimatodotisi/"
       ],
-      "seen_at_utc": "2026-10-16T09:30:05.258099+00:00"
+      "seen_at_utc": "2026-10-16T09:51:14.270308+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/16/world/ipa-poia-einai-i-ntempi-matenopoulos-pou-aytoproteinetai-gia-diadoxos-tis-gkilfoil/",
-      "title": "Ποια είναι η Ντέμπι Ματενόπουλος που αυτοπροτείνεται για διάδοχος της Γκιλφόιλ: «Μιλώ, διαβάζω και γράφω ελληνικά»",
-      "normalized_title": "ΠΟΙΑ ΕΙΝΑΙ Η ΝΤΕΜΠΙ ΜΑΤΕΝΟΠΟΥΛΟΣ ΠΟΥ ΑΥΤΟΠΡΟΤΕΙΝΕΤΑΙ ΓΙΑ ΔΙΑΔΟΧΟΣ ΤΗΣ ΓΚΙΛΦΟΙΛ: «ΜΙΛΩ, ΔΙΑΒΑΖΩ ΚΑΙ ΓΡΑΦΩ ΕΛΛΗΝΙΚΑ»",
+      "url": "https://www.in.gr/2026/10/16/politics/kikilias-sto-tokio-naytiliako-metopo-elladas-iaponias-apenanti-stis-diethneis-geopolitikes-prokliseis/",
+      "title": "Κικίλιας στο Τόκιο: Ναυτιλιακό «μέτωπο» Ελλάδας – Ιαπωνίας απέναντι στις διεθνείς γεωπολιτικές προκλήσεις",
+      "normalized_title": "ΚΙΚΙΛΙΑΣ ΣΤΟ ΤΟΚΙΟ: ΝΑΥΤΙΛΙΑΚΟ «ΜΕΤΩΠΟ» ΕΛΛΑΔΑΣ – ΙΑΠΩΝΙΑΣ ΑΠΕΝΑΝΤΙ ΣΤΙΣ ΔΙΕΘΝΕΙΣ ΓΕΩΠΟΛΙΤΙΚΕΣ ΠΡΟΚΛΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/16/world/ipa-poia-einai-i-ntempi-matenopoulos-pou-aytoproteinetai-gia-diadoxos-tis-gkilfoil/",
-        "https://www.in.gr/2026/10/16/life/texni/transit-sculpture-in-performance-ena-taksidi-apo-to-gnorimo-sto-agnosto/"
+        "https://www.in.gr/2026/10/16/politics/kikilias-sto-tokio-naytiliako-metopo-elladas-iaponias-apenanti-stis-diethneis-geopolitikes-prokliseis/",
+        "https://www.in.gr/2026/10/16/world/italia-xaos-sta-aerodromia-logo-vlavis-sto-systima-enaerias-kykloforias-kathysteriseis-kai-akyroseis-ptiseon/",
+        "https://www.in.gr/2026/10/16/go-fun/fizz/tzim-kertis-o-agapimenos-tis-tzenifer-aniston-mila-gia-tin-elliniki-katagogi-tou-kai-to-provlima-ygeias-tou/",
+        "https://www.in.gr/2026/10/16/sports/basketball/aytes-einai-oi-epiloges-tou-mpartzoka-me-ta-diavatiria-meta-tis-ekselikseis-me-ton-ntorsei/"
       ],
-      "seen_at_utc": "2026-10-16T09:30:05.258059+00:00"
+      "seen_at_utc": "2026-10-16T09:51:14.270267+00:00"
     }
   },
-  "updated_at_utc": "2026-10-16T09:30:05.258204+00:00"
+  "updated_at_utc": "2026-10-16T09:51:14.270398+00:00"
 }
