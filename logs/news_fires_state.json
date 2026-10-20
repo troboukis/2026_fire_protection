@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/dikastiko/564534583/diki-gia-ta-tempi-orologiaki-vomva-to-treno-vrikame-apenanti-mas-ena-kratos-echthriko/",
-      "title": "Δίκη για τα Τέμπη: «Ωρολογιακή βόμβα το τρένο – Βρήκαμε απέναντί μας ένα κράτος εχθρικό»",
-      "normalized_title": "ΔΙΚΗ ΓΙΑ ΤΑ ΤΕΜΠΗ: «ΩΡΟΛΟΓΙΑΚΗ ΒΟΜΒΑ ΤΟ ΤΡΕΝΟ – ΒΡΗΚΑΜΕ ΑΠΕΝΑΝΤΙ ΜΑΣ ΕΝΑ ΚΡΑΤΟΣ ΕΧΘΡΙΚΟ»",
+      "url": "https://www.kathimerini.gr/politics/564534448/oi-taraches-sti-gallia-ki-emeis-politiki-antiparathesi-me-fonto-tis-kinitopoiiseis/",
+      "title": "Οι ταραχές στη Γαλλία κι εμείς – Πολιτική αντιπαράθεση με φόντο τις κινητοποιήσεις",
+      "normalized_title": "ΟΙ ΤΑΡΑΧΕΣ ΣΤΗ ΓΑΛΛΙΑ ΚΙ ΕΜΕΙΣ – ΠΟΛΙΤΙΚΗ ΑΝΤΙΠΑΡΑΘΕΣΗ ΜΕ ΦΟΝΤΟ ΤΙΣ ΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/dikastiko/564534583/diki-gia-ta-tempi-orologiaki-vomva-to-treno-vrikame-apenanti-mas-ena-kratos-echthriko/",
-        "https://www.kathimerini.gr/society/564534601/fotia-se-dasiki-ektasi-sti-tzia-epicheiroyn-2-enaeria/"
+        "https://www.kathimerini.gr/politics/564534448/oi-taraches-sti-gallia-ki-emeis-politiki-antiparathesi-me-fonto-tis-kinitopoiiseis/",
+        "https://www.kathimerini.gr/politics/564534628/mitsotakis-apo-dimokrito-mono-ayti-i-kyvernisi-synomilei-me-to-ayrio/",
+        "https://www.kathimerini.gr/world/564534565/machi-gia-tis-kartes-grafikon-tis-nvidia-stin-kina/",
+        "https://www.kathimerini.gr/politics/564534616/mpakogianni-kata-samara-ayta-poy-leei-gia-tin-akriveia-steroyntai-sovarotitas/",
+        "https://www.kathimerini.gr/world/564534613/iran-stis-floges-tylichthikan-dyo-tanker-sta-stena-toy-ormoyz/"
       ],
-      "seen_at_utc": "2026-10-20T09:30:03.904034+00:00"
+      "seen_at_utc": "2026-10-20T09:51:37.370656+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,32 +1263,40 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1897683/sunelifthi-sti-thessaloniki-pakistanos-fugopoinos-me-katadiki-33-eton-gia-arpagi-kai-apopeira-ekviasis/?utm_source=rss",
-      "title": "Συνελήφθη στη Θεσσαλονίκη Πακιστανός φυγόποινος με καταδίκη 33 ετών για αρπαγή και απόπειρα εκβίασης",
-      "normalized_title": "ΣΥΝΕΛΗΦΘΗ ΣΤΗ ΘΕΣΣΑΛΟΝΙΚΗ ΠΑΚΙΣΤΑΝΟΣ ΦΥΓΟΠΟΙΝΟΣ ΜΕ ΚΑΤΑΔΙΚΗ 33 ΕΤΩΝ ΓΙΑ ΑΡΠΑΓΗ ΚΑΙ ΑΠΟΠΕΙΡΑ ΕΚΒΙΑΣΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1897692/fotia-se-dasiki-ektasi-stin-kea-epiheiroun-duo-aeroskafi/?utm_source=rss",
+      "title": "Φωτιά σε δασική έκταση στην Κέα, επιχειρούν δύο αεροσκάφη",
+      "normalized_title": "ΦΩΤΙΑ ΣΕ ΔΑΣΙΚΗ ΕΚΤΑΣΗ ΣΤΗΝ ΚΕΑ, ΕΠΙΧΕΙΡΟΥΝ ΔΥΟ ΑΕΡΟΣΚΑΦΗ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1897683/sunelifthi-sti-thessaloniki-pakistanos-fugopoinos-me-katadiki-33-eton-gia-arpagi-kai-apopeira-ekviasis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1897692/fotia-se-dasiki-ektasi-stin-kea-epiheiroun-duo-aeroskafi/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1897685/edopistike-lemvos-me-peripou-50-metanastes-anoihta-tis-kritis-metaferthikan-sto-limani-tis-ierapetras/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-20T09:30:03.904145+00:00"
+      "seen_at_utc": "2026-10-20T09:51:37.370781+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1492320/oles-oi-allages-stis-enoples-dynameis-katargisi-stratopedon-ayxiseis-misthon-kai-nees-tehnologies/",
-      "title": "Ολες οι αλλαγές στις Ένοπλες Δυνάμεις: Κατάργηση στρατοπέδων, αυξήσεις μισθών και νέες τεχνολογίες",
-      "normalized_title": "ΟΛΕΣ ΟΙ ΑΛΛΑΓΕΣ ΣΤΙΣ ΕΝΟΠΛΕΣ ΔΥΝΑΜΕΙΣ: ΚΑΤΑΡΓΗΣΗ ΣΤΡΑΤΟΠΕΔΩΝ, ΑΥΞΗΣΕΙΣ ΜΙΣΘΩΝ ΚΑΙ ΝΕΕΣ ΤΕΧΝΟΛΟΓΙΕΣ",
+      "url": "https://www.efsyn.gr/oikonomia/1492306/agrotiko-petrelaio-apo-1i-noemvrioy-i-apallagi-apo-efk-kai-fpa-stin-antlia-i-diadikasia-meso-toy-mydiesel/",
+      "title": "Αγροτικό πετρέλαιο: Από 1η Νοεμβρίου η απαλλαγή από ΕΦΚ και ΦΠΑ στην αντλία – Η διαδικασία μέσω του myDiesel",
+      "normalized_title": "ΑΓΡΟΤΙΚΟ ΠΕΤΡΕΛΑΙΟ: ΑΠΟ 1Η ΝΟΕΜΒΡΙΟΥ Η ΑΠΑΛΛΑΓΗ ΑΠΟ ΕΦΚ ΚΑΙ ΦΠΑ ΣΤΗΝ ΑΝΤΛΙΑ – Η ΔΙΑΔΙΚΑΣΙΑ ΜΕΣΩ ΤΟΥ MYDIESEL",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1492320/oles-oi-allages-stis-enoples-dynameis-katargisi-stratopedon-ayxiseis-misthon-kai-nees-tehnologies/"
+        "https://www.efsyn.gr/oikonomia/1492306/agrotiko-petrelaio-apo-1i-noemvrioy-i-apallagi-apo-efk-kai-fpa-stin-antlia-i-diadikasia-meso-toy-mydiesel/",
+        "https://www.efsyn.gr/ellada/1492342/fotia-se-dasiki-ektasi-stin-tzia-epiheiroyn-dyo-enaeria-mesa/",
+        "https://www.efsyn.gr/politiki/1492032/kyvernisi-pasok-prothypoyrgos-androylakis-i-apantisi-tis-harilaoy-trikoypi-stis-aihmes-tis-elas/",
+        "https://www.efsyn.gr/life/1492324/i-kinisi-tis-annas-vissi-gia-toys-moysikoys-tis-meta-to-pagoma-ton-emfaniseon-sto-athinon-arena/",
+        "https://www.efsyn.gr/politiki/1492325/floridis-gia-tempi-o-velopoylos-rezileytike-me-tis-fotografies-oston-poy-anikan-se-zoa/"
       ],
-      "seen_at_utc": "2026-10-20T09:30:03.904115+00:00"
+      "seen_at_utc": "2026-10-20T09:51:37.370757+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/20/economy/aade-apo-1i-noemvriou-i-nea-diadikasia-gia-tin-apallagi-efk-sto-agrotiko-petrelaio/",
-      "title": "ΑΑΔΕ: Από 1η Νοεμβρίου η νέα διαδικασία για την απαλλαγή ΕΦΚ στο αγροτικό πετρέλαιο",
-      "normalized_title": "ΑΑΔΕ: ΑΠΟ 1Η ΝΟΕΜΒΡΙΟΥ Η ΝΕΑ ΔΙΑΔΙΚΑΣΙΑ ΓΙΑ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΦΚ ΣΤΟ ΑΓΡΟΤΙΚΟ ΠΕΤΡΕΛΑΙΟ",
+      "url": "https://www.in.gr/2026/10/20/politics/politiki-grammateia/p-marinakis-ypo-piesi-enopsei-kinitopoiiseon-mila-prokatavolika-gia-mpaxala-kai-epixeirei-na-spilosei-ton-tsipra/",
+      "title": "Π. Μαρινάκης: Υπό πίεση ενόψει κινητοποιήσεων μιλά προκαταβολικά για μπάχαλα και επιχειρεί να σπιλώσει τον Τσίπρα",
+      "normalized_title": "Π. ΜΑΡΙΝΑΚΗΣ: ΥΠΟ ΠΙΕΣΗ ΕΝΟΨΕΙ ΚΙΝΗΤΟΠΟΙΗΣΕΩΝ ΜΙΛΑ ΠΡΟΚΑΤΑΒΟΛΙΚΑ ΓΙΑ ΜΠΑΧΑΛΑ ΚΑΙ ΕΠΙΧΕΙΡΕΙ ΝΑ ΣΠΙΛΩΣΕΙ ΤΟΝ ΤΣΙΠΡΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/20/economy/aade-apo-1i-noemvriou-i-nea-diadikasia-gia-tin-apallagi-efk-sto-agrotiko-petrelaio/"
+        "https://www.in.gr/2026/10/20/politics/politiki-grammateia/p-marinakis-ypo-piesi-enopsei-kinitopoiiseon-mila-prokatavolika-gia-mpaxala-kai-epixeirei-na-spilosei-ton-tsipra/",
+        "https://www.in.gr/2026/10/20/greece/fotia-stin-tzia-epixeiroun-dyo-aeroskafi/",
+        "https://www.in.gr/2026/10/20/in-science/space/rantevou-me-ton-fovo-tolmiri-apostoli-tis-iaponias-epixeirei-na-ferei-deigma-apo-areiano-feggari/",
+        "https://www.in.gr/2026/10/20/greece/diki-gia-ta-tempi-i-kori-mou-taksideye-me-treno-orologiaki-vomva/"
       ],
-      "seen_at_utc": "2026-10-20T09:30:03.904083+00:00"
+      "seen_at_utc": "2026-10-20T09:51:37.370716+00:00"
     }
   },
-  "updated_at_utc": "2026-10-20T09:30:03.904210+00:00"
+  "updated_at_utc": "2026-10-20T09:51:37.370875+00:00"
 }
