@@ -26,11 +26,11 @@ from IPython.display import clear_output  # noqa: F401 (safe to remove if not in
 try:
     from .pdf_pipeline import extract_document_code, parse_pdf_file_to_row
     from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
-    from .keyword_exclusions import text_has_requested_exclusion
+    from .keyword_exclusions import text_has_exclusion
 except ImportError:  # script execution fallback: `python src/fetch_diavgeia.py`
     from pdf_pipeline import extract_document_code, parse_pdf_file_to_row
     from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
-    from keyword_exclusions import text_has_requested_exclusion
+    from keyword_exclusions import text_has_exclusion
 
 # ---------------------------------------------------------------------------
 # Config
@@ -101,7 +101,7 @@ KEYWORDS = [
 ]
 PAGE_SIZE = 100
 KEYWORD_BATCH_SIZE = 5
-SEARCH_REQUEST_TIMEOUT = 30
+SEARCH_REQUEST_TIMEOUT = 120
 SEARCH_MAX_ATTEMPTS = 3
 SEARCH_RETRY_BACKOFF_SECONDS = 2
 SPENDING_APPROVAL_LABEL = "ΕΓΚΡΙΣΗ ΔΑΠΑΝΗΣ"
@@ -438,7 +438,11 @@ def fetch_new_decisions(since: datetime | None) -> list[dict]:
                 excluded_in_batch = 0
                 filtered_batch = []
                 for rec in api_batch:
-                    if record_has_excluded_org(rec) or record_is_confirmed_irrelevant(rec) or text_has_requested_exclusion(rec.get("subject")):
+                    if (
+                        record_has_excluded_org(rec)
+                        or record_is_confirmed_irrelevant(rec)
+                        or text_has_exclusion(rec.get("subject"), extract_org_label(rec.get("organization")))
+                    ):
                         excluded_in_batch += 1
                         continue
                     filtered_batch.append(rec)
@@ -663,7 +667,11 @@ def filter_excluded_org_rows(df: pd.DataFrame, *, context: str = "rows") -> pd.D
     if "org_name_clean" in df.columns:
         mask |= df["org_name_clean"].apply(is_excluded_org_name_clean)
     if "subject" in df.columns:
-        mask |= df["subject"].apply(text_has_requested_exclusion)
+        organizations = df["org_name_clean"] if "org_name_clean" in df.columns else pd.Series(None, index=df.index)
+        mask |= pd.Series(
+            [text_has_exclusion(subject, organization) for subject, organization in zip(df["subject"], organizations)],
+            index=df.index,
+        )
     dropped = int(mask.sum())
     if dropped:
         print(f"[org-filter] Dropped {dropped} excluded {context}.", flush=True)

@@ -18,7 +18,7 @@ import unicodedata
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 import pandas as pd
 import requests
@@ -29,6 +29,7 @@ DEFAULT_BACKUP_JSON = REPO_DIR / "data" / "raw_items_backup.json"
 DEFAULT_LOG_CSV = REPO_DIR / "logs" / "kimdis_fetch_runs.csv"
 DEFAULT_STATE_FILE = REPO_DIR / "state" / "kimdis_state.json"
 EXTENDED_CPV_CSV = REPO_DIR / "data" / "mappings" / "cpv_dictionary_extended.csv"
+REVIEWED_TITLE_OVERRIDES_JSON = REPO_DIR / "data" / "mappings" / "kimdis_reviewed_title_overrides.json"
 
 
 _SEED_CPVS: dict[str, str] = {
@@ -82,46 +83,41 @@ DEFAULT_CPVS: dict[str, str] = {
 }
 
 try:
-    from .keyword_exclusions import ROOT_EXCLUDE_KEYWORDS, ROOT_EXCLUDE_TOKEN_RULES, normalize_keyword_tokens, text_matches_keyword_prefix
+    from .keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
 except ImportError:  # Direct script execution and stage2 runpy loading.
     try:
-        from src.keyword_exclusions import ROOT_EXCLUDE_KEYWORDS, ROOT_EXCLUDE_TOKEN_RULES, normalize_keyword_tokens, text_matches_keyword_prefix
+        from src.keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
     except ModuleNotFoundError:
-        from keyword_exclusions import ROOT_EXCLUDE_KEYWORDS, ROOT_EXCLUDE_TOKEN_RULES, normalize_keyword_tokens, text_matches_keyword_prefix
+        from keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
 
-DEFAULT_EXCLUDE_KEYWORDS = [
-    *ROOT_EXCLUDE_KEYWORDS,
-    "ΝΟΣΟΚΟΜΕΙΟ",
-    "ΣΧΟΛΙΚ",
-    "σχολ",
-    "ΠΑΝΤΕΙΟ",
-    "ΕΠΙΘΕΩΡΗΣΗ ΕΡΓΑΣΙΑΣ",
-    "Αναγόμ",
-    "αναγομ",
-    "Αναγομ",
-    "αναγόμ",
-    "αντλητικ",
-    "λυκει",
-    "σχολει",
-    "ΕΠΑΛ",
-    "ΒΡΕΦΟ",
-    "ΠΑΙΔΙΚ",
-    "αναδάσωσ",
-    "ΣΥΝΤΗΡΗΣΗ ΧΩΡΩΝ ΠΡΑΣΙΝΟΥ",
-    "SPORTS4ALL",
-    "κινηματογραφο",
-    "AQUA MONTIS",
-    "ΑΝΑΔΕΙΞΗ ΥΦΙΣΤΑΜΕΝΩΝ ΔΙΑΔΡΟΜΩΝ",
-    "ΑΝΑΔΕΙΞΗ ΥΦΟΣΤΑΜΕΝΩΝ ΔΙΑΔΡΟΜΩΝ",
+# Additional broad categories require explicit fire wording in the title.
+FIRE_TITLE_CPVS: dict[str, str] = {
+    "71320000-7": "Υπηρεσίες εκπόνησης τεχνικών μελετών",
+    "43210000-8": "Μηχανήματα χωματουργικών εργασιών",
+    "90522400-6": "Καθαρισμός και επεξεργασία εδάφους",
+    "90530000-1": "Λειτουργία χώρου απόθεσης απορριμμάτων",
+    "35125300-2": "Κάμερες ασφαλείας",
+    "16000000-5": "Γεωργικά μηχανήματα",
+    "35110000-8": "Εξοπλισμός πυρόσβεσης",
+    "79714000-2": "Υπηρεσίες επιτήρησης",
+}
+FIRE_TITLE_KEYWORDS = [
+    "πυροπροστασ", "αντιπυρικ", "δασικών πυρκαγιών", "κατασβεσ",
+    "αεροπυροσβ", "πυροσβ", "πυρανιχνευσ",
 ]
+REVIEWED_TITLE_OVERRIDES: dict[str, dict[str, Any]] = json.loads(
+    REVIEWED_TITLE_OVERRIDES_JSON.read_text(encoding="utf-8")
+)
 
 # Broad CPVs that overlap with non-fire-protection domains.
 # Only contracts whose title contains at least one SECONDARY_TITLE_KEYWORDS
 # substring are kept from this secondary API pass.
 SECONDARY_CPVS: dict[str, str] = {
+    **FIRE_TITLE_CPVS,
     "45233141-9": "Συντήρηση οδών",
     "45240000-1": "Κατασκευαστικές εργασίες για υδατικά έργα",
     "45232152-2": "Έργα αντιπλημμυρικής / αποχετευτικής υποδομής",
+    "77231000-8": "Υπηρεσίες διαχείρισης δασοκομίας",
     "77231500-3": "Υπηρεσίες παρακολούθησης ή αξιολόγησης δασών",
     "77231300-1": "Υπηρεσίες διαχείρισης δασών",
     "79933000-3": "Υπηρεσίες υποστήριξης στον τομέα του σχεδιασμού",
@@ -169,6 +165,8 @@ FETCH_CPVS: dict[str, str] = {
 }
 PRIMARY_CPV_KEYS: set[str] = set(_SEED_CPVS.keys())
 SECONDARY_CPV_KEYS: set[str] = set(SECONDARY_CPVS.keys())
+# These broad CPVs require a relevant title even alongside a primary CPV.
+TITLE_REQUIRED_CPV_KEYS: set[str] = {"77231000-8", *FIRE_TITLE_CPVS}
 
 
 def normalize_cell_value(value):
@@ -186,6 +184,21 @@ def normalize_string(value: str) -> str:
     value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
     value = " ".join(value.split())
     return value
+
+
+def matches_reviewed_title_override(item: dict[str, Any], cpv_keys: list[str], descriptions: str) -> bool:
+    """Reviewed references bypass only the title gate while their evidence matches."""
+    reference = str(item.get("referenceNumber") or "").strip().upper()
+    reviewed = REVIEWED_TITLE_OVERRIDES.get(reference)
+    if reviewed is None:
+        return False
+    if set(cpv_keys) != set(reviewed["cpvs"]):
+        return False
+    if normalize_string(item.get("title") or "") != normalize_string(reviewed["title"]):
+        return False
+    normalized_descriptions = normalize_string(descriptions)
+    phrases = reviewed["description_phrases"]
+    return bool(phrases) and all(normalize_string(phrase) in normalized_descriptions for phrase in phrases)
 
 
 
@@ -286,7 +299,7 @@ class ProcurementCollector:
         start_date: date,
         end_date: date,
         max_window_days: int,
-        exclude_keywords: list[str] | None = None,
+        exclude_keywords: Iterable[str] | None = None,
         title_include_keywords: list[str] | None = None,
         request_timeout: int = 60,
         retry_sleep_seconds: int = 5,
@@ -431,18 +444,24 @@ class ProcurementCollector:
         ):
             return True
 
-        if self.title_include_keywords:
-            cpv_keys = [
-                ((cpv or {}).get("key", "") or "").strip()
-                for obj in (item.get("objectDetailsList") or [])
-                for cpv in ((obj or {}).get("cpvs") or [])
-            ]
+        cpv_keys = [
+            ((cpv or {}).get("key", "") or "").strip()
+            for obj in (item.get("objectDetailsList") or [])
+            for cpv in ((obj or {}).get("cpvs") or [])
+        ]
+        requires_fire_title = bool(FIRE_TITLE_CPVS.keys() & set(cpv_keys))
+        if self.title_include_keywords or requires_fire_title:
             has_primary = any(k in PRIMARY_CPV_KEYS for k in cpv_keys if k)
             has_secondary = any(k in SECONDARY_CPV_KEYS for k in cpv_keys if k)
             normalized_title = normalize_string(item.get("title", "") or "")
-            normalized_include = [normalize_string(k) for k in self.title_include_keywords]
-            # Only secondary-only CPV matches require a title keyword.
-            if has_secondary and not has_primary and not any(k in normalized_title for k in normalized_include):
+            include_keywords = FIRE_TITLE_KEYWORDS if requires_fire_title else self.title_include_keywords
+            normalized_include = [normalize_string(k) for k in include_keywords]
+            requires_title = (has_secondary and not has_primary) or bool(TITLE_REQUIRED_CPV_KEYS.intersection(cpv_keys))
+            if (
+                requires_title
+                and not any(k in normalized_title for k in normalized_include)
+                and not matches_reviewed_title_override(item, cpv_keys, short_descriptions)
+            ):
                 return True
 
         return False

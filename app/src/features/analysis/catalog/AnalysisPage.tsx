@@ -1,9 +1,21 @@
 import AnalysisCard from './AnalysisCard'
 import './AnalysisCatalog.css'
 
+// The yearly report stays off the catalog until it is complete; its page remains reachable by URL.
+const SHOW_YEARLY_REPORT = false
+
 export default function AnalysisPage() {
   return (
     <main className="analysis-catalog">
+      {SHOW_YEARLY_REPORT && (
+        <AnalysisCard
+          to="/analysis/yearly_report"
+          title="Ετήσια αναφορά 2026: οι δαπάνες για την πυροπροστασία"
+          description="Οι συμβάσεις του ΚΗΜΔΗΣ και οι πληρωμές της Διαύγειας για το 2026, χωρίς διπλομέτρηση και χωρίς ΦΠΑ. Τι αγοράστηκε, πώς ανατέθηκε και πότε υπογράφηκε. Ενημερώνεται κάθε μέρα έως το τέλος της χρονιάς."
+          imageSrc={`${import.meta.env.BASE_URL}social/yearly-report-2026.svg`}
+          imageAlt="Ραβδόγραμμα με τα δύο μέρη του συνόλου δαπανών του 2026: συμβάσεις και πληρωμές"
+        />
+      )}
       <AnalysisCard
         to="/analysis/west-attica-fire-2026/"
         title="Πώς επηρέασαν τα AntiNERO έργα τη μεγάλη πυρκαγιά της Δυτικής Αττικής το 2026;"

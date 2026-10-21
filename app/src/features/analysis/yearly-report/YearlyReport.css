@@ -1,0 +1,546 @@
+/* Ετήσια αναφορά: report typography and charts on the application's paper tokens. */
+
+.yr-root {
+  --yr-grid: #e3ded3;
+  --yr-band: rgba(211, 72, 45, 0.07);
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  animation: riseIn 420ms ease both;
+}
+
+.yr-empty-note {
+  padding: 1rem;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+/* ── Hero ── */
+.yr-hero h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  max-width: 24ch;
+}
+
+.yr-lead {
+  max-width: 68ch;
+  margin: 0.25rem 0 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.yr-meta {
+  max-width: 80ch;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+/* ── Sections ── */
+.yr-section {
+  min-width: 0;
+  scroll-margin-top: 1rem;
+}
+
+.yr-section__head {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.95rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.yr-section__head h3 {
+  margin: 0;
+  max-width: 40ch;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.yr-section__body {
+  padding: 0.5rem 1.25rem 1.25rem;
+  min-width: 0;
+}
+
+.yr-section__body > p,
+.yr-section__body > ul,
+.yr-section__body > ol {
+  max-width: 72ch;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.yr-section__body > p {
+  margin: 0.9rem 0 0;
+}
+
+.yr-section__body h4 {
+  margin: 1.8rem 0 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.yr-section__body a {
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.2em;
+}
+
+.yr-section__body a:hover {
+  color: var(--accent);
+}
+
+.yr-caveat {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--line-strong);
+  color: var(--ink-soft);
+  font-size: 0.86rem !important;
+}
+
+/* ── Key findings ── */
+.yr-findings__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.yr-finding {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  background: var(--paper);
+}
+
+.yr-finding__value {
+  font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.yr-finding p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+/* ── Table of contents ── */
+.yr-toc {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.95rem 1.25rem;
+}
+
+.yr-toc ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.35rem 1.5rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.yr-toc a {
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--line-strong);
+}
+
+.yr-toc a:hover {
+  color: var(--accent);
+}
+
+/* ── Lists ── */
+.yr-steps,
+.yr-bullets {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.yr-evidence {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.yr-list {
+  max-width: 72ch;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.yr-list summary,
+.yr-table summary {
+  cursor: pointer;
+  padding-block: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+
+.yr-list ul {
+  columns: 2 16rem;
+  column-gap: 2rem;
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ── Charts ── */
+.yr-chart {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.4rem 0 0.4rem;
+  padding: 1rem;
+  background: var(--paper);
+  min-width: 0;
+}
+
+.yr-chart figcaption {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.yr-chart__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.yr-chart__subtitle,
+.yr-chart__note {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.yr-plot {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.yr-plot svg {
+  display: block;
+  overflow: visible;
+}
+
+.yr-plot text {
+  font-family: var(--font-mono);
+}
+
+.yr-axis-label {
+  font-size: 10.5px;
+  fill: var(--ink-faint);
+}
+
+.yr-axis-title {
+  font-size: 11px;
+  fill: var(--ink-soft);
+}
+
+.yr-value-label {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--ink-soft);
+}
+
+.yr-row-label {
+  font-family: var(--font-sans) !important;
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: var(--ink-soft);
+}
+
+.yr-inbar-label {
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.yr-grid {
+  stroke: var(--yr-grid);
+  stroke-width: 1;
+}
+
+.yr-baseline {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+.yr-band rect {
+  fill: var(--yr-band);
+}
+
+.yr-band text {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  fill: var(--accent);
+}
+
+.yr-threshold {
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.yr-threshold-label {
+  font-size: 10.5px;
+  fill: var(--ink);
+}
+
+.yr-hit {
+  fill: transparent;
+}
+
+.yr-mark {
+  cursor: default;
+  outline: none;
+}
+
+.yr-mark:hover .yr-hit,
+.yr-mark:focus-visible .yr-hit {
+  fill: rgba(17, 17, 17, 0.04);
+}
+
+.yr-mark:focus-visible path,
+.yr-mark:focus-visible rect:not(.yr-hit) {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.yr-tooltip {
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  gap: 0.15rem;
+  min-width: 9rem;
+  max-width: 17rem;
+  padding: 0.5rem 0.65rem;
+  transform: translate(-50%, calc(-100% - 8px));
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  pointer-events: none;
+  box-shadow: var(--shadow-paper);
+}
+
+.yr-tooltip strong {
+  font-weight: 600;
+}
+
+.yr-tooltip span {
+  color: #d8d3c8;
+  font-variant-numeric: tabular-nums;
+}
+
+.yr-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.yr-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.yr-legend__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Bar list (HTML bars, one series) */
+.yr-barlist {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.yr-barlist li {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.yr-barlist__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.yr-barlist__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.yr-barlist__value {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.yr-barlist__track {
+  height: 8px;
+  background: var(--paper-2);
+}
+
+.yr-barlist__fill {
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+}
+
+.yr-barlist__detail {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+}
+
+/* Data tables */
+.yr-table {
+  min-width: 0;
+}
+
+.yr-table__scroll {
+  overflow-x: auto;
+}
+
+.yr-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.yr-table caption {
+  padding: 0.3rem 0 0.5rem;
+  text-align: left;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.yr-table th,
+.yr-table td {
+  padding: 0.4rem 0.6rem 0.4rem 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.yr-table th {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+}
+
+.yr-table .is-numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.yr-table--open {
+  margin-top: 1.2rem;
+  max-width: 56rem;
+}
+
+.analysis-detail-page .yr-root a:focus-visible,
+.analysis-detail-page .yr-root summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .yr-findings__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .yr-findings__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .yr-section__head,
+  .yr-toc {
+    padding-inline: 1rem;
+  }
+
+  .yr-section__body {
+    padding-inline: 1rem;
+  }
+
+  .yr-chart {
+    padding: 0.75rem;
+  }
+
+  .yr-barlist__head {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yr-root {
+    animation: none;
+  }
+}
+
+.yr-glossary {
+  display: grid;
+  grid-template-columns: minmax(9rem, max-content) minmax(0, 1fr);
+  gap: 0.45rem 1.25rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.yr-glossary dt {
+  font-weight: 600;
+}
+
+.yr-glossary dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 600px) {
+  .yr-glossary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .yr-glossary dd {
+    margin-bottom: 0.4rem;
+  }
+}

@@ -135,6 +135,61 @@
 - Date:
 - 2026-08-07
 
+### 10. Fire safety of buildings and facilities is out of scope
+
+- Problem:
+- The Diavgeia keyword search ("πυροπροστασία") also returns the fire safety of buildings: certificates and studies for nurseries and schools, hospital fire systems, extinguishers of municipal buildings. The existing subject exclusions (`REQUESTED_EXCLUDE_KEYWORDS`) did not catch wordings such as «πιστοποιητικό πυροπροστασίας», «σχολ. μονάδες», «παιδικός σταθμός» or «νοσοκομείο».
+- Decision:
+- Keep such records out of ingestion, for both Diavgeia decisions and KIMDIS contracts. Text about outdoor work, vegetation, settlements or natural areas keeps a record even when a building is mentioned.
+- Delete the 79 payment finalizations of 2026 already in the database that match the rule (their beneficiary rows and contract links were deleted with them). Existing contracts were not deleted.
+- Scope:
+- fetch / ingest / DB / reporting
+- Implementation:
+- `src/keyword_exclusions.py` (`building_fire_safety_match`, `is_building_fire_safety`)
+- `src/fetch_diavgeia.py` (search filter, `filter_excluded_org_rows`), `ingest/stage2_load_erd.py` (`diav_rows`), `src/fetch_kimdis_procurements.py` (`ProcurementCollector.is_excluded`)
+- `scripts/delete_diavgeia_building_fire_safety.py` (dry run by default, JSON backup before `--apply`); backup of the 2026-10-19 deletion: `backupDB/diavgeia-building-fire-safety-20261019-152128-before.json` (local, not in git)
+- `scripts/reports/yearly-report-2026/build_yearly_report.py` applies the same rule to records that predate it
+- Date:
+- 2026-10-19
+
+Update, 2026-10-20:
+- The separate building-fire-safety heuristics described above were removed at the user's request, including their building, facility/body, and outdoor-exception lists. The dedicated building-cleanup script is retired and stops without connecting to the database.
+- Keyword exclusions now have one source: `DEFAULT_EXCLUDE_KEYWORDS` in `src/keyword_exclusions.py`, used by both collectors and stage2 ingestion. It merges the existing keyword catalogs, removes normalized duplicates, and preserves the existing school and other explicit exclusions.
+- All keyword phrases use ordered token prefixes with up to two intervening words between consecutive roots. This also applies to the former KIMDIS-only phrases that previously required adjacent words.
+- Collection review is performed into a separate `exports/` directory, retaining raw API candidates, accepted/rejected records and the matching terms. These code changes do not apply any database cleanup.
+
+Update, 2026-10-21:
+- At the user's request, the former KIMDIS-only phrases again require adjacent words. The original common root terms retain their allowance of up to two intervening words. Both settings live beside their terms in the single `DEFAULT_EXCLUDE_KEYWORDS` policy in `src/keyword_exclusions.py`, shared by collection and ingestion.
+- The previously approved removal of `αναδασωσ` is preserved. No database cleanup was run.
+
+### 11. Anogeia deadline extensions without KIMDIS chain metadata
+
+- Problem: the 2024-onward backfill for CPV `77231000-8` returned the original contract `25SYMV016668307` and two deadline-extension decisions, `25SYMV017249656` and `25SYMV017327213`, each repeating the same EUR 8,064.52 net value while leaving `prevReferenceNo` / `nextRefNo` empty.
+- Evidence: the [original signed contract](https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV016668307), protocol 2778/15-04-2025, fixes the total at EUR 10,000 including VAT. The [committee decision](https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017249656) and [mayor decision](https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017327213) only extend the deadline to 30/05/2025 and add no contract value.
+- Decision: retain the original contract's net value and set the two extension rows' derived `amount_without_vat` to zero through the reviewed override registry. The zero is an accounting exclusion from totals, not a claim that the original contract had no value. Preserve raw API amounts, gross values, and the source's empty chain fields.
+- Scope: ingest / DB; only newly collected records. Existing database records are unchanged.
+- Implementation: `data/mappings/procurement_amount_overrides.csv`, applied by `ingest/stage2_load_erd.py` before chain deduplication.
+- Date: 2026-10-20.
+
+### 12. Additional KIMDIS categories with explicit fire-title evidence
+
+- Problem: reviewed Diavgeia references identified fire-protection contracts under broad KIMDIS categories absent from collection.
+- Decision: add the following as secondary categories, requiring explicit fire-related wording in the contract title even when a primary CPV is also present:
+  - Υπηρεσίες εκπόνησης τεχνικών μελετών (`71320000-7`).
+  - Μηχανήματα χωματουργικών εργασιών (`43210000-8`).
+  - Καθαρισμός και επεξεργασία εδάφους (`90522400-6`).
+  - Λειτουργία χώρου απόθεσης απορριμμάτων (`90530000-1`).
+  - Κάμερες ασφαλείας (`35125300-2`).
+  - Γεωργικά μηχανήματα (`16000000-5`).
+  - Εξοπλισμός πυρόσβεσης (`35110000-8`).
+  - Υπηρεσίες επιτήρησης (`79714000-2`).
+- General civil-protection wording alone does not qualify these categories. The existing cancellation, organization, school, green-maintenance and building-fire-safety exclusions continue to apply.
+- The backfill exposed fire safety of hangars, generic alarm systems, port installations, a police headquarters, wastewater-treatment installations and underground parking. The existing facility exclusion now recognizes those descriptions and the Greek stem `λιμεν`; explicit forest/outdoor context retains its existing priority.
+- Four explicitly approved abbreviated titles have reviewed exceptions: `24SYMV015942964`, `26SYMV019097903`, `26SYMV019305098`, `26SYMV019416651`. Each exception requires the exact reference, normalized title, complete CPV set and a matching description phrase. It bypasses only the title gate. The vegetation-cutting equipment section I qualifies; section IV `26SYMV019305186` remains excluded.
+- Scope: collection / 2024-onward backfill / ingestion. The other 17 missing references reviewed on 2026-10-20 remain excluded.
+- Implementation: `src/fetch_kimdis_procurements.py` and `data/mappings/kimdis_reviewed_title_overrides.json`.
+- Date: 2026-10-20.
+
 ## Open / Next
 
 - Προαιρετικά: αποθήκευση `amount_raw_text`, `amount_corrected`, `correction_reason` στη βάση.

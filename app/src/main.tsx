@@ -24,6 +24,7 @@ function RouteTracker() {
 const AntineroPage = lazy(() => import('./features/analysis/antinero/AntineroPage'))
 const AnalysisPage = lazy(() => import('./features/analysis/catalog/AnalysisPage'))
 const StatisticalAnalysisPage = lazy(() => import('./features/analysis/statistics/StatisticalAnalysisPage'))
+const YearlyReportPage = lazy(() => import('./features/analysis/yearly-report/YearlyReportPage'))
 const ContractsPage = lazy(() => import('./pages/ContractsPage'))
 const DiavgeiaPage = lazy(() => import('./pages/DiavgeiaPage'))
 const EnvironmentMinistryPage = lazy(() => import('./pages/EnvironmentMinistryPage'))
@@ -43,6 +44,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/analysis" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AnalysisPage /></Suspense>} />
           <Route path="/analysis/statistics" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><StatisticalAnalysisPage /></Suspense>} />
           <Route path="/analysis/antinero-west-attica" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AntineroPage /></Suspense>} />
+          <Route path="/analysis/yearly_report" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><YearlyReportPage /></Suspense>} />
           <Route path="/reports/*" element={<LegacyReportsRedirect />} />
           <Route path="/contracts" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><ContractsPage /></Suspense>} />
           <Route path="/diavgeia" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><DiavgeiaPage /></Suspense>} />

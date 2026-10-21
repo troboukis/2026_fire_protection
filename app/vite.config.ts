@@ -116,6 +116,7 @@ export default defineConfig(({ command }) => ({
         resolve(appRoot, 'analysis/index.html'),
         resolve(appRoot, 'analysis/statistics/index.html'),
         resolve(appRoot, 'analysis/antinero-west-attica/index.html'),
+        resolve(appRoot, 'analysis/yearly_report/index.html'),
       ],
       output: {
         manualChunks(id) {

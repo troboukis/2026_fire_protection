@@ -1,6 +1,7 @@
-"""Link contracts and all Diavgeia document types by exact PDF references.
+"""Link contracts and all Diavgeia document types by exact references.
 
-Contract PDFs: ADA -> Diavgeia document. Diavgeia PDFs: SYMV ADAM -> contract.
+Contract PDFs: ADA -> Diavgeia document. Diavgeia PDFs and subjects: SYMV ADAM -> contract.
+Subjects are read from the database, so they need no download and are matched on every run.
 Default is a preview; --apply persists successful scans on their source rows
 and inserts links in the same transaction. Runtime state is never stored in Git.
 Already parsed PDFs are reused; --refresh rereads them. Unavailable PDFs are
@@ -207,11 +208,53 @@ def match_links(records: dict, contracts: dict, decisions: dict) -> list[dict]:
             if contract not in contracts or ada not in decisions:
                 continue
             links.append({'diavgeia_id': decisions[ada]['id'], 'procurement_id': contracts[contract]['id'],
-                          'ada': ada, 'contract_reference': contract,
+                          'ada': ada, 'contract_reference': contract, 'origin': 'pdf',
                           'source_type': record['source_type'], 'source_id': source,
                           'page': ref['page'], 'evidence': ref['evidence'],
                           'pdf_sha256': record['pdf_sha256']})
     return links
+
+
+def subject_references(subject: str | None) -> list[dict]:
+    """Contract ΑΔΑΜ cited in the subject of a Diavgeia document, with the subject as evidence."""
+    text = subject or ''
+    found = {}
+    for reference, start, end in contract_references(text):
+        found.setdefault(reference, {'reference': reference, 'page': None,
+                                     'evidence': text[max(0, start-120):end+160].strip()})
+    return list(found.values())
+
+
+def match_subject_links(contracts: dict, decisions: dict) -> list[dict]:
+    links = []
+    for ada, decision in decisions.items():
+        for ref in subject_references(decision.get('subject')):
+            if ref['reference'] not in contracts:
+                continue
+            links.append({'diavgeia_id': decision['id'], 'procurement_id': contracts[ref['reference']]['id'],
+                          'ada': ada, 'contract_reference': ref['reference'], 'origin': 'subject',
+                          'source_type': 'diavgeia', 'source_id': ada,
+                          'page': None, 'evidence': ref['evidence'], 'pdf_sha256': None})
+    return links
+
+
+def commit_subject_links(connection, contracts: dict, decisions: dict) -> set:
+    """Reread the citing subjects under locks before creating any new pair."""
+    ids = sorted({link['diavgeia_id'] for link in match_subject_links(contracts, decisions)})
+    if not ids:
+        return set()
+    try:
+        with connection.cursor(cursor_factory=RealDictCursor) as cursor:
+            cursor.execute('SELECT id,ada,subject FROM public.diavgeia WHERE id=ANY(%s) ORDER BY id FOR UPDATE', (ids,))
+            current = {row['ada']: dict(row) for row in cursor.fetchall() if row['ada']}
+        pairs = {(r['diavgeia_id'], r['procurement_id']) for r in match_subject_links(contracts, current)}
+        if not pairs:
+            connection.rollback()  # Release the locks when no subject still cites a known contract.
+            return set()
+        return commit_links(connection, pairs)
+    except BaseException:
+        connection.rollback()
+        raise
 
 
 def save_state(records: dict, path: Path):
@@ -393,6 +436,9 @@ def main():
             report(f'Αντίγραφο: {args.backup}. Κάθε νέα σύνδεση γράφεται αμέσως στη βάση.')
             added += len(commit_cached_scans(connection, records, documents, contracts, decisions))
             report(f'Νέες συνδέσεις από αποθηκευμένα PDF: {added}')
+            subject_added = len(commit_subject_links(connection, contracts, decisions))
+            added += subject_added
+            report(f'Νέες συνδέσεις από ΑΔΑΜ στο θέμα: {subject_added}')
         pools = {source: ThreadPoolExecutor(max_workers=args.workers) for source in SERVICE_NAMES}
         bars = {source: tqdm(total=sum(d['source_type'] == source for d in pending),
                              desc=SERVICE_NAMES[source], unit='PDF', position=index, dynamic_ncols=True)
@@ -476,10 +522,11 @@ def main():
                 bar.close()
         if not args.apply:
             save_state(records, args.output / 'preview-state.json')
-        links = match_links(valid_cached_records(records, documents), contracts, decisions)
+        subject_links = match_subject_links(contracts, decisions)
+        links = match_links(valid_cached_records(records, documents), contracts, decisions) + subject_links
         (args.output / 'links.json').write_text(json.dumps(links, ensure_ascii=False, indent=2))
         with (args.output / 'links.csv').open('w', encoding='utf-8-sig', newline='') as handle:
-            fields = ['ada', 'contract_reference', 'source_type', 'source_id', 'page', 'evidence']
+            fields = ['ada', 'contract_reference', 'origin', 'source_type', 'source_id', 'page', 'evidence']
             writer = csv.DictWriter(handle, fieldnames=fields, extrasaction='ignore')
             writer.writeheader()
             writer.writerows(links)
@@ -489,10 +536,13 @@ def main():
                    'pdf_errors': failures,
                    'remaining_unprocessed': total_pending-processed+failures+deferred,
                    'deferred_this_run': deferred,
-                   'matched_pairs': len(pairs), 'added_links': added,
+                   'matched_pairs': len(pairs),
+                   'subject_pairs': len({(r['diavgeia_id'], r['procurement_id']) for r in subject_links}),
+                   'added_links': added,
                    'database_changed': bool(args.apply and (added or processed-failures-deferred))}
         (args.output / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2))
-        print(f'Τεκμηριωμένες συνδέσεις PDF: {len(pairs)}. Νέες συνδέσεις στη βάση: {added}.', flush=True)
+        print(f"Τεκμηριωμένες συνδέσεις (PDF και ΑΔΑΜ στο θέμα): {len(pairs)}, από το θέμα: {summary['subject_pairs']}. "
+              f'Νέες συνδέσεις στη βάση: {added}.', flush=True)
         if summary['pdf_errors']:
             print(f"::warning::{summary['pdf_errors']} PDFs unavailable; they will be retried next run.")
     finally:

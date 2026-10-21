@@ -43,7 +43,7 @@ from municipality_normalization import normalizeMunicipality
 from src.diavgeia_amounts import resolve_diavgeia_amount_text
 from src.diavgeia_contract_links import CONTRACT_DIAVGEIA_LINKS_SELECT
 from src.diavgeia_relevance_rules import is_confirmed_irrelevant_decision
-from src.keyword_exclusions import text_has_requested_exclusion
+from src.keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, keyword_max_intervening_words, text_has_exclusion
 from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
 
@@ -51,8 +51,6 @@ load_dotenv()
 
 _kimdis_module = runpy.run_path(str(REPO / "src" / "fetch_kimdis_procurements.py"))
 DEFAULT_CPVS: dict[str, str] = _kimdis_module["DEFAULT_CPVS"]
-DEFAULT_EXCLUDE_KEYWORDS: list[str] = _kimdis_module["DEFAULT_EXCLUDE_KEYWORDS"]
-ROOT_EXCLUDE_TOKEN_RULES = _kimdis_module["ROOT_EXCLUDE_TOKEN_RULES"]
 
 RAW_CSV = REPO / "data" / "raw_procurements.csv"
 DIAV_CSV = REPO / "data" / "2026_diavgeia.csv"
@@ -905,6 +903,8 @@ def procurement_rows(
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
+        if text_has_exclusion(r.get("title"), r.get("shortDescriptions"), r.get("organization_value")):
+            continue
         region_key, org_key_resolved, municipality_key, canonical_owner_scope = resolve_procurement_context(
             r=r,
             org_map=org_map,
@@ -1528,7 +1528,10 @@ def diav_rows(
     for _, r in diav.iterrows():
         org_type = t_up(r.get("org_type")) or ""
         org_name = t_up(r.get("org_name_clean")) or ""
-        if is_confirmed_irrelevant_decision(org_name, r.get("decisionType")) or text_has_requested_exclusion(r.get("subject")):
+        if (
+            is_confirmed_irrelevant_decision(org_name, r.get("decisionType"))
+            or text_has_exclusion(r.get("subject"), org_name)
+        ):
             continue
         region_key, org_key_resolved, municipality_key = resolve_diavgeia_context(
             org_type=org_type,
@@ -1714,7 +1717,7 @@ def _normalize_keyword_tokens_for_sql(keyword: str) -> list[str]:
     return [token for token in re.split(r"\W+", folded, flags=re.UNICODE) if token]
 
 
-def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -> int:
+def prune_excluded_procurements(cur, conn, keywords: Iterable[str], dry_run: bool) -> int:
     """Delete procurement rows whose title or short_descriptions match any exclude keyword.
 
     Keywords match only at token starts. For example, "ΕΠΑΛ" matches "ΕΠΑΛ"
@@ -1740,10 +1743,9 @@ def prune_excluded_procurements(cur, conn, keywords: list[str], dry_run: bool) -
         return f"REGEXP_REPLACE({base}, '[^[:alnum:]]+', ' ', 'g')"
 
     def _keyword_regex(tokens: tuple[str, ...]) -> str:
-        if tokens in ROOT_EXCLUDE_TOKEN_RULES:
-            gap = r"[[:alnum:]]*([[:space:]]+[[:alnum:]]+){0,2}[[:space:]]+"
-            return r"(^|[[:space:]])" + gap.join(tokens) + r"[[:alnum:]]*"
-        return r"(^|[[:space:]])" + r"[[:alnum:]]*[[:space:]]+".join(tokens) + r"[[:alnum:]]*"
+        max_gap = keyword_max_intervening_words(" ".join(tokens))
+        gap = rf"[[:alnum:]]*([[:space:]]+[[:alnum:]]+){{0,{max_gap}}}[[:space:]]+"
+        return r"(^|[[:space:]])" + gap.join(tokens) + r"[[:alnum:]]*"
 
     columns = ("title", "short_descriptions")
     groups = []
