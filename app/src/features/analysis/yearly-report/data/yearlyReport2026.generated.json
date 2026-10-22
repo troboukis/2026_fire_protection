@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-10-22T09:15:52+00:00",
-  "database_now": "2026-10-22T09:15:48.068946+00:00",
-  "snapshot_at": "2026-10-22T12:15:47+03:00",
+  "built_at": "2026-10-22T15:08:55+00:00",
+  "database_now": "2026-10-22T15:08:52.637402+00:00",
+  "snapshot_at": "2026-10-22T18:08:52+03:00",
   "snapshot_date": "2026-10-22",
-  "snapshot_time": "12:15",
+  "snapshot_time": "18:08",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-10-22",
@@ -14,42 +14,42 @@
   "vat_rate": 0.24
  },
  "total": {
-  "contracts": 2336,
-  "contracts_amount": 176399834.73,
+  "contracts": 2334,
+  "contracts_amount": 143535964.73,
   "payments": 1337,
   "payments_amount": 20650682.51,
-  "amount": 197050517.24
+  "amount": 164186647.24
  },
  "contracts": {
-  "contracts": 2336,
-  "amount": 176399834.73,
+  "contracts": 2334,
+  "amount": 143535964.73,
   "contract_types": [
    {
     "label": "Υπηρεσίες",
     "count": 1763,
     "amount": 52747916.83,
-    "share_amount_pct": 29.9,
-    "share_count_pct": 75.47
+    "share_amount_pct": 36.75,
+    "share_count_pct": 75.54
    },
    {
     "label": "Προμήθειες",
     "count": 462,
     "amount": 17171148.16,
-    "share_amount_pct": 9.73,
-    "share_count_pct": 19.78
+    "share_amount_pct": 11.96,
+    "share_count_pct": 19.79
    },
    {
     "label": "Έργα",
-    "count": 98,
-    "amount": 105725050.77,
-    "share_amount_pct": 59.93,
-    "share_count_pct": 4.2
+    "count": 96,
+    "amount": 72861180.77,
+    "share_amount_pct": 50.76,
+    "share_count_pct": 4.11
    },
    {
     "label": "Λοιπές",
     "count": 13,
     "amount": 755718.97,
-    "share_amount_pct": 0.43,
+    "share_amount_pct": 0.53,
     "share_count_pct": 0.56
    }
   ],
@@ -58,28 +58,28 @@
     "label": "Απευθείας Ανάθεση",
     "count": 1714,
     "amount": 87799484.83,
-    "share_amount_pct": 49.77,
-    "share_count_pct": 73.37
+    "share_amount_pct": 61.17,
+    "share_count_pct": 73.44
    },
    {
     "label": "Ανοιχτή Διαδικασία",
-    "count": 146,
-    "amount": 66360341.11,
-    "share_amount_pct": 37.62,
-    "share_count_pct": 6.25
+    "count": 144,
+    "amount": 33496471.11,
+    "share_amount_pct": 23.34,
+    "share_count_pct": 6.17
    },
    {
     "label": "Διαπραγμάτευση",
     "count": 436,
     "amount": 13704172.24,
-    "share_amount_pct": 7.77,
-    "share_count_pct": 18.66
+    "share_amount_pct": 9.55,
+    "share_count_pct": 18.68
    },
    {
     "label": "Άλλη",
     "count": 40,
     "amount": 8535836.55,
-    "share_amount_pct": 4.84,
+    "share_amount_pct": 5.95,
     "share_count_pct": 1.71
    }
   ],
@@ -88,66 +88,66 @@
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
     "contracts": 77,
     "amount": 66935079.38,
-    "share_pct": 37.95
-   },
-   {
-    "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
-    "contracts": 38,
-    "amount": 35416774.45,
-    "share_pct": 20.08
+    "share_pct": 46.63
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ",
     "contracts": 206,
     "amount": 11769093.86,
-    "share_pct": 6.67
+    "share_pct": 8.2
    },
    {
     "authority": "ΠΕΡΙΦΕΡΕΙΑ ΑΤΤΙΚΗΣ",
     "contracts": 364,
     "amount": 7320315.94,
-    "share_pct": 4.15
+    "share_pct": 5.1
    },
    {
     "authority": "ΟΡΓΑΝΙΣΜΟΣ ΣΙΔΗΡΟΔΡΟΜΩΝ ΕΛΛΑΔΑΣ ΟΣΕ",
     "contracts": 30,
     "amount": 7216495.42,
-    "share_pct": 4.09
+    "share_pct": 5.03
    },
    {
     "authority": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
     "contracts": 1,
     "amount": 4029600.0,
-    "share_pct": 2.28
+    "share_pct": 2.81
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
     "contracts": 94,
     "amount": 3956796.73,
-    "share_pct": 2.24
+    "share_pct": 2.76
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
     "contracts": 83,
     "amount": 3538430.89,
-    "share_pct": 2.01
+    "share_pct": 2.47
+   },
+   {
+    "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
+    "contracts": 36,
+    "amount": 2552904.45,
+    "share_pct": 1.78
    }
   ],
   "top_cpvs": [
    {
     "cpv": "Υπηρεσίες εκκαθάρισης από αγριόχορτα",
     "contracts": 587,
-    "share_contracts_pct": 25.13
+    "share_contracts_pct": 25.15
    },
    {
     "cpv": "Οχήματα για τις υπηρεσίες εκτάκτου ανάγκης",
     "contracts": 360,
-    "share_contracts_pct": 15.41
+    "share_contracts_pct": 15.42
    },
    {
     "cpv": "Πυροσβεστικός εξοπλισμός",
     "contracts": 263,
-    "share_contracts_pct": 11.26
+    "share_contracts_pct": 11.27
    },
    {
     "cpv": "Εργασίες πυροπροστασίας",
@@ -157,7 +157,7 @@
    {
     "cpv": "Κλάδεμα δένδρων και θάμνων",
     "contracts": 203,
-    "share_contracts_pct": 8.69
+    "share_contracts_pct": 8.7
    }
   ],
   "by_group": [
@@ -178,8 +178,8 @@
    },
    {
     "group": "Λοιποί φορείς",
-    "contracts": 347,
-    "amount": 53338126.29
+    "contracts": 345,
+    "amount": 20474256.29
    }
   ],
   "direct_awards": {
@@ -262,34 +262,34 @@
  "years": {
   "2024": {
    "contracts": 2146,
-   "amount": 345014853.07,
+   "amount": 317993350.83,
    "contract_types": [
     {
      "label": "Υπηρεσίες",
      "count": 1667,
-     "amount": 260878719.16,
-     "share_amount_pct": 75.61,
+     "amount": 233857216.92,
+     "share_amount_pct": 73.54,
      "share_count_pct": 77.68
     },
     {
      "label": "Προμήθειες",
      "count": 376,
      "amount": 46430099.3,
-     "share_amount_pct": 13.46,
+     "share_amount_pct": 14.6,
      "share_count_pct": 17.52
     },
     {
      "label": "Έργα",
      "count": 85,
      "amount": 37467473.47,
-     "share_amount_pct": 10.86,
+     "share_amount_pct": 11.78,
      "share_count_pct": 3.96
     },
     {
      "label": "Λοιπές",
      "count": 18,
      "amount": 238561.14,
-     "share_amount_pct": 0.07,
+     "share_amount_pct": 0.08,
      "share_count_pct": 0.84
     }
    ],
@@ -297,29 +297,29 @@
     {
      "label": "Απευθείας Ανάθεση",
      "count": 1772,
-     "amount": 237719844.67,
-     "share_amount_pct": 68.9,
+     "amount": 210698342.43,
+     "share_amount_pct": 66.26,
      "share_count_pct": 82.57
     },
     {
      "label": "Ανοιχτή Διαδικασία",
      "count": 112,
      "amount": 87209131.68,
-     "share_amount_pct": 25.28,
+     "share_amount_pct": 27.42,
      "share_count_pct": 5.22
     },
     {
      "label": "Διαπραγμάτευση",
      "count": 236,
      "amount": 19432451.56,
-     "share_amount_pct": 5.63,
+     "share_amount_pct": 6.11,
      "share_count_pct": 11.0
     },
     {
      "label": "Άλλη",
      "count": 26,
      "amount": 653425.16,
-     "share_amount_pct": 0.19,
+     "share_amount_pct": 0.21,
      "share_count_pct": 1.21
     }
    ],
@@ -327,50 +327,50 @@
     {
      "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
      "contracts": 137,
-     "amount": 231719111.63,
-     "share_pct": 67.16
+     "amount": 204697609.39,
+     "share_pct": 64.37
     },
     {
      "authority": "ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
      "contracts": 85,
      "amount": 33355492.88,
-     "share_pct": 9.67
+     "share_pct": 10.49
     },
     {
      "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
      "contracts": 75,
      "amount": 18139950.06,
-     "share_pct": 5.26
+     "share_pct": 5.7
     },
     {
      "authority": "ΠΕΡΙΦΕΡΕΙΑ ΑΤΤΙΚΗΣ",
      "contracts": 128,
      "amount": 6891056.91,
-     "share_pct": 2.0
+     "share_pct": 2.17
     },
     {
      "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
      "contracts": 22,
      "amount": 6603660.35,
-     "share_pct": 1.91
+     "share_pct": 2.08
     },
     {
      "authority": "ΙΕΡΑ ΚΟΙΝΟΤΗΤΑ ΑΓΙΟΥ ΟΡΟΥΣ",
      "contracts": 5,
      "amount": 5261895.92,
-     "share_pct": 1.53
+     "share_pct": 1.65
     },
     {
      "authority": "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ",
      "contracts": 85,
      "amount": 3598713.52,
-     "share_pct": 1.04
+     "share_pct": 1.13
     },
     {
      "authority": "ΔΗΜΟΣ ΧΙΟΥ",
      "contracts": 13,
      "amount": 2925270.86,
-     "share_pct": 0.85
+     "share_pct": 0.92
     }
    ],
    "top_cpvs": [
@@ -404,7 +404,7 @@
     {
      "group": "Υπουργεία",
      "contracts": 394,
-     "amount": 286886584.53
+     "amount": 259865082.29
     },
     {
      "group": "Δήμοι",
@@ -424,7 +424,7 @@
    ],
    "direct_awards": {
     "count": 1772,
-    "amount": 237719844.67,
+    "amount": 210698342.43,
     "median": 10014.0,
     "up_to_30k": 1661,
     "from_25k_to_30k": 176,
@@ -743,12 +743,12 @@
   {
    "year": 2024,
    "contracts": 1828,
-   "amount": 307833453.09,
+   "amount": 280811950.85,
    "by_group": [
     {
      "group": "Υπουργεία",
      "contracts": 329,
-     "amount": 266298759.61
+     "amount": 239277257.37
     },
     {
      "group": "Δήμοι",
@@ -777,7 +777,7 @@
      "class": "Πρόληψη",
      "code": 1,
      "contracts": 1186,
-     "amount": 234852423.99
+     "amount": 207830921.75
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
@@ -848,8 +848,8 @@
   },
   {
    "year": 2026,
-   "contracts": 2336,
-   "amount": 176399834.73,
+   "contracts": 2334,
+   "amount": 143535964.73,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -868,8 +868,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 347,
-     "amount": 53338126.29
+     "contracts": 345,
+     "amount": 20474256.29
     }
    ],
    "by_prevention": [
@@ -888,8 +888,8 @@
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 372,
-     "amount": 54659786.82
+     "contracts": 370,
+     "amount": 21795916.82
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
@@ -945,14 +945,6 @@
   ],
   "largest_increases": [
    {
-    "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
-    "contracts_previous": 13,
-    "contracts_current": 38,
-    "amount_previous": 1386192.84,
-    "amount_current": 35416774.45,
-    "change": 34030581.61
-   },
-   {
     "authority": "ΟΡΓΑΝΙΣΜΟΣ ΣΙΔΗΡΟΔΡΟΜΩΝ ΕΛΛΑΔΑΣ ΟΣΕ",
     "contracts_previous": 24,
     "contracts_current": 30,
@@ -983,6 +975,14 @@
     "amount_previous": 117500.0,
     "amount_current": 1586501.65,
     "change": 1469001.65
+   },
+   {
+    "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
+    "contracts_previous": 13,
+    "contracts_current": 36,
+    "amount_previous": 1386192.84,
+    "amount_current": 2552904.45,
+    "change": 1166711.61
    }
   ]
  },
@@ -992,28 +992,28 @@
    "code": 0,
    "contracts": 428,
    "amount": 19410879.15,
-   "share_amount_pct": 11.0
+   "share_amount_pct": 13.52
   },
   {
    "class": "Πρόληψη",
    "code": 1,
    "contracts": 1306,
    "amount": 98036820.94,
-   "share_amount_pct": 55.58
+   "share_amount_pct": 68.3
   },
   {
    "class": "Χωρίς σαφή κατάταξη",
    "code": 2,
-   "contracts": 372,
-   "amount": 54659786.82,
-   "share_amount_pct": 30.99
+   "contracts": 370,
+   "amount": 21795916.82,
+   "share_amount_pct": 15.18
   },
   {
    "class": "Χωρίς ταξινόμηση ακόμη",
    "code": null,
    "contracts": 230,
    "amount": 4292347.82,
-   "share_amount_pct": 2.43
+   "share_amount_pct": 2.99
   }
  ],
  "timing": [
@@ -1021,7 +1021,7 @@
    "year": 2024,
    "scope": "all",
    "contracts": 2146,
-   "amount": 345014853.07,
+   "amount": 317993350.83,
    "before_may_contracts": 338,
    "before_may_amount": 154575814.55,
    "may_to_august_contracts": 1203,
@@ -1256,11 +1256,11 @@
   {
    "year": 2026,
    "scope": "all",
-   "contracts": 2336,
-   "amount": 176399834.73,
+   "contracts": 2334,
+   "amount": 143535964.73,
    "before_may_contracts": 361,
    "before_may_amount": 85585824.62,
-   "may_to_august_contracts": 1582,
+   "may_to_august_contracts": 1580,
    "by_month": [
     {
      "month": 1,
@@ -1288,7 +1288,7 @@
     },
     {
      "month": 7,
-     "contracts": 504
+     "contracts": 502
     },
     {
      "month": 8,
@@ -1373,40 +1373,14 @@
   }
  ],
  "contractors": {
-  "distinct": 1295,
-  "top10_share_pct": 42.21,
+  "distinct": 1293,
+  "top10_share_pct": 34.63,
   "top10": [
-   {
-    "name": "ΠΑΡΑΛΟΣ ΕΝΕΡΓΕΙΑΚΗ ΙΚΕ",
-    "contracts": 1,
-    "amount": 19644120.0,
-    "share_pct": 11.14,
-    "authorities": [
-     {
-      "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
-      "contracts": 1,
-      "amount": 19644120.0
-     }
-    ]
-   },
-   {
-    "name": "ENERGY PROJECTS CONSTRUCTION",
-    "contracts": 1,
-    "amount": 13219750.0,
-    "share_pct": 7.49,
-    "authorities": [
-     {
-      "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
-      "contracts": 1,
-      "amount": 13219750.0
-     }
-    ]
-   },
    {
     "name": "ΕΥΡΩΠΑΙΚΕΣ ΕΠΕΝΔΥΣΕΙΣ ΚΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΑΕΡΟΔΙΑΣΤΗΜΙΚΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Α.Ε. (EFA VENTURES)",
     "contracts": 3,
     "amount": 7658344.19,
-    "share_pct": 4.34,
+    "share_pct": 5.34,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ",
@@ -1419,7 +1393,7 @@
     "name": "«ΒΙΟΣ Α.Ε.»",
     "contracts": 4,
     "amount": 7229641.73,
-    "share_pct": 4.1,
+    "share_pct": 5.04,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1432,7 +1406,7 @@
     "name": "ΤΙΓΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΑΝΤΩΝΙΟΥ | ΧΑΤΖΗΝΙΚΟΛΑΟΥ ΝΙΚΟΛΑΟΣ ΤΟΥ ΔΗΜΟΣΘΕΝΗ",
     "contracts": 1,
     "amount": 4757275.82,
-    "share_pct": 2.7,
+    "share_pct": 3.31,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1445,7 +1419,7 @@
     "name": "ONE AND ONLY PLAYGROUNDS ΜΟΝ. ΑΕ",
     "contracts": 1,
     "amount": 4710048.32,
-    "share_pct": 2.67,
+    "share_pct": 3.28,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1458,7 +1432,7 @@
     "name": "ΗΡΩΝ ΑΝΩΝΥΜΗ ΤΕΧΝΙΚΗ - ΟΙΚΟΔΟΜΙΚΗ - ΚΤΗΜΑΤΙΚΗ - ΞΕΝΟΔΟΧΕΙΑΚΗ - ΕΜΠΟΡΙΚΗ - ΒΙΟΜΗΧΑΝΙΚΗ ΕΤΑΙΡΕΙΑ",
     "contracts": 1,
     "amount": 4449918.25,
-    "share_pct": 2.52,
+    "share_pct": 3.1,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1471,7 +1445,7 @@
     "name": "ΕΥΔΟΚΙΑ ΛΙΤΣΑ",
     "contracts": 3,
     "amount": 4413391.75,
-    "share_pct": 2.5,
+    "share_pct": 3.07,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1494,7 +1468,7 @@
     "name": "ΑΙΑΣ Α.Τ.Ε.",
     "contracts": 1,
     "amount": 4226466.73,
-    "share_pct": 2.4,
+    "share_pct": 2.94,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1507,12 +1481,38 @@
     "name": "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ | ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
     "contracts": 1,
     "amount": 4153803.27,
-    "share_pct": 2.35,
+    "share_pct": 2.89,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
       "contracts": 1,
       "amount": 4153803.27
+     }
+    ]
+   },
+   {
+    "name": "ΤΕΣ Τεχνική Εταιρεία Σερρών Α.Ε. | ΖΙΤΑΚΑΤ ΑΝΩΝΥΜΗ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΒΙΟΜΗΧΑΝΙΚΗ ΕΤΑΙΡΕΙΑ Α.Ε.",
+    "contracts": 1,
+    "amount": 4077608.02,
+    "share_pct": 2.84,
+    "authorities": [
+     {
+      "authority": "ΟΡΓΑΝΙΣΜΟΣ ΣΙΔΗΡΟΔΡΟΜΩΝ ΕΛΛΑΔΑΣ ΟΣΕ",
+      "contracts": 1,
+      "amount": 4077608.02
+     }
+    ]
+   },
+   {
+    "name": "NOVA INFORMATION AND COMMUNICATION TECHNOLOGIES ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ",
+    "contracts": 1,
+    "amount": 4029600.0,
+    "share_pct": 2.81,
+    "authorities": [
+     {
+      "authority": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
+      "contracts": 1,
+      "amount": 4029600.0
      }
     ]
    }
@@ -1793,7 +1793,7 @@
   "exact_duplicate_groups": 9,
   "exact_duplicates_extra_amount": 28407.83,
   "report_year_contracts_with_linked_payment": 91,
-  "report_year_contracts_with_linked_payment_value_pct": 26.9,
+  "report_year_contracts_with_linked_payment_value_pct": 33.06,
   "finalizations_by_year": {
    "2024": 287,
    "2025": 257,
