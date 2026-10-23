@@ -1,14 +1,18 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564542722/kina-gynaikeio-sygkrotima-poy-dimioyrgithike-apo-ai-anakoinose-oti-ena-melos-toy-einai-egkyos/",
-      "title": "Κίνα: Γυναικείο συγκρότημα που δημιουργήθηκε από ΑΙ ανακοίνωσε ότι ένα μέλος του είναι «έγκυος»",
-      "normalized_title": "ΚΙΝΑ: ΓΥΝΑΙΚΕΙΟ ΣΥΓΚΡΟΤΗΜΑ ΠΟΥ ΔΗΜΙΟΥΡΓΗΘΗΚΕ ΑΠΟ ΑΙ ΑΝΑΚΟΙΝΩΣΕ ΟΤΙ ΕΝΑ ΜΕΛΟΣ ΤΟΥ ΕΙΝΑΙ «ΕΓΚΥΟΣ»",
+      "url": "https://www.kathimerini.gr/world/564542836/gallia-dyo-traymaties-apo-pyrovolismoys-se-proastio-toy-parisioy/",
+      "title": "Γαλλία: Δύο τραυματίες από πυροβολισμούς σε προάστιο του Παρισιού",
+      "normalized_title": "ΓΑΛΛΙΑ: ΔΥΟ ΤΡΑΥΜΑΤΙΕΣ ΑΠΟ ΠΥΡΟΒΟΛΙΣΜΟΥΣ ΣΕ ΠΡΟΑΣΤΙΟ ΤΟΥ ΠΑΡΙΣΙΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564542722/kina-gynaikeio-sygkrotima-poy-dimioyrgithike-apo-ai-anakoinose-oti-ena-melos-toy-einai-egkyos/",
-        "https://www.kathimerini.gr/economy/local/564541819/to-80-tis-axias-tis-katoikias-aggizei-pleon-to-stegastiko/"
+        "https://www.kathimerini.gr/world/564542836/gallia-dyo-traymaties-apo-pyrovolismoys-se-proastio-toy-parisioy/",
+        "https://www.kathimerini.gr/economy/local/564541918/giati-i-aristera-mas-protima-ftochoys/",
+        "https://www.kathimerini.gr/society/564542797/provlimata-stis-ptiseis-logo-omichlis-sto-aerodromio-tis-athinas/",
+        "https://www.kathimerini.gr/k/sunday-edition/564531649/tin-kyriaki-25-10-me-tin-k-thessaloniki-thryloi-kai-istories-vogue-greece-periodiko-k-kai-othoni/",
+        "https://www.kathimerini.gr/world/564542785/erntogan-i-toyrkia-den-egkataleipei-ti-diplomatia-akomi-kai-otan-oi-emplekomenes-pleyres-den-synomiloyn/",
+        "https://www.kathimerini.gr/world/564542764/aystria-apelaynontai-tesseris-rosoi-diplomates/"
       ],
-      "seen_at_utc": "2026-10-23T09:30:05.036125+00:00"
+      "seen_at_utc": "2026-10-23T09:51:17.684065+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,38 +1264,43 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1899412/kataggelia-gia-mathitria-dimotikou-sto-rethumno-pou-kunigouse-paidia-me-mahairi-kai-prospathouse-na-tous-poulisei/?utm_source=rss",
-      "title": "Καταγγελία για μαθήτρια δημοτικού στο Ρέθυμνο που κυνήγησε παιδιά με μαχαίρι",
-      "normalized_title": "ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΜΑΘΗΤΡΙΑ ΔΗΜΟΤΙΚΟΥ ΣΤΟ ΡΕΘΥΜΝΟ ΠΟΥ ΚΥΝΗΓΗΣΕ ΠΑΙΔΙΑ ΜΕ ΜΑΧΑΙΡΙ",
+      "url": "https://www.protothema.gr/greece/article/1899432/telos-epohis-gia-to-horostasio-kleinei-meta-apo-31-hronia-to-istoriko-steki-tis-athinas/?utm_source=rss",
+      "title": "Τέλος εποχής για το Χοροστάσιο: Κλείνει μετά από 31 χρόνια το ιστορικό στέκι της Αθήνας",
+      "normalized_title": "ΤΕΛΟΣ ΕΠΟΧΗΣ ΓΙΑ ΤΟ ΧΟΡΟΣΤΑΣΙΟ: ΚΛΕΙΝΕΙ ΜΕΤΑ ΑΠΟ 31 ΧΡΟΝΙΑ ΤΟ ΙΣΤΟΡΙΚΟ ΣΤΕΚΙ ΤΗΣ ΑΘΗΝΑΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1899412/kataggelia-gia-mathitria-dimotikou-sto-rethumno-pou-kunigouse-paidia-me-mahairi-kai-prospathouse-na-tous-poulisei/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1899432/telos-epohis-gia-to-horostasio-kleinei-meta-apo-31-hronia-to-istoriko-steki-tis-athinas/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1899422/to-fbi-tis-kritis-egainiase-o-hrusohoidis-na-eiste-hrisimoi-stous-polites-eipe-stous-astunomikous/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-23T09:30:05.036229+00:00"
+      "seen_at_utc": "2026-10-23T09:51:17.684180+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1494948/nea-paremvasi-toy-kosta-karamanli-sto-polemiko-moyseio-tin-kyriaki/",
-      "title": "Νέα παρέμβαση του Κώστα Καραμανλή στο Πολεμικό Μουσείο την Κυριακή",
-      "normalized_title": "ΝΕΑ ΠΑΡΕΜΒΑΣΗ ΤΟΥ ΚΩΣΤΑ ΚΑΡΑΜΑΝΛΗ ΣΤΟ ΠΟΛΕΜΙΚΟ ΜΟΥΣΕΙΟ ΤΗΝ ΚΥΡΙΑΚΗ",
+      "url": "https://www.efsyn.gr/ellada/1495004/kataggelia-gia-tessera-idiotika-sholeia-stimenoi-agones-me-epathlo-ta-moria-gia-tis-panellinies/",
+      "title": "Καταγγελία για τέσσερα ιδιωτικά σχολεία: «Στημένοι αγώνες με έπαθλο τα μόρια για τις Πανελλήνιες»",
+      "normalized_title": "ΚΑΤΑΓΓΕΛΙΑ ΓΙΑ ΤΕΣΣΕΡΑ ΙΔΙΩΤΙΚΑ ΣΧΟΛΕΙΑ: «ΣΤΗΜΕΝΟΙ ΑΓΩΝΕΣ ΜΕ ΕΠΑΘΛΟ ΤΑ ΜΟΡΙΑ ΓΙΑ ΤΙΣ ΠΑΝΕΛΛΗΝΙΕΣ»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1494948/nea-paremvasi-toy-kosta-karamanli-sto-polemiko-moyseio-tin-kyriaki/",
-        "https://www.efsyn.gr/kosmos/1494917/ereyna-tis-eyropaikis-eisaggelias-gia-hryses-symvaseis-se-ellines-symvoyloys-poy-syndeontai-me-ti-nd/",
-        "https://www.efsyn.gr/politiki/1494964/synantisi-temponera-ahtsiogloy-me-ergazomenoys-tis-motor-oil/"
+        "https://www.efsyn.gr/ellada/1495004/kataggelia-gia-tessera-idiotika-sholeia-stimenoi-agones-me-epathlo-ta-moria-gia-tis-panellinies/",
+        "https://www.efsyn.gr/oikonomia/1494992/sklavenitis-mponoys-300-eyro-stoys-37-130-ergazomenoys/",
+        "https://www.efsyn.gr/oikonomia/1494815/kerkyra-mohlos-anaptyxis-i-kroyaziera/",
+        "https://www.efsyn.gr/ellada/1494987/ekpaideytikoi-i-tromokratia-ton-peitharhikon-den-tha-perasei-stasi-ergasias-logo-parapompis-dyo-synadelfon-toys/",
+        "https://www.efsyn.gr/ellada/1494976/proeidopoiisi-gerasimoy-papadopoyloy-erhontai-kai-alloi-seismoi-ano-ton-7-rihter-entos-toy-2026/"
       ],
-      "seen_at_utc": "2026-10-23T09:30:05.036203+00:00"
+      "seen_at_utc": "2026-10-23T09:51:17.684159+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/23/politics/elas-to-ktimatologio-den-xreiazetai-alles-ergolavies-xreiazetai-prosopiko-aksiokratia-kai-logodosia/",
-      "title": "ΕΛΑΣ: Το Κτηματολόγιο δεν χρειάζεται άλλες εργολαβίες, χρειάζεται προσωπικό, αξιοκρατία και λογοδοσία",
-      "normalized_title": "ΕΛΑΣ: ΤΟ ΚΤΗΜΑΤΟΛΟΓΙΟ ΔΕΝ ΧΡΕΙΑΖΕΤΑΙ ΑΛΛΕΣ ΕΡΓΟΛΑΒΙΕΣ, ΧΡΕΙΑΖΕΤΑΙ ΠΡΟΣΩΠΙΚΟ, ΑΞΙΟΚΡΑΤΙΑ ΚΑΙ ΛΟΓΟΔΟΣΙΑ",
+      "url": "https://www.in.gr/2026/10/23/economy/diethnis-oikonomia/ipa-tanker-me-rosiko-ntizel-kateythynetai-pros-ti-nea-yorki-meta-ti-symfonia-poutin-tramp/",
+      "title": "Τάνκερ με ρωσικό ντίζελ κατευθύνεται προς τη Νέα Υόρκη μετά τη συμφωνία Πούτιν - Τραμπ",
+      "normalized_title": "ΤΑΝΚΕΡ ΜΕ ΡΩΣΙΚΟ ΝΤΙΖΕΛ ΚΑΤΕΥΘΥΝΕΤΑΙ ΠΡΟΣ ΤΗ ΝΕΑ ΥΟΡΚΗ ΜΕΤΑ ΤΗ ΣΥΜΦΩΝΙΑ ΠΟΥΤΙΝ - ΤΡΑΜΠ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/23/politics/elas-to-ktimatologio-den-xreiazetai-alles-ergolavies-xreiazetai-prosopiko-aksiokratia-kai-logodosia/",
-        "https://www.in.gr/2026/10/23/stories/i-m-panagiotopoulos-i-anagnosi-einai-mia-olokliri-texni/",
-        "https://www.in.gr/2026/10/23/greece/synagermos-gia-ypopti-sakoula-konta-stin-presveia-tis-aystralias/",
-        "https://www.in.gr/2026/10/23/sports/football/h-arsenal-stis-omades-pou-parakolouthoun-stena-ton-kostoula/",
-        "https://www.in.gr/2026/10/23/greece/maxitika-aeroskafi-tha-petaksoun-pano-apo-ti-thessaloniki-enopsei-tis-parelasis-tis-28is-oktovriou/"
+        "https://www.in.gr/2026/10/23/economy/diethnis-oikonomia/ipa-tanker-me-rosiko-ntizel-kateythynetai-pros-ti-nea-yorki-meta-ti-symfonia-poutin-tramp/",
+        "https://www.in.gr/2026/10/23/politics/i-ellada-me-epistoli-ston-oie-kataggellei-tin-egkrisi-tou-paranomou-tourkolivykou-mnimoniou-apo-ti-livyki-vouli/",
+        "https://www.in.gr/2026/10/23/sports/football/ekklisi-tis-koris-tou-marantona-na-dikaiothei-o-mpampas-mou/",
+        "https://www.in.gr/2026/10/23/go-fun/fizz/sotiris-tsafoulias-to-oxi-tou-sto-amerikaniko-eteros-ego-me-ton-al-patsino/",
+        "https://www.in.gr/2026/10/23/world/mas-epiase-eksapinis-pelorio-kyma-katapie-tileoptiko-synergeio-se-zontani-metadosi-gia-tin-kakokairia/",
+        "https://www.in.gr/2026/10/23/greece/papadopoulos-erxontai-neoi-isxyroi-seismoi-ano-ton-7-rixter-ston-planiti-mexri-to-telos-tou-2026/",
+        "https://www.in.gr/2026/10/23/politics/aftodioikisi/dimos-glyfadas-elate-gia-athlisi-to-6o-dimotiko-stadio-glyfadas-anoigei-tis-pyles-tou/"
       ],
-      "seen_at_utc": "2026-10-23T09:30:05.036170+00:00"
+      "seen_at_utc": "2026-10-23T09:51:17.684118+00:00"
     }
   },
-  "updated_at_utc": "2026-10-23T09:30:05.036292+00:00"
+  "updated_at_utc": "2026-10-23T09:51:17.684313+00:00"
 }
