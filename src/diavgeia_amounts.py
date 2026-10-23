@@ -16,14 +16,23 @@ from pathlib import Path
 PDF_PAYMENT_AMOUNTS_PATH = Path(__file__).resolve().parents[1] / 'data' / 'mappings' / 'diavgeia_payment_pdf_amounts.csv'
 
 # These decisions have incorrect API amounts. Their original PDFs
-# confirm the amounts below on pages 3 and 4. Apply the literal verified amount
+# confirm the amounts below. Apply the literal verified payment amount
 # before any API/CSV value so subsequent imports cannot restore the error.
 DIAVGEIA_AMOUNT_OVERRIDES = {
     "61024653Π8-634": "779.140,14",
     "6ΛΕΩ4653Π8-Ξ1Ξ": "146.519,72",
     "Ρ1ΘΠ4653Π8-ΘΔΛ": "666.683,19",
+    # API/stored amount 17,882,628.00, approximately x100; PDF pp. 3-4
+    # and the decision title confirm payment order 178,826.27 (before VAT removal).
     "Ψ94Σ4653Π8-ΦΚΕ": "178.826,27",
+    # API/stored amount 5,489,497.00, approximately x100; PDF pp. 3-4
+    # and the decision title confirm payment order 54,894.97 (before VAT removal).
     "ΨΞΩΥ4653Π8-ΡΓΘ": "54.894,97",
+    # PDF: total payment 36,828.00; the API incorrectly used KAE 001.2310988.
+    "Ψ86Ε46Ψ844-ΓΥ4": "36.828,00",
+    # PDF, payment line 59, ECO WORKS: only the vegetation-clearing payment
+    # belongs to fire protection, not the sum of the multi-purpose payment list.
+    "9ΥΡ77Λ7-ΥΚ9": "39.498,77",
 }
 
 

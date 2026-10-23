@@ -174,18 +174,31 @@ textarea {
 }
 
 .brand-line {
+  --brand-logo-width: clamp(14rem, 28vw, 21rem);
+  /* The F begins at x=115 in the logo's 2172-unit viewBox. */
+  --brand-logo-inset: calc(min(100%, var(--brand-logo-width)) * 115 / 2172);
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: baseline;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .brand-line h1 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 0.95;
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.brand-logo {
+  display: block;
+  width: var(--brand-logo-width);
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-line > .brand-mark {
+  margin-inline-start: var(--brand-logo-inset);
+  min-inline-size: 0;
+  max-inline-size: calc(100% - var(--brand-logo-inset));
 }
 
 .brand-mark {
@@ -207,12 +220,6 @@ textarea {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
-}
-
-.brand-block > .eyebrow {
-  display: block;
-  inline-size: clamp(12rem, 20vw, 16.5rem);
-  line-height: 1.15;
 }
 
 .top-nav {
@@ -269,6 +276,7 @@ textarea {
 }
 
 .brand-home-link {
+  max-width: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -3764,10 +3772,6 @@ main {
     padding: 0.65rem;
   }
 
-  .brand-line h1 {
-    font-size: clamp(1.7rem, 12vw, 2.5rem);
-  }
-
   .brand-line {
     gap: 0.45rem;
     align-items: flex-start;
@@ -3938,16 +3942,6 @@ main {
     max-width: 100%;
     gap: 0.6rem;
     padding: 0.55rem;
-  }
-
-  .brand-block > .eyebrow {
-    inline-size: auto;
-    font-size: 0.64rem;
-  }
-
-  .brand-line h1 {
-    font-size: 1.55rem;
-    line-height: 0.98;
   }
 
   .brand-mark {

@@ -36,9 +36,23 @@ def test_preexisting_exclusions_are_retained(title):
 
 
 @pytest.mark.parametrize("title", [
+    "Πυροπροστασία γυμνασίου", "Λυκειακές εγκαταστάσεις", "Νηπιαγωγείου",
+    "Δημοτικό σχολείο", "Θεατρικής σκηνής", "Πανεπιστημιακού χώρου",
+    "Συντήρηση πυροσβεστήρων πολιτικής προστασίας", "Προμήθεια επινώτιων πυροσβεστήρων",
+    "ΓΝΘ", "Γ.Ν.Θ.", "Γ Ν Θ", "Ανακαίνισης κτιρίου", "Νοσοκομειακού εξοπλισμού",
+    "Αλατοδιανομέων", "Εκχιονισμού οδών",
+])
+def test_requested_exclusions_cover_inflections_case_and_accents(title):
+    assert text_has_exclusion(title)
+    assert text_has_exclusion(title.upper())
+    assert text_has_exclusion(title.lower())
+    assert text_has_exclusion(" ".join(normalize_keyword_tokens(title)))
+
+
+@pytest.mark.parametrize("title", [
     "Σύστημα πυρανίχνευσης δάσους", "Εγκατάσταση συστήματος πυρανίχνευσης σε δάσος",
     "Ενεργητική πυροπροστασία δασών", "Μελέτη πυροπροστασίας δασικού χώρου",
-    "Συντήρηση πυροσβεστήρων πολιτικής προστασίας", "Προμήθεια επινώτιων πυροσβεστήρων",
+    "Προμήθεια πυροσβεστικών οχημάτων", "Προμήθεια πυροσβεστικού εξοπλισμού",
     "Συντήρηση αντιπυρικών ζωνών", "Καύσιμα πυροσβεστικών οχημάτων",
     "Καθαρισμός και απομάκρυνση ξερών φυτών", "Δασικές εργασίες",
     "Συντήρηση κτιρίου", "Προμήθεια πυράντοχων θυρών", "Φωτισμός ασφαλείας",
@@ -93,6 +107,12 @@ def test_adjacent_matching_still_ignores_punctuation_case_and_accents():
     assert not text_has_exclusion("Συντήρηση δημοτικών χώρων αστικού πρασίνου")
 
 
+def test_hospital_acronym_requires_adjacent_letters():
+    assert text_has_exclusion("Πληρωμή Γ.Ν.Θ. Αγίου Παύλου")
+    assert not text_has_exclusion("Γ συνέχεια Ν Θ")
+    assert not text_has_exclusion("ΑΓΝΘ")
+
+
 def test_phrase_matching_explores_all_possible_intermediate_positions():
     assert text_matches_keyword_prefix("α β β γ δ", "α β δ")
 
@@ -110,7 +130,6 @@ def test_matches_report_each_term_once_in_list_order():
 
 def test_common_policy_has_no_normalized_duplicates():
     assert isinstance(DEFAULT_EXCLUDE_KEYWORDS, dict)
-    assert len(DEFAULT_EXCLUDE_KEYWORDS) == 52
     normalized = [tuple(normalize_keyword_tokens(term)) for term in DEFAULT_EXCLUDE_KEYWORDS]
     assert len(normalized) == len(set(normalized))
     assert all(term == " ".join(normalize_keyword_tokens(term)) for term in DEFAULT_EXCLUDE_KEYWORDS)

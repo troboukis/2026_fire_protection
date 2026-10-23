@@ -20,6 +20,7 @@ type ContractRow = {
   contract_signed_date: string | null
   organization_value: string | null
   title: string | null
+  short_descriptions?: string | null
   reference_number: string | null
   cpv_value: string | null
   procedure_type_value: string | null
@@ -147,6 +148,7 @@ function chunk<T>(items: T[], size: number): T[][] {
 function matchesScopedQuery(row: ContractRow, q: string): boolean {
   return matchesSearchQuery([
     row.title,
+    row.short_descriptions,
     row.organization_value,
     row.beneficiary_name,
     row.cpv_value,
@@ -200,6 +202,33 @@ function dedupeContractRows(rows: ContractRow[]): ContractRow[] {
       rows.map((row) => [row.id, row] as const),
     ).values(),
   )
+}
+
+async function attachContractDescriptions(rows: ContractRow[], signal: AbortSignal): Promise<ContractRow[]> {
+  const missingIds = Array.from(new Set(rows
+    .filter((row) => row.short_descriptions === undefined)
+    .map((row) => row.id)))
+  const descriptions = new Map<number, string | null>()
+  const batches = chunk(missingIds, 200)
+
+  for (const group of chunk(batches, 4)) {
+    await Promise.all(group.map(async (ids) => {
+      const { data, error } = await supabase
+        .from('procurement')
+        .select('id, short_descriptions')
+        .in('id', ids)
+        .abortSignal(signal)
+      if (error) throw error
+      for (const row of (data ?? []) as Array<{ id: number; short_descriptions: string | null }>) {
+        descriptions.set(row.id, row.short_descriptions)
+      }
+    }))
+  }
+
+  return rows.map((row) => ({
+    ...row,
+    short_descriptions: row.short_descriptions ?? descriptions.get(row.id) ?? null,
+  }))
 }
 
 function sortContractRows(rows: ContractRow[], sort: ContractSort): ContractRow[] {
@@ -750,28 +779,21 @@ export default function ContractsPage() {
 
   useEffect(() => {
     let cancelled = false
+    const controller = new AbortController()
     setLoading(true)
     setLoadFailed(false)
     const loadPage = async () => {
       try {
-        if (hasScopedSource) {
-          const scopedBaseRows = organizationKeys.length
+        const baseRows = hasScopedSource
+          ? organizationKeys.length
             ? await loadOrganizationScopedRows(organizationKeys, dateFrom, dateTo)
             : regionKey
               ? await loadRegionScopedRows(regionKey, dateFrom, dateTo)
               : await loadMunicipalityScopedRows(municipalityKey, dateFrom, dateTo)
+          : await loadContractsPageRows({ dateFrom, dateTo })
 
-          if (cancelled) return
-
-          setSourceRows(scopedBaseRows)
-          setLoading(false)
-          return
-        }
-
-        const loadedRows = await loadContractsPageRows({
-          dateFrom,
-          dateTo,
-        })
+        if (cancelled) return
+        const loadedRows = await attachContractDescriptions(baseRows, controller.signal)
 
         if (cancelled) return
         setSourceRows(loadedRows)
@@ -785,7 +807,7 @@ export default function ContractsPage() {
       }
     }
     loadPage()
-    return () => { cancelled = true }
+    return () => { cancelled = true; controller.abort() }
   }, [dateFrom, dateTo, organizationKeys, regionKey, municipalityKey, hasScopedSource])
 
   const cpvOptions = useMemo(() => [...cpvIndex].map(([value, { label }]) => ({ value, label }))

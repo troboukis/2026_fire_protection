@@ -1,3 +1,5 @@
+import { municipalSpending } from './municipalSpending'
+
 export type FundingHistoryEntry = {
   year: number
   regularAmount: number
@@ -27,8 +29,8 @@ export const fundingSummary: FundingSummary = {
   yearPrevious: 2025,
   historyStartYear: 2016,
   currentTotal: 50000000,
-  currentSpendAmount: 21897593.17,
-  currentSpendYear: 2026,
+  currentSpendAmount: municipalSpending.totalAmount,
+  currentSpendYear: municipalSpending.year,
   previousTotal: 37750000,
   currentRegularAmount: 50000000,
   currentEmergencyAmount: 0,

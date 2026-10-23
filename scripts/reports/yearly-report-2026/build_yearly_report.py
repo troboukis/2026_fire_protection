@@ -13,6 +13,8 @@ Read-only builder for the /analysis/yearly_report page. The workflow
   except payroll, contributions, withholdings, grants and fees, which carry no VAT.
 * Total without double counting = 2026 contracts + 2026 payments that are not linked to
   any contract of the dataset.
+* The extra payroll keyword/context filter applies only to this report. It never
+  changes collection, import rules or database records.
 
 Outputs (overwritten on each run):
   data/reports/yearly-report-2026/report_data.json        figures, rules and evidence lists
@@ -58,6 +60,16 @@ DIRECT_AWARD_BIN = Decimal('5000')
 DIRECT_AWARD_BINS_TOP = Decimal('60000')  # 5.000 € bins up to here, then one open bin
 VAT_RATE = Decimal('0.24')
 CENT = Decimal('0.01')
+
+# Reviewed exclusions apply after version deduplication, so older versions cannot
+# reappear in the report when a terminal contract is outside its scope.
+# ADMIE DEA 42569: online condition monitoring of transformers/reactors in
+# substations and extra-high-voltage centres; no documented forest-fire object.
+# https://www.admie.gr/anakoinoseis/promitheies/dea-42569-meleti-promitheia-egkatastasi-parametropoiisi-kai-syntirisi
+EXCLUDED_CONTRACT_REFERENCES = {
+    '26SYMV019427117': 'OLMS σε αυτομετασχηματιστές/αυτεπαγωγές σε ΚΥΤ: δεν τεκμηριώνεται αντικείμενο δασικής πυροπροστασίας.',
+    '26SYMV019431551': 'OLMS σε αυτεπαγωγές σε υποσταθμούς: δεν τεκμηριώνεται αντικείμενο δασικής πυροπροστασίας.',
+}
 
 
 # ── Database ───────────────────────────────────────────────────────────
@@ -253,7 +265,7 @@ CATEGORY_LABELS = {
 }
 CATEGORY_RULES = {
     'cancellation': 'Το θέμα περιέχει «ακύρωση/ακυρωτικό» (όχι «σε αντικατάσταση του ακυρωμένου») ή το ποσό είναι αρνητικό (αντιλογισμός).',
-    'payroll': 'Μισθοδοσία, αποδοχές, υπερωρίες, υπερωριακή απασχόληση, ΙΔΟΧ/ΙΔΑΧ, ημερομίσθια, εργοδοτικές εισφορές.',
+    'payroll': 'Μισθοδοσία, υπερωρίες ή εισφορές, ή οι λέξεις «αποδοχές/αποδοχών», μαζί με αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, αντιπυρική περίοδο, πολιτική προστασία ή έκτακτες ανάγκες.',
     'fuel': 'Καύσιμα, πετρέλαιο, βενζίνη, diesel και biodiesel, λιπαντικά. Όχι η «καύσιμη ύλη» του δάσους.',
     'rrf_ypen': 'Εντολές πληρωμής της ΣΑ ΤΑ075 «Έργα χρηματοδοτούμενα από το Ταμείο Ανάκαμψης».',
     'vegetation': 'Αντιπυρικές/περιμετρικές ζώνες, αποψιλώσεις, καθαρισμοί, κοπή χόρτων, κλαδέματα, καύσιμη ύλη, δασικοί/αγροτικοί δρόμοι, οικόπεδα.',
@@ -264,17 +276,50 @@ CATEGORY_RULES = {
 }
 FILLER = re.compile(r'[0-9a-zα-ω]{0,2}|\d[\d ]*|χεπ|χε|ενταλμα\w*|πληρωμ\w*|εντολ\w*|χρηματικ\w*|σειρα|εκδοση|αλε|καταστασ\w*|'
                     r'οριστικοποιησ\w*|τησ|του|με|αριθμο|αριθ|για|και|στο|την|των|μηνοσ|ετουσ|δαπανη|παραστατικου')
-PAYROLL_TERMS = ('μισθοδοσ', 'μισθοδοτ', 'αποδοχ', 'υπερωρ', r'υπερ\w* απασχολ', 'ιδοχ', 'ι δ ο χ', 'ιδαχ', 'ανθυγιειν',
+PAYROLL_TERMS = ('μισθοδοσ', 'μισθοδοτ', r'αποδοχεσ\b', r'αποδοχων\b', 'υπερωρ', r'υπερ\w* απασχολ', 'ιδοχ', 'ι δ ο χ', 'ιδαχ', 'ανθυγιειν',
                  'εργοδοτ', 'ημερομισθ', 'δεδουλευμ', 'αμοιβεσ προσωπικ', 'πληρωμη προσωπικ', 'μισθ ')
+REPORT_PAYROLL_ROOTS = ('μισθοδ', 'υπερω', 'εισφορ')
+REPORT_PAYROLL_SALARY_WORDS = frozenset({'αποδοχεσ', 'αποδοχων'})
+REPORT_PAYROLL_CONTEXT = ('πυρο', 'δασο', 'πυρασφ', 'αντιπυ', r'πολιτικ\w* προστασι', r'εκτακτ\w* αναγκ')
 # Payments that carry no VAT, besides payroll.
 NO_VAT_TERMS = (r'εισφορ', r'κρατησ', r'αποδοσ\w* (?:\w+ ){0,2}φορ', r'επιχορηγ', r'παραβολ', r'ανταποδοτικ\w* τελ', r'οδοιπορ',
                 r'ημερησι\w* αποζημιωσ')
 
 
-def categorize(subject: str | None) -> str:
+def payroll_report_exclusion(subject: str | None, category: str, description: str | None = None) -> str | None:
+    """Apply the user's two required keyword groups only to the report's rows.
+
+    The existing broader payroll category identifies legacy salary titles too;
+    those also need both requested groups. The two groups may occur in different
+    text fields, while a context phrase must remain within one field. Issuer
+    names and PDF text are deliberately absent from these inputs.
+    """
+    if category == 'cancellation':
+        return None
+    texts = [' '.join(norm(text).replace('_', ' ').split()) for text in (subject, description)]
+    salary_words = any(has(text, *REPORT_PAYROLL_ROOTS)
+                       or bool(REPORT_PAYROLL_SALARY_WORDS.intersection(text.split())) for text in texts)
+    if category != 'payroll' and not salary_words:
+        return None
+    if not salary_words:
+        return 'payroll_missing_keywords'
+    if not any(has(text, *REPORT_PAYROLL_CONTEXT) for text in texts):
+        return 'payroll_missing_fire_context'
+    return None
+
+
+PAYMENT_CATEGORY_OVERRIDES = {
+    'Ψ86Ε46Ψ844-ΓΥ4': 'other',  # Reviewed supporting services for forest-fire studies.
+    '9ΥΡ77Λ7-ΥΚ9': 'vegetation',  # PDF line 59: clearing vegetation for fire prevention.
+}
+
+
+def categorize(subject: str | None, ada: str | None = None) -> str:
     s = norm(subject)
     if has(s, 'ακυρωσ', 'ακυρωτικ') and not has(s, 'αντικατασταση του ακυρωμεν'):
         return 'cancellation'
+    if ada in PAYMENT_CATEGORY_OVERRIDES:
+        return PAYMENT_CATEGORY_OVERRIDES[ada]
     machine_rental = has(s, r'μισθ\w* (?:\w+ )?(?:μηχαν|οχημ|φορτηγ|jcb|εκσκαφ)')
     if has(s, *PAYROLL_TERMS) and not machine_rental:
         return 'payroll'
@@ -490,7 +535,10 @@ def build(snapshot: datetime, out_root: Path) -> dict:
     all_proc = data['procurement']
     by_id = {r['id']: r for r in all_proc}
     by_ref = {r['reference_number']: r for r in all_proc if r['reference_number']}
-    counted = dedupe_contracts(all_proc)
+    deduplicated = dedupe_contracts(all_proc)
+    deduplicated_ids = {r['id'] for r in deduplicated}
+    scope_excluded = [r for r in deduplicated if btrim(r['reference_number']) in EXCLUDED_CONTRACT_REFERENCES]
+    counted = [r for r in deduplicated if btrim(r['reference_number']) not in EXCLUDED_CONTRACT_REFERENCES]
     for r in counted:
         org = orgs.get(r['organization_key'])
         r['org_name'] = (org['organization_normalized_value'] or org['organization_value']) if org else ''
@@ -564,7 +612,13 @@ def build(snapshot: datetime, out_root: Path) -> dict:
     timing = []
     for y in range(FIRST_YEAR, REPORT_YEAR + 1):
         year_rows = c26 if y == REPORT_YEAR else signed_between(signed_contracts, date(y, 1, 1), date(y, 12, 31))
-        for scope_name, flt in (('all', lambda r: True), ('municipal', lambda r: r['canonical_owner_scope'] == 'municipality')):
+        for scope_name, flt in (
+            ('all', lambda r: True),
+            ('municipal', lambda r: r['canonical_owner_scope'] == 'municipality'),
+            ('regional', lambda r: r['canonical_owner_scope'] == 'region'),
+            ('environment_ministry', lambda r: r['org_name'] == 'ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ'),
+            ('civil_protection_ministry', lambda r: r['org_name'] == 'ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ'),
+        ):
             rows_y = [r for r in year_rows if flt(r)]
             by_month = Counter(r['contract_signed_date'].month for r in rows_y)
             before = [r for r in rows_y if r['contract_signed_date'] < date(y, 5, 1)]
@@ -630,7 +684,8 @@ def build(snapshot: datetime, out_root: Path) -> dict:
         amount, lines = parse_amount(p['amount_text'], p['ada'])
         p['amount'] = amount
         p['lines'] = lines
-        p['category'] = 'cancellation' if amount is not None and amount < 0 else categorize(p['subject'])
+        p['category'] = 'cancellation' if amount is not None and amount < 0 else categorize(p['subject'], p['ada'])
+        p['payroll_report_exclusion'] = payroll_report_exclusion(p['subject'], p['category'], p.get('description'))
         p['vat'] = carries_vat(p['subject'], p['category'])
         p['amt'] = without_vat(amount, p['vat'])
 
@@ -668,7 +723,8 @@ def build(snapshot: datetime, out_root: Path) -> dict:
     latest_payment = max((p['publish_date'] for p in p26), default=None)
     for p in p26:
         p['excluded'] = ('cancellation' if p['category'] == 'cancellation'
-                         else 'cancelled_original' if p['ada'] in cancelled_originals else None)
+                         else 'cancelled_original' if p['ada'] in cancelled_originals
+                         else p['payroll_report_exclusion'])
         p['subject_refs_not_in_db'] = sorted(s for s in p['subject_refs'] if s not in by_ref)
         p['link_method'] = 'database' if p['explicit'] else None
         terminals = {terminal(by_id[i])['id'] for i in p['explicit']}
@@ -721,7 +777,9 @@ def build(snapshot: datetime, out_root: Path) -> dict:
         duplicates[(p['org_name_clean'], p['amount'], ' '.join((p['subject'] or '').split()).upper())].append(p)
     duplicate_groups = [v for v in duplicates.values() if len(v) > 1]
 
-    paid_contracts = {terminal(by_id[i])['id'] for p in payments if p['category'] != 'cancellation' for i in p['explicit']}
+    paid_contracts = {terminal(by_id[i])['id'] for p in payments
+                      if p['category'] != 'cancellation' and p['ada'] not in cancelled_originals
+                      and p['payroll_report_exclusion'] is None for i in p['explicit']}
     c26_paid = [r for r in c26 if r['id'] in paid_contracts]
 
     # ── Total without double counting ──
@@ -855,6 +913,10 @@ def build(snapshot: datetime, out_root: Path) -> dict:
                                                       for p in p26 if p['excluded'] == 'cancellation' and (p['amount'] or 0) > 0)),
         'cancelled_originals': [{'ada': p['ada'], 'amount': money(p['amount']), 'cancelled_by': cancelled_originals[p['ada']]}
                                 for p in p26 if p['excluded'] == 'cancelled_original'],
+        'report_excluded_payroll': {
+            'payments': sum(1 for p in p26 if (p['excluded'] or '').startswith('payroll_')),
+            'amount': money(total([p for p in p26 if (p['excluded'] or '').startswith('payroll_')])),
+        },
         'by_category': cat_rows,
         'by_org_type': [{'org_type': k, 'payments': v[0], 'amount': money(v[1])} for k, v in sorted(by_org_type.items(), key=lambda kv: -kv[1][1])],
         'payroll_bodies': len({p['org_name_clean'] for p in payroll}),
@@ -907,9 +969,17 @@ def build(snapshot: datetime, out_root: Path) -> dict:
         'funding': funding,
         'fires': fires,
         'facts': facts,
-        'dataQuality': {'superseded_or_duplicate_report_year_contract_rows': sum(
-            1 for r in all_proc if r['contract_signed_date'] and PERIOD_START <= r['contract_signed_date'] <= period_end
-            and not r['cancelled'] and r['id'] not in counted_ids)},
+        'dataQuality': {
+            'superseded_or_duplicate_report_year_contract_rows': sum(
+                1 for r in all_proc if r['contract_signed_date'] and PERIOD_START <= r['contract_signed_date'] <= period_end
+                and not r['cancelled'] and r['id'] not in deduplicated_ids),
+            'scope_excluded_contracts': [
+                {'reference_number': r['reference_number'],
+                 'reason': EXCLUDED_CONTRACT_REFERENCES[btrim(r['reference_number'])],
+                 'amount_without_vat': money(r['amount_without_vat'] or 0)}
+                for r in scope_excluded
+            ],
+        },
     }
     check(report)
 
@@ -974,6 +1044,9 @@ def check(report: dict) -> None:
         problems.append('payment categories do not add up')
     if p['counted'] + p['linked'] != p['valid'] or not close(p['amount'] + p['linked_amount'], p['valid_amount'], 1):
         problems.append('payments: counted + linked != valid')
+    if p['records'] != (p['valid'] + p['cancellations'] + len(p['cancelled_originals'])
+                        + p['report_excluded_payroll']['payments']):
+        problems.append('payments: valid and excluded rows do not match all source records')
     if not close(sum(row['amount'] for row in report['relevance']), c['amount'], 1):
         problems.append('classification does not add up')
     da = c['direct_awards']

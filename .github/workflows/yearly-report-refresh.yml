@@ -79,7 +79,9 @@ jobs:
           fi
 
       - name: Build the yearly report (read-only database access)
-        run: python scripts/reports/yearly-report-2026/build_yearly_report.py
+        run: |
+          python -m unittest discover -s scripts/reports/yearly-report-2026 -p 'test_*.py'
+          python scripts/reports/yearly-report-2026/build_yearly_report.py
 
       - name: Set up Node
         uses: actions/setup-node@v4

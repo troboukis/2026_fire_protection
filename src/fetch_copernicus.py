@@ -3,9 +3,13 @@ from __future__ import annotations
 import argparse
 import ast
 import csv
+import gzip
 import json
+import math
 from datetime import date, datetime, timedelta, timezone
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
+from urllib.parse import urlparse, urlunparse
 
 import psycopg2
 import requests
@@ -36,11 +40,12 @@ except ModuleNotFoundError:
 
 API_URL = "https://api.effis.emergency.copernicus.eu/rest/2/burntareas/current/"
 DEFAULT_OUTPUT_CSV = ROOT / "data" / "fires" / "copernicus_latest.csv"
+DEFAULT_BACKUP_DIR = ROOT / "backupDB" / "copernicus"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Fetch Copernicus burnt areas for Greece, map to municipalities, and upsert into Postgres.",
+        description="Reconcile a complete Copernicus burnt-area snapshot with Postgres.",
     )
     parser.add_argument("--start-date", default="2024-01-01", help="Inclusive firedate lower bound (YYYY-MM-DD)")
     parser.add_argument("--end-date", default=date.today().isoformat(), help="Inclusive firedate upper bound (YYYY-MM-DD)")
@@ -48,8 +53,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--geojson", type=Path, default=DEFAULT_GEOJSON, help="Municipalities GeoJSON")
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_OUTPUT_CSV, help="Local snapshot CSV output")
     parser.add_argument("--db-path", type=str, default=None, help="Optional DATABASE_URL override")
-    parser.add_argument("--full-refresh", action="store_true", help="Ignore DB state and fetch the full window")
-    parser.add_argument("--lookback-days", type=int, default=7, help="Overlap window for incremental updates")
+    parser.add_argument("--full-refresh", action="store_true", help="Compatibility option: every run now fetches the full window")
+    parser.add_argument("--lookback-days", type=int, default=7, help="Deprecated compatibility option; timestamp-only updates are no longer used")
+    parser.add_argument("--backup-dir", type=Path, default=DEFAULT_BACKUP_DIR, help="Directory for verified pre-sync database backups")
     parser.add_argument("--quiet", action="store_true", help="Reduce debug output")
     return parser.parse_args()
 
@@ -59,17 +65,6 @@ def log(enabled: bool, message: str) -> None:
         print(message, flush=True)
 
 
-def get_latest_lastupdate(db_path: str | None):
-    db_url = resolve_database_url(db_path)
-    conn = psycopg2.connect(db_url)
-    cur = conn.cursor()
-    cur.execute("SELECT MAX(lastupdate) FROM public.copernicus")
-    value = cur.fetchone()[0]
-    cur.close()
-    conn.close()
-    return value
-
-
 def resolve_fetch_window(
     start_date: str,
     end_date: str,
@@ -77,56 +72,96 @@ def resolve_fetch_window(
     full_refresh: bool,
     lookback_days: int,
 ):
-    if full_refresh:
-        return {
-            "mode": "full_refresh",
-            "firedate_gte": start_date,
-            "firedate_lte": end_date,
-            "lastupdate_gte": None,
-            "latest_lastupdate_in_db": None,
-        }
-
-    latest_lastupdate = get_latest_lastupdate(db_path)
-    if latest_lastupdate is None:
-        return {
-            "mode": "bootstrap",
-            "firedate_gte": start_date,
-            "firedate_lte": end_date,
-            "lastupdate_gte": None,
-            "latest_lastupdate_in_db": None,
-        }
-
-    if latest_lastupdate.tzinfo is None:
-        latest_lastupdate = latest_lastupdate.replace(tzinfo=timezone.utc)
-
-    overlap_start = latest_lastupdate - timedelta(days=max(0, lookback_days))
-    overlap_floor = datetime.fromisoformat(f"{start_date}T00:00:00+00:00")
-    effective_start = max(overlap_start, overlap_floor)
+    # EFFIS can replace IDs or revise geometry/area without advancing lastupdate.
+    # Only a complete snapshot can reconcile both kinds of change reliably.
+    snapshot_bounds(start_date, end_date)
     return {
-        "mode": "incremental",
+        "mode": "full_refresh",
         "firedate_gte": start_date,
         "firedate_lte": end_date,
-        "lastupdate_gte": effective_start.isoformat(),
-        "latest_lastupdate_in_db": latest_lastupdate.isoformat(),
+        "lastupdate_gte": None,
+        "latest_lastupdate_in_db": None,
     }
+
+
+def snapshot_bounds(start_date: str, end_date: str) -> tuple[datetime, datetime]:
+    start = datetime.combine(date.fromisoformat(start_date), datetime.min.time(), timezone.utc)
+    end = datetime.combine(date.fromisoformat(end_date) + timedelta(days=1), datetime.min.time(), timezone.utc)
+    if start >= end:
+        raise ValueError("Copernicus start date must not be after end date")
+    return start, end
+
+
+def snapshot_page_url(raw_url: str) -> str:
+    parsed = urlparse(raw_url)
+    expected = urlparse(API_URL)
+    if (
+        parsed.scheme not in {"http", "https"}
+        or parsed.netloc != expected.netloc
+        or parsed.path != expected.path
+        or parsed.fragment
+    ):
+        raise ValueError("Unexpected Copernicus pagination URL")
+    # The service sometimes publishes an http next link; never downgrade HTTPS.
+    return urlunparse(parsed._replace(scheme="https"))
+
+
+def validate_snapshot_rows(rows: list[dict], start_date: str, end_date: str, country: str) -> None:
+    start, end = snapshot_bounds(start_date, end_date)
+    if not rows:
+        raise ValueError("Empty Copernicus snapshot; refusing to change existing data")
+    seen: set[int] = set()
+    for row in rows:
+        if not isinstance(row, dict):
+            raise ValueError("Invalid Copernicus record")
+        source_id = row.get("id")
+        if isinstance(source_id, bool) or not isinstance(source_id, int) or source_id <= 0:
+            raise ValueError("Invalid Copernicus source ID")
+        if source_id in seen:
+            raise ValueError(f"Duplicate Copernicus source ID: {source_id}")
+        seen.add(source_id)
+        if row.get("country") != country:
+            raise ValueError(f"Copernicus country mismatch for ID {source_id}")
+        try:
+            firedate = datetime.fromisoformat(str(row["firedate"]).replace("Z", "+00:00"))
+            if firedate.tzinfo is None or not start <= firedate < end:
+                raise ValueError("outside requested UTC window")
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError(f"Invalid Copernicus firedate for ID {source_id}") from exc
+        if "area_ha" not in row:
+            raise ValueError(f"Missing Copernicus area for ID {source_id}")
+        if row["area_ha"] is not None:
+            try:
+                area = Decimal(str(row["area_ha"]))
+            except InvalidOperation as exc:
+                raise ValueError(f"Invalid Copernicus area for ID {source_id}") from exc
+            if not area.is_finite() or area < 0:
+                raise ValueError(f"Invalid Copernicus area for ID {source_id}")
+        geometry = parse_shape(row.get("shape"))
+        if geometry is not None and geometry.geom_type not in {"Polygon", "MultiPolygon"}:
+            raise ValueError(f"Invalid Copernicus perimeter type for ID {source_id}")
+        if geometry is None:
+            geometry = parse_centroid(row.get("centroid"))
+        if geometry is None:
+            raise ValueError(f"Missing Copernicus geometry for ID {source_id}")
+        if geometry.is_empty or not geometry.is_valid or not all(math.isfinite(value) for value in geometry.bounds):
+            raise ValueError(f"Invalid Copernicus geometry for ID {source_id}")
 
 
 def fetch_copernicus_rows(
     start_date: str,
     end_date: str,
     country: str = "EL",
-    lastupdate_gte: str | None = None,
     verbose: bool = True,
 ) -> list[dict]:
+    start, end = snapshot_bounds(start_date, end_date)
     params = {
         "country": country,
-        "firedate__gte": f"{start_date}T00:00:00",
-        "firedate__lte": f"{end_date}T23:59:59",
-        "ordering": "-lastupdate,-area_ha",
+        "firedate__gte": start.isoformat(),
+        "firedate__lte": (end - timedelta(microseconds=1)).isoformat(),
+        "ordering": "-id",
         "limit": 100,
     }
-    if lastupdate_gte:
-        params["lastupdate__gte"] = lastupdate_gte
     headers = {
         "Accept": "application/json",
         "Origin": "https://forest-fire.emergency.copernicus.eu",
@@ -136,9 +171,15 @@ def fetch_copernicus_rows(
 
     rows: list[dict] = []
     next_url: str | None = API_URL
+    visited: set[str] = set()
+    total: int | None = None
     page = 0
 
     while next_url:
+        next_url = snapshot_page_url(next_url)
+        if next_url in visited:
+            raise ValueError("Repeated Copernicus pagination URL")
+        visited.add(next_url)
         page += 1
         log(verbose, f"[COPERNICUS] fetching page={page} url={next_url}")
         response = requests.get(
@@ -149,11 +190,28 @@ def fetch_copernicus_rows(
         )
         response.raise_for_status()
         payload = response.json()
-        page_rows = payload.get("results", [])
+        if not isinstance(payload, dict):
+            raise ValueError("Invalid Copernicus response")
+        count = payload.get("count")
+        if isinstance(count, bool) or not isinstance(count, int) or count < 0:
+            raise ValueError("Missing or invalid Copernicus response count")
+        if total is not None and count != total:
+            raise ValueError("Copernicus count changed during pagination; retry a fresh snapshot")
+        total = count
+        page_rows = payload.get("results")
+        if not isinstance(page_rows, list):
+            raise ValueError("Invalid Copernicus results")
         rows.extend(page_rows)
         log(verbose, f"[COPERNICUS] page={page} rows={len(page_rows)} total_rows={len(rows)}")
-        next_url = payload.get("next")
+        if "next" not in payload or (payload["next"] is not None and not isinstance(payload["next"], str)):
+            raise ValueError("Missing or invalid Copernicus next page")
+        next_url = payload["next"]
+        if next_url is not None and (not next_url or not page_rows or len(rows) >= total):
+            raise ValueError("Invalid Copernicus pagination progress")
 
+    if len(rows) != total:
+        raise ValueError(f"Incomplete Copernicus snapshot: got {len(rows)}, expected {total}")
+    validate_snapshot_rows(rows, start_date, end_date, country)
     return rows
 
 
@@ -253,11 +311,12 @@ def _parse_timestamp(raw):
 
 
 def _parse_decimal(raw):
-    text = str(raw or "").strip()
+    text = "" if raw is None else str(raw).strip()
     if not text:
         return None
     try:
-        return float(text)
+        value = float(text)
+        return value if math.isfinite(value) else None
     except (TypeError, ValueError):
         return None
 
@@ -285,11 +344,7 @@ def save_snapshot(rows: list[dict], path: Path) -> None:
         writer.writerows(rows)
 
 
-def upsert_copernicus(enriched, db_path: str | None) -> int:
-    db_url = resolve_database_url(db_path)
-    conn = psycopg2.connect(db_url)
-    cur = conn.cursor()
-
+def _upsert_copernicus_rows(cur, enriched) -> int:
     upserted = 0
     for _, row in enriched.iterrows():
         copernicus_id = int(row["id"])
@@ -423,10 +478,136 @@ def upsert_copernicus(enriched, db_path: str | None) -> int:
             )
         upserted += 1
 
-    conn.commit()
-    cur.close()
-    conn.close()
     return upserted
+
+
+def validate_enriched_snapshot(enriched, source_ids: set[int]) -> None:
+    enriched_ids = [int(value) for value in enriched["id"]]
+    if len(enriched_ids) != len(source_ids) or set(enriched_ids) != source_ids:
+        raise ValueError("Copernicus geometry/mapping processing changed snapshot IDs; refusing reconciliation")
+
+
+def backup_copernicus(cur, backup_dir: Path, metadata: dict) -> Path:
+    """Persist and verify complete before-images of both affected tables."""
+    backup: dict = {"metadata": metadata, "tables": {}}
+    for table in ("copernicus", "copernicus_municipality"):
+        # Names are fixed here, never supplied by a user or an API response.
+        cur.execute(f"SELECT * FROM public.{table} ORDER BY 1")
+        columns = [column[0] for column in cur.description]
+        backup["tables"][table] = [dict(zip(columns, row)) for row in cur.fetchall()]
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    path = backup_dir / f"copernicus-{stamp}-before.json.gz"
+    temporary = path.with_suffix(".gz.tmp")
+    try:
+        with gzip.open(temporary, "xt", encoding="utf-8") as stream:
+            json.dump(backup, stream, ensure_ascii=False, default=str)
+        with gzip.open(temporary, "rt", encoding="utf-8") as stream:
+            verified = json.load(stream)
+        if verified != json.loads(json.dumps(backup, ensure_ascii=False, default=str)):
+            raise RuntimeError("Copernicus backup content verification failed")
+        temporary.replace(path)
+    except Exception:
+        temporary.unlink(missing_ok=True)
+        raise
+    return path
+
+
+def upsert_copernicus(
+    enriched,
+    db_path: str | None,
+    *,
+    start_date: str,
+    end_date: str,
+    country: str = "EL",
+    backup_dir: Path = DEFAULT_BACKUP_DIR,
+) -> dict:
+    records = [
+        {key: None if isinstance(value, float) and math.isnan(value) else value for key, value in row.items()}
+        for row in enriched.to_dict("records")
+    ]
+    validate_snapshot_rows(records, start_date, end_date, country)
+    source_ids = {int(row["id"]) for row in records}
+    validate_enriched_snapshot(enriched, source_ids)
+    start, end = snapshot_bounds(start_date, end_date)
+    expected_area = sum((Decimal(str(row["area_ha"] or 0)) for row in records), Decimal(0))
+    conn = psycopg2.connect(resolve_database_url(db_path))
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SET LOCAL lock_timeout = '15s'")
+            cur.execute("SET LOCAL statement_timeout = '180s'")
+            # Readers continue to work; writers cannot change either table between
+            # the backup, updates, scoped deletion, and verification.
+            cur.execute("LOCK TABLE public.copernicus, public.copernicus_municipality IN SHARE ROW EXCLUSIVE MODE")
+            scope = (country, start, end, sorted(source_ids))
+            cur.execute(
+                """
+                SELECT copernicus_id FROM public.copernicus
+                WHERE country = %s AND firedate >= %s AND firedate < %s
+                  AND NOT (copernicus_id = ANY(%s))
+                ORDER BY copernicus_id
+                """,
+                scope,
+            )
+            stale_ids = [row[0] for row in cur.fetchall()]
+            print(json.dumps({
+                "event": "copernicus_reconciliation_plan",
+                "country": country,
+                "start_date": start_date,
+                "end_date": end_date,
+                "source_rows": len(source_ids),
+                "source_area_ha": str(expected_area),
+                "removed_ids": stale_ids,
+            }), flush=True)
+            metadata = {
+                "created_at": datetime.now(timezone.utc).isoformat(),
+                "source": API_URL,
+                "country": country,
+                "start_date": start_date,
+                "end_date": end_date,
+                "source_ids": sorted(source_ids),
+                "source_area_ha": str(expected_area),
+                "removed_ids": stale_ids,
+            }
+            backup_path = backup_copernicus(cur, backup_dir, metadata)
+            upserted = _upsert_copernicus_rows(cur, enriched)
+            cur.execute(
+                """
+                DELETE FROM public.copernicus
+                WHERE country = %s AND firedate >= %s AND firedate < %s
+                  AND NOT (copernicus_id = ANY(%s))
+                RETURNING copernicus_id
+                """,
+                scope,
+            )
+            removed_ids = sorted(row[0] for row in cur.fetchall())
+            if removed_ids != stale_ids:
+                raise RuntimeError("Copernicus removed IDs differ from backed-up plan")
+            cur.execute(
+                """
+                SELECT copernicus_id, area_ha FROM public.copernicus
+                WHERE country = %s AND firedate >= %s AND firedate < %s
+                ORDER BY copernicus_id
+                """,
+                (country, start, end),
+            )
+            stored = cur.fetchall()
+            stored_area = sum((row[1] or Decimal(0) for row in stored), Decimal(0))
+            if [row[0] for row in stored] != sorted(source_ids) or stored_area != expected_area:
+                raise RuntimeError("Copernicus post-sync IDs or area differ from complete source snapshot")
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
+    return {
+        "upserted_rows": upserted,
+        "removed_rows": len(removed_ids),
+        "removed_ids": removed_ids,
+        "area_ha": str(stored_area),
+        "backup_path": str(backup_path),
+    }
 
 
 def main() -> None:
@@ -450,26 +631,29 @@ def main() -> None:
         window["firedate_gte"],
         window["firedate_lte"],
         args.country,
-        lastupdate_gte=window["lastupdate_gte"],
         verbose=verbose,
     )
     log(verbose, f"[COPERNICUS] fetched_rows={len(rows)}")
-    rows, dropped_out_of_window = filter_rows_by_firedate(rows, window["firedate_gte"], window["firedate_lte"])
-    if dropped_out_of_window:
-        log(verbose, f"[COPERNICUS] dropped_out_of_window_rows={dropped_out_of_window}")
-    log(verbose, f"[COPERNICUS] rows_after_firedate_filter={len(rows)}")
-    save_snapshot(rows, args.output_csv)
-    log(verbose, f"[COPERNICUS] snapshot_saved={args.output_csv}")
+    validate_snapshot_rows(rows, args.start_date, args.end_date, args.country)
+    source_ids = {int(row["id"]) for row in rows}
 
     fires = rows_to_geodataframe(rows)
+    validate_enriched_snapshot(fires, source_ids)
     log(verbose, f"[COPERNICUS] rows_with_geometry={len(fires)}")
     municipalities = load_municipalities(args.geojson)
     normalized_name_lookup = load_normalized_name_lookup(args.db_path)
     enriched = assign_municipalities(fires, municipalities, normalized_name_lookup)
+    validate_enriched_snapshot(enriched, source_ids)
     matched = int(enriched["municipality_key"].notna().sum())
     log(verbose, f"[COPERNICUS] municipality_matched={matched}/{len(enriched)}")
-    upserted = upsert_copernicus(enriched, args.db_path)
-    log(verbose, f"[COPERNICUS] upserted_rows={upserted}")
+    synced = upsert_copernicus(
+        enriched, args.db_path,
+        start_date=args.start_date, end_date=args.end_date, country=args.country,
+        backup_dir=args.backup_dir,
+    )
+    log(verbose, f"[COPERNICUS] upserted_rows={synced['upserted_rows']} removed_rows={synced['removed_rows']}")
+    save_snapshot(rows, args.output_csv)
+    log(verbose, f"[COPERNICUS] snapshot_saved={args.output_csv}")
 
     total = len(enriched)
     print(json.dumps({
@@ -480,11 +664,10 @@ def main() -> None:
             "lastupdate_gte": window["lastupdate_gte"],
         },
         "fetched_rows": len(rows),
-        "dropped_out_of_window_rows": dropped_out_of_window,
         "rows_with_geometry": total,
         "matched_rows": matched,
         "unmatched_rows": total - matched,
-        "upserted_rows": upserted,
+        **synced,
         "snapshot_csv": str(args.output_csv),
         "finished_at": datetime.now().isoformat(timespec="seconds"),
     }, ensure_ascii=False, indent=2))

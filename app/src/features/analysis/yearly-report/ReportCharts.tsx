@@ -174,6 +174,7 @@ export function ColumnChart({ data, formatAxis, color, mutedColor, band, axisTit
               const bx = (x(String(i)) ?? 0) + (x.bandwidth() - barW) / 2
               const by = y(item.value)
               const fill = item.emphasis === false && mutedColor ? mutedColor : color
+              const labelX = (x(String(i)) ?? 0) + x.bandwidth() / 2
               return (
                 <g key={item.label} className="yr-mark" tabIndex={0} role="graphics-symbol" aria-label={item.ariaLabel}
                   onPointerEnter={e => show(e.currentTarget, item.tooltip)} onPointerLeave={hide}
@@ -181,7 +182,7 @@ export function ColumnChart({ data, formatAxis, color, mutedColor, band, axisTit
                   <rect className="yr-hit" x={x(String(i))} y={0} width={x.bandwidth()} height={innerH} />
                   <path d={columnPath(bx, by, barW, innerH - by)} fill={fill} />
                   {(!compact || (i - labelAnchor) % 2 === 0) && (
-                    <text className="yr-axis-label" x={(x(String(i)) ?? 0) + x.bandwidth() / 2} y={innerH + 16} textAnchor="middle">{item.label}</text>
+                    <text className="yr-axis-label" x={labelX} y={innerH + 16} textAnchor="middle">{item.label}</text>
                   )}
                 </g>
               )

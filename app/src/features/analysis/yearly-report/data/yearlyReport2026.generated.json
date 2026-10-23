@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-10-23T15:10:34+00:00",
-  "database_now": "2026-10-23T15:10:29.567967+00:00",
-  "snapshot_at": "2026-10-23T18:10:28+03:00",
+  "built_at": "2026-10-23T18:30:59+00:00",
+  "database_now": "2026-10-23T18:30:52.173335+00:00",
+  "snapshot_at": "2026-10-23T21:30:51+03:00",
   "snapshot_date": "2026-10-23",
-  "snapshot_time": "18:10",
+  "snapshot_time": "21:30",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-10-23",
@@ -16,9 +16,9 @@
  "total": {
   "contracts": 2211,
   "contracts_amount": 142436203.78,
-  "payments": 2926,
-  "payments_amount": 42764792.03,
-  "amount": 185200995.81
+  "payments": 2597,
+  "payments_amount": 34272067.88,
+  "amount": 176708271.66
  },
  "contracts": {
   "contracts": 2211,
@@ -1136,6 +1136,183 @@
    ]
   },
   {
+   "year": 2024,
+   "scope": "regional",
+   "contracts": 469,
+   "amount": 16339688.94,
+   "before_may_contracts": 53,
+   "before_may_amount": 1112345.78,
+   "may_to_august_contracts": 315,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 34
+    },
+    {
+     "month": 2,
+     "contracts": 6
+    },
+    {
+     "month": 3,
+     "contracts": 11
+    },
+    {
+     "month": 4,
+     "contracts": 2
+    },
+    {
+     "month": 5,
+     "contracts": 32
+    },
+    {
+     "month": 6,
+     "contracts": 125
+    },
+    {
+     "month": 7,
+     "contracts": 58
+    },
+    {
+     "month": 8,
+     "contracts": 100
+    },
+    {
+     "month": 9,
+     "contracts": 40
+    },
+    {
+     "month": 10,
+     "contracts": 12
+    },
+    {
+     "month": 11,
+     "contracts": 13
+    },
+    {
+     "month": 12,
+     "contracts": 36
+    }
+   ]
+  },
+  {
+   "year": 2024,
+   "scope": "environment_ministry",
+   "contracts": 137,
+   "amount": 204697609.39,
+   "before_may_contracts": 52,
+   "before_may_amount": 141730977.76,
+   "may_to_august_contracts": 51,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 3
+    },
+    {
+     "month": 2,
+     "contracts": 20
+    },
+    {
+     "month": 3,
+     "contracts": 25
+    },
+    {
+     "month": 4,
+     "contracts": 4
+    },
+    {
+     "month": 5,
+     "contracts": 20
+    },
+    {
+     "month": 6,
+     "contracts": 6
+    },
+    {
+     "month": 7,
+     "contracts": 16
+    },
+    {
+     "month": 8,
+     "contracts": 9
+    },
+    {
+     "month": 9,
+     "contracts": 5
+    },
+    {
+     "month": 10,
+     "contracts": 6
+    },
+    {
+     "month": 11,
+     "contracts": 9
+    },
+    {
+     "month": 12,
+     "contracts": 14
+    }
+   ]
+  },
+  {
+   "year": 2024,
+   "scope": "civil_protection_ministry",
+   "contracts": 80,
+   "amount": 33296158.88,
+   "before_may_contracts": 7,
+   "before_may_amount": 560852.8,
+   "may_to_august_contracts": 41,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 1
+    },
+    {
+     "month": 2,
+     "contracts": 1
+    },
+    {
+     "month": 3,
+     "contracts": 2
+    },
+    {
+     "month": 4,
+     "contracts": 3
+    },
+    {
+     "month": 5,
+     "contracts": 14
+    },
+    {
+     "month": 6,
+     "contracts": 8
+    },
+    {
+     "month": 7,
+     "contracts": 7
+    },
+    {
+     "month": 8,
+     "contracts": 12
+    },
+    {
+     "month": 9,
+     "contracts": 17
+    },
+    {
+     "month": 10,
+     "contracts": 3
+    },
+    {
+     "month": 11,
+     "contracts": 7
+    },
+    {
+     "month": 12,
+     "contracts": 5
+    }
+   ]
+  },
+  {
    "year": 2025,
    "scope": "all",
    "contracts": 2467,
@@ -1254,6 +1431,183 @@
    ]
   },
   {
+   "year": 2025,
+   "scope": "regional",
+   "contracts": 588,
+   "amount": 11532593.7,
+   "before_may_contracts": 29,
+   "before_may_amount": 1013300.72,
+   "may_to_august_contracts": 501,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 5
+    },
+    {
+     "month": 2,
+     "contracts": 8
+    },
+    {
+     "month": 3,
+     "contracts": 2
+    },
+    {
+     "month": 4,
+     "contracts": 14
+    },
+    {
+     "month": 5,
+     "contracts": 19
+    },
+    {
+     "month": 6,
+     "contracts": 97
+    },
+    {
+     "month": 7,
+     "contracts": 220
+    },
+    {
+     "month": 8,
+     "contracts": 165
+    },
+    {
+     "month": 9,
+     "contracts": 22
+    },
+    {
+     "month": 10,
+     "contracts": 11
+    },
+    {
+     "month": 11,
+     "contracts": 5
+    },
+    {
+     "month": 12,
+     "contracts": 20
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "scope": "environment_ministry",
+   "contracts": 91,
+   "amount": 149010703.12,
+   "before_may_contracts": 21,
+   "before_may_amount": 60150825.91,
+   "may_to_august_contracts": 55,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 0
+    },
+    {
+     "month": 2,
+     "contracts": 4
+    },
+    {
+     "month": 3,
+     "contracts": 5
+    },
+    {
+     "month": 4,
+     "contracts": 12
+    },
+    {
+     "month": 5,
+     "contracts": 10
+    },
+    {
+     "month": 6,
+     "contracts": 17
+    },
+    {
+     "month": 7,
+     "contracts": 20
+    },
+    {
+     "month": 8,
+     "contracts": 8
+    },
+    {
+     "month": 9,
+     "contracts": 4
+    },
+    {
+     "month": 10,
+     "contracts": 7
+    },
+    {
+     "month": 11,
+     "contracts": 1
+    },
+    {
+     "month": 12,
+     "contracts": 3
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "scope": "civil_protection_ministry",
+   "contracts": 120,
+   "amount": 36691574.22,
+   "before_may_contracts": 69,
+   "before_may_amount": 20260894.5,
+   "may_to_august_contracts": 29,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 6
+    },
+    {
+     "month": 2,
+     "contracts": 16
+    },
+    {
+     "month": 3,
+     "contracts": 25
+    },
+    {
+     "month": 4,
+     "contracts": 22
+    },
+    {
+     "month": 5,
+     "contracts": 16
+    },
+    {
+     "month": 6,
+     "contracts": 7
+    },
+    {
+     "month": 7,
+     "contracts": 4
+    },
+    {
+     "month": 8,
+     "contracts": 2
+    },
+    {
+     "month": 9,
+     "contracts": 15
+    },
+    {
+     "month": 10,
+     "contracts": 5
+    },
+    {
+     "month": 11,
+     "contracts": 0
+    },
+    {
+     "month": 12,
+     "contracts": 2
+    }
+   ]
+  },
+  {
    "year": 2026,
    "scope": "all",
    "contracts": 2211,
@@ -1360,6 +1714,183 @@
     {
      "month": 10,
      "contracts": 81
+    },
+    {
+     "month": 11,
+     "contracts": 0
+    },
+    {
+     "month": 12,
+     "contracts": 0
+    }
+   ]
+  },
+  {
+   "year": 2026,
+   "scope": "regional",
+   "contracts": 469,
+   "amount": 10893902.73,
+   "before_may_contracts": 52,
+   "before_may_amount": 1482695.44,
+   "may_to_august_contracts": 398,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 14
+    },
+    {
+     "month": 2,
+     "contracts": 10
+    },
+    {
+     "month": 3,
+     "contracts": 15
+    },
+    {
+     "month": 4,
+     "contracts": 13
+    },
+    {
+     "month": 5,
+     "contracts": 8
+    },
+    {
+     "month": 6,
+     "contracts": 52
+    },
+    {
+     "month": 7,
+     "contracts": 193
+    },
+    {
+     "month": 8,
+     "contracts": 145
+    },
+    {
+     "month": 9,
+     "contracts": 13
+    },
+    {
+     "month": 10,
+     "contracts": 6
+    },
+    {
+     "month": 11,
+     "contracts": 0
+    },
+    {
+     "month": 12,
+     "contracts": 0
+    }
+   ]
+  },
+  {
+   "year": 2026,
+   "scope": "environment_ministry",
+   "contracts": 76,
+   "amount": 66944021.46,
+   "before_may_contracts": 23,
+   "before_may_amount": 63755225.5,
+   "may_to_august_contracts": 40,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 0
+    },
+    {
+     "month": 2,
+     "contracts": 4
+    },
+    {
+     "month": 3,
+     "contracts": 18
+    },
+    {
+     "month": 4,
+     "contracts": 1
+    },
+    {
+     "month": 5,
+     "contracts": 0
+    },
+    {
+     "month": 6,
+     "contracts": 5
+    },
+    {
+     "month": 7,
+     "contracts": 9
+    },
+    {
+     "month": 8,
+     "contracts": 26
+    },
+    {
+     "month": 9,
+     "contracts": 8
+    },
+    {
+     "month": 10,
+     "contracts": 5
+    },
+    {
+     "month": 11,
+     "contracts": 0
+    },
+    {
+     "month": 12,
+     "contracts": 0
+    }
+   ]
+  },
+  {
+   "year": 2026,
+   "scope": "civil_protection_ministry",
+   "contracts": 81,
+   "amount": 3520850.89,
+   "before_may_contracts": 21,
+   "before_may_amount": 604015.27,
+   "may_to_august_contracts": 39,
+   "by_month": [
+    {
+     "month": 1,
+     "contracts": 2
+    },
+    {
+     "month": 2,
+     "contracts": 2
+    },
+    {
+     "month": 3,
+     "contracts": 4
+    },
+    {
+     "month": 4,
+     "contracts": 13
+    },
+    {
+     "month": 5,
+     "contracts": 4
+    },
+    {
+     "month": 6,
+     "contracts": 14
+    },
+    {
+     "month": 7,
+     "contracts": 14
+    },
+    {
+     "month": 8,
+     "contracts": 7
+    },
+    {
+     "month": 9,
+     "contracts": 12
+    },
+    {
+     "month": 10,
+     "contracts": 9
     },
     {
      "month": 11,
@@ -1519,11 +2050,11 @@
   ]
  },
  "payments": {
-  "records": 3340,
-  "valid": 3326,
-  "valid_amount": 173761782.87,
-  "counted": 2926,
-  "amount": 42764792.03,
+  "records": 3325,
+  "valid": 2997,
+  "valid_amount": 165269058.72,
+  "counted": 2597,
+  "amount": 34272067.88,
   "linked": 400,
   "linked_amount": 130996990.84,
   "linked_by_method": {
@@ -1533,8 +2064,8 @@
    }
   },
   "linked_to_report_year": 137,
-  "vat_removed": 1940,
-  "vat_free": 986,
+  "vat_removed": 1927,
+  "vat_free": 670,
   "cancellations": 10,
   "positive_cancellations_by_org": {
    "ΔΗΜΟΣ ΚΟΡΙΝΘΙΩΝ": 4,
@@ -1562,14 +2093,18 @@
     "cancelled_by": "Ρ8ΡΑΩΚΤ-ΔΤΑ"
    }
   ],
+  "report_excluded_payroll": {
+   "payments": 314,
+   "amount": 4188668.3
+  },
   "by_category": [
    {
     "category": "payroll",
     "label": "Μισθοδοσία προσωπικού",
-    "rule": "Μισθοδοσία, αποδοχές, υπερωρίες, υπερωριακή απασχόληση, ΙΔΟΧ/ΙΔΑΧ, ημερομίσθια, εργοδοτικές εισφορές.",
-    "payments": 885,
-    "amount": 9863696.4,
-    "bodies": 137
+    "rule": "Μισθοδοσία, υπερωρίες ή εισφορές, ή οι λέξεις «αποδοχές/αποδοχών», μαζί με αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, αντιπυρική περίοδο, πολιτική προστασία ή έκτακτες ανάγκες.",
+    "payments": 571,
+    "amount": 5675028.1,
+    "bodies": 112
    },
    {
     "category": "fuel",
@@ -1591,9 +2126,9 @@
     "category": "vegetation",
     "label": "Αντιπυρικές ζώνες, καθαρισμοί, κλαδέματα",
     "rule": "Αντιπυρικές/περιμετρικές ζώνες, αποψιλώσεις, καθαρισμοί, κοπή χόρτων, κλαδέματα, καύσιμη ύλη, δασικοί/αγροτικοί δρόμοι, οικόπεδα.",
-    "payments": 551,
-    "amount": 7179634.23,
-    "bodies": 161
+    "payments": 552,
+    "amount": 7211488.08,
+    "bodies": 162
    },
    {
     "category": "machinery",
@@ -1607,9 +2142,9 @@
     "category": "equipment",
     "label": "Εξοπλισμός, οχήματα και συντήρηση μέσων",
     "rule": "Προμήθειες, εξοπλισμός, ανταλλακτικά, επισκευές, συντήρηση μέσων, δεξαμενές.",
-    "payments": 507,
-    "amount": 2132791.88,
-    "bodies": 215
+    "payments": 500,
+    "amount": 1961261.58,
+    "bodies": 214
    },
    {
     "category": "unclear",
@@ -1623,16 +2158,16 @@
     "category": "other",
     "label": "Λοιπές δαπάνες πυροπροστασίας",
     "rule": "Όλα τα υπόλοιπα.",
-    "payments": 648,
-    "amount": 12808946.86,
-    "bodies": 234
+    "payments": 639,
+    "amount": 8644567.46,
+    "bodies": 231
    }
   ],
   "by_org_type": [
    {
     "org_type": "ΔΗΜΟΣ",
-    "payments": 2565,
-    "amount": 27793174.55
+    "payments": 2245,
+    "amount": 23434565.25
    },
    {
     "org_type": "ΥΠΟΥΡΓΕΙΟ",
@@ -1641,18 +2176,13 @@
    },
    {
     "org_type": "ΑΛΛΟΣ ΦΟΡΕΑΣ",
-    "payments": 202,
-    "amount": 4227675.85
+    "payments": 198,
+    "amount": 1494883.73
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑ",
     "payments": 51,
-    "amount": 2167812.98
-   },
-   {
-    "org_type": "ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ",
-    "payments": 16,
-    "amount": 122137.23
+    "amount": 851106.01
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑΚΟ ΤΑΜΕΙΟ ΑΝΑΠΤΥΞΗΣ",
@@ -1661,18 +2191,23 @@
    },
    {
     "org_type": "ΔΗΜΟΤΙΚΟ ΛΙΜΕΝΙΚΟ ΤΑΜΕΙΟ",
-    "payments": 15,
-    "amount": 75850.35
+    "payments": 14,
+    "amount": 74467.35
    },
    {
     "org_type": "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ",
-    "payments": 13,
-    "amount": 40970.91
+    "payments": 11,
+    "amount": 40067.11
+   },
+   {
+    "org_type": "ΚΕΝΤΡΟ ΚΟΙΝΩΝΙΚΗΣ ΠΡΟΝΟΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ",
+    "payments": 15,
+    "amount": 39937.23
    },
    {
     "org_type": "ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ",
-    "payments": 6,
-    "amount": 30844.91
+    "payments": 5,
+    "amount": 30715.95
    },
    {
     "org_type": "ΣΥΝΔΕΣΜΟΣ ΔΗΜΩΝ",
@@ -1685,62 +2220,62 @@
     "amount": 756.75
    }
   ],
-  "payroll_bodies": 137,
+  "payroll_bodies": 112,
   "municipal": {
-   "payments": 2565,
-   "amount": 27793174.55,
-   "from_may_1": 2003,
-   "payroll": 884,
+   "payments": 2245,
+   "amount": 23434565.25,
+   "from_may_1": 1732,
+   "payroll": 571,
    "by_month": [
     {
      "month": 1,
-     "payments": 74,
-     "amount": 479585.32
+     "payments": 56,
+     "amount": 303719.41
     },
     {
      "month": 2,
-     "payments": 68,
-     "amount": 1217255.64
+     "payments": 61,
+     "amount": 1092510.65
     },
     {
      "month": 3,
-     "payments": 131,
-     "amount": 1872419.33
+     "payments": 121,
+     "amount": 1728911.75
     },
     {
      "month": 4,
-     "payments": 289,
-     "amount": 1944393.2
+     "payments": 275,
+     "amount": 1667361.99
     },
     {
      "month": 5,
-     "payments": 191,
-     "amount": 2111190.36
+     "payments": 179,
+     "amount": 1938843.61
     },
     {
      "month": 6,
-     "payments": 268,
-     "amount": 2432756.98
+     "payments": 241,
+     "amount": 2088811.07
     },
     {
      "month": 7,
-     "payments": 406,
-     "amount": 5121737.46
+     "payments": 351,
+     "amount": 4252987.75
     },
     {
      "month": 8,
-     "payments": 324,
-     "amount": 4059874.49
+     "payments": 281,
+     "amount": 3057786.31
     },
     {
      "month": 9,
-     "payments": 468,
-     "amount": 5244463.53
+     "payments": 388,
+     "amount": 4514043.02
     },
     {
      "month": 10,
-     "payments": 346,
-     "amount": 3309498.24
+     "payments": 292,
+     "amount": 2789589.69
     },
     {
      "month": 11,
@@ -1757,43 +2292,43 @@
   "payroll_by_month": [
    {
     "month": 1,
-    "payments": 28
+    "payments": 10
    },
    {
     "month": 2,
-    "payments": 20
+    "payments": 13
    },
    {
     "month": 3,
-    "payments": 24
+    "payments": 14
    },
    {
     "month": 4,
-    "payments": 23
+    "payments": 9
    },
    {
     "month": 5,
-    "payments": 27
+    "payments": 15
    },
    {
     "month": 6,
-    "payments": 99
+    "payments": 71
    },
    {
     "month": 7,
-    "payments": 172
+    "payments": 117
    },
    {
     "month": 8,
-    "payments": 132
+    "payments": 90
    },
    {
     "month": 9,
-    "payments": 207
+    "payments": 129
    },
    {
     "month": 10,
-    "payments": 153
+    "payments": 103
    },
    {
     "month": 11,
@@ -1810,15 +2345,15 @@
    "other": 288
   },
   "subject_refs_not_in_db": 71,
-  "without_beneficiary_vat": 855,
-  "exact_duplicate_groups": 30,
-  "exact_duplicates_extra_amount": 177814.02,
+  "without_beneficiary_vat": 649,
+  "exact_duplicate_groups": 28,
+  "exact_duplicates_extra_amount": 164739.87,
   "report_year_contracts_with_linked_payment": 113,
   "report_year_contracts_with_linked_payment_value_pct": 34.7,
   "finalizations_by_year": {
    "2024": 287,
-   "2025": 260,
-   "2026": 3340
+   "2025": 259,
+   "2026": 3325
   }
  },
  "municipalities": {
@@ -1827,9 +2362,9 @@
   "with_contracts": 237,
   "contracts": 964,
   "contracts_amount": 23891634.69,
-  "with_payments": 294,
-  "payments": 2756,
-  "payments_amount": 32454338.12,
+  "with_payments": 292,
+  "payments": 2436,
+  "payments_amount": 28095728.82,
   "funded_without_contract": 88,
   "funded_without_contract_or_payment": 8,
   "funding_of_no_trace": 916000.0,
@@ -2122,12 +2657,12 @@
    "amount": 4404191.75
   },
   "payroll_org_types": {
-   "ΔΗΜΟΣ": 884,
-   "ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ": 1
+   "ΔΗΜΟΣ": 571
   },
   "civil_protection_ministry_payments": 1
  },
  "dataQuality": {
-  "superseded_or_duplicate_report_year_contract_rows": 76
+  "superseded_or_duplicate_report_year_contract_rows": 76,
+  "scope_excluded_contracts": []
  }
 }

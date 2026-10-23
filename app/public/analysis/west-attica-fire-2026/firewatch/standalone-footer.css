@@ -6,6 +6,21 @@
   bottom: var(--firewatch-footer-height) !important;
 }
 
+/* Compensate for the shared SVG's padding to match the partner logos. */
+.wwf-brand-logos__img--firewatch {
+  height: 32px;
+}
+
+.wwf-analysis-panel__credits-img--firewatch {
+  height: 24px;
+}
+
+@media (max-width: 520px) {
+  .wwf-brand-logos__img--firewatch {
+    height: 27px;
+  }
+}
+
 .firewatch-footer-shell {
   --paper: #f7f5ee;
   --paper-2: #f1eee5;

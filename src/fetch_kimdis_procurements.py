@@ -84,11 +84,17 @@ DEFAULT_CPVS: dict[str, str] = {
 
 try:
     from .keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
+    from .kimdis_relevance_rules import is_confirmed_irrelevant_procurement
+    from .organization_exclusions import record_has_hospital_organization
 except ImportError:  # Direct script execution and stage2 runpy loading.
     try:
         from src.keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
+        from src.kimdis_relevance_rules import is_confirmed_irrelevant_procurement
+        from src.organization_exclusions import record_has_hospital_organization
     except ModuleNotFoundError:
         from keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, normalize_keyword_tokens, text_matches_keyword_prefix
+        from kimdis_relevance_rules import is_confirmed_irrelevant_procurement
+        from organization_exclusions import record_has_hospital_organization
 
 # Additional broad categories require explicit fire wording in the title.
 FIRE_TITLE_CPVS: dict[str, str] = {
@@ -430,6 +436,12 @@ class ProcurementCollector:
         return self.items
 
     def is_excluded(self, item: dict[str, Any]) -> bool:
+        if (
+            record_has_hospital_organization(item)
+            or is_confirmed_irrelevant_procurement(item.get("referenceNumber"))
+        ):
+            return True
+
         org_value = (item.get("organization") or {}).get("value", "")
         title = item.get("title", "") or ""
         short_descriptions = (

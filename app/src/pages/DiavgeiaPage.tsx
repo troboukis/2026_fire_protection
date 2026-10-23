@@ -13,6 +13,8 @@ import { sortDiavgeiaRows, type DiavgeiaSort } from '../lib/diavgeiaSort'
 import { MAX_SEARCH_QUERY_LENGTH, matchesSearchQuery } from '../lib/searchQuery'
 import { supabase } from '../lib/supabase'
 
+const DEFAULT_DECISION_TYPE = 'ΟΡΙΣΤΙΚΟΠΟΙΗΣΗ ΠΛΗΡΩΜΗΣ'
+
 type DiavgeiaPageRow = {
   id: number
   org_type: string | null
@@ -148,7 +150,7 @@ export default function DiavgeiaPage() {
   const [loadFailed, setLoadFailed] = useState(false)
   const [selectedDecision, setSelectedDecision] = useState<DiavgeiaDecisionCardView | null>(null)
   const [q, setQ] = useState(initialQ)
-  const [decisionType, setDecisionType] = useState('')
+  const [decisionType, setDecisionType] = useState(DEFAULT_DECISION_TYPE)
   const [organization, setOrganization] = useState('')
   const [allOrganizations, setAllOrganizations] = useState<string[]>([])
   const [organizationsLoading, setOrganizationsLoading] = useState(true)
@@ -184,7 +186,7 @@ export default function DiavgeiaPage() {
 
   useEffect(() => {
     setQ(initialQ)
-    setDecisionType('')
+    setDecisionType(DEFAULT_DECISION_TYPE)
     setOrganization('')
     setMunicipalityKey(initialMunicipalityKey)
     setDateFrom(initialDateFrom)

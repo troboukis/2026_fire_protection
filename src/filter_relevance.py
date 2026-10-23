@@ -32,8 +32,10 @@ import pandas as pd
 
 try:
     from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from .organization_exclusions import record_has_hospital_organization
 except ImportError:  # script execution fallback
     from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from organization_exclusions import record_has_hospital_organization
 
 try:
     from tqdm import tqdm
@@ -277,8 +279,12 @@ def apply_relevance_filter(
         confirmed_irrelevant = is_confirmed_irrelevant_decision(
             df.at[idx, "org_name_clean"] if "org_name_clean" in df.columns else None,
             df.at[idx, "decisionType"] if "decisionType" in df.columns else None,
+            ada,
         )
-        is_relevant = bool(subject_match or pdf_match) and not confirmed_irrelevant
+        hospital_organization = record_has_hospital_organization(df.loc[idx])
+        is_relevant = bool(subject_match or pdf_match) and not (
+            confirmed_irrelevant or hospital_organization
+        )
 
         df.at[idx, "subject_match"] = subject_match
         df.at[idx, "pdf_match"] = pdf_match

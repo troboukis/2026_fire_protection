@@ -104,10 +104,17 @@ export default function Layout() {
 
       <header className="site-header">
         <div className="brand-block">
-          <div className="eyebrow">παρατηρητήριο για τις δασικές πυρκαγιές</div>
           <div className="brand-line">
             <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
-              <h1>FireWatch</h1>
+              <h1>
+                <img
+                  className="brand-logo"
+                  src={`${import.meta.env.BASE_URL}FireWatch_logo.svg`}
+                  alt="FireWatch — παρατηρητήριο για τις δασικές πυρκαγιές"
+                  width={2172}
+                  height={724}
+                />
+              </h1>
             </NavLink>
             <span className="brand-mark">Τελευταία ενημέρωση / {lastUpdateLabel}</span>
           </div>

@@ -50,4 +50,10 @@ WEBAPP_ROADMAP.md
 REGION_PANEL_CANONICAL_LOGIC.md
 procurement_analysis.png
 direct_award_threshold_analysis.png
-tests/
+# Keep the importer regression suite and its shared setup available to Git.
+tests/*
+!tests/conftest.py
+!tests/test_stage2_load_erd.py
+!tests/test_fetch_copernicus.py
+!tests/test_organization_exclusions.py
+!tests/test_keyword_exclusions.py

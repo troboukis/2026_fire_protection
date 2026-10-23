@@ -1,5 +1,33 @@
 # Forest Fire Incidents Data
 
+## Copernicus synchronization
+
+`src/fetch_copernicus.py` fetches the complete requested country/date window on
+every run. EFFIS can remove or replace perimeter IDs and change area/geometry
+without advancing `lastupdate`, so a timestamp lookback cannot keep this dataset
+in sync. The existing `--full-refresh` and `--lookback-days` arguments remain
+accepted for compatibility; all runs now use a full snapshot.
+
+Before writing, the collector validates pagination counts, unique IDs, country,
+UTC dates, areas and geometry. Empty, partial or invalid snapshots fail without
+changing the database. Municipality processing must preserve every source ID.
+Updates, municipality links, and removal of IDs absent from the source run in one
+transaction. Removal is limited to the requested country and UTC date window.
+
+Every sync first saves and verifies a complete compressed JSON backup of
+`copernicus` and `copernicus_municipality` under `backupDB/copernicus/` (override
+with `--backup-dir`). GitHub Actions preserves these backups for 30 days. A failed
+backup or transaction leaves the previous database data in place; because the
+workflow's collection step uses `continue-on-error`, later stages can still read
+that previous data. The collector makes one request per page with a 30-second
+timeout and no automatic retries; a subsequent run starts a new full snapshot.
+
+For example, to reconcile only the 2026 Greece window:
+
+```sh
+python src/fetch_copernicus.py --start-date 2026-01-01 --end-date 2026-10-22
+```
+
 Place the following file in this directory.
 
 ---

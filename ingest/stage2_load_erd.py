@@ -44,6 +44,8 @@ from src.diavgeia_amounts import resolve_diavgeia_amount_text
 from src.diavgeia_contract_links import CONTRACT_DIAVGEIA_LINKS_SELECT
 from src.diavgeia_relevance_rules import is_confirmed_irrelevant_decision
 from src.keyword_exclusions import DEFAULT_EXCLUDE_KEYWORDS, keyword_max_intervening_words, text_has_exclusion
+from src.kimdis_relevance_rules import is_confirmed_irrelevant_procurement
+from src.organization_exclusions import record_has_hospital_organization
 from src.gemi_api_extract import get_gemi_number_by_afm, normalize_afm
 from src.map_copernicus_to_municipalities import resolve_database_url
 
@@ -888,6 +890,12 @@ def region_lookup_candidates(val: str | None) -> list[str]:
     return candidates
 
 
+def procurement_source_is_excluded(row: pd.Series) -> bool:
+    return record_has_hospital_organization(row) or text_has_exclusion(
+        row.get("title"), row.get("shortDescriptions"), row.get("organization_value")
+    )
+
+
 def procurement_rows(
     raw: pd.DataFrame,
     org_map: dict[tuple[str, str], tuple[str | None, str | None]],
@@ -903,7 +911,7 @@ def procurement_rows(
 ) -> list[tuple]:
     out = []
     for _, r in raw.iterrows():
-        if text_has_exclusion(r.get("title"), r.get("shortDescriptions"), r.get("organization_value")):
+        if procurement_source_is_excluded(r):
             continue
         region_key, org_key_resolved, municipality_key, canonical_owner_scope = resolve_procurement_context(
             r=r,
@@ -1516,6 +1524,15 @@ def build_organization_metadata_rows(
     return out
 
 
+def diavgeia_source_is_excluded(row: pd.Series) -> bool:
+    org_name = t_up(row.get("org_name_clean")) or ""
+    return (
+        record_has_hospital_organization(row)
+        or is_confirmed_irrelevant_decision(org_name, row.get("decisionType"), row.get("ada"))
+        or text_has_exclusion(row.get("subject"), org_name)
+    )
+
+
 def diav_rows(
     diav: pd.DataFrame,
     org_map: dict[tuple[str, str], tuple[str | None, str | None]],
@@ -1528,10 +1545,7 @@ def diav_rows(
     for _, r in diav.iterrows():
         org_type = t_up(r.get("org_type")) or ""
         org_name = t_up(r.get("org_name_clean")) or ""
-        if (
-            is_confirmed_irrelevant_decision(org_name, r.get("decisionType"))
-            or text_has_exclusion(r.get("subject"), org_name)
-        ):
+        if diavgeia_source_is_excluded(r):
             continue
         region_key, org_key_resolved, municipality_key = resolve_diavgeia_context(
             org_type=org_type,
@@ -1917,6 +1931,25 @@ def main() -> None:
     )
     bundle.raw = apply_procurement_amount_overrides(bundle.raw, amount_overrides)
     bundle.raw = apply_procurement_chain_dedup(bundle.raw)
+    # Use the row builders' exclusions on the source frames too. This keeps
+    # procurement tuples aligned with CPV/payment data and removes excluded
+    # records before their metadata and beneficiary links are built.
+    for source_name, is_excluded in (
+        ("raw", procurement_source_is_excluded),
+        ("diav", diavgeia_source_is_excluded),
+    ):
+        source_frame = getattr(bundle, source_name)
+        if not source_frame.empty:
+            excluded_mask = source_frame.apply(is_excluded, axis=1)
+            if excluded_mask.any():
+                log(f"Skipping {int(excluded_mask.sum())} excluded rows from {source_name}")
+                setattr(bundle, source_name, source_frame.loc[~excluded_mask].copy())
+    # Preserve successor evidence for chain amounts before removing reviewed references.
+    # Filter the source frame so procurement tuples and CPV/payment rows stay aligned.
+    excluded_reference_mask = bundle.raw["referenceNumber"].map(is_confirmed_irrelevant_procurement)
+    if excluded_reference_mask.any():
+        log(f"Skipping {int(excluded_reference_mask.sum())} reviewed unrelated procurement references")
+        bundle.raw = bundle.raw.loc[~excluded_reference_mask].copy()
     preliminary_organization_metadata_rows = build_organization_metadata_rows(
         raw=bundle.raw,
         org_map=org_map,
@@ -2333,7 +2366,7 @@ def main() -> None:
             skipped_proc = 0
             updated_existing_proc = 0
             reprocessed_existing_proc = 0
-            for n, ((idx, row), p) in enumerate(zip(bundle.raw.iterrows(), procurement), start=1):
+            for n, ((idx, row), p) in enumerate(zip(bundle.raw.iterrows(), procurement, strict=True), start=1):
                 uid = procurement_uid_from_proc_row(p)
                 if uid in existing_proc_by_uid:
                     procurement_id = existing_proc_by_uid[uid]

@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import ComponentTag from './ComponentTag'
 import { fundingSummary, type FundingSummary } from '../data/fundingSummary'
+import { municipalSpending } from '../data/municipalSpending'
 
 type FundingChartHoverState = {
   year: number
@@ -115,6 +116,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
           <div
             className="funding-hero__progress"
             aria-label={`Δαπάνες ${formatEur(fundingData.currentSpendAmount)} σε σχέση με χρηματοδότηση ${formatEur(fundingData.currentTotal)} για το ${fundingData.currentSpendYear}`}
+            title={`Συμβάσεις ΚΗΜΔΗΣ: ${formatEur(municipalSpending.contractsAmount)}. Οριστικοποιήσεις πληρωμής δήμων στη Διαύγεια χωρίς σύνδεση με σύμβαση: ${formatEur(municipalSpending.unlinkedPaymentsAmount)}. Ποσά χωρίς ΦΠΑ, έως ${new Date(`${municipalSpending.periodEnd}T12:00:00`).toLocaleDateString('el-GR')}.`}
           >
             <div className="funding-hero__progress-divider" aria-hidden="true" />
             <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών Δήμων μέχρι σήμερα: ${formatEurCompactMillions(fundingData.currentSpendAmount)}`}</p>

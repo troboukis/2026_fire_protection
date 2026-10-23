@@ -101,6 +101,7 @@ export type YearlyReportData = {
     cancellations: number
     positive_cancellations_by_org: Record<string, number>
     cancelled_originals: { ada: string; amount: number; cancelled_by: string }[]
+    report_excluded_payroll: { payments: number; amount: number }
     by_category: CategoryRow[]
     by_org_type: { org_type: string; payments: number; amount: number }[]
     payroll_bodies: number
@@ -169,56 +170,60 @@ export const REPORT_YEAR = report.meta.report_year
 export const contracts = report.contracts
 
 const numberFormat = new Intl.NumberFormat('el-GR')
+const decimalFormat = new Intl.NumberFormat('el-GR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
 
 /** 2132 → «2.132» */
 export function num(value: number): string {
   return numberFormat.format(value)
 }
 
+/** All measured values use one decimal place, including a trailing zero. */
+export function decimal(value: number): string {
+  return decimalFormat.format(value)
+}
+
 /** 173140768.42 → «173,1 εκατ. €» */
-export function mil(value: number, digits = 1): string {
-  const formatted = (value / 1_000_000).toLocaleString('el-GR', { minimumFractionDigits: digits, maximumFractionDigits: digits })
-  return `${formatted} εκατ. €`
+export function mil(value: number): string {
+  return `${decimal(value / 1_000_000)} εκατ. €`
 }
 
-/** Millions in running text, without a zero decimal part: «21,6 εκατ. ευρώ», «3 εκατ. ευρώ», «47,50 εκατ. ευρώ». */
-export function milText(value: number, digits = 1): string {
-  const formatted = (value / 1_000_000).toLocaleString('el-GR', { minimumFractionDigits: digits, maximumFractionDigits: digits })
-  return `${formatted.replace(/,0+$/, '')} εκατ. ευρώ`
+/** Millions in running text: «21,6 εκατ. ευρώ», «3,0 εκατ. ευρώ». */
+export function milText(value: number): string {
+  return `${decimal(value / 1_000_000)} εκατ. ευρώ`
 }
 
-/** Millions from 1 εκατ. € up, thousands below: «1,8 εκατ. €», «738 χιλ. €». */
+/** Millions from 1 εκατ. € up, thousands below: «1,8 εκατ. €», «738,4 χιλ. €». */
 export function amount(value: number): string {
   if (Math.abs(value) >= 1_000_000) return mil(value)
-  if (Math.abs(value) >= 1_000) return `${Math.round(value / 1_000).toLocaleString('el-GR')} χιλ. €`
+  if (Math.abs(value) >= 1_000) return `${decimal(value / 1_000)} χιλ. €`
   return eur(value)
 }
 
-/** Whole millions rounded down, so that «τουλάχιστον» stays true: 149755526 → «149». */
-export function wholeMillions(value: number): string {
-  return Math.floor(value / 1_000_000).toLocaleString('el-GR')
+/** Millions rounded down to one decimal so that «τουλάχιστον» stays true. */
+export function minimumMillions(value: number): string {
+  return decimal(Math.floor(value / 100_000) / 10)
 }
 
-/** 12000 → «12.000 €» */
-export function eur(value: number, digits = 0): string {
-  return `${value.toLocaleString('el-GR', { minimumFractionDigits: digits, maximumFractionDigits: digits })} €`
+/** 12000 → «12.000,0 €» */
+export function eur(value: number): string {
+  return `${decimal(value)} €`
 }
 
 /** 49.51 → «49,5%», −41.47 → «−41,5%» (typographic minus) */
-export function pct(value: number | null | undefined, digits = 1): string {
+export function pct(value: number | null | undefined): string {
   if (value === null || value === undefined || !Number.isFinite(value)) return '—'
-  const formatted = Math.abs(value).toLocaleString('el-GR', { minimumFractionDigits: digits, maximumFractionDigits: digits })
+  const formatted = decimal(Math.abs(value))
   return `${value < 0 && formatted.replace(/[0,]/g, '') !== '' ? '−' : ''}${formatted}%`
 }
 
-/** Percentage in running text, without a zero decimal part: «12%», «12,7%». */
-export function pctText(value: number | null | undefined, digits = 1): string {
-  return pct(value, digits).replace(/,0+%$/, '%')
+/** Percentage in running text: «12,0%», «12,7%». */
+export function pctText(value: number | null | undefined): string {
+  return pct(value)
 }
 
 /** Change with an explicit sign: «+12,0%», «−53,4%». */
-export function signedPct(value: number, digits = 1): string {
-  const text = pct(value, digits)
+export function signedPct(value: number): string {
+  const text = pct(value)
   return value > 0 && text.replace(/[0,%]/g, '') !== '' ? `+${text}` : text
 }
 
@@ -269,6 +274,12 @@ export function ytd(year: number) {
   return report.ytd.find(item => item.year === year) ?? { year, contracts: 0, amount: 0, by_group: [], by_prevention: [] }
 }
 
+/** Contract-value change against the same period of an earlier year. */
+export function contractValueChangePct(comparisonYear: number): number {
+  const previousAmount = ytd(comparisonYear).amount
+  return share(ytd(REPORT_YEAR).amount - previousAmount, previousAmount)
+}
+
 export function ytdGroup(year: number, group: string) {
   return ytd(year).by_group.find(item => item.group === group) ?? { group, contracts: 0, amount: 0 }
 }
@@ -281,7 +292,7 @@ export function fullYear(year: number): ContractStats | undefined {
   return report.years[String(year)]
 }
 
-export function timing(year: number, scope: 'all' | 'municipal') {
+export function timing(year: number, scope: 'all' | 'municipal' | 'regional' | 'environment_ministry' | 'civil_protection_ministry') {
   return report.timing.find(item => item.year === year && item.scope === scope)
     ?? { year, scope, contracts: 0, amount: 0, before_may_contracts: 0, before_may_amount: 0, may_to_august_contracts: 0, by_month: MONTHS.map((_, i) => ({ month: i + 1, contracts: 0 })) }
 }
@@ -317,7 +328,7 @@ export const derived = (() => {
   const direct = contracts.direct_awards
   const payroll = report.payments.payroll_by_month
   return {
-    ytdChangePct: share(current.amount - previous.amount, previous.amount),
+    ytdChangePct: contractValueChangePct(REPORT_YEAR - 1),
     ytdCountChangePct: share(current.contracts - previous.contracts, previous.contracts),
     municipalAfterMayPct: share(municipalTiming.from_may_1, municipalTiming.contracts),
     directUpTo30kPct: share(direct.up_to_30k, direct.count),

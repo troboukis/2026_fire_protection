@@ -26,6 +26,24 @@ CLI control:
 Shared parsing helpers:
 - `t`, `t_up`, `b`, `i`, `dec`, `date_iso`, `ts_iso`, `first_list_item`
 
+## Shared keyword exclusions
+
+- `src/keyword_exclusions.py` provides the common exclusion dictionary for KIMDIS collection, Diavgeia collection and database row preparation. Matching uses word prefixes, ignoring Greek accents, case and final sigma.
+- The requested terms are covered by the roots `γυμνασ`, `λυκει`, `νηπιαγ`, `δημοτικ σχολει`, `θεατρ`, `πανεπιστημ`, `πυροσβεστηρ`, `γνθ`, `ανακαιν`, `νοσοκομ`, `αλατοδιανομ`, and `εκχιονισμ`. The adjacent-token spelling `γ ν θ` also covers `Γ.Ν.Θ.`.
+- These text exclusions apply to titles/subjects and organization names, plus KIMDIS short descriptions. Unlike the hospital issuer rule below, the root `νοσοκομ` also excludes mentions in a document's text fields. `πυροσβεστηρ` excludes extinguisher purchases and maintenance, including portable/backpack extinguishers; it does not match `πυροσβεστικά οχήματα`.
+- Source DataFrames are filtered with the same predicates as the row builders before dependent rows are assembled. A strict zip prevents filtered procurement rows from shifting another contract's CPVs or payment amounts.
+
+- The additional payroll keyword/context filter belongs exclusively to `scripts/reports/yearly-report-2026/build_yearly_report.py`. It is not an ingestion exclusion: payroll records remain available to collection, relevance filtering and database import under the existing general rules.
+
+## Hospital organization exclusions
+
+- `src/organization_exclusions.py` identifies hospital issuers from organization names and types, including observed abbreviations (`Γ.Ν.`, `Π.Γ.Ν.`, `ΝΟΣ.`, `ΝΟΣΟΚ.`), Greek case/accent variants and the mixed Latin `O` spelling of `ΝΟΣΟΚΟΜΕΙΟ`.
+- The exact hospital aliases for NIMTS and the National Rehabilitation Center are included. Health districts, ordinary health centers and organizations whose names contain only the adjective `νοσοκομειακών` are retained.
+- KIMDIS and Diavgeia collection reject these issuers. Diavgeia PDF relevance cannot override this exclusion.
+- Before preparing database rows, the loader filters both source DataFrames after contract-chain amount deduplication. This also prevents stale CSVs from recreating dependent CPVs, payments and beneficiary links. Procurement and Diavgeia row builders additionally enforce the same rule.
+- This rule inspects the issuer, not hospital mentions in a document's title or subject. Existing keyword exclusions remain separate.
+- `scripts/delete_hospital_organization_records.py` provides a read-only preview and a guarded deletion requiring that preview, a verified full backup of affected rows and dependencies, and transactional count/foreign-key checks.
+
 ---
 
 ## Table: `cpv`
@@ -167,11 +185,13 @@ Ingestion behavior:
      - if `referenceNumber` appears in another row's `prevReferenceNo`
      - if the row itself has non-empty `nextRefNo`
 6. After payment upsert, `procurement.payment_id` is backfilled from `payment.id`.
-7. Incremental cleanup:
-   - after payment upsert, loader zeroes `payment.amount_without_vat` only for affected references in the current batch
-   - affected refs are:
-     - the new rows' `prevReferenceNo`
-     - the new rows' own `referenceNumber` when they have `nextRefNo`
+7. Database-wide contract-chain cleanup:
+   - after payment upsert, `zero_superseded_payment_amounts(cur)` zeroes
+     `payment.amount_without_vat` for superseded contracts across stored procurement records
+   - a stored contract is superseded when either:
+     - its `next_ref_no` is non-empty after trimming whitespace
+     - another stored contract's trimmed `prev_reference_no` equals its `reference_number`
+   - amounts already equal to zero are left unchanged; SQL `NULL` amounts are also set to zero
 8. Reviewed source amount errors are corrected in the derived ingest layer from
    `data/mappings/procurement_amount_overrides.csv`, before contract-chain deduplication.
    The raw `data/raw_procurements.csv` remains unchanged.
@@ -180,7 +200,6 @@ Responsible functions:
 - `apply_procurement_amount_overrides()`
 - `payment_row_from_raw()`
 - `apply_procurement_chain_dedup()`
-- `affected_reference_numbers_for_row()`
 - `zero_superseded_payment_amounts()`
 - `main()` (payment upsert + procurement backfill)
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { REPORT_YEAR, amount, contracts, count, mil, milText, pct, pctText, report, signedPct, wholeMillions, ytd } from './reportData'
+import { REPORT_YEAR, amount, contracts, count, mil, milText, minimumMillions, pct, pctText, report, signedPct, ytd } from './reportData'
 
 const close = (a: number, b: number, tolerance = 0.05) => expect(Math.abs(a - b)).toBeLessThanOrEqual(tolerance)
 const sum = (values: number[]) => values.reduce((total, value) => total + value, 0)
@@ -65,8 +65,8 @@ describe('yearly report snapshot arithmetic', () => {
 describe('Greek number formatting', () => {
   it('formats amounts, shares and small counts', () => {
     expect(mil(173_140_768.42)).toBe('173,1 εκατ. €')
-    expect(wholeMillions(149_755_526.49)).toBe('149')
-    expect(amount(738_427)).toBe('738 χιλ. €')
+    expect(minimumMillions(149_755_526.49)).toBe('149,7')
+    expect(amount(738_427)).toBe('738,4 χιλ. €')
     expect(amount(1_761_904.76)).toBe('1,8 εκατ. €')
     expect(pct(49.51)).toBe('49,5%')
     expect(pct(-41.47)).toBe('−41,5%')
@@ -74,9 +74,9 @@ describe('Greek number formatting', () => {
     expect(signedPct(12)).toBe('+12,0%')
     expect(signedPct(-53.42)).toBe('−53,4%')
     expect(milText(21_578_093.51)).toBe('21,6 εκατ. ευρώ')
-    expect(milText(3_004_000)).toBe('3 εκατ. ευρώ')
-    expect(milText(47_500_000, 2)).toBe('47,50 εκατ. ευρώ')
-    expect(pctText(11.98)).toBe('12%')
+    expect(milText(3_004_000)).toBe('3,0 εκατ. ευρώ')
+    expect(milText(47_500_000)).toBe('47,5 εκατ. ευρώ')
+    expect(pctText(11.98)).toBe('12,0%')
     expect(pctText(12.735)).toBe('12,7%')
     expect(count(2, true)).toBe('δύο')
     expect(count(12)).toBe('12')

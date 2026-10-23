@@ -80,6 +80,15 @@ jobs:
         continue-on-error: true
         run: python src/fetch_copernicus.py
 
+      - name: Preserve Copernicus database backups
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: copernicus-before-sync-${{ github.run_id }}-${{ github.run_attempt }}
+          path: backupDB/copernicus/*-before.json.gz
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Capture organization count before ingest
         id: before_org_count
         run: |

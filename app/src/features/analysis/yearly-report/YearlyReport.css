@@ -18,6 +18,18 @@
 }
 
 /* ── Hero ── */
+.yr-hero,
+.yr-section__head {
+  grid-template-columns: minmax(0, 72ch);
+  justify-content: center;
+  font-size: 0.98rem;
+}
+
+.yr-hero {
+  padding-inline: 1.25rem;
+  border: 0;
+}
+
 .yr-hero h2 {
   font-size: clamp(1.6rem, 3.4vw, 2.6rem);
   line-height: 1.05;
@@ -25,11 +37,11 @@
   max-width: 24ch;
 }
 
-.yr-lead {
+.yr-subtitle {
   max-width: 68ch;
   margin: 0.25rem 0 0;
-  font-size: 1.02rem;
-  line-height: 1.6;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.45;
   color: var(--ink);
 }
 
@@ -43,6 +55,22 @@
 }
 
 /* ── Sections ── */
+.yr-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, calc(72ch + 2.5rem)) minmax(0, 1fr);
+  align-items: start;
+  column-gap: 1.5rem;
+  min-width: 0;
+  font-size: 0.98rem;
+}
+
+.yr-content {
+  display: grid;
+  grid-column: 2;
+  gap: 2.5rem;
+  min-width: 0;
+}
+
 .yr-section {
   min-width: 0;
   scroll-margin-top: 1rem;
@@ -52,7 +80,6 @@
   display: grid;
   gap: 0.45rem;
   padding: 0.95rem 1.25rem;
-  border-bottom: 1px solid var(--line);
 }
 
 .yr-section__head h3 {
@@ -67,6 +94,9 @@
 .yr-section__body {
   padding: 0.5rem 1.25rem 1.25rem;
   min-width: 0;
+  max-width: calc(72ch + 2.5rem);
+  margin-inline: auto;
+  font-size: 0.98rem;
 }
 
 .yr-section__body > p,
@@ -81,11 +111,38 @@
   margin: 0.9rem 0 0;
 }
 
+.yr-section__body > p:first-child::first-letter,
+.yr-section__body > ul:first-child > li:first-child::first-letter,
+.yr-section__body > ol:first-child > li:first-child::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  font-size: 3.6em;
+  font-weight: 700;
+  line-height: 0.85;
+}
+
 .yr-section__body h4 {
   margin: 1.8rem 0 0;
   font-size: 1.02rem;
   font-weight: 600;
   letter-spacing: -0.01em;
+}
+
+.yr-section__body .yr-midtitle {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.yr-midtitle::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin-top: 0.8rem;
+  background: var(--line);
+  opacity: 0.6;
 }
 
 .yr-section__body a {
@@ -104,54 +161,35 @@
   font-size: 0.86rem !important;
 }
 
-/* ── Key findings ── */
-.yr-findings__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
-}
-
-.yr-finding {
-  display: grid;
-  align-content: start;
-  gap: 0.5rem;
-  padding: 1.1rem 1.25rem 1.25rem;
-  background: var(--paper);
-}
-
-.yr-finding__value {
-  font-size: clamp(1.6rem, 2.8vw, 2.25rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.035em;
-  color: var(--ink);
-}
-
-.yr-finding p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.55;
-  color: var(--ink-soft);
-}
-
 /* ── Table of contents ── */
 .yr-toc {
+  position: sticky;
+  top: 1rem;
   display: grid;
-  gap: 0.6rem;
-  padding: 0.95rem 1.25rem;
+  grid-column: 1;
+  align-self: start;
+  justify-self: end;
+  gap: 0.85rem;
+  width: 100%;
+  max-width: 14rem;
+  max-height: calc(100svh - 2rem);
+  min-width: 0;
+  overflow-y: auto;
+  padding: 0.95rem 0;
 }
 
 .yr-toc ol {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 0.35rem 1.5rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.65rem;
   margin: 0;
   padding-left: 1.2rem;
   font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .yr-toc a {
+  display: block;
   text-underline-offset: 0.2em;
   text-decoration-color: var(--line-strong);
 }
@@ -209,8 +247,10 @@
   gap: 0.6rem;
   margin: 1.4rem 0 0.4rem;
   padding: 1rem;
-  background: var(--paper);
+  border-block: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
   min-width: 0;
+  max-width: 72ch;
+  font-size: 0.98rem;
 }
 
 .yr-chart figcaption {
@@ -481,17 +521,28 @@
   outline-offset: 3px;
 }
 
-@media (max-width: 900px) {
-  .yr-findings__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 1100px) {
+  .yr-layout {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1rem;
+  }
+
+  .yr-content {
+    grid-column: 1;
+  }
+
+  .yr-toc {
+    position: static;
+    justify-self: center;
+    max-width: calc(72ch + 2.5rem);
+    max-height: none;
+    overflow: visible;
+    padding-inline: 1.25rem;
   }
 }
 
 @media (max-width: 600px) {
-  .yr-findings__grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
+  .yr-hero,
   .yr-section__head,
   .yr-toc {
     padding-inline: 1rem;

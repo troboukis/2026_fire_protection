@@ -25,12 +25,14 @@ from IPython.display import clear_output  # noqa: F401 (safe to remove if not in
 
 try:
     from .pdf_pipeline import extract_document_code, parse_pdf_file_to_row
-    from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from .diavgeia_relevance_rules import is_confirmed_irrelevant_decision, is_excluded_diavgeia_ada
     from .keyword_exclusions import text_has_exclusion
+    from .organization_exclusions import record_has_hospital_organization
 except ImportError:  # script execution fallback: `python src/fetch_diavgeia.py`
     from pdf_pipeline import extract_document_code, parse_pdf_file_to_row
-    from diavgeia_relevance_rules import is_confirmed_irrelevant_decision
+    from diavgeia_relevance_rules import is_confirmed_irrelevant_decision, is_excluded_diavgeia_ada
     from keyword_exclusions import text_has_exclusion
+    from organization_exclusions import record_has_hospital_organization
 
 # ---------------------------------------------------------------------------
 # Config
@@ -663,7 +665,9 @@ def filter_excluded_org_rows(df: pd.DataFrame, *, context: str = "rows") -> pd.D
     if df.empty:
         return df
 
-    mask = pd.Series(False, index=df.index)
+    mask = df.apply(record_has_hospital_organization, axis=1)
+    if "ada" in df.columns:
+        mask |= df["ada"].map(is_excluded_diavgeia_ada)
     if "org_name_clean" in df.columns:
         mask |= df["org_name_clean"].apply(is_excluded_org_name_clean)
     if "subject" in df.columns:
@@ -731,7 +735,9 @@ def recompute_org_classification(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def record_has_excluded_org(rec: dict) -> bool:
-    """Check API search record against excluded org_name_clean list."""
+    """Exclude hospital issuers and the reviewed organization-name list."""
+    if record_has_hospital_organization(rec):
+        return True
     org_label = extract_org_label(rec.get("organization"))
     if not isinstance(org_label, str):
         return False
@@ -753,6 +759,7 @@ def record_is_confirmed_irrelevant(rec: dict) -> bool:
     return is_confirmed_irrelevant_decision(
         org_name_clean,
         extract_label(rec.get("decisionType")),
+        rec.get("ada"),
     )
 
 
