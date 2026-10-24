@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564546145/v-kikilias-xekinise-o-dialogos-gia-tin-aposymforisi-toy-limanioy-tis-rafinas/",
-      "title": "Β. Κικίλιας: Ξεκίνησε ο διάλογος για την αποσυμφόρηση του λιμανιού της Ραφήνας",
-      "normalized_title": "Β. ΚΙΚΙΛΙΑΣ: ΞΕΚΙΝΗΣΕ Ο ΔΙΑΛΟΓΟΣ ΓΙΑ ΤΗΝ ΑΠΟΣΥΜΦΟΡΗΣΗ ΤΟΥ ΛΙΜΑΝΙΟΥ ΤΗΣ ΡΑΦΗΝΑΣ",
+      "url": "https://www.kathimerini.gr/society/564546166/mytilini-epitimos-dimotis-o-proistamenos-tis-eforeias-archaiotiton-lesvoy-paylos-triantafyllidis/",
+      "title": "Μυτιλήνη: Επίτιμος δημότης ο προϊστάμενος της Εφορείας Αρχαιοτήτων Λέσβου, Παύλος Τριανταφυλλίδης",
+      "normalized_title": "ΜΥΤΙΛΗΝΗ: ΕΠΙΤΙΜΟΣ ΔΗΜΟΤΗΣ Ο ΠΡΟΙΣΤΑΜΕΝΟΣ ΤΗΣ ΕΦΟΡΕΙΑΣ ΑΡΧΑΙΟΤΗΤΩΝ ΛΕΣΒΟΥ, ΠΑΥΛΟΣ ΤΡΙΑΝΤΑΦΥΛΛΙΔΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564546145/v-kikilias-xekinise-o-dialogos-gia-tin-aposymforisi-toy-limanioy-tis-rafinas/"
+        "https://www.kathimerini.gr/society/564546166/mytilini-epitimos-dimotis-o-proistamenos-tis-eforeias-archaiotiton-lesvoy-paylos-triantafyllidis/",
+        "https://www.kathimerini.gr/culture/564544558/to-deltio-ton-media-premiera-tis-seiras-dig/",
+        "https://www.kathimerini.gr/world/564546127/iordania-stoys-okto-anilthan-oi-nekroi-apo-tin-epithesi-se-ekklisia/"
       ],
-      "seen_at_utc": "2026-10-24T09:30:06.867362+00:00"
+      "seen_at_utc": "2026-10-24T09:51:27.141769+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,34 +1261,38 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1899978/nekros-43hronos-se-trohaio-sto-markopoulo-parasurthike-kai-traumatistike-sovara-pezos-sto-marousi/?utm_source=rss",
-      "title": "Νεκρός 43χρονος σε τροχαίο στο Μαρκόπουλο, παρασύρθηκε και τραυματίστηκε σοβαρά πεζός στο Μαρούσι",
-      "normalized_title": "ΝΕΚΡΟΣ 43ΧΡΟΝΟΣ ΣΕ ΤΡΟΧΑΙΟ ΣΤΟ ΜΑΡΚΟΠΟΥΛΟ, ΠΑΡΑΣΥΡΘΗΚΕ ΚΑΙ ΤΡΑΥΜΑΤΙΣΤΗΚΕ ΣΟΒΑΡΑ ΠΕΖΟΣ ΣΤΟ ΜΑΡΟΥΣΙ",
+      "url": "https://www.protothema.gr/greece/article/1899981/dikigoros-lioliou-gia-to-skandalo-sto-basket-kakostimeni-skeuoria-uparhei-apadisi-gia-ola-ta-psemata/?utm_source=rss",
+      "title": "Δικηγόρος Λιόλιου για το σκάνδαλο στο μπάσκετ: Κακοστημένη σκευωρία, υπάρχει απάντηση για όλα τα ψέματα",
+      "normalized_title": "ΔΙΚΗΓΟΡΟΣ ΛΙΟΛΙΟΥ ΓΙΑ ΤΟ ΣΚΑΝΔΑΛΟ ΣΤΟ ΜΠΑΣΚΕΤ: ΚΑΚΟΣΤΗΜΕΝΗ ΣΚΕΥΩΡΙΑ, ΥΠΑΡΧΕΙ ΑΠΑΝΤΗΣΗ ΓΙΑ ΟΛΑ ΤΑ ΨΕΜΑΤΑ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1899978/nekros-43hronos-se-trohaio-sto-markopoulo-parasurthike-kai-traumatistike-sovara-pezos-sto-marousi/?utm_source=rss",
-        "https://www.protothema.gr/greece/article/1899973/trohaio-atuhima-me-leoforeio-kai-autokinito-stin-kallithea-deite-video/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1899981/dikigoros-lioliou-gia-to-skandalo-sto-basket-kakostimeni-skeuoria-uparhei-apadisi-gia-ola-ta-psemata/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-24T09:30:06.867471+00:00"
+      "seen_at_utc": "2026-10-24T09:51:27.141895+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1495740/kallithea-sygkroysi-leoforeioy-me-ih-kleistos-o-dromos-kinitopoiisi-pyrosvestikis-kai-ekav-vinteo/",
-      "title": "Καλλιθέα: Σύγκρουση λεωφορείου με ΙΧ – Κλειστός ο δρόμος, κινητοποίηση Πυροσβεστικής και ΕΚΑΒ [βίντεο]",
-      "normalized_title": "ΚΑΛΛΙΘΕΑ: ΣΥΓΚΡΟΥΣΗ ΛΕΩΦΟΡΕΙΟΥ ΜΕ ΙΧ – ΚΛΕΙΣΤΟΣ Ο ΔΡΟΜΟΣ, ΚΙΝΗΤΟΠΟΙΗΣΗ ΠΥΡΟΣΒΕΣΤΙΚΗΣ ΚΑΙ ΕΚΑΒ [ΒΙΝΤΕΟ]",
+      "url": "https://www.efsyn.gr/nisides/1495074/ti-simainei-psyhroloysia/",
+      "title": "Τι σημαίνει: Ψυχρολουσία",
+      "normalized_title": "ΤΙ ΣΗΜΑΙΝΕΙ: ΨΥΧΡΟΛΟΥΣΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1495740/kallithea-sygkroysi-leoforeioy-me-ih-kleistos-o-dromos-kinitopoiisi-pyrosvestikis-kai-ekav-vinteo/"
+        "https://www.efsyn.gr/nisides/1495074/ti-simainei-psyhroloysia/",
+        "https://www.efsyn.gr/politiki/1495754/toyrkiko-ypex-zita-anagnorisi-ton-moyftidon-se-komotini-kai-xanthi/",
+        "https://www.efsyn.gr/kosmos/1495545/dyo-ellines-foitites-sto-parisi-miloyn-stin-efsyn-gia-tis-diadiloseis-oi-ypoteleis-fovisan-tin-elit/",
+        "https://www.efsyn.gr/politiki/1495749/elas-katadikazei-tin-epithesi-se-orthodoxi-ekklisia-stin-iordania-zita-stirixi-toy-patriarheioy/"
       ],
-      "seen_at_utc": "2026-10-24T09:30:06.867443+00:00"
+      "seen_at_utc": "2026-10-24T09:51:27.141852+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/24/greece/thessaloniki-nearos-mpike-sto-spiti-19xronou-ton-xtypise-sto-kefali-kai-ton-listepse/",
-      "title": "Θεσσαλονίκη: Νεαρός μπήκε στο σπίτι 19χρονου, τον χτύπησε στο κεφάλι και τον λήστεψε",
-      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΝΕΑΡΟΣ ΜΠΗΚΕ ΣΤΟ ΣΠΙΤΙ 19ΧΡΟΝΟΥ, ΤΟΝ ΧΤΥΠΗΣΕ ΣΤΟ ΚΕΦΑΛΙ ΚΑΙ ΤΟΝ ΛΗΣΤΕΨΕ",
+      "url": "https://www.in.gr/2026/10/24/greece/thessaloniki-xeiropedes-se-43xrono-kai-prostimo-100-000-eyro-gia-23-000-paixnidia-maimou/",
+      "title": "Χειροπέδες σε 43χρονο και πρόστιμο 100.000 ευρώ για 23.000 παιχνίδια-μαϊμού",
+      "normalized_title": "ΧΕΙΡΟΠΕΔΕΣ ΣΕ 43ΧΡΟΝΟ ΚΑΙ ΠΡΟΣΤΙΜΟ 100.000 ΕΥΡΩ ΓΙΑ 23.000 ΠΑΙΧΝΙΔΙΑ-ΜΑΙΜΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/24/greece/thessaloniki-nearos-mpike-sto-spiti-19xronou-ton-xtypise-sto-kefali-kai-ton-listepse/",
-        "https://www.in.gr/2026/10/24/world/ipa-paraitiseis-astynomikon-stin-politeia-tou-misisipi-meta-ton-thanasimo-pyrovolismo-vrefous-apo-astynomiko/"
+        "https://www.in.gr/2026/10/24/greece/thessaloniki-xeiropedes-se-43xrono-kai-prostimo-100-000-eyro-gia-23-000-paixnidia-maimou/",
+        "https://www.in.gr/2026/10/24/greece/kallithea-sygkrousi-leoforeiou-me-ix-kleistos-o-dromos-sto-simeio-pyrosvestiki-kai-ekav/",
+        "https://www.in.gr/2026/10/24/world/moni-sina-ypografetai-symfonia-me-tin-aigypto/",
+        "https://www.in.gr/2026/10/24/sports/football/i-toixografia-me-to-fili-giamal-empape-vandalistike-sti-varkeloni-pics/"
       ],
-      "seen_at_utc": "2026-10-24T09:30:06.867404+00:00"
+      "seen_at_utc": "2026-10-24T09:51:27.141823+00:00"
     }
   },
-  "updated_at_utc": "2026-10-24T09:30:06.867546+00:00"
+  "updated_at_utc": "2026-10-24T09:51:27.141983+00:00"
 }
