@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564548320/release-athens-2027-oi-fontaines-d-c-ton-ioylio-stin-athina/",
-      "title": "Release Athens 2027: Οι Fontaines D.C. τον Ιούλιο στην Αθήνα",
-      "normalized_title": "RELEASE ATHENS 2027: ΟΙ FONTAINES D.C. ΤΟΝ ΙΟΥΛΙΟ ΣΤΗΝ ΑΘΗΝΑ",
+      "url": "https://www.kathimerini.gr/society/564548467/choriatiko-i-kataschesi-ton-950-000-eyro-kai-oi-mpiznes-toy-idioktiti-se-rodo-kai-mykono/",
+      "title": "«Χωριάτικο»: Η κατάσχεση των 950.000 ευρώ και οι μπίζνες του ιδιοκτήτη σε Ρόδο και Μύκονο",
+      "normalized_title": "«ΧΩΡΙΑΤΙΚΟ»: Η ΚΑΤΑΣΧΕΣΗ ΤΩΝ 950.000 ΕΥΡΩ ΚΑΙ ΟΙ ΜΠΙΖΝΕΣ ΤΟΥ ΙΔΙΟΚΤΗΤΗ ΣΕ ΡΟΔΟ ΚΑΙ ΜΥΚΟΝΟ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564548320/release-athens-2027-oi-fontaines-d-c-ton-ioylio-stin-athina/",
-        "https://www.kathimerini.gr/society/dikastiko/564548311/pizza-fan-choriatiko-desmeyontai-ta-perioysiaka-stoicheia-ton-emplekomenon/",
-        "https://www.kathimerini.gr/opinion/564545011/poios-thelei-na-milisei-gallika/"
+        "https://www.kathimerini.gr/society/564548467/choriatiko-i-kataschesi-ton-950-000-eyro-kai-oi-mpiznes-toy-idioktiti-se-rodo-kai-mykono/",
+        "https://www.kathimerini.gr/world/564548455/gallia-i-nea-varia-asthenis-tis-eyropis-oikonomiki-krisi-kai-koinoniki-orgi-ti-skotonoyn/",
+        "https://www.kathimerini.gr/world/564548407/ikanopoiisi-stis-vryxelles-gia-tin-epaneklogi-loyla/",
+        "https://www.kathimerini.gr/athletics/564548365/o-antoneli-den-agkaliazei-ton-titlo-alla-tin-istoria/",
+        "https://www.kathimerini.gr/world/564548329/irthe-i-ora-gia-oikonomikes-kyroseis-kata-toy-israil/",
+        "https://www.kathimerini.gr/world/564548305/oi-iaponikoi-sidirodromoi-proselavan-dyo-katsikes-gia-ti-vlastisi-se-stathmo/",
+        "https://www.kathimerini.gr/columns/564548098/o-zose-moyrinio-den-efyge-pote/"
       ],
-      "seen_at_utc": "2026-10-26T10:29:59.495183+00:00"
+      "seen_at_utc": "2026-10-26T10:51:23.625811+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,34 +1265,39 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1900803/arhi-gia-to-xepluma-desmeutikan-oi-logariasmoi-ton-eblekomenon-stis-upotheseis-pizza-fan-kai-ton-fournon-horiatiko/?utm_source=rss",
-      "title": "Αρχή για το ξέπλυμα: Δεσμεύτηκαν οι λογαριασμοί των εμπλεκόμενων στις υποθέσεις Pizza Fan και των φούρνων «Χωριάτικο»",
-      "normalized_title": "ΑΡΧΗ ΓΙΑ ΤΟ ΞΕΠΛΥΜΑ: ΔΕΣΜΕΥΤΗΚΑΝ ΟΙ ΛΟΓΑΡΙΑΣΜΟΙ ΤΩΝ ΕΜΠΛΕΚΟΜΕΝΩΝ ΣΤΙΣ ΥΠΟΘΕΣΕΙΣ PIZZA FAN ΚΑΙ ΤΩΝ ΦΟΥΡΝΩΝ «ΧΩΡΙΑΤΙΚΟ»",
+      "url": "https://www.protothema.gr/greece/article/1900822/mihailidou-auxanodai-kata-2000-ta-eisodimatika-oria-sta-vouchers-gia-vrefonipiakous-stathmous/?utm_source=rss",
+      "title": "Μιχαηλίδου: Αυξάνονται κατά 2.000 τα εισοδηματικά όρια στα vouchers για βρεφονηπιακούς σταθμούς",
+      "normalized_title": "ΜΙΧΑΗΛΙΔΟΥ: ΑΥΞΑΝΟΝΤΑΙ ΚΑΤΑ 2.000 ΤΑ ΕΙΣΟΔΗΜΑΤΙΚΑ ΟΡΙΑ ΣΤΑ VOUCHERS ΓΙΑ ΒΡΕΦΟΝΗΠΙΑΚΟΥΣ ΣΤΑΘΜΟΥΣ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1900803/arhi-gia-to-xepluma-desmeutikan-oi-logariasmoi-ton-eblekomenon-stis-upotheseis-pizza-fan-kai-ton-fournon-horiatiko/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1900822/mihailidou-auxanodai-kata-2000-ta-eisodimatika-oria-sta-vouchers-gia-vrefonipiakous-stathmous/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1900821/ta-idiotika-sholeia-zitoun-freno-sta-bonous-morion-gia-tis-panelladikes-meta-tis-kataggelies-gia-stimenous-agones/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1900816/gemizei-to-fragma-aposelemi-stin-kriti-vuthizetai-i-ekklisia-sto-sfeduli/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-10-26T10:29:59.495300+00:00"
+      "seen_at_utc": "2026-10-26T10:51:23.625950+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/tehnes/1496765/oi-fontaines-d-c-xana-stin-ellada-kai-to-release-athens/",
-      "title": "Οι Fontaines D.C. ξανά στην Ελλάδα και το Release Athens",
-      "normalized_title": "ΟΙ FONTAINES D.C. ΞΑΝΑ ΣΤΗΝ ΕΛΛΑΔΑ ΚΑΙ ΤΟ RELEASE ATHENS",
+      "url": "https://www.efsyn.gr/oikonomia/1496798/elstat-ayxisi-37-sto-diathesimo-eisodima-ton-noikokyrion-to-2025-sto-39-i-apotamieysi-to-2025/",
+      "title": "ΕΛΣΤΑΤ: Αύξηση 3,7% στο διαθέσιμο εισόδημα των νοικοκυριών το 2025 – Στο -3,9% η αποταμίευση το 2025",
+      "normalized_title": "ΕΛΣΤΑΤ: ΑΥΞΗΣΗ 3,7% ΣΤΟ ΔΙΑΘΕΣΙΜΟ ΕΙΣΟΔΗΜΑ ΤΩΝ ΝΟΙΚΟΚΥΡΙΩΝ ΤΟ 2025 – ΣΤΟ -3,9% Η ΑΠΟΤΑΜΙΕΥΣΗ ΤΟ 2025",
       "seen_urls": [
-        "https://www.efsyn.gr/tehnes/1496765/oi-fontaines-d-c-xana-stin-ellada-kai-to-release-athens/",
-        "https://www.efsyn.gr/stiles/1496751/servia-vrazilia-ekloges-poy-fernoyn-elpida/",
-        "https://www.efsyn.gr/athlitismos/1496749/skandalo-sto-elliniko-mpasket-katethese-o-ilias-koromilas-pos-dikaiologise-ta-263-000-eyro/"
+        "https://www.efsyn.gr/oikonomia/1496798/elstat-ayxisi-37-sto-diathesimo-eisodima-ton-noikokyrion-to-2025-sto-39-i-apotamieysi-to-2025/",
+        "https://www.efsyn.gr/kosmos/1496779/oi-vrazilianoi-stin-eyropi-psifisan-loyla-kai-mono-stin-ellada-mpolsonaroy-pinakas/",
+        "https://www.efsyn.gr/kosmos/1496697/einai-skhora-paralirima-tramp-kata-norvigias-epeidi-den-pire-to-nompel/",
+        "https://www.efsyn.gr/ellada/1496604/desmeytikan-oi-logariasmoi-ton-emplekomenon-stis-ypotheseis-pizza-fan-kai-horiatiko-apo-tin-arhi-gia-to-xeplyma/",
+        "https://www.efsyn.gr/oikonomia/1496573/trypia-logismika-stin-aade-pos-thaftike-kataggelia-gia-megali-epiheirisi/"
       ],
-      "seen_at_utc": "2026-10-26T10:29:59.495269+00:00"
+      "seen_at_utc": "2026-10-26T10:51:23.625912+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/10/26/greece/desmeyontai-oi-periousies-ton-katigoroumenon-pou-emplekontai-stis-ypotheseis-tis-pizza-fan-kai-xoriatiko/",
-      "title": "Δεσμεύονται οι περιουσίες των κατηγορουμένων που εμπλέκονται στις υποθέσεις της Pizza Fan και «Χωριάτικο»",
-      "normalized_title": "ΔΕΣΜΕΥΟΝΤΑΙ ΟΙ ΠΕΡΙΟΥΣΙΕΣ ΤΩΝ ΚΑΤΗΓΟΡΟΥΜΕΝΩΝ ΠΟΥ ΕΜΠΛΕΚΟΝΤΑΙ ΣΤΙΣ ΥΠΟΘΕΣΕΙΣ ΤΗΣ PIZZA FAN ΚΑΙ «ΧΩΡΙΑΤΙΚΟ»",
+      "url": "https://www.in.gr/2026/10/26/politics/epikairotita/tsoukalas-gia-tin-epikratisi-loula-sti-vrazilia-niki-tis-dimokratias-niki-tis-proodou/",
+      "title": "Τσουκαλάς για την επικράτηση Λούλα στη Βραζιλία: Νίκη της Δημοκρατίας, νίκη της προόδου",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ ΓΙΑ ΤΗΝ ΕΠΙΚΡΑΤΗΣΗ ΛΟΥΛΑ ΣΤΗ ΒΡΑΖΙΛΙΑ: ΝΙΚΗ ΤΗΣ ΔΗΜΟΚΡΑΤΙΑΣ, ΝΙΚΗ ΤΗΣ ΠΡΟΟΔΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/10/26/greece/desmeyontai-oi-periousies-ton-katigoroumenon-pou-emplekontai-stis-ypotheseis-tis-pizza-fan-kai-xoriatiko/"
+        "https://www.in.gr/2026/10/26/politics/epikairotita/tsoukalas-gia-tin-epikratisi-loula-sti-vrazilia-niki-tis-dimokratias-niki-tis-proodou/",
+        "https://www.in.gr/2026/10/26/sports/on-field/olympiakos-pos-na-min-xamogelaei-o-imanol/"
       ],
-      "seen_at_utc": "2026-10-26T10:29:59.495236+00:00"
+      "seen_at_utc": "2026-10-26T10:51:23.625861+00:00"
     }
   },
-  "updated_at_utc": "2026-10-26T10:29:59.495385+00:00"
+  "updated_at_utc": "2026-10-26T10:51:23.626022+00:00"
 }
