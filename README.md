@@ -326,7 +326,7 @@ This is a **separate local-only post-processing step** that runs **after**:
 1. `fetch_diavgeia.py` (raw records + decision-type enrichments, optional PDF embed)
 2. `pdf_pipeline.py` (download + parse PDFs)
 
-It checks whether each record is relevant to forest-fire prevention/suppression using:
+It checks whether each new record is relevant to forest-fire prevention/suppression using:
 - the decision `subject`
 - the parsed PDF text (looked up by `ada`)
 
@@ -345,13 +345,18 @@ Local-only components:
 
 ### Strategy (simple boolean rule)
 
-For each row in `data/2026_diavgeia.csv`:
+For each row in `data/2026_diavgeia.csv` without a saved `is_relevant` decision:
 
 - `subject_match = any(keyword in normalized(subject))`
 - `pdf_match = any(keyword in normalized(pdf_text_for_same_ada))`
 - `is_relevant = subject_match OR pdf_match`
 
 No scoring / ranking is used.
+
+Saved `True` and `False` decisions are preserved. Routine runs evaluate only
+unfinished rows and skip the PDF lookup when there is nothing new to evaluate.
+Historical recomputation is an explicit maintenance operation through
+`apply_relevance_filter()`, rather than part of each refresh.
 
 ### Important implementation detail (no dataframe join)
 
@@ -561,8 +566,17 @@ Main enrichments:
 - `subject_has_budget_balance_report_terms` (`True/False`): derived boolean flag from `subject`
   - `True` when subject contains `προϋπολογισμ*`, `ισολογισμ*`, or `απολογισμ*` (accent-insensitive)
 - `org_name_clean` exclusion list (dataset scope cleanup)
-  - rows whose normalized `org_name_clean` matches a configured blacklist are dropped from the dataset
-  - applied both during fetch (API batch filtering) and before CSV save (safety net)
+  - incoming rows whose normalized `org_name_clean` matches a configured blacklist are rejected
+  - collection applies exclusions and normalization only to new rows, before appending them
+  - historical CSV rows retain their stored values; historical cleanup is a one-time maintenance operation
+  - duplicate detection suppresses incoming duplicates without removing historical rows
+  - the importer checks exclusions only for candidate ADAs not already present in the database, protecting against reintroducing previously deleted records
+
+CSV updates are written to a temporary file and replaced atomically. The fetch
+cutoff advances only after incoming rows have been handled successfully. If an
+older run advanced the cutoff beyond the newest saved CSV timestamp, the next
+fetch resumes from the CSV timestamp to recover the missing interval. Successful
+runs mark their checkpoint so intentionally excluded batches are not replayed.
 
 The script supports both:
 - raw API dict/list values

@@ -1533,6 +1533,42 @@ def diavgeia_source_is_excluded(row: pd.Series) -> bool:
     )
 
 
+def load_existing_diavgeia_adas(cur, diav: pd.DataFrame) -> set[str]:
+    """Look up source ADAs on the ingest connection without revisiting their policy."""
+    if diav.empty or "ada" not in diav.columns:
+        return set()
+    candidate_adas = sorted({ada for value in diav["ada"] if (ada := t(value))})
+    if not candidate_adas:
+        return set()
+    cur.execute(
+        "SELECT ada FROM public.diavgeia WHERE ada = ANY(%s)",
+        (candidate_adas,),
+    )
+    return {row[0] for row in cur.fetchall()}
+
+
+def filter_new_diavgeia_rows(diav: pd.DataFrame, existing_adas: set[str]) -> pd.DataFrame:
+    """Apply exclusions only to potential inserts; preserve already stored documents."""
+    if diav.empty:
+        return diav
+    if "ada" in diav.columns:
+        new_mask = ~diav["ada"].map(t).isin(existing_adas)
+    else:
+        new_mask = pd.Series(True, index=diav.index)
+    incoming = diav.loc[new_mask]
+    if incoming.empty:
+        return diav
+    excluded = incoming.apply(diavgeia_source_is_excluded, axis=1)
+    keep_mask = ~new_mask
+    keep_mask.loc[new_mask] = ~excluded
+    log(
+        f"Checked exclusions for {len(incoming)} new Diavgeia candidates; "
+        f"preserved {int((~new_mask).sum())} existing rows; "
+        f"skipped {int(excluded.sum())} excluded candidates"
+    )
+    return diav.loc[keep_mask].copy()
+
+
 def diav_rows(
     diav: pd.DataFrame,
     org_map: dict[tuple[str, str], tuple[str | None, str | None]],
@@ -1540,12 +1576,14 @@ def diav_rows(
     region_lookup: dict[str, str],
     municipality_lookup: dict[str, str],
     municipality_region_lookup: dict[str, str],
+    *,
+    apply_exclusions: bool = True,
 ) -> list[tuple]:
     out = []
     for _, r in diav.iterrows():
         org_type = t_up(r.get("org_type")) or ""
         org_name = t_up(r.get("org_name_clean")) or ""
-        if diavgeia_source_is_excluded(r):
+        if apply_exclusions and diavgeia_source_is_excluded(r):
             continue
         region_key, org_key_resolved, municipality_key = resolve_diavgeia_context(
             org_type=org_type,
@@ -1931,12 +1969,10 @@ def main() -> None:
     )
     bundle.raw = apply_procurement_amount_overrides(bundle.raw, amount_overrides)
     bundle.raw = apply_procurement_chain_dedup(bundle.raw)
-    # Use the row builders' exclusions on the source frames too. This keeps
-    # procurement tuples aligned with CPV/payment data and removes excluded
-    # records before their metadata and beneficiary links are built.
+    # Keep procurement tuples aligned with CPV/payment data. Diavgeia's
+    # exclusions run later, after identifying documents already in the database.
     for source_name, is_excluded in (
         ("raw", procurement_source_is_excluded),
-        ("diav", diavgeia_source_is_excluded),
     ):
         source_frame = getattr(bundle, source_name)
         if not source_frame.empty:
@@ -2012,14 +2048,18 @@ def main() -> None:
         org_municipality_coverage_lookup=org_municipality_coverage_lookup,
         organization_afm_lookup=organization_afm_lookup,
     )
-    diav = diav_rows(
-        bundle.diav,
-        diavgeia_org_map,
-        organization_lookup,
-        region_lookup,
-        municipality_lookup,
-        municipality_region_lookup,
-    )
+    if args.dry_run:
+        log("Dry run: no database lookup; treating Diavgeia source rows as new candidates")
+        bundle.diav = filter_new_diavgeia_rows(bundle.diav, set())
+        diav_rows(
+            bundle.diav,
+            diavgeia_org_map,
+            organization_lookup,
+            region_lookup,
+            municipality_lookup,
+            municipality_region_lookup,
+            apply_exclusions=False,
+        )
     fires = forest_fire_rows(bundle.fire)
     funds = fund_rows(bundle.fund)
 
@@ -2031,7 +2071,7 @@ def main() -> None:
     print(f"  organization seed: {len(org_seed)}")
     print(f"  organization meta: {len(organization_metadata_rows)}")
     print(f"  procurement:       {len(procurement)}")
-    print(f"  diavgeia:          {len(diav)}")
+    print(f"  diavgeia source:   {len(bundle.diav)}")
     print(f"  payment:           derived from raw_procurements rows")
     print(f"  forest_fire:       {len(fires)}")
     print(f"  fund:              {len(funds)}")
@@ -2075,6 +2115,19 @@ def main() -> None:
     cur = conn.cursor()
 
     try:
+        if selected_tables & {"diavgeia", "diavgeia_document_type", "diavgeia_procurement", "beneficiary"}:
+            existing_diavgeia_adas = load_existing_diavgeia_adas(cur, bundle.diav)
+            bundle.diav = filter_new_diavgeia_rows(bundle.diav, existing_diavgeia_adas)
+        diav = diav_rows(
+            bundle.diav,
+            diavgeia_org_map,
+            organization_lookup,
+            region_lookup,
+            municipality_lookup,
+            municipality_region_lookup,
+            apply_exclusions=False,
+        )
+        log(f"Prepared Diavgeia rows after new-document exclusions: {len(diav)}")
         # Seed dimensions first.
         if "region" in selected_tables:
             log(f"Seeding region rows ({len(region_seed)})...")

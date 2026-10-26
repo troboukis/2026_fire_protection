@@ -12,6 +12,7 @@ import json
 import os
 import re
 import ast
+import tempfile
 import time
 import unicodedata
 from urllib.parse import quote
@@ -47,6 +48,7 @@ LOG_DIR = REPO_DIR / "logs"
 CSV_PATH = DATA_DIR / "2026_diavgeia.csv"
 STATE_FILE = STATE_DIR / "state.json"
 RUN_LOG_FILE = LOG_DIR / "fetch_runs.csv"
+CSV_CHECKPOINT_VERSION = 1
 LEGACY_CSV_PATH = REPO_DIR / "2026_diavgeia.csv"
 LEGACY_STATE_FILE = REPO_DIR / "state.json"
 ATHENS_TZ = ZoneInfo("Europe/Athens")
@@ -257,18 +259,23 @@ EXCLUDED_ORG_NAME_CLEAN_RAW = [
 # ---------------------------------------------------------------------------
 
 def load_state() -> dict:
-    """Load persisted state; fall back to scanning the CSV if no state file."""
+    """Load the cutoff without skipping records that were never saved to CSV."""
+    state = {}
     if LEGACY_STATE_FILE.exists() and not STATE_FILE.exists():
         with open(LEGACY_STATE_FILE) as f:
-            legacy_state = json.load(f)
+            state = json.load(f)
         print("[state] Found legacy root-level state.json; using it for this run.")
-        return legacy_state
-
-    if STATE_FILE.exists():
+    elif STATE_FILE.exists():
         with open(STATE_FILE) as f:
-            return json.load(f)
+            state = json.load(f)
 
-    # First run: derive last_fetch from the existing CSV
+    # This checkpoint is written only after the incoming batch was handled
+    # successfully, including batches deliberately rejected by the filters.
+    if state.get("csv_checkpoint_version") == CSV_CHECKPOINT_VERSION:
+        return state
+
+    # Older runs could advance state without saving the fetched records. Read
+    # only the timestamp column and replay that gap from the durable CSV cutoff.
     csv_source = CSV_PATH if CSV_PATH.exists() else LEGACY_CSV_PATH
     if csv_source.exists():
         df = pd.read_csv(csv_source, usecols=["submissionTimestamp"])
@@ -278,8 +285,21 @@ def load_state() -> dict:
         last_ts = df["submissionTimestamp"].max()
         if pd.notna(last_ts):
             ts_str = last_ts.strftime("%d/%m/%Y %H:%M:%S")
-            print(f"[state] No state file found. Derived last fetch from CSV: {ts_str}")
-            return {"last_fetch": ts_str}
+            saved_cutoff = state.get("last_fetch")
+            if saved_cutoff:
+                try:
+                    state_ts = datetime.strptime(saved_cutoff, "%d/%m/%Y %H:%M:%S")
+                except ValueError:
+                    state_ts = datetime.strptime(saved_cutoff, "%d/%m/%Y")
+                if state_ts <= last_ts:
+                    return state
+                print(f"[state] Cutoff is ahead of saved CSV; recovering from: {ts_str}")
+            else:
+                print(f"[state] Derived last fetch from CSV: {ts_str}")
+            return {**state, "last_fetch": ts_str}
+
+    if state:
+        return state
 
     # No CSV either — fetch everything
     print("[state] No state file and no CSV found. Will fetch all available data.")
@@ -661,7 +681,7 @@ def is_excluded_org_name_clean(value) -> bool:
 
 
 def filter_excluded_org_rows(df: pd.DataFrame, *, context: str = "rows") -> pd.DataFrame:
-    """Exclude organizations and subject roots, including rows from persisted CSVs."""
+    """Apply organization and subject exclusions to the supplied incoming rows."""
     if df.empty:
         return df
 
@@ -1619,7 +1639,6 @@ def backfill_spending_approval_columns(
     after = normalize_enrichment_singleton_columns(after)
     after = add_subject_flags(after)
     after = recompute_org_classification(after)
-    after = filter_excluded_org_rows(after, context="rows during backfill")
     after_status = after["spending_enrichment_status"].astype("string").fillna("").str.strip()
     after_commitment_status = after["commitment_enrichment_status"].astype("string").fillna("").str.strip()
     after_direct_status = after["direct_enrichment_status"].astype("string").fillna("").str.strip()
@@ -1665,13 +1684,19 @@ def backfill_spending_approval_columns(
 # ---------------------------------------------------------------------------
 
 def append_to_csv(new_records: list[dict]) -> int:
-    """Enrich and append new records to the CSV. Returns count of rows added."""
+    """Filter and enrich incoming records, preserving all previously saved rows."""
     if not new_records:
         print("[csv] Nothing to append.")
         return 0
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     new_df = enrich_dataframe(pd.DataFrame(new_records))
+    new_df = add_subject_flags(new_df)
+    new_df = filter_excluded_org_rows(new_df, context="new rows before CSV save")
+    if new_df.empty:
+        print("[csv] No incoming rows remain after exclusions.")
+        return 0
+
     if should_download_pdfs():
         print("[pdf] DOWNLOAD_DIAVGEIA_PDFS=1 -> download + parse enabled")
         new_df = enrich_with_pdf_content(new_df)
@@ -1690,47 +1715,41 @@ def append_to_csv(new_records: list[dict]) -> int:
         )
 
     if CSV_PATH.exists():
-        existing = pd.read_csv(CSV_PATH)
-        existing = ensure_pdf_embed_columns(existing)
+        # Preserve historical text and decisions exactly as stored. Exclusions
+        # and normalization above apply only to the incoming dataframe.
+        existing = pd.read_csv(CSV_PATH, dtype=object, keep_default_na=False)
         combined = pd.concat([existing, new_df], ignore_index=True)
     else:
+        existing = pd.DataFrame()
         combined = new_df
 
-    # Keep old rows aligned with current normalization rules.
-    combined = normalize_decision_columns(combined)
-    combined = add_subject_flags(combined)
-    combined = recompute_org_classification(combined)
-    combined = ensure_spending_enrichment_columns(combined)
-    combined = ensure_commitment_enrichment_columns(combined)
-    combined = ensure_direct_enrichment_columns(combined)
-    combined = ensure_payment_enrichment_columns(combined)
-    combined = normalize_enrichment_singleton_columns(combined)
-    combined = filter_excluded_org_rows(combined, context="rows before CSV save")
-
-    original_len = len(existing) if CSV_PATH.exists() else 0
-
-    # Drop exact duplicate rows. Some enrichment columns can contain Python lists/dicts
-    # after normalization, which are unhashable and break pandas.drop_duplicates().
-    # Build a hashable comparison view for duplicate detection, but keep original values.
-    dedupe_view = combined.copy()
-    for col in dedupe_view.columns:
-        dedupe_view[col] = dedupe_view[col].apply(
-            lambda x: json.dumps(x, ensure_ascii=False, sort_keys=True, default=str)
-            if isinstance(x, (dict, list))
-            else x
-        )
-
-    duplicate_mask = dedupe_view.duplicated()
-    combined = combined.loc[~duplicate_mask].reset_index(drop=True)
-
-    added = len(combined) - original_len
-    if added <= 0:
+    original_len = len(existing)
+    # Compare CSV representations so empty fields and booleans match after a
+    # reload. Historical-only annotations (e.g. relevance) are not input fields.
+    dedupe_view = combined.loc[:, new_df.columns].astype("string").fillna("")
+    incoming_duplicates = dedupe_view.duplicated().iloc[original_len:]
+    incoming = combined.iloc[original_len:].loc[~incoming_duplicates]
+    added = len(incoming)
+    if added == 0:
         print("[csv] All fetched records already exist in CSV (no new rows).")
         return 0
 
-    combined.to_csv(CSV_PATH, index=False)
-    print(f"[csv] Appended {len(new_df)} new rows → {CSV_PATH}")
-    return len(new_df)
+    combined = pd.concat([existing, incoming], ignore_index=True)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", newline="", dir=CSV_PATH.parent,
+            prefix=f".{CSV_PATH.name}.", suffix=".tmp", delete=False,
+        ) as fh:
+            temporary_path = Path(fh.name)
+            combined.to_csv(fh, index=False)
+        temporary_path.replace(CSV_PATH)
+    finally:
+        if temporary_path is not None:
+            temporary_path.unlink(missing_ok=True)
+
+    print(f"[csv] Appended {added} new rows → {CSV_PATH}")
+    return added
 
 
 def ensure_pdf_embed_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -1874,6 +1893,7 @@ def main():
             if timestamps:
                 new_last = max(timestamps)
                 state["last_fetch"] = new_last.strftime("%d/%m/%Y %H:%M:%S")
+                state["csv_checkpoint_version"] = CSV_CHECKPOINT_VERSION
                 save_state(state)
 
         success = True

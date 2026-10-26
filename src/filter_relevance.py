@@ -14,6 +14,7 @@ Writes:
 Matching strategy:
 - normalize subject + PDF text (lowercase, remove accents, normalize separators)
 - if any keyword matches either source -> keep row (`is_relevant=True`)
+- preserve saved relevance decisions; evaluate only rows without a valid decision
 
 This script is intentionally local-only because it depends on local PDF downloads/parsing.
 """
@@ -216,9 +217,9 @@ def ensure_relevance_columns(df: pd.DataFrame) -> pd.DataFrame:
         if col not in df.columns:
             df[col] = default
 
-    # CSV reloads can infer all-empty keyword columns as float64 because they contain only NaN.
-    # Force them back to object so per-row string assignments do not fail during enrichment.
-    for col in ("matched_keywords_subject", "matched_keywords_pdf"):
+    # CSV reloads can infer unfinished columns as float64 because they contain
+    # only NaN. Accept boolean/string assignments without changing saved values.
+    for col in RELEVANCE_COLUMNS:
         df[col] = df[col].astype("object")
 
     return df
@@ -230,6 +231,11 @@ def append_relevance_run_log(log_path: Path, row: dict[str, Any]) -> None:
     log_df = pd.DataFrame([row])
     log_df.to_csv(log_path, mode="a", header=not log_path.exists(), index=False)
     print(f"[relevance][log] appended -> {log_path}", flush=True)
+
+
+def parse_saved_boolean(value: Any) -> bool | None:
+    """Read saved CSV booleans without treating a saved False as unfinished."""
+    return {"true": True, "false": False}.get(str(value).strip().casefold())
 
 
 def apply_relevance_filter(
@@ -325,7 +331,11 @@ def run_relevance_filter(
     log_csv: Path,
     progress_every: int = 250,
 ) -> dict[str, int]:
-    """Load datasets, compute relevance columns, persist raw+filtered outputs."""
+    """Evaluate rows without a saved decision and persist raw+filtered outputs.
+
+    Existing True and False decisions remain unchanged. Explicit historical
+    recomputation remains available through apply_relevance_filter().
+    """
     run_started_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     success = False
     error_message = "NONE"
@@ -345,16 +355,39 @@ def run_relevance_filter(
 
     try:
         print(f"[relevance] loading raw dataset -> {input_csv}", flush=True)
-        raw_df = pd.read_csv(input_csv)
-        keyword_specs = build_keyword_specs(RELEVANCE_KEYWORDS)
-        pdf_lookup = build_pdf_text_lookup(pdf_pages_dataset)
-
-        enriched_df, stats = apply_relevance_filter(
-            raw_df,
-            pdf_text_by_ada=pdf_lookup,
-            keyword_specs=keyword_specs,
-            progress_every=progress_every,
+        raw_df = pd.read_csv(input_csv, dtype=object, keep_default_na=False)
+        pending_mask = (
+            raw_df["is_relevant"].map(parse_saved_boolean).isna()
+            if "is_relevant" in raw_df.columns
+            else pd.Series(True, index=raw_df.index)
         )
+        pending_count = int(pending_mask.sum())
+        print(
+            f"[relevance] pending rows={pending_count} saved decisions={len(raw_df) - pending_count}",
+            flush=True,
+        )
+        enriched_df = ensure_relevance_columns(raw_df)
+        if pending_count:
+            pending_df, _ = apply_relevance_filter(
+                raw_df.loc[pending_mask].copy(),
+                pdf_text_by_ada=build_pdf_text_lookup(pdf_pages_dataset),
+                keyword_specs=build_keyword_specs(RELEVANCE_KEYWORDS),
+                progress_every=progress_every,
+            )
+            for column in RELEVANCE_COLUMNS:
+                enriched_df.loc[pending_mask, column] = pending_df[column]
+
+        relevant_mask = enriched_df["is_relevant"].map(parse_saved_boolean).eq(True)
+        stats = {
+            "rows_total": len(enriched_df),
+            "rows_relevant": int(relevant_mask.sum()),
+            "rows_not_relevant": int((~relevant_mask).sum()),
+            "rows_subject_match": int(enriched_df["subject_match"].map(parse_saved_boolean).eq(True).sum()),
+            "rows_pdf_match": int(enriched_df["pdf_match"].map(parse_saved_boolean).eq(True).sum()),
+            "rows_pdf_available": int(enriched_df["pdf_available_for_filter"].map(parse_saved_boolean).eq(True).sum()),
+            "rows_processed": pending_count,
+            "rows_skipped": len(enriched_df) - pending_count,
+        }
 
         # Persist raw dataset with new relevance columns.
         enriched_df.to_csv(input_csv, index=False)
@@ -362,7 +395,7 @@ def run_relevance_filter(
 
         # Persist filtered dataset (DB input candidate).
         filtered_output_csv.parent.mkdir(parents=True, exist_ok=True)
-        filtered_df = enriched_df[enriched_df["is_relevant"] == True].copy()  # noqa: E712
+        filtered_df = enriched_df.loc[relevant_mask].copy()
         filtered_rows = len(filtered_df)
         filtered_df.to_csv(filtered_output_csv, index=False)
         print(

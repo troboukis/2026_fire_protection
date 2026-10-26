@@ -57,3 +57,6 @@ tests/*
 !tests/test_fetch_copernicus.py
 !tests/test_organization_exclusions.py
 !tests/test_keyword_exclusions.py
+!tests/test_fetch_diavgeia_incremental.py
+!tests/test_filter_relevance.py
+!tests/test_diavgeia_incremental_ingest.py
