@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-10-26T17:44:46+00:00",
-  "database_now": "2026-10-26T17:44:40.399218+00:00",
-  "snapshot_at": "2026-10-26T19:44:39+02:00",
-  "snapshot_date": "2026-10-26",
-  "snapshot_time": "19:44",
+  "built_at": "2026-10-27T00:05:14+00:00",
+  "database_now": "2026-10-27T00:05:10.098094+00:00",
+  "snapshot_at": "2026-10-27T02:05:09+02:00",
+  "snapshot_date": "2026-10-27",
+  "snapshot_time": "02:05",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-10-26",
+  "period_end": "2026-10-27",
   "year_complete": false,
   "latest_contract_signed": "2026-10-23",
   "latest_payment_published": "2026-10-26",
@@ -795,18 +795,18 @@
   },
   {
    "year": 2025,
-   "contracts": 2251,
-   "amount": 303987731.69,
+   "contracts": 2257,
+   "amount": 304062557.45,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 374,
-     "amount": 206556148.65
+     "contracts": 375,
+     "amount": 206561958.65
     },
     {
      "group": "Δήμοι",
-     "contracts": 1027,
-     "amount": 35848202.98
+     "contracts": 1032,
+     "amount": 35917218.74
     },
     {
      "group": "Περιφέρειες",
@@ -829,14 +829,14 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1250,
-     "amount": 219739827.77
+     "contracts": 1254,
+     "amount": 219808507.53
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 409,
-     "amount": 35596159.51
+     "contracts": 411,
+     "amount": 35602305.51
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
@@ -954,11 +954,11 @@
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
-    "contracts_previous": 66,
+    "contracts_previous": 67,
     "contracts_current": 89,
-    "amount_previous": 1437417.26,
+    "amount_previous": 1443227.26,
     "amount_current": 3963855.73,
-    "change": 2526438.47
+    "change": 2520628.47
    },
    {
     "authority": "ΔΗΜΟΣ ΕΛΛΗΝΙΚΟΥ - ΑΡΓΥΡΟΥΠΟΛΗΣ",
