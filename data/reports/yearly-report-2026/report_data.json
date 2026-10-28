@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-10-28T10:13:51+00:00",
-  "database_now": "2026-10-28T10:13:47.489894+00:00",
-  "snapshot_at": "2026-10-28T12:13:46+02:00",
+  "built_at": "2026-10-28T16:13:03+00:00",
+  "database_now": "2026-10-28T16:12:58.011473+00:00",
+  "snapshot_at": "2026-10-28T18:12:57+02:00",
   "snapshot_date": "2026-10-28",
-  "snapshot_time": "12:13",
+  "snapshot_time": "18:12",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-10-28",
@@ -2579,8 +2579,8 @@
    },
    {
     "year": 2026,
-    "fires": 161,
-    "area_ha": 35990.0
+    "fires": 164,
+    "area_ha": 36026.0
    }
   ],
   "report_year_last_fire_date": "2026-10-21",
@@ -2598,8 +2598,8 @@
    },
    {
     "municipality": "ΑΓΙΟΥ ΒΑΣΙΛΕΙΟΥ",
-    "fires": 2,
-    "area_ha": 6534.61,
+    "fires": 3,
+    "area_ha": 6547.61,
     "municipal_contracts_2026": 2,
     "municipal_contracts_2026_amount": 6620.36,
     "municipal_payments_2026": 30,
