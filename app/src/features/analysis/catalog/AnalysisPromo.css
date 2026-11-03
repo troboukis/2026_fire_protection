@@ -121,6 +121,11 @@
   gap: 1rem;
 }
 
+.analysis-promo__visual.analysis-promo__visual--text-only {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .analysis-promo__action {
   display: inline-flex;
   align-items: center;

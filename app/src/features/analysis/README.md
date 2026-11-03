@@ -5,10 +5,29 @@ The `/analysis` section is organized by published analysis so page copy, UI, dat
 ## Catalog
 
 - `catalog/AnalysisPage.tsx`: cards shown at `/analysis`.
-- `catalog/AnalysisCard.tsx`: shared catalog card, including the image slot.
-- `catalog/AnalysisPromo.tsx` and `catalog/AnalysisPromo.css`: animated homepage banner, alternating statistics and AntiNERO links with pause/manual controls and reduced-motion support.
+- `catalog/AnalysisCard.tsx`: shared catalog card, including the image slot and publication date.
+- `catalog/fireSeasonReview.ts`: shared title, description, PDF link, cover image and publication date for the 2026 fire-season retrospective.
+- `catalog/AnalysisPromo.tsx` and `catalog/AnalysisPromo.css`: animated homepage banner, starting with the fire-season retrospective and alternating the published analyses with pause/manual controls and reduced-motion support.
 - `catalog/AnalysisCatalog.css` and `catalog/AnalysisCard.css`: catalog layout and card styling.
 - `app/analysis/index.html`: prerendered shell for `/analysis` with SEO meta tags and a crawlable summary (search engines and LLM crawlers) listing every published analysis, including AntiNERO. Registered as a Vite build input (`vite.config.ts`) and a Vercel rewrite (`vercel.json`), same as the statistics and AntiNERO pages below. Update it whenever an analysis is added to or removed from the catalog.
+
+The published catalog order is newest to oldest: the fire-season retrospective, the West Attica interactive fire analysis, the AntiNERO contract network, then statistics. The yearly financial report remains hidden from the catalog until complete.
+
+The statistics card shows `↻ Τα δεδομένα ενημερώνονται αυτόματα` instead of its first publication date; the historical provenance below is retained.
+
+Publication dates use the first introduction of each analysis, checked against GitHub history:
+
+| Analysis | Date | Provenance |
+| --- | --- | --- |
+| Fire-season retrospective 2026 | 2026-11-03 | Date requested for its addition to the catalog; [WWF PDF](https://wwfeu.awsassets.panda.org/downloads/anaskopisi2026f2.pdf). |
+| West Attica interactive fire analysis | 2026-09-14 | [First standalone page, assets and sitemap entry](https://github.com/troboukis/2026_fire_protection/commit/0e5bc259ba81ec54fc2d62d31dd641b5d185c381). Its catalog card was added on [2026-09-22](https://github.com/troboukis/2026_fire_protection/commit/78007ef01d029c598470cce9967bffc9c790fa8b). |
+| Statistical analysis | 2026-02-27 | [First `ContractAnalysis` component, rendered on the homepage](https://github.com/troboukis/2026_fire_protection/commit/3a00707969c903fb16d53dcc747a261e0ae7056f). It moved to `/analysis` on [2026-03-08](https://github.com/troboukis/2026_fire_protection/commit/1c0b5424969a63597b02b55065409d45e22390fa), then `/analysis/statistics` on [2026-09-12](https://github.com/troboukis/2026_fire_protection/commit/4a6c5f5eb2c6ad07b496282f68a13946a6fb197b). |
+| AntiNERO West Attica contract network | 2026-09-12 | [First page and catalog card](https://github.com/troboukis/2026_fire_protection/commit/4a6c5f5eb2c6ad07b496282f68a13946a6fb197b). |
+| Yearly financial report 2026 (hidden) | 2026-10-21 | [First report implementation](https://github.com/troboukis/2026_fire_protection/commit/fdc6206bbca01cf7ebe4870be5d5808ef2a018cf). |
+
+## Fire-season retrospective 2026
+
+The catalog and homepage promo link directly to the [WWF PDF](https://wwfeu.awsassets.panda.org/downloads/anaskopisi2026f2.pdf), with the supplied cover at `app/public/social/fire-season-review-2026.png` (1624 × 1368). This is separate from the yearly financial report below; it has no local article route.
 
 ## Statistical analysis
 
@@ -51,4 +70,4 @@ The builder also writes `data/reports/yearly-report-2026/` (full results, per-co
 
 Do not edit `antinero/data/antineroReport.generated.json` directly. Edit the reviewed source material under `data/reports/antinero-west-attica/`, then run `python scripts/reports/antinero-west-attica/build_publication.py`.
 
-Place page preview images under `app/public/social/`. The analysis cards currently use `statistical-analysis.png` and `antinero-west-attica.png`.
+Place page preview images under `app/public/social/`. The published analysis cards use `fire-season-review-2026.png`, `west-attica-fire-2026.png`, `statistical-analysis.png` and `antinero-west-attica.png`.

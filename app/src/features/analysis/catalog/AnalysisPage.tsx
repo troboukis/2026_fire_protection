@@ -1,4 +1,5 @@
 import AnalysisCard from './AnalysisCard'
+import { fireSeasonReview } from './fireSeasonReview'
 import './AnalysisCatalog.css'
 
 // The yearly report stays off the catalog until it is complete; its page remains reachable by URL.
@@ -7,6 +8,7 @@ const SHOW_YEARLY_REPORT = false
 export default function AnalysisPage() {
   return (
     <main className="analysis-catalog">
+      <AnalysisCard {...fireSeasonReview} imageFit="contain" />
       {SHOW_YEARLY_REPORT && (
         <AnalysisCard
           to="/analysis/yearly_report"
@@ -14,6 +16,7 @@ export default function AnalysisPage() {
           description="Οι συμβάσεις του ΚΗΜΔΗΣ και οι πληρωμές της Διαύγειας για το 2026, χωρίς διπλομέτρηση και χωρίς ΦΠΑ. Τι αγοράστηκε, πώς ανατέθηκε και πότε υπογράφηκε. Ενημερώνεται κάθε μέρα έως το τέλος της χρονιάς."
           imageSrc={`${import.meta.env.BASE_URL}social/yearly-report-2026.svg`}
           imageAlt="Ραβδόγραμμα με τα δύο μέρη του συνόλου δαπανών του 2026: συμβάσεις και πληρωμές"
+          publishedAt="2026-10-21"
         />
       )}
       <AnalysisCard
@@ -22,14 +25,8 @@ export default function AnalysisPage() {
         description="WWF, Flame και FireWatch παρουσιάζουν μία ανάλυση της μεγαλύτερης πυρκαγιάς του 2026."
         imageSrc={`${import.meta.env.BASE_URL}social/west-attica-fire-2026.png`}
         imageAlt="Χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026"
+        publishedAt="2026-09-14"
         reloadDocument
-      />
-      <AnalysisCard
-        to="/analysis/statistics"
-        title="Στατιστική Ανάλυση"
-        description="Δείτε τη στατιστική εικόνα των δημόσιων συμβάσεων πυροπροστασίας από το 2024 έως σήμερα, με στοιχεία για τις δαπάνες, τις απευθείας αναθέσεις και τους αναδόχους."
-        imageSrc={`${import.meta.env.BASE_URL}social/statistical-analysis.png`}
-        imageAlt="Διάγραμμα της στατιστικής ανάλυσης συμβάσεων πυροπροστασίας"
       />
       <AnalysisCard
         to="/analysis/antinero-west-attica"
@@ -37,6 +34,15 @@ export default function AnalysisPage() {
         description="Περιηγηθείτε στο «δίκτυο» των συμβάσεων και εγγράφων από τη Διαύγεια για τα έργα AntiNERO στη Δυτική Αττική. Δείτε τους αναδόχους, τα ποσά και το ιστορικό κάθε σύμβασης από την ανάθεση έως την παραλαβή του έργου."
         imageSrc={`${import.meta.env.BASE_URL}social/antinero-west-attica.png`}
         imageAlt="Δίκτυο συμβάσεων και αποφάσεων AntiNERO στη Δυτική Αττική"
+        publishedAt="2026-09-12"
+      />
+      <AnalysisCard
+        to="/analysis/statistics"
+        title="Στατιστική Ανάλυση"
+        description="Δείτε τη στατιστική εικόνα των δημόσιων συμβάσεων πυροπροστασίας από το 2024 έως σήμερα, με στοιχεία για τις δαπάνες, τις απευθείας αναθέσεις και τους αναδόχους."
+        imageSrc={`${import.meta.env.BASE_URL}social/statistical-analysis.png`}
+        imageAlt="Διάγραμμα της στατιστικής ανάλυσης συμβάσεων πυροπροστασίας"
+        metadata="↻ Τα δεδομένα ενημερώνονται αυτόματα"
       />
     </main>
   )

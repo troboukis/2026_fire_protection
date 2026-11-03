@@ -1,9 +1,18 @@
 import { useEffect, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import ComponentTag from '../../../components/ComponentTag'
+import { fireSeasonReview } from './fireSeasonReview'
 import './AnalysisPromo.css'
 
 const slides = [
+  {
+    eyebrow: 'Αντιπυρική περίοδος 2026',
+    title: fireSeasonReview.title,
+    detail: fireSeasonReview.description,
+    to: fireSeasonReview.to,
+    visual: 'review',
+    reloadDocument: fireSeasonReview.reloadDocument,
+  },
   {
     eyebrow: 'AntiNERO / Δυτική Αττική',
     title: 'Πώς επηρέασαν τα AntiNERO έργα τη μεγάλη πυρκαγιά της Δυτικής Αττικής το 2026;',
@@ -33,7 +42,7 @@ const slides = [
 const SLIDE_DURATION_MS = 6000
 
 // Compact previews for the analysis slides.
-function PromoIllustration({ visual }: { visual: typeof slides[number]['visual'] }) {
+function PromoIllustration({ visual }: { visual: Exclude<typeof slides[number]['visual'], 'review'> }) {
   return (
     <svg className="analysis-promo__illustration" viewBox="0 0 560 140" aria-hidden="true" focusable="false">
       {visual === 'statistics' ? (
@@ -162,8 +171,8 @@ export default function AnalysisPromo() {
             <h2>{slide.title}</h2>
             <p>{slide.detail}</p>
           </div>
-          <div className="analysis-promo__visual">
-            <PromoIllustration visual={slide.visual} />
+          <div className={`analysis-promo__visual${slide.visual === 'review' ? ' analysis-promo__visual--text-only' : ''}`}>
+            {slide.visual !== 'review' && <PromoIllustration visual={slide.visual} />}
             <span className="analysis-promo__action">
               <span>Περισσότερα</span>
               <span className="analysis-promo__arrow" aria-hidden="true">↗</span>
