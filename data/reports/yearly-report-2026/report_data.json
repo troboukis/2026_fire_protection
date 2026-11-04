@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-03T16:23:39+00:00",
-  "database_now": "2026-11-03T16:23:34.556347+00:00",
-  "snapshot_at": "2026-11-03T18:23:34+02:00",
-  "snapshot_date": "2026-11-03",
-  "snapshot_time": "18:23",
+  "built_at": "2026-11-04T00:53:54+00:00",
+  "database_now": "2026-11-04T00:53:50.973464+00:00",
+  "snapshot_at": "2026-11-04T02:53:50+02:00",
+  "snapshot_date": "2026-11-04",
+  "snapshot_time": "02:53",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-03",
+  "period_end": "2026-11-04",
   "year_complete": false,
   "latest_contract_signed": "2026-11-02",
   "latest_payment_published": "2026-11-03",
@@ -742,8 +742,8 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1820,
-   "amount": 283671972.45,
+   "contracts": 1824,
+   "amount": 283724104.24,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -752,8 +752,8 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 821,
-     "amount": 20204514.16
+     "contracts": 824,
+     "amount": 20233645.95
     },
     {
      "group": "Περιφέρειες",
@@ -762,8 +762,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 258,
-     "amount": 12531657.84
+     "contracts": 259,
+     "amount": 12554657.84
     }
    ],
    "by_prevention": [
@@ -776,8 +776,8 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1153,
-     "amount": 208269056.93
+     "contracts": 1157,
+     "amount": 208321188.72
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
@@ -795,8 +795,8 @@
   },
   {
    "year": 2025,
-   "contracts": 2275,
-   "amount": 304363664.51,
+   "contracts": 2276,
+   "amount": 304371403.51,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -805,8 +805,8 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 1039,
-     "amount": 36093770.13
+     "contracts": 1040,
+     "amount": 36101509.13
     },
     {
      "group": "Περιφέρειες",
@@ -829,8 +829,8 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1265,
-     "amount": 219945567.29
+     "contracts": 1266,
+     "amount": 219953306.29
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
