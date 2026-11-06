@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-05T16:21:37+00:00",
-  "database_now": "2026-11-05T16:21:32.723239+00:00",
-  "snapshot_at": "2026-11-05T18:21:31+02:00",
-  "snapshot_date": "2026-11-05",
-  "snapshot_time": "18:21",
+  "built_at": "2026-11-06T01:08:18+00:00",
+  "database_now": "2026-11-06T01:08:08.403733+00:00",
+  "snapshot_at": "2026-11-06T03:08:07+02:00",
+  "snapshot_date": "2026-11-06",
+  "snapshot_time": "03:08",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-05",
+  "period_end": "2026-11-06",
   "year_complete": false,
   "latest_contract_signed": "2026-11-04",
   "latest_payment_published": "2026-11-05",
@@ -742,8 +742,8 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1829,
-   "amount": 283925222.53,
+   "contracts": 1837,
+   "amount": 284319753.82,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -752,13 +752,13 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 826,
-     "amount": 20388025.05
+     "contracts": 831,
+     "amount": 20730565.37
     },
     {
      "group": "Περιφέρειες",
-     "contracts": 422,
-     "amount": 13432073.03
+     "contracts": 425,
+     "amount": 13484064.0
     },
     {
      "group": "Λοιποί φορείς",
@@ -776,27 +776,27 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1161,
-     "amount": 208518022.01
+     "contracts": 1166,
+     "amount": 208619007.0
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 329,
-     "amount": 47463382.43
+     "contracts": 331,
+     "amount": 47621202.43
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
      "code": null,
-     "contracts": 57,
-     "amount": 2498806.18
+     "contracts": 58,
+     "amount": 2634532.48
     }
    ]
   },
   {
    "year": 2025,
-   "contracts": 2280,
-   "amount": 304404841.51,
+   "contracts": 2284,
+   "amount": 304417525.51,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -805,8 +805,8 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 1043,
-     "amount": 36127147.13
+     "contracts": 1044,
+     "amount": 36132547.13
     },
     {
      "group": "Περιφέρειες",
@@ -815,8 +815,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 294,
-     "amount": 50497011.86
+     "contracts": 297,
+     "amount": 50504295.86
     }
    ],
    "by_prevention": [
@@ -829,14 +829,14 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1269,
-     "amount": 219978944.29
+     "contracts": 1270,
+     "amount": 219982544.29
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 419,
-     "amount": 35774152.81
+     "contracts": 422,
+     "amount": 35783236.81
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
@@ -978,11 +978,11 @@
    },
    {
     "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
-    "contracts_previous": 13,
+    "contracts_previous": 14,
     "contracts_current": 35,
-    "amount_previous": 1386192.84,
+    "amount_previous": 1389792.84,
     "amount_current": 2549784.45,
-    "change": 1163591.61
+    "change": 1159991.61
    }
   ]
  },
