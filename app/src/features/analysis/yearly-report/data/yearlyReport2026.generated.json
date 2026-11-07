@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-06T16:15:26+00:00",
-  "database_now": "2026-11-06T16:15:22.812803+00:00",
-  "snapshot_at": "2026-11-06T18:15:22+02:00",
-  "snapshot_date": "2026-11-06",
-  "snapshot_time": "18:15",
+  "built_at": "2026-11-07T00:20:43+00:00",
+  "database_now": "2026-11-07T00:20:29.927545+00:00",
+  "snapshot_at": "2026-11-07T02:20:29+02:00",
+  "snapshot_date": "2026-11-07",
+  "snapshot_time": "02:20",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-06",
+  "period_end": "2026-11-07",
   "year_complete": false,
   "latest_contract_signed": "2026-11-05",
   "latest_payment_published": "2026-11-06",
@@ -742,8 +742,8 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1837,
-   "amount": 284319753.82,
+   "contracts": 1840,
+   "amount": 284555721.34,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -752,13 +752,13 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 831,
-     "amount": 20730565.37
+     "contracts": 833,
+     "amount": 20752065.37
     },
     {
      "group": "Περιφέρειες",
-     "contracts": 425,
-     "amount": 13484064.0
+     "contracts": 426,
+     "amount": 13698531.52
     },
     {
      "group": "Λοιποί φορείς",
@@ -776,37 +776,37 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1166,
-     "amount": 208619007.0
+     "contracts": 1167,
+     "amount": 208630507.0
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 330,
-     "amount": 30775134.96
+     "contracts": 331,
+     "amount": 30989602.48
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
      "code": null,
-     "contracts": 59,
-     "amount": 19480599.95
+     "contracts": 60,
+     "amount": 19490599.95
     }
    ]
   },
   {
    "year": 2025,
-   "contracts": 2284,
-   "amount": 304417525.51,
+   "contracts": 2288,
+   "amount": 304445890.07,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 380,
-     "amount": 206660043.11
+     "contracts": 382,
+     "amount": 206672717.67
     },
     {
      "group": "Δήμοι",
-     "contracts": 1044,
-     "amount": 36132547.13
+     "contracts": 1045,
+     "amount": 36135037.13
     },
     {
      "group": "Περιφέρειες",
@@ -815,28 +815,28 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 297,
-     "amount": 50504295.86
+     "contracts": 298,
+     "amount": 50517495.86
     }
    ],
    "by_prevention": [
     {
      "class": "Καταστολή",
      "code": 0,
-     "contracts": 517,
-     "amount": 41630256.94
+     "contracts": 518,
+     "amount": 41632746.94
     },
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1270,
-     "amount": 219982544.29
+     "contracts": 1271,
+     "amount": 219995744.29
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 422,
-     "amount": 35783236.81
+     "contracts": 424,
+     "amount": 35795911.37
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
@@ -904,11 +904,11 @@
   "largest_decreases": [
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
-    "contracts_previous": 88,
+    "contracts_previous": 89,
     "contracts_current": 81,
-    "amount_previous": 153422618.23,
+    "amount_previous": 153429442.79,
     "amount_current": 67225476.01,
-    "change": -86197142.22
+    "change": -86203966.78
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
