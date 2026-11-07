@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/tv/564573238/to-deltio-ton-media-maestro-in-blue-sto-netflix/",
-      "title": "Το δελτίο των media: «Maestro in blue» στο Netflix",
-      "normalized_title": "ΤΟ ΔΕΛΤΙΟ ΤΩΝ MEDIA: «MAESTRO IN BLUE» ΣΤΟ NETFLIX",
+      "url": "https://www.kathimerini.gr/economy/564573385/tha-antexoyn-oi-epicheiriseis/",
+      "title": "Θα αντέξουν οι επιχειρήσεις;",
+      "normalized_title": "ΘΑ ΑΝΤΕΞΟΥΝ ΟΙ ΕΠΙΧΕΙΡΗΣΕΙΣ;",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/tv/564573238/to-deltio-ton-media-maestro-in-blue-sto-netflix/"
+        "https://www.kathimerini.gr/economy/564573385/tha-antexoyn-oi-epicheiriseis/",
+        "https://www.kathimerini.gr/world/564573796/synelifthi-enoplos-konta-ston-leyko-oiko-ypostirixe-oti-fones-sto-kefali-toy-toy-elegan-na-skotosei-ton-tramp/"
       ],
-      "seen_at_utc": "2026-11-07T10:29:53.749304+00:00"
+      "seen_at_utc": "2026-11-07T10:51:17.982931+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1324,24 +1325,26 @@
       "seen_at_utc": "2026-11-07T10:19:33.121967+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1505168/marinakis-se-tsipra-tin-epomeni-fora-na-sygkrinete-tin-ellada-poy-paradosate-to-2019-me-ti-simerini/",
-      "title": "Μαρινάκης σε Τσίπρα: «Την επόμενη φορά να συγκρίνετε την Ελλάδα που παραδώσατε το 2019 με τη σημερινή»",
-      "normalized_title": "ΜΑΡΙΝΑΚΗΣ ΣΕ ΤΣΙΠΡΑ: «ΤΗΝ ΕΠΟΜΕΝΗ ΦΟΡΑ ΝΑ ΣΥΓΚΡΙΝΕΤΕ ΤΗΝ ΕΛΛΑΔΑ ΠΟΥ ΠΑΡΑΔΩΣΑΤΕ ΤΟ 2019 ΜΕ ΤΗ ΣΗΜΕΡΙΝΗ»",
+      "url": "https://www.efsyn.gr/kosmos/1505156/apeiles-gia-vomves-se-ptiseis-enteinetai-to-fainomeno-se-oli-tin-eyropi-ti-einai-to-plausible-deniability/",
+      "title": "Απειλές για βόμβες σε πτήσεις: Εντείνεται το φαινόμενο σε όλη την Ευρώπη – Τι είναι το «plausible deniability»",
+      "normalized_title": "ΑΠΕΙΛΕΣ ΓΙΑ ΒΟΜΒΕΣ ΣΕ ΠΤΗΣΕΙΣ: ΕΝΤΕΙΝΕΤΑΙ ΤΟ ΦΑΙΝΟΜΕΝΟ ΣΕ ΟΛΗ ΤΗΝ ΕΥΡΩΠΗ – ΤΙ ΕΙΝΑΙ ΤΟ «PLAUSIBLE DENIABILITY»",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1505168/marinakis-se-tsipra-tin-epomeni-fora-na-sygkrinete-tin-ellada-poy-paradosate-to-2019-me-ti-simerini/",
-        "https://www.efsyn.gr/politiki/1505160/pasok-i-dimokratia-den-tromokrateitai-apo-toys-fasistes/"
+        "https://www.efsyn.gr/kosmos/1505156/apeiles-gia-vomves-se-ptiseis-enteinetai-to-fainomeno-se-oli-tin-eyropi-ti-einai-to-plausible-deniability/",
+        "https://www.efsyn.gr/media/1505173/min-hasete-tin-ef-syn-savvatokyriakoy-ereyna-gia-ti-listeia-ton-servicers-ki-ena-sygklonistiko-antipolemiko-mythistorima/"
       ],
-      "seen_at_utc": "2026-11-07T10:29:53.749394+00:00"
+      "seen_at_utc": "2026-11-07T10:51:17.983011+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/07/greece/xryses-apates-se-varos-ilikiomenon-paristanan-logistes-kai-ypallilous-tou-deddie-pano-apo-80-000-eyro-i-leia/",
-      "title": "«Χρυσές» απάτες σε βάρος ηλικιωμένων: Παρίσταναν λογιστές και υπαλλήλους του ΔΕΔΔΗΕ – Πάνω από 80.000 ευρώ η λεία",
-      "normalized_title": "«ΧΡΥΣΕΣ» ΑΠΑΤΕΣ ΣΕ ΒΑΡΟΣ ΗΛΙΚΙΩΜΕΝΩΝ: ΠΑΡΙΣΤΑΝΑΝ ΛΟΓΙΣΤΕΣ ΚΑΙ ΥΠΑΛΛΗΛΟΥΣ ΤΟΥ ΔΕΔΔΗΕ – ΠΑΝΩ ΑΠΟ 80.000 ΕΥΡΩ Η ΛΕΙΑ",
+      "url": "https://www.in.gr/2026/11/07/greece/xania-anatropi-ntalikas-konta-sto-aerodromio-o-odigos-egklovistike-stin-kampina/",
+      "title": "Ανατροπή νταλίκας κοντά στο αεροδρόμιο Χανιών - Ο οδηγός εγκλωβίστηκε στην καμπίνα",
+      "normalized_title": "ΑΝΑΤΡΟΠΗ ΝΤΑΛΙΚΑΣ ΚΟΝΤΑ ΣΤΟ ΑΕΡΟΔΡΟΜΙΟ ΧΑΝΙΩΝ - Ο ΟΔΗΓΟΣ ΕΓΚΛΩΒΙΣΤΗΚΕ ΣΤΗΝ ΚΑΜΠΙΝΑ",
       "seen_urls": [
-        "https://www.in.gr/2026/11/07/greece/xryses-apates-se-varos-ilikiomenon-paristanan-logistes-kai-ypallilous-tou-deddie-pano-apo-80-000-eyro-i-leia/"
+        "https://www.in.gr/2026/11/07/greece/xania-anatropi-ntalikas-konta-sto-aerodromio-o-odigos-egklovistike-stin-kampina/",
+        "https://www.in.gr/2026/11/07/politics/politiki-grammateia/tsoukalas-to-arthro-23-aposyrthike-i-prothesi-gia-eksontosi-ton-daneiolipton-paramenei/",
+        "https://www.in.gr/2026/11/07/greece/kykloma-mamouth-sti-nyxta-estinan-etaireies-fantasmata-me-axyranthropous-apo-nosokomeia-sta-203-ekat-eyro-i-zimia/"
       ],
-      "seen_at_utc": "2026-11-07T10:29:53.749355+00:00"
+      "seen_at_utc": "2026-11-07T10:51:17.982977+00:00"
     }
   },
-  "updated_at_utc": "2026-11-07T10:29:53.749480+00:00"
+  "updated_at_utc": "2026-11-07T10:51:17.983080+00:00"
 }
