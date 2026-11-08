@@ -1,13 +1,15 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/politics/government/564575836/kyr-mitsotakis-ellada-kai-kypros-einai-oi-chores-poy-adeiodotoyn-tis-ereynes-gia-to-kalodio/",
-      "title": "Κυρ. Μητσοτάκης: Ελλάδα και Κύπρος είναι οι χώρες που αδειοδοτούν τις έρευνες για το καλώδιο",
-      "normalized_title": "ΚΥΡ. ΜΗΤΣΟΤΑΚΗΣ: ΕΛΛΑΔΑ ΚΑΙ ΚΥΠΡΟΣ ΕΙΝΑΙ ΟΙ ΧΩΡΕΣ ΠΟΥ ΑΔΕΙΟΔΟΤΟΥΝ ΤΙΣ ΕΡΕΥΝΕΣ ΓΙΑ ΤΟ ΚΑΛΩΔΙΟ",
+      "url": "https://www.kathimerini.gr/society/astynomiko/564575845/thessaloniki-epicheirisi-skoypa-kata-tis-paravatikotitas-anilikon-ston-lagkada/",
+      "title": "Θεσσαλονίκη: Επιχείρηση-σκούπα κατά της παραβατικότητας ανηλίκων στον Λαγκαδά",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΕΠΙΧΕΙΡΗΣΗ-ΣΚΟΥΠΑ ΚΑΤΑ ΤΗΣ ΠΑΡΑΒΑΤΙΚΟΤΗΤΑΣ ΑΝΗΛΙΚΩΝ ΣΤΟΝ ΛΑΓΚΑΔΑ",
       "seen_urls": [
-        "https://www.kathimerini.gr/politics/government/564575836/kyr-mitsotakis-ellada-kai-kypros-einai-oi-chores-poy-adeiodotoyn-tis-ereynes-gia-to-kalodio/"
+        "https://www.kathimerini.gr/society/astynomiko/564575845/thessaloniki-epicheirisi-skoypa-kata-tis-paravatikotitas-anilikon-ston-lagkada/",
+        "https://www.kathimerini.gr/visual/infographics/564573430/ta-enoikia-ayxithikan-36-2-se-pente-chronia/",
+        "https://www.kathimerini.gr/world/564575848/to-thriler-tis-schesi-choyangk-me-kineza-kataskopo-sti-skia-tis-koyrsas-gia-tin-ai/"
       ],
-      "seen_at_utc": "2026-11-08T10:30:08.050298+00:00"
+      "seen_at_utc": "2026-11-08T10:51:20.228474+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1307,24 +1309,25 @@
       "seen_at_utc": "2026-11-08T10:19:10.433707+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1505475/pasok-o-mitsotakis-anti-na-erthei-sti-voyli-na-apologithei-gia-to-idiotiko-hreos-protima-tis-anartiseis/",
-      "title": "ΠΑΣΟΚ: Ο Μητσοτάκης αντί να έρθει στη Βουλή να απολογηθεί για το ιδιωτικό χρέος, προτιμά τις αναρτήσεις",
-      "normalized_title": "ΠΑΣΟΚ: Ο ΜΗΤΣΟΤΑΚΗΣ ΑΝΤΙ ΝΑ ΕΡΘΕΙ ΣΤΗ ΒΟΥΛΗ ΝΑ ΑΠΟΛΟΓΗΘΕΙ ΓΙΑ ΤΟ ΙΔΙΩΤΙΚΟ ΧΡΕΟΣ, ΠΡΟΤΙΜΑ ΤΙΣ ΑΝΑΡΤΗΣΕΙΣ",
+      "url": "https://www.efsyn.gr/ellada/1505479/thessaloniki-pos-to-kykloma-me-etaireies-fantasmata-stratologoyse-ahyranthropoys-i-apokalypsi-meso-email-sto-maximoy/",
+      "title": "Θεσσαλονίκη: Πώς το κύκλωμα με εταιρείες «φαντάσματα» στρατολογούσε αχυρανθρώπους – Η αποκάλυψη μέσω email στο Μαξίμου",
+      "normalized_title": "ΘΕΣΣΑΛΟΝΙΚΗ: ΠΩΣ ΤΟ ΚΥΚΛΩΜΑ ΜΕ ΕΤΑΙΡΕΙΕΣ «ΦΑΝΤΑΣΜΑΤΑ» ΣΤΡΑΤΟΛΟΓΟΥΣΕ ΑΧΥΡΑΝΘΡΩΠΟΥΣ – Η ΑΠΟΚΑΛΥΨΗ ΜΕΣΩ EMAIL ΣΤΟ ΜΑΞΙΜΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1505475/pasok-o-mitsotakis-anti-na-erthei-sti-voyli-na-apologithei-gia-to-idiotiko-hreos-protima-tis-anartiseis/"
+        "https://www.efsyn.gr/ellada/1505479/thessaloniki-pos-to-kykloma-me-etaireies-fantasmata-stratologoyse-ahyranthropoys-i-apokalypsi-meso-email-sto-maximoy/"
       ],
-      "seen_at_utc": "2026-11-08T10:30:08.050387+00:00"
+      "seen_at_utc": "2026-11-08T10:51:20.228555+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/matchcenter/6140256/",
-      "title": "LIVE: Ολυμπιακός Β’ – Ελλάς Σύρου",
-      "normalized_title": "LIVE: ΟΛΥΜΠΙΑΚΟΣ Β’ – ΕΛΛΑΣ ΣΥΡΟΥ",
+      "url": "https://www.in.gr/2026/11/08/world/nteina-gouait-o-tramp-thelei-ton-epikefalis-tou-ufc-gia-ekprosopo-typou-tou-leykou-oikou-i-apantisi-tou/",
+      "title": "Ντέινα Γουάιτ: Ο Τραμπ θέλει τον επικεφαλής του UFC για εκπρόσωπο Τύπου του Λευκού Οίκου – Η απάντησή του",
+      "normalized_title": "ΝΤΕΙΝΑ ΓΟΥΑΙΤ: Ο ΤΡΑΜΠ ΘΕΛΕΙ ΤΟΝ ΕΠΙΚΕΦΑΛΗΣ ΤΟΥ UFC ΓΙΑ ΕΚΠΡΟΣΩΠΟ ΤΥΠΟΥ ΤΟΥ ΛΕΥΚΟΥ ΟΙΚΟΥ – Η ΑΠΑΝΤΗΣΗ ΤΟΥ",
       "seen_urls": [
-        "https://www.in.gr/matchcenter/6140256/",
-        "https://www.in.gr/2026/11/08/economy/agro-in/lesvos-sygkentrosi-ktinotrofon-sti-diarkeia-tis-parelasis-gia-tin-apeleytherosi-tis-mytilinis/"
+        "https://www.in.gr/2026/11/08/world/nteina-gouait-o-tramp-thelei-ton-epikefalis-tou-ufc-gia-ekprosopo-typou-tou-leykou-oikou-i-apantisi-tou/",
+        "https://www.in.gr/2026/11/08/economy/diethnis-oikonomia/plisiazei-to-telos-tis-kyriarxias-ton-kryptonomismaton/",
+        "https://www.in.gr/2026/11/08/life/music/kanenas-disekatommyriouxos-den-exei-dikaioma-na-logokrinei-oi-u2-gia-macklemore-kai-ent-siran/"
       ],
-      "seen_at_utc": "2026-11-08T10:30:08.050337+00:00"
+      "seen_at_utc": "2026-11-08T10:51:20.228522+00:00"
     }
   },
-  "updated_at_utc": "2026-11-08T10:30:08.050455+00:00"
+  "updated_at_utc": "2026-11-08T10:51:20.228618+00:00"
 }
