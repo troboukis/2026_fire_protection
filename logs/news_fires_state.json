@@ -1,13 +1,21 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/opinion/564574186/ti-den-allazei-gia-ta-ellinika-symferonta/",
-      "title": "Τι (δεν) αλλάζει για τα ελληνικά συμφέροντα",
-      "normalized_title": "ΤΙ (ΔΕΝ) ΑΛΛΑΖΕΙ ΓΙΑ ΤΑ ΕΛΛΗΝΙΚΑ ΣΥΜΦΕΡΟΝΤΑ",
+      "url": "https://www.kathimerini.gr/world/564576997/i-techerani-yperamynetai-tis-protasis-tis-gia-eirineytikes-synomilies-kathos-oi-ipa-aperripsan-oroys-tis/",
+      "title": "Η Τεχεράνη υπεραμύνεται της πρότασής της για ειρηνευτικές συνομιλίες, καθώς οι ΗΠΑ απέρριψαν όρους της",
+      "normalized_title": "Η ΤΕΧΕΡΑΝΗ ΥΠΕΡΑΜΥΝΕΤΑΙ ΤΗΣ ΠΡΟΤΑΣΗΣ ΤΗΣ ΓΙΑ ΕΙΡΗΝΕΥΤΙΚΕΣ ΣΥΝΟΜΙΛΙΕΣ, ΚΑΘΩΣ ΟΙ ΗΠΑ ΑΠΕΡΡΙΨΑΝ ΟΡΟΥΣ ΤΗΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/opinion/564574186/ti-den-allazei-gia-ta-ellinika-symferonta/"
+        "https://www.kathimerini.gr/world/564576997/i-techerani-yperamynetai-tis-protasis-tis-gia-eirineytikes-synomilies-kathos-oi-ipa-aperripsan-oroys-tis/",
+        "https://www.kathimerini.gr/world/564577003/erntogan-metefera-ston-tramp-tis-anisychies-tis-toyrkias-gia-to-iran/",
+        "https://www.kathimerini.gr/columns/564576985/to-stayrodromi-zois-toy-tzamal-moysiala/",
+        "https://www.kathimerini.gr/world/564576961/i-gi-thermainetai-me-oloena-tachyteroys-rythmoys-kampanaki-apo-ton-oie-enopsei-tis-cop31/",
+        "https://www.kathimerini.gr/world/564576913/to-kyma-diadiloseon-tis-genias-z-exaplonetai-kai-allazei-to-politiko-skiniko/",
+        "https://www.kathimerini.gr/world/564576922/oykrania-treis-nekroi-apo-rosiki-epithesi-stin-odisso/",
+        "https://www.kathimerini.gr/world/564576751/oykraniko-to-tilefonima-poy-anedeixe-to-vathy-rigma-ton-eyropaion/",
+        "https://www.kathimerini.gr/society/564576940/aade-anazitoyntai-dyo-kentrika-prosopa-tis-epicheirisis-achyranthropoi/",
+        "https://www.kathimerini.gr/economy/564576952/epidoma-thermansis-anoigei-to-mythermansi-gia-eos-1-560-eyro-ta-sos-tis-aitisis/"
       ],
-      "seen_at_utc": "2026-11-09T10:30:04.298116+00:00"
+      "seen_at_utc": "2026-11-09T10:51:28.087163+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1303,25 +1311,24 @@
       "seen_at_utc": "2026-11-09T10:19:59.476257+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/stiles/1505885/o-vlahodimarhos-toy-maximoy/",
-      "title": "Ο βλαχοδήμαρχος του Μαξίμου",
-      "normalized_title": "Ο ΒΛΑΧΟΔΗΜΑΡΧΟΣ ΤΟΥ ΜΑΞΙΜΟΥ",
+      "url": "https://www.efsyn.gr/kosmos/1506014/iran-i-pio-logiki-sto-trapezi-i-protasi-mas-gia-tis-synomilies-me-ipa-roympio-exorgistikoi-kai-adianoitoi-oroi/",
+      "title": "Ιράν: «Η πιο λογική στο τραπέζι η πρότασή μας για τις συνομιλίες με ΗΠΑ» – Ρούμπιο: «Εξοργιστικοί και αδιανόητοι όροι»",
+      "normalized_title": "ΙΡΑΝ: «Η ΠΙΟ ΛΟΓΙΚΗ ΣΤΟ ΤΡΑΠΕΖΙ Η ΠΡΟΤΑΣΗ ΜΑΣ ΓΙΑ ΤΙΣ ΣΥΝΟΜΙΛΙΕΣ ΜΕ ΗΠΑ» – ΡΟΥΜΠΙΟ: «ΕΞΟΡΓΙΣΤΙΚΟΙ ΚΑΙ ΑΔΙΑΝΟΗΤΟΙ ΟΡΟΙ»",
       "seen_urls": [
-        "https://www.efsyn.gr/stiles/1505885/o-vlahodimarhos-toy-maximoy/"
+        "https://www.efsyn.gr/kosmos/1506014/iran-i-pio-logiki-sto-trapezi-i-protasi-mas-gia-tis-synomilies-me-ipa-roympio-exorgistikoi-kai-adianoitoi-oroi/",
+        "https://www.efsyn.gr/ellada/1505989/kykloma-forodiafygis-sti-thessaloniki-anazitoyntai-dyo-epiheirimaties-minysi-pitsili-se-istoselida/"
       ],
-      "seen_at_utc": "2026-11-09T10:30:04.298206+00:00"
+      "seen_at_utc": "2026-11-09T10:51:28.087244+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/09/politics/diplomatia/kalodio-apopleei-to-abeille-marengo-i-galliki-enimerosi-stin-agkyra-kai-i-paremvasi-ton-ipa/",
-      "title": "Καλώδιο ηλεκτρικής διασύνδεσης: Αποπλέει το «Abeille Marengo» – Η γαλλική ενημέρωση στην Άγκυρα και η παρέμβαση των ΗΠΑ",
-      "normalized_title": "ΚΑΛΩΔΙΟ ΗΛΕΚΤΡΙΚΗΣ ΔΙΑΣΥΝΔΕΣΗΣ: ΑΠΟΠΛΕΕΙ ΤΟ «ABEILLE MARENGO» – Η ΓΑΛΛΙΚΗ ΕΝΗΜΕΡΩΣΗ ΣΤΗΝ ΑΓΚΥΡΑ ΚΑΙ Η ΠΑΡΕΜΒΑΣΗ ΤΩΝ ΗΠΑ",
+      "url": "https://www.in.gr/2026/11/09/politics/politiki-grammateia/tsoukalas-gnorize-i-kyvernisi-oti-i-gallia-tha-proxorisei-se-rimatiki-diakoinosi-itan-i-kyvernisi-enimeri/",
+      "title": "Τσουκαλάς: Γνώριζε η κυβέρνηση ότι η Γαλλία θα προχωρήσει σε ρηματική διακοίνωση; Ήταν η κυβέρνηση ενήμερη;",
+      "normalized_title": "ΤΣΟΥΚΑΛΑΣ: ΓΝΩΡΙΖΕ Η ΚΥΒΕΡΝΗΣΗ ΟΤΙ Η ΓΑΛΛΙΑ ΘΑ ΠΡΟΧΩΡΗΣΕΙ ΣΕ ΡΗΜΑΤΙΚΗ ΔΙΑΚΟΙΝΩΣΗ; ΗΤΑΝ Η ΚΥΒΕΡΝΗΣΗ ΕΝΗΜΕΡΗ;",
       "seen_urls": [
-        "https://www.in.gr/2026/11/09/politics/diplomatia/kalodio-apopleei-to-abeille-marengo-i-galliki-enimerosi-stin-agkyra-kai-i-paremvasi-ton-ipa/",
-        "https://www.in.gr/2026/11/09/politics/politiki-grammateia/i-rimatiki-diakoinosi-tis-gallias-stin-tourkia-den-paragei-ennoma-apotelesmata-leei-o-prokopis-paylopoulos/",
-        "https://www.in.gr/2026/11/09/go-fun/fizz/o-tzastin-timperleik-kai-i-anipsia-tou-me-syndromo-ntaoun-stin-pasarela-perifanoi-gia-ti-diafora-tis/"
+        "https://www.in.gr/2026/11/09/politics/politiki-grammateia/tsoukalas-gnorize-i-kyvernisi-oti-i-gallia-tha-proxorisei-se-rimatiki-diakoinosi-itan-i-kyvernisi-enimeri/"
       ],
-      "seen_at_utc": "2026-11-09T10:30:04.298175+00:00"
+      "seen_at_utc": "2026-11-09T10:51:28.087210+00:00"
     }
   },
-  "updated_at_utc": "2026-11-09T10:30:04.298271+00:00"
+  "updated_at_utc": "2026-11-09T10:51:28.087298+00:00"
 }
