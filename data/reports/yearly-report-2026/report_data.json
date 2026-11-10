@@ -1,49 +1,49 @@
 {
  "meta": {
-  "built_at": "2026-11-10T02:55:44+00:00",
-  "database_now": "2026-11-10T02:55:40.217164+00:00",
-  "snapshot_at": "2026-11-10T04:55:39+02:00",
+  "built_at": "2026-11-10T10:23:05+00:00",
+  "database_now": "2026-11-10T10:22:59.959206+00:00",
+  "snapshot_at": "2026-11-10T12:22:59+02:00",
   "snapshot_date": "2026-11-10",
-  "snapshot_time": "04:55",
+  "snapshot_time": "12:22",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-11-10",
   "year_complete": false,
-  "latest_contract_signed": "2026-11-06",
-  "latest_payment_published": "2026-11-09",
+  "latest_contract_signed": "2026-11-09",
+  "latest_payment_published": "2026-11-10",
   "vat_rate": 0.24
  },
  "total": {
-  "contracts": 2308,
-  "contracts_amount": 145409062.88,
-  "payments": 2914,
-  "payments_amount": 36185972.04,
-  "amount": 181595034.92
+  "contracts": 2316,
+  "contracts_amount": 145561154.52,
+  "payments": 2927,
+  "payments_amount": 36345578.0,
+  "amount": 181906732.52
  },
  "contracts": {
-  "contracts": 2308,
-  "amount": 145409062.88,
+  "contracts": 2316,
+  "amount": 145561154.52,
   "contract_types": [
    {
     "label": "Υπηρεσίες",
-    "count": 1790,
-    "amount": 53271186.31,
-    "share_amount_pct": 36.64,
-    "share_count_pct": 77.56
+    "count": 1793,
+    "amount": 53360386.31,
+    "share_amount_pct": 36.66,
+    "share_count_pct": 77.42
    },
    {
     "label": "Προμήθειες",
-    "count": 397,
-    "amount": 18341443.52,
-    "share_amount_pct": 12.61,
-    "share_count_pct": 17.2
+    "count": 402,
+    "amount": 18404335.16,
+    "share_amount_pct": 12.64,
+    "share_count_pct": 17.36
    },
    {
     "label": "Έργα",
     "count": 94,
     "amount": 72748590.14,
-    "share_amount_pct": 50.03,
-    "share_count_pct": 4.07
+    "share_amount_pct": 49.98,
+    "share_count_pct": 4.06
    },
    {
     "label": "Λοιπές",
@@ -56,51 +56,51 @@
   "procedures": [
    {
     "label": "Απευθείας Ανάθεση",
-    "count": 1684,
-    "amount": 88224135.19,
+    "count": 1690,
+    "amount": 88316826.83,
     "share_amount_pct": 60.67,
-    "share_count_pct": 72.96
+    "share_count_pct": 72.97
    },
    {
     "label": "Ανοιχτή Διαδικασία",
     "count": 143,
     "amount": 34893075.5,
-    "share_amount_pct": 24.0,
-    "share_count_pct": 6.2
+    "share_amount_pct": 23.97,
+    "share_count_pct": 6.17
    },
    {
     "label": "Διαπραγμάτευση",
     "count": 440,
     "amount": 13717275.81,
-    "share_amount_pct": 9.43,
-    "share_count_pct": 19.06
+    "share_amount_pct": 9.42,
+    "share_count_pct": 19.0
    },
    {
     "label": "Άλλη",
-    "count": 41,
-    "amount": 8574576.38,
-    "share_amount_pct": 5.9,
-    "share_count_pct": 1.78
+    "count": 43,
+    "amount": 8633976.38,
+    "share_amount_pct": 5.93,
+    "share_count_pct": 1.86
    }
   ],
   "top_authorities": [
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
-    "contracts": 82,
-    "amount": 67255115.84,
-    "share_pct": 46.25
+    "contracts": 84,
+    "amount": 67314515.84,
+    "share_pct": 46.24
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ",
-    "contracts": 192,
-    "amount": 11663762.09,
+    "contracts": 193,
+    "amount": 11669212.09,
     "share_pct": 8.02
    },
    {
     "authority": "ΠΕΡΙΦΕΡΕΙΑ ΑΤΤΙΚΗΣ",
     "contracts": 362,
     "amount": 7312327.51,
-    "share_pct": 5.03
+    "share_pct": 5.02
    },
    {
     "authority": "ΟΡΓΑΝΙΣΜΟΣ ΣΙΔΗΡΟΔΡΟΜΩΝ ΕΛΛΑΔΑΣ ΟΣΕ",
@@ -110,9 +110,9 @@
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
-    "contracts": 87,
-    "amount": 5010398.89,
-    "share_pct": 3.45
+    "contracts": 88,
+    "amount": 5039967.53,
+    "share_pct": 3.46
    },
    {
     "authority": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
@@ -124,7 +124,7 @@
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
     "contracts": 89,
     "amount": 3963855.73,
-    "share_pct": 2.73
+    "share_pct": 2.72
    },
    {
     "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
@@ -137,74 +137,74 @@
    {
     "cpv": "Υπηρεσίες εκκαθάρισης από αγριόχορτα",
     "contracts": 606,
-    "share_contracts_pct": 26.26
+    "share_contracts_pct": 26.17
    },
    {
     "cpv": "Οχήματα για τις υπηρεσίες εκτάκτου ανάγκης",
     "contracts": 363,
-    "share_contracts_pct": 15.73
+    "share_contracts_pct": 15.67
    },
    {
     "cpv": "Εργασίες πυροπροστασίας",
     "contracts": 245,
-    "share_contracts_pct": 10.62
+    "share_contracts_pct": 10.58
    },
    {
     "cpv": "Πυροσβεστικός εξοπλισμός",
-    "contracts": 222,
-    "share_contracts_pct": 9.62
+    "contracts": 227,
+    "share_contracts_pct": 9.8
    },
    {
     "cpv": "Κλάδεμα δένδρων και θάμνων",
     "contracts": 208,
-    "share_contracts_pct": 9.01
+    "share_contracts_pct": 8.98
    }
   ],
   "by_group": [
    {
     "group": "Υπουργεία",
-    "contracts": 499,
-    "amount": 89614439.12
+    "contracts": 503,
+    "amount": 89708857.76
    },
    {
     "group": "Δήμοι",
-    "contracts": 1004,
-    "amount": 24415127.38
+    "contracts": 1006,
+    "amount": 24429248.38
    },
    {
     "group": "Περιφέρειες",
-    "contracts": 484,
-    "amount": 11190292.07
+    "contracts": 485,
+    "amount": 11220092.07
    },
    {
     "group": "Λοιποί φορείς",
-    "contracts": 321,
-    "amount": 20189204.31
+    "contracts": 322,
+    "amount": 20202956.31
    }
   ],
   "direct_awards": {
-   "count": 1684,
-   "amount": 88224135.19,
+   "count": 1690,
+   "amount": 88316826.83,
    "median": 12096.18,
-   "up_to_30k": 1629,
-   "from_25k_to_30k": 328,
+   "up_to_30k": 1635,
+   "from_25k_to_30k": 330,
    "from_20k_to_25k": 111,
    "above_30k": 55,
    "bins": [
     {
      "lo": 0,
      "hi": 5000,
-     "count": 374
+     "count": 375
     },
     {
      "lo": 5000,
      "hi": 10000,
-     "count": 354
+     "count": 355
     },
     {
      "lo": 10000,
      "hi": 15000,
-     "count": 271
+     "count": 273
     },
     {
      "lo": 15000,
@@ -219,7 +219,7 @@
     {
      "lo": 25000,
      "hi": 30000,
-     "count": 328
+     "count": 330
     },
     {
      "lo": 30000,
@@ -848,28 +848,28 @@
   },
   {
    "year": 2026,
-   "contracts": 2308,
-   "amount": 145409062.88,
+   "contracts": 2316,
+   "amount": 145561154.52,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 499,
-     "amount": 89614439.12
+     "contracts": 503,
+     "amount": 89708857.76
     },
     {
      "group": "Δήμοι",
-     "contracts": 1004,
-     "amount": 24415127.38
+     "contracts": 1006,
+     "amount": 24429248.38
     },
     {
      "group": "Περιφέρειες",
-     "contracts": 484,
-     "amount": 11190292.07
+     "contracts": 485,
+     "amount": 11220092.07
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 321,
-     "amount": 20189204.31
+     "contracts": 322,
+     "amount": 20202956.31
     }
    ],
    "by_prevention": [
@@ -894,8 +894,8 @@
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
      "code": null,
-     "contracts": 320,
-     "amount": 7445606.66
+     "contracts": 328,
+     "amount": 7597698.3
     }
    ]
   }
@@ -905,18 +905,18 @@
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
     "contracts_previous": 89,
-    "contracts_current": 82,
+    "contracts_current": 84,
     "amount_previous": 153429442.79,
-    "amount_current": 67255115.84,
-    "change": -86174326.95
+    "amount_current": 67314515.84,
+    "change": -86114926.95
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΚΛΙΜΑΤΙΚΗΣ ΚΡΙΣΗΣ ΚΑΙ ΠΟΛΙΤΙΚΗΣ ΠΡΟΣΤΑΣΙΑΣ",
     "contracts_previous": 118,
-    "contracts_current": 87,
+    "contracts_current": 88,
     "amount_previous": 36360774.22,
-    "amount_current": 5010398.89,
-    "change": -31350375.33
+    "amount_current": 5039967.53,
+    "change": -31320806.69
    },
    {
     "authority": "ΙΕΡΑ ΚΟΙΝΟΤΗΤΑ ΑΓΙΟΥ ΟΡΟΥΣ",
@@ -992,28 +992,28 @@
    "code": 0,
    "contracts": 427,
    "amount": 19407687.12,
-   "share_amount_pct": 13.35
+   "share_amount_pct": 13.33
   },
   {
    "class": "Πρόληψη",
    "code": 1,
    "contracts": 1208,
    "amount": 97173017.92,
-   "share_amount_pct": 66.83
+   "share_amount_pct": 66.76
   },
   {
    "class": "Χωρίς σαφή κατάταξη",
    "code": 2,
    "contracts": 353,
    "amount": 21382751.18,
-   "share_amount_pct": 14.71
+   "share_amount_pct": 14.69
   },
   {
    "class": "Χωρίς ταξινόμηση ακόμη",
    "code": null,
-   "contracts": 320,
-   "amount": 7445606.66,
-   "share_amount_pct": 5.12
+   "contracts": 328,
+   "amount": 7597698.3,
+   "share_amount_pct": 5.22
   }
  ],
  "timing": [
@@ -1610,8 +1610,8 @@
   {
    "year": 2026,
    "scope": "all",
-   "contracts": 2308,
-   "amount": 145409062.88,
+   "contracts": 2316,
+   "amount": 145561154.52,
    "before_may_contracts": 338,
    "before_may_amount": 85263631.75,
    "may_to_august_contracts": 1528,
@@ -1658,7 +1658,7 @@
     },
     {
      "month": 11,
-     "contracts": 34
+     "contracts": 42
     },
     {
      "month": 12,
@@ -1669,8 +1669,8 @@
   {
    "year": 2026,
    "scope": "municipal",
-   "contracts": 1004,
-   "amount": 24415127.38,
+   "contracts": 1006,
+   "amount": 24429248.38,
    "before_may_contracts": 135,
    "before_may_amount": 6764926.28,
    "may_to_august_contracts": 651,
@@ -1717,7 +1717,7 @@
     },
     {
      "month": 11,
-     "contracts": 15
+     "contracts": 17
     },
     {
      "month": 12,
@@ -1728,8 +1728,8 @@
   {
    "year": 2026,
    "scope": "regional",
-   "contracts": 484,
-   "amount": 11190292.07,
+   "contracts": 485,
+   "amount": 11220092.07,
    "before_may_contracts": 52,
    "before_may_amount": 1482695.44,
    "may_to_august_contracts": 400,
@@ -1776,7 +1776,7 @@
     },
     {
      "month": 11,
-     "contracts": 1
+     "contracts": 2
     },
     {
      "month": 12,
@@ -1787,8 +1787,8 @@
   {
    "year": 2026,
    "scope": "environment_ministry",
-   "contracts": 82,
-   "amount": 67255115.84,
+   "contracts": 84,
+   "amount": 67314515.84,
    "before_may_contracts": 23,
    "before_may_amount": 63755225.5,
    "may_to_august_contracts": 40,
@@ -1835,7 +1835,7 @@
     },
     {
      "month": 11,
-     "contracts": 4
+     "contracts": 6
     },
     {
      "month": 12,
@@ -1846,8 +1846,8 @@
   {
    "year": 2026,
    "scope": "civil_protection_ministry",
-   "contracts": 87,
-   "amount": 5010398.89,
+   "contracts": 88,
+   "amount": 5039967.53,
    "before_may_contracts": 21,
    "before_may_amount": 604015.27,
    "may_to_august_contracts": 39,
@@ -1894,7 +1894,7 @@
     },
     {
      "month": 11,
-     "contracts": 4
+     "contracts": 5
     },
     {
      "month": 12,
@@ -1904,14 +1904,14 @@
   }
  ],
  "contractors": {
-  "distinct": 1282,
-  "top10_share_pct": 34.18,
+  "distinct": 1285,
+  "top10_share_pct": 34.15,
   "top10": [
    {
     "name": "ΕΥΡΩΠΑΙΚΕΣ ΕΠΕΝΔΥΣΕΙΣ ΚΙ ΕΠΙΧΕΙΡΗΣΕΙΣ ΑΕΡΟΔΙΑΣΤΗΜΙΚΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Α.Ε. (EFA VENTURES)",
     "contracts": 3,
     "amount": 7658344.19,
-    "share_pct": 5.27,
+    "share_pct": 5.26,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ",
@@ -1976,7 +1976,7 @@
     "name": "ΕΥΔΟΚΙΑ ΛΙΤΣΑ",
     "contracts": 3,
     "amount": 4413391.75,
-    "share_pct": 3.04,
+    "share_pct": 3.03,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -1999,7 +1999,7 @@
     "name": "ΑΙΑΣ Α.Τ.Ε.",
     "contracts": 1,
     "amount": 4226466.73,
-    "share_pct": 2.91,
+    "share_pct": 2.9,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -2012,7 +2012,7 @@
     "name": "ΡΕΒΕΛΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ ΤΟΥ ΑΝΔΡΕΑ | ΛΑΜΠΙΡΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΒΛΑΣΙΟΥ",
     "contracts": 1,
     "amount": 4153803.27,
-    "share_pct": 2.86,
+    "share_pct": 2.85,
     "authorities": [
      {
       "authority": "ΥΠΟΥΡΓΕΙΟ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
@@ -2050,38 +2050,28 @@
   ]
  },
  "payments": {
-  "records": 3741,
-  "valid": 3378,
-  "valid_amount": 192668986.3,
-  "counted": 2914,
-  "amount": 36185972.04,
-  "linked": 464,
-  "linked_amount": 156483014.26,
+  "records": 3756,
+  "valid": 3392,
+  "valid_amount": 192857512.26,
+  "counted": 2927,
+  "amount": 36345578.0,
+  "linked": 465,
+  "linked_amount": 156511934.26,
   "linked_by_method": {
    "database": {
-    "payments": 464,
-    "amount": 156483014.26
+    "payments": 465,
+    "amount": 156511934.26
    }
   },
-  "linked_to_report_year": 191,
-  "vat_removed": 2160,
-  "vat_free": 754,
+  "linked_to_report_year": 192,
+  "vat_removed": 2171,
+  "vat_free": 756,
   "cancellations": 10,
   "positive_cancellations_by_org": {
    "ΔΗΜΟΣ ΚΟΡΙΝΘΙΩΝ": 4,
    "ΔΗΜΟΣ ΚΕΡΑΤΣΙΝΙΟΥ - ΔΡΑΠΕΤΣΩΝΑΣ": 2
   },
   "cancelled_originals": [
-   {
-    "ada": "ΡΗΟΥΩΞΠ-0ΤΕ",
-    "amount": 85940.84,
-    "cancelled_by": "9Κ36ΩΞΠ-4ΘΩ"
-   },
-   {
-    "ada": "94ΚΒΩΚΥ-7ΦΡ",
-    "amount": 63355.86,
-    "cancelled_by": "Ρ7ΞΚΩΚΥ-ΗΗ7"
-   },
    {
     "ada": "Ρ0ΨΜΩΚΤ-ΦΛΔ",
     "amount": 70873.24,
@@ -2091,19 +2081,29 @@
     "ada": "Ρ1ΞΜΩΚΤ-Π6Α",
     "amount": 12400.0,
     "cancelled_by": "9Ω0ΒΩΚΤ-21Ε"
+   },
+   {
+    "ada": "ΡΗΟΥΩΞΠ-0ΤΕ",
+    "amount": 85940.84,
+    "cancelled_by": "9Κ36ΩΞΠ-4ΘΩ"
+   },
+   {
+    "ada": "94ΚΒΩΚΥ-7ΦΡ",
+    "amount": 63355.86,
+    "cancelled_by": "Ρ7ΞΚΩΚΥ-ΗΗ7"
    }
   ],
   "report_excluded_payroll": {
-   "payments": 349,
-   "amount": 4553071.17
+   "payments": 350,
+   "amount": 4558636.97
   },
   "by_category": [
    {
     "category": "payroll",
     "label": "Μισθοδοσία προσωπικού",
     "rule": "Μισθοδοσία, υπερωρίες ή εισφορές, ή οι λέξεις «αποδοχές/αποδοχών», μαζί με αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, αντιπυρική περίοδο, πολιτική προστασία ή έκτακτες ανάγκες.",
-    "payments": 649,
-    "amount": 6390489.95,
+    "payments": 651,
+    "amount": 6397074.01,
     "bodies": 113
    },
    {
@@ -2126,8 +2126,8 @@
     "category": "vegetation",
     "label": "Αντιπυρικές ζώνες, καθαρισμοί, κλαδέματα",
     "rule": "Αντιπυρικές/περιμετρικές ζώνες, αποψιλώσεις, καθαρισμοί, κοπή χόρτων, κλαδέματα, καύσιμη ύλη, δασικοί/αγροτικοί δρόμοι, οικόπεδα.",
-    "payments": 628,
-    "amount": 7964330.07,
+    "payments": 632,
+    "amount": 8029838.53,
     "bodies": 168
    },
    {
@@ -2142,42 +2142,42 @@
     "category": "equipment",
     "label": "Εξοπλισμός, οχήματα και συντήρηση μέσων",
     "rule": "Προμήθειες, εξοπλισμός, ανταλλακτικά, επισκευές, συντήρηση μέσων, δεξαμενές.",
-    "payments": 565,
-    "amount": 2604486.17,
+    "payments": 566,
+    "amount": 2605056.17,
     "bodies": 225
    },
    {
     "category": "unclear",
     "label": "Το θέμα δεν περιγράφει τη δαπάνη",
     "rule": "Το θέμα περιέχει μόνο αριθμό εντάλματος/εντολής χωρίς περιγραφή.",
-    "payments": 214,
-    "amount": 3124863.48,
+    "payments": 216,
+    "amount": 3126518.48,
     "bodies": 59
    },
    {
     "category": "other",
     "label": "Λοιπές δαπάνες πυροπροστασίας",
     "rule": "Όλα τα υπόλοιπα.",
-    "payments": 703,
-    "amount": 9158323.63,
-    "bodies": 240
+    "payments": 707,
+    "amount": 9243612.07,
+    "bodies": 241
    }
   ],
   "by_org_type": [
    {
     "org_type": "ΔΗΜΟΣ",
-    "payments": 2520,
-    "amount": 25937583.91
+    "payments": 2528,
+    "amount": 26032583.58
    },
    {
     "org_type": "ΥΠΟΥΡΓΕΙΟ",
-    "payments": 70,
-    "amount": 7468867.93
+    "payments": 72,
+    "amount": 7530521.24
    },
    {
     "org_type": "ΑΛΛΟΣ ΦΟΡΕΑΣ",
-    "payments": 205,
-    "amount": 1522047.06
+    "payments": 207,
+    "amount": 1523702.06
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑ",
@@ -2206,8 +2206,8 @@
    },
    {
     "org_type": "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ",
-    "payments": 12,
-    "amount": 41365.09
+    "payments": 13,
+    "amount": 42663.07
    },
    {
     "org_type": "ΑΝΑΠΤΥΞΙΑΚΟΣ ΟΡΓΑΝΙΣΜΟΣ",
@@ -2222,10 +2222,10 @@
   ],
   "payroll_bodies": 113,
   "municipal": {
-   "payments": 2520,
-   "amount": 25937583.91,
-   "from_may_1": 2007,
-   "payroll": 649,
+   "payments": 2528,
+   "amount": 26032583.58,
+   "from_may_1": 2015,
+   "payroll": 651,
    "by_month": [
     {
      "month": 1,
@@ -2279,8 +2279,8 @@
     },
     {
      "month": 11,
-     "payments": 159,
-     "amount": 1471502.58
+     "payments": 167,
+     "amount": 1566502.25
     },
     {
      "month": 12,
@@ -2332,7 +2332,7 @@
    },
    {
     "month": 11,
-    "payments": 60
+    "payments": 62
    },
    {
     "month": 12,
@@ -2340,34 +2340,34 @@
    }
   ],
   "vat_evidence": {
-   "equals_with_vat": 129,
+   "equals_with_vat": 130,
    "equals_without_vat": 1,
    "other": 327
   },
   "subject_refs_not_in_db": 75,
-  "without_beneficiary_vat": 728,
-  "exact_duplicate_groups": 42,
-  "exact_duplicates_extra_amount": 403490.95,
-  "report_year_contracts_with_linked_payment": 146,
-  "report_year_contracts_with_linked_payment_value_pct": 38.38,
+  "without_beneficiary_vat": 732,
+  "exact_duplicate_groups": 43,
+  "exact_duplicates_extra_amount": 404788.93,
+  "report_year_contracts_with_linked_payment": 147,
+  "report_year_contracts_with_linked_payment_value_pct": 38.36,
   "finalizations_by_year": {
    "2024": 287,
    "2025": 259,
-   "2026": 3741
+   "2026": 3756
   }
  },
  "municipalities": {
   "funded": 325,
   "funding_total": 47500000.0,
-  "with_contracts": 244,
-  "contracts": 1004,
-  "contracts_amount": 24415127.38,
+  "with_contracts": 245,
+  "contracts": 1006,
+  "contracts_amount": 24429248.38,
   "with_payments": 299,
-  "payments": 2746,
-  "payments_amount": 31049313.89,
-  "funded_without_contract": 81,
-  "funded_without_contract_or_payment": 8,
-  "funding_of_no_trace": 916000.0,
+  "payments": 2754,
+  "payments_amount": 31144313.56,
+  "funded_without_contract": 80,
+  "funded_without_contract_or_payment": 7,
+  "funding_of_no_trace": 779000.0,
   "no_trace_list": [
    {
     "municipality": "ΑΜΑΡΙΟΥ",
@@ -2383,11 +2383,6 @@
     "municipality": "ΗΡΑΚΛΕΙΑΣ",
     "nomos": "ΣΕΡΡΩΝ",
     "funding_2026": 69000.0
-   },
-   {
-    "municipality": "ΙΩΑΝΝΙΤΩΝ",
-    "nomos": "ΙΩΑΝΝΙΝΩΝ",
-    "funding_2026": 137000.0
    },
    {
     "municipality": "ΜΕΓΙΣΤΗΣ",
@@ -2641,8 +2636,8 @@
    "ypen_amount": 63755225.5
   },
   "municipal_timing": {
-   "contracts": 1004,
-   "from_may_1": 869
+   "contracts": 1006,
+   "from_may_1": 871
   },
   "first_half": {
    "2024": 193134545.47,
@@ -2657,7 +2652,7 @@
    "amount": 4404191.75
   },
   "payroll_org_types": {
-   "ΔΗΜΟΣ": 649
+   "ΔΗΜΟΣ": 651
   },
   "civil_protection_ministry_payments": 1
  },
