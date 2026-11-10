@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-09T16:15:42+00:00",
-  "database_now": "2026-11-09T16:15:38.482795+00:00",
-  "snapshot_at": "2026-11-09T18:15:38+02:00",
-  "snapshot_date": "2026-11-09",
-  "snapshot_time": "18:15",
+  "built_at": "2026-11-10T02:55:44+00:00",
+  "database_now": "2026-11-10T02:55:40.217164+00:00",
+  "snapshot_at": "2026-11-10T04:55:39+02:00",
+  "snapshot_date": "2026-11-10",
+  "snapshot_time": "04:55",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-09",
+  "period_end": "2026-11-10",
   "year_complete": false,
   "latest_contract_signed": "2026-11-06",
   "latest_payment_published": "2026-11-09",
@@ -795,18 +795,18 @@
   },
   {
    "year": 2025,
-   "contracts": 2288,
-   "amount": 304445890.07,
+   "contracts": 2291,
+   "amount": 304476215.06,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 382,
-     "amount": 206672717.67
+     "contracts": 383,
+     "amount": 206684617.67
     },
     {
      "group": "Δήμοι",
-     "contracts": 1045,
-     "amount": 36135037.13
+     "contracts": 1046,
+     "amount": 36138462.12
     },
     {
      "group": "Περιφέρειες",
@@ -815,8 +815,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 298,
-     "amount": 50517495.86
+     "contracts": 299,
+     "amount": 50532495.86
     }
    ],
    "by_prevention": [
@@ -829,8 +829,8 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1271,
-     "amount": 219995744.29
+     "contracts": 1273,
+     "amount": 220014169.28
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
@@ -841,8 +841,8 @@
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
      "code": null,
-     "contracts": 76,
-     "amount": 7136982.93
+     "contracts": 77,
+     "amount": 7148882.93
     }
    ]
   },
@@ -954,11 +954,11 @@
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
-    "contracts_previous": 67,
+    "contracts_previous": 68,
     "contracts_current": 89,
-    "amount_previous": 1443227.26,
+    "amount_previous": 1455127.26,
     "amount_current": 3963855.73,
-    "change": 2520628.47
+    "change": 2508728.47
    },
    {
     "authority": "ΔΗΜΟΣ ΕΛΛΗΝΙΚΟΥ - ΑΡΓΥΡΟΥΠΟΛΗΣ",
@@ -970,11 +970,11 @@
    },
    {
     "authority": "ΓΑΙΑ ΟΣΕ ΑΕ",
-    "contracts_previous": 6,
+    "contracts_previous": 7,
     "contracts_current": 10,
-    "amount_previous": 117500.0,
+    "amount_previous": 132500.0,
     "amount_current": 1586501.65,
-    "change": 1469001.65
+    "change": 1454001.65
    },
    {
     "authority": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
