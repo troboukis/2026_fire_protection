@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-11-12T10:31:07+00:00",
-  "database_now": "2026-11-12T10:31:02.740734+00:00",
-  "snapshot_at": "2026-11-12T12:31:01+02:00",
+  "built_at": "2026-11-12T16:18:51+00:00",
+  "database_now": "2026-11-12T16:18:45.753722+00:00",
+  "snapshot_at": "2026-11-12T18:18:44+02:00",
   "snapshot_date": "2026-11-12",
-  "snapshot_time": "12:31",
+  "snapshot_time": "18:18",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-11-12",
@@ -16,9 +16,9 @@
  "total": {
   "contracts": 2331,
   "contracts_amount": 145729599.26,
-  "payments": 2994,
-  "payments_amount": 36942194.17,
-  "amount": 182671793.43
+  "payments": 3005,
+  "payments_amount": 37046674.02,
+  "amount": 182776273.28
  },
  "contracts": {
   "contracts": 2331,
@@ -2050,38 +2050,28 @@
   ]
  },
  "payments": {
-  "records": 3835,
-  "valid": 3466,
-  "valid_amount": 195548435.67,
-  "counted": 2994,
-  "amount": 36942194.17,
-  "linked": 472,
-  "linked_amount": 158606241.5,
+  "records": 3849,
+  "valid": 3479,
+  "valid_amount": 195659313.87,
+  "counted": 3005,
+  "amount": 37046674.02,
+  "linked": 474,
+  "linked_amount": 158612639.85,
   "linked_by_method": {
    "database": {
-    "payments": 472,
-    "amount": 158606241.5
+    "payments": 474,
+    "amount": 158612639.85
    }
   },
-  "linked_to_report_year": 195,
-  "vat_removed": 2222,
-  "vat_free": 772,
+  "linked_to_report_year": 197,
+  "vat_removed": 2231,
+  "vat_free": 774,
   "cancellations": 10,
   "positive_cancellations_by_org": {
-   "ΔΗΜΟΣ ΚΟΡΙΝΘΙΩΝ": 4,
-   "ΔΗΜΟΣ ΚΕΡΑΤΣΙΝΙΟΥ - ΔΡΑΠΕΤΣΩΝΑΣ": 2
+   "ΔΗΜΟΣ ΚΕΡΑΤΣΙΝΙΟΥ - ΔΡΑΠΕΤΣΩΝΑΣ": 2,
+   "ΔΗΜΟΣ ΚΟΡΙΝΘΙΩΝ": 4
   },
   "cancelled_originals": [
-   {
-    "ada": "ΡΗΟΥΩΞΠ-0ΤΕ",
-    "amount": 85940.84,
-    "cancelled_by": "9Κ36ΩΞΠ-4ΘΩ"
-   },
-   {
-    "ada": "94ΚΒΩΚΥ-7ΦΡ",
-    "amount": 63355.86,
-    "cancelled_by": "Ρ7ΞΚΩΚΥ-ΗΗ7"
-   },
    {
     "ada": "Ρ0ΨΜΩΚΤ-ΦΛΔ",
     "amount": 70873.24,
@@ -2091,27 +2081,37 @@
     "ada": "Ρ1ΞΜΩΚΤ-Π6Α",
     "amount": 12400.0,
     "cancelled_by": "9Ω0ΒΩΚΤ-21Ε"
+   },
+   {
+    "ada": "ΡΗΟΥΩΞΠ-0ΤΕ",
+    "amount": 85940.84,
+    "cancelled_by": "9Κ36ΩΞΠ-4ΘΩ"
+   },
+   {
+    "ada": "94ΚΒΩΚΥ-7ΦΡ",
+    "amount": 63355.86,
+    "cancelled_by": "Ρ7ΞΚΩΚΥ-ΗΗ7"
    }
   ],
   "report_excluded_payroll": {
-   "payments": 355,
-   "amount": 4822266.44
+   "payments": 356,
+   "amount": 4929417.05
   },
   "by_category": [
    {
     "category": "payroll",
     "label": "Μισθοδοσία προσωπικού",
     "rule": "Μισθοδοσία, υπερωρίες ή εισφορές, ή οι λέξεις «αποδοχές/αποδοχών», μαζί με αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, αντιπυρική περίοδο, πολιτική προστασία ή έκτακτες ανάγκες.",
-    "payments": 663,
-    "amount": 6510188.49,
+    "payments": 665,
+    "amount": 6530804.64,
     "bodies": 114
    },
    {
     "category": "fuel",
     "label": "Καύσιμα και λιπαντικά",
     "rule": "Καύσιμα, πετρέλαιο, βενζίνη, diesel και biodiesel, λιπαντικά. Όχι η «καύσιμη ύλη» του δάσους.",
-    "payments": 72,
-    "amount": 367339.32,
+    "payments": 74,
+    "amount": 368410.91,
     "bodies": 22
    },
    {
@@ -2126,53 +2126,53 @@
     "category": "vegetation",
     "label": "Αντιπυρικές ζώνες, καθαρισμοί, κλαδέματα",
     "rule": "Αντιπυρικές/περιμετρικές ζώνες, αποψιλώσεις, καθαρισμοί, κοπή χόρτων, κλαδέματα, καύσιμη ύλη, δασικοί/αγροτικοί δρόμοι, οικόπεδα.",
-    "payments": 649,
-    "amount": 8138919.91,
+    "payments": 651,
+    "amount": 8166919.91,
     "bodies": 169
    },
    {
     "category": "machinery",
     "label": "Μισθώσεις μηχανημάτων και οχημάτων",
     "rule": "Μίσθωση ή ενοικίαση μηχανημάτων, οχημάτων, φορτηγών, υδροφόρων (και «μισθ.» ακολουθούμενο από μηχανήματα ή οχήματα).",
-    "payments": 80,
-    "amount": 637188.51,
+    "payments": 81,
+    "amount": 666873.51,
     "bodies": 24
    },
    {
     "category": "equipment",
     "label": "Εξοπλισμός, οχήματα και συντήρηση μέσων",
     "rule": "Προμήθειες, εξοπλισμός, ανταλλακτικά, επισκευές, συντήρηση μέσων, δεξαμενές.",
-    "payments": 577,
-    "amount": 2663328.34,
+    "payments": 579,
+    "amount": 2668895.12,
     "bodies": 225
    },
    {
     "category": "unclear",
     "label": "Το θέμα δεν περιγράφει τη δαπάνη",
     "rule": "Το θέμα περιέχει μόνο αριθμό εντάλματος/εντολής χωρίς περιγραφή.",
-    "payments": 223,
-    "amount": 3231407.37,
+    "payments": 224,
+    "amount": 3242977.37,
     "bodies": 62
    },
    {
     "category": "other",
     "label": "Λοιπές δαπάνες πυροπροστασίας",
     "rule": "Όλα τα υπόλοιπα.",
-    "payments": 723,
-    "amount": 9376423.05,
+    "payments": 724,
+    "amount": 9384393.38,
     "bodies": 243
    }
   ],
   "by_org_type": [
    {
     "org_type": "ΔΗΜΟΣ",
-    "payments": 2577,
-    "amount": 26423470.14
+    "payments": 2587,
+    "amount": 26527262.21
    },
    {
     "org_type": "ΥΠΟΥΡΓΕΙΟ",
-    "payments": 82,
-    "amount": 7661982.9
+    "payments": 83,
+    "amount": 7662670.68
    },
    {
     "org_type": "ΑΛΛΟΣ ΦΟΡΕΑΣ",
@@ -2222,10 +2222,10 @@
   ],
   "payroll_bodies": 114,
   "municipal": {
-   "payments": 2577,
-   "amount": 26423470.14,
-   "from_may_1": 2064,
-   "payroll": 662,
+   "payments": 2587,
+   "amount": 26527262.21,
+   "from_may_1": 2074,
+   "payroll": 664,
    "by_month": [
     {
      "month": 1,
@@ -2279,8 +2279,8 @@
     },
     {
      "month": 11,
-     "payments": 216,
-     "amount": 1957388.81
+     "payments": 226,
+     "amount": 2061180.88
     },
     {
      "month": 12,
@@ -2332,7 +2332,7 @@
    },
    {
     "month": 11,
-    "payments": 74
+    "payments": 76
    },
    {
     "month": 12,
@@ -2340,20 +2340,20 @@
    }
   ],
   "vat_evidence": {
-   "equals_with_vat": 130,
+   "equals_with_vat": 131,
    "equals_without_vat": 1,
-   "other": 334
+   "other": 335
   },
-  "subject_refs_not_in_db": 75,
-  "without_beneficiary_vat": 747,
+  "subject_refs_not_in_db": 76,
+  "without_beneficiary_vat": 748,
   "exact_duplicate_groups": 45,
   "exact_duplicates_extra_amount": 416905.7,
-  "report_year_contracts_with_linked_payment": 149,
-  "report_year_contracts_with_linked_payment_value_pct": 38.35,
+  "report_year_contracts_with_linked_payment": 151,
+  "report_year_contracts_with_linked_payment_value_pct": 38.36,
   "finalizations_by_year": {
    "2024": 287,
    "2025": 259,
-   "2026": 3835
+   "2026": 3849
   }
  },
  "municipalities": {
@@ -2362,9 +2362,9 @@
   "with_contracts": 247,
   "contracts": 1015,
   "contracts_amount": 24537262.96,
-  "with_payments": 299,
-  "payments": 2806,
-  "payments_amount": 31681927.92,
+  "with_payments": 300,
+  "payments": 2817,
+  "payments_amount": 31790948.99,
   "funded_without_contract": 78,
   "funded_without_contract_or_payment": 7,
   "funding_of_no_trace": 779000.0,
@@ -2652,7 +2652,7 @@
    "amount": 4404191.75
   },
   "payroll_org_types": {
-   "ΔΗΜΟΣ": 662,
+   "ΔΗΜΟΣ": 664,
    "ΥΠΟΥΡΓΕΙΟ": 1
   },
   "civil_protection_ministry_payments": 1
