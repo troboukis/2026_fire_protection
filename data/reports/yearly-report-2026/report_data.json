@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-13T16:22:05+00:00",
-  "database_now": "2026-11-13T16:21:56.708731+00:00",
-  "snapshot_at": "2026-11-13T18:21:55+02:00",
-  "snapshot_date": "2026-11-13",
-  "snapshot_time": "18:21",
+  "built_at": "2026-11-14T01:02:53+00:00",
+  "database_now": "2026-11-14T01:02:50.422155+00:00",
+  "snapshot_at": "2026-11-14T03:02:49+02:00",
+  "snapshot_date": "2026-11-14",
+  "snapshot_time": "03:02",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-13",
+  "period_end": "2026-11-14",
   "year_complete": false,
   "latest_contract_signed": "2026-11-12",
   "latest_payment_published": "2026-11-13",
@@ -742,8 +742,8 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1855,
-   "amount": 284756632.11,
+   "contracts": 1860,
+   "amount": 284832806.63,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -752,8 +752,8 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 841,
-     "amount": 20822022.58
+     "contracts": 845,
+     "amount": 20893297.1
     },
     {
      "group": "Περιφέρειες",
@@ -762,8 +762,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 262,
-     "amount": 12592887.84
+     "contracts": 263,
+     "amount": 12597787.84
     }
    ],
    "by_prevention": [
@@ -776,37 +776,37 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1175,
-     "amount": 208741520.21
+     "contracts": 1178,
+     "amount": 208779630.21
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 335,
-     "amount": 31007856.83
+     "contracts": 336,
+     "amount": 31037856.83
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
      "code": null,
-     "contracts": 61,
-     "amount": 19498199.95
+     "contracts": 62,
+     "amount": 19506264.47
     }
    ]
   },
   {
    "year": 2025,
-   "contracts": 2309,
-   "amount": 305539277.92,
+   "contracts": 2313,
+   "amount": 305585870.6,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 387,
-     "amount": 206730086.7
+     "contracts": 390,
+     "amount": 206764661.38
     },
     {
      "group": "Δήμοι",
-     "contracts": 1056,
-     "amount": 37093835.95
+     "contracts": 1057,
+     "amount": 37105853.95
     },
     {
      "group": "Περιφέρειες",
@@ -829,8 +829,8 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1286,
-     "amount": 221021867.14
+     "contracts": 1290,
+     "amount": 221068459.82
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
