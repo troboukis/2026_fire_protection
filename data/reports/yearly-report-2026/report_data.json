@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-14T01:02:53+00:00",
-  "database_now": "2026-11-14T01:02:50.422155+00:00",
-  "snapshot_at": "2026-11-14T03:02:49+02:00",
-  "snapshot_date": "2026-11-14",
-  "snapshot_time": "03:02",
+  "built_at": "2026-11-15T00:17:38+00:00",
+  "database_now": "2026-11-15T00:17:26.903970+00:00",
+  "snapshot_at": "2026-11-15T02:17:26+02:00",
+  "snapshot_date": "2026-11-15",
+  "snapshot_time": "02:17",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-14",
+  "period_end": "2026-11-15",
   "year_complete": false,
   "latest_contract_signed": "2026-11-12",
   "latest_payment_published": "2026-11-13",
@@ -742,18 +742,18 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1860,
-   "amount": 284832806.63,
+   "contracts": 1865,
+   "amount": 284920209.61,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 324,
-     "amount": 237620970.82
+     "contracts": 326,
+     "amount": 237675518.38
     },
     {
      "group": "Δήμοι",
-     "contracts": 845,
-     "amount": 20893297.1
+     "contracts": 847,
+     "amount": 20918819.85
     },
     {
      "group": "Περιφέρειες",
@@ -762,8 +762,8 @@
     },
     {
      "group": "Λοιποί φορείς",
-     "contracts": 263,
-     "amount": 12597787.84
+     "contracts": 264,
+     "amount": 12605120.51
     }
    ],
    "by_prevention": [
@@ -776,14 +776,14 @@
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1178,
-     "amount": 208779630.21
+     "contracts": 1181,
+     "amount": 208832426.74
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 336,
-     "amount": 31037856.83
+     "contracts": 338,
+     "amount": 31072463.28
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
