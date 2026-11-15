@@ -1,110 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/culture/564587428/se-poion-telika-aresei-i-athina/",
-      "title": "Σε ποιον, τελικά, αρέσει η Αθήνα;",
-      "normalized_title": "ΣΕ ΠΟΙΟΝ, ΤΕΛΙΚΑ, ΑΡΕΣΕΙ Η ΑΘΗΝΑ;",
+      "url": "https://www.kathimerini.gr/society/564588841/o-emfylios-tis-akakias/",
+      "title": "Ο εμφύλιος της ακακίας",
+      "normalized_title": "Ο ΕΜΦΥΛΙΟΣ ΤΗΣ ΑΚΑΚΙΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/culture/564587428/se-poion-telika-aresei-i-athina/",
-        "https://www.kathimerini.gr/k/gastronomos/564586504/lioto-samothrakiotiko-katsiki-mageiremeno-me-mpolika-kremmydia/",
-        "https://www.kathimerini.gr/world/564590482/i-alis-choyangk-eiche-apochorisei-apo-tin-etaireia-ton-aygoysto-toy-2025-anakoinose-i-megaspeed/",
-        "https://www.kathimerini.gr/society/564590479/thessaloniki-synelifthisan-dyo-odigoi-poy-ekanan-kontres-me-tachytita-160-chlm-ora/",
-        "https://www.kathimerini.gr/world/564590470/iordania-treis-andres-katadikastikan-se-thanato-di-apagchonismoy-gia-tin-epithesi-enantion-ellinorthodoxis-ekklisias/",
-        "https://www.kathimerini.gr/politics/564590467/mitsotakis-choris-anataraxeis-kai-choris-ekptoseis-prochoraei-to-gsi-energeiaki-stirixi-politon-eos-1-560-eyro/",
-        "https://www.kathimerini.gr/society/564590464/lasithi-choris-tis-aisthiseis-tis-entopistike-51chroni-sti-limni-toy-agioy-nikolaoy/",
-        "https://www.kathimerini.gr/istoria/564587665/90-chronia-prin-15-11-1936/",
-        "https://www.kathimerini.gr/society/reportaz/564572650/ta-paidia-ton-gkastarmpaiter-stin-afd/",
-        "https://www.kathimerini.gr/k/gastronomos/564586486/moschari-sto-tigani-me-kremmydi-kai-ntomata-lomo-saltado/",
-        "https://www.kathimerini.gr/world/564590455/kina-apagoreyetai-apo-simera-i-katochi-drones-sto-pekino-gia-logoys-asfaleias/",
-        "https://www.kathimerini.gr/society/564590443/zefyri-thanatos-pyrosveston-ta-senaria-poy-exetazoyn-oi-arches-gia-tin-tragodia/",
-        "https://www.kathimerini.gr/world/564590431/istoriko-orosimo-epitychis-prosdesi-toy-diastimikoy-skafoys-starship-kata-tin-epistrofi-toy-sti-gi/",
-        "https://www.kathimerini.gr/culture/564589864/500-lexeis-me-ton-foti-doyso/",
-        "https://www.kathimerini.gr/world/564590419/iran-oi-froyroi-tis-epanastasis-anakoinosan-oti-eplixan-me-drones-amerikaniki-vasi-sto-mpachrein/",
-        "https://www.kathimerini.gr/society/564590410/polytechneio-anoigei-apo-simera-tis-pyles-toy-gia-ton-eortasmo-tis-53is-epeteioy/",
-        "https://www.kathimerini.gr/world/564590398/sygkroysi-ploion-ston-misisipi-agogi-se-varos-tis-ploioktitrias-etaireias-kai-ton-diacheiriston-toy-dexamenoploioy/",
-        "https://www.kathimerini.gr/world/564590389/xekina-sti-manila-i-synodos-koryfis-tis-enosis-choron-notioanatolikis-asias/",
-        "https://www.kathimerini.gr/visual/video/564589990/endiameses-ekloges-stis-ipa-to-apotelesma-kai-i-epomeni-imera/",
-        "https://www.kathimerini.gr/k/gastronomos/564586432/zymi-mprize-gia-tarta-vima-vima/",
-        "https://www.kathimerini.gr/world/564588727/esoteriki-naytia-meta-to-kyma/",
-        "https://www.kathimerini.gr/istoria/564584221/san-simera-15-noemvrioy-1920-i-proti-synedriasi-tis-genikis-syneleysis-tis-koinonias-ton-ethnon/",
-        "https://www.kathimerini.gr/world/564590368/ipa-oi-ergasies-anavathmisis-prokalesan-to-mplak-aoyt-stis-aerometafores/",
-        "https://www.kathimerini.gr/world/564590359/tin-parachorisi-toy-ntonmpas-me-antallagma-tin-entaxi-sto-nato-proteinan-oi-ipa-ypostirizei-o-zelenski/",
-        "https://www.kathimerini.gr/eortologio/564567544/eortologio-poioi-giortazoyn-simera-15-noemvrioy/",
-        "https://www.kathimerini.gr/world/564590206/malli-gia-toys-andres-polyesteras-gia-tis-gynaikes-alla-stin-idia-timi/",
-        "https://www.kathimerini.gr/culture/music/564588085/ritsarnt-loint-1951-2026-o-alchimistis-tis-rok-kitharas/",
-        "https://www.kathimerini.gr/culture/564588121/poios-plironei-ta-spasmena-ton-tarachon/",
-        "https://www.kathimerini.gr/world/564590344/nees-mazikes-diadiloseis-se-oli-ti-gallia-mikroepeisodia-sto-parisi/",
-        "https://www.kathimerini.gr/opinion/interviews/564588124/oliver-lase-stin-k-to-sinema-einai-vima-pros-tin-avysso/",
-        "https://www.kathimerini.gr/world/564590272/meno-ektos-kampania-kata-tis-vretanikis-epanaforas-stin-ee/",
-        "https://www.kathimerini.gr/society/564590326/thessaloniki-kataggelia-tilefonikis-apatis-me-leia-ano-ton-500-000-eyro/",
-        "https://www.kathimerini.gr/politics/parties/564587902/to-politiko-ekkremes-kai-oi-kalpes/",
-        "https://www.kathimerini.gr/athletics/564590338/i-ethniki-poy-paramythiazetai-to-7-0-kai-to-erotima-gia-ton-giovanovits/",
-        "https://www.kathimerini.gr/politics/564587968/arthro-nikita-kaklamani-stin-k-i-eyropi-prepei-na-allaxei-i-ellada-na-prochorisei/",
-        "https://www.kathimerini.gr/visual/infographics/564587989/sexistika-mikrodramata-se-skinothesia-ai/",
-        "https://www.kathimerini.gr/visual/infographics/564587971/scholeio-ta-thriskeytika-metatrepontai-se-parergo/",
-        "https://www.kathimerini.gr/culture/music/564588106/oi-veteranoi-kai-o-monachikos-lykos-tis-rap/",
-        "https://www.kathimerini.gr/politics/564590308/doyroy-den-dinoyme-leyki-epitagi-gia-ta-kyriarchika-dikaiomata/",
-        "https://www.kathimerini.gr/society/564590332/zefyri-treis-syllipseis-gia-ti-fotia-me-toys-dyo-nekroys-pyrosvestes/",
-        "https://www.kathimerini.gr/economy/local/564588322/poylame-fthina-reyma-ti-mera-agorazoyme-akriva-to-vrady/",
-        "https://www.kathimerini.gr/k/k-magazine/564585079/telika-oi-filozooi-tiroyn-tis-ypochreoseis-toys-i-ochi/",
-        "https://www.kathimerini.gr/world/564590281/poytin-thelei-epistrofi-toy-nato-sto-1997-oi-skliroi-oroi-tis-moschas-gia-tin-oykrania/",
-        "https://www.kathimerini.gr/politics/564590320/gerapetritis-gia-ilektriki-diasyndesi-oi-ereynes-synechizontai-apokleistika-me-elliniki-navtex/",
-        "https://www.kathimerini.gr/world/564590290/zacharova-i-eyropi-tha-itan-asfalesteri-choris-to-nato/",
-        "https://www.kathimerini.gr/world/564590236/chaos-sta-aerodromia-ton-ipa-ta-gerasmena-systimata-kai-o-kindynos-neas-paralysis/",
-        "https://www.kathimerini.gr/world/564588037/alvania-poso-akomi-tha-antexei-o-rama/",
-        "https://www.kathimerini.gr/world/564590254/kilitsntarogloy-i-megalyteri-pithanotita-polemoy-einai-me-tin-ellada/",
-        "https://www.kathimerini.gr/society/dikastiko/564587929/ste-i-ora-tis-krisis-se-tessera-metopa/",
-        "https://www.kathimerini.gr/world/564590239/ipa-i-alaska-eklegei-ton-proto-dimokratiko-kyverniti-apo-to-1998/",
-        "https://www.kathimerini.gr/society/564590209/tragodia-sto-zefyri-vinteo-apo-to-simeio-opoy-xekinise-i-fotia/",
-        "https://www.kathimerini.gr/athletics/analysis/564590068/ethniki-elladas-i-anatomia-enos-olikoy-mplak-aoyt/",
-        "https://www.kathimerini.gr/politics/564590188/konstantopoyloy-meta-ti-synantisi-me-gerapetriti-kamia-amfisimia-apenanti-stin-toyrkia/",
-        "https://www.kathimerini.gr/k/gastronomos/564586396/garides-me-gkogkes-ntomata-kai-sfela/",
-        "https://www.kathimerini.gr/society/564590170/pos-synevi-i-tragodia-me-toys-dyo-nekroys-pyrosvestes-sto-zefyri-patisan-sti-skala-kai-epesan-sto-keno/",
-        "https://www.kathimerini.gr/politics/564590179/pasok-i-asfaleia-ton-pyrosveston-den-mporei-na-perimenei-allo/",
-        "https://www.kathimerini.gr/society/564590161/pieria-tesseris-syllipseis-gia-aporripsi-kai-tafi-1-250-tonon-apovliton/",
-        "https://www.kathimerini.gr/world/564590152/skandalo-nvidia-kataskopos-i-pliroforiodotis-to-mystirio-me-tin-alis-choyangk/",
-        "https://www.kathimerini.gr/world/564589951/mia-nea-gialta-gia-ton-kosmo-ti-epidiokoyn-tramp-kai-poytin-ti-fovatai-o-si/",
-        "https://www.kathimerini.gr/society/564590122/thessaloniki-exarthrothike-kykloma-diakinisis-narkotikon-kataschethike-pano-apo-ena-kilo-iroinis/",
-        "https://www.kathimerini.gr/life/health/564586987/zontas-me-tin-aorati-astheneia-poy-kostizei-stin-ellada-5-5-dis-ton-chrono/",
-        "https://www.kathimerini.gr/world/564590110/facebook-prostimo-mamoyth-805-ekat-eyro-sti-meta-gia-prosvasi-stis-fotografies-christon/",
-        "https://www.kathimerini.gr/k/sunday-edition/564590107/diavaste-stin-kathimerini-tis-kyriakis-465/",
-        "https://www.kathimerini.gr/society/564590095/ede-gia-ton-thanato-ton-dyo-pyrosveston-stin-pyrkagia-sto-zefyri/",
-        "https://www.kathimerini.gr/opinion/readers/564587959/oi-anthropoi-poy-mochthoyn-gia-to-kalo-kai-to-oraio-o-epioysios-kai-to-kapsoni-toy-gnostoy-kisingker/",
-        "https://www.kathimerini.gr/k/gastronomos/564586384/profiterol-i-aythentiki-syntagi-me-pagoto-kai-sos-sokolatas-apo-ton-stelio-parliaro/",
-        "https://www.kathimerini.gr/k/k-magazine/564585010/oikogeneiako-drama-sti-ldg/",
-        "https://www.kathimerini.gr/opinion/readers/564587944/ena-spoydaio-gnosto-agnosto-moyseio/",
-        "https://www.kathimerini.gr/opinion/readers/564587953/i-agia-aikaterini-kai-i-filosofos-ypatia/",
-        "https://www.kathimerini.gr/opinion/readers/564587947/leipsana-diplomatia-kai-gamikes-syndeseis/",
-        "https://www.kathimerini.gr/opinion/readers/564587941/xenagisi-ston-nao-tis-zoodochoy-pigis/",
-        "https://www.kathimerini.gr/opinion/readers/564587956/to-eycharisto-moy-se-syn-anagnosti/",
-        "https://www.kathimerini.gr/world/564590062/saoydiki-aravia-katarrifthikan-dyo-drones-ton-choythi-me-stocho-to-riant/",
-        "https://www.kathimerini.gr/culture/564590053/glypta-toy-parthenona-oi-vretanoi-lene-nai-stin-epistrofi-nea-dimoskopisi/",
-        "https://www.kathimerini.gr/society/564590050/toyrnas-gia-ton-thanato-dyo-pyrosveston-i-oikogeneia-toy-pyrosvestikoy-somatos-thrinei/",
-        "https://www.kathimerini.gr/visual/infographics/564587872/deyteri-se-apates-choris-synora-i-ellada/",
-        "https://www.kathimerini.gr/society/564590032/paristanan-ypalliloys-etaireias-reymatos-kai-arpazan-chrimata-kai-kosmimata-leia-210-000-eyro/",
-        "https://www.kathimerini.gr/society/564590029/patra-profylakistikan-oi-goneis-toy-ypositismenoy-vrefoys-tessaron-minon/",
-        "https://www.kathimerini.gr/politics/564590011/arnithike-na-symmetaschei-stin-enimerosi-apo-gerapetriti-gia-to-kalodio-o-velopoylos/",
-        "https://www.kathimerini.gr/life/diastima/564590002/voyager-1-to-istoriko-orosimo-ton-26-dis-chiliometron-sto-pio-makrino-taxidi-tis-anthropotitas/",
-        "https://www.kathimerini.gr/society/564589978/railway-gov-gr-pos-vlepoyme-live-poy-vrisketai-to-treno-ti-allazei-stin-asfaleia/",
-        "https://www.kathimerini.gr/society/reportaz/564581914/eyropi-ellada-odikos-i-me-ploio/",
-        "https://www.kathimerini.gr/opinion/sketches/564589903/skitso-toy-andrea-petroylaki-14-11-26/",
-        "https://www.kathimerini.gr/k/gastronomos/564586369/christoygenna-erchontai-xinolachano-etoimasate/",
-        "https://www.kathimerini.gr/opinion/sketches/564589897/skitso-toy-ilia-makri-14-11-26/",
-        "https://www.kathimerini.gr/society/astynomiko/564589972/alimos-kataggelia-gia-endooikogeneiaki-via-apokalypse-anavolika-oplo-kai-vyzantina-nomismata/",
-        "https://www.kathimerini.gr/society/564589939/zefyri-katerreyse-meros-ktirioy-apo-pyrkagia-agnooyntai-pyrosvestes/",
-        "https://www.kathimerini.gr/athletics/564588190/i-odysseia-ton-nisiotikon-somateion/",
-        "https://www.kathimerini.gr/culture/cinema/564589924/eyropaika-vraveia-kinimatografoy-i-patrida-toy-pavlikofski-saronei-me-11-ypopsifiotites/",
-        "https://www.kathimerini.gr/life/health/564588046/elpides-gia-ti-noso-altschaimer-2/",
-        "https://www.kathimerini.gr/politics/564589915/androylakis-gia-ilektriki-diasyndesi-kyvernisi-kai-ee-na-eggyithoyn-to-ergo/",
-        "https://www.kathimerini.gr/opinion/564587812/diafanis-diplomatia/",
-        "https://www.kathimerini.gr/k/k-magazine/564584878/mia-komodia-gia-ti-mesi-ilikia/",
-        "https://www.kathimerini.gr/opinion/564588238/to-psychologiko-provlima-toy-k-androylaki/",
-        "https://www.kathimerini.gr/opinion/564587809/tsirides-sto-keno/",
-        "https://www.kathimerini.gr/opinion/564588070/mipos-den-yparchei-toxikotita/",
-        "https://www.kathimerini.gr/opinion/564587863/koritsi-se-valitsa/",
-        "https://www.kathimerini.gr/opinion/564588088/mia-istoria-epistimonikis-fantasias/"
+        "https://www.kathimerini.gr/society/564588841/o-emfylios-tis-akakias/",
+        "https://www.kathimerini.gr/politics/564590494/ypex-i-ellada-aporriptei-ta-tetelesmena-tis-toyrkikis-eisvolis-kai-katochis-stin-kypro/"
       ],
-      "seen_at_utc": "2026-11-15T10:19:29.410668+00:00"
+      "seen_at_utc": "2026-11-15T10:51:22.256450+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1356,33 +1260,36 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1911191/suginisi-ston-10o-purosvestiko-stathmo-enos-leptou-sigi-kai-leuka-louloudia-gia-tous-duo-nekrous-purosvestes/?utm_source=rss",
-      "title": "Συγκίνηση στον 10ο Πυροσβεστικό Σταθμό: Ενός λεπτού σιγή και λευκά λουλούδια για τους δύο νεκρούς πυροσβέστες",
-      "normalized_title": "ΣΥΓΚΙΝΗΣΗ ΣΤΟΝ 10Ο ΠΥΡΟΣΒΕΣΤΙΚΟ ΣΤΑΘΜΟ: ΕΝΟΣ ΛΕΠΤΟΥ ΣΙΓΗ ΚΑΙ ΛΕΥΚΑ ΛΟΥΛΟΥΔΙΑ ΓΙΑ ΤΟΥΣ ΔΥΟ ΝΕΚΡΟΥΣ ΠΥΡΟΣΒΕΣΤΕΣ",
+      "url": "https://www.protothema.gr/greece/article/1911208/eisaggeliki-paraggelia-me-edoli-hrusohoidi-gia-anartisi-tou-giannakopoulou-sta-social-media-me-uvristiko-periehomeno/?utm_source=rss",
+      "title": "Εισαγγελική παραγγελία με εντολή Χρυσοχοΐδη για ανάρτηση του Δημήτρη Γιαννακόπουλου στα social media με υβριστικό περιεχόμενο",
+      "normalized_title": "ΕΙΣΑΓΓΕΛΙΚΗ ΠΑΡΑΓΓΕΛΙΑ ΜΕ ΕΝΤΟΛΗ ΧΡΥΣΟΧΟΙΔΗ ΓΙΑ ΑΝΑΡΤΗΣΗ ΤΟΥ ΔΗΜΗΤΡΗ ΓΙΑΝΝΑΚΟΠΟΥΛΟΥ ΣΤΑ SOCIAL MEDIA ΜΕ ΥΒΡΙΣΤΙΚΟ ΠΕΡΙΕΧΟΜΕΝΟ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1911191/suginisi-ston-10o-purosvestiko-stathmo-enos-leptou-sigi-kai-leuka-louloudia-gia-tous-duo-nekrous-purosvestes/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1911208/eisaggeliki-paraggelia-me-edoli-hrusohoidi-gia-anartisi-tou-giannakopoulou-sta-social-media-me-uvristiko-periehomeno/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-11-15T10:30:03.202810+00:00"
+      "seen_at_utc": "2026-11-15T10:51:22.256623+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1510395/syriza-kata-mitsotaki-i-akriveia-foyskonei-ta-pleonasmata-kai-adeiazei-tis-tsepes-ton-politon/",
-      "title": "ΣΥΡΙΖΑ κατά Μητσοτάκη: «Η ακρίβεια φουσκώνει τα πλεονάσματα και αδειάζει τις τσέπες των πολιτών»",
-      "normalized_title": "ΣΥΡΙΖΑ ΚΑΤΑ ΜΗΤΣΟΤΑΚΗ: «Η ΑΚΡΙΒΕΙΑ ΦΟΥΣΚΩΝΕΙ ΤΑ ΠΛΕΟΝΑΣΜΑΤΑ ΚΑΙ ΑΔΕΙΑΖΕΙ ΤΙΣ ΤΣΕΠΕΣ ΤΩΝ ΠΟΛΙΤΩΝ»",
+      "url": "https://www.efsyn.gr/epistimi/1510408/ipa-istoriko-orosimo-gia-ti-spacex-epityhimeni-prosdesi-toy-starship-o-starship-poy-epestrepse-sti-gi/",
+      "title": "ΗΠΑ: Ιστορικό ορόσημο για τη SpaceX – Επιτυχημένη πρόσδεση του Starship ο Starship που επέστρεψε στη Γη",
+      "normalized_title": "ΗΠΑ: ΙΣΤΟΡΙΚΟ ΟΡΟΣΗΜΟ ΓΙΑ ΤΗ SPACEX – ΕΠΙΤΥΧΗΜΕΝΗ ΠΡΟΣΔΕΣΗ ΤΟΥ STARSHIP Ο STARSHIP ΠΟΥ ΕΠΕΣΤΡΕΨΕ ΣΤΗ ΓΗ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1510395/syriza-kata-mitsotaki-i-akriveia-foyskonei-ta-pleonasmata-kai-adeiazei-tis-tsepes-ton-politon/"
+        "https://www.efsyn.gr/epistimi/1510408/ipa-istoriko-orosimo-gia-ti-spacex-epityhimeni-prosdesi-toy-starship-o-starship-poy-epestrepse-sti-gi/",
+        "https://www.efsyn.gr/ellada/1510387/polytehneio-spanio-ntokoymento-apo-tin-proti-epeteio-xyloyris-farantoyri-kalogiannis-tragoydoyn-mprosta-se-hiliades-vinteo/",
+        "https://www.efsyn.gr/athlitismos/1510398/kristiano-ronalnto-eyharistoyme-arhige-i-portogalia-timise-ton-cr7-eikones-vinteo/"
       ],
-      "seen_at_utc": "2026-11-15T10:30:03.202773+00:00"
+      "seen_at_utc": "2026-11-15T10:51:22.256568+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/15/sports/football/ethniki-ta-senaria-tis-3is-thesis-kai-i-tripli-simasia-tou-agona-me-tin-servia/",
-      "title": "Τα σενάρια της 3ης θέσης και η τριπλή σημασία του αγώνα της Εθνικής μας με την Σερβια",
-      "normalized_title": "ΤΑ ΣΕΝΑΡΙΑ ΤΗΣ 3ΗΣ ΘΕΣΗΣ ΚΑΙ Η ΤΡΙΠΛΗ ΣΗΜΑΣΙΑ ΤΟΥ ΑΓΩΝΑ ΤΗΣ ΕΘΝΙΚΗΣ ΜΑΣ ΜΕ ΤΗΝ ΣΕΡΒΙΑ",
+      "url": "https://www.in.gr/2026/11/15/politics/epikairotita/syriza-i-akriveia-fouskonei-ta-pleonasmata-kai-adeiazei-tis-tsepes-ton-politon-kai-o-mitsotakis-panigyrizei/",
+      "title": "ΣΥΡΙΖΑ: Η ακρίβεια φουσκώνει τα πλεονάσματα και αδειάζει τις τσέπες των πολιτών – Και ο Μητσοτάκης πανηγυρίζει",
+      "normalized_title": "ΣΥΡΙΖΑ: Η ΑΚΡΙΒΕΙΑ ΦΟΥΣΚΩΝΕΙ ΤΑ ΠΛΕΟΝΑΣΜΑΤΑ ΚΑΙ ΑΔΕΙΑΖΕΙ ΤΙΣ ΤΣΕΠΕΣ ΤΩΝ ΠΟΛΙΤΩΝ – ΚΑΙ Ο ΜΗΤΣΟΤΑΚΗΣ ΠΑΝΗΓΥΡΙΖΕΙ",
       "seen_urls": [
-        "https://www.in.gr/2026/11/15/sports/football/ethniki-ta-senaria-tis-3is-thesis-kai-i-tripli-simasia-tou-agona-me-tin-servia/",
-        "https://www.in.gr/2026/11/15/greece/thessaloniki-ektos-eaytou-44xronos-epixeirise-na-xtypisei-me-to-ix-tou-dyo-gynaikes-meta-apo-kavga/"
+        "https://www.in.gr/2026/11/15/politics/epikairotita/syriza-i-akriveia-fouskonei-ta-pleonasmata-kai-adeiazei-tis-tsepes-ton-politon-kai-o-mitsotakis-panigyrizei/",
+        "https://www.in.gr/2026/11/15/health/gripi-kai-koronoios-ayksithikan-oi-eisagoges-sta-nosokomeia-ekklisi-vasilakopoulou-gia-emvoliasmo/",
+        "https://www.in.gr/2026/11/15/greece/synelifthisan-dyo-odigoi-sti-thessaloniki-pou-ekanan-kontres-me-taxytita-160-xlm-ora/"
       ],
-      "seen_at_utc": "2026-11-15T10:30:03.202729+00:00"
+      "seen_at_utc": "2026-11-15T10:51:22.256488+00:00"
     }
   },
-  "updated_at_utc": "2026-11-15T10:30:03.202870+00:00"
+  "updated_at_utc": "2026-11-15T10:51:22.256686+00:00"
 }
