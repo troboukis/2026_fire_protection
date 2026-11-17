@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-16T16:23:56+00:00",
-  "database_now": "2026-11-16T16:23:50.067328+00:00",
-  "snapshot_at": "2026-11-16T18:23:49+02:00",
-  "snapshot_date": "2026-11-16",
-  "snapshot_time": "18:23",
+  "built_at": "2026-11-17T03:10:19+00:00",
+  "database_now": "2026-11-17T03:10:15.946652+00:00",
+  "snapshot_at": "2026-11-17T05:10:15+02:00",
+  "snapshot_date": "2026-11-17",
+  "snapshot_time": "05:10",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-16",
+  "period_end": "2026-11-17",
   "year_complete": false,
   "latest_contract_signed": "2026-11-13",
   "latest_payment_published": "2026-11-16",
@@ -795,23 +795,23 @@
   },
   {
    "year": 2025,
-   "contracts": 2313,
-   "amount": 305585870.6,
+   "contracts": 2319,
+   "amount": 305684335.18,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 390,
-     "amount": 206764661.38
+     "contracts": 391,
+     "amount": 206769496.38
     },
     {
      "group": "Δήμοι",
-     "contracts": 1057,
-     "amount": 37105853.95
+     "contracts": 1060,
+     "amount": 37146679.53
     },
     {
      "group": "Περιφέρειες",
-     "contracts": 563,
-     "amount": 11120639.41
+     "contracts": 565,
+     "amount": 11173443.41
     },
     {
      "group": "Λοιποί φορείς",
@@ -823,20 +823,20 @@
     {
      "class": "Καταστολή",
      "code": 0,
-     "contracts": 519,
-     "amount": 41656091.94
+     "contracts": 520,
+     "amount": 41679395.94
     },
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1290,
-     "amount": 221068459.82
+     "contracts": 1293,
+     "amount": 221105617.4
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 426,
-     "amount": 35712435.91
+     "contracts": 428,
+     "amount": 35750438.91
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
@@ -954,11 +954,11 @@
    },
    {
     "authority": "ΥΠΟΥΡΓΕΙΟ ΠΟΛΙΤΙΣΜΟΥ",
-    "contracts_previous": 69,
+    "contracts_previous": 70,
     "contracts_current": 89,
-    "amount_previous": 1456256.29,
+    "amount_previous": 1461091.29,
     "amount_current": 3963855.73,
-    "change": 2507599.44
+    "change": 2502764.44
    },
    {
     "authority": "ΔΗΜΟΣ ΕΛΛΗΝΙΚΟΥ - ΑΡΓΥΡΟΥΠΟΛΗΣ",
