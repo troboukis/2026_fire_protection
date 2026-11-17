@@ -1,14 +1,17 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/world/564594070/vretania-kyroseis-se-okto-israilines-etaireies-gia-toys-epoikismoys/",
-      "title": "Βρετανία: Κυρώσεις σε οκτώ ισραηλινές εταιρείες για τους εποικισμούς",
-      "normalized_title": "ΒΡΕΤΑΝΙΑ: ΚΥΡΩΣΕΙΣ ΣΕ ΟΚΤΩ ΙΣΡΑΗΛΙΝΕΣ ΕΤΑΙΡΕΙΕΣ ΓΙΑ ΤΟΥΣ ΕΠΟΙΚΙΣΜΟΥΣ",
+      "url": "https://www.kathimerini.gr/economy/international/564593386/poso-mas-kostizei-i-mprizola-toy-kinezoy/",
+      "title": "Πόσο μας κοστίζει η μπριζόλα του Κινέζου",
+      "normalized_title": "ΠΟΣΟ ΜΑΣ ΚΟΣΤΙΖΕΙ Η ΜΠΡΙΖΟΛΑ ΤΟΥ ΚΙΝΕΖΟΥ",
       "seen_urls": [
-        "https://www.kathimerini.gr/world/564594070/vretania-kyroseis-se-okto-israilines-etaireies-gia-toys-epoikismoys/",
-        "https://www.kathimerini.gr/world/564594064/ntonalnt-tramp-tzensen-choyangk-ti-kryvetai-piso-apo-ti-stirixi-ston-proin-ceo-tis-nvidia/"
+        "https://www.kathimerini.gr/economy/international/564593386/poso-mas-kostizei-i-mprizola-toy-kinezoy/",
+        "https://www.kathimerini.gr/life/technology/564594118/apagoreysi-kiniton-sta-scholeia-ti-deichnei-nea-ereyna-gia-tis-epidoseis-ton-mathiton/",
+        "https://www.kathimerini.gr/culture/tv/564594115/to-slow-horses-tha-epistrepsei-gia-enati-kai-dekati-sezon/",
+        "https://www.kathimerini.gr/culture/athinaika-plus/564592825/mia-ekdilosi-gia-tis-strofades-stin-elliniki-etaireia-perivallontos-kai-politismoy/",
+        "https://www.kathimerini.gr/society/564594106/efet-anakaloyntai-ryzogkofretes-logo-paroysias-skoylikion/"
       ],
-      "seen_at_utc": "2026-11-17T10:30:02.185510+00:00"
+      "seen_at_utc": "2026-11-17T10:51:24.303229+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1260,33 +1263,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1912242/edopistikan-skoulikia-se-ruzogofretes-me-geusi-parmezana-i-anakoinosi-tou-efet/?utm_source=rss",
-      "title": "Εντοπίστηκαν σκουλήκια σε ρυζογκοφρέτες με γεύση παρμεζάνα, η ανακοίνωση του ΕΦΕΤ",
-      "normalized_title": "ΕΝΤΟΠΙΣΤΗΚΑΝ ΣΚΟΥΛΗΚΙΑ ΣΕ ΡΥΖΟΓΚΟΦΡΕΤΕΣ ΜΕ ΓΕΥΣΗ ΠΑΡΜΕΖΑΝΑ, Η ΑΝΑΚΟΙΝΩΣΗ ΤΟΥ ΕΦΕΤ",
+      "url": "https://www.protothema.gr/greece/article/1912252/76hronos-sto-irakleio-psekaze-me-hlorini-tin-trofi-adespoton-zoon/?utm_source=rss",
+      "title": "76χρονος στο Ηράκλειο ψέκαζε με χλωρίνη την τροφή αδέσποτων ζώων",
+      "normalized_title": "76ΧΡΟΝΟΣ ΣΤΟ ΗΡΑΚΛΕΙΟ ΨΕΚΑΖΕ ΜΕ ΧΛΩΡΙΝΗ ΤΗΝ ΤΡΟΦΗ ΑΔΕΣΠΟΤΩΝ ΖΩΩΝ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1912242/edopistikan-skoulikia-se-ruzogofretes-me-geusi-parmezana-i-anakoinosi-tou-efet/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1912252/76hronos-sto-irakleio-psekaze-me-hlorini-tin-trofi-adespoton-zoon/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-11-17T10:30:02.185646+00:00"
+      "seen_at_utc": "2026-11-17T10:51:24.303330+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1511772/zefyri-i-sideroverga-perase-mesa-apo-tin-maska-toy-oi-teleytaies-stigmes-ton-dyo-pyrosveston/",
-      "title": "Ζεφύρι: «Η σιδερόβεργα πέρασε μέσα από την μάσκα του» – Οι τελευταίες στιγμές των δύο πυροσβεστών",
-      "normalized_title": "ΖΕΦΥΡΙ: «Η ΣΙΔΕΡΟΒΕΡΓΑ ΠΕΡΑΣΕ ΜΕΣΑ ΑΠΟ ΤΗΝ ΜΑΣΚΑ ΤΟΥ» – ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΣΤΙΓΜΕΣ ΤΩΝ ΔΥΟ ΠΥΡΟΣΒΕΣΤΩΝ",
+      "url": "https://www.efsyn.gr/oikonomia/1511725/forokataigida-fpa-saronei-ta-noikokyria/",
+      "title": "Φοροκαταιγίδα ΦΠΑ «σαρώνει» τα νοικοκυριά",
+      "normalized_title": "ΦΟΡΟΚΑΤΑΙΓΙΔΑ ΦΠΑ «ΣΑΡΩΝΕΙ» ΤΑ ΝΟΙΚΟΚΥΡΙΑ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1511772/zefyri-i-sideroverga-perase-mesa-apo-tin-maska-toy-oi-teleytaies-stigmes-ton-dyo-pyrosveston/"
+        "https://www.efsyn.gr/oikonomia/1511725/forokataigida-fpa-saronei-ta-noikokyria/",
+        "https://www.efsyn.gr/kosmos/1511745/oi-tsehoi-diadilonoyn-apaitontas-anexartiti-dimosia-radiotileorasi/",
+        "https://www.efsyn.gr/politiki/1511820/apostaseis-amyra-apo-georgiadi-gia-toys-nekroys-toy-polytehneioy-ehoyme-dolofonimenoys-anthropoys-apo-ti-hoynta/",
+        "https://www.efsyn.gr/ellada/1511806/zefyri-se-klima-vathias-odynis-i-kideia-toy-23hronoy-pyrosvesti-stin-kastoria-eikones/",
+        "https://www.efsyn.gr/ellada/1511693/mia-apeili-kamia-desmeysi-gia-aposyrsi-ton-meleton-toy-ypen/",
+        "https://www.efsyn.gr/ellada/1511677/kykloma-me-etaireies-fantasmata-sti-thessaloniki-enishyseis-sti-dikastiki-diereynisi/",
+        "https://www.efsyn.gr/politiki/1511727/arvanitis-apelaseis-sti-royanta-me-elliniki-ypografi/",
+        "https://www.efsyn.gr/ellada/1511650/kypseli-kindynos-yparhei-alla-den-ginetai-metegkatastasi/",
+        "https://www.efsyn.gr/politiki/1511758/hrysohoidis-gia-polytehneio-yparhei-orimotita-nomizo-oti-i-epeteios-tha-einai-eiriniki/"
       ],
-      "seen_at_utc": "2026-11-17T10:30:02.185599+00:00"
+      "seen_at_utc": "2026-11-17T10:51:24.303313+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/17/world/servia-synetrivi-maxitiko-aeroskafos-mig-29-nekros-o-pilotos/",
-      "title": "Συνετρίβη μαχητικό αεροσκάφος MiG-29 στη Σερβία - Νεκρός ο πιλότος",
-      "normalized_title": "ΣΥΝΕΤΡΙΒΗ ΜΑΧΗΤΙΚΟ ΑΕΡΟΣΚΑΦΟΣ MIG-29 ΣΤΗ ΣΕΡΒΙΑ - ΝΕΚΡΟΣ Ο ΠΙΛΟΤΟΣ",
+      "url": "https://www.in.gr/2026/11/17/politics/aftodioikisi/xairetismos-tou-dimarxou-peiraia-gianni-morali-stin-enimerotiki-ekdilosi-tou-syllogou-atomon-me-sakxarodi-diaviti-peiraia-nison/",
+      "title": "Χαιρετισμός του Γιάννη Μώραλη στην εκδήλωση του Συλλόγου Ατόμων με Σακχαρώδη Διαβήτη Πειραιά & Νήσων",
+      "normalized_title": "ΧΑΙΡΕΤΙΣΜΟΣ ΤΟΥ ΓΙΑΝΝΗ ΜΩΡΑΛΗ ΣΤΗΝ ΕΚΔΗΛΩΣΗ ΤΟΥ ΣΥΛΛΟΓΟΥ ΑΤΟΜΩΝ ΜΕ ΣΑΚΧΑΡΩΔΗ ΔΙΑΒΗΤΗ ΠΕΙΡΑΙΑ & ΝΗΣΩΝ",
       "seen_urls": [
-        "https://www.in.gr/2026/11/17/world/servia-synetrivi-maxitiko-aeroskafos-mig-29-nekros-o-pilotos/",
-        "https://www.in.gr/2026/11/17/sports/football/to-ksespasma-tis-miteras-tou-kristiano-ronalnto-kala-na-pathei-i-portogalia-den-ton-sevastikan/"
+        "https://www.in.gr/2026/11/17/politics/aftodioikisi/xairetismos-tou-dimarxou-peiraia-gianni-morali-stin-enimerotiki-ekdilosi-tou-syllogou-atomon-me-sakxarodi-diaviti-peiraia-nison/",
+        "https://www.in.gr/2026/11/17/greece/efet-anakalountai-ryzogkofretes-logo-skoulikion/",
+        "https://www.in.gr/2026/11/17/greece/kastoria-to-teleytaio-antio-ston-23xrono-pyrosvesti-pou-exase-ti-zoi-tou-sto-zefyri/"
       ],
-      "seen_at_utc": "2026-11-17T10:30:02.185558+00:00"
+      "seen_at_utc": "2026-11-17T10:51:24.303290+00:00"
     }
   },
-  "updated_at_utc": "2026-11-17T10:30:02.185717+00:00"
+  "updated_at_utc": "2026-11-17T10:51:24.303399+00:00"
 }
