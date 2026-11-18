@@ -1,3 +1,5 @@
+import analysisMethodology1 from '../catalogs/analysisMethodology1.en.json'
+import analysisMethodology2 from '../catalogs/analysisMethodology2.en.json'
 import analysisYearly3 from '../catalogs/analysisYearly3.en.json'
 import analysisYearly2 from '../catalogs/analysisYearly2.en.json'
 import analysisYearly1 from '../catalogs/analysisYearly1.en.json'
@@ -23,6 +25,8 @@ import publicInfo from '../catalogs/publicInfo.en.json'
 import mediaTitles from '../catalogs/mediaTitles.en.json'
 
 export const en = {
+  analysisMethodology1,
+  analysisMethodology2,
   analysisYearly3,
   analysisYearly2,
   analysisYearly1,

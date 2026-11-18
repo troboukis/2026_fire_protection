@@ -5,7 +5,11 @@ import { describe, expect, it } from 'vitest'
 import I18nProvider from '../../../i18n/I18nProvider'
 import type { AppLanguage } from '../../../i18n/languages'
 import MethodologyGuidePage from './MethodologyGuidePage'
-import { evaluateTitle, matchPrefix, negativeTokens, NEGATIVE_GROUPS, NEGATIVE_KEYWORDS, TESTER_PRESETS } from './guideData'
+import { getOverviewUi } from '../../../i18n/overview'
+import messages1 from '../../../i18n/catalogs/analysisMethodology1.el.json'
+import messages2 from '../../../i18n/catalogs/analysisMethodology2.el.json'
+import { guideCode } from './guideCode'
+import { CODE_EFFIS, CODE_FIRMS, CODE_JOIN, COPY_PAYLOADS, evaluateTitle, matchPrefix, negativeTokens, NEGATIVE_GROUPS, NEGATIVE_KEYWORDS, TESTER_PRESETS } from './guideData'
 
 function render(language: AppLanguage) {
   const path = language === 'en' ? '/en/analysis/methodology_guide' : '/analysis/methodology_guide'
@@ -13,26 +17,76 @@ function render(language: AppLanguage) {
 }
 
 describe('methodology guide page', () => {
-  // User decision (2026-11-18): the English route shows the Greek guide until it is translated.
-  it('renders the same Greek guide on both routes, marked as Greek', () => {
+  it('translates the guide while keeping the Greek source examples and the same section anchors', () => {
     const greek = render('el')
     const english = render('en')
     for (const html of [greek, english]) {
-      expect(html).toContain('<article class="mg-root" lang="el">')
-      expect(html).toContain('<section id="dokimi"')
-      expect(html).toContain('Κρατάμε = ( ')
+      for (const { title } of TESTER_PRESETS) expect(html).toContain(`<td lang="el">${title}</td>`)
       expect(html.replace(/<[^>]+>/g, ' ')).not.toMatch(/undefined|NaN|\[object Object\]/)
     }
+    expect(greek).toContain('<article class="mg-root" lang="el">')
+    expect(greek).toContain('Κρατάμε = ( ')
+    expect(english).toContain('<article class="mg-root" lang="en">')
+    expect(english).toContain('How we collect public data on forest fires')
+    expect(english).not.toContain('Enter a Greek title')
+    expect(english).toContain('Keep = ( ')
+    const withoutSources = english.replace(/<(td|span|code|mark|textarea)\b[^>]*\blang="el"[^>]*>[\s\S]*?<\/\1>/g, '')
+    expect(withoutSources.match(/\p{Script=Greek}+/gu) ?? []).toEqual([])
     expect(english).toContain('href="/en/analysis"')
     expect(english).toContain('All analyses')
     expect(greek).toContain('href="/analysis"')
+    const geometry = (html: string) => html.match(/<(?:circle|rect|line|pattern|clipPath)\b[^>]*>/g)
+    expect(geometry(english)).toEqual(geometry(greek))
   })
 
   it('links every table-of-contents entry to a section', () => {
-    const html = render('el')
-    const targets = [...html.matchAll(/<a href="#([^"]+)"/g)].map(match => match[1])
-    expect(targets).toHaveLength(10)
-    for (const id of targets) expect(html).toContain(`<section id="${id}"`)
+    for (const language of ['el', 'en'] as const) {
+      const html = render(language)
+      const targets = [...html.matchAll(/<a href="#([^"]+)"/g)].map(match => match[1])
+      expect(targets).toHaveLength(language === 'el' ? 10 : 9)
+      for (const id of targets) expect(html).toContain(`<section id="${id}"`)
+    }
+  })
+
+  it('never submits the source contract titles or raw keyword lists for translation', () => {
+    const corpus = Object.values({ ...messages1, ...messages2 }).join('\n')
+    for (const { title } of TESTER_PRESETS) expect(corpus).not.toContain(title)
+    for (const root of Object.keys(NEGATIVE_KEYWORDS)) expect(Object.values({ ...messages1, ...messages2 })).not.toContain(root)
+  })
+
+  it('localizes only example code comments and copy text, preserving the executable code and raw payloads', () => {
+    const clean = (code: string) => code.replace(/#[^\n]*/g, '').replace(/"(?:ΤΟ_ΚΛΕΙΔΙ_ΣΑΣ|YOUR_MAP_KEY)"/g, '"KEY"').replace(/"(?:πυρκαγιές|fires)"/g, '"FIRES"')
+    for (const code of [CODE_EFFIS, CODE_FIRMS, CODE_JOIN]) {
+      expect(guideCode(code, getOverviewUi('el'))).toBe(code)
+      const english = guideCode(code, getOverviewUi('en'))
+      expect(english).not.toMatch(/\p{Script=Greek}/u)
+      expect(clean(english)).toBe(clean(code))
+    }
+    expect(COPY_PAYLOADS.positive).toContain('πυροπροστασ')
+    expect(COPY_PAYLOADS.primary['75251120-7']).toBe('Υπηρεσίες καταπολέμησης δασοπυρκαγιών')
+  })
+
+  it('omits the tester and both keyword panels only in English, keeping both CPV panels', () => {
+    const greek = render('el')
+    const english = render('en')
+    expect(greek).toContain('<section id="dokimi"')
+    expect(greek).toContain('href="#dokimi"')
+    expect(greek).toContain('<textarea')
+    expect(english).not.toContain('<section id="dokimi"')
+    expect(english).not.toContain('href="#dokimi"')
+    expect(english).not.toContain('<textarea')
+    for (const [html, count] of [[greek, 4], [english, 2]] as const) {
+      const lists = html.slice(html.indexOf('<section id="listes"'), html.indexOf('<section id="piges"'))
+      expect(lists.match(/class="mg-kit__box"/g)).toHaveLength(count)
+      expect(lists).toContain('>Primary CPVs</h4>')
+      expect(lists).toContain('>Secondary CPVs</h4>')
+      if (count === 2) {
+        expect(lists).not.toContain('>Positive keywords</h4>')
+        expect(lists).not.toContain('>Negative keywords</h4>')
+        expect(lists).toContain('5 · Lists')
+      }
+    }
+    expect(english).toContain('9 · Pitfalls')
   })
 })
 

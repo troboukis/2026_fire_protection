@@ -34,10 +34,9 @@ describe('bilingual analysis catalogue', () => {
     expect(english.match(/<img[^>]*src="([^"]+)"/g)).toEqual(greek.match(/<img[^>]*src="([^"]+)"/g))
     expect(fireSeasonReview.title).toBe('Ανασκόπηση Αντιπυρικής Περιόδου 2026')
     expect(fireSeasonReview.publishedAt).toBe('2026-11-03')
-    // The methodology guide card stays in Greek on the English route for now (user decision, 2026-11-18).
-    expect(english).toContain('lang="el"><h2>Οδηγός μεθοδολογίας')
+    expect(english).toContain('<h2>Methodology guide: how we collect fire protection contracts</h2>')
     expect(english).toContain('dateTime="2026-11-18"')
-    expect(english.replace(/<img[^>]*lang="el"[^>]*>/g, '').replace(/<div class="analysis-card__copy" lang="el">[\s\S]*?<\/div>/g, '')).not.toMatch(/[Α-Ωα-ω]/)
+    expect(english).not.toMatch(/[Α-Ωα-ω]/)
   })
 })
 

@@ -32,6 +32,16 @@ MAX_BATCH_CHARACTERS = 20_000
 # Add reviewed UI-only sources here. Never accept arbitrary input paths or
 # database fields. Contract/document titles must never enter text OR context.
 CATALOGUES = {
+    'analysisMethodology1': {
+        'path': ROOT / 'app/src/i18n/catalogs/analysisMethodology1.el.json',
+        'kind': 'ui',
+        'context': 'Υπάρχον δημοσιογραφικό άρθρο και οδηγίες του FireWatch για μελέτη δημόσιων συμβάσεων πυροπροστασίας. Μόνο editorial αφήγηση, UI και σχόλια παραδειγμάτων κώδικα, όχι πραγματικοί τίτλοι συμβάσεων ή διοικητικών εγγράφων, source values, search roots, raw records ή PDF. Διατήρηση λογικών συνόλων και επιστημονικών επιφυλάξεων. Διάκριση contract values, payments, funding, commitments, VAT και double counting. Primary και Secondary CPVs παραμένουν οι αντίστοιχες κατηγορίες. Consistent inclusion/exclusion keywords, contracting authority και contractor. Code placeholders αποδίδονται ως YOUR_MAP_KEY. FireWatch, EFFIS, FIRMS, MODIS, VIIRS, EPSG και identifiers διατηρούνται.',
+    },
+    'analysisMethodology2': {
+        'path': ROOT / 'app/src/i18n/catalogs/analysisMethodology2.el.json',
+        'kind': 'ui',
+        'context': 'Υπάρχον δημοσιογραφικό άρθρο και οδηγίες του FireWatch για μελέτη δημόσιων συμβάσεων πυροπροστασίας. Μόνο editorial αφήγηση, UI και σχόλια παραδειγμάτων κώδικα, όχι πραγματικοί τίτλοι συμβάσεων ή διοικητικών εγγράφων, source values, search roots, raw records ή PDF. Διατήρηση λογικών συνόλων και επιστημονικών επιφυλάξεων. Διάκριση contract values, payments, funding, commitments, VAT και double counting. Primary και Secondary CPVs παραμένουν οι αντίστοιχες κατηγορίες. Consistent inclusion/exclusion keywords, contracting authority και contractor. Code placeholders αποδίδονται ως YOUR_MAP_KEY. FireWatch, EFFIS, FIRMS, MODIS, VIIRS, EPSG και identifiers διατηρούνται.',
+    },
     'metadata': {
         'path': ROOT / 'app/src/i18n/catalogs/metadata.el.json',
         'kind': 'ui',

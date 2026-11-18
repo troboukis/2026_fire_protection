@@ -15,7 +15,6 @@ export default function AnalysisPage() {
         imageSrc={`${import.meta.env.BASE_URL}social/methodology-guide.svg`}
         imageAlt="Διάγραμμα Venn με κωδικούς CPV, θετικές και αρνητικές λέξεις-κλειδιά"
         publishedAt="2026-11-18"
-        greekOnly
       />
       <AnalysisCard {...fireSeasonReview} imageFit="contain" />
       {SHOW_YEARLY_REPORT && (

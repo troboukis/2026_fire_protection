@@ -10,7 +10,7 @@ export default function MethodologyGuidePage() {
   return (
     <main className="analysis-detail-page">
       <nav aria-label={ui("Πλοήγηση ανάλυσης")}><Link className="analysis-back" to="/analysis">{ui("← Όλες οι αναλύσεις")}</Link></nav>
-      <ErrorBoundary fallback={<div className="mg-empty-note" lang="el">Ο οδηγός δεν είναι διαθέσιμος προσωρινά.</div>}>
+      <ErrorBoundary fallback={<div className="mg-empty-note">{ui("Ο οδηγός δεν είναι διαθέσιμος προσωρινά.")}</div>}>
         <MethodologyGuide />
       </ErrorBoundary>
     </main>

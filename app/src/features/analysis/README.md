@@ -32,7 +32,7 @@ Publication dates use the first introduction of each analysis, checked against G
 - `methodology-guide/MethodologyGuidePage.tsx`: route shell and back navigation.
 - `methodology-guide/MethodologyGuide.tsx`: the guide for journalists in other countries (selection criteria, Venn steps, Diavgeia rule, title tester, keyword lists, data sources, fire-data code, research questions, pitfalls).
 - `methodology-guide/guideData.ts`: CPV and keyword lists and a TypeScript port of the matching rules. They mirror `src/fetch_kimdis_procurements.py` and `src/keyword_exclusions.py`; update both together. `MethodologyGuide.test.ts` checks the worked examples and the grouping of every negative keyword.
-- Greek only for now: the English route `/en/analysis/methodology_guide` shows the same Greek text with `lang="el"` (`englishPending` in `pages.json`, `greekOnly` on its catalog card). Remove both flags when the English text is ready.
+- English: `/en/analysis/methodology_guide` uses the same component and reviewed DeepL/editorial catalogues. The original Greek sample titles, matching roots, tester input/matches and copied keyword/CPV payloads stay unchanged. Code comments are localized through `guideCode.ts`; executable identifiers, URLs and numeric parameters remain exact.
 - Card image: `app/public/social/methodology-guide.svg`.
 
 ## Fire-season retrospective 2026

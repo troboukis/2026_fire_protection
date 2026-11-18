@@ -1,3 +1,5 @@
+import analysisMethodology1 from './catalogs/analysisMethodology1.el.json'
+import analysisMethodology2 from './catalogs/analysisMethodology2.el.json'
 import analysisYearly3 from './catalogs/analysisYearly3.el.json'
 import analysisYearly2 from './catalogs/analysisYearly2.el.json'
 import analysisYearly1 from './catalogs/analysisYearly1.el.json'
@@ -15,7 +17,7 @@ import ministry from './catalogs/ministry.el.json'
 import publicInfo from './catalogs/publicInfo.el.json'
 import mediaTitles from './catalogs/mediaTitles.el.json'
 
-type MessageKey = `analysisYearly3:${keyof typeof analysisYearly3}` | `analysisYearly2:${keyof typeof analysisYearly2}` | `analysisYearly1:${keyof typeof analysisYearly1}` | `analysisAntinero:${keyof typeof analysisAntinero}` | `analysisStatistics:${keyof typeof analysisStatistics}` | `analysisCatalog:${keyof typeof analysisCatalog}` | `overview:${keyof typeof greek}` | `places:${keyof typeof places}` | `ministry:${keyof typeof ministry}` | `publicInfo:${keyof typeof publicInfo}` | `mediaTitles:${keyof typeof mediaTitles}`
+type MessageKey = `analysisMethodology1:${keyof typeof analysisMethodology1}` | `analysisMethodology2:${keyof typeof analysisMethodology2}` | `analysisYearly3:${keyof typeof analysisYearly3}` | `analysisYearly2:${keyof typeof analysisYearly2}` | `analysisYearly1:${keyof typeof analysisYearly1}` | `analysisAntinero:${keyof typeof analysisAntinero}` | `analysisStatistics:${keyof typeof analysisStatistics}` | `analysisCatalog:${keyof typeof analysisCatalog}` | `overview:${keyof typeof greek}` | `places:${keyof typeof places}` | `ministry:${keyof typeof ministry}` | `publicInfo:${keyof typeof publicInfo}` | `mediaTitles:${keyof typeof mediaTitles}`
 type Values = Record<string, string | number | null | undefined>
 export type OverviewUi = ((source: string, values?: Values) => string) & ReturnType<typeof taxonomyUi> & {
   language: AppLanguage
@@ -26,6 +28,8 @@ export type OverviewUi = ((source: string, values?: Values) => string) & ReturnT
 // These are bundled UI messages, never an API request or automatic translation
 // of record fields. Unknown source text is returned exactly as supplied.
 const sourceKeys = new Map<string, MessageKey>([
+  ...Object.entries(analysisMethodology1).map(([key, source]) => [source, `analysisMethodology1:${key}`] as [string, MessageKey]),
+  ...Object.entries(analysisMethodology2).map(([key, source]) => [source, `analysisMethodology2:${key}`] as [string, MessageKey]),
   ...Object.entries(analysisYearly3).map(([key, source]) => [source, `analysisYearly3:${key}`] as [string, MessageKey]),
   ...Object.entries(analysisYearly2).map(([key, source]) => [source, `analysisYearly2:${key}`] as [string, MessageKey]),
   ...Object.entries(analysisYearly1).map(([key, source]) => [source, `analysisYearly1:${key}`] as [string, MessageKey]),
