@@ -177,6 +177,14 @@ export async function loadContractModal(row: ContractModalFallback): Promise<Con
     regionLabel: clean(region?.region_normalized_value) || clean(region?.region_value),
   })
   const modal: ContractModalContract = {
+    sourceValues: {
+      submittedAt: cleanText(procurement.submission_at),
+      signedAt: cleanText(procurement.contract_signed_date),
+      startDate: cleanText(procurement.start_date),
+      endDate: cleanText(procurement.end_date),
+      withoutVat: amountWithoutVat,
+      withVat: amountWithVat,
+    },
     id: String(procurement.id),
     who,
     what: clean(procurement.title) || clean(row.title) || '—',

@@ -1,3 +1,4 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
@@ -31,17 +32,17 @@ interface Tooltip {
 }
 interface TooltipPosition { left: number; top: number }
 
-function fmtPer100kEur(v: number): string {
+function fmtPer100kEur(v: number, ui: OverviewUi = greekOverviewUi): string {
   if (v <= 0) return '0'
 
   const step = v >= 100000 ? 100000 : v >= 10000 ? 10000 : 1000
   const bucket = Math.ceil(v / step) * step
 
   if (bucket >= 1000) {
-    return `<${(bucket / 1000).toLocaleString('el-GR', { maximumFractionDigits: 0 })}K`
+    return `<${(bucket / 1000).toLocaleString(ui.locale, { maximumFractionDigits: 0 })}K`
   }
 
-  return `<${bucket.toLocaleString('el-GR')}`
+  return `<${bucket.toLocaleString(ui.locale)}`
 }
 
 function buildColorScale(data: Record<string, number>): d3.ScalePower<number, number> {
@@ -88,6 +89,7 @@ export function GreeceMap({
   municipalityLabelById,
   showChoropleth = true,
 }: Props) {
+  const ui = useOverviewUi()
   const containerRef          = useRef<HTMLDivElement>(null)
   const svgRef                = useRef<SVGSVGElement>(null)
   const tooltipRef            = useRef<HTMLDivElement>(null)
@@ -334,7 +336,7 @@ export function GreeceMap({
     <div ref={containerRef} style={{ position: 'relative', width: '100%', height: '100%' }}>
       <ComponentTag name="GreeceMap" className="component-tag--overlay" />
       {!geojson && (
-        <DataLoadingCard className="map-loading" compact message="Προετοιμάζεται ο εθνικός χάρτης συμβάσεων." />
+        <DataLoadingCard className="map-loading" compact message={ui("Προετοιμάζεται ο εθνικός χάρτης συμβάσεων.")} />
       )}
       <svg
         ref={svgRef}
@@ -346,12 +348,12 @@ export function GreeceMap({
           className="map-tooltip app-tooltip"
           style={{ left: tooltipPosition.left, top: tooltipPosition.top, transform: 'none' }}
         >
-          <span className="map-tooltip-name">{tooltip.name}</span>
+          <span className="map-tooltip-name">{ui.organization(tooltip.name)}</span>
           {tooltip.amountPer100k != null && (
-            <span className="map-tooltip-pct">{metricLabel}: {fmtPer100kEur(tooltip.amountPer100k)} ανά 100.000 κατοίκους</span>
+            <span className="map-tooltip-pct">{metricLabel}: {fmtPer100kEur(tooltip.amountPer100k, ui)} {ui("ανά 100.000 κατοίκους")}</span>
           )}
-          <span className="map-tooltip-pct">{tooltip.signedCurrentCount.toLocaleString('el-GR')} συμβάσεις το {currentYear}</span>
-          <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString('el-GR')} συμβάσεις πριν το {currentYear}, που ήταν ενεργές* το {currentYear}</span>
+          <span className="map-tooltip-pct">{tooltip.signedCurrentCount.toLocaleString(ui.locale)} {ui("συμβάσεις το ")}{currentYear}</span>
+          <span className="map-tooltip-pct">{tooltip.activePreviousCount.toLocaleString(ui.locale)} {ui("συμβάσεις πριν το ")}{currentYear}{ui(", που ήταν ενεργές* το ")}{currentYear}</span>
         </div>
       )}
     </div>

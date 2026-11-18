@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../../../i18n/overview'
 import { useCallback, useEffect, useRef, useState, type ReactNode, type RefObject } from 'react'
 import { scaleBand, scaleLinear, scaleLog } from 'd3'
 
@@ -69,8 +70,9 @@ function niceTicks(max: number, count = 4) {
 }
 
 export function Legend({ series }: { series: Series[] }) {
+  const ui = useOverviewUi()
   return (
-    <ul className="yr-legend" aria-label="Υπόμνημα">
+    <ul className="yr-legend" aria-label={ui("Υπόμνημα")}>
       {series.map(item => (
         <li key={item.key}><span className="yr-legend__swatch" style={{ background: item.color }} aria-hidden="true" />{item.label}</li>
       ))}
@@ -81,9 +83,10 @@ export function Legend({ series }: { series: Series[] }) {
 export type TableColumn = { key: string; label: string; numeric?: boolean }
 
 export function DataTable({ columns, rows, caption }: { columns: TableColumn[]; rows: Record<string, ReactNode>[]; caption: string }) {
+  const ui = useOverviewUi()
   return (
     <details className="yr-table">
-      <summary>Δείτε τα δεδομένα του γραφήματος</summary>
+      <summary>{ui("Δείτε τα δεδομένα του γραφήματος")}</summary>
       <div className="yr-table__scroll">
         <table>
           <caption>{caption}</caption>
@@ -137,6 +140,7 @@ export function ColumnChart({ data, formatAxis, color, mutedColor, band, axisTit
   labelAnchor?: number
   height?: number
 }) {
+  const ui = useOverviewUi()
   const [ref, width] = useWidth<HTMLDivElement>()
   const { tooltip, show, hide } = useTooltip(ref)
   const margin = { top: 12, right: 8, bottom: axisTitle ? 44 : 26, left: 48 }
@@ -152,7 +156,7 @@ export function ColumnChart({ data, formatAxis, color, mutedColor, band, axisTit
   return (
     <div className="yr-plot" ref={ref}>
       {width > 0 && (
-        <svg width={width} height={height} role="img" aria-label="Ραβδόγραμμα">
+        <svg width={width} height={height} role="img" aria-label={ui("Ραβδόγραμμα")}>
           <g transform={`translate(${margin.left},${margin.top})`}>
             {band && (() => {
               const x0 = (x(String(band.from)) ?? 0) - (x.step() * x.paddingInner()) / 2
@@ -182,7 +186,7 @@ export function ColumnChart({ data, formatAxis, color, mutedColor, band, axisTit
                   <rect className="yr-hit" x={x(String(i))} y={0} width={x.bandwidth()} height={innerH} />
                   <path d={columnPath(bx, by, barW, innerH - by)} fill={fill} />
                   {(!compact || (i - labelAnchor) % 2 === 0) && (
-                    <text className="yr-axis-label" x={labelX} y={innerH + 16} textAnchor="middle">{item.label}</text>
+                    <text className="yr-axis-label" x={labelX} y={innerH + 16} textAnchor="middle">{ui(item.label)}</text>
                   )}
                 </g>
               )
@@ -211,6 +215,7 @@ export function LogHistogram({ bins, threshold, thresholdLabel, emphasize, color
   formatAmount: (value: number) => string
   height?: number
 }) {
+  const ui = useOverviewUi()
   const [ref, width] = useWidth<HTMLDivElement>()
   const { tooltip, show, hide } = useTooltip(ref)
   const margin = { top: 16, right: 12, bottom: 30, left: 40 }
@@ -230,22 +235,22 @@ export function LogHistogram({ bins, threshold, thresholdLabel, emphasize, color
   return (
     <div className="yr-plot" ref={ref}>
       {width > 0 && (
-        <svg width={width} height={height} role="img" aria-label="Ιστόγραμμα αξιών απευθείας αναθέσεων">
+        <svg width={width} height={height} role="img" aria-label={ui("Ιστόγραμμα αξιών απευθείας αναθέσεων")}>
           <g transform={`translate(${margin.left},${margin.top})`}>
             {ticks.map(tick => (
               <g key={tick} transform={`translate(0,${y(tick)})`}>
                 <line className="yr-grid" x1={0} x2={innerW} />
-                <text className="yr-axis-label" x={-8} dy="0.32em" textAnchor="end">{tick.toLocaleString('el-GR')}</text>
+                <text className="yr-axis-label" x={-8} dy="0.32em" textAnchor="end">{tick.toLocaleString(ui.locale)}</text>
               </g>
             ))}
             {bins.map(bin => {
               const x0 = x(bin.lo) + 1
               const w = Math.max(x(bin.hi) - x(bin.lo) - 2, 1)
               const by = y(bin.count)
-              const content = <><strong>{formatAmount(bin.lo)} – {formatAmount(bin.hi)}</strong><span>{bin.count.toLocaleString('el-GR')} απευθείας αναθέσεις</span></>
+              const content = <><strong>{formatAmount(bin.lo)} – {formatAmount(bin.hi)}</strong><span>{bin.count.toLocaleString(ui.locale)} {ui("απευθείας αναθέσεις")}</span></>
               return (
                 <g key={bin.lo} className="yr-mark" tabIndex={0} role="graphics-symbol"
-                  aria-label={`${formatAmount(bin.lo)} έως ${formatAmount(bin.hi)}: ${bin.count} αναθέσεις`}
+                  aria-label={ui("{{v0}} έως {{v1}}: {{v2}} αναθέσεις", { v0: formatAmount(bin.lo), v1: formatAmount(bin.hi), v2: bin.count })}
                   onPointerEnter={e => show(e.currentTarget, content)} onPointerLeave={hide}
                   onFocus={e => show(e.currentTarget, content)} onBlur={hide}>
                   <rect className="yr-hit" x={x(bin.lo)} y={0} width={Math.max(x(bin.hi) - x(bin.lo), 1)} height={innerH} />
@@ -278,6 +283,7 @@ export function GroupedColumns({ data, series, formatAxis, band, height = 250 }:
   band?: { from: number; to: number; label: string }
   height?: number
 }) {
+  const ui = useOverviewUi()
   const [ref, width] = useWidth<HTMLDivElement>()
   const { tooltip, show, hide } = useTooltip(ref)
   const margin = { top: 14, right: 8, bottom: 26, left: 40 }
@@ -293,7 +299,7 @@ export function GroupedColumns({ data, series, formatAxis, band, height = 250 }:
   return (
     <div className="yr-plot" ref={ref}>
       {width > 0 && (
-        <svg width={width} height={height} role="img" aria-label="Ομαδοποιημένο ραβδόγραμμα">
+        <svg width={width} height={height} role="img" aria-label={ui("Ομαδοποιημένο ραβδόγραμμα")}>
           <g transform={`translate(${margin.left},${margin.top})`}>
             {band && (() => {
               const x0 = (x(String(band.from)) ?? 0) - (x.step() * x.paddingInner()) / 2
@@ -322,7 +328,7 @@ export function GroupedColumns({ data, series, formatAxis, band, height = 250 }:
                   const by = y(value)
                   return <path key={s.key} d={columnPath(bx, by, barW, innerH - by)} fill={s.color} />
                 })}
-                <text className="yr-axis-label" x={(x(String(i)) ?? 0) + x.bandwidth() / 2} y={innerH + 16} textAnchor="middle">{item.label}</text>
+                <text className="yr-axis-label" x={(x(String(i)) ?? 0) + x.bandwidth() / 2} y={innerH + 16} textAnchor="middle">{ui(item.label)}</text>
               </g>
             ))}
             <line className="yr-baseline" x1={0} x2={innerW} y1={innerH} y2={innerH} />
@@ -343,6 +349,7 @@ export function StackedColumns({ data, series, formatAxis, formatTotal, height =
   formatTotal: (value: number) => string
   height?: number
 }) {
+  const ui = useOverviewUi()
   const [ref, width] = useWidth<HTMLDivElement>()
   const { tooltip, show, hide } = useTooltip(ref)
   const margin = { top: 22, right: 8, bottom: 26, left: 48 }
@@ -358,7 +365,7 @@ export function StackedColumns({ data, series, formatAxis, formatTotal, height =
   return (
     <div className="yr-plot" ref={ref}>
       {width > 0 && (
-        <svg width={width} height={height} role="img" aria-label="Στοιβαγμένο ραβδόγραμμα">
+        <svg width={width} height={height} role="img" aria-label={ui("Στοιβαγμένο ραβδόγραμμα")}>
           <g transform={`translate(${margin.left},${margin.top})`}>
             {ticks.map(tick => (
               <g key={tick} transform={`translate(0,${y(tick)})`}>
@@ -388,7 +395,7 @@ export function StackedColumns({ data, series, formatAxis, formatTotal, height =
                       : <rect key={s.key} x={bx} y={top} width={barW} height={h} fill={s.color} />
                   })}
                   <text className="yr-value-label" x={bx + barW / 2} y={y(totals[i]) - 6} textAnchor="middle">{formatTotal(totals[i])}</text>
-                  <text className="yr-axis-label" x={(x(String(i)) ?? 0) + x.bandwidth() / 2} y={innerH + 16} textAnchor="middle">{item.label}</text>
+                  <text className="yr-axis-label" x={(x(String(i)) ?? 0) + x.bandwidth() / 2} y={innerH + 16} textAnchor="middle">{ui(item.label)}</text>
                 </g>
               )
             })}
@@ -411,6 +418,7 @@ export function StackedRows({ rows, series, normalize = false, formatValue }: {
   normalize?: boolean
   formatValue: (value: number, total: number) => string
 }) {
+  const ui = useOverviewUi()
   const [ref, width] = useWidth<HTMLDivElement>()
   const { tooltip, show, hide } = useTooltip(ref)
   const rowH = 22
@@ -424,7 +432,7 @@ export function StackedRows({ rows, series, normalize = false, formatValue }: {
   return (
     <div className="yr-plot" ref={ref}>
       {width > 0 && (
-        <svg width={width} height={height} role="img" aria-label="Οριζόντιο στοιβαγμένο ραβδόγραμμα">
+        <svg width={width} height={height} role="img" aria-label={ui("Οριζόντιο στοιβαγμένο ραβδόγραμμα")}>
           <g transform={`translate(${margin.left},${margin.top})`}>
             {rows.map((row, rowIndex) => {
               const total = row.segments.reduce((sum, s) => sum + s.value, 0)

@@ -1,7 +1,21 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
+import { useOverviewUi } from '../i18n/overview'
 import BeneficiaryLink from './BeneficiaryLink'
 import { useDevViewEnabled } from '../lib/devView'
 
 type ContractModalContract = {
+  sourceValues?: {
+    // Some timeline cards display a signed date; this is never a substitute
+    // for a missing submission date in the source record.
+    displayDate?: string | null
+    submittedAt: string | null
+    signedAt: string | null
+    startDate: string | null
+    endDate: string | null
+    noEndDate?: boolean
+    withoutVat: number | null
+    withVat: number | null
+  }
   id: string
   who: string
   what: string
@@ -52,21 +66,30 @@ type Props = {
 export type { ContractModalContract }
 
 export default function ContractModal({ contract, onClose, onDownloadPdf }: Props) {
+  const { p, format, category, description, cpv, organization } = useProcurementI18n()
+  const ui = useOverviewUi()
+  const source = contract.sourceValues
+  const dates = source ? {
+    when: format.date(source.submittedAt), signedAt: format.date(source.signedAt),
+    startDate: format.date(source.startDate), endDate: source.noEndDate ? ui('Χωρίς λήξη') : format.date(source.endDate),
+  } : contract
+  const withoutVat = source ? format.currency(source.withoutVat, { maximumFractionDigits: 0 }) : contract.withoutVatAmount
+  const withVat = source ? format.currency(source.withVat, { maximumFractionDigits: 0 }) : contract.withVatAmount
   const [devViewEnabled] = useDevViewEnabled()
   const cpvItems = (contract.cpvItems ?? []).filter((x) => x.code || x.label)
-  const fallbackCpv = `${contract.cpv} (${contract.cpvCode})`
+  const fallbackCpv = `${cpv(contract.cpvCode, contract.cpv)} (${contract.cpvCode})`
   const gridItems = [
-    { label: 'Υπεβλήθη', value: contract.when },
-    { label: 'Μοναδικός Κωδικός - ΑΔΑΜ', value: contract.referenceNumber },
-    { label: 'Τύπος σύμβασης', value: contract.contractKind },
-    { label: 'Υπεγράφη', value: contract.signedAt },
-    { label: 'Έναρξη', value: contract.startDate },
-    { label: 'Λήξη', value: contract.endDate },
-    { label: 'Διαδικασία ανάθεσης', value: contract.awardProcedure },
-    { label: 'Υπογραφή', value: contract.signers },
-    { label: 'Τύπος διαδικασίας', value: contract.contractType },
+    { label: p('submitted'), value: dates.when },
+    { label: p('uniqueAdam'), value: contract.referenceNumber },
+    { label: p('contractKind'), value: category(contract.contractKind) },
+    { label: p('signed'), value: dates.signedAt },
+    { label: p('start'), value: dates.startDate },
+    { label: p('end'), value: dates.endDate },
+    { label: p('awardProcedure'), value: category(contract.awardProcedure) },
+    { label: p('signature'), value: contract.signers },
+    { label: p('procedureType'), value: category(contract.contractType) },
     {
-      label: 'Δικαιούχος',
+      label: p('beneficiary'),
       value: (
         <BeneficiaryLink
           name={contract.beneficiary}
@@ -75,25 +98,25 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
         />
       ),
     },
-    { label: 'ΑΦΜ Δικαιούχου', value: contract.beneficiaryVat },
-    { label: 'Ποσό με ΦΠΑ', value: contract.withVatAmount },
-    { label: 'Τμήμα', value: contract.unitsOperator },
+    { label: p('beneficiaryTaxId'), value: contract.beneficiaryVat },
+    { label: p('amountWithVat'), value: withVat },
+    { label: p('department'), value: contract.unitsOperator },
     {
       label: 'CPV',
       value: cpvItems.length > 0 ? (
         cpvItems.map((item, idx) => (
           <span key={`${item.code}-${item.label}-${idx}`} style={{ display: 'block' }}>
-            {item.label} ({item.code})
+            {cpv(item.code, item.label)} ({item.code})
           </span>
         ))
       ) : (
         fallbackCpv
       ),
     },
-    { label: 'ΑΔΑ Εγγράφου στη Διαύγεια', value: contract.contractRelatedAda },
-    { label: 'Κωδικός δημοπρασίας', value: contract.auctionRefNo },
-    { label: 'Τροποποιεί τη σύμβαση', value: contract.previousReferenceNumber },
-    { label: 'Τροποποιείται από τη σύμβαση', value: contract.nextReferenceNumber },
+    { label: p('relatedAda'), value: contract.contractRelatedAda },
+    { label: p('auctionReference'), value: contract.auctionRefNo },
+    { label: p('amendsContract'), value: contract.previousReferenceNumber },
+    { label: p('amendedByContract'), value: contract.nextReferenceNumber },
   ]
 
   return (
@@ -101,8 +124,8 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
       <article className="contract-modal" onClick={(e) => e.stopPropagation()}>
         <header className="contract-modal__header">
           <div>
-            <span className="eyebrow">{contract.who}</span>
-            <h2>{contract.what}</h2>
+            <span className="eyebrow">{organization(contract.who)}</span>
+            <h2 lang="el">{contract.what}</h2>
           </div>
           <div className="contract-modal__actions">
             {onDownloadPdf && (
@@ -110,8 +133,8 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
                 type="button"
                 className="contract-modal__icon-button"
                 onClick={onDownloadPdf}
-                aria-label="Κατέβασμα σύμβασης"
-                title="Κατέβασμα σύμβασης"
+                aria-label={p('downloadContract')}
+                title={p('downloadContract')}
               >
                 <svg viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M10 2.5v8.2" />
@@ -124,18 +147,18 @@ export default function ContractModal({ contract, onClose, onDownloadPdf }: Prop
               type="button"
               className="contract-modal__icon-button"
               onClick={onClose}
-              aria-label="Κλείσιμο"
-              title="Κλείσιμο"
+              aria-label={p('close')}
+              title={p('close')}
             >
               ✕
             </button>
           </div>
         </header>
 
-        <p className="contract-modal__subtitle">{contract.why}</p>
+        <p className="contract-modal__subtitle">{description(contract.why)}</p>
 
         <div className="contract-modal__highlight">
-          <span className="contract-modal__amount">{contract.withoutVatAmount}</span>
+          <span className="contract-modal__amount">{withoutVat}</span>
           <span className="contract-modal__arrow">→</span>
           <BeneficiaryLink
             name={contract.beneficiary}

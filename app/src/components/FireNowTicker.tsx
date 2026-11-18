@@ -1,6 +1,7 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import type { CSSProperties } from 'react'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocalizedNavigate as useNavigate } from '../routing/useLocalizedNavigate'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
@@ -81,18 +82,18 @@ function cleanText(value: unknown): string | null {
   return text
 }
 
-function formatDateEl(value: string | null): string {
+function formatDateEl(value: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!value) return '—'
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(date)
 }
 
-function formatNoticeTime(value: string | null): string {
+function formatNoticeTime(value: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!value) return '—'
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return '—'
@@ -103,15 +104,15 @@ function formatNoticeTime(value: string | null): string {
 
   if (diffMs >= 0 && diffMs < hourMs) {
     const minutes = Math.max(1, Math.round(diffMs / minuteMs))
-    return `πριν ${minutes} λεπ.`
+    return ui("πριν {{v0}} λεπ.", { v0: minutes })
   }
 
   if (diffMs >= 0 && diffMs < 24 * hourMs) {
     const hours = Math.max(1, Math.round(diffMs / hourMs))
-    return `πριν ${hours} ώρ.`
+    return ui("πριν {{v0}} ώρ.", { v0: hours })
   }
 
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     hour: '2-digit',
     minute: '2-digit',
   }).format(date)
@@ -259,11 +260,12 @@ function buildNoticeItem(row: NoticeRow): FireTickerItem {
 }
 
 function LocationIcon() {
+  const ui = useOverviewUi()
   return (
     <svg
       className="fire-ticker__location-icon"
       viewBox="0 0 24 24"
-      aria-label="Έχει γεωγραφική θέση"
+      aria-label={ui("Έχει γεωγραφική θέση")}
       role="img"
     >
       <path
@@ -347,6 +349,7 @@ async function fetchRecent112Notices() {
 }
 
 export default function FireNowTicker() {
+  const ui = useOverviewUi()
   const navigate = useNavigate()
   const [items, setItems] = useState<FireTickerItem[]>([])
   const [activeCount, setActiveCount] = useState<number | null>(null)
@@ -537,8 +540,8 @@ export default function FireNowTicker() {
         kind: 'state' as const,
         id: 'loading',
         municipalityKey: null,
-        municipalityLabel: 'Δήμος —',
-        title: 'Ανάκτηση ενεργών πυρκαγιών',
+        municipalityLabel: ui("Δήμος —"),
+        title: ui("Ανάκτηση ενεργών πυρκαγιών"),
         primaryMeta: '—',
         secondaryMeta: '—',
         hasLocation: false,
@@ -552,8 +555,8 @@ export default function FireNowTicker() {
           kind: 'state' as const,
           id: 'error',
           municipalityKey: null,
-          municipalityLabel: 'Δήμος —',
-          title: 'Δεν ήταν δυνατή η φόρτωση δεδομένων',
+          municipalityLabel: ui("Δήμος —"),
+          title: ui("Δεν ήταν δυνατή η φόρτωση δεδομένων"),
           primaryMeta: '—',
           secondaryMeta: '—',
           hasLocation: false,
@@ -564,8 +567,8 @@ export default function FireNowTicker() {
         kind: 'state' as const,
         id: 'fallback',
         municipalityKey: null,
-        municipalityLabel: 'Δήμος —',
-        title: 'Δεν υπάρχουν ενεργές πυρκαγιές',
+        municipalityLabel: ui("Δήμος —"),
+        title: ui("Δεν υπάρχουν ενεργές πυρκαγιές"),
         primaryMeta: '—',
         secondaryMeta: '—',
         hasLocation: false,
@@ -575,7 +578,7 @@ export default function FireNowTicker() {
   const renderedGroupCount = shouldScroll ? groupCount : 1
 
   return (
-    <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label="Πυρκαγιές Τώρα">
+    <section className="fire-ticker-section section-rule dev-tag-anchor" aria-label={ui("Πυρκαγιές Τώρα")}>
       <div className="dev-tag-stack dev-tag-stack--right">
         <ComponentTag name="FireNowTicker" />
         <ComponentTag name="fire-ticker-section section-rule" kind="CLASS" />
@@ -583,7 +586,7 @@ export default function FireNowTicker() {
       <div className={`fire-ticker${shouldScroll ? '' : ' fire-ticker--static'}${loading ? ' fire-ticker--loading' : ''}`} aria-busy={loading}>
         <div className="fire-ticker__title">
           <span className="eyebrow">live</span>
-          <strong>Ενεργές πυρκαγιές: {titleCount}</strong>
+          <strong>{ui("Ενεργές πυρκαγιές: ")}{titleCount}</strong>
           {fireSourceLabel && <span className="fire-ticker__source">{fireSourceLabel}</span>}
         </div>
         <div className="fire-ticker__viewport" ref={viewportRef}>

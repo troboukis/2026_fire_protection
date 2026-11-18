@@ -70,6 +70,7 @@ export function normalizeMunicipalityKey(value: unknown): string {
 export function rankMunicipalityMatches<T extends MunicipalitySearchEntry>(
   municipalities: T[],
   query: string | null,
+  displayName?: (source: string) => string,
 ): RankedMunicipalityMatch<T>[] {
   const normalizedQuery = normalizeMunicipalitySearch(query)
   if (!normalizedQuery) return []
@@ -83,9 +84,10 @@ export function rankMunicipalityMatches<T extends MunicipalitySearchEntry>(
     const searchable = [
       municipality.dhmos,
       municipality.municipality_normalized_name,
+      displayName?.(name),
     ]
       .filter(Boolean)
-      .map((value) => normalizeMunicipalitySearch(value))
+      .map((value) => normalizeMunicipalitySearch(value ?? null))
 
     const score = searchable.some((value) => value === normalizedQuery)
       ? 0

@@ -1,3 +1,4 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useMemo, useRef, useState } from 'react'
 import ComponentTag from './ComponentTag'
 import { fundingSummary, type FundingSummary } from '../data/fundingSummary'
@@ -13,40 +14,40 @@ type FundingProps = {
   anchorId?: string
 }
 
-function formatNumber(value: number, maximumFractionDigits = 0): string {
-  return value.toLocaleString('el-GR', { maximumFractionDigits })
+function formatNumber(value: number, maximumFractionDigits = 0, ui: OverviewUi = greekOverviewUi): string {
+  return value.toLocaleString(ui.locale, { maximumFractionDigits })
 }
 
-function formatPct(value: number | null): string {
+function formatPct(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return `${value > 0 ? '+' : ''}${formatNumber(value, 0)}%`
+  return `${value > 0 ? '+' : ''}${formatNumber(value, 0, ui)}%`
 }
 
-function formatEur(value: number | null): string {
+function formatEur(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return value.toLocaleString('el-GR', {
+  return value.toLocaleString(ui.locale, {
     style: 'currency',
     currency: 'EUR',
     maximumFractionDigits: 0,
   })
 }
 
-function formatEurCompact(value: number): string {
+function formatEurCompact(value: number, ui: OverviewUi = greekOverviewUi): string {
   if (Number.isNaN(value)) return '—'
   const abs = Math.abs(value)
   if (abs >= 1_000_000_000) return `${(value / 1_000_000_000).toFixed(1)}B €`
   if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(value / 1_000).toFixed(0)}k €`
-  return formatEur(value)
+  return formatEur(value, ui)
 }
 
-function formatEurCompactMillions(value: number | null): string {
+function formatEurCompactMillions(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
   const millionsRounded = Math.round((value / 1_000_000) * 10) / 10
   const millionsText = Number.isInteger(millionsRounded)
     ? String(millionsRounded.toFixed(0))
     : String(millionsRounded.toFixed(1))
-  return `${millionsText}Μ €`
+  return ui("{{v0}}Μ €", { v0: millionsText })
 }
 
 function pctColor(value: number | null): string {
@@ -55,6 +56,7 @@ function pctColor(value: number | null): string {
 }
 
 export default function Funding({ currentYear, anchorId = 'funding' }: FundingProps) {
+  const ui = useOverviewUi()
   const fundingData: FundingSummary = fundingSummary
   const renderedYear = fundingData.yearMain || currentYear
   const [fundingChartHover, setFundingChartHover] = useState<FundingChartHoverState | null>(null)
@@ -103,23 +105,22 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
         <ComponentTag name="funding-hero__left" kind="CLASS" className="component-tag--overlay" />
         <div className="hero-amount-card funding-hero__amount-card dev-tag-anchor">
           <ComponentTag name="funding-hero__amount-card" kind="CLASS" className="component-tag--overlay" />
-          <div className="eyebrow">{`ΧΡΗΜΑΤΟΔΟΤΗΣΗ - ${renderedYear}`}</div>
+          <div className="eyebrow">{ui("ΧΡΗΜΑΤΟΔΟΤΗΣΗ - {{v0}}", { v0: renderedYear })}</div>
           <div className="funding-hero__headline">
-            <div className="hero-amount">{formatEurCompact(fundingData.currentTotal)}</div>
+            <div className="hero-amount">{formatEurCompact(fundingData.currentTotal, ui)}</div>
             <div className="funding-hero__delta" style={{ color: pctColor(fundingDeltaPct) }}>
-              {fundingDeltaPct == null ? '—' : formatPct(fundingDeltaPct)}
+              {fundingDeltaPct == null ? '—' : formatPct(fundingDeltaPct, ui)}
             </div>
           </div>
           <p className="funding-hero__lede">
-            Ετήσια κρατική χρηματοδότηση για δράσεις πυροπροστασίας προς δήμους και συνδέσμους δήμων.
-          </p>
+            {ui("Ετήσια κρατική χρηματοδότηση για δράσεις πυροπροστασίας προς δήμους και συνδέσμους δήμων.")}</p>
           <div
             className="funding-hero__progress"
-            aria-label={`Δαπάνες ${formatEur(fundingData.currentSpendAmount)} σε σχέση με χρηματοδότηση ${formatEur(fundingData.currentTotal)} για το ${fundingData.currentSpendYear}`}
-            title={`Συμβάσεις ΚΗΜΔΗΣ: ${formatEur(municipalSpending.contractsAmount)}. Οριστικοποιήσεις πληρωμής δήμων στη Διαύγεια χωρίς σύνδεση με σύμβαση: ${formatEur(municipalSpending.unlinkedPaymentsAmount)}. Ποσά χωρίς ΦΠΑ, έως ${new Date(`${municipalSpending.periodEnd}T12:00:00`).toLocaleDateString('el-GR')}.`}
+            aria-label={ui("Δαπάνες {{v0}} σε σχέση με χρηματοδότηση {{v1}} για το {{v2}}", { v0: formatEur(fundingData.currentSpendAmount, ui), v1: formatEur(fundingData.currentTotal, ui), v2: fundingData.currentSpendYear })}
+            title={ui("Συμβάσεις ΚΗΜΔΗΣ: {{v0}}. Οριστικοποιήσεις πληρωμής δήμων στη Διαύγεια χωρίς σύνδεση με σύμβαση: {{v1}}. Ποσά χωρίς ΦΠΑ, έως {{v2}}.", { v0: formatEur(municipalSpending.contractsAmount, ui), v1: formatEur(municipalSpending.unlinkedPaymentsAmount, ui), v2: new Date(`${municipalSpending.periodEnd}T12:00:00`).toLocaleDateString(ui.locale) })}
           >
             <div className="funding-hero__progress-divider" aria-hidden="true" />
-            <p className="funding-hero__progress-value">{`Εκτίμηση δαπανών Δήμων μέχρι σήμερα: ${formatEurCompactMillions(fundingData.currentSpendAmount)}`}</p>
+            <p className="funding-hero__progress-value">{ui("Εκτίμηση δαπανών Δήμων μέχρι σήμερα: {{v0}}", { v0: formatEurCompactMillions(fundingData.currentSpendAmount, ui) })}</p>
             <div className="funding-hero__progress-track" aria-hidden="true">
               <div
                 className="funding-hero__progress-fill"
@@ -128,18 +129,18 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
             </div>
             <div className="funding-hero__progress-labels" aria-hidden="true">
               <span>0 €</span>
-              <span>{formatEurCompactMillions(fundingData.currentTotal)}</span>
+              <span>{formatEurCompactMillions(fundingData.currentTotal, ui)}</span>
             </div>
           </div>
 
           <div className="hero-subgrid funding-hero__subgrid">
             <div>
-              <span className="label">Δήμοι</span>
-              <strong>{formatEur(fundingData.currentMunicipalityAmount)}</strong>
+              <span className="label">{ui("Δήμοι")}</span>
+              <strong>{formatEur(fundingData.currentMunicipalityAmount, ui)}</strong>
             </div>
             <div>
-              <span className="label">Σύνδεσμοι δήμων</span>
-              <strong>{formatEur(fundingData.currentSyndesmosAmount)}</strong>
+              <span className="label">{ui("Σύνδεσμοι δήμων")}</span>
+              <strong>{formatEur(fundingData.currentSyndesmosAmount, ui)}</strong>
             </div>
           </div>
         </div>
@@ -151,7 +152,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
           <ComponentTag name="funding-hero__chart-card" kind="CLASS" className="component-tag--overlay" />
           <div className="hero-chart funding-hero__chart">
             <div className="hero-chart__head">
-              <span className="eyebrow">Χρηματοδότηση ανά έτος</span>
+              <span className="eyebrow">{ui("Χρηματοδότηση ανά έτος")}</span>
             </div>
             <div className="funding-hero__chart-body">
               {fundingHistory.length > 0 ? (
@@ -164,7 +165,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                           key={`funding-hero-tick-${tick}`}
                           style={{ top: `${(1 - tick) * 100}%` }}
                         >
-                          {tick === 0 ? '0 €' : formatEurCompact(fundingChartMax * tick)}
+                          {tick === 0 ? '0 €' : formatEurCompact(fundingChartMax * tick, ui)}
                         </span>
                       ))}
                     </div>
@@ -172,7 +173,7 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                   <div
                     ref={fundingChartFrameRef}
                     className="municipality-funding-chart"
-                    aria-label="Ετήσια χρηματοδότηση ΚΑΠ προς δήμους και συνδέσμους δήμων"
+                    aria-label={ui("Ετήσια χρηματοδότηση ΚΑΠ προς δήμους και συνδέσμους δήμων")}
                     onMouseLeave={() => setFundingChartHover(null)}
                   >
                     {fundingHistory.map((entry) => {
@@ -232,11 +233,11 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                           style={{ left: `${Math.min(92, Math.max(8, fundingChartTooltip.leftPct))}%` }}
                         >
                           <strong>{fundingChartTooltip.year}</strong>
-                          <span>Τακτική: {formatEur(fundingChartTooltip.regularAmount)}</span>
-                          <span>Έκτακτη: {formatEur(fundingChartTooltip.emergencyAmount)}</span>
-                          <span>Δήμοι: {formatEur(fundingChartTooltip.municipalityAmount)}</span>
-                          <span>Σύνδεσμοι: {formatEur(fundingChartTooltip.syndesmosAmount)}</span>
-                          <span>Σύνολο: {formatEur(fundingChartTooltip.totalAmount)}</span>
+                          <span>{ui("Τακτική: ")}{formatEur(fundingChartTooltip.regularAmount, ui)}</span>
+                          <span>{ui("Έκτακτη: ")}{formatEur(fundingChartTooltip.emergencyAmount, ui)}</span>
+                          <span>{ui("Δήμοι: ")}{formatEur(fundingChartTooltip.municipalityAmount, ui)}</span>
+                          <span>{ui("Σύνδεσμοι: ")}{formatEur(fundingChartTooltip.syndesmosAmount, ui)}</span>
+                          <span>{ui("Σύνολο: ")}{formatEur(fundingChartTooltip.totalAmount, ui)}</span>
                         </div>
                       </>
                     ) : null}
@@ -246,20 +247,18 @@ export default function Funding({ currentYear, anchorId = 'funding' }: FundingPr
                 <div className="municipality-funding-chart__legend" aria-hidden="true">
                   <span>
                     <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--regular" />
-                    Τακτική
-                  </span>
+                    {ui("Τακτική")}</span>
                   <span>
                     <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--emergency" />
-                    Έκτακτη
-                  </span>
+                    {ui("Έκτακτη")}</span>
                 </div>
 
                 <p className="note-text funding-hero__chart-note">
-                  {`Από ${fundingData.historyStartYear} έως ${renderedYear}.`}
+                  {ui("Από {{v0}} έως {{v1}}.", { v0: fundingData.historyStartYear, v1: renderedYear })}
                 </p>
                 </>
               ) : (
-                <p className="note-text funding-hero__chart-note">Δεν υπάρχουν διαθέσιμα ιστορικά στοιχεία χρηματοδότησης.</p>
+                <p className="note-text funding-hero__chart-note">{ui("Δεν υπάρχουν διαθέσιμα ιστορικά στοιχεία χρηματοδότησης.")}</p>
               )}
             </div>
           </div>

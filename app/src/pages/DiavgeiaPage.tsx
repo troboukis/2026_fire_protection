@@ -1,3 +1,5 @@
+import { translatedOrganizationName } from '../i18n/organizationNames'
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import AmountSummary from '../components/AmountSummary'
@@ -43,13 +45,6 @@ function clean(v: unknown): string {
   return s
 }
 
-function fmtDate(iso: string | null): string {
-  if (!iso) return '—'
-  const dt = new Date(iso)
-  if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
-}
-
 function organizationLabel(row: Pick<DiavgeiaPageRow, 'org_type' | 'org_name_clean'>): string {
   return [clean(row.org_type), clean(row.org_name_clean)].filter(Boolean).join(' · ')
 }
@@ -74,12 +69,6 @@ async function loadOrganizationOptions(signal: AbortSignal): Promise<string[]> {
   }
 }
 
-function fmtEurFromText(value: string | null | undefined): string {
-  const cents = parseDiavgeiaAmountCents(value)
-  if (cents == null) return '—'
-  return (cents / 100).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
-}
-
 function isoDateDaysAgo(days: number): string {
   const d = new Date()
   d.setDate(d.getDate() - days)
@@ -99,13 +88,6 @@ function isoDateInputValue(value: string | null): string {
   if (Number.isNaN(dt.getTime())) return ''
   const tzOffsetMs = dt.getTimezoneOffset() * 60_000
   return new Date(dt.getTime() - tzOffsetMs).toISOString().slice(0, 10)
-}
-
-function periodLabel(dateFrom: string, dateTo: string): string {
-  if (dateFrom && dateTo) return `${fmtDate(dateFrom)} - ${fmtDate(dateTo)}`
-  if (dateFrom) return `Από ${fmtDate(dateFrom)}`
-  if (dateTo) return `Έως ${fmtDate(dateTo)}`
-  return ''
 }
 
 function truncateWords(value: string, maxWords: number): string {
@@ -134,6 +116,7 @@ async function loadContractLinkedDecisionIds(): Promise<Set<number>> {
 }
 
 export default function DiavgeiaPage() {
+  const { p, t, format, category, organization: organizationText, periodLabel } = useProcurementI18n()
   const [searchParams] = useSearchParams()
   const defaultDateFrom = useMemo(() => isoDateDaysAgo(30), [])
   const defaultDateTo = useMemo(() => isoToday(), [])
@@ -278,6 +261,7 @@ export default function DiavgeiaPage() {
       row.subject,
       row.org_type,
       row.org_name_clean,
+      translatedOrganizationName(row.org_name_clean ?? ''),
       row.ada,
       row.diavgeia_document_type_decision_uid,
     ].join(' '), q)
@@ -303,12 +287,11 @@ export default function DiavgeiaPage() {
   const maxDecisionDate = sourceRows[0]?.max_decision_date ?? null
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(totalCount / pageSize)), [totalCount])
-  const visiblePeriodLabel = useMemo(() => {
-    const explicitPeriod = periodLabel(dateFrom, dateTo)
-    if (explicitPeriod) return explicitPeriod
-    if (minDecisionDate && maxDecisionDate) return `${fmtDate(minDecisionDate)} - ${fmtDate(maxDecisionDate)}`
-    return '—'
-  }, [dateFrom, dateTo, maxDecisionDate, minDecisionDate])
+  const visiblePeriodLabel = dateFrom || dateTo
+    ? periodLabel(dateFrom, dateTo)
+    : minDecisionDate && maxDecisionDate
+      ? `${format.date(minDecisionDate)} - ${format.date(maxDecisionDate)}`
+      : '—'
   const visibleDateFrom = dateFrom || isoDateInputValue(minDecisionDate)
   const visibleDateTo = dateTo || isoDateInputValue(maxDecisionDate)
 
@@ -318,14 +301,14 @@ export default function DiavgeiaPage() {
       <ComponentTag name="DiavgeiaPage" />
       <header className="contracts-header contracts-header--amount-summary section-rule">
         <div>
-          <div className="eyebrow">ΑΝΑΖΗΤΗΣΗ</div>
-          <h1>Διαύγεια</h1>
+          <div className="eyebrow">{p('searchHeading')}</div>
+          <h1>{t('navigation:diavgeia')}</h1>
           <p>
             {loading
-              ? 'Φόρτωση…'
+              ? t('common:loading')
               : loadFailed
-                ? 'Δεν ήταν δυνατή η φόρτωση των αποφάσεων.'
-                : `${totalCount.toLocaleString('el-GR')} αποφάσεις · Περίοδος: ${visiblePeriodLabel}${municipalityLabel ? ` · ${municipalityLabel}` : ''}`}
+                ? p('decisionsLoadFailed')
+                : `${p('decisionsPeriod', { count: totalCount, period: visiblePeriodLabel })}${municipalityLabel ? ` · ${municipalityLabel}` : ''}`}
           </p>
         </div>
         {paymentSummary && (
@@ -333,7 +316,7 @@ export default function DiavgeiaPage() {
             {...paymentSummary}
             loading={loading}
             loadFailed={loadFailed}
-            ariaLabel="Σύνολο πληρωμών"
+            ariaLabel={p('paymentsTotal')}
           >
             <label className="diavgeia-payment-summary__exclude">
               <input
@@ -341,7 +324,7 @@ export default function DiavgeiaPage() {
                 checked={excludeContractAmounts}
                 onChange={(event) => setExcludeContractAmounts(event.target.checked)}
               />
-              <span>Εξαίρεση ποσών που προσμετρώνται στις συμβάσεις</span>
+              <span>{p('excludeContractAmounts')}</span>
             </label>
           </AmountSummary>
         )}
@@ -353,8 +336,8 @@ export default function DiavgeiaPage() {
           value={q}
           maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="π.χ. πυροπροστασία | πυρόσβεση"
-          title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
+          placeholder={p('searchExample', { example: 'πυροπροστασία | πυρόσβεση' })}
+          title={p('searchHelp')}
         />
         <OrganizationFilter
           options={organizationOptions}
@@ -367,34 +350,34 @@ export default function DiavgeiaPage() {
           className="contracts-filter contracts-filter--decision-type"
           value={decisionType}
           onChange={(e) => { setDecisionType(e.target.value); setPage(1) }}
-          aria-label="Τύπος απόφασης"
-          title={decisionType || 'Όλοι οι τύποι απόφασης'}
+          aria-label={p('decisionType')}
+          title={category(decisionType) || p('allDecisionTypes')}
         >
-          <option value="">Όλοι οι τύποι απόφασης</option>
-          {decisionTypeOptions.map((type) => <option key={type} value={type}>{type}</option>)}
+          <option value="">{p('allDecisionTypes')}</option>
+          {decisionTypeOptions.map((type) => <option key={type} value={type}>{category(type)}</option>)}
         </select>
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-from"
           value={visibleDateFrom}
           onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
           type="date"
-          aria-label="Ημερομηνία από"
+          aria-label={p('dateFrom')}
         />
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-to"
           value={visibleDateTo}
           onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
           type="date"
-          aria-label="Ημερομηνία έως"
+          aria-label={p('dateTo')}
         />
       </section>
 
       <section className="contracts-table-wrap section-rule">
-        <div className="contracts-status-legend diavgeia-status-legend" aria-label="Υπόμνημα σύνδεσης αποφάσεων με συμβάσεις">
-          <span><i className="contracts-status-legend__swatch diavgeia-status-legend__swatch--linked" /><span>Συνδεδεμένη με σύμβαση</span></span>
+        <div className="contracts-status-legend diavgeia-status-legend" aria-label={p('decisionLinkLegend')}>
+          <span><i className="contracts-status-legend__swatch diavgeia-status-legend__swatch--linked" /><span>{p('linkedToContract')}</span></span>
         </div>
         {loading ? (
-          <DataLoadingCard message="Ανακτώνται οι αποφάσεις Διαύγειας για τη συγκεκριμένη σελίδα αποτελεσμάτων." />
+          <DataLoadingCard message={p('loadingDecisions')} />
         ) : (
           <>
             <table className="contracts-table diavgeia-table">
@@ -416,17 +399,17 @@ export default function DiavgeiaPage() {
                         setSort((current) => current === 'date_desc' ? 'date_asc' : 'date_desc')
                         setPage(1)
                       }}
-                      aria-label="Ταξινόμηση κατά ημερομηνία"
+                      aria-label={p('sortDate')}
                     >
-                      <span>Ημερομηνία</span>
+                      <span>{p('date')}</span>
                       <span className="contracts-sort-header__icon">
                         {sort.startsWith('date_') ? (sort === 'date_asc' ? '↑' : '↓') : '↕'}
                       </span>
                     </button>
                   </th>
-                  <th>Φορέας</th>
-                  <th>Θέμα</th>
-                  <th>Τύπος απόφασης</th>
+                  <th>{p('organization')}</th>
+                  <th>{p('subject')}</th>
+                  <th>{p('decisionType')}</th>
                   <th aria-sort={sort.startsWith('amount_') ? (sort === 'amount_asc' ? 'ascending' : 'descending') : 'none'}>
                     <button
                       type="button"
@@ -435,15 +418,15 @@ export default function DiavgeiaPage() {
                         setSort((current) => current === 'amount_desc' ? 'amount_asc' : 'amount_desc')
                         setPage(1)
                       }}
-                      aria-label="Ταξινόμηση κατά αξία"
+                      aria-label={p('sortValue')}
                     >
-                      <span>Αξία</span>
+                      <span>{p('value')}</span>
                       <span className="contracts-sort-header__icon">
                         {sort.startsWith('amount_') ? (sort === 'amount_asc' ? '↑' : '↓') : '↕'}
                       </span>
                     </button>
                   </th>
-                  <th>ΑΔΑ</th>
+                  <th>{p('ada')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -453,12 +436,13 @@ export default function DiavgeiaPage() {
                   const orgLabel = organizationLabel(row) || '—'
                   return (
                     <tr key={row.id} className={contractLinkedDecisionIds.has(row.id) ? 'diavgeia-row--linked' : undefined}>
-                      <td data-label="Ημερομηνία">{fmtDate(row.decision_date)}</td>
-                      <td data-label="Φορέας">{orgLabel}</td>
-                      <td data-label="Θέμα">
+                      <td data-label={p('date')}>{format.date(row.decision_date)}</td>
+                      <td data-label={p('organization')}>{organizationText(orgLabel)}</td>
+                      <td data-label={p('subject')}>
                         <button
                           type="button"
                           className="contracts-title-button"
+                          lang="el"
                           onClick={() => setSelectedDecision(buildDiavgeiaDecisionCardView({
                             diavgeia_id: row.id,
                             org_type: row.org_type,
@@ -480,11 +464,11 @@ export default function DiavgeiaPage() {
                           {truncateWords(clean(row.subject), 18)}
                         </button>
                       </td>
-                      <td data-label="Τύπος απόφασης">{clean(row.diavgeia_document_type_decision_uid) || '—'}</td>
-                      <td data-label="Αξία">{fmtEurFromText(row.spending_contractors_value)}</td>
-                      <td data-label="ΑΔΑ">
+                      <td data-label={p('decisionType')}>{category(clean(row.diavgeia_document_type_decision_uid)) || '—'}</td>
+                      <td data-label={p('value')}>{format.currency((parseDiavgeiaAmountCents(row.spending_contractors_value) ?? NaN) / 100, { maximumFractionDigits: 0 })}</td>
+                      <td data-label={p('ada')}>
                         {href ? (
-                          <a href={href} target="_blank" rel="noreferrer">{ada || 'Άνοιγμα'}</a>
+                          <a href={href} target="_blank" rel="noreferrer">{ada || p('open')}</a>
                         ) : (
                           ada || '—'
                         )}
@@ -497,14 +481,14 @@ export default function DiavgeiaPage() {
             {rows.length === 0 && (
               <article className="wire-item">
                 <h2>{loadFailed
-                  ? 'Δεν ήταν δυνατή η φόρτωση των αποφάσεων. Δοκιμάστε ξανά.'
-                  : 'Δεν βρέθηκαν αποφάσεις Διαύγειας για τα επιλεγμένα φίλτρα.'}</h2>
+                  ? p('decisionsRetry')
+                  : p('decisionsEmpty')}</h2>
               </article>
             )}
             <div className="contracts-pagination">
-              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
-              <span>Σελίδα {page} / {totalPages}</span>
-              <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>Επόμενη</button>
+              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>{p('previous')}</button>
+              <span>{p('page', { page, total: totalPages })}</span>
+              <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>{p('next')}</button>
             </div>
           </>
         )}

@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useOverviewUi } from '../i18n/overview'
 
 export type ProfileSignalBarItem = {
   label: string
@@ -12,14 +13,15 @@ type Props = {
   emptyLabel?: string
 }
 
-export default function ProfileSignalBars({ items, emptyLabel = 'Δεν υπάρχουν αρκετά δεδομένα.' }: Props) {
+export default function ProfileSignalBars({ items, emptyLabel }: Props) {
+  const ui = useOverviewUi()
   const maxValue = useMemo(() => {
     const values = items.map((item) => item.value).filter((value) => Number.isFinite(value))
     return values.length > 0 ? Math.max(1, ...values) : 1
   }, [items])
 
   if (items.length === 0) {
-    return <div className="profile-signal-bars profile-signal-bars--empty">{emptyLabel}</div>
+    return <div className="profile-signal-bars profile-signal-bars--empty">{emptyLabel ?? ui('Δεν υπάρχουν αρκετά δεδομένα.')}</div>
   }
 
   return (

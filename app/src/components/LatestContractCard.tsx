@@ -1,8 +1,11 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import type { KeyboardEvent } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocalizedNavigate as useNavigate } from '../routing/useLocalizedNavigate'
 import BeneficiaryLink from './BeneficiaryLink'
+import type { ContractModalContract } from './ContractModal'
 
 export type LatestContractCardView = {
+  sourceValues?: ContractModalContract['sourceValues']
   id: string
   who: string
   what: string
@@ -32,6 +35,7 @@ function isMunicipalityOrgLabel(value: string): boolean {
 }
 
 export default function LatestContractCard({ item, onOpen, onMunicipalityClick, contractTypeTransform }: Props) {
+  const { p, format, category, description, organization } = useProcurementI18n()
   const navigate = useNavigate()
   const clickable = typeof onOpen === 'function'
   const transformedContractType = contractTypeTransform ? contractTypeTransform(item.contractType) : item.contractType
@@ -77,18 +81,18 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
         onKeyDown={handleHeaderKeyDown}
       >
         {municipalityClickable ? (
-          <span className="eyebrow wire-item__org">{item.who}</span>
+          <span className="eyebrow wire-item__org">{organization(item.who)}</span>
         ) : (
-          <span className="eyebrow wire-item__org">{item.who}</span>
+          <span className="eyebrow wire-item__org">{organization(item.who)}</span>
         )}
-        <span className="wire-item__date">{item.when}</span>
+        <span className="wire-item__date">{item.sourceValues ? format.date(item.sourceValues.displayDate !== undefined ? item.sourceValues.displayDate : item.sourceValues.submittedAt) : item.when}</span>
       </div>
-      <h2 className="wire-item__title--four-lines" title={item.what}>{visibleTitle}</h2>
+      <h2 className="wire-item__title--four-lines" lang="el" title={item.what}>{visibleTitle}</h2>
       <div className="wire-item__rule" aria-hidden="true" />
-      <p className="wire-item__subtitle">{item.why}</p>
+      <p className="wire-item__subtitle">{description(item.why)}</p>
       <div className="wire-item__footer">
         <p className="wire-item__amount">
-          <span>{item.howMuch}</span>
+          <span>{item.sourceValues ? format.currency(item.sourceValues.withoutVat, { maximumFractionDigits: 0 }) : item.howMuch}</span>
           <span className="wire-item__arrow">→</span>
           <BeneficiaryLink
             name={item.beneficiary}
@@ -97,9 +101,9 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
             stopPropagation
           />
         </p>
-        <p className="wire-item__type">{transformedContractType}</p>
+        <p className="wire-item__type">{category(transformedContractType)}</p>
       </div>
-      <p className="wire-item__date">Υπεγράφη: {item.signedAt ?? '—'}</p>
+      <p className="wire-item__date">{p('signedDate', { date: item.sourceValues ? format.date(item.sourceValues.signedAt) : item.signedAt ?? '—' })}</p>
       {item.documentUrl && (
         <p className="wire-item__link">
           <a
@@ -108,7 +112,7 @@ export default function LatestContractCard({ item, onOpen, onMunicipalityClick, 
             rel="noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
-            Άνοιγμα εγγράφου
+            {p('openDocument')}
           </a>
         </p>
       )}

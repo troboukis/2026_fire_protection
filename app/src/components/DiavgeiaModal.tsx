@@ -1,6 +1,7 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { Link } from 'react-router-dom'
+import { LocalizedLink as Link } from '../routing/LocalizedLink'
 import type { DiavgeiaDecisionCardView } from './DiavgeiaDecisionCard'
 import ContractModal, { type ContractModalContract } from './ContractModal'
 import { downloadContractDocument } from '../lib/contractDocument'
@@ -17,6 +18,7 @@ function isMunicipalityOrgType(value: string): boolean {
 }
 
 export default function DiavgeiaModal({ decision, onClose }: Props) {
+  const { p, t, format, category, thematic, organization: organizationText } = useProcurementI18n()
   const [linkedContracts, setLinkedContracts] = useState<Array<{ id: number; reference_number: string }>>([])
   const [linksLoading, setLinksLoading] = useState(true)
   const [linksFailed, setLinksFailed] = useState(false)
@@ -80,7 +82,7 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
     }
   }
 
-  const organization = [decision.orgType, decision.orgNameClean]
+  const organization = [category(decision.orgType), organizationText(decision.orgNameClean)]
     .filter((part) => part && part !== '—')
     .join(' · ') || '—'
   const documentUrl = decision.documentUrl ?? (decision.ada && decision.ada !== '—'
@@ -96,20 +98,20 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
     </Link>
   ) : organization
   const gridItems: Array<{ label: string; value: ReactNode }> = [
-    { label: 'Ημερομηνία απόφασης', value: decision.when },
-    { label: 'Φορέας', value: organizationValue },
-    { label: 'Ποσό', value: decision.amount ?? '—' },
-    { label: 'Αριθμός πρωτοκόλλου', value: decision.protocolNumber ?? '—' },
-    { label: 'Υπογράφοντες', value: decision.spendingSigners ?? '—' },
-    { label: 'Ανάδοχος / δικαιούχος', value: decision.spendingContractorsName ?? '—' },
-    { label: 'ΑΦΜ', value: decision.spendingContractorsAfm ?? '—' },
-    { label: 'Θεματικές κατηγορίες', value: decision.thematicCategories ?? '—' },
+    { label: p('decisionDate'), value: decision.sortDate ? format.date(decision.sortDate) : decision.when },
+    { label: p('organization'), value: organizationValue },
+    { label: p('amount'), value: decision.amountEur !== undefined ? format.currency(decision.amountEur, { maximumFractionDigits: 0 }) : decision.amount ?? '—' },
+    { label: p('protocolNumber'), value: decision.protocolNumber ?? '—' },
+    { label: p('signers'), value: decision.spendingSigners ?? '—' },
+    { label: p('contractorBeneficiary'), value: decision.spendingContractorsName ?? '—' },
+    { label: p('taxId'), value: decision.spendingContractorsAfm ?? '—' },
+    { label: p('thematicCategories'), value: thematic(decision.thematicCategories ?? '—') },
   ]
 
   if (linksLoading || linksFailed || linkedContracts.length) {
     gridItems.push({
-      label: linkedContracts.length === 1 ? 'Συνδεδεμένη σύμβαση' : 'Συνδεδεμένες συμβάσεις',
-      value: linksLoading ? 'Φόρτωση…' : linksFailed ? 'Δεν ήταν δυνατή η φόρτωση των συνδεδεμένων συμβάσεων.' : (
+      label: linkedContracts.length === 1 ? p('linkedContract') : p('linkedContracts'),
+      value: linksLoading ? t('common:loading') : linksFailed ? p('linkedContractsFailed') : (
         <>
           {linkedContracts.map((contract) => (
             <div key={contract.id}>
@@ -124,7 +126,7 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
               </button>
             </div>
           ))}
-          {contractFailed && <span role="status">Δεν ήταν δυνατή η φόρτωση της σύμβασης. Δοκιμάστε ξανά.</span>}
+          {contractFailed && <span role="status">{p('contractRetry')}</span>}
         </>
       ),
     })
@@ -146,8 +148,8 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
       <article className="contract-modal contract-modal--diavgeia" onClick={(e) => e.stopPropagation()}>
         <header className="contract-modal__header">
           <div>
-            <span className="eyebrow">Διαύγεια</span>
-            <h2>{decision.subject}</h2>
+            <span className="eyebrow">{t('navigation:diavgeia')}</span>
+            <h2 lang="el">{decision.subject}</h2>
           </div>
           <div className="contract-modal__actions">
             {documentUrl && (
@@ -156,8 +158,8 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
                 href={documentUrl}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Κατέβασμα απόφασης"
-                title="Κατέβασμα απόφασης"
+                aria-label={p('downloadDecision')}
+                title={p('downloadDecision')}
               >
                 <svg viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M10 2.5v8.2" />
@@ -170,8 +172,8 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
               type="button"
               className="contract-modal__icon-button"
               onClick={onClose}
-              aria-label="Κλείσιμο"
-              title="Κλείσιμο"
+              aria-label={p('close')}
+              title={p('close')}
             >
               ✕
             </button>
@@ -181,7 +183,7 @@ export default function DiavgeiaModal({ decision, onClose }: Props) {
         <div className="contract-modal__highlight">
           <span className="contract-modal__amount">{decision.ada}</span>
           <span className="contract-modal__arrow">→</span>
-          <span className="contract-modal__beneficiary">{decision.decisionTypeUid}</span>
+          <span className="contract-modal__beneficiary">{category(decision.decisionTypeUid)}</span>
         </div>
 
         <div className="contract-modal__grid">

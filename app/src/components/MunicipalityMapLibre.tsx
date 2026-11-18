@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../i18n/overview'
 import { useEffect, useRef } from 'react'
 import * as maplibregl from 'maplibre-gl'
 import { LngLatBounds, type ErrorEvent as MapLibreErrorEvent, type Map as MapLibreMap, type StyleSpecification } from 'maplibre-gl'
@@ -331,6 +332,7 @@ function drawGeographicLayers(
 }
 
 export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
+  const ui = useOverviewUi()
   const containerRef = useRef<HTMLDivElement | null>(null)
   const overlayRef = useRef<SVGSVGElement | null>(null)
   const mapRef = useRef<MapLibreMap | null>(null)
@@ -459,7 +461,7 @@ export default function MunicipalityMapLibre(props: MunicipalityMapLibreProps) {
       ref={containerRef}
       className="municipality-maplibre"
       role="img"
-      aria-label={`Χάρτης με το περίγραμμα και τα γεωγραφικά δεδομένα του δήμου ${props.municipalityName}`}
+      aria-label={ui("Χάρτης με το περίγραμμα και τα γεωγραφικά δεδομένα του δήμου {{v0}}", { v0: props.municipalityName })}
     />
   )
 }

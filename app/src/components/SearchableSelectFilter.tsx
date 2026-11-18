@@ -1,3 +1,4 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useEffect, useId, useRef, useState } from 'react'
 import { MAX_SEARCH_QUERY_LENGTH, normalizeSearchText } from '../lib/searchQuery'
 
@@ -16,6 +17,7 @@ type Props = {
 }
 
 export default function SearchableSelectFilter({ options, value, onChange, loading = false, failed = false, label, allLabel, loadingLabel, failedLabel, emptyLabel, className }: Props) {
+  const { p } = useProcurementI18n()
   const selectId = useId()
   const suggestionsId = useId()
   const inputRef = useRef<HTMLInputElement>(null)
@@ -25,7 +27,7 @@ export default function SearchableSelectFilter({ options, value, onChange, loadi
   const [activeIndex, setActiveIndex] = useState(0)
   const [suggestionsVisible, setSuggestionsVisible] = useState(false)
   const normalizedQuery = normalizeSearchText(query)
-  const matches = options.filter((option) => normalizeSearchText(option.label).includes(normalizedQuery))
+  const matches = options.filter((option) => normalizeSearchText(option.label).includes(normalizedQuery) || normalizeSearchText(option.value).includes(normalizedQuery))
   const choices = normalizedQuery ? matches : [{ value: '', label: allLabel }, ...matches]
 
   const selectedLabel = options.find((option) => option.value === value)?.label ?? value
@@ -81,7 +83,7 @@ export default function SearchableSelectFilter({ options, value, onChange, loadi
         className="searchable-select-filter__search"
         type="text"
         role="combobox"
-        aria-label={`Αναζήτηση: ${label}`}
+        aria-label={p('searchLabel', { label })}
         aria-autocomplete="list"
         aria-expanded={suggestionsVisible}
         aria-controls={suggestionsVisible ? suggestionsId : selectId}
@@ -92,7 +94,7 @@ export default function SearchableSelectFilter({ options, value, onChange, loadi
         spellCheck={false}
         value={editing || query ? query : selectedLabel}
         placeholder={selectedLabel || allLabel}
-        title={`Πληκτρολογήστε και ανοίξτε τη λίστα από το βέλος για επιλογή: ${label}`}
+        title={p('selectHelp', { label })}
         maxLength={MAX_SEARCH_QUERY_LENGTH}
         onFocus={() => { setEditing(true); setQuery(''); setActiveIndex(0); setSuggestionsVisible(true) }}
         onClick={() => setSuggestionsVisible(true)}

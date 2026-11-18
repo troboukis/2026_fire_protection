@@ -1,10 +1,13 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
+import { loadPageMetadata } from './page_metadata.mjs'
+import { westAtticaMessages } from './west_attica_messages.mjs'
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(scriptDir, '..')
-const sourceDir = path.resolve(repoRoot, '../mega_fire_2026/app/dist')
+const sourceDir = path.resolve(process.env.FIREWATCH_STANDALONE_DIST || path.join(repoRoot, '../mega_fire_2026/app/dist'))
 const targetDir = path.resolve(repoRoot, 'app/public/analysis/west-attica-fire-2026')
 const appDir = path.resolve(repoRoot, 'app')
 const expectedBase = '/analysis/west-attica-fire-2026/'
@@ -37,12 +40,15 @@ async function readGoogleAnalyticsId() {
   throw new Error('VITE_GA_MEASUREMENT_ID is required to publish the standalone map.')
 }
 
-function standaloneConsentScript(measurementId) {
+export function standaloneConsentScript(measurementId) {
+  const { languages } = westAtticaMessages()
   return `(() => {
   const CookieConsent = window.CookieConsent;
   const GA_ID = ${JSON.stringify(measurementId)};
   const GA_SCRIPT_ID = 'firewatch-google-analytics';
   const ANALYTICS_CATEGORY = 'analytics';
+  const currentLanguage = () => window.location.pathname.startsWith('/en/') ? 'en' : 'el';
+  const footerTranslations = ${JSON.stringify(Object.fromEntries(Object.entries(languages).map(([language, value]) => [language, value.footer])))};
   const analyticsEnabled = new Set([
     'fire-watch-app.gr',
     'www.fire-watch-app.gr',
@@ -101,7 +107,7 @@ function standaloneConsentScript(measurementId) {
     const shell = document.createElement('div');
     shell.className = 'firewatch-footer-shell';
     shell.innerHTML = \`<footer class="site-footer">
-      © \${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms">Όροι χρήσης</a> · <a href="/privacy">Απόρρητο &amp; cookies</a> · <button type="button">Ρυθμίσεις cookies</button>
+      © \${new Date().getFullYear()} FireWatch · <a href="https://troboukis.gr/" target="_blank" rel="noreferrer">Thanasis Troboukis</a> · <a href="/terms" data-firewatch-footer="terms">Όροι χρήσης</a> · <a href="/privacy" data-firewatch-footer="privacy">Απόρρητο &amp; cookies</a> · <button type="button" data-firewatch-footer="preferences">Ρυθμίσεις cookies</button>
     </footer>\`;
 
     shell.querySelector('button')?.addEventListener('click', () => {
@@ -124,7 +130,21 @@ function standaloneConsentScript(measurementId) {
     }
   }
 
+  function updateFooterLanguage() {
+    const copy = footerTranslations[currentLanguage()];
+    for (const element of document.querySelectorAll('[data-firewatch-footer]')) {
+      const value = copy[element.getAttribute('data-firewatch-footer')];
+      if (element.textContent !== value) element.textContent = value;
+    }
+  }
+  function updateLanguage() {
+    updateFooterLanguage();
+    void CookieConsent.setLanguage(currentLanguage(), true);
+  }
+  window.addEventListener('firewatch-language-change', updateLanguage);
+  window.addEventListener('popstate', updateLanguage);
   mountFireWatchFooter();
+  updateFooterLanguage();
 
   void CookieConsent.run({
     mode: 'opt-in',
@@ -165,64 +185,8 @@ function standaloneConsentScript(measurementId) {
       },
     },
     language: {
-      default: 'el',
-      translations: {
-        el: {
-          consentModal: {
-            title: 'Επιλογές απορρήτου',
-            description: 'Χρησιμοποιούμε προαιρετικά cookies της υπηρεσίας Google Analytics, ώστε να κατανοούμε καλύτερα πώς χρησιμοποιείται το FireWatch. Επιλέγοντας «Αποδοχή όλων», ενεργοποιείτε την επιλογή «Στατιστικά». Επιλέγοντας «Απόρριψη όλων», η επιλογή «Στατιστικά» παραμένει απενεργοποιημένη.',
-            acceptAllBtn: 'Αποδοχη ολων',
-            acceptNecessaryBtn: 'Απορριψη ολων',
-            showPreferencesBtn: 'Ρυθμισεις',
-            footer: '<a href="/privacy" target="_blank" rel="noopener">Πολιτική απορρήτου και cookies</a>',
-          },
-          preferencesModal: {
-            title: 'Ρυθμίσεις απορρήτου',
-            acceptAllBtn: 'Αποδοχη ολων',
-            acceptNecessaryBtn: 'Απορριψη ολων',
-            savePreferencesBtn: 'Αποθηκευση επιλογων',
-            closeIconLabel: 'Κλείσιμο',
-            serviceCounterLabel: 'Υπηρεσία|Υπηρεσίες',
-            sections: [
-              {
-                title: 'Οι επιλογές σας',
-                description: 'Η επιλογή σας ισχύει και για την κύρια εφαρμογή του FireWatch.',
-              },
-              {
-                title: 'Απαραίτητα',
-                description: 'Αποθηκεύουν αποκλειστικά την επιλογή σας για τα cookies, ώστε να μη σας ζητείται σε κάθε επίσκεψη. Δεν μπορούν να απενεργοποιηθούν.',
-                linkedCategory: 'necessary',
-                cookieTable: {
-                  caption: 'Απαραίτητα cookies',
-                  headers: { name: 'Όνομα', desc: 'Σκοπός', expiration: 'Διάρκεια' },
-                  body: [{
-                    name: 'firewatch_consent',
-                    desc: 'Αποθήκευση των επιλογών συγκατάθεσης.',
-                    expiration: '182 ημέρες',
-                  }],
-                },
-              },
-              {
-                title: 'Στατιστικά',
-                description: 'Το Google Analytics μάς βοηθά να κατανοούμε συγκεντρωτικά την επισκεψιμότητα και τη χρήση της εφαρμογής. Παραμένει απενεργοποιημένο μέχρι να το επιλέξετε.',
-                linkedCategory: ANALYTICS_CATEGORY,
-                cookieTable: {
-                  caption: 'Cookies στατιστικών',
-                  headers: { name: 'Όνομα', desc: 'Σκοπός', expiration: 'Διάρκεια' },
-                  body: [
-                    { name: '_ga', desc: 'Διάκριση επισκεπτών για συγκεντρωτικά στατιστικά.', expiration: 'Έως 2 έτη' },
-                    { name: '_ga_*', desc: 'Διατήρηση της κατάστασης μιας επίσκεψης.', expiration: 'Έως 2 έτη' },
-                  ],
-                },
-              },
-              {
-                title: 'Περισσότερες πληροφορίες',
-                description: 'Δείτε την <a href="/privacy" target="_blank" rel="noopener">Πολιτική απορρήτου και cookies</a> ή επικοινωνήστε στο troboukis[at]gmail[dot]com.',
-              },
-            ],
-          },
-        },
-      },
+      default: currentLanguage(),
+      translations: ${JSON.stringify(Object.fromEntries(Object.entries(languages).map(([language, value]) => [language, value.cookie])))},
     },
   }).then(() => syncGoogleAnalytics(true));
 })();\n`
@@ -349,9 +313,11 @@ async function syncDist() {
     path.join(appDir, 'node_modules/vanilla-cookieconsent/dist/cookieconsent.umd.js'),
     path.join(vendorDir, 'cookieconsent.umd.js'),
   )
+  const consentScript = standaloneConsentScript(measurementId)
+  const consentVersion = createHash('sha256').update(consentScript).digest('hex').slice(0, 12)
   await writeFile(
     path.join(vendorDir, 'standalone-consent.js'),
-    standaloneConsentScript(measurementId),
+    consentScript,
     'utf8',
   )
   await writeFile(
@@ -361,37 +327,25 @@ async function syncDist() {
   )
 
   const headMarkup = [
-    '    <meta name="description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
-    `    <link rel="canonical" href="https://www.fire-watch-app.gr${expectedBase}" />`,
-
-    '    <meta property="og:type" content="website" />',
-    '    <meta property="og:title" content="Μεγάλη πυρκαγιά Δυτικής Αττικής – Βοιωτίας 2026" />',
-    '    <meta property="og:description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
-    `    <meta property="og:url" content="https://www.fire-watch-app.gr${expectedBase}" />`,
-    '    <meta property="og:image" content="https://www.fire-watch-app.gr/social/west-attica-fire-2026.png" />',
-    '    <meta property="og:image:width" content="1200" />',
-    '    <meta property="og:image:height" content="630" />',
-    '    <meta property="og:image:alt" content="Χάρτης της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026" />',
-
-    '    <meta name="twitter:card" content="summary_large_image" />',
-    '    <meta name="twitter:title" content="Μεγάλη πυρκαγιά Δυτικής Αττικής – Βοιωτίας 2026" />',
-    '    <meta name="twitter:description" content="Διαδραστική ανάλυση της μεγάλης πυρκαγιάς στη Δυτική Αττική και τη Βοιωτία το 2026." />',
-    '    <meta name="twitter:image" content="https://www.fire-watch-app.gr/social/west-attica-fire-2026.png" />',
-
     `    <link rel="stylesheet" href="${expectedBase}firewatch/cookieconsent.css" />`,
     `    <link rel="stylesheet" href="${expectedBase}firewatch/standalone-footer.css" />`,
   ].join('\n')
   const bodyMarkup = [
     `    <script src="${expectedBase}firewatch/cookieconsent.umd.js"></script>`,
-    `    <script src="${expectedBase}firewatch/standalone-consent.js"></script>`,
+    `    <script src="${expectedBase}firewatch/standalone-consent.js?v=${consentVersion}"></script>`,
   ].join('\n')
 
-  const outputIndex = sourceIndex
+  const { applyPageMetadata, getPageMetadata, fillStaticFallback } = loadPageMetadata()
+  const metadata = getPageMetadata(expectedBase)
+  if (!metadata) throw new Error('Missing standalone page metadata')
+  const outputIndex = fillStaticFallback(applyPageMetadata(sourceIndex
     .replace('  </head>', `${headMarkup}\n  </head>`)
-    .replace('  </body>', `${bodyMarkup}\n  </body>`)
+    .replace('  </body>', `${bodyMarkup}\n  </body>`), metadata), metadata)
 
   await writeFile(path.join(targetDir, 'index.html'), outputIndex, 'utf8')
 }
 
-await syncDist()
-console.log(`Synced ${sourceDir} to ${targetDir}`)
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await syncDist()
+  console.log(`Synced ${sourceDir} to ${targetDir}`)
+}

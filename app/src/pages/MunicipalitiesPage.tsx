@@ -1,6 +1,9 @@
+import { translatedOrganizationName } from '../i18n/organizationNames'
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { lazy, Suspense, startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
-import { Link, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
+import { LocalizedLink as Link } from '../routing/LocalizedLink'
 import ComponentTag from '../components/ComponentTag'
 import ContractModal, { type ContractModalContract } from '../components/ContractModal'
 import DataLoadingCard from '../components/DataLoadingCard'
@@ -392,30 +395,30 @@ function toNumber(value: unknown): number | null {
   return Number.isFinite(number) ? number : null
 }
 
-function formatNumber(value: number | null, maximumFractionDigits = 0): string {
+function formatNumber(value: number | null, maximumFractionDigits = 0, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return value.toLocaleString('el-GR', { maximumFractionDigits })
+  return value.toLocaleString(ui.locale, { maximumFractionDigits })
 }
 
-function formatEur(value: number | null): string {
+function formatEur(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return value.toLocaleString('el-GR', {
+  return value.toLocaleString(ui.locale, {
     style: 'currency',
     currency: 'EUR',
     maximumFractionDigits: 0,
   })
 }
 
-function formatEurCompact(value: number): string {
+function formatEurCompact(value: number, ui: OverviewUi = greekOverviewUi): string {
   if (Number.isNaN(value)) return '—'
   const abs = Math.abs(value)
   if (abs >= 1_000_000_000) return `${(value / 1_000_000_000).toFixed(1)}B €`
   if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(value / 1_000).toFixed(1)}K €`
-  return formatEur(value)
+  return formatEur(value, ui)
 }
 
-function formatPer100kLowerBound(value: number | null): string {
+function formatPer100kLowerBound(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
   if (value <= 0) return '0 €'
 
@@ -424,63 +427,63 @@ function formatPer100kLowerBound(value: number | null): string {
   const safeBucket = bucket > 0 ? bucket : step
 
   if (safeBucket >= 1000) {
-    return `${(safeBucket / 1000).toLocaleString('el-GR', { maximumFractionDigits: 0 })}K €`
+    return `${(safeBucket / 1000).toLocaleString(ui.locale, { maximumFractionDigits: 0 })}K €`
   }
 
-  return `${safeBucket.toLocaleString('el-GR')} €`
+  return `${safeBucket.toLocaleString(ui.locale)} €`
 }
 
-function formatMunicipalitySpendPer100kSentence(currentYear: number, value: number | null): string {
+function formatMunicipalitySpendPer100kSentence(currentYear: number, value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value) || value <= 0) {
-    return 'Δεν μπορεί να υπολογιστεί πόσα χρήματα έχει ξοδέψει ο δήμος ανά 100 χιλιάδες κατοίκους.'
+    return ui("Δεν μπορεί να υπολογιστεί πόσα χρήματα έχει ξοδέψει ο δήμος ανά 100 χιλιάδες κατοίκους.")
   }
 
-  return `Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από ${formatPer100kLowerBound(value)} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το ${currentYear}.`
+  return ui("Εκτιμάται πως ο δήμος έχει ξοδέψει πάνω από {{v0}} ανά 100 χιλιάδες κατοίκους σε δαπάνες πυροπροστασίας το {{v1}}.", { v0: formatPer100kLowerBound(value, ui), v1: currentYear })
 }
 
-function formatActivePreviousContractsSentence(currentYear: number, count: number | null): string {
+function formatActivePreviousContractsSentence(currentYear: number, count: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (count == null || Number.isNaN(count)) {
-    return `Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
+    return ui("Εντοπίζουμε — παλαιότερες συμβάσεις που ήταν ενεργές* το {{v0}}.", { v0: currentYear })
   }
   if (count === 0) {
-    return `Δεν εντοπίζουμε παλιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
+    return ui("Δεν εντοπίζουμε παλιότερες συμβάσεις που ήταν ενεργές* το {{v0}}.", { v0: currentYear })
   }
   if (count === 1) {
-    return `Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}.`
+    return ui("Εντοπίζουμε 1 παλαιότερη σύμβαση που ήταν ενεργή* το {{v0}}.", { v0: currentYear })
   }
-  return `Εντοπίζουμε ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}.`
+  return ui("Εντοπίζουμε {{v0}} παλαιότερες συμβάσεις που ήταν ενεργές* το {{v1}}.", { v0: count.toLocaleString(ui.locale), v1: currentYear })
 }
 
-function formatStremmataFromHa(value: number | null, maximumFractionDigits = 1): string {
+function formatStremmataFromHa(value: number | null, maximumFractionDigits = 1, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
   const stremmata = value * 10
-  const unit = stremmata === 1 ? 'στρέμμα' : 'στρέμματα'
-  return `${formatNumber(stremmata, maximumFractionDigits)} ${unit}`
+  const unit = stremmata === 1 ? ui("στρέμμα") : ui("στρέμματα")
+  return `${formatNumber(stremmata, maximumFractionDigits, ui)} ${unit}`
 }
 
-function formatStremmata(value: number | null, maximumFractionDigits = 1): string {
+function formatStremmata(value: number | null, maximumFractionDigits = 1, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return `${formatNumber(value, maximumFractionDigits)} στρέμματα`
+  return ui("{{v0}} στρέμματα", { v0: formatNumber(value, maximumFractionDigits, ui) })
 }
 
-function formatDate(value: string | null): string {
+function formatDate(value: string | null, ui: OverviewUi = greekOverviewUi): string {
   const text = cleanText(value)
   if (!text) return '—'
   const date = new Date(text)
   if (Number.isNaN(date.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(date)
 }
 
-function formatDateTime(value: string | null): string {
+function formatDateTime(value: string | null, ui: OverviewUi = greekOverviewUi): string {
   const text = cleanText(value)
   if (!text) return '—'
   const date = new Date(text)
   if (Number.isNaN(date.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
@@ -489,9 +492,9 @@ function formatDateTime(value: string | null): string {
   }).format(date)
 }
 
-function formatMegawatts(value: number | null): string {
+function formatMegawatts(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return `${value.toLocaleString('el-GR', { maximumFractionDigits: 1 })} MW`
+  return `${value.toLocaleString(ui.locale, { maximumFractionDigits: 1 })} MW`
 }
 
 function toUpperEl(value: string | null): string {
@@ -506,11 +509,11 @@ function toSentenceCaseEl(value: string | null): string {
   return lower.charAt(0).toLocaleUpperCase('el-GR') + lower.slice(1)
 }
 
-function formatCityType(value: string | null): string | null {
+function formatCityType(value: string | null, ui: OverviewUi = greekOverviewUi): string | null {
   const text = cleanText(value)?.toLowerCase()
   if (!text) return null
-  if (text === 'primary' || text === 'admin') return 'Έδρα δήμου'
-  if (text === 'minor') return 'Οικισμός'
+  if (text === 'primary' || text === 'admin') return ui("Έδρα δήμου")
+  if (text === 'minor') return ui("Οικισμός")
   return null
 }
 
@@ -519,12 +522,12 @@ function formatTooltipPointSummary(point: MunicipalityMapTooltipPoint): string {
   return items.length > 0 ? `${point.title}: ${items.join(' · ')}` : point.title
 }
 
-function getWorkTooltipItems(work: WorkMarker): Array<string | null> {
+function getWorkTooltipItems(work: WorkMarker, ui: OverviewUi = greekOverviewUi): Array<string | null> {
   return [
-    work.work ? `Εργασία: ${work.work}` : null,
-    work.title ? `Σύμβαση: ${work.title}` : null,
-    work.contractSignedDate ? `Υπογραφή: ${formatDate(work.contractSignedDate)}` : null,
-    work.referenceNumber ? `Αρ. αναφοράς: ${work.referenceNumber}` : null,
+    work.work ? ui("Εργασία: {{v0}}", { v0: work.work }) : null,
+    work.title ? ui("Σύμβαση: {{v0}}", { v0: work.title }) : null,
+    work.contractSignedDate ? ui("Υπογραφή: {{v0}}", { v0: formatDate(work.contractSignedDate, ui) }) : null,
+    work.referenceNumber ? ui("Αρ. αναφοράς: {{v0}}", { v0: work.referenceNumber }) : null,
   ]
 }
 
@@ -596,21 +599,21 @@ async function fetchAllPaginatedRows<T>(
   return rows
 }
 
-function formatInspectionViolations(count: number | null): string {
-  if (count == null) return 'δεν υπάρχουν διαθέσιμα στοιχεία για παραβάσεις'
-  if (count === 0) return 'δεν διαπιστώθηκε καμία παράβαση'
-  if (count === 1) return 'διαπιστώθηκε 1 παράβαση'
-  return `διαπιστώθηκαν ${formatNumber(count)} παραβάσεις`
+function formatInspectionViolations(count: number | null, ui: OverviewUi = greekOverviewUi): string {
+  if (count == null) return ui("δεν υπάρχουν διαθέσιμα στοιχεία για παραβάσεις")
+  if (count === 0) return ui("δεν διαπιστώθηκε καμία παράβαση")
+  if (count === 1) return ui("διαπιστώθηκε 1 παράβαση")
+  return ui("διαπιστώθηκαν {{v0}} παραβάσεις", { v0: formatNumber(count, undefined, ui) })
 }
 
-function formatOutcomeViolations(count: number | null): string {
-  if (count == null) return 'δεν υπάρχουν διαθέσιμα στοιχεία για παραβάσεις'
-  if (count === 0) return 'δεν προέκυψε καμία παράβαση'
-  if (count === 1) return 'προέκυψε 1 παράβαση'
-  return `προέκυψαν ${formatNumber(count)} παραβάσεις`
+function formatOutcomeViolations(count: number | null, ui: OverviewUi = greekOverviewUi): string {
+  if (count == null) return ui("δεν υπάρχουν διαθέσιμα στοιχεία για παραβάσεις")
+  if (count === 0) return ui("δεν προέκυψε καμία παράβαση")
+  if (count === 1) return ui("προέκυψε 1 παράβαση")
+  return ui("προέκυψαν {{v0}} παραβάσεις", { v0: formatNumber(count, undefined, ui) })
 }
 
-function buildPlotCleaningNarrative(profile: MunicipalityProfileRow | null): string {
+function buildPlotCleaningNarrative(profile: MunicipalityProfileRow | null, ui: OverviewUi = greekOverviewUi): string {
   const declarations = toNumber(profile?.dilosis_katharis_plithos)
   const declarationChecks = toNumber(profile?.elegxoi_katopin_dilosis)
   const declarationViolations = toNumber(profile?.mi_symmorfosi_dilosis)
@@ -630,38 +633,38 @@ function buildPlotCleaningNarrative(profile: MunicipalityProfileRow | null): str
     complaintChecks == null &&
     complaintViolations == null
   ) {
-    return 'Δεν υπάρχουν διαθέσιμα στοιχεία καθαρισμού οικοπέδων για το 2024.'
+    return ui("Δεν υπάρχουν διαθέσιμα στοιχεία καθαρισμού οικοπέδων για το 2024.")
   }
 
   const declarationsSentence = declarations === 0
-    ? 'Το 2024 δεν υποβλήθηκε καμία υπεύθυνη δήλωση καθαρισμού οικοπέδων.'
+    ? ui("Το 2024 δεν υποβλήθηκε καμία υπεύθυνη δήλωση καθαρισμού οικοπέδων.")
     : declarations === 1
-      ? 'Το 2024 υποβλήθηκε 1 υπεύθυνη δήλωση καθαρισμού οικοπέδων.'
-      : `Το 2024 υποβλήθηκαν ${formatNumber(declarations)} υπεύθυνες δηλώσεις καθαρισμού οικοπέδων.`
+      ? ui("Το 2024 υποβλήθηκε 1 υπεύθυνη δήλωση καθαρισμού οικοπέδων.")
+      : ui("Το 2024 υποβλήθηκαν {{v0}} υπεύθυνες δηλώσεις καθαρισμού οικοπέδων.", { v0: formatNumber(declarations, undefined, ui) })
 
   const declarationChecksSentence = declarationChecks === 0
-    ? 'Δεν προέκυψε κανένας έλεγχος κατόπιν δήλωσης.'
+    ? ui("Δεν προέκυψε κανένας έλεγχος κατόπιν δήλωσης.")
     : declarationChecks === 1
-      ? `Από ${declarations === 1 ? 'αυτή' : 'αυτές'} προέκυψε 1 έλεγχος, στον οποίο ${formatInspectionViolations(declarationViolations)}.`
-      : `Από ${declarations === 1 ? 'αυτή' : 'αυτές'} προέκυψαν ${formatNumber(declarationChecks)} έλεγχοι, στους οποίους ${formatInspectionViolations(declarationViolations)}.`
+      ? ui("Από {{v0}} προέκυψε 1 έλεγχος, στον οποίο {{v1}}.", { v0: declarations === 1 ? ui("αυτή") : ui("αυτές"), v1: formatInspectionViolations(declarationViolations, ui) })
+      : ui("Από {{v0}} προέκυψαν {{v1}} έλεγχοι, στους οποίους {{v2}}.", { v0: declarations === 1 ? ui("αυτή") : ui("αυτές"), v1: formatNumber(declarationChecks, undefined, ui), v2: formatInspectionViolations(declarationViolations, ui) })
 
   const ownMotionSentence = ownMotionChecks === 0
-    ? 'Την ίδια χρονιά δεν πραγματοποιήθηκε κανένας αυτεπάγγελτος έλεγχος.'
+    ? ui("Την ίδια χρονιά δεν πραγματοποιήθηκε κανένας αυτεπάγγελτος έλεγχος.")
     : ownMotionChecks === 1
-      ? `Την ίδια χρονιά πραγματοποιήθηκε 1 αυτεπάγγελτος έλεγχος, από τον οποίο ${formatOutcomeViolations(ownMotionViolations)}.`
-      : `Την ίδια χρονιά πραγματοποιήθηκαν ${formatNumber(ownMotionChecks)} αυτεπάγγελτοι έλεγχοι, από τους οποίους ${formatOutcomeViolations(ownMotionViolations)}.`
+      ? ui("Την ίδια χρονιά πραγματοποιήθηκε 1 αυτεπάγγελτος έλεγχος, από τον οποίο {{v0}}.", { v0: formatOutcomeViolations(ownMotionViolations, ui) })
+      : ui("Την ίδια χρονιά πραγματοποιήθηκαν {{v0}} αυτεπάγγελτοι έλεγχοι, από τους οποίους {{v1}}.", { v0: formatNumber(ownMotionChecks, undefined, ui), v1: formatOutcomeViolations(ownMotionViolations, ui) })
 
   const complaintsSentence = complaints === 0
-    ? 'Παράλληλα, οι αρχές δεν έλαβαν καμία καταγγελία για μη καθαρισμό οικοπέδων.'
+    ? ui("Παράλληλα, οι αρχές δεν έλαβαν καμία καταγγελία για μη καθαρισμό οικοπέδων.")
     : complaints === 1
-      ? 'Παράλληλα, οι αρχές έλαβαν 1 καταγγελία για μη καθαρισμό οικοπέδων.'
-      : `Παράλληλα, οι αρχές έλαβαν ${formatNumber(complaints)} καταγγελίες για μη καθαρισμό οικοπέδων.`
+      ? ui("Παράλληλα, οι αρχές έλαβαν 1 καταγγελία για μη καθαρισμό οικοπέδων.")
+      : ui("Παράλληλα, οι αρχές έλαβαν {{v0}} καταγγελίες για μη καθαρισμό οικοπέδων.", { v0: formatNumber(complaints, undefined, ui) })
 
   const complaintChecksSentence = complaintChecks === 0
-    ? 'Δεν διενεργήθηκε κανένας σχετικός έλεγχος.'
+    ? ui("Δεν διενεργήθηκε κανένας σχετικός έλεγχος.")
     : complaintChecks === 1
-      ? `Διενεργήθηκε 1 σχετικός έλεγχος, στον οποίο ${formatInspectionViolations(complaintViolations)}.`
-      : `Διενεργήθηκαν ${formatNumber(complaintChecks)} σχετικοί έλεγχοι, στους οποίους ${formatInspectionViolations(complaintViolations)}.`
+      ? ui("Διενεργήθηκε 1 σχετικός έλεγχος, στον οποίο {{v0}}.", { v0: formatInspectionViolations(complaintViolations, ui) })
+      : ui("Διενεργήθηκαν {{v0}} σχετικοί έλεγχοι, στους οποίους {{v1}}.", { v0: formatNumber(complaintChecks, undefined, ui), v1: formatInspectionViolations(complaintViolations, ui) })
 
   return [
     declarationsSentence,
@@ -697,10 +700,10 @@ function getChartYearStyle(year: number, currentYear: number) {
   }
 }
 
-function formatChartDayLabel(dayOfYear: number): string {
+function formatChartDayLabel(dayOfYear: number, ui: OverviewUi = greekOverviewUi): string {
   const date = new Date(Date.UTC(2025, 0, 1))
   date.setUTCDate(dayOfYear)
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
   }).format(date)
@@ -728,27 +731,28 @@ function buildContractStepPath(points: ContractCurvePoint[], maxValue: number): 
   return path
 }
 
-function formatCurrentFiresNarrativeSentence(year: number, count: number): string {
+function formatCurrentFiresNarrativeSentence(year: number, count: number, ui: OverviewUi = greekOverviewUi): string {
   if (count === 0) {
-    return `Το ${year} δεν έχουμε εντοπίσει συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
+    return ui("Το {{v0}} δεν έχουμε εντοπίσει συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).", { v0: year })
   }
   if (count === 1) {
-    return `Το ${year} εντοπίσαμε 1 συμβάν δασικής πυρκαγιάς από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
+    return ui("Το {{v0}} εντοπίσαμε 1 συμβάν δασικής πυρκαγιάς από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).", { v0: year })
   }
-  return `Το ${year} εντοπίσαμε ${formatNumber(count)} συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).`
+  return ui("Το {{v0}} εντοπίσαμε {{v1}} συμβάντα δασικών πυρκαγιών από τα δεδομένα του Πυροσβεστικού Σώματος (χωρίς συντεταγμένες).", { v0: year, v1: formatNumber(count, undefined, ui) })
 }
 
-function formatCopernicusNarrativeSentence(year: number, count: number): string {
+function formatCopernicusNarrativeSentence(year: number, count: number, ui: OverviewUi = greekOverviewUi): string {
   if (count === 0) {
-    return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) δεν έχει γεωεντοπίσει πυρκαγιές στον δήμο για το ${year}.`
+    return ui("Το ευρωπαϊκό σύστημα Copernicus (EFFIS) δεν έχει γεωεντοπίσει πυρκαγιές στον δήμο για το {{v0}}.", { v0: year })
   }
   if (count === 1) {
-    return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει 1 πυρκαγιά στον δήμο για το ${year}.`
+    return ui("Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει 1 πυρκαγιά στον δήμο για το {{v0}}.", { v0: year })
   }
-  return `Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει ${formatNumber(count)} πυρκαγιές στον δήμο για το ${year}.`
+  return ui("Το ευρωπαϊκό σύστημα Copernicus (EFFIS) έχει γεωεντοπίσει {{v0}} πυρκαγιές στον δήμο για το {{v1}}.", { v0: formatNumber(count, undefined, ui), v1: year })
 }
 
 export default function MunicipalitiesPage() {
+  const ui = useOverviewUi()
   const currentYear = new Date().getFullYear()
   const years = useMemo(() => [currentYear, currentYear - 1, currentYear - 2], [currentYear])
   const [searchParams, setSearchParams] = useSearchParams()
@@ -814,7 +818,7 @@ export default function MunicipalitiesPage() {
     return window.innerWidth <= MOBILE_BREAKPOINT
   })
   const searchSuggestions = useMemo(
-    () => rankMunicipalityMatches(municipalities, search).slice(0, 8),
+    () => rankMunicipalityMatches(municipalities, search, (name) => translatedOrganizationName(name) ?? name).slice(0, 8),
     [municipalities, search],
   )
   const bestMunicipalityMatch = searchSuggestions[0]?.municipality ?? null
@@ -1269,6 +1273,14 @@ export default function MunicipalitiesPage() {
               return {
                 id: String(contract.id),
                 who: cleanText(contract.organization) ?? cleanText(row.organization) ?? '—',
+                sourceValues: {
+                  submittedAt: cleanText(contract.submission_at),
+                  signedAt: cleanText(contract.contract_signed_date),
+                  startDate: cleanText(contract.start_date),
+                  endDate: cleanText(contract.end_date),
+                  withoutVat: amountWithoutVat,
+                  withVat: amountWithVat,
+                },
                 what: cleanText(contract.title) ?? '—',
                 when: formatDate(cleanText(contract.submission_at)),
                 why: toSentenceCaseEl(topCpv?.label ?? cleanText(contract.short_description) ?? '—'),
@@ -1320,6 +1332,7 @@ export default function MunicipalitiesPage() {
             cpv: cleanText(row.cpv) ?? '—',
             startDate: formatDate(cleanText(row.start_date)),
             endDate: formatDate(cleanText(row.end_date)),
+            sourceDates: { start: cleanText(row.start_date), end: cleanText(row.end_date), durationDays },
             duration: durationDays != null ? `${Math.round(durationDays)} ημέρες` : '—',
             progressPct: toNumber(row.progress_pct),
             signer: cleanText(row.signer) ?? '—',
@@ -1564,12 +1577,12 @@ export default function MunicipalitiesPage() {
         startDate: cleanText(row.start_date) ?? cleanText(row.first_seen_at),
         area: cleanText(row.municipality_raw) ?? cleanText(row.regional_unit) ?? cleanText(row.region),
         sourceLabel: cleanText(row.source) === 'fireservice_x'
-          ? `Πηγή: Πυροσβεστικό Σώμα στο X (${cleanText(row.source_account) ?? '@pyrosvestiki'})`
+          ? ui("Πηγή: Πυροσβεστικό Σώμα στο X ({{v0}})", { v0: cleanText(row.source_account) ?? '@pyrosvestiki' })
           : null,
         sourceLocation: cleanText(row.source_location),
       }]
     })
-  }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap])
+  }, [currentFireRows, selectedMunicipalityKey, selectedMunicipalityMap, ui])
 
   const firmsDetectionMarkers = useMemo(() => {
     if (!selectedMunicipalityMap) return []
@@ -1609,13 +1622,13 @@ export default function MunicipalitiesPage() {
         trackKm,
         acquiredAt: cleanText(row.acquired_at),
         acquiredAtEl: cleanText(row.acquired_at_el) ?? cleanText(row.acquired_at),
-        satellite: cleanText(row.satellite) ?? 'Άγνωστος',
+        satellite: cleanText(row.satellite) ?? ui("Άγνωστος"),
         instrument: cleanText(row.instrument) ?? '—',
         confidence: cleanText(row.confidence),
         frp: toNumber(row.frp),
       }]
     })
-  }, [firmsDetectionRows, selectedMunicipalityKey, selectedMunicipalityMap])
+  }, [firmsDetectionRows, selectedMunicipalityKey, selectedMunicipalityMap, ui])
 
   const municipalityWorkMarkers = useMemo(() => {
     if (!selectedMunicipalityFeature || !selectedMunicipalityMap) return []
@@ -1693,8 +1706,8 @@ export default function MunicipalitiesPage() {
     const works = municipalityWorkMarkers.map((work) => pointFeature(work.lon, work.lat, interactionProperties(
       'work',
       work.key,
-      work.pointName ?? work.work ?? 'Εργασία',
-      getWorkTooltipItems(work),
+      work.pointName ?? work.work ?? ui("Εργασία"),
+      getWorkTooltipItems(work, ui),
       work,
       {
         procurementId: work.procurementId,
@@ -1704,12 +1717,12 @@ export default function MunicipalitiesPage() {
     const forestFirePoints = forestFireMarkers.map((fire) => pointFeature(fire.lon, fire.lat, interactionProperties(
       'fire',
       fire.key,
-      'Δασική πυρκαγιά',
+      ui("Δασική πυρκαγιά"),
       [
-        fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-        fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-        fire.year != null ? `Έτος: ${fire.year}` : null,
-        `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+        fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+        fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+        fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+        ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
       ],
       fire,
       { area: fire.burnedAreaHa },
@@ -1719,9 +1732,9 @@ export default function MunicipalitiesPage() {
       fire.key,
       'Copernicus / EFFIS',
       [
-        fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-        fire.year != null ? `Έτος: ${fire.year}` : null,
-        `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+        fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+        fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+        ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
       ],
       fire,
       { area: fire.areaHa },
@@ -1733,9 +1746,9 @@ export default function MunicipalitiesPage() {
         fire.key,
         'Copernicus / EFFIS',
         [
-          fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-          fire.year != null ? `Έτος: ${fire.year}` : null,
-          `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+          fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+          fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+          ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
         ],
         fire,
         { area: fire.areaHa },
@@ -1745,15 +1758,15 @@ export default function MunicipalitiesPage() {
     const activeFires = activeCurrentFireMarkers.map((fire) => pointFeature(fire.lon, fire.lat, interactionProperties(
       'current-fire',
       fire.key,
-      'Ενεργή πυρκαγιά',
+      ui("Ενεργή πυρκαγιά"),
       [
-        fire.area ? `Περιοχή: ${fire.area}` : null,
-        fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
-        fire.fuelType,
-        fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
-        fire.status,
+        fire.area ? ui("Περιοχή: {{v0}}", { v0: fire.area }) : null,
+        fire.sourceLocation ? ui("Αναφορά tweet: {{v0}}", { v0: fire.sourceLocation }) : null,
+        ui(fire.fuelType ?? ''),
+        fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDate(fire.startDate, ui) }) : null,
+        ui(fire.status ?? ''),
         fire.sourceLabel,
-        'Θέση κατά προσέγγιση',
+        ui("Θέση κατά προσέγγιση"),
       ],
       fire,
       { statusColor: fire.statusColor },
@@ -1761,11 +1774,11 @@ export default function MunicipalitiesPage() {
     const firms = firmsDetectionMarkers.map((detection) => pointFeature(detection.lon, detection.lat, interactionProperties(
       'firms',
       detection.key,
-      'NASA FIRMS: θερμική ανωμαλία',
+      ui("NASA FIRMS: θερμική ανωμαλία"),
       [
-        `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
-        formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
-        `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+        ui("Δορυφόρος: {{v0}} / {{v1}}", { v0: detection.satellite, v1: detection.instrument }),
+        formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt, ui),
+        ui("Θερμική Ενέργεια: {{v0}}", { v0: formatMegawatts(detection.frp, ui) }),
       ],
       detection,
       { scanKm: detection.scanKm, trackKm: detection.trackKm },
@@ -1778,7 +1791,7 @@ export default function MunicipalitiesPage() {
       activeFires: { type: 'FeatureCollection', features: activeFires },
       firms: { type: 'FeatureCollection', features: firms },
     }
-  }, [activeCurrentFireMarkers, copernicusMarkers, copernicusShapes, firmsDetectionMarkers, forestFireMarkers, municipalityWorkMarkers])
+  }, [activeCurrentFireMarkers, copernicusMarkers, copernicusShapes, firmsDetectionMarkers, forestFireMarkers, municipalityWorkMarkers, ui])
 
   const hasCopernicusShapes = copernicusShapes.length > 0
   const hasSelectedFireLegend = forestFireMarkers.length > 0 || copernicusMarkers.length > 0 || hasCopernicusShapes
@@ -1786,14 +1799,14 @@ export default function MunicipalitiesPage() {
     const items: Array<{ key: string; tone: 'boundary' | 'work' | 'fire' | 'current-fire' | 'firms'; label: string }> = [{
       key: 'boundary',
       tone: 'boundary',
-      label: 'Όρια Δήμου',
+      label: ui("Όρια Δήμου"),
     }]
 
     if (municipalityWorkMarkers.length > 0 || workRowsLoading) {
       items.push({
         key: 'work',
         tone: 'work',
-        label: 'Εργασίες πυροπροστασίας',
+        label: ui("Εργασίες πυροπροστασίας"),
       })
     }
 
@@ -1801,7 +1814,7 @@ export default function MunicipalitiesPage() {
       items.push({
         key: 'fire',
         tone: 'fire',
-        label: 'Πυρκαγιά',
+        label: ui("Πυρκαγιά"),
       })
     }
 
@@ -1809,7 +1822,7 @@ export default function MunicipalitiesPage() {
       items.push({
         key: 'current-fire',
         tone: 'current-fire',
-        label: 'Ενεργή πυρκαγιά (θέση κατά προσέγγιση)',
+        label: ui("Ενεργή πυρκαγιά (θέση κατά προσέγγιση)"),
       })
     }
 
@@ -1817,7 +1830,7 @@ export default function MunicipalitiesPage() {
       items.push({
         key: 'firms',
         tone: 'firms',
-        label: 'Θερμική ανωμαλία NASA FIRMS',
+        label: ui("Θερμική ανωμαλία NASA FIRMS"),
       })
     }
 
@@ -1831,6 +1844,7 @@ export default function MunicipalitiesPage() {
     hasSelectedFireLegend,
     municipalityWorkMarkers.length,
     workRowsLoading,
+    ui,
   ])
 
   const visibleMunicipalityTooltipPoints = useMemo<MunicipalityMapTooltipPoint[]>(() => {
@@ -1849,8 +1863,8 @@ export default function MunicipalitiesPage() {
         type: 'city',
         title: city.name,
         items: [
-          city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-          formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+          city.population != null ? ui("Πληθυσμός: {{v0}}", { v0: formatNumber(city.population, undefined, ui) }) : null,
+          formatCityType(city.capital, ui) ? ui("Τύπος: {{v0}}", { v0: formatCityType(city.capital, ui) }) : null,
         ],
       })
     }
@@ -1861,8 +1875,8 @@ export default function MunicipalitiesPage() {
         x: work.x,
         y: work.y,
         type: 'work',
-        title: work.pointName ?? work.work ?? 'Εργασία',
-        items: getWorkTooltipItems(work),
+        title: work.pointName ?? work.work ?? ui("Εργασία"),
+        items: getWorkTooltipItems(work, ui),
       })
     }
 
@@ -1872,12 +1886,12 @@ export default function MunicipalitiesPage() {
         x: fire.x,
         y: fire.y,
         type: 'fire',
-        title: 'Δασική πυρκαγιά',
+        title: ui("Δασική πυρκαγιά"),
         items: [
-          fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-          fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-          fire.year != null ? `Έτος: ${fire.year}` : null,
-          `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+          fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+          fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+          fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+          ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
         ],
       })
     }
@@ -1893,9 +1907,9 @@ export default function MunicipalitiesPage() {
         type: 'copernicus',
         title: 'Copernicus / EFFIS',
         items: [
-          fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-          fire.year != null ? `Έτος: ${fire.year}` : null,
-          `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+          fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+          fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+          ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
         ],
       })
     }
@@ -1906,13 +1920,13 @@ export default function MunicipalitiesPage() {
         x: fire.x,
         y: fire.y,
         type: 'current-fire',
-        title: 'Ενεργή πυρκαγιά',
+        title: ui("Ενεργή πυρκαγιά"),
         items: [
-          fire.area ? `Περιοχή: ${fire.area}` : null,
-          fire.fuelType,
-          fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
-          fire.status,
-          'Θέση κατά προσέγγιση',
+          fire.area ? ui("Περιοχή: {{v0}}", { v0: fire.area }) : null,
+          ui(fire.fuelType ?? ''),
+          fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDate(fire.startDate, ui) }) : null,
+          ui(fire.status ?? ''),
+          ui("Θέση κατά προσέγγιση"),
         ],
       })
     }
@@ -1925,10 +1939,10 @@ export default function MunicipalitiesPage() {
         type: 'firms',
         title: 'NASA FIRMS',
         items: [
-          `Περιοχή: ${municipalityTooltipName}`,
-          `Δορυφόρος: ${detection.satellite} / ${detection.instrument}`,
-          formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt),
-          `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+          ui("Περιοχή: {{v0}}", { v0: ui.organization(municipalityTooltipName) }),
+          ui("Δορυφόρος: {{v0}} / {{v1}}", { v0: detection.satellite, v1: detection.instrument }),
+          formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt, ui),
+          ui("Θερμική Ενέργεια: {{v0}}", { v0: formatMegawatts(detection.frp, ui) }),
         ],
         frp: detection.frp,
       })
@@ -1951,6 +1965,7 @@ export default function MunicipalitiesPage() {
     showFirePoints,
     showFirmsPoints,
     showWorkPoints,
+    ui,
   ])
 
   const openMunicipality = (municipalityKey: string, replace = true) => {
@@ -1993,7 +2008,7 @@ export default function MunicipalitiesPage() {
     return getNearbyFirmsDetections(fallback)
       .slice(0, 5)
       .map((detection, index) => (
-        `${index + 1}. ${formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt)} · ${detection.satellite} / ${detection.instrument} · ${formatMegawatts(detection.frp)}`
+        `${index + 1}. ${formatDateTime(detection.acquiredAtEl ?? detection.acquiredAt, ui)} · ${detection.satellite} / ${detection.instrument} · ${formatMegawatts(detection.frp, ui)}`
       ))
   }
 
@@ -2038,7 +2053,7 @@ export default function MunicipalitiesPage() {
     })
 
     return {
-      title: `${overlapping.length} σημεία στο ίδιο σημείο`,
+      title: ui("{{v0}} σημεία στο ίδιο σημείο", { v0: overlapping.length }),
       items: [],
       isStacked: true,
       stackedRows: [
@@ -2048,7 +2063,7 @@ export default function MunicipalitiesPage() {
         })),
         ...(overlappingFirms.length > 5
           ? [{
-              label: '↳ (δείχνουμε τα 5 σημεία με τη μεγαλύτερη ένταση)',
+              label: ui("↳ (δείχνουμε τα 5 σημεία με τη μεγαλύτερη ένταση)"),
               type: 'firms-note',
               isNote: true,
             }]
@@ -2120,8 +2135,8 @@ export default function MunicipalitiesPage() {
       x: pointer.x,
       y: pointer.y,
       title: count === 1
-        ? 'NASA FIRMS: 1 θερμική ανωμαλία'
-        : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+        ? ui("NASA FIRMS: 1 θερμική ανωμαλία")
+        : ui("NASA FIRMS: {{v0}} ισχυρότερες θερμικές ανωμαλίες", { v0: formatNumber(count, undefined, ui) }),
       items: getNearbyFirmsDetectionTooltipItems(fallback),
       isStacked: false,
     })
@@ -2142,8 +2157,8 @@ export default function MunicipalitiesPage() {
             x: pointer.x,
             y: pointer.y,
             title: count === 1
-              ? 'NASA FIRMS: 1 θερμική ανωμαλία'
-              : `NASA FIRMS: ${formatNumber(count)} ισχυρότερες θερμικές ανωμαλίες`,
+              ? ui("NASA FIRMS: 1 θερμική ανωμαλία")
+              : ui("NASA FIRMS: {{v0}} ισχυρότερες θερμικές ανωμαλίες", { v0: formatNumber(count, undefined, ui) }),
             items: getNearbyFirmsDetectionTooltipItems(fallback),
             isStacked: false,
           }
@@ -2307,22 +2322,30 @@ export default function MunicipalitiesPage() {
     setSelectedContract({
       id: String(procurement.id),
       who,
+      sourceValues: {
+        submittedAt: cleanText(procurement.submission_at),
+        signedAt: cleanText(procurement.contract_signed_date),
+        startDate: cleanText(procurement.start_date),
+        endDate: cleanText(procurement.end_date),
+        withoutVat: amountWithoutVat,
+        withVat: payment.amount_with_vat,
+      },
       what: cleanText(procurement.title) ?? '—',
-      when: formatDate(cleanText(procurement.submission_at)),
+      when: formatDate(cleanText(procurement.submission_at), ui),
       why: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? primaryCpv?.label ?? '—',
       beneficiary: cleanText(payment.beneficiary_name) ?? '—',
       contractType: cleanText(procurement.procedure_type_value) ?? '—',
-      howMuch: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
-      withoutVatAmount: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
-      withVatAmount: payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      howMuch: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      withoutVatAmount: amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      withVatAmount: payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       referenceNumber: cleanText(procurement.reference_number) ?? '—',
       contractNumber: cleanText(procurement.contract_number) ?? '—',
       cpv: primaryCpv?.label ?? '—',
       cpvCode: primaryCpv?.code ?? '—',
       cpvItems,
-      signedAt: formatDate(cleanText(procurement.contract_signed_date)),
-      startDate: formatDate(cleanText(procurement.start_date)),
-      endDate: formatDate(cleanText(procurement.end_date)),
+      signedAt: formatDate(cleanText(procurement.contract_signed_date), ui),
+      startDate: formatDate(cleanText(procurement.start_date), ui),
+      endDate: formatDate(cleanText(procurement.end_date), ui),
       organizationVat: cleanText(procurement.organization_vat_number) ?? '—',
       beneficiaryVat: cleanText(payment.beneficiary_vat_number) ?? '—',
       beneficiaryGemi: cleanText(payment.beneficiary_gemi) ?? null,
@@ -2338,8 +2361,8 @@ export default function MunicipalitiesPage() {
       auctionRefNo: cleanText(procurement.auction_ref_no) ?? '—',
       paymentRefNo: cleanText(payment.payment_ref_no) ?? '—',
       shortDescription: cleanText(procurement.short_descriptions)?.split('|').map((item) => item.trim()).filter(Boolean)[0] ?? '—',
-      rawBudget: procurement.budget == null ? '—' : Number(procurement.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
-      contractBudget: procurement.contract_budget == null ? '—' : Number(procurement.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      rawBudget: procurement.budget == null ? '—' : Number(procurement.budget).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
+      contractBudget: procurement.contract_budget == null ? '—' : Number(procurement.contract_budget).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }),
       contractRelatedAda: contractRelatedAda ?? '—',
       previousReferenceNumber: cleanText(procurement.prev_reference_no) ?? '—',
       nextReferenceNumber: cleanText(procurement.next_ref_no) ?? '—',
@@ -2887,10 +2910,10 @@ export default function MunicipalitiesPage() {
     ?? cleanText(selectedMunicipality?.municipality_normalized_name)
     ?? null
   const selectedName = hasSelectedMunicipality
-    ? selectedMunicipalityLabel ?? 'Δήμος'
+    ? ui.organization(selectedMunicipalityLabel ?? ui("Δήμος"))
     : selectedMunicipalityKey
-      ? 'Φόρτωση δήμου…'
-      : 'Αναζήτησε Δήμο'
+      ? ui("Φόρτωση δήμου…")
+      : ui("Αναζήτησε Δήμο")
   const populationValue = toNumber(profile?.plithismos_synolikos)
   const areaValue = toNumber(profile?.ektasi_km2)
   const densityValue = toNumber(profile?.puknotita)
@@ -2900,13 +2923,13 @@ export default function MunicipalitiesPage() {
     const noteParts: string[] = []
 
     if (nationalKapFundingAmount != null) {
-      noteParts.push(`Συνολική κατανομή προς τους δήμους της χώρας: ${formatEur(nationalKapFundingAmount)}.`)
+      noteParts.push(ui("Συνολική κατανομή προς τους δήμους της χώρας: {{v0}}.", { v0: formatEur(nationalKapFundingAmount, ui) }))
     } else {
-      noteParts.push(`Δεν υπάρχει ακόμη διαθέσιμη κατανομή ΚΑΠ ${currentYear} για τους δήμους της χώρας.`)
+      noteParts.push(ui("Δεν υπάρχει ακόμη διαθέσιμη κατανομή ΚΑΠ {{v0}} για τους δήμους της χώρας.", { v0: currentYear }))
     }
 
     return noteParts.join(' ')
-  }, [currentYear, nationalKapFundingAmount])
+  }, [currentYear, nationalKapFundingAmount, ui])
   const municipalityFundingChartMax = useMemo(() => {
     const values = municipalityFundingHistory.map((entry) => entry.totalAmount).filter((value) => Number.isFinite(value))
     return values.length > 0 ? Math.max(1, ...values) : 1
@@ -2925,48 +2948,48 @@ export default function MunicipalitiesPage() {
     return {
       pct,
       tone: pct > 0 ? 'positive' : 'negative',
-      label: `${pct > 0 ? '+' : ''}${formatNumber(pct, 0)}%`,
+      label: `${pct > 0 ? '+' : ''}${formatNumber(pct, 0, ui)}%`,
     } as const
-  }, [currentYear, municipalityFundingHistory])
+  }, [currentYear, municipalityFundingHistory, ui])
   const civicFacts = [
     {
-      label: 'Πληθυσμός',
-      value: populationValue != null ? `${formatNumber(populationValue)} κάτοικοι` : '—',
+      label: ui("Πληθυσμός"),
+      value: populationValue != null ? ui("{{v0}} κάτοικοι", { v0: formatNumber(populationValue, undefined, ui) }) : '—',
       note: populationValue != null
-        ? `Ορεινός: ${formatNumber(toNumber(profile?.plithismos_oreinos))} | Ημιορεινός: ${formatNumber(toNumber(profile?.plithismos_hmioreinos))} | Πεδινός: ${formatNumber(toNumber(profile?.plithismos_pedinos))} κάτοικοι`
-        : 'Δεν υπάρχουν διαθέσιμα πληθυσμιακά δεδομένα.',
+        ? ui("Ορεινός: {{v0}} | Ημιορεινός: {{v1}} | Πεδινός: {{v2}} κάτοικοι", { v0: formatNumber(toNumber(profile?.plithismos_oreinos), undefined, ui), v1: formatNumber(toNumber(profile?.plithismos_hmioreinos), undefined, ui), v2: formatNumber(toNumber(profile?.plithismos_pedinos), undefined, ui) })
+        : ui("Δεν υπάρχουν διαθέσιμα πληθυσμιακά δεδομένα."),
     },
     {
-      label: 'Έκταση',
-      value: areaValue != null ? `${formatNumber(areaValue)} km²` : '—',
-      note: 'Εμβαδόν διοικητικής ενότητας',
+      label: ui("Έκταση"),
+      value: areaValue != null ? `${formatNumber(areaValue, undefined, ui)} km²` : '—',
+      note: ui("Εμβαδόν διοικητικής ενότητας"),
     },
     {
-      label: 'Πυκνότητα κατοίκησης',
-      value: densityValue != null ? `${formatNumber(densityValue, 1)} κάτοικοι / km²` : '—',
-      note: 'Βαθμός οικιστικής κάλυψης',
+      label: ui("Πυκνότητα κατοίκησης"),
+      value: densityValue != null ? ui("{{v0}} κάτοικοι / km²", { v0: formatNumber(densityValue, 1, ui) }) : '—',
+      note: ui("Βαθμός οικιστικής κάλυψης"),
     },
     {
-      label: 'Βλάστηση',
+      label: ui("Βλάστηση"),
       value: (() => {
         const vegetationArea = toNumber(profile?.ektasi_vlastisis_pros_katharismo_ha)
-        if (vegetationArea === 0) return 'Δεν έχουν δηλωθεί στρέμματα προς καθαρισμό'
-        return formatStremmata(vegetationArea, 1)
+        if (vegetationArea === 0) return ui("Δεν έχουν δηλωθεί στρέμματα προς καθαρισμό")
+        return formatStremmata(vegetationArea, 1, ui)
       })(),
-      note: 'Έκταση περιοχών με βλάστηση που πρέπει να καθαρίζεται κάθε χρόνο',
+      note: ui("Έκταση περιοχών με βλάστηση που πρέπει να καθαρίζεται κάθε χρόνο"),
     },
     {
-      label: 'Οχήματα πυροπροστασίας',
+      label: ui("Οχήματα πυροπροστασίας"),
       value: (() => {
         const waterTrucks = toNumber(profile?.oxhmata_udrofora)
         const fireTrucks = toNumber(profile?.oxhmata_purosvestika)
-        if (waterTrucks == null && fireTrucks == null) return 'Δεν έχουν δηλωθεί οχήματα πυροπροστασίας'
-        return `${formatNumber(waterTrucks)} υδροφόρες · ${formatNumber(fireTrucks)} πυροσβεστικά`
+        if (waterTrucks == null && fireTrucks == null) return ui("Δεν έχουν δηλωθεί οχήματα πυροπροστασίας")
+        return ui("{{v0}} υδροφόρες · {{v1}} πυροσβεστικά", { v0: formatNumber(waterTrucks, undefined, ui), v1: formatNumber(fireTrucks, undefined, ui) })
       })(),
-      note: 'Διαθέσιμος στόλος πυρόσβεσης και υποστήριξης',
+      note: ui("Διαθέσιμος στόλος πυρόσβεσης και υποστήριξης"),
     },
   ]
-  const plotCleaningNarrative = buildPlotCleaningNarrative(profile)
+  const plotCleaningNarrative = buildPlotCleaningNarrative(profile, ui)
   const currentFireCountByYear = useMemo(() => {
     const summary = new Map<number, number>()
 
@@ -2982,19 +3005,19 @@ export default function MunicipalitiesPage() {
     const activeRows = currentFireRows.filter((row) => row.is_current && cleanText(row.status) !== 'ΛΗΞΗ')
     const count = activeRows.length
     if (count <= 0) return null
-    if (count > 1) return `${formatNumber(count)} ΕΝΕΡΓΕΣ ΠΥΡΚΑΓΙΕΣ`
+    if (count > 1) return ui("{{v0}} ΕΝΕΡΓΕΣ ΠΥΡΚΑΓΙΕΣ", { v0: formatNumber(count, undefined, ui) })
 
     const activeRow = activeRows[0]
-    const fuelType = cleanText(activeRow.fuel_type) ?? 'άγνωστο τύπο καύσιμης ύλης'
-    const status = cleanText(activeRow.status) ?? 'άγνωστη κατάσταση'
-    return `1 ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ ${fuelType} - ${status}`
-  }, [currentFireRows])
+    const fuelType = ui(cleanText(activeRow.fuel_type) ?? '') || ui("άγνωστο τύπο καύσιμης ύλης")
+    const status = ui(cleanText(activeRow.status) ?? '') || ui("άγνωστη κατάσταση")
+    return ui("1 ΕΝΕΡΓΗ ΠΥΡΚΑΓΙΑ ΣΕ {{v0}} - {{v1}}", { v0: fuelType, v1: status })
+  }, [currentFireRows, ui])
   const activeFirmsDetectionAlert = useMemo(() => {
     const count = firmsDetectionRows.length
     if (count <= 0) return null
-    if (count === 1) return 'ΕΝΕΡΓΗ ΘΕΡΜΙΚΗ ΑΝΩΜΑΛΙΑ (NASA FIRMS)'
-    return `${formatNumber(count)} ΕΝΕΡΓΕΣ ΘΕΡΜΙΚΕΣ ΑΝΩΜΑΛΙΕΣ (NASA FIRMS)`
-  }, [firmsDetectionRows.length])
+    if (count === 1) return ui("ΕΝΕΡΓΗ ΘΕΡΜΙΚΗ ΑΝΩΜΑΛΙΑ (NASA FIRMS)")
+    return ui("{{v0}} ΕΝΕΡΓΕΣ ΘΕΡΜΙΚΕΣ ΑΝΩΜΑΛΙΕΣ (NASA FIRMS)", { v0: formatNumber(count, undefined, ui) })
+  }, [firmsDetectionRows.length, ui])
   const recent112NoticeAlert = useMemo(() => {
     const count = recent112NoticeRows.length
     if (count <= 0) return null
@@ -3003,11 +3026,11 @@ export default function MunicipalitiesPage() {
     if (count === 1) {
       const noticeType = cleanText(recent112NoticeRows[0]?.notice_type)
       return noticeType
-        ? `1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112 - ${noticeType}${latestNoticeSuffix}`
-        : `1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112${latestNoticeSuffix}`
+        ? ui("1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112 - {{v0}}{{v1}}", { v0: noticeType, v1: latestNoticeSuffix })
+        : ui("1 ΕΝΕΡΓΗ Ή ΠΡΟΣΦΑΤΗ ΕΙΔΟΠΟΙΗΣΗ 112{{v0}}", { v0: latestNoticeSuffix })
     }
-    return `${formatNumber(count)} ΕΝΕΡΓΕΣ Ή ΠΡΟΣΦΑΤΕΣ ΕΙΔΟΠΟΙΗΣΕΙΣ 112${latestNoticeSuffix}`
-  }, [recent112NoticeRows])
+    return ui("{{v0}} ΕΝΕΡΓΕΣ Ή ΠΡΟΣΦΑΤΕΣ ΕΙΔΟΠΟΙΗΣΕΙΣ 112{{v1}}", { v0: formatNumber(count, undefined, ui), v1: latestNoticeSuffix })
+  }, [recent112NoticeRows, ui])
   const copernicusCountByYear = useMemo(() => {
     const summary = new Map<number, number>()
 
@@ -3063,10 +3086,10 @@ export default function MunicipalitiesPage() {
     return grouped
   }, [contractChartYears, contractCurvePoints, currentYear])
   const contractChartTicks = [
-    { label: '01 Ιαν', month: 1, day: 1 },
-    { label: '01 Μαϊ', month: 5, day: 1 },
-    { label: '01 Αυγ', month: 8, day: 1 },
-    { label: '31 Δεκ', month: 12, day: 31 },
+    { label: ui("01 Ιαν"), month: 1, day: 1 },
+    { label: ui("01 Μαϊ"), month: 5, day: 1 },
+    { label: ui("01 Αυγ"), month: 8, day: 1 },
+    { label: ui("31 Δεκ"), month: 12, day: 31 },
   ]
   const contractChartMax = useMemo(() => {
     const values = contractCurvePoints.map((point) => point.value).filter((value) => Number.isFinite(value))
@@ -3086,11 +3109,11 @@ export default function MunicipalitiesPage() {
     })
 
     return {
-      dayLabel: formatChartDayLabel(contractChartHover.dayOfYear),
+      dayLabel: formatChartDayLabel(contractChartHover.dayOfYear, ui),
       svgX: contractChartHover.svgX,
       values,
     }
-  }, [contractChartByYear, contractChartHover, contractChartYears])
+  }, [contractChartByYear, contractChartHover, contractChartYears, ui])
   const fundingChartTooltip = useMemo(() => {
     if (!fundingChartHover) return null
     const entry = municipalityFundingHistory.find((item) => item.year === fundingChartHover.year) ?? null
@@ -3112,19 +3135,23 @@ export default function MunicipalitiesPage() {
       municipalityLabel: selectedMunicipalityLabel,
       municipalityKey: selectedMunicipalityKey,
       orgIsMunicipality: true,
-      when: formatDate(row.contract_signed_date),
+      sourceValues: {
+        submittedAt: null, displayDate: cleanText(row.contract_signed_date), signedAt: cleanText(row.contract_signed_date), startDate: null, endDate: null,
+        withoutVat: toNumber(row.amount_without_vat), withVat: null,
+      },
+      when: formatDate(row.contract_signed_date, ui),
       what: cleanText(row.title) ?? '—',
-      why: `Διαδικασία: ${cleanText(row.procedure_type_value) ?? '—'}`,
+      why: ui("Διαδικασία: {{v0}}", { v0: cleanText(row.procedure_type_value) ?? '—' }),
       beneficiary: cleanText(row.beneficiary_name) ?? '—',
       beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? null,
       beneficiaryGemi: cleanText(row.beneficiary_gemi) ?? null,
       contractType: cleanText(row.procedure_type_value) ?? '—',
-      howMuch: formatEur(toNumber(row.amount_without_vat)),
-      signedAt: formatDate(row.contract_signed_date),
+      howMuch: formatEur(toNumber(row.amount_without_vat), ui),
+      signedAt: formatDate(row.contract_signed_date, ui),
       documentUrl: cleanText(row.diavgeia_ada) ? `https://diavgeia.gov.gr/doc/${cleanText(row.diavgeia_ada)}` : null,
       sortDate: cleanText(row.contract_signed_date),
     })),
-    [latestMunicipalityContractRows, selectedMunicipalityLabel],
+    [latestMunicipalityContractRows, selectedMunicipalityLabel, selectedMunicipalityKey, ui],
   )
   const municipalityTimelineItems = useMemo(() => {
     const contractItems = latestMunicipalityContracts.map((item) => ({ kind: 'contract' as const, id: item.id, sortDate: item.sortDate, item }))
@@ -3192,18 +3219,18 @@ export default function MunicipalitiesPage() {
 
   const heroNarrative = useMemo(() => {
     if (isEmptySelection) {
-      return 'Πληκτρολόγησε όνομα δήμου και επίλεξε από τα αποτελέσματα για φόρτωση των δεδομένων του συγκεκριμένου δήμου.'
+      return ui("Πληκτρολόγησε όνομα δήμου και επίλεξε από τα αποτελέσματα για φόρτωση των δεδομένων του συγκεκριμένου δήμου.")
     }
     if (!hasSelectedMunicipality) {
-      return 'Φόρτωση profile δήμου…'
+      return ui("Φόρτωση profile δήμου…")
     }
 
     const sentences = [
-      formatCurrentFiresNarrativeSentence(currentYear, currentFireCountByYear.get(currentYear) ?? 0),
-      formatCopernicusNarrativeSentence(currentYear, copernicusCountByYear.get(currentYear) ?? 0),
+      formatCurrentFiresNarrativeSentence(currentYear, currentFireCountByYear.get(currentYear) ?? 0, ui),
+      formatCopernicusNarrativeSentence(currentYear, copernicusCountByYear.get(currentYear) ?? 0, ui),
     ]
     return sentences.join(' ')
-  }, [copernicusCountByYear, currentFireCountByYear, currentYear, hasSelectedMunicipality, isEmptySelection])
+  }, [copernicusCountByYear, currentFireCountByYear, currentYear, hasSelectedMunicipality, isEmptySelection, ui])
   const isMunicipalityProfileLoading =
     Boolean(selectedMunicipalityKey) &&
     (
@@ -3237,8 +3264,8 @@ export default function MunicipalitiesPage() {
         <section className="municipality-page-note section-rule dev-tag-anchor">
           <ComponentTag name="municipality-page-note section-rule" kind="CLASS" className="component-tag--overlay" />
           <DataLoadingCard
-            title="Φόρτωση profile δήμου"
-            message="Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του."
+            title={ui("Φόρτωση profile δήμου")}
+            message={ui("Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του.")}
           />
         </section>
       </main>
@@ -3264,7 +3291,7 @@ export default function MunicipalitiesPage() {
             style={{ left: 'auto', right: '0.45rem' }}
           />
           <label className="maps-controls__search" htmlFor="municipality-search">
-            <span>Αναζήτηση δήμου</span>
+            <span>{ui("Αναζήτηση δήμου")}</span>
             <input
               id="municipality-search"
               type="search"
@@ -3283,7 +3310,7 @@ export default function MunicipalitiesPage() {
                 setSearchFocused(true)
                 setActiveSuggestionIndex(0)
               }}
-              placeholder="Όνομα δήμου"
+              placeholder={ui("Όνομα δήμου")}
               role="combobox"
               aria-autocomplete="list"
               aria-expanded={searchSuggestionsVisible}
@@ -3327,12 +3354,11 @@ export default function MunicipalitiesPage() {
                 id="municipality-search-suggestions"
                 className="maps-search-results"
                 role="listbox"
-                aria-label="Δήμοι που ταιριάζουν"
+                aria-label={ui("Δήμοι που ταιριάζουν")}
               >
                 {searchSuggestions.length === 0 ? (
                   <button type="button" className="maps-search-empty" disabled>
-                    Δεν βρέθηκαν δήμοι
-                  </button>
+                    {ui("Δεν βρέθηκαν δήμοι")}</button>
                 ) : (
                   searchSuggestions.map((entry, index) => {
                     const isActive = index === activeSuggestionIndex
@@ -3348,8 +3374,8 @@ export default function MunicipalitiesPage() {
                         onMouseEnter={() => setActiveSuggestionIndex(index)}
                         onClick={() => selectMunicipality(entry.municipality)}
                       >
-                        <small>ΔΗΜΟΣ</small>
-                        <span>{entry.name}</span>
+                        <small>{ui("ΔΗΜΟΣ")}</small>
+                        <span>{ui.organization(entry.name)}</span>
                       </button>
                     )
                   })
@@ -3367,8 +3393,7 @@ export default function MunicipalitiesPage() {
               selectMunicipality(activeSuggestion)
             }}
           >
-            Αναζήτηση
-          </button>
+            {ui("Αναζήτηση")}</button>
           <button
             type="button"
             className="ca-filter-btn ca-filter-btn--clear"
@@ -3379,8 +3404,7 @@ export default function MunicipalitiesPage() {
               setActiveSuggestionIndex(0)
             }}
           >
-            Καθαρισμός
-          </button>
+            {ui("Καθαρισμός")}</button>
         </div>
       </section>
 
@@ -3395,10 +3419,10 @@ export default function MunicipalitiesPage() {
             <div className="municipality-profile-hero__heading-copy dev-tag-anchor">
               <ComponentTag name="municipality-profile-hero__heading-copy" kind="CLASS" className="component-tag--overlay" />
               <div className="municipality-profile-hero__eyebrow eyebrow">
-                {isEmptySelection ? 'ΠΡΟΦΙΛ ΔΗΜΟΥ' : 'Προφίλ δήμου'}
+                {isEmptySelection ? ui("ΠΡΟΦΙΛ ΔΗΜΟΥ") : ui("Προφίλ δήμου")}
               </div>
               <h1>{selectedName}</h1>
-              <p>{heroNarrative || 'Επίλεξε έναν δήμο για να δεις το συγκεντρωτικό αποτύπωμα πυροπροστασίας.'}</p>
+              <p>{heroNarrative || ui("Επίλεξε έναν δήμο για να δεις το συγκεντρωτικό αποτύπωμα πυροπροστασίας.")}</p>
               {activeCurrentFireAlert && (
                 <div className="municipality-profile-hero__status-strip municipality-profile-hero__status-strip--alert" role="status" aria-live="polite">
                   <span>
@@ -3437,7 +3461,7 @@ export default function MunicipalitiesPage() {
               <ComponentTag name="municipality-profile-hero__body" kind="CLASS" className="component-tag--overlay" />
               {hasSelectedMunicipality && !pageLoading ? (
               <>
-                <div className="municipality-profile-hero__facts dev-tag-anchor" aria-label="Γεωγραφικά και διοικητικά στοιχεία">
+                <div className="municipality-profile-hero__facts dev-tag-anchor" aria-label={ui("Γεωγραφικά και διοικητικά στοιχεία")}>
                   <ComponentTag name="municipality-profile-hero__facts" kind="CLASS" className="component-tag--overlay" />
                   {civicFacts.map((fact) => (
                     <div key={fact.label} className="municipality-profile-hero__fact">
@@ -3447,12 +3471,12 @@ export default function MunicipalitiesPage() {
                     </div>
                   ))}
                   <div className="municipality-profile-hero__fact municipality-profile-hero__fact--narrative">
-                    <span>Καθαρισμός οικοπέδων</span>
+                    <span>{ui("Καθαρισμός οικοπέδων")}</span>
                     <p>{plotCleaningNarrative}</p>
                   </div>
                   <div className="municipality-profile-hero__facts-source record-beneficiary-row__meta">
                     <span>
-                      ΠΗΓΗ:{' '}
+                      {ui("ΠΗΓΗ:")}{' '}
                       <a href="https://deiktesota.gov.gr/" target="_blank" rel="noreferrer">
                         deiktesota.gov.gr
                       </a>
@@ -3472,7 +3496,7 @@ export default function MunicipalitiesPage() {
                       ref={fireYearMenuRef}
                       className="municipality-profile-hero__year-filter"
                     >
-                      <span id="municipality-fire-year-label">Έτος πυρκαγιών</span>
+                      <span id="municipality-fire-year-label">{ui("Έτος πυρκαγιών")}</span>
                       <button
                         id="municipality-fire-year"
                         type="button"
@@ -3519,7 +3543,7 @@ export default function MunicipalitiesPage() {
                       )}
                     </div>
                     {hasCopernicusShapes && (
-                      <div className="maps-selection-panel__fire-toggle municipality-profile-hero__fire-toggle" aria-label="Τρόπος προβολής πυρκαγιών">
+                      <div className="maps-selection-panel__fire-toggle municipality-profile-hero__fire-toggle" aria-label={ui("Τρόπος προβολής πυρκαγιών")}>
                         <button
                           type="button"
                           className={fireViewMode === 'points' ? 'is-active' : ''}
@@ -3528,8 +3552,7 @@ export default function MunicipalitiesPage() {
                             setFireViewMode('points')
                           }}
                         >
-                          Σημεία
-                        </button>
+                          {ui("Σημεία")}</button>
                         <button
                           type="button"
                           className={fireViewMode === 'shapes' ? 'is-active' : ''}
@@ -3538,8 +3561,7 @@ export default function MunicipalitiesPage() {
                             setFireViewMode('shapes')
                           }}
                         >
-                          Εκτάσεις
-                        </button>
+                          {ui("Εκτάσεις")}</button>
                       </div>
                     )}
                   </div>
@@ -3581,7 +3603,7 @@ export default function MunicipalitiesPage() {
                           height={selectedMunicipalityMap.frameHeight}
                           viewBox={selectedMunicipalityMap.viewBox}
                           role="img"
-                          aria-label={`Περίγραμμα δήμου ${selectedName}`}
+                          aria-label={ui("Περίγραμμα δήμου {{v0}}", { v0: selectedName })}
                         >
                         <defs>
                           <clipPath id={`municipality-fire-clip-${selectedMunicipalityKeyNormalized || 'selected'}`}>
@@ -3598,9 +3620,9 @@ export default function MunicipalitiesPage() {
 	                                onMouseEnter={(event) => {
 	                                  if (isMobileMunicipalityMap) return
 	                                  updatePointTooltip(event, 'Copernicus / EFFIS', [
-	                                    fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-	                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-	                                    `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                    fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+	                                    fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+	                                    ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
 	                                  ], {
 	                                    id: fire.key,
 	                                    fallback: { x: fire.x, y: fire.y },
@@ -3609,9 +3631,9 @@ export default function MunicipalitiesPage() {
 	                                onMouseMove={(event) => {
 	                                  if (isMobileMunicipalityMap) return
 	                                  updatePointTooltip(event, 'Copernicus / EFFIS', [
-	                                    fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-	                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-	                                    `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                    fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+	                                    fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+	                                    ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
 	                                  ], {
 	                                    id: fire.key,
 	                                    fallback: { x: fire.x, y: fire.y },
@@ -3627,9 +3649,9 @@ export default function MunicipalitiesPage() {
 	                                    event,
 	                                    'Copernicus / EFFIS',
 	                                    [
-	                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-	                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-	                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+	                                      fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+	                                      fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+	                                      ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
 	                                    ],
 	                                    fire.key,
 	                                    { x: fire.x, y: fire.y },
@@ -3649,8 +3671,8 @@ export default function MunicipalitiesPage() {
                                 onMouseEnter={(event) => {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, city.name, [
-                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+                                    city.population != null ? ui("Πληθυσμός: {{v0}}", { v0: formatNumber(city.population, undefined, ui) }) : null,
+                                    formatCityType(city.capital, ui) ? ui("Τύπος: {{v0}}", { v0: formatCityType(city.capital, ui) }) : null,
                                   ], {
                                     id: city.key,
                                     fallback: { x: city.x, y: city.y },
@@ -3659,8 +3681,8 @@ export default function MunicipalitiesPage() {
                                 onMouseMove={(event) => {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(event, city.name, [
-                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+                                    city.population != null ? ui("Πληθυσμός: {{v0}}", { v0: formatNumber(city.population, undefined, ui) }) : null,
+                                    formatCityType(city.capital, ui) ? ui("Τύπος: {{v0}}", { v0: formatCityType(city.capital, ui) }) : null,
                                   ], {
                                     id: city.key,
                                     fallback: { x: city.x, y: city.y },
@@ -3676,8 +3698,8 @@ export default function MunicipalitiesPage() {
                                     event,
                                     city.name,
                                     [
-                                      city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                      formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+                                      city.population != null ? ui("Πληθυσμός: {{v0}}", { v0: formatNumber(city.population, undefined, ui) }) : null,
+                                      formatCityType(city.capital, ui) ? ui("Τύπος: {{v0}}", { v0: formatCityType(city.capital, ui) }) : null,
                                     ],
                                     city.key,
                                     { x: city.x, y: city.y },
@@ -3698,8 +3720,8 @@ export default function MunicipalitiesPage() {
                                 <title>
                                   {[
                                     city.name,
-                                    city.population != null ? `Πληθυσμός: ${formatNumber(city.population)}` : null,
-                                    formatCityType(city.capital) ? `Τύπος: ${formatCityType(city.capital)}` : null,
+                                    city.population != null ? ui("Πληθυσμός: {{v0}}", { v0: formatNumber(city.population, undefined, ui) }) : null,
+                                    formatCityType(city.capital, ui) ? ui("Τύπος: {{v0}}", { v0: formatCityType(city.capital, ui) }) : null,
                                   ]
                                     .filter(Boolean)
                                     .join(' • ')}
@@ -3719,8 +3741,8 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(
                                     event,
-                                    work.pointName ?? work.work ?? 'Εργασία',
-                                    getWorkTooltipItems(work),
+                                    work.pointName ?? work.work ?? ui("Εργασία"),
+                                    getWorkTooltipItems(work, ui),
                                     { id: work.key, fallback: { x: work.x, y: work.y } },
                                   )
                                 }}
@@ -3728,8 +3750,8 @@ export default function MunicipalitiesPage() {
                                   if (isMobileMunicipalityMap) return
                                   updatePointTooltip(
                                     event,
-                                    work.pointName ?? work.work ?? 'Εργασία',
-                                    getWorkTooltipItems(work),
+                                    work.pointName ?? work.work ?? ui("Εργασία"),
+                                    getWorkTooltipItems(work, ui),
                                     { id: work.key, fallback: { x: work.x, y: work.y } },
                                   )
                                 }}
@@ -3757,11 +3779,11 @@ export default function MunicipalitiesPage() {
                               >
                                 <title>
                                   {[
-                                    work.pointName ?? work.work ?? 'Εργασία',
-                                    work.work ? `Εργασία: ${work.work}` : null,
-                                    work.title ? `Σύμβαση: ${work.title}` : null,
-                                    work.contractSignedDate ? `Υπογραφή: ${formatDate(work.contractSignedDate)}` : null,
-                                    work.referenceNumber ? `Αρ. αναφοράς: ${work.referenceNumber}` : null,
+                                    work.pointName ?? work.work ?? ui("Εργασία"),
+                                    work.work ? ui("Εργασία: {{v0}}", { v0: work.work }) : null,
+                                    work.title ? ui("Σύμβαση: {{v0}}", { v0: work.title }) : null,
+                                    work.contractSignedDate ? ui("Υπογραφή: {{v0}}", { v0: formatDate(work.contractSignedDate, ui) }) : null,
+                                    work.referenceNumber ? ui("Αρ. αναφοράς: {{v0}}", { v0: work.referenceNumber }) : null,
                                   ]
                                     .filter(Boolean)
                                     .join(' • ')}
@@ -3779,11 +3801,11 @@ export default function MunicipalitiesPage() {
                                 fill="transparent"
                                 onMouseEnter={(event) => {
                                   if (isMobileMunicipalityMap) return
-                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
-                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                  updatePointTooltip(event, ui("Δασική πυρκαγιά"), [
+                                    fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+                                    fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+                                    fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                    ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
                                   ], {
                                     id: fire.key,
                                     fallback: { x: fire.x, y: fire.y },
@@ -3791,11 +3813,11 @@ export default function MunicipalitiesPage() {
                                 }}
                                 onMouseMove={(event) => {
                                   if (isMobileMunicipalityMap) return
-                                  updatePointTooltip(event, 'Δασική πυρκαγιά', [
-                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                  updatePointTooltip(event, ui("Δασική πυρκαγιά"), [
+                                    fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+                                    fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+                                    fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                    ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
                                   ], {
                                     id: fire.key,
                                     fallback: { x: fire.x, y: fire.y },
@@ -3809,12 +3831,12 @@ export default function MunicipalitiesPage() {
                                   event.stopPropagation()
                                   togglePointTooltip(
                                     event,
-                                    'Δασική πυρκαγιά',
+                                    ui("Δασική πυρκαγιά"),
                                     [
-                                      fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                      fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                      fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+                                      fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+                                      fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                      ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
                                     ],
                                     fire.key,
                                     { x: fire.x, y: fire.y },
@@ -3835,10 +3857,10 @@ export default function MunicipalitiesPage() {
                               >
                                 <title>
                                   {[
-                                    fire.dateStart ? `Έναρξη: ${formatDate(fire.dateStart)}` : null,
-                                    fire.dateEnd ? `Λήξη: ${formatDate(fire.dateEnd)}` : null,
-                                    fire.year != null ? `Έτος: ${fire.year}` : null,
-                                    `Καμένη έκταση: ${formatStremmataFromHa(fire.burnedAreaHa, 1)}`,
+                                    fire.dateStart ? ui("Έναρξη: {{v0}}", { v0: formatDate(fire.dateStart, ui) }) : null,
+                                    fire.dateEnd ? ui("Λήξη: {{v0}}", { v0: formatDate(fire.dateEnd, ui) }) : null,
+                                    fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                    ui("Καμένη έκταση: {{v0}}", { v0: formatStremmataFromHa(fire.burnedAreaHa, 1, ui) }),
                                   ]
                                     .filter(Boolean)
                                     .join(' • ')}
@@ -3857,9 +3879,9 @@ export default function MunicipalitiesPage() {
                                   onMouseEnter={(event) => {
                                     if (isMobileMunicipalityMap) return
                                     updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+                                      fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                      ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
                                     ], {
                                       id: fire.key,
                                       fallback: { x: fire.x, y: fire.y },
@@ -3868,9 +3890,9 @@ export default function MunicipalitiesPage() {
                                   onMouseMove={(event) => {
                                     if (isMobileMunicipalityMap) return
                                     updatePointTooltip(event, 'Copernicus / EFFIS', [
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+                                      fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                      ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
                                     ], {
                                       id: fire.key,
                                       fallback: { x: fire.x, y: fire.y },
@@ -3886,9 +3908,9 @@ export default function MunicipalitiesPage() {
                                       event,
                                       'Copernicus / EFFIS',
                                       [
-                                        fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                        fire.year != null ? `Έτος: ${fire.year}` : null,
-                                        `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                        fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+                                        fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                        ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
                                       ],
                                       fire.key,
                                       { x: fire.x, y: fire.y },
@@ -3909,9 +3931,9 @@ export default function MunicipalitiesPage() {
                                 >
                                   <title>
                                     {[
-                                      fire.date ? `Ημερομηνία: ${formatDate(fire.date)}` : null,
-                                      fire.year != null ? `Έτος: ${fire.year}` : null,
-                                      `Καμένη έκταση στον δήμο: ${formatStremmataFromHa(fire.areaHa, 1)}`,
+                                      fire.date ? ui("Ημερομηνία: {{v0}}", { v0: formatDate(fire.date, ui) }) : null,
+                                      fire.year != null ? ui("Έτος: {{v0}}", { v0: fire.year }) : null,
+                                      ui("Καμένη έκταση στον δήμο: {{v0}}", { v0: formatStremmataFromHa(fire.areaHa, 1, ui) }),
                                     ]
                                       .filter(Boolean)
                                       .join(' • ')}
@@ -3958,14 +3980,14 @@ export default function MunicipalitiesPage() {
                                 fill="transparent"
                                 onMouseEnter={(event) => {
                                   if (isMobileMunicipalityMap) return
-                                  updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
-                                    fire.area ? `Περιοχή: ${fire.area}` : null,
-                                    fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
-                                    fire.fuelType,
-                                    fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
-                                    fire.status,
+                                  updatePointTooltip(event, ui("Ενεργή πυρκαγιά"), [
+                                    fire.area ? ui("Περιοχή: {{v0}}", { v0: fire.area }) : null,
+                                    fire.sourceLocation ? ui("Αναφορά tweet: {{v0}}", { v0: fire.sourceLocation }) : null,
+                                    ui(fire.fuelType ?? ''),
+                                    fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDate(fire.startDate, ui) }) : null,
+                                    ui(fire.status ?? ''),
                                     fire.sourceLabel,
-                                    'Θέση κατά προσέγγιση',
+                                    ui("Θέση κατά προσέγγιση"),
                                   ], {
                                     id: fire.key,
                                     fallback: { x: fire.x, y: fire.y },
@@ -3973,14 +3995,14 @@ export default function MunicipalitiesPage() {
                                 }}
                                 onMouseMove={(event) => {
                                   if (isMobileMunicipalityMap) return
-                                  updatePointTooltip(event, 'Ενεργή πυρκαγιά', [
-                                    fire.area ? `Περιοχή: ${fire.area}` : null,
-                                    fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
-                                    fire.fuelType,
-                                    fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
-                                    fire.status,
+                                  updatePointTooltip(event, ui("Ενεργή πυρκαγιά"), [
+                                    fire.area ? ui("Περιοχή: {{v0}}", { v0: fire.area }) : null,
+                                    fire.sourceLocation ? ui("Αναφορά tweet: {{v0}}", { v0: fire.sourceLocation }) : null,
+                                    ui(fire.fuelType ?? ''),
+                                    fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDate(fire.startDate, ui) }) : null,
+                                    ui(fire.status ?? ''),
                                     fire.sourceLabel,
-                                    'Θέση κατά προσέγγιση',
+                                    ui("Θέση κατά προσέγγιση"),
                                   ], {
                                     id: fire.key,
                                     fallback: { x: fire.x, y: fire.y },
@@ -3994,15 +4016,15 @@ export default function MunicipalitiesPage() {
                                   event.stopPropagation()
                                   togglePointTooltip(
                                     event,
-                                    'Ενεργή πυρκαγιά',
+                                    ui("Ενεργή πυρκαγιά"),
                                     [
-                                      fire.area ? `Περιοχή: ${fire.area}` : null,
-                                      fire.sourceLocation ? `Αναφορά tweet: ${fire.sourceLocation}` : null,
-                                      fire.fuelType,
-                                      fire.startDate ? `Ξέσπασε: ${formatDate(fire.startDate)}` : null,
-                                      fire.status,
+                                      fire.area ? ui("Περιοχή: {{v0}}", { v0: fire.area }) : null,
+                                      fire.sourceLocation ? ui("Αναφορά tweet: {{v0}}", { v0: fire.sourceLocation }) : null,
+                                      ui(fire.fuelType ?? ''),
+                                      fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDate(fire.startDate, ui) }) : null,
+                                      ui(fire.status ?? ''),
                                       fire.sourceLabel,
-                                      'Θέση κατά προσέγγιση',
+                                      ui("Θέση κατά προσέγγιση"),
                                     ],
                                     fire.key,
                                     { x: fire.x, y: fire.y },
@@ -4073,7 +4095,7 @@ export default function MunicipalitiesPage() {
                       </>
                     ) : (
                       <div className="municipality-profile-hero__map-fallback">
-                        <span>Δεν υπάρχει διαθέσιμη γεωμετρία δήμου.</span>
+                        <span>{ui("Δεν υπάρχει διαθέσιμη γεωμετρία δήμου.")}</span>
                       </div>
                     )}
                     {pointTooltip ? (
@@ -4108,7 +4130,7 @@ export default function MunicipalitiesPage() {
 	                  </div>
                     <div className="municipality-profile-hero__map-footer">
                       {municipalityMapLegendItems.length > 0 && (
-                        <div className="municipality-profile-hero__map-legend" aria-label="Υπόμνημα σημείων χάρτη">
+                        <div className="municipality-profile-hero__map-legend" aria-label={ui("Υπόμνημα σημείων χάρτη")}>
                           {municipalityMapLegendItems.map((item) => (
                             <MapLegendToggle
                               key={item.key}
@@ -4152,13 +4174,13 @@ export default function MunicipalitiesPage() {
                 <DataLoadingCard
                   className="municipality-profile-hero__loading-card"
                   message={selectedMunicipalityKey
-                    ? 'Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του.'
-                    : 'Επιλέξτε δήμο για να φορτωθούν τα στοιχεία του.'}
+                    ? ui("Ανακτώνται τα στοιχεία του δήμου και προετοιμάζεται το προφίλ του.")
+                    : ui("Επιλέξτε δήμο για να φορτωθούν τα στοιχεία του.")}
                 />
               ) : (
                 <div className="municipality-profile-hero__empty">
-                  <strong>Δεν βρέθηκε δήμος.</strong>
-                  <p>Επιλέξτε έναν έγκυρο δήμο από τη λίστα για να δείτε το προφίλ του.</p>
+                  <strong>{ui("Δεν βρέθηκε δήμος.")}</strong>
+                  <p>{ui("Επιλέξτε έναν έγκυρο δήμο από τη λίστα για να δείτε το προφίλ του.")}</p>
                 </div>
               )}
             </div>
@@ -4169,35 +4191,35 @@ export default function MunicipalitiesPage() {
       {pageError && (
         <section className="municipality-page-note section-rule dev-tag-anchor">
           <ComponentTag name="municipality-page-note section-rule" kind="CLASS" className="component-tag--overlay" />
-          Σφάλμα φόρτωσης: {pageError}
+          <span role="alert">{ui('Δεν ήταν δυνατή η φόρτωση δεδομένων')}</span>
         </section>
       )}
 
       {hasSelectedMunicipality && !pageLoading ? (
         <>
-          <section className="municipality-profile-metrics section-rule dev-tag-anchor" aria-label="Κύριες μετρήσεις">
+          <section className="municipality-profile-metrics section-rule dev-tag-anchor" aria-label={ui("Κύριες μετρήσεις")}>
             <div className="dev-tag-stack dev-tag-stack--right">
               <ComponentTag name="municipality-profile-metrics section-rule" kind="CLASS" />
             </div>
             <article className="profile-metric-card profile-metric-card--ink municipality-contract-card">
-              <div className="profile-metric-card__eyebrow eyebrow">Συμβάσεις {currentYear}</div>
+              <div className="profile-metric-card__eyebrow eyebrow">{ui("Συμβάσεις ")}{currentYear}</div>
               <div className={`profile-metric-card__value${hasDirectContractsCurrentYear ? '' : ' municipality-contract-card__empty-value'}`}>
                 {hasDirectContractsCurrentYear
-                  ? formatEur(directContractSummary?.amount ?? null)
-                  : 'Δεν έχουν εντοπιστεί συμβάσεις'}
+                  ? formatEur(directContractSummary?.amount ?? null, ui)
+                  : ui("Δεν έχουν εντοπιστεί συμβάσεις")}
               </div>
               {hasDirectContractsCurrentYear ? (
-                <div className="profile-metric-card__label">Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το {currentYear}</div>
+                <div className="profile-metric-card__label">{ui("Συνολικό ποσό δημοσίων συμβάσεων που υπεγράφησαν το ")}{currentYear}</div>
               ) : null}
               <p className="profile-metric-card__note">
-                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount)} ${formatMunicipalitySpendPer100kSentence(currentYear, municipalitySpendPer100k)}`}
+                {`${formatActivePreviousContractsSentence(currentYear, municipalityActivePreviousCount, ui)} ${formatMunicipalitySpendPer100kSentence(currentYear, municipalitySpendPer100k, ui)}`}
               </p>
             </article>
 
             
 
             <article className="profile-metric-card profile-metric-card--accent municipality-contract-card municipality-contract-card--chart">
-              <div className="profile-metric-card__eyebrow eyebrow">Εξέλιξη δαπανών</div>
+              <div className="profile-metric-card__eyebrow eyebrow">{ui("Εξέλιξη δαπανών")}</div>
               {contractCurvePoints.length > 0 ? (
                 <>
                   <div
@@ -4226,7 +4248,7 @@ export default function MunicipalitiesPage() {
                       viewBox={`0 0 ${CONTRACT_CHART_VIEWBOX_WIDTH} 212`}
                       preserveAspectRatio="none"
                       role="img"
-                      aria-label="Σωρευτική πορεία ποσών συμβάσεων ανά έτος"
+                      aria-label={ui("Σωρευτική πορεία ποσών συμβάσεων ανά έτος")}
                       className="municipality-contract-card__chart"
                     >
                       {[1 / 3, 2 / 3].map((t, index) => {
@@ -4268,7 +4290,7 @@ export default function MunicipalitiesPage() {
                           key={`contract-y-label-${t}`}
                           style={{ top: `${((182 - t * 160) / 212) * 100}%` }}
                         >
-                          {formatEurCompact(contractChartMax * t)}
+                          {formatEurCompact(contractChartMax * t, ui)}
                         </span>
                       ))}
                     </div>
@@ -4294,7 +4316,7 @@ export default function MunicipalitiesPage() {
                         <strong>{contractChartTooltip.dayLabel}</strong>
                         {contractChartTooltip.values.map((entry) => (
                           <span key={entry.year}>
-                            {entry.year}: {formatEur(entry.value)}
+                            {entry.year}: {formatEur(entry.value, ui)}
                           </span>
                         ))}
                       </div>
@@ -4313,16 +4335,16 @@ export default function MunicipalitiesPage() {
                   </div>
                 </>
               ) : pageLoading ? (
-                <p className="profile-metric-card__note">Φόρτωση δεδομένων…</p>
+                <p className="profile-metric-card__note">{ui("Φόρτωση δεδομένων…")}</p>
               ) : (
-                <p className="profile-metric-card__note">Δεν υπάρχουν αρκετά δεδομένα συμβάσεων για καμπύλη εξέλιξης.</p>
+                <p className="profile-metric-card__note">{ui("Δεν υπάρχουν αρκετά δεδομένα συμβάσεων για καμπύλη εξέλιξης.")}</p>
               )}
             </article>
 
             <article className="profile-metric-card municipality-contract-card">
-              <div className="profile-metric-card__eyebrow eyebrow">Χρηματοδότηση</div>
+              <div className="profile-metric-card__eyebrow eyebrow">{ui("Χρηματοδότηση")}</div>
               <div className="profile-metric-card__value-row">
-                <div className="profile-metric-card__value">{formatEur(municipalityKapFundingAmount)}</div>
+                <div className="profile-metric-card__value">{formatEur(municipalityKapFundingAmount, ui)}</div>
                 {municipalityFundingDelta ? (
                   <span className={`profile-metric-card__delta profile-metric-card__delta--${municipalityFundingDelta.tone}`}>
                     {municipalityFundingDelta.label}
@@ -4330,13 +4352,13 @@ export default function MunicipalitiesPage() {
                 ) : null}
               </div>
               <div className="profile-metric-card__label">
-                {`από τους Κεντρικούς Αυτοτελείς Πόρους έτους ${currentYear}, για την κάλυψη δράσεων πυροπροστασίας `}
+                {ui("από τους Κεντρικούς Αυτοτελείς Πόρους έτους {{v0}}, για την κάλυψη δράσεων πυροπροστασίας ", { v0: currentYear })}
               </div>
               <p className="profile-metric-card__note">{municipalityKapFundingNote}</p>
             </article>
 
             <article className="profile-metric-card municipality-contract-card municipality-contract-card--fund-chart">
-              <div className="profile-metric-card__eyebrow eyebrow">Χρηματοδότηση ανά έτος</div>
+              <div className="profile-metric-card__eyebrow eyebrow">{ui("Χρηματοδότηση ανά έτος")}</div>
               {municipalityFundingHistory.length > 0 ? (
                 <>
                   <div className="municipality-funding-chart-wrap">
@@ -4346,14 +4368,14 @@ export default function MunicipalitiesPage() {
                           key={`municipality-funding-tick-${tick}`}
                           style={{ top: `${((1 - tick) * 7.6) + 0.15}rem` }}
                         >
-                          {tick === 0 ? '0 €' : formatEurCompact(municipalityFundingChartMax * tick)}
+                          {tick === 0 ? '0 €' : formatEurCompact(municipalityFundingChartMax * tick, ui)}
                         </span>
                       ))}
                     </div>
                     <div
                       ref={fundingChartFrameRef}
                       className="municipality-funding-chart"
-                      aria-label="Ετήσια χρηματοδότηση ΚΑΠ του δήμου"
+                      aria-label={ui("Ετήσια χρηματοδότηση ΚΑΠ του δήμου")}
                       onMouseLeave={() => setFundingChartHover(null)}
                     >
                       {municipalityFundingHistory.map((entry) => {
@@ -4412,9 +4434,9 @@ export default function MunicipalitiesPage() {
                             style={{ left: `${Math.min(92, Math.max(8, fundingChartTooltip.leftPct))}%` }}
                           >
                             <strong>{fundingChartTooltip.year}</strong>
-                            <span>Τακτική: {formatEur(fundingChartTooltip.regularAmount)}</span>
-                            <span>Έκτακτη: {formatEur(fundingChartTooltip.emergencyAmount)}</span>
-                            <span>Σύνολο: {formatEur(fundingChartTooltip.totalAmount)}</span>
+                            <span>{ui("Τακτική: ")}{formatEur(fundingChartTooltip.regularAmount, ui)}</span>
+                            <span>{ui("Έκτακτη: ")}{formatEur(fundingChartTooltip.emergencyAmount, ui)}</span>
+                            <span>{ui("Σύνολο: ")}{formatEur(fundingChartTooltip.totalAmount, ui)}</span>
                           </div>
                         </>
                       ) : null}
@@ -4423,37 +4445,35 @@ export default function MunicipalitiesPage() {
                   <div className="municipality-funding-chart__legend" aria-hidden="true">
                     <span>
                       <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--regular" />
-                      Τακτική
-                    </span>
+                      {ui("Τακτική")}</span>
                     <span>
                       <i className="municipality-funding-chart__legend-swatch municipality-funding-chart__legend-swatch--emergency" />
-                      Έκτακτη
-                    </span>
+                      {ui("Έκτακτη")}</span>
                   </div>
                   <p className="profile-metric-card__note">
-                    {`Από ${municipalityFundingHistory[0]?.year} έως ${municipalityFundingHistory[municipalityFundingHistory.length - 1]?.year}. Μέγιστη τιμή: ${formatEurCompact(municipalityFundingChartMax)}.`}
+                    {ui("Από {{v0}} έως {{v1}}. Μέγιστη τιμή: {{v2}}.", { v0: municipalityFundingHistory[0]?.year, v1: municipalityFundingHistory[municipalityFundingHistory.length - 1]?.year, v2: formatEurCompact(municipalityFundingChartMax, ui) })}
                   </p>
                 </>
               ) : (
-                <p className="profile-metric-card__note">Δεν υπάρχουν διαθέσιμα ιστορικά στοιχεία χρηματοδότησης για τον επιλεγμένο δήμο.</p>
+                <p className="profile-metric-card__note">{ui("Δεν υπάρχουν διαθέσιμα ιστορικά στοιχεία χρηματοδότησης για τον επιλεγμένο δήμο.")}</p>
               )}
             </article>
           </section>
 
-          <section className="municipality-contract-latest section-rule dev-tag-anchor" aria-label="Συμβάσεις και αποφάσεις Διαύγειας δήμου">
+          <section className="municipality-contract-latest section-rule dev-tag-anchor" aria-label={ui("Συμβάσεις και αποφάσεις Διαύγειας δήμου")}>
             <div className="dev-tag-stack dev-tag-stack--right">
               <ComponentTag name="municipality-contract-latest section-rule" kind="CLASS" />
             </div>
             <div className="municipality-contract-latest__head dev-tag-anchor">
               <ComponentTag name="municipality-contract-latest__head" kind="CLASS" className="component-tag--overlay" />
-              <span className="eyebrow">συμβάσεις & διαύγεια</span>
+              <span className="eyebrow">{ui("συμβάσεις & διαύγεια")}</span>
               <div className="municipality-contract-latest__subtitle-row">
-                <p>Οι συμβάσεις και αποφάσεις Διαύγειας του Δήμου {selectedName} για το {currentYear}, σε χρονολογική σειρά.</p>
-                <div className="municipality-contract-latest__pager" aria-label="Πλοήγηση συμβάσεων και αποφάσεων Διαύγειας δήμου">
+                <p>{ui("Οι συμβάσεις και αποφάσεις Διαύγειας του Δήμου ")}{selectedName} {ui("για το ")}{currentYear}{ui(", σε χρονολογική σειρά.")}</p>
+                <div className="municipality-contract-latest__pager" aria-label={ui("Πλοήγηση συμβάσεων και αποφάσεων Διαύγειας δήμου")}>
                   <button
                     type="button"
                     className="municipality-contract-latest__pager-button"
-                    aria-label="Προηγούμενη σύμβαση δήμου"
+                    aria-label={ui("Προηγούμενη σύμβαση δήμου")}
                     onClick={() => scrollLatestMunicipalityContracts(-1)}
                     disabled={municipalityTimelineLoading || !latestMunicipalityCanScrollPrev}
                   >
@@ -4462,7 +4482,7 @@ export default function MunicipalitiesPage() {
                   <button
                     type="button"
                     className="municipality-contract-latest__pager-button"
-                    aria-label="Επόμενη σύμβαση δήμου"
+                    aria-label={ui("Επόμενη σύμβαση δήμου")}
                     onClick={() => scrollLatestMunicipalityContracts(1)}
                     disabled={municipalityTimelineLoading || !latestMunicipalityCanScrollNext}
                   >
@@ -4479,7 +4499,7 @@ export default function MunicipalitiesPage() {
                 style={{ left: 'auto', right: '0.45rem' }}
               />
               {municipalityTimelineLoading && (
-                <DataLoadingCard compact message="Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου." />
+                <DataLoadingCard compact message={ui("Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου.")} />
               )}
               {!municipalityTimelineLoading && municipalityTimelineItems.map((entry) => (
                 entry.kind === 'contract'
@@ -4494,17 +4514,15 @@ export default function MunicipalitiesPage() {
               ))}
               {!municipalityTimelineLoading && municipalityTimelineItems.length === 0 && (
                 <article className="wire-item">
-                  <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο το {currentYear}.</h2>
+                  <h2>{ui("Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο το ")}{currentYear}.</h2>
                 </article>
               )}
             </div>
             <div className="municipality-contract-latest__links">
               <Link className="news-wire__all-link" to={municipalityContractsHref}>
-                Όλες οι συμβάσεις
-              </Link>
+                {ui("Όλες οι συμβάσεις")}</Link>
               <Link className="news-wire__all-link" to={municipalityDiavgeiaHref}>
-                Όλες οι αποφάσεις
-              </Link>
+                {ui("Όλες οι αποφάσεις")}</Link>
             </div>
           </section>
 
@@ -4515,11 +4533,11 @@ export default function MunicipalitiesPage() {
             loading={featuredMunicipalityBeneficiariesLoading}
             formatEur={formatEur}
             onOpenContract={openFeaturedMunicipalityContract}
-            eyebrowText={`Δικαιούχοι / ενεργές* συμβάσεις / ${selectedName}`}
-            title={`Κορυφαίοι ανάδοχοι ενεργών* συμβάσεων του ${selectedName}`}
-            note="Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων που έχουν σήμερα με τον επιλεγμένο δήμο."
-            footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {currentYear}, είτε υπεγράφησαν πριν το {currentYear} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {currentYear}.</>}
-            emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για τον επιλεγμένο δήμο."
+            eyebrowText={ui("Δικαιούχοι / ενεργές* συμβάσεις / {{v0}}", { v0: selectedName })}
+            title={ui("Κορυφαίοι ανάδοχοι ενεργών* συμβάσεων του {{v0}}", { v0: selectedName })}
+            note={ui("Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων που έχουν σήμερα με τον επιλεγμένο δήμο.")}
+            footerNote={<>{ui("* Ως ")}<strong>{ui("ενεργές")}</strong> {ui("συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το ")}{currentYear}{ui(", είτε υπεγράφησαν πριν το ")}{currentYear} {ui("αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του ")}{currentYear}.</>}
+            emptyMessage={ui("Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για τον επιλεγμένο δήμο.")}
           />
         </>
       ) : null}

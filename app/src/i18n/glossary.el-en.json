@@ -1,0 +1,195 @@
+{
+  "version": 3,
+  "status": "active",
+  "source_lang": "EL",
+  "target_lang": "EN",
+  "translation_target_lang": "EN-GB",
+  "translation_scope": {
+    "excluded_content": [
+      "contract titles",
+      "document titles"
+    ],
+    "excluded_content_policy": "Keep the exact original Greek text in both language versions. Do not send these titles as translation text or context to DeepL in the current phase.",
+    "included_content": [
+      "UI labels",
+      "filters",
+      "help text",
+      "explanatory copy"
+    ]
+  },
+  "notes": [
+    "Τοπική πηγή ορολογίας, εφαρμοσμένη ως native DeepL glossary EL → EN με έξοδο EN-GB. Το απομακρυσμένο ID και οι καταγραφές χρήσης αποθηκεύονται στο ignored state/translations/.",
+    "Οι αποδόσεις αποτελούν επιλογές σύνταξης του FireWatch. Δεν παρουσιάζονται όλες ως επίσημες αγγλικές ονομασίες.",
+    "Κάθε μετάφραση ελέγχεται στο συμφραζόμενό της πριν ενσωματωθεί. Το glossary δεν υποκαθιστά την επιμέλεια.",
+    "Τα πρωτότυπα δεδομένα, αναγνωριστικά, URLs, ποσά, μονάδες και οικονομικοί ορισμοί διατηρούνται. Μεταφράζονται οι ετικέτες και τα επεξηγηματικά κείμενα."
+  ],
+  "entries": [
+    {
+      "source": "Διαύγεια",
+      "target": "Diavgeia",
+      "note": "Όνομα της πλατφόρμας. Τυχόν εξήγηση του σκοπού της γράφεται χωριστά."
+    },
+    {
+      "source": "Δι@ύγεια",
+      "target": "Diavgeia",
+      "note": "Εναλλακτική γραφή της ίδιας ονομασίας."
+    },
+    {
+      "source": "ΚΗΜΔΗΣ",
+      "target": "KIMDIS",
+      "note": "Διατηρείται το αναγνωρίσιμο ακρωνύμιο. Η πλήρης αγγλική ονομασία απαιτεί έλεγχο πηγής."
+    },
+    {
+      "source": "ΑΔΑ",
+      "target": "ADA",
+      "note": "Μεταφράζεται η ετικέτα, ποτέ η τιμή του αναγνωριστικού."
+    },
+    {
+      "source": "ΑΔΑΜ",
+      "target": "ADAM",
+      "note": "Μεταφράζεται η ετικέτα, ποτέ η τιμή του αναγνωριστικού."
+    },
+    {
+      "source": "ΑΦΜ",
+      "target": "tax identification number",
+      "note": "Η τιμή παραμένει αμετάβλητη. Δεν υπονοείται εγγραφή στο μητρώο ΦΠΑ."
+    },
+    {
+      "source": "αναθέτουσα αρχή",
+      "target": "contracting authority"
+    },
+    {
+      "source": "ανάδοχος",
+      "target": "contractor"
+    },
+    {
+      "source": "απευθείας ανάθεση",
+      "target": "direct award"
+    },
+    {
+      "source": "δημόσια σύμβαση",
+      "target": "public contract"
+    },
+    {
+      "source": "αξία σύμβασης",
+      "target": "contract value",
+      "note": "Δεν εξισώνεται με πληρωμές ή χρηματοδότηση."
+    },
+    {
+      "source": "υπογραφή σύμβασης",
+      "target": "contract signing",
+      "note": "Διακρίνεται από ημερομηνία ανάρτησης ή δημοσίευσης."
+    },
+    {
+      "source": "ημερομηνία ανάρτησης",
+      "target": "posting date"
+    },
+    {
+      "source": "οριστικοποίηση πληρωμής",
+      "target": "payment finalisation",
+      "note": "Τύπος διοικητικής πράξης. Δεν αποτελεί από μόνος του επιβεβαίωση τραπεζικής μεταφοράς."
+    },
+    {
+      "source": "πληρωμή",
+      "target": "payment"
+    },
+    {
+      "source": "δέσμευση πίστωσης",
+      "target": "budget commitment"
+    },
+    {
+      "source": "απόφαση ανάληψης υποχρέωσης",
+      "target": "budget commitment decision"
+    },
+    {
+      "source": "χρηματοδότηση",
+      "target": "funding"
+    },
+    {
+      "source": "προϋπολογισμός",
+      "target": "budget"
+    },
+    {
+      "source": "χωρίς ΦΠΑ",
+      "target": "excluding VAT",
+      "note": "Η βάση ΦΠΑ και τα ποσά δεν αλλάζουν."
+    },
+    {
+      "source": "με ΦΠΑ",
+      "target": "including VAT",
+      "note": "Η βάση ΦΠΑ και τα ποσά δεν αλλάζουν."
+    },
+    {
+      "source": "διπλομέτρηση",
+      "target": "double counting"
+    },
+    {
+      "source": "πυροπροστασία",
+      "target": "fire protection",
+      "note": "Δεν αντικαθίσταται γενικά από prevention: περιλαμβάνει διαφορετικές κατηγορίες δράσεων."
+    },
+    {
+      "source": "πρόληψη πυρκαγιών",
+      "target": "wildfire prevention"
+    },
+    {
+      "source": "καταστολή πυρκαγιών",
+      "target": "wildfire suppression"
+    },
+    {
+      "source": "δασική πυρκαγιά",
+      "target": "forest fire"
+    },
+    {
+      "source": "καμένη έκταση",
+      "target": "burnt area"
+    },
+    {
+      "source": "στρέμμα",
+      "target": "stremma",
+      "note": "Η μονάδα παραμένει ίδια. Δεν μετατρέπονται οι αριθμητικές τιμές κατά τη μετάφραση."
+    },
+    {
+      "source": "στρέμματα",
+      "target": "stremmata",
+      "note": "Η μονάδα παραμένει ίδια. Επεξήγηση για αγγλόφωνους αναγνώστες προστίθεται όπου χρειάζεται."
+    },
+    {
+      "source": "Δήμος",
+      "target": "Municipality",
+      "note": "Τα ονόματα δήμων και τα identifiers ελέγχονται χωριστά."
+    },
+    {
+      "source": "Περιφέρεια",
+      "target": "Region",
+      "note": "Διοικητική περιφέρεια. Τα κύρια ονόματα ελέγχονται χωριστά."
+    },
+    {
+      "source": "σύνδεσμος δήμων",
+      "target": "Association of Municipalities"
+    },
+    {
+      "source": "σύνδεσμοι δήμων",
+      "target": "Associations of Municipalities"
+    },
+    {
+      "source": "Υπουργείο Περιβάλλοντος και Ενέργειας",
+      "target": "Ministry of Environment and Energy",
+      "note": "Ρητή ονομασία χρήστη. Στο μενού χρησιμοποιείται χωριστά το Environment ministry."
+    },
+    {
+      "source": "Υπουργείο Περιβάλλοντος",
+      "target": "Ministry of Environment and Energy",
+      "note": "Ρητή ονομασία χρήστη. Στο μενού χρησιμοποιείται χωριστά το Environment ministry."
+    }
+  ],
+  "protected_tokens": [
+    "FireWatch",
+    "AntiNERO",
+    "CPV",
+    "Copernicus",
+    "EFFIS",
+    "NASA FIRMS",
+    "EUR"
+  ]
+}

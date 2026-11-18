@@ -1,10 +1,10 @@
 import { execSync } from 'node:child_process'
-import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { defineConfig, type Plugin } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { getCompanyUrlByAfm, normalizeAfm } from './server/gemiCompanyUrl.js'
+import { localizedPages } from './server/localizedPages'
 
 const appRoot = fileURLToPath(new URL('.', import.meta.url))
 
@@ -16,47 +16,11 @@ function getLastCommitIso(): string {
   }
 }
 
-function standaloneWestAtticaFireDevRoute(): Plugin {
-  const routePaths = new Set([
-    '/analysis/west-attica-fire-2026',
-    '/analysis/west-attica-fire-2026/',
-  ])
-  const indexPath = resolve(appRoot, 'public/analysis/west-attica-fire-2026/index.html')
-
-  return {
-    name: 'standalone-west-attica-fire-dev-route',
-    configureServer(server) {
-      server.middlewares.use(async (req, res, next) => {
-        if (!req.url || req.method !== 'GET') {
-          next()
-          return
-        }
-
-        const url = new URL(req.url, 'http://localhost')
-        if (!routePaths.has(url.pathname)) {
-          next()
-          return
-        }
-
-        try {
-          const html = await readFile(indexPath, 'utf8')
-          res.statusCode = 200
-          res.setHeader('Content-Type', 'text/html; charset=utf-8')
-          res.setHeader('Cache-Control', 'no-store')
-          res.end(html)
-        } catch (error) {
-          next(error)
-        }
-      })
-    },
-  }
-}
-
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
   plugins: [
     react(),
-    standaloneWestAtticaFireDevRoute(),
+    localizedPages(appRoot),
     {
       name: 'gemi-company-url-dev-api',
       configureServer(server) {
@@ -113,6 +77,8 @@ export default defineConfig(({ command }) => ({
     rollupOptions: {
       input: [
         resolve(appRoot, 'index.html'),
+        resolve(appRoot, 'en/index.html'),
+        resolve(appRoot, 'src/routing/standaloneNavigation.ts'),
         resolve(appRoot, 'analysis/index.html'),
         resolve(appRoot, 'analysis/statistics/index.html'),
         resolve(appRoot, 'analysis/antinero-west-attica/index.html'),

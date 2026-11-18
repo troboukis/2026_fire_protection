@@ -3,6 +3,7 @@ import type { LatestContractCardView } from '../components/LatestContractCard'
 export type AuthorityScope = 'municipality' | 'region' | 'decentralized' | 'national' | 'other'
 
 type BuildLatestContractCardViewArgs = {
+  sourceValues?: LatestContractCardView['sourceValues']
   id: string
   organizationName: string | null
   authorityScope: AuthorityScope
@@ -40,6 +41,7 @@ export function resolveLatestContractWho({
 
 export function buildLatestContractCardView(args: BuildLatestContractCardViewArgs): LatestContractCardView {
   return {
+    sourceValues: args.sourceValues,
     id: args.id,
     who: resolveLatestContractWho(args),
     what: args.what,

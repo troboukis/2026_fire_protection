@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../../../i18n/overview'
 import ComponentTag from '../../../components/ComponentTag'
 import DataLoadingCard from '../../../components/DataLoadingCard'
 
@@ -14,6 +15,7 @@ type Props = {
 }
 
 export default function TopAuthoritiesSection({ rows, totalSpendM, loading = false }: Props) {
+  const ui = useOverviewUi()
   const sortedRows = [...rows]
     .map((row) => ({
       ...row,
@@ -26,9 +28,9 @@ export default function TopAuthoritiesSection({ rows, totalSpendM, loading = fal
   return (
     <div className="ca-table-block">
       <ComponentTag name="TopAuthoritiesSection" />
-      <div className="eyebrow">Κορυφαίοι Φορείς κατά Συνολική Δαπάνη (χ.ΦΠΑ)</div>
+      <div className="eyebrow">{ui("Κορυφαίοι Φορείς κατά Συνολική Δαπάνη (χ.ΦΠΑ)")}</div>
       {loading ? (
-        <DataLoadingCard message="Ανακτάται η κατάταξη φορέων με βάση τη συνολική δαπάνη." />
+        <DataLoadingCard message={ui("Ανακτάται η κατάταξη φορέων με βάση τη συνολική δαπάνη.")} />
       ) : (
         <>
           <div className="ca-double-grid">
@@ -39,11 +41,11 @@ export default function TopAuthoritiesSection({ rows, totalSpendM, loading = fal
                     <div className="ca-bar-row" key={`${org.name}-${columnIdx}-${idx}`}>
                       <div className="ca-bar-label">
                         <span className="ca-bar-title ca-top-org-label">
-                          <span>{org.name}</span>
+                          <span>{ui.organization(org.name)}</span>
                           <span className="ca-bar-title__dot" aria-hidden="true" />
                           <span className="ca-bar-title__meta">
                             <strong>€ {org.total_m.toFixed(1)}M</strong>
-                            <span> ({org.contracts.toLocaleString('el-GR')} συμβ.)</span>
+                            <span> ({org.contracts.toLocaleString(ui.locale)} {ui("συμβ.)")}</span>
                           </span>
                         </span>
                         <span className="ca-bar-pct">{org.pct.toFixed(1)}%</span>
@@ -58,8 +60,7 @@ export default function TopAuthoritiesSection({ rows, totalSpendM, loading = fal
             ))}
           </div>
           <p className="ca-sub-note">
-            Δυναμική κατάταξη φορέων με βάση τη συνολική δαπάνη χωρίς ΦΠΑ, όπως προκύπτει από τα δημοσιευμένα στοιχεία. Τα στοιχεία που βλέπετε επηρεάζονται από το φίλτρο έτους που έχετε επιλέξει.
-          </p>
+            {ui("Δυναμική κατάταξη φορέων με βάση τη συνολική δαπάνη χωρίς ΦΠΑ, όπως προκύπτει από τα δημοσιευμένα στοιχεία. Τα στοιχεία που βλέπετε επηρεάζονται από το φίλτρο έτους που έχετε επιλέξει.")}</p>
         </>
       )}
     </div>

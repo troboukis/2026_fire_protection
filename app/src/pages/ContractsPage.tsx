@@ -1,3 +1,5 @@
+import { translatedOrganizationName } from '../i18n/organizationNames'
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import AmountSummary from '../components/AmountSummary'
@@ -55,18 +57,6 @@ function normalizeMunicipalityToken(v: string): string {
     .toUpperCase()
 }
 
-function fmtDate(iso: string | null): string {
-  if (!iso) return '—'
-  const dt = new Date(iso)
-  if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
-}
-
-function fmtEur(n: number | null): string {
-  if (n == null || Number.isNaN(n)) return '—'
-  return n.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
-}
-
 function isoDateDaysAgo(days: number): string {
   const d = new Date()
   d.setDate(d.getDate() - days)
@@ -78,13 +68,6 @@ function isoToday(): string {
   const d = new Date()
   const tzOffsetMs = d.getTimezoneOffset() * 60_000
   return new Date(d.getTime() - tzOffsetMs).toISOString().slice(0, 10)
-}
-
-function periodLabel(dateFrom: string, dateTo: string): string {
-  if (dateFrom && dateTo) return `${fmtDate(dateFrom)} - ${fmtDate(dateTo)}`
-  if (dateFrom) return `Από ${fmtDate(dateFrom)}`
-  if (dateTo) return `Έως ${fmtDate(dateTo)}`
-  return 'Όλο το διάστημα'
 }
 
 function truncateWords(value: string, maxWords: number): string {
@@ -150,6 +133,7 @@ function matchesScopedQuery(row: ContractRow, q: string): boolean {
     row.title,
     row.short_descriptions,
     row.organization_value,
+    translatedOrganizationName(row.organization_value ?? ''),
     row.beneficiary_name,
     row.cpv_value,
     row.reference_number,
@@ -662,6 +646,7 @@ async function loadMunicipalityScopedRows(municipalityKey: string, dateFrom: str
 }
 
 export default function ContractsPage() {
+  const { p, t, format, category, description, cpv: cpvLabel, organization: organizationText, periodLabel } = useProcurementI18n()
   const [searchParams] = useSearchParams()
   const initialFilters = useMemo(() => parseContractsPageFilters(searchParams), [searchParams])
   const hasScopedSource =
@@ -810,8 +795,8 @@ export default function ContractsPage() {
     return () => { cancelled = true; controller.abort() }
   }, [dateFrom, dateTo, organizationKeys, regionKey, municipalityKey, hasScopedSource])
 
-  const cpvOptions = useMemo(() => [...cpvIndex].map(([value, { label }]) => ({ value, label }))
-    .sort((a, b) => a.value.localeCompare(b.value)), [cpvIndex])
+  const cpvOptions = useMemo(() => [...cpvIndex].map(([value, { label }]) => ({ value, label: label === value ? value : `${value} · ${cpvLabel(value, label.slice(value.length + 3))}` }))
+    .sort((a, b) => a.value.localeCompare(b.value)), [cpvIndex, cpvLabel])
 
   const filteredRows = useMemo(() => {
     const min = minAmount ? Number(minAmount) : null
@@ -855,21 +840,21 @@ export default function ContractsPage() {
       <ComponentTag name="ContractsPage" />
       <header className="contracts-header contracts-header--amount-summary section-rule">
         <div>
-          <div className="eyebrow">ΑΝΑΖΗΤΗΣΗ</div>
-          <h1>Όλες οι Συμβάσεις</h1>
+          <div className="eyebrow">{p('searchHeading')}</div>
+          <h1>{p('allContracts')}</h1>
           <p>
             {loading
-              ? 'Φόρτωση…'
+              ? t('common:loading')
               : loadFailed
-                ? 'Δεν ήταν δυνατή η φόρτωση των συμβάσεων.'
-                : `${totalCount.toLocaleString('el-GR')} αποτελέσματα · Περίοδος: ${periodLabel(dateFrom, dateTo)}`}
+                ? p('contractsLoadFailed')
+                : p('resultsPeriod', { count: totalCount, period: periodLabel(dateFrom, dateTo) })}
           </p>
         </div>
         <AmountSummary
           {...amountSummary}
           loading={loading}
           loadFailed={loadFailed}
-          ariaLabel="Σύνολο συμβάσεων χωρίς ΦΠΑ"
+          ariaLabel={p('contractsTotal')}
         />
       </header>
 
@@ -879,8 +864,8 @@ export default function ContractsPage() {
           value={q}
           maxLength={MAX_SEARCH_QUERY_LENGTH}
           onChange={(e) => { setQ(e.target.value); setPage(1) }}
-          placeholder="π.χ. πυροπροστασία | πυρόσβεση"
-          title="Χρησιμοποιήστε | ή OR για εναλλακτικούς όρους, & ή AND για υποχρεωτικούς όρους και ! ή NOT για εξαιρέσεις σε κάθε εναλλακτική"
+          placeholder={p('searchExample', { example: 'πυροπροστασία | πυρόσβεση' })}
+          title={p('searchHelp')}
         />
         <SearchableSelectFilter
           className="contracts-filter--cpv"
@@ -890,27 +875,29 @@ export default function ContractsPage() {
           loading={cpvLoading}
           failed={cpvFailed}
           label="CPV"
-          allLabel="Όλα τα CPV"
-          loadingLabel="Φόρτωση CPV…"
-          failedLabel="Δεν ήταν δυνατή η φόρτωση των CPV."
-          emptyLabel="Δεν βρέθηκαν CPV."
+          allLabel={p('allCpv')}
+          loadingLabel={p('loadingCpv')}
+          failedLabel={p('cpvFailed')}
+          emptyLabel={p('cpvEmpty')}
         />
         <select
           className="contracts-filter contracts-filter--procedure"
           value={procedure}
           onChange={(e) => { setProcedure(e.target.value); setPage(1) }}
         >
-          <option value="">Όλες οι διαδικασίες</option>
-          {procedureOptions.map((p) => <option key={p} value={p}>{p}</option>)}
+          <option value="">{p('allProcedures')}</option>
+          {procedureOptions.map((value) => <option key={value} value={value}>{category(value)}</option>)}
         </select>
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-from"
+          aria-label={p('dateFrom')}
           value={dateFrom}
           onChange={(e) => { setDateFrom(e.target.value); setPage(1) }}
           type="date"
         />
         <input
           className="contracts-filter contracts-filter--date contracts-filter--date-to"
+          aria-label={p('dateTo')}
           value={dateTo}
           onChange={(e) => { setDateTo(e.target.value); setPage(1) }}
           type="date"
@@ -921,17 +908,17 @@ export default function ContractsPage() {
           onChange={(e) => { setMinAmount(e.target.value); setPage(1) }}
           type="number"
           min="0"
-          placeholder="Ελάχιστο ποσό (χωρίς ΦΠΑ)"
+          placeholder={p('minimumAmount')}
         />
       </section>
 
       <section className="contracts-table-wrap section-rule">
-        <div className="contracts-status-legend" aria-label="Υπόμνημα κατάστασης συμβάσεων">
-          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--cancelled" />Ακυρωμένη</span>
-          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--modified" />Τροποποιημένη</span>
+        <div className="contracts-status-legend" aria-label={p('contractStatusLegend')}>
+          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--cancelled" />{p('cancelled')}</span>
+          <span><i className="contracts-status-legend__swatch contracts-status-legend__swatch--modified" />{p('modified')}</span>
         </div>
         {loading ? (
-          <DataLoadingCard message="Εκτελείται αναζήτηση συμβάσεων και προετοιμάζεται ο πίνακας αποτελεσμάτων." />
+          <DataLoadingCard message={p('loadingContracts')} />
         ) : (
           <>
             <table className="contracts-table">
@@ -955,19 +942,19 @@ export default function ContractsPage() {
                         setSort((current) => current === 'date_desc' ? 'date_asc' : 'date_desc')
                         setPage(1)
                       }}
-                      aria-label="Ταξινόμηση κατά ημερομηνία"
+                      aria-label={p('sortDate')}
                     >
-                      <span>Ημερομηνία</span>
+                      <span>{p('date')}</span>
                       <span className="contracts-sort-header__icon">
                         {sort.startsWith('date_') ? (sort === 'date_asc' ? '↑' : '↓') : '↕'}
                       </span>
                     </button>
                   </th>
-                  <th>Φορέας</th>
-                  <th>Τίτλος</th>
-                  <th>Περιγραφή Εργασίας</th>
-                  <th>Δικαιούχος</th>
-                  <th>Διαδικασία</th>
+                  <th>{p('organization')}</th>
+                  <th>{p('title')}</th>
+                  <th>{p('workDescription')}</th>
+                  <th>{p('beneficiary')}</th>
+                  <th>{p('procedure')}</th>
                   <th>
                     <button
                       type="button"
@@ -976,15 +963,15 @@ export default function ContractsPage() {
                         setSort((current) => current === 'amount_desc' ? 'amount_asc' : 'amount_desc')
                         setPage(1)
                       }}
-                      aria-label="Ταξινόμηση κατά ποσό χωρίς ΦΠΑ"
+                      aria-label={p('sortAmountWithoutVat')}
                     >
-                      <span>Ποσό χωρίς ΦΠΑ</span>
+                      <span>{p('amountWithoutVat')}</span>
                       <span className="contracts-sort-header__icon">
                         {sort.startsWith('amount_') ? (sort === 'amount_asc' ? '↑' : '↓') : '↕'}
                       </span>
                     </button>
                   </th>
-                  <th>ΑΔΑΜ</th>
+                  <th>{p('adam')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -1000,29 +987,30 @@ export default function ContractsPage() {
                       key={r.id}
                       className={r.cancelled ? 'contracts-row--cancelled' : r.is_modified ? 'contracts-row--modified' : undefined}
                     >
-                      <td data-label="Ημερομηνία">{fmtDate(r.contract_signed_date)}</td>
-                      <td data-label="Φορέας">{orgDisplay}</td>
-                      <td data-label="Τίτλος">
+                      <td data-label={p('date')}>{format.date(r.contract_signed_date)}</td>
+                      <td data-label={p('organization')}>{organizationText(orgDisplay)}</td>
+                      <td data-label={p('title')}>
                         <button
                           type="button"
                           className="contracts-title-button"
+                          lang="el"
                           onClick={() => { void openContractModal(r) }}
                           disabled={openingContractId === r.id}
                         >
                           {clean(r.title) || '—'}
                         </button>
                       </td>
-                      <td data-label="Περιγραφή Εργασίας">{truncateWords(clean(r.cpv_value), 10)}</td>
-                      <td data-label="Δικαιούχος">
+                      <td data-label={p('workDescription')}>{truncateWords(description(clean(r.cpv_value)), 10)}</td>
+                      <td data-label={p('beneficiary')}>
                         <BeneficiaryLink
                           name={clean(r.beneficiary_name).toLocaleUpperCase('el-GR') || '—'}
                           gemi={r.beneficiary_gemi}
                           className="beneficiary-link"
                         />
                       </td>
-                      <td data-label="Διαδικασία">{clean(r.procedure_type_value) || '—'}</td>
-                      <td data-label="Ποσό χωρίς ΦΠΑ" className="contracts-amount">{fmtEur(r.amount_without_vat)}</td>
-                      <td data-label="ΑΔΑΜ">{refNo || '—'}</td>
+                      <td data-label={p('procedure')}>{category(clean(r.procedure_type_value)) || '—'}</td>
+                      <td data-label={p('amountWithoutVat')} className="contracts-amount">{format.currency(r.amount_without_vat, { maximumFractionDigits: 0 })}</td>
+                      <td data-label={p('adam')}>{refNo || '—'}</td>
                     </tr>
                   )
                 })}
@@ -1030,13 +1018,13 @@ export default function ContractsPage() {
             </table>
             {loadFailed && (
               <article className="wire-item">
-                <h2>Δεν ήταν δυνατή η φόρτωση των συμβάσεων. Δοκιμάστε ξανά.</h2>
+                <h2>{p('contractsRetry')}</h2>
               </article>
             )}
             <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
-              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>Προηγούμενη</button>
-              <span>Σελίδα {page} / {totalPages}</span>
-              <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>Επόμενη</button>
+              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1 || loading}>{p('previous')}</button>
+              <span>{p('page', { page, total: totalPages })}</span>
+              <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages || loading}>{p('next')}</button>
             </div>
           </>
         )}

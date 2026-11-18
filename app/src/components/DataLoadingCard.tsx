@@ -1,3 +1,5 @@
+import { useAppI18n } from '../i18n/useAppI18n'
+
 type Props = {
   title?: string
   message?: string
@@ -6,11 +8,12 @@ type Props = {
 }
 
 export default function DataLoadingCard({
-  title = 'Φόρτωση δεδομένων',
-  message = 'Ανακτώνται τα πιο πρόσφατα στοιχεία.',
+  title,
+  message,
   className,
   compact = false,
 }: Props) {
+  const { t } = useAppI18n()
   return (
     <div
       className={`data-loading-card${compact ? ' data-loading-card--compact' : ''}${className ? ` ${className}` : ''}`}
@@ -23,8 +26,8 @@ export default function DataLoadingCard({
         <span />
       </div>
       <div className="data-loading-card__copy">
-        <strong>{title}</strong>
-        <p>{message}</p>
+        <strong>{title ?? t('common:loadingData')}</strong>
+        <p>{message ?? t('common:retrievingLatest')}</p>
       </div>
     </div>
   )

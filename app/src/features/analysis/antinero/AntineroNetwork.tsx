@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../../../i18n/overview'
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { connections, programmeStyles } from './data/antineroGraph'
 import { layoutOverview } from './data/antineroLayout'
@@ -5,20 +6,21 @@ import { report } from './data/antineroReport'
 import { contractMark, shortArea } from './data/antineroLabels'
 
 export function NetworkLegend({ relationKinds }: { relationKinds: string[] }) {
+  const ui = useOverviewUi()
   const usedColors = new Set(report.contracts.map(item => item.nodeContext.programme))
   return <div className="report-network-legends">
-    <div className="report-programme-legend" aria-label="Χρώματα προγραμμάτων AntiNERO">
+    <div className="report-programme-legend" aria-label={ui("Χρώματα προγραμμάτων AntiNERO")}>
       {programmeStyles.filter(style => usedColors.has(style.label)).map(style => <span key={style.label}>
         <i style={{ background: style.color }} aria-hidden="true" />
         {style.label}
       </span>)}
     </div>
-    <div className="report-connection-legend" aria-label="Υπόμνημα συνδέσεων">
-      <strong>Συνδέσεις</strong>
+    <div className="report-connection-legend" aria-label={ui("Υπόμνημα συνδέσεων")}>
+      <strong>{ui("Συνδέσεις")}</strong>
       {[
-        { id: 'amendment', label: 'Τροποποιεί' },
-        { id: 'shared', label: 'Κοινές αποφάσεις Διαύγειας' },
-        { id: 'beneficiary', label: 'Κοινός ανάδοχος' },
+        { id: 'amendment', label: ui("Τροποποιεί") },
+        { id: 'shared', label: ui("Κοινές αποφάσεις Διαύγειας") },
+        { id: 'beneficiary', label: ui("Κοινός ανάδοχος") },
       ].map(item => <span key={item.id} className={relationKinds.includes(item.id) ? '' : 'is-inactive'}>
         <i className={`report-connection-sample report-connection-sample--${item.id}`} aria-hidden="true" />
         {item.label}
@@ -31,6 +33,7 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
   contractIds: string[]; selectedId?: string; selectedContractId?: string; relationKinds: string[]
   onSelect: (id: string, context?: string) => void; onConnection: (id: string) => void
 }) {
+  const ui = useOverviewUi()
   const svgRef = useRef<SVGSVGElement>(null)
   const contractKey = [...contractIds].sort().join(',')
   const graph = useMemo(() => layoutOverview(contractKey.split(',')), [contractKey])
@@ -81,13 +84,13 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId)
   }
   return <div className="report-graph">
-    <div className="report-graph-controls" role="group" aria-label="Πλοήγηση δικτύου">
-      <span>Κάθε κύκλος, μία σύμβαση</span>
-      <button onClick={() => zoom(1.25)} aria-label="Μεγέθυνση">+</button>
-      <button onClick={() => zoom(1 / 1.25)} aria-label="Σμίκρυνση">−</button>
-      <button onClick={() => setCamera({ x: 0, y: 0, k: 1 })}>Επαναφορά προβολής</button>
+    <div className="report-graph-controls" role="group" aria-label={ui("Πλοήγηση δικτύου")}>
+      <span>{ui("Κάθε κύκλος, μία σύμβαση")}</span>
+      <button onClick={() => zoom(1.25)} aria-label={ui("Μεγέθυνση")}>+</button>
+      <button onClick={() => zoom(1 / 1.25)} aria-label={ui("Σμίκρυνση")}>−</button>
+      <button onClick={() => setCamera({ x: 0, y: 0, k: 1 })}>{ui("Επαναφορά προβολής")}</button>
     </div>
-    <svg ref={svgRef} viewBox={`0 0 ${graph.width} ${graph.height}`} aria-label={`Δίκτυο ${contractIds.length} συμβάσεων AntiNERO`} onPointerDown={event => {
+    <svg ref={svgRef} viewBox={`0 0 ${graph.width} ${graph.height}`} aria-label={ui("Δίκτυο {{v0}} συμβάσεων AntiNERO", { v0: contractIds.length })} onPointerDown={event => {
       if (event.button !== 0 || (event.target as Element).closest('[role="button"]')) return
       drag.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId }
       event.currentTarget.setPointerCapture(event.pointerId)
@@ -117,7 +120,7 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
           const distance = Math.hypot(to.x - from.x, to.y - from.y) || 1
           const ux = (to.x - from.x) / distance, uy = (to.y - from.y) / distance
           const line = `M ${from.x + ux * 38} ${from.y + uy * 38} L ${to.x - ux * 43} ${to.y - uy * 43}`
-          const label = kind === 'amendment' ? 'Τροποποιεί' : kind === 'shared' ? 'Κοινές αποφάσεις Διαύγειας' : 'Κοινός ανάδοχος'
+          const label = kind === 'amendment' ? ui("Τροποποιεί") : kind === 'shared' ? ui("Κοινές αποφάσεις Διαύγειας") : ui("Κοινός ανάδοχος")
           return <g key={edge.id} role="button" tabIndex={0} className="report-connection-action" aria-label={`${label}: ${edge.source} — ${edge.target}`} onPointerEnter={() => setActiveConnectionId(edge.id)} onPointerLeave={() => setActiveConnectionId(value => value === edge.id ? null : value)} onFocus={() => setActiveConnectionId(edge.id)} onBlur={() => setActiveConnectionId(value => value === edge.id ? null : value)} onClick={() => onConnection(edge.id)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onConnection(edge.id) } }}>
             <path d={line} className={`report-connection report-connection--${kind}`} markerEnd={kind === 'amendment' ? 'url(#report-amendment-arrow)' : undefined} />
             <path d={line} className="report-connection-hit" />
@@ -126,12 +129,12 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
         {graph.nodes.map(node => {
           const contract = report.contracts.find(item => item.id === node.id)!
           return <g key={node.id} data-node-id={node.id} style={{ '--category-color': node.color } as CSSProperties} transform={`translate(${node.x},${node.y})`} role="button" tabIndex={0} aria-label={`${contract.id}, ${contract.nodeContext.programme}, ${contract.label}`} aria-haspopup="dialog" className={`report-graph-contract ${selectedId === node.id ? 'is-selected' : ''}`} onClick={() => onSelect(node.id, node.id)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelect(node.id, node.id) } }}>
-            <title>{contract.label} · {contract.nodeContext.area} · {contract.id}</title>
+            <title lang="el">{contract.label} · {contract.nodeContext.area} · {contract.id}</title>
             <circle className="report-node-halo" r={41} />
             <circle className="report-node-surface" r={35} />
             <text textAnchor="middle" y={-2} className="report-node-mark">{contractMark(contract)}</text>
             <text textAnchor="middle" y={16} className="report-node-year">{contract.documentDate.slice(0, 4)}</text>
-            <text textAnchor="middle" y={54} className="report-node-area">{shortArea(contract)}</text>
+            <text textAnchor="middle" y={54} className="report-node-area">{shortArea(contract, ui)}</text>
             <text textAnchor="middle" y={70} className="report-node-reference">{contract.id}</text>
           </g>
         })}
@@ -144,7 +147,7 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
           if (!kind) return null
           const source = positions.get(edge.source), target = positions.get(edge.target)
           if (!source || !target) return null
-          const label = kind === 'amendment' ? 'Τροποποιεί' : kind === 'shared' ? 'Κοινές αποφάσεις Διαύγειας' : 'Κοινός ανάδοχος'
+          const label = kind === 'amendment' ? ui("Τροποποιεί") : kind === 'shared' ? ui("Κοινές αποφάσεις Διαύγειας") : ui("Κοινός ανάδοχος")
           const tooltipWidth = Math.max(70, label.length * 5.8 + 10)
           return <g className="report-connection-tooltip is-visible" transform={`translate(${(source.x + target.x) / 2},${(source.y + target.y) / 2})`} aria-hidden="true">
             <rect x={-tooltipWidth / 2} y="-32" width={tooltipWidth} height="24" rx="3" />
@@ -153,7 +156,7 @@ export default function AntineroNetwork({ contractIds, selectedId, relationKinds
         })()}
       </g>
     </svg>
-    <p className="report-graph-hint">Επιλέξτε μία σύμβαση για να δείτε όλα τα έγγραφα που τη συνοδεύουν · + / − για μεγέθυνση.</p>
+    <p className="report-graph-hint">{ui("Επιλέξτε μία σύμβαση για να δείτε όλα τα έγγραφα που τη συνοδεύουν · + / − για μεγέθυνση.")}</p>
     <NetworkLegend relationKinds={relationKinds} />
   </div>
 }

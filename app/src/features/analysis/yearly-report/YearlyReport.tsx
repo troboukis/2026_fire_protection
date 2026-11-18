@@ -1,3 +1,5 @@
+import { createReportFormatters } from './reportFormatting'
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../../../i18n/overview'
 import type { ReactNode } from 'react'
 import { municipalSpending } from '../../../data/municipalSpending'
 import {
@@ -12,28 +14,16 @@ import {
 import {
   MONTHS,
   REPORT_YEAR,
-  amount,
   contracts,
   contractValueChangePct,
-  count,
-  decimal,
   derived,
-  eur,
   fullYear,
-  listJoin,
   longDate,
-  mil,
-  milText,
-  minimumMillions,
   municipalFunding,
-  num,
   paymentCategory,
-  pct,
-  pctText,
   procedure,
   report,
   share,
-  shortDate,
   timing,
   ytdGroup,
 } from './reportData'
@@ -104,12 +94,14 @@ function capitalize(text: string) {
 }
 
 /** After «έως»: «τις 19 Οκτωβρίου 2026», «την 1η Νοεμβρίου 2026». */
-function untilDate(iso: string) {
+function untilDate(iso: string, ui: OverviewUi = greekOverviewUi) {
+  if (ui.language === 'en') return createReportFormatters(ui).longDate(iso)
   const text = longDate(iso)
   return text.startsWith('1 ') ? `την 1η ${text.slice(2)}` : `τις ${text}`
 }
 
-function authorityName(label: string) {
+function authorityName(label: string, ui: OverviewUi = greekOverviewUi) {
+  if (ui.language === 'en') return ui.organization(label)
   const known = AUTHORITY_NAMES[label]
   if (known) return known
   if (label.startsWith('ΔΗΜΟΣ ')) return `ο «${label}»`
@@ -144,6 +136,8 @@ function ExternalLink({ href, children }: { href: string; children: ReactNode })
 }
 
 export default function YearlyReport() {
+  const ui = useOverviewUi()
+  const { amount, count, decimal, eur, listJoin, mil, milText, minimumMillions, num, pct, pctText, shortDate, longDate } = createReportFormatters(ui)
   const t = report.total
   const p = report.payments
   const fx = report.facts
@@ -173,7 +167,7 @@ export default function YearlyReport() {
   const lowBins = da.bins.filter(bin => bin.hi !== null && bin.hi <= 25_000)
   const belowLimitDecreasing = lowBins.length > 1 && lowBins.every((bin, i) => i === 0 || bin.count <= lowBins[i - 1].count)
   const bandRatio = derived.directBandRatio
-  const bandMultiple = bandRatio > 4 ? 'υπερτετραπλάσιο' : bandRatio > 3 ? 'υπερτριπλάσιο' : bandRatio > 2 ? 'υπερδιπλάσιο' : bandRatio > 1 ? 'μεγαλύτερο' : null
+  const bandMultiple = bandRatio > 4 ? ui("υπερτετραπλάσιο") : bandRatio > 3 ? ui("υπερτριπλάσιο") : bandRatio > 2 ? ui("υπερδιπλάσιο") : bandRatio > 1 ? ui("μεγαλύτερο") : null
   const ratioOf = (bands?: { from_25k_to_30k: number; from_20k_to_25k: number }) => bands && bands.from_20k_to_25k > 0 ? bands.from_25k_to_30k / bands.from_20k_to_25k : 0
   const patternRepeats = ratioOf(bandsPrev) > 1 && ratioOf(bandsPrev2) > 1
   const patternWeaker = patternRepeats && ratioOf(bandsPrev) < bandRatio && ratioOf(bandsPrev2) < bandRatio
@@ -201,29 +195,29 @@ export default function YearlyReport() {
 
   // ── Chart data ──
   const procedureSeries: Series[] = [
-    { key: 'Απευθείας Ανάθεση', label: 'Απευθείας ανάθεση', color: COLORS.accent },
-    { key: 'Ανοιχτή Διαδικασία', label: 'Ανοιχτή διαδικασία', color: COLORS.blue },
-    { key: 'Διαπραγμάτευση', label: 'Διαπραγμάτευση', color: COLORS.aqua },
-    { key: 'Άλλη', label: 'Άλλη διαδικασία', color: COLORS.gray },
+    { key: 'Απευθείας Ανάθεση', label: ui("Απευθείας ανάθεση"), color: COLORS.accent },
+    { key: 'Ανοιχτή Διαδικασία', label: ui("Ανοιχτή διαδικασία"), color: COLORS.blue },
+    { key: 'Διαπραγμάτευση', label: ui("Διαπραγμάτευση"), color: COLORS.aqua },
+    { key: 'Άλλη', label: ui("Άλλη διαδικασία"), color: COLORS.gray },
   ]
   const procedureRows = [
     {
-      label: 'Αριθμός συμβάσεων',
-      segments: contracts.procedures.map(item => ({ key: item.label, value: item.count, tooltip: <Tip title={item.label} lines={[`${num(item.count)} συμβάσεις`, `${pct(share(item.count, contracts.contracts))} του συνόλου`]} /> })),
+      label: ui("Αριθμός συμβάσεων"),
+      segments: contracts.procedures.map(item => ({ key: item.label, value: item.count, tooltip: <Tip title={ui(item.label)} lines={[ui("{{v0}} συμβάσεις", { v0: num(item.count) }), ui("{{v0}} του συνόλου", { v0: pct(share(item.count, contracts.contracts)) })]} /> })),
     },
     {
-      label: 'Αξία χωρίς ΦΠΑ',
-      segments: contracts.procedures.map(item => ({ key: item.label, value: item.amount, tooltip: <Tip title={item.label} lines={[mil(item.amount), `${pct(item.share_amount_pct)} της αξίας`]} /> })),
+      label: ui("Αξία χωρίς ΦΠΑ"),
+      segments: contracts.procedures.map(item => ({ key: item.label, value: item.amount, tooltip: <Tip title={ui(item.label)} lines={[mil(item.amount), ui("{{v0}} της αξίας", { v0: pct(item.share_amount_pct) })]} /> })),
     },
   ]
 
-  const binRange = (bin: { lo: number; hi: number | null }) => bin.hi === null ? `πάνω από ${eur(bin.lo)}` : `${eur(bin.lo)} – ${eur(bin.hi)}`
+  const binRange = (bin: { lo: number; hi: number | null }) => bin.hi === null ? ui("πάνω από {{v0}}", { v0: eur(bin.lo) }) : `${eur(bin.lo)} – ${eur(bin.hi)}`
   const awardBins = da.bins.map(bin => ({
     label: bin.hi === null ? `>${num(bin.lo / 1_000)}` : num(bin.hi / 1_000),
     value: bin.count,
     emphasis: bin.lo === 25_000,
-    ariaLabel: `${binRange(bin)}: ${num(bin.count)} αναθέσεις`,
-    tooltip: <Tip title={binRange(bin)} lines={[`${num(bin.count)} ${bin.count === 1 ? 'ανάθεση' : 'αναθέσεις'}`]} />,
+    ariaLabel: ui("{{v0}}: {{v1}} αναθέσεις", { v0: binRange(bin), v1: num(bin.count) }),
+    tooltip: <Tip title={binRange(bin)} lines={[`${num(bin.count)} ${bin.count === 1 ? ui("ανάθεση") : ui("αναθέσεις")}`]} />,
   }))
 
   const yearSeries: Series[] = [
@@ -236,83 +230,76 @@ export default function YearlyReport() {
     return {
       label,
       values,
-      ariaLabel: `${label}: ${[REPORT_YEAR - 2, REPORT_YEAR - 1, REPORT_YEAR].map(year => `${year} ${values[String(year)]}`).join(', ')}`,
-      tooltip: <Tip title={`${label} · συμβάσεις δήμων`} lines={[REPORT_YEAR - 2, REPORT_YEAR - 1, REPORT_YEAR].map(year => `${year}: ${num(values[String(year)])}`)} />,
+      ariaLabel: `${ui(label)}: ${[REPORT_YEAR - 2, REPORT_YEAR - 1, REPORT_YEAR].map(year => `${year} ${values[String(year)]}`).join(', ')}`,
+      tooltip: <Tip title={ui("{{v0}} · συμβάσεις δήμων", { v0: ui(label) })} lines={[REPORT_YEAR - 2, REPORT_YEAR - 1, REPORT_YEAR].map(year => `${year}: ${num(values[String(year)])}`)} />,
     }
   })
 
   const categoryItems = [...p.by_category].filter(row => row.payments > 0).sort((a, b) => b.amount - a.amount).map(row => ({
-    label: row.label,
+    label: ui(row.label),
     value: row.amount,
     valueLabel: mil(row.amount),
-    detail: `${num(row.payments)} ${row.payments === 1 ? 'πληρωμή' : 'πληρωμές'}`,
+    detail: `${num(row.payments)} ${row.payments === 1 ? ui("πληρωμή") : ui("πληρωμές")}`,
     muted: row.category === 'unclear',
   }))
 
   return (
     <article className="yr-root">
       <header className="section-head yr-hero">
-        <div className="eyebrow">Ετήσια αναφορά {REPORT_YEAR}</div>
-        <h2>Τουλάχιστον {minimumMillions(t.amount)} εκατομμύρια ευρώ για πυροπροστασία το {REPORT_YEAR}</h2>
+        <div className="eyebrow">{ui("Ετήσια αναφορά ")}{REPORT_YEAR}</div>
+        <h2>{ui("Τουλάχιστον ")}{minimumMillions(t.amount)} {ui("εκατομμύρια ευρώ για πυροπροστασία το ")}{REPORT_YEAR}</h2>
         <p className="yr-subtitle">
-          Η ετήσια αναφορά του FireWatch επιχειρεί να αποτυπώσει όσο το δυνατόν πληρέστερα τις δαπάνες για την πρόληψη και την καταστολή δασικών πυρκαγιών στην Ελλάδα.
-          Τα οικονομικά δεδομένα προέρχονται από δύο πηγές: τις δημόσιες συμβάσεις που δημοσιεύονται στο Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) και τις οριστικοποιήσεις πληρωμών που αναρτώνται στη Διαύγεια.
-        </p>
+          {ui("Η ετήσια αναφορά του FireWatch επιχειρεί να αποτυπώσει όσο το δυνατόν πληρέστερα τις δαπάνες για την πρόληψη και την καταστολή δασικών πυρκαγιών στην Ελλάδα. Τα οικονομικά δεδομένα προέρχονται από δύο πηγές: τις δημόσιες συμβάσεις που δημοσιεύονται στο Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) και τις οριστικοποιήσεις πληρωμών που αναρτώνται στη Διαύγεια.")}</p>
         <p className="yr-meta">
-          Τα δεδομένα αφορούν το διάστημα {shortDate(report.meta.period_start)} έως {periodEnd}. Για την αποφυγή διπλής καταμέτρησης, εξαιρούνται οι πληρωμές που έχει διαπιστωθεί ότι συνδέονται με συμβάσεις. Τα ποσά ενδέχεται να αλλάξουν.
-        </p>
+          {ui("Τα δεδομένα αφορούν το διάστημα ")}{shortDate(report.meta.period_start)} {ui("έως ")}{periodEnd}{ui(". Για την αποφυγή διπλής καταμέτρησης, εξαιρούνται οι πληρωμές που έχει διαπιστωθεί ότι συνδέονται με συμβάσεις. Τα ποσά ενδέχεται να αλλάξουν.")}</p>
       </header>
 
       <div className="yr-layout">
-        <nav className="yr-toc" aria-label="Περιεχόμενα αναφοράς">
-          <div className="eyebrow">Περιεχόμενα</div>
+        <nav className="yr-toc" aria-label={ui("Περιεχόμενα αναφοράς")}>
+          <div className="eyebrow">{ui("Περιεχόμενα")}</div>
           <ol>
-            <li><a href="#symvaseis">Οι συμβάσεις του {REPORT_YEAR}</a></li>
-            <li><a href="#xronos">Ο προγραμματισμός των εργασιών</a></li>
-            <li><a href="#plirwmes">Οι πληρωμές</a></li>
-            <li><a href="#methodologia">Μεθοδολογία</a></li>
+            <li><a href="#symvaseis">{ui("Οι συμβάσεις του ")}{REPORT_YEAR}</a></li>
+            <li><a href="#xronos">{ui("Ο προγραμματισμός των εργασιών")}</a></li>
+            <li><a href="#plirwmes">{ui("Οι πληρωμές")}</a></li>
+            <li><a href="#methodologia">{ui("Μεθοδολογία")}</a></li>
           </ol>
         </nav>
 
         <div className="yr-content">
-          <Section id="symvaseis" eyebrow="1 · Συμβάσεις" title={`Οι συμβάσεις του ${REPORT_YEAR}`}>
+          <Section id="symvaseis" eyebrow={ui("1 · Συμβάσεις")} title={ui("Οι συμβάσεις του {{v0}}", { v0: REPORT_YEAR })}>
             <p>
-              Από {shortDate(report.meta.period_start)} έως {periodEnd}, έχουν δημοσιευτεί στο ΚΗΜΔΗΣ <strong>{num(contracts.contracts)} συμβάσεις που αφορούν σε αντιμετώπιση ή πρόληψη δασικών πυρκαγιών, συνολικής αξίας {mil(contracts.amount)} χωρίς ΦΠΑ</strong>.
+              {ui("Από ")}{shortDate(report.meta.period_start)} {ui("έως ")}{periodEnd}{ui(", έχουν δημοσιευτεί στο ΚΗΜΔΗΣ ")}<strong>{num(contracts.contracts)} {ui("συμβάσεις που αφορούν σε αντιμετώπιση ή πρόληψη δασικών πυρκαγιών, συνολικής αξίας ")}{mil(contracts.amount)} {ui("χωρίς ΦΠΑ")}</strong>.
             </p>
             <p>
-              Η συνολική αξία των δημόσιων συμβάσεων παρουσιάζει <strong>{previousValueChangePct < 0 ? 'μείωση' : 'αύξηση'} {pct(Math.abs(previousValueChangePct))}</strong> σε σύγκριση με το ίδιο διάστημα του {REPORT_YEAR - 1} και <strong>{twoYearValueChangePct < 0 ? 'μείωση' : 'αύξηση'} {pct(Math.abs(twoYearValueChangePct))}</strong> σε σύγκριση με το ίδιο διάστημα του {REPORT_YEAR - 2}. Η μείωση αυτή συνδέεται, σε σημαντικό βαθμό, με το πρόγραμμα προστασίας δασών «AntiNERO», το οποίο χρηματοδοτήθηκε από το Ταμείο Ανάκαμψης και Ανθεκτικότητας, στο πλαίσιο του σχεδίου «Ελλάδα 2.0».
-            </p>
+              {ui("Η συνολική αξία των δημόσιων συμβάσεων παρουσιάζει ")}<strong>{previousValueChangePct < 0 ? ui("μείωση") : ui("αύξηση")} {pct(Math.abs(previousValueChangePct))}</strong> {ui("σε σύγκριση με το ίδιο διάστημα του ")}{REPORT_YEAR - 1} {ui("και ")}<strong>{twoYearValueChangePct < 0 ? ui("μείωση") : ui("αύξηση")} {pct(Math.abs(twoYearValueChangePct))}</strong> {ui("σε σύγκριση με το ίδιο διάστημα του ")}{REPORT_YEAR - 2}{ui(". Η μείωση αυτή συνδέεται, σε σημαντικό βαθμό, με το πρόγραμμα προστασίας δασών «AntiNERO», το οποίο χρηματοδοτήθηκε από το Ταμείο Ανάκαμψης και Ανθεκτικότητας, στο πλαίσιο του σχεδίου «Ελλάδα 2.0».")}</p>
             <p>
-              Το πρόγραμμα ξεκίνησε το 2022 και υλοποιήθηκε σε διαδοχικές φάσεις, με αντικείμενο τον καθαρισμό δασικών εκτάσεων, τη δημιουργία αντιπυρικών ζωνών και τη βελτίωση του δασικού οδικού δικτύου. Ο μεγαλύτερος όγκος των σχετικών συμβάσεων ανατέθηκε κατά τα προηγούμενα έτη, αυξάνοντας σημαντικά τη συνολική αξία των δημόσιων συμβάσεων εκείνης της περιόδου. Κατά συνέπεια, η μείωση που καταγράφεται το 2026 αντανακλά, τουλάχιστον εν μέρει, την ολοκλήρωση του προγράμματος AntiNERO.
-            </p>
-            <h4 className="yr-midtitle">Από τα {mil(contracts.amount)} των δημόσιων συμβάσεων, το {pct(direct.share_amount_pct)} δόθηκε με απευθείας ανάθεση το {REPORT_YEAR}</h4>
+              {ui("Το πρόγραμμα ξεκίνησε το 2022 και υλοποιήθηκε σε διαδοχικές φάσεις, με αντικείμενο τον καθαρισμό δασικών εκτάσεων, τη δημιουργία αντιπυρικών ζωνών και τη βελτίωση του δασικού οδικού δικτύου. Ο μεγαλύτερος όγκος των σχετικών συμβάσεων ανατέθηκε κατά τα προηγούμενα έτη, αυξάνοντας σημαντικά τη συνολική αξία των δημόσιων συμβάσεων εκείνης της περιόδου. Κατά συνέπεια, η μείωση που καταγράφεται το 2026 αντανακλά, τουλάχιστον εν μέρει, την ολοκλήρωση του προγράμματος AntiNERO.")}</p>
+            <h4 className="yr-midtitle">{ui("Από τα ")}{mil(contracts.amount)} {ui("των δημόσιων συμβάσεων, το ")}{pct(direct.share_amount_pct)} {ui("δόθηκε με απευθείας ανάθεση το ")}{REPORT_YEAR}</h4>
             {procedures.length > 0 && (
               <p>
-                Ως προς τη συνολική αξία των συμβάσεων, {listJoin(procedures.map((row, index) => `το ${pct(row.share_amount_pct)}${index === 0 ? ' δόθηκε' : ''} με ${PROCEDURE_NAMES[row.label] ?? row.label.toLowerCase()}`))}.
-                {direct.count > 0 && <> Ως προς το πλήθος, οι απευθείας αναθέσεις είναι {num(direct.count)} από τις {num(contracts.contracts)} συμβάσεις ({pct(directCountShare)} του συνόλου).</>}
+                {ui("Ως προς τη συνολική αξία των συμβάσεων, ")}{listJoin(procedures.map((row, index) => ui("το {{v0}}{{v1}} με {{v2}}", { v0: pct(row.share_amount_pct), v1: index === 0 ? ui(" δόθηκε") : '', v2: ui.language === 'en' ? ui(row.label) : PROCEDURE_NAMES[row.label] ?? row.label.toLowerCase() })))}.
+                {direct.count > 0 && <> {ui("Ως προς το πλήθος, οι απευθείας αναθέσεις είναι ")}{num(direct.count)} {ui("από τις ")}{num(contracts.contracts)} {ui("συμβάσεις (")}{pct(directCountShare)} {ui("του συνόλου).")}</>}
               </p>
             )}
 
             {contracts.top_cpvs.length > 0 && (
               <p>
-                {contracts.top_cpvs.length === 5 ? 'Οι πέντε συχνότεροι' : 'Οι συχνότεροι'} κωδικοί εργασιών που περιγράφονται στις συμβάσεις (<ExternalLink href="https://cerpp.eprocurement.gov.gr/cpv/main/">CPV</ExternalLink> - Common Procurement Vocabulary) είναι {listJoin(contracts.top_cpvs.map((row, index) => `«${row.cpv}» (${pct(row.share_contracts_pct)}${index === 0 ? ' των συμβάσεων' : ''})`))}.
-                Αξίζει να σημειωθεί όμως ότι μια σύμβαση μπορεί να έχει περισσότερους από έναν κωδικούς CPV.
-              </p>
+                {contracts.top_cpvs.length === 5 ? ui("Οι πέντε συχνότεροι") : ui("Οι συχνότεροι")} {ui("κωδικοί εργασιών που περιγράφονται στις συμβάσεις (")}<ExternalLink href="https://cerpp.eprocurement.gov.gr/cpv/main/">CPV</ExternalLink> {ui("- Common Procurement Vocabulary) είναι ")}{listJoin(contracts.top_cpvs.map((row, index) => `«${ui.description(row.cpv)}» (${pct(row.share_contracts_pct)}${index === 0 ? ui(" των συμβάσεων") : ''})`))}{ui(". Αξίζει να σημειωθεί όμως ότι μια σύμβαση μπορεί να έχει περισσότερους από έναν κωδικούς CPV.")}</p>
             )}
             <ChartFrame
-              title="Διαδικασία ανάθεσης"
-              subtitle={`Συμβάσεις που υπογράφηκαν από ${shortDate(report.meta.period_start)} έως ${periodEnd}. Κάθε γραμμή αναπαριστά το ${pct(100)}.`}
+              title={ui("Διαδικασία ανάθεσης")}
+              subtitle={ui("Συμβάσεις που υπογράφηκαν από {{v0}} έως {{v1}}. Κάθε γραμμή αναπαριστά το {{v2}}.", { v0: shortDate(report.meta.period_start), v1: periodEnd, v2: pct(100) })}
               legend={procedureSeries}
               table={
                 <details className="yr-list">
-                  <summary>Λεξιλόγιο: τύποι συμβάσεων και διαδικασίες ανάθεσης</summary>
+                  <summary>{ui("Λεξιλόγιο: τύποι συμβάσεων και διαδικασίες ανάθεσης")}</summary>
                   <dl className="yr-glossary">
-                    <dt>Υπηρεσίες</dt><dd>Συμβάσεις παροχής υπηρεσιών από τρίτους προς την αναθέτουσα αρχή. Δεν παράγουν υλικό αποτέλεσμα (έργο) ούτε μεταβιβάζουν κυριότητα αγαθού.</dd>
-                    <dt>Προμήθειες</dt><dd>Συμβάσεις αγοράς, χρηματοδοτικής μίσθωσης ή μίσθωσης αγαθών και εξοπλισμού που μεταβιβάζονται ή παραχωρούνται στην αναθέτουσα αρχή.</dd>
-                    <dt>Έργα</dt><dd>Συμβάσεις εκτέλεσης οικοδομικών ή τεχνικών εργασιών (κατασκευή, ανακαίνιση, αποκατάσταση), με αποτέλεσμα ακίνητο τεχνικό έργο.</dd>
-                    <dt>Απευθείας ανάθεση</dt><dd>Η πιο απλοποιημένη διαδικασία, χωρίς πλήρη διαγωνιστική προκήρυξη. Η αναθέτουσα αρχή επιλέγει απευθείας ανάδοχο.</dd>
-                    <dt>Ανοιχτή διαδικασία</dt><dd>Κάθε ενδιαφερόμενος οικονομικός φορέας μπορεί να υποβάλει προσφορά μετά από δημοσίευση στο ΚΗΜΔΗΣ και, όπου απαιτείται, στην ΕΕ.</dd>
-                    <dt>Διαπραγμάτευση</dt><dd>Η αναθέτουσα αρχή διαπραγματεύεται με έναν ή περισσότερους φορείς, μόνο σε ειδικές περιπτώσεις που προβλέπει ο νόμος.</dd>
+                    <dt>{ui("Υπηρεσίες")}</dt><dd>{ui("Συμβάσεις παροχής υπηρεσιών από τρίτους προς την αναθέτουσα αρχή. Δεν παράγουν υλικό αποτέλεσμα (έργο) ούτε μεταβιβάζουν κυριότητα αγαθού.")}</dd>
+                    <dt>{ui("Προμήθειες")}</dt><dd>{ui("Συμβάσεις αγοράς, χρηματοδοτικής μίσθωσης ή μίσθωσης αγαθών και εξοπλισμού που μεταβιβάζονται ή παραχωρούνται στην αναθέτουσα αρχή.")}</dd>
+                    <dt>{ui("Έργα")}</dt><dd>{ui("Συμβάσεις εκτέλεσης οικοδομικών ή τεχνικών εργασιών (κατασκευή, ανακαίνιση, αποκατάσταση), με αποτέλεσμα ακίνητο τεχνικό έργο.")}</dd>
+                    <dt>{ui("Απευθείας ανάθεση")}</dt><dd>{ui("Η πιο απλοποιημένη διαδικασία, χωρίς πλήρη διαγωνιστική προκήρυξη. Η αναθέτουσα αρχή επιλέγει απευθείας ανάδοχο.")}</dd>
+                    <dt>{ui("Ανοιχτή διαδικασία")}</dt><dd>{ui("Κάθε ενδιαφερόμενος οικονομικός φορέας μπορεί να υποβάλει προσφορά μετά από δημοσίευση στο ΚΗΜΔΗΣ και, όπου απαιτείται, στην ΕΕ.")}</dd>
+                    <dt>{ui("Διαπραγμάτευση")}</dt><dd>{ui("Η αναθέτουσα αρχή διαπραγματεύεται με έναν ή περισσότερους φορείς, μόνο σε ειδικές περιπτώσεις που προβλέπει ο νόμος.")}</dd>
                   </dl>
                 </details>
               }
@@ -320,337 +307,254 @@ export default function YearlyReport() {
               <StackedRows rows={procedureRows} series={procedureSeries} normalize formatValue={(value, sum) => pct(share(value, sum))} />
             </ChartFrame>
 
-            <h4>Ακριβώς κάτω από το νόμιμο όριο</h4>
+            <h4>{ui("Ακριβώς κάτω από το νόμιμο όριο")}</h4>
             <p>
               {da.median !== null
-                ? <>Οι μισές από τις {num(da.count)} απευθείας αναθέσεις δεν ξεπερνούν τις {decimal(da.median)} ευρώ, ενώ {num(da.up_to_30k)} ({pct(derived.directUpTo30kPct)}) έχουν αξία έως 30.000 ευρώ.</>
-                : <>Από τις {num(da.count)} απευθείας αναθέσεις, {num(da.up_to_30k)} ({pct(derived.directUpTo30kPct)}) έχουν αξία έως 30.000 ευρώ.</>}
-              {' '}Το ποσό αυτό αποτελεί το γενικό ανώτατο όριο για την απευθείας ανάθεση δημόσιων συμβάσεων, σύμφωνα με το <ExternalLink href={SOURCES.directAwardLaw}>άρθρο 118 του ν. 4412/2016</ExternalLink>, όπως τροποποιήθηκε με τον ν. 4782/2021.
-              Για τις συμβάσεις έργων και ορισμένες ειδικές υπηρεσίες, το όριο ανέρχεται στις 60.000 ευρώ.
-            </p>
+                ? <>{ui("Οι μισές από τις ")}{num(da.count)} {ui("απευθείας αναθέσεις δεν ξεπερνούν τις ")}{decimal(da.median)} {ui("ευρώ, ενώ ")}{num(da.up_to_30k)} ({pct(derived.directUpTo30kPct)}{ui(") έχουν αξία έως 30.000 ευρώ.")}</>
+                : <>{ui("Από τις ")}{num(da.count)} {ui("απευθείας αναθέσεις, ")}{num(da.up_to_30k)} ({pct(derived.directUpTo30kPct)}{ui(") έχουν αξία έως 30.000 ευρώ.")}</>}
+              {' '}{ui("Το ποσό αυτό αποτελεί το γενικό ανώτατο όριο για την απευθείας ανάθεση δημόσιων συμβάσεων, σύμφωνα με το ")}<ExternalLink href={SOURCES.directAwardLaw}>{ui("άρθρο 118 του ν. 4412/2016")}</ExternalLink>{ui(", όπως τροποποιήθηκε με τον ν. 4782/2021. Για τις συμβάσεις έργων και ορισμένες ειδικές υπηρεσίες, το όριο ανέρχεται στις 60.000 ευρώ.")}</p>
             <p>
-              Το παρακάτω γράφημα παρουσιάζει τον αριθμό των απευθείας αναθέσεων ανά 5.000 ευρώ αξίας σύμβασης, χωρίς ΦΠΑ.
-              {belowLimitDecreasing && <> Όπως είναι αναμενόμενο, οι συμβάσεις μικρότερης αξίας είναι περισσότερες και ο αριθμός τους μειώνεται σταδιακά όσο αυξάνεται το ποσό.</>}
+              {ui("Το παρακάτω γράφημα παρουσιάζει τον αριθμό των απευθείας αναθέσεων ανά 5.000 ευρώ αξίας σύμβασης, χωρίς ΦΠΑ.")}{belowLimitDecreasing && <> {ui("Όπως είναι αναμενόμενο, οι συμβάσεις μικρότερης αξίας είναι περισσότερες και ο αριθμός τους μειώνεται σταδιακά όσο αυξάνεται το ποσό.")}</>}
               {bandRatio > 1.5 && (belowLimitDecreasing
-                ? <> Η τάση αυτή, ωστόσο, ανατρέπεται απότομα λίγο πριν από το όριο των 30.000 ευρώ.</>
-                : <> Λίγο πριν από το όριο των 30.000 ευρώ, ωστόσο, ο αριθμός τους αυξάνεται απότομα.</>)}
+                ? <> {ui("Η τάση αυτή, ωστόσο, ανατρέπεται απότομα λίγο πριν από το όριο των 30.000 ευρώ.")}</>
+                : <> {ui("Λίγο πριν από το όριο των 30.000 ευρώ, ωστόσο, ο αριθμός τους αυξάνεται απότομα.")}</>)}
             </p>
             <ChartFrame
-              title={`Διασπορά απευθείας αναθέσεων ${REPORT_YEAR}`}
-              subtitle="Πλήθος απευθείας αναθέσεων ανά κλιμάκιο 5.000 €."
-              table={<DataTable caption="Κλιμάκια αξίας απευθείας αναθέσεων" columns={[{ key: 'range', label: 'Κλιμάκιο' }, { key: 'count', label: 'Αναθέσεις', numeric: true }]}
+              title={ui("Διασπορά απευθείας αναθέσεων {{v0}}", { v0: REPORT_YEAR })}
+              subtitle={ui("Πλήθος απευθείας αναθέσεων ανά κλιμάκιο 5.000 €.")}
+              table={<DataTable caption={ui("Κλιμάκια αξίας απευθείας αναθέσεων")} columns={[{ key: 'range', label: ui("Κλιμάκιο") }, { key: 'count', label: ui("Αναθέσεις"), numeric: true }]}
                 rows={da.bins.map(bin => ({ range: binRange(bin), count: num(bin.count) }))} />}
-              note="Κάθε κλιμάκιο περιλαμβάνει και το ανώτερο ποσό του. Για παράδειγμα, μια ανάθεση ακριβώς 30.000 € μετρά στο κλιμάκιο 25.000–30.000 €."
+              note={ui("Κάθε κλιμάκιο περιλαμβάνει και το ανώτερο ποσό του. Για παράδειγμα, μια ανάθεση ακριβώς 30.000 € μετρά στο κλιμάκιο 25.000–30.000 €.")}
             >
-              <ColumnChart data={awardBins} formatAxis={value => value.toLocaleString('el-GR')} color={COLORS.accent} mutedColor={COLORS.gray}
-                axisTitle="Αξία ανάθεσης χωρίς ΦΠΑ, σε χιλιάδες ευρώ" labelAnchor={Math.max(awardBins.findIndex(bin => bin.emphasis), 0)} />
+              <ColumnChart data={awardBins} formatAxis={value => value.toLocaleString(ui.locale)} color={COLORS.accent} mutedColor={COLORS.gray}
+                axisTitle={ui("Αξία ανάθεσης χωρίς ΦΠΑ, σε χιλιάδες ευρώ")} labelAnchor={Math.max(awardBins.findIndex(bin => bin.emphasis), 0)} />
             </ChartFrame>
             <p>
-              Στο κλιμάκιο των 25.000–30.000 ευρώ καταγράφονται {num(da.from_25k_to_30k)} απευθείας αναθέσεις, έναντι {bandRatio > 2 ? 'μόλις ' : ''}{num(da.from_20k_to_25k)} στο αμέσως προηγούμενο κλιμάκιο των 20.000–25.000 ευρώ.
-              {bandMultiple && <> Πρόκειται για {bandMultiple} αριθμό συμβάσεων, παρά το γεγονός ότι τα δύο διαστήματα καλύπτουν το ίδιο εύρος αξίας (κάθε κλιμάκιο προσαυξάνεται κατά 5.000 €).</>}
+              {ui("Στο κλιμάκιο των 25.000–30.000 ευρώ καταγράφονται ")}{num(da.from_25k_to_30k)} {ui("απευθείας αναθέσεις, έναντι ")}{bandRatio > 2 ? ui("μόλις ") : ''}{num(da.from_20k_to_25k)} {ui("στο αμέσως προηγούμενο κλιμάκιο των 20.000–25.000 ευρώ.")}{bandMultiple && <> {ui("Πρόκειται για ")}{bandMultiple} {ui("αριθμό συμβάσεων, παρά το γεγονός ότι τα δύο διαστήματα καλύπτουν το ίδιο εύρος αξίας (κάθε κλιμάκιο προσαυξάνεται κατά 5.000 €).")}</>}
             </p>
             {bandsPrev && bandsPrev2 && (
               <p>
-                {patternRepeats ? `Το ίδιο μοτίβο παρατηρείται και τα προηγούμενα χρόνια${patternWeaker ? ', αν και λιγότερο έντονα' : ''}` : 'Τα προηγούμενα χρόνια οι αντίστοιχοι αριθμοί ήταν διαφορετικοί'}:
-                {' '}το {REPORT_YEAR - 1} καταγράφηκαν {num(bandsPrev.from_25k_to_30k)} απευθείας αναθέσεις στο κλιμάκιο των 25.000–30.000 ευρώ, έναντι {num(bandsPrev.from_20k_to_25k)} στο κλιμάκιο των 20.000–25.000 ευρώ,
-                {' '}και το {REPORT_YEAR - 2} {num(bandsPrev2.from_25k_to_30k)} έναντι {num(bandsPrev2.from_20k_to_25k)}.
+                {patternRepeats ? ui("Το ίδιο μοτίβο παρατηρείται και τα προηγούμενα χρόνια{{v0}}", { v0: patternWeaker ? ui(", αν και λιγότερο έντονα") : '' }) : ui("Τα προηγούμενα χρόνια οι αντίστοιχοι αριθμοί ήταν διαφορετικοί")}:
+                {' '}{ui("το ")}{REPORT_YEAR - 1} {ui("καταγράφηκαν ")}{num(bandsPrev.from_25k_to_30k)} {ui("απευθείας αναθέσεις στο κλιμάκιο των 25.000–30.000 ευρώ, έναντι ")}{num(bandsPrev.from_20k_to_25k)} {ui("στο κλιμάκιο των 20.000–25.000 ευρώ,")}{' '}{ui("και το ")}{REPORT_YEAR - 2} {num(bandsPrev2.from_25k_to_30k)} {ui("έναντι ")}{num(bandsPrev2.from_20k_to_25k)}.
               </p>
             )}
             {bandRatio > 1 && (
               <p>
-                Η συγκέντρωση αυτή δεν αποδεικνύει από μόνη της παρατυπία. Αναδεικνύει, ωστόσο, {patternRepeats ? 'ένα επαναλαμβανόμενο μοτίβο' : 'ένα μοτίβο'}: σημαντικός αριθμός συμβάσεων ανατίθεται σε ποσά που πλησιάζουν το ανώτατο νομοθετικό όριο της γενικής διαδικασίας απευθείας ανάθεσης.
-              </p>
+                {ui("Η συγκέντρωση αυτή δεν αποδεικνύει από μόνη της παρατυπία. Αναδεικνύει, ωστόσο, ")}{patternRepeats ? ui("ένα επαναλαμβανόμενο μοτίβο") : ui("ένα μοτίβο")}{ui(": σημαντικός αριθμός συμβάσεων ανατίθεται σε ποσά που πλησιάζουν το ανώτατο νομοθετικό όριο της γενικής διαδικασίας απευθείας ανάθεσης.")}</p>
             )}
             <p>
-              Η συγκέντρωση συμβάσεων κοντά στο όριο των 30.000 ευρώ εγείρει το ερώτημα κατά πόσον ορισμένες αναθέσεις ενδέχεται να συνδέονται με πρακτικές κατάτμησης, δηλαδή τη διάσπαση μιας ενιαίας προμήθειας ή υπηρεσίας σε περισσότερες συμβάσεις μικρότερης αξίας, με αποτέλεσμα να μπορούν να ανατεθούν απευθείας, χωρίς τη διενέργεια διαγωνισμού.
-            </p>
+              {ui("Η συγκέντρωση συμβάσεων κοντά στο όριο των 30.000 ευρώ εγείρει το ερώτημα κατά πόσον ορισμένες αναθέσεις ενδέχεται να συνδέονται με πρακτικές κατάτμησης, δηλαδή τη διάσπαση μιας ενιαίας προμήθειας ή υπηρεσίας σε περισσότερες συμβάσεις μικρότερης αξίας, με αποτέλεσμα να μπορούν να ανατεθούν απευθείας, χωρίς τη διενέργεια διαγωνισμού.")}</p>
             <p>
-              Το ζήτημα της κατάτμησης των δημόσιων συμβάσεων έχει επισημανθεί και από το Ελεγκτικό Συνέδριο. Στην <ExternalLink href="https://www.elsyn.gr/index.php/el">έκθεσή του για τον Απολογισμό και τον Ισολογισμό του Κράτους του 2024</ExternalLink>, το Συνέδριο καταγράφει περιπτώσεις απευθείας αναθέσεων για όμοια ή ομοειδή αγαθά, αντί της διενέργειας ενιαίου ανοικτού διαγωνισμού, καθώς και περιπτώσεις κατάτμησης προμηθειών σε μικρότερες συμβάσεις. Μεταξύ των φορέων στους οποίους εντοπίστηκαν τέτοιες πρακτικές περιλαμβάνεται και το Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας. Οι διαπιστώσεις αυτές αφορούν συγκεκριμένες συμβάσεις που εξετάστηκαν από το Ελεγκτικό Συνέδριο και δεν συνιστούν απόδειξη παρατυπιών στις αναθέσεις της παρούσας έρευνας.
-            </p>
+              {ui("Το ζήτημα της κατάτμησης των δημόσιων συμβάσεων έχει επισημανθεί και από το Ελεγκτικό Συνέδριο. Στην ")}<ExternalLink href="https://www.elsyn.gr/index.php/el"><span lang="el">έκθεσή του για τον Απολογισμό και τον Ισολογισμό του Κράτους του 2024</span></ExternalLink>{ui(", το Συνέδριο καταγράφει περιπτώσεις απευθείας αναθέσεων για όμοια ή ομοειδή αγαθά, αντί της διενέργειας ενιαίου ανοικτού διαγωνισμού, καθώς και περιπτώσεις κατάτμησης προμηθειών σε μικρότερες συμβάσεις. Μεταξύ των φορέων στους οποίους εντοπίστηκαν τέτοιες πρακτικές περιλαμβάνεται και το Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας. Οι διαπιστώσεις αυτές αφορούν συγκεκριμένες συμβάσεις που εξετάστηκαν από το Ελεγκτικό Συνέδριο και δεν συνιστούν απόδειξη παρατυπιών στις αναθέσεις της παρούσας έρευνας.")}</p>
 
-            <h4>Οι πέντε φορείς με τη μεγαλύτερη αξία συμβάσεων</h4>
+            <h4>{ui("Οι πέντε φορείς με τη μεγαλύτερη αξία συμβάσεων")}</h4>
             {topAuthorities.length > 0 && (
               <p>
-                <strong>{capitalize(authorityName(topAuthorities[0].authority))}</strong> συγκεντρώνει τη μεγαλύτερη αξία συμβάσεων για το {REPORT_YEAR}, με {num(topAuthorities[0].contracts)} {topAuthorities[0].contracts === 1 ? 'σύμβαση' : 'συμβάσεις'} συνολικού ύψους <strong>{milText(topAuthorities[0].amount)}</strong>, που αντιστοιχούν στο {pct(share(topAuthorities[0].amount, contracts.amount))} της συνολικής αξίας.
-                {topAuthorities.length > 1 && <> Ακολουθούν {listJoin(topAuthorities.slice(1, 5).map(item => `${authorityName(item.authority)} με ${milText(item.amount)}`))}.</>}
+                <strong>{capitalize(authorityName(topAuthorities[0].authority, ui))}</strong> {ui("συγκεντρώνει τη μεγαλύτερη αξία συμβάσεων για το ")}{REPORT_YEAR}{ui(", με ")}{num(topAuthorities[0].contracts)} {topAuthorities[0].contracts === 1 ? ui("σύμβαση") : ui("συμβάσεις")} {ui("συνολικού ύψους ")}<strong>{milText(topAuthorities[0].amount)}</strong>{ui(", που αντιστοιχούν στο ")}{pct(share(topAuthorities[0].amount, contracts.amount))} {ui("της συνολικής αξίας.")}{topAuthorities.length > 1 && <> {ui("Ακολουθούν ")}{listJoin(topAuthorities.slice(1, 5).map(item => ui("{{v0}} με {{v1}}", { v0: authorityName(item.authority, ui), v1: milText(item.amount) })))}.</>}
               </p>
             )}
             <p>
-              Παράλληλα, καταγράφεται σημαντική συγκέντρωση της αξίας των συμβάσεων σε περιορισμένο αριθμό αναδόχων. Οι συμβάσεις του {REPORT_YEAR} κατανέμονται σε <strong>{num(report.contractors.distinct)} διαφορετικούς αναδόχους ή κοινοπραξίες</strong>, βάσει ΑΦΜ, με τους δέκα μεγαλύτερους να συγκεντρώνουν το <strong>{pct(report.contractors.top10_share_pct)} της συνολικής αξίας</strong>.
+              {ui("Παράλληλα, καταγράφεται σημαντική συγκέντρωση της αξίας των συμβάσεων σε περιορισμένο αριθμό αναδόχων. Οι συμβάσεις του ")}{REPORT_YEAR} {ui("κατανέμονται σε ")}<strong>{num(report.contractors.distinct)} {ui("διαφορετικούς αναδόχους ή κοινοπραξίες")}</strong>{ui(", βάσει ΑΦΜ, με τους δέκα μεγαλύτερους να συγκεντρώνουν το ")}<strong>{pct(report.contractors.top10_share_pct)} {ui("της συνολικής αξίας")}</strong>.
             </p>
             <ChartFrame
-              title={`Οι δέκα ανάδοχοι με τη μεγαλύτερη αξία συμβάσεων, ${REPORT_YEAR}`}
-              subtitle={`Αξία χωρίς ΦΠΑ και μερίδιο του αναδόχου στη συνολική αξία των συμβάσεων του ${REPORT_YEAR}. Κάτω από κάθε μπάρα, οι συμβάσεις και οι φορείς που τις ανέθεσαν. Οι ανάδοχοι ομαδοποιούνται με βάση τον ΑΦΜ.`}
+              title={ui("Οι δέκα ανάδοχοι με τη μεγαλύτερη αξία συμβάσεων, {{v0}}", { v0: REPORT_YEAR })}
+              subtitle={ui("Αξία χωρίς ΦΠΑ και μερίδιο του αναδόχου στη συνολική αξία των συμβάσεων του {{v0}}. Κάτω από κάθε μπάρα, οι συμβάσεις και οι φορείς που τις ανέθεσαν. Οι ανάδοχοι ομαδοποιούνται με βάση τον ΑΦΜ.", { v0: REPORT_YEAR })}
             >
               <BarList color={COLORS.accent} mutedColor={COLORS.gray} items={report.contractors.top10.map(item => ({
                 label: item.name,
                 value: item.amount,
                 valueLabel: `${mil(item.amount)} · ${pct(item.share_pct)}`,
-                detail: `${num(item.contracts)} ${item.contracts === 1 ? 'σύμβαση' : 'συμβάσεις'} · ${item.authorities.length === 1 ? 'Φορέας' : 'Φορείς'}: ${
-                  item.authorities.slice(0, 3).map(row => item.authorities.length > 1 ? `${row.authority} (${num(row.contracts)})` : row.authority).join(', ')
-                }${item.authorities.length > 3 ? ` και ${num(item.authorities.length - 3)} ακόμη` : ''}`,
+                detail: `${num(item.contracts)} ${item.contracts === 1 ? ui("σύμβαση") : ui("συμβάσεις")} · ${item.authorities.length === 1 ? ui("Φορέας") : ui("Φορείς")}: ${
+                  item.authorities.slice(0, 3).map(row => item.authorities.length > 1 ? `${ui.organization(row.authority)} (${num(row.contracts)})` : ui.organization(row.authority)).join(', ')
+                }${item.authorities.length > 3 ? ui(" και {{v0}} ακόμη", { v0: num(item.authorities.length - 3) }) : ''}`,
               }))} />
             </ChartFrame>
           </Section>
 
-          <Section id="xronos" eyebrow="2 · Προγραμματισμός" title="Με καθυστέρηση οι εργασίες πρόληψης δασικών πυρκαγιών">
+          <Section id="xronos" eyebrow={ui("2 · Προγραμματισμός")} title={ui("Με καθυστέρηση οι εργασίες πρόληψης δασικών πυρκαγιών")}>
             <p>
-              Η χρηματοδότηση των δήμων για την πυροπροστασία αυξήθηκε σημαντικά το {REPORT_YEAR}, φτάνοντας στο υψηλότερο επίπεδο των τελευταίων ετών.
-              {munContractsLower && <> Ωστόσο, η συνολική αξία των συμβάσεων που εντοπίστηκαν στο Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) είναι μικρότερη από πέρυσι.</>}
-              {' '}Παράλληλα, η πλειονότητα των συμβάσεων υπογράφηκε αφού είχε ήδη ξεκινήσει η αντιπυρική περίοδος.
-            </p>
+              {ui("Η χρηματοδότηση των δήμων για την πυροπροστασία αυξήθηκε σημαντικά το ")}{REPORT_YEAR}{ui(", φτάνοντας στο υψηλότερο επίπεδο των τελευταίων ετών.")}{munContractsLower && <> {ui("Ωστόσο, η συνολική αξία των συμβάσεων που εντοπίστηκαν στο Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) είναι μικρότερη από πέρυσι.")}</>}
+              {' '}{ui("Παράλληλα, η πλειονότητα των συμβάσεων υπογράφηκε αφού είχε ήδη ξεκινήσει η αντιπυρική περίοδος.")}</p>
 
             {fundingCur && fundingPrev && fundingPrev2 && (
               <p>
-                Το Υπουργείο Εσωτερικών κατένειμε το {REPORT_YEAR} στους δήμους {milText(fundingCur.total)} για δράσεις πυροπροστασίας, έναντι {milText(fundingPrev.total)} το {REPORT_YEAR - 1}.
-                {fundingCur.total > fundingPrev.total && <> Πρόκειται για αύξηση περίπου {pctText(share(fundingCur.total - fundingPrev.total, fundingPrev.total))} μέσα σε έναν χρόνο.</>}
-                {' '}Το {REPORT_YEAR - 2} η αντίστοιχη χρηματοδότηση είχε φτάσει τα {milText(fundingPrev2.total)}{fundingPrev2.extra > 0 ? `, συμπεριλαμβανομένης έκτακτης ενίσχυσης ύψους ${milText(fundingPrev2.extra)}` : ''}.
-                {unionsFunding && <> Επιπλέον, το {REPORT_YEAR} διατέθηκαν {milText(unionsFunding.amount)} σε συνδέσμους δήμων.</>}
+                {ui("Το Υπουργείο Εσωτερικών κατένειμε το ")}{REPORT_YEAR} {ui("στους δήμους ")}{milText(fundingCur.total)} {ui("για δράσεις πυροπροστασίας, έναντι ")}{milText(fundingPrev.total)} {ui("το ")}{REPORT_YEAR - 1}.
+                {fundingCur.total > fundingPrev.total && <> {ui("Πρόκειται για αύξηση περίπου ")}{pctText(share(fundingCur.total - fundingPrev.total, fundingPrev.total))} {ui("μέσα σε έναν χρόνο.")}</>}
+                {' '}{ui("Το ")}{REPORT_YEAR - 2} {ui("η αντίστοιχη χρηματοδότηση είχε φτάσει τα ")}{milText(fundingPrev2.total)}{fundingPrev2.extra > 0 ? ui(", συμπεριλαμβανομένης έκτακτης ενίσχυσης ύψους {{v0}}", { v0: milText(fundingPrev2.extra) }) : ''}.
+                {unionsFunding && <> {ui("Επιπλέον, το ")}{REPORT_YEAR} {ui("διατέθηκαν ")}{milText(unionsFunding.amount)} {ui("σε συνδέσμους δήμων.")}</>}
               </p>
             )}
             <p>
-              Από την 1η Ιανουαρίου έως {untilDate(report.meta.period_end)}, το FireWatch εντόπισε συμβάσεις πυροπροστασίας των δήμων συνολικής αξίας {milText(munContracts[0])} χωρίς ΦΠΑ, έναντι {milText(munContracts[1])} το αντίστοιχο διάστημα του {REPORT_YEAR - 1} και {milText(munContracts[2])} το {REPORT_YEAR - 2}.
+              {ui("Από την 1η Ιανουαρίου έως ")}{untilDate(report.meta.period_end, ui)}{ui(", το FireWatch εντόπισε συμβάσεις πυροπροστασίας των δήμων συνολικής αξίας ")}{milText(munContracts[0])} {ui("χωρίς ΦΠΑ, έναντι ")}{milText(munContracts[1])} {ui("το αντίστοιχο διάστημα του ")}{REPORT_YEAR - 1} {ui("και ")}{milText(munContracts[2])} {ui("το ")}{REPORT_YEAR - 2}.
             </p>
             <p>
-              Ωστόσο, συνυπολογίζοντας {num(municipalSpending.unlinkedPaymentsCount)} οριστικοποιήσεις πληρωμής δήμων στη Διαύγεια το {REPORT_YEAR}, ύψους {milText(municipalSpending.unlinkedPaymentsAmount)}, η εκτίμηση δαπανών των δήμων για το ίδιο διάστημα φτάνει τα <strong>{milText(municipalSpending.totalAmount)} χωρίς ΦΠΑ</strong>, δηλαδή {(municipalSpending.totalAmount - 50000000)>0 ? 'υπερβαίνει την ετήσια χρηματοδότηση κατά' : 'λιγότερα από την ετήσια χρηματοδότηση κατά'} {milText(municipalSpending.totalAmount - 50000000)}.
+              {ui("Ωστόσο, συνυπολογίζοντας ")}{num(municipalSpending.unlinkedPaymentsCount)} {ui("οριστικοποιήσεις πληρωμής δήμων στη Διαύγεια το ")}{REPORT_YEAR}{ui(", ύψους ")}{milText(municipalSpending.unlinkedPaymentsAmount)}{ui(", η εκτίμηση δαπανών των δήμων για το ίδιο διάστημα φτάνει τα ")}<strong>{milText(municipalSpending.totalAmount)} {ui("χωρίς ΦΠΑ")}</strong>{ui(", δηλαδή ")}{(municipalSpending.totalAmount - 50000000)>0 ? ui("υπερβαίνει την ετήσια χρηματοδότηση κατά") : ui("λιγότερα από την ετήσια χρηματοδότηση κατά")} {milText(municipalSpending.totalAmount - 50000000)}.
             </p>
             <p>
-              Σε αυτό το σημέιο αξίζει να αναφερθεί ότι ο τρόπος που οι δήμοι και οι υπόλοιποι δημόσιοι φορείς καταχωρούν τις δημόσιες συμβάσεις στο Κεντρικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) και τις αποφάσεις πληρωμών στη Διαύγεια, καθιστά σχεδόν αδύνατη την παρακολούθηση της ροής δαπανών που αφορούν στην πυροπροστασία. Λάθη στην καταχώρηση ποσών, λάθη στην κωδικοποίηση των εργασιών ή και καθυστέρηση ανάρτησης των εγγράφων δεν μας επιτρέπουν να υπολογίσουμε με ακρίβεια πώς δαπανά κάθε δήμος την ετήσια κρατική χρηματοδότηση για δράσεις πρόληψης και καταπολέμησης δασικών πυρκαγιών.
-            </p>
+              {ui("Σε αυτό το σημέιο αξίζει να αναφερθεί ότι ο τρόπος που οι δήμοι και οι υπόλοιποι δημόσιοι φορείς καταχωρούν τις δημόσιες συμβάσεις στο Κεντρικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ) και τις αποφάσεις πληρωμών στη Διαύγεια, καθιστά σχεδόν αδύνατη την παρακολούθηση της ροής δαπανών που αφορούν στην πυροπροστασία. Λάθη στην καταχώρηση ποσών, λάθη στην κωδικοποίηση των εργασιών ή και καθυστέρηση ανάρτησης των εγγράφων δεν μας επιτρέπουν να υπολογίσουμε με ακρίβεια πώς δαπανά κάθε δήμος την ετήσια κρατική χρηματοδότηση για δράσεις πρόληψης και καταπολέμησης δασικών πυρκαγιών.")}</p>
 
-            <h4>Εργασίες πρόληψης μετά την έναρξη της αντιπυρικής περιόδου</h4>
+            <h4>{ui("Εργασίες πρόληψης μετά την έναρξη της αντιπυρικής περιόδου")}</h4>
             <p>
-             Η αντιπυρική περίοδος διαρκεί κάθε χρόνο από την 1η Μαΐου έως τις 31 Οκτωβρίου. Θα περίμενε κανείς ότι οι δήμοι θα είχαν μεριμνήσει εγκαίρως για τον προγραμματισμό των απαραίτητων εργασιών πρόληψης των δασικών πυρκαγιών, συνάπτοντας, για παράδειγμα, συμβάσεις με ιδιώτες αναδόχους πριν από την έναρξη της αντιπυρικής περιόδου, ώστε να διασφαλίζεται η έγκαιρη εκτέλεσή τους.
-              Παρ' όλα αυτά, μόλις {num(munTiming.before_may_contracts)} από τις {num(munTiming.contracts)} συμβάσεις πυροπροστασίας των δήμων το {REPORT_YEAR} ({pctText(beforeMayShares[2])}) είχαν υπογραφεί πριν από την έναρξή της.
-              {' '}Η αξία αυτών των συμβάσεων αντιστοιχούσε στο {pctText(share(munTiming.before_may_amount, munTiming.amount))} της συνολικής αξίας των συμβάσεων πυροπροστασίας των δήμων για το {REPORT_YEAR}, έως την ημερομηνία ενημέρωσης της αναφοράς.
+             {ui("Η αντιπυρική περίοδος διαρκεί κάθε χρόνο από την 1η Μαΐου έως τις 31 Οκτωβρίου. Θα περίμενε κανείς ότι οι δήμοι θα είχαν μεριμνήσει εγκαίρως για τον προγραμματισμό των απαραίτητων εργασιών πρόληψης των δασικών πυρκαγιών, συνάπτοντας, για παράδειγμα, συμβάσεις με ιδιώτες αναδόχους πριν από την έναρξη της αντιπυρικής περιόδου, ώστε να διασφαλίζεται η έγκαιρη εκτέλεσή τους. Παρ' όλα αυτά, μόλις ")}{num(munTiming.before_may_contracts)} {ui("από τις ")}{num(munTiming.contracts)} {ui("συμβάσεις πυροπροστασίας των δήμων το ")}{REPORT_YEAR} ({pctText(beforeMayShares[2])}{ui(") είχαν υπογραφεί πριν από την έναρξή της.")}{' '}{ui("Η αξία αυτών των συμβάσεων αντιστοιχούσε στο ")}{pctText(share(munTiming.before_may_amount, munTiming.amount))} {ui("της συνολικής αξίας των συμβάσεων πυροπροστασίας των δήμων για το ")}{REPORT_YEAR}{ui(", έως την ημερομηνία ενημέρωσης της αναφοράς.")}</p>
+            <p>
+              {ui("Στις περιφέρειες, πριν από την 1η Μαΐου είχαν υπογραφεί ")}{num(regionalTiming.before_may_contracts)} {ui("από τις ")}{num(regionalTiming.contracts)} {ui("συμβάσεις πυροπροστασίας του ")}{REPORT_YEAR} ({pctText(share(regionalTiming.before_may_contracts, regionalTiming.contracts))}).
+              {' '}{ui("Η αξία τους αντιστοιχούσε στο ")}{pctText(share(regionalTiming.before_may_amount, regionalTiming.amount))} {ui("της συνολικής αξίας των συμβάσεων πυροπροστασίας των περιφερειών για το ")}{REPORT_YEAR}{ui(", έως την ημερομηνία ενημέρωσης της αναφοράς.")}</p>
+            <p>
+              {ui("Στο Υπουργείο Περιβάλλοντος και Ενέργειας, πριν από την 1η Μαΐου είχαν υπογραφεί ")}{num(environmentTiming.before_may_contracts)} {ui("από τις ")}{num(environmentTiming.contracts)} {ui("συμβάσεις (")}{pctText(share(environmentTiming.before_may_contracts, environmentTiming.contracts))}{ui("), που αντιστοιχούσαν στο ")}{pctText(share(environmentTiming.before_may_amount, environmentTiming.amount))} {ui("της συνολικής αξίας των συμβάσεων πυροπροστασίας του υπουργείου για το ")}{REPORT_YEAR}{ui(", έως την ημερομηνία ενημέρωσης της αναφοράς.")}</p>
+            <p>
+              {ui("Στο Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας, πριν από την 1η Μαΐου είχαν υπογραφεί ")}{num(civilProtectionTiming.before_may_contracts)} {ui("από τις ")}{num(civilProtectionTiming.contracts)} {ui("συμβάσεις (")}{pctText(share(civilProtectionTiming.before_may_contracts, civilProtectionTiming.contracts))}{ui("), που αντιστοιχούσαν στο ")}{pctText(share(civilProtectionTiming.before_may_amount, civilProtectionTiming.amount))} {ui("της συνολικής αξίας των συμβάσεων πυροπροστασίας του υπουργείου για το ")}{REPORT_YEAR}{ui(", έως την ημερομηνία ενημέρωσης της αναφοράς.")}</p>
+            <p>
+              {ui("Στους δήμους, ")}{num(munTiming.may_to_august_contracts)} {ui("συμβάσεις (")}{pctText(share(munTiming.may_to_august_contracts, munTiming.contracts))}{ui(") υπογράφηκαν από τον Μάιο έως και τον Αύγουστο, δηλαδή μέσα στους τέσσερις πρώτους μήνες της αντιπυρικής περιόδου.")}{munTopMonths.length === 3 && munTopMonths[0].contracts > munTopMonths[1].contracts && <> {ui.language === 'el' && ui("Ο ")}{ui(MONTHS_NOMINATIVE[munTopMonths[0].month - 1])} {ui("ήταν ο μήνας με τις περισσότερες υπογραφές, συνολικά ")}{num(munTopMonths[0].contracts)}{ui(", ενώ ακολούθησαν ο ")}{ui(MONTHS_NOMINATIVE[munTopMonths[1].month - 1])} {ui("με ")}{num(munTopMonths[1].contracts)} {ui("και ο ")}{ui(MONTHS_NOMINATIVE[munTopMonths[2].month - 1])} {ui("με ")}{num(munTopMonths[2].contracts)}.</>}
             </p>
             <p>
-              Στις περιφέρειες, πριν από την 1η Μαΐου είχαν υπογραφεί {num(regionalTiming.before_may_contracts)} από τις {num(regionalTiming.contracts)} συμβάσεις πυροπροστασίας του {REPORT_YEAR} ({pctText(share(regionalTiming.before_may_contracts, regionalTiming.contracts))}).
-              {' '}Η αξία τους αντιστοιχούσε στο {pctText(share(regionalTiming.before_may_amount, regionalTiming.amount))} της συνολικής αξίας των συμβάσεων πυροπροστασίας των περιφερειών για το {REPORT_YEAR}, έως την ημερομηνία ενημέρωσης της αναφοράς.
+              {ui("Το ίδιο φαινόμενο καταγράφεται και τα προηγούμενα χρόνια. Πριν από την 1η Μαΐου είχε υπογραφεί μόλις το ")}{pctText(beforeMayShares[0])} {ui("των συμβάσεων του ")}{REPORT_YEAR - 2} {ui.language === 'el' ? ui("και το ") : ui("και ")}{pctText(beforeMayShares[1])} {ui("του ")}{REPORT_YEAR - 1}.
             </p>
             <p>
-              Στο Υπουργείο Περιβάλλοντος και Ενέργειας, πριν από την 1η Μαΐου είχαν υπογραφεί {num(environmentTiming.before_may_contracts)} από τις {num(environmentTiming.contracts)} συμβάσεις ({pctText(share(environmentTiming.before_may_contracts, environmentTiming.contracts))}), που αντιστοιχούσαν στο {pctText(share(environmentTiming.before_may_amount, environmentTiming.amount))} της συνολικής αξίας των συμβάσεων πυροπροστασίας του υπουργείου για το {REPORT_YEAR}, έως την ημερομηνία ενημέρωσης της αναφοράς.
-            </p>
+              {ui("Τα στοιχεία αναδεικνύουν ένα επαναλαμβανόμενο χαρακτηριστικό στην πρόληψη πυρκαγιών σε τοπικό επίπεδο: η συντριπτική πλειονότητα των συμβάσεων υπογράφεται όταν η περίοδος αυξημένου κινδύνου δασικών πυρκαγιών έχει ήδη ξεκινήσει.")}</p>
             <p>
-              Στο Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας, πριν από την 1η Μαΐου είχαν υπογραφεί {num(civilProtectionTiming.before_may_contracts)} από τις {num(civilProtectionTiming.contracts)} συμβάσεις ({pctText(share(civilProtectionTiming.before_may_contracts, civilProtectionTiming.contracts))}), που αντιστοιχούσαν στο {pctText(share(civilProtectionTiming.before_may_amount, civilProtectionTiming.amount))} της συνολικής αξίας των συμβάσεων πυροπροστασίας του υπουργείου για το {REPORT_YEAR}, έως την ημερομηνία ενημέρωσης της αναφοράς.
-            </p>
-            <p>
-              Στους δήμους, {num(munTiming.may_to_august_contracts)} συμβάσεις ({pctText(share(munTiming.may_to_august_contracts, munTiming.contracts))}) υπογράφηκαν από τον Μάιο έως και τον Αύγουστο, δηλαδή μέσα στους τέσσερις πρώτους μήνες της αντιπυρικής περιόδου.
-              {munTopMonths.length === 3 && munTopMonths[0].contracts > munTopMonths[1].contracts && <> Ο {MONTHS_NOMINATIVE[munTopMonths[0].month - 1]} ήταν ο μήνας με τις περισσότερες υπογραφές, συνολικά {num(munTopMonths[0].contracts)}, ενώ ακολούθησαν ο {MONTHS_NOMINATIVE[munTopMonths[1].month - 1]} με {num(munTopMonths[1].contracts)} και ο {MONTHS_NOMINATIVE[munTopMonths[2].month - 1]} με {num(munTopMonths[2].contracts)}.</>}
-            </p>
-            <p>
-              Το ίδιο φαινόμενο καταγράφεται και τα προηγούμενα χρόνια. Πριν από την 1η Μαΐου είχε υπογραφεί μόλις το {pctText(beforeMayShares[0])} των συμβάσεων του {REPORT_YEAR - 2} και το {pctText(beforeMayShares[1])} του {REPORT_YEAR - 1}.
-            </p>
-            <p>
-              Τα στοιχεία αναδεικνύουν ένα επαναλαμβανόμενο χαρακτηριστικό στην πρόληψη πυρκαγιών σε τοπικό επίπεδο: η συντριπτική πλειονότητα των συμβάσεων υπογράφεται όταν η περίοδος αυξημένου κινδύνου δασικών πυρκαγιών έχει ήδη ξεκινήσει.
-            </p>
-            <p>
-              Αυτό δεν σημαίνει ότι οι αντίστοιχες εργασίες εκτελέστηκαν απαραίτητα τότε. Η ημερομηνία υπογραφής δείχνει πότε αναλήφθηκε η συμβατική δέσμευση, όχι πότε ξεκίνησαν ή ολοκληρώθηκαν οι εργασίες.
-            </p>
+              {ui("Αυτό δεν σημαίνει ότι οι αντίστοιχες εργασίες εκτελέστηκαν απαραίτητα τότε. Η ημερομηνία υπογραφής δείχνει πότε αναλήφθηκε η συμβατική δέσμευση, όχι πότε ξεκίνησαν ή ολοκληρώθηκαν οι εργασίες.")}</p>
             <ChartFrame
-              title="Συμβάσεις πυροπροστασίας των δήμων ανά μήνα υπογραφής"
-              subtitle="Πλήθος συμβάσεων. Η σκίαση δείχνει την αντιπυρική περίοδο (Μάιος–Οκτώβριος)."
+              title={ui("Συμβάσεις πυροπροστασίας των δήμων ανά μήνα υπογραφής")}
+              subtitle={ui("Πλήθος συμβάσεων. Η σκίαση δείχνει την αντιπυρική περίοδο (Μάιος–Οκτώβριος).")}
               legend={yearSeries}
-              table={<DataTable caption="Συμβάσεις πυροπροστασίας δήμων ανά μήνα" columns={[{ key: 'month', label: 'Μήνας' }, ...yearSeries.map(s => ({ key: s.key, label: s.label, numeric: true }))]}
-                rows={timingColumns.map(row => ({ month: row.label, ...Object.fromEntries(Object.entries(row.values).map(([key, value]) => [key, num(value)])) }))} />}
-              note={`Τα στοιχεία του ${REPORT_YEAR} φτάνουν έως τις ${periodEnd}.`}
+              table={<DataTable caption={ui("Συμβάσεις πυροπροστασίας δήμων ανά μήνα")} columns={[{ key: 'month', label: ui("Μήνας") }, ...yearSeries.map(s => ({ key: s.key, label: s.label, numeric: true }))]}
+                rows={timingColumns.map(row => ({ month: ui(row.label), ...Object.fromEntries(Object.entries(row.values).map(([key, value]) => [key, num(value)])) }))} />}
+              note={ui("Τα στοιχεία του {{v0}} φτάνουν έως τις {{v1}}.", { v0: REPORT_YEAR, v1: periodEnd })}
             >
-              <GroupedColumns data={timingColumns} series={yearSeries} formatAxis={value => value.toLocaleString('el-GR')} band={{ from: 4, to: 9, label: 'Αντιπυρική περίοδος' }} />
+              <GroupedColumns data={timingColumns} series={yearSeries} formatAxis={value => value.toLocaleString(ui.locale)} band={{ from: 4, to: 9, label: ui("Αντιπυρική περίοδος") }} />
             </ChartFrame>
 
             {munPay.payments > 0 && (
               <>
-                <h4>Τι δείχνουν οι πληρωμές στη Διαύγεια</h4>
+                <h4>{ui("Τι δείχνουν οι πληρωμές στη Διαύγεια")}</h4>
                 <p>
-                  Εκτός από τις συμβάσεις στο ΚΗΜΔΗΣ, το FireWatch εντόπισε στη Διαύγεια {num(munPay.payments)} οριστικοποιήσεις πληρωμών για την πυροπροστασία των δήμων το {REPORT_YEAR}, συνολικής αξίας {milText(munPay.amount)} χωρίς ΦΠΑ.
+                  {ui("Εκτός από τις συμβάσεις στο ΚΗΜΔΗΣ, το FireWatch εντόπισε στη Διαύγεια ")}{num(munPay.payments)} {ui("οριστικοποιήσεις πληρωμών για την πυροπροστασία των δήμων το ")}{REPORT_YEAR}{ui(", συνολικής αξίας ")}{milText(munPay.amount)} {ui("χωρίς ΦΠΑ.")}</p>
+                <p>
+                  {ui("Από αυτές, οι ")}{num(munPay.from_may_1)} ({pctText(share(munPay.from_may_1, munPay.payments))}{ui(") αναρτήθηκαν από την 1η Μαΐου και μετά")}{munPayPeakShare > 50 ? ui(", με τις περισσότερες αναρτήσεις να συγκεντρώνονται {{v0}}", { v0: listJoin(munPayPeak.map(row => ui(MONTHS_ACCUSATIVE[row.month - 1]))) }) : ''}.
+                  {munPay.payroll > munPay.payments / 2 && <> {ui("Περισσότερες από τις μισές (")}{num(munPay.payroll)}{ui(") αφορούν τη μισθοδοσία προσωπικού πυροπροστασίας.")}</>}
                 </p>
                 <p>
-                  Από αυτές, οι {num(munPay.from_may_1)} ({pctText(share(munPay.from_may_1, munPay.payments))}) αναρτήθηκαν από την 1η Μαΐου και μετά{munPayPeakShare > 50 ? `, με τις περισσότερες αναρτήσεις να συγκεντρώνονται ${listJoin(munPayPeak.map(row => MONTHS_ACCUSATIVE[row.month - 1]))}` : ''}.
-                  {munPay.payroll > munPay.payments / 2 && <> Περισσότερες από τις μισές ({num(munPay.payroll)}) αφορούν τη μισθοδοσία προσωπικού πυροπροστασίας.</>}
-                </p>
-                <p>
-                  Οι ημερομηνίες των πληρωμών δεν μπορούν να ερμηνευτούν με τον ίδιο τρόπο όπως οι ημερομηνίες υπογραφής των συμβάσεων. Οι πληρωμές καταγράφονται συνήθως σε μεταγενέστερο στάδιο και δεν αποτυπώνουν πότε ανατέθηκε ή εκτελέστηκε μια εργασία.
-                  Συνεπώς, η συγκέντρωσή τους κατά τη διάρκεια της αντιπυρικής περιόδου δεν συνιστά από μόνη της ένδειξη καθυστερημένου προγραμματισμού.
-                </p>
+                  {ui("Οι ημερομηνίες των πληρωμών δεν μπορούν να ερμηνευτούν με τον ίδιο τρόπο όπως οι ημερομηνίες υπογραφής των συμβάσεων. Οι πληρωμές καταγράφονται συνήθως σε μεταγενέστερο στάδιο και δεν αποτυπώνουν πότε ανατέθηκε ή εκτελέστηκε μια εργασία. Συνεπώς, η συγκέντρωσή τους κατά τη διάρκεια της αντιπυρικής περιόδου δεν συνιστά από μόνη της ένδειξη καθυστερημένου προγραμματισμού.")}</p>
               </>
             )}
 
-            <h4>Δήμοι χωρίς καταγεγραμμένες συμβάσεις ή πληρωμές</h4>
+            <h4>{ui("Δήμοι χωρίς καταγεγραμμένες συμβάσεις ή πληρωμές")}</h4>
             <p>
-              Για τις ανάγκες της ανάλυσης, τα δεδομένα των δήμων ομαδοποιήθηκαν σε <strong>{num(m.funded)} δημοτικές μονάδες</strong>. Δήμοι που σήμερα αποτελούν ξεχωριστές διοικητικές οντότητες, όπως εκείνοι της Κέρκυρας, της Κεφαλονιάς, της Λέσβου και της Σάμου, εξετάστηκαν συγκεντρωτικά.
-            </p>
+              {ui("Για τις ανάγκες της ανάλυσης, τα δεδομένα των δήμων ομαδοποιήθηκαν σε ")}<strong>{num(m.funded)} {ui("δημοτικές μονάδες")}</strong>{ui(". Δήμοι που σήμερα αποτελούν ξεχωριστές διοικητικές οντότητες, όπως εκείνοι της Κέρκυρας, της Κεφαλονιάς, της Λέσβου και της Σάμου, εξετάστηκαν συγκεντρωτικά.")}</p>
             <p>
-              Από τις {num(m.funded)} δημοτικές μονάδες, στις <strong>{num(m.with_contracts)} εντοπίστηκε τουλάχιστον μία σύμβαση πυροπροστασίας το {REPORT_YEAR}</strong>, ενώ σε {num(m.with_payments)} καταγράφηκε τουλάχιστον μία σχετική πληρωμή στη Διαύγεια.
-            </p>
+              {ui("Από τις ")}{num(m.funded)} {ui("δημοτικές μονάδες, στις ")}<strong>{num(m.with_contracts)} {ui("εντοπίστηκε τουλάχιστον μία σύμβαση πυροπροστασίας το ")}{REPORT_YEAR}</strong>{ui(", ενώ σε ")}{num(m.with_payments)} {ui("καταγράφηκε τουλάχιστον μία σχετική πληρωμή στη Διαύγεια.")}</p>
             {m.funded_without_contract > 0 && (
               <p>
-                Αντίστοιχα, για <strong>{num(m.funded_without_contract)} δημοτικές μονάδες που έλαβαν κρατική χρηματοδότηση δεν εντοπίστηκε καμία σύμβαση πυροπροστασίας το {REPORT_YEAR}</strong>.
-                {' '}Σε {num(m.funded_without_contract - m.funded_without_contract_or_payment)} από αυτές καταγράφηκαν σχετικές πληρωμές στη Διαύγεια{m.funded_without_contract_or_payment > 0 && <>, ενώ για τις υπόλοιπες <strong>{num(m.funded_without_contract_or_payment)} δεν εντοπίστηκε καμία σύμβαση στο ΚΗΜΔΗΣ ούτε σχετική οριστικοποίηση πληρωμής στη Διαύγεια</strong>, παρότι είχαν λάβει συνολικά <strong>{milText(m.funding_of_no_trace)}</strong> από το Υπουργείο Εσωτερικών για δράσεις πυροπροστασίας</>}.
+                {ui("Αντίστοιχα, για ")}<strong>{num(m.funded_without_contract)} {ui("δημοτικές μονάδες που έλαβαν κρατική χρηματοδότηση δεν εντοπίστηκε καμία σύμβαση πυροπροστασίας το ")}{REPORT_YEAR}</strong>.
+                {' '}{ui("Σε ")}{num(m.funded_without_contract - m.funded_without_contract_or_payment)} {ui("από αυτές καταγράφηκαν σχετικές πληρωμές στη Διαύγεια")}{m.funded_without_contract_or_payment > 0 && <>{ui(", ενώ για τις υπόλοιπες ")}<strong>{num(m.funded_without_contract_or_payment)} {ui("δεν εντοπίστηκε καμία σύμβαση στο ΚΗΜΔΗΣ ούτε σχετική οριστικοποίηση πληρωμής στη Διαύγεια")}</strong>{ui(", παρότι είχαν λάβει συνολικά ")}<strong>{milText(m.funding_of_no_trace)}</strong> {ui("από το Υπουργείο Εσωτερικών για δράσεις πυροπροστασίας")}</>}.
               </p>
             )}
             {m.funded_without_contract_or_payment > 0 && (
               <>
                 <p>
-                  Η απουσία καταγραφών δεν σημαίνει απαραίτητα ότι δεν έγιναν έργα πυροπροστασίας. Είναι πιθανό ορισμένες δαπάνες να μην εντοπίστηκαν λόγω διαφορετικών περιγραφών ή κωδικών καταχώρισης, να μην καλύπτονται από τη μεθοδολογία της έρευνας να μην έχουν ακόμη δημοσιευτεί τα σχετικά έγγραφα ή να έχουν υλοποιηθεί από προσωπικό των δήμων.
-                </p>
+                  {ui("Η απουσία καταγραφών δεν σημαίνει απαραίτητα ότι δεν έγιναν έργα πυροπροστασίας. Είναι πιθανό ορισμένες δαπάνες να μην εντοπίστηκαν λόγω διαφορετικών περιγραφών ή κωδικών καταχώρισης, να μην καλύπτονται από τη μεθοδολογία της έρευνας να μην έχουν ακόμη δημοσιευτεί τα σχετικά έγγραφα ή να έχουν υλοποιηθεί από προσωπικό των δήμων.")}</p>
                 <p>
-                  <strong>Το εύρημα αναδεικνύει, ωστόσο, ένα κενό στην ιχνηλασιμότητα της δημόσιας χρηματοδότησης:</strong> με βάση τα διαθέσιμα στοιχεία και τα κριτήρια της έρευνας, δεν είναι δυνατόν να προσδιοριστεί σε ποιες συγκεκριμένες δράσεις πυροπροστασίας κατευθύνθηκε μέρος των χρημάτων που διατέθηκαν στους δήμους. Επομένως δεν μπορεί να ασκηθεί ουσιαστικός έλεγχος για το κόστος των δράσεων ή απολογισμός για την αποτελεσματικότητα των έργων.
-                </p>
+                  <strong>{ui("Το εύρημα αναδεικνύει, ωστόσο, ένα κενό στην ιχνηλασιμότητα της δημόσιας χρηματοδότησης:")}</strong> {ui("με βάση τα διαθέσιμα στοιχεία και τα κριτήρια της έρευνας, δεν είναι δυνατόν να προσδιοριστεί σε ποιες συγκεκριμένες δράσεις πυροπροστασίας κατευθύνθηκε μέρος των χρημάτων που διατέθηκαν στους δήμους. Επομένως δεν μπορεί να ασκηθεί ουσιαστικός έλεγχος για το κόστος των δράσεων ή απολογισμός για την αποτελεσματικότητα των έργων.")}</p>
               </>
             )}
           </Section>
 
-          <Section id="plirwmes" eyebrow="3 · Πληρωμές" title="Μια ανάλυση των εγγράφων που αναρτώνται στη Διαύγεια">
+          <Section id="plirwmes" eyebrow={ui("3 · Πληρωμές")} title={ui("Μια ανάλυση των εγγράφων που αναρτώνται στη Διαύγεια")}>
             <p>
-              Η «οριστικοποίηση πληρωμής» είναι ο τύπος πράξης με τον οποίο ένας φορέας δημοσιεύει στη Διαύγεια την πληρωμή ενός ή περισσότερων δικαιούχων. Οι πράξεις συλλέγονται με αναζήτηση σειράς λέξεων-κλειδιών που σχετίζονται με την πυροπροστασία, και στη συνέχεια εξειδικευμένοι αλγόριθμοι διασταυρώνουν εάν πράγματι τα έγγραφα που έχουμε συγκεντρώσει αφορούν σε πληρωμές που σχετίζονται με την αντιμετώπιση ή πρόληψη δασικών πυρκαγιών.
+              {ui("Η «οριστικοποίηση πληρωμής» είναι ο τύπος πράξης με τον οποίο ένας φορέας δημοσιεύει στη Διαύγεια την πληρωμή ενός ή περισσότερων δικαιούχων. Οι πράξεις συλλέγονται με αναζήτηση σειράς λέξεων-κλειδιών που σχετίζονται με την πυροπροστασία, και στη συνέχεια εξειδικευμένοι αλγόριθμοι διασταυρώνουν εάν πράγματι τα έγγραφα που έχουμε συγκεντρώσει αφορούν σε πληρωμές που σχετίζονται με την αντιμετώπιση ή πρόληψη δασικών πυρκαγιών.")}</p>
+            <p>
+              {ui("Στη Διαύγεια εντοπίζονται ")}<strong>{num(p.counted)} {ui("πληρωμές του ")}{CURRENT_YEAR} {ui("που σχετίζονται με την πυροπροστασία, αξίας ")}{mil(p.amount)}</strong> {ui("χωρίς ΦΠΑ. Αυτές οι πληρωμές αφορούν όλους τους δημόσιους φορείς και δεν συνδέονται με κάποια σύμβαση.")}</p>
+            <p>
+              {municipalPayments > 0 && <>{ui("Από αυτά, τα ")}{mil(municipalPayments)} {ui("αφορούν σε πληρωμές δήμων. ")}</>}
+              {payroll.payments > 0 && <>{ui("Η μισθοδοσία προσωπικού είναι ")}{num(payroll.payments)} {ui("πληρωμές από ")}{num(payroll.bodies)} {payrollOnlyMunicipal ? ui("δήμους") : ui("φορείς")} ({amount(payroll.amount)}).</>}
+              {derived.payrollTotal > 0 && derived.payrollAugSep > derived.payrollTotal / 2 && <> {ui("Οι περισσότερες αναρτήθηκαν τον Αύγουστο και τον Σεπτέμβριο (")}{num(derived.payrollAugSep)} {ui("από τις ")}{num(derived.payrollTotal)}).</>}
+              {vegetation.payments > 0 && <> {ui("Οι αντιπυρικές ζώνες, οι καθαρισμοί και τα κλαδέματα είναι ")}{num(vegetation.payments)} {ui("πληρωμές (")}{amount(vegetation.amount)}).</>}
+              {rrf.payments > 0 && <> {rrf.payments === 1 ? ui("Μία πληρωμή") : ui("{{v0}} πληρωμές", { v0: capitalize(count(rrf.payments, true)) })} {ui("του Υπουργείου Περιβάλλοντος και Ενέργειας για ")}{rrf.payments === 1 ? ui("έργο") : ui("έργα")} {ui("του Ταμείου Ανάκαμψης ")}{rrf.payments === 1 ? ui("αντιστοιχεί") : ui("αντιστοιχούν")} {ui("σε ")}{amount(rrf.amount)}.</>}
             </p>
             <p>
-              Στη Διαύγεια εντοπίζονται <strong>{num(p.counted)} πληρωμές του {CURRENT_YEAR} που σχετίζονται με την πυροπροστασία, αξίας {mil(p.amount)}</strong> χωρίς ΦΠΑ. Αυτές οι πληρωμές αφορούν όλους τους δημόσιους φορείς και δεν συνδέονται με κάποια σύμβαση.
-            </p>
-            <p>
-              {municipalPayments > 0 && <>Από αυτά, τα {mil(municipalPayments)} αφορούν σε πληρωμές δήμων. </>}
-              {payroll.payments > 0 && <>Η μισθοδοσία προσωπικού είναι {num(payroll.payments)} πληρωμές από {num(payroll.bodies)} {payrollOnlyMunicipal ? 'δήμους' : 'φορείς'} ({amount(payroll.amount)}).</>}
-              {derived.payrollTotal > 0 && derived.payrollAugSep > derived.payrollTotal / 2 && <> Οι περισσότερες αναρτήθηκαν τον Αύγουστο και τον Σεπτέμβριο ({num(derived.payrollAugSep)} από τις {num(derived.payrollTotal)}).</>}
-              {vegetation.payments > 0 && <> Οι αντιπυρικές ζώνες, οι καθαρισμοί και τα κλαδέματα είναι {num(vegetation.payments)} πληρωμές ({amount(vegetation.amount)}).</>}
-              {rrf.payments > 0 && <> {rrf.payments === 1 ? 'Μία πληρωμή' : `${capitalize(count(rrf.payments, true))} πληρωμές`} του Υπουργείου Περιβάλλοντος και Ενέργειας για {rrf.payments === 1 ? 'έργο' : 'έργα'} του Ταμείου Ανάκαμψης {rrf.payments === 1 ? 'αντιστοιχεί' : 'αντιστοιχούν'} σε {amount(rrf.amount)}.</>}
-            </p>
-            <p>
-              {equipment.payments > 0 && <>Ο εξοπλισμός και η συντήρηση μέσων είναι {num(equipment.payments)} πληρωμές ({amount(equipment.amount)}){machinery.payments > 0 ? ` και οι μισθώσεις μηχανημάτων ${num(machinery.payments)} (${amount(machinery.amount)})` : ''}.</>}
-              {fuel.payments > 0 && <> Τα καύσιμα και τα λιπαντικά είναι μόνο {num(fuel.payments)} πληρωμές από {num(fuel.bodies)} φορείς ({amount(fuel.amount)}).</>}
+              {equipment.payments > 0 && <>{ui("Ο εξοπλισμός και η συντήρηση μέσων είναι ")}{num(equipment.payments)} {ui("πληρωμές (")}{amount(equipment.amount)}){machinery.payments > 0 ? ui(" και οι μισθώσεις μηχανημάτων {{v0}} ({{v1}})", { v0: num(machinery.payments), v1: amount(machinery.amount) }) : ''}.</>}
+              {fuel.payments > 0 && <> {ui("Τα καύσιμα και τα λιπαντικά είναι μόνο ")}{num(fuel.payments)} {ui("πληρωμές από ")}{num(fuel.bodies)} {ui("φορείς (")}{amount(fuel.amount)}).</>}
 
             </p>
             <ChartFrame
-              title={`Πληρωμές ${REPORT_YEAR} ανά κατηγορία`}
-              subtitle="Πληρωμές χωρίς σύνδεση με σύμβαση, ποσά χωρίς ΦΠΑ. Οι κατηγορίες προκύπτουν από το θέμα κάθε πληρωμής."
-              table={<DataTable caption="Πληρωμές ανά κατηγορία" columns={[{ key: 'label', label: 'Κατηγορία' }, { key: 'payments', label: 'Πληρωμές', numeric: true }, { key: 'amount', label: 'Ποσό χωρίς ΦΠΑ', numeric: true }, { key: 'rule', label: 'Κανόνας' }]}
-                rows={p.by_category.map(item => ({ label: item.label, payments: num(item.payments), amount: mil(item.amount), rule: item.rule }))} />}
-              note="Με γκρι: πληρωμές των οποίων το θέμα δεν περιγράφει τη δαπάνη."
+              title={ui("Πληρωμές {{v0}} ανά κατηγορία", { v0: REPORT_YEAR })}
+              subtitle={ui("Πληρωμές χωρίς σύνδεση με σύμβαση, ποσά χωρίς ΦΠΑ. Οι κατηγορίες προκύπτουν από το θέμα κάθε πληρωμής.")}
+              table={<DataTable caption={ui("Πληρωμές ανά κατηγορία")} columns={[{ key: 'label', label: ui("Κατηγορία") }, { key: 'payments', label: ui("Πληρωμές"), numeric: true }, { key: 'amount', label: ui("Ποσό χωρίς ΦΠΑ"), numeric: true }, { key: 'rule', label: ui("Κανόνας") }]}
+                rows={p.by_category.map(item => ({ label: ui(item.label), payments: num(item.payments), amount: mil(item.amount), rule: ui(item.rule) }))} />}
+              note={ui("Με γκρι: πληρωμές των οποίων το θέμα δεν περιγράφει τη δαπάνη.")}
             >
               <BarList items={categoryItems} color={COLORS.accent} mutedColor={COLORS.gray} />
             </ChartFrame>
           </Section>
 
-          <Section id="methodologia" eyebrow="Μεθοδολογία" title="Περιορισμοί και παραδοχές στην ανάλυση">
+          <Section id="methodologia" eyebrow={ui("Μεθοδολογία")} title={ui("Περιορισμοί και παραδοχές στην ανάλυση")}>
             <p>
-              Η ανάλυση για το διάστημα {shortDate(report.meta.period_start)}–{periodEnd} στηρίζεται σε {num(contracts.contracts)} ενεργές συμβάσεις και {num(p.records)} πράξεις «Οριστικοποίηση πληρωμής» της Διαύγειας που έχουν εντοπιστεί στη συλλογή μας.
-              {' '}Μετά τους ελέγχους ακυρώσεων και συνάφειας, καθώς και την αποφυγή διπλής καταμέτρησης με τις συμβάσεις, {num(p.counted)} πληρωμές προστίθενται στην εκτίμηση δαπανών.
-              {' '}Τα μεγέθη αυτά περιγράφουν τα στοιχεία που συγκεντρώσαμε και δεν αποτελούν το σύνολο των αναρτήσεων των δημόσιων φορέων.
-            </p>
+              {ui("Η ανάλυση για το διάστημα ")}{shortDate(report.meta.period_start)}–{periodEnd} {ui("στηρίζεται σε ")}{num(contracts.contracts)} {ui("ενεργές συμβάσεις και ")}{num(p.records)} {ui("πράξεις «Οριστικοποίηση πληρωμής» της Διαύγειας που έχουν εντοπιστεί στη συλλογή μας.")}{' '}{ui("Μετά τους ελέγχους ακυρώσεων και συνάφειας, καθώς και την αποφυγή διπλής καταμέτρησης με τις συμβάσεις, ")}{num(p.counted)} {ui("πληρωμές προστίθενται στην εκτίμηση δαπανών.")}{' '}{ui("Τα μεγέθη αυτά περιγράφουν τα στοιχεία που συγκεντρώσαμε και δεν αποτελούν το σύνολο των αναρτήσεων των δημόσιων φορέων.")}</p>
 
-            <h4>Πηγές και συλλογή στοιχείων</h4>
+            <h4>{ui("Πηγές και συλλογή στοιχείων")}</h4>
             <p>
-              Συλλέγουμε συμβάσεις από το <ExternalLink href={SOURCES.kimdis}>Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ)</ExternalLink>, με αναζητήσεις βάσει κωδικών CPV, δηλαδή της κοινής ταξινόμησης του αντικειμένου των δημόσιων συμβάσεων.
-              {' '}Για ευρείς κωδικούς, που καλύπτουν και άσχετες δραστηριότητες, εφαρμόζουμε επιπλέον έλεγχο συνάφειας στον τίτλο.
-              {' '}Στη <ExternalLink href={SOURCES.diavgeia}>Διαύγεια</ExternalLink> αναζητούμε λέξεις και παραλλαγές τους, όπως «πυροπροστασία», «αποψίλωση», «δασοπροστασία» και «αντιπυρική», και εξετάζουμε τους τίτλους και, όπου έχει εξαχθεί αναγνώσιμο κείμενο, τα συνοδευτικά έγγραφα.
-              {' '}Εφαρμόζουμε επίσης κανόνες αποκλεισμού για άσχετους φορείς και αντικείμενα, όπως νοσοκομεία, σχολεία και δαπάνες πυροσβεστήρων.
-            </p>
+              {ui("Συλλέγουμε συμβάσεις από το ")}<ExternalLink href={SOURCES.kimdis}>{ui("Κεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων (ΚΗΜΔΗΣ)")}</ExternalLink>{ui(", με αναζητήσεις βάσει κωδικών CPV, δηλαδή της κοινής ταξινόμησης του αντικειμένου των δημόσιων συμβάσεων.")}{' '}{ui("Για ευρείς κωδικούς, που καλύπτουν και άσχετες δραστηριότητες, εφαρμόζουμε επιπλέον έλεγχο συνάφειας στον τίτλο.")}{' '}{ui("Στη ")}<ExternalLink href={SOURCES.diavgeia}>{ui("Διαύγεια")}</ExternalLink> {ui("αναζητούμε λέξεις και παραλλαγές τους, όπως ")}<span lang="el">«πυροπροστασία», «αποψίλωση», «δασοπροστασία» και «αντιπυρική»</span>{ui(", και εξετάζουμε τους τίτλους και, όπου έχει εξαχθεί αναγνώσιμο κείμενο, τα συνοδευτικά έγγραφα.")}{' '}{ui("Εφαρμόζουμε επίσης κανόνες αποκλεισμού για άσχετους φορείς και αντικείμενα, όπως νοσοκομεία, σχολεία και δαπάνες πυροσβεστήρων.")}</p>
             <p>
-              Στην ανάλυση πληρωμών χρησιμοποιούμε τις πράξεις «Οριστικοποίηση πληρωμής». Εγκρίσεις δαπανών, αναλήψεις υποχρέωσης και αποφάσεις ανάθεσης δεν λογίζονται από μόνες τους ως πληρωμές.
-              {' '}Τα ποσά χρηματοδότησης των δήμων προέρχονται χωριστά από τις αποφάσεις κατανομής του Υπουργείου Εσωτερικών μέσω των Κεντρικών Αυτοτελών Πόρων.
-            </p>
+              {ui("Στην ανάλυση πληρωμών χρησιμοποιούμε τις πράξεις «Οριστικοποίηση πληρωμής». Εγκρίσεις δαπανών, αναλήψεις υποχρέωσης και αποφάσεις ανάθεσης δεν λογίζονται από μόνες τους ως πληρωμές.")}{' '}{ui("Τα ποσά χρηματοδότησης των δήμων προέρχονται χωριστά από τις αποφάσεις κατανομής του Υπουργείου Εσωτερικών μέσω των Κεντρικών Αυτοτελών Πόρων.")}</p>
 
-            <h4>Πώς μετράμε τις συμβάσεις</h4>
+            <h4>{ui("Πώς μετράμε τις συμβάσεις")}</h4>
             <p>
-              Εξαιρούμε τις ακυρωμένες συμβάσεις και κρατάμε μία εγγραφή ανά σύμβαση, με βάση τον μοναδικό κωδικό της (ΑΔΑΜ).
-              {' '}Όταν υπάρχουν διαδοχικές εκδοχές ή τροποποιήσεις, κρατάμε την τελευταία ενεργή εκδοχή και δεν αθροίζουμε την αρχική με εκείνη που την αντικαθιστά.
-              {' '}Για την περίοδο της αναφοράς, εξαιρούνται {num(report.dataQuality.superseded_or_duplicate_report_year_contract_rows)} συμβάσεις που είτε είχαν τροποποιηθεί από νεότερη σύμβαση, είτε αποτελούσαν διπλές καταχωρήσεις.
-            </p>
+              {ui("Εξαιρούμε τις ακυρωμένες συμβάσεις και κρατάμε μία εγγραφή ανά σύμβαση, με βάση τον μοναδικό κωδικό της (ΑΔΑΜ).")}{' '}{ui("Όταν υπάρχουν διαδοχικές εκδοχές ή τροποποιήσεις, κρατάμε την τελευταία ενεργή εκδοχή και δεν αθροίζουμε την αρχική με εκείνη που την αντικαθιστά.")}{' '}{ui("Για την περίοδο της αναφοράς, εξαιρούνται ")}{num(report.dataQuality.superseded_or_duplicate_report_year_contract_rows)} {ui("συμβάσεις που είτε είχαν τροποποιηθεί από νεότερη σύμβαση, είτε αποτελούσαν διπλές καταχωρήσεις.")}</p>
             <p>
-              Η ένταξη μιας σύμβασης στο έτος και στον μήνα γίνεται με την ημερομηνία υπογραφής της. Ως αξία μιας σύμβασης εννούμε τη συμβατική αξία χωρίς ΦΠΑ. Η υπογραφή μιας σύμβασης δεν συνεπάγεται οτι η εργασία που περιγράφει έχει ολοκληρωθεί ή οτι το ποσό έχει πράγματι καταβληθεί.
-              {' '}Στις συμφωνίες-πλαίσιο, η αξία μιας σύμβασης μπορεί να εκφράζει το ανώτατο διαθέσιμο ποσό που μπορεί να δαπανηθεί.
-              {' '}Στις συγκρίσεις με προηγούμενα χρόνια χρησιμοποιούμε το ίδιο ημερολογιακό διάστημα (π.χ. εάν εξετάζουμε το διάστημα 1/1/2026 έως 23/10/2026, η σύγκριση με το προηγούμενο έτος θα αφορά το διάστημα 1/1/2025 - 23/10/2025). Η υπογραφή πριν ή μετά την 1η Μαΐου δείχνει τον χρόνο της συμβατικής δέσμευσης και δεν προσδιορίζει από μόνη της πότε εκτελέστηκαν οι εργασίες.
-            </p>
+              {ui("Η ένταξη μιας σύμβασης στο έτος και στον μήνα γίνεται με την ημερομηνία υπογραφής της. Ως αξία μιας σύμβασης εννούμε τη συμβατική αξία χωρίς ΦΠΑ. Η υπογραφή μιας σύμβασης δεν συνεπάγεται οτι η εργασία που περιγράφει έχει ολοκληρωθεί ή οτι το ποσό έχει πράγματι καταβληθεί.")}{' '}{ui("Στις συμφωνίες-πλαίσιο, η αξία μιας σύμβασης μπορεί να εκφράζει το ανώτατο διαθέσιμο ποσό που μπορεί να δαπανηθεί.")}{' '}{ui("Στις συγκρίσεις με προηγούμενα χρόνια χρησιμοποιούμε το ίδιο ημερολογιακό διάστημα (π.χ. εάν εξετάζουμε το διάστημα 1/1/2026 έως 23/10/2026, η σύγκριση με το προηγούμενο έτος θα αφορά το διάστημα 1/1/2025 - 23/10/2025). Η υπογραφή πριν ή μετά την 1η Μαΐου δείχνει τον χρόνο της συμβατικής δέσμευσης και δεν προσδιορίζει από μόνη της πότε εκτελέστηκαν οι εργασίες.")}</p>
 
-            <h4>Πληρωμές, ακυρώσεις και κατηγοριοποίηση</h4>
+            <h4>{ui("Πληρωμές, ακυρώσεις και κατηγοριοποίηση")}</h4>
             <p>
-              Στις πληρωμές που εντοπίζουμε στη Διαύγεια, θεωρούμε ως ημερομηνία πληρωμής την ημερομηνία ανάρτησης της απόφασης στη Διαύγεια, η οποία μπορεί να απέχει από την ημερομηνία των εργασιών ή του ίδιου του εντάλματος.
-              {' '}Όταν μία πράξη περιλαμβάνει περισσότερα ποσά δικαιούχων, κατά κανόνα τα αθροίζουμε. Οι συγκεντρωτικές καταστάσεις χρειάζονται ιδιαίτερο έλεγχο, επειδή μπορεί να περιλαμβάνουν και άσχετες πληρωμές. Όταν εντοπίζουμε τέτοια έγγραφα, διορθώνουμε το ποσό της πληρωμής ώστε να αντανακλά μόνο την πληρωμή για εργασία που σχετίζεται με την πυροπροστασία (π.χ. 9ΥΡ77Λ7-ΥΚ9).
-            </p>
+              {ui("Στις πληρωμές που εντοπίζουμε στη Διαύγεια, θεωρούμε ως ημερομηνία πληρωμής την ημερομηνία ανάρτησης της απόφασης στη Διαύγεια, η οποία μπορεί να απέχει από την ημερομηνία των εργασιών ή του ίδιου του εντάλματος.")}{' '}{ui("Όταν μία πράξη περιλαμβάνει περισσότερα ποσά δικαιούχων, κατά κανόνα τα αθροίζουμε. Οι συγκεντρωτικές καταστάσεις χρειάζονται ιδιαίτερο έλεγχο, επειδή μπορεί να περιλαμβάνουν και άσχετες πληρωμές. Όταν εντοπίζουμε τέτοια έγγραφα, διορθώνουμε το ποσό της πληρωμής ώστε να αντανακλά μόνο την πληρωμή για εργασία που σχετίζεται με την πυροπροστασία (π.χ. 9ΥΡ77Λ7-ΥΚ9).")}</p>
             <p>
-              Δεν προσμετράμε στην ανάλυση ακυρωτικές πράξεις, ενώ αφαιρούμε και την αρχική πληρωμή όταν εντοπίζεται ότι ακυρώθηκε.
-              {' '}Η αντιστοίχιση γίνεται από τον ΑΔΑ που αναφέρει η ακυρωτική πράξη ή, όταν δεν υπάρχει τέτοια αναφορά, από προγενέστερη πληρωμή του ίδιου φορέα με το ίδιο απόλυτο ποσό. Η δεύτερη περίπτωση αποτελεί παραδοχή της ανάλυσης.
-            </p>
+              {ui("Δεν προσμετράμε στην ανάλυση ακυρωτικές πράξεις, ενώ αφαιρούμε και την αρχική πληρωμή όταν εντοπίζεται ότι ακυρώθηκε.")}{' '}{ui("Η αντιστοίχιση γίνεται από τον ΑΔΑ που αναφέρει η ακυρωτική πράξη ή, όταν δεν υπάρχει τέτοια αναφορά, από προγενέστερη πληρωμή του ίδιου φορέα με το ίδιο απόλυτο ποσό. Η δεύτερη περίπτωση αποτελεί παραδοχή της ανάλυσης.")}</p>
             <p>
-              Οι επιμέρους κατηγορίες δαπανών προκύπτουν από λέξεις στο θέμα της απόφασης, με ειδικές διορθώσεις όπου έχει ελεγχθεί το έγγραφο.
-              {' '}Οι «Λοιπές δαπάνες πυροπροστασίας» συγκεντρώνουν όσες δεν κατατάσσονται στις ειδικότερες κατηγορίες· η ονομασία αυτή δεν περιγράφει ένα ενιαίο είδος εργασίας.
-              {' '}Για να προσμετρηθεί μισθοδοσία στην αναφορά απαιτούνται ταυτόχρονα ενδείξεις μισθολογικής δαπάνης και αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, πολιτική προστασία ή έκτακτες ανάγκες στον τίτλο/περιγραφή.
-              {' '}Με αυτό το πρόσθετο κριτήριο εξαιρούνται από την αναφορά {num(p.report_excluded_payroll.payments)} πράξεις.
-            </p>
+              {ui("Οι επιμέρους κατηγορίες δαπανών προκύπτουν από λέξεις στο θέμα της απόφασης, με ειδικές διορθώσεις όπου έχει ελεγχθεί το έγγραφο.")}{' '}{ui("Οι «Λοιπές δαπάνες πυροπροστασίας» συγκεντρώνουν όσες δεν κατατάσσονται στις ειδικότερες κατηγορίες· η ονομασία αυτή δεν περιγράφει ένα ενιαίο είδος εργασίας.")}{' '}{ui("Για να προσμετρηθεί μισθοδοσία στην αναφορά απαιτούνται ταυτόχρονα ενδείξεις μισθολογικής δαπάνης και αναφορά σε πυροπροστασία, δασοπροστασία, πυρασφάλεια, πολιτική προστασία ή έκτακτες ανάγκες στον τίτλο/περιγραφή.")}{' '}{ui("Με αυτό το πρόσθετο κριτήριο εξαιρούνται από την αναφορά ")}{num(p.report_excluded_payroll.payments)} {ui("πράξεις.")}</p>
 
-            <h4>Συνδέσεις Διαύγειας–συμβάσεων και διπλή καταμέτρηση</h4>
+            <h4>{ui("Συνδέσεις Διαύγειας–συμβάσεων και διπλή καταμέτρηση")}</h4>
             <p>
-              Συνδέουμε πράξεις της Διαύγειας με συμβάσεις του ΚΗΜΔΗΣ μέσω των αναγνωριστικών τους, του ΑΔΑ και του ΑΔΑΜ, όταν προκύπτει τεκμηριωμένη αναφορά από τα στοιχεία ή τα έγγραφα και έχει καταγραφεί η αντίστοιχη σύνδεση.
-              {' '}Η αναφορά χρησιμοποιεί αυτές τις καταγεγραμμένες συνδέσεις και δεν συμπεραίνει ότι δύο εγγραφές συνδέονται μόνο επειδή έχουν ίδιο ανάδοχο ή ίδιο ποσό.
-              {' '}Οι {num(p.linked)} έγκυρες πληρωμές με σύνδεση σε σύμβαση δεν προστίθενται ξανά στο σύνολο.
-              {' '}Η εκτίμηση προκύπτει έτσι από την αξία των συμβάσεων της περιόδου συν τις {num(p.counted)} πληρωμές χωρίς καταγεγραμμένη σύνδεση.
-            </p>
+              {ui("Συνδέουμε πράξεις της Διαύγειας με συμβάσεις του ΚΗΜΔΗΣ μέσω των αναγνωριστικών τους, του ΑΔΑ και του ΑΔΑΜ, όταν προκύπτει τεκμηριωμένη αναφορά από τα στοιχεία ή τα έγγραφα και έχει καταγραφεί η αντίστοιχη σύνδεση.")}{' '}{ui("Η αναφορά χρησιμοποιεί αυτές τις καταγεγραμμένες συνδέσεις και δεν συμπεραίνει ότι δύο εγγραφές συνδέονται μόνο επειδή έχουν ίδιο ανάδοχο ή ίδιο ποσό.")}{' '}{ui("Οι ")}{num(p.linked)} {ui("έγκυρες πληρωμές με σύνδεση σε σύμβαση δεν προστίθενται ξανά στο σύνολο.")}{' '}{ui("Η εκτίμηση προκύπτει έτσι από την αξία των συμβάσεων της περιόδου συν τις ")}{num(p.counted)} {ui("πληρωμές χωρίς καταγεγραμμένη σύνδεση.")}</p>
             <p>
-              Η αντιστοίχιση παραμένει ελλιπής: για {num(p.report_year_contracts_with_linked_payment)} από τις {num(contracts.contracts)} συμβάσεις του {REPORT_YEAR} έχει εντοπιστεί συνδεδεμένη πληρωμή. Οι συμβάσεις αυτές αντιπροσωπεύουν το {pct(p.report_year_contracts_with_linked_payment_value_pct)} της συμβατικής αξίας.
-              {p.subject_refs_not_in_db > 0 && <> Επιπλέον, {num(p.subject_refs_not_in_db)} πληρωμές αναφέρουν κωδικούς συμβάσεων που δεν υπάρχουν στη συλλογή μας.</>}
-              {' '}Η απουσία σύνδεσης δεν αποδεικνύει ότι μια σύμβαση δεν πληρώθηκε ή ότι μια πληρωμή αφορά διαφορετική δαπάνη. Συνεπώς, παραμένει ενδεχόμενο διπλής καταμέτρησης όπου η σύνδεση δεν έχει εντοπιστεί.
-            </p>
+              {ui("Η αντιστοίχιση παραμένει ελλιπής: για ")}{num(p.report_year_contracts_with_linked_payment)} {ui("από τις ")}{num(contracts.contracts)} {ui("συμβάσεις του ")}{REPORT_YEAR} {ui("έχει εντοπιστεί συνδεδεμένη πληρωμή. Οι συμβάσεις αυτές αντιπροσωπεύουν το ")}{pct(p.report_year_contracts_with_linked_payment_value_pct)} {ui("της συμβατικής αξίας.")}{p.subject_refs_not_in_db > 0 && <> {ui("Επιπλέον, ")}{num(p.subject_refs_not_in_db)} {ui("πληρωμές αναφέρουν κωδικούς συμβάσεων που δεν υπάρχουν στη συλλογή μας.")}</>}
+              {' '}{ui("Η απουσία σύνδεσης δεν αποδεικνύει ότι μια σύμβαση δεν πληρώθηκε ή ότι μια πληρωμή αφορά διαφορετική δαπάνη. Συνεπώς, παραμένει ενδεχόμενο διπλής καταμέτρησης όπου η σύνδεση δεν έχει εντοπιστεί.")}</p>
 
-            <h4>Ποσά και ΦΠΑ</h4>
+            <h4>{ui("Ποσά και ΦΠΑ")}</h4>
             <p>
-              Παρουσιάζουμε τα συνολικά ποσά χωρίς ΦΠΑ. Για τις συμβάσεις χρησιμοποιούμε τη δηλωμένη αξία χωρίς ΦΠΑ του ΚΗΜΔΗΣ.
-              {' '}Για τις πληρωμές της Διαύγειας θεωρούμε κατά κανόνα ότι το καταχωρισμένο ποσό περιλαμβάνει ΦΠΑ {pct(report.meta.vat_rate * 100)} και το διαιρούμε με {(1 + report.meta.vat_rate).toLocaleString('el-GR', { maximumFractionDigits: 2 })}.
-              {' '}Δεν αφαιρούμε ΦΠΑ από μισθοδοσία και από δαπάνες που αναγνωρίζονται ως εισφορές, κρατήσεις, αποδόσεις φόρων, επιχορηγήσεις, παράβολα, ανταποδοτικά τέλη, οδοιπορικά ή ημερήσιες αποζημιώσεις. Η αναφορά σε επιχορήγηση μαζί με προμήθεια αντιμετωπίζεται ως προμήθεια με ΦΠΑ.
-              {' '}Η αναγνώριση βασίζεται στο θέμα της απόφασης. Ο γενικός συντελεστής είναι παραδοχή και δεν επιβεβαιώνεται ανά παραστατικό· αν ισχύει μειωμένος συντελεστής ή απαλλαγή που δεν αναγνωρίστηκε, η καθαρή αξία υποεκτιμάται.
-            </p>
+              {ui("Παρουσιάζουμε τα συνολικά ποσά χωρίς ΦΠΑ. Για τις συμβάσεις χρησιμοποιούμε τη δηλωμένη αξία χωρίς ΦΠΑ του ΚΗΜΔΗΣ.")}{' '}{ui("Για τις πληρωμές της Διαύγειας θεωρούμε κατά κανόνα ότι το καταχωρισμένο ποσό περιλαμβάνει ΦΠΑ ")}{pct(report.meta.vat_rate * 100)} {ui("και το διαιρούμε με ")}{(1 + report.meta.vat_rate).toLocaleString(ui.locale, { maximumFractionDigits: 2 })}.
+              {' '}{ui("Δεν αφαιρούμε ΦΠΑ από μισθοδοσία και από δαπάνες που αναγνωρίζονται ως εισφορές, κρατήσεις, αποδόσεις φόρων, επιχορηγήσεις, παράβολα, ανταποδοτικά τέλη, οδοιπορικά ή ημερήσιες αποζημιώσεις. Η αναφορά σε επιχορήγηση μαζί με προμήθεια αντιμετωπίζεται ως προμήθεια με ΦΠΑ.")}{' '}{ui("Η αναγνώριση βασίζεται στο θέμα της απόφασης. Ο γενικός συντελεστής είναι παραδοχή και δεν επιβεβαιώνεται ανά παραστατικό· αν ισχύει μειωμένος συντελεστής ή απαλλαγή που δεν αναγνωρίστηκε, η καθαρή αξία υποεκτιμάται.")}</p>
 
-            <h4>Έλεγχοι και μόνιμες διορθώσεις (overrides)</h4>
+            <h4>{ui("Έλεγχοι και μόνιμες διορθώσεις (overrides)")}</h4>
             <p>
-              Όταν εντοπίζουμε ασυμφωνία, συγκρίνουμε τα διαθέσιμα πεδία με το επίσημο έγγραφο και καταγράφουμε την ελεγμένη διόρθωση ανά ΑΔΑ ή ΑΔΑΜ.
-              {' '}Αυτές οι μόνιμες εξαιρέσεις διορθώνουν συγκεκριμένα ποσά ή κατηγορίες και υπερισχύουν των αντίστοιχων αυτόματων τιμών, ώστε μια νέα εισαγωγή να μην επαναφέρει το ίδιο σφάλμα.
-              {' '}Έχουν διορθωθεί λανθασμένες τάξεις μεγέθους στα ποσά και περιπτώσεις παρατάσεων συμβάσεων που δεν δημιουργούσαν πρόσθετη δαπάνη.
-            </p>
+              {ui("Όταν εντοπίζουμε ασυμφωνία, συγκρίνουμε τα διαθέσιμα πεδία με το επίσημο έγγραφο και καταγράφουμε την ελεγμένη διόρθωση ανά ΑΔΑ ή ΑΔΑΜ.")}{' '}{ui("Αυτές οι μόνιμες εξαιρέσεις διορθώνουν συγκεκριμένα ποσά ή κατηγορίες και υπερισχύουν των αντίστοιχων αυτόματων τιμών, ώστε μια νέα εισαγωγή να μην επαναφέρει το ίδιο σφάλμα.")}{' '}{ui("Έχουν διορθωθεί λανθασμένες τάξεις μεγέθους στα ποσά και περιπτώσεις παρατάσεων συμβάσεων που δεν δημιουργούσαν πρόσθετη δαπάνη.")}</p>
             <p>
-              Ενδεικτικά παραδείγματα ελέγχων της συλλογής, συμπεριλαμβανομένων παλαιότερων ετών:
-            </p>
+              {ui("Ενδεικτικά παραδείγματα ελέγχων της συλλογής, συμπεριλαμβανομένων παλαιότερων ετών:")}</p>
             <ul className="yr-bullets">
               <li>
-                <strong>Ποσό περίπου 100 φορές μεγαλύτερο στη Διαύγεια.</strong> Στα δομημένα δεδομένα της απόφασης <ExternalLink href="https://diavgeia.gov.gr/doc/Ψ94Σ4653Π8-ΦΚΕ">Ψ94Σ4653Π8-ΦΚΕ</ExternalLink> του Υπουργείου Περιβάλλοντος και Ενέργειας εμφανιζόταν ποσό 17.882.628,00 €, ενώ το επίσημο έγγραφο αναφέρει εντολή πληρωμής 178.826,27 €. Κρατήσαμε το ποσό του εγγράφου, πριν από την αφαίρεση ΦΠΑ για την ανάλυση.
-              </li>
+                <strong>{ui("Ποσό περίπου 100 φορές μεγαλύτερο στη Διαύγεια.")}</strong> {ui("Στα δομημένα δεδομένα της απόφασης ")}<ExternalLink href="https://diavgeia.gov.gr/doc/Ψ94Σ4653Π8-ΦΚΕ">Ψ94Σ4653Π8-ΦΚΕ</ExternalLink> {ui("του Υπουργείου Περιβάλλοντος και Ενέργειας εμφανιζόταν ποσό 17.882.628,00 €, ενώ το επίσημο έγγραφο αναφέρει εντολή πληρωμής 178.826,27 €. Κρατήσαμε το ποσό του εγγράφου, πριν από την αφαίρεση ΦΠΑ για την ανάλυση.")}</li>
               <li>
-                <strong>Δεύτερη αντίστοιχη διόρθωση στη Διαύγεια.</strong> Στην απόφαση <ExternalLink href="https://diavgeia.gov.gr/doc/ΨΞΩΥ4653Π8-ΡΓΘ">ΨΞΩΥ4653Π8-ΡΓΘ</ExternalLink> του ίδιου υπουργείου, το πεδίο ποσού έδινε 5.489.497,00 €, αντί των 54.894,97 € της εντολής πληρωμής στο έγγραφο — επίσης περίπου 100 φορές μεγαλύτερο ποσό.
-              </li>
+                <strong>{ui("Δεύτερη αντίστοιχη διόρθωση στη Διαύγεια.")}</strong> {ui("Στην απόφαση ")}<ExternalLink href="https://diavgeia.gov.gr/doc/ΨΞΩΥ4653Π8-ΡΓΘ">ΨΞΩΥ4653Π8-ΡΓΘ</ExternalLink> {ui("του ίδιου υπουργείου, το πεδίο ποσού έδινε 5.489.497,00 €, αντί των 54.894,97 € της εντολής πληρωμής στο έγγραφο — επίσης περίπου 100 φορές μεγαλύτερο ποσό.")}</li>
               <li>
-                <strong>Ποσό 1.000 φορές μεγαλύτερο στο ΚΗΜΔΗΣ.</strong> Για τη σύμβαση <ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019592516">26SYMV019592516</ExternalLink> του Δήμου Μεγαρέων, για απομάκρυνση υπολειμμάτων βλάστησης στη Νέα Πέραμο, τα αρχικά δεδομένα έδιναν 29.920.000,00 € χωρίς ΦΠΑ. Η υπογεγραμμένη σύμβαση ορίζει 29.920,00 € χωρίς ΦΠΑ, ποσό που χρησιμοποιούμε μετά τη διόρθωση.
-              </li>
+                <strong>{ui("Ποσό 1.000 φορές μεγαλύτερο στο ΚΗΜΔΗΣ.")}</strong> {ui("Για τη σύμβαση ")}<ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/26SYMV019592516">26SYMV019592516</ExternalLink> {ui("του Δήμου Μεγαρέων, για απομάκρυνση υπολειμμάτων βλάστησης στη Νέα Πέραμο, τα αρχικά δεδομένα έδιναν 29.920.000,00 € χωρίς ΦΠΑ. Η υπογεγραμμένη σύμβαση ορίζει 29.920,00 € χωρίς ΦΠΑ, ποσό που χρησιμοποιούμε μετά τη διόρθωση.")}</li>
               <li>
-                <strong>Συνολική χρηματοδότηση αντί για αξία σύμβασης.</strong> Στη σύμβαση <ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015544651#page=6">24SYMV015544651</ExternalLink>, για το τμήμα της Σπάρτης, είχαν καταχωριστεί 31.024.697,04 € χωρίς ΦΠΑ. Το ποσό αυτό αφορά τη συνεισφορά του Ταμείου Ανάκαμψης στον συνολικό προϋπολογισμό του έργου. Το άρθρο 5.1 της σύμβασης ορίζει την αμοιβή του συγκεκριμένου αναδόχου σε 4.003.194,80 € χωρίς ΦΠΑ, την οποία και προσμετράμε.
-              </li>
+                <strong>{ui("Συνολική χρηματοδότηση αντί για αξία σύμβασης.")}</strong> {ui("Στη σύμβαση ")}<ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/24SYMV015544651#page=6">24SYMV015544651</ExternalLink>{ui(", για το τμήμα της Σπάρτης, είχαν καταχωριστεί 31.024.697,04 € χωρίς ΦΠΑ. Το ποσό αυτό αφορά τη συνεισφορά του Ταμείου Ανάκαμψης στον συνολικό προϋπολογισμό του έργου. Το άρθρο 5.1 της σύμβασης ορίζει την αμοιβή του συγκεκριμένου αναδόχου σε 4.003.194,80 € χωρίς ΦΠΑ, την οποία και προσμετράμε.")}</li>
               <li>
-                <strong>Παρατάσεις χωρίς πρόσθετο κόστος.</strong> Οι πράξεις <ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017249656">25SYMV017249656</ExternalLink> και <ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017327213">25SYMV017327213</ExternalLink> αφορούν παρατάσεις της ίδιας σύμβασης χωρίς αύξηση της αξίας της. Στις διορθώσεις καταγράφεται μηδενική πρόσθετη δαπάνη, ώστε η παράταση να μη δημιουργεί δεύτερη χρέωση του αρχικού ποσού.
-              </li>
+                <strong>{ui("Παρατάσεις χωρίς πρόσθετο κόστος.")}</strong> {ui("Οι πράξεις ")}<ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017249656">25SYMV017249656</ExternalLink> {ui("και ")}<ExternalLink href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/contract/attachment/25SYMV017327213">25SYMV017327213</ExternalLink> {ui("αφορούν παρατάσεις της ίδιας σύμβασης χωρίς αύξηση της αξίας της. Στις διορθώσεις καταγράφεται μηδενική πρόσθετη δαπάνη, ώστε η παράταση να μη δημιουργεί δεύτερη χρέωση του αρχικού ποσού.")}</li>
               <li>
-                <strong>Κωδικός δαπάνης αντί για ποσό.</strong> Στην απόφαση <ExternalLink href="https://diavgeia.gov.gr/doc/Ψ86Ε46Ψ844-ΓΥ4">Ψ86Ε46Ψ844-ΓΥ4</ExternalLink> του Πράσινου Ταμείου είχε μεταφερθεί ως ποσό ένας κωδικός δαπάνης (ΚΑΕ), αντί για το ποσό του εντάλματος.
-              </li>
+                <strong>{ui("Κωδικός δαπάνης αντί για ποσό.")}</strong> {ui("Στην απόφαση ")}<ExternalLink href="https://diavgeia.gov.gr/doc/Ψ86Ε46Ψ844-ΓΥ4">Ψ86Ε46Ψ844-ΓΥ4</ExternalLink> {ui("του Πράσινου Ταμείου είχε μεταφερθεί ως ποσό ένας κωδικός δαπάνης (ΚΑΕ), αντί για το ποσό του εντάλματος.")}</li>
               <li>
-                <strong>Επιλογή της σχετικής πληρωμής από συγκεντρωτική κατάσταση.</strong> Στην απόφαση <ExternalLink href="https://diavgeia.gov.gr/doc/9ΥΡ77Λ7-ΥΚ9">9ΥΡ77Λ7-ΥΚ9</ExternalLink> της Περιφέρειας Αττικής κρατήσαμε από τη συγκεντρωτική κατάσταση μόνο την πληρωμή που αφορά αποψίλωση για πρόληψη πυρκαγιών και τη μεταφέραμε στην αντίστοιχη κατηγορία.
-              </li>
+                <strong>{ui("Επιλογή της σχετικής πληρωμής από συγκεντρωτική κατάσταση.")}</strong> {ui("Στην απόφαση ")}<ExternalLink href="https://diavgeia.gov.gr/doc/9ΥΡ77Λ7-ΥΚ9">9ΥΡ77Λ7-ΥΚ9</ExternalLink> {ui("της Περιφέρειας Αττικής κρατήσαμε από τη συγκεντρωτική κατάσταση μόνο την πληρωμή που αφορά αποψίλωση για πρόληψη πυρκαγιών και τη μεταφέραμε στην αντίστοιχη κατηγορία.")}</li>
             </ul>
             <p>
-              Εγγραφές που διαπιστώνεται ότι βρίσκονται εκτός του αντικειμένου αφαιρούνται και αποκλείονται από επόμενες εισαγωγές. Ο έλεγχος των εγγράφων δεν έχει ολοκληρωθεί για όλο το υλικό.
-            </p>
+              {ui("Εγγραφές που διαπιστώνεται ότι βρίσκονται εκτός του αντικειμένου αφαιρούνται και αποκλείονται από επόμενες εισαγωγές. Ο έλεγχος των εγγράφων δεν έχει ολοκληρωθεί για όλο το υλικό.")}</p>
 
-            <h4>Τι δεν μπορούν να δείξουν με ακρίβεια τα δεδομένα</h4>
+            <h4>{ui("Τι δεν μπορούν να δείξουν με ακρίβεια τα δεδομένα")}</h4>
             <p>
-              Λανθασμένα ποσά, ελλιπής κωδικοποίηση των εργασιών, ασαφείς τίτλοι και καθυστερημένες αναρτήσεις δυσκολεύουν την παρακολούθηση της ροής δαπανών κάθε φορέα.
-              {' '}Οι αναζητήσεις με κωδικούς και λέξεις μπορεί να παραλείπουν σχετικές δαπάνες με διαφορετική περιγραφή ή να περιλαμβάνουν δαπάνες που χρειάζονται περαιτέρω έλεγχο συνάφειας.
-              {' '}Δεν είναι επομένως δυνατό να πιστοποιήσουμε από αυτή τη συλλογή πώς δαπανήθηκε το σύνολο της χρηματοδότησης κάθε δήμου ή το πλήρες κόστος της δασικής πυροπροστασίας.
-              {' '}Η εκτίμηση συνδυάζει συμβατικές δεσμεύσεις και καταχωρισμένες πληρωμές και δεν αποτελεί πλήρη ταμειακό απολογισμό του έτους.
-              {' '}Όπου λείπει το ποσό, μια εγγραφή μπορεί να περιλαμβάνεται στο πλήθος χωρίς να προσθέτει αξία στο σύνολο.
-            </p>
+              {ui("Λανθασμένα ποσά, ελλιπής κωδικοποίηση των εργασιών, ασαφείς τίτλοι και καθυστερημένες αναρτήσεις δυσκολεύουν την παρακολούθηση της ροής δαπανών κάθε φορέα.")}{' '}{ui("Οι αναζητήσεις με κωδικούς και λέξεις μπορεί να παραλείπουν σχετικές δαπάνες με διαφορετική περιγραφή ή να περιλαμβάνουν δαπάνες που χρειάζονται περαιτέρω έλεγχο συνάφειας.")}{' '}{ui("Δεν είναι επομένως δυνατό να πιστοποιήσουμε από αυτή τη συλλογή πώς δαπανήθηκε το σύνολο της χρηματοδότησης κάθε δήμου ή το πλήρες κόστος της δασικής πυροπροστασίας.")}{' '}{ui("Η εκτίμηση συνδυάζει συμβατικές δεσμεύσεις και καταχωρισμένες πληρωμές και δεν αποτελεί πλήρη ταμειακό απολογισμό του έτους.")}{' '}{ui("Όπου λείπει το ποσό, μια εγγραφή μπορεί να περιλαμβάνεται στο πλήθος χωρίς να προσθέτει αξία στο σύνολο.")}</p>
             <p>
-              Πρόσθετη δυσκολία είναι η ασυνέπεια στις ονομασίες και στη γεωγραφική αντιστοίχιση των φορέων. Οι πηγές χρησιμοποιούν άλλοτε νομούς και άλλοτε περιφερειακές ενότητες, ενώ οι δήμοι δεν εμφανίζονται πάντα με την ίδια ονομασία ή γεωγραφική κάλυψη.
-              {' '}Για παράδειγμα, στοιχεία για τον Δήμο Δυτικής Λέσβου και τον Δήμο Μυτιλήνης χρειάζεται να αντιστοιχιστούν με την ενιαία καταχώριση «Λέσβος» που υπάρχει σε άλλο μέρος των δεδομένων.
-              {' '}Για να συγκρίνουμε χρηματοδοτήσεις, συμβάσεις και πληρωμές, αντιστοιχίζουμε τις διαφορετικές ονομασίες σε κοινές γεωγραφικές ενότητες. Όπου τα στοιχεία παραμένουν ενοποιημένα, η κατανομή των ποσών ανά σημερινό δήμο δεν μπορεί να γίνει με ασφάλεια χωρίς πρόσθετη τεκμηρίωση.
-            </p>
+              {ui("Πρόσθετη δυσκολία είναι η ασυνέπεια στις ονομασίες και στη γεωγραφική αντιστοίχιση των φορέων. Οι πηγές χρησιμοποιούν άλλοτε νομούς και άλλοτε περιφερειακές ενότητες, ενώ οι δήμοι δεν εμφανίζονται πάντα με την ίδια ονομασία ή γεωγραφική κάλυψη.")}{' '}{ui("Για παράδειγμα, στοιχεία για τον Δήμο Δυτικής Λέσβου και τον Δήμο Μυτιλήνης χρειάζεται να αντιστοιχιστούν με την ενιαία καταχώριση «Λέσβος» που υπάρχει σε άλλο μέρος των δεδομένων.")}{' '}{ui("Για να συγκρίνουμε χρηματοδοτήσεις, συμβάσεις και πληρωμές, αντιστοιχίζουμε τις διαφορετικές ονομασίες σε κοινές γεωγραφικές ενότητες. Όπου τα στοιχεία παραμένουν ενοποιημένα, η κατανομή των ποσών ανά σημερινό δήμο δεν μπορεί να γίνει με ασφάλεια χωρίς πρόσθετη τεκμηρίωση.")}</p>
             <p>
-              {report.meta.year_complete ? `Η αναφορά καλύπτει ολόκληρο το ${REPORT_YEAR}.` : `Η αναφορά ενημερώνεται καθημερινά έως το τέλος του ${REPORT_YEAR}.`}
-              {' '}Τελευταία ενημέρωση: {updatedLabel}. Κάθε έκδοση αποτυπώνει τη συλλογή εκείνης της στιγμής και μπορεί να αναθεωρηθεί με νέες αναρτήσεις, συνδέσεις ή ελεγμένες διορθώσεις.
-            </p>
+              {report.meta.year_complete ? ui("Η αναφορά καλύπτει ολόκληρο το {{v0}}.", { v0: REPORT_YEAR }) : ui("Η αναφορά ενημερώνεται καθημερινά έως το τέλος του {{v0}}.", { v0: REPORT_YEAR })}
+              {' '}{ui("Τελευταία ενημέρωση: ")}{updatedLabel}{ui(". Κάθε έκδοση αποτυπώνει τη συλλογή εκείνης της στιγμής και μπορεί να αναθεωρηθεί με νέες αναρτήσεις, συνδέσεις ή ελεγμένες διορθώσεις.")}</p>
           </Section>
         </div>
       </div>

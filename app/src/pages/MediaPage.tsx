@@ -1,9 +1,12 @@
+import { type OverviewUi, useOverviewUi } from '../i18n/overview'
 import type { ReactNode } from 'react'
 
 type MediaItem = {
   title: string
   source: string
   date?: string
+  dateIso?: string
+  dateWeekday?: boolean
   href?: string
   image?: string
 }
@@ -55,6 +58,7 @@ const articles: MediaItem[] = [
     title: 'Άρθρο για την πυροπροστασία',
     source: 'Τα Νέα',
     date: '30 Μαΐου 2026',
+    dateIso: '2026-05-30',
     image: `${import.meta.env.BASE_URL}cover_16_9_social.jpg`,
   },
 ]
@@ -64,41 +68,49 @@ const radioShows: MediaItem[] = [
     title: 'ΙΝΤΡΙΓΚΕΣ ΣΤΟ ΚΟΚΚΙΝΟ 105.5 με τον Αντώνη Ρηγόπουλο',
     source: 'Στο Κόκκινο 105.5',
     date: '20 Ιουνίου 2026',
+    dateIso: '2026-06-20',
   },
   {
     title: 'Στον αέρα με τη Νίκυ Λυμπεράκη',
     source: 'Παραπολιτικά 90.1',
     date: '5 Μαΐου 2026',
+    dateIso: '2026-05-05',
     href: 'https://www.mixcloud.com/parapolitika901/%CF%83%CF%84%CE%BF%CE%BD-%CE%B1%CE%B5%CF%81%CE%B1-05-05-2026/',
   },
   {
     title: '#NaMaste @ΔΕΥΤΕΡΟ με την Ιωάννα Νιαώτη',
     source: 'Δεύτερο Πρόγραμμα',
     date: '24 Μαΐου 2026',
+    dateIso: '2026-05-24',
     href: 'https://www.ertecho.gr/radio/deftero/show/namaste-deytero-deytero/ondemand/1300432/namaste-deytero-me-tin-ioanna-niaoti-24-05-2026/',
   },
   {
     title: 'Μένουμε Αθήνα με τη Μαρία Παύλου',
     source: 'Αθήνα 98.4',
     date: '4 Ιουλίου 2026',
+    dateIso: '2026-07-04',
     href: 'https://www.mixcloud.com/%CE%91%CE%98%CE%97%CE%9D%CE%91984/%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BC%CE%B5-%CE%B1%CE%B8%CE%AE%CE%BD%CE%B1-04-07-2026/',
   },
   {
     title: 'Παρέα με τη Μαρία Δουρουδή',
     source: 'ΣΚΑΪ',
     date: 'Δευτέρα, 3 Αυγούστου 2026',
+    dateIso: '2026-08-03',
+    dateWeekday: true,
     href: 'https://www.skairadio.gr/parea-me-ti-maria-douroudi/episode-2026-08-03',
   },
   {
     title: 'Ω τι κόσμος με τον Κώστα Ράπτη',
     source: 'Αθήνα 984',
     date: '4 Αυγούστου 2026',
+    dateIso: '2026-08-04',
     href: 'https://athina984.gr/radio_shows/o-ti-kosmos/',
   },
   {
     title: 'Μαγκαζίνο με τον Γιάννη Λαβράνο',
     source: 'Αθήνα 984',
     date: '10 Αυγούστου 2026',
+    dateIso: '2026-08-10',
   },
 ]
 
@@ -107,11 +119,13 @@ const televisionShows: MediaItem[] = [
     title: 'UPDATE',
     source: 'ΕΡΤ',
     date: '2 Ιουλίου 2026',
+    dateIso: '2026-07-02',
   },
   {
     title: 'Mega News',
     source: 'MEGA',
     date: '1 Ιουλίου 2026',
+    dateIso: '2026-07-01',
     href: 'https://www.megatv.com/etvshows/2422339/01-07-26-4/',
   },
   {
@@ -126,9 +140,16 @@ const podcasts: MediaItem[] = [
     title: "Europe's infernal summer: Record heat, wildfires, and migration",
     source: 'The Greek Current',
     date: '8 Αυγούστου 2026',
+    dateIso: '2026-08-08',
     href: 'https://thegreekcurrent.simplecast.com/episodes/europes-infernal-summer',
   },
 ]
+
+function mediaDate(item: MediaItem, ui: OverviewUi): string {
+  if (ui.language === 'el') return item.date ?? ''
+  if (!item.dateIso) return ui(item.date ?? '')
+  return ui.format.date(item.dateIso, { day: 'numeric', month: 'long', year: 'numeric', ...(item.dateWeekday ? { weekday: 'long' } : {}) })
+}
 
 function CardShell({ item, className, children }: { item: MediaItem; className: string; children: ReactNode }) {
   if (!item.href) return <article className={className}>{children}</article>
@@ -151,6 +172,7 @@ function ExternalLinkIcon() {
 }
 
 function ArticleCard({ item }: { item: MediaItem }) {
+  const ui = useOverviewUi()
   return (
     <CardShell item={item} className={`media-card media-card--article${item.href ? '' : ' media-card--static'}`}>
       <div className="media-card__image-wrap">
@@ -159,9 +181,9 @@ function ArticleCard({ item }: { item: MediaItem }) {
       <div className="media-card__body">
         <div className="media-card__meta">
           <span>{item.source}</span>
-          {item.date ? <time>{item.date}</time> : null}
+          {item.date ? <time dateTime={item.dateIso}>{mediaDate(item, ui)}</time> : null}
         </div>
-        <h3>{item.title}</h3>
+        <h3 lang={ui.language === 'en' || !/[Α-Ωα-ω]/.test(item.title) ? 'en' : 'el'}>{ui(item.title)}</h3>
         {item.href ? <ExternalLinkIcon /> : null}
       </div>
     </CardShell>
@@ -185,15 +207,16 @@ function BroadcastVisual({ kind, station }: { kind: 'radio' | 'tv' | 'podcast'; 
 }
 
 function BroadcastCard({ item, kind }: { item: MediaItem; kind: 'radio' | 'tv' | 'podcast' }) {
+  const ui = useOverviewUi()
   return (
     <CardShell item={item} className={`media-card media-card--broadcast${item.href ? '' : ' media-card--static'}`}>
       <BroadcastVisual kind={kind} station={item.source} />
       <div className="media-card__body">
         <div className="media-card__meta">
           <span>{item.source}</span>
-          {item.date ? <time>{item.date}</time> : null}
+          {item.date ? <time dateTime={item.dateIso}>{mediaDate(item, ui)}</time> : null}
         </div>
-        <h3>{item.title}</h3>
+        <h3 lang={ui.language === 'en' || !/[Α-Ωα-ω]/.test(item.title) ? 'en' : 'el'}>{ui(item.title)}</h3>
         {item.href ? <ExternalLinkIcon /> : null}
       </div>
     </CardShell>
@@ -201,35 +224,36 @@ function BroadcastCard({ item, kind }: { item: MediaItem; kind: 'radio' | 'tv' |
 }
 
 export default function MediaPage() {
+  const ui = useOverviewUi()
   return (
     <main className="media-page">
       <header className="media-page__hero section-rule">
         <div className="eyebrow">FireWatch / Media</div>
-        <h2>Δημοσιεύσεις</h2>
-        <p>Άρθρα, συνεντεύξεις και εμφανίσεις σε ραδιόφωνο και τηλεόραση.</p>
+        <h2>{ui("Δημοσιεύσεις")}</h2>
+        <p>{ui("Άρθρα, συνεντεύξεις και εμφανίσεις σε ραδιόφωνο και τηλεόραση.")}</p>
       </header>
 
-      <section className="media-section section-rule" aria-label="Τύπος και διαδίκτυο">
+      <section className="media-section section-rule" aria-label={ui("Τύπος και διαδίκτυο")}>
         <header className="media-section__header">
-          <div className="eyebrow">01 / Τύπος &amp; διαδίκτυο</div>
+          <div className="eyebrow">{ui("01 / Τύπος & διαδίκτυο")}</div>
         </header>
         <div className="media-grid media-grid--articles">
           {articles.map((item) => <ArticleCard key={`${item.source}-${item.title}`} item={item} />)}
         </div>
       </section>
 
-      <section className="media-section section-rule" aria-label="Ραδιόφωνο">
+      <section className="media-section section-rule" aria-label={ui("Ραδιόφωνο")}>
         <header className="media-section__header">
-          <div className="eyebrow">02 / Ραδιόφωνο</div>
+          <div className="eyebrow">{ui("02 / Ραδιόφωνο")}</div>
         </header>
         <div className="media-grid">
           {radioShows.map((item) => <BroadcastCard key={`${item.source}-${item.title}`} item={item} kind="radio" />)}
         </div>
       </section>
 
-      <section className="media-section section-rule" aria-label="Τηλεόραση">
+      <section className="media-section section-rule" aria-label={ui("Τηλεόραση")}>
         <header className="media-section__header">
-          <div className="eyebrow">03 / Τηλεόραση</div>
+          <div className="eyebrow">{ui("03 / Τηλεόραση")}</div>
         </header>
         <div className="media-grid">
           {televisionShows.map((item) => <BroadcastCard key={`${item.source}-${item.title}`} item={item} kind="tv" />)}

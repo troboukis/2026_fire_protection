@@ -1,72 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.fire-watch-app.gr/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/" />
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/" />
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/maps</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/maps" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/maps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/maps" />
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/maps</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/maps" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/maps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/maps" />
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/municipalities</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/municipalities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/municipalities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/municipalities" />
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/municipalities</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/municipalities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/municipalities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/municipalities" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/environment-ministry</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/environment-ministry" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/environment-ministry" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/environment-ministry" />
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/environment-ministry</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/environment-ministry" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/environment-ministry" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/environment-ministry" />
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/contracts</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/contracts" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/contracts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/contracts" />
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/contracts</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/contracts" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/contracts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/contracts" />
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/diavgeia</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/diavgeia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/diavgeia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/diavgeia" />
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/diavgeia</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/diavgeia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/diavgeia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/diavgeia" />
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/analysis</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis" />
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/analysis/yearly_report</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/yearly_report" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/yearly_report" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/yearly_report" />
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis/yearly_report</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/yearly_report" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/yearly_report" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/yearly_report" />
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/analysis/statistics</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/statistics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/statistics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/statistics" />
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis/statistics</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/statistics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/statistics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/statistics" />
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/analysis/antinero-west-attica</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/antinero-west-attica" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/antinero-west-attica" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/antinero-west-attica" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis/antinero-west-attica</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/antinero-west-attica" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/antinero-west-attica" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/antinero-west-attica" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/analysis/west-attica-fire-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/west-attica-fire-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/west-attica-fire-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/west-attica-fire-2026/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis/west-attica-fire-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/west-attica-fire-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/west-attica-fire-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/west-attica-fire-2026/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/terms</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/terms" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/terms" />
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/privacy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/privacy" />
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fire-watch-app.gr/media</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/media" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/media" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/media" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/media</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/media" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/media" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/media" />
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

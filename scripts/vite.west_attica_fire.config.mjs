@@ -1,14 +1,18 @@
 import { fileURLToPath } from 'node:url'
 import megaFireConfig from '../../mega_fire_2026/app/vite.config.ts'
+import { archivedWestAtticaRuntime } from './west_attica_archived_runtime.mjs'
+import { westAtticaLanguage } from './west_attica_language.mjs'
 
 // Share FireWatch branding and isolate the source app's largest dependency so
 // repeat visits can cache MapLibre independently from report code.
 export default {
   ...megaFireConfig,
+  plugins: [archivedWestAtticaRuntime(), westAtticaLanguage(), ...(megaFireConfig.plugins ?? [])],
   resolve: {
     ...megaFireConfig.resolve,
     alias: {
       ...megaFireConfig.resolve?.alias,
+      'firewatch:english-logo': fileURLToPath(new URL('../app/public/FireWatch_EN_logo.svg', import.meta.url)),
       './assets/logos/firewatch.png': fileURLToPath(
         new URL('../app/public/FireWatch_logo.svg', import.meta.url),
       ),

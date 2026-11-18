@@ -1,3 +1,5 @@
+import { useOverviewUi } from '../../../i18n/overview'
+import { logError } from '../../../lib/logger'
 import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import * as d3 from 'd3'
 import { isAbortError } from '../../../lib/isAbortError'
@@ -42,6 +44,7 @@ function buildHistogramBins(amounts: number[], totalCount: number): HistoBin[] {
 }
 
 function HistogramChart({ bins }: { bins: HistoBin[] }) {
+  const ui = useOverviewUi()
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef       = useRef<SVGSVGElement>(null)
 
@@ -105,9 +108,9 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
     }
 
     const formatAmount = (v: number) => {
-      if (v >= 1_000_000) return `${Number((v / 1_000_000).toFixed(v >= 10_000_000 ? 0 : 1)).toLocaleString('el-GR')}M€`
-      if (v >= 1_000) return `${Number((v / 1_000).toFixed(v >= 10_000 ? 0 : 1)).toLocaleString('el-GR')}K€`
-      return `${Math.round(v).toLocaleString('el-GR')}€`
+      if (v >= 1_000_000) return `${Number((v / 1_000_000).toFixed(v >= 10_000_000 ? 0 : 1)).toLocaleString(ui.locale)}M€`
+      if (v >= 1_000) return `${Number((v / 1_000).toFixed(v >= 10_000 ? 0 : 1)).toLocaleString(ui.locale)}K€`
+      return `${Math.round(v).toLocaleString(ui.locale)}€`
     }
 
     const candidateTicks = [
@@ -149,7 +152,7 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
         .style('transform', 'none')
         .style('left', `${event.clientX - rect.left + 12}px`)
         .style('top',  `${event.clientY - rect.top  - 42}px`)
-        .html(`<strong>${fmtEur(b.bin_lo)} – ${fmtEur(b.bin_hi)}</strong>${count.toLocaleString('el-GR')} συμβάσεις`)
+        .html(`<strong>${fmtEur(b.bin_lo)} – ${fmtEur(b.bin_hi)}</strong>${ui('{{v0}} συμβάσεις', { v0: count.toLocaleString(ui.locale) })}`)
     }
 
     g.selectAll<SVGRectElement, HistoBin>('.da-bar')
@@ -190,12 +193,12 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
           .style('left',  `${cx}px`)
           .style('top',   `${barRect.top - rect.top - 8}px`)
           .style('transform', 'translate(-50%, -100%)')
-          .html(`<strong>${fmtEur(b.bin_lo)} – ${fmtEur(b.bin_hi)}</strong>${count.toLocaleString('el-GR')} συμβάσεις`)
+          .html(`<strong>${fmtEur(b.bin_lo)} – ${fmtEur(b.bin_hi)}</strong>${ui('{{v0}} συμβάσεις', { v0: count.toLocaleString(ui.locale) })}`)
         g.selectAll<SVGRectElement, HistoBin>('.da-bar')
           .attr('fill', eb => eb === b ? 'rgba(211,72,45,0.82)' : 'rgba(17,17,17,0.28)')
       })
 
-  }, [bins])
+  }, [bins, ui])
 
   useEffect(() => {
     draw()
@@ -219,9 +222,11 @@ function HistogramChart({ bins }: { bins: HistoBin[] }) {
 export default function DirectAwardHistogram({
   amounts,
   totalCount,
-  periodLabel = `2024–σήμερα`,
+  periodLabel: suppliedPeriodLabel,
   embedded = false,
 }: DirectAwardHistogramProps) {
+  const ui = useOverviewUi()
+  const periodLabel = suppliedPeriodLabel ?? ui("2024–σήμερα")
   const [bins,    setBins]    = useState<HistoBin[]>([])
   const [total,   setTotal]   = useState(0)
   const [loading, setLoading] = useState(amounts === undefined)
@@ -259,6 +264,7 @@ export default function DirectAwardHistogram({
       } catch (e) {
         if (isAbortError(e)) return
         if (cancelled) return
+        logError('Failed to load direct award distribution', e)
         setError(e instanceof Error ? e.message : 'Αποτυχία φόρτωσης δεδομένων')
       } finally {
         if (!cancelled) setLoading(false)
@@ -270,37 +276,34 @@ export default function DirectAwardHistogram({
 
   if (loading) {
     return (
-      <section className={sectionClassName} aria-label="Κατανομή Απευθείας Αναθέσεων">
-        <DataLoadingCard message="Φόρτωση κατανομής αξιών απευθείας αναθέσεων…" />
+      <section className={sectionClassName} aria-label={ui("Κατανομή Απευθείας Αναθέσεων")}>
+        <DataLoadingCard message={ui("Φόρτωση κατανομής αξιών απευθείας αναθέσεων…")} />
       </section>
     )
   }
 
   return (
-    <section className={sectionClassName} aria-label="Κατανομή Απευθείας Αναθέσεων">
+    <section className={sectionClassName} aria-label={ui("Κατανομή Απευθείας Αναθέσεων")}>
       <ComponentTag name="DirectAwardHistogram" />
 
       <div className="ca-header section-head">
-        <div className="eyebrow">Κατανομή</div>
-        <h2>Απευθείας Αναθέσεις</h2>
+        <div className="eyebrow">{ui("Κατανομή")}</div>
+        <h2>{ui("Απευθείας Αναθέσεις")}</h2>
         <p className="ca-header-note">
-          Ανάλυση <strong>{total.toLocaleString('el-GR')} απευθείας αναθέσεων</strong> ({periodLabel}). Το ιστόγραμμα απεικονίζει όσες έχουν γνωστή αξία άνω των €100, ανά αξία σύμβασης (χωρίς ΦΠΑ).
-          Ο οριζόντιος άξονας είναι λογαριθμικός.
-        </p>
-        {error && <p className="ca-empty-note">Σφάλμα: {error}</p>}
+          {ui("Ανάλυση ")}{ui.language === 'en' ? 'of ' : ''}<strong>{total.toLocaleString(ui.locale)} {ui("απευθείας αναθέσεων")}</strong> ({periodLabel}{ui("). Το ιστόγραμμα απεικονίζει όσες έχουν γνωστή αξία άνω των €100, ανά αξία σύμβασης (χωρίς ΦΠΑ). Ο οριζόντιος άξονας είναι λογαριθμικός.")}</p>
+        {error && <p className="ca-empty-note">{ui("Η ενότητα ανάλυσης δεν είναι διαθέσιμη προσωρινά.")}</p>}
       </div>
 
       <div className="ca-chart-block da-hist-chart-block">
         <div className="ca-chart-head">
-          <div className="eyebrow">Αξία σύμβασης χ.ΦΠΑ · λογαριθμική κλίμακα</div>
+          <div className="eyebrow">{ui("Αξία σύμβασης χ.ΦΠΑ · λογαριθμική κλίμακα")}</div>
         </div>
         {bins.length > 0
           ? <HistogramChart bins={bins} />
-          : <p className="ca-empty-note">Δεν βρέθηκαν απευθείας αναθέσεις.</p>
+          : <p className="ca-empty-note">{ui("Δεν βρέθηκαν απευθείας αναθέσεις.")}</p>
         }
         <p className="ca-sub-note da-hist-legal-note">
-          Με τον ν. 4782/2021 το ανώτατο όριο της εκτιμώμενης δαπάνης μέχρι του οποίου μπορεί να συναφθεί σύμβαση με απευθείας ανάθεση αυξήθηκε (από 1.6.2021) από 20.000 ευρώ σε 30.000 ευρώ για τις συμβάσεις προμηθειών και γενικών υπηρεσιών και σε 60.000 ευρώ για τις δημόσιες συμβάσεις έργων ή κοινωνικών και άλλων ειδικών υπηρεσιών καθώς και έργων Τεχνολογίας Πληροφορικής και Επικοινωνιών με αντικείμενο την εξασφάλιση της διαλειτουργικότητας των ψηφιακών υπηρεσιών ή τον εκσυγχρονισμό των ψηφιακών εργαλείων της Κεντρικής Διοίκησης.
-        </p>
+          {ui("Με τον ν. 4782/2021 το ανώτατο όριο της εκτιμώμενης δαπάνης μέχρι του οποίου μπορεί να συναφθεί σύμβαση με απευθείας ανάθεση αυξήθηκε (από 1.6.2021) από 20.000 ευρώ σε 30.000 ευρώ για τις συμβάσεις προμηθειών και γενικών υπηρεσιών και σε 60.000 ευρώ για τις δημόσιες συμβάσεις έργων ή κοινωνικών και άλλων ειδικών υπηρεσιών καθώς και έργων Τεχνολογίας Πληροφορικής και Επικοινωνιών με αντικείμενο την εξασφάλιση της διαλειτουργικότητας των ψηφιακών υπηρεσιών ή τον εκσυγχρονισμό των ψηφιακών εργαλείων της Κεντρικής Διοίκησης.")}</p>
       </div>
     </section>
   )

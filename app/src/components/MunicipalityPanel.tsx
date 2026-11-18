@@ -1,3 +1,4 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useEffect, useState } from 'react'
 import ComponentTag from './ComponentTag'
 import { supabase } from '../lib/supabase'
@@ -16,21 +17,21 @@ function cleanStr(v: unknown): string | null {
   return s
 }
 
-function fmtNum(n: number | null, decimals = 0): string {
+function fmtNum(n: number | null, decimals = 0, ui: OverviewUi = greekOverviewUi): string {
   if (n == null) return '—'
-  return n.toLocaleString('el-GR', { maximumFractionDigits: decimals })
+  return n.toLocaleString(ui.locale, { maximumFractionDigits: decimals })
 }
 
-function fmtEur(n: number | null): string {
+function fmtEur(n: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (n == null || isNaN(n)) return '—'
-  return n.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
+  return n.toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 }
 
-function fmtDate(d: string | null): string {
+function fmtDate(d: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!d) return '—'
   const dt = new Date(d)
   if (isNaN(dt.getTime())) return '—'
-  return dt.toLocaleDateString('el-GR', { day: '2-digit', month: 'short', year: 'numeric' })
+  return dt.toLocaleDateString(ui.locale, { day: '2-digit', month: 'short', year: 'numeric' })
 }
 
 /* ── Types ────────────────────────────────────────────────────── */
@@ -200,6 +201,7 @@ function sortDecisionsDesc(rows: ProcurementDecision[]): ProcurementDecision[] {
 
 /* ── Panel ────────────────────────────────────────────────────── */
 export function MunicipalityPanel({ id, onBack }: Props) {
+  const ui = useOverviewUi()
   const [data, setData]               = useState<Municipality | null>(null)
   const [loading, setLoading]         = useState(true)
   const [error, setError]             = useState<string | null>(null)
@@ -311,8 +313,8 @@ export function MunicipalityPanel({ id, onBack }: Props) {
     return () => { cancelled = true }
   }, [id])
 
-  if (loading) return <div><ComponentTag name="MunicipalityPanel" /><p>Φόρτωση…</p></div>
-  if (error)   return <div><ComponentTag name="MunicipalityPanel" /><p>Σφάλμα: {error}</p></div>
+  if (loading) return <div><ComponentTag name="MunicipalityPanel" /><p>{ui("Φόρτωση…")}</p></div>
+  if (error)   return <div><ComponentTag name="MunicipalityPanel" /><p role="alert">{ui('Δεν ήταν δυνατή η φόρτωση δεδομένων')}</p></div>
   if (!data)   return null
 
   const totalFires = fireHistory.reduce((s, y) => s + y.incident_count, 0)
@@ -324,53 +326,52 @@ export function MunicipalityPanel({ id, onBack }: Props) {
   return (
     <div>
       <ComponentTag name="MunicipalityPanel" />
-      <button onClick={onBack}>← Επιστροφή</button>
+      <button onClick={onBack}>{ui("← Επιστροφή")}</button>
 
-      <h1>{data.name}</h1>
+      <h1>{ui.organization(data.name)}</h1>
 
       <p>
-        Πυρκαγιές 2000–2024: {fireLoading ? '…' : fmtNum(totalFires)} ·{' '}
-        Καμμένη έκταση: {fireLoading ? '…' : fmtNum(Math.round(totalHa))} εκτ.
-        {worstYear && ` · Χειρότερη χρονιά: ${worstYear.year}`}
+        {ui("Πυρκαγιές 2000–2024: ")}{fireLoading ? '…' : fmtNum(totalFires, undefined, ui)} ·{' '}
+        {ui("Καμμένη έκταση: ")}{fireLoading ? '…' : fmtNum(Math.round(totalHa), undefined, ui)} {ui("εκτ.")}{worstYear && ui(" · Χειρότερη χρονιά: {{v0}}", { v0: worstYear.year })}
       </p>
 
       <p>
-        Αποφάσεις 2026:{' '}
-        {procLoading ? '…' : `${municipalDecisionCount2026} δημοτικές, ${coverageDecisionCount2026} περιφερειακές`}
+        {ui("Αποφάσεις 2026:")}{' '}
+        {procLoading ? '…' : ui("{{v0}} δημοτικές, {{v1}} περιφερειακές", { v0: municipalDecisionCount2026, v1: coverageDecisionCount2026 })}
       </p>
 
       {!procLoading && localProcurement.length > 0 && (
         <div>
-          <h2>Τοπικές αποφάσεις ({localProcurement.length})</h2>
+          <h2>{ui("Τοπικές αποφάσεις (")}{localProcurement.length})</h2>
           {localProcurement.slice(0, 10).map((d, i) => {
             return (
               <div key={`${d.ada}-${i}`}>
                 <p>
                   <strong>{d.subject ?? '—'}</strong>
-                  {d.amount_eur != null && <> · {fmtEur(d.amount_eur)}</>}
+                  {d.amount_eur != null && <> · {fmtEur(d.amount_eur, ui)}</>}
                 </p>
                 <p>
-                  {d.org_name_clean ?? '—'} · {fmtDate(d.issue_date)}
+                  {ui.organization(d.org_name_clean ?? '—')} · {fmtDate(d.issue_date, ui)}
                   {d.document_url && <> · <a href={d.document_url} target="_blank" rel="noreferrer">{d.ada}</a></>}
                 </p>
               </div>
             )
           })}
-          {localProcurement.length > 10 && <p>+{localProcurement.length - 10} ακόμα</p>}
+          {localProcurement.length > 10 && <p>+{localProcurement.length - 10} {ui("ακόμα")}</p>}
         </div>
       )}
 
       {!procLoading && nationalProcurement.length > 0 && (
         <div>
-          <h2>Εθνικές αποφάσεις ({nationalProcurement.length})</h2>
+          <h2>{ui("Εθνικές αποφάσεις (")}{nationalProcurement.length})</h2>
           {nationalProcurement.slice(0, 5).map((d, i) => (
             <div key={`${d.ada}-${i}`}>
               <p>
                 <strong>{d.subject ?? '—'}</strong>
-                {d.amount_eur != null && <> · {fmtEur(d.amount_eur)}</>}
+                {d.amount_eur != null && <> · {fmtEur(d.amount_eur, ui)}</>}
               </p>
               <p>
-                {d.org_name_clean ?? '—'} · {fmtDate(d.issue_date)}
+                {ui.organization(d.org_name_clean ?? '—')} · {fmtDate(d.issue_date, ui)}
                 {d.document_url && <> · <a href={d.document_url} target="_blank" rel="noreferrer">{d.ada}</a></>}
               </p>
             </div>

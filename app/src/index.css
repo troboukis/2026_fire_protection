@@ -212,6 +212,28 @@ textarea {
   white-space: normal;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-inline-start: 0.75rem;
+  white-space: nowrap;
+}
+
+.language-switcher a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  color: inherit;
+  font: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.language-switcher a[aria-current="true"] {
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .eyebrow {
   display: inline-flex;
   font-family: var(--font-mono);
@@ -3892,6 +3914,7 @@ main {
     text-align: center;
     line-height: 1.15;
     text-wrap: balance;
+    overflow-wrap: anywhere;
     padding: 0.68rem 0.5rem;
   }
 

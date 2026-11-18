@@ -1,4 +1,5 @@
 import { buildGemiCompanyUrl, normalizeGemiNumber } from '../lib/gemiCompany'
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 
 type Props = {
   name: string
@@ -13,6 +14,8 @@ export default function BeneficiaryLink({
   className,
   stopPropagation = false,
 }: Props) {
+  const { p, language } = useProcurementI18n()
+  const linkLabel = p('openGemi', { registry: language === 'el' ? 'ΓΕΜΗ' : 'GEMI', name })
   const normalizedGemi = normalizeGemiNumber(gemi)
   const inactiveClassName = className
     ?.replace(/\bbeneficiary-link\b/g, ' ')
@@ -30,8 +33,8 @@ export default function BeneficiaryLink({
       target="_blank"
       rel="noreferrer"
       onClick={stopPropagation ? (event) => event.stopPropagation() : undefined}
-      title={`Άνοιγμα ΓΕΜΗ για ${name}`}
-      aria-label={`Άνοιγμα ΓΕΜΗ για ${name}`}
+      title={linkLabel}
+      aria-label={linkLabel}
     >
       {name}
     </a>

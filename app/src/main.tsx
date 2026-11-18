@@ -1,10 +1,10 @@
-import React, { Suspense, lazy, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Analytics } from '@vercel/analytics/react'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
-import App from './App'
 import Layout from './components/Layout'
-import LegacyReportsRedirect from './features/analysis/LegacyReportsRedirect'
+import RouteLanguageProvider from './routing/RouteLanguageProvider'
+import { pageRoutes } from './routing/pageRoutes'
 import { trackPageView } from './analytics'
 import { initCookieConsent } from './cookieConsent'
 import './index.css'
@@ -21,41 +21,17 @@ function RouteTracker() {
   return null
 }
 
-const AntineroPage = lazy(() => import('./features/analysis/antinero/AntineroPage'))
-const AnalysisPage = lazy(() => import('./features/analysis/catalog/AnalysisPage'))
-const StatisticalAnalysisPage = lazy(() => import('./features/analysis/statistics/StatisticalAnalysisPage'))
-const YearlyReportPage = lazy(() => import('./features/analysis/yearly-report/YearlyReportPage'))
-const ContractsPage = lazy(() => import('./pages/ContractsPage'))
-const DiavgeiaPage = lazy(() => import('./pages/DiavgeiaPage'))
-const EnvironmentMinistryPage = lazy(() => import('./pages/EnvironmentMinistryPage'))
-const MapsPage = lazy(() => import('./pages/MapsPage'))
-const MediaPage = lazy(() => import('./pages/MediaPage'))
-const MunicipalitiesPage = lazy(() => import('./pages/MunicipalitiesPage'))
-const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
-const TermsPage = lazy(() => import('./pages/TermsPage'))
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <RouteTracker />
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<App />} />
-          <Route path="/analysis" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AnalysisPage /></Suspense>} />
-          <Route path="/analysis/statistics" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><StatisticalAnalysisPage /></Suspense>} />
-          <Route path="/analysis/antinero-west-attica" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><AntineroPage /></Suspense>} />
-          <Route path="/analysis/yearly_report" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><YearlyReportPage /></Suspense>} />
-          <Route path="/reports/*" element={<LegacyReportsRedirect />} />
-          <Route path="/contracts" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><ContractsPage /></Suspense>} />
-          <Route path="/diavgeia" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><DiavgeiaPage /></Suspense>} />
-          <Route path="/environment-ministry" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><EnvironmentMinistryPage /></Suspense>} />
-          <Route path="/municipalities" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MunicipalitiesPage /></Suspense>} />
-          <Route path="/maps" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MapsPage /></Suspense>} />
-          <Route path="/media" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><MediaPage /></Suspense>} />
-          <Route path="/privacy" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><PrivacyPage /></Suspense>} />
-          <Route path="/terms" element={<Suspense fallback={<main className="page-loading">Φόρτωση σελίδας…</main>}><TermsPage /></Suspense>} />
-        </Route>
-      </Routes>
+      <RouteLanguageProvider>
+        <RouteTracker />
+        <Routes>
+          <Route element={<Layout />}>
+            {pageRoutes.map(page => <Route key={page.path} path={page.path} element={page.element} />)}
+          </Route>
+        </Routes>
+      </RouteLanguageProvider>
     </BrowserRouter>
     {analyticsEnabled ? <Analytics /> : null}
   </React.StrictMode>,

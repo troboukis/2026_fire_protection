@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../i18n/overview'
 import type { ReactNode } from 'react'
 
 type MapLegendToggleProps = {
@@ -15,12 +16,13 @@ export default function MapLegendToggle({
   className = '',
   label,
 }: MapLegendToggleProps) {
+  const ui = useOverviewUi()
   return (
     <button
       type="button"
       className={`map-legend-toggle${visible ? '' : ' is-hidden'}${className ? ` ${className}` : ''}`}
       aria-pressed={visible}
-      aria-label={`${visible ? 'Απόκρυψη' : 'Εμφάνιση'}: ${label}`}
+      aria-label={`${visible ? ui("Απόκρυψη") : ui("Εμφάνιση")}: ${label}`}
       onClick={onToggle}
     >
       {children}

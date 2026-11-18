@@ -1,6 +1,7 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import { useNavigate } from 'react-router-dom'
+import { useLocalizedNavigate as useNavigate } from '../routing/useLocalizedNavigate'
 import type { GeoData } from '../types'
 import { excludeFirmsMapHotspots } from '../lib/firmsMapExclusions'
 import { isAbortError } from '../lib/isAbortError'
@@ -85,11 +86,11 @@ function toNumber(value: unknown): number | null {
   return Number.isFinite(number) ? number : null
 }
 
-function formatDateTimeEl(iso: string | null): string {
+function formatDateTimeEl(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
@@ -98,14 +99,14 @@ function formatDateTimeEl(iso: string | null): string {
   }).format(dt)
 }
 
-function formatMegawatts(value: number | null): string {
+function formatMegawatts(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null) return '—'
-  return `${value.toLocaleString('el-GR', { maximumFractionDigits: 1 })} MW`
+  return `${value.toLocaleString(ui.locale, { maximumFractionDigits: 1 })} MW`
 }
 
-function formatObservationCount(count: number): string {
-  const formattedCount = count.toLocaleString('el-GR')
-  return `${formattedCount} ${count === 1 ? 'παρατήρηση' : 'παρατηρήσεις'}`
+function formatObservationCount(count: number, ui: OverviewUi = greekOverviewUi): string {
+  const formattedCount = count.toLocaleString(ui.locale)
+  return `${formattedCount} ${count === 1 ? ui("παρατήρηση") : ui("παρατηρήσεις")}`
 }
 
 function clampLatitude(lat: number): number {
@@ -253,6 +254,7 @@ function buildFootprint(
 }
 
 export default function FireFirmsSection() {
+  const ui = useOverviewUi()
   const navigate = useNavigate()
   const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
   const [geojson, setGeojson] = useState<GeoData | null>(null)
@@ -488,14 +490,13 @@ export default function FireFirmsSection() {
         <div className="fire-copernicus__intro dev-tag-anchor">
           <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
           <div className="eyebrow">NASA FIRMS</div>
-          <h2>Θερμικές ανωμαλίες εδάφους</h2>
+          <h2>{ui("Θερμικές ανωμαλίες εδάφους")}</h2>
           <p>
-            Δορυφορικές παρατηρήσεις από δορυφόρους της NASA που καταγράφουν θερμικές ανωμαλίες στο έδαφος της Ελλάδας. Μία θερμική ανωμαλία δεν συνεπάγεται οτι αποτελεί πυρκαγιά.
-          </p>
+            {ui("Δορυφορικές παρατηρήσεις από δορυφόρους της NASA που καταγράφουν θερμικές ανωμαλίες στο έδαφος της Ελλάδας. Μία θερμική ανωμαλία δεν συνεπάγεται οτι αποτελεί πυρκαγιά.")}</p>
         </div>
         <DataLoadingCard
           className="fire-copernicus__loading-card"
-          message="Ανακτώνται οι ενεργές θερμικές ανωμαλίες NASA FIRMS."
+          message={ui("Ανακτώνται οι ενεργές θερμικές ανωμαλίες NASA FIRMS.")}
         />
       </section>
     )
@@ -510,29 +511,27 @@ export default function FireFirmsSection() {
       <div className="fire-copernicus__intro dev-tag-anchor">
         <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
         <div className="eyebrow">NASA FIRMS</div>
-        <h2>Θερμικές ανωμαλίες εδάφους</h2>
+        <h2>{ui("Θερμικές ανωμαλίες εδάφους")}</h2>
         <p>
-          Δορυφορικές παρατηρήσεις από δορυφόρους της NASA που καταγράφουν θερμικές ανωμαλίες στο έδαφος της Ελλάδας. Μία θερμική ανωμαλία δεν συνεπάγεται οτι αποτελεί πυρκαγιά.
-        </p>
+          {ui("Δορυφορικές παρατηρήσεις από δορυφόρους της NASA που καταγράφουν θερμικές ανωμαλίες στο έδαφος της Ελλάδας. Μία θερμική ανωμαλία δεν συνεπάγεται οτι αποτελεί πυρκαγιά.")}</p>
         <div className="brand-mark fire-copernicus__brand-mark">
-          Τελευταία παρατήρηση / {formatDateTimeEl(latestDetection?.acquiredAtEl ?? latestDetection?.acquiredAt ?? null)}
+          {ui("Τελευταία παρατήρηση / ")}{formatDateTimeEl(latestDetection?.acquiredAtEl ?? latestDetection?.acquiredAt ?? null, ui)}
         </div>
-        <div className="fire-firms__satellites" aria-label="Τελευταίες διελεύσεις δορυφόρων NASA FIRMS">
+        <div className="fire-firms__satellites" aria-label={ui("Τελευταίες διελεύσεις δορυφόρων NASA FIRMS")}>
           {satellites.length > 0 ? satellites.map(({ detection, count }) => (
             <div key={`${detection.satellite}-${detection.instrument}-${detection.sourceProduct}`}>
-              <span>{detection.satellite} / {detection.instrument} · {formatObservationCount(count)}</span>
-              <strong>{formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt)}</strong>
+              <span>{detection.satellite} / {detection.instrument} · {formatObservationCount(count, ui)}</span>
+              <strong>{formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt, ui)}</strong>
             </div>
           )) : (
             <div>
-              <span>Δεν υπάρχουν διαθέσιμες διελεύσεις</span>
+              <span>{ui("Δεν υπάρχουν διαθέσιμες διελεύσεις")}</span>
               <strong>—</strong>
             </div>
           )}
         </div>
         <p className="fire-copernicus__note">
-          Τα τετράγωνα αποτυπώνουν το δορυφορικό ίχνος κάθε καταγραφής με βάση τις τιμές scan και track του FIRMS.
-        </p>
+          {ui("Τα τετράγωνα αποτυπώνουν το δορυφορικό ίχνος κάθε καταγραφής με βάση τις τιμές scan και track του FIRMS.")}</p>
       </div>
 
       <div className="fire-copernicus__map-wrap dev-tag-anchor">
@@ -542,7 +541,7 @@ export default function FireFirmsSection() {
           className="component-tag--overlay"
           style={{ left: 'auto', right: '0.45rem' }}
         />
-        {!mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων NASA FIRMS.</div>}
+        {!mapData && <div className="fire-copernicus__empty">{ui("Δεν ήταν δυνατή η φόρτωση των δεδομένων NASA FIRMS.")}</div>}
         {mapData && (
           <div ref={mapRef} className="fire-copernicus__map fire-firms__map dev-tag-anchor" onMouseLeave={() => setHoveredDetection(null)}>
             <ComponentTag
@@ -554,7 +553,7 @@ export default function FireFirmsSection() {
             <svg
               viewBox={`0 0 ${mapData.width} ${mapData.height}`}
               role="img"
-              aria-label="Χάρτης ενεργών θερμικών ανωμαλιών NASA FIRMS στην Ελλάδα"
+              aria-label={ui("Χάρτης ενεργών θερμικών ανωμαλιών NASA FIRMS στην Ελλάδα")}
             >
               <defs>
                 <clipPath id={mapClipPathId}>
@@ -652,10 +651,10 @@ export default function FireFirmsSection() {
               >
                 {hoveredDetection.items.slice(0, 4).map((item) => (
                   <div key={item.id} className="fire-copernicus__tooltip-item">
-                    <strong>{item.municipalityName ?? 'Άγνωστη περιοχή'}</strong>
+                    <strong>{item.municipalityName ?? ui("Άγνωστη περιοχή")}</strong>
                     <span>{item.satellite} / {item.instrument}</span>
-                    <span>{formatDateTimeEl(item.acquiredAtEl ?? item.acquiredAt)}</span>
-                    <span>Θερμική Ενέργεια: {formatMegawatts(item.frp)}</span>
+                    <span>{formatDateTimeEl(item.acquiredAtEl ?? item.acquiredAt, ui)}</span>
+                    <span>{ui("Θερμική Ενέργεια: ")}{formatMegawatts(item.frp, ui)}</span>
                   </div>
                 ))}
               </div>
@@ -663,17 +662,17 @@ export default function FireFirmsSection() {
           </div>
         )}
         {mapData && (
-          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα NASA FIRMS">
+          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label={ui("Υπόμνημα NASA FIRMS")}>
             <MapLegendToggle
               visible={showFirmsDetections}
               onToggle={() => {
                 setHoveredDetection(null)
                 setShowFirmsDetections((visible) => !visible)
               }}
-              label="Ενεργή θερμική ανωμαλία NASA FIRMS"
+              label={ui("Ενεργή θερμική ανωμαλία NASA FIRMS")}
             >
               <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
-              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+              <span>{ui("Ενεργή θερμική ανωμαλία NASA FIRMS")}</span>
             </MapLegendToggle>
           </div>
         )}

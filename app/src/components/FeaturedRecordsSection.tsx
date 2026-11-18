@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../i18n/overview'
 import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import BeneficiaryLink from './BeneficiaryLink'
 import ComponentTag from './ComponentTag'
@@ -12,6 +13,7 @@ export type FeaturedRecordContract = LatestContractCardView & ContractModalContr
 }
 
 export type BeneficiaryInsightRow = {
+  sourceDates?: { start: string | null; end: string | null; durationDays: number | null }
   beneficiary: string
   beneficiaryVat?: string | null
   beneficiaryGemi?: string | null
@@ -47,14 +49,20 @@ export default function FeaturedRecordsSection({
   loading,
   formatEur,
   onOpenContract,
-  eyebrowText = `Δικαιούχοι / ${year}`,
-  title = 'Εταιρείες που έχουν κερδίσει δημόσιες συμβάσεις έργων πυροπροστασίας',
-  note = 'Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των συμβάσεων που έχουν λάβει από δήμους, περιφέρειες και άλλους δημόσιους φορείς.',
+  eyebrowText: suppliedEyebrowText,
+  title: suppliedTitle,
+  note: suppliedNote,
   footerNote,
-  emptyMessage = `Δεν βρέθηκαν δικαιούχοι για το ${year}.`,
+  emptyMessage: suppliedEmptyMessage,
   sectionId = 'records',
 }: Props) {
+  const ui = useOverviewUi()
+  const eyebrowText = suppliedEyebrowText ?? ui('Δικαιούχοι / {{v0}}', { v0: year })
+  const title = suppliedTitle ?? ui('Εταιρείες που έχουν κερδίσει δημόσιες συμβάσεις έργων πυροπροστασίας')
+  const note = suppliedNote ?? ui('Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των συμβάσεων που έχουν λάβει από δήμους, περιφέρειες και άλλους δημόσιους φορείς.')
+  const emptyMessage = suppliedEmptyMessage ?? ui('Δεν βρέθηκαν δικαιούχοι για το {{v0}}.', { v0: year })
   const recordsGridRef = useRef<HTMLDivElement | null>(null)
+  const recordsIdentity = rows.map(row => `${row.beneficiaryVat ?? row.beneficiary}:${row.relevantContracts.map(contract => contract.id).join(',')}`).join('|')
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
 
@@ -100,7 +108,7 @@ export default function FeaturedRecordsSection({
       window.removeEventListener('resize', scheduleUpdatePager)
       window.removeEventListener('orientationchange', scheduleUpdatePager)
     }
-  }, [rows, loading])
+  }, [recordsIdentity, loading])
 
   const scrollRecords = (direction: -1 | 1) => {
     const container = recordsGridRef.current
@@ -123,11 +131,11 @@ export default function FeaturedRecordsSection({
         <h2>{title}</h2>
         <div className="section-head__subtitle-row">
           <section className='ca-header-note'>{note}</section>
-          <div className="records-pager" aria-label="Πλοήγηση επιλεγμένων δικαιούχων">
+          <div className="records-pager" aria-label={ui("Πλοήγηση επιλεγμένων δικαιούχων")}>
             <button
               type="button"
               className="records-pager__button"
-              aria-label="Προηγούμενος δικαιούχος"
+              aria-label={ui("Προηγούμενος δικαιούχος")}
               onClick={() => scrollRecords(-1)}
               disabled={loading || !canScrollPrev}
             >
@@ -136,7 +144,7 @@ export default function FeaturedRecordsSection({
             <button
               type="button"
               className="records-pager__button"
-              aria-label="Επόμενος δικαιούχος"
+              aria-label={ui("Επόμενος δικαιούχος")}
               onClick={() => scrollRecords(1)}
               disabled={loading || !canScrollNext}
             >
@@ -156,7 +164,7 @@ export default function FeaturedRecordsSection({
         {loading && (
           <DataLoadingCard
             className="records-grid__loading-card"
-            message={`Ανακτώνται οι δικαιούχοι και οι συμβάσεις τους για το ${year}.`}
+            message={ui("Ανακτώνται οι δικαιούχοι και οι συμβάσεις τους για το {{v0}}.", { v0: year })}
           />
         )}
 
@@ -178,7 +186,7 @@ export default function FeaturedRecordsSection({
                 <div className="record-card__year" aria-hidden="true">{year}</div>
                 <div className="record-card__header">
                   <div className="record-card__authority">#{idx + 1}</div>
-                  <div className="record-card__id">Συμβάσεις: {row.contractCount.toLocaleString('el-GR')}</div>
+                  <div className="record-card__id">{ui("Συμβάσεις: ")}{row.contractCount.toLocaleString(ui.locale)}</div>
                 </div>
                 <h3>
                   <BeneficiaryLink
@@ -188,17 +196,17 @@ export default function FeaturedRecordsSection({
                   />
                 </h3>
                 <div className="record-card__amount">{formatEur(row.totalAmount)}</div>
-                <div className="record-card__tags" aria-label="Μεταδεδομένα δικαιούχου">
-                  <span>CPV: {row.cpv}</span>
-                  <span>Έναρξη: {row.startDate}</span>
+                <div className="record-card__tags" aria-label={ui("Μεταδεδομένα δικαιούχου")}>
+                  <span>CPV: {ui.description(row.cpv)}</span>
+                  <span>{ui("Έναρξη: ")}{row.sourceDates ? ui.format.date(row.sourceDates.start) : row.startDate}</span>
                 </div>
                 <div className="record-duration">
                   <div className="record-duration__head">
-                    <span>Διάρκεια: {row.duration}</span>
-                    <span>Λήξη: {row.endDate}</span>
+                    <span>{ui("Διάρκεια: ")}{row.sourceDates ? row.sourceDates.durationDays == null ? '—' : ui('{{v0}} ημέρες', { v0: Math.round(row.sourceDates.durationDays) }) : row.duration}</span>
+                    <span>{ui("Λήξη: ")}{row.sourceDates ? ui.format.date(row.sourceDates.end) : row.endDate}</span>
                   </div>
                   {progressPct != null && (
-                    <div className="record-duration__track" aria-label="Πρόοδος διάρκειας έργου">
+                    <div className="record-duration__track" aria-label={ui("Πρόοδος διάρκειας έργου")}>
                       <div
                         className="record-duration__fill"
                         style={{ width: `${progressPct}%` }}
@@ -206,23 +214,24 @@ export default function FeaturedRecordsSection({
                       <div
                         className="record-duration__today"
                         style={{ left: `${progressPct}%` }}
-                        title="Σήμερα"
+                        title={ui("Σήμερα")}
                       />
                     </div>
                   )}
                 </div>
                 {row.relevantContracts.length > 0 && (
-                  <div className="record-contract-amounts" aria-label="Σχετικές συμβάσεις">
-                    <div className="record-contract-amounts__title">Σχετικές συμβάσεις</div>
+                  <div className="record-contract-amounts" aria-label={ui("Σχετικές συμβάσεις")}>
+                    <div className="record-contract-amounts__title">{ui("Σχετικές συμβάσεις")}</div>
                     <ul>
                       {row.relevantContracts.map((contract) => (
                         <li key={`${row.beneficiary}-contract-${contract.id}`}>
                           <button
                             type="button"
                             className="record-contract-link"
+                            lang="el"
                             onClick={() => onOpenContract(contract)}
                           >
-                            {contract.what} - {contract.withoutVatAmount}
+                            {contract.what} - {contract.sourceValues ? ui.format.currency(contract.sourceValues.withoutVat, { maximumFractionDigits: 0 }) : contract.withoutVatAmount}
                           </button>
                         </li>
                       ))}
@@ -231,11 +240,11 @@ export default function FeaturedRecordsSection({
                 )}
                 <div className="record-card__footer">
                   <div>
-                    <span className="label">Οργανισμός</span>
-                    <strong>{row.organization}</strong>
+                    <span className="label">{ui("Οργανισμός")}</span>
+                    <strong>{ui.organization(row.organization)}</strong>
                   </div>
                   <div>
-                    <span className="label">Υπογράφων</span>
+                    <span className="label">{ui("Υπογράφων")}</span>
                     <strong>{row.signer}</strong>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useEffect, useRef, useState } from 'react'
 import ComponentTag from './ComponentTag'
 import DataLoadingCard from './DataLoadingCard'
@@ -26,7 +27,7 @@ function cleanText(value: unknown): string | null {
   return text
 }
 
-function formatDateEl(value: string | null, includeTime = false): string {
+function formatDateEl(value: string | null, includeTime = false, ui: OverviewUi = greekOverviewUi): string {
   if (!value) return '—'
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return '—'
@@ -39,14 +40,14 @@ function formatDateEl(value: string | null, includeTime = false): string {
     options.hour = '2-digit'
     options.minute = '2-digit'
   }
-  return new Intl.DateTimeFormat('el-GR', options).format(date)
+  return new Intl.DateTimeFormat(ui.locale, options).format(date)
 }
 
-function formatTimeEl(value: string | null): string {
+function formatTimeEl(value: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!value) return '—'
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     hour: '2-digit',
     minute: '2-digit',
   }).format(date)
@@ -78,6 +79,7 @@ function buildNewsArticle(row: NewsTickerRpcRow): NewsArticleCardView | null {
 }
 
 export default function NewsTicker() {
+  const ui = useOverviewUi()
   const itemsRef = useRef<HTMLDivElement | null>(null)
   const [items, setItems] = useState<NewsArticleCardView[]>([])
   const [loading, setLoading] = useState(true)
@@ -181,19 +183,19 @@ export default function NewsTicker() {
   }
 
   return (
-    <section className="news-ticker news-wire section-rule dev-tag-anchor" aria-label="Ροή ειδήσεων πυρκαγιών">
+    <section className="news-ticker news-wire section-rule dev-tag-anchor" aria-label={ui("Ροή ειδήσεων πυρκαγιών")}>
       <div className="dev-tag-stack dev-tag-stack--right">
         <ComponentTag name="NewsTicker" />
         <ComponentTag name="news-ticker news-wire section-rule" kind="CLASS" />
       </div>
       <div className="news-wire__label dev-tag-anchor">
-        <span className="eyebrow">ειδήσεις</span>
-        <strong>Τα τελευταία ρεπορτάζ για δασικές πυρκαγιές</strong><p className="note-text">Περάστε το ποντίκι πάνω από ένα άρθρο για να αποκαλυφθεί στον χάρτη η γεωγραφική θέση της πυρκαγιάς εφόσον αυτή παραμένει ενεργή.</p>
-        <div className="news-wire__pager" aria-label="Πλοήγηση άρθρων ειδήσεων">
+        <span className="eyebrow">{ui("ειδήσεις")}</span>
+        <strong>{ui("Τα τελευταία ρεπορτάζ για δασικές πυρκαγιές")}</strong><p className="note-text">{ui("Περάστε το ποντίκι πάνω από ένα άρθρο για να αποκαλυφθεί στον χάρτη η γεωγραφική θέση της πυρκαγιάς εφόσον αυτή παραμένει ενεργή.")}</p>
+        <div className="news-wire__pager" aria-label={ui("Πλοήγηση άρθρων ειδήσεων")}>
           <button
             type="button"
             className="news-wire__pager-button"
-            aria-label="Προηγούμενο άρθρο"
+            aria-label={ui("Προηγούμενο άρθρο")}
             onClick={() => scrollNews(-1)}
             disabled={loading || !canScrollPrev}
           >
@@ -202,7 +204,7 @@ export default function NewsTicker() {
           <button
             type="button"
             className="news-wire__pager-button"
-            aria-label="Επόμενο άρθρο"
+            aria-label={ui("Επόμενο άρθρο")}
             onClick={() => scrollNews(1)}
             disabled={loading || !canScrollNext}
           >
@@ -214,7 +216,7 @@ export default function NewsTicker() {
         {loading && (
           <DataLoadingCard
             className="news-wire__loading-card"
-            message="Ανακτώνται τα τελευταία ρεπορτάζ πυρκαγιών."
+            message={ui("Ανακτώνται τα τελευταία ρεπορτάζ πυρκαγιών.")}
           />
         )}
         {!loading && items.map((item, index) => (
@@ -226,12 +228,12 @@ export default function NewsTicker() {
         ))}
         {!loading && loadFailed && (
           <article className="wire-item news-article-card">
-            <h2>Δεν ήταν δυνατή η φόρτωση των τελευταίων ρεπορτάζ.</h2>
+            <h2>{ui("Δεν ήταν δυνατή η φόρτωση των τελευταίων ρεπορτάζ.")}</h2>
           </article>
         )}
         {!loading && !loadFailed && items.length === 0 && (
           <article className="wire-item news-article-card">
-            <h2>Δεν βρέθηκαν πρόσφατα ρεπορτάζ.</h2>
+            <h2>{ui("Δεν βρέθηκαν πρόσφατα ρεπορτάζ.")}</h2>
           </article>
         )}
       </div>

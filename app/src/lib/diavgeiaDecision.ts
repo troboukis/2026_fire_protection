@@ -41,6 +41,7 @@ function formatEur(value: string | null | undefined): string | null {
 
 export function buildDiavgeiaDecisionCardView(row: MunicipalityDiavgeiaDecisionRpcRow): DiavgeiaDecisionCardView {
   const ada = cleanText(row.ada)
+  const amountCents = parseDiavgeiaAmountCents(row.spending_contractors_value)
   return {
     id: `diavgeia-${row.diavgeia_id}`,
     orgType: cleanText(row.org_type) ?? '—',
@@ -50,6 +51,7 @@ export function buildDiavgeiaDecisionCardView(row: MunicipalityDiavgeiaDecisionR
     ada: ada ?? '—',
     decisionTypeUid: cleanText(row.diavgeia_document_type_decision_uid) ?? '—',
     amount: formatEur(row.spending_contractors_value),
+    amountEur: amountCents == null ? null : amountCents / 100,
     documentUrl: cleanText(row.document_url) ?? (ada ? `https://diavgeia.gov.gr/doc/${ada}` : null),
     sortDate: cleanText(row.decision_date),
     municipalityKey: cleanText(row.municipality_key),

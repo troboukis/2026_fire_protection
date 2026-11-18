@@ -1,7 +1,9 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { MouseEvent as ReactMouseEvent } from 'react'
 import * as d3 from 'd3'
-import { Link } from 'react-router-dom'
+import { LocalizedLink as Link } from '../routing/LocalizedLink'
 import ComponentTag from './ComponentTag'
 import ContractModal, { type ContractModalContract } from './ContractModal'
 import DataLoadingCard from './DataLoadingCard'
@@ -198,7 +200,7 @@ type WorkPointTooltip = {
   x: number
   y: number
   title: string
-  items: string[]
+  point: WorkPoint
 }
 
 type DashboardDiavgeiaDecision = DiavgeiaDecisionCardView
@@ -255,32 +257,32 @@ function normalizeDate(value: unknown): string | null {
   return parsed.toISOString().slice(0, 10)
 }
 
-function formatDateEl(iso: string | null): string {
+function formatDateEl(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(dt)
 }
 
-function formatEur(value: number | null): string {
+function formatEur(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null || Number.isNaN(value)) return '—'
-  return value.toLocaleString('el-GR', {
+  return value.toLocaleString(ui.locale, {
     style: 'currency',
     currency: 'EUR',
     maximumFractionDigits: 0,
   })
 }
 
-function formatEurCompact(value: number): string {
+function formatEurCompact(value: number, ui: OverviewUi = greekOverviewUi): string {
   if (!Number.isFinite(value)) return '—'
   const abs = Math.abs(value)
   if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(value / 1_000).toFixed(0)}K €`
-  return `${Math.round(value).toLocaleString('el-GR')} €`
+  return `${Math.round(value).toLocaleString(ui.locale)} €`
 }
 
 function parseGreekAmount(value: unknown): number | null {
@@ -295,25 +297,25 @@ function parseGreekAmount(value: unknown): number | null {
   return Number.isFinite(amount) && amount > 0 ? amount : null
 }
 
-function formatEurFromGreekText(value: unknown): string | null {
+function formatEurFromGreekText(value: unknown, ui: OverviewUi = greekOverviewUi): string | null {
   const amount = parseGreekAmount(value)
-  return amount == null ? null : formatEur(amount)
+  return amount == null ? null : formatEur(amount, ui)
 }
 
-function formatDirectAwardBreakdownNote(total: number, shareLabel: string, withAuction: number, withoutAuction: number): string {
+function formatDirectAwardBreakdownNote(total: number, shareLabel: string, withAuction: number, withoutAuction: number, ui: OverviewUi = greekOverviewUi): string {
   if (total <= 0) {
-    return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) δόθηκαν με απευθείας ανάθεση.`
+    return ui("Εξ αυτών τα {{v0}} ({{v1}}) δόθηκαν με απευθείας ανάθεση.", { v0: formatEur(total, ui), v1: shareLabel })
   }
 
   if (withAuction > 0 && withoutAuction <= 0) {
-    return `Εξ αυτών, τα ${formatEur(total)} (${shareLabel}), σύμφωνα με το ΚΙΜΔΙΣ, δόθηκαν με απευθείας αναθέσεις. Στην πραγματικότητα, όμως, προηγήθηκε πρόσκληση υποβολής προσφορών προς συγκεκριμένες εταιρείες και επιλέχθηκαν εκείνες με τη χαμηλότερη τιμή. Ουσιαστικά, πρόκειται για συμβάσεις που εμπίπτουν σε ειδικό καθεστώς βάσει του ν. 998/1979, το οποίο προβλέπει την ανάθεση δασικών εργασιών με ειδικές διαδικασίες.`
+    return ui("Εξ αυτών, τα {{v0}} ({{v1}}), σύμφωνα με το ΚΙΜΔΙΣ, δόθηκαν με απευθείας αναθέσεις. Στην πραγματικότητα, όμως, προηγήθηκε πρόσκληση υποβολής προσφορών προς συγκεκριμένες εταιρείες και επιλέχθηκαν εκείνες με τη χαμηλότερη τιμή. Ουσιαστικά, πρόκειται για συμβάσεις που εμπίπτουν σε ειδικό καθεστώς βάσει του ν. 998/1979, το οποίο προβλέπει την ανάθεση δασικών εργασιών με ειδικές διαδικασίες.", { v0: formatEur(total, ui), v1: shareLabel })
   }
 
   if (withAuction <= 0 && withoutAuction > 0) {
-    return `Εξ αυτών τα ${formatEur(total)} (${shareLabel}) σύμφωνα με το ΚΙΜΔΙΣ δόθηκαν με απευθείας αναθέσεις, χωρίς πρόσκληση υποβολής προτάσεων. Παρατηρούμε ότι η πλειονότητα των συμβάσεων για δασικά έργα του Υπουργείου Περιβάλλοντος κάνουν χρήση του νόμου 998/1979 άρθρο 16§5, σύμφωνα με το οποίο επιτρέπεται η ανάθεση δασικών εργασιών με ειδικές διαδικασίες, εκτός τυπικών διαγωνισμών δημοσίων συμβάσεων.`
+    return ui("Εξ αυτών τα {{v0}} ({{v1}}) σύμφωνα με το ΚΙΜΔΙΣ δόθηκαν με απευθείας αναθέσεις, χωρίς πρόσκληση υποβολής προτάσεων. Παρατηρούμε ότι η πλειονότητα των συμβάσεων για δασικά έργα του Υπουργείου Περιβάλλοντος κάνουν χρήση του νόμου 998/1979 άρθρο 16§5, σύμφωνα με το οποίο επιτρέπεται η ανάθεση δασικών εργασιών με ειδικές διαδικασίες, εκτός τυπικών διαγωνισμών δημοσίων συμβάσεων.", { v0: formatEur(total, ui), v1: shareLabel })
   }
 
-  return `Από την οποία το ${shareLabel} σύμφωνα με το ΚΙΜΔΙΣ δόθηκαν με απευθείας αναθέσεις, ωστόσο σε περιλαμβάνουν συμβάσεις που κάνουν χρήση του νόμου 998/1979.`
+  return ui("Από την οποία το {{v0}} σύμφωνα με το ΚΙΜΔΙΣ δόθηκαν με απευθείας αναθέσεις, ωστόσο σε περιλαμβάνουν συμβάσεις που κάνουν χρήση του νόμου 998/1979.", { v0: shareLabel })
 }
 
 function toUpperEl(value: string | null): string {
@@ -363,6 +365,15 @@ function mapRpcContract(contract: DashboardRpcContract, ministryName: string): D
   const noEndDate = Boolean(contract.no_end_date)
 
   return {
+    sourceValues: {
+      submittedAt: normalizeDate(contract.when),
+      signedAt: signedAtIso,
+      startDate: startDateIso,
+      endDate: endDateIso,
+      noEndDate,
+      withoutVat: amountWithoutVat,
+      withVat: amountWithVat,
+    },
     id: String(contract.id),
     who: cleanText(contract.who) ?? ministryName,
     what: cleanText(contract.what) ?? '—',
@@ -425,6 +436,7 @@ function mapRpcDiavgeiaDecision(row: DashboardRpcDiavgeiaDecision, ministryName:
     ada,
     decisionTypeUid: cleanText(row.diavgeia_document_type_decision_uid) ?? '—',
     amount: formatEurFromGreekText(row.spending_contractors_value),
+    amountEur: parseGreekAmount(row.spending_contractors_value),
     documentUrl: cleanText(row.document_url) ?? (ada !== '—' ? `https://diavgeia.gov.gr/doc/${ada}` : null),
     sortDate: decisionDateIso,
     municipalityKey: cleanText(row.municipality_key),
@@ -471,6 +483,8 @@ function EnvironmentWorksMap({
   workPoints: WorkPoint[]
   onOpenContract: (procurementId: string) => void
 }) {
+  const ui = useOverviewUi()
+  const { category } = useProcurementI18n()
   const [geojson, setGeojson] = useState<GeoData | null>(null)
   const [tooltip, setTooltip] = useState<WorkPointTooltip | null>(null)
   const [terrainFailed, setTerrainFailed] = useState(false)
@@ -553,9 +567,9 @@ function EnvironmentWorksMap({
   }
 
   const getTooltipItems = (point: WorkPoint) => [
-    `Κόστος χωρίς ΦΠΑ: ${formatEur(point.amountWithoutVat)}`,
-    `Ανάδοχος: ${point.beneficiary}`,
-    `Ανάθεση: ${point.assignmentType}`,
+    ui("Κόστος χωρίς ΦΠΑ: {{v0}}", { v0: formatEur(point.amountWithoutVat, ui) }),
+    ui("Ανάδοχος: {{v0}}", { v0: point.beneficiary }),
+    ui("Ανάθεση: {{v0}}", { v0: category(point.assignmentType) }),
   ]
 
   const updatePointTooltip = (
@@ -568,7 +582,7 @@ function EnvironmentWorksMap({
       x: pointer.x,
       y: pointer.y,
       title: point.contractTitle,
-      items: getTooltipItems(point),
+      point,
     })
   }
 
@@ -585,7 +599,7 @@ function EnvironmentWorksMap({
             x: pointer.x,
             y: pointer.y,
             title: point.contractTitle,
-            items: getTooltipItems(point),
+            point,
           }
     ))
   }
@@ -645,11 +659,11 @@ function EnvironmentWorksMap({
   }, [geojson, isCompactViewport, mapTilerApiKey, workPoints])
 
   if (!mapData) {
-    return <DataLoadingCard className="environment-map environment-map--loading" compact message="Προετοιμάζεται ο χάρτης εργασιών του ΥΠΕΝ." />
+    return <DataLoadingCard className="environment-map environment-map--loading" compact message={ui("Προετοιμάζεται ο χάρτης εργασιών του ΥΠΕΝ.")} />
   }
 
   if (!mapData.points.length) {
-    return <div className="environment-map environment-map--empty">Δεν βρέθηκαν γεωκωδικοποιημένες εργασίες για τις συμβάσεις του 2026.</div>
+    return <div className="environment-map environment-map--empty">{ui("Δεν βρέθηκαν γεωκωδικοποιημένες εργασίες για τις συμβάσεις του 2026.")}</div>
   }
 
   return (
@@ -665,7 +679,7 @@ function EnvironmentWorksMap({
         <svg
           viewBox={`0 0 ${mapData.width} ${mapData.height}`}
           role="img"
-          aria-label="Χάρτης εργασιών συμβάσεων Υπουργείου Περιβάλλοντος"
+          aria-label={ui("Χάρτης εργασιών συμβάσεων Υπουργείου Περιβάλλοντος")}
           preserveAspectRatio="xMidYMid meet"
         >
         <defs>
@@ -749,8 +763,8 @@ function EnvironmentWorksMap({
             top: `${Math.max(12, tooltip.y - 14)}px`,
           }}
         >
-          <strong>{tooltip.title}</strong>
-          {tooltip.items.map((item) => (
+          <strong lang="el">{tooltip.title}</strong>
+          {getTooltipItems(tooltip.point).map((item) => (
             <span key={item}>{item}</span>
           ))}
         </div>
@@ -762,10 +776,10 @@ function EnvironmentWorksMap({
             setTooltip(null)
             setShowWorkPoints((visible) => !visible)
           }}
-          label="Σημεία εργασιών"
+          label={ui("Σημεία εργασιών")}
         >
           <span className="environment-map__legend-dot" aria-hidden="true" />
-          <span>{`${mapData.points.length.toLocaleString('el-GR')} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το ${CURRENT_YEAR}`}</span>
+          <span>{ui("{{v0}} σημεία εργασιών από συμβάσεις που υπογράφηκαν ή παρέμειναν ενεργές το {{v1}}", { v0: mapData.points.length.toLocaleString(ui.locale), v1: CURRENT_YEAR })}</span>
         </MapLegendToggle>
       </div>
     </div>
@@ -784,6 +798,7 @@ function mapTopCpvRows(rows: DashboardRpcTopCpv[] | null | undefined): TopCpvRow
 }
 
 export default function EnvironmentMinistryDashboard() {
+  const ui = useOverviewUi()
   const [data, setData] = useState<DashboardData>(createEmptyDashboardData())
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -930,11 +945,13 @@ export default function EnvironmentMinistryDashboard() {
     directAwardShareLabel,
     data.directAwardWithAuctionAmount,
     data.directAwardWithoutAuctionAmount,
+    ui,
   ), [
     data.directAwardAmount,
     data.directAwardWithAuctionAmount,
     data.directAwardWithoutAuctionAmount,
     directAwardShareLabel,
+    ui,
   ])
 
   const currentYearDirectAwardBreakdownNote = useMemo(() => formatDirectAwardBreakdownNote(
@@ -942,46 +959,48 @@ export default function EnvironmentMinistryDashboard() {
     currentYearDirectAwardShareLabel,
     data.currentYearDirectAwardWithAuctionAmount,
     data.currentYearDirectAwardWithoutAuctionAmount,
+    ui,
   ), [
     data.currentYearDirectAwardAmount,
     data.currentYearDirectAwardWithAuctionAmount,
     data.currentYearDirectAwardWithoutAuctionAmount,
     currentYearDirectAwardShareLabel,
+    ui,
   ])
 
-  const topCpvLabelCurrentYear = data.currentYearTopCpvs[0]?.label ?? 'Χωρίς διαθέσιμη κατηγορία εργασιών'
-  const topCpvLabelActiveContract = data.activeContractTopCpvs[0]?.label ?? 'Χωρίς διαθέσιμη κατηγορία εργασιών'
+  const topCpvLabelCurrentYear = (data.currentYearTopCpvs[0] ? ui.cpv(data.currentYearTopCpvs[0].code, data.currentYearTopCpvs[0].label) : null) ?? ui("Χωρίς διαθέσιμη κατηγορία εργασιών")
+  const topCpvLabelActiveContract = (data.activeContractTopCpvs[0] ? ui.cpv(data.activeContractTopCpvs[0].code, data.activeContractTopCpvs[0].label) : null) ?? ui("Χωρίς διαθέσιμη κατηγορία εργασιών")
 
   const heroCards = useMemo(() => [
     {
       eyebrow: `${FIRST_YEAR} - ${CURRENT_YEAR}`,
-      label: 'Συνολική δαπάνη πυροπροστασίας',
-      value: formatEurCompact(data.totalSpend),
+      label: ui("Συνολική δαπάνη πυροπροστασίας"),
+      value: formatEurCompact(data.totalSpend, ui),
       note: directAwardBreakdownNote,
       tone: 'ink' as const,
     },
     {
       eyebrow: `${CURRENT_YEAR}`,
-      label: `Νέες συμβάσεις`,
-      value: data.signed2026Count.toLocaleString('el-GR'),
-      note: `${topCpvLabelCurrentYear} η πιο συχνή κατηγορία εργασιών.`,
+      label: ui("Νέες συμβάσεις"),
+      value: data.signed2026Count.toLocaleString(ui.locale),
+      note: ui("{{v0}} η πιο συχνή κατηγορία εργασιών.", { v0: topCpvLabelCurrentYear }),
       tone: 'default' as const,
     },
     {
       eyebrow: 'Active',
-      label: `Παλιότερες συμβάσεις που είναι ενεργές* το ${CURRENT_YEAR}`,
-      value: data.activeCarryoverCount.toLocaleString('el-GR'),
-      note: `${topCpvLabelActiveContract} η πιο συχνή κατηγορία στις παλιότερες ενεργές συμβάσεις.`,
+      label: ui("Παλιότερες συμβάσεις που είναι ενεργές* το {{v0}}", { v0: CURRENT_YEAR }),
+      value: data.activeCarryoverCount.toLocaleString(ui.locale),
+      note: ui("{{v0}} η πιο συχνή κατηγορία στις παλιότερες ενεργές συμβάσεις.", { v0: topCpvLabelActiveContract }),
       tone: 'default' as const,
     },
     {
-      eyebrow: 'Δικαιούχοι',
-      label: `Εταιρείες ανέλαβαν ${data.signed2026Count.toLocaleString('el-GR')} έργα το ${CURRENT_YEAR}`,
-      value: data.currentYearBeneficiaryCount.toLocaleString('el-GR'),
-      note: 'Αφορά μόνο νέες συμβάσεις που υπεγράφησαν μέσα στο έτος.',
+      eyebrow: ui("Δικαιούχοι"),
+      label: ui("Εταιρείες ανέλαβαν {{v0}} έργα το {{v1}}", { v0: data.signed2026Count.toLocaleString(ui.locale), v1: CURRENT_YEAR }),
+      value: data.currentYearBeneficiaryCount.toLocaleString(ui.locale),
+      note: ui("Αφορά μόνο νέες συμβάσεις που υπεγράφησαν μέσα στο έτος."),
       tone: 'accent' as const,
     },
-  ], [data.activeCarryoverCount, data.currentYearBeneficiaryCount, data.signed2026Count, data.totalSpend, directAwardBreakdownNote, topCpvLabelActiveContract, topCpvLabelCurrentYear])
+  ], [data.activeCarryoverCount, data.currentYearBeneficiaryCount, data.signed2026Count, data.totalSpend, directAwardBreakdownNote, topCpvLabelActiveContract, topCpvLabelCurrentYear, ui])
 
   const featuredBeneficiaryRows = useMemo<BeneficiaryInsightRow[]>(() => {
     type BeneficiaryGroup = {
@@ -1079,15 +1098,17 @@ export default function EnvironmentMinistryDashboard() {
           })
 
         let duration = '—'
+        let durationDays: number | null = null
         let progressPct: number | null = null
-        const endDate = formatDateEl(group.endDateIso)
+        const endDate = formatDateEl(group.endDateIso, ui)
 
         if (group.startDateIso && group.endDateIso) {
           const start = new Date(group.startDateIso)
           const end = new Date(group.endDateIso)
           if (!Number.isNaN(start.getTime()) && !Number.isNaN(end.getTime()) && end >= start) {
             const days = Math.round((end.getTime() - start.getTime()) / 86_400_000) + 1
-            duration = `${days} ημέρες`
+            durationDays = days
+            duration = ui("{{v0}} ημέρες", { v0: days })
           }
           if (end > start) {
             if (today <= start) progressPct = 0
@@ -1104,11 +1125,12 @@ export default function EnvironmentMinistryDashboard() {
           totalAmount: group.totalAmount,
           contractCount: group.contractIds.size,
           cpv,
-          startDate: formatDateEl(group.startDateIso),
+          startDate: formatDateEl(group.startDateIso, ui),
+          sourceDates: { start: group.startDateIso, end: group.endDateIso, durationDays },
           endDate,
           duration,
           progressPct,
-          signer,
+          signer: ui(signer),
           relevantContracts: relevantContracts as FeaturedRecordContract[],
         }
       })
@@ -1117,7 +1139,7 @@ export default function EnvironmentMinistryDashboard() {
         if (b.contractCount !== a.contractCount) return b.contractCount - a.contractCount
         return a.beneficiary.localeCompare(b.beneficiary, 'el')
       })
-  }, [data.ministryName, data.recentActiveContracts])
+  }, [data.ministryName, data.recentActiveContracts, ui])
 
   const recentActivityItems = useMemo(() => {
     const activityItems: Array<
@@ -1206,26 +1228,26 @@ export default function EnvironmentMinistryDashboard() {
 
         <header className="environment-dashboard__hero">
           <div className="environment-dashboard__hero-copy">
-            <div className="eyebrow">Υπουργείο Περιβάλλοντος</div>
-            <h1>{`Το ${CURRENT_YEAR} δαπάνησε ${formatEur(data.signedCurrentAmount)} σε εργασίες πυροπροστασίας`}</h1>
+            <div className="eyebrow">{ui("Υπουργείο Περιβάλλοντος")}</div>
+            <h1>{ui("Το {{v0}} δαπάνησε {{v1}} σε εργασίες πυροπροστασίας", { v0: CURRENT_YEAR, v1: formatEur(data.signedCurrentAmount, ui) })}</h1>
             <p>
-              {`${currentYearDirectAwardBreakdownNote} Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το ${CURRENT_YEAR}.`}
+              {ui("{{v0}} Το ποσό αφορά νέες συμβάσεις και όχι παλιότερες συμβάσεις που είναι ενεργές* το {{v1}}.", { v0: currentYearDirectAwardBreakdownNote, v1: CURRENT_YEAR })}
             </p>
           </div>
           <div className="environment-dashboard__hero-year" aria-hidden="true">{CURRENT_YEAR}</div>
         </header>
 
         {loading && (
-          <DataLoadingCard className="environment-dashboard__loading" message={`Ανακτώνται τα συγκεντρωτικά στοιχεία του ${data.ministryName}.`} />
+          <DataLoadingCard className="environment-dashboard__loading" message={ui("Ανακτώνται τα συγκεντρωτικά στοιχεία του {{v0}}.", { v0: ui.organization(data.ministryName) })} />
         )}
 
         {!loading && error && (
-          <div className="environment-dashboard__error">{error}</div>
+          <div className="environment-dashboard__error">{ui(error)}</div>
         )}
 
         {!loading && !error && (
           <>
-            <div className="environment-dashboard__metrics" aria-label="Κύριες μετρήσεις ΥΠΕΝ">
+            <div className="environment-dashboard__metrics" aria-label={ui("Κύριες μετρήσεις ΥΠΕΝ")}>
               {heroCards.map((card) => (
                 <ProfileMetricCard
                   key={card.label}
@@ -1241,9 +1263,9 @@ export default function EnvironmentMinistryDashboard() {
             <div className="environment-dashboard__grid">
               <div ref={mapCardRef} className="environment-dashboard__map-panel">
                 <ProfileSectionCard
-                  eyebrow="Χάρτης εργασιών"
-                  title="Πού εκτελούνται οι παρεμβάσεις"
-                  subtitle={`Ο χάρτης αποτυπώνει ${data.workPoints.length.toLocaleString('el-GR')} σημεία εργασιών που καταφέραμε να γεωεντοπίσουμε με αυτοματοποιημένο τρόπο από τις ${data.signed2026Count.toLocaleString('el-GR')} νέες συμβάσεις που υπογράφηκαν το ${CURRENT_YEAR}.`}
+                  eyebrow={ui("Χάρτης εργασιών")}
+                  title={ui("Πού εκτελούνται οι παρεμβάσεις")}
+                  subtitle={ui("Ο χάρτης αποτυπώνει {{v0}} σημεία εργασιών που καταφέραμε να γεωεντοπίσουμε με αυτοματοποιημένο τρόπο από τις {{v1}} νέες συμβάσεις που υπογράφηκαν το {{v2}}.", { v0: data.workPoints.length.toLocaleString(ui.locale), v1: data.signed2026Count.toLocaleString(ui.locale), v2: CURRENT_YEAR })}
                   className="environment-section environment-section--map"
                 >
                   <EnvironmentWorksMap
@@ -1377,9 +1399,9 @@ export default function EnvironmentMinistryDashboard() {
               </div>
 
               <ProfileSectionCard
-                eyebrow="Τελευταίες"
-                title={`${recentActivityItems.length.toLocaleString('el-GR')} εγγραφές`}
-                subtitle="Συμβάσεις ΚΗΜΔΗΣ και αποφάσεις Διαύγειας των τελευταίων 30 ημερών, από την πιο πρόσφατη στην παλαιότερη."
+                eyebrow={ui("Τελευταίες")}
+                title={ui("{{v0}} εγγραφές", { v0: recentActivityItems.length.toLocaleString(ui.locale) })}
+                subtitle={ui("Συμβάσεις ΚΗΜΔΗΣ και αποφάσεις Διαύγειας των τελευταίων 30 ημερών, από την πιο πρόσφατη στην παλαιότερη.")}
                 className="environment-section environment-section--recent-contracts"
                 style={isDesktopGrid && mapCardHeight ? { height: `${mapCardHeight}px` } : undefined}
               >
@@ -1388,7 +1410,7 @@ export default function EnvironmentMinistryDashboard() {
                 >
                   <div className="environment-active-contracts">
                     {recentActivityItems.length === 0 && (
-                      <div className="environment-contracts__empty">Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας τις τελευταίες 30 ημέρες.</div>
+                      <div className="environment-contracts__empty">{ui("Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας τις τελευταίες 30 ημέρες.")}</div>
                     )}
 
                     {recentActivityItems.map((item) => (
@@ -1410,11 +1432,9 @@ export default function EnvironmentMinistryDashboard() {
                   </div>
                 </div>
                 <Link className="news-wire__all-link environment-active-contracts__all-link" to={allContractsHref}>
-                  Όλες οι συμβάσεις ΚΗΜΔΗΣ
-                </Link>
+                  {ui("Όλες οι συμβάσεις ΚΗΜΔΗΣ")}</Link>
                 <Link className="news-wire__all-link environment-active-contracts__all-link" to={allDiavgeiaHref}>
-                  Όλες οι αποφάσεις Διαύγειας
-                </Link>
+                  {ui("Όλες οι αποφάσεις Διαύγειας")}</Link>
               </ProfileSectionCard>
             </div>
 
@@ -1427,13 +1447,13 @@ export default function EnvironmentMinistryDashboard() {
         year={String(CURRENT_YEAR)}
         rows={featuredBeneficiaryRows}
         loading={loading}
-        formatEur={formatEur}
+        formatEur={(value) => formatEur(value, ui)}
         onOpenContract={(contract) => setSelectedContract(contract as DashboardContract)}
-        eyebrowText={`Αναθέσεις`}
-        title="Οι εταιρείες που ανέλαβαν έργα πυροπροστασίας"
-        note={`Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων του ${data.ministryName}.`}
-        footerNote={<>* Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {CURRENT_YEAR}, είτε υπεγράφησαν πριν το {CURRENT_YEAR} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {CURRENT_YEAR}.</>}
-        emptyMessage="Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για το Υπουργείο Περιβάλλοντος."
+        eyebrowText={ui("Αναθέσεις")}
+        title={ui("Οι εταιρείες που ανέλαβαν έργα πυροπροστασίας")}
+        note={ui("Οι ανάδοχοι ταξινομούνται με βάση το συνολικό ποσό των ενεργών* συμβάσεων του {{v0}}.", { v0: ui.organization(data.ministryName) })}
+        footerNote={<>{ui("* Ως ")}<strong>{ui("ενεργές")}</strong> {ui("συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το ")}{CURRENT_YEAR}{ui(", είτε υπεγράφησαν πριν το ")}{CURRENT_YEAR} {ui("αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του ")}{CURRENT_YEAR}.</>}
+        emptyMessage={ui("Δεν βρέθηκαν δικαιούχοι ενεργών συμβάσεων για το Υπουργείο Περιβάλλοντος.")}
       />
 
       {selectedContract && (

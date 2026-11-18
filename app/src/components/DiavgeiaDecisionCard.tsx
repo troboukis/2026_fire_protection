@@ -1,5 +1,6 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import { useState, type KeyboardEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { LocalizedLink as Link } from '../routing/LocalizedLink'
 import DiavgeiaModal from './DiavgeiaModal'
 
 export type DiavgeiaDecisionCardView = {
@@ -11,6 +12,7 @@ export type DiavgeiaDecisionCardView = {
   ada: string
   decisionTypeUid: string
   amount?: string | null
+  amountEur?: number | null
   documentUrl?: string | null
   sortDate?: string | null
   municipalityKey?: string | null
@@ -30,8 +32,9 @@ function isMunicipalityOrgType(value: string): boolean {
 }
 
 export default function DiavgeiaDecisionCard({ item }: Props) {
+  const { p, t, format, category, organization: organizationText } = useProcurementI18n()
   const [modalOpen, setModalOpen] = useState(false)
-  const organization = [item.orgType, item.orgNameClean].filter((part) => part && part !== '—').join(' · ') || '—'
+  const organization = [category(item.orgType), organizationText(item.orgNameClean)].filter((part) => part && part !== '—').join(' · ') || '—'
   const documentUrl = item.documentUrl ?? (item.ada && item.ada !== '—' ? `https://diavgeia.gov.gr/doc/${item.ada}` : null)
   const visibleSubject = item.subject.trim() || '—'
   const isMunicipality = isMunicipalityOrgType(item.orgType) && !!item.municipalityKey
@@ -53,10 +56,10 @@ export default function DiavgeiaDecisionCard({ item }: Props) {
         onKeyDown={handleKeyDown}
       >
         <div className="wire-item__head">
-          <span className="eyebrow wire-item__org">Διαύγεια</span>
-          <span className="wire-item__date">{item.when}</span>
+          <span className="eyebrow wire-item__org">{t('navigation:diavgeia')}</span>
+          <span className="wire-item__date">{item.sortDate ? format.date(item.sortDate) : item.when}</span>
         </div>
-        <h2 className="wire-item__title--four-lines" title={item.subject}>{visibleSubject}</h2>
+        <h2 className="wire-item__title--four-lines" lang="el" title={item.subject}>{visibleSubject}</h2>
         <div className="wire-item__rule" aria-hidden="true" />
         <p className="wire-item__subtitle">
           {isMunicipality ? (
@@ -72,8 +75,8 @@ export default function DiavgeiaDecisionCard({ item }: Props) {
         </p>
         <div className="wire-item__footer">
           <p className="wire-item__type">{item.ada}</p>
-          <p className="wire-item__type">{item.decisionTypeUid}</p>
-          {item.amount && <p className="diavgeia-decision-card__amount">{item.amount}</p>}
+          <p className="wire-item__type">{category(item.decisionTypeUid)}</p>
+          {item.amount && <p className="diavgeia-decision-card__amount">{item.amountEur !== undefined ? format.currency(item.amountEur, { maximumFractionDigits: 0 }) : item.amount}</p>}
         </div>
         {documentUrl && (
           <p className="wire-item__link">
@@ -84,7 +87,7 @@ export default function DiavgeiaDecisionCard({ item }: Props) {
               onClick={(e) => e.stopPropagation()}
               onKeyDown={(e) => e.stopPropagation()}
             >
-              Άνοιγμα απόφασης
+              {p('openDecision')}
             </a>
           </p>
         )}

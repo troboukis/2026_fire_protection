@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import { LocalizedLink as Link } from '../routing/LocalizedLink'
 import ComponentTag from './ComponentTag'
 
 type Props = {

@@ -32,7 +32,7 @@ describe('focused AntiNERO neighborhood', () => {
       expect(node.classes).toContain(`report-focus-neighbor--${neighbors.includes(node.id) ? 'left' : 'right'}`)
     }
     expect(html).not.toContain(`data-focus-node-id="${id}:other"`)
-    expect(html).toContain('Συνδεόμενα έγγραφα στη Διαύγεια')
+    expect(html).toContain('Επιλεγμένη σύμβαση &amp; έγγραφα από τη Διαύγεια')
     expect(html).not.toContain('report-focus-origin-title')
     expect(html).not.toMatch(/\sd="[^"]*[QC]\s/)
     expect(html).toContain('report-focus-line--beneficiary')
@@ -50,7 +50,7 @@ describe('focused AntiNERO neighborhood', () => {
       expect(node.classes).toContain('report-focus-neighbor--right')
       expect(node.classes).not.toContain('report-focus-neighbor--left')
     }
-    expect(html).toContain('Συνδεόμενα έγγραφα στη Διαύγεια')
+    expect(html).toContain('Επιλεγμένη σύμβαση &amp; έγγραφα από τη Διαύγεια')
   })
   it('omits all document categories when a contract has no documents', () => {
     const id = '23SYMV013156865'

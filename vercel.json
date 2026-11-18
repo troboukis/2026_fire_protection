@@ -1,9 +1,292 @@
 {
   "rewrites": [
-    { "source": "/analysis/west-attica-fire-2026", "destination": "/analysis/west-attica-fire-2026/index.html" },
-    { "source": "/analysis/statistics", "destination": "/analysis/statistics/index.html" },
-    { "source": "/analysis/antinero-west-attica", "destination": "/analysis/antinero-west-attica/index.html" },
-    { "source": "/analysis/yearly_report", "destination": "/analysis/yearly_report/index.html" },
-    { "source": "/((?!api/|assets/|analysis/west-attica-fire-2026/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)", "destination": "/index.html" }
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/en/",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/maps",
+      "destination": "/maps/index.html"
+    },
+    {
+      "source": "/maps/",
+      "destination": "/maps/index.html"
+    },
+    {
+      "source": "/en/maps",
+      "destination": "/en/maps/index.html"
+    },
+    {
+      "source": "/en/maps/",
+      "destination": "/en/maps/index.html"
+    },
+    {
+      "source": "/municipalities",
+      "destination": "/municipalities/index.html"
+    },
+    {
+      "source": "/municipalities/",
+      "destination": "/municipalities/index.html"
+    },
+    {
+      "source": "/en/municipalities",
+      "destination": "/en/municipalities/index.html"
+    },
+    {
+      "source": "/en/municipalities/",
+      "destination": "/en/municipalities/index.html"
+    },
+    {
+      "source": "/environment-ministry",
+      "destination": "/environment-ministry/index.html"
+    },
+    {
+      "source": "/environment-ministry/",
+      "destination": "/environment-ministry/index.html"
+    },
+    {
+      "source": "/en/environment-ministry",
+      "destination": "/en/environment-ministry/index.html"
+    },
+    {
+      "source": "/en/environment-ministry/",
+      "destination": "/en/environment-ministry/index.html"
+    },
+    {
+      "source": "/contracts",
+      "destination": "/contracts/index.html"
+    },
+    {
+      "source": "/contracts/",
+      "destination": "/contracts/index.html"
+    },
+    {
+      "source": "/en/contracts",
+      "destination": "/en/contracts/index.html"
+    },
+    {
+      "source": "/en/contracts/",
+      "destination": "/en/contracts/index.html"
+    },
+    {
+      "source": "/diavgeia",
+      "destination": "/diavgeia/index.html"
+    },
+    {
+      "source": "/diavgeia/",
+      "destination": "/diavgeia/index.html"
+    },
+    {
+      "source": "/en/diavgeia",
+      "destination": "/en/diavgeia/index.html"
+    },
+    {
+      "source": "/en/diavgeia/",
+      "destination": "/en/diavgeia/index.html"
+    },
+    {
+      "source": "/analysis",
+      "destination": "/analysis/index.html"
+    },
+    {
+      "source": "/analysis/",
+      "destination": "/analysis/index.html"
+    },
+    {
+      "source": "/en/analysis",
+      "destination": "/en/analysis/index.html"
+    },
+    {
+      "source": "/en/analysis/",
+      "destination": "/en/analysis/index.html"
+    },
+    {
+      "source": "/analysis/yearly_report",
+      "destination": "/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/analysis/yearly_report/",
+      "destination": "/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/en/analysis/yearly_report",
+      "destination": "/en/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/en/analysis/yearly_report/",
+      "destination": "/en/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/analysis/statistics",
+      "destination": "/analysis/statistics/index.html"
+    },
+    {
+      "source": "/analysis/statistics/",
+      "destination": "/analysis/statistics/index.html"
+    },
+    {
+      "source": "/en/analysis/statistics",
+      "destination": "/en/analysis/statistics/index.html"
+    },
+    {
+      "source": "/en/analysis/statistics/",
+      "destination": "/en/analysis/statistics/index.html"
+    },
+    {
+      "source": "/analysis/antinero-west-attica",
+      "destination": "/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/analysis/antinero-west-attica/",
+      "destination": "/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/en/analysis/antinero-west-attica",
+      "destination": "/en/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/en/analysis/antinero-west-attica/",
+      "destination": "/en/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/analysis/west-attica-fire-2026",
+      "destination": "/analysis/west-attica-fire-2026/index.html"
+    },
+    {
+      "source": "/analysis/west-attica-fire-2026/",
+      "destination": "/analysis/west-attica-fire-2026/index.html"
+    },
+    {
+      "source": "/en/analysis/west-attica-fire-2026",
+      "destination": "/en/analysis/west-attica-fire-2026/index.html"
+    },
+    {
+      "source": "/en/analysis/west-attica-fire-2026/",
+      "destination": "/en/analysis/west-attica-fire-2026/index.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms/index.html"
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms/index.html"
+    },
+    {
+      "source": "/en/terms",
+      "destination": "/en/terms/index.html"
+    },
+    {
+      "source": "/en/terms/",
+      "destination": "/en/terms/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/en/privacy",
+      "destination": "/en/privacy/index.html"
+    },
+    {
+      "source": "/en/privacy/",
+      "destination": "/en/privacy/index.html"
+    },
+    {
+      "source": "/media",
+      "destination": "/media/index.html"
+    },
+    {
+      "source": "/media/",
+      "destination": "/media/index.html"
+    },
+    {
+      "source": "/en/media",
+      "destination": "/en/media/index.html"
+    },
+    {
+      "source": "/en/media/",
+      "destination": "/en/media/index.html"
+    },
+    {
+      "source": "/reports",
+      "destination": "/analysis/index.html"
+    },
+    {
+      "source": "/reports/",
+      "destination": "/analysis/index.html"
+    },
+    {
+      "source": "/en/reports",
+      "destination": "/en/analysis/index.html"
+    },
+    {
+      "source": "/en/reports/",
+      "destination": "/en/analysis/index.html"
+    },
+    {
+      "source": "/reports/yearly_report",
+      "destination": "/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/reports/yearly_report/",
+      "destination": "/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/en/reports/yearly_report",
+      "destination": "/en/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/en/reports/yearly_report/",
+      "destination": "/en/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/reports/statistics",
+      "destination": "/analysis/statistics/index.html"
+    },
+    {
+      "source": "/reports/statistics/",
+      "destination": "/analysis/statistics/index.html"
+    },
+    {
+      "source": "/en/reports/statistics",
+      "destination": "/en/analysis/statistics/index.html"
+    },
+    {
+      "source": "/en/reports/statistics/",
+      "destination": "/en/analysis/statistics/index.html"
+    },
+    {
+      "source": "/reports/antinero-west-attica",
+      "destination": "/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/reports/antinero-west-attica/",
+      "destination": "/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/en/reports/antinero-west-attica",
+      "destination": "/en/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/en/reports/antinero-west-attica/",
+      "destination": "/en/analysis/antinero-west-attica/index.html"
+    },
+    {
+      "source": "/en/((?!api/|assets/|analysis/west-attica-fire-2026/|.*\\..*).*)",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/((?!(?:en/)?api/|(?:en/)?assets/|(?:en/)?analysis/west-attica-fire-2026/|favicon.svg|robots.txt|sitemap.xml|llms.txt|.*\\..*).*)",
+      "destination": "/index.html"
+    }
   ]
 }

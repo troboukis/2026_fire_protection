@@ -1,5 +1,6 @@
+import { useOverviewUi } from '../../../i18n/overview'
 import { useEffect, useState, type CSSProperties } from 'react'
-import { Link } from 'react-router-dom'
+import { LocalizedLink as Link } from '../../../routing/LocalizedLink'
 import ComponentTag from '../../../components/ComponentTag'
 import { fireSeasonReview } from './fireSeasonReview'
 import './AnalysisPromo.css'
@@ -98,6 +99,7 @@ function PromoIllustration({ visual }: { visual: Exclude<typeof slides[number]['
 }
 
 export default function AnalysisPromo() {
+  const ui = useOverviewUi()
   const [activeIndex, setActiveIndex] = useState(0)
   const [paused, setPaused] = useState(false)
   const [hovered, setHovered] = useState(false)
@@ -126,8 +128,8 @@ export default function AnalysisPromo() {
   return (
     <section
       className="analysis-promo"
-      aria-label="Προτεινόμενες αναλύσεις"
-      aria-roledescription="καρουζέλ"
+      aria-label={ui('Προτεινόμενες αναλύσεις')}
+      aria-roledescription={ui('καρουζέλ')}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onFocusCapture={() => setFocused(true)}
@@ -137,14 +139,14 @@ export default function AnalysisPromo() {
     >
       <ComponentTag name="AnalysisPromo" />
       <div className="analysis-promo__header">
-        <span className="analysis-promo__eyebrow">{slide.eyebrow}</span>
-        <div className="analysis-promo__controls" role="group" aria-label="Επιλογή ανάλυσης">
+        <span className="analysis-promo__eyebrow">{ui(slide.eyebrow)}</span>
+        <div className="analysis-promo__controls" role="group" aria-label={ui('Επιλογή ανάλυσης')}>
           {slides.map((item, index) => (
             <button
               key={item.to}
               type="button"
               className="analysis-promo__selector"
-              aria-label={item.title}
+              aria-label={ui(item.title)}
               aria-pressed={index === activeIndex}
               onClick={() => setActiveIndex(index)}
             >
@@ -155,7 +157,7 @@ export default function AnalysisPromo() {
             <button
               type="button"
               className="analysis-promo__pause"
-              aria-label={paused ? 'Συνέχεια αυτόματης εναλλαγής' : 'Παύση αυτόματης εναλλαγής'}
+              aria-label={paused ? ui('Συνέχεια αυτόματης εναλλαγής') : ui('Παύση αυτόματης εναλλαγής')}
               onClick={() => setPaused((value) => !value)}
             >
               <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
@@ -168,13 +170,13 @@ export default function AnalysisPromo() {
       <div className="analysis-promo__viewport" aria-live={paused || focused || reducedMotion ? 'polite' : 'off'} aria-atomic="true">
         <Link key={slide.to} className="analysis-promo__slide" to={slide.to} reloadDocument={slide.reloadDocument}>
           <div className="analysis-promo__copy">
-            <h2>{slide.title}</h2>
-            <p>{slide.detail}</p>
+            <h2>{ui(slide.title)}</h2>
+            <p>{ui(slide.detail)}</p>
           </div>
           <div className={`analysis-promo__visual${slide.visual === 'review' ? ' analysis-promo__visual--text-only' : ''}`}>
             {slide.visual !== 'review' && <PromoIllustration visual={slide.visual} />}
             <span className="analysis-promo__action">
-              <span>Περισσότερα</span>
+              <span>{ui('Περισσότερα')}</span>
               <span className="analysis-promo__arrow" aria-hidden="true">↗</span>
             </span>
           </div>

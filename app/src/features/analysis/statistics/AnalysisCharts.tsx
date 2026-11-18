@@ -1,3 +1,5 @@
+import { analysisMonthLabel } from '../../../i18n/analysisFormatting'
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../../../i18n/overview'
 import { useCallback, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import {
@@ -12,6 +14,7 @@ import {
 
 // ── Βοηθητικό HBar ────────────────────────────────────────────────────
 export function HBar({ item }: { item: BarItem }) {
+  const ui = useOverviewUi()
   const toneMap = {
     high:  'rgba(211,72,45,0.9)',
     mid:   'rgba(211,72,45,0.55)',
@@ -22,11 +25,11 @@ export function HBar({ item }: { item: BarItem }) {
     <div className="ca-bar-row">
       <div className="ca-bar-label">
         <span className="ca-bar-title">
-          <span>{item.label}</span>
+          <span>{ui(item.label)}</span>
           <span className="ca-bar-title__dot" aria-hidden="true" />
           <span className="ca-bar-title__meta">
             <strong>€ {item.total_m.toFixed(1)}M</strong>
-            <span> ({item.value.toLocaleString('el-GR')} συμβ.)</span>
+            <span> ({item.value.toLocaleString(ui.locale)} {ui("συμβ.)")}</span>
           </span>
         </span>
         <span className="ca-bar-pct">{item.pct}%</span>
@@ -42,6 +45,7 @@ export function HBar({ item }: { item: BarItem }) {
 export type BarMetric = 'count' | 'total'
 
 export function BarChart({ metric, monthly }: { metric: BarMetric; monthly: MonthlyPoint[] }) {
+  const ui = useOverviewUi()
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef       = useRef<SVGSVGElement>(null)
 
@@ -126,10 +130,10 @@ export function BarChart({ metric, monthly }: { metric: BarMetric; monthly: Mont
     const xTickLabel = (monthKey: string): string => {
       const point = monthly.find((p) => p.month === monthKey)
       if (!point) return monthKey
-      if (!isNarrow) return point.label
+      if (!isNarrow) return analysisMonthLabel(point.label, ui)
       const [yearStr, monthStr] = monthKey.split('-')
       const monthNum = Number(monthStr)
-      const monthName = MONTH_NAMES_SHORT[monthNum - 1] ?? monthStr
+      const monthName = ui(MONTH_NAMES_SHORT[monthNum - 1] ?? monthStr)
       if (monthStr === '01' || monthKey === monthDomain[monthDomain.length - 1]) {
         return `${monthName} '${yearStr.slice(2)}`
       }
@@ -172,13 +176,13 @@ export function BarChart({ metric, monthly }: { metric: BarMetric; monthly: Mont
       .on('mouseover', (event: MouseEvent, d) => {
         const rect = containerRef.current!.getBoundingClientRect()
         const val = metric === 'count'
-          ? `${d.count} συμβάσεις`
-          : `€ ${(d.total_k / 1000).toFixed(2)}M (χωρίς ΦΠΑ)`
+          ? ui("{{v0}} συμβάσεις", { v0: d.count })
+          : ui("€ {{v0}}M (χωρίς ΦΠΑ)", { v0: (d.total_k / 1000).toFixed(2) })
         tooltip
           .style('display', 'block')
           .style('left',  `${(event.clientX - rect.left + 10)}px`)
           .style('top',   `${(event.clientY - rect.top  - 36)}px`)
-          .html(`<strong>${d.label}</strong><br/>${val}`)
+          .html(`<strong>${analysisMonthLabel(d.label, ui)}</strong><br/>${val}`)
         d3.select(event.currentTarget as Element).attr('opacity', 0.75)
       })
       .on('mousemove', (event: MouseEvent) => {
@@ -191,20 +195,20 @@ export function BarChart({ metric, monthly }: { metric: BarMetric; monthly: Mont
         event.stopPropagation()
         const rect = containerRef.current!.getBoundingClientRect()
         const val = metric === 'count'
-          ? `${d.count} συμβάσεις`
-          : `€ ${(d.total_k / 1000).toFixed(2)}M (χωρίς ΦΠΑ)`
+          ? ui("{{v0}} συμβάσεις", { v0: d.count })
+          : ui("€ {{v0}}M (χωρίς ΦΠΑ)", { v0: (d.total_k / 1000).toFixed(2) })
         tooltip
           .style('display', 'block')
           .style('left', `${(event.clientX - rect.left + 10)}px`)
           .style('top', `${(event.clientY - rect.top - 36)}px`)
-          .html(`<strong>${d.label}</strong><br/>${val}`)
+          .html(`<strong>${analysisMonthLabel(d.label, ui)}</strong><br/>${val}`)
       })
       .on('mouseout', (event: MouseEvent) => {
         tooltip.style('display', 'none')
         d3.select(event.currentTarget as Element).attr('opacity', 1)
       })
 
-  }, [metric, monthly])
+  }, [metric, monthly, ui])
 
   useEffect(() => {
     draw()
@@ -226,8 +230,9 @@ function truncateLabel(label: string, maxLength: number): string {
   return `${label.slice(0, Math.max(0, maxLength - 1)).trimEnd()}…`
 }
 
-function sunburstDisplayLabelLines(label: string, depth: number, isCompact: boolean): string[] {
-  if (!isCompact) return [truncateLabel(label, depth === 1 ? 18 : 16)]
+function sunburstDisplayLabelLines(label: string, depth: number, isCompact: boolean, ui: OverviewUi = greekOverviewUi): string[] {
+  const displayLabel = depth === 1 ? ui(label) : ui.organization(label)
+  if (!isCompact) return [truncateLabel(displayLabel, depth === 1 ? 18 : 16)]
 
   const compactProcedureLabels: Record<string, string[]> = {
     'Απευθείας Ανάθεση': ['Απευθείας', 'Ανάθεση'],
@@ -235,11 +240,11 @@ function sunburstDisplayLabelLines(label: string, depth: number, isCompact: bool
     'Διαπραγμάτευση': ['Διαπραγμ.'],
   }
 
-  const mappedLines = depth === 1 ? compactProcedureLabels[label] : undefined
+  const mappedLines = depth === 1 && ui.language === 'el' ? compactProcedureLabels[label] : undefined
   if (mappedLines) return mappedLines
 
-  const words = label.split(/\s+/).filter(Boolean)
-  if (words.length <= 1) return [truncateLabel(label, depth === 1 ? 11 : 8)]
+  const words = displayLabel.split(/\s+/).filter(Boolean)
+  if (words.length <= 1) return [truncateLabel(displayLabel, depth === 1 ? 11 : 8)]
 
   const lineLimit = depth === 1 ? 2 : 1
   const maxLineLength = depth === 1 ? 11 : 8
@@ -251,6 +256,10 @@ function sunburstDisplayLabelLines(label: string, depth: number, isCompact: bool
 }
 
 export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
+  const ui = useOverviewUi()
+  const zoomPath = useRef<string[]>([])
+  const previousData = useRef(data)
+  const previousSize = useRef<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
 
@@ -291,9 +300,24 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       return centerRadius + (depth - 1) * ringWidth
     }
 
+    if (previousData.current !== data || previousSize.current !== size) zoomPath.current = []
+    previousSize.current = size
+    previousData.current = data
+    const pathFor = (node: SunburstNode) => node.ancestors().reverse().map(item => item.data.name)
+    const initialFocus = zoomPath.current.length
+      ? root.descendants().find(node => JSON.stringify(pathFor(node)) === JSON.stringify(zoomPath.current)) ?? root
+      : root
     root.each((node) => {
-      node.current = { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
-      node.target = { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
+      const initial = initialFocus === root
+        ? { x0: node.x0, x1: node.x1, y0: node.y0, y1: node.y1 }
+        : {
+        x0: Math.max(0, Math.min(1, (node.x0 - initialFocus.x0) / (initialFocus.x1 - initialFocus.x0))) * 2 * Math.PI,
+        x1: Math.max(0, Math.min(1, (node.x1 - initialFocus.x0) / (initialFocus.x1 - initialFocus.x0))) * 2 * Math.PI,
+        y0: Math.max(0, node.y0 - initialFocus.depth),
+        y1: Math.max(0, node.y1 - initialFocus.depth),
+      }
+      node.current = initial
+      node.target = { ...initial }
     })
 
     const procedureNames = data.children?.map((item) => item.name) ?? []
@@ -337,7 +361,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       const ringThickness = Math.max(1, radialAt(d.y1) - radialAt(d.y0))
       const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
       const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
-      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact, ui)
       const charCount = Math.max(1, ...lines.map((line) => line.length))
       const maxByArc = arcLength / Math.max(charCount * 0.62, 1)
       const maxByRing = ringThickness / (lines.length * 1.15)
@@ -351,7 +375,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       const midRadius = (radialAt(d.y0) + radialAt(d.y1)) / 2
       const arcLength = Math.max(1, midRadius * (d.x1 - d.x0))
       const fontSize = labelFontSize(node)
-      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact, ui)
       const estimatedTextWidth = Math.max(...lines.map((line) => line.length)) * fontSize * 0.6
       const estimatedTextHeight = lines.length * fontSize * 1.15
       return estimatedTextWidth <= arcLength * (isCompact ? 0.78 : 0.92) && estimatedTextHeight <= ringThickness * 0.78
@@ -380,11 +404,11 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       .attr('x', 0)
 
     const updateCenter = (node: SunburstNode) => {
-      const total = Number(node.value ?? 0).toLocaleString('el-GR')
+      const total = Number(node.value ?? 0).toLocaleString(ui.locale)
       const primaryLabel = node.depth === 0
-        ? (isCompact ? 'Διαδικασία' : 'Διαδικασία -> Φορέας')
-        : truncateLabel(node.data.name, isCompact ? 16 : 28)
-      const secondaryLabel = node.depth === 0 && isCompact ? 'και φορέας' : ''
+        ? (isCompact ? ui("Διαδικασία") : ui("Διαδικασία -> Φορέας"))
+        : truncateLabel(node.depth === 1 ? ui(node.data.name) : ui.organization(node.data.name), isCompact ? 16 : 28)
+      const secondaryLabel = node.depth === 0 && isCompact ? ui("και φορέας") : ''
       centerLabelPrimary
         .attr('y', secondaryLabel ? -20 : -10)
         .text(primaryLabel)
@@ -394,10 +418,10 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
         .attr('opacity', secondaryLabel ? 1 : 0)
       centerValue
         .attr('y', secondaryLabel ? 22 : 12)
-        .text(node.depth === 0 ? `${total} εγγραφές` : `${total} συμβάσεις`)
+        .text(node.depth === 0 ? ui("{{v0}} εγγραφές", { v0: total }) : ui("{{v0}} συμβάσεις", { v0: total }))
       centerHint
         .attr('y', secondaryLabel ? 40 : 32)
-        .text(node.depth === 0 ? 'Κλικ στον εσωτερικό δακτύλιο για zoom' : 'Κλικ στο κέντρο για επιστροφή')
+        .text(node.depth === 0 ? ui("Κλικ στον εσωτερικό δακτύλιο για zoom") : ui("Κλικ στο κέντρο για επιστροφή"))
         .attr('opacity', isCompact ? 0 : 1)
     }
 
@@ -437,7 +461,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
 
     label.each(function (node) {
       const text = d3.select(this)
-      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact)
+      const lines = sunburstDisplayLabelLines(node.data.name, node.depth, isCompact, ui)
       const firstDy = lines.length > 1 ? `${-0.3 * (lines.length - 1)}em` : '0.35em'
       lines.forEach((line, index) => {
         text.append('tspan')
@@ -447,10 +471,10 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       })
     })
 
-    let focus = root
+    let focus = initialFocus
 
     const parent = g.append('circle')
-      .datum(root)
+      .datum(initialFocus.parent ?? root)
       .attr('r', centerRadius)
       .attr('fill', 'none')
       .attr('pointer-events', 'all')
@@ -458,22 +482,22 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
 
     center.raise()
 
-    updateCenter(root)
+    updateCenter(initialFocus)
 
     const showTooltip = (event: MouseEvent, node: SunburstNode) => {
       const rect = containerRef.current!.getBoundingClientRect()
       const pathText = node.ancestors()
         .reverse()
         .slice(1)
-        .map((item) => item.data.name)
+        .map((item) => item.depth === 1 ? ui(item.data.name) : ui.organization(item.data.name))
         .join(' -> ')
-      const nodeType = node.depth === 1 ? 'Διαδικασία ανάθεσης' : 'Τύπος φορέα'
+      const nodeType = node.depth === 1 ? ui("Διαδικασία ανάθεσης") : ui("Τύπος φορέα")
 
       tooltip
         .style('display', 'block')
         .style('left', `${event.clientX - rect.left + 12}px`)
         .style('top', `${event.clientY - rect.top - 8}px`)
-        .html(`<strong>${pathText}</strong><span>${nodeType}</span><em>${Number(node.value ?? 0).toLocaleString('el-GR')} συμβάσεις</em>`)
+        .html(`<strong>${pathText}</strong><span>${nodeType}</span><em>${ui('{{v0}} συμβάσεις', { v0: Number(node.value ?? 0).toLocaleString(ui.locale) })}</em>`)
     }
 
     const moveTooltip = (event: MouseEvent) => {
@@ -489,6 +513,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
 
     const clicked = (event: MouseEvent, clickedNode: SunburstNode) => {
       focus = clickedNode
+      zoomPath.current = pathFor(clickedNode)
       parent.datum(focus.parent ?? root)
       updateCenter(clickedNode)
 
@@ -548,7 +573,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
         hideTooltip()
         d3.select(event.currentTarget as SVGPathElement).attr('stroke', null).attr('stroke-width', null)
       })
-  }, [data])
+  }, [data, ui])
 
   useEffect(() => {
     if (!data) return
@@ -559,7 +584,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
   }, [data, draw])
 
   if (!data) {
-    return <p className="ca-empty-note">Δεν υπάρχουν διαθέσιμα δεδομένα διαδικασίας και τύπου φορέα για το επιλεγμένο έτος.</p>
+    return <p className="ca-empty-note">{ui("Δεν υπάρχουν διαθέσιμα δεδομένα διαδικασίας και τύπου φορέα για το επιλεγμένο έτος.")}</p>
   }
 
   return (
@@ -568,7 +593,7 @@ export function ZoomableSunburst({ data }: { data: SunburstDatum | null }) {
       className="ca-sunburst-wrap"
       onClick={() => d3.select(containerRef.current).select('.ca-sunburst-tooltip').style('display', 'none')}
     >
-      <svg ref={svgRef} className="ca-sunburst-svg" aria-label="Zoomable sunburst διαδικασίας ανάθεσης και τύπου φορέα" />
+      <svg ref={svgRef} className="ca-sunburst-svg" aria-label={ui("Zoomable sunburst διαδικασίας ανάθεσης και τύπου φορέα")} />
       <div className="ca-sunburst-tooltip ca-tooltip app-tooltip" />
     </div>
   )

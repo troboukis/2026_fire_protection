@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { useAppI18n } from '../i18n/useAppI18n'
 
 type AmountSummaryProps = {
   totalCents: number
@@ -10,21 +11,18 @@ type AmountSummaryProps = {
 }
 
 export default function AmountSummary({ totalCents, missingCount, loading, loadFailed, ariaLabel, children }: AmountSummaryProps) {
+  const { t, format } = useAppI18n()
   return (
     <div className="diavgeia-payment-summary" aria-label={ariaLabel} aria-live="polite" aria-busy={loading}>
       <div className="diavgeia-payment-summary__amount">
-        {loading || loadFailed ? '—' : (totalCents / 100).toLocaleString('el-GR', {
-          style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2,
-        })}
+        {loading || loadFailed ? '—' : format.currency(totalCents / 100)}
       </div>
       <div className="diavgeia-payment-summary__missing">
         {loading
-          ? 'Φόρτωση…'
+          ? t('common:loading')
           : loadFailed
-            ? 'Το σύνολο δεν είναι διαθέσιμο.'
-            : missingCount === 1
-              ? '1 έγγραφο δεν έχει ποσό'
-              : `${missingCount.toLocaleString('el-GR')} έγγραφα δεν έχουν ποσό`}
+            ? t('common:totalUnavailable')
+            : t('common:documentsWithoutAmount', { count: missingCount })}
       </div>
       {children}
     </div>

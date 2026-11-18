@@ -1,3 +1,5 @@
+import { translatedOrganizationName } from '../i18n/organizationNames'
+import { useOverviewUi } from '../i18n/overview'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from '../components/ComponentTag'
@@ -184,6 +186,7 @@ const REGIONS = [
 ] as const
 
 export default function MapsPage() {
+  const ui = useOverviewUi()
   const mapYear = new Date().getFullYear()
   const [mapView, setMapView] = useState<'greece' | 'attica'>('greece')
   const [mapMetric, setMapMetric] = useState<MapMetric>('spending')
@@ -398,9 +401,9 @@ export default function MapsPage() {
     [mapMetric, municipalityTotalFundingById, municipalityTotalSpendById],
   )
 
-  const activeMetricLabel = mapMetric === 'spending' ? 'δαπάνη' : 'χρηματοδότηση'
-  const activeMetricLabelGenitive = mapMetric === 'spending' ? 'δαπάνης' : 'χρηματοδότησης'
-  const activeMetricLabelCapitalized = mapMetric === 'spending' ? 'Δαπάνη' : 'Χρηματοδότηση'
+  const activeMetricLabel = mapMetric === 'spending' ? ui("δαπάνη") : ui("χρηματοδότηση")
+  const activeMetricLabelGenitive = mapMetric === 'spending' ? ui("δαπάνης") : ui("χρηματοδότησης")
+  const activeMetricLabelCapitalized = mapMetric === 'spending' ? ui("Δαπάνη") : ui("Χρηματοδότηση")
 
   const municipalities = useMemo(() => {
     return municipalityOptions
@@ -465,12 +468,13 @@ export default function MapsPage() {
     const scored = searchOptions
       .map((o) => {
         const labelNorm = normalizeSearch(o.label)
+        const englishLabelNorm = normalizeSearch(translatedOrganizationName(o.label) ?? o.label)
         let best = 0
         for (const token of q) {
           if (!token) continue
-          if (labelNorm === token) best = Math.max(best, 3)
-          else if (labelNorm.startsWith(token)) best = Math.max(best, 2)
-          else if (labelNorm.includes(token)) best = Math.max(best, 1)
+          if (labelNorm === token || englishLabelNorm === token) best = Math.max(best, 3)
+          else if (labelNorm.startsWith(token) || englishLabelNorm.startsWith(token)) best = Math.max(best, 2)
+          else if (labelNorm.includes(token) || englishLabelNorm.includes(token)) best = Math.max(best, 1)
         }
         return { option: o, score: best }
       })
@@ -507,7 +511,7 @@ export default function MapsPage() {
     if (!iso) return '—'
     const dt = new Date(iso)
     if (Number.isNaN(dt.getTime())) return '—'
-    return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
+    return new Intl.DateTimeFormat(ui.locale, { day: '2-digit', month: 'short', year: 'numeric' }).format(dt)
   }
 
   const cleanText = (v: unknown): string | null => {
@@ -676,14 +680,22 @@ export default function MapsPage() {
     const modal: ContractModalContract = {
       id: String(proc.id),
       who,
+      sourceValues: {
+        submittedAt: cleanText(proc.submission_at),
+        signedAt: cleanText(proc.contract_signed_date),
+        startDate: cleanText(proc.start_date),
+        endDate: cleanText(proc.end_date),
+        withoutVat: amountWithoutVat,
+        withVat: payment.amount_with_vat,
+      },
       what: cleanText(proc.title) ?? '—',
       when: formatDateEl(cleanText(proc.submission_at)),
       why: firstPipePart(proc.short_descriptions) ?? c?.label ?? '—',
       beneficiary: cleanText(payment.beneficiary_name) ?? '—',
       contractType: cleanText(proc.procedure_type_value) ?? '—',
-      howMuch: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
-      withoutVatAmount: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
-      withVatAmount: (payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      howMuch: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      withoutVatAmount: (amountWithoutVat == null ? '—' : amountWithoutVat.toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      withVatAmount: (payment.amount_with_vat == null ? '—' : Number(payment.amount_with_vat).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       referenceNumber: cleanText(proc.reference_number) ?? '—',
       contractNumber: cleanText(proc.contract_number) ?? '—',
       cpv: c?.label ?? '—',
@@ -707,8 +719,8 @@ export default function MapsPage() {
       auctionRefNo: cleanText(proc.auction_ref_no) ?? '—',
       paymentRefNo: cleanText(payment.payment_ref_no) ?? '—',
       shortDescription: firstPipePart(proc.short_descriptions) ?? '—',
-      rawBudget: (proc.budget == null ? '—' : Number(proc.budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
-      contractBudget: (proc.contract_budget == null ? '—' : Number(proc.contract_budget).toLocaleString('el-GR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      rawBudget: (proc.budget == null ? '—' : Number(proc.budget).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
+      contractBudget: (proc.contract_budget == null ? '—' : Number(proc.contract_budget).toLocaleString(ui.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })),
       contractRelatedAda: contractRelatedAda ?? '—',
       previousReferenceNumber: cleanText(proc.prev_reference_no) ?? '—',
       nextReferenceNumber: cleanText(proc.next_ref_no) ?? '—',
@@ -982,6 +994,10 @@ export default function MapsPage() {
             municipalityLabel: municipalityLabelById.get(selectedMunicipalityId) ?? null,
             municipalityKey: selectedMunicipalityId,
             orgIsMunicipality: true,
+            sourceValues: {
+              submittedAt: null, displayDate: row.contract_signed_date, signedAt: row.contract_signed_date, startDate: null, endDate: null,
+              withoutVat: (paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat) == null ? null : Number(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat), withVat: null,
+            },
             when: fmtDate(row.contract_signed_date),
             what: String(row.title ?? '').trim() || '—',
             why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
@@ -1107,6 +1123,10 @@ export default function MapsPage() {
             id: String(row.procurement_id),
             organizationName: String(row.organization_value ?? row.organization_key ?? '—').trim() || '—',
             authorityScope: row.authority_scope ?? 'other',
+            sourceValues: {
+              submittedAt: null, displayDate: row.contract_signed_date, signedAt: row.contract_signed_date, startDate: null, endDate: null,
+              withoutVat: (paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat) == null ? null : Number(paymentSummaryByProcurementId.get(String(row.procurement_id))?.amount_without_vat ?? row.amount_without_vat), withVat: null,
+            },
             when: fmtDate(row.contract_signed_date),
             what: String(row.title ?? '').trim() || '—',
             why: `Διαδικασία: ${String(row.procedure_type_value ?? '—').trim() || '—'}`,
@@ -1267,7 +1287,7 @@ export default function MapsPage() {
                 />
                 <label ref={searchContainerRef} className="maps-controls__search">
                   <input
-                    aria-label="Αναζήτηση δήμου ή περιφέρειας"
+                    aria-label={ui("Αναζήτηση δήμου ή περιφέρειας")}
                     type="text"
                     value={searchText}
                     onChange={(e) => {
@@ -1286,14 +1306,13 @@ export default function MapsPage() {
                         applySearchSelection(searchResults[0])
                       }
                     }}
-                    placeholder="Π.χ. Νεα Σμυρνη, attikis, peiraia"
+                    placeholder={ui("Π.χ. Νεα Σμυρνη, attikis, peiraia")}
                   />
                   {searchText.trim() && isSearchResultsOpen && (
                     <div className="maps-search-results">
                       {searchResults.length === 0 ? (
                         <button type="button" className="maps-search-empty" disabled>
-                          Δεν βρέθηκε αποτέλεσμα
-                        </button>
+                          {ui("Δεν βρέθηκε αποτέλεσμα")}</button>
                       ) : (
                         searchResults.map((opt) => (
                           <button
@@ -1301,8 +1320,8 @@ export default function MapsPage() {
                             type="button"
                             onClick={() => applySearchSelection(opt)}
                           >
-                            <small>{opt.kind === 'municipality' ? 'ΔΗΜΟΣ' : 'ΠΕΡΙΦΕΡΕΙΑ'}</small>
-                            <span>{opt.label}</span>
+                            <small>{opt.kind === 'municipality' ? ui("ΔΗΜΟΣ") : ui("ΠΕΡΙΦΕΡΕΙΑ")}</small>
+                            <span>{ui.organization(opt.label)}</span>
                           </button>
                         ))
                       )}
@@ -1311,32 +1330,32 @@ export default function MapsPage() {
                 </label>
                 <label>
                   <select
-                    aria-label="Επέλεξε δήμο"
+                    aria-label={ui("Επέλεξε δήμο")}
                     value={selectedMunicipalityDropdown}
                     onChange={(e) => handleMunicipalityDropdownChange(e.target.value)}
                   >
-                    <option value="">— Δήμοι —</option>
+                    <option value="">{ui("— Δήμοι —")}</option>
                     {loading && (
-                      <option value="" disabled>Φόρτωση δήμων…</option>
+                      <option value="" disabled>{ui("Φόρτωση δήμων…")}</option>
                     )}
                     {!loading && municipalities.length === 0 && (
-                      <option value="" disabled>Δεν βρέθηκαν δήμοι</option>
+                      <option value="" disabled>{ui("Δεν βρέθηκαν δήμοι")}</option>
                     )}
                     {municipalities.map((m) => (
-                      <option key={m.id} value={m.id}>{m.label}</option>
+                      <option key={m.id} value={m.id}>{ui.organization(m.label)}</option>
                     ))}
                   </select>
                 </label>
 
                 <label>
                   <select
-                    aria-label="Επέλεξε περιφέρεια"
+                    aria-label={ui("Επέλεξε περιφέρεια")}
                     value={selectedRegion}
                     onChange={(e) => handleRegionDropdownChange(e.target.value)}
                   >
-                    <option value="">— Περιφέρειες —</option>
+                    <option value="">{ui("— Περιφέρειες —")}</option>
                     {REGIONS.map((region) => (
-                      <option key={region} value={region}>{region}</option>
+                      <option key={region} value={region}>{ui.organization(region)}</option>
                     ))}
                   </select>
                 </label>
@@ -1356,37 +1375,33 @@ export default function MapsPage() {
                 className="component-tag--overlay"
                 style={{ left: 'auto', right: '0.45rem' }}
               />
-              <div className="maps-stage__view-toggle" role="group" aria-label="Προβολή χάρτη">
+              <div className="maps-stage__view-toggle" role="group" aria-label={ui("Προβολή χάρτη")}>
                 <button
                   type="button"
                   className={mapView === 'greece' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
                   onClick={() => setMapView('greece')}
                 >
-                  Ελλάδα
-                </button>
+                  {ui("Ελλάδα")}</button>
                 <button
                   type="button"
                   className={mapView === 'attica' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
                   onClick={() => setMapView('attica')}
                 >
-                  Αττική
-                </button>
+                  {ui("Αττική")}</button>
               </div>
-              <div className="maps-stage__metric-toggle" role="group" aria-label="Μετρική χάρτη">
+              <div className="maps-stage__metric-toggle" role="group" aria-label={ui("Μετρική χάρτη")}>
                 <button
                   type="button"
                   className={mapMetric === 'spending' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
                   onClick={() => setMapMetric('spending')}
                 >
-                  Δαπάνη
-                </button>
+                  {ui("Δαπάνη")}</button>
                 <button
                   type="button"
                   className={mapMetric === 'funding' ? 'maps-stage__view-btn maps-stage__view-btn--active' : 'maps-stage__view-btn'}
                   onClick={() => setMapMetric('funding')}
                 >
-                  Χρηματοδότηση
-                </button>
+                  {ui("Χρηματοδότηση")}</button>
               </div>
               <GreeceMap
                 geojson={geojson}
@@ -1417,19 +1432,19 @@ export default function MapsPage() {
               className="maps-legend__scale"
               visible={showChoropleth}
               onToggle={() => setShowChoropleth((visible) => !visible)}
-              label={`Δήμοι με ${activeMetricLabel}`}
+              label={ui("Δήμοι με {{v0}}", { v0: activeMetricLabel })}
             >
-              <span className="maps-legend__scale-label">Λιγότερα</span>
+              <span className="maps-legend__scale-label">{ui("Λιγότερα")}</span>
               <span className="maps-legend__scale-bar" aria-hidden="true" />
-              <span className="maps-legend__scale-label">Περισσότερα € {activeMetricLabelGenitive} / 100.000 κατοίκους</span>
+              <span className="maps-legend__scale-label">{ui("Περισσότερα € ")}{activeMetricLabelGenitive} {ui("/ 100.000 κατοίκους")}</span>
             </MapLegendToggle>
             <p className="maps-legend__summary">
               {loading
-                ? 'Φόρτωση χάρτη…'
-                : `${activeMunicipalityCount.toLocaleString('el-GR')} δήμοι εμφανίζουν καταγεγραμμένη ${activeMetricLabel} το ${mapYear}. Η κλίμακα δείχνει ευρώ ${activeMetricLabelGenitive} ανά 100.000 κατοίκους.`}
+                ? ui("Φόρτωση χάρτη…")
+                : ui("{{v0}} δήμοι εμφανίζουν καταγεγραμμένη {{v1}} το {{v2}}. Η κλίμακα δείχνει ευρώ {{v3}} ανά 100.000 κατοίκους.", { v0: activeMunicipalityCount.toLocaleString(ui.locale), v1: activeMetricLabel, v2: mapYear, v3: activeMetricLabelGenitive })}
             </p>
             <p className="maps-legend__note">
-              * Ως <strong>ενεργές</strong> συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το {mapYear}, είτε υπεγράφησαν πριν το {mapYear} αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του {mapYear}.
+              {ui("* Ως ")}<strong>{ui("ενεργές")}</strong> {ui("συμβάσεις εννοούμε τις συμβάσεις που είτε υπεγράφησαν το ")}{mapYear}{ui(", είτε υπεγράφησαν πριν το ")}{mapYear} {ui("αλλά είχαν ρητή ημερομηνία λήξης του έργου εντός του ")}{mapYear}.
             </p>
           </div>
         </div>
@@ -1437,7 +1452,7 @@ export default function MapsPage() {
         <MapSelectionPanel
           source={panelSource}
           kind={panelKind}
-          label={panelLabel}
+          label={ui.organization(panelLabel)}
           municipalityKey={panelKind === 'municipality' ? selectedMunicipalityIdForPanel : null}
           municipalityLatestContracts={municipalityLatestContracts}
           municipalityLatestLoading={municipalityLatestLoading}

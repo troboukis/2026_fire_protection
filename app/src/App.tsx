@@ -1,5 +1,9 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from './i18n/overview'
+import { useProcurementI18n } from './i18n/useProcurementI18n'
 import { Fragment, Suspense, lazy, useEffect, useMemo, useRef, useState, type CSSProperties, type Ref } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import { LocalizedLink as Link } from './routing/LocalizedLink'
+import { useLocalizedNavigate as useNavigate } from './routing/useLocalizedNavigate'
 import type { ContractModalContract } from './components/ContractModal'
 import type { BeneficiaryInsightRow, FeaturedRecordContract } from './components/FeaturedRecordsSection'
 import ComponentTag from './components/ComponentTag'
@@ -290,20 +294,20 @@ function firstPipePart(v: unknown): string | null {
   return s.split('|').map(x => x.trim()).filter(Boolean)[0] ?? null
 }
 
-function formatDateEl(iso: string | null): string {
+function formatDateEl(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(dt)
 }
 
-function formatEur(n: number | null): string {
+function formatEur(n: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (n == null || Number.isNaN(n)) return '—'
-  return n.toLocaleString('el-GR', {
+  return n.toLocaleString(ui.locale, {
     style: 'currency',
     currency: 'EUR',
     maximumFractionDigits: 0,
@@ -326,13 +330,13 @@ function toUpperEl(v: string | null): string {
   return v.toLocaleUpperCase('el-GR')
 }
 
-function formatEurCompact(n: number): string {
+function formatEurCompact(n: number, ui: OverviewUi = greekOverviewUi): string {
   if (Number.isNaN(n)) return '—'
   const abs = Math.abs(n)
   if (abs >= 1_000_000_000) return `${(n / 1_000_000_000).toFixed(1)}B €`
   if (abs >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M €`
   if (abs >= 1_000) return `${(n / 1_000).toFixed(1)}K €`
-  return formatEur(n)
+  return formatEur(n, ui)
 }
 
 function toFiniteNumber(v: unknown): number | null {
@@ -357,11 +361,11 @@ function chunk<T>(arr: T[], size: number): T[][] {
   return out
 }
 
-function formatDateLabel(iso: string | null): string {
+function formatDateLabel(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(dt)
+  return new Intl.DateTimeFormat(ui.locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(dt)
 }
 
 function formatPct(value: number | null): string {
@@ -431,29 +435,30 @@ function useNearViewport(rootMargin = '400px 0px') {
 }
 
 function HistoricalMapFallback({ activationRef }: { activationRef?: Ref<HTMLDivElement> }) {
+  const ui = useOverviewUi()
   return (
-    <section id="historicalmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label="Φόρτωση χάρτη καμμένων εκτάσεων">
+    <section id="historicalmap" className="fire-copernicus section-rule dev-tag-anchor" aria-label={ui("Φόρτωση χάρτη καμμένων εκτάσεων")}>
       <div className="dev-tag-stack dev-tag-stack--right">
         <ComponentTag name="HistoricalMap" />
         <ComponentTag name="fire-copernicus section-rule" kind="CLASS" />
       </div>
       <div className="fire-copernicus__intro dev-tag-anchor">
         <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
-        <div className="eyebrow">Χάρτης</div>
-        <h2>Οι καμμένες εκτάσεις στην Ελλάδα από την αρχή του έτους μέχρι σήμερα.</h2>
+        <div className="eyebrow">{ui("Χάρτης")}</div>
+        <h2>{ui("Οι καμμένες εκτάσεις στην Ελλάδα από την αρχή του έτους μέχρι σήμερα.")}</h2>
         <p>
-          Ο χάρτης απεικονίζει τις καμμένες εκτάσεις στην επικράτεια όπως αυτές καταγράφονται από την ευρωπαίκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>.
+          {ui("Ο χάρτης απεικονίζει τις καμμένες εκτάσεις στην επικράτεια όπως αυτές καταγράφονται από την ευρωπαίκή υπηρεσία ")}<a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>.
         </p>
       </div>
       <div className="fire-copernicus__map-wrap dev-tag-anchor" ref={activationRef}>
         <DataLoadingCard
           className="fire-copernicus__map fire-copernicus__map--loading"
-          message="Ανακτώνται οι νεότερες εγγραφές και προετοιμάζεται ο χάρτης."
+          message={ui("Ανακτώνται οι νεότερες εγγραφές και προετοιμάζεται ο χάρτης.")}
         />
         <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-hidden="true">
           <span className="fire-copernicus__legend-row">
             <span className="fire-copernicus__legend-dot" />
-            <span>Καμένη έκταση Copernicus EFFIS</span>
+            <span>{ui("Καμένη έκταση Copernicus EFFIS")}</span>
           </span>
         </div>
       </div>
@@ -573,6 +578,8 @@ function createEmptyOrganizationSectionData(name: string, currentYear: number, c
 }
 
 export default function App() {
+  const ui = useOverviewUi()
+  const { category } = useProcurementI18n()
   const currentYear = new Date().getFullYear()
   const featuredRecordsYear = String(currentYear)
   const location = useLocation()
@@ -697,12 +704,12 @@ export default function App() {
 
     const scrollToAbout = () => {
       document.getElementById('about')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      navigate(location.pathname, { replace: true, state: null })
+      navigate({ pathname: location.pathname, search: location.search, hash: location.hash }, { replace: true, state: null })
     }
 
     const frameId = window.requestAnimationFrame(scrollToAbout)
     return () => window.cancelAnimationFrame(frameId)
-  }, [location.pathname, location.state, navigate])
+  }, [location.pathname, location.search, location.hash, location.state, navigate])
 
   useEffect(() => {
     let cancelled = false
@@ -780,6 +787,14 @@ export default function App() {
             who: cleanText(row.who) ?? '—',
             what: cleanText(row.title) ?? '—',
             when: formatDateEl(cleanText(row.submission_at)),
+            sourceValues: {
+              submittedAt: cleanText(row.submission_at),
+              signedAt: cleanText(row.contract_signed_date),
+              startDate: cleanText(row.start_date),
+              endDate: cleanText(row.end_date),
+              withoutVat: amountWithoutVat,
+              withVat: amountWithVat,
+            },
             why: toSentenceCaseEl(topCpv?.label ?? cleanText(row.short_description) ?? '—'),
             beneficiary: toUpperEl(cleanText(row.beneficiary_name)),
             beneficiaryVat: cleanText(row.beneficiary_vat_number) ?? null,
@@ -1154,6 +1169,14 @@ export default function App() {
             who: organizationName,
             what: cleanText(p.title) ?? '—',
             when: formatDateEl(cleanText(p.submission_at)),
+            sourceValues: {
+              submittedAt: cleanText(p.submission_at),
+              signedAt: cleanText(p.contract_signed_date),
+              startDate: cleanText(p.start_date),
+              endDate: cleanText(p.end_date),
+              withoutVat: payment?.amount_without_vat ?? null,
+              withVat: payment?.amount_with_vat ?? null,
+            },
             why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
             beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
             beneficiaryGemi: cleanText(payment?.beneficiary_gemi) ?? null,
@@ -1597,6 +1620,14 @@ export default function App() {
             who: organizationName,
             what: cleanText(p.title) ?? '—',
             when: formatDateEl(cleanText(p.submission_at)),
+            sourceValues: {
+              submittedAt: cleanText(p.submission_at),
+              signedAt: cleanText(p.contract_signed_date),
+              startDate: cleanText(p.start_date),
+              endDate: cleanText(p.end_date),
+              withoutVat: payment?.amount_without_vat ?? null,
+              withVat: payment?.amount_with_vat ?? null,
+            },
             why: toSentenceCaseEl(cpv?.label ?? firstPipePart(p.short_descriptions) ?? '—'),
             beneficiary: toUpperEl(cleanText(payment?.beneficiary_name)),
             beneficiaryGemi: cleanText(payment?.beneficiary_gemi) ?? null,
@@ -1772,6 +1803,14 @@ export default function App() {
                 who: cleanText(contract.organization) ?? cleanText(row.organization) ?? '—',
                 what: cleanText(contract.title) ?? '—',
                 when: formatDateEl(cleanText(contract.submission_at)),
+                sourceValues: {
+                  submittedAt: cleanText(contract.submission_at),
+                  signedAt: cleanText(contract.contract_signed_date),
+                  startDate: cleanText(contract.start_date),
+                  endDate: cleanText(contract.end_date),
+                  withoutVat: amountWithoutVat,
+                  withVat: amountWithVat,
+                },
                 why: toSentenceCaseEl(topCpv?.label ?? cleanText(contract.short_description) ?? '—'),
                 beneficiary: toUpperEl(cleanText(contract.beneficiary_name) ?? beneficiaryVat),
                 beneficiaryGemi: cleanText(contract.beneficiary_gemi) ?? cleanText(row.beneficiary_gemi) ?? null,
@@ -1821,6 +1860,7 @@ export default function App() {
             cpv: cleanText(row.cpv) ?? '—',
             startDate: formatDateEl(cleanText(row.start_date)),
             endDate: formatDateEl(cleanText(row.end_date)),
+            sourceDates: { start: cleanText(row.start_date), end: cleanText(row.end_date), durationDays },
             duration: durationDays != null ? `${Math.round(durationDays)} ημέρες` : '—',
             progressPct: toFiniteNumber(row.progress_pct),
             signer: cleanText(row.signer) ?? '—',
@@ -1979,10 +2019,10 @@ export default function App() {
             <div className="hero-chart dev-tag-anchor">
               <DebugClassLabel name="hero-chart" />
               <div className="hero-chart__head">
-                <span className="eyebrow">Εκτίμηση δαπανών δημοσιων συμβασεων <br /> για προληψη και αντιμετωπιση δασικων πυρκαγιων</span>
+                <span className="eyebrow">{ui("Εκτίμηση δαπανών δημοσιων συμβασεων ")}<br /> {ui("για προληψη και αντιμετωπιση δασικων πυρκαγιων")}</span>
               </div>
               <div className="hero-chart__plot">
-                <svg viewBox="0 0 760 300" role="img" aria-label="Σωρευτική πορεία δαπανών ανά έτος">
+                <svg viewBox="0 0 760 300" role="img" aria-label={ui("Σωρευτική πορεία δαπανών ανά έτος")}>
                   {[1 / 3, 2 / 3].map((t, i) => {
                     const y = 230 - t * 200
                     return <line key={`hy-${i}`} x1="44" y1={y} x2="736" y2={y} stroke="rgba(17,17,17,0.12)" />
@@ -2015,7 +2055,7 @@ export default function App() {
                     const v = chartMax * t
                     return (
                       <span key={`hero-chart-y-${t}`} style={{ top: `${y}%` }}>
-                        {formatEurCompact(v)}
+                        {formatEurCompact(v, ui)}
                       </span>
                     )
                   })}
@@ -2026,7 +2066,7 @@ export default function App() {
                     const x = ((44 + dayFraction(dayInYear, 365) * (736 - 44)) / 760) * 100
                     return (
                       <span key={`hero-chart-x-${tick.label}`} style={{ left: `${x}%` }}>
-                        {tick.label}
+                        {ui(tick.label)}
                       </span>
                     )
                   })}
@@ -2052,17 +2092,17 @@ export default function App() {
               <DebugClassLabel name="hero-amount-card" />
               <div className="eyebrow">
                 {heroStatsLoading
-                  ? 'Δαπάνες'
+                  ? ui("Δαπάνες")
                   : heroStatsError
-                    ? heroStatsError
-                  : `Δαπάνες από ${formatDateLabel(heroStats.periodMainStart)} έως ${formatDateLabel(heroStats.periodMainEnd)}`}
+                    ? ui(heroStatsError)
+                  : ui("Δαπάνες από {{v0}} έως {{v1}}", { v0: formatDateLabel(heroStats.periodMainStart, ui), v1: formatDateLabel(heroStats.periodMainEnd, ui) })}
               </div>
               <div className="hero-amount">
-                {heroStatsLoading ? '…' : heroStatsError ? '—' : formatEurCompact(heroStats.totalMain)}
+                {heroStatsLoading ? '…' : heroStatsError ? '—' : formatEurCompact(heroStats.totalMain, ui)}
               </div>
               <div className="hero-subgrid">
                 <div>
-                  <span className="label">Σύγκριση με {currentYear - 1}</span>
+                  <span className="label">{ui("Σύγκριση με ")}{currentYear - 1}</span>
                   <strong>
                     {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
@@ -2070,14 +2110,14 @@ export default function App() {
                           {formatPct(totalVsPrev1Pct)}
                         </span>
                         <div className="wire-item__date" style={{ marginTop: '0.2rem', display: 'block' }}>
-                          ({formatEurCompact(heroStats.totalPrev1)})
+                          ({formatEurCompact(heroStats.totalPrev1, ui)})
                         </div>
                       </>
                     )}
                   </strong>
                 </div>
                 <div>
-                  <span className="label">Σύγκριση με {currentYear - 2}</span>
+                  <span className="label">{ui("Σύγκριση με ")}{currentYear - 2}</span>
                   <strong>
                     {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
@@ -2085,39 +2125,37 @@ export default function App() {
                           {formatPct(totalVsPrev2Pct)}
                         </span>
                         <div className="wire-item__date" style={{ marginTop: '0.2rem', display: 'block' }}>
-                          ({formatEurCompact(heroStats.totalPrev2)})
+                          ({formatEurCompact(heroStats.totalPrev2, ui)})
                         </div>
                       </>
                     )}
                   </strong>
                 </div>
                 <div>
-                  <span className="label">Συχνότερη διαδικασία ανάθεσης</span>
+                  <span className="label">{ui("Συχνότερη διαδικασία ανάθεσης")}</span>
                   <strong>
                     {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
-                        {heroStats.topContractTypeCount} συμβάσεις έγιναν με {heroStats.topContractType}
+                        {heroStats.topContractTypeCount} {ui("συμβάσεις έγιναν με ")}{category(heroStats.topContractType)}
                         {' '} |{' '}
                         <span style={{ color: pctColor(topTypeVsPrev1Pct) }}>
-                          {formatPct(topTypeVsPrev1Pct)}</span> σε σύγκριση με πέρυσι
-                        <div className="note-text" style={{ marginTop: '0.2rem', display: 'block' }}>
-                          σε σύγκριση με {currentYear - 1}
+                          {formatPct(topTypeVsPrev1Pct)}</span> {ui("σε σύγκριση με πέρυσι")}<div className="note-text" style={{ marginTop: '0.2rem', display: 'block' }}>
+                          {ui("σε σύγκριση με ")}{currentYear - 1}
                         </div>
                       </>
                     )}
                   </strong>
                 </div>
                 <div>
-                  <span className="label">Συχνότερες Εργασίες</span>
+                  <span className="label">{ui("Συχνότερες Εργασίες")}</span>
                   <strong>
                     {heroStatsLoading ? '…' : heroStatsError ? '—' : (
                       <>
-                        Σε {heroStats.topCpvCount}* συμβάσεις έχουν ως περιγραφή «{heroStats.topCpvText}»
+                        {ui("Σε ")}{heroStats.topCpvCount}{ui("* συμβάσεις έχουν ως περιγραφή «")}{ui.description(heroStats.topCpvText)}»
                         {' '} |{' '}
                         <span style={{ color: pctColor(topCpvVsPrev1Pct) }}>
-                          {formatPct(topCpvVsPrev1Pct)} </span>σε σύγκριση με πέρυσι
-                        <div className="label" style={{ marginTop: '0.2rem', display: 'block' }}>
-                          <span className="note-text" style={{ display: 'block' }}> * Ορισμένες συμβάσεις έχουν περισσότερες της μίας περιγραφές</span>
+                          {formatPct(topCpvVsPrev1Pct)} </span>{ui("σε σύγκριση με πέρυσι")}<div className="label" style={{ marginTop: '0.2rem', display: 'block' }}>
+                          <span className="note-text" style={{ display: 'block' }}> {ui("* Ορισμένες συμβάσεις έχουν περισσότερες της μίας περιγραφές")}</span>
                         </div>
                       </>
                     )}
@@ -2128,32 +2166,27 @@ export default function App() {
           </div>
         </section>
 
-        <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label="Τελευταία ρεπορτάζ">
+        <section id="latest" className="news-wire section-rule dev-tag-anchor" aria-label={ui("Τελευταία ρεπορτάζ")}>
           <div className="dev-tag-stack dev-tag-stack--right">
             <ComponentTag name="LatestContractsSection" />
             <ComponentTag name="news-wire section-rule" kind="CLASS" />
           </div>
           <div className="news-wire__label dev-tag-anchor">
             <DebugClassLabel name="news-wire__label" />
-            <span className="eyebrow">τελευταία</span>
+            <span className="eyebrow">{ui("τελευταία")}</span>
             <strong>
-              Οι πιο πρόσφατες συμβάσεις (
-              <a href="https://portal.eprocurement.gov.gr/webcenter/portal/TestPortal" target="_blank" rel="noreferrer">
-                Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων
-              </a>
-              ) και αποφάσεις (
-              <a href="https://diavgeia.gov.gr/" target="_blank" rel="noreferrer">
-                Διαύγεια
-              </a>
-              ) Δήμων, Υπουργείων και άλλων φορέων που αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.
-            </strong>
-            <Link className="news-wire__all-link" to="/contracts">Δες όλες τις συμβάσεις</Link>
-            <Link className="news-wire__all-link" to="/diavgeia">Δες όλες τις αποφάσεις</Link>
-            <div className="news-wire__pager" aria-label="Πλοήγηση πρόσφατων συμβάσεων και αποφάσεων Διαύγειας">
+              {ui("Οι πιο πρόσφατες συμβάσεις (")}<a href="https://portal.eprocurement.gov.gr/webcenter/portal/TestPortal" target="_blank" rel="noreferrer">
+                {ui("Kεντρικό Ηλεκτρονικό Μητρώο Δημοσίων Συμβάσεων")}</a>
+              {ui(") και αποφάσεις (")}<a href="https://diavgeia.gov.gr/" target="_blank" rel="noreferrer">
+                {ui("Διαύγεια")}</a>
+              {ui(") Δήμων, Υπουργείων και άλλων φορέων που αφορούν στην πρόληψη και αντιμετώπιση δασικών πυρκαγιών.")}</strong>
+            <Link className="news-wire__all-link" to="/contracts">{ui("Δες όλες τις συμβάσεις")}</Link>
+            <Link className="news-wire__all-link" to="/diavgeia">{ui("Δες όλες τις αποφάσεις")}</Link>
+            <div className="news-wire__pager" aria-label={ui("Πλοήγηση πρόσφατων συμβάσεων και αποφάσεων Διαύγειας")}>
               <button
                 type="button"
                 className="news-wire__pager-button"
-                aria-label="Προηγούμενη σύμβαση ή απόφαση Διαύγειας"
+                aria-label={ui("Προηγούμενη σύμβαση ή απόφαση Διαύγειας")}
                 onClick={() => scrollLatestContracts(-1)}
                 disabled={latestContractsLoading || !latestContractsCanScrollPrev}
               >
@@ -2162,7 +2195,7 @@ export default function App() {
               <button
                 type="button"
                 className="news-wire__pager-button"
-                aria-label="Επόμενη σύμβαση ή απόφαση Διαύγειας"
+                aria-label={ui("Επόμενη σύμβαση ή απόφαση Διαύγειας")}
                 onClick={() => scrollLatestContracts(1)}
                 disabled={latestContractsLoading || !latestContractsCanScrollNext}
               >
@@ -2175,7 +2208,7 @@ export default function App() {
             {latestContractsLoading && (
               <DataLoadingCard
                 className="news-wire__loading-card"
-                message="Ανακτώνται οι πιο πρόσφατες συμβάσεις και αποφάσεις Διαύγειας."
+                message={ui("Ανακτώνται οι πιο πρόσφατες συμβάσεις και αποφάσεις Διαύγειας.")}
               />
             )}
             {!latestContractsLoading && latestTimeline.map((entry) => (
@@ -2193,42 +2226,42 @@ export default function App() {
             ))}
             {!latestContractsLoading && latestContractsError && (
               <article className="wire-item">
-                <h2>Δεν φορτώθηκαν οι πρόσφατες συμβάσεις και αποφάσεις.</h2>
-                <p>{latestContractsError}</p>
+                <h2>{ui("Δεν φορτώθηκαν οι πρόσφατες συμβάσεις και αποφάσεις.")}</h2>
+                <p>{ui(latestContractsError)}</p>
               </article>
             )}
             {!latestContractsLoading && !latestContractsError && latestTimeline.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν πρόσφατες συμβάσεις ή αποφάσεις Διαύγειας.</h2>
+                <h2>{ui("Δεν βρέθηκαν πρόσφατες συμβάσεις ή αποφάσεις Διαύγειας.")}</h2>
               </article>
             )}
           </div>
         </section>
 
         {fundingGate.shouldLoad ? (
-          <Suspense fallback={<SectionFallback label="Φόρτωση χρηματοδότησης" />}>
+          <Suspense fallback={<SectionFallback label={ui("Φόρτωση χρηματοδότησης")} />}>
             <Funding currentYear={currentYear} />
           </Suspense>
         ) : (
-          <SectionFallback label="Φόρτωση χρηματοδότησης" activationRef={fundingGate.activationRef} />
+          <SectionFallback label={ui("Φόρτωση χρηματοδότησης")} activationRef={fundingGate.activationRef} />
         )}
 
         {featuredRecordsGate.shouldLoad ? (
-          <Suspense fallback={<SectionFallback label="Φόρτωση featured records" />}>
+          <Suspense fallback={<SectionFallback label={ui("Φόρτωση featured records")} />}>
             <FeaturedRecordsSection
               year={featuredRecordsYear}
               rows={featuredBeneficiaries}
               loading={featuredBeneficiariesLoading}
-              formatEur={formatEur}
+              formatEur={(value) => formatEur(value, ui)}
               onOpenContract={(contract) => setSelectedContract(contract as LatestContractCard)}
             />
           </Suspense>
         ) : (
-          <SectionFallback label="Φόρτωση featured records" activationRef={featuredRecordsGate.activationRef} />
+          <SectionFallback label={ui("Φόρτωση featured records")} activationRef={featuredRecordsGate.activationRef} />
         )}
 
         {organizationSectionsGate.shouldLoad ? (
-          <Suspense fallback={<SectionFallback label="Φόρτωση οργανισμών" />}>
+          <Suspense fallback={<SectionFallback label={ui("Φόρτωση οργανισμών")} />}>
             {HOME_ORGANIZATION_SECTIONS.map((config, index) => (
               <Fragment key={config.fallbackName}>
                 <OrganizationSection
@@ -2242,30 +2275,30 @@ export default function App() {
                   }
                   loading={organizationSectionsLoading}
                   anchorId={config.anchorId}
-                  formatEurCompact={formatEurCompact}
-                  formatDateEl={formatDateEl}
+                  formatEurCompact={(value) => formatEurCompact(value, ui)}
+                  formatDateEl={(value) => formatDateEl(value, ui)}
                   onOpenContract={(contract) => setSelectedContract(contract)}
                 />
               </Fragment>
             ))}
           </Suspense>
         ) : (
-          <SectionFallback label="Φόρτωση οργανισμών" activationRef={organizationSectionsGate.activationRef} />
+          <SectionFallback label={ui("Φόρτωση οργανισμών")} activationRef={organizationSectionsGate.activationRef} />
         )}
 
         {regionSectionGate.shouldLoad ? (
-          <Suspense fallback={<SectionFallback label="Φόρτωση περιφέρειας" />}>
+          <Suspense fallback={<SectionFallback label={ui("Φόρτωση περιφέρειας")} />}>
             <RegionSection
               data={regionSection}
               loading={regionSectionLoading}
               anchorId={homeRegionConfig.anchorId}
-              formatEurCompact={formatEurCompact}
-              formatDateEl={formatDateEl}
+              formatEurCompact={(value) => formatEurCompact(value, ui)}
+              formatDateEl={(value) => formatDateEl(value, ui)}
               onOpenContract={(contract) => setSelectedContract(contract)}
             />
           </Suspense>
         ) : (
-          <SectionFallback label="Φόρτωση περιφέρειας" activationRef={regionSectionGate.activationRef} />
+          <SectionFallback label={ui("Φόρτωση περιφέρειας")} activationRef={regionSectionGate.activationRef} />
         )}
 
         <section id="about" className="about-panel section-rule dev-tag-anchor">
@@ -2275,20 +2308,18 @@ export default function App() {
           </div>
           <div className="about-panel__left dev-tag-anchor">
             <DebugClassLabel name="about-panel__left" />
-            <div className="eyebrow">Σχετικά με το FireWatch</div>
-            <h2>Παρατηρητήριο για τις δασικές πυρκαγιές</h2>
+            <div className="eyebrow">{ui("Σχετικά με το FireWatch")}</div>
+            <h2>{ui("Παρατηρητήριο για τις δασικές πυρκαγιές")}</h2>
             <p>
-              Ανεξάρτητη πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη και αντιμετώπιση δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.
-            </p>
-            <p>Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη ή παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com</p>
+              {ui("Ανεξάρτητη πλατφόρμα που στοχεύει αφενός στην καταγραφή των δημοσίων συμβάσεων που σχετίζονται με την πρόληψη και αντιμετώπιση δασικών πυρκαγιών και αφετέρου στην παρακολούθηση των πυρκαγιών στην Ελλάδα.")}</p>
+            <p>{ui("Η ενημέρωση των δεδομένων γίνεται αυτοματοποιημένα, επομένως ενδέχεται να υπάρχουν λάθη ή παραλείψεις. Εάν εντοπίσετε κάποιο πρόβλημα με τα δεδομένα, στείλτε ένα μέιλ στο troboukis[at]gmail[dot]com")}</p>
             <div className="about-thanks">
               <div className="about-thanks__header">
-                <h3>Ευχαριστίες</h3>
+                <h3>{ui("Ευχαριστίες")}</h3>
                 <MapTilerLogo className="about-thanks__maptiler-logo" />
               </div>
               <p>
-                Η <a href="https://www.maptiler.com/" target="_blank" rel="noreferrer">MapTiler</a> υποστηρίζει ευγενικά το FireWatch, επιτρέποντάς μας να χρησιμοποιούμε στους χάρτες την υπηρεσία hillshade χωρίς κόστος. Η υποστήριξη αυτή είναι ιδιαίτερα πολύτιμη για πρωτοβουλίες που προωθούν τη διαφάνεια, τη λογοδοσία και τη δημοσιογραφία προς όφελος του δημοσίου συμφέροντος.
-              </p>
+                {ui.language === 'el' ? 'Η ' : ''}<a href="https://www.maptiler.com/" target="_blank" rel="noreferrer">MapTiler</a> {ui("υποστηρίζει ευγενικά το FireWatch, επιτρέποντάς μας να χρησιμοποιούμε στους χάρτες την υπηρεσία hillshade χωρίς κόστος. Η υποστήριξη αυτή είναι ιδιαίτερα πολύτιμη για πρωτοβουλίες που προωθούν τη διαφάνεια, τη λογοδοσία και τη δημοσιογραφία προς όφελος του δημοσίου συμφέροντος.")}</p>
             </div>
           </div>
           <div className="about-panel__right dev-tag-anchor">
@@ -2303,23 +2334,22 @@ export default function App() {
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption className="about-cover-caption">Εικόνα από Nano Banana 2</figcaption>
+              <figcaption className="about-cover-caption">{ui("Εικόνα από Nano Banana 2")}</figcaption>
             </figure>
             <div className="about-stats">
               <div>
-                <span className="label">ΠΟΙΟΣ</span>
+                <span className="label">{ui("ΠΟΙΟΣ")}</span>
                 <strong>
-                  <a href="https://troboukis.gr">Θανάσης Τρομπούκης</a>
+                  <a href="https://troboukis.gr">{ui("Θανάσης Τρομπούκης")}</a>
                 </strong>
-                <span className="about-stats__sub">Δημοσιογράφος</span>
+                <span className="about-stats__sub">{ui("Δημοσιογράφος")}</span>
               </div>
               <div>
-                <span className="label">ΠΩΣ</span>
-                <strong>Διαβάστε το σκεπτικό συλλογής και επεξεργασίας των δεδομένων καθώς και τον κώδικα ανάπτυξής της εφαρμογής</strong>
+                <span className="label">{ui("ΠΩΣ")}</span>
+                <strong>{ui("Διαβάστε το σκεπτικό συλλογής και επεξεργασίας των δεδομένων καθώς και τον κώδικα ανάπτυξής της εφαρμογής")}</strong>
                 <span className="about-stats__sub">
                   <a href="https://github.com/troboukis/2026_fire_protection/blob/main/Methodology.md" target="_blank" rel="noreferrer">
-                    Μεθοδολογία
-                  </a>
+                    {ui("Μεθοδολογία")}</a>
                 </span>
                 <span className="about-stats__sub">
                   <a href="https://github.com/troboukis/2026_fire_protection" target="_blank" rel="noreferrer">
@@ -2328,22 +2358,21 @@ export default function App() {
                 </span>
                 <span className="about-stats__sub">
                   <a href="https://github.com/troboukis/2026_fire_protection/tree/main/data/open_data" target="_blank" rel="noreferrer">
-                    Ανοιχτά δεδομένα (CSV)
-                  </a>
+                    {ui("Ανοιχτά δεδομένα (CSV)")}</a>
                 </span>
               </div>
               <div>
-                <span className="label">ΓΙΑΤΙ</span>
-                <strong>Διότι η λογοδοσία είναι θεμέλιο της δημοκρατίας</strong>
+                <span className="label">{ui("ΓΙΑΤΙ")}</span>
+                <strong>{ui("Διότι η λογοδοσία είναι θεμέλιο της δημοκρατίας")}</strong>
               </div>
               <div>
-                <strong>Η παρούσα εφαρμογή είναι προϊόν συνεργασίας ανθρώπινης και τεχνητής νοημοσύνης</strong>
+                <strong>{ui("Η παρούσα εφαρμογή είναι προϊόν συνεργασίας ανθρώπινης και τεχνητής νοημοσύνης")}</strong>
               </div>
               <div className="about-media-link">
-                <span className="label">ΔΗΜΟΣΙΕΥΜΑΤΑ</span>
-                <strong>Το FireWatch στα μέσα ενημέρωσης</strong>
+                <span className="label">{ui("ΔΗΜΟΣΙΕΥΜΑΤΑ")}</span>
+                <strong>{ui("Το FireWatch στα μέσα ενημέρωσης")}</strong>
                 <span className="about-stats__sub">
-                  <Link to="/media">Άρθρα, συνεντεύξεις και εμφανίσεις →</Link>
+                  <Link to="/media">{ui("Άρθρα, συνεντεύξεις και εμφανίσεις →")}</Link>
                 </span>
               </div>
             </div>

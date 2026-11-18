@@ -1,3 +1,4 @@
+import { useOverviewUi } from '../i18n/overview'
 import { dispatchCurrentFireHover } from '../lib/currentFireHover'
 import { buildNewsImageSources } from '../lib/newsImage'
 
@@ -32,6 +33,7 @@ function truncateWords(value: string, maxWords: number): string {
 }
 
 export default function NewsArticleCard({ item, priority = false }: Props) {
+  const ui = useOverviewUi()
   const visibleTitle = truncateWords(item.title, 18)
   const locationLabel = item.area ?? item.municipalityName ?? '—'
   const imageSources = item.imageUrl ? buildNewsImageSources(item.imageUrl) : null
@@ -71,13 +73,13 @@ export default function NewsArticleCard({ item, priority = false }: Props) {
         <span className="eyebrow wire-item__org">{item.source}</span>
         <span className="wire-item__date">{item.publishedAt}</span>
       </div>
-      <h2 className="news-article-card__title" title={item.title}>{visibleTitle}</h2>
+      <h2 lang="el" className="news-article-card__title" title={item.title}>{visibleTitle}</h2>
       <div className="wire-item__rule" aria-hidden="true" />
-      <p className="wire-item__date news-article-card__published">Δημοσιεύτηκε: {item.publishedTime}</p>
+      <p className="wire-item__date news-article-card__published">{ui("Δημοσιεύτηκε: ")}{item.publishedTime}</p>
       <p className="wire-item__subtitle">{locationLabel}</p>
       {item.activeFire ? (
-        <div className="news-article-card__active-fire" aria-label="Ενεργή πυρκαγιά">
-          <span className="news-article-card__active-fire-label">ενεργή πυρκαγιά</span>
+        <div className="news-article-card__active-fire" aria-label={ui("Ενεργή πυρκαγιά")}>
+          <span className="news-article-card__active-fire-label">{ui("ενεργή πυρκαγιά")}</span>
         </div>
       ) : null}
     </a>

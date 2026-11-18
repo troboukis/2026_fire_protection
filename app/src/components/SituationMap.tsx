@@ -1,6 +1,7 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import { useNavigate } from 'react-router-dom'
+import { useLocalizedNavigate as useNavigate } from '../routing/useLocalizedNavigate'
 import type { GeoData } from '../types'
 import { getCurrentFireStatusColor, normalizeCurrentFireStatus } from '../lib/currentFireStatus'
 import { isAbortError } from '../lib/isAbortError'
@@ -242,22 +243,22 @@ function normalizePolygonWinding(geometry: GeoJSON.Polygon | GeoJSON.MultiPolygo
   }
 }
 
-function formatDateEl(iso: string | null): string {
+function formatDateEl(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(dt)
 }
 
-function formatDateTimeEl(iso: string | null): string {
+function formatDateTimeEl(iso: string | null, ui: OverviewUi = greekOverviewUi): string {
   if (!iso) return '—'
   const dt = new Date(iso)
   if (Number.isNaN(dt.getTime())) return '—'
-  return new Intl.DateTimeFormat('el-GR', {
+  return new Intl.DateTimeFormat(ui.locale, {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
@@ -266,18 +267,18 @@ function formatDateTimeEl(iso: string | null): string {
   }).format(dt)
 }
 
-function formatStremmata(areaHa: number): string {
-  return `${(areaHa * 10).toLocaleString('el-GR', { maximumFractionDigits: 0 })} στρ.`
+function formatStremmata(areaHa: number, ui: OverviewUi = greekOverviewUi): string {
+  return ui("{{v0}} στρ.", { v0: (areaHa * 10).toLocaleString(ui.locale, { maximumFractionDigits: 0 }) })
 }
 
-function formatMegawatts(value: number | null): string {
+function formatMegawatts(value: number | null, ui: OverviewUi = greekOverviewUi): string {
   if (value == null) return '—'
-  return `${value.toLocaleString('el-GR', { maximumFractionDigits: 1 })} MW`
+  return `${value.toLocaleString(ui.locale, { maximumFractionDigits: 1 })} MW`
 }
 
-function formatObservationCount(count: number): string {
-  const formattedCount = count.toLocaleString('el-GR')
-  return `${formattedCount} ${count === 1 ? 'παρατήρηση' : 'παρατηρήσεις'}`
+function formatObservationCount(count: number, ui: OverviewUi = greekOverviewUi): string {
+  const formattedCount = count.toLocaleString(ui.locale)
+  return `${formattedCount} ${count === 1 ? ui("παρατήρηση") : ui("παρατηρήσεις")}`
 }
 
 function toDayStart(input: Date): Date {
@@ -553,6 +554,7 @@ function buildHillshadeTileOverlays(
 }
 
 export default function SituationMap() {
+  const ui = useOverviewUi()
   const navigate = useNavigate()
   const currentYear = useMemo(() => new Date().getFullYear(), [])
   const today = useMemo(() => toDayStart(new Date()), [])
@@ -1001,13 +1003,13 @@ export default function SituationMap() {
         type: 'current-fire',
         priority: 0,
         label: [
-          fire.municipalityName ? `Ενεργή πυρκαγιά - ΔΗΜΟΣ ${fire.municipalityName}` : 'Ενεργή πυρκαγιά',
+          fire.municipalityName ? ui("Ενεργή πυρκαγιά - ΔΗΜΟΣ {{v0}}", { v0: fire.municipalityName }) : ui("Ενεργή πυρκαγιά"),
           fire.fuelType,
-          fire.sourceLocation ? `Περιοχή: ${fire.sourceLocation}` : null,
-          fire.startDate ? `Ξέσπασε: ${formatDateEl(fire.startDate)}` : null,
-          normalizeCurrentFireStatus(fire.status) ?? 'Ενεργή πυρκαγιά',
+          fire.sourceLocation ? ui("Περιοχή: {{v0}}", { v0: fire.sourceLocation }) : null,
+          fire.startDate ? ui("Ξέσπασε: {{v0}}", { v0: formatDateEl(fire.startDate, ui) }) : null,
+          ui(normalizeCurrentFireStatus(fire.status) ?? '') || ui("Ενεργή πυρκαγιά"),
           fire.source === 'fireservice_x'
-            ? `Πηγή: Πυροσβεστικό Σώμα στο X (${fire.sourceAccount ?? '@pyrosvestiki'})`
+            ? ui("Πηγή: Πυροσβεστικό Σώμα στο X ({{v0}})", { v0: fire.sourceAccount ?? '@pyrosvestiki' })
             : null,
         ].filter(Boolean).join(' · '),
       })
@@ -1029,8 +1031,8 @@ export default function SituationMap() {
         label: [
           fire.commune ?? 'Copernicus / EFFIS',
           fire.province,
-          formatDateEl(fire.date),
-          formatStremmata(fire.areaHa),
+          formatDateEl(fire.date, ui),
+          formatStremmata(fire.areaHa, ui),
         ].filter(Boolean).join(' · '),
       })
     }
@@ -1045,15 +1047,15 @@ export default function SituationMap() {
         label: [
           detection.municipalityName ?? 'NASA FIRMS',
           `${detection.satellite} / ${detection.instrument}`,
-          formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt),
-          `Θερμική Ενέργεια: ${formatMegawatts(detection.frp)}`,
+          formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt, ui),
+          ui("Θερμική Ενέργεια: {{v0}}", { v0: formatMegawatts(detection.frp, ui) }),
         ].filter(Boolean).join(' · '),
         frp: detection.frp,
       })
     }
 
     return points
-  }, [activeFires, mapData, showActiveFires, showCopernicusFires, showFirmsDetections, viewMode])
+  }, [activeFires, mapData, showActiveFires, showCopernicusFires, showFirmsDetections, viewMode, ui])
 
   const openMunicipalityProfile = useCallback((municipalityKey: string | null) => {
     if (!municipalityKey) return false
@@ -1515,10 +1517,9 @@ export default function SituationMap() {
         <div className="fire-copernicus__intro dev-tag-anchor">
           <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
           <div className="eyebrow">Situation Map</div>
-          <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
+          <h2>{ui("Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους")}</h2>
           <p>
-            Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <span className="fire-current__legend-icon" aria-hidden="true" />, δασικές πυρκαγιές <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> και θερμικές ανωμαλίες εδάφους <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> όπως καταγράφονται από δορυφόρους της NASA FIRMS.
-          </p>
+            {ui("Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές ")}<span className="fire-current__legend-icon" aria-hidden="true" />{ui(", δασικές πυρκαγιές ")}<span className="fire-copernicus__legend-dot" aria-hidden="true" /> {ui("όπως καταγράφηκαν από το ευρωπαϊκό δορυφορικό σύστημα ")}<a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a> {ui("και θερμικές ανωμαλίες εδάφους ")}<span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> {ui("όπως καταγράφονται από δορυφόρους της NASA FIRMS.")}</p>
         </div>
         <div className="fire-copernicus__map-wrap dev-tag-anchor">
           <ComponentTag
@@ -1529,20 +1530,20 @@ export default function SituationMap() {
           />
           <DataLoadingCard
             className="fire-copernicus__map fire-copernicus__map--loading"
-            message="Ανακτώνται οι νεότερες εγγραφές Copernicus και προετοιμάζεται ο χάρτης."
+            message={ui("Ανακτώνται οι νεότερες εγγραφές Copernicus και προετοιμάζεται ο χάρτης.")}
           />
           <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-hidden="true">
             <span className="fire-copernicus__legend-row">
               <span className="fire-copernicus__legend-dot" />
-              <span>Καταγεγραμμένη πυρκαγιά Copernicus EFFIS</span>
+              <span>{ui("Καταγεγραμμένη πυρκαγιά Copernicus EFFIS")}</span>
             </span>
             <span className="fire-copernicus__legend-row">
               <span className="fire-copernicus__legend-dot fire-firms__legend-square" />
-              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+              <span>{ui("Ενεργή θερμική ανωμαλία NASA FIRMS")}</span>
             </span>
             <span className="fire-copernicus__legend-row">
               <span className="fire-current__legend-icon" />
-              <span>Ενεργή πυρκαγιά</span>
+              <span>{ui("Ενεργή πυρκαγιά")}</span>
             </span>
           </div>
         </div>
@@ -1559,22 +1560,22 @@ export default function SituationMap() {
       <div className="fire-copernicus__intro dev-tag-anchor">
         <ComponentTag name="fire-copernicus__intro" kind="CLASS" className="component-tag--overlay" />
         <div className="eyebrow">Situation Map</div>
-        <h2>Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους</h2>
+        <h2>{ui("Δασικές πυρκαγιές & Θερμικές ανωμαλίες εδάφους")}</h2>
         <div className="brand-mark fire-copernicus__brand-mark">
-          Τελευταία ενημέρωση / {formatDateTimeEl(lastUpdatedAt)}
+          {ui("Τελευταία ενημέρωση / ")}{formatDateTimeEl(lastUpdatedAt, ui)}
         </div>
         <p>
-          Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές <span className="fire-current__legend-icon" aria-hidden="true" />, δασικές πυρκαγιές και καμένες εκτάσεις <span className="fire-copernicus__legend-dot" aria-hidden="true" /> όπως καταγράφονται στην ευρωπαϊκή υπηρεσία <a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>, καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> από τη <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> κατά το <b>τελευταίο 24ωρο</b>.
+          {ui("Ο χάρτης απεικονίζει ενεργές δασικές πυρκαγιές ")}<span className="fire-current__legend-icon" aria-hidden="true" />{ui(", δασικές πυρκαγιές και καμένες εκτάσεις ")}<span className="fire-copernicus__legend-dot" aria-hidden="true" /> {ui("όπως καταγράφονται στην ευρωπαϊκή υπηρεσία ")}<a href="https://forest-fire.emergency.copernicus.eu/">Copernicus EFFIS</a>{ui(", καθώς και δορυφορικές παρατηρήσεις θερμικών ανωμαλιών στο έδαφος ")}<span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" /> {ui("από τη ")}<a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a> {ui("κατά το ")}<b>{ui("τελευταίο 24ωρο")}</b>.
         </p>
-        <div className="fire-firms__satellites" aria-label="Τελευταίες διελεύσεις δορυφόρων NASA FIRMS">
+        <div className="fire-firms__satellites" aria-label={ui("Τελευταίες διελεύσεις δορυφόρων NASA FIRMS")}>
           {satellites.length > 0 ? satellites.map(({ detection, count }) => (
             <div key={`${detection.satellite}-${detection.instrument}`}>
-              <strong>{detection.satellite} / {detection.instrument} · {formatObservationCount(count)}</strong>
-              <span>{formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt)}</span>
+              <strong>{detection.satellite} / {detection.instrument} · {formatObservationCount(count, ui)}</strong>
+              <span>{formatDateTimeEl(detection.acquiredAtEl ?? detection.acquiredAt, ui)}</span>
             </div>
           )) : (
             <div>
-              <strong>Δεν υπάρχουν διαθέσιμες διελεύσεις</strong>
+              <strong>{ui("Δεν υπάρχουν διαθέσιμες διελεύσεις")}</strong>
               <span>—</span>
             </div>
           )}
@@ -1582,16 +1583,16 @@ export default function SituationMap() {
         
         <div className="fire-copernicus__section-divider" aria-hidden="true" />
         <div className="fire-copernicus__date-filter-selected" aria-busy={isDateFilterLoading}>
-          <span className="label">Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα</span>
-          <div className="fire-copernicus__date-filter fire-copernicus__date-filter--pickers" aria-label="Φίλτρο ημερομηνιών Copernicus">
+          <span className="label">{ui("Βλέπετε δεδομένα δασικών πυρκαγιών για το διάστημα")}</span>
+          <div className="fire-copernicus__date-filter fire-copernicus__date-filter--pickers" aria-label={ui("Φίλτρο ημερομηνιών Copernicus")}>
             <label className="fire-copernicus__date-picker">
-              <span className="label">Από</span>
+              <span className="label">{ui("Από")}</span>
               <input
                 type="date"
                 min={domainStartValue}
                 max={rangeEndValue}
                 value={rangeStartValue}
-                aria-label="Έναρξη φίλτρου ημερομηνίας"
+                aria-label={ui("Έναρξη φίλτρου ημερομηνίας")}
                 onChange={(event) => {
                   const nextDate = parseDateInputValue(event.target.value)
                   if (!nextDate) return
@@ -1600,13 +1601,13 @@ export default function SituationMap() {
               />
             </label>
             <label className="fire-copernicus__date-picker">
-              <span className="label">Έως</span>
+              <span className="label">{ui("Έως")}</span>
               <input
                 type="date"
                 min={rangeStartValue}
                 max={todayValue}
                 value={rangeEndValue}
-                aria-label="Λήξη φίλτρου ημερομηνίας"
+                aria-label={ui("Λήξη φίλτρου ημερομηνίας")}
                 onChange={(event) => {
                   const nextDate = parseDateInputValue(event.target.value)
                   if (!nextDate) return
@@ -1617,27 +1618,25 @@ export default function SituationMap() {
           </div>
           {isDateFilterLoading && (
             <div className="fire-copernicus__date-loading" role="status" aria-live="polite">
-              Φόρτωση δεδομένων
-            </div>
+              {ui("Φόρτωση δεδομένων")}</div>
           )}
         </div>
         <div className="fire-copernicus__stats">
           <div>
-            <span className="label">Συμβάντα</span>
-            <strong>{fires.length.toLocaleString('el-GR')}</strong>
+            <span className="label">{ui("Συμβάντα")}</span>
+            <strong>{fires.length.toLocaleString(ui.locale)}</strong>
           </div>
           <div>
-            <span className="label">Καμένη Έκταση</span>
-            <strong>{formatStremmata(totalAreaHa)}</strong>
+            <span className="label">{ui("Καμένη Έκταση")}</span>
+            <strong>{formatStremmata(totalAreaHa, ui)}</strong>
           </div>
           <div>
-            <span className="label">Τελευταία Εγγραφή</span>
-            <strong>{formatDateEl(latestFire?.date ?? null)}</strong>
+            <span className="label">{ui("Τελευταία Εγγραφή")}</span>
+            <strong>{formatDateEl(latestFire?.date ?? null, ui)}</strong>
           </div>
         </div>
         <p className="fire-copernicus__note">
-          Σημείωση: Οι ημερομηνίες και τα μεγέθη ενδέχεται να αναθεωρηθούν καθώς ενημερώνεται η βάση δεδομένων.
-        </p>
+          {ui("Σημείωση: Οι ημερομηνίες και τα μεγέθη ενδέχεται να αναθεωρηθούν καθώς ενημερώνεται η βάση δεδομένων.")}</p>
       </div>
 
       <div className="fire-copernicus__map-wrap dev-tag-anchor">
@@ -1647,7 +1646,7 @@ export default function SituationMap() {
           className="component-tag--overlay"
           style={{ left: 'auto', right: '0.45rem' }}
         />
-        {!mapData && <div className="fire-copernicus__empty">Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.</div>}
+        {!mapData && <div className="fire-copernicus__empty">{ui("Δεν ήταν δυνατή η φόρτωση των δεδομένων Copernicus.")}</div>}
         {mapData && (
           <div
             ref={mapRef}
@@ -1670,11 +1669,11 @@ export default function SituationMap() {
               <DataLoadingCard
                 compact
                 className="fire-copernicus__date-loading-overlay"
-                title="Φόρτωση χάρτη"
-                message="Ανακτώνται τα δεδομένα Copernicus για το επιλεγμένο διάστημα."
+                title={ui("Φόρτωση χάρτη")}
+                message={ui("Ανακτώνται τα δεδομένα Copernicus για το επιλεγμένο διάστημα.")}
               />
             )}
-            <div className="fire-copernicus__toggle dev-tag-anchor" aria-label="Τρόπος προβολής Copernicus">
+            <div className="fire-copernicus__toggle dev-tag-anchor" aria-label={ui("Τρόπος προβολής Copernicus")}>
               <ComponentTag
                 name="fire-copernicus__toggle"
                 kind="CLASS"
@@ -1692,8 +1691,7 @@ export default function SituationMap() {
                   setViewMode('points')
                 }}
               >
-                Σημεία
-              </button>
+                {ui("Σημεία")}</button>
               <button
                 type="button"
                 className={viewMode === 'shapes' ? 'is-active' : ''}
@@ -1705,14 +1703,13 @@ export default function SituationMap() {
                   setViewMode('shapes')
                 }}
               >
-                Εκτάσεις
-              </button>
+                {ui("Εκτάσεις")}</button>
             </div>
             <svg
               ref={svgRef}
               viewBox={`0 0 ${mapData.width} ${mapData.height}`}
               role="img"
-              aria-label="Χάρτης πυρκαγιών Copernicus στην Ελλάδα"
+              aria-label={ui("Χάρτης πυρκαγιών Copernicus στην Ελλάδα")}
             />
             {mapData.hillshadeTiles.length > 0 && !terrainFailed && (
               <MapTilerLogo className="fire-copernicus__maptiler-logo" />
@@ -1728,7 +1725,7 @@ export default function SituationMap() {
                 }}
               >
                 <div className="fire-copernicus__tooltip-item">
-                  <strong>{hoveredStackedTooltip.totalCount} σημεία στο ίδιο σημείο</strong>
+                  <strong>{hoveredStackedTooltip.totalCount} {ui("σημεία στο ίδιο σημείο")}</strong>
                   {hoveredStackedTooltip.items.map((item, index, items) => (
                     <span
                       key={`${index}-${item.label}`}
@@ -1755,10 +1752,10 @@ export default function SituationMap() {
               >
                 {hoveredFire.items.map((item) => (
                   <div key={item.id} className="fire-copernicus__tooltip-item">
-                    <strong>{item.commune ?? 'Άγνωστος δήμος'}</strong>
+                    <strong>{item.commune ?? ui("Άγνωστος δήμος")}</strong>
                     <span>{item.province ?? '—'}</span>
-                    <span>{formatDateEl(item.date)}</span>
-                    <span>{formatStremmata(item.areaHa)}</span>
+                    <span>{formatDateEl(item.date, ui)}</span>
+                    <span>{formatStremmata(item.areaHa, ui)}</span>
                   </div>
                 ))}
               </div>
@@ -1774,10 +1771,10 @@ export default function SituationMap() {
                 }}
               >
                 <div className="fire-copernicus__tooltip-item">
-                  <strong>{hoveredFirmsDetection.item.municipalityName ?? 'Άγνωστη περιοχή'}</strong>
+                  <strong>{hoveredFirmsDetection.item.municipalityName ?? ui("Άγνωστη περιοχή")}</strong>
                   <span>{hoveredFirmsDetection.item.satellite} / {hoveredFirmsDetection.item.instrument}</span>
-                  <span>{formatDateTimeEl(hoveredFirmsDetection.item.acquiredAtEl ?? hoveredFirmsDetection.item.acquiredAt)}</span>
-                  <span>Θερμική Ενέργεια: {formatMegawatts(hoveredFirmsDetection.item.frp)}</span>
+                  <span>{formatDateTimeEl(hoveredFirmsDetection.item.acquiredAtEl ?? hoveredFirmsDetection.item.acquiredAt, ui)}</span>
+                  <span>{ui("Θερμική Ενέργεια: ")}{formatMegawatts(hoveredFirmsDetection.item.frp, ui)}</span>
                 </div>
               </div>
             )}
@@ -1792,13 +1789,13 @@ export default function SituationMap() {
                 }}
               >
                 <div className="fire-copernicus__tooltip-item">
-                  <strong>{hoveredActiveFire.item.municipalityName ? `ΔΗΜΟΣ ${hoveredActiveFire.item.municipalityName}` : 'Άγνωστη περιοχή'}</strong>
+                  <strong>{hoveredActiveFire.item.municipalityName ? ui("ΔΗΜΟΣ {{v0}}", { v0: hoveredActiveFire.item.municipalityName }) : ui("Άγνωστη περιοχή")}</strong>
                   <span>{hoveredActiveFire.item.fuelType ?? '—'}</span>
-                  {hoveredActiveFire.item.sourceLocation && <span>Περιοχή: {hoveredActiveFire.item.sourceLocation}</span>}
-                  <span>Ξέσπασε: {formatDateEl(hoveredActiveFire.item.startDate)}</span>
-                  <span>{hoveredActiveFire.item.normalizedStatus}</span>
+                  {hoveredActiveFire.item.sourceLocation && <span>{ui("Περιοχή: ")}{hoveredActiveFire.item.sourceLocation}</span>}
+                  <span>{ui("Ξέσπασε: ")}{formatDateEl(hoveredActiveFire.item.startDate, ui)}</span>
+                  <span>{ui(hoveredActiveFire.item.normalizedStatus)}</span>
                   {hoveredActiveFire.item.source === 'fireservice_x' && (
-                    <span>Πηγή: Πυροσβεστικό Σώμα στο X ({hoveredActiveFire.item.sourceAccount ?? '@pyrosvestiki'})</span>
+                    <span>{ui("Πηγή: Πυροσβεστικό Σώμα στο X (")}{hoveredActiveFire.item.sourceAccount ?? '@pyrosvestiki'})</span>
                   )}
                 </div>
               </div>
@@ -1806,7 +1803,7 @@ export default function SituationMap() {
           </div>
         )}
         {mapData && (
-          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label="Υπόμνημα Copernicus EFFIS">
+          <div className="fire-copernicus__legend fire-copernicus__legend--map" aria-label={ui("Υπόμνημα Copernicus EFFIS")}>
             <MapLegendToggle
               className="fire-copernicus__legend-row"
               visible={showCopernicusFires}
@@ -1815,10 +1812,10 @@ export default function SituationMap() {
                 setHoveredStackedTooltip(null)
                 setShowCopernicusFires((visible) => !visible)
               }}
-              label="Πυρκαγιές Copernicus EFFIS"
+              label={ui("Πυρκαγιές Copernicus EFFIS")}
             >
               <span className="fire-copernicus__legend-dot" aria-hidden="true" />
-              <span>{viewMode === 'points' ? 'Καταγεγραμμένη πυρκαγιά Copernicus EFFIS' : 'Καμένη έκταση Copernicus EFFIS'}</span>
+              <span>{viewMode === 'points' ? ui("Καταγεγραμμένη πυρκαγιά Copernicus EFFIS") : ui("Καμένη έκταση Copernicus EFFIS")}</span>
             </MapLegendToggle>
             <MapLegendToggle
               className="fire-copernicus__legend-row"
@@ -1828,10 +1825,10 @@ export default function SituationMap() {
                 setHoveredStackedTooltip(null)
                 setShowFirmsDetections((visible) => !visible)
               }}
-              label="Ενεργή θερμική ανωμαλία NASA FIRMS"
+              label={ui("Ενεργή θερμική ανωμαλία NASA FIRMS")}
             >
               <span className="fire-copernicus__legend-dot fire-firms__legend-square" aria-hidden="true" />
-              <span>Ενεργή θερμική ανωμαλία NASA FIRMS</span>
+              <span>{ui("Ενεργή θερμική ανωμαλία NASA FIRMS")}</span>
             </MapLegendToggle>
             <MapLegendToggle
               className="fire-copernicus__legend-row"
@@ -1841,10 +1838,10 @@ export default function SituationMap() {
                 setHoveredStackedTooltip(null)
                 setShowActiveFires((visible) => !visible)
               }}
-              label="Ενεργή πυρκαγιά"
+              label={ui("Ενεργή πυρκαγιά")}
             >
               <span className="fire-current__legend-icon" aria-hidden="true" />
-              <span>Ενεργή πυρκαγιά (θέση κατά προσέγγιση)</span>
+              <span>{ui("Ενεργή πυρκαγιά (θέση κατά προσέγγιση)")}</span>
             </MapLegendToggle>
           </div>
         )}

@@ -1,0 +1,60 @@
+{
+  "preparedOn": "2026-11-17",
+  "method": "DeepL initial translation, then editorial review; bundled labels only. Explicit spelling aliases preserve Greek source records and entity identifiers. Historical and combined municipality names remain separate.",
+  "sourceFields": [
+    "organization.organization_value",
+    "organization.organization_normalized_value",
+    "diavgeia.org_name_clean",
+    "municipality.municipality_value",
+    "municipality.municipality_normalized_value",
+    "municipality_normalized_name.municipality_normalized_value",
+    "municipality_fire_protection_data.dhmos",
+    "municipality_fire_protection_data.municipality_normalized_name",
+    "region.region_value",
+    "region.region_normalized_value"
+  ],
+  "reviewedNameMessages": 1103,
+  "knownDisplayAliases": 1804,
+  "terminologyReferences": [
+    {
+      "name": "National Technical University of Athens",
+      "url": "https://www.ntua.gr/en/"
+    },
+    {
+      "name": "National Centre for Scientific Research Demokritos",
+      "url": "https://www.demokritos.gr/"
+    },
+    {
+      "name": "Centre for Research and Technology Hellas",
+      "url": "https://www.certh.gr/5B4D1A98.en.aspx"
+    },
+    {
+      "name": "Natural Environment and Climate Change Agency",
+      "url": "https://necca.gov.gr/en/terms-of-use/"
+    },
+    {
+      "name": "Independent Authority for Public Revenue",
+      "url": "https://www.aade.gr/en/aade/mission-responsibilities"
+    },
+    {
+      "name": "National Quality Infrastructure System",
+      "url": "https://esyp.eu/wp-content/uploads/2024/06/esyp_terms-of-use_2024-06-17_en.pdf"
+    },
+    {
+      "name": "National Infrastructures for Research and Technology",
+      "url": "https://grnet.gr/en/"
+    },
+    {
+      "name": "Hellenic Pasteur Institute",
+      "url": "https://www.pasteur.gr/en/hellenic-pasteur-institute"
+    },
+    {
+      "name": "Ministry of Maritime Affairs and Insular Policy",
+      "url": "https://www.ynanp.gr/en/contact/"
+    },
+    {
+      "name": "Municipality name reference examples",
+      "url": "https://civilprotection.gov.gr/sites/default/files/2022-09/en_drm_plan.pdf"
+    }
+  ]
+}

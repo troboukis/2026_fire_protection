@@ -1,9 +1,39 @@
+import { cookieConsentTranslation } from './i18n/cookieConsentTranslation'
+import { logError } from './lib/logger'
 import * as CookieConsent from 'vanilla-cookieconsent'
 import 'vanilla-cookieconsent/dist/cookieconsent.css'
 import { disableGA, initGA, trackPageView } from './analytics'
+import { documentHref, languageFromPath, localizeHref } from './routing/localizedHref'
+import type { AppLanguage } from './i18n/languages'
 
 const ANALYTICS_CATEGORY = 'analytics'
 let initialization: Promise<void> | null = null
+let languageUpdate = Promise.resolve()
+let requestedLanguage: AppLanguage = 'el'
+
+export function syncCookieConsentLanguage(language: AppLanguage): Promise<void> {
+  requestedLanguage = language
+  if (!initialization) return Promise.resolve()
+  // Serialise updates and apply the latest URL language after initialisation.
+  // Changing copy never accepts categories or restarts the consent instance.
+  languageUpdate = languageUpdate.then(async () => {
+    await initialization
+    const next = requestedLanguage
+    await CookieConsent.setLanguage(next)
+    localizeCookieConsentLinks(next)
+  }).catch(error => { logError('[CookieConsent] language update failed', error) })
+  return languageUpdate
+}
+
+export function localizeCookieConsentLinks(language: AppLanguage) {
+  for (const anchor of document.querySelectorAll<HTMLAnchorElement>('#cc-main a[href]')) {
+    const href = anchor.getAttribute('href')!
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+    const appHref = base && href.startsWith(`${base}/`) ? href.slice(base.length) : href
+    const localized = localizeHref(appHref, language)
+    if (localized !== appHref) anchor.setAttribute('href', documentHref(localized, import.meta.env.BASE_URL))
+  }
+}
 
 function syncGoogleAnalytics(trackCurrentPage: boolean) {
   if (CookieConsent.acceptedCategory(ANALYTICS_CATEGORY)) {
@@ -20,7 +50,7 @@ function syncGoogleAnalytics(trackCurrentPage: boolean) {
 export function initCookieConsent() {
   if (initialization) return initialization
 
-  const privacyHref = `${import.meta.env.BASE_URL}privacy`
+  const routePath = window.location.pathname.slice(import.meta.env.BASE_URL.replace(/\/$/, '').length) || '/'
 
   initialization = CookieConsent.run({
     mode: 'opt-in',
@@ -46,6 +76,10 @@ export function initCookieConsent() {
       },
     },
     onFirstConsent: () => syncGoogleAnalytics(true),
+    onModalReady: () => {
+      const pathname = window.location.pathname.slice(import.meta.env.BASE_URL.replace(/\/$/, '').length) || '/'
+      localizeCookieConsentLinks(languageFromPath(pathname))
+    },
     onConsent: () => syncGoogleAnalytics(false),
     onChange: ({ changedCategories }) => {
       if (changedCategories.includes(ANALYTICS_CATEGORY)) syncGoogleAnalytics(true)
@@ -72,82 +106,8 @@ export function initCookieConsent() {
       },
     },
     language: {
-      default: 'el',
-      translations: {
-        el: {
-          consentModal: {
-            title: 'Επιλογές απορρήτου',
-            description: 'Χρησιμοποιούμε προαιρετικά cookies της υπηρεσίας Google Analytics, ώστε να κατανοούμε καλύτερα πώς χρησιμοποιείται το FireWatch. Επιλέγοντας «Αποδοχή όλων», ενεργοποιείτε την επιλογή «Στατιστικά». Επιλέγοντας «Απόρριψη όλων», η επιλογή «Στατιστικά» παραμένει απενεργοποιημένη.',
-            acceptAllBtn: 'Αποδοχη ολων',
-            acceptNecessaryBtn: 'Απορριψη ολων',
-            showPreferencesBtn: 'Ρυθμισεις',
-            footer: `<a href="${privacyHref}">Πολιτική απορρήτου και cookies</a>`,
-          },
-          preferencesModal: {
-            title: 'Ρυθμίσεις απορρήτου',
-            acceptAllBtn: 'Αποδοχη ολων',
-            acceptNecessaryBtn: 'Απορριψη ολων',
-            savePreferencesBtn: 'Αποθηκευση επιλογων',
-            closeIconLabel: 'Κλείσιμο',
-            serviceCounterLabel: 'Υπηρεσία|Υπηρεσίες',
-            sections: [
-              {
-                title: 'Οι επιλογές σας',
-                description: 'Μπορείτε να αλλάξετε την επιλογή σας οποιαδήποτε στιγμή από τον σύνδεσμο «Ρυθμίσεις cookies» στο κάτω μέρος της εφαρμογής.',
-              },
-              {
-                title: 'Απαραίτητα',
-                description: 'Αποθηκεύουν αποκλειστικά την επιλογή σας για τα cookies, ώστε να μη σας ζητείται σε κάθε επίσκεψη. Δεν μπορούν να απενεργοποιηθούν.',
-                linkedCategory: 'necessary',
-                cookieTable: {
-                  caption: 'Απαραίτητα cookies',
-                  headers: {
-                    name: 'Όνομα',
-                    desc: 'Σκοπός',
-                    expiration: 'Διάρκεια',
-                  },
-                  body: [
-                    {
-                      name: 'firewatch_consent',
-                      desc: 'Αποθήκευση των επιλογών συγκατάθεσης.',
-                      expiration: '182 ημέρες',
-                    },
-                  ],
-                },
-              },
-              {
-                title: 'Στατιστικά',
-                description: 'Το Google Analytics μάς βοηθά να κατανοούμε συγκεντρωτικά την επισκεψιμότητα και τη χρήση της εφαρμογής. Παραμένει απενεργοποιημένο μέχρι να το επιλέξετε.',
-                linkedCategory: ANALYTICS_CATEGORY,
-                cookieTable: {
-                  caption: 'Cookies στατιστικών',
-                  headers: {
-                    name: 'Όνομα',
-                    desc: 'Σκοπός',
-                    expiration: 'Διάρκεια',
-                  },
-                  body: [
-                    {
-                      name: '_ga',
-                      desc: 'Διάκριση επισκεπτών για συγκεντρωτικά στατιστικά.',
-                      expiration: 'Έως 2 έτη',
-                    },
-                    {
-                      name: '_ga_*',
-                      desc: 'Διατήρηση της κατάστασης μιας επίσκεψης.',
-                      expiration: 'Έως 2 έτη',
-                    },
-                  ],
-                },
-              },
-              {
-                title: 'Περισσότερες πληροφορίες',
-                description: `Δείτε την <a href="${privacyHref}">Πολιτική απορρήτου και cookies</a> ή επικοινωνήστε στο troboukis[at]gmail[dot]com.`,
-              },
-            ],
-          },
-        },
-      },
+      default: languageFromPath(routePath),
+      translations: { el: cookieConsentTranslation('el'), en: cookieConsentTranslation('en') },
     },
   })
 

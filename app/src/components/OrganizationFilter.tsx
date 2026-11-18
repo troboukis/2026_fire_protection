@@ -1,3 +1,4 @@
+import { useProcurementI18n } from '../i18n/useProcurementI18n'
 import SearchableSelectFilter from './SearchableSelectFilter'
 
 type Props = {
@@ -9,16 +10,17 @@ type Props = {
 }
 
 export default function OrganizationFilter(props: Props) {
+  const { p, organization } = useProcurementI18n()
   return (
     <SearchableSelectFilter
       {...props}
-      options={props.options.map((label) => ({ value: label, label }))}
+      options={props.options.map((label) => ({ value: label, label: organization(label) }))}
       className="contracts-filter--organization"
-      label="Φορέας"
-      allLabel="Όλοι οι φορείς"
-      loadingLabel="Φόρτωση φορέων…"
-      failedLabel="Δεν ήταν δυνατή η φόρτωση των φορέων."
-      emptyLabel="Δεν βρέθηκαν φορείς."
+      label={p('organization')}
+      allLabel={p('allOrganizations')}
+      loadingLabel={p('loadingOrganizations')}
+      failedLabel={p('organizationsFailed')}
+      emptyLabel={p('organizationsEmpty')}
     />
   )
 }

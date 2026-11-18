@@ -1,3 +1,4 @@
+import { useOverviewUi, greekOverviewUi, type OverviewUi } from '../i18n/overview'
 import { useCallback, useEffect, useId, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 import ComponentTag from './ComponentTag'
@@ -70,24 +71,24 @@ type Props = {
   onContractOpen?: (id: string) => void
 }
 
-function buildSignedContractsSentence(currentYear: number, count: number, suffix = ''): string {
+function buildSignedContractsSentence(currentYear: number, count: number, suffix = '', ui: OverviewUi = greekOverviewUi): string {
   if (count === 0) {
-    return `Το ${currentYear} δεν υπεγράφη καμία σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+    return ui("Το {{v0}} δεν υπεγράφη καμία σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών{{v1}}.", { v0: currentYear, v1: suffix })
   }
   if (count === 1) {
-    return `Το ${currentYear} υπεγράφη 1 σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+    return ui("Το {{v0}} υπεγράφη 1 σύμβαση που σχετίζεται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών{{v1}}.", { v0: currentYear, v1: suffix })
   }
-  return `Το ${currentYear} υπεγράφησαν ${count.toLocaleString('el-GR')} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών${suffix}.`
+  return ui("Το {{v0}} υπεγράφησαν {{v1}} συμβάσεις που σχετίζονται με την πρόληψη ή αντιμετώπιση δασικών πυρκαγιών{{v2}}.", { v0: currentYear, v1: count.toLocaleString(ui.locale), v2: suffix })
 }
 
-function buildActivePreviousSentence(currentYear: number, count: number, suffix = ''): string {
+function buildActivePreviousSentence(currentYear: number, count: number, suffix = '', ui: OverviewUi = greekOverviewUi): string {
   if (count === 0) {
-    return `Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να ήταν ενεργές* το ${currentYear}${suffix}.`
+    return ui("Δεν εντοπίστηκαν παλαιότερες συμβάσεις που να ήταν ενεργές* το {{v0}}{{v1}}.", { v0: currentYear, v1: suffix })
   }
   if (count === 1) {
-    return `Εντοπίστηκε 1 παλαιότερη σύμβαση που ήταν ενεργή* το ${currentYear}${suffix}.`
+    return ui("Εντοπίστηκε 1 παλαιότερη σύμβαση που ήταν ενεργή* το {{v0}}{{v1}}.", { v0: currentYear, v1: suffix })
   }
-  return `Εντοπίστηκαν ${count.toLocaleString('el-GR')} παλαιότερες συμβάσεις που ήταν ενεργές* το ${currentYear}${suffix}.`
+  return ui("Εντοπίστηκαν {{v0}} παλαιότερες συμβάσεις που ήταν ενεργές* το {{v1}}{{v2}}.", { v0: count.toLocaleString(ui.locale), v1: currentYear, v2: suffix })
 }
 
 export default function MapSelectionPanel({
@@ -115,6 +116,7 @@ export default function MapSelectionPanel({
   municipalityActivePreviousCount,
   onContractOpen,
 }: Props) {
+  const ui = useOverviewUi()
   const mapTilerApiKey = useMemo(() => cleanText(import.meta.env.VITE_MAPTILER_API_KEY), [])
   const mapClipPathId = useId().replace(/:/g, '-')
   const isTouchInput = useMemo(() => {
@@ -427,22 +429,22 @@ export default function MapSelectionPanel({
 
   const title =
     kind === 'municipality' && label
-      ? `Δήμος ${label}`
+      ? ui("Δήμος {{v0}}", { v0: label })
       : kind === 'region' && label
-        ? `Περιφέρεια ${label}`
-        : 'Επιλογή περιοχής'
+        ? ui("Περιφέρεια {{v0}}", { v0: label })
+        : ui("Επιλογή περιοχής")
 
   const subtitle =
     !kind
-      ? 'Μπορείτε να επιλέξετε δήμο στον χάρτη ή με τα αντίστοιχα φίλτρα.'
+      ? ui("Μπορείτε να επιλέξετε δήμο στον χάρτη ή με τα αντίστοιχα φίλτρα.")
       : kind === 'municipality'
         ? [
-            buildSignedContractsSentence(currentYear, municipalitySignedCurrentCount ?? 0),
-            buildActivePreviousSentence(currentYear, municipalityActivePreviousCount ?? 0),
+            buildSignedContractsSentence(currentYear, municipalitySignedCurrentCount ?? 0, undefined, ui),
+            buildActivePreviousSentence(currentYear, municipalityActivePreviousCount ?? 0, undefined, ui),
           ].join(' ')
         : [
-            buildSignedContractsSentence(currentYear, regionSignedCurrentCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
-            buildActivePreviousSentence(currentYear, regionActivePreviousCount ?? 0, ' στην επιλεγμένη περιφέρεια'),
+            buildSignedContractsSentence(currentYear, regionSignedCurrentCount ?? 0, ui(" στην επιλεγμένη περιφέρεια")),
+            buildActivePreviousSentence(currentYear, regionActivePreviousCount ?? 0, ui(" στην επιλεγμένη περιφέρεια")),
           ].join(' ')
 
   return (
@@ -452,17 +454,17 @@ export default function MapSelectionPanel({
         <ComponentTag name="maps-selection-panel" kind="CLASS" />
       </div>
       <EditorialLead
-        eyebrow="Ανάλυση"
+        eyebrow={ui("Ανάλυση")}
         title={title}
         subtitle={subtitle}
-        ctaLabel={kind === 'municipality' && municipalityKey ? 'Δες το προφίλ του δήμου' : undefined}
+        ctaLabel={kind === 'municipality' && municipalityKey ? ui("Δες το προφίλ του δήμου") : undefined}
         ctaTo={kind === 'municipality' && municipalityKey ? `/municipalities?municipality=${encodeURIComponent(municipalityKey)}` : undefined}
       />
 
       {kind === 'municipality' && previewGeometry && (
-        <div className="maps-selection-panel__shape" aria-label="Πολύγωνο δήμου">
+        <div className="maps-selection-panel__shape" aria-label={ui("Πολύγωνο δήμου")}>
           {municipalityFirePoints.length > 0 && (
-            <div className="maps-selection-panel__fire-toggle" aria-label="Τρόπος προβολής πυρκαγιών">
+            <div className="maps-selection-panel__fire-toggle" aria-label={ui("Τρόπος προβολής πυρκαγιών")}>
               <button
                 type="button"
                 className={fireViewMode === 'points' ? 'is-active' : ''}
@@ -471,8 +473,7 @@ export default function MapSelectionPanel({
                   setFireViewMode('points')
                 }}
               >
-                Σημεία
-              </button>
+                {ui("Σημεία")}</button>
               <button
                 type="button"
                 className={fireViewMode === 'shapes' ? 'is-active' : ''}
@@ -481,8 +482,7 @@ export default function MapSelectionPanel({
                   setFireViewMode('shapes')
                 }}
               >
-                Εκτάσεις
-              </button>
+                {ui("Εκτάσεις")}</button>
             </div>
           )}
           <div className="maps-selection-panel__map-canvas">
@@ -730,7 +730,7 @@ export default function MapSelectionPanel({
             >
               <strong>{hoveredFirePoint.commune}</strong>
               <span>{hoveredFirePoint.province}</span>
-              <span>{`${(hoveredFirePoint.areaHa * 10).toLocaleString('el-GR', { maximumFractionDigits: 0 })} στρ.`}</span>
+              <span>{ui("{{v0}} στρ.", { v0: (hoveredFirePoint.areaHa * 10).toLocaleString(ui.locale, { maximumFractionDigits: 0 }) })}</span>
             </div>
           )}
           {hoveredWorkPoint && (
@@ -742,13 +742,13 @@ export default function MapSelectionPanel({
               }}
             >
               <strong>{hoveredWorkPoint.pointName}</strong>
-              <em>{hoveredWorkPoint.scope === 'municipality' ? 'Εργασία δήμου' : 'Εργασία περιφέρειας'}</em>
+              <em>{hoveredWorkPoint.scope === 'municipality' ? ui("Εργασία δήμου") : ui("Εργασία περιφέρειας")}</em>
               <span>{hoveredWorkPoint.work}</span>
             </div>
           )}
           <div className="maps-selection-panel__shape-meta">
             {municipalityFireLoading
-              ? 'Φόρτωση δασικών πυρκαγιών'
+              ? ui("Φόρτωση δασικών πυρκαγιών")
               : projectedFireShapes.length > 0
                 ? (
                   <>
@@ -758,10 +758,10 @@ export default function MapSelectionPanel({
                         setHoveredFirePoint(null)
                         setShowCurrentFires((visible) => !visible)
                       }}
-                      label="Πυρκαγιές 2026"
+                      label={ui("Πυρκαγιές 2026")}
                     >
                       <span className="maps-legend-dot maps-legend-dot--fire" aria-hidden="true" />
-                      <span>{`Πυρκαγιές 2026 — ${projectedCurrentFireShapes.length.toLocaleString('el-GR')}`}</span>
+                      <span>{ui("Πυρκαγιές 2026 — {{v0}}", { v0: projectedCurrentFireShapes.length.toLocaleString(ui.locale) })}</span>
                     </MapLegendToggle>
                     {projectedPreviousFireShapes.length > 0 && (
                       <>
@@ -772,21 +772,20 @@ export default function MapSelectionPanel({
                             setHoveredFirePoint(null)
                             setShowPreviousFires((visible) => !visible)
                           }}
-                          label="Πυρκαγιές 2024-2025"
+                          label={ui("Πυρκαγιές 2024-2025")}
                         >
                           <span className="maps-legend-dot maps-legend-dot--fire-previous" aria-hidden="true" />
-                          <span>{`Πυρκαγιές 2024-2025 — ${projectedPreviousFireShapes.length.toLocaleString('el-GR')}`}</span>
+                          <span>{ui("Πυρκαγιές 2024-2025 — {{v0}}", { v0: projectedPreviousFireShapes.length.toLocaleString(ui.locale) })}</span>
                         </MapLegendToggle>
                       </>
                     )}
                     {' · '}
-                    <span className="maps-selection-panel__shape-source">Πηγή: Copernicus EFFIS</span>
+                    <span className="maps-selection-panel__shape-source">{ui("Πηγή: Copernicus EFFIS")}</span>
                   </>
                 )
                 : (
                   <>
-                    Δεν βρέθηκαν δασικές πυρκαγιές
-                  </>
+                    {ui("Δεν βρέθηκαν δασικές πυρκαγιές")}</>
                 )}
             {!municipalityWorkLoading && projectedMunicipalityWorkDots.length > 0 && (
               <>
@@ -797,10 +796,10 @@ export default function MapSelectionPanel({
                     setHoveredWorkPoint(null)
                     setShowMunicipalityWork((visible) => !visible)
                   }}
-                  label="Αντιπυρικές εργασίες"
+                  label={ui("Αντιπυρικές εργασίες")}
                 >
                   <span className="maps-legend-dot maps-legend-dot--work" aria-hidden="true" />
-                  <span>{`Αντιπυρικές εργασίες — ${projectedMunicipalityWorkDots.length.toLocaleString('el-GR')}`}</span>
+                  <span>{ui("Αντιπυρικές εργασίες — {{v0}}", { v0: projectedMunicipalityWorkDots.length.toLocaleString(ui.locale) })}</span>
                 </MapLegendToggle>
               </>
             )}
@@ -813,10 +812,10 @@ export default function MapSelectionPanel({
                     setHoveredWorkPoint(null)
                     setShowRegionalWork((visible) => !visible)
                   }}
-                  label="Εργασίες περιφέρειας"
+                  label={ui("Εργασίες περιφέρειας")}
                 >
                   <span className="maps-legend-dot maps-legend-dot--regional-work" aria-hidden="true" />
-                  <span>{`ΕΡΓΑΣΙΕΣ ΠΕΡΙΦΕΡΕΙΑΣ — ${projectedRegionalWorkDots.length.toLocaleString('el-GR')}`}</span>
+                  <span>{ui("ΕΡΓΑΣΙΕΣ ΠΕΡΙΦΕΡΕΙΑΣ — {{v0}}", { v0: projectedRegionalWorkDots.length.toLocaleString(ui.locale) })}</span>
                 </MapLegendToggle>
               </>
             )}
@@ -825,13 +824,13 @@ export default function MapSelectionPanel({
       )}
 
       {kind === 'municipality' && (
-        <section className="maps-selection-panel__latest" aria-label="Συμβάσεις και αποφάσεις Διαύγειας δήμου">
+        <section className="maps-selection-panel__latest" aria-label={ui("Συμβάσεις και αποφάσεις Διαύγειας δήμου")}>
           <div className="maps-selection-panel__latest-label">
-            <span className="eyebrow">συμβάσεις & διαύγεια</span>
+            <span className="eyebrow">{ui("συμβάσεις & διαύγεια")}</span>
           </div>
           <div className="maps-selection-panel__latest-items">
             {municipalityTimelineLoading && (
-              <DataLoadingCard compact message="Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου." />
+              <DataLoadingCard compact message={ui("Ανακτώνται οι συμβάσεις και οι αποφάσεις Διαύγειας του δήμου.")} />
             )}
             {!municipalityTimelineLoading && municipalityTimelineItems.map((entry) => (
               entry.kind === 'contract'
@@ -840,7 +839,7 @@ export default function MapSelectionPanel({
             ))}
             {!municipalityTimelineLoading && municipalityTimelineItems.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο.</h2>
+                <h2>{ui("Δεν βρέθηκαν συμβάσεις ή αποφάσεις Διαύγειας για τον επιλεγμένο δήμο.")}</h2>
               </article>
             )}
           </div>
@@ -848,20 +847,20 @@ export default function MapSelectionPanel({
       )}
 
       {kind === 'region' && (
-        <section className="maps-selection-panel__latest" aria-label="Τελευταίες συμβάσεις περιφέρειας">
+        <section className="maps-selection-panel__latest" aria-label={ui("Τελευταίες συμβάσεις περιφέρειας")}>
           <div className="maps-selection-panel__latest-label">
-            <span className="eyebrow">τελευταίες συμβάσεις περιφέρειας</span>
+            <span className="eyebrow">{ui("τελευταίες συμβάσεις περιφέρειας")}</span>
           </div>
           <div className="maps-selection-panel__latest-items">
             {regionLatestLoading && (
-              <DataLoadingCard compact message="Ανακτώνται οι τελευταίες συμβάσεις της περιφέρειας." />
+              <DataLoadingCard compact message={ui("Ανακτώνται οι τελευταίες συμβάσεις της περιφέρειας.")} />
             )}
             {!regionLatestLoading && regionLatestContracts.map((item) => (
               <LatestContractCard key={item.id} item={item} onOpen={onContractOpen} />
             ))}
             {!regionLatestLoading && regionLatestContracts.length === 0 && (
               <article className="wire-item">
-                <h2>Δεν βρέθηκαν συμβάσεις για την επιλεγμένη περιφέρεια.</h2>
+                <h2>{ui("Δεν βρέθηκαν συμβάσεις για την επιλεγμένη περιφέρεια.")}</h2>
               </article>
             )}
           </div>
