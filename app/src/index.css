@@ -3902,6 +3902,17 @@ main {
 }
 
 @media (max-width: 760px) {
+  .brand-line > .brand-mark {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+
+  .brand-mark .language-switcher {
+    margin-inline-start: 0;
+  }
+
   .top-nav {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -3945,6 +3956,10 @@ main {
   .top-nav [data-nav-item="analysis"] {
     flex-direction: column;
     gap: 0.12rem;
+    padding-inline: 0.2rem;
+    font-size: clamp(0.65rem, 2.8vw, 0.75rem);
+    white-space: nowrap;
+    overflow-wrap: normal;
   }
 
   .top-nav [data-nav-item="analysis"] .top-nav__new {
