@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="t">
+  <title id="t">Οδηγός μεθοδολογίας: διάγραμμα Venn με κωδικούς CPV, θετικές και αρνητικές λέξεις-κλειδιά</title>
+  <defs>
+    <pattern id="h" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#f1eee5"/>
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#c9c2b4" stroke-width="4"/>
+    </pattern>
+    <clipPath id="s"><circle cx="358" cy="320" r="130"/></clipPath>
+    <clipPath id="ps"><circle cx="242" cy="320" r="130"/><circle cx="358" cy="320" r="130"/></clipPath>
+  </defs>
+  <rect width="600" height="600" fill="#f1eee5"/>
+  <g transform="translate(0 -10)">
+  <circle cx="358" cy="320" r="130" fill="url(#h)"/>
+  <circle cx="242" cy="320" r="130" fill="#5f8b55" fill-opacity="0.28"/>
+  <circle cx="420" cy="430" r="84" fill="#5f8b55" fill-opacity="0.28" clip-path="url(#s)"/>
+  <circle cx="300" cy="182" r="80" fill="url(#h)" clip-path="url(#ps)"/>
+  <circle cx="242" cy="320" r="130" fill="none" stroke="#244b67" stroke-width="5"/>
+  <circle cx="358" cy="320" r="130" fill="none" stroke="#796f63" stroke-width="5"/>
+  <circle cx="300" cy="182" r="80" fill="none" stroke="#d3482d" stroke-width="5" stroke-dasharray="14 9"/>
+  <circle cx="420" cy="430" r="84" fill="none" stroke="#b9852f" stroke-width="5" stroke-dasharray="14 9"/>
+  </g>
+</svg>

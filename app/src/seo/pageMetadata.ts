@@ -21,6 +21,8 @@ export type PageMetadata = {
   imageAlt: string
   locale: 'el_GR' | 'en_GB'
   alternateLocale: 'el_GR' | 'en_GB'
+  // Page copy that is temporarily shown in Greek on the English route as well.
+  greekOnly: boolean
 }
 
 const targets = new Map(Object.entries(greek).map(([key, source]) => [source, english[key as keyof typeof english]]))
@@ -51,6 +53,7 @@ export function getPageMetadata(pathname: string): PageMetadata | null {
     imageAlt: metadataText(language === 'en' ? page.imageAltEn ?? page.imageAlt : page.imageAlt, language),
     locale: language === 'en' ? 'en_GB' : 'el_GR',
     alternateLocale: language === 'en' ? 'el_GR' : 'en_GB',
+    greekOnly: language === 'en' && !!page.englishPending,
   }
 }
 
@@ -83,5 +86,6 @@ export function fallbackNavigation(metadata: PageMetadata, base = '/') {
   return pages.filter(page => page.navigation).map(page => ({
     href: documentHref(localizeHref(page.path, metadata.language), base),
     title: metadataText(page.title, metadata.language).replace(/\s*\|\s*FireWatch$/, ''),
+    lang: metadata.language === 'en' && page.englishPending ? 'el' : undefined,
   }))
 }

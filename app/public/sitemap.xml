@@ -129,6 +129,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.fire-watch-app.gr/analysis/methodology_guide</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/methodology_guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/methodology_guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/methodology_guide" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fire-watch-app.gr/en/analysis/methodology_guide</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/methodology_guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/methodology_guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fire-watch-app.gr/analysis/methodology_guide" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.fire-watch-app.gr/analysis/statistics</loc>
     <xhtml:link rel="alternate" hreflang="el" href="https://www.fire-watch-app.gr/analysis/statistics" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fire-watch-app.gr/en/analysis/statistics" />

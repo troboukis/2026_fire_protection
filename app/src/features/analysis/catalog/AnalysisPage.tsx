@@ -8,6 +8,15 @@ const SHOW_YEARLY_REPORT = false
 export default function AnalysisPage() {
   return (
     <main className="analysis-catalog">
+      <AnalysisCard
+        to="/analysis/methodology_guide"
+        title="Οδηγός μεθοδολογίας: πώς συλλέγουμε τις συμβάσεις πυροπροστασίας"
+        description="Η μέθοδος του FireWatch βήμα προς βήμα, για δημοσιογράφους που θέλουν να καταγράψουν τις δημόσιες δαπάνες για την πυροπροστασία στη χώρα τους."
+        imageSrc={`${import.meta.env.BASE_URL}social/methodology-guide.svg`}
+        imageAlt="Διάγραμμα Venn με κωδικούς CPV, θετικές και αρνητικές λέξεις-κλειδιά"
+        publishedAt="2026-11-18"
+        greekOnly
+      />
       <AnalysisCard {...fireSeasonReview} imageFit="contain" />
       {SHOW_YEARLY_REPORT && (
         <AnalysisCard

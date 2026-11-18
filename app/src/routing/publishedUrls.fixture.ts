@@ -11,6 +11,7 @@ export const publishedPages = [
   { path: '/analysis/statistics', route: '/analysis/statistics', html: 'analysis/statistics/index.html' },
   { path: '/analysis/antinero-west-attica', route: '/analysis/antinero-west-attica', html: 'analysis/antinero-west-attica/index.html' },
   { path: '/analysis/yearly_report', route: '/analysis/yearly_report', html: 'analysis/yearly_report/index.html' },
+  { path: '/analysis/methodology_guide', route: '/analysis/methodology_guide', html: 'analysis/methodology_guide/index.html' },
   { path: '/analysis/west-attica-fire-2026/', route: null, html: 'public/analysis/west-attica-fire-2026/index.html' },
   { path: '/media', route: '/media', html: 'index.html' },
   { path: '/privacy', route: '/privacy', html: 'index.html' },

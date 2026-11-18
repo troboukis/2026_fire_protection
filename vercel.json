@@ -121,6 +121,22 @@
       "destination": "/en/analysis/yearly_report/index.html"
     },
     {
+      "source": "/analysis/methodology_guide",
+      "destination": "/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/analysis/methodology_guide/",
+      "destination": "/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/en/analysis/methodology_guide",
+      "destination": "/en/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/en/analysis/methodology_guide/",
+      "destination": "/en/analysis/methodology_guide/index.html"
+    },
+    {
       "source": "/analysis/statistics",
       "destination": "/analysis/statistics/index.html"
     },
@@ -247,6 +263,22 @@
     {
       "source": "/en/reports/yearly_report/",
       "destination": "/en/analysis/yearly_report/index.html"
+    },
+    {
+      "source": "/reports/methodology_guide",
+      "destination": "/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/reports/methodology_guide/",
+      "destination": "/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/en/reports/methodology_guide",
+      "destination": "/en/analysis/methodology_guide/index.html"
+    },
+    {
+      "source": "/en/reports/methodology_guide/",
+      "destination": "/en/analysis/methodology_guide/index.html"
     },
     {
       "source": "/reports/statistics",

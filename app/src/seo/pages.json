@@ -119,6 +119,22 @@
     "type": "article"
   },
   {
+    "path": "/analysis/methodology_guide",
+    "title": "Οδηγός μεθοδολογίας | FireWatch",
+    "description": "Πώς συλλέγουμε τις συμβάσεις πυροπροστασίας: κωδικοί CPV, θετικές και αρνητικές λέξεις-κλειδιά, δεδομένα πυρκαγιών και ερευνητικά ερωτήματα, για δημοσιογράφους που θέλουν να εφαρμόσουν τη μέθοδο του FireWatch στη χώρα τους.",
+    "socialTitle": "Οδηγός μεθοδολογίας | FireWatch",
+    "image": "/cover_16_9_social.jpg",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "imageAlt": "Δασικό τοπίο και βουνά με κόκκινο ήλιο — FireWatch",
+    "changefreq": "monthly",
+    "priority": 0.7,
+    "navigation": true,
+    "sourceEntry": "analysis/methodology_guide/index.html",
+    "type": "article",
+    "englishPending": true
+  },
+  {
     "path": "/analysis/statistics",
     "title": "Στατιστική Ανάλυση | FireWatch",
     "description": "Στατιστική ανάλυση των δημόσιων συμβάσεων πυροπροστασίας από το FireWatch.",

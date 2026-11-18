@@ -8,6 +8,7 @@ const AnalysisPage = lazy(() => import('../features/analysis/catalog/AnalysisPag
 const StatisticalAnalysisPage = lazy(() => import('../features/analysis/statistics/StatisticalAnalysisPage'))
 const AntineroPage = lazy(() => import('../features/analysis/antinero/AntineroPage'))
 const YearlyReportPage = lazy(() => import('../features/analysis/yearly-report/YearlyReportPage'))
+const MethodologyGuidePage = lazy(() => import('../features/analysis/methodology-guide/MethodologyGuidePage'))
 const ContractsPage = lazy(() => import('../pages/ContractsPage'))
 const DiavgeiaPage = lazy(() => import('../pages/DiavgeiaPage'))
 const EnvironmentMinistryPage = lazy(() => import('../pages/EnvironmentMinistryPage'))
@@ -23,6 +24,7 @@ const pages = [
   { path: '/analysis/statistics', element: <Suspense fallback={<PageLoading />}><StatisticalAnalysisPage /></Suspense> },
   { path: '/analysis/antinero-west-attica', element: <Suspense fallback={<PageLoading />}><AntineroPage /></Suspense> },
   { path: '/analysis/yearly_report', element: <Suspense fallback={<PageLoading />}><YearlyReportPage /></Suspense> },
+  { path: '/analysis/methodology_guide', element: <Suspense fallback={<PageLoading />}><MethodologyGuidePage /></Suspense> },
   { path: '/reports/*', element: <LegacyReportsRedirect /> },
   { path: '/contracts', element: <Suspense fallback={<PageLoading />}><ContractsPage /></Suspense> },
   { path: '/diavgeia', element: <Suspense fallback={<PageLoading />}><DiavgeiaPage /></Suspense> },

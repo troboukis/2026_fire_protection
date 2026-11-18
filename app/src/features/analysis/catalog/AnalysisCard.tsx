@@ -13,19 +13,21 @@ type AnalysisCardProps = {
   imageFit?: 'cover' | 'contain'
   publishedAt?: string
   reloadDocument?: boolean
+  // Copy that is shown in Greek in both languages (no English version yet).
+  greekOnly?: boolean
 }
 
-export default function AnalysisCard({ to, title, description, metadata, imageSrc, imageAlt = '', imageFit = 'cover', publishedAt, reloadDocument = false }: AnalysisCardProps) {
+export default function AnalysisCard({ to, title, description, metadata, imageSrc, imageAlt = '', imageFit = 'cover', publishedAt, reloadDocument = false, greekOnly = false }: AnalysisCardProps) {
   const ui = useOverviewUi()
   return (
     <Link className="analysis-card section-rule" to={to} reloadDocument={reloadDocument}>
       <div className="analysis-card__body">
         <div className="analysis-card__media" aria-hidden={imageSrc ? undefined : true}>
-          {imageSrc ? <img src={imageSrc} alt={ui(imageAlt)} style={{ objectFit: imageFit }} /> : null}
+          {imageSrc ? <img src={imageSrc} alt={greekOnly ? imageAlt : ui(imageAlt)} lang={greekOnly ? 'el' : undefined} style={{ objectFit: imageFit }} /> : null}
         </div>
-        <div className="analysis-card__copy">
-          <h2>{ui(title)}</h2>
-          <p>{ui(description)}</p>
+        <div className="analysis-card__copy" lang={greekOnly ? 'el' : undefined}>
+          <h2>{greekOnly ? title : ui(title)}</h2>
+          <p>{greekOnly ? description : ui(description)}</p>
         </div>
       </div>
       <div className="analysis-card__footer">

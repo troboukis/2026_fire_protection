@@ -4,7 +4,7 @@ import type { AppLanguage } from '../i18n/languages'
 export const STANDALONE_PATH = '/analysis/west-attica-fire-2026'
 export const APP_PAGE_PATHS = [
   '/', '/maps', '/municipalities', '/environment-ministry', '/contracts', '/diavgeia',
-  '/analysis', '/analysis/statistics', '/analysis/antinero-west-attica', '/analysis/yearly_report',
+  '/analysis', '/analysis/statistics', '/analysis/antinero-west-attica', '/analysis/yearly_report', '/analysis/methodology_guide',
   '/media', '/privacy', '/terms',
 ] as const
 

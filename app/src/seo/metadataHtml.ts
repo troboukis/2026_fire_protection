@@ -24,8 +24,8 @@ export function applyPageMetadata(html: string, metadata: PageMetadata): string 
 
 export function staticFallback(metadata: PageMetadata, base = '/'): string {
   const title = metadata.title.replace(/\s*\|\s*FireWatch$/, '')
-  const navigation = fallbackNavigation(metadata, base).map(item => `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.title)}</a></li>`).join('')
-  return `<main data-firewatch-static-fallback><header><h1>${escapeHtml(title)}</h1><p>${escapeHtml(metadata.description)}</p></header><nav aria-label="${escapeHtml(metadataText('Ενότητες FireWatch', metadata.language))}"><ul>${navigation}</ul></nav></main>`
+  const navigation = fallbackNavigation(metadata, base).map(item => `<li><a href="${escapeHtml(item.href)}"${item.lang ? ` lang="${item.lang}"` : ''}>${escapeHtml(item.title)}</a></li>`).join('')
+  return `<main data-firewatch-static-fallback><header${metadata.greekOnly ? ' lang="el"' : ''}><h1>${escapeHtml(title)}</h1><p>${escapeHtml(metadata.description)}</p></header><nav aria-label="${escapeHtml(metadataText('Ενότητες FireWatch', metadata.language))}"><ul>${navigation}</ul></nav></main>`
 }
 
 // Only generated shells use this fallback. Existing rich Greek entry bodies

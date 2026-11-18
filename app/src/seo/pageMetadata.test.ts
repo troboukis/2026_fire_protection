@@ -29,7 +29,9 @@ describe('per-page bilingual search and sharing metadata', () => {
       expect(new URL(metadata.image).origin).toBe(SITE_ORIGIN)
       expect(metadata.imageWidth).toBeGreaterThan(0)
       expect(metadata.imageHeight).toBeGreaterThan(0)
-      if (language === 'en') expect(metadata.title + metadata.description + metadata.imageAlt).not.toMatch(/[Α-Ωα-ω]/)
+      // The methodology guide is temporarily published in Greek on both routes (user decision, 2026-11-18).
+      if (language === 'en' && !metadata.page.englishPending) expect(metadata.title + metadata.description + metadata.imageAlt).not.toMatch(/[Α-Ωα-ω]/)
+      expect(metadata.greekOnly).toBe(language === 'en' && !!metadata.page.englishPending)
       expect(metadataElements(metadata).filter(e => e.attributes.rel === 'canonical')).toHaveLength(1)
     }
   })
@@ -86,7 +88,8 @@ describe('server-delivered metadata', () => {
     const result = fillStaticFallback(shell, metadata)
     expect(result).toContain('<h1>Analysis</h1>')
     expect(result).toContain('href="/en/contracts"')
-    expect(result).not.toMatch(/[Α-Ωα-ω]/)
+    expect(result).toContain('<a href="/en/analysis/methodology_guide" lang="el">')
+    expect(result.replace(/<a [^>]*lang="el"[^>]*>[^<]*<\/a>/g, '')).not.toMatch(/[Α-Ωα-ω]/)
     expect(result).not.toContain('href="/en/analysis/yearly_report"')
     expect(fillStaticFallback(result, metadata)).toBe(result)
     expect(staticFallback(metadata, '/fire_protection/')).toContain('href="/fire_protection/en/contracts"')
@@ -109,8 +112,8 @@ describe('bilingual sitemap', () => {
     const sitemap = metadataSitemap()
     const entries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(m => m[1])
     const urls = entries.map(entry => entry.match(/<loc>(.*?)<\/loc>/)![1])
-    expect(entries).toHaveLength(28)
-    expect(new Set(urls).size).toBe(28)
+    expect(entries).toHaveLength(30)
+    expect(new Set(urls).size).toBe(30)
     for (const page of publishedPages) {
       expect(urls).toContain(SITE_ORIGIN + page.path)
       expect(urls).toContain(SITE_ORIGIN + localizeHref(page.path, 'en'))

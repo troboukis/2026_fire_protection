@@ -15,11 +15,11 @@ function page(language: AppLanguage, children: ReactNode) {
 }
 
 describe('bilingual analysis catalogue', () => {
-  it('retains four cards, order, original destinations/images/dates and hidden report visibility', () => {
+  it('retains the cards, order, original destinations/images/dates and hidden report visibility', () => {
     const english = renderToStaticMarkup(page('en', createElement(AnalysisPage)))
     const greek = renderToStaticMarkup(page('el', createElement(AnalysisPage)))
-    expect((english.match(/class="analysis-card section-rule"/g) ?? [])).toHaveLength(4)
-    const destinations = ['https://wwfeu.awsassets.panda.org/downloads/anaskopisi2026f2.pdf', '/en/analysis/west-attica-fire-2026/', '/en/analysis/antinero-west-attica', '/en/analysis/statistics']
+    expect((english.match(/class="analysis-card section-rule"/g) ?? [])).toHaveLength(5)
+    const destinations = ['/en/analysis/methodology_guide', 'https://wwfeu.awsassets.panda.org/downloads/anaskopisi2026f2.pdf', '/en/analysis/west-attica-fire-2026/', '/en/analysis/antinero-west-attica', '/en/analysis/statistics']
     const positions = destinations.map(href => english.indexOf(`href="${href}"`))
     expect(positions.every((position, index) => position >= 0 && (index === 0 || position > positions[index - 1]))).toBe(true)
     expect(english).not.toContain('href="/en/analysis/yearly_report"')
@@ -34,7 +34,10 @@ describe('bilingual analysis catalogue', () => {
     expect(english.match(/<img[^>]*src="([^"]+)"/g)).toEqual(greek.match(/<img[^>]*src="([^"]+)"/g))
     expect(fireSeasonReview.title).toBe('Ανασκόπηση Αντιπυρικής Περιόδου 2026')
     expect(fireSeasonReview.publishedAt).toBe('2026-11-03')
-    expect(english).not.toMatch(/[Α-Ωα-ω]/)
+    // The methodology guide card stays in Greek on the English route for now (user decision, 2026-11-18).
+    expect(english).toContain('lang="el"><h2>Οδηγός μεθοδολογίας')
+    expect(english).toContain('dateTime="2026-11-18"')
+    expect(english.replace(/<img[^>]*lang="el"[^>]*>/g, '').replace(/<div class="analysis-card__copy" lang="el">[\s\S]*?<\/div>/g, '')).not.toMatch(/[Α-Ωα-ω]/)
   })
 })
 

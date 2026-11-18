@@ -11,7 +11,7 @@ The `/analysis` section is organized by published analysis so page copy, UI, dat
 - `catalog/AnalysisCatalog.css` and `catalog/AnalysisCard.css`: catalog layout and card styling.
 - `app/analysis/index.html`: prerendered shell for `/analysis` with SEO meta tags and a crawlable summary (search engines and LLM crawlers) listing every published analysis, including AntiNERO. Registered as a Vite build input (`vite.config.ts`) and a Vercel rewrite (`vercel.json`), same as the statistics and AntiNERO pages below. Update it whenever an analysis is added to or removed from the catalog.
 
-The published catalog order is newest to oldest: the fire-season retrospective, the West Attica interactive fire analysis, the AntiNERO contract network, then statistics. The yearly financial report remains hidden from the catalog until complete.
+The published catalog order is newest to oldest: the methodology guide, the fire-season retrospective, the West Attica interactive fire analysis, the AntiNERO contract network, then statistics. The yearly financial report remains hidden from the catalog until complete.
 
 The statistics card shows `↻ Τα δεδομένα ενημερώνονται αυτόματα` instead of its first publication date; the historical provenance below is retained.
 
@@ -19,11 +19,21 @@ Publication dates use the first introduction of each analysis, checked against G
 
 | Analysis | Date | Provenance |
 | --- | --- | --- |
+| Methodology guide | 2026-11-18 | Publication date requested by the user; moved from a standalone draft page into `/analysis/methodology_guide`. |
 | Fire-season retrospective 2026 | 2026-11-03 | Date requested for its addition to the catalog; [WWF PDF](https://wwfeu.awsassets.panda.org/downloads/anaskopisi2026f2.pdf). |
 | West Attica interactive fire analysis | 2026-09-14 | [First standalone page, assets and sitemap entry](https://github.com/troboukis/2026_fire_protection/commit/0e5bc259ba81ec54fc2d62d31dd641b5d185c381). Its catalog card was added on [2026-09-22](https://github.com/troboukis/2026_fire_protection/commit/78007ef01d029c598470cce9967bffc9c790fa8b). |
 | Statistical analysis | 2026-02-27 | [First `ContractAnalysis` component, rendered on the homepage](https://github.com/troboukis/2026_fire_protection/commit/3a00707969c903fb16d53dcc747a261e0ae7056f). It moved to `/analysis` on [2026-03-08](https://github.com/troboukis/2026_fire_protection/commit/1c0b5424969a63597b02b55065409d45e22390fa), then `/analysis/statistics` on [2026-09-12](https://github.com/troboukis/2026_fire_protection/commit/4a6c5f5eb2c6ad07b496282f68a13946a6fb197b). |
 | AntiNERO West Attica contract network | 2026-09-12 | [First page and catalog card](https://github.com/troboukis/2026_fire_protection/commit/4a6c5f5eb2c6ad07b496282f68a13946a6fb197b). |
 | Yearly financial report 2026 (hidden) | 2026-10-21 | [First report implementation](https://github.com/troboukis/2026_fire_protection/commit/fdc6206bbca01cf7ebe4870be5d5808ef2a018cf). |
+
+## Methodology guide
+
+- Route: `/analysis/methodology_guide` (prerendered shell `app/analysis/methodology_guide/index.html`, Vite input, entry in `src/seo/pages.json` and `APP_PAGE_PATHS`; the sitemap and both `vercel.json` files are regenerated with `npm run metadata:generate`).
+- `methodology-guide/MethodologyGuidePage.tsx`: route shell and back navigation.
+- `methodology-guide/MethodologyGuide.tsx`: the guide for journalists in other countries (selection criteria, Venn steps, Diavgeia rule, title tester, keyword lists, data sources, fire-data code, research questions, pitfalls).
+- `methodology-guide/guideData.ts`: CPV and keyword lists and a TypeScript port of the matching rules. They mirror `src/fetch_kimdis_procurements.py` and `src/keyword_exclusions.py`; update both together. `MethodologyGuide.test.ts` checks the worked examples and the grouping of every negative keyword.
+- Greek only for now: the English route `/en/analysis/methodology_guide` shows the same Greek text with `lang="el"` (`englishPending` in `pages.json`, `greekOnly` on its catalog card). Remove both flags when the English text is ready.
+- Card image: `app/public/social/methodology-guide.svg`.
 
 ## Fire-season retrospective 2026
 
