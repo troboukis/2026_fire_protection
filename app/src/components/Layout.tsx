@@ -98,7 +98,7 @@ export default function Layout() {
 
       <header className="site-header">
         <div className="brand-block">
-          <div className={`brand-line${language === 'en' ? ' brand-line--en' : ''}`}>
+          <div className="brand-line">
             <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
               <h1>
                 <img
