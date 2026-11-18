@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS public.municipality_normalized_name (
   municipality_key             TEXT NOT NULL UNIQUE,
   municipality_value           TEXT NOT NULL,
   municipality_normalized_value TEXT NOT NULL,
+  municipality_name_en         TEXT,
   created_at                   TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                   TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
@@ -75,6 +76,7 @@ CREATE TABLE IF NOT EXISTS public.region (
   region_key                  TEXT NOT NULL,
   region_value                TEXT NOT NULL,
   region_normalized_value     TEXT NOT NULL,
+  region_name_en              TEXT,
   source_system               TEXT,
   source_key                  TEXT,
   region_afm                  TEXT,
@@ -94,6 +96,7 @@ CREATE TABLE IF NOT EXISTS public.organization (
   organization_key            TEXT NOT NULL,
   organization_value          TEXT NOT NULL,
   organization_normalized_value TEXT NOT NULL,
+  organization_name_en        TEXT,
   authority_scope            TEXT,
   source_system               TEXT,
   source_key                  TEXT,
@@ -295,6 +298,7 @@ CREATE TABLE IF NOT EXISTS public.cpv (
   id                          BIGSERIAL PRIMARY KEY,
   cpv_key                     TEXT NOT NULL,
   cpv_value                   TEXT,
+  cpv_value_en                TEXT,
   procurement_id              BIGINT NOT NULL,
   created_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW(),

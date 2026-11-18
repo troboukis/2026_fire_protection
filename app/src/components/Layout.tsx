@@ -98,12 +98,12 @@ export default function Layout() {
 
       <header className="site-header">
         <div className="brand-block">
-          <div className="brand-line">
+          <div className={`brand-line${language === 'en' ? ' brand-line--en' : ''}`}>
             <NavLink to="/" className="brand-home-link" onClick={handleHomeReload}>
               <h1>
                 <img
                   className="brand-logo"
-                  src={`${import.meta.env.BASE_URL}FireWatch_logo.svg`}
+                  src={`${import.meta.env.BASE_URL}${language === 'en' ? 'FireWatch_EN_logo.svg' : 'FireWatch_logo.svg'}`}
                   alt={t('layout:brandAlt')}
                   width={2172}
                   height={724}

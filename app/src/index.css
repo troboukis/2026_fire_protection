@@ -201,6 +201,15 @@ textarea {
   max-inline-size: calc(100% - var(--brand-logo-inset));
 }
 
+.brand-line.brand-line--en {
+  gap: 0.375rem;
+}
+
+.brand-line--en > .brand-mark {
+  /* The English artwork ends at y=609 in its 724-unit SVG canvas. */
+  margin-block-start: calc(min(100%, var(--brand-logo-width)) * -115 / 2172);
+}
+
 .brand-mark {
   display: inline-block;
   min-inline-size: 30ch;
