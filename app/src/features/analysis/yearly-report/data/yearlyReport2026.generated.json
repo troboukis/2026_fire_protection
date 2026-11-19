@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-11-19T10:31:55+00:00",
-  "database_now": "2026-11-19T10:31:50.548070+00:00",
-  "snapshot_at": "2026-11-19T12:31:49+02:00",
+  "built_at": "2026-11-19T16:21:46+00:00",
+  "database_now": "2026-11-19T16:21:37.237046+00:00",
+  "snapshot_at": "2026-11-19T18:21:36+02:00",
   "snapshot_date": "2026-11-19",
-  "snapshot_time": "12:31",
+  "snapshot_time": "18:21",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-11-19",
@@ -16,9 +16,9 @@
  "total": {
   "contracts": 2357,
   "contracts_amount": 146107206.98,
-  "payments": 3125,
-  "payments_amount": 38687563.96,
-  "amount": 184794770.94
+  "payments": 3140,
+  "payments_amount": 38858268.74,
+  "amount": 184965475.72
  },
  "contracts": {
   "contracts": 2357,
@@ -2050,21 +2050,21 @@
   ]
  },
  "payments": {
-  "records": 3993,
-  "valid": 3613,
-  "valid_amount": 197517541.01,
-  "counted": 3125,
-  "amount": 38687563.96,
-  "linked": 488,
-  "linked_amount": 158829977.05,
+  "records": 4010,
+  "valid": 3629,
+  "valid_amount": 199402546.05,
+  "counted": 3140,
+  "amount": 38858268.74,
+  "linked": 489,
+  "linked_amount": 160544277.31,
   "linked_by_method": {
    "database": {
-    "payments": 488,
-    "amount": 158829977.05
+    "payments": 489,
+    "amount": 160544277.31
    }
   },
-  "linked_to_report_year": 209,
-  "vat_removed": 2344,
+  "linked_to_report_year": 210,
+  "vat_removed": 2359,
   "vat_free": 781,
   "cancellations": 10,
   "positive_cancellations_by_org": {
@@ -2072,11 +2072,6 @@
    "ΔΗΜΟΣ ΚΕΡΑΤΣΙΝΙΟΥ - ΔΡΑΠΕΤΣΩΝΑΣ": 2
   },
   "cancelled_originals": [
-   {
-    "ada": "Ρ1ΞΜΩΚΤ-Π6Α",
-    "amount": 12400.0,
-    "cancelled_by": "9Ω0ΒΩΚΤ-21Ε"
-   },
    {
     "ada": "ΡΗΟΥΩΞΠ-0ΤΕ",
     "amount": 85940.84,
@@ -2088,14 +2083,19 @@
     "cancelled_by": "Ρ7ΞΚΩΚΥ-ΗΗ7"
    },
    {
+    "ada": "Ρ1ΞΜΩΚΤ-Π6Α",
+    "amount": 12400.0,
+    "cancelled_by": "9Ω0ΒΩΚΤ-21Ε"
+   },
+   {
     "ada": "Ρ0ΨΜΩΚΤ-ΦΛΔ",
     "amount": 70873.24,
     "cancelled_by": "Ρ8ΡΑΩΚΤ-ΔΤΑ"
    }
   ],
   "report_excluded_payroll": {
-   "payments": 366,
-   "amount": 5115733.3
+   "payments": 367,
+   "amount": 5115813.3
   },
   "by_category": [
    {
@@ -2126,9 +2126,9 @@
     "category": "vegetation",
     "label": "Αντιπυρικές ζώνες, καθαρισμοί, κλαδέματα",
     "rule": "Αντιπυρικές/περιμετρικές ζώνες, αποψιλώσεις, καθαρισμοί, κοπή χόρτων, κλαδέματα, καύσιμη ύλη, δασικοί/αγροτικοί δρόμοι, οικόπεδα.",
-    "payments": 688,
-    "amount": 8484849.94,
-    "bodies": 173
+    "payments": 693,
+    "amount": 8572920.44,
+    "bodies": 175
    },
    {
     "category": "machinery",
@@ -2150,39 +2150,39 @@
     "category": "unclear",
     "label": "Το θέμα δεν περιγράφει τη δαπάνη",
     "rule": "Το θέμα περιέχει μόνο αριθμό εντάλματος/εντολής χωρίς περιγραφή.",
-    "payments": 245,
-    "amount": 3987639.49,
+    "payments": 250,
+    "amount": 4019276.49,
     "bodies": 65
    },
    {
     "category": "other",
     "label": "Λοιπές δαπάνες πυροπροστασίας",
     "rule": "Όλα τα υπόλοιπα.",
-    "payments": 744,
-    "amount": 9636774.95,
-    "bodies": 245
+    "payments": 749,
+    "amount": 9687772.23,
+    "bodies": 246
    }
   ],
   "by_org_type": [
    {
     "org_type": "ΔΗΜΟΣ",
-    "payments": 2668,
-    "amount": 27092974.5
+    "payments": 2680,
+    "amount": 27206811.7
    },
    {
     "org_type": "ΥΠΟΥΡΓΕΙΟ",
-    "payments": 99,
-    "amount": 8333057.91
+    "payments": 100,
+    "amount": 8345868.99
    },
    {
     "org_type": "ΑΛΛΟΣ ΦΟΡΕΑΣ",
-    "payments": 232,
-    "amount": 1908575.73
+    "payments": 233,
+    "amount": 1910991.73
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑ",
-    "payments": 61,
-    "amount": 950214.16
+    "payments": 62,
+    "amount": 991854.66
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑΚΟ ΤΑΜΕΙΟ ΑΝΑΠΤΥΞΗΣ",
@@ -2222,9 +2222,9 @@
   ],
   "payroll_bodies": 114,
   "municipal": {
-   "payments": 2668,
-   "amount": 27092974.5,
-   "from_may_1": 2155,
+   "payments": 2680,
+   "amount": 27206811.7,
+   "from_may_1": 2167,
    "payroll": 670,
    "by_month": [
     {
@@ -2279,8 +2279,8 @@
     },
     {
      "month": 11,
-     "payments": 307,
-     "amount": 2626893.17
+     "payments": 319,
+     "amount": 2740730.37
     },
     {
      "month": 12,
@@ -2342,18 +2342,18 @@
   "vat_evidence": {
    "equals_with_vat": 138,
    "equals_without_vat": 1,
-   "other": 342
+   "other": 343
   },
   "subject_refs_not_in_db": 78,
-  "without_beneficiary_vat": 755,
-  "exact_duplicate_groups": 48,
-  "exact_duplicates_extra_amount": 440121.83,
+  "without_beneficiary_vat": 757,
+  "exact_duplicate_groups": 49,
+  "exact_duplicates_extra_amount": 448956.83,
   "report_year_contracts_with_linked_payment": 160,
   "report_year_contracts_with_linked_payment_value_pct": 38.37,
   "finalizations_by_year": {
    "2024": 287,
    "2025": 259,
-   "2026": 3993
+   "2026": 4010
   }
  },
  "municipalities": {
@@ -2363,8 +2363,8 @@
   "contracts": 1024,
   "contracts_amount": 24629065.98,
   "with_payments": 302,
-  "payments": 2907,
-  "payments_amount": 32483289.28,
+  "payments": 2919,
+  "payments_amount": 32597126.48,
   "funded_without_contract": 77,
   "funded_without_contract_or_payment": 7,
   "funding_of_no_trace": 779000.0,
@@ -2574,11 +2574,11 @@
    },
    {
     "year": 2026,
-    "fires": 178,
-    "area_ha": 36225.0
+    "fires": 179,
+    "area_ha": 36228.0
    }
   ],
-  "report_year_last_fire_date": "2026-11-11",
+  "report_year_last_fire_date": "2026-11-17",
   "large_fires": 5,
   "large_fires_area_ha": 24702.0,
   "top_municipalities": [
