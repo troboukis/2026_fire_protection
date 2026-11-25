@@ -1,13 +1,13 @@
 {
  "meta": {
-  "built_at": "2026-11-24T16:19:53+00:00",
-  "database_now": "2026-11-24T16:19:44.564203+00:00",
-  "snapshot_at": "2026-11-24T18:19:43+02:00",
-  "snapshot_date": "2026-11-24",
-  "snapshot_time": "18:19",
+  "built_at": "2026-11-25T03:45:44+00:00",
+  "database_now": "2026-11-25T03:45:32.988443+00:00",
+  "snapshot_at": "2026-11-25T05:45:32+02:00",
+  "snapshot_date": "2026-11-25",
+  "snapshot_time": "05:45",
   "report_year": 2026,
   "period_start": "2026-01-01",
-  "period_end": "2026-11-24",
+  "period_end": "2026-11-25",
   "year_complete": false,
   "latest_contract_signed": "2026-11-23",
   "latest_payment_published": "2026-11-24",
@@ -742,23 +742,23 @@
  "ytd": [
   {
    "year": 2024,
-   "contracts": 1886,
-   "amount": 285453063.43,
+   "contracts": 1894,
+   "amount": 285524280.65,
    "by_group": [
     {
      "group": "Υπουργεία",
-     "contracts": 331,
-     "amount": 237737995.78
+     "contracts": 332,
+     "amount": 237739374.78
     },
     {
      "group": "Δήμοι",
-     "contracts": 859,
-     "amount": 21341998.72
+     "contracts": 865,
+     "amount": 21408562.75
     },
     {
      "group": "Περιφέρειες",
-     "contracts": 429,
-     "amount": 13725970.87
+     "contracts": 430,
+     "amount": 13729245.06
     },
     {
      "group": "Λοιποί φορείς",
@@ -770,14 +770,14 @@
     {
      "class": "Καταστολή",
      "code": 0,
-     "contracts": 287,
-     "amount": 25545937.62
+     "contracts": 288,
+     "amount": 25549211.81
     },
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1189,
-     "amount": 209153609.58
+     "contracts": 1196,
+     "amount": 209221552.61
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
@@ -795,8 +795,8 @@
   },
   {
    "year": 2025,
-   "contracts": 2346,
-   "amount": 306103305.94,
+   "contracts": 2352,
+   "amount": 306202307.74,
    "by_group": [
     {
      "group": "Υπουργεία",
@@ -805,8 +805,8 @@
     },
     {
      "group": "Δήμοι",
-     "contracts": 1080,
-     "amount": 37447411.85
+     "contracts": 1086,
+     "amount": 37546413.65
     },
     {
      "group": "Περιφέρειες",
@@ -823,20 +823,20 @@
     {
      "class": "Καταστολή",
      "code": 0,
-     "contracts": 521,
-     "amount": 41682217.34
+     "contracts": 522,
+     "amount": 41692957.34
     },
     {
      "class": "Πρόληψη",
      "code": 1,
-     "contracts": 1309,
-     "amount": 221263070.5
+     "contracts": 1313,
+     "amount": 221349032.3
     },
     {
      "class": "Χωρίς σαφή κατάταξη",
      "code": 2,
-     "contracts": 437,
-     "amount": 35845705.7
+     "contracts": 438,
+     "amount": 35848005.7
     },
     {
      "class": "Χωρίς ταξινόμηση ακόμη",
