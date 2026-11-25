@@ -1,15 +1,19 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/athletics/analysis/564612532/oi-leptomereies-synechizoyn-na-pligonoyn-tin-aek/",
-      "title": "Οι λεπτομέρειες (συνεχίζουν να) πληγώνουν την ΑΕΚ",
-      "normalized_title": "ΟΙ ΛΕΠΤΟΜΕΡΕΙΕΣ (ΣΥΝΕΧΙΖΟΥΝ ΝΑ) ΠΛΗΓΩΝΟΥΝ ΤΗΝ ΑΕΚ",
+      "url": "https://www.kathimerini.gr/culture/cinema/564612577/odysseia-stin-endymatologo-tis-tainias-to-vraveio-toy-vretanikoy-symvoylioy-modas/",
+      "title": "«Οδύσσεια»: Στην ενδυματολόγο της ταινίας το βραβείο του Βρετανικού Συμβουλίου Μόδας",
+      "normalized_title": "«ΟΔΥΣΣΕΙΑ»: ΣΤΗΝ ΕΝΔΥΜΑΤΟΛΟΓΟ ΤΗΣ ΤΑΙΝΙΑΣ ΤΟ ΒΡΑΒΕΙΟ ΤΟΥ ΒΡΕΤΑΝΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ ΜΟΔΑΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/athletics/analysis/564612532/oi-leptomereies-synechizoyn-na-pligonoyn-tin-aek/",
-        "https://www.kathimerini.gr/world/564612520/kremlino-fysiologiko-i-livyi-na-epidiokei-antipoina-kata-tis-oykranias/",
-        "https://www.kathimerini.gr/world/564612448/loykasenko-o-tramp-apetrepse-ton-trito-pagkosmio-polemo/"
+        "https://www.kathimerini.gr/culture/cinema/564612577/odysseia-stin-endymatologo-tis-tainias-to-vraveio-toy-vretanikoy-symvoylioy-modas/",
+        "https://www.kathimerini.gr/life/science/564612568/eyvoia-ena-iero-2-900-eton-apokalyptei-ta-mystika-tis-latreias-ton-archaion-ellinon/",
+        "https://www.kathimerini.gr/economy/564611701/syntrofoi-oi-ntomates-den-kokkinizoyn-me-anakoinoseis/",
+        "https://www.kathimerini.gr/world/564612559/epistrefei-stin-ispania-meta-apo-9-chronia-o-karles-poytzntemon/",
+        "https://www.kathimerini.gr/columns/564612199/vinisioys-zoynior-to-glyko-ypnotiko-toy-kilian-mpape/",
+        "https://www.kathimerini.gr/k/disney/564562165/komix-149-to-sfyri-toy-thor/",
+        "https://www.kathimerini.gr/life/hours/564612529/guido-terreni-den-peirazei-an-den-anagnorizoyn-oloi-ti-echeis-ston-karpo-soy/"
       ],
-      "seen_at_utc": "2026-11-25T10:29:57.968945+00:00"
+      "seen_at_utc": "2026-11-25T10:51:19.547201+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1261,37 +1265,42 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1916719/kukloma-me-plasta-erga-tehnis-arneitai-tis-katigories-o-49hronos-arhimandritis-kai-proanaggellei-prosfugi-sti-dikaiosuni/?utm_source=rss",
-      "title": "Κύκλωμα με πλαστά έργα τέχνης: Αρνείται τις κατηγορίες ο 49χρονος αρχιμανδρίτης και προαναγγέλλει προσφυγή στη Δικαιοσύνη",
-      "normalized_title": "ΚΥΚΛΩΜΑ ΜΕ ΠΛΑΣΤΑ ΕΡΓΑ ΤΕΧΝΗΣ: ΑΡΝΕΙΤΑΙ ΤΙΣ ΚΑΤΗΓΟΡΙΕΣ Ο 49ΧΡΟΝΟΣ ΑΡΧΙΜΑΝΔΡΙΤΗΣ ΚΑΙ ΠΡΟΑΝΑΓΓΕΛΛΕΙ ΠΡΟΣΦΥΓΗ ΣΤΗ ΔΙΚΑΙΟΣΥΝΗ",
+      "url": "https://www.protothema.gr/greece/article/1916735/eisaggeleis-epikrinoun-adiproedro-tou-ste-gia-anafora-tou-peri-anexelegtis-armodiotitas-tou-eisaggelea-tou-areiou-pagou/?utm_source=rss",
+      "title": "Οι εισαγγελείς επικρίνουν τον αντιπρόεδρο του ΣτΕ για αναφορά του περί «ανεξέλεγκτης» αρμοδιότητας του εισαγγελέα του Αρείου Πάγου",
+      "normalized_title": "ΟΙ ΕΙΣΑΓΓΕΛΕΙΣ ΕΠΙΚΡΙΝΟΥΝ ΤΟΝ ΑΝΤΙΠΡΟΕΔΡΟ ΤΟΥ ΣΤΕ ΓΙΑ ΑΝΑΦΟΡΑ ΤΟΥ ΠΕΡΙ «ΑΝΕΞΕΛΕΓΚΤΗΣ» ΑΡΜΟΔΙΟΤΗΤΑΣ ΤΟΥ ΕΙΣΑΓΓΕΛΕΑ ΤΟΥ ΑΡΕΙΟΥ ΠΑΓΟΥ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1916719/kukloma-me-plasta-erga-tehnis-arneitai-tis-katigories-o-49hronos-arhimandritis-kai-proanaggellei-prosfugi-sti-dikaiosuni/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1916735/eisaggeleis-epikrinoun-adiproedro-tou-ste-gia-anafora-tou-peri-anexelegtis-armodiotitas-tou-eisaggelea-tou-areiou-pagou/?utm_source=rss",
+        "https://www.protothema.gr/greece/article/1916726/tromos-gia-20hroni-foititria-sto-rethumno-46hronos-ti-thopeuse-sti-mesi-tou-dromou-kai-sunehise-na-tin-akolouthei/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-11-25T10:29:57.969021+00:00"
+      "seen_at_utc": "2026-11-25T10:51:19.547306+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/politiki/1517257/kerameos-sto-ergani-oloi-oi-ergazomenoi-se-platformes-dianomis/",
-      "title": "Κεραμέως: Στο «Εργάνη» όλοι οι εργαζόμενοι σε πλατφόρμες διανομής",
-      "normalized_title": "ΚΕΡΑΜΕΩΣ: ΣΤΟ «ΕΡΓΑΝΗ» ΟΛΟΙ ΟΙ ΕΡΓΑΖΟΜΕΝΟΙ ΣΕ ΠΛΑΤΦΟΡΜΕΣ ΔΙΑΝΟΜΗΣ",
+      "url": "https://www.efsyn.gr/kosmos/1517277/synodos-koryfis-kinitopoiiseis-kata-ton-perikopon-ston-eyropaiko-proypologismo/",
+      "title": "Σύνοδος Κορυφής: Κινητοποιήσεις κατά των περικοπών στον ευρωπαϊκό προϋπολογισμό",
+      "normalized_title": "ΣΥΝΟΔΟΣ ΚΟΡΥΦΗΣ: ΚΙΝΗΤΟΠΟΙΗΣΕΙΣ ΚΑΤΑ ΤΩΝ ΠΕΡΙΚΟΠΩΝ ΣΤΟΝ ΕΥΡΩΠΑΙΚΟ ΠΡΟΥΠΟΛΟΓΙΣΜΟ",
       "seen_urls": [
-        "https://www.efsyn.gr/politiki/1517257/kerameos-sto-ergani-oloi-oi-ergazomenoi-se-platformes-dianomis/",
-        "https://www.efsyn.gr/politiki/1517252/paraitithike-i-anexartiti-voyleytria-eleni-karageorgopoyloy/",
-        "https://www.efsyn.gr/oikonomia/1517246/proypologismos-protogenes-pleonasma-812-dis-eyro-sto-dekamino-toy-2026-esoda-32-dis-apo-fpa-kai-efk/"
+        "https://www.efsyn.gr/kosmos/1517277/synodos-koryfis-kinitopoiiseis-kata-ton-perikopon-ston-eyropaiko-proypologismo/",
+        "https://www.efsyn.gr/ellada/1517274/apergia-adedy-sta-kagkela-ekpaideytikoi-kai-mathites-zoyme-me-840-eyro-to-40-feygei-sta-enoikia-vinteo/",
+        "https://www.efsyn.gr/aytokinito/1516148/kato-apo-nea-stegi-i-dieyrymeni-gkama-tis-triumph-diathesimi-apo-ton-omilo-sarakaki/",
+        "https://www.efsyn.gr/politiki/1517251/o-koytsoympas-stin-apergia-proaggelos-mias-neas-periodoy-anatasis-antepithesis-toy-ergatikoy-laikoy-kinimatos/",
+        "https://www.efsyn.gr/ellada/1517235/apohi-mathiton-se-dimotiko-sholeio-sto-maroysi-yparhei-moyhla-kai-peftoyn-sovades/"
       ],
-      "seen_at_utc": "2026-11-25T10:29:57.968999+00:00"
+      "seen_at_utc": "2026-11-25T10:51:19.547279+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/25/greece/pote-kleinoun-ta-sxoleia-gia-xristougenna-kai-pote-anoigoun/",
-      "title": "Πότε κλείνουν τα σχολεία για Χριστούγεννα και πότε ανοίγουν",
-      "normalized_title": "ΠΟΤΕ ΚΛΕΙΝΟΥΝ ΤΑ ΣΧΟΛΕΙΑ ΓΙΑ ΧΡΙΣΤΟΥΓΕΝΝΑ ΚΑΙ ΠΟΤΕ ΑΝΟΙΓΟΥΝ",
+      "url": "https://www.in.gr/2026/11/25/plus/medianews/radio-arvyla-ayta-einai-ta-dyo-nea-trailer/",
+      "title": "Ράδιο Αρβύλα: Αυτά είναι τα δύο νέα trailer",
+      "normalized_title": "ΡΑΔΙΟ ΑΡΒΥΛΑ: ΑΥΤΑ ΕΙΝΑΙ ΤΑ ΔΥΟ ΝΕΑ TRAILER",
       "seen_urls": [
-        "https://www.in.gr/2026/11/25/greece/pote-kleinoun-ta-sxoleia-gia-xristougenna-kai-pote-anoigoun/",
-        "https://www.in.gr/2026/11/25/sports/football/vgainoun-kai-eksafanizontai-ta-eisitiria-gia-to-olympiakos-panathinaikos/",
-        "https://www.in.gr/2026/11/25/in-science/perivallon-b-science/skotosan-me-okto-sfaires-enan-apo-tous-protous-lykous-pou-epestrepsan-stin-peloponniso-tha-vrethei-o-enoxos/",
-        "https://www.in.gr/2026/11/25/politics/politiki-grammateia/vouli-paraitithike-i-aneksartiti-vouleytis-afroditi-karageorgopoulou/"
+        "https://www.in.gr/2026/11/25/plus/medianews/radio-arvyla-ayta-einai-ta-dyo-nea-trailer/",
+        "https://www.in.gr/2026/11/25/sports/basketball/panathinaikos-neos-proponitis-tis-gynaikeias-omadas-o-karol-kovalefski/",
+        "https://www.in.gr/2026/11/25/greece/thessaloniki-imoun-sto-nosokomeio-giati-apevala-ti-isxyrizetai-i-mitera-pou-afise-mona-tous-dyo-mikra-paidia/",
+        "https://www.in.gr/2026/11/25/go-fun/fizz/ioanna-triantafyllidou-fotografizei-ton-gio-tis-kai-stelnei-minyma-gia-ti-mitrotita/",
+        "https://www.in.gr/2026/11/25/plus/medianews/dyo-mayra-poukamisa-neo-rantevou-gia-ti-dramatiki-seira-tou-mega/",
+        "https://www.in.gr/2026/11/25/greece/me-to-vlemma-stis-prosfores-oi-katanalotes-tin-eortastiki-periodo-me-poia-kritiria-kai-pou-tha-ksodepsoun-xrimata/"
       ],
-      "seen_at_utc": "2026-11-25T10:29:57.968974+00:00"
+      "seen_at_utc": "2026-11-25T10:51:19.547239+00:00"
     }
   },
-  "updated_at_utc": "2026-11-25T10:29:57.969077+00:00"
+  "updated_at_utc": "2026-11-25T10:51:19.547373+00:00"
 }
