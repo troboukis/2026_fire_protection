@@ -1,10 +1,10 @@
 {
  "meta": {
-  "built_at": "2026-11-27T10:30:20+00:00",
-  "database_now": "2026-11-27T10:30:14.962535+00:00",
-  "snapshot_at": "2026-11-27T12:30:14+02:00",
+  "built_at": "2026-11-27T16:39:20+00:00",
+  "database_now": "2026-11-27T16:39:13.797514+00:00",
+  "snapshot_at": "2026-11-27T18:39:13+02:00",
   "snapshot_date": "2026-11-27",
-  "snapshot_time": "12:30",
+  "snapshot_time": "18:39",
   "report_year": 2026,
   "period_start": "2026-01-01",
   "period_end": "2026-11-27",
@@ -16,9 +16,9 @@
  "total": {
   "contracts": 2401,
   "contracts_amount": 146714039.12,
-  "payments": 3288,
-  "payments_amount": 41590420.27,
-  "amount": 188304459.39
+  "payments": 3293,
+  "payments_amount": 41843646.71,
+  "amount": 188557685.83
  },
  "contracts": {
   "contracts": 2401,
@@ -2050,21 +2050,21 @@
   ]
  },
  "payments": {
-  "records": 4190,
-  "valid": 3793,
-  "valid_amount": 209660858.75,
-  "counted": 3288,
-  "amount": 41590420.27,
-  "linked": 505,
-  "linked_amount": 168070438.48,
+  "records": 4197,
+  "valid": 3800,
+  "valid_amount": 210549754.97,
+  "counted": 3293,
+  "amount": 41843646.71,
+  "linked": 507,
+  "linked_amount": 168706108.26,
   "linked_by_method": {
    "database": {
-    "payments": 505,
-    "amount": 168070438.48
+    "payments": 507,
+    "amount": 168706108.26
    }
   },
-  "linked_to_report_year": 219,
-  "vat_removed": 2490,
+  "linked_to_report_year": 220,
+  "vat_removed": 2495,
   "vat_free": 798,
   "cancellations": 10,
   "positive_cancellations_by_org": {
@@ -2142,32 +2142,32 @@
     "category": "equipment",
     "label": "Εξοπλισμός, οχήματα και συντήρηση μέσων",
     "rule": "Προμήθειες, εξοπλισμός, ανταλλακτικά, επισκευές, συντήρηση μέσων, δεξαμενές.",
-    "payments": 643,
-    "amount": 3119250.9,
+    "payments": 645,
+    "amount": 3123936.38,
     "bodies": 235
    },
    {
     "category": "unclear",
     "label": "Το θέμα δεν περιγράφει τη δαπάνη",
     "rule": "Το θέμα περιέχει μόνο αριθμό εντάλματος/εντολής χωρίς περιγραφή.",
-    "payments": 261,
-    "amount": 4689976.59,
+    "payments": 263,
+    "amount": 4704906.38,
     "bodies": 65
    },
    {
     "category": "other",
     "label": "Λοιπές δαπάνες πυροπροστασίας",
     "rule": "Όλα τα υπόλοιπα.",
-    "payments": 786,
-    "amount": 10873829.46,
-    "bodies": 250
+    "payments": 787,
+    "amount": 11107440.63,
+    "bodies": 251
    }
   ],
   "by_org_type": [
    {
     "org_type": "ΔΗΜΟΣ",
-    "payments": 2770,
-    "amount": 28315440.45
+    "payments": 2774,
+    "amount": 28335055.72
    },
    {
     "org_type": "ΥΠΟΥΡΓΕΙΟ",
@@ -2176,8 +2176,8 @@
    },
    {
     "org_type": "ΑΛΛΟΣ ΦΟΡΕΑΣ",
-    "payments": 266,
-    "amount": 2567902.67
+    "payments": 267,
+    "amount": 2801513.84
    },
    {
     "org_type": "ΠΕΡΙΦΕΡΕΙΑ",
@@ -2222,9 +2222,9 @@
   ],
   "payroll_bodies": 114,
   "municipal": {
-   "payments": 2770,
-   "amount": 28315440.45,
-   "from_may_1": 2257,
+   "payments": 2774,
+   "amount": 28335055.72,
+   "from_may_1": 2261,
    "payroll": 682,
    "by_month": [
     {
@@ -2279,8 +2279,8 @@
     },
     {
      "month": 11,
-     "payments": 409,
-     "amount": 3849359.12
+     "payments": 413,
+     "amount": 3868974.39
     },
     {
      "month": 12,
@@ -2340,20 +2340,20 @@
    }
   ],
   "vat_evidence": {
-   "equals_with_vat": 139,
+   "equals_with_vat": 140,
    "equals_without_vat": 1,
-   "other": 358
+   "other": 359
   },
   "subject_refs_not_in_db": 78,
   "without_beneficiary_vat": 774,
   "exact_duplicate_groups": 55,
   "exact_duplicates_extra_amount": 465445.13,
-  "report_year_contracts_with_linked_payment": 164,
-  "report_year_contracts_with_linked_payment_value_pct": 38.24,
+  "report_year_contracts_with_linked_payment": 165,
+  "report_year_contracts_with_linked_payment_value_pct": 38.25,
   "finalizations_by_year": {
    "2024": 287,
    "2025": 259,
-   "2026": 4190
+   "2026": 4197
   }
  },
  "municipalities": {
@@ -2363,8 +2363,8 @@
   "contracts": 1037,
   "contracts_amount": 24876805.08,
   "with_payments": 304,
-  "payments": 3010,
-  "payments_amount": 33710591.23,
+  "payments": 3015,
+  "payments_amount": 33750366.5,
   "funded_without_contract": 73,
   "funded_without_contract_or_payment": 7,
   "funding_of_no_trace": 779000.0,
@@ -2597,8 +2597,8 @@
     "area_ha": 6548.61,
     "municipal_contracts_2026": 2,
     "municipal_contracts_2026_amount": 6620.36,
-    "municipal_payments_2026": 32,
-    "municipal_payments_2026_amount": 97561.7
+    "municipal_payments_2026": 33,
+    "municipal_payments_2026_amount": 98247.18
    },
    {
     "municipality": "ΘΗΒΑΙΩΝ",
