@@ -1,13 +1,14 @@
 {
   "sources": {
     "kathimerini": {
-      "url": "https://www.kathimerini.gr/society/564620425/kriti-ayximenes-oi-roes-metanaston-peripoy-900-afixeis-apo-ta-ximeromata/",
-      "title": "Κρήτη: Αυξημένες οι ροές μεταναστών – Περίπου 900 αφίξεις από τα ξημερώματα",
-      "normalized_title": "ΚΡΗΤΗ: ΑΥΞΗΜΕΝΕΣ ΟΙ ΡΟΕΣ ΜΕΤΑΝΑΣΤΩΝ – ΠΕΡΙΠΟΥ 900 ΑΦΙΞΕΙΣ ΑΠΟ ΤΑ ΞΗΜΕΡΩΜΑΤΑ",
+      "url": "https://www.kathimerini.gr/politics/564620452/paraitithike-o-vaggelis-liakos/",
+      "title": "Παραιτήθηκε ο Ευάγγελος Λιάκος",
+      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ Ο ΕΥΑΓΓΕΛΟΣ ΛΙΑΚΟΣ",
       "seen_urls": [
-        "https://www.kathimerini.gr/society/564620425/kriti-ayximenes-oi-roes-metanaston-peripoy-900-afixeis-apo-ta-ximeromata/"
+        "https://www.kathimerini.gr/politics/564620452/paraitithike-o-vaggelis-liakos/",
+        "https://www.kathimerini.gr/society/564620440/ektakto-deltio-emy-erchetai-i-kakokairia-argos-oi-perioches-se-red-alert/"
       ],
-      "seen_at_utc": "2026-11-28T10:30:10.069000+00:00"
+      "seen_at_utc": "2026-11-28T10:51:17.180106+00:00"
     },
     "news247": {
       "url": "https://www.news247.gr/politiki/androulakis-oi-epta-desmefseis-tou-pasok-gia-tis-mikromesaies-epixeiriseis/",
@@ -1259,33 +1260,37 @@
       "seen_at_utc": "2026-07-13T16:41:36.396004+00:00"
     },
     "protothema": {
-      "url": "https://www.protothema.gr/greece/article/1918495/irakleio-sto-nosokomeio-9hroni-meta-apo-katanalosi-alkool-sunelifthi-i-mitera-tis/?utm_source=rss",
-      "title": "Ηράκλειο: Στο νοσοκομείο 9χρονη μετά από κατανάλωση αλκοόλ, συνελήφθη η μητέρα της",
-      "normalized_title": "ΗΡΑΚΛΕΙΟ: ΣΤΟ ΝΟΣΟΚΟΜΕΙΟ 9ΧΡΟΝΗ ΜΕΤΑ ΑΠΟ ΚΑΤΑΝΑΛΩΣΗ ΑΛΚΟΟΛ, ΣΥΝΕΛΗΦΘΗ Η ΜΗΤΕΡΑ ΤΗΣ",
+      "url": "https://www.protothema.gr/greece/article/1918503/katashethikan-shedon-62-kila-kannavis-sto-teloneio-kastaneon-sunelifthisan-duo-voulgaroi/?utm_source=rss",
+      "title": "Κατασχέθηκαν σχεδόν 62 κιλά κάνναβης στο Τελωνείο Καστανέων, συνελήφθησαν δύο Βούλγαροι",
+      "normalized_title": "ΚΑΤΑΣΧΕΘΗΚΑΝ ΣΧΕΔΟΝ 62 ΚΙΛΑ ΚΑΝΝΑΒΗΣ ΣΤΟ ΤΕΛΩΝΕΙΟ ΚΑΣΤΑΝΕΩΝ, ΣΥΝΕΛΗΦΘΗΣΑΝ ΔΥΟ ΒΟΥΛΓΑΡΟΙ",
       "seen_urls": [
-        "https://www.protothema.gr/greece/article/1918495/irakleio-sto-nosokomeio-9hroni-meta-apo-katanalosi-alkool-sunelifthi-i-mitera-tis/?utm_source=rss"
+        "https://www.protothema.gr/greece/article/1918503/katashethikan-shedon-62-kila-kannavis-sto-teloneio-kastaneon-sunelifthisan-duo-voulgaroi/?utm_source=rss"
       ],
-      "seen_at_utc": "2026-11-28T10:30:10.069087+00:00"
+      "seen_at_utc": "2026-11-28T10:51:17.180179+00:00"
     },
     "efsyn": {
-      "url": "https://www.efsyn.gr/ellada/1519515/koropi-nekros-nearos-odigos-se-trohaio-to-ih-katelixe-se-horafi/",
-      "title": "Κορωπί: Νεκρός νεαρός οδηγός σε τροχαίο – Το ΙΧ κατέληξε σε χωράφι",
-      "normalized_title": "ΚΟΡΩΠΙ: ΝΕΚΡΟΣ ΝΕΑΡΟΣ ΟΔΗΓΟΣ ΣΕ ΤΡΟΧΑΙΟ – ΤΟ ΙΧ ΚΑΤΕΛΗΞΕ ΣΕ ΧΩΡΑΦΙ",
+      "url": "https://www.efsyn.gr/politiki/1519540/paraitithike-o-vaggelis-liakos-eimai-katharos-kai-tha-parameino-katharos/",
+      "title": "Παραιτήθηκε ο Βαγγέλης Λιάκος από υφ. Εσωτερικών μετά τον σάλο για τις απευθείας αναθέσεις στις αδελφές του",
+      "normalized_title": "ΠΑΡΑΙΤΗΘΗΚΕ Ο ΒΑΓΓΕΛΗΣ ΛΙΑΚΟΣ ΑΠΟ ΥΦ. ΕΣΩΤΕΡΙΚΩΝ ΜΕΤΑ ΤΟΝ ΣΑΛΟ ΓΙΑ ΤΙΣ ΑΠΕΥΘΕΙΑΣ ΑΝΑΘΕΣΕΙΣ ΣΤΙΣ ΑΔΕΛΦΕΣ ΤΟΥ",
       "seen_urls": [
-        "https://www.efsyn.gr/ellada/1519515/koropi-nekros-nearos-odigos-se-trohaio-to-ih-katelixe-se-horafi/"
+        "https://www.efsyn.gr/politiki/1519540/paraitithike-o-vaggelis-liakos-eimai-katharos-kai-tha-parameino-katharos/",
+        "https://www.efsyn.gr/kosmos/1519390/ispania-santseth-kai-kolaoy-apenanti-sto-metopo-dexias-kai-akrodexias/"
       ],
-      "seen_at_utc": "2026-11-28T10:30:10.069062+00:00"
+      "seen_at_utc": "2026-11-28T10:51:17.180162+00:00"
     },
     "in_gr": {
-      "url": "https://www.in.gr/2026/11/28/economy/oikonomikes-eidiseis/posoi-ellines-exoun-stin-katoxi-tous-kryptonomismata/",
-      "title": "Πόσοι Έλληνες έχουν στην κατοχή τους κρυπτονομίσματα",
-      "normalized_title": "ΠΟΣΟΙ ΕΛΛΗΝΕΣ ΕΧΟΥΝ ΣΤΗΝ ΚΑΤΟΧΗ ΤΟΥΣ ΚΡΥΠΤΟΝΟΜΙΣΜΑΤΑ",
+      "url": "https://www.in.gr/2026/11/28/sports/othersports/o-olympiakos-filoksenei-tin-terasa-me-stoxo-tin-koryfi-tou-omilou/",
+      "title": "Ο Ολυμπιακός φιλοξενεί την Τεράσα με στόχο την κορυφή του ομίλου",
+      "normalized_title": "Ο ΟΛΥΜΠΙΑΚΟΣ ΦΙΛΟΞΕΝΕΙ ΤΗΝ ΤΕΡΑΣΑ ΜΕ ΣΤΟΧΟ ΤΗΝ ΚΟΡΥΦΗ ΤΟΥ ΟΜΙΛΟΥ",
       "seen_urls": [
-        "https://www.in.gr/2026/11/28/economy/oikonomikes-eidiseis/posoi-ellines-exoun-stin-katoxi-tous-kryptonomismata/",
-        "https://www.in.gr/2026/11/28/sports/on-field/mats-kleidi-gia-ton-olympiako-sto-vikelidis/"
+        "https://www.in.gr/2026/11/28/sports/othersports/o-olympiakos-filoksenei-tin-terasa-me-stoxo-tin-koryfi-tou-omilou/",
+        "https://www.in.gr/2026/11/28/life/culture-live/natali-portman-protagonistei-se-nea-romantiki-komenti-sto-netflix/",
+        "https://www.in.gr/2026/11/28/politics/epikairotita/paraitithike-o-vaggelis-liakos/",
+        "https://www.in.gr/2026/11/28/greece/koropi-troxaio-sti-leoforo-markopoulou-xoris-tis-aisthiseis-tou-22xronos/",
+        "https://www.in.gr/2026/11/28/greece/via-anilikon-kai-alkool-stin-efiveia-oi-protaseis-ton-paidiatron-gia-amesi-kai-syntonismeni-antimetopisi/"
       ],
-      "seen_at_utc": "2026-11-28T10:30:10.069032+00:00"
+      "seen_at_utc": "2026-11-28T10:51:17.180134+00:00"
     }
   },
-  "updated_at_utc": "2026-11-28T10:30:10.069152+00:00"
+  "updated_at_utc": "2026-11-28T10:51:17.180238+00:00"
 }
